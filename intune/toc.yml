@@ -470,30 +470,6 @@
           href: conditional-access-assign-jamf.md
     - name: Schützen von Gerätedaten
       items:
-        - name: Verwenden von App-Schutzrichtlinien
-          href: app-protection-policy.md
-          items:
-            - name: Erstellen von App-Schutzrichtlinien
-              href: app-protection-policies.md
-              items:
-                - name: Einstellungen für Android
-                  href: app-protection-policy-settings-android.md
-                - name: Einstellungen für iOS
-                  href: app-protection-policy-settings-ios.md
-                - name: Ausnahmen von der Datenübertragungsrichtlinie
-                  href: app-protection-policies-exception.md
-                - name: Prüfung der App-Schutzprotokolle in Managed Browser
-                  href: app-protection-policy-settings-log.md
-            - name: Überprüfen von App-Schutzrichtlinien
-              href: app-protection-policies-validate.md
-            - name: Überwachen des Benutzerstatus bei App-Schutz
-              href: app-protection-policies-monitor.md
-            - name: Vorbereitungen für WIP-App-Schutzrichtlinien
-              href: app-protection-policies-configure-windows-10.md
-            - name: Erstellen und Zuweisen von WIP-App-Schutzrichtlinien
-              href: windows-information-protection-policy-create.md
-            - name: Verwalten der Datenübertragung zwischen iOS-Apps
-              href: data-transfer-between-apps-manage-ios.md
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:
