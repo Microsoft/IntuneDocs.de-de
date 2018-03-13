@@ -5,7 +5,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9ab1dcf617fe1264a073025e1b799d1446c6d5a0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f6aec4741e5be788f4c1fbab929afd38e2fe07e7
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Endpunkt der Intune Data Warehouse-API
 
@@ -37,7 +37,7 @@ Weitere Informationen finden Sie unter [Authorize access to web applications usi
 Die Endpunkte der Data Warehouse-API lesen die Entitäten für jeden Satz. Die API unterstützt ein **GET** HTTP-Verb und eine Teilmenge der Abfrageoptionen.
 
 Die URL für Intune verwendet das folgende Format:  
-https://fef.{***Speicherort***}.manage.microsoft.com/ReportingService/DataWarehouseFEService/ {***Entitätssammlung***}? api-Version = {***-API-Version***}
+https://fef. {***Speicherort***}.manage.microsoft.com/ReportingService/DataWarehouseFEService/ {***Entitätssammlung***}? api-Version = {***-API-Version***}
 
 Die URL enthält die folgenden Elemente:
 

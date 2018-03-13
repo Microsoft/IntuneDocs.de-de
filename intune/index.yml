@@ -10,14 +10,14 @@ metadata:
   ms.author: angrobe
   manager: dougeby
   ms.date: 10/31/2017
-  ms.topic: article
+  ms.topic: landing-page
   ms.devlang: na
   ms.service: microsoft-intune
-  ms.openlocfilehash: d78b1eb584a6da32f43e7f8325e254a38d5f9ac1
-  ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+  ms.openlocfilehash: 134f4053e22797c547f56b2db7876b3d1a56b15c
+  ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 01/25/2018
+  ms.lasthandoff: 03/08/2018
 sections:
 - items:
   - type: markdown

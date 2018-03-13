@@ -3,8 +3,8 @@ title: "Skycure-Connector für Intune"
 titlesuffix: Azure portal
 description: Skycure-Connectorintegration in Intune.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/09/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8be5d271bfff84ec440b25724ca2101ec7f224d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 333322022882566b55e869e5d6a1a1e2b203b830
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Skycure Mobile Threat Defense-Connector
 

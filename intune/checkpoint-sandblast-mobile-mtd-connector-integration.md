@@ -3,8 +3,8 @@ title: Einrichten der Check Point SandBlast-Integration in Intune
 titlesuffix: Azure portal
 description: Einrichten der Check Point SandBlast-Integration in Intune
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88aa717a298b2f84a74b61d95efac6a105b3bd1a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0b1ea4804005abb1e2fcbc5dc3b5ef1382edd4db
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Integrieren von Check Point SandBlast Mobile in Intune
 

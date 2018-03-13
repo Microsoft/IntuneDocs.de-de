@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="manage-software-updates"></a>Verwalten von Softwareupdates
 
@@ -130,14 +130,14 @@ Windows 10-Updaterollouts können in der Operations Management Suite (OMS) mithi
 
 Die Organisations-ID können Sie in der Intune-Konsole mithilfe der OMA-URI-Einstellungen einer benutzerdefinierten Richtlinie konfigurieren. Ausführliche Informationen finden Sie unter [Intune-Richtlinieneinstellungen für Windows 10-Geräte in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
-Der OMA-URI-Pfad (Groß-/Kleinschreibung beachten) zum Konfigurieren der Organisations-ID lautet „./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID“.
+Der OMA-URI-Pfad zum Konfigurieren der Organisations-ID lautet „./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID“. (Hierbei muss die Groß-/Kleinschreibung beachtet werden.)
 
 Unter **OMA-URI-Einstellung hinzufügen oder bearbeiten** können Sie beispielsweise folgende Werte verwenden:
 
 - **Name**: Organisations-ID für die Windows-Analyse
 - **Beschreibung**: Konfigurieren der Organisations-ID für Windows Analytics-Lösungen
 - **Datentyp**: Zeichenfolge
-- **OMA-URI** (Groß-/Kleinschreibung beachten): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
+- **OMA-URI** (Groß-/Kleinschreibung beachten): ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
 - **Wert**: <*Verwenden Sie die GUID, die in Ihrem OMS-Arbeitsbereich auf der Registerkarte „Windows-Telemetrie“ angezeigt wird.*>
 
 ![Windows-Einstellung für Diagnose- und Nutzungsdaten](./media/commID.png)

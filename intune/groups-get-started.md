@@ -5,7 +5,7 @@ description: Lernen Sie die Neuerungen bei Gruppen im Intune-Azure-Portal kennen
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: angerobe
+manager: dougeby
 ms.date: 01/18/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.openlocfilehash: 7ba5c3d0e6f241c5734d629a23f092ac007f8300
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 96ac32059b91b9ee4f83386f36fd6af19da91004
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="intune-classic-groups-in-the-azure-portal"></a>Klassische Intune-Gruppen im Azure-Portal
 
