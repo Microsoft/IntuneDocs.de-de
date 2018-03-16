@@ -1,12 +1,12 @@
 ---
-title: "Verwalten von Geräten mit Intune"
-titleSuffix: Intune on Azure
-description: "In diesem Artikel erfahren Sie, wie Sie die mit Intune verwalteten Geräte anzeigen und verschiedene Vorgänge auf diesen ausführen."
+title: "Verwalten von Geräten mit Microsoft Intune"
+titleSuffix: 
+description: "Überprüfen Sie die mit Intune verwalteten Geräte, und führen Sie verschiedene Vorgänge auf diesen aus."
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 08/31/2017
+ms.date: 02/21/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b034e144aa43d239874b484acb2a40be12aff7c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2e69f47e841cb44ab646431d5bd81b9c1d874c64
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Was ist die Microsoft Intune Geräteverwaltung?
 
@@ -29,8 +29,8 @@ Als IT-Administrator müssen Sie sicherstellen, dass verwaltete Geräte die Ress
 
 Die Workload **Geräte** liefert Informationen zu den verwalteten Geräten und ermöglicht die Ausführung von Remoteaufgaben auf diesen Geräten. So greifen Sie auf die Workload zu
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 3. Wählen Sie in **Intune** die Option **Geräte** aus.
 4. Sie können Informationen über Geräte anzeigen und die folgenden Remotegeräteaktionen durchführen:
     - **Übersicht**: Eine Momentaufnahme der registrierten Geräte, die Sie verwalten können.
@@ -38,10 +38,12 @@ Die Workload **Geräte** liefert Informationen zu den verwalteten Geräten und e
     - **Azure AD-Geräte**: Eine Liste der Geräte, die in Azure Active Directory (AD) registriert oder damit verbunden sind. Weitere Informationen zur [Azure AD-Geräteverwaltung](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
     - **Geräteaktionen**: Ein Verlauf der Remoteaktionen, die auf Geräten ausgeführt wurden, einschließlich die Aktion, der Status, wer die Aktion initiiert hat und der Zeitpunkt.
 
-    ![Überwachen von Geräteaktionen](./media/monitor-device-actions.png)
+        ![Screenshot der Überwachung von Geräteaktionen](./media/monitor-device-actions.png)
 
-    - **TeamViewer**: Über den TeamViewer-Dienst können Benutzer von mit Intune verwalteten Android-Geräten Remoteunterstützung von ihrem IT-Administrator erhalten. Erfahren Sie mehr über [TeamViewer](device-profile-android-teamviewer.md).
-
+    - **Überwachungsprotokolle**: Überwachungsprotokolle stellen Ihnen einen Datensatz von Aktivitäten zur Verfügung, die eine Änderung in Microsoft Intune bewirken. Sie finden weitere Informationen unter [Überwachungsprotokolle](monitor-audit-logs.md).
+    - **TeamViewer Connector**: Über den TeamViewer-Dienst können Benutzer von mit Intune verwalteten Android-Geräten Remoteunterstützung von ihrem IT-Administrator erhalten. Erfahren Sie mehr über [TeamViewer](device-profile-android-teamviewer.md).
+    - **Hilfe und Support**: Ermöglicht das Behandeln von Problemen, das Anfordern von Unterstützung oder das Anzeigen des Intune-Status.  
+    
 ## <a name="available-device-actions"></a>Verfügbare Geräteaktionen
 Die verfügbaren Aktionen hängen von der Geräteplattform und der Konfiguration des Geräts ab.
 

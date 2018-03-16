@@ -1,6 +1,6 @@
 ---
-title: "Zurücksetzen auf Werkseinstellungen oder Entfernen von Unternehmensdaten auf Geräten mit Intune"
-titlesuffix: Azure portal
+title: "Zurücksetzen auf Werkseinstellungen oder Entfernen von Unternehmensdaten auf Geräten mit Microsoft Intune"
+titlesuffix: 
 description: "Erfahren Sie, wie Sie Unternehmensdaten von einem Gerät entfernen oder wie Sie das Gerät auf Werkseinstellungen zurücksetzen."
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46cb8510e80db7092de472a769fb5dc78eb5e167
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 62404f6ffede7a7f3f7150da1fde289f2ba9e64f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Entfernen von Geräte mithilfe der Zurücksetzung auf Werkseinstellungen oder dem Entfernen von Unternehmensdaten
 
@@ -36,10 +36,10 @@ Die **Zurücksetzung auf Werkseinstellungen** stellt die Standardwerkseinstellun
 ### <a name="to-factory-reset-a-device"></a>So setzen Sie ein Geräts auf Werkseinstellungen zurück
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie auf dem Blatt **Geräte** die Option **Alle Geräte** aus.
 4. Wählen Sie den Namen des Geräts aus, das Sie auf Werkseinstellungen zurücksetzen möchten.
-5. Wählen Sie auf dem Blatt mit dem Namen des Geräts **Zurücksetzung auf Werkseinstellungen**.
+5. Wählen Sie auf dem Blatt mit dem Namen des Geräts **Zurücksetzung auf Werkseinstellungen** aus.
 6. Für die Windows 10-Version 1709 oder höher ist gibt es die zusätzliche Option „Registrierungszustand und Benutzerkonto beibehalten“. 
     
     |Bei Zurücksetzung auf Werkseinstellungen beibehalten|Nicht beibehalten|
@@ -123,8 +123,8 @@ Beim Entfernen von Unternehmensdaten von Android for Work-Geräten entfernt alle
 ### <a name="to-remove-company-data"></a>So entfernen Sie Unternehmensdaten
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie auf dem Blatt **Geräte** die Option **Alle Geräte** aus.
 4. Wählen Sie den Namen des Geräts aus, von dem Sie die Unternehmensdaten entfernen möchten.
 5. Wählen Sie auf dem Blatt mit dem Gerätenamen **Unternehmensdaten entfernen** und dann zur Bestätigung **Ja** aus.
 
@@ -134,9 +134,9 @@ Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minute
 
 Aufgrund von Kommunikationsproblemen oder fehlender Geräte müssen Sie möglicherweise Geräte über Azure Active Directory (AD) löschen. Der Löschbefehl entfernt kein Gerät aus der Verwaltung. Sie können **Löschen** aber dazu verwenden, Gerätedatensätze über das Azure-Portal zu entfernen, von denen Sie wissen, dass sie schwer zugänglich sind, und für die eine erneute Kommunikation mit Azure unwahrscheinlich ist.
 
-1.  Melden Sie sich [im Azure-Portal bei Azure Active Directory](http://aka.ms/accessaad) mit Ihren Administratoranmeldeinformationen an. Sie können sich auch im [Office 365-Portal](https://portal.office.com) anmelden und dann über den Link auf der linken Seite **Admin** &gt; **Azure AD** auswählen.
+1.  Melden Sie sich [im Azure-Portal bei Azure Active Directory](http://aka.ms/accessaad) mit Ihren Administratoranmeldeinformationen an. Sie können sich auch im [Office 365-Portal](https://portal.office.com) anmelden und dann über den Link auf der linken Seite **Admin Center** &gt; **Azure AD** auswählen.
 3.  Erstellen Sie ein Azure-Abonnement, wenn Sie noch keins besitzen. Hierzu sollte keine Kreditkarte oder Zahlung erforderlich sein, wenn Sie ein gebührenpflichtiges Konto besitzen (klicken Sie auf den Abonnementlink **Ihr kostenloses Azure Active Directory registrieren** ).
-4.  Wählen Sie zuerst **Active Directory** und dann Ihre Organisation aus.
+4.  Wählen Sie zuerst **Azure Active Directory** und dann Ihre Organisation aus.
 5.  Wählen Sie die Registerkarte **Benutzer** aus.
 6.  Wählen Sie den Benutzer aus, dessen Geräte Sie löschen möchten.
 7.  Klicken Sie auf **Geräte**.

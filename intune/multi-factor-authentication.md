@@ -1,7 +1,7 @@
 ---
-title: "Mehrstufige Authentifizierung für Intune-Geräteregistrierungen"
-titlesuffix: Azure portal
-description: "Anfordern der mehrstufigen Authentifizierung in Azure AD für die Geräteregistrierung."
+title: "Anfordern der mehrstufigen Authentifizierung für die Intune-Geräteregistrierung"
+titlesuffix: Microsoft Intune
+description: "Anfordern der mehrstufigen Authentifizierung in Azure AD für die Intune-Geräteregistrierung."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: 
 ms.custom: intune-azure
-ms.openlocfilehash: 27135f0b698f5a321bd14b70f0b346a91fc0ab1e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4dbb1b94fa7e2ebc5ce31ae00c3cb893f9e1470e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Multi-Factor Authentication für Intune-Geräteregistrierungen
+# <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Erfordert mehrstufige Authentifizierung für Intune-Geräteregistrierungen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 

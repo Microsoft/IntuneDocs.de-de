@@ -1,12 +1,12 @@
 ---
 title: "Zuweisen von Apps zu Android for Work-Geräten"
-titlesuffix: Azure portal
-description: "Verwenden Sie dieses Thema zum Synchronisieren und anschließenden Zuweisen von Apps zu Android for Work-Geräten über den Google Play for Work Store.\""
+titlesuffix: Microsoft Intune
+description: "Erfahren Sie, wie Sie Apps synchronisieren und sie Android for Work-Geräten über den Google Play for Work Store zuweisen."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/13/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,17 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 248dcc978b5324733d5d640230aba2b6db1a2c62
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6a0b488120ed62031f8af5b8b65d9e90ea6d252b
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Zuweisen von Apps für Android for Work-Geräte mit Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Apps werden zu Android for Work-Geräten anders zugewiesen als zu normalen Android-Geräten. Alle Apps, die für Android for Work installiert werden, stammen aus dem Google Play for Work Store. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese.
-Anschließend wird die App im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt. Ab dann können Sie die Zuweisung der App auf dieselbe Weise wie bei jeder anderen App durchführen.
+Android for Work ist ein Programm für Android-Geräte. Alle Apps, die Sie auf Android for Work-Geräten installieren, stammen aus dem Google Play for Work Store. Apps werden zu Android for Work-Geräten anders zugewiesen als zu normalen Android-Geräten. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese. Anschließend wird die App im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt. Ab dann können Sie die Zuweisung der App auf dieselbe Weise wie bei jeder anderen App durchführen.
 
 Wenn Sie eigene branchenspezifische Apps erstellt haben, können Sie diese ebenfalls wie folgt zuweisen:
 - Registrieren Sie sich für ein Google Developer-Konto, über das Sie Apps in einem privaten Bereich im Google Play Store veröffentlichen können.

@@ -1,6 +1,6 @@
 ---
-title: "Registrieren von Geräten – Geräteregistrierungs-Manager"
-titlesuffix: Azure portal
+title: "Registrieren von Geräten mithilfe eines Geräteregistrierungs-Manager-Kontos"
+titlesuffix: Microsoft Intune
 description: "Verwenden Sie das Konto „Geräteregistrierungs-Manager“, um Geräte in Intune zu registrieren. \""
 keywords: 
 author: ErikjeMS
@@ -15,28 +15,28 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4ae5060ca2ea884ddbcf0e21d7a6e95c56f973bc
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 01f5791869876ecfb7096c987cbc2828a39a2844
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="enroll-devices-using-device-enrollment-manager"></a>Registrieren von Geräten mithilfe des Geräteregistrierungs-Managers
+# <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrieren von Geräten mithilfe eines Geräteregistrierungs-Manager-Kontos
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Mit Intune können Organisationen eine Vielzahl mobiler Geräte mit einem einzelnen Benutzerkonto verwalten. Das Konto *Geräteregistrierungsmanager* (DEM) ist ein spezielles Benutzerkonto, das bis zu 1.000 Geräte registrieren kann. Fügen Sie dem DEM-Konto vorhandene Benutzer hinzu, damit diese bestimmte DEM-Funktionen erhalten. Jedes registrierte Gerät verwendet eine Einzellizenz. Es empfiehlt sich, Geräte zu verwenden, die mithilfe dieses Kontos als freigegebene Geräte registriert wurden, statt persönlicher („BYOD“) Geräte.  
 
-Es müssen Benutzer im Azure-Portal vorhanden sein, damit sie als Geräteregistrierungs-Manager hinzugefügt werden können. Für die optimale Sicherheit darf der DEM-Benutzer nicht zusätzlich Intune-Administrator sein.
+Es müssen Benutzer im [Azure-Portal](https://portal.azure.com) vorhanden sein, damit sie als Geräteregistrierungs-Manager hinzugefügt werden können. Für die optimale Sicherheit darf der DEM-Benutzer nicht zusätzlich Intune-Administrator sein.
 
 >[!NOTE]
->Die Registrierungsmethode mit dem Geräteregistrierungs-Manager (Device Enrollment Manager, DEM) kann nicht zusammen mit den folgenden anderen Registrierungsmethoden verwendet werden: [Apple Configurator mit Setup-Assistent](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator mit direkter Registrierung](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) oder [Programm zur Geräteregistrierung (DEP)](device-enrollment-program-enroll-ios.md). Sie kann auch nicht zum Registrieren von macOS-Geräten verwendet werden.
+>Die Registrierungsmethode mit dem Geräteregistrierungs-Manager (Device Enrollment Manager, DEM) kann nicht zusammen mit den folgenden anderen Registrierungsmethoden verwendet werden: [Apple Configurator mit Setup-Assistent](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator mit direkter Registrierung](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) oder [Programm zur Geräteregistrierung (DEP)](device-enrollment-program-enroll-ios.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Beispiel für ein Geräteregistrierungs-Manager-Szenario:
 
 Ein Restaurant möchte 50 Point-of-Sale-Tablets für sein Bedienpersonal bereitstellen sowie Bestellmonitore für seine Küchenmitarbeiter. Die Mitarbeiter müssen niemals auf Unternehmensdaten zugreifen und sich nie als Benutzer anmelden. Der Intune-Administrator erstellt ein Geräteregistrierungs-Manager-Konto und fügt einen Vorgesetzten des Restaurants zum DEM-Konto hinzu, dieser erhält also DEM-Fähigkeiten. Der Vorgesetzte kann nun die 50 Tablets registrieren, indem er die DEM-Anmeldeinformationen verwendet.
 
-Nur Benutzer im Azure-Portal können Geräteregistrierungs-Manager sein. Der Geräteregistrierungs-Manager kann kein Intune-Administrator sein.
+Nur Benutzer im [Azure-Portal](https://portal.azure.com) können Geräteregistrierungs-Manager sein. Der Geräteregistrierungs-Manager kann kein Intune-Administrator sein.
 
 Der DEM-Benutzer kann Folgendes tun:
 
@@ -88,11 +88,11 @@ Wenn Sie einen Geräteregistrierungs-Manager entfernen, wirkt sich dies nicht au
 
 **So entfernen Sie einen Geräteregistrierungs-Manager**
 
-1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-2. Wählen Sie auf dem Blatt „Intune“ die Option **Geräte registrieren** und dann **Geräteregistrierungs-Manager** aus.
-3. Klicken Sie auf dem Blatt **Geräteregistrierungs-Manager** mit der rechten Maustaste auf den Geräteregistrierungs-Manager-Benutzer, und wählen Sie **Entfernen** aus.
+1. Wählen Sie in [Azure-Portal](https://portal.azure.com) **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+2. Wählen Sie im Intune-Blatt zuerst **Geräteregistrierung** und dann **Geräteregistrierungs-Manager** aus.
+3. Wählen Sie auf dem Blatt **Geräteregistrierungs-Manager** den DEM-Benutzer aus, und klicken Sie auf **Löschen**.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Anzeigen der Eigenschaften des Geräteregistrierungs-Managers
 
-1. Wählen Sie im Azure-Portal erst **Geräteregistrierung** und dann **Geräteregistrierungs-Manager** aus.
-2. Klicken Sie auf dem Blatt **Geräteregistrierungs-Manager** mit der rechten Maustaste auf den Geräteregistrierungs-Manager-Benutzer, und wählen Sie **Eigenschaften** aus.
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) zuerst **Geräteregistrierung** und dann **Geräteregistrierungs-Manager** aus.
+2. Klicken Sie auf dem Blatt **Geräteregistrierungs-Manager** mit der rechten Maustaste auf den DEM-Benutzer, und wählen Sie **Eigenschaften** aus.

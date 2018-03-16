@@ -1,7 +1,7 @@
 ---
-title: "Verwenden von Gerätekategorien in Intune"
-titleSuffix: Azure portal
-description: "Erfahren Sie, wie Sie Gerätekategorien verwenden, die Benutzer beim Registrieren ihrer Geräte in Intune auswählen können.\""
+title: "Kategorisieren von Geräten in Gruppen in Intune"
+titleSuffix: Microsoft Intune
+description: "Erfahren Sie, wie Sie Geräte zur einfacheren Verwaltung in Gruppen kategorisieren."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1200ce4ab5d24f8c9212c064961a167e0ec6c42
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 416ce4fb671494efabf805595426f25d027d256e
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="map-device-groups"></a>Zuordnen von Gerätegruppen
+# <a name="categorize-devices-into-groups-for-easier-management"></a>Kategorisieren von Geräten in Gruppen zur einfacheren Verwaltung
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -41,11 +41,11 @@ Sie können beliebige Gerätekategorien erstellen, z.B.:
 ## <a name="how-to-configure-device-categories"></a>Konfigurieren von Gerätekategorien
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>Schritt 1: Erstellen von Gerätekategorien auf dem Blatt „Intune“ im Azure-Portal
-1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie im Blatt **Intune** die Option **Geräteregistrierung** aus.
+1. Wählen Sie in [Azure-Portal](https://portal.azure.com) **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung** aus.
 3. Wählen Sie im Blatt **Geräteregistrierung** die Option **Gerätekategorien** aus.
 4. Wählen Sie auf der Seite **Gerätekategorien** die Option **Erstellen** aus, um eine neue Kategorie hinzuzufügen.
-5. Geben Sie auf dem nächsten Blatt einen **Namen** für die neue Kategorie und optional eine **Beschreibung** ein.
+5. Geben Sie auf dem Blatt **Gerätekategorie erstellen** einen **Namen** für die neue Kategorie und optional eine **Beschreibung** ein.
 6. Klicken Sie auf **Erstellen**, wenn Sie fertig sind. Sie können die neue Kategorie in der Liste der Kategorien sehen.
 
 Verwenden Sie den Kategorienamen des Geräts zum Erstellen von Azure Active Directory-Sicherheitsgruppen in Schritt 2.
@@ -61,27 +61,29 @@ Wenn nach dem Konfigurieren von Gerätegruppen Benutzer ihre Geräte registriere
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>Anzeigen der Kategorien von Geräten, die Sie verwalten
 
-1.  Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1.  Wählen Sie in [Azure-Portal](https://portal.azure.com) **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 
-2. Wählen Sie im Azure-Portal auf dem Blatt „Intune“ die Option **Geräte und Gruppen** aus.
+2. Wählen Sie im Azure-Portal auf dem Blatt „Intune“ die Option **Geräte** aus.
 
 3.  Klicken Sie unter **Verwalten** auf **Alle Geräte**.
 
-4.  Sehen Sie sich in der Liste der Geräte die Spalte **Kategorie** an.
+4.  Sehen Sie sich in der Liste der Geräte die Spalte **Gerätekategorie** an.
 
-Wenn die Spalte **Kategorie** nicht angezeigt wird, klicken Sie auf **Spalten**, wählen Sie in der Liste **Kategorie** aus, und klicken Sie dann auf **Anwenden**.
+Wenn die Spalte **Gerätekategorie** nicht angezeigt wird, klicken Sie auf **Spalten**, wählen Sie in der Liste **Gerätekategorie** aus, und klicken Sie dann auf **Anwenden**.
 
 ### <a name="to-change-the-category-of-a-device"></a>So ändern Sie die Kategorie eines Geräts
 
-1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte & Gruppen** aus.
-4. Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Verwalten** > **Alle Geräte** aus.
-5. Wählen Sie in der Liste der Geräte das gewünschte Gerät und anschließend auf dem Blatt mit den Geräteeigenschaften **Verwalten** > **Eigenschaften** aus.
+1. Wählen Sie in [Azure-Portal](https://portal.azure.com) **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.
+4. Wählen Sie im Blatt **Geräte** im Abschnitt **Verwalten** **Alle Geräte** aus.
+5. Wählen Sie in der Liste der Geräte das gewünschte Gerät und anschließend auf dem Blatt mit den Geräteeigenschaften unter **Verwalten** **Eigenschaften** aus.
 6. Auf dem nächsten Blatt können Sie die **Gerätekategorie** des ausgewählten Geräts in einen beliebigen Kategorienamen ändern, den Sie zuvor konfiguriert haben.
 
 ## <a name="after-you-configure-device-groups"></a>Nach dem Konfigurieren von Gerätegruppen
 
 Wenn Endbenutzer von iOS- und Android-Geräten ihre Geräte registrieren, müssen sie aus der Liste der von Ihnen konfigurierten Kategorien eine Kategorie auswählen. Nachdem sie eine Kategorie ausgewählt und die Registrierung abgeschlossen haben, wird ihr Gerät zu der Intune-Gerätegruppe oder Active Directory-Sicherheitsgruppe hinzugefügt, die der gewählten Kategorie entspricht.
+
+Endbenutzer unter Windows sollten die Unternehmensportalwebsite verwenden, um eine Kategorie auszuwählen.
 
 Unabhängig von der Plattform können Ihre Endbenutzer nach der Registrierung des Geräts jederzeit auf „portal.manage.microsoft.com“ zugreifen. Weisen Sie den Benutzer dazu an, auf die Unternehmensportalwebsite zuzugreifen und zu **Meine Geräte** zu navigieren. Er hat dann die Möglichkeit, ein auf der Seite aufgeführtes registriertes Gerät sowie eine Kategorie auszuwählen.
 

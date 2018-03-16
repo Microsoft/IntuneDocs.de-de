@@ -1,7 +1,7 @@
 ---
 title: So konfigurieren Sie Intune-WLAN-Einstellungen
-titleSuffix: Azure portal
-description: "Erfahren Sie, wie Sie mit Intune WLAN-Einstellungen auf Geräten konfigurieren, die Sie verwalten."
+titleSuffix: Microsoft Intune
+description: "Erfahren Sie, wie Sie mit Microsoft Intune WLAN-Einstellungen auf Geräten konfigurieren, die Sie verwalten."
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e03df2525b413ca33f81836292a05dac11bb8349
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>So konfigurieren Sie WLAN-Einstellungen in Microsoft Intune
 
@@ -46,7 +46,7 @@ Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfiguri
 
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Erstellen eines Geräteprofils mit WLAN-Einstellungen
 
-1. Melden Sie sich beim Azure-Portal an.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
 2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
@@ -62,7 +62,7 @@ Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfiguri
    > [!IMPORTANT]
    > Wenn Sie ein Profil für Windows 10-Geräte einschließlich Windows Holographic for Business erstellen, müssen Sie die Plattform **Windows 8.1 und höher** auswählen. Die Plattform **Windows 10 und höher** schließt keinen WLAN-Profiltyp ein. 
 
-6. Wählen Sie für Apple- oder Android-Geräte in der Dropdownliste **WLAN-Typ** die Option **Standard** oder **Enterprise**. Mithilfe von **Standard** können Sie grundlegende Eigenschaften wie den Netzwerknamen und die SSID angeben. Mit **Enterprise** können Sie detailliertere Informationen angeben, z.B. das Extensible Authentication Protocol (EAP), sofern dieses in Ihrem WLAN verwendet wird. 
+6. Wählen Sie für Apple- oder Android-Geräte in der Dropdownliste **WLAN-Typ** die Option **Standard** oder **Enterprise**. Mithilfe von **Standard** können Sie grundlegende Eigenschaften wie den Netzwerknamen und die SSID angeben. Mit **Enterprise** können Sie detailliertere Informationen angeben, z.B. das Extensible Authentication Protocol (EAP), sofern Ihr WLAN dieses Protokoll verwendet. 
 
    Mit dem Profil **WLAN (Import)** (für Windows 8.1 und höher) können Sie WLAN-Einstellungen als XML-Datei importieren, die Sie zuvor von einem anderen Gerät exportiert haben.
 1. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. In den folgenden Themen finden Sie ausführliche Informationen zu den Einstellungen für die einzelnen Plattformen:

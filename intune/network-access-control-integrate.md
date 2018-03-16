@@ -1,10 +1,10 @@
 ---
-title: Integrieren der Netzwerkzugriffssteuerung mit Intune
-titlesuffix: Azure portal
+title: Integrieren der Netzwerkzugriffssteuerung mit Microsoft Intune
+titlesuffix: 
 description: Integrieren der Netzwerkzugriffssteuerung (NAC) mit Intune
 keywords: 
-author: bruceperlerMS
-ms.author: bruceper
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4673a6c6d0b83c7f31eecc919bcaa0e952f373a0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6f54f04bc5a63c8a431eddaf4210fcb290942cc3
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integrieren der Netzwerkzugriffssteuerung (NAC) mit Intune
 

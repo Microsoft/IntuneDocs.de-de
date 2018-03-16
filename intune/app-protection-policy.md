@@ -1,7 +1,7 @@
 ---
 title: Was sind App-Schutzrichtlinien?
-titleSuffix: Azure portal
-description: "In diesem Thema erfahren Sie, wie Sie die Daten Ihres Unternehmens mit App-Schutzrichtlinien von Microsoft Intune schützen.\""
+titleSuffix: Microsoft Intune
+description: "Lernen Sie, wie Ihnen App-Schutzrichtlinien von Microsoft Intune helfen, Ihre Unternehmensdaten zu schützen und Datenverluste zu verhindern."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ee95990afa08aa55e0f9101329b31bd8b3041f4
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 691c7317cda07be292cc2d778b853727124dba8a
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-are-app-protection-policies"></a>Was sind App-Schutzrichtlinien?
 

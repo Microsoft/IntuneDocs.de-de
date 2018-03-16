@@ -1,12 +1,11 @@
 ---
-title: "Was sind Geräteprofile in Microsoft Intune?"
-titlesuffix: Azure portal
-description: "In diesem Artikel erfahren Sie mehr über Intune-Geräteprofile und wie sie Ihnen helfen können, Geräte in Ihrem Unternehmen verwalten und schützen."
+title: "Geräteprofile in Microsoft Intune – Azure | Microsoft-Dokumentation"
+description: "Hier finden Sie eine Übersicht über die verschiedenen Microsoft Intune-Geräteprofile mit Angaben zu Features, Einschränkungen, E-Mail-Adressen, WLAN, VPN, Education, Zertifikaten, zum Upgrade von Windows 10, BitLocker und Windows Defender, Windows Information Protection sowie zu benutzerdefinierten Einstellungen für die Gerätekonfiguration im Azure-Portal. Verwenden Sie diese Profile zum Verwalten und Schützen von Daten und Geräten in Ihrem Unternehmen."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/23/2017
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,75 +14,125 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0c745f9f745802e0de7a58e3dd7570c0e363ab5d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 79ca6eaf22233dd6d024a28e456e57a8a74d02aa
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Was sind Microsoft Intune Geräteprofile?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Verwenden Sie die Workload **Gerätekonfiguration** von Microsoft Intune, um Einstellungen und Features auf allen Geräten zu verwalten. Sie verwenden diese Workload größtenteils, um Geräteprofile zu erstellen, die Ihnen die Verwaltung und Steuerung von einer Vielzahl von unterschiedlichen Features und Funktionen auf Geräten ermöglichen.
+Microsoft Intune umfasst Einstellungen und Features, die Sie auf unterschiedlichen Geräten in Ihrer Organisation aktivieren oder deaktivieren können. Diese Einstellungen und Features werden mithilfe von Profilen verwaltet. Beispiele für Profile: 
 
-Wenn Sie diese Workload öffnen, werden die folgenden Optionen angezeigt:
+- Ein WLAN-Profil, das verschiedenen Geräten den Zugriff auf Ihr Unternehmensnetzwerks ermöglicht
+- Ein VPN-Profil, das verschiedenen Geräten den Zugriff auf Ihren VPN-Server in Ihrem Unternehmensnetzwerks ermöglicht
 
-- **Übersicht:** Auf dieser Seite finden Sie den Status und Berichte, mit denen Sie Gerätekonfigurationen, die Sie Benutzern und Geräten zugewiesen haben, überwachen.
-- **Profile verwalten:** In diesem Abschnitt erstellen Sie Gerätekonfigurationsprofile. Unten finden Sie eine Liste aller Profiltypen, die Sie später in diesem Thema erstellen können.
-- **Zertifizierungsstelle einrichten:** Dieser Workflow führt Sie durch die erforderlichen Schritte zum Konfigurieren von Intune-Zertifikatprofilen.
+Dieses Thema enthält eine Übersicht über die verschiedenen Profile, die Sie für Ihre Geräte erstellen können. Verwenden Sie diese Profile, um Features auf den Geräten zuzulassen oder zu verhindern.
 
-## <a name="getting-started"></a>Erste Schritte
+## <a name="before-you-begin"></a>Vorbereitung
+Um die verfügbaren Features anzuzeigen, öffnen Sie zunächst das [Azure-Portal](https://portal.azure.com) und anschließend Ihre Intune-Ressource. 
 
-Der Workflow zum Erstellen von Geräteprofilen ist für alle Profile ähnlich. Weitere Informationen finden Sie unter [Erstellen von Microsoft Intune-Gerätekonfigurationsprofilen](device-profile-create.md). Lesen Sie anschließend weitere spezifische Informationen zu den Einstellungen für die einzelnen Profiltypen.
+**Gerätekonfiguration** umfasst folgende Optionen:
 
-Sie können die folgenden Funktionen auf Ihren Geräten verwalten:
+- **Übersicht**: Hier werden die Status Ihrer Profile sowie weitere Details zu den Profilen angezeigt, die Sie Benutzern und Geräten zugewiesen haben.
+- **Verwalten**: Mit dieser Option erstellen Sie Geräteprofile und laden benutzerdefinierte [PowerShell-Skripts](intune-management-extension.md) zur Ausführung im Profil hoch.
+- **Überwachen**: Mit dieser Option prüfen Sie den Status eines Profils und zeigen Protokolle zu Ihren Profilen an.
+- **Setup**: Mit dieser Option fügen Sie eine Zertifizierungsstelle (SCEP oder PFX) hinzu oder aktivieren Telecom Expense Management für das Profil.
 
-## <a name="device-features"></a>Gerätefunktionen
+## <a name="create-the-profile"></a>Erstellen des Profils
 
-Mit Gerätefunktionen können Sie Funktionen auf iOS- und macOS-Geräten wie AirPrint, Benachrichtigungen und freigegebene Gerätekonfigurationen steuern.
-Weitere Informationen finden Sie unter [How to configure device feature settings (Konfigurieren der Gerätefunktionseinstellungen)](device-features-configure.md). Unterstützt iOS und macOS.
+Unter [Erstellen von Gerätekonfigurationsprofilen](device-profile-create.md) finden Sie eine ausführliche Anleitung zum Erstellen eines Profils. 
 
-## <a name="device-restrictions"></a>Geräteeinschränkungen
-Mit Geräteeinschränkungen können Sie viele Einstellungen auf Geräten für mehrere Kategorien steuern, einschließlich Sicherheit, Hardware und Einstellungen zur Datenfreigabe. Sie könnten beispielsweise ein Geräteeinschränkungsprofil erstellen, das verhindert, dass Benutzer von iOS-Geräten auf die Kamera des Geräts zugreifen.
-Weitere Informationen finden Sie unter [Konfigurieren von Einstellungen für Geräteeinschränkungen](device-restrictions-configure.md). Unterstützt: Android, iOS, macOS, Windows 10 und Windows 10 Team.
+## <a name="device-features-profile"></a>Profil für Gerätefeatures
 
-## <a name="email"></a>E-Mail
-Mit E-Mail-Profilen können Sie Exchange ActiveSync-E-Mail-Einstellungen auf Ihren verwalteten Geräten erstellen, zuweisen und überwachen. E-Mail-Profile helfen beim Sicherstellen der Einheitlichkeit, beim Reduzieren der Anzahl von Supportanfragen und ermöglichen Endbenutzern den Zugriff auf Unternehmens-E-Mails auf ihren persönlichen Geräten, ohne dass ihrerseits eine Konfiguration erforderlich wäre.
-Weitere Informationen finden Sie unter [Konfigurieren von E-Mail-Einstellungen](email-settings-configure.md). Unterstützt: Android, iOS, Windows 8.1 und Windows 10.
+Mit [Gerätefeatures](device-features-configure.md) können Sie Features auf iOS- und macOS-Geräten wie AirPrint, Benachrichtigungen und freigegebene Gerätekonfigurationen steuern.
 
-## <a name="wi-fi"></a>WLAN
-Verwenden Sie WLAN-Profile, um Benutzern und Geräten in Ihrer Organisation Einstellungen für Drahtlosnetzwerke zuzuweisen. Wenn Sie ein WLAN-Profil zuweisen, erhalten Ihre Benutzer Zugriff auf Ihr Unternehmens-WLAN, ohne es selbst konfigurieren zu müssen.
-Weitere Informationen finden Sie unter [Konfigurieren von WLAN-Einstellungen](wi-fi-settings-configure.md). Unterstützt: Android, iOS, macOS und Windows 8.1 (nur Import).
+Dieses Features unterstützt folgende Betriebssysteme:  
+- iOS 
+- macOS
 
-## <a name="vpn"></a>VPN
-Virtuelle private Netzwerke (virtual private networks, VPNs) bieten Ihren Benutzern sicheren Remotezugriff auf Ihr Unternehmensnetzwerk. Geräte verwenden ein VPN-Verbindungsprofil, um eine Verbindung mit dem VPN-Server zu initiieren. Weisen Sie VPN-Profile Benutzern und Geräten in Ihrer Organisation zu, damit diese einfach eine sichere Verbindung mit dem Netzwerk herstellen können.
-Weitere Informationen finden Sie unter [Konfigurieren von VPN-Einstellungen](vpn-settings-configure.md).
-Unterstützt: Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 und Windows 10.
+## <a name="device-restrictions-profile"></a>Profil für Geräteeinschränkungen
+Mit [Geräteeinschränkungen](device-restrictions-configure.md) werden Einstellungen für Sicherheit, Hardware, Datenfreigabe und viele andere Einstellungen auf dem Gerät gesteuert. Sie können beispielsweise ein Geräteeinschränkungsprofil erstellen, das verhindert, dass Benutzer von iOS-Geräten auf die Kamera des Geräts zugreifen. 
 
-## <a name="education"></a>Education
-Damit können Sie Optionen für die Windows Take a Test-App konfigurieren. Wenn Sie diese Optionen konfigurieren, können keine anderen Apps auf dem Gerät ausgeführt werden, bis der Test abgeschlossen ist.
-Weitere Informationen finden Sie unter [How to configure education settings (Konfigurieren von Education-Einstellungen)](education-settings-configure.md).
+Dieses Features unterstützt folgende Betriebssysteme: 
 
-## <a name="certificates"></a>Zertifikate
-Mit diesem Profiltyp können Sie vertrauenswürdige SCEP- und PKCS-Zertifikate konfigurieren, die Geräten zugewiesen und zum Authentifizieren von WLAN-, VPN- und E-Mail-Profilen verwendet werden können.
-Weitere Informationen finden Sie unter [Konfigurieren von Zertifikaten](certificates-configure.md). Unterstützt: Android, iOS, Windows Phone 8.1, Windows 8.1 und Windows 10.
+- Android
+- iOS
+- macOS
+- Windows 10
+- Windows 10 Team
 
-## <a name="edition-upgrade"></a>Upgrade der Edition
-Mit diesem Profiltyp können Sie Geräte, auf denen einige Windows 10-Versionen ausgeführt werden, automatisch auf eine neuere Edition upgraden.
-Weitere Informationen finden Sie unter [How to configure Windows 10 edition upgrades (Konfigurieren von Windows 10-Editionsupgrades](edition-upgrade-configure-windows-10.md) Unterstützt: nur Windows 10.
+## <a name="email-profile"></a>E-Mail-Profil
+Mit dem Profil für [E-Mail-Einstellungen](email-settings-configure.md) können Sie Exchange ActiveSync-E-Mail-Einstellungen auf den Geräten erstellen, zuweisen und überwachen. E-Mail-Profile helfen beim Sicherstellen der Einheitlichkeit, beim Reduzieren der Anzahl von Supportanfragen und ermöglichen Endbenutzern den Zugriff auf Unternehmens-E-Mails auf ihren persönlichen Geräten, ohne dass ihrerseits eine Konfiguration erforderlich wäre. 
 
-## <a name="endpoint-protection"></a>Endpoint Protection
-Mit diesem Profiltyp können Sie die BitLocker- und Windows Defender-Einstellungen für Windows 10-Geräte konfigurieren.
-Weitere Informationen finden Sie unter [Endpoint protection settings for Windows 10 (Endpoint Protection-Einstellungen für Windows 10](endpoint-protection-windows-10.md) Unterstützt: nur Windows 10.
+Dieses Features unterstützt folgende Betriebssysteme: 
 
-## <a name="windows-information-protection"></a>Windows Information Protection
-Windows Information Protection unterstützt Sie dabei, das Unternehmen vor Datenlecks zu schützen, ohne gleichzeitig die Benutzerfreundlichkeit für die Mitarbeiter einzuschränken. Die Lösung schützt auch Unternehmens-Apps und -Daten vor versehentlichen Datenlecks auf unternehmenseigenen sowie auf persönlichen Geräten, die die Mitarbeiter zur Arbeit mitbringen – ohne dass Sie Ihre Umgebung oder andere Apps ändern müssen.
-Weitere Informationen finden Sie unter [Konfigurieren von Windows Information Protection](windows-information-protection-configure.md). Unterstützt: nur Windows 10.
+- Android
+- iOS
+- Windows Phone 8.1
+- Windows 10
 
-## <a name="custom"></a>Benutzerdefiniert
-Mithilfe von benutzerdefinierten Einstellungen können Sie Geräteeinstellungen zuweisen, die nicht in Intune integriert sind. Auf Android-Geräten können Sie z.B. OMA-URI-Werte angeben, die das Gerät konfigurieren. Auf iOS-Geräten können Sie eine Konfigurationsdatei importieren, die Sie in Apple Configurator erstellt haben.
-Weitere Informationen finden Sie unter [Konfigurieren von benutzerdefinierten Einstellungen](custom-settings-configure.md). Unterstützt: Android, iOS, macOS und Windows Phone 8.1.
+## <a name="wi-fi-profile"></a>Wi-Fi-Profil
+Mit [WLAN-Einstellungen](wi-fi-settings-configure.md) können Sie Benutzern und Geräten WLAN-Einstellungen zuweisen. Wenn Sie ein WLAN-Profil zuweisen, erhalten Benutzer Zugriff auf Ihr Unternehmens-WLAN, ohne es selbst konfigurieren zu müssen. 
 
-## <a name="next-steps"></a>Nächste Schritte
-Wählen Sie einen der Profiltypen aus der Liste aus, um mit dem Konfigurieren von Geräten zu beginnen.
+Dieses Features unterstützt folgende Betriebssysteme: 
+
+- Android
+- iOS
+- macOS
+- Windows 8.1 (nur Import)
+
+## <a name="vpn-profile"></a>VPN-Profil
+Mit [VPN-Einstellungen](vpn-settings-configure.md) können Sie Benutzern und Geräten in Ihrer Organisation VPN-Profile zuweisen, damit diese einfach eine sichere Verbindung mit dem Netzwerk herstellen können. 
+
+Virtuelle private Netzwerke (Virtual Private Networks, VPNs) ermöglichen Benutzern einen sicheren Remotezugriff auf Ihr Unternehmensnetzwerk. Geräte verwenden ein VPN-Verbindungsprofil, um eine Verbindung mit dem VPN-Server zu initiieren. 
+
+Dieses Features unterstützt folgende Betriebssysteme: 
+
+- Android
+- iOS
+- macOS
+- Windows Phone 8.1
+- Windows 8.1
+- Windows 10
+
+## <a name="education-profile"></a>Education-Profil
+Mit den [Education-Einstellungen](education-settings-configure.md) können Sie Optionen für die [Windows Take a Test-App](https://education.microsoft.com/gettrained/win10takeatest) konfigurieren. Wenn Sie diese Optionen konfigurieren, können keine anderen Apps auf dem Gerät ausgeführt werden, bis der Test abgeschlossen ist.
+
+## <a name="certificates-profile"></a>Profil für Zertifikate
+Mit [Zertifikate](certificates-configure.md) können Sie vertrauenswürdige SCEP- und PKCS-Zertifikate konfigurieren, die Geräten zugewiesen und zum Authentifizieren von WLAN-, VPN- und E-Mail-Profilen verwendet werden können.
+
+Dieses Features unterstützt folgende Betriebssysteme: 
+
+- Android
+- iOS
+- Windows Phone 8.1
+- Windows 8.1
+- Windows 10
+
+## <a name="edition-upgrade-profile"></a>Editionsupgradeprofil
+Mit [Windows 10-Editionsupgrades](edition-upgrade-configure-windows-10.md) können Sie Geräte, auf denen einige Windows 10-Versionen ausgeführt werden, automatisch auf eine neuere Edition upgraden.
+
+Dieses Features unterstützt nur Windows 10
+
+## <a name="endpoint-protection-profile"></a>Endpoint Protection-Profil
+Mit [Endpoint Protection-Einstellungen für Windows 10](endpoint-protection-windows-10.md) können Sie BitLocker- und Windows Defender-Einstellungen für Windows 10-Geräte konfigurieren.
+
+Dieses Features unterstützt nur Windows 10
+
+## <a name="windows-information-protection-profile"></a>WIP-Profil (Windows Information Protection)
+[Windows Information Protection](windows-information-protection-configure.md) unterstützt Sie dabei, das Unternehmen vor Datenlecks zu schützen, ohne gleichzeitig die Benutzerfreundlichkeit für die Mitarbeiter einzuschränken. Die Lösung schützt auch Unternehmens-Apps und -daten vor versehentlichen Datenlecks auf unternehmenseigenen sowie auf persönlichen Geräten, die die Mitarbeiter bei der Arbeit verwenden. Dabei ist es nicht erforderlich, dass Sie Ihre Umgebung oder andere Apps ändern.
+
+Dieses Features unterstützt nur Windows 10
+
+## <a name="custom-profile"></a>Benutzerdefiniertes Profil
+[Benutzerdefinierte Einstellungen](custom-settings-configure.md) bieten die Möglichkeit, Geräteeinstellungen zuzuweisen, die nicht in Intune integriert sind. So können beispielsweise auf Android-Geräten OMA-URI-Werte eingegeben werden. Auf iOS-Geräten können Sie eine Konfigurationsdatei importieren, die Sie in Apple Configurator erstellt haben. 
+
+Dieses Features unterstützt folgende Betriebssysteme: 
+
+- Android
+- iOS
+- macOS
+- Windows Phone 8.1

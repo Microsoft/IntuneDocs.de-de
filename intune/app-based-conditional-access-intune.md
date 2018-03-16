@@ -1,9 +1,9 @@
 ---
 title: App-basierter bedingter Zugriff mit Intune
-description: Machen Sie sich mit den Konzepten der Funktionsweise des App-basierten bedingten Zugriffs mit Intune vertraut.
+description: "Erfahren Sie mehr über den App-basierten bedingten Zugriff mit Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 43421ac02fc3791e2827d980adcb708619cde9b8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>App-basierter bedingter Zugriff mit Intune
 
@@ -54,7 +54,7 @@ In diesem Beispiel hat der Administrator App-Schutzrichtlinien auf die Outlook-A
 > [!NOTE]
 > Die Struktur aus dem nachfolgenden Flussdiagramm kann für andere verwaltete Apps verwendet werden.
 
-![App-basierter bedingter Zugriff mit Intune, Flussdiagramm](./media/ca-intune-common-ways-3.png)
+![Veranschaulichung des Prozesses des App-basierten bedingten Zugriffs in einem Flowchart](./media/ca-intune-common-ways-3.png)
 
 1.  Der Benutzer versucht, sich über die Outlook-App bei Azure AD zu authentifizieren.
 

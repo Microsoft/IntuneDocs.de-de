@@ -1,7 +1,7 @@
 ---
-title: Protokolle von App-Schutzrichtlinien
-titlesuffix: Azure portal
-description: "In diesem Thema wird die Aufzeichnung von Einstellungen für App-Schutzrichtlinien beschrieben, die in den App-Protokollen gespeichert wird."
+title: "Überprüfen der Protokolle von App-Schutzrichtlinien"
+titlesuffix: Microsoft Intune
+description: "Erfahren Sie mehr über die Einstellungen, die Sie in den App-Schutzprotokollen überprüfen können."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76b7771f974fb1c9a5de8afe52ef79eaa0ed0c2a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f91328561f0dd4dc669844c0398a89f1abf15bf8
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="review-client-app-protection-logs"></a>Überprüfen der Schutzprotokolle für Client-Apps
 
-Durch Aktivieren des Intune-Diagnosemodus für eine Anwendung auf einem mobilen Client können Sie auf die Protokolle zugreifen. Die folgende Tabelle zeigt den Namen und eine Erklärung für die Einstellungen, die im Protokoll aufgezeichnet werden.
+Erfahren Sie mehr über die Einstellungen, die Sie in den App-Schutzprotokollen überprüfen können. Greifen Sie durch Aktivieren des Intune-Diagnosemodus für eine Anwendung auf einem mobilen Client auf die Protokolle zu. Die folgende Tabelle zeigt den Namen und eine Erklärung für die Einstellungen, die im Protokoll aufgezeichnet werden.
 
 ## <a name="app-protection-policy-settings"></a>Einstellungen für die App-Schutzrichtlinie
 

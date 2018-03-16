@@ -1,7 +1,7 @@
 ---
 title: iOS-Apps mit App-Schutzrichtlinien
-titlesuffix: Azure portal
-description: In diesem Thema erfahren Sie, was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird."
+titlesuffix: Microsoft Intune
+description: "Erfahren Sie, was Sie von einer iOS-App mit Schutzrichtlinien erwarten können."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,48 +15,48 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44edf1efd070c0f82c8edf3727992039e0ee4d69
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 13833d41603e24e4471f0bb5fdda40d000f29a34
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Dieses Thema beschreibt die Benutzererfahrung für Apps mit App-Schutzrichtlinien. App-Schutzrichtlinien gelten nur, wenn Apps im geschäftlichen Kontext verwendet werden, z.B. wenn Sie Ihr Geschäftskonto für den Zugriff auf Apps verwenden oder auf Dateien zugreifen, die am OneDrive for Business-Speicherort Ihres Unternehmens gespeichert sind.
+Erfahren Sie mehr über die Benutzererfahrung bei iOS-Apps mit App-Schutzrichtlinien. App-Schutzrichtlinien werden nur angewendet, wenn Apps im beruflichen Kontext verwendet werden. Zum Beispiel, wenn Sie über ein Geschäftskonto auf eine App zugreifen, oder wenn Sie auf Dateien am OneDrive-Speicherort Ihres Unternehmens zugreifen.
 ##  <a name="accessing-apps"></a>Zugreifen auf Apps
 
-Wenn das Gerät **nicht bei Intune registriert** ist, wird der Endbenutzer beim ersten Verwenden der App dazu aufgefordert, die App neu zu starten.  Ein Neustart ist erforderlich, damit App-Schutzrichtlinien auf die App angewendet werden können. Der folgende Screenshot stellt dies mithilfe der Skype-App dar:
+Wenn das Gerät **nicht bei Intune registriert** ist, wird der Benutzer bei der ersten Verwendung der App dazu aufgefordert, die App neu zu starten.  Ein Neustart ist erforderlich, damit App-Schutzrichtlinien auf die App angewendet werden können. Der folgende Screenshot stellt dies mithilfe der Skype-App dar:
 
 
 ![Screenshot des iOS-Geräts mit der PIN-Eingabeaufforderung](./media/ios-pin-prompt.png)
 
-Bei Geräten, die **für die Verwaltung in Intune registriert** sind, wird dem Endbenutzer eine Meldung angezeigt, dass seine App nun verwaltet wird:
+Bei Geräten, die **für die Verwaltung in Intune registriert** sind, wird dem Benutzer eine Meldung angezeigt, dass seine App nun verwaltet wird:
 
 ![Screenshot des iOS-Geräts mit der Meldung zur Verwaltung durch das Unternehmen und der Eingabeaufforderung](./media/ios-managed-devices-pin-prompt.png)
 
 ##  <a name="using-apps-with-multi-identity-support"></a>Verwenden von Apps mit Multi-Identity Support (Unterstützung für mehrere Identitäten)
 
-App-Schutzrichtlinien gelten nur, wenn die App im geschäftlichen Kontext verwendet wird. Daher kann das App-Verhalten abhängig vom Kontext (geschäftlich oder privat) abweichen.  
+App-Schutzrichtlinien werden nur wirksam, wenn ein Benutzer versucht, auf geschäftliche Daten zuzugreifen.  Ihnen werden möglicherweise unterschiedliche Verhaltensweisen angezeigt, wenn der Benutzer für den persönlichen Gebrauch auf die App zugreift. 
 
-Bei Apps, die mehrere Identitäten unterstützen, wendet Intune die App-Schutzrichtlinien nur an, wenn der Endbenutzer die App im geschäftlichen Kontext verwendet.  Beispielsweise erhalten Endbenutzer eine PIN-Eingabeaufforderung, wenn Sie auf Geschäftsdaten zugreifen.  Bei der **Outlook-App** wird der Endbenutzer beim Starten der App zur Eingabe einer PIN aufgefordert. Bei der **OneDrive-App** erfolgt diese Aufforderung, wenn der Endbenutzer das Geschäftskonto eingibt.  Bei Microsoft **Word**, **PowerPoint** und **Excel** erfolgt diese Aufforderung, wenn der Endbenutzer auf Dokumente zugreift, die am OneDrive for Business-Speicherort des Unternehmens gespeichert sind.
+Bei Apps, die mehrere Identitäten unterstützen, wendet Intune App-Schutzrichtlinien nur dann an, wenn ein Benutzer auf Arbeitsdaten zugreift.  So wird der Benutzer z.B. möglicherweise zur PIN-Eingabe aufgefordert.  In der **Outlook-App** tritt eine Eingabeaufforderung auf, wenn ein Benutzer die App startet. In der **OneDrive-App** tritt eine Aufforderung auf, wenn ein Benutzer eine Eingabe im Arbeitskonto macht.  In Microsoft **Word**, **PowerPoint** und **Excel** tritt eine Eingabeaufforderung auf, wenn ein Benutzer auf OneDrive-Dokumente des Unternehmens zugreift.
 ##  <a name="managing-user-accounts-on-the-device"></a>Verwalten von Benutzerkonten auf dem Gerät
 
 Intune unterstützt nur die Bereitstellung von App-Schutzrichtlinien auf je einem Benutzerkonto pro Gerät.
 
 * Abhängig von der verwendeten App, ist der zweite Benutzer auf dem Gerät möglicherweise blockiert oder auch nicht. Unter allen Umständen wirken sich die App-Schutzrichtlinien nur auf den ersten Benutzer aus.
-  * **Microsoft Word**, **Excel** und **PowerPoint** blockieren ein zweites Benutzerkonto nicht, die App-Schutzrichtlinien wirken sich auf das zweite Benutzerkonto jedoch nicht aus.  
+  * **Microsoft Word**, **Excel** und **PowerPoint** blockieren nicht den Zugriff auf ein zusätzliches Konto. Allerdings gelten die App-Schutzrichtlinien nicht für dieses Benutzerkonto.
 
-  * Für **OneDrive- und Outlook-Apps** kann nur ein geschäftliches Konto verwendet werden.  Das Hinzufügen weiterer Geschäftskonten wird von diesen Apps blockiert.  Sie können jedoch einen Benutzer entfernen und auf dem Gerät einen weiteren Benutzer hinzufügen.
+  * Für **OneDrive- und Outlook-Apps** kann nur ein geschäftliches Konto verwendet werden.  Das Hinzufügen weiterer Geschäftskonten wird von diesen Apps blockiert.  Sie können jedoch einen Benutzer von einem Gerät entfernen und anschließend einen anderen Benutzer zum Gerät hinzufügen.
 
-* Wenn für ein Gerät vor der Bereitstellung der App-Schutzrichtlinien mehrere Benutzerkonten vorhanden sind, wird das Konto, für das die App-Schutzrichtlinien zuerst bereitgestellt werden, durch die Intune-App-Schutzrichtlinien verwaltet.
+* Vor der Bereitstellung der App-Schutzrichtlinien sind auf einem Gerät möglicherweise mehrere Benutzerkonten vorhanden. In diesem Fall wird das erste Konto, für das die App-Schutzrichtlinien bereitgestellt werden, von Intune-App-Schutzrichtlinien verwaltet.
 
 
-Lesen Sie das Beispielszenario unten, um genauer zu verstehen, wie mehrere Benutzerkonten behandelt werden.
+Lesen Sie das folgende Beispielszenario, um zu erfahren, wie Intune mit mehreren Benutzerkonten umgeht.
 
-Benutzer A arbeitet für zwei Unternehmen – **Unternehmen X** und **Unternehmen Y**. Benutzer A verfügt für jedes Unternehmen über ein geschäftliches Konto, und beide verwenden Intune zum Bereitstellen von App-Schutzrichtlinien. **Unternehmen X** stellt App-Schutzrichtlinien **vor** **Unternehmen Y** bereit. Das **Unternehmen X** zugeordnete Konto erhält die App-Schutzrichtlinie, nicht jedoch das dem Unternehmen Y zugeordnete Konto. Wenn das Unternehmen Y zugeordnete Konto durch die App-Schutzrichtlinien verwaltet werden soll, müssen Sie das Unternehmen X zugeordnete Benutzerkonto entfernen.
+Benutzer A arbeitet für zwei Unternehmen: **Unternehmen X** und **Unternehmen Y**. Benutzer A verfügt für jedes Unternehmen über ein geschäftliches Konto, und beide verwenden Intune zum Bereitstellen von App-Schutzrichtlinien. **Unternehmen X** stellt App-Schutzrichtlinien **vor** **Unternehmen Y** bereit. Das dem **Unternehmen X** zugeordnete Konto erhält die App-Schutzrichtlinie, das dem Unternehmen Y zugeordnete Konto jedoch nicht. Damit das dem Unternehmen Y zugeordnete Konto durch die App-Schutzrichtlinien verwaltet wird, muss Benutzer A das dem Unternehmen X zugeordnete Benutzerkonto entfernen.
 ### <a name="adding-a-second-account"></a>Hinzufügen eines zweiten Kontos
 
 Wenn Sie ein iOS-Gerät verwenden und versuchen, auf demselben Gerät ein zweites Geschäftskonto einzurichten, wird möglicherweise eine Sperrnachricht angezeigt.  Die Konten werden angezeigt, und Sie können das Konto auswählen, das Sie entfernen möchten.

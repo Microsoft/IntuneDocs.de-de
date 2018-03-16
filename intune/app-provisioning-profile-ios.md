@@ -1,12 +1,12 @@
 ---
-title: App-Bereitstellungsprofile
-titlesuffix: Azure portal
+title: iOS-App-Bereitstellungsprofile in Microsoft Intune
+titlesuffix: 
 description: "Intune stellt Ihnen die Tools zum proaktiven Zuweisen eines neuen Bereitstellungsprofils auf Geräten zur Verfügung, auf denen Apps installiert sind, die bald ablaufen.\""
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/03/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6aa1fe56726f320d971f35cc971253707f968442
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 87d97ddd4c70236193d4e6bb12ac6d68e4085903
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Verwenden von mobilen iOS-Bereitstellungsprofilen, um zu verhindern, dass Apps ablaufen
+# <a name="use-ios-mobile-provisioning-profiles-in-intune-to-prevent-your-apps-from-expiring"></a>Verwenden von mobilen iOS-Bereitstellungsprofilen in Intune, um zu verhindern, dass Apps ablaufen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/30/2018
 
 Die iPhones und iPads zugewiesenen branchenspezifischen Apple iOS-Apps wurden mit integriertem Bereitstellungsprofil und per Zertifikat signiertem Code erstellt. Beim Ausführen der App bestätigt iOS die Integrität der iOS-App und erzwingt Richtlinien, die durch das Bereitstellungsprofil definiert werden. Folgende Überprüfungen finden statt:
 
-- **Integrität der Installationsdateien**: iOS vergleicht die Details der App mit dem öffentlichen Schlüssel des Unternehmenssignaturzertifikats. Wenn Unterschiede festgestellt werden, wurde der Inhalt der App möglicherweise verändert, und die Ausführung der App wird nicht zugelassen.
+- **Integrität der Installationsdateien**: iOS vergleicht die Details der App mit dem öffentlichen Schlüssel des Unternehmenssignaturzertifikats. Wenn Unterschiede festgestellt werden, wird der Inhalt der App möglicherweise verändert, und die Ausführung der App wird nicht zugelassen.
 - **Erzwingen von Funktionen**: iOS versucht, die App-Funktionen aus dem Bereitstellungsprofil des Unternehmens (nicht den Bereitstellungsprofilen der einzelnen Entwickler) zu erzwingen, die in der App-Installationsdatei (IPA) enthalten sind.
 
 
@@ -39,12 +39,12 @@ Nach Ablauf des Zertifikats müssen Sie die App mit einem neuen Zertifikat erneu
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Erstellen eines Bereitstellungsprofils für mobile iOS-Apps
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
-1.  Wählen Sie im Abschnitt **Mobile Apps** die Option **Verwalten** > **iOS-Bereitstellungsprofile** aus.
-2.  Wählen Sie auf dem Blatt mit der Profilliste die Option **Profil erstellen** aus.
-3. Legen Sie auf dem Blatt **Profil erstellen** die folgenden Einstellungen fest:
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
+1.  Wählen Sie in der Workload **Mobile Apps** die Option **Verwalten** > **iOS-App-Bereitstellungsprofile** aus.
+2.  Wählen Sie in dem Bereich mit der Profilliste die Option **Profil erstellen** aus.
+3. Konfigurieren Sie im Bereich **Profil erstellen** folgende Werte:
     - **Name**: Geben Sie einen Namen für dieses mobile Bereitstellungsprofil an.
     - **Beschreibung**: Geben Sie optional eine Beschreibung der Richtlinie ein.
     - **Profildatei hochladen**: Klicken Sie auf **Importieren**, und wählen Sie eine Datei mit einem mobilen Apple-Konfigurationsprofil (mit der Erweiterung **.mobileprovision**) aus, die Sie von der Apple Developer-Website heruntergeladen haben.

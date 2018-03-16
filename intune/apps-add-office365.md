@@ -1,12 +1,12 @@
 ---
-title: "Installieren von Office 365-Apps auf mobilen Geräten mit Intune"
-titlesuffix: Azure portal
-description: "Erfahren Sie, wie Sie Intune verwenden können, um Office 365-Apps einfacher auf Windows 10-Geräten erstellen zu können."
+title: "Installieren von Office 365-Apps auf Geräten mit Microsoft Intune"
+titlesuffix: 
+description: "Erfahren Sie, wie Sie Microsoft Intune verwenden können, um Office 365-Apps einfacher auf Windows 10-Geräten installieren zu können."
 keywords: 
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Vorgehensweise: Zuweisen von Office 365 ProPlus-Apps zu Windows 10-Geräten mit Microsoft Intune
 
@@ -85,11 +85,11 @@ In diesem Schritt konfigurieren Sie Installationsoptionen für die App-Sammlung.
 1.  Wählen Sie auf dem Blatt **App hinzufügen** die Option **App Suite Settings** (Einstellungen für die App-Sammlung) aus.
 2.  Geben Sie auf dem Blatt **App Suite Settings** die folgenden Informationen an:
     - **Office-Version:** Wählen Sie aus, ob Sie die 32-Bit- oder die 64-Bit-Version von Office zuweisen möchten. Sie können die 32-Bit-Version auf jeweils 32-Bit- und 64-Bit-Geräten installieren, jedoch können Sie die 64-Bit-Version nur auf 64-Bit-Geräten installieren.
-    - **Updatekanal:** Wählen Sie aus, wie Office auf Geräten aktualisiert wird. Informationen zu den unterschiedlichen Updatekanälen finden Sie in der Übersicht der Updatekanäle für Office 365 ProPlus. Es stehen die folgenden Optionen zur Auswahl:
-        - **Aktuell**
-        - **Verzögert**
-        - **First Release für aktuellen Kanal**
-        - **First Release für verzögerten Kanal**
+    - **Updatekanal:** Wählen Sie aus, wie Office auf Geräten aktualisiert wird. Informationen zu den unterschiedlichen Updatekanälen finden Sie in der [Übersicht der Updatekanäle für Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Es stehen die folgenden Optionen zur Auswahl:
+        - **Monatlich**
+        - **Monatlich (Ziel)**
+        - **Halbjährlich**
+        - **Halbjährlich (Ziel)**
     - **Automatically accept the app end user license agreement** (Die Endbenutzer-Lizenzvereinbarung der App automatisch akzeptieren): Wählen Sie diese Option aus, wenn Endbenutzer die Lizenzvereinbarung nicht akzeptieren müssen. Intune akzeptiert daraufhin die automatisch die Vereinbarung.
     - **Aktivierung gemeinsam genutzter Computer:** Die Aktivierung gemeinsam genutzter Computer wird verwendet, wenn sich mehrere Benutzer einen Computer teilen. Weitere Informationen finden Sie im Überblick über die Aktivierung gemeinsam genutzter Computer für Office 365 ProPlus.
     - **Sprachen:** Office installiert automatisch alle unterstützen Sprachen, die mit Windows auf Endbenutzergeräten installiert werden. Wählen Sie diese Option, wen Sie zusätzliche Sprachen mit der App-Sammlung installieren möchten.

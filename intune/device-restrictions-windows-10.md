@@ -1,25 +1,26 @@
 ---
-title: "Einstellungen für Geräteeinschränkungen für Windows 10 in Intune"
-titlesuffix: Azure portal
-description: "In diesem Artikel erhalten Sie Informationen zu den Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows 10-Geräten."
+title: "Einstellungen für Geräteeinschränkungen für Windows 10 in Microsoft Intune"
+titlesuffix: 
+description: "In diesem Artikel lernen Sie die Microsoft Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows 10-Geräten kennen."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/15/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Windows 10 und höher in Microsoft Intune
+#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Windows 10 und höher in Microsoft Intune
+In diesem Artikel erfahren Sie alle Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für Windows 10-Geräte konfigurieren können.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,11 +31,7 @@ ms.lasthandoff: 02/19/2018
    - Diese Richtlinieneinstellung wird nicht angewendet, wenn der Computer mit Azure Active Directory verknüpft ist und die automatische Registrierung aktiviert ist. 
    - Diese Richtlinieneinstellung gilt nicht für Computer, auf denen Windows 10 Home ausgeführt wird.
 - **Manuelle Installation von Stammzertifikaten (nur Mobilgerät):** Hindert den Benutzer daran, Stammzertifikate und CAP-Zwischenzertifikate manuell zu installieren.
-- **Übermitteln von Diagnosedaten:** Mögliche Werte:
-    - **Keine**: Es werden keine Daten an Microsoft gesendet.
-    - **Einfach** – begrenzte Informationen werden an Microsoft gesendet
-    - **Erweitert**: Es werden erweiterte Diagnosen an Microsoft gesendet.
-    - **Vollständig:** Das Gerät sendet die gleichen Daten wie mit „Erweitert“ sowie zusätzliche Daten über den Gerätezustand.
+
 - **Kamera:** Erlaubt oder sperrt die Verwendung der Kamera auf dem Gerät.
 - **OneDrive-Dateisynchronisierung:** Hindert das Gerät daran, Dateien mit OneDrive zu synchronisieren.
 - **Wechselmedien:** Gibt an, ob externe Speichergeräte wie SD-Karten mit dem Gerät verwendet werden können.
@@ -51,6 +48,7 @@ ms.lasthandoff: 02/19/2018
 - **Geräteerkennung:** Verhindert, dass ein Gerät von anderen Geräten erkannt wird.
 - **Programmumschaltung (nur mobile Geräte):** Blockiert die Programmumschaltung auf dem Gerät.
 - **Dialogfeld bei SIM-Kartenfehler (nur mobile Geräte):** Blockiert die Anzeige einer Fehlermeldung auf dem Gerät, wenn keine SIM-Karte erkannt wird.
+- **Ink-Arbeitsbereich:** Blockiert den Benutzerzugriff auf den Ink-Arbeitsbereich. Wenn diese Einstellung nicht konfiguriert ist, ist der Ink-Arbeitsbereich aktiviert (Feature ist aktiviert), und der Benutzer kann ihn über den Sperrbildschirm verwenden.
 - **Automatische erneute Bereitstellung:** Ermöglicht es Benutzern mit Administratorrechten, alle Benutzerdaten und -einstellungen über **STRG+Windows+R** vom Sperrbildschirm des Geräts aus zu löschen. Das Gerät wird automatisch neu konfiguriert und bei der Verwaltung neu registriert.
 
 
@@ -75,6 +73,9 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
 
 -   **Eingabepersonalisierung:** Verhindert die Verwendung cloudbasierter Sprachdienste für Cortana, Diktierfunktionen oder Microsoft Store-Apps. Wenn Sie diese Dienste zulassen, kann Microsoft Voice-Daten erfassen, um den Dienst zu verbessern.
 -   **Automatisches Akzeptieren der Zustimmungsaufforderung des Benutzers zu Kopplung und Datenschutz:** Erlaubt Windows beim Ausführen von Apps das automatische Akzeptieren von Benachrichtigungen zur Zustimmung zu Kopplung und Datenschutz.
+- **Benutzeraktivitäten veröffentlichen:** Legen Sie diese Einstellung auf **Blockieren** fest, um geteilte Aktivitäten und die Ermittlungen von kürzlich verwendeten Ressourcen in der Programmumschaltung zu vermeiden.
+- **Nur lokale Aktivitäten:** Legen Sie diese Einstellungen auf **Blockieren** fest, um geteilte Aktivitäten und Ermittlungen von kürzlich in der Programmumschaltung verwendeten Ressourcen anhand von ausschließlich lokalen Aktivitäten zu vermeiden.
+
 
 Sie können Informationen definieren, auf die alle Anwendungen auf dem Gerät zugreifen können. Zudem können Sie mithilfe von **App-bezogenen Datenschutzausnahmen** Ausnahmen für jede App definieren.
 
@@ -130,7 +131,7 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 ## <a name="locked-screen-experience"></a>Gesperrter Bildschirm
 
 - **Info-Center-Benachrichtigungen (nur Mobilgerät):** Lässt Info-Center-Benachrichtigungen auf dem Gerätesperrbildschirm anzeigen (nur Windows 10 Mobile).
-- **URL zu Bild für gesperrten Bildschirm (nur Desktop):** Gibt die URL zu einem Bild im PNG-, JPG- oder JPEG-Format an, das als Hintergrund für den Windows-Sperrbildschirm verwendet wird. Benutzer können diese nicht ändern.
+- **URL zu Bild für gesperrten Bildschirm (nur Desktop):** Gibt die URL zu einem Bild im JPEG-Format an, das als Hintergrund für den Windows-Sperrbildschirm verwendet wird. Benutzer können diese nicht ändern.
 -   **Vom Benutzer konfigurierbares Bildschirmtimeout (nur Mobilgeräte):** Ermöglicht Benutzern das Einstellen der Zeitspanne. 
 -   **Cortana auf Sperrbildschirm (nur Desktop):** Lässt nicht zu, dass der Benutzer mit Cortana interagiert, wenn auf dem Gerät der Sperrbildschirm zu sehen ist (nur Windows 10 Desktop).
 -   **Popupbenachrichtigungen auf Sperrbildschirm:** Verhindert, dass Warnmeldungen auf dem Gerätesperrbildschirm angezeigt werden.
@@ -180,6 +181,8 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 -   **Standardsuchmodul:** Gibt das zu verwendende Standardsuchmodul an. Endbenutzer können diesen Wert jederzeit ändern.
 -   **Browserdaten beim Beenden löschen:** Löscht Verlauf und Browserdaten, wenn der Benutzer Edge beendet.
 -   **Datenerfassung für Livekacheln:** Beendet das Sammeln von Daten durch Windows aus den Livekacheln, wenn der Benutzer eine Seite an das Startmenü von Edge anheften.
+-  **Favoritenliste:** Definiert den Pfad zur Favoritendatei. Beispielsweise http://contoso.com/favorites.html.
+-  **Favoritenänderungen einschränken:** Legen Sie **Blockieren** fest, um zu verhindern, dass Benutzer die Favoritenliste hinzufügen, importieren, sortieren oder bearbeiten. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 

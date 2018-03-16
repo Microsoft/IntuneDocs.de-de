@@ -1,7 +1,7 @@
 ---
-title: "Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Apps ohne Geräteregistrierung | Microsoft-Dokumentation"
-titlesuffix: Azure portal
-description: "Erfahren Sie, wie Sie App-Konfigurationsrichtlinien für verwaltete Apps ohne Geräteregistrierung verwenden."
+title: "Konfigurationsrichtlinien für verwaltete Apps ohne Geräteregistrierung"
+titlesuffix: Microsoft Intune
+description: "Erfahren Sie, wie Sie Richtlinien für verwaltete Apps ohne Geräteregistrierung konfigurieren."
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 136032be6a05ad56dd78fe40e66d3d049a4b5a03
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 384804029ecbf403f526144136dc187212e6cf4a
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Apps ohne Geräteregistrierung
 
@@ -27,8 +27,8 @@ ms.lasthandoff: 02/09/2018
 
 Sie können App-Konfigurationsrichtlinien mit verwalteten Apps, die das Intune App-SDK unterstützen, sogar auf nicht registrierten Geräten verwenden. 
 
-1. Melden Sie sich im Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** + **Intune** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 3. Wählen Sie die Workload **Mobile Apps** aus.
 4. Wählen Sie in der Gruppe **Verwalten** **App-Konfigurationsrichtlinien** und dann **Hinzufügen** aus.
 5. Legen Sie die folgenden Details fest:

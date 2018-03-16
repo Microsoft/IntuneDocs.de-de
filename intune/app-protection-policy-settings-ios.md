@@ -1,12 +1,12 @@
 ---
 title: "Einstellungen für App-Schutzrichtlinien für iOS"
-titlesuffix: Azure portal
-description: "In diesem Thema werden die Einstellungen für App-Schutzrichtlinien für iOS-Geräte beschrieben.\""
+titlesuffix: Microsoft Intune
+description: "In diesem Thema werden die Einstellungen für App-Schutzrichtlinien für iOS-Geräte beschrieben."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5366062588d518a7072fb4d56e4eade0f492bebf
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 6225afab71d1f47793ea295553dfcaf169374a06
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Einstellungen für App-Schutzrichtlinien für iOS
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Die in diesem Thema beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Einstellungen** für eine Schutzrichtlinie [konfiguriert](app-protection-policies.md) werden.
+Die in diesem Thema beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Richtlinie hinzufügen** > **Einstellungen** [konfiguriert](app-protection-policies.md) werden.
 
 Es gibt zwei Kategorien von Richtlinieneinstellungen: Datenverlagerungs- und Zugriffseinstellungen. In diesem Thema bezieht sich der Begriff ***richtlinienverwaltete Apps*** auf Apps, die mit App-Schutzrichtlinien konfiguriert sind.
 
@@ -32,8 +32,8 @@ Es gibt zwei Kategorien von Richtlinieneinstellungen: Datenverlagerungs- und Zug
 
 | Einstellung | Verwendung | Standardwert |
 |------|------|------|
-| **iTunes- und iCloud-Sicherungen verhindern** | Klicken Sie auf **Ja**, um die Sicherung aller verwalteter Dateien in iTunes und iCloud zu deaktivieren. Klicken Sie auf **Nein**, um dieser App die Sicherung aller verwalteten Dateien in iTunes und iCloud zu erlauben.| Ja  |
-| **App Übertragung von Daten an andere Apps erlauben** | Geben Sie an, welche Apps Daten von dieser App empfangen können: <ul><li> **Richtlinienverwaltete Apps**: Datenübertragung nur an andere richtlinienverwaltete Apps zulassen</li> <li>**Alle Apps**: Datenübertragung an beliebige Apps zulassen </li> <li>**Keine**: Keine Datenübertragung an beliebige Apps zulassen, auch nicht an andere richtlinienverwaltete Apps.</li></ul> Wenn Sie diese Option auf **Richtlinienverwaltete Apps** oder **Keine** festlegen, wird zudem das iOS 9-Feature blockiert, das der Spotlight-Suche die Suche von Daten in Apps erlaubt. <br><br> Es gibt einige ausgenommene Apps und Dienste, für die Intune möglicherweise die Datenübertragung zulässt. Unter [Datenübertragungsausnahmen](#data-transfer-exemptions) finden Sie eine vollständige Liste der Apps und Dienste. | Alle Apps |
+| **iTunes- und iCloud-Sicherungen verhindern** | Wählen Sie **Ja**, um zu verhindern, dass diese App Geschäfts-, Schul- oder Unidaten in iTunes und iCloud sichert. Wählen Sie **Nein**, um dieser App zu erlauben, Geschäfts-, Schul- oder Unidaten in iTunes und iCloud zu sichern.| Ja  |
+| **App Übertragung von Daten an andere Apps erlauben** | Geben Sie an, welche Apps Daten von dieser App empfangen können: <ul><li> **Richtlinienverwaltete Apps**: Datenübertragung nur an andere richtlinienverwaltete Apps zulassen</li> <li>**Alle Apps**: Datenübertragung an beliebige Apps zulassen </li> <li>**Keine**: Keine Datenübertragung an beliebige Apps zulassen, auch nicht an andere richtlinienverwaltete Apps.</li></ul> Wenn Sie diese Option auf **Richtlinienverwaltete Apps** oder **Keine** festlegen, wird zudem das iOS 9-Feature blockiert, das der Spotlight-Suche die Suche von Daten in Apps erlaubt. <br><br> Es gibt einige ausgenommene Apps und Dienste, bei denen Intune die Datenübertragung möglicherweise standardmäßig zulässt. Darüber hinaus können Sie Ihre eigenen Ausnahmen erstellen, wenn Sie zulassen müssen, dass Daten an eine App übertragen werden, welche die Intune-APP nicht unterstützt. Weitere Informationen finden Sie unter [Datenübertragungsausnahmen](#data-transfer-exemptions). | Alle Apps |
 | **App Empfang von Daten aus anderen Apps erlauben** | Geben Sie an, welche Apps Daten an diese App übertragen können: <ul><li>**Richtlinienverwaltete Apps**: Datenübertragung nur von anderen richtlinienverwalteten Apps zulassen</li><li>**Alle Apps**: Datenübertragung von beliebigen Apps zulassen</li><li>**Keine**: Keine Datenübertragung von beliebigen Apps zulassen, auch nicht von anderen richtlinienverwalteten Apps</li></ul> Es gibt einige ausgenommene Apps und Dienste, von denen Intune möglicherweise die Datenübertragung zulässt. Unter [Datenübertragungsausnahmen](#data-transfer-exemptions) finden Sie eine vollständige Liste der Apps und Dienste. MAM-fähige Anwendungen für mehrere Identitäten auf nicht registrierten iOS-Geräten ignorieren diese Richtlinie und lassen sämtliche eingehende Daten zu. | Alle Apps |
 | **„Speichern unter“ verhindern** | Wählen Sie **Ja** aus, um die Verwendung der Option „Speichern unter“ in dieser App zu deaktivieren. Wählen Sie **Nein** aus, wenn die Verwendung von „Speichern unter“ zulässig sein soll. | Nein |
 | **Beschränken von Ausschneiden, Kopieren und Einfügen mit anderen Apps** | Geben Sie an, wann Ausschneide-, Kopier- und Einfügeaktionen in dieser App erlaubt sind. Es stehen die folgenden Optionen zur Auswahl: <ul><li>**Blockiert**: Ausschneide-, Kopier- und Einfügeaktionen zwischen dieser App und anderen Apps nicht zulassen.</li><li>**Richtlinienverwaltete Apps**: Nur Ausschneide-, Kopier- und Einfügeaktionen zwischen dieser App und anderen richtlinienverwalteten Apps zulassen.</li><li>**Richtlinienverwaltete Apps mit Einfügen**: Ausschneiden oder Kopieren zwischen dieser App und anderen richtlinienverwalteten Apps zulassen. Einfügen von Daten aus beliebigen Apps in diese App zulassen.</li><li>**Jede App**: Keine Einschränkungen für das Ausschneiden, Kopieren und Einfügen in und aus dieser App. | Jede App |
@@ -53,13 +53,12 @@ Die App-Schutzrichtlinie von Intune erlaubt unter bestimmten Umständen die Date
 | Name der App/des Diensts | Beschreibung |
 | ---- | --- |
 |<code>tel; telprompt</code> | Native Phone-App |
-| <code>skype</code> | Skype |
-| <code>app-settings</code> | Geräteeinstellungen |
-| <code>itms; itmss; itms-apps; itms-appss; itms-services</code> | App Store |
-| <code>calshow</code> | Nativer Kalender |
+|<code>skype</code> | Skype |
+|<code>app-settings</code> | Geräteeinstellungen |
+|<code>itms; itmss; itms-apps; itms-appss; itms-services</code> | App Store |
+|<code>calshow</code> | Nativer Kalender |
 
-
-
+Weitere Informationen finden Sie unter [Ausnahmen von der Datenübertragungsrichtlinie für Apps](app-protection-policies-exception.md). 
 
 ## <a name="access-settings"></a>Zugriffseinstellungen
 

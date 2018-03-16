@@ -1,12 +1,12 @@
 ---
 title: Verwalten des Webzugriffs mit der Managed Browser-App
-titlesuffix: Azure portal
-description: "Stellen Sie die Managed Browser-Anwendung bereit, um das Webbrowsen und die Übertragung von Webdaten an andere Apps einzuschränken.\""
+titlesuffix: Microsoft Intune
+description: "Stellen Sie die Managed Browser-Anwendung bereit, um das Webbrowsen und die Übertragung von Webdaten an andere Apps einzuschränken."
 keywords: 
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 613099d1d30a8be3787bd0004a376302da3dc231
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f7c36639272bd8738bff33f6039a2d26e6147729
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Verwalten des Internetzugriffs mittels Richtlinien für Managed Browser mit Microsoft Intune
 
@@ -63,17 +63,17 @@ Intune Managed Browser unterstützt das Öffnen von Webinhalten von [Microsoft I
 
 ## <a name="create-a-managed-browser-app-configuration"></a>Erstellen einer Managed Browser-App-Konfiguration
 
-1.  Melden Sie sich beim Azure-Portal an.
-2.  Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 3.  Gehen Sie zur Liste „Verwalten“ auf dem Blatt **Mobile Apps**, und wählen Sie die Option **App-Konfigurationsrichtlinien** aus.
 4.  Wählen Sie auf dem Blatt **App-Konfigurationsrichtlinien** die Option **Hinzufügen** aus.
-5.  Geben Sie auf dem Blatt **App-Konfiguration hinzufügen** einen **Namen** und optional eine **Beschreibung** für die App-Konfigurationseinstellungen ein.
+5.  Geben Sie auf dem Blatt **Konfigurationsrichtlinie hinzufügen** einen **Namen** und optional eine **Beschreibung** für die App-Konfigurationseinstellungen ein.
 6.  Wählen Sie als Typ der **Geräteregistrierung** die Option **Verwaltete Apps** aus.
-7.  Wählen Sie **Erforderliche Apps auswählen** aus, und wählen Sie auf dem Blatt **Ziel-Apps** die Option **Managed Browser** für iOS, für Android oder für beides aus.
-8.  Wählen Sie **OK** aus, um zum Blatt **App-Konfiguration hinzufügen** zurückzukehren.
+7.  Wählen Sie **Erforderliche App auswählen** aus, und wählen Sie auf dem Blatt **Ziel-Apps** die Option **Managed Browser** für iOS, für Android oder für beides aus.
+8.  Wählen Sie **OK** aus, um zum Blatt **Konfigurationsrichtlinie hinzufügen** zurückzukehren.
 9.  Wählen Sie **Konfigurationseinstellungen** aus. Auf dem Blatt **Konfiguration** definieren Sie Schlüssel-Wert-Paare, um Konfigurationen für Managed Browser bereitzustellen. In den folgenden Abschnitten erhalten Sie weitere Informationen zu den unterschiedlichen Schlüssel-Wert-Paaren, die Sie definieren können.
 10. Wählen Sie abschließend **OK** aus.
-11. Wählen Sie auf dem Blatt **App-Konfiguration hinzufügen** die Option **Erstellen** aus.
+11. Wählen Sie auf dem Blatt **Konfigurationsrichtlinie hinzufügen** die Option **Hinzufügen** aus.
 12. Die neue Konfiguration wird erstellt und auf dem Blatt **App-Konfiguration** angezeigt.
 
 >[!IMPORTANT]
@@ -83,10 +83,10 @@ Intune Managed Browser unterstützt das Öffnen von Webinhalten von [Microsoft I
 
 Sie weisen die Einstellungen Azure AD-Gruppen von Benutzern zu. Haben diese Benutzer die Managed Browser-App installiert, wird die App durch die angegebenen Einstellungen verwaltet.
 
-1. Wählen Sie auf dem Blatt **Einstellungen** im Intune-Dashboard für die Verwaltung von mobilen Anwendungen **App-Konfiguration** aus.
+1. Wählen Sie auf dem Blatt **Mobile Apps** im Intune-Dashboard für die Verwaltung von mobilen Anwendungen **App-Konfigurationsrichtlinie** aus.
 2. Wählen Sie aus der Liste der App-Konfigurationen diejenige aus, die Sie zuweisen möchten.
-3. Wählen Sie auf dem nächsten Blatt **Benutzergruppen** aus.
-4. Wählen Sie auf dem Blatt **Benutzergruppen** die Azure AD-Gruppe aus, die Sie der App-Konfiguration zuweisen möchten, und wählen Sie dann **OK** aus.
+3. Wählen Sie auf dem nächsten Blatt **Zuweisungen** aus.
+4. Wählen Sie auf dem Blatt **Zuweisungen** die Azure AD-Gruppe aus, der Sie die App-Konfiguration zuweisen möchten, und wählen Sie dann **OK** aus.
 
 
 ## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>Konfigurieren von Anwendungsproxyeinstellungen für Managed Browser

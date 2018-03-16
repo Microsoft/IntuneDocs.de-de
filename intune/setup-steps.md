@@ -1,9 +1,9 @@
 ---
-title: Einrichten von Intune
+title: Microsoft Intune einrichten
 description: "Anforderungen und erforderliche Komponenten für den Beginn der Verwendung Ihres Intune-Abonnements"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a1203cf22fad93f245508284d93024df40e11b9a
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: d2abd140dc83cffa11777ab75f7fb40e76fc1b83
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-up-intune"></a>Einrichten von Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Diese Einrichtungsschritte helfen Ihnen, die mobile Geräteverwaltung zu aktivieren. Geräte müssen verwaltet werden, bevor Sie Benutzern Zugriff auf Unternehmensressourcen gewähren oder Einstellungen auf diesen Geräten verwalten können.
+Diese Einrichtungsschritte helfen Ihnen, die mobile Geräteverwaltung (Mobile Device Management, MDM) mit Intune zu aktivieren. Geräte müssen verwaltet werden, bevor Sie Benutzern Zugriff auf Unternehmensressourcen gewähren oder Einstellungen auf diesen Geräten verwalten können.
 
 Einige Schritte wie die Einrichtung eines Intune-Abonnements und der MDM-Autorität sind in den meisten Szenarios erforderlich. Andere Schritte wie das Konfigurieren einer benutzerdefinierten Domäne oder das Hinzufügen von Apps sind optional, je nach den Anforderungen Ihres Unternehmens.
 

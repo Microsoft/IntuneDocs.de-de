@@ -1,12 +1,12 @@
 ---
 title: "Verwalten der Datenübertragung zwischen iOS-Apps"
-titlesuffix: Azure portal
-description: "Dieses Thema erläutert die Verwendung des iOS-Features „Öffnen in“ und der Richtlinien für die Verwaltung mobiler Apps, um Datenübertragungen zwischen Apps zu verwalten.\""
+titlesuffix: Microsoft Intune
+description: "Hier finden Sie Informationen zur Verwendung der Richtlinien zur Verwaltung mobiler Apps in Microsoft Intune zum Verwalten der Datenübertragung zwischen Apps."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d110a099b4957626d4368c9e63817674d6cfaa2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 441f78a8b3b9c41610b78a27dbe51fb144dd82da
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-manage-data-transfer-between-ios-apps"></a>Verwalten der Datenübertragung zwischen iOS-Apps
+# <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune
 ## <a name="manage-ios-apps"></a>Verwalten von iOS-Apps
 Der Schutz der Unternehmensdaten umfasst die Sicherstellung, dass die Übertragung von Dateien auf Apps beschränkt ist, die von Ihnen verwaltet werden.  Sie können iOS-Apps auf folgende Weise verwalten:
 

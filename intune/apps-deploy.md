@@ -1,12 +1,12 @@
 ---
-title: Zuweisen von Apps zu Gruppen
-titlesuffix: Azure portal
-description: "Nachdem Sie eine App zu Intune hinzugefügt haben, sollten Sie sie Gruppen von Benutzern oder Geräten zuweisen.\""
+title: Zuweisen von Apps zu Gruppen in Microsoft Intune
+titlesuffix: 
+description: "Nachdem Sie eine App zu Microsoft Intune hinzugefügt haben, sollten Sie sie Gruppen von Benutzern oder Geräten zuweisen."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc4732043153662ac83beac950d53246caff1b94
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Zuweisen von Apps zu Gruppen mit Microsoft Intune
 
@@ -38,29 +38,30 @@ Apps können Geräten zugewiesen werden, und zwar unabhängig davon, ob sie von 
 |Zuweisen von Apps als verfügbar|Ja |Ja |
 |Zuweisen von Apps als erforderlich|Ja |Nein|
 |Deinstallieren von Apps|Ja |Nein|
+|Erhalten von App-Updates von Intune|Ja |Nein|
 |Endbenutzer installieren verfügbare Apps über die Unternehmensportal-App|Ja |Nein|
 |Endbenutzer installieren verfügbare Apps über das webbasierte Unternehmensportal|Ja |Ja |
 
 > [!NOTE]
-> Derzeit können Sie iOS- und Android-Apps (Branchen-Apps und Apps aus dem Store) Geräten zuweisen, die nicht bei Intune registriert sind.
+> Derzeit können Sie iOS- und Android-Apps (Branchen-Apps und Apps aus dem Store) Geräten zuweisen, die nicht bei Intune registriert sind.<br></br><br></br>
+> Um App-Updates zu Geräten zu erhalten, die nicht bei Intune registriert sind, müssen Gerätebenutzer zu ihrem Unternehmensportal navigieren und App-Updates manuell installieren.
 
 ## <a name="how-to-assign-an-app"></a>Zuweisen einer App
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
 1. Wählen Sie in der Workload **Mobile Apps** die Option **Verwalten** > **Apps** aus.
 2. Klicken Sie auf dem Blatt mit der Liste der Apps auf die App, die Sie zuweisen möchten.
-3. Wählen Sie auf dem Blatt <*App-Name*> – **Übersicht** die Option **Verwalten** > **Zuweisungen** aus.
-4. Wählen Sie **Gruppen auswählen** und dann auf dem Blatt **Gruppen auswählen** die Azure AD-Gruppen aus, denen Sie die App zuweisen möchten.
+3. Wählen Sie auf dem Blatt **Übersicht** die Option **Verwalten** > **Zuweisungen** aus.
+4. Wählen Sie **Gruppe hinzufügen** und anschließend auf dem Blatt **Gruppe hinzufügen** die Azure AD-Gruppen aus, die Sie bei der Zuweisung der Gruppe einbeziehen bzw. ausschließen möchten.
 5. Wählen Sie für jede ausgewählte App einen **Zuweisungstyp** aus:
-    - **Verfügbar:** Benutzer installieren die App über die Unternehmensportal-App oder -Website.
-    - **Nicht verfügbar:** Die App wird nicht installiert und nicht im Unternehmensportal angezeigt.
+    - **Verfügbar für registrierte Geräte:**  Benutzer installieren die App über die Unternehmensportal-App oder -Website.
+    - **Verfügbar ohne Registrierung:** Weisen Sie diese App Benutzergruppen zu, deren Geräte nicht bei Intune registriert sind.
     - **Erforderlich:** Die App wird auf Geräten in den ausgewählten Gruppen installiert.
     - **Deinstallieren:** Die App wird auf Geräten in den ausgewählten Gruppen deinstalliert.
-    - **Verfügbar ohne Registrierung:** Weisen Sie diese App Benutzergruppen zu, deren Geräte nicht bei Intune registriert sind.
 6. **Nur für iOS-Apps**: Wenn Sie ein iOS-VPN-Profil erstellt haben, das VPN pro App-Einstellungen enthält, können Sie es unter **VPN** auswählen. Wenn die App ausgeführt wird, wird die VPN-Verbindung geöffnet. Weitere Informationen finden Sie unter [VPN-Einstellungen für iOS-Geräte](vpn-settings-ios.md).
-6. Wählen Sie abschließend **Speichern** aus.
+6. Wählen Sie abschließend **OK** und dann **Speichern** aus.
 
 Die App wird jetzt den von Ihnen ausgewählten Gruppen zugewiesen.
 

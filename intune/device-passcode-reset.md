@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ff5fb2634e2bc6019404d55d1c322146b32eb7f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4e1496d24fd9d3bb636a4eab00c254b753210f63
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="reset-and-remove-the-passcode-on-intune-managed-devices"></a>Zurücksetzen und Entfernen der Kennung auf von Intune verwalteten Geräten
 
@@ -39,12 +39,12 @@ Durch die Aktion **Kennung entfernen** wird eine neue Kennung für das Gerät ge
 
 ## <a name="how-to-reset-a-passcode"></a>So setzen Sie eine Kennung zurück
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.
-4. Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.
-5. Wählen Sie aus der Liste der verwalteten Geräte ein Gerät aus, und wählen Sie dann die Remotegeräteaktion **Kennung entfernen**.
+4. Wählen Sie auf dem Blatt **Geräte** die Option **Alle Geräte** aus.
+5. Wählen Sie aus der Liste der verwalteten Geräte ein Gerät aus, klicken Sie auf **...Weitere**, und wählen Sie dann die Remotegeräteaktion **Kennung entfernen**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Um den Status der gerade ausgeführten Aktion anzuzeigen, wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Geräteaktionen** aus.
+Um den Status der gerade ausgeführten Aktion anzuzeigen, wählen Sie auf dem Blatt **Geräte** die Option **Geräteaktionen** aus.

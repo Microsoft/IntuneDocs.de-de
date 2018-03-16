@@ -1,6 +1,7 @@
 ---
-title: "Registrierungsoptionen für Intune"
-description: 
+title: "Registrierungsoptionen für von Microsoft Intune verwaltete Geräte"
+titleSuffix: 
+description: "Eine Liste der Registrierungsoptionen, die Administratoren für von Microsoft Intune verwaltete Geräte festlegen können."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -11,13 +12,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: 2672ebec94387ad876443c975f083472c2613a11
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67805253f432098736e0fb96776e8f7f0ff44cc3
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enrollment-options-for-intune"></a>Registrierungsoptionen für Intune
+# <a name="enrollment-options-for-devices-managed-by-intune"></a>Registrierungsoptionen für von Intune verwaltete Geräte
 
 Als Intune-Administrator können Sie die Geräteregistrierung konfigurieren, um Benutzer zu unterstützen und Intune-Funktionen zu aktivieren.  Intune umfasst folgende Registrierungsoptionen:
 

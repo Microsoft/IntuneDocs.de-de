@@ -1,7 +1,7 @@
 ---
-title: So konfigurieren Sie Intune-VPN-Einstellungen
-titleSuffix: Azure portal
-description: "Erfahren Sie, wie Sie mit Intune VPN-Einstellungen auf Geräten, die Sie verwalten, konfigurieren.\""
+title: Konfigurieren von VPN-Einstellungen in Microsoft Intune
+titleSuffix: 
+description: "Erfahren Sie, wie Sie mit Microsoft Intune VPN-Einstellungen (virtuelles privates Netzwerk) auf Geräten konfigurieren, die Sie verwalten."
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 772b7f025adc7ae80d0f14c5c630209c4c7529b2
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: feba7e7dc3e88d7d9beefc548c20bf19fbba662d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Konfigurieren von VPN-Einstellungen in Microsoft Intune
 
@@ -48,7 +48,7 @@ Sie können VPN-Profile mit den folgenden Verbindungstypen erstellen:
 
 
 > [!IMPORTANT]
-> Vor der Verwendung von VPN-Profilen, die auf einem Gerät zugewiesen werden, müssen Sie die entsprechende VPN-App für das Profil installieren. Die Informationen im Thema [Was ist die App-Verwaltung in Microsoft Intune?](app-management.md) unterstützen Sie beim Zuweisen der App mit Intune.  
+> Vor der Verwendung von VPN-Profilen, die auf einem Gerät zugewiesen werden, müssen Sie die entsprechende VPN-App für das Profil installieren. Die Informationen im Artikel [Was ist die App-Verwaltung in Microsoft Intune?](app-management.md) unterstützen Sie beim Zuweisen der App mit Intune.  
 
 Informationen zum Erstellen benutzerdefinierter VPN-Profile mithilfe von URI-Einstellungen finden Sie unter [Erstellen benutzerdefinierter VPN-Profile](custom-vpn-profiles-create.md).     
 
@@ -88,7 +88,7 @@ VPN-Profile können eine Reihe verschiedener Verbindungstypen und Protokolle von
 
 ### <a name="certificates"></a>Zertifikate
 
-Beim Erstellen des VPN-Profils wählen Sie ein SCEP- oder PKCS-Zertifikatprofil aus, das Sie zuvor in Intune erstellt haben. Dies wird als Identitätszertifikat bezeichnet. Es dient zur Authentifizierung anhand eines von Ihnen erstellten vertrauenswürdigen Zertifikatprofils (oder eines *Stammzertifikats*), mit dem überprüft wird, ob das Gerät des Benutzers eine Verbindung herstellen darf. Das vertrauenswürdige Zertifikat wird auf dem Computer zugewiesen, der die VPN-Verbindung authentifiziert, in der Regel ist dies der VPN-Server.
+Beim Erstellen des VPN-Profils wählen Sie ein SCEP- oder PKCS-Zertifikatprofil aus, das Sie zuvor in Intune erstellt haben. Dieses Profil wird als Identitätszertifikat bezeichnet. Es dient zur Authentifizierung anhand eines von Ihnen erstellten vertrauenswürdigen Zertifikatprofils (oder eines *Stammzertifikats*), mit dem überprüft wird, ob das Gerät des Benutzers eine Verbindung herstellen darf. Das vertrauenswürdige Zertifikat wird auf dem Computer zugewiesen, der die VPN-Verbindung authentifiziert, in der Regel ist dies der VPN-Server.
 
 Weitere Informationen zum Erstellen und Verwenden von Zertifikatprofilen in Intune finden Sie unter [Konfigurieren von Zertifikaten mit Microsoft Intune](certificates-configure.md).
 

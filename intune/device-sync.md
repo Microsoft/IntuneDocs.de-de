@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f784143535188c6bee2082c5717b752f08c5490
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7d48b81e6df912815d9ef843b4588f8c1076a8a7
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Synchronisieren von Geräten mit Intune, um die neuesten Richtlinien und Aktionen zu erhalten
 
@@ -37,11 +37,11 @@ Die Geräteaktion **Sync** (Synchronsieren) zwingt das ausgewählte Gerät dazu,
 
 ## <a name="how-to-sync-a-device"></a>So synchronisieren Sie ein Gerät
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.
-4. Wählen Sie auf dem Blatt **Geräte und Gruppen** die Option **Alle Geräte** aus.
-5. Wählen Sie aus der Liste der verwalteten Geräte ein Gerät aus, und wählen Sie dann die Remotegeräteaktion **Sync** aus.
+4. Wählen Sie auf dem Blatt **Geräte** die Option **Alle Geräte** aus.
+5. Wählen Sie aus der Liste der verwalteten Geräte ein Gerät aus, klicken Sie auf **...Weitere**, und wählen Sie dann die Remotegeräteaktion **Sync** aus.
 7. Wählen Sie zum Bestätigen der Aktion **Ja** aus.
 
 

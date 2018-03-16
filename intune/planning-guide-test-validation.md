@@ -1,9 +1,10 @@
 ---
 title: "Testen und Überprüfen von Intune"
-description: "Die Details, die Sie beim Testen und Überprüfen einer Nur-Cloud-Lösung in Ihrer Umgebung bedenken sollten."
+titlesuffix: Microsoft Intune
+description: "Informationen zum Testen und Überprüfen in der Nur-Cloud-Lösung von Intune in Ihrer Umgebung"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -13,15 +14,15 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8521ae12062ad73dfddb0f03aeac8c07ce65de58
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1346c0f5b0e1665e49e09fc566b9ff3da17fc17a
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-testing-and-validation"></a>Testen und Überprüfen von Intune
 
-Die Testphase tritt jeweils während und nach der Implementierungsphase auf. Sie müssen Konten, Gruppen und Geräte für Testzwecke aller erforderlichen IT- (Administrator) und Endbenutzerszenarios (Anwendungsfall) testen, die Sie zuvor angegeben haben.
+Berücksichtigen Sie beim Testen der Implementierung von Microsoft Intune Funktions- und Anwendungsfallüberprüfungen. Bei der Funktionsüberprüfung werden die einzelnen Komponenten und die Konfiguration getestet, um deren ordnungsgemäße Funktionsweise zu überprüfen. Anwendungsfallüberprüfungen umfassen Tests, die sicherstellen, dass die Szenarios im Zusammenhang mit einer Reihe von Aufgaben wie erwartet funktionieren. 
 
 Es wird empfohlen, Ihre IT-Support- und Helpdeskmitarbeiter in die Testphase einzubeziehen, damit sie eine Supportdokumentation erstellen und sich mit der Unterstützung des Produkts vertraut machen. Wenn eine Komponente oder ein Szenario auf der Grundlage der Anwendungsfälle nicht funktioniert, stellen Sie sicher, dass die notwendigen Änderungen dokumentiert werden. Geben Sie dabei den Grund für die Änderung an.
 

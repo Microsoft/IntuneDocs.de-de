@@ -1,8 +1,8 @@
 ---
 title: "Microsoft Intune App SDK für iOS –Entwicklerhandbuch"
-description: "Mit dem Microsoft Intune App SDK für iOS können Sie die Intune-App-Schutzrichtlinien in Form von Mobile App Management (MAM) in Ihre iOS-App integrieren."
+description: "Mit dem Microsoft Intune App SDK für iOS können Sie die Intune-App-Schutzrichtlinien (auch als APP- oder MAM-Richtlinien bezeichnet) in Ihre native iOS-App integrieren."
 keywords: 
-author: erikre
+author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/10/2018
@@ -14,13 +14,13 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f74b996b3b96dfa808771f3dd4fc70f9c29324c2
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 49ffac609ec24917b8490c535ebd74c6d2729ccd
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Entwicklerhandbuch für Microsoft Intune App SDK für iOS
+# <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
 > [!NOTE]
 > Lesen Sie am besten zuerst den Artikel [Erste Schritte mit dem Intune App SDK](app-sdk-get-started.md). Darin finden Sie Informationen, welche Vorbereitungen Sie für die Integration auf jeder unterstützten Plattform treffen müssen.

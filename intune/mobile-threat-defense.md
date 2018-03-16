@@ -3,8 +3,8 @@ title: Mobile Threat Defense mit Intune
 titleSuffix: Azure portal
 description: "Schützen Sie den Zugriff auf Unternehmensressourcen auf der Basis des Geräterisikos."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 11/28/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1d5957acde86b3621009e5c38df42bc894a413c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: da0f21a822608052846200e13ef37ca4606e6079
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Integration von Mobile Threat Defense in Intune
 
@@ -30,7 +30,7 @@ Mit Intune Mobile Threat Defense-Connectors können Sie Ihren ausgewählten Mobi
 
 Unternehmen müssen vertrauliche Daten vor auftretenden Bedrohungen schützen. Dazu gehören physische, App-und netzwerkbasierte Bedrohungen sowie Sicherheitsrisiken beim Betriebssystem.
 
-In der Vergangenheit haben Firmen PCs vor Angriffen proaktiv geschützt, während mobile Geräte nicht überwacht wurden und ungeschützt blieben. Mobile Plattformen verfügen über einen integrierten Schutz des Betriebssystems durch Techniken wie die Isolierung von Apps oder überprüfte App Stores für Heimanwender, aber diese Plattformen sind trotzdem noch anfällig für komplexe Angriffe. Immer mehr Mitarbeiter nutzen ihre Geräte für die Arbeit und benötigen Zugriff auf vertrauliche Informationen. Geräte müssen gegen zunehmend raffinierter werdende Angriffe geschützt werden.
+In der Vergangenheit haben Firmen PCs vor Angriffen proaktiv geschützt, während mobile Geräte nicht überwacht wurden und ungeschützt blieben. Mobile Plattformen bieten integrierten Schutz in Form von App-Isolierung und sicherheitsgeprüfter App Stores für Verbraucher, doch diese Plattformen bleiben weiterhin für komplexe Angriffe anfällig. Immer mehr Mitarbeiter nutzen ihre Geräte für die Arbeit und benötigen Zugriff auf vertrauliche Informationen. Geräte müssen gegen zunehmend raffinierter werdende Angriffe geschützt werden.
 
 ## <a name="how-the-intune-mobile-threat-defense-connectors-work"></a>Wie funktioniert der Intune Mobile Threat Defense-Connector?
 

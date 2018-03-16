@@ -1,25 +1,25 @@
 ---
-title: "Konfigurieren von Intune für einmaliges Anmelden von iOS-Geräten"
-titlesuffix: Azure portal
-description: "Erfahren Sie, wie Sie Intune für einmaliges Anmelden von iOS-Geräten konfigurieren."
+title: "Konfigurieren von Microsoft Intune für einmaliges Anmelden von iOS-Geräten"
+titlesuffix: 
+description: "Erfahren Sie, wie Sie Microsoft Intune für einmaliges Anmelden von iOS-Geräten konfigurieren."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="configure-intune-for-ios-device-single-sign-on"></a>Konfigurieren von Intune für einmaliges Anmelden von iOS-Geräten
+# <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Konfigurieren von Microsoft Intune für einmaliges Anmelden von iOS-Geräten
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -35,16 +35,16 @@ Um einmaliges Anmelden von iOS-Geräten nutzen zu können, müssen folgende Bedi
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
-2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Profile** aus.
-3. Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen**, geben Sie einen Namen und eine Beschreibung ein, und konfigurieren Sie die folgenden Einstellungen:
+3. Wählen Sie auf der Seite **Intune** die Option **Gerätekonfiguration** aus.
+2. Wählen Sie auf der Seite **Gerätekonfiguration** die Option **Profile** aus.
+3. Wählen Sie auf der Seite „Profile“ die Option **Profil erstellen**, geben Sie einen Namen und eine Beschreibung ein, und konfigurieren Sie die folgenden Einstellungen:
    - **Plattform**: Wählen Sie **iOS**. 
    - **Profiltyp**: Wählen Sie **Gerätefunktionen**.
-4. Wählen Sie auf dem Blatt **Gerätefunktionen** die Option **Einmaliges Anmelden** aus.
+4. Wählen Sie auf der Seite **Gerätefeatures** die Option **Einmaliges Anmelden** aus.
 
-   ![Blatt „Einmaliges Anmelden“](./media/sso-blade.png)
+   ![Seite „Einmaliges Anmelden“](./media/sso-blade.png)
 
-2. Verwenden Sie die folgende Zusammenfassungstabelle, um die Felder auf dem Blatt **Einmaliges Anmelden** auszufüllen. Weitere Informationen finden Sie in den Abschnitten nach der Tabelle.
+2. Verwenden Sie die folgende Zusammenfassungstabelle, um die Felder in der Seite **Einmaliges Anmelden** auszufüllen. Weitere Informationen finden Sie in den Abschnitten nach der Tabelle.
    
    |Feld  |Hinweise|
    |---------|---------|
@@ -82,7 +82,7 @@ Wenn ein Benutzer beispielsweise mit einer dieser Websites eine Verbindung herst
 > [!NOTE]
 > Bei diesen URLs muss es sich um ordnungsgemäß formatierte FQDNs handeln. Bei Apple müssen diese im Format `http://<yourURL.domain>` sein.
 
-Die URL-Übereinstimmungsmuster müssen entweder mit `http://` oder `https://` beginnen. Es wird ein einfacher Zeichenfolgenabgleich durchgeführt, sodass das URL-Präfix `http://www.contoso.com/` nicht mit `http://www.contoso.com:80/` übereinstimmt. Ab iOS 9.0 kann jedoch ein einzelnes Platzhalterzeichen * verwendet werden, um alle übereinstimmenden Werte anzugeben. Beispielsweise entspricht `http://*.contoso.com/` sowohl `http://store.contoso.com/` als auch `http://www.contoso.com`.
+Die URL-Übereinstimmungsmuster müssen entweder mit `http://` oder `https://` beginnen. Es wird ein einfacher Zeichenfolgenabgleich durchgeführt, sodass das URL-Präfix `http://www.contoso.com/` nicht mit `http://www.contoso.com:80/` übereinstimmt. Ab iOS 9.0 kann jedoch ein einzelnes Platzhalterzeichen \* verwendet werden, um alle übereinstimmenden Werte anzugeben. Beispielsweise entspricht `http://*.contoso.com/` sowohl `http://store.contoso.com/` als auch `http://www.contoso.com`.
 Die Muster `http://.com` und `https://.com` stimmen mit allen HTTP- bzw. HTTPS-URLs überein.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>Apps, die einmaliges Anmelden verwenden

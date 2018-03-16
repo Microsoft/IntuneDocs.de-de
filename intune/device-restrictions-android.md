@@ -1,31 +1,30 @@
 ---
-title: "Einstellungen für Geräteeinschränkungen für Android in Intune"
-titlesuffix: Azure portal
+title: "Einstellungen für Geräteeinschränkungen für Android in Microsoft Intune"
+titlesuffix: 
 description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Android-Geräten kennen."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/11/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
-ms.reviewer: heenamac
+ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559550860d0882b20a005a5d0957be761978cbe6
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Standardgeräteeinschränkungen für Android und Samsung KNOX in Microsoft Intune
+# <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Android und Samsung KNOX Standard in Microsoft Intune 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Verwenden Sie diese Einstellungen mit einer Einschränkungsrichtlinie für Android-Geräte, um Geräte in Ihrer Organisation zu konfigurieren.
+In diesem Artikel lernen Sie alle Einstellungen für Geräteeinschränkungen in Microsoft Intune kennen, die Sie für Android-Geräte konfigurieren können.
 
 >[!TIP]
 >Wenn Ihre gewünschten Einstellungen nicht verfügbar sind, können Sie Ihre Geräte möglicherweise mit einem [benutzerdefinierten Profil](custom-settings-android.md) konfigurieren.
@@ -80,7 +79,7 @@ Wenn Sie die Einstellung **Numerisch komplex** konfigurieren und sie dann einem 
 
 In der Liste der eingeschränkten Apps können Sie eine der folgenden Listen für Android-Geräte als auch Geräte, die dem Samsung KNOX Standard entsprechen, konfigurieren:
 
-**Unzulässige Apps:** Listet die (nicht von Intune verwalteten) Apps auf, die gemeldet werden, wenn Benutzer sie installieren und ausführen.
+Liste mit **unzulässigen Apps**: Listet die (nicht von Intune verwalteten) Apps auf, die gemeldet werden, wenn Benutzer diese installieren und ausführen.
 **Genehmigte Apps:** Listet die Apps auf, die Benutzer installieren dürfen. Um die Kompatibilität zu gewährleisten, dürfen Benutzer keine anderen Apps installieren. Apps, die von Intune verwaltet werden, sind automatisch zugelassen.
 Geräteprofile, die Einstellungen für eingeschränkte Apps enthalten, müssen Benutzergruppen zugewiesen werden.
 

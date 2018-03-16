@@ -1,7 +1,7 @@
 ---
 title: Abrufen eines Apple-MDM-Push-Zertifikats
-titlesuffix: Azure portal
-description: "Lernen Sie die Schritte kennen, mit denen Sie ein Apple-MDM-Push-Zertifikat zum Verwalten von iOS-Geräten mit Intune abrufen.\""
+titlesuffix: Microsoft Intune
+description: "Lernen Sie die Schritte kennen, mit denen Sie ein Apple-MDM-Push-Zertifikat zum Verwalten von iOS-Geräten mit Intune abrufen."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,11 +15,11 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8fca2a1f32cd15752758802ee6ae44b8ae33b696
-ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
+ms.openlocfilehash: ed6ae1812e49fa0ceda3079d25afd92ceeac01bd
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Abrufen eines Apple-MDM-Push-Zertifikats
 
@@ -28,12 +28,12 @@ ms.lasthandoff: 01/29/2018
 Intune ermöglicht die Verwaltung mobiler Geräte (mobile device management, MDM) wie iPads, iPhones und Mac-Computer und ermöglicht Benutzern den Zugriff auf Unternehmens-E-Mails und -Apps. Für die Verwaltung von iOS- und Mac-Geräten ist ein MDM-Push-Zertifikat erforderlich. Wenn Sie das Zertifikat in Intune hinzugefügt haben, können Ihre Benutzer die Unternehmensportal-App installieren, um ihre Geräte zu registrieren. Sie können auch die Verwaltung firmeneigener iOS-Geräte mit dem Geräteregistrierungsprogramm von Apple einrichten oder Geräte beispielsweise mithilfe von Apple Configurator registrieren. Weitere Informationen zu Registrierungsoptionen finden Sie unter [Auswählen der Registrierungsmethode für iOS-Geräte](enrollment-method-choose-ios.md).
 
 ## <a name="steps-to-get-your-certificate"></a>Erforderliche Schritte, um Ihr Zertifikat abzurufen
-Wählen Sie im Azure-Portal die Option **Geräteregistrierung** > **Apple-Registrierung** > **Apple-MDM-Push-Zertifikat** aus, und führen Sie im Azure-Portal die folgenden Schritte aus.
+Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Geräteregistrierung** > **Apple-Registrierung** > **Apple-MDM-Push-Zertifikat** aus, und führen Sie im [Azure-Portal](https://portal.azure.com) die folgenden Schritte aus.
 
 **Schritt 1: Laden Sie die erforderliche Anforderung zur Signierung eines Intune-Zertifikats herunter, um ein Apple-MDM-Push-Zertifikat erstellen zu können.**<br>
 Klicken Sie auf **CSR herunterladen**, um die Anforderungsdatei herunterzuladen und lokal zu speichern. Die Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple Push Certificates-Portal anzufordern.
 
-  ![Screenshot, der den Bildschirm „MDM-Push-Zertifikat konfigurieren“ zeigt, auf dem MDM Push nicht eingerichtet ist](./media/create-mdm-push-certificate.png)
+  ![Der Bildschirm „MDM-Push-Zertifikat konfigurieren“, auf dem MDM Push nicht eingerichtet ist.](./media/create-mdm-push-certificate.png)
 
 **Schritt 2: Erstellen Sie ein Apple-MDM-Push-Zertifikat.**<br>
 Wählen Sie **Eigenes MDM-Push-Zertifikat erstellen** aus, um zum Apple Push Certificates Portal zu gelangen. Melden Sie sich mit der Apple-ID Ihres Unternehmens an, und klicken Sie dann auf **Zertifikat erstellen**. Klicken Sie auf **Datei auswählen**, und suchen Sie die Anforderungsdatei für die Signierung des Zertifikats. Klicken Sie dann auf **Hochladen**. Klicken Sie auf der Bestätigungsseite auf **Herunterladen**, um die Zertifikatdatei (.pem) herunterzuladen, und speichern Sie die Datei lokal.
@@ -52,14 +52,14 @@ Das Apple-MDM-Push-Zertifikat ist für ein Jahr gültig und muss jährlich erneu
 
 Das Zertifikat ist mit der Apple-ID verknüpft, die verwendet wurde, um es zu erstellen. Erneuern Sie das MDM-Push-Zertifikat mit derselben Apple-ID, mit der es erstellt wurde.
 
-1. Wählen Sie im Azure-Portal die Option **Geräteregistrierung** > **Apple-Registrierung** und dann **Apple-MDM-Push-Zertifikat** aus.
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Geräteregistrierung** > **Apple-Registrierung** und dann **Apple-MDM-Push-Zertifikat** aus.
 2. Wählen Sie **CSR herunterladen** aus, um die CSR-Datei herunterzuladen und lokal zu speichern. Die Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple Push Certificates-Portal anzufordern.
-3. Suchen Sie das Zertifikat, das Sie erneuern möchten, und wählen Sie **Erneuern** aus.
+3. Wählen Sie **Eigenes MDM-Push-Zertifikat erstellen** aus, um zum Apple Push Certificates Portal zu gelangen. Suchen Sie das Zertifikat, das Sie erneuern möchten, und wählen Sie **Erneuern** aus.
 4. Schreiben Sie auf dem Bildschirm **Push-Zertifikat erneuern** Notizen, die Ihnen zukünftig bei der Identifizierung des Zertifikats helfen. Klicken Sie auf **Datei auswählen**, um die neue Anforderungsdatei zu durchsuchen, die Sie heruntergeladen haben und dann auf **Hochladen**.
    > [!TIP]
    > Ein Zertifikat kann durch die Benutzer-ID identifiziert werden. Überprüfen Sie die **Antragsteller-ID** in den Zertifikatdetails, um den GUID-Teil der Benutzer-ID zu finden. Wenn Sie ein registriertes iOS-Gerät verwenden, klicken Sie auf **Einstellungen** > **Allgemein** > **Gerät** **Verwaltung** > **Verwaltungsprofil** > **Weitere Details** > **Verwaltungsprofil**. Das zweite Zeilenelement **Thema**, enthält die eindeutige GUID, die Sie mit dem Zertifikat im Apple Push Certificates-Portal vergleichen können.
  
 6. Wählen Sie auf dem Bildschirm **Bestätigen** die Option **Herunterladen** aus, und speichern Sie die PEM-Datei lokal.
-7. Wählen Sie im Azure-Portal das Symbol zum Durchsuchen des **Apple-MDM-Push-Zertifikats** aus, wählen Sie die PEM-Datei, die Sie von Apple heruntergeladen haben, und anschließend **Hochladen** aus.
+7. Wählen Sie im [Azure-Portal](https://portal.azure.com) das Symbol zum Durchsuchen des **Apple-MDM-Push-Zertifikats** aus, wählen Sie die PEM-Datei, die Sie von Apple heruntergeladen haben und anschließend **Hochladen** aus.
 
 Ihr Apple MDM-Push-Zertifikat erscheint als **aktiv** und läuft in 365 Tagen ab.

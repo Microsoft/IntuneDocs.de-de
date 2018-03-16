@@ -1,30 +1,34 @@
 ---
-title: "Einstellungen für Geräteeinschränkungen für Android for Work in Intune"
-titlesuffix: Azure portal
+title: "Einstellungen für Geräteeinschränkungen für Android for Work in Microsoft Intune"
+titlesuffix: 
 description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Android for Work-Geräten kennen."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/23/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d4d8089d7ae57c4bf95038e5f9dc88f4949f069e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Android for Work-Geräte in Microsoft Intune
+# <a name="microsoft-intune-android-for-work-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Android for Work-Geräte in Microsoft Intune
+
+In diesem Artikel lernen Sie alle Einstellungen für Microsoft Intune-Geräteeinschränkungen kennen, die Sie für Android for Work-Geräte konfigurieren können.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Arbeitsprofileinstellungen
+
+### <a name="general-settings"></a>Allgemeine Einstellungen
+
 -   **Kopieren und Einfügen zwischen Arbeitsprofilen und persönlichen Profilen**: Steuert das Kopieren und Einfügen zwischen Arbeits-Apps und persönlichen Apps. Klicken Sie auf **Blockieren**, um eine Blockierung zu aktivieren. Wählen Sie **Nicht konfiguriert** aus, um eine Blockierung zu deaktivieren.
 - **Datenfreigabe zwischen Arbeitsprofilen und persönlichen Profilen** – Verwenden Sie diese Einstellung, um zu steuern, ob Apps im Arbeitsprofil Daten für Apps im persönlichen Profil freigeben können. Durch diese Einstellung werden Freigabeaktionen in Anwendungen (z.B. die Option **Freigeben...** in der Browser-App Chrome) gesteuert. Sie wird nicht auf das Verhalten beim Kopieren von Daten in die Zwischenablage und Einfügen angewendet. Im Gegensatz zu [Richtlinieneinstellungen für den App-Schutz](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) werden Einstellungen für Geräteeinschränkungen über das Intune-Portal verwaltet und mithilfe der Android for Work-Arbeitsprofilpartition zum Isolieren von verwalteten Apps eingesetzt. Es stehen die folgenden Optionen zur Auswahl:
     - **Standardeinschränkungen für Freigabe**: Diese Einstellung ist das standardmäßige Freigabeverhalten des Geräts, das abhängig von der ausgeführten Android-Version variiert. Standardmäßig ist die Freigabe von Daten des persönlichen Profils für das Arbeitsprofil zulässig. Die Freigabe von Daten des Arbeitsprofils für das persönliche Profil ist dagegen standardmäßig blockiert. Durch diese Einstellung wird die Freigabe von Daten des Arbeitsprofils für das persönliche Profil verhindert. Google bietet auf Geräten, auf denen die Version 6.0 und höher ausgeführt wird, keine Möglichkeit, um die Freigabe von Daten aus dem persönlichen Profil für das Arbeitsprofil zu blockieren.   
@@ -39,6 +43,12 @@ ms.lasthandoff: 01/25/2018
     -   **Automatisch verweigern**
 
     Der Status zur Erteilung der Berechtigungen kann für bestimmte Apps weitergehend definiert werden, indem eine App-Konfigurationsrichtlinie für eine einzelne App (unter **Mobile Apps** > **App-Konfigurationsrichtlinien**) definiert wird.
+
+- **Konten hinzufügen und entfernen**
+
+   Verhindert, dass Benutzer Konten im Arbeitsprofil manuell hinzufügen oder entfernen.
+
+   Wenn Sie beispielsweise die Gmail-App in einem Android for Work-Profil bereitstellen, können Sie verhindern, dass Benutzer Konten in diesem Arbeitsprofil hinzufügen oder entfernen.
 
 ### <a name="work-profile-password"></a>Arbeitsprofilkennwort
 - **Arbeitsprofilkennwort erforderlich** (Android 7.0 und höher mit aktiviertem Arbeitsprofil) – Definieren Sie eine Kennungsrichtlinie, die nur für die Apps im Arbeitsprofil gilt. Standardmäßig hat der Endbenutzer die Möglichkeit, die beiden separat definierten PINs zu verwenden oder diese zu einer PIN zu kombinieren, die die Stärke der jeweils stärkeren PIN übernimmt.
@@ -87,4 +97,4 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Verwenden Sie die Informationen im Thema [So konfigurieren Sie Einstellungen für Geräteeinschränkungen in Microsoft Intune](device-restrictions-configure.md), um das Profil zu speichern und es Benutzern und Geräten zuzuordnen.
+Mithilfe der Informationen unter [Konfigurieren von Einstellungen für Geräteeinschränkungen](device-restrictions-configure.md) können Sie das Profil speichern und Benutzern sowie Geräten zuzuweisen.

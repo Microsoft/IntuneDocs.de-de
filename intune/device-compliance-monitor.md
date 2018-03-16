@@ -1,10 +1,10 @@
 ---
-title: "So überwachen Sie die Gerätekompatibilität"
-titlesuffix: Azure portal
+title: "Überwachen der Gerätekonformität"
+titlesuffix: Microsoft Intune
 description: "Erfahren Sie, wie Sie die Gerätekonformität überwachen.\""
 keywords: 
-author: andredm7
-ms.author: andredm
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
@@ -15,24 +15,24 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9cd8bb0486164dd9dfe020261da9079ea5a68633
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 708ed5a335d3475c213a536da9072afb1ad32ef9
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="how-to-monitor-device-compliance-in-intune"></a>Überwachen der Gerätekonformität in Intune
+# <a name="monitor-device-compliance-in-intune"></a>Überwachen der Gerätekompatibilität in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Sie können sich auf dem Blatt **Übersicht** eine Zusammenfassung des Status Ihrer **Konformitätsprofile** ansehen.
-Sie können interaktiv einen Drilldown in den Diagrammen durchführen, um Details anzuzeigen. Wenn Sie mehrere Konformitätsprofile konfiguriert haben, können Sie den Status für jede Richtlinie anzeigen, indem Sie auf dem Blatt „Richtlinie“ im Abschnitt **Verwalten** die Option **Berichte** auswählen.  Die Details der verfügbaren Berichte werden unten aufgeführt.
+Sie können interaktiv einen Drilldown in den Diagrammen durchführen, um Details anzuzeigen. Wenn Sie mehrere Kompatibilitätsprofile konfiguriert haben, können Sie den Richtlinienstatus auf dem Richtlinienblatt unter **Verwalten** > **Berichte** anzeigen.
 
 ##  <a name="device-compliance"></a>Gerätekompatibilität
 
-Die Zusammenfassung des Gerätekonformitätsberichts zeigt zusammengestellte Informationen zur Anzahl der Geräte, für die einer der folgenden Status gemeldet wurde:
+In der Zusammenfassung des Gerätekompatibilitätsberichts sind zusammengestellte Informationen zur Anzahl der Geräte aufgeführt, für die einer der folgenden Status gemeldet wurde:
 
-- **Kompatibel:** Das Gerät wurde vor Kurzem auf Konformität überprüft und als konform mit den Einstellungen des angegebenen Konformitätsprofils bewertet.
+- **Kompatibel**: Das Gerät wurde vor Kurzem überprüft und entspricht den angegebenen Einstellungen für das Kompatibilitätsprofil.
 - **Nicht kompatibel:**: Das Gerät wurde überprüft und als nicht konform bewertet.  Wenn im Profil eine Karenzzeit angegeben wurde, ist diese abgelaufen, und das Gerät hat damit in einen nicht konformen Status.
 - **Karenzzeit:** Das Gerät wurde überprüft und als nicht konform bewertet. Die Karenzzeit gilt jedoch immer noch, bis das Gerät als nicht konform gekennzeichnet wird.
 
@@ -40,7 +40,7 @@ Sie können in jedem Abschnitt einen Drilldown durchführen, um weitere Details 
 
 ## <a name="setting-compliance"></a>Einstellungskonformität
 
-Der Einstellungskonformitätsbericht enthält Einzelheiten zu jeder Konformitätseinstellung. Beispiele:
+Der Einstellungskompatibilitätsbericht enthält Einzelheiten zu jeder Kompatibilitätseinstellung. Beispiele:
 
 - Anzahl der Geräte, die mit der Einstellung nicht konform sind
 - Die Plattform, auf der die Einstellung angewendet wird
