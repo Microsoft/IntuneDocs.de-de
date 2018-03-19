@@ -1,27 +1,26 @@
 ---
-title: "Einstellungen für Geräteeinschränkungen für iOS in Intune"
-titleSuffix: Azure portal
+title: "Einstellungen für Geräteeinschränkungen für iOS in Microsoft Intune"
+titleSuffix: 
 description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf iOS-Geräten kennen."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für iOS-Geräte in Microsoft Intune
+# <a name="microsoft-intune-ios-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für iOS-Geräte in Microsoft Intune
+In diesem Artikel erfahren Sie alle Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für iOS-Geräte konfigurieren können.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -107,7 +106,7 @@ Der überwachte Modus von iOS kann nur während der ersten Einrichtung des Gerä
 - **Änderung von Kennung (nur überwacht):** Die Kennung kann dadurch nicht geändert, hinzugefügt oder entfernt werden.
     - **Fingerabdruckänderung (nur überwacht):** Der Benutzer kann dadurch keine TouchID-Einstellungen ändern, hinzufügen oder entfernen.
 
-<sup>1</sup> Wenn Sie die Einstellungen **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung** und **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts** konfigurieren, werden diese nacheinander angewendet. Wenn Sie beispielsweise den Wert für beide Einstellungen auf **5** Minuten einstellen, wird der Bildschirm automatisch nach 5 Minuten deaktiviert, und das Gerät wird nach weiteren 5 Minuten gesperrt. Wenn der Benutzer den Bildschirm jedoch manuell deaktiviert, wird die zweite Einstellung sofort angewendet. Im selben Beispiel wird das Gerät 5 Minuten später gesperrt, nachdem der Benutzer den Bildschirm deaktiviert hat.
+<sup>1</sup> Wenn Sie die Einstellungen **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung** und **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts** konfigurieren, werden diese nacheinander angewendet. Wenn Sie beispielsweise den Wert für beide Einstellungen auf **5** Minuten einstellen, wird der Bildschirm automatisch nach fünf Minuten deaktiviert, und das Gerät wird nach weiteren fünf Minuten gesperrt. Wenn der Benutzer den Bildschirm jedoch manuell deaktiviert, wird die zweite Einstellung sofort angewendet. Im selben Beispiel wird das Gerät fünf Minuten später gesperrt, nachdem der Benutzer den Bildschirm deaktiviert hat.
 
 ## <a name="locked-screen-experience"></a>Benutzererfahrung „Gesperrter Bildschirm“
 
@@ -240,7 +239,7 @@ Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Da
 -   **Dokumentsynchronisierung in iCloud (nur überwachter Modus):** Erlauben Sie die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher.
 -   **Synchronisierung von Fotostreams in iCloud:** Ermöglicht Benutzern das Aktivieren von **Mein Photo Stream** auf ihrem Gerät, um Fotos mit iCloud zu synchronisieren, damit diese auf allen Geräten des Benutzers verfügbar sind.
 -   **Verschlüsselte Sicherung:** Erzwingen Sie die Verschlüsselung von Gerätesicherungen.
--   **iCloud-Fotomediathek:** Bei Festlegung auf **Nein** wird die Verwendung der iCloud-Fotomediathek deaktiviert, die Benutzern das Speichern von Fotos und Videos in der Cloud ermöglicht.    Fotos, die nicht vollständig aus der iCloud-Fotomediathek auf das Gerät heruntergeladen wurden, werden bei Festlegung auf **Nein** vom Gerät entfernt.
+-   **iCloud-Fotomediathek:** Bei Festlegung auf **Nein** wird die Verwendung der iCloud-Fotomediathek deaktiviert, die Benutzern das Speichern von Fotos und Videos in der Cloud ermöglicht.   Fotos, die nicht vollständig aus der iCloud-Fotomediathek auf das Gerät heruntergeladen wurden, werden bei Festlegung auf **Nein** vom Gerät entfernt.
 -   **Synchronisierung verwalteter Apps mit der Cloud:** Erlauben Sie Apps, die Sie mit Intune verwalten, Daten mit dem iCloud-Konto des Benutzers zu synchronisieren.
 -   **Streaming freigegebener Fotos:** Legen Sie diese Einstellung auf **Nein** fest, um die **iCloud-Fotofreigabe** auf dem Gerät zu deaktivieren.
 -   **Aktivitätsfortsetzung:** Erlauben Sie dem Benutzer, die Arbeit, die er auf einem iOS-Gerät gestartet hat, auf einem anderen iOS- oder macOS-Gerät fortzusetzen (Übergabe).
@@ -308,7 +307,7 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 
 
 ## <a name="kiosk-supervised-only"></a>Kiosk (nur überwacht)
--   **App, die im Kioskmodus ausgeführt wird:** Mit **Verwaltete App** können Sie eine in Intune hinzugefügte App auswählen, und mit **Store App** können Sie eine URL zu einer App im Store angeben. Andere Apps dürfen auf dem Gerät nicht ausgeführt werden. Weitere Informationen finden Sie unter „Angeben von URLs zu App-Stores“ weiter unten in diesem Thema.
+-   **App, die im Kioskmodus ausgeführt wird:** Mit **Verwaltete App** können Sie eine in Intune hinzugefügte App auswählen, und mit **Store App** können Sie eine URL zu einer App im Store angeben. Es dürfen keine anderen Apps auf dem Gerät ausgeführt werden. Weitere Informationen finden Sie unter „Angeben von URLs zu App-Stores“ weiter unten in diesem Thema.
     -   **Touch-Unterstützung:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung **Touch-Unterstützung**, die den Benutzer bei der Ausführung von Bildschirmgesten unterstützt, die ihm u.U. Schwierigkeiten bereiten.
     -   **Farben umkehren:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung „Farben umkehren“, die die Anzeige für Benutzer mit eingeschränkter Sehfähigkeit anpasst.
     -   **Mono-Audio:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung „Mono-Audio“.
@@ -343,7 +342,7 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 
 ### <a name="unmarked-email-domains"></a>Nicht markierte E-Mail-Domänen
 
-Fügen Sie im Feld **E-Mail-Domänen-URL** eine oder mehrere URLs der Liste hinzu. Wenn Endbenutzer eine E-Mail von einer anderen Domäne als der erhalten, die Sie konfiguriert haben, wird die E-Mail in der iOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
+Fügen Sie im Feld **E-Mail-Domänen-URL** eine oder mehrere URLs der Liste hinzu. Wenn Endbenutzer eine E-Mail von einer anderen Domäne als einer erhalten, die Sie konfiguriert haben, wird die E-Mail in der iOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
 
 
 ### <a name="managed-web-domains"></a>Verwaltete Webdomänen

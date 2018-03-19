@@ -1,12 +1,12 @@
 ---
 title: "Einführung in Intune im Azure-Portal"
-titlesuffix: Azure portal
-description: "Lernen Sie die Grundlagen von Intune im Azure-Portal kennen, und erfahren Sie, wie es Ihnen beim Verwalten Ihrer Geräte helfen kann."
+titlesuffix: 
+description: "Microsoft Intune ist im Azure-Portal verfügbar. Weitere grundlegende Informationen zu Intune finden Sie im Azure-Portal."
 keywords: 
-author: arob98
-ms.author: angrobe
-nmanager: dougeby
-ms.date: 02/14/2018
+author: dougeby
+ms.author: dougeby
+manager: dougeby
+ms.date: 02/28/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 6e2528c243938e81a6f730a950ee3949ca44047c
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: c9c8485a3ab68be745c8903659df0fd35af2a644
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Einführung in Microsoft Intune im Azure-Portal
 

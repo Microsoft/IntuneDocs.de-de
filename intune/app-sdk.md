@@ -1,11 +1,12 @@
 ---
 title: Vorteile des Intune App SDK
+titlesuffix: Microsoft Intune
 description: "Das Intune App Software Development Kit (SDK) ist für iOS- und Android-Plattformen erhältlich und ermöglicht Verwaltungsfunktionen für mobile Anwendungen mit Microsoft Intune."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/24/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +15,14 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 75965145c38e94516846937e4dd408730d3ce10f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ae22d3e718fd01330b81206921b6e9a23313a30f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-app-sdk-overview"></a>Übersicht über das Intune App SDK
-Das für IOS und Android verfügbare Intune App SDK aktiviert Ihre App für Intune-App-Schutzrichtlinien. Es zielt darauf ab, die vom App-Entwickler vorzunehmenden Codeänderungen zu minimieren. Sie werden feststellen, dass Sie die meisten SDK-Funktionen aktivieren können, ohne das Verhalten Ihrer App ändern zu müssen. Um die Benutzerfreundlichkeit der App für Endbenutzer und IT-Administratoren zu verbessern, können Sie unsere APIs verwenden und so das App-Verhalten für Funktionen anpassen, die Ihre Mitwirkung erfordern.
+Das für IOS und Android verfügbare Intune App SDK aktiviert Ihre App für Intune-App-Schutzrichtlinien. Es zielt darauf ab, die vom App-Entwickler vorzunehmenden Codeänderungen zu minimieren. Sie werden feststellen, dass Sie die meisten SDK-Features aktivieren können, ohne das Verhalten Ihrer App ändern zu müssen. Um die Benutzerfreundlichkeit der App für Endbenutzer und IT-Administratoren zu verbessern, können Sie unsere APIs verwenden und so das App-Verhalten für Features anpassen, die Ihre Mitwirkung erfordern.
 
 Nachdem Sie Ihre App für App-Schutzrichtlinien aktiviert haben, können IT-Administratoren diese Richtlinien zum Schutz ihrer Unternehmensdaten innerhalb der App bereitstellen.
 
@@ -42,7 +43,7 @@ IT-Administratoren können mit einer Richtlinie erzwingen, dass auf dem Gerät g
 IT-Administratoren können Unternehmensdaten in einer von Intune verwalteten App remote zurücksetzen. Diese Funktion basiert auf der Identität, und es werden nur Dateien gelöscht, die der Unternehmensidentität des Endbenutzers zugeordnet sind. Hierfür ist die Mitwirkung der App erforderlich. Die App kann die Identität, für die die Zurücksetzung erfolgen soll, basierend auf den Benutzereinstellungen festlegen. Fehlen solche spezifischen Benutzereinstellungen in der App, besteht das Standardverhalten darin, das Anwendungsverzeichnis zu löschen und den Endbenutzer darüber zu informieren, dass der Zugriff entfernt wurde.
 
 ### <a name="enforce-the-use-of-a-managed-browser"></a>Erzwingen der Verwendung eines verwalteten Browsers
-IT-Administratoren können erzwingen, dass Weblinks in der App mit der [Intune Managed Browser-App](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies) geöffnet werden. Dadurch wird sichergestellt, dass in einer Unternehmensumgebung angezeigte Links in der Domäne von Apps, die von Intune verwaltet werden, beibehalten werden.
+IT-Administratoren können erzwingen, dass Weblinks in der App mit der [Intune Managed Browser-App](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies) geöffnet werden. Durch diese Funktion wird sichergestellt, dass in einer Unternehmensumgebung angezeigte Links in der Domäne von Apps, die von Intune verwaltet werden, beibehalten werden.
 
 ### <a name="enforce-a-pin-policy"></a>Erzwingen einer PIN-Richtlinie
 IT-Administratoren können erzwingen, dass Endbenutzer eine PIN eingeben, ehe sie in der App Zugriff auf Unternehmensdaten erhalten. Dadurch wird sichergestellt, dass es sich bei der Person, die die App verwendet, um dieselben Person handelt, die sich ursprünglich mit ihrem Geschäfts-, Schul- oder Unikonto angemeldet hat. Wenn Endbenutzer ihre PIN konfigurieren, verwendet das Intune App SDK Azure Active Directory, um die Anmeldeinformationen der Endbenutzer mit den Daten des registrierten Intune-Kontos abzugleichen.

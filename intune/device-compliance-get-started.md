@@ -1,29 +1,28 @@
 ---
-title: "Intune-Gerätekonformitätsrichtlinien"
-titleSuffix: Azure portal
-description: "In diesem Thema erhalten Sie Informationen zur Gerätekonformität in Microsoft Intune\""
+title: "Microsoft Intune -Gerätekonformitätsrichtlinien"
+titleSuffix: 
+description: "In diesem Thema erhalten Sie Informationen zur Gerätekonformität in Microsoft Intune"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/6/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: fb3ec168844708d80c83909ab6c58a52ca62e53c
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="get-started-with-intune-device-compliance-policies"></a>Erste Schritte mit den Intune-Gerätekonformitätsrichtlinien
+# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Erste Schritte mit den Microsoft Intune-Gerätekonformitätsrichtlinien
+
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-## <a name="what-is-device-compliance-in-intune"></a>Was ist die Gerätekonformität in Intune?
 
 Intune-Gerätekonformitätsrichtlinien definieren die Regeln und Einstellungen, die ein Gerät erfüllen muss, damit es von Intune als konform eingestuft wird.
 
@@ -43,7 +42,7 @@ Diese Regeln umfassen Folgendes:
 
 Mithilfe von Kompatibilitätsrichtlinien können Sie den Kompatibilitätsstatus auf Ihren Geräten überwachen.
 
-### <a name="device-compliance-requirements"></a>Konformitätsanfoderungen für Geräte
+## <a name="device-compliance-requirements"></a>Konformitätsanfoderungen für Geräte
 
 Konformitätsanforderungen sind im Wesentlichen Regeln, mit denen Sie z.B. eine Geräte-PIN erzwingen oder angeben können, ob Verschlüsselung für die Konformitätsrichtlinie erforderlich ist.
 
@@ -74,7 +73,7 @@ Remember that you need to implement conditional access policies in addition to c
 
 Sie benötigen die folgenden Abonnements, um die Gerätekonformitätsrichtlinien mit Intune zu verwenden:
 
-- Intune EMS
+- Intune
 
 - Azure AD Premium
 

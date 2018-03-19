@@ -1,12 +1,12 @@
 ---
 title: "Überwachen von App-Schutzrichtlinien"
-titleSuffix: Azure portal
-description: "Finden Sie heraus, für wie viele Benutzer die Richtlinie gilt, und zeigen Sie weitere Details an.\""
+titleSuffix: Microsoft Intune
+description: "Überwachen Sie den Kompatibilitätsstatus der Verwaltungsrichtlinien für mobile Apps in Intune."
 keywords: 
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 100114552b05e131ff1d0d3e9e61ef08bcc2eea4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Überwachen von App-Schutzrichtlinien
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/25/2018
 **Falls Sie nicht das Azure-Portal verwenden**, wird in diesem Thema erläutert, wie Sie im klassischen Intune-Portal [App-Schutzrichtlinien erstellen](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
 
 
-Sie können den Konformitätsstatus der Verwaltungsrichtlinien für mobile Apps (MAM) überwachen, die Sie auf Benutzer auf dem Blatt „Intune-Schutz für Apps“ im [Azure-Portal](https://portal.azure.com) angewendet haben. Sie können Informationen über die Benutzer finden, die von der MAM-Richtlinie betroffen sind, deren Konformitätsstatus sowie Probleme, die bei den Benutzern möglicherweise auftreten.
+Überwachen Sie den Kompatibilitätsstatus der Verwaltungsrichtlinien für mobile Apps (MAM), die Sie auf Benutzer im Bereich „Intune-App-Schutz“ im [Azure-Portal](https://portal.azure.com) angewendet haben. Hier finden Sie Informationen über die Benutzer, die von der MAM-Richtlinie betroffen sind, deren Kompatibilitätsstatus sowie Probleme, die bei den Benutzern möglicherweise auftreten.
 
 Es gibt drei verschiedenen Stellen, an denen der Konformitätsstatus überwacht werden kann:
 
@@ -39,12 +39,12 @@ Es gibt drei verschiedenen Stellen, an denen der Konformitätsstatus überwacht 
 
 ## <a name="summary-view"></a>Zusammenfassungsansicht
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
-4. Wählen Sie in der Workload **Mobile Apps** die Option **Überwachen** > **Benutzerstatus bei App-Schutz** aus, um die Zusammenfassungsansicht anzuzeigen:
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
+4. Wählen Sie in der Workload **Mobile Apps** die Option **Überwachen** > **Status des App-Schutzes** aus, um die Zusammenfassungsansicht anzuzeigen:
 
-![Kachel „Zusammenfassung“ auf dem Blatt „Mobile Anwendungsverwaltung mit Intune“](./media/app-protection-user-status-summary.png)
+![Kachel „Zusammenfassung“ im Bereich „Verwaltung mobiler Anwendungen mit Intune“](./media/app-protection-user-status-summary.png)
 
 -   **Benutzer:** Die Gesamtzahl von Benutzern in Ihrem Unternehmen, die die eine App verwenden, die einer Richtlinie in einem geschäftlichen Kontext zugeordnet ist.
 
@@ -61,7 +61,7 @@ Es gibt drei verschiedenen Stellen, an denen der Konformitätsstatus überwacht 
 Sie können zur detaillierten Ansicht der Zusammenfassung gelangen, indem Sie auf die Kachel **Benutzerstatus** (basierend auf der Betriebssystemplattform des Geräts) und dann auf die Kachel **Gekennzeichnete Benutzer** klicken.
 
 ### <a name="user-status"></a>Benutzerstatus
-Sie können nach einem einzelnen Benutzer suchen und den Kompatibilitätsstatus für diesen Benutzer überprüfen. Auf dem Blatt **App-Berichterstellung** werden für einen ausgewählten Benutzer die folgenden Informationen angezeigt:
+Sie können nach einem einzelnen Benutzer suchen und den Kompatibilitätsstatus für diesen Benutzer überprüfen. Im Bereich **App-Berichterstellung** werden für einen ausgewählten Benutzer die folgenden Informationen angezeigt:
 - Geräte, die dem Benutzerkonto zugeordnet sind
 
 - Apps mit MAM-Richtlinie auf dem Gerät
@@ -79,11 +79,11 @@ Um die Berichterstattung für einen Benutzer anzuzeigen, gehen Sie folgendermaß
 
 1.  Wählen Sie die Kachel **Zusammenfassung** aus, um einen Benutzer auszuwählen.
 
-    ![Screenshot 3](./media/MAM-reporting-6.png)
+    ![Screenshot mit Hervorhebung der Kachel „Zusammenfassung“ im Bereich „Verwaltung mobiler Anwendungen mit Intune“ unter „Einstellungen“](./media/MAM-reporting-6.png)
 
-2. Wählen Sie auf dem Blatt **App-Berichterstellung**, das geöffnet wird, **Benutzer auswählen**, um nach einem Azure Active Directory-Benutzer zu suchen.
+2. Wählen Sie im Bereich **App-Berichterstellung**, das geöffnet wird, **Benutzer auswählen**, um nach einem Azure Active Directory-Benutzer zu suchen.
 
-    ![Option „Benutzer auswählen“ auf dem Blatt „App-Berichterstellung“](./media/MAM-reporting-2.png)
+    ![Screenshot mit Hervorhebung der Option „Benutzer auswählen“ im Bereich „App-Berichterstellung“](./media/MAM-reporting-2.png)
 
 3. Wählen Sie den Benutzer in der Liste aus. Es werden Details zum Kompatibilitätsstatus für diesen Benutzer angezeigt.
 
@@ -94,7 +94,7 @@ In der Detailansicht werden die Fehlermeldung, die App, auf die bei Auftreten de
 
 Sie können die gleichen Berichte in der Detailansicht finden sowie zusätzliche Berichte, die Ihnen mit dem Konformitätsstatus der MAM-Richtlinie weiterhelfen:
 
-![Screenshot 4](./media/MAM-reporting-7.png)
+![Screenshot mit Hervorhebung der beiden im Bereich „Einstellungen“ verfügbaren Berichte](./media/MAM-reporting-7.png)
 
 -   **App protection user report** (Benutzerbericht App-Schutz): Darin werden dieselben Informationen dargestellt, die Sie auch im **Benutzerstatus**-Bericht im Abschnitt „Detailansicht“ weiter hoben sehen können.
 
@@ -110,7 +110,7 @@ Sie können die gleichen Berichte in der Detailansicht finden sowie zusätzliche
 
         -   Alle Apps sind eingecheckt, erhalten jedoch keine MAM-Richtlinien.
 
-![Screenshot 2](./media/MAM-reporting-4.png)
+![Screenshot mit dem Blatt „App-Berichterstellung“ eines Benutzers, auf dem eine Tabelle mit Details zu drei registrierten Apps angezeigt wird](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Tabellengruppierung
 
@@ -125,13 +125,13 @@ Sie können alle Aktivitäten im Zusammenhang mit Ihren App-Schutzrichtlinien in
 
 Gehen Sie zum Generieren des App-Schutzberichts wie folgt vor:
 
-1. Wählen Sie auf dem Blatt „Mobile Anwendungsverwaltung mit Intune“ den App-Schutzbericht aus.
+1. Wählen Sie im Bereich Verwaltung mobiler Anwendungen mit Intune den **App-Schutzbericht** aus.
 
-    ![Screenshot 6](./media/app-protection-report-csv-2.png)
+    ![Screenshot mit Hervorhebung des Downloadlinks für den App-Schutz im Bereich „Verwaltung mobiler Anwendungen mit Intune“](./media/app-protection-report-csv-2.png)
 
 2. Wählen Sie „Ja“ aus, um den Bericht zu speichern, und wählen Sie dann „Speichern unter“ und den Ordner aus, in dem der Bericht gespeichert werden soll.
 
-    ![Screenshot 7](./media/app-protection-report-csv-1.png)
+    ![Screenshot des Dialogfelds „Bericht speichern“ zur Bestätigung](./media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Siehe auch
 [Verwalten der Datenübertragung zwischen iOS-Apps](data-transfer-between-apps-manage-ios.md)

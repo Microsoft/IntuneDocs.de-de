@@ -1,6 +1,7 @@
 ---
-title: "Unternehmensportalmeldungen, die Benutzern möglicherweise unter Android angezeigt werden"
-description: "Beschreibt Unternehmensportal-App-Meldungen, die Intune-Endbenutzern möglicherweise angezeigt werden."
+title: "Unternehmensportalmeldungen, die Benutzern möglicherweise auf Geräten angezeigt werden"
+titlesuffix: Microsoft Intune
+description: "Verstehen Sie die unterschiedlichen Nachrichten, die Endbenutzern im Unternehmensportal angezeigt werden können."
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -13,11 +14,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
-ms.openlocfilehash: 58468a81d0ec3e7bfc051a6edc6a09ef1c5e62a2
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: e78d43cf1cb96575ebc8d8143b7b4fc1103a9bd1
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Grundlegendes zum Verständnis von Meldungen in der Unternehmensportal-App
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]
 > Die folgenden Informationen gelten nur für Geräte mit Android 6.0 und höher.
 
-An verschiedenen Punkten des Registrierungsprozesses sehen Benutzer zwei verschiedene Meldungen, die Anlass zur Sorge geben könnten.
+Verstehen Sie die unterschiedlichen App-Nachrichten, die Endbenutzern im Unternehmensportal angezeigt werden können. Diese App-Nachrichten werden häufig an verschiedenen Punkten im Registrierungsprozess angezeigt. Erfahren Sie, wann die Meldungen angezeigt werden, was sie bedeuten, und was geschieht, wenn Benutzer den Zugriff verweigern. Darüber hinaus erfahren Sie, wie Sie die Nachrichten den Benutzern am besten erklären.
 
 - __Zulassen, dass das Unternehmensportal Telefonanrufe tätigt und verwaltet?__
 - __Unternehmensportal den Zugriff auf Fotos, Medien und Dateien auf Ihrem Gerät erlauben?__
@@ -81,7 +82,7 @@ Verweisen Sie Ihre Benutzer an [Registrieren Ihres Android-Geräts bei Intune](/
 Die Meldung **Unternehmensportal den Zugriff auf Fotos, Medien und Dateien auf Ihrem Gerät erlauben?** wird angezeigt, wenn Benutzer auf **Daten senden** tippen, um Datenprotokolle an den IT-Administrator zu senden.
 
 ### <a name="what-it-means"></a>Bedeutung
-Mit Akzeptieren dieser Aufforderung erlauben Benutzer ihrem Gerät, Datenprotokolle auf die SD-Karte des Geräts zu schreiben und ermöglichen das Verschieben dieser Protokolle mithilfe eines USB-Kabels.   
+Mit Akzeptieren dieser Aufforderung erlauben Benutzer ihrem Gerät, Datenprotokolle auf die SD-Karte des Geräts zu schreiben. Dies ermöglicht auch das Verschieben dieser Protokolle mithilfe eines USB-Kabels.   
 
 > [!NOTE]
 > **Die Unternehmensportal-App greift nicht auf Fotos, Medien und Dateien der Benutzer zu!** Der Meldungstext wird von Google gesteuert und kann nicht geändert werden.
@@ -89,7 +90,7 @@ Mit Akzeptieren dieser Aufforderung erlauben Benutzer ihrem Gerät, Datenprotoko
 ### <a name="what-happens-if-users-deny-access"></a>Wenn Benutzer den Zugriff nicht zulassen,
 Wenn Benutzer den Zugriff verweigern, können sie weiterhin Datenprotokolle per E-Mail senden, aber die Protokolle werden nicht auf die SD-Karte des Geräts kopiert.
 
-Wenn Benutzer den Zugriff verweigern und sich dann das nächste Mal bei der Unternehmensportal-App anmelden, wird in der Meldung ein Kontrollkästchen **Nicht mehr nachfragen** angezeigt, das die Benutzer aktivieren können, damit diese Meldung nicht mehr angezeigt wird. Wenn Benutzer den Zugriff zunächst erlauben, später aber verweigern, wird die Meldung wieder angezeigt, wenn sie das nächste Mal Protokolle senden. Wenn Benutzer den Zugriff später erlauben möchten, müssen sie zu **Einstellungen** > **Apps** > **Unternehmensportal** > **Berechtigungen** > **Speicherung** wechseln, um die Berechtigung zu aktivieren.
+Wenn Benutzer den Zugriff verweigern und sich dann das nächste Mal bei der Unternehmensportal-App anmelden, wird in der Meldung ein Kontrollkästchen **Nicht mehr nachfragen** angezeigt, das die Benutzer aktivieren können, damit diese Meldung nicht mehr angezeigt wird. Wenn Benutzer den Zugriff zunächst erlauben, später aber verweigern, wird die Meldung wieder angezeigt, wenn sie das nächste Mal Protokolle senden. Wenn Benutzer den Zugriff jedoch später erlauben möchten, müssen sie zu **Einstellungen** > **Apps** > **Unternehmensportal** > **Berechtigungen** > **Speicherung** wechseln, um die Berechtigung zu aktivieren.
 
 
 ### <a name="how-to-explain-this-to-your-users"></a>So erklären Sie dies Ihren Benutzern
@@ -101,7 +102,7 @@ Verweisen Sie Ihre Benutzer an [Senden von Protokollen an Ihren IT-Administrator
 Wenn Sie die Unternehmensportal-App nicht zur Liste **Zulässige Apps** oder **Ausgenommene Apps** hinzugefügt haben, und ein Benutzer versucht, sich anzumelden, schlägt die Anmeldung fehl. Die folgende Meldung wird angezeigt:
 
 > **Der Support Ihres Unternehmens muss Ihnen Zugriff auf Unternehmensressourcen gewähren**  
-> Ihr Unternehmen verwendet Windows Information Protection-Richtlinien, um Ihr Gerät zu schützen. Der Support Ihres Unternehmens muss sicherstellen, dass die Unternehmensportal-App auf diese zugreifen kann.
+> Ihr Unternehmen verwendet Windows Information Protection-Richtlinien, um Ihr Gerät zu schützen. Der Support Ihres Unternehmens muss sicherstellen, dass die Unternehmensportal-App auf diese Ressourcen zugreifen kann.
 
 ### <a name="what-it-means"></a>Bedeutung
 

@@ -1,10 +1,10 @@
 ---
-title: "Erste Schritte bei der Geräteregistrierung"
-titlesuffix: Azure portal
+title: "Grundlegendes zur Benutzerfreundlichkeit der Registrierung von iOS-Geräten"
+titlesuffix: Microsoft Intune
 description: "Lernen Sie die den Registrierungsprozess umfassend kennen, indem Sie ein iOS-Gerät registrieren."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3818556f300821fb9acaa260300ae683f43b13e3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 18a3225ef81d7f13b8656326540e30cf5ee07f1e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-enrolling-devices"></a>Erste Schritte bei der Geräteregistrierung
+# <a name="understand-the-users-experience-enrolling-an-ios-device"></a>Grundlegendes zur Benutzerfreundlichkeit der Registrierung von iOS-Geräten
 
 Mit Microsoft Intune können Sie Ihre Belegschaft mit mobilen Geräten ausstatten, ohne dass Ihre Unternehmensdaten gefährdet werden. Da Ihre Endbenutzer mit Intune eher auf ihren Geräten als in der Verwaltungskonsole interagieren, sollten Sie mit der Registrierung vertraut sein. Auf diese Weise können Sie ausgezeichnete Kompatibilitätsrichtlinien zusammen mit Ihrer Erfahrung nutzen, um sich in die Lage Ihrer Benutzer hineinzuversetzen. Dies ist besonders wichtig, da Ihre Benutzer genau wissen werden, welche Informationen Sie als Administrator sehen können:
 

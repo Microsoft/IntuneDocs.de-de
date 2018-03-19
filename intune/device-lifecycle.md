@@ -1,30 +1,28 @@
 ---
-title: "Übersicht über den MDM-Lebenszyklus"
-description: "Erfahren Sie, wie Ihnen Intune mit der Verwaltung von Geräten während ihres Lebenszyklus (vom Registrieren über das Konfigurieren bis zum letztendlichen Abkoppeln) behilflich sein kann."
+title: "Übersicht über den MDM-Lebenszyklus von Microsoft Intune"
+description: "Erfahren Sie, wie Ihnen Intune bei der Verwaltung von Geräten während ihres Lebenszyklus (von der Registrierung über die Konfiguration bis zur letztlichen Abkopplung) behilflich sein kann."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/07/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 46297080dcb332734b1e175a62e17c6c5666b469
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8755faef07e6ddae2177a2fc2453e15f1ea0fefe
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="overview-of-the-mobile-device-management-mdm-lifecycle"></a>Übersicht über den MDM-Lebenszyklus (mobile Geräteverwaltung)
+# <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Übersicht über den MDM-Lebenszyklus von Microsoft Intune (MDM = Mobile Device Management; mobile Geräteverwaltung)
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Alle Geräte, die Sie verwalten, verfügen über einen sogenannten *Lebenszyklus*. Intune hilft Ihnen bei der Verwaltung dieses Lebenszyklus – vom Registrieren über das Konfigurieren und Schützen bis zum Abkoppeln zum Abkoppeln des Gerätes, wenn es nicht mehr benötigt wird:
+Alle von Ihnen verwalteten Geräte verfügen über einen *Lebenszyklus*. Intune kann Ihnen bei der Verwaltung dieses Lebenszyklus helfen: von der Registrierung über die Konfiguration und den Schutz bis hin zur Abkopplung des Geräts, wenn es nicht mehr benötigt wird.
 
 ![Der Gerätelebenszyklus](./media/device-lifecycle.png "Der Intune-Lebenszyklus von Geräten")
 

@@ -2,10 +2,10 @@
 title: "Änderungsprotokoll für Intune Data Warehouse | Microsoft-Dokumentation"
 description: "Eine Liste der Änderungen in der Intune Data Warehouse-API."
 keywords: Intune Data Warehouse
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,40 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 306cceb704c1153b5691181d576561d9c93a36d3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67eedf528763ae302e3850710b3fab026e15f813
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Änderungsprotokoll für die Intune Data Warehouse-API
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Bleiben Sie auf dem neuesten Stand bezüglich Updates für Intune Data Warehouse.
+
+## <a name="1801"></a>1801
+_Veröffentlichung im Januar 2018_
+
+### <a name="intune-data-warehouse-application-only-authentication----1867540---"></a>Nur-Anwendung-Authentifizierung von Intune Data Warehouse <!-- 1867540 -->
+
+Sie können eine Anwendung mithilfe von Azure Active Directory (Azure AD) einrichten und bei Intune Data Warehouse authentifizieren. Weitere Informationen finden Sie unter [Nur-Anwendung-Authentifizierung von Intune Data Warehouse](data-warehouse-app-only-auth.md).
+
+### <a name="azure-ad-and-intune-credential-requirements----2077525---"></a>Anforderungen an die Anmeldeinformationen für Azure AD und Intune <!-- 2077525 -->
+
+- Für die Zuweisung zu einem Benutzer beim Zugriff auf Intune Data Warehouse (und die API) ist keine Intune-Lizenz mehr erforderlich.
+- Der Intune-Rollenname wurde von **Berichte** in **Intune Data Warehouse** geändert. 
+
+    Weitere Informationen finden Sie unter [Anforderungen an die Anmeldeinformationen für Azure AD und Intune](reports-api-url.md#azure-ad-and-intune-credential-requirements).
+
+### <a name="odata-query-options----2077711---"></a>OData-Abfrageoptionen <!-- 2077711 -->
+
+Sie können <code>$select</code> als OData-Abfrageparameter verwenden. Die aktuelle Version unterstützt die OData-Abfrageparameter <code>$filter</code>, <code>$orderby</code>, <code>$select</code>, <code>$skip</code> und <code>$top</code>. Weitere Informationen hierzu finden Sie unter [OData-Abfrageoptionen](reports-api-url.md#odata-query-options).
+
+### <a name="new-entities-in-the-in-data-warehouse-data-model----2077804---"></a>Neue Entitäten im Data Warehouse-Datenmodell <!-- 2077804 -->
+
+ - Die Entität [**MobileAppDeviceuserInstallStatus**](reports-ref-application.md#mobileappdeviceuserinstallstatus) wurde hinzugefügt. **MobileAppDeviceUserInstallStatus** stellt einen mobilen App-Installationsstatus für ein bestimmtes Gerät und einen bestimmten Benutzer dar.
+ - Die Entität [**MobileAppInstallState**](reports-ref-application.md#mobileappinstallstate) wurde hinzugefügt. Die Entität **MobileAppInstallState** stellt den Installationsstatus für eine mobile Anwendung dar, nachdem sie einer Gruppe, die Geräte und/oder Benutzer enthält, zugewiesen haben. 
 
 ## <a name="1710"></a>1710
 _Veröffentlicht im November 2017_

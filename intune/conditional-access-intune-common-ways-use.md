@@ -3,10 +3,10 @@ title: "Bedingter Zugriff über Intune"
 titlesuffix: Azure portal
 description: "Gängige Möglichkeiten der Verwendung des bedingten Zugriffs in Intune"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 02/22/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8987f8e6eb7a770a90d187c0787589acfbacdb09
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Gängige Möglichkeiten der Verwendung des bedingten Zugriffs in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Sie müssen die Intune-Konformitätsrichtlinie für mobile Geräte und die Intune-Funktionen für die mobile Anwendungsverwaltung (Mobile Application Management, MAM) konfigurieren, um die Konformität mit dem bedingten Zugriff in Ihrer Organisation zu erzwingen. Im Folgenden werden gängige Möglichkeiten für die Verwendung des bedingten Zugriffs mit Intune erläutert.
+Im Wesentlichen gibt es zwei Arten des bedingten Zugriffs in Intune. Zum einen gibt es den gerätebasierten bedingten Zugriff. Zum anderen gibt es den App-basierten bedingten Zugriff. Sie müssen die entsprechenden Konformitätsrichtlinien konfigurieren, um die Konformität mit bedingtem Zugriff in Ihrer Organisation zu unterstützen.
+
+Im Folgenden finden Sie Informationen zur Verwendung der Intune-Funktionen für die Konformität von mobilen *Geräten* und der Intune-Funktionen für die Verwaltung mobiler *Anwendungen*. 
 
 ## <a name="device-based-conditional-access"></a>Gerätebasierter bedingter Zugriff
 
@@ -32,7 +34,7 @@ Intune und Azure Active Directory stellen gemeinsam sicher, dass nur verwaltete 
 
 Intune stellt Funktionen für Gerätekonformitätsrichtlinien bereit, die den Konformitätsstatus der Geräte bewerten. Der Konformitätsstatus wird an Azure Active Directory gemeldet, um die in Azure Active Directory erstellte Richtlinie für den bedingten Zugriff zu erzwingen, wenn der Benutzer versucht, auf Unternehmensressourcen zuzugreifen.
 
-Seit es das [neue Azure-Portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) gibt, werden gerätebasierte Richtlinien für den bedingten Zugriff für Exchange Online und andere Office 365-Produkte über das Azure-Portal konfiguriert.
+Gerätebasierte Richtlinien für den bedingten Zugriff für Exchange Online und andere Office 365-Produkte werden über das [Azure-Portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) konfiguriert.
 
 -   Erfahren Sie mehr über den [bedingten Zugriff in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
 

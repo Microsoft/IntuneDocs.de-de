@@ -5,7 +5,7 @@ description: "Erfahren Sie, wie Sie die von Ihnen über Intune verwalteten Gerä
 keywords: 
 author: arob98
 ms.author: angrobe
-nmanager: dougeby
+manager: dougeby
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 39351e76c2510f7411c64d4bc3e3275bc051c63e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 772e2b1380626384d618e653b90b31a1f421eb72
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="how-to-view-intune-device-inventory"></a>So zeigen Sie den Intune-Gerätebestand an
 
@@ -29,8 +29,8 @@ Die Workload **Geräte** bietet Einblicke in die von Ihnen verwalteten Geräte, 
 
 So zeigen Sie den Gerätebestand an:
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.
 
 Wählen Sie nun eine der folgenden Optionen aus:

@@ -1,25 +1,23 @@
 ---
 title: "Überwachen von Intune-Richtlinien zur Gerätekompatibilität"
 titlesuffix: Azure portal
-description: "Erfahren Sie, wie Sie Richtlinien zur Gerätekonformität überwachen.\""
+description: "Erfahren Sie, wie Sie Richtlinien zur Gerätekompatibilität überwachen."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 03/10/2017
+ms.date: 2/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f82293ee3803f189cbb67549b1a6cd653572eaaf
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 2f80d46e3e7c25c2b2e7a7c1af9604de1257a21e
+ms.sourcegitcommit: a55c009a2ab223f79dc7439539937b284aee0626
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/28/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
@@ -64,7 +62,7 @@ Hierbei handelt es sich um ein Ringdiagramm mit dem aggregierten Kompatibilität
 
     -   Informieren Sie sich ausführlicher über Aktionen für nicht kompatible Geräte.
 
--   **Device not synced** (Gerät nicht synchronisiert): Das Gerät konnte den Status der Gerätekompatibilitätsrichtlinie nicht melden. Mögliche Ursachen:
+-   **Gerät nicht synchronisiert**: Das Gerät konnte den Status der Gerätekompatibilitätsrichtlinie nicht melden. Mögliche Ursachen:
 
     -   **Unbekannt**: Das Gerät ist offline oder konnte aus einem anderen Grund nicht mit Intune oder Azure AD kommunizieren.
 
@@ -131,7 +129,7 @@ Wenn Sie auf die eigentliche Geräterichtlinieneinstellung klicken, sehen Sie de
 
 ![Name der Gerätekompatibilitätseinstellung](./media/idc-7.png)
 
-### <a name="per-policy-device-compliance-report"></a>Richtlinienspezifischer Gerätekompatibilitätsbericht
+## <a name="policy-compliance-report"></a>Bericht zur Richtlinienkompatibilität
 
 Dieser Bericht bietet eine richtlinienspezifische Kompatibilitätsansicht und gibt Aufschluss über die Gesamtanzahl von Geräten mit den jeweiligen Kompatibilitätsstatuswerten. Die Kachel für die **Richtlinienkompatibilität** steht im **Gerätekompatibilitätsdashboard** zur Verfügung und zeigt neben allen vom Administrator erstellten Richtlinien die Plattformen, für die die Richtlinie angewendet wird, sowie die Anzahl kompatibler und nicht kompatibler Geräte an.
 
@@ -141,7 +139,7 @@ Wenn Sie auf die Kachel für die Richtlinienkompatibilität und anschließend au
 
 ![Kachel für die Richtlinienkompatibilität](./media/idc-9.png)
 
-### <a name="per-setting-device-compliance-report"></a>Einstellungsspezifischer Gerätekompatibilitätsbericht
+## <a name="setting-compliance-report"></a>Bericht zur Einstellungskompatibilität
 
 In diesem Bericht können Sie sich auf der Grundlage der Kompatibilitätseinstellung über die Gesamtanzahl von Geräten mit den jeweiligen Kompatibilitätsstatuswerten informieren. Die Kachel für die **Einstellungskompatibilität** steht im **Gerätekompatibilitätsdashboard** zur Verfügung und zeigt neben allen Gerätekompatibilitätsrichtlinien-Einstellungen aller vom Administrator erstellten Gerätekompatibilitätsrichtlinien die Plattformen, für die die Richtlinieneinstellungen angewendet wurden, sowie die Anzahl nicht kompatibler Geräte an.
 
@@ -150,3 +148,14 @@ In diesem Bericht können Sie sich auf der Grundlage der Kompatibilitätseinstel
 Wenn Sie auf die Kachel für die Einstellungskompatibilität und anschließend auf eine der Gerätekompatibilitätsrichtlinien-Einstellungen klicken, erhalten Sie für jedes Gerät, für das diese Gerätekompatibilitätsrichtlinien-Einstellung gilt, Informationen zum **Kompatibilitätsstatus**, **E-Mail-Alias des Benutzers**, **Gerätemodell** und **Standort**.
 
 ![Kachel für die Einstellungskompatibilität](./media/idc-11.png)
+
+## <a name="threat-agent-status-report"></a>Statusbericht zum Bedrohungs-Agent
+
+In diesem Bericht wird der Status und der Zustand des Windows Defender-Agenten angezeigt. Wenn Sie einen Statusrollupbericht in **Gerätekompatibilität** verwenden, werden Ihnen Geräte angezeigt, für die einer der folgenden Aktionen erforderlich ist:
+- Signaturupdate
+- Neu starten
+- Benutzereingriff
+- Vollständige Überprüfung
+- Andere Agent-Status, die einen Eingriff erfordern
+
+In einem Drillthroughbericht für sämtliche Statuskategorien werden sowohl die einzelnen Computer aufgeführt, die überprüft werden sollten, als auch die, die als **Clean** (Bereinigt) eingestuft werden.

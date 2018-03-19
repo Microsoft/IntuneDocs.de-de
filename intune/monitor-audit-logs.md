@@ -10,14 +10,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: b2f6f6f4829e53d60cc259be220de89cf3f8d97d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f514e6d2dec268efe99f682bc3ef4e63ec53c02
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Überwachungsprotokolle für Intune-Aktivitäten
-Überwachungsprotokolle stellen Ihnen einen Datensatz von Aktivitäten zur Verfügung, die eine Änderung in Microsoft Intune bewirken. Sie können Aktionen oder Remotetasks erstellen, aktualisieren (bearbeiten), löschen und zuweisen sowie überprüfbare Überwachungsereignisse generieren. Sie können Überwachungsprotokolle für die meisten Intune-Workloads überprüfen. 
+Überwachungsprotokolle stellen Ihnen einen Datensatz von Aktivitäten zur Verfügung, die eine Änderung in Microsoft Intune bewirken. Sie können Aktionen oder Remotetasks erstellen, aktualisieren (bearbeiten), löschen und zuweisen sowie überprüfbare Überwachungsereignisse generieren. Sie können Überwachungsprotokolle für die meisten Intune-Workloads überprüfen. Die Überwachung ist standardmäßig für alle Kunden aktiviert und kann nicht deaktiviert werden. Überwachungsereignisse werden seit der Einführung des Features im Dezember 2017 aufgezeichnet; Ereignisse vor diesem Datum sind nicht verfügbar.
 
 ## <a name="who-can-access-the-data"></a>Wer kann auf die Daten zugreifen?
 Benutzer mit den folgenden Berechtigungen können Überwachungsprotokolle überprüfen:

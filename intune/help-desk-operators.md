@@ -1,12 +1,12 @@
 ---
-title: Helpdeskportal zur Problembehandlung | Microsoft-Dokumentation
-titlesuffix: Azure portal
-description: "Helpdeskmitarbeiter verwenden das Portal zur Problembehandlung, um die technischen Problemen der Benutzer zu lösen."
+title: Helpdeskportal zur Problembehandlung
+titlesuffix: Microsoft Intune
+description: "Helpdeskmitarbeiter verwenden das Portal zur Problembehandlung, um die technischen Probleme der Benutzer zu lösen."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/26/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 2da1a37af1ab0b0b1566738bf1ecdfe990dd760d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7997bf0494ff52ad25b09301173b65f2478dca37
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-the-troubleshooting-portal-to-help-users"></a>Verwenden des Problembehandlungsportals, um Benutzern zu helfen
+# <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Verwenden des Problembehandlungsportals zur Unterstützung von Benutzern Ihres Unternehmens
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -63,7 +63,7 @@ Sie können das Blatt **Problembehandlung** verwenden, um Benutzerinformationen 
 | 1.   | Kontostatus  | Zeigt den Status des aktuellen Intune-Mandanten als **Aktiv** oder **Inaktiv** an.       |
 | 2.   | Benutzerauswahl  | Der Name des aktuell ausgewählten Benutzers. Klicken Sie auf **Benutzer wechseln**, um einen neuen Benutzer auszuwählen.       |
 | 3.   | Benutzerstatus  | Zeigt den Status der Intune-Lizenz des Benutzers, die Anzahl von Geräten, die jeweilige Gerätekompatibilität, die Anzahl von Apps und die App-Kompatibilität an.       |
-| 4.   | Benutzerinformationen  | Verwenden Sie die Liste, um die zu überprüfenden Details auf dem Blatt auszuwählen. <br>Sie können Folgendes auswählen: <ul><li>Mobile Apps<li>App-Schutzrichtlinien<li>Konformitätsrichtlinien<li> Konfigurationsrichtlinien</ul>      |
+| 4.   | Benutzerinformationen  | Verwenden Sie die Liste, um die zu überprüfenden Details auf dem Blatt auszuwählen. <br>Sie können Folgendes auswählen: <ul><li>Mobile Apps<li>App-Schutzrichtlinien<li>Konformitätsrichtlinien<li> Konfigurationsrichtlinien<li> Registrierungseinschränkungen</ul>      |
 | 5.   | Gruppenmitgliedschaft  | Yadda       |
 
 ## <a name="mobile-apps-reference"></a>Referenz für mobile Apps

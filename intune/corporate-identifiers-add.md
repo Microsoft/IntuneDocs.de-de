@@ -1,7 +1,7 @@
 ---
 title: "Hinzufügen von Unternehmensbezeichnern zu Intune"
-titlesuffix: Azure portal
-description: "Erfahren Sie, wie Sie in Microsoft Intune Unternehmensbezeichner (Registrierungsmethode, IMEI- und Seriennummern) hinzufügen. \""
+titlesuffix: Microsoft Intune
+description: "Erfahren Sie, wie Sie in Microsoft Intune Unternehmensbezeichner (Registrierungsmethode, IMEI- und Seriennummern) hinzufügen."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2be1f71887b7812ff17b69b679d54a920d3261
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifizieren von Geräten als unternehmenseigen
 
@@ -72,7 +72,7 @@ Diese CSV-Datei wird bei der Anzeige in einem Text-Editor folgendermaßen angeze
 
 1. Wählen Sie im Azure-Portal in Intune die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** aus, und klicken Sie dann auf **Hinzufügen**.
 
- ![Screenshot des Arbeitsbereichs des Bezeichners von Unternehmensgeräten mit hervorgehobener Schaltfläche „Hinzufügen“](./media/add-corp-id.png)
+ ![Arbeitsbereich des Bezeichners von Unternehmensgeräten mit hervorgehobener Schaltfläche „Hinzufügen“](./media/add-corp-id.png)
 
 2. Geben Sie auf dem Blatt **Bezeichner hinzufügen** den Bezeichnertyp an, **IMEI** oder **Seriennummer**. Sie können angeben, ob für zuvor importierte Zahlen Folgendes gilt: **Hiermit überschreiben Sie Details für vorhandene Bezeichner**.
 
@@ -100,4 +100,4 @@ Die Geräteeigenschaften zeigen den **Besitz** für jeden Gerätedatensatz in In
 3. Wählen Sie **Eigenschaften** aus.
 4. Geben Sie den **Gerätebesitz** als **Persönlich** oder **Unternehmen** an.
 
-  ![Screenshot der Geräteeigenschaften, der die Optionen der Gerätekategorie und des Gerätebesitzes anzeigt.](./media/device-properties.png)
+  ![Geräteeigenschaften, die die Optionen der Gerätekategorie und des Gerätebesitzes anzeigen.](./media/device-properties.png)

@@ -1,7 +1,7 @@
 ---
-title: "Festlegen von Registrierungseinschränkungen in Intune"
-titlesuffix: Azure portal
-description: "Schränken Sie die Registrierung plattformbezogen ein, und legen Sie in Intune einen Grenzwert für die Geräteregistrierung fest. \""
+title: "Festlegen von Registrierungseinschränkungen in Microsoft Intune"
+titlesuffix: 
+description: "Schränken Sie die Registrierung plattformbezogen ein, und legen Sie in Intune einen Grenzwert für die Geräteregistrierung fest."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Als Intune-Administrator können Sie Registrierungsbeschränkungen erstellen und verwalten, die die Anzahl und Typen von Geräten festlegen, die sich für die Verwaltung mit Intune registrieren können. Sie können mehrere Beschränkungen definieren und diese verschiedenen Benutzergruppen zuordnen. Für Ihre verschiedenen Beschränkungen können Sie eine [Prioritätsreihenfolge](#change-enrollment-restriction-priority) festlegen.
+Als Intune-Administrator können Sie Registrierungseinschränkungen erstellen und verwalten. Diese Einschränkungen definieren die Anzahl und Arten von Geräten, die bei der Verwaltung mit Intune registriert werden können. Sie können mehrere Beschränkungen definieren und diese verschiedenen Benutzergruppen zuordnen. Für Ihre verschiedenen Beschränkungen können Sie eine [Prioritätsreihenfolge](#change-enrollment-restriction-priority) festlegen.
 
 >[!NOTE]
 >Registrierungseinschränkungen stellen keine Sicherheitsfunktionen dar. Gefährdete Geräte können falsche Angaben zu ihren Eigenschaften enthalten. Diese Einschränkungen sind eine bestmögliche Barriere für nicht böswillige Benutzer.
@@ -83,7 +83,7 @@ Sie können die Einstellungen für eine Gerätetypbeschränkung ändern, indem S
   Die Betriebssystemversionen gelten nicht für Apple-Geräte, die mit dem Programm zur Geräteregistrierung, dem Apple School Manager oder der App Apple Configurator registriert werden.
 8. Wählen Sie für jede aufgeführte Plattform **Zulassen** oder **Blockieren** für **Geräte in Privatbesitz** aus.
 
-    ![Screenshot des Arbeitsbereichs „Gerätebeschränkungen“ mit den standardmäßigen Geräteplattformkonfigurationen für die konfigurierten Einstellungen von Geräten in Privatbesitz.](media/device-restrictions-platform-configurations.png)
+    ![Screenshot des Arbeitsbereichs „Geräteeinschränkungen“ mit der für Geräte in Privatbesitz konfigurierten Standardgeräteplattform](media/device-restrictions-platform-configurations.png)
 9. Klicken Sie auf **Speichern**.
 
 >[!NOTE]
@@ -100,7 +100,7 @@ Sie können die Einstellungen für eine Gerätelimitbeschränkung ändern, indem
 3. Klicken Sie auf **Geräteregistrierung** > **Registrierungsbeschränkungen**.
 4. Wählen Sie unter **Einschränkungen zum Gerätelimit** die Beschränkung, die Sie festlegen möchten.
 5. Wählen Sie **Gerätelimit** und dann in der Dropdownliste die maximale Anzahl der Geräte aus, die ein Benutzer registrieren kann.
-    ![Screenshot des Blatts „Einschränkungen zum Gerätelimit“ mit den Einschränkungen zur Gerätebeschränkung.](./media/device-restrictions-limit.png)
+    ![Screenshot des Blatts „Einschränkungen zum Gerätelimit“](./media/device-restrictions-limit.png)
 6. Klicken Sie auf **Speichern**.
 
 Ihr Endbenutzer erhält eine Benachrichtigung darüber, wann sein Limit registrierter Geräte erreicht ist. Bei iOS würde dies wie folgt aussehen:

@@ -1,12 +1,11 @@
 ---
-title: "So weisen Sie Geräteprofile mit Intune zu"
-titlesuffix: Azure portal
-description: "Nachdem Sie ein Intune-Geräteprofil erstellt haben, lesen Sie dieses Thema, um zu erfahren, wie Sie es Geräten zuweisen."
+title: "Zuweisen von Geräteprofilen in Microsoft Intune – Azure | Microsoft-Dokumentation"
+description: "Verwenden des Azure-Portals zum Zuweisen von Geräteprofilen und Richtlinien zu Benutzern und Geräten und Ausschließen von Gruppen aus einer Profilzuweisung in Microsoft Intune"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 07/05/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,45 +14,44 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ef03eeab32050559d34d3d7d580c06c21f5ffb05
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b09650bc99b1bdf892b60828f0b524467d7b60ac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-assign-microsoft-intune-device-profiles"></a>Zuweisen von Microsoft Intune-Geräteprofilen
+# <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune
+
+Nachdem Sie ein Profil erstellt haben, können Sie das Profil für Azure Active Directory-Gruppen zuweisen.
 
 ## <a name="assign-a-device-profile"></a>Zuweisen eines Geräteprofils
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
-1. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
-2. Wählen Sie auf dem Blatt mit der Profilliste das Profil, das Sie verwalten möchten, und dann auf dem Blatt <*Profilname*> **Berichte** die Option **Verwalten** > **Zuweisungen** aus.
-3. Wählen Sie auf dem nächsten Blatt entweder die Option **Einschließen** (zum Einschließen von Gruppen) oder die Option **Ausschließen** (zum Ausschließen von Gruppen) aus. Wählen Sie anschließend **Gruppen auswählen** aus.
-![Einschließen und Ausschließen von Gruppen aus einer Profilzuweisung.](./media/group-include-exclude.png)
-4. Wählen Sie auf dem Blatt **Gruppen auswählen** diejenigen Azure AD-Gruppen aus, die Sie in die Zuordnung einschließen oder aus der Zuordnung ausschließen möchten. Sie können **STRG** gedrückt halten, um mehrere Gruppen auswählen.
-4. Wenn Sie fertig sind, wählen Sie auf dem Blatt **Gruppen auswählen** die Option **Auswählen** aus.
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, und suchen Sie nach **Microsoft Intune**.
+2. Wählen Sie in **Microsoft Intune** die Option **Gerätekonfiguration** und anschließend **Profile** aus.
+3. Wählen Sie in der Liste der Profile das Profil aus, das Sie zuweisen möchten, und anschließend **Zuweisungen**.
+4. Wählen Sie aus, ob Sie Gruppen **einschließen** oder **ausschließen** möchten, und wählen Sie anschließend **Gruppen auswählen** aus:  
 
+    ![Einschließen oder Ausschließen von Gruppen aus einer Profilzuweisung](./media/group-include-exclude.png)
 
+5. Wenn Sie Ihre Gruppen auswählen, wählen Sie eine Azure Active Directory-Gruppe aus. Halten Sie die Taste **STRG** gedrückt, um mehrere Gruppen auszuwählen.
+6. **Speichern** Sie anschließend Ihre Änderungen.
 
-## <a name="how-to-exclude-groups-from-a-device-profile-assignment"></a>Ausschließen von Gruppen aus einer Geräteprofilzuweisung
+## <a name="exclude-groups-from-a-profile-assignment"></a>Ausschließen von Gruppen aus einer Profilzuweisung
 
-Mit Intune-Gerätekonfigurationsprofilen können Sie Gruppen aus der Richtlinienzuweisung ausschließen. So könnten Sie z.B. der Gruppe **Alle Unternehmensbenutzer** ein Geräteprofil zuweisen und gleichzeitig alle Mitglieder der Gruppe **Oberes Management** ausschließen.
+Mit Intune-Gerätekonfigurationsprofilen können Sie Gruppen aus der Richtlinienzuweisung ausschließen. So könnten Sie der Gruppe **Alle Unternehmensbenutzer** beispielsweise ein Geräteprofil zuweisen, aber gleichzeitig alle Mitglieder der Gruppe **Mitarbeiter des oberen Managements** ausschließen.
 
-Achten Sie beim Ausschließen von Gruppen aus einer Zuweisung darauf, dass Sie nur Benutzer oder nur Gerätegruppen ausschließen und keine Kombination aus verschiedenen Gruppen. Intune berücksichtigt beim Ausschließen von Gruppen keine Zuweisung eines Benutzers zu einem Gerät. Es ist unwahrscheinlich, dass das Einschließen von Benutzergruppen und gleichzeitige Ausschließen von Gerätegruppen die von Ihnen gewünschten Ergebnisse liefert. Bei einer Kombination aus verschiedenen Gruppen oder bei anderen Konflikten hat die Funktion „Einschließen“ Vorrang vor der Funktion „Ausschließen“.
+Wenn Sie Gruppen aus einer Zuweisung ausschließen, schließen Sie nur Benutzer oder Gerätegruppen aus (keine Mischung aus Gruppen).Intune berücksichtigt keine Benutzer-zu-Gerät-Beziehung. Das Einschließen von Benutzergruppen und das gleichzeitige Ausschließen von Gerätegruppen liefert möglicherweise nicht die von Ihnen gewünschten Ergebnisse. Bei einer Kombination aus verschiedenen Gruppen oder bei anderen Konflikten hat die Funktion „Einschließen“ Vorrang vor der Funktion „Ausschließen“.
 
 Beispiel: Sie möchten allen Geräten in Ihrem Unternehmen, mit Ausnahme von Kioskgeräten, ein Geräteprofil zuweisen. Nun schließen Sie die Gruppe **Alle Benutzer** ein und gleichzeitig die Gruppe **Alle Geräte** aus.
 
-In diesem Fall erhalten alle Benutzer und ihre Geräte die Richtlinie, selbst wenn das Gerät des Benutzers der Gruppe **Alle Geräte** angehört. 
+In diesem Fall erhalten alle Benutzer und ihre Geräte die Richtlinie, selbst wenn das Gerät des Benutzers der Gruppe **Alle Geräte** angehört.
 
-Die Ausschließen-Funktion wertet nur direkte Mitglieder der Gruppen aus. Sie beinhaltet keine Geräte, die einem Benutzer zugeordnet sind. Geräte, die keinen Benutzer besitzen, erhalten die Richtlinie dagegen nicht, da sie der Gruppe **Alle Benutzer** nicht zugeordnet sind. 
+Die Funktion „Ausschließen“ wertet nur direkte Mitglieder der Gruppen aus. Sie schließt keine Geräte ein, die einem Benutzer zugeordnet sind. Geräte, die über keinen Benutzer verfügen, erhalten die Richtlinie jedoch nicht. Grund hierfür ist, dass diese Geräte keine Beziehung zur Gruppe **Alle Benutzer** haben.
 
-Wenn Sie **Alle Geräte** einschließen und gleichzeitig **Alle Benutzer** ausschließen, erhalten alle Geräte die Richtlinie. Damit sollten eigentlich alle Geräte mit einem zugeordneten Benutzer von der Richtlinie ausgeschlossen werden. Dies gelingt jedoch nicht, da die Ausschließen-Funktion nur direkte Mitglieder von Gruppen vergleicht. 
+Wenn Sie **Alle Geräte** einschließen und gleichzeitig **Alle Benutzer** ausschließen, erhalten alle Geräte die Richtlinie. Damit sollten eigentlich alle Geräte mit einem zugeordneten Benutzer von der Richtlinie ausgeschlossen werden. Die Geräte werden jedoch nicht ausgeschlossen, da die Funktion „Ausschließen“ nur direkte Gruppenmitglieder miteinander vergleicht.
 
->[!Tip]
->Die Ausschließen-Funktion ist für Konformitätsrichtlinien oder App-Zuweisungen derzeit nicht verfügbar. Zum Ausschließen von Mitgliedern aus einer Zuordnung können Sie die Zuweisungsabsichten „Verfügbar“ und „Nicht verfügbar“ verwenden. Beispiel: Sie weisen der Gruppe **Alle Unternehmensbenutzer** eine App mit der Zuweisungsabsicht **Verfügbar** zu sowie der Gruppe **Oberes Management** mit der Zuweisungsabsicht **Nicht verfügbar**. Die App ist nun allen Benutzern *außer* den Benutzern der Gruppe **Oberes Management** zugewiesen. Weisen Sie die App hingegen der Gruppe **Alle Unternehmensbenutzer** mit der Zuweisungsabsicht **Erforderlich** zu, werden die Benutzer der Gruppe **Oberes Management** nicht ausgeschlossen.
- 
-    
+>[!TIP]
+>Die Funktion „Ausschließen“ ist für Konformitätsrichtlinien oder App-Zuweisungen nicht verfügbar. Zum Ausschließen von Mitgliedern aus einer Zuweisung können Sie die Zuweisungen **Verfügbar** und **Nicht zutreffend** verwenden. Beispiel: Sie weisen der Gruppe **Alle Unternehmensbenutzer** eine App mit der Absicht **Verfügbar** zu und der Gruppe **Mitarbeiter des oberen Managements** die App mit der Absicht **Nicht zutreffend**. Die App wurde nun allen Benutzern *außer* den Benutzern der Gruppe **Mitarbeiter des oberen Managements** zugewiesen. Weisen Sie die App hingegen der Gruppe **Alle Unternehmensbenutzer** mit der Absicht **Erforderlich** zu, werden die Benutzer der Gruppe **Mitarbeiter des oberen Managements** nicht ausgeschlossen.
+
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen zum Überwachen der Zuweisungen von Geräteprofilen finden Sie unter [Überwachen von Geräteprofilen](device-profile-monitor.md).

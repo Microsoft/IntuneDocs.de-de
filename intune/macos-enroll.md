@@ -1,11 +1,11 @@
 ---
-title: "Registrieren von macOS-Geräten in Intune"
-titlesuffix: Azure portal
-description: "Erfahren Sie, wie Sie macOS-Geräte in Intune registrieren."
+title: "Registrieren von macOS-Geräten"
+titlesuffix: Microsoft Intune
+description: "Erfahren Sie, wie Sie die Registrierung von macOS-Geräten in Intune einrichten."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-nmanager: dougeby
+manager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f896ebd51f989c0e441043d320247946cdb8997b
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 77a1551321079765f00f0e35d57211ae4c99e5a6
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enroll-macos-devices-in-intune"></a>Registrieren von macOS-Geräten in Intune
+# <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Registrieren von macOS-Geräten in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -37,6 +37,13 @@ Die folgenden Voraussetzungen müssen vor dem Einrichten der Registrierung von m
 - [Konfigurieren des Unternehmensportals](company-portal-app.md)
 - Zuweisen von Benutzerlizenzen im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Abrufen eines Apple-MDM-Push-Zertifikats](apple-mdm-push-certificate-get.md)
+
+## <a name="user-owned-ios-devices-byod"></a>iOS-Gerät im Besitz des Benutzers (BYOD)
+
+Benutzer können ihre persönlichen Geräte für die Intune-Verwaltung registrieren. Dies wird als „bring your own device“ oder BYOD bezeichnet. Sobald Sie über die Voraussetzungen verfügen und den Benutzern Lizenzen zugewiesen haben, können diese die Unternehmensportal-App für macOS aus dem App Store herunterladen und den Registrierungsanweisungen in der App folgen.
+
+## <a name="company-owned-ios-devices"></a>Unternehmenseigenes iOS-Gerät
+Für Organisationen, die Geräte für ihre Benutzer erwerben, unterstützt Intune die Registrierung von firmeneigenen macOS-Geräten mit einem [Device Enrollment Manager](device-enrollment-manager-enroll.md)-Konto (DEM).
 
 ## <a name="set-up-macos-enrollment"></a>Einrichten der macOS-Registrierung
 

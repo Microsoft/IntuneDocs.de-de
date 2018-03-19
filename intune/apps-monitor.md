@@ -1,12 +1,12 @@
 ---
 title: "Überwachen von App-Informationen und -Zuweisungen"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Nachdem Sie Benutzern oder Geräten eine App zugewiesen haben, können Sie mithilfe dieser Informationen den Status der App überwachen."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85ecc9729d7c03cb760c14bda0ca4d6321af548e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6bd915093ae45ff0fc3d51a2d7279493bc783d43
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Überwachen von App-Informationen und -Zuweisungen mit Microsoft Intune
 
@@ -27,9 +27,9 @@ ms.lasthandoff: 01/25/2018
 
 Intune bietet eine Reihe von Möglichkeiten, mit denen Sie die Eigenschaften von verwalteten Apps sowie deren Zuweisungsstatus überwachen können.
 
-1. Melden Sie sich im Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** + **Intune** aus.
-3. Klicken Sie in der Workload **Mobile Apps** auf **Apps** in der Gruppe **Verwalten**.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie **Mobile Apps** und anschließend in der Gruppe **Verwalten** die Option **Apps** aus.
 5. Wählen Sie in der Liste auf dem Blatt „Apps“ eine App aus. Ihnen wird dann das Blatt <*App-Name*> **Geräteinstallationsstatus** angezeigt.
 
 ## <a name="app-overview-blade"></a>Übersicht über das Blatt „App“

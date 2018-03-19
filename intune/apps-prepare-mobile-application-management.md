@@ -1,10 +1,11 @@
 ---
-title: "Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune"
-description: "Die Informationen in diesem Thema unterstützen Sie bei der Entscheidung, wann Sie das App Wrapping Tool und das App SDK verwenden sollten, um Ihrer benutzerdefinierten Reihe von Branchen-Apps die Verwendung der Verwaltungsrichtlinien für mobile Apps zu ermöglichen."
+title: "Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien"
+titlesuffix: Microsoft Intune
+description: "Verwenden Sie das App Wrapping Tool und das App SDK, um Ihre benutzerdefinierten Branchenanwendungen für die Verwendung von App-Schutzrichtlinien in Microsoft Intune zu aktivieren."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b2ab30f9bf061e7ea4a34372e7c99e059c6e30f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien
 
@@ -102,6 +103,7 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 |Angestrebte Anwendungskonfiguration |X||
 |Unterstützung von mehreren Identitäten|X||
 |Anpassbarer Stil |X|||
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 Weitere Informationen zu App-Schutzrichtlinien und Intune finden Sie in den folgenden Themen:

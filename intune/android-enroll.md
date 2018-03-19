@@ -1,6 +1,6 @@
 ---
-title: "Registrieren von Android-Geräten bei Intune | Microsoft-Dokumentation"
-titlesuffix: Azure portal
+title: "Registrieren von Android-Geräten in Intune"
+titlesuffix: Microsoft Intune
 description: "Erfahren Sie, wie Sie Android-Geräte in Intune registrieren."
 keywords: 
 author: ErikjeMS
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e137da3ad4121f4b9cdfbb765ee00f71beca610a
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="enroll-android-devices"></a>Registrieren von Android-Geräten
 
@@ -43,7 +43,7 @@ Um die Geräteverwaltung zu aktivieren, müssen die Benutzer ihre Geräte durch 
 
 ## <a name="enable-enrollment-of-android-for-work-devices"></a>Aktivieren der Registrierung von Android for Work-Geräten
 
-Für die Aktivierung der Verwaltung von Arbeitsprofilen auf Geräten, die [Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) unterstützen, müssen Sie eine Android for Work-Bindung zu Intune hinzufügen. Zur Registrierung von Geräten, die Android for Work unterstützen, aber zuvor als reguläre Android-Geräte registriert wurden, müssen Sie die Registrierung der Geräte aufheben und die Geräte anschließend erneut registrieren.
+Für die Aktivierung der Verwaltung von Arbeitsprofilen auf Geräten, die [Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012) unterstützen, müssen Sie eine Android for Work-Bindung zu Intune hinzufügen. Wenn Sie Geräte in Android for Work registrieren möchten, die bereits als reguläre Android-Geräte registriert wurden, müssen Sie die Registrierung der Geräte aufheben und die Geräte anschließend erneut registrieren.
 
 Wenn Sie Android for Work-Geräte mithilfe eines [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md)-Kontos registrieren, besteht pro Konto ein Grenzwert von 10 registrierbaren Geräten.
 
@@ -58,7 +58,7 @@ Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch 
     Wählen Sie als Intune-Administrator im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
 
    ein. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung**  > **Android for Work-Registrierung** und dann **Konfigurieren** aus, um die Android for Work-Website von Google Play zu öffnen. Die Website wird auf einer neuen Registerkarte im Browser geöffnet.
-   ![Screenshot: Link zum Konfigurieren der Android for Work-Bindung](./media/android-work-bind.png)
+   ![Android for Work-Registrierungsbildschirm](./media/android-work-bind.png)
 
    b. **Anmelden bei Google**<br>
    Geben Sie auf der Anmeldeseite von Google das Google-Konto an, das allen Android for Work-Verwaltungsaufgaben für diesen Mandanten zugeordnet sein wird. Dies ist das Google-Konto, das von den IT-Administratoren Ihres Unternehmens gemeinsam zum Verwalten und Veröffentlichen von Apps in der Play for Work-Konsole verwendet wird. Sie können ein vorhandenes Google-Konto verwenden oder ein neues Konto erstellen.  Das von Ihnen ausgewählte Konto sollte einer G-Suite-Domäne zugeordnet sein.
@@ -79,7 +79,7 @@ Führen Sie die folgenden Schritte durch, um das Intune-Unternehmensportal zu ge
 
 1.  Suchen Sie die Unternehmensportal-App im [verwalteten Google Play Store](https://play.google.com/work/apps/details?id=com.microsoft.windowsintune.companyportal).
 2.  Melden Sie sich beim verwalteten Google Play Store mit dem gleichen Google-Konto an, mit dem Sie die Bindung für Android for Work konfiguriert haben.
-3.  Klicken Sie auf **Genehmigen**.  Hierdurch wird ein neues Dialogfeld geöffnet.
+3.  Klicken Sie auf **Genehmigen**. Daraufhin wird ein neues Dialogfeld geöffnet.
 4.  Überprüfen Sie die Berechtigungen in diesem Dialogfeld, und klicken Sie dann auf **Genehmigen**. Sie müssen diese Berechtigungen zulassen, um der Unternehmensportal-App die Verwaltung des Arbeitsprofils auf dem Gerät zu ermöglichen.
 5.  Wählen Sie **Genehmigt lassen, wenn Apps neue Berechtigungen anfordern** aus, und klicken Sie dann auf **Speichern**.
 

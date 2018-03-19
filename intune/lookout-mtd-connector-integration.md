@@ -3,8 +3,8 @@ title: Einrichten Ihrer Lookout-Integration mit Intune
 titlesuffix: Azure portal
 description: Einrichten Ihres Lookout-Abonnements mit Intune
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 891fbda72d38b829397158a75bdceeb452bc8d3b
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: fa13ee9239dcb1f62f4fb06e876ecc272a8f620c
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Einrichten Ihrer Lookout Mobile Threat Defense-Integration mit Intune
 
@@ -131,7 +131,7 @@ Lookout Mobile Threat Defense klassifiziert verschiedene Typen von Bedrohungen f
 > Risikostufen sind ein wichtiger Aspekt von Mobile Threat Defense, da die Intune-Integration die Gerätekompatibilität zur Laufzeit anhand dieser Risikostufen berechnet. Der Intune-Administrator legt in der Richtlinie eine Regel fest, um ein Gerät als nicht kompatibel zu identifizieren, wenn auf dem Gerät eine aktive Bedrohung mit der Mindeststufe **Hoch**, **Mittel** oder **Niedrig** erkannt wird. Die Richtlinie zur Bedrohungsklassifizierung von Lookout Mobile Threat Defense bildet die unmittelbare Grundlage zur Berechnung der Gerätekompatibilität in Intune.
 
 ## <a name="watching-enrollment"></a>Beobachten der Registrierung
-Nachdem das Setup abgeschlossen wurde, beginnt Lookout Mobile Threat Defense mit der Abfrage von Azure AD nach Geräten, die den angegebenen Registrierungsgruppen entsprechen.  Informationen zu den registrierten Geräten finden Sie im Modul „Geräte“.  Der Ausgangsstatus für Geräte wird als „ausstehend“ angezeigt.  Der Gerätestatus ändert sich, sobald die Lookout for Work-App auf dem Gerät installiert, geöffnet und aktiviert wurde.  Details zur Übertragung der Lookout for Work-App per Push an die Geräte finden Sie im Thema [Add Lookout for Work apps with Intune (Hinzufügen von Lookout for Work-Apps mit Intune)](mtd-apps-ios-app-configuration-policy-add-assign.md).
+Nachdem das Setup abgeschlossen wurde, beginnt Lookout Mobile Threat Defense mit der Abfrage von Azure AD nach Geräten, die den angegebenen Registrierungsgruppen entsprechen.  Informationen zu den registrierten Geräten finden Sie im Modul „Geräte“.  Der Ausgangsstatus für Geräte wird als „ausstehend“ angezeigt.  Der Gerätestatus ändert sich, sobald die Lookout for Work-App auf dem Gerät installiert, geöffnet und aktiviert wurde.  Details zur Übertragung der Lookout for Work-App per Push an die Geräte finden Sie unter [Hinzufügen und Zuweisen von Mobile Threat Defense-Apps (MTD) mit Intune](mtd-apps-ios-app-configuration-policy-add-assign.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -1,12 +1,12 @@
 ---
-title: Was ist die App-Verwaltung?
-titlesuffix: Azure portal
-description: In diesem Thema lernen Sie die Grundlagen der App-Verwaltung mit Microsoft Intune kennen."
+title: Was ist die Microsoft Intune App-Verwaltung?
+titlesuffix: 
+description: In diesem Thema lernen Sie die Grundlagen der App-Verwaltung mit Microsoft Intune kennen.
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/08/2018
+ms.date: 03/01/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00e6b9f05f967da9066639dbf1b25bc76a49541b
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 9372a77a63f48c8215a02ccd784fb0a812f5a12f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Was ist die Microsoft Intune App-Verwaltung?
 
@@ -27,14 +27,14 @@ ms.lasthandoff: 02/13/2018
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-Als IT-Administrator müssen Sie sicherstellen, dass die Endbenutzer Zugriff auf die Apps haben, die sie für ihre Arbeit benötigen. Dies kann aus verschiedenen Gründen eine große Herausforderung darstellen:
+Mit Microsoft Intune können Sie als IT-Administrator die mobilen Apps verwalten, die Mitarbeiter Ihres Unternehmens verwenden. Diese Funktion besteht zusätzlich zur Verwaltung von Geräten und dem Schutz von Daten. Als Teil dieser Funktion ist es eine Ihrer Prioritäten, sicherzustellen, dass Ihre Endbenutzer auf die zur Arbeit notwendigen Apps zugreifen können. Dies kann aus verschiedenen Gründen eine große Herausforderung darstellen:
 - Es gibt eine Vielzahl von Geräteplattformen und App-Typen.
 - Sie müssen möglicherweise Apps auf unternehmenseigenen Geräten und auf Geräten von Benutzern verwalten.
 - Sie müssen sicherstellen, dass Ihr Netzwerk und Ihre Daten weiterhin geschützt sind.
 
 Darüber hinaus sollten Sie Apps auf Geräten, die nicht bei Intune registriert sind, zuweisen und verwalten.
 
-Intune bietet eine Reihe von Funktionen, die die Installation der erforderlichen Apps auf den gewünschten Geräten unterstützen.
+Intune bietet eine Reihe von Funktionen, die die Installation der erforderlichen Apps auf den gewünschten Geräten unterstützen. Die folgende Tabelle enthält eine Zusammenfassung der App-Verwaltungsfunktionen. Unter der Tabelle ist ein Ausgangspunkt, um Microsoft Intune im Azure-Portal zu verstehen. 
 
 ## <a name="app-management-capabilities-by-platform"></a>App-Verwaltungsfunktionen nach Plattform
 
@@ -64,8 +64,8 @@ Intune bietet eine Reihe von Funktionen, die die Installation der erforderlichen
 
 Sie finden die meisten Informationen zu Apps in der Workload **Mobile Apps**, auf die Sie wie folgt zugreifen können:
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
 
     ![Workload „Mobile Apps“](./media/apps-workload.png)
@@ -115,3 +115,7 @@ Einzelheiten finden Sie im Artikel zur [App-Überwachung](apps-monitor.md).
 ### <a name="help-and-support"></a>Hilfe und Support
 - **Hilfe und Support**: Ermöglicht das Behandeln von Problemen, das Anfordern von Unterstützung oder das Anzeigen des Intune-Status.
     - [Problembehandlung](help-desk-operators.md)
+    
+## <a name="next-steps"></a>Nächste Schritte
+
+- [So fügen Sie eine App zu Microsoft Intune hinzu](apps-add.md)
