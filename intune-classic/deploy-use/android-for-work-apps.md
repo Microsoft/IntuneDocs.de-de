@@ -1,4 +1,4 @@
----
+﻿---
 title: "Bereitstellen von Apps für Android for Work-Geräte"
 description: "Verwenden Sie dieses Thema zum Synchronisieren und anschließenden Bereitstellen von Apps für Android for Work-Geräte über den Google Play for Work Store."
 keywords: 
