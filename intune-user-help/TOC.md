@@ -66,6 +66,7 @@
 ### [Was geschieht, wenn Sie ein iOS-Gerät registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Installieren und Anmelden beim Unternehmensportal](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [Registrieren Ihres iOS-Geräts](enroll-your-device-in-intune-ios.md)
+### [Registrieren Ihres iOS-Geräts, das über das Apple-Programm zur Geräteregistrierung erworben wurden](enroll-your-device-dep-ios.md)
 
 ### [Verwenden verwalteter Apps auf Ihrem Gerät](use-managed-apps-on-your-device-ios.md)
 ### [Festlegen oder Ändern der Kennung](set-or-change-your-passcode-ios.md)
