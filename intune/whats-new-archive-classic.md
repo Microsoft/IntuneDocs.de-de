@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f259620f64d70bfce4ed60c2a96194028a12c38
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: edbb76e0eb4a1157e70a24c47b960ef138a0f876
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Neuerungen im klassischen Intune-Portal – vorherige Monate
 
@@ -281,7 +281,7 @@ Die folgenden Artikel wurden aktualisiert:
 
 * [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](apps-prepare-mobile-application-management.md)
 * [Vorbereiten von iOS-Apps für die Verwaltung mobiler Anwendungen mit dem Intune App Wrapping Tool](app-wrapper-prepare-ios.md)
-* [Erste Schritte mit dem Microsoft Intune App SDK](/app-sdk-get-started.md)
+* [Erste Schritte mit dem Microsoft Intune App SDK](app-sdk-get-started.md)
 * [Intune App SDK für iOS – Entwicklerhandbuch](app-sdk-ios.md)
 
 Folgende Artikel wurden der Dokumentbibliothek neu hinzugefügt:

@@ -1,6 +1,6 @@
 ---
 title: Von Intune an Google gesendete Daten
-titlesuffix: Azure portal
+titleSuffix: Microsoft Intune
 description: Liste der Daten, die von Intune an Google gesendet werden.
 keywords: 
 author: ErikjeMS
@@ -15,11 +15,11 @@ ms.assetid: a5c3bec4-18ed-11e8-accf-0ed5f89f718b
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5f8c71115b8c3ee761fbc8d303f87e8aaabd5e1
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: 63f1b07d13daad7512dff8e53f9acbafa7bffdd3
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="data-intune-sends-to-google"></a>Von Intune an Google gesendete Daten
 

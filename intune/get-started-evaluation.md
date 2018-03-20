@@ -1,6 +1,6 @@
 ---
-title: Erste Schritte mit Intune
-titlesuffix: Azure portal
+title: Erste Schritte mit Microsoft Intune
+titleSuffix: 
 description: "Machen Sie eine Reihe kurzer, praktischer Übungen, um mehr über Intune zu erfahren."
 keywords: 
 author: Erikre
@@ -15,11 +15,11 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9a8a2c4b9c88b935e7560457792c02b2e4d08cd2
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: 00f7b3708e20819ad76816587e128ceecee5102b
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Wie profitiert mein Unternehmen von Intune?
 
