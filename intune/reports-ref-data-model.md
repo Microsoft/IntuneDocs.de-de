@@ -1,11 +1,12 @@
 ---
-title: Datenmodell von Data Warehouse | Microsoft-Dokumentation
-description: "Intune Data Warehouse prüft täglich die Daten, um eine Verlaufsansicht Ihrer sich ständig ändernden mobilen Umgebung bereitzustellen."
+title: Datenmodell von Data Warehouse
+titlesuffix: Microsoft Intune
+description: "Microsoft Intune Data Warehouse überprüft täglich die Daten, um eine Verlaufsansicht Ihrer sich ständig ändernden mobilen Umgebung bereitzustellen."
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f52531f854c57551613b1e94f0cfd0925c6d3d12
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7bf893acd5a3d162b767744001fe2257824d86a4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="data-warehouse-data-model"></a>Datenmodell von Data Warehouse
 
-Intune Data Warehouse entnimmt täglich Datenstichproben, um eine Verlaufsansicht Ihrer sich ständig ändernden Umgebung mobiler Geräte bereitzustellen. Die Ansicht besteht aus zeitlich aufeinander bezogenen Elementen.
+Intune Data Warehouse entnimmt täglich Datenstichproben, um eine Verlaufsansicht Ihrer sich ständig ändernden Umgebung mobiler Geräte bereitzustellen. Die Ansicht besteht aus zeitlich aufeinander bezogenen Entitäten.
 
-## <a name="things-entity-sets"></a>Elemente: Entitätenmengen
+## <a name="entities-entity-sets"></a>Entitäten: Entitätenmengen
 
 Das Warehouse macht Daten in den folgenden allgemeinen Bereichen verfügbar:
 
@@ -33,7 +34,7 @@ Das Warehouse macht Daten in den folgenden allgemeinen Bereichen verfügbar:
   -  Apps- und Softwareinventar
   -  Gerätekonfiguration und Konformitätsrichtlinien
 
-Diese Bereiche enthalten die Entitäten, oder Elemente, die für Ihre Intune-Umgebung von Bedeutung sind. Informationen zu den Entitätenmengen finden Sie in den folgenden Themen:
+Diese Bereiche enthalten die Entitäten, die für Ihre Intune-Umgebung von Bedeutung sind. Informationen zu den Entitätenmengen finden Sie in den folgenden Themen:
 
   -  [Anwendung](reports-ref-application.md)
   -  [Datum](reports-ref-date.md)

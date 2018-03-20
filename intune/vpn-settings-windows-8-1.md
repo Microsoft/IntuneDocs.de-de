@@ -1,54 +1,54 @@
 ---
-title: "VPN-Einstellungen in Intune für Windows 8.1-Geräte"
-titleSuffix: Azure portal
-description: "Erfahren Sie etwas über die Intune-Einstellungen, die Sie zum Konfigurieren von VPN-Verbindungen auf Windows 8.1-Geräten verwenden können.\""
+title: "VPN-Einstellungen für Windows 8.1-Geräte in Microsoft Intune"
+titleSuffix: 
+description: "Erfahren Sie mehr über die Intune-Einstellungen, die Sie zum Konfigurieren von VPN-Verbindungen auf Windows 8.1-Geräten verwenden können."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0126c483ec905d4c073e19b35498c27069ecd285
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8ced3e03fa337034076af75c7984a30cd75105bb
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-windows-81-devices-in-microsoft-intune"></a>VPN-Einstellungen für Windows 8.1-Geräte in Microsoft Intune
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Konfigurieren von VPN-Einstellungen für Windows 8.1-Geräte in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+In diesem Artikel werden die Intune-Einstellungen veranschaulicht, die Sie verwenden können, um VPN-Verbindungen auf Windows 8.1-Geräten zu konfigurieren.
 
 Je nach den ausgewählten Einstellungen können nicht alle Werte in der folgenden Liste konfiguriert werden.
 
 ## <a name="base-vpn-settings"></a>Grundlegende VPN-Einstellungen
 
 
-- **Alle Einstellungen nur auf Windows 8.1 anwenden:** Diese Einstellung können Sie im klassischen Intune-Portal konfigurieren. Im Azure-Portal kann diese Einstellung nicht geändert werden. Wenn hierfür **Konfiguriert** festgelegt wird, werden sämtliche Einstellungen nur auf Windows 8.1-Geräte angewendet. Wenn **Nicht konfiguriert** festgelegt wird, gelten diese Einstellungen auch für Windows 10-Geräte.
-- **Verbindungsname:** Geben Sie einen Namen für diese Verbindung ein. Endbenutzern wird dieser Name angezeigt, wenn sie auf ihrem Gerät die Liste der verfügbaren VPN-Verbindungen durchsuchen.
+- **Alle Einstellungen nur auf Windows 8.1 anwenden:** Diese Einstellung können Sie im klassischen Intune-Portal konfigurieren. Im Azure-Portal kann diese Einstellung nicht geändert werden. Wenn hierfür **Konfiguriert** festgelegt ist, werden sämtliche Einstellungen nur auf Windows 8.1-Geräte angewendet. Wenn **Nicht konfiguriert** festgelegt wird, gelten diese Einstellungen auch für Windows 10-Geräte.
+- **Verbindungsname:** Geben Sie einen Namen für diese Verbindung ein. Benutzern wird dieser Name angezeigt, wenn sie auf ihrem Gerät die Liste der verfügbaren VPN-Verbindungen durchsuchen.
 - **Server:** Fügen Sie einen oder mehrere VPN-Server hinzu, mit denen Geräte eine Verbindung herstellen.
-    - **Hinzufügen:** öffnet das Blatt **Zeile hinzufügen**, auf dem Sie die folgende Informationen angeben können:
+    - **Hinzufügen:** Öffnet die Seite **Zeile hinzufügen**, auf der Sie die folgenden Informationen angeben können:
         - **Beschreibung:** Geben Sie einen beschreibenden Namen für den Server ein, z.B. **Contoso-VPN-Server**.
         - **IP-Adresse oder FQDN:** Geben Sie die IP-Adresse oder den vollqualifizierten Domänennamen des VPN-Servers an, mit dem Geräte eine Verbindung herstellen. Beispiele: **192.168.1.1**, **vpn.contoso.com**.
-        - **Standardserver:** aktiviert diesen Server als Standardserver, über den Geräte die Verbindung herstellen. Achten Sie darauf, nur einen Server als Standard festzulegen.
+        - **Standardserver:** Aktiviert diesen Server als Standardserver, über den Geräte die Verbindung herstellen. Achten Sie darauf, nur einen Server als Standard festzulegen.
     - **Importieren:** Suchen Sie nach einer Datei, die eine durch Trennzeichen getrennte Liste von Servern im Format „Beschreibung, IP-Adresse oder FQDN, Standardserver“ enthält. Wählen Sie **OK** aus, um diese in die Liste **Server** zu importieren.
     - **Exportieren:** exportiert die Liste der Server in eine CSV-Datei (Comma-Separated Values, durch Trennzeichen getrennte Werte).
 
 - **Verbindungstyp:** Wählen Sie den VPN-Verbindungstyp in der folgenden Liste von Anbietern aus:
 - **Check Point Capsule VPN**
-- **Dell SonicWALL Mobile Connect**
+- **SonicWall Mobile Connect**
 - **F5 Edge Client**
 - **Pulse Secure**
 
 <!--- **Fingerprint** (Check Point Capsule VPN only) - Specify a string (for example, "Contoso Fingerprint Code") that will be used to verify that the VPN server can be trusted. A fingerprint can be sent to the client so it knows to trust any server that presents the same fingerprint when connecting. If the device doesn’t already have the fingerprint, it will prompt the user to trust the VPN server that they are connecting to while showing the fingerprint. (The user manually verifies the fingerprint and chooses **trust** to connect.) --->
 
-- **Anmeldegruppe oder -domäne** (nur Dell SonicWALL Mobile Connect): Geben Sie den Namen der Anmeldegruppe oder -domäne an, mit der Sie eine Verbindung herstellen möchten.
+- **Anmeldegruppe oder -domäne** (nur SonicWall Mobile Connect): Geben Sie den Namen der Anmeldegruppe oder -domäne an, mit der Sie eine Verbindung herstellen möchten.
 
 - **Rolle** (nur Pulse Secure): Geben Sie den Namen der Benutzerrolle an, die Zugriff auf diese Verbindung hat. Eine Benutzerrolle definiert persönliche Einstellungen und Optionen und aktiviert oder deaktiviert bestimmte Zugriffsfeatures.
 
@@ -70,7 +70,7 @@ Je nach den ausgewählten Einstellungen können nicht alle Werte in der folgende
 
 ```
 
-**Beispiel für Dell SonicWALL Mobile Connect:**
+**Beispiel für SonicWall Mobile Connect:**
 ```
     <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
 

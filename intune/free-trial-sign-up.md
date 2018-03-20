@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 03/04/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 3b4d6528acd42a84c7d87968874d36199b661a90
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08fa759515d437e40a751ce39b3ef617dd92e83f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registrieren für eine kostenlose Testversion von Microsoft Intune
 
@@ -32,44 +32,20 @@ Dieser Artikel führt Sie durch die Registrierung für eine eigenständige Testv
 
 2. Am Ende des Registrierungsvorgangs erhalten Sie eine Nachricht mit Informationen zum neuen Konto. <br/> ![Abbildung der Kontoinformationen](./media/2-end-of-sign-up-process.png) <br/>Wenn Sie hier auf **Jetzt kann es losgehen!** klicken, gelangen Sie zum Office 365 Admin Center, wo Sie Ihrer Testumgebung Benutzer hinzufügen können. <br/><br/>Wenn Sie jedoch direkt zu Intune im Azure-Portal wechseln möchten, öffnen Sie ein neues Browserfenster, und geben Sie in die Adressleiste **https://portal.azure.com** ein. Sie werden zur Azure-Anmeldeseite weitergeleitet, auf der Sie die erhaltenen Anmeldeinformationen verwenden können. Verwenden Sie diese Adresse, wenn Sie sich bei Ihrer Intune-Testversion anmelden möchten. <br/> ![Abbildung der Anmeldeseite des Azure-Portals](./media/azure-portal-signin.png)
 
-Wenn Sie sich zum ersten Mal bei Intune in Azure anmelden, wird Intune möglicherweise auf dem Azure-Dashboard nicht angezeigt. So fügen Sie den Intune-Dienst zu Ihrem Azure-Dashboard hinzu:
-1. Wählen Sie auf der linken Seite des Dashboards in der Liste der Azure-Dienste die Option **Weitere Dienste >** aus, und geben Sie im Suchfeld den Begriff **Intune** ein.
+Wenn Sie sich zum ersten Mal bei Intune im [Azure-Portal](https://portal.azure.com) anmelden, wird Intune möglicherweise nicht auf dem Azure-Dashboard angezeigt. So fügen Sie den Intune-Dienst zu Ihrem Azure-Dashboard hinzu:
+1. Wählen Sie auf der linken Seite des Dashboards in der Liste der Azure-Dienste die Option **Alle Dienste >** aus, und geben Sie im Suchfeld den Begriff **Intune** ein.
 2. Wählen Sie **Intune** aus der Liste aus, und wählen Sie dann das Sternchen aus, um den Dienst zur Liste der Dienste hinzuzufügen.<br/> ![Abbildung der Auswahl von Intune aus der Liste der Dienste](./media/azure-add-intune1.png)
 3. Wählen Sie dann **Intune** in der Liste der Dienste aus, um das Intune-Dashboard zu öffnen.
 
 Wenn Sie sich für eine Testversion registrieren, wird eine E-Mail mit Ihren Kontoinformationen an die von Ihnen bei der Registrierung angegebene E-Mail-Adresse gesendet. Diese E-Mail bestätigt, dass Ihre Testversion aktiv ist.
 
-
-
 ## <a name="keeping-the-admin-experiences-straight"></a>Besserer Überblick für Administratoren
 
-
-Für das Intune-Azure-Portal verwenden Sie drei Portale:
-- Das Intune-Dashboard in Azure ([portal.azure.com](https://portal.azure.com)), auf dem Sie die [Funktionen von Intune im Azure-Portal](what-is-intune.md) erkunden können.
+Es gibt zwei verschiedene Portale, die Sie verwenden können:
+- Das Intune-Dashboard in Azure ([portal.azure.com](https://portal.azure.com)), auf dem Sie die [Funktionen von Intune](what-is-intune.md) erkunden können. In der Regel arbeiten Sie auf dem Intune-Dashboard.
 - Das Office 365 Admin Center ([portal.office.com](https://portal.office.com)), in dem Sie Benutzer hinzufügen und verwalten können, wenn Sie dazu nicht Azure Active Directory verwenden. Sie können auch andere Aspekte Ihres Kontos verwalten, einschließlich Abrechnung und Support.
-- Die Intune-Verwaltungskonsole ([manage.microsoft.com](https://manage.microsoft.com)), in der Sie Features, die in Azure noch nicht hinzugefügt wurden, erkunden können.
-
-Normalerweise werden Sie auf dem unten gezeigten Intune-Dashboard arbeiten. Dies ist der Ort, an dem Sie Ihre Gruppen, Richtlinien, Geräte und Apps einrichten und verwalten.
-
-Sie können vom Dashboard zur Intune-Verwaltungskonsole wechseln, indem Sie oben auf Ihrem Dashboard **Klassisches Portal** auswählen.
-
-Um zum Intune-Azure-Portal zurückzukehren, geben Sie „https://portal.azure.com“ in die Adressleiste Ihres Browsers ein, und wählen Sie aus der Liste der Dienste erneut **Intune** aus.
-
- ![Abbildung des Intune-Dashboards](./media/intune-azure-dashboard.png)
-
-
-Zum Hinzufügen und Verwalten der Benutzer und anderer Aspekte Ihres Kontos, z.B. Abrechnung und Support, verwenden Sie, wie unten beschrieben, das Office 365 Admin Center.
-
-![Abbildung des Office 365 Admin Center](./media/office-admin-center.png)
-
-Um vom Office 365 Admin Center zum Intune-Dashboard zu wechseln, geben Sie „https://portal.azure.com“ in die Adressleiste Ihres Browsers ein. Wählen Sie **Intune** aus der Liste der Dienste aus.
-
-Um von Intune zurück zum Office 365 Admin Center zu wechseln, geben Sie „https://portal.office.com“ in die Adressleiste Ihres Browsers ein. Wenn Sie bereits bei Intune angemeldet sind, werden Sie direkt zum Office 365 Admin Center weitergeleitet.
 
 ## <a name="next-steps"></a>Nächste Schritte
-
-### <a name="intune-in-the-azure-portal"></a>Intune im Azure-Portal
-Weitere Informationen zu [Intune im Azure-Portal](what-is-intune.md)
 
 ### <a name="integration-with-other-products"></a>Integration mit anderen Produkten
 Erfahren Sie mehr über die Verwendung Ihrer Azure Active Directory-Benutzerkonten mit Intune:

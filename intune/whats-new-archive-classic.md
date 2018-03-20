@@ -1,5 +1,5 @@
 ---
-title: "Archiv für Neuheiten"
+title: Neuerungen des klassischen Portalarchivs von Microsoft Intune
 description: "Archiv für Ankündigungen von Neuheiten für Microsoft Intune"
 keywords: 
 author: brenduns
@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4386f38fc1311bcb01e03de8b889a82056795ce3
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 1f259620f64d70bfce4ed60c2a96194028a12c38
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Neuerungen im klassischen Intune-Portal – vorherige Monate
 

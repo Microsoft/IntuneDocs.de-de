@@ -1,27 +1,25 @@
 ---
-title: "Benutzerdefinierte Einstellungen für macOS-Geräte"
-titleSuffix: Azure portal
-description: "Erfahren Sie etwas über die Einstellungen, die Sie in einem benutzerdefinierten macOS-Profil verwenden können.\""
+title: "Benutzerdefinierte Microsoft Intune-Einstellungen für macOS-Geräte"
+titleSuffix: 
+description: "Erfahren Sie etwas über die Einstellungen, die Sie in einem benutzerdefinierten macOS-Profil verwenden können."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88224849de0727418197fcfdb96cac3b4c2ca0e7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5ccc9d48eb16ce155bbed2bbdf38793b8f3bdfda
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="custom-settings-for-macos-devices-in-microsoft-intune"></a>Benutzerdefinierte Einstellungen für macOS-Geräte in Microsoft Intune
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-macos"></a>Benutzerdefinierte Microsoft Intune-Geräteeinstellungen für macOS-Geräte
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,10 +29,10 @@ Diese Funktion ermöglicht die Zuweisung von macOS-Einstellungen, die nicht mit 
 
 
 1. Anweisungen zu den ersten Schritten finden Sie unter [Konfigurieren von benutzerdefinierten Geräteeinstellungen in Microsoft Intune](custom-settings-configure.md).
-2. Geben Sie auf dem Blatt **Profil erstellen** Folgendes an:
+2. Konfigurieren Sie im Bereich **Benutzerdefiniertes Konfigurationsprofil** die folgenden Einstellungen:
 
-- **Name des benutzerdefinierten Konfigurationsprofils:** Geben Sie einen Namen für die Richtlinie an, der auf dem Gerät und in Intune-Status angezeigt wird.
+- **Name des benutzerdefinierten Konfigurationsprofils:** Geben Sie einen Namen für die Richtlinie an, der auf dem Gerät und im Intune-Status angezeigt wird.
 - **Konfigurationsprofildatei:** Suchen Sie das mit Apple Configurator erstellte Konfigurationsprofil.
 Stellen Sie sicher, dass die Einstellungen, die Sie aus dem Apple Configurator-Tool exportieren, mit der macOS-Version auf den Geräten kompatibel sind, denen Sie die benutzerdefinierte macOS-Richtlinie zuweisen. Um Informationen zum Korrigieren inkompatibler Einstellungen zu erhalten, suchen Sie auf der [Apple Developer-Website](https://developer.apple.com/) nach der **Referenz zu Konfigurationsprofilen** und der **Referenz zum Protokoll für die Verwaltung mobiler Geräte**.
 
-Die importierte Datei wird im Bereich **Dateiinhalt** des Blatts angezeigt.
+Die importierte Datei wird in diesem Bereich unter **Dateiinhalt** angezeigt.

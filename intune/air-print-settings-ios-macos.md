@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f55d05dd39fca02e72535cbbff9afb8d575ed9f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7a8ef24a9e6946145bf69d279566f3b736e6efa1
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>AirPrint-Einstellungen für iOS- und macOS-Geräte
 
@@ -40,8 +40,9 @@ Mit diesem Verfahren können Sie AirPrint-Informationen zur AirPrint-Nutzlast hi
 
 ## <a name="configure-an-airprint-profile"></a>Konfigurieren eines AirPrint-Profils
 
-1. Wählen Sie auf dem Blatt **Gerätefunktionen** die Option **AirPrint** aus.
-2. Um ein AirPrint-Ziel hinzuzufügen, geben Sie auf dem Blatt **AirPrint** die **IP-Adresse** und den **Ressourcenpfad** des Ziels ein, und klicken Sie auf **Hinzufügen**.
+1. Navigieren Sie von [Intune im Azure-Portal](https://portal.azure.com) zu [**Gerätefeatures** im Gerätekonfigurationsbereich](device-features-configure.md). 
+1. Klicken Sie im Bereich **Gerätefeatures** auf die Option **AirPrint**.
+2. Geben Sie im Bereich **AirPrint** die **IP-Adresse** und den **Ressourcenpfad** des Ziels ein, und klicken Sie auf **Hinzufügen**, um ein AirPrint-Ziel hinzuzufügen.
 3. Fügen Sie so viele Ziele hinzu, wie Sie benötigen. Wenn Sie fertig sind, wählen Sie **OK** aus.
 
 Sie können auch eine Liste mit Druckern aus einer Datei mit durch Trennzeichen getrennten Werten (CSV-Datei) importieren oder die Liste exportieren.

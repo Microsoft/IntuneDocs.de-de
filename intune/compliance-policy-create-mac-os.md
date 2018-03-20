@@ -1,12 +1,12 @@
 ---
-title: "So erstellen Sie eine Konformitätsrichtlinie für macOS"
-titleSuffix: Azure portal
-description: "Erfahren Sie, wie Sie eine Konformitätsrichtlinie für macOS-Geräte herstellen."
+title: "Erstellen einer Konformitätsrichtlinie für macOS-Geräte in Microsoft Intune"
+titleSuffix: 
+description: "Erstellen einer Konformitätsrichtlinie für macOS-Geräte in Microsoft Intune, damit Sie die Anforderungen angeben können, die ein Gerät im Hinblick auf Konformität erfüllen muss."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,18 @@ ms.technology:
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Erstellen einer Gerätekonformitätsrichtlinie für macOS-Geräte in Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Eine Intune-Konformitätsrichtlinie für macOS-Geräte gibt die Regeln und Einstellungen an, die macOS-Geräte erfüllen müssen, um als konform angesehen zu werden. Sie können diese Richtlinien mit bedingten Zugriff verwenden, um Zugriff auf Unternehmensressourcen zu gewähren oder zu blockieren. Sie können auch Berichte zu Geräten abrufen und Maßnahmen gegen die Nichtkonformität vornehmen. Sie können Gerätekonformitätsrichtlinien für jede Plattform im Intune Azure-Portal erstellen.
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
@@ -108,17 +110,17 @@ Sie haben verschiedene Kategorien mit unterschiedlichen Einstellungen, aus denen
 
 2. Sobald Sie erfolgreich angemeldet sind, wird das **Azure-Dashboard** angezeigt.
 
-3. Wählen Sie im linken Menü **Weitere Dienste** aus, und geben Sie in das Filtertextfeld die Zeichenfolge **Intune** ein.
+3. Klicken Sie im Menü links auf **Alle Dienste**, und geben Sie in das Filtertextfeld **Intune** ein.
 
 4. Wählen Sie **Intune** aus. Das **Intune-Dashboard** wird angezeigt.
 
 5. Wählen Sie **Gerätekompatibilität** aus, dann **Richtlinien** unter **Verwaltung**.
 
-6. Wählen Sie **Richtlinie erstellen** aus.
+6. Klicken Sie auf **Richtlinie erstellen**.
 
 7. Geben Sie einen Namen und eine Beschreibung ein, und wählen Sie die Plattform aus, auf die Sie diese Richtlinie anwenden möchten.
 
-8. Das Blatt **macOS-Konformitätsrichtlinie** wird geöffnet. Wählen Sie die Kategorien der Konformitätsrichtlinieneinstellung **Sicherheit**, **Geräteintegrität** und **Geräteeigenschaften** aus, um Ihre Einstellungen anzugeben.
+8. Der Bereich **Mac-Konformitätsrichtlinie** wird geöffnet. Wählen Sie die Kategorien **Sicherheit**, **Geräteintegrität** und **Geräteeigenschaften** der Konformitätsrichtlinieneinstellung aus, um Ihre Einstellungen anzugeben.
 
 10. Sobald Sie mit der Auswahl Ihrer Einstellungen fertig sind, klicken Sie unter jeder Kategorie der Konformitätsrichtlinieneinstellung auf **OK**.
 
@@ -126,15 +128,15 @@ Sie haben verschiedene Kategorien mit unterschiedlichen Einstellungen, aus denen
 
 ## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen
 
-Wählen Sie zum Zuweisen einer Konformitätsrichtlinie zu Benutzern eine Richtlinie aus, die Sie konfiguriert haben. Vorhandene Richtlinien finden Sie auf dem Blatt **Kompatibilitätsrichtlinien**.
+Wählen Sie zum Zuweisen einer Konformitätsrichtlinie zu Benutzern eine Richtlinie aus, die Sie konfiguriert haben. Vorhandene Richtlinien finden Sie im Bereich **Device compliance - Policies** (Gerätekonformitätsrichtlinien).
 
-1. Wählen Sie die Gerätekonformitätsrichtlinie aus, die Sie Benutzern zuweisen möchten, und abschließend **Zuweisungen** aus. Damit öffnen Sie das Blatt, auf dem Sie **Azure Active Directory-Sicherheitsgruppen** auswählen und der Richtlinie zuweisen können.
+1. Wählen Sie die Gerätekonformitätsrichtlinie aus, die Sie Benutzern zuweisen möchten, und abschließend **Zuweisungen** aus. Damit öffnen Sie den Bereich, in dem Sie **Azure Active Directory-Sicherheitsgruppen** auswählen und der Richtlinie zuweisen können.
 
-2. Wählen Sie **Gruppen auswählen** aus, um das Blatt mit den Azure AD-Sicherheitsgruppen zu öffnen.
+2. Klicken Sie auf **Ausgewählte Gruppen**, um den Bereich mit den Azure AD-Sicherheitsgruppen zu öffnen.
 
-3. Wählen Sie **Auswählen** und dann **Speichern** aus, um die Gerätekonformitätsrichtlinie den Azure AD-Sicherheitsgruppen zuzuweisen.
+3. Klicken Sie auf **Speichern**, um die Gerätekonformitätsrichtlinie den Azure AD-Sicherheitsgruppen zuzuweisen.
 
-4. Sobald Sie mit der Zuweisung der Gerätekonformitätsrichtlinie an Ihre Gruppen fertig sind, können Sie das Blatt **Zuweisungen** schließen.
+4. Sobald Sie mit der Zuweisung der Gerätekonformitätsrichtlinie an Ihre Gruppen fertig sind, können Sie den Bereich **Zuweisungen** schließen.
 
     > [!TIP]
     > Standardmäßig überprüfen Geräte alle acht Stunden die Konformität. Benutzer können diesen Prozess jedoch über die Intune-Unternehmensportal-App erzwingen.

@@ -1,29 +1,30 @@
 ---
-title: "Einstellungen für Geräteeinschränkungen für Windows 8.1 in Intune"
-titleSuffix: Azure portal
-description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows 8.1-Geräten kennen."
+title: "Einstellungen für Geräteeinschränkungen für Windows 8.1-Geräte in Microsoft Intune"
+titleSuffix: 
+description: "In diesem Artikel erhalten Sie Informationen zu den Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows 8.1-Geräten."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c96340255e9b71694278b5a396d907a6212541d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8cfaad3c35a0035546e5ebb7a55b9978da8025d8
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Windows 8.1 und höher in Microsoft Intune
+# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Windows 8.1 und höher in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+In diesem Artikel erhalten Sie Informationen zu den Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für Geräte unter Windows 8.1 und höher konfigurieren können.
+
 
 ## <a name="general"></a>Allgemein
 
@@ -62,7 +63,7 @@ Wenn Sie die Verschlüsselung auf einem Gerät erzwingen, ist der Wiederherstell
 -   **Hohe Sicherheit für eingeschränkte Sites:** Konfiguriert die Sicherheitsstufe für Zone eingeschränkter Sites.
 -   **Menüzugriff im Unternehmensmodus:** Ermöglicht Benutzern, auf die Menüoptionen für den Unternehmensmodus von Internet Explorer zuzugreifen.
 Wenn Sie diese Einstellung ausgewählt haben, können Sie auch einen **Speicherort des Protokollberichts** angeben. Dieser enthält eine URL zu einem Bericht, in dem Websites angezeigt werden, für die Benutzer Zugriff im Unternehmensmodus aktiviert haben.
--   **Speicherort der Websiteliste für den Unternehmensmodus:** Gibt den Speicherort der Liste der Websites an, die den Unternehmensmodus verwenden, wenn er aktiv ist.
+-   **Speicherort der Websiteliste im Unternehmensmodus:** Gibt den Speicherort der Liste der Websites an, die den Unternehmensmodus verwenden, wenn er aktiv ist.
 
 ## <a name="cellular"></a>Mobilfunk
 -   **Datenroaming:** Erlaubt das Datenroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.

@@ -1,29 +1,29 @@
 ---
-title: "Intune-Geräteeinschränkungen für Windows 10 Team"
-titlesuffix: Azure portal
+title: "Windows Intune-Geräteeinschränkungen für Windows 10 Team"
+titlesuffix: 
 description: "In diesem Artikel erfahren Sie etwas über die verfügbaren Geräteeinschränkungen für Windows 10 Team-Geräte."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 677c41a2-5344-4c52-85f0-809dce3a5d5b
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3648f8b273f666d1898226f3da8580e55a6bc6f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 69cceda6857412f7e9a50c58d075caeee4ea9c20
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Windows 10 Team in Microsoft Intune
+# <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Windows 10 Team in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+In diesem Artikel erhalten Sie Informationen zu den Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für Windows 10 Team-Geräte konfigurieren können.
 
 
 ## <a name="apps-and-experience"></a>Apps und Benutzerfreundlichkeit
@@ -47,7 +47,7 @@ Sie müssen eine **Arbeitsbereichs-ID** und einen **Arbeitsbereichsschlüssel** 
 
 - **PIN für Funkprojektion:** Gibt an, ob Sie eine PIN eingeben müssen, bevor Sie die drahtlosen Projektionsfunktionen des Geräts verwenden können.
 - **Miracast-Funkprojektion:** Aktivieren Sie diese Option, wenn Sie auf dem Gerät mit Windows 10-Team erlauben möchten, für Miracast aktivierte Geräte zum Projizieren zu verwenden.
-- **Miracast – drahtloser Projektionskanal**: Wählen Sie den Miracast-Kanal, der zum Herstellen der Verbindung verwendet wird.
+- **Kanal für die Miracast-Funkprojektion**: Wählen Sie den Miracast-Kanal aus, der zum Herstellen der Verbindung verwendet wird.
 
 
 ## <a name="next-steps"></a>Nächste Schritte

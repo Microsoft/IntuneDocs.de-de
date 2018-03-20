@@ -1,12 +1,12 @@
 ---
-title: "Überwachen der Kompatibilität mit bedingtem Zugriff bei Exchange lokal und Exchange Online"
-titlesuffix: Azure portal
-description: "Überwachen der Kompatibilität mit bedingtem Zugriff bei Exchange lokal und Exchange Online durch das Azure-Portal für Intune"
+title: "Überwachen von bedingtem Zugriff auf Exchange in Microsoft Intune"
+titlesuffix: 
+description: "Überwachen der Konformität mit bedingtem Zugriff bei einer lokalen Installation von Exchange und Exchange Online durch das Azure-Portal für Intune."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2025bbb008be090420ebb3778fc37a0b1790608b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 932dfe32c6df5741615d9db9f303aaee7785d3a3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Überwachen der Konformität mit bedingtem Zugriff für Exchange lokal und Exchange Online in Intune
 
@@ -36,23 +36,23 @@ Ab Version Intune 1704 können Administratoren Berichtsinformationen in Zusammen
 
 2.  Sobald Sie erfolgreich angemeldet sind, wird das **Azure-Dashboard** angezeigt.
 
-3.  Wählen Sie im linken Menü **Weitere Dienste** aus, und geben Sie in das Filtertextfeld die Zeichenfolge **Intune** ein.
+3.  Klicken Sie im Menü links auf **Alle Dienste**, und geben Sie in das Filtertextfeld **Intune** ein.
 
 4.  Wählen Sie **Intune** aus. Das **Intune-Dashboard** wird angezeigt.
 
-5.  Wählen Sie **Bedingter Zugriff** und dann **Übersicht** aus.
+5.  Klicken Sie auf **Bedingter Zugriff** > **Übersicht**.
 
-6.  Wählen Sie im Diagramm einen der drei Bereiche (**Blockiert**, **Unter Quarantäne** oder **Zugelassen**) aus, um Ihre Berichte zur Kompatibilität mit bedingtem Zugriff anzuzeigen.
+6.  Wählen Sie im Diagramm einen der drei Bereiche (**Zugelassen**, **Blockiert** oder **Quarantäne**) aus, um Ihre Berichte zur Konformität mit bedingtem Zugriff anzuzeigen.
 
-    ![Dashboard für den bedingten Zugriff](./media/CA-reporting-intune-1.png)
+    ![Bild des Dashboards für den bedingten Zugriff](./media/CA-reporting-intune-1.png)
 
 Nachdem Sie einen der drei Bereiche ausgewählt haben, können Sie weitere Details über zugelassene, blockierte oder unter Quarantäne gestellte Geräte sehen.
 
-Sie können auch ein Drilldown auf bestimmte Geräte ausführen, um weitere Details anzuzeigen. Beispielsweise ist das in der nachfolgenden Abbildung ausgewählte Gerät blockiert. Intune bietet Ihnen die Möglichkeit, Unternehmensdaten auf dem Blatt zum Bericht zur Kompatibilität mit bedingtem Zugriff zu entfernen.
+Sie können auch ein Drilldown auf bestimmte Geräte ausführen, um weitere Details anzuzeigen. Beispielsweise ist das in der nachfolgenden Abbildung ausgewählte Gerät blockiert. Intune bietet Ihnen die Möglichkeit, Unternehmensdaten aus dem Bereich zum Bericht zur Konformität mit bedingtem Zugriff zu entfernen.
 
-![Bericht mit Informationen zu Geräten mit bedingtem Zugriff](./media/CA-reporting-intune-3.png)
+![Bild des Berichts mit Informationen zu den Gerätedetails mit bedingtem Zugriff](./media/CA-reporting-intune-3.png)
 
-Auf dem Blatt mit den Gerätedetails finden Sie weitere Informationen:
+Im Bereich mit den Gerätedetails finden Sie weitere Informationen:
 
 -   **Übersicht:** Folgende Eigenschaften des Geräts werden angezeigt: Betriebssystemversion, Gerätemodell, Besitz, Seriennummer, Gerätehersteller, Telefonnummer und Zeitpunkt, an dem das Gerät zuletzt eingecheckt wurde.
 

@@ -1,36 +1,36 @@
 ---
-title: "WLAN-Einstellungen für Android-Geräte in Intune"
-titleSuffix: Azure portal
-description: "Erfahren Sie mehr über die Intune-Einstellungen zum Konfigurieren von WLAN-Verbindungen auf Android und Android for Work-Geräten."
+title: "Konfigurieren der WLAN-Einstellungen von Microsoft Intune für Android-Geräte"
+titleSuffix: 
+description: "Erfahren Sie mehr über die Intune-Einstellungen zum Konfigurieren von WLAN-Verbindungen auf Android- und Android for Work-Geräten."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 103e17a4-2993-4359-b340-73e2acf4cf7d
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a20ebf026850f28888cd63eb43396a12430bb3cd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d327c2d3cadf441f74e35af86b19438159225771
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="wi-fi-settings-for-android-and-android-for-work-devices-in-microsoft-intune"></a>WLAN-Einstellungen für Android- und Android for Work-Geräte in Microsoft Intune
+# <a name="configure-wi-fi-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Konfigurieren von WLAN-Einstellungen in Microsoft Intune für Android- und Android for Work-Geräte  
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+In diesem Artikel werden die WLAN-Einstellungen veranschaulicht, die Sie in Microsoft Intune für Android- und Android for Work-Geräte konfigurieren können.
 
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>WLAN-Einstellungen für Basic und Enterprise-Profile
 
 Die folgenden WLAN-Einstellungen sind für Android- und Android for Work-Geräte verfügbar:
 
 - **Netzwerkname:** Geben Sie einen Namen für diese WLAN-Verbindung ein. Dies ist der Name, der Benutzern in der Liste der verfügbaren WLAN-Verbindungen auf ihren Geräten angezeigt wird.
-- **SSID:** Abkürzung für Service Set Identifier. Dies ist der tatsächlich Name des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern werden jedoch nur die Netzwerknamen angezeigt, die Sie oben erstellt haben, wenn sie die Verbindung auswählen.
+- **SSID:** Abkürzung für Service Set Identifier. Dies ist der richtige Name des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern wird beim Auswählen der Verbindung jedoch nur der Netzwerkname angezeigt, den Sie konfiguriert haben.
 - **Automatisch verbinden:** Bei Aktivierung kann das Gerät jederzeit eine Verbindung herzustellen, wenn es sich im Bereich des Netzwerks befindet.
 - **Ausgeblendetes Netzwerk:** Verhindert, dass dieses Netzwerk in der Liste der verfügbaren Netzwerke auf dem Gerät angezeigt wird.
 
@@ -50,7 +50,7 @@ Die folgenden WLAN-Einstellungen sind für Android- und Android for Work-Geräte
 
 |Name der Einstellung|Weitere Informationen|Verwendungsgrund|
 |-------------|---------------|-----------|
-|**Zertifikatservername(n)**|Geben Sie einen oder mehrere allgemeine Namen an, die in den von der vertrauenswürdigen Zertifizierungsstelle (CA) ausgestellten Zertifikaten verwendet werden. Wenn Sie diese Informationen angeben, können Sie den dynamischen Vertrauensstellungsdialog umgehen, der auf Endbenutzergeräten bei der Verbindungsherstellung mit diesem WLAN angezeigt wird.|Der EAP-Typ ist **EAP-TLS** oder **EAP-TTLS**.|
+|**Zertifikatservername(n)**|Geben Sie einen oder mehrere allgemeine Namen an, die in den von der vertrauenswürdigen Zertifizierungsstelle (CA) ausgestellten Zertifikaten verwendet werden. Wenn Sie diese Informationen angeben, können Sie den dynamischen Vertrauensstellungsdialog umgehen, der auf Benutzergeräten bei der Herstellung einer Verbindung mit diesem WLAN-Netzwerk angezeigt wird.|Der EAP-Typ ist **EAP-TLS** oder **EAP-TTLS**.|
 |**Stammzertifikat zur Servervalidierung**|Wählen Sie das vertrauenswürdige Stammzertifikatprofil zur Authentifizierung der Verbindung aus. |Der EAP-Typ ist **EAP-TLS**, **EAP-TTLS** oder **PEAP**.|
 |**Identitätsschutz (äußere Identität)**|Geben Sie den Text ein, der als Antwort auf eine EAP-Identity-Request gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.|Der EAP-Typ ist **PEAP**.|
 
@@ -61,4 +61,4 @@ Die folgenden WLAN-Einstellungen sind für Android- und Android for Work-Geräte
 |Name der Einstellung|Weitere Informationen|Verwendungsgrund|
 |----------|--------------|----------|
 |**Clientzertifikat zur Clientauthentifizierung (Identitätszertifikat)**|Wählen Sie das SCEP- oder PKCS-Zertifikatprofil zur Authentifizierung der Verbindung aus.|Der EAP-Typ ist **EAP-TLS**.|
-|**Authentifizierungsmethode**|Wählen Sie die Authentifizierungsmethode für die Verbindung aus:<br>- **Zertifikate** zur Auswahl von SCEP oder PKCS als Clientzertifikat, das als Identitätszertifikat dem Server vorgelegt wird<br><br>- **Benutzername und Kennwort** zur Angabe einer anderen Authentifizierungsmethode <br><br>Bei Auswahl von **Benutzername und Kennwort**, konfigurieren Sie noch Folgendes:<br><br>-  **Nicht-EAP-Methode (innere Identität)**. Wählen Sie anschließend aus, wie Sie die Verbindung authentifizieren möchten:<br>- **Keine**<br>- **Unverschlüsseltes Kennwort (PAP)**<br>- **Challenge Handshake Authentication-Protokoll (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP, Version 2 (MS-CHAP v2)**<br>Die verfügbaren Optionen hängen vom ausgewählten EAP-Typ ab.<br><br>**und**<br><br>- **Identitätsschutz aktivieren (äußere Identität)**. Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.|Der EAP-Typ ist **EAP-TTLS** oder **PEAP**.|
+|**Authentifizierungsmethode**|Wählen Sie die Authentifizierungsmethode für die Verbindung aus:<br>- **Zertifikate** zur Auswahl von SCEP oder PKCS als Clientzertifikat, das als Identitätszertifikat dem Server vorgelegt wird<br><br>- **Benutzername und Kennwort** zur Angabe einer anderen Authentifizierungsmethode <br><br>Bei Auswahl von **Benutzername und Kennwort**, konfigurieren Sie noch Folgendes:<br><br>-  **Nicht-EAP-Methode (innere Identität):** Wählen Sie anschließend aus, wie Sie die Verbindung authentifizieren möchten:<br>- **Keine**<br>- **Unverschlüsseltes Kennwort (PAP)**<br>- **Challenge Handshake Authentication-Protokoll (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP, Version 2 (MS-CHAP v2)**<br>Die verfügbaren Optionen hängen vom ausgewählten EAP-Typ ab.<br><br>**und**<br><br>- **Identitätsschutz aktivieren (äußere Identität)**. Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.|Der EAP-Typ ist **EAP-TTLS** oder **PEAP**.|

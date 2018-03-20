@@ -1,27 +1,25 @@
 ---
-title: "Benutzerdefinierte Intune-Einstellungen für iOS-Geräte"
+title: "Benutzerdefinierte Microsoft Intune-Einstellungen für iOS-Geräte"
 titleSuffix: Azure portal
-description: "Erfahren Sie etwas über die Einstellungen, die Sie in einem benutzerdefinierten iOS-Profil verwenden können.\""
+description: "Informationen zu den Einstellungen, die Sie in einem benutzerdefinierten iOS-Profil verwenden können."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6da8caa8-65c2-4f47-842f-9570dcb1ac22
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 761b19de8442e88717a5dcd52f7f0375bace91da
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 40e34a2e22c9349cad63d813b892863e0e8a2933
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-custom-settings-for-ios-devices"></a>Benutzerdefinierte Microsoft Intune-Einstellungen für iOS-Geräte
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-ios"></a>Benutzerdefinierte Microsoft Intune-Geräteeinstellungen für iOS-Geräte
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,10 +29,10 @@ Diese Funktion ermöglicht die Zuweisung von iOS-Einstellungen, die nicht mit an
 
 
 1. Anweisungen zu den ersten Schritten finden Sie unter [Konfigurieren von benutzerdefinierten Geräteeinstellungen in Microsoft Intune](custom-settings-configure.md).
-2. Geben Sie auf dem Blatt **Profil erstellen** Folgendes an:
+2. Konfigurieren Sie im Bereich **Benutzerdefiniertes Konfigurationsprofil** die folgenden Einstellungen:
 
-- **Name des benutzerdefinierten Konfigurationsprofils:** Geben Sie einen Namen für die Richtlinie an, der auf dem Gerät und in Intune-Status angezeigt wird.
+- **Name des benutzerdefinierten Konfigurationsprofils:** Geben Sie einen Namen für die Richtlinie an, der auf dem Gerät und im Intune-Status angezeigt wird.
 - **Konfigurationsprofildatei:** Suchen Sie das mit Apple Configurator erstellte Konfigurationsprofil.
 Stellen Sie sicher, dass die Einstellungen, die Sie aus dem Apple Configurator-Tool exportieren, mit der iOS-Version auf den Geräten kompatibel sind, denen Sie die benutzerdefinierte iOS-Richtlinie zuweisen. Um Informationen zum Korrigieren inkompatibler Einstellungen zu erhalten, suchen Sie auf der [Apple Developer-Website](https://developer.apple.com/) nach der **Referenz zu Konfigurationsprofilen** und der **Referenz zum Protokoll für die Verwaltung mobiler Geräte**.
 
-Die importierte Datei wird im Bereich **Dateiinhalt** des Blatts angezeigt.
+Die importierte Datei wird in diesem Bereich unter **Dateiinhalt** angezeigt.

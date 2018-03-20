@@ -1,40 +1,40 @@
 ---
-title: "WLAN-Einstellungen für macOS-Geräte in Intune"
-titleSuffix: Azure portal
+title: "WLAN-Einstellungen von Microsoft Intune für macOS-Geräte"
+titleSuffix: 
 description: "Erfahren Sie mehr über die Intune-Einstellungen, die Sie zum Konfigurieren von WLAN-Verbindungen auf macOS-Geräten verwenden können."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 322a38d5-21f5-48ee-bc59-0a4f9da78d38
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a48671d738a2697202b98073502433ed0888316
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 25cc8cd550567d6edc63f1cab416bdb7d978eb52
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>WLAN-Einstellungen für macOS-Geräte in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+In diesem Artikel werden die WLAN-Einstellungen veranschaulicht, die Sie in Microsoft Intune für macOS-Geräte konfigurieren können.
+
 ## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>WLAN-Einstellungen für Basic und Enterprise-Profile
 
 - **Netzwerkname:** Geben Sie einen Namen für diese WLAN-Verbindung ein. Dies ist der Name, der Benutzern in der Liste der verfügbaren WLAN-Verbindungen auf ihren Geräten angezeigt wird.
-- **SSID:** Abkürzung für Service Set Identifier. Dies ist der tatsächlich Name des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern werden jedoch nur die Netzwerknamen angezeigt, die Sie oben erstellt haben, wenn sie die Verbindung auswählen.
+- **SSID:** Abkürzung für Service Set Identifier. Dies ist der richtige Name des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern wird beim Auswählen der Verbindung jedoch nur der Netzwerkname angezeigt, den Sie konfiguriert haben.
 - **Automatisch verbinden:** Bei Aktivierung kann das Gerät jederzeit eine Verbindung herzustellen, wenn es sich im Bereich des Netzwerks befindet.
 - **Ausgeblendetes Netzwerk:** Verhindert, dass dieses Netzwerk in der Liste der verfügbaren Netzwerke auf dem Gerät angezeigt wird.
 - **Proxyeinstellungen:** Wählen Sie aus Folgendem aus:
-    - **Keine:** Es werden keine Proxyeinstellungen konfiguriert.
+    - **Keine**: Es sind keine Proxyeinstellungen konfiguriert.
     - **Manuel:** Geben Sie die **Proxyserveradresse** (als IP-Adresse) und die zugehörige **Portnummer** ein.
-    - **Automatisch:** Verwenden Sie eine Konfigurationsdatei, um den Proxyserver zu konfigurieren. Geben Sie die **Proxyserver-URL** ein (z.B. **http://proxy.contoso.com**), unter der die Konfigurationsdatei zu finden ist.
+    - **Automatisch:** Verwenden Sie eine Konfigurationsdatei, um den Proxyserver zu konfigurieren. Geben Sie die **Proxyserver-URL** ein (z.B. **http://proxy.contoso.com), unter der die Konfigurationsdatei zu finden ist.
 
 ## <a name="wi-fi-settings-for-basic-profiles-only"></a>WLAN-Einstellungen für Basic-Profile
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 01/25/2018
 
 |Name der Einstellung|Weitere Informationen|Verwendungsgrund|
 |--------------|-------------|----------|
-|**Zertifikatservername(n)**|Geben Sie einen oder mehrere allgemeine Namen an, die in den von der vertrauenswürdigen Zertifizierungsstelle (CA) ausgestellten Zertifikaten verwendet werden. Wenn Sie diese Informationen angeben, können Sie den dynamischen Vertrauensstellungsdialog umgehen, der auf Endbenutzergeräten bei der Verbindungsherstellung mit diesem WLAN angezeigt wird.|Der EAP-Typ ist **EAP-TLS**, **EAP-TTLS** oder **PEAP**.|
+|**Zertifikatservername(n)**|Geben Sie einen oder mehrere allgemeine Namen an, die in den von der vertrauenswürdigen Zertifizierungsstelle (CA) ausgestellten Zertifikaten verwendet werden. Wenn Sie diese Informationen angeben, können Sie den dynamischen Vertrauensstellungsdialog umgehen, der auf Benutzergeräten bei der Verbindungsherstellung mit diesem WLAN-Netzwerk angezeigt wird.|Der EAP-Typ ist **EAP-TLS**, **EAP-TTLS** oder **PEAP**.|
 |**Stammzertifikat zur Servervalidierung**|Wählen Sie das vertrauenswürdige Stammzertifikatprofil zur Authentifizierung der Verbindung aus. |Der EAP-Typ ist **EAP-TLS**, **EAP-TTLS** oder **PEAP**.|
 |**Identitätsschutz (äußere Identität)**|Geben Sie den Text ein, der als Antwort auf eine EAP-Identity-Request gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.|Der EAP-Typ ist **PEAP**.|
 
@@ -76,4 +76,4 @@ ms.lasthandoff: 01/25/2018
 |Name der Einstellung|Weitere Informationen|Verwendungsgrund|
 |--------------|-------------|----------|
 |**Clientzertifikat zur Clientauthentifizierung (Identitätszertifikat)**|Wählen Sie das SCEP- oder PKCS-Zertifikatprofil zur Authentifizierung der Verbindung aus.|Der EAP-Typ ist **EAP-TLS**.|
-|**Authentifizierungsmethode**|Wählen Sie die Authentifizierungsmethode für die Verbindung aus:<br>- **Zertifikate** zur Auswahl von SCEP oder PKCS als Clientzertifikat, das als Identitätszertifikat dem Server vorgelegt wird<br><br>- **Benutzername und Kennwort** zur Angabe einer anderen Authentifizierungsmethode <br><br>Bei Auswahl von **Benutzername und Kennwort**, konfigurieren Sie noch Folgendes:<br><br>-  **Nicht-EAP-Methode (innere Identität)**. Wählen Sie anschließend aus, wie Sie die Verbindung authentifizieren möchten:<br>- **Keine**<br>- **Unverschlüsseltes Kennwort (PAP)**<br>- **Challenge Handshake Authentication-Protokoll (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP, Version 2 (MS-CHAP v2)**<br>Die verfügbaren Optionen hängen vom ausgewählten EAP-Typ ab.<br><br>**und**<br><br>- **Identitätsschutz aktivieren (äußere Identität)**. Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.|Der EAP-Typ ist **EAP-TTLS** oder **PEAP**.|
+|**Authentifizierungsmethode**|Wählen Sie die Authentifizierungsmethode für die Verbindung aus:<br>- **Zertifikate** zur Auswahl von SCEP oder PKCS als Clientzertifikat, das als Identitätszertifikat dem Server vorgelegt wird<br><br>- **Benutzername und Kennwort** zur Angabe einer anderen Authentifizierungsmethode <br><br>Bei Auswahl von **Benutzername und Kennwort**, konfigurieren Sie noch Folgendes:<br><br>-  **Nicht-EAP-Methode (innere Identität):** Wählen Sie anschließend aus, wie Sie die Verbindung authentifizieren möchten:<br>- **Keine**<br>- **Unverschlüsseltes Kennwort (PAP)**<br>- **Challenge Handshake Authentication-Protokoll (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP, Version 2 (MS-CHAP v2)**<br>Die verfügbaren Optionen hängen vom ausgewählten EAP-Typ ab.<br><br>**und**<br><br>- **Identitätsschutz aktivieren (äußere Identität)**. Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.|Der EAP-Typ ist **EAP-TTLS** oder **PEAP**.|

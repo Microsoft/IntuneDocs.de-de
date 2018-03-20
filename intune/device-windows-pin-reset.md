@@ -1,12 +1,11 @@
 ---
-title: "Zurücksetzen der Kennung auf Windows-Geräten mit Intune"
-titlesuffix: Azure portal
-description: "In diesem Artikel erfahren Sie, wie Sie mithilfe von Intune die Kennung auf Windows-Geräten mit dem integrierten PIN-Zurücksetzungsdienst von Microsoft zurücksetzen können."
+title: "Zurücksetzen der Kennung auf Windows-Geräten mit Microsoft Intune: Azure | Microsoft-Dokumentation"
+description: "Gehen Sie zum Zurücksetzen der Kennung auf Windows-Geräten wie folgt vor: Installieren Sie den PIN-Zurücksetzungsdienst und den PIN-Zurücksetzungsclient von Microsoft, erstellen Sie eine Geräterichtlinie mit Ihrer Azure Active Directory-Verzeichnis-ID, und setzen Sie die Kennung im Azure-Portal mithilfe von Microsoft-Intune zurück."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,60 +13,59 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6149eeb3da2da3be3a137845eee5a0a515a4e39
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 14a5654e72352b9dc8ebd51e6c926ea963e7432d
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/09/2018
 ---
-# <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Zurücksetzen der Kennung auf Windows-Geräten mit dem integrierten PIN-Zurücksetzungsdienst von Microsoft mithilfe von Intune
+# <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Zurücksetzen der Kennung auf Windows-Geräten mit Intune
 
-Die Zurücksetzungsfunktion der Kennung ist bei Windows-Geräten in den PIN-Zurücksetzungsdienst von Microsoft integriert, mit dem Sie für Geräte, auf denen Windows 10 Mobile ausgeführt wird, eine neue Kennung generieren können. Auf den Geräten muss das Windows 10 Creators Update oder höher ausgeführt werden.
+Sie können die Kennung für Windows-Geräte zurücksetzen. Das Feature zum Zurücksetzen der Kennung verwendet den PIN-Zurücksetzungsdienst, um eine neue Kennung für Geräte zu erstellen, auf denen Windows 10 Mobile ausgeführt wird. 
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 
-- Windows – Unterstützt unter Windows 10 Creators Update und höher (mit Azure AD verknüpft)
-- Windows Phone – Nicht unterstützt
-- iOS – Nicht unterstützt
-- macOS – Nicht unterstützt
-- Android – Nicht unterstützt
+- Windows 10 Creators Update und höher (in Azure AD eingebunden)
 
+Die folgenden Plattformen werden **nicht** unterstützt:
+- Windows Phone
+- iOS
+- macOS
+- Android
 
-## <a name="before-you-start"></a>Vorbereitung
+## <a name="authorize-the-pin-reset-services"></a>Autorisieren des PIN-Zurücksetzungsdiensts
 
-Bevor Sie die Kennung auf von Ihnen verwalteten Windows-Geräten remote zurücksetzen können, müssen Sie den PIN-Zurücksetzungsdienst in Ihren Intune-Mandanten integrieren und die Geräte, die Sie verwalten, konfigurieren. Gehen Sie dazu folgendermaßen vor:
+Integrieren Sie den PIN-Zurücksetzungsdienst in Ihren Intune-Mandanten, um die Kennung auf Windows-Geräten zurückzusetzen.
 
-### <a name="connect-intune-with-the-pin-reset-service"></a>Verbinden von Intune mit dem PIN-Zurücksetzungsdienst
+1. Navigieren Sie zum [Microsoft PIN Reset Service production](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent) (Microsoft-PIN-Zurücksetzungsdienst für die Produktion), und melden sich mit dem Mandantenadministratorkonto an.
+2. Klicken Sie auf **Akzeptieren**, um dem PIN-Zurücksetzungsdienst zu erlauben, auf Ihr Konto zuzugreifen: ![Akzeptieren Sie die Berechtigungsanforderung des PIN-Zurücksetzungsdiensts](./media/pin-reset-service-home-screen.png).
+3. Navigieren Sie zum [Client des PIN-Zurücksetzungsdiensts von Microsoft](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), und melden sich mit dem Mandantenadministratorkonto an. Klicken Sie auf **Akzeptieren**, um dem PIN-Zurücksetzungsclient zu erlauben, auf Ihr Konto zuzugreifen.
+4. Bestätigen Sie im [Azure-Portal](https://portal.azure.com), dass die PIN-Zurücksetzungsdienste unter „Enterprise applications (All applications)“ (Unternehmensanwendungen (Alle Anwendungen)) aufgelistet sind: ![Berechtigungsseite für den PIN-Zurücksetzungsdienst](./media/pin-reset-service-application.png).
 
-1. Melden Sie sich auf der [Website zur Integration des PIN-Zurücksetzungsdiensts von Microsoft](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent) an. Verwenden Sie hierzu das Mandantenadministratorkonto, mit dem Sie Ihren Intune-Mandanten verwalten.
-2. Klicken Sie nach der Anmeldung auf **Annehmen**, um dem PIN-Zurücksetzungsdienst Zugriff auf Ihr Konto zu gewähren.<br>
-![Berechtigungsseite für den PIN-Zurücksetzungsdienst](./media/pin-reset-service-application.png)
-3. Im Azure-Portal wird angezeigt, dass Intune und der PIN-Zurücksetzungsdienst aus dem Blatt „Unternehmensanwendungen > Alle Anwendungen“ integriert wurden, wie der folgende Screenshot verdeutlicht:<br>
-![PIN-Zurücksetzungsdienstanwendung in Azure](./media/pin-reset-service-home-screen.png)
-4. Melden Sie sich auf [dieser Website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent) mit Ihren Anmeldeinformationen des Intune-Mandantenadministrators an. Klicken Sie erneut auf **Annehmen**, um dem Dienst Zugriff auf Ihr Konto zu gewähren.
+> [!NOTE]
+> Nachdem Sie die Anforderung der PIN-Zurücksetzung akzeptiert haben, wird Ihnen möglicherweise die Meldung `Page not found` angezeigt, oder es scheint, als würde nichts passieren. Dieses Verhalten ist normal. Achten Sie darauf, dass die beiden Anwendungen für Ihren Mandanten aufgelistet sind.
 
-### <a name="configure-windows-devices-to-use-pin-reset"></a>Konfigurieren von Windows-Geräten zur Verwendung des PIN-Zurücksetzungsdiensts
+## <a name="configure-windows-devices-to-use-pin-reset"></a>Konfigurieren von Windows-Geräten zur Verwendung des PIN-Zurücksetzungsdiensts
 
-Verwenden Sie zum Konfigurieren der PIN-Zurücksetzung auf von Ihnen verwalteten Windows-Geräten eine [benutzerdefinierte Intune-Geräterichtlinie für Windows 10](custom-settings-windows-10.md), um die Funktion zu aktivieren. Konfigurieren Sie die Richtlinie mithilfe des folgenden Konfigurationsdienstanbieters für Windows-Richtlinien (Configuration Service Provider, CSPs):
+Verwenden Sie zum Konfigurieren der PIN-Zurücksetzung auf von Ihnen verwalteten Windows-Geräten eine [benutzerdefinierte Intune-Geräterichtlinie für Windows 10](custom-settings-windows-10.md). Konfigurieren Sie die Richtlinie mithilfe des folgenden Konfigurationsdienstanbieters für Windows-Richtlinien (Configuration Service Provider, CSPs):
 
+**Verwenden Sie die Geräterichtlinie** - `./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery`
 
-- **Für Geräte** - **./Device/Vendor/MSFT/PassportForWork/*Mandanten-ID*/Policies/EnablePinRecovery**
-
-Die *Mandanten-ID* bezieht sich auf Ihre Azure Active Directory-ID, die Sie auf der Seite **Eigenschaften** in Azure Active Directory finden.
+Ersetzen Sie die *Mandanten-ID* durch Ihre Azure AD-Verzeichnis-ID, die unter **Eigenschaften** in Azure Active Directory im [Azure-Portal](https://portal.azure.com) aufgeführt wird.
 
 Legen Sie den Wert diesen CSP auf **TRUE** fest.
 
-## <a name="steps-to-reset-the-passcode"></a>Vorgehensweise zur Zurücksetzung der Kennung
+> [!TIP]
+> Nachdem Sie eine Richtlinie erstellt haben, weisen Sie sie einer Gruppe zu (oder stellen Sie sie bereit). Die Richtlinie kann Benutzergruppen oder einer Gerätegruppe zugewiesen werden. Wenn Sie sie einer Benutzergruppe zuweisen, kann diese Gruppe Benutzer beinhalten, die andere Geräte verwenden, z.B. ein iOS-Gerät. Technisch gesehen gilt die Richtlinie nicht, dennoch werden diese Geräte in den Statusdetails aufgeführt.
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.
-4. Wählen Sie auf dem Blatt **Geräte** die Optionen **Verwalten** > **Alle Geräte** aus.
-5. Wählen Sie das Gerät aus, für das Sie die Kennung zurücksetzen möchten. Wählen Sie dann auf dem Blatt „Geräteeigenschaften“ die Option **Neue Kennung** aus.
-6. Bestätigen Sie anschließend mit **Ja**. Die Kennung wird generiert und für die folgenden sieben Tage im Portal angezeigt.
+## <a name="reset-the-passcode"></a>Zurücksetzen der Kennung
 
-## <a name="next-steps"></a>Nächste Schritte
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an. 
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie auf **Microsoft Intune**.
+3. Klicken Sie auf **Geräte** > **Alle Geräte**.
+4. Wählen Sie das Gerät aus, dessen Kennung Sie zurücksetzen möchten. Klicken Sie in den Geräteeigenschaften auf **Neue Kennung**.
+5. Klicken Sie zum Bestätigen auf **Ja**. Die Kennung wird generiert und für die folgenden sieben Tage im Portal angezeigt.
+
+## <a name="next-step"></a>Nächster Schritt
 
 Sollte bei der Zurücksetzung der Kennung ein Fehler auftreten, wird im Portal ein Link mit weiteren Informationen angezeigt.
-
-

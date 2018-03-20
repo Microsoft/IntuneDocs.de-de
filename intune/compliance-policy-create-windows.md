@@ -1,30 +1,30 @@
 ---
-title: "So erstellen Sie eine Konformitätsrichtlinie für Windows"
-titleSuffix: Azure portal
-description: "Erfahren Sie, wie Sie eine Konformitätsrichtlinie für Windows-Geräte erstellen.\""
+title: "Erstellen einer Konformitätsrichtlinie für Windows-Geräte in Microsoft Intune"
+titleSuffix: 
+description: "Erstellen einer Konformitätsrichtlinie für Windows-Geräte in Microsoft Intune, damit Sie die Anforderungen angeben können, die ein Gerät für die Konformität erfüllen muss."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fe5a66ca91181d0cebdaea846f0ee08f9252d76b
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Erstellen einer Gerätekonformitätsrichtlinie für Windows-Geräte in Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Konformitätsrichtlinien werden für jede Plattform erstellt. Sie können eine Konformitätsrichtlinie im Azure-Portal erstellen. Weitere Informationen dazu, was eine Konformitätsrichtlinie ist, finden Sie unter dem Thema [Was ist Gerätekonformität](device-compliance.md). Weitere Informationen zu den Voraussetzungen für das Erstellen einer Konformitätsrichtlinie finden Sie unter dem Thema [Erste Schritte mit der Gerätekonformität](device-compliance-get-started.md).
+Eine Intune-Konformitätsrichtlinie für Windows-Geräte gibt die Regeln und Einstellungen an, die Windows-Geräte erfüllen müssen, um als konform angesehen zu werden. Sie können diese Richtlinien mit bedingtem Zugriff verwenden, um Zugriff auf Unternehmensressourcen zu gewähren oder zu blockieren. Sie können auch Berichte zu Geräten abrufen und Maßnahmen gegen die Nichtkonformität vornehmen. Erstellen Sie Gerätekonformitätsrichtlinien für jede Plattform im Intune Azure-Portal. Weitere Informationen über Konformitätsrichtlinien und die Voraussetzungen, die vor dem Erstellen einer Konformitätsrichtlinie erfüllt werden müssen, finden Sie unter [Erste Schritte mit den Microsoft Intune-Gerätekonformitätsrichtlinien](device-compliance-get-started.md).
 
 In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verwaltet werden, wenn eine Konformitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird.
 
@@ -42,7 +42,7 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 
 -------------------------------
 
-**Wiederhergestellt** = Das Betriebssystem des Geräts erzwingt die Kompatibilität. (Beispiel: Der Benutzer ist gezwungen, eine PIN festzulegen.)+
+**Wiederhergestellt** = Das Betriebssystem des Geräts erzwingt die Kompatibilität. (Beispiel: Der Benutzer ist gezwungen, eine PIN festzulegen.)
 
 **Isoliert** = Das Betriebssystem des Geräts erzwingt keine Kompatibilität. (Beispiel: Android-Geräte zwingen den Benutzer nicht, das Gerät zu verschlüsseln.) Wenn das Gerät nicht kompatibel ist, erfolgen die folgenden Aktionen:
 
@@ -51,12 +51,14 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Erstellen einer Konformitätsrichtlinie im Azure-Portal
 
-1. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekompatibilität festlegen** aus. Wählen Sie unter **Verwalten** die Option **Alle Gerätekonformitätsrichtlinien** und dann **Erstellen** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+1. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonformität**. Klicken Sie unter **Verwalten** auf **Richtlinien** und dann auf **Richtlinie erstellen**.
 2. Geben Sie einen Namen und eine Beschreibung ein, und wählen Sie die Plattform aus, auf die Sie diese Richtlinie anwenden möchten.
-3. Wählen Sie **Kompatibilitätsanforderungen** aus, um das Blatt „Kompatibilitätsanforderungen“ zu öffnen.  Sie können die Einstellungen **Sicherheit**, **Geräteintegrität** und **Geräteeigenschaft** angeben. Wählen Sie abschließend **OK** aus.
+3. Klicken Sie auf **Einstellungen konfigurieren**, um die Einstellungen zur **Systemsicherheit**, **Device Health** (Integrität für Geräte) und **Geräteeigenschaften** anzugeben. Wählen Sie abschließend **OK** aus.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
@@ -64,10 +66,10 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 
 ## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen
 
-Wählen Sie zum Zuweisen einer Konformitätsrichtlinie zu Benutzern eine Richtlinie aus, die Sie konfiguriert haben. Vorhandene Richtlinien finden Sie auf dem Blatt **Kompatibilitätsrichtlinien**.
+Wählen Sie zum Zuweisen einer Konformitätsrichtlinie zu Benutzern eine Richtlinie aus, die Sie konfiguriert haben. Vorhandene Richtlinien finden Sie im Bereich **Gerätekompatibilität > Richtlinien**.
 
-1. Wählen Sie die Richtlinie, die Sie Benutzern zuweisen möchten, und abschließend **Zuweisungen** aus. Damit öffnen Sie das Blatt, auf dem Sie **Azure Active Directory-Sicherheitsgruppen** auswählen und der Richtlinie zuweisen können.
-2. Wählen Sie **Gruppen auswählen** aus, um das Blatt mit den Azure AD-Sicherheitsgruppen zu öffnen.  Die Auswahl von **Auswählen** bewirkt die Bereitstellung der Richtlinie für Benutzer.
+1. Wählen Sie die Richtlinie, die Sie Benutzern zuweisen möchten, und abschließend **Zuweisungen** aus. Damit öffnen Sie den Bereich, in dem Sie **Azure Active Directory-Sicherheitsgruppen** auswählen und der Richtlinie zuweisen können.
+2. Klicken Sie auf **Ausgewählte Gruppen**, um den Bereich mit den Azure AD-Sicherheitsgruppen zu öffnen.  Die Auswahl von **Speichern** bewirkt die Bereitstellung der Richtlinie für Benutzer.
 
 Sie haben die Richtlinie auf Benutzer angewendet. Die von den Benutzern, denen die Richtlinie zugewiesen wurde, verwendeten Geräte werden auf Konformität überprüft.
 
@@ -78,8 +80,8 @@ Sie haben die Richtlinie auf Benutzer angewendet. Die von den Benutzern, denen d
 ### <a name="password"></a>Kennwort
 
 - **Kennwort zum Entsperren mobiler Geräte erforderlich:** Legen Sie für diese Einstellung **Ja** fest, damit Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.
-- **Einfache Kennwörter zulassen:** Legen Sie **Ja** fest, damit Benutzer einfache Kennwörter wie **1234** oder **1111** erstellen können.
-- **Minimale Kennwortlänge:** Geben Sie die Mindestanzahl an Ziffern oder Zeichen an, die das Benutzerkennwort enthalten muss.
+- **Einfache Kennwörter zulassen**: Legen Sie **Ja** fest, damit Benutzer einfache Kennwörter wie „**1234**“ oder „**1111**“ erstellen können.
+- **Minimale Kennwortlänge**: Geben Sie die Mindestanzahl an Ziffern oder Zeichen an, die das Benutzerkennwort enthalten muss.
 - **Erforderlicher Kennworttyp:** Geben Sie an, ob Benutzer ein **alphanumerisches** oder ein **numerisches** Kennwort erstellen müssen.
 
 Für Geräte unter Windows, auf die mit einem Microsoft-Konto zugegriffen wird, wird die Konformitätsrichtlinie nicht richtig ausgewertet, wenn die minimale Kennwortlänge größer als acht Zeichen oder die minimale Anzahl von Zeichensätzen größer als zwei ist.
@@ -93,7 +95,7 @@ Für Geräte unter Windows, auf die mit einem Microsoft-Konto zugegriffen wird, 
 Wenn Sie eine höhere Zahl für diese Einstellung festlegen, müssen Benutzer komplexere Kennwörter erstellen. Für Geräte unter Windows, auf die mit einem Microsoft-Konto zugegriffen wird, wird die Konformitätsrichtlinie nicht richtig ausgewertet, wenn die minimale Kennwortlänge größer als acht Zeichen oder die minimale Anzahl von Zeichensätzen größer als zwei ist.
 
 - **Minuten der Inaktivität, bevor ein Kennwort erforderlich ist:** Gibt die Leerlaufzeit an, nach der ein Benutzer sein Kennwort erneut eingeben muss.
-- **Kennwortablauf (Tage):** Wählen Sie die Anzahl von Tagen aus, bevor das Kennwort des Benutzers abläuft und er ein neues erstellen muss.
+- **Kennwortablauf (Tage)**: Wählen Sie die Anzahl von Tagen aus, bevor das Kennwort des Benutzers abläuft und er ein neues erstellen muss.
 - **Kennwortverlauf speichern:** Verwenden Sie diese Einstellung in Verbindung mit **Wiederverwendung vorheriger Kennwörter verhindern**, um zu verhindern, dass der Benutzer zuvor bereits verwendete Kennwörter erstellt.
 - **Wiederverwendung vorheriger Kennwörter verhindern:** Wenn **Kennwortverlauf speichern** aktiviert ist, geben Sie die Anzahl der zuvor verwendeten Kennwörter ein, die nicht erneut verwendet werden dürfen.
 - **Kennworteingabe verlangen, wenn das Gerät aus dem Leerlauf zurückkehrt:** Diese Einstellung sollte zusammen mit der Einstellung **Minuten Inaktivität vor erneuter Anforderung des Kennworts** verwendet werden. Die Endbenutzer werden zur Eingabe eines Kennworts aufgefordert, um auf ein Gerät zugreifen zu können, das für die in der Einstellung **Minuten Inaktivität vor erneuter Anforderung des Kennworts** angegebene Zeit inaktiv war.
@@ -150,7 +152,7 @@ Geben Sie die Leerlaufzeit an, nach der ein Benutzer sein Kennwort erneut eingeb
 
 - **Kennwortablauf (Tage):** Wird unter Windows RT, Windows RT 8.1 und Windows 8.1 unterstützt.
 
-Wählen Sie die Anzahl von Tagen aus, bevor das Kennwort des Benutzers abläuft und er ein neues erstellen muss.
+Wählen Sie die Anzahl der Tage, bevor das Kennwort des Benutzers abläuft und er ein neues erstellen muss.
 
 - **Kennwortverlauf speichern:** Wird unter Windows RT, Windows RT 8.1 und Windows 8.1 unterstützt.
 
@@ -183,10 +185,10 @@ Wenn ein Gerät eine frühere Version als die angegebene Betriebssystemversion a
 
 Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt, und der Benutzer wird gebeten, sich an den IT-Administrator zu wenden. Mit diesem Gerät kann solange nicht auf Unternehmensressourcen zugegriffen werden, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
 
-Um die Betriebssystemversion für die Einstellungen **Minimal erforderliches Betriebssystem** und **Maximal zulässige Betriebssystemversion** zu finden, führen Sie den **winver**-Befehl an der Eingabeaufforderung aus. Der Befehl winver gibt die gemeldete Version des Betriebssystems zurück.+
+Um die Betriebssystemversion für die Einstellungen **Minimal erforderliches Betriebssystem** und **Maximal zulässige Betriebssystemversion** zu finden, führen Sie den **winver**-Befehl an der Eingabeaufforderung aus. Der winver-Befehl gibt die gemeldete Version des Betriebssystems zurück.
 
 - Windows 8.1-PCs geben die Version **3** zurück. Wenn die Regel für die Betriebssystemversion für Windows auf Windows 8.1 festgelegt ist, wird das betreffende Gerät als nicht kompatibel gemeldet, selbst wenn auf ihm Windows 8.1 installiert ist.
-- Bei PCs unter Windows 10 muss die Version auf &quot;10.0&quot; plus Buildnummer des Betriebssystems festgelegt werden, die vom Befehl winver zurückgegeben wird.
+- Bei PCs unter Windows 10 muss die Version auf „10.0“ plus Buildnummer des Betriebssystems festgelegt werden, die vom winver-Befehl zurückgegeben wird.
 
 ## <a name="windows-holographic-for-business-support"></a>Unterstützung durch Windows Holographic for Business
 

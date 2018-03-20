@@ -1,11 +1,12 @@
 ---
-title: Erstellen eines Berichts aus dem OData-Feed mit Power BI | Microsoft-Dokumentation
+title: Erstellen eines Berichts aus dem OData-Feed mit Power BI
+titlesuffix: Microsoft Intune
 description: Erstellen Sie eine Treemap-Visualisierung mithilfe von Power BI Desktop mit einem interaktiven Filter der Intune Data Warehouse-API.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/18/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +15,15 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a81a3b0648c77e3adb7a57bdcecddea1e0412eb2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 850218c33a37738c591be36c778dfe5941bea51b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Erstellen eines Berichts aus dem OData-Feed mit Power BI
 
-In diesem Tutorial wird erläutert, wie Sie eine Treemap-Visualisierung mithilfe von Power BI Desktop mit einem interaktiven Filter erstellen können. Beispielsweise möchte Ihr Finanzdirektor möglicherweise wissen, in welchem Zusammenhang die Verteilung aller Geräte mit den Geräten, die nur im Besitz von Unternehmen sind, bzw. mit persönlichen Geräten steht. Die Treemap gibt einen Überblick über die Gesamtanzahl von Gerätetypen. Sie können die Anzahl von iOS-, Android- und Windows-Geräten prüfen, die weder einem Unternehmen noch einer Privatperson gehören.
+In diesem Artikel wird erläutert, wie Sie eine Treemap-Visualisierung mithilfe von Power BI Desktop mit einem interaktiven Filter erstellen können. Beispielsweise möchte Ihr Finanzdirektor möglicherweise wissen, in welchem Zusammenhang die Verteilung aller Geräte mit den Geräten, die nur im Besitz von Unternehmen sind, bzw. mit persönlichen Geräten steht. Die Treemap gibt einen Überblick über die Gesamtanzahl von Gerätetypen. Sie können die Anzahl von iOS-, Android- und Windows-Geräten prüfen, die weder einem Unternehmen noch einer Privatperson gehören.
 
 ### <a name="overview-of-creating-the-chart"></a>Übersicht zum Erstellen des Diagramms
 
@@ -49,9 +50,9 @@ Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI 
 > [!Note]  
 > Sie benötigen in Intune eine Berechtigung, um auf **Berichte** zugreifen zu können. Weitere Informationen finden Sie unter [Autorisierung](reports-api-url.md).
 
-1. Melden Sie sich im Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** + **Intune** aus.
-3. Öffnen Sie das Blatt **Intune Data Warehouse**.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Öffnen Sie den Bereich **Intune Data Warehouse**.
 4. Kopieren Sie die benutzerdefinierte Feed-URL. Beispiel: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 5. Öffnen Sie Power BI Desktop.
 6. Klicken Sie auf **Daten abrufen** > **OData-Feed**.
@@ -61,24 +62,25 @@ Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI 
     ![OData-Feed](media/reports-create-01-odatafeed.png)
 
 9. Wählen Sie **OK** aus.
-10. Wählen Sie **Organisationskonto** aus, und melden Sie sich anschließend mit Ihren Anmeldeinformationen für Intune an. 
+10. Wählen Sie **Organisationskonto** aus, und melden Sie sich anschließend mit Ihren Anmeldeinformationen für Intune an.
 
     ![Anmeldeinformationen für das Organisationskonto](media/reports-create-02-org-account.png)
 
-11. Wählen Sie **Verbinden** aus. Der Navigator öffnet sich und zeigt Ihnen eine Liste mit Tabelle im Intune Data Warehouse an. 
+11. Wählen Sie **Verbinden** aus. Der Navigator öffnet sich und zeigt Ihnen eine Liste mit Tabelle im Intune Data Warehouse an.
 
     ![Der Navigator](media/reports-create-02-loadentities.png)
 
 12. Wählen Sie die **Geräte** und die **OwnerTypes**-Tabellen aus.  Wählen Sie **Laden** aus. Power BI lädt die Daten in das Modell.
 
-## <a name="create-a-relationship"></a>Erstellen einer Beziehung 
+## <a name="create-a-relationship"></a>Erstellen einer Beziehung
 
 Sie können mehrerer Tabellen importieren, um nicht nur die Daten in einer einzigen Tabelle zu analysieren, sondern auch tabellenübergreifende Daten.  In Power BI gibt es eine Funktion, die **Autodetect** genannt wird und Beziehungen findet sowie erstellt. Die Tabellen im Data Warehouse wurden so konzipiert, dass sie mit der Autodetect-Funktion von Power BI kompatibel sind. Auch wenn Power BI die Beziehungen nicht automatisch finden sollte, verwalten Sie sie trotzdem.
 
 ![Verwalten von Beziehungen](media/reports-create-03-managerelationships.png)
 
 1. Wählen Sie **Beziehungen verwalten** aus.
-2. Wählen Sie **Autodetect...** aus, wenn Power BI die Beziehungen noch nicht erkannt hat.  
+2. Wählen Sie **Autodetect...** aus, wenn Power BI die Beziehungen noch nicht erkannt hat.
+
 Die Beziehung wird von einer „From“-Spalte zu einer „To“-Spalte angezeigt. In diesem Beispiel ist das Datenfeld **ownerTypeKey** in der **Gerätetabelle** mit dem Datenfeld **ownerTypeKey** in der Tabelle **ownerTypes** verknüpft. Sie können die Beziehung verwenden, um den einfachen Namen eines Gerätetypcodes in der **Gerätetabelle** nachzuschauen.
 
 ## <a name="create-a-treemap-visualization"></a>Erstellen einer Treemap-Visualisierung
@@ -92,21 +94,24 @@ In einem Treemap-Diagramm werden hierarchische Daten als Felder in Feldern angez
 3. Erweitern Sie die **Gerätetabelle**, und wählen Sie das Datenfeld **Hersteller** im Bereich **Felder** aus.
 4. Ziehen Sie das Datenfeld **Hersteller** auf das Treemap-Diagramm im Berichtszeichenbereich.
 5. Ziehen Sie das Datenfeld **deviceKey** aus der **Gerätetabelle** in den Abschnitt **Werte** im Bereich **Visualisierung**, und legen Sie es auf dem Feld mit der Bezeichnung **Drag data field here** (Datenfeld hierherziehen) ab.  
+
 Jetzt verfügen Sie über eine Visualisierung der Verteilung von Herstellern und Geräten innerhalb Ihrer Organisation.
 
 ![Treemap mit Daten](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>Hinzufügen eines Filters
 
-Sie können Ihrer Treemap einen Filter hinzufügen, damit Sie mithilfe Ihrer App zusätzliche Fragen beantworten können. 
+Sie können Ihrer Treemap einen Filter hinzufügen, damit Sie mithilfe Ihrer App zusätzliche Fragen beantworten können.
 
-1. Wählen Sie zunächst den Berichtszeichenbereich und anschließend unter **Visualisierungen** das **Slicer-Symbol** (![Treemap with data](media/reports-create-slicer.png) (Treemap mit Daten)) aus, um einen Filter hinzuzufügen.
+
+1. Wählen Sie zunächst den Berichtszeichenbereich aus, und klicken Sie anschließend unter **Visualisierungen** auf das **Slicer-Symbol** (![Treemap mit Daten](media/reports-create-slicer.png)), um einen Filter hinzuzufügen.
 2. Suchen Sie die Tabelle **ownerTypes** ziehen Sie das Datenfeld **ownerTypeName** im Abschnitt **Filter** auf den Bereich **Visualisierungen**.  
-   In der Gerätetabelle gibt es ein Datenfeld mit der Bezeichnung **OwnerTypeKey**, das einen Code enthält, der darauf hinweist, ob ein Gerät Eigentum eines Unternehmens oder einer Privatperson ist. Da Sie Anzeigenamen in diesem Filter anzeigen wollen, suchen Sie nach der Tabelle **ownerTypes**, und ziehen Sie den **ownerTypeName** dorthin. Das folgende Beispiel zeigt, inwiefern das Datenmodell Beziehungen zwischen den Tabellen unterstützt.
+
+   In der Gerätetabelle gibt es ein Datenfeld mit der Bezeichnung **OwnerTypeKey**, das einen Code enthält, der darauf hinweist, ob ein Gerät Eigentum eines Unternehmens oder einer Privatperson ist. Da Sie Anzeigenamen in diesem Filter anzeigen wollen, suchen Sie nach der Tabelle **ownerTypes**, und ziehen Sie den **ownerTypeName** dorthin. Das folgende Beispiel zeigt, wie das Datenmodell Beziehungen zwischen den Tabellen unterstützt.
 
 ![Treemap mit Filter](media/reports-create-08_ownertype.png)
 
-Nun verfügen Sie über einen interaktiven Filter, der zum Wechseln zwischen unternehmenseigenen und privaten Geräten verwendet werden kann. So können Sie Veränderungen in der Verteilung nachvollziehen.
+Nun verfügen Sie über einen interaktiven Filter, der zum Wechseln zwischen unternehmenseigenen und privaten Geräten verwendet werden kann. Mit diesem Filter können Sie Veränderungen in der Verteilung nachvollziehen.
 
 1. Wählen Sie **Unternehmen** aus, damit Ihnen die Verteilung der unternehmenseigenen Geräte angezeigt wird.
 2. Wählen Sie **Persönlich** aus, damit Ihnen die privaten Geräte angezeigt werden.

@@ -1,29 +1,29 @@
 ---
-title: "Einstellungen für Geräteeinschränkungen für macOS"
-titlesuffix: Azure portal
-description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf macOS-Geräten kennen."
+title: "Einstellungen für Geräteeinschränkungen für Microsoft Intune unter macOS"
+titlesuffix: 
+description: "In diesem Artikel erfahren Sie mehr über die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf macOS-Geräten."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/31/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a88cf11209726a622863339c3a6c117f7b83be1e
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 72c9036bd6062e719d55876d77f44123fe2af392
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für macOS-Geräte in Microsoft Intune
+# <a name="microsoft-intune-macos-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für macOS-Geräte in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Verwenden Sie diese Einstellungen zum Verwalten von macOS-Geräten in einem Geräteeinschränkungsprofil.
+In diesem Artikel erfahren Sie mehr über Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für macOS-Geräte konfigurieren können.
 
 ## <a name="password"></a>Kennwort
 -   **Kennwort:** Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können.
@@ -49,5 +49,5 @@ Klicken Sie zum Konfigurieren einer Liste auf **Hinzufügen**. Geben Sie dann ei
 
 ### <a name="unmarked-email-domains"></a>Nicht markierte E-Mail-Domänen
 
-Fügen Sie im Feld **E-Mail-Domänen-URL** eine oder mehrere URLs der Liste hinzu. Wenn Endbenutzer eine E-Mail von einer anderen Domäne als einer erhalten, die Sie konfiguriert haben, wird die E-Mail in der iOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
+Fügen Sie im Feld **E-Mail-Domänen-URL** eine oder mehrere URLs der Liste hinzu. Wenn Benutzer eine E-Mail von einer Domäne erhalten, die Sie nicht konfiguriert haben, wird die E-Mail in der iOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
 

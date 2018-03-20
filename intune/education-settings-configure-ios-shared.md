@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 044f3aaa81a2bb02662bec3d20ea51a2339b91a6
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 8f6dc373f831b574abf7d63e97935a379e731422
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Konfigurieren von Intune-Einstellungen für Bildungseinrichtungen für freigegebene iPad-Geräte
 
@@ -62,12 +62,12 @@ Sie können Informationen mithilfe einer der folgenden Methoden in SDS importier
 
 ### <a name="configure-general-settings"></a>Konfigurieren allgemeiner Einstellungen
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte konfigurieren** aus.
-4. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
-5. Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen** aus.
-6. Geben Sie auf dem Blatt **Profil erstellen** einen **Namen** und eine **Beschreibung** des iOS-Bildungsprofils ein.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
+2. Klicken Sie im Bereich **Gerätekonfiguration** im Abschnitt **Verwalten** auf die Option **Profile**.
+5. Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
+6. Geben Sie im Bereich **Profil erstellen** einen **Namen** und eine **Beschreibung** für das iOS-Bildungsprofil ein.
 7. Wählen Sie in der Dropdownliste **Plattform** die Option **iOS** aus.
 8. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Bildungswesen** aus.
 9. Wählen Sie **Einstellungen** > **Konfigurieren** aus.
@@ -83,7 +83,7 @@ Von Ihnen erstellte Zertifikate müssen zusätzlich zur Benutzerauthentifizierun
 
 ### <a name="configure-teacher-certificates"></a>Konfigurieren von Zertifikaten für Lehrkräfte
 
-Wählen Sie **Lehrerzertifikate** auf dem Blatt **Bildung** aus.
+Klicken Sie im Bereich **Bildung** auf **Lehrerzertifikate**.
 
 #### <a name="configure-teacher-root-certificate"></a>Konfigurieren des Stammzertifikats für Lehrkräfte
 
@@ -104,8 +104,8 @@ Wenn Sie das Konfigurieren von Zertifikaten für Lehrer abgeschlossen haben, kli
 
 ### <a name="configure-student-certificates"></a>Konfigurieren von Zertifikaten für Schüler/Studenten
 
-1. Wählen Sie auf dem Blatt **Bildung** die Option **Zertifikate für Schüler und Studenten** aus.
-2. Wählen Sie auf dem Blatt **Zertifikate für Schüler und Studenten** in der Liste **Gerätezertifikattyp für Schüler und Studenten** die Option **Gemeinsam genutztes iPad** aus.
+1. Klicken Sie im Bereich **Bildung** auf **Zertifikate für Schüler und Studenten**.
+2. Wählen Sie im Bereich **Zertifikate für Schüler und Studenten** in der Liste **Gerätezertifikattyp für Schüler und Studenten** die Option **Gemeinsam genutztes iPad** aus.
 
 #### <a name="configure-student-root-certificate"></a>Konfigurieren des Stammzertifikats für Schüler und Studenten
 
@@ -126,78 +126,78 @@ Wenn Sie das Konfigurieren von Zertifikaten abgeschlossen haben, klicken Sie auf
 
 ### <a name="complete-certificate-setup"></a>Abschließen des Zertifikatssetups
 
-1. Klicken Sie auf dem Blatt **Bildung** auf **OK**.
-2. Wählen Sie auf dem Blatt **Profil erstellen** die Option **Erstellen** aus.
+1. Klicken Sie im Bereich **Bildung** auf **OK**.
+2. Klicken Sie im Bereich **Profil erstellen** auf die Option **Erstellen**.
 
-Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
+Das Profil wird erstellt und in der Profilliste angezeigt.
 
 ## <a name="step-3---create-a-device-category"></a>Schritt 3: Erstellen einer Gerätekategorie
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung** aus.
-4. Wählen Sie auf dem Blatt **Enrollment – Overview** (Registrierung – Übersicht) die Option **Gerätekategorien** aus.
-5. Wählen Sie auf dem Blatt **Enrollment – Device Categories** (Registrierung – Gerätekategorien) die Option **Erstellen** aus.
-6. Geben Sie auf dem Blatt **Gerätekategorie erstellen** einen **Namen** und eine **Beschreibung** für die Kategorie ein.
-7. Wählen Sie auf dem Blatt **Gerätekategorie erstellen** die Option **Erstellen** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Geräteregistrierung**.
+4. Klicken Sie im Bereich **Device enrollment – Overview** (Geräteregistrierung – Übersicht) auf die Option **Gerätekategorien**.
+5. Klicken Sie im Bereich **Device enrollment – Device Categories** (Geräteregistrierung – Gerätekategorien) auf die Option **Erstellen**.
+6. Geben Sie im Bereich **Gerätekategorie erstellen** einen **Namen** und eine **Beschreibung** für die Kategorie ein.
+7. Klicken Sie im Bereich **Gerätekategorie erstellen** auf die Option **Erstellen**.
 
-Die Gerätekategorie wird auf dem Blatt **Enrollment – Device Categories** (Registrierung – Gerätekategorien) erstellt.
+Die Gerätekategorie wird im Bereich **Enrollment – Device Categories** (Registrierung – Gerätekategorien) erstellt.
 
 ## <a name="step-4--create-a-dynamic-group"></a>Schritt 4: Erstellen einer dynamischen Gruppe
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Gruppen** aus.
-4. Wählen Sie auf dem Blatt **Users and Groups – All Groups** (Benutzer und Gruppen – Alle Gruppen) die Option **Neue Gruppe** aus.
-5. Geben Sie auf dem Blatt **Gruppe** einen **Namen** und eine **Beschreibung** für die Gruppe ein.
-6. Wählen Sie in der Dropdownliste **Mitgliedschaftstyp** die Option **Dynamisches Gerät** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Gruppen**.
+4. Klicken Sie im Bereich **Users and Groups – All Groups** (Benutzer und Gruppen – Alle Gruppen) auf die Option **Neue Gruppe**.
+5. Wählen Sie im Bereich **Gruppe** einen **Gruppentyp** aus, und geben Sie dann einen **Namen** und eine **Beschreibung** für die Gruppe ein.
+6. Klicken Sie in der Dropdownliste **Mitgliedschaftstyp** auf die Option **Dynamisches Gerät**.
 7. Wählen Sie **Dynamische Gerätemitglieder** aus, um Mitgliedschaftsregeln zu erstellen.
-8. Gehen Sie auf dem Blatt **Dynamische Mitgliedschaftsregeln** wie folgt vor:
+8. Gehen Sie im Bereich **Dynamische Mitgliedschaftsregeln** wie folgt vor:
 1. Wählen Sie in der Dropdownliste **Add devices where** (Geräte hinzufügen, bei denen) die Option **deviceCategory** aus.
 2. Wählen Sie **Equals** (Gleich) aus.
 3. Geben Sie die Gerätekategorie ein, die Sie im leeren Textfeld erstellt haben.
-9. Wählen Sie auf dem Blatt **Dynamische Mitgliedschaftsregeln** die Option **Abfrage hinzufügen** aus.
-10. Wählen Sie auf dem Blatt **Gruppe** die Option **Erstellen** aus.
+9. Klicken Sie im Bereich **Dynamische Mitgliedschaftsregeln** auf die Option **Abfrage hinzufügen**.
+10. Klicken Sie im Bereich **Gruppe** auf die Option **Erstellen**.
 
-Die dynamische Gruppe wird auf dem Blatt **Users and Groups – All Groups** (Benutzer und Gruppen – Alle Gruppen) erstellt.
+Die dynamische Gruppe wird im Bereich **Users and Groups – All Groups** (Benutzer und Gruppen – Alle Gruppen) erstellt.
 
 ## <a name="step-5--assign-a-device-to-a-category-carts"></a>Schritt 5: Zuweisen eines Geräts zu einer Kategorie (Carts)
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.
-4. Wählen Sie auf dem Blatt **Geräte** die Option **Alle Geräte** aus.
-5. Wählen Sie auf dem Blatt **Devices – All devices** (Geräte – Alle Geräte) ein Gerät aus.
-6. Wählen Sie auf dem Blatt des Geräts **Eigenschaften** aus.
-7. Geben Sie auf dem Eigenschaftenblatt des Geräts in das Textfeld **Gerätekategorie** die Gerätekategorie ein.
-8. Wählen Sie auf dem Geräteblatt **Speichern** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf **Geräte**.
+4. Klicken Sie im Bereich **Geräte** auf die Option **Alle Geräte**.
+5. Wählen Sie im Bereich **Devices – All devices** (Geräte – Alle Geräte) ein Gerät aus.
+6. Klicken Sie im Bereich des Geräts auf **Eigenschaften**.
+7. Geben Sie im Eigenschaftenbereich des Geräts in das Textfeld **Gerätekategorie** die Gerätekategorie ein.
+8. Klicken Sie im Bereich des Geräts auf **Speichern**.
 
 Das Gerät wurde der Gerätekategorie zugeordnet. Wiederholen Sie diesen Vorgang für alle Geräte, die Sie der erstellten Gerätekategorie zuordnen möchten.
 
 ## <a name="step-6--create-classroom-profiles"></a>Schritt 6: Erstellen von Classroom-Profilen
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte konfigurieren** aus.
-4. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Cart-Profile** aus.
-5. Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen** aus.
-6. Geben Sie auf dem Blatt **Zuordnung erstellen** einen **Namen** und eine **Beschreibung** ein.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
+4. Klicken Sie im Bereich **Gerätekonfiguration** auf **Verwalten** > **Cart-Profile**.
+5. Klicken Sie im Bereich des Profils auf **Profil erstellen**.
+6. Geben Sie im Bereich **Zuordnung erstellen** einen **Namen** und eine **Beschreibung** ein.
 7. Wählen Sie **Klassen auswählen** > **Konfigurieren** aus, um dem Cart-Profil Gruppen zuzuordnen.
 8. Wählen Sie die Klassen aus, die im Cart-Profil enthalten sein sollen, und klicken Sie dann auf **Auswählen**. 
 9. Wählen Sie **Carts auswählen** > **Konfigurieren** aus, um dem Cart-Profil Gruppen zuzuordnen.
 10. Wählen Sie die Gruppen aus, die im Cart-Profil enthalten sein sollen, und klicken Sie dann auf **Auswählen**.
-11. Klicken Sie auf dem Blatt **Zuordnung erstellen** auf **Speichern**, um das Cart-Profil zu speichern.
+11. Klicken Sie im Bereich **Zuordnung erstellen** auf **Speichern**, um das Cart-Profil zu speichern.
 
-Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
+Das Profil wird erstellt und in der Profilliste angezeigt.
 
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>Schritt 7: Zuweisen des Cart-Profils zu Klassen
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Andere** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte konfigurieren** aus.
-4. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Überwachen** > **Zuweisungsstatus** aus.
-5. Wählen Sie auf dem Blatt **Zuweisungsstatus** das erstellte **Cart-Profil** aus.
-6. Wählen Sie auf dem Blatt **Cart-Profil** die Option **Zuweisungen** und unter **Einschließen** dann **Select groups to include** (Gruppen auswählen, die eingeschlossen werden sollen) aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
+4. Klicken Sie im Bereich **Gerätekonfiguration** auf **Überwachen** > **Zuweisungsstatus**.
+5. Klicken Sie im Bereich **Zuweisungsstatus** auf das erstellte **Cart-Profil**.
+6. Klicken Sie im Bereich **Cart-Profil** auf die Option **Zuweisungen** und unter **Einschließen** auf **Select groups to include** (Gruppen auswählen, die eingeschlossen werden sollen).
 7. Wählen Sie die Klassen (keine Gruppe) aus, die das Cart-Profil beinhalten soll, und klicken Sie dann auf **Auswählen**. 
 8. Wählen Sie anschließend **Speichern** aus.
 

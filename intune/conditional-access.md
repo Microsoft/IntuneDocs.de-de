@@ -1,12 +1,12 @@
 ---
-title: "Bedingter Zugriff über Intune"
-titlesuffix: Azure portal
-description: "Erfahren Sie, wie Sie die Bedingungen definieren, die Benutzer und Geräte erfüllen müssen, um Zugriff auf Unternehmensressourcen in Microsoft Intune zu erhalten.\""
+title: Bedingter Zugriff mit Microsoft Intune
+titlesuffix: 
+description: "Erfahren Sie, wie Sie die Bedingungen definieren, die Benutzer, Geräte und Apps erfüllen müssen, um Zugriff auf Unternehmensressourcen in Microsoft Intune zu erhalten."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 05/23/2017
+ms.date: 03/06/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d3d84f8010b72b9595f3ff54924d6c3fe245702
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08589f3d9186699ce5241579cc1879be2d442e3d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-conditional-access"></a>Was ist bedingter Zugriff?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Dieses Thema beschreibt den bedingten Zugriff für Enterprise Mobility + Security (EMS) und erläutert anschließend häufige Szenarien mit bedingtem Zugriff bei Verwendung von Intune.
+Der Begriff „bedingter Zugriff“ bezieht sich auf Möglichkeiten zum Steuern der Geräte und Apps, die eine Verbindung mit E-Mail- und Unternehmensressourcen herstellen dürfen. In diesem Artikel erhalten Sie Informationen zu gerätebasiertem und App-basiertem bedingtem Zugriff. Außerdem werden häufige Szenarios zur Verwendung von bedingtem Zugriff mit Intune dargestellt.
 
 Der bedingte Zugriff von Enterprise Mobility + Security (EMS) ist kein eigenständiges Produkt, sondern eine Lösung, die für alle Dienste und Produkte im Rahmen von EMS gilt. Die Lösung bietet eine präzise Zugriffssteuerung, sodass Sie die Sicherheit Ihrer Unternehmensdaten gewährleisten und gleichzeitig dafür sorgen können, dass die Benutzer mit jedem Gerät und an jedem Standort optimal arbeiten können.
 

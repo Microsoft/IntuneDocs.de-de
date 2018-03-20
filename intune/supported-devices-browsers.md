@@ -1,5 +1,6 @@
 ---
-title: "Unterstützte Geräte – Microsoft Intune"
+title: "Von Microsoft Intune unterstützte Betriebssysteme und Browser"
+titleSuffix: 
 description: "Liste der unterstützten Geräteplattformen und Browser für die Intune-Geräteverwaltung"
 keywords: 
 author: ErikjeMS
@@ -14,24 +15,19 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 11c4336979ee9089b218ea79ac826176d99492d9
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 1e58201620612118f0984a1c477b3fa3bc7e923a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Unterstützte Betriebssysteme und Browser
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Dieser Artikel richtet sich an Systemadministratoren, die für die Verwaltung der Geräte im Unternehmen verantwortlich sind. Hilfe zur Installation von Intune auf Ihrem Gerät finden Sie unter [Verwenden verwalteter Geräte zum Erledigen von Aufgaben](/intune-user-help/company-portal-frequently-asked-questions).
+Informieren Sie sich über die unterstützten Betriebssysteme und Browser, bevor Sie Microsoft Intune einrichten.
 
-Prüfen Sie die folgenden Anforderungen, bevor Sie mit der Einrichtung von Microsoft Intune beginnen:
-
-- [Unterstützte Betriebssysteme](#intune-supported-operating-systems)
-- [Liste der unterstützten Webbrowser, die Intune verwenden](#intune-supported-web-browsers)
-
-Sie sollten sich auch mit der [Nutzung der Netzwerkbandbreite durch Intune](network-bandwidth-use.md) ([klassisches Portal](/intune-classic/get-started/network-bandwidth-use)) vertraut machen.
+Hilfe zur Installation von Intune auf Ihrem Gerät finden Sie unter [Verwenden verwalteter Geräte zum Erledigen von Aufgaben](/intune-user-help/company-portal-frequently-asked-questions). Sie sollten sich auch mit der [Bandbreitennutzung von Intune](network-bandwidth-use.md) ([klassisches Portal](/intune-classic/get-started/network-bandwidth-use)) vertraut machen.
 
 ## <a name="intune-supported-operating-systems"></a>Von Intune unterstützte Betriebssysteme
 

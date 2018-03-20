@@ -1,35 +1,35 @@
 ---
-title: "VPN-Einstellungen für macOS-Geräte in Intune"
-titlesuffix: Azure portal
-description: "Erfahren Sie etwas über die Intune-Einstellungen, die Sie zum Konfigurieren von VPN-Verbindungen auf macOS-Geräten verwenden können.\""
+title: "VPN-Einstellungen für macOS-Geräte in Microsoft Intune"
+titlesuffix: 
+description: "Erfahren Sie mehr über die Intune-Einstellungen, die Sie zum Konfigurieren von VPN-Verbindungen auf macOS-Geräten verwenden können."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ec712abe220ca6b020c5d015dc55f0d956cd860
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b7df56b0f15b9fd346dc786ab265d772135795a8
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-macos-devices-in-microsoft-intune"></a>VPN-Einstellungen für macOS-Geräte in Microsoft Intune
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>Konfigurieren von VPN-Einstellungen für macOS-Geräte in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+In diesem Artikel werden die Intune-Einstellungen veranschaulicht, die Sie verwenden können, um VPN-Verbindungen auf macOS-Geräten zu konfigurieren.
+
 Je nach den ausgewählten Einstellungen können nicht alle Werte in der folgenden Liste konfiguriert werden.
 
-## <a name="base-vpn-settings"></a>**Grundlegende VPN-Einstellungen**
+## <a name="base-vpn-settings"></a>Grundlegende VPN-Einstellungen
 
-**Verbindungsname:** Geben Sie einen Namen für diese Verbindung ein. Endbenutzern wird dieser Name angezeigt, wenn sie auf ihrem Gerät die Liste der verfügbaren VPN-Verbindungen durchsuchen.
+**Verbindungsname:** Geben Sie einen Namen für diese Verbindung ein. Benutzern wird dieser Name angezeigt, wenn sie auf ihrem Gerät die Liste der verfügbaren VPN-Verbindungen durchsuchen.
 - **IP-Adresse oder FQDN:** Geben Sie die IP-Adresse oder den vollqualifizierten Domänennamen des VPN-Servers an, mit dem Geräte eine Verbindung herstellen. Beispiele: **192.168.1.1**, **vpn.contoso.com**.
 - **Authentifizierungsmethode:** Wählen Sie unter folgenden Optionen aus, wie sich Geräte beim VPN-Server authentifizieren:
     - **Zertifikate:** Wählen Sie unter **Authentifizierungszertifikat** ein zuvor erstelltes SCEP- oder PKCS-Zertifikatprofil zum Authentifizieren der Verbindung aus. Ausführliche Informationen zu Zertifikatprofilen finden Sie unter [Konfigurieren von Zertifikaten](certificates-configure.md).
@@ -37,11 +37,11 @@ Je nach den ausgewählten Einstellungen können nicht alle Werte in der folgende
 - **Verbindungstyp:** Wählen Sie den VPN-Verbindungstyp in der folgenden Liste von Anbietern aus:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
     - **Benutzerdefiniertes VPN**
-- **Tunneling teilen** - **Aktivieren** oder **deaktivieren** Sie diese Option, mit der Geräte anhand des Datenverkehrs selbst entscheiden können, welche Verbindung verwendet werden soll. Beispiel: Ein Benutzer in einem Hotel verwendet die VPN-Verbindung zum Zugreifen auf Arbeitsdateien, jedoch das Standardnetzwerk des Hotels für normales Webbrowsen.
+- **Tunneling teilen** - **Aktivieren** oder **Deaktivieren** Sie diese Option, mit der Geräte anhand des Datenverkehrs selbst entscheiden können, welche Verbindung verwendet werden soll. Beispiel: Ein Benutzer in einem Hotel verwendet die VPN-Verbindung zum Zugreifen auf Arbeitsdateien, jedoch das Standardnetzwerk des Hotels für normales Webbrowsen.
 
 <!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you assign the software. For more information, see [How to assign and monitor apps](apps-deploy.md). --->
 

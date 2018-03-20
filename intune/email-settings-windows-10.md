@@ -1,35 +1,34 @@
 ---
-title: "Intune-E-Mail-Einstellungen für Windows 10-Geräte"
-titleSuffix: Azure portal
-description: "In diesem Artikel erfahren Sie etwas über die Intune-Einstellungen, die Sie zum Konfigurieren von E-Mail-Verbindungen auf Windows 10-Geräten verwenden können."
+title: "E-Mail-Einstellungen für Windows 10-Geräte in Microsoft Intune"
+titleSuffix: 
+description: "In diesem Artikel erhalten Sie Informationen zu den Microsoft Intune-Einstellungen, mit denen Sie E-Mail-Einstellungen auf Windows 10-Geräten konfigurieren können."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 02/15/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 2ffafbd0-4b5d-4c86-a46b-611f9b7a58e5
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3ea7974600daccb8308cd558ccb365c2f5e8bff
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b02579895123995f9b4205d64e9bf67ce04de746
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="email-profile-settings-for-windows-10-devices-in-microsoft-intune"></a>E-Mail-Profileinstellungen für Windows 10-Geräte in Microsoft Intune
+# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>E-Mail-Profileinstellungen in Microsoft Intune für Windows 10-Geräte
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+In diesem Artikel werden Ihnen die E-Mail-Profileinstellungen gezeigt, die Sie für Ihre Windows 10-Geräte konfigurieren können.
 
 
 - **E-Mail-Server:** Der Hostname Ihres Exchange-Servers.
-- **Kontoname:** Der Anzeigename für das E-Mail-Konto so, wie er den Benutzern auf ihren Geräten angezeigt wird.
-- **Benutzernamensattribut aus AAD:** Dies ist das Attribut in Active Directory (AD) oder Azure AD, das verwendet wird, um den Benutzernamen für dieses E-Mail-Profil zu generieren. Wählen Sie **Primäre SMTP-Adresse** aus, z.B. **user1@contoso.com**, oder **Benutzerprinzipalname**, z.B. **user1** oder **user1@contoso.com**.
+- **Kontoname** – Der Anzeigename für das E-Mail-Konto so, wie er den Benutzern auf ihren Geräten angezeigt wird.
+- **Benutzernamensattribut aus AAD:** Das Attribut in Active Directory (AD) oder Azure AD, mit dem der Benutzername für dieses E-Mail-Profil generiert wird. Wählen Sie **Primäre SMTP-Adresse** aus, z.B. **user1@contoso.com**, oder **Benutzerprinzipalname**, z.B. **user1** oder **user1@contoso.com**.
 - **E-Mail-Adressattribut aus AAD:** Die Art der Generierung der E-Mail-Adresse für den Benutzer auf den einzelnen Geräten. Wählen Sie **Primäre SMTP-Adresse** aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname** aus, um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden.
 
 
@@ -42,7 +41,7 @@ ms.lasthandoff: 01/25/2018
 ## <a name="synchronization-settings"></a>Synchronisierungseinstellungen
 
 - **Menge an E-Mails für die Synchronisierung:** Wählen Sie die Anzahl der Tage von E-Mails aus, die synchronisiert werden sollen, oder wählen Sie **Unbegrenzt** aus, um alle verfügbaren E-Mail-Nachrichten zu synchronisieren.
-- **Synchronisierungszeitplan:** Wählen Sie den Zeitplan aus, nach dem Geräte mit Daten vom Exchange-Server synchronisiert werden. Sie können auch **Beim Erhalt von Nachrichten** auswählen, wobei die Daten sofort beim Eintreffen synchronisiert werden, oder **Manuell**, wobei der Benutzer des Geräts die Synchronisierung initiieren muss.
+- **Synchronisierungszeitplan** – Wählen Sie den Zeitplan aus, nach dem Geräte mit Daten vom Exchange-Server synchronisiert werden. Sie können auch **Beim Erhalt von Nachrichten** auswählen, wobei die Daten sofort beim Eintreffen synchronisiert werden, oder **Manuell**, wobei der Benutzer des Geräts die Synchronisierung initiieren muss.
 
 ## <a name="content-sync-settings"></a>Inhaltssynchronisierungseinstellungen
 

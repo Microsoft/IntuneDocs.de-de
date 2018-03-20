@@ -1,22 +1,22 @@
 ---
 title: Reduzieren von Helpdeskkosten
+titlesuffix: Microsoft Intune
 description: "Reduzieren von Helpdeskkosten mit Self-Service-Kennwortzurücksetzung"
 keywords: "Azure Active Directory-SSPR-Kennwortzurücksetzung"
-author: arob98
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 08/27/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: e018e31d-e524-4b41-8f47-399ab0ead6ca
-ms.reviewer: pchacon
 ms.suite: ems
-ms.openlocfilehash: ead246477ed4fe50798df7023c32041cb30a39f4
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: e2bd79e33080a0cc402d38f45b72ddbe9fd7816b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Reduzieren von Helpdeskkosten mit Self-Service-Kennwortzurücksetzung
 
@@ -34,7 +34,7 @@ Sie können Mitarbeitern erlauben, Kennwörter von Geschäfts-, Schul- oder Unik
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Erfahren Sie mehr über die folgenden Themen:
+Erfahren Sie mehr über die folgenden Artikel:
 * [Bewährte Methoden für Kennwörter](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [Lizenzanforderungen für Azure AD-Self-Service-Kennwortzurücksetzung](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 

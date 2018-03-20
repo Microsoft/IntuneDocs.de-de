@@ -1,29 +1,30 @@
 ---
-title: "Einstellungen für Geräteeinschränkungen für Windows Phone 8.1 in Intune"
-titleSuffix: Azure portal
-description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows Phone 8.1-Geräten kennen."
+title: "Einstellungen für Geräteeinschränkungen für Windows Phone 8.1 in Microsoft Intune"
+titleSuffix: 
+description: "In diesem Artikel erhalten Sie Informationen zu den Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows Phone 8.1-Geräten."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98734b51cf72a097c6b4a9e425e80457b0b39afa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 808c8e9ac1ef944b69ae8e548c62d4c6366820d0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Einstellungen für Geräteeinschränkungen für Windows Phone 8.1 in Microsoft Intune
+# <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Windows Phone 8.1 in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+In diesem Artikel erhalten Sie Informationen zu den Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für Windows Phone 8.1-Geräte konfigurieren können.
+
 
 ## <a name="general"></a>Allgemein
 
@@ -69,13 +70,13 @@ Suchen Sie im [Windows Phone Store](https://www.microsoft.com/store/apps/windows
 
 Öffnen Sie die Seite der App, und kopieren Sie die URL in die Zwischenablage. Sie können diese URL nun in der Liste kompatibler oder nicht kompatibler Apps verwenden.
 
-Beispiel: Durchsuchen Sie den Store nach der Skype-App. Die URL, die Sie verwenden, ist **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+Beispiel: Durchsuchen Sie den Store nach der Skype-App. Die von Ihnen verwendete URL lautet **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
 
 
 ### <a name="additional-options"></a>Zusätzliche Optionen
 
-Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Datei im Format <*App-URL*>, <*App-Name*>, <*App-Herausgeber*> aufzufüllen. Sie können auch auf **Exportieren** klicken, um eine CSV-Datei mit dem Inhalt der Liste der eingeschränkten Apps im gleichen Format zu erstellen.
+Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Datei im Format <*App-URL*>, <*App-Name*>, <app publisher> aufzufüllen. Sie können stattdessen aber auch auf **Exportieren** klicken, um eine CSV-Datei mit dem Inhalt der Liste der eingeschränkten Apps im gleichen Format zu erstellen.
 
 
 ## <a name="browser"></a>Browser

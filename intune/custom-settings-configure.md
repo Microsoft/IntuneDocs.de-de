@@ -1,51 +1,53 @@
 ---
-title: "Konfigurieren von benutzerdefinierten Intune-Geräteeinstellungen"
-titleSuffix: Azure portal
-description: "Erfahren Sie, wie Sie mit Intune benutzerdefinierte Einstellungen auf Geräten konfigurieren, die Sie verwalten.\""
+title: "Verwenden von benutzerdefinierten Geräteeinstellungen in Microsoft Intune: Azure | Microsoft-Dokumentation"
+description: "Hinzufügen oder Erstellen von Profilen zur Verwendung von benutzerdefinierten Einstellungen für Windows-, Android- und iOS-Geräte unter Verwendung von Microsoft Intune"
 keywords: 
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 03/06/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cafcf95cc9025872ce0fbb9605c9d820aa7a19c0
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: adecb332c91f17cf92362295b6b0c81445f5acaf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Konfigurieren von benutzerdefinierten Geräteeinstellungen in Microsoft Intune
+# <a name="create-a-profile-with-custom-settings-in-intune"></a>Erstellen eines Profils mit benutzerdefinierten Einstellungen in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="when-to-use-custom-settings"></a>Verwenden von benutzerdefinierten Einstellungen
+Möglicherweise sind nicht alle Einstellungen in Intune integriert, die Sie verwenden wollen oder müssen. Alternativ sollten Sie eine Einstellung verwenden, die für andere Geräteprofile verfügbar ist. Wenn Sie diese Einstellungen verwenden möchten, erstellen Sie ein Geräteprofil, und konfigurieren Sie das Profil mit benutzerdefinierten Einstellungen.
 
-Benutzerdefinierte Geräteeinstellungen können nützlich sein, wenn Intune nicht über die Einstellungen verfügt, die Sie konfigurieren möchten, diese aber für andere Geräteprofile verfügbar sind.
-Benutzerdefinierte Einstellungen werden für jede Plattform anders konfiguriert. Bei Android- und Windows-Geräten können Sie beispielsweise OMA-URI-Werte (Open Mobile Alliance Uniform Resource Identifier) zum Steuern von Features auf Geräten angeben. Auf Apple-Geräten können Sie eine Datei importieren, die Sie mit [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) erstellt haben.
+In diesem Artikel werden die grundlegenden Schritte zum Erstellen eines Profils mit benutzerdefinierten Einstellungen aufgeführt. Außerdem werden Links zu Artikeln bereitgestellt, in denen detaillierter erläutert wird, wie Sie benutzerdefinierte Einstellungen für die verschiedenen Plattformen erstellen können.
 
-Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfigurieren von Profilen mit benutzerdefinierten Einstellungen kennen. In den weiterführenden Themen zu den einzelnen Plattformen erfahren Sie etwas über Besonderheiten der jeweiligen Geräte.
+## <a name="custom-settings-on-different-platforms"></a>Benutzerdefinierte Einstellungen für verschiedene Plattformen
+Benutzerdefinierte Einstellungen werden für jede Plattform anders konfiguriert. Bei Android- und Windows-Geräten können Sie beispielsweise OMA-URI-Werte (Open Mobile Alliance Uniform Resource Identifier) zum Steuern von Features auf Geräten eingeben. Auf Apple-Geräten können Sie eine Datei importieren, die Sie mit [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) erstellt haben.
 
-## <a name="create-a-device-profile-containing-custom-settings"></a>Erstellen eines Geräteprofils mit benutzerdefinierten Einstellungen
+## <a name="create-the-profile"></a>Erstellen des Profils
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
-2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
-3. Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen** aus.
-4. Geben Sie auf dem Blatt **Profil erstellen** einen **Namen** und eine **Beschreibung** für das benutzerdefinierte Profil ein.
-5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die Sie benutzerdefinierte Einstellungen anwenden möchten. Derzeit können Sie eine der folgenden Plattformen für die benutzerdefinierte Geräteeinstellungen auswählen:
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie auf **Microsoft Intune**.
+3. Klicken Sie auf die Option **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+4. Geben Sie einen **Namen** und eine **Beschreibung** für das benutzerdefinierte Profil an.
+5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die benutzerdefinierte Einstellungen angewendet werden sollen. Sie können eine der folgenden Plattformen verwenden:
+
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
+    - **Windows 8.1 und höher**
     - **Windows 10 und höher**
+
 6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Benutzerdefiniert** aus.
-7. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. In den folgenden Themen finden Sie ausführliche Informationen zu den Einstellungen für die einzelnen Plattformen:
+7. Die konfigurierbaren Einstellungen variieren je nach ausgewählter Plattform. Unter den folgenden Links finden Sie nähere Details zu benutzerdefinierten Einstellungen für die jeweiligen Plattformen:
+
     - [Einstellungen für Android](custom-settings-android.md)
     - [Einstellungen für iOS](custom-settings-ios.md)
     - [Einstellungen für macOS](custom-settings-macos.md)
@@ -53,7 +55,7 @@ Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfiguri
     - [Einstellungen für Windows 10](custom-settings-windows-10.md)
     - [Einstellungen für Windows Holographic for Business](custom-settings-windows-holographic.md)
     - [Einstellungen für Android for Work](custom-settings-android-for-work.md)
-8. Navigieren Sie anschließend zurück zum Blatt **Profil erstellen**, und klicken Sie auf **Erstellen**.
 
-Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
-Wenn Sie fortfahren und dieses Profil Gruppen zuweisen möchten, lesen Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md) nach.
+8. Wenn Sie fertig sind, klicken Sie auf **Erstellen**.
+
+Das Profil wird erstellt und in der Profilliste angezeigt. Informationen zum Zuweisen dieses Profils an Gruppen finden Sie unter [Zuweisen von Microsoft Intune-Geräteprofilen](device-profile-assign.md).
