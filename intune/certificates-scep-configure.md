@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 1/18/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61193cc96f0ea22e9a80d24fe8ee0499e80d4202
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: d723bc4d5032a7a5c330367fe83eabd4763917a2
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Konfigurieren und Verwalten von SCEP-Zertifikaten mit Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -174,7 +174,7 @@ In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
 
         -   **Webserver** &gt; **Sicherheit** &gt; **Anforderungsfilterung**
 
-        -   **Webserver** &gt; **Anwendungsentwicklung** &gt;  **ASP.NET 3.5**. Bei der Installation von ASP.NET 3.5 wird .NET Framework 3.5 installiert. Installieren Sie bei Installation von .NET Framework 3.5 sowohl das Feature **.NET Framework 3.5** als auch die **HTTP-Aktivierung**.
+        -   **Webserver** &gt; **Anwendungsentwicklung** &gt; ** ASP.NET 3.5**. Bei der Installation von ASP.NET 3.5 wird .NET Framework 3.5 installiert. Installieren Sie bei Installation von .NET Framework 3.5 sowohl das Feature **.NET Framework 3.5** als auch die **HTTP-Aktivierung**.
 
         -   **Webserver** &gt; **Anwendungsentwicklung** &gt; **ASP.NET 4.5**. Bei der Installation von ASP.NET 4.5 wird .NET Framework 4.5 installiert. Installieren Sie bei der Installation von .NET Framework 4.5 das Kernfeature **.NET Framework 4.5**, das Feature **ASP.NET 4.5** und das Feature **WCF-Dienste** &gt; **HTTP-Aktivierung**.
 
@@ -304,11 +304,11 @@ Im Rahmen dieser Aufgabe führen Sie folgende Aktionen aus:
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>So wird der Certificate Connector heruntergeladen, installiert und konfiguriert
 ![ConnectorDownload](./media/certificates-download-connector.png)   
  
-1. Melden Sie sich beim Azure-Portal an. 
-2. Klicken Sie auf **Weitere Dienste** > **Überwachung + Verwaltung** > **Intune**.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
-4. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Zertifizierungsstelle** aus.
-5. Klicken Sie auf **Hinzufügen** und dann auf **Connectordatei herunterladen**. Speichern Sie den Download an einem Speicherort, auf den Sie auf dem Server, auf dem der Connector installiert wird, zugreifen können. 
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
+4. Klicken Sie im Bereich **Gerätekonfiguration** auf die Option **Zertifizierungsstelle**.
+5. Klicken Sie zuerst auf **Hinzufügen** und dann auf **Laden Sie die Connectordatei herunter**. Speichern Sie den Download an einem Speicherort, auf den Sie auf dem Server, auf dem der Connector installiert wird, zugreifen können. 
 6.  Nachdem der Download abgeschlossen ist, führen Sie das heruntergeladene Installationsprogramm (**ndesconnectorssetup.exe**) auf dem Server aus, der die Rolle „Registrierungsdienst für Netzwerkgeräte“ (Network Device Enrollment Service, NDES) hostet. Das Installationsprogramm installiert auch das Richtlinienmodul für NDES und den CRP-Webdienst. (Der CRP-Webdienst „CertificateRegistrationSvc“ wird als Anwendung in IIS ausgeführt.)
 
     > [!NOTE]
@@ -346,10 +346,10 @@ Um zu überprüfen, das der Dienst ausgeführt wird, öffnen Sie einen Browser, 
 
 ## <a name="how-to-create-a-scep-certificate-profile"></a>So erstellen Sie ein SCEP-Zertifikatprofil
 
-1. Wählen Sie im Azure-Portal die Workload **Geräte konfigurieren** aus.
-2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
-3. Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen** aus.
-4. Geben Sie auf dem Blatt **Profil erstellen** einen **Namen** und eine **Beschreibung** für das SCEP-Zertifikatprofil ein.
+1. Klicken Sie im Azure-Portal auf die Workload **Gerätekonfiguration**.
+2. Klicken Sie im Bereich **Gerätekonfiguration** auf die Option **Verwalten** > **Profile**.
+3. Klicken Sie im Bereich „Profile“ auf die Option **Profil erstellen**.
+4. Geben Sie im Bereich **Profil erstellen** einen **Namen** und eine **Beschreibung** für das SCEP-Zertifikatprofil ein.
 5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform für dieses SCEP-Zertifikat aus. Derzeit können Sie eine der folgenden Plattformen für Einstellungen für Geräteeinschränkungen auswählen:
     - **Android**
     - **iOS**
@@ -358,7 +358,7 @@ Um zu überprüfen, das der Dienst ausgeführt wird, öffnen Sie einen Browser, 
     - **Windows 8.1 und höher**
     - **Windows 10 und höher**
 6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **SCEP-Zertifikat** aus.
-7. Konfigurieren Sie auf dem Blatt **SCEP-Zertifikat** die folgenden Einstellungen:
+7. Konfigurieren Sie im Bereich **SCEP-Zertifikat** die folgenden Einstellungen:
     - **Gültigkeitsdauer des Zertifikats:** Wenn Sie den Befehl **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** für die ausstellende Zertifizierungsstelle ausgeführt haben, die eine benutzerdefinierte Gültigkeitsdauer ermöglicht, können Sie die verbleibende Dauer bis zum Ablauf des Zertifikats angeben.<br>Sie können einen niedrigeren Wert als den für die Gültigkeitsdauer in der angegebenen Zertifikatvorlage angeben, aber keinen höheren. Beispiel: Wenn die Gültigkeitsdauer des Zertifikats in der Zertifikatvorlage zwei Jahre beträgt, können Sie als Wert ein Jahr angeben, aber nicht fünf Jahre. Zudem muss der Wert niedriger als die verbleibende Gültigkeitsdauer des Zertifikats der ausstellenden Zertifizierungsstelle sein. 
     - **Schlüsselspeicheranbieter (KSP):** (Windows Phone 8.1, Windows 8.1, Windows 10) Geben Sie an, wo der Schlüssel für das Zertifikat gespeichert wird. Wählen Sie einen der folgenden Werte aus:
         - **Bei TPM-KSP (Trusted Platform Module) registrieren, falls vorhanden, andernfalls Software-KSP**
@@ -385,9 +385,9 @@ Um zu überprüfen, das der Dienst ausgeführt wird, öffnen Sie einen Browser, 
     - **Registrierungseinstellungen**
         - **Erneuerungsschwellenwert (%):** Geben Sie den Prozentsatz der Zertifikatgültigkeitsdauer an, die verbleibt, bevor das Gerät eine Erneuerung des Zertifikats anfordert.
         - **SCEP-Server-URLs:** Geben Sie eine oder mehrere URLs für die NDES-Server an, die Zertifikate über SCEP ausstellen. 
-8. Navigieren Sie anschließend zurück zum Blatt **Profil erstellen**, und klicken Sie auf **Erstellen**.
+8. Klicken Sie auf **OK**, gehen Sie zurück zum Bereich **Profil erstellen**, und klicken Sie auf **Erstellen**.
 
-Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
+Das Profil wird erstellt und im Bereich „Profilliste“ angezeigt.
 
 ## <a name="how-to-assign-the-certificate-profile"></a>Zuweisen des Zertifikatprofils
 

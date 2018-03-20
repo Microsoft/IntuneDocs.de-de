@@ -6,7 +6,7 @@ keywords:
 author: MicrosoftGuyJFlo
 ms.author: joflore
 manager: dougeby
-ms.date: 11/17/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c02ea2df53b1524933cea72a8bcc3de89772e62
-ms.sourcegitcommit: 0a5f424a8f683daa919b13b5c363173040d561c8
+ms.openlocfilehash: 0f2d37a9033464381de5c23a558d0205f85fe56a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Einrichten des Intune Certificate Connectors für den Symantec PKI-Manager-Webdienst
 
@@ -166,8 +166,11 @@ Verwenden Sie die folgenden Schritte, um das RA-Zertifikat (Registrierungsautori
 
 Wenn Sie den neuesten Intune Certificate Connector bereits für eine vorhandene Microsoft-Zertifizierungsstelle verwenden und Unterstützung für eine Symantec-Zertifizierungsstelle hinzufügen möchten, überspringen Sie diesen Schritt. Laden Sie andernfalls den neuesten Intune Certificate Connector aus dem Intune-Verwaltungsportal herunter, und befolgen Sie die folgenden Anweisungen.
 
-1. Melden Sie sich mit Ihren Administratoranmeldeinformationen für den Intune-Mandanten unter https://portal.azure.com an, und suchen Sie nach Intune Ressourcen.
-2. Laden Sie „NDESConnectorSetup.exe“ über **Microsoft Intune** > **Gerätekonfiguration** > **Zertifizierungsstelle** > **Certificate Connector herunterladen** herunter.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
+4. Klicken Sie im Bereich **Gerätekonfiguration** auf die Option **Zertifizierungsstelle**.
+5. Klicken Sie zuerst auf **Hinzufügen** und dann auf **Laden Sie die Connectordatei herunter**. Speichern Sie den Download an einem Speicherort, auf den Sie auf dem Server, auf dem der Connector installiert wird, zugreifen können. 
 3. Führen Sie „NDESConnectorSetup.exe“ mit erweiterten Berechtigungen aus.
 
     ein. Wählen Sie auf dem Bildschirm **Installationsoptionen** die Option **PFX-Verteilung** aus, wie im folgenden Screenshot gezeigt.  Führen Sie das verbleibende Setup mit der Standardauswahl durch.
@@ -233,7 +236,7 @@ Die für mit Intune verwaltete Geräte bereitgestellten PKCS-Zertifikate müssen
 
     ein. Melden Sie sich mit den Administratoranmeldeinformationen für den Intune-Mandanten beim [Azure-Portal](https://portal.azure.com) an, und suchen Sie nach Intune Ressourcen.
 
-    b. Erstellen Sie ein vertrauenswürdiges Zertifikatprofil über **Microsoft Intune** > **Gerätekonfiguration** - **Profile** > **Profil erstellen**.
+    b. Erstellen Sie ein vertrauenswürdiges Zertifikatprofil über **Microsoft Intune** > **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 
     c. Geben Sie die erforderliche Informationen in den Feldern **Name** und **Beschreibung** an, und wählen Sie dann die Zielplattform aus. 
 
@@ -264,7 +267,7 @@ Die Zertifikatprofil-OID ist einer Zertifikatprofilvorlage in der Symantec-Zerti
 ## <a name="create-a-pkcs-certificate-profile"></a>Erstellen eines PKCS-Zertifikatprofils
 
 1. Melden Sie sich mit Ihren Administratoranmeldeinformationen für den Intune-Mandanten beim [Azure-Portal](https://portal.azure.com) an, und suchen Sie nach Intune Ressourcen.
-2. Erstellen Sie ein PKCS-Zertifikatprofil über **Microsoft Intune** > **Gerätekonfiguration > Profile** > **Profil erstellen** > **PKCS-Zertifikat**.
+2. Erstellen Sie ein PKCS-Zertifikatprofil über **Microsoft Intune** > **Gerätekonfiguration > Profile** > **Profil erstellen**.
 
     ein. Geben Sie die erforderlichen Informationen in den Feldern **Name** und **Beschreibung** an, und wählen Sie dann die Zielplattform aus.
 
