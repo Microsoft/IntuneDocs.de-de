@@ -1,12 +1,12 @@
 ---
-title: "Intune-Filtereinstellungen für Webinhalte für iOS-Geräte"
-titlesuffix: Azure portal
-description: "Lernen Sie die Einstellungen kennen, die Sie verwenden können, um den Zugriff von iOS-Geräten auf Websites zuzulassen und zu blockieren.\""
+title: "Filtereinstellungen für Webinhalte für iOS-Geräte in Microsoft Intune"
+titlesuffix: 
+description: "Informationen zu den Einstellungen in Microsoft Intune, die Sie verwenden können, um den Zugriff von iOS-Geräten auf Websites zulassen und blockieren können."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/18/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +14,29 @@ ms.technology:
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f46ddd58434be750bac74fb99b526d64fccdb179
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a401a3a04d10587606b8ec4862a62e551e7aadf0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Filtereinstellungen für Webinhalte für iOS-Geräte
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Konfigurieren Sie mit diesen Einstellungen URLs, auf die Endbenutzer in Webbrowsern auf iOS-Geräten zugreifen oder nicht zugreifen dürfen. Ihnen stehen zwei Verfahren zur Konfigurierung von URLs zur Verfügung:
+In diesem Artikel werden die Microsoft Intune-Einstellungen dargestellt, die Sie verwenden können, um auf iOS-Geräten den URL-Zugriff der Browser kontrollieren zu können.
+
+Ihnen stehen zwei Verfahren zum Konfigurieren von URLs zur Verfügung:
 
 - **Konfigurieren von URLs**: Verwenden Sie den integrierten Webfilter von Apple, der nach nicht jugendfreien Inhalten wie Anzüglichkeiten oder Obszönitäten sucht. Diese Funktion bewertet jede Webseite, sobald diese geladen ist, und versucht, ungeeignete Inhalte zu identifizieren und zu blockieren. Darüber hinaus können Sie URLs konfigurieren, die vom Filter nicht geprüft werden. Sie können auch URLs konfigurieren, die unabhängig von den Filtereinstellungen blockiert werden.
 
 - **Nur bestimmte Websites** (nur für den Safari-Webbrowser): Diese URLs werden zu den Lesezeichen des Safari-Browsers hinzugefügt. Benutzer dürfen **nur** diese Websites besuchen, der Zugriff auf andere Websites ist nicht möglich. Verwenden Sie diese Option nur, wenn Sie genau wissen, auf welche URLs Benutzer zugreifen können.
 Wenn Sie hier keine URLs angeben, können Endbenutzer keine Websites außer „microsoft.com“, „microsoft.net“ und „apple.com“ öffnen.
 
-
-
 ## <a name="get-started"></a>Erste Schritte
 
-1. Wählen Sie auf dem Blatt „Gerätefunktionen“ die Option **Webinhaltsfilter (nur überwacht)**.
-2. Wählen Sie auf dem Blatt **Webinhaltsfilter** den **Filtertyp**, den Sie konfigurieren möchten:
+1. Klicken Sie auf der Seite „Gerätefeatures“ auf die Option **Web Content Filter (supervised only)** (Webinhaltsfilter (nur überwacht)).
+2. Klicken Sie auf der Seite **Webinhaltsfilter** auf den **Filtertyp**, den Sie konfigurieren möchten:
     - **Nicht konfiguriert**: Es wird keine Filterung ausgeführt.
     - **Konfigurieren von URLs**
     - **Nur bestimmte Websites**
@@ -45,25 +45,25 @@ Wenn Sie hier keine URLs angeben, können Endbenutzer keine Websites außer „m
 
 ## <a name="configure-urls"></a>Konfigurieren von URLs
 
-1. Wählen Sie auf dem Blatt **Webinhaltsfilter** bei Bedarf eine der folgenden Einstellungen aus:
-   - **Zulässige URLs**: Geben Sie auf dem Blatt **Zulässige URLs** die URLs ein, die Sie zulassen möchten (der Apple-Webfilter wird dadurch umgangen), und drücken Sie nach jeder URL die EINGABETASTE.
+1. Wählen Sie auf der Seite **Webinhaltsfilter** bei Bedarf eine der folgenden Einstellungen aus:
+   - **Zulässige URLs:** Geben Sie auf der Seite **Zulässige URLs** die URLs ein, die Sie zulassen möchten (der Apple-Webfilter wird dadurch umgangen), und drücken Sie nach jeder URL die EINGABETASTE.
      > [!NOTE]
      > Bei den URLs, die Sie hier angeben, handelt es sich um die, die nicht dem Apple-Webfilter unterliegen sollen. Diese URLs stellen keine Liste der einzigen zulässigen Websites dar. Wenn Sie dies wünschen, verwenden Sie **Nur bestimmte Websites**.
 
-   - **Blockierte URLs**: Geben Sie auf dem Blatt **Blockierte URLs** die URLs ein, die Sie blockieren möchten (unabhängig von den Apple-Webfiltereinstellungen), und drücken Sie nach jeder URL die EINGABETASTE.
+   - **Blockierte URLs:** Geben Sie auf der Seite **Blockierte URLs** die URLs ein, die Sie blockieren möchten (unabhängig von den Apple-Webfiltereinstellungen), und drücken Sie nach jeder URL die EINGABETASTE.
 2. Klicken Sie zum Abschluss auf **OK**.
 
 
 ## <a name="specific-websites-only"></a>Nur bestimmte Websites
 
-1. Konfigurieren Sie auf dem Blatt **Webinhaltsfilter** für jede Website, die Sie zulassen möchten, die folgenden Einstellungen:
+1. Konfigurieren Sie im Bereich **Webinhaltsfilter** für jede Website, die Sie zulassen möchten, die folgenden Einstellungen:
     - **URL**: Geben Sie die URL der Website ein, die Sie zulassen möchten, z.B. **http://www.contoso.com**.
     - **Pfad als Lesezeichen speichern**: Geben Sie den Pfad ein, in dem Sie Lesezeichen speichern möchten, z.B. **/Contoso/Business Apps**. Wenn Sie keinen Pfad angeben, wird das Lesezeichen zum Standardordner für Lesezeichen auf dem Gerät hinzugefügt.
     - **Titel**: Geben Sie einen beschreibenden Titel für das Lesezeichen ein.
 2. Klicken Sie auf **Hinzufügen**, wenn Sie die Informationen für die jeweilige Website eingegeben haben.
 3. Klicken Sie zum Abschluss auf **OK**.
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 > Die folgenden URLs werden von Intune automatisch zugelassen.
 > - www.microsoft.com
 > - www.microsoft.net
@@ -71,7 +71,7 @@ Wenn Sie hier keine URLs angeben, können Endbenutzer keine Websites außer „m
 
 ## <a name="finish-up"></a>Fertig stellen
 
-Klicken Sie auf **OK**, um zum Blatt **Profil erstellen** zurückzukehren, und wählen Sie dann **Erstellen** aus.
+Klicken Sie auf **OK**, um zum Bereich **Profil erstellen** zurückzukehren, und klicken Sie dann auf **Erstellen**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/17/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01c90818cf789bdb79b3b4efe5a1db8a2cf1cdfe
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6053eba7bcda74eaf3b2d7de8eecd81487ea3a8d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS-E-Books, die über ein Volumenprogramm erworben wurden, mit Microsoft Intune
 
@@ -52,28 +52,29 @@ Bevor Sie beginnen, rufen Sie ein VPP-Token von Apple ab und laden es in Ihr Int
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>So können Sie einen Apple VPP-Token abrufen und hochladen
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
-1.  Wählen Sie in der Workload **Mobile Apps** die Option **Setup** > **iOS-VPP-Token** aus.
-2.  Klicken Sie auf dem Blatt mit der Liste der VPP-Token auf **Hinzufügen**.
-3.  Geben Sie auf dem Blatt **Neues VPP-Token** die folgenden Informationen an:
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Mobile Apps**.
+1.  Klicken Sie in der Workload **Mobile Apps** auf **Setup** > **iOS-VPP-Token**.
+2.  Klicken Sie im Bereich mit der Liste der VPP-Token auf **Erstellen**.
+3.  Geben Sie im Bereich **Neues VPP-Token** die folgenden Informationen an:
     - **VPP-Tokendatei:** Stellen Sie sicher, dass Sie sich für das Volume Purchase Program für Unternehmen oder das Volume Purchase Program für Bildungseinrichtungen registriert haben. Laden Sie dann das Apple-VPP-Token für Ihr Konto herunter und wählen es hier aus.
     - **Apple-ID:** Geben Sie die Apple-ID des Kontos ein, das dem Programm für Volumenlizenzen zugeordnet ist.
     - **Typ des VPP-Kontos:** Wählen Sie **Unternehmen** oder **Bildungswesen** aus.
-4. Klicken Sie abschließend auf **Hochladen**.
+4. Klicken Sie auf **Erstellen**, wenn Sie fertig sind.
 
-Das Token wird auf dem Blatt mit der Liste der Token angezeigt.
+Das Token wird im Bereich mit der Liste der Token angezeigt.
 
 
 Sie können die von Apple gespeicherten Daten jederzeit mit Intune synchronisieren, indem Sie **Jetzt synchronisieren** wählen.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>So weisen Sie per Volumenlizenz erworbene Apps zu
 
+3. Klicken Sie im Bereich **Intune** auf die Option **eBooks**.
 1. Wählen Sie in der Workload **E-Books** die Option **Verwalten** > **Alle E-Books** aus.
-2. Wählen Sie auf dem Blatt mit der Liste der Bücher das Buch aus, das Sie zuweisen möchten, und dann **...** > **Gruppen zuweisen**.
-3. Wählen Sie auf dem Blatt <*Buchname*> - **Zugewiesene Gruppen** die Option **Verwalten** > **Zugewiesene Gruppen** aus.
-4. Wählen Sie **Gruppen zuweisen** und dann auf dem Blatt **Gruppen auswählen** die Azure AD-Benutzergruppen aus, denen Sie das Buch zuweisen möchten. Gerätegruppen werden momentan nicht unterstützt.
+2. Wählen Sie im Bereich mit der Liste der Bücher das Buch aus, das Sie zuweisen möchten, und klicken Sie dann auf **...** > **Gruppen zuweisen**.
+3. Klicken Sie im Bereich <*Buchname*> - **Zugewiesene Gruppen** auf **Verwalten** > **Zugewiesene Gruppen**.
+4. Klicken Sie auf **Gruppen zuweisen**, und wählen Sie dann im Bereich **Gruppen auswählen** die Azure AD-Benutzergruppen aus, denen Sie das Buch zuweisen möchten. Gerätegruppen werden momentan nicht unterstützt.
 Wählen Sie eine Zuweisungsaktion vom Typ **Verfügbar** oder **Erforderlich** aus. 
 5. Wählen Sie abschließend **Speichern** aus.
 

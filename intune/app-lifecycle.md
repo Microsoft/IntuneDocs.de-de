@@ -1,53 +1,57 @@
 ---
-title: "Übersicht über den App-Lebenszyklus für Intune"
-description: "Informationen zum Lebenszyklus von durch Intune verwalteten Apps – vom Hinzufügen bis zu ihrer endgültigen Deaktivierung."
+title: "Übersicht über den App-Lebenszyklus für Microsoft Intune"
+description: "Informationen zum Lebenszyklus von verwalteten Apps in Microsoft Intune. Der App-Lebenszyklus umfasst das Hinzufügen, Bereitstellen, Konfigurieren, und Außerkraftsetzen von Apps."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/07/2017
-ms.topic: article
+ms.date: 03/02/2018
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 87bd0ceed846052444e4dac4366e3a0304b1452c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.custom: apps
+ms.openlocfilehash: 732323d1d882a256128ae731cab68656126583b2
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="overview-of-the-app-lifecycle"></a>Übersicht über den App-Lebenszyklus
+# <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Übersicht über den App-Lebenszyklus in Microsoft Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Der Intune-Lebenszyklus von Apps beginnt, wenn eine App hinzugefügt wird, und durchläuft weitere Phasen, bis Sie die App entfernen.
+Der Microsoft Intune-Lebenszyklus von Apps beginnt, wenn eine App hinzugefügt wird, und durchläuft weitere Phasen, bis Sie die App entfernen. Wenn Sie verstanden haben, was in den einzelnen Phasen geschieht, verfügen Sie über sämtliche Informationen, die Sie für die ersten Schritte zur App-Verwaltung in Intune benötigen.
 
 ![Der App-Lebenszyklus](./media/app-lifecycle.png "Der Intune-App-Lebenszyklus")
 
 ## <a name="add"></a>Hinzufügen
 
-Der erste Schritt bei der App-Bereitstellung besteht darin, die Apps, die Sie verwalten und zuweisen möchten, zu Intune hinzuzufügen. Sie können zwar mit vielen verschiedenen App-Typen arbeiten, aber die grundlegenden Verfahren sind identisch. Intune ermöglicht das Hinzufügen von Apps sowohl für [registrierte Geräte](apps-add.md) ([klassisches Portal](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)) als auch für [Windows-PCs, die Sie mit der Intune-Clientsoftware verwalten](/intune-classic/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune).
+Der erste Schritt bei der App-Bereitstellung besteht darin, die Apps, die Sie verwalten und zuweisen möchten, zu Intune hinzuzufügen. Sie können zwar mit vielen verschiedenen App-Typen arbeiten, aber die grundlegenden Verfahren sind identisch. Mithilfe von Intune können Sie verschiedene App-Typen hinzufügen. Dazu gehören u.a. intern erstellte (branchenspezifische) Apps, Apps aus dem Store, integrierte Apps und Apps im Web. Weitere Informationen zu den einzelnen App-Typen finden Sie unter [So fügen Sie eine App zu Microsoft Intune hinzu](apps-add.md). 
 
 ## <a name="deploy"></a>Bereitstellen
 
-Nachdem Sie die App in Intune hinzugefügt haben, können Sie sie [auf den verwalteten Geräten bereitstellen](apps-deploy.md) ([klassisches Portal](/intune-classic/deploy-use/deploy-apps)). Intune vereinfacht diesen Vorgang, und nachdem die App bereitgestellt wurde, können Sie den [Erfolg der Bereitstellung über die Intune-Verwaltungskonsole überwachen](apps-monitor.md) ([klassisches Portal](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune)). Darüber hinaus können Sie in einigen App-Stores, wie z.B. dem [Apple](vpp-apps-ios.md) ([klassisches Portal](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)) und dem [Windows](windows-store-for-business.md) App Store ([klassisches Portal](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)), in großem Umfang App-Lizenzen für Ihr Unternehmen erwerben. Intune kann Daten mit diesen Stores synchronisieren, sodass Sie die Bereitstellung und Verfolgung der Lizenznutzung für diese Typen von Apps direkt von der Intune-Verwaltungskonsole aus bereitstellen und verfolgen können.
+Nachdem Sie die App zu Intune hinzugefügt haben, können Sie diese [für die von Ihnen verwalteten Benutzer und Geräte bereitstellen](apps-deploy.md). Intune vereinfacht diesen Vorgang, und nachdem die App bereitgestellt wurde, können Sie [den Erfolg der Bereitstellung über Intune im Azure-Portal überwachen](apps-monitor.md). Darüber hinaus können Sie in einigen App-Stores wie dem [Apple](vpp-apps-ios.md)- und dem [Windows](windows-store-for-business.md)-App Store App-Lizenzen für Ihr Unternehmen in einem Massenvorgang erwerben. Intune kann Daten mit diesen Stores synchronisieren, sodass Sie die Bereitstellung und Verfolgung der Lizenznutzung für diese Typen von Apps direkt von der Intune-Verwaltungskonsole aus bereitstellen und verfolgen können.
 
 ## <a name="configure"></a>Konfigurieren
 
-Im Rahmen des App-Lebenszyklus werden regelmäßig neue Versionen von Apps veröffentlicht. Intune bietet Tools, mit denen Sie die bereitgestellten Apps ([klassisches Portal](/intune-classic/deploy-use/update-apps-using-microsoft-intune)) leicht auf eine neuere Version [aktualisieren können](apps-add.md). Darüber hinaus können Sie für einige Apps zusätzliche Funktionalität konfigurieren, zum Beispiel:
-- Mit [iOS-App-Konfigurationsrichtlinien](app-configuration-policies-use-ios.md) ([klassisches Portal](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)) können Sie Einstellungen für kompatible iOS-Apps angeben, die bei Ausführung der App verwendet werden. Eine App kann beispielsweise bestimmte Brandingeinstellungen oder den Namen eines Servers für die Verbindungsherstellung abfragen.
-- [Verwaltete Browserrichtlinien](app-configuration-managed-browser.md) ([klassisches Portal](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies)) helfen Ihnen beim Konfigurieren von Einstellungen für den Intune Managed Browser, der den Standardbrowser für das Gerät ersetzt und Ihnen das Einschränken der Websites ermöglicht, die die Benutzer besuchen können.
+Im Rahmen des App-Lebenszyklus werden regelmäßig neue Versionen von Apps veröffentlicht. Intune bietet Tools, mit denen Sie die bereitgestellten Apps leicht auf eine neuere Version [aktualisieren können](apps-add.md). Darüber hinaus können Sie für einige Apps zusätzliche Funktionalität konfigurieren, zum Beispiel:
+- Mit [iOS-App-Konfigurationsrichtlinien](app-configuration-policies-use-ios.md) können Sie Einstellungen für kompatible iOS-Apps angeben, die bei Ausführung der App verwendet werden. Eine App kann beispielsweise bestimmte Brandingeinstellungen oder den Namen eines Servers abfragen, mit dem diese eine Verbindung herstellen muss.
+- [Verwaltete Browserrichtlinien](app-configuration-managed-browser.md) helfen Ihnen beim Konfigurieren von Einstellungen für den Intune Managed Browser, der den Standardbrowser für das Gerät ersetzt und Ihnen das Einschränken der Websites ermöglicht, die die Benutzer besuchen können.
 
 ## <a name="protect"></a>Schützen
 
 Intune bietet Ihnen viele Möglichkeiten zum Schutz der Daten in Ihren Apps. Die wichtigsten Methoden sind:
-- Der [bedingte Zugriff](conditional-access.md) ([klassisches Portal](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune)) steuert den Zugriff auf E-Mails und andere Dienste basierend auf Bedingungen, die Sie festlegen. Bedingungen sind z.B. Gerätetypen oder die Einhaltung einer von Ihnen bereitgestellten [Gerätekompatibilitätsrichtlinie](device-compliance.md) ([klassisches Portal](/intune-classic/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune)).
-- [App-Schutzrichtlinien](app-protection-policy.md) ([klassisches Portal](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)) arbeiten mit einzelnen Apps, mit denen Sie die von diesen Apps verwendeten Unternehmensdaten schützen können. Beispielsweise können Sie das Kopieren von Daten zwischen nicht verwalteten Apps und von Ihnen verwalteten Apps einschränken, oder Sie können die Ausführung von Apps auf Geräten verhindern, die per Jailbreak oder Rooting manipuliert wurden.
+- Der [bedingte Zugriff](conditional-access.md) steuert den Zugriff auf E-Mails und andere Dienste basierend auf Bedingungen, die Sie festlegen. Bedingungen sind z. B. Gerätetypen oder die Einhaltung einer von Ihnen bereitgestellten [Gerätekompatibilitätsrichtlinie](device-compliance.md).
+- [App-Schutzrichtlinien](app-protection-policy.md) arbeiten mit einzelnen Apps, mit denen Sie die von diesen Apps verwendeten Unternehmensdaten schützen können. Beispielsweise können Sie das Kopieren von Daten zwischen nicht verwalteten Apps und von Ihnen verwalteten Apps einschränken, oder Sie können die Ausführung von Apps auf Geräten verhindern, die per Jailbreak oder Rooting manipuliert wurden.
 
 ## <a name="retire"></a>Außerkraftsetzen
 
-Letztlich ist es wahrscheinlich, dass von Ihnen bereitgestellte Apps irgendwann nicht mehr aktuell sind und entfernt werden müssen. Intune vereinfacht die [Außerbetriebnahme von Apps](device-management.md) ([klassisches Portal](/intune-classic/deploy-use/retire-apps-using-microsoft-intune)).
+Letztlich ist es wahrscheinlich, dass von Ihnen bereitgestellte Apps irgendwann nicht mehr aktuell sind und entfernt werden müssen. Intune vereinfacht die [Außerbetriebnahme von Apps](device-management.md).
+
+## <a name="next-steps"></a>Nächste Schritte:
+
+- Informationen zur [App-Verwaltung in Microsoft Intune](app-management.md)

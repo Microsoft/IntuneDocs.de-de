@@ -1,12 +1,12 @@
 ---
-title: "Einstellungen von Windows Intune Endpoint Protection für Windows 10"
-titlesuffix: Azure portal
-description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Endpoint Protection wie z.B. BitLocker auf Windows 10-Geräten kennen."
+title: "Einstellungen von Microsoft Intune Endpoint Protection für Windows 10"
+titlesuffix: 
+description: "In diesem Artikel erfahren Sie mehr zu den Intune-Einstellungen zur Steuerung von Endpoint Protection wie z.B. BitLocker auf Windows 10-Geräten."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 01/16/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,34 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Endpoint Protection-Einstellungen für Windows 10 und höher in Microsoft Intune
+# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Erstellen von Endpoint Protection-Einstellungen für Windows 10 und höher in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Mit dem Endpoint Protection-Profil können Sie Sicherheitsfeatures auf Windows 10-Geräten steuern, wie z.B. BitLocker und Windows Defender.
+Mit dem Endpoint Protection-Profil können Sie Sicherheitsfeatures auf Windows 10-Geräten steuern, z.B. BitLocker und Windows Defender.
 
-In diesem Thema erfahren Sie, wie Sie Endpoint Protection-Profile erstelle können.
+In diesem Artikel erfahren Sie, wie Sie Endpoint Protection-Profile erstellen können.
 
 > [!Note]
 > Diese Einstellungen werden nicht auf der Home Edition und auf der Professional Edition von Windows 10 unterstützt.
 
 ## <a name="create-an-endpoint-protection-profile"></a>Erstellen eines Endpoint Protection-Profils
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
-2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
+2. Klicken Sie auf dem Blatt **Gerätekonfiguration** im Abschnitt **Verwalten** auf **Profile**.
 3. Klicken Sie auf dem Blatt „Profile“ auf **Profil erstellen**.
 4. Geben Sie auf dem Blatt **Profil erstellen** einen **Namen** und eine **Beschreibung** für das Gerätefunktionsprofil ein.
 5. Wählen Sie in der Dropdownliste **Plattform** die Option **Windows 10 und höher** aus.
 6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Endpoint Protection** aus.
-7. Konfigurieren Sie die gewünschten Einstellungen. Die Angaben in diesem Thema helfen Ihnen dabei zu verstehen, was die Auswirkungen jeder Einstellung sind. Wenn Sie fertig sind, wählen Sie **OK** aus.
+7. Konfigurieren Sie die gewünschten Einstellungen. Die Angaben in diesem Artikel helfen Ihnen dabei, zu verstehen, was die Auswirkungen jeder Einstellung sind. Wenn Sie fertig sind, wählen Sie **OK** aus.
 8. Wechseln Sie zurück zum Blatt **Profil erstellen**, und klicken Sie auf **Erstellen**.
 
 Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
@@ -57,6 +57,7 @@ Application Guard ist nur für Windows 10-Geräte (64-Bit) verfügbar. Mithilfe 
 - **Aus virtuellem Browser drucken:** Legen Sie fest, ob PDF-Drucker, XPS-Drucker, lokale Drucker und/oder Netzwerkdrucker Inhalte aus dem virtuellen Browser drucken können.
 - **Protokolle speichern:** Legen Sie fest, ob Protokolle für Ereignisse gespeichert werden, die während einer Browsersitzung von Application Guard auftreten.
 - **Benutzergenerierte Browserdaten beibehalten:** Legen Sie fest, ob Benutzerdaten (z.B. Kennwörter, Favoriten und Cookies) gespeichert werden, die während einer virtuellen Browsersitzung von Application Guard erstellt werden.
+- **Grafikbeschleunigung:** Lädt Websites mit vielen Grafiken schneller, wenn Sie innerhalb der virtuellen Browsersitzung von Application Guard arbeiten, indem der Zugriff auf einen virtuellen Grafikprozessor aktiviert wird.
 
 
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall

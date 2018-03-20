@@ -1,6 +1,6 @@
 ---
 title: "Massenregistrierung für Windows 10"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Erstellen eines Pakets für die Massenregistrierung für Microsoft Intune"
 keywords: 
 author: Erikje
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 8b4c9f5685c12bb6c15d15d85c73d573dfcd66e8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 851be6ad98383937a3457a33e47115933f309cea
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Massenregistrierung für Windows-Geräte
 
@@ -36,7 +36,7 @@ Azure AD-Benutzer sind auf diesen Geräten Standardbenutzer und erhalten zugewie
 ## <a name="create-a-provisioning-package"></a>Erstellen eines Bereitstellungspakets
 
 1. Laden Sie [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) aus dem Microsoft Store herunter.
-![Screenshot: Beschreibungen und Screenshots für die Windows Configuration Designer-App im Store](media/bulk-enroll-store.png)
+![Abbildung der Windows Configuration Designer-App im Store](media/bulk-enroll-store.png)
 
 2. Öffnen Sie die **Windows Configuration Designer**-App, und wählen Sie **Desktopgeräte bereitstellen** aus.
 ![Screenshot: Auswählen der Option zum Bereitstellen von Desktopgeräten in der Windows Configuration Designer-App](media/bulk-enroll-select.png)
@@ -47,23 +47,24 @@ Azure AD-Benutzer sind auf diesen Geräten Standardbenutzer und erhalten zugewie
   - **Beschreibung**: Optionale Beschreibung des Projekts ![Screenshot: Angeben von Name, Projektordner und Beschreibung in der Windows Configuration Designer-App](media/bulk-enroll-name.png)
 
 4.  Geben Sie einen eindeutigen Namen für Ihre Geräte ein. Die Namen können eine Seriennummer (%%SERIENNUMMER%%) oder eine zufällige Folge von Zeichen umfassen. Optional können Sie auch einen Product Key eingeben, wenn Sie die Windows-Edition aktualisieren, das Gerät für die gemeinsame Nutzung konfigurieren und vorinstallierte Software entfernen.
-![Screenshot: Angeben von Name, Projektordner und Beschreibung in der Windows Configuration Designer-App](media/bulk-enroll-device.png)
+
+    ![Abbildung vom Angeben des Namens und Produktschlüssels in der Windows Configuration Designer-App](media/bulk-enroll-device.png)
 
 5.  Optional können Sie das WLAN konfigurieren, bei dem sich Geräte beim ersten Start anmelden.  Wenn die Netzwerkgeräte nicht konfiguriert wurden, ist beim ersten Start des Geräts eine kabelgebundene Netzwerkverbindung erforderlich.
 ![Screenshot: Aktivierung eines WLANs, einschließlich Netzwerk-SSID und Netzwerktyp, in der Windows Configuration Designer-App](media/bulk-enroll-network.png)
 
 6.  Wählen Sie **Bei Azure AD registrieren**, geben Sie ein Datum für den **Ablauf des Massentokens** ein, und wählen Sie dann **Massentoken abrufen** aus.
-![Screenshot: Angeben von Name, Projektordner und Beschreibung in der Windows Configuration Designer-App](media/bulk-enroll-account.png)
+![Abbildung von der Kontoverwaltung in der Windows Configuration Designer-App](media/bulk-enroll-account.png)
 
 7. Geben Sie Ihre Azure AD-Anmeldeinformationen an, um ein Massentoken abzurufen.
-![Screenshot: Angeben von Name, Projektordner und Beschreibung in der Windows Configuration Designer-App](media/bulk-enroll-cred.png)
+![Abbildung vom Anmelden in der Windows Configuration Designer-App im Store](media/bulk-enroll-cred.png)
 
 8.  Klicken Sie auf **Weiter**, wenn das **Massentoken** erfolgreich abgerufen wurde.
 
 9. Optional können Sie **Anwendungen hinzufügen** und **Zertifikate hinzufügen**. Diese Anwendungen und Zertifikate werden auf dem Gerät bereitgestellt.
 
 10. Optional können Sie Ihr Bereitstellungspaket mit einem Kennwort schützen.  Klicken Sie auf **Erstellen**.
-![Screenshot: Angeben von Name, Projektordner und Beschreibung in der Windows Configuration Designer-App](media/bulk-enroll-create.png)
+![Abbildung vom Paketschutz in der Windows Configuration Designer-App im Store](media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>Bereitstellen von Geräten
 

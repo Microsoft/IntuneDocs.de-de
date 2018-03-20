@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7bbf0ab4196f5e86d7f25aa23f12d89f1bb5ee5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d9b2e6df6c40ec142554db22a64d362e02884c1d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Gewusst wie: Konfigurieren von Intune-Einstellungen für die iOS-App „Classroom“
 
@@ -72,12 +72,12 @@ Sie können Informationen mithilfe einer der folgenden Methoden in SDS importier
 
 ### <a name="configure-general-settings"></a>Konfigurieren allgemeiner Einstellungen
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3.  Wählen Sie auf dem Blatt **Intune** die Option **Geräte konfigurieren** aus.
-4.  Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
-5.  Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen** aus.
-6.  Geben Sie auf dem Blatt **Profil erstellen** einen **Namen** und eine **Beschreibung** des iOS-Bildungsprofils ein.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
+2. Klicken Sie im Bereich **Gerätekonfiguration** im Abschnitt **Verwalten** auf die Option **Profile**.
+5.  Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
+6.  Geben Sie im Bereich **Profil erstellen** einen **Namen** und eine **Beschreibung** für das iOS-Bildungsprofil ein.
 7.  Wählen Sie in der Dropdownliste **Plattform** die Option **iOS** aus.
 8.  Wählen Sie in der Dropdownliste **Profiltyp** die Option **Bildungswesen** aus.
 9.  Wählen Sie **Einstellungen** > **Konfigurieren** aus.
@@ -94,7 +94,7 @@ Von Ihnen erstellte Zertifikate müssen zusätzlich zur Benutzerauthentifizierun
 
 ### <a name="configure-teacher-certificates"></a>Konfigurieren von Zertifikaten für Lehrkräfte
 
-Wählen Sie **Lehrerzertifikate** auf dem Blatt **Bildung** aus.
+Klicken Sie im Bereich **Bildung** auf **Lehrerzertifikate**.
 
 #### <a name="configure-teacher-root-certificate"></a>Konfigurieren des Stammzertifikats für Lehrkräfte
 
@@ -116,8 +116,8 @@ Wenn Sie das Konfigurieren von Zertifikaten abgeschlossen haben, klicken Sie auf
 
 ### <a name="configure-student-certificates"></a>Konfigurieren von Zertifikaten für Schüler/Studenten
 
-1.  Wählen Sie **Zertifikate für Schüler und Studenten** auf dem Blatt **Bildung** aus.
-2.  Wählen Sie auf dem Blatt **Zertifikate für Schüler und Studenten** in der Liste **Gerätezertifikattyp für Schüler und Studenten** die Option **1:1** aus.
+1.  Klicken Sie im Bereich **Bildung** auf **Zertifikate für Schüler und Studenten**.
+2.  Klicken Sie im Bereich **Zertifikate für Schüler und Studenten** in der Liste **Gerätezertifikattyp für Schüler und Studenten** auf die Option **1:1**.
 
 #### <a name="configure-student-root-certificate"></a>Konfigurieren des Stammzertifikats für Schüler und Studenten
 
@@ -139,10 +139,10 @@ Wenn Sie das Konfigurieren von Zertifikaten abgeschlossen haben, klicken Sie auf
 
 ## <a name="finish-up"></a>Fertig stellen
 
-1.  Klicken Sie auf dem Blatt **Bildung** auf „OK“.
-2.  Wählen Sie auf dem Blatt **Profil erstellen** die Option **Erstellen** aus.
+1.  Klicken Sie im Bereich **Bildung** auf OK.
+2.  Klicken Sie im Bereich **Profil erstellen** auf die Option **Erstellen**.
     
-Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
+Das Profil wird erstellt und in der Profilliste angezeigt.
 
 Weisen Sie das Profil den Geräten der Schüler und Studenten in den Kursraumgruppen zu, die erstellt wurden, als Sie Ihre Schul-/Unidaten mit Azure AD synchronisiert haben (siehe [Zuweisen von Geräteprofilen](device-profile-assign.md)).
 

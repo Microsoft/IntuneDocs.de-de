@@ -1,25 +1,19 @@
----
-title: "Häufig gestellte Fragen zu MAM und App-Schutz"
-description: "Dieser Artikel beantwortet einige häufig gestellte Fragen zur mobilen Anwendungsverwaltung (Mobile Application Management, MAM) und zum App-Schutz in Intune."
-keywords: 
-author: Erikre
-ms.author: erikre
-manager: angrobe
-ms.date: 02/06/2018
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
-ms.reviewer: erikre
-ms.suite: ems
+--
+# <a name="required-metadata"></a>erforderliche Metadaten
+
+Title: Häufig gestellte Fragen zur Verwaltung mobiler Anwendungen und Beschreibung des App-Schutzes: Dieser Artikel beantwortet einige häufig gestellte Fragen zur Verwaltung mobiler Anwendungen (Mobile Application Management, MAM) und zum App-Schutz in Intune.
+keywords: author: Erikre ms.author: erikre manager: angrobe ms.date: 02/28/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+
+# <a name="optional-metadata"></a>optionale Metadaten
+
+#<a name="audience"></a>Zielgruppe:
+#<a name="msdevlang"></a>ms.devlang:
+ms.reviewer: erikre ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
 ms.custom: intune-azure
-ms.openlocfilehash: 23ab21e21ff2ffd471523f8132acffd7545358f0
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+
 ---
+
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Häufig gestellte Fragen zu MAM und App-Schutz
 
 Dieser Artikel beantwortet einige häufig gestellte Fragen zur mobilen Anwendungsverwaltung (Mobile Application Management, MAM) und zum App-Schutz in Intune.
@@ -135,14 +129,21 @@ Dieser Artikel beantwortet einige häufig gestellte Fragen zur mobilen Anwendung
 
 **Gibt es eine sichere Möglichkeit, Weblinks in verwalteten Apps zu öffnen?** Ja! Ein IT-Administrator kann eine App-Schutzrichtlinie für die [Intune Managed Browser-App](app-configuration-managed-browser.md) einrichten und bereitstellen, ein von Microsoft Intune entwickelter Webbrowser, der problemlos mit Intune verwaltet werden kann. Der IT-Administrator kann festlegen, dass alle Weblinks in über Intune verwaltete Apps mit der Managed Browser-App geöffnet werden müssen.
 
-
 ## <a name="app-experience-on-android"></a>Apps unter Android
 
 **Warum ist die Unternehmensportal-App erforderlich, damit der Intune-App-Schutz auf Android-Geräten funktioniert?** Ein Großteil der App-Schutzfunktionen ist in die Unternehmensportal-App integriert. Eine Registrierung der Geräte ist _nicht erforderlich_, allerdings wird immer die Unternehmensportal-App benötigt. Bei MAM-WE muss lediglich die Unternehmensportal-App auf dem Gerät des Endbenutzers installiert sein.
 
+**Wie funktionieren die verschiedenen Zugriffseinstellungen für den Intune-App-Schutz unter Android, die für mehrere Apps und Benutzer konfiguriert sind?** Zugriffsrichtlinien für den Intune-App-Schutz werden in einer bestimmten Reihenfolge auf den Geräten von Endbenutzern angewendet, wenn diese versuchen, über ihr Unternehmenskonto auf eine App zuzugreifen. In der Regel haben Blöcke Vorrang vor verwerfbaren Warnungen. Es wird z.B. eine Einstellung der mindestens erforderlichen Android-Patch-Version, die den Benutzer auffordert, ein Patchupgrade auszuführen, im Anschluss an die Einstellung angewendet, die dem Benutzer den Zugriff verweigert (wenn dies auf den Benutzer/die App zutrifft). In diesem Szenario konfiguriert der IT-Administrator die Einstellung für die mindestens erforderliche Version des Android-Patch auf den 1.3.2018 und die für die mindestens erforderliche Version des Android-Patch, die nur für Warnungen gilt, auf den 1.2.2018. Gleichzeitig versucht das Gerät, das noch die Patch-Version vom 1.1.2018 verwendet, auf die App zuzugreifen. In Folge dessen wird der Endbenutzer basierend auf restriktiveren Einstellungen für die mindestens erforderliche Version des Android-Patch blockiert und erhält keinen Zugriff. 
+
+Wenn verschiedene Arten von Einstellungen verarbeitet werden müssen, haben die Anforderungen hinsichtlich bestimmter App-Versionen Vorrang. Erst danach werden Anforderungen berücksichtigt, die eine Version des Android-Betriebssystems und Android-Patch-Versionen betreffen. Anschließend werden in derselben Reihenfolge mögliche Warnungen für sämtliche Einstellungstypen überprüft.
+
 ## <a name="app-experience-on-ios"></a>Apps unter iOS
 
 **Ich kann die iOS-Freigabeerweiterung verwenden, um Geschäfts-, Uni- oder Schuldaten in nicht verwalteten Apps zu öffnen, auch wenn die Datenübertragungsrichtlinie auf „nur verwaltete Apps“ oder „keine Apps“ festgelegt ist. Führt das nicht zu Datenlecks?** Die Intune-App-Schutzrichtlinie kann die iOS-Freigabeerweiterung nicht steuern, ohne das Gerät zu verwalten. Daher _**verschlüsselt Intune „unternehmenseigene“ Daten, bevor diese außerhalb der App freigegeben werden**_. Sie können dies überprüfen, indem Sie versuchen, die „unternehmenseigene“ Datei außerhalb der verwalteten App zu öffnen. Die Datei sollte verschlüsselt sein und außerhalb der verwalteten App nicht geöffnet werden können.
+
+**Wie funktionieren die verschiedenen Zugriffseinstellungen für den Intune-App-Schutz unter iOS, die für dieselben Apps und Benutzer konfiguriert sind?** Zugriffsrichtlinien für den Intune-App-Schutz werden in einer bestimmten Reihenfolge auf den Geräten von Endbenutzern angewendet, wenn diese versuchen, über ihr Unternehmenskonto auf eine App zuzugreifen. In der Regel hat ein Zurücksetzungsvorgang Vorrang vor einem Block. Verwerfbare Warnungen werden erst als letztes berücksichtigt. Es wird z.B. eine Einstellung der mindestens erforderlichen iOS-Version, die den Benutzer auffordert, ein Update des Betriebssystems auszuführen, im Anschluss an die Einstellung angewendet, die dem Benutzer den Zugriff verweigert (wenn dies auf den Benutzer/die App zutrifft). In diesem Szenario konfiguriert der IT-Administrator die Einstellung für die mindestens erforderliche iOS-Version auf Version 11.0.0.0 und die mindestens erforderliche iOS-Version, die nur für Warnungen gilt, auf 11.1.0.0. Gleichzeitig versucht das Gerät, auf dem noch die iOS-Version 10 installiert ist, auf die App zuzugreifen. In Folge dessen wird der Endbenutzer basierend auf restriktiveren Einstellungen für die mindestens erforderliche iOS-Version blockiert und erhält keinen Zugriff.
+
+Wenn verschiedene Arten von Einstellungen verarbeitet werden müssen, haben die Anforderungen hinsichtlich bestimmter Versionen des Intune App SDK Vorrang. Erst danach werden Anforderungen berücksichtigt, die eine Version einer App oder eines iOS-Betriebssystems betreffen. Anschließend werden in derselben Reihenfolge mögliche Warnungen für sämtliche Einstellungstypen überprüft. Es wird empfohlen, die Anforderung, die die Intune App SDK-Version betrifft, nur unter Anleitung des Intune-Produktteams für grundlegende Blockierungsszenarios zu konfigurieren.
 
 ## <a name="see-also"></a>Siehe auch
 - [Implementieren Ihres Intune-Plans](planning-guide-onboarding.md)

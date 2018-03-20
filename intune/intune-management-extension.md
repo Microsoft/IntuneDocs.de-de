@@ -5,7 +5,7 @@ description: "Erfahren Sie, wie Sie PowerShell-Skripts in Intune für die Ausfü
 keywords: 
 author: dougeby
 manager: dougeby
-ms.date: 11/08/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8c959ca3df62cbda17e5a659d0703cbc37f3249
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a52f2affa235a37b6d99a8452bc83a794cb04ce5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Verwalten von PowerShell-Skripts in Intune für Windows 10-Geräte
 Durch die Verwaltungserweiterung von Intune können Sie PowerShell-Skripts in Intune für die Ausführung auf Windows 10-Geräten hochladen. Die Verwaltungserweiterungen ergänzt Funktionen für die mobile Geräteverwaltung (mobile device management, MDM) von Windows 10 und erleichtert Ihnen den Wechsel zu einer modernen Verwaltung.
@@ -37,24 +37,24 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
 
 ## <a name="create-a-powershell-script-policy"></a>Erstellen einer PowerShell-Skriptrichtlinie 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
-4. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **PowerShell-Skripts** aus.
-5. Klicken Sie auf dem Blatt **PowerShell-Skripts** auf **Skript hinzufügen**.
-6. Geben Sie auf dem Blatt **PowerShell-Skript hinzufügen** einen **Namen** und eine **Beschreibung** für das PowerShell-Skript ein.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
+4. Klicken Sie im Bereich **Gerätekonfiguration** auf **Verwalten** > **PowerShell-Skripts**.
+5. Klicken im Bereich **PowerShell-Skripts** auf **Hinzufügen**.
+6. Geben Sie im Bereich **PowerShell-Skript hinzufügen** einen **Namen** und eine **Beschreibung** für das PowerShell-Skript ein.
 7. Suchen Sie das PowerShell-Skript für den **Skriptstandort**. Das Skript muss kleiner als 10 KB (ASCII) oder 5 KB (Unicode) sein.
 8. Klicken Sie auf **Konfigurieren**, und wählen Sie dann aus, ob das Skript mit den Anmeldeinformationen des Benutzers auf dem Gerät (**Ja**) oder im Systemkontext (**Nein**) ausgeführt werden soll. Standardmäßig werden die Skripts im Systemkontext ausgeführt. Wählen Sie **Ja** aus, wenn das Skript nicht im Systemkontext ausgeführt werden muss. 
-  ![Blatt „PowerShell-Skript hinzufügen“](./media/mgmt-extension-add-script.png)
+  ![Bereich „PowerShell-Skript hinzufügen“](./media/mgmt-extension-add-script.png)
 9. Wählen Sie aus, ob das Skript von einem vertrauenswürdigen Herausgeber signiert werden muss (**Ja**). Standardmäßig muss das Skript nicht signiert werden. 
 10. Klicken Sie auf **OK** und dann auf **Erstellen**, um das Skript zu speichern.
 
 ## <a name="assign-a-powershell-script-policy"></a>Zuweisen einer PowerShell-Skriptrichtlinie
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
-4. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **PowerShell-Skripts** aus.
-5. Wählen Sie auf dem Blatt **PowerShell-Skripts** das zuzuweisende Skript aus, und klicken Sie dann auf **Verwalten** > **Zuweisungen**.
-  ![Blatt „PowerShell-Skript hinzufügen“](./media/mgmt-extension-assignments.png)
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
+4. Klicken Sie im Bereich **Gerätekonfiguration** auf **Verwalten** > **PowerShell-Skripts**.
+5. Wählen Sie im Bereich **PowerShell-Skripts** das zuzuweisende Skript aus, und klicken Sie dann auf **Verwalten** > **Zuweisungen**.
+  ![Bereich „PowerShell-Skript hinzufügen“](./media/mgmt-extension-assignments.png)
  
 6. Klicken Sie auf **Gruppen auswählen**, um verfügbare Azure AD-Gruppen aufzulisten. 
 7. Wählen Sie mindestens eine Gruppe mit den Benutzern aus, deren Geräte das Skript erhalten sollen, und klicken Sie dann auf **Auswählen**, um die Richtlinie den ausgewählten Gruppen zuzuweisen.
@@ -64,9 +64,9 @@ Die Intune-Verwaltungserweiterung wird einmal pro Stunde mit Intune synchronisie
 ## <a name="monitor-run-status-for-powershell-scripts"></a>Überwachen des Ausführungsstatus für PowerShell-Skripts
 Sie können den Ausführungsstatus von PowerShell-Skripts für Benutzer und Geräte im Azure-Portal überwachen.
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
-4. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **PowerShell-Skripts** aus.
-5. Wählen Sie auf dem Blatt **PowerShell-Skripts** das zu überwachende Skript aus, klicken Sie auf **Überwachen**, und wählen Sie anschließend einen der folgenden Berichte aus:
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
+4. Klicken Sie im Bereich **Gerätekonfiguration** auf **Verwalten** > **PowerShell-Skripts**.
+5. Wählen Sie im Bereich **PowerShell-Skripts** das zu überwachende Skript aus, klicken Sie auf **Überwachen**, und wählen Sie anschließend einen der folgenden Berichte aus:
    - **Gerätestatus**
    - **Benutzerstatus**

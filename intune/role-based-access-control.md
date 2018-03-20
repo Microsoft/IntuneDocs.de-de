@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 01/17/2018
+ms.date: 02/27/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e89ba73869d7453b74edb1e7f87f6c8edb210bf
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c19a3b8a6df82780d54f277d5477b947f050b1cc
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Rollenbasierte Zugriffssteuerung mit Intune
 
@@ -76,16 +76,19 @@ Die folgenden Rollen sind in Intune integriert. Sie können sie ohne weitere Kon
 
 ### <a name="to-assign-a-built-in-role"></a>So weisen Sie eine integrierte Rolle zu
 
-1. Wählen Sie auf der Seite **Intune-Rollen** die integrierte Rolle aus, die Sie zuweisen möchten.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** erst auf **Intune-Rollen** und anschließend auf **Alle Rollen**.
+1. Klicken Sie im Bereich **Intune-Rollen – Alle Rollen** auf die integrierte Rolle, die Sie zuweisen möchten.
 
-2. Wählen Sie auf dem Blatt <*Rollenname*> – **Eigenschaften** erst **Verwalten** und dann **Zuweisungen** aus.
+2. Klicken Sie im Bereich <*Rollenname*>-**Übersicht** erst auf **Verwalten** und dann auf **Zuweisungen**.
 
     > [!NOTE]
     > Sie können die integrierten Rollen nicht löschen oder bearbeiten.
 
-3. Wählen Sie auf dem Blatt „Benutzerdefinierte Rolle“ **Zuweisen** aus.
+3. Klicken Sie im Bereich „Benutzerdefinierte Rolle“ auf **Zuweisen**.
 
-4. Geben Sie auf dem Blatt **Rollenzuweisungen** einen **Namen** und eine optionale **Beschreibung** für die Zuweisung ein, und wählen Sie dann Folgendes aus:
+4. Geben Sie im Bereich **Rollenzuweisungen** einen **Namen** und eine optionale **Beschreibung** für die Zuweisung ein, und wählen Sie dann Folgendes aus:
     - **Mitglieder:** Wählen Sie eine Gruppe aus, die den Benutzer enthält, dem Sie die Berechtigungen erteilen möchten.
     - **Bereich:** Wählen Sie eine Gruppe aus, die die Benutzer enthält, die das oben ausgewählte Mitglied verwalten soll.
 <br></br>
@@ -108,29 +111,29 @@ Sie können eine benutzerdefinierte Sicherheitsrolle erstellen, die alle für ei
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) mit Ihren Intune-Anmeldeinformationen an.
 
-2. Wählen Sie im linken Menü **Weitere Dienste** aus, und geben Sie in das Filtertextfeld die Zeichenfolge **Intune** ein.
+2. Klicken Sie im Menü links auf **Alle Dienste**, und geben Sie in das Filtertextfeld **Intune** ein.
 
 3. Wählen Sie **Intune** aus. Daraufhin wird das Intune-Dashboard geöffnet. Wählen Sie **Intune-Rollen** aus.
 
-4. Wählen Sie auf dem Blatt **Intune-Rollen** wiederum **Intune-Rollen** und dann **Benutzerdefiniert hinzufügen** aus.
+4. Klicken Sie im Bereich **Intune-Rollen** wiederum auf **Alle Rollen** und dann auf **Benutzerdefiniertes Element hinzufügen**.
 
-5. Geben Sie auf dem Blatt **Benutzerdefinierte Rolle hinzufügen** einen Namen und eine Beschreibung für die neue Rolle ein, und klicken Sie dann auf **Berechtigungen**.
+5. Geben Sie im Bereich **Benutzerdefinierte Rolle hinzufügen** einen Namen und eine Beschreibung für die neue Rolle ein, und klicken Sie dann auf **Berechtigungen**.
 
-3. Wählen Sie auf dem Blatt **Berechtigungen** die Berechtigungen aus, die Sie mit dieser Rolle verwenden möchten. Entscheiden Sie mithilfe der [Tabelle zur rollenbasierten Zugriffssteuerung in Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a), welche Berechtigungen gelten sollen.
+3. Klicken Sie im Bereich **Berechtigungen** auf die Berechtigungen, die Sie mit dieser Rolle verwenden möchten. Entscheiden Sie mithilfe der [Tabelle zur rollenbasierten Zugriffssteuerung in Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a), welche Berechtigungen gelten sollen.
 
 4. Wählen Sie abschließend **OK** aus.
 
-5. Klicken Sie auf dem Blatt **Benutzerdefinierte Rolle hinzufügen** auf **Erstellen**. Die neue Rolle wird in der Liste auf dem Blatt **Intune-Rollen** angezeigt.
+5. Klicken Sie im Bereich **Benutzerdefinierte Rolle hinzufügen** auf **Erstellen**. Die neue Rolle wird in der Liste im Bereich **Intune-Rollen – Alle Rollen** angezeigt.
 
 ### <a name="to-assign-a-custom-role"></a>So weisen Sie eine benutzerdefinierte Rolle zu
 
-1. Wählen Sie auf der Seite **Intune-Rollen** die benutzerdefinierte Rolle aus, die Sie zuweisen möchten.
+1. Klicken Sie im Bereich **Intune-Rollen – Alle Rollen** auf die benutzerdefinierte Rolle, die Sie zuweisen möchten.
 
-2. Wählen Sie auf dem Blatt <*Rollenname*> – **Eigenschaften** erst **Verwalten** und dann **Zuweisungen** aus. Sie können auf diesem Blatt auch vorhandene Rollen bearbeiten oder löschen.
+2. Klicken Sie im Bereich <*Rollenname*>-**Übersicht** erst auf **Verwalten** und dann auf **Zuweisungen**. Sie können in diesem Bereich auch vorhandene Rollen bearbeiten oder löschen.
 
-3. Wählen Sie auf dem Blatt „Benutzerdefinierte Rolle“ **Zuweisen** aus.
+3. Klicken Sie im Bereich „Benutzerdefinierte Rolle“ auf **Zuweisen**.
 
-4. Geben Sie auf dem Blatt **Rollenzuweisungen** einen **Namen** und eine optionale **Beschreibung** für die Zuweisung ein, und wählen Sie dann Folgendes aus:
+4. Geben Sie im Bereich **Rollenzuweisungen** einen **Namen** und eine optionale **Beschreibung** für die Zuweisung ein, und wählen Sie dann Folgendes aus:
     - **Mitglieder:** Wählen Sie eine Gruppe aus, die den Benutzer enthält, dem Sie die Berechtigungen erteilen möchten.
     - **Bereich:** Wählen Sie eine Gruppe aus, die die Benutzer enthält, die das oben ausgewählte Mitglied verwalten soll.
 <br></br>

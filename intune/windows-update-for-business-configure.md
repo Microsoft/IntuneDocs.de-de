@@ -6,18 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 1/30/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 63d8628c183b3efb924cae6635e2c8038fd42598
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="manage-software-updates"></a>Verwalten von Softwareupdates
 
@@ -71,20 +71,21 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Erstellen und Zuweisen von Updateringen
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Softwareupdates** aus.
-4. Wählen Sie auf dem Blatt **Softwareupdates** die Befehlsfolge **Verwalten** > **Windows 10 Update Rings** (Windows 10-Updateringe) aus.
-5. Wählen Sie auf dem Blatt mit der Updateringliste die Option **Erstellen** aus.
-6. Geben Sie auf dem Blatt **Create Update Ring** (Updatering erstellen) einen Namen und eine optionale Beschreibung für den Updatering an, und wählen Sie anschließend **Einstellungen** aus.
-7. Konfigurieren Sie auf dem Blatt **Einstellungen** folgende Informationen:
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Softwareupdates**.
+4. Klicken Sie auf dem Blatt **Softwareupdates** auf **Verwalten** > **Windows 10-Updateringe**.
+5. Klicken Sie auf dem Blatt mit der Updateringliste auf die Option **Erstellen**.
+6. Geben Sie auf dem Blatt **Create Update Ring** (Updatering erstellen) einen Namen und eine optionale Beschreibung für den Updatering an, und klicken Sie anschließend auf **Einstellungen – Konfigurieren**.
+7. Konfigurieren Sie im Bereich **Einstellungen** folgende Informationen:
     - **Wartungskanal**: Legen Sie den Kanal fest, für den das Gerät Windows-Updates erhält (halbjährlicher Kanal (gezielt) oder halbjährlicher Kanal).
-    - **Microsoft-Updates**: Wählen Sie aus, ob nach App-Updates von Microsoft Update gesucht werden soll.
+    - **Microsoft-Produktupdates**: Wählen Sie aus, ob nach App-Updates von Microsoft Update gesucht werden soll.
     - **Windows drivers** (Windows-Treiber): Wählen Sie aus, ob Windows Update-Treiber bei Updates ausgeschlossen werden sollen.
     - **Automatic update behavior** (Verhalten bei automatischen Updates): Wählen Sie aus, wie das Verhalten bei automatischen Updates verwaltet werden soll, um Updates zu suchen, herunterzuladen und zu installieren. Ausführliche Informationen finden Sie unter [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
     - **Rückstellungszeitraum für Qualitätsupdates (Tage)**: Geben Sie an, für wie viele Tage Qualitätsupdates zurückgestellt werden. Der Bezug dieser Qualitätsupdates kann für bis zu 30 Tage (ab Veröffentlichung) zurückgestellt werden.  
 
     Bei Qualitätsupdates handelt es sich in der Regel um Korrekturen und Verbesserungen für bereits vorhandene Windows-Funktionen. Sie werden üblicherweise am ersten Dienstag jedes Monats veröffentlicht, können von Microsoft jedoch auch zu einem anderen Zeitpunkt veröffentlicht werden. Sie können definieren, ob und wie lange der Bezug von Qualitätsupdates zurückgestellt werden soll, nachdem sie verfügbar geworden sind.
+
     - **Rückstellungszeitraum für Funktionsupdates (Tage)**: Geben Sie an, für wie viele Tage Funktionsupdates zurückgestellt werden. Der Bezug dieser Funktionsupdates kann für bis zu 180 Tage (ab Veröffentlichung) zurückgestellt werden.
 
     Bei Funktionsupdates handelt es sich in der Regel um neue Features für Windows. Nach dem Konfigurieren der Einstellung **Wartungskanal** (halbjährlicher Kanal (gezielt) oder halbjährlicher Kanal) können Sie definieren, ob und wie lange der Bezug von Funktionsupdates zurückgestellt werden soll, nachdem sie von Microsoft über Windows Update verfügbar gemacht wurden.
@@ -93,13 +94,13 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 
     **Wenn der Wartungskanal auf „Halbjährlicher Kanal (gezielt)“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Nehmen wir an, dass das Funktionsupdate X im halbjährlichen Kanal (gezielt) auf Windows-Update erstmals im Januar öffentlich verfügbar ist. Vier Monate später, im April, wird das Funktionsupdate X dann im halbjährlichen Kanal veröffentlicht. In diesem Fall erhält das Gerät das Funktionsupdate 30 Tage nach dieser Veröffentlichung im halbjährlichen Kanal (also im Mai).
 
-    - **Übermittlungsoptimierung**: Wählen Sie die Methode dafür aus, welche Geräte Windows-Updates herunterladen. Ausführliche Informationen finden Sie unter [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+    - **Downloadmodus „Übermittlungsoptimierung“**: Wählen Sie die Methode aus, für welche Geräte Windows-Updates heruntergeladen werden sollen. Ausführliche Informationen finden Sie unter [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
 1. Klicken Sie abschließend auf **OK** und dann auf dem Blatt **Create Update Ring** (Updatering erstellen) auf **Erstellen**.
 
 Der neue Updatering wird in der Liste mit den Updateringen angezeigt.
 
 1. Wählen Sie zum Zuweisen des Rings in der Liste mit den Updateringen einen Ring aus, und klicken Sie anschließend auf der Registerkarte mit dem *Namen des Rings* auf **Zuweisungen**.
-2. Wählen Sie auf der nächsten Registerkarte die Option **Gruppen auswählen** aus, und wählen Sie anschließend die Gruppen aus, denen Sie diesen Ring zuweisen möchten.
+2. Klicken Sie auf der nächsten Registerkarte auf **Select groups to include** (Einzuschließende Gruppen auswählen), und wählen Sie anschließend die Gruppen aus, denen Sie diesen Ring zuweisen möchten.
 3. Wählen Sie abschließend **Auswählen** aus, um die Zuweisung abzuschließen.
 
 ## <a name="update-compliance-reporting"></a>Updateüberwachungsberichte
@@ -108,10 +109,10 @@ Sie können die Updatekompatibilität in Intune anzeigen oder die kostenlose Lö
 ### <a name="review-update-compliance-in-intune"></a>Prüfen der Updatekompatibilität in Intune 
 <!-- 1352223 -->
 Überprüfen Sie einen Richtlinienbericht, um den Bereitstellungsstatus für die Windows 10-Updateringe anzuzeigen, die Sie konfiguriert haben. 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Softwareupdates** aus.
-4. Wählen Sie **Übersicht** auf dem Blatt **Softwareupdates** aus. Hier finden Sie allgemeine Informationen zum Status der Updateringe, die Sie zugewiesen haben.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Softwareupdates**.
+4. Klicken Sie auf dem Blatt **Softwareupdates** auf **Übersicht**. Hier finden Sie allgemeine Informationen zum Status der Updateringe, die Sie zugewiesen haben.
 5. Öffnen Sie einen der folgenden Berichte: 
      
    **Für alle Bereitstellungsringe**:
@@ -119,11 +120,10 @@ Sie können die Updatekompatibilität in Intune anzeigen oder die kostenlose Lö
    2. Wählen Sie **Bereitstellungsstatus pro Updatering** im Abschnitt **Überwachen** aus.
                    
    **Für bestimmte Bereitstellungsringe**: 
-   1. Wählen Sie auf dem Blatt **Softwareupdates** > **Windows 10-Updateringe** den zu überprüfenden Bereitstellungsring aus.
+   1. Klicken Sie auf dem Blatt **Softwareupdates** > **Windows 10-Updateringe** auf den zu überprüfenden Bereitstellungsring.
    2. Wählen Sie im Abschnitt **Überwachen** einen der folgenden Berichte aus, um weitere Informationen zum Updatering anzuzeigen:
-      - **Bereitstellung des Updaterings für Geräte**
-      - **Bereitstellung des Updaterings für Benutzer**
-      - **Einstellungsspezifischer Bereitstellungsstatus**
+      - **Gerätestatus**
+      - **Benutzerstatus**
 
 ### <a name="review-update-compliance-using-oms"></a>Prüfen der Updatekompatibilität mithilfe von OMS
 Windows 10-Updaterollouts können in der Operations Management Suite (OMS) mithilfe der kostenlosen Updateüberwachung überwacht werden. Ausführliche Informationen finden Sie unter [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Überwachen von Windows-Updates mithilfe der Updateüberwachung). Bei Verwendung dieser Lösung können Sie eine Organisations-ID für jedes Ihrer mit Intune verwalteten Windows 10-Geräte bereitstellen, für das Sie Updateüberwachungsberichte verwenden möchten.
@@ -136,19 +136,19 @@ Unter **OMA-URI-Einstellung hinzufügen oder bearbeiten** können Sie beispielsw
 
 - **Name**: Organisations-ID für die Windows-Analyse
 - **Beschreibung**: Konfigurieren der Organisations-ID für Windows Analytics-Lösungen
-- **Datentyp**: Zeichenfolge
 - **OMA-URI** (Groß-/Kleinschreibung beachten): ./Vendor/MSFT/DMClient/Provider/ProviderID/CommercialID
+- **Datentyp**: Zeichenfolge
 - **Wert**: <*Verwenden Sie die GUID, die in Ihrem OMS-Arbeitsbereich auf der Registerkarte „Windows-Telemetrie“ angezeigt wird.*>
 
 ![Windows-Einstellung für Diagnose- und Nutzungsdaten](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Aussetzen von Updates
 Sie können für ein Gerät den Bezug von Funktions- oder Qualitätsupdates für einen Zeitraum von bis zu 35 Tagen aussetzen (ab dem Zeitpunkt, ab dem die Updates ausgesetzt wurden). Nach Verstreichen der maximalen Anzahl von Tagen wird die Aussetzung automatisch aufgehoben, und das Gerät sucht bei Windows Update nach geeigneten Updates. Danach können Sie die Updates erneut aussetzen.
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Softwareupdates** aus.
-4. Wählen Sie auf dem Blatt **Softwareupdates** die Befehlsfolge **Verwalten** > **Windows 10 Update Rings** (Windows 10-Updateringe) aus.
-5. Wählen Sie auf dem Blatt mit der Updateringliste den auszusetzenden Ring und anschließend **...** > **Qualitätsupdates aussetzen** oder **Funktionsupdates aussetzen** aus (je nachdem, welche Art von Updates Sie aussetzen möchten).
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Softwareupdates**.
+4. Klicken Sie auf dem Blatt **Softwareupdates** auf **Verwalten** > **Windows 10-Updateringe**.
+5. Klicken Sie auf dem Blatt mit der Updateringliste auf den anzuhaltenden Ring und anschließend auf **...** > **Qualitätsupdate anhalten** > oder **Funktionsupdate anhalten** (je nachdem, welche Art von Updates Sie anhalten möchten).
 
 > [!IMPORTANT]
 > Wenn Sie einen Aussetzungsbefehl erteilen, geht dieser bei den Geräten ein, wenn sie das nächste Mal mit dem Dienst kommunizieren. Es kann vorkommen, dass die Geräte vor der Kommunikation ein geplantes Update installieren.

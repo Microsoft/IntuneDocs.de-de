@@ -1,12 +1,12 @@
 ---
 title: Festlegen von Nutzungsbedingungen in Microsoft Intune
-titlesuffix: Azure portal
-description: "Legen Sie Geschäftsbedingungen fest, die Benutzern im Unternehmensportal für Intune angezeigt werden. "
+titlesuffix: 
+description: "Legen Sie Geschäftsbedingungen fest, die Benutzern im Unternehmensportal für Intune angezeigt werden."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: df7f91cbdcbafb785d0c4cfb1612d6c2f9e5581e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8fb386948d14fcbd26cffcd1b531b6ae61e9d669
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="ensure-users-accept-company-terms-for-access"></a>Sicherstellen, dass Benutzer Geschäftsbedingungen für den Zugriff akzeptieren
+# <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>Verwalten der Geschäftsbedingungen Ihres Unternehmens für den Benutzerzugriff
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,16 +32,18 @@ Sie können mehrere Sätze von Bedingungen erstellen und diese verschiedenen Gru
 ## <a name="create-terms-and-conditions"></a>Erstellen von Geschäftsbedingungen
 Führen Sie die folgenden Schritte aus, um Geschäftsbedingungen zu erstellen. Der Anzeigename und die Beschreibung sind für administrative Zwecke vorgesehen, während die Eigenschaften der Bedingungen den Benutzern im Unternehmensportal angezeigt werden.
 
-1. Wählen Sie im Azure-Portal die Option **Geräteregistrierung** und dann **Geschäftsbedingungen** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Geräteregistrierung** und dann auf **Geschäftsbedingungen**.
 2. Wählen Sie **Erstellen** aus.
 ![Screenshot: Azure-Portal mit Schaltfläche zum Erstellen von Geschäftsbedingungen](media/terms-create-terms.png)
-3. Geben Sie auf dem erweiterten Blatt die folgenden Informationen an:
+3. Geben Sie auf im erweiterten Bereich die folgenden Informationen an:
 
    - **Anzeigename**: Die Bezeichnung für die Bedingungen im Azure-Portal. Diese Bezeichnung wird den Benutzern nicht angezeigt.
 
    - **Beschreibung**: Optionale Details, die Ihnen dabei helfen, diese Bedingungen im Azure-Portal zu identifizieren.
 
-4. Wählen Sie den Pfeil neben „Nutzungsbedingungen definieren“ aus, um das Blatt „Nutzungsbedingungen“ zu öffnen, und geben Sie dann die folgende Informationen ein:
+4. Klicken Sie auf den Pfeil neben **Define terms of use** (Nutzungsbedingungen definieren), um den Bereich „Nutzungsbedingungen“ zu öffnen, und geben Sie dann die folgende Informationen ein:
 
    ![Screenshots des Bildschirms mit der Akzeptanz von Nutzungsbedingungen für Endbenutzer mit der Zusammenfassung der Nutzungsbedingungen](./media/terms-summary-create.png)
 
@@ -65,25 +67,26 @@ Das folgende Beispiel zeigt die Geschäftsbedingungen in der Verwaltungskonsole 
 Sie können Geschäftsbedingungen zu Benutzergruppen zuweisen, die diese vor der Verwendung des Unternehmensportals annehmen müssen.
 
 1. Wählen Sie im Azure-Portal die Option **Geräteregistrierung** und dann **Geschäftsbedingungen** aus.
-2. Wählen Sie in der Liste der Geschäftsbedingungen die Bedingungen aus, die Sie zuweisen möchten, und wählen Sie dann **Zugewiesene Gruppen** aus.
-![Screenshot des Blatts „Gruppe zuweisen“ des Azure-Portals, das die Schaltfläche „Gruppe auswählen“ und die Schaltfläche „Auswählen“ für die Zuweisung der Geschäftsbedingungen anzeigt](media/terms-assign-groups.png)
-3. Klicken Sie auf die Schaltfläche **Gruppe auswählen**, und wählen Sie auf dem Blatt **Gruppen auswählen** die Gruppen aus, denen Sie die Bedingungen zuweisen möchten. Klicken Sie anschließend auf **Auswählen**. Dynamischen Gruppen können keine Geschäftsbedingungen zugewiesen werden.
-4. Klicken Sie auf dem Blatt **Zugewiesene Gruppen** auf **Speichern**.  Die Geschäftsbedingungen werden jetzt den Benutzern in den ausgewählten Gruppen zugewiesen. Benutzer werden beim nächsten Zugriff auf das Unternehmensportal zur Annahme der Geschäftsbedingungen aufgefordert. Die Geschäftsbedingungen müssen nur einmal angenommen werden. Benutzer mit mehreren Geräten müssen sie nicht auf jedem Gerät annehmen.
+2. Wählen Sie in der Liste der Geschäftsbedingungen die Bedingungen aus, die Sie zuweisen möchten, und klicken Sie dann auf **Verwalten** > **Zuweisungen**.
+![Screenshot des Bereichs „Gruppe zuweisen“ im Azure-Portal, das die Schaltflächen „Gruppe auswählen“ und „Auswählen“ für die Zuweisung der Geschäftsbedingungen anzeigt](media/terms-assign-groups.png)
+3. Klicken Sie auf die Schaltfläche **Einzuschließende Gruppen auswählen**, und wählen Sie die Gruppen aus, denen Sie die Bedingungen zuweisen möchten. Klicken Sie anschließend auf **Auswählen**. Dynamischen Gruppen können keine Geschäftsbedingungen zugewiesen werden.
+4. Klicken Sie im Bereich **Zugewiesene Gruppen** auf **Speichern**.  Die Geschäftsbedingungen werden jetzt den Benutzern in den ausgewählten Gruppen zugewiesen. Benutzer werden beim nächsten Zugriff auf das Unternehmensportal zur Annahme der Geschäftsbedingungen aufgefordert. Die Geschäftsbedingungen müssen nur einmal angenommen werden. Benutzer mit mehreren Geräten müssen sie nicht auf jedem Gerät annehmen.
 
 
 ## <a name="monitor-terms-and-conditions"></a>Überwachen der Geschäftsbedingungen
 
-1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus. Wählen Sie auf dem Blatt „Intune“ die Option **Geräteregistrierung** und dann **Geschäftsbedingungen** aus.
-2. Wählen Sie in der Liste der Geschäftsbedingungen die Bedingungen aus, für die Sie die Annahme anzeigen möchten, und wählen Sie dann **Annahmestatus** aus.
+1. Klicken Sie im Azure-Portal auf **Alle Dienste** > **Überwachung + Verwaltung** > **Intune**. 
+1. Klicken Sie im Bereich „Intune“ auf die Option **Geräteregistrierung** und dann auf **Geschäftsbedingungen**.
+2. Wählen Sie in der Liste der Geschäftsbedingungen die Bedingungen aus, für die Sie die Annahme anzeigen möchten, und klicken Sie dann auf **Annahmebericht**.
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Arbeiten mit mehreren Versionen der Nutzungsbedingungen
 Sie können Ihre Geschäftsbedingungen bearbeiten und ihre Versionen verwalten. Es wird empfohlen, dass Sie jedes Mal die Versionsnummer erhöhen und die Zustimmung zu den Geschäftsbedingungen anfordern, wenn Sie wichtige Änderungen an den Geschäftsbedingungen vornehmen. Behalten Sie die aktuelle Versionsnummer bei, wenn Sie z. B. Tippfehler korrigieren oder die Formatierung ändern.
 
-1. Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1. Klicken Sie im Azure-Portal auf **Alle Dienste** > **Überwachung + Verwaltung** > **Intune**.
 
-2. Wählen Sie auf dem Blatt „Intune“ die Option **Geräteregistrierung**, **Geschäftsbedingungen** und dann die Geschäftsbedingungen aus, die Sie ändern möchten. Anschließend wählen Sie die Option **Eigenschaften** aus.
+2. Klicken Sie im Bereich „Intune“ auf die Option **Geräteregistrierung** > **Geschäftsbedingungen**, und wählen Sie dann die Geschäftsbedingungen aus, die Sie ändern möchten. Klicken Sie anschließend auf die Option **Eigenschaften**.
 
-4. Wählen Sie auf dem Blatt **Eigenschaften** die Option **Geschäftsbedingungen** aus, und ändern Sie bei Bedarf **Titel**, **Zusammenfassung der Nutzungsbedingungen** und **Geschäftsbedingungen**. Wenn es die von Ihnen vorgenommenen Änderungen für Benutzer erforderlich machen, die neuen Bedingungen erneut anzunehmen, klicken Sie auf **Fordert eine erneute Annahme durch die Benutzer an und erhöht die Versionsnummer auf**.
+4. Klicken Sie im Bereich **Eigenschaften** auf die Option **Geschäftsbedingungen**, und ändern Sie bei Bedarf **Titel**, **Summary of Terms** (Zusammenfassung der Nutzungsbedingungen) und **Geschäftsbedingungen**. Wenn es die von Ihnen vorgenommenen Änderungen für Benutzer erforderlich machen, die neuen Bedingungen erneut anzunehmen, klicken Sie auf **Fordert eine erneute Annahme durch die Benutzer an und erhöht die Versionsnummer auf**.
 
 4.  Wählen Sie **OK** und dann **Speichern** aus.
 
