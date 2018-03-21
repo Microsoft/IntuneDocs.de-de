@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/31/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a72199c9e38f4f4d9d7317469eea2e6254efee7
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-android-devices"></a>Registrieren von Android-Geräten
 
@@ -55,9 +55,9 @@ Wenn Sie Android for Work-Geräte mithilfe eines [Geräteregistrierungs-Manager]
 1. **Einrichten von Intune MDM**<br>
 Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch [Festlegen der Autorität für die Verwaltung mobiler Geräte](mdm-authority-set.md) auf **Microsoft Intune** vor.
 2. **Konfigurieren der Android for Work-Bindung**<br>
-    Wählen Sie als Intune-Administrator im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+    Wählen Sie als Intune-Administrator im [Azure-Portal](https://portal.azure.com) die Optionen **Alle Dienste** > **Überwachung + Verwaltung** > **Intune** aus.
 
-   ein. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung**  > **Android for Work-Registrierung** und dann **Konfigurieren** aus, um die Android for Work-Website von Google Play zu öffnen. Die Website wird auf einer neuen Registerkarte im Browser geöffnet.
+   ein. Wählen Sie im Bereich **Intune** die Optionen **Geräteregistrierung** > **Android for Work-Registrierung** und dann **Verwaltetes Google Play – Konfigurieren** aus, um die Android for Work-Website von Google Play zu öffnen. Die Website wird auf einer neuen Registerkarte im Browser geöffnet.
    ![Android for Work-Registrierungsbildschirm](./media/android-work-bind.png)
 
    b. **Anmelden bei Google**<br>
@@ -106,7 +106,7 @@ Sie können die Registrierung und die Verwaltung von Android for Work deaktivier
 ### <a name="to-unbind-an-android-for-work-account"></a>Aufheben der Bindung für ein Android for Work-Konto
 
 1. **Aufheben der Android for Work-Bindung**<br>
-    Wählen Sie als Intune-Administrator im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.  Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung** > **Android for Work-Registrierung** und dann **Bindung aufheben** aus.
+    Wählen Sie als Intune-Administrator im [Azure-Portal](https://portal.azure.com) die Optionen **Alle Dienste** > **Überwachung + Verwaltung** > **Intune** aus.  Wählen Sie im Bereich **Intune** die Optionen **Geräteregistrierung** > **Android for Work-Registrierung** und dann **Bindung aufheben** aus.
 
 2. **Zustimmen zum Löschen der Android for Work-Bindung**<br>
   Wählen Sie **Ja** aus, um die Bindung zu löschen und die Registrierung von allen Android for Work-Geräten in Intune aufzuheben.

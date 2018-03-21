@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 #<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Windows 10 und höher in Microsoft Intune
 In diesem Artikel erfahren Sie alle Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für Windows 10-Geräte konfigurieren können.
@@ -268,7 +268,7 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 
       - **Benutzerkonto**: Gibt das (auf das Gerät bezogen) lokale Benutzerkonto oder die Azure AD-Kontoanmeldung an, das bzw. die der Kiosk-App zugeordnet ist. Geben Sie für Konten, die Mitglieder von Azure AD-Domänen sind, das Konto in der Form `domain\\username@tenant.org` an.
 
-         Verwenden Sie für Geräte in öffentlichen Umgebungen Konten mit minimalen Berechtigungen, um autorisierte Aktivitäten zu verhindern.  
+         Verwenden Sie für Geräte in öffentlichen Umgebungen Konten mit minimalen Berechtigungen, um nicht autorisierte Aktivitäten zu verhindern.  
 
       - **Anwendungsbenutzermodell-ID (AUMID) der App**: Gibt die AUMID der Kiosk-App an. Weitere Informationen finden Sie unter [Find the Application User Model ID of an installed app (Ermitteln der Anwendungsbenutzer-ID einer installierten App)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 

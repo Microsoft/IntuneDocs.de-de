@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d415628419bec26c24494b38a13bd3801051c603
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrieren von Windows Hello for Business in Microsoft Intune
 
@@ -48,19 +48,19 @@ Um sicherzustellen, dass Richtlinienkonflikte gelöst werden und dass die PIN-Ri
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Erstellen einer Windows Hello for Business-Richtlinie
 
-1.  Wählen Sie im Azure-Portal **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1.  Wählen Sie im [Azure-Portal](https://portal.azure.com) die Optionen **Alle Dienste** > **Überwachung + Verwaltung** > **Intune** aus.
 
-2.  Wählen Sie auf der Seite „Intune“ die Option **Geräteregistrierung** aus, und klicken Sie anschließend auf **Windows-Registrierung** > **Windows Hello for Business**.
+2.  Wählen Sie im Bereich „Intune“ die Option **Geräteregistrierung** aus, und klicken Sie anschließend auf **Windows-Registrierung** > **Windows Hello for Business**.
 
-3.  Wählen Sie auf der daraufhin geöffneten Seite die **Standardeinstellungen** aus.
+3.  Wählen Sie in dem Bereich, der geöffnet wird, die **Standardeinstellungen** aus.
 
-4.  Klicken Sie auf der Seite **Alle Benutzer** auf **Eigenschaften**, und geben Sie einen **Namen** und eine optionale **Beschreibung** für die Einstellungen für Windows Hello for Business ein.
+4.  Klicken Sie im Bereich **Alle Benutzer** auf **Eigenschaften**, und geben Sie einen **Namen** und optional eine **Beschreibung** für die Windows Hello for Business-Einstellungen ein.
 
-5. Klicken Sie auf der Seite **Alle Benutzer** auf **Einstellungen**, und wählen Sie für **Windows Hello for Business konfigurieren** aus Folgendem aus:
+5. Klicken Sie im Bereich **Alle Benutzer** auf **Einstellungen**, und wählen Sie für **Windows Hello for Business konfigurieren** folgende Einstellungen aus:
 
     - **Deaktiviert**. Wenn Sie Windows Hello for Business nicht verwenden möchten, wählen Sie diese Einstellung aus. In diesem Fall ist keine der anderen Einstellungen auf dem Bildschirm verfügbar.
     - **Aktiviert**. Wählen Sie diese Einstellung aus, wenn Sie Windows Hello for Business-Einstellungen konfigurieren möchten.
-    - **Nicht konfiguriert**. Wählen Sie diese Einstellung aus, wenn Sie Windows Hello for Business-Einstellungen nicht mit Intune steuern möchten. Vorhandene Windows Hello for Business-Einstellungen auf Geräten mit Windows 10 werden nicht geändert. Alle anderen Einstellungen auf der Seite sind nicht verfügbar.
+    - **Nicht konfiguriert**. Wählen Sie diese Einstellung aus, wenn Sie Windows Hello for Business-Einstellungen nicht mit Intune steuern möchten. Vorhandene Windows Hello for Business-Einstellungen auf Geräten mit Windows 10 werden nicht geändert. Alle anderen Einstellungen in dem Bereich sind nicht verfügbar.
 
 6.  Wenn Sie im letzten Schritt **Aktiviert** ausgewählt haben, konfigurieren Sie die erforderlichen Einstellungen, die auf alle registrierten Geräte mit Windows 10 und Windows 10 Mobile angewendet werden.
 
@@ -69,9 +69,9 @@ Um sicherzustellen, dass Richtlinienkonflikte gelöst werden und dass die PIN-Ri
      - **Erforderlich** (Standard). Nur Geräte mit verfügbarem TPM können Windows Hello for Business bereitstellen.
      - **Bevorzugt**. Geräte versuchen zunächst, ein TPM zu verwenden. Wenn diese Option nicht verfügbar ist, können sie die Softwareverschlüsselung verwenden.
 
- - **Minimale PIN-Länge vorschreiben**/**Maximale PIN-Länge vorschreiben**. Konfiguriert Geräte für die Verwendung der von Ihnen angegebenen minimalen und maximalen PIN-Länge, um eine sichere Anmeldung zu gewährleisten. Die Standard-PIN-Länge beträgt 6 Zeichen, aber Sie können eine Mindestlänge von 4 Zeichen erzwingen. Die maximale PIN-Länge ist 127 Zeichen.
+ - **PIN-Mindestlänge**/**Maximale PIN-Länge**. Konfiguriert Geräte für die Verwendung der von Ihnen angegebenen minimalen und maximalen PIN-Länge, um eine sichere Anmeldung zu gewährleisten. Die Standard-PIN-Länge beträgt 6 Zeichen, aber Sie können eine Mindestlänge von 4 Zeichen erzwingen. Die maximale PIN-Länge ist 127 Zeichen.
 
- - **Kleinbuchstaben in PIN vorschreiben**/**Großbuchstaben in PIN vorschreiben**/**Sonderzeichen in PIN vorschreiben**. Sie können eine stärkere PIN erzwingen, indem Sie die Nutzung von Großbuchstaben, Kleinbuchstaben und Sonderzeichen in der PIN vorschreiben. Es stehen die folgenden Optionen zur Auswahl:
+ - **Kleinbuchstaben in PIN**/**Großbuchstaben in PIN**/**Sonderzeichen in PIN**. Sie können eine stärkere PIN erzwingen, indem Sie die Nutzung von Großbuchstaben, Kleinbuchstaben und Sonderzeichen in der PIN vorschreiben. Es stehen die folgenden Optionen zur Auswahl:
 
      - **Zulässig**. Benutzer können den Zeichentyp in ihrer PIN verwenden, aber es ist nicht zwingend erforderlich.
 
@@ -90,7 +90,7 @@ Um sicherzustellen, dass Richtlinienkonflikte gelöst werden und dass die PIN-Ri
 
  - **Erweitertes Antispoofing verwenden, falls verfügbar**. Konfiguriert, ob die Antispoofingfeatures von Windows Hello auf Geräten verwendet werden, die diese unterstützen (z. B. Erkennung eines Fotos von einem Gesicht anstelle eines echten Gesichts).<br>Wenn diese Option auf **Ja** festgelegt ist, erfordert Windows von allen Benutzern die Verwendung von Antispoofing für Gesichtsmerkmale, sofern dies unterstützt wird.
 
- - **Anmeldung per Telefon verwenden**. Wenn diese Option auf **Ja** festgelegt ist, können die Benutzer einen Remote-Passport als tragbares Begleitgerät für die Authentifizierung von Desktopcomputern verwenden. Der Desktopcomputer muss Azure Active Directory angehören, und das Begleitgerät muss mit einer Windows Hello for Business-PIN konfiguriert werden.
+ - **Anmeldung per Telefon zulassen**. Wenn diese Option auf **Ja** festgelegt ist, können die Benutzer einen Remote-Passport als tragbares Begleitgerät für die Authentifizierung von Desktopcomputern verwenden. Der Desktopcomputer muss Azure Active Directory angehören, und das Begleitgerät muss mit einer Windows Hello for Business-PIN konfiguriert werden.
 
 ## <a name="windows-holographic-for-business-support"></a>Unterstützung durch Windows Holographic for Business
 

@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>So konfigurieren Sie WLAN-Einstellungen in Microsoft Intune
 
@@ -47,17 +47,19 @@ Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfiguri
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Erstellen eines Geräteprofils mit WLAN-Einstellungen
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
-2. Wählen Sie auf dem Blatt **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
-3. Wählen Sie auf dem Blatt „Profile“ die Option **Profil erstellen** aus.
-4. Geben Sie auf dem Blatt **Profil erstellen** einen **Namen** und eine **Beschreibung** für das WLAN-Profil ein.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie im Bereich **Intune** die Option **Gerätekonfiguration** aus.
+2. Klicken Sie im Bereich **Gerätekonfiguration** im Abschnitt **Verwalten** auf **Profile**.
+3. Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
+4. Geben Sie im Bereich **Profil erstellen** einen **Namen** und eine **Beschreibung** für das WLAN-Profil ein.
 5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die Sie WLAN-Einstellungen anwenden möchten. Derzeit können Sie eine der folgenden Plattformen für die WLAN-Einstellungen auswählen:
     - **Android**
     - **Android for Work**
     - **iOS**
     - **macOS**
-    - **Windows 8.1 und höher (Profil importieren)**
+    - **Windows Phone 8.1**
+    - **Windows 8.1 und höher**
+    - **Windows 10 und höher**
 
    > [!IMPORTANT]
    > Wenn Sie ein Profil für Windows 10-Geräte einschließlich Windows Holographic for Business erstellen, müssen Sie die Plattform **Windows 8.1 und höher** auswählen. Die Plattform **Windows 10 und höher** schließt keinen WLAN-Profiltyp ein. 
@@ -70,9 +72,9 @@ Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfiguri
     - [Einstellungen für iOS](wi-fi-settings-ios.md)
     - [Einstellungen für macOS](wi-fi-settings-macos.md)
     - [Einstellungen für Windows 8.1 und höher](wi-fi-settings-import-windows-8-1.md) (einschließlich Windows Holographic for Business)
-1. Navigieren Sie anschließend zurück zum Blatt **Profil erstellen**, und klicken Sie auf **Erstellen**.
+1. Wechseln Sie anschließend wieder zum Bereich **Profil erstellen**, und klicken Sie auf **Erstellen**.
 
-Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
+Das Profil wird erstellt und im Bereich „Profilliste“ angezeigt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

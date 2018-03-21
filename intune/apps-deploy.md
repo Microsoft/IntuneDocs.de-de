@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Zuweisen von Apps zu Gruppen mit Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Nachdem Sie eine App in Intune hinzugefügt haben, können Sie diese Benutzern und Geräten zuweisen.
+Nachdem Sie eine App zu Microsoft Intune hinzugefügt haben, können Sie diese Benutzern und Geräten zuweisen.
 
 Apps können Geräten zugewiesen werden, und zwar unabhängig davon, ob sie von Intune verwaltet werden. In der folgenden Tabelle werden die verschiedenen Optionen für die Zuweisung von Apps zu Benutzern und Geräten erläutert:
 
@@ -51,19 +51,28 @@ Apps können Geräten zugewiesen werden, und zwar unabhängig davon, ob sie von 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
-1. Wählen Sie in der Workload **Mobile Apps** die Option **Verwalten** > **Apps** aus.
+1. Wählen Sie in der Workload **Mobile Apps** im Abschnitt **Verwalten** die Option **Apps** aus.
 2. Klicken Sie auf dem Blatt mit der Liste der Apps auf die App, die Sie zuweisen möchten.
-3. Wählen Sie auf dem Blatt **Übersicht** die Option **Verwalten** > **Zuweisungen** aus.
-4. Wählen Sie **Gruppe hinzufügen** und anschließend auf dem Blatt **Gruppe hinzufügen** die Azure AD-Gruppen aus, die Sie bei der Zuweisung der Gruppe einbeziehen bzw. ausschließen möchten.
-5. Wählen Sie für jede ausgewählte App einen **Zuweisungstyp** aus:
+3. Wählen Sie auf dem Blatt mit der **Übersicht** über die App im Abschnitt **Verwalten** die Option **Zuweisungen** aus.
+4. Klicken Sie auf **Gruppe hinzufügen**, um das Blatt **Gruppe hinzufügen** für die App anzuzeigen.
+5. Wählen Sie einen **Zuweisungstyp** für diese App aus:
     - **Verfügbar für registrierte Geräte:**  Benutzer installieren die App über die Unternehmensportal-App oder -Website.
-    - **Verfügbar ohne Registrierung:** Weisen Sie diese App Benutzergruppen zu, deren Geräte nicht bei Intune registriert sind.
+    - **Verfügbar ohne Registrierung:** Weisen Sie diese App Benutzergruppen zu, deren Geräte nicht bei Intune registriert sind. Beachten Sie, dass der Typ **Android for Work-App** diese Option nicht unterstützt. 
     - **Erforderlich:** Die App wird auf Geräten in den ausgewählten Gruppen installiert.
     - **Deinstallieren:** Die App wird auf Geräten in den ausgewählten Gruppen deinstalliert.
-6. **Nur für iOS-Apps**: Wenn Sie ein iOS-VPN-Profil erstellt haben, das VPN pro App-Einstellungen enthält, können Sie es unter **VPN** auswählen. Wenn die App ausgeführt wird, wird die VPN-Verbindung geöffnet. Weitere Informationen finden Sie unter [VPN-Einstellungen für iOS-Geräte](vpn-settings-ios.md).
-6. Wählen Sie abschließend **OK** und dann **Speichern** aus.
 
-Die App wird jetzt den von Ihnen ausgewählten Gruppen zugewiesen.
+    > [!NOTE]
+    > **Nur für iOS-Apps**: Wenn Sie ein iOS-VPN-Profil erstellt haben, das VPN pro App-Einstellungen enthält, können Sie es unter **VPN** auswählen. Wenn die App ausgeführt wird, wird die VPN-Verbindung geöffnet. Weitere Informationen finden Sie unter [VPN-Einstellungen für iOS-Geräte](vpn-settings-ios.md).
+
+6. Wählen Sie **Eingeschlossene Gruppen** aus, um die Benutzergruppen auszuwählen, denen diese App zugewiesen werden soll.
+7. Klicken Sie auf **Auswählen**, wenn Sie mindestens eine Gruppe ausgewählt haben, die eingeschlossen werden soll.
+8. Klicken Sie auf dem Blatt **Zuweisen** auf **OK**, um die Auswahl der eingeschlossenen Gruppe abzuschließen.
+9. Klicken Sie auf **Gruppen ausschließen**, wenn Sie Benutzergruppen von dieser App-Zuweisung ausschließen möchten.
+10. Wenn Sie die auszuschließenden Gruppen ausgewählt haben, klicken Sie auf dem Blatt **Ausgewählte Gruppen auf**  **Auswählen**.
+11. Klicken Sie auf dem Blatt **Gruppe hinzufügen** auf **OK**.
+12. Klicken Sie auf dem Blatt **Zuweisungen** der App auf **Speichern**, um Ihre Zuweisungen zu speichern.
+
+Die App wird jetzt den von Ihnen ausgewählten Gruppen zugewiesen. Weitere Informationen zum Ein- und Ausschließen von App-Zuweisungen finden Sie unter [Einschließen und Ausschließen von App-Zuweisungen](apps-inc-exl-assignments.md).
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Auflösung von Konflikten zwischen App-Absichten
 
@@ -78,8 +87,8 @@ In manchen Fällen wird die gleiche App mehreren Gruppen zugewiesen, jedoch mit 
 |Verfügbarer Benutzer|Benutzer nicht verfügbar|Nicht verfügbar|
 |Verfügbarer Benutzer|Benutzerdeinstallation|Deinstallieren|
 |Benutzer nicht verfügbar|Benutzerdeinstallation|Deinstallieren
-|Erforderlicher Benutzer|Erforderliches Gerät|Beides vorhanden, Gateway behandelt Erforderliches 
-|Erforderlicher Benutzer|Gerätedeinstallation|Beides vorhanden, Gateway löst Erforderliches 
+|Erforderlicher Benutzer|Erforderliches Gerät|Beides vorhanden, Gateway behandelt Erforderliches
+|Erforderlicher Benutzer|Gerätedeinstallation|Beides vorhanden, Gateway löst Erforderliches
 |Verfügbarer Benutzer|Erforderliches Gerät|Beides vorhanden, Gateway löst Erforderliches (Erforderlich und Verfügbar)
 |Verfügbarer Benutzer|Gerätedeinstallation|Beides vorhanden, Gateway löst Verfügbares.<br>App wird im Unternehmensportal angezeigt.<br>Wenn die App bereits installiert wurde (als erforderliche App mit vorheriger Absicht), wird die App deinstalliert.<br>Wenn der Benutzer über das Unternehmensportal auf „Installieren“ klickt, wird die App installiert und die deinstallierte Absicht wird nicht berücksichtigt.|
 |Benutzer nicht verfügbar|Erforderliches Gerät|Erforderlich|
@@ -105,7 +114,7 @@ In manchen Fällen wird die gleiche App mehreren Gruppen zugewiesen, jedoch mit 
 |Benutzer verfügbar ohne Registrierung|Gerätedeinstallation|Deinstallation und verfügbar ohne Registrierung.<br>Wenn der Benutzer die App nicht über das Unternehmensportal installiert hat, wird die Deinstallation berücksichtigt.<br>Wenn der Benutzer die App über das Unternehmensportal installiert, wird die Installation gegenüber der Deinstallation bevorzugt.|
 
 >[!NOTE]
->Nur für verwaltete iOS Store-Apps: Falls Sie diese Intune hinzufügen und als „Erforderlich“ zuweisen, werden sie automatisch jeweils mit der Absicht „Erforderlich“ und „Verfügbar“ erstellt.
+>Nur für verwaltete iOS Store-Apps: Wenn Sie diese zu Microsoft Intune hinzufügen und als **Erforderlich** zuweisen, werden sie automatisch sowohl mit der Absicht **Erforderlich** als auch mit der Absicht **Verfügbar** erstellt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

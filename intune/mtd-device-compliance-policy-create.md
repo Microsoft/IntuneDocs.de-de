@@ -1,12 +1,12 @@
 ---
-title: "Erstellen einer Mobile Threat Defense-Gerätekompatibilitätsrichtlinie mit Intune"
-titlesuffix: Azure portal
-description: "Erstellen einer Mobile Threat Defense-Gerätekompatibilitätsrichtlinie in Intune"
+title: "Erstellen einer MTD-Konformitätsrichtlinie für Geräte mit Microsoft Intune"
+titlesuffix: 
+description: "Erstellen Sie eine Intune-Konformitätsrichtlinie für Geräte, die die Bedrohungsstufen Ihres MTD-Partners verwendet, um zu ermitteln, ob ein mobiles Gerät auf Unternehmensressourcen zugreifen darf."
 keywords: 
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a02f08c347f40821a10f6d9b6df3a6b26178180b
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Erstellen einer Mobile Threat Defense-Gerätekompatibilitätsrichtlinie (MTD) mit Intune
 
@@ -40,7 +40,7 @@ Voraussetzungen für die Gerätekompatibilitätsrichtlinie mit MTD:
 
 1.  Melden Sie sich im [Azure-Portal](https://portal.azure.com/) mit Ihren Intune-Anmeldeinformationen an.
 
-2.  Wählen Sie im **Azure-Dashboard** im linken Menü **Weitere Dienste** aus, und geben Sie in das Filtertextfeld **Intune** ein.
+2.  Klicken Sie im **Azure-Dashboard** im linken Menü auf **Alle Dienste**, und geben Sie in das Filtertextfeld **Intune** ein.
 
 3.  Wählen Sie **Intune** aus. Das **Intune-Dashboard** wird geöffnet.
 
@@ -48,9 +48,9 @@ Voraussetzungen für die Gerätekompatibilitätsrichtlinie mit MTD:
 
 5.  Wählen Sie **Richtlinie erstellen** aus, geben Sie den **Namen** und die **Beschreibung** der Gerätekompatibilität ein, wählen Sie die **Plattform** aus, und wählen Sie dann **Konfigurieren** im Abschnitt **Einstellungen** aus.
 
-6.  Wählen Sie auf dem Blatt **Kompatibilitätsrichtlinie** **Geräteintegrität** aus.
+6.  Wählen Sie im Bereich **Konformitätsrichtlinie** die Option **Geräteintegrität** aus.
 
-7.  Wählen Sie auf dem Blatt **Geräteintegrität** die Mobile Threat-Stufe aus der Dropdownliste unter **Require the device to be at or under the Mobile threat Defense Level** (Fordern Sie, dass das Gerät maximal auf dieser Mobile Threat Defense-Stufe ist) aus.
+7.  Wählen Sie im Bereich **Geräteintegrität** aus der Dropdownliste **Anfordern, dass das Gerät höchstens der angegebenen Gerätebedrohungsstufe entspricht** die gewünschte Stufe für mobile Bedrohungen aus.
 
     ein.  **Geschützt**: Diese Stufe ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
 
@@ -67,11 +67,11 @@ Voraussetzungen für die Gerätekompatibilitätsrichtlinie mit MTD:
 
 ## <a name="to-assign-a-mtd-device-compliance-policy"></a>So weisen Sie eine MTD-Gerätekompatibilitätsrichtlinie zu
 
-Wählen Sie zum Zuweisen einer Gerätekompatibilitätsrichtlinie zu Benutzern eine Richtlinie aus, die Sie zuvor konfiguriert haben. Vorhandene Richtlinien finden Sie auf dem Blatt **Gerätekompatibilitätsrichtlinien**.
+Wählen Sie zum Zuweisen einer Gerätekompatibilitätsrichtlinie zu Benutzern eine Richtlinie aus, die Sie zuvor konfiguriert haben. Vorhandene Richtlinien finden Sie im Bereich **Gerätekonformität > Richtlinien**.
 
-1. Wählen Sie die Richtlinie, die Sie Benutzern zuweisen möchten, und abschließend **Zuweisungen** aus. Mit dieser Aktion öffnen Sie das Blatt, auf dem Sie **Azure Active Directory-Sicherheitsgruppen** auswählen und der Richtlinie zuweisen können.
+1. Wählen Sie die Richtlinie, die Sie Benutzern zuweisen möchten, und abschließend **Zuweisungen** aus. Mit dieser Aktion öffnen Sie den Bereich, in dem Sie **Azure Active Directory-Sicherheitsgruppen** auswählen und der Richtlinie zuweisen können.
 
-2. Wählen Sie **Gruppen auswählen** aus, um das Blatt mit den Azure AD-Sicherheitsgruppen zu öffnen.  Die Auswahl von **Auswählen** bewirkt die Bereitstellung der Richtlinie für Benutzer.
+2. Klicken Sie auf **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen**, um den Bereich mit den Azure AD-Sicherheitsgruppen zu öffnen.  Die Auswahl von **Auswählen** bewirkt die Bereitstellung der Richtlinie für Benutzer.
 
     > [!NOTE] 
     > Sie haben die Richtlinie auf Benutzer angewendet. Die von den Benutzern verwendeten Geräte, denen die Richtlinie zugewiesen wurde, werden auf Kompatibilität überprüft.

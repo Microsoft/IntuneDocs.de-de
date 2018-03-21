@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e06b335c03caee0bd997748f9c48ed78d7d379b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 53b5be6e5cdf8f60304126e133a727123bfef58d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-managing-users"></a>Erste Schritte mit der Benutzerverwaltung
 
@@ -28,12 +28,12 @@ Denken Sie an die verschiedenen Personen in Ihrer Organisation. Jeder von ihnen,
 ## <a name="how-do-i-create-a-user"></a>Wie erstelle ich einen Benutzer?
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Suchen Sie über **Ressourcen durchsuchen** nach **Intune**.
-3. Wenn Sie das Blatt **Microsoft Intune** geöffnet haben, wählen Sie **Benutzer** aus. Wählen Sie auf der Seite **Alle Benutzer** die Option **+ Neuer Benutzer** aus.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wenn Sie den Bereich **Microsoft Intune** geöffnet haben, wählen Sie **Benutzer** aus. Wählen Sie auf der Seite **Alle Benutzer** die Option **+ Neuer Benutzer** aus.
 4. Machen Sie genauere Angaben zum Benutzer: geben Sie z.B. einen **Namen** und einen **Benutzernamen** ein. Der Domänennamenteil des Benutzernamens muss entweder der anfängliche Standarddomänenname „contoso.onmicrosoft.com“ oder ein verifizierter Domänenname ohne Verbund wie z.B. „contoso.com“ sein.
 5. Wählen Sie unter **Gruppen** die Testgruppe, die Sie dem Benutzer hinzufügen möchten.
 6. Speichern Sie das automatisch generierte Benutzerkennwort, das Sie zur Anmeldung bei einem Testgerät benötigen. Dieses Kennwort müssen Sie Benutzern geben, damit sie es in ein normales Kennwort ändern können, das sie sich leichter merken können.
-7. Klicken Sie auf dem Blatt **Benutzer** auf **Erstellen**.
+7. Klicken Sie im Bereich **Benutzer** auf **Erstellen**.
 
 ## <a name="assigning-licenses-to-users"></a>Zuweisen von Lizenzen zu Benutzern
 

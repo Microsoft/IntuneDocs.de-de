@@ -6,20 +6,20 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad8553506752cce99f22283e50cc5f490d72ed0b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 88be142c98d7b89720d245c738a45a26ac825395
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Einstellungen des Layouts des Microsoft Intune-Startbildschirms für iOS-Geräte 
+# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Einstellungen des Layouts des Microsoft Intune-Startbildschirms für iOS-Geräte
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -27,20 +27,21 @@ Verwenden Sie diese Einstellungen, um das Layout von Apps und Ordner auf dem iOS
 
 iOS-Geräte, denen ein Profil zugewiesen ist, müssen sich im überwachten Modus befinden und iOS 9.3 oder höher ausführen.
 
-1. Wählen Sie auf der Seite **Gerätekonfiguration**, **Profil erstellen**, **Gerätefeatures** den Eintrag **Layout des Startbildschirms (nur überwacht)** aus.
-2. Wählen Sie auf der Seite **Layout des Startbildschirms (nur überwacht)** aus, ob Sie das Layout des **Docks** oder der **Seiten** konfigurieren möchten.
+1. Navigieren Sie in [Intune im Azure-Portal](https://portal.azure.com) [im Gerätekonfigurationsbereich zu **Gerätefunktionen**](device-features-configure.md).
+2. Wählen Sie im Bereich **Gerätefunktionen** die Option **Layout des Startbildschirms (nur überwacht)** aus.
+3. Wählen Sie im Bereich **Layout des Startbildschirms (nur überwacht)** aus, ob Sie das Layout des **Docks** oder der **Seiten** konfigurieren möchten.
 
 ## <a name="add-items-to-the-dock"></a>Hinzufügen von Elementen zum Dock
 
-Auf der Seite **Dock** können Sie dem Dock des iOS-Bildschirms bis zu sechs Elemente oder Ordner hinzufügen. Allerdings unterstützen viele Geräte weniger Elemente – z.B. unterstützen iPhone-Geräte bis zu vier Elemente. In diesem Fall werden nur die ersten vier Elemente, die Sie konfiguriert haben, auf dem Gerät angezeigt.
+Im Bereich **Dock** können Sie dem Dock des iOS-Bildschirms bis zu sechs Elemente oder Ordner hinzufügen. Allerdings unterstützen viele Geräte weniger Elemente – z.B. unterstützen iPhone-Geräte bis zu vier Elemente. In diesem Fall werden nur die ersten vier Elemente, die Sie konfiguriert haben, auf dem Gerät angezeigt.
 
 1. Wählen Sie **Hinzufügen**, um dem Dock ein Element hinzuzufügen.
-2. Wählen Sie auf der Seite **Zeile hinzufügen** aus, ob Sie eine **App** oder einen **Ordner** hinzufügen möchten.
+2. Wählen Sie im Bereich **Zeile hinzufügen** aus, ob Sie eine **App** oder einen **Ordner** hinzufügen möchten.
 3. Konfigurieren Sie mit den Informationen in diesem Thema die Apps und Ordner, die im Dock angezeigt werden sollen.
-4. Fügen Sie nach Bedarf weitere Elemente hinzu. Klicken Sie anschließend auf jeder Seite auf **OK**, bis Sie sich wieder auf der Seite **Profil erstellen** befinden. Wählen Sie **Erstellen** aus.
+4. Fügen Sie nach Bedarf weitere Elemente hinzu. Klicken Sie anschließend in jedem Bereich auf **OK**, bis Sie sich wieder im Bereich **Profil erstellen** befinden. Wählen Sie **Erstellen** aus.
 
 >[!TIP]
-> In jedem Startbildschirm und auf allen Seiten können Sie Elemente mittels Ziehen und Ablegen sortieren. 
+> In jedem Startbildschirm und auf allen Seiten können Sie Elemente mittels Ziehen und Ablegen sortieren.
 
 ### <a name="example"></a>Beispiel
 
@@ -56,9 +57,8 @@ Wenn Sie einem iPhone die Richtlinie zuweisen, ist das Ergebnis ein Dock, das et
 
 Fügen Sie die Seiten hinzu, die auf dem Startbildschirm angezeigt werden sollen, und die Apps, die auf jeder Seite angezeigt werden. Apps, die Sie einer Seite hinzufügen, sind in der Reihenfolge, in der sie in der Liste angegeben sind, von links nach rechts angeordnet. Wenn Sie mehr Apps hinzufügen, als auf eine Seite passen, werden die Apps auf eine nachfolgende Seite verschoben.
 
-
-1. Wählen Sie auf der Seite **Seiten** die Option **Hinzufügen** aus.
-2. Geben Sie auf der Seite **Zeile hinzufügen** einen **Seitennamen** ein. Dieser Name wird im Azure-Portal zur Referenz verwendet und auf dem iOS-Gerät *nicht angezeigt*.
+1. Wählen Sie im Bereich **Seiten** die Option **Hinzufügen** aus.
+2. Geben Sie im Bereich **Zeile hinzufügen** einen **Seitennamen** ein. Dieser Name wird im Azure-Portal zur Referenz verwendet und auf dem iOS-Gerät *nicht angezeigt*.
 3. Wählen Sie **Hinzufügen** aus, und wählen Sie dann, ob Sie der Seite eine **App** oder einen **Ordner** hinzufügen möchten.
 4. Konfigurieren Sie mit den Informationen in diesem Thema die Apps und Ordner, die auf der Seite angezeigt werden sollen.
 
@@ -85,7 +85,7 @@ Apps, die Sie einer Seite in einem Ordner hinzufügen, sind in der Reihenfolge, 
 
 1. Geben Sie den **Ordnernamen** ein. Dieser Name wird Benutzern auf ihren Geräten angezeigt.
 2. Wählen Sie **Hinzufügen**, um eine Seite im Ordner zu erstellen. Sie können bis zu 20 Seiten hinzufügen.
-3. Geben Sie auf der Seite **Zeile hinzufügen** einen Namen für die Seite ein. Dieser Name wird im Azure-Portal zur Referenz verwendet und auf dem iOS-Gerät *nicht angezeigt*.
+3. Geben Sie im Bereich **Zeile hinzufügen** einen Namen für die Seite ein. Dieser Name wird im Azure-Portal zur Referenz verwendet und auf dem iOS-Gerät *nicht angezeigt*.
 3. Geben Sie den **App-Namen** ein. Dieser Name wird im Azure-Portal zur Referenz verwendet und auf dem iOS-Gerät *nicht angezeigt*.
 2. Geben Sie die **App-Bündel-ID** der App ein, die Sie anzeigen möchten. Hilfe finden Sie unter **Hinzufügen einer App zur Liste**.
 3. Wählen Sie **Hinzufügen** aus. Sie können bis zu 60 Elemente hinzufügen.
@@ -94,7 +94,7 @@ Apps, die Sie einer Seite in einem Ordner hinzufügen, sind in der Reihenfolge, 
 
 ## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Bündel-ID-Referenz für integrierte iOS-Apps
 
-Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die Bündel-ID von anderen Apps zu finden, wenden Sie sich an den Softwarehersteller. 
+Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die Bündel-ID von anderen Apps zu finden, wenden Sie sich an den Softwarehersteller.
 
 |||
 |-|-|

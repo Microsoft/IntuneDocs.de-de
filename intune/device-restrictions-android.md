@@ -6,19 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: ayesham
+ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Android und Samsung KNOX Standard in Microsoft Intune 
 
@@ -144,7 +144,7 @@ Konfigurieren Sie für jede Einstellung eine Liste von Apps mit einer der folgen
 
 Kioskeinstellungen gelten nur für Samsung KNOX Standard-Geräte, und nur für Apps, die Sie mit Intune verwalten.
 
-- **Verwaltete App auswählen:** Wählen Sie eine der folgenden Optionen aus, um eine oder mehrere verwaltete Apps hinzuzufügen, die ausgeführt werden können, wenn sich das Gerät im Kioskmodus befindet. Es dürfen keine anderen Apps auf dem Gerät ausgeführt werden.
+- **Verwaltete App auswählen:** Wählen Sie eine der folgenden Optionen aus, um eine oder mehrere verwaltete Apps hinzuzufügen, die ausgeführt werden können, wenn sich das Gerät im Kioskmodus befindet. Es dürfen keine anderen Apps auf dem Gerät ausgeführt werden. Vorinstallierte Browser können nicht als App definiert ist, die ausgeführt werden darf, während sich das Gerät im Kioskmodus befindet. Wenn ein Browser erforderlich ist, erwägen Sie den Einsatz von [Managed Browser](app-configuration-managed-browser.md).
     - **Hinzufügen von Apps nach Paketname**
     - **Hinzufügen von Apps nach URL**
     - **Hinzufügen von verwalteten Apps**

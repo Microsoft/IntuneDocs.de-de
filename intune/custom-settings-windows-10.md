@@ -13,13 +13,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 156d37874529b4ae5a8176d7e9a8873cf440c32c
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4bb86d0f80a4d337e0ab63ae7f90d6c3541462d9
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>Benutzerdefinierte Microsoft Intune-Geräteeinstellungen für Windows 10-Geräte 
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>Benutzerdefinierte Microsoft Intune-Geräteeinstellungen für Windows 10-Geräte
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -29,11 +29,11 @@ Wenn Sie nach einer bestimmten Einstellung suchen, beachten Sie, dass das [Gerä
 ## <a name="configure-custom-settings"></a>Konfigurieren von benutzerdefinierten Einstellungen
 
 1. Anweisungen zu den ersten Schritten finden Sie unter [Konfigurieren von benutzerdefinierten Geräteeinstellungen in Microsoft Intune](custom-settings-configure.md).
-2. Wählen Sie auf der Seite **Profil erstellen** die Option **Einstellungen** aus, um eine oder mehrere OMA-URI-Einstellungen hinzufügen.
-3. Klicken Sie auf der Seite **Benutzerdefinierte OMA-URI-Einstellungen** auf **Hinzufügen**, um einen neuen Wert hinzuzufügen. Sie können auch auf **Exportieren** klicken, um eine Liste aller konfigurierten Werte in einer durch Trennzeichen getrennten Wertedatei (CSV) anzuzeigen.
-4. Geben Sie für jede OMA-URI-Einstellung, die Sie hinzufügen möchten, die folgenden Informationen ein. Verwenden Sie die Liste in diesem Artikel, um weitere Informationen zu den Einstellungen zu erhalten, die Sie verwenden können:
-    - **Einstellungsname** – Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie sie in der Liste der Einstellungen leichter identifizieren können.
-    - **Beschreibung der Einstellung** – Geben Sie optional eine Beschreibung für die Einstellung ein.
+1. Klicken Sie im Bereich **Benutzerdefinierte OMA-URI-Einstellungen** auf **Hinzufügen**, um einen neuen Wert hinzuzufügen. Sie können auch auf **Exportieren** klicken, um eine Liste aller konfigurierten Werte in einer durch Trennzeichen getrennten Wertedatei (CSV) anzuzeigen.
+1. Geben Sie für jede OMA-URI-Einstellung, die Sie hinzufügen möchten, die folgenden Informationen ein. Verwenden Sie die Liste in diesem Artikel, um weitere Informationen zu den Einstellungen zu erhalten, die Sie verwenden können:
+    - **Name**: Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie sie in der Liste der Einstellungen einfacher identifizieren können.
+    - **Beschreibung**: Geben Sie optional eine Beschreibung für die Einstellung ein.
+    - **OMA-URI (Groß-/Kleinschreibung beachten)**: Geben Sie den OMA-URI an, für den Sie eine Einstellung festlegen möchten.
     - **Datentyp** – Wählen Sie aus:
         - **Zeichenfolge**
         - **Zeichenfolge (XML)**
@@ -41,10 +41,10 @@ Wenn Sie nach einer bestimmten Einstellung suchen, beachten Sie, dass das [Gerä
         - **Ganze Zahl**
         - **Gleitkomma**
         - **Boolesch**
-    - **OMA-URI (Groß-/Kleinschreibung beachten)** – Geben Sie den OMA-URI an, für den Sie eine Einstellung festlegen möchten.
-    - **Wert** – Geben Sie den Wert an, der mit der von Ihnen eingegebenen OMA-URI verknüpft werden soll.
-5. Navigieren Sie anschließend zurück zur Seite **Profil erstellen**, und klicken Sie auf **Erstellen**.
-Das Profil wird erstellt und auf der Seite mit der Profilliste angezeigt.
+        - **Base64**
+    - **Wert**: Geben Sie den Wert oder die Datei an, der bzw. die mit der von Ihnen eingegebenen OMA-URI verknüpft werden soll.
+1. Klicken Sie anschließend auf **OK**, navigieren Sie wieder zum Bereich **Profil erstellen**, und klicken Sie auf **Erstellen**.
+Das Profil wird erstellt und im Bereich „Profilliste“ angezeigt.
 
 ## <a name="example"></a>Beispiel
 Im folgenden Screenshot ist die Einstellung **Connectivity/AllowVPNOverCellular** aktiviert. Dadurch kann ein Windows 10-Gerät eine VPN-Verbindung über ein Mobilfunknetz öffnen.
@@ -59,5 +59,3 @@ Eine vollständige Liste aller Konfigurationsdienstanbieter (CSP), die von Windo
 Nicht alle Einstellungen sind mit allen Windows 10-Versionen kompatibel. Die Tabelle im Windows-Artikel enthält entsprechende Informationen, welche Versionen für die einzelnen Konfigurationsdienstanbieter unterstützt werden.
 
 Darüber hinaus unterstützt Intune nicht alle Einstellungen, die in diesem Artikel aufgeführt werden. Öffnen Sie den Artikel für die jeweilige Einstellung, um herauszufinden, ob die gewünschte Einstellung von Intune unterstützt wird. Jede Einstellungsseite zeigt ihren unterstützten Vorgang an. Damit die Einstellung mit Intune funktioniert, muss sie die Vorgänge **Hinzufügen** oder **Ersetzen** unterstützen.
-
-

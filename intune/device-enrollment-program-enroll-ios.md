@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e770c39a22b620bb642b7b15a456369bb4acec2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 24b1ffb1d89f52a51f21dc6c4a588324f3cd87d3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple
 
@@ -74,7 +74,7 @@ Verwenden Sie das Apple DEP-Portal, um ein DEP-Token zu erstellen. Sie verwenden
 
 **Schritt 1: Laden Sie ein Intune-Zertifikat mit öffentlichem Schlüssel herunter, das zum Erstellen eines Apple-DEP-Tokens erforderlich ist.**<br>
 
-1. Wählen Sie in Intune im Azure-Portal die Optionen **Geräteregistrierung** > **Apple Registrierung** > **Registrierungsprogrammtoken** aus.
+1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Token für Registrierungsprogramm** aus.
 
   ![Bereich „Registrierungsprogrammtoken“ im Arbeitsbereich „Apple-Zertifikate“](./media/enrollment-program-token-add.png)
 
@@ -116,7 +116,7 @@ Wechseln Sie zur Zertifikatsdatei (.pem), wählen Sie **Öffnen** aus, und wähl
 
 Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil für DEP-Geräte erstellen. Ein Geräteregistrierungsprofil definiert die Einstellungen, die während der Registrierung auf eine Gruppe von Geräten angewendet werden.
 
-1. Wählen Sie in Intune im Azure-Portal die Optionen **Geräteregistrierung** > **Apple Registrierung** aus.
+1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple Registrierung** aus.
 2. Wählen Sie unter **Registrierungsprogramm für Apple**  den Eintrag **Profile des Registrierungsprogramms** > **Erstellen** aus.
 3. Geben Sie unter **Registrierungsprofil erstellen** einen **Namen** und eine **Beschreibung** für das Profil zu administrativen Zwecken ein. Benutzer können diese Informationen nicht sehen. Sie können das Feld **Name** zum Erstellen einer dynamischen Gruppe in Azure Active Directory verwenden. Verwenden Sie den Profilnamen, um den Parameter „enrollmentProfileName“ zu definieren, um Geräte mit diesem Registrierungsprofil zuzuweisen. Erfahren Sie mehr über [dynamische Gruppen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
 
@@ -169,7 +169,7 @@ Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil fü
 ## <a name="sync-managed-devices"></a>Synchronisieren verwalteter Geräte
 Nachdem Intune nun die Berechtigung zum Verwalten Ihrer Geräte besitzt, können Sie Intune mit Apple synchronisieren, um Ihre verwalteten Geräte in Intune im Azure-Portal anzuzeigen.
 
-1. Wählen Sie in Intune im Azure-Portal die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Registrierungsprogrammgeräte** > **Synchronisierung** aus. Die Statusanzeige zeigt die Zeitdauer, die Sie warten müssen, bevor Sie die Synchronisierung erneut anfordern können.
+1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Geräte des Registrierungsprogramms** > **Synchronisieren** aus. Die Statusanzeige zeigt die Zeitdauer, die Sie warten müssen, bevor Sie die Synchronisierung erneut anfordern können.
 
   ![Ausgewählter Knoten „Geräte des Registrierungsprogramms“ und ausgewählter Link „Synchronisierung“](./media/enrollment-program-device-sync.png)
   
@@ -190,7 +190,7 @@ Sie müssen Geräten ein Profil des Registrierungsprogramms zuweisen, bevor Sie 
 >[!NOTE]
 >Sie können auch auf dem Blatt **Apple-Seriennummern** Profilen Seriennummern zuweisen.
 
-1. Wählen Sie im Intune-Portal die Option **Geräteregistrierung** > **Apple-Registrierung** und dann **Profile des Registrierungsprogramms** aus.
+1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** und dann **Profile des Registrierungsprogramms** aus.
 2. Wählen Sie aus der Liste **Profile des Registrierungsprogramms** das Profil aus, das den Geräten zugewiesen werden soll, und wählen Sie anschließend **Geräte zuweisen** aus.
 
  ![Gerätezuweisungen mit ausgewählter Option „Zuweisen“](./media/enrollment-program-device-assign.png)

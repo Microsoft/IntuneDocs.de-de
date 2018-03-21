@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f639a61c4d481a891156383c3a23e0e1511a5fbe
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d3a599ff1dff3e27214dfcca694f6b97333f370a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Einrichten der iOS-Geräteregistrierung mit Apple School Manager
 
@@ -81,7 +81,7 @@ Bevor Sie unternehmenseigene iOS-Geräte mit dem Apple School Manager registrier
 
 **Schritt 3: Geben Sie die Apple-ID ein, die Sie zum Erstellen Ihres Apple School Manager-Tokens verwendet haben.**<br>Diese ID muss zum Erneuern Ihres Apple School Manager-Tokens verwendet werden und wird zur späteren Referenz gespeichert.
 
-![Angabe der Apple-ID zur Erstellung des Registrierungsprogrammtokens und zur Navigation zu diesem Token](./media/enrollment-program-token-apple-id.png)
+![Angabe der Apple-ID zur Erstellung des Registrierungsprogrammtokens und Navigieren zu diesem Token](./media/enrollment-program-token-apple-id.png)
 
 **Schritt 4: Suchen Sie Ihr Token, und laden Sie es hoch.**<br>
 Wechseln Sie zur Zertifikatsdatei (P7M), und wählen Sie **Öffnen** und anschließend **Hochladen** aus. Intune synchronisiert Ihre Apple School Manager-Geräte automatisch mit Apple.
@@ -89,7 +89,7 @@ Wechseln Sie zur Zertifikatsdatei (P7M), und wählen Sie **Öffnen** und anschli
 ## <a name="create-an-apple-enrollment-profile"></a>Erstellen eines Apple-Registrierungsprofils
 Ein Geräteregistrierungsprofil definiert die Einstellungen, die während der Registrierung auf eine Gruppe von Geräten angewendet werden.
 
-1. Wählen Sie unter „Intune“ im Azure-Portal nacheinander die Optionen **Geräteregistrierung** und **Apple-Registrierung** aus.
+1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) nacheinander die Optionen **Geräteregistrierung** und **Apple-Registrierung** aus.
 2. Wählen Sie unter **Registrierungsprogramm** den Eintrag **Profile des Registrierungsprogramms** aus.
 3. Wählen Sie auf dem Blatt **Profile des Registrierungsprogramms** die Option **Erstellen** aus.
 4. Geben Sie auf dem Blatt **Registrierungsprofil erstellen** einen **Namen** und eine **Beschreibung** für das Profil ein, das in Intune angezeigt wird.
@@ -149,9 +149,9 @@ Ein Geräteregistrierungsprofil definiert die Einstellungen, die während der Re
 ## <a name="sync-managed-devices"></a>Synchronisieren verwalteter Geräte
 Nachdem Intune nun die Berechtigung zum Verwalten Ihrer Apple School Manager-Geräte zugewiesen wurde, können Sie Intune mit dem Apple-Dienst synchronisieren, um Ihre verwalteten Geräte im Intune-Portal anzuzeigen.
 
-1. Wählen Sie in Intune im Azure-Portal die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Registrierungsprogrammgeräte** > **Synchronisierung** aus. Die Statusanzeige zeigt die Zeitdauer, die Sie warten müssen, bevor Sie die Synchronisierung erneut anfordern können.
+1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Geräte des Registrierungsprogramms** > **Synchronisieren** aus. Die Statusanzeige zeigt die Zeitdauer, die Sie warten müssen, bevor Sie die Synchronisierung erneut anfordern können.
 
-  ![Ausgewählter Knoten „Geräte des Registrierungprogramms“ und ausgewählter Link „Synchronisierung“](./media/enrollment-program-device-sync.png)
+  ![Ausgewählter Knoten „Geräte des Registrierungsprogramms“ und ausgewählter Link „Synchronisierung“](./media/enrollment-program-device-sync.png)
 2. Wählen Sie auf dem Blatt **Synchronisieren** die Option **Synchronisierung anfordern** aus. Die Statusanzeige zeigt die Zeitdauer, die Sie warten müssen, bevor Sie die Synchronisierung erneut anfordern können.
 
   ![Blatt „Synchronisierung“ mit ausgewähltem Link „Synchronisierung anfordern“](./media/enrollment-program-device-request-sync.png)
@@ -166,7 +166,7 @@ Nachdem Intune nun die Berechtigung zum Verwalten Ihrer Apple School Manager-Ger
 ## <a name="assign-a-profile-to-devices"></a>Zuweisen eines Profils zu Geräten
 Apple School Manager-Geräten, die von Intune verwaltet werden, muss vor der Registrierung ein Registrierungsprofil zugewiesen werden.
 
-1. Wählen Sie im Intune-Portal die Option **Geräteregistrierung** > **Apple-Registrierung** und dann **Profile des Registrierungsprogramms** aus.
+1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** und dann **Profile des Registrierungsprogramms** aus.
 2. Wählen Sie aus der Liste **Profile des Registrierungsprogramms** das Profil aus, das den Geräten zugewiesen werden soll, und wählen Sie anschließend **Gerätezuweisungen** aus.
 
  ![Gerätezuweisungen mit ausgewählter Option „Zuweisen“.](./media/enrollment-program-device-assign.png)

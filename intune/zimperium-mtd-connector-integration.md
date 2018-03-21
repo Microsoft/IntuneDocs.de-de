@@ -1,7 +1,7 @@
 ---
-title: Integrieren von Zimperium in Intune
-titleSuffix: Intune on Azure
-description: Integrieren von Intune in Zimperium
+title: Integrieren von Zimperium MTD in Microsoft Intune
+titleSuffix: 
+description: "Einrichten der Zimperium Mobile Threat Defense-Lösung (MTD) in Microsoft Intune, um den Zugriff mobiler Geräte auf Ihre Unternehmensressourcen zu steuern."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,11 +15,11 @@ ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 062a2f0d573bd711dff75c7ab0eb3bef8ac23161
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: fada315aad9bce47a3a04286d84e1c7dbdd2ce61
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-zimperium-with-intune"></a>Integrieren von Zimperium in Intune
 

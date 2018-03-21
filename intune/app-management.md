@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/09/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9372a77a63f48c8215a02ccd784fb0a812f5a12f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 737c2900b2cdd57cb4dfc8373d06111a52e772b2
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Was ist die Microsoft Intune App-Verwaltung?
 
@@ -34,7 +34,7 @@ Mit Microsoft Intune können Sie als IT-Administrator die mobilen Apps verwalten
 
 Darüber hinaus sollten Sie Apps auf Geräten, die nicht bei Intune registriert sind, zuweisen und verwalten.
 
-Intune bietet eine Reihe von Funktionen, die die Installation der erforderlichen Apps auf den gewünschten Geräten unterstützen. Die folgende Tabelle enthält eine Zusammenfassung der App-Verwaltungsfunktionen. Unter der Tabelle ist ein Ausgangspunkt, um Microsoft Intune im Azure-Portal zu verstehen. 
+Intune bietet eine Reihe von Funktionen, die die Installation der erforderlichen Apps auf den gewünschten Geräten unterstützen. Die folgende Tabelle enthält eine Zusammenfassung der App-Verwaltungsfunktionen. Unter der Tabelle ist ein Ausgangspunkt, um Microsoft Intune im Azure-Portal zu verstehen.
 
 ## <a name="app-management-capabilities-by-platform"></a>App-Verwaltungsfunktionen nach Plattform
 
@@ -51,7 +51,7 @@ Intune bietet eine Reihe von Funktionen, die die Installation der erforderlichen
 |Zuweisen und Nachverfolgen von Per Volumenlizenz in einem App-Store erworbenen Apps|Nein|Nein|Nein|Ja |
 |Verpflichtende Installation von Apps auf Geräten (erforderlich)<sup>2</sup>|Ja |Ja |Ja |Ja |
 |Optionale Installation auf Geräten über das Unternehmensportal (verfügbare Installation)|Ja |Ja |Ja |Ja |
-|Installieren von Verknüpfungen zu Apps im Internet (Webclip)|Ja |Ja |Ja |Ja |
+|Installieren von Verknüpfungen zu Apps im Internet (Weblink)|Ja |Ja |Ja |Ja |
 |Interne (branchenspezifische) Apps|Ja |Ja |Nein|Ja |
 |Apps aus einem Store|Ja |Ja |Ja |Ja |
 |Aktualisierung von Apps|Ja |Ja |Ja |Ja |
@@ -70,25 +70,29 @@ Sie finden die meisten Informationen zu Apps in der Workload **Mobile Apps**, au
 
     ![Workload „Mobile Apps“](./media/apps-workload.png)
 
+Die unten stehenden Informationen entsprechen den Optionen auf dem Blatt **Mobile Apps**.
+
 ### <a name="manage"></a>Verwalten von
-- **Apps:** Mit diesem Knoten können Sie die meisten Apps hinzufügen, zuweisen und überwachen.
+- **Apps**: Wählen Sie diese Option aus, um die von Ihren Mitarbeitern verwendeten Apps hinzuzufügen, anzuzeigen, zuzuweisen und zu überwachen. Weitere Informationen finden Sie in den folgenden Artikeln:
     - [Hinzufügen von Apps](apps-add.md)
     - [Zuweisen von Apps](apps-deploy.md)
     - [Überwachen von apps](apps-monitor.md)
-- **App-Konfigurationsrichtlinien:** Verwenden Sie App-Konfigurationsrichtlinien, um Einstellungen anzugeben, die beim Ausführen einer App durch den Benutzer erforderlich sein können.
-    - [Richtlinien zur Konfiguration von iOS-Apps](app-configuration-policies-use-ios.md)
-    - [Richtlinien zur Konfiguration von Android-Apps](app-configuration-policies-use-android.md)
-- **App-Schutzrichtlinien:** Ermöglichen Ihnen das Zuordnen von Einstellungen für eine App zum Schutz der Unternehmensdaten, die diese verwendet. Sie können z.B. die Funktionen einer App zur Kommunikation mit anderen Apps einschränken oder erzwingen, dass der Benutzer eine PIN eingeben muss, um auf eine Unternehmens-App zuzugreifen.
+- **App-Konfigurationsrichtlinien**: Mit App-Konfigurationsrichtlinien können Sie Einstellungen angeben, die beim Ausführen einer App durch den Benutzer erforderlich sein können. Weitere Informationen finden Sie in den folgenden Artikeln:
+    - [App-Konfigurationsrichtlinien für Intune](app-configuration-policies-overview.md)
+        - [Richtlinien zur Konfiguration von iOS-Apps](app-configuration-policies-use-ios.md)
+        - [Richtlinien zur Konfiguration von Android-Apps](app-configuration-policies-use-android.md)
+- **App-Schutzrichtlinien**: Ermöglichen Ihnen das Zuordnen von Einstellungen zu einer App, um die Unternehmensdaten zu schützen, die diese verwendet. Sie können z.B. die Funktionen einer App zur Kommunikation mit anderen Apps einschränken oder erzwingen, dass der Benutzer eine PIN eingeben muss, um auf eine Unternehmens-App zuzugreifen. Weitere Informationen finden Sie im folgenden Artikel:
     - [App-Schutzrichtlinien](app-protection-policies.md)
-- **Selektive App-Zurücksetzung:** Entfernt nur Unternehmensdaten von einem Benutzergerät, das Sie auswählen.
+- **Selektive App-Zurücksetzung**: Entfernt nur Unternehmensdaten von einem Benutzergerät, das Sie auswählen. Weitere Informationen finden Sie im folgenden Artikel:
     - [Selektive App-Zurücksetzung](apps-selective-wipe.md)
-- **iOS-Bereitstellungsprofil:**: iOS-Apps enthalten ein Bereitstellungsprofil und Code, der von einem Zertifikat signiert ist. Wenn das Zertifikat abläuft, kann die App nicht mehr ausgeführt werden. Intune stellt Ihnen die Tools zum proaktiven Zuweisen einer neuen Richtlinie für Bereitstellungsprofile auf Geräten zur Verfügung, auf denen Apps installiert sind, die bald ablaufen.
+- **iOS-App-Bereitstellungsprofile**: iOS-Apps enthalten ein Bereitstellungsprofil und Code, der von einem Zertifikat signiert ist. Wenn das Zertifikat abläuft, kann die App nicht mehr ausgeführt werden. Intune stellt Ihnen die Tools zum proaktiven Zuweisen einer neuen Richtlinie für Bereitstellungsprofile auf Geräten zur Verfügung, auf denen Apps installiert sind, die bald ablaufen. Weitere Informationen finden Sie im folgenden Artikel:
     - [iOS-App-Bereitstellungsprofile](app-provisioning-profile-ios.md)
 
 Einzelheiten finden Sie im Artikel zur [App-Verwaltung](app-management.md).
 
 ### <a name="monitor"></a>Überwachen
-- **App-Lizenzen**: Ermöglicht das Anzeigen, Zuweisen und Überwachen von per Volumenlizenz erworbenen Apps aus App Stores.
+- **App-Lizenzen**: Ermöglicht das Anzeigen, Zuweisen und Überwachen von per Volumenlizenz erworbenen Apps aus App Stores. Weitere Informationen finden Sie in den folgenden Artikeln:
+    - [Per Volumenlizenzprogramm erworbene iOS-Apps (VPP-Apps)](vpp-apps-ios.md)
     - [Per Volumenlizenz erworbene Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md)
 - **Ermittelte Apps**: Zeigt alle Apps an, die von Intune zugewiesen und auf einem Gerät installiert wurden.
 - **App-Installationsstatus:** Zeigt den Status einer App-Zuweisung, die Sie erstellt haben.
@@ -100,22 +104,22 @@ Einzelheiten finden Sie im Artikel zur [App-Überwachung](apps-monitor.md).
 ### <a name="setup"></a>Setup
 - **iOS-VPP-Token**: Wendet iOS-VPP-Lizenzen (Volume Purchase Program) an, und zeigt diese an.
     - [Per Volumenlizenz erworbene Apps](vpp-apps-ios.md)
-- **Windows Enterprise-Zertifikat**: Wendet den Status eines codesignierenden Zertifikats an, das zur Verteilung von branchenspezifischen Apps an Ihre verwalteten Windows-Geräte verwendet wird, oder zeigt diesen an. 
-- **Windows-Symantec-Zertifikat**: Wendet den Status eines codesignierenden Symantec-Zertifikats an, das zur Verteilung von XAP- und WP8.x-APPX-Dateien an Windows 10 Mobile-Geräten erforderlich ist, oder zeigt diesen an. 
-- **Microsoft Store für Unternehmen:** Richten Sie die Integration in den Microsoft Store für Unternehmen ein. Anschließend können Sie erworbene Anwendungen mit Intune synchronisieren, sie zuweisen und Ihre Lizenznutzung verfolgen.
+- **Windows Enterprise-Zertifikat**: Wendet den Status eines codesignierenden Zertifikats an, das zur Verteilung von branchenspezifischen Apps an Ihre verwalteten Windows-Geräte verwendet wird, oder zeigt diesen an.
+- **Windows-Symantec-Zertifikat**: Wendet den Status eines codesignierenden Symantec-Zertifikats an, das zur Verteilung von XAP- und WP8.x-APPX-Dateien an Windows 10 Mobile-Geräten erforderlich ist, oder zeigt diesen an.
+- **Microsoft Store für Unternehmen:** Richten Sie die Integration in den Microsoft Store für Unternehmen ein. Anschließend können Sie erworbene Anwendungen mit Intune synchronisieren, sie zuweisen und Ihre Lizenznutzung verfolgen. Weitere Informationen finden Sie im folgenden Artikel:
     - [Per Volumenlizenz erworbene Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md)
-- **Windows-Schlüssel zum Querladen**: Sie können einen Windows-Schlüssel zum Querladen hinzufügen, mit dem Sie eine App direkt auf Geräten installieren können, anstatt die App im Microsoft Store zu veröffentlichen und von diesem herunterzuladen.
-    - [Querladen einer Windows-App](app-sideload-windows.md) 
-- **Unternehmensportalbranding:** Passen Sie das Unternehmensportal mit Ihrem Unternehmensbranding an.
+- **Windows-Schlüssel zum Querladen**: Sie können einen Windows-Schlüssel zum Querladen hinzufügen, mit dem Sie eine App direkt auf Geräten installieren können, anstatt die App im Microsoft Store zu veröffentlichen und von diesem herunterzuladen. Weitere Informationen finden Sie im folgenden Artikel:
+    - [Querladen einer Windows-App](app-sideload-windows.md)
+- **Unternehmensportalbranding:** Passen Sie das Unternehmensportal mit Ihrem Unternehmensbranding an. Weitere Informationen finden Sie im folgenden Artikel:
     - [Konfiguration des Unternehmensportals](company-portal-app.md)
 - **App-Kategorien**: Ermöglicht das Hinzufügen, Anheften und Löschen von App-Kategorienamen.
-- **Android for Work**: Genehmigt und synchronisiert die Apps, die Sie für Ihr Unternehmen genehmigt haben.
-    - [Android for Work-Apps](apps-add-android-for-work.md) 
+- **Android for Work**: Genehmigt und synchronisiert die Apps, die Sie für Ihr Unternehmen genehmigt haben. Weitere Informationen finden Sie im folgenden Artikel:
+    - [Android for Work-Apps](apps-add-android-for-work.md)
 
 ### <a name="help-and-support"></a>Hilfe und Support
-- **Hilfe und Support**: Ermöglicht das Behandeln von Problemen, das Anfordern von Unterstützung oder das Anzeigen des Intune-Status.
+- **Hilfe und Support**: Ermöglicht das Behandeln von Problemen, das Anfordern von Unterstützung oder das Anzeigen des Intune-Status. Weitere Informationen finden Sie im folgenden Artikel:
     - [Problembehandlung](help-desk-operators.md)
-    
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [So fügen Sie eine App zu Microsoft Intune hinzu](apps-add.md)

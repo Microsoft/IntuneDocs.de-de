@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Konfigurieren von E-Mail-Einstellungen in Microsoft Intune
 
@@ -39,17 +39,19 @@ Anhand der Informationen in diesem Artikel lernen Sie die Grundlagen zum Konfigu
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>Erstellen eines Geräteprofils mit E-Mail-Einstellungen
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf der Seite **Intune** die Option **Gerätekonfiguration** aus.
-2. Wählen Sie auf der Seite **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
-3. Klicken Sie auf der Profilseite auf **Profil erstellen**.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie im Bereich **Intune** die Option **Gerätekonfiguration** aus.
+2. Klicken Sie im Bereich **Gerätekonfiguration** im Abschnitt **Verwalten** auf **Profile**.
+3. Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
 4. Geben Sie auf der Seite **Profil erstellen** einen **Namen** und eine **Beschreibung** für das E-Mail-Profil ein.
 5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die Sie E-Mail-Einstellungen anwenden möchten. Derzeit können Sie eine der folgenden Plattformen für die E-Mail-Geräteeinstellungen auswählen:
     - **Android** (nur Samsung Android KNOX Standard)
     - **Android for Work**
     - **iOS**
+    - **macOS**
     - **Windows Phone 8.1**
+    - **Windows 8.1 und höher**
     - **Windows 10 und höher**
 6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **E-Mail** aus.
 7. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. In den folgenden Themen finden Sie ausführliche Informationen zu den Einstellungen für die einzelnen Plattformen:
@@ -57,9 +59,9 @@ Anhand der Informationen in diesem Artikel lernen Sie die Grundlagen zum Konfigu
     - [Einstellungen für iOS](email-settings-ios.md)
     - [Einstellungen für Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Einstellungen für Windows 10](email-settings-windows-10.md)
-8. Navigieren Sie anschließend zurück zur Seite **Profil erstellen**, und klicken Sie auf **Erstellen**.
+8. Wechseln Sie anschließend wieder zum Bereich **Profil erstellen**, und klicken Sie auf **Erstellen**.
 
-Das Profil wird erstellt und auf der Seite mit der Profilliste angezeigt.
+Das Profil wird erstellt und im Bereich „Profilliste“ angezeigt.
 Wenn Sie fortfahren und dieses Profil Gruppen zuweisen möchten, lesen Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md) nach.
 
 ## <a name="further-information"></a>Weitere Informationen

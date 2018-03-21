@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 330826307e4f3db24532908d42da77a1a857a681
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 34334186fbf74507b54d1bf4df347de2c16c39c0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="android-app-protection-policy-settings"></a>Einstellungen für App-Schutzrichtlinien für Android
 In diesem Thema werden die Einstellungen für App-Schutzrichtlinien für Android-Geräte beschrieben. Die beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Einstellungen** für eine Schutzrichtlinie [konfiguriert](app-protection-policies.md) werden.
@@ -73,7 +73,7 @@ Es gibt zwei Kategorien von Richtlinieneinstellungen: Datenverlagerungs- und Zug
   | com.android.providers.media | Android-Medieninhaltsanbieter | Dieser Inhaltsanbieter für Medien ist nur für die Aktion zum Auswählen von Klingeltönen zulässig. |
   | com.google.android.gms; com.google.android.gsf | Google Play Services-Pakete | Diese Pakete sind für Google Cloud Messaging-Aktionen zulässig, z.B. Pushbenachrichtigungen. |
 
-Weitere Informationen finden Sie unter [Ausnahmen von der Datenübertragungsrichtlinie für Apps](app-protection-policies-exception.md). 
+Weitere Informationen finden Sie unter [Ausnahmen von der Datenübertragungsrichtlinie für Apps](app-protection-policies-exception.md).
 
 ##  <a name="access-settings"></a>Zugriffseinstellungen
 
@@ -88,7 +88,10 @@ Weitere Informationen finden Sie unter [Ausnahmen von der Datenübertragungsrich
 | **App-PIN deaktivieren, wenn die Geräte-PIN verwaltet wird** | Wählen Sie **Ja**, um die App-PIN zu deaktivieren, wenn eine Gerätesperre auf einem registrierten Gerät erkannt wird. | Nein |
 | **Android-Mindestbetriebssystem anfordern** | Wählen Sie **Ja** aus, um zum Verwenden dieser App ein Android-Mindestbetriebssystem anzufordern. Der Zugriff des Benutzers wird blockiert, wenn die Android-Version auf dem Gerät diese Anforderung nicht erfüllt.<br><br> Diese Richtlinieneinstellung unterstützt das Format „Hauptversion.Nebenversion“, „Hauptversion.Nebenversion.Buildversion“ oder „Hauptversion.Nebenversion.Buildversion.Revisionsversion“.| Nein |
 | **Android-Mindestbetriebssystem anfordern (nur Warnung)** | Wählen Sie **Ja** aus, um zum Verwenden dieser App ein Android-Mindestbetriebssystem anzufordern. Dem Benutzer wird eine Benachrichtigung angezeigt, wenn die Android-Version auf dem Gerät diese Anforderung nicht erfüllt. Diese Benachrichtigung kann verworfen werden.<br><br> Diese Richtlinieneinstellung unterstützt das Format „Hauptversion.Nebenversion“, „Hauptversion.Nebenversion.Buildversion“ oder „Hauptversion.Nebenversion.Buildversion.Revisionsversion“. | Nein |
-| **App-Mindestversion anfordern** | Wählen Sie **Ja** aus, um zum Verwenden der App eine App-Mindestversion anzufordern. Der Zugriff des Benutzers wird blockiert, wenn die App-Version auf dem Gerät diese Anforderung nicht erfüllt.<br><br>Da Apps selbst häufig individuelle Versionsschemas aufweisen, erstellen Sie eine Richtlinie mit einer minimalen App-Version, die auf eine App abzielt (z.B. „Outlook-Versionsrichtlinie“). <br><br> Diese Richtlinieneinstellung unterstützt das Format „Hauptversion.Nebenversion“, „Hauptversion.Nebenversion.Buildversion“ oder „Hauptversion.Nebenversion.Buildversion.Revisionsversion“.| Nein | 
-| **App-Mindestversion anfordern (nur Warnung)** | Wählen Sie **Ja** aus, um zum Verwenden dieser App eine App-Mindestversion zu empfehlen. Dem Benutzer wird eine Benachrichtigung angezeigt, wenn die App-Version auf dem Gerät diese Anforderung nicht erfüllt. Diese Benachrichtigung kann verworfen werden.<br><br>Da Apps selbst häufig individuelle Versionsschemas aufweisen, erstellen Sie eine Richtlinie mit einer minimalen App-Version, die auf eine App abzielt (z.B. „Outlook-Versionsrichtlinie“). <br><br> Diese Richtlinieneinstellung unterstützt das Format „Hauptversion.Nebenversion“, „Hauptversion.Nebenversion.Buildversion“ oder „Hauptversion.Nebenversion.Buildversion.Revisionsversion“.| Nein | 
+| **App-Mindestversion anfordern** | Wählen Sie **Ja** aus, um zum Verwenden der App eine App-Mindestversion anzufordern. Der Zugriff des Benutzers wird blockiert, wenn die App-Version auf dem Gerät diese Anforderung nicht erfüllt.<br><br>Da Apps selbst häufig individuelle Versionsschemas aufweisen, erstellen Sie eine Richtlinie mit einer minimalen App-Version, die auf eine App abzielt (z.B. „Outlook-Versionsrichtlinie“). <br><br> Diese Richtlinieneinstellung unterstützt das Format „Hauptversion.Nebenversion“, „Hauptversion.Nebenversion.Buildversion“ oder „Hauptversion.Nebenversion.Buildversion.Revisionsversion“.| Nein |
+| **App-Mindestversion anfordern (nur Warnung)** | Wählen Sie **Ja** aus, um zum Verwenden dieser App eine App-Mindestversion zu empfehlen. Dem Benutzer wird eine Benachrichtigung angezeigt, wenn die App-Version auf dem Gerät diese Anforderung nicht erfüllt. Diese Benachrichtigung kann verworfen werden.<br><br>Da Apps selbst häufig individuelle Versionsschemas aufweisen, erstellen Sie eine Richtlinie mit einer minimalen App-Version, die auf eine App abzielt (z.B. „Outlook-Versionsrichtlinie“). <br><br> Diese Richtlinieneinstellung unterstützt das Format „Hauptversion.Nebenversion“, „Hauptversion.Nebenversion.Buildversion“ oder „Hauptversion.Nebenversion.Buildversion.Revisionsversion“.| Nein |
 | **Require Minimum Android Patch Version (Android-Patch-Minimalversion vorschreiben)** | Wählen Sie **Ja** aus, um einen von Google veröffentlichten Android-Sicherheitspatch als Minimum vorzuschreiben. Der Zugriff des Benutzers wird blockiert, wenn der Android-Sicherheitspatch auf dem Gerät diese Anforderung nicht erfüllt.<br><br> Dieses Format für Richtlinieneinstellungen unterstützt das Datumsformat JJJJ-MM-TT. | Nein |
 | **Require Minimum Android Patch Version (Warning Only) (Android-Patch-Minimalversion vorschreiben (Nur Warnung))** | Wählen Sie **Ja** aus, um einen von Google veröffentlichten Android-Sicherheitspatch als Minimum vorzuschreiben. Dem Benutzer wird eine Benachrichtigung angezeigt, wenn der Android-Sicherheitspatch auf dem Gerät diese Anforderung nicht erfüllt. Diese Benachrichtigung kann verworfen werden.<br><br> Dieses Format für Richtlinieneinstellungen unterstützt das Datumsformat JJJJ-MM-TT. | Nein |
+
+> [!NOTE]
+> Weitere Informationen dazu, wie mehrere Einstellungen des Intune-Schutzes für Apps, die im Abschnitt „Zugriff“ für die gleiche Gruppe von Apps und Benutzern konfiguriert wurden, unter Android funktionieren, finden Sie unter [Häufig gestellte Fragen zu Intune-MAM](mam-faq.md).
