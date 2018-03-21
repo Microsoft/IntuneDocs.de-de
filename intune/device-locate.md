@@ -1,12 +1,11 @@
 ---
-title: "Suchen nach verlorenen iOS-Geräten mit Intune"
-titlesuffix: Azure portal
-description: "In diesem Artikel erfahren Sie, wie Sie nach verlorenen oder gestohlenen iOS-Geräten mit Intune suchen."
+title: "Auffinden von verlorenen iOS-Geräten mit Microsoft Intune – Azure | Microsoft-Dokumentation"
+description: "Dieser Artikel beschreibt, wie Sie verloren gegangene oder gestohlene iOS-Geräte mithilfe des Features „Gerät suchen“ in Microsoft Intune auffinden oder lokalisieren können. Der Artikel erläutert auch die Sicherheits- und Datenschutzinformationen im Zusammenhang mit der Aktion „Gerät suchen“."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,48 +13,47 @@ ms.technology:
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 864d528091de7a6113485347304b0dc254af2c7d
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 4bc51ef7f9af9cc97fd4c11408a1857679aee665
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Suchen nach verlorenen oder gestohlenen iOS-Geräten mit Intune
 
-
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Mithilfe der Geräteaktion **Gerät suchen** können Sie den Standort eines verlorenen oder gestohlenen iOS-Geräts auf einer Karte anzeigen. Bei dem Gerät muss es sich um ein firmeneigenes, über DEP registriertes iOS-Gerät im überwachten Modus handeln. Diese Aktion kann erst verwendet werden, wenn das Gerät zuvor in den [Modus für verlorene Geräte](device-lost-mode.md) versetzt wurde.
+Verwenden Sie die Geräteaktion **Gerät suchen**, um den Standort eines verloren gegangenen oder gestohlenen iOS-Geräts auf einer Karte anzuzeigen. Bei dem Gerät muss es sich um ein unternehmenseigenes, über DEP registriertes iOS-Gerät im überwachten Modus handeln. Bevor Sie diese Aktion verwenden, stellen Sie sicher, dass sich das Gerät im [Modus für verlorene Geräte](device-lost-mode.md) befindet.
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 
-- Windows – Nicht unterstützt
-- Windows Phone 8.1 – Nicht unterstützt
-- iOS – unter iOS 9.3 oder höher unterstützt (im Modus für verlorene Geräte), überwacht und unternehmenseigen
-- macOS – Nicht unterstützt
-- Android – Nicht unterstützt
+- iOS 9.3 und höher
 
-## <a name="how-to-locate-a-lost-or-stolen-device"></a>So suchen Sie ein verloren geganenes oder gestohlenes Geräts
+Dieses Feature wird für die folgenden Betriebssysteme **nicht** unterstützt: 
+- Windows
+- Windows Phone
+- macOS
+- Android
+
+## <a name="locate-a-lost-or-stolen-device"></a>Suchen eines verloren gegangenen oder gestohlenen Geräts
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.
-4. Wählen Sie auf dem Blatt **Geräte** die Option **Alle Geräte** aus.
-5. Wählen Sie aus der Liste der von Ihnen verwalteten Geräte ein iOS-Gerät aus, klicken Sie auf **...Weitere**, und wählen Sie dann die Remoteaktion **Gerät suchen**.
-6. Wenn das Gerät gefunden wurde, wird seine Position auf dem Blatt **Gerät suchen** angezeigt.
-    Blatt ![Gerät suchen](./media/locate-device.png)
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie auf **Microsoft Intune**.
+3. Klicken Sie auf **Geräte** und dann auf **Alle Geräte**.
+4. Wählen Sie aus der Liste der von Ihnen verwalteten Geräte ein iOS-Gerät aus, klicken Sie auf **...Weitere**, und wählen Sie dann die Remoteaktion **Gerät suchen**.
+5. Wenn das Gerät gefunden wurde, wird der Standort unter **Gerät suchen** angezeigt.
+    ![Gerät mithilfe von Intune in Azure suchen](./media/locate-device.png)
 
 >[!NOTE]
 >Aus Datenschutzgründen können Sie nur begrenzt in die Karte hineinzoomen.
 
-## <a name="security-and-privacy-information-for-the-lost-mode-and-locate-device-actions"></a>Sicherheit und Datenschutz im Zusammenhang mit dem Modus für verlorene Geräte und der Aktion „Gerät suchen“
+## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>Sicherheits- und Datenschutzinformationen im Zusammenhang mit dem Modus für verlorene Geräte und Aktionen zum Suchen von Geräten
 - Vor der Aktivierung dieser Aktion werden keinerlei Informationen zum Standort des Geräts an Intune gesendet.
 - Bei Verwendung der Aktion „Gerät suchen“ werden die Koordinaten des Geräts in Form von Breiten- und Längengrad an Intune gesendet und im Azure-Portal angezeigt.
 - Die Daten werden 24 Stunden lang gespeichert und dann entfernt. Die Standortdaten können nicht manuell entfernt werden.
 - Die Standortdaten werden sowohl im gespeicherten Zustand als auch bei der Übertragung verschlüsselt.
-- Beim Konfigurieren des Modus für verlorene Geräte empfiehlt es sich, in der Nachricht für den Sperrbildschirm Informationen anzugeben, die der Person, die das Gerät findet, eine Rückgabe ermöglichen.
-
+- Wenn Sie den Modus für verlorene Geräte konfigurieren, können Sie eine Meldung erstellen, die auf dem Sperrbildschirm angezeigt wird. Geben Sie in dieser Meldung Informationen zur Rückgabe des Geräts an, damit die Person, die das Gerät findet, weiß, was zu tun ist.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Um den Status der gerade ausgeführten Aktion anzuzeigen, wählen Sie auf dem Blatt **Geräte** die Option **Geräteaktionen** aus.
+Um den Aktivierungsstatus des Features „Gerät suchen“ anzuzeigen, öffnen Sie **Geräte**, und wählen Sie **Geräteaktionen** aus.

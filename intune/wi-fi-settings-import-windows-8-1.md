@@ -6,18 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0113703cbdc58172edc9552146c7634aa1058e3b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 890a10ecf4212656c189adaf46bb2839898758c1
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Importieren von WLAN-Einstellungen für Geräte mit Windows 8.1 und höher in Microsoft Intune
 
@@ -35,22 +35,23 @@ In Windows können Sie WLAN-Profile mit dem Hilfsprogramm **netsh wlan** in eine
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Importieren der WLAN-Einstellungen in Intune
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf der Seite **Intune** die Option **Gerätekonfiguration** aus.
-2. Wählen Sie auf der Seite **Gerätekonfiguration** die Option **Verwalten** > **Profile** aus.
-3. Klicken Sie auf der Seite „Profile“ auf **Profil erstellen**.
-4. Geben Sie auf der Seite **Profil erstellen** einen **Namen** und eine **Beschreibung** für das Geräteeinschränkungsprofil ein.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie im Bereich **Intune** die Option **Gerätekonfiguration** aus.
+4. Klicken Sie im Bereich **Gerätekonfiguration** im Abschnitt **Verwalten** auf **Profile**.
+5. Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
+6. Geben Sie im Bereich **Profil erstellen** einen **Namen** und eine **Beschreibung** für das Geräteeinschränkungsprofil ein.
+
 
    > [!WARNING]
    > Der Name **muss** mit dem Namensattribut in der WLAN-Profil-XML-Datei identisch sein, andernfalls tritt ein Fehler auf.
 
-5. Wählen Sie in der Dropdownliste **Plattform** die Option **Windows 8.1 und höher** aus.
-6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **WLAN (Import)** aus.
-7. Konfigurieren Sie auf der Seite **Wi-Fi Basic** (Basis-WLAN) folgende Einstellungen:
+7. Wählen Sie in der Dropdownliste **Plattform** die Option **Windows 8.1 und höher** aus.
+8. Wählen Sie in der Dropdownliste **Profiltyp** die Option **WLAN (Import)** aus.
+9. Konfigurieren Sie im Bereich **WLAN** folgende Einstellungen:
     - **Verbindungsname:** Geben Sie den Namen der WLAN-Verbindung ein. Dieser Name wird beim Durchsuchen der verfügbaren WLAN-Netzwerke für Endbenutzer angezeigt.
     - **Profil-XML:** Klicken Sie auf die Schaltfläche „Durchsuchen“, und wählen Sie die XML-Datei mit den WLAN-Profileinstellungen aus, die Sie in Intune importieren möchten.
     - **Dateiinhalt:** Zeigt den XML-Code des ausgewählte Konfigurationsprofils an.
-8. Navigieren Sie anschließend wieder zur Seite **Profil erstellen**, und klicken Sie auf **Erstellen**.
+10. Klicken Sie anschließend auf **OK**, navigieren Sie wieder zum Bereich **Profil erstellen**, und klicken Sie auf **Erstellen**.
 
-Das Profil wird erstellt und auf der Seite mit der Profilliste angezeigt.
+Das Profil wird erstellt und im Bereich „Profilliste“ angezeigt.

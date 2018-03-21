@@ -14,19 +14,19 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 7997bf0494ff52ad25b09301173b65f2478dca37
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 9582b53c4f992b5f788f10a262bb802e80580144
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Verwenden des Problembehandlungsportals zur Unterstützung von Benutzern Ihres Unternehmens
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Das Portal zur Problembehandlung ermöglicht Helpdesk-Operatoren und Intune-Administratoren das Anzeigen von Benutzerinformationen zum Reagieren auf Hilfeanfragen von Benutzern. Organisationen, die über einen Helpdesk verfügen, können den **Helpdeskoperator** einer Gruppe von Benutzern zuweisen. Durch die Rolle des Helpdeskoperators kann das Blatt **Problembehandlung** verwendet werden.
+Das Portal zur Problembehandlung ermöglicht Helpdesk-Operatoren und Intune-Administratoren das Anzeigen von Benutzerinformationen zum Reagieren auf Hilfeanfragen von Benutzern. Organisationen, die über einen Helpdesk verfügen, können den **Helpdeskoperator** einer Gruppe von Benutzern zuweisen. Die Rolle des Helpdeskoperators kann den Bereich **Problembehandlung** verwenden.
 
-Auf dem Blatt **Problembehandlung** werden nun Probleme der Benutzer bei der Registrierung angezeigt. Die Details zum Problem und die vorgeschlagenen Abhilfemaßnahmen können Administratoren und Helpdeskmitarbeiter bei der Behandlung von Problemen unterstützen. Bestimmte Probleme bei der Registrierung werden nicht erfasst, und für einige Fehler liegen möglicherweise keine Wiederherstellungsvorschläge vor. 
+Der Bereich **Problembehandlung** zeigt auch Probleme bei der Benutzerregistrierung an. Die Details zum Problem und die vorgeschlagenen Abhilfemaßnahmen können Administratoren und Helpdeskmitarbeiter bei der Behandlung von Problemen unterstützen. Bestimmte Probleme bei der Registrierung werden nicht erfasst, und für einige Fehler liegen möglicherweise keine Wiederherstellungsvorschläge vor.
 
 Weitere Informationen zum Hinzufügen der Rolle des Helpdeskoperators finden Sie unter [Role-based administration control (RBAC) with Intune (Rollenbasierte Zugriffssteuerung mit Intune)](/intune/role-based-access-control).
 
@@ -41,20 +41,20 @@ Wenn ein Benutzer den Support wegen eines technischen Problems mit Intune kontak
 
 ## <a name="to-review-troubleshooting-details"></a>Überprüfen der Details zur Problembehandlung
 
-Wählen Sie auf dem Blatt „Problembehandlung“ **Benutzer auswählen** aus, um Benutzerinformationen anzuzeigen. Benutzerinformationen können Ihnen erleichtern, den aktuellen Status von Benutzern und ihren Geräten zu verstehen.  
+Klicken Sie im Bereich „Problembehandlung“ auf **Benutzer auswählen**, um Benutzerinformationen anzuzeigen. Benutzerinformationen können Ihnen erleichtern, den aktuellen Status von Benutzern und ihren Geräten zu verstehen.  
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie **Problembehandlung** auf dem Blatt **Intune** aus.
-4. Klicken Sie auf **Benutzer auswählen**.
-5. Wählen Sie einen Benutzer aus, indem Sie den Namen oder die E-Mail-Adresse eingeben. Klicken Sie auf **Auswählen**. Die Informationen zur Problembehandlung für den Benutzer werden auf dem Blatt „Problembehandlung“ angezeigt. In der folgenden Tabelle werden diese Informationen erläutert.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie im Bereich **Intune** die Option **Problembehandlung** aus.
+4. Klicken Sie auf **Auswählen**, um einen Benutzer auszuwählen, für den ein Problem behoben werden muss.
+5. Wählen Sie einen Benutzer aus, indem Sie den Namen oder die E-Mail-Adresse eingeben. Klicken Sie auf **Auswählen**. Die Informationen zur Problembehandlung für den Benutzer werden im Bereich „Problembehandlung“ angezeigt. In der folgenden Tabelle werden diese Informationen erläutert.
 
 > [!Note]  
-> Sie können auf das Blatt **Problembehandlung** ebenfalls zugreifen, indem Sie in Ihrem Browser zu [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) navigieren.
+> Sie können auf den Bereich **Problembehandlung** ebenfalls zugreifen, indem Sie in Ihrem Browser zu [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) navigieren.
 
 ## <a name="areas-of-troubleshooting-dashboard"></a>Bereiche des Dashboards „Problembehandlung“
 
-Sie können das Blatt **Problembehandlung** verwenden, um Benutzerinformationen zu überprüfen. 
+Sie können den Bereich **Problembehandlung** verwenden, um Benutzerinformationen zu überprüfen.
 
 ![](/intune/media/troubleshooting-dash.png)
 
@@ -63,7 +63,7 @@ Sie können das Blatt **Problembehandlung** verwenden, um Benutzerinformationen 
 | 1.   | Kontostatus  | Zeigt den Status des aktuellen Intune-Mandanten als **Aktiv** oder **Inaktiv** an.       |
 | 2.   | Benutzerauswahl  | Der Name des aktuell ausgewählten Benutzers. Klicken Sie auf **Benutzer wechseln**, um einen neuen Benutzer auszuwählen.       |
 | 3.   | Benutzerstatus  | Zeigt den Status der Intune-Lizenz des Benutzers, die Anzahl von Geräten, die jeweilige Gerätekompatibilität, die Anzahl von Apps und die App-Kompatibilität an.       |
-| 4.   | Benutzerinformationen  | Verwenden Sie die Liste, um die zu überprüfenden Details auf dem Blatt auszuwählen. <br>Sie können Folgendes auswählen: <ul><li>Mobile Apps<li>App-Schutzrichtlinien<li>Konformitätsrichtlinien<li> Konfigurationsrichtlinien<li> Registrierungseinschränkungen</ul>      |
+| 4.   | Benutzerinformationen  | Verwenden Sie die Liste in diesem Bereich, um die zu überprüfenden Details auszuwählen. <br>Sie können Folgendes auswählen: <ul><li>Mobile Apps<li>App-Schutzrichtlinien<li>Konformitätsrichtlinien<li> Konfigurationsrichtlinien</ul>      |
 | 5.   | Gruppenmitgliedschaft  | Yadda       |
 
 ## <a name="mobile-apps-reference"></a>Referenz für mobile Apps

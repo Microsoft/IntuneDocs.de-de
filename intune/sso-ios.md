@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Konfigurieren von Microsoft Intune für einmaliges Anmelden von iOS-Geräten
 
@@ -34,18 +34,19 @@ Um einmaliges Anmelden von iOS-Geräten nutzen zu können, müssen folgende Bedi
 
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf der Seite **Intune** die Option **Gerätekonfiguration** aus.
-2. Wählen Sie auf der Seite **Gerätekonfiguration** die Option **Profile** aus.
-3. Wählen Sie auf der Seite „Profile“ die Option **Profil erstellen**, geben Sie einen Namen und eine Beschreibung ein, und konfigurieren Sie die folgenden Einstellungen:
-   - **Plattform**: Wählen Sie **iOS**. 
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie im Bereich **Intune** die Option **Gerätekonfiguration** aus.
+4. Klicken Sie im Bereich **Gerätekonfiguration** im Abschnitt **Verwalten** auf **Profile**.
+5. Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
+6. Geben Sie einen Namen und eine Beschreibung ein, und konfigurieren Sie die folgenden Einstellungen:
+   - **Plattform**: Wählen Sie **iOS**.
    - **Profiltyp**: Wählen Sie **Gerätefunktionen**.
-4. Wählen Sie auf der Seite **Gerätefeatures** die Option **Einmaliges Anmelden** aus.
+7. Wählen Sie im Bereich **Gerätefeatures** die Option **Einmaliges Anmelden** aus.
 
-   ![Seite „Einmaliges Anmelden“](./media/sso-blade.png)
+   ![Bereich „Einmaliges Anmelden“](./media/sso-blade.png)
 
-2. Verwenden Sie die folgende Zusammenfassungstabelle, um die Felder in der Seite **Einmaliges Anmelden** auszufüllen. Weitere Informationen finden Sie in den Abschnitten nach der Tabelle.
-   
+8. Verwenden Sie die folgende Übersichtstabelle, um die Felder im Bereich **Einmaliges Anmelden** auszufüllen. Weitere Informationen finden Sie in den Abschnitten nach der Tabelle.
+
    |Feld  |Hinweise|
    |---------|---------|
    |**Benutzernamensattribut aus AAD**|Das Attribut, nach dem Intune vor Generierung der auf dem Gerät zu installierenden XML-Nutzlast für jeden Benutzer in AAD sucht und das entsprechende Feld (z.B. UPN) auffüllt|
@@ -95,7 +96,7 @@ Das Feld **App-Name** wird verwendet, um einen Anzeigenamen hinzuzufügen, mit d
 
 ### <a name="credential-renewal-certificate"></a>Zertifikat zum Erneuern der Anmeldeinformationen
 
-Wenn Sie Ihre Endbenutzer mit Zertifikaten (nicht mit Kennwörtern) authentifizieren, wählen Sie in diesem Feld das SCEP- oder PFX-Zertifikat aus, das Benutzern als Authentifizierungszertifikat bereitgestellt wird. In der Regel handelt es sich dabei um dasselbe Zertifikat, das dem Benutzer für andere Profile wie VPN, WLAN oder E-Mail bereitgestellt wird.
+Wenn Sie Ihre Endbenutzer mit Zertifikaten (nicht mit Kennwörtern) authentifizieren, wählen Sie in diesem Feld das SCEP- oder PFX-Zertifikat aus, das Benutzern als Authentifizierungszertifikat bereitgestellt wird. In der Regel handelt es sich dabei um dasselbe Zertifikat, das dem Benutzer für andere Profile wie z.B. VPN, WLAN oder E-Mail bereitgestellt wird.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

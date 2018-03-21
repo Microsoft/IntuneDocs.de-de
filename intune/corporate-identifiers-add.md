@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/11/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 29c3d331cae06b0474fc3a2b31790719d99c678e
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifizieren von Geräten als unternehmenseigen
 
@@ -70,7 +70,7 @@ Diese CSV-Datei wird bei der Anzeige in einem Text-Editor folgendermaßen angeze
 
 ### <a name="add-a-csv-list-of-corporate-identifiers"></a>Hinzufügen einer CSV-Liste von Unternehmensbezeichnern
 
-1. Wählen Sie im Azure-Portal in Intune die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** aus, und klicken Sie dann auf **Hinzufügen**.
+1. Wählen Sie [in Intune im Azure-Portal](https://portal.azure.com) die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** aus, und klicken Sie dann auf **Hinzufügen**.
 
  ![Arbeitsbereich des Bezeichners von Unternehmensgeräten mit hervorgehobener Schaltfläche „Hinzufügen“](./media/add-corp-id.png)
 
@@ -82,11 +82,11 @@ Importierte Geräte sind nicht zwangsläufig registriert. Geräte können entwed
 
 ### <a name="delete-corporate-identifiers"></a>Löschen von Unternehmensbezeichnern
 
-1. Wählen Sie im Azure-Portal in Intune die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** aus.
+1. Wählen Sie [in Intune im Azure-Portal](https://portal.azure.com) die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** aus.
 2. Wählen Sie die Gerätebezeichner aus, die Sie löschen möchten, und klicken Sie auf **Löschen**.
 3. Bestätigen Sie den Löschvorgang.
 
-Das Löschen eines Unternehmensbezeichners für ein registriertes Gerät hat keine Auswirkungen auf den Besitzstatus des Geräts. Gehen Sie zum Ändern des Gerätebesitzes zu **Geräte** > **Alle Geräte**, klicken Sie auf das Gerät und dann auf **Eigenschaften**, und ändern Sie den **Gerätebesitz**.
+Das Löschen eines Unternehmensbezeichners für ein registriertes Gerät hat keine Auswirkungen auf den Besitzstatus des Geräts. Wechseln Sie zum Ändern des Gerätebesitzes zu **Geräte**, wählen Sie das Gerät aus, klicken Sie auf **Eigenschaften**, und ändern Sie den **Gerätebesitz**.
 
 ### <a name="imei-specifications"></a>IMEI-Spezifikationen
 Detaillierte Angaben über International Mobile Equipment Identifier finden Sie unter [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
@@ -96,7 +96,7 @@ Detaillierte Angaben über International Mobile Equipment Identifier finden Sie 
 Die Geräteeigenschaften zeigen den **Besitz** für jeden Gerätedatensatz in Intune an. Als Administrator können Sie Geräte als **Persönlich** oder **Unternehmen** festlegen.
 
 **So ändern Sie den Gerätebesitz:**
-1. Navigieren Sie in Intune im Azure-Portal zu **Geräte** > **Alle Geräte**, und wählen Sie das Gerät aus.
+1. Navigieren Sie in [Intune im Azure-Portal](https://portal.azure.com) zu **Geräte**, und wählen Sie das Gerät aus.
 3. Wählen Sie **Eigenschaften** aus.
 4. Geben Sie den **Gerätebesitz** als **Persönlich** oder **Unternehmen** an.
 

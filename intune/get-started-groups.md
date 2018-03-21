@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4fc4ee80b1cf5a8422d135d13a9fb498980500b5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Erstellen Sie eine Gruppe zur Verwaltung Ihrer Benutzer und Ihres Datenzugriffs
 
@@ -30,11 +30,13 @@ Microsoft Intune verwendet Azure Active Directory (Azure AD) zum Verwalten des Z
 ## <a name="how-do-i-create-a-group"></a>Wie erstelle ich eine Gruppe?
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Suchen Sie über **Ressourcen durchsuchen** nach **Intune**.
-3. Wenn Sie das Blatt **Microsoft Intune** geöffnet haben, wählen Sie **Gruppen** aus.
-4. Wählen Sie auf dem Blatt **Users and Groups – All Groups** (Benutzer und Gruppen – Alle Gruppen) die Option **Neue Gruppe** aus.
-5. Fügen Sie auf dem Blatt **Gruppe** einen **Namen** und eine **Beschreibung** für die Gruppe hinzu.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wenn Sie den Bereich **Microsoft Intune** geöffnet haben, wählen Sie **Gruppen** aus.
+4. Wählen Sie im Bereich **Benutzer und Gruppen – Alle Gruppen** die Option **Neue Gruppe** aus.
+5. Wählen Sie im Bereich **Gruppe** einen **Gruppentyp** aus.
+5. Fügen Sie einen **Namen** und eine **Beschreibung** für den Schritt hinzu.
 6. Legen Sie den **Mitgliedschaftstyp** auf **Zugewiesen** fest. Für die Testgruppe sollten Sie **Office-Features nicht aktivieren**.
+7. Wählen Sie **Mitglieder** für die Gruppe aus.
 7. Klicken Sie auf **Erstellen**.
 
 Wenn Sie eine Gruppe erfolgreich erstellt haben, sollte sie in der Liste **Alle Gruppen** angezeigt werden. Versuchen Sie andernfalls, eine andere Gruppe zu erstellen.

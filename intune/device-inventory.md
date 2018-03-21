@@ -1,12 +1,11 @@
 ---
-title: "Anzeigen des Intune-Gerätebestands"
-titlesuffix: Azure portal
-description: "Erfahren Sie, wie Sie die von Ihnen über Intune verwalteten Geräte sowie Informationen zu der entsprechenden Hardware und den installierten Apps anzeigen.\""
+title: "Anzeigen von Geräten mit Microsoft Intune – Azure | Microsoft-Dokumentation"
+description: "Zeigen Sie Details zu Ihren Geräten an, z.B. Betriebssysteme, Speicherplatz, Hersteller und Modell und vieles mehr. Mit Microsoft Intune in Azure können Sie eine Liste der installierten Apps abrufen, Konformitätsrichtlinien überprüfen, TeamViewer einrichten und viele weitere Aktionen ausführen. Die Vorgehensweise ähnelt der Anzeige des Bestands der Geräte, die Sie verwalten."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 11/10/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,36 +13,38 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 772e2b1380626384d618e653b90b31a1f421eb72
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: 934ba0853f8bee851f7027580c276a9fff911b7f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-view-intune-device-inventory"></a>So zeigen Sie den Intune-Gerätebestand an
-
+# <a name="see-device-details-in-intune"></a>Anzeigen von Gerätedetails in Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Die Workload **Geräte** bietet Einblicke in die von Ihnen verwalteten Geräte, einschließlich Informationen zu Hardwarefunktionen und den auf den Geräten installierten Apps. 
+Das Feature **Geräte** bietet zusätzliche Informationen zu den von Ihnen verwalteten Geräten, z.B. zur Hardware und zu installierten Apps. 
 
-So zeigen Sie den Gerätebestand an:
+Dieser Artikel erläutert, wie Sie all Ihre Geräte und deren Eigenschaften im Azure-Portal anzeigen.
+
+## <a name="view-your-device-details"></a>Anzeigen der Gerätedetails
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie auf **Microsoft Intune**.
+3. Klicken Sie auf **Geräte**. Im Bereich „Geräte“ sind mehrere Optionen verfügbar:
 
-Wählen Sie nun eine der folgenden Optionen aus:
+  - **Übersicht**: Erhalten Sie Informationen zu Geräten, die Sie registriert haben, und zu den Betriebssystemen der einzelnen Geräte.
+  - **Verwalten**: Wählen Sie **Alle Geräte** oder **Azure AD-Geräte** aus, um eine Liste aller von Ihnen verwalteten Geräte anzuzeigen.
+    Wählen Sie in der Liste eins der Geräte aus. Dieser Schritt öffnet den Bereich <*Gerätename*>  – **Übersicht**, in dem Sie Folgendes auswählen können:
+    - **Übersicht**: Hier sehen Sie den Gerätenamen, den Besitzer und Informationen dazu, ob es sich um ein BYOD-Gerät (Bring Your Own Device) handelt und wann es eingecheckt wurde, sowie weitere Details.
+    - **Hardware**: Hier finden Sie Informationen zum freien Speicherplatz, zu Modell und Hersteller und weitere Details zum Gerät.
+    - **Ermittelte Apps**: Listet alle auf dem Gerät installierten Apps auf, die von Intune gefunden wurden.
+    - **Gerätekonformität**: Zeigt den Status aller Konformitätsrichtlinien an, die dem Gerät zugewiesen wurden.
+    - **Gerätekonfiguration**: Zeigt den Konformitätsstatus aller Gerätekonfigurationsrichtlinien an, die dem Gerät zugewiesen sind.
+- **Monitor**: Wählen Sie **Geräteaktionen** aus, um eine Liste der Aktionen, die auf von Ihnen verwalteten Geräten ausgeführt wurden, und deren aktuellen Status anzuzeigen. **Überwachungsprotokolle** zeigen den Status verschiedener Tasks.
+- **Setup** > **TeamViewer-Connector**: Hier können Sie Remoteverwaltung auf Geräten mithilfe der Software TeamViewer konfigurieren. Weitere Informationen finden Sie unter [Bereitstellen von Remoteunterstützung für mit Intune verwaltete Android-Geräte](device-profile-android-teamviewer.md).
 
-- **Übersicht:** Erhalten Sie Informationen zu Geräten, die Sie registriert haben, und zu den Betriebssystemen der einzelnen Geräte.
-- **Verwalten:** Wählen Sie **Alle Geräte** aus, um eine Liste aller von Ihnen verwalteten Geräte anzuzeigen.
-    Wählen Sie eines dieser Geräte in der Liste aus, um das Blatt **Übersicht über** <*Gerätename*>  zu öffnen, auf dem Sie eine der folgenden Optionen auswählen können:
-    - **Übersicht:** Hier finden Sie allgemeine Informationen über das Gerät, einschließlich den Namen, den Besitzer, ob es ein BYOD-Gerät ist, wann es zuletzt eingecheckt wurde u.v.m.
-    - **Hardware:** Hier finden Sie ausführliche Informationen über das Gerät, einschließlich dessen freien Speicherplatzes, des Modells und Herstellers usw.
-    - **Ermittelte Apps:** Zeigt eine Liste aller auf dem Gerät installierten Apps an, die von Intune gefunden wurden.
-    - **Gerätekompatibilität:** Zeigt den Kompatibilitätszustand aller Kompatibilitätsrichtlinien an, die dem Gerät zugewiesen wurden.
-    - **Gerätekonfiguration:** Zeigt den Kompatibilitätszustand aller Konfigurationsrichtlinien an, die dem Gerät zugewiesen wurden.
-- **Monitor:** Wählen Sie **Geräteaktionen** aus, um eine Liste der Geräteaktionen, die auf Geräten, die Sie verwalten, ausgeführt wurden, und deren aktuellen Status anzuzeigen.
-- **Setup** > **TeamViewer-Connector:** Ermöglicht Ihnen die Konfiguration der Remoteverwaltung auf Geräten mithilfe der Software TeamViewer. Weitere Informationen finden Sie unter [Bereitstellen von Remoteunterstützung für mit Intune verwaltete Android-Geräte](/intune/device-profile-android-teamviewer).
+Intune erfasst nur auf unternehmenseigenen Geräten eine App-Liste. Auf persönlichen Geräten werden keine Apps überprüft. Bei unternehmenseigenen Windows 10 PCs werden nur moderne Apps aufgeführt. Intune sammelt keine Informationen über Win32-Apps auf dem Gerät. Je nach Netzbetreiber werden möglicherweise nicht alle Apps erfasst.
 
-Intune sammelt nur auf unternehmenseigenen Geräten App-Inventar. Apps sind auf persönlichen Geräten nicht inventarisiert. Für Windows 10 PCs wird nur Inventar von modernen Apps auf unternehmenseigenen Geräten gesammelt. Intune sammelt keine Informationen über Win32-Apps auf dem Gerät. Je nach Netzbetreiber, den Sie mit dem Gerät verwenden, werden nicht alle Inventarelemente gesammelt.
+## <a name="next-steps"></a>Nächste Schritte
+Finden Sie heraus, welche Aktionen beim [Verwalten Ihrer Geräte](device-management.md) mit Intune noch möglich sind.

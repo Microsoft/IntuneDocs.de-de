@@ -1,12 +1,11 @@
 ---
-title: "Erstellen eines WLAN-Profils über einen vorinstallierten Schlüssel"
-titleSuffix: Microsoft Intune
-description: "Verwenden Sie ein benutzerdefiniertes Intune-Profil, um ein WLAN-Profil mit einem vorinstallierten Schlüssel zu erstellen."
+title: "Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel in Microsoft Intune – Azure | Microsoft-Dokumentation"
+description: "Verwenden Sie ein benutzerdefiniertes Profil, um ein WLAN-Profil mit einem vorinstallierten Schlüssel zu erstellen, und rufen Sie XML-Beispielcode für Android- und Windows-WLAN-Profile sowie EAP-basierte WLAN-Profile in Microsoft Intune ab."
 keywords: 
-author: vhorne
-ms.author: victorh
+author: mandia
+ms.author: MandiOhlinger
 manager: dougeby
-ms.date: 11/09/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,63 +14,64 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8229ac82e6854d75f569b7bbf04dd2f5e14856c7
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Verwenden Sie ein benutzerdefiniertes Geräteprofil zum Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel
+# <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Verwenden eines benutzerdefinierten Geräteprofils zum Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel – Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Erfahren Sie, wie Sie mithilfe von **benutzerdefinierten Geräteprofilen** in Intune ein WLAN-Profil mit einem vorinstallierten Schlüssel erstellen. Dieses Thema umfasst außerdem ein Beispiel für die Erstellung eines EAP-basierten WLAN-Profils.
+Vorinstallierte Schlüssel (Pre-shared keys, PSK) werden üblicherweise verwendet, um Benutzer in WLANs (drahtlosen Netzwerken) zu authentifizieren. In Intune können Sie mit einem vorinstallierten Schlüssel ein WLAN-Profil erstellen. Verwenden Sie zum Erstellen des Profils das Intune-Feature **Benutzerdefinierte Geräteprofile**. Dieser Artikel enthält auch einige Beispiele für die Erstellung eines EAP-basierten WLAN-Profils.
 
-> [!NOTE]
--   Möglicherweise ist es für Sie einfacher, den Code von einem Computer zu kopieren, der eine Verbindung mit dem jeweiligen Netzwerk herstellt, wie unten beschrieben.
-- Bei Android haben Sie auch die Möglichkeit, diesen von Johnathon Biersack bereitgestellten [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) zu verwenden.
--   Sie können mehrere Netzwerke und Schlüssel hinzufügen, indem Sie weitere OMA-URI-Einstellungen hinzufügen.
--  Verwenden Sie für iOS den Apple Configurator auf einer Mac-Station, um das Profil einzurichten. Verwenden Sie alternativ diesen [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/), der von Johnathon Biersack bereitgestellt wird.
+## <a name="before-you-begin"></a>Vorbereitung
 
+- Möglicherweise ist es einfacher, den Code von einem Computer zu kopieren, der eine Verbindung mit dem jeweiligen Netzwerk herstellt, wie weiter unten in diesem Artikel beschrieben.
+- Für Android können Sie auch den [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) verwenden.
+- Sie können mehrere Netzwerke und Schlüssel hinzufügen, indem Sie weitere OMA-URI-Einstellungen hinzufügen.
+- Verwenden Sie für iOS den Apple Configurator auf einer Mac-Station, um das Profil einzurichten. Alternativ dazu können Sie den [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) verwenden.
 
-1.  Um ein WLAN-Profil mit einem vorinstallierten Schlüssel für Android oder Windows oder ein EAP-basiertes WLAN-Profil zu erstellen, wählen Sie beim Erstellen eines Geräteprofils anstelle eines WLAN-Profils die Option **Benutzerdefiniert** für die jeweilige Geräteplattform aus.
+## <a name="create-a-custom-profile"></a>Erstellen eines benutzerdefinierten Profils
+Sie können ein benutzerdefiniertes Profil mit einem vorinstallierten Schlüssel für ein Android- oder Windows-WLAN-Profil oder ein EAP-basiertes WLAN-Profil erstellen. Informationen zum Erstellen des Profils im Azure-Portal finden Sie unter [Erstellen von benutzerdefinierten Geräteeinstellungen](custom-settings-configure.md). Wenn Sie das Geräteprofil erstellen, wählen Sie **Benutzerdefiniert** als Geräteplattform aus. Wählen Sie nicht das WLAN-Profil aus. Führen Sie folgende Schritte aus, wenn Sie eine benutzerdefinierte Plattform verwenden: 
 
-2.  Geben Sie einen Namen und eine Beschreibung an.
-3.  Fügen Sie eine neue OMA-URI-Einstellung hinzu:
+1. Geben Sie einen Namen und eine Beschreibung für das Profil ein.
+2. Fügen Sie eine neue OMA-URI-Einstellung mit folgenden Eigenschaften hinzu: 
 
-   ein.   Geben Sie einen Namen für diese WLAN-Netzwerkeinstellung ein.
+   ein. Geben Sie einen Namen für diese WLAN-Netzwerkeinstellung ein.
 
-   b.   Geben Sie eine Beschreibung für die OMA-URI-Einstellung ein, oder lassen Sie sie leer.
+   b. (Optional) Geben Sie eine Beschreibung für die OMA-URI-Einstellung ein, oder lassen Sie das Feld leer.
 
-   c.   **Datentyp:** Legen Sie **String** fest.
+   c. Legen Sie den **Datentyp** auf **Zeichenfolge** fest.
 
-   d.   **OMA-URI**:
+   d. **OMA-URI**:
 
     - **Für Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
     - **Für Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
     > [!NOTE]
-Stellen Sie sicher, dass Sie den Punkt am Anfang eingeben.
+    > Stellen Sie sicher, dass Sie den Punkt am Anfang eingeben.
 
-    SSID steht für die SSID, für die Sie die Richtlinie erstellen. Beispiel: `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+    SSID steht für die SSID, für die Sie die Richtlinie erstellen. Geben Sie beispielsweise `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings` ein.
 
-  e. **Wertfeld** Hier fügen Sie Ihren XML-Code ein. Hier sehen Sie ein Beispiel. Die einzelnen Werte sollten an Ihre Netzwerkeinstellungen angepasst werden. Einige Hinweise finden Sie im Kommentarabschnitt des Codes.
-4. Wählen Sie **OK** aus, speichern Sie, und weisen Sie anschließend die Richtlinie zu.
+  e. **Wertfeld** Hier fügen Sie Ihren XML-Code ein. Sehen Sie sich die Beispiele in diesem Artikel an. Aktualisieren Sie jeden Wert mit dem entsprechenden Wert für Ihre Netzwerkeinstellungen. Der Kommentarabschnitt des Codes enthält einige Hinweise.
+3. Klicken Sie auf **OK**, speichern Sie, und weisen Sie die Richtlinie anschließend zu.
 
     > [!NOTE]
     > Diese Richtlinie kann nur Benutzergruppen zugewiesen werden.
 
-Wenn sich die einzelnen Geräte das nächste Mal anmelden, wird die Richtlinie angewendet, und auf dem Gerät wird ein WLAN-Profil erstellt. Das Gerät kann automatisch eine Verbindung mit dem Netzwerk herstellen.
+Wenn sich die einzelnen Geräte das nächste Mal anmelden, wird die Richtlinie angewendet, und auf dem Gerät wird ein WLAN-Profil erstellt. Das Gerät kann dann automatisch eine Verbindung mit dem Netzwerk herstellen.
 
-## <a name="android-or-windows-wi-fi-profile"></a>Android- oder Windows-WLAN-Profil
+## <a name="android-or-windows-wi-fi-profile-example"></a>Android- oder Windows-WLAN-Profil – Beispiel
 
-Hier sehen Sie ein Beispiel für den XML-Code eines Android- oder Windows-WLAN-Profils:
+Das folgende Beispiel enthält den XML-Code für ein Android- oder Windows-WLAN-Profil. 
 
 > [!IMPORTANT]
 >
-> `<protected>false</protected>` muss auf **false** festgelegt werden, da **true** dazu führen könnte, dass das Gerät ein verschlüsseltes Kennwort erwartet, das es dann zu entschlüsseln versucht, was einen Verbindungsfehler bewirken würde.
+> `<protected>false</protected>` muss auf **false** festgelegt werden. Eine Festlegung auf **true** könnte dazu führen, dass das Gerät ein verschlüsseltes Kennwort erwartet, das es dann zu entschlüsseln versucht. Dies würde einen Verbindungsfehler bewirken.
 >
 >  `<hex>53534944</hex>` sollte auf den hexadezimalen Wert von `<name><SSID of wifi profile></name>` festgelegt werden.
->  Windows 10-Geräte können fälschlicherweise den Fehler *0x87D1FDE8: Fehler bei Wiederherstellung* zurückgeben, werden aber dennoch mit dem Profil bereitgestellt.
+>  Windows 10-Geräte können fälschlicherweise den Fehler *0x87D1FDE8: Fehler bei Wiederherstellung* zurückgeben, aber das Gerät enthält das Profil weiterhin.
 
 ```
 <!--
@@ -115,8 +115,8 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 </WLANProfile>
 ```
 
-## <a name="eap-based-wi-fi-profile"></a>EAP-basiertes WLAN-Profil
-Hier sehen Sie ein Beispiel für den XML-Code eines EAP-basierten WLAN-Profils:
+## <a name="eap-based-wi-fi-profile-example"></a>EAP-basiertes WLAN-Profil – Beispiel
+Das folgende Beispiel enthält den XML-Code für ein EAP-basiertes WLAN-Profil:
 
 ```
     <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -199,16 +199,18 @@ Hier sehen Sie ein Beispiel für den XML-Code eines EAP-basierten WLAN-Profils:
 ```
 
 ## <a name="create-the-xml-file-from-an-existing-wi-fi-connection"></a>Erstellen der XML-Datei aus einer vorhandenen WLAN-Verbindung
-Sie können die XML-Datei auch aus einer vorhandenen WLAN-Verbindung erstellen:
-1. Öffnen Sie auf einem Computer, der mit dem WLAN verbunden ist oder vor kurzem damit verbunden war, den folgenden Ordner: „C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}“.
+Sie können die XML-Datei auch mit folgenden Schritten aus einer vorhandenen WLAN-Verbindung erstellen: 
 
-    Es wird empfohlen, einen Computer zu verwenden, der nicht mit allzu vielen WLANs verbunden ist, weil Sie die einzelnen Profile durchsuchen müssen, um das richtige zu finden.
-3.     Durchsuchen Sie die XML-Dateien, um die Datei mit dem richtigen Namen zu finden.
-4.     Nachdem Sie die richtige XML-Datei gefunden haben, kopieren Sie den XML-Code in das Feld „Daten“ auf der Seite mit den OMA-URI-Einstellungen.
+1. Öffnen Sie den Ordner `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` auf einem Computer, der mit dem WLAN verbunden ist oder kürzlich verbunden war.
+
+  Am besten eignet sich ein Computer, der noch nicht mit vielen WLANs verbunden war. Andernfalls müssen Sie möglicherweise jedes Profil durchsuchen, um das richtige zu finden.
+
+2. Durchsuchen Sie die XML-Dateien, um die Datei mit dem richtigen Namen zu finden.
+3. Nachdem Sie die richtige XML-Datei gefunden haben, kopieren Sie den XML-Code in das Feld **Daten** auf der Seite mit den OMA-URI-Einstellungen.
 
 ## <a name="best-practices"></a>Bewährte Methoden
-Bevor Sie ein WLAN-Profil mit PSK bereitstellen, überprüfen Sie, ob das Gerät eine direkte Verbindung mit dem Endpunkt herstellen kann.
+- Bevor Sie ein WLAN-Profil mit PSK bereitstellen, vergewissern Sie sich, dass das Gerät eine direkte Verbindung mit dem Endpunkt herstellen kann.
 
-Rechnen Sie beim Rotieren von Schlüsseln (Kennwörtern oder Passphrases) mit Ausfallzeiten, und planen Sie die Bereitstellung entsprechend. Erwägen Sie die Push-Übertragung von neuen WLAN-Profilen in der arbeitsfreien Zeit. Außerdem sollten Sie die Benutzer warnen, dass die Konnektivität beeinträchtigt sein kann.
+- Rechnen Sie beim Rotieren von Schlüsseln (Kennwörtern oder Passphrasen) mit Ausfallzeiten, und planen Sie Ihre Bereitstellungen entsprechend. Erwägen Sie die Push-Übertragung von neuen WLAN-Profilen in der arbeitsfreien Zeit. Außerdem sollten Sie die Benutzer warnen, dass die Konnektivität beeinträchtigt sein kann.
 
-Stellen Sie sicher, dass das Gerät des Endbenutzers eine alternative Verbindung mit dem Internet hat, damit ein reibungslosen Übergang gewährleistet ist. Der Endbenutzer muss z.B. dazu in der Lage sein, auf das Gast-WLAN (oder ein anderes WLAN-Netzwerk) oder eine Mobilfunkverbindung zuzugreifen, um mit Intune zu kommunizieren. Dadurch kann der Benutzer weiterhin Aktualisierungen zu Richtlinien erhalten, wenn das WLAN-Profil des Unternehmens auf dem Gerät aktualisiert wird.
+- Stellen Sie sicher, dass das Gerät des Endbenutzers über eine alternative Verbindung mit dem Internet verfügt, damit ein reibungsloser Übergang gewährleistet ist. Der Endbenutzer muss z.B. dazu in der Lage sein, auf das Gast-WLAN (oder ein anderes WLAN-Netzwerk) oder eine Mobilfunkverbindung zuzugreifen, um mit Intune zu kommunizieren. Durch die zusätzliche Verbindung kann der Benutzer weiterhin Richtlinienaktualisierungen erhalten, wenn das WLAN-Profil des Unternehmens auf dem Gerät aktualisiert wird.

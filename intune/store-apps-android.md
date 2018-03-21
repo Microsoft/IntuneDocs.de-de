@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c2cbc68aa3ea11e3b5593597a94aa059dd2927ed
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 87fea551dea1f80ee071fe6b477b84729e000874
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Hinzufügen von Android Store-Apps in Microsoft Intune
 
@@ -28,12 +28,12 @@ ms.lasthandoff: 03/05/2018
 Bevor Sie einem Gerät oder einer Gruppe von Benutzern eine App zuweisen, müssen Sie diese zunächst zu Microsoft-Intune hinzufügen. Über die im Folgenden beschriebenen Schritte können Sie eine App aus dem Android-Store aus dem Azure-Portal zu Intune hinzufügen.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Klicken Sie auf dem Blatt **Microsoft Intune** auf die Option **Mobile Apps**.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
 4. Klicken Sie in der Workload **Mobile Apps** im Abschnitt **Verwalten** auf **Apps**.
 5. Wählen Sie über der Liste der Apps **Hinzufügen** aus.
-6. Klicken Sie auf dem Blatt **App hinzufügen** unter den verfügbaren **Store-App**-Typen auf **Android**.
-7. Klicken Sie auf **Konfigurieren**, um die App-Informationen mit den folgenden Informationen zu konfigurieren. Je nachdem, welche App ausgewählt wurde, werden einige der Werte automatisch in dieses Blatt eingetragen:
+6. Wählen Sie im Bereich **App hinzufügen** aus den verfügbaren **Store-App**-Typen den Typ **Android** aus.
+7. Klicken Sie auf **Konfigurieren**, um folgende App-Informationen zu konfigurieren. Je nachdem, welche App ausgewählt wurde, wurden einige der Werte möglicherweise schon automatisch in diesem Bereich eingetragen:
     - **Name:** Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle App-Namen eindeutig sind. Wenn ein App-Name zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
     - **Beschreibung:** Geben Sie eine Beschreibung für die App ein. Diese Beschreibung wird den Benutzern im Unternehmensportal angezeigt.
     - **Herausgeber:** Geben Sie den Namen des Herausgebers der App ein.

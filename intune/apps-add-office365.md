@@ -1,12 +1,12 @@
 ---
 title: "Installieren von Office 365-Apps auf Geräten mit Microsoft Intune"
 titlesuffix: 
-description: "Erfahren Sie, wie Sie Microsoft Intune verwenden können, um Office 365-Apps einfacher auf Windows 10-Geräten installieren zu können."
+description: "Erfahren Sie, wie Sie Microsoft Intune verwenden können, um die Installation von Office 365-Apps auf Windows 10-Geräten zu vereinfachen."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 076d228f3b18416e4ecb8fd1b3543a58d037e386
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Vorgehensweise: Zuweisen von Office 365 ProPlus-Apps zu Windows 10-Geräten mit Microsoft Intune
+# <a name="how-to-assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Zuweisen von Office 365-Apps zu Windows 10-Geräten mit Microsoft Intune
 
-Diese App erleichtert Ihnen die Zuweisung von Office 365 ProPlus-Apps zu Geräten, die Sie verwalten und die Windows 10 ausführen. Sie können Apps für den Microsoft Project Online-Desktopclient und Microsoft Visio Pro für Office 365 installieren, wenn Sie über Lizenzen für sie verfügen. Die gewünschten Apps werden als Einzeleintrag in der Liste der Apps in der Intune-Konsole angezeigt.
+Diese App erleichtert Ihnen die Zuweisung von Office 365-Apps zu Geräten, die Sie verwalten und auf denen Windows 10 ausgeführt wird. Sie können Apps für den Microsoft Project Online-Desktopclient und Microsoft Visio Pro für Office 365 installieren, wenn Sie über Lizenzen für sie verfügen. Die gewünschten Apps werden als Einzeleintrag in der Liste der Apps in der Intune-Konsole angezeigt.
 
 
 ## <a name="before-you-start"></a>Vorbereitung
@@ -32,7 +32,7 @@ Diese App erleichtert Ihnen die Zuweisung von Office 365 ProPlus-Apps zu Geräte
 >Diese Installationsmethode für Office wird nicht unterstützt, wenn keine anderen Versionen von Microsoft Office auf dem Gerät installiert sind.
 
 - Auf den Geräten, auf denen Sie diese Apps bereitstellen, muss das Windows 10 Creators Update oder höher ausgeführt werden.
-- Intune unterstützt nur das Hinzufügen von Office-Apps aus der Sammlung von Office 365 ProPlus-Suite.
+- Intune unterstützt nur das Hinzufügen von Office-Apps aus der Office 365 Suite.
 - Wenn Office-Apps geöffnet sind, wenn Intune die App-Sammlung erstellt, kann bei der Installation ein Fehler auftreten, und Endbenutzer verlieren möglicherweise Daten aus nicht gespeicherten Dateien.
 - Diese Installationsmethode wird von Windows 10S-, Windows Home-, Windows-Team-, Windows Holographic- und Windows Holographic for Business-Geräten nicht unterstützt.
 - Intune unterstützt nicht das Installieren von Office 365-Desktop-Apps aus dem Microsoft Store (sogenannte Office Centennial-Apps) auf einem Gerät, für das bereits Office 365-Apps mit Intune bereitgestellt wurden. Wenn Sie diese Konfiguration installieren, kann sie zu Datenverlusten oder -beschädigungen führen.
@@ -41,12 +41,13 @@ Diese App erleichtert Ihnen die Zuweisung von Office 365 ProPlus-Apps zu Geräte
 
 ## <a name="get-started"></a>Erste Schritte
 
-1.  Melden Sie sich beim Azure-Portal an.
-2.  Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1.  Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2.  Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Monitoring + Management**.
 3.  Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
-4.  Wählen Sie in der Workload **Mobile Apps** die Option **Verwalten** > **Apps** aus.
+4.  Wählen Sie in der Workload **Mobile Apps** im Abschnitt **Verwalten** die Option **Apps** aus.
 5.  Wählen Sie über der Liste der Apps **Hinzufügen** aus.
-6.  Wählen Sie auf dem Blatt **App hinzufügen** **Office 365 ProPlus-Suite (Windows 10)** aus.
+6.  Wählen Sie auf dem Blatt **Apps hinzufügen** in der Liste **App-Typ** unter **Office 365 Suite** die Option **Windows 10** aus.
+    Sie können die App-Suite jetzt konfigurieren.
 
 ## <a name="configure-the-app-suite"></a>Konfigurieren der App-Sammlung
 
@@ -61,7 +62,7 @@ In diesem Schritt wählen Sie die Office-Apps aus, die Sie den Geräten zuweisen
 
 ## <a name="configure-app-information"></a>Konfigurieren von App-Informationen
 
-Stellen Sie in diesem Schritt Informationen über die App-Sammlung bereit. Diese Informationen helfen Ihnen, die Sammlung in Intune zu identifizieren, und Endbenutzer können sie in der Unternehmensportal-App finden.
+In diesem Schritt stellen Sie Informationen über die App-Suite bereit. Diese Informationen helfen Ihnen dabei, die App-Suite in Intune zu identifizieren, und außerdem können Endbenutzer sie in der Unternehmensportal-App leichter finden.
 
 1.  Wählen Sie auf dem Blatt **App hinzufügen** die Option **App Suite Information** (Informationen über die App-Sammlung) aus.
 2.  Geben Sie auf dem Blatt **App Suite Information** die folgenden Informationen an:
@@ -75,7 +76,7 @@ Stellen Sie in diesem Schritt Informationen über die App-Sammlung bereit. Diese
     - **Entwickler:** Geben Sie optional den Namen des App-Entwicklers ein.
     - **Besitzer:** Geben Sie optional einen Namen für den Besitzer dieser App ein, z.B. **Personalabteilung**.
     - **Anmerkungen:** Geben Sie Hinweise zu dieser App ein.
-    - **Symbol hochladen:** Laden Sie ein Symbol hoch, das gemeinsam mit der App angezeigt wird, wenn die Benutzer das Unternehmensportal durchsuchen.
+    - **Logo:** Laden Sie ein Symbol hoch, das mit der App angezeigt wird, wenn Benutzer das Unternehmensportal durchsuchen.
 3.  Klicken Sie abschließend auf **OK**.
 
 ## <a name="configure-app-settings"></a>App-Einstellungen konfigurieren
@@ -84,14 +85,14 @@ In diesem Schritt konfigurieren Sie Installationsoptionen für die App-Sammlung.
 
 1.  Wählen Sie auf dem Blatt **App hinzufügen** die Option **App Suite Settings** (Einstellungen für die App-Sammlung) aus.
 2.  Geben Sie auf dem Blatt **App Suite Settings** die folgenden Informationen an:
-    - **Office-Version:** Wählen Sie aus, ob Sie die 32-Bit- oder die 64-Bit-Version von Office zuweisen möchten. Sie können die 32-Bit-Version auf jeweils 32-Bit- und 64-Bit-Geräten installieren, jedoch können Sie die 64-Bit-Version nur auf 64-Bit-Geräten installieren.
+    - **Office-Version:** Wählen Sie aus, ob Sie die 32-Bit- oder die 64-Bit-Version von Office zuweisen möchten. Sie können die 32-Bit-Version sowohl auf 32-Bit- als auch auf 64-Bit-Geräten installieren. Die 64-Bit-Version lässt sich jedoch nur auf 64-Bit-Geräten installieren.
     - **Updatekanal:** Wählen Sie aus, wie Office auf Geräten aktualisiert wird. Informationen zu den unterschiedlichen Updatekanälen finden Sie in der [Übersicht der Updatekanäle für Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Es stehen die folgenden Optionen zur Auswahl:
         - **Monatlich**
         - **Monatlich (Ziel)**
         - **Halbjährlich**
         - **Halbjährlich (Ziel)**
     - **Automatically accept the app end user license agreement** (Die Endbenutzer-Lizenzvereinbarung der App automatisch akzeptieren): Wählen Sie diese Option aus, wenn Endbenutzer die Lizenzvereinbarung nicht akzeptieren müssen. Intune akzeptiert daraufhin die automatisch die Vereinbarung.
-    - **Aktivierung gemeinsam genutzter Computer:** Die Aktivierung gemeinsam genutzter Computer wird verwendet, wenn sich mehrere Benutzer einen Computer teilen. Weitere Informationen finden Sie im Überblick über die Aktivierung gemeinsam genutzter Computer für Office 365 ProPlus.
+    - **Aktivierung gemeinsam genutzter Computer:** Die Aktivierung gemeinsam genutzter Computer wird verwendet, wenn sich mehrere Benutzer einen Computer teilen. Weitere Informationen finden Sie in der Übersicht über die Aktivierung gemeinsam genutzter Computer für Office 365.
     - **Sprachen:** Office installiert automatisch alle unterstützen Sprachen, die mit Windows auf Endbenutzergeräten installiert werden. Wählen Sie diese Option, wen Sie zusätzliche Sprachen mit der App-Sammlung installieren möchten.
 
 >[!IMPORTANT]
@@ -99,7 +100,7 @@ In diesem Schritt konfigurieren Sie Installationsoptionen für die App-Sammlung.
 
 ## <a name="finish-up"></a>Fertig stellen
 
-Wenn Sie fertig sind, wählen Sie auf dem Blatt **App hinzufügen** die Option **Speichern** aus. Die von Ihnen erstellte App wird in der Liste der Apps angezeigt.
+Wenn Sie fertig sind, klicken Sie auf dem Blatt **App hinzufügen** auf **Hinzufügen**. Die von Ihnen erstellte App wird in der Liste der Apps angezeigt.
 
 ## <a name="error-codes-when-installing-the-app-suite"></a>Fehlercodes beim Installieren der App-Sammlung
 
@@ -137,4 +138,4 @@ In der nachstehenden Tabelle sind die häufigsten Fehlercodes, die auftreten kö
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sie können die Apps jetzt den ausgewählten Gruppen zuweisen. Hilfe finden Sie unter [Zuweisen von Apps zu Gruppen](/intune-azure/manage-apps/deploy-apps).
+- Sie können die Apps jetzt den von Ihnen ausgewählten Gruppen zuweisen. Informationen dazu finden Sie unter [Zuweisen von Apps zu Gruppen](/intune-azure/manage-apps/deploy-apps).

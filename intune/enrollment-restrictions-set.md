@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: a6466d62cf8af4e6b8a14980db5e9a244deb45c4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
@@ -53,8 +53,8 @@ Auf den Gerätetyp und das Gerätelimit bezogene Registrierungsbeschränkungen w
 
 ## <a name="create-a-restriction"></a>Definieren einer Beschränkung
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste**, suchen Sie nach **Intune**, und wählen Sie dann **Intune**.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 3. Klicken Sie auf **Geräteregistrierung** > **Registrierungsbeschränkungen**.
 4. Wählen Sie **Beschränkung erstellen**.
 5. Geben Sie für die Beschränkung einen Namen und eine Beschreibung ein.
@@ -70,8 +70,8 @@ Auf den Gerätetyp und das Gerätelimit bezogene Registrierungsbeschränkungen w
 
 Sie können die Einstellungen für eine Gerätetypbeschränkung ändern, indem Sie diese Schritte ausführen:
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste**, suchen Sie nach **Intune**, und wählen Sie dann **Intune**.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 3. Klicken Sie auf **Geräteregistrierung** > **Registrierungsbeschränkungen**.
 4. Wählen Sie unter **Gerätetypbeschränkungen** die Beschränkung, die Sie festlegen möchten.
 5. Wählen Sie unter dem Namen der Beschränkung (**Alle Benutzer** für die Standardbeschränkung) die Option **Plattformen** aus. Wählen Sie für jede aufgeführte Plattform **Zulassen** oder **Blockieren** aus.
@@ -81,10 +81,10 @@ Sie können die Einstellungen für eine Gerätetypbeschränkung ändern, indem S
   - iOS unterstützt major.minor.rev.
   - Windows unterstützt major.minor.rev.build nur für Windows 10.
   Die Betriebssystemversionen gelten nicht für Apple-Geräte, die mit dem Programm zur Geräteregistrierung, dem Apple School Manager oder der App Apple Configurator registriert werden.
-8. Wählen Sie für jede aufgeführte Plattform **Zulassen** oder **Blockieren** für **Geräte in Privatbesitz** aus.
+6. Wählen Sie für jede aufgeführte Plattform **Zulassen** oder **Blockieren** für **Geräte in Privatbesitz** aus.
 
     ![Screenshot des Arbeitsbereichs „Geräteeinschränkungen“ mit der für Geräte in Privatbesitz konfigurierten Standardgeräteplattform](media/device-restrictions-platform-configurations.png)
-9. Klicken Sie auf **Speichern**.
+7. Klicken Sie auf **Speichern**.
 
 >[!NOTE]
 >- Wenn Sie die Registrierung privater Android-Geräte blockieren, können private Android for Work-Geräte weiterhin registriert werden.
@@ -95,13 +95,13 @@ Sie können die Einstellungen für eine Gerätetypbeschränkung ändern, indem S
 
 Sie können die Einstellungen für eine Gerätelimitbeschränkung ändern, indem Sie diese Schritte ausführen:
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste**, suchen Sie nach **Intune**, und wählen Sie dann **Intune**.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 3. Klicken Sie auf **Geräteregistrierung** > **Registrierungsbeschränkungen**.
 4. Wählen Sie unter **Einschränkungen zum Gerätelimit** die Beschränkung, die Sie festlegen möchten.
 5. Wählen Sie **Gerätelimit** und dann in der Dropdownliste die maximale Anzahl der Geräte aus, die ein Benutzer registrieren kann.
     ![Screenshot des Blatts „Einschränkungen zum Gerätelimit“](./media/device-restrictions-limit.png)
-6. Klicken Sie auf **Speichern**.
+4. Klicken Sie auf **Speichern**.
 
 Ihr Endbenutzer erhält eine Benachrichtigung darüber, wann sein Limit registrierter Geräte erreicht ist. Bei iOS würde dies wie folgt aussehen:
 
@@ -119,8 +119,8 @@ Sie können die Priorität jeder nicht standardmäßigen Beschränkung ändern.
 
 **So ändern Sie Priorität einer Beschränkung**
 
-1. Melden Sie sich beim Azure-Portal an.
-2. Wählen Sie **Weitere Dienste**, suchen Sie nach **Intune**, und wählen Sie dann **Intune**.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 3. Klicken Sie auf **Geräteregistrierung** > **Registrierungsbeschränkungen**.
 4. Zeigen Sie in der Prioritätenliste auf die Beschränkung.
-5. Ziehen Sie mithilfe der drei vertikalen Punkte die Priorität an die gewünschte Position in der Liste.
+5. Ziehen Sie mithilfe der drei vertikal angeordneten Punkte links die Priorität an die gewünschte Position in der Liste.

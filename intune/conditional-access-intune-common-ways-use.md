@@ -1,10 +1,10 @@
 ---
-title: "Bedingter Zugriff über Intune"
-titlesuffix: Azure portal
-description: "Gängige Möglichkeiten der Verwendung des bedingten Zugriffs in Intune"
+title: Bedingter Zugriff mit Microsoft Intune
+titlesuffix: 
+description: "Erfahren Sie, wie der bedingte Zugriff von Intune im Allgemeinen für den gerätebasierten und den App-basierten bedingten Zugriff verwendet wird."
 keywords: 
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: 9c34e6e2891769d64885d364f05dbedaa1fb7d57
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="common-ways-to-use-conditional-access-with-intune"></a>Gängige Möglichkeiten der Verwendung des bedingten Zugriffs in Intune
+# <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Im Wesentlichen gibt es zwei Arten des bedingten Zugriffs in Intune. Zum einen gibt es den gerätebasierten bedingten Zugriff. Zum anderen gibt es den App-basierten bedingten Zugriff. Sie müssen die entsprechenden Konformitätsrichtlinien konfigurieren, um die Konformität mit bedingtem Zugriff in Ihrer Organisation zu unterstützen.
+Es gibt zwei Arten des bedingten Zugriffs in Intune: den gerätebasierten bedingten Zugriff und den App-basierten bedingten Zugriff. Sie müssen die entsprechenden Konformitätsrichtlinien konfigurieren, um die Konformität mit bedingtem Zugriff in Ihrer Organisation zu unterstützen. Der bedingte Zugriff wird häufig verwendet, um Aktionen wie die folgenden auszuführen: Zulassen oder Blockieren des Zugriffs auf Exchange lokal, Steuern des Zugriffs auf das Netzwerk oder Integrieren in eine Mobile Threat Defense-Lösung.
 
 Im Folgenden finden Sie Informationen zur Verwendung der Intune-Funktionen für die Konformität von mobilen *Geräten* und der Intune-Funktionen für die Verwaltung mobiler *Anwendungen*. 
 

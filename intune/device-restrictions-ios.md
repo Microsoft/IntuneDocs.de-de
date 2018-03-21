@@ -13,19 +13,21 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für iOS-Geräte in Microsoft Intune
-In diesem Artikel erfahren Sie alle Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für iOS-Geräte konfigurieren können.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+In diesem Artikel lernen Sie die Einstellungen für Geräteeinschränkungen in Microsoft Intune kennen, die Sie für iOS-Geräte konfigurieren können.
+
 ## <a name="general"></a>Allgemein
 
+-   **Nutzungsdaten freigeben:** Hiermit erlauben oder verhindern Sie, dass das Gerät Diagnose- und Nutzungstelemetriedaten an Apple sendet.
 -   **Übermittlung von Diagnosedaten:** Ermöglicht dem Gerät das Senden von Diagnosedaten an Apple.
 -   **Bildschirmaufnahme:** Erlauben Sie dem Benutzer, den Bildschirminhalt als Bild zu erfassen.
     - **Remotebildschirmüberwachung über die Classroom-App (nur überwacht):** Erlauben oder sperren Sie die Anzeige des Bildschirms auf iOS-Geräten durch die Apple Classroom-App.
@@ -213,8 +215,8 @@ Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Da
 -   **Verknüpfen von WLAN-Netzwerken nur mithilfe von Konfigurationsprofilen (nur überwacht):** Dem Gerät nur erlauben, eine Verbindung mit WLAN-Netzwerken herzustellen, die mit einem Intune-WLAN-Profil konfiguriert wurden.
 
 - **Mobilfunk-Verwendungsregeln (nur verwaltete Apps):** Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn Sie sich in Mobilfunknetzwerken befinden. Es stehen die folgenden Optionen zur Auswahl:
-    - **Nutzung von Netzwerkdaten blockieren**
-    - **Nutzung von Netzwerkdaten bei Roaming blockieren**
+    - **Verwendung von Datenverbindungen blockieren:** Sie können die Verwendung von Datenverbindungen für **Alle verwalteten Apps** blockieren oder **bestimmte Apps wählen**.
+    - **Verwendung von Datenverbindungen beim Roaming blockieren:** Sie können die Verwendung von Datenverbindungen beim Roaming für **Alle verwalteten Apps** blockieren oder **bestimmte Apps wählen**.
 
 ## <a name="connected-devices"></a>Verbundene Geräte
 

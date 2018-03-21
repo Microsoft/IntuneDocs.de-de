@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42e7e2c8d239b8150f67a699ba6fef156b3e1a7d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: b7d2b551832d8d0e467d079df673954318623e4c
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten
 Intune verwendet Azure Active Directory-Gruppen (AD) zur Verwaltung von Geräten und Benutzern. Als Intune-Administrator können Sie Gruppen entsprechend der Anforderungen Ihrer Organisation einrichten. Sie können Gruppen erstellen, um Benutzer oder Geräte nach geografischem Standort, Abteilung oder Hardwareeigenschaften zu organisieren. Sie können Gruppen zur bedarfsgerechten Verwaltung von Aufgaben verwenden. So können Sie beispielsweise Richtlinien für viele Benutzer festlegen oder Apps für eine Reihe von Geräten bereitstellen.
@@ -33,9 +33,11 @@ Sie können die folgenden Gruppentypen hinzufügen:
 ## <a name="add-a-new-group"></a>Hinzufügen einer neuen Gruppe
 
 Führen Sie die folgenden Schritte aus, um eine neue Gruppe zu erstellen:
-1. Wechseln Sie im Azure-Portal zu **Gruppen**, und wählen Sie dann auf dem Blatt **Alle Gruppen** die Option **Neue Gruppe** aus.
-  ![Screenshot des Bildschirms Benutzer und Gruppen mit der neuen Gruppe ausgewählt](./media/groups-add-new.png)
-2. Geben Sie den **Namen** und die **Beschreibung** der neuen Gruppe an. Diese Eigenschaften werden nur im Verwaltungsportal und nicht den Benutzern angezeigt.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie im Bereich **Intune** die Option **Gruppen** und dann im Bereich **Alle Gruppen** die Option **Neue Gruppe** aus.
+  ![Screenshot des Azure-Portals mit ausgewählter Option „Neue Gruppe“](./media/groups-add-new.png)
+2. Geben Sie den **Gruppentyp**, den **Namen** und die **Beschreibung** der neuen Gruppe an. Diese Eigenschaften werden nur im Verwaltungsportal und nicht den Benutzern angezeigt.
 
 3. Wählen Sie den **Mitgliedschaftstyp** aus:
   - **Zugewiesen**: Zur Erstellung einer Gruppe mit manuell zugewiesenen Mitgliedern. Weitere Informationen zu [zugewiesenen Azure AD-Gruppen](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).

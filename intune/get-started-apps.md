@@ -15,11 +15,11 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0185eebbe436da73e1920d7cd834f0897a143894
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 3198a62e437e5ccaa3cfc71d1f643f073d41ed05
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Erste Schritte beim Hinzufügen von Apps in Microsoft Intune
 
@@ -28,35 +28,24 @@ Bevor Sie Apps zuweisen, überwachen, konfigurieren oder schützen können, müs
 Mit Intune können Sie folgende App-Typen zu Ihren Unternehmensgeräten hinzufügen und zuweisen:
 - **Apps aus dem Store**: Für Geräte, für die zusätzliche mobile Anwendungsverwaltung für im App-Store verfügbare Apps erforderlich ist.
 - **Interne (branchenspezifische) Apps**: Hochladen einer heruntergeladenen Datei auf das Gerät Ihres Benutzers.
-- **Integrierte Apps**: Zuweisen geordneter verwalteter Apps, wie z.B. Office 365-Apps, zu iOS- und Android-Geräten. 
+- **Integrierte Apps**: Zuweisen geordneter verwalteter Apps, wie z.B. Office 365-Apps, zu iOS- und Android-Geräten.
 - **Apps im Web**: Intune erstellt eine Verknüpfung für die Web-App auf dem Startbildschirm des Geräts.
 
 ## <a name="how-do-i-assign-a-public-store-app"></a>Wie weise ich eine öffentliche Store-App zu?
 
-Das folgende Beispiel führt Sie schrittweise durch die Vorgehensweise beim Hinzufügen einer iOS-App in Microsoft Intune.
-
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
-4. Klicken Sie in der Workload **Mobile Apps** im Abschnitt **Verwalten** auf **Apps**.
-5. Wählen Sie rechts von dem Bereich **Apps** die Option **Hinzufügen** aus.
-6. Wählen Sie in der Liste **App-Typ** unter den verfügbaren Typen der **Store-Apps** die Option **iOS** aus.
-6. Wählen Sie **Search the App Store** (App Store durchsuchen) aus.
-7. Wählen Sie auf dem Blatt **Search the App Store** (App Store durchsuchen) das Gebietsschema des App Store aus.
-8. Geben Sie den Namen (oder einen Teil des Namens) in das Suchfeld ein. Intune durchsucht den Store und gibt eine Liste mit relevanten Ergebnissen zurück.
-9. Wählen Sie die gewünschte App aus der Liste aus, und klicken Sie anschließend auf **Auswählen**.
-10. Wählen Sie **App-Informationen** aus, um die App-Informationen zu konfigurieren.
-11. (Optional) Sie können andere Details hinzufügen, um diese App zu organisieren, wie z.B. **Besitzer**, **Anmerkungen**, **Entwickler** und **URL zu den Datenschutzbestimmungen** (für die Datenschutzrichtlinie Ihres Unternehmens).
-12. Wählen Sie bei der Option **Display this as a featured app in the Company Portal** (Diese App als ausgewählte App im Unternehmensportal anzeigen) den Eintrag **Ja** aus. 
-13. Klicken Sie auf **OK**, nachdem Sie alle erforderlichen App-Informationen hinzugefügt haben.
-14. Klicken Sie auf dem Blatt **App hinzufügen** auf **Hinzufügen**. Dadurch gelangen Sie zu der **Übersicht** dieser App. 
+3. Klicken Sie auf **Mobile Apps** und dann auf **Apps**.
+4. Klicken Sie auf **Hinzufügen**, und wählen Sie **iOS** als **App-Typ** aus.
+5. Wählen Sie **App auswählen** aus, um den Bereich **App Store durchsuchen** anzuzeigen.
+6. Suchen Sie über das Textfeld nach einer App, die Sie dem Gerät zuweisen können. Wählen Sie die App aus, und klicken Sie dann auf **Auswählen**.
+7. Klicken Sie im Bereich **App hinzufügen** auf **App-Information**, und stellen Sie sicher, dass alle App-Informationen aufgefüllt wurden. Sie können andere optionale Details hinzufügen, um diese App zu organisieren, wie z.B. **Besitzer**, **Anmerkungen**, **Entwickler** und **URL zu den Datenschutzbestimmungen** für die Datenschutzrichtlinie Ihres Unternehmens.
+8. Achten Sie darauf, dass Sie **Ja** für **Diese App als ausgewählte App im Unternehmensportal anzeigen** ausgewählt haben, und klicken Sie dann auf **OK**.
+9. Klicken Sie im Bereich **App hinzufügen** auf **Hinzufügen**, um die App hinzuzufügen. Damit werden Sie zur **Übersicht** der App weitergeleitet. Klicken Sie auf **Zuweisungen** und dann auf **Gruppe hinzufügen**, um sie Ihrer Testgruppe hinzuzufügen. Machen Sie die App zum Herunterladen **verfügbar**. Dann sollte die App als **Empfohlene App** auf Ihrem Testgerät angezeigt werden.
 
-## <a name="next-steps"></a>Nächste Schritte
-
-Nachdem Sie eine App zu Intune hinzugefügt haben, können Sie die Mitarbeitergruppen zuweisen, welche die App auf ihren Geräten verwenden können.
 
 - [Zuweisen von Apps zu Gruppen](apps-deploy.md)
-- 
+
 ## <a name="learn-more"></a>Erfahren Sie mehr
 
 * [Was ist die Microsoft Intune App-Verwaltung?](app-management.md)

@@ -14,17 +14,17 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9d181c4a6e490018c88214a2ed91c90327f2526
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Konfigurieren eines Zertifikatprofils für Ihre Geräte in Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Wenn Sie Benutzern den Zugriff auf Unternehmensressourcen über VPN, WLAN oder E-Mail-Profile gestatten, können Sie diese Verbindungen mit Zertifikaten authentifizieren. Bei der Verwendung von Zertifikaten ist die Eingabe von Benutzernamen und Kennwörtern zum Authentifizieren von Verbindungen nicht erforderlich. 
+Wenn Sie Benutzern den Zugriff auf Unternehmensressourcen über VPN, WLAN oder E-Mail-Profile gestatten, können Sie diese Verbindungen mit Zertifikaten authentifizieren. Bei der Verwendung von Zertifikaten ist die Eingabe von Benutzernamen und Kennwörtern zum Authentifizieren von Verbindungen nicht erforderlich.
 
 Mit Intune können Sie diese Zertifikate Geräten zuweisen, die Sie verwalten. Intune unterstützt das Zuweisen und Verwalten folgender Zertifikattypen:
 
@@ -85,10 +85,13 @@ Sie importieren dieses Zertifikat, wenn Sie ein vertrauenswürdiges Zertifikatpr
 ## <a name="step-3-create-trusted-certificate-profiles"></a>Schritt 3: Erstellen von vertrauenswürdigen Zertifikatprofilen
 Erstellen Sie ein vertrauenswürdiges Zertifikatprofil, bevor Sie ein SCEP- oder PKCS-Zertifikatprofil erstellen können. Sie benötigen für jede Geräteplattform ein vertrauenswürdiges Zertifikatprofil und ein SCEP- oder PKCS-Profil. Die Schritte zur Erstellung vertrauenswürdiger Zertifikate sind bei jeder Geräteplattform ähnlich.
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, und suchen Sie nach **Microsoft Intune**.
-2. Wählen Sie in **Microsoft Intune** die Option **Gerätekonfiguration** und anschließend **Profile** aus. Wählen Sie dann **Profil erstellen** aus.
-3. Geben Sie für das vertrauenswürdige Zertifikatprofil einen **Namen** und eine **Beschreibung** ein.
-4. Wählen Sie bei der **Plattform** die Geräteplattform für dieses vertrauenswürdige Zertifikat aus: 
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie im Bereich **Intune** die Option **Gerätekonfiguration** aus.
+2. Klicken Sie im Bereich **Gerätekonfiguration** auf **Verwalten** > **Profile**.
+3. Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
+4. Geben Sie im Bereich **Profil erstellen** einen **Namen** und eine **Beschreibung** für das vertrauenswürdige Zertifikatprofil ein.
+5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform für das vertrauenswürdige Zertifikat aus. Derzeit können Sie eine der folgenden Plattformen für Zertifikateinstellungen auswählen:
 
     - **Android**
     - **Android for Work**
@@ -98,15 +101,13 @@ Erstellen Sie ein vertrauenswürdiges Zertifikatprofil, bevor Sie ein SCEP- oder
     - **Windows 8.1 und höher**
     - **Windows 10 und höher**
 
-5. Wählen Sie bei **Profiltyp** die Option **Vertrauenswürdiges Zertifikat** aus. Navigieren Sie zu dem Zertifikat (*CertificateName*.cer), das Sie zuvor gespeichert haben (in Schritt 2).
-
-    Wählen Sie (nur bei Windows 8.1- und Windows 10-Geräten) den **Zielspeicher** für das vertrauenswürdige Zertifikat aus:  
-
+6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Vertrauenswürdiges Zertifikat** aus.
+7. Navigieren Sie zu dem Zertifikat, das Sie in Aufgabe 1 gespeichert haben, und klicken Sie dann auf **OK**.
+8. Wählen Sie (nur bei Windows 8.1- und Windows 10-Geräten) den **Zielspeicher** für das vertrauenswürdige Zertifikat aus:
     - **Computerzertifikatspeicher – Stamm**
     - **Computerzertifikatspeicher – Zwischenspeicher**
     - **Benutzerzertifikatspeicher – Zwischenspeicher**
-
-6. Wählen Sie **OK** aus, um Ihre Änderungen zu speichern, und anschließend **Erstellen**, um Ihr neues Profil zu speichern.
+8. Klicken Sie anschließend auf **OK**, navigieren Sie wieder zum Bereich **Profil erstellen**, und klicken Sie auf **Erstellen**.
 
 Das Profil wird erstellt und wird in der Liste angezeigt. Informationen zur Zuweisung dieses Profils zu Gruppen finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md).
 

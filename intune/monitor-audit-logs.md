@@ -4,17 +4,17 @@ description: "Erfahren Sie, wie Sie Überwachungsprotokolle, die Intune-Aktivit�
 keywords: 
 author: dougeby
 manager: dougeby
-ms.date: 12/12/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: 9f514e6d2dec268efe99f682bc3ef4e63ec53c02
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 55499bc8126958918ac2494fc86059eb3d331c69
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Überwachungsprotokolle für Intune-Aktivitäten
 Überwachungsprotokolle stellen Ihnen einen Datensatz von Aktivitäten zur Verfügung, die eine Änderung in Microsoft Intune bewirken. Sie können Aktionen oder Remotetasks erstellen, aktualisieren (bearbeiten), löschen und zuweisen sowie überprüfbare Überwachungsereignisse generieren. Sie können Überwachungsprotokolle für die meisten Intune-Workloads überprüfen. Die Überwachung ist standardmäßig für alle Kunden aktiviert und kann nicht deaktiviert werden. Überwachungsereignisse werden seit der Einführung des Features im Dezember 2017 aufgezeichnet; Ereignisse vor diesem Datum sind nicht verfügbar.
@@ -28,8 +28,8 @@ Benutzer mit den folgenden Berechtigungen können Überwachungsprotokolle überp
 ## <a name="audit-logs-for-intune-workloads"></a>Überwachungsprotokolle für Intune-Workloads
 Sie können für jede Intune-Workload Überwachungsprotokolle in der Überwachungsgruppe einsehen.  
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
-3. Wählen Sie auf dem Blatt **Intune** die Workload, für die Sie Überwachungsprotokolle überprüfen möchten.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+3. Wählen Sie im Bereich **Intune** die Workload, für die Sie Überwachungsprotokolle überprüfen möchten, z.B. **Geräte**.
 4. Wählen Sie für die Workload in der Gruppe **Überwachung** die Option **Überwachungsprotokolle**.
 
 ## <a name="review-audit-events"></a>Überprüfen von Überwachungsereignissen
@@ -39,6 +39,7 @@ Ein Überwachungsprotokoll verfügt über eine Standardlistenansicht, in der die
 
 - Datum und Uhrzeit des Auftretens
 - Initiiert von (Akteur)
+- Anwendungsname
 - Aktivität
 - Ziel(e)
 - Category
@@ -55,7 +56,7 @@ Wenn Sie auf ein Element in der Listenansicht klicken, erhalten Sie alle verfüg
 
 
 ## <a name="filter-audit-events"></a>Filtern von Überwachungsereignissen
-Jede Workload verfügt über ein Menüelement, das die Kategorie der mit diesem Blatt verknüpften Überwachungsereignisse vorfiltert. Mit einer separaten Filteroption können Sie zu verschiedenen Kategorien wechseln und Details zu Ereignisaktionen innerhalb dieser Kategorie anzeigen. Sie können nach dem UPN suchen (z.B. nach dem Benutzer, der die Aktion ausgeführt hat). Ein Datumsbereichsfilter bietet die Optionen „24 Stunden“, „7 Tage“ oder „30 Tage“ an. Standardmäßig werden die letzten 30 Tage der Überwachungsereignisse angezeigt.
+Jede Workload verfügt über ein Menüelement, das die Kategorie der mit diesem Bereich verknüpften Überwachungsereignisse vorfiltert. Mit einer separaten Filteroption können Sie zu verschiedenen Kategorien wechseln und Details zu Ereignisaktionen innerhalb dieser Kategorie anzeigen. Sie können nach dem UPN suchen (z.B. nach dem Benutzer, der die Aktion ausgeführt hat). Ein Datumsbereichsfilter bietet die Optionen „24 Stunden“, „7 Tage“ oder „30 Tage“ an. Standardmäßig werden die letzten 30 Tage der Überwachungsereignisse angezeigt.
 
 ## <a name="use-graph-api-to-retrieve-audit-events"></a>Abrufen von Überwachungsereignissen mithilfe der Graph-API
 Einzelheiten darüber, wie Sie mithilfe der Graph-API Überwachungsereignissen von bis zu einem Jahr abrufen, finden Sie unter [List auditEvents](https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/api/intune_auditing_auditevent_list).

@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/5/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e01ca43cc42ee7228e42cd3b0176475905ef566
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d2839a11f95614add0691813a9fdf89dba0a2d5d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Die Einrichtung des Pro-App-VPN in Intune für iOS-Geräte
 
@@ -41,13 +41,14 @@ Exportieren Sie das Zertifikat, und fügen Sie die CA hinzu.
 
 Erstellen oder wählen Sie eine vorhandene Gruppe in Azure Active Directory (Azure AD), die die Mitglieder enthalten soll, die Zugriff auf das Pro-App-VPN besitzen.
 
-1. Öffnen Sie das Azure-Portal. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 2. Wählen Sie **Gruppen** aus, und klicken Sie dann auf **Neue Gruppe**.
-3. Geben Sie den **Namen** der Gruppe ein. 
-4. Gibt die **Beschreibung** der Gruppe an. 
+3. Wählen Sie einen **Gruppentyp** für die Gruppe aus. 
+3. Geben Sie den **Gruppennamen** der Gruppe ein. 
+4. Geben Sie die **Gruppenbeschreibung** der Gruppe ein. 
 5. Legen Sie den **Mitgliedschaftstyp** auf **Zugewiesen** fest.
-6. Wählen Sie für **Office-Features aktivieren?** die Option **Nein**.
-7. Suchen Sie auf dem Blatt **Mitglieder** nach dem VPN-Benutzer anhand dessen Namens oder E-Mail-Adresse.
+7. Suchen Sie im Bereich **Mitglieder** anhand des Namens oder der E-Mail-Adresse nach den VPN-Benutzern.
 8. Wählen Sie jeden Benutzer aus, und klicken Sie auf **Auswählen**.
 9. Klicken Sie auf **Erstellen**.
 
@@ -55,14 +56,15 @@ Erstellen oder wählen Sie eine vorhandene Gruppe in Azure Active Directory (Azu
 
 Importieren Sie das Stammzertifikat des VPN-Servers, das von der Zertifizierungsstelle ausgegeben wurde, in ein in Intune erstelltes Profil. Das Profil des vertrauenswürdigen Zertifikats weist das iOS-Gerät an, automatisch der CA zu vertrauen, die der VPN-Server präsentiert.
 
-1. Öffnen Sie das Azure-Portal. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 2. Wählen Sie **Gerätekonfiguration** aus, und klicken Sie dann auf **Profile**.
-3. Klicken Sie auf **+ Profil erstellen**. Führen Sie unter **Profil erstellen** Folgendes durch:
+3. Klicken Sie auf **Profil erstellen**. Führen Sie unter **Profil erstellen** Folgendes durch:
     1. Geben Sie den **Namen** ein.
     2. Geben Sie die **Beschreibung** ein.
     3. Wählen Sie **iOS** für die **Plattform** aus.
     4. Wählen Sie **vertrauenswürdiges Zertifikat** für den **Profiltyp**.
-4. Klicken Sie auf das Ordnersymbol, und navigieren Sie zu Ihrem VPN-Zertifikat (CER-Datei), das Sie von Ihrer VPN-Verwaltungskonsole exportiert haben. Auf "OK" klicken
+4. Klicken Sie auf das Ordnersymbol, und navigieren Sie zu Ihrem VPN-Zertifikat (CER-Datei), das Sie von Ihrer VPN-Verwaltungskonsole exportiert haben. Klicken Sie auf **OK**.
 5. Klicken Sie auf **Erstellen**.
 
     ![Erstellen eines vertrauenswürdigen Zertifikatprofils](media\vpn-per-app-create-trusted-cert.png)
@@ -71,9 +73,10 @@ Importieren Sie das Stammzertifikat des VPN-Servers, das von der Zertifizierungs
 
 Das Profil des vertrauenswürdigen Stammzertifikats ermöglicht, dass iOS den VPN-Server automatisch als vertrauenswürdig einstuft. Das SCEP-Zertifikat stellt Anmeldeinformationen aus dem iOS-VPN-Client an den VPN-Server bereit. Das Zertifikat lässt zu, dass das Gerät im Hintergrund eine Authentifizierung durchführt, ohne dass das iOS-Gerät den Benutzer zur Eingabe eines Benutzernamens und Kennworts auffordert. 
 
-1. Öffnen Sie das Azure-Portal. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus. 
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 2. Wählen Sie **Gerätekonfiguration** aus, und klicken Sie dann auf **Profile**.
-3. Klicken Sie auf **+ Profil erstellen**. Führen Sie unter **Profil erstellen** Folgendes durch:
+3. Klicken Sie auf **Profil erstellen**. Führen Sie unter **Profil erstellen** Folgendes durch:
     1. Geben Sie den **Namen** ein.
     2. Geben Sie die **Beschreibung** ein.
     3. Wählen Sie **iOS** für die **Plattform** aus.
@@ -97,9 +100,10 @@ Das Profil des vertrauenswürdigen Stammzertifikats ermöglicht, dass iOS den VP
 
 Das VPN-Profil enthält das SCEP-Zertifikat, das die Anmeldeinformationen des Clients, die Verbindungsinformationen für das VPN und das Pro-App-VPN-Flag enthält. So können Sie die Pro-App-VPN-Funktion für den Gebrauch durch die iOS-Anwendung aktivieren.
 
-1. Öffnen Sie das Azure-Portal. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 2. Wählen Sie **Gerätekonfiguration** aus, und klicken Sie dann auf **Profile**.
-3. Klicken Sie auf **+ Profil erstellen**. Führen Sie unter **Profil erstellen** Folgendes durch:
+3. Klicken Sie auf **Profil erstellen**. Führen Sie unter **Profil erstellen** Folgendes durch:
     1. Geben Sie den **Namen** ein.
     2. Geben Sie die **Beschreibung** ein.
     3. Wählen Sie **iOS** für die **Plattform** aus.
@@ -111,7 +115,7 @@ Das VPN-Profil enthält das SCEP-Zertifikat, das die Anmeldeinformationen des Cl
     4. Wählen Sie das SCEP-Zertifikat unter **Authentifizierungszertifikat**, und klicken Sie auf **OK**.
     5. Wählen Sie Ihr VPN für den **Verbindungstyp** aus.
     6. Konfigurieren Sie bei Bedarf die Attribute für das VPN.
-    7. Wählen Sie „Tunneln“ für **Disable Split** (Teilen deaktivieren) aus.
+    7. Wählen Sie **Getrenntes Tunneln deaktivieren** aus.
 5. Klicken Sie auf **Automatisches VPN**. Führen Sie unter **Automatisches VPN** Folgendes durch:
     1. Wählen Sie **Pro-App-VPN** für den **Typ des automatischen VPN** aus.
     2. Geben Sie die URL für das VPN ein, und klicken Sie auf **Hinzufügen**.
@@ -126,19 +130,21 @@ Das VPN-Profil enthält das SCEP-Zertifikat, das die Anmeldeinformationen des Cl
 
 Nachdem Sie Ihr VPN-Profil hinzugefügt haben, ordnen Sie die App und Azure AD-Gruppe dem Profil zu.
 
-1. Öffnen Sie das Azure-Portal. Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
 2. Wählen Sie **Mobile Apps** aus.
 3. Klicken Sie auf **Apps**.
 4. Wählen Sie die App aus der Liste der Apps aus.
 5. Klicken Sie auf **Zuweisungen**.
-6. Klicken Sie auf **Gruppen auswählen**, und wählen Sie anschließend die Gruppe aus, die Sie zuvor definiert haben. Klicken Sie auf **Auswählen**.
-7. Wählen Sie für den **Typ** auf dem Blatt **Zuweisungen** die Option **Erforderlich** aus.
-8. Wählen Sie Ihre VPN-Definition für die **VPNS** aus.
+6. Klicken Sie auf **Gruppe hinzufügen**.
+7. Wählen Sie im Bereich **Gruppe hinzufügen** für den **Zuweisungstyp** die Option **Erforderlich** aus.
+6. Wählen Sie die Gruppe aus, die Sie zuvor definiert haben, und aktivieren Sie die Option**Diese App als erforderlich festlegen**.
+8. Wählen Sie Ihre VPN-Definition für das **VPN** aus.
  
     > [!NOTE]  
     > In einigen Fällen benötigt die VPN-Definition bis zu einer Minute, um den Wert abzurufen. Warten Sie etwa 3–5 Minuten, bevor Sie auf **Speichern** klicken.
 
-9. Klicken Sie auf **Speichern**.
+9. Klicken Sie auf **OK** und dann auf **Speichern**.
 
     ![Zuordnen einer App zu einem VPN](media\vpn-per-app-app-to-vpn.png)
 
