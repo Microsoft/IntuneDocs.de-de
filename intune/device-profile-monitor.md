@@ -1,25 +1,25 @@
 ---
-title: "Überwachen von Geräteprofilen mit Intune"
-titlesuffix: Azure portal
-description: "In diesem Artikel erfahren Sie, wie Sie zugewiesene Intune-Geräteprofile überwachen."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Überwachen von Geräteprofilen mit Intune
+titlesuffix: Microsoft Intune
+description: In diesem Artikel erfahren Sie, wie Sie zugewiesene Microsoft Intune-Geräteprofile überwachen.
+keywords: ''
+author: vhorne
+ms.author: victorh
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 864ea278cc30a0f0a5aa26b08f7b13908b46ed03
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 7483d2568ef3a43b7774916ef0a5f8f9b4540e4e
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>So überwachen Sie Geräteprofile in Microsoft Intune
 
@@ -29,9 +29,9 @@ Sie können den Zuweisungsstatus von Intune-Geräteprofilen auf zwei Arten über
 
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
-2. Wählen Sie auf dem Blatt **Gerätekonfiguration** im Abschnitt **verwalten** **Profile** aus.
+2. Klicken Sie auf dem Blatt **Gerätekonfiguration** im Abschnitt **Verwalten** auf **Profile**.
 2. Wählen Sie auf dem Blatt mit der Liste der Profile das Profil aus, das Sie verwalten möchten, und klicken Sie dann auf eine der folgenden Optionen:
     - Wählen Sie auf dem Blatt <*Profilname*> **Gerätekonfigurationsprofil** die Option **Übersicht** aus, um grundlegende Informationen zum Profil und seinen Zuweisungen anzuzeigen.
     - Wählen Sie auf dem Blatt <*Profilname*> **Gerätekonfigurationsprofil** die Option **Zuweisungen** aus, um ausführlichere Informationen zum Profil und seinen Zuweisungen anzuzeigen.

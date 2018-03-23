@@ -1,34 +1,35 @@
 ---
-title: "Data Warehouse-Zeitachse für die Benutzerentität | Microsoft-Dokumentation"
-description: Das Intune Data Warehouse stellt Benutzer auf einer Zeitachse dar.
+title: Data Warehouse-Zeitachse für die Benutzerentität
+titlesuffix: Microsoft Intune
+description: Erfahren Sie, wie das Intune Data Warehouse Benutzer auf einer Zeitachse darstellt.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e72f60b9ad604f756f74b1ba7cbbde7e5c2ab9f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7448954fce2b81c5783845c9fbdaaebf43fdf326
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>Darstellung der Benutzerlebensdauer im Intune-Data Warehouse
+# <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Darstellung der Benutzerlebensdauer im Microsoft Intune-Data Warehouse
 
 Anhand des Monats der Datenmomentaufnahmen, die im Intune Data Warehouse gespeichert werden, können Sie Fragen zu zeitbasierten Trends beantworten. Sie können sich z.B. die Anzahl von Benutzern ansehen, die im Laufe eines Monats hinzugefügt werden. Sie können auch die Anzahl von Benutzern abfragen, die aus dem System entfernt wurden.
 
-Um diese Daten bereitzustellen, speichert das Data Warehouse Verlaufsinformationen. Das bedeutet, dass es die Lebensdauer einer Entität verfolgt. Das Warehouse zeichnet auf, wann eine Entität erstellt wurde, wann sich der Zustand der Entität geändert hat und wann eine Entität gelöscht wird. Anhand des Verlaufs, der durch tägliche Momentaufnahmen quantitativer Messungen erfasst wird, können Sie einen Tag mit dem vorherigen Tag vergleichen und so weiter.
+Um diese Erkenntnis bereitzustellen, speichert das Data Warehouse Verlaufsinformationen. Das Data Warehouse kann die Lebensdauer einer Entität verfolgen. Das Warehouse zeichnet auf, wann eine Entität erstellt wurde, wann sich der Status der Entität geändert hat und wann eine Entität gelöscht wird. Anhand des Verlaufs, der durch tägliche Momentaufnahmen quantitativer Messungen erfasst wird, können Sie einen Tag mit dem vorherigen Tag vergleichen und so weiter.
 
 Die Arbeit mit der Lebensdauer von Entitäten kann verwirrend sein, da die Entitäten ihren Zustand ändern. Wenn Sie daher eine Momentaufnahme an Tag 30 betrachten, liegt ein Benutzerdatensatz in den Daten möglicherweise nicht im aktiven Zustand vor. An den Tagen 29 und 28 ist der Datensatz der Entität jedoch möglicherweise aktiv. Vor Tag 28 war der Benutzer vielleicht noch gar nicht vorhanden.
 
-Dies wird klarer, wenn wir die Lebensdauer einer Entität durchlaufen.
+Dieses Szenario wird klarer, wenn Sie die Lebensdauer einer Entität durchlaufen.
 
 Angenommen, einem Benutzer **John Smith** wird am 01.06.2017 eine Lizenz zugewiesen. Die Tabelle **Benutzer** weist in diesem Fall den folgenden Eintrag auf: 
  
@@ -75,5 +76,5 @@ Eine Person, die nur die derzeit vorhandenen Dimensionsentitäten anzeigen möch
 
 ## <a name="next-steps"></a>Nächste Schritte
 
- - Weitere Informationen zur Entität **Aktueller Benutzer** finden Sie unter [Referenz für die Entität „Aktueller Benutzer“](reports-ref-current-user.md).
- - Weitere Informationen zur Entität **Benutzer** finden Sie unter [Referenz für die Entität „Benutzer“](reports-ref-user.md).
+ - Weitere Informationen zur Entität **Aktueller Benutzer** finden Sie unter [Verweis für die Entität „Aktueller Benutzer“](reports-ref-current-user.md).
+ - Weitere Informationen zur Entität **Benutzer** finden Sie unter [Verweis für die Benutzerentität](reports-ref-user.md).

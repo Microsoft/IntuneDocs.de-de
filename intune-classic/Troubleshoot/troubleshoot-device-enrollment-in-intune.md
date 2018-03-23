@@ -1,25 +1,25 @@
 ---
-title: "Behandlung von Problemen bei der Geräteregistrierung"
-description: "Vorschläge zur Problembehandlung bei Problemen mit der Geräteregistrierung."
-keywords: 
+title: Behandlung von Problemen bei der Geräteregistrierung
+description: Vorschläge zur Problembehandlung bei Problemen mit der Geräteregistrierung.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 09/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
-ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
+ms.openlocfilehash: 0293614e2654c16b6fd5fd43d40331453b332e3c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Behandlung von Problemen bei der Geräteregistrierung bei Intune
 
@@ -70,7 +70,7 @@ Administratoren können Geräte im Azure Active Directory-Portal löschen.
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>So löschen Sie Geräte im Azure Active Directory-Portal
 
-1.  Navigieren Sie zu [http://aka.ms/accessaad](http://aka.ms/accessaad), oder klicken Sie unter [https://portal.office.com](https://portal.office.com) auf **Verwaltung** &gt; **Azure AD**.
+1.  Navigieren Sie zu [http://aka.ms/accessaad](http://aka.ms/accessaad), oder wählen Sie **Administrator** &gt; **Azure AD** von [https://portal.office.com](https://portal.office.com) aus.
 
 2.  Melden Sie sich mit Ihrer Organisations-ID über den Link im linken Bereich der Seite an.
 
@@ -99,7 +99,7 @@ Administratoren können Geräte im Azure Active Directory-Portal löschen.
 
 1.  Entfernen Sie die Intune-Unternehmensportal-App von dem Gerät.
 
-2.  Öffnen Sie auf dem Gerät den Browser, navigieren Sie zu [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com), und versuchen Sie eine Benutzeranmeldung.
+2.  Öffnen Sie auf dem Gerät den Browser, navigieren Sie zu [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com), und versuchen Sie sich als Benutzer anzumelden.
 
 3.  Wenn sich der Benutzer nicht anmelden kann, lassen Sie ihn ein anderes Netzwerk ausprobieren.
 
@@ -165,8 +165,8 @@ In der folgenden Tabelle sind Fehler aufgeführt, die bei der Registrierung von 
 
 |Fehlermeldung|Problem|Lösung|
 |---|---|---|
-|**IT-Administrator muss eine Lizenz für den Zugriff zuweisen**<br>Ihr IT-Administrator hat Ihnen keinen Zugriff für die Verwendung dieser App erteilt. Wenden Sie sich an Ihren IT-Administrator, oder versuchen Sie es später erneut.|Das Gerät kann nicht registriert werden, da das Benutzerkonto nicht über die erforderliche Lizenz verfügt.|Bevor Benutzer ihre Geräte registrieren können, müssen Sie die nötigen Lizenzen zugewiesen bekommen. Diese Meldung bedeutet, dass der Benutzer den falschen Lizenztyp für die festgelegte Autorität für die Verwaltung mobiler Geräte hat. Beispielsweise wird dieser Fehler angezeigt, wenn Intune als Autorität für die Verwaltung mobiler Geräte festgelegt wurde und der Benutzer eine System Center 2012 R2 Configuration Manager-Lizenz verwendet.<br><br>Weitere Informationen finden Sie unter [Zuweisen von Intune-Lizenzen zu Benutzerkonten](/intune/licenses-assign.md).
-|**Der IT-Administrator muss die MDM-Autorität festlegen**<br>Es sieht so aus, als hätte Ihr IT-Administrator keine MDM-Autorität festgelegt. Wenden Sie sich an Ihren IT-Administrator, oder versuchen Sie es später erneut.|Die Autorität für die Verwaltung mobiler Geräte wurde nicht festgelegt.|Die Autorität für die Verwaltung mobiler Geräte wurde in Intune nicht festgelegt. Sehen Sie sich die Informationen zum [Festlegen der Autorität für die Verwaltung mobiler Geräte](/intune/mdm-authority-set.md) an.|
+|**IT-Administrator muss eine Lizenz für den Zugriff zuweisen**<br>Ihr IT-Administrator hat Ihnen keinen Zugriff für die Verwendung dieser App erteilt. Wenden Sie sich an Ihren IT-Administrator, oder versuchen Sie es später erneut.|Das Gerät kann nicht registriert werden, da das Benutzerkonto nicht über die erforderliche Lizenz verfügt.|Bevor Benutzer ihre Geräte registrieren können, müssen Sie die nötigen Lizenzen zugewiesen bekommen. Diese Meldung bedeutet, dass der Benutzer den falschen Lizenztyp für die festgelegte Autorität für die Verwaltung mobiler Geräte hat. Beispielsweise wird dieser Fehler angezeigt, wenn Intune als Autorität für die Verwaltung mobiler Geräte festgelegt wurde und der Benutzer eine System Center 2012 R2 Configuration Manager-Lizenz verwendet.<br><br>Weitere Informationen finden Sie unter [Zuweisen von Intune-Lizenzen zu Benutzerkonten](/intune/licenses-assign).
+|**Der IT-Administrator muss die MDM-Autorität festlegen**<br>Es sieht so aus, als hätte Ihr IT-Administrator keine MDM-Autorität festgelegt. Wenden Sie sich an Ihren IT-Administrator, oder versuchen Sie es später erneut.|Die Autorität für die Verwaltung mobiler Geräte wurde nicht festgelegt.|Die Autorität für die Verwaltung mobiler Geräte wurde in Intune nicht festgelegt. Sehen Sie sich die Informationen zum [Festlegen der Autorität für die Verwaltung mobiler Geräte](/intune/mdm-authority-set) an.|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Geräte können nicht beim Intune-Dienst eingecheckt werden und werden als in der Intune-Administratorkonsole als „Fehlerhaft“ angezeigt.
@@ -257,7 +257,7 @@ Um das Problem zu beheben, importieren Sie die Zertifikate wie folgt in die pers
 10. Starten Sie die AD FS-Server neu.
 11. Wiederholen Sie die oben stehenden Schritte auf allen AD FS- und Proxyservern.
 
-Um eine ordnungsgemäße Installation des Zertifikats sicherzustellen, können Sie das auf der Seite [https://www.digicert.com/help/](https://www.digicert.com/help/) erhältliche Diagnosetool verwenden. Geben Sie unter **Serveradresse** den FQDN Ihres AD FS-Servers (IE: sts.contso.com) ein, und klicken Sie auf **Server überprüfen**.
+Um eine ordnungsgemäße Installation des Zertifikats zu gewährleisten, können Sie das auf der Seite [https://www.digicert.com/help/](https://www.digicert.com/help/) erhältliche Diagnosetool verwenden. Geben Sie unter **Serveradresse** den FQDN Ihres AD FS-Servers (IE: sts.contso.com) ein, und klicken Sie auf **Server überprüfen**.
 
 **So überprüfen Sie, ob das Zertifikat richtig installiert wurde**
 
@@ -332,7 +332,7 @@ Weitere Informationen finden Sie unter [Best practices for securing Active Direc
 
 2.  Stellen Sie sicher, dass das Gerät nicht bereits bei einem anderen MDM-Anbieter registriert ist oder dass nicht bereits ein Verwaltungsprofil darauf installiert ist.
 
-3.  Wechseln Sie zu [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com), und versuchen Sie, das Profil zu installieren, wenn Sie dazu aufgefordert werden.
+3.  Navigieren Sie zu [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com), und versuchen Sie das Profil zu installieren, wenn Sie dazu aufgefordert werden.
 
 4.  Vergewissern Sie sich, dass Safari für iOS der Standardbrowser ist und dass Cookies aktiviert sind.
 
@@ -377,7 +377,7 @@ Demnächst werden Beispiele hinzugefügt, die zeigen, wonach in diesen Protokoll
 
 
 ### <a name="other-ios-enrollment-errors"></a>Weitere iOS-Registrierungsfehler
-Eine Liste von iOS-Registrierungsfehlern finden Sie in unserer Gerät-/Benutzerdokumentation unter [Es werden Fehlermeldungen angezeigt, wenn Sie versuchen, Ihr Gerät bei Intune zu registrieren](/intune-user-help/using-your-iOS-or-macOS-device-with-intune).
+In unserer Dokumentation unter [Troubleshooting iOS device enrollment problems in Microsoft Intune (Behandeln von Problemen bei der iOS-Geräteregistrierung in Microsoft Intune)](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) finden Sie eine Liste der Fehler bei der iOS-Registrierung.
 
 ## <a name="pc-issues"></a>PC-Probleme
 

@@ -1,23 +1,24 @@
 ---
 title: Vorlagen und Ressourcen zum Planen und Entwerfen der Intune-Bereitstellung
-description: "Links zu Planungsvorlagen und zusätzlichen Intune-Informationen, die während der Planung und Realisierung der Intune-Bereitstellung nützlich sein können."
-keywords: 
-author: arob98
-ms.author: angrobe
+titlesuffix: Microsoft Intune
+description: Links zu Planungsvorlagen und zusätzlichen Intune-Informationen, die während der Planung und Realisierung der Microsoft Intune-Bereitstellung nützlich sein können.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8a5a819fc8d081330be60e8b83944e326baaba2b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 67476afbd00cf54162b316e6c38967bccbed34ad
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Zusätzliche Ressourcen für die Planung Ihrer Intune-Bereitstellung
 
@@ -50,7 +51,7 @@ Die folgenden Ressourcen enthalten zusätzliche Informationen, die während der 
 
 -   [Intune-Blog](https://blogs.technet.microsoft.com/enterprisemobility/): Beiträge, die erläutern, wie Intune sich in das übergeordnete Enterprise Mobility-Szenario einfügt.
 
--   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter/default.aspx): Lernen Sie die Herangehensweise von Microsoft bei Sicherheit, Datenschutz, Konformität und Transparenz in allen seinen Cloudprodukten und -diensten kennen.
+-   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter): Lernen Sie die Herangehensweise von Microsoft bei Sicherheit, Datenschutz, Konformität und Transparenz in allen seinen Cloudprodukten und -diensten kennen.
 
 -   [Intune User Voice](http://microsoftintune.uservoice.com/): Wünschen Sie sich ein Feature, oder möchten Sie mit anderen Kunden über Features abstimmen? Übermitteln Sie über User Voice Ihr Feedback zu Intune. Wir hören Ihnen zu.
 

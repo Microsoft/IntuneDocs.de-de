@@ -1,24 +1,24 @@
 ---
 title: Microsoft Intune App SDK-Cordova-Plug-In
-description: 
+description: Das Intune App SDK-Cordova-Plug-In ermöglicht es Entwicklern, Features der Intune-App und Datenschutzfeatures in die Cordova-basierte App zu integrieren.
 keywords: sdk, Cordova, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/02/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Microsoft Intune App SDK-Cordova-Plug-In
 
@@ -36,7 +36,7 @@ Sie werden feststellen, dass Sie die meisten SDK-Funktionen aktivieren können, 
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 
-* Das Plug-In funktioniert unter den Betriebssystemen Windows, Mac und Linux.
+* Das Plug-In funktioniert unter Windows, Mac und Linux.
 * Das Plug-In funktioniert für Android-Apps mit `minSdkVersion` >= 14 und `targetSdkVersion` <= 24.
 * Das Plug-In funktioniert für iOS-Apps, die für iOS 9.0 und höher vorgesehen sind.
 
@@ -64,7 +64,7 @@ Cordova-Apps, die mit dem Intune App SDK Cordova Plug-In erstellt wurden, könne
 * Es wird Version 0.8.0+ des [Azure Active Directory Authentifizierungsbibliothek Plug-Ins (ADAL) für Cordova](https://github.com/AzureAD/azure-activedirectory-library-for-cordova) benötigt.
 
 > [!NOTE]
-> Aufgrund eines Apache Cordova-Bugs führen die [hier](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22) aufgelisteten Apps, die schon über die Plug-In-Abhängigkeit verfügen, das Upgrade auf die benötigte Version nicht automatisch aus.
+> Aufgrund eines Apache Cordova-Fehlers führen die [hier](https://issues.apache.org/jira/browse/CB-6227?jql=text%20~%20%22plugin%20dependency%22) aufgelisteten Apps, die schon über die Plug-In-Abhängigkeit verfügen, das Upgrade auf die benötigte Version nicht automatisch aus.
 
 
 
@@ -96,7 +96,7 @@ Dieses Setup unterstützt nur ein einziges Ziel. Wenn es mehrere Ziele gibt, fü
 
 1. Importieren Sie dieses Plug-In mit den aktuellsten Cordova-Tools. Das Plug-In wird automatisch als ein `after_compile`-Schritt aufgerufen.
 
-2. Das Plug-In erstellt am Ende des Buildprozesses eine Intune-fähige Version einer erstellten APK-Datei (Android API 14+). Das Buildausgabe wird eine `[Project]-intunewrapped-[Build_Configuration].apk` (z.B. `helloWorld-intunewrapped-debug.apk`) enthalten.
+2. Das Plug-In erstellt am Ende des Erstellungsprozesses eine Intune-fähige Version einer erstellten APK-Datei (Android-API 14 und höher). Die Buildausgabe enthält `[Project]-intunewrapped-[Build_Configuration].apk` (z.B. `helloWorld-intunewrapped-debug.apk`).
 
 > [!NOTE]
 > Das Plug-In unterstützt nur Gradle-Builds.
@@ -118,7 +118,7 @@ Das Plug-In erkennt automatisch Signierungsinformationen, die Sie an folgenden S
 
 Lesen Sie die [Cordova-Gradle-Signierungsinformationen](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#using-gradle), um mehr über das erwartete Format zu erfahren.
 
-Wir unterstützen derzeit nicht die Möglichkeit, Signierungsinformationen in `build.json` oder an beliebigen Speicherorten bereitzustellen, die dem Cordova-Build über Parameter bereitgestellt werden.
+Intune unterstützt derzeit nicht die Möglichkeit, Signierungsinformationen in `build.json` oder an beliebigen Speicherorten bereitzustellen, die dem Cordova-Build über Parameter bereitgestellt werden.
 
 ## <a name="debugging-from-visual-studio"></a>Debugging aus Visual Studio
 
@@ -129,8 +129,8 @@ Nachdem die App zum ersten Mal gestartet wurde, sollten Sie ein Dialogfeld sehen
 ### <a name="android"></a>Android
 
 * Die MultiDex Unterstützung ist unvollständig.
-* Die App muss `minSdkVersion` von 14 und `targetSdkVersion` von 24 oder niedriger haben. Wir unterstützen derzeit keine Apps für API 25.
-* Wir können keine Apps erneut signieren, die mit dem V2-Signaturschema signiert wurden. Wenn V2-signierte Apps von dem Plug-In umschlossen werden, ist die umschlossene Ausgabe-APK unsigniert.
+* Die App muss `minSdkVersion` von 14 und `targetSdkVersion` von 24 oder niedriger haben. Intune unterstützt derzeit keine Apps für API 25.
+* Intune kann keine Apps erneut signieren, die mit dem V2-Signaturschema signiert wurden. Wenn V2-signierte Apps von dem Plug-In umschlossen werden, ist die umschlossene Ausgabe-APK unsigniert.
 *
   * Sie können die Cordova-Standard-V2-Signierung deaktivieren, indem Sie Ihrer `build-extras.gradle`-Datei Folgendes hinzufügen:
 

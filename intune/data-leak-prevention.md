@@ -1,25 +1,27 @@
 ---
-title: "Verhindern von Datenverlusten auf nicht verwalteten Geräten"
-description: "Ermöglichen Sie den Zugriff auf Unternehmensdaten auf Geräten, und schützen Sie Daten vor Datenverlusten."
-keywords: "Datenschutz, Verluste verhindern, Gerät, O365, Office 365"
-author: arob98
+title: Verhindern von Datenverlusten auf nicht verwalteten Geräten
+titlesuffix: Microsoft Intune
+description: Ermöglichen Sie den Zugriff auf Unternehmensdaten auf Geräten, und schützen Sie Daten vor Datenverlusten mithilfe von Microsoft Intune.
+keywords: Datenschutz, Verluste verhindern, Gerät, O365, Office 365
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b1512c3a-3bbd-4111-a0df-c874a0a335df
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3b917b3718a7630c4a556a41c551aa5d76f4b4aa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 964422f113e6a722c1134cf49b1b28b494632872
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="prevent-data-leaks-on-non-managed-devices"></a>Verhindern von Datenverlusten auf nicht verwalteten Geräten
+# <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Verhindern von Datenverlusten auf nicht verwalteten Geräten mit Microsoft Intune
 
 Wenn Sie Zugriff auf Unternehmensdaten gewähren, die von Office 365 gehostet werden, können Sie steuern, wie Benutzer Daten freigeben und speichern, ohne beabsichtigte oder versehentliche Datenverluste zu riskieren. Microsoft Intune stellt App-Schutzrichtlinien bereit, die Sie festlegen, um Ihre Unternehmensdaten auf benutzereigenen Geräten zu sichern. Die Geräte müssen nicht beim Intune-Dienst registriert werden. 
 

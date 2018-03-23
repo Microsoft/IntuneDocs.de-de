@@ -1,25 +1,25 @@
 ---
-title: "Einrichten der Registrierung von iOS-Geräten über das Apple School Manager-Programm"
-titlesuffix: Azure portal
-description: "Erfahren Sie, wie Sie das Apple School Manager-Programm für die Registrierung von unternehmenseigenen iOS-Geräten bei Intune einrichten (neue Benutzeroberfläche)."
-keywords: 
+title: Einrichten der Registrierung von iOS-Geräten über das Apple School Manager-Programm
+titleSuffix: Microsoft Intune
+description: Erfahren Sie, wie Sie das Apple School Manager-Programm für die Registrierung von unternehmenseigenen iOS-Geräten bei Intune einrichten (neue Benutzeroberfläche).
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6c9ef9355299a18833999c1c4eee941a0b6c68de
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 4054eb3804c159e6256b07bf89b8ccd93f7b2e8e
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Aktivieren der iOS-Geräteregistrierung mit Apple School Manager
 
@@ -140,7 +140,7 @@ Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil fü
     | **Wiederherstellen** | Falls aktiviert, fordert der Setup-Assistent während der Aktivierung die iCloud-Sicherung an. |
     | **iCloud und Apple-ID** | Falls aktiviert, fordert der Setup-Assistent den Benutzer auf, sich mit einer Apple-ID anzumelden, und im Bildschirm „Apps und Daten“ kann das Gerät von einer iCloud-Sicherung wiederhergestellt werden. |
     | **Geschäftsbedingungen** | Falls aktiviert, fordert der Setup-Assistenten während der Aktivierung den Benutzer auf, die Apple-Geschäftsbedingungen zu akzeptieren. |
-    | **Touch ID** | Falls aktiviert, fordert der Setup-Assistent während der Aktivierung zur Ausführung dieses Dienst auf. |
+    | **Touch ID** | Falls aktiviert, fordert der Setup-Assistent während der Aktivierung zur Ausführung dieses Dienstes auf. |
     | **Apple Pay** | Falls aktiviert, fordert der Setup-Assistent während der Aktivierung zur Ausführung dieses Dienstes auf. |
     | **Zoom** | Falls aktiviert, fordert der Setup-Assistent während der Aktivierung zur Ausführung dieses Dienstes auf. |
     | **Siri** | Falls aktiviert, fordert der Setup-Assistent während der Aktivierung zur Ausführung dieses Dienstes auf. |

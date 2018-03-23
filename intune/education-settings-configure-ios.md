@@ -1,25 +1,25 @@
 ---
-title: "Intune-Einstellungen für die iOS-Classroom-App"
-titlesuffix: Azure portal
-description: "In diesem Artikel erfahren Sie etwas über die Intune-Einstellungen zur Steuerung von Einstellungen für die Classroom-App auf iOS-Geräten."
-keywords: 
+title: Intune-Einstellungen für die iOS-Classroom-App
+titleSuffix: Microsoft Intune
+description: In diesem Artikel erfahren Sie mehr über die Intune-Einstellungen zur Steuerung von Einstellungen für die Classroom-App auf iOS-Geräten.
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
 ms.date: 02/23/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d9b2e6df6c40ec142554db22a64d362e02884c1d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 063287ac1bf3441092ff7c9daea5102314384b7d
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Gewusst wie: Konfigurieren von Intune-Einstellungen für die iOS-App „Classroom“
 
@@ -59,7 +59,6 @@ Sie können Informationen mithilfe einer der folgenden Methoden in SDS importier
 
 - [CSV-Dateien](https://support.office.com/article/Follow-these-steps-71d5fe4a-aa51-4f35-9b53-348898a390a1): Exportieren und kompilieren Sie CSV-Dateien (durch Trennzeichen getrennte Dateien) manuell.
 - [PowerSchool-API](https://support.office.com/article/Follow-these-steps-851b5edc-558f-43a9-9122-b2d63458cb8f): Ein SIS-Anbieter, der die Synchronisierung mit Azure AD vereinfacht.
-- [Clever-API](https://support.office.com/article/Follow-these-steps-f3d92fde-3ad0-48f3-80a1-1ad0ac4a3fae): Eine Identitätsverwaltungslösung, die direkt mit Azure AD synchronisiert wird.
 - [OneRoster](https://support.office.com/article/Follow-these-steps-f43cbb2a-b502-497d-a8b1-783dc05a57ab): Ein CSV-Format, das Sie exportieren und zur Synchronisierung mit Azure AD konvertieren können.
 
 ### <a name="find-out-more"></a>Weitere Informationen
@@ -142,7 +141,7 @@ Wenn Sie das Konfigurieren von Zertifikaten abgeschlossen haben, klicken Sie auf
 1.  Klicken Sie im Bereich **Bildung** auf OK.
 2.  Klicken Sie im Bereich **Profil erstellen** auf die Option **Erstellen**.
     
-Das Profil wird erstellt und in der Profilliste angezeigt.
+Das Profil wird erstellt und im Bereich „Profilliste“ angezeigt.
 
 Weisen Sie das Profil den Geräten der Schüler und Studenten in den Kursraumgruppen zu, die erstellt wurden, als Sie Ihre Schul-/Unidaten mit Azure AD synchronisiert haben (siehe [Zuweisen von Geräteprofilen](device-profile-assign.md)).
 

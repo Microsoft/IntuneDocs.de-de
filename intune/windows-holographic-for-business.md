@@ -1,23 +1,23 @@
 ---
 title: Verwalten von Windows Holographic mit Microsoft Intune
-titleSuffix: Azure portal
-description: "Erfahren Sie, wie Microsoft Intune Geräte unterstützt, die Windows Holographic for Business ausführen"
-keywords: 
+titleSuffix: ''
+description: Erfahren Sie, wie Microsoft Intune Geräte unterstützt, die Windows Holographic for Business ausführen.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 2/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af54655c73967d15ad67d308cb6447c36af58fd8
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 6fd39b0a9a03d77a54ac71c47c5df67e9beacd9d
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-devices-running-windows-holographic-with-microsoft-intune"></a>Verwalten von Geräten, die Windows Holographic ausführen, mit Microsoft Intune
 

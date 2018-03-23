@@ -1,25 +1,25 @@
 ---
 title: Early Edition
-description: 
-keywords: 
+description: ''
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9a2c104200518af31fd05e6b8abe853377767aa9
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>Die Early Edition für Microsoft Intune – März 2018
 
@@ -147,6 +147,33 @@ Sie können benutzerdefinierte eBook-Kategorien erstellen und dann VPP eBooks di
 
 Die Unternehmensportal-App wird für Android aktualisiert, um den [Material Design](https://material.io/)-Richtlinien von Android zu folgen. Beim Release der App werden im Artikel [What's new in app UI](whats-new-app-ui.md) (Was gibt es Neues auf der App-Benutzeroberfläche) Abbildungen der neuen Symbole veröffentlicht. 
 
+### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Unterstützung des Edge-Browsers für mobile Geräte für die App-Schutzrichtlinien von Intune <!-- 1817882 -->
+
+Microsoft Edge für mobile Geräte unterstützt die App-Schutzrichtlinien, die in Intune definiert sind.
+
+### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>Verwenden eines vollständig definierten Namens als Antragsteller für das SCEP-Zertifikat <!--2221763 eeready-->
+Wenn Sie ein SCEP-Zertifikatsprofil erstellen, geben Sie den Antragstellernamen ein. Sie können den vollständigen definierten Namen als Antragstellernamen verwenden. Wählen Sie für **Antragstellername** die Option **benutzerdefiniert** aus, und geben Sie dann `CN={{OnPrem_Distinguished_Name}}` ein. Damit Sie die `{{OnPrem_Distinguished_Name}}`-Variable verwenden können, stellen Sie sicher, dass das `onpremisesdistingishedname`-Benutzerattribut mithilfe von [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) mit Azure AD synchronisiert ist. 
+
+### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>iOS-Geräte werden alle 15 Minuten zur Eingabe einer PIN aufgefordert <!--1550837 eeready-->
+Nachdem eine Konformitäts- oder Konfigurationsrichtlinie einem iOS-Gerät hinzugefügt wurde, werden Benutzer alle 15 Minuten aufgefordert, eine PIN festzulegen. Benutzer erhalten kontinuierlich eine Aufforderung, bis sie eine PIN festgelegt haben.
+
+### <a name="enable-bluetooth-contact-sharing---android-for-work---1098983-eeready--"></a>Aktivieren der Kontaktfreigabe über Bluetooth: Android for Work <!--1098983 eeready-->
+In der Standardeinstellung verhindert Android, dass Kontakte im Arbeitsprofil mit Bluetooth-Geräten synchronisiert werden. Das Ergebnis ist, dass Arbeitsprofilkontakte nicht auf der Anrufer-ID für Bluetooth-Geräte angezeigt werden.
+
+Zukünftig gibt es eine neue Einstellung unter **Android for Work** > **Geräteeinschränkungen** > **Arbeitsprofileinstellungen**:
+- Kontaktfreigabe über Bluetooth
+
+Der Intune-Administrator kann diese Einstellungen konfigurieren, um die Freigabe zu aktivieren. Dieses Feature ist nützlich, wenn Sie ein Gerät mit einem Bluetooth-Gerät in einem Fahrzeug koppeln möchten, das die Anrufer-ID für Freisprechgeräte anzeigt. Wenn das Feature aktiviert ist, werden Arbeitsprofilkontakte angezeigt. Wenn das Feature nicht aktiviert ist, werden Arbeitsprofilkontakte nicht angezeigt.
+
+Gilt für: Android-Arbeitsprofilgeräte unter Android OS 6.0 und höher.
+
+### <a name="schedule-your-automatic-updates---1805514---"></a>Planen von automatischen Updates <!--1805514 -->
+
+Mit Intune können Sie die Installation von automatischen Updates mithilfe von [Einstellungen für Windows-Updateringe](windows-update-for-business-configure.md) steuern. Sie können daraufhin sich wiederholende Updates planen, einschließlich der Woche, dem Tag und der Uhrzeit. 
+
+### <a name="disable-checks-on-device-restart---1805490---"></a>Deaktivieren von Prüfungen bei Geräteneustart <!--1805490 -->
+
+Mit Intune können Sie die [Verwaltung von Softwareupdates](windows-update-for-business-configure.md) steuern. Die Eigenschaft **Neustartüberprüfungen** wird standardmäßig hinzugefügt und aktiviert. Wählen Sie **Überspringen** aus, um die üblichen Überprüfungen zu überspringen, wenn Sie ein Gerät neu starten (z.B. aktive Benutzer, Akkustand usw.). 
 
 <!-- 1802 start -->
 
@@ -160,7 +187,7 @@ Sie können die Designfarben in den Unternehmensportal-Apps mithilfe von Hexadez
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Neue Einstellungen für Windows Defender Credential Guard in den Endpoint Protection-Einstellungen <!--1102252 --> 
 
-Unter **Gerätekonfiguration** > **Profile** > **Endpoint Protection** werden neue Einstellungen für [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] hinzugefügt. Die folgenden Einstellungen werden hinzugefügt: 
+Neue [Windows Defender Credential Guard](https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard]-Einstellungen werden unter **Gerätekonfiguration** > **Profile** > **Endpoint Protection** hinzugefügt. Die folgenden Einstellungen werden hinzugefügt: 
 
 - Plattformsicherheitsstufe: Legen Sie fest, welche Plattformsicherheitsstufe beim nächsten Neustart aktiviert wird. Für die virtualisierungsbasierte Sicherheit ist ein sicherer Start erforderlich. Falls gewünscht kann die virtualisierungsbasierte Sicherheit auch zusammen mit der Verwendung der Schutzfunktionen des direkten Remotezugriffs (Direct Memory Access, DMA) aktiviert werden. Für die DMA-Schutzfunktionen ist Hardwaresupport erforderlich. Außerdem werden sie nur auf richtig konfigurierten Geräten aktiviert.
 - Virtualisierungsbasierte Sicherheit: Legen Sie fest, dass beim nächsten Neustart die virtualisierungsbasierte Sicherheit aktiviert wird. 
@@ -185,29 +212,6 @@ Für Education-Profile sind neue Einstellungen in der Kategorie **Drucker** unte
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>Bereitstellungskonfiguration für iOS-Apps <!-- 1581650 -->
 Sie können Bereitstellungskonfigurationen für iOS-Apps zuweisen, um zu vermeiden, dass Ihre Apps ablaufen, indem Sie Sicherheitsgruppen ein- bzw. ausschließen.
-
-### <a name="new-windows-defender-exploit-guard-settings----631893---"></a>Neue Einstellungen für Windows Defender Exploit Guard <!-- 631893 -->
-
-Es sind sechs neue Einstellungen zur **Verringerung der Angriffsfläche** und erweiterte Funktionen von **Überwachter Ordnerzugriff: Ordnerschutz** verfügbar. Diese Einstellungen finden Sie unter: Gerätekonfiguration\Profiles\
-Erstellen Sie profile\Endpoint Protection\Windows Defender Exploit Guard.
-
-#### <a name="attack-surface-reduction"></a>Verringerung der Angriffsfläche
-
-|Name der Einstellung  |Einstellungsoptionen  |Beschreibung  |
-|---------|---------|---------|
-|Erweiterter Schutz vor Ransomware|Enabled, Audit, Not configured (Aktiviert, Überwachung, Nicht konfiguriert)|Verwendung eines offensiven Schutzes vor Ransomware.|
-|Flag credential stealing from the Windows local security authority subsystem (Abgreifen von Anmeldeinformationen über das Subsystem der lokalen Sicherheitsautorität von Windows kennzeichnen)|Aktiviert, Überwachung, Nicht konfiguriert|Flag credential stealing from the Windows local security authority subsystem (lsass.exe) (Abgreifen von Anmeldeinformationen über das Subsystem zur lokalen Sicherheitsautorität von Windows kennzeichnen (lsass.exe)).|
-|Process creation from PSExec and WMI commands (Prozesserstellung über die Befehle „PSExec“ und „WMI“)|Blockieren, Überwachung, Nicht konfiguriert|Blockiert Prozesserstellungen über die Befehle „PSExec“ und „WMI“.|
-|Untrusted and unsigned processes that run from USB (Nicht vertrauenswürdige und nicht signierte Prozesse, die über USB ausgeführt werden)|Blockieren, Überwachung, Nicht konfiguriert|Blockiert nicht vertrauenswürdige und nicht signierte Prozesse, die über USB ausgeführt werden.|
-|Executables that don’t meet a prevalence, age, or trusted list criteria (Ausführbare Dateien, die keinem Listenkriterium zur Verbreitung, zum Alter oder zur Vertrauenswürdigkeit entsprechen)|Blockieren, Überwachung, Nicht konfiguriert|Blockiert das Ausführen ausführbarer Dateien, wenn sie keinem Listenkriterium zur Verbreitung, zum Alter oder zur Vertrauenswürdigkeit entsprechen.|
-
-#### <a name="controlled-folder-access"></a>Überwachter Ordnerzugriff
-
-|Name der Einstellung  |Einstellungsoptionen  |Beschreibung  |
-|---------|---------|---------|
-|Ordnerschutz (bereits implementiert)|Nicht konfiguriert, Aktivieren, Nur Überwachung (bereits implementiert)<br><br> **Neu**<br>Blockieren der Änderung des Datenträgers, Überwachung der Änderung des Datenträgers|
-Hiermit schützen Sie Dateien und Ordner vor unbefugten Änderungen durch bösartige Apps.<br><br>**Aktivieren:** Vermeiden Sie, dass nicht vertrauenswürdige Apps Dateien in geschützten Ordnern verändern oder löschen und in Datenträgersektoren schreiben.<br><br>
-**Nur die Änderung des Datenträgers blockieren**:<br>Blockiert, dass nicht vertrauenswürdige Apps in Datenträgersektoren schreiben. Nicht vertrauenswürdige Apps können weiterhin Dateien in geschützten Ordnern verändern oder löschen.
 
 ### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Neue Einstellungen für Windows Defender Application Guard <!-- 1631890 -->
 

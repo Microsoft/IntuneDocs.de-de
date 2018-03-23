@@ -1,23 +1,24 @@
 ---
-title: "Besondere Überlegungen bei der Migration"
-description: "Dieser Artikel bietet spezielle Überlegungen bei der Migration, bevor Sie eine Migrationskampagne starten."
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Besondere Überlegungen bei der Migration
+titlesuffix: Microsoft Intune
+description: Dieser Artikel bietet spezielle Überlegungen bei der Migration, die Sie in Erwägung ziehen sollten, bevor Sie eine Migrationskampagne für Microsoft Intune starten.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/12/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f29d2894-e98b-4f2c-b444-a8ccc1b7efdd
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 86f3f7f2c8066e1b7b50dfc5931184c394d4f15b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bd59cf3a4764cc66d0e7d1f47e69c2ff93352387
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="special-migration-considerations"></a>Besondere Überlegungen bei der Migration
 
