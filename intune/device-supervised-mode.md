@@ -1,24 +1,24 @@
 ---
-title: "Aktivieren des überwachten iOS-Modus mit Intune"
-titlesuffix: Azure portal
-description: "Informationen zum Aktivieren des überwachten iOS-Modus mit Intune"
-keywords: 
+title: Aktivieren des überwachten iOS-Modus mit Microsoft Intune
+titleSuffix: ''
+description: Informationen zum Aktivieren des überwachten iOS-Modus mit Intune
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8190814-07f0-42d8-9b3a-87c67dd2b7ed
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ea93e7d3f2f55b002037fdcabf21fa0ed2cfc7c3
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 5304830c1706ff11bccdaedc9e9efa715e71904a
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="turn-on-ios-supervised-mode"></a>Aktivieren des überwachten iOS-Modus
 

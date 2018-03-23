@@ -1,24 +1,24 @@
 ---
-title: "Löschen eines macOS-Geräts"
-titlesuffix: Azure portal
-description: "Erfahren Sie, wie Sie alle Daten einschließlich des Betriebssystems von einem macOS-Gerät löschen."
-keywords: 
+title: Löschen eines macOS-Geräts
+titleSuffix: Microsoft Intune
+description: Erfahren Sie, wie Sie alle Daten einschließlich des Betriebssystems von einem macOS-Gerät löschen.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/31/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab396092-907a-44b7-a157-aabee62176a9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 81f328004863e812b706174e74a9b74d0bdf80b6
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: d6ae04abda7f026bcbc02e325274712a386147b8
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="erase-all-data-from-a-macos-device"></a>Löschen aller Daten von einem macOS-Gerät
 

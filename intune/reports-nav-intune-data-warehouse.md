@@ -1,24 +1,25 @@
 ---
-title: Date Warehouse-API von Intune | Microsoft-Dokumentation
-description: "Mithilfe dieser API können Sie Berichte erstellen, die einen Einblick in Ihre mobile Unternehmensumgebung ermöglichen."
+title: Date Warehouse-API von Intune
+titlesuffix: Microsoft Intune
+description: Sie können die Intune Data Warehouse-API verwenden, um Berichte zu erstellen, die einen Einblick in Ihre mobile Unternehmensumgebung ermöglichen.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e5c12ea4212bf7276b2cb0a4b09ecff648d67583
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7291e6f0d6094801383ba7fd606c0238e85ba01f
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 #  <a name="intune-data-warehouse-api"></a>Intune Data Warehouse-API
 
@@ -65,4 +66,4 @@ Erfahren Sie mehr über die Arbeit mit Azure AD unter [Authentifizierungsszenari
 
 OData-Ressourcen finden Sie unter [odata.org](http://www.odata.org).
   
-Prüfen Sie die Standardversion 4.0 von OData [OData Version 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
+Überprüfen Sie die Standardversion 4.0 von OData unter [OData Version 4.0] http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  

@@ -1,23 +1,23 @@
 ---
-title: "Konfigurieren von Einstellungen für Windows Update for Business in Intune"
-titleSuffix: Azure portal
-description: "Erfahren Sie, wie Sie in Intune die Einstellungen von Windows Update for Business konfigurieren, um Updates für Windows 10-Geräte zu steuern."
-keywords: 
+title: Konfigurieren von Einstellungen für Windows Update for Business in Microsoft Intune
+titleSuffix: ''
+description: Erfahren Sie, wie Sie in Microsoft Intune die Einstellungen von Windows Update for Business konfigurieren, um Updates für Windows 10-Geräte zu steuern.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ac26d0ac1855aa32ef0f00de6a4056bd57c07528
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-software-updates"></a>Verwalten von Softwareupdates
 
@@ -140,7 +140,7 @@ Unter **OMA-URI-Einstellung hinzufügen oder bearbeiten** können Sie beispielsw
 - **Datentyp**: Zeichenfolge
 - **Wert**: <*Verwenden Sie die GUID, die in Ihrem OMS-Arbeitsbereich auf der Registerkarte „Windows-Telemetrie“ angezeigt wird.*>
 
-![Windows-Einstellung für Diagnose- und Nutzungsdaten](./media/commID.png)
+![OMA-URI-Einstellung – Zeile hinzufügen](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Aussetzen von Updates
 Sie können für ein Gerät den Bezug von Funktions- oder Qualitätsupdates für einen Zeitraum von bis zu 35 Tagen aussetzen (ab dem Zeitpunkt, ab dem die Updates ausgesetzt wurden). Nach Verstreichen der maximalen Anzahl von Tagen wird die Aussetzung automatisch aufgehoben, und das Gerät sucht bei Windows Update nach geeigneten Updates. Danach können Sie die Updates erneut aussetzen.

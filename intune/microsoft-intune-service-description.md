@@ -1,24 +1,24 @@
 ---
 title: Microsoft Intune-Dienstbeschreibung
-description: "Intune ist ein cloudbasierter Dienst, der Ihnen bei der Verwaltung von Windows-, iOS-, Mac OS X-, Android- und mobilen Windows-Geräten hilft."
-keywords: 
-author: arob98
-ms.author: angrobe
+description: Microsoft Intune ist ein cloudbasierter Dienst, der Ihnen bei der Verwaltung von Windows-, iOS-, Mac OS X-, Android- und mobilen Windows-Geräten hilft.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4671f643f9806945043adcb9279c7bc95d8efe2
-ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
+ms.openlocfilehash: 7b9c3965d99e0058ae0236e1efc3daa840aebc6c
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune-Dienstbeschreibung
 
@@ -33,7 +33,7 @@ Die Lösung lässt sich eng in Azure Active Directory (Azure AD) integrieren und
 Weitere Informationen zum Verwalten von Geräten und Apps und zum Schützen von Unternehmensdaten mit Intune finden Sie in der [Intune-Dokumentation](https://docs.microsoft.com/intune/).
 
 ## <a name="30-day-free-trial"></a>30-tägige kostenlose Testversion
-Sie können Intune zunächst mit einer 30-tägigen kostenlosen Testversion verwenden, die 100 Benutzerlizenzen enthält. Um Ihre kostenlose Testversion zu starten, [besuchen Sie die Anmeldeseite von Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/). Wenn Ihre Organisation über ein Enterprise Agreement oder einen vergleichbaren Volumenlizenzvertrag verfügt, wenden Sie sich an Ihren Microsoft-Vertreter, um Ihre kostenlose Testversion einzurichten.
+Sie können Intune zunächst mit einer 30-tägigen kostenlosen Testversion verwenden, die 100 Benutzerlizenzen enthält. Um Ihre kostenlose Testversion zu starten, [besuchen Sie die Anmeldeseite von Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Wenn Ihre Organisation über ein Enterprise Agreement oder einen vergleichbaren Volumenlizenzvertrag verfügt, wenden Sie sich an Ihren Microsoft-Vertreter, um Ihre kostenlose Testversion einzurichten.
 
 > [!NOTE]
 > Wenn Ihre Organisation bereits über ein Geschäfts- oder Schulkonto für Microsoft Online Services verfügt und Sie dieses Intune-Abonnement nach Ende der Testphase möglicherweise in die Produktionsumgebung übernehmen möchten, wählen Sie die **Anmelden**-Option auf dieser Seite. Zur Authentifizierung verwenden Sie das globale Administratorenkonto Ihrer Organisation. Dadurch wird sichergestellt, dass Ihre Intune-Testversion mit Ihrem bestehenden Geschäfts-, Schul- oder Unikonto verknüpft wird.

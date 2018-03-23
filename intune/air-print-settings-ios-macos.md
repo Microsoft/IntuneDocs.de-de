@@ -1,25 +1,25 @@
 ---
-title: "Intune AirPrint-Einstellungen für iOS- und macOS-Geräte"
-titlesuffix: Azure portal
-description: "Erfahren Sie, wie Sie Intune verwenden können, um iOS- und macOS-Geräte automatisch mit AirPrint-kompatiblen Druckern zu verbinden.\""
-keywords: 
+title: Intune AirPrint-Einstellungen für iOS- und macOS-Geräte
+titlesuffix: Microsoft Intune
+description: Erfahren Sie, wie Sie Microsoft Intune verwenden können, um iOS- und macOS-Geräte automatisch mit AirPrint-kompatiblen Druckern zu verbinden.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7a8ef24a9e6946145bf69d279566f3b736e6efa1
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8402ff3631e18ec6169bc96ef1bb7669bdcfbdd8
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>AirPrint-Einstellungen für iOS- und macOS-Geräte
 

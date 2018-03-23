@@ -1,24 +1,24 @@
 ---
-title: "Registrieren für eine 30-tägige kostenlose Testversion von Microsoft Intune"
-titleSuffix: Azure portal
-description: "So registrieren Sie sich für eine 30-tägige kostenlose Testversion von Intune"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Registrieren für eine 30-tägige kostenlose Testversion von Microsoft Intune
+titleSuffix: Microsoft Intune
+description: Erfahren Sie, wie Sie sich für eine 30-tägige kostenlose Testversion von Microsoft Intune registrieren.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 03/04/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: 08fa759515d437e40a751ce39b3ef617dd92e83f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.custom: ''
+ms.openlocfilehash: 389981fc207371d64064872235fc9babde6b3f6a
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registrieren für eine kostenlose Testversion von Microsoft Intune
 
@@ -30,11 +30,15 @@ Dieser Artikel führt Sie durch die Registrierung für eine eigenständige Testv
 
 * Wenn sich der Großteil Ihres IT-Betriebs und Ihrer Benutzer in einem anderen Gebietsschema als Sie befindet, sollten Sie dieses Gebietsschema unter **Where's your company located?** (Unternehmensstandort) auswählen.
 
-2. Am Ende des Registrierungsvorgangs erhalten Sie eine Nachricht mit Informationen zum neuen Konto. <br/> ![Abbildung der Kontoinformationen](./media/2-end-of-sign-up-process.png) <br/>Wenn Sie hier auf **Jetzt kann es losgehen!** klicken, gelangen Sie zum Office 365 Admin Center, wo Sie Ihrer Testumgebung Benutzer hinzufügen können. <br/><br/>Wenn Sie jedoch direkt zu Intune im Azure-Portal wechseln möchten, öffnen Sie ein neues Browserfenster, und geben Sie in die Adressleiste **https://portal.azure.com** ein. Sie werden zur Azure-Anmeldeseite weitergeleitet, auf der Sie die erhaltenen Anmeldeinformationen verwenden können. Verwenden Sie diese Adresse, wenn Sie sich bei Ihrer Intune-Testversion anmelden möchten. <br/> ![Abbildung der Anmeldeseite des Azure-Portals](./media/azure-portal-signin.png)
+2. Am Ende des Registrierungsvorgangs erhalten Sie eine Nachricht mit Informationen zum neuen Konto. <br/> 
+
+![Abbildung Ihrer Kontoinformationen](./media/2-end-of-sign-up-process.png) <br/>
+
+Wenn Sie hier auf **Jetzt kann es losgehen!** klicken, gelangen Sie zum Office 365 Admin Center, wo Sie Ihrer Testumgebung Benutzer hinzufügen können. <br/><br/>Wenn Sie jedoch direkt zu Intune im Azure-Portal wechseln möchten, öffnen Sie ein neues Browserfenster, und geben Sie in die Adressleiste **https://portal.azure.com** ein. Sie werden zur Azure-Anmeldeseite weitergeleitet, auf der Sie die erhaltenen Anmeldeinformationen verwenden können. Verwenden Sie diese Adresse, wenn Sie sich bei Ihrer Intune-Testversion anmelden möchten. <br/> ![Abbildung der Anmeldeseite des Azure-Portals](./media/azure-portal-signin.png)
 
 Wenn Sie sich zum ersten Mal bei Intune im [Azure-Portal](https://portal.azure.com) anmelden, wird Intune möglicherweise nicht auf dem Azure-Dashboard angezeigt. So fügen Sie den Intune-Dienst zu Ihrem Azure-Dashboard hinzu:
 1. Wählen Sie auf der linken Seite des Dashboards in der Liste der Azure-Dienste die Option **Alle Dienste >** aus, und geben Sie im Suchfeld den Begriff **Intune** ein.
-2. Wählen Sie **Intune** aus der Liste aus, und wählen Sie dann das Sternchen aus, um den Dienst zur Liste der Dienste hinzuzufügen.<br/> ![Abbildung der Auswahl von Intune aus der Liste der Dienste](./media/azure-add-intune1.png)
+2. Wählen Sie **Intune** aus der Liste aus, und wählen Sie dann das Sternchen aus, um den Dienst zur Liste der Dienste hinzuzufügen.<br/> ![Abbildung der Auswahl von Microsoft Intune im Azure-Portal](./media/azure-add-intune1.png)
 3. Wählen Sie dann **Intune** in der Liste der Dienste aus, um das Intune-Dashboard zu öffnen.
 
 Wenn Sie sich für eine Testversion registrieren, wird eine E-Mail mit Ihren Kontoinformationen an die von Ihnen bei der Registrierung angegebene E-Mail-Adresse gesendet. Diese E-Mail bestätigt, dass Ihre Testversion aktiv ist.

@@ -1,23 +1,24 @@
 ---
 title: Funktionsweise eines typischen Migrationszyklus in Intune
-description: "In diesem Artikel wird erläutert, wie ein Intune-Migrationszyklus funktioniert. Zudem enthält er Beispiele für den Umgang mit den Migrationszyklen."
-keywords: 
-author: andredm7
-ms.author: andredm
+titlesuffix: Microsoft Intune
+description: In diesem Artikel wird erläutert, wie ein Microsoft Intune-Migrationszyklus funktioniert. Zudem enthält er Beispiele für den Umgang mit den Migrationszyklen.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/12/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3688b724-9521-4210-bf4d-bcf47d8d4ca0
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 69cd071f4e5ac8e1c2cd7543951475a3f74bf808
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 238ea903353b75a69d1c2fe2a836f9e89992d2d7
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="typical-migration-cycle"></a>Typischer Migrationszyklus
 

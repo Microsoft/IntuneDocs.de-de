@@ -1,25 +1,27 @@
 ---
 title: Verhindern von nicht autorisiertem Zugriff auf Unternehmensdaten
-description: "Verhindern Sie nicht autorisierten Zugriff auf Ihre Unternehmensdaten, wenn diese außerhalb des Unternehmensnetzwerks freigegeben werden."
-keywords: "Office 365, O365, Azure Information Protection, Daten, schützen, außerhalb des Netzwerks, Unternehmensdaten"
-author: arob98
+titlesuffix: Microsoft Intune
+description: Verhindern Sie mit Microsoft Intune nicht autorisierten Zugriff auf Ihre Unternehmensdaten, wenn diese außerhalb des Unternehmensnetzwerks freigegeben werden.
+keywords: Office 365, O365, Azure Information Protection, Daten, schützen, außerhalb des Netzwerks, Unternehmensdaten
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3a52b2be557139cb2d31dd4919d239daeb81853
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 25f0572d65e6d651c636c8b1961903f7c2c78906
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="prevent-unauthorized-access-to-company-data"></a>Verhindern von nicht autorisiertem Zugriff auf Unternehmensdaten 
+# <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Verhindern von nicht autorisiertem Zugriff auf Unternehmensdaten mit Microsoft Intune
 
 Sie können Office 365-Dokumente und -E-Mails klassifizieren, bezeichnen und schützen, sodass nur autorisierte Benutzer Zugriff auf die Daten haben. Die Einstellungen werden automatisch verwaltet, nachdem IT-Administratoren oder Benutzer die Regeln und Bedingungen festgelegt haben. Alternativ kann das IT-Team empfohlene Einstellungen bereitstellen, nach denen sich Benutzer richten sollen. Administratoren und Benutzer können auch ohne die Unterstützung einer anderen Autorität den Zugriff auf Daten widerrufen, die bereits für Andere freigegeben wurden. Somit kann gesteuert werden, wer geschützte Daten öffnet und aktualisiert, selbst wenn die Daten das Unternehmensnetzwerk verlassen. 
 
@@ -44,5 +46,5 @@ Sie können Informationen dazu teilen, [wie und wann Dokumente und E-Mails gesch
 
 Im Zuge der nächsten Schritte können Sie mehr über die anderen Möglichkeiten erfahren, den Schutz Ihrer Unternehmensdaten zu erhöhen. Dazu zählt Folgendes: 
 
-* Erfahren Sie, wie Sie [Azure Information Protection auf iOS- und Android-Geräten verwenden](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
+* Erfahren Sie mehr über die Verwendung von Azure Information Protection auf iOS- und Android-Geräten unter https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
 * Erhalten Sie für Windows Phone und Mac-Computer Informationen zur [Microsoft Rights Management-Freigabeanwendung](https://technet.microsoft.com/dn451248).

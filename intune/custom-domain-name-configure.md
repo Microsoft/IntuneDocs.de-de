@@ -1,30 +1,31 @@
 ---
-title: "Konfigurieren eines benutzerdefinierten Domänennamens"
-description: "Hinzufügen eines benutzerdefinierten Domänennamens für Ihr Intune-Abonnement"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Konfigurieren eines benutzerdefinierten Domänennamens
+titlesuffix: Microsoft Intune
+description: Hinzufügen eines benutzerdefinierten Domänennamens für Ihr Microsoft Intune-Abonnement
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6046b574c495035977dcd635786409e52be85bb8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 913334a9fee8ab584cb11f8124ef2a491e01661f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="configure-a-custom-domain-name"></a>Konfigurieren eines benutzerdefinierten Domänennamens
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-In diesem Thema erfahren Administratoren, wie sie einen DNS CNAME erstellen können, um ihre Anmeldung zu vereinfachen und anzupassen.
+In diesem Thema erfahren Administratoren, wie Sie einen DNS CNAME erstellen können, um mithilfe von Microsoft Intune Ihre Anmeldung zu vereinfachen und anzupassen.
 
 Wenn sich Ihre Organisation für einen cloudbasierten Microsoft-Dienst wie Intune registriert, erhalten Sie einen anfänglichen Domänenname, der in Azure Active Directory (AD) gehostet wird. Der Name sieht so aus: **IhreDomäne.onmicrosoft.com**. In diesem Beispiel steht **IhreDomäne** für den Domänennamen, den Sie bei der Registrierung ausgewählt haben. **onmicrosoft.com** ist das Suffix, das den Konten zugewiesen wird, die Sie Ihrem Abonnement hinzufügen. Sie können die benutzerdefinierte Domäne Ihrer Organisation so konfigurieren, dass auf Intune zugegriffen wird und nicht auf den bei der Einrichtung Ihres Abonnements angegebenen Domänennamen.
 

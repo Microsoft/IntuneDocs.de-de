@@ -1,28 +1,28 @@
 ---
-title: "Festlegen der grundlegenden Datenverwaltung für Office 365-Apps"
-titlesuffix: Azure portal
-description: "Unterstützende Dokumentation für den Assistenten zum Verwalten von Office 365-Apps."
-keywords: 
+title: Datenverwaltung von Office 365-Apps in Microsoft Intune
+titlesuffix: ''
+description: Erfahren Sie mehr über die Datenverwaltung von Office 365-Apps in Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 852612ac-f146-4372-a900-3f6fdebd05ad
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e12f5becc1f3c03af0ee6d1fab9cd7ee16f2a547
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: fa784d0b446e3de180ce47ec51d3440522966fad
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>So erleben Ihre Benutzer den grundlegenden Schutz in verwalteten Office 365-Apps
+# <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Was der grundlegende Schutz in verwalteten Office 365-Apps in Microsoft Intune beinhaltet umfasst.
 
 Der Assistent zum **Verwalten von Office 365-Apps** erstellt eine App-Schutzrichtlinie für jede Geräteplattform.
 
@@ -46,30 +46,30 @@ In diesem Artikel wird OneDrive for Business als Beispiel verwendet, um die Benu
 
 ## <a name="user-experience-on-an-ios-device"></a>Benutzererfahrung auf einem iOS-Gerät
 
-1. Starten Sie die OneDrive for Business-App, um die Anmeldeseite zu öffnen.  <br/> ![Abbildung des OneDrive-Anmeldebildschirm unter iOS](./media/onedrive-ios-sign-in.png)
-2. Geben Sie den Benutzernamen Ihres Geschäftskontos ein. Sie werden zur Seite „Office 365-Authentifizierung“ umgeleitet, auf der Sie Ihre Unternehmensanmeldeinformationen eingeben können. <br/> ![Abbildung der Office 365-Anmeldeseite](./media/o365-sign-in-ios.png)
-3. Nach der erfolgreichen Authentifizierung Ihrer Anmeldeinformationen durch Azure Active Directory werden die App-Schutzrichtlinien angewendet, und Sie werden aufgefordert, die OneDrive for Business-App neu zu starten.  <br/>![Abbildung der Aufforderung zum Neustart für iOS](./media/ios-restart-prompt.png)    
+1. Starten Sie die OneDrive for Business-App, um die Anmeldeseite zu öffnen.  
+2. Geben Sie den Benutzernamen Ihres Geschäftskontos ein. Sie werden zur Seite „Office 365-Authentifizierung“ umgeleitet, auf der Sie Ihre Unternehmensanmeldeinformationen eingeben können. 
+3. Nach der erfolgreichen Authentifizierung Ihrer Anmeldeinformationen durch Azure Active Directory werden die App-Schutzrichtlinien angewendet, und Sie werden aufgefordert, die OneDrive for Business-App neu zu starten. 
+
   > [!NOTE]
   > Die Meldung „Neustart erforderlich“ wird nur auf Geräten angezeigt, die nicht bei Intune registriert sind.
 
+4. Starten Sie die OneDrive for Business-App neu. Die Anwendung wird mit aktivierten App-Schutzrichtlinien gestartet, und Sie werden aufgefordert, eine PIN für das Gerät festzulegen (sofern Sie noch keine PIN für das Gerät konfiguriert haben).  
 
-4. Starten Sie die OneDrive for Business-App neu. Die Anwendung wird mit aktivierten App-Schutzrichtlinien gestartet, und Sie werden aufgefordert, eine PIN für das Gerät festzulegen (sofern Sie noch keine PIN für das Gerät konfiguriert haben). <br/> ![Abbildung der Aufforderung für die PIN-Erstellung](./media/pin-prompt-ios.png)    
   > [!NOTE]
   > Den meisten Benutzern wird diese Aufforderung nicht angezeigt. Nur Benutzer, die auf ihrem iOS-Gerät keine PIN aktiviert haben, werden diese Meldung sehen.
 
-
-5. Nachdem Sie die PIN festgelegt und bestätigt haben, kehren Sie zur OneDrive for Business-App zurück. Sie sehen eine einmalige Benachrichtigung, dass der IT-Administrator Arbeitsdaten in OneDrive jetzt schützt. <br/> ![Abbildung der einmaligen Benachrichtigung von Ihrem IT-Administrator](./media/one-time-notice.png)
-6. Bestätigen Sie diese Mitteilung, um auf die Dateien in OneDrive for Business zuzugreifen. <br/> ![Abbildung der OneDrive-Dateien auf dem iOS-Gerät](./media/onedrive-files-ios.png) <br/>
+5. Nachdem Sie die PIN festgelegt und bestätigt haben, kehren Sie zur OneDrive for Business-App zurück. Sie sehen eine einmalige Benachrichtigung, dass der IT-Administrator Arbeitsdaten in OneDrive jetzt schützt. 
+6. Bestätigen Sie diese Mitteilung, um auf die Dateien in OneDrive for Business zuzugreifen. 
 
 >[!NOTE]
 >Wenn Sie eine schon bereitgestellte Richtlinie ändern, werden die Änderungen beim nächsten Öffnen der App angewendet.
-
 
 ## <a name="user-experience-on-an-android-device"></a>Benutzererfahrung auf einem Android-Gerät
 
 1. Starten Sie die OneDrive for Business-App, um die Anmeldeseite zu öffnen.  <br/> ![Abbildung des Begrüßungsbildschirms der OneDrive-App](./media/onedrive-android-welcome.png)
 2. Geben Sie den Benutzernamen Ihres Geschäftskontos ein. Sie werden zur Seite „Office 365-Authentifizierung“ umgeleitet, auf der Sie Ihre Unternehmensanmeldeinformationen eingeben können. <br/> ![Abbildung der Office 365-Anmeldung unter Android](./media/o365-sign-in-android.png)
-3. Nach der erfolgreichen Authentifizierung Ihrer Anmeldeinformationen durch Azure Active Directory wird eine Meldung mit Anweisungen zur Installation der Unternehmensportal-App angezeigt, sofern diese auf dem Gerät noch nicht installiert ist. Tippen Sie auf **Zum Store gehen**, um den Vorgang fortzusetzen. <br/> ![Abbildung der Benachrichtigung zur Installation der Unternehmensportal-App](./media/get-company-portal-android.png) <br/>Wenn Sie die Unternehmensportal-App bereits auf Ihrem Telefon installiert haben, wird die OneDrive for Business-App automatisch gestartet, und Sie können bis zum Ende des Hinweises überspringen.    
+3. Nach der erfolgreichen Authentifizierung Ihrer Anmeldeinformationen durch Azure Active Directory wird eine Meldung mit Anweisungen zur Installation der Unternehmensportal-App angezeigt, sofern diese auf dem Gerät noch nicht installiert ist. Tippen Sie auf **Zum Store gehen**, um den Vorgang fortzusetzen. <br/> ![Abbildung der Benachrichtigung zur Installation der Unternehmensportal-App](./media/get-company-portal-android.png) <br/>Wenn Sie die Unternehmensportal-App bereits auf Ihrem Telefon installiert haben, wird die OneDrive for Business-App automatisch gestartet, und Sie können bis zum Ende des Hinweises überspringen.   
+
   > [!IMPORTANT]
   > Wenn Sie unter Android einmal die Verwaltung von Office-Apps durch eine App-Schutzrichtlinie festgelegt haben, **müssen** Benutzer des Geräts die Unternehmensportal-App installieren, um Zugriff auf Arbeits-E-Mails und -dokumente zu erhalten, obwohl der Endbenutzer die App nicht öffnen oder sich in dieser anmelden muss, um E-Mails oder Dokumente zu lesen.
 
@@ -128,4 +128,4 @@ Wenn Sie diese Richtlinien oder andere Richtlinien, die Sie im Intune-Azure-Port
 ![Abbildung des Benutzeroberflächenpfads zum Anzeigen von Richtlinien](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
-Erfahren Sie mehr über [App-Schutzrichtlinien](app-protection-policy.md).
+- Erfahren Sie mehr über [App-Schutzrichtlinien](app-protection-policy.md).

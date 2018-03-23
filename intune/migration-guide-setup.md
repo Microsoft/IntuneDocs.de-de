@@ -1,27 +1,27 @@
 ---
-title: Grundlegende Einrichtung von Intune
-description: "Dieser Artikel enthält die notwendigen Schritte zum Einrichten von Microsoft Intune."
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Grundlegende Einrichtung von Microsoft Intune
+description: Dieser Artikel enthält die notwendigen Schritte zum Einrichten von Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 06/12/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: bd685959aa03612002cbbe74d5678b75efe2d492
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 54f0d2496c40703212ad61da462a2ae499388bb4
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="basic-setup"></a>Grundlegende Einrichtung
 
-Nachdem Sie Ihre Umgebung analysiert haben, können Sie mit dem Einrichten von Intune beginnen.
+Nachdem Sie Ihre Umgebung analysiert haben, können Sie mit dem Einrichten von Microsoft Intune beginnen.
 
 ## <a name="external-dependencies-for-an-intune-deployment"></a>Externe Abhängigkeiten für eine Bereitstellung mit Intune
 

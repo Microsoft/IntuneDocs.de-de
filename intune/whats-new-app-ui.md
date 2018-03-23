@@ -1,35 +1,30 @@
 ---
-title: "Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune"
-description: "Erfahren Sie, was sich an der Benutzeroberfläche für Apps geändert hat, die auf Endbenutzergeräten mit Intune funktionieren."
-keywords: 
+title: Updates der Benutzeroberfläche für Endbenutzer-Apps in Intune
+titlesuffix: Microsoft Intune
+description: Erfahren Sie, was sich an der Benutzeroberfläche für Apps geändert hat, die auf Endbenutzergeräten mit Microsoft Intune verwendet werden können.
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/18/2018
+ms.date: 03/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f39c908e6de55c0668f507c3d7eed9545deba82
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 753b3a345dc84bee80921fd0c7994dfac79a3df6
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/20/2018
 ---
-# <a name="ui-updates-for-intune-end-user-apps"></a>Aktualisierungen für die Benutzeroberfläche für Endbenutzer-Apps in Intune
-Erfahren Sie, welche Aktualisierungen wir an der Benutzeroberfläche für Apps vorgenommen haben, die Ihre Endbenutzer in dieser Version von Microsoft Intune sehen werden. Damit werden Sie bei der Benutzerkommunikation sowie bei allen aktualisierten Benutzerdokumentationen unterstützt, die Sie zur Unterstützung Ihrer Entwicklung erstellt haben. Es kann auch helfen, zu verstehen, wie Probleme behandelt werden, die auftauchen, wenn Benutzer den Helpdesk für den Support mithilfe des Unternehmensportals aufrufen.
+# <a name="ui-updates-for-intune-end-user-apps"></a>Updates der Benutzeroberfläche für Endbenutzer-Apps in Intune
+Erfahren Sie, welche Updates an der Benutzeroberfläche für Apps vorgenommen wurden, die Ihre Endbenutzer in dieser Version von Microsoft Intune sehen. Wenn Sie Kenntnisse über diese Updates haben, können Sie die Benutzerkommunikation sowie alle aktualisierten Benutzerdokumentationen verbessern, die Sie zur Unterstützung der Bereitstellung erstellt haben. Es kann auch helfen, zu verstehen, wie Probleme behandelt werden, die auftauchen, wenn Benutzer den Helpdesk für den Support mithilfe des Unternehmensportals aufrufen.
 
-## <a name="week-of-december-11-2017"></a>Woche des 11. Dezember 2017
-
-### <a name="end-user-messaging-for-accounts---1573558-1712-changes-to-be-made-for-other-platforms-for-1801--"></a>Endbenutzernachrichten für Konten<!--1573558, 1712; changes to be made for other platforms for 1801-->
-
-Benutzer der Unternehmensportalwebsite werden an der Ausführung von Aktionen, die Schreibzugriff auf Ihren Mandanten erfordern, gehindert. Die Fehlermeldung, dass ihre Konten gewartet werden, wird angezeigt. Ähnliche Änderungen sind in Kürze für Unternehmensportal-Apps für Android, iOS, macOS und Windows verfügbar.
-
-![Fehlermeldung bei Kontoumstellung](./media/account-move-rom-iwp-user-1712.png)
+<!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
 ## <a name="week-of-november-27-2017"></a>Woche vom 27. November 2017
 
@@ -189,7 +184,7 @@ Unten sehen Sie die vorherige Anmeldeoberfläche, die neue Anmeldeoberfläche mi
 
 __Vorherige Anmeldeoberfläche__
 
-![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website. Darunter befindet sich die Schaltfläche zum Anmelden. Ein Link am unteren Seitenrand führt zu Informationen von Microsoft zu Datenschutz und Cookies.](./media/cp_ios_aad_signin_before_1704_001.png)
+![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website. Die Schaltfläche zum Anmelden befindet sich darunter. Ein Link am unteren Seitenrand führt zu Informationen von Microsoft zu Datenschutz und Cookies.](./media/cp_ios_aad_signin_before_1704_001.png)
 
 ![Nach dem Tippen auf „Anmelden“ geben Benutzer auf dieser Seite ihre Anmeldeinformationen ein. Die Seite erfordert die Eingabe von E-Mail-Adresse und Kennwort und bietet Möglichkeiten, Kennwortfehler zu beheben.](./media/cp_ios_aad_signin_before_1704_002.png)
 
@@ -209,11 +204,11 @@ __Neue Anmeldeoberfläche bei Anmeldung von einem anderen Gerät aus__
 
 ![Die Seite für die Anmeldung beim Unternehmensportal mit einem Symbol für eine Person vor der grafischen Darstellung einer Website. Darunter befindet sich die Schaltfläche zum Anmelden. Ein Link am unteren Seitenrand führt zu Informationen von Microsoft zu Datenschutz und Cookies.](./media/cp_ios_aad_signin_from_another_device_after_1704_001.png)
 
-Tippen Sie auf den Link __Von anderem Gerät aus anmelden__.
+Tippen Sie auf den Link __Sign-in from another device__ (Von einem anderem Gerät aus anmelden).
 
 ![Der Benutzer erhält die Anweisung, mit einem über den Arbeitscomputer bezogenen eindeutigen Passcode zur Seite „aka.ms/devicelogin“ zu wechseln und sich dort mit dem Code anzumelden.](./media/cp_ios_aad_signin_from_another_device_after_1704_003.png)
 
-Starten Sie einen Browser, und wechseln Sie zu [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
+Starten Sie einen Browser, und gehen Sie zu [https://aka.ms/devicelogin](https://aka.ms/devicelogin).
 
 ![Ein Bild des Browsers des Benutzers auf dem Arbeitscomputer statt in der Unternehmensportal-App. Die angezeigte Seite „Geräteanmeldung“ fordert den Benutzer auf, den über die Unternehmensportal-App empfangenen Code einzugeben.](./media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
@@ -229,7 +224,7 @@ Die Unternehmensportal-App beginnt mit der Anmeldung.
 
 ## <a name="june-2017"></a>Juni 2017
 
-### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies---1305217--"></a>Die Unternehmensportal-App für Android verfügt nun über eine neue Endbenutzererfahrung für App-Schutzrichtlinien <!--1305217-->
+### <a name="company-portal-app-for-android-now-has-a-new-end-user-experience-for-app-protection-policies"></a>Die Unternehmensportal-App für Android verfügt nun über eine neue Benutzeroberfläche für App-Schutzrichtlinien
 Auf Grundlage von Benutzerfeedback haben wir die Unternehmensportal-App für Android modifiziert, sodass sie nun die Schaltfläche **Auf Unternehmensinhalte zugreifen** besitzt. Der Hintergrund dazu ist, Endbenutzer daran zu hindern, unnötigerweise den Registrierungsprozess zu durchlaufen, wenn sie nur auf Apps zugreifen müssen, die App-Schutzrichtlinien unterstützen, eine Funktion der mobilen Anwendungsverwaltung von Intune.
 
 Der Benutzer muss dann einfach nur auf die Schaltfläche **Auf Unternehmensinhalte zugreifen** tippen, statt mit der Registrierung des Geräts zu beginnen.
@@ -259,9 +254,9 @@ Dieses Update ist nur auf Geräten unter Windows 10 Anniversary Update (Build 16
 
 ![Ein Bild der Startbildschirms der Unternehmensportal-App von Windows 10 mit einer Statusmeldung in der Mitte in der Liste „Geräte“, die einen Benutzer darüber informiert, dass sein Gerät noch nicht für den Einsatz im Unternehmen eingerichtet wurde, und dass der Benutzer die Meldung auswählen kann, um mit dem Einrichten zu beginnen.](./media/win10_guided_enroll_select_setup_after_1706.png)
 
-![Ein Bild der Einrichtungsbildschirms der Unternehmensportal-App von Windows 10 mit einer Warnung, dass ein Benutzer ein Unternehmenskonto auf seinem Gerät hinzufügen muss, um sich für die Verwaltung zu registrieren.](./media/win10_guided_enroll_we_help_setup_after_1706.png)
+![Ein Bild der Einrichtungsseite der Unternehmensportal-App von Windows 10 mit einer Warnung, dass ein Benutzer ein Unternehmenskonto auf seinem Gerät hinzufügen muss, um sich für die Verwaltung zu registrieren.](./media/win10_guided_enroll_we_help_setup_after_1706.png)
 
-![Ein Bild des Bildschirms „Unternehmenskonto auf diesem Gerät hinzufügen“ der Unternehmensportal-App für Windows 10 mit der Meldung an den Benutzer, dass er zum Abschließen der Registrierung in der Einstellungen-App „Verbinden“ auswählen muss. Nachdem sie dies gemacht haben, werden sie auf dem Bildschirm informiert, dass sie zum Abschließen der Registrierung zur Unternehmensportal-App zurückkehren müssen.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
+![Ein Bild des Bildschirms „Unternehmenskonto auf diesem Gerät hinzufügen“ der Unternehmensportal-App für Windows 10 mit der Meldung an den Benutzer, dass er zum Abschließen der Registrierung in der App „Einstellungen“ die Option „Verbinden“ auswählen muss. Nachdem sie dies gemacht haben, werden sie auf dem Bildschirm informiert, dass sie zum Abschließen der Registrierung zur Unternehmensportal-App zurückkehren müssen.](./media/win10_guided_enroll_leaving_for_iwp_after_1706.png)
 
 ![Ein Bild des Bildschirms „Für die Verwaltung registrieren“ der Unternehmensportal-App für Windows 10 mit der Meldung zum abgeschlossenen Status, dass das Gerät des Benutzers jetzt registriert ist und dass Sie auf die Schaltfläche „Weiter“ klicken müssen, um fortzufahren.](./media/win10_guided_enroll_youre_now_enrolled_after_1706.png)
 
@@ -322,13 +317,13 @@ Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der A
    <table id="wrapper">
       <tr>
          <td>
-            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
+            <img src="/intune/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width="200" height="366" align="center">
           </td>
           <td>
-             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
+             <img src="/intune/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width="200" height="366" align="center">
            </td>
            <td>
-              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
+              <img src="/intune/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign-in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width="200" height="366" align="center">
            </td>
       </tr>
    </table>
@@ -382,11 +377,28 @@ Es folgen die Pläne für Möglichkeiten zum Verbessern der Benutzererfahrung du
 > [!Note]
 > Beachten Sie, dass die Bilder unten eine Vorschau darstellen und das angekündigte Produkt sich von den abgebildeten Versionen unterscheiden kann.
 
+### <a name="ui-iwp"></a>Neues Update zur Verbesserung der Benutzerfreundlichkeit der Unternehmensportalwebsite <!--2000968-->
+
+Im April soll die Benutzerfreundlichkeit der Unternehmensportalwebsite verbessert werden. Dafür werden Updates für die Benutzeroberfläche ausgeführt, Workflows optimiert und die Barrierefreiheit verbessert. Diese Änderungen umfassen auf den Kunden ausgerichtete Verbesserungen wie das Teilen von Apps. Außerdem wurde die Gesamtleistung verbessert, um die Benutzerfreundlichkeit zu optimieren.
+
+Es wurden auf der Grundlage von Feedback von Kunden wie Ihnen neue Features hinzugefügt, die die bereits vorhandenen Funktionen und die Benutzerfreundlichkeit um ein Vielfaches verbessern sollen:
+
+-   Verbesserungen der Benutzeroberfläche auf der gesamten Website
+-   Möglichkeit, direkte Links zu Apps zu teilen
+- Verbesserte Leistung bei großen App-Katalogen
+
+Sie müssen nichts tun, um sich auf diese Änderungen vorzubereiten. Sie werden informiert, sobald die aktualisierte Unternehmensportalwebsite für Sie verfügbar gemacht wird. Es kann jedoch sein, dass Sie danach die Dokumentation für die Endbenutzer aktualisieren und neue Screenshots hinzufügen müssen. Beachten Sie außerdem, dass Sie möglicherweise die Dokumentation für die Unternehmensportal-App unter iOS aktualisieren müssen, da die Website auf dem Abschnitt **Apps** der iOS-App basiert.
+
+|Aktualisiert|Zurück|
+|---|---|
+|![Auf der aktualisierten Geräteseite wird das Gerät auf die Geräteinformationen ausgerichtet und wird nicht mehr oberhalb der vollständigen Liste angezeigt.](./media/iwp-device-after-1803.png)|![Die Vorgängerversion der Geräteseite.](./media/iwp-device-before-1803.png)|
+|![Auf der aktualisierten Seite zur App-Installation wird die App oberhalb einer Beschreibung und verschiedener Informationen zur Installation angezeigt. Dies umfasst ein Veröffentlichungsdatum, eine Version und einen App-Typ.](./media/iwp-app-install-after-1803.png)|![Die Vorgängerversion der Seite zur App-Installation.](./media/iwp-app-install-before-1803.png)|
+
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Update der Benutzeroberfläche für die Unternehmensportal-App für iOS <!--1412866-->
 
 Ein größeres Update der Benutzeroberfläche soll in der Unternehmensportal-App für iOS veröffentlicht werden. In dem Update soll das Design vollständig umgestaltet werden. Das bedeutet, die Ansicht soll modernisiert und die Benutzerfreundlichkeit und Barrierefreiheit verbessert werden. Alle aktuellen Funktionen des iOS-Unternehmensportals sollen erhalten bleiben.
 
-Sie können über das Apple TestFlight-Programm der aktualisierten Unternehmensportal-App für iOS eine Vorschauversion verwenden und Feedback übermitteln. Registrieren Sie sich unter „https://aka.ms/intune_ios_cp_testflight“, um Zugriff auf TestFlight zu erhalten.
+Sie können über das Apple TestFlight-Programm der aktualisierten Unternehmensportal-App für iOS eine Vorschauversion verwenden und Feedback übermitteln. Melden Sie sich unter https://aka.ms/intune_ios_cp_testflight für den Zugriff auf TestFlight an. Die neusten Informationen zu diesem Update finden Sie hier: https://aka.ms/iOS_companyportal_update.
 
 ![Erste Bilder zur neuen Unternehmensportal-App unter iOS](./media/ios-cp-app-redesign-1801-teaser.png)
 
@@ -400,5 +412,5 @@ __Updates an empfohlenen Apps__ Wir haben der Website eine dedizierte Seite hinz
 
 ### <a name="see-also"></a>Siehe auch
 * [Microsoft Intune-Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
-* [Roadmap für die Cloudplattform](https://www.microsoft.com/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
+* [Roadmap für die Cloudplattform](https://www.microsoft.com/cloud-platform/roadmap)
 * [Neuerungen in Intune](https://docs.microsoft.com/intune/whats-new)

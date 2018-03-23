@@ -1,25 +1,25 @@
 ---
 title: Verwenden des Data Warehouse von Intune
 titlesuffix: Microsoft Intune
-description: "Verwenden Sie das Data Warehouse von Intune zum Erstellen von Berichten, die einen Einblick in Ihre mobile Unternehmensumgebung ermöglichen."
+description: Verwenden Sie das Data Warehouse von Intune zum Erstellen von Berichten, die einen Einblick in Ihre mobile Unternehmensumgebung ermöglichen.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dd90c9d51fe212b0675da4d6039a535be0ff3c89
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 328d8b3787bcef20a1d4949eba427cd8737edafe
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="use-the-intune-data-warehouse"></a>Verwenden des Data Warehouse von Intune
 
@@ -37,7 +37,7 @@ Das Data Warehouse bietet Ihnen Zugriff auf mehr Informationen über Ihre mobile
   -  Ein Datenmodell, das den OData-Standard verwendet
 
 > [!Note]
-> Wenn Sie eine hybride Verwaltung mobiler Geräte (mobile device management, MDM) mit System Center Configuration Manager und Microsoft Intune verwenden, sollten Sie Ihre Daten aus SCCM abrufen. Das Intune Data Warehouse enthält nur Intune-Daten. Sie können ein SCCM Power BI-Dashboard für Ihre benutzerdefinierten Berichte verwenden. Weitere Informationen finden Sie unter [Announcing the Power BI solution template for System Center Configuration Manager (Ankündigung der Power BI-Lösungsvorlage für System Center Configuration Manager)]( https://powerbi.microsoft.com/blog/sccm-solution-template). und [Create a Power BI report and dashboard (Erstellen eines Power BI-Berichts und -Dashboards)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/create-powerbi-report-dashboard).
+> Wenn Sie eine hybride Verwaltung mobiler Geräte (mobile device management, MDM) mit System Center Configuration Manager und Microsoft Intune verwenden, sollten Sie Ihre Daten aus SCCM abrufen. Das Intune Data Warehouse enthält nur Intune-Daten. Sie können ein SCCM Power BI-Dashboard für Ihre benutzerdefinierten Berichte verwenden. Weitere Informationen finden Sie unter [Announcing the Power BI solution template for System Center Configuration Manager (Ankündigung der Power BI-Lösungsvorlage für System Center Configuration Manager)]( https://powerbi.microsoft.com/blog/sccm-solution-template) und [Power BI-Inhalt für Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page).
 
 
 > [!Important]  
