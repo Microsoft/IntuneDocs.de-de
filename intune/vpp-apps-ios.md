@@ -1,25 +1,25 @@
 ---
-title: "Verwalten von über ein Volumenprogramm erworbenen iOS-Apps | Microsoft-Dokumentation"
-titlesuffix: Azure portal
-description: "Erfahren Sie, wie Sie Apps, die Sie über ein Volumenprogramm im iOS Store erworben haben, in Intune synchronisieren und dann ihre Nutzung verwalten und nachverfolgen.\""
-keywords: 
-author: erikre
+title: Verwalten von über ein Volumenprogramm erworbenen iOS-Apps in Microsoft Intune
+titlesuffix: ''
+description: Erfahren Sie, wie Sie Apps, die Sie über ein Volumenprogramm im iOS Store erworben haben, in Microsoft Intune synchronisieren und dann deren Nutzung verwalten und nachverfolgen können.
+keywords: ''
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 04a94e4baee23ac9a4a742a2ff11591087381fde
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: bd9915f3120e2fee2b487fbfff0d775a9d50ef8a
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden
 
@@ -81,7 +81,7 @@ Achten Sie beim Einrichten eines Geräts für einen Intune-Benutzer darauf, dass
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>So können Sie einen Apple VPP-Token abrufen und hochladen
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 1.  Wählen Sie im Bereich **Intune** unter **Setup** die Optionen **Mobile Apps** > **iOS-VPP-Token** aus.
 2.  Klicken Sie im Bereich mit der Liste der VPP-Token auf **Erstellen**.
 4. Geben Sie im Bereich **VPP-Token erstellen** die folgenden Informationen an:
