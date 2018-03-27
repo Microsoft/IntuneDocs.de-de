@@ -1,25 +1,25 @@
 ---
 title: Einrichten Ihrer Lookout-Integration in Microsoft Intune
-titlesuffix: 
-description: "Informationen zum Integrieren von Lookout Mobile Threat Defense in Intune, um den Zugriff von mobilen Geräten auf Ihre Unternehmensressourcen zu steuern."
-keywords: 
+titlesuffix: ''
+description: Informationen zum Integrieren von Lookout Mobile Threat Defense in Intune, um den Zugriff von mobilen Geräten auf Ihre Unternehmensressourcen zu steuern.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Einrichten Ihrer Lookout Mobile Threat Defense-Integration mit Intune
 
@@ -72,8 +72,6 @@ Führen Sie die folgenden Schritte aus, um die Informationen zusammenzustellen, 
 2.  Die erste Anmeldung bei der Lookout-Konsole muss mit einem Benutzerkonto mit der Azure AD-Rolle „Globaler Administrator“ erfolgen, um Ihren Azure AD-Mandanten zu registrieren. Bei späteren Anmeldungen ist diese Azure AD-Berechtigungsebene nicht erforderlich. Es wird eine Zustimmungsseite angezeigt. Wählen Sie **Akzeptieren** aus, um die Registrierung abzuschließen. Nachdem Sie die Bedingungen akzeptiert und ihnen zustimmt haben, werden Sie an die Lookout-Konsole weitergeleitet.
 
     ![Screenshot der Seite für die erste Anmeldung an der Lookout-Konsole](./media/lookout_mtp_initial_login.png)
-    > [!NOTE] 
-    > Sollten Probleme mit der Anmeldung auftreten, finden Sie unter [Problembehandlung der Lookout-Integration mit Intune](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) weitere Informationen.
 
 3.  Wählen Sie in der [Lookout-Konsole](https://aad.lookout.com) im Modul **System** die Registerkarte **Connectors** und dann **Intune** aus.
 
