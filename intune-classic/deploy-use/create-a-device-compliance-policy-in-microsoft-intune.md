@@ -1,27 +1,27 @@
 ---
-title: "Erstellen einer Gerätekonformitätsrichtlinie"
-description: "Erstellen Sie eine Kompatibilitätsrichtlinie, um das Sichern mobiler Geräte und PCs zu unterstützen, die zum Zugriff auf Ihre Unternehmensdaten verwendet werden."
-keywords: 
+title: Erstellen einer Gerätekonformitätsrichtlinie
+description: Erstellen Sie eine Kompatibilitätsrichtlinie, um das Sichern mobiler Geräte und PCs zu unterstützen, die zum Zugriff auf Ihre Unternehmensdaten verwendet werden.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/12/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e37e5f490254efedf56a383e612f934925be75e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 03719051179a30b0cc543098861f1b480c66082a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Erstellen einer Kompatibilitätsrichtlinie für Geräte in Microsoft Intune
+# <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Erstellen einer Konformitätsrichtlinie für Geräte in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -30,7 +30,7 @@ Dieses Thema beschreibt die Schritte, die zum Erstellen einer Kompatibilitätsri
 ##  <a name="step-1-add-a-new-policy"></a>Schritt 1: Hinzufügen einer neuen Richtlinie
   Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Optionen **Richtlinie** &gt; **Konformitätsrichtlinien** &gt; **Hinzufügen**.
 
-  ![Screenshot der Kompatibilitätsrichtlinienseite in der Intune-Verwaltungskonsole mit der Option „Hinzufügen“ im Menü oben auf der Seite](./media/intune-sa-3a-add-compliance-policy.png)
+  ![Screenshot der Konformitätsrichtlinienseite in der Intune-Verwaltungskonsole mit der Option „Hinzufügen“ im Menü oben auf der Seite](./media/intune-sa-3a-add-compliance-policy.png)
 
 ##  <a name="step-2--configure-settings"></a>Schritt 2: Konfigurieren von Einstellungen
 Aktivieren Sie auf der Seite **Richtlinie erstellen** die folgenden Einstellungen nach Bedarf:
@@ -45,7 +45,7 @@ Wählen Sie danach die Option **Richtlinie speichern**.
 
 Sie haben die Möglichkeit, die Richtlinie direkt nach dem Speichern bereitzustellen, oder können sich für die spätere Bereitstellung entscheiden. Die neue Richtlinie wird im Knoten **Konformitätsrichtlinien** des Arbeitsbereichs **Richtlinie** angezeigt.
 
-##  <a name="step-4-set-the-compliance-status-validity-period"></a>Schritt 4: Festlegen des Gültigkeitszeitraums des Kompatibilitätsstatus
+##  <a name="step-4-set-the-compliance-status-validity-period"></a>Schritt 4: Festlegen des Gültigkeitszeitraums des Konformitätsstatus
 Um den Zeitraum anzugeben, der dem Gerät zum Einchecken zur Verfügung steht, bevor es als nicht kompatibel eingestuft wird, wechseln Sie zu den Konformitätsrichtlinieneinstellungen, und aktualisieren Sie die Zeit. Der Standard ist auf 30 Tage festgelegt.
 
 ![Option „Einstellungen für Kompatibilitätsrichtlinie“ in der Richtlinienmenüleiste](../media/mdm-compliance-policy-settings.png)
@@ -64,13 +64,13 @@ In der folgenden Tabelle sind die Einstellungen für die Kompatibilitätsrichtli
 |Erforderlicher Kennworttyp|iOS 6 und höher|Nicht verfügbar|Windows Phone 8.1 und höher <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |Minimale Anzahl von Zeichensätzen|iOS 6 und höher|Nicht verfügbar|Windows Phone 8.1 und höher <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |Kennwortqualität|Nicht verfügbar|Android 4,0 und höher <br>Samsung KNOX Standard 4.0 und höher|Nicht verfügbar|
-|Minuten der Inaktivität, bevor ein Kennwort erforderlich ist|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8.1 und höher<br>Windows RT und Windows RT 8.1<br>Windows 8.1|
+|Minuten Inaktivität vor erneuter Anforderung des Kennworts|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8.1 und höher<br>Windows RT und Windows RT 8.1<br>Windows 8.1|
 |Kennwortablauf (Tage)|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8.1 und höher<br>Windows RT und Windows RT 8.1<br>Windows 8.1|
 |Kennwortverlauf speichern|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8.1 und höher<br>Windows RT und Windows RT 8.1<br>Windows 8.1|
 |Wiederverwendung vorheriger Kennwörter verhindern|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8.1 und höher<br>Windows RT und Windows RT 8.1<br>Windows 8.1|
-|Kennwort anfordern, wenn das Gerät aus dem Leerlauf zurückkehrt| Nicht verfügbar| Nicht verfügbar|Windows 10 Mobile|
+|Kennwort anfordern, wenn das Gerät aus dem Leerlauf zurückkehrt| Nicht verfügbar| Nicht verfügbar|Windows 10 Mobile|
 |Verschlüsselung auf mobilem Gerät anfordern|Nicht verfügbar|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Windows Phone 8.1 und höher<br> Windows 8.1|
-|Anforderung, dass Geräte als fehlerfrei gemeldet werden| Nicht verfügbar| Nicht verfügbar|Windows <br>Windows 10 Mobile|
+|Anforderung, dass Geräte als fehlerfrei gemeldet werden| Nicht verfügbar| Nicht verfügbar|Windows <br>Windows 10 Mobile|
 |Gerät darf nicht per Jailbreak oder Rooting manipuliert worden sein|iOS 6 und höher|Android 4,0 und höher<br>Samsung KNOX Standard 4.0 und höher|Nicht verfügbar|
 |E-Mail-Konto muss von Intune verwaltet werden|iOS 6 und höher|Nicht verfügbar| Nicht verfügbar|
 |Wählen Sie das E-Mail-Profil aus, das von Intune verwaltet werden muss|iOS 6 und höher|Nicht verfügbar| Nicht verfügbar|
@@ -87,5 +87,5 @@ Weitere Informationen über die Kompatibilitätseinstellungen, die auf den einze
 ## <a name="next-steps"></a>Nächste Schritte
 [Bereitstellen und Überwachen einer Kompatibilitätsrichtlinie](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Einführung in Richtlinien zur Gerätekompatibilität](introduction-to-device-compliance-policies-in-microsoft-intune.md)

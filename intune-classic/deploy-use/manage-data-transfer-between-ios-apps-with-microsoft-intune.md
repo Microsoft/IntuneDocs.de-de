@@ -1,25 +1,25 @@
 ---
-title: "Verwalten der Datenübertragung zwischen iOS-Apps"
-description: "Dieses Thema erläutert die Verwendung des iOS-Features „Öffnen in“ und der Richtlinien für die Verwaltung mobiler Apps, um Datenübertragungen zwischen Apps zu verwalten."
-keywords: 
+title: Verwalten der Datenübertragung zwischen iOS-Apps
+description: Dieses Thema erläutert die Verwendung des iOS-Features „Öffnen in“ und der Richtlinien für die Verwaltung mobiler Apps, um Datenübertragungen zwischen Apps zu verwalten.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c460e48360bb31076e2054297b037d08545ea1ae
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Verwalten der Datenübertragung zwischen iOS-Apps mit Microsoft Intune
 
@@ -77,7 +77,7 @@ Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die von
 |MDM-Anbieter eines Drittanbieters| Konfigurationsschlüssel | Werttyp | Der Konfigurationswert|
 | ------- | ---- | ---- | ---- |
 | VMware AirWatch | IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
-| MobileIron Core | IntuneMAMUPN | Zeichenfolge | $EMAIL$  **oder**  $USER_UPN$ |
+| MobileIron Core | IntuneMAMUPN | Zeichenfolge | $EMAIL$ **oder** $USER_UPN$ |
 | MobileIron Cloud | IntuneMAMUPN | Zeichenfolge | ${userUPN} **oder** ${userEmailAddress} |
 | ManageEngine Mobile Device Manager | IntuneMAMUPN | Zeichenfolge | %upn% |
 
@@ -108,5 +108,5 @@ Kümmern Sie sich zuerst um das [Erstellen und Bereitstellen von Verwaltungsrich
 
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Protect app data using app protection policies with Microsoft Intune (Schützen von App-Daten mithilfe der App-Schutzrichtlinien mit Microsoft Intune)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

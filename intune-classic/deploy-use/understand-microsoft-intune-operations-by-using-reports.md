@@ -1,25 +1,25 @@
 ---
-title: "Einblicke in Vorgänge durch Berichte"
+title: Einblicke in Vorgänge durch Berichte
 description: Erstellen und verwalten Sie Berichte zu Software, Hardware und Softwarelizenzen in Ihrem Unternehmen.
-keywords: 
-author: arob98
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 04/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f8c1df81e8d5b4f41fa5df26aadf8e8dd0f18bd
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 919178b20094cb210b3d0b05c42b9b7d97759637
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Einblicke in Microsoft Intune-Vorgänge durch Berichte
 

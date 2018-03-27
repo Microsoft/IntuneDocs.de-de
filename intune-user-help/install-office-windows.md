@@ -1,27 +1,27 @@
 ---
-title: "Installieren von Office 365 auf Ihrem Windows 10-Gerät | Microsoft-Dokumentation"
-description: 
-keywords: 
+title: Installieren von Office 365 auf Ihrem Windows 10-Gerät | Microsoft-Dokumentation
+description: ''
+keywords: ''
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 02/21/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 42e26c51-5373-4c2e-9321-34d85560f3d1
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 62cc9e1b939ac68768f21b00b4390956c6ccb857
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 8a4990abe994ce2a7ca2913dfecd8832ae886eeb
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="installing-office-365-on-your-windows-10-device"></a>Installieren von Office 365 auf Ihrem Windows 10-Gerät
 

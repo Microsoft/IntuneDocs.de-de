@@ -1,25 +1,25 @@
 ---
 title: Exchange Connector-Problembehandlung
 description: Behandeln von Problemen, die sich auf den Intune Exchange Connector beziehen.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/26/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08a21197fd7c67aff037396e86a1555a8033daac
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a70b2707b38534826577bfe47bcd8e575c09a71f
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-the-exchange-connector"></a>Exchange Connector-Problembehandlung
 

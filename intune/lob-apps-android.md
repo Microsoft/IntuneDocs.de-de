@@ -1,25 +1,25 @@
 ---
-title: "Hinzufügen von branchenspezifischen Android-Apps zu Microsoft Intune"
-titlesuffix: 
-description: "Erfahren Sie mehr über das Hinzufügen von branchenspezifischen Android-Apps in Microsoft Intune."
-keywords: 
+title: Hinzufügen von branchenspezifischen Android-Apps zu Microsoft Intune
+titlesuffix: ''
+description: Erfahren Sie mehr über das Hinzufügen von branchenspezifischen Android-Apps in Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/09/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3f336fb295dba396dad3a399aafc17435edb70b3
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: a5b09f855b6da65edf3c560725b339528f2bcfaa
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen Android-Apps (LOB) in Microsoft Intune
 
@@ -37,7 +37,7 @@ Eine branchenspezifische App (LOB) ist eine App, die Sie aus einer App-Installat
 3. Klicken Sie im Bereich **Intune** auf die Option **Mobile Apps**.
 4. Wählen Sie in der Workload **Mobile Apps** die Option **Verwalten** > **Apps** aus.
 5. Wählen Sie über der Liste der Apps **Hinzufügen** aus.
-6. Klicken Sie im Bereich **App hinzufügen** auf die Option **Branchenspezifische App**.
+6. Klicken Sie im Bereich **App hinzufügen** auf **Branchenspezifische App**.
 
 ## <a name="step-2---configure-the-app-package-file"></a>Schritt 2: Konfigurieren der App-Paketdatei
 
@@ -48,13 +48,13 @@ Eine branchenspezifische App (LOB) ist eine App, die Sie aus einer App-Installat
 
 ## <a name="step-3---configure-app-information"></a>Schritt 3: Konfigurieren von App-Informationen
 
-1. Klicken Sie im Bereich **App hinzufügen** auf die Option **App-Paketdatei**.
+1. Wählen Sie im Bereich **App hinzufügen** die Option **App-Paketdatei** aus.
 2. Fügen Sie im Bereich **App-Informationen** Details zu Ihrer App hinzu. Abhängig von der ausgewählten App wurden einige der Werte in diesem Bereich möglicherweise automatisch ausgefüllt:
     - **Name:** Geben Sie den Namen der App ein, der im Unternehmensportal angezeigt werden soll. Stellen Sie sicher, dass alle App-Namen eindeutig sind. Wenn ein App-Name zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
     - **Beschreibung:** Geben Sie eine Beschreibung für die App ein, die den Benutzern im Unternehmensportal angezeigt werden soll.
     - **Herausgeber:** Geben Sie den Namen des Herausgebers der App ein.
     - **Mindestens erforderliches Betriebssystem:** Wählen Sie in der Liste die mindestens erforderliche Betriebssystemversion aus, auf der die App installiert werden kann. Wenn Sie die App einem Gerät mit einem älteren Betriebssystem zuweisen, wird sie nicht installiert.
-    - **App-Version ignorieren:** Legen Sie **Ja** fest, wenn die App automatisch vom Entwickler aktualisiert wird.
+    - **App-Version ignorieren**: Legen Sie **Ja** fest, wenn die App automatisch vom Entwickler aktualisiert wird.
     - **Kategorie:** Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Dadurch ist es für Benutzer einfacher, die App im Unternehmensportal zu finden.
     - **Diese App als ausgewählte App im Unternehmensportal anzeigen:** Zeigen Sie die App auf der Hauptseite des Unternehmensportal hervorgehoben an, wenn Benutzer nach Apps suchen.
     - **Informations-URL:** Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.

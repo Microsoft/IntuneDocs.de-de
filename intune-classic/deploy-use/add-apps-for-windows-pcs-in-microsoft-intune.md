@@ -1,24 +1,24 @@
 ---
-title: "Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird"
-description: "In diesem Thema erfahren Sie, wie Sie Apps für Windows-PCs zu Intune hinzufügen, bevor Sie sie bereitstellen."
-keywords: 
+title: Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird
+description: In diesem Thema erfahren Sie, wie Sie Apps für Windows-PCs zu Intune hinzufügen, bevor Sie sie bereitstellen.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 02/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7c2352ea47d7dab22867e213169d382b9330c171
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6b44ed650019c7e189b1f8f3bfe29e161558258e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird
 
@@ -63,7 +63,7 @@ Mithilfe der folgenden Vorgehensweise verwenden Sie den Intune-Softwareherausgeb
     - **Kategorie** (optional). Wählen Sie eine der integrierten App-Kategorien aus. Dadurch wird es für die Benutzer leichter, die App im Unternehmensportal zu finden.
     - **Symbol** (optional). Laden Sie ein Symbol hoch, das der App zugeordnet wird. Dies ist das Symbol, das gemeinsam mit der App angezeigt wird, wenn die Benutzer das Unternehmensportal durchsuchen.
 
-4.  Legen Sie auf der Seite **Anforderungen** die Anforderungen fest, die erfüllt sein müssen, bevor die App installiert werden kann. Wählen Sie aus:
+4.  Legen Sie auf der Seite **Anforderungen** die Anforderungen fest, die erfüllt sein müssen, bevor die App installiert werden kann. Es stehen die folgenden Optionen zur Auswahl:
 
     - **Architektur**. Wählen Sie aus, ob die App auf 32-Bit-Betriebssystemen, 64-Bit-Betriebssystemen oder auf beiden Betriebssystemarten installiert werden kann.
     - **Betriebssystem**. Wählen Sie die niedrigste Betriebssystemvariante aus, unter der die App installiert werden kann.

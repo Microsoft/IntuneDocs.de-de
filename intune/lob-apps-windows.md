@@ -1,25 +1,25 @@
 ---
-title: "Informationen zum Hinzufügen branchenspezifischer Windows-Apps zu Microsoft Intune"
-titlesuffix: 
-description: "Informationen zum Hinzufügen branchenspezifischer Windows-Apps zu Microsoft Intune."
-keywords: 
+title: Informationen zum Hinzufügen branchenspezifischer Windows-Apps zu Microsoft Intune
+titlesuffix: ''
+description: Informationen zum Hinzufügen branchenspezifischer Windows-Apps zu Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e23ddb70bb2c12e1278f4167ec074972eeba3003
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: f975f2018d2ce1d7affded3c3386c479e6877388
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Informationen zum Hinzufügen branchenspezifischer Windows-Apps zu Microsoft Intune
 
@@ -30,8 +30,8 @@ Branchenspezifische Apps werden über eine App-Installationsdatei hinzugefügt. 
 ## <a name="step-1---specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
-3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Mobile Apps**.
 4. Wählen Sie in der Workload **Mobile Apps** die Option **Verwalten** > **Apps** aus.
 5. Wählen Sie über der Liste der Apps **Hinzufügen** aus.
 6. Klicken Sie im Bereich **App hinzufügen** auf **Branchenspezifische App**.

@@ -1,25 +1,25 @@
 ---
 title: Android for Work-Richtlinieneinstellungen in Microsoft Intune
-description: "Erstellen Sie Richtlinien, die Einstellungen und Features auf Android for Work-Geräten steuern, die Sie mit Intune verwalten."
-keywords: 
+description: Erstellen Sie Richtlinien, die Einstellungen und Features auf Android for Work-Geräten steuern, die Sie mit Intune verwalten.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0938e4b788ef11a773854531f570e63809389fad
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: e42d33b4cc69e6b2cc836e2236c508d97c2245fe
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Einstellungen für Android for Work-Richtlinien in Microsoft Intune
 
@@ -40,7 +40,7 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 
 |Name der Einstellung|Details|
 |----------------|-|
-|**Anfordern eines Kennworts zum Entsperren mobiler Geräte**|Gibt an, ob auf verwalteten Geräten ein Kennwort erforderlich ist. Wählen Sie aus:<br><br>- **Komplex**: erfordert mindestens einen Buchstaben, eine Zahl und ein Symbol<br>- **Alphanumerisch**: erfordert mindestens eine Zahl und ein alphabetisches Zeichen<br>- **Alphabetisch**: erfordert mindestens Buchstaben oder Symbole<br>- **Numerisch, komplex**: erfordert numerische Zeichen, die sich nicht wiederholen oder fortlaufend sind<br>- **Numerisch**<br><br>Wenn diese Einstellung nicht aktiviert ist, gelten keine Anforderungen an die Kennwortkomplexität.|
+|**Anfordern eines Kennworts zum Entsperren mobiler Geräte**|Gibt an, ob auf verwalteten Geräten ein Kennwort erforderlich ist. Es stehen die folgenden Optionen zur Auswahl:<br><br>- **Komplex**: erfordert mindestens einen Buchstaben, eine Zahl und ein Symbol<br>- **Alphanumerisch**: erfordert mindestens eine Zahl und ein alphabetisches Zeichen<br>- **Alphabetisch**: erfordert mindestens Buchstaben oder Symbole<br>- **Numerisch, komplex**: erfordert numerische Zeichen, die sich nicht wiederholen oder fortlaufend sind<br>- **Numerisch**<br><br>Wenn diese Einstellung nicht aktiviert ist, gelten keine Anforderungen an die Kennwortkomplexität.|
 |**Minimale Kennwortlänge**|Gibt die Mindestanzahl von Zahlen oder Zeichen an, die das Kennwort enthalten muss.|
 |**Inaktivität in Minuten, bevor das Gerät gesperrt wird**|Gibt die Anzahl der Minuten ohne Benutzeraktivität an, bevor das Gerät automatisch gesperrt wird.|
 |**Smart Lock und andere Vertrauens-Agents zulassen**<br>(Android 6 und höher)|Ermöglicht Ihnen die Steuerung der Smart Lock-Funktion auf kompatiblen Android-Geräten. Diese Telefonfunktion wird manchmal als Vertrauens-Agent bezeichnet und ermöglicht Ihnen das Deaktivieren oder Umgehen des Kennworts für den Gerätesperrbildschirm, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet, (wenn es z. B. mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet). Mit dieser Einstellung können Sie verhindern, dass Benutzer Smart Lock konfigurieren.|
@@ -55,7 +55,7 @@ Wenn die gesuchte Einstellung nicht in diesem Thema enthalten ist, können Sie s
 
 |Name der Einstellung|Details|
 |----------------|-|
-|**Datenaustausch zwischen Arbeitsprofilen und persönlichen Profilen zulassen**|Lässt zu, dass Apps im Arbeitsprofil Daten mit Apps im persönlichen Profil des Benutzers austauschen. Wählen Sie aus:<br><br>- **Freigabe über Grenzen hinweg verhindern**<br>- **Apps im Arbeitsprofil können Freigabeanforderungen vom persönlichen Profil verarbeiten**<br>- **Keine Einschränkungen bei Freigabe**|
+|**Datenaustausch zwischen Arbeitsprofilen und persönlichen Profilen zulassen**|Lässt zu, dass Apps im Arbeitsprofil Daten mit Apps im persönlichen Profil des Benutzers austauschen. Es stehen die folgenden Optionen zur Auswahl:<br><br>- **Freigabe über Grenzen hinweg verhindern**<br>- **Apps im Arbeitsprofil können Freigabeanforderungen vom persönlichen Profil verarbeiten**<br>- **Keine Einschränkungen bei Freigabe**|
 |**Benachrichtigungen des Arbeitsprofils ausblenden, wenn das Gerät gesperrt ist**<br>(Android 6 und höher)|Legt fest, ob Benachrichtigungen aus dem Arbeitsprofil angezeigt werden, wenn das Gerät gesperrt ist.|
 |**Standardberechtigungsrichtlinie für Apps festlegen**<br>(Android 6 und höher)|Legt die Standardberechtigungsrichtlinie für alle Apps im Arbeitsprofil fest. Ab Android 6 wird der Endbenutzer während der Laufzeit zur Eingabe bestimmter Berechtigungen aufgefordert, die für Apps erforderlich sind.  Diese Richtlinieneinstellung ermöglicht der IT-Abteilung, zu entscheiden, wie oder ob Benutzer aufgefordert werden, Berechtigungen für Apps im Arbeitsprofil zu gewähren. <br/><br/>Beispielsweise kann die IT-Abteilung eine App mithilfe von Push in das Arbeitsprofil übertragen, die Speicherortzugriff benötigt.  Normalerweise würde diese App den Benutzer in einem Popupdialogfeld fragen, ob er der App Speicherortzugriff gewähren möchte, und der Benutzer könnte dies genehmigen oder ablehnen.  Mit dieser Richtlinie kann die IT-Abteilung entscheiden, ob alle Berechtigungen automatisch ohne Aufforderung gewährt werden sollen, ohne Aufforderung automatisch verweigert werden sollen, oder ob der Endbenutzer entscheiden kann.|
 
@@ -88,5 +88,5 @@ Intune unterstützt zurzeit eine begrenzte Anzahl von benutzerdefinierten Androi
 - [Erstellen eines WLAN-Profils über einen vorinstallierten Schlüssel](pre-shared-key-wi-fi-profile.md)
 - [Verwenden einer benutzerdefinierten Richtlinie zum Erstellen eines Profils für ein App-bezogenes VPN für Android-Geräte](per-app-vpn-for-android-pulse-secure.md)
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

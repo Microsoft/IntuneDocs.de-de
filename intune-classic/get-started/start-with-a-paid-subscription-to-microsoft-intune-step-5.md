@@ -1,25 +1,25 @@
 ---
-title: "Erstellen von Gruppen zum Organisieren von Benutzern und Geräten"
-description: "Erstellen von Benutzern und Gruppen für Ihr Intune-Abonnement"
-keywords: 
+title: Erstellen von Gruppen zum Organisieren von Benutzern und Geräten
+description: Erstellen von Benutzern und Gruppen für Ihr Intune-Abonnement
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 02/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 309994268b061f844e26dea8df8ce3c0fd237e95
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 8e023035dabea653b289b767ff08801b13068a9e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-groups-to-organize-users-and-devices"></a>Erstellen von Gruppen zum Organisieren von Benutzern und Geräten
 

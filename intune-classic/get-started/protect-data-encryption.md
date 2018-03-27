@@ -1,25 +1,25 @@
 ---
-title: "Schützen von Unternehmensdaten durch Datenverschlüsselung"
-description: "Dieser Leitfaden hilft Ihnen dabei, Ihr Unternehmen vor Datenverlust zu schützen, indem durch die Verwendung einer Richtlinie in mobilen Apps eine Kennung sowie die Datenverschlüsselung erzwungen wird."
-keywords: "Verschlüsselung, PIN, Daten"
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: Schützen von Unternehmensdaten durch Datenverschlüsselung
+description: Dieser Leitfaden hilft Ihnen dabei, Ihr Unternehmen vor Datenverlust zu schützen, indem durch die Verwendung einer Richtlinie in mobilen Apps eine Kennung sowie die Datenverschlüsselung erzwungen wird.
+keywords: Verschlüsselung, PIN, Daten
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 11/22/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 96c5d33ef88f263f3e51d061c646112a8d557f74
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 29e1ad3f41c5b8dc7dd58e04f6ecbda067bd4a1f
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>Erste Schritte: Schützen von Unternehmensdaten durch Datenverschlüsselung
 

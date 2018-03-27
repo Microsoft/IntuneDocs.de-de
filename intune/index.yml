@@ -4,24 +4,24 @@ title: Microsoft Intune-Dokumentation
 metadata:
   document_id: 99e91b60-d6a5-44a8-908f-442161fbb077
   title: Microsoft Intune-Dokumentation
-  description: "Machen Sie sich schnell mit Microsoft Intune vertraut. Verwenden Sie den cloudbasierten Enterprise Mobility-Verwaltungsdienst (Enterprise Mobility Management, EMM), der die Produktivität Ihrer Mitarbeiter unterstützt und gleichzeitig Ihre Unternehmensdaten schützt."
+  description: Machen Sie sich schnell mit Microsoft Intune vertraut. Verwenden Sie den cloudbasierten Enterprise Mobility-Verwaltungsdienst (Enterprise Mobility Management, EMM), der die Produktivität Ihrer Mitarbeiter unterstützt und gleichzeitig Ihre Unternehmensdaten schützt.
   keywords: protect, company, data, Azure, Intune, EMM, device, app, management
-  author: arob98
-  ms.author: angrobe
+  author: dougeby
+  ms.author: dougeby
   manager: dougeby
   ms.date: 10/31/2017
   ms.topic: landing-page
   ms.devlang: na
   ms.service: microsoft-intune
-  ms.openlocfilehash: 134f4053e22797c547f56b2db7876b3d1a56b15c
-  ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+  ms.openlocfilehash: f359e36b07334866a1913e5eebd37a0960fc677d
+  ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 03/08/2018
+  ms.lasthandoff: 03/22/2018
 sections:
 - items:
   - type: markdown
-    text: "Machen Sie sich schnell mit Microsoft Intune vertraut. Verwenden Sie den cloudbasierten Enterprise Mobility-Verwaltungsdienst (Enterprise Mobility Management, EMM), der die Produktivität Ihrer Mitarbeiter unterstützt und gleichzeitig Ihre Unternehmensdaten schützt. Intune lässt sich in Azure Active Directory integrieren und bietet Identitäts- und Zugriffsteuerungsfunktionen sowie Azure Information Protection für den Datenschutz."
+    text: Machen Sie sich schnell mit Microsoft Intune vertraut. Verwenden Sie den cloudbasierten Enterprise Mobility-Verwaltungsdienst (Enterprise Mobility Management, EMM), der die Produktivität Ihrer Mitarbeiter unterstützt und gleichzeitig Ihre Unternehmensdaten schützt. Intune lässt sich in Azure Active Directory integrieren und bietet Identitäts- und Zugriffsteuerungsfunktionen sowie Azure Information Protection für den Datenschutz.
 - items:
   - type: list
     style: cards
@@ -48,17 +48,17 @@ sections:
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
       title: Neuheiten
-- title: "Neue Artikel und Blogbeiträge"
+- title: Neue Artikel und Blogbeiträge
   items:
   - type: paragraph
-    text: "Erhalten Sie die neuesten und interessantesten Informationen, die für Sie relevant sind."
+    text: Erhalten Sie die neuesten und interessantesten Informationen, die für Sie relevant sind.
   - type: list
     style: cards
     className: cardsM
     columns: 3
     items:
     - href: what-is-intune.md
-      title: "Weitere Informationen über Intune im Azure-Portal"
+      title: Weitere Informationen über Intune im Azure-Portal
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
     - href: ui-changes.md
@@ -70,7 +70,7 @@ sections:
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
     - href: enrollment-autopilot.md
-      title: "Unterstützung des Windows AutoPilot Deployment-Programms in Microsoft Intune"
+      title: Unterstützung des Windows AutoPilot Deployment-Programms in Microsoft Intune
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_generic-database.svg
     - href: https://blogs.technet.microsoft.com/intunesupport/2017/10/11/upcoming-security-enhancements-in-the-intune-service-your-action-is-required/
@@ -78,7 +78,7 @@ sections:
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
     - href: https://cloudblogs.microsoft.com/enterprisemobility/2017/10/26/intunes-new-troubleshooting-portal-makes-diagnosing-and-resolving-end-user-issues-easier/
-      title: "[Blog] Das Portal für die Problembehandlung erleichtert die Diagnose und das Beheben von Benutzerproblemen"
+      title: '[Blog] Das Portal für die Problembehandlung erleichtert die Diagnose und das Beheben von Benutzerproblemen'
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
 - title: Videos
@@ -92,20 +92,20 @@ sections:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/planning-guide\">Bereitstellungsplanungs-, Entwurfs- und Implementierungshandbuch für Intune</a>"
+    - html: <a href="/intune/planning-guide">Bereitstellungsplanungs-, Entwurfs- und Implementierungshandbuch für Intune</a>
     - html: <a href="/intune/migration-guide">Intune-Migrationshandbuch</a>
 - title: Anleitungen
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/device-enrollment\">Registrieren von Geräten</a>"
-    - html: "<a href=\"/intune/device-management\">Verwalten von Geräten</a>"
+    - html: <a href="/intune/device-enrollment">Registrieren von Geräten</a>
+    - html: <a href="/intune/device-management">Verwalten von Geräten</a>
     - html: <a href="/intune/app-management">Verwalten von Apps</a>
-    - html: "<a href=\"/intune/device-profiles\">Konfigurieren von Geräten</a>"
-    - html: "<a href=\"/intune/device-compliance-get-started\">Festlegen der Gerätekonformität</a>"
+    - html: <a href="/intune/device-profiles">Konfigurieren von Geräten</a>
+    - html: <a href="/intune/device-compliance-get-started">Festlegen der Gerätekonformität</a>
     - html: <a href="/intune/conditional-access">Einrichten des bedingten Zugriffs</a>
-    - html: "<a href=\"/intune/app-protection-policy\">Schützen von Apps</a>"
+    - html: <a href="/intune/app-protection-policy">Schützen von Apps</a>
     - html: <a href="/intune/mobile-threat-defense">Einrichten von Mobile Threat Defense</a>
     - html: <a href="/intune/network-access-control-integrate">Integrieren der Netzwerkzugriffssteuerung</a>
     - html: <a href="/intune/role-based-access-control">Verwalten von Rollen</a>
@@ -115,7 +115,7 @@ sections:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/help-desk-operators\">Unterstützen von Benutzern mit dem Problembehandlungsportal</a>"
+    - html: <a href="/intune/help-desk-operators">Unterstützen von Benutzern mit dem Problembehandlungsportal</a>
     - html: <a href="/intune/known-issues">Bekannte Probleme bei Intune</a>
     - html: <a href="/intune/get-support">Support anfordern</a>
 - title: Entwickeln und Anpassen von Artikeln
@@ -123,7 +123,7 @@ sections:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/custom-settings-configure\">Konfigurieren von benutzerdefinierten Geräteeinstellungen</a>"
+    - html: <a href="/intune/custom-settings-configure">Konfigurieren von benutzerdefinierten Geräteeinstellungen</a>
     - html: <a href="/intune/apps-prepare-mobile-application-management">Vorbereiten von branchenspezifischen Apps mit dem Intune App Wrapper-Tool</a>
     - html: <a href="/intune/app-sdk">Vorbereiten von branchenspezifischen Apps mit dem Intune App SDK</a>
     - html: <a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Arbeiten mit Intune in Microsoft Graph</a>

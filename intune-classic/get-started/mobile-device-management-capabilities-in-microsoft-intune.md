@@ -1,25 +1,25 @@
 ---
-title: "Verwaltungsfunktionen für registrierte Geräte"
-description: "In diesem Thema erfahren Sie, wie Intune Sie bei der Verwaltung registrierter Geräte unterstützen kann."
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: Verwaltungsfunktionen für registrierte Geräte
+description: In diesem Thema erfahren Sie, wie Intune Sie bei der Verwaltung registrierter Geräte unterstützen kann.
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 12/12/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 59bbc6d9a4170b504e3a5bb3dfe688332a0063f2
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: c6f49bf8ef934dc4b697e5d4392bde44aeb8baee
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Verwaltungsfunktionen für registrierte Geräte in Microsoft Intune
 

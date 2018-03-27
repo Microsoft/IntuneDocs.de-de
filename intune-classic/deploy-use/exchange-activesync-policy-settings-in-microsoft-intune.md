@@ -1,25 +1,25 @@
 ---
-title: "Einstellungen für Exchange ActiveSync-Richtlinien"
-description: "Verwenden Sie die Intune Exchange ActiveSync-Richtlinie, um Einstellungen zu konfigurieren, mit denen Sie Features und Funktionen auf Geräten steuern können, die von Exchange ActiveSync verwaltet werden."
-keywords: 
+title: Einstellungen für Exchange ActiveSync-Richtlinien
+description: Verwenden Sie die Intune Exchange ActiveSync-Richtlinie, um Einstellungen zu konfigurieren, mit denen Sie Features und Funktionen auf Geräten steuern können, die von Exchange ActiveSync verwaltet werden.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08e8fde89fc7b0b4114e9c084f8e00692bcc92b0
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Einstellungen für Exchange ActiveSync-Richtlinien in Microsoft Intune
 
@@ -80,5 +80,5 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

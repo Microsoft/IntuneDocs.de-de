@@ -1,25 +1,25 @@
 ---
-title: "App-Zugriff für Exchange Online"
-description: "In diesem Thema wird beschrieben, wie Sie eine Richtlinie für bedingten Zugriff für MAM-Apps konfigurieren können."
-keywords: 
+title: App-Zugriff für Exchange Online
+description: In diesem Thema wird beschrieben, wie Sie eine Richtlinie für bedingten Zugriff für MAM-Apps konfigurieren können.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f2cd1a1f-fd29-4081-8dfa-c40993a107d5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67a687af9396236af9685fd2bb423226a7e83797
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d582421ed842f1e5b87419e25c5d03ad7a138e99
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-an-exchange-online-conditional-access-to-only-allow-apps-supported-by-mam"></a>Erstellen eines bedingten Zugriffs für Exchange Online, um nur Apps zuzulassen, die von MAM unterstützt werden
 
@@ -60,5 +60,5 @@ Um aus der Liste der **eingeschränkten Benutzergruppen** **eine Benutzergruppe 
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Blockieren von Apps, die über keine moderne Authentifizierung verfügen](block-apps-with-no-modern-authentication.md)
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Protect app data with app protection policies (Schützen von App-Daten mithilfe von App-Schutzrichtlinien)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

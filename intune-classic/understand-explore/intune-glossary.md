@@ -1,23 +1,23 @@
 ---
 title: Intune-Glossar
-description: "Erläuterungen zu einigen der in Microsoft Intune verwendeten Begriffe"
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+description: Erläuterungen zu einigen der in Microsoft Intune verwendeten Begriffe
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 06/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 843d11abb3e8b759b7e35db3ce59e7f611e26bc4
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b4415b7b4b1cd48accae3f0d0d39caedd9cf6b3c
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Microsoft Intune-Glossar
 

@@ -1,25 +1,25 @@
 ---
-title: "Schützen des Zugriffs auf Netzwerke mit Cisco ISE"
-description: "Verwenden Sie Cisco ISE mit Intune, damit Geräte bei Intune registriert sind und mit der Richtlinie kompatibel sind, bevor sie auf WLAN und VPN zugreifen, die von Cisco ISE gesteuert werden."
-keywords: 
-author: arob98
+title: Schützen des Zugriffs auf Netzwerke mit Cisco ISE
+description: Verwenden Sie Cisco ISE mit Intune, damit Geräte bei Intune registriert sind und mit der Richtlinie kompatibel sind, bevor sie auf WLAN und VPN zugreifen, die von Cisco ISE gesteuert werden.
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51b3763faa95adcbfe76580e32f5a42bb615c9d9
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Verwenden von Cisco ISE mit Microsoft Intune
 
@@ -37,7 +37,7 @@ Exportieren Sie die Zertifikate aus der Azure Active Directory-Konsole (Azure AD
 #### <a name="internet-explorer-11"></a>Internet Explorer 11
 
 
-   a. Führen Sie Internet Explorer als Administrator aus, und melden Sie sich bei der Azure AD-Konsole an.
+   ein. Führen Sie Internet Explorer als Administrator aus, und melden Sie sich bei der Azure AD-Konsole an.
 
    b. Wählen Sie das Schlosssymbol in der Adressleiste und **Anzeigen von Zertifikaten** aus.
 
@@ -53,7 +53,7 @@ Exportieren Sie die Zertifikate aus der Azure Active Directory-Konsole (Azure AD
 
 #### <a name="safari"></a>Safari
 
- a. Melden Sie sich bei der Azure AD-Konsole an.
+ ein. Melden Sie sich bei der Azure AD-Konsole an.
 
 b. Wählen Sie das Schlosssymbol aus &gt;  **Weitere Informationen**.
 
@@ -88,7 +88,7 @@ Stellen Sie sicher, dass sich der gesamte Text in einer Zeile befindet
 5. Speichern Sie die Datei, ohne ihren Namen zu ändern.
 6. Stellen Sie Ihrer App Berechtigungen für Microsoft Graph und die Microsoft Intune-API bereit.
 
- a. Wählen Sie für Microsoft Graph Folgendes aus:
+ ein. Wählen Sie für Microsoft Graph Folgendes aus:
     - **Anwendungsberechtigungen**: Lesen von Verzeichnisdaten
     - **Delegierte Berechtigungen**:
         - Jederzeit auf die Daten des Benutzers zugreifen
@@ -187,6 +187,6 @@ Wenn der Benutzer sich für die Registrierung entscheidet, wird er zum Intune-Re
 Es gibt auch [herunterladbare Registrierungsanweisungen](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a), die Sie verwenden können, um einen angepassten Leitfaden für Ihre Benutzerfreundlichkeit zu erstellen.
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 
 [Cisco Identity Services Engine-Administratorhandbuch, Version 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)

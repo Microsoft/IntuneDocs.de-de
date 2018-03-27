@@ -1,25 +1,25 @@
 ---
-title: "Hinzufügen von branchenspezifischen iOS-Apps zu Microsoft Intune"
-titlesuffix: 
-description: "Erfahren Sie mehr über das Hinzufügen von branchenspezifischen iOS-Apps zu Microsoft Intune."
-keywords: 
+title: Hinzufügen von branchenspezifischen iOS-Apps zu Microsoft Intune
+titlesuffix: ''
+description: Erfahren Sie mehr über das Hinzufügen von branchenspezifischen iOS-Apps zu Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 225d598cfeb1c358131365efd1664dbdd9a76a5c
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 7de6c995108bff3b1571b281df2745629c7f9741
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="how-to-add-ios-line-of-business-lob-apps-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen iOS-Apps in Microsoft Intune
 
@@ -54,7 +54,7 @@ Fügen Sie mithilfe der Informationen in diesem Artikel branchenspezifische iOS-
     - **Beschreibung:** Geben Sie eine Beschreibung für die App ein, die den Benutzern im Unternehmensportal angezeigt werden soll.
     - **Herausgeber:** Geben Sie den Namen des Herausgebers der App ein.
     - **Mindestens erforderliches Betriebssystem:** Wählen Sie in der Liste die mindestens erforderliche Betriebssystemversion aus, auf der die App installiert werden kann. Wenn Sie die App einem Gerät mit einem älteren Betriebssystem zuweisen, wird sie nicht installiert.
-    - **App-Version ignorieren:** Legen Sie **Ja** fest, wenn die App automatisch vom Entwickler aktualisiert wird.
+    - **App-Version ignorieren**: Legen Sie **Ja** fest, wenn die App automatisch vom Entwickler aktualisiert wird.
     - **Kategorie:** Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Dadurch ist es für Benutzer einfacher, die App im Unternehmensportal zu finden.
     - **Diese App als ausgewählte App im Unternehmensportal anzeigen:** Zeigen Sie die App auf der Hauptseite des Unternehmensportal hervorgehoben an, wenn Benutzer nach Apps suchen.
     - **Informations-URL:** Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.

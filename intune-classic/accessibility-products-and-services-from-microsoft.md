@@ -1,25 +1,25 @@
 ---
 title: Barrierefreiheitsprodukte und Barrierefreiheitsdienste von Microsoft
-description: "Informationen über Barrierefreiheitsprodukte und Barrierefreiheitsdienste von Microsoft."
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+description: Informationen über Barrierefreiheitsprodukte und Barrierefreiheitsdienste von Microsoft.
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 05/04/2017
 ms.topic: reference
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b23d4007-1866-42e9-b6cb-d45408562da4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fde44a096656433de176cc6e567e7a035666c320
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e0956c8011525accbe34e659b18faec5a245c9b8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Barrierefreiheitsprodukte und Barrierefreiheitsdienste von Microsoft
 [!INCLUDE[accessibility1](./includes/accessibility1_md.md)]

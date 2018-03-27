@@ -1,25 +1,25 @@
 ---
-title: "Kompatibilitätseinstellungen für Android for Work"
-description: "In diesem Thema werden die Gerätekompatibilitätsrichtlinien für Android-Geräte beschrieben, die mit Android for Work kompatibel sind."
-keywords: 
+title: Kompatibilitätseinstellungen für Android for Work
+description: In diesem Thema werden die Gerätekompatibilitätsrichtlinien für Android-Geräte beschrieben, die mit Android for Work kompatibel sind.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fb5663e291af9de1e8ff83f4ec0c584a15614d55
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: ab1e43d1cb66bdc6e0fc02324ffd1d8923e61174
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Einstellungen für Kompatibilitätsrichtlinien für Android for Work-Geräte in Microsoft Intune
 
