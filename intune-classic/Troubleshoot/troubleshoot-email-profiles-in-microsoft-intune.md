@@ -1,25 +1,25 @@
 ---
 title: Behandeln von Problemen mit E-Mail-Profilen
-description: "Probleme mit E-Mail-Profilen sowie Informationen zu ihrer Problembehandlung und Lösung."
-keywords: 
+description: Probleme mit E-Mail-Profilen sowie Informationen zu ihrer Problembehandlung und Lösung.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c8f74ffd45fd46186b8b225fc64212ec61fefdad
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 382d9240d751c69f3b415ef9ab205b3ef596463a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Problembehandlung bei E-Mail-Profilen in Microsoft Intune
 

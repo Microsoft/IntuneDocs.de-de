@@ -1,25 +1,25 @@
 ---
-title: "Erfassen von Geräteprotokollen"
-description: "Erfahren Sie, wie Sie Protokolle Ihrer verwalteten Geräte sammeln können."
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: Erfassen von Geräteprotokollen
+description: Erfahren Sie, wie Sie Protokolle Ihrer verwalteten Geräte sammeln können.
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 02/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f54e0d40e0a8f723e04d4c2b936dee37bc611858
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 979b1317adbb23f9ace27f15c49072798b67bb95
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="device-logs"></a>Geräteprotokolle
 

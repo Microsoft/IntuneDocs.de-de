@@ -1,25 +1,25 @@
 ---
-title: "Konfigurieren der Zertifikatinfrastruktur für PFX"
+title: Konfigurieren der Zertifikatinfrastruktur für PFX
 description: Erstellen Sie PFX-Zertifikatprofile, und stellen Sie sie bereit.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b415e84f488d3bcdd14d6c3bca1aad76831fc499
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a19dbd6ad2b65e7d2d090b543f3e2200180c660a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-certificate-infrastructure"></a>Konfigurieren der Zertifikatinfrastruktur
 
@@ -94,7 +94,7 @@ Bei dieser Aufgabe veröffentlichen Sie die Zertifikatvorlage.
 
     Um die Zertifizierungsstelle so zu konfigurieren, dass der Antragsteller die Gültigkeitsdauer festlegen kann, führen Sie auf der Zertifizierungsstelle die folgenden Befehle aus:
 
-    a.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
+    ein.  **certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE**
 
     b.  **net stop certsvc**
 
@@ -102,7 +102,7 @@ Bei dieser Aufgabe veröffentlichen Sie die Zertifikatvorlage.
 
 3.  Verwenden Sie auf der ausstellenden Zertifizierungsstelle das Zertifizierungsstellen-Snap-In, um die Zertifikatvorlage zu veröffentlichen.
 
-    a.  Wählen Sie den Knoten **Zertifikatvorlagen** aus, klicken Sie auf **Aktion**-&gt; **Neu** &gt; **Auszustellende Zertifikatvorlage**, und wählen Sie dann die Vorlage aus, die Sie in Schritt 2 erstellt haben.
+    ein.  Wählen Sie den Knoten **Zertifikatvorlagen** aus, klicken Sie auf **Aktion**-&gt; **Neu** &gt; **Auszustellende Zertifikatvorlage**, und wählen Sie dann die Vorlage aus, die Sie in Schritt 2 erstellt haben.
 
     b.  Überprüfen Sie, ob die Vorlage veröffentlicht wurde, indem Sie sie im Ordner **Zertifikatvorlagen** anzeigen.
 
@@ -144,7 +144,7 @@ Herunterladen, Installieren und Konfigurieren des Certificate Connectors
 
 5.  Gehen Sie auf der Benutzeroberfläche von **Zertifikatconnector** so vor:
 
-    a. Klicken Sie auf **Anmelden**, und geben Sie die Anmeldeinformationen des Intune-Dienstadministrators oder eines Mandantenadministrators mit der globalen Administratorberechtigung ein.
+    ein. Klicken Sie auf **Anmelden**, und geben Sie die Anmeldeinformationen des Intune-Dienstadministrators oder eines Mandantenadministrators mit der globalen Administratorberechtigung ein.
 
     b. Wählen Sie die Registerkarte **Erweitert** aus, und geben Sie anschließend die Anmeldeinformationen für ein Konto ein, das über die Berechtigung **Zertifikate ausstellen und verwalten** für die ausstellende Zertifizierungsstelle verfügt.
 

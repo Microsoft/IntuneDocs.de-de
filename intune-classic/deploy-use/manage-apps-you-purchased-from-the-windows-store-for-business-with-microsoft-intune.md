@@ -1,25 +1,25 @@
 ---
-title: "Verwalten von Apps aus dem Microsoft Store für Unternehmen"
-description: "Stellen Sie eine Verbindung zwischen Microsoft Intune und dem Microsoft Store für Unternehmen her, wenn Sie über ein Volumenprogramm erworbene Apps über die Intune-Konsole verwalten und bereitstellen möchten."
-keywords: 
+title: Verwalten von Apps aus dem Microsoft Store für Unternehmen
+description: Stellen Sie eine Verbindung zwischen Microsoft Intune und dem Microsoft Store für Unternehmen her, wenn Sie über ein Volumenprogramm erworbene Apps über die Intune-Konsole verwalten und bereitstellen möchten.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 02/02/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2de00bab670cd414d10750bb6f7f05283ea8bff3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Verwalten von Apps, die im Microsoft Store für Unternehmen mit Microsoft Intune erworben wurden
 
@@ -82,5 +82,5 @@ Wenn Sie eine App aus dem Microsoft Store für Unternehmen bereitstellen, wird v
 > Bereitgestellte Apps sind nur für den Benutzer verfügbar, der das Gerät ursprünglich registriert hat. Andere Benutzer können nicht auf die App zugreifen.
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Hinzufügen von Apps für mobile Geräte in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md)

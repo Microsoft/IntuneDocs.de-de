@@ -1,25 +1,25 @@
 ---
 title: Benachrichtigungen durch Warnungen | Microsoft-Dokumentation
-description: "Erfahren Sie, wie Sie mit Warnungen über Ereignisse in Microsoft Intune auf dem Laufenden bleiben."
-keywords: 
+description: Erfahren Sie, wie Sie mit Warnungen über Ereignisse in Microsoft Intune auf dem Laufenden bleiben.
+keywords: ''
 author: nathbarn
-ms.author: angrobe
-manager: angrobe
+ms.author: dougeby
+manager: dougeby
 ms.date: 8/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 396ea714 0433 4bd5 a934 8d0b477f28e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune classic
-ms.openlocfilehash: 1e7ad299b91fe8e258d6769eed6f199bdb7f0537
-ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
+ms.openlocfilehash: daa936b43c53d14d57f2c48f80dff7e908354054
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 03/22/2018
 ---
 #  <a name="use-alerts-to-get-notified-by-microsoft-intune"></a>Verwenden von Warnungen, um Benachrichtigungen durch Microsoft Intune zu erhalten
 

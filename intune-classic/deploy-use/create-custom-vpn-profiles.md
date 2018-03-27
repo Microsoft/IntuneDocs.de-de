@@ -1,25 +1,25 @@
 ---
-title: "Benutzerdefinierte Konfigurationen für Microsoft Intune-VPN-Profile"
+title: Benutzerdefinierte Konfigurationen für Microsoft Intune-VPN-Profile
 description: Verwenden Sie benutzerdefinierte Konfigurationen, um VPN-Profile in Intune zu erstellen.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab235f10c8c91e707c623eca5168ff75de234f32
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6139b656c69b58bdbdd02e296f8a061dd598a1c6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="custom-configurations-for-microsoft-intune-vpn-profiles"></a>Benutzerdefinierte Konfigurationen für Microsoft Intune-VPN-Profile
 
@@ -163,5 +163,5 @@ Beispiele:
 > - Standardmäßig *WHITELIST*, wenn eine PackageList angegeben ist
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [VPN-Verbindungen in Microsoft Intune](vpn-connections-in-microsoft-intune.md)

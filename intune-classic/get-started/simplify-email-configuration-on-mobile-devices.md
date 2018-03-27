@@ -1,25 +1,25 @@
 ---
-title: "Vereinfachen der E-Mail-Konfiguration auf mobilen Geräten"
-description: 
-keywords: 
+title: Vereinfachen der E-Mail-Konfiguration auf mobilen Geräten
+description: ''
+keywords: ''
 author: jeffgilb
 ms.author: jeffgilb
-manager: angrobe
+manager: dougeby
 ms.date: 12/22/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1696c715-1e9a-401e-a530-77904fd189ad
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99ffa50aaf60af5b4f7253b397fbb8e3c18cce61
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 8e11ae063bc2cc302af238ab9062da82c6b6c30c
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>Erste Schritte: Vereinfachen der E-Mail-Konfiguration auf mobilen Geräten
 

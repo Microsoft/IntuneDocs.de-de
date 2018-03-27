@@ -1,25 +1,25 @@
 ---
-title: "Richtlinieneinstellungen für Windows-Editionsupgrades"
-description: "Erfahren Sie, wie Sie Windows 10-Geräte mit Intune automatisch auf eine andere Version aktualisieren."
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: Richtlinieneinstellungen für Windows-Editionsupgrades
+description: Erfahren Sie, wie Sie Windows 10-Geräte mit Intune automatisch auf eine andere Version aktualisieren.
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 04/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 690fe1f1b2555996b2ef124cde6e3fba53e82ec7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 005f8cf2e769b1b007424e55867160a0f5828f7a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="windows-edition-upgrade-policy-settings-in-microsoft-intune"></a>Einstellungen der Richtlinie für Windows-Editionsupgrades in Microsoft Intune
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 10/10/2017
 Mithilfe der Microsoft Intune-**Richtlinie für Editionsupgrades** können Sie für Geräte, die eine der folgenden Windows 10-Versionen ausführen, automatisch Upgrades auf eine andere Edition vornehmen:
 * Windows 10 Desktop
 * Windows 10 Holographic
-* Windows 10 Mobile
+* Windows 10 Mobile
 
 Die folgenden Upgradepfade werden unterstützt:
 - Von Windows 10 Pro auf Windows 10 Enterprise
@@ -52,5 +52,5 @@ Bevor Sie beginnen, Geräte auf die neueste Version zu aktualisieren, benötigen
 |**Product Key**|Geben Sie den Product Key an, den Sie von Microsoft erhalten haben, und der für das Upgrade aller als Ziel festgelegten Windows 10 Desktop-Geräte verwendet werden kann.<br>Nach der Erstellung einer Richtlinie, die einen Product Key enthält, können Sie den Product Key später nicht mehr bearbeiten. Grund hierfür ist, dass der Schlüssel aus Sicherheitsgründen verborgen wird. Um den Product Key zu ändern, müssen Sie den gesamten Schlüssel erneut eingeben.
 |**Lizenzdatei**|Klicken Sie auf **Durchsuchen**, um die von Microsoft erhaltene Lizenzdatei auszuwählen, die Lizenzinformationen für die Windows Holographic-Edition oder für die Windows 10 Mobile-Edition enthält, auf die das Upgrade bei den als Ziel festgelegten Geräten erfolgen soll.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

@@ -1,25 +1,25 @@
 ---
 title: Erstellen und Bereitstellen von MAM-Richtlinien
-description: "Verwenden Sie die schrittweisen Anweisungen in diesem Thema zum Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps."
-keywords: 
+description: Verwenden Sie die schrittweisen Anweisungen in diesem Thema zum Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93ec41c756c802986b85a45f53329ef6daba6c08
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Erstellen und Bereitstellen von App-Schutzrichtlinien mit Microsoft Intune
 
@@ -138,7 +138,7 @@ Ab der Intune-Version 1703 haben Sie die Möglichkeit, LOB-Apps allgemein in Int
 <br></br>
 2. Klicken Sie auf dem Blatt „Zulässige Apps“ oder „Ausgeschlossene Apps“ auf **Hinzufügen von Apps**. Sie können empfohlene Microsoft-Apps sowie Store- oder Desktop-Apps hinzufügen.
 
-    a.  **Empfohlene Apps:** Eine voraufgefüllte Liste der Apps (hauptsächlich Office), die Administratoren einfach in die Richtlinie importieren dürfen.
+    ein.  **Empfohlene Apps:** Eine voraufgefüllte Liste der Apps (hauptsächlich Office), die Administratoren einfach in die Richtlinie importieren dürfen.
 
     b.  **Store-Apps:** Administratoren können eine beliebige App aus dem Windows Store in die Richtlinie einfügen.
 
@@ -216,6 +216,6 @@ Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finde
 ## <a name="next-steps"></a>Nächste Schritte
 [Überwachen der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 * [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](/intune/end-user-mam-apps-android)
 * [Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird](/intune/end-user-mam-apps-ios)

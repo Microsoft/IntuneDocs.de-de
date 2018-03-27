@@ -1,25 +1,25 @@
 ---
 title: Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
 description: Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien in Intune
-keywords: 
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 9/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b2049fa20b79ffb21e70b037aa9ddab863f66108
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 34e3112141e8bc0125ae320fa7ab8093d3b4ffc5
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
 
@@ -67,7 +67,7 @@ Nachdem Sie in Ihrer Organisation Intune eingerichtet haben, können Sie eine WI
 
 2.  Wählen Sie auf dem Blatt **App-Richtlinie** die Option **Richtlinie hinzufügen** aus und geben Sie folgende Werte ein:
 
-    a.  **Name:** Geben Sie einen Namen (Pflichtfeld) für Ihre neue Richtlinie ein.
+    ein.  **Name:** Geben Sie einen Namen (Pflichtfeld) für Ihre neue Richtlinie ein.
 
     b.  **Beschreibung:** Geben Sie eine optionale Beschreibung ein.
 

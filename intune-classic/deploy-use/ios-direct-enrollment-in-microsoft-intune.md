@@ -1,25 +1,25 @@
 ---
-title: "Direkte Registrierung für iOS-Geräte"
-description: "Verwenden Sie den Apple Configurator, um unternehmenseigene iOS-Geräte direkt mit einer vordefinierten Richtlinie zu registrieren, indem Sie sie über USB an einen Mac-Computer anschließen."
-keywords: 
+title: Direkte Registrierung für iOS-Geräte
+description: Verwenden Sie den Apple Configurator, um unternehmenseigene iOS-Geräte direkt mit einer vordefinierten Richtlinie zu registrieren, indem Sie sie über USB an einen Mac-Computer anschließen.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 01/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: db07c6c6aa98d880bcc9f32204dffddebe6f45b4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 79f720af293b6062e140fac9341f97a55bf598fe
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="directly-enroll-ios-devices-by-using-apple-configurator"></a>Direkte Registrierung von iOS-Geräten mithilfe von Apple Configurator
 

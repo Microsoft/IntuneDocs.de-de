@@ -1,39 +1,39 @@
 ---
-title: "Gerätekompatibilitätsrichtlinien"
-description: "In diesem Thema wird erläutert, was Gerätekompatibilitätsrichtlinien sind und wie sie funktionieren."
-keywords: 
+title: Gerätekompatibilitätsrichtlinien
+description: In diesem Thema wird erläutert, was Gerätekonformitätsrichtlinien sind und wie sie funktionieren.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bcdad361dba7ee006bf2e2cffac7f1024c5e6dc6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ce8375a1b946a7ba5286637b1958539fd5015d8a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="device-compliance-policies-in-microsoft-intune"></a>Gerätekompatibilitätsrichtlinien in Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-## <a name="what-is-a-compliance-policy"></a>Was ist eine Kompatibilitätsrichtlinie?
+## <a name="what-is-a-compliance-policy"></a>Was ist eine Konformitätsrichtlinie?
 Um Unternehmensdaten zu schützen, müssen Sie sicherstellen, dass die Geräte, die für den Zugriff auf Unternehmens-Apps und Daten verwendet werden, bestimmten Regeln entsprechen. Diese Regeln könnten die Verwendung einer PIN für den Zugriff auf Geräte und das Verschlüsseln von Daten, die auf Geräten gespeichert sind, einschließen. Eine Gruppe solcher Regeln wird als Kompatibilitätsrichtlinie bezeichnet.
 
-## <a name="how-should-i-use-compliance-policies"></a>Wie verwende ich Kompatibilitätsrichtlinien?
+## <a name="how-should-i-use-compliance-policies"></a>Wie verwende ich Konformitätsrichtlinien?
 Sie können Kompatibilitätsrichtlinien mit Richtlinien für bedingten Zugriff verwenden, um nur Geräte zuzulassen, die Kompatibilitätsrichtlinienregeln für den Zugriff auf E-Mail und andere Dienste entsprechen. Wie die beiden Richtlinien zusammen verwendet werden können, erfahren Sie im Artikel [Einschränken des Zugriffs auf E-Mail- und Office 365-Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
-Sie können Kompatibilitätsrichtlinien auch unabhängig vom bedingten Zugriff nutzen. Bei unabhängiger Nutzung von Kompatibilitätsrichtlinien werden die Zielgeräte ausgewertet und mit ihrem Kompatibilitätsstatus gemeldet. Sie können beispielsweise einen Bericht dazu erstellen, wie viele Geräte nicht verschlüsselt sind oder per Jailbreak oder Rootzugriff manipuliert wurden. Aber wenn Sie Kompatibilitätsrichtlinien unabhängig nutzen, gelten keine Zugriffsbeschränkungen für Unternehmensressourcen.
+Sie können Konformitätsrichtlinien auch unabhängig vom bedingten Zugriff nutzen. Bei unabhängiger Nutzung von Kompatibilitätsrichtlinien werden die Zielgeräte ausgewertet und mit ihrem Kompatibilitätsstatus gemeldet. Sie können beispielsweise einen Bericht dazu erstellen, wie viele Geräte nicht verschlüsselt sind oder per Jailbreak oder Rootzugriff manipuliert wurden. Aber wenn Sie Kompatibilitätsrichtlinien unabhängig nutzen, gelten keine Zugriffsbeschränkungen für Unternehmensressourcen.
 
-Sie stellen Kompatibilitätsrichtlinien für Benutzer bereit. Wenn Sie eine Kompatibilitätsrichtlinie für einen Benutzer bereitstellen, wird die Kompatibilität der Geräte des Benutzers überprüft.
+Sie stellen Konformitätsrichtlinien für Benutzer bereit. Wenn Sie eine Kompatibilitätsrichtlinie für einen Benutzer bereitstellen, wird die Kompatibilität der Geräte des Benutzers überprüft.
 Informationen darüber, wie lange es dauert, bis eine Richtlinie für mobile Geräte nach der Bereitstellung der Richtlinie abgerufen wird, finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies).
 
 Die folgende Tabelle enthält die Gerätetypen, die Kompatibilitätsrichtlinien unterstützen. In der Tabelle wird auch beschrieben, wie nicht kompatible Einstellungen verwaltet werden, wenn eine Kompatibilitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird.
@@ -65,5 +65,5 @@ Die folgende Tabelle enthält die Gerätetypen, die Kompatibilitätsrichtlinien 
 
 [Bereitstellen und Überwachen einer Kompatibilitätsrichtlinie für Geräte](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Beschränken des Zugriffs auf E-Mail- und Office 365-Dienste](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)

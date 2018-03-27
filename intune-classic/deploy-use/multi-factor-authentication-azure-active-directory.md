@@ -1,23 +1,23 @@
 ---
-title: "Mehrstufige Authentifizierung für Intune-Geräteregistrierungen"
-description: "Anfordern der mehrstufigen Authentifizierung in Azure AD für die Geräteregistrierung."
-keywords: 
-author: arob98
+title: Mehrstufige Authentifizierung für Intune-Geräteregistrierungen
+description: Anfordern der mehrstufigen Authentifizierung in Azure AD für die Geräteregistrierung.
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angerobe
 ms.date: 02/17/2017
 ms.topic: article
-ms.prod: 
-ms.service: 
-ms.technology: 
+ms.prod: ''
+ms.service: ''
+ms.technology: ''
 ms.assetid: 47abdabd-dcd6-48d8-aade-3f3eefb92ee1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 6d8a13033486256da171847646bd95fe77c978c8
-ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
+ms.openlocfilehash: e8572834aed14ee08b3ba3c74bc7504193397ef5
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="multi-factor-authentication-for-intune-device-enrollments"></a>Multi-Factor Authentication für Intune-Geräteregistrierungen
 

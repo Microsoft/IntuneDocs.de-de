@@ -1,25 +1,25 @@
 ---
 title: Aktivieren von Lookout MTP in Intune
 description: Aktivieren von Lookout Mobile Threat Protection in der Intune-Verwaltungskonsole.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2f835fd0-4e62-42f3-b7ca-ce8b7ddd40e4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f34697140a287d41203d1bad5df59250f07d08ce
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 99c9952b8df3e9b4b1992cbc45366a5ceed458aa
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enable-lookout-mtd-connection-in-the-intune-classic-portal"></a>Aktivieren der Lookout MTD-Verbindung im klassischen Intune-Portal
 

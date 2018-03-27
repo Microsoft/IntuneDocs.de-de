@@ -1,25 +1,25 @@
 ---
-title: "Veröffentlichen mobiler Apps für Benutzer"
-description: 
-keywords: 
+title: Veröffentlichen mobiler Apps für Benutzer
+description: ''
+keywords: ''
 author: jeffgilb
 ms.author: jeffgilb
-manager: angrobe
+manager: dougeby
 ms.date: 11/22/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8bcb94b087a310eb15a24945e82fc6ddbff3cbc9
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: ef4eac0e0841ba20a966f2ee30ed51659f25afa3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="quick-start-guide-publish-mobile-apps-to-your-users"></a>Erste Schritte: Veröffentlichen mobiler Apps für Benutzer
 

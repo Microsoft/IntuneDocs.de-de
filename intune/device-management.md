@@ -1,24 +1,24 @@
 ---
-title: "Verwalten von Geräten mit Microsoft Intune"
-titleSuffix: 
-description: "Überprüfen Sie die mit Intune verwalteten Geräte, und führen Sie verschiedene Vorgänge auf diesen aus."
-keywords: 
+title: Verwalten von Geräten mit Microsoft Intune
+titleSuffix: ''
+description: Überprüfen Sie die mit Intune verwalteten Geräte, und führen Sie verschiedene Vorgänge auf diesen aus.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/21/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e69f47e841cb44ab646431d5bd81b9c1d874c64
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 436eeb306bf4ba343ae4d88a824aeed2077a3426
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Was ist die Microsoft Intune Geräteverwaltung?
 
@@ -30,7 +30,7 @@ Als IT-Administrator müssen Sie sicherstellen, dass verwaltete Geräte die Ress
 Die Workload **Geräte** liefert Informationen zu den verwalteten Geräten und ermöglicht die Ausführung von Remoteaufgaben auf diesen Geräten. So greifen Sie auf die Workload zu
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie in **Intune** die Option **Geräte** aus.
 4. Sie können Informationen über Geräte anzeigen und die folgenden Remotegeräteaktionen durchführen:
     - **Übersicht**: Eine Momentaufnahme der registrierten Geräte, die Sie verwalten können.

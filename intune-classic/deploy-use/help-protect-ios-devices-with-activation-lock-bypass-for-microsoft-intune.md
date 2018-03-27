@@ -1,25 +1,25 @@
 ---
-title: "Verwalten der iOS-Aktivierungssperre auf Geräten"
-description: "Microsoft Intune kann Sie beim Verwalten der iOS-Aktivierungssperre unterstützen, einem Feature der App „Mein iPhone suchen“ für iOS 7.1 und höher."
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+title: Verwalten der iOS-Aktivierungssperre auf Geräten
+description: Microsoft Intune kann Sie beim Verwalten der iOS-Aktivierungssperre unterstützen, einem Feature der App „Mein iPhone suchen“ für iOS 7.1 und höher.
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 04/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a05c8e6a45c57f5f6f0c90d5fbb48164cde34a1c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 12363a677bc7d1ffefe224ff0bb10067903132ae
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune"></a>Unterstützen des Schutz von iOS-Geräten durch Umgehung der Aktivierungssperre für Microsoft Intune
 
@@ -101,6 +101,6 @@ Es gibt zwei Möglichkeiten zur Ermittlung, welche Geräte die Aktivierungssperr
     >Intune erfasst alle sieben Tage den Status der Aktivierungssperre auf Geräten. Aus diesem Grund werden Geräte in der Intune-Konsole möglicherweise nicht sofort mit dem richtigen Status der Aktivierungssperre angezeigt.
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Abkoppeln von Geräten](retire-devices-from-microsoft-intune-management.md)
 [Geräteschutz durch Remotesperre und Zurücksetzen der Kennung](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)

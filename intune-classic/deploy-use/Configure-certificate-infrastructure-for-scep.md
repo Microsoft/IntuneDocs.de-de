@@ -1,25 +1,25 @@
 ---
-title: "Konfigurieren der Zertifikatinfrastruktur für SCEP"
-description: "Die Infrastruktur für das Erstellen und Bereitstellen von SCEP-Zertifikatprofilen."
-keywords: 
+title: Konfigurieren der Zertifikatinfrastruktur für SCEP
+description: Die Infrastruktur für das Erstellen und Bereitstellen von SCEP-Zertifikatprofilen.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 1/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ddf7b2e90b0008e23d550cc347d2c904cc9bc9be
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 37dcc2e7a11e33ff0543a3f2020331d52f5052ad
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Konfigurieren der Zertifikatinfrastruktur für SCEP
 

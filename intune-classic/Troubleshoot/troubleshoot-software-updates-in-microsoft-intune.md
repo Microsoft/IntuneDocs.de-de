@@ -1,25 +1,25 @@
 ---
 title: Behandlung von Problemen bei Softwareupdates
-description: "Lösen Sie Probleme mit Softwareupdates in Microsoft Intune."
-keywords: 
+description: Lösen Sie Probleme mit Softwareupdates in Microsoft Intune.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 66cca236d2779fb9a7a01ad6aa10a57edf8ab657
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 36715859c4c4685aa8d0fc74b360efd2372ee6c2
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Behandlung von Problemen bei Softwareupdates in Microsoft Intune
 

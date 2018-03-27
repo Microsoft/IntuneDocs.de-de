@@ -1,25 +1,25 @@
 ---
 title: Aufgaben nach der Konfiguration
-description: "Schließen Sie optionale Konfigurationsaufgaben ab, um die Funktionen der Verwaltung mobiler Geräte zu optimieren."
-keywords: 
+description: Schließen Sie optionale Konfigurationsaufgaben ab, um die Funktionen der Verwaltung mobiler Geräte zu optimieren.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 05/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d27a711cc9d874b3a0c56d1df3b9e53411600196
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 2f65d7e55af7f1e8d84276ddd12a0a90cae70b54
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="post-configuration-tasks"></a>Aufgaben nach der Konfiguration
 

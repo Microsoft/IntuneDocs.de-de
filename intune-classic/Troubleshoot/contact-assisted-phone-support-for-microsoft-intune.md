@@ -1,25 +1,25 @@
 ---
 title: 'Kontaktieren des telefonischen Supports '
-description: "Telefonnummern für die Microsoft Intune-Hilfe"
-keywords: "Geschäftszeiten"
-author: arob98
-ms.author: angrobe
-manager: angrobe
+description: Telefonnummern für die Microsoft Intune-Hilfe
+keywords: Geschäftszeiten
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 821234397df511e054e98bc11cd6da21ce8370d7
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 0cabaf4474ef96f25a09477fd5d25e2c68b559a8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>An den telefonischen Support für Microsoft Intune wenden
 
@@ -106,7 +106,7 @@ ms.lasthandoff: 02/23/2018
 |Sri Lanka|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr IST (UTC +5:30)|Englisch||2423-254|
 |Schweden|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CET (UTC +1)|Schwedisch&#42;, Englisch|0201605899|0851761966|
 |Schweiz|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr CET (UTC +1)|Französisch&#42;, Deutsch&#42;, Italienisch&#42;, Englisch|0800000300|0227614114|
-|Taiwan|24 x 7|Montag-Freitag<br /><br />09:00-18:00 Uhr CST (UTC +8)|Mandarin&#42;, Englisch|0800 666802|02 26567301|
+|Republik China (Taiwan)|24 x 7|Montag-Freitag<br /><br />09:00-18:00 Uhr CST (UTC +8)|Mandarin&#42;, Englisch|0800 666802|02 26567301|
 |Thailand|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr PHT (UTC +8)|Englisch|1800 4412619||
 |Trinidad und Tobago|24 x 7|Montag-Freitag<br /><br />09:00-17:00 Uhr AST (UTC -4)|Englisch|1-8552147711||
 |Tunesien|24 x 7|Sonntag bis Donnerstag<br /><br />09:00-19:00 Uhr CET (UTC +2)|Französisch&#42;, Englisch||+216 71 16 68 02<br /><br />Schritt 1: Wählen Sie Option 1 aus.<br /><br />Schritt 2: Wählen Sie Option 1 aus.<br /><br />Schritt 3: Wählen Sie Option 9 aus.<br /><br />Schritt 4: Geben Sie Code 7703 ein.|

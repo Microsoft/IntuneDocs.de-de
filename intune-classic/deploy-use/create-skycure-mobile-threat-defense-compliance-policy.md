@@ -1,25 +1,25 @@
 ---
-title: "Erstellen der Skycure Mobile Threat Defense-Kompatibilitätsrichtlinie"
-description: "Erstellen Sie die Skycure Mobile Threat Defense-Kompatibilitätsrichtlinie im klassischen Intune-Portal."
-keywords: 
+title: Erstellen der Skycure Mobile Threat Defense-Kompatibilitätsrichtlinie
+description: Erstellen Sie die Skycure Mobile Threat Defense-Kompatibilitätsrichtlinie im klassischen Intune-Portal.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 56ff1728-1119-4e8a-aae6-ed5c7fafa052
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ea45ac89064756f4b8ebd8ca9d163a151b6e6cc2
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: c8f4218b5da66769d22bdbc3859af433f8e6e399
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>Erstellen der Skycure Mobile Threat Defense-Kompatibilitätsrichtlinie
 
