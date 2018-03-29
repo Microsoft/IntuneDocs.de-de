@@ -1,25 +1,25 @@
 ---
 title: Mac OS X-Richtlinieneinstellungen
-description: "Intune bietet eine Reihe integrierter allgemeiner Einstellungen, die Sie auf Mac OS X-Geräten konfigurieren können. Darüber hinaus können Sie das Apple Configurator-Tool verwenden, um benutzerdefinierte Einstellungen zu erstellen, die nicht von Intune verfügbar sind."
-keywords: 
+description: Intune bietet eine Reihe integrierter allgemeiner Einstellungen, die Sie auf Mac OS X-Geräten konfigurieren können. Darüber hinaus können Sie das Apple Configurator-Tool verwenden, um benutzerdefinierte Einstellungen zu erstellen, die nicht von Intune verfügbar sind.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 18f05219d002f0998e25671e39f1e71449b7b6c7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 873b1041ec7f5a993195e4a988580fd88100b282
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="mac-os-x-configuration-policy-settings-in-microsoft-intune"></a>Einstellungen für Mac OS X-Konfigurationsrichtlinien in Microsoft Intune
 
@@ -63,7 +63,7 @@ Aktivieren Sie in der Liste der **kompatiblen und nicht kompatiblen Apps für Ma
 |----------------|---------------|
 |**Nichtkompatibilität melden, wenn Benutzer die aufgelisteten Apps installieren**|Zeigt die Mac OS X-Apps an, die Benutzer nicht installieren dürfen. Wenn Benutzer eine dieser Apps installieren, werden sie in den **Berichten über nicht kompatible Apps** aufgeführt.|
 |**Nichtkonformität melden, wenn Benutzer die nicht aufgelisteten Apps installieren**|Zeigt die Mac OS X-Apps an, die Benutzer installieren dürfen. Wenn Benutzer andere Apps installieren, werden diese in den **Berichten über nicht kompatible Apps** aufgeführt.|
-|**Hinzufügen**|Fügt der ausgewählten Liste eine App hinzu. Geben Sie einen Namen Ihrer Wahl, optional den Herausgeber der App sowie die Paket-ID der App an. **Tipp:** Zum Ermitteln der Paket-ID einer App führen Sie auf einem Mac-Computer, auf dem die App installiert ist, die folgenden Schritte aus:<ol><li>Öffnen Sie den Ordner, in dem die App installiert ist (z. B. **/Programme**).</li><li>Wählen Sie das Paket *&lt;App-Name&gt;***.app** und anschließend **Paketinhalt anzeigen** aus.</li><li>Öffnen Sie die Datei **Info.plist**.</li><li>Überprüfen Sie den Wert, der dem Schlüssel **CFBundleIdentifier** zugewiesen ist.</li></ol>Die Paket-ID weist das Format **com.contoso.appname** auf.|
+|**Hinzufügen**|Fügt der ausgewählten Liste eine App hinzu. Geben Sie einen Namen Ihrer Wahl, optional den Herausgeber der App sowie die Paket-ID der App an. **Tipp:** Zum Ermitteln der Paket-ID einer App führen Sie auf einem Mac-Computer, auf dem die App installiert ist, die folgenden Schritte aus:<ol><li>Öffnen Sie den Ordner, in dem die App installiert ist (z. B. **/Programme**).</li><li>Wählen Sie das Paket *&lt;App-Name&gt;***.app** aus, und klicken Sie auf **Paketinhalt anzeigen**.</li><li>Öffnen Sie die Datei **Info.plist**.</li><li>Überprüfen Sie den Wert, der dem Schlüssel **CFBundleIdentifier** zugewiesen ist.</li></ol>Die Paket-ID weist das Format **com.contoso.appname** auf.|
 |**Anwendungen importieren**|Importiert eine Liste von Apps, die Sie in einer durch Trennzeichen getrennten Datei angegeben haben. Verwenden Sie in der Datei das Format App-Name, Herausgeber, Paket-ID der App.|
 |**Bearbeiten**|Ermöglicht das Bearbeiten der Werte für Name, Herausgeber und Paket-ID der ausgewählten App.|
 |**Löschen**|Löscht die ausgewählte App aus der Liste.|
@@ -73,7 +73,7 @@ Aktivieren Sie in der Liste der **kompatiblen und nicht kompatiblen Apps für Ma
 > [!IMPORTANT]
 > Wenn sich ein Mac OS X-Gerät im Energiesparmodus befindet, können keine Richtlinien oder Profile bereitgestellt oder inventarisiert werden. Infolgedessen zeigt die Intune-Konsole möglicherweise vorübergehend den Status **Richtlinieneinstellungen mit Fehlern** an, bis das Gerät wieder aus dem Energiesparmodus aktiviert wird.
 
-### <a name="monitor-compliant-and-noncompliant-apps"></a>Überwachen kompatibler und nicht kompatibler Apps
+### <a name="monitor-compliant-and-noncompliant-apps"></a>Überwachen konformer und nicht konformer Apps
 Anhand der **Berichte über nicht kompatible Apps** können Sie überprüfen, ob die angegebenen Apps kompatibel sind.
 
 #### <a name="to-run-a-report"></a>So führen Sie einen Bericht aus
@@ -91,7 +91,7 @@ Mit dieser Funktion können Sie Mac OS X-Einstellungen bereitstellen, die nicht 
 Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigurationsdatei mit den Einstellungen erstellt haben, die Sie für Benutzer oder Geräte bereitstellen möchten. Um Apple Configurator herunterzuladen und mehr darüber zu erfahren, besuchen Sie den [Mac App Store](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12).
 
 > [!NOTE]
-> Intune gibt keine Auskunft über die Kompatibilität der einzelnen Einstellungen einer benutzerdefinierten Mac OS X-Richtlinie. Die Gesamtkompatibilität der Richtlinie wird jedoch angegeben.
+> Intune gibt keine Auskunft über die Konformität der einzelnen Einstellungen einer benutzerdefinierten Mac OS X-Richtlinie. Die Gesamtkompatibilität der Richtlinie wird jedoch angegeben.
 
 ### <a name="general-settings"></a>Allgemeine Einstellungen
 
@@ -112,12 +112,12 @@ Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigur
 
 
 ### <a name="how-to-create-a-configuration-profile-file"></a>Erstellen einer Konfigurationsprofildatei
-Die Konfigurationsprofildatei, die von der benutzerdefinierten Richtlinie verwendet wird, kann über zwei Methoden erstellt werden.
+Die Konfigurationsprofildatei, die von der benutzerdefinierten Richtlinie verwendet wird, kann auf zwei Weisen erstellt werden:
 
 -   Exportieren Sie die Datei (mit der Erweiterung **.mobileconfig**) aus dem Apple Configurator-Tool.
 
 -   Erstellen Sie die Datei selbst unter Verwendung des entsprechenden Schemas aus der [Apple Configuration Profile Key Reference](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html).
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

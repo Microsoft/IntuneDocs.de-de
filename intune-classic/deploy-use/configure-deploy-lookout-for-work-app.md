@@ -1,24 +1,24 @@
 ---
 title: Bereitstellen von Lookout for Work-Apps
-description: "Konfigurieren und Bereitstellen von Lookout for Work-Apps für Android."
+description: Konfigurieren und Bereitstellen von Lookout for Work-Apps für Android.
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/21/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd0ad36f40463ab56f1a5ab0a11fa9eeb0c35db4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5d56dcf54c4f087dbea0dfcd95a2eebbdf384c00
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>Konfigurieren und Bereitstellen der Lookout for Work-App
 
@@ -29,7 +29,7 @@ In diesem Artikel wird die Konfiguration und Bereitstellung der Lookout for Work
 ## <a name="android-google-play-store-app"></a>Android (Google Play Store-App)
 
 1.  Wechseln Sie in der [Microsoft Intune-Administratorkonsole](https://manage.microsoft.com) zu **Apps**, und wählen Sie **Apps hinzufügen** aus.
-2.  Wählen Sie auf der Seite **Softwaresetup** des Herausgebers **Externer Link** aus, und geben Sie die folgende URL an: https://play.google.com/store/apps/details?id=com.lookout.enterprise
+2.  Klicken Sie auf der Seite **Softwaresetup** des Herausgebers auf **Externer Link** und geben Sie folgende URL ein: https://play.google.com/store/apps/details?id=com.lookout.enterprise.
   >[!NOTE]
   >Klicken Sie nicht auf das Feld, das einen verwalteten Browser vorschreibt.
 
@@ -86,7 +86,7 @@ In diesem Artikel wird die Konfiguration und Bereitstellung der Lookout for Work
   Aktivieren Sie die Option **Erforderliche Installation**, um vorzuschreiben, dass die Lookout-App auf dem Gerät des Benutzers installiert wird.
 
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Was geschieht beim Öffnen der bereitgestellten App auf dem Gerät?
-https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Wenn der Benutzer Lookout for Work auf dem Gerät öffnet, wird er aufgefordert, die App zu aktivieren und die Option „Bei Azure Active Directory anmelden“ auszuwählen. Eine ausführliche exemplarische Vorgehensweise mit dem Arbeitsablauf für den Endbenutzer finden sich in folgenden Themen:
+https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Wenn der Benutzer Lookout for Work auf dem mobilen Gerät öffnet, wird er aufgefordert, die App zu aktivieren und die Option „Bei Azure Active Directory anmelden“ auszuwählen. Eine ausführliche exemplarische Vorgehensweise mit dem Arbeitsablauf für den Endbenutzer finden sich in folgenden Themen:
 
 * [Sie werden zur Installation von Lookout for Work auf Ihrem Android-Gerät aufgefordert](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 

@@ -1,25 +1,25 @@
 ---
-title: "Von Microsoft Intune unterstützte Betriebssysteme und Browser"
-titleSuffix: 
-description: "Liste der unterstützten Geräteplattformen und Browser für die Intune-Geräteverwaltung"
-keywords: 
+title: Von Microsoft Intune unterstützte Betriebssysteme und Browser
+titleSuffix: ''
+description: Liste der unterstützten Geräteplattformen und Browser für die Intune-Geräteverwaltung
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/03/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
-ms.reviewer: angrobe
+ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e58201620612118f0984a1c477b3fa3bc7e923a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 5a8962223bac0ed27b6a52404973f2c30abfc28b
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Unterstützte Betriebssysteme und Browser
 
@@ -109,7 +109,7 @@ Für diese Portale werden die folgenden Browser unterstützt:
 
 ### <a name="intune-classic-portal"></a>Klassisches Intune-Portal
 
-Die klassischen Intune-Funktionen wie der Intune PC-Softwareclient und die Integration von Mobile Threat Defense-Partnern sind nur im klassischen Intune-Portal (https://manage.microsoft.com) verfügbar. Das klassische Intune-Portal erfordert Silverlight-Browserunterstützung.
+Klassische Intune-Features wie der Intune PC-Softwareclient und die Integration von Mobile Threat Defense-Partnern sind nur im klassischen Intune-Portal (https://manage.microsoft.com)) verfügbar. Das klassische Intune-Portal erfordert Silverlight-Browserunterstützung.
 
 Die folgenden Silverlight-Browser unterstützen die Intune-Konsole:
 - Internet Explorer 10 oder höher

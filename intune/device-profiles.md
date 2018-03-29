@@ -1,24 +1,24 @@
 ---
-title: "Geräteprofile in Microsoft Intune – Azure | Microsoft-Dokumentation"
-description: "Hier finden Sie eine Übersicht über die verschiedenen Microsoft Intune-Geräteprofile mit Angaben zu Features, Einschränkungen, E-Mail-Adressen, WLAN, VPN, Education, Zertifikaten, zum Upgrade von Windows 10, BitLocker und Windows Defender, Windows Information Protection sowie zu benutzerdefinierten Einstellungen für die Gerätekonfiguration im Azure-Portal. Verwenden Sie diese Profile zum Verwalten und Schützen von Daten und Geräten in Ihrem Unternehmen."
-keywords: 
+title: Geräteprofile in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Hier finden Sie eine Übersicht über die verschiedenen Microsoft Intune-Geräteprofile mit Angaben zu Features, Einschränkungen, E-Mail-Adressen, WLAN, VPN, Education, Zertifikaten, zum Upgrade von Windows 10, BitLocker und Windows Defender, Windows Information Protection sowie zu benutzerdefinierten Einstellungen für die Gerätekonfiguration im Azure-Portal. Verwenden Sie diese Profile zum Verwalten und Schützen von Daten und Geräten in Ihrem Unternehmen.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 79ca6eaf22233dd6d024a28e456e57a8a74d02aa
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e92a10f51fb403c802c1c6d3ea79ccf49a1e93fb
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Was sind Microsoft Intune Geräteprofile?
 
@@ -120,6 +120,8 @@ Dieses Features unterstützt nur Windows 10
 ## <a name="endpoint-protection-profile"></a>Endpoint Protection-Profil
 Mit [Endpoint Protection-Einstellungen für Windows 10](endpoint-protection-windows-10.md) können Sie BitLocker- und Windows Defender-Einstellungen für Windows 10-Geräte konfigurieren.
 
+Informationen zum Integrieren von WDATP (Windows Defender Advanced Threat Protection) mit Microsoft Intune finden Sie unter [Configure endpoints using Mobile Device Management (MDM) tools (Konfigurieren von Endpunkten mithilfe der mobilen Geräteverwaltung (MDM))](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection).
+
 Dieses Features unterstützt nur Windows 10
 
 ## <a name="windows-information-protection-profile"></a>WIP-Profil (Windows Information Protection)
@@ -130,7 +132,7 @@ Dieses Features unterstützt nur Windows 10
 ## <a name="custom-profile"></a>Benutzerdefiniertes Profil
 [Benutzerdefinierte Einstellungen](custom-settings-configure.md) bieten die Möglichkeit, Geräteeinstellungen zuzuweisen, die nicht in Intune integriert sind. So können beispielsweise auf Android-Geräten OMA-URI-Werte eingegeben werden. Auf iOS-Geräten können Sie eine Konfigurationsdatei importieren, die Sie in Apple Configurator erstellt haben. 
 
-Dieses Features unterstützt folgende Betriebssysteme: 
+Dieses Features unterstützt folgende Betriebssysteme:
 
 - Android
 - iOS

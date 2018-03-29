@@ -1,23 +1,23 @@
 ---
-title: "Einstellungen für Geräteeinschränkungen für iOS in Microsoft Intune"
-titleSuffix: 
-description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf iOS-Geräten kennen."
-keywords: 
+title: Einstellungen für Geräteeinschränkungen für iOS in Microsoft Intune
+titleSuffix: ''
+description: In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf iOS-Geräten kennen.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 436be436991ea4f2f295291fb95122cddf4e7ac5
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für iOS-Geräte in Microsoft Intune
 
@@ -40,7 +40,6 @@ Dies gilt auch für Einstellungen, auf die über die iOS-Einstellungs-App zugegr
 - **Verwendung der Option zum Löschen aller Inhalte und Einstellungen auf dem Gerät (nur überwacht):** Erlauben Sie dem Benutzer die Verwendung der Option zum Löschen aller Inhalte und Einstellungen auf dem Gerät.
 - **Gerätenamensänderung (nur überwacht):** Erlauben Sie dem Benutzer, den Namen des Geräts zu ändern.
 - **Änderung von Benachrichtigungseinstellungen (nur überwacht):** Erlauben Sie dem Benutzer, die Benachrichtigungseinstellungen des Geräts zu ändern.
-- **Änderung des Hintergrundbilds (nur überwacht):** Erlauben Sie dem Benutzer, das Hintergrundbild auf dem Gerät zu ändern.
 - **Änderung der Vertrauenseinstellungen für die Unternehmens-App (nur überwacht):** Ermöglicht es dem Benutzer zu entscheiden, ob Apps, die nicht aus dem App Store heruntergeladen wurden, vertraut werden soll.
 - **Konfigurationsprofiländerungen (nur überwacht):** Erlauben Sie dem Benutzer die Installation von Konfigurationsprofilen.
 - **Aktivierungssperre (nur überwacht):** Aktivieren Sie die Aktivierungssperre auf überwachten iOS-Geräten.
@@ -74,7 +73,6 @@ Der überwachte Modus von iOS kann nur während der ersten Einrichtung des Gerä
 - Tastenkombinationen 
 - Kennungsänderungen 
 - Änderungen des Gerätenamens 
-- Änderungen des Hintergrundbilds 
 - Automatische App-Downloads 
 - Änderungen der Vertrauensstellung für Unternehmens-Apps 
 - Apple Music 
@@ -170,7 +168,7 @@ Suchen Sie mithilfe einer Suchmaschine die gewünschte App im iTunes App Store, 
 Kopieren Sie die URL der Seite, und verwenden Sie diese als URL zur Konfiguration der Liste zulässiger oder unzulässiger Apps oder einer App, die Sie im Kioskmodus ausführen möchten.
 Geräteprofile, die Einstellungen für eingeschränkte Apps enthalten, müssen Benutzergruppen zugewiesen werden.
 
-Beispiel: Suchen Sie nach Microsoft Word für iPad. Die URL, die Sie verwenden, ist https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Beispiel: Suchen Sie nach Microsoft Word für iPad. Verwenden Sie die URL https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Sie können auch iTunes verwenden, um die App zu suchen, und dann den Befehl **Link kopieren**, um die App-URL abzurufen.
@@ -195,7 +193,7 @@ Verwenden Sie das folgende Format, um eine App-URL in der App-Liste anzugeben:
 Suchen Sie mithilfe einer Suchmaschine die gewünschte App im iTunes App Store, und öffnen Sie die Seite für die App.
 Kopieren Sie die URL der Seite, und verwenden Sie diese als URL zur Konfiguration der Liste zulässiger oder unzulässiger Apps oder einer App, die Sie im Kioskmodus ausführen möchten.
 
-Beispiel: Suchen Sie nach Microsoft Word für iPad. Die URL, die Sie verwenden, ist https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+Beispiel: Suchen Sie nach Microsoft Word für iPad. Verwenden Sie die URL https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > Sie können auch die iTunes-Software verwenden, um die App zu suchen, und dann den Befehl **Link kopieren** , um die App-URL abzurufen.

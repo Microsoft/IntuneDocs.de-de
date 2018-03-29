@@ -1,23 +1,22 @@
 ---
-title: "Erstellen einer Konformitätsrichtlinie für Windows-Geräte in Microsoft Intune"
-titleSuffix: 
-description: "Erstellen einer Konformitätsrichtlinie für Windows-Geräte in Microsoft Intune, damit Sie die Anforderungen angeben können, die ein Gerät für die Konformität erfüllen muss."
-keywords: 
+title: Erstellen einer Konformitätsrichtlinie für Windows-Geräte in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Erstellen einer Konformitätsrichtlinie für Windows-Geräte in Microsoft Intune, damit Sie die Anforderungen angeben können, die ein Gerät für die Konformität erfüllen muss.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 211b3c94dd7172d1755e3c12bb4d90dbcf28750d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Erstellen einer Gerätekonformitätsrichtlinie für Windows-Geräte in Intune
 
@@ -53,7 +52,7 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-1. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonformität**. Klicken Sie unter **Verwalten** auf **Richtlinien** und dann auf **Richtlinie erstellen**.
+1. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonformität**. Klicken Sie unter **Verwalten** auf **Richtlinien** > **Richtlinie erstellen**.
 2. Geben Sie einen Namen und eine Beschreibung ein, und wählen Sie die Plattform aus, auf die Sie diese Richtlinie anwenden möchten.
 3. Klicken Sie auf **Einstellungen konfigurieren**, um die Einstellungen zur **Systemsicherheit**, **Device Health** (Integrität für Geräte) und **Geräteeigenschaften** anzugeben. Wählen Sie abschließend **OK** aus.
 
@@ -177,7 +176,7 @@ Informationen zur Funktionsweise des HAS-Diensts finden Sie unter [Integritätsn
 
 - **Minimal erforderliches Betriebssystem:** Wird unter Windows 8.1 und Windows 10 unterstützt.
 
-Geben Sie hier die Hauptversion.Nebenversion.Buildnummer an. Die Versionsnummer muss derjenigen entsprechen, die durch den Befehl ```winver``` zurückgegeben wird.
+Geben Sie hier die Hauptversion, Nebenversion, Buildnummer und das kumulative Update an. Die Versionsnummer muss derjenigen entsprechen, die durch den Befehl ```winver``` zurückgegeben wird.
 
 Wenn ein Gerät eine frühere Version als die angegebene Betriebssystemversion aufweist, wird es als nicht konform gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Die Endbenutzer können ein Upgrade des Geräts durchführen und anschließend auf die Unternehmensressourcen zugreifen.
 

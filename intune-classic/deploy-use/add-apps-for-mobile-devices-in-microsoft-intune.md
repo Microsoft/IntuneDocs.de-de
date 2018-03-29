@@ -1,25 +1,25 @@
 ---
-title: "Hinzufügen von Apps für registrierte Geräte"
-description: "Bevor Sie eine App bereitstellen können, müssen Sie sie zu Intune hinzufügen. Anschließend ist sie in der Intune-Konsole verfügbar, und Sie können sie verwalten und bereitstellen."
-keywords: 
+title: Hinzufügen von Apps für registrierte Geräte
+description: Bevor Sie eine App bereitstellen können, müssen Sie sie zu Intune hinzufügen. Anschließend ist sie in der Intune-Konsole verfügbar, und Sie können sie verwalten und bereitstellen.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c688bf0912ec1150924743a9211a1268427fb13a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Hinzufügen von Apps für registrierte Geräte zu Intune
 
@@ -41,21 +41,21 @@ Sie verwenden den Intune-Softwareherausgeber, um die Eigenschaften der App zu ko
 
 2.  Wählen Sie auf der Seite **Softwaresetup** des Herausgebers eine der folgenden Optionen für **Wählen Sie aus, wie diese Software für Geräte bereitgestellt werden soll** aus:
     - **Softwareinstallationsprogramm**: Für Apps mit der Erweiterung **MSI**:
-        - **Wählen Sie den Dateityp des Softwareinstallationsprogramms aus**. Hiermit wird die Art der Software angegeben, die Sie bereitstellen möchten. Wenn Sie z. B. eine iOS-App bereitstellen möchten, wählen Sie **App-Paket für iOS (&#42;IPA-Datei)** aus.
+        - **Wählen Sie den Dateityp des Softwareinstallationsprogramms aus**. Hiermit wird die Art der Software angegeben, die Sie bereitstellen möchten. Wenn Sie z. B. eine iOS-App bereitstellen möchten, wählen Sie **App-Paket für iOS (IPA-Datei)** aus.
         - **Geben Sie den Speicherort der Softwaresetupdateien an**. Geben Sie den Speicherort der Installationsdateien ein, oder wählen Sie **Durchsuchen** aus, um den Speicherort in einer Liste auszuwählen.
         - **Weitere Dateien und Unterordner aus dem gleichen Ordner einschließen**. Diese Option ist nur für den Dateityp **Windows Installer** verfügbar.<br>Mitunter sind für eine Software, bei der Windows Installer verwendet wird, unterstützende Dateien erforderlich, die sich meist im gleichen Ordner befinden wie die Installationsdateien. Wählen Sie diese Option aus, wenn Sie auch diese Dateien bereitstellen möchten.<br>Bei diesem Installationstyp wird etwas Cloudspeicherplatz in Anspruch genommen.
 
   -   **Externe Verknüpfung**: Für Apps, die Sie durch Angeben eines Links zu einem App-Store erstellen möchten:
 
         - **Geben Sie die URL an**. Geben Sie die URL für eine der folgenden Optionen an:
-            - App Store-URL der App, die Sie bereitstellen möchten. Wenn Sie z. B. die Microsoft-Remotedesktop-App für Android bereitstellen möchten, geben Sie **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android** an.<br>Suchen Sie die URL der App, indem Sie mithilfe einer Suchmaschine nach der App Store-Seite suchen, die die App enthält. Um z. B. die Remotedesktop-App zu finden, können Sie nach **Microsoft-Remotedesktop-App für Android** suchen.
+            - App Store-URL der App, die Sie bereitstellen möchten. Wenn Sie z.B. die Microsoft-Remotedesktop-App für Android bereitstellen möchten, geben Sie **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android** an.<br>Suchen Sie die URL der App, indem Sie mithilfe einer Suchmaschine nach der App Store-Seite suchen, die die App enthält. Um z. B. die Remotedesktop-App zu finden, können Sie nach **Microsoft-Remotedesktop-App für Android** suchen.
             - Eine Website. Intune stellt ein Verknüpfungssymbol für die Website auf dem Gerät (Webclip genannt) bereit.
             - App im Web. Intune stellt ein Verknüpfungssymbol für die App auf dem Gerät bereit.
         - **Fordern Sie zum Öffnen dieses Links Managed Browser an (nur Android und iOS)**. Wenn Sie einen Link zu einer Website oder Web-App für Benutzer bereitstellen, können sie diesen nur im Intune Managed Browser öffnen. Dieser Browser muss auf ihrem Gerät installiert sein.<br>Weitere Informationen zum Managed Browser finden Sie unter [Verwalten des Internetzugriffs mittels Managed Browser-Richtlinien mit Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>Bei diesem Installationstyp wird kein Cloudspeicherplatz in Anspruch genommen.
 
   -   **Verwaltete iOS-App aus dem App Store**: Für kostenlose Apps aus dem iTunes-Store, die Sie mit MAM-Richtlinien (mobile Anwendungsverwaltung) verwalten möchten:
 
-        - **Geben Sie die URL an**. Geben Sie die App Store-URL der App ein, die Sie bereitstellen möchten. Wenn Sie z. B. die Microsoft-Arbeitsordner-App für iOS bereitstellen möchten, geben Sie **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8** an.<br>Bei diesem Installationstyp wird kein Cloudspeicherplatz in Anspruch genommen.
+        - **Geben Sie die URL an**. Geben Sie die App Store-URL der App ein, die Sie bereitstellen möchten. Wenn Sie z.B. die Microsoft-Arbeitsordner-App für iOS bereitstellen möchten, geben Sie **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8** an.<br>Bei diesem Installationstyp wird kein Cloudspeicherplatz in Anspruch genommen.
 
         Wenn Sie z. B. die Microsoft Word-App aus dem iTunes Store auf Geräten bereitstellen möchten, würde die Seite wie folgt aussehen:
 

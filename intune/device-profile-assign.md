@@ -1,40 +1,40 @@
 ---
-title: "Zuweisen von Geräteprofilen in Microsoft Intune – Azure | Microsoft-Dokumentation"
-description: "Verwenden des Azure-Portals zum Zuweisen von Geräteprofilen und Richtlinien zu Benutzern und Geräten und Ausschließen von Gruppen aus einer Profilzuweisung in Microsoft Intune"
-keywords: 
+title: Zuweisen von Geräteprofilen in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Verwenden Sie das Azure-Portal, um Benutzern und Geräten Geräteprofile und Richtlinien zuzuweisen. Informationen zum Ausschließen von Gruppen aus einer Profilzuweisung in Microsoft Intune
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b09650bc99b1bdf892b60828f0b524467d7b60ac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9840298df981bee6c33d3cb36ec5e4ada46d11bd
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune
 
-Nachdem Sie ein Profil erstellt haben, können Sie das Profil für Azure Active Directory-Gruppen zuweisen.
+Nachdem Sie ein Profil erstellt haben, können Sie das Profil Azure Active Directory-Gruppen (Azure AD) zuweisen.
 
 ## <a name="assign-a-device-profile"></a>Zuweisen eines Geräteprofils
 
 1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, und suchen Sie nach **Microsoft Intune**.
 2. Wählen Sie in **Microsoft Intune** die Option **Gerätekonfiguration** und anschließend **Profile** aus.
 3. Wählen Sie in der Liste der Profile das Profil aus, das Sie zuweisen möchten, und anschließend **Zuweisungen**.
-4. Wählen Sie aus, ob Sie Gruppen **einschließen** oder **ausschließen** möchten, und wählen Sie anschließend **Gruppen auswählen** aus:  
+4. Wählen Sie aus, ob Sie Gruppen **einschließen** oder **ausschließen** möchten, und wählen Sie anschließend Gruppen aus.  
 
-    ![Einschließen oder Ausschließen von Gruppen aus einer Profilzuweisung](./media/group-include-exclude.png)
+    ![Screenshot der Optionen zum Ein- oder Ausschließen von Gruppen aus einer Profilzuweisung](./media/group-include-exclude.png)
 
-5. Wenn Sie Ihre Gruppen auswählen, wählen Sie eine Azure Active Directory-Gruppe aus. Halten Sie die Taste **STRG** gedrückt, um mehrere Gruppen auszuwählen.
-6. **Speichern** Sie anschließend Ihre Änderungen.
+5. Wenn Sie Ihre Gruppen auswählen, wählen Sie eine Azure AD-Gruppe aus. Halten Sie die Taste **STRG** gedrückt, um mehrere Gruppen auszuwählen.
+6. Klicken Sie abschließend auf **Speichern**.
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Ausschließen von Gruppen aus einer Profilzuweisung
 
@@ -42,9 +42,7 @@ Mit Intune-Gerätekonfigurationsprofilen können Sie Gruppen aus der Richtlinien
 
 Wenn Sie Gruppen aus einer Zuweisung ausschließen, schließen Sie nur Benutzer oder Gerätegruppen aus (keine Mischung aus Gruppen).Intune berücksichtigt keine Benutzer-zu-Gerät-Beziehung. Das Einschließen von Benutzergruppen und das gleichzeitige Ausschließen von Gerätegruppen liefert möglicherweise nicht die von Ihnen gewünschten Ergebnisse. Bei einer Kombination aus verschiedenen Gruppen oder bei anderen Konflikten hat die Funktion „Einschließen“ Vorrang vor der Funktion „Ausschließen“.
 
-Beispiel: Sie möchten allen Geräten in Ihrem Unternehmen, mit Ausnahme von Kioskgeräten, ein Geräteprofil zuweisen. Nun schließen Sie die Gruppe **Alle Benutzer** ein und gleichzeitig die Gruppe **Alle Geräte** aus.
-
-In diesem Fall erhalten alle Benutzer und ihre Geräte die Richtlinie, selbst wenn das Gerät des Benutzers der Gruppe **Alle Geräte** angehört.
+Beispiel: Sie möchten allen Geräten in Ihrem Unternehmen, mit Ausnahme von Kioskgeräten, ein Geräteprofil zuweisen. Nun schließen Sie die Gruppe **Alle Benutzer** ein und gleichzeitig die Gruppe **Alle Geräte** aus. In diesem Fall erhalten alle Benutzer und ihre Geräte die Richtlinie, selbst wenn das Gerät des Benutzers der Gruppe **Alle Geräte** angehört.
 
 Die Funktion „Ausschließen“ wertet nur direkte Mitglieder der Gruppen aus. Sie schließt keine Geräte ein, die einem Benutzer zugeordnet sind. Geräte, die über keinen Benutzer verfügen, erhalten die Richtlinie jedoch nicht. Grund hierfür ist, dass diese Geräte keine Beziehung zur Gruppe **Alle Benutzer** haben.
 

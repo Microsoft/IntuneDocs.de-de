@@ -1,23 +1,23 @@
 ---
-title: "Aktivieren des Modus für verlorene iOS-Geräte mit Microsoft Intune – Azure | Microsoft-Dokumentation"
-description: "Aktivieren oder starten Sie den Modus für verlorene Geräte, um mithilfe von Microsoft Intune eine Meldung zu erstellen, die auf dem Sperrbildschirm eines verloren gegangenen oder gestohlenen iOS-Geräts angezeigt wird. Hier erfahren Sie auch Näheres zu den Informationen zu Sicherheit und Datenschutz bei Verwendung der Aktion „Modus für verlorene Geräte“."
-keywords: 
+title: Aktivieren des Modus für verlorene iOS-Geräte mit Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Aktivieren oder starten Sie den Modus für verlorene Geräte, um mithilfe von Microsoft Intune eine Meldung zu erstellen, die auf dem Sperrbildschirm eines verloren gegangenen oder gestohlenen iOS-Geräts angezeigt wird. Hier erhalten Sie auch weitere Informationen zu Sicherheit und Datenschutz bei Verwendung der Aktion „Modus für verlorene Geräte“.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47d6314dfaed546e5b4cff7f93a5540ba512bde9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2da88a6146080014b79fbdc1b8c553eae5705195
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Aktivieren des Modus für verlorene Geräte auf iOS-Geräten mit Intune
 
@@ -29,7 +29,7 @@ Durch die Geräteaktion **Modus für verlorene Geräte** können Sie den Modus f
 
 - iOS 9.3 und höher
 
-Dieses Feature wird für die folgenden Betriebssysteme **nicht** unterstützt: 
+Dieses Feature wird für die folgenden Betriebssysteme nicht unterstützt: 
 - Windows
 - Windows Phone
 - macOS
@@ -38,9 +38,9 @@ Dieses Feature wird für die folgenden Betriebssysteme **nicht** unterstützt:
 ## <a name="enable-lost-mode"></a>Aktivieren des Modus für verlorene Geräte
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie auf **Microsoft Intune**.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
 3. Klicken Sie auf **Geräte** und dann auf **Alle Geräte**.
-4. Wählen Sie aus der Liste der von Ihnen verwalteten Geräte ein iOS-Gerät aus, klicken Sie auf **...Weiter**, und wählen Sie dann die Remoteaktion **Modus für verlorene Geräte**.
+4. Wählen Sie aus der Liste der von Ihnen verwalteten Geräten ein iOS-Gerät aus, und klicken Sie auf **...Weitere**. Wählen Sie dann die Remotegeräteaktion **Modus für verlorene Geräte** aus.
 5. Aktivieren Sie dieses Feature unter **Modus für verlorene Geräte**. Geben Sie dann eine Meldung und eine Kontakttelefonnummer ein, die angezeigt werden sollen.
 6. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
@@ -51,8 +51,8 @@ Wenn Sie den Modus für verlorene Geräte aktivieren, wird jegliche Nutzung des 
 - Bei Verwendung der Aktion „Gerät suchen“ werden die Koordinaten des Geräts in Form von Breiten- und Längengrad an Intune gesendet und im Azure-Portal angezeigt.
 - Die Daten werden 24 Stunden lang gespeichert und dann entfernt. Die Standortdaten können nicht manuell entfernt werden.
 - Die Standortdaten werden sowohl im gespeicherten Zustand als auch bei der Übertragung verschlüsselt.
-- Geben Sie in der Meldung, die auf dem Sperrbildschirm angezeigt werden soll, Informationen zur Rückgabe des Geräts an.
+- Geben Sie in der Meldung, die auf dem Sperrbildschirm angezeigt werden soll, Informationen zur Rückgabe des verloren gegangenen Geräts an.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Um den Aktivierungsstatus des Modus für verlorene Geräte anzuzeigen, öffnen Sie **Geräte**, und wählen Sie **Geräteaktionen** aus.
+Öffnen Sie **Geräte**, und klicken Sie auf **Geräteaktionen**, um den Aktivierungsstatus des Modus für verlorene Geräte anzuzeigen.
