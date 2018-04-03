@@ -1,23 +1,23 @@
 ---
-title: "Konfigurieren von Microsoft Intune für einmaliges Anmelden von iOS-Geräten"
-titlesuffix: 
-description: "Erfahren Sie, wie Sie Microsoft Intune für einmaliges Anmelden von iOS-Geräten konfigurieren."
-keywords: 
+title: Konfigurieren von Microsoft Intune für einmaliges Anmelden von iOS-Geräten
+titlesuffix: ''
+description: Erfahren Sie, wie Sie Microsoft Intune für einmaliges Anmelden von iOS-Geräten konfigurieren.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Konfigurieren von Microsoft Intune für einmaliges Anmelden von iOS-Geräten
 
@@ -34,8 +34,8 @@ Um einmaliges Anmelden von iOS-Geräten nutzen zu können, müssen folgende Bedi
 
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
-3. Wählen Sie im Bereich **Intune** die Option **Gerätekonfiguration** aus.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
 4. Klicken Sie im Bereich **Gerätekonfiguration** im Abschnitt **Verwalten** auf **Profile**.
 5. Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
 6. Geben Sie einen Namen und eine Beschreibung ein, und konfigurieren Sie die folgenden Einstellungen:
@@ -90,7 +90,7 @@ Die Muster `http://.com` und `https://.com` stimmen mit allen HTTP- bzw. HTTPS-U
 
 Gibt die Apps auf dem Gerät des Endbenutzers an, die die Nutzlast zum einmaligen Anmelden verwenden
 
-Das `AppIdentifierMatches`-Array muss Zeichenfolgen enthalten, die mit App-Bündel-IDs übereinstimmen. Bei diesen Zeichenfolgen können exakte Übereinstimmungen (z.B. `com.contoso.myapp`) oder Präfixübereinstimmungen der Bundle-ID unter Verwendung des Platzhalterzeichens *\ gefunden werden. Das Platzhalterzeichen muss nach einem Punkt (.) folgen und kann nur einmal am Ende der Zeichenfolge verwendet werden (z.B. `com.contoso.*`). Wenn ein Platzhalter enthalten ist, erhält jede App, deren Bündel-ID mit dem Präfix beginnt, Zugriff auf das Konto.
+Das `AppIdentifierMatches`-Array muss Zeichenfolgen enthalten, die mit App-Bündel-IDs übereinstimmen. Bei diesen Zeichenfolgen können exakte Übereinstimmungen (z.B. `com.contoso.myapp`) oder Präfixübereinstimmungen der Bundle-ID unter Verwendung des Platzhalterzeichens \* gefunden werden. Das Platzhalterzeichen muss nach einem Punkt (.) folgen und kann nur einmal am Ende der Zeichenfolge verwendet werden (z.B. `com.contoso.*`). Wenn ein Platzhalter enthalten ist, erhält jede App, deren Bündel-ID mit dem Präfix beginnt, Zugriff auf das Konto.
 
 Das Feld **App-Name** wird verwendet, um einen Anzeigenamen hinzuzufügen, mit dem Sie die Bündel-ID identifizieren können.
 

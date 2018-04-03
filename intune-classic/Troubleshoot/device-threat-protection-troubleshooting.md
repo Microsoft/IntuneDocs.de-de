@@ -1,25 +1,25 @@
 ---
 title: Problembehandlung der Lookout-Integration
-description: "Dieses Thema beschreibt die Behandlung von Problemen, die im Zusammenhang mit der Lookout-Integration häufig auftreten."
-keywords: 
+description: Dieses Thema beschreibt die Behandlung von Problemen, die im Zusammenhang mit der Lookout-Integration häufig auftreten.
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbe0b5f4-b8bc-49f3-85a9-51fb2f226fca
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6adb0bc2562a16c0111242cc7dd923afa073d84e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ec20d87da48fb52207d839da0753eb05524569af
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>Problembehandlung der Lookout-Integration mit Intune
 
@@ -36,14 +36,14 @@ Lookout MTP erlaubt nur Benutzern in einer konfigurierten Azure AD-Gruppe den Zu
 
 * E-Mail: enterprisesupport@lookout.com
 * Melden Sie sich bei der [MTP-Konsole](http://aad.lookout.com) an, und navigieren Sie zum Modul **Support**.
-* Navigieren Sie zu: „https://enterprise.support.lookout.com/hc/requests“, und stellen Sie eine Supportanfrage.
+* Wechseln Sie zu https://enterprise.support.lookout.com/hc/requests, und stellen Sie eine Supportanfrage.
 
 ## <a name="unable-to-sign-in"></a>Die Anmeldung ist nicht möglich
 Der folgende Fehler wird angezeigt, wenn der globale Administratorbenutzer von Azure AD das erstmalige Lookout-Setup nicht akzeptiert hat.
 
 ![Screenshot des Lookout-Anmeldebildschirms, der den Anmeldefehler darstellt](../media/mtp/lookout-mtp-consent-not-accepted-error.png)
 
-Um dieses Problem zu beheben, muss sich der globale Administratorbenutzer bei „https://aad.lookout.com/les?action=consent“ anmelden und die Aufforderung zum Starten von Setup akzeptieren. Ausführlichere Informationen finden Sie im Thema [Einrichten Ihres Abonnements für Lookout MTP](../deploy-use/setup-your-lookout-mtd-subscription.md)
+Um dieses Problem zu beheben, muss sich der globale Administratorbenutzer bei https://aad.lookout.com/les?action=consent anmelden und die Aufforderung zum Starten des Setups akzeptieren. Ausführlichere Informationen finden Sie im Thema [Einrichten Ihres Abonnements für Lookout MTP](../deploy-use/setup-your-lookout-mtd-subscription.md)
 
 **Probleme mit dem Gerätestatus**
 
@@ -82,9 +82,9 @@ Wenn sich der neue Benutzer in einer Lookout MTP-Registrierungsgruppe befindet, 
 
 ## <a name="compliance-remediation-workflows"></a>Arbeitsabläufe zur Wiederherstellung der Kompatibilität
 - [Sie werden aufgefordert, Lookout for Work auf Ihrem Android-Gerät zu installieren]( http://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
-- [Sie müssen eine Bedrohung beseitigen, die Lookout for Work auf Ihrem Android-Gerät erkannt hat](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
+- [Sie müssen eine Bedrohung beheben, die Lookout for Work auf Ihrem Android-Gerät gefunden hat](http://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 - [Sie müssen eine Bedrohung beseitigen, die Lookout for Work auf Ihrem iOS-Gerät erkannt hat](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-ios)
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Einrichten Ihres Abonnements für Lookout MTP](/intune-classic/deploy-use/set-up-your-subscription-with-lookout-mtp)

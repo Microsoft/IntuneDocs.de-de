@@ -1,25 +1,25 @@
 ---
 title: Problembehandlung beim bedingten Zugriff
-description: "Was zu tun ist, wenn Ihre Benutzer durch bedingten Intune-Zugriff nicht auf Ressourcen zugreifen können."
-keywords: 
+description: Was zu tun ist, wenn Ihre Benutzer durch bedingten Intune-Zugriff nicht auf Ressourcen zugreifen können.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Problembehandlung beim bedingten Zugriff
 
@@ -118,7 +118,7 @@ Wenn diese Verfahren zur Problembehandlung das Problem nicht beheben, gibt es ei
 ### <a name="exchange-connector-logs"></a>Exchange Connector-Protokolle
 
 #### <a name="general-log-information"></a>Allgemeine Protokollinformationen
-Verwenden Sie zum Anzeigen der Exchange Connector-Protokolle das [Service Trace Viewer-Tool](Service Trace Viewer-Tool (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Dieses Tool erfordert, dass Sie das Windows Server-SDK herunterladen.
+Verwenden Sie zum Anzeigen der Exchange Connector-Protokolle das [Server Trace Viewer-Tool](Server Trace Viewer-Tool (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx')). Dieses Tool erfordert, dass Sie das Windows Server-SDK herunterladen.
 
 >[!NOTE]
 >Die Protokolle befinden sich unter „C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs“. Die Protokolle befinden sich in einer Folge von 30 Protokolldateien, die mit *Connector0.log* beginnen und mit *Connector29.log* enden. Protokolliert Rollover von einer Datei zu einer anderen, nachdem sich 10 MB an Daten in einem Protokoll angesammelt haben. Nachdem die Protokolle zu „Connector29“ gelangt sind, wird wieder bei „Connector0“ begonnen, wobei die vorherigen Protokolldateien überschrieben werden.

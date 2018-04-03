@@ -1,25 +1,25 @@
 ---
-title: "Synchronisieren von Geräten mit Microsoft Intune – Azure | Microsoft-Dokumentation"
-description: "Synchronisieren Sie Geräte, die bei Microsoft Intune registriert sind und dort verwaltet werden, um die neuesten Richtlinien und Aktionen zu erhalten. Dieser Artikel erläutert die notwendigen Schritte zur Synchronisierung mithilfe des Azure-Portals und führt die Fehlercodes auf, die zurückgegeben werden können."
-keywords: 
+title: Synchronisieren von Geräten mit Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Synchronisieren von Geräten, die bei Microsoft Intune registriert sind und dort verwaltet werden, um die neuesten Richtlinien und Aktionen zu erhalten. In diesem Artikel werden die Schritte erläutert, die zur Synchronisierung mithilfe des Azure-Portals erfordelrich sind. Außerdem werden die wiederholbaren Fehlercodes aufgeführt.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2d13ce2ed06549a6cd09fd766a0072b15fcd067
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7af71a2d5c3ad871e69424cf6afbf7c364bb888d
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="sync-devices-to-get-the-latest-policies-and-actions---intune"></a>Synchronisieren von Geräten, um die neuesten Richtlinien und Aktionen zu erhalten – Intune
+# <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Synchronisieren von Geräten mit Intune, um die neuesten Richtlinien und Aktionen zu erhalten
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,9 +37,9 @@ Die Geräteaktion **Sync** (Synchronsieren) zwingt das ausgewählte Gerät dazu,
 ## <a name="sync-a-device"></a>Gerät synchronisieren
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie auf **Microsoft Intune**. 
-3. Klicken Sie in **Intune** auf **Geräte**, und wählen Sie **Alle Geräte** aus.
-4. Wählen Sie aus der Liste der verwalteten Geräte ein Gerät aus, klicken Sie auf **...Weitere**, und wählen Sie dann die Aktion **Synchronisieren** aus.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**. 
+3. Klicken Sie in **Intune** auf **Geräte** > **Alle Geräte**.
+4. Wählen Sie in der Liste der von Ihnen verwalteten Geräte ein Gerät aus, klicken Sie auf **Mehr** und dann auf **Synchronisieren**.
 5. Klicken Sie zum Bestätigen auf **Ja**.
 
 
@@ -62,6 +62,6 @@ Wenn ein Administrator die Geräteaktion **Synchronisieren** ausführt, sind iOS
 | 2016330889 | Fehler bei der sicheren Verbindung: Setzen Sie Ihre Verbindung zurück. | Ja |
 | 2016330888 | Fehler bei der Auswertung der Serververtrauensstellung | Nein|
 
-## <a name="next-step"></a>Nächster Schritt
+## <a name="next-steps"></a>Nächste Schritte
 
-Wählen Sie **Geräteaktionen** aus, um den Status der Synchronisierung anzuzeigen. 
+- Klicken Sie auf **Geräteaktionen**, um den Status der Synchronisierung anzuzeigen. 

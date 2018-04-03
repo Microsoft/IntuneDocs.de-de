@@ -1,25 +1,25 @@
 ---
-title: "Apple DEP-Verwaltung für iOS-Geräte"
-description: "Stellen Sie ein Registrierungsprofil bereit, das über das iOS-Programm zur Geräteregistrierung (Device Enrollment Program, DEP) erworbene iOS-Geräte drahtlos registriert, damit Sie Apple-Geräte verwalten können."
-keywords: 
+title: Apple DEP-Verwaltung für iOS-Geräte
+description: Stellen Sie ein Registrierungsprofil bereit, das über das iOS-Programm zur Geräteregistrierung (Device Enrollment Program, DEP) erworbene iOS-Geräte drahtlos registriert, damit Sie Apple-Geräte verwalten können.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 885e3f0608cd367cb23658c342451a4a56e5474d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bf47c802291d802ac890aa4ba00cf79d9d2d10f0
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Registrieren unternehmenseigener iOS-Geräte mithilfe des Programm zur Geräteregistrierung (Device Enrollment Program, DEP)
 
@@ -29,13 +29,14 @@ Microsoft Intune kann ein Registrierungsprofil bereitstellen, das über das Prog
 
 >[!NOTE]
 >Die Registrierung mit DEP (Device Enrollment Program) kann nicht mit dem [Geräteregistrierungs-Manager](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) verwendet werden.
->Wenn Benutzer iOS-Geräte registrieren (d.h.die Unternehmensportal-App verwenden) und die Seriennummer dieser Geräte dann importiert und einem DEP-Profil zugewiesen werden, wird die Registrierung des Geräts in Intune wieder rückgängig gemacht.
+>Wenn Benutzer iOS-Geräte registrieren (d.h. die Unternehmensportal-App verwenden) und die Seriennummern dieser Geräte dann importiert und einem DEP-Profil zugewiesen werden, wird die Registrierung des Geräts in Intune zusätzlich wieder rückgängig gemacht.
+> Außerdem wird DEP derzeit nicht von macOS unterstützt.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Voraussetzungen für die Anmeldung von iOS-Geräten mithilfe der DEP-Verwaltung für Apple
 
 - [Installieren eines APNS-Zertifikats](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-- Ihre Organisation muss Apple-DEP beitreten und Geräte über dieses Programm beziehen. Details zu diesem Prozess finden Sie unter:  [https://deploy.apple.com](https://deploy.apple.com). Das Programm bietet den Vorteil, dass Geräte eingerichtet werden können, ohne dass ein USB-Kabel für die Verbindung jedes Geräts mit einem Computer verwendet werden muss.
+- Ihre Organisation muss Apple-DEP beitreten und Geräte über dieses Programm beziehen. Details zu diesem Prozess finden Sie unter: [https://deploy.apple.com](https://deploy.apple.com). Das Programm bietet den Vorteil, dass Geräte eingerichtet werden können, ohne dass ein USB-Kabel für die Verbindung jedes Geräts mit einem Computer verwendet werden muss.
 
 - Bevor Sie unternehmenseigene iOS-Geräte mit DEP registrieren können, benötigen Sie ein DEP-Token von Apple. Mit diesem Token kann Intune Informationen zu DEP-Geräten synchronisieren, die Ihrem Unternehmen gehören. Damit kann Intune außerdem Registrierungsprofile an Apple übermitteln und diesen Profile Geräte zuweisen.
 
@@ -53,7 +54,7 @@ In den folgenden Schritten wird erläutert, wie Sie iOS-Geräte am „Tag 0“ m
 
 ### <a name="get-a-device-enrollment-program-token"></a>Abrufen eines Device Enrollment Program-Tokens
 
-1. Wechseln Sie zum [Portal des Programms zur Geräteregistrierung](https://deploy.apple.com) (https://deploy.apple.com), und melden Sie sich mit Ihrer Unternehmens-Apple-ID an. Diese Apple-ID muss später verwendet werden, um Ihr DEP-Token zu erneuern.
+1. Wechseln Sie zum [Portal des Programms zur Geräteregistrierung](https://deploy.apple.com) (https://deploy.apple.com)), und melden Sie sich mit Ihrer Unternehmens-Apple-ID an. Diese Apple-ID muss später verwendet werden, um Ihr DEP-Token zu erneuern.
 
 2.  Wechseln Sie im Portal des Programms zur Geräteregistrierung zu **Programm zur Geräteregistrierung** &gt; **Server verwalten**, und wählen Sie anschließend **MDM-Server hinzufügen** aus.
 
@@ -130,7 +131,7 @@ In den folgenden Schritten wird erläutert, wie Sie iOS-Geräte am „Tag 0“ m
 
 ### <a name="assign-dep-devices-for-management"></a>Zuweisen von DEP-Geräten zur Verwaltung
 
-1. Wechseln Sie zum [Device Enrollment Program-Portal](https://deploy.apple.com) (https://deploy.apple.com), und melden Sie sich mit der Apple-ID Ihres Unternehmens an.
+1. Wechseln Sie zum [Portal des Programms zur Geräteregistrierung](https://deploy.apple.com) (https://deploy.apple.com)), und melden Sie sich mit Ihrer Unternehmens-Apple-ID an.
 
 2. Wechseln Sie zu **Bereitstellungsprogramm** &gt; **Programm zur Geräteregistrierung** &gt; **Geräte verwalten**.
 

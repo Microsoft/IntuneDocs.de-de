@@ -1,25 +1,25 @@
 ---
-title: "Exchange Connector für lokales EAS"
-description: "Verwenden Sie den Connector, um die Kommunikation zwischen der Intune-Verwaltungskonsole und der lokalen Exchange Server-Instanz für Exchange ActiveSync-MDM zu ermöglichen."
-keywords: 
+title: Exchange Connector für lokales EAS
+description: Verwenden Sie den Connector, um die Kommunikation zwischen der Intune-Verwaltungskonsole und der lokalen Exchange Server-Instanz für Exchange ActiveSync-MDM zu ermöglichen.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cb627843879a784eb4f597839058f54f9744542f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 96d61ccae4e70a3e99da70a0ef19218ddbd218f3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="install-the-intune-on-premises-exchange-connector"></a>Installieren des lokalen Exchange Connectors für Intune
 
@@ -31,7 +31,7 @@ Zum Einrichten einer Verbindung, über die Microsoft Intune mit dem Exchange-Ser
 ## <a name="on-premises-exchange-connector-requirements"></a>Anforderungen des lokalen Exchange Connectors
 In der folgenden Tabelle finden Sie die Anforderungen an den Computer, auf dem Sie den lokalen Exchange Connector installieren.
 
-|Anforderung|Weitere Informationen|
+|Anforderungen|Weitere Informationen|
 |---------------|--------------------|
 |Betriebssysteme|Intune unterstützt den lokalen Exchange Connector auf Computern, auf denen eine beliebige Edition von Windows Server 2008 SP2 (64 Bit), Windows Server 2008 R2, Windows Server 2012 oder Windows Server 2012 R2 ausgeführt wird.<br /><br />Auf Server Core-Installationen wird der Connector nicht unterstützt.|
 |Microsoft Exchange|Für lokale Connectors ist Microsoft Exchange 2010 SP1 oder höher oder die Exchange Online Dedicated-Legacyumgebung erforderlich. Wenn Sie herausfinden möchten, ob es sich bei Ihrer Exchange Online Dedicated-Umgebung um die **neue** oder die **ältere** Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer.|
@@ -62,7 +62,7 @@ Sie müssen in Active Directory ein Benutzerkonto erstellen, das vom Intune Exch
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Herunterladen des Softwareinstallationspaket für den lokalen Exchange Connector
 
-1. Öffnen Sie auf einem vom lokalen Exchange Connector unterstützten Windows Server-Betriebssystem die [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) (https://manage.microsoft.com) mit einem Benutzerkonto, das ein Administrator im Exchange-Mandanten ist und über eine Lizenz zum Verwenden von Exchange Server verfügt.
+1. Öffnen Sie auf einem vom lokalen Exchange Connector unterstützten Windows Server-Betriebssystem die [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) (https://manage.microsoft.com)) mit einem Benutzerkonto, das ein Administrator im Exchange-Mandanten ist und über eine Lizenz zum Verwenden von Exchange Server verfügt.
 ![Öffnen und Einrichten der Exchange-Verbindung](../media/ExchangeConnector.gif)
 
 2.  Wählen Sie im Bereich mit den Arbeitsbereichsverknüpfungen **Admin**>**Verwaltung mobiler Geräte** > **Microsoft Exchange**>**Exchange-Verbindung einrichten** aus.

@@ -1,25 +1,25 @@
 ---
-title: "Suchen eines Paketfamiliennamens (PFN) für Pro-App-VPN"
-description: "Suchen Sie einen Paketfamiliennamen (PFN), den Sie zum Konfigurieren eines anwendungsbezogenen VPN („VPN pro App“) benötigen."
-keywords: 
+title: Suchen eines Paketfamiliennamens (PFN) für Pro-App-VPN
+description: Suchen Sie einen Paketfamiliennamen (PFN), den Sie zum Konfigurieren eines anwendungsbezogenen VPN („VPN pro App“) benötigen.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tycast
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4b5d71e46fbc78ebadf52e96bb75eedecc291ee
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: de1a5beafae900a21f685cf1daeb2302cbf245b3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>Suchen eines Paketfamiliennamens (PFN) für eine Konfiguration mit VPN pro App
 
@@ -72,10 +72,10 @@ Für OneNote werden folgende Informationen abgerufen:
 
 ## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>Suchen eines PFN, wenn die App nicht auf dem Computer installiert ist
 
-1.  Navigieren Sie zu „https://www.microsoft.com/store/apps“.
+1.  Wechseln Sie zu https://www.microsoft.com/store/apps.
 2.  Geben Sie in der Suchleiste den Namen der App ein. Suchen Sie z.B. nach OneNote.
 3.  Wählen Sie den Link zu der App aus. Am Ende der URL finden Sie eine Reihe von Buchstaben. In unserem Beispiel sieht die URL folgendermaßen aus: `https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl`.
-4.  Fügen Sie in eine andere Registerkarte die folgende URL ein: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Ersetzen Sie `<app id>` durch die App-ID, die Sie unter „https://www.microsoft.com/store/apps“ gefunden haben (die Reihe von Buchstaben am Ende der URL aus Schritt 3). In unserem Beispiel für OneNote fügen Sie `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata` ein.
+4.  Fügen Sie in eine andere Registerkarte die folgende URL ein: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Ersetzen Sie `<app id>` durch die App-ID, die Sie unter https://www.microsoft.com/store/apps gefunden haben (die Buchstabenfolge am Ende der URL aus Schritt 3). In unserem Beispiel für OneNote fügen Sie `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata` ein.
 
 In Microsoft Edge werden die gewünschten Informationen angezeigt. In Internet Explorer müssen Sie **Öffnen** auswählen, um die Informationen anzuzeigen. Der PFN wird in der ersten Zeile angegeben. Dies sind die Ergebnisse für unser Beispiel:
 

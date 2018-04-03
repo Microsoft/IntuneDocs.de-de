@@ -1,25 +1,25 @@
 ---
 title: iOS-Richtlinieneinstellungen
-description: "Erstellen Sie Richtlinien, die Einstellungen und Funktionen auf iOS-Geräten steuern, die Sie mit Intune verwalten."
-keywords: 
+description: Erstellen Sie Richtlinien, die Einstellungen und Funktionen auf iOS-Geräten steuern, die Sie mit Intune verwalten.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e9d014eb504098ff4361add7a0f3715f33be9083
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ff426feff58de8b06fed7be9a0e6a52e9cc40ae3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>iOS-Richtlinieneinstellungen in Microsoft Intune
 
@@ -205,7 +205,7 @@ Richtlinien mit kompatiblen und nicht kompatiblen App-Einstellungen müssen für
 > -   Damit Sie ein iOS-Gerät für den Kioskmodus konfigurieren können, müssen Sie das [Apple Configurator-Tool](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) oder das [Apple-Programm zur Geräteregistrierung](ios-device-enrollment-program-in-microsoft-intune.md) verwenden, um das Gerät in den überwachten Modus zu versetzen. Weitere Informationen zum Apple Configurator-Tool finden Sie in der Apple-Dokumentation.
 > -   Wenn die angegebene iOS-App nach der Bereitstellung der Konfigurationsrichtlinie installiert wird, wird das Gerät erst nach einem Neustart in den Kioskmodus versetzt.
 
-### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Referenzinformationen für kompatible und nicht kompatible Apps
+### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Referenzinformationen für konforme und nicht konforme Apps
 
 Im **Bericht über nicht kompatible Apps** können Sie sich über die Konformität zulässiger und blockierter Anwendungen informieren.
 
@@ -222,7 +222,7 @@ Um eine App-URL in der Liste mit kompatiblen und nicht kompatiblen Apps oder in 
 
 2. Kopieren Sie die URL der Seite, und verwenden Sie diese als URL zur Konfiguration der Liste kompatibler oder nicht kompatibler Apps oder der App, die Sie im Kioskmodus ausführen möchten.
 
-**Beispiel:** Suchen Sie nach **Microsoft Word für iPad**. Die URL, die Sie verwenden, ist **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
+**Beispiel:** Suchen Sie nach **Microsoft Word für iPad**. Verwenden Sie die URL **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 > [!NOTE]
 > Sie können auch die iTunes-Software verwenden, um die App zu suchen, und dann den Befehl **Link kopieren** , um die App-URL abzurufen.
@@ -366,7 +366,7 @@ Diese Funktion ermöglicht die Bereitstellung von iOS-Einstellungen, die nicht m
 Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigurationsdatei mit den Einstellungen erstellt haben, die Sie für Benutzer oder Geräte bereitstellen möchten. Um Apple Configurator herunterzuladen und mehr darüber zu erfahren, besuchen Sie den [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12).
 
 > [!NOTE]
-> Intune meldet nicht die Kompatibilität der einzelnen Einstellungen einer benutzerdefinierten iOS-Richtlinie. Die Gesamtkompatibilität der Richtlinie wird jedoch angegeben.
+> Intune meldet nicht die Konformität der einzelnen Einstellungen einer benutzerdefinierten iOS-Richtlinie. Die Gesamtkompatibilität der Richtlinie wird jedoch angegeben.
 
 ### <a name="general-settings"></a>Allgemeine Einstellungen
 
@@ -383,5 +383,5 @@ Bevor Sie beginnen, müssen Sie Apple Configurator installiert und eine Konfigur
 |**Konfigurationsprofildatei**|Wählen Sie **Importieren** aus, und suchen Sie dann das mit Apple Configurator erstellte Konfigurationsprofil. **Hinweis:** Stellen Sie sicher, dass die Einstellungen, die Sie aus dem Apple Configurator-Tool exportieren, mit der iOS-Version auf den Geräten kompatibel sind, für die Sie die benutzerdefinierte iOS-Richtlinie bereitstellen. Um Informationen zum Korrigieren inkompatibler Einstellungen zu erhalten, suchen Sie auf der [Apple Developer-Website](https://developer.apple.com/) nach der **Referenz zu Konfigurationsprofilen** und der **Referenz zum Protokoll für die Verwaltung mobiler Geräte**.|
     |**Details zum Konfigurationsprofil**|Zeigt den XML-Code des importierten Konfigurationsprofils an.|
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

@@ -1,24 +1,24 @@
 ---
-title: "Umstellen Ihrer MDM-Autorität auf Configuration Manager (hybride Verwaltung mobiler Geräte)"
-description: "Erfahren Sie, wie Sie die MDM-Autorität von eigenständigem Intune in Configuration Manager (hybride Verwaltung mobiler Geräte) ändern können."
-keywords: 
+title: Umstellen Ihrer MDM-Autorität auf Configuration Manager (hybride Verwaltung mobiler Geräte)
+description: Erfahren Sie, wie Sie die MDM-Autorität von eigenständigem Intune in Configuration Manager (hybride Verwaltung mobiler Geräte) ändern können.
+keywords: ''
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 10/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1b4bce3-7932-4a0d-aa92-6dacc7060f42
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 64e79da53aec646fc65285e41f86541ecdf6d804
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="change-the-mdm-authority"></a>Ändern der MDM-Autorität
 Ab Configuration Manager Version 1610 können Sie Ihre MDM-Autorität ohne Unterstützung durch den Microsoft-Support und ohne Aufheben der Registrierung und erneutes Registrieren Ihrer vorhandenen verwalteten Geräte umstellen. Dieses Thema zeigt Ihnen erforderliche Schritte, um einen vorhandenen Microsoft Intune-Mandanten, der über Intune konfiguriert wurde und dessen MDM-Autorität auf **Microsoft Intune** (standalone) festgelegt ist, ohne Aufheben der Registrierung und erneutes Registrieren vorhandener verwalteter Geräte auf **Configuration Manager** (hybride Verwaltung mobiler Geräte) umzustellen.
@@ -51,7 +51,7 @@ Nachdem Sie auf die neue MDM-Autorität umgestellt haben, gibt es wahrscheinlich
 - Wenn Sie vor der Umstellung der MDM-Autorität Intune standalone zum Verwalten von iOS-Geräten verwenden, müssen Sie sicherstellen, dass das gleiche Apple Push Notification Service-Zertifikat (APNs), das zuvor in Intune verwendet wurde, erneuert und wieder zum Einrichten des Mandanten in Configuration Manager (hybrid) verwendet wird.    
 
     > [!IMPORTANT]  
-    > Wenn ein anderes APNs-Zertifikat für die hybride Verwaltung verwendet wird, wird die Registrierung ALLER zuvor registrierten iOS-Geräte aufgehoben, und Sie müssen sie erneut registrieren. Stellen Sie vor der Umstellung der MDM-Autorität sicher, dass Sie genau wissen, welches APNs-Zertifikat zum Verwalten von iOS-Geräten in Intune verwendet wurde. Suchen Sie nach dem Zertifikat im Apple Push Certificates-Portal (https://identity.apple.com), und stellen Sie sicher, dass der Benutzer, mit dessen Apple-ID das ursprüngliche APNs-Zertifikat erstellt wurde, identifiziert wird und verfügbar ist, um das gleiche APNs-Zertifikat als Teil der Umstellung auf die neue MDM-Autorität zu erneuern.  
+    > Wenn ein anderes APNs-Zertifikat für die hybride Verwaltung verwendet wird, wird die Registrierung ALLER zuvor registrierten iOS-Geräte aufgehoben, und Sie müssen sie erneut registrieren. Stellen Sie vor der Umstellung der MDM-Autorität sicher, dass Sie genau wissen, welches APNs-Zertifikat zum Verwalten von iOS-Geräten in Intune verwendet wurde. Suchen Sie nach dem Zertifikat im Apple Push Certificates-Portal (https://identity.apple.com)), und stellen Sie sicher, dass der Benutzer, mit dessen Apple-ID das ursprüngliche APNs-Zertifikat erstellt wurde, identifiziert wird und verfügbar ist, um das gleiche APNs-Zertifikat als Teil der Umstellung auf die neue MDM-Autorität zu erneuern.  
 
 ## <a name="change-the-mdm-authority-to-configuration-manager"></a>Umstellen der MDM-Autorität auf Configuration Manager
 Die Umstellung der MDM-Autorität auf Configuration Manager (hybrid) umfasst die folgenden allgemeinen Schritte:  
