@@ -105,8 +105,8 @@ Es sind jetzt [zwei neue Datenschutzeinstellungen](device-restrictions-windows-1
 - **Benutzeraktivitäten veröffentlichen:** Legen Sie diese Einstellung auf **Blockieren** fest, um geteilte Aktivitäten und die Ermittlungen von kürzlich verwendeten Ressourcen in der Programmumschaltung zu vermeiden.
 - **Nur lokale Aktivitäten:** Legen Sie diese Einstellungen auf **Blockieren** fest, um geteilte Aktivitäten und Ermittlungen von kürzlich in der Programmumschaltung verwendeten Ressourcen anhand von ausschließlich lokalen Aktivitäten zu vermeiden.
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Neue Einstellungen für den Browser Edge <!--1469166 -->
-Für Geräte, auf denen Edge installiert ist, sind [zwei neue Einstellungen](device-restrictions-windows-10.md#edge-browser) verfügbar: **Path to favorites file** (Pfad zu häufig verwendeten Dateien) und **Changes to Favorites** (Änderungen an Favoriten).
+#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Neue Einstellungen für den Browser Microsoft Edge <!--1469166 -->
+Für Geräte, auf denen Microsoft Edge installiert ist, sind [zwei neue Einstellungen](device-restrictions-windows-10.md#edge-browser) verfügbar: **Path to favorites file** (Pfad zu häufig verwendeten Dateien) und **Changes to Favorites** (Änderungen an Favoriten).
 
 ### <a name="app-management"></a>App-Verwaltung
 #### <a name="protocol-exceptions-for-applications---1035509---"></a>Protokollausnahmen für Anwendungen <!--1035509 -->
