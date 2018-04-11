@@ -62,7 +62,7 @@ Bevor Sie unternehmenseigene iOS-Geräte mit dem Apple School Manager registrier
   ![Rufen Sie ein Registrierungsprogrammtoken ab.](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. Wählen Sie auf dem Blatt **Registrierungsprogrammtoken** die Option **Laden Sie Ihr Zertifikat mit öffentlichem Schlüssel herunter** aus, um die Verschlüsselungsschlüsseldatei (PEM) herunterzuladen und lokal zu speichern. Die PEM-Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple School Manager-Portal anzufordern.
-     ](./media/device-enrollment-program-enroll-ios/image02.png)Blatt „Registrierungsprogrammtoken“![
+     ![Blatt „Registrierungsprogrammtoken“](./media/device-enrollment-program-enroll-ios/image02.png)
 
 ### <a name="step-2-download-a-token-and-assign-devices"></a>Schritt 2. Herunterladen eines Tokens und Zuweisen von Geräten
 1. Wählen Sie **Token über Apple School Manager erstellen** aus, und melden Sie sich mit Ihrer Apple-Unternehmens-ID bei Apple School an. Sie können diese Apple-ID auch zum Erneuern Ihres Apple School Manager-Tokens verwenden.
