@@ -14,14 +14,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dfd156e8264929b379c02ef59006f38836e12ef6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 08b16418181f809cc39fc13e767858543223978f
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 #  <a name="windows-phone-80-company-portal-app-deprecated"></a>Windows Phone 8.0-Unternehmensportal-App veraltet
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Ab September 2016 wurde die Windows 8.0-Unternehmensportal-App als veraltet markiert. Registrierte Windows 8.0-Geräte werden weiterhin verwaltet, es können aber keine neuen Geräte registriert werden.

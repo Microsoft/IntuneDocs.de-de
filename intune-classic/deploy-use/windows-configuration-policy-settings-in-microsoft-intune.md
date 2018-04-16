@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fa8d8454e9d22b2d3c36cd6449805d709c34ffa
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ccd5bd201de59537dbf99ea9e19d84dbf80c1a20
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="windows-policy-settings-in-microsoft-intune"></a>Einstellungen für Windows-Richtlinien in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und höher)** von Microsoft Intune, um die folgenden Einstellungen für registrierte Windows 8-, Windows 8.1- und Windows RT 8.1-Geräte zu konfigurieren:
 
@@ -49,9 +49,10 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und
 
 ## <a name="encryption-settings"></a>Verschlüsselungseinstellungen
 
-|Name der Einstellung|Details|
-|----------------|-----|
-|**Verschlüsselung auf mobilen Geräten vorschreiben**<sup>1</sup>|Erfordert die Verschlüsselung der Dateien auf dem Gerät.|
+|                           Name der Einstellung                           |                     Details                      |
+|------------------------------------------------------------------|--------------------------------------------------|
+| <strong>Verschlüsselung auf mobilen Geräten vorschreiben</strong><sup>1</sup> | Erfordert die Verschlüsselung der Dateien auf dem Gerät. |
+
 <sup>1</sup> Zusätzliche Informationen für Geräte unter Windows 8.1
 
 -   Um die Verschlüsselung auf Geräten zu erzwingen, die Windows 8.1 ausführen, installieren Sie das [MDM-Clientupdate für Windows von Dezember 2014](http://support.microsoft.com/kb/3013816) auf jedem Gerät.
@@ -118,5 +119,5 @@ Verwenden Sie die **allgemeine Windows-Konfigurationsrichtlinie (Windows 8.1 und
 
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

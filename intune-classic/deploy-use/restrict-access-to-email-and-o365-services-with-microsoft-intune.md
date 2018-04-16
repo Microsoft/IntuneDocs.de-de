@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab45292734c39d3eaf4a5f0403cbff6e77d9d7e6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e121a3aaf4988bd92c36eb79131b2205263fb309
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Schützen des Zugriffs auf E-Mail, Office 365 und andere Dienste mit Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Sie können den Zugriff auf Ihre geschäftlichen E-Mails, Office 365-Dienste wie **lokales Exchange**, **Exchange Online**, **Exchange Online Dedicated**, **SharePoint Online**, **Skype for Business Online** und andere Dienste mithilfe des bedingten EMS-Zugriffs (Enterprise Mobility + Security) schützen. Mithilfe dieser Funktion können Sie sicherstellen, dass der Zugriff auf die E-Mail- und Office 365-Dienste Ihres Unternehmens auf Geräte beschränkt ist, die den von Ihnen festgelegten Regeln für den bedingten Zugriff entsprechen. Diese werden entweder in der Intune-Verwaltungskonsole oder im klassischen Azure-Portal festgelegt.
 ## <a name="how-does-conditional-access-work"></a>Funktionsweise des bedingten Zugriffs
@@ -60,7 +60,7 @@ Um den bedingten Zugriff einzurichten, konfigurieren Sie eine Richtlinie für di
 ### <a name="conditional-access-policy"></a>Richtlinie für bedingten Zugriff
 
 Sie können eine Richtlinie für bedingten Zugriff festlegen, um den Zugriff anhand folgender Aspekte zu schützen:
-- Der Status der Gerätekompatibilität.
+- Der Status der Gerätekonformität.
 - Die auf dem Gerät ausgeführte Plattform.
 - Die Art von Apps, die für den Zugriff auf die Dienste verwendet werden.
 
@@ -72,12 +72,12 @@ Im Gegensatz zu anderen Intune-Richtlinien stellen Sie Richtlinien für bedingte
 
 2. [Erstellen einer Gerätekompatibilitätsrichtlinie](create-a-device-compliance-policy-in-microsoft-intune.md)
 
-2.  Erstellen Sie eine Richtlinie für bedingten Zugriff für eines/n der folgenden Microsoft-Clouddienste bzw. -produkte:
+3. Erstellen Sie eine Richtlinie für bedingten Zugriff für eines/n der folgenden Microsoft-Clouddienste bzw. -produkte:
 
-  - [Bedingte Zugriffsrichtlinie für Exchange Online erstellen](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Bedingte Zugriffsrichtlinie für Exchange Online lokal erstellen](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Bedingte Zugriffsrichtlinie für Exchange Online Dedicated (neu) erstellen](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Bedingte Zugriffsrichtlinie für Exchange Online Dedicated (älter) erstellen](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Erstellen einer bedingten Zugriffsrichtlinie für SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  - [Erstellen einer bedingten Zugriffsrichtlinie für Skype for Business](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-  - [Erstellen einer bedingten Zugriffsrichtlinie für Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
+   - [Bedingte Zugriffsrichtlinie für Exchange Online erstellen](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [Bedingte Zugriffsrichtlinie für Exchange Online lokal erstellen](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [Bedingte Zugriffsrichtlinie für Exchange Online Dedicated (neu) erstellen](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [Bedingte Zugriffsrichtlinie für Exchange Online Dedicated (älter) erstellen](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [Erstellen einer bedingten Zugriffsrichtlinie für SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+   - [Erstellen einer bedingten Zugriffsrichtlinie für Skype for Business](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+   - [Erstellen einer bedingten Zugriffsrichtlinie für Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)

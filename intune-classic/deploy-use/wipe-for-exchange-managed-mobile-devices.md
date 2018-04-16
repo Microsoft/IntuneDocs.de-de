@@ -15,20 +15,22 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 31c5707424e582c9e86d8a271e4c03d5668c315c
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 753e5e9dac7199dff18d110808524f05aa669036
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="wipe-for-exchange-managed-mobile-devices"></a>Wipe for Exchange-managed mobile devices
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Mit Microsoft Intune können Sie mobile Geräte zurücksetzen, die mithilfe von Exchange ActiveSync (EAS) mit dem Intune Exchange Connector verwaltet werden. In der folgenden Tabelle werden die verfügbaren Funktionen zum Zurücksetzen über Exchange ActiveSync beschrieben:
 
-|Typ des Zurücksetzens|Windows 8.1 und Windows RT 8.1|iOS|Android|
-|----------------|----------------------------------|--------------|-------------------|-------|-----------|
-|Vollständiges Zurücksetzen|E-Mail-Konto und zwischengespeicherte E-Mails werden entfernt.|Zurück auf XWerkseinstellungen.|Zurück auf Werkseinstellungen|
-|Selektives Zurücksetzen/E-Mail|E-Mail-Konto wird entfernt|Nicht unterstützt.|Nicht unterstützt.|
-|Selektives Zurücksetzen/Richtlinien|Die Durchsetzung von Richtlinien wird entfernt, es werden jedoch keine Einstellungen geändert.|Die Durchsetzung von XRichtlinien wird entfernt, es werden jedoch keine Einstellungen geändert.|Die Durchsetzung von Richtlinien wird entfernt, es werden jedoch keine Einstellungen geändert.|
+
+|      Typ des Zurücksetzens       |              Windows 8.1 und Windows RT 8.1              |                            iOS                             |                          Android                          |
+|-------------------------|----------------------------------------------------------|------------------------------------------------------------|-----------------------------------------------------------|
+|        Vollständiges Zurücksetzen        |          E-Mail-Konto und zwischengespeicherte E-Mails werden entfernt.           |                      Zurück auf XWerkseinstellungen.                       |                      Zurück auf Werkseinstellungen                       |
+|  Selektives Zurücksetzen/E-Mail   |                  E-Mail-Konto wird entfernt                  |                       Nicht unterstützt.                       |                      Nicht unterstützt.                       |
+| Selektives Zurücksetzen/Richtlinien | Die Durchsetzung von Richtlinien wird entfernt, es werden jedoch keine Einstellungen geändert. | Die Durchsetzung von XRichtlinien wird entfernt, es werden jedoch keine Einstellungen geändert. | Die Durchsetzung von Richtlinien wird entfernt, es werden jedoch keine Einstellungen geändert. |
+
