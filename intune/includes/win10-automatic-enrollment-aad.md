@@ -11,21 +11,21 @@ Durch die automatische Registrierung können Benutzer ihre Windows 10-Geräte in
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an, und klicken Sie auf **Azure Active Directory**.
 
-  ![Screenshot des Azure-Portals](../media/auto-enroll-azure-main.png)
+   ![Screenshot des Azure-Portals](../media/auto-enroll-azure-main.png)
 
 2. Wählen Sie **Mobilität (MDM und MAM)** aus.
 
-  ![Screenshot des Azure-Portals](../media/auto-enroll-mdm.png)
+   ![Screenshot des Azure-Portals](../media/auto-enroll-mdm.png)
 
 3. Wählen Sie **Microsoft Intune** aus.
 
-  ![Screenshot des Azure-Portals](../media/auto-enroll-intune.png)
+   ![Screenshot des Azure-Portals](../media/auto-enroll-intune.png)
 
 4. Konfigurieren Sie den **MDM-Benutzerbereich**. Geben Sie an, welche Geräte von Benutzern von Microsoft Intune verwaltet werden sollen. Diese Windows 10-Geräte können sich automatisch für die Verwaltung mit Microsoft Intune registrieren.
 
-  - **Keine**: Automatische MDM-Registrierung ist deaktiviert.
-  - **Einige**: Wählen Sie die **Gruppen** aus, die ihre Windows 10-Geräte automatisch registrieren können.
-  - **Alle**: Alle Benutzer können ihre Windows 10-Geräte automatisch registrieren.
+   - **Keine**: Automatische MDM-Registrierung ist deaktiviert.
+   - **Einige**: Wählen Sie die **Gruppen** aus, die ihre Windows 10-Geräte automatisch registrieren können.
+   - **Alle**: Alle Benutzer können ihre Windows 10-Geräte automatisch registrieren.
 
       > [!IMPORTANT]
       > Wenn der **MAM-Benutzerbereich** und die automatische MDM-Registrierung (**MDM-Benutzerbereich**) für eine Gruppe aktiviert sind, wird nur MAM aktiviert. Nur MAM wird für Benutzer in dieser Gruppe hinzugefügt, wenn ihr persönliches Gerät dem Arbeitsplatz beitritt. Geräte werden nicht automatisch in MDM registriert.

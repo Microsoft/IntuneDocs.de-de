@@ -11,28 +11,28 @@ Mit der Funktion der automatischen Registrierung können Benutzer ihre Windows 1
 
 1. Melden Sie sich im [Azure-Verwaltungsportal](https://portal.azure.com) (https://manage.windowsazure.com) an, und wählen Sie **Azure Active Directory** aus.
 
-  ![Screenshot des Azure-Portals](../media/auto-enroll-azure-main.png)
+   ![Screenshot des Azure-Portals](../media/auto-enroll-azure-main.png)
 
 2. Wählen Sie **Mobilität (MDM und MAM)** aus.
 
-  ![Screenshot des Azure-Portals](../media/auto-enroll-mdm.png)
+   ![Screenshot des Azure-Portals](../media/auto-enroll-mdm.png)
 
 3. Wählen Sie **Microsoft Intune** aus.
 
-  ![Screenshot des Azure-Portals](../media/auto-enroll-intune.png)
+   ![Screenshot des Azure-Portals](../media/auto-enroll-intune.png)
 
 4. Konfigurieren Sie den **MDM-Benutzerbereich**. Geben Sie an, welche Geräte von Benutzern von Microsoft Intune verwaltet werden sollen. Die Windows 10-Geräte dieser Benutzer werden automatisch für die Verwaltung mit Microsoft Intune registriert.
 
-  - **Keine**
-  - **Einige**
-  - **Alle**
+   - **Keine**
+   - **Einige**
+   - **Alle**
 
- ![Screenshot des Azure-Portals](../media/auto-enroll-scope.png)
+   ![Screenshot des Azure-Portals](../media/auto-enroll-scope.png)
 
 5. Verwenden Sie die Standardwerte für die folgenden URLs:
-  - **URL für MDM-Nutzungsbedingungen**
-  - **URL für MDM-Ermittlung**
-  - **MDM Compliance-URL**
+   - **URL für MDM-Nutzungsbedingungen**
+   - **URL für MDM-Ermittlung**
+   - **MDM Compliance-URL**
 
 6. Wählen Sie **Speichern** aus.
 

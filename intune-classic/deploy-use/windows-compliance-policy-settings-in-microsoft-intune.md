@@ -1,6 +1,6 @@
 ---
 title: "Einstellungen für Kompatibilitätsrichtlinien für Windows-Geräte"
-description: "In diesem Thema werden die Regeln und Einstellungen beschrieben, die Sie für eine Kompatibilitätsrichtlinie für Windows-Geräte konfigurieren können."
+description: "In diesem Thema werden die Regeln und Einstellungen beschrieben, die Sie für eine Konformitätsrichtlinie für Windows-Geräte konfigurieren können."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,23 +15,23 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1c9a59fa97c11794ff8ad0a0eaa41630bfdf847e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6a54943873a6af158badb92cef4610e54fc8889b
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Einstellungen für Kompatibilitätsrichtlinien für Windows Geräte in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Die in diesem Thema beschriebenen Richtlinieneinstellungen gelten für Geräte mit dem Windows-Betriebssystem. In den folgenden Abschnitten werden die unterstützten Windows-Versionen beschrieben.
 
 Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine dieser Plattformen:
 > [!div class="op_single_selector"]
-- [Einstellungen für Kompatibilitätsrichtlinien für iOS-Geräte](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Einstellungen für Kompatibilitätsrichtlinien für Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [Einstellungen für Kompatibilitätsrichtlinien für iOS-Geräte](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Einstellungen für Kompatibilitätsrichtlinien für Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Einstellungen für Kompatibilitätsrichtlinien für Windows Phone-Geräte
 Die in diesem Abschnitt aufgeführten Einstellungen werden unter Windows Phone 8.1 und höher unterstützt.
@@ -80,7 +80,7 @@ Die in diesem Abschnitt aufgeführten Einstellungen werden unter Windows Phone 8
   > Windows-Geräte unterstützen keine Software für **Antischadstoff-Frühstarts** (Early Launch Anti Malware, ELAM) von Drittanbietern, die im Rahmen des Nachweises der Geräteintegrität installiert wurden.
 
   Informationen zur Funktionsweise des HAS-Diensts finden Sie unter [Integritätsnachweis-CSP](https://msdn.microsoft.com/library/dn934876.aspx).
-###  <a name="device-property-settings"></a>Einstellungen für Geräteeigenschaften
+  ###  <a name="device-property-settings"></a>Einstellungen für Geräteeigenschaften
 - **Minimal erforderliches Betriebssystem**: Wenn ein Gerät die Anforderungen an die erforderliche Mindestversion des Betriebssystems nicht erfüllt, wird es als nicht kompatibel gemeldet.
     Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Benutzer kann ein Upgrade des Geräts durchführen, und anschließend auf die Unternehmensressourcen zugreifen.
 
@@ -153,4 +153,4 @@ Um die Betriebssystemversion für die Einstellungen **Minimal erforderliches Bet
 - Windows 8.1-PCs geben die Version **6.3** zurück. Wenn die Regel für die Betriebssystemversion für Windows auf Windows 8.1 festgelegt ist, wird das betreffende Gerät als nicht kompatibel gemeldet, selbst wenn auf ihm Windows 8.1 installiert ist.
 
 - Bei PCs unter Windows 10 muss die Version auf **10.0** plus Buildnummer des Betriebssystems festgelegt werden, die vom **winver**-Befehl zurückgegeben wird. Beispiel: 10.0.10586.
-> ![Die Buildversion des Betriebssystems wird im Dialogfeld „Info“ markiert](./media/ca_win10-os-version.png)
+  > ![Die Buildversion des Betriebssystems wird im Dialogfeld „Info“ markiert](./media/ca_win10-os-version.png)

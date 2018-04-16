@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d02a822dc9a403806657f36ae0ac4bfad8246d0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Voraussetzungen für die Verwaltung von mobilen Geräten in Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Damit Mitarbeiter ihre mobilen Geräten bei Intune registrieren können, sind die folgenden Schritte erforderlich. Dieselben Schritte müssen auch ausgeführt werden, um unternehmenseigene Geräte verwalten zu können.
 
@@ -39,7 +39,7 @@ Damit Mitarbeiter ihre mobilen Geräten bei Intune registrieren können, sind di
 
 Suchen Sie nach Intune mit Configuration Manager?
 > [!div class="button"]
-[SCCM-Dokumentation anzeigen >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+> [SCCM-Dokumentation anzeigen >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## <a name="step-1-enable-connections"></a>Schritt 1: Aktivieren von Verbindungen
 
@@ -70,7 +70,7 @@ Sie können Benutzer- und Gerätegruppen erstellen, um die Verwaltung zu vereinf
 Im Intune-Unternehmensportal können Benutzer auf Unternehmensdaten zugreifen, häufige Aufgaben wie das Registrieren von Geräten und das Installieren von Apps ausführen und sich über Unterstützungsmöglichkeiten durch Ihre IT-Abteilung informieren.
 
 > [!TIP]
-> Wenn Sie das Unternehmensportal anpassen, gelten die Konfigurationen sowohl für die Unternehmensportalwebsite als auch für die Unternehmensportal-Apps.
+> Wenn Sie das Unternehmensportal anpassen, gelten die Konfigurationen sowohl für die Unternehmensportal-Website als auch für die Unternehmensportal-Apps.
 
 Durch Anpassen des Unternehmensportals können Sie Ihren Endbenutzern eine vertraute und hilfreiche Benutzeroberfläche bereitstellen. Melden Sie sich zu diesem Zweck einfach als Mandanten- oder Dienstadministrator bei der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) an, wählen Sie **Verwaltung** &gt; **Unternehmensportal** aus, und konfigurieren Sie die Einstellungen für das Unternehmensportal.
 
@@ -80,14 +80,15 @@ Durch Anpassen des Unternehmensportals können Sie Ihren Endbenutzern eine vertr
 
 Der Unternehmensname wird als Titel des Unternehmensportals angezeigt. Die Kontaktinformationen werden Benutzern im Unternehmensportal auf dem Bildschirm für die Kontaktaufnahme mit der IT-Abteilung angezeigt. Die Datenschutzerklärung wird angezeigt, wenn ein Benutzer auf den Datenschutzlink klickt.
 
-|Feldname|Max. Länge|Weitere Informationen|
-    |----------|------------------------|----------------|
-    |Firmenname|40|Dieser Name wird als Titel des Unternehmensportals angezeigt. **Hinweis**: Nur alphanumerische Zeichen. Dieses Feld unterstützt keine Sonderzeichen.|
-    |Kontaktname für IT-Abteilung|40|Dieser Name wird auf der Seite **An IT-Abteilung wenden** angezeigt.|
-    |Telefonnummer der IT-Abteilung|20|Diese Telefonnummer wird auf der Seite **An IT-Abteilung wenden** angezeigt.|
-    |E-Mail-Adresse der IT-Abteilung|40|Diese Kontaktadresse wird auf der Seite **An IT-Abteilung** wenden angezeigt. Sie müssen eine gültige E-Mail-Adresse im Format **alias@domainname.com** eingeben.|
-    |Weitere Informationen|120|Diese Informationen werden auf der Seite **An IT wenden** angezeigt.|
-    |URL der Datenschutzrichtlinie des Unternehmens|79|Sie können eine eigene Datenschutzerklärung für Ihr Unternehmen angeben. Diese wird angezeigt, wenn die Benutzer im Unternehmensportal auf die Datenschutzlinks klicken. Sie müssen eine gültige URL im Format https://www.contoso.com eingeben.|
+
+|          Feldname           | Max. Länge |                                                                                       Weitere Informationen                                                                                        |
+|-------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Firmenname          |     40     |                Dieser Name wird als Titel des Unternehmensportals angezeigt. <strong>Hinweis</strong>: Nur alphanumerische Zeichen. Dieses Feld unterstützt keine Sonderzeichen.                |
+|  Kontaktname für IT-Abteilung   |     40     |                                                                Dieser Name wird auf der Seite <strong>An IT-Abteilung wenden</strong> angezeigt.                                                                |
+|  Telefonnummer der IT-Abteilung   |     20     |                                                           Diese Telefonnummer wird auf der Seite <strong>An IT-Abteilung wenden</strong> angezeigt.                                                           |
+|  E-Mail-Adresse der IT-Abteilung  |     40     |             Diese Kontaktadresse wird auf der Seite <strong>An IT-Abteilung</strong> wenden angezeigt. Sie müssen eine gültige E-Mail-Adresse im Format <strong>alias@domainname.com</strong> eingeben.              |
+|    Zusätzliche Informationen     |    120     |                                                            Diese Informationen werden auf der Seite <strong>An IT wenden</strong> angezeigt.                                                             |
+| URL der Datenschutzrichtlinie des Unternehmens |     79     | Sie können eine eigene Datenschutzerklärung für Ihr Unternehmen angeben. Diese wird angezeigt, wenn die Benutzer im Unternehmensportal auf die Datenschutzlinks klicken. Sie müssen eine gültige URL im Format https://www.contoso.com eingeben. |
 
 ### <a name="support-contacts"></a>Supportkontakte
 Die Supportwebsite wird Benutzern im Unternehmensportal angezeigt, um ihnen Zugriff auf Onlinesupport zu ermöglichen.

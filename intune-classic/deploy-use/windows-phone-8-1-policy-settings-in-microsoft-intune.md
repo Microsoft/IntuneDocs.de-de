@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 083ac6c4bbab6cdad9fd07ac68cdd7447f14fe5e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: b44215e301bb712cc4d27722515d2e51b124101b
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Einstellungen für Windows Phone 8.1-Richtlinien in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune bietet eine Auswahl von integrierten allgemeinen Einstellungen, die Sie auf Windows Phone 8.1-Geräten konfigurieren können. Darüber hinaus können Sie OMA-URI-Werte (Open Mobile Alliance Uniform Resource Identifier) angeben, um benutzerdefinierte Einstellungen zu erstellen, die über Intune nicht verfügbar sind.
 
@@ -43,18 +43,18 @@ Konfigurieren Sie mithilfe der **allgemeinen Windows Phone-Konfigurationsrichtli
 
 ### <a name="password-settings"></a>Kennworteinstellungen
 
-|Name der Einstellung|Details|
-|----------------|------|
-|**Anfordern eines Kennworts zum Entsperren mobiler Geräte**|Gibt an, ob Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.|
-|**Erforderlicher Kennworttyp**|Gibt den erforderlichen Typ des Kennworts an, z.B. alphanumerisch oder nur numerisch.|
-|**Erforderlicher Kennworttyp – Mindestanzahl von Zeichensätzen**|Gibt an, wie viele verschiedene Zeichensätze im Kennwort enthalten sein müssen. Es gibt vier Zeichensätze: Kleinbuchstaben, Großbuchstaben, Zahlen und Symbole. Für iOS-Geräte wird hiermit jedoch die erforderliche Anzahl von Symbolzeichen im Kennwort angegeben.|
-|**Minimale Kennwortlänge**|Gibt die Mindestanzahl von Zeichen an, die das Kennwort enthalten muss.|
-|**Einfache Kennwörter zulassen**|Gibt an, dass einfache Kennwörter, wie z.B: „0000“ und „1234“ verwendet werden können.|
-|**Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird**|Gibt an, wie häufig ein falsches Kennwort eingegeben werden kann, bevor das Gerät zurückgesetzt wird.|
-|**Inaktivität in Minuten bis zur Abschaltung des Bildschirms**|Gibt die Zeitdauer an, die ein Gerät im Leerlauf bleiben muss, bevor der Bildschirm automatisch gesperrt wird.|
-|**Kennwortablauf (Tage)**|Gibt die Anzahl der Tage an, bevor das Gerätekennwort geändert werden muss.|Ja|Ja|
-|**Kennwortverlauf speichern**|Gibt an, ob zuvor verwendete Kennwörter gespeichert werden, um zu verhindern, dass der Benutzer sie erneut verwendet.|
-|**Kennwortverlauf speichern** – **Wiederverwendung vorheriger Kennwörter verhindern**|Gibt an, wie viele zuvor verwendete Kennwörter gespeichert werden.|
+|                                           Name der Einstellung                                            |                                                                                                                                    Details                                                                                                                                     |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Anfordern eines Kennworts zum Entsperren mobiler Geräte</strong>                    |                                                                                                     Gibt an, ob Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.                                                                                                     |
+|                              <strong>Erforderlicher Kennworttyp</strong>                              |                                                                                          Gibt den erforderlichen Typ des Kennworts an, z.B. alphanumerisch oder nur numerisch.                                                                                           |
+|            <strong>Erforderlicher Kennworttyp – Mindestanzahl von Zeichensätzen</strong>             | Gibt an, wie viele verschiedene Zeichensätze im Kennwort enthalten sein müssen. Es gibt vier Zeichensätze: Kleinbuchstaben, Großbuchstaben, Zahlen und Symbole. Für iOS-Geräte wird hiermit jedoch die erforderliche Anzahl von Symbolzeichen im Kennwort angegeben. |
+|                             <strong>Minimale Kennwortlänge</strong>                              |                                                                                                 Gibt die Mindestanzahl von Zeichen an, die das Kennwort enthalten muss.                                                                                                  |
+|                              <strong>Einfache Kennwörter zulassen</strong>                              |                                                                                                     Gibt an, dass einfache Kennwörter, wie z.B: „0000“ und „1234“ verwendet werden können.                                                                                                     |
+|     <strong>Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird</strong>      |                                                                                         Gibt an, wie häufig ein falsches Kennwort eingegeben werden kann, bevor das Gerät zurückgesetzt wird.                                                                                         |
+|                <strong>Inaktivität in Minuten bis zur Abschaltung des Bildschirms</strong>                 |                                                                                       Gibt die Zeitdauer an, die ein Gerät im Leerlauf bleiben muss, bevor der Bildschirm automatisch gesperrt wird.                                                                                        |
+|                            <strong>Kennwortablauf (Tage)</strong>                            |                                                                                                    Gibt die Anzahl der Tage an, bevor das Gerätekennwort geändert werden muss.                                                                                                    |
+|                            <strong>Kennwortverlauf speichern</strong>                             |                                                                                     Gibt an, ob zuvor verwendete Kennwörter gespeichert werden, um zu verhindern, dass der Benutzer sie erneut verwendet.                                                                                      |
+| <strong>Kennwortverlauf speichern</strong> – <strong>Wiederverwendung vorheriger Kennwörter verhindern</strong> |                                                                                                          Gibt an, wie viele zuvor verwendete Kennwörter gespeichert werden.                                                                                                          |
 
 ### <a name="encryption-settings"></a>Verschlüsselungseinstellungen
 
@@ -119,14 +119,15 @@ Geben Sie in der **Liste zulässiger oder blockierter Apps** eine Liste der jewe
 > [!NOTE]
 > Eine einzelne Richtlinie kann nur eine Liste zulässiger oder blockierter Apps enthalten. Sie können nicht beide Typen in derselben Richtlinie angeben.
 
-|Name der Einstellung|Details|
-|----------------|--------------------|
-|**Öffnen der aufgelisteten Anwendungen durch die Geräte blockieren**|Listet die Apps auf, die nicht von Intune verwaltet werden, und welche Benutzer diese nicht installieren und ausführen dürfen.|
-|**Geräten nur erlauben, die aufgelisteten Anwendungen zu installieren**|Listet die Apps auf, die Benutzer installieren dürfen. Benutzer können keine anderen Apps installieren. Apps, die von Intune verwaltet werden, sind automatisch zugelassen.|
-|**Hinzufügen**|Fügt eine App zur ausgewählten Liste hinzu. Geben Sie einen Namen Ihrer Wahl, die URL zur App im App-Store und den Herausgeber der App (optional) an. Weitere Informationen finden Sie unter „Angeben von URLs zu App Stores“ weiter unten in diesem Thema.
-|**Anwendungen importieren**|Importiert eine Liste von Apps, die Sie in einer CSV-Datei angegeben haben. Verwenden Sie in der Datei das Format Anwendungsname, Herausgeber und App-URL.|
-|**Bearbeiten**|Ermöglicht Ihnen das Bearbeiten von Name, Herausgeber und URL der ausgewählten App.|
-|**Löschen**|Löscht die ausgewählte App aus der Liste.|
+|                          Name der Einstellung                          |                                                                                                      Details                                                                                                      |
+|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Öffnen der aufgelisteten Anwendungen durch die Geräte blockieren</strong>   |                                                        Listet die Apps auf, die nicht von Intune verwaltet werden, und welche Benutzer diese nicht installieren und ausführen dürfen.                                                         |
+| <strong>Geräten nur erlauben, die aufgelisteten Anwendungen zu installieren</strong> |                                 Listet die Apps auf, die Benutzer installieren dürfen. Benutzer können keine anderen Apps installieren. Apps, die von Intune verwaltet werden, sind automatisch zugelassen.                                 |
+|                      <strong>Hinzufügen</strong>                      | Fügt eine App zur ausgewählten Liste hinzu. Geben Sie einen Namen Ihrer Wahl, die URL zur App im App-Store und den Herausgeber der App (optional) an. Weitere Informationen finden Sie unter „Angeben von URLs zu App Stores“ weiter unten in diesem Thema. |
+|                  <strong>Anwendungen importieren</strong>                  |                              Importiert eine Liste von Apps, die Sie in einer CSV-Datei angegeben haben. Verwenden Sie in der Datei das Format Anwendungsname, Herausgeber und App-URL.                               |
+|                     <strong>Bearbeiten</strong>                      |                                                                          Ermöglicht Ihnen das Bearbeiten von Name, Herausgeber und URL der ausgewählten App.                                                                          |
+|                    <strong>Löschen</strong>                     |                                                                                      Löscht die ausgewählte App aus der Liste.                                                                                      |
+
 > [!IMPORTANT]
 > Wenn Sie eine Liste von zulässigen Apps für Windows Phone 8.1-Geräte angeben, müssen Sie die Unternehmensportal-App zu dieser Liste hinzufügen, da sie andernfalls blockiert wird.
 
@@ -166,9 +167,9 @@ Geben Sie im Dialogfeld **OMA-URI hinzufügen oder bearbeiten** die folgenden In
     |--------|--------------------|
     |**Einstellungsname**|Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie sie in der Liste der Einstellungen leichter identifizieren können.|
     |**Einstellungsbeschreibung**|Geben Sie eine Beschreibung ein, die einen Überblick über die Einstellung bietet, und andere relevante Informationen, die Ihnen die Suche danach erleichtern.|
-    |**Datentyp**|Wählen Sie den Datentyp aus, in dem Sie diese OMA-URI-Einstellung angeben. Wählen Sie aus:<br /><br />-   **Zeichenfolge**<br />-   **Zeichenfolge (XML)**<br />-   **Datum und Uhrzeit**<br />-   **Ganze Zahl**<br />-   **Gleitkomma**<br />-   **Boolesch**|
+    |**Datentyp**|Wählen Sie den Datentyp aus, in dem Sie diese OMA-URI-Einstellung angeben. Es stehen die folgenden Optionen zur Auswahl:<br /><br />-   **Zeichenfolge**<br />-   **Zeichenfolge (XML)**<br />-   **Datum und Uhrzeit**<br />-   **Ganze Zahl**<br />-   **Gleitkomma**<br />-   **Boolesch**|
     |**OMA-URI (Groß-/Kleinschreibung beachten)**|Geben Sie den OMA-URI an, für den Sie eine Einstellung festlegen möchten.|
     |**Wert**|Geben Sie den mit der zuvor festgelegten OMA-URI-Einstellung zu verknüpfenden Wert an.|
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 59168615548d3c7da8dc284476227ed0f01ceffe
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2a05444c757b8e99ca0b897acfcd6238d960aeb2
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Schützen von Apps und Daten mit Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune schützt Unternehmensdaten auf verschiedenen Technologieebenen. Auf Ebene der Identität wird Schutz über das Konzept des bedingten Zugriffs implementiert: Der Zugriff auf Dienste ist nur über verwaltete und kompatible Geräte gestattet. Auf Ebene der Clientanwendung schützt die Verwaltung mobiler Anwendungen (Mobile App Management, MAM) vor Datenverlusten: Daten werden nicht an ungeschützte Apps oder Speicherorte verschoben, und bei Verlust oder Diebstahl eines Geräts werden Daten gelöscht. Es empfiehlt sich, diese beiden Schutzebenen zusammen zu verwenden, um den Schutz der Daten zu gewährleisten und gleichzeitig dafür zu sorgen, dass mobile Mitarbeiter produktiv arbeiten können.
 
@@ -34,7 +34,7 @@ Ein wichtiger erster Schritt zum Schutz von Unternehmensdaten ist die Implementi
   - PIN und Kennwörter: Sie können Regeln erstellen, die Kennwörter zum Entsperren eines Geräts erforderlich machen, die Komplexitätsanforderungen für Kennwörter festlegen sowie weitere Kennworteinstellungen vorgeben.
   - Verschlüsselung: Sie können den Zugriff auf Geräte einschränken, die verschlüsselt sind.
   - Ein Gerät wurde nicht per Jailbreak oder Rooting manipuliert: Intune kann erkennen, wenn ein Gerät per Jailbreak manipuliert wurde. Sie können die Richtlinie so festlegen, dass der Zugriff auf solchen Geräten blockiert wird.
-- Sie konfigurieren [bedingte Zugriffsrichtlinien](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) für einen bestimmten Dienst wie Exchange Online oder SharePoint Online. Für jeden Dienst können Sie definieren, auf welche Gruppen von Benutzern diese Richtlinien angewendet werden sollen. Beispielsweise können Sie sicherstellen, dass jeder Mitarbeiter der Finanzabteilung nur über registrierte und kompatible Geräte auf Unternehmens-E-Mail zugreifen kann.
+- Sie konfigurieren [bedingte Zugriffsrichtlinien](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) für einen bestimmten Dienst wie Exchange Online oder SharePoint Online. Für jeden Dienst können Sie definieren, auf welche Gruppen von Benutzern diese Richtlinien angewendet werden sollen. Beispielsweise können Sie sicherstellen, dass jeder Mitarbeiter der Finanzabteilung nur über registrierte und konforme Geräte auf Unternehmens-E-Mail zugreifen kann.
 
 Die Sicherung des Zugriffs auf Unternehmensressourcen ist nur der erste Schritt hin zum Schutz der Unternehmensdaten. Sie benötigen außerdem die Möglichkeit, die Daten zu schützen, nachdem der Zugriff über das Gerät erfolgt ist. Die Daten können jetzt kopiert, verschoben, an einem anderen Speicherort gespeichert oder mit anderen Benutzern gemeinsam verwendet werden. Intune löst dieses Problem, indem Sie durch Erstellen eines Satzes von Regeln Datenverschiebungen beschränken können. Folgende Regeln können Sie festlegen:
 - Blockieren von Kopier-/Einfügevorgängen oder Verhindern einer Datenübertragung außerhalb des Arbeitskontexts.

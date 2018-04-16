@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f92c4b8eabac85dec735e57306f7c8b291ba1675
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: f583dba7e5ade0e06bc68589623558de0de667c8
+ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="monitor-app-deployments-in-microsoft-intune"></a>Überwachen von App-Bereitstellungen in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="monitor-an-app-deployment"></a>Überwachen einer App-Bereitstellung
 Sie können die verwalteten Apps und den Status aller Bereitstellungen in der Intune-Verwaltungskonsole anzeige. <!---App status is displayed in real-time. You don't have to wait for the device to check-in before you can see this.--->
