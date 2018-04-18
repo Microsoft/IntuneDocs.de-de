@@ -60,6 +60,8 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
 6. Klicken Sie auf **Gruppen auswählen**, um verfügbare Azure AD-Gruppen aufzulisten. 
 7. Wählen Sie mindestens eine Gruppe mit den Benutzern aus, deren Geräte das Skript erhalten sollen, und klicken Sie dann auf **Auswählen**, um die Richtlinie den ausgewählten Gruppen zuzuweisen.
 
+Hinweis: PowerShell Skripte können nicht auf Computer Gruppen angewendet werden
+
 Die Intune-Verwaltungserweiterung wird einmal pro Stunde mit Intune synchronisiert. Nachdem Sie die Richtlinie den Azure AD-Gruppen zugewiesen haben, wird das PowerShell-Skript ausgeführt, und die Ausführungsergebnisse werden berichtet. 
  
 ## <a name="monitor-run-status-for-powershell-scripts"></a>Überwachen des Ausführungsstatus für PowerShell-Skripts
