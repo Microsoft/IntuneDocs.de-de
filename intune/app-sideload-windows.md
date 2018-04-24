@@ -1,26 +1,26 @@
 ---
-title: "Querladen von Windows- und Windows Phone-Apps für Intune"
-description: "Erfahren Sie, wie Sie branchenspezifische Apps signieren, um sie mit Intune bereitstellen zu können."
-keywords: 
+title: Querladen von Windows- und Windows Phone-Apps für Intune
+description: Erfahren Sie, wie Sie branchenspezifische Apps signieren, um sie mit Intune bereitstellen zu können.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 06/07/2017
 ms.topic: article
-ms.prod: 
-ms.service: 
-ms.technology: 
+ms.prod: ''
+ms.service: ''
+ms.technology: ''
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 06922f76643a6b95e994bf4e219ee3a4a85953c5
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 9f629fce727df9f15b6357c7c624165e4443ea91
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Signieren Sie branchenspezifische Apps, damit sie mit Intune auf Windows-Geräten bereitgestellt werden können
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Als Intune-Administrator können Sie branchenspezifische Apps – einschließlich der Unternehmensportal-App – auf Windows- und Windows 10 Mobile-Geräten bereitstellen. Um APPX- oder XAP-Apps auf Windows 10- und Windows 10 Mobile-Geräten oder beliebige branchenspezifische App auf Windows 8.1- oder Windows Phone 8.1-Geräten bereitzustellen, müssen Sie ein **Symantec Enterprise Mobile Code Signing-Zertifikat** erwerben. Nur das Symantec-Zertifikat wird für diese Apps auf den jeweiligen Windows-Geräten als vertrauenswürdig eingestuft. Für Windows 10-Apps und universelle Apps können Sie Ihre eigene Zertifizierungsstelle verwenden. Dieses Zertifikat ist für folgende Zwecke erforderlich:
 
@@ -78,11 +78,11 @@ Sie können die Unternehmensportal-App mit Intune auf Windows-Geräten (Windows 
 
     Alternativ können Sie das Windows Phone 8.1-Unternehmensportal (offline lizenziertes Paket) oder das Windows 10-Unternehmensportal (offline lizenziertes Paket) aus dem [Microsoft Store für Unternehmen](http://businessstore.microsoft.com/) herunterladen. Die Unternehmensportal-App muss mit einer Offlinelizenz und dem geeigneten Paket zur Offlineverwendung erworben werden. Einträge für die Plattformen Windows 8 und Windows Phone 8 in der Auswahl beziehen sich auf die entsprechenden 8.1-Komponenten. Weitere Informationen, wie Sie dies in Intune ausführen, finden Sie unter [Verwalten von Apps, die im Microsoft Store für Unternehmen erworben wurden](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
-2.  **Herunterladen des Windows Phone SDK** Laden Sie das Windows Phone SDK 8.0](http://go.microsoft.com/fwlink/?LinkId=615570) herunter, und installieren Sie es auf Ihrem Computer. Dieses SDK ist erforderlich, um ein Anwendungsregistrierungstoken zu generieren.
+2.  **Herunterladen des Windows Phone SDK** Laden Sie das Windows Phone SDK 8.0 (http://go.microsoft.com/fwlink/?LinkId=615570)) herunter, und installieren Sie es auf Ihrem Computer. Dieses SDK ist erforderlich, um ein Anwendungsregistrierungstoken zu generieren.
 
 3.  **Generieren einer AETX-Datei** Generieren Sie aus der Symantec PFX-Datei eine Anwendungsregistrierungstoken-Datei (.aetx) mithilfe von AETGenerator.exe. Dieses Tool ist Teil von Windows Phone SDK 8.0. Eine Anleitung zum Erstellen einer AETX-Datei finden Sie im Abschnitt über das [Generieren eines Anwendungsregistrierungstokens für Windows Phone](https://msdn.microsoft.com/library/windows/apps/jj735576.aspx).
 
-4.  **Herunterladen des Windows SDK für Windows 8.1** Laden Sie das [Windows Phone SDK](http://go.microsoft.com/fwlink/?LinkId=613525) herunter (http://go.microsoft.com/fwlink/?LinkId=613525), und installieren Sie es. Beachten Sie, dass das in der Unternehmensportal-App verwendete PowerShell-Skript den Standardinstallationsort `${env:ProgramFiles(x86)}\Windows Kits\8.1`nutzt. Wenn Sie die App an einem anderen Ort installieren möchten, beziehen Sie den Speicherort in einem Cmdlet-Parameter ein.
+4.  **Herunterladen des Windows SDK für Windows 8.1** Laden Sie das [Windows Phone SDK](http://go.microsoft.com/fwlink/?LinkId=613525) herunter (http://go.microsoft.com/fwlink/?LinkId=613525)), und installieren Sie es. Beachten Sie, dass das in der Unternehmensportal-App verwendete PowerShell-Skript den Standardinstallationsort `${env:ProgramFiles(x86)}\Windows Kits\8.1`nutzt. Wenn Sie die App an einem anderen Ort installieren möchten, beziehen Sie den Speicherort in einem Cmdlet-Parameter ein.
 
 5.  **Codesignieren der App mithilfe von PowerShell** Öffnen Sie als Administrator **Windows PowerShell** auf dem Hostcomputer, auf dem Windows SDK mit dem Symantec Enterprise Mobile Code Signing Certificate installiert wurde. Navigieren Sie zur Datei „Sign-WinPhoneCompanyPortal.ps1“, und führen Sie das Skript aus.
 
@@ -128,7 +128,7 @@ Das zur Bereitstellung von mobilen Windows- und Windows Phone-Geräten verwendet
 
     Weitere Informationen zu Symantec-Zertifikaten erhalten Sie unter [www.symantec.com](http://www.symantec.com) oder telefonisch unter 1-877-438-8776 oder + 1-650-426-3400.
 
-2.  Wechseln Sie zu der Website (z. B.: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)), und melden Sie sich mit der Symantec-Herausgeber-ID und der mit dem Zertifikat verbundenen E-Mail-Adresse an. Denken Sie daran, den gleichen Computer für das Starten der Erneuerung zu verwenden, den Sie auch zum Herunterladen des Zertifikats verwenden werden.
+2.  Navigieren Sie zur Website (Beispiel: [https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do)), und melden Sie sich mit der Symantec Herausgeber-ID und der E-Mail-Adresse an, die mit dem Zertifikat verknüpft ist. Denken Sie daran, den gleichen Computer für das Starten der Erneuerung zu verwenden, den Sie auch zum Herunterladen des Zertifikats verwenden werden.
 
 3.  Sobald die Erneuerung genehmigt und bezahlt wurde, können Sie das Zertifikat herunterladen.
 
@@ -158,11 +158,11 @@ Sie können die Windows 10-Unternehmensportal-App manuell direkt über Intune be
 
 ![Abbildung mit den herunterzuladenden Abhängigkeitsdateien ](./media/Win10CP-dependent-files.png)
 5. Erstellen Sie einen Ordner (beispielsweise „C:&#92;Company Portal“), bevor Sie die Unternehmensportal-App in Intune hochladen, und strukturieren Sie die Pakete wie folgt:
-  1. Platzieren Sie das Unternehmensportal-Paket im Ordner „C:\Company Portal“. Erstellen Sie dort auch einen Unterordner namens „Dependencies“.  
-  ![Abbildung mit dem Ordner „Dependencies“ und der APPXBUN-Datei](./media/Win10CP-Dependencies-save.png)
-  2. Platzieren Sie die neun Abhängigkeitspakete im Ordner „Dependencies“.  
-  Sind die Abhängigkeiten nicht wie hier beschrieben strukturiert, werden sie von Intune nicht erkannt und nicht hochgeladen. In diesem Fall tritt der folgende Fehler auf:  
-  ![Die Windows App-Abhängigkeit für dieses Softwareinstallationsprogramm wurde im Anwendungsordner nicht gefunden. Sie können diese Anwendung weiterhin erstellen und bereitstellen. Sie können sie jedoch nicht ausführen, bis die fehlende Windows App-Abhängigkeit bereitgestellt wird.](./media/Win10CP-error-message.png)
+   1. Platzieren Sie das Unternehmensportal-Paket im Ordner „C:\Company Portal“. Erstellen Sie dort auch einen Unterordner namens „Dependencies“.  
+   ![Abbildung mit dem Ordner „Dependencies“ und der APPXBUN-Datei](./media/Win10CP-Dependencies-save.png)
+   2. Platzieren Sie die neun Abhängigkeitspakete im Ordner „Dependencies“.  
+   Sind die Abhängigkeiten nicht wie hier beschrieben strukturiert, werden sie von Intune nicht erkannt und nicht hochgeladen. In diesem Fall tritt der folgende Fehler auf:  
+   ![Die Windows App-Abhängigkeit für dieses Softwareinstallationsprogramm wurde im Anwendungsordner nicht gefunden. Sie können diese Anwendung weiterhin erstellen und bereitstellen. Sie können sie jedoch nicht ausführen, bis die fehlende Windows App-Abhängigkeit bereitgestellt wird.](./media/Win10CP-error-message.png)
 6. Kehren Sie zu Intune zurück, und laden Sie die Unternehmensportal-App als neue App hoch. Stellen Sie sie als erforderliche App für die gewünschte Gruppe von Zielbenutzern bereit.  
 
 Weitere Informationen zur Behandlung von Abhängigkeiten für universelle Apps durch Intune finden Sie unter [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Bereitstellen einer APPXBUNDLE-Datei mit Abhängigkeiten über Microsoft Intune MDM).  
@@ -186,17 +186,18 @@ Wenn die Windows 10-Unternehmensportal-App auf diese Weise signiert und bereitge
 
 Im Anschluss erfahren Sie, wie Sie die App auf diese Weise signieren und bereitstellen:
 
-1. Laden Sie unter [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) das Microsoft Intune-Signierungsskript für die Windows 10-Unternehmensportal-App herunter.  Für dieses Skript muss das Windows SDK für Windows 10 auf dem Hostcomputer installiert sein. Das Windows SDK für Windows 10 können Sie unter [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296) herunterladen.
+1. Laden Sie unter [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript) das Microsoft Intune-Signierungsskript für die Windows 10-Unternehmensportal-App herunter.  Für dieses Skript muss das Windows SDK für Windows 10 auf dem Hostcomputer installiert sein. Besuchen Sie die Seite [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296), um das Windows SDK für Windows 10 herunterzuladen.
 2. Laden Sie die Windows 10-Unternehmensportal-App wie weiter oben beschrieben aus dem Microsoft Store für Unternehmen herunter.  
 3. Führen Sie das Skript mit den im Skriptheader angegebenen Eingabeparametern aus, um die Windows 10-Unternehmensportal-App zu signieren (siehe Auszug weiter unten). An das Skript müssen keine Abhängigkeiten übergeben werden. Diese sind nur erforderlich, wenn die App in die Intune-Verwaltungskonsole hochgeladen wird.
 
-|Parameter | Beschreibung|
-| ------------- | ------------- |
-|InputWin10AppxBundle |Der Pfad, an dem sich die APPXBUNDLE-Quelldatei befindet. |
-|OutputWin10AppxBundle |Der Ausgabepfad für die signierte APPXBUNDLE-Datei. |
-|Win81Appx | Der Pfad, an dem sich die APPX-Datei des Windows 8.1- oder Windows Phone 8.1-Unternehmensportals befindet.|
-|PfxFilePath |Der Pfad der PFX-Datei für das Symantec Enterprise Mobile-Codesignaturzertifikat. |
-|PfxPassword| Das Kennwort des Symantec Enterprise Mobile-Codesignaturzertifikats. |
-|PublisherId |Die Herausgeber-ID des Unternehmens. Wenn sie nicht vorhanden ist, wird das Feld "Subject" von Symantec Enterprise Mobile Code Signing Certificate verwendet.|
-|SdkPath | Der Pfad des Stammordners für das Windows SDK für Windows 10. Dieses Argument ist optional und wird standardmäßig auf „${env:ProgramFiles(x86)}\Windows Kits\10“ festgelegt.|
+|       Parameter       |                                                                    Beschreibung                                                                    |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                             Der Pfad, an dem sich die APPXBUNDLE-Quelldatei befindet.                                              |
+| OutputWin10AppxBundle |                                                  Der Ausgabepfad für die signierte APPXBUNDLE-Datei.                                                  |
+|       Win81Appx       |                          Der Pfad, an dem sich die APPX-Datei des Windows 8.1- oder Windows Phone 8.1-Unternehmensportals befindet.                           |
+|      PfxFilePath      |                                   Der Pfad der PFX-Datei für das Symantec Enterprise Mobile-Codesignaturzertifikat.                                    |
+|      PfxPassword      |                                     Das Kennwort des Symantec Enterprise Mobile-Codesignaturzertifikats.                                      |
+|      PublisherId      |      Die Herausgeber-ID des Unternehmens. Wenn sie nicht vorhanden ist, wird das Feld "Subject" von Symantec Enterprise Mobile Code Signing Certificate verwendet.       |
+|        SdkPath        | Der Pfad des Stammordners für das Windows SDK für Windows 10. Dieses Argument ist optional und wird standardmäßig auf „${env:ProgramFiles(x86)}\Windows Kits\10“ festgelegt. |
+
 Das Skript gibt nach der Ausführung die signierte Version der Windows 10-Unternehmensportal-App aus. Anschließend können Sie die signierte Version der Anwendung über Intune als branchenspezifische App bereitstellen. Dadurch wird für die derzeit bereitstellten Versionen ein Upgrade auf die neue App durchgeführt.  

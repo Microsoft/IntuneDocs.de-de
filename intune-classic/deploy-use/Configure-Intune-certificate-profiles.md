@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6230fbc50ae79702cfd938f158d2961b5d720c9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Konfigurieren von Intune-Zertifikatprofilen
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Nachdem Sie Ihre Infrastruktur und Zertifikate konfiguriert haben (gemäß der Beschreibung in [Konfigurieren der Zertifikatinfrastruktur für SCEP](configure-certificate-infrastructure-for-scep.md) oder [Konfigurieren der Zertifikatinfrastruktur für PFX](configure-certificate-infrastructure-for-pfx.md)), können Sie Zertifikatprofile erstellen. Gehen Sie dazu folgendermaßen vor:
 
@@ -92,39 +92,39 @@ Nachdem Sie ein Profil des vertrauenswürdigen Zertifizierungsstellenzertifikats
 
 -  Windows Phone 8.1 und höher
 
-2.  Fügen Sie eine Richtlinie für ein **SCEP-Zertifikatprofil** hinzu.
+2. Fügen Sie eine Richtlinie für ein **SCEP-Zertifikatprofil** hinzu.
 
-    Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+   Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Befolgen Sie die Anweisungen auf der Profilkonfigurationsseite, um die SCEP-Zertifikatprofileinstellungen zu konfigurieren.
-    > [!NOTE]
-    >
-    > Wählen Sie unter **Format des Antragstellernamens** die Option **Benutzerdefiniert** aus, um ein benutzerdefiniertes Format für den Antragstellernamen einzugeben (nur in iOS-Profilen).
-    >
-    > Die beiden derzeit für das benutzerdefinierte Format unterstützten Variablen sind `Common Name (CN)` und `Email (E)`. Durch eine Kombination dieser Variablen mit statischen Zeichenfolgen können Sie ein benutzerdefiniertes Format wie dieses für den Antragstellernamen erstellen:
+3. Befolgen Sie die Anweisungen auf der Profilkonfigurationsseite, um die SCEP-Zertifikatprofileinstellungen zu konfigurieren.
+   > [!NOTE]
+   > 
+   > Wählen Sie unter **Format des Antragstellernamens** die Option **Benutzerdefiniert** aus, um ein benutzerdefiniertes Format für den Antragstellernamen einzugeben (nur in iOS-Profilen).
+   > 
+   > Die beiden derzeit für das benutzerdefinierte Format unterstützten Variablen sind `Common Name (CN)` und `Email (E)`. Durch eine Kombination dieser Variablen mit statischen Zeichenfolgen können Sie ein benutzerdefiniertes Format wie dieses für den Antragstellernamen erstellen:
+   > 
+   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   > 
+   > In diesem Beispiel hat der Administrator ein Format für den Antragstellernamen erstellt, das zusätzlich zu den Variablen `CN` und `E` entsprechende Zeichenfolgen für Organisationseinheit (OU), Organisation (O), Ort (L), Bundesland/Kanton (ST) und Land (C) verwendet. Die [CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)-Funktion listet unterstützte Zeichenfolgen auf.
 
-    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
-
-    > In diesem Beispiel hat der Administrator ein Format für den Antragstellernamen erstellt, das zusätzlich zu den Variablen `CN` und `E` entsprechende Zeichenfolgen für Organisationseinheit (OU), Organisation (O), Ort (L), Bundesland/Kanton (ST) und Land (C) verwendet. Die [CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)-Funktion listet unterstützte Zeichenfolgen auf.
-
-4.  Wählen Sie **Richtlinie speichern** aus.
+4. Wählen Sie **Richtlinie speichern** aus.
 
 Die neue Richtlinie wird im Arbeitsbereich **Richtlinie** angezeigt. Sie können sie nun bereitstellen.
 
 ### <a name="to-create-a-pfx-certificate-profile"></a>So erstellen Sie ein PFX-Zertifikatprofil
 
-1.  Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** und anschließend eine Geräteplattform aus. PFX-Zertifikate werden für folgende Betriebssysteme unterstützt:
-  - Android 4 und höher
-  - Android for Work
-  - Windows 10 und höher
-  - Windows Phone 10 und höher
-  - iOS 8.0 und höher)    
+1. Wählen Sie in der [Intune-Verwaltungskonsole](https://manage.microsoft.com) **Richtlinie** &gt; **Richtlinie hinzufügen** und anschließend eine Geräteplattform aus. PFX-Zertifikate werden für folgende Betriebssysteme unterstützt:
+   - Android 4 und höher
+   - Android for Work
+   - Windows 10 und höher
+   - Windows Phone 10 und höher
+   - iOS 8.0 und höher)    
 
 
-2.  Fügen Sie eine Richtlinie für ein **PFX-Zertifikatprofil** hinzu.
-      Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
-3.  Geben Sie die Informationen ein, die auf dem Richtlinienformular angefordert werden.
-4.  Wählen Sie **Richtlinie speichern** aus.
+2. Fügen Sie eine Richtlinie für ein **PFX-Zertifikatprofil** hinzu.
+     Weitere Informationen finden Sie unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+3. Geben Sie die Informationen ein, die auf dem Richtlinienformular angefordert werden.
+4. Wählen Sie **Richtlinie speichern** aus.
 
 Die neue Richtlinie wird im Arbeitsbereich **Richtlinie** angezeigt. Sie können sie nun bereitstellen.
 

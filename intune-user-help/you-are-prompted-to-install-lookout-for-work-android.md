@@ -1,25 +1,25 @@
 ---
-title: "Installieren von Lookout for Work auf Ihrem Android-Gerät | Microsoft-Dokumentation"
-description: "Erfahren Sie, wie Sie Lookout for Work unter Android installieren können."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Installieren von Lookout for Work auf Ihrem Android-Gerät | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Lookout for Work unter Android installieren können.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 3c07a84f029ee5b997b3bfe20a73de6335057cbc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6b55faeae5b68da04f1f9e75c984ebb0af2b9deb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-lookout-for-work"></a>Installieren von Lookout for Work
 
@@ -29,47 +29,47 @@ Wenn Sie Probleme mit der Installation haben, versuchen Sie es mit den Schritten
 
 ## <a name="what-you-need-to-do"></a>Auszuführende Schritte
 
-1.  Ziehen Sie vom oberen Bildschirmrand abwärts, um die Benachrichtigungsleiste zu öffnen, und tippen Sie dann auf **Erforderliche Anwendung – Lookout for Work aus dem Play Store installieren**.
+1. Ziehen Sie vom oberen Bildschirmrand abwärts, um die Benachrichtigungsleiste zu öffnen, und tippen Sie dann auf **Erforderliche Anwendung – Lookout for Work aus dem Play Store installieren**.
 
-  ![Sie müssen Lookout for Work installieren.](./media/lookout-required-app-install-android.png)
+   ![Sie müssen Lookout for Work installieren.](./media/lookout-required-app-install-android.png)
 
-2.  Sie werden im Play Store auf die Installationsseite von Lookout for Work weitergeleitet. Installieren Sie Lookout for Work, und tippen Sie dann auf **ZUSTIMMEN**, um Lookout for Work den Zugriff auf Ihr Gerät zu erlauben.
+2. Sie werden im Play Store auf die Installationsseite von Lookout for Work weitergeleitet. Installieren Sie Lookout for Work, und tippen Sie dann auf **ZUSTIMMEN**, um Lookout for Work den Zugriff auf Ihr Gerät zu erlauben.
 
-  ![Tippen Sie auf „Zustimmen“, um Lookout for Work den Zugriff auf Ihr Gerät zu erlauben](./media/lookout-accept-store-permissions-android.png)
+   ![Tippen Sie auf „Zustimmen“, um Lookout for Work den Zugriff auf Ihr Gerät zu erlauben](./media/lookout-accept-store-permissions-android.png)
 
 3. Öffnen Sie Lookout for Work, und tippen Sie anschließend auf **AKTIVIEREN**.
 
-  ![Lookout for Work öffnen und auf „Aktivieren“ tippen](./media/lookout-activate-button-android.png)
+   ![Lookout for Work öffnen und auf „Aktivieren“ tippen](./media/lookout-activate-button-android.png)
 
 4. Tippen Sie auf **Bei Azure Active Directory anmelden**, und geben Sie anschließend das Konto ein, das Sie für den Zugriff auf Ihre Geschäfts-, Schul- oder Uni-E-Mails und die entsprechenden Dateien verwenden.
 
-  ![Mit Ihrem Geschäfts- oder Schulkonto anmelden](./media/lookout-sign-in-azure-android.png)
+   ![Mit Ihrem Geschäfts- oder Schulkonto anmelden](./media/lookout-sign-in-azure-android.png)
 
 5. Wählen Sie das Konto aus, das Sie für den Zugriff auf Geschäfts-, Schul- oder Uni-E-Mails und die entsprechenden Dateien verwenden, und tippen Sie dann auf **KONTO HINZUFÜGEN**.
 
-  ![Auswählen des Geschäfts-, Schul- oder Unikontos und Tippen auf „Konto hinzufügen“](./media/lookout-pick-account-android.png)
+   ![Auswählen des Geschäfts-, Schul- oder Unikontos und Tippen auf „Konto hinzufügen“](./media/lookout-pick-account-android.png)
 
 6. Tippen Sie auf **Zustimmen**, um Lookout for Work die Berechtigung zu erteilen, Sie anzumelden und Ihr Profil zu lesen. Ein Bildschirm zeigt an, dass Lookout for Work eine Verbindung mit der Lookout Security Cloud herstellt.
 
-  ![Tippen auf „Zustimmen“, um Lookout for Work die Berechtigung zu Lesen des Profils zu erteilen](./media/lookout-needs-permission-to-view-profile-android.png)
+   ![Tippen auf „Zustimmen“, um Lookout for Work die Berechtigung zu Lesen des Profils zu erteilen](./media/lookout-needs-permission-to-view-profile-android.png)
 
 7. Überprüfen Sie die Einträge, die darüber informieren, wie Lookout Ihr Gerät schützt, und tippen Sie dann auf **OK**.
 
-  ![Überprüfen der Weise, in der Lookout for Work das Gerät schützt](./media/lookout-how-it-protects-your-device-android.png)
+   ![Überprüfen der Weise, in der Lookout for Work das Gerät schützt](./media/lookout-how-it-protects-your-device-android.png)
 
-  Wenn der folgende Bildschirm angezeigt wird, ist Lookout jetzt eingerichtet und es besteht eine Verbindung.
+   Wenn der folgende Bildschirm angezeigt wird, ist Lookout jetzt eingerichtet und es besteht eine Verbindung.
 
-  ![Sie sind jetzt mit Lookout for Work verbunden](./media/lookout-you-are-now-connected-android.png)
+   ![Sie sind jetzt mit Lookout for Work verbunden](./media/lookout-you-are-now-connected-android.png)
 
-  Lookout for Work beginnt sofort mit der Überprüfung Ihres Geräts auf Sicherheitsbedrohungen. Wenn keine Bedrohungen gefunden werden, wird der folgende Bildschirm angezeigt.
+   Lookout for Work beginnt sofort mit der Überprüfung Ihres Geräts auf Sicherheitsbedrohungen. Wenn keine Bedrohungen gefunden werden, wird der folgende Bildschirm angezeigt.
 
-  ![Lookout for Work hat keine Sicherheitsbedrohungen gefunden](./media/lookout-scan-no-threats-found-android.png)
+   ![Lookout for Work hat keine Sicherheitsbedrohungen gefunden](./media/lookout-scan-no-threats-found-android.png)
 
-  Der Bildschirm „Gerätedetails“ im Unternehmensportal zeigt jetzt, dass Sie mit den Sicherheitsanforderungen Ihres Unternehmens kompatibel sind.
+   Der Bildschirm „Gerätedetails“ im Unternehmensportal zeigt jetzt, dass Sie mit den Sicherheitsanforderungen Ihres Unternehmens kompatibel sind.
 
     ![Ihr Gerät ist jetzt mit den Richtlinien konform](./media/mtd-device-now-compliant-android.png)
 
-  Wenn Lookout for Work eine Sicherheitsbedrohung auf Ihrem Gerät erkennt, erhalten Sie Anweisungen zur Behebung des Problems.
+   Wenn Lookout for Work eine Sicherheitsbedrohung auf Ihrem Gerät erkennt, erhalten Sie Anweisungen zur Behebung des Problems.
 
 ## <a name="if-the-installation-doesnt-work"></a>Wenn die Installation nicht funktioniert
 

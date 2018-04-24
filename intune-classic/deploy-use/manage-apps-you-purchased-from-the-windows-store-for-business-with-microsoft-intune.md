@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b32f9c6be910156c26b446b7bf70a7975b4afaff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Verwalten von Apps, die im Microsoft Store für Unternehmen mit Microsoft Intune erworben wurden
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Im [Microsoft Store für Unternehmen](https://www.microsoft.com/business-store) können Sie Apps für Ihre Organisation suchen und einzeln oder im Rahmen eines Volumenprogramms erwerben. Indem Sie den Store mit Microsoft Intune verbinden, können Sie im Rahmen von Volumenprogrammen erworbene Apps über die Intune-Konsole verwalten. Beispiel:
 * Sie können die Liste der Apps, die Sie im Speicher erworben haben, mit Intune synchronisieren.
@@ -57,8 +57,8 @@ Sie können nun fortfahren und die Synchronisierung in der Intune-Konsole einric
 1. Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) die Option **Verwaltung** aus.
 2. Erweitern Sie im Arbeitsbereich **Verwaltung** den Knoten **Verwaltung mobiler Geräte** > **Windows**, und wählen Sie dann **Store für Unternehmen** aus.
 3. Gehen Sie auf der Seite **Microsoft Store für Unternehmen** folgendermaßen vor:
- * Klicken Sie auf den Link zur Registrierung für den Microsoft Store für Unternehmen, falls Sie dies noch nicht getan haben.
- * Nachdem Sie sich registriert haben, wählen Sie **Synchronisierung konfigurieren** aus.
+   * Klicken Sie auf den Link zur Registrierung für den Microsoft Store für Unternehmen, falls Sie dies noch nicht getan haben.
+   * Nachdem Sie sich registriert haben, wählen Sie **Synchronisierung konfigurieren** aus.
 4. Wählen Sie im Dialogfeld **Configure Microsoft Store for Business app sync** (App-Synchronisierung mit dem Microsoft Store für Unternehmen konfigurieren) die Option **Enable Microsoft Store for Business sync** (Synchronisierung mit dem Microsoft Store für Unternehmen aktivieren) aus.
 5. Wählen Sie aus der Dropdownliste **Sprache** die Sprache aus, in der Apps aus dem Microsoft Store für Unternehmen in der Intune-Konsole angezeigt werden. Die Installation der Apps erfolgt unabhängig von der Anzeigesprache in der Sprache des Endbenutzers, sofern verfügbar.
 6. Klicken Sie auf **OK**.

@@ -1,25 +1,25 @@
 ---
-title: "Überwachen von MAM-Richtlinien mit Microsoft Intune"
-description: "Finden Sie heraus, für wie viele Benutzer die Richtlinie gilt, und zeigen Sie weitere Details an."
-keywords: 
+title: Überwachen von MAM-Richtlinien mit Microsoft Intune
+description: Finden Sie heraus, für wie viele Benutzer die Richtlinie gilt, und zeigen Sie weitere Details an.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 02/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: de26b7614578b275802ca048ed17bfa5969f0387
-ms.sourcegitcommit: a9d734877340894637e03f4b4ef83f7d01ddedc8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Überprüfen von App-Schutzrichtlinien mit Microsoft Intune
 Sie können den Konformitätsstatus der App-Schutzrichtlinien überwachen, die Sie auf Benutzer angewendet haben. Sie können Informationen über die Benutzer finden, die von den App-Schutzrichtlinien betroffen sind, deren Konformitätsstatus sowie Probleme, die bei den Benutzern möglicherweise auftreten.

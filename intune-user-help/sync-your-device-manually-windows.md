@@ -1,27 +1,27 @@
 ---
-title: "Manuelles Synchronisieren Ihres Windows-Geräts | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Manuelles Synchronisieren Ihres Windows-Geräts | Microsoft-Dokumentation
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6d3b0fb8ea462656602ee9b4e58200d3c2e755a9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e8b8b1e4ffd4e58b5f3cc1b9acfc004f4b97b40b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Manuelles Synchronisieren des Windows-Geräts
 
@@ -65,10 +65,10 @@ Es existiert mehr als eine Version von Windows 10, daher gibt es zwei Vorgehensw
 
 2. Wählen Sie Ihr Geschäfts-, Schul- oder Unikonto aus. Abhängig von der Einrichtung des Supports Ihres Unternehmens werden Ihnen möglicherweise zwei Konten angezeigt, die ähnlich wie im nachstehenden Beispiel aussehen. Neben einem Konto wird eine Aktentasche angezeigt und neben dem anderen das Microsoft-Logo.
 
-    - Wenn Ihnen das Konto mit der Aktentasche angezeigt wird, wählen Sie es aus, und suchen Sie darunter nach der Schaltfläche **Info**.
-    - Wenn Ihnen nur das Konto mit dem Microsoft-Logo angezeigt wird, wählen Sie es aus, und suchen Sie darunter nach der Schaltfläche **Info**.
+   - Wenn Ihnen das Konto mit der Aktentasche angezeigt wird, wählen Sie es aus, und suchen Sie darunter nach der Schaltfläche **Info**.
+   - Wenn Ihnen nur das Konto mit dem Microsoft-Logo angezeigt wird, wählen Sie es aus, und suchen Sie darunter nach der Schaltfläche **Info**.
 
-    ![Auswählen Ihres Kontonamens neben der Aktentasche oder dem Microsoft-Logo](./media/win10pc-rs1-sync-info-button.png)
+     ![Auswählen Ihres Kontonamens neben der Aktentasche oder dem Microsoft-Logo](./media/win10pc-rs1-sync-info-button.png)
 
 3. Wählen Sie die Schaltfläche **Info** aus. Ein Dialogfeld wird geöffnet, das ähnlich wie im folgenden Beispiel aussieht.
 

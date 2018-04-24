@@ -1,27 +1,27 @@
 ---
-title: "Behandlung von Problemen bei der Registrierung von Windows 10-Geräten | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Behandlung von Problemen bei der Registrierung von Windows 10-Geräten | Microsoft-Dokumentation
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4ab630b6-47ff-443b-a2a5-be23388bcea7
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 936a336019c37fb5ae5f7ef8f5b1201faee553fc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 97f23594a5c7b047caf37dbaa39c481585a96d76
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Behandlung von Problemen bei der Registrierung von Windows 10-Geräten
 Wenn Sie die Schritte unter [Registrieren Ihres Windows 10 Mobile- oder Windows 10-Desktopgeräts bei Intune](enroll-your-w10-phone-or-w10-pc-windows.md) befolgt haben, aber dennoch nicht auf E-Mails und Dateien Ihres Geschäfts-, Schul- oder Unikontos zugreifen können, führen Sie zur Problembehandlung die folgenden Schritte durch.
@@ -38,15 +38,15 @@ Wenn Sie die Schritte unter [Registrieren Ihres Windows 10 Mobile- oder Windows 
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>Schritte zur Problembehandlung bei Anzeige von „Zugriff auf Geschäfts-, Schul- oder Unikonto“
 
-1.  Wenn Sie die obigen Schritte ausgeführt haben und trotzdem nicht auf E-Mails und Dateien Ihres Geschäfts-, Schul- oder Unikontos zugreifen können, wechseln Sie zurück zu **Zugriff auf Geschäfts-, Schul- oder Unikonto**.
+1. Wenn Sie die obigen Schritte ausgeführt haben und trotzdem nicht auf E-Mails und Dateien Ihres Geschäfts-, Schul- oder Unikontos zugreifen können, wechseln Sie zurück zu **Zugriff auf Geschäfts-, Schul- oder Unikonto**.
 
 2. Führen Sie eines der folgenden Verfahren aus:
 
-    - Wenn eine Verbindung ähnlich der unten gezeigten Abbildung angezeigt wird, tippen sie darauf, und überprüfen Sie, ob die Optionen „Verwalten“, „Info“ und „Trennen“ angezeigt werden. Wenn das der Fall ist, sind Sie jetzt registriert und verbunden.
+   - Wenn eine Verbindung ähnlich der unten gezeigten Abbildung angezeigt wird, tippen sie darauf, und überprüfen Sie, ob die Optionen „Verwalten“, „Info“ und „Trennen“ angezeigt werden. Wenn das der Fall ist, sind Sie jetzt registriert und verbunden.
 
-    ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
+     ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-    - Wenn die oben gezeigten Verbindungsinformationen nicht angezeigt werden oder einige Optionen fehlen, tippen Sie auf **Verbinden**, und melden Sie sich mit den Anmeldeinformationen für Ihr Geschäfts-, Schul- oder Unikonto an. Jetzt sollte eine Verbindung hergestellt sein.
+   - Wenn die oben gezeigten Verbindungsinformationen nicht angezeigt werden oder einige Optionen fehlen, tippen Sie auf **Verbinden**, und melden Sie sich mit den Anmeldeinformationen für Ihr Geschäfts-, Schul- oder Unikonto an. Jetzt sollte eine Verbindung hergestellt sein.
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Schritte zur Problembehandlung bei Anzeige von „Mein Konto“
 
@@ -58,6 +58,6 @@ Wenn Sie die obigen Schritte ausgeführt haben und trotzdem nicht auf E-Mails, D
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>Schritte zur Problembehandlung bei Anzeige von „Geschäfts-, Schul- oder Unikonto einrichten“
 
-Wenn eine Meldung angezeigt wird, die __We couldn't auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it.__ (Es konnte automatisch kein Verwaltungsendpunkt erkannt werden, der mit dem eingegebenen Benutzernamen übereinstimmt. Bitte überprüfen Sie Ihren Benutzernamen, und versuchen Sie es noch einmal. Wenn Sie die URL zu Ihrem Verwaltungsendpunkt kennen, geben Sie sie ein.) angibt, versuchen Sie, Ihren Benutzernamen und das Kennwort erneut anzugeben. Wenn es immer noch nicht funktioniert, wenden Sie sich für die Website, die Sie im Textfeld **Verwaltungsendpunkt** bereitstellen müssen, an den Support Ihres Unternehmens. Dies ist eine Website, die in etwas so aussieht: **www.ihrefirma.aufmicrosoft.com**.
+Wenn eine Meldung angezeigt wird, die <strong>We couldn't auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it.</strong> (Es konnte automatisch kein Verwaltungsendpunkt erkannt werden, der mit dem eingegebenen Benutzernamen übereinstimmt. Bitte überprüfen Sie Ihren Benutzernamen, und versuchen Sie es noch einmal. Wenn Sie die URL zu Ihrem Verwaltungsendpunkt kennen, geben Sie sie ein.) angibt, versuchen Sie, Ihren Benutzernamen und das Kennwort erneut anzugeben. Wenn es immer noch nicht funktioniert, wenden Sie sich für die Website, die Sie im Textfeld <strong>Verwaltungsendpunkt</strong> bereitstellen müssen, an den Support Ihres Unternehmens. Dies ist eine Website, die in etwas so aussieht: <strong>www.ihrefirma.aufmicrosoft.com</strong>.
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

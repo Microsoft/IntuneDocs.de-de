@@ -1,31 +1,29 @@
 ---
-title: "Beseitigen von Bedrohungen, die von Symantec Endpoint Protection Mobile für iOS erkannt wurden | Microsoft-Dokumentation"
-description: "Erfahren Sie, wie Sie gegen Bedrohungen vorgehen können, die auf Ihrem iOS-Gerät gefunden wurden."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Beseitigen von Bedrohungen, die von Symantec Endpoint Protection Mobile für iOS erkannt wurden | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie gegen Bedrohungen vorgehen können, die auf Ihrem iOS-Gerät gefunden wurden.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 04/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b40595f0-a399-4aa1-aa6f-344c2a1cb883
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: d85fd82d4af0c35c6bd6cd9bf329c5d981b6693b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e8efab6aea68802da0df9b24a75812918e255a57
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Beseitigen einer Bedrohung, die von Symantec Endpoint Protection Mobile erkannt wurde
 
-Symantec Endpoint Protection Mobile hat eine potenzielle Bedrohung auf Ihrem Android-Gerät erkannt, und Sie müssen das Problem beheben, um wieder Zugriff auf die E-Mails, Apps und Dateien Ihres Unternehmens, Ihrer Schule oder Ihrer Uni zu erhalten. Die angezeigte Meldung könnte wie folgt aussehen:
-
-![Meldung zu nicht vorhandener Konformität von Symantec Endpoint Protection Mobile](./media/ios-skycure-noncompliant-in-ssp.png)
+Symantec Endpoint Protection Mobile hat eine potenzielle Bedrohung auf Ihrem Android-Gerät erkannt, und Sie müssen das Problem beheben, um wieder Zugriff auf die E-Mails, Apps und Dateien Ihres Unternehmens, Ihrer Schule oder Ihrer Uni zu erhalten. 
 
 Öffnen Sie Symantec Endpoint Protection Mobile, und folgen Sie den in der App angezeigten Anweisungen, um das Problem zu beheben.
 

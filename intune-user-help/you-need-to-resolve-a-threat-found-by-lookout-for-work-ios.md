@@ -1,31 +1,29 @@
 ---
-title: "Auflösen von durch Lookout for Work erkannten Bedrohungen unter iOS | Microsoft-Dokumentation"
-description: "Erfahren Sie, wie Sie gegen Bedrohungen vorgehen können, die von Lookout for Work unter iOS erkannt wurden."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Auflösen von durch Lookout for Work erkannten Bedrohungen unter iOS | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie gegen Bedrohungen vorgehen können, die von Lookout for Work unter iOS erkannt wurden.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/17/2017
+ms.date: 04/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f317c8ddf89510e695b727548d5abafdf9319c25
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: be7d54cdde7e82cd0e0d4820ecfddff171e5984a
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Beseitigen einer von Lookout for Work erkannten Bedrohung
 
-Lookout for Work hat eine potenzielle Bedrohung auf Ihrem Gerät erkannt, und Sie müssen das Problem beheben, um wieder Zugriff auf Ihre Geschäfts-, Schul- oder Uni-E-Mails, -Apps und -dateien zu erhalten. Die angezeigte Meldung könnte wie folgt aussehen:
-
-![Meldung zu nicht vorhandener Kompatibilität von Lookout for Work](./media/ios-lfw-noncompliant-in-ssp.png)
+Lookout for Work hat eine potenzielle Bedrohung auf Ihrem Gerät erkannt, und Sie müssen das Problem beheben, um wieder Zugriff auf Ihre Geschäfts-, Schul- oder Uni-E-Mails, -Apps und -dateien zu erhalten.
 
 Öffnen Sie die Lookout for Work-App, und folgen Sie den in der App angezeigten Anweisungen, um das Problem zu lösen.
 

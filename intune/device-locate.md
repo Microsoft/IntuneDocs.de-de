@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 473a0b265a9483cbd6f6ffb15074fad85e03e264
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: bc3d46800087b33c6cebcbb50f7c16eb4a056c18
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Suchen nach verlorenen oder gestohlenen iOS-Geräten mit Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Verwenden Sie die Aktion **Gerät suchen**, um den Standort eines verloren gegangenen oder gestohlenen iOS-Geräts auf einer Karte anzuzeigen. Bei dem Gerät muss es sich um ein unternehmenseigenes, über ein Programm zur Geräteregistrierung registriertes iOS-Gerät im überwachten Modus handeln. Bevor Sie diese Aktion verwenden, stellen Sie sicher, dass sich das Gerät im [Modus für verlorene Geräte](device-lost-mode.md) befindet.
 

@@ -1,27 +1,26 @@
 ---
-title: Einstellungen für Geräteeinschränkungen für Windows Holographic for Business in Microsoft Intune
-titleSuffix: ''
-description: In diesem Artikel erhalten Sie Informationen zu den Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows Holographic for Business-Geräten.
+title: Geräteeinschränkungen für Windows Holographic for Business-Geräte in Microsoft Intune Azure | Microsoft-Dokumentation
+description: 'In diesem Artikel erhalten Sie Informationen zum Konfigurieren von Einstellungen zur Geräteeinschränkung in Microsoft Intune für Windows Holographic for Business. Die folgenden Aspekte werden behandelt: Aufhebung einer Registrierung, Geolocation, Kennwörter, Installieren von Apps aus dem App Store, Cookies und Popupmenüs in Edge, Windows Defender, Suchen, Cloud und Speicher, Bluetooth-Verbindungen, Systemzeit und Benutzerdaten in Azure.'
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 4/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 694b81434a95f48abc98f5012460523420df58cc
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5b0784aeb1dc1022b4be824c2f858f9525d03918
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="microsoft-intune-windows-holographic-for-business-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Windows Holographic for Business in Microsoft Intune
+# <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Einstellungen für Geräteeinschränkungen für Windows Holographic for Business in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Die folgenden Einstellungen für Geräteeinschränkungen werden auf Geräten unterstützt, die Windows Holographic for Business ausführen, z.B. Microsoft HoloLens.
 
@@ -31,13 +30,9 @@ Die folgenden Einstellungen für Geräteeinschränkungen werden auf Geräten unt
 - **Cortana:** Aktiviert oder deaktiviert den Cortana-Sprach-Assistenten.
 - **Geolocation:** Gibt an, ob das Gerät Standortdienstinformationen verwenden kann.
 
-
-
 ## <a name="password"></a>Kennwort
 -   **Kennwort:** Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können.
     -   **Kennwort anfordern, wenn Gerät aus Leerlaufzustand zurückkehrt:** Gibt an, dass der Benutzer ein Kennwort zum Entsperren des Geräts eingeben muss.
-
-
 
 ## <a name="app-store"></a>App Store
 
@@ -47,7 +42,6 @@ Die folgenden Einstellungen für Geräteeinschränkungen werden auf Geräten unt
 
 ## <a name="edge-browser"></a>Edge-Browser
 
--   **Microsoft Edge-Browser:** Erlaubt die Verwendung des Edge-Webbrowsers auf dem Gerät.
 -   **Cookies:** Erlaubt Browsern das Speichern von Internetcookies auf dem Gerät.
 -   **Popups:** Blockiert Popupfenster im Browser (gilt nur für Windows 10 Desktop).
 -   **Suchvorschläge:** Ermöglicht dem Suchmodul, Websites während der Eingabe von Suchausdrücken vorzuschlagen.
@@ -61,7 +55,6 @@ Die folgenden Einstellungen für Geräteeinschränkungen werden auf Geräten unt
 ## <a name="search"></a>Suchen
 - **Standortsuche:** Hiermit geben Sie an, ob bei der Suche der Standort verwendet werden kann. Informationen zu
 
-
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
 -   **Microsoft-Konto:** Erlaubt dem Benutzer, das Gerät einem Microsoft-Konto zuzuordnen.
 
@@ -74,6 +67,24 @@ Die folgenden Einstellungen für Geräteeinschränkungen werden auf Geräten unt
 ## <a name="control-panel-and-settings"></a>Systemsteuerung und Einstellungen
 
 - **Änderung der Systemzeit:** Verhindert, dass der Endbenutzer auf dem Gerät Datum und Uhrzeit ändert.
+
+## <a name="kiosk-preview"></a>Kiosk (Vorschauversion)
+
+Ein Kiosk-Gerät führt in der Regel eine spezifische App aus. Benutzer werden daran gehindert, auf Features oder Funktionen auf dem Gerät außerhalb von Kiosk-Apps zuzugreifen.
+
+- **Kioskmodus**: Ermittelt den Typ des Kioskmodus, der von der Richtlinie unterstützt wird. Zu den Optionen gehören:
+
+  - **Nicht konfiguriert**: (Standard). Die Richtlinie aktiviert keinen Kioskmodus. 
+  - **Kiosk mit einzelner App**: Das Profil erlaubt dem Gerät, nur eine App auszuführen. Wenn sich der Benutzer anmeldet, wird eine bestimmte App gestartet. Dieser Modus hindert den Benutzer auch daran, neue Apps zu öffnen oder die App zu ändern, die ausgeführt wird.
+
+#### <a name="single-app-kiosks"></a>Kiosks für einzelne Apps
+Legen Sie folgende Einstellungen fest:
+
+- **Benutzerkonto**: Geben Sie das (auf das Gerät bezogene) lokale Benutzerkonto oder die Azure AD-Kontoanmeldung ein, das bzw. die der Kiosk-App zugeordnet ist. Geben Sie für Konten, die Mitglieder von Azure AD-Domänen sind, das Konto in der Form `domain\username@tenant.org` ein. 
+
+    Für Kiosks in öffentlichen Umgebungen, für die die automatische Anmeldung aktiviert ist, muss ein Benutzertyp mit den geringsten Berechtigungen (z.B. das lokale Standardbenutzerkonto) verwendet werden. Verwenden Sie das `AzureAD\user@contoso.com`-Format, um ein Azure Active Directory-Konto (AD) für den Kioskmodus zu konfigurieren.
+
+- **Anwendungsbenutzermodell-ID (AUMID) der App**: Geben Sie die AUMID der Kiosk-App ein. Weitere Informationen finden Sie unter [Find the Application User Model ID of an installed app (Ermitteln der Anwendungsbenutzer-ID einer installierten App)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
 ## <a name="reporting-and-telemetry"></a>Berichterstellung und Telemetrie
 

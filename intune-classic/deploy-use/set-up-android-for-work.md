@@ -1,23 +1,23 @@
 ---
 title: Einrichten von Android for Work
-description: "Aktivieren Sie die Verwaltung mobiler Geräte (Mobile Device Management, MDM) für Android for Work-Geräte mit Microsoft Intune."
-keywords: 
+description: Aktivieren Sie die Verwaltung mobiler Geräte (Mobile Device Management, MDM) für Android for Work-Geräte mit Microsoft Intune.
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/29/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
 ms.openlocfilehash: 366e2b281c05e1233c61f7f35a50700677ad4b79
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Aktivieren der Registrierung von Android for Work-Geräten
 

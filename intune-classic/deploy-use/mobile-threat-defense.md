@@ -1,25 +1,25 @@
 ---
 title: Intune Mobile Threat Defense
-description: "Schützen Sie den Zugriff auf Unternehmensressourcen auf der Basis von Geräterisiko."
-keywords: 
+description: Schützen Sie den Zugriff auf Unternehmensressourcen auf der Basis von Geräterisiko.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 03/01/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 08d87906-8158-4d5e-a49d-ad919efef3d1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 97711301422dd86ed0a76375add54987809c07b7
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-mobile-threat-defense-connectors"></a>Intune Mobile Threat Defense-Connector
 

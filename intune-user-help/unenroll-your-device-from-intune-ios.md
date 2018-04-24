@@ -1,56 +1,74 @@
 ---
-title: "Aufheben der Registrierung Ihres iOS-Geräts bei Intune | Microsoft-Dokumentation"
-description: "Beschreibt das Aufheben der Registrierung eines iOS-Geräts bei Intune."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Entfernen Ihres iOS-Geräts aus Intune | Microsoft-Dokumentation
+description: Beschreibt das Entfernen eines iOS-Geräts aus Intune
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 95258e2b2ef912b0d9c9549306559c6f91099642
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2df474e8b0a5af2ac294715135804ef0713a3015
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
-# <a name="unenroll-your-ios-device-from-intune"></a>Aufheben der Registrierung Ihres iOS-Geräts bei Intune
+# <a name="remove-your-ios-device-from-intune"></a>Entfernen Ihres iOS-Geräts aus Intune
 
-Wenn Sie die Registrierung Ihres iOS-Geräts bei Intune aufheben, kann Ihr Gerät nicht mehr auf Unternehmensressourcen zugreifen und wird nicht mehr über Intune verwaltet.
+Wenn Sie Ihr iOS-Gerät aus Intune entfernen, kann Ihr Gerät nicht mehr auf Unternehmensressourcen zugreifen und wird nicht mehr über Intune verwaltet.
 
-Zum Aufheben der Registrierung Ihres Geräts bei Intune gehen Sie folgendermaßen vor, oder sehen Sie sich dieses Video an:
 
-> [!VIDEO https://www.youtube.com/embed/6UFtBrBWUUI]
+## <a name="removing-the-device-from-my-devices"></a>Entfernen Ihres Geräts aus „Eigene Geräte“
 
-1.  Wählen Sie in der Unternehmensportal-App unter **Meine Geräte** das Gerät aus, dessen Registrierung Sie aufheben möchten.
+Befolgen Sie zum Entfernen Ihres Geräts aus Intune die hier oder in diesem Video beschriebenen Schritte:
 
-2.  Tippen Sie auf **Entfernen** > **Entfernen**.
 
-Wenn Sie die Registrierung Ihres Geräts bei Intune aufheben passiert Folgendes:
+1.  Tippen Sie in der Unternehmensportal-App auf **Geräte**. Wählen Sie das Gerät aus, das entfernt werden soll. Wenn Sie nur ein Gerät besitzen, wird Ihnen direkt der Bildschirm „Gerätedetails“ angezeigt, wenn Sie auf **Geräte** tippen.
 
--   Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
+2.  Tippen Sie neben **Umbenennen** auf die Auslassungspunkte und dann auf **Gerät entfernen** > **Entfernen**.  
 
--   Sie können keine Apps mehr über das Unternehmensportal installieren.
+    |![Screenshot des Bildschirms „Geräte“ der Unternehmensportal-App, der die Optionen anzeigt, nachdem der Benutzer auf „Entfernen“ getippt hat Zeigt die Schaltflächen „Gerät entfernen“, „Zurück auf Werkseinstellungen“ und „Abbrechen“](/intune-user-help/media/cp_ios_unenroll_after_1804_001.png)|
 
--   Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z. B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.
+    |![Screenshot des Bildschirms „Geräte“ der Unternehmensportal-App, der die Optionen anzeigt, nachdem der Benutzer auf „Gerät entfernen“ getippt hat Zeigt die rot hervorgehobene Schaltfläche „Entfernen“ und die blau hervorgehobenen Schaltflächen „Weitere Informationen“ und „Abbrechen“](/intune-user-help/media/cp_ios_unenroll_after_1804_002.png)|
 
--   Unter Umständen haben Sie auf dem Gerät keinen Zugriff mehr auf einige Unternehmensressourcen, z. B. Dateifreigaben oder interne Websites.
 
--   Sie können keine Unternehmens-Apps und Unternehmensdaten mehr auf dem Gerät verwenden.
+  Wenn Sie die Registrierung Ihres Geräts bei Intune aufheben passiert Folgendes:
 
--   Möglicherweise können Sie keine Verbindung mehr zum Unternehmensnetzwerk über WiFi oder ein virtuelles privates Netzwerk (VPN) herstellen.
+  -   Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
 
--   Unternehmens-E-Mail-Profile werden vom Gerät entfernt.
+  -   Sie können keine Apps mehr über das Unternehmensportal installieren.
 
--   Geräte, die nur für E-Mail konfiguriert sind, werden nicht mehr in der Unternehmensportal-App oder auf der Unternehmensportal-Website angezeigt.
+  -   Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z. B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.
+
+  -   Unter Umständen haben Sie auf dem Gerät keinen Zugriff mehr auf einige Unternehmensressourcen, z. B. Dateifreigaben oder interne Websites.
+
+  -   Sie können keine Unternehmens-Apps und Unternehmensdaten mehr auf dem Gerät verwenden.
+
+  -   Möglicherweise können Sie keine Verbindung mehr zum Unternehmensnetzwerk über WiFi oder ein virtuelles privates Netzwerk (VPN) herstellen.
+
+  -   Unternehmens-E-Mail-Profile werden vom Gerät entfernt.
+
+  -   Geräte, die nur für E-Mail konfiguriert sind, werden nicht mehr in der Unternehmensportal-App oder auf der Unternehmensportal-Website angezeigt.
+
+## <a name="removing-data-collected-by-the-company-portal-app"></a>Entfernen von Daten, die von der Unternehmensportal-App gesammelt wurden
+
+Das Unternehmensportal speichert lokale Daten an drei verschiedenen Stellen auf Ihrem Gerät.
+
+-   **Informationsprotokolle:** Daten zu Standardaktivitäten von Apps, die Microsoft sammelt. Dazu zählt beispielsweise, wie lang die App geöffnet war oder ob sie abgestürzt ist. Diese werden automatisch gelöscht, wenn Sie das Gerät aus dem Unternehmensportal löschen.
+
+-   **App Analytics:** Standardprogramm für die Aktivitätsdaten von App-Abstürzen, die Apple sammelt Diese Informationen können nur entfernt werden, wenn Sie Ihr Gerät auf die Werkseinstellungen zurücksetzen. Dadurch werden alle persönlichen Informationen auf Ihrem Gerät gelöscht. Öffnen Sie hierzu **Einstellungen** > **Allgemein** > **Zurücksetzen** > **Gesamten Inhalt und alle Einstellungen löschen**.
+
+-   **Schlüsselbund:** Ihr Gerät speichert Ihre Kennwörter und andere Informationen, die für Anmeldungen verwendet werden, in Ihrem Schlüsselbund. Microsoft-Apps geben Ihre Anmeldeinformationen für alle von Microsoft entwickelten Apps frei, die auf Ihrem Gerät installiert sind, einschließlich Microsoft Outlook und Microsoft Authenticator. Wie bei App Analytics können diese Informationen nur entfernt werden, wenn Sie Ihr Gerät auf die Werkseinstellungen zurücksetzen. Dadurch werden alle persönlichen Informationen auf Ihrem Gerät gelöscht. Öffnen Sie hierzu **Einstellungen** > **Allgemein** > **Zurücksetzen** > **Gesamten Inhalt und alle Einstellungen löschen**.
+
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

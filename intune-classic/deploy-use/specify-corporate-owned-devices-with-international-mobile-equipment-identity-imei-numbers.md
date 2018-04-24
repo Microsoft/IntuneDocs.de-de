@@ -1,25 +1,25 @@
 ---
 title: Angeben von IMEI-Nummern
-description: "Mithilfe von Microsoft Intune können Administratoren IMEI-Nummern für mobile Geräteplattformen zur Identifizierung von unternehmenseigenen mobilen Geräten importieren."
-keywords: 
+description: Mithilfe von Microsoft Intune können Administratoren IMEI-Nummern für mobile Geräteplattformen zur Identifizierung von unternehmenseigenen mobilen Geräten importieren.
+keywords: ''
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 03/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: cdc1e1ac6147903ec6ada30e7a3b42189a228c78
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers"></a>Angeben unternehmenseigener Geräte über IMEI-Nummern (International Mobile Equipment Identity)
 

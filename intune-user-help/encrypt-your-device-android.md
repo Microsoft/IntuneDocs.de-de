@@ -1,27 +1,27 @@
 ---
-title: "Schützen Ihres Android-Geräts mit Verschlüsselung | Microsoft-Dokumentation"
-description: "Schützen Ihres Android-Geräts"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Schützen Ihres Android-Geräts mit Verschlüsselung | Microsoft-Dokumentation
+description: Schützen Ihres Android-Geräts
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 54f592c8ece9180ed6ce8a722f09ff168f06435d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cea43f2bf3b13bf0463e1dedd6c20a1587336d5b
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>So schützen Sie Ihr Android-Gerät mit Verschlüsselung
 

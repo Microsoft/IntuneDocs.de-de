@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 389981fc207371d64064872235fc9babde6b3f6a
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: b68c2d93071d545bf25f7810a6908099988fb902
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registrieren für eine kostenlose Testversion von Microsoft Intune
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 03/17/2018
 Dieser Artikel führt Sie durch die Registrierung für eine eigenständige Testversion von Intune für das Azure-Portal.
 
 1. Besuchen Sie die [Intune-Registrierungsseite](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20), und füllen Sie das Formular zur Registrierung für ein Testabonnement aus.
-* Wenn Sie über Geschäfts-, Schul- oder Unikonto verfügen und dieses für Ihre Intune-Testversion verwenden möchten, folgen Sie stattdessen [diesen Anmeldeanweisungen](/intune/account-sign-up).
+2. Wenn Sie über Geschäfts-, Schul- oder Unikonto verfügen und dieses für Ihre Intune-Testversion verwenden möchten, folgen Sie stattdessen [diesen Anmeldeanweisungen](/intune/account-sign-up).
 
 * Wenn sich der Großteil Ihres IT-Betriebs und Ihrer Benutzer in einem anderen Gebietsschema als Sie befindet, sollten Sie dieses Gebietsschema unter **Where's your company located?** (Unternehmensstandort) auswählen.
 

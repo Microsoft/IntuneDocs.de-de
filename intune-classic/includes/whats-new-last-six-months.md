@@ -331,6 +331,6 @@ __Die Intune App SDK-Xamarin-Komponente unterstützt nun MAM ohne Registrierung_
 
 __Kein signiertes Windows Phone 8-Unternehmensportal zum Hochladen des Symantec-Signaturzertifikats mehr erforderlich__ Zum Hochladen des Symantec-Signaturzertifikats ist keine signierte Windows Phone 8-Unternehmensportal-App mehr erforderlich. Das Zertifikat kann einzeln hochgeladen werden.
 
-###<a name="deprecations"></a>Veraltete Funktionen
+### <a name="deprecations"></a>Veraltete Funktionen
 
 __Unterstützung für das Windows Phone 8-Unternehmensportal__ Die Unterstützung für das Windows Phone 8-Unternehmensportal wird jetzt beendet. Die Unterstützung für Windows Phone 8- und WinRT-Plattformen wurde im Oktober 2016 beendet. Die Unterstützung für das Windows Phone 8-Unternehmensportal wurde ebenfalls im Oktober 2016 beendet.

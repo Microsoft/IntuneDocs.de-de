@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23ae8afbf6c200f983ebee8a94fff42f65ec2486
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4d224ceb819b6b0b4be0596c46d7bb20a98ddd97
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Registrieren unternehmenseigener Geräte über Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Sie können organisations- bzw. unternehmenseigene Geräte auf verschiedene Weise für die Verwaltung durch Intune registrieren, je nachdem, um welches Gerät es sich handelt, wie es erworben wurde und welche Anforderungen der Organisation bestehen. Sie können auch die Unternehmensportal-App installieren, um unternehmenseigene Geräte zu registrieren und zu verwalten, ähnlich wie in einem BYOD-Szenario („Bring Your Own Device“).
 

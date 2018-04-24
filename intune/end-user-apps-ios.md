@@ -1,28 +1,28 @@
 ---
 title: Wie Ihre iOS-Benutzer Apps erhalten
-description: "Methoden, um iOS-Apps für Endbenutzer verfügbar zu machen."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: Methoden, um iOS-Apps für Endbenutzer verfügbar zu machen.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/28/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 52d9c05d0bb2ed1c8592ac3b2c5cdeb07114367d
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 7744d8422e774242e0883c8d77814c42fd71895f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>Wie Ihre iOS-Benutzer Apps erhalten
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Endbenutzer die Apps erhalten, die Sie über Microsoft Intune verteilen.
 

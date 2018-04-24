@@ -1,27 +1,27 @@
 ---
-title: "Synchronisieren Ihres Geräts mit der Unternehmensportal-Website | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Synchronisieren Ihres Geräts mit der Unternehmensportal-Website | Microsoft-Dokumentation
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ecd0628a-3c8a-4d6b-8985-1641dd24132b
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7e319ec97e07861c8806408431529060d74eb980
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 50915e2bebdbba29a73e8f69c1594f696f7513a9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sync-your-device-with-the-company-portal-website"></a>Synchronisieren Ihres Geräts mit der Unternehmensportal-Website
 

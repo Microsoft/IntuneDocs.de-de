@@ -1,29 +1,29 @@
 ---
-title: "Registrieren von Android-Geräten in Intune"
+title: Registrieren von Android-Geräten in Intune
 titlesuffix: Microsoft Intune
-description: "Erfahren Sie, wie Sie Android-Geräte in Intune registrieren."
-keywords: 
+description: Erfahren Sie, wie Sie Android-Geräte in Intune registrieren.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7e65a32843cec48268c7e205ab4a064038c28415
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d74f59f1df0a4a4e1285b58d7ac5b3677d3c5e48
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-android-devices"></a>Registrieren von Android-Geräten
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Als Intune-Administrator können Sie Android-Geräte verwalten, einschließlich Geräte nach dem Samsung Knox-Standard. Sie können außerdem das Arbeitsprofil [Android for Work-Geräte](#enable-enrollment-of-android-for-work-devices) verwalten.
 
@@ -47,6 +47,8 @@ Für die Aktivierung der Verwaltung von Arbeitsprofilen auf Geräten, die [Andro
 
 Wenn Sie Android for Work-Geräte mithilfe eines [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md)-Kontos registrieren, besteht pro Konto ein Grenzwert von 10 registrierbaren Geräten.
 
+Weitere Informationen finden Sie unter [Von Intune an Google gesendete Daten](data-intune-sends-to-google.md).
+
 ## <a name="add-android-for-work-binding-for-intune"></a>Hinzufügen der Android for Work-Bindung für Intune
 
 > [!NOTE]
@@ -55,15 +57,18 @@ Wenn Sie Android for Work-Geräte mithilfe eines [Geräteregistrierungs-Manager]
 1. **Einrichten von Intune MDM**<br>
 Wenn nicht bereits geschehen, bereiten Sie die Verwaltung mobiler Geräte durch [Festlegen der Autorität für die Verwaltung mobiler Geräte](mdm-authority-set.md) auf **Microsoft Intune** vor.
 2. **Konfigurieren der Android for Work-Bindung**<br>
-    Wählen Sie als Intune-Administrator im [Azure-Portal](https://portal.azure.com) die Optionen **Alle Dienste** > **Überwachung + Verwaltung** > **Intune** aus.
-
-   ein. Wählen Sie im Bereich **Intune** die Optionen **Geräteregistrierung** > **Android for Work-Registrierung** und dann **Verwaltetes Google Play – Konfigurieren** aus, um die Android for Work-Website von Google Play zu öffnen. Die Website wird auf einer neuen Registerkarte im Browser geöffnet.
+    
+   ein. Melden Sie sich im [Azure-Portal in Intune an](https://aka.ms/intuneportal), wählen Sie **Geräteregistrierung** > **Android-Registrierung** > **Verwaltetes Google Play** aus.
    ![Android for Work-Registrierungsbildschirm](./media/android-work-bind.png)
 
-   b. **Anmelden bei Google**<br>
+   b. Wählen Sie **Ich stimme zu** aus, um Microsoft die Berechtigung zu erteilen, [Benutzer- und Geräteinformationen an Google zu senden](data-intune-sends-to-google.md). 
+   
+   c. Wählen Sie **Launch Google to connect now** (Jetzt Google für die Verknüpfung starten) aus, um die Android for Work-Website auf Google Play zu öffnen. Die Website wird auf einer neuen Registerkarte im Browser geöffnet.
+  
+   d. **Anmelden bei Google**<br>
    Geben Sie auf der Anmeldeseite von Google das Google-Konto an, das allen Android for Work-Verwaltungsaufgaben für diesen Mandanten zugeordnet sein wird. Dies ist das Google-Konto, das von den IT-Administratoren Ihres Unternehmens gemeinsam zum Verwalten und Veröffentlichen von Apps in der Play for Work-Konsole verwendet wird. Sie können ein vorhandenes Google-Konto verwenden oder ein neues Konto erstellen.  Das von Ihnen ausgewählte Konto sollte einer G-Suite-Domäne zugeordnet sein.
 
-   c. **Bereitstellen von Informationen zur Organisation**<br>
+   e. **Bereitstellen von Informationen zur Organisation**<br>
    Geben Sie den Namen Ihres Unternehmens als **Organisationsnamen** ein. Für den **Enterprise Mobility Verwaltungsanbieter (EMM)** sollte **Microsoft Intune** angezeigt werden. Stimmen Sie der Android for Work-Vereinbarung zu, und wählen Sie dann **Bestätigen** aus. Ihre Anforderung wird verarbeitet.
 
 ## <a name="specify-android-for-work-enrollment-settings"></a>Angeben von Registrierungseinstellungen für Android for Work
@@ -110,3 +115,14 @@ Sie können die Registrierung und die Verwaltung von Android for Work deaktivier
 
 2. **Zustimmen zum Löschen der Android for Work-Bindung**<br>
   Wählen Sie **Ja** aus, um die Bindung zu löschen und die Registrierung von allen Android for Work-Geräten in Intune aufzuheben.
+
+## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Endbenutzererfahrung bei der Registrierung eines Samsung KNOX-Geräts
+Im Folgenden finden Sie einige Überlegungen bei der Registrierung von Samsung KNOX-Geräten:
+-   Auch wenn keine Richtlinien eine PIN erfordern, muss das Gerät zumindest eine vierstellige PIN für die Registrierung besitzen. Wenn das Gerät über keine PIN verfügt, werden Benutzer aufgefordert, eine zu erstellen.
+-   Für Arbeitsbereichverknüpfungszertifikate (Workplace Join Certificates, WPJ) gibt es keine Benutzerinteraktion.
+-   Der Benutzer erhält Informationen zur Dienstregistrierung und zu den Funktionen der App.
+-   Der Benutzer erhält Informationen zur KNOX-Registrierung und zu den Funktionen von KNOX.
+-   Wenn eine Verschlüsselungsrichtlinie erzwungen wird, müssen Benutzer ein komplexes Kennwort, das aus sechs Zeichen besteht, für die Gerätekennung festlegen.
+-   Es gibt keine zusätzlichen Aufforderungen an den Benutzer, Zertifikate zu installieren, die per Push von einem Dienst für den Zugriff auf Unternehmensressourcen gesendet werden.
+- Benutzer werden von einigen älteren KNOX-Geräten aufgefordert, zusätzliche Zertifikate für den Zugriff auf Unternehmensressourcen bereitzustellen.
+- Wenn ein Samsung Mini-Gerät die Arbeitsbereichverknüpfung nicht installieren kann, wird entweder der Fehler **Certificate Not Found** (Das Zertifikat wurde nicht gefunden.) oder **Unable to Register Device** (Das Gerät konnte nicht registriert werden.) ausgegeben. Installieren Sie dann die neuesten Samsung-Firmwareupdates.

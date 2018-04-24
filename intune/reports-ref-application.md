@@ -1,25 +1,25 @@
 ---
 title: Anwendung
 titlesuffix: Microsoft Intune
-description: "Referenzthema für die Kategorie „Anwendung“ der Entitätsauflistungen in der Intune Data Warehouse-API"
+description: Referenzthema für die Kategorie „Anwendung“ der Entitätsauflistungen in der Intune Data Warehouse-API
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e7de3ab89ff75b381d0438f49fb6015b0eb28d28
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 5fd8f9744e68a19cc9411fe366aff4050cc3caa6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-application-entities"></a>Verweis für Anwendungsentitäten
 
@@ -128,11 +128,13 @@ Die Entität **MobileAppInstallState** stellt den Installationsstatus für eine 
 
 **MobileAppDeviceUserInstallStatus** stellt einen mobilen App-Installationsstatus für ein bestimmtes Gerät und einen bestimmten Benutzer dar.
 
-| Eigenschaft | Beschreibung |
-|---|---|
-| DateKey | Schlüssel des Datums, an dem der App-Installationsstatus erfasst wurde |
-| AppKey | Schlüssel der mobilen App, mit der eine Instanz von AppRevision identifiziert wird |
-| DeviceKey | Schlüssel eines Zielgeräts, das zur Identifizierung einer Instanz von Device verwendet wird |
-| UserKey | Schlüssel eines Zielbenutzers, der zur Identifizierung einer Instanz von User verwendet wird |
-|AppInstallStateKey | Schlüssel des App-Installationsstatus, der zur Identifizierung einer Instanz von MobileAppInstallState verwendet wird |
-| ErrorCode | Der vom App-Installer zurückgegebene Fehlercode, die mobile Plattform oder der Dienst zur Installation der App. |
+
+|      Eigenschaft      |                                                         Beschreibung                                                         |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------|
+|      DateKey       |                                  Schlüssel des Datums, an dem der App-Installationsstatus erfasst wurde                                  |
+|       AppKey       |                             Schlüssel der mobilen App, mit der eine Instanz von AppRevision identifiziert wird                              |
+|     DeviceKey      |                              Schlüssel eines Zielgeräts, das zur Identifizierung einer Instanz von Device verwendet wird                               |
+|      UserKey       |                                Schlüssel eines Zielbenutzers, der zur Identifizierung einer Instanz von User verwendet wird                                 |
+| AppInstallStateKey |                     Schlüssel des App-Installationsstatus, der zur Identifizierung einer Instanz von MobileAppInstallState verwendet wird                     |
+|     ErrorCode      | Der vom App-Installer zurückgegebene Fehlercode, die mobile Plattform oder der Dienst zur Installation der App. |
+

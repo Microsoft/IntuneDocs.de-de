@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f53796e08ee962a23ab02929c4451478480e281
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4c69dec5903f25b9e7f09f6a20fc35068f3329d4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Behandlung von Problemen bei der Geräteregistrierung bei Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Dieses Thema enthält Vorschläge zur Problembehandlung bei Problemen mit der Geräteregistrierung. Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Anfordern von Support für Microsoft Intune) weitere Möglichkeiten, Hilfe zu erhalten.
 
@@ -87,9 +87,9 @@ Administratoren können Geräte im Azure Active Directory-Portal löschen.
 8.  Entfernen Sie Geräte nach Bedarf, z. B. solche, die nicht mehr verwendet werden oder fehlerhafte Definitionen haben.
 
 > [!NOTE]
-
+> 
 > Sie können das Erreichen der Kapazitätsgrenze für Geräteregistrierungen vermeiden, indem Sie das Konto des Geräteregistrierungs-Managers verwenden, wie unter [Registrieren unternehmenseigener Geräte mit dem Geräteregistrierungs-Manager in Microsoft Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) beschrieben.
->
+> 
 > Ein Benutzerkonto das dem Konto „Geräteregistrierungs-Manager“ hinzugefügt wird, kann die Registrierung nicht abschließen, wenn die bedingte Zugriffsrichtlinie für diese spezielle Benutzeranmeldung erzwungen wird.
 
 ### <a name="company-portal-temporarily-unavailable"></a>Unternehmensportal vorübergehend nicht verfügbar
@@ -154,7 +154,7 @@ Administratoren können Geräte im Azure Active Directory-Portal löschen.
 **Problem:** Wenn Sie Ihren AD FS eine zweite überprüfte Domäne hinzufügen, können Benutzer mit dem Benutzerprinzipalnamen-Suffix (UPN) der zweiten Domäne sich möglicherweise nicht bei Portalen anmelden oder Geräte registrieren.
 
 
-**Lösung:** Microsoft Office 365-Kunden, die einmaliges Anmelden (Single Sign-On, SSO) über AD FS 2.0 verwenden und in ihrer Organisation über mehrere Domänen der obersten Ebene für Benutzer-UPN-Suffixe verfügen (z.B. @contoso.com oder @fabrikam.com), müssen für jedes Suffix eine separate Instanz des AD FS 2.0-Verbunddiensts bereitstellen. Es gibt jetzt einen [Rollup für AD FS 2.0](http://support.microsoft.com/kb/2607496), der in Verbindung mit der Option **SupportMultipleDomain** den AD FS-Server zur Unterstützung dieses Szenarios aktiviert, ohne dass zusätzliche AD FS 2.0-Server erforderlich sind. Weitere Informationen finden Sie in [diesem Blogbeitrag](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+<strong>Lösung:</strong> Microsoft Office 365-Kunden, die einmaliges Anmelden (Single Sign-On, SSO) über AD FS 2.0 verwenden und in ihrer Organisation über mehrere Domänen der obersten Ebene für Benutzer-UPN-Suffixe verfügen (z.B. @contoso.com oder @fabrikam.com), müssen für jedes Suffix eine separate Instanz des AD FS 2.0-Verbunddiensts bereitstellen. Es gibt jetzt einen [Rollup für AD FS 2.0](http://support.microsoft.com/kb/2607496), der in Verbindung mit der Option <strong>SupportMultipleDomain</strong> den AD FS-Server zur Unterstützung dieses Szenarios aktiviert, ohne dass zusätzliche AD FS 2.0-Server erforderlich sind. Weitere Informationen finden Sie in [diesem Blogbeitrag](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## <a name="android-issues"></a>Android-Probleme
@@ -195,27 +195,27 @@ Wenn Lösung 2 nicht zur Behebung des Problems führt, führen Sie die folgenden
 
 1. Starten Sie die Smart Manager-App auf dem Gerät.
 
-  ![Smart Manager-Symbol auf dem Gerät auswählen](./media/smart-manager-app-icon.png)
+   ![Smart Manager-Symbol auf dem Gerät auswählen](./media/smart-manager-app-icon.png)
 
 2. Wählen Sie die Kachel **Akku** aus.
 
-  ![Kachel „Akku“ auswählen](./media/smart-manager-battery-tile.png)
+   ![Kachel „Akku“ auswählen](./media/smart-manager-battery-tile.png)
 
 3. Wählen Sie unter **App-Energiesparmodus** oder **App-Optimierung** die Option **Detail** aus.
 
-  ![Option „Detail“ unter „App-Energiesparmodus“ oder „App-Optimierung“ auswählen](./media/smart-manager-app-power-saving-detail.png)
+   ![Option „Detail“ unter „App-Energiesparmodus“ oder „App-Optimierung“ auswählen](./media/smart-manager-app-power-saving-detail.png)
 
 4. Wählen Sie aus der Liste der Apps den Eintrag **Unternehmensportal** aus.
 
-  ![Unternehmensportal aus der Liste der Apps auswählen](./media/smart-manager-company-portal.png)
+   ![Unternehmensportal aus der Liste der Apps auswählen](./media/smart-manager-company-portal.png)
 
 5. Wählen Sie **Deaktivieren** aus.
 
-  ![Option „Deaktivieren“ im Dialogfeld „App-Optimierung“ auswählen](./media/smart-manager-app-optimization-turned-off.png)
+   ![Option „Deaktivieren“ im Dialogfeld „App-Optimierung“ auswählen](./media/smart-manager-app-optimization-turned-off.png)
 
 6. Vergewissern Sie sich unter **App-Energiesparmodus** oder **App-Optimierung**, dass das Unternehmensportal deaktiviert ist.
 
-  ![Überprüfen, ob das Unternehmensportal deaktiviert ist](./media/smart-manager-verify-comp-portal-turned-off.png)
+   ![Überprüfen, ob das Unternehmensportal deaktiviert ist](./media/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>Fehler bei der Profilinstallation

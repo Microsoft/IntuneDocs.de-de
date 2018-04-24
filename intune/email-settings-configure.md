@@ -1,27 +1,27 @@
 ---
 title: Konfigurieren von E-Mail-Einstellungen in Microsoft Intune
-titleSuffix: 
-description: "In diesem Artikel erfahren Sie, wie Sie Microsoft Intune konfigurieren, um Verbindungen mit Unternehmens-E-Mail-Diensten auf Geräten, die Sie verwalten, herzustellen."
-keywords: 
+titleSuffix: ''
+description: In diesem Artikel erfahren Sie, wie Sie Microsoft Intune konfigurieren, um Verbindungen mit Unternehmens-E-Mail-Diensten auf Geräten, die Sie verwalten, herzustellen.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: f51854bfb198ca65cc5fc82bad0e3b3befbb173a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Konfigurieren von E-Mail-Einstellungen in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Mit E-Mail-Profilen können Sie Einstellungen, die zum Herstellen von Verbindungen und zum Synchronisieren mit Unternehmens-E-Mails erforderlich sind, für von Ihnen verwaltete Geräte konfigurieren. Damit können Sie sicherzustellen, dass die Einstellungen für alle Ihre Geräte einheitlich sind. Außerdem reduzieren Sie damit Supportanfragen von Endbenutzern, die nicht die richtigen E-Mail-Einstellungen kennen.
 
@@ -40,8 +40,8 @@ Anhand der Informationen in diesem Artikel lernen Sie die Grundlagen zum Konfigu
 ## <a name="create-a-device-profile-containing-email-settings"></a>Erstellen eines Geräteprofils mit E-Mail-Einstellungen
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
-3. Wählen Sie im Bereich **Intune** die Option **Gerätekonfiguration** aus.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
 2. Klicken Sie im Bereich **Gerätekonfiguration** im Abschnitt **Verwalten** auf **Profile**.
 3. Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
 4. Geben Sie auf der Seite **Profil erstellen** einen **Namen** und eine **Beschreibung** für das E-Mail-Profil ein.

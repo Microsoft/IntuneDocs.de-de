@@ -1,27 +1,27 @@
 ---
-title: "Was ist die Microsoft Intune Geräteregistrierung?"
+title: Was ist die Microsoft Intune Geräteregistrierung?
 titlesuffix: Microsoft Intune
-description: "In diesem Artikel finden Sie Informationen zur Registrierung bei iOS-, Android- und Windows-Geräten."
-keywords: 
+description: In diesem Artikel finden Sie Informationen zur Registrierung bei iOS-, Android- und Windows-Geräten.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f49178a2d8e8a73a693ed2f374b86b8e702680f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: c4be5c1897c4358d2eee83fa97e710136dd0379d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune ermöglicht es Ihnen, die Geräte und Apps Ihrer Mitarbeiter sowie deren Zugriff auf Ihre Unternehmensdaten zu verwalten. Damit diese mobile Geräteverwaltung (Mobile Device Management, MDM) genutzt werden kann, müssen die Geräte zunächst beim Intune-Dienst registriert werden. Wenn ein Gerät registriert ist, wird ein MDM-Zertifikat für das Gerät ausgestellt. Dieses Zertifikat wird für die Kommunikation mit dem Intune-Dienst verwendet.
 

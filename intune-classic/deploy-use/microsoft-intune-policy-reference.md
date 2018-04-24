@@ -1,29 +1,29 @@
 ---
-title: "Referenz für Konfigurationsrichtlinien"
-description: "Anhand der Informationen in diesem Thema können Sie entscheiden, welche Microsoft Intune-Richtlinie Sie zum Verwalten Ihrer Geräte benötigen."
-keywords: 
+title: Referenz für Konfigurationsrichtlinien
+description: Anhand der Informationen in diesem Thema können Sie entscheiden, welche Microsoft Intune-Richtlinie Sie zum Verwalten Ihrer Geräte benötigen.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 46bc3408f861bcd249ca5071abf1ee80733af10d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Referenz zur Microsoft Intune-Konfigurationsrichtlinie
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Anhand der Informationen in diesem Thema können Sie entscheiden, welche Microsoft Intune-Konfigurationsrichtlinie Sie zum Verwalten Ihrer Geräte benötigen.
 
@@ -102,12 +102,13 @@ Gilt nur für Windows Phone und registrierte Windows-Geräte.
 
 ## <a name="common-mobile-device-settings"></a>Allgemeine Einstellungen für mobile Geräte
 
-|Name der Richtlinie|Zweck|
-|---------------|------------------------|
-|**Exchange ActiveSync-Richtlinie**|Konfigurieren von Sicherheits- und Funktionseinstellungen mobiler Geräte für Geräte, die von Exchange ActiveSync verwaltet werden.<br /><br />Weitere Informationen finden Sie unter [Einstellungen für Exchange ActiveSync-Richtlinien in Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md).|
-|**Sicherheitsrichtlinie für mobiles Gerät**|<ul><li>Konfiguriert die Einstellungen für mobile Geräte (alle Plattformen), einschließlich:<br /><br /><ul><li>Sicherheit</li><li>Verschlüsselung</li><li>System</li><li>E-Mail</li><li>Applications</li></ul></li></ul>
+|                  Name der Richtlinie                   |                                                                                                                       Zweck                                                                                                                       |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Exchange ActiveSync-Richtlinie</strong>   | Konfigurieren von Sicherheits- und Funktionseinstellungen mobiler Geräte für Geräte, die von Exchange ActiveSync verwaltet werden.<br /><br />Weitere Informationen finden Sie unter [Einstellungen für Exchange ActiveSync-Richtlinien in Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md). |
+| <strong>Sicherheitsrichtlinie für mobiles Gerät</strong> |                                  <ul><li>Konfiguriert die Einstellungen für mobile Geräte (alle Plattformen), einschließlich:<br /><br /><ul><li>Sicherheit</li><li>Verschlüsselung</li><li>System</li><li>E-Mail</li><li>Applications</li></ul></li></ul>                                  |
+
 > [!IMPORTANT]
-Microsoft Intune bietet jetzt getrennte **Konfigurationsrichtlinien** für jede Geräteplattform, wobei diese Richtlinien die neuesten Einstellungen berücksichtigen, die Sie verwenden können. Sie können die Sicherheitsrichtlinie für mobile Geräte weiter nutzen, wobei alle vorhandenen Bereitstellungen weiterhin funktionieren. Sie sollten allerdings die Migration zu den neuen Konfigurationsrichtlinien so bald wie möglich planen.<br />Weitere Informationen finden Sie unter [Sicherheitsrichtlinieneinstellungen für mobile Geräte in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).
+> Microsoft Intune bietet jetzt getrennte **Konfigurationsrichtlinien** für jede Geräteplattform, wobei diese Richtlinien die neuesten Einstellungen berücksichtigen, die Sie verwenden können. Sie können die Sicherheitsrichtlinie für mobile Geräte weiter nutzen, wobei alle vorhandenen Bereitstellungen weiterhin funktionieren. Sie sollten allerdings die Migration zu den neuen Konfigurationsrichtlinien so bald wie möglich planen.<br />Weitere Informationen finden Sie unter [Sicherheitsrichtlinieneinstellungen für mobile Geräte in Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).
 
 ## <a name="policies-for-windows-pcs-managed-by-the-intune-software-client"></a>Richtlinien für Windows-PCs, die vom Intune-Softwareclient verwaltet werden
 

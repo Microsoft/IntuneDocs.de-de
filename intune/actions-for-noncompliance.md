@@ -1,22 +1,22 @@
 ---
 title: 'Nicht konforme Nachrichten und Aktionen mit Microsoft Intune: Azure | Microsoft-Dokumentation'
-description: "Erstellen einer E-Mail-Benachrichtigung für nicht konforme Geräte. Hinzufügen von Aktionen, nachdem ein Gerät als nicht konform markiert wurde, z.B. das Hinzufügen einer Toleranzperiode, in der das Gerät konform werden soll, oder das Erstellen eines Zeitplans, um den Zugriff zu blockieren, bis das Gerät konform ist. Verwenden Sie dazu Microsoft Intune in Azure."
-keywords: 
+description: Erstellen einer E-Mail-Benachrichtigung für nicht konforme Geräte. Hinzufügen von Aktionen, nachdem ein Gerät als nicht konform markiert wurde, z.B. das Hinzufügen einer Toleranzperiode, in der das Gerät konform werden soll, oder das Erstellen eines Zeitplans, um den Zugriff zu blockieren, bis das Gerät konform ist. Verwenden Sie dazu Microsoft Intune in Azure.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37a8deca147bbad1e706b814f366a2c3f1247869
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatisieren von E-Mails und Hinzufügen von Aktionen für nicht konforme Geräte in Intune
 
@@ -54,14 +54,14 @@ Es gibt zwei Arten von Aktionen:
 3. Klicken Sie auf **Gerätekonformität** und dann auf **Benachrichtigungen**. 
 4. Klicken Sie auf **Benachrichtigung erstellen**, und geben Sie folgende Informationen ein:
 
-  - Name
-  - Antragsteller
-  - Nachricht
-  - E-Mail-Kopfzeile: Unternehmenslogo einschließen
-  - E-Mail-Fußzeile: Unternehmensnamen einschließen
-  - E-Mail-Fußzeile: Kontaktinformationen einschließen
+   - Name
+   - Antragsteller
+   - Nachricht
+   - E-Mail-Kopfzeile: Unternehmenslogo einschließen
+   - E-Mail-Fußzeile: Unternehmensnamen einschließen
+   - E-Mail-Fußzeile: Kontaktinformationen einschließen
 
-  ![Beispiel einer Benachrichtigung zur Konformität in Intune](./media/actionsfornoncompliance-1.PNG)
+   ![Beispiel einer Benachrichtigung zur Konformität in Intune](./media/actionsfornoncompliance-1.PNG)
 
 Klicken Sie auf **Erstellen**, sobald Sie die Informationen hinzugefügt haben. Die Benachrichtigungsvorlage ist nun einsatzbereit.
 
@@ -77,7 +77,7 @@ Sie können beim Erstellen einer neuen Konformitätsrichtlinie oder Aktualisiere
 1. Öffnen Sie **Microsoft Intune** im [Azure-Portal](https://portal.azure.com), und klicken Sie auf **Gerätekonformität**.
 2. Klicken Sie auf **Richtlinien**, wählen Sie eine Ihrer Richtlinien aus, und klicken dann auf **Eigenschaften**. 
 
-  Haben Sie noch keine Richtlinie? Erstellen Sie eine Richtlinie für [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) oder eine andere Plattform.
+   Haben Sie noch keine Richtlinie? Erstellen Sie eine Richtlinie für [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) oder eine andere Plattform.
 
 3. Klicken Sie auf **Aktionen bei Nichtkonformität** und dann auf **Hinzufügen**, um die Aktionsparameter hinzuzufügen. Sie können die zuvor erstellte Benachrichtigungsvorlage auswählen, zusätzliche Empfänger hinzufügen und die Toleranzperiode des Zeitplans aktualisieren. Im Zeitplan können Sie die Anzahl von Tagen (0 bis 365) eingeben und dann die Richtlinien für den bedingten Zugriff erzwingen. Der Zugriff auf Unternehmensressourcen wird **sofort** durch den bedingten Zugriff blockiert, wenn Sie für die Anzahl der Tage **0** eingeben.
 

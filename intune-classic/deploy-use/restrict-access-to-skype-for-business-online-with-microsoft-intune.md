@@ -1,25 +1,25 @@
 ---
-title: "Schützen von Skype for Business Online"
-description: "Schützen und steuern Sie den Zugriff auf Skype for Business Online unter Verwendung von bedingtem Zugriff."
-keywords: 
+title: Schützen von Skype for Business Online
+description: Schützen und steuern Sie den Zugriff auf Skype for Business Online unter Verwendung von bedingtem Zugriff.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: d9d912cc0a2d8f815e046d888fc8878a8703c514
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Schützen des Zugriffs auf Skype for Business Online mit Microsoft Intune
 

@@ -1,31 +1,31 @@
 ---
-title: "Erstellen einer Konformitätsrichtlinie für macOS-Geräte in Microsoft Intune"
-titleSuffix: 
-description: "Erstellen einer Konformitätsrichtlinie für macOS-Geräte in Microsoft Intune, damit Sie die Anforderungen angeben können, die ein Gerät im Hinblick auf Konformität erfüllen muss."
-keywords: 
+title: Erstellen einer Konformitätsrichtlinie für macOS-Geräte in Microsoft Intune
+titleSuffix: ''
+description: Erstellen einer Konformitätsrichtlinie für macOS-Geräte in Microsoft Intune, damit Sie die Anforderungen angeben können, die ein Gerät im Hinblick auf Konformität erfüllen muss.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d6252680e64067e6d12530e0226632a1c5db7d28
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Erstellen einer Gerätekonformitätsrichtlinie für macOS-Geräte in Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Eine Intune-Konformitätsrichtlinie für macOS-Geräte gibt die Regeln und Einstellungen an, die macOS-Geräte erfüllen müssen, um als konform angesehen zu werden. Sie können diese Richtlinien mit bedingten Zugriff verwenden, um Zugriff auf Unternehmensressourcen zu gewähren oder zu blockieren. Sie können auch Berichte zu Geräten abrufen und Maßnahmen gegen die Nichtkonformität vornehmen. Sie können Gerätekonformitätsrichtlinien für jede Plattform im Intune Azure-Portal erstellen.
+Eine Intune-Konformitätsrichtlinie für macOS-Geräte gibt die Regeln und Einstellungen an, die macOS-Geräte erfüllen müssen, um als konform angesehen zu werden. Sie können diese Richtlinien mit bedingten Zugriff verwenden, um Zugriff auf Unternehmensressourcen zu gewähren oder zu blockieren. Sie können auch Berichte zu Geräten abrufen und Maßnahmen gegen die Nichtkonformität vornehmen. Erstellen Sie Gerätekonformitätsrichtlinien für jede Plattform im Intune Azure-Portal.
 
 ## <a name="before-you-begin"></a>Vorbereitung
 

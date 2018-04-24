@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: cc133071f4d6c0d1a3bbb3acc7c0bd5cb45b6cef
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Erstellen und Bereitstellen von App-Schutzrichtlinien mit Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In diesem Thema wird der Erstellungsvorgang einer App-Schutzrichtlinie im **Azure-Portal** beschrieben. Das Azure-Portal ist die neue Verwaltungskonsole zum Erstellen von App-Schutzrichtlinien, und wir empfehlen, dass Sie Ihre App-Schutzrichtlinien in diesem Portal erstellen. Das Azure-Portal unterstützt die folgenden MAM-Szenarien:
 
@@ -31,23 +31,23 @@ In diesem Thema wird der Erstellungsvorgang einer App-Schutzrichtlinie im **Azur
 - Geräte, die mithilfe einer MDM-Lösung eines Drittanbieters verwaltet werden
 - Geräte, die gar keiner Verwaltung durch eine MDM-Lösung unterliegen (BYOD).
 
->[!IMPORTANT]
-Hier sind ein paar Überlegungen, wenn Sie aktuell die **Intune-Verwaltungskonsole** zum Verwalten Ihrer Geräte verwenden:
-
+> [!IMPORTANT]
+> Hier sind ein paar Überlegungen, wenn Sie aktuell die **Intune-Verwaltungskonsole** zum Verwalten Ihrer Geräte verwenden:
+> 
 > * Sie können mithilfe der [Intune-Verwaltungskonsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) eine App-Schutzrichtlinie erstellen, die Apps für Geräte unterstützt, die bei Intune registriert sind.
 > * Die App-Schutzrichtlinien, die in der Intune-Verwaltungskonsole erstellt wurden, können nicht ins Azure-Portal importiert werden.  Die App-Schutzrichtlinien müssen im Azure-Portal neu erstellt werden.
-
+> 
 > * Möglicherweise werden in der Intune-Verwaltungskonsole nicht alle App-Schutzrichtlinieneinstellungen angezeigt. Das Azure-Portal stellt die neue Verwaltungskonsole zum Erstellen von App-Schutzrichtlinien dar.
-
+> 
 > * Sie müssen in der Intune-Verwaltungskonsole eine App-Schutzrichtlinie erstellen, um verwaltete Apps bereitzustellen. In diesem Fall möchten Sie möglicherweise eine App-Schutzrichtlinie sowohl in der Intune-Verwaltungskonsole als auch im Azure-Portal erstellen: In der Intune-Verwaltungskonsole, um sicherzustellen, dass Sie verwaltete Apps bereitstellen können und im Azure-Portal, da es die neue Verwaltungskonsole darstellt, die über alle App-Schutzrichtlinieneinstellungen verfügt.
-
+> 
 > * Wenn Sie sowohl in der Intune-Verwaltungskonsole als auch im Azure-Portal App-Schutzrichtlinien erstellen, wird die im Azure-Portal erstellte Richtlinie auf die Apps angewendet.
 
 Wählen Sie eins der folgenden Themen aus, um eine Liste der für die Plattformen Android und iOS unterstützten Richtlinieneinstellungen anzuzeigen:
 
 > [!div class="op_single_selector"]
-- [iOS-Richtlinien](ios-mam-policy-settings.md)
-- [Android-Richtlinien](android-mam-policy-settings.md)
+> - [iOS-Richtlinien](ios-mam-policy-settings.md)
+> - [Android-Richtlinien](android-mam-policy-settings.md)
 
 - Eine ausführlichere Beschreibung der Funktionsweise von App-Schutzrichtlinien und der von Intune App-Schutzrichtlinien unterstützten Szenarios finden Sie im Thema [Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Anwendungen mit Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
@@ -129,13 +129,13 @@ Ab der Intune-Version 1703 haben Sie die Möglichkeit, LOB-Apps allgemein in Int
 > [!IMPORTANT]
 > Sie müssen Windows 10 aus der Dropdown-Liste der Plattform auswählen, wenn Sie eine neue App-Schutzrichtlinie erstellen.
 
-1.  Wählen Sie auf dem Blatt „Richtlinie hinzufügen“ **Zulässige Apps** oder **Ausgenommene Apps** aus, um das Blatt „Allowed or Exempt apps“ (Zulässige oder ausgenommene Apps) zu öffnen.
+1. Wählen Sie auf dem Blatt „Richtlinie hinzufügen“ **Zulässige Apps** oder **Ausgenommene Apps** aus, um das Blatt „Allowed or Exempt apps“ (Zulässige oder ausgenommene Apps) zu öffnen.
 
-    > [!NOTE]
-    >
-    - **Zulässige Apps**: Dies sind die Apps, die mit dieser Richtlinie übereinstimmen müssen.
-    - **Ausgeschlossene Apps**: Diese Apps sind von dieser Richtlinie ausgeschlossen und können ohne Einschränkungen auf Unternehmensdaten zugreifen.
-<br></br>
+   > [!NOTE]
+   > 
+   > - **Zulässige Apps**: Dies sind die Apps, die mit dieser Richtlinie übereinstimmen müssen.
+   > - **Ausgeschlossene Apps**: Diese Apps sind von dieser Richtlinie ausgeschlossen und können ohne Einschränkungen auf Unternehmensdaten zugreifen.
+   > <br></br>
 2. Klicken Sie auf dem Blatt „Zulässige Apps“ oder „Ausgeschlossene Apps“ auf **Hinzufügen von Apps**. Sie können empfohlene Microsoft-Apps sowie Store- oder Desktop-Apps hinzufügen.
 
     ein.  **Empfohlene Apps:** Eine voraufgefüllte Liste der Apps (hauptsächlich Office), die Administratoren einfach in die Richtlinie importieren dürfen.
@@ -210,8 +210,8 @@ Um die Auswirkungen der Änderungen sofort zu erfahren, muss der Endbenutzer sic
 Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finden Sie in den folgenden Themen:
 
 > [!div class="op_single_selector"]
-- [iOS-Richtlinien](ios-mam-policy-settings.md)
-- [Android-Richtlinien](android-mam-policy-settings.md)
+> - [iOS-Richtlinien](ios-mam-policy-settings.md)
+> - [Android-Richtlinien](android-mam-policy-settings.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Überwachen der Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](monitor-mobile-app-management-policies-with-microsoft-intune.md)

@@ -1,25 +1,25 @@
 ---
 title: Notwendigkeit zur Deaktivierung unbekannter Quellen | Microsoft-Dokumentation
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 1cf70054add922b3c70fef6b897fc58c8c617c00
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5f2d1359d82b00357a037ef5f96f95ae55cf8ab6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>Sie müssen unbekannte Quellen deaktivieren.
 

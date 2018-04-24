@@ -1,27 +1,26 @@
 ---
-title: "Konfigurieren von Einstellungen für Geräteeinschränkungen in Microsoft Intune"
-titleSuffix: 
-description: "In diesem Artikel erfahren Sie, wie Sie mit Microsoft Intune Einstellungen und Features auf Geräten, die Sie verwalten, konfigurieren."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Intune-Einstellungen für Geräteeinschränkungen in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Hinzufügen eines Geräteprofils zum Einschränken von Features unter Android-, macOS-, iOS-, Windows Phone- und Windows 10-Geräten in Microsoft Intune
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 3/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5ccb928b8ff3f9cebbd6f51d99cddd1f36fb074
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>So konfigurieren Sie Einstellungen für Geräteeinschränkungen in Microsoft Intune
+# <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Konfigurieren von Einstellungen für Geräteeinschränkungen in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Mit Geräteeinschränkungen können Sie eine Vielzahl von Einstellungen und Features für eine ganze Reihe von Kategorien steuern, z.B.:
 - Sicherheit
@@ -36,11 +35,9 @@ Sie lernen die Grundlagen der Geräteeinschränkungsprofile und lesen weitere Ar
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Erstellen von Geräteprofilen mit Einstellungen für Geräteeinschränkungen
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
-3. Wählen Sie auf der Seite **Intune** die Option **Gerätekonfiguration** aus.
-2. Wählen Sie auf der Seite **Gerätekonfiguration** im Abschnitt **Verwalten** **Profile** aus.
-3. Wählen Sie auf der Seite **Profile** **Profil erstellen** aus.
-4. Geben Sie auf der Seite **Profil erstellen** einen **Namen** und eine **Beschreibung** für das Geräteeinschränkungsprofil ein.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
+3. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+4. Geben Sie einen **Namen** und eine **Beschreibung** für das Geräteeinschränkungsprofil ein.
 5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die Sie benutzerdefinierte Einstellungen anwenden möchten. Derzeit können Sie eine der folgenden Plattformen für die Einstellungen für Geräteeinschränkungen auswählen:
     - **Android**
     - **iOS**

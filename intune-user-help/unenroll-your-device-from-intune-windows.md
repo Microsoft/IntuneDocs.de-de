@@ -1,39 +1,33 @@
 ---
-title: "Aufheben der Registrierung Ihres Windows-Geräts bei Intune | Microsoft-Dokumentation"
-description: "Beschreibt das Aufheben der Registrierung eines Windows-Geräts bei Intune."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Entfernen Ihres Windows-Geräts aus Intune | Microsoft-Dokumentation
+description: Beschreibt das Entfernen eines Windows-Geräts aus Intune
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 searchScope:
 - User help
-ROBOTS: 
-ms.reviewer: priyar
+ROBOTS: ''
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 898501d2cf87f73243a97b8c1e99633d30bab982
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f9051fb393c82031d581f7fec731a3b148cbf2e
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
-# <a name="unenroll-your-windows-device-from-intune"></a>Aufheben der Registrierung Ihres Windows-Geräts bei Intune
+# <a name="remove-your-windows-device-from-intune"></a>Entfernen Ihres Windows-Geräts aus Intune
 
-Wenn Sie in Intune registriert sind, Ihr Windows-Gerät aber nicht mehr für die Arbeit oder in der Schule bzw. Uni verwenden möchten und auch nicht mehr auf geschäftliche oder Schul-/Uni-E-Mails, -Apps oder andere diesbezügliche Ressourcen zugreifen müssen, müssen Sie die Registrierung Ihres Geräts aufheben. Nachdem Sie die Registrierung Ihres Geräts bei Intune aufgehoben haben, können Sie nicht mehr auf diese Ressourcen zugreifen. Weitere Informationen dazu, was bei Aufheben der Registrierung Ihres Geräts bei Intune geschieht, finden Sie unter [Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
+Wenn Ihr Gerät in Intune registriert ist, aber Sie Ihr Windows-Gerät nicht mehr dafür verwenden möchten, auf geschäftliche E-Mails, Schul- und Uni-E-Mails oder andere Ressourcen zuzugreifen, müssen Sie Ihr Gerät aus der Verwaltung entfernen. Nachdem Sie Ihr Gerät aus Intune entfernt haben, können Sie nicht mehr auf diese Ressourcen zugreifen. Weitere Informationen dazu, was beim Entfernen Ihres Geräts aus der Verwaltung geschieht, finden Sie unter [Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
-Klicken Sie zum Aufheben der Registrierung Ihres Geräts im Abschnitt „Inhalt dieses Artikels“ weiter oben auf den Link, der dem Typ Ihres Geräts entspricht:
-
--   [Aufheben der Registrierung Ihres Windows 10-Geräts](#unenroll-your-windows-10-device)
--   [Aufheben der Registrierung Ihres Computers mit Windows 8.1](#unenroll-your-windows-81-computer)
--   [Aufheben der Registrierung Ihres Windows Phone 8.1-Geräts](#unenroll-your-windows-phone-81-device)
-
-## <a name="unenroll-your-windows-10-device"></a>Aufheben der Registrierung Ihres Windows 10-Geräts
+## <a name="remove-your-windows-10-device"></a>Entfernen Ihres Windows 10-Geräts
 
 1.  Tippen Sie in Ihrer Apps-Liste auf die App **Unternehmensportal** .
 
@@ -43,7 +37,7 @@ Klicken Sie zum Aufheben der Registrierung Ihres Geräts im Abschnitt „Inhalt 
 
 4.  Tippen Sie auf **Entfernen** &gt; **Entfernen**.
 
-## <a name="unenroll-your-windows-81-computer"></a>Aufheben der Registrierung Ihres Computers mit Windows 8.1
+## <a name="remove-your-windows-81-computer"></a>Entfernen Ihres Windows 8.1-Computers
 
 1.  Navigieren Sie zu **PC-Einstellungen** &gt; **Netzwerk** &gt; **Arbeitsplatz**.
 
@@ -53,7 +47,7 @@ Klicken Sie zum Aufheben der Registrierung Ihres Geräts im Abschnitt „Inhalt 
 
 4.  Wählen Sie im sich öffnenden Popupfenster **Turn off** (Deaktivieren) aus.
 
-## <a name="unenroll-your-windows-phone-81-device"></a>Aufheben der Registrierung Ihres Windows Phone 8.1-Geräts
+## <a name="remove-your-windows-phone-81-mobile-device"></a>Entfernen Ihres mobilen Windows Phone 8.1-Geräts
 
 1.  Tippen Sie auf **Einstellungen** &gt; **Arbeitsplatz**.
 
@@ -62,5 +56,22 @@ Klicken Sie zum Aufheben der Registrierung Ihres Geräts im Abschnitt „Inhalt 
 3.  Tippen Sie am unteren Bildschirmrand auf **Löschen**.
 
 4.  Tippen Sie im Dialogfeld **Konto löschen** auf **Löschen**.
+
+## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Entfernen Ihrer persönlichen Informationen nach dem Entfernen des Unternehmensportals
+
+Es gibt zwei Arten von Daten, die das Unternehmensportal auf Ihrem Windows-Gerät speichert:
+
+-   **Diagnoseprotokolle:** Daten zu Standardaktivitäten von Apps, die Microsoft sammelt. Dazu zählt beispielsweise, wie lang die App geöffnet war oder ob sie abgestürzt ist. Diese werden automatisch gelöscht, wenn Sie das Gerät aus dem Unternehmensportal löschen.
+-   **Anwendungscache:** Dort werden bestimmte Unterstützungsdateien gespeichert, die erforderlich sind, damit die App funktioniert, z.B. Symbole und Einstellungen.
+
+Sie müssen einige Schritte durchführen, um diese Informationen vollständig zu löschen.
+
+### <a name="uninstall-the-company-portal"></a>Deinstallieren des Unternehmensportals  
+
+Durch das [Deinstallieren einer Unternehmensportal-App](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) werden einige der App-Daten entfernt, die auf Ihrem Gerät gespeichert sind.  
+
+### <a name="reset-the-company-portal"></a>Zurücksetzen des Unternehmensportals
+
+Sie können die restlichen Daten der Unternehmensportal-App zurücksetzen, indem Sie die App in den Einstellungen zurücksetzen. Öffnen Sie **Einstellungen** > **Apps und Features** > **Unternehmensportal** > **Erweiterte Optionen** > **Zurücksetzen**.
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

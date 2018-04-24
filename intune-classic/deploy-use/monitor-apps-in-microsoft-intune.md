@@ -1,25 +1,25 @@
 ---
-title: "Überwachen von App-Bereitstellungen"
-description: "Erfahren Sie, wie Sie Apps überwachen, die Sie mit Intune bereitgestellt haben."
-keywords: 
+title: Überwachen von App-Bereitstellungen
+description: Erfahren Sie, wie Sie Apps überwachen, die Sie mit Intune bereitgestellt haben.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.date: 11/10/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: f583dba7e5ade0e06bc68589623558de0de667c8
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="monitor-app-deployments-in-microsoft-intune"></a>Überwachen von App-Bereitstellungen in Microsoft Intune
 

@@ -1,29 +1,29 @@
 ---
-title: "Einstellungen für Windows 10-Richtlinien"
-description: "Verwenden Sie die in diesem Thema aufgeführten Richtlinieneinstellungen, um integrierte und benutzerdefinierte Einstellungen für registrierte Windows 10 Desktop- und Windows 10-Mobilgeräte zu konfigurieren."
-keywords: 
+title: Einstellungen für Windows 10-Richtlinien
+description: Verwenden Sie die in diesem Thema aufgeführten Richtlinieneinstellungen, um integrierte und benutzerdefinierte Einstellungen für registrierte Windows 10 Desktop- und Windows 10-Mobilgeräte zu konfigurieren.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fff34b145660e1d0e78e05de467629f9421fcf7a
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 202f15766aa740755669ab246739a5331ea328a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Intune-Richtlinieneinstellungen für Windows 10-Geräte in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Dieses Thema enthält Informationen zum Verständnis der Intune-Richtlinieneinstellungen, die Sie zum Verwalten von Windows 10-Geräten verwenden können. Lesen Sie dieses Thema neben den Vorgehensweisen unter [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 
@@ -149,7 +149,7 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 |Name der Einstellung|Erforderliche zusätzliche Informationen (wo erforderlich)|
 |----------------|----------------------|
 |**Kamera zulassen**|-|
-|**Wechselmedien zulassen**|Gibt an, ob externe Speichergeräte wie SD-Karten mit dem Gerät verwendet werden können|
+|**Wechselspeichermedien zulassen**|Gibt an, ob externe Speichergeräte wie SD-Karten mit dem Gerät verwendet werden können|
 |**WLAN zulassen**|Gilt nur für Windows 10 Mobile|
 |**Internetfreigabe zulassen**|Ermöglicht die gemeinsame Nutzung der Internetverbindung auf dem Gerät.|
 |**Manuelle WLAN-Konfiguration zulassen**|Steuert, ob die Benutzer eigene WLAN-Verbindungen konfigurieren dürfen oder ob nur über WLAN-Profile konfigurierte Verbindungen verwendet werden dürfen<br>(Nur Windows 10 Mobile)|
@@ -192,7 +192,7 @@ Alle Einstellungen gelten für nur Windows 10 Desktop.
 |**Archivdateien überprüfen**|Ermöglicht Defender die Überprüfung von Archivdateien wie ZIP- oder CAB-Dateien.|
 |**E-Mail-Nachrichten überprüfen**|Ermöglicht Defender das Überprüfen von E-Mail-Nachrichten beim Eingang auf dem Gerät.|
 |**Wechseldatenträger überprüfen**|Ermöglicht Defender das Überprüfen von Wechseldatenträgern wie USB-Sticks.|
-|**Zugeordnete Netzwerklaufwerke überprüfen**|Ermöglicht Defender das Überprüfen von Dateien auf zugeordneten Netzwerklaufwerken.<br>Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefundene Schadsoftware nicht entfernen.|
+|**Zugeordnete Netzwerklaufwerke überprüfen**|Ermöglicht Defender das Überprüfen von Dateien auf zugeordneten Netzwerklaufwerken.<br>Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender eventuell gefundene Schadsoftware nicht entfernen.|
 |**Dateien überprüfen, die in freigegebenen Netzwerkordnern geöffnet wurden**|Ermöglicht Defender das Überprüfen von Dateien auf freigegebenen Netzlaufwerken (z.B. solche, auf die über einen UNC-Pfad zugegriffen wird).<br>Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefundene Schadsoftware nicht entfernen.|
 |**Intervall zum Aktualisieren von Signaturen**|Gibt das Intervall an, in dem Defender auf neue Signaturdateien prüft.|
 |**Cloudschutz zulassen**|Lässt zu oder verhindert, dass Microsoft Active Protection Service Informationen über Schadsoftwareaktivitäten von den von Ihnen verwalteten Geräten erhält. Diese Informationen werden verwendet, um den Dienst in der Zukunft zu verbessern.|
@@ -210,5 +210,5 @@ Alle Einstellungen gelten für nur Windows 10 Desktop.
 |**Automatische Updates zulassen**|Lässt automatische Updates zu. Konfigurieren Sie eine der folgenden Einstellungen, um das Updateverhalten zu steuern:<br />**Download benachrichtigen**<br />**Automatische Installation während der Wartung**<br />**Automatische Installation und Neustart während der Wartung**<br />**Zur festgelegten Zeit automatisch installieren und neu starten**: Beachten Sie, wenn diese Option ausgewählt ist, können Sie auch die folgenden Einstellungen konfigurieren: **Benachrichtigung für Endbenutzer unterdrücken** und **Installationstag für geplante Updates definieren**.<br>(Nur Windows 10 Desktop)|
 |**Features der Vorabversion zulassen**|Bietet Microsoft die Möglichkeit, Einstellungen und Features der Vorabversion für Windows 10-Geräte bereitzustellen. Sie können auswählen, ob nur Einstellungen oder alle Einstellungen und Features der Vorabversion installiert werden sollen.|
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

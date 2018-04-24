@@ -1,27 +1,27 @@
 ---
 title: 'Anzeigen der VPN-Einstellungen in Microsoft Intune: Azure | Microsoft-Dokumentation'
-description: "Erfahren Sie mehr über die verfügbaren VPN-Einstellungen in Microsoft Intune, erhalten Sie Informationen zu deren Verwendungs- und Funktionsweise, einschließlich Datenverkehrsregeln, bedingtem Zugriff und DNS- sowie Proxyeinstellungen für Windows 10- und Windows Holographic for Business-Geräte."
-keywords: 
+description: Erfahren Sie mehr über die verfügbaren VPN-Einstellungen in Microsoft Intune, erhalten Sie Informationen zu deren Verwendungs- und Funktionsweise, einschließlich Datenverkehrsregeln, bedingtem Zugriff und DNS- sowie Proxyeinstellungen für Windows 10- und Windows Holographic for Business-Geräte.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 3/8/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 1c1ed2946782f92313aacec05a65a80b2704ddaa
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 9464b73acc43b9625560156617359c374d7100fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="read-about-the-vpn-settings-in-intune"></a>Informationen zu VPN-Einstellungen in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Sie können VPN-Verbindungen mit Intune konfigurieren. In diesem Artikel werden diese Einstellungen, die Datenverkehrsregeln, der bedingte Zugriff und DNS- sowie Proxyeinstellungen erläutert.
 

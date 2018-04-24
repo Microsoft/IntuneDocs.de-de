@@ -1,26 +1,26 @@
 ---
-title: "Verwenden von benutzerdefinierten Geräteeinstellungen in Microsoft Intune: Azure | Microsoft-Dokumentation"
-description: "Hinzufügen oder Erstellen von Profilen zur Verwendung von benutzerdefinierten Einstellungen für Windows-, Android- und iOS-Geräte unter Verwendung von Microsoft Intune"
-keywords: 
+title: 'Verwenden von benutzerdefinierten Geräteeinstellungen in Microsoft Intune: Azure | Microsoft-Dokumentation'
+description: Hinzufügen oder Erstellen von Profilen zur Verwendung von benutzerdefinierten Einstellungen für Windows-, Android- und iOS-Geräte unter Verwendung von Microsoft Intune
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: adecb332c91f17cf92362295b6b0c81445f5acaf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce7c263435f92a041b93dc5d34ffa912c6fa87fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Erstellen eines Profils mit benutzerdefinierten Einstellungen in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Möglicherweise sind nicht alle Einstellungen in Intune integriert, die Sie verwenden wollen oder müssen. Alternativ sollten Sie eine Einstellung verwenden, die für andere Geräteprofile verfügbar ist. Wenn Sie diese Einstellungen verwenden möchten, erstellen Sie ein Geräteprofil, und konfigurieren Sie das Profil mit benutzerdefinierten Einstellungen.
 
@@ -32,7 +32,7 @@ Benutzerdefinierte Einstellungen werden für jede Plattform anders konfiguriert.
 ## <a name="create-the-profile"></a>Erstellen des Profils
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie auf **Microsoft Intune**.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
 3. Klicken Sie auf die Option **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 4. Geben Sie einen **Namen** und eine **Beschreibung** für das benutzerdefinierte Profil an.
 5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die benutzerdefinierte Einstellungen angewendet werden sollen. Sie können eine der folgenden Plattformen verwenden:

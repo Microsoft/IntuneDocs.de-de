@@ -15,15 +15,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6bbfa42b8ec03cfbe97efdae21f493b68c53d769
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0d38d7671218bfcecd3d2aa4671a565e0cabe37f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Hinzufügen von Benutzern und Gewähren von Administratorrechten für Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Als Administrator können Sie Benutzer direkt oder durch Synchronisieren mit Ihrem lokalen Active Directory hinzufügen. Nachdem ein Benutzer hinzugefügt wurde, kann er Geräte registrieren und auf Unternehmensressourcen zugreifen. Sie können Benutzern auch zusätzliche Berechtigungen erteilen, beispielsweise *globale Administrator*- und *Dienstadministrator*-Berechtigungen.
 
@@ -35,16 +35,16 @@ Sie können Benutzer manuell über das [Office 365-Portal](https://www.office.co
 2. Wählen Sie im Office 365-Menü **Administrator** aus.
 3. Wählen Sie im Admin Center **Benutzer hinzufügen** aus.
 
-  ![Screenshot des Bereichs „Richtlinie hinzufügen“](media/office-add-user.png)
+   ![Screenshot des Bereichs „Richtlinie hinzufügen“](media/office-add-user.png)
 
 4. Geben Sie die folgenden Benutzerdetails an:
-  - **Vorname**
-  - **Nachname**
-  - **Anzeigename**
-  - **Benutzername**: Universal Principle Name (UPN), der in Azure Active Directory gespeichert und für den Zugriff auf den Dienst verwendet wird
-  - **Speicherort**
-  - **Kontaktinformationen** (optional)
-  - **Kennwort**: automatisch generiert oder angegeben
+   - **Vorname**
+   - **Nachname**
+   - **Anzeigename**
+   - **Benutzername**: Universal Principle Name (UPN), der in Azure Active Directory gespeichert und für den Zugriff auf den Dienst verwendet wird
+   - **Speicherort**
+   - **Kontaktinformationen** (optional)
+   - **Kennwort**: automatisch generiert oder angegeben
 
      ![Screenshot des Bereichs „Neuer Benutzer“](media/office-add-user-details.png)
 
@@ -55,16 +55,16 @@ Sie können Benutzer manuell über das [Office 365-Portal](https://www.office.co
 1. Melden Sie sich im [Azure-Portal](https://portal.azure.com) an, und gehen Sie zu **Alle Dienste** > **Monitoring + Management** > **Intune**. Sie können auch *Ressourcen* für **Intune** suchen.
 2. Klicken Sie auf **Benutzer** > **Alle Benutzer**.
 3. Klicken Sie im Admin Center auf **Neuer Benutzer**.
-  ![Screenshot von „Neuer Benutzer hinzufügen“](media/intune-add-user.png)
+   ![Screenshot von „Neuer Benutzer hinzufügen“](media/intune-add-user.png)
 4. Geben Sie die folgenden Benutzerdetails an:
-  - **Name**
-  - **Benutzername**: Der neue Name im Azure Active Directory-Portal ![Screenshot von „Namen hinzufügen“ und „Benutzername“](media/intune-add-user-info.png). Klicken Sie auf **OK**, um fortzufahren.
+   - **Name**
+   - **Benutzername**: Der neue Name im Azure Active Directory-Portal ![Screenshot von „Namen hinzufügen“ und „Benutzername“](media/intune-add-user-info.png). Klicken Sie auf **OK**, um fortzufahren.
 5. Optional können Sie die folgenden Benutzereigenschaften angeben:
-  - **Profil**: Informationen zum Beruf, einschließlich **Position** und **Abteilung**
-  -  **Gruppen**: Gruppen auswählen, die zum Benutzer hinzugefügt werden
-  - **Verzeichnisrolle**: Weisen Sie dem Benutzer Administratorberechtigungen zu, einschließlich einer Intune-Dienstadministratorrolle.
+   - **Profil**: Informationen zum Beruf, einschließlich **Position** und **Abteilung**
+   -  **Gruppen**: Gruppen auswählen, die zum Benutzer hinzugefügt werden
+   - **Verzeichnisrolle**: Weisen Sie dem Benutzer Administratorberechtigungen zu, einschließlich einer Intune-Dienstadministratorrolle.
 
-  Wählen Sie **Erstellen** aus, um in Intune einen neuen Benutzer hinzuzufügen.
+   Wählen Sie **Erstellen** aus, um in Intune einen neuen Benutzer hinzuzufügen.
 6. Wählen Sie **Profil** aus und dann einen **Verwendungsstandort** für den neuen Benutzer. Der Verwendungsstandort wird benötigt, bevor Sie dem neuen Benutzer eine Intune-Lizenz zuweisen können. Klicken Sie auf **Speichern**, um fortzufahren.
     ![Screenshot des Verwendungsspeicherorts](media/intune-add-user-loc.png)
 7. Wählen Sie **Lizenzen** aus und dann **Zuweisen**, um diesem Benutzer eine Intune-Lizenz zuzuweisen. Eine Intune-Lizenz ist erforderlich, um Geräte zu registrieren oder auf Unternehmensressourcen zuzugreifen. Wählen Sie **Produkte** aus, dann den Lizenztyp, klicken Sie auf **Auswählen** und dann auf **Zuweisen**.
@@ -112,7 +112,7 @@ Für den Zugriff auf das Office 365-Portal muss für Ihr Konto **Anmeldung zulä
 Sie können die Verzeichnissynchronisierung so konfigurieren, dass Benutzerkonten aus Ihrem lokalen Active Directory in Microsoft Azure Active Directory (Azure AD) importiert werden. Dies schließt Intune Benutzer ein. Wenn Ihr lokaler Active Directory-Dienst mit all Ihren Azure Active Directory-basierten Diensten verbunden ist, gestaltet sich die Verwaltung der Benutzeridentität viel einfacher. Sie können auch Features für die einmalige Anmeldung konfigurieren, damit die Benutzer mit der Art der Authentifizierung vertraut sind und diese problemlos verläuft. Durch das Verknüpfen eines [Azure AD-Mandanten](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) mit mehreren Diensten sind die zuvor synchronisierten Benutzerkonten für alle cloudbasierten Dienste verfügbar.
 
 ### <a name="how-to-sync-on-premises-users-with-azure-ad"></a>Synchronisieren lokaler Benutzer mit Azure AD
-Das einzige Tool, das Sie zur Synchronisierung der Benutzerkonten mit Azure AD benötigen, ist der [Azure AD Connect-Assistent](https://www.microsoft.com/download/details.aspx?id=47594). Der Azure AD Connect-Assistent stellt eine Anleitung zum Herstellen der Verbindung zwischen Ihrer lokalen Identitätsinfrastruktur und der Cloud bereit.  Wählen Sie Ihre Topologie und Bedürfnisse (einzelnen oder mehrere Verzeichnisse, Kennwortsynchronisierung oder -verbund). Der Assistent konfiguriert alle Komponenten, die für die erfolgreiche Verbindung nötig sind, und stellt sie bereit. Hierzu gehören: Synchronisierungsdienste, Active Directory-Verbunddienste (AD FS) und das Azure AD PowerShell-Modul.
+Das einzige Tool, das Sie zur Synchronisierung der Benutzerkonten mit Azure AD benötigen, ist der [Azure AD Connect-Assistent](https://www.microsoft.com/download/details.aspx?id=47594). Der Azure AD Connect-Assistent stellt eine Anleitung zum Herstellen der Verbindung zwischen Ihrer lokalen Identitätsinfrastruktur und der Cloud bereit. Wählen Sie Ihre Topologie und Bedürfnisse aus (einzelne oder mehrere Verzeichnisse, Kennworthashsynchronisierung, Pass-Through-Authentifizierung oder Verbund). Der Assistent konfiguriert alle Komponenten, die für die erfolgreiche Verbindung nötig sind, und stellt sie bereit. Hierzu gehören: Synchronisierungsdienste, Active Directory-Verbunddienste (AD FS) und das Azure AD PowerShell-Modul.
 
 > [!TIP]
 > Azure AD Connect umfasst Funktionen, die zuvor als Dirsync und Azure AD Sync veröffentlicht wurden. Erfahren Sie mehr über die [Verzeichnisintegration](http://technet.microsoft.com/library/jj573653.aspx). Informationen zur Synchronisierung von Benutzerkonten aus einem lokalen Verzeichnis mit Azure AD finden Sie unter [Ähnlichkeiten zwischen Active Directory und Azure AD](http://technet.microsoft.com/library/dn518177.aspx).

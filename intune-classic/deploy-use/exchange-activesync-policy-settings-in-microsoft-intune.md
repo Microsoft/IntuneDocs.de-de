@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 25bdc7da543cdc38ccbe70651c145750ba96c082
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Einstellungen für Exchange ActiveSync-Richtlinien in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einstellungen zu konfigurieren, mit denen Sie eine Reihe von Features und Funktionen auf Geräten steuern können, die von Exchange ActiveSync verwaltet werden.
 
@@ -44,10 +44,11 @@ Verwenden Sie die Microsoft Intune **Exchange ActiveSync**-Richtlinie, um Einste
 
 ## <a name="encryption-settings"></a>Verschlüsselungseinstellungen
 
-|Name der Einstellung|Details|
-|----------------|---|
-|**Verschlüsselung auf mobilen Geräten vorschreiben**<sup>1</sup>|Erfordert die Verschlüsselung der Daten auf einem Gerät, falls dies unterstützt wird.<br><br>Für Windows Phone 8-Geräte müssen Sie hier **Ja**festlegen.<br /><br />Aktivieren Sie zum Verwenden der Verschlüsselung auf iOS-Geräten die Einstellung **Kennwort zum Entsperren mobiler Geräte erforderlich**.|
-|**Verschlüsselung auf Speicherkarten vorschreiben**|Erfordert die Verschlüsselung von Daten, die auf externen Speichern, wie etwa SD-Karten, gespeichert sind (auf unterstützten Geräten).
+|                           Name der Einstellung                           |                                                                                                                                    Details                                                                                                                                    |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Verschlüsselung auf mobilen Geräten vorschreiben</strong><sup>1</sup> | Erfordert die Verschlüsselung der Daten auf einem Gerät, falls dies unterstützt wird.<br><br>Für Windows Phone 8-Geräte müssen Sie hier <strong>Ja</strong>festlegen.<br /><br />Aktivieren Sie zum Verwenden der Verschlüsselung auf iOS-Geräten die Einstellung <strong>Kennwort zum Entsperren mobiler Geräte erforderlich</strong>. |
+|       <strong>Verschlüsselung auf Speicherkarten vorschreiben</strong>       |                                                                                  Erfordert die Verschlüsselung von Daten, die auf externen Speichern, wie etwa SD-Karten, gespeichert sind (auf unterstützten Geräten).                                                                                  |
+
 <sup>1</sup> Zusätzliche Informationen für Geräte unter Windows 8.1
 
 -   Um die Verschlüsselung auf Geräten zu erzwingen, auf denen Windows 8.1 ausgeführt wird, installieren Sie das [MDM-Clientupdate für Windows von Dezember 2014](https://support.microsoft.com/kb/3013816) auf jedem Gerät.

@@ -1,27 +1,27 @@
 ---
-title: "Aktualisieren Ihres Windows 10-Geräts | Microsoft-Dokumentation"
-description: "Erfahren Sie, wie Sie Ihr Windows 10-Gerät für den Zugriff auf Unternehmensressourcen aktualisieren."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Aktualisieren Ihres Windows 10-Geräts | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Ihr Windows 10-Gerät für den Zugriff auf Unternehmensressourcen aktualisieren.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1ed8456c-ef70-429f-9c65-081bb2dfa6ac
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 71cb70926f02023eae82885b8f525a18c8382e79
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 69a7855dc2df9f74fb529c405cbf02a32cfdea1e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="update-your-windows-10-device"></a>Aktualisieren Ihres Windows 10-Geräts
 

@@ -1,27 +1,27 @@
 ---
-title: "Was geschieht, wenn Sie die Registrierung für Ihr Windows-Gerät aufheben? | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Was geschieht, wenn Sie die Registrierung für Ihr Windows-Gerät aufheben? | Microsoft-Dokumentation
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ef3cd1a30a154ddaa4188e8422ca85392140d09f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fc6f9cd4da8dc15b1d582aa647e60c9737c7a619
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>Was geschieht, wenn Sie die Registrierung Ihres Windows-Geräts bei Intune aufheben?
 

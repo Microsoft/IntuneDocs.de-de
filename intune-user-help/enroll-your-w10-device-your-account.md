@@ -1,37 +1,37 @@
 ---
-title: "Registrieren Ihres Windows 10-Geräts bei Intune | Microsoft-Dokumentation"
-description: "Registrieren Sie ein Windows 10 1511-Gerät bei Intune."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Registrieren Ihres Windows 10-Geräts bei Intune | Microsoft-Dokumentation
+description: Registrieren Sie ein Windows 10 1511-Gerät bei Intune.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ba0535e388ac730ad04cda898c2299f98686ff1d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: bc9a351b24e35359f628a9af9ac906ed0c41a6ff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrieren eines Windows 10-Geräts bei Intune
 
   > [!NOTE]
   > Windows 10 funktioniert auf allen Geräten. Egal, ob Sie einen Desktop-Computer, ein Smartphone oder ein Tablet verwenden, sind die zu befolgenden Schritte dieselben, auch wenn sie sich geringfügig von den Bildern auf dieser Seite unterscheiden.
 
-1.  Öffnen Sie das **Startmenü**.
+1. Öffnen Sie das **Startmenü**.
 
-  - Gehen Sie auf einem **Windows 10 Desktop**-Gerät auf das **Startmenü**.
-  - Wenn Sie ein **Windows 10-Mobilgerät** besitzen, gehen Sie zum **Startbildschirm**, dann wischen Sie zur Liste **Alle Apps**.
+   - Gehen Sie auf einem **Windows 10 Desktop**-Gerät auf das **Startmenü**.
+   - Wenn Sie ein **Windows 10-Mobilgerät** besitzen, gehen Sie zum **Startbildschirm**, dann wischen Sie zur Liste **Alle Apps**.
 
 2. Öffnen Sie die Windows **Einstellungen**-App, indem Sie in der Suchleiste nach „Einstellungen“ suchen.
 

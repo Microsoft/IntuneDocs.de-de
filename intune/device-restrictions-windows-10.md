@@ -1,28 +1,27 @@
 ---
-title: "Einstellungen für Geräteeinschränkungen für Windows 10 in Microsoft Intune"
-titlesuffix: 
-description: "In diesem Artikel lernen Sie die Microsoft Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows 10-Geräten kennen."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Intune-Einstellungen für Geräteeinschränkungen für Windows 10 in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: In diesem Artikel lernen Sie die Microsoft Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows 10-Geräten kennen.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 4/9/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Windows 10 und höher in Microsoft Intune
+# <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Gerätebeschränkungen für Einstellungen unter Windows 10 (und höher) in Intune
 In diesem Artikel erfahren Sie alle Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für Windows 10-Geräte konfigurieren können.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>Allgemein
 - **Bildschirmaufnahme (nur Mobilgerät):** Erlaubt dem Benutzer, den Bildschirm des Geräts als Bild zu erfassen.
@@ -51,7 +50,6 @@ In diesem Artikel erfahren Sie alle Einstellungen für Microsoft Intune-Gerätee
 - **Ink-Arbeitsbereich:** Blockiert den Benutzerzugriff auf den Ink-Arbeitsbereich. Wenn diese Einstellung nicht konfiguriert ist, ist der Ink-Arbeitsbereich aktiviert (Feature ist aktiviert), und der Benutzer kann ihn über den Sperrbildschirm verwenden.
 - **Automatische erneute Bereitstellung:** Ermöglicht es Benutzern mit Administratorrechten, alle Benutzerdaten und -einstellungen über **STRG+Windows+R** vom Sperrbildschirm des Geräts aus zu löschen. Das Gerät wird automatisch neu konfiguriert und bei der Verwaltung neu registriert.
 
-
 ## <a name="password"></a>Kennwort
 -   **Kennwort:** Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können.
     -   **Erforderlicher Kennworttyp:** Gibt an, ob das Kennwort nur numerisch sein muss oder alphanumerisch.
@@ -75,7 +73,6 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
 -   **Automatisches Akzeptieren der Zustimmungsaufforderung des Benutzers zu Kopplung und Datenschutz:** Erlaubt Windows beim Ausführen von Apps das automatische Akzeptieren von Benachrichtigungen zur Zustimmung zu Kopplung und Datenschutz.
 - **Benutzeraktivitäten veröffentlichen:** Legen Sie diese Einstellung auf **Blockieren** fest, um geteilte Aktivitäten und die Ermittlungen von kürzlich verwendeten Ressourcen in der Programmumschaltung zu vermeiden.
 - **Nur lokale Aktivitäten:** Legen Sie diese Einstellungen auf **Blockieren** fest, um geteilte Aktivitäten und Ermittlungen von kürzlich in der Programmumschaltung verwendeten Ressourcen anhand von ausschließlich lokalen Aktivitäten zu vermeiden.
-
 
 Sie können Informationen definieren, auf die alle Anwendungen auf dem Gerät zugreifen können. Zudem können Sie mithilfe von **App-bezogenen Datenschutzausnahmen** Ausnahmen für jede App definieren.
 
@@ -137,8 +134,6 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 -   **Popupbenachrichtigungen auf Sperrbildschirm:** Verhindert, dass Warnmeldungen auf dem Gerätesperrbildschirm angezeigt werden.
 -   **Bildschirmtimeout (nur Mobilgerät):** Gibt die Zeit in Sekunden an, nach der der gesperrte Bildschirm ausgeschaltet wird.
 
-
-
 ## <a name="app-store"></a>App Store
 
 -   **App Store (nur mobil):** Erlaubt oder sperrt die Verwendung des App Stores auf Windows 10 Mobile-Geräten.
@@ -152,8 +147,6 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 -   **Apps auf Systemlaufwerk installieren:** Hindert Apps daran, Daten auf dem Systemlaufwerk des Geräts zu speichern.
 -   **Game DVR (nur Desktop):** Konfiguriert, ob Aufzeichnen und Senden von Spielen zulässig ist.
 -   **Nur Apps aus dem Store**: Konfiguriert, ob Benutzer Apps von anderen Orten als aus dem App-Store installieren können.
-
-
 
 ## <a name="edge-browser"></a>Edge-Browser
 
@@ -181,7 +174,7 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 -   **Standardsuchmodul:** Gibt das zu verwendende Standardsuchmodul an. Endbenutzer können diesen Wert jederzeit ändern.
 -   **Browserdaten beim Beenden löschen:** Löscht Verlauf und Browserdaten, wenn der Benutzer Edge beendet.
 -   **Datenerfassung für Livekacheln:** Beendet das Sammeln von Daten durch Windows aus den Livekacheln, wenn der Benutzer eine Seite an das Startmenü von Edge anheften.
--  **Favoritenliste:** Definiert den Pfad zur Favoritendatei. Beispielsweise http://contoso.com/favorites.html.
+-  **Favoritenliste:** Definiert den Pfad zur Favoritendatei. Beispiel: http://contoso.com/favorites.html.
 -  **Favoritenänderungen einschränken:** Legen Sie **Blockieren** fest, um zu verhindern, dass Benutzer die Favoritenliste hinzufügen, importieren, sortieren oder bearbeiten. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
@@ -192,6 +185,7 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 
 ## <a name="search"></a>Suchen
 - **SafeSearch (nur Mobilgeräte):** Steuert, wie Cortana nicht jugendfreie Inhalte in den Suchergebnissen filtert. Sie können **Streng** oder **Mittel** auswählen oder dem Endbenutzer ermöglichen, seine eigenen Einstellungen zu wählen.
+- **Display web results in search** (Webergebnisse in der Suche anzeigen): Blockieren oder Zulassen, dass Webergebnisse für Suchvorgänge auf dem Gerät angezeigt werden.
 
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
 -   **Microsoft-Konto:** Erlaubt dem Benutzer, das Gerät einem Microsoft-Konto zuzuordnen.
@@ -215,7 +209,6 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 -   **Manuelle WLAN-Konfiguration:** Steuert, ob die Benutzer eigene WLAN-Verbindungen konfigurieren dürfen oder ob nur über WLAN-Profile konfigurierte Verbindungen verwendet werden dürfen (nur Windows 10 Mobile).
 -   **Intervall für WLAN-Suche:** Gibt an, wie oft Geräte nach WLAN-Netzwerken suchen. Geben Sie einen Wert zwischen 1 (am häufigsten) und 500 (am seltensten) an.
 -   **Zulässige Bluetooth-Dienste:** Gibt in Form von hexadezimalen Zeichenfolgen eine Liste zulässiger Bluetooth-Dienste und -Profile an.
-
 
 ## <a name="control-panel-and-settings"></a>Systemsteuerung und Einstellungen
 
@@ -258,41 +251,48 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 
 ## <a name="kiosk-preview"></a>Kiosk (Vorschauversion)
 
--   **Kioskmodus**: Gibt den Typ des [Kioskmodus](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) an, der von der Richtlinie unterstützt wird. Zu den Optionen gehören:
+Ein Kiosk-Gerät führt in der Regel eine App oder eine bestimmte Gruppe von Apps aus. Benutzer werden daran gehindert, auf Features oder Funktionen auf dem Gerät außerhalb von Kiosk-Apps zuzugreifen.
 
-      - **Nicht konfiguriert**: (Standard). Die Richtlinie aktiviert keinen Kioskmodus. 
-      - **Kiosk mit einzelner App**: Das Profil aktiviert das Gerät als Kiosk mit einer einzelnen App.
-      - **Kiosk mit mehreren Apps**: Das Profil aktiviert das Gerät als Kiosk mit mehreren Apps.
+- **Kioskmodus**: Gibt den Typ des Kioskmodus an, der von der Richtlinie unterstützt wird. Zu den Optionen gehören:
 
-    Für Kioske mit einer einzelnen App sind die folgenden Einstellungen erforderlich:
+  - **Nicht konfiguriert**: (Standard). Die Richtlinie aktiviert keinen Kioskmodus. 
+  - **Kiosk mit einzelner App**: Das Profil erlaubt dem Gerät, nur eine App auszuführen. Wenn sich der Benutzer anmeldet, wird eine bestimmte App gestartet. Dieser Modus hindert den Benutzer auch daran, neue Apps zu öffnen oder die Apps, die ausgeführt wird, zu ändern.
+  - **Kiosk mit mehreren Apps**: Das Profil erlaubt dem Gerät, mehrere Apps auszuführen. Es sind nur die Apps, die Sie hinzufügen, für den Benutzer verfügbar. Der Vorteil eines Kiosks mit mehreren Apps oder eines Geräts mit festem Zweck ist eine leicht verständliche Benutzererfahrung für einzelne Personen, da sie nur auf die Apps zugreifen, die sie benötigen, und die Apps entfernen, die sie nicht benötigen.
 
-      - **Benutzerkonto**: Gibt das (auf das Gerät bezogen) lokale Benutzerkonto oder die Azure AD-Kontoanmeldung an, das bzw. die der Kiosk-App zugeordnet ist. Geben Sie für Konten, die Mitglieder von Azure AD-Domänen sind, das Konto in der Form `domain\\username@tenant.org` an.
+#### <a name="single-app-kiosks"></a>Kiosks für einzelne Apps
+Legen Sie folgende Einstellungen fest:
 
-         Verwenden Sie für Geräte in öffentlichen Umgebungen Konten mit minimalen Berechtigungen, um nicht autorisierte Aktivitäten zu verhindern.  
+- **Benutzerkonto**: Geben Sie das (auf das Gerät bezogene) lokale Benutzerkonto oder die Azure AD-Kontoanmeldung ein, das bzw. die der Kiosk-App zugeordnet ist. Geben Sie für Konten, die Mitglieder von Azure AD-Domänen sind, das Konto in der Form `domain\username@tenant.org` ein. 
 
-      - **Anwendungsbenutzermodell-ID (AUMID) der App**: Gibt die AUMID der Kiosk-App an. Weitere Informationen finden Sie unter [Find the Application User Model ID of an installed app (Ermitteln der Anwendungsbenutzer-ID einer installierten App)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    Für Kiosks in öffentlichen Umgebungen, für die die automatische Anmeldung aktiviert ist, muss ein Benutzertyp mit den geringsten Berechtigungen (z.B. das lokale Standardbenutzerkonto) verwendet werden. Verwenden Sie das `AzureAD\user@contoso.com`-Format, um ein Azure Active Directory-Konto (AD) für den Kioskmodus zu konfigurieren.
 
-    Für [Kioskcomputer mit mehreren Apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) ist eine Kioskkonfiguration erforderlich. Verwenden Sie die Schaltfläche **Hinzufügen**, um eine Kioskkonfiguration zu erstellen oder eine vorhandene auszuwählen.
+- **Anwendungsbenutzermodell-ID (AUMID) der App**: Geben Sie die AUMID der Kiosk-App ein. Weitere Informationen finden Sie unter [Find the Application User Model ID of an installed app (Ermitteln der Anwendungsbenutzer-ID einer installierten App)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-    Kioskkonfigurationen mit mehreren Apps umfassen die folgenden Einstellungen:
+#### <a name="multi-app-kiosks"></a>Kiosks für mehrere Apps
+[Kiosks für mehrere Apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) verwenden eine Kioskkonfiguration, mit der die zugelassenen Apps aufgelistet werden, sowie andere Einstellungen. 
 
-    - **Kioskkonfigurationsname**: Ein Anzeigename, der zur Identifikation einer bestimmten Konfiguration dient.
+Verwenden Sie die Schaltfläche **Hinzufügen**, um eine Kioskkonfiguration zu erstellen oder eine vorhandene auszuwählen. Legen Sie folgende Einstellungen fest:
 
-    - Eine oder mehrere **Kiosk-Apps** mit den folgenden Angaben:
+- **Kioskkonfigurationsname**: Geben Sie einen Anzeigenamen an, der zur Identifikation einer bestimmten Konfiguration dient.
 
-        - **App-Typ**, der den Typ der Kiosk-App angibt.  Unterstützte Werte:   
+- **Kiosk-Apps**: Geben Sie die Apps ein, die im Startmenü verfügbar sein sollen. Die von Ihnen hinzugefügten Apps sind die einzigen Apps, die der Benutzer öffnen kann.
 
-            - **Win32-App**: Eine herkömmliche Desktop-App. (Sie benötigen den vollqualifizierten Pfadnamen der ausführbaren Datei bezogen auf das Gerät.)
+  - **App-Typ**: Wählen Sie den Typ der Kiosk-App aus:
+    - **Win32-App**: Eine herkömmliche Desktop-App. Sie benötigen den vollqualifizierten Pfadnamen der ausführbaren Datei bezogen auf das Gerät.
+    - **UWP-App**: Eine universelle Windows-App. Sie benötigen die [AUMID für die App](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-            - **UWP-App**: Eine universelle Windows-App. Sie benötigen die [AUMID für die App](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+  - **Bezeichner**: Geben Sie entweder den vollqualifizierten Pfadnamen für die ausführbare Datei (Win32-Apps) oder die [AUMID der App](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-Apps) ein.
 
-        - **App-Bezeichner**: Gibt entweder den vollqualifizierten Pfadnamen für die ausführbare Datei (Win32-Apps) oder die [AUMID der App](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (UWP-Apps) an.
+- **Taskleiste**: Wählen Sie aus, ob Sie die Taskleiste **aktivieren** (anzeigen) oder sie im Kioskmodus **nicht konfiguriert** (ausgeblendet) lassen möchten.
 
-    - **Taskleiste** gibt an, ob die Taskleiste im Kiosk angezeigt wird (**Aktiviert**) oder ausgeblendet ist (**Nicht konfiguriert**).
+- **Layout des Startmenüs**: Geben Sie eine XML-Datei ein, die beschreibt, wie die Apps im Startmenü dargestellt werden. [Anpassen und Exportieren des Startlayouts](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout): bietet Anweisungen und XML-Beispiele.
 
-    - **Layout des Startmenüs**: Gibt eine XML-Datei an, die beschreibt, wie die Apps [im Startmenü dargestellt werden](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Zugewiesene Benutzer**: Gibt ein oder mehrere Benutzerkonten an, die der Kioskkonfiguration zugeordnet sind. Das Konto ist entweder für das Gerät lokal oder stellt eine Azure AD-Kontoanmeldung dar, die der Kiosk-App zugeordnet ist. Geben Sie Konten in Domänen in der Form `domain\\username@tenant.org` an.
+  [Erstellen eines Windows 10-Kiosks, in dem mehrere Apps ausgeführt werden](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file): bietet weitere Details zur Verwendung und Erstellung von XML-Dateien.
+
+- **Zugewiesene Benutzer**: Fügen Sie mindestens ein Benutzerkonto hinzu, das die von Ihnen hinzugefügten Apps verwenden kann. Wenn sich ein Benutzer mit einem Konto anmeldet, sind nur die in der Konfiguration definierten Apps verfügbar. Das Konto ist entweder für das Gerät lokal oder stellt eine Azure AD-Kontoanmeldung dar, die der Kiosk-App zugeordnet ist.
+
+    Für Kiosks in öffentlichen Umgebungen, für die die automatische Anmeldung aktiviert ist, muss ein Benutzertyp mit den geringsten Berechtigungen (z.B. das lokale Standardbenutzerkonto) verwendet werden. Verwenden Sie das `domain\user@tenant.com`-Format, um ein Azure Active Directory-Konto (AD) für den Kioskmodus zu konfigurieren.
 
 ## <a name="windows-defender-antivirus"></a>Windows Defender Antivirus
 
@@ -328,14 +328,11 @@ Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefunden
     -   **Benutzerdefiniert**
     -   **Blockieren**
 
-
-
 ### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender Antivirus-Ausschlüsse
 
 -   **Dateien und Ordner, die bei Überprüfungen und Echtzeitschutz ausgeschlossen werden sollen:** Fügt Dateien und Ordner wie **C:\Pfad** oder **%ProgramFiles%\Pfad\Dateiname.exe** der Ausschlussliste hinzu. Diese Dateien und Ordner werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.
 -   **Dateierweiterungen, die bei Überprüfungen und Echtzeitschutz ausgeschlossen werden sollen:** Fügt der Ausschlussliste eine oder mehrere Erweiterungen wie **jpg** oder **txt** hinzu. Dateien mit diesen Erweiterungen werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.
 -   **Prozesse, die von Überprüfungen und Echtzeitschutz ausgenommen werden sollen:** Fügt der Ausschlussliste einen oder mehrere Prozesse vom Typ **.exe**, **.com** oder **.scr** hinzu. Diese Prozesse werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.
-
 
 ## <a name="network-proxy"></a>Netzwerkproxy
 
@@ -348,9 +345,7 @@ Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefunden
     -   **Proxyausnahmen:** Geben Sie URLs an, die den Proxyserver nicht verwenden dürfen. Trennen Sie die einzelnen Elemente durch Semikola.
     -   **Proxyserver für lokale Adresse umgehen**: Aktivieren Sie diese Option, wenn Sie den Proxyserver nicht für lokale Adressen in Ihrem Intranet verwenden möchten.
 
-
 ## <a name="windows-spotlight"></a>Windows-Blickpunkt
-
 
 - **Windows-Blickpunkt:** Verwenden Sie diese Einstellung, um auf Windows 10-Geräten alle Funktionen von Windows-Blickpunkt zu blockieren. Wenn Sie diese Einstellung blockieren, sind die folgenden Einstellungen nicht verfügbar.
     - **Windows-Blickpunkt auf dem Sperrbildschirm:** Verhindert, dass Windows-Blickpunkt Informationen auf dem Gerätesperrbildschirm anzeigt.
@@ -360,7 +355,6 @@ Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefunden
     - **Windows-Blickpunkt im Info-Center:** Verhindert, dass Vorschläge von Windows-Blickpunkt wie neue Apps oder Sicherheitsinhalte im Windows-Info-Center angezeigt werden.
     - **Personalisierung von Windows-Blickpunkt:** Verhindert, dass Windows-Blickpunkt Ergebnisse basierend auf der Nutzung eines Geräts personalisiert.
     - **Windows-Begrüßungsseite:** Blockiert die Windows-Begrüßungsseite, die dem Benutzer Informationen zu neuen oder aktualisierten Funktionen anzeigt.
-
 
 ## <a name="projection"></a>Projektion
 
@@ -394,15 +388,3 @@ Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefunden
 - **Nachrichtensynchronisierung (nur mobil)**: Deaktivieren Sie das Feature „Nachrichten – Überall“ sowie die SMS-Sicherung und -Wiederherstellung.
 - **MMS (nur mobil)**: Deaktivieren Sie die Funktion zum Senden/Empfangen von MMS auf dem Gerät.
 - **RCS (nur mobil)**: Deaktivieren Sie die Funktion für RCS-Sendevorgänge/Empfangsvorgänge (Rich Communication Services) auf dem Gerät.
-
-
-
-
-
-
-
-
-
-
-
-

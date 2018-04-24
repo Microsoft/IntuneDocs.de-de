@@ -1,27 +1,27 @@
 ---
-title: "VPN-Einstellungen für Windows Phone 8.1-Geräte in Microsoft Intune"
-titleSuffix: 
-description: "Erfahren Sie mehr über die Intune-Einstellungen, die Sie zum Konfigurieren von VPN-Verbindungen auf Windows Phone 8.1-Geräten verwenden können."
-keywords: 
+title: VPN-Einstellungen für Windows Phone 8.1-Geräte in Microsoft Intune
+titleSuffix: ''
+description: Erfahren Sie mehr über die Intune-Einstellungen, die Sie zum Konfigurieren von VPN-Verbindungen auf Windows Phone 8.1-Geräten verwenden können.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 786a817fbbd821d74f4f1a03fdec5a6893ed890b
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 458586a2d507e913eb702c0ee2e3c0531350f1b4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Konfigurieren von VPN-Einstellungen für Windows Phone 8.1-Geräte in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In diesem Artikel werden die Intune-Einstellungen veranschaulicht, die Sie verwenden können, um VPN-Verbindungen auf Windows Phone 8.1-Geräten zu konfigurieren.
 
@@ -56,7 +56,7 @@ Je nach den ausgewählten Einstellungen können nicht alle Werte in der folgende
 - **Rolle** (nur Pulse Secure): Geben Sie den Namen der Benutzerrolle an, die Zugriff auf diese Verbindung hat. Eine Benutzerrolle definiert persönliche Einstellungen und Optionen und aktiviert oder deaktiviert bestimmte Zugriffsfeatures.
 - **Bereich** (nur Pulse Secure): Geben Sie den Namen des gewünschten Authentifizierungsbereichs an. Ein Authentifizierungsbereich ist eine Gruppe von Authentifizierungsressourcen, die vom Verbindungstyp „Pulse Secure“ verwendet werden.
 
-- **DNS-Suffixsuchliste** - **Fügen** Sie DNS-Suffixe hinzu. Jedes angegebene DNS-Suffix wird beim Verbinden mit einer Website unter Verwendung eines Kurznamens gesucht. Geben Sie z.B. die DNS-Suffixe **domain1.contoso.com** und **domain2.contoso.com** an, rufen Sie die URL **http://mywebsite** auf, und die URLs **http://mywebsite.domain1.contoso.com** und **http://mywebsite.domain2.contoso.com** werden durchsucht.
+- **DNS-Suffixsuchliste** - **Fügen** Sie DNS-Suffixe hinzu. Jedes angegebene DNS-Suffix wird beim Verbinden mit einer Website unter Verwendung eines Kurznamens gesucht. Geben Sie beispielsweise die DNS-Suffixe **domain1.contoso.com** und **domain2.contoso.com** an, und öffnen Sie die URL **http://mywebsite**, und die URLs **http://mywebsite.domain1.contoso.com** und **http://mywebsite.domain2.contoso.com werden durchsucht**.
 
 - **Benutzerdefiniertes XML:** Geben Sie benutzerdefinierte XML-Befehle zum Konfigurieren der VPN-Verbindung an.
 
@@ -64,7 +64,6 @@ Je nach den ausgewählten Einstellungen können nicht alle Werte in der folgende
 
 ```
     <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
-
 ```
 
 **Beispiel für CheckPoint Mobile VPN:**
@@ -76,13 +75,11 @@ Je nach den ausgewählten Einstellungen können nicht alle Werte in der folgende
 **Beispiel für SonicWall Mobile Connect:**
 ```
 <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-
 ```
 
 **Beispiel für F5 Edge Client:**
 ```
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
-
 ```
 
 Weitere Informationen zum Erstellen von benutzerdefinierten XML-Befehlen finden Sie in der VPN-Dokumentation des jeweiligen Herstellers.

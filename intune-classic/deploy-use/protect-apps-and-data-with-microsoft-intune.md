@@ -1,25 +1,25 @@
 ---
-title: "Schützen von Apps und Daten"
-description: "Dieses Thema beschreibt die verschiedenen Intune-Features und -Funktionen, die Ihnen zum Schutz Ihrer Unternehmens-Apps und Daten zur Verfügung stehen."
-keywords: 
+title: Schützen von Apps und Daten
+description: Dieses Thema beschreibt die verschiedenen Intune-Features und -Funktionen, die Ihnen zum Schutz Ihrer Unternehmens-Apps und Daten zur Verfügung stehen.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/19/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 2a05444c757b8e99ca0b897acfcd6238d960aeb2
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-apps-and-data-with-microsoft-intune"></a>Schützen von Apps und Daten mit Microsoft Intune
 

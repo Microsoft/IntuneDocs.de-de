@@ -1,29 +1,29 @@
 ---
-title: "Netzwerkanforderungen und Details zur Bandbreite für Microsoft Intune"
-titlesuffix: 
-description: "Hier finden Sie Informationen zu den Netzwerkanforderungen und Details zur Bandbreite für Intune."
-keywords: 
+title: Netzwerkanforderungen und Details zur Bandbreite für Microsoft Intune
+titlesuffix: ''
+description: Hier finden Sie Informationen zu den Netzwerkanforderungen und Details zur Bandbreite für Intune.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b21c4421914294e84bae637e489065c5e4410839
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c161d1ca120d5a0210cffca01e781f1ae9206fe4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Anforderungen und Bandbreite an die Intune-Netzwerkkonfiguration
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Diese Anleitung klärt Intune-Administratoren über die Netzwerkanforderungen für den Intune-Dienst auf. Mithilfe dieser Informationen können Sie feststellen, welche Bandbreitenanforderungen gestellt werden und welche IP-Adressen und Porteinstellungen für die Proxyeinstellungen erforderlich sind.
 
@@ -58,11 +58,13 @@ Ein Proxyserver mit Zwischenspeicherung, der Inhaltsanfragen von Clients empfän
 
 Nachfolgend werden typische Einstellungen für die Verwendung eines Proxyservers aufgeführt, mit dem Inhalt für Intune-Clients zwischengespeichert wird.
 
-|Einstellung|Empfohlener Wert|Details|
-|-----------|---------------------|-----------|
-|Cachegröße|5-30 GB|Dieser Wert schwankt abhängig von der Anzahl von Clientcomputern in Ihrem Netzwerk und den von Ihnen verwendeten Konfigurationen. Damit Dateien nicht zu schnell gelöscht werden, stellen Sie die Größe des Zwischenspeichers passend für Ihre Umgebung ein.|
-|Größe der einzelnen Cachedatei|950 MB|Diese Einstellung ist möglicherweise nicht für alle Proxyserver mit Zwischenspeicherung verfügbar.|
-|Objekttypen, die zwischengespeichert werden|HTTP<br /><br />HTTPS<br /><br />BITS|Intune-Pakete sind CAB-Dateien, die per BITS-Download (Background Intelligent Transfer Service) über HTTP abgerufen wurden.|
+
+|          Einstellung           |           Empfohlener Wert           |                                                                                                  Details                                                                                                  |
+|----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Cachegröße         |             5-30 GB             | Dieser Wert schwankt abhängig von der Anzahl von Clientcomputern in Ihrem Netzwerk und den von Ihnen verwendeten Konfigurationen. Damit Dateien nicht zu schnell gelöscht werden, stellen Sie die Größe des Zwischenspeichers passend für Ihre Umgebung ein. |
+| Größe der einzelnen Cachedatei |                950 MB                 |                                                                     Diese Einstellung ist möglicherweise nicht für alle Proxyserver mit Zwischenspeicherung verfügbar.                                                                     |
+|   Objekttypen, die zwischengespeichert werden    | HTTP<br /><br />HTTPS<br /><br />BITS |                                               Intune-Pakete sind CAB-Dateien, die per BITS-Download (Background Intelligent Transfer Service) über HTTP abgerufen wurden.                                               |
+
 Informationen zur Verwendung eines Proxyservers zum Zwischenspeichern von Inhalt entnehmen Sie der Dokumentation zu Ihrer Proxyserverlösung.
 
 ### <a name="use-background-intelligent-transfer-service-on-computers"></a>Verwenden von Background Intelligent Transfer Service auf Computern
@@ -159,14 +161,16 @@ In den folgenden Tabellen sind die Ports und Dienste aufgeführt, auf die der In
 |fef.msuc05.manage.microsoft.com|52.230.16.180|
 
 ### <a name="apple-device-network-information"></a>Informationen zum Netzwerk von Apple-Geräten
-| Hostname  | URL (IP-Adresse/Subnetz) | Protokoll | Port | Gerät |
-| --- | --- | --- | --- | --- |
-|  Verwaltungskonsole  | gateway.push.apple.com (17.0.0.0/8) | TCP | 2195 | Apple iOS und macOS |
-| Verwaltungskonsole  | feedback.push.apple.com(17.0.0.0/8) | TCP | 2196 | Apple iOS und macOS |
-| Verwaltungskonsole  | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple iOS und macOS  |
-| PI-Server  | gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8) | TCP | 2195, 2196 | Zum Cloud Messaging unter Apple iOS und macOS |
-| Gerätedienste  | gateway.push.apple.com | TCP | 2195 | Apple  |
-| Gerätedienste  | feedback.push.apple.com | TCP | 2196 | Apple  |
-| Gerätedienste  | Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net | HTTP | 80 | Apple  |
-| Geräte (Internet/WLAN) | #-courier.push.apple.com(17.0.0.0/8) | TCP | 5223 und 443 | Nur Apple &#39;#&#39; ist eine zufällige Zahl zwischen 0 und 200. |
-| Geräte (Internet/WLAN) | phobos.apple.comocsp.apple.comax.itunes.apple.com | HTTP/HTTPS | 80 oder 443 | Nur Apple |
+
+|         Hostname         |                                        URL (IP-Adresse/Subnetz)                                        |  Protokoll  |     Port     |                          Gerät                           |
+|--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
+|      Verwaltungskonsole       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS und macOS                    |
+|      Verwaltungskonsole       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS und macOS                    |
+|      Verwaltungskonsole       | Apple iTunesitunes.apple.com, \*.mzstatic.com, \*.phobos.apple.com, \*.phobos.apple.com.edgesuite.net |    HTTP    |      80      |                    Apple iOS und macOS                    |
+|        PI-Server         |                gateway.push.apple.com(17.0.0.0/8) feedback.push.apple.com(17.0.0.0/8)                 |    TCP     |  2195, 2196  |         Zum Cloud Messaging unter Apple iOS und macOS          |
+|     Gerätedienste      |                                        gateway.push.apple.com                                         |    TCP     |     2195     |                           Apple                           |
+|     Gerätedienste      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
+|     Gerätedienste      |   Apple iTunesitunes.apple.com \*.mzstatic.com\*.phobos.apple.com \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
+| Geräte (Internet/WLAN) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 und 443 | Nur Apple &#39;#&#39; ist eine zufällige Zahl zwischen 0 und 200. |
+| Geräte (Internet/WLAN) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 oder 443   |                        Nur Apple                         |
+

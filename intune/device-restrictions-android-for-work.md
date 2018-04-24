@@ -2,8 +2,8 @@
 title: Geräteeinschränkungen für Android for Work in Microsoft Intune – Azure | Microsoft-Dokumentation
 description: 'Auf Geräten mit Android for Work können Sie auf dem Gerät einige Einstellungen einschränken, einschließlich Folgendem: Kopieren und Einfügen, Benachrichtigungen anzeigen, App-Berechtigungen, Datenfreigabe, Kennwortlänge, Anmeldefehler, Entsperren per Fingerabdruck, Wiederverwenden von Passwörtern und Aktivieren der Freigabe von Arbeitskontakten per Bluetooth.'
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/19/2018
 ms.topic: article
@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c155817e0bc9df00087908a86fcfcb675fa0ad97
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: 11ce7fa7fa4d48d9cc292b7b6565b6b4f2be2dc4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Einstellungen für Einschränkungen von Arbeitsgeräten in Intune
 
 In diesem Artikel sind alle Einstellungen für Microsoft Intune-Geräteeinschränkungen aufgelistet, die Sie für Android for Work-Geräte konfigurieren können.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Arbeitsprofileinstellungen
 
@@ -48,6 +48,8 @@ In diesem Artikel sind alle Einstellungen für Microsoft Intune-Geräteeinschrä
    Verhindert, dass Benutzer Konten im Arbeitsprofil manuell hinzufügen oder entfernen.
 
    Wenn Sie beispielsweise die Gmail-App in einem Android for Work-Profil bereitstellen, können Sie verhindern, dass Benutzer Konten in diesem Arbeitsprofil hinzufügen oder entfernen.
+
+- **Kontaktfreigabe über Bluetooth:** Ermöglicht den Zugriff auf Arbeitskontakte von einem anderen Gerät aus, z.B. aus dem Auto, wenn es mit Bluetooth gekoppelt ist. Diese Einstellung ist standardmäßig nicht konfiguriert, und Kontakte aus dem Arbeitsprofil werden nicht angezeigt. Klicken Sie auf **Aktivieren**, um diese Freigabe zuzulassen und um Kontakte aus dem Arbeitsprofil anzuzeigen. Diese Einstellung ist auf Geräten unter Android OS 6.0 und höher verfügbar, auf denen Arbeitsprofile eingerichtet wurden.
 
 ### <a name="work-profile-password"></a>Arbeitsprofilkennwort
 

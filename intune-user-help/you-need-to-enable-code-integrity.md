@@ -1,27 +1,27 @@
 ---
-title: "Sie müssen Codeintegrität aktivieren | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Sie müssen Codeintegrität aktivieren | Microsoft-Dokumentation
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c140acfdaebe651ee4284d8b46af200cc3bd93d2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6a106220a2a51eeed7850ac967594818981afca4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="you-need-to-enable-code-integrity"></a>Sie müssen Codeintegrität aktivieren
 

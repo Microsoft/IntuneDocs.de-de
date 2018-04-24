@@ -1,27 +1,27 @@
 ---
-title: "Von Ihrem Android-Gerät wurden die Nutzungsbeschränkungen entfernt, und es kann keine Verbindung hergestellt werden"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Von Ihrem Android-Gerät wurden die Nutzungsbeschränkungen entfernt, und es kann keine Verbindung hergestellt werden
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1db61d23bd929ca382753f834610302dda7ab01d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 522a300760fe4446fc6e1ff211763279ba4fc7bf
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Von Ihrem Android-Gerät wurden die Nutzungsbeschränkungen entfernt, daher können Sie keine Verbindung herstellen
 

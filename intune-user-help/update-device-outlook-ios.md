@@ -1,28 +1,28 @@
 ---
-title: "Sie müssen Ihr iOS-Gerät aktualisieren, um Outlook zu installieren | Microsoft-Dokumentation"
+title: Sie müssen Ihr iOS-Gerät aktualisieren, um Outlook zu installieren | Microsoft-Dokumentation
 titleSuffix: Microsoft Intune
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 48ef8e17-db03-4a1b-95a2-bc594979734c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 00d024cd4123709153558e0874797d2e20159ea8
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 4003d27bd3cbd8e0bef835df7895f7388cbd7dcd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="you-need-to-update-your-ios-device-to-install-the-outlook-app"></a>Sie müssen Ihr iOS-Gerät aktualisieren, um die Outlook-App zu installieren
 

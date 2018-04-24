@@ -14,15 +14,15 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: be8a04b28494e5806a1e5127d4d0bbdf4cd98f36
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f818c35a008c24a529967b09a37917343433ff7d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-intune"></a>Einrichten von Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Diese Einrichtungsschritte helfen Ihnen, die mobile Geräteverwaltung (Mobile Device Management, MDM) mit Intune zu aktivieren. Geräte müssen verwaltet werden, bevor Sie Benutzern Zugriff auf Unternehmensressourcen gewähren oder Einstellungen auf diesen Geräten verwalten können.
 
@@ -35,16 +35,17 @@ Wenn Sie derzeit Microsoft System Center Configuration Manager zum Verwalten von
 
 
 
-| Schritte | Status  |
-| ------------- |-------------|
-| 1  | [Unterstützte Konfigurationen:](supported-devices-browsers.md) Wichtige Informationen, bevor Sie beginnen. Dies beinhaltet die unterstützten Konfigurationen und Netzwerkanforderungen.|
-| 2 |  [Anmelden bei Intune:](account-sign-up.md) Melden Sie sich bei Ihrem Testabonnement an, oder erstellen Sie ein neues Intune-Abonnement. |  
-| 3 | [Konfigurieren des Domänennamens:](custom-domain-name-configure.md) Legen Sie die DNS-Registrierung fest, um den Domänennamen Ihres Unternehmens mit Intune zu verbinden. Dies bietet Benutzern eine vertraute Domäne beim Herstellen einer Verbindung zu Intune und beim Verwenden von Ressourcen.  |
-| 4 | [Hinzufügen von Benutzern](users-add.md): Fügen Sie Benutzer manuell hinzu, oder verbinden Sie Active Directory, um Benutzer mit Intune zu synchronisieren. Erforderlich, es sei denn, Ihre Geräte sind „benutzerlose“ Kiosk-Geräte. |
-| 5 | [Zuweisen von Lizenzen:](licenses-assign.md) Erteilen Sie Benutzern die Berechtigung, Intune zu verwenden. Jeder Benutzer oder jedes benutzerlose Gerät benötigt eine Lizenz für Intune, um auf den Dienst zuzugreifen.|
-| 6 |  [Hinzufügen von Gruppen:](groups-add.md) Verwenden Sie Benutzer- und Gerätegruppen, um Verwaltungsaufgaben zu vereinfachen. Gruppen werden verwendet, um Apps, Einstellungen und andere Ressourcen zuzuweisen. |
-| 7 | [Hinzufügen von Apps:](apps-add.md) Apps können Gruppen zugewiesen und automatisch oder optional installiert werden. |
-| 8 | [Konfigurieren von Geräten:](device-profiles.md) Richten Sie Profile ein, die Einstellungen für Geräte verwalten. Mit Geräteprofilen können Einstellungen für E-Mail-, VPN-, WLAN- und Gerätefunktionen vorkonfiguriert werden. Sie können auch Geräte zum Schutz von Geräten und Daten einschränken.  |
-| 9 | [Anpassen des Unternehmensportals:](company-portal-app.md) Passen Sie das Intune-Unternehmensportal an, mit dem Benutzer Geräte registrieren und Apps installieren. Diese Einstellungen werden in der Unternehmensportal-App und auf der Intune-Unternehmensportal-Website angezeigt. |
-| 10 | [Aktivieren der Geräteregistrierung:](mdm-authority-set.md) Aktivieren Sie die Intune-Verwaltung auf iOS-, Windows-, Android- und Mac-Geräten, indem Sie die MDM-Autorität festlegen und bestimmte Plattformen aktivieren. |
-| 11 | [Konfigurieren der App-Richtlinien:](app-protection-policy.md) Legen Sie bestimmte Einstellungen anhand der App-Schutzrichtlinien in Microsoft Intune fest. |
+| Schritte |                                                                                                                       Status                                                                                                                       |
+|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   1   |                                        [Unterstützte Konfigurationen:](supported-devices-browsers.md) Wichtige Informationen, bevor Sie beginnen. Dies beinhaltet die unterstützten Konfigurationen und Netzwerkanforderungen.                                         |
+|   2   |                                                                 [Anmelden bei Intune:](account-sign-up.md) Melden Sie sich bei Ihrem Testabonnement an, oder erstellen Sie ein neues Intune-Abonnement.                                                                  |
+|   3   |                [Konfigurieren des Domänennamens:](custom-domain-name-configure.md) Legen Sie die DNS-Registrierung fest, um den Domänennamen Ihres Unternehmens mit Intune zu verbinden. Dies bietet Benutzern eine vertraute Domäne beim Herstellen einer Verbindung zu Intune und beim Verwenden von Ressourcen.                |
+|   4   |                                   [Hinzufügen von Benutzern](users-add.md): Fügen Sie Benutzer manuell hinzu, oder verbinden Sie Active Directory, um Benutzer mit Intune zu synchronisieren. Erforderlich, es sei denn, Ihre Geräte sind „benutzerlose“ Kiosk-Geräte.                                    |
+|   5   |                                            [Zuweisen von Lizenzen:](licenses-assign.md) Erteilen Sie Benutzern die Berechtigung, Intune zu verwenden. Jeder Benutzer oder jedes benutzerlose Gerät benötigt eine Lizenz für Intune, um auf den Dienst zuzugreifen.                                             |
+|   6   |                                               [Hinzufügen von Gruppen:](groups-add.md) Verwenden Sie Benutzer- und Gerätegruppen, um Verwaltungsaufgaben zu vereinfachen. Gruppen werden verwendet, um Apps, Einstellungen und andere Ressourcen zuzuweisen.                                                |
+|   7   |                                                                        [Hinzufügen von Apps:](apps-add.md) Apps können Gruppen zugewiesen und automatisch oder optional installiert werden.                                                                         |
+|   8   | [Konfigurieren von Geräten:](device-profiles.md) Richten Sie Profile ein, die Einstellungen für Geräte verwalten. Mit Geräteprofilen können Einstellungen für E-Mail-, VPN-, WLAN- und Gerätefunktionen vorkonfiguriert werden. Sie können auch Geräte zum Schutz von Geräten und Daten einschränken. |
+|   9   |       [Anpassen des Unternehmensportals:](company-portal-app.md) Passen Sie das Intune-Unternehmensportal an, mit dem Benutzer Geräte registrieren und Apps installieren. Diese Einstellungen werden in der Unternehmensportal-App und auf der Intune-Unternehmensportal-Website angezeigt.       |
+|  10   |                                [Aktivieren der Geräteregistrierung:](mdm-authority-set.md) Aktivieren Sie die Intune-Verwaltung auf iOS-, Windows-, Android- und Mac-Geräten, indem Sie die MDM-Autorität festlegen und bestimmte Plattformen aktivieren.                                 |
+|  11   |                                                        [Konfigurieren der App-Richtlinien:](app-protection-policy.md) Legen Sie bestimmte Einstellungen anhand der App-Schutzrichtlinien in Microsoft Intune fest.                                                         |
+

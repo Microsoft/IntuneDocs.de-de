@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c27b191f8a0f9fbd298b820114f27acb4c31f966
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Verwalten der Datenübertragung zwischen iOS-Apps mit Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="manage-ios-apps"></a>Verwalten von iOS-Apps
 Der Schutz der Unternehmensdaten umfasst die Sicherstellung, dass die Übertragung von Dateien auf Apps beschränkt ist, die von Ihnen verwaltet werden.  Sie können iOS-Apps auf folgende Weise verwalten:
@@ -51,17 +51,17 @@ Um sicherzustellen, dass Apps, die Sie mithilfe der Drittanbieter-MDM-Lösung be
 Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die von der EMM-Lösung eines Drittanbieters verwaltet werden. Das nachfolgend beschriebene Verfahren ist ein allgemeiner Ablauf zum Konfigurieren der UPN-Einstellung und der resultierenden Benutzerumgebung:
 
 
-1.  [Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) für die iOS-Plattform im Azure-Portal. Konfigurieren Sie Richtlinieneinstellungen für alle Unternehmensanforderungen, und wählen Sie die Apps aus, für die diese Richtlinie gelten soll.
+1. [Erstellen und Bereitstellen von Verwaltungsrichtlinien für mobile Apps mit Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) für die iOS-Plattform im Azure-Portal. Konfigurieren Sie Richtlinieneinstellungen für alle Unternehmensanforderungen, und wählen Sie die Apps aus, für die diese Richtlinie gelten soll.
 
-2.  Stellen Sie die Apps und das E-Mail-Profil, die **von der MDM-Lösung eines Drittanbieters** verwaltet werden sollen, mithilfe der generalisierten nachstehenden Schritte bereit. Diese wird auch im Beispiel 1 behandelt.
+2. Stellen Sie die Apps und das E-Mail-Profil, die **von der MDM-Lösung eines Drittanbieters** verwaltet werden sollen, mithilfe der generalisierten nachstehenden Schritte bereit. Diese wird auch im Beispiel 1 behandelt.
 
-  1.  Stellen Sie die App mithilfe der folgenden App-Konfigurationseinstellungen bereit:
+   1. Stellen Sie die App mithilfe der folgenden App-Konfigurationseinstellungen bereit:
 
       **Schlüssel** = IntuneMAMUPN, **Wert** = <username@company.com>
 
       Beispiel: [‘IntuneMAMUPN’, ‚jondoe@microsoft.com‘]
 
-  2.  Stellen Sie die Richtlinie „Open in Management“ mithilfe des MDM-Anbieters eines Drittanbieters für registrierte Geräte bereit.
+   2. Stellen Sie die Richtlinie „Open in Management“ mithilfe des MDM-Anbieters eines Drittanbieters für registrierte Geräte bereit.
 
 
 ### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Beispiel 1: Administratoroberfläche in einer MDM-Konsole eines Drittanbieters
@@ -70,9 +70,9 @@ Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die von
 
 2. Geben Sie im Abschnitt „Anwendungskonfiguration“ die folgende Einstellung ein:
 
-  **Schlüssel** = IntuneMAMUPN, **Wert** = <username@company.com>
+   **Schlüssel** = IntuneMAMUPN, **Wert** = <username@company.com>
 
-  Die genaue Syntax des Schlüssel-Wert-Paares kann sich basierend auf Ihrem MDM-Anbieter eines Drittanbieters unterscheiden. In der folgenden Tabelle zeigt Beispiele von MDM-Anbietern von Drittanbietern sowie die genauen Werte, die Sie für das Schlüssel-Wert-Paar eingeben müssen.
+   Die genaue Syntax des Schlüssel-Wert-Paares kann sich basierend auf Ihrem MDM-Anbieter eines Drittanbieters unterscheiden. In der folgenden Tabelle zeigt Beispiele von MDM-Anbietern von Drittanbietern sowie die genauen Werte, die Sie für das Schlüssel-Wert-Paar eingeben müssen.
 
 |MDM-Anbieter eines Drittanbieters| Konfigurationsschlüssel | Werttyp | Der Konfigurationswert|
 | ------- | ---- | ---- | ---- |

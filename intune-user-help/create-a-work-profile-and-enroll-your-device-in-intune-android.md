@@ -1,27 +1,27 @@
 ---
-title: "Registrieren Ihres Geräts mithilfe eines Arbeitsprofils | Microsoft-Dokumentation"
-description: "So verbessern Sie Android-Geräte durch Arbeitsprofile"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Registrieren Ihres Geräts mithilfe eines Arbeitsprofils | Microsoft-Dokumentation
+description: So verbessern Sie Android-Geräte durch Arbeitsprofile
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ed269de2d08cb23caa7ade4a24ad40e5d0fd8b25
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a7ab6efccf9fa00119bc2052d16b4ad8fd5b55d8
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Erstellen eines Arbeitsprofils und Registrieren Ihres Geräts bei Intune
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: eb27605108feb3a2db3072d4a8b7a296f0f74cfc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Problembehandlung beim bedingten Zugriff
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In der Regel versucht ein Benutzer, auf E-Mail oder SharePoint zuzugreifen, und wird zur Registrierung aufgefordert. Diese Aufforderung führt den Benutzer zum Unternehmensportal.
 
@@ -49,20 +49,20 @@ Diese Bedingungen können für jedes Gerät im Azure-Verwaltungsportal und im Ge
 
 ## <a name="compliance-issues"></a>Kompatibilitätsprobleme
 
- -  Das Gerät ist mit der Intune-Richtlinie nicht kompatibel. Häufige Probleme sind Verschlüsselungs- und Kennwortanforderungen. Der Benutzer wird auf das Unternehmensportal umgeleitet, wo er sein Gerät dahingehend konfigurieren kann, dass es kompatibel ist.
- -  Die Registrierung der Konformitätsinformationen für ein Gerät kann einige Zeit in Anspruch nehmen. Warten Sie einige Minuten, und versuchen Sie es erneut.
- -  Geräte unter iOS:
-     -   Ein vom Benutzer erstelltes, vorhandenes E-Mail-Profil blockiert die Bereitstellung eines Profils, das vom Intune-Administrator erstellt wurde. Das ist ein häufig auftretendes Problem, da iOS-Benutzer in der Regel ein E-Mail-Profil erstellen und anschließend die Registrierung vornehmen. Das Unternehmensportal informiert den Benutzer darüber, dass es aufgrund seines manuell konfigurierten E-Mail-Profils nicht kompatibel ist, und fordert ihn dazu auf, dieses Profil zu entfernen. Der Benutzer sollte sein E-Mail-Profil entfernen, damit das Intune-Profil bereitgestellt werden kann. Weisen Sie Ihre Benutzer an, die Registrierung ohne das Installieren eines E-Mail-Profils vorzunehmen und Intune die Bereitstellung des Profils zu erlauben, um das Problem zu vermeiden.
-     -   Ein iOS-Gerät kann beim Überprüfen der Kompatibilität hängen bleiben, wodurch verhindert wird, dass der Benutzer einen weiteren Eincheckvorgang initiiert. Dieses Problem kann durch einen Neustart des Unternehmensportals behoben werden und der Kompatibilitätsstatus spiegelt den Gerätestatus in Intune wider. Nachdem alle Daten von einer Gerätesynchronisierung erfasst wurden, erfolgt die Kompatibilitätsprüfung sehr schnell und sie benötigt im Durchschnitt weniger als eine halbe Sekunde.
+- Das Gerät ist mit der Intune-Richtlinie nicht kompatibel. Häufige Probleme sind Verschlüsselungs- und Kennwortanforderungen. Der Benutzer wird auf das Unternehmensportal umgeleitet, wo er sein Gerät dahingehend konfigurieren kann, dass es kompatibel ist.
+- Die Registrierung der Konformitätsinformationen für ein Gerät kann einige Zeit in Anspruch nehmen. Warten Sie einige Minuten, und versuchen Sie es erneut.
+- Geräte unter iOS:
+  - Ein vom Benutzer erstelltes, vorhandenes E-Mail-Profil blockiert die Bereitstellung eines Profils, das vom Intune-Administrator erstellt wurde. Das ist ein häufig auftretendes Problem, da iOS-Benutzer in der Regel ein E-Mail-Profil erstellen und anschließend die Registrierung vornehmen. Das Unternehmensportal informiert den Benutzer darüber, dass es aufgrund seines manuell konfigurierten E-Mail-Profils nicht kompatibel ist, und fordert ihn dazu auf, dieses Profil zu entfernen. Der Benutzer sollte sein E-Mail-Profil entfernen, damit das Intune-Profil bereitgestellt werden kann. Weisen Sie Ihre Benutzer an, die Registrierung ohne das Installieren eines E-Mail-Profils vorzunehmen und Intune die Bereitstellung des Profils zu erlauben, um das Problem zu vermeiden.
+  - Ein iOS-Gerät kann beim Überprüfen der Kompatibilität hängen bleiben, wodurch verhindert wird, dass der Benutzer einen weiteren Eincheckvorgang initiiert. Dieses Problem kann durch einen Neustart des Unternehmensportals behoben werden und der Kompatibilitätsstatus spiegelt den Gerätestatus in Intune wider. Nachdem alle Daten von einer Gerätesynchronisierung erfasst wurden, erfolgt die Kompatibilitätsprüfung sehr schnell und sie benötigt im Durchschnitt weniger als eine halbe Sekunde.
 
-        In der Regel verbleiben Geräte in diesem Zustand, weil sie Probleme beim Herstellen einer Verbindung mit dem Dienst haben oder die Synchronisierung lange dauert.  Tritt das Problem für verschiedene Netzwerkkonfigurationen (Mobilfunk, WLAN, VPN), nach Geräteneustarts und nach der Überprüfung, dass der SSP auf dem Gerät aktuell ist, weiterhin auf, wenden Sie sich gemäß der Beschreibung in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) an den Microsoft-Support.
+    In der Regel verbleiben Geräte in diesem Zustand, weil sie Probleme beim Herstellen einer Verbindung mit dem Dienst haben oder die Synchronisierung lange dauert.  Tritt das Problem für verschiedene Netzwerkkonfigurationen (Mobilfunk, WLAN, VPN), nach Geräteneustarts und nach der Überprüfung, dass der SSP auf dem Gerät aktuell ist, weiterhin auf, wenden Sie sich gemäß der Beschreibung in [Anfordern von Support für Microsoft Intune](how-to-get-support-for-microsoft-intune.md) an den Microsoft-Support.
 
- - Für Android-Geräte:
-    - Bestimmte Android-Geräte mögen verschlüsselt zu sein scheinen, aber die Unternehmensportal-App erkennt diese Geräte als nicht verschlüsselt. 
+- Für Android-Geräte:
+   - Bestimmte Android-Geräte mögen verschlüsselt zu sein scheinen, aber die Unternehmensportal-App erkennt diese Geräte als nicht verschlüsselt. 
     
-        -   Für Geräte in diesem Status muss der Benutzer eine sichere Startkennung festlegen. Für den Benutzer erscheint eine Benachrichtigung über die Geräte von der Unternehmensportal-App, die ihn auffordert, eine Startkennung für das Gerät festzulegen. Tippen Sie auf die Benachrichtigung über die Geräte und bestätigen Sie die vorhandene PIN oder das Kennwort, und wählen Sie dann auf dem Bildschirm **Secure start-up** (Sicherer Start) die Option **Require PIN to start device** (PIN für Start des Geräts anfordern). Tippen Sie dann auf die Schaltfläche **Check Compliance** (Kompatibilität prüfen) für das Gerät aus der Unternehmensportal-App. Das Gerät sollte nun als verschlüsselt erkannt werden.
+       -   Für Geräte in diesem Status muss der Benutzer eine sichere Startkennung festlegen. Für den Benutzer erscheint eine Benachrichtigung über die Geräte von der Unternehmensportal-App, die ihn auffordert, eine Startkennung für das Gerät festzulegen. Tippen Sie auf die Benachrichtigung über die Geräte und bestätigen Sie die vorhandene PIN oder das Kennwort, und wählen Sie dann auf dem Bildschirm **Secure start-up** (Sicherer Start) die Option **Require PIN to start device** (PIN für Start des Geräts anfordern). Tippen Sie dann auf die Schaltfläche **Check Compliance** (Kompatibilität prüfen) für das Gerät aus der Unternehmensportal-App. Das Gerät sollte nun als verschlüsselt erkannt werden.
     
-        -   Einige Gerätehersteller verschlüsseln ihre Geräte mithilfe einer Standard-PIN anstelle der geheimen PIN, die vom Benutzer festgelegt wird. Intune erkennt die Verschlüsselung über die Standard-PIN als unsicher, da diese Methode der Verschlüsselung die Daten auf dem Gerät durch böswillige Benutzer mit physischem Zugriff auf das Gerät gefährden kann. Wenn dies das Problem ist, ziehen Sie die [App-Schutzrichtlinien](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) in Betracht.
+       -   Einige Gerätehersteller verschlüsseln ihre Geräte mithilfe einer Standard-PIN anstelle der geheimen PIN, die vom Benutzer festgelegt wird. Intune erkennt die Verschlüsselung über die Standard-PIN als unsicher, da diese Methode der Verschlüsselung die Daten auf dem Gerät durch böswillige Benutzer mit physischem Zugriff auf das Gerät gefährden kann. Wenn dies das Problem ist, ziehen Sie die [App-Schutzrichtlinien](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) in Betracht.
 
 ## <a name="policy-issues"></a>Probleme mit Richtlinien
 
@@ -118,22 +118,22 @@ Wenn diese Verfahren zur Problembehandlung das Problem nicht beheben, gibt es ei
 ### <a name="exchange-connector-logs"></a>Exchange Connector-Protokolle
 
 #### <a name="general-log-information"></a>Allgemeine Protokollinformationen
-Verwenden Sie zum Anzeigen der Exchange Connector-Protokolle das [Server Trace Viewer-Tool](Server Trace Viewer-Tool (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx')). Dieses Tool erfordert, dass Sie das Windows Server-SDK herunterladen.
+Verwenden Sie zum Anzeigen der Exchange Connector-Protokolle das [Server Trace Viewer-Tool](Server Trace Viewer-Tool (<https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx>')). Dieses Tool erfordert, dass Sie das Windows Server-SDK herunterladen.
 
 >[!NOTE]
 >Die Protokolle befinden sich unter „C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs“. Die Protokolle befinden sich in einer Folge von 30 Protokolldateien, die mit *Connector0.log* beginnen und mit *Connector29.log* enden. Protokolliert Rollover von einer Datei zu einer anderen, nachdem sich 10 MB an Daten in einem Protokoll angesammelt haben. Nachdem die Protokolle zu „Connector29“ gelangt sind, wird wieder bei „Connector0“ begonnen, wobei die vorherigen Protokolldateien überschrieben werden.
 
 #### <a name="locating-sync-logs"></a>Suchen von Synchronisierungsprotokollen
 
--    Suchen Sie eine vollständige Synchronisierung in den Protokollen, indem Sie nach **full sync** suchen. Der Anfang einer vollständigen Synchronisierung wird durch den folgenden Text gekennzeichnet:
+- Suchen Sie eine vollständige Synchronisierung in den Protokollen, indem Sie nach **full sync** suchen. Der Anfang einer vollständigen Synchronisierung wird durch den folgenden Text gekennzeichnet:
 
-    „Handling command: Getting the mobile device list without a time filter (full sync) for <number> users“
+  „Handling command: Getting the mobile device list without a time filter (full sync) for <number> users“
 
-    Das Ende des Protokolls für eine vollständige Synchronisierung sieht folgendermaßen aus:
+  Das Ende des Protokolls für eine vollständige Synchronisierung sieht folgendermaßen aus:
 
-    „Getting the mobile device list without a time filter (full sync) for 4 users completed successfully.“ Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
+  „Getting the mobile device list without a time filter (full sync) for 4 users completed successfully.“ Details: Inventory command result - Devices synced: 0 Commmand ID: commandIDGUID' Exchange health: 'Server health 'Name: 'PowerShellExchangeServer: <Name=mymailservername>' Status: Connected','
 
--   Suchen Sie eine schnelle Synchronisierung (Delta) in den Protokollen, indem Sie nach **quick sync** suchen.
+- Suchen Sie eine schnelle Synchronisierung (Delta) in den Protokollen, indem Sie nach **quick sync** suchen.
 
 ##### <a name="exceptions-in-get-next-command"></a>Ausnahmen im Befehl „Get next“
 Überprüfen Sie die Exchange Connector-Protokolle auf Ausnahmen im **Befehl „Get next“**, und stellen Sie diese dem Microsoft-Support bereit.

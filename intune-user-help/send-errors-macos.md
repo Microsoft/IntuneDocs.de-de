@@ -1,27 +1,27 @@
 ---
-title: "Senden von Fehlern mit Ihrem verwalteten macOS-Gerät | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Senden von Fehlern mit Ihrem verwalteten macOS-Gerät | Microsoft-Dokumentation
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 12/07/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5c2b65f4-0e0d-4a3c-81c2-af634718023d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c0490f32629fb4ecbb6d66589c71cecce5172536
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: fa294e5df63106f949da94aec766c04839e0171f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Senden von Fehlern an die für Ihr verwaltetes macOS-Gerät zuständigen Personen
 

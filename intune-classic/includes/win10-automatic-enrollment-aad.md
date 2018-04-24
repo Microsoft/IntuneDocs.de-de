@@ -9,7 +9,7 @@ Mit der Funktion der automatischen Registrierung können Benutzer ihre Windows 1
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Konfigurieren der automatischen MDM-Registrierung
 
-1. Melden Sie sich im [Azure-Verwaltungsportal](https://portal.azure.com) (https://manage.windowsazure.com) an, und wählen Sie **Azure Active Directory** aus.
+1. Melden Sie sich beim [Azure-Verwaltungsportal ](https://portal.azure.com) an (https://manage.windowsazure.com)), und klicken Sie auf **Azure Active Directory**.
 
    ![Screenshot des Azure-Portals](../media/auto-enroll-azure-main.png)
 

@@ -1,27 +1,27 @@
 ---
-title: "Es wurde ein vorhandenes geschäftliches E-Mail-Konto gefunden | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Es wurde ein vorhandenes geschäftliches E-Mail-Konto gefunden | Microsoft-Dokumentation
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c13ad655e455ad2c4e8d18b8ae0ccb7a40b1d40c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e5e44f563e0ebfc3685c07fc7792df72dcf32a5b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Es wurde ein vorhandenes geschäftliches E-Mail-Konto gefunden
 

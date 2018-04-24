@@ -1,25 +1,25 @@
 ---
-title: "Einschließen und Ausschließen von App-Zuweisungen in Microsoft Intune"
-titlesuffix: 
-description: "Erfahren Sie, wie Sie mit Microsoft Intune App-Zuweisungen ein- und ausschließen können."
-keywords: 
+title: Einschließen und Ausschließen von App-Zuweisungen in Microsoft Intune
+titlesuffix: ''
+description: Erfahren Sie, wie Sie mit Microsoft Intune App-Zuweisungen ein- und ausschließen können.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dbe8669dc2bf448e0738147758d90ba6d2d69b06
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 93fd626d580917a3dd5bb20e7696c09c109dcc0b
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Einschließen und Ausschließen von App-Zuweisungen in Microsoft Intune
 
@@ -33,6 +33,8 @@ Wenn Sie Gruppen aus einer App-Zuweisung ausschließen, dürfen Sie nur Benutzer
 >Beim Festlegen einer Gruppenzuweisung für eine App ist der Typ **Nicht zutreffend** veraltet und wird mit der Ausschlussgruppenfunktionalität ersetzt. 
 >
 >Intune bietet die vorab erstellten Gruppen **Alle Benutzer** und **Alle Geräte** in der Konsole zur Vereinfachung mit integrierten Optimierungen an. Sie sollten diese Gruppen unbedingt anstelle möglicherweise selbst erstellter „Alle Benutzer“- oder „Alle Geräte“-Gruppen verwenden, um alle Benutzer und alle Geräte zu erreichen.  
+>
+>Android Enterprise (zuvor Android for Work) unterstützt das Einschließen und Ausschließen von Gruppen, jedoch nicht die vorab erstellte Gruppe **Alle Benutzer** und die integrierte Gruppe **Alle Geräte**.
 
 ## <a name="including-and-excluding-groups-when-assigning-apps"></a>Ein- und Ausschließen von Gruppen beim Zuweisen von Apps 
 So weisen Sie eine App Gruppen mithilfe der Ein- und Ausschlusszuweisung zu:

@@ -1,35 +1,35 @@
 ---
-title: "Hinzufügen von Android Store-Apps in Microsoft Intune"
-titleSuffix: 
-description: "Erfahren Sie mehr über das Hinzufügen von Android Store-Apps zu Microsoft Intune."
-keywords: 
+title: Hinzufügen von Android Store-Apps in Microsoft Intune
+titleSuffix: ''
+description: Erfahren Sie mehr über das Hinzufügen von Android Store-Apps zu Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87fea551dea1f80ee071fe6b477b84729e000874
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ece6edee891b147ad2124b987239da6af8e1bc8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Hinzufügen von Android Store-Apps in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bevor Sie einem Gerät oder einer Gruppe von Benutzern eine App zuweisen, müssen Sie diese zunächst zu Microsoft-Intune hinzufügen. Über die im Folgenden beschriebenen Schritte können Sie eine App aus dem Android-Store aus dem Azure-Portal zu Intune hinzufügen.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
-3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Mobile Apps**.
 4. Klicken Sie in der Workload **Mobile Apps** im Abschnitt **Verwalten** auf **Apps**.
 5. Wählen Sie über der Liste der Apps **Hinzufügen** aus.
 6. Wählen Sie im Bereich **App hinzufügen** aus den verfügbaren **Store-App**-Typen den Typ **Android** aus.
@@ -52,6 +52,6 @@ Bevor Sie einem Gerät oder einer Gruppe von Benutzern eine App zuweisen, müsse
 
 Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie den ausgewählten Gruppen zuweisen können. 
 
-##<a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 - [Zuweisen von Apps zu Gruppen](apps-deploy.md)

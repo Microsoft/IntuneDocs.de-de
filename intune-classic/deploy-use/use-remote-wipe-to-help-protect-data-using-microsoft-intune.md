@@ -1,29 +1,29 @@
 ---
-title: "Verwenden der Remotezurücksetzung zum Schützen von Daten"
-description: "Intune bietet Funktionen zum selektiven und vollständigen Zurücksetzen, um vertrauliche Unternehmensdaten und den Zugriff auf viele Unternehmensressourcen zu entfernen."
-keywords: 
+title: Verwenden der Remotezurücksetzung zum Schützen von Daten
+description: Intune bietet Funktionen zum selektiven und vollständigen Zurücksetzen, um vertrauliche Unternehmensdaten und den Zugriff auf viele Unternehmensressourcen zu entfernen.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 82c50be9a8def23fadd8d24fc7654312d5c7ca5c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Schützen von Daten durch vollständiges oder selektives Zurücksetzen mit Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Sie können Apps und Daten von Intune-verwalteten Geräten zurücksetzen, die nicht mehr benötigt werden, einem neuen Zweck zugeführt werden oder verloren gegangen sind. Zu diesem Zweck enthält Intune Funktionen zum vollständigen oder selektiven Zurücksetzen. Für private Geräte, die in Intune registriert sind, können die Benutzer über die Intune-Unternehmensportal-App einen Remotebefehl zum Zurücksetzen des Geräts erteilen.
 
@@ -40,37 +40,37 @@ Sie können Apps und Daten von Intune-verwalteten Geräten zurücksetzen, die ni
 
 ### <a name="remotely-wipe-a-device-from-the-intune-administrator-console"></a>Remotezurücksetzen eines Geräts über die Intune-Administratorkonsole
 
-1.  Wählen Sie Geräte aus, die zurückgesetzt werden sollen. Sie können diese nach Benutzer oder Gerät suchen.
+1. Wählen Sie Geräte aus, die zurückgesetzt werden sollen. Sie können diese nach Benutzer oder Gerät suchen.
 
-    -   **Nach Benutzer:**
+   - **Nach Benutzer:**
 
-        1.  Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle Benutzer**.
+     1.  Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle Benutzer**.
 
-        2.  Klicken Sie auf den Namen des Benutzers, dessen mobiles Gerät Sie zurücksetzen möchten. Klicken Sie auf **Eigenschaften anzeigen**.
+     2.  Klicken Sie auf den Namen des Benutzers, dessen mobiles Gerät Sie zurücksetzen möchten. Klicken Sie auf **Eigenschaften anzeigen**.
 
-        3.  Klicken Sie auf der Seite **Eigenschaften** des Benutzers auf **Geräte** und dann auf den Namen des mobilen Geräts, das Sie zurücksetzen möchten. Zum Auswählen mehrerer Geräte halten Sie die STRG-Taste gedrückt und klicken auf jedes gewünschte Gerät.
+     3.  Klicken Sie auf der Seite **Eigenschaften** des Benutzers auf **Geräte** und dann auf den Namen des mobilen Geräts, das Sie zurücksetzen möchten. Zum Auswählen mehrerer Geräte halten Sie die STRG-Taste gedrückt und klicken auf jedes gewünschte Gerät.
 
-    -   **Nach Gerät:**
+   - **Nach Gerät:**
 
-        1.  Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle mobilen Geräte**.
+     1. Klicken Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle mobilen Geräte**.
 
-         ![Starten eines Vorgangs zum Abkoppeln oder Zurücksetzen](../media/dev-sa-wipe.png)
+        ![Starten eines Vorgangs zum Abkoppeln oder Zurücksetzen](../media/dev-sa-wipe.png)
 
-        2.  Klicken Sie auf **Geräte** und dann auf den Namen des mobilen Geräts, das Sie zurücksetzen möchten. Zum Auswählen mehrerer Geräte halten Sie die STRG-Taste gedrückt und klicken auf jedes gewünschte Gerät.
+     2. Klicken Sie auf **Geräte** und dann auf den Namen des mobilen Geräts, das Sie zurücksetzen möchten. Zum Auswählen mehrerer Geräte halten Sie die STRG-Taste gedrückt und klicken auf jedes gewünschte Gerät.
 
-2.  Klicken Sie auf **Abkoppeln/Zurücksetzen**.
+2. Klicken Sie auf **Abkoppeln/Zurücksetzen**.
 
-3.  Sie werden in einer Bestätigungsmeldung gefragt, ob Sie das Gerät abkoppeln möchten.
+3. Sie werden in einer Bestätigungsmeldung gefragt, ob Sie das Gerät abkoppeln möchten.
 
-    -   Klicken Sie zum Ausführen einer **selektiven Zurücksetzung**, bei der nur unternehmenseigene Apps und Daten entfernt werden, auf **Ja**.
+   -   Klicken Sie zum Ausführen einer **selektiven Zurücksetzung**, bei der nur unternehmenseigene Apps und Daten entfernt werden, auf **Ja**.
 
-    -   Wählen Sie zum Ausführen einer **vollständigen Zurücksetzung**, bei der alle Apps und Daten gelöscht werden und das Gerät auf die werkseitigen Standardeinstellungen zurückgesetzt wird, die Option **Gerät vor dem Abkoppeln zurücksetzen**. Diese Aktion gilt für alle Plattformen außer Windows 8.1. **Daten, die durch ein vollständiges Zurücksetzen entfernt wurden, können nicht wiederhergestellt werden**.
+   -   Wählen Sie zum Ausführen einer **vollständigen Zurücksetzung**, bei der alle Apps und Daten gelöscht werden und das Gerät auf die werkseitigen Standardeinstellungen zurückgesetzt wird, die Option **Gerät vor dem Abkoppeln zurücksetzen**. Diese Aktion gilt für alle Plattformen außer Windows 8.1. **Daten, die durch ein vollständiges Zurücksetzen entfernt wurden, können nicht wiederhergestellt werden**.
 
 Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minuten, bis ein Befehl zum Zurücksetzen an alle Gerätetypen weitergegeben wurde.
 
 #### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>So löschen Sie Geräte im Azure Active Directory-Portal
 
-1.  Navigieren Sie zu [http://aka.ms/accessaad](http://aka.ms/accessaad), oder klicken Sie unter [https://portal.office.com](https://portal.office.com) auf **Verwaltung** &gt; **Azure AD**.
+1.  Navigieren Sie zu [http://aka.ms/accessaad](http://aka.ms/accessaad), oder wählen Sie **Administrator** &gt; **Azure AD** von [https://portal.office.com](https://portal.office.com) aus.
 
 2.  Melden Sie sich mit Ihrer Organisations-ID über den Link im linken Bereich der Seite an.
 

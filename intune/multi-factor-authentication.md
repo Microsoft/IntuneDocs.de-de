@@ -1,28 +1,28 @@
 ---
-title: "Anfordern der mehrstufigen Authentifizierung für die Intune-Geräteregistrierung"
+title: Anfordern der mehrstufigen Authentifizierung für die Intune-Geräteregistrierung
 titlesuffix: Microsoft Intune
-description: "Anfordern der mehrstufigen Authentifizierung in Azure AD für die Intune-Geräteregistrierung."
-keywords: 
+description: Anfordern der mehrstufigen Authentifizierung in Azure AD für die Intune-Geräteregistrierung.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 4dbb1b94fa7e2ebc5ce31ae00c3cb893f9e1470e
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 0941db852674d1ee775fc05edb92ff479d856d0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Erfordert mehrstufige Authentifizierung für Intune-Geräteregistrierungen
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune kann die mehrstufige Authentifizierung (MFA) von Azure AD für die Geräteregistrierung verwenden, damit Sie Ihre Unternehmensressourcen sichern können.
 

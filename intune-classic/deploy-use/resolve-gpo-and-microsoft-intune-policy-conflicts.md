@@ -1,24 +1,24 @@
 ---
-title: "Lösen von Konflikten mit Gruppenrichtlinienobjekten und Intune-Richtlinien"
-description: "Informationen zum Lösen von Konflikten zwischen Gruppenrichtlinie und Intune-Konfigurationsrichtlinien."
-keywords: 
+title: Lösen von Konflikten mit Gruppenrichtlinienobjekten und Intune-Richtlinien
+description: Informationen zum Lösen von Konflikten zwischen Gruppenrichtlinie und Intune-Konfigurationsrichtlinien.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: f6d12dd886fe475161e767e63177313a729e170d
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Lösen von Konflikten mit Gruppenrichtlinienobjekten und Microsoft Intune-Richtlinien
 

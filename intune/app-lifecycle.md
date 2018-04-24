@@ -1,28 +1,28 @@
 ---
-title: "Übersicht über den App-Lebenszyklus für Microsoft Intune"
-description: "Informationen zum Lebenszyklus von verwalteten Apps in Microsoft Intune. Der App-Lebenszyklus umfasst das Hinzufügen, Bereitstellen, Konfigurieren, und Außerkraftsetzen von Apps."
-keywords: 
+title: Übersicht über den App-Lebenszyklus für Microsoft Intune
+description: Informationen zum Lebenszyklus von verwalteten Apps in Microsoft Intune. Der App-Lebenszyklus umfasst das Hinzufügen, Bereitstellen, Konfigurieren, und Außerkraftsetzen von Apps.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: apps
-ms.openlocfilehash: 732323d1d882a256128ae731cab68656126583b2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 853873480beb5e95a195e04e251cea9975ce03b4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Übersicht über den App-Lebenszyklus in Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Der Microsoft Intune-Lebenszyklus von Apps beginnt, wenn eine App hinzugefügt wird, und durchläuft weitere Phasen, bis Sie die App entfernen. Wenn Sie verstanden haben, was in den einzelnen Phasen geschieht, verfügen Sie über sämtliche Informationen, die Sie für die ersten Schritte zur App-Verwaltung in Intune benötigen.
 

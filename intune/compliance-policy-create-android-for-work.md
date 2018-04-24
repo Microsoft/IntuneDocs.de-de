@@ -1,32 +1,32 @@
 ---
-title: "Erstellen einer Konformitätsrichtlinie für Android for Work"
+title: Erstellen einer Konformitätsrichtlinie für Android for Work
 titleSuffix: Microsoft Intune
-description: "Erstellen einer Konformitätsrichtlinie für Android for Work-Geräte in Microsoft Intune, damit Sie die Anforderungen angeben können, die ein Gerät im Hinblick auf Konformität erfüllen muss."
-keywords: 
+description: Erstellen einer Konformitätsrichtlinie für Android for Work-Geräte in Microsoft Intune, damit Sie die Anforderungen angeben können, die ein Gerät im Hinblick auf Konformität erfüllen muss.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ca31d4c83ccc6b786933080b96f66953cf1a108
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 00fa4508cdd4e74a20205ce46025b414cc0bb4cf
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Erstellen einer Gerätekonformitätsrichtlinie für Android for Work-Geräte in Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Eine Konformitätsrichtlinie für Android for Work-Geräte in Intune gibt die Regeln und Einstellungen an, die Android for Work-Geräte erfüllen müssen, um als konform angesehen zu werden. Sie können diese Richtlinien mit bedingten Zugriff verwenden, um Zugriff auf Unternehmensressourcen zu gewähren oder zu blockieren. Sie können auch Berichte zu Geräten abrufen und Maßnahmen gegen die Nichtkonformität vornehmen. Sie können Gerätekonformitätsrichtlinien für jede Plattform im Intune Azure-Portal erstellen. Weitere Informationen über Konformitätsrichtlinien und die Voraussetzungen, die vor dem Erstellen einer Konformitätsrichtlinie erfüllt werden müssen, finden Sie unter [Erste Schritte mit den Microsoft Intune-Gerätekonformitätsrichtlinien](device-compliance-get-started.md).
+Eine Konformitätsrichtlinie für Android for Work-Geräte in Intune gibt die Regeln und Einstellungen an, die Android for Work-Geräte erfüllen müssen, um als konform angesehen zu werden. Sie können diese Richtlinien mit bedingten Zugriff verwenden, um Zugriff auf Unternehmensressourcen zu gewähren oder zu blockieren. Sie können auch Berichte zu Geräten abrufen und Maßnahmen gegen die Nichtkonformität vornehmen. Erstellen Sie Gerätekonformitätsrichtlinien für jede Plattform im Intune Azure-Portal. Weitere Informationen über Konformitätsrichtlinien und die Voraussetzungen, die vor dem Erstellen einer Konformitätsrichtlinie erfüllt werden müssen, finden Sie unter [Erste Schritte mit den Microsoft Intune-Gerätekonformitätsrichtlinien](device-compliance-get-started.md).
 
 In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verwaltet werden, wenn eine Konformitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird.
 

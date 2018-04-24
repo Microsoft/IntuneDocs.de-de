@@ -1,30 +1,29 @@
 ---
-title: "Hinzufügen von iOS Store-Apps in Microsoft Intune"
-titlesuffix: 
-description: "Erfahren Sie mehr über das Hinzufügen von iOS Store-Apps in Microsoft Intune."
+title: Hinzufügen von iOS Store-Apps in Microsoft Intune
+titlesuffix: ''
+description: Erfahren Sie mehr über das Hinzufügen von iOS Store-Apps in Microsoft Intune.
 keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4bd10c4f05204d0e911a7538f5d5133e4a336320
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4eaa4b279ab98c6fe41482628937e0f2b0dc70a5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>Hinzufügen von iOS Store-Apps in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Fügen Sie mithilfe der Informationen in diesem Artikel iOS Store-Apps zu Microsoft Intune hinzu. iOS Store-Apps sind Apps, die von Intune auf einem Gerät des Benutzers installiert werden. Der Benutzer ist ein Mitarbeiter Ihres Unternehmens. iOS Store-Apps werden automatisch aktualisiert.
 
@@ -39,7 +38,7 @@ Sie können mit dieser Methode nur Apps zuweisen, die im App Store kostenlos ang
 >Die Browser Chrome und Edge werden für die Arbeit mit Microsoft Intune empfohlen.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
 4. Klicken Sie in der Workload **Mobile Apps** im Abschnitt **Verwalten** auf **Apps**.
 5. Wählen Sie rechts von dem Bereich **Apps** die Option **Hinzufügen** aus.

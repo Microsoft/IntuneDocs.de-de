@@ -13,15 +13,15 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.openlocfilehash: 026f7e4177553c8aa7fdb86fd8b24514b1ca64c9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: b8f33d1cde7ab1b35f643f49af005fdbdb560a02
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-classic-groups-in-the-azure-portal"></a>Klassische Microsoft Intune-Gruppen im Azure-Portal
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Wir haben Ihr Feedback berücksichtigt und einige Änderungen für das Arbeiten mit Gruppen in Microsoft Intune vorgenommen.
 Wenn Sie Intune über das Azure-Portal verwenden, wurden Ihre Intune-Gruppen zu Azure Active Directory-Sicherheitsgruppen migriert.

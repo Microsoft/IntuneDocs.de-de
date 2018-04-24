@@ -1,29 +1,29 @@
 ---
-title: "Anfordern von Support für Microsoft Intune"
+title: Anfordern von Support für Microsoft Intune
 titlesuffix: Microsoft Intune
-description: "Erhalten Sie online und telefonisch Support für kostenpflichtige Abonnements und Testabonnements von Microsoft Intune."
-keywords: 
+description: Erhalten Sie online und telefonisch Support für kostenpflichtige Abonnements und Testabonnements von Microsoft Intune.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5cb06625351e67bea8b467f6ab6873d258ee8175
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 5a823cfb602b4847e702d54e0d8775700b01c8e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Anfordern von Support für Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/note-for-both-portals.md)]
+[!INCLUDE [azure_portal](./includes/note-for-both-portals.md)]
 
 Microsoft bietet für Microsoft Intune Unterstützung bei allgemeinen technischen Fragen, der Vertriebsvorbereitung sowie bei Fragen zu Rechnungen und Abonnements. Der Support ist für kostenpflichtige Abonnements und für Testabonnements online und telefonisch verfügbar. Der technische Onlinesupport ist nur auf Englisch und Japanisch verfügbar. Der telefonische Support und der Support zu Abrechnungen sind in zusätzlichen Sprachen verfügbar.
 
@@ -34,7 +34,7 @@ Microsoft bietet für Microsoft Intune Unterstützung bei allgemeinen technische
 
 Als IT-Administrator können Sie ein Supportticket über das Azure-Portal erstellen, indem Sie wie folgt vorgehen:
 
-1. Melden Sie sich beim Azure-Portal (https://portal.azure.com) mit Ihren Intune-Administratoranmeldeinformationen an, wählen Sie das Symbol **?** in der oberen rechten Ecke des Portals aus, und wählen Sie dann **Hilfe und Support** aus, um zur Seite [Azure Hilfe und Support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview target=_blank) zu gelangen.
+1. Melden Sie sich im Azure-Portal (<https://portal.azure.com>) mit Ihren Intune-Administratoranmeldeinformationen an, und wählen Sie das Symbol <strong>?</strong> aus. in der oberen rechten Ecke des Portals aus, und wählen Sie dann <strong>Hilfe und Support</strong> aus, um zur Seite [Azure Hilfe und Support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) zu gelangen.
 
     ![Screenshot des Fragezeichen-Links zu Hilfe und Support im Azure-Portal mit hervorgehobenem Link „Hilfe und Support“](./media/azure-get-support.png)
 
@@ -43,34 +43,34 @@ Als IT-Administrator können Sie ein Supportticket über das Azure-Portal erstel
     ![Screenshot der Azure-Portal-Seite Hilfe und Support mit hervorgehobenem Link „Neue Supportanfrage“](./media/azure-support-ticket-link.png)
 
 3. Für die meisten Probleme mit dem technischen Support von Intune wählen Sie auf dem Blatt **Grundeinstellungen** folgende Optionen aus:
-    - **Problemtyp**: **Technical** (Technisch)
-    - **Dienst**: **Microsoft Intune**
-    - **Supportplan**: **Technischer Support – enthalten** (bei technischen Problemen mit Intune ist der Support kostenlos) oder **Premier**
+   - **Problemtyp**: **Technical** (Technisch)
+   - **Dienst**: **Microsoft Intune**
+   - **Supportplan**: **Technischer Support – enthalten** (bei technischen Problemen mit Intune ist der Support kostenlos) oder **Premier**
     
-    >[!IMPORTANT]
-    >- Wenn Sie **Premier-Kunde** sind und Ihnen **Supportplan: Premier** nicht angezeigt wird, wenden Sie sich an Ihren Technical Account Manager, um Hilfe bei der Verknüpfung Ihres Vertrags und des Mandanten zu erhalten.
-    >- Der Support für Intune und für Intune mit Configuration Manager ist kostenlos. Informationen zum Premier Support-Angebot finden Sie in der Dokumentation [Beschreibung der Dienstleistungen](https://enterprise.microsoft.com/en-us/services/services-list/) im Abschnitt 5.3.3 „Beratende Dienstleistungen“.
+     >[!IMPORTANT]
+     >- Wenn Sie **Premier-Kunde** sind und Ihnen **Supportplan: Premier** nicht angezeigt wird, wenden Sie sich an Ihren Technical Account Manager, um Hilfe bei der Verknüpfung Ihres Vertrags und des Mandanten zu erhalten.
+     >- Der Support für Intune und für Intune mit Configuration Manager ist kostenlos. Informationen zum Premier Support-Angebot finden Sie in der Dokumentation [Beschreibung der Dienstleistungen](https://enterprise.microsoft.com/en-us/services/services-list/) im Abschnitt 5.3.3 „Beratende Dienstleistungen“.
 
-    Klicken Sie auf **Weiter**, um fortzufahren.
+     Klicken Sie auf **Weiter**, um fortzufahren.
 
 4. Wählen Sie auf dem Blatt **Problem** die folgenden Optionen aus, um sicherzustellen, dass Ihre Anforderung an den richtigen Experten für Ihr Problem gerichtet wird:
 
-    - **Schweregrad**
-    - **Problemtyp**
-    - **Kategorie**
+   - **Schweregrad**
+   - **Problemtyp**
+   - **Kategorie**
 
-    Durch diese Informationen können wir auch **verwandte Hilfethemen** bereitstellen, durch die Sie Ihr Problem möglicherweise lösen können, ohne ein Ticket erstellen zu müssen.
+     Durch diese Informationen können wir auch **verwandte Hilfethemen** bereitstellen, durch die Sie Ihr Problem möglicherweise lösen können, ohne ein Ticket erstellen zu müssen.
 
-    ![Screenshot der Azure-Portal-Seite Hilfe und Support mit ausgefüllten Problemelementen und angezeigten Lösungen basierend auf Ihrem Problem](./media/support-need-solutions.png)
+     ![Screenshot der Azure-Portal-Seite Hilfe und Support mit ausgefüllten Problemelementen und angezeigten Lösungen basierend auf Ihrem Problem](./media/support-need-solutions.png)
 
-    Geben Sie die folgenden Informationen ein, um uns bei der Untersuchung und Lösung Ihres Problems zu unterstützen:
+     Geben Sie die folgenden Informationen ein, um uns bei der Untersuchung und Lösung Ihres Problems zu unterstützen:
     
-    - **Details**
-    - **Datum**
-    - **Uhrzeit**
-    - **Zusätzliche Daten**
+   - **Details**
+   - **Datum**
+   - **Uhrzeit**
+   - **Zusätzliche Daten**
 
-    Klicken Sie auf **Weiter**.
+     Klicken Sie auf **Weiter**.
 
 5. Geben Sie **Kontaktinformationen** für diese Supportanfrage an. Der Microsoft-Support verwendet diese Informationen, um Sie zu kontaktieren.
 6. Wählen Sie **Erstellen** aus, um Ihre Supportanfrage zu übermitteln.

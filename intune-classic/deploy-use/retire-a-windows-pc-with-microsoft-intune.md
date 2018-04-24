@@ -1,24 +1,24 @@
 ---
 title: Abkoppeln eines Windows-PCs
 description: Abkoppeln eines mit Intune verwalteten Windows-PCs.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5c916182-d99c-44c5-a779-3f596f261c40
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 99dc86bf20a50710cf1661702d46a3124861a619
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="retire-a-windows-pc"></a>Abkoppeln eines Windows-PCs
 

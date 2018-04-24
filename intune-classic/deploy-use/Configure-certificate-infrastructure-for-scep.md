@@ -15,36 +15,36 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37dcc2e7a11e33ff0543a3f2020331d52f5052ad
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5e7b266bcc47ae229a200f0b690429f505a59603
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Konfigurieren der Zertifikatinfrastruktur für SCEP
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In diesem Thema wird beschrieben, welche Infrastruktur Sie zum Erstellen und Bereitstellen von SCEP-Zertifikatprofilen benötigen.
 
 ### <a name="on-premises-infrastructure"></a>Lokale Infrastruktur
 
--    **Active Directory-Domäne**: Alle in diesem Abschnitt aufgeführten Server (außer dem Webanwendungsproxy-Server) müssen der Active Directory-Domäne angehören.
+- **Active Directory-Domäne**: Alle in diesem Abschnitt aufgeführten Server (außer dem Webanwendungsproxy-Server) müssen der Active Directory-Domäne angehören.
 
--  **Zertifizierungsstelle** (Certification Authority, CA): Eine Unternehmenszertifizierungsstelle, die auf einer Enterprise-Edition von Windows Server 2008 R2 oder höher ausgeführt wird. Eine eigenständige Zertifizierungsstelle wird nicht unterstützt. Anleitungen zum Einrichten einer Zertifizierungsstelle finden Sie unter [Installieren der Zertifizierungsstelle](http://technet.microsoft.com/library/jj125375.aspx).
-    Wenn die Zertifizierungsstelle unter Windows Server 2008 R2 ausgeführt wird, müssen Sie [den Hotfix von KB2483564 installieren](http://support.microsoft.com/kb/2483564/).
-I
--  **NDES-Server**: Auf einem Server mit Windows Server 2012 R2 oder höher müssen Sie den Registrierungsdienst für Netzwerkgeräte (Network Device Enrollment Service, NDES) einrichten. Intune unterstützt die Verwendung von NDES nicht, wenn es auf einem Server ausgeführt wird, der auch die Unternehmenszertifizierungsstelle ausführt. Im [Leitfaden für den Registrierungsdienst für Netzwerkgeräte](http://technet.microsoft.com/library/hh831498.aspx) finden Sie Anweisungen zum Konfigurieren von Windows Server 2012 R2 als Host für den Registrierungsdienst für Netzwerkgeräte (NDES). Der NDES-Server muss in die Domäne eingebunden werden, die die Zertifizierungsstelle hostet, er darf sich aber nicht auf dem gleichen Server befinden wie die Zertifizierungsstelle. Weitere Informationen zum Bereitstellen des NDES-Servers in einer separaten Gesamtstruktur, in einem isolierten Netzwerk oder in einer internen Domäne finden Sie unter [Verwenden eines Richtlinienmoduls mit dem Registrierungsdienst für Netzwerkgeräte](https://technet.microsoft.com/library/dn473016.aspx).
+- **Zertifizierungsstelle** (Certification Authority, CA): Eine Unternehmenszertifizierungsstelle, die auf einer Enterprise-Edition von Windows Server 2008 R2 oder höher ausgeführt wird. Eine eigenständige Zertifizierungsstelle wird nicht unterstützt. Anleitungen zum Einrichten einer Zertifizierungsstelle finden Sie unter [Installieren der Zertifizierungsstelle](http://technet.microsoft.com/library/jj125375.aspx).
+   Wenn die Zertifizierungsstelle unter Windows Server 2008 R2 ausgeführt wird, müssen Sie [den Hotfix von KB2483564 installieren](http://support.microsoft.com/kb/2483564/).
+  I
+- **NDES-Server**: Auf einem Server mit Windows Server 2012 R2 oder höher müssen Sie den Registrierungsdienst für Netzwerkgeräte (Network Device Enrollment Service, NDES) einrichten. Intune unterstützt die Verwendung von NDES nicht, wenn es auf einem Server ausgeführt wird, der auch die Unternehmenszertifizierungsstelle ausführt. Im [Leitfaden für den Registrierungsdienst für Netzwerkgeräte](http://technet.microsoft.com/library/hh831498.aspx) finden Sie Anweisungen zum Konfigurieren von Windows Server 2012 R2 als Host für den Registrierungsdienst für Netzwerkgeräte (NDES). Der NDES-Server muss in die Domäne eingebunden werden, die die Zertifizierungsstelle hostet, er darf sich aber nicht auf dem gleichen Server befinden wie die Zertifizierungsstelle. Weitere Informationen zum Bereitstellen des NDES-Servers in einer separaten Gesamtstruktur, in einem isolierten Netzwerk oder in einer internen Domäne finden Sie unter [Verwenden eines Richtlinienmoduls mit dem Registrierungsdienst für Netzwerkgeräte](https://technet.microsoft.com/library/dn473016.aspx).
 
--  **Microsoft Intune-Zertifikatconnector**: Sie verwenden die Intune-Verwaltungskonsole zum Herunterladen des Installationsprogramms für den **Zertifikatconnector** (**ndesconnectorssetup.exe**). Führen Sie **ndesconnectorssetup.exe** dann auf dem Computer aus, auf dem Sie den Zertifikatconnector installieren möchten.
--  **Webanwendungsproxy-Server** (optional): Sie können einen Server mit Windows Server 2012 R2 oder höher als Webanwendungsproxy-Server (WAP) verwenden. Diese Konfiguration:
-    -  ermöglicht Geräten das Empfangen von Zertifikaten über eine Internetverbindung,
-    -  ist eine Sicherheitsempfehlung, wenn Geräte eine Verbindung über das Internet herstellen, um Zertifikate zu empfangen oder zu erneuern.
+- **Microsoft Intune-Zertifikatconnector**: Sie verwenden die Intune-Verwaltungskonsole zum Herunterladen des Installationsprogramms für den **Zertifikatconnector** (**ndesconnectorssetup.exe**). Führen Sie **ndesconnectorssetup.exe** dann auf dem Computer aus, auf dem Sie den Zertifikatconnector installieren möchten.
+- **Webanwendungsproxy-Server** (optional): Sie können einen Server mit Windows Server 2012 R2 oder höher als Webanwendungsproxy-Server (WAP) verwenden. Diese Konfiguration:
+   -  ermöglicht Geräten das Empfangen von Zertifikaten über eine Internetverbindung,
+   -  ist eine Sicherheitsempfehlung, wenn Geräte eine Verbindung über das Internet herstellen, um Zertifikate zu empfangen oder zu erneuern.
 
- > [!NOTE]           
-> -    Auf dem Server, der den WAP hostet, [muss ein Update installiert werden](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) , das die Unterstützung für lange URLs aktiviert, die vom Registrierungsdienst für Netzwerkgeräte verwendet werden. Dieses Update ist im [Updaterollup vom Dezember 2014](https://support.microsoft.com/kb/3013769)enthalten oder kann auch einzeln von [KB3011135](https://support.microsoft.com/kb/3011135)heruntergeladen werden.
->-  Zudem muss der Server, der WAP hostet, über ein SSL-Zertifikat verfügen, das mit dem Namen übereinstimmt, der für externe Clients veröffentlicht wird. Ferner muss der Server dem SSL-Zertifikat vertrauen, das auf dem NDES-Server verwendet wird. Diese Zertifikate ermöglichen dem WAP-Server, die SSL-Verbindung von Clients zu beenden und eine neue SSL-Verbindung mit dem NDES-Server herzustellen.
-    Weitere Informationen über Zertifikate für WAP finden Sie im Abschnitt **Planen von Zertifikaten** des Themas [Installieren und Konfigurieren des Webanwendungsproxys für die Veröffentlichung interner Anwendungen](https://technet.microsoft.com/library/dn383650.aspx). Allgemeine Informationen zu WAP-Servern finden Sie unter [Verwenden des Webanwendungsproxys](http://technet.microsoft.com/library/dn584113.aspx).|
+  > [!NOTE]           
+  > -    Auf dem Server, der den WAP hostet, [muss ein Update installiert werden](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) , das die Unterstützung für lange URLs aktiviert, die vom Registrierungsdienst für Netzwerkgeräte verwendet werden. Dieses Update ist im [Updaterollup vom Dezember 2014](https://support.microsoft.com/kb/3013769)enthalten oder kann auch einzeln von [KB3011135](https://support.microsoft.com/kb/3011135)heruntergeladen werden.
+  >-  Zudem muss der Server, der WAP hostet, über ein SSL-Zertifikat verfügen, das mit dem Namen übereinstimmt, der für externe Clients veröffentlicht wird. Ferner muss der Server dem SSL-Zertifikat vertrauen, das auf dem NDES-Server verwendet wird. Diese Zertifikate ermöglichen dem WAP-Server, die SSL-Verbindung von Clients zu beenden und eine neue SSL-Verbindung mit dem NDES-Server herzustellen.
+   Weitere Informationen über Zertifikate für WAP finden Sie im Abschnitt **Planen von Zertifikaten** des Themas [Installieren und Konfigurieren des Webanwendungsproxys für die Veröffentlichung interner Anwendungen](https://technet.microsoft.com/library/dn383650.aspx). Allgemeine Informationen zu WAP-Servern finden Sie unter [Verwenden des Webanwendungsproxys](http://technet.microsoft.com/library/dn584113.aspx).|
 
 ### <a name="network-requirements"></a>Netzwerkanforderungen
 
@@ -126,18 +126,18 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 Hier sehen Sie einige Screenshots für eine Beispielkonfiguration:
 
-![Vorlage, Registerkarte „Anforderungsverarbeitung“](..\media\scep_ndes_request_handling.png)
+![Vorlage, Registerkarte „Anforderungsverarbeitung“](../media/scep_ndes_request_handling.png)
 
-![Vorlage, Registerkarte „Antragstellername“](..\media\scep_ndes_subject_name.jpg)
+![Vorlage, Registerkarte „Antragstellername“](../media/scep_ndes_subject_name.jpg)
 
-![Vorlage, Registerkarte „Sicherheit“](..\media\scep_ndes_security.jpg)
+![Vorlage, Registerkarte „Sicherheit“](../media/scep_ndes_security.jpg)
 
-![Vorlage, Registerkarte „Erweiterungen“](..\media\scep_ndes_extensions.jpg)
+![Vorlage, Registerkarte „Erweiterungen“](../media/scep_ndes_extensions.jpg)
 
-![Vorlage, Registerkarte „Ausstellungsvoraussetzungen“](..\media\scep_ndes_issuance_reqs.jpg)
+![Vorlage, Registerkarte „Ausstellungsvoraussetzungen“](../media/scep_ndes_issuance_reqs.jpg)
 
->   [!IMPORTANT]
-    > Fügen Sie für „Anwendungsrichtlinien“ (im vierten Screenshot) nur die erforderlichen Anwendungsrichtlinien hinzu. Sprechen Sie die auszuwählenden Optionen mit Ihren Sicherheitsadministratoren ab.
+> [!IMPORTANT]
+> Fügen Sie für „Anwendungsrichtlinien“ (im vierten Screenshot) nur die erforderlichen Anwendungsrichtlinien hinzu. Sprechen Sie die auszuwählenden Optionen mit Ihren Sicherheitsadministratoren ab.
 
 
 
@@ -167,28 +167,28 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 
 
-   1.  Auf dem Server, der NDES hosten soll, müssen Sie sich als **Unternehmensadministrator**anmelden und dann den [Assistenten zum Hinzufügen von Rollen und Features](https://technet.microsoft.com/library/hh831809.aspx) zum Installieren von NDES verwenden:
+1. Auf dem Server, der NDES hosten soll, müssen Sie sich als **Unternehmensadministrator**anmelden und dann den [Assistenten zum Hinzufügen von Rollen und Features](https://technet.microsoft.com/library/hh831809.aspx) zum Installieren von NDES verwenden:
 
-    1.  Wählen Sie im Assistenten die Option **Active Directory-Zertifikatdienste** , um Zugriff auf die Rollendienste der AD-Zertifikatdienste zu erhalten. Wählen Sie die Option **Registrierungsdienst für Netzwerkgeräte**, deaktivieren Sie die Option **Zertifizierungsstelle**, und schließen Sie den Assistenten dann ab.
+   1. Wählen Sie im Assistenten die Option **Active Directory-Zertifikatdienste** , um Zugriff auf die Rollendienste der AD-Zertifikatdienste zu erhalten. Wählen Sie die Option **Registrierungsdienst für Netzwerkgeräte**, deaktivieren Sie die Option **Zertifizierungsstelle**, und schließen Sie den Assistenten dann ab.
 
-        > [!TIP]
-        > Klicken Sie auf der Seite **Installationsvorgang** des Assistenten nicht auf **Schließen**. Klicken Sie stattdessen auf den Link **Active Directory-Zertifikatdienste auf dem Zielserver konfigurieren**. Daraufhin wird der Assistent zur **AD CS-Konfiguration** geöffnet, den Sie für die nächste Aufgabe verwenden. Nachdem der Assistent für die AD CS-Konfiguration geöffnet wurde, können Sie den Assistenten zum Hinzufügen von Rollen und Features schließen.
+      > [!TIP]
+      > Klicken Sie auf der Seite **Installationsvorgang** des Assistenten nicht auf **Schließen**. Klicken Sie stattdessen auf den Link **Active Directory-Zertifikatdienste auf dem Zielserver konfigurieren**. Daraufhin wird der Assistent zur **AD CS-Konfiguration** geöffnet, den Sie für die nächste Aufgabe verwenden. Nachdem der Assistent für die AD CS-Konfiguration geöffnet wurde, können Sie den Assistenten zum Hinzufügen von Rollen und Features schließen.
 
-    2.  Wenn NDES zum Server hinzugefügt wird, installiert der Assistent ebenfalls IIS. Stellen Sie sicher, dass IIS wie folgt konfiguriert ist:
+   2. Wenn NDES zum Server hinzugefügt wird, installiert der Assistent ebenfalls IIS. Stellen Sie sicher, dass IIS wie folgt konfiguriert ist:
 
-        -   **Webserver** &gt; **Sicherheit** &gt; **Anforderungsfilterung**
+      -   **Webserver** &gt; **Sicherheit** &gt; **Anforderungsfilterung**
 
-        -   **Webserver** &gt; **Anwendungsentwicklung** &gt;  **ASP.NET 3.5**. Bei der Installation von ASP.NET 3,5 wird .NET Framework 3,5 installiert. Installieren Sie bei Installation von .NET Framework 3.5 sowohl das Feature **.NET Framework 3.5** als auch die **HTTP-Aktivierung**.
+      -   **Webserver** &gt; **Anwendungsentwicklung** &gt;  **ASP.NET 3.5**. Bei der Installation von ASP.NET 3,5 wird .NET Framework 3,5 installiert. Installieren Sie bei Installation von .NET Framework 3.5 sowohl das Feature **.NET Framework 3.5** als auch die **HTTP-Aktivierung**.
 
-        -   **Webserver** &gt; **Anwendungsentwicklung** &gt; **ASP.NET 4.5**. Bei der Installation von ASP.NET 4.5 wird .NET Framework 4.5 installiert. Installieren Sie bei der Installation von .NET Framework 4.5 das Kernfeature **.NET Framework 4.5**, das Feature **ASP.NET 4.5** und das Feature **WCF-Dienste** &gt; **HTTP-Aktivierung**.
+      -   **Webserver** &gt; **Anwendungsentwicklung** &gt; **ASP.NET 4.5**. Bei der Installation von ASP.NET 4.5 wird .NET Framework 4.5 installiert. Installieren Sie bei der Installation von .NET Framework 4.5 das Kernfeature **.NET Framework 4.5**, das Feature **ASP.NET 4.5** und das Feature **WCF-Dienste** &gt; **HTTP-Aktivierung**.
 
-        -   **Verwaltungstools** &gt; **IIS 6-Verwaltungskompatibilität** &gt; **IIS 6-Metabasiskompatibilität**
+      -   **Verwaltungstools** &gt; **IIS 6-Verwaltungskompatibilität** &gt; **IIS 6-Metabasiskompatibilität**
 
-        -   **Verwaltungstools** &gt; **IIS 6-Verwaltungskompatibilität** &gt; **IIS 6-WMI-Kompatibilität**
+      -   **Verwaltungstools** &gt; **IIS 6-Verwaltungskompatibilität** &gt; **IIS 6-WMI-Kompatibilität**
 
-  2.  Fügen Sie auf dem Server das NDES-Dienstkonto als Mitglied der Gruppe **IIS_IUSR** hinzu.
+   3. Fügen Sie auf dem Server das NDES-Dienstkonto als Mitglied der Gruppe **IIS_IUSR** hinzu.
 
-   3.  Führen Sie in einer Eingabeaufforderung mit erhöhten Rechten den folgenden Befehl aus, um den SPN (Service Principal Name, Dienstprinzipalname) des NDES-Dienstkontos festzulegen:
+2. Führen Sie in einer Eingabeaufforderung mit erhöhten Rechten den folgenden Befehl aus, um den SPN (Service Principal Name, Dienstprinzipalname) des NDES-Dienstkontos festzulegen:
 
 `**setspn -s http/&lt;DNS name of NDES Server&gt; &lt;Domain name&gt;\&lt;NDES Service account name&gt;**`
 
@@ -207,33 +207,35 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 ##### <a name="to-configure-ndes-for-use-with-intune"></a>So konfigurieren Sie NDES für die Verwendung mit Intune
 
-1.  Öffnen Sie auf dem NDES-Server den AD CS-Konfigurations-Assistenten, und nehmen Sie dann die folgenden Konfigurationen vor.
+1. Öffnen Sie auf dem NDES-Server den AD CS-Konfigurations-Assistenten, und nehmen Sie dann die folgenden Konfigurationen vor.
 
-    > [!TIP]
-    > Dieser Assistent ist bereits geöffnet, wenn Sie in der vorherigen Aufgabe auf den Link geklickt haben. Andernfalls öffnen Sie den Server-Manager, um auf die Konfiguration nach der Bereitstellung der Active Directory-Zertifikatdienste zuzugreifen.
+   > [!TIP]
+   > Dieser Assistent ist bereits geöffnet, wenn Sie in der vorherigen Aufgabe auf den Link geklickt haben. Andernfalls öffnen Sie den Server-Manager, um auf die Konfiguration nach der Bereitstellung der Active Directory-Zertifikatdienste zuzugreifen.
 
-    -   Wählen Sie auf der Seite **Rollendienste** die Option **Registrierungsdienst für Netzwerkgeräte**.
+   -   Wählen Sie auf der Seite **Rollendienste** die Option **Registrierungsdienst für Netzwerkgeräte**.
 
-    -   Geben Sie auf der Seite **Dienstkonto für NDES** das NDES-Dienstkonto an.
+   -   Geben Sie auf der Seite **Dienstkonto für NDES** das NDES-Dienstkonto an.
 
-    -   Klicken Sie auf der Seite **ZS für NDES** auf **Auswählen**, und wählen Sie dann die ausstellende Zertifizierungsstelle aus, auf der Sie die Zertifikatvorlage konfiguriert haben.
+   -   Klicken Sie auf der Seite **ZS für NDES** auf **Auswählen**, und wählen Sie dann die ausstellende Zertifizierungsstelle aus, auf der Sie die Zertifikatvorlage konfiguriert haben.
 
-    -   Legen Sie auf der Seite **Kryptografie für NDES** die Schlüssellänge entsprechend den Anforderungen Ihres Unternehmens fest.
+   -   Legen Sie auf der Seite **Kryptografie für NDES** die Schlüssellänge entsprechend den Anforderungen Ihres Unternehmens fest.
 
-    Klicken Sie auf der Seite **Bestätigung** auf **Konfigurieren** , um den Assistenten zu beenden.
+   Klicken Sie auf der Seite **Bestätigung** auf **Konfigurieren** , um den Assistenten zu beenden.
 
-2.  Bearbeiten Sie nach Beendigung des Assistenten den folgenden Registrierungsschlüssel auf dem NDES-Server:
+2. Bearbeiten Sie nach Beendigung des Assistenten den folgenden Registrierungsschlüssel auf dem NDES-Server:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\**
+   - <strong>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\</strong>
 
-    Um diesen Schlüssel zu bearbeiten, ermitteln Sie den **Zweck** der Zertifikatvorlage, wie auf der entsprechenden Registerkarte **Anforderungsverarbeitung** aufgeführt, und bearbeiten Sie dann den zugehörigen Eintrag in der Registrierung. Ersetzen Sie hierzu die vorhandenen Daten durch den Namen der Zertifikatvorlage (nicht den Anzeigenamen der Vorlage), den Sie in Aufgabe 1 festgelegt haben. In der folgenden Tabelle ist der Zertifikatvorlagenzweck den Werten in der Registrierung zugeordnet:
+   Um diesen Schlüssel zu bearbeiten, ermitteln Sie den **Zweck** der Zertifikatvorlage, wie auf der entsprechenden Registerkarte **Anforderungsverarbeitung** aufgeführt, und bearbeiten Sie dann den zugehörigen Eintrag in der Registrierung. Ersetzen Sie hierzu die vorhandenen Daten durch den Namen der Zertifikatvorlage (nicht den Anzeigenamen der Vorlage), den Sie in Aufgabe 1 festgelegt haben. In der folgenden Tabelle ist der Zertifikatvorlagenzweck den Werten in der Registrierung zugeordnet:
 
-    |Zertifikatvorlagenzweck (auf der Registerkarte „Anforderungsverarbeitung“)|Zu bearbeitender Registrierungswert|In der Intune-Verwaltungskonsole für das SCEP-Profil angezeigter Wert|
-    |--------------------------------------------------------------|--------------------------|------------------------------------------------------------------------------------------------------------|
-    |Signatur|SignatureTemplate|Digitale Signatur|
-    |Verschlüsselung|EncryptionTemplate|Schlüsselverschlüsselung|
-    |Signatur und Verschlüsselung|GeneralPurposeTemplate|Schlüsselverschlüsselung<br /><br />Digitale Signatur|
-    Wenn der Zweck der Zertifizierungsvorlage zum Beispiel **Verschlüsselung**ist, bearbeiten Sie den Wert **EncryptionTemplate** so, dass er dem Namen der Zertifikatvorlage entspricht.
+
+   | Zertifikatvorlagenzweck (auf der Registerkarte „Anforderungsverarbeitung“) | Zu bearbeitender Registrierungswert | In der Intune-Verwaltungskonsole für das SCEP-Profil angezeigter Wert |
+   |------------------------------------------------------------|------------------------|-------------------------------------------------------------|
+   |                         Signatur                          |   SignatureTemplate    |                      Digitale Signatur                      |
+   |                         Verschlüsselung                         |   EncryptionTemplate   |                      Schlüsselverschlüsselung                       |
+   |                  Signatur und Verschlüsselung                  | GeneralPurposeTemplate |        Schlüsselverschlüsselung<br /><br />Digitale Signatur        |
+
+   Wenn der Zweck der Zertifizierungsvorlage zum Beispiel **Verschlüsselung**ist, bearbeiten Sie den Wert **EncryptionTemplate** so, dass er dem Namen der Zertifikatvorlage entspricht.
 
 3. Der NDES-Server empfängt sehr lange URLs (Anfragen). Deshalb müssen Sie zwei Registrierungseinträge hinzufügen:
 
@@ -245,12 +247,12 @@ Im Rahmen dieser Aufgabe führen Sie die folgenden Aktionen aus:
 
 4. Wählen Sie im IIS-Manager **Standardwebsite** -> **Anforderungsfilterung** -> **Featureeinstellungen bearbeiten** aus, und ändern Sie die **Maximale URL-Länge** und die **Maximale Länge einer Abfragezeichenfolge** in *65534*, wie abgebildet.
 
-    ![Maximale Länge für URL und Abfragezeichenfolge in IIS](..\media\SCEP_IIS_max_URL.png)
+    ![Maximale Länge für URL und Abfragezeichenfolge in IIS](../media/SCEP_IIS_max_URL.png)
 
-5.  Starten Sie den Server neu. Das Ausführen von **iisreset** auf dem Server reicht nicht aus, um diese Änderungen zu finalisieren.
-6. Navigieren Sie zu http://*FQDN*/certsrv/mscep/mscep.dll. Eine NDES-Seite wird angezeigt, die der Folgenden ähnelt:
+5. Starten Sie den Server neu. Das Ausführen von **iisreset** auf dem Server reicht nicht aus, um diese Änderungen zu finalisieren.
+6. Navigieren Sie zu http://<em>FQDN</em>/certsrv/mscep/mscep.dll. Eine NDES-Seite wird angezeigt, die der Folgenden ähnelt:
 
-    ![Testen von NDES](..\media\SCEP_NDES_URL.png)
+    ![Testen von NDES](../media/SCEP_NDES_URL.png)
 
     Wenn Sie die Meldung **503 – Dienst nicht verfügbar** erhalten, überprüfen Sie die Ereignisanzeige. Wahrscheinlich wurde der Anwendungspool beendet, weil eine notwendige Berechtigung für den NDES-Benutzer fehlt. Die entsprechenden Berechtigungen sind in Aufgabe 1 beschrieben.
 

@@ -1,27 +1,27 @@
 ---
-title: "Verwenden verwalteter Apps auf Ihrem iOS-Gerät | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Verwenden verwalteter Apps auf Ihrem iOS-Gerät | Microsoft-Dokumentation
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 07/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 988754f8bf5058c7c68950f048fa0cadb9f8d840
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 506b2e50333be9f284b7709fc2a57693330ff7a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Verwenden verwalteter Apps auf Ihrem iOS-Gerät
 

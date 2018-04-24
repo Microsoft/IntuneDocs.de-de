@@ -15,16 +15,16 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd9915f3120e2fee2b487fbfff0d775a9d50ef8a
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 848f76f61ebf85201af18ab019d0546e48fcaa41
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Der iOS-App-Store bietet die Möglichkeit, mehrere Lizenzen für eine App zu erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Durch den Erwerb mehrerer Kopien können Sie Apps in Ihrem Unternehmen effizient verwalten.
 
@@ -152,6 +152,17 @@ Um die Lizenz aller VPP-Apps für ein bestimmtes VPP-Token zu widerrufen, müsse
 ## <a name="further-information"></a>Weitere Informationen
 
 Wenn ein Benutzer mit einem geeigneten Gerät erstmals versucht, eine VPP-App auf einem Gerät zu installieren, wird er aufgefordert, am Volume Purchase Program (VPP) von Apple teilzunehmen. Die Teilnahme muss erfolgen, bevor die App-Installation fortgesetzt wird. Die Einladung, am Apple Volume Purchase Program teilzunehmen, erfordert, dass der Benutzer die iTunes-App auf dem iOS-Gerät verwenden kann. Wenn Sie eine Richtlinie aufgestellt haben, um die iTunes Store-App zu deaktivieren, funktioniert die benutzerbasierte Lizenzierung für VPP-Apps nicht. Die Lösung besteht darin, die iTunes-App durch Entfernen der Richtlinie zuzulassen oder die gerätebasierte Lizenzierung zu verwenden.
+
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
+
+#### <a name="how-long-does-the-portal-take-to-update-the-license-count-once-an-app-is-installed-or-removed-from-the-device"></a>Wie lange dauert es, bis das Portal die Anzahl der Lizenzen aktualisiert hat, nachdem eine App auf dem Gerät installiert bzw. von diesem entfernt wurde?
+Die Lizenz sollte innerhalb weniger Stunden aktualisiert werden, nachdem eine App (de-)installiert wurde. Beachten Sie, dass die Lizenz immer noch dem Endbenutzer des Geräts zugewiesen ist, wenn dieser die App von dem Gerät entfernt.
+
+#### <a name="is-it-possible-to-oversubscribe-an-app-and-if-so-in-what-circumstance"></a>Können Apps zu viele Abonnements zugewiesen werden, und wenn ja, wie?
+Ja. Der Intune-Administrator kann einer App zu viele Abonnements zuweisen. Dies ist z.B der Fall, wenn der Administrator 100 Lizenzen für die App XYZ erwirbt und dann die App einer Gruppe zuweist, die aus 500 Mitgliedern besteht. Den ersten 100 Mitgliedern (Benutzer oder Geräte) werden dann Lizenzen zugewiesen, den übrigen Mitgliedern hingegen nicht.
+
+#### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>Stimmt es, dass Intune App-Lizenzen automatisch mit Apple synchronisiert?
+Intune synchronisiert App-Lizenzen alle 15 Stunden mit Apple.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -1,27 +1,27 @@
 ---
-title: "Upgraden von Windows 10-Geräten mit Microsoft Intune: Azure | Microsoft-Dokumentation"
-description: "Erstellen eines Geräteprofils in Microsoft Intune zum Upgraden von Windows 10-Geräten auf neuere Versionen Sie erhalten auch Informationen zu unterstützten Upgradepfaden für Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic und Mobile."
-keywords: 
+title: 'Upgraden von Windows 10-Geräten mit Microsoft Intune: Azure | Microsoft-Dokumentation'
+description: Erstellen eines Geräteprofils in Microsoft Intune zum Upgraden von Windows 10-Geräten auf neuere Versionen Sie erhalten auch Informationen zu unterstützten Upgradepfaden für Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic und Mobile.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8084f1b2fbd513de596bd97f4ffec995b6f7aac4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 994ab8e7d955d18b293e4d9e9661e0c44baaaa1f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>Konfigurieren des Windows 10-Editionsupgradeprofils in Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Konfigurieren Sie ein Upgradeprofil in Intune, um automatisch für Windows 10-Geräte ein Upgrade auf eine andere Edition durchzuführen. Vgl. außerdem die unterstützten Upgradepfade.
 
@@ -122,16 +122,16 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Erstellen von Geräteprofilen mit Einstellungen für Geräteeinschränkungen
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie auf **Microsoft Intune**.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
 3. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 4. Geben Sie für das Editionsupgradeprofil einen **Namen** und eine **Beschreibung** ein.
 5. Wählen Sie in der Dropdownliste **Plattform** die Option **Windows 10 und höher** aus.
 6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Editionsupgrade** aus.
 7. Geben Sie in den Eigenschaften **Editionsupgrade** die folgenden Einstellungen an:
-  - **Edition, auf die ein Upgrade durchgeführt wird:** Wählen Sie aus der Dropdownliste die Version von Windows 10 Desktop, Windows 10 Holographic oder Windows 10 Mobile aus, auf die die als Ziel angegebenen Geräte upgegradet werden sollen.
-  - **Product Key:** Geben Sie den Product Key ein, den Sie von Microsoft erhalten haben, und der für das Upgrade aller als Ziel festgelegten Windows 10 Desktop-Geräte verwendet werden kann. 
+   - **Edition, auf die ein Upgrade durchgeführt wird:** Wählen Sie aus der Dropdownliste die Version von Windows 10 Desktop, Windows 10 Holographic oder Windows 10 Mobile aus, auf die die als Ziel angegebenen Geräte upgegradet werden sollen.
+   - **Product Key:** Geben Sie den Product Key ein, den Sie von Microsoft erhalten haben, und der für das Upgrade aller als Ziel festgelegten Windows 10 Desktop-Geräte verwendet werden kann. 
     Nach dem Erstellen einer Richtlinie mit einem Product Key kann dieser nicht aktualisiert werden und wird aus Sicherheitsgründen ausgeblendet. Geben Sie den gesamten Schlüssel erneut ein, um den Product Key zu ändern.
-  - **Lizenzdatei:** Klicken Sie auf **Durchsuchen**, um die Lizenzdatei auszuwählen, die Sie von Microsoft erhalten haben. Diese Lizenzdatei enthält Lizenzinformationen zu den Editionen Windows Holographic oder Windows 10 Mobile, auf die die als Ziel angegebenen Geräte upgegradet werden sollen.
+   - **Lizenzdatei:** Klicken Sie auf **Durchsuchen**, um die Lizenzdatei auszuwählen, die Sie von Microsoft erhalten haben. Diese Lizenzdatei enthält Lizenzinformationen zu den Editionen Windows Holographic oder Windows 10 Mobile, auf die die als Ziel angegebenen Geräte upgegradet werden sollen.
 8. Wenn Sie diese Vorgänge abgeschlossen haben, klicken Sie auf **Erstellen**, um die Änderungen zu speichern.
 
 Das Profil wird erstellt und in der Profilliste aufgeführt.

@@ -1,26 +1,26 @@
 ---
-title: "Behandeln häufig auftretender Probleme mit Ihrem Windows-Gerät | Microsoft-Dokumentation"
-description: "Lösungen für häufig auftretende Probleme mit Ihrem Windows-Gerät."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Behandeln häufig auftretender Probleme mit Ihrem Windows-Gerät | Microsoft-Dokumentation
+description: Lösungen für häufig auftretende Probleme mit Ihrem Windows-Gerät.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 48644443-ff50-4af1-9c23-443e6e5c3b47
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 2740c820ffe25895d1065f41d7ad6f983f98125a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 727889a2e3946372414151593e8433315e82e76b
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Behandeln häufig auftretender Probleme mit Ihrem Windows-Gerät
 

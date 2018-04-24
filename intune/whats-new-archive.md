@@ -1,5 +1,5 @@
 ---
-title: Neuerungen in den vorherigen Monaten in Microsoft Intune
+title: Neuerungen in den vorherigen Monaten in Microsoft Intune – Azure | Microsoft-Dokumentation
 titlesuffix: ''
 description: Überprüfen Sie ältere Ankündigungen auf der Intune-Seite mit den Neuerungen
 keywords: ''
@@ -16,15 +16,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2326078f57abf3101869b463aca8eba55aad2905
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: d87cf0a56a6b114a210242691d0441882c186964
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Neuerungen in Microsoft Intune (vorherige Monate)
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="october-2017"></a>Oktober 2017
 
@@ -570,7 +570,7 @@ Weitere Informationen finden Sie unter [Einstellungen für Geräteeinschränkung
 Wir haben neue [Einstellungen zur Windows-Geräteeinschränkung](device-restrictions-windows-10.md) hinzugefügt, die Features wie drahtlose Anzeigen, Geräteerkennung, Programmumschaltung und Fehlermeldungen von SIM-Karten steuern.
 
 #### <a name="updates-to-certificate-configuration----918991-and-823198---"></a>Änderungen an der Zertifikatkonfiguration <!-- 918991 and 823198 -->
-Beim Erstellen eines SCEP-Zertifikatprofils für **Format des Antragstellernamens** steht die Option **Benutzerdefiniert** für iOS-, Android- und Windows-Geräte zur Verfügung. Vor dieser Aktualisierung war das Feld **Benutzerdefiniert** nur für iOS-Geräte verfügbar. Weitere Informationen finden Sie unter [How to create a SCEP certificate profile] (certificates-scep-configure.md#how-to-create-a-scep-certificate-profile) [Gewusst wie: Erstellen eines SCEP-Zertifikatprofils].
+Beim Erstellen eines SCEP-Zertifikatprofils für <strong>Format des Antragstellernamens</strong> steht die Option <strong>Benutzerdefiniert</strong> für iOS-, Android- und Windows-Geräte zur Verfügung. Vor dieser Aktualisierung war das Feld <strong>Benutzerdefiniert</strong> nur für iOS-Geräte verfügbar. Weitere Informationen finden Sie unter [Erstellen eines SCEP-Zertifikatprofils](certificates-scep-configure.md#create-a-scep-certificate-profile).
 
 Beim Erstellen eines SCEP-Zertifikatprofils für **Alternativer Antragstellername** steht die Option **Benutzerdefiniertes Azure AD-Attribut** zur Verfügung. Die Option **Abteilung** ist verfügbar, wenn Sie **Benutzerdefiniertes Azure AD-Attribut** auswählen. Weitere Informationen finden Sie unter [Erstellen eines PKCS-Zertifikatprofils](certficates-pfx-configure.md#create-a-device-configuration-profile).
 

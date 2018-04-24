@@ -1,36 +1,36 @@
 ---
-title: "Einführung in Intune im Azure-Portal"
-titlesuffix: 
-description: "Microsoft Intune ist im Azure-Portal verfügbar. Weitere grundlegende Informationen zu Intune finden Sie im Azure-Portal."
-keywords: 
+title: Einführung in Intune im Azure-Portal
+titlesuffix: ''
+description: Microsoft Intune ist im Azure-Portal verfügbar. Weitere grundlegende Informationen zu Intune finden Sie im Azure-Portal.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: c9c8485a3ab68be745c8903659df0fd35af2a644
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.custom: ''
+ms.openlocfilehash: 4dee2c2204b90a35f0b03e2cd78a6662f67f680d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Einführung in Microsoft Intune im Azure-Portal
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Genau wie andere Azure-Dienste ist Microsoft Intune im Azure-Portal verfügbar. Wenn Sie **Intune** im Azure-Portal auswählen, können Sie die mobilen Geräte, PCs und Apps Ihrer Organisation verwalten.
 
->[!NOTE] 
+> [!NOTE]
 > Wenn zuvor Sie eine frühere Version von Microsoft Intune verwendet haben, sind die folgenden Informationen womöglich hilfreich für Sie:
-    * [Wo befinden sich meine Funktionen in Azure jetzt?](ui-changes.md) bezieht sich darauf, Ihnen die bestimmten Workloads und UIs zu zeigen, die sich mit dem Umzug zu Azure verändert haben.
-    * [Klassische Intune-Gruppen im Azure-Portal](groups-get-started.md) erklärt die Auswirkungen des Umzugs zu Azure Active Directory-Sicherheitsgruppen für die Gruppenverwaltung.
+>     * [Wo befinden sich meine Funktionen in Azure jetzt?](ui-changes.md) bezieht sich darauf, Ihnen die bestimmten Workloads und UIs zu zeigen, die sich mit dem Umzug zu Azure verändert haben.
+>     * [Klassische Intune-Gruppen im Azure-Portal](groups-get-started.md) erklärt die Auswirkungen des Umzugs zu Azure Active Directory-Sicherheitsgruppen für die Gruppenverwaltung.
 
 Die Microsoft Intune-Benutzeroberfläche im Azure-Portal bietet folgende Vorteile:
 

@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 11b0e1d80740366a638059162d10e3ebcfe9e8a8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Rollenbasierte Zugriffssteuerung mit Microsoft Intune
 
@@ -26,7 +26,7 @@ Mithilfe der rollenbasierten Zugriffssteuerung können Sie bestimmen, wer versch
 
 - **Rollendefinition**: Der Name einer Rolle, die von ihr verwalteten Ressourcen und die jeder Ressource erteilten Berechtigungen.
 - **Mitglieder**: Die Benutzergruppen, denen die Berechtigungen erteilt werden.
-- **Bereich**: Die Benutzer- bzw. Gerätegruppen, die die Mitglieder verwalten können.
+- **Bereich:** Die Benutzer- oder Gerätegruppen, die Mitglieder für die Bereitstellung von Apps oder Richtlinien nutzen können oder um Remoteaufgaben ausführen zu können.
 - **Zuweisung:** Nachdem die Definition, Mitglieder und der Bereich konfiguriert wurden, wird die Rolle zugewiesen.
 
 ![Beispiel für die rollenbasierte Zugriffssteuerung mit Intune](./media/intune-rbac-1.PNG)

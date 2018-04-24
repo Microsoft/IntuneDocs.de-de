@@ -1,25 +1,25 @@
 ---
 title: Erste Schritte mit Apps in Microsoft Intune
-titlesuffix: 
-description: "Suchen Sie Apps, und fügen Sie sie zu Geräten hinzu, um Ihren Mitarbeitern die Arbeit zu erleichtern."
-keywords: 
+titlesuffix: ''
+description: Suchen Sie Apps, und fügen Sie sie zu Geräten hinzu, um Ihren Mitarbeitern die Arbeit zu erleichtern.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 3/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3198a62e437e5ccaa3cfc71d1f643f073d41ed05
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: cf7b2cca28e16825c368cb3e5dc793d25daaa4d0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Erste Schritte beim Hinzufügen von Apps in Microsoft Intune
 
@@ -34,7 +34,7 @@ Mit Intune können Sie folgende App-Typen zu Ihren Unternehmensgeräten hinzufü
 ## <a name="how-do-i-assign-a-public-store-app"></a>Wie weise ich eine öffentliche Store-App zu?
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Klicken Sie auf **Mobile Apps** und dann auf **Apps**.
 4. Klicken Sie auf **Hinzufügen**, und wählen Sie **iOS** als **App-Typ** aus.
 5. Wählen Sie **App auswählen** aus, um den Bereich **App Store durchsuchen** anzuzeigen.

@@ -1,27 +1,27 @@
 ---
 title: Einrichten des Zugriffs auf Unternehmensressourcen | Microsoft-Dokumentation
-description: "Beschreibt die Aktivierung der Verwaltung Ihrer iOS-Geräte über Intune"
-keywords: 
+description: Beschreibt die Aktivierung der Verwaltung Ihrer iOS-Geräte über Intune
+keywords: ''
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
+ms.technology: ''
+ms.assetid: ''
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.openlocfilehash: 6474688a09c4063c55eff07f3cf84ebcb1911c65
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.sourcegitcommit: c29241a88e67137f0fbc678b9eae1db2b2cded14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Einrichten des Zugriffs auf Unternehmensressourcen
 

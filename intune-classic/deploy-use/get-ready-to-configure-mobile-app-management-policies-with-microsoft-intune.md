@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 52cba4de7d19744e1a011071ac6c9bbb168ffb30
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Vorbereitungen zum Konfigurieren von App-Schutzrichtlinien im Azure-Portal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In diesem Thema werden die Voraussetzungen und die Schritte beschrieben, die Sie ausführen müssen, **bevor** Sie im Azure-Portal App-Schutzrichtlinien erstellen können.
 
@@ -74,18 +74,18 @@ Die vollständige Liste der unterstützten Microsoft-Apps finden Sie in der [Mic
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
--   **Ein Microsoft Intune-Abonnement**. Benutzer benötigen Intune-Lizenzen, um Apps mit App-Schutzrichtlinien erhalten zu können.
-Sie verfügen bereits über ein Intune-Abonnement, wenn Sie Intune zurzeit zum Verwalten Ihrer Geräte verwenden. Sie sind ebenfalls im Besitz eines Intune-Abonnements, wenn Sie eine EMS-Lizenz (Enterprise Mobility Suite) erworben haben. Wenn Sie Intune testen, um die MAM-Fähigkeiten kennenzulernen, können Sie auf der Seite [Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/) ein Testkonto erhalten.
+- **Ein Microsoft Intune-Abonnement**. Benutzer benötigen Intune-Lizenzen, um Apps mit App-Schutzrichtlinien erhalten zu können.
+  Sie verfügen bereits über ein Intune-Abonnement, wenn Sie Intune zurzeit zum Verwalten Ihrer Geräte verwenden. Sie sind ebenfalls im Besitz eines Intune-Abonnements, wenn Sie eine EMS-Lizenz (Enterprise Mobility Suite) erworben haben. Wenn Sie Intune testen, um die MAM-Fähigkeiten kennenzulernen, können Sie auf der Seite [Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/) ein Testkonto erhalten.
 
-    Um zu überprüfen, ob Sie über ein Intune-Abonnement verfügen, navigieren Sie im Office-Portal zur Seite **Abrechnung**.  Wenn Sie über ein Abonnement verfügen, sollte Intune in den Abonnements als **Aktiv** angezeigt werden.
+  Um zu überprüfen, ob Sie über ein Intune-Abonnement verfügen, navigieren Sie im Office-Portal zur Seite **Abrechnung**.  Wenn Sie über ein Abonnement verfügen, sollte Intune in den Abonnements als **Aktiv** angezeigt werden.
 
--   **Ein Office 365-Abonnement**, das für Folgendes erforderlich ist:
+- **Ein Office 365-Abonnement**, das für Folgendes erforderlich ist:
 
   - Anwenden von App-Schutzrichtlinien auf Apps, die mehrere Identitäten unterstützen.
 
   - Erstellen von SharePoint Online- und Exchange Online-Geschäftskonten. Lokale Exchange- und SharePoint-Bereitstellungen werden nicht unterstützt.
 
--   **Einrichten von Skype for Business Online für die moderne Authentifizierung**. Weitere Informationen finden Sie unter [Aktivieren der modernen Authentifizierung](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+- **Einrichten von Skype for Business Online für die moderne Authentifizierung**. Weitere Informationen finden Sie unter [Aktivieren der modernen Authentifizierung](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) zum Erstellen von Benutzern. Azure AD authentifiziert Benutzer, wenn diese die App starten und ihre geschäftlichen Anmeldeinformationen eingeben.

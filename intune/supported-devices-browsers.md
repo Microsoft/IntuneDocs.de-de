@@ -15,15 +15,15 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5a8962223bac0ed27b6a52404973f2c30abfc28b
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f468ff8115fde79bf92825f06c37ff8affabf125
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Unterstützte Betriebssysteme und Browser
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Informieren Sie sich über die unterstützten Betriebssysteme und Browser, bevor Sie Microsoft Intune einrichten.
 
@@ -33,7 +33,7 @@ Hilfe zur Installation von Intune auf Ihrem Gerät finden Sie unter [Verwenden v
 
 Sie können die Geräte verwalten, die folgende Betriebssysteme verwenden:
 
-[!INCLUDE[mdm-supported-devices](./includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](./includes/mdm-supported-devices.md)]
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Unterstützte Samsung KNOX Standard-Geräte
 

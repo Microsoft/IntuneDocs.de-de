@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b0117ef734a8549593992108105192ce1c4de5b0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 85233c06d9cbbc697aecabc75ba538612c0fa5fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>Erste Schritte: Verhindern von Kompromittierungen im Unternehmen durch mobile Office 365-Apps
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune kann Sie dabei unterstützen, die Daten im Unternehmen mithilfe von MAM-Richtlinien (mobile Anwendungsverwaltung) zu schützen, die dabei helfen, die Kompromittierung von Daten im Unternehmen durch mobile Office 365-Apps oder andere branchenspezifische Apps zu verhindern. Für die Verwendung der MAM-Richtlinien von Intune ist keine Registrierung der Geräte der Benutzer in MDM (mobile Geräteverwaltung) erforderlich. Wenn daher Benutzer vorhanden sind, die Ihre privaten mobilen iOS- oder Android-Geräte nicht in einer Microsoft MDM-Lösung (Intune, Configuration Manager oder EAS) registrieren möchten, kann Intune Ihnen dabei helfen, die Datensicherheit im Unternehmen zu erhöhen, wenn Sie die Unternehmensdaten ohne Verwaltung der Endbenutzergeräte schützen möchten oder Sie bereits eine nicht von Microsoft stammende MDM-Lösung verwenden.   
 

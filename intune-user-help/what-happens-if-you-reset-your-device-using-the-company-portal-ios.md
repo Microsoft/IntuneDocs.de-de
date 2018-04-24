@@ -1,27 +1,27 @@
 ---
-title: "Was geschieht, wenn Sie Ihr iOS-Gerät zurücksetzen? | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Was geschieht, wenn Sie Ihr iOS-Gerät zurücksetzen? | Microsoft-Dokumentation
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 16aca558cda635c06135a1e7b72bc502deaacb24
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fc3396dee18968e9e91ca1a648d18ccc75d01b52
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Was geschieht, wenn Sie Ihr iOS-Gerät mithilfe des Unternehmensportals zurücksetzen?
 

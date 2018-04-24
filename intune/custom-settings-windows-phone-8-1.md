@@ -1,27 +1,27 @@
 ---
-title: "Benutzerdefinierte Microsoft Intune-Einstellungen für Windows Phone 8.1-Geräte"
-titleSuffix: 
-description: "Erfahren Sie etwas über die Einstellungen, die Sie in einem benutzerdefinierten Windows Phone 8.1-Profil verwenden können."
-keywords: 
+title: Benutzerdefinierte Microsoft Intune-Einstellungen für Windows Phone 8.1-Geräte
+titleSuffix: ''
+description: Erfahren Sie etwas über die Einstellungen, die Sie in einem benutzerdefinierten Windows Phone 8.1-Profil verwenden können.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f45b2dd9cab0ccfd912d1f1348d90264bf8906b8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 83c123f3752680dbc7faca76aa525a0f035831d7
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-phone-81"></a>Benutzerdefinierte Microsoft Intune-Geräteeinstellungen für Windows Phone 8.1-Geräte
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Weisen Sie mithilfe des **benutzerdefinierten** Profils für Windows Phone 8.1 von Microsoft Intune die OMA-URI-Einstellungen zu, um Features auf Windows Phone 8.1-Geräten zu steuern. Dies sind die Standardeinstellungen, die viele Hersteller von mobilen Geräten verwenden, um Gerätefunktionen zu steuern.
 

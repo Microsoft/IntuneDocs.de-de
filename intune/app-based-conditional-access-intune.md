@@ -1,28 +1,28 @@
 ---
 title: App-basierter bedingter Zugriff mit Intune
-description: "Erfahren Sie mehr über den App-basierten bedingten Zugriff mit Intune."
-keywords: 
+description: Erfahren Sie mehr über den App-basierten bedingten Zugriff mit Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 35d7be91201f8cf4fc3016363770b65bcea9ed72
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>App-basierter bedingter Zugriff mit Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 [Intune-App-Schutzrichtlinien](app-protection-policy.md) unterstützen Sie beim Schutz Ihrer Unternehmensdaten auf Geräten, die bei Intune registriert sind. App-Schutzrichtlinien können Sie auch auf mitarbeitereigenen Geräten verwenden, die nicht für die Verwaltung in Intune registriert sind. Auch wenn Ihr Unternehmen das Gerät nicht verwaltet, müssen Sie in diesem Fall dennoch sicherstellen, dass Unternehmensdaten und -ressourcen geschützt sind.
 
@@ -56,29 +56,29 @@ In diesem Beispiel hat der Administrator App-Schutzrichtlinien auf die Outlook-A
 
 ![Veranschaulichung des Prozesses des App-basierten bedingten Zugriffs in einem Flowchart](./media/ca-intune-common-ways-3.png)
 
-1.  Der Benutzer versucht, sich über die Outlook-App bei Azure AD zu authentifizieren.
+1. Der Benutzer versucht, sich über die Outlook-App bei Azure AD zu authentifizieren.
 
-2.  Der Benutzer wird an den App Store umgeleitet, um eine Broker-App zu installieren, wenn er zum ersten Mal versucht, sich zu authentifizieren. Die Broker-App kann der Microsoft Authenticator für iOS oder das Microsoft-Unternehmensportal für Android-Geräte sein.
+2. Der Benutzer wird an den App Store umgeleitet, um eine Broker-App zu installieren, wenn er zum ersten Mal versucht, sich zu authentifizieren. Die Broker-App kann der Microsoft Authenticator für iOS oder das Microsoft-Unternehmensportal für Android-Geräte sein.
 
- Wenn Benutzer versuchen, eine native E-Mail-App zu verwenden, werden sie an den App Store umgeleitet, um dann die Outlook-App zu installieren.
+   Wenn Benutzer versuchen, eine native E-Mail-App zu verwenden, werden sie an den App Store umgeleitet, um dann die Outlook-App zu installieren.
 
-3.  Die Broker-App wird auf dem Gerät installiert.
+3. Die Broker-App wird auf dem Gerät installiert.
 
-4.  Die Broker-App startet die Azure AD-Registrierung, durch die ein Gerätedatensatz in Azure AD erstellt wird. Dies ist nicht mit der Registrierung für die mobile Geräteverwaltung (MDM) identisch, aber dieser Datensatz ist erforderlich, damit bedingte Zugriffsrichtlinien auf dem Gerät erzwungen werden können.
+4. Die Broker-App startet die Azure AD-Registrierung, durch die ein Gerätedatensatz in Azure AD erstellt wird. Dies ist nicht mit der Registrierung für die mobile Geräteverwaltung (MDM) identisch, aber dieser Datensatz ist erforderlich, damit bedingte Zugriffsrichtlinien auf dem Gerät erzwungen werden können.
 
-5.  Die Broker-App überprüft die Identität der App. Es gibt eine Sicherheitsschicht, sodass die Broker-App überprüfen kann, ob die App für die Verwendung durch den Benutzer autorisiert ist.
+5. Die Broker-App überprüft die Identität der App. Es gibt eine Sicherheitsschicht, sodass die Broker-App überprüfen kann, ob die App für die Verwendung durch den Benutzer autorisiert ist.
 
-6.  Die Broker-App sendet die App-Client-ID während der Benutzerauthentifizierung an Azure AD, um zu überprüfen, ob sie in der durch die Richtlinie genehmigten Liste enthalten ist.
+6. Die Broker-App sendet die App-Client-ID während der Benutzerauthentifizierung an Azure AD, um zu überprüfen, ob sie in der durch die Richtlinie genehmigten Liste enthalten ist.
 
-7.  Azure AD ermöglicht dem Benutzer die Authentifizierung und die Verwendung der App basierend auf der durch die Richtlinie genehmigte Liste. Wenn die App nicht auf der Liste enthalten ist, verweigert Azure AD den Zugriff auf die App.
+7. Azure AD ermöglicht dem Benutzer die Authentifizierung und die Verwendung der App basierend auf der durch die Richtlinie genehmigte Liste. Wenn die App nicht auf der Liste enthalten ist, verweigert Azure AD den Zugriff auf die App.
 
-8.  Die Outlook-App kommuniziert mit dem Outlook-Clouddienst, um die Kommunikation mit Exchange Online zu initiieren.
+8. Die Outlook-App kommuniziert mit dem Outlook-Clouddienst, um die Kommunikation mit Exchange Online zu initiieren.
 
-9.  Der Outlook-Clouddienst kommuniziert mit Azure AD, um Exchange Online-Dienstzugriffstoken für den Benutzer abzurufen.
+9. Der Outlook-Clouddienst kommuniziert mit Azure AD, um Exchange Online-Dienstzugriffstoken für den Benutzer abzurufen.
 
-10.  Die Outlook-App kommuniziert mit Exchange Online, um die Unternehmens-E-Mails des Benutzers abzurufen.
+10. Die Outlook-App kommuniziert mit Exchange Online, um die Unternehmens-E-Mails des Benutzers abzurufen.
 
-11.  Unternehmens-E-Mails werden an das Postfach des Benutzers übermittelt.
+11. Unternehmens-E-Mails werden an das Postfach des Benutzers übermittelt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Erstellen einer App-basierten Richtlinie für bedingten Zugriff](app-based-conditional-access-intune-create.md)
