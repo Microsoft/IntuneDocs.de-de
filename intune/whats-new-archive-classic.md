@@ -1,28 +1,28 @@
 ---
 title: Neuerungen des klassischen Portalarchivs von Microsoft Intune
-description: "Archiv für Ankündigungen von Neuheiten für Microsoft Intune"
-keywords: 
+description: Archiv für Ankündigungen von Neuheiten für Microsoft Intune
+keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbb76e0eb4a1157e70a24c47b960ef138a0f876
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 5ba8d7940f9c02a1f01a115e16be331bb4fc2fcd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Neuerungen im klassischen Intune-Portal – vorherige Monate
 
-[!INCLUDE[classic-portal](./includes/classic-portal.md)]
+[!INCLUDE [classic-portal](./includes/classic-portal.md)]
 
 Diese Seite enthält neue Funktionen und Benachrichtigungen, die zuvor auf der Seite [Was gibt es Neues?](whats-new.md) für das klassische Intune-Portal angekündigt waren.
 
@@ -359,7 +359,7 @@ __Die Intune App SDK-Xamarin-Komponente unterstützt nun MAM ohne Registrierung_
 
 __Kein signiertes Windows Phone 8-Unternehmensportal zum Hochladen des Symantec-Signaturzertifikats mehr erforderlich__ Zum Hochladen des Symantec-Signaturzertifikats ist keine signierte Windows Phone 8-Unternehmensportal-App mehr erforderlich. Das Zertifikat kann einzeln hochgeladen werden.
 
-###<a name="deprecations"></a>Veraltete Funktionen
+### <a name="deprecations"></a>Veraltete Funktionen
 
 __Unterstützung für das Windows Phone 8-Unternehmensportal__ Die Unterstützung für das Windows Phone 8-Unternehmensportal wird jetzt beendet. Die Unterstützung für Windows Phone 8- und WinRT-Plattformen wurde im Oktober 2016 beendet. Die Unterstützung für das Windows Phone 8-Unternehmensportal wurde ebenfalls im Oktober 2016 beendet.
 

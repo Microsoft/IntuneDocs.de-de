@@ -1,29 +1,29 @@
 ---
-title: "Richtlinieneinstellungen für Geschäftsbedingungen"
-description: "Sie können Intune-Nutzungsbedingungen für Benutzergruppen bereitstellen, um zu erläutern, wie sich die Registrierung, der Zugriff auf Arbeitsressourcen und die Verwendung des Unternehmensportals auf Geräte und Benutzer auswirken."
-keywords: 
+title: Richtlinieneinstellungen für Geschäftsbedingungen
+description: Sie können Intune-Nutzungsbedingungen für Benutzergruppen bereitstellen, um zu erläutern, wie sich die Registrierung, der Zugriff auf Arbeitsressourcen und die Verwendung des Unternehmensportals auf Geräte und Benutzer auswirken.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 75e68a49fb8437bb7742cfa1e458edab5c0b1836
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e639b603e52df621cddaaf9490773336229fc6a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Einstellungen für Nutzungsbedingungsrichtlinien in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Sie können Intune-Nutzungsbedingungen für Benutzergruppen bereitstellen, um zu erläutern, wie sich die Registrierung, der Zugriff auf Arbeitsressourcen und das Unternehmensportal auf Geräte und Benutzer auswirken. Benutzer müssen die Nutzungsbedingungen akzeptieren, bevor sie sich über das Unternehmensportal registrieren und auf ihre Arbeit zugreifen können.
 
@@ -80,5 +80,5 @@ Beim Bearbeiten einer vorhandenen Nutzungsbedingungsrichtlinie können Sie ausw�
 
     Es wird empfohlen, dass Sie jedes Mal die Versionsnummer erhöhen und die Zustimmung zu den Nutzungsbedingungen anfordern, wenn Sie wichtige Änderungen an der Nutzungsbedingungsrichtlinie vornehmen. Behalten Sie die aktuelle Versionsnummer bei, wenn Sie z. B. Tippfehler korrigieren oder die Formatierung ändern.
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

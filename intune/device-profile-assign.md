@@ -14,11 +14,11 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9840298df981bee6c33d3cb36ec5e4ada46d11bd
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: fa1a1b1085d196411a03a6228eefa808399397ea
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune
 

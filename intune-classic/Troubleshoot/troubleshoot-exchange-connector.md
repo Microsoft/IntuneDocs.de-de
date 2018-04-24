@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a70b2707b38534826577bfe47bcd8e575c09a71f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 0eef4e2ae3792c601bd4a32cd041d7d041091cca
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-the-exchange-connector"></a>Exchange Connector-Problembehandlung
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 In diesem Thema wird die Behandlung von Problemen beschrieben, die sich möglicherweise auf den Intune Exchange Connector beziehen.
 
@@ -36,8 +36,8 @@ In diesem Thema wird die Behandlung von Problemen beschrieben, die sich möglich
 - Geben Sie bei der Exchange Connector-Konfiguration einen Clientzugriffsserver (CAS) an, der sich so nah wie möglich beim Server befindet, der den Exchange Connector hostet. Die Latenz bei der Kommunikation zwischen dem Clientzugriffsserver und dem Exchange Connector kann zu Verzögerungen bei der Geräteerkennung führen, insbesondere bei der dedizierten Verwendung von Office 365.
 - Denken Sie daran, dass zwischen Exchange Connector-Synchronisierungen mit dem Exchange-Clientzugriffsserver eine zeitliche Verzögerung auftritt. Eine vollständige Synchronisierung erfolgt einmal täglich, während eine schnelle Synchronisierung (Delta) alle zwei Stunden durchgeführt wird. Es besteht die Wahrscheinlichkeit, dass bei einem Benutzer mit einem neu registrierten Gerät Verzögerungen beim Zugriff auftreten.
 - 
-## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Exchange ActiveSync-Gerät wurde von Exchange nicht erkannt
-Überprüfen Sie, ob das Exchange Connector mit dem Exchange-Server synchronisiert wird. Suchen Sie dazu Protokolle für eine vollständige Synchronisierung oder eine Deltasynchronisierung. Weitere Informationen finden Sie unter „Exchange Connector-Protokolle“. Wenn seit der Einbindung des Geräts eine vollständige Synchronisierung oder Deltasynchronisierung erfolgreich abgeschlossen wurde, haben Sie dies als Quelle des Problems beseitigt. Wenn keine Synchronisierung stattgefunden hat, sammeln Sie die Synchronisierungsprotokolle, und fügen Sie sie an Ihre Supportanforderung an.
+  ## <a name="exchange-activesync-device-not-discovered-from-exchange"></a>Exchange ActiveSync-Gerät wurde von Exchange nicht erkannt
+  Überprüfen Sie, ob das Exchange Connector mit dem Exchange-Server synchronisiert wird. Suchen Sie dazu Protokolle für eine vollständige Synchronisierung oder eine Deltasynchronisierung. Weitere Informationen finden Sie unter „Exchange Connector-Protokolle“. Wenn seit der Einbindung des Geräts eine vollständige Synchronisierung oder Deltasynchronisierung erfolgreich abgeschlossen wurde, haben Sie dies als Quelle des Problems beseitigt. Wenn keine Synchronisierung stattgefunden hat, sammeln Sie die Synchronisierungsprotokolle, und fügen Sie sie an Ihre Supportanforderung an.
 
 - Wenn ein Benutzer keine Intune-Lizenz besitzt, erkennt der Exchange Connector seine Geräte nicht.
 - Wenn sich die primäre SMTP-Adresse eines Benutzers vom UPN in AAD unterscheidet, erkennt der Exchange Connector keine Geräte für diesen Intune-/AAD-Benutzer. Beheben Sie die primäre SMTP-Adresse.

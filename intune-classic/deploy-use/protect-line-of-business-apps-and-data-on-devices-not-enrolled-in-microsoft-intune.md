@@ -1,25 +1,25 @@
 ---
-title: "Schützen branchenspezifischer Apps auf nicht registrierten Geräten"
-description: "In diesem Thema wird beschrieben, wie Sie Ihre benutzerdefinierte Reihe von Branchen-Anwendungen vorbereiten können, sodass Sie Verwaltungsrichtlinien für mobile Apps anwenden können, die helfen können, Datenverluste zu verhindern."
-keywords: 
+title: Schützen branchenspezifischer Apps auf nicht registrierten Geräten
+description: In diesem Thema wird beschrieben, wie Sie Ihre benutzerdefinierte Reihe von Branchen-Anwendungen vorbereiten können, sodass Sie Verwaltungsrichtlinien für mobile Apps anwenden können, die helfen können, Datenverluste zu verhindern.
+keywords: ''
 author: mattbriggs
 ms.author: mabriggs
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 0fbc7ae1937aff60e8e494df06ee2c30e2fe8855
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Schützen von branchenspezifischen Apps und Daten auf nicht in Microsoft Intune registrierten Geräten
 

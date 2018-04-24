@@ -2,26 +2,26 @@
 title: Finden Sie heraus, wie viele Benutzer von einer Richtlinie betroffen sind
 titlesuffix: Microsoft Intune
 description: Finden Sie heraus, wie viele Benutzer von einer Richtlinie betroffen sind
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/09/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38e8a2e2-2329-11e8-b467-0ed5f89f718b
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: decfd33b540fcb72c838e09034ba4bf312142a5b
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: c407bb17b80299e8eb44fee8eff8ee172aeaa268
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="evaluate-how-many-users-are-targeted-by-a-policy"></a>Auswerten der Anzahl der Benutzer, die von einer Richtlinie betroffen sind
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Sie können die Schaltfläche **Auswerten** verwenden, um herauszufinden, wie viele Benutzer von einer Gerätekonformität oder einer Gerätekonfigurationsrichtlinie betroffen sind. Dieses Feature berechnet nur die Anzahl der Benutzer, nicht die Anzahl der Geräte.
 

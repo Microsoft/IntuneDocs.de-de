@@ -1,27 +1,27 @@
 ---
 title: Verwenden der Intune-Unternehmensportal-Website | Microsoft-Dokumentation
-description: "Beschreibt die Unternehmensportal-Website und enthält Links zu Schritten für Aufgaben, die Endbenutzer auf der Website ausführen können."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: Beschreibt die Unternehmensportal-Website und enthält Links zu Schritten für Aufgaben, die Endbenutzer auf der Website ausführen können.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 06/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 824c8d97195459289bf5944c8490f1363ece3c93
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: eca19c189a48e8173232cfe6fde9e33eb6fb1090
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-the-intune-company-portal-website"></a>Verwenden der Intune-Unternehmensportal-Website
 Die [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog) ist eine Webseite, die Endbenutzer verwenden können, um Computer und Geräte zu verwalten, die sie in Intune registriert haben.

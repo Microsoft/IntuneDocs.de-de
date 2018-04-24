@@ -1,29 +1,29 @@
 ---
 title: Verbinden mit dem Data Warehouse mit Power BI
 titlesuffix: Microsoft Intune
-description: "Sie können eine Datei herunterladen, um Sie mit Microsoft Power BI zu verwenden, die es Ihnen ermöglicht, interaktive, dynamisch generierte Berichte für Ihren Microsoft Intune-Mandanten zu laden."
+description: Sie können eine Datei herunterladen, um Sie mit Microsoft Power BI zu verwenden, die es Ihnen ermöglicht, interaktive, dynamisch generierte Berichte für Ihren Microsoft Intune-Mandanten zu laden.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1266fa4cc5ef958e369e58b0a6619e2bab3dd3eb
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: ef039f5182a379c319dd29f3ebfa3f7436261a0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinden mit dem Data Warehouse mit Power BI
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Sie können eine Datei herunterladen, um Sie mit Microsoft Power BI zu verwenden, die es Ihnen ermöglicht, interaktive, dynamisch generierte Berichte für Ihren Intune-Mandanten zu laden. Die Data Warehouse Power BI-Datei (PBIX) enthält die Verbindungseinstellungen für Ihren Mandanten und die folgenden Beispielberichte und Diagramme:  
 
@@ -39,7 +39,7 @@ Es werden auch Trends für die Registrierung, die Konformität, das Gerätekonfi
 
 Die folgenden Schritte zeigen, wie Sie die Power BI-Datei herunterladen und wie Sie den OData-Link mit Power BI verwenden.
 
-[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
+[!INCLUDE [reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="install-power-bi"></a>Installieren von Power BI
 

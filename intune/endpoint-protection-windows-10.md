@@ -1,29 +1,28 @@
 ---
-title: "Einstellungen von Microsoft Intune Endpoint Protection für Windows 10"
-titlesuffix: 
-description: "In diesem Artikel erfahren Sie mehr zu den Intune-Einstellungen zur Steuerung von Endpoint Protection wie z.B. BitLocker auf Windows 10-Geräten."
-keywords: 
+title: Hinzufügen von Endpoint Protection mit Windows 10 in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Verwenden oder konfigurieren Sie Einstellungen zu Endpoint Protection auf Windows 10-Geräten, um das Feature Windows Defender zu aktivieren, das Application Guard, Firewall, SmartScreen, Verschlüsselung und BitLocker, Exploit Guard, Anwendungssteuerung, Security Center und Sicherheit auf lokalen Geräten in Microsoft Intune enthält.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 03/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: afe1e737bb5214af76395db91b8aea72cb5d42a0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Erstellen von Endpoint Protection-Einstellungen für Windows 10 und höher in Microsoft Intune
+# <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Endpoint Protection-Einstellungen für Windows 10 und höher in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Mit dem Endpoint Protection-Profil können Sie Sicherheitsfeatures auf Windows 10-Geräten steuern, z.B. BitLocker und Windows Defender.
 
@@ -31,21 +30,6 @@ In diesem Artikel erfahren Sie, wie Sie Endpoint Protection-Profile erstellen k�
 
 > [!Note]
 > Diese Einstellungen werden nicht auf der Home Edition und auf der Professional Edition von Windows 10 unterstützt.
-
-## <a name="create-an-endpoint-protection-profile"></a>Erstellen eines Endpoint Protection-Profils
-
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Gerätekonfiguration** aus.
-2. Klicken Sie auf dem Blatt **Gerätekonfiguration** im Abschnitt **Verwalten** auf **Profile**.
-3. Klicken Sie auf dem Blatt „Profile“ auf **Profil erstellen**.
-4. Geben Sie auf dem Blatt **Profil erstellen** einen **Namen** und eine **Beschreibung** für das Gerätefunktionsprofil ein.
-5. Wählen Sie in der Dropdownliste **Plattform** die Option **Windows 10 und höher** aus.
-6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Endpoint Protection** aus.
-7. Konfigurieren Sie die gewünschten Einstellungen. Die Angaben in diesem Artikel helfen Ihnen dabei, zu verstehen, was die Auswirkungen jeder Einstellung sind. Wenn Sie fertig sind, wählen Sie **OK** aus.
-8. Wechseln Sie zurück zum Blatt **Profil erstellen**, und klicken Sie auf **Erstellen**.
-
-Das Profil wird erstellt und auf dem Blatt mit der Profilliste angezeigt.
 
 ## <a name="windows-defender-application-guard"></a>Windows Defender Application Guard
 
@@ -56,9 +40,9 @@ Application Guard ist nur für Windows 10-Geräte (64-Bit) verfügbar. Mithilfe 
 - **Externer Inhalt auf Unternehmenswebsites:** Legen Sie fest, ob das Laden von Inhalten blockiert werden soll, die von nicht genehmigten Websites stammen.
 - **Aus virtuellem Browser drucken:** Legen Sie fest, ob PDF-Drucker, XPS-Drucker, lokale Drucker und/oder Netzwerkdrucker Inhalte aus dem virtuellen Browser drucken können.
 - **Protokolle speichern:** Legen Sie fest, ob Protokolle für Ereignisse gespeichert werden, die während einer Browsersitzung von Application Guard auftreten.
-- **Benutzergenerierte Browserdaten beibehalten:** Legen Sie fest, ob Benutzerdaten (z.B. Kennwörter, Favoriten und Cookies) gespeichert werden, die während einer virtuellen Browsersitzung von Application Guard erstellt werden.
-- **Grafikbeschleunigung:** Lädt Websites mit vielen Grafiken schneller, wenn Sie innerhalb der virtuellen Browsersitzung von Application Guard arbeiten, indem der Zugriff auf einen virtuellen Grafikprozessor aktiviert wird.
-
+- **Benutzergenerierte Browserdaten beibehalten:** Speichern Sie Benutzerdaten (z.B. Kennwörter, Favoriten und Cookies), die während einer virtuellen Browsersitzung von Application Guard erstellt werden.
+- **Grafikbeschleunigung:** Lädt Websites mit vielen Grafiken schneller, wenn Sie innerhalb der virtuellen Browsersitzung von Application Guard arbeiten. Websites arbeiten schneller, indem der Zugriff auf einen virtuellen Grafikprozessor aktiviert wird.
+- **Dateien herunterladen, um Dateisystem zu hosten:** Erlaubt Benutzern, Dateien aus dem virtualisierten Browser auf das Hostbetriebssystem herunterzuladen.
 
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall
 
@@ -72,7 +56,7 @@ Diese Einstellungen können auf alle Netzwerktypen angewendet werden.
 - **IPsec-Ausnahmen:** Legen Sie fest, ob bestimmter Datenverkehr von IPsec ausgenommen werden soll, einschließlich **Neighbor Discovery-IPv6-Codes vom Typ ICMP**, **ICMP**, **Router Discovery-IPv6-Codes vom Typ ICMP** und **IPv4- und IPv6-DHCP-Netzwerkdatenverkehr**.
 - **Überprüfung der Zertifikatssperrliste:** Legen Sie einen Wert dafür fest, wie die Überprüfung der Zertifikatssperrliste erzwungen wird, einschließlich **Überprüfung der Zertifikatssperrliste deaktivieren**, **Überprüfung der Zertifikatssperrliste nur bei gesperrtem Zertifikat fehlerhaft** und **Überprüfung der Zertifikatssperrliste bei jedem Fehler fehlerhaft**.
 - **Authentifizierungssatz opportunistisch pro Schlüsselerstellungsmodul abgleichen:** Legen Sie die Schlüsselerstellungsmodule darauf fest, den gesamten Authentifizierungssatz zu ignorieren, wenn nicht alle Authentifizierungssuites in diesem Satz unterstützt werden.
-- **Paketwarteschlangen:** Legen Sie fest, wie die Skalierung für die Software auf der Empfangsseite für den verschlüsselten Empfang und die Weiterleitung im Klartext für das IPsec-Tunnelgatewayszenario aktiviert wird. Auf diese Weise wird die Paketreihenfolge beibehalten.
+- **Paketwarteschlangen:** Legen Sie fest, wie die Skalierung für die Software auf der Empfangsseite für den verschlüsselten Empfang und die Weiterleitung im Klartext für das IPsec-Tunnelgatewayszenario aktiviert wird. Durch diese Einstellung wird die Paketreihenfolge beibehalten.
 
 ### <a name="network-settings"></a>Netzwerkeinstellungen
 
@@ -81,7 +65,7 @@ Diese Einstellungen gelten für bestimmte Netzwerktypen, einschließlich **Domä
 #### <a name="general-settings"></a>Allgemeine Einstellungen
 
 - **Windows Defender Firewall:** Aktivieren Sie diese Einstellung, um Netzwerkdatenverkehr zu blockieren.
-- **Geschützter Modus:** Legen Sie fest, ob der Betrieb der Firewall im geschützten Modus blockiert werden soll. Wenn Sie dies blockieren, ermöglichen Sie ebenfalls das Blockieren von **durch IPsec gesicherten Paketausnahmen**.
+- **Geschützter Modus:** Legen Sie fest, ob der Betrieb der Firewall im geschützten Modus blockiert werden soll. Wenn Sie den geschützten Modus blockieren, ermöglichen Sie ebenfalls das Blockieren von **durch IPsec gesicherten Paketausnahmen**.
 - **Abgeschirmt:** Aktivieren Sie diese Einstellung, damit die Firewall sämtlichen eingehenden Datenverkehr blockiert.
 - **Unicastantworten auf Multicastbroadcasts:** Legen Sie fest, ob Unicastantworten auf Multicastbroadcasts blockiert werden sollen. In der Regel sollten keine Unicastantworten auf Multicast- oder Broadcastmeldungen empfangen werden, da solche Antworten auf einen Denial-of-Service-Angriff oder auf einen Angreifer hinweisen können, der versucht, einen bekannten Livecomputer zu durchsuchen.
 - **Eingehende Benachrichtigungen:** Legen Sie fest, ob das Anzeigen von Benachrichtigungen für Benutzer blockiert werden soll, wenn eine Anwendung dafür blockiert wird, einen Port zu überwachen.
@@ -115,53 +99,52 @@ Bei den Grundeinstellungen handelt es sich um universelle BitLocker-Einstellunge
 
 - **Warnung zu anderer Datenträgerverschlüsselung:** Legen Sie fest, ob das Anzeigen der Warnung für andere Datenträgerverschlüsselungen auf dem Computer des Benutzers deaktiviert werden soll.
 - **Verschlüsselungsmethoden konfigurieren**: Wenn diese Einstellung aktiv ist, können Sie Verschlüsselungsalgorithmen für Betriebssystem-, Daten- und Wechseldatenträger konfigurieren.
-    - **Verschlüsselung für Betriebssystemlaufwerke**: Wählen Sie die Verschlüsselungsmethode für Betriebssystemlaufwerken. Es wird empfohlen, dass Sie den XTS-AES-Algorithmus verwenden.
-    - **Verschlüsselung für Festplattenlaufwerke**: Wählen Sie die Verschlüsselungsmethode für Festplattenlaufwerke (integriert). Es wird empfohlen, dass Sie den XTS-AES-Algorithmus verwenden.
-    - **Verschlüsselung für Wechseldatenträger**: Wählen Sie die Verschlüsselungsmethode für Wechseldatenträger. Wenn der Wechseldatenträger mit Geräten verwendet wird, die nicht unter Windows 10 laufen, wird empfohlen, dass Sie den AES-CBC-Algorithmus verwenden.
+  - **Verschlüsselung für Betriebssystemlaufwerke**: Wählen Sie die Verschlüsselungsmethode für Betriebssystemlaufwerken. Es wird empfohlen, dass Sie den XTS-AES-Algorithmus verwenden.
+  - **Verschlüsselung für Festplattenlaufwerke**: Wählen Sie die Verschlüsselungsmethode für Festplattenlaufwerke (integriert). Es wird empfohlen, dass Sie den XTS-AES-Algorithmus verwenden.
+  - **Verschlüsselung für Wechseldatenträger**: Wählen Sie die Verschlüsselungsmethode für Wechseldatenträger. Wenn der Wechseldatenträger mit Geräten verwendet wird, die nicht unter Windows 10 laufen, wird empfohlen, dass Sie den AES-CBC-Algorithmus verwenden.
 
 ### <a name="bitlocker-os-drive-settings"></a>Einstellung für BitLocker-OS-Datenträger
 
 Diese Einstellungen gelten speziell für Betriebssystemlaufwerke.
 
 - **Zusätzliche Authentifizierung beim Start:** Konfigurieren Sie die Authentifizierungsanforderungen für den Computerstart, einschließlich der Verwendung von Trusted Platform Module (TPM).
-    - **BitLocker mit nicht kompatiblem TPM-Chip**
-    - **Systemstart für kompatibles TPM**: Legen Sie fest, ob ein TPM-Chip verwendet werden darf oder muss.
-    - **Systemstart-PIN für kompatibles TPM**: Legen Sie fest, ob mit dem TPM-Chip eine Systemstart-PIN verwendet werden darf oder muss.
-    - **Systemstartschlüssel für kompatibles TPM**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstartschlüssel verwendet werden darf oder muss.
-    - **Systemstartschlüssel und -Systemstart-PIN für kompatibles TPM**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstartschlüssel und eine PIN verwendet werden darf oder muss.
+  - **BitLocker mit nicht kompatiblem TPM-Chip**
+  - **Systemstart für kompatibles TPM**: Legen Sie fest, ob ein TPM-Chip verwendet werden darf oder muss.
+  - **Systemstart-PIN für kompatibles TPM**: Legen Sie fest, ob mit dem TPM-Chip eine Systemstart-PIN verwendet werden darf oder muss.
+  - **Systemstartschlüssel für kompatibles TPM**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstartschlüssel verwendet werden darf oder muss.
+  - **Systemstartschlüssel und -Systemstart-PIN für kompatibles TPM**: Legen Sie fest, ob mit dem TPM-Chip ein Systemstartschlüssel und eine PIN verwendet werden darf oder muss.
 - **PIN-Mindestlänge**: Wenn diese Einstellung aktiv ist, können Sie eine Mindestlänge für den TPM-Systemstart-PIN festlegen.
-    - **Mindestanzahl von Zeichen**: Geben Sie die Zahl an Zeichen an, die für den Systemstart-PIN erforderlich sind, zwischen **4**-**20**.
+  - **Mindestanzahl von Zeichen**: Geben Sie die Zahl an Zeichen an, die für den Systemstart-PIN erforderlich sind, zwischen **4**-**20**.
 - **Wiederherstellung von Betriebssystemlaufwerken**: Wenn diese Einstellung aktiviert ist, können Sie steuern, wie durch BitLocker geschützte Betriebssystemdatenträger wiederhergestellt werden, wenn die erforderlichen Systemstartinformationen nicht verfügbar sind.
-    - **Agent für zertifikatbasierte Datenwiederherstellung**: Wenn diese Einstellung aktiv ist, können Datenwiederherstellungs-Agents mit durch BitLocker geschützten Betriebssystemdatenträgern verwendet werden.
-    - **Erstellung des Wiederherstellungskennworts durch den Benutzer**: Legen Sie fest, ob Benutzer ein 48-stelliges Wiederherstellungskennwort generieren dürfen oder müssen.
-    - **Erstellung des Wiederherstellungsschlüssels durch den Benutzer**: Legen Sie fest, ob Benutzer ein 256-Bit-Wiederherstellungskennwort generieren dürfen oder müssen.
-    - **Wiederherstellungsoptionen im BitLocker-Setup-Assistenten**: Wenn Sie diese Einstellung festlegen, können Sie verhindern, dass Benutzer Wiederherstellungsoptionen sehen bzw. ändern können, wenn sie BitLocker aktivieren.
-    - **BitLocker-Wiederherstellungsinformationen in AD DS speichern**: Aktiviert das Speichern von BitLocker-Wiederherstellungsinformationen in Active Directory.
-    - **In AD DS gespeicherte BitLocker-Wiederherstellungsinformationen**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden. Es stehen die folgenden Optionen zur Auswahl:
-        - **Wiederherstellungskennwörter und Schlüsselpakete sichern**
-        - **Nur Wiederherstellungskennwörter sichern**
-    - **Wiederherstellungsinformationen vor dem Aktivieren von BitLocker in AD DS speichern**: Aktivieren Sie diese Einstellung, um zu verhindern, dass Benutzer BitLocker aktivieren, es sei denn, das Gerät ist mit einer Domäne verbunden und BitLocker-Wiederherstellungsinformationen wurden erfolgreich in Active Directory gespeichert.
+  - **Agent für zertifikatbasierte Datenwiederherstellung**: Wenn diese Einstellung aktiv ist, können Datenwiederherstellungs-Agents mit durch BitLocker geschützten Betriebssystemdatenträgern verwendet werden.
+  - **Erstellung des Wiederherstellungskennworts durch den Benutzer**: Legen Sie fest, ob Benutzer ein 48-stelliges Wiederherstellungskennwort generieren dürfen oder müssen.
+  - **Erstellung des Wiederherstellungsschlüssels durch den Benutzer**: Legen Sie fest, ob Benutzer ein 256-Bit-Wiederherstellungskennwort generieren dürfen oder müssen.
+  - **Wiederherstellungsoptionen im BitLocker-Setup-Assistenten**: Wenn Sie diese Einstellung festlegen, können Sie verhindern, dass Benutzer Wiederherstellungsoptionen sehen bzw. ändern können, wenn sie BitLocker aktivieren.
+  - **BitLocker-Wiederherstellungsinformationen in AD DS speichern**: Aktiviert das Speichern von BitLocker-Wiederherstellungsinformationen in Active Directory.
+  - **In AD DS gespeicherte BitLocker-Wiederherstellungsinformationen**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden. Es stehen die folgenden Optionen zur Auswahl:
+    - **Wiederherstellungskennwörter und Schlüsselpakete sichern**
+    - **Nur Wiederherstellungskennwörter sichern**
+  - **Wiederherstellungsinformationen vor dem Aktivieren von BitLocker in AD DS speichern**: Aktivieren Sie diese Einstellung, um zu verhindern, dass Benutzer BitLocker aktivieren, es sei denn, das Gerät ist mit einer Domäne verbunden und BitLocker-Wiederherstellungsinformationen wurden erfolgreich in Active Directory gespeichert.
 - **Pre-Boot-Wiederherstellungsmeldung und -URL**: Legen Sie diese Einstellung fest, um die Meldung und URL zu konfigurieren, die auf dem Bildschirm der Pre-Boot-Schlüsselwiederherstellung angezeigt werden.
-    - **Pre-Boot-Wiederherstellungsmeldung**: Legen Sie fest, wie die Pre-Boot-Wiederherstellungsmeldung Benutzern angezeigt wird. Es stehen die folgenden Optionen zur Auswahl:
-        - **Standardmäßige Wiederherstellungsmeldung und -URL verwenden**
-        - **Leere Wiederherstellungsmeldung und -URL verwenden**
-        - **Benutzerdefinierte Wiederherstellungsmeldung**
-        - **Benutzerdefinierte Wiederherstellungs-URL**
-
+  - **Pre-Boot-Wiederherstellungsmeldung**: Legen Sie fest, wie die Pre-Boot-Wiederherstellungsmeldung Benutzern angezeigt wird. Es stehen die folgenden Optionen zur Auswahl:
+    - **Standardmäßige Wiederherstellungsmeldung und -URL verwenden**
+    - **Leere Wiederherstellungsmeldung und -URL verwenden**
+    - **Benutzerdefinierte Wiederherstellungsmeldung**
+    - **Benutzerdefinierte Wiederherstellungs-URL**
 
 ### <a name="bitlocker-fixed-data-drive-settings"></a>Einstellungen für das BitLocker-Festplattenlaufwerk
 
 - **Schreibzugriff auf nicht durch BitLocker geschützte Festplattenlaufwerke**: Wenn diese Einstellung festgelegt wurde, muss der BitLocker-Schutz auf allen Festplattenlaufwerken und integrierten Laufwerken aktiviert sein, damit in sie geschrieben werden kann.
 - **Wiederherstellung von Festplattenlaufwerken**: Wenn diese Einstellung festgelegt wurde, können Sie steuern, wie durch BitLocker geschützte Festplattenlaufwerke wiederhergestellt werden, wenn die erforderlichen Systemstartinformationen nicht vorliegen.
-    - **Datenwiederherstellungs-Agent**: Wenn diese Einstellung aktiviert ist, können Datenwiederherstellungs-Agents mit durch BitLocker geschützten Festplattenlaufwerken verwendet werden.
-    - **Erstellung des Wiederherstellungskennworts durch den Benutzer**: Legen Sie fest, ob Benutzer ein 48-stelliges Wiederherstellungskennwort generieren dürfen oder müssen.  
-    - **Erstellung des Wiederherstellungsschlüssels durch den Benutzer**: Legen Sie fest, ob Benutzer ein 256-Bit-Wiederherstellungskennwort generieren dürfen oder müssen.
-    - **Wiederherstellungsoptionen im BitLocker-Setup-Assistenten**: Wenn Sie diese Einstellung festlegen, können Sie verhindern, dass Benutzer Wiederherstellungsoptionen sehen bzw. ändern können, wenn sie BitLocker aktivieren.
-    - **BitLocker-Wiederherstellungsinformationen in AD DS speichern**: Aktiviert das Speichern von BitLocker-Wiederherstellungsinformationen in Active Directory.
-    - **BitLocker-Wiederherstellungsinformationen in AD DS**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden. Es stehen die folgenden Optionen zur Auswahl:
-        - **Wiederherstellungskennwörter und Schlüsselpakete sichern**
-        - **Nur Wiederherstellungskennwörter sichern**
-    - **Wiederherstellungsinformationen vor dem Aktivieren von BitLocker in AD DS speichern**: Aktivieren Sie diese Einstellung, um zu verhindern, dass Benutzer BitLocker aktivieren, es sei denn, das Gerät ist mit einer Domäne verbunden und BitLocker-Wiederherstellungsinformationen wurden erfolgreich in Active Directory gespeichert.
+  - **Datenwiederherstellungs-Agent**: Wenn diese Einstellung aktiviert ist, können Datenwiederherstellungs-Agents mit durch BitLocker geschützten Festplattenlaufwerken verwendet werden.
+  - **Erstellung des Wiederherstellungskennworts durch den Benutzer**: Legen Sie fest, ob Benutzer ein 48-stelliges Wiederherstellungskennwort generieren dürfen oder müssen.  
+  - **Erstellung des Wiederherstellungsschlüssels durch den Benutzer**: Legen Sie fest, ob Benutzer ein 256-Bit-Wiederherstellungskennwort generieren dürfen oder müssen.
+  - **Wiederherstellungsoptionen im BitLocker-Setup-Assistenten**: Wenn Sie diese Einstellung festlegen, können Sie verhindern, dass Benutzer Wiederherstellungsoptionen sehen bzw. ändern können, wenn sie BitLocker aktivieren.
+  - **BitLocker-Wiederherstellungsinformationen in AD DS speichern**: Aktiviert das Speichern von BitLocker-Wiederherstellungsinformationen in Active Directory.
+  - **BitLocker-Wiederherstellungsinformationen in AD DS**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden. Es stehen die folgenden Optionen zur Auswahl:
+    - **Wiederherstellungskennwörter und Schlüsselpakete sichern**
+    - **Nur Wiederherstellungskennwörter sichern**
+  - **Wiederherstellungsinformationen vor dem Aktivieren von BitLocker in AD DS speichern**: Aktivieren Sie diese Einstellung, um zu verhindern, dass Benutzer BitLocker aktivieren, es sei denn, das Gerät ist mit einer Domäne verbunden und BitLocker-Wiederherstellungsinformationen wurden erfolgreich in Active Directory gespeichert.
 
 ### <a name="bitlocker-removable-data-drive-settings"></a>Einstellungen für den BitLocker-Wechseldatenträger
 
@@ -173,6 +156,8 @@ Diese Einstellungen gelten speziell für Betriebssystemlaufwerke.
 Verwenden Sie [Windows Defender Exploit Guard](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/windows-defender-exploit-guard), um die Angriffsoberfläche von Apps, die von Ihren Angestellten verwendet werden, zu verwalten und zu reduzieren.
 
 ### <a name="attack-surface-reduction"></a>Verringerung der Angriffsfläche
+
+- **Abgreifen von Anmeldeinformationen über das Subsystem der lokalen Sicherheitsautorität von Windows kennzeichnen**
 
 Wehren Sie [Aktionen und Apps](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard) ab, die üblicherweise von Schadsoftware verwendet wird, die nach Sicherheitsproblemen sucht, um Computer zu infizieren.
 
@@ -191,12 +176,21 @@ Blockieren Sie diese Optionen, um Bedrohungen durch Skripts zu verhindern:
 
 - **Verborgener JS-/VBS-/PS-/Makrocode**
 - **Ausführung von aus dem Internet heruntergeladener Nutzlast über JS/VBS (keine Ausnahmen)**
+- **Prozesserstellung über die Befehle „PSExec“ und „WMI“**
+- **Nicht vertrauenswürdige und nicht signierte Prozesse, die über USB ausgeführt werden**
+- **Ausführbare Dateien, die keinem Listenkriterium zur Verbreitung, zum Alter oder zur Vertrauenswürdigkeit entsprechen**
 
 #### <a name="rules-to-prevent-email-threats"></a>Regeln zum Verhindern von Bedrohungen durch E-Mails
 
 Blockieren Sie diese Optionen, um Bedrohungen durch E-Mails zu verhindern:
 
 - **Ausführung ausführbarer Inhalte (EXE, DLL, PS, JS, VBS usw.), die per E-Mail (Webmail-/E-Mail-Client) zugestellt werden (keine Ausnahmen)**
+
+#### <a name="rules-to-protect-against-ransomware"></a>Regeln zum Schutz vor Ransomware
+- **Erweiterter Schutz vor Ransomware**
+
+> [!TIP]
+> Weitere Informationen über diese Regeln finden Sie unter [Reduce attack surfaces with Windows Defender Exploit Guard (Reduzieren von Attacken auf die Oberflächen mit Windows Defender Exploit Guard)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard).
 
 #### <a name="attack-surface-reduction-exceptions"></a>Ausnahmen von der Verringerung der Angriffsfläche
 
@@ -255,4 +249,4 @@ Stellen Sie IT-Kontaktinformationen bereit, die in der Windows Defender Security
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenn Sie fortfahren und dieses Profil Gruppen zuweisen möchten, lesen Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md) nach.
+Informationen zum Zuweisen dieses Profils an Gruppen finden Sie unter [Zuweisen von Microsoft Intune-Geräteprofilen](device-profile-assign.md).

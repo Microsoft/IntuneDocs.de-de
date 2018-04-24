@@ -1,28 +1,28 @@
 ---
-title: "Filtereinstellungen für Webinhalte für iOS-Geräte in Microsoft Intune"
-titlesuffix: 
-description: "Informationen zu den Einstellungen in Microsoft Intune, die Sie verwenden können, um den Zugriff von iOS-Geräten auf Websites zulassen und blockieren können."
-keywords: 
+title: Filtereinstellungen für Webinhalte für iOS-Geräte in Microsoft Intune
+titlesuffix: ''
+description: Informationen zu den Einstellungen in Microsoft Intune, die Sie verwenden können, um den Zugriff von iOS-Geräten auf Websites zulassen und blockieren können.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a401a3a04d10587606b8ec4862a62e551e7aadf0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c5e3dbdc339fd25289e1aed526bc03e4691c3812
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Filtereinstellungen für Webinhalte für iOS-Geräte
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In diesem Artikel werden die Microsoft Intune-Einstellungen dargestellt, die Sie verwenden können, um auf iOS-Geräten den URL-Zugriff der Browser kontrollieren zu können.
 
@@ -63,7 +63,7 @@ Wenn Sie hier keine URLs angeben, können Endbenutzer keine Websites außer „m
 2. Klicken Sie auf **Hinzufügen**, wenn Sie die Informationen für die jeweilige Website eingegeben haben.
 3. Klicken Sie zum Abschluss auf **OK**.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Die folgenden URLs werden von Intune automatisch zugelassen.
 > - www.microsoft.com
 > - www.microsoft.net

@@ -1,25 +1,25 @@
 ---
-title: "Verwalten der Datenübertragung zwischen iOS-Apps"
+title: Verwalten der Datenübertragung zwischen iOS-Apps
 titlesuffix: Microsoft Intune
-description: "Hier finden Sie Informationen zur Verwendung der Richtlinien zur Verwaltung mobiler Apps in Microsoft Intune zum Verwalten der Datenübertragung zwischen Apps."
-keywords: 
+description: Hier finden Sie Informationen zur Verwendung der Richtlinien zur Verwaltung mobiler Apps in Microsoft Intune zum Verwalten der Datenübertragung zwischen Apps.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 441f78a8b3b9c41610b78a27dbe51fb144dd82da
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4c2872e70697b15326f89abd5721048643c5421a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune
 ## <a name="manage-ios-apps"></a>Verwalten von iOS-Apps
@@ -63,9 +63,9 @@ Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die mit
 
 2. Geben Sie im Abschnitt „Anwendungskonfiguration“ die folgende Einstellung ein:
 
-  **Schlüssel** = IntuneMAMUPN, **Wert** = <username@company.com>
+   **Schlüssel** = IntuneMAMUPN, **Wert** = <username@company.com>
 
-  Die genaue Syntax des Schlüssel-Wert-Paares kann sich basierend auf Ihrem MDM-Anbieter eines Drittanbieters unterscheiden. In der folgenden Tabelle zeigt Beispiele von MDM-Anbietern von Drittanbietern sowie die genauen Werte, die Sie für das Schlüssel-Wert-Paar eingeben müssen.
+   Die genaue Syntax des Schlüssel-Wert-Paares kann sich basierend auf Ihrem MDM-Anbieter eines Drittanbieters unterscheiden. In der folgenden Tabelle zeigt Beispiele von MDM-Anbietern von Drittanbietern sowie die genauen Werte, die Sie für das Schlüssel-Wert-Paar eingeben müssen.
 
 |MDM-Anbieter eines Drittanbieters| Konfigurationsschlüssel | Werttyp | Der Konfigurationswert|
 | ------- | ---- | ---- | ---- |

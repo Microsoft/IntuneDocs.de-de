@@ -1,27 +1,27 @@
 ---
-title: "Festlegen der Zeit, bevor das Gerät gesperrt wird | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Festlegen der Zeit, bevor das Gerät gesperrt wird | Microsoft-Dokumentation
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5f365c7d-5889-4072-a994-613ce3c26ce4
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3d893297802dcc1903286029c406fceac8232eca
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7fa8d8d59c2557b070a77e22154b575045b2ab6d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>Festlegen der Zeit, bevor das Gerät gesperrt wird
 

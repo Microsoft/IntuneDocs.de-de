@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 201c431f2c30538139f0dc9c436781aae2bd9735
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 85a296c28658b8eb3db5e5e99dcd573b3b98e0ea
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense-Connector mit Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Sie können den Zugriff mobiler Geräte auf Unternehmensressourcen basierend auf Risikobewertungen steuern, die von Lookout vorgenommen werden, einer Mobile Threat Defense-Lösung, die in Microsoft Intune integriert ist. Das Risiko wird basierend auf Telemetriedaten bewertet, die vom Lookout-Dienst auf Geräten erfasst werden, wie z.B.:
 - Sicherheitsrisiken des Betriebssystems

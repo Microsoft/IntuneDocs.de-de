@@ -1,28 +1,28 @@
 ---
-title: "Umschließen von iOS-Apps mit dem Intune App Wrapping Tool"
-description: "Lernen Sie, Ihre iOS-Apps zu umschließen, ohne den Code der App selbst zu ändern. Bereiten Sie die Apps vor, damit Sie Verwaltungsrichtlinien für mobile Apps anwenden können."
-keywords: 
+title: Umschließen von iOS-Apps mit dem Intune App Wrapping Tool
+description: Lernen Sie, Ihre iOS-Apps zu umschließen, ohne den Code der App selbst zu ändern. Bereiten Sie die Apps vor, damit Sie Verwaltungsrichtlinien für mobile Apps anwenden können.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9329c25d6211149102c06b44fdb6d6222b13550
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e8e2783be3c515aa742a3adc149304e0a2ae3b99
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Vorbereiten von iOS-Apps für App-Schutzrichtlinien mit dem Intune App Wrapping Tool
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Verwenden Sie das Microsoft Intune App Wrapping Tool für iOS zum Aktivieren von Intune-App-Schutzrichtlinien für interne iOS-Apps, ohne den Code der App selbst zu ändern.
 
@@ -98,48 +98,48 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 
 4. Klicken Sie auf **Certificates, IDs & Profiles**.
 
-  ![Apple Developer-Portal](./media/iOS-signing-cert-1.png)
+   ![Apple Developer-Portal](./media/iOS-signing-cert-1.png)
 
 5. Klicken Sie auf ![das Pluszeichen im Apple Developer-Portal](./media/iOS-signing-cert-2.png) (rechts oben), um ein iOS-Zertifikat hinzuzufügen.
 
 6. Wählen Sie unter **Production** das Erstellen eines Zertifikats des Typs **In-House and Ad Hoc** aus.
 
-  ![Wählen Sie das „In-House and Ad Hoc“-Zertifikat aus.](./media/iOS-signing-cert-3.png)
+   ![Wählen Sie das „In-House and Ad Hoc“-Zertifikat aus.](./media/iOS-signing-cert-3.png)
 
-  >[!NOTE]
-  >Wenn Sie nicht planen, die App zu verteilen und sie nur intern testen möchten, können Sie ein iOS App-Entwicklungszertifikat anstelle eines Produktionszertifikats verwenden. Wenn Sie ein Entwicklungszertifikat verwenden, stellen Sie sicher, dass das mobile Bereitstellungsprofil auf Geräte verweist, auf denen die App installiert wird.
+   >[!NOTE]
+   >Wenn Sie nicht planen, die App zu verteilen und sie nur intern testen möchten, können Sie ein iOS App-Entwicklungszertifikat anstelle eines Produktionszertifikats verwenden. Wenn Sie ein Entwicklungszertifikat verwenden, stellen Sie sicher, dass das mobile Bereitstellungsprofil auf Geräte verweist, auf denen die App installiert wird.
 
 7. Klicken Sie unten auf der Seite auf **Next**.
 
 8. Lesen Sie die Anweisungen zum Erstellen einer **Zertifikatsignieranforderung (Certificate Signing Request, CSR)** mithilfe der Anwendung „Schlüsselbundverwaltung“ auf Ihrem macOS-Computer.
 
-  ![Lesen der Anweisungen zum Erstellen einer CSR](./media/iOS-signing-cert-4.png)
+   ![Lesen der Anweisungen zum Erstellen einer CSR](./media/iOS-signing-cert-4.png)
 
 9. Befolgen Sie die Anweisungen zum Erstellen einer Zertifikatsignieranforderung. Starten Sie auf dem macOS-Computer die Anwendung **Schlüsselbundverwaltung**.
 
 10. Wechseln Sie im macOS-Menü oben auf dem Bildschirm zu **Schlüsselbundverwaltung > Zertifikatsassistent > Zertifikat einer Zertifizierungsinstanz anfordern**.  
 
-  ![Anfordern eines Zertifikats von einer Zertifizierungsinstanz in Schlüsselbundverwaltung](./media/iOS-signing-cert-5.png)
+    ![Anfordern eines Zertifikats von einer Zertifizierungsinstanz in Schlüsselbundverwaltung](./media/iOS-signing-cert-5.png)
 
 11. Befolgen Sie die obigen Anweisungen auf der Apple Developer-Website zum Erstellen einer CSR-Datei. Speichern Sie die CSR-Datei auf Ihrem macOS-Computer.
 
-  ![Anfordern eines Zertifikats von einer Zertifizierungsinstanz in Schlüsselbundverwaltung](./media/iOS-signing-cert-6.png)
+    ![Anfordern eines Zertifikats von einer Zertifizierungsinstanz in Schlüsselbundverwaltung](./media/iOS-signing-cert-6.png)
 
 12. Kehren Sie zur Apple Developer-Website zurück. Klicken Sie auf **Continue**(Weiter). Laden Sie dann die CSR-Datei hoch.
 
 13. Apple generiert Ihr Signaturzertifikat. Laden Sie es herunter, und speichern Sie es an einem einprägsamen Speicherort auf Ihrem macOS-Computer.
 
-  ![Herunterladen Ihres Signaturzertifikats](./media/iOS-signing-cert-7.png)
+    ![Herunterladen Ihres Signaturzertifikats](./media/iOS-signing-cert-7.png)
 
 14. Doppelklicken Sie auf die Zertifikatsdatei, die Sie gerade heruntergeladen haben, um das Zertifikat einem Schlüsselbund hinzuzufügen.
 
 15. Öffnen Sie **Schlüsselbundverwaltung** erneut. Suchen Sie Ihr Zertifikat, indem Sie rechts oben in der Suchleiste nach ihrem Namen suchen. Klicken Sie mit der rechten Maustaste auf das Element, um das Menü einzublenden, und klicken Sie auf **Informationen**. In den Beispielbildschirmen verwenden wir ein Entwicklungszertifikat anstelle eines Produktionszertifikats.
 
-  ![Hinzufügen Ihres Zertifikats zu einem Schlüsselbund](./media/iOS-signing-cert-8.png)
+    ![Hinzufügen Ihres Zertifikats zu einem Schlüsselbund](./media/iOS-signing-cert-8.png)
 
 16. Ein Informationsfenster wird angezeigt. Scrollen Sie nach unten, und sehen Sie unter der Bezeichnung **Fingerabdrücke** nach. Kopieren Sie die **SHA1**-Zeichenfolge (unscharf), die Sie als Parameter „-c“ für das App Wrapping Tool verwenden.
 
-  ![Hinzufügen Ihres Zertifikats zu einem Schlüsselbund](./media/iOS-signing-cert-9.png)
+    ![Hinzufügen Ihres Zertifikats zu einem Schlüsselbund](./media/iOS-signing-cert-9.png)
 
 
 
@@ -153,7 +153,7 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 
 4. Wählen Sie unter **Distribution** das Erstellen eines Bereitstellungsprofils des Typs **In House** aus.
 
-  ![Auswählen des Bereitstellungsprofils „In House“](./media/iOS-provisioning-profile-1.png)
+   ![Auswählen des Bereitstellungsprofils „In House“](./media/iOS-provisioning-profile-1.png)
 
 5. Klicken Sie auf **Continue**(Weiter). Verknüpfen Sie unbedingt das zuvor generierte Signaturzertifikat mit dem Bereitstellungsprofil.
 
@@ -414,8 +414,8 @@ Führen Sie die folgenden Schritte durch, um bei der Problembehandlung Protokoll
 4. Klicken Sie auf den Link „Erste Schritte“.
 5. Sie können jetzt Protokolle per E-Mail freigeben oder sie an einen OneDrive-Speicherort kopieren.
 
->[!NOTE]
-Die Protokollierungsfunktionalität ist für Apps aktiviert, die mit dem Intune App Wrapping Tool Version 7.1.13 oder höher umschlossen wurden.
+> [!NOTE]
+> Die Protokollierungsfunktionalität ist für Apps aktiviert, die mit dem Intune App Wrapping Tool Version 7.1.13 oder höher umschlossen wurden.
 
 ### <a name="see-also"></a>Siehe auch
 - [Auswählen der Vorbereitung von Apps für die mobile Anwendungsverwaltung mit Microsoft Intune](apps-prepare-mobile-application-management.md)</br>

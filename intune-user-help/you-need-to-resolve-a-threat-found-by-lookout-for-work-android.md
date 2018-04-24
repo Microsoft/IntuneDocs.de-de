@@ -1,25 +1,25 @@
 ---
-title: "Auflösen von durch Lookout for Work erkannten Bedrohungen unter Android | Microsoft-Dokumentation"
-description: "Erfahren Sie, wie Sie gegen Bedrohungen vorgehen können, die Lookout for Work unter Android gefunden hat."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Auflösen von durch Lookout for Work erkannten Bedrohungen unter Android | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie gegen Bedrohungen vorgehen können, die Lookout for Work unter Android gefunden hat.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5656b3e6-e812-4264-a170-b17c9c03e4d4
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: d321350fa2cfff051cf633335bf32c51f5be7d97
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: df7055f031fb7661cc0fa3bf2d00b16fc0a082dc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Beseitigen einer von Lookout for Work erkannten Bedrohung
 

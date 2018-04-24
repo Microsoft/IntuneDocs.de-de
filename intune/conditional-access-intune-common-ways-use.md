@@ -1,28 +1,28 @@
 ---
 title: Bedingter Zugriff mit Microsoft Intune
-titlesuffix: 
-description: "Erfahren Sie, wie der bedingte Zugriff von Intune im Allgemeinen für den gerätebasierten und den App-basierten bedingten Zugriff verwendet wird."
-keywords: 
+titlesuffix: ''
+description: Erfahren Sie, wie der bedingte Zugriff von Intune im Allgemeinen für den gerätebasierten und den App-basierten bedingten Zugriff verwendet wird.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9c34e6e2891769d64885d364f05dbedaa1fb7d57
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Es gibt zwei Arten des bedingten Zugriffs in Intune: den gerätebasierten bedingten Zugriff und den App-basierten bedingten Zugriff. Sie müssen die entsprechenden Konformitätsrichtlinien konfigurieren, um die Konformität mit bedingtem Zugriff in Ihrer Organisation zu unterstützen. Der bedingte Zugriff wird häufig verwendet, um Aktionen wie die folgenden auszuführen: Zulassen oder Blockieren des Zugriffs auf Exchange lokal, Steuern des Zugriffs auf das Netzwerk oder Integrieren in eine Mobile Threat Defense-Lösung.
 

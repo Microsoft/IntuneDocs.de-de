@@ -1,25 +1,25 @@
 ---
-title: "Festlegen oder Ändern der Kennung | Microsoft-Dokumentation"
-description: "Festlegen oder Ändern der Kennung"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Festlegen oder Ändern der Kennung | Microsoft-Dokumentation
+description: Festlegen oder Ändern der Kennung
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: dbd2bef05082e6e4f9b7dfef72277040bb6587a7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6f81cab429f531f6839dc952d6ea6fb2977130ab
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-or-change-your-passcode"></a>Festlegen oder Ändern der Kennung
 

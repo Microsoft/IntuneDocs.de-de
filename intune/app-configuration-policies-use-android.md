@@ -1,37 +1,37 @@
 ---
-title: "Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Android-Geräte"
+title: Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Android-Geräte
 titlesuffix: Microsoft Intune
-description: "Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellungen anzugeben, wenn Benutzer eine Android for Work-App ausführen."
-keywords: 
+description: Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellungen anzugeben, wenn Benutzer eine Android for Work-App ausführen.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a448c33e8324492c68d509a12d5901f41ed4873a
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Android-Geräte
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellungen anzugeben, wenn Benutzer eine Android for Work-App ausführen. Sie weisen diese Richtlinien nicht direkt Benutzern und Geräten zu. Stattdessen verknüpfen Sie eine Richtlinie mit einer App und weisen dann die App zu. Die Richtlinieneinstellungen werden verwendet, wenn die App danach sucht (in der Regel beim ersten Ausführen).
+Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellungen anzugeben, wenn Benutzer eine Android for Work-App ausführen. Der App-Entwickler muss Konfigurationseinstellungen für mit Android verwaltete Apps zur Verfügung stellen, damit Konfigurationseinstellungen für die App angegeben werden können. Weisen Sie die Konfigurationsrichtlinien für die App der Benutzergruppe zu, für die die Einstellungen gelten sollen.  Die Richtlinieneinstellungen werden verwendet, wenn die App danach sucht (in der Regel beim ersten Ausführen).
 
 > [!Note]  
 > Nicht jede App unterstützt App-Konfigurationen. Fragen Sie den App-Entwickler, um herauszufinden, ob er die App so erstellt hat, dass App-Konfigurationsrichtlinien unterstützt werden.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie die Workload **Mobile Apps** aus.
 4. Wählen Sie in der Gruppe **Verwalten** **App-Konfigurationsrichtlinien** und dann **Hinzufügen** aus.
 5. Legen Sie die folgenden Details fest:
@@ -50,16 +50,27 @@ Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellunge
 
 ## <a name="use-the-configuration-designer"></a>Verwenden des Konfigurations-Designers
 
-Sie können den Konfigurations-Designer für Apps auf Geräten verwenden, die in Intune registriert sind oder nicht. Der Designer ermöglicht Ihnen das Konfigurieren bestimmter Konfigurationsschlüssel und -werte. Sie müssen ebenfalls den Datentyp für jeden Wert angeben.
+Sie können den Konfigurations-Designer für Android-Apps verwenden, die die Konfiguration unterstützen. Die Konfiguration wird nur auf Geräten angewendet, die in Intune registriert sind. Der Designer ermöglicht Ihnen die Konfiguration bestimmter Konfigurationswerte für die Einstellungen, die eine App zur Verfügung stellt.
 
+Klicken Sie auf **Hinzufügen**, um die Liste der Konfigurationseinstellungen auszuwählen, die Sie für die App angeben möchten.  
 Legen Sie für jeden Schlüssel und jeden Wert in der Konfiguration Folgendes fest:
 
-  - **Konfigurationsschlüssel**  
-     Der Schlüssel, der die bestimmte Einstellungskonfiguration eindeutig identifiziert.
   - **Werttyp**  
-    Der Datentyp des Konfigurationswerts. Zu den Typen gehören Integer, Real, String oder Boolean.
+    Der Datentyp des Konfigurationswerts. Für Werttypen von Zeichenfolgen können Sie auch ein Variablen- oder Zertifikatprofil als Werttyp auswählen.
   - **Konfigurationswert**  
-    Der Wert für die Konfiguration. 
+    Der Wert für die Konfiguration. Sie können aus einer Liste von Variablen- oder Zertifikatprofilen in der Dropdownliste der Konfigurationswerte eine Variable oder ein Zertifikat für den Werttyp auswählen.  Wenn Sie ein Zertifikat auswählen, wird der Zertifikatalias des auf dem Gerät bereitgestellten Zertifikats zur Laufzeit aufgefüllt.
+    
+### <a name="supported-variables-for-configuration-values"></a>Unterstützte Variablen für Konfigurationswerte
+
+Wenn Sie eine Variable als Werttypen auswählen möchten, haben Sie folgende Optionen:
+- Benutzerprinzipalnamen: z.B. **John@contoso.com**
+- Mail: z.B. **John@contoso.com**
+- Teil-UPN: z.B. **John**
+- Konto-ID: z.B. **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
+- Geräte-ID: z.B. **b9841cd9-9843-405f-be28-b2265c59ef97**
+- Benutzer-ID: z.B. **3ec2c00f-b125-4519-acf0-302ac3761822**
+- Benutzername: z.B. **John Doe**
+
 
 ## <a name="enter-the-json-editor"></a>Eingabe mit dem JSON-Editor
 
@@ -78,7 +89,7 @@ Wenn die zugewiesene App auf einem Gerät gestartet wird, wird sie mit den Einst
 Sie können auch die Berechtigung vorkonfigurieren, dass Apps auf Android-Gerätefeatures zugreifen können. Standardmäßig fordern Android-Apps, die Geräteberechtigungen erfordern – z.B. Zugriff auf den Standort oder die Gerätekamera –, die Benutzer zum Annehmen oder Ablehnen der Berechtigungen auf. Wenn eine App z.B. das Gerätemikrofon verwendet, wird der Benutzer aufgefordert, der App die Berechtigung zur Verwendung des Mikrofons zu erteilen.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie **Mobile Apps** aus.
 3. Wählen Sie unter **Verwalten** die Option **App-Konfigurationsrichtlinien** und dann **Hinzufügen** aus.
 4. Legen Sie die folgenden Details fest:

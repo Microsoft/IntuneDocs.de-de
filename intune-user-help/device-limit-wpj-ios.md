@@ -1,28 +1,28 @@
 ---
-title: "Grenzwert für Geräteregistrierungen wurde erreicht | Microsoft-Dokumentation"
+title: Grenzwert für Geräteregistrierungen wurde erreicht | Microsoft-Dokumentation
 titlesuffix: Intune Company Portal
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 51c183b0-3f84-4db9-91f9-848b15c44eb8
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8ffd35367f26713039d356f6d2d4855c8f043cbf
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4c8d6ba4f6f8a9885b0000e0d7c60ba0594504b5
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>Der Grenzwert für Geräteregistrierungen wurde erreicht
 

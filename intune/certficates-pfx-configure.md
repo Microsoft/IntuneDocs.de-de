@@ -1,28 +1,28 @@
 ---
 title: 'Verwenden von PKCS-Zertifikaten mit Microsoft Intune: Azure | Micrososft-Dokumentation'
-description: "Hinzufügen oder Erstellen von Zertifikaten für Public Key Cryptography Standards (PKCS) mit Microsoft Intune, einschließlich der Schritte zum Exportieren eines Stammzertifikats, Konfigurieren einer Zertifikatvorlage, Herunterladen und Installieren eines Microsoft Intune Certificate Connector, Erstellen eines Gerätekonfigurationsprofils, Erstellen eines PKCS-Zertifikatprofils in Azure und Ihrer Zertifizierungsstelle"
-keywords: 
+description: Hinzufügen oder Erstellen von Zertifikaten für Public Key Cryptography Standards (PKCS) mit Microsoft Intune, einschließlich der Schritte zum Exportieren eines Stammzertifikats, Konfigurieren einer Zertifikatvorlage, Herunterladen und Installieren eines Microsoft Intune Certificate Connector, Erstellen eines Gerätekonfigurationsprofils, Erstellen eines PKCS-Zertifikatprofils in Azure und Ihrer Zertifizierungsstelle
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c0668921f03b24b319c2c37837dbd2cc053370ca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 0dfcaa2e37fecc4c5a075931489c106b78c17b7e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Konfigurieren und Verwenden Ihrer PKCS-Zertifikate mit Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Zertifikate werden verwendet, um den Zugriff auf Ihre Unternehmensressourcen (z.B. ein VPN- oder ein WLAN-Netzwerk) zu authentifizieren und zu sichern. In diesem Artikel wird erläutert, wie Sie ein PKCS-Zertifikat exportieren und anschließend dieses Zertifikat zu einem Intune-Profil hinzufügen. 
 
@@ -56,7 +56,7 @@ Sie benötigen auf jedem Gerät ein Zertifikat einer Stamm- oder Zwischenzertifi
 
    Beispiel:
 
-4.  Nach Abschluss des Assistenten, jedoch vor dem Schließen des Assistenten, klicken Sie auf **Zertifikatconnector-Benutzeroberfläche starten**.
+4. Nach Abschluss des Assistenten, jedoch vor dem Schließen des Assistenten, klicken Sie auf **Zertifikatconnector-Benutzeroberfläche starten**.
 
    `certutil -ca.cert certnew.cer`
 

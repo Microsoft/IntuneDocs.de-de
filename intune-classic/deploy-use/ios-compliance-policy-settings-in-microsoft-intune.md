@@ -15,23 +15,23 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7973dd757c69bc0a63f1ff5d24973acb6086d8a4
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 58af24f4c3ed7a650323dab0072d4e5a85f5554c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Einstellungen für Kompatibilitätsrichtlinien für iOS-Geräte in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Die in diesem Thema beschriebenen Richtlinieneinstellungen gelten für Geräte mit iOS 8.0 und höher.
 
 Wenn Sie Informationen zu anderen Plattformen suchen, wählen Sie eine der folgenden Optionen:
 > [!div class="op_single_selector"]
-- [Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Einstellungen für Kompatibilitätsrichtlinien für Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
-- [Einstellungen für Kompatibilitätsrichtlinien für Windows-Geräte](windows-compliance-policy-settings-in-microsoft-intune.md)
+> - [Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Einstellungen für Kompatibilitätsrichtlinien für Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [Einstellungen für Kompatibilitätsrichtlinien für Windows-Geräte](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="system-security-settings"></a>Einstellungen für die Systemsicherheit
 ### <a name="password"></a>Kennwort

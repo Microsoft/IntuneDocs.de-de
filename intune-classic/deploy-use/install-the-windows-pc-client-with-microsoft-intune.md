@@ -1,27 +1,27 @@
 ---
 title: Installieren der PC-Clientsoftware
 description: Befolgen Sie diese Anleitung zum Verwalten Ihrer Windows-PCs durch die Microsoft Intune-Clientsoftware.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9316f78155b38f74765a353186a29dc90afce547
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 56ae374f5b930c55fbe12305f4246c52e6213a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installieren des Intune-Softwareclients auf Windows-PCs
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Windows-PCs können mithilfe der Installation der Intune-Clientsoftware registriert werden. Die Intune-Clientsoftware kann mithilfe der folgenden Methoden installiert werden:
 
@@ -39,13 +39,13 @@ Eine Lizenz für Intune ermöglicht die Installation der Intune-Clientsoftware a
 
 Mit Ausnahme der Methode, bei denen Benutzer die Intune-Clientsoftware selbst installieren, erfordern alle Methoden, dass die Software zuerst von IT-Administratoren heruntergeladen wird, damit sie anschließend den Endbenutzern bereitgestellt werden kann.
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Admin** &gt; **Download der Clientsoftware**.
+1. Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Admin** &gt; **Download der Clientsoftware**.
 
-  ![Herunterladen des Intune-PC-Clients](../media/pc-sa-client-download.png)
+   ![Herunterladen des Intune-PC-Clients](../media/pc-sa-client-download.png)
 
 2. Klicken Sie auf der Seite **Clientsoftwaredownload** auf **Clientsoftwaredownload**. Speichern Sie anschließend das Paket **Microsoft_Intune_Setup.zip**, das die Software enthält, an einem sicheren Speicherort in Ihrem Netzwerk.
 
-  Das Installationspaket der Intune-Clientsoftware enthält eindeutige und spezifische Informationen zu Ihrem Konto, die über ein eingebettetes Zertifikat verfügbar sind. Wenn nicht autorisierte Benutzer Zugriff auf das Installationspaket erhalten, können sie PCs bei dem Konto registrieren, dem das eingebettete Zertifikat entspricht, und möglicherweise Zugriff auf Unternehmensressourcen erhalten.
+   Das Installationspaket der Intune-Clientsoftware enthält eindeutige und spezifische Informationen zu Ihrem Konto, die über ein eingebettetes Zertifikat verfügbar sind. Wenn nicht autorisierte Benutzer Zugriff auf das Installationspaket erhalten, können sie PCs bei dem Konto registrieren, dem das eingebettete Zertifikat entspricht, und möglicherweise Zugriff auf Unternehmensressourcen erhalten.
 
 3. Extrahieren Sie an dem sicheren Ort in Ihrem Netzwerk den Inhalt des Installationspakets.
 

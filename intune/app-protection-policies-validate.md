@@ -1,30 +1,29 @@
 ---
-title: "Überprüfen der Einrichtung von App-Schutzrichtlinien"
+title: Überprüfen der Einrichtung von App-Schutzrichtlinien
 titleSuffix: Microsoft Intune
-description: "Erfahren Sie, wie Sie überprüfen können, ob Ihre App-Schutzrichtlinie ordnungsgemäß eingerichtet wurde und funktioniert."
-keywords: 
+description: Erfahren Sie, wie Sie überprüfen können, ob Ihre App-Schutzrichtlinie ordnungsgemäß eingerichtet wurde und funktioniert.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 980773eb59553c492ac338808476cfb55f2ddfb8
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: ddafe6037cce73c1eca82f2bc78c6197aff9acad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Überprüfen der Einrichtung von App-Schutzrichtlinien
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Überprüfen Sie, ob Ihre App-Schutzrichtlinie ordnungsgemäß eingerichtet wurde und funktioniert. Diese Anleitung gilt für App-Schutzrichtlinien im Azure-Portal.
 
@@ -42,7 +41,7 @@ Wenn der Test zeigt, dass das Verhalten Ihrer App-Schutzrichtlinie nicht wie erw
 
 #### <a name="user-app-protection-status"></a>Schutzstatus der Benutzer-App
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Monitoring + Management**.
 1. Wählen Sie **Apps verwalten** > **Überwachen** >  **Status des App-Schutzes** > **Zugewiesene Benutzer** aus.
 
 2. Wählen Sie einen Benutzer aus der Liste aus, oder suchen Sie einen Benutzer und wählen Sie Ihn aus. Wählen Sie anschließend **Benutzer auswählen** aus. Am Anfang der Spalte **App-Berichterstellung** können Sie sehen, ob der Benutzer für den App-Schutz lizenziert ist. Zudem können Sie sehen, ob der Benutzer für Office 365 und den App-Status aller Geräte des Benutzers lizenziert ist.

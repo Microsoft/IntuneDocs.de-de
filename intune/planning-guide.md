@@ -15,15 +15,15 @@ ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 074490428b52effbc4a555a63d997a47da55546e
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 7990c559429f5963884565bef4f18c09d03746dd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Bereitstellungsplanungs-, Entwurfs- und Implementierungshandbuch für Intune
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [note for both-portals](./includes/note-for-both-portals.md)]
 
 Eine erfolgreiche Bereitstellung von Microsoft Intune beginnt mit einer guten Planung und einem guten Entwurf. Zweck dieses Handbuchs ist es, Sie schrittweise durch den Prozess der Entwicklung eines Bereitstellungsplans, Erstellung eines Entwurfs, des Onboardings von Intune und der Einführung in die Produktion zu begleiten.
 

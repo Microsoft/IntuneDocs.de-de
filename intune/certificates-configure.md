@@ -1,28 +1,28 @@
 ---
-title: "Erstellen eines Zertifikatprofils in Microsoft Intune – Azure | Microsoft-Dokumentation"
-description: "Sie können für Ihre Geräte ein Zertifikatprofil hinzufügen oder erstellen, indem Sie eine SCEP- oder PKCS-Zertifikatumgebung konfigurieren, das öffentliche Zertifikat exportieren, das Profil im Azure-Portal erstellen und anschließend den Zertifikatprofilen in Microsoft Intune im Azure-Portal SCEP oder PKCS zuweisen"
-keywords: 
+title: Erstellen eines Zertifikatprofils in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Sie können für Ihre Geräte ein Zertifikatprofil hinzufügen oder erstellen, indem Sie eine SCEP- oder PKCS-Zertifikatumgebung konfigurieren, das öffentliche Zertifikat exportieren, das Profil im Azure-Portal erstellen und anschließend den Zertifikatprofilen in Microsoft Intune im Azure-Portal SCEP oder PKCS zuweisen
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 867a846b43edb3392db2be11e7ea544fa9317b6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Konfigurieren eines Zertifikatprofils für Ihre Geräte in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Wenn Sie Benutzern den Zugriff auf Unternehmensressourcen über VPN, WLAN oder E-Mail-Profile gestatten, können Sie diese Verbindungen mit Zertifikaten authentifizieren. Bei der Verwendung von Zertifikaten ist die Eingabe von Benutzernamen und Kennwörtern zum Authentifizieren von Verbindungen nicht erforderlich.
 
@@ -86,8 +86,8 @@ Sie importieren dieses Zertifikat, wenn Sie ein vertrauenswürdiges Zertifikatpr
 Erstellen Sie ein vertrauenswürdiges Zertifikatprofil, bevor Sie ein SCEP- oder PKCS-Zertifikatprofil erstellen können. Sie benötigen für jede Geräteplattform ein vertrauenswürdiges Zertifikatprofil und ein SCEP- oder PKCS-Profil. Die Schritte zur Erstellung vertrauenswürdiger Zertifikate sind bei jeder Geräteplattform ähnlich.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
-3. Wählen Sie im Bereich **Intune** die Option **Gerätekonfiguration** aus.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
 2. Klicken Sie im Bereich **Gerätekonfiguration** auf **Verwalten** > **Profile**.
 3. Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
 4. Geben Sie im Bereich **Profil erstellen** einen **Namen** und eine **Beschreibung** für das vertrauenswürdige Zertifikatprofil ein.

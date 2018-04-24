@@ -1,29 +1,29 @@
 ---
-title: "Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien"
+title: Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien
 titlesuffix: Microsoft Intune
-description: "Verwenden Sie das App Wrapping Tool und das App SDK, um Ihre benutzerdefinierten Branchenanwendungen für die Verwendung von App-Schutzrichtlinien in Microsoft Intune zu aktivieren."
-keywords: 
+description: Verwenden Sie das App Wrapping Tool und das App SDK, um Ihre benutzerdefinierten Branchenanwendungen für die Verwendung von App-Schutzrichtlinien in Microsoft Intune zu aktivieren.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d61ba21ba465037fbf2ef4e1c7423f6649fc810f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Sie können die Verwendung von App-Schutzrichtlinien bei Ihren Apps mit dem Intune App Wrapping Tool oder dem Intune App SDK aktivieren. Verwenden Sie diese Informationen, um diese beiden Methoden und den Zeitpunkt für ihre Verwendung kennenzulernen.
 
@@ -70,8 +70,8 @@ Weitere Informationen zum SDK finden Sie unter [Übersicht](app-sdk.md). Ein Ein
 
 |**Intune App SDK** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Ja – [Intune App SDK-Xamarin-Komponente](app-sdk-xamarin.md) verwenden|Ja – [Intune App SDK-Cordova-Plug-In](app-sdk-cordova.md) verwenden|
-|**Android**| Ja – [Intune App SDK-Xamarin-Komponente](app-sdk-xamarin.md) verwenden|Ja – [Intune App SDK-Cordova-Plug-In](app-sdk-cordova.md) verwenden|
+|**iOS**|Ja – [Intune App SDK-Xamarin-Bindungen](app-sdk-xamarin.md) verwenden|Ja – [Intune App SDK-Cordova-Plug-In](app-sdk-cordova.md) verwenden|
+|**Android**| Ja – [Intune App SDK-Xamarin-Bindungen](app-sdk-xamarin.md) verwenden|Ja – [Intune App SDK-Cordova-Plug-In](app-sdk-cordova.md) verwenden|
 
 ## <a name="feature-comparison"></a>Funktionsvergleich
 In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK und App Wrapping Tool verwenden können.
@@ -79,30 +79,30 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 > [!NOTE]
 > Das App Wrapping Tool kann mit eigenständigen Intune-Bereitstellungen oder mit Intune mit Configuration Manager verwendet werden.
 
-|Komponente|App SDK|App Wrapping Tool|
-|-----------|---------------------|-----------|
-|Einschränken von anzuzeigenden Webinhalten in einem unternehmensverwalteten Browser|X|X|
-|Verhindern von Android-, iTunes- oder iCloud-Sicherungen|X|X|
-|App Übertragung von Daten an andere Apps erlauben|X|X|
-|App Empfang von Daten aus anderen Apps erlauben|X|X|
-|Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken|X|X|
-|Einfache PIN für Zugriff erforderlich|X|X|
-|Ersetzen der integrierten App-PIN durch die Intune-PIN|X||
-|Angeben der Anzahl von Versuchen vor dem Zurücksetzen der PIN|X|X|
-|Fingerabdruck anstelle von PIN zulassen |X|X|
-|Unternehmensanmeldeinformationen für Zugriff erforderlich|X|X|
-|Blockieren der Ausführung von verwalteten Apps auf per Jailbreak oder Rooting manipulierten Geräten|X|X|
-|App-Daten verschlüsseln|X|X|
-|Erneutes Überprüfen der Zugriffsanforderungen nach einer angegebenen Anzahl von Minuten|X|X|
-|Angeben der Offlinetoleranzperiode|X|X|
-|Blockieren von Bildschirmaufnahmen (nur Android)|X|X|
-|Unterstützung von MAM ohne Geräteregistrierung|X|X|
-|Vollständiges Zurücksetzen|X|X|
-|Selektives Zurücksetzen <br></br>**Hinweis:** Für iOS wird die App auch entfernt, wenn das Verwaltungsprofil entfernt wird.|X||
-|Verhindern von „Speichern unter“ |X||
-|Angestrebte Anwendungskonfiguration |X||
-|Unterstützung von mehreren Identitäten|X||
-|Anpassbarer Stil |X|||
+|                                                         Komponente                                                          | App SDK | App Wrapping Tool |
+|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
+|                              Einschränken von anzuzeigenden Webinhalten in einem unternehmensverwalteten Browser                              |    X    |         X         |
+|                                        Verhindern von Android-, iTunes- oder iCloud-Sicherungen                                        |    X    |         X         |
+|                                         App Übertragung von Daten an andere Apps erlauben                                         |    X    |         X         |
+|                                        App Empfang von Daten aus anderen Apps erlauben                                         |    X    |         X         |
+|                                      Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken                                       |    X    |         X         |
+|                                              Einfache PIN für Zugriff erforderlich                                               |    X    |         X         |
+|                                         Ersetzen der integrierten App-PIN durch die Intune-PIN                                         |    X    |                   |
+|                                     Angeben der Anzahl von Versuchen vor dem Zurücksetzen der PIN                                      |    X    |         X         |
+|                                             Fingerabdruck anstelle von PIN zulassen                                             |    X    |         X         |
+|                                         Unternehmensanmeldeinformationen für Zugriff erforderlich                                         |    X    |         X         |
+|                             Blockieren der Ausführung von verwalteten Apps auf per Jailbreak oder Rooting manipulierten Geräten                              |    X    |         X         |
+|                                                     App-Daten verschlüsseln                                                     |    X    |         X         |
+|                           Erneutes Überprüfen der Zugriffsanforderungen nach einer angegebenen Anzahl von Minuten                            |    X    |         X         |
+|                                             Angeben der Offlinetoleranzperiode                                             |    X    |         X         |
+|                                           Blockieren von Bildschirmaufnahmen (nur Android)                                            |    X    |         X         |
+|                                        Unterstützung von MAM ohne Geräteregistrierung                                         |    X    |         X         |
+|                                                        Vollständiges Zurücksetzen                                                         |    X    |         X         |
+| Selektives Zurücksetzen <br></br><strong>Hinweis:</strong> Für iOS wird die App auch entfernt, wenn das Verwaltungsprofil entfernt wird. |    X    |                   |
+|                                                    Verhindern von „Speichern unter“                                                     |    X    |                   |
+|                                            Angestrebte Anwendungskonfiguration                                            |    X    |                   |
+|                                                Unterstützung von mehreren Identitäten                                                |    X    |                   |
+|                                                    Anpassbarer Stil                                                    |    X    |                   |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

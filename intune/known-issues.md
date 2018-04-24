@@ -1,37 +1,35 @@
 ---
-title: Bekannte Probleme in Microsoft Intune
-titlesuffix: Microsoft Intune
+title: Bekannte Probleme in Microsoft Intune – Azure | Microsoft-Dokumentation
 description: Informationen zu bekannten Problemen in Microsoft Intune.
-keywords: 
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/11/2018
+ms.date: 03/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9933e6ed7f8ee636cb0a9416ff2409e2054e3aa0
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d0a8a189e708ed140c3cda987a20cebb562fdb34
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekannte Probleme in Microsoft Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-
-In diesem Thema erhalten Sie Informationen zu bekannten Problemen in Microsoft Intune.
+In diesem Artikel erhalten Sie Informationen zu bekannten Problemen in Microsoft Intune.
 
 Wenn Sie einen Fehler melden möchten, der hier nicht aufgeführt ist, [öffnen Sie eine Supportanfrage](get-support.md).
 
-Wenn Sie sich ein neues Feature für Intune wünschen, können Sie auf unserer [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console)-Website einen Bericht erstellen.
+Wenn Sie sich ein neues Feature für Intune wünschen, können Sie auf der [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console)-Website einen Bericht erstellen.
 
 ## <a name="migration"></a>Migration
 
@@ -45,7 +43,7 @@ Beim Migrieren von Intune zum Azure-Portal könnten Sie eine neue Gruppe mit dem
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Statusblätter für migrierte Richtlinien funktionieren nicht
 
-Sie können keine Statusinformationen für Richtlinien anzeigen, die aus dem klassischen Intune-Portal in das Azure-Portal migriert wurden. Im klassischen Portal können Sie jedoch weiterhin Berichte für diese Richtlinien anzeigen. Zum Anzeigen von Statusinformationen für migrierte Konfigurationsrichtlinien müssen Sie diese im Azure-Portal neu erstellen.
+Sie können keine Statusinformationen für Richtlinien anzeigen, die aus dem klassischen Azure-Portal in das Azure-Portal migriert wurden. Im klassischen Portal können Sie jedoch weiterhin Berichte für diese Richtlinien anzeigen. Zum Anzeigen von Statusinformationen für migrierte Konfigurationsrichtlinien müssen Sie diese im Azure-Portal neu erstellen.
 
 ## <a name="apps"></a>Apps
 
@@ -66,9 +64,8 @@ Für Geräte, die nicht bei Intune registriert sind, können Sie in den Einstell
 Wenn Sie (über **Erweiterte Einstellungen** > **Umkreisnetzwerk** > **Geschützte Domäne hinzufügen**) weitere Domänen hinzufügen, können Sie die Richtlinie nicht speichern. Die angezeigte Fehlermeldung wird in Kürze geändert, um mehr Genauigkeit zu bieten.
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Cisco AnyConnect VPN-Client-Unterstützung
+Das neueste Release des Cisco AnyConnect VPN-Clients (4.0.07072) ist derzeit nicht mit Intune kompatibel. Ein zukünftiges Intune-Update wird die Kompatibilität mit dieser Version des VPN-Clients beinhalten. Bis dahin wird empfohlen, dass Sie Ihren Cisco AnyConnect VPN-Client nicht aktualisieren und weiterhin die vorhandene Version verwenden.
 
-Das neueste Release des Cisco AnyConnect VPN-Clients (4.0.07072) ist derzeit nicht mit Intune kompatibel.
-Ein zukünftiges Intune-Update wird die Kompatibilität mit dieser Version des VPN-Clients beinhalten. Bis dahin wird empfohlen, dass Sie Ihren Cisco AnyConnect VPN-Client nicht aktualisieren und weiterhin die vorhandene Version verwenden.
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>Verwenden des numerischen Kennworttyps mit macOS Sierra-Geräten
 

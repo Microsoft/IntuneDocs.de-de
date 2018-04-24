@@ -1,27 +1,27 @@
 ---
 title: Senden von Registrierungsfehlermeldungen an den Support Ihres Unternehmens | Microsoft-Dokumentation
 description: Senden von Registrierungsfehlern an Ihren Administrator
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d7c871b8-e5d8-4912-b87f-7e6bc59897be
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 937fbacbe0997dd2c8f06f0d4cbd8b5cdc197c68
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2e07fb54cd2377b0ac164a172e0760bb6e1efef0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="send-enrollment-errors-to-your-company-support"></a>Senden von Registrierungsfehlermeldungen an den Support Ihres Unternehmens
 

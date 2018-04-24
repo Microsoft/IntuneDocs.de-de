@@ -1,27 +1,27 @@
 ---
 title: Senden von iOS-Protokollen an Microsoft-Entwickler | Microsoft-Dokumentation
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 733a590e-836f-4941-bfd9-6ae53ba25e06
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 097dbc1951830c4c28d8fd4594c3a136082d72b2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a861a491d100fa7f7766d6f638c86f866b336369
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>Senden von Protokollen an Unternehmensportal-Entwickler für iOS-Geräte
 

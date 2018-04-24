@@ -1,27 +1,27 @@
 ---
-title: "Microsoft Intune-Richtlinie zum Zulassen/Blockieren von Apps für Samsung KNOX"
-titlesuffix: 
-description: "Erstellen eines benutzerdefinierten Profils zum Zulassen und Blockieren von Apps für Samsung KNOX Standard-Geräte"
-keywords: 
+title: Microsoft Intune-Richtlinie zum Zulassen/Blockieren von Apps für Samsung KNOX
+titlesuffix: ''
+description: Erstellen eines benutzerdefinierten Profils zum Zulassen und Blockieren von Apps für Samsung KNOX Standard-Geräte
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 95f35cfd869975a43fd54a1e6a9ff6ae35ffa6af
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 61a4d059eb771e22075796def5e1a273b02d932e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Verwenden von benutzerdefinierten Richtlinien zum Zulassen und Blockieren von Apps für Samsung KNOX Standardgeräte in Microsoft Intune 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Verwenden Sie die in diesem Artikel beschriebenen Verfahren, um eine benutzerdefinierte Microsoft Intune-Richtlinie zu erstellen, die eine der folgenden Listen erstellt:
 

@@ -1,28 +1,28 @@
 ---
-title: "Einstellungen für Geräteeinschränkungen für Android in Microsoft Intune"
-titlesuffix: 
-description: "In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Android-Geräten kennen."
-keywords: 
+title: Einstellungen für Geräteeinschränkungen für Android in Microsoft Intune
+titlesuffix: ''
+description: In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Android-Geräten kennen.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 77942ef6a5f25708ce43910cde94133e174b4731
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Android und Samsung KNOX Standard in Microsoft Intune 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In diesem Artikel lernen Sie alle Einstellungen für Geräteeinschränkungen in Microsoft Intune kennen, die Sie für Android-Geräte konfigurieren können.
 
@@ -93,7 +93,7 @@ Suchen Sie im [Apps-Bereich von Google Play](https://play.google.com/store/apps)
 
 Öffnen Sie die Installationsseite für die App, und kopieren Sie dann die URL in die Zwischenablage. Jetzt können Sie diese URL in der Liste mit kompatiblen oder nicht kompatiblen Apps verwenden.
 
-Beispiel: Durchsuchen Sie den [App-Bereich von Google Play](https://play.google.com/store/apps) nach **Microsoft Planner**. Verwenden Sie die URL **https://play.google.com/store/apps/details?id=com.microsoft.planner**.
+Beispiel: Durchsuchen Sie den [App-Bereich von Google Play](https://play.google.com/store/apps) nach **Microsoft Planner**. Verwenden Sie diese URL: **https://play.google.com/store/apps/details?id=com.microsoft.planner**.
 
 ### <a name="additional-options"></a>Zusätzliche Optionen
 

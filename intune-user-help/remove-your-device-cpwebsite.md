@@ -1,27 +1,27 @@
 ---
-title: "Entfernen Ihres Geräts aus dem Unternehmensportal | Microsoft-Dokumentation"
-description: "Entfernen eines Geräts aus dem Unternehmensportal"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Entfernen Ihres Geräts aus dem Unternehmensportal | Microsoft-Dokumentation
+description: Entfernen eines Geräts aus dem Unternehmensportal
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4064b18a9553c3818008c0641b9428a03733f7c2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c7cd6380cbb596779a3094b18eef4e91b6161871
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Entfernen Ihres Geräts aus dem Unternehmensportal
 
@@ -29,17 +29,17 @@ Wenn Sie Ihr Gerät nicht mehr von Ihrem Unternehmen oder Ihrer Organisation ver
 
 So entfernen Sie Ihr Gerät:
 
-1.  Tippen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
+1. Tippen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
 
-  ![Eine Abbildung der Unternehmensportalwebsite mit erweitertem Seitenmenü links auf dem Bildschirm, mit den Schaltflächen „Startseite“, „Alle Apps“, „Meine Geräte“, „Helpdesk“ und „Abmelden“.](/media/iwp-expanded-sidebar.png)
+   ![Eine Abbildung der Unternehmensportalwebsite mit erweitertem Seitenmenü links auf dem Bildschirm, mit den Schaltflächen „Startseite“, „Alle Apps“, „Meine Geräte“, „Helpdesk“ und „Abmelden“.](/media/iwp-expanded-sidebar.png)
 
 2. Wählen Sie auf der Seite __Meine Geräte__ den Namen des Geräts aus, das Sie entfernen möchten.
 
     ![Ein Screenshot der Seite „Meine Geräte“ mit mehreren nicht identifizierten Geräten oberhalb der Banneraufforderung, nicht aufgelistete Geräte zu registrieren oder nicht identifizierte Geräte zu identifizieren.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Das Gerät wird in einem Popupfenster geöffnet. Klicken Sie auf die Schaltfläche **Entfernen**.
+3. Das Gerät wird in einem Popupfenster geöffnet. Klicken Sie auf die Schaltfläche **Entfernen**.
 
-    ![Alle Optionen für ein ausgewähltes Gerät auf der Unternehmensportalwebsite, darunter „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/iwp-screen-with-all-options.png)
+   ![Alle Optionen für ein ausgewähltes Gerät auf der Unternehmensportalwebsite, darunter „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/iwp-screen-with-all-options.png)
 
 4. Lesen Sie die Warnung, und tippen Sie anschließend auf **Entfernen**, um Ihr Gerät aus dem Unternehmensportal zu entfernen.
 

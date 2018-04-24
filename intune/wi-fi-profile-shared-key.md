@@ -1,29 +1,33 @@
 ---
-title: "Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel in Microsoft Intune – Azure | Microsoft-Dokumentation"
-description: "Verwenden Sie ein benutzerdefiniertes Profil, um ein WLAN-Profil mit einem vorinstallierten Schlüssel zu erstellen, und rufen Sie XML-Beispielcode für Android- und Windows-WLAN-Profile sowie EAP-basierte WLAN-Profile in Microsoft Intune ab."
-keywords: 
+title: Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Verwenden Sie ein benutzerdefiniertes Profil, um ein WLAN-Profil mit einem vorinstallierten Schlüssel zu erstellen, und rufen Sie XML-Beispielcode für Android- und Windows-WLAN-Profile sowie EAP-basierte WLAN-Profile in Microsoft Intune ab.
+keywords: ''
 author: mandia
 ms.author: MandiOhlinger
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85543d87ca79fa301ee1e9c242c053c1c34e18c3
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 27ced5debc7eb063be03f4e6a1932425717318af
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Verwenden eines benutzerdefinierten Geräteprofils zum Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel – Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Vorinstallierte Schlüssel (Pre-shared keys, PSK) werden üblicherweise verwendet, um Benutzer in WLANs (drahtlosen Netzwerken) zu authentifizieren. In Intune können Sie mit einem vorinstallierten Schlüssel ein WLAN-Profil erstellen. Verwenden Sie zum Erstellen des Profils das Intune-Feature **Benutzerdefinierte Geräteprofile**. Dieser Artikel enthält auch einige Beispiele für die Erstellung eines EAP-basierten WLAN-Profils.
+
+> [!IMPORTANT]
+>- Die Verwendung eines vorinstallierten Schlüssels mit Windows 10 verursacht einen Wartungsfehler in Intune. In diesem Fall wird das WLAN-Profil ordnungsgemäß dem Gerät zugewiesen, und das Profil funktioniert wie erwartet.
+>- Vergewissern Sie sich, dass die Datei geschützt ist, wenn Sie ein WLAN-Profil exportieren, das einen vorinstallierten Schlüssel enthält. Der Schlüssel wird in Nur-Text angegeben, also müssen Sie die Sicherheit des Schlüssels selbst verantworten.
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
@@ -46,15 +50,15 @@ Sie können ein benutzerdefiniertes Profil mit einem vorinstallierten Schlüssel
 
    d. **OMA-URI**:
 
-    - **Für Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **Für Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Für Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **Für Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-    > Stellen Sie sicher, dass Sie den Punkt am Anfang eingeben.
+     > [!NOTE]
+     > Stellen Sie sicher, dass Sie den Punkt am Anfang eingeben.
 
-    SSID steht für die SSID, für die Sie die Richtlinie erstellen. Geben Sie beispielsweise `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings` ein.
+     SSID steht für die SSID, für die Sie die Richtlinie erstellen. Geben Sie beispielsweise `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings` ein.
 
-  e. **Wertfeld** Hier fügen Sie Ihren XML-Code ein. Sehen Sie sich die Beispiele in diesem Artikel an. Aktualisieren Sie jeden Wert mit dem entsprechenden Wert für Ihre Netzwerkeinstellungen. Der Kommentarabschnitt des Codes enthält einige Hinweise.
+   e. **Wertfeld** Hier fügen Sie Ihren XML-Code ein. Sehen Sie sich die Beispiele in diesem Artikel an. Aktualisieren Sie jeden Wert mit dem entsprechenden Wert für Ihre Netzwerkeinstellungen. Der Kommentarabschnitt des Codes enthält einige Hinweise.
 3. Klicken Sie auf **OK**, speichern Sie, und weisen Sie die Richtlinie anschließend zu.
 
     > [!NOTE]
@@ -203,7 +207,7 @@ Sie können die XML-Datei auch mit folgenden Schritten aus einer vorhandenen WLA
 
 1. Öffnen Sie den Ordner `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` auf einem Computer, der mit dem WLAN verbunden ist oder kürzlich verbunden war.
 
-  Am besten eignet sich ein Computer, der noch nicht mit vielen WLANs verbunden war. Andernfalls müssen Sie möglicherweise jedes Profil durchsuchen, um das richtige zu finden.
+   Am besten eignet sich ein Computer, der noch nicht mit vielen WLANs verbunden war. Andernfalls müssen Sie möglicherweise jedes Profil durchsuchen, um das richtige zu finden.
 
 2. Durchsuchen Sie die XML-Dateien, um die Datei mit dem richtigen Namen zu finden.
 3. Nachdem Sie die richtige XML-Datei gefunden haben, kopieren Sie den XML-Code in das Feld **Daten** auf der Seite mit den OMA-URI-Einstellungen.

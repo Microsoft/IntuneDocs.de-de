@@ -1,35 +1,35 @@
 ---
 title: WLAN-Verbindungen
 description: Verwenden Sie WLAN-Profile, um Benutzern zu helfen, eine Verbindung mit Ihren WLAN-Netzwerken herzustellen.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99ac426d2210aa22a7c0151aea59e14b848bbe1f
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 5eebe251371d466421bfe936a1f991c988e490b0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Konfigurieren von Geräten zur Herstellung einer Verbindung mit Ihren WLAN-Unternehmensnetzwerken
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Verwenden Sie WLAN-Profile in Microsoft Intune, um Benutzern und Geräten in Ihrer Organisation Einstellungen für Drahtlosnetzwerke bereitzustellen. Wenn Sie ein WLAN-Profil bereitstellen, erhalten Ihre Benutzer Zugriff auf Ihr Unternehmens-WLAN, ohne es selbst konfigurieren zu müssen.
 
 Beispiel: Sie installieren ein neues WLAN-Netzwerk mit dem Namen **Contoso Wi-Fi** und möchten alle iOS-Geräte so einrichten, dass sie eine Verbindung mit diesem Netzwerk herstellen können. Gehen Sie dazu folgendermaßen vor:
 
-![Zusammenfassung des WLAN-Profilprozesses](..\media\wi-fi-process-diagram.png)
+![Zusammenfassung des WLAN-Profilprozesses](../media/wi-fi-process-diagram.png)
 
 1.   Erstellen Sie ein WLAN-Profil mit den Einstellungen, die zum Verbinden mit dem Drahtlosnetzwerk **Contoso Wi-Fi** erforderlich sind.
 
@@ -67,23 +67,25 @@ Für Geräte mit Windows 8.1, Windows 10 Desktop oder mobilen Betriebssystemen k
 
 Es gibt keine empfohlenen Einstellungen für diesen Richtlinientyp. Sie müssen eine benutzerdefinierte Richtlinie erstellen.
 
-3.  Geben Sie den Namen und die Beschreibung für das Profil an.
+3. Geben Sie den Namen und die Beschreibung für das Profil an.
 
 4. Geben Sie die Werte der **Netzwerkverbindungen** an.
- - **SSID (Service Set Identifier)**: Wählen Sie diese Option aus, wenn für die Benutzer anstelle der SSID der Netzwerkname angezeigt werden soll.
- - **Verbinden, wenn das Netzwerk nicht seinen Namen überträgt (SSID)**: Wählen Sie diese Option aus, um Geräte mit dem Netzwerk zu verbinden, wenn es nicht in der Liste der Netzwerke angezeigt wird (weil es ausgeblendet ist und seinen Namen nicht sendet).
+   - **SSID (Service Set Identifier)**: Wählen Sie diese Option aus, wenn für die Benutzer anstelle der SSID der Netzwerkname angezeigt werden soll.
+   - **Verbinden, wenn das Netzwerk nicht seinen Namen überträgt (SSID)**: Wählen Sie diese Option aus, um Geräte mit dem Netzwerk zu verbinden, wenn es nicht in der Liste der Netzwerke angezeigt wird (weil es ausgeblendet ist und seinen Namen nicht sendet).
 
 5. Konfigurieren Sie die **Sicherheitseinstellungen** für die ausgewählte Plattform. Die verfügbaren Einstellungen hängen von den Typen der Drahtlossicherheit ab, die Sie auswählen. Sie werden unter [Sicherheitseinstellungen](#security-settings) beschrieben.
 
 6. Konfigurieren Sie **Proxyeinstellungen** (nur iOS und Mac OS X).
 
-    |Name der Einstellung|Weitere Informationen|Verwendung|
-    |----------------|-------------------|-------------|
-    |**Proxyeinstellungen für diese WLAN-Verbindung**|Wählen Sie die Art der Proxyeinstellungen aus:<br /><br />-   **Keine** (Standard)<br />-   **Manuell**: Sie möchten die URL und die Portnummer des Proxyservers manuell angeben.<br />-   **Automatisch**: Sie möchten eine Konfigurationsdatei verwenden, um den Proxyserver zu konfigurieren.|Immer|
-    |**Proxyserveradresse** und **Portnummer**|Geben Sie die URL und die Portnummer des Proxyservers an.|Wenn **Proxyeinstellungen für diese WLAN-Verbindung** auf **Manuell** festgelegt wurde.|
-    |**Proxyserver-URL**|Geben Sie die URL der Datei an, die die Proxyservereinstellungen enthält.|Wenn **Proxyeinstellungen für diese WLAN-Verbindung** auf **Automatisch** festgelegt wurde.|
 
-7.  Speichern des WLAN-Profils
+   |                              Name der Einstellung                              |                                                                                                                                Weitere Informationen                                                                                                                                 |                                            Verwendung                                            |
+   |------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+   |       <strong>Proxyeinstellungen für diese WLAN-Verbindung</strong>        | Wählen Sie die Art der Proxyeinstellungen aus:<br /><br />-   <strong>Keine</strong> (Standard)<br />-   <strong>Manuell</strong>: Sie möchten die URL und die Portnummer des Proxyservers manuell angeben.<br />-   <strong>Automatisch</strong>: Sie möchten eine Konfigurationsdatei verwenden, um den Proxyserver zu konfigurieren. |                                              Immer                                               |
+   | <strong>Proxyserveradresse</strong> und <strong>Portnummer</strong> |                                                                                                              Geben Sie die URL und die Portnummer des Proxyservers an.                                                                                                               |  Wenn <strong>Proxyeinstellungen für diese WLAN-Verbindung</strong> auf <strong>Manuell</strong> festgelegt wurde.   |
+   |                   <strong>Proxyserver-URL</strong>                    |                                                                                                      Geben Sie die URL der Datei an, die die Proxyservereinstellungen enthält.                                                                                                       | Wenn <strong>Proxyeinstellungen für diese WLAN-Verbindung</strong> auf <strong>Automatisch</strong> festgelegt wurde. |
+
+
+7. Speichern des WLAN-Profils
 
 Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** des Arbeitsbereichs **Richtlinie** angezeigt. Informationen zur Bereitstellung des Profils finden Sie unter **Nächste Schritte**.
 
@@ -177,5 +179,5 @@ Diese Tabellen enthalten die Details für die Sicherheitseinstellungen, die für
 |**Identitätsschutz aktivieren (äußere Identität)**|Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein.<br /><br />Während der Authentifizierung wird anfänglich diese anonyme Identität gesendet. Die tatsächliche Identifizierung wird in einem sicheren Tunnel gesendet.|Bei Festlegung von **PEAP**, **EAP-TTLS** oder **EAP-FAST** als **EAP-Typ**.|
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 Unter [WLAN-Profil mit vorinstalliertem Schlüssel](pre-shared-key-wi-fi-profile.md) erfahren Sie, wie Sie ein WLAN-Profil mit einem vorinstallierten Schlüssel erstellen.

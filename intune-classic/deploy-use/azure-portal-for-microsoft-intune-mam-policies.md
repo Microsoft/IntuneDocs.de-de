@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae0acf53a4987dac21e576826477d32da1f56155
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2e3e71f52979f6285a14c5cc4fe26ea912cb3a42
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-portal-for-intune-app-protection-policies"></a>Azure-Portal für App-Schutzrichtlinien für Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Das Azure-Portal wird verwendet, um App-Schutzrichtlinien für folgende Apps zu verwalten:
 
@@ -32,9 +32,9 @@ Das Azure-Portal wird verwendet, um App-Schutzrichtlinien für folgende Apps zu 
 - Apps, die auf Geräten ausgeführt werden, die **nicht** in einer MDM-Lösung registriert sind.
 - Apps, die auf Geräten ausgeführt werden, die **in einer MDM-Lösung von Drittanbietern registriert sind**.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Das Azure-Portal ist die neue Administratorkonsole für die Erstellung von App-Schutzrichtlinien. Sie können jedoch auch eine App-Schutzrichtlinie erstellen, die Apps für Geräte unterstützt, die bei Intune registriert sind, indem Sie die [Intune-Verwaltungskonsole](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) für MDM-Szenarios verwenden.
-
+> 
 > Möglicherweise sind in der Intune-Verwaltungskonsole nicht alle App-Schutzrichtlinieneinstellungen verfügbar. Darüber hinaus werden die Richtlinien, die im Azure-Portal erstellt wurden, die in der Intune-Verwaltungskonsole überschreiben, wenn Sie App-Schutzrichtlinien sowohl in der Intune-Verwaltungskonsole als auch im Azure-Portal erstellen. In diesem Szenario werden die App-Schutzrichtlinien des Azure-Portals auf die Apps angewendet und für Benutzer bereitgestellt.
 
 

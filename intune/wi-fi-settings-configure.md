@@ -1,27 +1,27 @@
 ---
 title: So konfigurieren Sie Intune-WLAN-Einstellungen
 titleSuffix: Microsoft Intune
-description: "Erfahren Sie, wie Sie mit Microsoft Intune WLAN-Einstellungen auf Geräten konfigurieren, die Sie verwalten."
-keywords: 
+description: Erfahren Sie, wie Sie mit Microsoft Intune WLAN-Einstellungen auf Geräten konfigurieren, die Sie verwalten.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9a550e2963fa60a91db3ef63f7771bc4ca352d98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>So konfigurieren Sie WLAN-Einstellungen in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Verwenden Sie WLAN-Profile in Microsoft Intune, um Benutzern und Geräten in Ihrer Organisation Einstellungen für Drahtlosnetzwerke zuzuweisen. Wenn Sie ein WLAN-Profil zuweisen, erhalten Ihre Benutzer Zugriff auf Ihr Unternehmens-WLAN, ohne es selbst konfigurieren zu müssen.
 
@@ -47,8 +47,8 @@ Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfiguri
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Erstellen eines Geräteprofils mit WLAN-Einstellungen
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
-3. Wählen Sie im Bereich **Intune** die Option **Gerätekonfiguration** aus.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
 2. Klicken Sie im Bereich **Gerätekonfiguration** im Abschnitt **Verwalten** auf **Profile**.
 3. Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
 4. Geben Sie im Bereich **Profil erstellen** einen **Namen** und eine **Beschreibung** für das WLAN-Profil ein.

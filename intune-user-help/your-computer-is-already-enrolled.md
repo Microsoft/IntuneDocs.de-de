@@ -1,27 +1,27 @@
 ---
 title: Ihr Computer ist bereits registriert | Microsoft-Dokumentation
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8d3a40f5-99e9-48dc-9706-f7a3a23e5704
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e3152de325ad6893dee2d305d650d6e759a0581c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fac158e7c0df5753574b092be24d9f8ee74eedea
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="your-computer-is-already-enrolled"></a>Ihr Computer ist bereits registriert
 

@@ -1,29 +1,29 @@
 ---
-title: "Hinzufügen von Unternehmensbezeichnern zu Intune"
+title: Hinzufügen von Unternehmensbezeichnern zu Intune
 titlesuffix: Microsoft Intune
-description: "Erfahren Sie, wie Sie in Microsoft Intune Unternehmensbezeichner (Registrierungsmethode, IMEI- und Seriennummern) hinzufügen."
-keywords: 
+description: Erfahren Sie, wie Sie in Microsoft Intune Unternehmensbezeichner (Registrierungsmethode, IMEI- und Seriennummern) hinzufügen.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d9557c5f962390a9893109bc6f5175b1e709f7cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifizieren von Geräten als unternehmenseigen
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Als Intune-Administrator können Sie Geräte als unternehmenseigen identifizieren, um die Verwaltung und Identifizierung zu optimieren. Intune kann zusätzliche Verwaltungsaufgaben durchführen und zusätzliche Informationen sammeln, wie etwa die vollständige Telefonnummer und einen Bestand an Apps von unternehmenseigenen Geräten. Sie haben auch die Möglichkeit, Gerätebeschränkungen festzulegen, um die Registrierung von Geräten, die kein Unternehmenseigentum sind, zu blockieren.
 
@@ -72,7 +72,7 @@ Diese CSV-Datei wird bei der Anzeige in einem Text-Editor folgendermaßen angeze
 
 1. Wählen Sie [in Intune im Azure-Portal](https://portal.azure.com) die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** aus, und klicken Sie dann auf **Hinzufügen**.
 
- ![Arbeitsbereich des Bezeichners von Unternehmensgeräten mit hervorgehobener Schaltfläche „Hinzufügen“](./media/add-corp-id.png)
+   ![Arbeitsbereich des Bezeichners von Unternehmensgeräten mit hervorgehobener Schaltfläche „Hinzufügen“](./media/add-corp-id.png)
 
 2. Geben Sie auf dem Blatt **Bezeichner hinzufügen** den Bezeichnertyp an, **IMEI** oder **Seriennummer**. Sie können angeben, ob für zuvor importierte Zahlen Folgendes gilt: **Hiermit überschreiben Sie Details für vorhandene Bezeichner**.
 
@@ -97,7 +97,7 @@ Die Geräteeigenschaften zeigen den **Besitz** für jeden Gerätedatensatz in In
 
 **So ändern Sie den Gerätebesitz:**
 1. Navigieren Sie in [Intune im Azure-Portal](https://portal.azure.com) zu **Geräte**, und wählen Sie das Gerät aus.
-3. Wählen Sie **Eigenschaften** aus.
-4. Geben Sie den **Gerätebesitz** als **Persönlich** oder **Unternehmen** an.
+2. Wählen Sie **Eigenschaften** aus.
+3. Geben Sie den **Gerätebesitz** als **Persönlich** oder **Unternehmen** an.
 
-  ![Geräteeigenschaften, die die Optionen der Gerätekategorie und des Gerätebesitzes anzeigen.](./media/device-properties.png)
+   ![Geräteeigenschaften, die die Optionen der Gerätekategorie und des Gerätebesitzes anzeigen.](./media/device-properties.png)

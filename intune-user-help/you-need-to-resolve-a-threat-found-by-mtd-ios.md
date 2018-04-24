@@ -1,25 +1,25 @@
 ---
-title: "Auflösen von durch Mobile Threat Defense-Apps erkannte Bedrohungen unter iOS | Microsoft-Dokumentation"
-description: "Erfahren Sie, wie Sie Bedrohungen mithilfe der Mobile Threat Defense-Apps für iOS beseitigen."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Auflösen von durch Mobile Threat Defense-Apps erkannte Bedrohungen unter iOS | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Bedrohungen mithilfe der Mobile Threat Defense-Apps für iOS beseitigen.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3c95d821-7862-486a-b9dc-0ed37bc5befb
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: b196d3bfd01b7eafddc4728c45c2db93572a887c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fee3f31b4a475ed3def1ee96fcdad2f2a414ab3c
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Beseitigen einer Bedrohung, die von einer Mobile Threat Defense-App erkannt wurde
 

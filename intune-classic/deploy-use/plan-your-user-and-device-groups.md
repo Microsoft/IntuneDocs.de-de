@@ -1,24 +1,24 @@
 ---
-title: "Planen von Benutzer- und Gerätegruppen"
-description: "Planen Sie Gruppen, um Ihren organisatorischen Bedürfnissen gerecht zu werden."
-keywords: 
+title: Planen von Benutzer- und Gerätegruppen
+description: Planen Sie Gruppen, um Ihren organisatorischen Bedürfnissen gerecht zu werden.
+keywords: ''
 author: sanchusa
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 679399f306f3837a010cc01799c7567c1e5b5b39
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="plan-your-user-and-device-groups"></a>Planen von Benutzer- und Gerätegruppen
 

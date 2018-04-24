@@ -1,25 +1,25 @@
 ---
-title: "Installieren von Mobile Threat Defense auf Ihrem iOS-Gerät | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Installieren von Mobile Threat Defense auf Ihrem iOS-Gerät | Microsoft-Dokumentation
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/17/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 5bd96195445d318535087e95d5471d32ccff0977
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 061a372c38090d74adddbfbce34505be987448e9
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Installieren von Mobile Threat Defense auf Ihrem iOS-Gerät
 

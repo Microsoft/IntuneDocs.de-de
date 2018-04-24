@@ -1,27 +1,27 @@
 ---
 title: Festlegen von PIN oder Kennwort | Microsoft-Dokumentation
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b4cf329806b49f427eaa2d1c888c40102e6564ab
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: daf25bab90ccc73f782ca93d84f67e06e12f043a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-your-pin-or-password"></a>Festlegen von PIN oder Kennwort
 

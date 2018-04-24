@@ -1,28 +1,28 @@
 ---
-title: "Erstellen von App-Benachrichtigungen für iOS-Geräte in Microsoft Intune: Azure | Microsoft-Dokumentation"
-description: "Hinzufügen oder Erstellen von App-Benachrichtigungen für iOS-Geräte in Microsoft Intune. Wählen Sie aus, welche Apps Benachrichtigungen senden, konfigurieren Sie die Benachrichtigungseinstellungen auf dem Sperrbildschirm, aktivieren Sie den Ton, wählen Sie den Typ der Warnung aus, und fügen Sie ein Badge hinzu."
-keywords: 
+title: 'Erstellen von App-Benachrichtigungen für iOS-Geräte in Microsoft Intune: Azure | Microsoft-Dokumentation'
+description: Hinzufügen oder Erstellen von App-Benachrichtigungen für iOS-Geräte in Microsoft Intune. Wählen Sie aus, welche Apps Benachrichtigungen senden, konfigurieren Sie die Benachrichtigungseinstellungen auf dem Sperrbildschirm, aktivieren Sie den Ton, wählen Sie den Typ der Warnung aus, und fügen Sie ein Badge hinzu.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bda26d1d-2a3b-4669-adf8-a5aa7f994916
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 018a04bd674e4f270ed2e356c08825ab1d5878da
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 43068163c15c0588a8a6ef745d5b191f4547a94d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-app-notifications-settings-on-ios-devices-in-intune"></a>Konfigurieren von Einstellungen der App-Benachrichtigungen für iOS-Geräte in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Konfigurieren Sie, wie installierte Apps auf einem iOS-Gerät Benachrichtigungen senden. Diese Einstellungen unterstützen überwachte Geräte, auf denen iOS 9.3 oder höher ausgeführt wird.
 
@@ -33,18 +33,18 @@ Konfigurieren Sie, wie installierte Apps auf einem iOS-Gerät Benachrichtigungen
 3. Klicken Sie auf **App Notifications (supervised only)** (App-Benachrichtigungen (nur überwacht)) und dann auf **Hinzufügen**: ![Add app notification in iOS or macOS profile in Intune](./media/ios-macos-app-notifications.png) (App-Benachrichtigung in iOS- oder macOS-Profil in Intune hinzufügen)
 4. Geben Sie die folgenden Eigenschaften ein:
 
-  - **App-Bündel-ID**: Geben Sie die **App-Bündel-ID** der App ein, die Sie konfigurieren möchten. Hilfreiche Informationen dazu finden Sie in diesem Artikel unter **Bündel-ID-Referenz für integrierte iOS-Apps**.
-  - **App-Name**: Geben Sie den Namen der App ein, die Sie konfigurieren möchten. Dieser Name wird nicht auf dem Gerät angezeigt und hilft Ihnen dabei, die App in der Liste zu identifizieren.
-  - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein, die Sie konfigurieren möchten. Der Name des Herausgebers wird nicht auf dem Gerät angezeigt und hilft Ihnen nur dabei, die App in der Liste zu identifizieren.
-  - **Benachrichtigungen**: Aktivieren oder deaktivieren Sie das Senden von Benachrichtigungen von der App an das Gerät. Wenn Sie diese Einstellung deaktivieren, werden die folgenden Einstellungen ebenfalls deaktiviert.
-    - **In Mitteilungszentrale anzeigen**: Aktivieren Sie diese Einstellung, um zuzulassen, dass Benachrichtigungen der App in der Mitteilungszentrale angezeigt werden.
-    - **In Sperrbildschirm anzeigen**: Aktivieren Sie diese Einstellung, damit Benachrichtigungen der App auf dem Sperrbildschirm des Geräts angezeigt werden.
-    - **Warnungstyp**: Wählen Sie die Art der Benachrichtigung aus, die beim Entsperren des Geräts angezeigt werden soll. Diese Optionen sind verfügbar:
-      - **Keine**: Es wird keine Benachrichtigung angezeigt.
-      - **Banner**: Es wird kurz ein Banner mit der Benachrichtigung angezeigt.
-      - **Modal**: Die Benachrichtigung wird angezeigt, und der Benutzer muss sie manuell schließen, um das Gerät weiter verwenden zu können.
-    - **Badge für App-Symbol**: Aktivieren Sie diese Einstellung, um dem App-Symbol einen Badge hinzuzufügen, der darauf hinweist, dass die App eine Benachrichtigung gesendet hat.
-    - **Sounds**: Aktivieren Sie diese Einstellung, um einen Sound wiederzugeben, wenn eine Benachrichtigung eintrifft.
+   - **App-Bündel-ID**: Geben Sie die **App-Bündel-ID** der App ein, die Sie konfigurieren möchten. Hilfreiche Informationen dazu finden Sie in diesem Artikel unter **Bündel-ID-Referenz für integrierte iOS-Apps**.
+   - **App-Name**: Geben Sie den Namen der App ein, die Sie konfigurieren möchten. Dieser Name wird nicht auf dem Gerät angezeigt und hilft Ihnen dabei, die App in der Liste zu identifizieren.
+   - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein, die Sie konfigurieren möchten. Der Name des Herausgebers wird nicht auf dem Gerät angezeigt und hilft Ihnen nur dabei, die App in der Liste zu identifizieren.
+   - **Benachrichtigungen**: Aktivieren oder deaktivieren Sie das Senden von Benachrichtigungen von der App an das Gerät. Wenn Sie diese Einstellung deaktivieren, werden die folgenden Einstellungen ebenfalls deaktiviert.
+     - **In Mitteilungszentrale anzeigen**: Aktivieren Sie diese Einstellung, um zuzulassen, dass Benachrichtigungen der App in der Mitteilungszentrale angezeigt werden.
+     - **In Sperrbildschirm anzeigen**: Aktivieren Sie diese Einstellung, damit Benachrichtigungen der App auf dem Sperrbildschirm des Geräts angezeigt werden.
+     - **Warnungstyp**: Wählen Sie die Art der Benachrichtigung aus, die beim Entsperren des Geräts angezeigt werden soll. Diese Optionen sind verfügbar:
+       - **Keine**: Es wird keine Benachrichtigung angezeigt.
+       - **Banner**: Es wird kurz ein Banner mit der Benachrichtigung angezeigt.
+       - **Modal**: Die Benachrichtigung wird angezeigt, und der Benutzer muss sie manuell schließen, um das Gerät weiter verwenden zu können.
+     - **Badge für App-Symbol**: Aktivieren Sie diese Einstellung, um dem App-Symbol einen Badge hinzuzufügen, der darauf hinweist, dass die App eine Benachrichtigung gesendet hat.
+     - **Sounds**: Aktivieren Sie diese Einstellung, um einen Sound wiederzugeben, wenn eine Benachrichtigung eintrifft.
 
 5. Fügen Sie so viele Apps hinzu, wie Sie benötigen. Wenn Sie mit dem Hinzufügen von Apps fertig sind, klicken Sie auf **OK**.
 6. Klicken Sie auf **Erstellen**, um Ihr Profil zu speichern.

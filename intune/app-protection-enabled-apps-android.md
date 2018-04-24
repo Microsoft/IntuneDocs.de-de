@@ -1,29 +1,29 @@
 ---
 title: Android-Apps mit App-Schutzrichtlinien
 titlesuffix: Microsoft Intune
-description: "Erfahren Sie, was Sie von einer Android-App mit Schutzrichtlinien erwarten können."
-keywords: 
+description: Erfahren Sie, was Sie von einer Android-App mit Schutzrichtlinien erwarten können.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: af25dc918907e086441a89f222985a75199bbe95
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 450bcd9c807bdfae16e9c2fa1eb813b00444df65
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Erfahren Sie, was Sie von Android-Apps mit Schutzrichtlinien erwarten können. App-Schutzrichtlinien werden nur angewendet, wenn Apps im beruflichen Kontext verwendet werden. Zum Beispiel, wenn Sie über ein Geschäftskonto auf eine App zugreifen, oder wenn Sie auf Dateien am OneDrive-Speicherort Ihres Unternehmens zugreifen.
 ##  <a name="accessing-apps"></a>Zugreifen auf Apps
@@ -75,9 +75,11 @@ Die folgenden Dateitypen werden unterstützt:
 * **Dokumente:** PDF, PPDF
 
 ------------
-|**pfile**|**text**|
-|----|----|
-|Pfile ist ein generisches „Wrapper“-Format für geschützte Dateien. Es schließt den verschlüsselten Inhalt und die Azure Information Protection-Lizenzen ein. Es kann zum Schützen beliebiger Dateitypen verwendet werden.|Textdateien, einschließlich XML, CSV, etc. können zum Anzeigen in der App geöffnet werden, selbst wenn sie geschützt sind. Dateitypen: TXT, PTXT, CSV, PCSV, LOG, PLOG, XML, PXML.|
+
+|                                                                                 <strong>pfile</strong>                                                                                 |                                                                      <strong>text</strong>                                                                      |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Pfile ist ein generisches „Wrapper“-Format für geschützte Dateien. Es schließt den verschlüsselten Inhalt und die Azure Information Protection-Lizenzen ein. Es kann zum Schützen beliebiger Dateitypen verwendet werden. | Textdateien, einschließlich XML, CSV, etc. können zum Anzeigen in der App geöffnet werden, selbst wenn sie geschützt sind. Dateitypen: TXT, PTXT, CSV, PCSV, LOG, PLOG, XML, PXML. |
+
 ---------------
 ## <a name="next-steps"></a>Nächste Schritte
 [Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird](app-protection-enabled-apps-ios.md)

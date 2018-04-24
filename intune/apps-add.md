@@ -1,29 +1,29 @@
 ---
-title: "Hinzufügen von Apps zu Microsoft Intune"
-titlesuffix: 
-description: "Erfahren Sie, wie Sie Apps zu Microsoft Intune hinzufügen, damit Sie sie Benutzern und Geräten zuweisen können. Intune unterstützt eine Vielzahl verschiedener App-Typen."
-keywords: 
+title: Hinzufügen von Apps zu Microsoft Intune
+titlesuffix: ''
+description: Erfahren Sie, wie Sie Apps zu Microsoft Intune hinzufügen, damit Sie sie Benutzern und Geräten zuweisen können. Intune unterstützt eine Vielzahl verschiedener App-Typen.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 407a332e170497dbb618a2915bba6b794c4a720f
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 6b4e87c36c3aa0aaeae1e1bf265902100612db15
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>So fügen Sie eine App zu Microsoft Intune hinzu
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bevor Sie Apps zuweisen, überwachen, konfigurieren oder schützen können, müssen Sie sie zu Microsoft Intune hinzufügen.
 
@@ -92,8 +92,8 @@ Verwenden Sie das [Handbuch zur Bereitstellungs-, Entwurfs- und Implementierungs
 
 Sie können zwischen den folgenden App-Typen auswählen:
 - **Apps aus dem Store**: Bei Store-Apps handelt es sich um Apps, die im Microsoft-, iOS- oder Android-Store hochgeladen wurden. Der Anbieter der Store-App verwaltet die Updates für die App und stellt sie bereit. Wählen Sie die App aus der Store-Liste aus, und machen Sie sie mithilfe von Intune für alle Benutzer verfügbar.
-- **Interne (branchenspezifische) Apps**: Intern erstelle Apps gelten als branchenspezifische Apps. Die Funktionen dieses App-Typs wurden für eine der von Intune unterstützten Plattformen wie Windows, iOS oder Android erstellt. Ihre Organisation erstellt Updates als unabhängige Dateien und stellt sie für Sie bereit. Sie fügen dann mithilfe von Intune die Updates für die App-Benutzer hinzu und stellen sie bereit.
-- **Apps im Web**: Bei einer Web-App handelt es sich um eine Client/Server-Anwendung. Der Server stellt die Web-App bereit, die die Benutzeroberfläche, den Inhalt und die Funktionen umfasst. Außerdem bieten moderne Webhostingplattformen häufig Vorteile bei Sicherheit und Lastenausgleich. Der App-Typ wird separat im Web verwaltet. Verwenden Sie Intune, um auf diesen App-Typ zu verweisen. Sie legen ebenfalls fest, welche Benutzergruppen auf diese App zugreifen können. Beachten Sie, dass Android keine Web-Apps unterstützt.
+- **Interne (branchenspezifische) Apps:** Intern erstelle Apps gelten als branchenspezifische Apps. Die Funktionen dieses App-Typs wurden für eine der von Intune unterstützten Plattformen wie Windows, iOS oder Android erstellt. Ihre Organisation erstellt Updates als unabhängige Dateien und stellt sie für Sie bereit. Sie fügen dann mithilfe von Intune die Updates für die App-Benutzer hinzu und stellen sie bereit.
+- **Apps im Web:** Bei einer Web-App handelt es sich um eine Client/Server-Anwendung. Der Server stellt die Web-App bereit, die die Benutzeroberfläche, den Inhalt und die Funktionen umfasst. Außerdem bieten moderne Webhostingplattformen häufig Vorteile bei Sicherheit und Lastenausgleich. Der App-Typ wird separat im Web verwaltet. Verwenden Sie Intune, um auf diesen App-Typ zu verweisen. Sie legen ebenfalls fest, welche Benutzergruppen auf diese App zugreifen können. Beachten Sie, dass Android keine Web-Apps unterstützt.
 
 Wenn Sie festlegen, welche Apps Ihre Organisation benötigt, überprüfen Sie, wie die Apps mit Clouddiensten zusammenarbeiten, auf welche Daten die App zugreift, ob die Apps für BYOD-Benutzer verfügbar sind und ob die Apps Internetzugriff erfordern.
 
@@ -110,8 +110,8 @@ Mit Intune verwaltete Apps können außerdem ohne Registrierung den App-Schutz a
 
 ### <a name="understanding-licensed-apps"></a>Grundlegendes zu lizenzierten Apps
 Es wird nicht nur zwischen Web-Apps, Store-Apps und branchenspezifischen Apps unterschieden, sondern auch zwischen Apps, die über ein Volumenlizenzprogramm (Volume Purchase Program) bezogen wurden, und lizenzierten Apps, wie z.B. folgende:     
-- **Apple Volume Purchase Program for Business (iOS und MacOS**: Der App Store von iOS bietet die Möglichkeit, mehrere Lizenzen für eine App zu erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Durch den Erwerb mehrerer Kopien können Sie Apps in Ihrem Unternehmen effizient verwalten. Weitere Informationen finden Sie unter [Verwalten von iOS-Apps, die per Volumenlizenz erworben wurden](vpp-apps-ios.md).
-- **Android for Work**: Apps werden Android for Work-Geräten anders zugewiesen als Standard-Android-Geräten. Alle Apps, die für Android for Work installiert werden, stammen aus dem Managed Google Play Store. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese. Anschließend wird die App im Knoten „Lizenzierte Apps“ des Azure-Portals angezeigt. Ab dann können Sie die Zuweisung der App auf dieselbe Weise wie bei jeder anderen App durchführen.
+- **Apple Volume Purchase Program for Business (iOS und MacOS):** Der App Store von iOS bietet die Möglichkeit, mehrere Lizenzen für eine App zu erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Durch den Erwerb mehrerer Kopien können Sie Apps in Ihrem Unternehmen effizient verwalten. Weitere Informationen finden Sie unter [Verwalten von iOS-Apps, die per Volumenlizenz erworben wurden](vpp-apps-ios.md).
+- **Android for Work:** Apps werden Android for Work-Geräten anders zugewiesen als Standard-Android-Geräten. Alle Apps, die für Android for Work installiert werden, stammen aus dem Google Play for Work Store. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese. Anschließend wird die App im Knoten „Lizenzierte Apps“ des Azure-Portals angezeigt. Ab dann können Sie die Zuweisung der App auf dieselbe Weise wie bei jeder anderen App durchführen.
 - **Microsoft Store für Unternehmen (Windows 10)**: Im Microsoft Store für Unternehmen können Sie Apps für Ihre Organisation suchen und einzeln oder im Rahmen einer Volumenlizenz erwerben. Indem Sie den Store mit Microsoft Intune verbinden, können Sie im Rahmen von per Volumenlizenz erworbenen Apps über das Azure-Portal verwalten. Weitere Informationen finden Sie unter [Verwalten von Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md).
 
 ## <a name="before-you-add-apps"></a>Vor dem Hinzufügen von Apps
@@ -133,15 +133,15 @@ Anforderungen für Cloudspeicherplatz:
 ## <a name="how-to-create-and-edit-categories-for-apps"></a>Erstellen und Bearbeiten von Kategorien für Apps
 
 Mithilfe von App-Kategorien können Sie Apps sortieren, damit Benutzer sie einfacher im Unternehmensportal finden können. Sie können einer App auch mehrere Kategorien zuweisen, z.B. **Entwickler-Apps** oder **Kommunikations-Apps**.
-Wenn Sie eine App in Intune hinzufügen, können Sie die gewünschte Kategorie auswählen. Verwenden Sie die plattformspezifischen Themen, um eine App hinzuzufügen und Kategorien zuzuweisen. Gehen Sie zum Erstellen und Bearbeiten Ihrer eigenen Kategorien folgendermaßen vor:
+Wenn Sie eine App in Intune hinzufügen, können Sie die gewünschte Kategorie auswählen. Verwenden Sie die plattformspezifischen Themen, um eine App hinzuzufügen und Kategorien zuzuweisen. Gehen Sie zum Erstellen und Bearbeiten Ihre eigenen Kategorien folgendermaßen vor:
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
 4. Wählen Sie in der Workload **Mobile Apps** im Abschnitt **Setup** die Option **App-Kategorien** aus. 
 5. Auf dem Blatt **App-Kategorien** wird eine Liste der aktuellen Kategorien angezeigt. Wählen Sie eine der folgenden Aktionen aus:
-    - **Erstellen einer Kategorie**: Klicken Sie auf dem Blatt **Kategorie erstellen** auf **Hinzufügen**, und geben Sie dann einen Namen für die neue Kategorie ein. Namen können in nur einer Sprache eingegeben werden, und werden von Intune nicht übersetzt. Klicken Sie auf **Erstellen**, wenn Sie fertig sind.
-    - **Bearbeiten einer Kategorie**: Wählen Sie für jede Kategorie in der Liste „**...**“ aus. Über diese Option wird ein Popupmenü angezeigt, über das Sie die Kategorie **an das Dashboard anheften** oder **löschen** können.
+    - **Erstellen einer Kategorie:** Klicken Sie auf dem Blatt **Kategorie erstellen** auf **Hinzufügen**, und geben Sie dann einen Namen für die neue Kategorie ein. Namen können in nur einer Sprache eingegeben werden, und werden von Intune nicht übersetzt. Klicken Sie auf **Erstellen**, wenn Sie fertig sind.
+    - **Bearbeiten einer Kategorie:** Wählen Sie für jede Kategorie in der Liste „**...**“ aus. Über diese Option wird ein Popupmenü angezeigt, über das Sie die Kategorie **an das Dashboard anheften** oder **löschen** können.
 
 ## <a name="apps-added-automatically-by-intune"></a>Von Intune automatisch hinzugefügte Apps
 

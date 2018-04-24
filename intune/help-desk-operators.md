@@ -1,28 +1,28 @@
 ---
 title: Helpdeskportal zur Problembehandlung
 titlesuffix: Microsoft Intune
-description: "Helpdeskmitarbeiter verwenden das Portal zur Problembehandlung, um die technischen Probleme der Benutzer zu lösen."
-keywords: 
+description: Helpdeskmitarbeiter verwenden das Portal zur Problembehandlung, um die technischen Probleme der Benutzer zu lösen.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 9582b53c4f992b5f788f10a262bb802e80580144
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9ff0d6f662fca4cb223496d342de5d6378c05ceb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Verwenden des Problembehandlungsportals zur Unterstützung von Benutzern Ihres Unternehmens
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Das Portal zur Problembehandlung ermöglicht Helpdesk-Operatoren und Intune-Administratoren das Anzeigen von Benutzerinformationen zum Reagieren auf Hilfeanfragen von Benutzern. Organisationen, die über einen Helpdesk verfügen, können den **Helpdeskoperator** einer Gruppe von Benutzern zuweisen. Die Rolle des Helpdeskoperators kann den Bereich **Problembehandlung** verwenden.
 
@@ -44,13 +44,13 @@ Wenn ein Benutzer den Support wegen eines technischen Problems mit Intune kontak
 Klicken Sie im Bereich „Problembehandlung“ auf **Benutzer auswählen**, um Benutzerinformationen anzuzeigen. Benutzerinformationen können Ihnen erleichtern, den aktuellen Status von Benutzern und ihren Geräten zu verstehen.  
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie im Bereich **Intune** die Option **Problembehandlung** aus.
 4. Klicken Sie auf **Auswählen**, um einen Benutzer auszuwählen, für den ein Problem behoben werden muss.
 5. Wählen Sie einen Benutzer aus, indem Sie den Namen oder die E-Mail-Adresse eingeben. Klicken Sie auf **Auswählen**. Die Informationen zur Problembehandlung für den Benutzer werden im Bereich „Problembehandlung“ angezeigt. In der folgenden Tabelle werden diese Informationen erläutert.
 
 > [!Note]  
-> Sie können auf den Bereich **Problembehandlung** ebenfalls zugreifen, indem Sie in Ihrem Browser zu [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) navigieren.
+> Sie können auch auf den Bereich **Problembehandlung** zugreifen, indem Sie in Ihrem Browser zu [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) navigieren.
 
 ## <a name="areas-of-troubleshooting-dashboard"></a>Bereiche des Dashboards „Problembehandlung“
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 944c5771e00d8e256944fe5767217f138797bde2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: d5d55f6c3efabdde51b5627d5ddd409c2b282f6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>Allgemeine Tipps für die Problembehandlung für Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Nach der Bereitstellung von Microsoft Intune können möglicherweise Probleme bei der Konfiguration oder mit Clientgeräten auftreten. Die folgenden Ressourcen helfen Ihnen, die Ursache des Problems herauszufinden, sodass Sie es beheben können.
 
@@ -50,13 +50,13 @@ Nach der Bereitstellung von Microsoft Intune können möglicherweise Probleme be
 
 ## <a name="collect-available-data"></a>Sammeln Sie verfügbare Daten
 
--   In den folgenden Ressourcen wird erläutert, wie Sie Geräteprotokolle erfassen:
+- In den folgenden Ressourcen wird erläutert, wie Sie Geräteprotokolle erfassen:
   - [Senden von Android-Diagnosedatenprotokollen an Ihren IT-Administrator über ein USB-Kabel](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Senden von Android-Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [Senden von Android-Registrierungsfehlern an Ihren IT-Administrator](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [Senden von iOS-Registrierungsfehlern an Ihren IT-Administrator](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   Bei Verwaltungskonsolendaten (z. B. bei Problemen mit der Richtlinienimplementierung) überprüfen Sie die gewünschte Richtlinie und den Status dieser Richtlinie, wie in [Erstellen von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) beschrieben.
+- Bei Verwaltungskonsolendaten (z. B. bei Problemen mit der Richtlinienimplementierung) überprüfen Sie die gewünschte Richtlinie und den Status dieser Richtlinie, wie in [Erstellen von Gruppen zum Verwalten von Benutzern und Geräten in Microsoft Intune](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune) beschrieben.
 
 ## <a name="research-the-solution"></a>Recherchieren der Lösung
 

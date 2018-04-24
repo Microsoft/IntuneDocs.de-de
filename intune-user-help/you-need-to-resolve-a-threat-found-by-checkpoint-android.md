@@ -1,25 +1,25 @@
 ---
-title: "Auflösen von durch SandBlast Mobile Protect erkannte Bedrohungen unter Android | Microsoft-Dokumentation"
-description: "Erfahren Sie, wie Sie gegen Bedrohungen vorgehen können, die von Mobile Protect unter Android gefunden wurden."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Auflösen von durch SandBlast Mobile Protect erkannte Bedrohungen unter Android | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie gegen Bedrohungen vorgehen können, die von Mobile Protect unter Android gefunden wurden.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 449c34ec-2d94-4c7f-8691-a5200efee3cb
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: c75e65860f51f6923901f7578d3ca52ed04b6bf1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3413ebed27bc11c88616c4c2f07d5cf182ccf1f0
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Beheben einer von SandBlast Mobile Protect erkannten Bedrohung
 

@@ -14,26 +14,26 @@ ms.assetid: 0be369d5-d4ad-433a-8a81-c04b070d76e3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: 8b9281fd4595a64c56ef8c38a91563a83dc46987
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 805e142008112365dad572f114340646aab53842
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>Auswählen der Methode zum Registrieren mobiler Geräte
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmethode für die von Ihnen verwalteten Geräte zu ermitteln.
 
 ## <a name="what-operating-system-are-your-shared-devices-running"></a>**Welche Betriebssysteme werden auf den freigegebenen Geräten ausgeführt?**
 
 > [!div class="button"]
-[Windows >](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+> [Windows >](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 > [!div class="button"]
-[Android >](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+> [Android >](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 > [!div class="button"]
-[iOS >](choose-how-to-enroll-devices5.md)
-
+> [iOS >](choose-how-to-enroll-devices5.md)
+> 
 > [!div class="button"]
-[< Zurück](choose-how-to-enroll-devices3.md)
+> [< Zurück](choose-how-to-enroll-devices3.md)

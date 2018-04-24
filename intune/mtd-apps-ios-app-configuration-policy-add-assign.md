@@ -1,25 +1,25 @@
 ---
-title: "Hinzufügen und Zuweisen von MTD-Apps mit Microsoft Intune"
-titleSuffix: 
-description: "Hinzufügen von Mobile Threat Defense-Apps (MTD), der Microsoft Authenticator-App und der iOS-Konfigurationsrichtlinie im Azure-Portal mit Intune"
-keywords: 
+title: Hinzufügen und Zuweisen von MTD-Apps mit Microsoft Intune
+titleSuffix: ''
+description: Hinzufügen von Mobile Threat Defense-Apps (MTD), der Microsoft Authenticator-App und der iOS-Konfigurationsrichtlinie im Azure-Portal mit Intune
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3fc71620fee1b1df907a4027c1c57cd91b53032e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Hinzufügen und Zuweisen von Mobile Threat Defense-Apps (MTD) mit Intune
 
@@ -75,7 +75,7 @@ Ausführliche Anweisungen zum erneuten Signieren der Lookout for Work-Apps für 
 Aktivieren Sie die Azure Active Directory-Authentifizierung für iOS-Benutzer, indem Sie folgendermaßen vorgehen:
 
 1. Wechseln Sie zum [Azure-Portal](https://portal.azure.com), melden Sie sich mit Ihren Anmeldeinformationen an, und navigieren Sie zur Seite „Anwendungen“.
-  
+
 2. Fügen Sie die **Lookout for Work iOS-App** als eine **native Clientanwendung** hinzu.
 
 3. Ersetzen Sie **com.lookout.enterprise.yourcompanyname** mit der Kundenbundle-ID, die Sie beim Unterzeichnen der IPA ausgewählt haben.
@@ -133,13 +133,13 @@ Aktivieren Sie die Azure Active Directory-Authentifizierung für iOS-Benutzer, i
 
 -   Sie müssen die iOS-App-Konfigurationsrichtlinie **herunterladen**. 
     -   Wechseln Sie zur [Skycure-Verwaltungskonsole](https://aad.skycure.com), und melden Sie sich mit Ihren Anmeldeinformationen an.
-    
+
     -   Wechseln Sie zu **Settings** &gt; **Device Management Integrations** &gt; **EMM Integration Selection** (Einstellungen > Geräteverwaltungsintegrationen > EMM-Integrationsauswahl), wählen Sie **Microsoft Intune** aus, und speichern Sie dann Ihre Auswahl.
-    
+
     -   Klicken Sie auf den Link **Integration setup files** (Integrationssetupdateien), und speichern Sie die generierte \*.zip-Datei. Die ZIP-Datei enthält die Datei **skycure\_configuration.plist**, die zum Erstellen der iOS-App-Konfigurationsrichtlinie in Intune verwendet wird.
-    
+
     -   In den Anweisungen für [die Verwendung der iOS-App-Konfigurationsrichtlinien von Microsoft Intune](app-configuration-policies-use-ios.md) erfahren Sie, wie Sie die iOS-App-Konfigurationsrichtlinie für Skycure hinzufügen.
-    
+
     - Verwenden Sie in **Schritt 8** die Option **XML-Daten eingeben**, kopieren Sie den Inhalt aus der Datei **skycure_configuration.plist**, und fügen Sie den Inhalt in den Text der Konfigurationsrichtlinie ein.
 
 Sie können auch den Inhalt von **skycure_configuration.plist** hieraus kopieren:
@@ -151,7 +151,6 @@ Sie können auch den Inhalt von **skycure_configuration.plist** hieraus kopieren
     <key>UserEmail</key>
     <string>{{userprincipalname}}</string>
 </dict>
-
 ```
 ### <a name="for-check-point-sandblast-mobile"></a>Für Check Point SandBlast Mobile
 
@@ -160,7 +159,6 @@ Sie können auch den Inhalt von **skycure_configuration.plist** hieraus kopieren
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>
-
 ```
 
 ### <a name="for-zimperium"></a>Für Zimperium
@@ -179,7 +177,6 @@ Sie können auch den Inhalt von **skycure_configuration.plist** hieraus kopieren
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
 
 ## <a name="to-assign-apps-all-mtd-partners"></a>So weisen Sie Apps zu (Alle MTD-Partner)

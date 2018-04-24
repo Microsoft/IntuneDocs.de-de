@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c8f4218b5da66769d22bdbc3859af433f8e6e399
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: a2c194e7741c8ce79d87ad68eb408508b2929167
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>Erstellen der Skycure Mobile Threat Defense-Kompatibilitätsrichtlinie
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Dank Intune mit Skycure Mobile Threat Defense können Sie Bedrohungen auf mobilen Geräten erkennen und das Risiko auf solchen Geräten bewerten. Sie können eine Regel für eine Intune-Kompatibilitätsrichtlinie erstellen, mit der das Risiko bewertet wird, um zu ermitteln, ob das Gerät kompatibel ist. Anschließend können Sie die Richtlinie für bedingten Zugriff verwenden, um den Zugriff auf Dienste basierend auf der Gerätekompatibilität zuzulassen oder zu blockieren.
 

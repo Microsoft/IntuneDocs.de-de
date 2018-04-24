@@ -13,16 +13,16 @@ ms.technology: ''
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 902ffbcd8f12ba6deb215a54ce378fae94d20426
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: 5658bf2e1ee250ef9fd405b3f7ec1772b166f338
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Verwenden der Aktion „Sauberer Start“ zum Zurücksetzen von Windows 10-Geräten mit Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Die Geräteaktion **Sauberer Start** entfernt alle Apps, die auf einem Windows 10-PC mit Creators Update installiert sind. Danach wird der PC automatisch auf die neueste Windows-Version aktualisiert.
 

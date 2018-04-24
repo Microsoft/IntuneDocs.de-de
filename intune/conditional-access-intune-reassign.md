@@ -1,25 +1,25 @@
 ---
 title: Migrieren von bedingtem Zugriff auf das Azure-Portal
 titlesuffix: Microsoft Intune
-description: "Weisen Sie die Richtlinien für bedingten Zugriff erneut zu, die Sie zuvor im klassischen Intune-Portal erstellt haben."
-keywords: 
+description: Weisen Sie die Richtlinien für bedingten Zugriff erneut zu, die Sie zuvor im klassischen Intune-Portal erstellt haben.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80c8c994486dd340c9037817854eb35b32ab3a9e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Erneutes Zuweisen von Richtlinien für bedingten Zugriff über das klassische Intune-Porta zum Azure-Portal
 
@@ -183,8 +183,8 @@ Wenn Sie Exchange Active Sync-Einstellungen als Teil einer Exchange Online-Richt
 
 Sobald Sie Ihre Richtlinien für den bedingten Zugriff erneut im Azure-Portal zugewiesen haben, ist es wichtig, dass Sie die Richtlinien für bedingten Zugriff, die Sie zuvor im klassischen Intune-Portal erstellt haben, allmählich deaktivieren. Darüber hinaus müssen Sie möglicherweise die gleiche Sicherheitsgruppe verwenden, um die im Azure-Portal erstellten Richtlinien für bedingten Zugriff anzuwenden.
 
-> [!NOTE] 
-    > Sehen Sie sich den Abschnitt mit den [Vorbereitungen](#before-you-begin) zu Beginn dieses Themas an, bevor Sie Ihre Richtlinien für den bedingten Zugriff im klassischen Intune-Portal deaktivieren.
+> [!NOTE]
+> Sehen Sie sich den Abschnitt mit den [Vorbereitungen](#before-you-begin) zu Beginn dieses Themas an, bevor Sie Ihre Richtlinien für den bedingten Zugriff im klassischen Intune-Portal deaktivieren.
 
 ### <a name="to-disable-the-conditional-access-policies"></a>So deaktivieren Sie die Richtlinien für den bedingten Zugriff
 

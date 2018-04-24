@@ -1,28 +1,28 @@
 ---
-title: "Vergleichen von Verwaltungsoptionen für Windows-PCs"
-description: "Registrieren firmeneigener iOS-Geräte mithilfe des Apple Device Enrollment Program (DEP) oder Apple Configurator"
-keywords: 
+title: Vergleichen von Verwaltungsoptionen für Windows-PCs
+description: Registrieren firmeneigener iOS-Geräte mithilfe des Apple Device Enrollment Program (DEP) oder Apple Configurator
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 10/27/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 068a73bb-e6b3-44a6-8f6e-4cf7d455bbf3
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8f6de91724db10ef64e2c1fd6eee6101c6eac79a
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: c760f9c76e54c0b5f9eb037414870ab1c8943803
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Vergleichen der Verwaltung von Windows-PCs als Computer oder mobile Geräte
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Organisationen können mit Microsoft Intune Windows-PCs entweder mithilfe der Verwaltung mobiler Geräte (Mobile Device Management, MDM) als mobile Geräte oder mithilfe des Intune-Softwareclients als Computer verwalten.  Microsoft empfiehlt, dass Kunden nach Möglichkeit die MDM-Verwaltungslösung nutzen. Damit Sie die Unterschiede zwischen diesen Optionen besser verstehen, werden die beiden Verwaltungsoptionen im folgenden Diagramm verglichen.
 

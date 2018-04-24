@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e0fa9f66ee0338b21e12a27ef60fb0df22d23030
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 02e821f24c378c15a474adda901699664a9af68a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Konfigurieren von iOS-Apps mit Konfigurationsrichtlinien für mobile Apps in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Verwenden Sie Konfigurationsrichtlinien für mobile Apps in Microsoft Intune, um Einstellungen anzugeben, die beim Ausführen einer App durch Benutzer erforderlich sind. Beispielsweise kann eine App vom Benutzer Folgendes anfordern:
 
@@ -77,14 +77,14 @@ Die neue Richtlinie wird im Knoten **Konfigurationsrichtlinien** angezeigt.
 ## <a name="information-about-the-xml-file-format"></a>Informationen zum XML-Dateiformat
 
 Intune unterstützt die folgenden Datentypen in einer Eigenschaftenliste:
-    
+
 - &lt;integer&gt;
 - &lt;real&gt;
 - &lt;string&gt;
 - &lt;array&gt;
 - &lt;dict&gt;
 - &lt;true /&gt; oder &lt;false /&gt;
-     
+
 Weitere Informationen zu Datentypen finden Sie unter [About Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) in der iOS Developer Library.
 
 Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschaftenliste:
@@ -97,7 +97,7 @@ Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschafte
 - \{\{username\}\} – (Beispiel: **John Doe**)
 - \{\{serialnumber\}\} – (Beispiel: **F4KN99ZUG5V2**) für iOS-Geräte
 - \{\{serialnumberlast4digits\}\} – (Beispiel: **G5V2**) für iOS-Geräte
-    
+
 Die Zeichen \{\{ und \}\} werden nur von Tokentypen verwendet und dürfen nicht für andere Zwecke verwendet werden.
 
 ## <a name="associate-a-mobile-app-configuration-policy-with-an-app"></a>Zuordnen einer Konfigurationsrichtlinie für mobile Apps zu einer App
@@ -139,5 +139,4 @@ Wenn Sie eine Datei für die Konfiguration mobiler Apps erstellen, können Sie e
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```

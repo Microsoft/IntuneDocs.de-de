@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b0b0fbfce086729551b211dd4bc4b83348aa4787
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1f9446da0f553dca29bbfd96b99711c895cd8533
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>Zulassen des Zugriffs auf Office 365-Dienste ausschließlich für mobile Apps, die Intune-App-Richtlinien für die Verwaltung mobiler Anwendungen unterstützen
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 [Intune-App-Schutzrichtlinien](protect-apps-and-data-with-microsoft-intune.md) unterstützen Sie beim Schutz Ihrer Unternehmensdaten auf Geräten, die für die Verwaltung in Intune registriert sind. App-Schutzrichtlinien können Sie auch auf **mitarbeitereigenen Geräten verwenden, die nicht für die Verwaltung in Intune registriert sind**.  Auch wenn Sie das Gerät nicht verwalten, müssen Sie in diesem Fall dennoch sicherstellen, dass Unternehmensdaten und -ressourcen geschützt sind. Mithilfe des App-basierten bedingten Zugriffs mit MAM können Sie eine Richtlinie erstellen, die nur mobilen Apps mit Unterstützung für Intune-App-Schutzrichtlinien den Zugriff auf O365-Dienste wie Exchange Online gestattet.
 

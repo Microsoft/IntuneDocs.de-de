@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a33c383cb65d0edfa94117278e3f473699588aa3
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c68f196ea268e61a175f643244efb855f46eaece
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Registrieren von iOS-Geräten mithilfe von Apple Configurator und Setup-Assistent
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune unterstützt die Registrierung unternehmenseigener iOS-Geräte mithilfe des Tools [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017), das auf einem Mac-Computer ausgeführt wird. Dieser Prozess setzt das Gerät auf die Werkseinstellungen zurück und bereitet es auf die Ausführung des Setup-Assistenten vor, um die Unternehmensrichtlinien für den neuen Benutzer des Geräts zu installieren.
 
@@ -59,7 +59,7 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Grup
 
 1. Wechseln Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) zu **Richtlinie** &gt; **Unternehmensgeräteregistrierung**, und wählen Sie anschließend **Hinzufügen** aus.
 
-  ![Erstellen eines Geräteregistrierungsprofils](../media/pol-sa-corp-enroll.png)
+   ![Erstellen eines Geräteregistrierungsprofils](../media/pol-sa-corp-enroll.png)
 
 2. Geben Sie die Details für die Geräteprofile ein:
 
@@ -80,7 +80,7 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Grup
 
    -  **Geräteregistrierungsprogramm**: Das Apple-Programm zur Geräteregistrierung (Device Enrollment Program, DEP) kann bei der Registrierung mit dem Setup-Assistenten nicht verwendet werden. Stellen Sie sicher, dass die Umschaltfläche auf **aus** festgelegt ist.
 
-3.  Wählen Sie **Profil speichern**, um das Profil hinzuzufügen.
+3. Wählen Sie **Profil speichern**, um das Profil hinzuzufügen.
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Mit dem Setup-Assistenten zu registrierende Geräte hinzufügen
 
@@ -90,29 +90,29 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen für eine Grup
 
    ![Dialogfeld „Geräte hinzufügen“](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
-   -  **Hochladen einer CSV-Datei mit Seriennummern**: Erstellen Sie eine durch Trennzeichen getrennte Liste (CSV-Datei) mit zwei Spalten ohne Überschrift, die auf 5.000 Geräte oder 5 MB pro CSV-Datei beschränkt ist.
+   - **Hochladen einer CSV-Datei mit Seriennummern**: Erstellen Sie eine durch Trennzeichen getrennte Liste (CSV-Datei) mit zwei Spalten ohne Überschrift, die auf 5.000 Geräte oder 5 MB pro CSV-Datei beschränkt ist.
 
-    |||
-    |-|-|
-    |&lt;Seriennummer 1&gt;|&lt;Details zu Gerät 1&gt;|
-    |&lt;Seriennummer 2&gt;|&lt;Details zu Gerät 2&gt;|
+     |||
+     |-|-|
+     |&lt;Seriennummer 1&gt;|&lt;Details zu Gerät 1&gt;|
+     |&lt;Seriennummer 2&gt;|&lt;Details zu Gerät 2&gt;|
 
-  Diese CSV-Datei sieht bei Anzeige in einem Text-Editor folgendermaßen aus:
+   Diese CSV-Datei sieht bei Anzeige in einem Text-Editor folgendermaßen aus:
 
     ```
     0000000,PO 1234
     111111111,PO 1234
     ```
 
-  -  **Manuelles Hinzufügen von Gerätedetails**&mdash;Geben Sie die Seriennummer und alle Anmerkungen und Details von bis zu 15 Geräten ein.
+   -  **Manuelles Hinzufügen von Gerätedetails**&mdash;Geben Sie die Seriennummer und alle Anmerkungen und Details von bis zu 15 Geräten ein.
 
-  Bestätigen Sie im Bereich **Geräte überprüfen** die Seriennummern. Sie können auch entscheiden, ob Sie die **Details** für Seriennummern überschreiben, die wieder importiert werden. Alternativ können Sie das Kontrollkästchen **Überschreiben** deaktivieren, um die aktuellen Informationen zu erhalten.
+   Bestätigen Sie im Bereich **Geräte überprüfen** die Seriennummern. Sie können auch entscheiden, ob Sie die **Details** für Seriennummern überschreiben, die wieder importiert werden. Alternativ können Sie das Kontrollkästchen **Überschreiben** deaktivieren, um die aktuellen Informationen zu erhalten.
 
-  > [!NOTE]
-  > In der vorhandenen Intune-Administratorkonsole können Administratoren zugehörige Details einer hochgeladenen CSV-Datei akzeptieren und die vorhandenen Details für einzelne Seriennummern überschreiben. Sie können im neuen Azure-Portal nur die Details für alle Seriennummern überschreiben oder die Details für ebendiese ignorieren.
+   > [!NOTE]
+   > In der vorhandenen Intune-Administratorkonsole können Administratoren zugehörige Details einer hochgeladenen CSV-Datei akzeptieren und die vorhandenen Details für einzelne Seriennummern überschreiben. Sie können im neuen Azure-Portal nur die Details für alle Seriennummern überschreiben oder die Details für ebendiese ignorieren.
 
-  > [!NOTE]
-  > Wenn Sie später unternehmenseigene Geräte aus der Intune-Verwaltung entfernen müssen, kann es notwendig sein, aus der Gerätegruppe **Nach iOS-Seriennummer** unter **Vorabregistrierte Unternehmensgeräte** die Seriennummer der Geräte in Intune zu entfernen, um die Geräteregistrierung zu deaktivieren. Wenn Intune eine Notfallwiederherstellung durchführt, während oder nachdem Sie Seriennummern entfernt haben, müssen Sie sicherstellen, dass in dieser Gruppe nur die Seriennummern aktiver Geräte vorhanden sind.
+   > [!NOTE]
+   > Wenn Sie später unternehmenseigene Geräte aus der Intune-Verwaltung entfernen müssen, kann es notwendig sein, aus der Gerätegruppe **Nach iOS-Seriennummer** unter **Vorabregistrierte Unternehmensgeräte** die Seriennummer der Geräte in Intune zu entfernen, um die Geräteregistrierung zu deaktivieren. Wenn Intune eine Notfallwiederherstellung durchführt, während oder nachdem Sie Seriennummern entfernt haben, müssen Sie sicherstellen, dass in dieser Gruppe nur die Seriennummern aktiver Geräte vorhanden sind.
 
 2. Klicken Sie auf **Weiter**.
 
@@ -137,7 +137,7 @@ Geben Sie das Profil an, das hinzugefügten Geräten aus der Liste der verfügba
 
 iOS-Geräte werden mit dem Mac-Computer verbunden und für die Verwaltung mobiler Geräte registriert.
 
-1.  Öffnen Sie auf einem Mac-Computer **Apple Configurator 2**. Wählen Sie in der Menüleiste **Apple Configurator 2**, und wählen Sie dann **Voreinstellungen**.
+1. Öffnen Sie auf einem Mac-Computer **Apple Configurator 2**. Wählen Sie in der Menüleiste **Apple Configurator 2**, und wählen Sie dann **Voreinstellungen**.
 
    > [!WARNING]
    > Während des Registrierungsprozesses werden die Geräte auf Werkseinstellungen zurückgesetzt. Als bewährte Methode empfiehlt es sich, das Gerät zurückzusetzen und einzuschalten. Nach dem Verbinden eines Geräts sollte der **Begrüßungsbildschirm** angezeigt werden.
@@ -148,12 +148,12 @@ iOS-Geräte werden mit dem Mac-Computer verbunden und für die Verwaltung mobile
 
    Sie können die Warnung, dass die Server-URL nicht überprüft wird, problemlos ignorieren. Um den Vorgang fortzusetzen, wählen Sie **Weiter**, bis der Assistent abgeschlossen ist.
 
-4.  Verbinden Sie die mobilen iOS-Geräte über einen USB-Adapter mit dem Mac-Computer.
+4. Verbinden Sie die mobilen iOS-Geräte über einen USB-Adapter mit dem Mac-Computer.
 
-    > [!WARNING]
-    > Während des Registrierungsprozesses werden die Geräte auf Werkseinstellungen zurückgesetzt. Als bewährte Methode empfiehlt es sich, das Gerät zurückzusetzen und einzuschalten. Wenn Sie den Setup-Assistenten starten, sollte der **Begrüßungsbildschirm** zu sehen sein.
+   > [!WARNING]
+   > Während des Registrierungsprozesses werden die Geräte auf Werkseinstellungen zurückgesetzt. Als bewährte Methode empfiehlt es sich, das Gerät zurückzusetzen und einzuschalten. Wenn Sie den Setup-Assistenten starten, sollte der **Begrüßungsbildschirm** zu sehen sein.
 
-5.  Wählen Sie **Vorbereiten**. Wählen Sie im Bereich „iOS-Gerät vorbereiten“ die Option **Manuell** aus, und wählen Sie dann **Weiter**.
+5. Wählen Sie **Vorbereiten**. Wählen Sie im Bereich „iOS-Gerät vorbereiten“ die Option **Manuell** aus, und wählen Sie dann **Weiter**.
 
 6. Wählen Sie im Bereich „Beim MDM-Server registrieren“ den erstellten Servernamen aus, und wählen Sie dann **Weiter**.
 

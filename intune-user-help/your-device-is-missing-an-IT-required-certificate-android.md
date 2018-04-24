@@ -1,27 +1,27 @@
 ---
-title: "Auf Ihrem Gerät ist ein Zertifikat nicht vorhanden | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Auf Ihrem Gerät ist ein Zertifikat nicht vorhanden | Microsoft-Dokumentation
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 60a1f9b26aa8481697c01a2af50cd6f48ae9967b
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b12dcafa4ff7d45dd1d41c0311a2658b08acf12e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Auf Ihrem Android-Gerät fehlt ein Zertifikat, das von der Supportabteilung Ihres Unternehmens verlangt wird.
 

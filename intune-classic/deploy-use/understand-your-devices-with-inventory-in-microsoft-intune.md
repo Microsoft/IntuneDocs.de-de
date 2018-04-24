@@ -1,25 +1,25 @@
 ---
-title: "Verstehen Sie Ihre Geräte mithilfe des Inventars"
-description: "Verwenden Sie Intune zum Anzeigen von Informationen zur Hardware der Geräte, die Sie verwalten."
-keywords: 
+title: Verstehen Sie Ihre Geräte mithilfe des Inventars
+description: Verwenden Sie Intune zum Anzeigen von Informationen zur Hardware der Geräte, die Sie verwalten.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 09/05/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: e50a7329512e6b57eb5486792669b7cd102eebdb
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Verstehen Sie Ihre Geräte mithilfe des Inventars in Microsoft Intune
 

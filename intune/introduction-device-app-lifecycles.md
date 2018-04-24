@@ -1,29 +1,29 @@
 ---
-title: "Übersicht über die Lebenszyklen von Geräten und Apps"
+title: Übersicht über die Lebenszyklen von Geräten und Apps
 titleSuffix: Microsoft Intune
-description: "Übersicht über die Lebenszyklen von Geräten und Apps mit Microsoft Intune."
-keywords: 
+description: Übersicht über die Lebenszyklen von Geräten und Apps mit Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d262d5679ceb802320bd5aa496d91f549ec12952
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: c358fff91744335080a10d45c7753293911430ae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-device-and-app-lifecycles"></a>Übersicht über die Lebenszyklen von Geräten und Apps
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Auch wenn sich die Anforderungen der einzelnen Organisationen unterscheiden, gibt es bestimmte allgemeine Schritte, die alle Organisationen regelmäßig durchführen müssen, um ihre mobilen Geräte und Apps zu verwalten. Diese lassen sich in zwei Hauptkategorien unterteilen, die als **Lebenszyklen** bezeichnet werden. Der von Ihnen befolgte Bereitstellungs-Lebenszyklus hängt von dem Szenario ab, das Sie ermöglichen möchten. Zum Beispiel benötigen Sie möglicherweise nur den Gerätelebenszyklus oder nur den App-Lebenszyklus oder beide.
 

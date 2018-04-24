@@ -1,31 +1,30 @@
 ---
 title: Was ist die Microsoft Intune App-Verwaltung?
-titlesuffix: 
+titlesuffix: ''
 description: In diesem Thema lernen Sie die Grundlagen der App-Verwaltung mit Microsoft Intune kennen.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/09/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 737c2900b2cdd57cb4dfc8373d06111a52e772b2
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 86cb0dfb67e81a7abbdc8f38dcbf5539b9855adb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Was ist die Microsoft Intune App-Verwaltung?
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Mit Microsoft Intune können Sie als IT-Administrator die mobilen Apps verwalten, die Mitarbeiter Ihres Unternehmens verwenden. Diese Funktion besteht zusätzlich zur Verwaltung von Geräten und dem Schutz von Daten. Als Teil dieser Funktion ist es eine Ihrer Prioritäten, sicherzustellen, dass Ihre Endbenutzer auf die zur Arbeit notwendigen Apps zugreifen können. Dies kann aus verschiedenen Gründen eine große Herausforderung darstellen:
 - Es gibt eine Vielzahl von Geräteplattformen und App-Typen.
@@ -65,7 +64,7 @@ Intune bietet eine Reihe von Funktionen, die die Installation der erforderlichen
 Sie finden die meisten Informationen zu Apps in der Workload **Mobile Apps**, auf die Sie wie folgt zugreifen können:
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
 
     ![Workload „Mobile Apps“](./media/apps-workload.png)

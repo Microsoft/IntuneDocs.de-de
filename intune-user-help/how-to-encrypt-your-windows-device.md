@@ -1,27 +1,27 @@
 ---
-title: "Vorgehensweise zum Verschlüsseln Ihres Windows-Geräts | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Vorgehensweise zum Verschlüsseln Ihres Windows-Geräts | Microsoft-Dokumentation
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 03/16/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 94d6c25d1367791422ed282649049a1830b76cc9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a93c53a061e41d288846f8b5a16ea4a9b4679607
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>Vorgehensweise zum Verschlüsseln Ihres Windows-Geräts
 

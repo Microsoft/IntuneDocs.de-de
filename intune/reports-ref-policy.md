@@ -1,24 +1,24 @@
 ---
 title: Richtlinie
 titlesuffix: Microsoft Intune
-description: "Referenzthema für die Kategorie „Richtlinien“ der Entitätsauflistungen in der Intune Data Warehouse-API."
+description: Referenzthema für die Kategorie „Richtlinien“ der Entitätsauflistungen in der Intune Data Warehouse-API.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 0cfeffd4cb466d8bcfc2da072e7e6c028a4e0c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>Verweis für Richtlinienentitäten
 
@@ -157,10 +157,12 @@ PolicyKey|Der Richtlinienschlüssel kann mit der Richtlinie verknüpft werden, u
 
 In der folgenden Tabelle ist die Anzahl der Benutzer mit dem Zustand „erfolgreich“, „ausstehend“, „fehlerhaft“ oder „Fehler“ pro Tag aufgeführt. Die Anzahl spiegelt die Daten pro Richtlinientypprofil wider. Wenn ein Benutzer beispielsweise den Zustand „erfolgreich“ für alle zugewiesenen Richtlinien aufweist, wird der Zähler für „erfolgreich“ für diesen Tag um eins erhöht. Wenn einem Benutzer zwei Profile zugewiesen sind, von denen eines den Zustand „erfolgreich“ und eines den Zustand „Fehler“ aufweist, wird der Benutzer für den Zustand „Fehler“ gezählt. Die Entität PolicyUserActivity listet für die letzten 30 Tage auf, wie viele Benutzer an einem bestimmten Tag in welchem Zustand waren.
 
-|Eigenschaft  |Beschreibung  |Beispiel  |
-|---------|---------|---------|
-|DateKey|Date Key für den Zeitpunkt als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde|20160703|
-|Pending|Anzahl eindeutiger Geräte im Zustand „ausstehend“|123|
-|Succeeded|Anzahl eindeutiger Geräte im Zustand „erfolgreich“|12|
-PolicyKey|Der Richtlinienschlüssel kann mit der Richtlinie verknüpft werden, um den Richtliniennamen zu erhalten.|Windows 10-Baseline|
-|Fehler|Anzahl eindeutiger Geräte im Zustand „Fehler“|10|
+
+| Eigenschaft  |                                         Beschreibung                                         |       Beispiel       |
+|-----------|---------------------------------------------------------------------------------------------|---------------------|
+|  DateKey  | Date Key für den Zeitpunkt als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde |      20160703       |
+|  Pending  |                         Anzahl eindeutiger Geräte im Zustand „ausstehend“                          |         123         |
+| Succeeded |                         Anzahl eindeutiger Geräte im Zustand „erfolgreich“                          |         12          |
+| PolicyKey |                Der Richtlinienschlüssel kann mit der Richtlinie verknüpft werden, um den Richtliniennamen zu erhalten.                 | Windows 10-Baseline |
+|   Fehler   |                          Anzahl eindeutiger Geräte im Zustand „Fehler“                           |         10          |
+

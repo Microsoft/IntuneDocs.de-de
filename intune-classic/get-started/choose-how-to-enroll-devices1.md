@@ -14,24 +14,24 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: 944d235dce6ae905ee53b8a1a3451a45adcc670f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: d0dad7877cf9d54ae88625c384282fc3e8be40b3
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>Auswählen der Methode zum Registrieren mobiler Geräte
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Die Antworten auf die folgenden Fragen helfen Ihnen, die beste Registrierungsmethode für die von Ihnen verwalteten Geräte zu ermitteln.
 
 ## <a name="do-employees-bring-their-own-devices-byod-or-are-devices-provided-by-your-organization-cod"></a>**Bringen die Mitarbeiter ihre eigenen Geräte mit (BYOD), oder werden die Geräte von Ihrer Organisation bereitgestellt (COD)?**
 
 > [!div class="button"]
-[BYOD >](choose-how-to-enroll-devices2.md)
+> [BYOD >](choose-how-to-enroll-devices2.md)
 > [!div class="button"]
-[COD >](choose-how-to-enroll-devices3.md)
+> [COD >](choose-how-to-enroll-devices3.md)
 
 - **Geräte von Benutzern** – „BYOD“-Registrierung (Bring Your Own Device) – Benutzer können die Intune-Unternehmensportal-App auf ihrem Gerät installieren und dieses dann registrieren, um Zugriff auf Unternehmensressourcen wie E-Mail, Unternehmens-Apps, Unternehmensdaten und Support zu erhalten.  
 

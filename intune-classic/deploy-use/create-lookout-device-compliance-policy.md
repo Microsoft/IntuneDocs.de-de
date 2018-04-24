@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8f19318256dc4480207097d2f4ab393b799e207a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b39f7cac8c09813eb9db94e761ec6fa6ab53c7a0
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>Erstellen einer Lookout-Kompatibilitätsrichtlinie in Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Dank Intune mit Lookout Mobile Threat Defense können Sie Bedrohungen auf mobilen Geräten erkennen und das Risiko auf solchen Geräten bewerten. Sie können eine Regel für die Kompatibilitätsrichtlinie erstellen, mit der das Risiko bewertet wird, um zu ermitteln, ob das Gerät kompatibel ist. Anschließend können Sie die Richtlinie für bedingten Zugriff verwenden, um den Zugriff auf Dienste basierend auf der Gerätekompatibilität zuzulassen oder zu blockieren.
 
@@ -36,13 +36,13 @@ Voraussetzungen für die Kompatibilitätsrichtlinie mit Lookout Mobile Threat De
 Beim Einrichten von Lookout Mobile Threat Defense haben Sie in der [Lookout-Konsole](https://aad.lookout.com) eine Richtlinie erstellt, die verschiedene Bedrohungen als hoch, mittel und niedrig klassifiziert. In der Intune-Kompatibilitätsrichtlinie legen Sie die maximal zulässige Bedrohungsstufe fest.
 
 1. Wechseln Sie in der [Intune-Administratorkonsole](https://manage.microsoft.com) zur Seite **Kompatibilitätsrichtlinien**. Sie können entweder eine vorhandene Kompatibilitätsrichtlinie verwenden oder eine neue erstellen. Wechseln Sie zu **Geräteintegrität**, und aktivieren Sie **Schutz vor Gerätebedrohungen**.
-  ![Screenshot mit der Einstellung der Regel zum Schutz vor Gerätebedrohungen in ](../media/mtp/mtp-compliance-policy-rule.png)
+   ![Screenshot mit der Einstellung der Regel zum Schutz vor Gerätebedrohungen in ](../media/mtp/mtp-compliance-policy-rule.png)
 
 2. Wählen Sie die Option **Maximal zulässige Bedrohungsstufe**:
-  * **Keine (geschützt)**: Dies ist die sicherste Einstellung.  Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich.  Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.  
-  * **Niedrig**: Das Gerät ist kompatibel, wenn nur Bedrohungen auf niedriger Stufe vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
-  * **Mittel**: Das Gerät ist kompatibel, wenn die auf dem Gerät gefundenen Bedrohungen niedriger oder mittlerer Stufe sind. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
-  * **Hoch**: Dies ist die am wenigsten sichere Option. Diese Option lässt alle Bedrohungsstufen zu und verwendet den Lookout-Schutz vor Bedrohungen von mobilen Geräten nur zu Berichtszwecken.
+   * **Keine (geschützt)**: Dies ist die sicherste Einstellung.  Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich.  Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.  
+   * **Niedrig**: Das Gerät ist kompatibel, wenn nur Bedrohungen auf niedriger Stufe vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
+   * **Mittel**: Das Gerät ist kompatibel, wenn die auf dem Gerät gefundenen Bedrohungen niedriger oder mittlerer Stufe sind. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
+   * **Hoch**: Dies ist die am wenigsten sichere Option. Diese Option lässt alle Bedrohungsstufen zu und verwendet den Lookout-Schutz vor Bedrohungen von mobilen Geräten nur zu Berichtszwecken.
 
 ![Screenshot der Option für die Bedrohungsstufe für die Einstellung der Regel zum Schutz vor Gerätebedrohungen](../media/mtp/mtp-compliance-policy-setting.png)
 

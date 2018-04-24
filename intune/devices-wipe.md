@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e4581b59de68c2877b122887fa1ffe86eaa2b92c
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: bb191f33133b85613f491220c970947b9e55b79f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Entfernen von Geräte mithilfe der Zurücksetzung auf Werkseinstellungen oder dem Entfernen von Unternehmensdaten
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Sie können Geräte aus Intune entfernen, wenn sie nicht mehr benötigt werden, einem neuen Zweck zugeführt werden oder verloren gegangen sind. Sie erreichen dies durch Verwenden des Befehls **Unternehmensdaten entfernen** oder durch die Aktion **Zurücksetzung auf Werkseinstellungen**. Für private Geräte, die in Intune registriert sind, können die Benutzer über das Intune-Unternehmensportal einen Remotebefehl erteilen.
 
@@ -72,7 +72,7 @@ Die folgende Tabelle beschreibt, welche Daten entfernt werden und welche Auswirk
 |Zertifikatprofil-Einstellungen|Zertifikate werden entfernt und gesperrt.|
 |Verwaltungs-Agent|Das Verwaltungsprofil wird entfernt.|
 |E-Mail|E-Mail-Profile, die über Intune bereitgestellt werden, werden entfernt. Auf dem Gerät zwischengespeicherte E-Mails werden gelöscht.|
-|Outlook|E-Mails, die über die Microsoft Outlook-App für iOS empfangen wurden, werden entfernt.|
+|Outlook|E-Mails, die über die Microsoft Outlook-App für iOS empfangen wurden, werden entfernt. Dies erfordert, dass die mobile Outlook-App als erforderliche App zunächst für iOS-Benutzer bereitgestellt wird.|
 |Entfernen von Azure AD|Der Azure AD-Datensatz wird entfernt.|
 |Kontakte |Kontakte, die direkt aus der App mit dem internen Adressbuch synchronisiert werden, werden entfernt. Alle Kontakte, die aus dem internen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht entfernt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.
 

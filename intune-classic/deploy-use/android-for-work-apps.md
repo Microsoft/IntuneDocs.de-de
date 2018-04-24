@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 20d43882895e299b26a4130b1551b17f054c52d6
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 54e4355a1253af4338bdcc3e34b651fadfb569dd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-deploy-apps-to-android-for-work-devices-with-intune"></a>Bereitstellen von Apps für Android for Work-Geräte mit Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Apps werden für Android for Work-Geräte anders bereitgestellt als für normale Android-Geräte. Alle Apps, die für Android for Work installiert werden, stammen aus dem Google Play for Work Store. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie sie.
 Anschließend wird die App im Knoten **Per Volumenlizenz erworbene Apps** der Intune-Konsole angezeigt. Ab dann können Sie die Bereitstellung der App auf dieselbe Weise wie bei jeder anderen App durchführen.

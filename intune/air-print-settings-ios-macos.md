@@ -15,15 +15,15 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8402ff3631e18ec6169bc96ef1bb7669bdcfbdd8
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 9e2781743618c213fc57e21026480f7f30535c67
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>AirPrint-Einstellungen für iOS- und macOS-Geräte
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Verwenden Sie diese Einstellungen, um iOS- oder macOS-Geräte für die automatische Verbindung mit AirPrint-kompatiblen Druckern im Netzwerk zu konfigurieren. Sie benötigen die IP-Adresse und den Ressourcenpfad der Drucker, um fortzufahren.
 
@@ -40,7 +40,7 @@ Mit diesem Verfahren können Sie AirPrint-Informationen zur AirPrint-Nutzlast hi
 
 ## <a name="configure-an-airprint-profile"></a>Konfigurieren eines AirPrint-Profils
 
-1. Navigieren Sie von [Intune im Azure-Portal](https://portal.azure.com) zu [**Gerätefeatures** im Gerätekonfigurationsbereich](device-features-configure.md). 
+1. Navigieren Sie in [Intune im Azure-Portal](https://portal.azure.com) [im Gerätekonfigurationsbereich zu **Gerätefunktionen**](device-features-configure.md). 
 1. Klicken Sie im Bereich **Gerätefeatures** auf die Option **AirPrint**.
 2. Geben Sie im Bereich **AirPrint** die **IP-Adresse** und den **Ressourcenpfad** des Ziels ein, und klicken Sie auf **Hinzufügen**, um ein AirPrint-Ziel hinzuzufügen.
 3. Fügen Sie so viele Ziele hinzu, wie Sie benötigen. Wenn Sie fertig sind, wählen Sie **OK** aus.

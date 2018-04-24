@@ -2,28 +2,28 @@
 title: Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection)
 titlesuffix: Microsoft Intune
 description: Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Microsoft Intune
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: doubeby
 ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4325d77982bcca748a38696fbbbb413a1c304ffb
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 821ce2c9992d32195b95e766f96bea7322ec2e7e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Sie können App-Schutzrichtlinien bei Windows 10-Apps verwenden, um Apps ohne Geräteregistrierung zu schützen.
 
@@ -33,15 +33,15 @@ Sie müssen mit einigen Konzepten vertraut sein, wenn Sie eine WIP-Richtlinie hi
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Liste der zulässigen und ausgenommenen Apps
 
--   **Zulässige Apps**: Diese Apps müssen dieser Richtlinie entsprechen.
+-   **Zulässige Apps:** Diese Apps müssen dieser Richtlinie entsprechen.
 
--   **Ausgenommene Apps**: Diese Apps sind von dieser Richtlinie ausgenommen und können ohne Einschränkungen auf Unternehmensdaten zugreifen.
+-   **Ausgenommene Apps:** Diese Apps sind von dieser Richtlinie ausgenommen und können ohne Einschränkungen auf Unternehmensdaten zugreifen.
 
 ### <a name="types-of-apps"></a>App-Typen
 
 -   **Empfohlene Apps** Eine vorab aufgefüllte Liste von Apps (hauptsächlich Microsoft Office), die Ihnen einen einfachen Import in die Richtlinie ermöglicht.
--   **Store-Apps**: Sie können der Richtlinie eine beliebige App aus dem Windows Store hinzufügen.
--   **Windows Desktop-Apps**: Sie haben außerdem die Möglichkeit,der Richtlinie traditionelle Windows Desktop-Apps hinzufügen (z.B. .exe, .dll, usw.)
+-   **Store-Apps:** Sie können der Richtlinie eine beliebige App aus dem Windows Store hinzufügen.
+-   **Windows Desktop-Apps:** Sie haben außerdem die Möglichkeit,der Richtlinie traditionelle Windows Desktop-Apps hinzufügen (z.B. .exe, .dll, usw.)
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -65,10 +65,10 @@ Nachdem Sie Intune in Ihrer Organisation eingerichtet haben, können Sie eine WI
 4. Wählen Sie auf dem Blatt **Mobile Apps** die Option **App-Schutzrichtlinien** aus.
 5. Klicken Sie auf **Richtlinie hinzufügen**, um das Blatt **Richtlinie hinzufügen** anzuzeigen.
 6. Fügen Sie die folgenden Werte hinzu:
-    - **Name**: Geben Sie einen Namen (Pflichtfeld) für Ihre neue Richtlinie ein.
+    - **Name:** Geben Sie einen Namen (Pflichtfeld) für Ihre neue Richtlinie ein.
     - **Beschreibung**: Geben Sie eine Beschreibung ein (optional).
-    - **Plattform**: Wählen Sie **Windows 10** als unterstützte Plattform für Ihre App-Schutzrichtlinie aus.
-    - **Registrierungsstatus**: Wählen Sie **Ohne Registrierung** als Registrierungsstatus für Ihre Richtlinie aus.
+    - **Plattform:** Wählen Sie **Windows 10** als unterstützte Plattform für Ihre App-Schutzrichtlinie aus.
+    - **Registrierungsstatus:** Wählen Sie **Ohne Registrierung** als Registrierungsstatus für Ihre Richtlinie aus.
 7.  Wählen Sie **Erstellen** aus. Die Richtlinie wird erstellt und in der Tabelle auf dem Blatt **App-Schutzrichtlinien** angezeigt.
 
 ## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>So fügen Sie empfohlene Apps zur Liste der zulässigen Apps hinzu

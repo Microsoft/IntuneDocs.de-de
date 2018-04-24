@@ -1,29 +1,29 @@
 ---
 title: Zuweisen von Apps zu Gruppen in Microsoft Intune
-titlesuffix: 
-description: "Nachdem Sie eine App zu Microsoft Intune hinzugefügt haben, sollten Sie sie Gruppen von Benutzern oder Geräten zuweisen."
-keywords: 
+titlesuffix: ''
+description: Nachdem Sie eine App zu Microsoft Intune hinzugefügt haben, sollten Sie sie Gruppen von Benutzern oder Geräten zuweisen.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: de95f5516298e8ade9e394fab8b05fc056651b0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Zuweisen von Apps zu Gruppen mit Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Nachdem Sie eine App zu Microsoft Intune hinzugefügt haben, können Sie diese Benutzern und Geräten zuweisen.
 
@@ -49,28 +49,28 @@ Apps können Geräten zugewiesen werden, und zwar unabhängig davon, ob sie von 
 ## <a name="how-to-assign-an-app"></a>Zuweisen einer App
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Mobile Apps** aus.
-1. Wählen Sie in der Workload **Mobile Apps** im Abschnitt **Verwalten** die Option **Apps** aus.
-2. Klicken Sie auf dem Blatt mit der Liste der Apps auf die App, die Sie zuweisen möchten.
-3. Wählen Sie auf dem Blatt mit der **Übersicht** über die App im Abschnitt **Verwalten** die Option **Zuweisungen** aus.
-4. Klicken Sie auf **Gruppe hinzufügen**, um das Blatt **Gruppe hinzufügen** für die App anzuzeigen.
-5. Wählen Sie einen **Zuweisungstyp** für diese App aus:
-    - **Verfügbar für registrierte Geräte:**  Benutzer installieren die App über die Unternehmensportal-App oder -Website.
-    - **Verfügbar ohne Registrierung:** Weisen Sie diese App Benutzergruppen zu, deren Geräte nicht bei Intune registriert sind. Beachten Sie, dass der Typ **Android for Work-App** diese Option nicht unterstützt. 
-    - **Erforderlich:** Die App wird auf Geräten in den ausgewählten Gruppen installiert.
-    - **Deinstallieren:** Die App wird auf Geräten in den ausgewählten Gruppen deinstalliert.
+4. Wählen Sie in der Workload **Mobile Apps** im Abschnitt **Verwalten** die Option **Apps** aus.
+5. Klicken Sie auf dem Blatt mit der Liste der Apps auf die App, die Sie zuweisen möchten.
+6. Wählen Sie auf dem Blatt mit der **Übersicht** über die App im Abschnitt **Verwalten** die Option **Zuweisungen** aus.
+7. Klicken Sie auf **Gruppe hinzufügen**, um das Blatt **Gruppe hinzufügen** für die App anzuzeigen.
+8. Wählen Sie einen **Zuweisungstyp** für diese App aus:
+   - **Verfügbar für registrierte Geräte:**  Benutzer installieren die App über die Unternehmensportal-App oder -Website.
+   - **Verfügbar ohne Registrierung:** Weisen Sie diese App Benutzergruppen zu, deren Geräte nicht bei Intune registriert sind. Beachten Sie, dass der Typ **Android for Work-App** diese Option nicht unterstützt. 
+   - **Erforderlich:** Die App wird auf Geräten in den ausgewählten Gruppen installiert.
+   - **Deinstallieren:** Die App wird auf Geräten in den ausgewählten Gruppen deinstalliert.
 
-    > [!NOTE]
-    > **Nur für iOS-Apps**: Wenn Sie ein iOS-VPN-Profil erstellt haben, das VPN pro App-Einstellungen enthält, können Sie es unter **VPN** auswählen. Wenn die App ausgeführt wird, wird die VPN-Verbindung geöffnet. Weitere Informationen finden Sie unter [VPN-Einstellungen für iOS-Geräte](vpn-settings-ios.md).
+     > [!NOTE]
+     > **Nur für iOS-Apps**: Wenn Sie ein iOS-VPN-Profil erstellt haben, das VPN pro App-Einstellungen enthält, können Sie es unter **VPN** auswählen. Wenn die App ausgeführt wird, wird die VPN-Verbindung geöffnet. Weitere Informationen finden Sie unter [VPN-Einstellungen für iOS-Geräte](vpn-settings-ios.md).
 
-6. Wählen Sie **Eingeschlossene Gruppen** aus, um die Benutzergruppen auszuwählen, denen diese App zugewiesen werden soll.
-7. Klicken Sie auf **Auswählen**, wenn Sie mindestens eine Gruppe ausgewählt haben, die eingeschlossen werden soll.
-8. Klicken Sie auf dem Blatt **Zuweisen** auf **OK**, um die Auswahl der eingeschlossenen Gruppe abzuschließen.
-9. Klicken Sie auf **Gruppen ausschließen**, wenn Sie Benutzergruppen von dieser App-Zuweisung ausschließen möchten.
-10. Wenn Sie die auszuschließenden Gruppen ausgewählt haben, klicken Sie auf dem Blatt **Ausgewählte Gruppen auf**  **Auswählen**.
-11. Klicken Sie auf dem Blatt **Gruppe hinzufügen** auf **OK**.
-12. Klicken Sie auf dem Blatt **Zuweisungen** der App auf **Speichern**, um Ihre Zuweisungen zu speichern.
+9. Wählen Sie **Eingeschlossene Gruppen** aus, um die Benutzergruppen auszuwählen, denen diese App zugewiesen werden soll.
+10. Klicken Sie auf **Auswählen**, wenn Sie mindestens eine Gruppe ausgewählt haben, die eingeschlossen werden soll.
+11. Klicken Sie auf dem Blatt **Zuweisen** auf **OK**, um die Auswahl der eingeschlossenen Gruppe abzuschließen.
+12. Klicken Sie auf **Gruppen ausschließen**, wenn Sie Benutzergruppen von dieser App-Zuweisung ausschließen möchten.
+13. Wenn Sie die auszuschließenden Gruppen ausgewählt haben, klicken Sie auf dem Blatt **Ausgewählte Gruppen auf**  **Auswählen**.
+14. Klicken Sie auf dem Blatt **Gruppe hinzufügen** auf **OK**.
+15. Klicken Sie auf dem Blatt **Zuweisungen** der App auf **Speichern**, um Ihre Zuweisungen zu speichern.
 
 Die App wird jetzt den von Ihnen ausgewählten Gruppen zugewiesen. Weitere Informationen zum Ein- und Ausschließen von App-Zuweisungen finden Sie unter [Einschließen und Ausschließen von App-Zuweisungen](apps-inc-exl-assignments.md).
 

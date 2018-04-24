@@ -1,25 +1,24 @@
 ---
-title: Integrieren der Netzwerkzugriffssteuerung mit Microsoft Intune
-titlesuffix: 
-description: Integrieren der Netzwerkzugriffssteuerung (NAC) mit Intune
-keywords: 
+title: Integrieren der Netzwerkzugriffssteuerung mit Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Lösungen für die Netzwerkzugriffssteuerung überprüfen die Registrierung und Konformität von Geräten mit Intune. Die Netzwerkzugriffssteuerung umfasst bestimmte Verhalten und arbeitet mit dem bedingten Zugriff zusammen. Weitere Informationen finden Sie in den Integrationsschritten und unter der Liste mit Partnerlösungen.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f54f04bc5a63c8a431eddaf4210fcb290942cc3
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bdf6b5b71c71dd8b1a9a5c9154953d1ebc07d0dc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integrieren der Netzwerkzugriffssteuerung (NAC) mit Intune
 
@@ -27,7 +26,7 @@ Intune arbeitet mit Partnern der Netzwerkzugriffssteuerung zusammen, um Organisa
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Wie helfen Lösungen von Intune und NAC beim Schutz der Ressourcen Ihrer Organisation?
 
-Die Aufgabe von NAC-Lösungen besteht darin, den Registrierungs- und Kompatibilitätsstatus des Geräts mit Intune zu überprüfen, um Entscheidungen bezüglich der Zugriffssteuerung zu treffen. Wenn das Gerät nicht registriert ist oder registriert ist, aber nicht den Intune-Gerätekompatibilitätsrichtlinien entspricht, sollte das Gerät für die Registrierung und/oder eine Kompatibilitätsprüfung an Intune weitergeleitet werden.
+Lösungen für die Zugriffssteuerung überprüfen den Registrierungs- und Kompatibilitätsstatus des Geräts mit Intune, um Entscheidungen bezüglich der Zugriffssteuerung zu treffen. Wenn das Gerät nicht registriert ist oder registriert ist, aber nicht den Intune-Gerätekonformitätsrichtlinien entspricht, sollte es für die Registrierung und bzw. oder eine Gerätekonformitätsprüfung an Intune weitergeleitet werden.
 
 ### <a name="example"></a>Beispiel
 
@@ -35,17 +34,17 @@ Wenn das Gerät registriert und mit Intune kompatibel ist, sollte die NAC-Lösun
 
 ## <a name="feature-behaviors"></a>Featureverhalten
 
-Geräte, die aktiv mit Intune synchronisieren, können nicht vom Zustand **Konform** / **Nicht konform** in **Nicht synchronisiert** (oder **Unbekannt**) wechseln. Der Zustand **Unbekannt** ist für neu registrierte Geräte reserviert, die noch nicht im Hinblick auf ihre Konformität ausgewertet wurden.
+Geräte, die aktiv mit Intune synchronisiert werden, können nicht vom Zustand **Konform** / **Nicht konform** in **Nicht synchronisiert** (oder **Unbekannt**) wechseln. Der Zustand **Unbekannt** ist für neu registrierte Geräte reserviert, die noch nicht im Hinblick auf ihre Konformität ausgewertet wurden.
 
 Bei Geräten, die für den Zugriff auf Ressourcen blockiert sind, sollte der blockierende Dienst alle Benutzer auf das [Verwaltungsportal](https://portal.manage.microsoft.com) umleiten, um festzustellen, warum das Gerät blockiert ist.  Wenn die Benutzer diese Seite besuchen, werden ihre Geräte erneut synchron im Hinblick auf Konformität ausgewertet.
 
 ## <a name="nac-and-conditional-access"></a>NAC und bedingter Zugriff
 
-NAC nutzt bei Entscheidungen bezüglich der Zugriffssteuerung den bedingten Zugriff. Weitere Informationen finden Sie unter [Gängige Möglichkeiten der Verwendung des bedingten Zugriffs in Intune](conditional-access-intune-common-ways-use.md).
+NAC nutzt bei Entscheidungen bezüglich der Zugriffssteuerung den bedingten Zugriff. Weitere Informationen finden Sie unter [Gängige Möglichkeiten für die Verwendung des bedingten Zugriffs in Intune](conditional-access-intune-common-ways-use.md).
 
 ## <a name="how-the-nac-integration-works"></a>Funktionsweise der NAC-Integration
 
-Im Folgenden erhalten Sie einen Überblick darüber, wie die NAC-Integration funktioniert, wenn sie in Intune integriert ist. In den ersten drei Schritten 1-3 wird der Onboardingprozess erklärt. Nachdem die NAC-Lösung in Intune integriert wurde, beschreiben die Schritte 4-9 den laufenden Betrieb.
+Im Folgenden erhalten Sie einen Überblick darüber, wie die Integration der Netzwerkzugriffssteuerung funktioniert, wenn sie in Intune integriert ist. In den ersten drei Schritten 1-3 wird der Onboardingprozess erklärt. Nachdem die Lösung für die Zugriffssteuerung in Intune integriert wurde, wird in den Schritten 4-9 der laufende Betrieb beschrieben.
 
 ![Wie NAC und Intune zusammenarbeiten](./media/ca-intune-common-ways-2.png)
 
@@ -64,3 +63,4 @@ Im Folgenden erhalten Sie einen Überblick darüber, wie die NAC-Integration fun
 - [Integrieren von Cisco ISE mit Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Integrieren von Citrix NetScaler mit Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
 - [Integrieren von HPE Aruba ClearPass mit Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
+- [Integrate Squadra security Removable Media Manager (secRMM) with Intune (Integrieren des Squadra-Sicherheitsmanagers für entfernbare Wechselmedien mit Intune)](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

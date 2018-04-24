@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 498b9ec1ab98358f73c0ca2139f156164a253a75
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 74c709790295a971ff9efe7c2cc348d13d471d5a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
@@ -66,7 +66,7 @@ Dieses Handbuch befasst sich mit der Verwendung der folgenden Komponenten des In
     * IntuneMAMPolicyDelegate.h
     * IntuneMAMPolicyManager.h
     * IntuneMAMVersionInfo.h
-    
+
 Entwickler können die Inhalte aller oben stehenden Header verfügbar machen, indem sie nur IntuneMAM.h importieren.
 
 
@@ -89,66 +89,67 @@ Führen Sie die folgenden Schritte aus, um das Intune App SDK zu aktivieren:
     ![Intune App SDK iOS – verknüpfte Frameworks und Bibliotheken](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
     Fügen Sie `-force_load {PATH_TO_LIB}/libIntuneMAM.a` einem der folgenden Pfade hinzu, wobei Sie `{PATH_TO_LIB}` durch den Speicherort des Intune App SDK ersetzen:
-      * Der Buildkonfigurationseinstellung `OTHER_LDFLAGS` des Projekts
-      * Benutzeroberflächenoption **Other Linker Flags** (Andere Linker-Flags) von Xcode
+   * Der Buildkonfigurationseinstellung `OTHER_LDFLAGS` des Projekts
+   * Benutzeroberflächenoption **Other Linker Flags** (Andere Linker-Flags) von Xcode
 
-        > [!NOTE]
-        > Um den `PATH_TO_LIB` zu suchen, wählen Sie die Datei `libIntuneMAM.a` und dann im Menü **Datei** die Option **Informationen abrufen** aus. Kopieren Sie den **Pfad** aus dem Abschnitt **Allgemein** im Fenster **Info**.
+     > [!NOTE]
+     > Um den `PATH_TO_LIB` zu suchen, wählen Sie die Datei `libIntuneMAM.a` und dann im Menü **Datei** die Option **Informationen abrufen** aus. Kopieren Sie den **Pfad** aus dem Abschnitt **Allgemein** im Fenster **Info**.
 
-    Fügen Sie das Ressourcenpaket `IntuneMAMResources.bundle` zum Projekt hinzu, indem Sie es in **Buildphasen** unter **Paketressourcen kopieren** ziehen.
+     Fügen Sie das Ressourcenpaket `IntuneMAMResources.bundle` zum Projekt hinzu, indem Sie es in **Buildphasen** unter **Paketressourcen kopieren** ziehen.
 
-    ![Intune App SDK iOS: Paketressourcen kopieren](./media/intune-app-sdk-ios-copy-bundle-resources.png)
+     ![Intune App SDK iOS: Paketressourcen kopieren](./media/intune-app-sdk-ios-copy-bundle-resources.png)
 
-    Fügen Sie diese iOS-Frameworks zum Projekt hinzu:  
-            * MessageUI.framework  
-            * Security.framework  
-            * MobileCoreServices.framework  
-            * SystemConfiguration.framework  
-            * libsqlite3.tbd  
-            * libc++.tbd  
-            * ImageIO.framework  
-            * LocalAuthentication.framework  
-            * AudioToolbox.framework  
-            * QuartzCore.framework  
-            * WebKit.framework  
+     Fügen Sie diese iOS-Frameworks zum Projekt hinzu:  
+    * MessageUI.framework  
+    * Security.framework  
+    * MobileCoreServices.framework  
+    * SystemConfiguration.framework  
+    * libsqlite3.tbd  
+    * libc++.tbd  
+    * ImageIO.framework  
+    * LocalAuthentication.framework  
+    * AudioToolbox.framework  
+    * QuartzCore.framework  
+    * WebKit.framework
 
 3. Aktivieren Sie die Freigabe des Schlüsselbunds (sofern noch nicht geschehen), indem Sie in jedem Projektziel **Capabilities** auswählen und den Schalter **Keychain Sharing** aktivieren. Die Freigabe des Schlüsselbunds ist erforderlich, damit Sie mit dem nächsten Schritt fortfahren können.
 
-  > [!NOTE]
-    > Ihr Bereitstellungsprofil muss neue Werte für die Freigabe des Schlüsselbunds unterstützen. Die Schlüsselbund-Zugriffsgruppen sollten ein Platzhalterzeichen unterstützen. Sie können dies überprüfen, indem Sie die Datei „.mobileprovision“ in einem Text-Editor öffnen, nach **keychain-access-groups** suchen und sich vergewissern, dass ein Platzhalter vorhanden ist. Beispiel:
-    ```xml
-    <key>keychain-access-groups</key>
-    <array>
-    <string>YOURBUNDLESEEDID.*</string>
-    </array>
-    ```
+   > [!NOTE]
+   > Ihr Bereitstellungsprofil muss neue Werte für die Freigabe des Schlüsselbunds unterstützen. Die Schlüsselbund-Zugriffsgruppen sollten ein Platzhalterzeichen unterstützen. Sie können dies überprüfen, indem Sie die Datei „.mobileprovision“ in einem Text-Editor öffnen, nach **keychain-access-groups** suchen und sich vergewissern, dass ein Platzhalter vorhanden ist. Beispiel:
+   >  ```xml
+   >  <key>keychain-access-groups</key>
+   >  <array>
+   >  <string>YOURBUNDLESEEDID.*</string>
+   >  </array>
+   >  ```
 
 4. Nachdem Sie die Freigabe des Schlüsselbunds aktiviert haben, folgen Sie den nachstehenden Schritten, um eine separate Zugriffsgruppe zu erstellen, in der das Intune App SDK seine Daten speichert. Sie können eine Zugriffsgruppe für den Schlüsselbund über die Benutzeroberfläche oder mithilfe der Berechtigungsdatei erstellen. Wenn Sie die Benutzeroberfläche zum Erstellen der Zugriffsgruppe für den Schlüsselbund verwenden, führen Sie unbedingt die folgenden Schritte aus:
 
-    1. Wenn in Ihrer mobilen App keine Zugriffsgruppen für den Schlüsselbund definiert sind, fügen Sie die Paket-ID der App als erste Gruppe hinzu.
+   1. Wenn in Ihrer mobilen App keine Zugriffsgruppen für den Schlüsselbund definiert sind, fügen Sie die Paket-ID der App als erste Gruppe hinzu.
 
-    2. Fügen Sie die freigegebene Zugriffsgruppe für den Schlüsselbund `com.microsoft.intune.mam` Ihren vorhandenen Zugriffsgruppen hinzu. Diese Zugriffsgruppe wird vom Intune App SDK zum Speichern von Daten verwendet.
+   2. Fügen Sie die freigegebene Zugriffsgruppe für den Schlüsselbund `com.microsoft.intune.mam` Ihren vorhandenen Zugriffsgruppen hinzu. Diese Zugriffsgruppe wird vom Intune App SDK zum Speichern von Daten verwendet.
 
-    3. Fügen Sie `com.microsoft.adalcache` zu Ihren vorhandenen Zugriffsgruppen hinzu.
+   3. Fügen Sie `com.microsoft.adalcache` zu Ihren vorhandenen Zugriffsgruppen hinzu.
 
-        ![Intune App SDK für iOS: Schlüsselbund gemeinsam nutzen](./media/intune-app-sdk-ios-keychain-sharing.png)
+       ![Intune App SDK für iOS: Schlüsselbund gemeinsam nutzen](./media/intune-app-sdk-ios-keychain-sharing.png)
 
-    4. Wenn Sie die Berechtigungsdatei direkt bearbeiten, anstatt die oben gezeigte Xcode-Benutzeroberfläche zum Erstellen der Schlüsselbund-Zugriffsgruppen zu verwenden, setzen Sie `$(AppIdentifierPrefix)` vor die Schlüsselbund-Zugriffsgruppen (Xcode verarbeitet dies automatisch). Beispiel:
+   4. Wenn Sie die Berechtigungsdatei direkt bearbeiten, anstatt die oben gezeigte Xcode-Benutzeroberfläche zum Erstellen der Schlüsselbund-Zugriffsgruppen zu verwenden, setzen Sie `$(AppIdentifierPrefix)` vor die Schlüsselbund-Zugriffsgruppen (Xcode verarbeitet dies automatisch). Beispiel:
 
-            * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-            * `$(AppIdentifierPrefix)com.microsoft.adalcache`
+           * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+           * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
-    > [!NOTE]
-    > Eine Berechtigungsdatei ist eine XML-Datei, die Ihrer App eindeutig zugeordnet werden kann. Sie wird zum Festlegen spezieller Berechtigungen und Funktionen in Ihrer iOS-App verwendet. Wenn Ihre App vorher noch keine Berechtigungsdatei hatte, sollte die Aktivierung der Schlüsselbundfreigabe (Schritt 3) dazu geführt haben, dass Xcode eine für Ihre App generiert hat.
+      > [!NOTE]
+      > Eine Berechtigungsdatei ist eine XML-Datei, die Ihrer App eindeutig zugeordnet werden kann. Sie wird zum Festlegen spezieller Berechtigungen und Funktionen in Ihrer iOS-App verwendet. Wenn Ihre App vorher noch keine Berechtigungsdatei hatte, sollte die Aktivierung der Schlüsselbundfreigabe (Schritt 3) dazu geführt haben, dass Xcode eine für Ihre App generiert hat.
 
 5. Nehmen Sie jedes Protokoll, das Ihre App an `UIApplication canOpenURL` übergibt, in das `LSApplicationQueriesSchemes`-Array der Datei „Info.plist“ Ihrer App auf. Speichern Sie Ihre Änderungen, bevor Sie mit dem nächsten Schritt fortfahren.
 
 6. Verwenden Sie das im [SDK-Repository](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) enthaltene IntuneMAMConfigurator-Tool, um die Konfiguration der Datei „Info.plist“ Ihrer App abzuschließen. Das Tool weist 3 Parameter auf:
-|Eigenschaft|Verwendung|
-|---------------|--------------------------------|
-|- i |  `<Path to the input plist>` |
-|- e | `<Path to the entitlements file>` |
-|- o |  (Optional) `<Path to the output plist>` |
+
+   |Eigenschaft|Verwendung|
+   |---------------|--------------------------------|
+   |- i |  `<Path to the input plist>` |
+   |- e | `<Path to the entitlements file>` |
+   |- o |  (Optional) `<Path to the output plist>` |
 
 Wenn der Parameter „-o“ nicht angegeben ist, wird die Eingabedatei direkt geändert. Das Tool ist idempotent und sollte immer dann erneut ausgeführt werden, wenn Änderungen an der Datei „Info.plist“ der App oder den Berechtigungen vorgenommen wurden. Bei der Aktualisierung des Intune-SDK sollten Sie auch die neueste Version des Tools herunterladen und ausführen, für den Fall, dass sich die Konfigurationsanforderungen von „Info.plist“ im letzten Release geändert haben.
 
@@ -171,9 +172,9 @@ Gehen Sie folgendermaßen vor, um Ihre App mit den ADAL-Binärdateien zu verknü
 1. Laden Sie die [Authentifizierungsbibliothek von Azure Active Directory (ADAL) für Objective-C](https://github.com/AzureAD/azure-activedirectory-library-for-objc) von GitHub herunter, und befolgen Sie dann die [Anweisungen](https://github.com/AzureAD/azure-activedirectory-library-for-objc#download) zum Herunterladen von ADAL mithilfe von Git-Submodulen oder CocoaPods.
 
 2. Fügen Sie das ADAL-Framework (Option 1) oder die statische Bibliothek (Option 2) zu Ihrem Projekt hinzu:
-    
+
     **Option 1 (empfohlen)**: Ziehen Sie `ADAL.framework` in die Liste **Eingebettete Binärdateien** des Projektziels.
-    
+
     **Option 2**: Ziehen Sie die `libADALiOS.a`-Bibliothek in die Liste **Verknüpfte Frameworks und Bibliotheken** des Projektziels. Fügen Sie `-force_load {PATH_TO_LIB}/libADALiOS.a` der `OTHER_LDFLAGS`-Buildkonfigurationseinstellung des Projekts hinzu, oder legen Sie auf der Xcode-Benutzeroberfläche **Other Linker Flags** (Andere Linker-Flags) fest. `PATH_TO_LIB` sollte durch den Speicherort der ADAL-Binärdateien ersetzt werden.
 
 
@@ -210,7 +211,7 @@ Wenn Ihre App bereits ADAL verwendet, sind die folgenden Konfigurationen erforde
 Darüber hinaus können Apps diese Azure AD-Einstellungen zur Runtime überschreiben. Legen Sie zu diesem Zweck einfach die Eigenschaften `aadAuthorityUriOverride`, `aadClientIdOverride` und `aadRedirectUriOverride` auf der `IntuneMAMPolicyManager`-Instanz fest.
 
 > [!NOTE]
-    > Der Ansatz mit „Info.plist“ empfiehlt sich für alle Einstellungen, die statisch sind und nicht zur Runtime ermittelt werden müssen. Die den `IntuneMAMPolicyManager`-Eigenschaften zugewiesenen Werte haben Vorrang vor den entsprechenden in „Info.plist“ angegebenen Werten und werden auch nach dem Neustart der App beibehalten. Das SDK verwendet diese weiterhin für das Einchecken von Richtlinien, bis die Registrierung des Benutzers aufgehoben wird oder die Werte gelöscht oder geändert werden.
+> Der Ansatz mit „Info.plist“ empfiehlt sich für alle Einstellungen, die statisch sind und nicht zur Runtime ermittelt werden müssen. Die den `IntuneMAMPolicyManager`-Eigenschaften zugewiesenen Werte haben Vorrang vor den entsprechenden in „Info.plist“ angegebenen Werten und werden auch nach dem Neustart der App beibehalten. Das SDK verwendet diese weiterhin für das Einchecken von Richtlinien, bis die Registrierung des Benutzers aufgehoben wird oder die Werte gelöscht oder geändert werden.
 
 ### <a name="if-your-app-does-not-use-adal"></a>Wenn Ihre Anwendung ADAL nicht verwendet
 
@@ -233,7 +234,6 @@ Apps, die bereits ADAL verwenden, sollten die `registerAndEnrollAccount`-Methode
  */
 
 (void)registerAndEnrollAccount:(NSString *)identity;
-
 ```
 
 Durch Aufrufen der `registerAndEnrollAccount`-Methode registriert das SDK das Benutzerkonto und versucht, die App im Auftrag dieses Kontos zu registrieren. Wenn bei der Registrierung aus irgendeinem Grund ein Fehler auftritt, versucht das SDK die Registrierung 24 Stunden später automatisch erneut. Zu Debuggingzwecken kann die App über einen Delegaten [Benachrichtigungen](#Status-result-and-debug-notifications) zu den Ergebnissen von Registrierungsanforderungen empfangen.
@@ -256,7 +256,6 @@ Apps, die den Benutzer nicht mit ADAL anmelden, können trotzdem App-Schutzricht
  *  @param identity The UPN of the account to be logged in and enrolled.
  */
  (void)loginAndEnrollAccount: (NSString *)identity;
-
 ```
 
 Durch Aufrufen dieser Methode wird der Benutzer vom SDK zur Eingabe von Anmeldeinformationen aufgefordert, wenn kein vorhandenes Token gefunden wird. Das SDK versucht dann, die App im Auftrag des angegebenen Benutzerkontos beim Intune-MAM-Dienst zu registrieren. Die Methode kann mit der Identität „nil“ aufgerufen werden. In diesem Fall nimmt das SDK die Registrierung mit dem vorhandenen verwalteten Benutzer auf dem Gerät (im Falle von MDM) vor oder fordert den Benutzer zur Eingabe eines Benutzernamens auf, wenn kein vorhandener Benutzer gefunden wird.
@@ -295,7 +294,6 @@ Bevor der Benutzer abgemeldet wird, sollte die App die folgende Methode auf der 
  *  @param doWipe   If YES, a selective wipe if the account is un-enrolled
  */
 (void)deRegisterAndUnenrollAccount:(NSString *)identity withWipe:(BOOL)doWipe;
-
 ```
 
 Diese Methode muss aufgerufen werden, bevor die Azure AD-Token des Benutzerkontos gelöscht werden. Das SDK benötigt die AAD-Token des Benutzerkontos, um im Auftrag des Benutzers spezielle Anforderungen an den Intune-MAM-Dienst zu senden.
@@ -338,7 +336,6 @@ Die Benachrichtigungen werden über Stellvertretermethoden in `Headers/IntuneMAM
  */
 
 (void)unenrollRequestWithStatus:(IntuneMAMEnrollmentStatus *)status;
-
 ```
 
 Diese Stellvertretermethoden geben ein `IntuneMAMEnrollmentStatus`-Objekt zurück, das die folgenden Informationen enthält:
@@ -374,7 +371,6 @@ Die folgenden Beispiele zeigen Implementierungen der Stellvertretermethoden:
     NSLog(@"un-enroll result for identity %@ with status code %ld", status.identity, (unsigned long)status.statusCode);
     NSLog(@"Debug Message: %@", status.errorString);
 }
-
 ```
 
 ## <a name="app-restart"></a>App-Neustart

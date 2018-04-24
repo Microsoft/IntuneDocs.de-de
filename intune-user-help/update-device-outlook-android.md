@@ -1,28 +1,28 @@
 ---
-title: "Sie müssen Ihr Android-Gerät aktualisieren, um Outlook zu installieren | Microsoft-Dokumentation"
+title: Sie müssen Ihr Android-Gerät aktualisieren, um Outlook zu installieren | Microsoft-Dokumentation
 titleSuffix: Microsoft Intune
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/29/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 48ef8e17-db03-4a1b-95a2-bc594979734c
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 64be95a83d3fbe09912e946a122683e38eb61928
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: ff8a2650b0264662084a4bf3a8186808f5980faf
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="you-need-to-update-your-android-device-to-install-the-outlook-app"></a>Sie müssen Ihr Android-Gerät aktualisieren, um Outlook zu installieren
 

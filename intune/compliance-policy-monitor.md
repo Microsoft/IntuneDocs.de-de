@@ -1,27 +1,30 @@
 ---
-title: "Überwachen von Microsoft Intune -Gerätekonformitätsrichtlinien"
-titlesuffix: 
-description: "Verwenden Sie das Dashboard für die Gerätekonformität, um die Konformität der Geräte insgesamt zu überwachen, Berichte anzuzeigen sowie die Gerätekonformität pro Richtlinie und pro Einstellung anzuzeigen."
-keywords: 
+title: Überwachen von Microsoft Intune -Gerätekonformitätsrichtlinien
+titlesuffix: ''
+description: Verwenden Sie das Dashboard für die Gerätekonformität, um die Konformität der Geräte insgesamt zu überwachen, Berichte anzuzeigen sowie die Gerätekonformität pro Richtlinie und pro Einstellung anzuzeigen.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 557018264da5c21459e47e3e139ddd327a4a5ea6
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
 Mithilfe von Kompatibilitätsberichten können Administratoren die Kompatibilität von Geräten in ihrer Organisation analysieren und schnell kompatibilitätsbezogene Probleme behandeln, die bei Benutzern in ihrer Organisation auftreten. Sie können Informationen zum allgemeinen Kompatibilitätsstatus von Geräten, zum Kompatibilitätsstatus einer einzelnen Einstellung und zum Kompatibilitätsstatus einer einzelnen Richtlinie sowie Detailinformationen zu einzelnen Geräten anzeigen, um sich über bestimmte Einstellungen und Richtlinien zu informieren, die das Gerät betreffen.
+
+> [!NOTE]
+> Im März werden im Intune-Dienst basierend auf Ihrem Feedback einige Sicherheitsverbesserungen eingeführt. Je nachdem, wie Ihre Konformitätsrichtlinien konfiguriert sind, müssen Sie möglicherweise Maßnahmen ergreifen, damit Ihre Endbenutzer nicht den Zugriff auf ihre E-Mails verlieren. Weitere Informationen finden Sie unter [Upcoming security enhancements (Bevorstehende Sicherheitsverbesserungen)](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
@@ -124,6 +127,19 @@ Wenn Sie auf die Schaltfläche **Aktualisieren** klicken, wird das Flyout geschl
 Wenn Sie auf ein Gerät klicken, wird der **Bereich „Geräte“** geöffnet, in dem das Gerät ausgewählt ist. Dieser Bereich zeigt weitere Details zu den Einstellungen der auf dieses Gerät angewendeten Konformitätsrichtlinie an.
 
 Wenn Sie auf die eigentliche Geräterichtlinieneinstellung klicken, sehen Sie den Namen der Gerätekompatibilitätsrichtlinie, aus der die vom Administrator festgelegte Gerätekompatibilitätseinstellung stammt.
+
+### <a name="devices-without-compliance-policy"></a>Geräte ohne Konformitätsrichtlinie
+Dieser Bericht identifiziert Geräte, denen keine Konformitätsrichtlinie zugewiesen ist. Durch die Einführung der Sicherheitseinstellung, die alle Geräte ohne Konformitätsrichtlinien als „nicht konform“ markiert, ist es wichtig, diese Geräte zu identifizieren. Sie können diesen dann mindestens eine Konformitätsrichtlinie zuweisen.
+
+> [!NOTE]
+> Die neue Sicherheitseinstellung kann im Intune-Portal konfiguriert werden. Klicken Sie auf **Gerätekonformität**, und klicken Sie unter **Setup** auf **Einstellungen für Konformitätsrichtlinien**. Verwenden Sie dann die Umschaltfläche, um **Markieren Sie Geräte ohne zugewiesene Konformitätsrichtlinie als** auf **Konform** oder **Nicht konform** festzulegen. Erfahren Sie mehr über diese [Sicherheitsverbesserung im Intune-Dienst](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
+
+![Bild, das den Bericht für Geräte ohne Konformitätsrichtlinie anzeigt](./media/idc-12.png)
+
+Die Kachel **Geräte ohne Konformitätsrichtlinie** ist im Dashboard „Gerätekonformität“ verfügbar und zeigt alle Geräte ohne Konformitätsrichtlinie an sowie den Benutzer des Geräts, den Konformitätsstatus und das Gerätemodell.
+
+> [!NOTE]
+> Benutzer, die einer beliebigen Konformitätsrichtlinie zugeordnet sind, werden im Bericht unabhängig von der Geräteplattform nicht angezeigt. Wenn Sie beispielsweise eine Windows-Konformitätsrichtlinie unabsichtlich einem Benutzer mit einem Android-Gerät hinzugefügt haben, wird das Gerät nicht im Bericht angezeigt. Intune betrachtet dieses Android-Gerät jedoch als „nicht konform“. Es wird empfohlen, Richtlinien für jede Geräteplattform zu erstellen und diese für alle Benutzer bereitzustellen, um Probleme zu vermeiden.
 
 ### <a name="per-policy-device-compliance-report"></a>Richtlinienspezifischer Gerätekompatibilitätsbericht
 

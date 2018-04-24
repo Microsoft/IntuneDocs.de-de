@@ -1,27 +1,27 @@
 ---
-title: "Einstellungen für Geräteeinschränkungen für Windows Phone 8.1 in Microsoft Intune"
-titleSuffix: 
-description: "In diesem Artikel erhalten Sie Informationen zu den Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows Phone 8.1-Geräten."
-keywords: 
+title: Einstellungen für Geräteeinschränkungen für Windows Phone 8.1 in Microsoft Intune
+titleSuffix: ''
+description: In diesem Artikel erhalten Sie Informationen zu den Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows Phone 8.1-Geräten.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 808c8e9ac1ef944b69ae8e548c62d4c6366820d0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1bebb5915a7adeb13fd95b73587bca0171bebd83
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Windows Phone 8.1 in Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 In diesem Artikel erhalten Sie Informationen zu den Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für Windows Phone 8.1-Geräte konfigurieren können.
 
@@ -70,7 +70,7 @@ Suchen Sie im [Windows Phone Store](https://www.microsoft.com/store/apps/windows
 
 Öffnen Sie die Seite der App, und kopieren Sie die URL in die Zwischenablage. Sie können diese URL nun in der Liste kompatibler oder nicht kompatibler Apps verwenden.
 
-Beispiel: Durchsuchen Sie den Store nach der Skype-App. Die von Ihnen verwendete URL lautet **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+Beispiel: Durchsuchen Sie den Store nach der Skype-App. Verwenden Sie dazu die URL **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
 
 

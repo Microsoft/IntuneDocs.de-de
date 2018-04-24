@@ -14,15 +14,15 @@ ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3be77c1042d695ed0bed6ee7cbbc442342e91d8b
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b04e6e06c2257ffc5822b28b6f81dd00ca5573cc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Unterstützen des Schutzes von Windows-PCs mithilfe von Windows-Firewall-Richtlinien in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune kann Ihnen auf verschiedene Weisen helfen, die mit dem Intune-Client verwalteten PCs zu schützen. Eine Möglichkeit sind Richtlinien, über die sich Windows-Firewall-Einstellungen auf PCs konfigurieren lassen.
 

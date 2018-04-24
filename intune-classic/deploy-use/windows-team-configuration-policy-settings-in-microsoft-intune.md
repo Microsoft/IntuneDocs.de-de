@@ -1,25 +1,25 @@
 ---
-title: "Einstellungen für Windows Team-Konfigurationsrichtlinie"
-description: "Verwenden Sie die **allgemeine Windows 10 Team-Konfigurationsrichtlinie** von Microsoft Intune, um Einstellungen für registrierte Windows 10 Team-Geräte (z. B. Microsoft Surface Hub) zu konfigurieren."
-keywords: 
+title: Einstellungen für Windows Team-Konfigurationsrichtlinie
+description: Verwenden Sie die **allgemeine Windows 10 Team-Konfigurationsrichtlinie** von Microsoft Intune, um Einstellungen für registrierte Windows 10 Team-Geräte (z. B. Microsoft Surface Hub) zu konfigurieren.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 38194ef3-e26e-4682-958d-14b395fccba1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 70b1091cd58439b7d42eab1a612b0b63ca39103d
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-team-configuration-policy-settings-in-microsoft-intune"></a>Einstellungen für Windows Team-Konfigurationsrichtlinie in Microsoft Intune
 

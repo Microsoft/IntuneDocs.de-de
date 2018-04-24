@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7654e5235fc30f46f67d35544a92c4bd25ac5c86
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 816a235136d91f2691e6be442036515544c004b2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Häufig gestellte Fragen zu MAM und App-Schutz
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Dieser Artikel beantwortet einige häufig gestellte Fragen zur mobilen Anwendungsverwaltung (Mobile Application Management, MAM) und zum App-Schutz in Intune.
 
@@ -61,23 +61,23 @@ Dieser Artikel beantwortet einige häufig gestellte Fragen zur mobilen Anwendung
 
 **Welche zusätzlichen Anforderungen gelten für die Verwendung der [mobilen Outlook-App](https://www.microsoft.com/outlook-com/mobile/)?**
 
-  1. Die mobile Outlook-App muss auf dem Gerät des Endbenutzers installiert sein.
+1. Die mobile Outlook-App muss auf dem Gerät des Endbenutzers installiert sein.
 
-  2. Das [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online)-Postfach und die zugehörige Lizenz des Endbenutzers müssen mit dem AAD-Konto des Endbenutzers verknüpft sein.
+2. Das [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online)-Postfach und die zugehörige Lizenz des Endbenutzers müssen mit dem AAD-Konto des Endbenutzers verknüpft sein.
 
-  >[!NOTE]
-  > Die mobile Outlook-App unterstützt derzeit nur Microsoft Exchange Online, nicht jedoch lokales Exchange oder Exchange in Office 365 dediziert.
+   >[!NOTE]
+   > Die mobile Outlook-App unterstützt derzeit nur Microsoft Exchange Online, nicht jedoch lokales Exchange oder Exchange in Office 365 dediziert.
 
 **Welche zusätzlichen Anforderungen gelten für die Verwendung der [Word-, Excel- und PowerPoint](https://products.office.com/business/office)-Apps?**
 
-  1. Mit dem AAD-Konto des Endbenutzers muss eine Lizenz für [Office 365 Business oder Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) verknüpft sein. Das Abonnement muss die Office-Apps auf mobilen Geräten enthalten und kann ein Cloudspeicherkonto mit [OneDrive for Business](https://onedrive.live.com/about/business/) umfassen. Office 365-Lizenzen können im [Office-Portal](http://portal.office.com) zugewiesen werden. Befolgen Sie diese [Anweisungen](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+1. Mit dem AAD-Konto des Endbenutzers muss eine Lizenz für [Office 365 Business oder Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) verknüpft sein. Das Abonnement muss die Office-Apps auf mobilen Geräten enthalten und kann ein Cloudspeicherkonto mit [OneDrive for Business](https://onedrive.live.com/about/business/) umfassen. Office 365-Lizenzen können im [Office-Portal](http://portal.office.com) zugewiesen werden. Befolgen Sie diese [Anweisungen](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
-  2. Der Benutzer muss über einen verwalteten konfigurierten Speicherort verfügen. Dieser wird mithilfe der Funktion „Speichern unter“ unter der Einstellung für die Anwendungsschutzrichtlinie zum Verhindern von „Speichern unter“ konfiguriert. Wenn beispielsweise der verwaltete Speicherort OneDrive ist, muss die [OneDrive](https://onedrive.live.com/about/)-App in der Word-, Excel- oder PowerPoint-App des Benutzer konfiguriert werden.
+2. Der Benutzer muss über einen verwalteten konfigurierten Speicherort verfügen. Dieser wird mithilfe der Funktion „Speichern unter“ unter der Einstellung für die Anwendungsschutzrichtlinie zum Verhindern von „Speichern unter“ konfiguriert. Wenn beispielsweise der verwaltete Speicherort OneDrive ist, muss die [OneDrive](https://onedrive.live.com/about/)-App in der Word-, Excel- oder PowerPoint-App des Benutzer konfiguriert werden.
 
-  3. Wenn der verwaltete Speicherort OneDrive ist, muss die App unter die App-Schutzrichtlinie fallen, die für den Benutzer angegeben ist.
+3. Wenn der verwaltete Speicherort OneDrive ist, muss die App unter die App-Schutzrichtlinie fallen, die für den Benutzer angegeben ist.
 
-  >[!NOTE]
-  > Die mobilen Office-Apps unterstützen zurzeit nur SharePoint Online, nicht jedoch SharePoint lokal.
+   >[!NOTE]
+   > Die mobilen Office-Apps unterstützen zurzeit nur SharePoint Online, nicht jedoch SharePoint lokal.
 
 **Warum wird ein verwalteter Speicherort (z.B. OneDrive) für Office benötigt?** Intune kennzeichnet alle Daten in der App entweder als „unternehmenseigen“ oder „persönlich“. Daten werden als „unternehmenseigen“ betrachtet, wenn sie von einem Speicherort des Unternehmens stammen. Bei den Office-Apps betrachtet Intune Folgendes als Unternehmensspeicher: E-Mail-Speicher (Exchange) oder Cloudspeicher (OneDrive-App mit einem OneDrive for Business-Konto).
 
@@ -124,15 +124,15 @@ MAM (für iOS) erlaubt derzeit eine PIN auf Anwendungsebene mit alphanumerischen
 
 **Wie setzt Intune Daten remote zurück?** Intune kann App-Daten auf drei Arten zurücksetzen: vollständiges Zurücksetzen des Geräts, selektives Zurücksetzen für MDM und selektives Zurücksetzen für MAM. Weitere Informationen zur Remotezurücksetzung für MDM finden Sie unter [Schützen von Daten durch vollständiges oder selektives Zurücksetzen mit Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Weitere Informationen zum selektiven Zurücksetzen unter Verwendung von MAM finden Sie unter [Zurücksetzen von verwalteten Unternehmensanwendungsdaten mit Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md)
 
-  1. **Was ist vollständiges Zurücksetzen?** Beim [vollständigen Zurücksetzen](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) werden alle Benutzerdaten und -einstellungen vom **Gerät** entfernt, indem das Gerät auf die werkseitigen Standardeinstellungen zurückgesetzt wird. Das Gerät wird aus Intune entfernt.
-  >[!NOTE]
-  > Ein vollständiges Zurücksetzen kann nur auf Geräten erreicht werden, die bei der mobilen Intune-Geräteverwaltung registriert sind.
+1. **Was ist vollständiges Zurücksetzen?** Beim [vollständigen Zurücksetzen](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) werden alle Benutzerdaten und -einstellungen vom **Gerät** entfernt, indem das Gerät auf die werkseitigen Standardeinstellungen zurückgesetzt wird. Das Gerät wird aus Intune entfernt.
+   >[!NOTE]
+   > Ein vollständiges Zurücksetzen kann nur auf Geräten erreicht werden, die bei der mobilen Intune-Geräteverwaltung registriert sind.
 
-  2. **Was ist selektives Zurücksetzen für MDM?** Informationen zum selektiven Zurücksetzen finden Sie unter [Schützen von Daten durch vollständiges oder selektives Zurücksetzen mit Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe).
+2. **Was ist selektives Zurücksetzen für MDM?** Informationen zum selektiven Zurücksetzen finden Sie unter [Schützen von Daten durch vollständiges oder selektives Zurücksetzen mit Microsoft Intune](../deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe).
 
-  3. **Was ist selektives Zurücksetzen für MAM?** Durch selektives Zurücksetzen für MAM können Unternehmensanwendungsdaten von einer App entfernt werden. Die Anforderung wird mithilfe des Azure-Portals für Intune initiiert. Weitere Informationen zum Initiieren einer Zurücksetzungsanforderung erhalten Sie unter [Zurücksetzen von verwalteten Unternehmensanwendungsdaten mit Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md).
+3. **Was ist selektives Zurücksetzen für MAM?** Durch selektives Zurücksetzen für MAM können Unternehmensanwendungsdaten von einer App entfernt werden. Die Anforderung wird mithilfe des Azure-Portals für Intune initiiert. Weitere Informationen zum Initiieren einer Zurücksetzungsanforderung erhalten Sie unter [Zurücksetzen von verwalteten Unternehmensanwendungsdaten mit Microsoft Intune](../deploy-use/wipe-managed-company-app-data-with-microsoft-intune.md).
 
-  4. **Wie schnell wird das selektive Zurücksetzen für MAM ausgeführt?** Wenn das selektive Zurücksetzen initiiert wird, während ein Benutzer die App verwendet, überprüft das Intune App SDK alle 30 Minuten, ob eine Anforderung zum selektiven Zurücksetzen vom Intune MAM-Dienst vorhanden ist. Das SDK überprüft auch, ob eine Anforderung zum selektiven Zurücksetzen vorhanden ist, wenn ein Benutzer eine App zum ersten Mal startet und sich mit einem Geschäfts-, Uni- oder Schulkonto anmeldet.
+4. **Wie schnell wird das selektive Zurücksetzen für MAM ausgeführt?** Wenn das selektive Zurücksetzen initiiert wird, während ein Benutzer die App verwendet, überprüft das Intune App SDK alle 30 Minuten, ob eine Anforderung zum selektiven Zurücksetzen vom Intune MAM-Dienst vorhanden ist. Das SDK überprüft auch, ob eine Anforderung zum selektiven Zurücksetzen vorhanden ist, wenn ein Benutzer eine App zum ersten Mal startet und sich mit einem Geschäfts-, Uni- oder Schulkonto anmeldet.
 
 **Warum funktionieren lokale Dienste nicht mit von Intune geschützten Apps?** Der Intune-App-Schutz basiert darauf, dass die Identität des Benutzers in der App und im Intune App SDK konsistent ist. Die einzige Möglichkeit, dies zu garantieren, ist eine moderne Authentifizierung. Es gibt Szenarien, in denen Apps möglicherweise mit einer lokalen Konfiguration funktionieren. Dies ist aber weder konsistent noch garantiert.
 

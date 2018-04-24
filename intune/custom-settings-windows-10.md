@@ -1,27 +1,27 @@
 ---
-title: "Benutzerdefinierte Microsoft Intune-Einstellungen für Windows 10-Geräte"
-titlesuffix: 
-description: "Erfahren Sie etwas über die benutzerdefinierten Einstellungen, die Sie in einem benutzerdefinierten Windows 10-Profil konfigurieren können."
-keywords: 
+title: Benutzerdefinierte Microsoft Intune-Einstellungen für Windows 10-Geräte
+titlesuffix: ''
+description: Erfahren Sie etwas über die benutzerdefinierten Einstellungen, die Sie in einem benutzerdefinierten Windows 10-Profil konfigurieren können.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4bb86d0f80a4d337e0ab63ae7f90d6c3541462d9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c8e0d56c91b710a86949844d2fd455e4183488f5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>Benutzerdefinierte Microsoft Intune-Geräteeinstellungen für Windows 10-Geräte
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
  Stellen Sie mithilfe des **benutzerdefinierten** Profils von Microsoft Intune für Windows 10 und Windows 10 Mobile OMA-URI-Einstellungen (Open Mobile Alliance Uniform Resource Identifier) bereit, um Features auf Geräten zu steuern. Windows 10 stellt viele CSP-Einstellungen zur Verfügung, z.B. den [Richtlinienkonfigurationsdienst-Anbieter (Policy Configuration Service Provider; Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
 Wenn Sie nach einer bestimmten Einstellung suchen, beachten Sie, dass das [Geräteeinschränkungsprofil von Windows 10](device-restrictions-windows-10.md) viele Einstellungen enthält, die in Intune integriert sind und keine Angabe benutzerdefinierter Werte erfordern.
@@ -31,9 +31,9 @@ Wenn Sie nach einer bestimmten Einstellung suchen, beachten Sie, dass das [Gerä
 1. Anweisungen zu den ersten Schritten finden Sie unter [Konfigurieren von benutzerdefinierten Geräteeinstellungen in Microsoft Intune](custom-settings-configure.md).
 1. Klicken Sie im Bereich **Benutzerdefinierte OMA-URI-Einstellungen** auf **Hinzufügen**, um einen neuen Wert hinzuzufügen. Sie können auch auf **Exportieren** klicken, um eine Liste aller konfigurierten Werte in einer durch Trennzeichen getrennten Wertedatei (CSV) anzuzeigen.
 1. Geben Sie für jede OMA-URI-Einstellung, die Sie hinzufügen möchten, die folgenden Informationen ein. Verwenden Sie die Liste in diesem Artikel, um weitere Informationen zu den Einstellungen zu erhalten, die Sie verwenden können:
-    - **Name**: Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie sie in der Liste der Einstellungen einfacher identifizieren können.
+    - **Name:** Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie sie in der Liste der Einstellungen einfacher identifizieren können.
     - **Beschreibung**: Geben Sie optional eine Beschreibung für die Einstellung ein.
-    - **OMA-URI (Groß-/Kleinschreibung beachten)**: Geben Sie den OMA-URI an, für den Sie eine Einstellung festlegen möchten.
+    - **OMA-URI (Groß-/Kleinschreibung beachten)** – Geben Sie den OMA-URI an, für den Sie eine Einstellung festlegen möchten.
     - **Datentyp** – Wählen Sie aus:
         - **Zeichenfolge**
         - **Zeichenfolge (XML)**

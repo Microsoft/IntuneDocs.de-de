@@ -1,25 +1,25 @@
 ---
-title: "Notwendigkeit zur Deaktivierung der Funktion „USB-Debugging“ | Microsoft-Dokumentation"
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Notwendigkeit zur Deaktivierung der Funktion „USB-Debugging“ | Microsoft-Dokumentation
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f250f455-898d-46fe-93ac-2b3aec6a0b71
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 96dc5b15ab90f851ea3c2ed251cc80ee1ca1fc31
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2f1b71513ad5e22f62c783ac8d305acb9eac4cca
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>Sie müssen das USB-Debugging deaktivieren.
 

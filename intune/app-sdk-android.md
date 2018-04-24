@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0eafbe9c57051b62f6ed53a3930705eabf5aebd0
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: e3f8dd2e63702a7eff3b1808628a25df9618da1f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Entwicklerhandbuch zum Microsoft Intune App SDK für Android
 
@@ -278,7 +278,6 @@ boolean diagnosticIsFileEncryptionInUse();
 String toString();
 
 }
-
 ```
 
 > [!NOTE]
@@ -399,7 +398,6 @@ public interface MAMNotificationReceiver {
      */
     boolean onReceive(MAMNotification notification);
 }
-
 ```
 
 ### <a name="types-of-notifications"></a>Arten von Benachrichtigungen
@@ -526,7 +524,6 @@ Alle erforderlichen APIs für die Authentifizierung und Registrierung befinden s
 MAMEnrollmentManager mgr = MAMComponents.get(MAMEnrollmentManager.class);
 
 // make use of mgr
-
 ```
 
 Die zurückgegebenen `MAMEnrollmentManager`-Instanz ist garantiert nicht NULL. Die API-Methoden werden in zwei Kategorien unterteilt: **Authentifizierung** und **Kontoregistrierung**.
@@ -654,7 +651,6 @@ Es wurde eine neue Art von `MAMNotification` hinzugefügt, um die App darüber z
 public interface MAMEnrollmentNotification extends MAMUserNotification {
     MAMEnrollmentManager.Result getEnrollmentResult();
 }
-
 ```
 
 Die `getEnrollmentResult()`-Methode gibt das Ergebnis der Registrierungsanforderung zurück.  Da `MAMUserNotification` von `MAMEnrollmentNotification` erweitert wird, ist die Identität des Benutzers ebenfalls verfügbar, für den die Registrierung versucht wurde. Die App muss die `MAMNotificationReceiver`-Schnittstelle implementieren, um diese Benachrichtigungen zu erhalten. Dieser Vorgang wird ausführlich im Abschnitt [Registrieren für Benachrichtigungen vom SDK](#Register-for-notifications-from-the-SDK) beschrieben.
@@ -677,7 +673,7 @@ Mit Intune können Sie alle [Funktionen für automatische Sicherung](https://dev
 1. Wenn Ihre App **keinen** benutzerdefinierten BackupAgent verwendet, verwenden Sie die Standardeinstellung MAMBackupAgent, um automatische vollständige Sicherungen zu ermöglichen, die mit Intune-Richtlinien kompatibel sind. In diesem Fall können Sie das Manifestattribut `android:fullBackupOnly` ignorieren, da es nicht für Ihren Sicherungs-Agent gilt. Fügen Sie Folgendes in das App-Manifest ein:
 
     ```xml
-android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
+   android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
     ```
 
 
@@ -828,7 +824,6 @@ Die folgenden Methoden in `MAMPolicyManager` können verwendet werden, um die Id
   public static AppPolicy getPolicyForIdentity(final String identity);
 
   public static boolean getIsIdentityManaged(final String identity);
-
   ```
 
 >[!NOTE]
@@ -924,9 +919,9 @@ Neben der Möglichkeit der App, die Identität festzulegen, kann die Identität 
 
 Die Methode `onMAMIdentitySwitchRequired` wird für alle impliziten Identitätsänderungen aufgerufen – mit Ausnahme derer, die über einen von `MAMService.onMAMBind` zurückgegebenen Binder erfolgen. Die Standardimplementierungen von `onMAMIdentitySwitchRequired` rufen sofort Folgendes auf:
 
-*  `reportIdentitySwitchResult(FAILURE)`, wenn RESUME_CANCELLED der Grund ist.
+* `reportIdentitySwitchResult(FAILURE)`, wenn RESUME_CANCELLED der Grund ist.
 
-*  `reportIdentitySwitchResult(SUCCESS)` in allen anderen Fällen.
+* `reportIdentitySwitchResult(SUCCESS)` in allen anderen Fällen.
 
   Es ist nicht anzunehmen, dass die meisten Apps einen Wechsel der Identität auf andere Weise blockieren oder verzögern müssen, aber wenn dies für eine App erforderlich ist, müssen die folgenden Punkte berücksichtigt werden:
 
@@ -956,7 +951,7 @@ Um `MAMAsyncTask` zu verwenden, arbeiten Sie einfach mit einer Vererbung davon a
     protected Object doInBackgroundMAM(final Object[] params) {
         // Do operations.
     }
-    
+
     @Override
     protected void onPreExecuteMAM() {
         // Do setup.
@@ -990,7 +985,7 @@ Um `MAMAsyncTask` zu verwenden, arbeiten Sie einfach mit einer Vererbung davon a
          *             If the file cannot be changed.
          */
         public static void protect(final File file, final String identity) throws IOException;
-        
+
         /**
         * Protect a file obtained from a content provider. This is intended to be used for
         * sdcard (whether internal or removable) files accessed through the Storage Access Framework.
@@ -1032,7 +1027,6 @@ Um `MAMAsyncTask` zu verwenden, arbeiten Sie einfach mit einer Vererbung davon a
     public interface MAMFileProtectionInfo {
         String getIdentity();
     }
-
   ```
 #### <a name="app-responsibility"></a>App-Verantwortung
 MAM kann nicht automatisch eine Beziehung zwischen Dateien, die gelesen werden und Daten, die in einer `Activity` dargestellt werden, ableiten. Apps *müssen* die Benutzeroberflächenidentität ordnungsgemäß festlegen, bevor Sie Unternehmensdaten anzeigen. Dies beinhaltet Daten, die aus Dateien lesen. Wenn eine Datei von außerhalb der App stammt (entweder von einer `ContentProvider` oder aus einem öffentlich schreibbaren Speicherort), *muss* die App versuchen, die Dateiidentität (mit `MAMFileProtectionManager.getProtectionInfo`) zu bestimmen, bevor Sie Informationen anzeigen kann, die aus der Datei gelesen werden. Wenn `getProtectionInfo` eine Identität darstellt, die nicht NULL und nicht leer ist, *muss* die Benutzeroberflächenidentität festgelegt werden, damit sie mit dieser Identität übereinstimmt (mithilfe von `MAMActivity.switchMAMIdentity` oder `MAMPolicyManager.setUIPolicyIdentity`). Wenn der Identitätswechsel fehlschlägt, dürfen Daten aus der Datei *nicht angezeigt werden*.
@@ -1157,7 +1151,6 @@ public final class MAMDataProtectionManager {
      */
     public static MAMDataProtectionInfo getProtectionInfo(final byte[] input) throws IOException;
 }
-
 ```
 
 ### <a name="content-providers"></a>Inhaltsanbieter
@@ -1339,7 +1332,6 @@ Damit Formatvorlagen- und Stiländerungen auf Intune MAM-Ansichten angewendet we
         name="logo_image"
         resource="@drawable/app_logo"/>
 </styleOverrides>
-
 ```
 
 Sie müssen bereits in Ihrer App vorhandene Ressourcen wiederverwenden. Sie müssen z. B. die Farbe „Grün“ in der Datei „colors.xml“ definieren und hier darauf verweisen. Sie können nicht den hexadezimalen Farbcode „#0000ff“ verwenden. Die maximale Größe für das App-Logo beträgt 110 dip (dp). Sie können ein kleineres Logobild verwenden, aber die maximale Größe sorgt für optimale Ansichtsergebnisse. Wenn Sie den Grenzwert von 110 dip überschreiten, wird das Bild herunterskaliert und möglicherweise unscharf angezeigt.
@@ -1353,7 +1345,8 @@ Nachfolgend finden Sie die vollständige Liste der zulässigen Stilattribute, di
 | Akzentfarbe | PIN-Feldrahmen (markiert) <br> Links |accent_color | Farbe |
 | App-Logo | Großes Symbol, das auf dem PIN-Bildschirm der Intune-App angezeigt wird | logo_image | Zeichenbar |
 
-## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-sdk-integrated-android-lob-app-and-enabling-adal-sso-optional"></a>Erfordern einer Aufforderung zur Benutzeranmeldung für eine APP-WE-Dienstregistrierung, erfordern App-Schutzrichtlinien von Intune, um Ihre umschlossene in das SDK integrierte Android LOB-App zu verwenden, und aktivieren von ADAL-SSO (optional)
+## <a name="working-with-app-we-service-enrollment-sdk-integrated-android-lob-app-and-adal-sso-optional"></a>Arbeiten mit der APP-WE-Dienstregistrierung, der in das SDK integrierten Android LOB-App und ADAL-SSO (optional)
+<!-- Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional) -->
 
 Im Folgenden wird erläutert, wie Sie eine Benutzeraufforderung beim Start der App für die automatische APP-WE-Dienstregistrierung erforderlich machen (in diesem Abschnitt **Standardregistrierung** genannt), und wie Sie App-Schutzrichtlinien von Intune erforderlich machen, damit nur über Intune geschützte Benutzer Ihre in die SDK integrierte Android LOB-App verwenden dürfen. Außerdem wird dargestellt, wie SSO für Ihre in das SDK integrierte Android LOB-App aktiviert wird. Dies wird für Store-Apps, die von Personen verwendet werden können, die kein Intune verwenden, **nicht** unterstützt.
 
@@ -1362,22 +1355,22 @@ Im Folgenden wird erläutert, wie Sie eine Benutzeraufforderung beim Start der A
 
 ### <a name="general-requirements"></a>Allgemeine Anforderungen
 * Das Intune SDK-Team benötigt die Anwendungs-ID Ihrer App. Sie können diese ID über das [Azure-Portal](https://portal.azure.com/) unter **Alle Anwendungen** in der Spalte **Anwendungs-ID** finden. Am besten können Sie das Intune SDK-Team per E-Mail erreichen msintuneappsdk@microsoft.com.
-     
+
 ### <a name="working-with-the-intune-sdk"></a>Arbeiten mit dem Intune SDK
 Diese Anweisungen beziehen sich auf alle Android- und Xamarin-Apps, für die eine App-Schutzrichtlinie von Intune für die Verwendung auf einem Benutzergerät erforderlich sein soll.
 
 1. Konfigurieren Sie ADAL, indem Sie die in der [Intune SDK für Android-Anleitung](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal) beschriebenen Schritte ausführen.
-> [!NOTE] 
-> Die Benennung „client id“, die an Ihre App gebunden ist, entspricht der Benennung „application id“ aus dem Azure Portal. 
-* Zur Aktivierung von SSO benötigen Sie die im Abschnitt „Häufig verwendete ADAL-Konfigurationen“ #2 beschriebenen Informationen.
+   > [!NOTE] 
+   > Die Benennung „client id“, die an Ihre App gebunden ist, entspricht der Benennung „application id“ aus dem Azure Portal. 
+2. Zur Aktivierung von SSO benötigen Sie die im Abschnitt „Häufig verwendete ADAL-Konfigurationen“ #2 beschriebenen Informationen.
 
-2. Aktivieren Sie die Standardregistrierung, indem Sie den folgenden Wert in das Manifest einfügen: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```.
-> [!NOTE] 
-> Dabei muss es sich um die einzige MAM-WE-Integration in der App handeln. Wenn es zu weiteren Versuchen kommt, MAMEnrollmentManager-APIs aufzurufen, können Konflikte entstehen.
+3. Aktivieren Sie die Standardregistrierung, indem Sie den folgenden Wert in das Manifest einfügen: ```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```.
+   > [!NOTE] 
+   > Dabei muss es sich um die einzige MAM-WE-Integration in der App handeln. Wenn es zu weiteren Versuchen kommt, MAMEnrollmentManager-APIs aufzurufen, können Konflikte entstehen.
 
-3. Aktivieren Sie die erforderliche MAM-Richtlinie, indem Sie den folgenden Wert in das Manifest einfügen: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```.
-> [!NOTE] 
-> Dann ist der Benutzer gezwungen, das Unternehmensportal auf dem Gerät herunterzuladen und den Vorgang der Standardregistrierung vor der Nutzung abzuschließen.
+4. Aktivieren Sie die erforderliche MAM-Richtlinie, indem Sie den folgenden Wert in das Manifest einfügen: ```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```.
+   > [!NOTE] 
+   > Dann ist der Benutzer gezwungen, das Unternehmensportal auf dem Gerät herunterzuladen und den Vorgang der Standardregistrierung vor der Nutzung abzuschließen.
 
 ## <a name="limitations"></a>Einschränkungen
 
@@ -1403,7 +1396,7 @@ Bei großen Codebasen, die ohne [ProGuard](http://proguard.sourceforge.net/) aus
     ```
 
     Im zweiten Fall müssen Apps mit mehreren Identitäten unbedingt die Threadidentität ordnungsgemäß festlegen (oder eine explizite Identität an den `getPolicy`-Aufruf übergeben).
-    
+
 ### <a name="exported-services"></a>Exportierte Dienste
 
  Die im Intune App SDK enthaltene Datei „AndroidManifest.xml“ enthält **MAMNotificationReceiverService**. Dies muss ein exportierter Dienst sein, damit das Unternehmensportal Benachrichtigungen an eine verwaltete App senden kann. Der Dienst prüft den Aufrufer, um sicherzustellen, dass nur das Unternehmensportal Benachrichtigungen senden kann.

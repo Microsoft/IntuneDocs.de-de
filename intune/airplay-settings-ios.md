@@ -15,15 +15,15 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f941d6c6d3e1aec9e53b97ad0700d3ad3070d56
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 94252815f0da8042a97aed7d807f022d9c166983
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-airplay-settings-for-ios-devices"></a>AirPlay-Einstellungen für iOS-Geräte in Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Verwenden Sie diese Einstellungen, um von Ihnen verwaltete iOS-Geräte mit AirPlay-kompatiblen Geräten (z.B. Apple TV-Geräten) in Ihrem Netzwerk zu verbinden.
 Diese Funktion ermöglicht Folgendes:
@@ -33,7 +33,7 @@ Diese Funktion ermöglicht Folgendes:
 
 ## <a name="get-started"></a>Erste Schritte
 
-1. Navigieren Sie von [Intune im Azure-Portal](https://portal.azure.com) zu [**Gerätefeatures** im Gerätekonfigurationsbereich](device-features-configure.md). 
+1. Navigieren Sie in [Intune im Azure-Portal](https://portal.azure.com) [im Gerätekonfigurationsbereich zu **Gerätefunktionen**](device-features-configure.md). 
 1. Klicken Sie im Bereich **Gerätefeatures** auf die Option **AirPlay**.
 2. Wählen Sie im Bereich **AirPlay** eine oder beide der folgenden Aktionen aus:
 

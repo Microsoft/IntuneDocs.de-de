@@ -1,25 +1,25 @@
 ---
 title: Verwalten von Apps aus einem Volumenprogramm
-description: "Erfahren Sie, wie Sie Intune verwenden können, um Apps zu verwalten, die Sie über ein Volumenprogramm in einem App-Store erworben haben."
-keywords: 
+description: Erfahren Sie, wie Sie Intune verwenden können, um Apps zu verwalten, die Sie über ein Volumenprogramm in einem App-Store erworben haben.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 9b23100e1b609574733cbba3d9c8b25d61ad15ec
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-volume-purchased-apps-using-microsoft-intune"></a>Verwalten von Apps, die über ein Volumenprogramm erworben wurden, mithilfe von Microsoft Intune
 

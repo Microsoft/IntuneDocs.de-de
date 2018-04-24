@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 559866fff63b0ad77a43ce337adede5cd8b27302
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9781af943dbfb782cf367257127021473e35c168
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Verwalten des Internetzugriffs mittels Richtlinien für Managed Browser mit Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Managed Browser ist eine Webbrowseranwendung, die Sie mit Microsoft Intune in Ihrer Organisation bereitstellen können. Mit einer Richtlinie für Managed Browser wird eine Zulassungs- oder Blockierungsliste konfiguriert, um die Websites einzuschränken, die Benutzer von Managed Browser besuchen können.
 
@@ -99,52 +99,52 @@ Microsoft sammelt automatisch anonyme Daten über die Leistung und die Verwendun
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>URL-Format für zulässige und blockierte URLs
 Nachfolgend wird erläutert, welche Formate und Platzhalter Sie zum Festlegen von URLs in den Zulassungs- und Blockierungslisten verwenden können:
 
--   Sie können das Platzhaltersymbol (**&#42;**) gemäß den Regeln in der folgenden Liste mit zulässigen Mustern verwenden.
+- Sie können das Platzhaltersymbol (**&#42;**) gemäß den Regeln in der folgenden Liste mit zulässigen Mustern verwenden.
 
--   Stellen Sie sicher, dass Sie bei der Eingabe in die Liste allen URLs **http** oder **https** voranstellen.
+- Stellen Sie sicher, dass Sie bei der Eingabe in die Liste allen URLs **http** oder **https** voranstellen.
 
--   Sie können Portnummern in der Adresse angeben. Wenn Sie keine Portnummer angeben, werden folgende Werte verwendet:
+- Sie können Portnummern in der Adresse angeben. Wenn Sie keine Portnummer angeben, werden folgende Werte verwendet:
 
-    -   Port 80 für http
+  -   Port 80 für http
 
-    -   Port 443 für https
+  -   Port 443 für https
 
-    Die Verwendung von Platzhaltern für die Portnummer wird nicht unterstützt. Zum Beispiel werden **http&colon;//&period;contoso&period;com:*;** und **http&colon;//www&period;contoso&period;com: /*;** nicht unterstützt.
+  Die Verwendung von Platzhaltern für die Portnummer wird nicht unterstützt. Zum Beispiel werden <strong>http&colon;//www&period;contoso&period;com:*;</strong> und <strong>http&colon;//www&period;contoso&period;com: /*;</strong> nicht unterstützt.
 
--   In der folgenden Tabelle sind die zulässigen Muster aufgeführt, die Sie zum Festlegen von URLs verwenden können:
+- In der folgenden Tabelle sind die zulässigen Muster aufgeführt, die Sie zum Festlegen von URLs verwenden können:
 
-|URL|Details|Treffer|Stimmt nicht überein mit|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|Entspricht einer einzelnen Seite|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|Entspricht einer einzelnen Seite|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|Entspricht allen URLs, die mit „www.contoso.com“ beginnen|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|Entspricht allen Unterdomänen unter „contoso.com“|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos|contoso.host.com|
-    |http://www.contoso.com/images|Entspricht einem einzelnen Ordner|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|Entspricht einer einzelnen Seite mit einer Portnummer|http://www.contoso.com:80||
-    |https://www.contoso.com|Entspricht einer einzelnen, sicheren Seite|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|Entspricht einem einzelnen Ordner und allen Unterordnern|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|                  URL                  |                     Details                      |                                                Treffer                                                |                                Stimmt nicht überein mit                                 |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|        http://www.contoso.com         |              Entspricht einer einzelnen Seite               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
+|          http://contoso.com           |              Entspricht einer einzelnen Seite               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
+|    <http://www.contoso.com/&#42>;     | Entspricht allen URLs, die mit „www.contoso.com“ beginnen |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|    http://&#42;.contoso.com/&#42;     |     Entspricht allen Unterdomänen unter „contoso.com“     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/videos |                               contoso.host.com                                |
+|     http://www.contoso.com/images     |             Entspricht einem einzelnen Ordner              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|       http://www.contoso.com:80       |  Entspricht einer einzelnen Seite mit einer Portnummer   |                                       http://www.contoso.com:80                                       |                                                                               |
+|        https://www.contoso.com        |          Entspricht einer einzelnen, sicheren Seite           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
+| <http://www.contoso.com/images/&#42>; |    Entspricht einem einzelnen Ordner und allen Unterordnern    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
 
--   Im Folgenden Beispiele für Eingaben, die nicht unterstützt werden:
+- Im Folgenden Beispiele für Eingaben, die nicht unterstützt werden:
 
-    -   &#42;.com
+  - &#42;.com
 
-    -   &#42;.contoso/&#42;
+  - &#42;.contoso/&#42;
 
-    -   www.contoso.com/&#42;images
+  - www.contoso.com/&#42;images
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - www.contoso.com/&#42;images&#42;pigs
 
-    -   www.contoso.com/page&#42;
+  - www.contoso.com/page&#42;
 
-    -   IP-Adressen
+  - IP-Adressen
 
-    -   https://&#42;
+  - https://&#42;
 
-    -   http://&#42;
+  - http://&#42;
 
-    -   http://www.contoso.com:&#42;
+  - http://www.contoso.com:&#42;
 
-    -   http://www.contoso.com: /&#42;
+  - http://www.contoso.com: /&#42;
 
 ### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>Lösen von Konflikten zwischen der Zulassungs- und Sperrliste
 Wenn mehrere Richtlinien für Managed Browser für ein Gerät bereitgestellt werden und Einstellungen in Konflikt stehen, werden sowohl der Modus (zulassen oder blockieren) als auch die URL-Listen ausgewertet. Bei einem Konflikt gilt folgendes Verhalten:

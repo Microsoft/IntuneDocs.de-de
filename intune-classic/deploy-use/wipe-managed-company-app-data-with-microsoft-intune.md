@@ -1,29 +1,29 @@
 ---
-title: "Löschen verwalteter Unternehmensdaten aus Apps"
-description: "Erfahren Sie, wie Sie selektiv Unternehmensdaten von Geräten entfernen können."
-keywords: 
+title: Löschen verwalteter Unternehmensdaten aus Apps
+description: Erfahren Sie, wie Sie selektiv Unternehmensdaten von Geräten entfernen können.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d7f89d79edcc52892e2988e4b2f152cb68d80070
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 8d946b551118441b737335f6bd8c4603a49e0dd2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="wipe-company-app-data-with-intune-mam"></a>Zurücksetzen von Unternehmens-App-Daten mit Intune MAM
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Wenn ein Gerät verloren geht oder gestohlen wird oder wenn der Mitarbeiter das Unternehmen verlässt, müssen Sie sicherstellen, dass Unternehmensdaten in Apps vom Gerät entfernt werden. Allerdings sollten Sie persönliche Daten nicht vom Gerät entfernen, insbesondere dann nicht, wenn das Gerät dem Mitarbeiter gehört.
 
@@ -89,7 +89,7 @@ Zurücksetzungen mit Status „Ausstehend“ werden angezeigt, bis Sie sie manue
 4.  Sie werden aufgefordert, den Löschvorgang zu bestätigen. Wählen Sie **Ja** oder **Nein** aus, und klicken Sie dann auf **OK**.
 
 
-### <a name="see-also"></a>Weitere Informationen:
+### <a name="see-also"></a>Siehe auch
 [Schützen von App-Daten mithilfe der Verwaltungsrichtlinien für mobile Apps](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Verwenden des Azure-Portals](azure-portal-for-microsoft-intune-mam-policies.md)

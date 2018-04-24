@@ -2,29 +2,28 @@
 title: Erstellen und Bereitstellen von App-Schutzrichtlinien
 titleSuffix: Microsoft Intune
 description: Erfahren Sie, wie Sie Microsoft Intune-App-Schutzrichtlinien erstellen und zuweisen.
-keywords: 
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7ad60a27e32aaab49e77789364aecdc5ea7fc60
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8ffe409e376ec2d15c537fb6ac258e5b3b71cdf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Erstellen und Zuweisen von App-Schutzrichtlinien
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Erfahren Sie, wie Sie Microsoft Intune-App-Schutzrichtlinien erstellen und Ihren Benutzern zuweisen. In diesem Thema wird beschrieben, wie Änderungen an bestehenden Richtlinien vorgenommen werden.
 
@@ -37,28 +36,28 @@ App-Schutzrichtlinien können angewendet werden, unabhängig davon, ob die Gerä
 Wenn Sie nach einer Liste der unterstützten MAM-Apps suchen, finden Sie weitere Informationen in der [Liste der MAM-Apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Erstellen einer App-Schutzrichtlinie
-1.  Wählen Sie in der Workload **Mobile Apps** im Bereich **Verwalten** die Option **App-Schutzrichtlinien** aus. Mit dieser Auswahl werden die Details zu **App-Schutzrichtlinien** geöffnet und Sie können neue Richtlinien erstellen und vorhandene bearbeiten.
+1. Wählen Sie in der Workload **Mobile Apps** im Bereich **Verwalten** die Option **App-Schutzrichtlinien** aus. Mit dieser Auswahl werden die Details zu **App-Schutzrichtlinien** geöffnet und Sie können neue Richtlinien erstellen und vorhandene bearbeiten.
 2. Wählen Sie **Richtlinie hinzufügen** aus.
 
-  ![Screenshot des Blatts „Richtlinie hinzufügen“](./media/app-protection-add-policy.png)
+   ![Screenshot des Blatts „Richtlinie hinzufügen“](./media/app-protection-add-policy.png)
 
-3.  Geben Sie einen Namen für die Richtlinie sowie eine kurze Beschreibung ein, und wählen Sie den Plattformtyp für Ihre Richtlinie aus. Bei Bedarf können Sie für jede Plattform mehr als eine Richtlinie erstellen.
+3. Geben Sie einen Namen für die Richtlinie sowie eine kurze Beschreibung ein, und wählen Sie den Plattformtyp für Ihre Richtlinie aus. Bei Bedarf können Sie für jede Plattform mehr als eine Richtlinie erstellen.
 
-4.  Wählen Sie **Apps** aus, um das Blatt **Apps** zu öffnen, auf dem eine Liste der verfügbaren Apps angezeigt wird. Wählen Sie eine oder mehrere Apps in der Liste aus, mit denen Sie die von Ihnen zu erstellende Richtlinie verknüpfen möchten.
+4. Wählen Sie **Apps** aus, um das Blatt **Apps** zu öffnen, auf dem eine Liste der verfügbaren Apps angezeigt wird. Wählen Sie eine oder mehrere Apps in der Liste aus, mit denen Sie die von Ihnen zu erstellende Richtlinie verknüpfen möchten.
 5. Nachdem Sie die Apps ausgewählt haben, wählen Sie **Auswählen** aus, um Ihre Auswahl zu speichern.
 
     > [!IMPORTANT]
     > Sie müssen mindestens eine App auswählen, um eine Richtlinie erstellen zu können.
 
-6.  Wählen Sie auf dem Blatt **Richtlinie hinzufügen** die Option **Erforderliche Einstellungen konfigurieren** aus, um **Einstellungen** zu öffnen.
+6. Wählen Sie auf dem Blatt **Richtlinie hinzufügen** die Option **Erforderliche Einstellungen konfigurieren** aus, um **Einstellungen** zu öffnen.
 
-    Es gibt zwei Kategorien von Richtlinieneinstellungen: **Datenverlagerung** und **Zugriff**.  Datenverschiebungsrichtlinien können auf Datenverschiebungen in und aus Apps angewendet werden. Mit den Zugriffsrichtlinien wird festgelegt, wie der Endbenutzer in einem Arbeitskontext auf die Apps zugreift.
-    Um Ihnen bei den ersten Schritten zu helfen, enthalten die Richtlinieneinstellung Standardwerte. Sie müssen keine Änderungen vornehmen, wenn die Standardwerte Ihren Anforderungen entsprechen.
+   Es gibt zwei Kategorien von Richtlinieneinstellungen: **Datenverlagerung** und **Zugriff**.  Datenverschiebungsrichtlinien können auf Datenverschiebungen in und aus Apps angewendet werden. Mit den Zugriffsrichtlinien wird festgelegt, wie der Endbenutzer in einem Arbeitskontext auf die Apps zugreift.
+   Um Ihnen bei den ersten Schritten zu helfen, enthalten die Richtlinieneinstellung Standardwerte. Sie müssen keine Änderungen vornehmen, wenn die Standardwerte Ihren Anforderungen entsprechen.
 
-    > [!TIP]
-    > Diese Richtlinieneinstellungen werden nur durchgesetzt, wenn Apps im beruflichen Kontext verwendet werden. Wenn der Endbenutzer die App zum Erledigen einer privaten Aufgabe verwendet, ist er von diesen Richtlinien nicht betroffen.
+   > [!TIP]
+   > Diese Richtlinieneinstellungen werden nur durchgesetzt, wenn Apps im beruflichen Kontext verwendet werden. Wenn der Endbenutzer die App zum Erledigen einer privaten Aufgabe verwendet, ist er von diesen Richtlinien nicht betroffen.
 
-7.  Wählen Sie **OK** aus, um diese Konfiguration zu speichern. Damit befinden Sie sich wieder im Bereich **Richtlinie hinzufügen**. Wählen Sie **Erstellen** aus, um die Richtlinie zu erstellen und Ihre Einstellungen zu speichern.
+7. Wählen Sie **OK** aus, um diese Konfiguration zu speichern. Damit befinden Sie sich wieder im Bereich **Richtlinie hinzufügen**. Wählen Sie **Erstellen** aus, um die Richtlinie zu erstellen und Ihre Einstellungen zu speichern.
 8. Wählen Sie **OK** aus, um diese Konfiguration zu speichern. Damit befinden Sie sich wieder im Bereich **Richtlinie hinzufügen**.
 9. Wählen Sie **Erstellen** aus, um die Richtlinie zu erstellen und Ihre Einstellungen zu speichern.
 
@@ -119,6 +118,16 @@ Um die Auswirkungen der Änderungen sofort zu erfahren, muss der Endbenutzer sic
 2.  Wählen Sie **Richtlinieneinstellungen** aus, um den Bereich **Richtlinieneinstellungen** zu öffnen.
 
 3.  Ändern Sie die Einstellungen, und wählen Sie das Symbol **Speichern** aus, um die Änderungen zu speichern.
+
+## <a name="target-app-protection-policies-based-on-device-management-state"></a>Verwendung von App-Schutzrichtlinien als Ziel, basierend auf dem Status der Geräteverwaltung
+Viele Organisationen erlauben Benutzern sowohl die Verwendung von mit Intune-MDM verwalteten Geräten, z.B. unternehmenseigene Geräte, als auch die Verwendung von nicht verwalteten Geräten, die nur mit Intune App-Schutzrichtlinien geschützt werden, wie BYO-Geräten.
+
+Da die App-Schutzrichtlinien von Intune die Identität eines Benutzers ansteuern, gelten die Schutzeinstellungen üblicherweise jeweils für registrierte (MDM-verwaltete) und nicht registrierte Geräte (kein MDM). Aus diesem Grund können Sie mit einer App-Schutzrichtlinie von Intune entweder Intune-registrierte oder nicht registrierte iOS- und Android-Geräte als Ziel verwenden. Sie können über eine Schutzrichtlinie für nicht verwaltete Geräte verfügen, bei dem Steuerelemente für die Verhinderung von Datenverlust (DLP) vorhanden sind, und eine separate Schutzrichtlinie für mit MDM verwaltete Geräte, bei denen die DLP-Steuerelemente nicht so streng sind. 
+
+Navigieren Sie in der Intune-Konsole zu den Richtlinien **Mobile Apps** > **App-Schutz**, und klicken Sie auf **Hinzufügen einer Richtlinie**, um diese Richtlinien zu erstellen. Sie können auch eine vorhandene App-Schutzrichtlinie bearbeiten. Wenn die App-Schutzrichtlinie für verwaltete und nicht verwaltete Geräte angewendet werden soll, bestätigen Sie, dass **Target to all app types** (Alle App-Typen als Ziel verwenden) auf den Standardwert **Ja** festgelegt ist. Wenn Sie eine Basis granular einem Verwaltungsstatus zuweisen wollen, legen Sie die Option **Target to all app types** (Alle App-Typen als Ziel verwenden) auf **Nein** fest. 
+
+> [!NOTE]
+> Spezifische iOS-Supportinfomationen über App-Schutzrichtlinien basierend auf dem Status der Geräteverwaltung finden Sie unter [MAM protection policies targeted based on management state (Angesteuerte MAM-Schutzrichtlinien basierend auf dem Verwaltungsstatus)](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---).
 
 ## <a name="policy-settings"></a>Richtlinieneinstellungen
 Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finden Sie unter den folgenden Links:

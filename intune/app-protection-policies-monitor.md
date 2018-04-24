@@ -1,28 +1,28 @@
 ---
-title: "Überwachen von App-Schutzrichtlinien"
+title: Überwachen von App-Schutzrichtlinien
 titleSuffix: Microsoft Intune
-description: "Überwachen Sie den Kompatibilitätsstatus der Verwaltungsrichtlinien für mobile Apps in Intune."
-keywords: 
+description: Überwachen Sie den Kompatibilitätsstatus der Verwaltungsrichtlinien für mobile Apps in Intune.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 100114552b05e131ff1d0d3e9e61ef08bcc2eea4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7db5a9dfe7a7da21a9b59dafb4f95cdb54a59735
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Überwachen von App-Schutzrichtlinien
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 **Falls Sie nicht das Azure-Portal verwenden**, wird in diesem Thema erläutert, wie Sie im klassischen Intune-Portal [App-Schutzrichtlinien erstellen](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
 
@@ -40,7 +40,7 @@ Es gibt drei verschiedenen Stellen, an denen der Konformitätsstatus überwacht 
 ## <a name="summary-view"></a>Zusammenfassungsansicht
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Monitoring + Management**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
 4. Wählen Sie in der Workload **Mobile Apps** die Option **Überwachen** > **Status des App-Schutzes** aus, um die Zusammenfassungsansicht anzuzeigen:
 

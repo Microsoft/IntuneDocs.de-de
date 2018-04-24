@@ -1,25 +1,25 @@
 ---
-title: "Einstellungen für Windows Phone 8.1-Richtlinien"
-description: "Intune bietet eine Auswahl von integrierten allgemeinen Einstellungen, die Sie auf Windows Phone 8.1-Geräten konfigurieren können. Darüber hinaus können Sie OMA-URI-Werte angeben, um benutzerdefinierte Einstellungen zu erstellen, die über Intune nicht verfügbar sind."
-keywords: 
+title: Einstellungen für Windows Phone 8.1-Richtlinien
+description: Intune bietet eine Auswahl von integrierten allgemeinen Einstellungen, die Sie auf Windows Phone 8.1-Geräten konfigurieren können. Darüber hinaus können Sie OMA-URI-Werte angeben, um benutzerdefinierte Einstellungen zu erstellen, die über Intune nicht verfügbar sind.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: b44215e301bb712cc4d27722515d2e51b124101b
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Einstellungen für Windows Phone 8.1-Richtlinien in Microsoft Intune
 
@@ -141,7 +141,7 @@ Suchen Sie auf der [Windows Phone-Seite für Apps und Spiele](http://www.windows
 
 Öffnen Sie die Seite der App, und kopieren Sie die URL in die Zwischenablage. Sie können diese URL nun in der Liste kompatibler oder nicht kompatibler Apps verwenden.
 
-**Beispiel:** Durchsuchen Sie den Store nach der Skype-App. Die URL, die Sie verwenden, ist **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+**Beispiel:** Durchsuchen Sie den Store nach der Skype-App. Verwenden Sie die URL **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
 ## <a name="custom-policy-settings"></a>Benutzerdefinierte Richtlinieneinstellungen
 Stellen Sie mithilfe der **benutzerdefinierten Windows Phone-Konfigurationsrichtlinie** von Microsoft Intune die Einstellungen für OMA-URI bereit, um Features auf **Windows Phone 8.1-Geräten** zu steuern. Dies sind die Standardeinstellungen, die viele Hersteller von mobilen Geräten verwenden, um Gerätefunktionen zu steuern.

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e07bc0eb78145d508085120e9ef764cc4b02ae4d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 93ff84d263c2fe8825d2cf5a86249bbf19cb9173
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Registrieren firmeneigener iOS-Geräte in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune unterstützt die Registrierung von firmeneigenen iOS-Geräten mithilfe des Apple-Programms zur Geräteregistrierung (Device Enrollment Program, DEP) oder des Tools [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017), das auf einem Mac-Computer ausgeführt wird.
 
@@ -71,11 +71,11 @@ Benutzeraffinität ist erforderlich, um Folgendes zu unterstützen:
 
 5. Nach der Anmeldung wird der Benutzer aufgefordert, sein Gerät zu registrieren. Der erste Schritt besteht im Identifizieren des Geräts. Die App zeigt eine Liste mit iOS-Geräten, die bereits vom Unternehmen registriert und dem Intune-Konto des Benutzers zugewiesen wurden. Der Benutzer sollte das entsprechende Gerät auswählen.
 
-  Wenn das Gerät nicht bereits vom Unternehmen registriert wurde, sollte er **Neues Gerät** auswählen, um den standardmäßigen Registrierungsvorgang fortzusetzen.
+   Wenn das Gerät nicht bereits vom Unternehmen registriert wurde, sollte er **Neues Gerät** auswählen, um den standardmäßigen Registrierungsvorgang fortzusetzen.
 
 6. Auf dem nächsten Bildschirm muss der Benutzer die Seriennummer des neuen Geräts bestätigen. Der Benutzer kann auf den Link **Seriennummer bestätigen** tippen, um zum Bestätigen der Seriennummer die App „Einstellungen“ zu starten. Der Benutzer muss dann die letzten vier Zeichen der Seriennummer in die Unternehmensportal-App eingeben.
 
-  Dieser Schritt dient zum Überprüfen, ob das Gerät das vom Unternehmen in Intune registrierte Gerät ist. Wenn die Seriennummer des Geräts nicht übereinstimmt, wurde der falsche Gerät ausgewählt. Der Benutzer sollte zum vorherigen Bildschirm zurückkehren, und ein anderes Gerät auswählen.
+   Dieser Schritt dient zum Überprüfen, ob das Gerät das vom Unternehmen in Intune registrierte Gerät ist. Wenn die Seriennummer des Geräts nicht übereinstimmt, wurde der falsche Gerät ausgewählt. Der Benutzer sollte zum vorherigen Bildschirm zurückkehren, und ein anderes Gerät auswählen.
 
 7. Nachdem die Seriennummer überprüft wurde, wird die Unternehmensportal-App zur Unternehmensportal-Website umgeleitet, um die Registrierung abzuschließen. Anschließend wird der Benutzer aufgefordert, zur App zurückzukehren.
 

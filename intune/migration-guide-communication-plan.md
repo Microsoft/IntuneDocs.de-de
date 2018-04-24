@@ -14,11 +14,11 @@ ms.technology: ''
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 08b7f24192ca4d94ad97299c416f233f43a93fb0
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: f9d2994c65f8fd143fba0dc1c677a112d808db5d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="plan-communications"></a>Planen der Kommunikation
 

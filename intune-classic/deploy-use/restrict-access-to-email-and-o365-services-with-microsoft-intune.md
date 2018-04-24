@@ -1,25 +1,25 @@
 ---
-title: "Schützen von E-Mail und Office 365"
-description: "In diesem Thema wird beschrieben, wie Sie bedingten Zugriff verwenden können, damit nur kompatible Geräte auf Unternehmens-E-Mail und -daten in SharePoint Online und anderen Diensten zugreifen können."
-keywords: 
+title: Schützen von E-Mail und Office 365
+description: In diesem Thema wird beschrieben, wie Sie bedingten Zugriff verwenden können, damit nur kompatible Geräte auf Unternehmens-E-Mail und -daten in SharePoint Online und anderen Diensten zugreifen können.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: e121a3aaf4988bd92c36eb79131b2205263fb309
-ms.sourcegitcommit: 2459bfda07a2afd2cfcd94a1972a3fb2e565ce8d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Schützen des Zugriffs auf E-Mail, Office 365 und andere Dienste mit Microsoft Intune
 

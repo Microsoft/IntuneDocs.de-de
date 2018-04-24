@@ -1,27 +1,27 @@
 ---
-title: "Registrieren Ihres Windows 10-Geräts bei Intune | Microsoft-Dokumentation"
-description: "Beschreibt das Registrieren Ihres Windows 10-Geräts (mobil oder Desktop) bei Intune."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Registrieren Ihres Windows 10-Geräts bei Intune | Microsoft-Dokumentation
+description: Beschreibt das Registrieren Ihres Windows 10-Geräts (mobil oder Desktop) bei Intune.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 01/10/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3debd0177df0aa0bdf5cb3cea8bf18054407b87
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 22d23751aaa3416fb13c7b08451ea91c3ee308e2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Registrieren Ihrer Windows 10-Geräte bei Intune
 
@@ -35,13 +35,13 @@ Möchten Sie mehr erfahren? Erfahren Sie, was geschieht, wenn Sie [Ihr Gerät be
 
 2. Geben Sie den Ausdruck „PC-Infos“ in der __Suchleiste__ ein, und wählen Sie dann __PC-Infos__ aus.
 
- ![Sucheinstellungen für „PC-Infos“](media/searching_for_about_your_pc.png)
+   ![Sucheinstellungen für „PC-Infos“](media/searching_for_about_your_pc.png)
 
-3.  In Ihren __Einstellungen__ sehen Sie eine Liste mit Informationen über die Windows 10-Version auf Ihrem PC. Suchen Sie in der Liste nach der __Version__.
+3. In Ihren __Einstellungen__ sehen Sie eine Liste mit Informationen über die Windows 10-Version auf Ihrem PC. Suchen Sie in der Liste nach der __Version__.
 
- ![Windows 10 Desktop „PC-Infos“](media/settings_about_pc.png)
+   ![Windows 10 Desktop „PC-Infos“](media/settings_about_pc.png)
 
-4.  Wenn Ihre Version __1607 oder höher__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-access-work-or-school.md) fort. Wenn Ihre Version __1511 oder älter__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-your-account.md) fort.
+4. Wenn Ihre Version __1607 oder höher__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-access-work-or-school.md) fort. Wenn Ihre Version __1511 oder älter__ lautet, fahren Sie [folgendermaßen](enroll-your-w10-device-your-account.md) fort.
 
 ## <a name="windows-10-mobile-devices"></a>Windows 10 Mobile-Geräte        
 

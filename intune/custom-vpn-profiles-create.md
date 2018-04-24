@@ -1,23 +1,23 @@
 ---
 title: Erstellen von benutzerdefinierten VPN-Profilen mit Microsoft Intune
-titleSuffix: 
+titleSuffix: ''
 description: Verwenden Sie benutzerdefinierte Konfigurationen, um VPN-Profile in Intune zu erstellen.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: ec9b959d086051985287a62f7d10fe8d4cbad7e9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.sourcegitcommit: 28ed8902a11500b195fff839d59b90c16af6e743
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="how-to-create-custom-vpn-profiles-in-microsoft-intune"></a>Erstellen von benutzerdefinierten VPN-Profilen in Microsoft Intune
 
@@ -36,7 +36,7 @@ Dieser Richtlinientyp kann hilfreich sein, wenn die standardmäßigen Intune-VPN
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
-2. Klicken Sie im Bereich **Gerätekonfiguration** im Abschnitt **Verwalten** auf die Option **Profile**.
+2. Klicken Sie im Bereich **Gerätekonfiguration** im Abschnitt **Verwalten** auf **Profile**.
 5. Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
 6. Geben Sie im Bereich **Profil erstellen** einen **Namen** und eine **Beschreibung** für das VPN-Profil ein.
 7. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die Sie VPN-Einstellungen anwenden möchten. Derzeit können Sie eine der folgenden Plattformen für die benutzerdefinierte Geräteeinstellungen auswählen:

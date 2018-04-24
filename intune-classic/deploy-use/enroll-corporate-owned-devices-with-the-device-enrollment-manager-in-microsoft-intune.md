@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0f9ecb8cf16d8c344ea595c53ab91c9b1f00c90e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4973e896109589a91891545bbf6db6ca6df45aad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Registrieren von firmeneigenen Geräten mit dem Geräteregistrierungs-Manager in Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Mit Intune können Organisationen eine Vielzahl mobiler Geräte mit einem einzelnen Benutzerkonto verwalten. Das Konto *Geräteregistrierungsmanager* (DEM) ist ein spezielles Benutzerkonto, das bis zu 1.000 Geräte registrieren kann. Fügen Sie dem DEM-Konto vorhandene Benutzer hinzu, damit diese bestimmte DEM-Funktionen erhalten. Jedes registrierte Gerät verwendet eine Einzellizenz. Wir empfehlen, dass Sie Geräte verwenden, die mithilfe dieses Kontos als freigegebene Geräte registriert wurden (also ohne Benutzeraffinität) und nicht als persönliche Geräte (BYOD).  
 
@@ -67,22 +67,22 @@ Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurd
 
 ## <a name="add-a-device-enrollment-manager"></a>Hinzufügen eines Geräteregistrierungs-Managers
 
-1.  Stellen Sie sicher, dass der Benutzer, den Sie bereits auf dem DEM-Konto hinzufügen möchten, vorhanden ist. Wenn Sie den Benutzer hinzufügen möchten, melden Sie sich beim [Office 365-Portal](https://go.microsoft.com/fwlink/p/?LinkId=698854) an, und führen Sie die Schritte auf der Seite [Hinzufügen von einzelnen Benutzern oder Massenhinzufügen von Benutzern zu Office 365 – Administratorhilfe](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) aus.
+1. Stellen Sie sicher, dass der Benutzer, den Sie bereits auf dem DEM-Konto hinzufügen möchten, vorhanden ist. Wenn Sie den Benutzer hinzufügen möchten, melden Sie sich beim [Office 365-Portal](https://go.microsoft.com/fwlink/p/?LinkId=698854) an, und führen Sie die Schritte auf der Seite [Hinzufügen von einzelnen Benutzern oder Massenhinzufügen von Benutzern zu Office 365 – Administratorhilfe](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) aus.
 
-2.  Melden Sie sich bei der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) mit Ihren Administratoranmeldedaten an.
+2. Melden Sie sich bei der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com) mit Ihren Administratoranmeldedaten an.
 
-3.  Wählen Sie im Navigationsbereich **Admin** aus, gehen Sie zur **Administratorverwaltung**, und wählen Sie **Geräteregistrierungs-Manager** aus. Die Seite **Geräteregistrierungs-Manager** wird geöffnet.
+3. Wählen Sie im Navigationsbereich **Admin** aus, gehen Sie zur **Administratorverwaltung**, und wählen Sie **Geräteregistrierungs-Manager** aus. Die Seite **Geräteregistrierungs-Manager** wird geöffnet.
 
-4.  Wählen Sie **Hinzufügen…** aus. Das Dialogfeld **Geräteregistrierungs-Manager hinzufügen** wird geöffnet.
+4. Wählen Sie **Hinzufügen…** aus. Das Dialogfeld **Geräteregistrierungs-Manager hinzufügen** wird geöffnet.
 
-5.  Geben Sie die **Benutzer-ID** des Intune-Kontos ein, und klicken Sie anschließend auf **OK**.
+5. Geben Sie die **Benutzer-ID** des Intune-Kontos ein, und klicken Sie anschließend auf **OK**.
 
-    Der DEM-Benutzer kann nun Mobilgeräte über dasselbe Verfahren registrieren, das ein Endbenutzer für ein BYOD-Szenario im Unternehmensportal verwendet. Der Manager-Endbenutzer kann die Unternehmensportal-App installieren und das Gerät unter Verwendung seiner DEM-Anmeldeinformationen auf bis zu 1000 Geräten registrieren. Die Schritte zur Registrierung für jede Plattform für den Endbenutzer finden Sie unter folgenden Links:
+   Der DEM-Benutzer kann nun Mobilgeräte über dasselbe Verfahren registrieren, das ein Endbenutzer für ein BYOD-Szenario im Unternehmensportal verwendet. Der Manager-Endbenutzer kann die Unternehmensportal-App installieren und das Gerät unter Verwendung seiner DEM-Anmeldeinformationen auf bis zu 1000 Geräten registrieren. Die Schritte zur Registrierung für jede Plattform für den Endbenutzer finden Sie unter folgenden Links:
 
-  - [Registrieren Ihres iOS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
-  - [Registrieren Ihres Mac OS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
-  - [Registrieren Ihres Android-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
-  - [Registrieren Ihres Windows-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
+   - [Registrieren Ihres iOS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
+   - [Registrieren Ihres Mac OS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
+   - [Registrieren Ihres Android-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
+   - [Registrieren Ihres Windows-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Löschen eines Geräteregistrierungs-Managers aus Intune
 

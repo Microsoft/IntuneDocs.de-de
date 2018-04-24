@@ -15,11 +15,11 @@ ms.assetid: b1512c3a-3bbd-4111-a0df-c874a0a335df
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 964422f113e6a722c1134cf49b1b28b494632872
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: b8f0f038a1f093ec93182fa0ee590d83e6ebea29
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Verhindern von Datenverlusten auf nicht verwalteten Geräten mit Microsoft Intune
 
