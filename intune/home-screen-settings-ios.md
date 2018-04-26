@@ -3,8 +3,8 @@ title: Einstellungen des Layouts des Microsoft Intune-Startbildschirms für iOS-
 titleSuffix: ''
 description: Erfahren Sie mehr zu den Einstellungen in Microsoft Intune, die Sie verwenden können, um den Startbildschirm anzupassen und an iOS-Geräte anzudocken.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ab5ee886cbc324b0fe3383e7e585e8d0b6482326
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3361ce41dfa95de0cb1a7a3bdbdbd74e7d6d5edf
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Einstellungen des Layouts des Microsoft Intune-Startbildschirms für iOS-Geräte
 

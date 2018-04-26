@@ -3,8 +3,8 @@ title: VPN-Einstellungen für Android-Geräte in Microsoft Intune
 titlesuffix: ''
 description: In diesem Artikel lernen Sie die Intune-Einstellungen kennen, mit denen Sie VPN-Verbindungen auf Android-Geräten konfigurieren können.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7c3b4964baec0ae957cfb392843ce527bf13934e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6753e0232548d862b46a273f1be0105ad7f16d63
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-android"></a>Konfigurieren von VPN-Einstellungen für Android-Geräte in Microsoft Intune 
 

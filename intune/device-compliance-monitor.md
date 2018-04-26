@@ -3,8 +3,8 @@ title: Überwachen der Gerätekonformität
 titlesuffix: Microsoft Intune
 description: Erfahren Sie, wie Sie die Gerätekonformität überwachen."
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b363e074b1b0652a81d56c68e28cf11220adfa56
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0fec00b18bd63986a537549715af84cd44539fbb
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="monitor-device-compliance-in-intune"></a>Überwachen der Gerätekompatibilität in Intune
 

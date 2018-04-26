@@ -3,8 +3,8 @@ title: AirPlay-Einstellungen für iOS-Geräte in Intune
 titlesuffix: Microsoft Intune
 description: Erfahren Sie, wie Sie Microsoft Intune verwenden können, um iOS-Geräte automatisch mit AirPlay-kompatiblen Geräten zu verbinden.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 94252815f0da8042a97aed7d807f022d9c166983
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 06d1fbc5a27e0e5187c6419b45f4a0380b895d6b
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="intune-airplay-settings-for-ios-devices"></a>AirPlay-Einstellungen für iOS-Geräte in Intune
 

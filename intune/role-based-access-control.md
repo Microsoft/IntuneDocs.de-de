@@ -2,8 +2,8 @@
 title: Rollenbasierte Zugriffssteuerung mit Microsoft Intune
 description: Erfahren Sie, wie Sie mit der rollenbasierten Zugriffssteuerung (Role-Based Access Control, RBAC) steuern können, wer Aktionen durchführen und Änderungen in Microsoft Intune vornehmen kann.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: get-started-article
@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11b0e1d80740366a638059162d10e3ebcfe9e8a8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 98355ec1cf54597f488bd2426ac77f35809070fd
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Rollenbasierte Zugriffssteuerung mit Microsoft Intune
 

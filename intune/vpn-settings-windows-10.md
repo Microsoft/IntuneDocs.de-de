@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 9464b73acc43b9625560156617359c374d7100fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 787501892d0955e3396bc8f37e5da8ba0d312c74
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="read-about-the-vpn-settings-in-intune"></a>Informationen zu VPN-Einstellungen in Intune
 
@@ -93,6 +93,7 @@ Weitere Informationen zum Erstellen von benutzerdefinierten EAP-XML finden Sie u
 ## <a name="apps-and-traffic-rules"></a>Regeln für Apps und Datenverkehr
 
 **VPN-Verbindung auf diese Apps beschränken**: Aktivieren Sie diese Einstellung, wenn nur die angegebenen Apps die VPN-Verbindung verwenden sollen.
+
 **Zugeordnete Apps:** Geben Sie eine Liste von Apps ein, die automatisch die VPN-Verbindung verwenden. Der Typ der App bestimmt den App-Bezeichner. Geben Sie für eine universelle App den Paketfamiliennamen ein. Geben Sie für eine Desktop-App den Dateipfad der App ein.
 
 >[!IMPORTANT]

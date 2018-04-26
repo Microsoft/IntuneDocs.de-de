@@ -3,7 +3,7 @@ title: Technologieentscheidungen für BYOD mit EMS
 description: Wichtige Technologieentscheidungen zum Ermöglichen von BYOD und Schutz von Unternehmensdaten mit Microsoft Enterprise Mobility + Security
 keywords: ''
 author: dougeby
-ms.author: pfetty
+ms.author: dougeby
 manager: dougeby
 ms.date: 12/8/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7d04abfe7886e4ef42cf168dbb495e987fdba425
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Technologieentscheidungen zur Ermöglichung von BYOD mit Microsoft Enterprise Mobility + Security (EMS)
 
@@ -78,6 +78,6 @@ Nach wie vor sind zahlreiche Organisationen oftmals mit besonderen Risiken konfr
 |Versehentliche Datenfreigabe oder Speichern an unsicheren Speicherorten | Drucken deaktivieren | Nicht zutreffend|
 
 ## <a name="next-steps"></a>Nächste Schritte
-Jetzt ist es an der Zeit zu entscheiden, ob BYOD in Ihrer Organisation ermöglicht und der Schwerpunkt dabei auf der Geräte- oder App-Verwaltung oder auf einer Kombination beider Optionen liegen soll. Die Wahl der Implementierung liegt bei Ihnen. Dabei können Sie darauf vertrauen, dass die Identitäts- und Sicherheitsfeatures von Azure AD in beiden Fällen verfügbar sind.
+Jetzt ist es an der Zeit zu entscheiden, ob BYOD in Ihrer Organisation ermöglicht und der Schwerpunkt dabei auf der Geräte- oder App-Verwaltung oder auf einer Kombination beider Optionen liegen soll. Die Wahl der Implementierung liegt bei Ihnen. Dabei können Sie darauf vertrauen, dass die Identitäts- und Sicherheitsfeatures von Azure AD in beiden Fällen verfügbar sind.  
 
 Verwenden Sie das Intune-[Planungshandbuch](planning-guide.md), um Ihre nächste Planungsebene zu planen.

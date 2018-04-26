@@ -3,8 +3,8 @@ title: Klassische Intune-Gruppen im Azure-Portal
 titleSuffix: Microsoft Intune
 description: Lernen Sie die Neuerungen bei Gruppen im Microsoft Intune-Azure-Portal kennen.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.openlocfilehash: b8f33d1cde7ab1b35f643f49af005fdbdb560a02
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f3e8c5d715253810b23e5f73b3166a90c3c14930
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-classic-groups-in-the-azure-portal"></a>Klassische Microsoft Intune-Gruppen im Azure-Portal
 

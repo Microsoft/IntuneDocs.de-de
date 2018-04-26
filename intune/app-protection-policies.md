@@ -3,8 +3,8 @@ title: Erstellen und Bereitstellen von App-Schutzrichtlinien
 titleSuffix: Microsoft Intune
 description: Erfahren Sie, wie Sie Microsoft Intune-App-Schutzrichtlinien erstellen und zuweisen.
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 02/20/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ffe409e376ec2d15c537fb6ac258e5b3b71cdf2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d973ca86a9adcbe3c7c18b2018c29006ba54ae9e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Erstellen und Zuweisen von App-Schutzrichtlinien
 

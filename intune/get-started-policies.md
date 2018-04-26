@@ -3,8 +3,8 @@ title: Erste Schritte mit Richtlinien in Microsoft Intune
 titlesuffix: ''
 description: Erstellen von Richtlinien zum Schützen von Unternehmensdaten und Verwalten von Geräten, die Endbenutzer verwenden, um auf Unternehmensressourcen zuzugreifen.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/26/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 661ef25085892e299e45156f27b3d9db959577d4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b8bffd0435988cc59c5c0e4d754b861729d466ae
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="get-started-with-creating-policies"></a>Erste Schritte zum Erstellen von Richtlinien
 

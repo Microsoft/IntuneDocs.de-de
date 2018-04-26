@@ -2,8 +2,8 @@
 title: Neustarten von Geräten mit Microsoft Intune – Azure | Microsoft-Dokumentation
 description: Neustarten von Windows- und iOS-Geräten mit Microsoft Intune im Azure-Portal mithilfe der Remoteaktion „Neu starten“.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 03/21/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4f8aadebceed9c58717801b374a3a5d776926343
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b09a4d528a95d682bf12e6610480b1aa1bcbdb83
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Remoteneustart von Geräten mit Intune
 

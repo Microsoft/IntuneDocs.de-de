@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10278dd48552e280ebe7399a61033dfb04fbbd74
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4d0c63c5e926c3f8893762a9be3b6bed2d6844c4
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Verwalten des Internetzugriffs mittels Richtlinien für Managed Browser mit Microsoft Intune
 
@@ -155,10 +155,9 @@ Outlook muss mit einer App-Schutzrichtlinie konfiguriert werden, mit der Einstel
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>Schritt 2: Zuweisen einer App-Konfigurationsrichtlinie für Managed Browser
 Dieses Verfahren konfiguriert die Managed Browser-App, damit die App-Proxyumleitung verwendet wird. Geben Sie mit dem Verfahren zum Erstellen einer Managed Browser-App-Konfiguration das folgende Schlüssel-Wert-Paar an:
 
-|||
-|-|-|
-|Key|Wert|
-|**com.microsoft.intune.mam.managedbrowser.AppProxyRedirection**|**TRUE**|
+| Key                                                             | Wert    |
+|-----------------------------------------------------------------|----------|
+| **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **TRUE** |
 
 Weitere Informationen zur möglichen gemeinsamen Verwendung von Managed Browser und dem Azure AD-Anwendungsproxy für einheitlichen und geschützten Zugriff auf lokale Webb-Apps, finden Sie in einem Blogbeitrag zu Enterprise Mobility + Security mit dem Titel [Better together: Intune and Azure Active Directory team up to improve user access (Verwenden Sie Intune und Azure Active Directory gemeinsam, um den Benutzerzugriff zu verbessern)](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access).
 
@@ -166,10 +165,8 @@ Weitere Informationen zur möglichen gemeinsamen Verwendung von Managed Browser 
 
 Mit dieser Einstellung können Sie die Startseite konfigurieren, die Benutzern beim Starten von Managed Browser oder beim Erstellen einer neuen Registerkarte angezeigt wird. Geben Sie mit dem Verfahren zum Erstellen einer Managed Browser-App-Konfiguration das folgende Schlüssel-Wert-Paar an:
 
-
-|                                                                   |                                                                                                                            |
-|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 |                                Key                                |                                                           Wert                                                            |
+|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Geben Sie eine gültige URL ein. Ungültige URLs werden zur Sicherheit gesperrt.<br>Beispiel: <strong><https://www.bing.com></strong> |
 
 ## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Konfigurieren von Lesezeichen für Managed Browser
@@ -182,21 +179,17 @@ Mit dieser Einstellung können Sie einen Satz Lesezeichen konfigurieren, der den
 
 Geben Sie mit dem Verfahren zum Erstellen einer Managed Browser-App-Konfiguration das folgende Schlüssel-Wert-Paar an:
 
-
-|                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                Key                                 |                                                                                                                                                                                                                                                         Wert                                                                                                                                                                                                                                                          |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | Der Wert für diese Konfiguration ist eine Liste von Lesezeichen. Jedes Lesezeichen besteht aus dem Lesezeichentitel und der Lesezeichen-URL. Trennen Sie Titel und URL mit dem <strong>& #124;</strong>-Zeichen.<br><br>Beispiel: <strong>Microsoft Bing&#124;<https://www.bing.com></strong><br><br>Zum Konfigurieren von mehreren Lesezeichen trennen Sie jedes Paar mit einem doppelten <strong>&#124;&#124;</strong>-Zeichen.<br><br>Beispiel: <strong>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;<https://www.contoso.com></strong> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Angeben von zugelassenen und blockierten URLs für Managed Browser
 
 Geben Sie mit dem Verfahren zum Erstellen einer Managed Browser-App-Konfiguration das folgende Schlüssel-Wert-Paar an:
 
-
-|                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                             |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                               Key                                                                                                                                                                |                                                                                                                                                                                    Wert                                                                                                                                                                                    |
-| Es stehen die folgenden Optionen zur Auswahl:<br><br>- Angeben von zugelassenen URLs (nur diese URLs sind zugelassen, auf keine weiteren Websites kann zugegriffen werden): <strong>com.microsoft.intune.mam.managedbrowser.AllowListURLs</strong><br><br>- Angeben von blockierten URLs (auf alle anderen Websites kann zugegriffen werden): <br><br><strong>com.microsoft.intune.mam.managedbrowser.BlockListURLs</strong> | Der entsprechende Wert für den Schlüssel ist eine Liste mit URLs. Geben Sie alle URLs, die Sie zulassen oder blockieren möchten, als einen einzelnen Wert ein, der durch einen senkrechten Strich <strong>&#124;</strong> getrennt ist.<br><br>Beispiele:<br><br><strong>URL1&#124;URL2&#124;URL3</strong><br><strong>http://<em>.contoso.com/</em>&#124;https://<em>.bing.com/</em>&#124;<https://expenses.contoso.com></strong> |
+|Key|Wert|
+|-|-|
+|Es stehen die folgenden Optionen zur Auswahl:<br><br>- Angeben von zugelassenen URLs (nur diese URLs sind zugelassen, auf keine weiteren Websites kann zugegriffen werden): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Angeben von blockierten URLs (auf alle anderen Websites kann zugegriffen werden): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|Der entsprechende Wert für den Schlüssel ist eine Liste mit URLs. Geben Sie alle URLs, die Sie zulassen oder blockieren möchten, als einen einzelnen Wert ein, der durch einen senkrechten Strich **&#124;** getrennt ist.<br><br>Beispiele:<br><br>`URL1\|URL2\|URL3`</code><br>`http://*.contoso.com/*\|https://*.bing.com/*\|https://expenses.contoso.com`|
 
 >[!IMPORTANT]
 >Geben Sie nicht beide Schlüssel an. Wenn beide Schlüssel für einen Benutzer eingerichtet sind, wird der Schlüssel für zugelassene URLs verwendet, da dies die restriktivste Option ist.

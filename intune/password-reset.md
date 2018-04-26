@@ -3,8 +3,8 @@ title: Reduzieren von Helpdeskkosten
 titlesuffix: Microsoft Intune
 description: Reduzieren von Helpdeskkosten mit Self-Service-Kennwortzurücksetzung
 keywords: Azure Active Directory-SSPR-Kennwortzurücksetzung
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -12,11 +12,11 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
-ms.openlocfilehash: ce9cdfa2f1f9414bd0517ff9fe12a5cca64c63cd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9e067db84cd2491cf82bbdf7fc5cf3364446716e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Reduzieren von Helpdeskkosten mit Self-Service-Kennwortzurücksetzung
 

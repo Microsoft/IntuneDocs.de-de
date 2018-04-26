@@ -14,11 +14,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 867a846b43edb3392db2be11e7ea544fa9317b6c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
+ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/23/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Konfigurieren eines Zertifikatprofils für Ihre Geräte in Microsoft Intune
 
@@ -40,7 +40,7 @@ Jeder dieser Zertifikattypen hat eigene Voraussetzungen und Infrastrukturanforde
 2. Installieren Sie auf jedem Gerät ein Stammzertifikat oder ein Zertifikat einer Zwischenzertifizierungsstelle, damit das Gerät die Rechtmäßigkeit Ihrer Zertifizierungsstelle erkennt. Erstellen Sie zu diesem Zweck ein **vertrauenswürdiges Zertifikatprofil** und weisen Sie es zu. Wenn Sie dieses Profil zuweisen, wird das Stammzertifikat von den Geräten, die Sie mit Intune verwalten, angefordert und empfangen. Sie müssen für jede Plattform ein eigenes Profil erstellen. Vertrauenswürdige Zertifikatprofile sind für folgende Plattformen verfügbar:
 
     - iOS 8.0 und höher
-    - macOS 10.9 und höher
+    - macOS 10.11 und höher
     - Android 4,0 und höher
     - Android for Work
     - Windows 8.1 und höher

@@ -3,8 +3,8 @@ title: Übersicht über die Lebenszyklen von Geräten und Apps
 titleSuffix: Microsoft Intune
 description: Übersicht über die Lebenszyklen von Geräten und Apps mit Microsoft Intune.
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 38e08253-14a0-4cc4-87be-7b110c12a523
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c358fff91744335080a10d45c7753293911430ae
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 61dfbf0ffc5c50cd712d0624cac48d5f6b8b6abb
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="overview-of-device-and-app-lifecycles"></a>Übersicht über die Lebenszyklen von Geräten und Apps
 

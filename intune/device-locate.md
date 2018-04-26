@@ -2,8 +2,8 @@
 title: Auffinden von verlorenen iOS-Geräten mit Microsoft Intune – Azure | Microsoft-Dokumentation
 description: Finden Sie verloren gegangene oder gestohlene iOS-Geräte, indem Sie das Feature „Gerät suchen“ in Microsoft Intune verwenden. Hier erhalten Sie weitere Informationen zu Sicherheit und Datenschutz bei Verwendung der Aktion „Gerät suchen“.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc3d46800087b33c6cebcbb50f7c16eb4a056c18
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: da8bb19db8c2da2d5854c3f991ccce4d124d594c
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Suchen nach verlorenen oder gestohlenen iOS-Geräten mit Intune
 

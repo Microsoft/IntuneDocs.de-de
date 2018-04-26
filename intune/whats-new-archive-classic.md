@@ -2,8 +2,8 @@
 title: Neuerungen des klassischen Portalarchivs von Microsoft Intune
 description: Archiv für Ankündigungen von Neuheiten für Microsoft Intune
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ba8d7940f9c02a1f01a115e16be331bb4fc2fcd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 34b219b48e5bc9e3ee688895c071b230886183eb
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Neuerungen im klassischen Intune-Portal – vorherige Monate
 

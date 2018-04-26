@@ -2,8 +2,8 @@
 title: App-basierter bedingter Zugriff mit Intune
 description: Erfahren Sie mehr über den App-basierten bedingten Zugriff mit Intune.
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35d7be91201f8cf4fc3016363770b65bcea9ed72
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a84e94c16e7c61d1fca83b7774a486f430c9407c
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>App-basierter bedingter Zugriff mit Intune
 

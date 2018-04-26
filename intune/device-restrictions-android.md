@@ -3,8 +3,8 @@ title: Einstellungen für Geräteeinschränkungen für Android in Microsoft Intu
 titlesuffix: ''
 description: In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Android-Geräten kennen.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 77942ef6a5f25708ce43910cde94133e174b4731
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 619d9e86bd130a617155d262f3e09882ce26ec1e
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Android und Samsung KNOX Standard in Microsoft Intune 
 
