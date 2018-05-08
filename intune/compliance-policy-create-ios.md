@@ -1,11 +1,11 @@
 ---
 title: Erstellen einer Konformitätsrichtlinie für iOS-Geräte in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Erstellen einer Microsoft Intune Gerätekonformitätsrichtlinie für iOS-Geräte, um ein E-Mail-Konto anzugeben, Geräte auf Jailbreaks zu überprüfen, das mindestens erforderliche und das maximal zulässige Betriebssystem zu überprüfen und die Kennworteinschränkungen, einschließlich der Kennwortlänge und Geräteinaktivität festzulegen.
+description: Erstellen oder konfigurieren Sie eine Microsoft Intune Gerätekonformitätsrichtlinie für iOS-Geräte, um ein E-Mail-Konto anzugeben, Geräte auf Jailbreaks zu überprüfen, das mindestens erforderliche und das maximal zulässige Betriebssystem zu überprüfen und die Kennworteinschränkungen, einschließlich der Kennwortlänge und Geräteinaktivität festzulegen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 887f45cdc79aa5e45de3e8a1df5d12665d2ed8ab
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6f711a6bec9be0ac1fd94183931070f9988d49e3
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für iOS-Geräte in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Eine Intune-Konformitätsrichtlinie für iOS-Geräte gibt die Regeln und Einstellungen an, die iOS-Geräte erfüllen müssen, um konform zu sein. Wenn Sie Richtlinien für den bedingten Zugriff verwenden, können Sie den Zugriff auf Unternehmensressourcen zulassen oder blockieren. Außerdem können Sie Geräteberichte abrufen und bei Nichtkonformität Aktionen durchführen. Gerätekonformitätsrichtlinien können für sämtliche Plattformen im Intune Azure-Portal erstellt werden. Weitere Informationen über Konformitätsrichtlinien und die Voraussetzungen, die vor dem Erstellen einer Konformitätsrichtlinie erfüllt werden müssen, finden Sie im Artikel [Erste Schritte mit den Intune-Gerätekonformitätsrichtlinien](device-compliance-get-started.md).
+Eine Intune-Konformitätsrichtlinie für iOS-Geräte gibt die Regeln und Einstellungen an, die iOS-Geräte erfüllen müssen, um konform zu sein. Wenn Sie Richtlinien für den bedingten Zugriff verwenden, können Sie den Zugriff auf Unternehmensressourcen zulassen oder blockieren. Außerdem können Sie Geräteberichte abrufen und bei Nichtkonformität Aktionen durchführen. Gerätekonformitätsrichtlinien können für sämtliche Plattformen im Intune Azure-Portal erstellt werden. Weitere Informationen über Konformitätsrichtlinien und alle Voraussetzungen finden Sie unter [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md).
 
 In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verwaltet werden, wenn eine Konformitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird.
+
+---------------------------
 
 | **Richtlinieneinstellung** | **iOS 8.0 und höher** |
 | --- | --- |
@@ -38,6 +40,8 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 | **Maximale Version des Betriebssystems** | Isoliert |
 | **Windows-Integritätsnachweis** | Nicht verfügbar |
 
+---------------------------
+
 **Wiederhergestellt** = Das Betriebssystem des Geräts erzwingt die Kompatibilität. (Beispiel: Der Benutzer ist gezwungen, eine PIN festzulegen.)
 
 **Isoliert** = Das Betriebssystem des Geräts erzwingt keine Kompatibilität. (Beispiel: Android-Geräte zwingen den Benutzer nicht, das Gerät zu verschlüsseln.) Wenn das Gerät nicht kompatibel ist, erfolgen die folgenden Aktionen:
@@ -45,13 +49,10 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 - Das Gerät wird blockiert, wenn eine Richtlinie für bedingten Zugriff für den Benutzer gilt.
 - Das Unternehmensportal benachrichtigt den Benutzer über Kompatibilitätsprobleme.
 
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Erstellen einer Konformitätsrichtlinie im Azure-Portal
+## <a name="create-a-device-compliance-policy"></a>Erstellen einer Gerätekonformitätsrichtlinie
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
-3. Klicken Sie auf **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen**.
-4. Geben Sie einen Namen und eine Beschreibung ein, und wählen Sie die Plattform aus, auf die Sie diese Richtlinie anwenden möchten.
-5. Klicken Sie auf **Einstellungen**, um die Einstellungen für **E-Mail-Adresse**, **Geräteintegrität**, **Geräteeigenschaften** und **Systemsicherheit** anzugeben. Wenn Sie fertig sind, klicken Sie auf **OK**.
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. Wählen Sie als **Plattform** die Option **iOS** aus. Wählen Sie **Einstellungen konfigurieren**, um die Einstellungen zu **E-Mail**, **Geräteintegrität**, **Geräteeigenschaften** und **Systemsicherheit** anzugeben. Wenn Sie fertig sind, wählen Sie **OK** und dann **Erstellen**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -60,22 +61,14 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen
-
-Wählen Sie zum Zuweisen einer Konformitätsrichtlinie zu Benutzern eine Richtlinie aus, die Sie konfiguriert haben. Vorhandene Richtlinien finden Sie im Bereich **Gerätekompatibilität > Richtlinien**.
-
-1. Wählen Sie die Richtlinie, die Sie Benutzern zuweisen möchten, und abschließend **Zuweisungen** aus. Damit öffnen Sie einen Bereich, auf dem Sie **Azure Active Directory-Sicherheitsgruppen** auswählen und der Richtlinie zuweisen können.
-2. Klicken Sie auf **Ausgewählte Gruppen**, um den Bereich mit den Azure AD-Sicherheitsgruppen zu öffnen.  Wenn Sie auf **Speichern** klicken, wird die Richtlinie für Benutzer bereitgestellt.
-
-Sie haben die Richtlinie auf Benutzer angewendet.  Die von den Benutzern verwendeten Geräte, denen die Richtlinie zugewiesen wurde, werden auf Konformität überprüft.
-
-<!---## Compliance policy settings--->
-
 ## <a name="email"></a>E-Mail
 
-- **E-Mail-Konto muss von Intune verwaltet werden**: Wenn diese Option auf **Ja** festgelegt ist, muss das Gerät das auf dem Gerät bereitgestellte E-Mail-Profil verwenden. Das Gerät wird in den folgenden Situationen als nicht kompatibel betrachtet:
+- **Verwaltetes E-Mail-Profil für Mobilgeräte erforderlich**: Wenn Sie diese Option auf „Erforderlich“ festlegen, werden Geräte, die nicht über ein von Intune verwaltetes E-Mail-Profil verfügen, als nicht konform betrachtet. Ein Gerät verfügt möglicherweise nicht über ein verwaltetes E-Mail-Profil, wenn es nicht korrekt ausgerichtet ist oder wenn der Benutzer das E-Mail-Konto auf dem Gerät manuell einrichtet.
+
+  Das Gerät wird in den folgenden Situationen als nicht kompatibel betrachtet:
   - Das E-Mail-Profil wird für eine andere Benutzergruppe bereitgestellt als die Benutzergruppe, auf die die Kompatibilitätsrichtlinie ausgerichtet ist.
   - Der Benutzer hat bereits ein E-Mail-Konto auf dem Gerät eingerichtet, das dem Intune-E-Mail-Profil entspricht, das auf dem Gerät bereitgestellt wurde. Intune kann das vom Benutzer bereitgestellte Profil nicht überschreiben und daher nicht verwalten. Zum Sicherstellen der Kompatibilität muss der Benutzer die vorhandenen E-Mail-Einstellungen entfernen. Anschließend kann Intune das verwaltete E-Mail-Profil installieren.
+
 - **Wählen Sie das E-Mail-Profil aus, das von Intune verwaltet werden muss**: Wenn die Einstellung **E-Mail-Konto muss von Intune verwaltet werden** aktiviert ist, wählen Sie **Auswählen** aus, um das Intune-E-Mail-Profil anzugeben. Das E-Mail-Profil muss auf dem Gerät vorhanden sein.
 
 Weitere Informationen zu E-Mail-Profilen finden Sie unter [Konfigurieren des Zugriffs auf Unternehmens-E-Mail mithilfe von E-Mail-Profilen in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
@@ -83,7 +76,11 @@ Weitere Informationen zu E-Mail-Profilen finden Sie unter [Konfigurieren des Zug
 ## <a name="device-health"></a>Device health
 
 - **Geräte mit Jailbreak**: Wenn Sie diese Einstellung aktivieren, sind Geräte mit Jailbreak nicht konform.
-- **Anfordern, dass das Gerät höchstens der angegebenen Gerätebedrohungsstufe entspricht**: Auswählen der maximalen Bedrohungsstufe, ab der ein gerät als nicht konform eingestuft wird. Wenn Sie die Bedrohungsstufe zum Beispiel auf **Mittel** festlegen, sind Geräte mit den Stufen „Mittel“, „Niedrig“ und „Sicher“ konform. Geräte mit einer hohen Bedrohungsstufe sind nicht konform.
+- **Anfordern, dass das Gerät höchstens der angegebenen Gerätebedrohungsstufe entspricht** (iOS 8.0 und höher): Wählen Sie die maximale Bedrohungsstufe, ab der ein Gerät als nicht konform eingestuft wird. Geräte, die diese Bedrohungsstufe überschreiten, werden als nicht konform gekennzeichnet:
+  - **Gesichert**: Diese Option ist die sicherste, da auf dem Gerät keine Bedrohungen vorhanden sein können. Wenn auf dem Gerät Bedrohungen jeglicher Stufen erkannt werden, wird es als nicht konform bewertet.
+  - **Niedrig**: Das Gerät wird als kompatibel bewertet, wenn nur Bedrohungen niedriger Stufen vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
+  - **Mittel**: Das Gerät wird als kompatibel bewertet, wenn die auf dem Gerät vorhandenen Bedrohungen niedriger oder mittlerer Stufe sind. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
+  - **Hoch**: Dies ist die am wenigsten sichere Option, die alle Bedrohungsebenen zulässt. Es ist möglicherweise hilfreich, diese Lösung nur zu Berichtszwecken zu verwenden.
 
 ## <a name="device-properties"></a>Geräteeigenschaften
 
@@ -97,10 +94,10 @@ Weitere Informationen zu E-Mail-Profilen finden Sie unter [Konfigurieren des Zug
 > [!NOTE]
 > Nachdem eine Konformitäts- oder Konfigurationsrichtlinie auf ein iOS-Gerät angewendet wurde, werden Benutzer alle 15 Minuten dazu aufgefordert, eine Kennung festzulegen. Benutzer erhalten kontinuierlich eine Aufforderung, bis sie eine Kennung festgelegt haben.
 
-- **Kennwort zum Entsperren mobiler Geräte erforderlich:** Legen Sie **Ja** fest, damit Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können. iOS-Geräte mit Kennwort sind verschlüsselt.
-- **Einfache Kennwörter**: Legen Sie **Ja** fest, damit Benutzer Kennwörter wie **1234** oder **1111** erstellen können.
+- **Kennwort zum Entsperren mobiler Geräte anfordern:** Klicken Sie auf **Erforderlich**, damit Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können. iOS-Geräte mit Kennwort sind verschlüsselt.
+- **Einfache Kennwörter:** Legen Sie **Blockieren** fest, damit Benutzer kein einfaches Kennwort wie **1234** oder **1111** erstellen können. Wenn Sie diese Option auf **Nicht konfiguriert** setzen, können Benutzer Kennwörter wie **1234** oder **1111** erstellen.
 - **Minimale Kennwortlänge**: Geben Sie die Mindestanzahl an Ziffern oder Zeichen an, die das Kennwort enthalten muss.
-- **Erforderlicher Kennworttyp**: Geben Sie an, ob der Benutzer ein **alphanumerisches** oder ein **numerisches** Kennwort erstellen muss.
+- **Erforderlicher Kennworttyp**: Wählen Sie diese Option, wenn ein Kennwort nur aus **numerischen** Zeichen bestehen soll, oder wenn eine Kombination aus Zahlen und anderen Zeichen verwendet werden soll (**alphanumerisch**).
 - **Anzahl nicht alphanumerischer Zeichen im Kennwort**: Geben Sie die Mindestanzahl von Sonderzeichen (&, #, %, !, usw.) an, die im Kennwort enthalten sein müssen.
 
     Wenn Sie eine höhere Anzahl festlegen, muss der Benutzer ein komplexeres Kennwort erstellen.
@@ -109,6 +106,14 @@ Weitere Informationen zu E-Mail-Profilen finden Sie unter [Konfigurieren des Zug
 - **Kennwortablauf (Tage):** Wählen Sie die Anzahl von Tagen aus, bevor das Kennwort abläuft und ein neues erstellt werden muss.
 - **Anzahl der vorherigen Kennwörter zur Verhinderung von Wiederverwendung**: Geben Sie die Anzahl von vorherigen Kennwörtern an, die nicht erneut verwendet werden dürfen.
 
-<!--- ## Next steps
+## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen
 
-[How to monitor device compliance](device-compliance-monitor.md)--->
+1. Wählen Sie eine Richtlinie, die Sie konfiguriert haben. Vorhandene Richtlinien befinden sich unter **Gerätekompatibilität** > **Richtlinien**.
+2. Wählen Sie die Richtlinie und dann **Zuweisungen** aus. Sie können Azure Active Directory (AD)-Sicherheitsgruppen ein- oder ausschließen.
+3. Wählen Sie **Ausgewählte Gruppen**, um Ihre Azure AD-Sicherheitsgruppen anzuzeigen. Wählen Sie die Benutzergruppen aus, auf die diese Richtlinie angewendet werden soll, und dann wählen Sie **Speichern**, um die Richtlinie für die Benutzer bereitzustellen.
+
+Sie haben die Richtlinie auf Benutzer angewendet. Die von den Benutzern verwendeten Geräte, denen die Richtlinie zugewiesen wurde, werden auf Konformität überprüft.
+
+## <a name="next-steps"></a>Nächste Schritte
+[Automatisieren von E-Mails und Hinzufügen von Aktionen für nicht konforme Geräte](actions-for-noncompliance.md)  
+[Überwachen von Intune-Richtlinien zur Gerätekompatibilität](compliance-policy-monitor.md)

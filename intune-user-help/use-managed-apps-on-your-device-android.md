@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bbed41e819af0cb5cc194553f2a5a3413a68425a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ebb79bc3405e9ea0dd38c24b86a4c9020760c895
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Verwenden verwalteter Apps auf Ihrem Android-Gerät
 
@@ -65,11 +65,7 @@ Es folgen allgemeine Anwendungen, die Ihre IT-Abteilung ggf. verwaltet:
 
 -   Intune Managed Browser
 
--   Intune Image Viewer
-
--   Intune PDF Viewer
-
--   Intune AV Player
+-   Microsoft Azure Information Protection Viewer
 
 -   Microsoft Word, Excel und PowerPoint
 

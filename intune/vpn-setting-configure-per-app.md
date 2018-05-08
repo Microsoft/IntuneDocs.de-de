@@ -3,8 +3,8 @@ title: Die Einrichtung des Pro-App-VPN in Microsoft Intune für iOS-Geräte
 titleSuffix: ''
 description: Sie können angeben, welche verwalteten Apps Ihr virtuelles privates Netzwerk (VPN) auf mit Intune verwalteten iOS-Geräten verwenden können.
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
@@ -15,15 +15,23 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b28f809c924ec2699647a3cc377b3bdde86afe5
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 67e2630fc2a7ccd75ac86c797e36c389757d908a
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Die Einrichtung des Pro-App-VPN in Intune für iOS-Geräte
 
 Sie können angeben, welche verwalteten Apps Ihr virtuelles privates Netzwerk (VPN) auf mit Intune verwalteten iOS-Geräten verwenden können. Wenn Sie ein Pro-App-VPN in Intune erstellen, verbindet sich ein Benutzer automatisch über Ihr VPN, wenn dieser auf Unternehmensdokumente zugreift.
+
+Pro-App-VPN ist derzeit für die folgenden Anbieter verfügbar: 
+
+ - Pulse Connect Secure
+ - Checkpoint Remote Access VPN
+ - F5
+ - SonicWall
+
 
 ## <a name="prerequisites-for-the-per-app-vpn"></a>Voraussetzungen für das Pro-App-VPN
 
@@ -37,7 +45,7 @@ Exportieren Sie das Zertifikat, und fügen Sie die CA hinzu.
 4. Fügen Sie den Namen der Zertifizierungsstelle hinzu, die das Zertifikat für die Authentifizierung an den VPN-Server ausgestellt hat.
     Wenn die vom Gerät vorgelegte Zertifizierungsstelle mit einer der CAs in der Liste der vertrauenswürdigen Zertifizierungsstellen auf dem VPN-Server übereinstimmt, dann authentifiziert der VPN-Server das Gerät erfolgreich.
 
-## <a name="create-a--group-for-your-vpn-users"></a>Erstellen einer Gruppe für Ihre VPN-Benutzer
+## <a name="create-a-group-for-your-vpn-users"></a>Erstellen einer Gruppe für Ihre VPN-Benutzer
 
 Erstellen oder wählen Sie eine vorhandene Gruppe in Azure Active Directory (Azure AD), die die Mitglieder enthalten soll, die Zugriff auf das Pro-App-VPN besitzen.
 

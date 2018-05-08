@@ -15,18 +15,18 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63284a1dd5c1d5a6c588775f1c282bfcfef5de67
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c5820d058479bbf37c5dffdb930792f4f84afa69
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Gewusst wie: Konfigurieren von Intune-Einstellungen für die iOS-App „Classroom“
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Einführung
-[Classroom](https://itunes.apple.com/app/id1085319084) ist eine App, mit der Lehrkräfte Schüler/Studenten durch den Unterricht führen und deren Geräte im Schulungsraum steuern können. Mithilfe der App kann eine Lehrkraft beispielsweise folgende Aufgaben ausführen:
+[Classroom](https://itunes.apple.com/app/id1085319084) ist eine App, mit der Lehrkräfte Schüler/Studenten durch den Unterricht führen und deren Geräte im Schulungsraum steuern können. Beispielsweise ermöglicht die App Lehrern Folgendes:
 
 - Öffnen von Apps auf Geräten der Schüler/Studenten
 - Sperren und Entsperren des iPad-Bildschirms
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 - Navigieren der iPads von Schüler/Studenten zu einem Lesezeichen oder Kapitel in einem Buch
 - Anzeigen des Bildschirms des iPads eines Schülers/Studenten auf einem Apple TV
 
-Nutzen Sie das Intune iOS-Geräteprofil **Bildung** und die Informationen in diesem Thema zum Einrichten der Classroom-App und der Geräte, auf denen Sie sie nutzen.
+Um Classroom auf Ihrem Gerät einzurichten, müssen Sie ein Intune iOS-Bildungsgeräteprofil erstellen und konfigurieren.
 
 ## <a name="before-you-start"></a>Vorbereitung
 
@@ -42,7 +42,7 @@ Berücksichtigen Sie vor dem Konfigurieren dieser Einstellungen Folgendes:
 
 - Die iPads von Lehrkräften und Schülern/Studenten müssen bei Intune registriert werden.
 - Stellen Sie sicher, dass Sie die Apple-App [Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) auf dem Gerät der Lehrkraft installiert haben. Sie können entweder die App manuell installieren oder dazu die [Intune-App-Verwaltung](app-management.md) verwenden.
-- Sie müssen Zertifikate zum Authentifizieren von Verbindungen zwischen Geräten von Lehrkräften und Schülern/Studenten konfigurieren (siehe Schritt 2).
+- Sie müssen Zertifikate zum Authentifizieren von Verbindungen zwischen Geräten von Lehrkräften und Schülern/Studenten konfigurieren (siehe Schritt 2, Erstellen und Zuweisen eines iOS-Bildungsprofils in Intune).
 - Die iPads von Lehrkräften und Schülern/Studenten, auf denen Bluetooth aktiviert sein muss, müssen sich im gleichen WLAN befinden.
 - Die Classroom-App wird auf überwachten iPads mit iOS 9.3 oder höher ausgeführt.
 - In dieser Version unterstützt Intune ein 1:1-Szenario, in dem jeder Schüler/Student über ein eigenes dediziertes iPad verfügt.
@@ -82,14 +82,14 @@ Sie können Informationen mithilfe einer der folgenden Methoden in SDS importier
 9.  Wählen Sie **Einstellungen** > **Konfigurieren** aus.
 
 
-Als Nächstes benötigen Sie Zertifikate, um eine Vertrauensstellung zwischen iPads von Lehrkräften und Schülern/Studenten herzustellen. Zertifikate werden verwendet, um Verbindungen zwischen Geräten ohne Eingabe von Benutzernamen und Kennwörtern nahtlos und automatisch zu authentifizieren.
+Im nächsten Abschnitt erstellen Sie Zertifikate, um eine Vertrauensstellung zwischen iPads von Lehrkräften und Schülern/Studenten herzustellen. Zertifikate werden verwendet, um Verbindungen zwischen Geräten ohne Eingabe von Benutzernamen und Kennwörtern nahtlos und automatisch zu authentifizieren.
 
 >[!IMPORTANT]
 >Die Zertifikate für Lehrkräfte und Schüler/Studenten, die Sie verwenden, müssen von unterschiedlichen Zertifizierungsstellen ausgestellt werden. Sie müssen zwei neue untergeordnete Zertifizierungsstellen erstellen, die mit Ihrer vorhandenen Zertifikatinfrastruktur verbunden sind: eine für Lehrkräfte und eine für Schüler/Studenten.
 
 iOS-Bildungsprofile unterstützen nur PFX-Zertifikate. SCEP-Zertifikate werden nicht unterstützt.
 
-Von Ihnen erstellte Zertifikate müssen zusätzlich zur Benutzerauthentifizierung die Serverauthentifizierung unterstützen.
+Erstellte Zertifikate müssen Serverauthentifizierung und Benutzerauthentifizierung unterstützen.
 
 ### <a name="configure-teacher-certificates"></a>Konfigurieren von Zertifikaten für Lehrkräfte
 
@@ -97,13 +97,15 @@ Klicken Sie im Bereich **Bildung** auf **Lehrerzertifikate**.
 
 #### <a name="configure-teacher-root-certificate"></a>Konfigurieren des Stammzertifikats für Lehrkräfte
 
-Klicken Sie unter **Stammzertifikat für Lehrer** auf die Schaltfläche „Durchsuchen“, um das Stammzertifikat für Lehrkräfte mit der Erweiterung CER (DER- oder Base64-codiert) oder P7B (mit oder ohne vollständige Kette) auszuwählen.
+Wählen Sie unter **Lehrerstammzertifikat** die Schaltfläche zum Durchsuchen aus. Wählen Sie eines der folgenden Stammzertifikate aus:
+- Erweiterung CER (DER, oder Base64-codiert) 
+- Erweiterung P7b (mit oder ohne vollständige Kette)
 
 #### <a name="configure-teacher-pkcs12-certificate"></a>Konfigurieren von PKCS#12-Zertifikaten für Lehrkräfte
 
 Konfigurieren Sie unter **PKCS#12-Zertifikat für Lehrer** die folgenden Werte:
 
-- **Format des Antragstellernamens**: Intune setzt vor den allgemeinen Namen des Zertifikats automatisch das Präfix **leader** für das Lehrerzertifikat und **member** für das Schülerzertifikat.
+- **Format des Antragstellernamens**: Intune versieht allgemeine Namen für Lehrerzertifikate automatisch mit dem Präfix **leader**. Allgemeine Namen für Studentenzertifikate werden mit dem Präfix **member** versehen.
 - **Zertifizierungsstelle**: Eine Unternehmenszertifizierungsstelle (Certification Authority; CA), die auf einer Enterprise-Edition von Windows Server 2008 R2 oder höher ausgeführt wird. Eine eigenständige Zertifizierungsstelle wird nicht unterstützt. 
 - **Name der Zertifizierungsstelle**: Geben Sie den Namen Ihrer Zertifizierungsstelle ein.
 - **Name der Zertifikatvorlage**: Geben Sie den Namen der Zertifikatvorlage ein, die einer ausstellenden Zertifizierungsstelle hinzugefügt wurde. 
@@ -111,7 +113,7 @@ Konfigurieren Sie unter **PKCS#12-Zertifikat für Lehrer** die folgenden Werte:
 - **Gültigkeitsdauer des Zertifikats**: Geben Sie die verbleibende Gültigkeitsdauer vor Ablauf des Zertifikats an.
 Sie können einen niedrigeren Wert als den für die Gültigkeitsdauer in der angegebenen Zertifikatvorlage angeben, aber keinen höheren. Beispiel: Wenn die Gültigkeitsdauer des Zertifikats in der Zertifikatvorlage zwei Jahre beträgt, können Sie als Wert ein Jahr angeben, aber nicht fünf Jahre. Zudem muss der Wert niedriger als die verbleibende Gültigkeitsdauer des Zertifikats der ausstellenden Zertifizierungsstelle sein.
 
-Wenn Sie das Konfigurieren von Zertifikaten abgeschlossen haben, klicken Sie auf **OK**.
+Wenn Sie das Konfigurieren von Zertifikaten abgeschlossen haben, wählen Sie **OK** aus.
 
 ### <a name="configure-student-certificates"></a>Konfigurieren von Zertifikaten für Schüler/Studenten
 
@@ -120,13 +122,15 @@ Wenn Sie das Konfigurieren von Zertifikaten abgeschlossen haben, klicken Sie auf
 
 #### <a name="configure-student-root-certificate"></a>Konfigurieren des Stammzertifikats für Schüler und Studenten
 
-Klicken Sie unter **Stammzertifikat für Schüler und Studenten** auf die Schaltfläche „Durchsuchen“, um das Stammzertifikat für Schüler und Studenten mit der Erweiterung CER (DER- oder Base64-codiert) oder P7B (mit oder ohne vollständige Kette) auszuwählen.
+Wählen Sie unter **Stammzertifikat für Schüler und Studenten** die Schaltfläche zum Durchsuchen aus. Wählen Sie eines der folgenden Stammzertifikate aus:
+- Erweiterung CER (DER, oder Base64-codiert) 
+- Erweiterung P7b (mit oder ohne vollständige Kette)
 
 #### <a name="configure-student-pkcs12-certificate"></a>Konfigurieren von PKCS#12-Zertifikaten für Schüler und Studenten
 
 Konfigurieren Sie unter **PKCS#12-Zertifikat für Schüler und Studenten** die folgenden Werte:
 
-- **Format des Antragstellernamens**: Intune setzt vor den allgemeinen Namen des Zertifikats automatisch das Präfix **leader** für das Lehrerzertifikat und **member** für das Schülerzertifikat.
+- **Format des Antragstellernamens**: Intune versieht allgemeine Namen für Lehrerzertifikate automatisch mit dem Präfix **leader**. Allgemeine Namen für Studentenzertifikate werden mit dem Präfix **member** versehen.
 - **Zertifizierungsstelle**: Eine Unternehmenszertifizierungsstelle (Certification Authority; CA), die auf einer Enterprise-Edition von Windows Server 2008 R2 oder höher ausgeführt wird. Eine eigenständige Zertifizierungsstelle wird nicht unterstützt. 
 - **Name der Zertifizierungsstelle**: Geben Sie den Namen Ihrer Zertifizierungsstelle ein.
 - **Name der Zertifikatvorlage**: Geben Sie den Namen der Zertifikatvorlage ein, die einer ausstellenden Zertifizierungsstelle hinzugefügt wurde. 
@@ -134,7 +138,7 @@ Konfigurieren Sie unter **PKCS#12-Zertifikat für Schüler und Studenten** die f
 - **Gültigkeitsdauer des Zertifikats**: Geben Sie die verbleibende Gültigkeitsdauer vor Ablauf des Zertifikats an.
 Sie können einen niedrigeren Wert als den für die Gültigkeitsdauer in der angegebenen Zertifikatvorlage angeben, aber keinen höheren. Beispiel: Wenn die Gültigkeitsdauer des Zertifikats in der Zertifikatvorlage zwei Jahre beträgt, können Sie als Wert ein Jahr angeben, aber nicht fünf Jahre. Zudem muss der Wert niedriger als die verbleibende Gültigkeitsdauer des Zertifikats der ausstellenden Zertifizierungsstelle sein.
 
-Wenn Sie das Konfigurieren von Zertifikaten abgeschlossen haben, klicken Sie auf **OK**.
+Wenn Sie das Konfigurieren von Zertifikaten abgeschlossen haben, wählen Sie **OK** aus.
 
 ## <a name="finish-up"></a>Fertig stellen
 

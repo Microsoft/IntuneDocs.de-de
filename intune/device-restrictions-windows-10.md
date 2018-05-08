@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Gerätebeschränkungen für Einstellungen unter Windows 10 (und höher) in Intune
 In diesem Artikel erfahren Sie alle Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für Windows 10-Geräte konfigurieren können.
@@ -253,7 +253,7 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 
 Ein Kiosk-Gerät führt in der Regel eine App oder eine bestimmte Gruppe von Apps aus. Benutzer werden daran gehindert, auf Features oder Funktionen auf dem Gerät außerhalb von Kiosk-Apps zuzugreifen.
 
-- **Kioskmodus**: Gibt den Typ des Kioskmodus an, der von der Richtlinie unterstützt wird. Zu den Optionen gehören:
+- **Kioskmodus**: Ermittelt den Typ des Kioskmodus, der von der Richtlinie unterstützt wird. Zu den Optionen gehören:
 
   - **Nicht konfiguriert**: (Standard). Die Richtlinie aktiviert keinen Kioskmodus. 
   - **Kiosk mit einzelner App**: Das Profil erlaubt dem Gerät, nur eine App auszuführen. Wenn sich der Benutzer anmeldet, wird eine bestimmte App gestartet. Dieser Modus hindert den Benutzer auch daran, neue Apps zu öffnen oder die Apps, die ausgeführt wird, zu ändern.
@@ -370,6 +370,11 @@ Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefunden
 - **Druckdienstressourcen-URI**: OAuth-Ressourcen-URI für den im Azure-Portal konfigurierten Druckdienst
 - **Maximal abgefragte Drucker (nur Mobile)**: Maximale Anzahl von Druckern, die von einem Ermittlungsendpunkt abgefragt werden sollen
 - **Ressourcen-URI für Druckerermittlungsdienst**: OAuth-Ressourcen-URI für den im Azure-Portal konfigurierten Druckererkennungsdienst
+
+## <a name="local-printer"></a>Lokaler Drucker
+- **Drucker**: Liste der lokalen Drucker, die hinzugefügt wurden.
+- **Standarddrucker**: Festlegen als Standarddrucker.
+- **Benutzerzugriff für das Hinzufügen neuer Drucker**: Zulassen oder Blockieren der Verwendung von lokalen Druckern.
 
 ## <a name="reporting-and-telemetry"></a>Berichterstellung und Telemetrie
 

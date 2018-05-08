@@ -3,8 +3,8 @@ title: Verwalten von PowerShell-Skripts in Microsoft Intune für Windows 10-Ger�
 titlesuffix: ''
 description: Erfahren Sie, wie Sie PowerShell-Skripts in Microsoft Intune für die Ausführung auf Windows 10-Geräten hochladen.
 keywords: ''
-ms.author: dougeby
-author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c501292126200baa88e06e30b6226e5c5021b8ec
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 3de7af01ffa64293e420913258919eff118b4abc
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Verwalten von PowerShell-Skripts in Intune für Windows 10-Geräte
 Durch die Verwaltungserweiterung von Intune können Sie PowerShell-Skripts in Intune für die Ausführung auf Windows 10-Geräten hochladen. Die Verwaltungserweiterungen ergänzt Funktionen für die mobile Geräteverwaltung (mobile device management, MDM) von Windows 10 und erleichtert Ihnen den Wechsel zu einer modernen Verwaltung.
@@ -33,8 +33,8 @@ Die Intune-Verwaltungserweiterung ergänzt die integrierten MDM-Funktionen für 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlich:
-- Geräte müssen mit Azure AD verknüpft sein
-- Geräte müssen Windows 10, Version 1607, oder höher ausführen
+- Geräte müssen mit Azure AD verknüpft sein. Dies schließt keine verknüpften Hybrid-AD-Geräte ein.
+- Geräte müssen Windows 10, Version 1607, oder höher ausführen.
 
 ## <a name="create-a-powershell-script-policy"></a>Erstellen einer PowerShell-Skriptrichtlinie 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
@@ -43,7 +43,7 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
 4. Klicken Sie im Bereich **Gerätekonfiguration** auf **Verwalten** > **PowerShell-Skripts**.
 5. Klicken im Bereich **PowerShell-Skripts** auf **Hinzufügen**.
 6. Geben Sie im Bereich **PowerShell-Skript hinzufügen** einen **Namen** und eine **Beschreibung** für das PowerShell-Skript ein.
-7. Suchen Sie das PowerShell-Skript für den **Skriptstandort**. Das Skript muss kleiner als 10 KB (ASCII) oder 5 KB (Unicode) sein.
+7. Suchen Sie das PowerShell-Skript für den **Skriptstandort**. Das Skript muss kleiner als 200 KB sein.
 8. Klicken Sie auf **Konfigurieren**, und wählen Sie dann aus, ob das Skript mit den Anmeldeinformationen des Benutzers auf dem Gerät (**Ja**) oder im Systemkontext (**Nein**) ausgeführt werden soll. Standardmäßig werden die Skripts im Systemkontext ausgeführt. Wählen Sie **Ja** aus, wenn das Skript nicht im Systemkontext ausgeführt werden muss. 
   ![Bereich „PowerShell-Skript hinzufügen“](./media/mgmt-extension-add-script.png)
 9. Wählen Sie aus, ob das Skript von einem vertrauenswürdigen Herausgeber signiert werden muss (**Ja**). Standardmäßig muss das Skript nicht signiert werden. 

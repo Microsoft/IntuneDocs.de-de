@@ -1,9 +1,9 @@
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.  
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.  
-3. Klicken Sie auf **Mobile Apps** > **Apps**.
+2. Wählen Sie **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.  
+3. Wählen Sie **Mobile Apps** > **Apps** aus.
 4. Suchen Sie Ihre App in der Liste, und wählen Sie sie aus.  
-5. Klicken Sie auf dem Blatt **Übersicht** auf die Option **Eigenschaften**.  
+5. Wählen Sie auf dem Blatt **Übersicht** die Option **Eigenschaften**.  
 6. Klicken Sie auf **App-Paketdatei**.  
-7. Klicken Sie auf das Ordnersymbol, und navigieren Sie zum Speicherort der aktualisierten App-Datei. Klicken Sie auf **Öffnen**. Die App-Informationen werden mit den Paketinformationen aktualisiert.  
-8. Überprüfen Sie, ob die **Anwendungsversion** das aktualisierte App-Paket widerspiegelt.  
+7. Wählen Sie das Ordnersymbol, und navigieren Sie zum Speicherort der aktualisierten App-Datei. Wählen Sie **Öffnen** aus. Die App-Informationen werden mit den Paketinformationen aktualisiert.  
+8. Überprüfen Sie, ob die **App-Version** das aktualisierte App-Paket widerspiegelt.  

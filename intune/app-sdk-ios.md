@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 01/10/2018
+ms.date: 04/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 74c709790295a971ff9efe7c2cc348d13d471d5a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
@@ -458,6 +458,73 @@ WebViewHandledURLSchemes | Array von Zeichenfolgen | Gibt die URL-Schemas an, di
 
 > [!NOTE]
 > Gemäß den App Store-Standards muss `MAMPolicyRequired` auf „NO“ festgelegt sein, wenn Ihre App im App Store veröffentlicht werden soll.
+
+## <a name="sharing-data-via-uiactivityviewcontroller"></a>Datenfreigabe über UIActivityViewController 
+Ab Version 8.0.2 kann das Intune App SDK die UIActivityViewController-Aktionen so filtern, dass keine Speicherorte zur Auswahl stehen, die keine Intune-Freigaben sind. Dieses Verhalten wird durch die Übertragungsrichtlinie für Anwendungsdaten und eine kommende APP-Funktion gesteuert. Das kommende Feature wird aktiviert, nachdem in der Mehrheit der Erstanbieteranwendungen von Microsoft (d.h. Word, Excel, Powerpoint) die notwendigen Änderungen zur Unterstützung der Datenfreigabe über UIActivityViewController vorgenommen worden sind. 
+ 
+### <a name="copy-to-actions"></a>„Kopieren in“-Aktionen 
+Beim Freigeben von Dokumenten über UIActivityViewController und UIDocumentInteractionController zeigt iOS „Kopieren in“-Aktionen für jede Anwendung an, die das Öffnen des freigegeben Dokuments unterstützt. Anwendungen deklarieren die Dokumenttypen, die sie unterstützen, durch die CFBundleDocumentTypes-Einstellung in ihrer Datei „Info.plist“. Diese Art der Freigabe ist nicht mehr verfügbar, wenn die Richtlinie keine Freigabe für nicht verwaltete Anwendungen zulässt. Als Ersatz müssen Anwendungen ihrer Anwendung eine Nicht-Benutzeroberflächen-Aktionserweiterung hinzufügen und sie mit dem Intune APP SDK für iOS verknüpfen. Die Aktionserweiterung verhält sich wie ein Stub. Das SDK implementiert sämtliches Dateifreigabeverhalten. Führen Sie die obigen SDK-Integrationsschritte sowie die folgenden aus: 
+ 
+1. Die Anwendung muss mindestens eine schemeURL aufweisen, die unter den CFBundleURLTypes ihrer Datei „Info.plist“ definiert ist. 
+2. Die Anwendung und Aktionserweiterung muss mindestens eine App-Gruppe freigeben, und die App-Gruppe muss im IntuneMAMSettings-Wörterbuch der App und Erweiterung im AppGroupIdentifiers-Array aufgelistet sein. 
+3. Name der Aktionserweiterung „Öffnen in“ gefolgt vom Anwendungsnamen. Lokalisieren Sie die Datei „Info.plist“ nach Bedarf. 
+4. Entwerfen Sie ein Vorlagensymbol für die Erweiterung, wie in der [Apple-Entwicklerdokumentation](https://developer.apple.com/ios/human-interface-guidelines/extensions/sharing-and-actions/) beschrieben. Alternativ können Sie mit dem IntuneMAMConfigurator-Tool diese Images aus dem App-Verzeichnis der Anwendung generieren. Führen Sie „IntuneMAMConfigurator -generateOpenInIcons /path/to/app.app -o /path/to/output/directory“ aus. 
+5. Fügen Sie in der Datei „Info.plist“ der Erweiterung unter IntuneMAMSettings eine boolesche Einstellung namens OpenInActionExtension mit dem Wert „YES“ hinzu. 
+6. Konfigurieren Sie die NSExtensionActivationRule zur Unterstützung einer einzelnen Datei und aller Typen aus den CFBundleDocumentTypes der Anwendung mit vorangestelltem „com.microsoft.intune.mam“. Wenn die Anwendung z.B. „public.text“ und „public.image“ unterstützt, würde die Aktivierungsregel lauten: 
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.text” || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image”).@count == 1 
+).@count == 1 
+```
+
+### <a name="update-existing-share-and-action-extensions"></a>Aktualisieren der vorhandenen Freigabe- und Aktionserweiterungen 
+Wenn die Anwendung bereits Freigabe- oder Aktionserweiterungen enthält, muss ihre NSExtensionActivationRule geändert werden, um die Intune-Typen zuzulassen. Für jeden von der Erweiterung unterstützten Typ wird einem weiteren Typ das Präfix „com.microsoft.intune.mam“ vorangestellt. Wenn die vorhandene Aktivierungsregel z.B. lautet:  
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" 
+    ).@count > 0 
+).@count > 0 
+ ```
+
+Sollte sie geändert werden in: 
+
+```
+SUBQUERY ( 
+    extensionItems, 
+    $extensionItem, 
+    SUBQUERY ( 
+        $extensionItem.attachments, 
+        $attachment, 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "public.data" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" || 
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data 
+    ).@count > 0 
+).@count > 0 
+ ```
+
+>[!Note] Mit dem IntuneMAMConfigurator-Tool können die Intune-Typen der Aktivierungsregel hinzugefügt werden. Wenn die bestehende Aktivierungsregel die vordefinierten Zeichenfolgenkonstanten verwendet (z.B. NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText usw.), kann die Prädikatsyntax sehr komplex werden. Mit dem IntuneMAMConfigurator-Tool kann auch die Aktivierungsregel aus den Zeichenfolgenkonstanten in eine Prädikatzeichenfolge konvertiert werden, während die Intune-Typen hinzugefügt werden. Den IntuneMAMConfigurator finden Sie in unserem GitHub-Repository. 
+
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Aktivieren der MAM-Zielkonfiguration für Ihre iOS-Anwendungen
 Die MAM-Zielkonfiguration ermöglicht, dass eine App Konfigurationsdaten über das Intune App SDK erhalten kann. Das Format und die Varianten dieser Daten müssen definiert und Intune-Kunden vom Besitzer oder Entwickler der Anwendung mitgeteilt werden. Intune-Administratoren können Konfigurationsdaten über das Intune Azure-Portal als Ziel festlegen und bereitstellen. Ab Version 7.0.1 des Intune App SDK für iOS können Apps, die zur MAM-Zielkonfiguration gehören, über den MAM-Dienst mit Konfigurationsdaten für MAM versorgt werden. Die Anwendungskonfigurationsdaten werden durch unseren MAM-Dienst direkt an die App übertragen, und nicht über den MDM-Kanal. Das Intune App SDK stellt eine Klasse für den Zugriff auf die Daten bereit, die aus diesen Konsolen abgerufen wurden. Folgende Voraussetzungen sind erforderlich: <br>
