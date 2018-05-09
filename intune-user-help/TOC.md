@@ -149,6 +149,6 @@
 #### [Ich muss die Benutzerkontensteuerung aktivieren](you-need-to-enable-uac-windows.md)
 #### [Ich muss Windows aktualisieren](you-need-to-update-os-build-version-windows.md)
 #### [Ich muss Windows Defender aktivieren](turn-on-defender-windows.md)
-
+## [Remotesperren eines Geräts in der Unternehmensportal-App für Windows](remote-lock-your-device-cp-app.md) 
 ## [Verwenden der Intune-Unternehmensportal-Website](using-the-intune-company-portal-website.md)
 ### [Remotesperren des Geräts](remote-lock-your-device-cpwebsite.md)
