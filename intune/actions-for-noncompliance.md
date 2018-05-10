@@ -12,11 +12,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8e8603ca59b46937b1529e710a8bc83aec5dd4d6
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatisieren von E-Mails und Hinzufügen von Aktionen für nicht konforme Geräte in Intune
 
@@ -77,7 +77,10 @@ Sie können beim Erstellen einer neuen Konformitätsrichtlinie oder Aktualisiere
 1. Öffnen Sie **Microsoft Intune** im [Azure-Portal](https://portal.azure.com), und klicken Sie auf **Gerätekonformität**.
 2. Klicken Sie auf **Richtlinien**, wählen Sie eine Ihrer Richtlinien aus, und klicken dann auf **Eigenschaften**. 
 
-   Haben Sie noch keine Richtlinie? Erstellen Sie eine Richtlinie für [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) oder eine andere Plattform.
+  Haben Sie noch keine Richtlinie? Erstellen Sie eine Richtlinie für [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) oder eine andere Plattform.
+  
+  > [!NOTE]
+  > JAMF-Geräte und Geräte als Teil von Gerätegruppen können zu diesem Zeitpunkt keine Konformitätsaktionen empfangen.
 
 3. Klicken Sie auf **Aktionen bei Nichtkonformität** und dann auf **Hinzufügen**, um die Aktionsparameter hinzuzufügen. Sie können die zuvor erstellte Benachrichtigungsvorlage auswählen, zusätzliche Empfänger hinzufügen und die Toleranzperiode des Zeitplans aktualisieren. Im Zeitplan können Sie die Anzahl von Tagen (0 bis 365) eingeben und dann die Richtlinien für den bedingten Zugriff erzwingen. Der Zugriff auf Unternehmensressourcen wird **sofort** durch den bedingten Zugriff blockiert, wenn Sie für die Anzahl der Tage **0** eingeben.
 

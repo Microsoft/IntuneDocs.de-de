@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune
 
@@ -80,6 +80,8 @@ Folgendes ist erforderlich, um die Gerätekonformitätsrichtlinien zu verwenden:
   - Windows 10
 
 - Geräte müssen in Intune registriert werden, um deren Konformitätsstatus melden zu können.
+
+- Geräte, die für einen Benutzer oder ein Gerät ohne primären Benutzer registriert sind, werden unterstützt. Mehrere Benutzerkontexte werden nicht unterstützt.
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>So funktionieren Intune-Gerätekonformitätsrichtlinien mit Azure AD
 
@@ -148,9 +150,9 @@ Geräten, welche die Richtlinienregeln einhalten, können Sie Zugriff auf E-Mail
 Gerätekonformitätsrichtlinien können auch ohne einen bedingten Zugriff verwendet werden. Bei unabhängiger Nutzung von Kompatibilitätsrichtlinien werden die Zielgeräte ausgewertet und mit ihrem Kompatibilitätsstatus gemeldet. So können Sie beispielsweise einen Bericht dazu erstellen, wie viele Geräte nicht verschlüsselt sind oder mit Jailbreak oder Rootzugriff manipuliert wurden. Wenn Sie Kompatibilitätsrichtlinien ohne bedingten Zugriff nutzen, gelten keine Zugriffsbeschränkungen für Unternehmensressourcen.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Möglichkeiten, die Gerätekonformitätsrichtlinien bereitzustellen
-Sie können Benutzern die Konformitätsrichtlinie in Benutzergruppen oder sie den Geräten in Gerätegruppen bereitstellen. Wenn Sie eine Kompatibilitätsrichtlinie für einen Benutzer bereitstellen, wird die Kompatibilität der Geräte des Benutzers überprüft.
+Sie können Benutzern die Konformitätsrichtlinie in Benutzergruppen oder Geräten in Gerätegruppen bereitstellen. Wenn Sie eine Konformitätsrichtlinie für einen Benutzer bereitstellen, wird die Konformität aller Geräte des Benutzers überprüft.
 
-Bei Geräten in Gerätegruppen beinhalten die **Einstellungen zur Konformitätsrichtlinie** (Azure-Portal > Gerätekonformität) Folgendes:
+Die **Einstellungen zur Konformitätsrichtlinie** (Azure-Portal > Gerätekonformität) enthalten Folgendes:
 
 - **Kennzeichnen von Geräten, die keine Konformitätsrichtlinie zugewiesen haben, als:** Diese Eigenschaft verfügt über zwei Werte:
 

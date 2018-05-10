@@ -1,12 +1,12 @@
 ---
-title: Neuerungen in Microsoft Intune
+title: Neues in Microsoft Intune – Azure | Microsoft-Dokumentation
 titlesuffix: ''
 description: Erfahren Sie, welche Neuerungen es im Intune-Azure-Portal gibt
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/12/2018
+ms.date: 04/24/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: a2692163977a352e7a26dfc656d601d70ef401b4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9be6e0a3364f6ee0a077c1435d66498aba898430
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -40,6 +40,30 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Sie e
   ### Role-based access control
 
 -->   
+
+## <a name="week-of-april-23-2018"></a>Woche vom 23. April 2018
+
+#### <a name="advanced-threat-protection-atp-and-intune-are-fully-integrated----eeready-1629303---"></a>Advanced Threat Protection (ATP) und Intune sind vollständig integriert <!-- EEready 1629303 -->
+
+In Windows Defender Security Center (ATP-Portal) können Sie eine Verbindung mit Microsoft Intune herstellen. Nach der Erstellung wird mit einer Konformitätsrichtlinie von Intune eine akzeptable Bedrohungsstufe bestimmt. Wenn die Bedrohungsstufe überschritten wird, kann eine Azure Active Directory-Richtlinie (AD) für bedingten Zugriff den Zugriff auf andere Apps in Ihrer Organisation blockieren.
+
+Dieses Feature ermöglicht ATP, Dateien zu überprüfen, Bedrohungen zu erkennen und jedes Risiko auf Ihren Windows 10-Geräten zu melden.
+
+Siehe [Aktivieren von Windows Defender ATP mit bedingtem Zugriff in Intune](advanced-threat-protection.md).
+
+## <a name="week-of-april-16-2018"></a>Woche vom 16. April 2018
+
+#### <a name="use-cisco-anyconnect-client-for-ios----eeready-1333708---"></a>Verwenden des Cisco AnyConnect-Clients für iOS <!-- EEready 1333708 -->
+
+Wenn Sie ein neues VPN-Profil für iOS erstellen, stehen Ihnen jetzt zwei Optionen zur Verfügung: **Cisco AnyConnect** und **Cisco Legacy AnyConnect**. Die Cisco AnyConnect-Profile unterstützen 4.0.7x und neuere Versionen. Bereits existierende iOS Cisco AnyConnect VPN-Profile werden als **Cisco Legacy AnyConnect** bezeichnet und auch weiterhin mit Cisco AnyConnect 4.0.5x und älteren Versionen funktionieren.
+
+> [!NOTE]
+> Diese Änderung gilt nur für iOS. Es wird weiterhin nur eine Option von Cisco AnyConnect für Android-, Android for Work- und macOS-Plattformen geben.
+
+#### <a name="jamf-enrolled-macos-devices-can-now-register-with-intune----2370684---"></a>Jamf-registrierte macOS-Geräte können jetzt bei Intune registriert werden <!-- 2370684 -->
+
+Die Versionen 1.3 und 1.4 des macOS-Unternehmensportals konnten nicht erfolgreich Jamf-Geräte bei Intune registrieren. Version 1.4.2 des macOS-Portals behebt dieses Problem.
+
 
 ## <a name="week-of-april-9-2018"></a>Woche vom 9. April 2018
 
@@ -140,8 +164,6 @@ Dies ist eine optionale Spalte im Blatt „Geräte“. Sie ist nicht standardmä
 #### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837---"></a>iOS-Geräte werden alle 15 Minuten zur Eingabe einer PIN aufgefordert <!--1550837 -->
 Nachdem einem iOS-Gerät eine Konformitäts- oder Konfigurationsrichtlinie hinzugefügt wurde, werden Benutzer alle 15 Minuten dazu aufgefordert, eine PIN festzulegen. Diese Aufforderung erhalten Benutzer regelmäßig, bis sie eine PIN festlegen.
 
-
-
 #### <a name="schedule-your-automatic-updates---1805514---"></a>Planen von automatischen Updates <!--1805514 -->
 Mit Intune können Sie die Installation von automatischen Updates mithilfe von [Einstellungen für Windows-Updateringe](windows-update-for-business-configure.md) steuern. Seit diesem Update können Sie sich wiederholende Updates planen, einschließlich der Woche, dem Tag und der Uhrzeit.
 
@@ -179,6 +201,10 @@ Nachdem Sie die Firewall-Einstellung aktivieren, können Sie die Firewall mithil
 - Zulassen oder Blockieren von bestimmten Apps
 
    Sie können den Empfang von eingehenden Verbindungen für bestimmte Apps zulassen oder blockieren. Sie können auch den geschützten Modus aktivieren, um zu verhindern, dass der Computer auf Suchanforderungen reagiert.
+
+####  <a name="detailed-error-codes-and-messages----1376342---"></a>Detaillierte Fehlercodes und Meldungen <!-- 1376342 -->
+
+In Ihrer Gerätekonfiguration können jetzt ausführlichere Fehlercodes und Fehlermeldungen angezeigt werden. Diese verbesserte Berichterstellung zeigt die Einstellungen, den Status dieser Einstellungen und Details zur Problembehandlung an.
 
 ##### <a name="more-information"></a>Weitere Informationen
 
@@ -935,12 +961,6 @@ Die erste Version des Intune Data Warehouse-Datenmodells enthielt lediglich aktu
 
 
 ## <a name="notices"></a>Benachrichtigungen
-
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
-
-Sie müssen sich nicht auf diese Änderung vorbereiten, da es sich um geringfügige Workflowupdates der Benutzeroberfläche handelt.
-Weitere Informationen zu Microsofts DSGVO-Kompatibilität finden Sie im Trust Center, auf das über den Link für zusätzliche Informationen zugegriffen werden kann.
 
 ### <a name="plan-for-change-new-windows-10-setting-for-kiosk-configuration-in-intune----1560072---"></a>Planen der Änderung: Neue Windows 10-Einstellung für die Kioskkonfiguration in Intune <!-- 1560072 -->
 Es wurde geändert, wie und wo Sie Desktops von Windows 10-Version 1709 und höher (RS3 und höher) im Intune-Azure-Portal konfigurieren.
