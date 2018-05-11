@@ -173,7 +173,11 @@
             - name: Bildschirm der Statusregistrierung
               href: windows-enrollment-status.md
         - name: Einrichten der Android-Registrierung
-          href: android-enroll.md
+          items:
+            - name: Einrichten der Android-Registrierung
+              href: android-enroll.md
+            - name: Registrierung mobiler Geräte für Samsung Knox
+              href: android-samsung-knox-mobile-enroll.md
         - name: Einrichten der iOS-Registrierung
           href: ios-enroll.md
           items:
@@ -462,6 +466,8 @@
           href: conditional-access-intune-common-ways-use.md
         - name: Installieren des Connectors für Exchange lokal
           href: exchange-connector-install.md
+        - name: Installieren des Exchange-Connectors
+          href: exchange-service-connector-configure.md
         - name: Erstellen und Zuweisen der Richtlinie für bedingten Zugriff
           href: conditional-access-exchange-create.md
         - name: Erneutes Zuweisen von Richtlinien für bedingten Zugriff über das klassische Intune-Portal
