@@ -15,39 +15,40 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01b7972a6a4dbb641f4c656190324d8572f9010c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0408ce3a4c2d4224780b4b23b0fb1b7d690471fe
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
-# <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Überwachen von App-Informationen und -Zuweisungen mit Microsoft Intune
+# <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Überwachen von App-Informationen und -Zuweisungen mit Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune bietet eine Reihe von Möglichkeiten, mit denen Sie die Eigenschaften von verwalteten Apps sowie deren Zuweisungsstatus überwachen können.
+Intune bietet eine Reihe von Möglichkeiten, mit denen Sie die Eigenschaften von Apps, die Sie verwalten, überwachen sowie den App-Zuweisungsstatus verwalten können.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie **Mobile Apps** und anschließend in der Gruppe **Verwalten** die Option **Apps** aus.
-5. Wählen Sie in der Liste der Apps eine App aus, die Sie überwachen möchten. Daraufhin wird das App-Blatt mit einer Übersicht des Gerätestatus und des Benutzerstatus angezeigt.
+3. Wählen Sie im Menü **Intune** die Option **Mobile Apps** aus.
+4. Wählen Sie im Abschnitt **Verwalten** des Menüs **Apps** aus.
+5. Wählen Sie in der Liste der Apps eine zu überwachende App aus. Daraufhin wird der App-Bereich mit einer Übersicht des Gerätestatus und des Benutzerstatus angezeigt.
 
-## <a name="app-overview-blade"></a>Übersicht über das Blatt „App“
+## <a name="app-overview-pane"></a>App-Übersichtsbereich
 
-Auf dem Blatt für die spezifische App können Sie sich Details zum Status einer App in Ihrer Umgebung ansehen.
+Im App-Bereich können Sie sich Details zum Status einer App in Ihrer Umgebung ansehen.
 
 ### <a name="essentials"></a>Essentials
 Der Abschnitt **Zusammenfassung** enthält die folgenden Informationen zur App:
 
  | **App-Details**            | **Beschreibung**                                                      |
 |------------------------|------------------------------------------------------------------|
-| **Herausgeber**          | Herausgeber der App                                            |
-| **Betriebssystem**   | Das Betriebssystem der App (Windows, iOS, Android usw.) |
+| **Herausgeber**          | Der Herausgeber der App.                                            |
+| **Betriebssystem**   | Das Betriebssystem der App (Windows, iOS, Android usw.). |
 | **Erstellt**             | Das Datum und die Uhrzeit, als diese Version erstellt wurde                         |
-| **Zugewiesen**           | **Nein** oder **Ja**, wenn die App zugewiesen wurde.                  |
+| **Zugewiesen**           | Ob die App zugewiesen wurde (**Ja** oder **Nein**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>Diagramme zum Geräte- und Benutzerstatus
-Das Diagramm zeigt die Zahl für die folgenden Status an:
+Das Diagramm zeigt die Zahl der Apps für die folgenden Status an:
 
 | **Gerätestatus**       | **Beschreibung**                                       |
 |-----------------------|-------------------------------------------------------|
@@ -59,30 +60,30 @@ Das Diagramm zeigt die Zahl für die folgenden Status an:
 
 ### <a name="device-install-status"></a>Geräteinstallationsstatus
 
-Eine Liste des Gerätestatus wird angezeigt, wenn Sie im Abschnitt **Überwachen** die Option **Geräteinstallationsstatus** auswählen. Die Tabelle mit den Details enthält die folgenden Spalten:
+Eine Liste des Gerätestatus wird angezeigt, wenn Sie im Abschnitt **Überwachen** des Menüs die Option **Geräteinstallationsstatus** auswählen. Die Tabelle mit den Details enthält die folgenden Spalten:
 
 | **Gerätespalte**      | **Beschreibung**                                                                                                                                                                                                                                            |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Gerätename**      | Der Name des Geräts auf Plattformen, die das Benennen von Geräten ermöglichen. Auf anderen Plattformen wird von Intune ein Name anhand anderer Eigenschaften erstellt. Dieses Attribut kann nicht für alle Geräte zur Verfügung stehen.                                                                       |
+| **Gerätename**      | Der Name des Geräts auf Plattformen, die das Benennen von Geräten ermöglichen. Auf anderen Plattformen wird von Intune einen Namen aus anderen Eigenschaften erstellt. Dieses Attribut ist nicht für ein anderes Gerät verfügbar.                                                                       |
 | **Benutzername**        | Der Name des Benutzers.                                                                                                                                                                                                                                      |
-| **Plattform**         | Das Betriebssystem des Geräts (Windows, iOS, Android usw.)                                                                                                                                                                                           |
-| **Version**          | Die Versionsnummer der App. Für branchenspezifische Apps wird die vollständige Versionsnummer der App angezeigt. Die vollständige Versionsnummer gibt ein bestimmtes Release der App an. Die Nummer wird als _Version_(_Build_) angezeigt. Beispielsweise 2.2(2.2.17560800). |
+| **Plattform**         | Das Betriebssystem des Geräts (Windows, iOS, Android usw.).                                                                                                                                                                                           |
+| **Version**          | Die Versionsnummer der App. Für branchenspezifische Apps wird die vollständige Versionsnummer der App angezeigt. Die vollständige Versionsnummer identifiziert ein bestimmtes Release der App. Die Nummer wird als _Version_(_Build_) angezeigt. Beispielsweise 2.2(2.2.17560800). |
 | **Status**           | Der Status der App.                                                                                                                                                                                                                                     |
-| **Statusdetails**   | Details zum Status.                                                                                                                                                                                                                                     |
-| **Letztes Einchecken**    | Datum der letzten Synchronisierung mit Intune des Geräts.                                                                                                                                                                                                                  |
+| **Statusdetails**   | Die Details des Status.                                                                                                                                                                                                                                     |
+| **Letztes Einchecken**    | Das Datum der letzten Synchronisierung des Geräts mit Intune.                                                                                                                                                                                                                  |
 
 
 ### <a name="user-install-status"></a>Benutzerinstallationsstatus
 
-Eine Liste des Benutzerstatus wird angezeigt, wenn Sie im Abschnitt **Überwachen** die Option **Benutzerinstallationsstatus** auswählen. Die Tabelle mit den Details enthält die folgenden Spalten:
+Eine Liste des Benutzerstatus wird angezeigt, wenn Sie im Abschnitt **Überwachen** des Menüs die Option **Benutzerinstallationsstatus** auswählen. Die Tabelle mit den Details enthält die folgenden Spalten:
 
 | **Benutzerspalte**     | **Beschreibung**                           |
 |---------------------|-------------------------------------------|
-| **Name**            | Der Name des Benutzers in Azure AD.         |
+| **Name**            | Der Name des Benutzers in Azure Active Directory.         |
 | **Benutzername**       | Der eindeutige Name des Benutzers.              |
-| **Installationen**   | Anzahl der installierten Apps, die vom Benutzer verwendet werden. |
-| **Fehler**        | Anzahl der nicht erfolgreichen Installationen des Benutzers.     |
-| **Nicht installiert**   | Anzahl der nicht vom Benutzer installierten Apps. |
+| **Installationen**   | Die Anzahl der vom Benutzer installierten Apps. |
+| **Fehler**        | Die Anzahl der erfolglosen App-Installationsversuche des Benutzers.     |
+| **Nicht installiert**   | Die Anzahl der nicht vom Benutzer installierten Apps. |
 
 
 ## <a name="next-steps"></a>Nächste Schritte

@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da8bb19db8c2da2d5854c3f991ccce4d124d594c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 735b3323527487e231d190ffd45e9083c4f524a2
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Suchen nach verlorenen oder gestohlenen iOS-Geräten mit Intune
 
@@ -46,6 +46,15 @@ Dieses Feature wird für die folgenden Betriebssysteme nicht unterstützt:
 
 >[!NOTE]
 >Aus Datenschutzgründen können Sie nur begrenzt in die Karte hineinzoomen.
+
+## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>Aktivieren der Akustikwarnung des Modus für verlorene Geräte auf einem iOS-Gerät
+
+Wenn eine Person ihr unter iOS 9.3 oder höher verwendetes Gerät verloren hat, können Sie das Gerät remote auslösen, um eine Akustikwarnung auszugeben, damit der Benutzer es finden kann. Das Gerät muss sich im [Modus für verlorene Geräte](device-lost-mode.md) befinden.
+
+Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Option **Geräte** > **Alle Geräte**, dann ein iOS-Gerät und anschließend **Übersicht** > **Weitere** > **Klang für den Modus für verlorene Geräte wiedergeben (nur überwachen)** aus.
+
+Der Sound wird so lange wiedergegeben, bis der Benutzer den Sound auf dem Gerät deaktiviert oder der Modus für verlorene Geräte für das Gerät beendet wird.
+
 
 ## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>Sicherheits- und Datenschutzinformationen im Zusammenhang mit dem Modus für verlorene Geräte und Aktionen zum Suchen von Geräten
 - Vor der Aktivierung dieser Aktion werden keinerlei Informationen zum Standort des Geräts an Intune gesendet.

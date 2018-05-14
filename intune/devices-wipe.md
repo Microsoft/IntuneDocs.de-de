@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 228198276643f1eb8dfcb0392e4902a7f56875c9
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Entfernen von Geräte mithilfe der Zurücksetzung auf Werkseinstellungen oder dem Entfernen von Unternehmensdaten
 
@@ -58,7 +58,9 @@ Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minute
 
 ## <a name="remove-company-data"></a>Entfernen von Unternehmensdaten
 
-Die Aktion **Unternehmensdaten entfernen** entfernt die Daten aus verwalteten Apps (falls zutreffend), Einstellungen und E-Mail-Profilen, die mithilfe von Intune zugewiesen wurden. Bei der Aktion **Unternehmensdaten entfernen** bleiben die persönlichen Daten des Benutzers auf dem Gerät erhalten. Das Gerät wird aus der Intune-Verwaltung entfernt. 
+Die Aktion **Unternehmensdaten entfernen** entfernt die Daten aus verwalteten Apps (falls zutreffend), Einstellungen und E-Mail-Profilen, die mithilfe von Intune zugewiesen wurden. Das Gerät wird aus der Intune-Verwaltung entfernt. Dies passiert, wenn das Gerät sich das nächste Mal eincheckt und die Remoteaktion **Unternehmensdaten entfernen** empfängt.
+
+Bei der Aktion **Unternehmensdaten entfernen** bleiben die persönlichen Daten des Benutzers auf dem Gerät erhalten.  
 
 Die folgende Tabelle beschreibt, welche Daten entfernt werden und welche Auswirkung die Aktion **Unternehmensdaten entfernen** auf die Daten hat, die nach dem Entfernen der Unternehmensdaten auf dem Gerät verbleiben.
 
@@ -123,13 +125,19 @@ Beim Entfernen von Unternehmensdaten von Android for Work-Geräten entfernt alle
 
 ### <a name="remove-company-data"></a>Entfernen von Unternehmensdaten
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Klicken Sie im Bereich **Intune** auf die Option **Alle Geräte**.
-4. Wählen Sie den Namen des Geräts aus, von dem Sie die Unternehmensdaten entfernen möchten.
-5. Klicken Sie im Bereich, der den Gerätenamen anzeigt, auf **Unternehmensdaten entfernen**. Klicken Sie zum Bestätigen auf **Ja**.
+1. Melden Sie sich bei [Intune im Azure-Portal](https://aka.ms/intuneportal) an.
+2. Klicken Sie im Bereich **Intune** auf die Option **Alle Geräte**.
+3. Wählen Sie den Namen des Geräts aus, von dem Sie die Unternehmensdaten entfernen möchten.
+4. Klicken Sie im Bereich, der den Gerätenamen anzeigt, auf **Unternehmensdaten entfernen**. Klicken Sie zum Bestätigen auf **Ja**.
 
 Wenn das Gerät eingeschaltet und verbunden ist, dauert es weniger als 15 Minuten, bis die Aktion **Unternehmensdaten entfernen** an alle Gerätetypen weitergegeben wurde.
+
+## <a name="delete-devices-from-the-intune-portal"></a>Löschen von Geräten aus der Intune-Portal
+
+Wenn Sie Geräte aus dem Intune-Portal entfernen möchten, können Sie sie aus dem bestimmten Gerätebereich löschen. Wenn sich das Gerät das nächste Mal eincheckt, werden alle Unternehmensdaten davon entfernt.
+
+1. Melden Sie sich bei [Intune im Azure-Portal](https://aka.ms/intuneportal) an.
+2. Wählen Sie **Geräte** > **Alle Geräte** aus, wählen Sie die Geräte, aus die Sie löschen möchten, und wählen Sie **Löschen** aus.
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Löschen von Geräten über das Azure Active Directory-Portal
 

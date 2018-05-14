@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/07/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,30 +17,34 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa294e5df63106f949da94aec766c04839e0171f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 52431d900ee9abe71458b8b22d8a0946f22ce583
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Senden von Fehlern an die für Ihr verwaltetes macOS-Gerät zuständigen Personen
 
-Wenn Sie auf Ihrem macOS-Gerät bei der Verwendung der Unternehmensportal-App eine Fehlermeldung erhalten, können Sie Informationen an den Support Ihres Unternehmens senden, um bei der Behandlung des Problems zu unterstützen.
+In einigen Fällen treten unerklärliche Fehler in der Unternehmensportal-App auf. In diesen Fällen können Sie Details zum Fehler per E-Mail an einen Supportmitarbeiter senden. Dadurch wird der erforderliche Kontext bereitgestellt, um das Problem zu beheben.
 
 ## <a name="send-errors-to-your-company-support"></a>Senden von Fehlern an den Support Ihres Unternehmens
 
- Sie können Fehlerinformationen auf unterschiedliche Weise an den Support Ihres Unternehmens senden:
+So senden Sie Details zu einem Fehler in der Unternehmensportal-App:
 
--   Klicken Sie in Fehlermeldungen auf **Melden**.
+-   Klicken Sie in der Fehlermeldung, die Sie empfangen, auf **Bericht**.
 
--   Klicken Sie im Menü **Hilfe** der Unternehmensportal-App auf **Diagnosebericht speichern**. Wählen Sie einen Speicherort zum Speichern der Datei aus. Sie können diese Datei je nach den Vorgaben Ihres Unternehmens per E-Mail oder per Upload an den Support Ihres Unternehmens senden.
+-   Klicken Sie auf das Menü **Hilfe** und dann auf **Diagnosebericht speichern**. Wählen Sie einen Speicherort zum Speichern der Datei aus. Senden Sie diese Datei dann per E-Mail an den Supportmitarbeiter Ihres Unternehmens, oder laden Sie sie hoch.
 
-- Wenn Ihre E-Mail-App bereits konfiguriert ist, können Sie den Diagnosebericht auch über **Hilfe** > **Diagnosebericht senden** versenden.
+-   Wenn Ihre E-Mail-App konfiguriert ist, können Sie den Diagnosebericht über **Hilfe** > **Diagnosebericht senden** versenden. Nachdem die Protokolle hochgeladen wurden, klicken Sie auf **E-Mail-Details**.
 
 ## <a name="send-errors-to-the-company-portal-developers-for-macos-devices"></a>Senden von Fehlermeldungen an Unternehmensportal-Entwickler für macOS-Geräte
 
-Die Unternehmensportal-App kann unter Umständen gelegentlich unerwartet reagieren. Für die App-Entwickler ist es hilfreich, wenn sie über solche Probleme informiert werden, da wir auf Grundlage dieser Information die App verbessern und unerwartetes Verhalten verhindern können. Die Informationen werden auf Ihrem Gerät in einem speziellen Dokument (einem so genannten _Diagnosebericht_) gespeichert.
+Manchmal wird die Unternehmensportal-App unter Umständen unerwartet geschlossen. App-Entwickler möchten von Ihnen erfahren, wann unerwartetes Verhalten auftritt. Sie verwenden die Fehlerdetails, um die Ursache zu ermitteln und zukünftiges Auftreten zu verhindern. Diese Art von Fehlern werden auf Ihrem Gerät in einem speziellen Dokument (einem sogenannten _Diagnoseprotokoll_) gespeichert. Das Team des Unternehmensportals benötigt Protokolle, die das Unternehmensportal betreffen, um dieses Problem zu untersuchen.
 
-Wenn Sie Diagnoseberichte an das Microsoft-Team, das die Unternehmensportal-App entwickelt, senden müssen, müssen Sie einige Informationen zur Diagnose und Behandlung der Grundursache angeben. Verwenden Sie <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Press and hold, then paste your copied Company Portal app logs here.">diese E-Mail-Vorlage</a>, um Diagnoseberichte an Microsoft zu senden, nicht an das Supportteam Ihres Unternehmens.
+So senden Sie Protokolle an Microsoft:
+
+1.  Öffnen Sie die Unternehmensportal-App.
+2.  Klicken Sie auf das Menü **Hilfe** und dann auf **Diagnosebericht senden**.  Nachdem die Protokolle hochgeladen wurden, erhalten Sie eine Incident-ID. Kopieren und speichern Sie die ID.
+3.  Senden Sie unter Verwendung <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">dieser Vorlage</a> eine E-Mail an Microsoft.
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
