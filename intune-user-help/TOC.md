@@ -125,6 +125,7 @@
 #### [Registrieren Ihres Windows 10-Geräts mit der Option „Auf Geschäfts-, Schul- oder Unikonto zugreifen“](enroll-your-w10-device-access-work-or-school.md)
 #### [Registrieren Sie Ihr Windows 8.1- oder Windows RT 8.1-Gerät](enroll-your-w81-or-rt81-windows.md)
 #### [Registrierung eines Windows Phone 8.1-Geräts](enroll-your-wp81-windows.md)
+### [Installieren von Apps über die Unternehmensportal-App für Windows](install-apps-cpapp-windows.md)
 ### [Zurücksetzen Ihres Geräts](reset-erase-your-device-cpwebsite.md)
 ### [Verschlüsseln Ihres Geräts](encrypt-your-device-windows.md)
 ### [Festlegen oder Ändern des Kennworts](set-or-change-your-password-windows.md)

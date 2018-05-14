@@ -170,8 +170,6 @@
               href: windows-bulk-enroll.md
             - name: Windows AutoPilot Deployment-Programm
               href: enrollment-autopilot.md
-            - name: Bildschirm der Statusregistrierung
-              href: windows-enrollment-status.md
         - name: Einrichten der Android-Registrierung
           items:
             - name: Einrichten der Android-Registrierung
