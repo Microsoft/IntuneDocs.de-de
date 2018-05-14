@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb79a6c18ff8b6eec20f4ce8813d8dea188215e7
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für Windows-Geräte in Intune
 
@@ -121,23 +121,23 @@ Informationen zur Funktionsweise des HAS-Diensts finden Sie unter [Integritätsn
 
 ### <a name="device-properties"></a>Geräteeigenschaften
 
-- **Minimal erforderliches Betriebssystem**: Geben Sie die Zahl für major.minor.build.CU ein. Die build.CU-Nummer muss der Version entsprechen, die durch den Befehl `ver` oder `winver` zurückgegeben wird.
+- **Minimale Version des Betriebssystems**: Geben Sie die minimal zulässige Version im Zahlenformat „Hauptversion.Nebenversion.Build.CU“ ein. Die build.CU-Nummer muss der Version entsprechen, die durch den Befehl `ver` oder `winver` zurückgegeben wird.
 
   Wenn ein Gerät eine frühere Version als die angegebene Betriebssystemversion aufweist, wird es als nicht konform gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Die Endbenutzer können ein Upgrade des Geräts durchführen und anschließend auf die Unternehmensressourcen zugreifen.
 
-- **Maximal zulässige Betriebssystemversion**: Geben Sie die Zahl für major.minor.build.CU ein. Die build.CU-Nummer muss der Version entsprechen, die durch den Befehl `ver` oder `winver` zurückgegeben wird.
+- **Maximale Version des Betriebssystems**: Geben Sie die maximal zulässige Version im Zahlenformat „Hauptversion.Nebenversion.Build.CU“ ein. Die build.CU-Nummer muss der Version entsprechen, die durch den Befehl `ver` oder `winver` zurückgegeben wird.
 
   Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt, und der Benutzer wird gebeten, sich an den IT-Administrator zu wenden. Mit diesem Gerät kann solange nicht auf Unternehmensressourcen zugegriffen werden, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
 
-- **Minimal erforderliches Betriebssystem für mobile Geräte**: Geben Sie die Zahl für major.minor.build ein.
+- **Minimale Version des Betriebssystems für mobile Geräte**: Geben Sie die minimal zulässige Version im Zahlenformat „Hauptversion.Nebenversion.Build“ ein.
 
   Wenn ein Gerät eine frühere Version als die angegebene Betriebssystemversion aufweist, wird es als nicht konform gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Die Endbenutzer können ein Upgrade des Geräts durchführen und anschließend auf die Unternehmensressourcen zugreifen.
 
-- **Maximal erforderliches Betriebssystem für mobile Geräte**: Geben Sie die Zahl für major.minor.build ein.
+- **Maximale Version des Betriebssystems für mobile Geräte**: Geben Sie die maximal zulässige Version im Zahlenformat „Hauptversion.Nebenversion.Build“ ein.
 
   Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt, und der Benutzer wird gebeten, sich an den IT-Administrator zu wenden. Mit diesem Gerät kann solange nicht auf Unternehmensressourcen zugegriffen werden, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
 
-- **Gültige Betriebssystembuilds**: Geben Sie einen Bereich für die zulässigen Betriebssystemversionen ein, einschließlich eines Minimums und eines Maximums.
+- **Gültige Betriebssystembuilds**: Geben Sie einen Bereich für die zulässigen Betriebssystemversionen ein, einschließlich eines Minimums und eines Maximums. Sie können auch eine Dateiliste der durch Trennzeichen getrennten Werte (comma-separated values, CSV) der zulässigen Buildnummern des Betriebssystems **exportieren**.
 
 ### <a name="system-security-settings"></a>Einstellungen für die Systemsicherheit
 

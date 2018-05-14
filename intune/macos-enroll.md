@@ -15,11 +15,11 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e522708879818f644780904c42fe9e6fb19a402
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4f8cddb69ac85e45acde8a846df3b5413c3b75bf
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Registrieren von macOS-Geräten in Intune
 
@@ -70,3 +70,11 @@ Sie können virtuelle macOS-Computer mithilfe von Parallels Desktop oder VMware 
 Für Parallels Desktop müssen Sie den Hardwaretyp sowie die Seriennummer für die virtuellen Computer festlegen, damit Intune diese erkennen kann. Befolgen Sie die Anleitungen von Parallels zum [Festlegen des Hardwaretyps](http://kb.parallels.com/123594) sowie der [Seriennummer](http://kb.parallels.com/123455), um die nötigen Einstellungen für die Tests einzurichten. Es wird empfohlen, den Hardwaretyp des Geräts, auf dem die virtuellen Computer ausgeführt werden, mit dem Hardwaretyp der von Ihnen erstellten virtuellen Computer abzustimmen. Sie finden diesen Hardwaretyp im **Apple-Menü** unter **Über diesen Mac** > **Systembericht** > **Modell-Identifizierung**. 
 
 Für VMware Fusion müssen Sie die [VMX-Datei bearbeiten](https://kb.vmware.com/s/article/1014782), um das Hardwaremodell und die Seriennummer des virtuellen Computers festzulegen. Es wird empfohlen, den Hardwaretyp des Geräts, auf dem die virtuellen Computer ausgeführt werden, mit dem Hardwaretyp der von Ihnen erstellten virtuellen Computer abzustimmen. Sie finden diesen Hardwaretyp im **Apple-Menü** unter **Über diesen Mac** > **Systembericht** > **Modell-Identifizierung**. 
+
+## <a name="user-approved-enrollment"></a>Durch den Benutzer genehmigte Registrierung
+
+Die durch den Benutzer genehmigte MDM-Registrierung ist ein Typ der macOS-Registrierung, mit dem Sie bestimmte sicherheitsrelevante Einstellungen verwalten können. Weitere Informationen finden Sie in der [Supportdokumentation von Apple](https://support.apple.com/HT208019).
+
+Zur Genehmigung durch den Benutzer muss der Endbenutzer nach der Registrierung im macOS-Unternehmensportal die Genehmigung manuell mithilfe der Systemeinstellungen bereitstellen. Anweisungen hierzu finden Sie im macOS-Unternehmensportal für Benutzer von macOS 10.13.2 und höher.
+
+Um herauszufinden, ob ein Gerät durch den Benutzer genehmigt ist, besuchen Sie das Intune-Portal, und wählen Sie **Geräte** > **Alle Geräte**, das Gerät und dann **Hardware** aus. Aktivieren Sie das Feld **Genehmigt durch den Benutzer**.
