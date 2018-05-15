@@ -15,11 +15,11 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 889fb53fc215763b061f5165425df7b0b9960702
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e453cf1af0d065a367d636c3e6cc8e8ddd79cfda
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Installieren von SandBlast Mobile Protect auf Ihrem Android-Gerät
 
@@ -29,7 +29,7 @@ Wenn Sie Probleme mit der Installation haben, versuchen Sie es mit den Schritten
 
 **Gehen Sie wie folgt vor:**
 
-1. Ziehen Sie vom oberen Bildschirmrand nach unten, um die Benachrichtigungsleiste zu öffnen, und tippen Sie dann auf **Required application – Install Skycure from Play Store** (Erforderliche Anwendung – Skycure aus dem Play Store installieren). Dies finden Sie auch in der Unternehmensportal-App unter __Kompatibilitätsdetails__.
+1. Ziehen Sie vom oberen Bildschirmrand nach unten, um die Benachrichtigungsleiste zu öffnen, und tippen Sie dann auf **Required application – Install SandBlast Mobile Protect from Play Store** (Erforderliche Anwendung – SandBlast Mobile Protect aus dem Play Store installieren). Dies finden Sie auch in der Unternehmensportal-App unter __Kompatibilitätsdetails__.
 
 2. Sie werden im Play Store auf die Installationsseite von SandBlast Mobile Protect weitergeleitet. Installieren Sie SandBlast Mobile Protect und tippen Sie anschließend auf **ACCEPT** (Zustimmen), damit das Programm auf Ihr Gerät zugreifen kann.
 

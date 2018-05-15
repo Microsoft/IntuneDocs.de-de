@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Android Store-Apps in Microsoft Intune
+title: Hinzufügen von Android Store-Apps zu Microsoft Intune
 titleSuffix: ''
 description: Erfahren Sie mehr über das Hinzufügen von Android Store-Apps zu Microsoft Intune.
 keywords: ''
@@ -15,43 +15,45 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ece6edee891b147ad2124b987239da6af8e1bc8d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 685ddf806bff865930de70b2d1925fb9b463b173
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Hinzufügen von Android Store-Apps in Microsoft Intune
+# <a name="add-android-store-apps-to-microsoft-intune"></a>Hinzufügen von Android Store-Apps zu Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Bevor Sie einem Gerät oder einer Gruppe von Benutzern eine App zuweisen, müssen Sie diese zunächst zu Microsoft-Intune hinzufügen. Über die im Folgenden beschriebenen Schritte können Sie eine App aus dem Android-Store aus dem Azure-Portal zu Intune hinzufügen.
+Bevor Sie einem Gerät oder einer Gruppe von Benutzern eine App zuweisen, müssen Sie diese zunächst zu Microsoft-Intune hinzufügen. Mit den folgenden Schritten können Sie eine Android Store-App aus dem Azure-Portal zu Intune hinzufügen:
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Klicken Sie im Bereich **Intune** auf die Option **Mobile Apps**.
-4. Klicken Sie in der Workload **Mobile Apps** im Abschnitt **Verwalten** auf **Apps**.
-5. Wählen Sie über der Liste der Apps **Hinzufügen** aus.
-6. Wählen Sie im Bereich **App hinzufügen** aus den verfügbaren **Store-App**-Typen den Typ **Android** aus.
-7. Klicken Sie auf **Konfigurieren**, um folgende App-Informationen zu konfigurieren. Je nachdem, welche App ausgewählt wurde, wurden einige der Werte möglicherweise schon automatisch in diesem Bereich eingetragen:
-    - **Name:** Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle App-Namen eindeutig sind. Wenn ein App-Name zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
-    - **Beschreibung:** Geben Sie eine Beschreibung für die App ein. Diese Beschreibung wird den Benutzern im Unternehmensportal angezeigt.
+2. Klicken Sie auf **Alle Dienste** > **Intune**.  
+    Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+1. Klicken Sie im Bereich **Intune** auf die Option **Mobile Apps**.
+2. Wählen Sie im Arbeitsbereich **Mobile Apps** unter **Verwalten** die Option **Apps** aus.
+3. Wählen Sie **Hinzufügen** aus.
+4. Wählen Sie im Bereich **App hinzufügen** aus den verfügbaren **Store-App**-Typen den Typ **Android** aus.
+5. Wählen Sie zum Konfigurieren der App-Informationen die Option **Konfigurieren** aus, und geben Sie die folgenden Informationen an.  
+    Abhängig von der ausgewählten App wurden einige Werte möglicherweise automatisch ausgefüllt.
+    - **Name**: Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt werden soll. Stellen Sie sicher, dass der Name eindeutig ist. Bei doppelten App-Namen wird den Benutzern im Unternehmensportal nur ein Name angezeigt.
+    - **Beschreibung:** Geben Sie eine Beschreibung für die App ein. Die Beschreibung wird Benutzern im Unternehmensportal angezeigt.
     - **Herausgeber:** Geben Sie den Namen des Herausgebers der App ein.
-    - **App Store-URL:** Geben Sie die App Store-URL der App an, die Sie erstellen möchten.
-    - **Mindestens erforderliches Betriebssystem**: Wählen Sie aus der Liste die mindestens erforderliche Betriebssystemversion aus, auf der die App installiert werden kann. Wenn Sie die App einem Gerät mit einem älteren Betriebssystem zuweisen, wird sie nicht installiert.
-    - **Kategorie (optional):** Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Dadurch wird es für die Benutzer leichter, die App im Unternehmensportal zu finden.
-    - **Diese App als ausgewählte App im Unternehmensportal anzeigen:** Zeigen Sie die App auf der Hauptseite des Unternehmensportal hervorgehoben an, wenn Benutzer nach Apps suchen.
-    - **Informations-URL** (optional): Geben Sie eine URL zu einer Website ein, die Informationen über diese App enthält. Diese URL wird den Benutzern im Unternehmensportal angezeigt.
-    - **URL zu den Datenschutzbestimmungen** (optional): Geben Sie eine URL zu einer Website ein, die Datenschutzinformationen für diese App enthält. Diese URL wird den Benutzern im Unternehmensportal angezeigt.
-    - **Entwickler** (optional): Geben Sie optional den Namen des App-Entwicklers ein.
-    - **Besitzer** (optional): Geben Sie optional einen Namen für den Besitzer dieser App ein, z.B. **Personalabteilung**.
-    - **Anmerkungen** (optional): Geben Sie Anmerkungen ein, die dieser App zugewiesen werden sollen.
-    - **Logo** (optional): Laden Sie ein Symbol hoch, das der App zugeordnet wird. Dieses Symbol wird mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
-8. Klicken Sie auf **OK**, nachdem Sie die App-Informationen eingerichtet haben.
-9. Klicken Sie auf **Hinzufügen**, um die App hinzuzufügen.
+    - **App Store-URL**: Geben Sie die App Store-URL der App an, die Sie erstellen möchten.
+    - **Minimale Version des Betriebssystems**: Wählen Sie aus der Liste die minimal erforderliche Version des Betriebssystems aus, auf der die App installiert werden kann. Wenn Sie die App einem Gerät mit einem älteren Betriebssystem zuweisen, wird sie nicht installiert.
+    - **Kategorie**: Wählen Sie optional mindestens eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Dadurch ist es für Benutzer einfacher, die App im Unternehmensportal zu finden.
+    - **Display this as a featured app in the Company Portal** (Diese App als ausgewählte App im Unternehmensportal anzeigen): Diese Einstellung zeigt die App-Suite auf der Hauptseite des Unternehmensportals hervorgehoben an, wenn Benutzer nach Apps suchen.
+    - **Informations-URL:** Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
+    - **URL zu den Datenschutzbestimmungen:** Geben Sie optional eine URL zu einer Website ein, die Datenschutzinformationen für diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
+    - **Entwickler:** Geben Sie optional den Namen des App-Entwicklers ein.
+    - **Besitzer**: Geben Sie optional einen Namen für den Besitzer dieser App ein (z.B. *Personalabteilung*).
+    - **Hinweise**: Geben Sie optional Hinweise zu dieser App ein.
+    - **Logo**: Laden Sie optional ein Symbol hoch, das der App zugeordnet wird. Dieses Symbol wird mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
+1. Wählen Sie **OK** aus.
+2. Wählen Sie **Hinzufügen** aus.
 
 Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie den ausgewählten Gruppen zuweisen können. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Zuweisen von Apps zu Gruppen](apps-deploy.md)
+- [Das Zuweisen von Apps zu Gruppen](apps-deploy.md)

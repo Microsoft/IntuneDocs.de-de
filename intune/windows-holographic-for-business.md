@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/5/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d8f5051d9663273c6515717b7930145ff8a964
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 18f86580fc4c80fade7aeaa9678e9d8edac9a53e
+ms.sourcegitcommit: b57be56524ddb5026fab94f7638dc516ed118325
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="customize-devices-running-windows-holographic-with-intune"></a>Anpassen von Geräten, die Windows Holographic ausführen, mithilfe von Intune
 
@@ -25,6 +25,16 @@ Microsoft Intune unterstützt Geräte, die Windows Holographic for Business ausf
 Sie müssen ein Editionsupgradeprofil erstellen, um Geräte mithilfe von Microsoft Intune zu verwalten, auf denen Windows Holographic ausgeführt wird. Dieses Upgradeprofil führt ein Upgrade der Geräte von Windows Holographic zu Windows Holographic for Business durch. Für Microsoft HoloLens können Sie die Commercial Suite erwerben, um die erforderliche Lizenz für das Upgrade zu erhalten. Weitere Informationen erhalten Sie unter [Aktualisieren von Geräten, die Windows Holographic ausführen, auf Windows Holographic for Business](holographic-upgrade.md).
 
 Sie können die Aufgaben in diesem Artikel verwenden, wenn Sie Unterstützung bei der Verwaltung und Anpassung Ihrer Geräte benötigen, auf denen Windows Holographic for Business ausgeführt wird. Sie können beispielsweise Softwareupdates verwalten, VPN-Einstellungen konfigurieren und vieles mehr.
+
+## <a name="azure-active-directory"></a>Azure Active Directory
+
+Azure Active Directory (AD) kann Ihnen bei der Verwaltung und Steuerung Ihrer Geräte, die Windows Holographic for Business ausführen, helfen. Mit Intune und Azure AD haben Sie folgende Möglichkeiten: 
+
+- **[Einrichten von mit Azure Active Directory gekoppelten Geräten:](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)** In Azure Active Directory (AD) können Sie Ihre geschäftlichen Windows 10-Geräte, einschließlich Geräte mit Windows Holographic for Business, hinzufügen. Mit diesem Feature kann Azure AD das Gerät kontrollieren. Es hilft dabei, sicherzustellen, dass Ihre Benutzer auf Ihre Unternehmensressourcen über Geräte aus zugreifen, die Ihren Sicherheits- und Konformitätsstandards entsprechen.
+
+  In der [Einführung in die Geräteverwaltung in Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction) erhalten Sie weitere Details.
+
+- **[Massenregistrierung für Windows-Geräte:](windows-bulk-enroll.md)** Sie können eine große Anzahl von neuen Windows-Geräten in Azure Active Directory (AD) und Intune einbinden. Dieses Feature wird „Massenregistrierung“ genannt und verwendet Bereitstellungspakete. Diese Pakete verknüpfen die Geräte, die Windows Holographic for Business ausführen, mit Ihrem Azure AD-Mandanten und registriert beide in Intune.
 
 ## <a name="company-portal"></a>Unternehmensportal
 **[Konfigurieren der Unternehmensportal-App](company-portal-app.md)**
@@ -56,6 +66,18 @@ Microsoft Intune kann universelle Windows-Apps für Microsoft HoloLens-Geräte b
 > [!NOTE]
 > HoloLens-Geräte, die unter Windows 10 Holographic for Business 1607 ausgeführt werden, unterstützen keine online lizenzierten Apps aus dem Microsoft Store für Unternehmen. Weitere Informationen finden Sie unter [Installieren von Apps für HoloLens](https://docs.microsoft.com/en-us/hololens/hololens-install-apps).
 
+## <a name="device-actions"></a>Geräteaktionen
+Intune verfügt über einige integrierte Aktionen, mit denen IT-Administratoren unterschiedliche Aufgaben lokal auf dem Gerät oder auch remote über Intune im Azure-Portal ausführen können. Für private Geräte, die in Intune registriert sind, können die Benutzer über das Intune-Unternehmensportal einen Remotebefehl erteilen.
+
+Die folgenden Aktionen sind nützlich für Geräte unter Windows Holographic for Business: 
+
+- **[Zurücksetzen auf Werkseinstellungen:](devices-wipe.md#factory-reset)** Die Aktion **Zurücksetzen auf Werkseinstellungen** entfernt das Gerät aus Intune und setzt das Geräte zurück auf die Standardwerkseinstellungen. Verwenden Sie diese Aktion, bevor Sie das Gerät einem neuen Benutzer geben oder wenn das Gerät verloren gegangen ist oder gestohlen wurde.
+
+- **[Entfernen von Unternehmensdaten:](devices-wipe.md#remove-company-data)** Die Aktion **Entfernen von Unternehmensdaten** entfernt das Gerät aus Intune und entfernt verwaltete App-Daten, Einstellungen und E-Mail-Profile, die von Intune zugewiesen sind. Die persönlichen Daten des Benutzers verbleiben auf dem Gerät.
+
+- **[Synchronisieren von Geräten, um die neuesten Richtlinien und Aktionen zu erhalten:](device-sync.md)** Mit der Aktion **Synchronisieren** wird das Gerät gezwungen, sofort bei Intune einzuchecken. Checkt ein Gerät ein, empfängt es sofort alle ihm zugewiesenen ausstehenden Aktionen oder Richtlinien, die zugewiesen sind. Mit diesem Feature können Sie zugewiesene Richtlinien überprüfen und Probleme beheben, ohne den nächsten geplanten Check-In abwarten zu müssen.
+
+**[Was ist die Microsoft Intune Geräteverwaltung?](device-management.md)** Dies ist eine gute Ressource, um weiter Informationen zur Verwaltung von Geräten über das Azure-Portal zu erhalten. 
 
 ## <a name="device-categories-and-groups"></a>Gerätekategorien und Gruppen
 **[Kategorisieren von Geräten in Gruppen](device-group-mapping.md)**

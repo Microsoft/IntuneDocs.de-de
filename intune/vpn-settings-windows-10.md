@@ -13,11 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: b6371da954aa913e1378c065b203fa197f3fc767
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: d41ec494672340a9f5751e6fc40edf1a7b06bb40
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Windows 10-VPN-Einstellungen in Intune
 
@@ -99,17 +99,10 @@ Weitere Informationen zum Erstellen von benutzerdefinierten EAP-XML finden Sie u
 
 ## <a name="apps-and-traffic-rules"></a>Regeln für Apps und Datenverkehr
 
-<<<<<<< HEAD
 - **Diesem VPN WIP oder Apps zuordnen**: Aktivieren Sie diese Einstellung, wenn nur die angegebenen Apps die VPN-Verbindung verwenden sollen. Folgende Optionen sind verfügbar:
 
   - **Dieser Verbindung WIP zuordnen**: Geben Sie eine **WIP-Domäne für diese Verbindung** ein.
   - **Apps dieser Verbindung zuordnen**: Sie können die **VPN-Verbindung auf diese Apps beschränken** und dann **Zugeordnete Apps** hinzufügen. Die von Ihnen eingegebenen Apps verwenden automatisch die VPN-Verbindung. Der Typ der App bestimmt den App-Bezeichner. Geben Sie für eine universelle App den Paketfamiliennamen ein. Geben Sie für eine Desktop-App den Dateipfad der App ein.
-=======
-**VPN-Verbindung auf diese Apps beschränken**: Aktivieren Sie diese Einstellung, wenn nur die angegebenen Apps die VPN-Verbindung verwenden sollen.
-
-**Zugeordnete Apps:** Geben Sie eine Liste von Apps ein, die automatisch die VPN-Verbindung verwenden. Der Typ der App bestimmt den App-Bezeichner. Geben Sie für eine universelle App den Paketfamiliennamen ein. Geben Sie für eine Desktop-App den Dateipfad der App ein.
->>>>>>> b2f641d045b7649f641fb98e07accc745e697d84
-
   >[!IMPORTANT]
   >Es wird empfohlen, alle App-Listen schützen, die für Pro-App-VPNs erstellt sind. Wenn ein nicht autorisierter Benutzer die Liste ändert, und Sie sie in die Liste der Apps für Pro-App-VPNs importieren, autorisieren Sie damit möglicherweise den VPN-Zugriff auf Apps, auf die nicht zugegriffen werden soll. Eine Möglichkeit, App-Listen zu sichern, ist die Verwendung einer Zugriffssteuerungsliste (Access Control List, ACL).
 

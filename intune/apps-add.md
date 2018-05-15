@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88b8d9aa8e65e0238ab634b23836ee9c02234dd3
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8c54dd0180788a83ee01607e0e6d895fdb9a85ab
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune
 
@@ -155,6 +155,16 @@ Wenn Sie eine App in Intune hinzufügen, können Sie die gewünschte Kategorie a
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Von Intune automatisch hinzugefügte Apps
 
 Zuvor enthielt Intune eine Reihe integrierter Apps, die Sie rasch zuweisen konnten. Basierend auf Intune-Kundenfeedback haben wir diese Liste entfernt, und die integrierten Apps werden nicht mehr angezeigt. Wenn Sie jedoch schon integrierte Apps zugewiesen haben, werden sie weiterhin in der App-Liste angezeigt. Sie können diese Apps weiter nach Bedarf zuweisen.
+
+## <a name="installing-updating-or-removing-required-apps"></a>Installieren, Aktualisieren oder Entfernen von erforderlichen Apps
+
+Eine erforderliche App wird durch Intune innerhalb von 24 Stunden neu installiert, aktualisiert oder entfernt. Der siebentägige Auswertungszyklus wird dabei von Intune ignoriert.
+
+Die automatische Neuinstallation, Aktualisierung oder Entfernung einer erforderlichen App wird von Intune unter Berücksichtigung der folgenden Bedingungen durchgeführt:
+- Wenn ein Endbenutzer eine App deinstalliert, deren Installation Sie auf seinem Gerät als erforderlich festgelegt haben, installiert Intune die App erneut, sobald der im Zeitplan festgelegte Zyklus beendet ist.
+- Wenn die Installation der erforderlichen App fehlschlägt oder die App nicht auf dem Gerät vorhanden ist, überprüft Intune die Kompatibilität und installiert die App erneut, sobald der im Zeitplan festgelegte Zyklus beendet ist.  
+- Ein Administrator machte eine App für eine Benutzergruppe verfügbar, und ein Endbenutzer installiert die App über das Unternehmensportal auf dem Gerät. Später aktualisiert der Administrator die App von Version 1 auf Version 2. Intune aktualisiert dann die App, sobald der im Zeitplan festgelegte Zyklus beendet ist. Voraussetzung dafür ist, dass die vorherige Version der App immer noch auf dem Gerät vorhanden ist.
+- Wenn der Administrator eine Lösung für eine Deinstallationsabsicht bereitstellt, die App auf dem Gerät vorhanden ist und ein Fehler bei der Deinstallation auftritt, überprüft Intune die Kompatibilität und deinstalliert die App, sobald der im Zeitplan festgelegte Zyklus beendet ist.   
 
 ## <a name="next-steps"></a>Nächste Schritte
 

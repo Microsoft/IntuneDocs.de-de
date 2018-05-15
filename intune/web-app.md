@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen von Web-Apps in Microsoft Intune
+title: Hinzufügen von Web-Apps zu Microsoft Intune
 titleSuffix: ''
 description: Erfahren Sie mehr über das Hinzufügen von Web-Apps in Microsoft Intune.
 keywords: ''
@@ -15,13 +15,13 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45253e061039198aee4aa49b2bf879a1b9929e35
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 58d04de3c4f77a5599bc5a13f2fe1e382654bd73
+ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="how-to-add-web-apps-to-microsoft-intune"></a>Hinzufügen von Web-Apps in Microsoft Intune
+# <a name="add-web-apps-to-microsoft-intune"></a>Hinzufügen von Web-Apps zu Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -32,30 +32,32 @@ Bevor Sie eine App verwalten und Benutzern zuweisen können, müssen Sie diese i
 > [!Note]
 > Web-Apps werden nicht für Android for Work- und macOS-Geräte unterstützt.
 
-Führen Sie die folgenden Schritte durch, um eine App als Verknüpfung zu einer App im Internet zu Intune hinzuzufügen:
+## <a name="add-a-web-app-to-intune"></a>Hinzufügen einer Web-App zu Intune
+Führen Sie die folgenden Schritte aus, um eine App als Verknüpfung zu einer App im Internet zu Intune hinzuzufügen:
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Klicken Sie im Bereich **Microsoft Intune** auf die Option **Mobile Apps**.
-4. Klicken Sie im Bereich **Mobile Apps** auf die Option **Apps**.
-5. Wählen Sie oberhalb der App-Liste **Hinzufügen** aus. Der Bereich **App hinzufügen** wird angezeigt.
-6. Wählen Sie im Bereich **App hinzufügen** den Typ **Weblink** aus der Dropdownliste **App-Typ** aus.
-7. Klicken Sie im Bereich **App-Informationen** auf die Option **Konfigurieren**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**.  
+    Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+3. Klicken Sie im Bereich **Intune** auf die Option **Mobile Apps**.
+4. Wählen Sie im Arbeitsbereich **Mobile Apps** unter **Verwalten** die Option **Apps** aus.
+5. Klicken Sie im Bereich **Apps** auf **Hinzufügen**.
+6. Wählen Sie im Bereich **App hinzufügen** aus der Dropdownliste **App-Typ** den Typ **Weblink** aus.
+7. Klicken Sie auf **Konfigurieren**.
 8. Fügen Sie im Bereich **App-Informationen** die folgenden Informationen hinzu:
-    - **Name**: Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt wird.
-    - **Beschreibung:** Geben Sie eine Beschreibung für die App ein. Diese Beschreibung wird den Endbenutzern im Unternehmensportal angezeigt.
-    - **Herausgeber:** Geben Sie den Namen des Herausgebers dieser App ein.
-    - **App-URL:** Geben Sie die URL der Website an, auf der die zuzuweisende App gehostet wird.
-    - **Kategorie (optional):** Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Durch diese Auswahl ist es für Benutzer einfacher, die App im Unternehmensportal zu finden.
-    - **Diese App als ausgewählte App im Unternehmensportal anzeigen:** Zeigen Sie die App auf der Hauptseite des Unternehmensportal hervorgehoben an, wenn Benutzer nach Apps suchen.
-    - **Managed Browser zum Öffnen dieses Links anfordern:** Wenn Sie Benutzern einen Link zu einer Website oder Web-App zuweisen, können sie diesen in Intune Managed Browser öffnen. Dieser Browser muss auf ihrem Gerät installiert sein.
-    - **Logo**: Laden Sie ein Logo für die App hoch. Dieses Logo wird gemeinsam mit der App angezeigt, wenn der Benutzer das Unternehmensportal durchsucht.
-9. Klicken Sie dann im Bereich **Informationen hinzufügen** auf die Option **OK**.
+    - **Name**: Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt werden soll.
+    - **Beschreibung:** Geben Sie eine Beschreibung für die App ein. Die Beschreibung wird Benutzern im Unternehmensportal angezeigt.
+    - **Herausgeber**: Geben Sie den Namen des Herausgebers dieser App ein.
+    - **App-URL**: Geben Sie die URL der Website ein, auf der die zuzuweisende App gehostet wird.
+    - **Kategorie**: Wählen Sie optional mindestens eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Dadurch ist es für Benutzer einfacher, die App im Unternehmensportal zu finden.
+    - **Display this as a featured app in the Company Portal** (Diese App als ausgewählte App im Unternehmensportal anzeigen): Diese Einstellung zeigt die App-Suite auf der Hauptseite des Unternehmensportals hervorgehoben an, wenn Benutzer nach Apps suchen.
+    - **Fordern Sie zum Öffnen dieses Links Managed Browser an**: Mit dieser Einstellung wird den Benutzern ein Link zu einer Website oder Web-App zugewiesen, den sie in Intune Managed Browser öffnen können. Dieser Browser muss auf ihrem Gerät installiert sein.
+    - **Logo**: Laden Sie ein Symbol hoch, das der App zugeordnet wird. Dieses Symbol wird mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
+9. Wählen Sie **OK** aus.
 10. Klicken Sie anschließend im Bereich **App hinzufügen** auf **Hinzufügen**.
 
 > [!Note]
-> Benutzer müssen Ihrem Startbildschirm das Intune-Widget hinzufügen, um Web-Apps anzuzeigen, die Android-Geräten zugewiesen wurden.
+> Benutzer müssen dem Startbildschirm das Intune-Widget hinzufügen, um Web-Apps anzuzeigen, die Android-Geräten zugewiesen wurden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie den ausgewählten Gruppen zuweisen können. Hilfe finden Sie unter [Zuweisen von Apps zu Gruppen](apps-deploy.md).
+Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie den ausgewählten Gruppen zuweisen können. Hilfe finden Sie unter [Zuweisen von Apps zu Gruppen](apps-deploy.md). 

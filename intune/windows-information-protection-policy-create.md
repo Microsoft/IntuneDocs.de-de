@@ -5,7 +5,7 @@ description: Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows 
 keywords: ''
 author: msmimart
 ms.author: mimart
-manager: doubeby
+manager: dougeby
 ms.date: 03/02/2018
 ms.topic: article
 ms.prod: ''
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7273a29eea9cd9b55e998302de2bc57d26d34e04
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f08dde25de5962eaaa11487a367b2895c6c047d4
+ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
 
@@ -33,7 +33,7 @@ Sie müssen mit einigen Konzepten vertraut sein, wenn Sie eine WIP-Richtlinie hi
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Liste der zulässigen und ausgenommenen Apps
 
--   **Zulässige Apps:** Diese Apps müssen dieser Richtlinie entsprechen.
+-   **Geschützte Apps:** Diese Apps müssen dieser Richtlinie entsprechen.
 
 -   **Ausgenommene Apps:** Diese Apps sind von dieser Richtlinie ausgenommen und können ohne Einschränkungen auf Unternehmensdaten zugreifen.
 
@@ -71,7 +71,7 @@ Nachdem Sie Intune in Ihrer Organisation eingerichtet haben, können Sie eine WI
     - **Registrierungsstatus:** Wählen Sie **Ohne Registrierung** als Registrierungsstatus für Ihre Richtlinie aus.
 7.  Wählen Sie **Erstellen** aus. Die Richtlinie wird erstellt und in der Tabelle auf dem Blatt **App-Schutzrichtlinien** angezeigt.
 
-## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>So fügen Sie empfohlene Apps zur Liste der zulässigen Apps hinzu
+## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Hinzufügen von empfohlenen Apps zur Liste der geschützten Apps
 
 1. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Mobile Apps** aus.
 2. Wählen Sie auf dem Blatt **Mobile Apps** die Option **App-Schutzrichtlinien** aus.
@@ -82,7 +82,7 @@ Nachdem Sie Intune in Ihrer Organisation eingerichtet haben, können Sie eine WI
 7. Klicken Sie auf **OK**. Das Blatt **Geschützte Apps** wird aktualisiert und zeigt alle ausgewählten Apps an.
 8. Klicken Sie auf **Speichern**.
 
-## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Hinzufügen einer Store-App zur Liste der zulässigen Apps
+## <a name="add-a-store-app-to-your-protected-apps-list"></a>Hinzufügen einer Store-App zur Liste der geschützten Apps
 
 **Hinzufügen eine Store-App**
 1. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Mobile Apps** aus.
@@ -95,7 +95,7 @@ Nachdem Sie Intune in Ihrer Organisation eingerichtet haben, können Sie eine WI
 9. Klicken Sie auf **OK**. Das Blatt **Geschützte Apps** wird aktualisiert und zeigt alle ausgewählten Apps an.
 10. Klicken Sie auf **Speichern**.
 
-## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Hinzufügen einer Desktop-App zur Liste der zulässigen Apps
+## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Hinzufügen einer Desktop-App zur Liste der geschützten Apps
 
 **So fügen Sie eine Desktop-App hinzu**
 1. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Mobile Apps** aus.
@@ -118,7 +118,7 @@ WIP Learning ist ein Bericht, mit dem Sie Ihre WIP-tauglichen und WIP-unbekannte
 <!-- 1631908 -->
 Neben der Anzeige von Informationen über WIP-fähige Apps können Sie eine Zusammenfassung der Geräte anzeigen, die Arbeitsdaten für Websites freigegeben haben. Anhand dieser Informationen können Sie festlegen, welche Websites zu WIP-Gruppen- und Benutzerrichtlinien hinzugefügt werden sollen. Die Zusammenfassung zeigt, auf welche Website-URLs von WIP-aktivierten Apps zugegriffen werden kann.
 
-Beim Arbeiten mit WIP-tauglichen und WIP-unbekannten Apps sollten Sie mit **Automatisch** oder **Außerkraftsetzungen zulassen** beginnen und bei einer kleinen Gruppe überprüfen, ob die Liste der zulässigen Apps die richtigen Apps enthält. Wenn Sie fertig sind, können Sie Ihre endgültige Erzwingungsrichtlinie in **Blockieren** ändern.
+Beim Arbeiten mit WIP-tauglichen und WIP-unbekannten Apps sollten Sie mit **Automatisch** oder **Außerkraftsetzungen zulassen** beginnen und bei einer kleinen Gruppe überprüfen, ob die Liste der geschützten Apps die richtigen Apps enthält. Wenn Sie fertig sind, können Sie Ihre endgültige Erzwingungsrichtlinie in **Blockieren** ändern.
 
 ### <a name="what-are-the-protection-modes"></a>Was sind Schutzmodi?
 

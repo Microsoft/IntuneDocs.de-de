@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9c2b17e1acff965a08245094c57df81c58f44fda
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Konfigurieren von Intune-Zertifikatprofilen
 
@@ -103,7 +103,7 @@ Nachdem Sie ein Profil des vertrauenswürdigen Zertifizierungsstellenzertifikats
    > 
    > Die beiden derzeit für das benutzerdefinierte Format unterstützten Variablen sind `Common Name (CN)` und `Email (E)`. Durch eine Kombination dieser Variablen mit statischen Zeichenfolgen können Sie ein benutzerdefiniertes Format wie dieses für den Antragstellernamen erstellen:
    > 
-   >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+   >     `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`
    > 
    > In diesem Beispiel hat der Administrator ein Format für den Antragstellernamen erstellt, das zusätzlich zu den Variablen `CN` und `E` entsprechende Zeichenfolgen für Organisationseinheit (OU), Organisation (O), Ort (L), Bundesland/Kanton (ST) und Land (C) verwendet. Die [CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx)-Funktion listet unterstützte Zeichenfolgen auf.
 
