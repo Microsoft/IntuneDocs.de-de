@@ -308,6 +308,8 @@
                       href: app-protection-policy-settings-android.md
                     - name: Einstellungen für iOS
                       href: app-protection-policy-settings-ios.md
+                    - name: Datenübertragungsausnahme
+                      href: app-protection-policies-exception.md
                 - name: Überprüfen von App-Schutzrichtlinien
                   href: app-protection-policies-validate.md
                 - name: Überwachen des Benutzerstatus bei App-Schutz
