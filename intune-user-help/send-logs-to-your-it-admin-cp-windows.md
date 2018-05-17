@@ -17,15 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3948ca1dd68e34997a21444f271ae31407d6508
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Senden von Protokollen an den Support Ihres Unternehmens über die Unternehmensportal-App für Windows 10
 
 Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem Windows 10-Gerät verwenden, können Sie Informationen über den Fehler per E-Mail senden, um dem Support Ihres Unternehmens bei der Behandlung des Problems zu helfen. Die Informationen werden auf Ihrem Gerät in einem speziellen Dokument (einem so genannten _Diagnoseprotokoll_) gespeichert.
+
+> [!Note]       
+> Das Unternehmensportal für Windows 10 sendet App-Protokolle direkt an Microsoft, wenn der Benutzer den Workflow zum Abrufen von Hilfe zu einem Problem startet. So können Probleme, die Microsoft gemeldet werden, einfacher behoben und gelöst werden.
 
 1. Öffnen Sie die **Unternehmensportal**-App.
 2. Wählen Sie das Zahnrad **Einstellungen** und dann **Protokolle senden** aus.
