@@ -15,11 +15,11 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d33768206c53550ec1cb34d5c1ad5e2f33e4f8c8
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 812f73cb0857298f01967cebbb36f0b8220fb9c6
+ms.sourcegitcommit: 179bea63fe52a8cce236b6ca8d82a6bd51bf17a5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Erstellen von Ausnahmen für die Richtlinie zur Datenübertragung über die Verwaltung mobiler Anwendungen (MAM) mit Intune
 
@@ -30,9 +30,7 @@ Als Administrator können Sie Ausnahmen für die Richtlinie zur Datenübertragun
 >[!WARNING] 
 > Sie sind für Änderungen an der Richtlinie für Ausnahmen bei der Datenübertragung verantwortlich. Aufgrund von Zusätzen zu dieser Richtlinie können nicht verwaltete Apps (Apps, die nicht von Intune verwaltet werden) auf Daten zugreifen, die von verwalteten Apps geschützt werden. Dieser Zugriff auf geschützte Daten kann zu Datensicherheitslücken führen. Fügen Sie Datenübertragungsausnahmen nur für Apps hinzu, die von Ihrer Organisation verwendet werden müssen, von denen Intune APP (Application Protection Policies, Anwendungsschutzrichtlinien) jedoch nicht unterstützt wird. Fügen Sie außerdem nur Ausnahmen für Apps hinzu, die Ihrer Einschätzung nach kein Risiko für eine Datensicherheitslücke darstellen.
 
-Dieses Features wird angewendet, wenn Sie eine Intune-Anwendungsschutzrichtlinie erstellen, bei der Sie für die Datenübertragung die Option **Managed apps only** (Nur verwaltete Apps) festlegen. wenn Ihre Richtlinie zur Datenübertragung auf **Managed apps only** (Nur verwaltete Apps) festgelegt ist, ist die Datenübertragung anders als die von Ihnen erstellten Ausnahmen weiterhin auf Apps beschränkt, die von Intune verwaltet werden. Sie können die Einschränkungen mithilfe von Protokollen (unter iOS) oder Paketen (unter Android) erstellen.
-
-Sie können dieses Feature so konfigurieren, dass Ausnahmen für die Intune-MAM-Anwendungsschutzrichtlinie **restrict data transfer** (Datenübertragung einschränken) aktiviert werden. Diese Richtlinie ist nicht erforderlich, wenn Sie zulassen möchten, dass Daten an eine App übertragen werden, die Intune APP nicht unterstützt. Diese Richtlinie lässt zu, dass von Intune verwaltete Anwendungen, bei denen die Einstellung für die Datenübertragung mit **Managed apps only** (Nur verwaltete Apps) festgelegt wurde, nicht verwaltete Anwendungen basierend auf dem URL-Protokoll (iOS) oder auf dem Paketnamen (Android) aufrufen können. Intune fügt der Standardliste mit Ausnahmen wichtige native Anwendungen hinzu. 
+Innerhalb einer Intune-Anwendungsschutzrichtlinie bedeutet das Festlegen von **Zulassen, dass die App Daten an andere Apps überträgt** auf **Richtlinienverwaltete Apps**, dass die App Daten nur an Apps übertragen kann, die von Intune verwaltet werden. Wenn Sie Datenübertragungen an bestimmte Anwendungen zulassen müssen, die Intune-Anwendungsschutzrichtlinien nicht unterstützen, können Sie Ausnahmen von dieser Richtlinie erstellen, indem Sie **Wählen Sie die Apps aus, die ausgenommen werden sollen** nutzen. Ausnahmen ermöglichen von Intune verwaltete Anwendungen, nicht verwaltete Anwendungen basierend auf dem URL-Protokoll (iOS) oder Paketnamen (Android) aufzurufen. Intune fügt der Liste mit den Ausnahmen standardmäßig wichtige native Anwendungen hinzu. 
 
 ## <a name="ios-data-transfer-exceptions"></a>Datenübertragungsausnahmen bei iOS
 Bei einer Richtlinie für iOS können Sie Datenübertragungsausnahmen gemäß dem URL-Protokoll konfigurieren. In der vom Entwickler der App bereitgestellten Dokumentation finden Sie Informationen zum Hinzufügen einer Ausnahme sowie zu unterstützten URL-Protokollen. Weitere Informationen zu Datenübertragungsausnahmen bei iOS finden Sie unter [Einstellungen für App-Schutzrichtlinien für iOS - Datenübertragungsausnahmen](app-protection-policy-settings-ios.md#data-transfer-exemptions).

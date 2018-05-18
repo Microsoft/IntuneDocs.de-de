@@ -1,6 +1,6 @@
 ---
-title: Aktivierung der Überprüfung auf Sicherheitsbedrohungen | Microsoft-Dokumentation
-description: ''
+title: Aktivierung der Überprüfung auf Sicherheitsbedrohungen
+description: Erfahren Sie, wie Sie Überprüfungen auf Sicherheitsbedrohungen auf Ihrem Gerät aktivieren
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -15,16 +15,20 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 403b3b50cd8fba7d8d0c8ee6fd6f20d0d5561b76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: cf2413ee879cf4a6cb2742d34f452105057ccf59
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
-# <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>Sie müssen bei Ihrem Gerät die Überprüfung auf Sicherheitsbedrohungen aktivieren.
+# <a name="enable-security-threat-scans-on-your-device"></a>Aktivieren von Überprüfungen auf Sicherheitsbedrohungen auf Ihrem Gerät 
+Wenn Sie unwissentlich eine unsichere Anwendung installieren, können Ihre Gerätedaten gefährdet sein. Um die Daten auf Ihrem Gerät zu schützen, empfehlen wir Folgendes: 
 
-Sie können auf Ihr Android-Gerät Apps herunterladen und installieren, die eine Vielzahl von Aufgaben ausführen können. Einige Apps können jedoch Probleme verursachen. Wir empfehlen daher, Apps ausschließlich aus überprüften Quellen, z.B. dem Google Play Store, herunterzuladen. Um zusätzlichen Schutz für die Daten auf Ihrem Gerät zu gewährleisten, kann der Support Ihres Unternehmens die Überprüfung durch Google aktivieren. Dadurch wird bei der Installation von Apps geprüft, ob diese sicher sind.
+* Laden Sie Apps ausschließlich aus sicheren Quellen herunter, z.B. Google Play Store.  
+* Aktivieren Sie Überprüfungen auf Sicherheitsbedrohungen auf Ihrem Gerät. Diese Überprüfungen werden von Google durchgeführt und stellen sicher, dass Apps sicher installiert werden können.  
 
-Unter **Einstellungen** > **Google** > **Sicherheit** können Sie die Einstellung **Gerät auf Sicherheitsbedrohungen überprüfen** aktivieren.
+Um die Überprüfungen auf Ihrem Gerät zu aktivieren, wechseln Sie zu **Einstellungen** > **Google** > **Sicherheit**. Aktivieren Sie **Gerät nach Sicherheitsbedrohungen durchsuchen**.  
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Auf einigen Samsung-Geräten finden Sie die Einstellung möglicherweise unter **Einstellungen** > **Google** > **Sicherheit** > **Google Play Protect**.
+
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog). 

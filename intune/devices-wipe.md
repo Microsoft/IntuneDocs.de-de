@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,35 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7d3e768e740866d69d675a962dfca6d98c85568
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 84fc162eda25970c14ed1014b9f67ef3e782c663
+ms.sourcegitcommit: 7e80388b6223c9a632c5729bf9b157f848fe52cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Entfernen von Geräte mithilfe der Zurücksetzung auf Werkseinstellungen oder dem Entfernen von Unternehmensdaten
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Sie können Geräte aus Intune entfernen, wenn sie nicht mehr benötigt werden, einem neuen Zweck zugeführt werden oder verloren gegangen sind. Sie erreichen dies durch Verwenden des Befehls **Unternehmensdaten entfernen** oder durch die Aktion **Zurücksetzung auf Werkseinstellungen**. Für private Geräte, die in Intune registriert sind, können die Benutzer über das Intune-Unternehmensportal einen Remotebefehl erteilen.
+Mithilfe der Aktionen **Unternehmensdaten entfernen** oder **Zurücksetzung auf Werkseinstellungen** können Sie Geräte aus Intune entfernen, wenn sie nicht mehr benötigt werden, einem neuen Zweck zugeführt werden oder verloren gegangen sind. Für private Geräte, die in Intune registriert sind, können die Benutzer über das Intune-Unternehmensportal einen Remotebefehl erteilen.
 
 > [!NOTE]
 > Bevor Sie einen Benutzer aus Azure Active Directory (Azure AD) entfernen, verwenden Sie den Befehl **Unternehmensdaten entfernen** oder die Aktion **Zurücksetzung auf Werkseinstellungen** für alle diesem Benutzer zugeordneten Geräte. Wenn Sie Benutzer mit verwalteten Geräten aus Azure AD entfernen, kann Intune keine Zurücksetzung auf Werkseinstellungen mehr vornehmen oder Unternehmensdaten von diesen Geräten entfernen.
 
 ## <a name="factory-reset"></a>Wiederherstellung der Herstellerstandards
 
-Die Aktion **Zurücksetzung auf Werkseinstellungen** setzt das Gerät auf die Werkseinstellungen zurück. Dadurch werden alle Unternehmens- und Benutzerdaten sowie -einstellungen entfernt. Das Gerät wird aus der Intune-Verwaltung entfernt. Die Zurücksetzung eines Geräts auf Werkseinstellungen ist nützlich, bevor es an einen neuen Benutzer weitergegeben wird oder wenn es gestohlen wurde oder verloren gegangen ist. Überlegen Sie sich genau, ob Sie ein Gerät wirklich **auf Werkseinstellungen zurücksetzen** möchten. Die Daten auf dem Gerät können anschließend nicht wiederhergestellt werden.
+Die Aktion **Zurücksetzung auf Werkseinstellungen** setzt das Gerät auf die Werkseinstellungen zurück. Die Benutzerdaten werden beibehalten oder zurückgesetzt, je nachdem, ob Sie das Kontrollkästchen **Registrierungszustand und Benutzerkonto beibehalten** aktivieren oder nicht.
+
+|Aktion „Zurücksetzung auf Werkseinstellungen“|**Registrierungszustand und Benutzerkonto beibehalten**|Aus der Intune-Verwaltung entfernt|Beschreibung|
+|:-------------:|:------------:|:------------:|------------|
+|**Zurücksetzen auf Werkseinstellungen**| Nicht geprüft | Ja  | Setzt alle Benutzerkonten, Daten, MDM-Richtlinien und Einstellungen zurück. Setzt das Betriebssystem auf Standardzustand und -einstellungen zurück.|
+|**Zurücksetzen auf Werkseinstellungen**| Markiert | Nein | Setzt alle MDM-Richtlinien zurück. Behält Benutzerkonten und Kennwörter bei. Setzt Benutzereinstellungen auf die Standardwerte zurück. Setzt das Betriebssystem auf Standardzustand und -einstellungen zurück.|
+
+Die Option **Registrierungszustand und Benutzerkonto beibehalten** steht Ihnen nur für Windows 10, Version 1709 oder höher, zur Verfügung.
+
+MDM-Richtlinien werden beim nächsten Herstellen einer Verbindung des Geräts mit Intune erneut angewendet.
+
+Die Zurücksetzung eines Geräts auf Werkseinstellungen ist nützlich, bevor es an einen neuen Benutzer weitergegeben wird oder wenn es gestohlen wurde oder verloren gegangen ist. Überlegen Sie sich genau, ob Sie ein Gerät wirklich **auf Werkseinstellungen zurücksetzen** möchten. Die Daten auf dem Gerät können anschließend nicht wiederhergestellt werden.
 
 ### <a name="factory-reset-a-device"></a>Zurücksetzen eines Geräts auf Werkseinstellungen
 
