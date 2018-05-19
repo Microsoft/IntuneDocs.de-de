@@ -168,6 +168,8 @@
               href: windows-enroll.md
             - name: Massenregistrierung
               href: windows-bulk-enroll.md
+            - name: Seite zum Registrierungsstatus
+              href: windows-enrollment-status.md
             - name: Windows AutoPilot Deployment-Programm
               href: enrollment-autopilot.md
         - name: Einrichten der Android-Registrierung
