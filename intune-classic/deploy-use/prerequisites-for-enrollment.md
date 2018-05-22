@@ -16,10 +16,10 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/21/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Voraussetzungen für die Verwaltung von mobilen Geräten in Intune
 

@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d973ca86a9adcbe3c7c18b2018c29006ba54ae9e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Erstellen und Zuweisen von App-Schutzrichtlinien
 
@@ -127,7 +127,7 @@ Da die App-Schutzrichtlinien von Intune die Identität eines Benutzers ansteuern
 Navigieren Sie in der Intune-Konsole zu den Richtlinien **Mobile Apps** > **App-Schutz**, und klicken Sie auf **Hinzufügen einer Richtlinie**, um diese Richtlinien zu erstellen. Sie können auch eine vorhandene App-Schutzrichtlinie bearbeiten. Wenn die App-Schutzrichtlinie für verwaltete und nicht verwaltete Geräte angewendet werden soll, bestätigen Sie, dass **Target to all app types** (Alle App-Typen als Ziel verwenden) auf den Standardwert **Ja** festgelegt ist. Wenn Sie eine Basis granular einem Verwaltungsstatus zuweisen wollen, legen Sie die Option **Target to all app types** (Alle App-Typen als Ziel verwenden) auf **Nein** fest. 
 
 > [!NOTE]
-> Spezifische iOS-Supportinfomationen über App-Schutzrichtlinien basierend auf dem Status der Geräteverwaltung finden Sie unter [MAM protection policies targeted based on management state (Angesteuerte MAM-Schutzrichtlinien basierend auf dem Verwaltungsstatus)](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---).
+> Spezifische iOS-Supportinfomationen über App-Schutzrichtlinien basierend auf dem Status der Geräteverwaltung finden Sie unter [MAM protection policies targeted based on management state (Angesteuerte MAM-Schutzrichtlinien basierend auf dem Verwaltungsstatus)](whats-new.md#mam-protection-policies-targeted-based-on-management-state-).
 
 ## <a name="policy-settings"></a>Richtlinieneinstellungen
 Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finden Sie unter den folgenden Links:

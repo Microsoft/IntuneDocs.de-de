@@ -15,11 +15,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2759146634f16e5d92ca8c497aa2856f071a679
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 02cc111f8991a855db4f05360e54598af511f28f
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Registrierung von Windows-Geräten
 
@@ -31,7 +31,6 @@ Als Intune-Administrator können Sie die Registrierung auf folgende Weise verein
 - [Aktivieren der automatischen Registrierung](#enable-windows-10-automatic-enrollment) (Azure AD Premium erforderlich)
 - [CNAME-Registrierung](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Aktivieren der Massenregistrierung](windows-bulk-enroll.md) (Azure AD Premium und Windows Configuration Designer erforderlich)
-- [Hinzufügen einer benutzerdefinierten Nachricht](windows-enrollment-status.md), um Ihre Benutzer bei der Registrierung zu begrüßen und den Status der Durchsetzung von Richtlinieneinstellungen anzuzeigen
 
 Zwei Faktoren bestimmen, wie Sie die Registrierung von Windows-Geräten vereinfachen können:
 
