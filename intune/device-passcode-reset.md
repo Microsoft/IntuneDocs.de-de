@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 905c51dcbc5b7731be207c25ffd368b339dbec57
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5783558a768e1d58087168f81ad27e5acf9aae09
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Zurücksetzen oder Entfernen einer Gerätekennung in Intune
 
@@ -47,7 +47,7 @@ Um eine neue Kennung für ein Gerät zu erstellen, verwenden Sie die Aktion **Ke
 
 ## <a name="resetting-android-for-work-passcodes"></a>Zurücksetzen von Android for Work-Kennungen
 
-Unterstützte Android for Work-Geräte erhalten ein neues Kennwort zum Entsperren des Geräts oder eine verwaltete Profilabfrage für den Endbenutzer. Für Geräte mit Arbeitsprofilen unter Android 7.0 und höher erhalten Endbenutzer Benachrichtigungen, damit sie ihr Kennungstoken unmittelbar im Anschluss an die Fertigstellung der Registrierung zurücksetzen. Die Benachrichtigung wird angezeigt, wenn das Kennwort für ein Arbeitsprofil erforderlich ist und festgelegt wurde. Sobald die Kennung eingegeben wurde, wird die Benachrichtigung verworfen.
+Unterstützte Android for Work-Geräte erhalten ein neues Kennwort zum Entsperren des verwalteten Profils oder eine verwaltete Profilabfrage für den Endbenutzer. Für Geräte mit Arbeitsprofilen unter Android 7.0 und höher erhalten Endbenutzer Benachrichtigungen, damit sie ihr Kennungstoken unmittelbar im Anschluss an die Fertigstellung der Registrierung zurücksetzen. Die Benachrichtigung wird angezeigt, wenn das Kennwort für ein Arbeitsprofil erforderlich ist und festgelegt wurde. Sobald die Kennung eingegeben wurde, wird die Benachrichtigung verworfen.
 
 ## <a name="resetting-ios-passcodes"></a>Zurücksetzen von iOS-Kennungen
 

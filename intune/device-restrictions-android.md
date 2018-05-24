@@ -14,11 +14,11 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 619d9e86bd130a617155d262f3e09882ce26ec1e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Android und Samsung KNOX Standard in Microsoft Intune 
 
@@ -47,6 +47,10 @@ In diesem Artikel lernen Sie alle Einstellungen für Geräteeinschränkungen in 
 ## <a name="password"></a>Kennwort
 
 - **Kennwort:** Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können.|Ja|Ja|
+
+    > [!NOTE]
+    > Samsung Knox-Geräte erfordern automatisch eine vierstellige PIN bei der MDM-Registrierung. Native Android-Geräte erfordern möglicherweise automatisch eine PIN, damit sie konform mit den bedingten Zugriffsvoraussetzungen sind.
+
 - **Minimale Kennwortlänge:** Geben Sie die Mindestanzahl von Zeichen an, die Benutzer für das Kennwort festlegen müssen (zwischen 4 und 16 Zeichen).
 - **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung:** Gibt die Anzahl der Minuten der Inaktivität an, bevor das Gerät automatisch gesperrt wird.
 - **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird:** Gibt die Anzahl zulässiger Anmeldefehler an, bevor das Gerät zurückgesetzt wird.
@@ -63,6 +67,9 @@ In diesem Artikel lernen Sie alle Einstellungen für Geräteeinschränkungen in 
 - **Entsperrung durch Fingerabdruck (nur Samsung KNOX):** Erlaubt die Verwendung eines Fingerabdrucks zum Entsperren unterstützter Geräte.
 - **Smart Lock und andere Vertrauens-Agents:** Ermöglicht die Steuerung des Smart Lock-Features auf kompatible Android-Geräten (Samsung KNOX Standard 5.0 und höher). Diese Telefonfunktion wird manchmal als Vertrauens-Agent bezeichnet und ermöglicht Ihnen, das Kennwort für den Gerätesperrbildschirm zu deaktivieren oder zu umgehen, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet. Diese kann beispielsweise verwendet werden, wenn das Gerät mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet. Mit dieser Einstellung können Sie verhindern, dass Benutzer Smart Lock konfigurieren.
 - **Verschlüsselung:** Schreibt vor, dass die Dateien auf den Geräten verschlüsselt werden müssen.
+
+    > [!NOTE]
+    > Wenn eine Verschlüsselungsrichtlinie erzwungen wird, erfordern Samsung Knox-Geräte, dass Benutzer ein komplexes Kennwort, das aus sechs Zeichen besteht, für die Gerätekennung festlegen.
 
 <sup>1</sup> Bevor Sie diese Einstellung Geräten zuweisen, aktualisieren Sie die Unternehmensportal-App auf diesen Geräten auf jeden Fall auf die neueste Version.
 

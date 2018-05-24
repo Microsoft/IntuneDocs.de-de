@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 manager: dougeby
 ms.author: erikre
-ms.date: 04/06/2018
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,17 +13,17 @@ ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 486ff2d22cb201abc926efc96a83455be98e7536
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.custom: ''
+ms.openlocfilehash: f8f81b4ff3bf5d17832d2f943fffb905eba52b6e
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
 > [!NOTE]
-> Lesen Sie am besten zuerst den Artikel [Erste Schritte mit dem Intune App SDK](app-sdk-get-started.md). Darin finden Sie Informationen, welche Vorbereitungen Sie für die Integration auf jeder unterstützten Plattform treffen müssen.
+> Lesen Sie am besten zuerst den Artikel [Get Started with Intune App SDK Guide (Erste Schritte mit dem Leitfaden für das Intune App SDK)](app-sdk-get-started.md). Dort finden Sie Informationen zu den Vorbereitungen, die Sie auf den verschiedenen unterstützten Plattformen für die Integration treffen müssen.
 
 Mit dem Microsoft Intune App SDK für iOS können Sie die Intune-App-Schutzrichtlinien (auch als **APP**- oder **MAM-Richtlinien** bezeichnet) in Ihre native iOS-App integrieren. Als MAM-fähige App wird eine App bezeichnet, die in das Intune App SDK integriert ist. Sie ermöglichen IT-Administratoren, App-Schutzrichtlinien für Ihre mobile App bereitzustellen, wenn diese aktiv von Intune verwaltet wird.
 
@@ -81,8 +81,8 @@ Führen Sie die folgenden Schritte aus, um das Intune App SDK zu aktivieren:
 
 1. **Option 1 (empfohlen)**: Verknüpfen Sie `IntuneMAM.framework` mit Ihrem Projekt. Ziehen Sie `IntuneMAM.framework` in die Liste für **eingebettete Binärdateien** des Projektziels.
 
-    > [!NOTE]
-    > Bei Verwendung des Frameworks müssen Sie die Simulatorarchitekturen manuell aus dem universellen Framework entfernen, bevor Sie Ihre App an den App Store übermitteln. Weitere Informationen siehe [Übermitteln Ihrer App an den App Store](#Submit-your-app-to-the-App-Store).
+   > [!NOTE]
+   > Bei Verwendung des Frameworks müssen Sie die Simulatorarchitekturen manuell aus dem universellen Framework entfernen, bevor Sie Ihre App an den App Store übermitteln. Weitere Informationen siehe [Übermitteln Ihrer App an den App Store](#Submit-your-app-to-the-App-Store).
 
 2. **Option 2**: Stellen Sie eine Verknüpfung zur `libIntuneMAM.a`-Bibliothek her. Ziehen Sie die `libIntuneMAM.a`-Bibliothek in die Liste **Verknüpfte Frameworks und Bibliotheken** des Projektziels.
 
@@ -179,7 +179,7 @@ Gehen Sie folgendermaßen vor, um Ihre App mit den ADAL-Binärdateien zu verknü
 
 
 
-### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>Freigeben des ADAL-Tokencaches für andere Apps, die mit dem gleichen Bereitstellungsprofil signiert wurden?**
+### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>Freigeben des ADAL-Tokencaches für andere Apps, die mit dem gleichen Bereitstellungsprofil signiert wurden
 
 Befolgen Sie die unten stehenden Anweisungen, wenn Sie ADAL-Token für Apps freigeben möchten, die mit dem gleichen Bereitstellungsprofil signiert wurden:
 
@@ -523,7 +523,8 @@ SUBQUERY (
 ).@count > 0 
  ```
 
->[!Note] Mit dem IntuneMAMConfigurator-Tool können die Intune-Typen der Aktivierungsregel hinzugefügt werden. Wenn die bestehende Aktivierungsregel die vordefinierten Zeichenfolgenkonstanten verwendet (z.B. NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText usw.), kann die Prädikatsyntax sehr komplex werden. Mit dem IntuneMAMConfigurator-Tool kann auch die Aktivierungsregel aus den Zeichenfolgenkonstanten in eine Prädikatzeichenfolge konvertiert werden, während die Intune-Typen hinzugefügt werden. Den IntuneMAMConfigurator finden Sie in unserem GitHub-Repository. 
+> [!NOTE]
+> Mit dem IntuneMAMConfigurator-Tool können die Intune-Typen der Aktivierungsregel hinzugefügt werden. Wenn die bestehende Aktivierungsregel die vordefinierten Zeichenfolgenkonstanten verwendet (z.B. NSExtensionActivationSupportsFileWithMaxCount, NSExtensionActivationSupportsText usw.), kann die Prädikatsyntax sehr komplex werden. Mit dem IntuneMAMConfigurator-Tool kann auch die Aktivierungsregel aus den Zeichenfolgenkonstanten in eine Prädikatzeichenfolge konvertiert werden, während die Intune-Typen hinzugefügt werden. Den IntuneMAMConfigurator finden Sie in unserem GitHub-Repository. 
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Aktivieren der MAM-Zielkonfiguration für Ihre iOS-Anwendungen

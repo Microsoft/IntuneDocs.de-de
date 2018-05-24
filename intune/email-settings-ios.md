@@ -6,18 +6,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 5/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0912ec4fdc77b51903b4febd54f9d16972b867a8
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: fe791dce88878fdbde7c62e59452a53ac08ef06b
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-ios"></a>E-Mail-Profileinstellungen in Microsoft Intune für Geräte mit iOS 
 
@@ -35,8 +35,7 @@ In diesem Artikel werden Ihnen die E-Mail-Profileinstellungen gezeigt, die Sie f
     - Wenn Sie **Zertifikat** ausgewählt haben, wählen Sie ein zuvor erstelltes SCEP- oder PKCS-Clientzertifikatprofil aus, das zur Authentifizierung der Exchange-Verbindung verwendet werden soll.
 - **SSL:** Verwenden Sie SSL-Kommunikation (Secure Sockets Layer) beim Senden und Empfangen von E-Mails sowie bei der Kommunikation mit dem Exchange-Server.
 - **S/MIME**: Ausgehende E-Mails werden mithilfe der S/MIME-Signatur gesendet.
-    - Wenn Sie **Zertifikat** ausgewählt haben, wählen Sie ein zuvor erstelltes SCEP- oder PKCS-Clientzertifikatprofil aus, das zur Authentifizierung der Exchange-Verbindung verwendet werden soll.
-    - Wenn Sie ein SCEP-Zertifikat wählen, stellen Sie sicher, dass ein gültiges PFX-Zertifikat (Personal Information Exchange) auf dem Gerät installiert ist.
+    - Wenn Sie **Zertifikat** ausgewählt haben, wählen Sie ein PKCS-Clientzertifikatprofil aus, das Sie zur Authentifizierung der Exchange-Verbindung zuvor erstellt haben.
 - **Menge an E-Mails für die Synchronisierung:** Wählen Sie die Anzahl der Tage von E-Mails aus, die synchronisiert werden sollen, oder wählen Sie **Unbegrenzt** aus, um alle verfügbaren E-Mail-Nachrichten zu synchronisieren.
 - **Verschieben von Nachrichten in andere E-Mail-Konten zulassen:** Hiermit können Benutzer E-Mail-Nachrichten zwischen verschiedenen Konten verschieben, die auf ihrem Gerät konfiguriert sind.
 - **E-Mail-Versand aus Drittanbieteranwendungen zulassen**: Erlaubt dem Benutzer die Auswahl dieses Profils als das Standardkonto für das Senden von E-Mails und erlaubt Drittanbieteranwendungen das Öffnen von E-Mails in der nativen E-Mail-App, um beispielsweise Dateien an E-Mails anzuhängen.

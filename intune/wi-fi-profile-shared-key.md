@@ -14,11 +14,11 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a3b98dad86b7abe5ce330ae99fdf008137cc2b11
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: eb88bf64db8eaa82a68f56f8c3235030539f1959
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Verwenden eines benutzerdefinierten Geräteprofils zum Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel – Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -35,6 +35,7 @@ Vorinstallierte Schlüssel (Pre-shared keys, PSK) werden üblicherweise verwende
 - Für Android können Sie auch den [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) verwenden.
 - Sie können mehrere Netzwerke und Schlüssel hinzufügen, indem Sie weitere OMA-URI-Einstellungen hinzufügen.
 - Verwenden Sie für iOS den Apple Configurator auf einer Mac-Station, um das Profil einzurichten. Alternativ dazu können Sie den [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) verwenden.
+- PSK erfordert eine Zeichenfolge von 64 Hexadezimalziffern oder eine Passphrase von 8 bis 63 druckbaren ASCII-Zeichen. Einige Zeichen wie Sternchen (*) werden nicht unterstützt.
 
 ## <a name="create-a-custom-profile"></a>Erstellen eines benutzerdefinierten Profils
 Sie können ein benutzerdefiniertes Profil mit einem vorinstallierten Schlüssel für ein Android- oder Windows-WLAN-Profil oder ein EAP-basiertes WLAN-Profil erstellen. Informationen zum Erstellen des Profils im Azure-Portal finden Sie unter [Erstellen von benutzerdefinierten Geräteeinstellungen](custom-settings-configure.md). Wenn Sie das Geräteprofil erstellen, wählen Sie **Benutzerdefiniert** als Geräteplattform aus. Wählen Sie nicht das WLAN-Profil aus. Führen Sie folgende Schritte aus, wenn Sie eine benutzerdefinierte Plattform verwenden: 
@@ -50,8 +51,8 @@ Sie können ein benutzerdefiniertes Profil mit einem vorinstallierten Schlüssel
 
    d. **OMA-URI**:
 
-   - **Für Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-   - **Für Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Für Android**: ./Vendor/MSFT/WiFi/Profile/SSID/Settings
+   - **Für Windows**: ./Vendor/MSFT/WiFi/Profile/SSID/WlanXml
 
      > [!NOTE]
      > Stellen Sie sicher, dass Sie den Punkt am Anfang eingeben.

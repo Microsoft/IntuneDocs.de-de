@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
-ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
+ms.openlocfilehash: a3cad6a73b3455790441c594933d599b2c6e89f9
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Entfernen Ihres Windows-Geräts aus der Intune-Verwaltung
 
@@ -72,13 +72,13 @@ Führen Sie die folgenden Schritte zum Entfernen eines mobilen Geräts mit Windo
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Entfernen Ihrer persönlichen Informationen nach dem Entfernen des Unternehmensportals
 Es gibt zwei Arten von Daten, die das Unternehmensportal auf Ihrem Windows-Gerät speichert:
 
--   **Diagnoseprotokolle:** Daten zu Standardaktivitäten von Apps, die Microsoft sammelt, werden automatisch gelöscht, wenn Sie das Gerät aus dem Unternehmensportal entfernen. App-Aktivitätsdaten enthalten z.B. Informationen dazu, wie lange die App geöffnet war oder sie abgestürzt ist.
+-   **Diagnoseprotokolle:** von Microsoft erfasste Aktivitätsdaten der Standard-App. Die Daten werden automatisch gelöscht, wenn Sie die Unternehmensportal-App deinstallieren. App-Aktivitätsdaten enthalten z.B. Informationen dazu, wie lange die App geöffnet war oder sie abgestürzt ist.
 -   **Anwendungscache:** Unterstützungsdateien, die erforderlich sind, damit die App funktioniert, z.B. Symbole und Einstellungen.
 
-Sie müssen einige Schritte durchführen, um diese Informationen vollständig zu löschen.
+Führen Sie einen der folgenden Schritte aus, um die gespeicherten Protokolle und Caches zu löschen:
 
-1. Deinstallieren Sie das Unternehmensportal. Durch das [Deinstallieren einer Unternehmensportal-App](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) werden einige der App-Daten entfernt, die auf Ihrem Gerät gespeichert sind.  
+* [Deinstallieren der Unternehmensportal-App](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) 
 
-2. Setzen Sie das Unternehmensportal zurück, um die gespeicherten App-Daten zurückzusetzen. Öffnen Sie die App **Einstellungen**, und wählen Sie **Apps** > **Unternehmensportal** > **Erweiterte Optionen** > **Zurücksetzen** aus. 
+* Setzen Sie die Unternehmensportal-App zurück. Öffnen Sie die App **Einstellungen**, und klicken Sie auf **Apps** > **Unternehmensportal** > **Erweiterte Optionen** > **Zurücksetzen**. 
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).

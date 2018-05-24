@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 870d61cce47132b19b4c3d8b7357f84a21a443e4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrieren von Geräten mithilfe eines Geräteregistrierungs-Manager-Kontos
 
@@ -73,7 +73,7 @@ Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurd
 
 ## <a name="permissions-for-dem"></a>Berechtigungen für DEM
 
-Um Aufgaben zur DEM-Registrierung durchzuführen, sind globale Azure AD-Rollen oder Azure AD-Rollen für Intune-Dienstadministratoren erforderlich. Diese Rollen sind auch erforderlich, um alle DEM-Benutzer trotz RBAC-Berechtigungen anzuzeigen und werden unter der benutzerdefinierten Benutzerrolle angezeigt. Ein Benutzer, dem keine globale Administratorrolle oder Intune-Dienstadministratorrolle zugewiesen ist, jedoch über Leseberechtigungen für die Rolle „Geräteregistrierungs-Manager“ verfügt, kann nur die von ihm erstellten DEM-Benutzer sehen. Die Unterstützung von RBAC-Rollen für diese Features werden in der Zukunft bekannt gegeben.
+Um Aufgaben zur DEM-Registrierung im Administratorportal durchzuführen, sind globale Azure AD-Rollen oder Azure AD-Rollen für Intune-Dienstadministratoren erforderlich. Diese Rollen sind auch erforderlich, um alle DEM-Benutzer trotz RBAC-Berechtigungen anzuzeigen und werden unter der benutzerdefinierten Benutzerrolle angezeigt. Ein Benutzer, dem keine globale Administratorrolle oder Intune-Dienstadministratorrolle zugewiesen ist, der jedoch über Leseberechtigungen für die Rolle „Geräteregistrierungs-Manager“ verfügt, kann nur die von ihm erstellten DEM-Benutzer sehen. Die Unterstützung von RBAC-Rollen für diese Features werden in der Zukunft bekannt gegeben.
 
 Wenn einem Benutzer keine globale Administratorrolle oder Intune-Dienstadministratorrolle zugewiesen ist, für den Benutzer aber Leseberechtigungen für die Rolle „Geräteregistrierungs-Manager“ aktiviert sind, kann dieser nur die von ihm erstellten DEM-Benutzer sehen.
 

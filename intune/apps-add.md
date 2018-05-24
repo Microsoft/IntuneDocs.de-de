@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c54dd0180788a83ee01607e0e6d895fdb9a85ab
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 8dbfff0fadec567bf0d9bd86d71a26174db40c09
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune
 
@@ -126,9 +126,7 @@ Bevor Sie damit beginnen, Apps hinzuzufügen und zuzuweisen, beachten Sie die fo
 - Einige von Ihnen zugewiesene Apps oder Elemente sind möglicherweise von integrierten iOS-Apps abhängig. Wenn Sie z.B. ein Buch aus dem iOS-Store zuweisen, muss die iBooks-App auf dem Gerät vorhanden sein. Wenn Sie die integrierte iBooks-App entfernt haben, können Sie Intune nicht dazu verwenden, sie wieder zu aktivieren.
 
 ## <a name="cloud-storage-space"></a>Cloudspeicherplatz
-Alle Apps, die Sie mithilfe des Software-Installationsprogrammtyps erstellen (beispielsweise eine branchenspezifische App), werden paketiert und in den Intune-Cloudspeicher hochgeladen. Ein Testabonnement von Intune enthält 2 GB cloudbasierten Speicher, der zum Speichern von verwalteten Apps und Updates verwendet wird. Ein vollständiges Abonnement enthält 20 GB Speicherplatz.
-
-Sie können zusätzlichen Speicher für Intune mit Ihrer ursprünglichen Zahlungsweise erwerben. Wenn Sie per Rechnung oder Kreditkarte gezahlt haben, besuchen Sie das [Portal zur Abonnementverwaltung](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions). Wenden Sie sich alternativ an Ihren Partner oder Vertriebsmitarbeiter.
+Alle Apps, die Sie mithilfe des Software-Installationsprogrammtyps erstellen (beispielsweise eine branchenspezifische App), werden paketiert und in den Intune-Cloudspeicher hochgeladen. Ein Testabonnement von Intune enthält 2 GB cloudbasierten Speicher, der zum Speichern von verwalteten Apps und Updates verwendet wird. Der Gesamtspeicherplatz wird nicht durch ein vollständiges Abonnement beeinflusst.
 
 Anforderungen für Cloudspeicherplatz:
 
@@ -143,7 +141,7 @@ Wenn Sie eine App in Intune hinzufügen, können Sie die gewünschte Kategorie a
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Klicken Sie im Bereich **Intune** auf die Option **Mobile Apps**.
+3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
 4. Wählen Sie im Workloadbereich **Mobile Apps** unter **Setup** die Option **App-Kategorien** aus.  
     Im Bereich **App-Kategorien** wird eine Liste der aktuellen Kategorien angezeigt. 
 5. Führen Sie einen der folgenden Schritte aus:

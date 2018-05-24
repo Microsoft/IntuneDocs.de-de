@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1aaffb2da1f4ec081b59ff6ca1922d983008f77
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Konfigurieren von Microsoft Intune für einmaliges Anmelden von iOS-Geräten
 
@@ -65,7 +65,7 @@ Die folgenden Abschnitte enthalten weitere Informationen zu den Feldern bei der 
 
    Sie haben auch die Möglichkeit, den Bereich mit dem Text, den Sie in das Textfeld **Bereich** eingeben, zu überschreiben.
 
-   Zum Beispiel könnte Contoso mehrere Teilregionen wie Europa, Asien und Nordamerika umfassen. Möchte Contoso, dass dessen Benutzer in Asien die SSO-Nutzlast verwenden, erfordert die App den UPN im Format *username@asia.contoso.com*. Wenn Sie in diesem Fall **Benutzerprinzipalname** wählen, wird standardmäßig der Bereich für die einzelnen Benutzer aus AAD übernommen, der z.B. einfach *contoso.com* lauten kann. So können Sie insbesondere für Benutzer in Asien diese Nutzlast erstellen und den Bereich mit dem Wert *asia.contoso.com* überschreiben. Daraufhin wird als UPN des Endbenutzers *username@asia.contoso.com* und nicht *username@contoso.com* verwendet.
+   Zum Beispiel könnte Contoso mehrere Teilregionen wie Europa, Asien und Nordamerika umfassen. Möchte Contoso, dass dessen Benutzer in Asien die SSO-Nutzlast verwenden, erfordert die App den UPN im Format *username@asia.contoso.com*. Wenn Sie in diesem Fall **Benutzerprinzipalname** auswählen, wird standardmäßig der Bereich für die einzelnen Benutzer aus AAD übernommen, der z.B. einfach *contoso.com* lauten kann. So können Sie insbesondere für Benutzer in Asien diese Nutzlast erstellen und den Bereich mit dem Wert *asia.contoso.com* überschreiben. Daraufhin wird als UPN des Endbenutzers *username@asia.contoso.com* und nicht *username@contoso.com* verwendet.
 
 - Wenn Sie **Geräte-ID** wählen, wählt Intune automatisch die Intune-Geräte-ID aus.
 

@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune
 
@@ -159,7 +159,7 @@ Die **Einstellungen zur Konformitätsrichtlinie** (Azure-Portal > Gerätekonform
   - **Konform:** Sicherheitsfeature ist ausgeschaltet
   - **Nicht konform** (Standard): Sicherheitsfeature ist eingeschaltet
 
-  Ist einem Gerät keine Konformitätsrichtlinie zugewiesen, dann wird dieses Gerät als nicht konform erachtet. Standardmäßig werden Geräte als **Nicht konform** gekennzeichnet. Wenn Sie den bedingten Zugriff verwenden, sollten Sie die Standardeinstellung **Nicht konform** beibehalten. Falls ein Benutzer nicht konform ist, da keine Richtlinie zugewiesen ist, führt das Unternehmensportal `No compliance policies have been assigned` auf.
+  Ist einem Gerät keine Konformitätsrichtlinie zugewiesen, dann wird dieses Gerät als nicht konform erachtet. Standardmäßig werden Geräte als **Konform** gekennzeichnet. Wenn Sie den bedingten Zugriff verwenden, sollten Sie die Einstellung auf **Nicht konform** festlegen. Falls ein Benutzer nicht konform ist, da keine Richtlinie zugewiesen ist, führt das Unternehmensportal `No compliance policies have been assigned` auf.
 
 - **Verbesserte Erkennung von Jailbreaks:** Ist diese Einstellung aktiviert, werden iOS-Geräte bei Intune regelmäßiger eingecheckt. Durch die Aktivierung dieser Eigenschaft werden die Ortungsdienste des Gerätes verwendet und der Akkuverbrauch wird beeinflusst. Die Ortungsdaten des Benutzers werden nicht bei Intune gespeichert.
 

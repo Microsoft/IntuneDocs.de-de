@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/17/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98355ec1cf54597f488bd2426ac77f35809070fd
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8cce5da762c119ec04553d80d717fb586c962566
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Rollenbasierte Zugriffssteuerung mit Microsoft Intune
 
@@ -78,20 +78,18 @@ Die folgenden Rollen sind in Intune integriert. Sie können sie ohne weitere Kon
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Klicken Sie im Bereich **Intune** erst auf **Intune-Rollen** und anschließend auf **Alle Rollen**.
-1. Klicken Sie im Bereich **Intune-Rollen – Alle Rollen** auf die integrierte Rolle, die Sie zuweisen möchten.
+4. Klicken Sie im Bereich **Intune-Rollen – Alle Rollen** auf die integrierte Rolle, die Sie zuweisen möchten.
 
-2. Klicken Sie im Bereich <*Rollenname*>-**Übersicht** erst auf **Verwalten** und dann auf **Zuweisungen**.
+5. Klicken Sie im Bereich <*Rollenname*>-**Übersicht** auf **Zuweisungen** > **Zuweisen**.
 
     > [!NOTE]
     > Sie können die integrierten Rollen nicht löschen oder bearbeiten.
 
-3. Klicken Sie im Bereich „Benutzerdefinierte Rolle“ auf **Zuweisen**.
-
-4. Geben Sie im Bereich **Rollenzuweisungen** einen **Namen** und eine optionale **Beschreibung** für die Zuweisung ein, und wählen Sie dann Folgendes aus:
+6. Geben Sie im Bereich **Rollenzuweisungen** einen **Zuweisungsnamen** und eine optionale **Zuweisungsbeschreibung** ein, und wählen Sie dann Folgendes aus:
     - **Mitglieder:** Wählen Sie eine Gruppe aus, die den Benutzer enthält, dem Sie die Berechtigungen erteilen möchten.
-    - **Bereich:** Wählen Sie eine Gruppe aus, die die Benutzer enthält, die das oben ausgewählte Mitglied verwalten soll.
+    - **Bereich:** Wählen Sie eine Gruppe aus, die die Benutzer enthält, die das oben ausgewählte Mitglied verwalten soll. Sie können den Bereich auch auf **Alle Benutzer**, **Alle Geräte** oder **All Users & Devices** (Alle Benutzer und Geräte) festlegen.
 <br></br>
-5. Klicken Sie abschließend auf **OK**. Die neue Zuweisung wird in der Liste der Zuweisungen angezeigt.
+7. Klicken Sie abschließend auf **OK**. Die neue Zuweisung wird in der Liste der Zuweisungen angezeigt.
 
 ### <a name="intune-rbac-table"></a>Intune-Tabelle zur rollenbasierten Zugriffsteuerung
 
@@ -128,13 +126,13 @@ Sie können eine benutzerdefinierte Sicherheitsrolle erstellen, die alle für ei
 
 1. Klicken Sie im Bereich **Intune-Rollen – Alle Rollen** auf die benutzerdefinierte Rolle, die Sie zuweisen möchten.
 
-2. Klicken Sie im Bereich <*Rollenname*>-**Übersicht** erst auf **Verwalten** und dann auf **Zuweisungen**. Sie können in diesem Bereich auch vorhandene Rollen bearbeiten oder löschen.
+2. Klicken Sie im Bereich <*Rollenname*>-**Übersicht** auf **Zuweisungen**. Sie können in diesem Bereich auch vorhandene Rollen bearbeiten oder löschen.
 
 3. Klicken Sie im Bereich „Benutzerdefinierte Rolle“ auf **Zuweisen**.
 
 4. Geben Sie im Bereich **Rollenzuweisungen** einen **Namen** und eine optionale **Beschreibung** für die Zuweisung ein, und wählen Sie dann Folgendes aus:
     - **Mitglieder:** Wählen Sie eine Gruppe aus, die den Benutzer enthält, dem Sie die Berechtigungen erteilen möchten.
-    - **Bereich:** Wählen Sie eine Gruppe aus, die die Benutzer enthält, die das oben ausgewählte Mitglied verwalten soll.
+    - **Bereich:** Wählen Sie eine Gruppe aus, die die Benutzer enthält, die das oben ausgewählte Mitglied verwalten soll. Sie können den Bereich auch auf **Alle Benutzer**, **Alle Geräte** oder **All Users & Devices** (Alle Benutzer und Geräte) festlegen.
 <br></br>
 5. Klicken Sie abschließend auf **OK**. Die neue Zuweisung wird in der Liste der Zuweisungen angezeigt.
 
@@ -145,3 +143,5 @@ Sie können eine benutzerdefinierte Sicherheitsrolle erstellen, die alle für ei
 ## <a name="see-also"></a>Siehe auch
 
 [Zuweisen von Rollen mithilfe von Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+
+
