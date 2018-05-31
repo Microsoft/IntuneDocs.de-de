@@ -20,6 +20,7 @@ ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34223559"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden
 
@@ -89,7 +90,7 @@ Achten Sie beim Einrichten eines Geräts für einen Intune-Benutzer darauf, dass
     - **Apple-ID:** Geben Sie die Apple-ID des Kontos ein, das dem Programm für Volumenlizenzen zugeordnet ist.
     - **Land/Region**: Wählen Sie den regionalen VPP Store aus.  Intune synchronisiert VPP-Apps für alle Gebietsschemas aus dem jeweiligen regionalen VPP Store.
         > [!WARNING]  
-        > Wenn Sie das Land ändern, werden die Metadaten der App aktualisiert und die URL bei der nächsten Synchronisierung mit dem Apple-Dienst für Apps, die mit diesem Token erstellt wurden, gespeichert. Die App wird nicht aktualisiert, wenn sie in dem neuen regionalen Store nicht vorhanden ist.
+        > Wenn Sie das Land/die Region ändern, werden die Metadaten der App aktualisiert und die URL bei der nächsten Synchronisierung mit dem Apple-Dienst für Apps, die mit diesem Token erstellt wurden, gespeichert. Die App wird nicht aktualisiert, wenn sie in dem neuen regionalen Store nicht vorhanden ist.
 
     - **Typ des VPP-Kontos:** Wählen Sie **Unternehmen** oder **Bildungswesen** aus.
     - **Automatische App-Updates**: Zur Aktivierung von automatischen Updates können Sie zwischen **On** und **Off** auswählen. Nach der Aktivierung aktualisiert Intunes alle Apps, die für das bestimmte Token erworben wurden, über den Intune-Service beim Geräte-Check-In.

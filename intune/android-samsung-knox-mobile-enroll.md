@@ -20,6 +20,7 @@ ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/09/2018
+ms.locfileid: "33915810"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment
 
@@ -42,7 +43,7 @@ Beim Erwerb von Geräten von autorisierten Fachhändlern, die am Knox Deployment
 ## <a name="prerequisites"></a>Voraussetzungen
 
 Damit Sie sich bei Intune mit KME registrieren können, müssen Sie zuerst Ihr Unternehmen im Samsung Knox-Portal registrieren, indem Sie die folgenden Schritte ausführen:
-1.  [Vergewissern Sie sich, dass KME in Ihrer Region verfügbar ist](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME ist in über 55 Ländern verfügbar. Überprüfen Sie, ob Ihr Land für die Bereitstellung unterstützt wird.
+1.  [Vergewissern Sie sich, dass KME in Ihrer Region verfügbar ist](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME ist in über 55 Ländern verfügbar. Überprüfen Sie, ob Ihr Land/Region für die Bereitstellung unterstützt wird.
 
 2.  [Unterstützte Geräte](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME ist auf allen Samsung-Geräten mit mindestens Knox 2.4 verfügbar.
 

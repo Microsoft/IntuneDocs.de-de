@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31027645"
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Intune-Richtlinieneinstellungen für Windows 10-Geräte in Microsoft Intune
 
@@ -121,7 +122,7 @@ Verwenden Sie die **allgemeine Microsoft Intune-Konfigurationsrichtlinie** für 
 |**Senden von Intranetdatenverkehr an Internet Explorer zulassen**|Ermöglicht Benutzern, Intranetsites in Internet Explorer zu öffnen.<br>(Nur Windows 10 Desktop)|
 |**Nicht verfolgen (Do not track) zulassen**|Konfiguriert den Microsoft Edge-Browser zum Senden von DNT-Headern (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.|
 |**SmartScreen aktivieren**||
-|**Active Scripting zulassen**|Lässt die Ausführung von Skripts wie z.B. JavaScript im Edge-Browser zu.|
+|**Active Scripting zulassen**|Lässt die Ausführung von Skripts wie z.B. JavaScript im Microsoft Edge-Browser zu|
 |**Popups zulassen**|Gilt nur für Windows 10 Desktop|
 |**Cookies zulassen**||
 |**AutoAusfüllen zulassen**|Ermöglicht Benutzern, die Einstellungen für AutoVervollständigen im Browser zu ändern.<br>(Nur Windows 10 Desktop)|

@@ -1,6 +1,6 @@
 ---
 title: Geräteeinschränkungen für Windows Holographic for Business-Geräte in Microsoft Intune Azure | Microsoft-Dokumentation
-description: 'In diesem Artikel erhalten Sie Informationen zum Konfigurieren von Einstellungen zur Geräteeinschränkung in Microsoft Intune für Windows Holographic for Business. Die folgenden Aspekte werden behandelt: Aufhebung einer Registrierung, Geolocation, Kennwörter, Installieren von Apps aus dem App Store, Cookies und Popupmenüs in Edge, Windows Defender, Suchen, Cloud und Speicher, Bluetooth-Verbindungen, Systemzeit und Benutzerdaten in Azure.'
+description: 'In diesem Artikel erhalten Sie Informationen zum Konfigurieren von Einstellungen zur Geräteeinschränkung in Microsoft Intune für Windows Holographic for Business. Die folgenden Aspekte werden behandelt: Aufhebung einer Registrierung, Geolocation, Kennwörter, Installieren von Apps aus dem App Store, Cookies und Popupmenüs in Microsoft Edge, Windows Defender, Suchen, Cloud und Speicher, Bluetooth-Verbindungen, Systemzeit und Benutzerdaten in Azure.'
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,6 +17,7 @@ ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327873"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Einstellungen für Geräteeinschränkungen für Windows Holographic for Business in Intune
 
@@ -40,13 +41,13 @@ Die folgenden Einstellungen für Geräteeinschränkungen werden auf Geräten unt
 -   **Installation vertrauenswürdiger Apps:** Ermöglicht das Querladen von Apps, die mit einem vertrauenswürdigen Zertifikat signiert sind.
 -   **Entwicklersperre aufheben:** Ermöglicht dem Endbenutzer, Windows-Entwicklereinstellungen – z.B. das Zulassen quergeladener Apps – zu ändern.
 
-## <a name="edge-browser"></a>Edge-Browser
+## <a name="edge-browser"></a>Microsoft Edge-Browser
 
 -   **Cookies:** Erlaubt Browsern das Speichern von Internetcookies auf dem Gerät.
 -   **Popups:** Blockiert Popupfenster im Browser (gilt nur für Windows 10 Desktop).
 -   **Suchvorschläge:** Ermöglicht dem Suchmodul, Websites während der Eingabe von Suchausdrücken vorzuschlagen.
--   **Kennwort-Manager:** Aktiviert oder deaktiviert den Edge-Kennwort-Manager.
-- **DNT-Kopfzeilen senden:** Konfiguriert den Edge-Browser zum Senden von DNT-Headern (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.
+-   **Kennwort-Manager:** Aktiviert oder deaktiviert den Microsoft Edge-Kennwort-Manager.
+- **DNT-Kopfzeilen senden:** Konfiguriert den Microsoft Edge-Browser zum Senden von DNT-Headern (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 

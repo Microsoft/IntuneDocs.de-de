@@ -17,6 +17,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31834420"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Gerätebeschränkungen für Einstellungen unter Windows 10 (und höher) in Intune
 In diesem Artikel erfahren Sie alle Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für Windows 10-Geräte konfigurieren können.
@@ -148,32 +149,32 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 -   **Game DVR (nur Desktop):** Konfiguriert, ob Aufzeichnen und Senden von Spielen zulässig ist.
 -   **Nur Apps aus dem Store**: Konfiguriert, ob Benutzer Apps von anderen Orten als aus dem App-Store installieren können.
 
-## <a name="edge-browser"></a>Edge-Browser
+## <a name="edge-browser"></a>Microsoft Edge-Browser
 
 -   **Microsoft Edge-Browser (nur mobil):** Erlaubt die Verwendung des Edge-Webbrowsers auf dem Gerät.
--   **Adressleisten-Dropdown (nur Desktop):** Verhindert, dass Edge bei der Eingabe weiterhin eine Liste mit Vorschlägen in einer Dropdownliste anzeigt. So kann die zwischen Edge und Microsoft-Diensten genutzte Netzwerkbandbreite minimiert werden.
--   **Favoriten zwischen Microsoft-Browsern synchronisieren (nur Desktop):** Erlaubt Windows das Synchronisieren von Favoriten zwischen Internet Explorer und Edge.
--   **DNT-Kopfzeilen senden:** Konfiguriert den Edge-Browser zum Senden von DNT-Headern (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.
+-   **Adressleisten-Dropdown (nur Desktop):** Verhindert, dass Microsoft Edge bei der Eingabe weiterhin eine Liste mit Vorschlägen in einer Dropdownliste anzeigt. So kann die zwischen Microsoft Edge und Microsoft-Diensten genutzte Netzwerkbandbreite minimiert werden.
+-   **Favoriten zwischen Microsoft-Browsern synchronisieren (nur Desktop):** Erlaubt Windows das Synchronisieren von Favoriten zwischen Internet Explorer und Microsoft Edge.
+-   **DNT-Kopfzeilen senden:** Konfiguriert den Microsoft Edge-Browser zum Senden von DNT-Headern (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.
 -   **Cookies:** Erlaubt Browsern das Speichern von Internetcookies auf dem Gerät.
--   **Javascript:** Erlaubt die Ausführung von Skripts wie z.B. JavaScript im Edge-Browser.
+-   **Javascript:** Erlaubt die Ausführung von Skripts wie z.B. JavaScript im Microsoft Edge-Browser.
 -   **Popups:** Blockiert Popupfenster im Browser (gilt nur für Windows 10 Desktop).
 -   **Suchvorschläge:** Ermöglicht dem Suchmodul, Websites während der Eingabe von Suchausdrücken vorzuschlagen.
 -   **Datenverkehr im Intranet an Internet Explorer senden:** Erlaubt Benutzern, Intranetsites in Internet Explorer zu öffnen (nur Windows 10 Desktop).
 -   **AutoAusfüllen:** Erlaubt Benutzern, die Einstellungen für AutoAusfüllen im Browser zu ändern (nur Windows 10 Desktop).
--   **Kennwort-Manager:** Aktiviert oder deaktiviert den Edge-Kennwort-Manager.
+-   **Kennwort-Manager:** Aktiviert oder deaktiviert den Microsoft Edge-Kennwort-Manager.
 -   **Speicherort der Websiteliste für den Unternehmensmodus:** Gibt an, wo Sie die Liste der Websites finden, die im Unternehmensmodus geöffnet werden. Benutzer können diese Liste nicht bearbeiten.<br>(Nur Windows 10 Desktop)
--   **Entwicklungstools:** Hindert den Endbenutzer daran, die Edge-Entwicklertools aufzurufen.
--   **Erweiterungen:** Erlaubt dem Benutzer, Edge-Erweiterungen auf dem Gerät zu installieren.
+-   **Entwicklungstools:** Hindert den Endbenutzer daran, die Microsoft Edge-Entwicklertools aufzurufen.
+-   **Erweiterungen:** Erlaubt dem Benutzer, Microsoft Edge-Erweiterungen auf dem Gerät zu installieren.
 -   **InPrivate-Browsen:** Hindert den Endbenutzer daran, InPrivate-Browsersitzungen zu öffnen.
--   **Anzeigen der „Willkommen“-Seite:** Verhindert, dass die Einführungsseite bei der ersten Ausführung von Edge angezeigt wird.
-    -   **URL für erste Ausführung:** Gibt die URL einer Seite an, die bei der ersten Ausführung von Edge angezeigt wird (nur Windows 10 Mobile).
--   **Startseiten:** Fügt eine Liste der Websites hinzu, die Sie im Edge-Browser als Startseiten verwendet möchten (nur Desktop).
--   **Änderungen an Startseite:** Ermöglicht Benutzern das Ändern der Startseiten, die beim Öffnen von Edge angezeigt werden. Nutzen Sie die Einstellung der Startseiten, um die Seite oder Liste von Seiten zu erstellen, die beim Starten von Edge geöffnet werden.
--   **Zugriff auf about:flags-Seite blockieren:** Hindert den Benutzer am Zugriff auf die about:flags-Seite in Edge, die Entwickler- und experimentelle Einstellungen enthält.
+-   **Anzeigen der „Willkommen“-Seite:** Verhindert, dass die Einführungsseite bei der ersten Ausführung von Microsoft Edge angezeigt wird.
+    -   **URL für erste Ausführung:** Gibt die URL einer Seite an, die bei der ersten Ausführung von Microsoft Edge angezeigt wird (nur Windows 10 Mobile).
+-   **Startseiten:** Fügt eine Liste der Websites hinzu, die Sie im Microsoft Edge-Browser als Startseiten verwendet möchten (nur Desktop).
+-   **Änderungen an Startseite:** Ermöglicht Benutzern das Ändern der Startseiten, die beim Öffnen von Microsoft Edge angezeigt werden. Nutzen Sie die Einstellung der Startseiten, um die Seite oder Liste von Seiten zu erstellen, die beim Starten von Microsoft Edge geöffnet werden.
+-   **Zugriff auf about:flags-Seite blockieren:** Hindert den Benutzer am Zugriff auf die about:flags-Seite in Microsoft Edge, die Entwickler- und experimentelle Einstellungen enthält.
 -   **WebRTC-LocalHost-IP-Adresse:** Blockiert die Anzeige der Localhost-IP-Adresse des Benutzers bei Anrufen über das Internet-RTC-Protokoll.
 -   **Standardsuchmodul:** Gibt das zu verwendende Standardsuchmodul an. Endbenutzer können diesen Wert jederzeit ändern.
--   **Browserdaten beim Beenden löschen:** Löscht Verlauf und Browserdaten, wenn der Benutzer Edge beendet.
--   **Datenerfassung für Livekacheln:** Beendet das Sammeln von Daten durch Windows aus den Livekacheln, wenn der Benutzer eine Seite an das Startmenü von Edge anheften.
+-   **Browserdaten beim Beenden löschen:** Löscht Verlauf und Browserdaten, wenn der Benutzer Microsoft Edge beendet.
+-   **Datenerfassung für Livekacheln:** Beendet das Sammeln von Daten durch Windows aus den Livekacheln, wenn der Benutzer eine Seite an das Startmenü von Microsoft Edge anheften.
 -  **Favoritenliste:** Definiert den Pfad zur Favoritendatei. Beispiel: http://contoso.com/favorites.html.
 -  **Favoritenänderungen einschränken:** Legen Sie **Blockieren** fest, um zu verhindern, dass Benutzer die Favoritenliste hinzufügen, importieren, sortieren oder bearbeiten. 
 
