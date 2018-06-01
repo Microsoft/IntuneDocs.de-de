@@ -14,11 +14,12 @@ ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ea7a9219c69326dcefc71a35339ebb10a3c5ed1
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 1c8eb121b3db52f0fdfc30d7d8dff7ef0f7bf97b
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34456349"
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Filtereinstellungen für Webinhalte für iOS-Geräte
 
@@ -65,9 +66,9 @@ Wenn Sie hier keine URLs angeben, können Endbenutzer keine Websites außer „m
 
 > [!IMPORTANT]
 > Die folgenden URLs werden von Intune automatisch zugelassen.
-> - www.microsoft.com
-> - www.microsoft.net
-> - www.apple.com
+> - <www.microsoft.com>
+> - <www.microsoft.net>
+> - <www.apple.com>
 
 ## <a name="finish-up"></a>Fertig stellen
 
