@@ -13,10 +13,11 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: 7272e8e088ae2c2ecad1756233281c42a80a279b
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "32328077"
 ---
 # <a name="custom-device-settings-for-devices-running-windows-holographic-for-business-in-intune"></a>Benutzerdefinierte Geräteeinstellungen für Windows Holographic for Business-Geräte in Intune
 

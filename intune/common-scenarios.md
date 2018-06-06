@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 05/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 1f37d4ff-b5a7-4a89-8884-a6184908b09c
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e9cf1b9c7d950707c268fd509c184be7709f53e3
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9e2ad930a9ff9a12e649c6ff46f0a9f6fcacca16
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583705"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Häufige Verwendungsarten von Microsoft Intune
 
