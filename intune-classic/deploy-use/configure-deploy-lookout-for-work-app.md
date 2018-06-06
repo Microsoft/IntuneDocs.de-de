@@ -14,11 +14,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1b08ac6049bc7bbbf5c2203f156a6c03b6fc7a51
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d997e9db7aa2af4e598d47ab3c9a678e889632e8
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34569390"
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>Konfigurieren und Bereitstellen der Lookout for Work-App
 
@@ -85,11 +86,11 @@ In diesem Artikel wird die Konfiguration und Bereitstellung der Lookout for Work
 
    Aktivieren Sie die Option **Erforderliche Installation**, um vorzuschreiben, dass die Lookout-App auf dem Gerät des Benutzers installiert wird.
 
-## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Was geschieht beim Öffnen der bereitgestellten App auf dem Gerät?
-https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Wenn der Benutzer Lookout for Work auf dem mobilen Gerät öffnet, wird er aufgefordert, die App zu aktivieren und die Option „Bei Azure Active Directory anmelden“ auszuwählen. Eine ausführliche exemplarische Vorgehensweise mit dem Arbeitsablauf für den Endbenutzer finden sich in folgenden Themen:
+## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>Was geschieht, wenn die bereitgestellte App auf dem Gerät geöffnet ist 
+Wenn der Benutzer Lookout for Work auf dem Gerät öffnet, wird er aufgefordert, die App zu aktivieren. Wählen Sie die Option „Bei Azure Active Directory anmelden“ aus. Eine ausführliche exemplarische Vorgehensweise für Endbenutzer finden Sie in den folgenden Themen:
 
 * [Sie werden zur Installation von Lookout for Work auf Ihrem Android-Gerät aufgefordert](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
-
+    
 * [Sie müssen eine Bedrohung beheben, die Lookout for Work auf Ihrem Android-Gerät gefunden hat](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 
 ## <a name="next-steps"></a>Nächste Schritte
