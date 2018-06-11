@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744702"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für Android-Geräte in Intune
 
@@ -122,6 +123,17 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 - **Laufzeitintegrität der Unternehmensportal-App**: Überprüft, ob die Unternehmensportal-App die Standard-Laufzeitumgebung installiert hat, ordnungsgemäß signiert ist, sich nicht im Debug-Modus befindet und von einer bekannten Quelle installiert wurde.
 - **USB-Debugging auf Gerät blockieren** (Android 4.2 oder höher): Wählen Sie diese Option, um zu verhindern, dass Geräte die USB-Debuggingfunktion verwenden.
 - **Mindestens erforderliche Sicherheitspatchebene** (Android 6.0 oder höher): Wählen Sie die älteste Sicherheitspatchebene, die ein Gerät haben kann. Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht kompatibel. Das Datum muss im Format „`YYYY-MM-DD`“ eingegeben werden.
+
+## <a name="locations"></a>Pfade
+
+Sie können in Ihrer Richtlinie vorhandene Standorte auswählen. Haben Sie noch keine Standorte? Unter [Use Locations (network fence) in Intune (Verwenden von Standorten in Intune)](use-network-locations.md) erhalten Sie weitere Informationen.
+
+1. Klicken Sie auf **Select locations** (Standorte auswählen).
+2. Wählen Sie aus Ihrer Liste Ihren Standort aus, und klicken Sie auf **Select** (Auswählen).
+3. **Speichern** Sie die Richtlinie.
+4. Klicken Sie auf **Actions for noncompliance** (Aktionen bei Nichtkonformität). Die Standardaktion markiert das Gerät umgehend als nicht konform. Diese Aktion wird ausgeführt, wenn Sie mindestens einen Standort auswählen und wenn das Gerät nicht mit dem ausgewählten Standort verbunden ist.
+
+  Sie können diese Aktion anpassen, sodass der Zeitplan aktualisiert wird, wenn das Gerät als nicht konform markiert wird, z.B. nach einem Tag. Sie können auch eine zweite Aktion konfigurieren, durch die E-Mails an Benutzer gesendet werden, wenn das Gerät nicht mehr mit dem Standort konform ist.
 
 ## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen
 

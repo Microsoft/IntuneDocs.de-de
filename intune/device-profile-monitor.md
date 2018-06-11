@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/17/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c2eb08db58940ed575b3dea011395edd6711fc
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744787"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Überwachen von Geräteprofilen in Microsoft Intune
 
@@ -41,19 +42,27 @@ Nachdem Sie Ihr Geräteprofil erstellt haben, bietet Intune grafische Diagramme.
 1. Wählen Sie ein vorhandenes Profil aus. Wählen Sie z.B. ein macOS-Profil aus.
 2. Wählen Sie die Registerkarte **Übersicht** aus.
 
-    Das grafische Diagramm zeigt die Anzahl der Geräte an, die einem bestimmten Geräteprofil zugewiesen sind. Wenn das Gerätekonfigurationsprofil z.B. für macOS-Geräte gilt, wird im Diagramm nur die Anzahl der macOS-Geräte aufgelistet.
+    Das Grafikdiagramm oben zeigt die Anzahl der Geräte an, die einem bestimmten Geräteprofil zugewiesen sind. Wenn das Gerätekonfigurationsprofil z.B. für macOS-Geräte gilt, wird im Diagramm nur die Anzahl der macOS-Geräte aufgelistet.
 
     Es zeigt auch die Anzahl der Geräte anderer Plattformen an, die dem gleichen Geräteprofil zugewiesen sind. Es zeigt beispielsweise die Anzahl der Nicht-macOS-Geräte an.
 
     ![Anzeigen der Anzahl der Geräte, die dem Geräteprofil zugewiesen sind](./media/device-configuration-profile-graphical-chart.png)
 
-3. Wählen Sie den Kreis im grafischen Diagramms an. Der **Gerätestatus** wird geöffnet.
+    Das Grafikdiagramm unten zeigt die Anzahl der Benutzer an, die einem bestimmten Geräteprofil zugewiesen sind. Wenn das Gerätekonfigurationsprofil z.B. für macOS-Benutzer gilt, wird im Diagramm nur die Anzahl der macOS-Benutzer aufgelistet.
+
+3. Wählen Sie den Kreis im oberen Grafikdiagramm aus. Der **Gerätestatus** wird geöffnet.
 
     Die dem Profil zugeordneten Geräte sind aufgelistet, und es wird angezeigt, ob das Profil erfolgreich bereitgestellt wurde. Beachten Sie auch, dass nur die Geräte der spezifischen Plattform (z.B. macOS) aufgelistet sind.
 
-    Schließen Sie die Gerätestatusdetails.
+    Schließen Sie die **Gerätestatusdetails**.
 
-4. In den Eigenschaften des Profils (wählen Sie unter **Profile** ein bestimmtes Profil aus) können Sie auch vorhandene Eigenschaften ändern:
+4. Wählen Sie den Kreis im unteren Grafikdiagramm. Der **Benutzerstatus** wird angezeigt. 
+
+    Die dem Profil zugeordneten Benutzer sind aufgelistet, und es wird angezeigt, ob das Profil erfolgreich bereitgestellt wurde. Beachten Sie auch, dass nur die Benutzer der spezifischen Plattform (z.B. macOS) aufgelistet sind.
+
+    Schließen Sie die **Benutzerstatusdetails**.
+
+5. Wählen Sie in der Liste **Profile** dann ein bestimmtes Profil aus. Sie können auch vorhandene Eigenschaften ändern:
   - **Eigenschaften**: Ändern Sie den Namen, oder aktualisieren Sie alle vorhandenen Einstellungen.
   - **Zuweisungen**: Schließen Sie Geräte für die Anwendung der Richtlinie ein oder davon aus. Wählen Sie **Ausgewählte Gruppen** aus, um bestimmte Gruppen auszuwählen.
   - **Gerätestatus**: Die dem Profil zugeordneten Geräte sind aufgelistet, und es wird angezeigt, ob das Profil erfolgreich bereitgestellt wurde. Sie können ein bestimmtes Gerät einschließlich der installierten Apps auswählen, um noch mehr Details zu erfahren.

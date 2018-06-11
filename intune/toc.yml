@@ -372,6 +372,8 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
+        - name: Konfigurieren von Kiosk-Einstellungen
+          href: kiosk-settings.md
         - name: Konfigurieren von E-Mail-Einstellungen
           href: email-settings-configure.md
           items:
@@ -411,12 +413,14 @@
               href: wi-fi-settings-macos.md
             - name: Windows 8.1 und Windows 10
               href: wi-fi-settings-import-windows-8-1.md
+        - name: Education
+          items:
+            - name: Freigegebene iOS-Geräte
+              href: education-settings-configure-ios-shared.md
+            - name: Windows 10
+              href: education-settings-configure.md
         - name: Konfigurieren der Einstellungen des Windows 10-Editionsupgrades
           href: edition-upgrade-configure-windows-10.md
-        - name: Konfigurieren von Einstellungen für Windows 10 Education
-          href: education-settings-configure.md
-        - name: Konfigurieren von freigegebenen iOS-Geräten für Bildungseinrichtungen
-          href: education-settings-configure-ios-shared.md
         - name: Konfigurieren von iOS-Updaterichtlinien
           href: software-updates-ios.md
         - name: Konfigurieren von Zertifikaten
@@ -455,6 +459,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Erstellen einer Windows-Richtlinie
           href: compliance-policy-create-windows.md
+        - name: Standortbasierte Richtlinie
+          href: use-network-locations.md
         - name: Richtlinie auswerten
           href: policy-evaluate.md
         - name: Aktionen bei Inkompatibilität

@@ -14,11 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 183eb3f121e1b5c53673d10a04d0710baeb5a703
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: a1476ad4237b6355d0cb87fcc643bf0234e7f457
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744770"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Erstellen einer Richtlinie für bedingten Zugriff auf eine lokale Installation von Exchange und auf das ältere Exchange Online Dedicated
 
@@ -37,9 +38,9 @@ Bevor Sie den bedingten Zugriff konfigurieren können, müssen Sie Folgendes üb
 - Sie müssen den [lokalen Exchange-Connector für Exchange Active Sync](exchange-connector-install.md) verwenden, der Intune mit Exchange lokal verbindet.
 
     >[!IMPORTANT]
-    >Der lokale Exchange-Connector ist spezifisch für Ihren Intune-Mandanten und kann mit keinem anderen Mandanten verwendet werden. Sie müssen auch sicherstellen, dass der Exchange-Connector für Ihren Mandanten **auf nur einem Computer** installiert ist.
+    >Der lokale Exchange-Connector ist spezifisch für Ihren Intune-Mandanten und kann mit keinem anderen Mandanten verwendet werden. Intune unterstützt jetzt mehrere lokale Exchange-Connectors pro Abonnement. Wenn Sie über mehr als eine lokale Exchange-Organisation verfügen, können Sie einen separaten Connector für jede Exchange-Organisation einrichten.
 
-- Der Connector kann auf jedem Computer installiert werden, solange dieser Computer mit dem Exchange-Server kommunizieren kann.
+- Der Connector für eine lokale Exchange-Organisation kann auf jedem Computer installiert werden, solange dieser Computer mit dem Exchange-Server kommunizieren kann.
 
 - Der Connector unterstützt die **Exchange-Clientzugriffsserver-Umgebung**. Technisch können Sie den Connector auch direkt auf dem Exchange-Clientzugriffsserver installieren, aber dies ist nicht zu empfehlen, da die Last auf dem Server dadurch erhöht wird. Sie müssen den Connector so konfigurieren, dass er mit einem der Exchange-Clientzugriffsserver kommuniziert.
 
@@ -49,7 +50,7 @@ Bevor Sie den bedingten Zugriff konfigurieren können, müssen Sie Folgendes üb
     - Es muss bei Intune **registriert** sein oder sich um einen in die Domäne eingebundenen PC handeln.
     - **Es muss in Azure Active Directory registriert sein**. Darüber hinaus muss die Exchange ActiveSync-ID des Clients in Azure Active Directory registriert sein.
 <br></br>
-- AAD DRS wird automatisch für Intune und Office 365-Kunden aktiviert. Kunden, die bereits den AD FS Device Registration Service bereitgestellt haben, sehen keine registrierten Geräte in ihrem lokalen Active Directory. **Dies gilt nicht für Windows-PCs und Windows Phone-Geräte.**
+- Der Azure AD Device Registration-Dienst wird automatisch für Intune und Office 365-Kunden aktiviert. Kunden, die bereits den AD FS Device Registration Service bereitgestellt haben, sehen keine registrierten Geräte in ihrem lokalen Active Directory. **Dies gilt nicht für Windows-PCs und Windows Phone-Geräte.**
 
 - Es besteht **Konformität** mit allen für das Gerät festgelegten Konformitätsrichtlinien.
 
@@ -89,11 +90,11 @@ Die systemeigene **E-Mail**-Anwendung unter Windows 8.1 und höher (bei Registri
 1. Klicken Sie im Bereich **Exchange on-premises access** (Zugriff auf eine lokale Installation von Exchange) auf die Option **Ja**, um die Zugriffssteuerung für eine lokale Installation von Exchange zu aktivieren.
 
     > [!NOTE]
-    > Wenn Sie den lokalen Connector für Exchange Active Sync nicht konfiguriert haben, ist diese Option deaktiviert.  Sie müssen diesen Connector zunächst installieren und konfigurieren, bevor Sie den bedingten Zugriff auf Exchange lokal aktivieren. Weitere Informationen finden Sie unter [Installieren des lokalen Exchange Connectors für Intune](exchange-connector-install.md).
+    > Wenn Sie keinen lokalen Connector für Exchange Active Sync konfiguriert haben, ist diese Option deaktiviert.  Sie müssen zunächst mindestens einen Connector installieren und konfigurieren, bevor Sie den bedingten Zugriff auf Exchange lokal aktivieren. Weitere Informationen finden Sie unter [Installieren des lokalen Exchange Connectors für Intune](exchange-connector-install.md).
 
 1. Wählen Sie unter **Zuweisung** die Option **Eingeschlossene Gruppen** aus.  Verwenden Sie die Sicherheitsbenutzergruppe, auf die bedingter Zugriff angewendet werden soll. In diesem Fall müssen die Benutzer ihre Geräte selbst in Intune registrieren und die Konformität mit den Konformitätsprofilen sicherstellen.
 
-1. Wenn Sie eine bestimmte Gruppen von Benutzern ausschließen möchten, können Sie dazu **Ausgeschlossene Gruppen** auswählen. Wählen Sie anschließend eine Benutzergruppe aus, die Sie von der erforderlichen Registrierung des Geräts und der Konformitätsprüfung ausschließen möchten.
+1. Wenn Sie bestimmte Gruppen von Benutzern ausschließen möchten, können Sie dazu **Ausgeschlossene Gruppen** auswählen. Wählen Sie anschließend eine Benutzergruppe aus, die Sie von der erforderlichen Registrierung des Geräts und der Konformitätsprüfung ausschließen möchten.
 
 1. Wählen Sie unter **Einstellungen** die Option **Benutzerbenachrichtigungen** aus, um die Standard-E-Mail-Nachricht zu ändern. Diese Meldung wird an Benutzer gesendet, wenn ihr Gerät nicht konform ist und sie auf Exchange lokal zugreifen möchten. Die Nachrichtenvorlage verwendet Markupsprache.  Sie sehen während der Eingabe auch eine Vorschau der Nachricht.
     > [!TIP]

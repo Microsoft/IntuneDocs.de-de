@@ -1,11 +1,11 @@
 ---
 title: So informieren sie Ihre Endbenutzer über Microsoft Intune | Microsoft Intune
-description: Geben Sie diese Informationen an Ihre Endbenutzer weiter, damit Ihre Intune-Bereitstellung Erfolg hat.
+description: Geben Sie diese Informationen an Ihre Gerätebenutzer weiter, damit Ihre Intune-Bereitstellung Erfolg hat.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/10/2017
+ms.date: 06/01/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,46 +13,51 @@ ms.technology: ''
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.openlocfilehash: a8b5f44482a55a6bb9e9da9e2aa9a8fb67f0a713
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: dfe17cd582682126c889662dd942117c3c68dd10
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34717994"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>So informieren sie Ihre Endbenutzer über Microsoft Intune
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Mit Microsoft Intune können Sie Ihre Belegschaft mit mobilen Geräten ausstatten, ohne dass Ihre Unternehmensdaten gefährdet werden. Zu einer erfolgreichen Bereitstellung tragen viele Schritte bei; darunter z.B. das Beurteilen von Intune durch eine [kostenlose Testversion](app-sdk.md).
+Mit Microsoft Intune können Sie Ihre Belegschaft mit mobilen Geräten ausstatten, ohne dass Ihre Unternehmensdaten gefährdet werden. Probieren Sie die [kostenlose Testversion](app-sdk.md) aus, um die Intune-Bereitstellung in Ihrer Organisation zu testen.
 
-Durch keine dieser Technologien wird jedoch garantiert, dass Ihre Benutzer verstehen, wie wichtig es ist, dass Sie deren Geräte verwalten. Tatsächlich werden viele Ihrer Endbenutzer das Gefühl haben, dass Sie in ihre Privatsphäre eindringen – besonders dann, wenn Sie Intune als [Bring-Your-Own-Device (BYOD)-Lösung](/enterprise-mobility-security/solutions/byod-design-considerations-guide) verwenden.
+Wenn Sie Microsoft Intune implementieren, ist es wichtig, dass Angestellte verstehen, weshalb Geräteverwaltung und Enterprise Mobility nötig sind. Wenn keine Erklärung Ihrerseits erfolgt, nehmen einige Benutzer diese Maßnahme möglicherweise als Eindringen in ihre Privatsphäre auf. Wenn Sie Intune als [BYOD-Lösung](/enterprise-mobility-security/solutions/byod-design-considerations-guide) bereitstellen, steigen die Ängste der Benutzer bezüglich der Privatsphäre.
 
 > [!Important]
-> Für eine erfolgreiche Einführung ist es essentiell, dass Sie die Ängste Ihrer Endbenutzer bezüglich der Verwaltung ihrer Geräte durch Ihr Unternehmen verstehen und proaktiv ansprechen.
+> Für eine erfolgreiche Einführung ist es essentiell, dass Sie die Ängste der Benutzer bezüglich der Verwaltung ihrer Geräte durch Ihr Unternehmen verstehen und proaktiv ansprechen.
 
-Zur Einführung gehört nicht nur, dass die Technologie eingesetzt und über die Belegschaft hinweg verteilt wird, sondern auch, dass Sie die Gesamtheit Ihrer Endbenutzer dazu bringen, den sicheren Zugriff über Intune als sinnvoll zu akzeptieren. Möglicherweise fühlen sich Benutzer von der Unternehmensmobilität eingeschüchtert, weil wir ihnen kurz gesagt nicht ausreichend erklären, zu welchem Zweck die Unternehmensmobilität verwendet wird, was sie kann – und was sie nicht kann.
+Die erfolgreiche Einführung besteht nicht nur aus der Verteilung neuer, funktionaler Technologien in Ihrer Belegschaft. Gleichzeitig müssen Sie auch dafür sorgen, dass Benutzer die neue Technologie verstehen und annehmen. Deshalb ist es essentiell, dass Benutzer die von Intune bereitgestellte Datensicherheit verstehen und annehmen. 
 
-## <a name="things-to-consider-about-your-end-users"></a>Worauf Sie bei Ihren Endbenutzern achten sollten
+## <a name="things-to-consider-about-your-users"></a>Worauf Sie bei Ihren Benutzern achten sollten
 
-__Wie erfahren sind Ihre Endbenutzer?__ Möglicherweise haben Ihre Endbenutzer unterschiedlichste Erfahrungen mit verschiedenen Technologien. Diese Erfahrungen können sowohl positiv als auch negativ sein – von Erinnerungsfotos ihrer Kinder bis hin zu dem Tag, an dem sie ihr Gerät ins Waschbecken haben fallen lassen und dadurch alle Daten weg waren, die nicht durch ein Backup gesichert waren. Diese Erfahrungen veranschaulichen, wie mit Technologie umgegangen wird und wie der persönliche und geschäftliche Gebrauch von Geräten wahrgenommen wird.
+__Wie erfahren sind die Benutzer im Bereich Technologie?__ Der Erfahrungs- und Wissensgrad Ihrer Benutzer bezüglich Technologie kann variieren. Die Erfahrungen können sowohl positiv (Fotografieren während des Familienurlaubs) als auch negativ (Gerät wurde ins Wasser fallen gelassen) sein. Diese Erfahrungen beeinträchtigen die Einstellung von Benutzern bezüglich privatem und geschäftlichem Einsatz von Technologie.
 
-__Was bedeutet Mobilitätsmanagement für mich?__ Möglicherweise ist das Wissen der Benutzer, inwieweit Sie auf ihre Geräte zugreifen (und nicht zugreifen) können, eingeschränkt. Benutzer haben besonders Angst davor, dass die IT- und Führungsabteilung jeden ihrer Schritte überwachen könnten. Dies gilt besonders für wenig erfahrene Benutzer, die möglicherweise davon ausgehen, dass alles, was sie auf ihrem Gerät machen, privat ist. Erfahrenere Benutzer haben möglicherweise konkretere Ängste, dass „Big Brother“ ihr Gerät ausspioniert und übertragen möglicherweise diese Ängste auf ihre Mitarbeiter.
+__Was bedeutet Mobilitätsverwaltung für Benutzer?__ Benutzer verstehen möglicherweise nicht, welches Ausmaß Ihr Zugriff auf ihre Geräte und Informationen hat. Es ist wahrscheinlich, dass Benutzer Bedenken haben, dass die IT-Abteilung und die Führungsebene ihre Handlungen überwachen. Weniger erfahrene Gerätebenutzer gehen möglicherweise davon aus, dass alle Aktivitäten auf Ihrem Gerät privat sind. 
 
-__Auf welche Weise bereitet das meinen Endbenutzern Unannehmlichkeiten?__ Es beansprucht Zeit, Apps zu installieren, Geräte zu registrieren und die Kompatibilität aufrechtzuerhalten. Bei jeder Bereitstellung mit Intune hat die Sicherheit Ihrer Unternehmensdaten höchste Priorität; allerdings ist es einfach nur unpraktisch, auf einem persönlichen Geräte ein Kennwort zu verlangen, und führt nur dazu, dass Ihre Benutzer davon genervt sind, dass Sie ihre Geräte verwalten. Das Installieren erforderlicher Updates während einer unternehmenswichtigen Telefonkonferenz führt möglicherweise dazu, dass Ihre Benutzer weniger produktiv sind, was den Zweck der Arbeit mit mobilen Geräten verfehlt.
+__Welche negativen Auswirkungen hat Intune für Benutzer?__  Bedenken und beachten Sie, dass Benutzer Zeit investieren müssen, um Apps zu installieren, Geräte zu registrieren und Konformität zu gewährleisten. Höchste Priorität von Intune-Bereitstellungen hat das Sichern von Unternehmensdaten. Die Einstellung von Benutzern gegenüber der Geräteverwaltung kann negativ beeinflusst werden, wenn Sie Richtlinien erzwingen, die Folgendes umfassen:  
+* Unverhältnismäßig viele erforderliche Kennungen auf persönlichen Geräten
+* Senden erforderlicher App-Updates während wichtiger geschäftlicher Telefongespräche  
+
+Diese Richtlinien könnten sich zudem negativ auf die Produktivität Ihrer Mitarbeiter auswirken. 
 
 ## <a name="things-you-should-do"></a>Was Sie tun sollten
 
-Das Mindern dieser Ängste macht das Bereitstellen reibungsloser. Hier ist eine Liste mit Möglichkeiten, die es Ihren Endbenutzern leichter machen, die Geräteverwaltung zu akzeptieren.
+Sehen Sie sich die folgende Liste mit Tipps an, um die Intune-Bereitstellung in Ihrem Unternehmen für Gerätebenutzer einfacher zu gestalten.
 
-* __Erfinderisch sein.__ Die Intune-Dokumentation stellt unterschiedlichste Inhalte zur Verfügung, die Ihren Endbenutzern dabei helfen, herauszufinden, wie sie was machen können – z.B. wie sie ihre Geräte registrieren und Probleme beheben. Dazu zählen beispielsweise Artikel, zu denen Benutzer vom Unternehmensportal aus gelangen; diese sind in Abschnitte zur Installation der Unternehmensportal-App und der Registrierung in Intune, allgemeine Aufgaben, die Benutzer auf ihren Geräten ausführen können und Problembehandlung aufgeteilt. Diese Dokumentation finden Sie unter [Verwenden verwalteter Geräte zum Erledigen von Aufgaben](/intune-user-help/use-managed-devices-to-get-work-done).
+* __Erfinderisch sein.__ Durch die Intune-Dokumentation werden Benutzer beim Durchführen Intune-spezifischer Aufgaben unterstützt, wie z.B. die Geräteregistrierung und das Beheben von Problemen mit Geräten. Über das Unternehmensportal sind einige Artikel direkt zugänglich. Die Artikel befassen sich mit Themen wie der Installation der Unternehmensportal-App und der Intune-Registrierung, allgemeinen Aufgaben, die Benutzer auf ihren Geräten ausführen können, und Problembehandlung. Eine Liste der verschiedenen Dokumentationsartikel finden Sie zudem unter [Verwenden verwalteter Geräte zum Erledigen von Aufgaben](/intune-user-help/use-managed-devices-to-get-work-done).
 
-* __Erreichbar sein.__ Es ist wichtig, das Endbenutzer wissen, an wen sie sich wenden müssen, wenn sie Hilfe mit ihren Geräten brauchen. Stellen Sie sicher, dass Sie beim [Anpassen des Unternehmensportals](company-portal-customize.md) die Kontaktinformationen des IT-Administrators angeben, damit Ihre Benutzer ggf. Hilfe anfordern können.
+* __Erreichbar sein.__ Informieren Sie Benutzer, an wen sie sich bezüglich Geräteproblemen wenden können. Wenn Sie das [Unternehmensportal anpassen](company-portal-customize.md), achten Sie darauf, dass Sie die Kontaktinformationen Ihres IT-Administrators angeben.
 
-* __Persönlich sein.__ Wenn Sie Ihren Endbenutzern nur Anweisungen geben, die sich nicht auf die vorliegende Bereitstellung beziehen, kann es auf Benutzer so wirken, als hätten Sie sich keine Gedanken über ihren konkreten Fall gemacht. Sie können diese [customizable, end user Intune enrollment template for IT administrators (anpassbare Vorlage mit Intune-Endbenutzer-Registrierungsanweisungen für IT-Administratoren)](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) verwenden, um Ihre eigenen Registrierungsanweisungen für Ihre Endbenutzer zu verfassen.
+* __Persönlich sein.__ Stellen Sie Informationen bereit, die sich explizit auf die Bereitstellung in Ihrem Unternehmen beziehen. Wenn Sie dies tun, vermittelt dies Benutzern, dass Sie sich darum bemühen, den Prozess für sie so einfach wie möglich zu gestalten. Sie können diese [anpassbare Vorlage für die Intune-Benutzerregistrierung](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) verwenden, um Ihre eigenen Registrierungsanweisungen für Ihre Benutzer zu verfassen.
 
-* __Unterschiedliche Kommunikationsformen finden.__ Genauso wie mit [unterschiedlichen Lernmethoden](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) haben Benutzer bestimmte Arten der Informationsaufnahme, die sie anderen Arten vorziehen. Auf Channel 9 stellen wir Benutzern, die Videos der Dokumentation vorziehen, [Videotutorials zur Registrierung verschiedener Gerätetypen](https://channel9.msdn.com/Series/IntuneEnrollment) zur Verfügung. Diese Videos können Sie auch direkt in Ihre eigene [SharePoint-Website](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) einbetten oder als lokale Kopie herunterladen – sowohl als Video- als auch als Audiodatei.
+* __Unterschiedliche Kommunikationsformen finden.__ Benutzer verwenden [unterschiedlichen Lernmethoden](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) und ziehen bestimmte Arten der Informationsaufnahme vor. Für visuelle Lerner stellt Intune [Videos zur Registrierung verschiedener Gerätetypen](https://channel9.msdn.com/Series/IntuneEnrollment) auf Channel 9 bereit. Sie können Videos direkt auf Ihrer [SharePoint-Website](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) einbetten. Sie können zudem lokale Kopien des Videos oder des Audiotitels herunterladen.
 
-* __Aufmerksam sein.__ Die Endbenutzererfahrung wirkt sich auf Ihre Produktivität aus; ihre Erfahrung zu verstehen, erleichtert es Ihnen, die Probleme der Benutzer zu beheben, wenn sie sich an Sie wenden. Wenn Sie wissen, wie Endbenutzer an ihre Apps kommen, ist es für Sie sehr viel einfacher, ihre Probleme einzuordnen und schneller zu lösen.
+* __Aufmerksam sein.__ Die Intune-Servicequalität wirkt sich auch auf Ihre Produktivität aus. Wenn Sie verstehen, welchen Prozess die Benutzer durchlaufen, können Sie leichter Probleme von Benutzern und Geräten beheben. Sie können z.B. in Erfahrung bringen, wie Ihre Benutzer ihre Apps erhalten. Wenn Sie dies frühzeitig wissen, können Sie Probleme einfacher und schneller diagnostizieren und beheben.
 
 * **Android**
   * [Ein Android-Gerät mit Intune verwenden](/intune-user-help/using-your-android-device-with-intune)
@@ -66,9 +71,9 @@ Das Mindern dieser Ängste macht das Bereitstellen reibungsloser. Hier ist eine 
   * [Ein Windows-Gerät mit Intune verwenden](/intune-user-help/using-your-windows-device-with-intune)
   * [Wie Ihre Windows-Benutzer Apps erhalten](end-user-apps-windows.md)
 
-* __Offen sein.__ Sagen Sie Ihren Benutzern genau, was Sie auf ihren Geräten verwalten werden. Sagen Sie ihnen, welche Daten Sie erfassen, und weshalb Sie diese erfassen. Informieren Sie sie darüber, wie Sie die erfassten Daten weiter verwenden. [Microsoft ist davon überzeugt, dass Sie ein Recht darauf haben, so viele Informationen wie möglich darüber zu erhalten, wie wir mit Ihren Kundendaten in der Cloud verfahren](https://www.microsoft.com/trustcenter/about/transparency). Außerdem sind wir davon überzeugt, dass Ihre Endbenutzerzufriedenheit mit Intune durch diese Strategie deutlich verbessert wird.
+* __Offen sein.__ Informieren Sie Ihrer Benutzer darüber, was Sie auf Benutzergeräten verwalten. Sagen Sie ihnen, welche Daten Sie erfassen, und weshalb Sie diese erfassen. Informieren Sie sie darüber, wie Sie die Daten weiter verwenden. [Microsoft ist davon überzeugt, dass Sie ein Recht darauf haben, so viele Informationen wie möglich darüber zu erhalten, wie wir mit Ihren Kundendaten in der Cloud verfahren](https://www.microsoft.com/trustcenter/about/transparency). Außerdem sind wir davon überzeugt, dass die Benutzerzufriedenheit mit Intune durch diese Strategie deutlich verbessert wird.
 
 >[!Note]
 > Transparenz, wo immer es geht, ist wesentlich für den Erfolg Ihrer Bereitstellung.
 
-Ihr Ziel sollte es sein, Vertrauen und ausgezeichnete Kompatibilätsrichtlinien miteinander zu vereinen, um sicherzustellen, dass Endbenutzer wissen, dass Sie sich bestimmte persönliche Daten gar nicht anschauen *möchten*, selbst wenn Sie *könnten*, und dass Sie haften könnten, wenn Sie in ihre Privatsphäre eindringen. Bei besonders schwierigen Angestellten kann eine in Zusammenarbeit mit Ihrer Rechts- und Personalabteilung verfasste Stellungnahme helfen.
+Es ist wichtig, Vertrauen und hervorragende Konformitätsrichtlinien miteinander zu kombinieren. Benutzern muss klar sein, dass Sie bestimmte Arten von personenbezogenen Daten gar nicht einsehen *möchten*, selbst wenn Sie es *könnten*. Betonen Sie, dass ein Verstoß gegen die Privatsphäre der Benutzer rechtliche Folgen für Sie haben könnte. Wenn Sie gemeinsam mit Ihrer Rechts- und Personalabteilung eine Stellungnahme verfassen, kann dies Ängste von Angestellten bezüglich Privatsphäre weiter mindern.

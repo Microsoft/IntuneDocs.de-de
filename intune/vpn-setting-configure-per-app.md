@@ -1,12 +1,11 @@
 ---
-title: Die Einrichtung des Pro-App-VPN in Microsoft Intune für iOS-Geräte
-titleSuffix: ''
-description: Sie können angeben, welche verwalteten Apps Ihr virtuelles privates Netzwerk (VPN) auf mit Intune verwalteten iOS-Geräten verwenden können.
+title: Einrichten des Pro-App-VPN für iOS-Geräte in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: In diesem Artikel erfahren Sie die Voraussetzungen, erstellen eine Gruppe für VPN-Benutzer (virtuelles privates Netzwerk), fügen ein SCEP-Zertifikatprofil hinzu, konfigurieren ein Pro-App-VPN-Profil und weisen dem VPN-Profil in Microsoft Intune auf iOS-Geräten mehrere Apps zu. Außerdem werden die Schritte zur Überprüfung der VPN-Verbindung auf dem Gerät beschrieben.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,25 +14,31 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46857dcf24befb0cf552769d48b99020c36e3e5b
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
+ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34753891"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Die Einrichtung des Pro-App-VPN in Intune für iOS-Geräte
 
 Sie können angeben, welche verwalteten Apps Ihr virtuelles privates Netzwerk (VPN) auf mit Intune verwalteten iOS-Geräten verwenden können. Wenn Sie ein Pro-App-VPN in Intune erstellen, verbindet sich ein Benutzer automatisch über Ihr VPN, wenn dieser auf Unternehmensdokumente zugreift.
 
-Pro-App-VPN ist derzeit für die folgenden Anbieter verfügbar: 
+Pro-App-VPN ist derzeit für die folgenden Anbieter verfügbar:
 
- - Checkpoint Remote Access VPN
+ - Check Point Remote Access VPN
+ - Cisco AnyConnect
+ - Citrix
  - F5
  - Pulse Connect Secure
  - SonicWall
-
+ - Palo Alto Networks GlobalProtect
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Voraussetzungen für das Pro-App-VPN
+
+> [!IMPORTANT]
+> Ihr VPN-Anbieter stellt möglicherweise andere Anforderungen wie spezielle Hardware oder bestimmte Lizenzen an die Nutzung des Pro-App-VPN. Vor der Einrichtung des Pro-App-VPN ist es daher erforderlich, dass Sie sich mit der Anbieterdokumentation vertraut machen und die beschriebenen Anforderungen erfüllen.
 
 Um ihre Identität nachzuweisen, zeigt der VPN-Server das Zertifikat an, das vom Gerät ohne Aufforderung akzeptiert werden muss. Um die automatische Genehmigung des Zertifikats sicherzustellen, erstellen Sie ein vertrauenswürdiges Zertifikatprofil, das das durch die Zertifizierungsstelle (CA) ausgegebene Stammzertifikat des VPN-Servers enthält. 
 
@@ -50,7 +55,7 @@ Exportieren Sie das Zertifikat, und fügen Sie die CA hinzu.
 Erstellen oder wählen Sie eine vorhandene Gruppe in Azure Active Directory (Azure AD), die die Mitglieder enthalten soll, die Zugriff auf das Pro-App-VPN besitzen.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
 2. Wählen Sie **Gruppen** aus, und klicken Sie dann auf **Neue Gruppe**.
 3. Wählen Sie einen **Gruppentyp** für die Gruppe aus. 
 3. Geben Sie den **Gruppennamen** der Gruppe ein. 
@@ -65,7 +70,7 @@ Erstellen oder wählen Sie eine vorhandene Gruppe in Azure Active Directory (Azu
 Importieren Sie das Stammzertifikat des VPN-Servers, das von der Zertifizierungsstelle ausgegeben wurde, in ein in Intune erstelltes Profil. Das Profil des vertrauenswürdigen Zertifikats weist das iOS-Gerät an, automatisch der CA zu vertrauen, die der VPN-Server präsentiert.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
 2. Wählen Sie **Gerätekonfiguration** aus, und klicken Sie dann auf **Profile**.
 3. Klicken Sie auf **Profil erstellen**. Führen Sie unter **Profil erstellen** Folgendes durch:
     1. Geben Sie den **Namen** ein.
@@ -82,7 +87,7 @@ Importieren Sie das Stammzertifikat des VPN-Servers, das von der Zertifizierungs
 Das Profil des vertrauenswürdigen Stammzertifikats ermöglicht, dass iOS den VPN-Server automatisch als vertrauenswürdig einstuft. Das SCEP-Zertifikat stellt Anmeldeinformationen aus dem iOS-VPN-Client an den VPN-Server bereit. Das Zertifikat lässt zu, dass das Gerät im Hintergrund eine Authentifizierung durchführt, ohne dass das iOS-Gerät den Benutzer zur Eingabe eines Benutzernamens und Kennworts auffordert. 
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
 2. Wählen Sie **Gerätekonfiguration** aus, und klicken Sie dann auf **Profile**.
 3. Klicken Sie auf **Profil erstellen**. Führen Sie unter **Profil erstellen** Folgendes durch:
     1. Geben Sie den **Namen** ein.
@@ -109,7 +114,7 @@ Das Profil des vertrauenswürdigen Stammzertifikats ermöglicht, dass iOS den VP
 Das VPN-Profil enthält das SCEP-Zertifikat, das die Anmeldeinformationen des Clients, die Verbindungsinformationen für das VPN und das Pro-App-VPN-Flag enthält. So können Sie die Pro-App-VPN-Funktion für den Gebrauch durch die iOS-Anwendung aktivieren.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
 2. Wählen Sie **Gerätekonfiguration** aus, und klicken Sie dann auf **Profile**.
 3. Klicken Sie auf **Profil erstellen**. Führen Sie unter **Profil erstellen** Folgendes durch:
     1. Geben Sie den **Namen** ein.
@@ -139,7 +144,7 @@ Das VPN-Profil enthält das SCEP-Zertifikat, das die Anmeldeinformationen des Cl
 Nachdem Sie Ihr VPN-Profil hinzugefügt haben, ordnen Sie die App und Azure AD-Gruppe dem Profil zu.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
 2. Wählen Sie **Mobile Apps** aus.
 3. Klicken Sie auf **Apps**.
 4. Wählen Sie die App aus der Liste der Apps aus.
@@ -162,13 +167,15 @@ Sobald Ihr App-bezogenes VPN eingerichtet und Ihrer App zugeordnet ist, überpr�
 
 ### <a name="before-you-attempt-to-connect"></a>Bevor Sie eine Verbindung herstellen
 
- - stellen Sie sicher, dass iOS 7 oder höher ausgeführt wird
+ - müssen Sie sicherstellen, dass iOS 9 oder höher ausgeführt wird.
  - stellen Sie sicher, dass Sie *alle* der oben erwähnten Richtlinien derselben Gruppe von Benutzern bereitstellen Wenn Sie nicht so vorgehen, wird wahrscheinlich die Servicequalität des App-bezogenen VPN beeinträchtigt.  
  - stellen Sie sicher, dass Sie die unterstützende Drittanbieter-VPN-App installiert haben Die folgenden VPN-Apps werden unterstützt:
+    - Check Point Capsule Connect
+    - Cisco AnyConnect
+    - Citrix VPN
+    - F5 Access
     - Pulse Secure
-    - Checkpoint
-    - F5
-    - SonicWall
+    - SonicWall Mobile Connect
 
 ### <a name="connect-using-the-per-app-vpn"></a>Herstellen einer Verbindung mithilfe des App-bezogenen VPNs
 
