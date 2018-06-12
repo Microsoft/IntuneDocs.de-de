@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/24/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e99ed0bd1eb5bae90913aedba5973e5e1282f70
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/02/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744668"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Aktivieren von Windows Defender ATP mit bedingtem Zugriff in Intune
 
@@ -51,19 +52,19 @@ Um ATP mit Intune zu verwenden, stellen Sie sicher, dass Sie Folgendes konfiguri
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
-3. Wählen Sie **Gerätekonformität** > **Windows Defender ATP** > **Verwaltungskonsole von Windows Defender Advanced Threat Protection öffnen**.
+3. Wählen Sie **Gerätekonformität** > **Windows Defender ATP** > **Windows Defender Security Center öffnen**.
 
-    ![Alternativer Text](./media/atp-device-compliance-open-windows-defender.png)
+    ![Auswahl zum Öffnen von Windows Defender Security Center](./media/atp-device-compliance-open-windows-defender.png)
 
 4. In **Windows Defender Security Center**:
     1. Wählen Sie **Einstellungen** > **Erweiterte Features** aus.
     2. Wählen Sie für **Microsoft Intune-Verbindung** die Option **Ein** aus:
 
-        ![Alternativer Text](./media/atp-security-center-intune-toggle.png)
+        ![Aktivieren der Verbindung mit Intune](./media/atp-security-center-intune-toggle.png)
 
     3. Wählen Sie **Voreinstellungen speichern** aus.
 
-5. Gehen Sie zurück zu Intune, **Gerätekonformität** > **Windows Defender ATP**. Setzen Sie **10.0.15063+-Geräte mit Windows Defender Advanced Threat Protection verbinden** auf **Ein**.
+5. Gehen Sie zurück zu Intune, **Gerätekonformität** > **Windows Defender ATP**. Legen Sie **Windows-Geräte der Version 10.0.15063 und höher mit "Windows Defender ATP" verbinden** auf **Ein** fest.
 6. Wählen Sie **Speichern** aus.
 
 Sie führen diese Aufgabe in der Regel einmal aus. Wenn also ATP bereits in Ihrer Intune-Ressource aktiviert ist, müssen Sie es nicht erneut tun.
@@ -115,9 +116,9 @@ Die Konformitätsrichtlinie legt eine akzeptable Risikostufe für ein Gerät fes
 2. Wählen Sie **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** aus.
 3. Geben Sie einen **Namen** und eine **Beschreibung** ein.
 4. Wählen Sie unter **Plattform** die Option **Windows 10 und höher** aus.
-5. Legen Sie in den Einstellungen für **Geräteintegrität** für **Anfordern, dass das Gerät höchstens der angegebenen Gerätebedrohungsstufe entspricht** die bevorzugte Stufe fest:
+5. Legen Sie in den Einstellungen für **Windows Defender ATP** für **Anfordern, dass das Gerät höchstens das angegebene Computerrisiko aufweist** die bevorzugte Stufe fest:
 
-  - **Geschützt**: Diese Stufe ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
+  - **Clear** (Löschen): Diese Stufe ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
   - **Niedrig**: Das Gerät ist konform, wenn nur Bedrohungen auf niedriger Stufe vorliegen. Geräte mit mittleren oder hohen Bedrohungsstufen sind nicht konform.
   - **Mittel**: Das Gerät ist konform, wenn auf dem Gerät Bedrohungen niedriger oder mittlerer Stufe gefunden werden. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
   - **Hoch**: Dies ist die unsicherste Stufe, die alle Bedrohungsstufen zulässt. Also werden Geräte mit hohen, mittleren oder niedrigen Bedrohungsstufen als konform angesehen.

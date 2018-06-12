@@ -15,11 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8dbfff0fadec567bf0d9bd86d71a26174db40c09
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744991"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune
 
@@ -153,6 +154,9 @@ Wenn Sie eine App in Intune hinzufügen, können Sie die gewünschte Kategorie a
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Von Intune automatisch hinzugefügte Apps
 
 Zuvor enthielt Intune eine Reihe integrierter Apps, die Sie rasch zuweisen konnten. Basierend auf Intune-Kundenfeedback haben wir diese Liste entfernt, und die integrierten Apps werden nicht mehr angezeigt. Wenn Sie jedoch schon integrierte Apps zugewiesen haben, werden sie weiterhin in der App-Liste angezeigt. Sie können diese Apps weiter nach Bedarf zuweisen.
+
+> [!NOTE]
+> Intune versucht, eine erforderliche App, die nicht branchenspezifisch ist, durch Senden eines Installationsbefehls zu installieren, sobald das Gerät eingecheckt wird. Voraussetzung dafür ist, dass die App nicht erkannt wird und der Installationsstatus der App nicht *Installation steht an* ist.
 
 ## <a name="installing-updating-or-removing-required-apps"></a>Installieren, Aktualisieren oder Entfernen von erforderlichen Apps
 

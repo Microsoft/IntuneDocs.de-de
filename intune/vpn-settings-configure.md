@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/5/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744600"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Erstellen von VPN-Profilen in Intune
 
@@ -41,18 +42,19 @@ Sie können VPN-Profile mit den folgenden Verbindungstypen erstellen:
 
 |Verbindungstyp|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|Ja |Ja |Ja |Ja |Ja |Ja |
-|Cisco (IPsec)|Nein|Ja |Nein|Nein|Nein|Nein|
-|Citrix|Ja |Ja |Nein|Nein|Nein|Ja |
-|F5 Edge Client|Ja |Ja |Ja |Ja |Ja |Ja |
-|SonicWall Mobile Connect|Ja |Ja |Ja |Ja |Ja |Ja |
+|Automatisch|Nein|Nein|Nein|Nein|Nein|Ja |
 |Check Point Capsule VPN|Ja |Ja |Ja |Ja |Ja |Ja |
 |Cisco AnyConnect|Ja |Ja |Ja |Nein|Nein|Nein|
-|Automatisch|Nein|Nein|Nein|Nein|Nein|Ja |
+|SonicWall Mobile Connect|Ja |Ja |Ja |Ja |Ja |Ja |
+|F5 Edge Client|Ja |Ja |Ja |Ja |Ja |Ja |
+|Palo Alto Networks GlobalProtect|Nein|Ja |Nein|Nein|Nein|Ja |
+|Pulse Secure|Ja |Ja |Ja |Ja |Ja |Ja |
+|Cisco (IPsec)|Nein|Ja |Nein|Nein|Nein|Nein|
+|Citrix|Ja (nur Android)|Ja |Nein|Nein|Nein|Ja |
 |IKEv2|Nein|Nein|Nein|Nein|Nein|Ja |
 |L2TP|Nein|Nein|Nein|Nein|Nein|Ja |
 |PPTP|Nein|Nein|Nein|Nein|Nein|Ja |
-|Benutzerdefiniert|Nein|Ja |Ja |Nein|Nein|Nein|
+|Benutzerdefiniertes VPN|Nein|Ja |Ja |Nein|Nein|Nein|
 
 > [!IMPORTANT]
 > Vor der Verwendung von VPN-Profilen, die auf einem Gerät zugewiesen werden, müssen Sie die entsprechende VPN-App für das Profil installieren. Die Informationen im Artikel [Was ist die App-Verwaltung in Microsoft Intune?](app-management.md) unterstützen Sie beim Zuweisen der App mit Intune.  

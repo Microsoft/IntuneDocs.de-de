@@ -15,11 +15,12 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 172e99a38e3aef500fca8563079e3656e372089b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1b2789c8f3b57bbc97e06e8793a96656f74a54d
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703280"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird
 
@@ -39,7 +40,7 @@ Bei Geräten, die **für die Verwaltung in Intune registriert** sind, wird dem B
 
 ##  <a name="using-apps-with-multi-identity-support"></a>Verwenden von Apps mit Multi-Identity Support (Unterstützung für mehrere Identitäten)
 
-App-Schutzrichtlinien werden nur wirksam, wenn ein Benutzer versucht, auf geschäftliche Daten zuzugreifen.  Ihnen werden möglicherweise unterschiedliche Verhaltensweisen angezeigt, wenn der Benutzer für den persönlichen Gebrauch auf die App zugreift. 
+App-Schutzrichtlinien werden nur wirksam, wenn ein Benutzer versucht, auf geschäftliche Daten zuzugreifen. Ihnen werden möglicherweise unterschiedliche Verhaltensweisen angezeigt, wenn der Benutzer versucht, für den persönlichen Gebrauch auf die App zuzugreifen. Die Richtlinie ist ebenfalls nicht für neuen Inhalt gültig, der noch nicht gespeichert wurde. Neue Inhalte werden erst dann als Unternehmensdaten angesehen, nachdem sie auf einem Unternehmensstandort gespeichert wurden, z.B. SharePoint oder OneDrive for Business.
 
 Bei Apps, die mehrere Identitäten unterstützen, wendet Intune App-Schutzrichtlinien nur dann an, wenn ein Benutzer auf Arbeitsdaten zugreift.  So wird der Benutzer z.B. möglicherweise zur PIN-Eingabe aufgefordert.  In der **Outlook-App** tritt eine Eingabeaufforderung auf, wenn ein Benutzer die App startet. In der **OneDrive-App** tritt eine Aufforderung auf, wenn ein Benutzer eine Eingabe im Arbeitskonto macht.  In Microsoft **Word**, **PowerPoint** und **Excel** tritt eine Eingabeaufforderung auf, wenn ein Benutzer auf OneDrive-Dokumente des Unternehmens zugreift.
 ##  <a name="managing-user-accounts-on-the-device"></a>Verwalten von Benutzerkonten auf dem Gerät

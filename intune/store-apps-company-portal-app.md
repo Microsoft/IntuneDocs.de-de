@@ -15,11 +15,12 @@ ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 169d0a32fdc86b5cd3f36421e6057cdeae1a078f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: edd0ec0d717d4303ad2a452c5d60009ac09aa05f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703314"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Manuelles Hinzufügen der Windows 10-Unternehmensportal-App mithilfe von Microsoft Intune
 
@@ -73,7 +74,7 @@ Für die Migration wird folgende Vorgehensweise empfohlen: Legen Sie die Zuweisu
 
 Wenn Sie die App querladen müssen und das Windows 8.1-Unternehmensportal zugewiesen haben, ohne es mit dem Symantec-Zertifikat zu signieren, führen Sie zur Durchführung des Upgrades die Schritte aus, die in den vorherigen Abschnitten dieses Artikels genannt wurden.
 
-Wenn Sie die App querladen müssen und die Windows 8.1-Unternehmensportal-App mit dem Symantec-Codesignaturzertifikat zugewiesen und signiert haben, führen Sie die Schritte im folgenden Abschnitt aus.  
+Wenn Sie die App querladen müssen und die Windows 8.1-Unternehmensportal-App mit dem Symantec-Codesignaturzertifikat zugewiesen und signiert haben, führen Sie die Schritte im folgenden Abschnitt aus.
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Wie führe ich ein Upgrade meiner signierten quergeladenen Windows Phone 8.1-Unternehmensportal-App oder Windows 8.1-Unternehmensportal-App auf die Windows 10-Unternehmensportal-App durch?
 Wir empfehlen für die Migration die folgende Vorgehensweise: Legen Sie die Zuweisungsaktion auf **Uninstall** (Deinstallieren) fest, um die vorhandene Zuweisung der Windows Phone 8.1-Unternehmensportal-App oder Windows 8.1-Unternehmensportal-App zu löschen. Nach dem Durchführen dieser Einstellung können Sie die Windows 10-Unternehmensportal-App normal zuweisen.  

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 0831f374b9c6da417d8159dce1b58e40f0d3643c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744940"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Endpoint Protection-Einstellungen für Windows 10 und höher in Intune
 
@@ -300,15 +301,21 @@ Konfigurieren Sie mit diesen Optionen die lokalen Sicherheitseinstellungen auf W
 
 - **Inaktivität in Minuten für Anmeldebildschirm bis zur Aktivierung des Bildschirmschoners**: Definieren Sie die maximale Anzahl von Minuten der Inaktivität auf dem Anmeldebildschirm des interaktiven Desktops, bis der Bildschirmschoner ausgeführt wird.
 - **STRG+ALT+ENTF zur Anmeldung voraussetzen**: Setzen Sie voraus, dass STRG+ALT+ENTF gedrückt wird, bevor sich ein Benutzer anmelden kann.
-- **Verhalten beim Entfernen von Smartcards**: Bestimmt, was geschieht, wenn die Smartcard für einen angemeldeten Benutzer aus den Smartkartenleser entfernt wird.
-[LocalPoliciesSecurity-Optionen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) enthalten weitere Details.
+- **Verhalten beim Entfernen von Smartcards**: Bestimmt, was geschieht, wenn die Smartcard für einen angemeldeten Benutzer aus den Smartkartenleser entfernt wird. Folgende Optionen sind verfügbar:
+
+  - **Arbeitsstation sperren:** Die Arbeitsstation wird gesperrt, wenn die Smartcard entfernt wird. Diese Option ermöglicht es dem Benutzer, den Bereich zu verlassen, die Smartcard mitzunehmen und dennoch eine geschützte Sitzung beizubehalten.
+  - **Abmeldung erzwingen:** Der Benutzer wird automatisch abgemeldet, wenn die Smartcard entfernt wird.
+  - **Disconnect if a Remote Desktop Services session** (Verbindung bei einer Remotedesktopdienste-Sitzung trennen): Das Entfernen der Smartcard beendet die Sitzung, ohne den Benutzer abzumelden. Diese Option ermöglicht es dem Benutzer, die Smartcard einzulegen und die Sitzung später oder auf einem anderen Computer mit Smartcard-Leser fortzusetzen, ohne sich erneut anmelden zu müssen. Wenn die Sitzung lokal stattfindet, funktioniert diese Richtlinie genau wie „Arbeitsstation sperren“.
+
+    [LocalPoliciesSecurity-Optionen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) enthalten weitere Details.
 
 #### <a name="display"></a>Anzeige
 
 - **Benutzerinformationen auf Sperrbildschirm**: Konfigurieren Sie die Benutzerinformationen, die angezeigt werden, wenn die Sitzung gesperrt ist. Wenn nicht konfiguriert, werden Anzeigename des Benutzers, Domäne und Benutzername angezeigt.
+  - **Nicht konfiguriert**: Anzeigename des Benutzers, Domäne und Benutzername.
+  - **Anzeigename des Benutzers, Domäne und Benutzername**
   - **Nur Anzeigename des Benutzers**
   - **Benutzerinformationen nicht anzeigen**
-  - **Nicht konfiguriert**: Anzeigename des Benutzers, Domäne und Benutzername.
 - **Zuletzt angemeldeten Benutzer ausblenden**: Der Benutzername der letzten Person, die sich bei diesem Gerät angemeldet hat, wird nicht angezeigt.
 - **Benutzernamen bei der Anmeldung ausblenden**: Der Benutzername der Person, die sich nach Eingabe der Anmeldeinformationen und vor Anzeige des Desktops des Geräts bei diesem Gerät angemeldet hat, wird nicht angezeigt.
 - **Anmeldungsmeldungstitel**: Legen Sie den Meldungstitel für Benutzer fest, die versuchen, sich anzumelden.
@@ -316,13 +323,13 @@ Konfigurieren Sie mit diesen Optionen die lokalen Sicherheitseinstellungen auf W
 
 ### <a name="network-access-and-security"></a>Netzwerkzugriff und Sicherheit
 
-- **Anonymer Zugriff auf Named Pipes und Freigaben**: Schränkt den anonymen Zugriff auf Freigabe- und Named Pipe-Einstellungen ein. Gilt für die Einstellungen, auf die anonym zugegriffen werden kann.
-- **Anonyme Aufzählung von SAM-Konten**: Ermöglicht anonymen Benutzern, die SAM-Konten aufzuzählen. Windows ermöglicht anonymen Benutzern, die Namen von Domänenkonten und Netzwerkfreigaben aufzuzählen.
-- **Anonyme Aufzählung von SAM-Konten und Freigaben**: Kann die anonyme Aufzählung von SAM-Konten und Freigaben blockieren. Windows ermöglicht anonymen Benutzern, die Namen von Domänenkonten und Netzwerkfreigaben aufzuzählen.
-- **LAN-Manager-Hashwert bei Kennwortänderung speichern**: Wählen Sie, ob bei der nächsten Kennwortänderung der LAN-Manager-Hashwert (LM) für das neue Kennwort gespeichert wird. Standardmäßig wird er nicht gespeichert.
-- **PKU2U-Authentifizierungsanforderungen**: Schränken Sie an dieses Gerät gerichtete PKU2U-Authentifizierungsanforderungen auf die ausschließliche Verwendung von Onlineidentitäten ein.
-- **RPC-Remoteverbindungen mit SAM einschränken**: Bearbeiten Sie die Security Descriptor Definition Language-Standardzeichenfolge, um Benutzern und Gruppen Remoteaufrufe an SAM zu gewähren oder zu verweigern.
-- **Sicherheitsbeschreibung**
+- **Anonymer Zugriff auf Named Pipes und Freigaben:** **Nicht konfiguriert** (Standard) Schränkt den anonymen Zugriff auf Freigabe- und Named Pipe-Einstellungen ein. Gilt für die Einstellungen, auf die anonym zugegriffen werden kann.
+- **Anonyme Auflistung von SAM-Konten:** **Lässt zu**, dass anonyme Benutzer die SAM-Konten auflisten. Windows ermöglicht anonymen Benutzern, die Namen von Domänenkonten und Netzwerkfreigaben aufzulisten.
+- **Anonyme Auflistung von SAM-Konten und -Freigaben:** **Nicht konfiguriert** (Standard) Dies bedeutet, dass anonyme Benutzer die Namen der Domänenkonten und Netzwerkfreigaben auflisten können. Wenn Sie die anonyme Auflistung von SAM-Konten und Freigaben verhindern möchten, legen Sie **Blockieren** fest.
+- **LAN-Manager-Hashwert bei Kennwortänderung speichern**: Wählen Sie, ob bei der nächsten Kennwortänderung **zugelassen** wird, dass der LAN-Manager-Hashwert (LM) den Hashwert für das neue Kennwort speichert. Wenn **Nicht konfiguriert** (Standard) festgelegt ist, wird der Hashwert nicht gespeichert.
+- **PKU2U-Authentifizierungsanforderungen:** **Blockiert** an das Gerät gerichtete PKU2U-Authentifizierungsanforderungen, damit Onlineidentitäten verwendet werden. Durch **Nicht konfiguriert** (Standard) werden diese Anforderungen zugelassen.
+- **RPC-Remoteverbindungen mit SAM einschränken:** **Lassen Sie die Security Descriptor Definition Language-Standardzeichenfolge zu**, um Benutzern und Gruppen Remoteaufrufe an SAM zu gewähren oder zu verweigern. **Nicht konfiguriert** (Standard) Die Security Descriptor Definition Language-Standardzeichenfolge lässt zu, dass Benutzer und Gruppen Remoteaufrufe an SAM durchführen.
+  - **Sicherheitsbeschreibung**
 
 ### <a name="recovery-console-and-shutdown"></a>Wiederherstellungskonsole und Herunterfahren
 
@@ -359,13 +366,13 @@ Konfigurieren Sie mit diesen Optionen die lokalen Sicherheitseinstellungen auf W
 
 ### <a name="microsoft-network-client"></a>Microsoft-Netzwerkclient
 
-- **Kommunikation digital signieren (wenn Server zustimmt)**: Bestimmt, ob der SMB-Client versucht, die SMB-Paketsignatur auszuhandeln. Bei Aktivierung (Standard) fordert der Microsoft-Netzwerkclient den Server zur Durchführung der SMB-Paketsignatur beim Setup der Sitzung auf. Wenn die Paketsignatur auf dem Server aktiviert wurde, wird die Paketsignatur ausgehandelt. Wenn diese Richtlinie deaktiviert ist, handelt der SMB-Client nie die SMB-Paketsignatur aus.
+- **Kommunikation digital signieren (wenn Server zustimmt)**: Bestimmt, ob der SMB-Client versucht, die SMB-Paketsignatur auszuhandeln. Bei Aktivierung (Nicht konfiguriert) fordert der Microsoft-Netzwerkclient den Server zur Durchführung der SMB-Paketsignatur beim Setup der Sitzung auf. Wenn die Paketsignatur auf dem Server aktiviert ist, wird die Paketsignatur ausgehandelt. Wenn diese Richtlinie deaktiviert ist, handelt der SMB-Client nie die SMB-Paketsignatur aus.
 - **Unverschlüsseltes Kennwort an SMB-Server von Drittanbietern senden**: Wenn diese Sicherheitseinstellung aktiviert ist, darf der SMB-Redirector (Server Message Block) Klartextkennwörter an Nicht-Microsoft-SMB-Server senden, die keine Kennwortverschlüsselung während der Authentifizierung unterstützen.
 
 ### <a name="microsoft-network-server"></a>Microsoft-Netzwerkserver
 
-- **Kommunikation digital signieren (wenn Client zustimmt)**: Bestimmt, ob der SMB-Server die SMB-Paketsignatur mit Clients verhandelt, die sie anfordern. Wenn aktiviert, handelt der Microsoft-Netzwerkserver die SMB-Paketsignatur wie vom Client angefordert aus. Genau gesagt: Wenn die Paketsignatur auf dem Client aktiviert ist, wird die Paketsignatur ausgehandelt. Wenn sie deaktiviert ist (Standard), handelt der SMB-Client nie die SMB-Paketsignatur aus.
-- **Kommunikation digital signieren (immer)**: Bestimmt, ob die SMB-Serverkomponente die Paketsignatur erfordert. Wenn aktiviert, kommuniziert der Microsoft-Netzwerkserver nur dann mit einem Microsoft-Netzwerkclient, wenn dieser der Ausführung der SMB-Paketsignatur zustimmt. Wenn deaktiviert (Standard), wird die SMB-Paketsignatur zwischen Client und Server ausgehandelt.
+- **Kommunikation digital signieren (wenn Client zustimmt)**: Bestimmt, ob der SMB-Server die SMB-Paketsignatur mit Clients verhandelt, die sie anfordern. Wenn aktiviert, handelt der Microsoft-Netzwerkserver die SMB-Paketsignatur wie vom Client angefordert aus. Genau gesagt: Wenn die Paketsignatur auf dem Client aktiviert ist, wird die Paketsignatur ausgehandelt. Bei **Nicht konfiguriert** oder „Deaktiviert“ (Standard) handelt der SMB-Client die SMB-Paketsignatur nie aus.
+- **Kommunikation digital signieren (immer)**: Bestimmt, ob die SMB-Serverkomponente die Paketsignatur erfordert. Wenn aktiviert, kommuniziert der Microsoft-Netzwerkserver nur dann mit einem Microsoft-Netzwerkclient, wenn dieser der Ausführung der SMB-Paketsignatur zustimmt. Wenn **Nicht konfiguriert** deaktiviert ist (Standard), wird die SMB-Paketsignatur zwischen Client und Server ausgehandelt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
