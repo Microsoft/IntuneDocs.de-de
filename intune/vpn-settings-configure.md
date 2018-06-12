@@ -40,7 +40,7 @@ Sie können benutzerdefinierte Intune-Konfigurationsrichtlinien verwenden, um VP
 
 Sie können VPN-Profile mit den folgenden Verbindungstypen erstellen:
 
-|Verbindungstyp|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Verbindungstyp|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |Automatisch|Nein|Nein|Nein|Nein|Nein|Ja |
 |Check Point Capsule VPN|Ja |Ja |Ja |Ja |Ja |Ja |

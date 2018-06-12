@@ -40,7 +40,7 @@ In diesem Artikel erfahren Sie, wie Sie Folgendes durchführen:
 - Erstellen der Konformitätsrichtlinie in Intune.
 - Aktivieren Sie in Azure Active Directory (AD) bedingten Zugriff auf Geräte basierend auf deren Bedrohungsstufe.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Um ATP mit Intune zu verwenden, stellen Sie sicher, dass Sie Folgendes konfiguriert haben und verwenden können:
 

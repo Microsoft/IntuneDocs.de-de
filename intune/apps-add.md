@@ -145,7 +145,7 @@ Wenn Sie eine App in Intune hinzufügen, können Sie die gewünschte Kategorie a
 3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
 4. Wählen Sie im Workloadbereich **Mobile Apps** unter **Setup** die Option **App-Kategorien** aus.  
     Im Bereich **App-Kategorien** wird eine Liste der aktuellen Kategorien angezeigt. 
-5. Führen Sie einen der folgenden Schritte aus:
+5. Führen Sie eine der folgenden Aktionen aus:
     - Um eine Kategorie hinzuzufügen, wählen Sie im Bereich **Kategorie erstellen** die Option **Hinzufügen** aus, und geben Sie dann einen Namen für die Kategorie ein.  
     Namen können in nur einer Sprache eingegeben werden und werden von Intune nicht übersetzt.
     - Um eine Kategorie zu bearbeiten, wählen Sie die Auslassungspunkte (**...** ) neben der Kategorie aus und dann **An Dashboard anheften** oder **Löschen**.

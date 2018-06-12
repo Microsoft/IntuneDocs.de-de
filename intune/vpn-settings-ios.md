@@ -87,5 +87,5 @@ Wenn Sie **Benutzerdefiniertes VPN** als Verbindungstyp ausgewählt haben, konfi
 - **Adresse:** Geben Sie die IP-Adresse des vollständig qualifizierten Hostnamens des Proxyservers ein.
 - **Portnummer:** Geben Sie die Portnummer ein, die dem Proxyserver zugeordnet ist.
 
-## <a name="next-step"></a>Nächster Schritt
+## <a name="next-step"></a>Nächste Schritte
 [Erstellen von VPN-Profilen in Intune](vpn-settings-configure.md)

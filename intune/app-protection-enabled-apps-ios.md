@@ -66,5 +66,5 @@ Wenn Sie ein iOS-Gerät verwenden und versuchen, auf demselben Gerät ein zweite
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](app-protection-enabled-apps-android.md)
-### <a name="see-also"></a>Siehe auch
+### <a name="see-also"></a>Weitere Informationen:
 [Erstellen und Bereitstellen von App-Schutzrichtlinien mit Microsoft Intune](app-protection-policies.md)

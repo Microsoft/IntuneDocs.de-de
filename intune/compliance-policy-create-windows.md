@@ -33,10 +33,10 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 |----| ----| --- |
 | **PIN- oder Kennwortkonfiguration** | Wiederhergestellt | Wiederhergestellt |   
 | **Geräteverschlüsselung** | Nicht verfügbar | Wiederhergestellt |   
-| **Per Jailbreak oder Rootzugriff manipuliertes Gerät** | Nicht verfügbar | Nicht verfügbar |  
-| **E-Mail-Profil** | Nicht verfügbar | Nicht verfügbar |   
+| **Gerät mit entfernten Nutzungsbeschränkungen** | Nicht zutreffend | Nicht zutreffend |  
+| **E-Mail-Profil** | Nicht zutreffend | Nicht zutreffend |   
 | **Minimale Version des Betriebssystems** | Isoliert | Isoliert |   
-| **Maximale Version des Betriebssystems** | Isoliert | Isoliert |   
+| **Maximales Release des Betriebssystems** | Isoliert | Isoliert |   
 | **Windows-Integritätsnachweis** | Isoliert: Windows 10 und Windows 10 Mobile|Nicht verfügbar: Windows 8.1 |
 
 -------------------------------
@@ -65,7 +65,7 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 
 Diese Richtlinieneinstellungen gelten für Geräte mit den folgenden Plattformen:
 
-- Windows Phone 8.1
+- Windows Phone 8.1
 - Windows 8.1 und höher
 
 ### <a name="device-properties"></a>Geräteeigenschaften
@@ -107,11 +107,11 @@ Windows 8.1-PCs geben die Version **3** zurück. Wenn die Regel für die Betrieb
 
 ## <a name="windows-10-and-later-policy-settings"></a>Richtlinieneinstellungen für Windows 10 und höher
 
-### <a name="device-health"></a>Device health
+### <a name="device-health"></a>Geräteintegrität
 
-- **BitLocker erforderlich**: Wenn BitLocker aktiviert ist, kann das Gerät Daten, die auf dem Laufwerk gespeichert sind, vor unbefugtem Zugriff schützen, wenn das Gerät ausgeschaltet wird oder in den Ruhezustand wechselt. Die Windows BitLocker-Laufwerksverschlüsselung verschlüsselt alle auf einem Volume mit Windows-Betriebssystem gespeicherten Daten. BitLocker verwendet das TPM zum Schutz des Windows-Betriebssystems und der Benutzerdaten. Zudem stellt TPM sicher, dass ein Computer auch dann nicht manipuliert wird, wenn er unbeaufsichtigt gelassen, verloren oder gestohlen wird. Wenn der Computer mit einem kompatiblen TPM ausgestattet ist, verwendet BitLocker das TPM zum Sperren der Verschlüsselungsschlüssel, die die Daten schützen. Daher kann auf die Schlüssel nicht zugegriffen werden, bis das TPM den Zustand des Computers überprüft hat.
-- **Sicherer Start muss auf dem Gerät aktiviert sein**: Wenn der sichere Start aktiviert ist, wird das System gezwungen, in einem vertrauenswürdigen Zustand zu starten. Wenn der sichere Start aktiviert ist, müssen die zum Starten des Computers verwendeten Kernkomponenten zudem über die richtigen kryptografischen Signaturen verfügen, denen das Unternehmen vertraut, das das Gerät hergestellt hat. Die Signatur wird von der UEFI-Firmware überprüft, bevor der Computer gestartet werden kann. Wenn Dateien manipuliert wurden und dadurch die Signatur ungültig ist, wird das System nicht gestartet.
-- **Codeintegrität erforderlich**: Die Codeintegrität ist ein Feature, das die Integrität eines Treibers oder einer Systemdatei jedes Mal überprüft, wenn diese(r) in den Speicher geladen wird. Die Codeintegrität erkennt, ob ein nicht signierter Treiber oder eine Systemdatei in den Kernel geladen wird. Oder, ob eine Systemdatei durch böswillige Software manipuliert wurde, die von einem Benutzerkonto mit Administratorrechten ausgeführt wird.
+- **BitLocker erforderlich**: Wenn BitLocker aktiviert ist, kann das Gerät Daten, die auf dem Laufwerk gespeichert sind, vor unbefugtem Zugriff schützen, wenn das Gerät ausgeschaltet wird oder in den Ruhezustand wechselt. Die Windows BitLocker-Laufwerkverschlüsselung verschlüsselt alle Daten, die auf dem Windows-Betriebssystemvolume gespeichert sind. BitLocker verwendet das TPM, um Windows-Betriebssystem und Benutzerdaten zu schützen. Zudem stellt TPM sicher, dass ein Computer auch dann nicht manipuliert wird, wenn er unbeaufsichtigt gelassen, verloren oder gestohlen wird. Wenn der Computer mit einem kompatiblen TPM ausgestattet ist, verwendet BitLocker das TPM zum Sperren der Verschlüsselungsschlüssel, die die Daten schützen. Daher kann erst auf die Schlüssel zugegriffen werden, nachdem das TPM den Zustand des Computers überprüft hat.
+- **Sicherer Start muss auf dem Gerät aktiviert sein**: Wenn der sichere Start aktiviert ist, wird das System gezwungen, in einem vertrauenswürdigen Zustand zu starten. Bei aktiviertem sicheren Start müssen auch die Kernkomponenten, die zum Starten des Computers verwendet werden, über ordnungsgemäße kryptografische Signaturen verfügen, denen das Unternehmen vertraut, das das Gerät hergestellt hat. Die Signatur wird von der UEFI-Firmware überprüft, bevor der Computer gestartet werden kann. Wenn Dateien so manipuliert wurden, das ihre Signatur nicht mehr stimmt, startet das System nicht.
+- **Codeintegrität erforderlich**: Die Codeintegrität ist ein Feature, das die Integrität eines Treibers oder einer Systemdatei jedes Mal überprüft, wenn diese(r) in den Speicher geladen wird. Codeintegrität erkennt, ob ein nicht signierter Treiber oder eine nicht signierte Systemdatei in den Kernel geladen wird. Oder, ob eine Systemdatei durch böswillige Software manipuliert wurde, die von einem Benutzerkonto mit Administratorrechten ausgeführt wird.
 
 Informationen zur Funktionsweise des HAS-Diensts finden Sie unter [Integritätsnachweis-CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
 

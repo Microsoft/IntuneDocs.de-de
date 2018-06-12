@@ -27,7 +27,7 @@ Falls Sie den Zugriff auf ein Unternehmensnetzwerk blockieren möchten, wenn ein
 
 Sie können eine auf Netzwerkstandorten basierende Konformitätsrichtlinie erstellen. Dies wird auch als „Netzwerk-Fencing“ bezeichnet. Durch die Richtlinie wird sichergestellt, dass Geräte mit Firmennetzwerk verbunden sein müssen, um als konform zu gelten. Diese Richtlinie kann mit Richtlinien für bedingten Zugriff verwendet werden, sodass Geräte *nur* Zugriff auf die geschäftlichen Ressourcen haben, wenn das Gerät mit dem Firmennetzwerk verbunden ist. Wenn das Gerät nicht mit dem Firmennetzwerk verbunden ist, gilt es als nicht konform und verliert den Zugriff auf geschäftliche Ressourcen.
 
-Stellen Sie sich das folgende Szenario vor:
+Betrachten Sie das folgende Szenario:
 
 In Ihrer Produktionsanlage verwenden einige Mitarbeiter Android-Geräte. Ein Mitarbeiter verlässt mit dem Android-Gerät das Werk oder die Anlage. Sie können Folgendes durchführen, um nicht autorisierten Zugriff zu verhindern:
 
@@ -37,7 +37,7 @@ In Ihrer Produktionsanlage verwenden einige Mitarbeiter Android-Geräte. Ein Mit
 
 Indem Sie Intune-Richtlinien verwenden, können Sie eine Benachrichtigung senden, dass das Gerät nicht konform ist, und dieses blockieren. Wenn sich das Gerät wieder am Standort und im Netzwerkstandort befindet, kann es entsperrt werden und den Zugriff auf geschäftliche Ressourcen erneut erhalten.
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 So erstellen Sie eine standortbasierte Konformitätsrichtlinie:
 

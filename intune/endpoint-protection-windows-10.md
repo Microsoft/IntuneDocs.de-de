@@ -124,12 +124,12 @@ Diese Einstellungen gelten speziell für Betriebssystemlaufwerke.
   - **Erstellung des Wiederherstellungsschlüssels durch den Benutzer**: Legen Sie fest, ob Benutzer einen 256-Bit-Wiederherstellungsschlüssel generieren dürfen oder müssen.
   - **Wiederherstellungsoptionen im BitLocker-Setup-Assistenten**: Wenn Sie diese Einstellung festlegen, können Sie verhindern, dass Benutzer Wiederherstellungsoptionen sehen bzw. ändern können, wenn sie BitLocker aktivieren.
   - **BitLocker-Wiederherstellungsinformationen in AD DS speichern**: Aktiviert das Speichern von BitLocker-Wiederherstellungsinformationen in Active Directory.
-  - **In AD DS gespeicherte BitLocker-Wiederherstellungsinformationen**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden. Es stehen die folgenden Optionen zur Auswahl:
+  - **In AD DS gespeicherte BitLocker-Wiederherstellungsinformationen**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden. Wählen Sie aus:
     - **Wiederherstellungskennwörter und Schlüsselpakete sichern**
     - **Nur Wiederherstellungskennwörter sichern**
   - **Wiederherstellungsinformationen vor dem Aktivieren von BitLocker in AD DS speichern**: Aktivieren Sie diese Einstellung, um zu verhindern, dass Benutzer BitLocker aktivieren, es sei denn, das Gerät ist mit einer Domäne verbunden und BitLocker-Wiederherstellungsinformationen wurden erfolgreich in Active Directory gespeichert.
 - **Pre-Boot-Wiederherstellungsmeldung und -URL**: Legen Sie diese Einstellung fest, um die Meldung und URL zu konfigurieren, die auf dem Bildschirm der Pre-Boot-Schlüsselwiederherstellung angezeigt werden.
-  - **Pre-Boot-Wiederherstellungsmeldung**: Legen Sie fest, wie die Pre-Boot-Wiederherstellungsmeldung Benutzern angezeigt wird. Es stehen die folgenden Optionen zur Auswahl:
+  - **Pre-Boot-Wiederherstellungsmeldung**: Legen Sie fest, wie die Pre-Boot-Wiederherstellungsmeldung Benutzern angezeigt wird. Wählen Sie aus:
     - **Standardmäßige Wiederherstellungsmeldung und -URL verwenden**
     - **Leere Wiederherstellungsmeldung und -URL verwenden**
     - **Benutzerdefinierte Wiederherstellungsmeldung**
@@ -144,7 +144,7 @@ Diese Einstellungen gelten speziell für Betriebssystemlaufwerke.
   - **Erstellung des Wiederherstellungsschlüssels durch den Benutzer**: Legen Sie fest, ob Benutzer einen 256-Bit-Wiederherstellungsschlüssel generieren dürfen oder müssen.
   - **Wiederherstellungsoptionen im BitLocker-Setup-Assistenten**: Wenn Sie diese Einstellung festlegen, können Sie verhindern, dass Benutzer Wiederherstellungsoptionen sehen bzw. ändern können, wenn sie BitLocker aktivieren.
   - **BitLocker-Wiederherstellungsinformationen in AD DS speichern**: Aktiviert das Speichern von BitLocker-Wiederherstellungsinformationen in Active Directory.
-  - **BitLocker-Wiederherstellungsinformationen in AD DS**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden. Es stehen die folgenden Optionen zur Auswahl:
+  - **BitLocker-Wiederherstellungsinformationen in AD DS**: Legen Sie fest, welche BitLocker-Wiederherstellungsinformationen in Active Directory gespeichert werden. Wählen Sie aus:
     - **Wiederherstellungskennwörter und Schlüsselpakete sichern**
     - **Nur Wiederherstellungskennwörter sichern**
   - **Wiederherstellungsinformationen vor dem Aktivieren von BitLocker in AD DS speichern**: Aktivieren Sie diese Einstellung, um zu verhindern, dass Benutzer BitLocker aktivieren, es sei denn, das Gerät ist mit einer Domäne verbunden und BitLocker-Wiederherstellungsinformationen wurden erfolgreich in Active Directory gespeichert.
@@ -277,7 +277,7 @@ Konfigurieren Sie mit diesen Optionen die lokalen Sicherheitseinstellungen auf W
 - **Neue Microsoft-Konten hinzufügen**: Verhindert, dass Benutzer diesem Computer neue Microsoft-Konten hinzufügen.
 - **Remoteanmeldung ohne Kennwort**: Ermöglichen Sie lokalen Konten, die nicht kennwortgeschützt sind, die Anmeldung von anderen Speicherorten aus als dem physischen Gerät.
 
-#### <a name="admin"></a>Administrator
+#### <a name="admin"></a>Admin
 
 - **Lokales Administratorkonto**: Legen Sie fest, ob das lokale Administratorkonto aktiviert oder deaktiviert ist.
 - **Administratorkonto umbenennen**: Definieren Sie einen anderen Kontonamen, der der Sicherheits-ID (SID) für das Administratorkonto zugeordnet werden soll.
@@ -324,7 +324,7 @@ Konfigurieren Sie mit diesen Optionen die lokalen Sicherheitseinstellungen auf W
 ### <a name="network-access-and-security"></a>Netzwerkzugriff und Sicherheit
 
 - **Anonymer Zugriff auf Named Pipes und Freigaben:** **Nicht konfiguriert** (Standard) Schränkt den anonymen Zugriff auf Freigabe- und Named Pipe-Einstellungen ein. Gilt für die Einstellungen, auf die anonym zugegriffen werden kann.
-- **Anonyme Auflistung von SAM-Konten:** **Lässt zu**, dass anonyme Benutzer die SAM-Konten auflisten. Windows ermöglicht anonymen Benutzern, die Namen von Domänenkonten und Netzwerkfreigaben aufzulisten.
+- **Anonyme Auflistung von SAM-Konten:** **Lässt zu**, dass anonyme Benutzer die SAM-Konten auflisten. Windows ermöglicht anonymen Benutzern, die Namen von Domänenkonten und Netzwerkfreigaben aufzuzählen.
 - **Anonyme Auflistung von SAM-Konten und -Freigaben:** **Nicht konfiguriert** (Standard) Dies bedeutet, dass anonyme Benutzer die Namen der Domänenkonten und Netzwerkfreigaben auflisten können. Wenn Sie die anonyme Auflistung von SAM-Konten und Freigaben verhindern möchten, legen Sie **Blockieren** fest.
 - **LAN-Manager-Hashwert bei Kennwortänderung speichern**: Wählen Sie, ob bei der nächsten Kennwortänderung **zugelassen** wird, dass der LAN-Manager-Hashwert (LM) den Hashwert für das neue Kennwort speichert. Wenn **Nicht konfiguriert** (Standard) festgelegt ist, wird der Hashwert nicht gespeichert.
 - **PKU2U-Authentifizierungsanforderungen:** **Blockiert** an das Gerät gerichtete PKU2U-Authentifizierungsanforderungen, damit Onlineidentitäten verwendet werden. Durch **Nicht konfiguriert** (Standard) werden diese Anforderungen zugelassen.
