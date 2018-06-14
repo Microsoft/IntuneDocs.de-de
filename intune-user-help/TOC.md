@@ -137,6 +137,7 @@
 ### [Manuelles Synchronisieren des Geräts](sync-your-device-manually-windows.md)
 
 ### [Behandeln häufig auftretender Probleme mit Windows](troubleshoot-your-device-windows.md)
+### [Auflösen von Einschränkungen eines Zugriffspunkts](resolve-access-point-restrictions.md)
 #### [Die Registrierung meines Windows 10-Geräts funktioniert nicht](troubleshoot-your-windows-10-device-windows.md)
 #### [Aktualisieren Ihres Windows-Geräts](you-need-to-update-your-windows-device.md)
 #### [Senden von Protokollen an die bzw. von der Unternehmensportal-App](send-logs-to-your-it-admin-cp-windows.md)
@@ -158,4 +159,3 @@
 ### [Entfernen Ihres Geräts](remove-your-device-cpwebsite.md)
 ### [Zurücksetzen der Kennung Ihres Geräts](reset-your-passcode-cpwebsite.md)
 ### [Zurücksetzen und Löschen der Daten Ihres Geräts](reset-erase-your-device-cpwebsite.md)
-### [Manuelles Synchronisieren des Geräts](sync-your-device-manually-cpwebsite.md)
