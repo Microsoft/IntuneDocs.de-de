@@ -20,6 +20,7 @@ ms.sourcegitcommit: 6bd5867c41fb5288fde114dbfcc127dd206f7148
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/17/2018
+ms.locfileid: "34235615"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Einrichten einer Statusseite für die Registrierung
  

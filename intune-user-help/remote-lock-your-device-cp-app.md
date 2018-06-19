@@ -21,6 +21,7 @@ ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2018
+ms.locfileid: "33676629"
 ---
 # <a name="lock-your-device-from-company-portal-app-for-windows-10"></a>Sperren Ihres Geräts über die Unternehmensportal-App für Windows 10
 
