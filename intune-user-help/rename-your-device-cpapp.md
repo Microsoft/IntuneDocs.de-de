@@ -22,6 +22,7 @@ ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/09/2018
+ms.locfileid: "33915827"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>Umbenennen von Geräten in der Unternehmensportal-App für Windows
 Benennen Sie ein Gerät um, um es leichter von anderen Geräten zu unterscheiden. Mit der Unternehmensportal-App für Windows können Sie verbundene Windows-, iOS- und Android-Geräte umbenennen. 

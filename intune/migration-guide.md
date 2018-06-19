@@ -19,6 +19,7 @@ ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/17/2018
+ms.locfileid: "29960966"
 ---
 # <a name="intune-migration-guide"></a>Intune-Migrationshandbuch
 

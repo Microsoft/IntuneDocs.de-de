@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015216"
 ---
 # <a name="configure-skycure-to-use-azure-active-directory-single-sign-on-sso"></a>Skycure für die Verwendung von Azure Active Directory Single Sign-On (SSO) konfigurieren
 

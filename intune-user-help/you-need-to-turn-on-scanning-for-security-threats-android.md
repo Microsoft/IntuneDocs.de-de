@@ -20,6 +20,7 @@ ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/12/2018
+ms.locfileid: "34073817"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>Aktivieren von Überprüfungen auf Sicherheitsbedrohungen auf Ihrem Gerät 
 Wenn Sie unwissentlich eine unsichere Anwendung installieren, können Ihre Gerätedaten gefährdet sein. Um die Daten auf Ihrem Gerät zu schützen, empfehlen wir Folgendes: 

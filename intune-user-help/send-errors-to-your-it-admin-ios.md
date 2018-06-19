@@ -22,6 +22,7 @@ ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/03/2018
+ms.locfileid: "32327703"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Senden von Fehlermeldungen an den Support Ihres Unternehmens bei Problemen mit Ihrem iOS-Gerät
 In einigen Fällen können Fehler auftreten, wenn Sie die Unternehmensportal-App auf Ihrem iOS-Gerät verwenden. In diesen Fällen können Sie Details zum Fehler per E-Mail an einen Supportmitarbeiter senden. Dadurch wird der erforderliche Kontext bereitgestellt, um das Problem zu beheben.

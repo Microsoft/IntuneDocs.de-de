@@ -19,6 +19,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31024412"
 ---
 # <a name="categorize-devices-into-groups-for-easier-management"></a>Kategorisieren von Geräten in Gruppen zur einfacheren Verwaltung
 

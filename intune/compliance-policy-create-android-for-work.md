@@ -19,6 +19,7 @@ ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "34047984"
 ---
 # <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für Android for Work-Geräte in Intune
 

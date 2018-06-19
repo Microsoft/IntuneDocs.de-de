@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755231"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Verwenden verwalteter Geräte zum Erledigen von Aufgaben
 Microsoft Intune ist eine Softwarekomponente, mit der Betriebe Geräte (z.B. Smartphones, Tablets und PCs), Apps und andere Unternehmensressourcen (z.B. E-Mail-Dienste) verwalten können. Damit erhalten Mitarbeiter Zugriff auf ihre Arbeitsdaten von praktisch überall auf nahezu jedem Gerät, während die Unternehmensdaten gleichzeitig geschützt werden.

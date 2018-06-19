@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015743"
 ---
 # <a name="installing-office-365-on-your-windows-10-device"></a>Installieren von Office 365 auf Ihrem Windows 10-Gerät
 

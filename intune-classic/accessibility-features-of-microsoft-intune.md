@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31013057"
 ---
 # <a name="accessibility-features-of-microsoft-intune"></a>Barrierefreiheitsfunktionen von Windows Intune
 Zusätzlich zu den Funktionen und Tools für die Barrierefreiheit in Microsoft Windows verbessern folgende Funktionen in Microsoft Intune die Barrierefreiheit für Personen mit Behinderungen: Verwenden von Tastenkombinationen
