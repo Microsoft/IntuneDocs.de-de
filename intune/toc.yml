@@ -672,8 +672,12 @@
           href: troubleshoot-software-updates-in-microsoft-intune.md
         - name: Beheben von Problemen mit Endpoint Protection
           href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-        - name: Richtlinien zur Problembehandlung
+        - name: Behandlung von Problemen mit Richtlinien
           href: troubleshoot-policies-in-microsoft-intune.md
+        - name: Problembehandlung beim bedingten Zugriff
+          href: troubleshoot-conditional-access.md
+        - name: Exchange Connector-Problembehandlung
+          href: troubleshoot-exchange-connector.md
     - name: Automatisieren und Anpassen
       items:
         - name: Konfigurieren von benutzerdefinierten Geräteeinstellungen
