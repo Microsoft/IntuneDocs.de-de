@@ -135,6 +135,7 @@
 ### [Was geschieht, wenn Sie Ihr Gerät zurücksetzen?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Manuelles Synchronisieren des Geräts](sync-your-device-manually-windows.md)
+### [Remotes Sperren von Geräten über Ihr Windows 10-Gerät](remote-lock-your-device-cp-app.md) 
 
 ### [Behandeln häufig auftretender Probleme mit Windows](troubleshoot-your-device-windows.md)
 ### [Auflösen von Einschränkungen eines Zugriffspunkts](resolve-access-point-restrictions.md)
@@ -152,7 +153,7 @@
 #### [Ich muss die Benutzerkontensteuerung aktivieren](you-need-to-enable-uac-windows.md)
 #### [Ich muss Windows aktualisieren](you-need-to-update-os-build-version-windows.md)
 #### [Ich muss Windows Defender aktivieren](turn-on-defender-windows.md)
-## [Remotesperren eines Geräts in der Unternehmensportal-App für Windows](remote-lock-your-device-cp-app.md) 
+
 ## [Verwenden der Intune-Unternehmensportal-Website](using-the-intune-company-portal-website.md)
 ### [Remotesperren des Geräts](remote-lock-your-device-cpwebsite.md)
 ### [Umbenennen Ihres Geräts](rename-your-device-cpwebsite.md)
