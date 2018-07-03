@@ -1,1 +1,1 @@
-Kundendienst für Personen mit Hörschwächen
+Kundendienst für gehörlose oder hörgeschädigte Personen

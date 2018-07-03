@@ -2,8 +2,8 @@
 title: Registrieren oder Anmelden bei Microsoft Intune
 description: Informationen zum Registrieren für ein Microsoft Intune-Abonnement bzw. zur Anmeldung, um Ihr Abonnement zu beginnen
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 14a295828a332b45e1cb0bc6d9b3b97bef5a3a59
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4b80281c6235811aa610bc8a7c7d94d74d5cfd6f
+ms.sourcegitcommit: fcc3e29044451a1d96cef3b377ec4b6bef7aaeae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019346"
+ms.lasthandoff: 06/28/2018
+ms.locfileid: "37090259"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Registrieren oder Anmelden bei Microsoft Intune
 
