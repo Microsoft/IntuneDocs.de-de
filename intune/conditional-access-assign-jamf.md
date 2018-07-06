@@ -1,25 +1,26 @@
 ---
-title: "Gerätekonformitätsrichtlinie für Jamf-Geräte"
+title: Gerätekonformitätsrichtlinie für Jamf-Geräte
 titlesuffix: Microsoft Intune
-description: "Verwenden Sie die Konformitätsrichtlinien für Microsoft Intune zusammen mit dem bedingten Zugriff auf Azure Active Directory, um mit Jamf verwaltete Geräte zu sichern."
-keywords: 
+description: Verwenden Sie die Konformitätsrichtlinien für Microsoft Intune zusammen mit dem bedingten Zugriff auf Azure Active Directory, um mit Jamf verwaltete Geräte zu sichern.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5320f160efde054586b1e37722a67db375511049
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34482334"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Erzwingen von Konformität auf mit Jamf Pro verwalteten Macs
 
@@ -34,6 +35,9 @@ ms.lasthandoff: 03/08/2018
 
 1. Öffnen Sie Microsoft Azure, und navigieren Sie zu **Intune** > **Gerätekonformität** > **Richtlinien**. Sie können Richtlinien für macOS erstellen und dabei eine Reihe von Aktionen für nicht konforme Benutzer und Gruppen auswählen (z.B. Warn-E-Mails senden).
 2. Suchen Sie nach den gewünschten Gruppen, und wenden Sie die Richtlinien an.
+
+> [!Note]
+> Intune erfordert, dass die vollständige Datenträgerverschlüsselung konform ist.
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>Bereitstellen der Unternehmensportal-App für macOS in Jamf Pro
 
