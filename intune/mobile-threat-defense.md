@@ -15,12 +15,12 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d840bf62682621e4ec3848538a96066c0fd228fe
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 8c8fa146f01caae08f35ae824563ceb328c9d7f4
+ms.sourcegitcommit: 7daa778b3a5adb41acfe23495cb63754afda1c58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046263"
+ms.lasthandoff: 06/29/2018
+ms.locfileid: "37123400"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Was ist die Mobile Threat Defense-Integration in Intune?
 
@@ -41,10 +41,12 @@ Wenn eine verbundene Mobile Threat Defense-App z.B. einem Mobile Threat Defense-
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Welche Daten erfasst Intune für Mobile Threat Defense?
 
-Intune erfasst sowohl von privaten als auch von unternehmenseigenen Geräten Informationen zum App-Bestand und stellt diese für Anbieter von Bedrohungserkennung auf Mobilgeräten (Mobile Thread Defense, MTD) wie Lookout for Work zur Verfügung. Sie können Informationen zum App-Bestand auf iOS 11-Geräten (oder höher) erfassen.
+Wenn die Einstellung aktiviert ist, erfasst Intune sowohl von privaten als auch von unternehmenseigenen Geräten Informationen zum App-Bestand und stellt diese für MTD-Anbieter (Mobile Threat Defense) wie Lookout for Work zur Verfügung. Sie können Informationen zum App-Bestand der Benutzer von iOS-Geräten erfassen.
+
+Dieser Dienst muss aktiviert werden. Informationen zum App-Bestand werden nicht standardmäßig freigegeben. Die App-Synchronisierung für iOS-Geräte muss in den Diensteinstellungen von einem Intune-Administrator aktiviert werden, bevor Informationen zum App-Bestand freigegeben werden.
 
 **App-Bestand**  
-Die Bestände von sowohl unternehmenseigenen als auch privaten iOS 11-Geräten (oder höher) werden an Ihren MTD-Dienstanbieter übermittelt. Die Daten in den App-Beständen umfassen:
+Wenn Sie die App-Synchronisierung für iOS-Geräte aktivieren, werden die Bestände der unternehmenseigenen und privaten iOS-Geräte an Ihren MTD-Dienstanbieter gesendet. Die Daten in den App-Beständen umfassen:
 
  - App-ID
  - App-Version
@@ -52,8 +54,8 @@ Die Bestände von sowohl unternehmenseigenen als auch privaten iOS 11-Geräten (
  - App-Name
  - Größe des App-Pakets
  - Dynamische Größe der App
- - App wird geprüft oder nicht
- - App wird verwaltet oder nicht
+ - Ob die App gültig ist oder nicht
+ - Ob die App verwaltet wird oder nicht
 
 ## <a name="sample-scenarios"></a>Beispielszenarien
 
@@ -76,3 +78,4 @@ Lernen Sie, wie Sie den Zugriffs auf Unternehmensressourcen auf der Basis von Ge
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
+- [Pradeo](pradeo-mobile-threat-defense-connector.md)

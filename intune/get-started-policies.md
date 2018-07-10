@@ -1,12 +1,11 @@
 ---
-title: Erste Schritte mit Richtlinien in Microsoft Intune
-titlesuffix: ''
-description: Erstellen von Richtlinien zum Schützen von Unternehmensdaten und Verwalten von Geräten, die Endbenutzer verwenden, um auf Unternehmensressourcen zuzugreifen.
+title: Erste Schritte mit Richtlinien in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Erstellen von Richtlinien zum Schützen von Unternehmensdaten und Verwalten von Geräten, die Endbenutzer verwenden, um auf Unternehmensressourcen zuzugreifen. Weisen Sie die Richtlinien anschließend Gruppen zu.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 06/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,26 +14,27 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8bffd0435988cc59c5c0e4d754b861729d466ae
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: d7fa1b596a1800971919cfc0ab3e94d2d16ec328
+ms.sourcegitcommit: afda8a0fc0f615e976b18ddddf81d56d7ae3566e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/20/2018
+ms.locfileid: "36271523"
 ---
 # <a name="get-started-with-creating-policies"></a>Erste Schritte zum Erstellen von Richtlinien
 
-Eines der wichtigsten Ziele bei den ersten Schritten mit Intune ist das Registrieren von Geräten, um sicherzustellen, dass sie mit den Unternehmensrichtlinien konform sind. Mit Kompatibilitätsrichtlinien können Sie nicht nur spezielle Gerätetypen wie z.B. firmeneigene Kioske verwalten, sondern auch persönliche Geräte und Tablets sowie benutzerlose Geräte.
+Intune-Richtlinien sind gut für die Registrierung von Geräten geeignet und stellen sicher, dass diese mit Ihren Unternehmensrichtlinien konform sind. Mit Konformitätsrichtlinien können Sie spezielle Gerätetypen wie z.B. firmeneigene Kiosks, persönliche Geräte, Tablets und benutzerlose Geräte verwalten.
 
 ![Konformitätsdashboard mit wenigen Daten](/intune/media/generic-compliance-dashboard.png)
 
-Verwalten von mobilen Geräten in den folgenden Bereichen mithilfe von Konformitätsrichtlinien:
+Für mobile Geräte kann mithilfe von Konformitätsrichtlinien Folgendes verwaltet werden:
 
-* Regulierung der Anzahl von Geräten, die jeder Benutzer registriert
-* Verwalten der Geräteeinstellungen (z.B Verschlüsselung auf Geräteebene, Länge des Kennworts, Kameragebrauch)
-* Bereitstellen von Apps, E-Mail-Profilen, VPN-Profilen, etc.
+* Die Anzahl der Geräte, die ein Benutzer in Intune registriert
+* Die Geräteeinstellungen, z.B Verschlüsselung auf Geräteebene, Länge des Kennworts, Kameragebrauch
+* Das Bereitstellen von Apps, E-Mail-Profilen, VPN-Profilen etc.
 * Auswerten der Kriterien für Sicherheitskompatibilitätsrichtlinien auf Geräteebene
 
-Sie erstellen Kompatibilitätsrichtlinien für jede Plattform einzeln. In dieser Übung verwenden wir nur iOS. Die folgenden Richtlinien sind für iOS-Geräte verfügbar:
+Konformitätsrichtlinien werden für jede Plattform (z.B. iOS, Android, Windows) erstellt. Verwenden Sie für diese Übung iOS. Die folgenden Richtlinien sind für iOS-Geräte verfügbar:
 
 * PIN- oder Kennwortkonfiguration
 * Geräteverschlüsselung
@@ -43,18 +43,30 @@ Sie erstellen Kompatibilitätsrichtlinien für jede Plattform einzeln. In dieser
 * Minimale Version des Betriebssystems
 * Maximale Version des Betriebssystems
 
-__Wie erstelle ich eine Richtlinie?__
+## <a name="create-a-policy"></a>Erstellen einer Richtlinie
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie **Gerätekompatibilität** aus.
-4. Klicken Sie im Bereich **Gerätekonformität** auf **Richtlinien**.
-5. Wählen Sie **Richtlinie erstellen** aus, und geben Sie dann die Details wie **Name** und **Beschreibung** ein. 
-6. Wählen Sie **iOS** als **Plattform** aus.
-6. Wählen Sie unter **Einstellungen** die Option **Systemsicherheit** aus, und legen Sie dann die Umschaltfläche **Anfordern eines Kennworts zum Entsperren mobiler Geräte** auf **Erforderlich** fest. Sie können auch weitere Regeln festlegen wie z.B. **Mindestlänge von Kennwörtern**, **Erforderlicher Kennworttyp** und **Anzahl nicht alphanumerischer Zeichen im Kennwort**. Wenn Sie Ihre Richtlinie eingerichtet haben, wählen Sie **OK** aus.
-7. Kehren Sie zurück zum Bereich **Richtlinie erstellen**, und klicken Sie dann auf **Erstellen**.
-8. Wählen Sie nach dem Erstellen der Richtlinie **Zuweisungen** aus, um sie Ihrer Testgruppe zuzuweisen. Wählen Sie Ihre Testgruppe mit Ihren Testbenutzern aus, und weisen Sie dieser Gruppe dann die Richtlinie zu, indem Sie auf **Speichern** klicken.
-9. Warten Sie einige Minuten, bis Ihr registriertes Gerät Sie zur Eingabe eines aktualisierten Kennworts auffordert, damit weiterhin Kompatibilität mit der Unternehmensrichtlinie gegeben ist. Sie können dies auch manuell in der **Unternehmensportal-App für iOS** überprüfen, indem Sie auf den Gerätenamen und dann auf die Schaltfläche **Synchronisieren** klicken.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
+3. Klicken Sie auf **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen**.
+4. Geben Sie einen **Richtliniennamen** und ein **Beschreibung** ein. 
+5. Wählen Sie **iOS** als **Plattform** aus.
+6. Wählen Sie unter **Einstellungen** die Option **Systemsicherheit** aus, und legen Sie dann **Kennwort zum Entsperren mobiler Geräte erforderlich** auf **Erforderlich** fest. 
+
+    Sie können auch andere Regeln festlegen, z.B.: 
+    - **Minimale Kennwortlänge**
+    - **Erforderlicher Kennworttyp**
+    - **Anzahl der nicht alphanumerischen Zeichen im Kennwort**
+    
+    Wenn Sie Ihre Richtlinie eingerichtet haben, klicken Sie auf **OK**.
+  
+7. Kehren Sie zu **Richtlinie erstellen** zurück, und klicken Sie auf **Erstellen**. Dieser Schritt erstellt die Richtlinie und führt Sie unter **Gerätekonformität** > **Richtlinien** auf.
+8. Wählen Sie die neue Richtlinie aus, und klicken Sie auf **Zuweisungen**. Sie können Azure Active Directory (AD)-Sicherheitsgruppen ein- oder ausschließen.
+Klicken Sie auf „Ausgewählte Gruppen“, um Ihre vorhandenen Azure AD-Sicherheitsgruppen anzuzeigen. Wählen Sie die Benutzergruppen aus, auf die diese Richtlinie angewendet werden soll, und dann wählen Sie **Speichern**, um die Richtlinie für die Benutzer bereitzustellen.
+
+Damit das registrierte Gerät mit der neuen Unternehmensrichtlinie konform ist, werden Sie nach wenigen Minuten zur Eingabe eines aktualisierten Kennworts aufgefordert. Sie können das Update manuell in der **Unternehmensportal-App für iOS** suchen. Öffnen Sie die Unternehmensportal-App, wählen Sie den Namen des Geräts aus, und klicken Sie auf **Synchronisieren**.
+
+> [!NOTE]
+> Wenn neue Richtlinien auf eine dynamische Gerätegruppe angewendet werden, kann es bis zu acht Stunden dauern, bis dies für alle Geräte in der Gruppe durchgeführt wird.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

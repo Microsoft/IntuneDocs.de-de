@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 5d924e216dd6d0fe13bc4c7718b5368db1d35f8c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
+ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833347"
+ms.lasthandoff: 06/23/2018
+ms.locfileid: "36329874"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Verwenden des Problembehandlungsportals zur Unterstützung von Benutzern Ihres Unternehmens
 
@@ -234,6 +234,15 @@ Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die mit EMS-Technolog
 | Gerätetyp | Der Name des Gerätetyps                                                       |
 | Richtlinien    | Der Typ des Gerätebesitzes Dieser kann **Unternehmen**, **Persönlich** oder **Unbekannt** sein. |
 | Letzte Synchronisierung   | Der Zeitstempel, zu dem das Gerät zuletzt mit Intune synchronisiert wurde.                   |
+
+## <a name="collect-available-data-from-mobile-device"></a>Erfassen verfügbarer Daten mobiler Geräte
+
+Verwenden Sie die folgenden Ressourcen beim Erfassen von Gerätedaten, wenn Sie Geräteprobleme eines Benutzers beheben:
+  - [Senden von iOS-Registrierungsfehlern an Ihren IT-Administrator](/intune-user-help/send-errors-to-your-it-admin-ios)
+  - [Verwenden der ausführlichen Protokollierung zur Unterstützung des Supports Ihres Unternehmens bei der Behebung von Geräteproblemen](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
+  - [Senden von Android-Protokollen an den Support Ihres Unternehmens mithilfe eines USB-Kabels](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+  - [Senden von Android-Diagnosedatenprotokollen an Ihren IT-Administrator per E-Mail](/intune-user-help/send-logs-to-your-it-admin-by-email-android)
+  - [Senden von Android-Registrierungsfehlern an Ihren IT-Administrator](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

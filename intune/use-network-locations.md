@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6ab5e4de2d3a888d6b3372b75b9a95af54a591a
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 988407d6d736b669854ef8420b71a092765162b7
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745135"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843122"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Verwenden von Standorten (Netzwerk-Fencing) in Intune
 
@@ -27,7 +27,7 @@ Falls Sie den Zugriff auf ein Unternehmensnetzwerk blockieren möchten, wenn ein
 
 Sie können eine auf Netzwerkstandorten basierende Konformitätsrichtlinie erstellen. Dies wird auch als „Netzwerk-Fencing“ bezeichnet. Durch die Richtlinie wird sichergestellt, dass Geräte mit Firmennetzwerk verbunden sein müssen, um als konform zu gelten. Diese Richtlinie kann mit Richtlinien für bedingten Zugriff verwendet werden, sodass Geräte *nur* Zugriff auf die geschäftlichen Ressourcen haben, wenn das Gerät mit dem Firmennetzwerk verbunden ist. Wenn das Gerät nicht mit dem Firmennetzwerk verbunden ist, gilt es als nicht konform und verliert den Zugriff auf geschäftliche Ressourcen.
 
-Betrachten Sie das folgende Szenario:
+Stellen Sie sich das folgende Szenario vor:
 
 In Ihrer Produktionsanlage verwenden einige Mitarbeiter Android-Geräte. Ein Mitarbeiter verlässt mit dem Android-Gerät das Werk oder die Anlage. Sie können Folgendes durchführen, um nicht autorisierten Zugriff zu verhindern:
 
@@ -35,9 +35,9 @@ In Ihrer Produktionsanlage verwenden einige Mitarbeiter Android-Geräte. Ein Mit
 2. Erstellen Sie eine Konformitätsrichtlinie, die erfordert, dass diese Geräte mit dem Firmennetzwerk verbunden sein müssen, und wenden Sie diese an.
 3. Wenn das Gerät die Produktionsanlage verlässt, wird es als „Nicht konform“ betrachtet und hat keinen Zugriff auf geschäftliche Ressourcen.
 
-Indem Sie Intune-Richtlinien verwenden, können Sie eine Benachrichtigung senden, dass das Gerät nicht konform ist, und dieses blockieren. Wenn sich das Gerät wieder am Standort und im Netzwerkstandort befindet, kann es entsperrt werden und den Zugriff auf geschäftliche Ressourcen erneut erhalten.
+Darüber hinaus können Sie [Aktionen bei Nichtkonformität](#configure-the-actions-for-noncompliance) hinzufügen. Wenn sich das Gerät wieder am lokalen Standort und im Netzwerkstandort befindet, erhält es erneut Zugriff auf Unternehmensressourcen.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 So erstellen Sie eine standortbasierte Konformitätsrichtlinie:
 

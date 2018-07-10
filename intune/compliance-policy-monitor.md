@@ -1,54 +1,54 @@
 ---
-title: Überwachen von Microsoft Intune -Gerätekonformitätsrichtlinien
-titlesuffix: ''
+title: 'Überwachen der Gerätekonformitätsrichtlinien in Microsoft Intune: Azure | Microsoft-Dokumentation'
 description: Verwenden Sie das Dashboard für die Gerätekonformität, um die Konformität der Geräte insgesamt zu überwachen, Berichte anzuzeigen sowie die Gerätekonformität pro Richtlinie und pro Einstellung anzuzeigen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 2/27/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c4c3c3a2d73c6390ef5761f1bd0b12fe55855c6e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 33e42c821881a5cc7eb9e4be65f6f7e56263480e
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831870"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232969"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
 Mithilfe von Kompatibilitätsberichten können Administratoren die Kompatibilität von Geräten in ihrer Organisation analysieren und schnell kompatibilitätsbezogene Probleme behandeln, die bei Benutzern in ihrer Organisation auftreten. Sie können Informationen zum allgemeinen Kompatibilitätsstatus von Geräten, zum Kompatibilitätsstatus einer einzelnen Einstellung und zum Kompatibilitätsstatus einer einzelnen Richtlinie sowie Detailinformationen zu einzelnen Geräten anzeigen, um sich über bestimmte Einstellungen und Richtlinien zu informieren, die das Gerät betreffen.
 
-> [!NOTE]
-> Im März werden im Intune-Dienst basierend auf Ihrem Feedback einige Sicherheitsverbesserungen eingeführt. Je nachdem, wie Ihre Konformitätsrichtlinien konfiguriert sind, müssen Sie möglicherweise Maßnahmen ergreifen, damit Ihre Endbenutzer nicht den Zugriff auf ihre E-Mails verlieren. Weitere Informationen finden Sie unter [Upcoming security enhancements (Bevorstehende Sicherheitsverbesserungen)](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
-
 ## <a name="before-you-begin"></a>Vorbereitung
 
 Gehen Sie wie folgt vor, um im Azure-Portal zum **Intune-Dashboard für die Gerätekonformität** zu gelangen:
 
-1.  Melden Sie sich im [Azure-Portal](https://portal.azure.com) mit Ihren Intune-Anmeldeinformationen an.
+1. Melden Sie sich mit Ihren Intune-Anmeldeinformationen beim [Azure-Portal](https://portal.azure.com) an.
 
-2.  Klicken Sie im Menü links auf **Alle Dienste**, und geben Sie in das Filtertextfeld **Intune** ein.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
 
-3.  Wählen Sie **Intune** &gt; **Gerätekompatibilität** &gt; **Übersicht** aus. Daraufhin wird das **Gerätekompatibilitätsdashboard** geöffnet.
+3. Wählen Sie **Gerätekonformität** > **Übersicht** aus. Das **Gerätekonformitätsdashboard** wird geöffnet.
 
 > [!IMPORTANT]
 > Geräte müssen in Intune registriert werden, um Gerätekompatibilitätsrichtlinien empfangen zu können.
 
 ## <a name="device-compliance-dashboard"></a>Gerätekompatibilitätsdashboard
 
-Auf dem **Gerätekompatibilitätsdashboard** können den Status der Gerätekompatibilität überwachen. Zu diesem Zweck stehen verschiedene Kacheln mit unterschiedlichen Berichten zur Verfügung, die Aufschluss über die Kompatibilität von Geräten in Ihrer Organisation geben. Folgende Berichte sind verfügbar:
+Im **Gerätekonformitätsdashboard** können Sie die Konformität verschiedener Geräte, deren Schutzstatus und mehr überwachen. Folgende Berichte sind verfügbar:
 
--   Allgemeine Gerätekompatibilität (aggregiert)
+- Allgemeine Gerätekompatibilität (aggregiert)
 
--   Richtlinienspezifische Gerätekompatibilität
+- Richtlinienspezifische Gerätekompatibilität
 
--   Einstellungsspezifische Gerätekompatibilität
+- Einstellungsspezifische Gerätekompatibilität
+
+- Geräteschutzstatus
+
+- Status des Bedrohungs-Agents
 
 ![Abbildung: Dashboard für die Gerätekonformität](./media/idc-1.png)
 
@@ -58,26 +58,26 @@ Darüber hinaus können Sie die spezifischen Kompatibilitätsrichtlinien und Ein
 
 Hierbei handelt es sich um ein Ringdiagramm mit dem aggregierten Kompatibilitätsstatus aller in Intune registrierten Geräte. Die Werte für den Gerätekompatibilitätsstatus werden in zwei Datenbanken (Intune und Azure Active Directory) gespeichert. Im Anschluss werden die Statuswerte der Gerätekompatibilitätsrichtlinie ausführlicher beschrieben:
 
--   **Kompatibel**: Das Gerät hat erfolgreich mindestens eine vom Administrator festgelegte Einstellung der Gerätekompatibilitätsrichtlinie angewendet.
+- **Kompatibel**: Das Gerät hat erfolgreich mindestens eine vom Administrator festgelegte Einstellung der Gerätekompatibilitätsrichtlinie angewendet.
 
--   **Nicht kompatibel**: Das Gerät konnte mindestens eine vom Administrator festgelegte Einstellung der Gerätekompatibilitätsrichtlinie nicht anwenden, oder der Benutzer verstößt gegen die vom Administrator festgelegten Richtlinien.
+- **Nicht kompatibel**: Das Gerät konnte mindestens eine vom Administrator festgelegte Einstellung der Gerätekompatibilitätsrichtlinie nicht anwenden, oder der Benutzer verstößt gegen die vom Administrator festgelegten Richtlinien.
 
--   **In-grace period** (In Toleranzperiode): Für das Gerät wurde vom Administrator mindestens eine Einstellung für die Gerätekompatibilitätsrichtlinie festgelegt, diese wurden vom Benutzer aber noch nicht angewendet. Das Gerät ist daher zwar noch nicht kompatibel, befindet sich aber in der vom Administrator definierten Toleranzperiode.
+- **In-grace period** (In Toleranzperiode): Für das Gerät wurde vom Administrator mindestens eine Einstellung für die Gerätekompatibilitätsrichtlinie festgelegt, diese wurden vom Benutzer aber noch nicht angewendet. Das Gerät ist daher zwar noch nicht kompatibel, befindet sich aber in der vom Administrator definierten Toleranzperiode.
 
-    -   Informieren Sie sich ausführlicher über Aktionen für nicht kompatible Geräte.
+  - Informieren Sie sich ausführlicher über Aktionen für nicht kompatible Geräte.
 
--   **Gerät nicht synchronisiert**: Das Gerät konnte den Status der Gerätekonformitätsrichtlinie nicht melden. Mögliche Ursachen:
+- **Gerät nicht synchronisiert**: Das Gerät konnte den Status der Gerätekonformitätsrichtlinie nicht melden. Mögliche Ursachen:
 
-    -   **Unbekannt**: Das Gerät ist offline oder konnte aus einem anderen Grund nicht mit Intune oder Azure AD kommunizieren.
+  - **Unbekannt**: Das Gerät ist offline oder konnte aus einem anderen Grund nicht mit Intune oder Azure AD kommunizieren.
 
-    -   **Fehler**: Das Gerät konnte nicht mit Intune und Azure AD kommunizieren und hat eine Fehlermeldung mit der Ursache erhalten.
+  - **Fehler**: Das Gerät konnte nicht mit Intune und Azure AD kommunizieren und hat eine Fehlermeldung mit der Ursache erhalten.
 
 > [!IMPORTANT]
 > In Intune registrierte Geräte, für die keine Gerätekonformitätsrichtlinien festgelegt sind, werden in diesem Bericht der Kategorie **Konform** zugeordnet.
 
 #### <a name="drill-down-option"></a>Anzeigen von Detailinformationen
 
-Wenn Sie auf dem **Gerätekompatibilitätsdashboard** auf die Gerätekompatibilitätskachel klicken, können Sie für jedes Gerät, für das Gerätekompatibilitätsrichtlinien festgelegt sind, Detailinformationen zu einem bestimmten **Kompatibilitätsstatus**, **E-Mail-Alias des Benutzers**, **Gerätemodell** und **Standort** anzeigen.
+Wählen Sie über das **Gerätekonformitätsdashboard** eine Gerätekonformitätskachel aus, um Detailinformationen des spezifischen **Konformitätsstatus**, **E-Mail-Alias des Benutzers**, **Gerätemodells** und **Standorts** von allen Geräten anzuzeigen, für die die Gerätekonformitätsrichtlinien festgelegt sind.
 
 ![Abbildung: Dashboard für die Gerätekonformität – Detailinformationen](./media/idc-2.png)
 
@@ -93,41 +93,41 @@ Sie können auch auf die verschiedenen Kompatibilitätsstatuswerte des Geräteko
 
 Wenn Sie auf die Schaltfläche **Filter** klicken, wird das Filterflyout mit folgenden Optionen geöffnet:
 
--   Modell
+- Modell
 
-    -   Textfeld zur Eingabe einer beliebigen Suchzeichenfolge
-<br></br>
--   Plattform
+  - Textfeld zur Eingabe einer beliebigen Suchzeichenfolge
 
-    -   Android
+- Plattform
 
-    -   iOS
+  - Android
 
-    -   macOS
+  - iOS
 
-    -   Windows
+  - macOS
 
-    -   Windows Phone
+  - Windows
 
--   Status
+  - Windows Phone
 
-    -   Kompatibel
+- Status
 
-    -   Nicht kompatibel
+  - Kompatibel
 
-    -   In Grace period (In Toleranzperiode)
+  - Nicht kompatibel
 
-    -   Unbekannt
+  - In Grace period (In Toleranzperiode)
 
-    -   Fehler
+  - Unbekannt
+
+  - Fehler
 
 Wenn Sie auf die Schaltfläche **Aktualisieren** klicken, wird das Flyout geschlossen, und die Ergebnisse werden gemäß den ausgewählten Filterkriterien aktualisiert.
 
 ##### <a name="device-details"></a>Gerätedetails
 
-Wenn Sie auf ein Gerät klicken, wird der **Bereich „Geräte“** geöffnet, in dem das Gerät ausgewählt ist. Dieser Bereich zeigt weitere Details zu den Einstellungen der auf dieses Gerät angewendeten Konformitätsrichtlinie an.
+Durch Auswählen eines Geräts wird das Fenster **Geräte** mit dem ausgewählten Gerät geöffnet. Hier finden Sie weitere Details zur angewendeten Einstellung der Gerätekonformitätsrichtlinie für das Gerät.
 
-Wenn Sie auf die eigentliche Geräterichtlinieneinstellung klicken, sehen Sie den Namen der Gerätekompatibilitätsrichtlinie, aus der die vom Administrator festgelegte Gerätekompatibilitätseinstellung stammt.
+Wenn Sie auf die eigentliche Geräterichtlinieneinstellung klicken, sehen Sie den Namen der Gerätekonformitätsrichtlinie, aus der die vom Administrator festgelegte Gerätekonformitätseinstellung stammt.
 
 ### <a name="devices-without-compliance-policy"></a>Geräte ohne Konformitätsrichtlinie
 Dieser Bericht identifiziert Geräte, denen keine Konformitätsrichtlinie zugewiesen ist. Durch die Einführung der Sicherheitseinstellung, die alle Geräte ohne Konformitätsrichtlinien als „nicht konform“ markiert, ist es wichtig, diese Geräte zu identifizieren. Sie können diesen dann mindestens eine Konformitätsrichtlinie zuweisen.
@@ -157,3 +157,10 @@ In diesem Bericht können Sie sich auf der Grundlage der Kompatibilitätseinstel
 ![Abbildung: einstellungsspezifischer Gerätekonformitätsbericht](./media/idc-10.png)
 
 Wenn Sie auf die Kachel für die Einstellungskompatibilität und anschließend auf eine der Gerätekompatibilitätsrichtlinien-Einstellungen klicken, erhalten Sie für jedes Gerät, für das diese Gerätekompatibilitätsrichtlinien-Einstellung gilt, Informationen zum **Kompatibilitätsstatus**, **E-Mail-Alias des Benutzers**, **Gerätemodell** und **Standort**.
+
+## <a name="how-intune-resolves-policy-conflicts"></a>Wie Intune-Richtlinienkonflikte löst
+Richtlinienkonflikte können auftreten, wenn mehrere Intune-Richtlinien auf ein Gerät angewendet werden. Wenn sich Richtlinieneinstellungen überschneiden, löst Intune Konflikte nach den folgenden Regeln:
+
+- Wenn die in Konflikt stehenden Einstellungen zu einer Intune-Konfigurationsrichtlinie und einer Kompatibilitätsrichtlinie gehören, haben die Einstellungen in der Kompatibilitätsrichtlinie Vorrang vor den Einstellungen in der Konfigurationsrichtlinie. Dies geschieht auch, wenn die Einstellungen in der Konfigurationsrichtlinie sicherer sind.
+
+- Wenn Sie mehrere Kompatibilitätsrichtlinien bereitgestellt haben, verwendet Intune die sichersten dieser Richtlinien.

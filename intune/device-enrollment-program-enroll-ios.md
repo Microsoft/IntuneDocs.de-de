@@ -15,11 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6f16bfd148e3c386aaf0ced78381e1eed8ae47
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: 8c0eda06c0c781f0a789034abbf5ef8799a9b45c
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34474445"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple
 
@@ -206,13 +207,17 @@ Informationen finden Sie unter [Registrieren Ihres iOS-Geräts in Intune mit dem
 ## <a name="renew-a-dep-token"></a>Erneuern eines DEP-Tokens  
 1. Wechseln Sie zu deploy.apple.com.  
 2. Wählen Sie unter **Server verwalten** Ihren MDM-Server aus, der der Tokendatei zugeordnet ist, die Sie erneuern möchten.
-3. Klicken Sie auf **Neues Token generieren**.  
+3. Klicken Sie auf **Neues Token generieren**.
+
+    ![Screenshot von „Neues Token generieren“](./media/device-enrollment-program-enroll-ios/generatenewtoken.png)
+
 4. Klicken Sie auf **Ihr Servertoken**.  
-5. Wählen Sie unter [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Registrierungsprogrammtoken** aus.  
-6. Wählen Sie das Token und anschließend **Token erneuern** aus.  
-7. Geben Sie die Apple-ID ein, die zur Erstellung des ursprünglichen Tokens verwendet wurde.  
+5. Klicken Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) auf **Geräteregistrierung** > **Apple-Registrierung** > **Token für Registrierungsprogramm**, und wählen Sie anschließend das Token aus.
+    ![Screenshot der Registrierungsprogrammtoken](./media/device-enrollment-program-enroll-ios/enrollmentprogramtokens.png)
+
+6. Wählen Sie **Token erneuern** aus, und geben Sie die Apple-ID ein, die zum Erstellen des ursprünglichen Tokens verwendet wurde.  
+    ![Screenshot von „Token erneuern“](./media/device-enrollment-program-enroll-ios/renewtoken.png)
+
 8. Laden Sie das neu heruntergeladene Token hoch.  
 9. Klicken Sie auf **Token erneuern**. Es wird eine Bestätigung angezeigt, dass das Token erneuert wurde.   
-
-
-
+    ![Screenshot der Bestätigung](./media/device-enrollment-program-enroll-ios/confirmation.png)

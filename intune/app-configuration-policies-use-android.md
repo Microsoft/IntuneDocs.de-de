@@ -3,10 +3,10 @@ title: Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Android-Ger
 titlesuffix: Microsoft Intune
 description: Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellungen anzugeben, wenn Benutzer eine Android for Work-App ausführen.
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 05/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fbf70630124614aa1ed302a41d6e3f33c10c63d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3011d98b73ef95d1c5a527798ab004f788c9eee9
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34470864"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Android-Geräte
 
@@ -35,15 +36,12 @@ Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellunge
 3. Wählen Sie die Workload **Mobile Apps** aus.
 4. Wählen Sie in der Gruppe **Verwalten** **App-Konfigurationsrichtlinien** und dann **Hinzufügen** aus.
 5. Legen Sie die folgenden Details fest:
-    - **Name**  
-      Der Name des Profils, das im Azure-Portal angezeigt wird
-    - **Beschreibung**  
-      Die Beschreibung des Profils, das im Azure-Portal angezeigt wird
-    - **Geräteregistrierungstyp**  
-      Klicken Sie auf **Verwaltete Geräte**.
+    - **Name:** Der Name des Profils, das im Azure-Portal angezeigt wird
+    - **Beschreibung:** Die Beschreibung des Profils, das im Azure-Portal angezeigt wird
+    - **Geräteregistrierungstyp:** Wählen Sie die **verwalteten Geräte** aus.
 6. Wählen Sie **Android for Work** als **Plattform** aus.
 7. Wählen Sie **Zugeordnete App** aus, um die App auszuwählen, für die Sie eine App-Konfigurationsrichtlinie definieren möchten. Wählen Sie aus der Liste von Android for Work-Apps aus, die Sie genehmigt und mit Intune synchronisiert haben.
-8. Wählen Sie **Konfigurationseinstellungen** aus. Sie können Konfigurationen auf diese Weise festlegen:
+8. Klicken Sie auf **Berechtigungen**. Sie können Konfigurationen auf diese Weise festlegen:
     - im [Konfigurations-Designer](#Use-the-configuration-designer)
     - im [JSON-Editor](#Enter-the-JSON-editor)
 9. Wählen Sie **OK** und dann **Hinzufügen** aus.

@@ -119,7 +119,7 @@ Wenn Ihre Organisation weltweit tätig ist, berücksichtigen Sie bei der Planung
 -   Asien und pazifischer Raum
 
 >[!IMPORTANT]
-> Land/die Region und Standort des Mandanten können später nicht mehr geändert werden.
+> Land/Region und Standort des Mandanten können später nicht mehr geändert werden.
 
 ## <a name="external-dependencies"></a>Externe Abhängigkeiten
 

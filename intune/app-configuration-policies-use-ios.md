@@ -3,10 +3,10 @@ title: Hinzufügen App-Konfigurationsrichtlinien für verwaltete iOS-Geräte
 titlesuffix: Microsoft Intune
 description: Erfahren Sie, wie Sie App-Konfigurationsrichtlinien zum Bereitstellen von Konfigurationsdaten für eine iOS-App beim Ausführen verwenden.
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 06/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,24 +15,25 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b71b52ffa58f847fc0efcd2924fd04a7a16a099
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
+ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35232232"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Hinzufügen App-Konfigurationsrichtlinien für verwaltete iOS-Geräte
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellungen anzugeben, wenn Benutzer eine iOS-App ausführen. Sie weisen diese Richtlinien nicht direkt Benutzern und Geräten zu. Stattdessen verknüpfen Sie eine Richtlinie mit einer App und weisen dann die App zu. Die Richtlinieneinstellungen werden verwendet, wenn die App danach sucht (in der Regel beim ersten Ausführen).
+Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um benutzerdefinierte Konfigurationseinstellungen für eine iOS-App anzugeben. Mit diesen Konfigurationseinstellungen kann eine App basierend auf den Vorstellungen des Herstellers angepasst werden. Diese Konfigurationseinstellungen (Schlüssel und Werte) müssen Sie vom Hersteller der App abrufen. Sie geben diese Einstellungen als Schlüssel und Werte oder als XML-Daten an, die die Schlüssel und Werte enthalten, um die App zu konfigurieren. Sie weisen diese Konfigurationsrichtlinien nicht direkt Benutzern und Geräten zu. Stattdessen verknüpfen Sie eine Konfigurationsrichtlinie mit einer App und weisen dann die App zu. Die Konfigurationsrichtlinieneinstellungen werden verwendet, wenn die App danach sucht (in der Regel beim ersten Ausführen).
 
-Sie können einer Gruppe von Benutzern und Geräten mithilfe einer Kombination von Ein- und Ausschlusszuweisungen eine Anwendungskonfigurationsrichtlinie zuweisen. Nachdem Sie eine App-Konfigurationsrichtlinie hinzugefügt haben, können Sie die Zuweisungen für die App-Konfigurationsrichtlinie festlegen. Wenn Sie die Zuweisungen für die Richtlinie festlegen, können Sie entscheiden, ob Gruppen von Benutzern ein- und ausgeschlossen werden, für welche die Richtlinie angewendet wird. Wenn Sie entscheiden, eine oder mehrere Gruppen einzuschließen, können Sie bestimmte einzuschließende Gruppen oder integrierte Gruppen auswählen. Zu den integrierten Gruppen zählen **Alle Benutzer**, **Alle Geräte** und **Alle Benutzer und alle Geräte**. 
+Nachdem Sie eine App-Konfigurationsrichtlinie hinzugefügt haben, können Sie die Zuweisungen für die App-Konfigurationsrichtlinie festlegen. Wenn Sie die Zuweisungen für die Richtlinie festlegen, können Sie entscheiden, ob Gruppen von Benutzern ein- und ausgeschlossen werden, für welche die Richtlinie angewendet wird. Wenn Sie entscheiden, eine oder mehrere Gruppen einzuschließen, können Sie bestimmte einzuschließende Gruppen oder integrierte Gruppen auswählen. Zu den integrierten Gruppen zählen **Alle Benutzer**, **Alle Geräte** und **Alle Benutzer und alle Geräte**. 
 
 >[!NOTE]
 >Intune bietet die vorab erstellten Gruppen **Alle Benutzer** und **Alle Geräte** in der Konsole zur Vereinfachung mit integrierten Optimierungen an. Sie sollten diese Gruppen unbedingt anstelle möglicherweise selbst erstellter „Alle Benutzer“- oder „Alle Geräte“-Gruppen verwenden, um alle Benutzer und alle Geräte zu erreichen.
 
-Nachdem Sie die eingeschlossenen Gruppen für Ihre Anwendungskonfigurationsrichtlinie ausgewählt haben, können Sie auch die bestimmten auszuschließenden Gruppen auswählen.
+Nachdem Sie die eingeschlossenen Gruppen für Ihre Anwendungskonfigurationsrichtlinie ausgewählt haben, können Sie auch die bestimmten auszuschließenden Gruppen auswählen. Weitere Informationen finden Sie unter [Einschließen und Ausschließen von App-Zuweisungen in Microsoft Intune](apps-inc-exl-assignments.md).
 
 > [!TIP]
 > Dieser Richtlinientyp ist zurzeit nur für Geräte unter iOS 8.0 und höher verfügbar. Er unterstützt die folgenden App-Installationstypen:
@@ -49,18 +50,16 @@ Nachdem Sie die eingeschlossenen Gruppen für Ihre Anwendungskonfigurationsricht
 3. Wählen Sie die Workload **Mobile Apps** aus.
 4. Wählen Sie in der Gruppe **Verwalten** **App-Konfigurationsrichtlinien** und dann **Hinzufügen** aus.
 5. Legen Sie die folgenden Details fest:
-    - **Name**<br>
-      Der Name des Profils, das im Azure-Portal angezeigt wird.
-    - **Beschreibung**<br>
-      Die Beschreibung des Profils, das im Azure-Portal angezeigt wird.
-    - **Geräteregistrierungstyp**<br>
-      Klicken Sie auf **Verwaltete Geräte**.
+    - **Name:** Der Name des Profils, das im Azure-Portal angezeigt wird.
+    - **Beschreibung:** Die Beschreibung des Profils, das im Azure-Portal angezeigt wird.
+    - **Geräteregistrierungstyp:** Wählen Sie die **verwalteten Geräte** aus.
 6. Wählen Sie **iOS** als **Plattform** aus.
 7.  Wählen Sie **Zugeordnete App** aus. Wählen Sie anschließend im Bereich **Zugeordnete App** die verwaltete App aus, auf die Sie die Konfiguration anwenden möchten, und klicken Sie auf **OK**.
 8.  Wählen Sie im Bereich **Konfigurationsrichtlinie hinzufügen** die Option **Konfigurationseinstellungen** aus.
-9. Wählen Sie das **Format der Konfigurationseinstellungen** aus. Wählen Sie eine der folgenden Einstellungen aus:
-    - **[Verwenden des Konfigurations-Designers](#use-configuration-designer)**
-    - **[Eingeben von XML-Daten](#enter-xml-data)**
+9. Wählen Sie das **Format der Konfigurationseinstellungen** aus. Wählen Sie eine der folgenden Optionen aus, um XML-Informationen hinzuzufügen:
+    - **Verwenden des Konfigurations-Designers**
+    - **Eingeben von XML-Daten**<br></br>
+    Ausführliche Informationen zur Verwendung des Konfigurations-Designers finden Sie unter [Verwenden des Konfigurations-Designers](#use-configuration-designer). Ausführliche Informationen zum Eingeben von XML-Daten finden Sie unter [Eingeben von XML-Daten](#enter-xml-data). 
 10. Nachdem Sie Ihre XML-Daten hinzugefügt haben, wählen Sie **OK**, und wählen Sie dann **Hinzufügen**, um die Konfigurationsrichtlinie hinzuzufügen. Der Übersichtsbereich für die Konfigurationsrichtlinie wird angezeigt.
 11. Wählen Sie **Zuweisungen**, um die Ein- und Ausschlussoptionen anzuzeigen. 
 
@@ -80,17 +79,14 @@ Nachdem Sie die eingeschlossenen Gruppen für Ihre Anwendungskonfigurationsricht
 
 ## <a name="use-configuration-designer"></a>Verwenden des Konfigurations-Designers
 
-Sie können den Konfigurations-Designer für Apps auf Geräten verwenden, die in Intune registriert sind oder nicht. Der Designer ermöglicht Ihnen das Konfigurieren bestimmter Konfigurationsschlüssel und -werte. Sie müssen ebenfalls den Datentyp für jeden Wert angeben. Die Einstellungen werden für Apps automatisch bei der Installation bereitgestellt.
+Microsoft Intune bietet Konfigurationseinstellungen, die für eine App eindeutig sind. Sie können den Konfigurations-Designer für Apps auf Geräten verwenden, unabhängig davon, ob sie in Microsoft Intune registriert sind. Mit dem Designer können Sie spezifische Konfigurationsschlüssel und -werte konfigurieren, die Ihnen beim Erstellen der zugrundeliegenden XML-Daten helfen. Sie müssen ebenfalls den Datentyp für jeden Wert angeben. Diese Einstellungen werden Apps automatisch bereitgestellt, wenn sie installiert werden.
 
 ### <a name="add-a-setting"></a>Hinzufügen einer Einstellung
 
 1. Legen Sie für jeden Schlüssel und jeden Wert in der Konfiguration Folgendes fest:
-   - **Konfigurationsschlüssel**<br>
-     Der Schlüssel, der die bestimmte Einstellungskonfiguration eindeutig identifiziert.
-   - **Werttyp**<br>
-     Der Datentyp des Konfigurationswerts. Zu den Typen gehören Integer, Real, String oder Boolean.
-   - **Konfigurationswert**<br>
-     Der Wert für die Konfiguration.
+   - **Konfigurationsschlüssel:** Der Schlüssel, der die spezifische Einstellungskonfiguration eindeutig identifiziert.
+   - **Werttyp:** Der Datentyp des Konfigurationswerts. Zu den Typen gehören Integer, Real, String oder Boolean.
+   - **Konfigurationswert:** Der Wert für die Konfiguration.
 2. Wählen Sie **OK** aus, um Ihre Konfigurationseinstellungen festzulegen.
 
 ### <a name="delete-a-setting"></a>Löschen einer Einstellung
@@ -165,4 +161,4 @@ Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschafte
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Fahren Sie wie gewöhnlich mit dem [Zuweisen](apps-deploy.md) und [Überwachen](apps-monitor.md) der App fort.
+Fahren Sie damit fort, die App [zuzuweisen](apps-deploy.md) und zu [überwachen](apps-monitor.md).

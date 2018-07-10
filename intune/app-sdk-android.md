@@ -14,11 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 93ecf7b66be25f0f93456d5419ef1f57b8ca7efe
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: ac85478abed049487c028c58637e7937876d2198
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34449869"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Entwicklerhandbuch zum Microsoft Intune App SDK für Android
 
@@ -462,7 +463,7 @@ Keine zusätzlichen Manifestwerte müssen konfiguriert werden.
 
 Bei Bedarf können die Autorität und NonBrokerRedirectURI angegeben werden.
 
-Das Intune SDK-Team benötigt die Anwendungs-ID (Client-ID) Ihrer App. Sie können diese ID über das [Azure-Portal](https://portal.azure.com/) unter **Alle Anwendungen** in der Spalte **Anwendungs-ID** finden. Informationen über das Registrieren einer Anwendung mit AAD finden Sie [hier](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications). Das Team für das Intune SDK ist über msintuneappsdk@microsoft.com erreichbar.
+Das Intune SDK-Team benötigt die Anwendungs-ID (Client-ID) Ihrer App. Sie können diese ID über das [Azure-Portal](https://portal.azure.com/) unter **Alle Anwendungen** in der Spalte **Anwendungs-ID** finden. Informationen über das Registrieren einer Anwendung mit Azure AD finden Sie [hier](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications). Das Team für das Intune SDK ist über msintuneappsdk@microsoft.com erreichbar.
 
 Darüber hinaus finden Sie unten die Anforderungen für den [bedingten Zugriff](#conditional-access).
 
@@ -472,22 +473,30 @@ Darüber hinaus finden Sie unten die Anforderungen für den [bedingten Zugriff](
     |--|--|
     | ClientID | Client-ID der App (von Azure AD generiert, wenn die App registriert ist) |
     | SkipBroker | **True** |
+    
+    Bei Bedarf können die Autorität und NonBrokerRedirectURI angegeben werden.
 
-Bei Bedarf können die Autorität und NonBrokerRedirectURI angegeben werden.
 
 ### <a name="conditional-access"></a>Bedingter Zugriff
-Der bedingte Zugriff (Conditional Access, CA) ist ein [Feature](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-conditional-access-developer) von Azure Active Directory, das dazu verwendet werden kann, den Zugriff auf AAD-Ressourcen zu steuern.  [Intune-Administratoren können Regeln für den bedingten Zugriff definieren](https://docs.microsoft.com/en-us/intune/conditional-access), die den Zugriff auf Ressourcen nur über Geräte oder Apps ermöglichen, die von Intune verwaltet werden. Die nachfolgenden Schritte sind erforderlich, um sicherzustellen, dass Ihre App bei Bedarf auf die Ressourcen zugreifen kann. Wenn Ihre App keine AAD-Zugriffstoken erhält oder nur auf Ressourcen zugreift, die nicht durch den bedingten Zugriff geschützt werden können, können Sie diese Schritte überspringen.
+
+Der bedingte Zugriff (Conditional Access, CA) ist ein [Feature](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) von Azure Active Directory, das dazu verwendet werden kann, den Zugriff auf AAD-Ressourcen zu steuern. [Intune-Administratoren können Regeln für den bedingten Zugriff definieren](https://docs.microsoft.com/intune/conditional-access), die den Zugriff auf Ressourcen nur über Geräte oder Apps ermöglichen, die von Intune verwaltet werden. Die nachfolgenden Schritte sind erforderlich, um sicherzustellen, dass Ihre App bei Bedarf auf die Ressourcen zugreifen kann. Wenn Ihre App keine AAD-Zugriffstoken erhält oder nur auf Ressourcen zugreift, die nicht durch den bedingten Zugriff geschützt werden können, können Sie diese Schritte überspringen.
 
 1. Befolgen Sie die [ADAL-Integrationsrichtlinien](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library). 
    Beachten Sie insbesondere Schritt 11 für die Verwendung von Brokern.
-2. [Registrieren Sie Ihre Anwendung mit Azure Active Directory] (https://docs.microsoft.com/en-us/azure/active-directory/active-directory-app-registration). 
-   Den Umleitungs-URI finden Sie oben in den ADAL-Integrationsrichtlinien.
+
+2. [Registrieren Sie Ihre Anwendung mit Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). Den Umleitungs-URI finden Sie oben in den ADAL-Integrationsrichtlinien.
+
 3. Legen Sie die Manifestmetadatenparameter über die oben aufgeführten [häufig verwendeten ADAL-Konfigurationen](#common-adal-configurations) (Punkt 2) fest.
-4. Überprüfen Sie, ob alles ordnungsgemäß konfiguriert ist, indem Sie den [gerätebasierten bedingten Zugriff](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use) im [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) aktivieren und bestätigen:
-    - Dass die Anmeldung bei Ihrer App Aufforderungen zur Installation und Registrierung des Intune-Unternehmensportals aufruft.
-    - Dass die Anmeldung bei Ihrer App nach der Registrierung erfolgreich ausgeführt wird.
-5. Sobald Ihre App die Integration des Intune APP SDK geliefert hat, kontaktieren Sie msintuneappsdk@microsoft.com, um Ihre App der Liste der genehmigten Apps für den [App-basierten bedingten Zugriff](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use#app-based-conditional-access) hinzuzufügen.
-6. Sobald Ihre App der Liste hinzugefügt wurde, überprüfen Sie dies, indem Sie den [App-basierten bedingten Zugriff konfigurieren](https://docs.microsoft.com/en-us/intune/app-based-conditional-access-intune-create) und sicherstellen, dass die Anmeldung bei Ihrer App erfolgreich abgeschlossen wird.
+
+4. Überprüfen Sie, ob alles ordnungsgemäß konfiguriert ist, indem Sie den [gerätebasierten bedingten Zugriff](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) im [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) aktivieren und bestätigen:
+* Dass die Anmeldung bei Ihrer App Aufforderungen zur Installation und Registrierung des Intune-Unternehmensportals aufruft.
+* Dass die Anmeldung bei Ihrer App nach der Registrierung erfolgreich ausgeführt wird.
+
+5. Sobald Ihre App die Integration des Intune APP SDK geliefert hat, kontaktieren Sie msintuneappsdk@microsoft.com, um Ihre App der Liste der genehmigten Apps für den [App-basierten bedingten Zugriff](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access) hinzuzufügen.
+
+6. Sobald Ihre App der Liste hinzugefügt wurde, überprüfen Sie dies, indem Sie den [App-basierten bedingten Zugriff konfigurieren](https://docs.microsoft.com/intune/app-based-conditional-access-intune-create) und sicherstellen, dass die Anmeldung bei Ihrer App erfolgreich abgeschlossen wird.
+
+
 ## <a name="app-protection-policy-without-device-enrollment"></a>App-Schutzrichtlinie ohne Geräteregistrierung
 
 ### <a name="overview"></a>Übersicht
@@ -1371,7 +1380,6 @@ Vom MAM SDK generierte Ansichten können visuell angepasst werden, um der App no
 
 ### <a name="how-to-customize"></a>Vorgehensweise beim Anpassen
 Damit Formatvorlagen- und Stiländerungen auf Intune MAM-Ansichten angewendet werden, müssen Sie zuerst eine XML-Datei für die Außerkraftsetzung von Formatvorlagen und Stil erstellen. Diese Datei sollte im Verzeichnis „/res/xml“ Ihrer App gespeichert werden, und Sie können ihr einen beliebigen Namen zuweisen. Das folgende Beispiel veranschaulicht das Format, das diese Datei einhalten muss.
-
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <styleOverrides>
@@ -1401,7 +1409,7 @@ Nachfolgend finden Sie die vollständige Liste der zulässigen Stilattribute, di
 | Akzentfarbe | PIN-Feldrahmen (markiert) <br> Links |accent_color | Farbe |
 | App-Logo | Großes Symbol, das auf dem PIN-Bildschirm der Intune-App angezeigt wird | logo_image | Zeichenbar |
 
-## <a name="working-with-app-we-service-enrollment-sdk-integrated-android-lob-app-and-adal-sso-optional"></a>Arbeiten mit der APP-WE-Dienstregistrierung, der in das SDK integrierten Android LOB-App und ADAL-SSO (optional)
+## <a name="default-enrollment-optional"></a>Standardregistrierung (Optional)
 <!-- Requiring user login prompt for an automatic APP-WE service enrollment, requiring Intune app protection policies in order to use your SDK-integrated Android LOB app, and enabling ADAL SSO (optional) -->
 
 Im Folgenden wird erläutert, wie Sie eine Benutzeraufforderung beim Start der App für die automatische APP-WE-Dienstregistrierung erforderlich machen (in diesem Abschnitt **Standardregistrierung** genannt), und wie Sie App-Schutzrichtlinien von Intune erforderlich machen, damit nur über Intune geschützte Benutzer Ihre in die SDK integrierte Android LOB-App verwenden dürfen. Außerdem wird dargestellt, wie SSO für Ihre in das SDK integrierte Android LOB-App aktiviert wird. Dies wird für Store-Apps, die von Personen verwendet werden können, die kein Intune verwenden, **nicht** unterstützt.
@@ -1413,7 +1421,7 @@ Im Folgenden wird erläutert, wie Sie eine Benutzeraufforderung beim Start der A
 * Das Intune SDK-Team benötigt die Anwendungs-ID Ihrer App. Sie können diese ID über das [Azure-Portal](https://portal.azure.com/) unter **Alle Anwendungen** in der Spalte **Anwendungs-ID** finden. Am besten können Sie das Intune SDK-Team per E-Mail erreichen msintuneappsdk@microsoft.com.
 
 ### <a name="working-with-the-intune-sdk"></a>Arbeiten mit dem Intune SDK
-Diese Anweisungen beziehen sich auf alle Android- und Xamarin-Apps, für die eine App-Schutzrichtlinie von Intune für die Verwendung auf einem Benutzergerät erforderlich sein soll.
+Diese Anweisungen beziehen sich auf alle Android- und Xamarin-App-Entwickler, für die eine App-Schutzrichtlinie von Intune für die Verwendung der App auf einem Benutzergerät erforderlich sein soll.
 
 1. Konfigurieren Sie ADAL, indem Sie die in der [Intune SDK für Android-Anleitung](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal) beschriebenen Schritte ausführen.
    > [!NOTE] 

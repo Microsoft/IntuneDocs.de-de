@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 06/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 75e36456c03cd0a769e9741606a2b70fa7e49c35
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
+ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744991"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36263403"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune
 
@@ -145,7 +145,7 @@ Wenn Sie eine App in Intune hinzufügen, können Sie die gewünschte Kategorie a
 3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
 4. Wählen Sie im Workloadbereich **Mobile Apps** unter **Setup** die Option **App-Kategorien** aus.  
     Im Bereich **App-Kategorien** wird eine Liste der aktuellen Kategorien angezeigt. 
-5. Führen Sie eine der folgenden Aktionen aus:
+5. Führen Sie einen der folgenden Schritte aus:
     - Um eine Kategorie hinzuzufügen, wählen Sie im Bereich **Kategorie erstellen** die Option **Hinzufügen** aus, und geben Sie dann einen Namen für die Kategorie ein.  
     Namen können in nur einer Sprache eingegeben werden und werden von Intune nicht übersetzt.
     - Um eine Kategorie zu bearbeiten, wählen Sie die Auslassungspunkte (**...** ) neben der Kategorie aus und dann **An Dashboard anheften** oder **Löschen**.

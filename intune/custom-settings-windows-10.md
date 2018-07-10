@@ -1,62 +1,62 @@
 ---
-title: Benutzerdefinierte Microsoft Intune-Einstellungen für Windows 10-Geräte
-titlesuffix: ''
-description: Erfahren Sie etwas über die benutzerdefinierten Einstellungen, die Sie in einem benutzerdefinierten Windows 10-Profil konfigurieren können.
+title: 'Benutzerdefinierte Einstellungen für Windows 10-Geräte in Microsoft Intune: Azure | Microsoft-Dokumentation'
+description: Konfigurieren von benutzerdefinierten OMA-URI-Einstellungen auf Geräten unter Windows 10 mithilfe eines benutzerdefinierten Profils in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36705c49a55c88c41470feaad14520e900dcb3dd
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: bdbb6643a4ee8aace0db22cd7f9189f7ac6445f0
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31837012"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232825"
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>Benutzerdefinierte Microsoft Intune-Geräteeinstellungen für Windows 10-Geräte
+# <a name="custom-oma-uri-settings-for-windows-10-devices---intune"></a>Benutzerdefinierte OMA-URI-Einstellungen für Windows 10-Geräte: Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
- Stellen Sie mithilfe des **benutzerdefinierten** Profils von Microsoft Intune für Windows 10 und Windows 10 Mobile OMA-URI-Einstellungen (Open Mobile Alliance Uniform Resource Identifier) bereit, um Features auf Geräten zu steuern. Windows 10 stellt viele CSP-Einstellungen zur Verfügung, z.B. den [Richtlinienkonfigurationsdienst-Anbieter (Policy Configuration Service Provider; Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
-Wenn Sie nach einer bestimmten Einstellung suchen, beachten Sie, dass das [Geräteeinschränkungsprofil von Windows 10](device-restrictions-windows-10.md) viele Einstellungen enthält, die in Intune integriert sind und keine Angabe benutzerdefinierter Werte erfordern.
+Stellen Sie mithilfe des **benutzerdefinierten** Profils von Microsoft Intune für Windows 10 und Windows 10 Mobile OMA-URI-Einstellungen (Open Mobile Alliance Uniform Resource Identifier) bereit. Diese Einstellungen werden zum Steuern von Features auf Geräten verwendet. Windows 10 stellt viele CSP-Einstellungen zur Verfügung, z.B. den [Richtlinienkonfigurationsdienst-Anbieter (Policy Configuration Service Provider, Policy CSP)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
+
+Wenn Sie nach einer bestimmten Einstellung suchen, beachten Sie, dass das [Geräteeinschränkungsprofil von Windows 10](device-restrictions-windows-10.md) viele Einstellungen enthält, die in Intune integriert sind und keine benutzerdefinierte Werte erfordern.
 
 ## <a name="configure-custom-settings"></a>Konfigurieren von benutzerdefinierten Einstellungen
 
-1. Anweisungen zu den ersten Schritten finden Sie unter [Konfigurieren von benutzerdefinierten Geräteeinstellungen in Microsoft Intune](custom-settings-configure.md).
-1. Klicken Sie im Bereich **Benutzerdefinierte OMA-URI-Einstellungen** auf **Hinzufügen**, um einen neuen Wert hinzuzufügen. Sie können auch auf **Exportieren** klicken, um eine Liste aller konfigurierten Werte in einer durch Trennzeichen getrennten Wertedatei (CSV) anzuzeigen.
-1. Geben Sie für jede OMA-URI-Einstellung, die Sie hinzufügen möchten, die folgenden Informationen ein. Verwenden Sie die Liste in diesem Artikel, um weitere Informationen zu den Einstellungen zu erhalten, die Sie verwenden können:
-    - **Name:** Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie sie in der Liste der Einstellungen einfacher identifizieren können.
-    - **Beschreibung**: Geben Sie optional eine Beschreibung für die Einstellung ein.
-    - **OMA-URI (Groß-/Kleinschreibung beachten)** – Geben Sie den OMA-URI an, für den Sie eine Einstellung festlegen möchten.
-    - **Datentyp** – Wählen Sie aus:
-        - **Zeichenfolge**
-        - **Zeichenfolge (XML)**
-        - **Datum und Uhrzeit**
-        - **Ganze Zahl**
-        - **Gleitkomma**
-        - **Boolesch**
-        - **Base64**
-    - **Wert**: Geben Sie den Wert oder die Datei an, der bzw. die mit der von Ihnen eingegebenen OMA-URI verknüpft werden soll.
-1. Klicken Sie anschließend auf **OK**, navigieren Sie wieder zum Bereich **Profil erstellen**, und klicken Sie auf **Erstellen**.
-Das Profil wird erstellt und im Bereich „Profilliste“ angezeigt.
+1. Erstellen Sie ein neues Konfigurationsprofil mithilfe des Profiltyps **Benutzerdefiniert**. Die Schritte werden unter [Konfigurieren von benutzerdefinierten Geräteeinstellungen](custom-settings-configure.md) aufgeführt.
+2. Klicken Sie unter **Benutzerdefinierte OMA-URI-Einstellungen** auf **Hinzufügen**, um eine neue Einstellung zu erstellen. Sie können auch auf **Exportieren** klicken, um eine Liste aller konfigurierten Werte in einer durch Trennzeichen getrennten Wertedatei (CSV) anzuzeigen.
+3. Geben Sie für jede OMA-URI-Einstellung, die Sie hinzufügen möchten, die folgenden Informationen ein:
+
+- **Name:** Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie sie in der Liste der Einstellungen einfacher identifizieren können.
+- **Beschreibung:** Geben Sie optional eine Beschreibung für die Einstellung ein.
+- **OMA-URI (Groß-/Kleinschreibung beachten)**: Geben Sie den OMA-URI an, für den Sie eine Einstellung festlegen möchten.
+- **Datentyp**: Wählen Sie aus dem Folgenden:
+  - **Zeichenfolge**
+  - **Zeichenfolge (XML)**
+  - **Datum und Uhrzeit**
+  - **Ganze Zahl**
+  - **Gleitkomma**
+  - **Boolesch**
+  - **Base64**
+- **Wert:** Geben Sie den Wert oder die Datei an, die dem von Ihnen eingegebenen OMA-URI zugeordnet werden soll.
+
+4. Wenn Sie fertig sind, klicken Sie auf **OK**. Klicken Sie unter **Profil erstellen** auf **Erstellen**. Das Profil wird erstellt und in der Profilliste angezeigt.
 
 ## <a name="example"></a>Beispiel
-Im folgenden Screenshot ist die Einstellung **Connectivity/AllowVPNOverCellular** aktiviert. Dadurch kann ein Windows 10-Gerät eine VPN-Verbindung über ein Mobilfunknetz öffnen.
+Im folgenden Beispiel wird die Einstellung **Konnektivität > VPN über Mobilfunknetz zulassen** aktiviert. Mit dieser Einstellung kann ein Windows 10-Gerät eine VPN-Verbindung über ein Mobilfunknetz herstellen.
 
-> ![Beispiel für eine benutzerdefinierte Richtlinie mit VPN-Einstellungen](./media/custom-policy-example.png)
+![Beispiel für eine benutzerdefinierte Richtlinie mit VPN-Einstellungen](./media/custom-policy-example.png)
 
+## <a name="find-the-policies-you-can-configure"></a>Suchen konfigurierbarer Richtlinien
 
-## <a name="how-to-find-the-policies-you-can-configure"></a>Suchen konfigurierbarer Richtlinien
+Eine vollständige Liste aller Konfigurationsdienstanbieter (CSP), die von Windows 10 unterstützt werden, finden Sie in der [Configuration service provider reference (Konfigurationsdienstanbieter-Referenz)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference).
 
-Eine vollständige Liste aller Konfigurationsdienstanbieter (CSP), die von Windows 10 unterstützt werden, finden Sie in der [Konfigurationsdienstanbieter-Referenz](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) in der Windows-Dokumentationsbibliothek.
+Nicht alle Einstellungen sind mit allen Windows 10-Versionen kompatibel. Über die [Konfigurationsdienstanbieter-Referenz](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) erfahren Sie, welche Versionen für die einzelnen Konfigurationsdienstanbieter unterstützt werden.
 
-Nicht alle Einstellungen sind mit allen Windows 10-Versionen kompatibel. Die Tabelle im Windows-Artikel enthält entsprechende Informationen, welche Versionen für die einzelnen Konfigurationsdienstanbieter unterstützt werden.
-
-Darüber hinaus unterstützt Intune nicht alle Einstellungen, die in diesem Artikel aufgeführt werden. Öffnen Sie den Artikel für die jeweilige Einstellung, um herauszufinden, ob die gewünschte Einstellung von Intune unterstützt wird. Jede Einstellungsseite zeigt ihren unterstützten Vorgang an. Damit die Einstellung mit Intune funktioniert, muss sie die Vorgänge **Hinzufügen** oder **Ersetzen** unterstützen.
+Darüber hinaus unterstützt Intune nicht alle aufgeführten Einstellungen. Öffnen Sie den Artikel für die jeweilige Einstellung, um herauszufinden, ob die gewünschte Einstellung von Intune unterstützt wird. Jede Einstellungsseite zeigt ihren unterstützten Vorgang an. Damit die Einstellung mit Intune funktioniert, muss sie die Vorgänge **Hinzufügen** oder **Ersetzen** unterstützen.

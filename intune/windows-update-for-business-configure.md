@@ -5,19 +5,19 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 5/20/2018
+ms.date: 6/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fd63fb2023b4712a3ad49838f87f5b7cc8320954
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
+ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744889"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822720"
 ---
 # <a name="manage-software-updates-in-intune"></a>Verwalten von Softwareupdates in Intune
 
@@ -169,10 +169,13 @@ Sie können für ein Gerät den Bezug von Funktions- oder Qualitätsupdates für
 > Außerdem gilt: Wenn ein Zielgerät bei Erteilung des Aussetzungsbefehls ausgeschaltet ist, lädt es nach dem Einschalten unter Umständen geplante Updates herunter und installiert sie, bevor es mit Intune kommuniziert.
 
 ### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>Deinstallieren der letzten Softwareupdates von Windows 10 
-Wenn Sie Probleme mit Unterbrechungen auf Ihren Windows 10-Computern feststellen, können Sie das neueste Featureupdate bzw. Qualitätsupdate deinstallieren (einen Rollback ausführen). Die Deinstallation eines Feature- oder Qualitätsupdates ist für den Wartungskanal nur möglich, wenn das Gerät eingeschaltet ist. Durch die Deinstallation wird eine Richtlinie ausgelöst, die das vorherige Update auf Ihren Windows 10-Computern wiederherstellt. Sie können insbesondere für Featureupdates den Zeitraum, in dem eine Deinstallation für die neueste Version durchgeführt werden kann, auf 2–60 Tage einschränken. Um die Deinstallationsoptionen für das Softwareupdate festzulegen, wählen Sie im Azure-Portal auf dem Blatt **Microsoft Intune** die Option **Softwareupdates** aus. Klicken Sie auf dem Blatt **Softwareupdates** auf **Windows 10-Updateringe**. Sie können dann die Option **Deinstallieren** im Bereich **Übersicht** auswählen.
+Wenn Sie Probleme mit Unterbrechungen auf Ihren Windows 10-Computern feststellen, können Sie das neueste Featureupdate bzw. Qualitätsupdate deinstallieren (einen Rollback ausführen). Die Deinstallation eines Feature- oder Qualitätsupdates ist für den Wartungskanal nur möglich, wenn das Gerät eingeschaltet ist. Durch die Deinstallation wird eine Richtlinie ausgelöst, die das vorherige Update auf Ihren Windows 10-Computern wiederherstellt. Sie können insbesondere für Featureupdates den Zeitraum, in dem eine Deinstallation für die neueste Version durchgeführt werden kann, auf 2–60 Tage einschränken. So legen Sie die Deinstallationsoptionen für Softwareupdates fest:
+
+1. Klicken Sie in Intune auf **Softwareupdates**.
+2. Wählen Sie **Windows 10-Updateringe** aus, wählen Sie einen vorhandenen Updatering aus, und klicken Sie auf **Deinstallieren**.
 
 > [!NOTE]
-> Nachdem auf den Windows 10-Computern für das Qualitätsupdate erfolgreich einen Rollback ausgeführt wurde, können Benutzer immer noch das erfolgreich zurückgesetzte Update anzeigen, indem Sie auf **Windows-Einstellungen** > **Updates** > **Updateverlauf** klicken.
+> Nachdem ein erfolgreiches Rollback für das Qualitätsupdate auf Windows 10-Computern ausgeführt wurde, wird das Update weiterhin für Endbenutzer sichtbar unter **Windows-Einstellungen** > **Updates** > **Updateverlauf** aufgeführt.
 
 ## <a name="windows-holographic-for-business-support"></a>Unterstützung durch Windows Holographic for Business
 
