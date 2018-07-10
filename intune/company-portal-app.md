@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c63e632036d38fb1fde2e4b26313b4447b9db25e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 4535bdfa9b801c605c70c0a9dad900d76044eab4
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744583"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844979"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 
@@ -56,7 +56,7 @@ Geben Sie die Supportinformationen Ihres Unternehmens ein, um Ihrem Mitarbeiter 
 |**Telefonnummer** | 20 | Diese Kontaktnummer wird auf der Seite **An IT-Abteilung wenden** angezeigt, damit sich Mitarbeiter an Sie wenden können, wenn Sie Unterstützung benötigen. |
 |**E-Mail-Adresse**| 40 | Diese Kontaktadresse wird auf der Seite **An IT-Abteilung** wenden angezeigt. Sie müssen eine gültige E-Mail-Adresse im Format `alias@domainname.com` eingeben. |
 |**Name der Website**| 40 | Dies ist der Anzeigename der URL für die Supportwebsite. Wenn Sie für die Supportwebsite eine URL, aber keinen Anzeigenamen angeben, wird im Unternehmensportal auf der Seite **An IT-Abteilung wenden** der Text „Zur IT-Website wechseln“ angezeigt. |
-|**Website-URL**| 150 | Wenn Sie über eine Supportwebsite verfügen, die Ihre Benutzer verwenden sollen, geben Sie hier die URL an. Die URL muss das Format **https://www.contoso.com** aufweisen. Wenn Sie keine URL angeben, wird im Unternehmensportal auf der Seite **An IT-Abteilung wenden** keine Supportwebsite angezeigt. |
+|**Website-URL**| 150 | Wenn Sie über eine Supportwebsite verfügen, die Ihre Benutzer verwenden sollen, geben Sie hier die URL an. Die URL muss das Format `https://www.contoso.com` aufweisen. Wenn Sie keine URL angeben, wird im Unternehmensportal auf der Seite **An IT-Abteilung wenden** keine Supportwebsite angezeigt. |
 | **Weitere Informationen**| 120 | Dies wird auf der Seite **An IT-Abteilung wenden** angezeigt. |
 
 

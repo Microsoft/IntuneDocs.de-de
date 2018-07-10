@@ -15,12 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ecf3791a7b01a9214c95680816a0fae16aade8f2
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: c6ba08a89417222e9741a69cdf899a4889794b67
+ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31835532"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37926994"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune
 ## <a name="manage-ios-apps"></a>Verwalten von iOS-Apps
@@ -73,6 +73,7 @@ Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die mit
 |Microsoft Intune| IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
 |VMware AirWatch| IntuneMAMUPN | Zeichenfolge | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | Zeichenfolge | ${userUPN} **oder** ${userEmailAddress} |
+|ManageEngine Mobile Device Manager | IntuneMAMUPN | Zeichenfolge | %upn% |
 
 
 ### <a name="example-2-end-user-experience"></a>Beispiel 2: Endbenutzererfahrung

@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9c89098b9cb775e287cbe4c4ae4c56b9566b9fd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032590"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232935"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Wo ist meine Intune-Funktion in Azure jetzt?
-Wir hatten die Chance, einige Aufgaben logischer zu organisieren, als wir Intune in das Azure-Portal umgezogen haben. Jedoch kommt jede Verbesserung mit der neuen Aufgabe, die neue Organisation kennenzulernen. Daher haben wir dieses Referenzhandbuch für diejenigen von Ihnen erstellt, die mit Intune im klassischen Portal bestens vertraut sind und sich nun fragen, wie Aufgaben in Intune im Azure-Portal erledigt werden. Wenn dieser Artikel eine Funktion, die Sie suchen, nicht behandelt, hinterlassen Sie einen Kommentar am Ende des Artikels, damit wir ihn aktualisieren können.
+Wir hatten die Chance, einige Aufgaben logischer zu organisieren, als wir Intune in das Azure-Portal umgezogen haben. Jedoch kommt jede Verbesserung mit der neuen Aufgabe, die neue Organisation kennenzulernen. Dieses Referenzhandbuch wurde für diejenigen von Ihnen erstellt, die mit Intune im klassischen Portal bestens vertraut sind und sich nun fragen, wie Aufgaben in Intune im Azure-Portal erledigt werden. Wenn dieser Artikel eine Funktion, die Sie suchen, nicht behandelt, hinterlassen Sie einen Kommentar am Ende des Artikels, damit wir ihn aktualisieren können.
 ## <a name="quick-reference-guide"></a>Handbuch mit Kurzübersicht
 
 |Komponente |Pfad im klassischen Portal|Pfad in Intune im Azure-Portal|
@@ -45,27 +45,37 @@ Unternehmensportaleinstellungen|Verwaltung > Unternehmensportal|**Verwalten** > 
 Intune im Azure-Portal verwendet [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) zum Verwalten von Gruppen.
 
 ## <a name="where-did-enrollment-rules-go"></a>Wo sind die Registrierungsregeln hin?
-Im klassischen Portal konnten Sie Regeln festlegen, die die MDM-Registrierung mobiler und moderner Windows- und macOS-Geräte gesteuert haben:
+Im klassischen Portal konnten Sie Regeln festlegen, die die MDM-Registrierung mobiler und moderner Windows- und macOS-Geräte gesteuert haben.
 
 ![Abbildung der klassischen Registrierungsregeln für mobile Geräte](./media/01-classic-rules.png)
 
-Diese Regeln galten ausnahmslos für alle Benutzer in Ihrem Intune-Konto. Im Azure-Portal werden diese Regeln nun in zwei unterschiedlichen Typen von Richtlinien dargestellt: Gerätetypbeschränkungen und Einschränkungen zum Gerätelimit:
+Diese Regeln galten ausnahmslos für alle Benutzer in Ihrem Intune-Konto. Im Azure-Portal werden diese Regeln nun in zwei unterschiedlichen Typen von Richtlinien dargestellt: Gerätetypbeschränkungen und Einschränkungen zum Gerätelimit.
 
 ![Abbildung der Registrierungseinschränkungen für mobile Azure-Geräte](./media/02-azure-enroll-restrictions.png)
 
-Die Standardeinschränkung zum Gerätelimit entspricht dem Grenzwert für die Geräteregistrierung im klassischen Portal:
+Die Standardeinschränkung zum Gerätelimit entspricht dem Grenzwert für die Geräteregistrierung im klassischen Portal.
 
 ![Abbildung der Einschränkungen zum Gerätelimit für Azure](./media/03-azure-device-limit.png)
 
-Die Standardeinschränkung des Gerätetyps entspricht den Plattformeinschränkungen im klassischen Portal:
+Die Standardeinschränkung des Gerätetyps entspricht den Plattformeinschränkungen im klassischen Portal.
 
 ![Abbildung von Gerätetypeinschränkungen für Azure](./media/04-azure-platform-restrictions.png)
 
-Die Möglichkeit, persönliche Geräte zuzulassen oder zu blockieren, wird nun unter den Plattformkonfigurationen der Gerätetypeinschränkungen verwaltet:
+Die Möglichkeit, private Geräte zuzulassen oder zu blockieren, wird nun unter den Plattformkonfigurationen der Gerätetypeinschränkungen verwaltet.
 
 ![Abbildung der Blockiereinstellungen von persönlichen Azure-Geräten](./media/05-azure-personal-block.png)
 
 Neue Funktionen zur Einschränkung werden nur zum Azure-Portal hinzugefügt.
+
+## <a name="where-did-my-conditional-access-policies-go"></a>Wo finde ich meine Richtlinien für den bedingten Zugriff?
+Nach der Migration Ihres Mandanten zum Azure-Portal werden die Richtlinien für den bedingten Zugriff weiterhin angewendet. Jedoch können Sie sie nicht über Intune im Azure-Portal anzeigen oder bearbeiten.
+
+Wenn Sie die Richtlinien für den bedingten Zugriff über das Azure-Portal anzeigen oder bearbeiten möchten, müssen Sie die alten Richtlinien aus dem klassischen Portal entfernen. Anschließend müssen Sie sie im Azure-Portal neu erstellen. Weitere Informationen zum Migrieren von Richtlinien für den bedingten Zugriff finden Sie unter [Migrieren von klassischen Richtlinien in das Azure-Portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration). 
+
+## <a name="where-did-my-compliance-policies-go"></a>Wo finde ich meine Konformitätsrichtlinien?
+Nach der Migration Ihres Mandanten zum Azure-Portal werden die Konformitätsrichtlinien weiterhin angewendet. Jedoch können Sie sie nicht über Intune im Azure-Portal anzeigen oder bearbeiten.
+
+Wenn Sie die Konformitätsrichtlinien über das Azure-Portal anzeigen oder bearbeiten möchten, müssen Sie die alten Richtlinien aus dem klassischen Portal entfernen. Anschließend müssen Sie sie im Azure-Portal neu erstellen. Weitere Informationen über Gerätekonformitätsrichtlinien finden Sie unter [Erste Schritte bei der Gerätekonformität in Intune](https://docs.microsoft.com/en-us/intune/known-issues#compliance). 
 
 ## <a name="where-did-apple-dep-go"></a>Wo ist Apple-DEP jetzt?
 Im klassischen Portal konnten Sie Intune so einrichten, dass es im Programm zur Geräteregistrierung von Apple integriert wurde, und Sie konnten die Synchronisierung mit dem Apple-Dienst manuell anfordern:
