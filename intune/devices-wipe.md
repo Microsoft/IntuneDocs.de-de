@@ -1,6 +1,6 @@
 ---
 title: Entfernen von Unternehmensdaten von Geräten mithilfe von Microsoft Intune (Azure) | Microsoft-Dokumentation
-description: Entfernen von Unternehmensdaten von einem Gerät oder Zurücksetzen eines Geräts (Android, Android for Work, iOS, macOS oder Windows) auf Werkseinstellungen mithilfe von Microsoft Intune. Entfernen eines Geräts aus Azure Active Directory.
+description: Entfernen von Unternehmensdaten von einem Gerät oder Zurücksetzen eines Geräts (Android, Android-Arbeitsprofil, iOS, macOS oder Windows) auf Werkseinstellungen mithilfe von Microsoft Intune. Entfernen eines Geräts aus Azure Active Directory.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5eadc4ee23a89624cde9f1246f64aafce0b06c
-ms.sourcegitcommit: 3284586d9260a66ce99029b7808e4807f8780d20
+ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37091726"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906055"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Entfernen von Geräten mithilfe der Zurücksetzung auf Werkseinstellungen, Entfernen von Unternehmensdaten oder manuelles Abmelden eines Geräts
 
@@ -31,7 +31,7 @@ Mithilfe der Aktionen **Unternehmensdaten entfernen** oder **Zurücksetzung auf 
 
 ## <a name="factory-reset"></a>Wiederherstellung der Herstellerstandards
 
-Die Aktion **Zurücksetzung auf Werkseinstellungen** setzt das Gerät auf die Werkseinstellungen zurück. Die Benutzerdaten werden beibehalten oder zurückgesetzt, je nachdem, ob Sie das Kontrollkästchen **Registrierungszustand und Benutzerkonto beibehalten** aktivieren oder nicht.
+Die Aktion **Zurücksetzung auf Werkseinstellungen** setzt das Gerät auf die Werkseinstellungen zurück. Die Benutzerdaten werden beibehalten, wenn Sie das Kontrollkästchen **Registrierungszustand und Benutzerkonto beibehalten** aktivieren. Andernfalls wird das Laufwerk sicher gelöscht.
 
 |Aktion „Zurücksetzung auf Werkseinstellungen“|**Registrierungszustand und Benutzerkonto beibehalten**|Aus der Intune-Verwaltung entfernt|Beschreibung|
 |:-------------:|:------------:|:------------:|------------|
@@ -108,9 +108,13 @@ Die folgende Tabelle beschreibt, welche Daten entfernt werden und welche Auswirk
 |Entfernen von Azure AD|Der Azure AD-Datensatz wird entfernt.|Der Azure AD-Datensatz wird entfernt.|
 |Kontakte |Kontakte, die direkt aus der App mit dem internen Adressbuch synchronisiert werden, werden entfernt. Alle Kontakte, die aus dem internen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht entfernt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.|Kontakte, die direkt aus der App mit dem internen Adressbuch synchronisiert werden, werden entfernt. Alle Kontakte, die aus dem internen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht entfernt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.
 
-### <a name="android-for-work"></a>Android for Work
+### <a name="android-work-profile"></a>Android-Arbeitsprofil
 
-Beim Entfernen von Unternehmensdaten von Android for Work-Geräten entfernt alle Daten, Apps und Einstellungen im Arbeitsprofil auf diesem Gerät. Das Gerät wird aus der Verwaltung mit Intune entfernt. Das Zurücksetzen auf Werkseinstellungen wird für Android for Work nicht unterstützt.
+Beim Entfernen von Unternehmensdaten von Android-Arbeitsprofil-Geräten werden alle Daten, Apps und Einstellungen im Arbeitsprofil auf diesem Gerät entfernt. Das Gerät wird aus der Verwaltung mit Intune entfernt. Das Zurücksetzen auf Werkseinstellungen wird für Android-Arbeitsprofile nicht unterstützt.
+
+### <a name="android-enterprise-kiosk-devices"></a>Android-Kioskgeräte für Unternehmen
+
+Sie können Android-Kioskgeräte nur auf Werkseinstellungen zurücksetzen. Sie können keine Unternehmensdaten von Android-Kioskgeräten entfernen.
 
 
 ### <a name="macos"></a>macOS
@@ -150,6 +154,15 @@ Wenn Sie Geräte aus dem Intune-Portal entfernen möchten, können Sie sie aus d
 
 1. Melden Sie sich bei [Intune im Azure-Portal](https://aka.ms/intuneportal) an.
 2. Wählen Sie **Geräte** > **Alle Geräte** aus, wählen Sie die Geräte, aus die Sie löschen möchten, und wählen Sie **Löschen** aus.
+
+### <a name="automatically-delete-devices-with-cleanup-rules"></a>Automatisches Löschen von Geräten mit Regeln zur Bereinigung
+Sie können Intune so konfigurieren, dass Geräte automatisch gelöscht werden, die inaktiv oder veraltet erscheinen oder vermeintlich nicht reagieren. Diese Bereinigungsregeln überwachen ständig Ihren Gerätebestand, damit Ihre Gerätedatensätze auf dem neuesten Stand bleiben. Geräte, die auf diese Weise gelöscht werden, werden aus der Intune-Verwaltung entfernt.
+1. Melden Sie sich bei [Intune im Azure-Portal](https://aka.ms/intuneportal) an.
+2. Wählen Sie **Geräte** > **Device cleanup rules** > **Yes** (Gerätebereinigungsregeln > Ja) aus.
+3. Geben Sie im Feld **Geräte löschen, die sich nicht eingecheckt haben für (Tage)** eine Zahl zwischen 90 und 270 an.
+4. Wählen Sie **Speichern** aus.
+
+
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Löschen von Geräten über das Azure Active Directory-Portal
 

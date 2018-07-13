@@ -15,12 +15,12 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f8517e9a9dd698e875214fe363d8e1246129b96a
-ms.sourcegitcommit: 81721ad672096298bf281dcbf21e8ce9c44cafaa
+ms.openlocfilehash: 6bf9eaef010879835abb7cec57c2fbdce6aa1e0a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042710"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905868"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifizieren von Geräten als unternehmenseigen
 
@@ -47,7 +47,7 @@ Als Intune-Administrator können Sie eine durch Trennzeichen getrennte Datei (CS
 [Erfahren Sie, wie Sie die Seriennummer eines Apple-Geräts finden](https://support.apple.com/HT204308).<br>
 [Erfahren Sie, wie Sie die Seriennummer Ihres Android-Geräts finden](https://support.google.com/store/answer/3333000).
 
-## <a name="add-corporate-identifiers"></a>Hinzufügen von Unternehmensbezeichnern
+## <a name="add-corporate-identifiers-by-using-a-csv-file"></a>Hinzufügen von Unternehmensbezeichnern mithilfe einer CSV-Datei
 Erstellen Sie dazu eine Liste mit zwei Spalten, die durch Trennzeichen getrennt ist (CSV) und keinen Header enthält. Fügen Sie die IMEI- oder Seriennummer in der linken Spalte und die Details in der rechten Spalte hinzu. Nur ein Typ von ID, IMEI- oder Seriennummer kann in eine CSV-Datei importiert werden. Details sind auf 128 Zeichen beschränkt und nur für administrative Zwecke bestimmt. Details werden nicht auf dem Gerät angezeigt. Die aktuelle Begrenzung beträgt 5.000 Zeilen pro CSV-Datei.
 
 **Eine CSV-Datei mit Seriennummern hochladen**: Erstellen Sie eine durch Trennzeichen getrennte Liste (.csv) mit zwei Spalten ohne Header, und beschränken Sie die Liste auf 5.000 Geräte oder 5 MB pro CSV-Datei.
@@ -70,19 +70,33 @@ Diese CSV-Datei wird bei der Anzeige in einem Text-Editor folgendermaßen angeze
 >Seriennummern, die vom Gerät an Intune übermittelt werden, stimmen möglicherweise nicht mit der angezeigten ID in den Menüs „Einstellungen für Android/Info“ auf dem Gerät überein. Überprüfen Sie den Typ der Seriennummer, die vom Gerätehersteller übermittelt wurde.
 >Wenn Sie versuchen, meine Datei mit einer Seriennummer hochzuladen, die Punkte („.“) enthält, schlägt der Upload fehl. Seriennummern mit Punkten werden nicht unterstützt.
 
-### <a name="add-a-csv-list-of-corporate-identifiers"></a>Hinzufügen einer CSV-Liste von Unternehmensbezeichnern
+### <a name="upload-a-csv-list-of-corporate-identifiers"></a>Hochladen einer CSV-Liste von Unternehmensbezeichnern
 
-1. Wählen Sie [in Intune im Azure-Portal](https://portal.azure.com) die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** aus, und klicken Sie dann auf **Hinzufügen**.
+1. Wählen Sie [in Intune im Azure-Portal](https://portal.azure.com) die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** > **Hinzufügen** > **CSV-Datei hochladen** aus.
 
    ![Arbeitsbereich des Bezeichners von Unternehmensgeräten mit hervorgehobener Schaltfläche „Hinzufügen“](./media/add-corp-id.png)
 
-2. Geben Sie auf dem Blatt **Bezeichner hinzufügen** den Bezeichnertyp an, **IMEI** oder **Seriennummer**. Sie können angeben, ob für zuvor importierte Zahlen Folgendes gilt: **Hiermit überschreiben Sie Details für vorhandene Bezeichner**.
+2. Geben Sie auf dem Blatt **Bezeichner hinzufügen** den Bezeichnertyp an, **IMEI** oder **Seriennummer**.
 
-3. Klicken Sie auf das Ordnersymbol, und geben Sie den Pfad zu der Liste an, die Sie importieren möchten. Navigieren Sie zu der CSV-Datei, und wählen Sie **Hinzufügen** aus. Sie können auf **Aktualisieren** klicken, um neue Gerätebezeichner anzuzeigen.
+3. Klicken Sie auf das Ordnersymbol, und geben Sie den Pfad zu der Liste an, die Sie importieren möchten. Navigieren Sie zu der CSV-Datei, und wählen Sie **Hinzufügen** aus. 
+
+4. Wenn die CSV-Datei Unternehmensbezeichner enthält, die sich bereits in Intune befinden, jedoch unterschiedliche Informationen aufweisen, wird das Popupfenster **Doppelte Bezeichner überprüfen** angezeigt. Wählen Sie die Bezeichner aus, die Sie in Intune überschreiben möchten, und klicken Sie dann auf **OK**, um die Bezeichner hinzuzufügen. Für jeden Bezeichner wird nur das erste Duplikat verglichen.
+
+## <a name="manually-enter-corporate-identifiers"></a>Manuelles Eingeben von Unternehmensbezeichnern
+
+1. Wählen Sie [in Intune im Azure-Portal](https://portal.azure.com) die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** > **Hinzufügen** > **Manuell eingeben** aus.
+
+2. Geben Sie auf dem Blatt **Bezeichner hinzufügen** den Bezeichnertyp an, **IMEI** oder **Seriennummer**.
+
+3. Geben Sie den **Bezeichner** und die **Details** für jeden Bezeichner ein, den Sie hinzufügen möchten. Wenn Sie mit der Eingabe der Bezeichner fertig sind, klicken Sie auf **Hinzufügen**.
+
+5. Wenn Sie die Unternehmensbezeichner eingegeben haben, die sich bereits in Intune befinden, jedoch unterschiedliche Informationen aufweisen, wird das Popupfenster **Doppelte Bezeichner überprüfen** angezeigt. Wählen Sie die Bezeichner aus, die Sie in Intune überschreiben möchten, und klicken Sie dann auf **OK**, um die Bezeichner hinzuzufügen. Für jeden Bezeichner wird nur das erste Duplikat verglichen.
+
+Sie können auf **Aktualisieren** klicken, um neue Gerätebezeichner anzuzeigen.
 
 Importierte Geräte sind nicht zwangsläufig registriert. Geräte können entweder **Registriert** oder **Nicht kontaktiert** sein. **Nicht kontaktiert** bedeutet, dass das Gerät noch nie mit dem Intune-Dienst kommuniziert hat.
 
-### <a name="delete-corporate-identifiers"></a>Löschen von Unternehmensbezeichnern
+## <a name="delete-corporate-identifiers"></a>Löschen von Unternehmensbezeichnern
 
 1. Wählen Sie [in Intune im Azure-Portal](https://portal.azure.com) die Optionen **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** aus.
 2. Wählen Sie die Gerätebezeichner aus, die Sie löschen möchten, und klicken Sie auf **Löschen**.
@@ -90,7 +104,7 @@ Importierte Geräte sind nicht zwangsläufig registriert. Geräte können entwed
 
 Das Löschen eines Unternehmensbezeichners für ein registriertes Gerät hat keine Auswirkungen auf den Besitzstatus des Geräts. Wechseln Sie zum Ändern des Gerätebesitzes zu **Geräte**, wählen Sie das Gerät aus, klicken Sie auf **Eigenschaften**, und ändern Sie den **Gerätebesitz**.
 
-### <a name="imei-specifications"></a>IMEI-Spezifikationen
+## <a name="imei-specifications"></a>IMEI-Spezifikationen
 Detaillierte Angaben über International Mobile Equipment Identifier finden Sie unter [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
 
 ## <a name="change-device-ownership"></a>Ändern des Gerätebesitzes

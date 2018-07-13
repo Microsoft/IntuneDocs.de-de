@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232935"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905375"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Wo ist meine Intune-Funktion in Azure jetzt?
 Wir hatten die Chance, einige Aufgaben logischer zu organisieren, als wir Intune in das Azure-Portal umgezogen haben. Jedoch kommt jede Verbesserung mit der neuen Aufgabe, die neue Organisation kennenzulernen. Dieses Referenzhandbuch wurde für diejenigen von Ihnen erstellt, die mit Intune im klassischen Portal bestens vertraut sind und sich nun fragen, wie Aufgaben in Intune im Azure-Portal erledigt werden. Wenn dieser Artikel eine Funktion, die Sie suchen, nicht behandelt, hinterlassen Sie einen Kommentar am Ende des Artikels, damit wir ihn aktualisieren können.
@@ -36,7 +36,7 @@ Wir hatten die Chance, einige Aufgaben logischer zu organisieren, als wir Intune
 |Gruppen nach IMEI (Alle Plattformen)| Gruppen > Alle Geräte > Vorabregistrierte Unternehmensgeräte > Nach IMEI (Alle Plattformen) | [Geräteregistrierung > Bezeichner von Unternehmensgeräten](#by-imei-all-platforms)|
 | Profil für die Unternehmensgeräteregistrierung| Richtlinie > Unternehmensgeräteregistrierung | [Geräteregistrierung > Apple-Registrierung > Profile des Registrierungsprogramms](#where-did-corporate-pre-enrolled-devices-go) |
 | Profil für die Unternehmensgeräteregistrierung | Richtlinie > Unternehmensgeräteregistrierung | [Geräteregistrierung > Apple-Registrierung > AC-Profile](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | Administrator > Verwaltung mobiler Geräte > Android for Work | Geräteregistrierung > Android for Work-Registrierung |
+| Android for Work | Administrator > Verwaltung mobiler Geräte > Android for Work | Geräteregistrierung > Android-Registrierung |
 | Geschäftsbedingungen | Richtlinien > Geschäftsbedingungen | Geräteregistrierung > Geschäftsbedingungen |
 Unternehmensportaleinstellungen|Verwaltung > Unternehmensportal|**Verwalten** > Mobile Apps<br> **Einrichten** > Branding des Unternehmensportals
 

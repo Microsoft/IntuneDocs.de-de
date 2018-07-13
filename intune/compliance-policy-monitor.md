@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/18/2018
+ms.date: 6/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33e42c821881a5cc7eb9e4be65f6f7e56263480e
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232969"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905358"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
@@ -158,9 +158,27 @@ In diesem Bericht können Sie sich auf der Grundlage der Kompatibilitätseinstel
 
 Wenn Sie auf die Kachel für die Einstellungskompatibilität und anschließend auf eine der Gerätekompatibilitätsrichtlinien-Einstellungen klicken, erhalten Sie für jedes Gerät, für das diese Gerätekompatibilitätsrichtlinien-Einstellung gilt, Informationen zum **Kompatibilitätsstatus**, **E-Mail-Alias des Benutzers**, **Gerätemodell** und **Standort**.
 
+## <a name="view-status-of-device-policies"></a>Anzeigen des Status von Geräterichtlinien
+
+Sie können die unterschiedlichen Status Ihrer Richtlinien nach Plattform überprüfen. Sie besitzen z.B. eine macOS-Konformitätsrichtlinie, und Sie möchten die Geräte anzeigen, die von dieser Richtlinie betroffen sind, und wissen, ob Konflikte oder Fehler vorhanden sind.
+
+Dieses Feature ist im Gerätestatusbericht enthalten:
+
+1. Wählen Sie **Gerätekompatibilität** > **Richtlinien** aus. Ihnen wird eine Liste mit Richtlinien angezeigt, einschließlich der Plattform (falls die Richtlinie zugewiesen ist) usw.
+2. Wählen Sie eine Richtlinie aus, und klicken Sie dann auf **Übersicht**. In dieser Ansicht enthält die Richtlinienzuweisung die folgenden Status:
+
+  - Succeeded
+  - Fehler
+  - Conflict
+  - Pending
+  - Nicht verfügbar
+
+3. Um die Details auf dem Gerät mithilfe der Richtlinie anzuzeigen, wählen Sie einen Status aus, z.B. **Succeeded** (erfolgreich). Im nächsten Fenster werden die spezifischen Gerätedetails, einschließlich des Gerätenamens und des Bereitstellungsstatus, aufgeführt.
+
 ## <a name="how-intune-resolves-policy-conflicts"></a>Wie Intune-Richtlinienkonflikte löst
 Richtlinienkonflikte können auftreten, wenn mehrere Intune-Richtlinien auf ein Gerät angewendet werden. Wenn sich Richtlinieneinstellungen überschneiden, löst Intune Konflikte nach den folgenden Regeln:
 
 - Wenn die in Konflikt stehenden Einstellungen zu einer Intune-Konfigurationsrichtlinie und einer Kompatibilitätsrichtlinie gehören, haben die Einstellungen in der Kompatibilitätsrichtlinie Vorrang vor den Einstellungen in der Konfigurationsrichtlinie. Dies geschieht auch, wenn die Einstellungen in der Konfigurationsrichtlinie sicherer sind.
 
 - Wenn Sie mehrere Kompatibilitätsrichtlinien bereitgestellt haben, verwendet Intune die sichersten dieser Richtlinien.
+

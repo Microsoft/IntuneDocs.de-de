@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c1902e319a862c9ffcda5068753f917bf8f4c3f
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232917"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906038"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Festlegen der Autorität für die Verwaltung mobiler Geräte
 
@@ -41,9 +41,11 @@ Die möglichen Konfigurationen sind Folgende:
 
 ## <a name="set-mdm-authority-to-intune"></a>Festlegen der MDM-Autorität in Intune
 
+Führen Sie folgende Schritte durch, wenn Sie die MDM-Autorität noch nicht festgelegt haben. Weitere Informationen zum Wechsel von einer MDM-Autorität zu einer anderen finden Sie im Abschnitt zum [Ändern der MDM-Autorität](#prepare-to-change-the-mdm-authority-to-configuration-manager).
+
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie den orangefarbenen Banner aus, um die Einstellung **Autorität für die Verwaltung mobiler Geräte** zu öffnen.
+3. Wählen Sie den orangefarbenen Banner aus, um die Einstellung **Autorität für die Verwaltung mobiler Geräte** zu öffnen. Der orangefarbene Banner wird nur angezeigt, wenn Sie die MDM-Autorität noch nicht festgelegt haben.
 4. Wählen Sie unter **Autorität für die Verwaltung mobiler Geräte** Ihre MDM-Autorität aus den folgenden Optionen aus:
    - **Intune-MDM-Autorität**
    - **Configuration Manager-MDM-Autorität**
@@ -54,10 +56,10 @@ Die möglichen Konfigurationen sind Folgende:
    Eine Meldung zeigt an, dass Sie die MDM-Autorität erfolgreich auf Intune festgelegt haben.
 
 ### <a name="workflow-of-intune-administration-ui"></a>Workflow der Intune-Verwaltungsbenutzeroberfläche
-Wenn die Verwaltung von Android- oder Apple-Geräten aktiviert ist, sendet Intune Geräte- und Benutzerinformationen zur Integration mit diesen Drittanbieterdiensten, um ihre jeweiligen Geräte zu verwalten.
+Wenn die Verwaltung von Android- oder Apple-Geräten aktiviert ist, sendet Intune Geräte- und Benutzerinformationen zur Integration mit diesen Drittanbieterdiensten, um die jeweiligen Geräte zu verwalten.
 
 Szenarios, die eine Zustimmung zur Datenfreigabe hinzufügen, werden unter den folgenden Bedingungen eingeschlossen:
-- Android for Work wird aktiviert.
+- Sie aktivieren Android-Arbeitsprofile.
 - Apple-MDM-Push-Zertifikate werden aktiviert und hochgeladen.
 - Einer der Apple-Dienste wie das Programm zur Geräteregistrierung, School Manager oder Volume Purchase Program wird aktiviert.
 

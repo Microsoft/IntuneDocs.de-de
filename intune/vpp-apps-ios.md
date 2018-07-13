@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3afe1ed48a21c26927b3686ae9a455ed8484e282
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 574880ae1ff7f734edcb02ebc89d7a0270064d4e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547402"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905970"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden
 
@@ -135,8 +135,7 @@ Der Benutzer erhält Aufforderungen zur VPP-App-Installation im Zusammenhang mit
 
 ## <a name="revoking-app-licenses-and-deleting-tokens"></a>Widerrufen von App-Lizenzen und Löschen von Token 
 
-<!-- 820863 -->  
-Für ein bestimmtes Gerät, das mindestens eine iOS VPP-App (Volume Purchase Program) enthält, können Sie alle zugehörigen gerätebasierten App-Lizenzen für das Gerät widerrufen. Durch das Widerrufen einer App-Lizenz wird die zugehörige VPP-App nicht vom Gerät deinstalliert. Um eine VPP-App zu deinstallieren und eine Lizenz freizugeben, müssen Sie den Zuweisungstyp der VPP-App in **Deinstallieren** ändern. Wenn Sie eine App entfernen, die einem Benutzer zugewiesen war, gibt Intune die Benutzer- oder Gerätelizenz frei und deinstalliert die App auf dem Gerät.
+Sie können alle zugeordneten App-Lizenzen des iOS Volume Purchase Program (VPP) basierend auf einem angegebenen Gerät, Benutzer oder einer App widerrufen. Sie können Benutzer benachrichtigen, wenn ihnen eine App nicht mehr zugewiesen ist. Durch das Widerrufen einer App-Lizenz wird die zugehörige VPP-App nicht vom Gerät deinstalliert. Um eine VPP zu deinstallieren und eine einem Benutzer oder Gerät zugewiesene App-Lizenz freizugeben, müssen Sie die Zuweisungsaktion auf **Uninstall** (Deinstallieren) festlegen. Wenn Sie eine App entfernen, die einem Benutzer zugewiesen war, gibt Intune die Benutzer- oder Gerätelizenz frei und deinstalliert die App auf dem Gerät. Die Anzahl der widerrufenen Lizenzen wird innerhalb der Intune-**App**-Workload im Knoten **Lizenzierte Apps** angezeigt. Sobald eine VPP-App deinstalliert und die App-Lizenz freigegeben wurde, können Sie die App-Lizenz einem anderen Benutzer oder Gerät zuweisen. 
 
 >[!NOTE]
 >Intune ruft alle benutzerlizenzierten iOS-VPP-Apps-Lizenzen ab, wenn ein Mitarbeiter das Unternehmen verlässt und nicht mehr Teil der AAD-Gruppen ist.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/07/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
-ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
+ms.openlocfilehash: 65f249f05f389d8f05395cb46677d5f5fa53835e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2018
-ms.locfileid: "35232232"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905834"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Hinzufügen App-Konfigurationsrichtlinien für verwaltete iOS-Geräte
 
@@ -158,6 +158,9 @@ Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschafte
 - \{\{username\}\}: z.B. **John Doe**
 - \{\{serialnumber\}\}: z.B. **F4KN99ZUG5V2** (für iOS-Geräte)
 - \{\{serialnumberlast4digits\}\}: z.B. **G5V2** (für iOS-Geräte)
+
+## <a name="monitor-ios--app-configuration-status-per-device"></a>Überwachen des Konfigurationsstatus von iOS-Apps pro Gerät 
+Sobald eine Konfigurationsrichtlinie zugewiesen wurde, können Sie den Konfigurationsstatus von iOS-Apps für jedes verwaltete Gerät überwachen. Klicken Sie im Azure-Portal unter **Microsoft Intune** auf **Geräte** > **Alle Geräte**. Wählen Sie aus der Liste der verwalteten Geräte ein Gerät aus, für das ein Blatt angezeigt werden soll. Klicken Sie auf dem Geräteblatt auf **App-Konfiguration**.  
 
 ## <a name="next-steps"></a>Nächste Schritte
 

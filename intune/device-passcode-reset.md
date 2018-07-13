@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 81330083830eb2e3e1fe3e36217d403a77094a65
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: dd743bdb0eaf2e00c50aab85c497dd00aac773ed
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964724"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905154"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Zurücksetzen oder Entfernen einer Gerätekennung in Intune
 
@@ -30,6 +30,7 @@ Um eine neue Kennung für ein Gerät zu erstellen, verwenden Sie die Aktion **Ke
 
 - Android-Geräte, die mit einem Arbeitsprofil registriert sind (Version 8.0 und höher)
 - Geräte unter Android Version 6.0 oder früher
+- Android-Kioskgeräte für Unternehmen
 - iOS 
      
 ## <a name="unsupported-platforms"></a>Nicht unterstützte Plattformen
@@ -46,13 +47,13 @@ Um eine neue Kennung für ein Gerät zu erstellen, verwenden Sie die Aktion **Ke
 3. Klicken Sie auf **Geräte** und dann auf **Alle Geräte**.
 4. Wählen Sie aus der Liste der von Ihnen verwalteten Geräten ein Gerät aus, und klicken Sie auf **...Weitere**. Wählen Sie dann die Remotegeräteaktion **Kennung entfernen** aus.
 
-## <a name="resetting-android-for-work-passcodes"></a>Zurücksetzen von Android for Work-Kennungen
+## <a name="resetting-android-work-profile-passcodes"></a>Zurücksetzen von Kennungen für Android-Arbeitsprofile
 
-Unterstützte Android for Work-Geräte erhalten ein neues Kennwort zum Entsperren des verwalteten Profils oder eine verwaltete Profilabfrage für den Endbenutzer. Für Geräte mit Arbeitsprofilen unter Android 8.0 und höher erhalten Endbenutzer Benachrichtigungen, damit sie ihr Kennungstoken unmittelbar im Anschluss an die Fertigstellung der Registrierung zurücksetzen. Die Benachrichtigung wird angezeigt, wenn das Kennwort für ein Arbeitsprofil erforderlich ist und festgelegt wurde. Sobald die Kennung eingegeben wurde, wird die Benachrichtigung verworfen.
+Unterstützte Android-Arbeitsprofilgeräte erhalten ein neues Kennwort zum Entsperren des verwalteten Profils oder eine verwaltete Profilabfrage für den Endbenutzer. Für Android 8.0-Arbeitsprofilgeräte erhalten Endbenutzer eine Benachrichtigung, dass die zurückgesetzte Kennung nach Abschluss der Registrierung aktiviert werden muss. Die Benachrichtigung wird angezeigt, wenn das Kennwort für ein Arbeitsprofil erforderlich ist und festgelegt wurde. Sobald die Kennung eingegeben wurde, wird die Benachrichtigung verworfen.
 
 ## <a name="resetting-ios-passcodes"></a>Zurücksetzen von iOS-Kennungen
 
-Kennungen werden von iOS-Geräten entfernt. Wenn eine Konformitätsrichtlinie für Kennungen festgelegt wurde, fordert das Gerät den Benutzer auf, in den Einstellungen eine neue Kennung festzulegen. 
+Kennungen werden von iOS-Geräten entfernt. Wenn eine Konformitätsrichtlinie für Kennungen festgelegt wurde, fordert das Gerät den Benutzer dazu auf, in den Einstellungen eine neue Kennung festzulegen. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 

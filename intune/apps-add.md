@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
-ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
+ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36263403"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905987"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune
 
@@ -51,13 +51,13 @@ Die folgende Tabelle führt die verschiedenen App-Typen auf und erläutert, wie 
 | iOS Store-Apps  | Store-App  | Wählen Sie **iOS** als **App-Typ** aus, suchen Sie nach der App, und wählen Sie die App in Intune aus. |
 | Windows Phone 8.1 Store-Apps  | Store-App  | Wählen Sie **Windows Phone 8.1** als **App-Typ** aus, und geben Sie die Microsoft Store-URL für die App ein. |
 | Microsoft Store-Apps  | Store-App  | Wählen Sie **Windows** als **App-Typ** aus, und geben Sie die Microsoft Store-URL für die App ein. |
-| Android for Work-Apps | Store-App  | Suchen und genehmigen Sie die Android for Work-App im Google Play for Work-Store.  |
+| Android-Arbeitsprofil-Apps | Store-App  | Suchen und genehmigen Sie die Android-Arbeitsprofil-App über den verwalteten Google Play Store.  |
 | Office 365-Apps für Windows 10  | Store-App (Office 365) | Wählen Sie **Windows 10** in der **Office 365 Suite** als **App-Typ** aus, und wählen Sie dann die Office 365-App aus, die Sie installieren möchten.  |
 | Office 365-Apps für macOS | Store-App (Office 365) | Wählen Sie **macOS** in der **Office 365 Suite** als **App-Typ** aus, und wählen Sie dann die Office 365-App-Suite aus. |
 | Branchenspezifische Android-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als **App-Typ** aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine Android-Installationsdatei mit der Erweiterung **APK** an.  |
 | Branchenspezifische iOS-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als **App-Typ** aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine iOS-Installationsdatei mit der Erweiterung **IPA** an.  |
-| Branchenspezifische Windows Phone-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als **App-Typ** aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine Windows Phone-Installationsdatei mit der Erweiterung **XAP** an.  |
-| Branchenspezifische Windows-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als App-Typ aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine Windows-Installationsdatei mit der Erweiterung **MSI**, **APPX** oder **APPXBUNDLE** an. |
+| Branchenspezifische Windows Phone-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als **App-Typ** aus, wählen Sie die **App-Paketdatei** aus, und geben Sie dann eine Windows Phone-Installationsdatei mit der Erweiterung **XAP** an.  |
+| Branchenspezifische Windows-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als App-Typ aus, wählen Sie die **App-Paketdatei** aus, und geben Sie dann eine Windows-Installationsdatei mit der Erweiterung **MSI**, **APPX** oder **APPXBUNDLE** an. |
 | Integrierte iOS-App  | Integrierte App | Wählen Sie **Integrierte App** als **App-Typ** aus, und wählen Sie dann aus der Liste der bereitgestellten Apps die gewünschte integrierte App aus.  |
 | Integrierte Android-App  | Integrierte App | Wählen Sie **Integrierte App** als **App-Typ** aus, und wählen Sie dann aus der Liste der bereitgestellten Apps die gewünschte integrierte App aus.  |
 | Web-Apps  | Web-App  | Wählen Sie **Weblink** als **App-Typ** aus, und geben Sie eine gültige URL ein, die auf die Web-App verweist.  |
@@ -117,7 +117,7 @@ Mit Intune verwaltete Apps können außerdem ohne Registrierung den App-Schutz a
 ### <a name="understanding-licensed-apps"></a>Grundlegendes zu lizenzierten Apps
 Sie sollten nicht nur zwischen Web-Apps, Store-Apps und branchenspezifischen Apps unterscheiden können, sondern auch zwischen Apps, die über ein Volumenlizenzprogramm (Volume Purchase Program) bezogen wurden, und lizenzierten Apps, wie z.B. folgende: 
 - **Apple Volume Purchase Program for Business (iOS und MacOS)**: Der App Store von iOS bietet die Möglichkeit, mehrere Lizenzen für eine App zu erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Durch den Erwerb mehrerer Kopien können Sie Apps in Ihrem Unternehmen effizient verwalten. Weitere Informationen finden Sie unter [Verwalten von iOS-Apps, die per Volumenlizenz erworben wurden](vpp-apps-ios.md).
-- **Android for Work (Android)**: Wie Sie Apps Android for Work-Geräten zuweisen, unterscheidet sich von deren Zuweisung zu standardmäßigen Android-Geräten. Alle Apps, die für Android for Work installiert werden, stammen aus dem Google Play for Work Store. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese. Die App wird dann im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt, und Sie können die Zuweisung der App wie bei jeder anderen App verwalten.
+- **Android-Arbeitsprofil**: Die Zuweisung von Apps zu Android-Arbeitsprofilgeräten unterscheidet sich von deren Zuweisung zu Android-Standardgeräten. Alle Apps, die für Android-Arbeitsprofile installiert werden, stammen aus dem verwalteten Google Play Store. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese. Die App wird dann im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt, und Sie können die Zuweisung der App wie bei jeder anderen App verwalten.
 - **Microsoft Store für Unternehmen (Windows 10)**: Im Microsoft Store für Unternehmen können Sie Apps für Ihre Organisation suchen und einzeln oder im Rahmen einer Volumenlizenz erwerben. Indem Sie den Store mit Microsoft Intune verbinden, können Sie per Volumenlizenz erworbene Apps über das Azure-Portal verwalten. Weitere Informationen finden Sie unter [Verwalten von Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md).
 
 ## <a name="before-you-add-apps"></a>Vor dem Hinzufügen von Apps
