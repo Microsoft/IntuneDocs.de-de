@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b17cb50ead094962196bb030c3a18e4119c6904
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31026328"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905817"
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
@@ -39,14 +39,14 @@ Sie können u.a. die folgenden spezifischen Registrierungsbeschränkungen festle
 - Maximale Anzahl registrierter Geräte
 - Geräteplattformen, die registriert werden können:
   - Android:
-  - Android for Work
+  - Android-Arbeitsprofil
   - iOS
   - macOS
   - Windows.
-- Betriebssystemversionen der Plattform für iOS, Android, Android for Work und Windows (Es können nur Windows 10-Versionen verwendet werden. Dieses Feld bleibt leer, wenn Windows 8.1 zulässig ist.)
+- Plattformbetriebssystemversion für iOS, Android, Android-Arbeitsprofil und Windows. (Es können nur Windows 10-Versionen verwendet werden. Dieses Feld bleibt leer, wenn Windows 8.1 zulässig ist.)
   - Mindestens erforderliche Version
   - Maximal zulässige Version
-- Geräte in Privatbesitz einschränken (nur iOS, Android, Android for Work und macOS)
+- Geräte in Privatbesitz einschränken (nur iOS, Android, Android-Arbeitsprofil und macOS)
 
 ## <a name="default-restrictions"></a>Standardbeschränkungen
 
@@ -78,7 +78,7 @@ Sie können die Einstellungen für eine Gerätetypbeschränkung ändern, indem S
 5. Wählen Sie unter dem Namen der Beschränkung (**Alle Benutzer** für die Standardbeschränkung) die Option **Plattformen** aus. Wählen Sie für jede aufgeführte Plattform **Zulassen** oder **Blockieren** aus.
 6. Wählen Sie **Speichern** aus.
 7. Klicken Sie unter dem Namen der Beschränkung (**Alle Benutzer** für die Standardbeschränkung) auf **Plattformkonfigurationen**. Wählen Sie dann die mindestens erforderliche und die maximal zulässige **Version** für die aufgelisteten Plattformen aus. Die folgenden Versionen werden unterstützt:
-    - Android und Android for Work unterstützen major.minor.rev.build.
+    - Android-Arbeitsprofile unterstützen major.minor.rev.build.
     - iOS unterstützt major.minor.rev.
     - Windows unterstützt major.minor.rev.build nur für Windows 10.
   Die Betriebssystemversionen gelten nicht für Apple-Geräte, die mit dem Programm zur Geräteregistrierung, dem Apple School Manager oder der App Apple Configurator registriert werden.
@@ -88,9 +88,9 @@ Sie können die Einstellungen für eine Gerätetypbeschränkung ändern, indem S
 
 
 >[!NOTE]
->- Wenn Sie die Registrierung privater Android-Geräte blockieren, können private Android for Work-Geräte weiterhin registriert werden.
->- Standardmäßig ändern sich die Android for Work-Geräteeinstellungen gegenüber Ihren Android-Geräteeinstellungen nicht. Dies ändert sich allerdings, nachdem Sie ihre Android for Work-Einstellungen geändert haben.
->- Wenn Sie die private Android for Work-Registrierung blockieren, können sich nur unternehmenseigene Android-Geräte als Android for Work-Geräte registrieren.
+>- Wenn Sie die Registrierung privater Android-Geräte blockieren, können private Android-Arbeitsprofilgeräte weiterhin registriert werden.
+>- Standardmäßig ändern sich die Android-Arbeitsprofilgeräteeinstellungen gegenüber Ihren Android-Geräteeinstellungen nicht. Dies ändert sich allerdings, nachdem Sie ihre Android-Arbeitsprofileinstellungen geändert haben.
+>- Wenn Sie die private Android-Arbeitsprofilregistrierung blockieren, können sich nur unternehmenseigene Android-Geräte als Android-Arbeitsprofilgeräte registrieren.
 
 ## <a name="set-device-limit-restrictions"></a>Festlegen von Einschränkungen zum Gerätelimit
 

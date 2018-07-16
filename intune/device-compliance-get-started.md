@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190757"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905069"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune
 
@@ -63,7 +63,7 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 Folgendes ist erforderlich, um die Gerätekonformitätsrichtlinien zu verwenden:
 
 - Verwenden Sie folgende Abonnements:
@@ -76,8 +76,8 @@ Folgendes ist erforderlich, um die Gerätekonformitätsrichtlinien zu verwenden:
   - Android
   - iOS
   - macOS (Vorschau)
-  - Windows 8.1
-  - Windows Phone 8.1
+  - Windows 8,1
+  - Windows Phone 8.1
   - Windows 10
 
 - Geräte müssen in Intune registriert werden, um deren Konformitätsstatus melden zu können.
@@ -96,10 +96,10 @@ Wenn ein Gerät mehrere Konfigurationsprofile hat und es über verschiedene Konf
 
 |Status  |Schweregrad  |
 |---------|---------|
-|Pending     |1|
+|Ausstehend     |1|
 |Succeeded     |2|
-|Failed     |3|
-|Fehler     |4|
+|Fehler     |3|
+|Error     |4|
 
 Hat ein Gerät mehrere Konfigurationsprofile, so wird dem Gerät der höchste Schweregrad aller Profile zugewiesen.
 
@@ -133,10 +133,10 @@ Wenn ein Gerät mehrere Konfigurationsprofile hat und es über verschiedene Konf
 |---------|---------|
 |Unbekannt     |1|
 |NotApplicable     |2|
-|Kompatibel|3|
+|Richtlinienkonform|3|
 |InGracePeriod|4|
 |NonCompliant|5|
-|Fehler|6|
+|Error|6|
 
 Hat ein Gerät mehrere Konformitätsrichtlinien, so wird dem Gerät der höchste Schweregrad aller Richtlinien zugewiesen.
 
@@ -202,7 +202,7 @@ Sie müssen eine neue Gerätekonformitätsrichtlinien im Azure-Portal erstellen,
 - Plattformspezifische Informationen zum Erstellen einer Gerätekonformitätsrichtlinie finden Sie hier:
 
   - [Android](compliance-policy-create-android.md)
-  - [Android for Work](compliance-policy-create-android-for-work.md)
+  - [Android-Arbeitsprofil](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)

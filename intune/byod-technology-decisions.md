@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0a080660fcc1b285e0ed00b76a94c2f0cc1ba40a
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832766"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844962"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Technologieentscheidungen zur Ermöglichung von BYOD mit Microsoft Enterprise Mobility + Security (EMS)
 
@@ -39,7 +39,7 @@ Sie können Benutzer ganz einfach dazu bringen, ihre Geräte bei der Geräteverw
 **Compliance** – Einige Organisationen müssen gesetzliche Bestimmungen oder andere Richtlinien einhalten, die bestimmte MDM-Kontrollen vorschreiben. Beispielsweise müssen Sie mit MDM das gesamte Gerät verschlüsseln oder einen Bericht über alle Apps auf dem Gerät erstellen.
 
 ## <a name="common-reasons-to-only-manage-the-apps-mam"></a>Häufige Gründe für die ausschließliche Verwaltung von Apps (MAM)
-MAM ohne MDM ist besonders bei Organisationen beliebt, die BYOD unterstützen. Sie können Benutzer dazu bringen, über Outlook Mobile (mit Unterstützung für MAM-Schutz) auf E-Mails zuzugreifen, indem Sie eine Richtlinie für den bedingten Zugriff in Exchange Online bereitstellen. Im Folgenden werden die Gründe aufgeführt, warum sich die Verwaltung von ausschließlich Apps auf persönlichen Geräten empfiehlt:
+MAM ohne MDM ist besonders bei Organisationen beliebt, die BYOD unterstützen. Sie können Benutzer dazu anhalten, über Outlook Mobile (mit Unterstützung für MAM-Schutz) auf E-Mails zuzugreifen, indem Sie eine Richtlinie für den bedingten Zugriff in Exchange Online bereitstellen. Im Folgenden werden die Gründe aufgeführt, warum sich die Verwaltung von ausschließlich Apps auf persönlichen Geräten empfiehlt:
 
 **Benutzerfreundlichkeit** – Die MDM-Registrierung beinhaltet viele Warnhinweise (die von der Plattform erzwungen werden), die oft dazu führen, dass der Benutzer seine E-Mails letztlich doch nicht mehr auf seinem persönlichen Gerät abrufen möchte. MAM sendet weitaus weniger Warnhinweise an Benutzer, da ihnen lediglich einmal ein Popupfenster angezeigt wird, das sie darüber informiert, dass der MAM-Schutz aktiv ist.
 
@@ -76,7 +76,7 @@ Nach wie vor sind zahlreiche Organisationen oftmals mit besonderen Risiken konfr
 | | | |
 | Versehentliche Datenfreigabe oder Speichern an unsicheren Speicherorten | Einschränken von Datensicherungen für Geräte | Einschränken von Vorgängen zum Ausschneiden, Kopieren bzw. Einfügen|
 | Versehentliche Datenfreigabe oder Speichern an unsicheren Speicherorten | Einschränken der Speicherfunktion | Einschränken der Speicherfunktion |
-|Versehentliche Datenfreigabe oder Speichern an unsicheren Speicherorten | Drucken deaktivieren | Nicht zutreffend|
+|Versehentliche Datenfreigabe oder Speichern an unsicheren Speicherorten | Drucken deaktivieren | Nicht verfügbar|
 
 ## <a name="next-steps"></a>Nächste Schritte
 Jetzt ist es an der Zeit zu entscheiden, ob BYOD in Ihrer Organisation ermöglicht und der Schwerpunkt dabei auf der Geräte- oder App-Verwaltung oder auf einer Kombination beider Optionen liegen soll. Die Wahl der Implementierung liegt bei Ihnen. Dabei können Sie darauf vertrauen, dass die Identitäts- und Sicherheitsfeatures von Azure AD in beiden Fällen verfügbar sind.  

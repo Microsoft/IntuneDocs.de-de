@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 56ddf28bb9e81417b4b91bb18baaba14f07fbdd9
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024616"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905052"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Konfigurieren von Einstellungen für Geräteeinschränkungen in Microsoft Intune
 
@@ -56,7 +56,7 @@ Sie lernen die Grundlagen der Geräteeinschränkungsprofile und lesen weitere Ar
     - [Einstellungen für Windows 10](device-restrictions-windows-10.md)
     - [Einstellungen für Windows 10 Team](device-restrictions-windows-10-teams.md)
     - [Einstellungen für Windows Holographic for Business](device-restrictions-windows-holographic.md)
-    - [Einstellungen für Android for Work](device-restrictions-android-for-work.md)
+    - [Android-Arbeitsprofileinstellungen](device-restrictions-android-for-work.md)
 8. Navigieren Sie anschließend zurück zur Seite **Profil erstellen**, und klicken Sie auf **Erstellen**.
 
 Das Profil wird erstellt und auf der Seite mit der Profilliste angezeigt.

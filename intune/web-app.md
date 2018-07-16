@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d62341e35bf851bb429b15a582183bec62a9d4a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: ff55b013d863d1676b9b83ec93e38defe222e2d7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223389"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905239"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Hinzufügen von Web-Apps zu Microsoft Intune
 
@@ -31,7 +31,7 @@ Intune unterstützt eine Vielzahl von App-Typen, einschließlich Web-Apps. Bei e
 Bevor Sie eine App verwalten und Benutzern zuweisen können, müssen Sie diese in Intune hinzufügen. Intune erstellt eine Verknüpfung zu der Web-App auf dem Startbildschirm des Geräts des Benutzers.
 
 > [!Note]
-> Web-Apps werden nicht für Android for Work- und macOS-Geräte unterstützt.
+> Web-Apps werden nicht für Android-Arbeitsprofilgeräte und macOS-Geräte unterstützt.
 
 ## <a name="add-a-web-app-to-intune"></a>Hinzufügen einer Web-App zu Intune
 Führen Sie die folgenden Schritte aus, um eine App als Verknüpfung zu einer App im Internet zu Intune hinzuzufügen:

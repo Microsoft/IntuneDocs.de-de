@@ -15,12 +15,12 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f468ff8115fde79bf92825f06c37ff8affabf125
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 938bcd352294a9875aaa3eef717ef3857211961a
+ms.sourcegitcommit: abc3d51923e55e8779a5d84f2fcab60d0a0d8645
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31033372"
+ms.lasthandoff: 07/03/2018
+ms.locfileid: "37434265"
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Unterstützte Betriebssysteme und Browser
 
@@ -28,7 +28,7 @@ ms.locfileid: "31033372"
 
 Informieren Sie sich über die unterstützten Betriebssysteme und Browser, bevor Sie Microsoft Intune einrichten.
 
-Hilfe zur Installation von Intune auf Ihrem Gerät finden Sie unter [Verwenden verwalteter Geräte zum Erledigen von Aufgaben](/intune-user-help/company-portal-frequently-asked-questions). Sie sollten sich auch mit der [Bandbreitennutzung von Intune](network-bandwidth-use.md) ([klassisches Portal](/intune-classic/get-started/network-bandwidth-use)) vertraut machen.
+Informationen zur Installation von Intune auf Ihrem Gerät finden Sie in den Artikeln zum [Verwenden verwalteter Geräte zum produktiven Arbeiten](/intune-user-help/company-portal-frequently-asked-questions) und zur [Intune-Netzwerkbandbreitennutzung](network-bandwidth-use.md) ([klassisches Portal](/intune-classic/get-started/network-bandwidth-use)).
 
 ## <a name="intune-supported-operating-systems"></a>Von Intune unterstützte Betriebssysteme
 
@@ -38,12 +38,12 @@ Sie können die Geräte verwalten, die folgende Betriebssysteme verwenden:
 
 ### <a name="supported-samsung-knox-standard-devices"></a>Unterstützte Samsung KNOX Standard-Geräte
 
-Die Unternehmensportal-App führt während der MDM-Registrierung nur dann einen Aktivierungsversuch für Samsung KNOX durch, wenn das Gerät in der [Liste der unterstützten KNOX-Geräte](https://www.samsungknox.com/knox-supported-devices/knox-workspace) angezeigt wird. Dadurch werden bei KNOX Aktivierungsfehler vermieden, die eine MDM-Registrierung verhindern würden. Geräte, die die Samsung KNOX-Aktivierung nicht unterstützen, werden als Android-Standardgeräte registriert. Wenn für ein Samsung-Gerät mehrere Modellnummern vorhanden sind, wird KNOX möglicherweise nicht von allen Modellen unterstützt. Überprüfen Sie daher mithilfe des Wiederverkäufers Ihrer Geräte, ob diese mit KNOX kompatibel sind, bevor Sie Samsung-Geräte erwerben und bereitstellen.
+Um KNOX-Aktivierungsfehler, die die MDM-Registrierung verhindern, zu vermeiden, führt die Unternehmensportal-App nur dann einen Aktivierungsversuch für Samsung KNOX während der MDM-Registrierung durch, wenn das Gerät in der [Liste der unterstützten KNOX-Geräte](https://www.samsungknox.com/knox-supported-devices/knox-workspace) angezeigt wird. Geräte, die die Samsung KNOX-Aktivierung nicht unterstützen, werden als Android-Standardgeräte registriert. Wenn für ein Samsung-Gerät mehrere Modellnummern vorhanden sind, wird KNOX möglicherweise nicht von allen Modellen unterstützt. Überprüfen Sie deshalb bei Ihrem Gerätewiederverkäufer, dass Geräte mit KNOX kompatibel sind, bevor Sie Samsung-Geräte erwerben und bereitstellen.
 
 > [!NOTE]
 > Für die Registrierung von Samsung KNOX-Geräten müssen Sie möglicherweise [den Zugriff auf Samsung-Servern aktivieren](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers). 
 
-In der folgenden Liste werden Samsung-Gerätemodelle aufgeführt, die KNOX nicht unterstützen und von der Unternehmensportal-App für Android als native Android-Geräte registriert werden:
+Die folgenden Samsung-Geräte unterstützen KNOX nicht. Sie werden von der Unternehmensportal-App für Android als native Android-Geräte registriert:
 
 | **Gerätename** | **Gerätemodellnummern** |
 | --- | --- |
@@ -103,7 +103,7 @@ Für diese Portale werden die folgenden Browser unterstützt:
 - Microsoft Internet Explorer 11
 - Safari (neueste Version, nur auf Mac)
 - Chrome (neueste Version)
-- Mozilla Firefox mit aktiviertem Silverlight – [weitere Informationen (Versionen vor Version 52)](https://go.microsoft.com/fwlink/?linkid=836872)
+- Firefox (neueste Version)
 
 
 

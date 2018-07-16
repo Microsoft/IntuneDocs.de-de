@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a2afba3eafb32a06ff19e2cbbf3b87d27edccf0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1ec9a45ca09ddff5aa10cc7283444cf96c8153f6
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224662"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905409"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Einschließen und Ausschließen von App-Zuweisungen in Microsoft Intune
 
@@ -37,7 +37,7 @@ Intune berücksichtigt beim Ausschließen von Gruppen keine Zuweisung eines Benu
 >
 > Intune bietet die vorab erstellten Gruppen **Alle Benutzer** und **Alle Geräte** in der Konsole an. Die Gruppen verfügen der Einfachheit halber über integrierte Optimierungen. Sie sollten diese Gruppen unbedingt anstelle möglicherweise selbst erstellter „Alle Benutzer“- oder „Alle Geräte“-Gruppen verwenden, um alle Benutzer und alle Geräte zu erreichen.  
 >
-> Android Enterprise (ehemals Android for Work) unterstützt das Ein- und Ausschließen von Gruppen. Sie können die integrierten Gruppen **Alle Benutzer** und **Alle Geräte** für die Android Enterprise-App-Zuweisung nutzen. 
+> Android Enterprise unterstützt das Einschließen und Ausschließen von Gruppen. Sie können die integrierten Gruppen **Alle Benutzer** und **Alle Geräte** für die Android Enterprise-App-Zuweisung nutzen. 
 
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Ein- und Ausschließen von Gruppen beim Zuweisen von Apps 

@@ -1,23 +1,23 @@
 ---
 title: Erstellen einer Konformitätsrichtlinie für Windows-Geräte in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Erstellen oder konfigurieren Sie eine Microsoft Intune-Gerätekonformitätsrichtlinie für Windows Phone 8.1, Windows 8.1 und höher sowie Windows 10 und höher. Überprüfen Sie die Konformität des minimalen und maximalen Betriebssystems, legen Sie Kennwortbeschränkungen und -längen fest, fordern Sie BitLocker an, stellen Sie die akzeptable Bedrohungsstufe ein, und aktivieren Sie die Datenspeicherung, einschließlich Surface Hub und Windows Holographic for Business.
+description: Erstellen oder konfigurieren Sie eine Microsoft Intune-Gerätekonformitätsrichtlinie für Windows Phone 8.1, Windows 8.1 und höher sowie Windows 10 und höher. Überprüfen Sie die Konformität des minimalen und maximalen Betriebssystems, legen Sie Kennwortbeschränkungen und -längen fest, fordern Sie BitLocker an, prüfen Sie nach Antiviruslösungen von Drittanbietern, stellen Sie die akzeptable Bedrohungsstufe ein, und aktivieren Sie die Datenspeicherung, einschließlich Surface Hub und Windows Holographic for Business.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e5fb28e001dbe69f392d1ea730e415515fe4c5c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744906"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909336"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für Windows-Geräte in Intune
 
@@ -33,10 +33,10 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 |----| ----| --- |
 | **PIN- oder Kennwortkonfiguration** | Wiederhergestellt | Wiederhergestellt |   
 | **Geräteverschlüsselung** | Nicht verfügbar | Wiederhergestellt |   
-| **Gerät mit entfernten Nutzungsbeschränkungen** | Nicht zutreffend | Nicht zutreffend |  
-| **E-Mail-Profil** | Nicht zutreffend | Nicht zutreffend |   
+| **Per Jailbreak oder Rootzugriff manipuliertes Gerät** | Nicht verfügbar | Nicht verfügbar |  
+| **E-Mail-Profil** | Nicht verfügbar | Nicht verfügbar |   
 | **Minimale Version des Betriebssystems** | Isoliert | Isoliert |   
-| **Maximales Release des Betriebssystems** | Isoliert | Isoliert |   
+| **Maximale Version des Betriebssystems** | Isoliert | Isoliert |   
 | **Windows-Integritätsnachweis** | Isoliert: Windows 10 und Windows 10 Mobile|Nicht verfügbar: Windows 8.1 |
 
 -------------------------------
@@ -65,7 +65,7 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 
 Diese Richtlinieneinstellungen gelten für Geräte mit den folgenden Plattformen:
 
-- Windows Phone 8.1
+- Windows Phone 8.1
 - Windows 8.1 und höher
 
 ### <a name="device-properties"></a>Geräteeigenschaften
@@ -107,13 +107,15 @@ Windows 8.1-PCs geben die Version **3** zurück. Wenn die Regel für die Betrieb
 
 ## <a name="windows-10-and-later-policy-settings"></a>Richtlinieneinstellungen für Windows 10 und höher
 
-### <a name="device-health"></a>Geräteintegrität
+### <a name="device-health"></a>Device health
 
-- **BitLocker erforderlich**: Wenn BitLocker aktiviert ist, kann das Gerät Daten, die auf dem Laufwerk gespeichert sind, vor unbefugtem Zugriff schützen, wenn das Gerät ausgeschaltet wird oder in den Ruhezustand wechselt. Die Windows BitLocker-Laufwerkverschlüsselung verschlüsselt alle Daten, die auf dem Windows-Betriebssystemvolume gespeichert sind. BitLocker verwendet das TPM, um Windows-Betriebssystem und Benutzerdaten zu schützen. Zudem stellt TPM sicher, dass ein Computer auch dann nicht manipuliert wird, wenn er unbeaufsichtigt gelassen, verloren oder gestohlen wird. Wenn der Computer mit einem kompatiblen TPM ausgestattet ist, verwendet BitLocker das TPM zum Sperren der Verschlüsselungsschlüssel, die die Daten schützen. Daher kann erst auf die Schlüssel zugegriffen werden, nachdem das TPM den Zustand des Computers überprüft hat.
-- **Sicherer Start muss auf dem Gerät aktiviert sein**: Wenn der sichere Start aktiviert ist, wird das System gezwungen, in einem vertrauenswürdigen Zustand zu starten. Bei aktiviertem sicheren Start müssen auch die Kernkomponenten, die zum Starten des Computers verwendet werden, über ordnungsgemäße kryptografische Signaturen verfügen, denen das Unternehmen vertraut, das das Gerät hergestellt hat. Die Signatur wird von der UEFI-Firmware überprüft, bevor der Computer gestartet werden kann. Wenn Dateien so manipuliert wurden, das ihre Signatur nicht mehr stimmt, startet das System nicht.
-- **Codeintegrität erforderlich**: Die Codeintegrität ist ein Feature, das die Integrität eines Treibers oder einer Systemdatei jedes Mal überprüft, wenn diese(r) in den Speicher geladen wird. Codeintegrität erkennt, ob ein nicht signierter Treiber oder eine nicht signierte Systemdatei in den Kernel geladen wird. Oder, ob eine Systemdatei durch böswillige Software manipuliert wurde, die von einem Benutzerkonto mit Administratorrechten ausgeführt wird.
+- **BitLocker erforderlich**: Wenn BitLocker aktiviert ist, kann das Gerät Daten, die auf dem Laufwerk gespeichert sind, vor unbefugtem Zugriff schützen, wenn das Gerät ausgeschaltet wird oder in den Ruhezustand wechselt. Die Windows BitLocker-Laufwerksverschlüsselung verschlüsselt alle auf einem Volume mit Windows-Betriebssystem gespeicherten Daten. BitLocker verwendet das TPM zum Schutz des Windows-Betriebssystems und der Benutzerdaten. Zudem stellt TPM sicher, dass ein Computer auch dann nicht manipuliert wird, wenn er unbeaufsichtigt gelassen, verloren oder gestohlen wird. Wenn der Computer mit einem kompatiblen TPM ausgestattet ist, verwendet BitLocker das TPM zum Sperren der Verschlüsselungsschlüssel, die die Daten schützen. Daher kann auf die Schlüssel nicht zugegriffen werden, bis das TPM den Zustand des Computers überprüft hat.
+- **Sicherer Start muss auf dem Gerät aktiviert sein**: Wenn der sichere Start aktiviert ist, wird das System gezwungen, in einem vertrauenswürdigen Zustand zu starten. Wenn der sichere Start aktiviert ist, müssen die zum Starten des Computers verwendeten Kernkomponenten zudem über die richtigen kryptografischen Signaturen verfügen, denen das Unternehmen vertraut, das das Gerät hergestellt hat. Die Signatur wird von der UEFI-Firmware überprüft, bevor der Computer gestartet werden kann. Wenn Dateien manipuliert wurden und dadurch die Signatur ungültig ist, wird das System nicht gestartet.
+- **Codeintegrität erforderlich**: Die Codeintegrität ist ein Feature, das die Integrität eines Treibers oder einer Systemdatei jedes Mal überprüft, wenn diese(r) in den Speicher geladen wird. Die Codeintegrität erkennt, ob ein nicht signierter Treiber oder eine Systemdatei in den Kernel geladen wird. Oder, ob eine Systemdatei durch böswillige Software manipuliert wurde, die von einem Benutzerkonto mit Administratorrechten ausgeführt wird.
 
 Informationen zur Funktionsweise des HAS-Diensts finden Sie unter [Integritätsnachweis-CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
+
+Informationen zum Einrichten von Windows Defender ATP (Advanced Threat Protection) als Bedrohungsschutzdienst finden Sie unter [Aktivieren von Windows Defender ATP mit bedingtem Zugriff](advanced-threat-protection.md).
 
 ### <a name="device-properties"></a>Geräteeigenschaften
 
@@ -164,6 +166,11 @@ Informationen zur Funktionsweise des HAS-Diensts finden Sie unter [Integritätsn
 #### <a name="encryption"></a>Verschlüsselung
 
 - **Verschlüsselung des Datenspeichers auf einem Gerät**: Wählen Sie **Erforderlich**, um den Datenspeicher auf Ihren Geräten zu verschlüsseln.
+
+#### <a name="device-security"></a>Gerätesicherheit
+
+- **Antivirus:** Wenn für diese Einstellung **Require** (Erforderlich) festgelegt ist, können Sie die Konformität mit Antivirenlösungen (beispielsweise Symantec und Windows Defender) überprüfen, die beim Windows-Sicherheitscenter registriert sind. Wenn sie **nicht konfiguriert** ist, prüft Intune nicht nach Antiviruslösungen, die auf dem Gerät installiert sind.
+- **Antispyware:** Wenn für diese Einstellung **Require** (Erforderlich) festgelegt ist, können Sie die Konformität mit Antispyware-Lösungen (beispielsweise Symantec und Windows Defender) überprüfen, die beim Windows Security Center registriert sind. Wenn sie **nicht konfiguriert** ist, prüft Intune nicht nach Antispyware-Lösungen, die auf dem Gerät installiert sind.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 

@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce7c263435f92a041b93dc5d34ffa912c6fa87fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d917d2449e75b89db00d453b72940a93efb03321
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021879"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905001"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Erstellen eines Profils mit benutzerdefinierten Einstellungen in Intune
 
@@ -39,7 +39,7 @@ Benutzerdefinierte Einstellungen werden für jede Plattform anders konfiguriert.
 5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die benutzerdefinierte Einstellungen angewendet werden sollen. Sie können eine der folgenden Plattformen verwenden:
 
     - **Android**
-    - **Android for Work**
+    - **Android Enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -55,7 +55,7 @@ Benutzerdefinierte Einstellungen werden für jede Plattform anders konfiguriert.
     - [Einstellungen für Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
     - [Einstellungen für Windows 10](custom-settings-windows-10.md)
     - [Einstellungen für Windows Holographic for Business](custom-settings-windows-holographic.md)
-    - [Einstellungen für Android for Work](custom-settings-android-for-work.md)
+    - [Android-Arbeitsprofileinstellungen](custom-settings-android-for-work.md)
 
 8. Wenn Sie fertig sind, klicken Sie auf **Erstellen**.
 

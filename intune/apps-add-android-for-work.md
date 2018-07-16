@@ -1,12 +1,12 @@
 ---
-title: Zuweisen von Apps zu Android for Work-Geräten
+title: Zuweisen von Apps zu Android-Arbeitsprofilgeräten
 titlesuffix: Microsoft Intune
-description: Erfahren Sie, wie Sie Apps über den Managed Google Play Store synchronisieren und Android for Work-Geräten zuweisen.
+description: Erfahren Sie, wie Sie Apps mit Android-Arbeitsprofilgeräten synchronisieren und sie diesen über den Managed Google Play Store zuweisen.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 06/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,18 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 53a3374d285baf4035b071cc867b3c6d2dec423f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b65daa6e098954d88c502114fc7a33ad4cf5efcd
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37909285"
 ---
-# <a name="assign-apps-to-android-for-work-devices-with-intune"></a>Zuweisen von Apps für Android for Work-Geräte mit Intune
+# <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Zuweisen von Apps zu Android-Arbeitsprofilgeräten mit Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android for Work ist ein Programm für Android-Geräte. Alle Apps, die Sie auf Android for Work-Geräten installieren, stammen aus dem Google Play for Work Store. Wie sich das Zuweisen von Apps zu Android for Work-Geräten von deren Zuweisung zu standardmäßigen Android-Geräten unterscheidet. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese. Die App wird dann im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt, und Sie können die Zuweisung der App wie bei jeder anderen App verwalten.
+Android Enterprise ist ein Programm für Android-Geräte mit Arbeitsprofilen und für Android-Kioskgeräte. Für Android-Geräte mit Arbeitsprofilen stellt Android Enterprise eine Reihe von Features und Diensten bereit, die Ihre privaten Apps und Daten von Ihrem Arbeitsprofil von Geschäfts-Apps und -daten trennt. Android Enterprise bietet zusätzliche Verwaltungsoptionen und zusätzlichen Datenschutz, wenn Benutzer ihre Android-Geräte für die Arbeit verwenden. Intune unterstützt Sie bei der Bereitstellung von Apps und Einstellungen auf Android-Arbeitsprofilgeräten und stellt so sicher, dass geschäftliche und private Informationen immer getrennt bleiben. Alle Apps, die für Android-Geräte mit Arbeitsprofilen installiert werden, stammen aus dem Managed Google Play Store. Das Zuweisen von Apps zu Android-Arbeitsprofilgeräten unterscheidet sich von deren Zuweisung zu „normalen“ Android-Geräten. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese. Die App wird dann im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt, und Sie können die Zuweisung der App wie bei jeder anderen App verwalten.
 
 Wenn Sie eigene branchenspezifische Apps erstellt haben, können Sie diese ebenfalls wie folgt zuweisen:
 - Registrieren Sie sich für ein Google Developer-Konto, über das Sie Apps in einem privaten Bereich im Google Play Store veröffentlichen können.
@@ -33,16 +34,16 @@ Wenn Sie eigene branchenspezifische Apps erstellt haben, können Sie diese ebenf
 
 ## <a name="before-you-start"></a>Vorbereitung
 
-Stellen Sie sicher, dass Sie Intune und Android for Work für die **Geräteregistrierung** des Azure-Portals so konfiguriert haben, dass beide zusammen funktionieren.
+Stellen Sie sicher, dass Sie Intune und Android-Arbeitsprofile für die **Geräteregistrierungsworkload** des Azure-Portals so konfiguriert haben, dass beide zusammen funktionieren. Weitere Informationen finden Sie unter [Registrieren von Android-Geräten](android-work-profile-enroll.md).
 
-## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>Synchronisieren einer App aus dem Google Play for Work Store
+## <a name="synchronize-an-app-from-the-managed-google-play-store"></a>Synchronisieren einer App aus dem Managed Google Play Store
 
-1. Wechseln Sie zum [Google Play for Work Store](https://play.google.com/work). Melden Sie sich mit dem Konto an, das Sie zum Konfigurieren der Verbindung zwischen Intune und Android for Work verwendet haben.
+1. Besuchen Sie den [Managed Google Play Store](https://play.google.com/work). Melden Sie sich mit dem Konto an, das Sie zum Konfigurieren der Verbindung zwischen Intune und Android Enterprise verwendet haben.
 2. Suchen Sie im Store nach der App, die Sie mithilfe von Intune zuweisen möchten, und wählen Sie die App aus.
 3. Wählen Sie auf der Seite, die die App anzeigt, **Genehmigen** aus.  
     Im folgenden Beispiel wurde die Microsoft Excel-App ausgewählt.
 
-    ![Die Schaltfläche „Genehmigen“ im Google Play for Work-Store](media/approve.png)
+    ![Die Schaltfläche „Genehmigen“ im Managed Google Play-Store](media/approve.png)
     
    Ein Fenster für die App wird geöffnet, und Sie werden gebeten, der App Berechtigungen zum Durchführen verschiedener Vorgänge zu erteilen. 
 
@@ -54,27 +55,27 @@ Stellen Sie sicher, dass Sie Intune und Android for Work für die **Geräteregis
 
     ![Optionen für die Behandlung neuer App-Berechtigungsanforderungen](media/approve-app-settings.png)
 
-    Die App wird genehmigt und in Ihrer IT-Verwaltungskonsole angezeigt. Jetzt können Sie [die Android for Work-App mit Intune synchronisieren](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune). 
+    Die App wird genehmigt und in Ihrer IT-Verwaltungskonsole angezeigt. Als Nächstes können Sie [die Android-Arbeitsprofil-App mit Intune synchronisieren](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune). 
 
-## <a name="sync-an-android-for-work-app-with-intune"></a>Synchronisieren einer Android for Work-App mit Intune
+## <a name="sync-a-managed-google-play-app-with-intune"></a>Synchronisieren einer App aus dem Managed Google Play Store mit Intune
 
 Wenn Sie eine App aus dem Store genehmigt haben und diese im Knoten **Lizenzierte Apps** der Workload **Mobile Apps** nicht angezeigt wird, erzwingen Sie wie folgt eine sofortige Synchronisierung:
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
-4. Wählen Sie im Workloadbereich **Mobile Apps** unter **Setup** die Option **Android for Work** aus.
-5. Klicken Sie im Bereich **Android for Work** auf **Synchronisieren**.  
+4. Wählen Sie im Workloadbereich **Mobile Apps** unter **Setup** die Option **Managed Google Play** aus.
+5. Klicken Sie im Bereich **Managed Google Play** auf **Aktualisieren**.  
     Auf der Seite werden Uhrzeit und Status der letzten Synchronisierung aktualisiert.
 6. Wählen Sie im Workloadbereich **Mobile Apps** die Option **Apps** aus.  
-    Die neu verfügbare Android for Work-App wird angezeigt.
+    Die neu verfügbare Managed Google Play-App wird angezeigt.
 
 Wenn die App im Knoten **App-Lizenzen** des Workloadbereichs **Mobile Apps** angezeigt wird, können Sie sie [wie jede andere App zuweisen](/intune-azure/manage-apps/deploy-apps). Die App kann nur zu Benutzergruppen zugewiesen werden.
 
 Nachdem Sie die App zugewiesen haben, wird sie auf den vorgesehenen Geräten installiert. Der Benutzer des Geräts wird nicht zur Genehmigung der Installation aufgefordert.
 
-## <a name="manage-android-for-work-app-permissions"></a>Verwalten von Android for Work-App-Berechtigungen
-Android for Work erfordert, dass Sie Apps in der verwalteten Google Play-Webkonsole genehmigen, bevor Sie sie mit Intune synchronisieren und Ihren Benutzern zuweisen. Da Sie diese Apps mit Android for Work im Hintergrund und automatisch auf die Geräte der Benutzer übertragen können, müssen Sie die App-Berechtigungen im Interesse aller Ihrer Benutzer akzeptieren. Benutzern werden bei der Installation der Apps keine App-Berechtigungen angezeigt, daher ist es wichtig, dass Sie diese Berechtigungen lesen und verstehen.
+## <a name="manage-android-enterprise-app-permissions"></a>Berechtigungen für Managed Android Enterprise-Apps
+Android Enterprise erfordert, dass Sie Apps in der Managed Google Play-Webkonsole genehmigen, bevor Sie sie mit Intune synchronisieren und Ihren Benutzern zuweisen. Da Sie diese Apps mit Android Enterprise im Hintergrund und automatisch auf die Geräte der Benutzer übertragen können, müssen Sie die App-Berechtigungen im Interesse aller Ihrer Benutzer akzeptieren. Benutzern werden bei der Installation der Apps keine App-Berechtigungen angezeigt. Daher ist es wichtig, dass Sie diese Berechtigungen verstehen.
 
 Wenn ein App-Entwickler eine neue Version der App mit aktualisierten Berechtigungen veröffentlicht, werden diese Berechtigungen auch dann nicht automatisch akzeptiert, wenn Sie die vorherigen Berechtigungen genehmigt haben. Geräte, auf denen die vorherige Version der App ausgeführt wird, können diese weiterhin verwenden. Die App wird jedoch erst dann aktualisiert, wenn die neuen Berechtigungen genehmigt wurden. Geräte, auf denen die App nicht installiert ist, können die App nicht installieren, solange Sie die neuen Berechtigungen der App nicht genehmigt haben.
 
@@ -89,19 +90,19 @@ Besuchen Sie regelmäßig die verwaltete Google Play-Konsole, um zu prüfen, ob 
 
 Alternativ können Sie Google Play so konfigurieren, dass App-Berechtigungen auf App-Basis automatisch erneut genehmigt werden. 
 
-## <a name="working-with-a-line-of-business-app-from-the-google-play-for-work-store"></a>Arbeiten mit einer branchenspezifischen App aus dem Managed Google Play Store
+## <a name="working-with-a-line-of-business-app-from-the-managed-google-play-store"></a>Arbeiten mit einer branchenspezifischen App aus dem Managed Google Play Store
 
-1. Melden Sie sich bei der [Google Play Developer Console](https://play.google.com/apps/publish) mit dem Konto an, das Sie zum Konfigurieren der Verbindung zwischen Intune und Android for Work verwendet haben.  
+1. Melden Sie sich bei der [Google Play Developer Console](https://play.google.com/apps/publish) mit dem Konto an, das Sie zum Konfigurieren der Verbindung zwischen Intune und Android Enterprise verwendet haben.  
     Wenn Sie sich zum ersten Mal anmelden, müssen Sie sich registrieren und eine Gebühr bezahlen, um Mitglied im Google Developer-Programm zu werden.
 2. Wählen Sie in der Konsole **Neue Anwendung hinzufügen** aus.
 3. Informationen über Ihre App laden Sie auf dieselbe Weise hoch wie Sie Apps im Google Play Store veröffentlichen. Sie müssen jedoch **Only make this application available to my organization (<*organization name*>)** (Diese Anwendung nur für meine Organisation [<Name der Organisation>] verfügbar machen) auswählen.
 
     ![Verfügbarmachen der App nur für Ihre Organisation](media/restrict.png)
 
-    Durch diesen Vorgang wird sichergestellt, dass die App nur für Ihre Organisation und nicht im öffentlichen Google Play-Store verfügbar ist.
+    Durch diese Aktion wir die App nur für Ihre Organisation verfügbar gemacht. Sie wird nicht im öffentlichen Google Play Store verfügbar gemacht.
 
     Weitere Informationen zum Hochladen und Veröffentlichen von Android-Apps finden Sie in der [Google Developer Console-Hilfe](https://support.google.com/googleplay/android-developer/answer/113469).
-4. Nachdem Sie Ihre App veröffentlicht haben, melden Sie sich beim [Google Play for Work-Store](https://play.google.com/work) mit dem Konto an, das Sie zum Konfigurieren der Verbindung zwischen Intune und Android for Work verwendet haben.
+4. Nachdem Sie Ihre App veröffentlicht haben, melden Sie sich beim [Managed Google Play Store](https://play.google.com/work) mit dem Konto an, das Sie zum Konfigurieren der Verbindung zwischen Intune und Android Enterprise verwendet haben.
 5. Prüfen Sie im Knoten **Apps** im Store, ob die veröffentlichte App angezeigt wird.  
     Die App ist automatisch für die Synchronisierung mit Intune genehmigt.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 06/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f52c0dfc955406fa237d43632cd10c09ca0b798f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: f241c5bece72b44a6bd3c9047b5997bcd8879ec5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744753"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905188"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Was sind Microsoft Intune Geräteprofile?
 
@@ -32,7 +32,7 @@ Microsoft Intune umfasst Einstellungen und Features, die Sie auf unterschiedlich
 
 Dieser Artikel enthält eine Übersicht über die verschiedenen Profile, die Sie für Ihre Geräte erstellen können. Verwenden Sie diese Profile, um Features auf den Geräten zuzulassen oder zu verhindern.
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Vorbereitungen
 Um die verfügbaren Features anzuzeigen, öffnen Sie zunächst das [Azure-Portal](https://portal.azure.com) und anschließend Ihre Intune-Ressource. 
 
 **Gerätekonfiguration** umfasst folgende Optionen:
@@ -87,7 +87,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 - Android
 - iOS
-- Windows Phone 8.1
+- Windows Phone 8.1
 - Windows 10
 
 ## <a name="vpn"></a>VPN
@@ -100,8 +100,8 @@ Dieses Features unterstützt folgende Betriebssysteme:
 - Android
 - iOS
 - macOS
-- Windows Phone 8.1
-- Windows 8.1
+- Windows Phone 8.1
+- Windows 8,1
 - Windows 10
 
 ## <a name="wi-fi"></a>WLAN
@@ -138,8 +138,8 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 - Android
 - iOS
-- Windows Phone 8.1
-- Windows 8.1
+- Windows Phone 8.1
+- Windows 8,1
 - Windows 10
 
 ## <a name="windows-information-protection-profile"></a>WIP-Profil (Windows Information Protection)
@@ -156,4 +156,8 @@ Dieses Features unterstützt folgende Betriebssysteme:
 - Android
 - iOS
 - macOS
-- Windows Phone 8.1
+- Windows Phone 8.1
+
+## <a name="manage-and-troubleshoot"></a>Verwaltung und Problembehandlung
+
+[Verwalten Sie Ihre Profile](device-profile-monitor.md), um den Status von Geräten und die zugewiesenen Profile zu überprüfen. Lösen Sie Konflikte leichter, indem Sie sich die Einstellungen ansehen, die Konflikte verursachen, und die Profile, die diese Einstellungen enthalten. Im Artikel zu [Häufigen Problemen und Lösungen](device-profile-troubleshoot.md) finden Sie eine Liste mit Fragen und Antworten, um Sie bei der Arbeit mit Profilen zu unterstützen. Dort erfahren Sie u.a., was beim Löschen eines Profils passiert und wodurch Benachrichtigungen an Geräte gesendet werden.

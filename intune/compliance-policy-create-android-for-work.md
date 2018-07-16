@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer Android for Work-Konformitätsrichtlinie in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Erstellen oder konfigurieren Sie eine Microsoft Intune-Gerätekonformitätsrichtlinie für Android for Work-Geräte. Wählen Sie, dass per Jailbreak manipulierte Geräte zulässig sind, legen Sie die zulässige Bedrohungsstufe fest, prüfen Sie auf Google Play, geben die minimale und maximale Betriebssystemversion an, wählen die Kennwortanforderungen, und lassen Sie Sideloading von Anwendungen zu.
+title: Erstellen einer Konformitätsrichtlinie für Android-Arbeitsprofile in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Erstellen oder konfigurieren Sie eine Microsoft Intune-Gerätekonformitätsrichtlinie für Android-Arbeitsprofilgeräte. Wählen Sie, dass per Jailbreak manipulierte Geräte zulässig sind, legen Sie die zulässige Bedrohungsstufe fest, prüfen Sie auf Google Play, geben die minimale und maximale Betriebssystemversion an, wählen die Kennwortanforderungen, und lassen Sie Sideloading von Anwendungen zu.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,24 +14,24 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1d438aa7416b1629af7ab2b899afa06720e2b49
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34047984"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905086"
 ---
-# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für Android for Work-Geräte in Intune
+# <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für Android-Arbeitsprofilgeräte in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Eine Konformitätsrichtlinie für Android for Work-Geräte in Intune gibt die Regeln und Einstellungen an, die diese Geräte erfüllen müssen, um als konform angesehen zu werden. Sie können diese Richtlinien mit bedingtem Zugriff verwenden, um den Zugriff auf Unternehmensressourcen zuzulassen oder zu blockieren. Außerdem können Sie Geräteberichte abrufen und bei Nichtkonformität Aktionen durchführen. Erstellen Sie Gerätekonformitätsrichtlinien für unterschiedliche Plattformen im Intune Azure-Portal. Weitere Informationen über Konformitätsrichtlinien und alle Voraussetzungen finden Sie unter [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md).
+Eine Intune-Konformitätsrichtlinie für Android-Arbeitsprofilgeräte gibt die Regeln und Einstellungen an, die diese Geräte erfüllen müssen, um als konform angesehen zu werden. Sie können diese Richtlinien mit bedingtem Zugriff verwenden, um den Zugriff auf Unternehmensressourcen zuzulassen oder zu blockieren. Außerdem können Sie Geräteberichte abrufen und bei Nichtkonformität Aktionen durchführen. Erstellen Sie Gerätekonformitätsrichtlinien für unterschiedliche Plattformen im Intune Azure-Portal. Weitere Informationen über Konformitätsrichtlinien und alle Voraussetzungen finden Sie unter [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md).
 
 In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verwaltet werden, wenn eine Konformitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird.
 
 --------------------------
 
-|**Richtlinieneinstellung**| **Android for Work** |
+|**Richtlinieneinstellung**| **Android-Arbeitsprofil** |
 | --- | --- |
 | **PIN- oder Kennwortkonfiguration** |  Isoliert |
 | **Geräteverschlüsselung** |  Isoliert |
@@ -51,7 +51,7 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 ## <a name="create-a-device-compliance-policy"></a>Erstellen einer Gerätekonformitätsrichtlinie
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. Wählen Sie **Android for Work** als **Plattform** aus. Wählen Sie **Einstellungen konfigurieren**, um die Einstellungen zu **Geräteintegrität**, **Geräteeigenschaften** und **Systemsicherheit** anzugeben. Wenn Sie fertig sind, wählen Sie **OK** und dann **Erstellen**.
+5. Wählen Sie **Android Enterprise** als **Plattform** aus. Wählen Sie **Einstellungen konfigurieren**, um die Einstellungen zu **Geräteintegrität**, **Geräteeigenschaften** und **Systemsicherheit** anzugeben. Wenn Sie fertig sind, wählen Sie **OK** und dann **Erstellen**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -60,7 +60,7 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="device-health"></a>Device health
+## <a name="device-health"></a>Geräteintegrität
 
 - **Geräte mit entfernten Nutzungsbeschränkungen**: Wenn Sie diese Einstellung aktivieren, werden Geräte mit Jailbreak als nicht konform bewertet.
 - **Anfordern, dass das Gerät höchstens der angegebenen Gerätebedrohungsstufe entspricht**: Verwenden Sie diese Einstellung, um die Risikobewertung mit der Lookout MTP-Lösung als Konformitätsvoraussetzung zu fordern. Wählen Sie die maximal zulässige Bedrohungsstufe:
@@ -77,9 +77,9 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 
 #### <a name="threat-scan-on-apps"></a>Bedrohungsüberprüfung für Apps
 
-Auf Geräten mit Arbeitsprofilen (Android for Work) ist die Einstellung **Bedrohungsüberprüfung für Apps** als Konfigurationsrichtlinieneinstellung zu finden. Administratoren können die Einstellung für ein Gerät aktivieren.
+Auf Geräten mit Android-Arbeitsprofilen ist die Einstellung **Bedrohungsüberprüfung für Apps** als Konfigurationsrichtlinieneinstellung zu finden. Administratoren können die Einstellung für ein Gerät aktivieren.
 
-Wenn Ihr Unternehmen Android-Arbeitsprofile verwendet, können Sie **Bedrohungsüberprüfung für Apps** für Ihre registrierten Geräte aktivieren. Richten Sie ein Geräteprofil ein, und fordern Sie die Systemsicherheitseinstellung an. Weitere Informationen finden Sie unter [Einstellungen für Geräteeinschränkungen für Android for Work-Geräte in Intune](device-restrictions-android-for-work.md).
+Wenn Ihr Unternehmen Android-Arbeitsprofile verwendet, können Sie **Bedrohungsüberprüfung für Apps** für Ihre registrierten Geräte aktivieren. Richten Sie ein Geräteprofil ein, und fordern Sie die Systemsicherheitseinstellung an. Weitere Informationen finden Sie im Artikel zu den [Einstellungen für Geräteeinschränkungen für Arbeitsgeräte in Intune](device-restrictions-android-for-work.md).
 
 ## <a name="device-property-settings"></a>Einstellungen für Geräteeigenschaften
 
@@ -92,7 +92,7 @@ Wenn Ihr Unternehmen Android-Arbeitsprofile verwendet, können Sie **Bedrohungs�
 
 - **Kennwort zum Entsperren mobiler Geräte anfordern:** Klicken Sie auf **Erforderlich**, damit Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.
 - **Minimale Kennwortlänge**: Geben Sie die Mindestanzahl an Ziffern oder Zeichen an, die das Benutzerkennwort enthalten muss.
-- **Erforderlicher Kennworttyp**: Wählen Sie, ob ein Kennwort nur aus numerischen Zeichen oder aus einer Kombination aus Zahlen und anderen Zeichen bestehen soll. Es stehen die folgenden Optionen zur Auswahl:
+- **Erforderlicher Kennworttyp**: Wählen Sie, ob ein Kennwort nur aus numerischen Zeichen oder aus einer Kombination aus Zahlen und anderen Zeichen bestehen soll. Wählen Sie aus:
   - **Gerätestandard**
   - **Biometrie auf niedriger Sicherheitsstufe**
   - **Mindestens numerisch**
@@ -106,13 +106,13 @@ Wenn Ihr Unternehmen Android-Arbeitsprofile verwendet, können Sie **Bedrohungs�
 
 ### <a name="encryption"></a>Verschlüsselung
 
-- **Verschlüsselung auf mobilen Geräten erforderlich:** Diese Einstellung muss nicht konfiguriert werden, da Android for Work-Geräte eine Verschlüsselung erzwingen.
+- **Verschlüsselung auf mobilen Geräten erforderlich:** Diese Einstellung muss nicht konfiguriert werden, da Android-Arbeitsprofilgeräte eine Verschlüsselung erzwingen.
 
 ### <a name="device-security"></a>Gerätesicherheit
 
-- **Apps von unbekannten Quellen blockieren**: Sie müssen diese Einstellung nicht konfigurieren, da Android for Work-Geräte die Installation aus unbekannten Quellen stets einschränken.
+- **Apps von unbekannten Quellen blockieren:** Sie müssen diese Einstellung nicht konfigurieren, da Android-Arbeitsprofilgeräte die Installation aus unbekannten Quellen stets einschränken.
 - **Laufzeitintegrität der Unternehmensportal-App**: Überprüft, ob die Unternehmensportal-App die Standard-Laufzeitumgebung installiert hat, ordnungsgemäß signiert ist, sich nicht im Debug-Modus befindet und von einer bekannten Quelle installiert wurde.
-- **USB-Debugging auf Gerät blockieren**: Sie müssen diese Einstellungen nicht konfigurieren, da USB-Debuggen auf Android for Work-Geräten bereits deaktiviert ist.
+- **USB-Debugging auf Gerät blockieren:** Sie müssen diese Einstellungen nicht konfigurieren, da USB-Debuggen auf Android-Arbeitsprofilgeräten bereits deaktiviert ist.
 - **Mindestens erforderliche Sicherheitspatchebene**: Wählen Sie die älteste Sicherheitspatchebene, die ein Gerät haben kann. Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht kompatibel. Das Datum muss im Format „`YYYY-MM-DD`“ eingegeben werden.
 
 ## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen

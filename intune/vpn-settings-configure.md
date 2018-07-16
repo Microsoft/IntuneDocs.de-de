@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 78f50bc49f9d7a1261759ec5fb9a1cd7628c998c
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744600"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905103"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Erstellen von VPN-Profilen in Intune
 
@@ -33,14 +33,14 @@ Sie können benutzerdefinierte Intune-Konfigurationsrichtlinien verwenden, um VP
 * Registrierte Geräte unter Windows 8.1 und höher
 * Windows Phone 8.1 und höher
 * Registrierte Geräte unter Windows 10 Desktop
-* Windows 10 Mobile
+* Windows 10 Mobile
 * Windows Holographic for Business
 
 ## <a name="vpn-connection-types"></a>VPN-Verbindungstypen
 
 Sie können VPN-Profile mit den folgenden Verbindungstypen erstellen:
 
-|Verbindungstyp|Android<br>Android for Work|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
+|Verbindungstyp|Android<br>Android-Arbeitsprofile|iOS|macOS|Windows Phone 8.1|Windows 8,1|Windows 10|
 |-|-|-|-|-|-|-|
 |Automatisch|Nein|Nein|Nein|Nein|Nein|Ja |
 |Check Point Capsule VPN|Ja |Ja |Ja |Ja |Ja |Ja |
@@ -68,21 +68,21 @@ Informationen zum Erstellen benutzerdefinierter VPN-Profile mithilfe von URI-Ein
 3. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 4. Geben Sie einen **Namen** und eine **Beschreibung** für das VPN-Profil ein.
 5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die Sie VPN-Einstellungen anwenden möchten. Derzeit können Sie eine der folgenden Plattformen für die VPN-Geräteeinstellungen auswählen:
-  - **Android**
-  - **Android for Work**
-  - **iOS**
-  - **macOS**
-  - **Windows Phone 8.1**
-  - **Windows 8.1 und höher**
-  - **Windows 10 und höher**
+   - **Android**
+   - **Android Enterprise**
+   - **iOS**
+   - **macOS**
+   - **Windows Phone 8.1**
+   - **Windows 8.1 und höher**
+   - **Windows 10 und höher**
 6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **VPN** aus.
 7. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. In den folgenden Themen finden Sie ausführliche Informationen zu den Einstellungen für die einzelnen Plattformen:
-  - [Einstellungen für Android und Android for Work](vpn-settings-android.md)
-  - [Einstellungen für iOS](vpn-settings-ios.md)
-  - [Einstellungen für macOS](vpn-settings-macos.md)
-  - [Einstellungen für Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
-  - [Einstellungen für Windows 8.1](vpn-settings-windows-8-1.md)
-  - [Einstellungen für Windows 10](vpn-settings-windows-10.md) (einschließlich Windows Holographic for Business)
+   - [Einstellungen für Android und das Android-Arbeitsprofil](vpn-settings-android.md)
+   - [Einstellungen für iOS](vpn-settings-ios.md)
+   - [Einstellungen für macOS](vpn-settings-macos.md)
+   - [Einstellungen für Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
+   - [Einstellungen für Windows 8.1](vpn-settings-windows-8-1.md)
+   - [Einstellungen für Windows 10](vpn-settings-windows-10.md) (einschließlich Windows Holographic for Business)
 8. Wenn Sie fertig sind, **erstellen** Sie Ihr Profil.
 
 Das Profil wird erstellt und in der Profilliste angezeigt. Informationen zur Zuweisung dieses Profils zu Gruppen finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md).

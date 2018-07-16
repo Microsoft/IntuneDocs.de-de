@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b71c004a165bd6d38cd1907eadc05ac20f27bd1a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 15710f6115bb23dfe9ba899dfa01b38f315d00f0
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834209"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905307"
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Konfigurieren von E-Mail-Einstellungen in Microsoft Intune
 
@@ -31,7 +31,7 @@ Der integrierte E-Mail-Client wird auf den meisten Plattformen unterstützt. Die
 Sie können E-Mail-Profile verwenden, um den systemeigenen E-Mail-Client auf den folgenden Gerätetypen zu konfigurieren:
 
 - Android Samsung KNOX Standard 4.0 und höher
-- Android for Work
+- Android-Arbeitsprofilgeräten
 - iOS 8.0 und höher
 - Windows Phone 8.1 und höher
 - Windows 10 (Desktop) und Windows 10 Mobile
@@ -48,7 +48,7 @@ Anhand der Informationen in diesem Artikel lernen Sie die Grundlagen zum Konfigu
 4. Geben Sie auf der Seite **Profil erstellen** einen **Namen** und eine **Beschreibung** für das E-Mail-Profil ein.
 5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die Sie E-Mail-Einstellungen anwenden möchten. Derzeit können Sie eine der folgenden Plattformen für die E-Mail-Geräteeinstellungen auswählen:
     - **Android** (nur Samsung Android KNOX Standard)
-    - **Android for Work**
+    - **Android Enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -56,7 +56,7 @@ Anhand der Informationen in diesem Artikel lernen Sie die Grundlagen zum Konfigu
     - **Windows 10 und höher**
 6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **E-Mail** aus.
 7. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. In den folgenden Themen finden Sie ausführliche Informationen zu den Einstellungen für die einzelnen Plattformen:
-    - [Android for Work- und Samsung KNOX Standard-Einstellungen](email-settings-android.md)
+    - [Android-Arbeitsprofil- und Samsung KNOX Standardeinstellungen](email-settings-android.md)
     - [Einstellungen für iOS](email-settings-ios.md)
     - [Einstellungen für Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Einstellungen für Windows 10](email-settings-windows-10.md)
@@ -89,7 +89,7 @@ Wenn für den Benutzer bereits ein E-Mail-Konto konfiguriert wurde, hängt das E
 - **Windows:** Basierend auf dem Hostnamen und der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt. Intune überschreibt das vorhandene vom Benutzer erstellte E-Mail-Profil.
 - **Android Samsung KNOX Standard**: Basierend auf der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt und mit dem Intune-Profil überschrieben.
 Da Android zum Identifizieren des Profils keinen Hostnamen verwendet, wird davon abgeraten, mehrere E-Mail-Profile für die Verwendung unter derselben E-Mail-Adresse auf unterschiedlichen Hosts zu erstellen, da sie sich gegenseitig überschreiben.
-- **Android for Work** Intune stellt zwei Android for Work-E-Mail-Profile bereit: eines für die E-Mail-App Gmail und eines für die E-Mail-App Nine Work. Diese Apps können im Google Play Store heruntergeladen werden; sie installieren ein Arbeitsprofil auf dem Gerät, sodass keine doppelten Profile erstellt werden. Beide Apps unterstützen Verbindungen mit Exchange. Stellen Sie auf den Geräten der Benutzer eine dieser E-Mail-Apps bereit, erstellen Sie das entsprechende Profil, und stellen Sie das entsprechende E-Mail-Profil bereit, um die E-Mail-Konnektivität zu ermöglichen. E-Mail-Apps, z.B. Nine Work, können möglicherweise kostenpflichtig sein. Lesen Sie die Lizenzierungsdetails der App oder kontaktieren Sie das Unternehmen, das die App bereitstellt, um Fragen zu stellen.
+- **Android-Arbeitsprofile:** Intune stellt zwei Android-Arbeitsprofil-E-Mail-Profile bereit: eines für die E-Mail-App Gmail und eines für die E-Mail-App Nine Work. Diese Apps können im Google Play Store heruntergeladen werden; sie installieren ein Arbeitsprofil auf dem Gerät, sodass keine doppelten Profile erstellt werden. Beide Apps unterstützen Verbindungen mit Exchange. Stellen Sie auf den Geräten der Benutzer eine dieser E-Mail-Apps bereit, erstellen Sie das entsprechende Profil, und stellen Sie das entsprechende E-Mail-Profil bereit, um die E-Mail-Konnektivität zu ermöglichen. E-Mail-Apps, z.B. Nine Work, können möglicherweise kostenpflichtig sein. Lesen Sie die Lizenzierungsdetails der App oder kontaktieren Sie das Unternehmen, das die App bereitstellt, um Fragen zu stellen.
 
 ### <a name="update-an-email-profile"></a>Aktualisieren eines E-Mail-Profils
 

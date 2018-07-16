@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d99812c57596e10d0cdfa2c0f4504f8a6ac583c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 767402326c2b87043eea776a83d58a08072cd301
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223797"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869337"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Erste Schritte beim Hinzufügen von Apps in Microsoft Intune
 
@@ -31,6 +31,9 @@ Mit Intune können Sie folgende App-Typen zu Ihren Unternehmensgeräten hinzufü
 - **Interne (branchenspezifische) Apps**: Hochladen einer heruntergeladenen Datei auf das Gerät Ihres Benutzers.
 - **Integrierte Apps**: Zuweisen geordneter verwalteter Apps, wie z.B. Office 365-Apps, zu iOS- und Android-Geräten.
 - **Apps im Web**: Intune erstellt eine Verknüpfung für die Web-App auf dem Startbildschirm des Geräts.
+
+> [!NOTE]
+> Wenn neue Richtlinien auf eine dynamische Gerätegruppe angewendet werden, kann es bis zu acht Stunden dauern, bis dies für alle Geräte in der Gruppe weitergegeben wird.
 
 ## <a name="how-do-i-assign-a-public-store-app"></a>Wie weise ich eine öffentliche Store-App zu?
 
@@ -47,7 +50,7 @@ Mit Intune können Sie folgende App-Typen zu Ihren Unternehmensgeräten hinzufü
 
 - [Zuweisen von Apps zu Gruppen](apps-deploy.md)
 
-## <a name="learn-more"></a>Erfahren Sie mehr
+## <a name="learn-more"></a>Weitere Informationen
 
 * [Was ist die Microsoft Intune App-Verwaltung?](app-management.md)
 * [Übersicht über den App-Lebenszyklus](app-lifecycle.md)

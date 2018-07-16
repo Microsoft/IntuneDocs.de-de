@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c8eb121b3db52f0fdfc30d7d8dff7ef0f7bf97b
-ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
+ms.openlocfilehash: 24be76637257a3252d6660e8912d7fd2e214dccf
+ms.sourcegitcommit: 4ef14cc543b73191862201c1e0bae44dddd7d9f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2018
-ms.locfileid: "34456349"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37921347"
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Filtereinstellungen für Webinhalte für iOS-Geräte
 
@@ -58,7 +58,7 @@ Wenn Sie hier keine URLs angeben, können Endbenutzer keine Websites außer „m
 ## <a name="specific-websites-only"></a>Nur bestimmte Websites
 
 1. Konfigurieren Sie im Bereich **Webinhaltsfilter** für jede Website, die Sie zulassen möchten, die folgenden Einstellungen:
-    - **URL**: Geben Sie die URL der Website ein, die Sie zulassen möchten, z.B. **http://www.contoso.com**.
+    - **URL**: Geben Sie die URL der Website ein, die Sie zulassen möchten, z.B. `https://www.contoso.com`.
     - **Pfad als Lesezeichen speichern**: Geben Sie den Pfad ein, in dem Sie Lesezeichen speichern möchten, z.B. **/Contoso/Business Apps**. Wenn Sie keinen Pfad angeben, wird das Lesezeichen zum Standardordner für Lesezeichen auf dem Gerät hinzugefügt.
     - **Titel**: Geben Sie einen beschreibenden Titel für das Lesezeichen ein.
 2. Klicken Sie auf **Hinzufügen**, wenn Sie die Informationen für die jeweilige Website eingegeben haben.

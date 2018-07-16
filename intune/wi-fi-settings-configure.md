@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb4d9fc6f0f0609062c408fd85921c1f86bd7303
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832306"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905330"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>So konfigurieren Sie WLAN-Einstellungen in Microsoft Intune
 
@@ -37,7 +37,7 @@ Beispiel: Sie installieren ein neues WLAN mit dem Namen „Contoso Wi-Fi“ und 
 WLAN-Profile unterstützen folgende Geräteplattformen:
 
 - Android 4 und höher
-- Android for Work
+- Android-Arbeitsprofile
 - iOS 8.0 und höher
 - macOS (Mac OS X 10.11 und höher)
 
@@ -55,7 +55,7 @@ Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfiguri
 4. Geben Sie im Bereich **Profil erstellen** einen **Namen** und eine **Beschreibung** für das WLAN-Profil ein.
 5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die Sie WLAN-Einstellungen anwenden möchten. Derzeit können Sie eine der folgenden Plattformen für die WLAN-Einstellungen auswählen:
     - **Android**
-    - **Android for Work**
+    - **Android Enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -69,7 +69,7 @@ Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfiguri
 
    Mit dem Profil **WLAN (Import)** (für Windows 8.1 und höher) können Sie WLAN-Einstellungen als XML-Datei importieren, die Sie zuvor von einem anderen Gerät exportiert haben.
 1. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. In den folgenden Themen finden Sie ausführliche Informationen zu den Einstellungen für die einzelnen Plattformen:
-    - [Einstellungen für Android und Android for Work](wi-fi-settings-android.md)
+    - [Einstellungen für Android und das Android-Arbeitsprofil](wi-fi-settings-android.md)
     - [Einstellungen für iOS](wi-fi-settings-ios.md)
     - [Einstellungen für macOS](wi-fi-settings-macos.md)
     - [Einstellungen für Windows 8.1 und höher](wi-fi-settings-import-windows-8-1.md) (einschließlich Windows Holographic for Business)

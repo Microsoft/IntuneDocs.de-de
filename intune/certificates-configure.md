@@ -14,12 +14,12 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 9329a57ee7d47cb99a7c87326bb043c0a04c6313
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771804"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905205"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Konfigurieren eines Zertifikatprofils für Ihre Geräte in Microsoft Intune
 
@@ -34,7 +34,7 @@ Mit Intune können Sie diese Zertifikate Geräten zuweisen, die Sie verwalten. I
 
 Jeder dieser Zertifikattypen hat eigene Voraussetzungen und Infrastrukturanforderungen.
 
-## <a name="overview"></a>Übersicht
+## <a name="overview"></a>Überblick
 
 1. Stellen Sie sicher, dass Sie die richtige Zertifikatinfrastruktur eingerichtet haben. Sie können [SCEP-Zertifikate](certificates-scep-configure.md) und [PKCS-Zertifikate](certficates-pfx-configure.md) verwenden.
 
@@ -43,7 +43,7 @@ Jeder dieser Zertifikattypen hat eigene Voraussetzungen und Infrastrukturanforde
     - iOS 8.0 und höher
     - macOS 10.11 und höher
     - Android 4,0 und höher
-    - Android for Work
+    - Android-Arbeitsprofil
     - Windows 8.1 und höher
     - Windows Phone 8.1 und höher
     - Windows 10 und höher
@@ -52,7 +52,7 @@ Jeder dieser Zertifikattypen hat eigene Voraussetzungen und Infrastrukturanforde
 
    - iOS 8.0 und höher
    - Android 4,0 und höher
-   - Android for Work
+   - Android-Arbeitsprofil
    - Windows 10 (Desktop und Mobile) und höher
 
    Bei Geräten, die folgende Plattformen ausführen, können Sie nur ein **SCEP**-Zertifikatprofil verwenden:
@@ -95,7 +95,7 @@ Erstellen Sie ein vertrauenswürdiges Zertifikatprofil, bevor Sie ein SCEP- oder
 5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform für das vertrauenswürdige Zertifikat aus. Derzeit können Sie eine der folgenden Plattformen für Zertifikateinstellungen auswählen:
 
     - **Android**
-    - **Android for Work**
+    - **Android Enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**

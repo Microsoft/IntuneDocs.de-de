@@ -1,43 +1,56 @@
 ---
-title: E-Mail-Einstellungen in Microsoft Intune für iOS-Geräte
-titleSuffix: ''
-description: In diesem Artikel lernen Sie die Microsoft Intune-Einstellungen kennen, mit denen Sie E-Mail-Einstellungen auf Geräten mit iOS konfigurieren können.
+title: E-Mail-Einstellungen für iOS-Geräte in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Erstellen Sie ein E-Mail-Profil für die Gerätekonfiguration, die Exchange-Server verwendet und Attribute von Azure Active Directory abruft. Mit Microsoft Intune können Sie außerdem SSL aktivieren, Benutzer mit Zertifikaten oder Benutzername/Kennwort authentifizieren und E-Mails auf iOS-Geräten synchronisieren.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/10/2018
+ms.date: 6/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fe791dce88878fdbde7c62e59452a53ac08ef06b
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 3a231adf4e1f5687bc88c8c9b15241d3f89e711d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190484"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905336"
 ---
-# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-ios"></a>E-Mail-Profileinstellungen in Microsoft Intune für Geräte mit iOS 
+# <a name="email-profile-settings-for-ios-devices---intune"></a>Einstellungen für das E-Mail-Profil für iOS-Geräte: Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-In diesem Artikel werden Ihnen die E-Mail-Profileinstellungen gezeigt, die Sie für Ihre iOS-Geräte konfigurieren können.
+Verwenden Sie die E-Mail-Profileinstellungen, um Ihre iOS-Geräte zu konfigurieren.
 
 ## <a name="email-settings"></a>E-Mail-Einstellungen
 
-- **E-Mail-Server:** Der Hostname Ihres Exchange-Servers.
-- **Kontoname** – Der Anzeigename für das E-Mail-Konto so, wie er den Benutzern auf ihren Geräten angezeigt wird.
-- **Benutzernamensattribut aus AAD:** Das Attribut in Active Directory (AD) oder Azure AD, mit dem der Benutzername für dieses E-Mail-Profil generiert wird. Wählen Sie **Primäre SMTP-Adresse** aus, z.B. **user1@contoso.com**, oder **Benutzerprinzipalname**, z.B. **user1** oder **user1@contoso.com**.
-- **E-Mail-Adressattribut aus AAD:** Die Art der Generierung der E-Mail-Adresse für den Benutzer auf den einzelnen Geräten. Wählen Sie **Primäre SMTP-Adresse** aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname** aus, um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden.
-- **Authentifizierungsmethode:** Wählen Sie entweder **Benutzername und Kennwort** oder **Zertifikate** als Authentifizierungsmethode aus, die vom E-Mail-Profil verwendet werden soll. (**Hinweis**: Azure Multi-Factor Authentication wird nicht unterstützt.)
-    - Wenn Sie **Zertifikat** ausgewählt haben, wählen Sie ein zuvor erstelltes SCEP- oder PKCS-Clientzertifikatprofil aus, das zur Authentifizierung der Exchange-Verbindung verwendet werden soll.
+- **E-Mail-Server:** Geben Sie den Hostnamen Ihres Exchange-Servers ein.
+- **Kontoname:** Geben Sie den Anzeigenamen des E-Mail-Kontos ein. Dieser Name wird Benutzern auf ihren Geräten angezeigt.
+- **Benutzernamensattribut aus AAD:** Dieser Name ist das Attribut, dass Intune aus Azure Active Directory (AAD) abruft. Intune generiert dynamisch den Benutzernamen, der von diesem Profil verwendet wird. Folgende Optionen sind verfügbar:
+  - **Benutzerprinzipalname:** Ruft den Namen ab, z.B. `user1` oder `user1@contoso.com`
+  - **Primäre SMTP-Adresse:** Ruft den Namen im Format einer E-Mail-Adresse ab, z.B. `user1@contoso.com`
+  - **SAM-Kontoname:** Erfordert die Domäne, z.B. `domain\user1`
+
+    Geben Sie außerdem Folgendes ein:  
+    - **Quelle des Benutzerdomänennamens:** Wählen Sie zwischen **AAD** oder **Benutzerdefiniert**.
+
+      Wenn Sie die Attribute von **AAD** abrufen möchten, geben Sie Folgendes ein:
+      - **Attribut des Benutzerdomänennames von AAD:** Rufen Sie entweder das Attribut **Full domain name** (vollständiger Domänenname) oder **NetBIOS name** (NetBIOS-Name) des Benutzers ab.
+
+      Wenn Sie sich dazu entscheiden, die Attribute **Benutzerdefiniert** zu verwenden, geben Sie Folgendes ein:
+      - **Zu verwendender benutzerdefinierter Domänenname:** Geben Sie einen Wert ein, den Intune als Domänennamen verwenden kann, wie z.B. `contoso.com` oder `contoso`
+
+- **E-Mail-Adressattribut aus AAD:** Die Art der Generierung der E-Mail-Adresse für den Benutzer Wählen Sie **Primäre SMTP-Adresse** (`user1@contoso.com`) aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname** (`user1@contoso.com` oder `user1`), um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden.
+- **Authentifizierungsmethode:** Wählen Sie entweder **Benutzername und Kennwort** oder **Zertifikate** als Authentifizierungsmethode aus, die vom E-Mail-Profil verwendet werden soll. Die mehrstufige Authentifizierung mit Azure wird nicht unterstützt.
+  - Wenn Sie **Zertifikat** ausgewählt haben, wählen Sie ein zuvor erstelltes SCEP- oder PKCS-Clientzertifikatprofil aus, das zur Authentifizierung der Exchange-Verbindung verwendet werden soll.
 - **SSL:** Verwenden Sie SSL-Kommunikation (Secure Sockets Layer) beim Senden und Empfangen von E-Mails sowie bei der Kommunikation mit dem Exchange-Server.
-- **S/MIME**: Ausgehende E-Mails werden mithilfe der S/MIME-Signatur gesendet.
-    - Wenn Sie **Zertifikat** ausgewählt haben, wählen Sie ein PKCS-Clientzertifikatprofil aus, das Sie zur Authentifizierung der Exchange-Verbindung zuvor erstellt haben.
-- **Menge an E-Mails für die Synchronisierung:** Wählen Sie die Anzahl der Tage von E-Mails aus, die synchronisiert werden sollen, oder wählen Sie **Unbegrenzt** aus, um alle verfügbaren E-Mail-Nachrichten zu synchronisieren.
+- **S/MIME:** Ausgehende E-Mails werden mithilfe der S/MIME-Signatur gesendet.
+  - Wenn Sie **Zertifikat** ausgewählt haben, wählen Sie ein PKCS-Clientzertifikatprofil aus, das Sie zur Authentifizierung der Exchange-Verbindung zuvor erstellt haben.
+- **Anzahl der zu synchronisierenden E-Mails:** Wählen Sie die Anzahl an Tagen von E-Mails, die Sie synchronisieren möchten. Oder wählen Sie **Unbegrenzt**, um alle verfügbaren E-Mails zu synchronisieren.
 - **Verschieben von Nachrichten in andere E-Mail-Konten zulassen:** Hiermit können Benutzer E-Mail-Nachrichten zwischen verschiedenen Konten verschieben, die auf ihrem Gerät konfiguriert sind.
 - **E-Mail-Versand aus Drittanbieteranwendungen zulassen**: Erlaubt dem Benutzer die Auswahl dieses Profils als das Standardkonto für das Senden von E-Mails und erlaubt Drittanbieteranwendungen das Öffnen von E-Mails in der nativen E-Mail-App, um beispielsweise Dateien an E-Mails anzuhängen.
-- **Kürzlich verwendete E-Mail-Adressen synchronisieren:** Mit diesem Feature können Benutzer die Liste der E-Mail-Adressen, die vor Kurzem auf dem Gerät verwendet wurden, mit dem Server synchronisieren.
+- **Kürzlich verwendete E-Mail-Adressen synchronisieren:** Erlaubt Benutzern die Liste der E-Mail-Adressen, die vor Kurzem auf dem Gerät verwendet wurden, mit dem Server zu synchronisieren.
+
+## <a name="next-steps"></a>Nächste Schritte
+[Konfigurieren von E-Mail-Einstellungen in Intune](email-settings-configure.md)

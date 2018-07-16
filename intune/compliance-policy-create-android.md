@@ -14,12 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 85f11e3a9bfd43affde35806d9aeaf40dcbfe03d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744702"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906191"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für Android-Geräte in Intune
 
@@ -77,9 +77,9 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 - **Bedrohungsüberprüfung für Apps**: Erfordert, dass die Android-Funktion **Apps überprüfen** aktiviert wird.
 
   > [!NOTE]
-  > Auf der älteren Android-Plattform ist diese Funktion eine Konformitätseinstellung. Intune kann nur prüfen, ob diese Einstellung auf Geräteebene aktiviert ist. Auf Geräten mit Arbeitsprofilen (Android for Work) ist diese Einstellung als Konfigurationsrichtlinieneinstellung zu finden. Dies ermöglicht Administratoren, die Einstellung für ein Gerät zu aktivieren.
+  > Auf der älteren Android-Plattform ist diese Funktion eine Konformitätseinstellung. Intune kann nur prüfen, ob diese Einstellung auf Geräteebene aktiviert ist. Auf Geräten mit Android-Arbeitsprofilen ist diese Einstellung als Konfigurationsrichtlinieneinstellung zu finden. Dies ermöglicht Administratoren, die Einstellung für ein Gerät zu aktivieren.
 
-  Wenn Ihr Unternehmen Android-Arbeitsprofile verwendet, können Sie **Bedrohungsüberprüfung für Apps** für Ihre registrierten Geräte aktivieren. Richten Sie ein Geräteprofil ein, und fordern Sie die Systemsicherheitseinstellung an. Weitere Informationen finden Sie unter [Einstellungen für Geräteeinschränkungen für Android for Work-Geräte in Intune](device-restrictions-android-for-work.md).
+  Wenn Ihr Unternehmen Android-Arbeitsprofile verwendet, können Sie **Bedrohungsüberprüfung für Apps** für Ihre registrierten Geräte aktivieren. Richten Sie ein Geräteprofil ein, und fordern Sie die Systemsicherheitseinstellung an. Weitere Informationen finden Sie unter [Einstellungen für Geräteeinschränkungen für Android-Arbeitsprofilgeräte in Intune](device-restrictions-android-for-work.md).
 
 - **SafetyNet-Gerätenachweis**: Legen Sie die Integritätsstufe des [SafetyNet-Nachweises](https://developer.android.com/training/safetynet/attestation.html) fest, die eingehalten werden muss. Folgende Optionen sind verfügbar:
   - **Nicht konfiguriert**

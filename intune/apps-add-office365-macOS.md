@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78158afeb9c12e8056f42066be78c37f962b4462
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223610"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869496"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Zuweisen von Office 365 zu macOS-Geräten mit Microsoft Intune
 
-Der Typ *Store-App* macht es Ihnen einfach, Office 365-Apps macOS-Geräten zuzuweisen. Dieser App-Typ ermöglicht Ihnen die Installation von Word, Excel, PowerPoint, Outlook und OneNote. Diese Apps sind auch im Lieferumfang von Microsoft AutoUpdate (MAU) enthalten, um die Apps sicherer und auf dem neuesten Stand zu halten. Die gewünschten Apps werden in der Intune-Konsole als einzelne App in der App-Liste angezeigt.
+Dieser App-Typ macht es Ihnen einfach, Office 365 2016-Apps macOS-Geräten zuzuweisen. Dieser App-Typ ermöglicht Ihnen die Installation von Word, Excel, PowerPoint, Outlook und OneNote. Diese Apps sind auch im Lieferumfang von Microsoft AutoUpdate (MAU) enthalten, um die Apps sicherer und auf dem neuesten Stand zu halten. Die gewünschten Apps werden in der Intune-Konsole als einzelne App in der App-Liste angezeigt.
 
 
-## <a name="before-you-start"></a>Vorbereitung
+## <a name="before-you-start"></a>Vorbereitungen
 
 Bevor Sie damit beginnen, macOS-Geräten Office 365 hinzuzufügen, sollten Sie sich Folgendes bewusst machen:
 
@@ -70,7 +70,7 @@ In diesem Schritt konfigurieren Sie Zuweisungen für die App-Suite.
 2. Wählen Sie im Bereich **Office 365** **Assignments** aus.
 3. Wählen Sie **Gruppe hinzufügen** aus, um eine Gruppe hinzuzufügen, die die App-Suite verwenden wird.  
     Der Bereich **Gruppe hinzufügen** wird angezeigt.
-4. Legen Sie den **Zuweisungstyp** auf **Erforderlich** fest.
+4. Legen Sie den **Zuweisungstyp** auf **Erforderlich** oder **Verfügbar** fest.
 5. Ordnen Sie die Suite den von Ihnen ausgewählten Gruppen zu. Weitere Informationen finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](apps-deploy.md).
 
     >[!Note]

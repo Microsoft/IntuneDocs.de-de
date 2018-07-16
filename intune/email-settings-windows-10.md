@@ -1,52 +1,61 @@
 ---
-title: E-Mail-Einstellungen für Windows 10-Geräte in Microsoft Intune
-titleSuffix: ''
-description: In diesem Artikel erhalten Sie Informationen zu den Microsoft Intune-Einstellungen, mit denen Sie E-Mail-Einstellungen auf Windows 10-Geräten konfigurieren können.
+title: 'E-Mail-Einstellungen für Windows 10-Geräte in Microsoft Intune: Azure | Microsoft-Dokumentation'
+description: Erstellen Sie ein E-Mail-Profil für die Gerätekonfiguration, die Exchange-Server verwendet und Attribute von Azure Active Directory abruft. Mit Microsoft Intune können Sie auch SSL aktivieren und E-Mails und Zeitpläne auf Windows 10-Geräten synchronisieren.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 6/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a04f2267bd4a232fb687f7f77f66e439e6804099
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 04834f21e5fd2f6ed0f7454988936397d3249987
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831157"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37904967"
 ---
-# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>E-Mail-Profileinstellungen in Microsoft Intune für Windows 10-Geräte
+# <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>E-Mail-Profileinstellungen für Windows 10-Geräte: Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Mit den E-Mail-Profileinstellungen können Sie Ihre Windows 10-Geräte konfigurieren.
 
-In diesem Artikel werden Ihnen die E-Mail-Profileinstellungen gezeigt, die Sie für Ihre Windows 10-Geräte konfigurieren können.
+- **E-Mail-Server:** Geben Sie den Hostnamen Ihres Exchange-Servers ein.
+- **Kontoname:** Geben Sie den Anzeigenamen des E-Mail-Kontos ein. Dieser Name wird Benutzern auf ihren Geräten angezeigt.
+- **Benutzernamensattribut aus AAD:** Dieser Name ist das Attribut, dass Intune aus Azure Active Directory (AAD) abruft. Intune generiert dynamisch den Benutzernamen, der von diesem Profil verwendet wird. Folgende Optionen sind verfügbar:
+  - **Benutzerprinzipalname:** Ruft den Namen ab, z.B. `user1` oder `user1@contoso.com`
+  - **Primäre SMTP-Adresse:** Ruft den Namen im Format einer E-Mail-Adresse ab, z.B. `user1@contoso.com`
+  - **SAM-Kontoname:** Erfordert die Domäne, z.B. `domain\user1`
 
+    Geben Sie außerdem Folgendes ein:  
+    - **Quelle des Benutzerdomänennamens:** Wählen Sie zwischen **AAD** oder **Benutzerdefiniert**.
 
-- **E-Mail-Server:** Der Hostname Ihres Exchange-Servers.
-- **Kontoname** – Der Anzeigename für das E-Mail-Konto so, wie er den Benutzern auf ihren Geräten angezeigt wird.
-- **Benutzernamensattribut aus AAD:** Das Attribut in Active Directory (AD) oder Azure AD, mit dem der Benutzername für dieses E-Mail-Profil generiert wird. Wählen Sie **Primäre SMTP-Adresse** aus, z.B. **user1@contoso.com**, oder **Benutzerprinzipalname**, z.B. **user1** oder **user1@contoso.com**.
-- **E-Mail-Adressattribut aus AAD:** Die Art der Generierung der E-Mail-Adresse für den Benutzer auf den einzelnen Geräten. Wählen Sie **Primäre SMTP-Adresse** aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname** aus, um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden.
+      Wenn Sie die Attribute von **AAD** abrufen möchten, geben Sie Folgendes ein:
+      - **Attribut des Benutzerdomänennames von AAD:** Rufen Sie entweder das Attribut **Full domain name** (vollständiger Domänenname) oder **NetBIOS name** (NetBIOS-Name) des Benutzers ab.
 
+      Wenn Sie sich dazu entscheiden, die Attribute **Benutzerdefiniert** zu verwenden, geben Sie Folgendes ein:
+      - **Zu verwendender benutzerdefinierter Domänenname:** Geben Sie einen Wert ein, den Intune als Domänennamen verwenden kann, wie z.B. `contoso.com` oder `contoso`
+
+- **E-Mail-Adressattribut aus AAD:** Die Art der Generierung der E-Mail-Adresse für den Benutzer Wählen Sie **Primäre SMTP-Adresse** (`user1@contoso.com`) aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname** (`user1@contoso.com` oder `user1`), um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden.
 
 ## <a name="security-settings"></a>Sicherheitseinstellungen
 
 - **SSL:** Verwenden Sie SSL-Kommunikation (Secure Sockets Layer) beim Senden und Empfangen von E-Mails sowie bei der Kommunikation mit dem Exchange-Server.
 
-
-
 ## <a name="synchronization-settings"></a>Synchronisierungseinstellungen
 
-- **Menge an E-Mails für die Synchronisierung:** Wählen Sie die Anzahl der Tage von E-Mails aus, die synchronisiert werden sollen, oder wählen Sie **Unbegrenzt** aus, um alle verfügbaren E-Mail-Nachrichten zu synchronisieren.
-- **Synchronisierungszeitplan** – Wählen Sie den Zeitplan aus, nach dem Geräte mit Daten vom Exchange-Server synchronisiert werden. Sie können auch **Beim Erhalt von Nachrichten** auswählen, wobei die Daten sofort beim Eintreffen synchronisiert werden, oder **Manuell**, wobei der Benutzer des Geräts die Synchronisierung initiieren muss.
+- **Anzahl der zu synchronisierenden E-Mails:** Wählen Sie die Anzahl an Tagen von E-Mails, die Sie synchronisieren möchten. Oder wählen Sie **Unbegrenzt**, um alle verfügbaren E-Mails zu synchronisieren.
+- **Synchronisierungszeitplan:** Wählen Sie den zeitlichen Ablauf der Synchronisierung der Daten vom Exchange-Server aus. Außerdem können Sie **Bei Eintreffen von Nachrichten** wählen, wodurch Daten bei Eingang synchronisiert werden, oder **Manuell**, wodurch der Benutzer des Geräts die Synchronisierung von Hand starten muss.
 
 ## <a name="content-sync-settings"></a>Inhaltssynchronisierungseinstellungen
 
 - **Zu synchronisierender Inhaltstyp:** Wählen Sie die Inhaltstypen aus, die auf Geräten synchronisiert werden sollen:
-    - **Kontakte**
-    - **Kalender**
-    - **Aufgaben**
+  - **Kontakte**
+  - **Kalender**
+  - **Aufgaben**
+
+## <a name="next-steps"></a>Nächste Schritte
+[Konfigurieren von E-Mail-Einstellungen in Intune](email-settings-configure.md)

@@ -15,19 +15,19 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11f1a48b5b2dcff421603dd4538ff054d174fe66
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223406"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869371"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Zuweisen von Office 365-Apps zu Windows 10-Geräten mit Microsoft Intune
 
 Diese App erleichtert Ihnen die Zuweisung von Office 365-Apps zu Geräten, die Sie verwalten und auf denen Windows 10 ausgeführt wird. Sie können auch Apps für den Microsoft Project Online-Desktopclient und Microsoft Visio Pro für Office 365 installieren, wenn Sie über Lizenzen für sie verfügen. Die gewünschten Apps werden in der Intune-Konsole als einzelner Eintrag in der App-Liste angezeigt.
 
 
-## <a name="before-you-start"></a>Vorbereitung
+## <a name="before-you-start"></a>Vorbereitungen
 
 >[!IMPORTANT]
 >Diese Installationsmethode für Office wird nur unterstützt, wenn keine anderen Versionen von Microsoft Office auf dem Gerät installiert sind.
@@ -47,7 +47,7 @@ Diese App erleichtert Ihnen die Zuweisung von Office 365-Apps zu Geräten, die S
 3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
 4. Wählen Sie im Workloadbereich **Mobile Apps** unter **Verwalten** die Option **Apps** aus.
 5. Wählen Sie **Hinzufügen** aus.
-6. Wählen Sie im Bereich **Apps hinzufügen** in der Liste **App-Typ** unter **Office 365 Office** die Option **Windows 10** aus.
+6. Wählen Sie im Bereich **Apps hinzufügen** in der Liste **App-Typ** unter **Office 365 Suite** die Option **Windows 10** aus.
 
 Sie können die App-Suite jetzt konfigurieren.
 
@@ -71,15 +71,15 @@ In diesem Schritt stellen Sie Informationen über die App-Suite bereit. Diese In
 2. Gehen Sie im Bereich **Informationen zur App-Suite** folgendermaßen vor:
     - **Name der Suite**: Geben Sie den Namen der App-Suite ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle Suitenamen eindeutig sind. Wenn ein Sammlungsname zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
     - **Beschreibung der Suite**: Geben Sie eine Beschreibung für die App-Suite ein. Sie können die Apps auflisten, die Sie einschließen möchten.
-    - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein.
+    - **Herausgeber**: Als Herausgeber wird Microsoft angezeigt.
     - **Kategorie**: Wählen Sie optional mindestens eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Diese Einstellung erleichtert den Benutzern die Suche nach der App-Suite im Unternehmensportal.
     - **Display this as a featured app in the Company Portal** (Diese App als ausgewählte App im Unternehmensportal anzeigen): Diese Einstellung zeigt die App-Suite auf der Hauptseite des Unternehmensportals hervorgehoben an, wenn Benutzer nach Apps suchen.
     - **Informations-URL**: Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
     - **URL zu den Datenschutzbestimmungen**: Geben Sie optional eine URL zu einer Website ein, die Datenschutzinformationen für diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
-    - **Entwickler**: Geben Sie optional den Namen des App-Entwicklers ein.
-    - **Besitzer**: Geben Sie optional einen Namen für den Besitzer dieser App ein, z.B. *Personalabteilung*.
+    - **Entwickler**: Als Entwickler wird Microsoft angezeigt.
+    - **Besitzer**: Als Besitzer wird Microsoft angezeigt.
     - **Anmerkungen**: Geben Sie Anmerkungen zu dieser App ein.
-    - **Logo**: Laden Sie ein Symbol hoch, das mit der App angezeigt wird, wenn Benutzer das Unternehmensportal durchsuchen.
+    - **Logo**: Das Office 365-Logo wird gemeinsam mit der App angezeigt, wenn der Benutzer das Unternehmensportal durchsucht.
 3. Wählen Sie **OK** aus.
 
 ## <a name="configure-app-settings"></a>App-Einstellungen konfigurieren
@@ -89,7 +89,7 @@ In diesem Schritt konfigurieren Sie Installationsoptionen für die App-Sammlung.
 1. Wählen Sie im Bereich **App hinzufügen** die Option **Einstellungen der App-Suite** aus.
 2. Gehen Sie im Bereich **Einstellungen der App-Suite** folgendermaßen vor:
     - **Office-Version**: Wählen Sie aus, ob Sie die 32-Bit- oder die 64-Bit-Version von Office zuweisen möchten. Sie können die 32-Bit-Version sowohl auf 32-Bit- als auch auf 64-Bit-Geräten installieren. Die 64-Bit-Version lässt sich jedoch nur auf 64-Bit-Geräten installieren.
-    - **Updatekanal**: Wählen Sie aus, wie Office auf Geräten aktualisiert wird. Informationen zu den unterschiedlichen Updatekanälen finden Sie in der [Übersicht der Updatekanäle für Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Es stehen die folgenden Optionen zur Auswahl:
+    - **Updatekanal**: Wählen Sie aus, wie Office auf Geräten aktualisiert wird. Informationen zu den unterschiedlichen Updatekanälen finden Sie in der [Übersicht der Updatekanäle für Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Wählen Sie aus:
         - **Monatlich**
         - **Monatlich (Ziel)**
         - **Halbjährlich**
