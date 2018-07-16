@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/29/2018
+ms.date: 07/05/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 229c97723c5774b6823699c7d0b0bc9f9b194690
-ms.sourcegitcommit: d786eb18147a12fbc8cb97a157467f88591f1bc5
+ms.openlocfilehash: e6d3640d63f16b80588860c3c36aba1a81ffbe09
+ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37134019"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37927028"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,95 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Sie e
 ### Role-based access control
 
 -->   
+## <a name="week-of-july-2-2018"></a>Woche vom 2. Juli 2018
+
+### <a name="app-management"></a>App-Verwaltung
+
+#### <a name="additional-security-settings-for-windows-installer----2282430---"></a>Zusätzliche Sicherheitseinstellungen für Windows Installer <!-- 2282430 -->
+Sie können Benutzern erlauben, App-Installationen zu steuern. Wenn diese Option aktiviert ist, werden Installationen, die normalerweise wegen Sicherheitsverstößen unterbrochen werden würden, weiterhin ausgeführt. Sie können festlegen, dass Windows Installer bei der Installation eines beliebigen Programms auf einem System erhöhte Berechtigungen verwendet. Zusätzlich können Sie festlegen, dass Windows Information Protection-Elemente (WIP) indiziert und die zugehörigen Metadaten an einem nicht verschlüsselten Speicherort gespeichert werden. Wenn die Richtlinie deaktiviert ist, werden WIP-geschützte Elemente nicht indiziert und sie werden nicht in den Ergebnissen in Cortana oder im Datei-Explorer angezeigt. Diese Funktionalität für diese Optionen ist standardmäßig deaktiviert. 
+
+#### <a name="monitor-ios--app-configuration-status-per-device----880037---"></a>Überwachen des Konfigurationsstatus von iOS-Apps auf allen Geräten <!-- 880037 -->
+Als Microsoft Intune-Administrator können Sie auf jedem verwalteten Gerät den Konfigurationsstatus von iOS-Apps überwachen. Klicken Sie im Azure-Portal unter **Microsoft Intune** auf **Geräte** > **Alle Geräte**. Wählen Sie aus der Liste der verwalteten Geräte ein Gerät aus, für das ein Blatt angezeigt werden soll. Klicken Sie auf dem Geräteblatt auf **App-Konfiguration**.
+
+#### <a name="access-actions-for-app-protection-policies----1483510---"></a>Zugriff auf Aktionen für App-Schutzrichtlinien <!-- 1483510 -->
+Sie können App-Schutzrichtlinien so konfigurieren, dass nicht kompatible Geräte explizit zurückgesetzt, blockiert oder gewarnt werden. Mit der Aktion *Zurücksetzen* werden Ihre Unternehmensdaten von einem Gerät entfernt. Im Falle eines Zurücksetzens wird der Gerätebenutzer über den Grund für das Zurücksetzen und Schritte zur Wiederherstellung benachrichtigt. Für einige Einstellungen, wie z. B. die Mindestversion des Betriebssystems, können Sie mehrere Aktionen anwenden, z. B. das Blockieren und Zurücksetzen. Beachten Sie, dass diese Aktionen ausgelöst werden, wenn die App gestartet wird.
+
+#### <a name="selective-wipe-of-organizations-app-data----1507030---"></a>Zurücksetzen ausgewählter App-Daten einer Organisation <!-- 1507030 -->
+Wenn die in den APP-Zugriffseinstellungen festgelegten Bedingungen nicht erfüllt sind, können Administratoren durch eine neue Aktion ausgewählte Organisationsdaten zurücksetzen.  Dieses Feature hilft Administratoren dabei, vertrauliche Organisationsdaten mithilfe festgelegter Kriterien automatisch zu schützen und aus Anwendungen zu entfernen.
+
+#### <a name="revoking-an-ios-app-purchased-through-vpp----1777384---"></a>Widerrufen einer Lizenz für iOS-Apps, die über VPP erworben wurden <!-- 1777384 -->
+Als Microsoft Intune-Administrator haben Sie die Möglichkeit, alle Lizenzen für eine bestimmte iOS-App zu widerrufen, die über das Volume Purchase Program (VPP) erworben wurde. Sie können Benutzer benachrichtigen, wenn ihnen eine App-Benutzerlizenz entzogen wurde. Durch das Widerrufen einer App-Lizenz wird die zugehörige VPP-App nicht vom Gerät deinstalliert. Zum Deinstallieren einer VPP-App müssen Sie die Zuweisungsaktion in **Deinstallieren** ändern. Die Anzahl der widerrufenen Lizenzen wird innerhalb der Intune-**App**-Workload im Knoten **Lizenzierte Apps** angezeigt. Weitere Informationen zu iOS-VPP-Apps finden Sie unter [Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden](vpp-apps-ios.md).
+
+#### <a name="updates-to-out-of-compliance-messages-in-company-portal-app----1832222---"></a>Updates für nicht konforme Meldungen in der Unternehmensportal-App <!-- 1832222 -->
+Die Meldung, die Benutzern angezeigt wird, wenn ein Gerät nicht konform ist, wurde überarbeitet. Die Meldungen behalten ihre ursprünglichen Bedeutungen bei, wurden jedoch mit benutzerfreundlicherer Sprache und weniger Fachbegriffen aktualisiert. Die Links zu Dokumentationen und Wiederherstellungsschritten wurden auf den neuesten Stand gebracht.
+Die folgenden Texte (vorher und nachher) sind ein Beispiel für die Verbesserungen an den angezeigten Meldungen:
+- **Vorher:** *Dieses Gerät hat nicht innerhalb des von Ihrem IT-Administrator festgelegten Zeitraums eine Verbindung mit dem Intune-Dienst hergestellt. Um dieses Problem zu beheben, öffnen Sie die Unternehmensportal-App auf Ihrem Gerät, und klicken Sie auf die Schaltfläche „Konformität überprüfen“.*
+- **Nachher:** *Your device has not checked in with your organization in a while. To reestablish a connection, open the Company Portal app on your device and tap Check Settings for your device. (Ihr Gerät wurde länger nicht mehr bei Ihrer Organisation eingecheckt. Öffnen Sie die Unternehmensportal-App auf Ihrem Gerät, und tippen Sie für Ihr Gerät auf „Einstellungen überprüfen“, um die Verbindung wiederherzustellen.)*
+
+#### <a name="revoke-ios-vpp-app-license----1863797---"></a>Widerrufen einer iOS-VPP-App-Lizenz <!-- 1863797 -->
+Als Administrator haben Sie die Möglichkeit, eine iOS-VPP-App-Lizenz zu widerrufen, die einem Benutzer oder Gerät zugewiesen ist. Dasselbe erreichen Sie mit der Deinstallation einer iOS-VPP-App. Bevor Sie die App deinstallieren, müssen der Benutzer oder das Gerät aus der Gruppe entfernt werden, die von der App als Ziel verwendet wird. Wenn Sie den Benutzer oder das Gerät aus der Gruppe entfernen, verhindern Sie, dass die App erneut installiert wird. Sobald diese Schritte durchgeführt wurden, können Sie die App-Lizenz einem anderen Benutzer oder Gerät zuweisen. Weitere Informationen zu iOS-VPP-App-Lizenzen, finden Sie unter [Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden](vpp-apps-ios.md).
+
+#### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>Unterstützung von branchenspezifischen Apps für macOS <!-- 1895847 -->
+Mit Microsoft Intune können Sie branchenspezifische macOS-Apps als **Required** (Erforderlich) oder **Available with enrollment** (Mit Registrierung verfügbar) bereitstellen. Sie können Endbenutzern Apps als **Available** (Verfügbar) über das Unternehmensportal für macOS oder über die [Website des Unternehmensportals](https://portal.manage.microsoft.com) bereitstellen.
+
+### <a name="device-configuration"></a>Gerätekonfiguration
+
+#### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963-eenotready---"></a>Auswählen von Gerätekategorien durch den Zugriff auf die Einstellungen für Geschäfts-, Schul- oder Unikonten <!-- 1058963 eenotready --> 
+Wenn Sie die [Gerätegruppenzuordnung](https://docs.microsoft.com/en-us/intune/device-group-mapping) aktiviert haben, werden Benutzer unter Windows 10 aufgefordert, eine Gerätekategorie auszuwählen, nachdem sie sich unter **Einstellungen** > **Konten** > **Auf Geschäfts-, Schul- oder Unikonto zugreifen** mit der Schaltfläche **Verbinden** angemeldet haben. 
+
+#### <a name="use-samaccountname-as-the-account-username-for-email-profiles----1500307---"></a>Verwenden von „sAMAccountName“ als Kontobenutzername für E-Mail-Profile <!-- 1500307 -->
+Sie können das lokal vorhandene Attribut **sAMAccountName** als Kontobenutzername für Android-, iOS- und Windows 10-E-Mail-Profile verwenden. Mit den Attributen `domain` oder `ntdomain` können Sie in Azure Active Directory (Azure AD) außerdem die Domain abrufen. Alternativ können Sie auch eine benutzerdefinierte statische Domäne eingeben.
+
+Zur Nutzung dieses Features müssen Sie das `sAMAccountName`-Attribut Ihrer lokalen Active Directory-Umgebung mit Azure AD synchronisieren.
+
+Gilt für: [Android](email-settings-android.md), [iOS](email-settings-ios.md), [Windows 10 und höher](email-settings-windows-10.md)
+
+#### <a name="see-device-configuration-profiles-in-conflict----1556983---"></a>Anzeigen von in Konflikt stehenden Gerätekonfigurationsprofilen <!-- 1556983 -->
+Unter **Gerätekonfiguration** wird eine Liste der vorhandenen Profile angezeigt. Mit diesem Update wird eine neue Spalte hinzugefügt, die Details zu Profilen enthält, die in Konflikt stehen. Sie können eine in Konflikt stehende Zeile anklicken, um die Einstellung und das Profil anzuzeigen, bei denen der Konflikt vorhanden ist. 
+
+Weitere Informationen zum [Verwalten von Konfigurationsprofilen](device-profile-monitor.md#view-conflicts).
+
+#### <a name="new-status-for-devices-in-device-compliance----2308882---"></a>Neue Status für Geräte in der Gerätekonfiguration <!-- 2308882 -->
+Wählen Sie unter **Gerätekonformität** > **Richtlinien** eine Richtlinie aus. Dort wurden unter **Übersicht** folgende neue Status hinzugefügt:
+- Erfolgreich
+- Fehler
+- Konflikt
+- Ausstehend
+- Nicht anwendbar. Außerdem wird eine Grafik angezeigt, in der die Anzahl der Geräte für andere Plattformen zu sehen ist. Beim Aufruf eines iOS-Profils wird beispielsweise auf der neuen Kachel die Anzahl der Nicht-iOS-Geräte angezeigt, die diesem Profil ebenfalls zugewiesen sind. Weitere Informationen finden Sie im Artikel zu [Gerätekonformitätsrichtlinien](compliance-policy-monitor.md#view-status-of-device-policies).
+
+#### <a name="device-compliance-supports-3rd-party-anti-virus-solutions----2325484---"></a>Unterstützung von Drittanbieter-Antivirenlösungen in Gerätekonformitätsrichtlinien <!-- 2325484 -->
+Beim Erstellen einer Gerätekonformitätsrichtlinie (**Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** > **Plattform: Windows 10 und höher** > **Einstellungen** > **Systemsicherheit**) sind neue Optionen für **[Gerätesicherheit](compliance-policy-create-windows.md#windows-10-and-later-policy-settings)** verfügbar: 
+- **Antivirus:** Wenn für diese Einstellung **Require** (Erforderlich) festgelegt ist, können Sie die Konformität mit Antivirenlösungen (beispielsweise Symantec und Windows Defender) überprüfen, die beim Windows-Sicherheitscenter registriert sind. 
+- **Antispyware:** Wenn für diese Einstellung **Require** (Erforderlich) festgelegt ist, können Sie die Konformität mit Antispyware-Lösungen (beispielsweise Symantec und Windows Defender) überprüfen, die beim Windows Security Center registriert sind. 
+
+Gilt für: Windows 10 und höher 
+
+### <a name="device-enrollment"></a>Geräteregistrierung
+
+####  <a name="devices-without-profiles-column-in-the-list-of-enrollment-program-tokens----1853904---"></a>Geräte ohne die Spalte „Profiles“ (Profile) in der Liste der Registrierungsprogrammtoken <!-- 1853904 -->
+In der Liste der Registrierungprogrammtoken gibt es eine neue Spalte, in der die Anzahl der Geräte ohne zugewiesenes Profil angezeigt werden. So können Administratoren diesen Geräten leichter Profile zuweisen, bevor sie sie Benutzern zuweisen. Navigieren Sie zu **Geräteregistrierung** > **Apple-Registrierung** > **Registrierungsprogrammtoken**, um die neue Spalte anzuzeigen.
+
+### <a name="device-management"></a>Geräteverwaltung
+
+#### <a name="google-name-changes-for-android-for-work-and-play-for-work---842873---"></a>Google-Namensänderungen für Android for Work und Play for Work <!--842873 -->
+In Intune wurde die Android for Work-Terminologie aktualisiert, um die Änderungen von Google-Markennamen widerzuspiegeln. Die Benennungen „Android for Work“ und „Play for Work“ werden nicht mehr verwendet. Die Terminologie wurde je nach Kontext angepasst:
+- „Android Enterprise“ bezieht sich auf den allgemeinen modernen Android-Verwaltungsstapel.
+- „Arbeitsprofil“ oder „Profilbesitzer“ bezieht sich auf BYOD-Geräte, die mit Arbeitsprofilen verwaltet werden.
+- „Managed Google Play“ bezieht sich auf den App Store von Google.
+
+#### <a name="rules-for-removing-devices----1609459---"></a>Regeln für das Entfernen von Geräten <!-- 1609459 -->
+Neue Regeln, mit denen Sie Geräte automatisch entfernen können, die über einen festgelegten Zeitraum nicht mehr eingecheckt waren, sind verfügbar. Um die neue Regel anzuzeigen, wechseln Sie in den Bereich **Intune**, und wählen Sie **Geräte** und anschließend **Device removal rules** (Regeln zur Gerätebereinigung) aus.
+
+#### <a name="corporate-owned-single-cosu-use-support-for-android-devices----1630973---"></a>COSU-Unterstützung (corporate-owned, single use, Unternehmensgeräte für spezifische Anwendungsfälle) für Android-Geräte <!-- 1630973 -->
+
+Intune unterstützt jetzt kioskartige, stringent verwaltete Android-Geräte, deren Einsatzbereich stark eingeschränkt ist. Dadurch können Administratoren festlegen, dass auf einem Gerät nur eine oder einige wenige Apps und Aktionen von Benutzern verwendet werden dürfen. Navigieren Sie in Intune zu **Geräteregistrierung** > **Android-Registrierung** > **Kiosk und Taskgeräteregistrierungen**, um einen Android-Kiosk einzurichten. Weitere Informationen finden Sie unter [Set up enrollment of Android enterprise kiosk devices (Einrichten der Registrierung von Android-Kioskgeräte des Unternehmens)](android-kiosk-enroll.md).
+
+#### <a name="per-row-review-of-duplicate-corporate-device-identifiers-uploaded----2203794--"></a>Duplikatprüfung auf Zeilenbasis beim Hochladen unternehmensspezifischer Gerätebezeichner <!-- 2203794-->
+Beim Hochladen von Unternehmens-IDs stellt Intune jetzt eine Liste mit mehrfach vorhandenen IDs bereit und bietet Ihnen die Möglichkeit, die vorhandenen Informationen zu ersetzen oder beizubehalten. Der Bericht wird angezeigt, wenn nach dem Klicken auf **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** > **Bezeichner hinzufügen** Duplikate vorhanden sind. 
+
+#### <a name="manually-add-corporate-device-identifiers----2203803---"></a>Manuelles Hinzufügen von Unternehmensgerätebezeichnern <!-- 2203803 -->
+Sie können Unternehmensgeräte-IDs jetzt manuell hinzufügen. Klicken Sie auf **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** > **Hinzufügen**. 
+
 ## <a name="week-of-june-25-2018"></a>Woche vom 25. Juni 2018
 
 ### <a name="pradeo---new-mobile-threat-defense-partner----1169249---"></a>Pradeo: neuer Mobile Threat Defense-Partner <!-- 1169249 -->
@@ -340,8 +429,7 @@ Wenn Sie ein neues VPN-Profil für iOS erstellen, stehen Ihnen jetzt zwei Option
 Die Versionen 1.3 und 1.4 des macOS-Unternehmensportals konnten nicht erfolgreich Jamf-Geräte bei Intune registrieren. Version 1.4.2 des macOS-Portals behebt dieses Problem.
 
 
-## <a name="week-of-april-9-2018"></a>Woche vom 9. April 2018
-
+## <a name="week-of-april-9-2018"></a>Woche vom 9. April 2018  
 #### <a name="updated-help-experience-in-company-portal-app-for-android----1631531---"></a>Aktualisierter Hilfebereich der Unternehmensportal-App für Android <!-- 1631531 -->
 
 Wir haben den Hilfebereich der Unternehmensportal-App für Android aktualisiert, sodass er den Best Practices der Android-Plattform entspricht. Wenn Benutzer jetzt ein Problem in der App haben, können sie auf **Menü** > **Hilfe** tippen und Folgendes tun:
@@ -557,10 +645,10 @@ Wir arbeiten daran, Benutzern mehr Kontrolle über ihre Daten und den Datenschut
 
 ## <a name="week-of-march-19-2018"></a>Woche vom 19. März 2018
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Exportieren aller Geräte in CSV-Dateien in Internet Explorer, Microsoft Edge oder Chrome <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Exportieren aller Geräte in CSV-Dateien in Internet Explorer, Edge oder Chrome <!-- 2258071 -->
 Unter **Geräte** > **Alle Geräte** können Sie die Geräte mithilfe der Option **Exportieren** in eine CSV-formatierte Liste exportieren. Internet Explorer-Benutzer mit mehr als 10.000 Geräten können ihre Geräte in mehrere Dateien exportieren. Jede Datei verfügt über bis zu 10.000 Geräte.
 
-Microsoft Edge- und Chrome-Benutzer mit mehr als 30.000 Geräten können ihre Geräte ebenfalls in mehrere Dateien exportieren. Jede Datei verfügt dann über bis zu 30.000 Geräte.
+Edge- und Chrome-Benutzer mit mehr als 30.000 Geräten können ihre Geräte ebenfalls in mehrere Dateien exportieren. Jede Datei verfügt dann über bis zu 30.000 Geräte.
 
 Über die Option [Geräte verwalten](device-management.md) erhalten Sie weitere Informationen dazu, wie Sie die verwalteten Geräte verwenden können.
 
@@ -929,6 +1017,25 @@ Sie können abgelehnte Apps in Intune festlegen. Wenn eine App abgelehnt wird, w
 
 ## <a name="notices"></a>Benachrichtigungen
 
+### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>Änderungen einplanen: Intune unterstützt ab September iOS 10 und höher <!-- 2454656 -->
+Es wird davon ausgegangen, dass Apple im September iOS 12 veröffentlicht. Sobald die neue Version veröffentlicht wurde, wird die Unterstützung von iOS 10 und höher für die Registrierung bei Intune, das Unternehmensportal und den verwalteten Browser eingeführt.  
+
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?  
+Mobile Office 365-Apps werden unter iOS 10 und höher unterstützt. Deshalb ist es möglich, dass Sie für Ihr Betriebssystem oder Ihr Gerät bereits ein Upgrade durchgeführt haben. Sollte dies der Fall sein, sind Sie von dieser Änderung nicht betroffen.  
+
+Wenn Sie über eines der unten aufgelisteten Geräte verfügen oder eines der unten aufgelisteten Geräte registrieren möchten, sollten Sie beachten, dass diese nur iOS 9 und früher unterstützen.  Wenn Sie mit diesen Geräten weiter auf das Intune-Unternehmensportal zugreifen möchten, müssen Sie für diese Geräte bis September ein Upgrade auf Geräte mit Unterstützung für iOS 10 oder höher durchführen:  
+
+* iPhone 4S  
+* iPod Touch  
+* iPad 2  
+* iPad (3. Generation)  
+* iPad Mini (1. Generation)  
+
+Ab Juli erhalten mit MDM registrierte Geräte mit iOS 9 und dem Unternehmensportal eine Aufforderung, ein Upgrade für das Betriebssystem oder das Gerät durchzuführen. Wenn Sie App-Schutzrichtlinien verwenden, können Sie auch die Zugriffseinstellung „iOS-Mindestbetriebssystem anfordern (nur Warnung)“ festlegen.  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?   
+Prüfen Sie, welche Geräte und Benutzer in Ihrer Organisation von dieser Änderung betroffen sind. Navigieren Sie in Intune im Azure-Portal zu Geräte > Alle Geräte, und filtern Sie diese nach Betriebssystem.  Klicken Sie auf „Spalten“, um weitere Angaben wie die Betriebssystemversion anzuzeigen. Fordern Sie Ihre Benutzer dazu auf, Ihr Gerät vor September auf eine unterstützte Betriebssystemversion upzugraden.  
+
 ### <a name="plan-for-change-intune-moving-to-tls-12"></a>Geplante Änderung: Umstellung von Intune auf TLS 1.2
 Ab dem 31. Oktober 2018 unterstützt Intune die Version 1.2 des Transport Layer Security-Protokolls (TLS), um die beste Verschlüsselung bereitzustellen und den Dienst standardmäßig sicherer zu gestalten und auf andere Microsoft-Dienste wie Microsoft Office 365 auszurichten. Für Office wurde diese Änderung in MC128929 bekannt gegeben.
 
@@ -982,9 +1089,9 @@ Mithilfe der neuen Einstellungen der Sicherheitsoptionen für lokale Geräte kö
 Im April soll die Benutzerfreundlichkeit der Unternehmensportalwebsite verbessert werden. Dafür werden Updates für die Benutzeroberfläche ausgeführt, Workflows optimiert und die Barrierefreiheit verbessert. Diese Änderungen umfassen auf den Kunden ausgerichtete Verbesserungen wie das Freigeben von Apps. Außerdem wurde die Gesamtleistung verbessert, um die Servicequalität zu optimieren.
 Es wurden auf der Grundlage von Feedback von Kunden wie Ihnen neue Features hinzugefügt, die die bereits vorhandenen Funktionen und die Benutzerfreundlichkeit um ein Vielfaches verbessern sollen:
 
--   Verbesserungen der Benutzeroberfläche auf der gesamten Website
--   Möglichkeit, direkte Links zu Apps zu teilen
-- Verbesserte Leistung bei großen App-Katalogen
+* Verbesserungen der Benutzeroberfläche auf der gesamten Website
+* Möglichkeit, direkte Links zu Apps zu teilen
+* Verbesserte Leistung bei großen App-Katalogen
 
 Sie müssen nichts tun, um sich auf diese Änderungen vorzubereiten. Sie werden informiert, sobald die aktualisierte Unternehmensportalwebsite für Sie verfügbar gemacht wird. Es kann jedoch sein, dass Sie danach die Dokumentation für die Endbenutzer aktualisieren und neue Screenshots hinzufügen müssen. Beachten Sie außerdem, dass Sie möglicherweise die Dokumentation für die Unternehmensportal-App unter iOS aktualisieren müssen, da die Website auf dem Abschnitt **Apps** der iOS-App basiert. Eine Beispielabbildung finden Sie auf der Seite zu den [Neuerungen der App-Benutzeroberfläche](whats-new-app-ui.md).
 
