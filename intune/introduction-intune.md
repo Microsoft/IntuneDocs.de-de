@@ -15,11 +15,11 @@ ms.reviewer: pmay
 ms.suite: ems
 ms.custom: ''
 ms.openlocfilehash: 6f92cb350a69aeb600f1d48e9bdb0b22a623cb52
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046399"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224805"
 ---
 # <a name="what-is-intune"></a>Was ist Intune?
 

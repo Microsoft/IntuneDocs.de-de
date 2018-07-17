@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8f37c45945df460dabac60e5b06286c940728ba3
-ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
+ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34051639"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225407"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Zuweisen von Lizenzen zu Benutzern, damit sie ihre Geräte bei Intune registrieren können
 
@@ -46,7 +46,7 @@ Sie können das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698
 
 ## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>Zuweisen einer Intune-Lizenz mithilfe von Azure Active Directory
 
-Sie können Benutzern mithilfe von Azure Active Directory eine Intune-Lizenz zuweisen. Weitere Informationen finden Sie im Artikel [Lizenzieren von Benutzern in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-licensing-group-assignment-azure-portal). 
+Sie können Benutzern mithilfe von Azure Active Directory eine Intune-Lizenz zuweisen. Weitere Informationen finden Sie im Artikel [Lizenzieren von Benutzern in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal). 
 
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>Verwenden der Synchronisierung von Schul-/Unidaten zum Zuweisen von Lizenzen zu Benutzern in Intune for Education
 Wenn Sie zu einer Bildungseinrichtung gehören, können Sie mithilfe der Synchronisierung von Schul-/Unidaten (School Data Sync, SDS) synchronisierten Benutzern Intune for Education-Lizenzen zuweisen. Aktivieren Sie dazu lediglich beim Einrichten Ihres SDS-Profils das Kontrollkästchen „Intune for Education“.  

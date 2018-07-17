@@ -15,11 +15,11 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: apps
 ms.openlocfilehash: 69bf4b1dc85a8a17312fe78b6a17564a8a6ff642
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223814"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225390"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Übersicht über den App-Lebenszyklus in Microsoft Intune
 

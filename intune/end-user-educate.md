@@ -14,11 +14,11 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 ms.openlocfilehash: dfe17cd582682126c889662dd942117c3c68dd10
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34717994"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225271"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>So informieren sie Ihre Endbenutzer über Microsoft Intune
 

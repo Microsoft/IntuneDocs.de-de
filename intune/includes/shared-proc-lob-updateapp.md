@@ -1,6 +1,6 @@
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.  
-2. Wählen Sie **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.  
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.  
 3. Wählen Sie **Mobile Apps** > **Apps** aus.
 4. Suchen Sie Ihre App in der Liste, und wählen Sie sie aus.  
 5. Wählen Sie auf dem Blatt **Übersicht** die Option **Eigenschaften**.  

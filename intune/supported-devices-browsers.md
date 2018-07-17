@@ -16,11 +16,11 @@ ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-classic
 ms.openlocfilehash: 938bcd352294a9875aaa3eef717ef3857211961a
-ms.sourcegitcommit: abc3d51923e55e8779a5d84f2fcab60d0a0d8645
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2018
-ms.locfileid: "37434265"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225237"
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Unterstützte Betriebssysteme und Browser
 

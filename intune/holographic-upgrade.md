@@ -13,17 +13,17 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08763aa527f24ff7b357603be5e3bd4da5083b45
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e6a71d48e81914808b9af037692a44e4f651bf55
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830432"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224768"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Aktualisieren von Geräten, die Windows Holographic ausführen, auf Windows Holographic for Business
 
 
-Zum Verwalten von Geräten, die Windows Holographic mit Microsoft Intune ausführen, müssen Sie die Geräte von Windows Holographic auf Windows Holographic for Business zu upgraden. Sie können ein Editionsupgradeprofil erstellen, um das Upgrade auszuführen. Für Microsoft HoloLens können Sie die Commercial Suite erwerben, um die erforderliche Lizenz für das Upgrade zu erhalten. Weitere Informationen finden Sie unter [Entsperren der Features von Windows Holographic für Unternehmen](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise).
+Zum Verwalten von Geräten, die Windows Holographic mit Microsoft Intune ausführen, müssen Sie die Geräte von Windows Holographic auf Windows Holographic for Business zu upgraden. Sie können ein Editionsupgradeprofil erstellen, um das Upgrade auszuführen. Für Microsoft HoloLens können Sie die Commercial Suite erwerben, um die erforderliche Lizenz für das Upgrade zu erhalten. Weitere Informationen finden Sie unter [Entsperren der Features von Windows Holographic für Unternehmen](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise).
 
 ## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>So richten Sie ein Editionsupgrade- Gerätekonfigurationsprofil ein
 

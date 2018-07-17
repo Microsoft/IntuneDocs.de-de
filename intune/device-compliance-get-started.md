@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905069"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225441"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune
 
@@ -63,7 +63,7 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 Folgendes ist erforderlich, um die Gerätekonformitätsrichtlinien zu verwenden:
 
 - Verwenden Sie folgende Abonnements:
@@ -76,8 +76,8 @@ Folgendes ist erforderlich, um die Gerätekonformitätsrichtlinien zu verwenden:
   - Android
   - iOS
   - macOS (Vorschau)
-  - Windows 8,1
-  - Windows Phone 8.1
+  - Windows 8.1
+  - Windows Phone 8.1
   - Windows 10
 
 - Geräte müssen in Intune registriert werden, um deren Konformitätsstatus melden zu können.
@@ -88,7 +88,7 @@ Folgendes ist erforderlich, um die Gerätekonformitätsrichtlinien zu verwenden:
 
 Wenn ein Gerät in Intune registriert wird, beginnt der Azure AD-Registrierungsprozess, wodurch die Geräteattribute in Azure AD aktualisiert werden. Ein wichtiger Teil der Information ist der Gerätekonformitätsstatus. Dieser Gerätekonformitätsstatus wird von bedingten Zugriffsrichtlinien zum Blockieren oder Zulassen des Zugriffs auf E-Mails und andere Unternehmensressourcen verwendet.
 
-Der [Azure AD-Registrierungsprozess](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) bietet mehr Informationen.
+Der [Azure AD-Registrierungsprozess](https://docs.microsoft.com/azure/active-directory/device-management-introduction) bietet mehr Informationen.
 
 ### <a name="assign-a-resulting-device-configuration-profile-status"></a>Zuweisen eines resultierenden Profilstatus für die Gerätekonfiguration
 
@@ -96,10 +96,10 @@ Wenn ein Gerät mehrere Konfigurationsprofile hat und es über verschiedene Konf
 
 |Status  |Schweregrad  |
 |---------|---------|
-|Ausstehend     |1|
+|Pending     |1|
 |Succeeded     |2|
-|Fehler     |3|
-|Error     |4|
+|Failed     |3|
+|Fehler     |4|
 
 Hat ein Gerät mehrere Konfigurationsprofile, so wird dem Gerät der höchste Schweregrad aller Profile zugewiesen.
 
@@ -133,10 +133,10 @@ Wenn ein Gerät mehrere Konfigurationsprofile hat und es über verschiedene Konf
 |---------|---------|
 |Unbekannt     |1|
 |NotApplicable     |2|
-|Richtlinienkonform|3|
+|Kompatibel|3|
 |InGracePeriod|4|
 |NonCompliant|5|
-|Error|6|
+|Fehler|6|
 
 Hat ein Gerät mehrere Konformitätsrichtlinien, so wird dem Gerät der höchste Schweregrad aller Richtlinien zugewiesen.
 
