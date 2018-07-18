@@ -34,7 +34,7 @@
       "product_feedback_displaytext" : "Intune Feedback",
       "product_feedback_url": "https://microsoftintune.uservoice.com/",
       "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/Intunedocs",
+      "feedback_github_repo": "MicrosoftDocs/Intunedocs.de-de",
       "feedback_product_url": "https://microsoftintune.uservoice.com/",  
       "searchScope": ["Intune"]
     },
