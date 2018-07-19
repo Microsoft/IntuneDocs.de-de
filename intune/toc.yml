@@ -396,7 +396,7 @@
               href: endpoint-protection-macos.md
             - name: Windows 10
               href: endpoint-protection-windows-10.md
-        - name: Konfigurieren von Kioskeinstellungen
+        - name: Konfigurieren von Kiosk-Einstellungen
           href: kiosk-settings.md
         - name: Konfigurieren von Android-Kioskeinstellungen
           href: android-kiosk-settings.md
@@ -663,6 +663,8 @@
           href: help-desk-operators.md
         - name: Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen
           href: troubleshoot-company-resource-access-problems.md
+        - name: Problembehandlung bei der App-Installation
+          href: troubleshoot-app-install.md
         - name: Überwachungsprotokolle für Intune-Aktivitäten
           href: monitor-audit-logs.md
         - name: Überprüfen der App-Schutzprotokolle
