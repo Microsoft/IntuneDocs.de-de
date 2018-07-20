@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 06/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 581d3c9762145a4681b421ededaaf9099e8ceb80
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1e6ffd31e35637cf722fc2af486be4bd9101c1db
+ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905885"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993750"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Zuweisen von Apps zu Gruppen mit Microsoft Intune
 
@@ -59,7 +59,7 @@ In der folgenden Tabelle werden die verschiedenen Optionen für die Zuweisung vo
 7. Wählen Sie **Gruppe hinzufügen** aus, um den Bereich **Gruppe hinzufügen** zu öffnen, der mit der App verknüpft ist.
 8. Wählen Sie für die bestimmte App einen **Zuweisungstyp** aus:
    - **Für registrierte Geräte verfügbar**: Benutzer installieren die App über die Unternehmensportal-App oder -Website.
-   - **Verfügbar mit oder ohne Registrierung**: Weisen Sie diese App Benutzergruppen zu, deren Geräte nicht bei Intune registriert sind. Apps von Managed Google Play und branchenspezifischen macOS-Apps unterstützen diese Option nicht. 
+   - **Verfügbar mit oder ohne Registrierung**: Weisen Sie diese App Benutzergruppen zu, deren Geräte nicht bei Intune registriert sind. Apps von Managed Google Play unterstützen diese Option nicht. 
    - **Erforderlich**: Die App wird auf Geräten in den ausgewählten Gruppen installiert.
    - **Deinstallieren**: Die App wird auf Geräten in den ausgewählten Gruppen deinstalliert.
 

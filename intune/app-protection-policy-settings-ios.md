@@ -15,12 +15,12 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d0afd1f1944101b2162d9115e84ea5aaac0abf2
-ms.sourcegitcommit: 3dbd73631dd0042dd013a380f4c15dfe284576c0
+ms.openlocfilehash: 65827fe280535aa48d1d44eda9fd8482002c2c3b
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "36882527"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028761"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Einstellungen für App-Schutzrichtlinien für iOS
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -75,7 +75,7 @@ Die App-Schutzrichtlinie von Intune erlaubt unter bestimmten Umständen die Date
 | **Mindestversion des Intune SDK für App-Schutzrichtlinien anfordern** | Wählen Sie **Ja** aus, um zum Verwenden dieser App eine Mindestversion des Intune SDK für App-Schutzrichtlinien anzufordern. Der Zugriff des Benutzers wird blockiert, wenn die Version des Intune SDK für App-Schutzrichtlinien auf dem Gerät die Anforderung nicht erfüllt. <br> <br> Weitere Informationen zum Intune-SDK für App-Schutzrichtlinien finden Sie unter [Übersicht über das Intune App SDK](app-sdk.md). <br><br> Diese Richtlinieneinstellung unterstützt das Format „Hauptversion.Nebenversion“, „Hauptversion.Nebenversion.Buildversion“ oder „Hauptversion.Nebenversion.Buildversion.Revisionsversion“. <br><br> **Hinweis:** Die App muss Intune SDK Version 7.0.1 oder höher aufweisen. | Nein |
 
 > [!NOTE]
-> Weitere Informationen dazu, wie mehrere Einstellungen des Intune-Schutzes für Apps, die im Abschnitt „Zugriff“ für die gleiche Gruppe von Apps und Benutzern konfiguriert wurden, unter Android funktionieren, finden Sie unter [Häufig gestellte Fragen zu Intune-MAM](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios).
+> Weitere Informationen dazu, wie mehrere Einstellungen des Intune-Schutzes für Apps unter iOS funktionieren, die im Abschnitt „Zugriff“ für die gleiche Gruppe von Apps und Benutzern konfiguriert wurden, finden Sie unter [Häufig gestellte Fragen zu Intune-MAM](https://docs.microsoft.com/en-us/intune/mam-faq#app-experience-on-ios) und [Selektives Löschen von Daten mithilfe von Zugriffsaktionen für App-Schutzrichtlinien in Intune](app-protection-policies-access-actions.md).
 
 ##  <a name="add-ins-for-outlook-app"></a>Add-Ins für die Outlook-App
 

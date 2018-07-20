@@ -15,12 +15,12 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 292df171b613ada7a5f8e2cf666ba358ef26df9b
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021558"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949474"
 ---
 # <a name="get-started-managing-users"></a>Erste Schritte mit der Benutzerverwaltung
 
@@ -31,8 +31,10 @@ Denken Sie an die verschiedenen Personen in Ihrer Organisation. Jeder von ihnen,
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wenn Sie den Bereich **Microsoft Intune** geöffnet haben, wählen Sie **Benutzer** aus. Wählen Sie auf der Seite **Alle Benutzer** die Option **+ Neuer Benutzer** aus.
-4. Machen Sie genauere Angaben zum Benutzer: geben Sie z.B. einen **Namen** und einen **Benutzernamen** ein. Der Domänennamenteil des Benutzernamens muss entweder der anfängliche Standarddomänenname „contoso.onmicrosoft.com“ oder ein verifizierter Domänenname ohne Verbund wie z.B. „contoso.com“ sein.
-5. Wählen Sie unter **Gruppen** die Testgruppe, die Sie dem Benutzer hinzufügen möchten.
+4. Machen Sie genauere Angaben zum Benutzer: geben Sie z.B. einen **Namen** und einen **Benutzernamen** ein. Der Domänennamensteil des Benutzernamens muss eine der folgenden Domänen sein:
+    - Der Name für die anfängliche Standarddomäne lautet „contoso.onmicrosoft.com“ oder
+    - wie ein überprüfter Domänenname ohne Verbund, z.B. „contoso.com“.
+5. Wählen Sie unter **Gruppen** eine [Gruppe](get-started-groups.md), der Sie den Benutzer hinzufügen möchten.
 6. Speichern Sie das automatisch generierte Benutzerkennwort, das Sie zur Anmeldung bei einem Testgerät benötigen. Dieses Kennwort müssen Sie Benutzern geben, damit sie es in ein normales Kennwort ändern können, das sie sich leichter merken können.
 7. Klicken Sie im Bereich **Benutzer** auf **Erstellen**.
 

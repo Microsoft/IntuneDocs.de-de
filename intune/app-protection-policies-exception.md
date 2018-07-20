@@ -15,12 +15,12 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b860b68bbf8940a89533159885f471f5337ca0e8
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: 34174568570700e0b15d5bce1bb0bf239251b577
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216138"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039153"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Erstellen von Ausnahmen für die Richtlinie zur Datenübertragung über die Verwaltung mobiler Anwendungen (MAM) mit Intune
 
@@ -38,6 +38,9 @@ Innerhalb einer Intune-Anwendungsschutzrichtlinie bedeutet das Festlegen von **Z
 
 ## <a name="ios-data-transfer-exceptions"></a>Datenübertragungsausnahmen bei iOS
 Bei einer Richtlinie für iOS können Sie Datenübertragungsausnahmen gemäß dem URL-Protokoll konfigurieren. In der vom Entwickler der App bereitgestellten Dokumentation finden Sie Informationen zum Hinzufügen einer Ausnahme sowie zu unterstützten URL-Protokollen. Weitere Informationen zu Datenübertragungsausnahmen bei iOS finden Sie unter [Einstellungen für App-Schutzrichtlinien für iOS - Datenübertragungsausnahmen](app-protection-policy-settings-ios.md#data-transfer-exemptions).
+
+> [!NOTE]
+> Microsoft verfügt über keine Methode, mit der das URL-Protokoll zum Erstellen von App-Ausnahmen für Drittanbieteranwendungen gesucht werden kann. 
 
 ## <a name="android-data-transfer-exceptions"></a>Datenübertragungsausnahmen bei Android
 Bei einer Richtlinie für Android können Sie Datenübertragungsausnahmen gemäß App-Paketname. Auf der Seite **Google Play Store** finden Sie den App-Paketnamen der App, für die Sie eine Ausnahme hinzufügen möchten. Weitere Informationen zu Datenübertragungsausnahmen bei Android finden Sie unter [Einstellungen für App-Schutzrichtlinien für Android - Datenübertragungsausnahmen](app-protection-policy-settings-android.md#data-transfer-exemptions).

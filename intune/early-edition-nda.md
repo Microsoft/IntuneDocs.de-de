@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 609e142551344a1ce39761280031463c8e34f1f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906021"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949491"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>Die Early Edition für Microsoft Intune: Juli 2018
 
@@ -40,6 +40,9 @@ Diese Seite wird regelmäßig aktualisiert. Überprüfen Sie, ob weitere Updates
 ## <a name="intune-in-the-azure-portal"></a>Intune im Azure-Portal
 
 <!-- 1807 start -->
+
+### <a name="more-sync-opportunities-in-the-company-portal-app-for-windows----2683177---"></a>Weitere Synchronisierungsoptionen in der Unternehmensportal-App für Windows <!-- 2683177 -->
+In der Unternehmensportal-App für Windows wird eine neue Gerätesynchronisierungsaktion zu den Sprunglisten der Windows-Taskleiste und dem Startmenü hinzugefügt. Navigieren Sie zu einer dieser Optionen, um Ihre Geräte schnell zu synchronisieren und Zugriff auf Unternehmensressourcen zu erhalten.  
 
 ### <a name="reset-device-passcodes-from-company-portal-app-for-windows-10----2101282---"></a>Zurücksetzen von Gerätekennungen über die Unternehmensportal-App für Windows 10 <!-- 2101282 --> 
 Ihre Mitarbeiter können schon bald die PIN bzw. die Kennung ihres Geräts direkt über die Unternehmensportal-App für Windows 10 zurücksetzen. Diese Funktion ist dann jeweils auf remoten und lokal verwalteten Intune-Geräten verfügbar, die Zurücksetzungen der Kennung unterstützen. Je nach Gerätetyp entfernt eine Anforderung, die für ein Remotegerät gestellt wird, entweder die aktuelle Kennung des Geräts oder erstellt eine temporäre Kennung. Benutzer, die eine Zurücksetzung für ein lokales Gerät anfordern, werden an die App „Einstellungen“ des Geräts weitergeleitet.  

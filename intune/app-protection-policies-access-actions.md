@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/03/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2cfd426a0ae7165a7aae60a90d104852fd834db6
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
+ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909115"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993733"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Selektives Löschen von Daten mithilfe von Zugriffsaktionen für App-Schutzrichtlinien in Intune
 
@@ -36,7 +36,7 @@ Sie können diese Einstellungen verwenden, um die Unternehmensdaten bei Nichtkon
 3. Klicken Sie im Bereich **Intune** auf **Mobile Apps** > **App-Schutzrichtlinien**.
 4. Klicken Sie auf **Richtlinie hinzufügen** (Alternativ können Sie eine vorhandene Richtlinie bearbeiten). 
 5. Klicken Sie auf **Erforderliche Einstellungen konfigurieren**, um die Liste der verfügbaren Einstellungen anzuzeigen, die für die Richtlinie konfiguriert werden können. 
-6. Wenn Sie im Bereich **Einstellungen** nach unten scrollen, finden Sie einen Abschnitt namens **Zugriffsaktionen** mit einer bearbeitbaren Tabelle.
+6. Wenn Sie im Bereich „Einstellungen“ nach unten scrollen, finden Sie einen Abschnitt namens **Zugriffsaktionen** mit einer bearbeitbaren Tabelle.
 
     ![Screenshot der Zugriffsaktionen für den Intune-App-Schutz](./media/apps-selective-wipe-access-actions01.png)
 
@@ -50,6 +50,7 @@ Sie können diese Einstellungen verwenden, um die Unternehmensdaten bei Nichtkon
 
 Die Tabelle für die Einstellungen der App-Schutzrichtlinien enthält Spalten für **Einstellungen**, **Werte** und **Aktionen**.
 
+### <a name="ios-policy-settings"></a>iOS-Richtlinieneinstellungen
 Für iOS können Sie mithilfe der Dropdownliste **Einstellung** Aktionen für die folgenden Einstellungen konfigurieren:
 -  Maximal zulässige PIN-Versuche
 -  Offline-Toleranzperiode
@@ -58,6 +59,19 @@ Für iOS können Sie mithilfe der Dropdownliste **Einstellung** Aktionen für di
 -  Mindestversion für App
 -  Mindestversion für SDK
 -  Gerätemodelle
+
+Geben Sie eine durch Semikolons getrennte Liste der iOS-Modellbezeichner ein, um die **Gerätemodelle**-Einstellung zu verwenden. Sie finden iOS-Modellbezeichner in der Spalte „Device Type“ (Gerätetyp) in der [Dokumentation für HockeyApp Support](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
+Beispieleingabe: *iPhone5,2; iPhone5,3*
+
+Auf Endbenutzergeräten führt der Intune-Client Aktionen auf Grundlage eines einfachen Abgleichs der Zeichenfolgen der Gerätemodelle aus, die in Intune für Anwendungsschutzrichtlinien angegeben sind. Die Übereinstimmung hängt ausschließlich davon ab, was das Gerät meldet. Sie (der IT-Administrator) können sicherstellen, dass das gewünschte Verhalten eintritt, indem Sie diese Einstellung basierend auf mehrerer Geräteherstellern und -modellen und für eine kleine Benutzergruppe testen. Der Standardwert lautet **Nicht konfiguriert**.<br>
+Legen Sie eine der folgenden Aktionen fest: 
+- Angegebene zulassen (nicht Angegebene blockieren)
+- Angegebene zulassen (nicht Angegebene löschen)
+
+**Was geschieht, wenn der IT-Administrator eine andere Liste von iOS-Modellbezeichnern zwischen den Richtlinien einfügt, die für die gleichen Apps für den gleichen Intune-Benutzer vorgesehen sind?**<br>
+Wenn ein Konflikt zwischen zwei App-Schutzrichtlinien für konfigurierte Werte entsteht, verwendet Intune in der Regel den restriktivsten Ansatz. Daher wäre die resultierende Richtlinie, die an die Ziel-App gesendet wird, die von dem entsprechenden Intune-Benutzer geöffnet wird, eine Schnittmenge des/der aufgelisteten iOS-Modellbezeichner/s in *Richtlinie A* und *Richtlinie B*, die für die gleiche App- bzw. Benutzerkombination gilt. Zum Beispiel gibt *Richtlinie A* „iPhone5,2, iPhone5,3“ an, während *Richtlinie B* „iPhone5,3“ angibt. Die resultierende Richtlinie, unter die der Intune-Benutzer durch *Richtlinie A* und *Richtlinie B* fällt, wäre demnach „iPhone5,3“. 
+
+### <a name="android-policy-settings"></a>Android-Richtlinieneinstellungen
 
 Für Android können Sie mithilfe der Dropdownliste **Einstellung** Aktionen für die folgenden Einstellungen konfigurieren:
 -  Maximal zulässige PIN-Versuche
@@ -68,6 +82,19 @@ Für Android können Sie mithilfe der Dropdownliste **Einstellung** Aktionen fü
 -  Mindestversion für den Patch
 -  Gerätehersteller
 
+Geben Sie eine durch Semikolons getrennte Liste der Android-Hersteller ein, um die Einstellung **Gerätehersteller** zu verwenden. Den Android-Gerätehersteller finden Sie in den Geräteeinstellungen.<br>
+Beispieleingabe: *Hersteller A; Hersteller B; Google* 
+
+Auf Endbenutzergeräten führt der Intune-Client Aktionen auf Grundlage eines einfachen Abgleichs der Zeichenfolgen der Gerätemodelle aus, die in Intune für Anwendungsschutzrichtlinien angegeben sind. Die Übereinstimmung hängt ausschließlich davon ab, was das Gerät meldet. Sie (der IT-Administrator) können sicherstellen, dass das gewünschte Verhalten eintritt, indem Sie diese Einstellung basierend auf mehreren Geräteherstellern und -modellen und für eine kleine Benutzergruppe testen. Der Standardwert lautet **Nicht konfiguriert**.<br>
+Legen Sie eine der folgenden Aktionen fest: 
+- Angegebene zulassen (nicht Angegebene blockieren)
+- Angegebene zulassen (nicht Angegebene löschen)
+
+**Was geschieht, wenn der IT-Administrator eine andere Liste von Android-Herstellern zwischen den Richtlinien einfügt, die für die gleichen Apps für den gleichen Intune-Benutzer vorgesehen sind?**<br>
+Wenn ein Konflikt zwischen zwei App-Schutzrichtlinien für konfigurierte Werte entsteht, verwendet Intune in der Regel den restriktivsten Ansatz. Daher wäre die resultierende Richtlinie, die an die Ziel-App gesendet wird, die von dem entsprechenden Intune-Benutzer geöffnet wird, eine Schnittmenge der aufgelisteten Android-Hersteller in *Richtlinie A* und *Richtlinie B*, die für die gleiche App- bzw. Benutzerkombination gilt. Zum Beispiel gibt *Richtlinie A* „Google, Samsung“ an, während *Richtlinie B* „Google“ angibt. Die resultierende Richtlinie, unter die der Intune-Benutzer durch *Richtlinie A* und *Richtlinie B* fällt, wäre demnach „Google“. 
+
+### <a name="additional-settings-and-actions"></a>Zusätzliche Einstellungen und Aktionen 
+
 Die Tabelle enthält standardmäßig gefüllte Zeilen als Einstellungen, die für **Offline-Toleranzperiode** und **Maximal zulässige PIN-Versuche** konfiguriert sind, wenn die Einstellung **PIN für Zugriff anfordern** auf **Ja** festgelegt ist.
  
 Wählen Sie eine Einstellung aus der Dropdownliste unter der Spalte **Einstellung** aus, um diese zu konfigurieren. Sobald eine Einstellung ausgewählt ist, wird das bearbeitbare Textfeld unter der Spalte **Wert** in der gleichen Zeile aktiviert, wenn ein Wert festgelegt werden muss. Außerdem wird die Dropdownliste unter der Spalte **Aktion** aktiviert, die eine Reihe von bedingten Startaktionen enthält, die für die Einstellung anwendbar sind. 
@@ -76,8 +103,6 @@ Die folgende Liste enthält häufig verwendete Aktionen:
 -  **Zugriff blockieren:** Blockiert den Zugriff auf die Unternehmens-App für den Endbenutzer.
 -  **Daten löschen:** Löschen der Daten vom Gerät des Endbenutzers.
 -  **Warnung:** Angeben eines Dialogfelds mit einer Warnmeldung für den Endbenutzer.
-
-### <a name="additional-settings-and-actions"></a>Zusätzliche Einstellungen und Aktionen 
 
 In einigen Fällen, z.B. bei der Einstellung **Mindestversion für Betriebssystem**, können Sie die Einstellung konfigurieren, um alle anwendbaren Aktionen basierend auf verschiedenen Versionsnummern auszuführen. 
 

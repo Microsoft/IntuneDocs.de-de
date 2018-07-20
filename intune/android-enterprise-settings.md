@@ -2,8 +2,8 @@
 title: 'Android-Kioskeinstellungen in Microsoft Intune: Azure | Microsoft-Dokumentation'
 description: Konfigurieren Sie Android Enterprise-Kioskgeräte.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 7/5/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 28eca6fa3738519602ee5b2a778bc75bde487156
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 15ac6adbcf262fd14edf11107b032aeda106a15b
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909098"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039334"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Android Enterprise-Kioskeinstellungen in Intune
 
@@ -51,7 +51,7 @@ Android-Kioskprofile unterstützen die folgenden Konfigurationseinstellungen. Be
 
 ## <a name="kiosk-settings"></a>Kioskeinstellungen
 
-- **Kioskmodus:** Definiert, ob das Gerät eine einzelne oder mehrere Apps ausführen kann. Weitere Informationen finden Sie unter [Kiosk settings for Android devices (Kiosk-Einstellungen für Android-Geräte in Intune)](android-kiosk-settings.md).
+- **Kioskmodus:** Definiert, ob das Gerät eine einzelne oder mehrere Apps ausführen kann. Weitere Informationen finden Sie unter [Kiosk settings for Android devices (Kioskeinstellungen für Android-Geräte in Intune)](android-kiosk-settings.md).
     - **Kiosk mit einzelner App:** Benutzer können nur auf eine einzelne App zugreifen.
     - **Multi-App-Kiosk:** Benutzer können nur auf eine begrenzte Anzahl von Apps zugreifen.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/05/2018
+ms.date: 07/13/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: e6d3640d63f16b80588860c3c36aba1a81ffbe09
-ms.sourcegitcommit: 8ea2ff0941219e72477d7ceaab40a0068e53d508
+ms.openlocfilehash: f2018b5a1ca2a6981b04951bcf8ecd8819eb47e2
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37927028"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039419"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,22 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Sie e
 ### Role-based access control
 
 -->   
+## <a name="week-of-july-9-2018"></a>Woche vom 9. Juli 2018
+
+### <a name="app-management"></a>App-Verwaltung
+
+### <a name="block-app-access-based-on-unapproved-device-vendors-and-models-----1425689----"></a>Blockieren des App-Zugriffs basierend auf nicht genehmigten Geräteherstellern und Modellen <!-- 1425689 ! -->
+Der Intune-IT-Administrator kann über Intune-App-Schutzrichtlinien die Umsetzung einer festgelegten Liste von Android-Herstellern und/oder iOS-Modellen erzwingen. Der IT-Administrator kann eine durch Semikolon getrennte Liste von Herstellern für Android-Richtlinien und Gerätemodelle für iOS-Richtlinien bereitstellen. Intune-App-Schutzrichtlinien gelten nur für Android und iOS. Für diese festgelegten Listen können zwei verschiedene Aktionen ausgeführt werden:
+- Blockieren des App-Zugriffs auf Geräten, die nicht angegeben sind.
+- Selektives Zurücksetzen von Unternehmensdaten auf Geräten, die nicht angegeben sind. 
+
+Der Benutzer kann nicht auf die Zielanwendung zugreifen, wenn die Anforderungen der Richtlinie nicht erfüllt sind. Anhand von Einstellungen werden Benutzer entweder blockiert oder Unternehmensdaten innerhalb der App selektiv zurückgesetzt. Für dieses Feature ist auf iOS-Geräten die Beteiligung von Anwendungen erforderlich (wie z.B. WXP, Outlook, Managed Browser, Yammer), um das Intune App SDK für dieses Feature für die Zielanwendungen zu erzwingen. Diese Integration erfolgt fortlaufend und ist von den jeweiligen Anwendungsteams abhängig. Unter Android ist für dieses Feature das neueste Unternehmensportal erforderlich. 
+
+Auf Endbenutzergeräten führt der Intune-Client Aktionen auf Grundlage eines einfachen Abgleichs der Zeichenfolgen aus, die auf dem Blatt „Intune“ für Anwendungsschutzrichtlinien angegeben sind. Dies hängt ausschließlich von dem Wert ab, den das Gerät meldet. Daher sollte der IT-Administrator sicherstellen, dass das beabsichtigte Verhalten korrekt ist. Dazu kann diese Einstellung basierend auf einer Vielzahl von Geräteherstellern und Modellen für eine kleine Benutzergruppe getestet werden. Wählen Sie in Microsoft Intune nacheinander **Mobile Apps** > **App-Schutzrichtlinien** aus, um App-Schutzrichtlinien anzuzeigen und hinzuzufügen. Weiter Informationen zu App-Schutzrichtlinien finden Sie unter [Was sind App-Schutzrichtlinien?](app-protection-policy.md) und [Selektives Löschen von Daten mithilfe von Zugriffsaktionen für App-Schutzrichtlinien in Intune](app-protection-policies-access-actions.md).
+
+### <a name="access-to-macos-company-portal-pre-release-build----1734766---"></a>Zugriff auf das Vorabreleasebuild der macOS-Unternehmensportal-App <!-- 1734766 -->
+Sie können sich mithilfe von Microsoft AutoUpdate registrieren, um nach einem Beitritt zum Insider-Programm frühzeitig Builds zu erhalten. Durch eine Registrierung können Sie das aktualisierte Unternehmensportal verwenden, bevor sie Ihren Endbenutzern zur Verfügung steht. Weitere Informationen finden Sie im [Microsoft Intune-Blog](https://blogs.technet.microsoft.com/intunesupport/2018/07/13/use-microsoft-autoupdate-for-early-access-to-the-macos-company-portal-app/).
+
 ## <a name="week-of-july-2-2018"></a>Woche vom 2. Juli 2018
 
 ### <a name="app-management"></a>App-Verwaltung
@@ -68,9 +84,6 @@ Die folgenden Texte (vorher und nachher) sind ein Beispiel für die Verbesserung
 
 #### <a name="revoke-ios-vpp-app-license----1863797---"></a>Widerrufen einer iOS-VPP-App-Lizenz <!-- 1863797 -->
 Als Administrator haben Sie die Möglichkeit, eine iOS-VPP-App-Lizenz zu widerrufen, die einem Benutzer oder Gerät zugewiesen ist. Dasselbe erreichen Sie mit der Deinstallation einer iOS-VPP-App. Bevor Sie die App deinstallieren, müssen der Benutzer oder das Gerät aus der Gruppe entfernt werden, die von der App als Ziel verwendet wird. Wenn Sie den Benutzer oder das Gerät aus der Gruppe entfernen, verhindern Sie, dass die App erneut installiert wird. Sobald diese Schritte durchgeführt wurden, können Sie die App-Lizenz einem anderen Benutzer oder Gerät zuweisen. Weitere Informationen zu iOS-VPP-App-Lizenzen, finden Sie unter [Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden](vpp-apps-ios.md).
-
-#### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>Unterstützung von branchenspezifischen Apps für macOS <!-- 1895847 -->
-Mit Microsoft Intune können Sie branchenspezifische macOS-Apps als **Required** (Erforderlich) oder **Available with enrollment** (Mit Registrierung verfügbar) bereitstellen. Sie können Endbenutzern Apps als **Available** (Verfügbar) über das Unternehmensportal für macOS oder über die [Website des Unternehmensportals](https://portal.manage.microsoft.com) bereitstellen.
 
 ### <a name="device-configuration"></a>Gerätekonfiguration
 
@@ -1086,7 +1099,7 @@ Mithilfe der neuen Einstellungen der Sicherheitsoptionen für lokale Geräte kö
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968--"></a>Neues Update zur Verbesserung der Benutzerfreundlichkeit der Unternehmensportalwebsite <!--2000968-->
 
-Im April soll die Benutzerfreundlichkeit der Unternehmensportalwebsite verbessert werden. Dafür werden Updates für die Benutzeroberfläche ausgeführt, Workflows optimiert und die Barrierefreiheit verbessert. Diese Änderungen umfassen auf den Kunden ausgerichtete Verbesserungen wie das Freigeben von Apps. Außerdem wurde die Gesamtleistung verbessert, um die Servicequalität zu optimieren.
+Ab August soll die Benutzerfreundlichkeit der Unternehmensportalwebsite verbessert werden. Dafür werden Updates für die Benutzeroberfläche ausgeführt, Workflows optimiert und die Barrierefreiheit verbessert. Diese Änderungen umfassen auf den Kunden ausgerichtete Verbesserungen wie das Freigeben von Apps. Außerdem wurde die Gesamtleistung verbessert, um die Servicequalität zu optimieren.
 Es wurden auf der Grundlage von Feedback von Kunden wie Ihnen neue Features hinzugefügt, die die bereits vorhandenen Funktionen und die Benutzerfreundlichkeit um ein Vielfaches verbessern sollen:
 
 * Verbesserungen der Benutzeroberfläche auf der gesamten Website

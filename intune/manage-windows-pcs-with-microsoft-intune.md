@@ -15,12 +15,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 41f4a724a8450584a62629194e1a179372ec4b8e
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: a22aafdca8c049367d4c88d27a07a7c1825a01e3
+ms.sourcegitcommit: e6e93419f46e8647d4661eeca09eb1e2e460ad2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310554"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38966917"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Verwalten von Windows-PCs als Computer mit dem Intune-Softwareclient
 
@@ -53,7 +53,7 @@ Intune unterstützt die Verwaltung von Windows-PCs als Computer mit dem Software
 
 |Anforderungen|Weitere Informationen|
 |---------------|--------------------|
-|Betriebssystem | Windows-Gerät, auf dem Windows Vista oder höher ausgeführt wird. </br></br>**Versionen der Home Edition werden nicht unterstützt.**|
+|Betriebssystem | Auf dem Windows-Gerät muss Windows 7 SP1 oder höher ausgeführt werden. </br></br>**Versionen der Home Edition werden nicht unterstützt.**|
 |Administratorrechte|Das Konto, mit dem die Clientsoftware installiert wird, muss über lokale Administratorrechte auf diesem Gerät verfügen.|
 |Windows Installer 3.1|Auf dem PC wird Windows Installer 3.1 oder höher benötigt.<br /><br />So zeigen Sie die Windows Installer-Version auf einem PC an:<br /><br />  Klicken Sie auf dem PC mit der rechten Maustaste auf **%windir%\System32\msiexec.exe**, und klicken Sie dann auf **Eigenschaften**.<br /><br />Sie können die neueste Version von Windows Installer von der Microsoft Developer Network-Website unter [Windows Installer Redistributables (Weitervertreibbare Komponenten für Windows Installer)](http://go.microsoft.com/fwlink/?LinkID=234258) herunterladen.|
 |Entfernen nicht kompatibler Clientsoftware|Bevor Sie die Intune-Clientsoftware installieren, deinstallieren Sie sämtliche Clientsoftware für Configuration Manager, Operations Manager, Operations Management Suite und Service Manager auf diesem PC.|

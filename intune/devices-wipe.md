@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 41d8f70dd72e845663f39e151c393f5edc0ad394
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906055"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028744"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Entfernen von Geräten mithilfe der Zurücksetzung auf Werkseinstellungen, Entfernen von Unternehmensdaten oder manuelles Abmelden eines Geräts
 
@@ -175,3 +175,24 @@ Aufgrund von Kommunikationsproblemen oder fehlenden Geräten müssen Sie möglic
 5. Wählen Sie den Benutzer aus, der dem Gerät zugeordnet ist, das Sie löschen möchten.
 6.  Klicken Sie auf **Geräte**.
 7.  Entfernen Sie Geräte nach Bedarf. Sie können beispielsweise Geräte entfernen, die nicht mehr verwendet werden oder fehlerhafte Definitionen aufweisen.
+
+## <a name="retire-an-apple-dep-device-from-intune"></a>Ausmustern eines Apple-DEP-Geräts von Intune
+
+Wenn Sie ein Apple-DEP-Gerät vollständig aus der Intune-Verwaltung entfernen möchten, befolgen Sie diese Schritte:
+
+1. Melden Sie sich bei [Intune im Azure-Portal](https://aka.ms/intuneportal) an.
+2. Wählen Sie **Geräte** > **Alle Geräte** aus, wählen Sie das entsprechende Gerät und dann **Unternehmensdaten entfernen** aus.
+![Screenshot des Vorgangs „Unternehmensdaten entfernen“](./media/devices-wipe/remove-company-data.png)
+3. Wählen Sie **Geräteregistrierung** > **Apple-Registrierung** > **Token für Registrierungsprogramm** aus, wählen Sie anschließend das entsprechende Token aus, und klicken Sie auf **Geräte**. Aktivieren Sie anschließend das Kontrollkästchen für das Gerät, und wählen Sie **Löschen** > **Ja** aus.
+![Screenshot des Vorgangs zum Löschen des Geräts](./media/devices-wipe/delete-device.png)
+4. Besuchen Sie [deploy.apple.com](http://deploy.apple.com), und suchen Sie über die Seriennummer nach dem Gerät.
+5. Wählen Sie im Menü **Assigned to** (Zugewiesen an) die Option **Unassigned** (Nicht zugewiesen) aus.
+
+6. Wählen Sie **Reassign** (Neu zuweisen) aus.
+
+    ![Screenshot für die Neuzuweisung für Apple](./media/devices-wipe/apple-reassign.png)
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Wenn Sie ein gelöschtes Geräte erneut registrieren möchten, finden Sie in den [Optionen für die Registrierung](enrollment-options.md) weitere Informationen.
+
