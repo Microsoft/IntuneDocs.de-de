@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a12e0103f9eae08003d8cca6a5eb4699ced27a27
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015607"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117853"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Senden von Protokollen an den Support Ihres Unternehmens mithilfe eines USB-Kabels
 
@@ -35,7 +35,7 @@ Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App au
 
 2. Verbinden Sie Ihr Gerät über ein USB-Kabel mit dem Computer. Hierbei handelt es sich normalerweise um das gleiche Kabel, das Sie auch zum Laden des Geräts über eine Steckdose verwenden.
 
-3. Suchen Sie auf dem Computer nach einem Verzeichnis mit dem Namen Ihres Geräts. Suchen Sie in diesem Verzeichnis nach <strong>Android-Gerät\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\</strong>.
+3. Suchen Sie auf dem Computer nach einem Verzeichnis mit dem Namen Ihres Geräts. Suchen Sie in diesem Verzeichnis nach <strong><Android-Gerät>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\</strong>.
 
 4. Wählen Sie die Dateien aus, und fügen Sie sie an eine E-Mail-Nachricht an. Senden Sie diese E-Mail an den Support Ihres Unternehmens.
 

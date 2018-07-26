@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 76166fda33414c8ae3096ca12604a5edf07ad974
+ms.sourcegitcommit: a5bd08f2b6a0693fa62683aa2d3699041030269e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905222"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39203219"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrieren von Geräten mithilfe eines Geräteregistrierungs-Manager-Kontos
 
@@ -56,7 +56,7 @@ Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurd
   - (Nur iOS) Wenn Sie DEM zur Registrierung von iOS-Geräten verwenden, können Sie zum Registrieren von Geräten nicht Apple Configurator, das Apple-Programm zur Geräteregistrierung (DEP) oder Apple School Manager (ASM) verwenden.
   - (Nur Android) Die Anzahl der Android-Arbeitsprofilgeräte, die mit einem einzelnen DEM-Konto registriert werden können, ist begrenzt. Pro DEM-Konto können maximal zehn Android-Geräte mit Arbeitsprofil registriert werden. Diese Einschränkung gilt nicht für die Android-Legacy-Registrierung.
   - Geräte können VPP-Apps installieren, wenn sie über Gerätelizenzen verfügen.
-  - Jedes Gerät benötigt eine Gerätelizenz. In diesem Artikel erfahren Sie mehr über [Benutzer- und Gerätelizenzen](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
+  - Für die Verwendung von DEM ist keine Intune-Gerätelizenz erforderlich. In diesem Artikel erfahren Sie mehr über [Benutzer- und Gerätelizenzen](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 
 > [!NOTE]

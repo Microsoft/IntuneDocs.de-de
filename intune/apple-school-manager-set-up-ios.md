@@ -15,18 +15,18 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 853b602781b221ba681d802ae0119fc184ab8d6b
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 31d09c8c97da823ec40785a6db42df64056277fb
+ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225151"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39164551"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Aktivieren der iOS-Geräteregistrierung mit Apple School Manager
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Dieses Thema unterstützt Sie dabei, die iOS-Geräteregistrierung für Geräte zu aktivieren, die über das Programm [Apple School Manager](https://school.apple.com/) erworben wurden. Wenn Sie Intune mit Apple School Manager verwenden, können Sie eine große Zahl von iOS-Geräten registrieren, ohne diese in den Händen zu halten. Wenn ein Schüler oder ein Lehrer das Gerät anschaltet, wird der Setup-Assistent mit vordefinierten Einstellungen ausgeführt, und das Gerät wird für die Verwaltung registriert.
+Dieser Artikel unterstützt Sie dabei, die iOS-Geräteregistrierung für Geräte zu aktivieren, die über das Programm [Apple School Manager](https://school.apple.com/) erworben wurden. Wenn Sie Intune mit Apple School Manager verwenden, können Sie eine große Zahl von iOS-Geräten registrieren, ohne diese in den Händen zu halten. Wenn ein Schüler oder ein Lehrer das Gerät anschaltet, wird der Setup-Assistent mit vordefinierten Einstellungen ausgeführt, und das Gerät wird für die Verwaltung registriert.
 
 Um die Registrierung mit Apple School Manager möglich zu machen, müssen Sie die Portale von Intune und Apple School Manager verwenden. Sie benötigen auch eine Liste von Seriennummern oder eine Bestellnummer, um Geräte in Intune zur Verwaltung zuweisen zu können. Sie erstellen DEP-Registrierungsprofile, die Einstellungen enthalten, die für Geräte während der Registrierung gelten.
 
@@ -36,7 +36,7 @@ Die Registrierung von Apple School Manager kann nicht mit dem [Programm zur Ger�
 - [Apple-MDM-Push-Zertifikat](apple-mdm-push-certificate-get.md)
 - [MDM-Autorität](mdm-authority-set.md)
 - [Apple-MDM-Push-Zertifikat](apple-mdm-push-certificate-get.md)
-- Benutzeraffinität erfordert [den Endpunkt WS-Trust 13 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints). [Erfahren Sie mehr](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+- Bei ADFS ist für Benutzeraffinität [Endpunkt WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints) erforderlich. [Erfahren Sie mehr](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - Geräte, die über das Programm [Apple School Management](http://school.apple.com) erworben wurden
 
 ## <a name="get-an-apple-token-and-assign-devices"></a>Abrufen eines Apple-Tokens und Zuweisen von Geräten
@@ -80,13 +80,15 @@ Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil fü
 
 1. Wählen Sie in [Intune](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Registrierungsprogrammtoken** aus.
 2. Wählen Sie ein Token aus, und wählen Sie dann **Profile** und **Profil erstellen** aus.
+
 3. Geben Sie zu administrativen Zwecken unter **Profil erstellen** einen **Namen** und eine **Beschreibung** für das Profil ein. Benutzer können diese Informationen nicht sehen. Sie können das Feld **Name** zum Erstellen einer dynamischen Gruppe in Azure Active Directory verwenden. Verwenden Sie den Profilnamen, um den Parameter „enrollmentProfileName“ zu definieren, um Geräte mit diesem Registrierungsprofil zuzuweisen. Erfahren Sie mehr über [dynamische Gruppen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal#using-attributes-to-create-rules-for-device-objects).
+
     ![Profilname und Beschreibung](./media/device-enrollment-program-enroll-ios/image05.png)
 
 4. Wählen Sie unter **Benutzeraffinität** aus, ob sich Geräte mit diesem Profil mit oder ohne einen zugewiesenen Benutzer registrieren müssen.
-    - **Mit Benutzeraffinität registrieren**: Wählen Sie diese Option für Geräte aus, die Benutzern gehören und das Unternehmensportal verwenden sollen, um Dienste wie z. B. die Installation von Apps nutzen zu können. Mit dieser Option können Benutzer ihre Geräte auch über das Unternehmensportal authentifizieren. Benutzeraffinität erfordert [den Endpunkt WS-Trust 13 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints). [Erfahren Sie mehr](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   Der Apple School Manager-Modus „Gemeinsam genutztes iPad“ erfordert, dass Benutzer sich ohne Affinität registrieren.
+    - **Mit Benutzeraffinität registrieren**: Wählen Sie diese Option für Geräte aus, die Benutzern gehören und das Unternehmensportal verwenden sollen, um Dienste wie z. B. die Installation von Apps nutzen zu können. Mit dieser Option können Benutzer ihre Geräte auch über das Unternehmensportal authentifizieren. Bei ADFS ist für Benutzeraffinität [Endpunkt WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints) erforderlich. [Erfahren Sie mehr](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).   Der Apple School Manager-Modus „Gemeinsam genutztes iPad“ erfordert, dass Benutzer sich ohne Affinität registrieren.
 
-    - **Ohne Benutzeraffinität registrieren**: Wählen Sie diese Option für Geräte aus, die keinem einzelnen Benutzer zugeordnet sind, z. B. ein gemeinsam genutztes Gerät. Verwenden Sie diese Option für Geräte, die Aufgaben ohne den Zugriff auf lokale Benutzerdaten ausführen. Apps wie die Unternehmensportal-App funktionieren nicht.
+    - **Ohne Benutzeraffinität registrieren**: Wählen Sie diese Option für Geräte aus, die keinem einzelnen Benutzer zugeordnet sind, z. B. ein gemeinsam genutztes Gerät. Verwenden Sie diese Option für Geräte, die Aufgaben ohne Zugriff auf lokale Benutzerdaten ausführen. Apps wie die Unternehmensportal-App funktionieren nicht.
 
 5. Wenn Sie **Mit Benutzeraffinität registrieren** ausgewählt haben, können Sie die Benutzerauthentifizierung über das Unternehmensportal statt über den Apple-Setup-Assistenten erlauben.
 
@@ -108,7 +110,7 @@ Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil fü
 
 7. Wählen Sie aus, ob für Geräte mit diesem Profil die gesperrte Registrierung verwendet werden soll. Wenn **Gesperrte Registrierung** aktiviert ist, sind die iOS-Einstellungen deaktiviert, mit denen das Verwaltungsprofil aus dem Menü **Einstellungen** entfernt werden kann. Nach der Gerätebereitstellung können Sie diese Einstellung ändern, ohne das Gerät auf Werkseinstellung zurückzusetzen. Bei solchen Geräten muss der Verwaltungsmodus **Überwacht** auf *Ja* eingestellt sein. 
 
-8. Wenn Sie möchten, dass sich mehrere Benutzer mit einer verwalteten Apple-ID bei registrierten iPads anmelden können, wählen Sie unter **Gemeinsam genutztes iPad** die Option **Ja** aus. Dazu muss die Option **Ohne Benutzeraffinität registrieren** aktiviert und der Modus **Überwacht** auf **Ja** eingestellt sein. Verwaltete Apple-IDs werden im Apple School Manager-Portal erstellt. Weitere Informationen zu gemeinsam genutzten iPads finden Sie [in diesem Artikel](education-settings-configure-ios-shared.md). Sie sollten sich auch die [von Apple freigegebenen Anforderungen für das iPad](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56) ansehen.
+8. Wenn Sie möchten, dass sich mehrere Benutzer mit einer verwalteten Apple-ID auf den registrierten iPads anmelden, wählen Sie unter **Gemeinsam genutztes iPad** **Ja** aus. Für diese Option müssen **Ohne Benutzeraffinität registrieren** und der Modus **Überwacht** auf **Ja** eingestellt sein. Verwaltete Apple-IDs werden im Apple School Manager-Portal erstellt. Weitere Informationen zu [gemeinsam genutzten iPads](education-settings-configure-ios-shared.md) finden Sie in den [entsprechenden Apple-Anforderungen](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
 9. Wählen Sie aus, ob für Geräte mit diesem Profil die Option **Mit Computern synchronisieren** verwendet werden soll. Wenn Sie **Apple Configurator nach Zertifikat zulassen** auswählen, müssen Sie unter **Apple Configurator-Zertifikate** ein Zertifikat auswählen.
 
@@ -151,7 +153,7 @@ Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil fü
 
 ## <a name="sync-managed-devices"></a>Synchronisieren verwalteter Geräte
 
-Nachdem Intune nun die Berechtigung zum Verwalten Ihrer Apple School Manager-Geräte zugewiesen wurde, können Sie Intune mit dem Apple-Dienst synchronisieren, um Ihre verwalteten Geräte im Intune-Portal anzuzeigen.
+Nachdem Intune die Berechtigung zum Verwalten Ihrer Apple School Manager-Geräte zugewiesen wurde, synchronisieren Sie Intune mit dem Apple-Dienst, um Ihre verwalteten Geräte in Intune anzuzeigen.
 
 Wählen Sie in [Intune](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Registrierungsprogrammtoken** aus, wählen Sie in der Liste ein Token aus, und wählen Sie dann **Geräte** > **Synchronisieren** aus. ![Screenshot des ausgewählten Knotens „Geräte des Registrierungprogramms“ und des ausgewählten Links „Synchronisierung“](./media/device-enrollment-program-enroll-ios/image06.png)
 

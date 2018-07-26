@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/16/2018
+ms.date: 7/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 05d93f1518427201d9d96dbc22c772967fe4fa0f
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d35c9e32b7a0720d5d84a93a7edde6f2bd51911f
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744566"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146627"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Konfigurieren von VPN-Einstellungen für iOS-Geräte in Microsoft Intune
 
@@ -63,10 +63,10 @@ Wenn Sie **Benutzerdefiniertes VPN** als Verbindungstyp ausgewählt haben, konfi
 - **VPN-Bezeichner:** Ein Bezeichner für die verwendete VPN-App, die von Ihrem VPN-Anbieter bereitgestellt wird.
 - **Geben Sie Schlüssel-Wert-Paare für die benutzerdefinierten VPN-Attribute ein:** Fügen Sie **Schlüssel** und **Werte** zum Anpassen der VPN-Verbindung hinzu, oder importieren Sie sie. Auch diese Werte werden in der Regel von Ihrem VPN-Anbieter bereitgestellt.
 
-## <a name="apps-per-app-vpn-settings"></a>App-Einstellungen (VPN für App)
+## <a name="automatic-vpn-settings"></a>Automatische VPN-Einstellungen
 
-- **VPN für App:** Aktivieren Sie diese Option, wenn Sie URLs verwenden möchten, über die im Safari-Browser die VPN-Verbindung aktiviert werden kann. Zum Konfigurieren von VPN pro App müssen Sie in den grundlegenden VPN-Einstellungen **Zertifikate** als Authentifizierungsmethode auswählen.
-  - **Safari URLs, die dieses VPN auslösen:** Wählen Sie mindestens eine Website-URL aus, oder fügen Sie diese hinzu. Wenn diese URLs aufgerufen werden, wird die VPN-Verbindung aktiviert.
+- **VPN pro App**: Wenn Sie diese Option wählen, wird das VPN pro App aktiviert, sodass die VPN-Verbindung automatisch hergestellt wird, wenn bestimmte Apps geöffnet werden. Zusätzlich zu dieser Option müssen Sie die Apps mit diesem VPN-Profil verknüpfen. Weitere Informationen finden Sie in [Die Einrichtung des Pro-App-VPN in Intune für iOS-Geräte](vpn-setting-configure-per-app.md). 
+  - **Safari URLs, die dieses VPN auslösen:** Wählen Sie mindestens eine Website-URL aus, oder fügen Sie diese hinzu. Wenn diese URLs mit dem Safari-Browser auf dem Gerät aufgerufen werden, wird die VPN-Verbindung automatisch aufgebaut.
 
 - **Bedarfsgesteuertes VPN:** Konfigurieren Sie bedingte Regeln, die steuern, wann die VPN-Verbindung initiiert wird. Erstellen Sie beispielsweise eine Bedingung, in der die VPN-Verbindung nur verwendet wird, wenn ein Gerät nicht mit einem Drahtlosnetzwerk des Unternehmens verbunden ist. Erstellen Sie alternativ eine Bedingung, in der die VPN-Verbindung nicht initiiert wird, wenn ein Gerät nicht auf eine angegebene DNS-Suchdomäne zugreifen kann.
 
@@ -87,5 +87,5 @@ Wenn Sie **Benutzerdefiniertes VPN** als Verbindungstyp ausgewählt haben, konfi
 - **Adresse:** Geben Sie die IP-Adresse des vollständig qualifizierten Hostnamens des Proxyservers ein.
 - **Portnummer:** Geben Sie die Portnummer ein, die dem Proxyserver zugeordnet ist.
 
-## <a name="next-step"></a>Nächste Schritte
+## <a name="next-step"></a>Nächster Schritt
 [Erstellen von VPN-Profilen in Intune](vpn-settings-configure.md)

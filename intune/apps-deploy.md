@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1e6ffd31e35637cf722fc2af486be4bd9101c1db
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: 46ef614af39a1dd1b44f4f5ff32f53687ccb060a
+ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993750"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39164568"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Zuweisen von Apps zu Gruppen mit Microsoft Intune
 
@@ -89,21 +89,21 @@ In manchen Fällen wird die gleiche App mehreren Gruppen zugewiesen, jedoch mit 
 |Verfügbarer Benutzer|Benutzer nicht verfügbar|Nicht verfügbar|
 |Verfügbarer Benutzer|Benutzerdeinstallation|Deinstallieren|
 |Benutzer nicht verfügbar|Benutzerdeinstallation|Deinstallieren
-|Erforderlicher Benutzer|Erforderliches Gerät|Beides vorhanden, Gateway behandelt Erforderliches
-|Erforderlicher Benutzer|Gerätedeinstallation|Beides vorhanden, Gateway löst Erforderliches auf
-|Verfügbarer Benutzer|Erforderliches Gerät|Beides vorhanden, Gateway löst Erforderliches auf (erforderlich und verfügbar)
-|Verfügbarer Benutzer|Gerätedeinstallation|Beides vorhanden, Gateway löst Verfügbares auf.<br><br>App wird im Unternehmensportal angezeigt.<br><br>Wenn die App bereits installiert wurde (als erforderliche App mit vorheriger Absicht), wird die App deinstalliert.<br><br>Wenn der Benutzer **Über das Unternehmensportal installieren** auswählt, wird die App installiert und die Deinstallationsabsicht nicht berücksichtigt.|
+|Erforderlicher Benutzer|Erforderliches Gerät|Beides vorhanden, Intune behandelt Erforderliches
+|Erforderlicher Benutzer|Gerätedeinstallation|Beides vorhanden, Intune löst Erforderliches auf
+|Verfügbarer Benutzer|Erforderliches Gerät|Beides vorhanden, Intune löst Erforderliches auf (Erforderlich und Verfügbar)
+|Verfügbarer Benutzer|Gerätedeinstallation|Beides vorhanden, Intune löst Verfügbares auf<br><br>App wird im Unternehmensportal angezeigt.<br><br>Wenn die App bereits installiert wurde (als erforderliche App mit vorheriger Absicht), wird die App deinstalliert.<br><br>Wenn der Benutzer **Über das Unternehmensportal installieren** auswählt, wird die App installiert und die Deinstallationsabsicht nicht berücksichtigt.|
 |Benutzer nicht verfügbar|Erforderliches Gerät|Erforderlich|
 |Benutzer nicht verfügbar|Gerätedeinstallation|Deinstallieren|
-|Benutzerdeinstallation|Erforderliches Gerät|Beides vorhanden, Gateway löst Erforderliches auf|
-|Benutzerdeinstallation|Gerätedeinstallation|Beides vorhanden, Gateway löst Deinstallation|
+|Benutzerdeinstallation|Erforderliches Gerät|Beides vorhanden, Intune löst Erforderliches auf|
+|Benutzerdeinstallation|Gerätedeinstallation|Beides vorhanden, Intune löst Deinstallation auf|
 |Erforderliches Gerät|Gerätedeinstallation|Erforderlich|
 |Erforderlicher und verfügbarer Benutzer|Verfügbarer Benutzer|Erforderlich und Verfügbar|
 |Erforderlicher und verfügbarer Benutzer|Benutzerdeinstallation|Erforderlich und Verfügbar|
 |Erforderlicher und verfügbarer Benutzer|Benutzer nicht verfügbar|Erforderlich und Verfügbar|
 |Erforderlicher und verfügbarer Benutzer|Erforderliches Gerät|Beides vorhanden, erforderlich und verfügbar
 |Erforderlicher und verfügbarer Benutzer|Gerät nicht verfügbar|Erforderlich und Verfügbar|
-|Erforderlicher und verfügbarer Benutzer|Gerätedeinstallation|Beides vorhanden, Gateway löst Erforderliches auf (erforderlich und verfügbar)
+|Erforderlicher und verfügbarer Benutzer|Gerätedeinstallation|Beides vorhanden, Intune löst Erforderliches auf (Erforderlich und Verfügbar)
 |Benutzer nicht verfügbar|Gerät nicht verfügbar|Nicht verfügbar|
 |Verfügbarer Benutzer|Gerät nicht verfügbar|Verfügbar|
 |Erforderlicher Benutzer|Gerät nicht verfügbar|Erforderlich|

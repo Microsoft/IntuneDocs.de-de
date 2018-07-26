@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: 3aed8fcefd640e5b7df46fe1ef8cd1c973a68044
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949491"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212136"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>Die Early Edition für Microsoft Intune: Juli 2018
 
@@ -79,8 +79,8 @@ Um ein Profil zu erstellen, öffnen Sie **Gerätekonfiguration** > **Profile** >
 
 Gilt für Windows 10 und höher.
 
-###  <a name="windows-line-of-business-lob-apps-file-extension-rename----1884873---"></a>Umbenennung der Dateierweiterung branchenspezifischer Windows-Apps (LOB-Apps) <!-- 1884873 -->
-Die Dateierweiterungen für Windows-LOB-Apps werden von *.appx.* und *.appxbundle* in *.msix* und *.msixbundle* umbenannt. Sie können eine App in Microsoft Intune hinzufügen, indem Sie **Mobile Apps** > **Apps** > **Hinzufügen** auswählen. Der Bereich **App hinzufügen** wird geöffnet. Dort können Sie den **App-Typ** auswählen. Wählen Sie für Windows-LOB-Apps **Branchenspezifische App** als App-Typ aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine Installationsdatei mit der entsprechenden Erweiterung ein.
+###  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Dateierweiterung branchenspezifischer Windows-Apps (LOB-Apps) <!-- 1884873 -->
+Die Dateierweiterungen für Windows-LOB-Apps umfassen jetzt *.msi*, *.appx*, *.appxbundle*, *.msix* und *.msixbundle*. Sie können eine App in Microsoft Intune hinzufügen, indem Sie **Mobile Apps** > **Apps** > **Hinzufügen** auswählen. Der Bereich **App hinzufügen** wird geöffnet. Dort können Sie den **App-Typ** auswählen. Wählen Sie für Windows-LOB-Apps **Branchenspezifische App** als App-Typ aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine Installationsdatei mit der entsprechenden Erweiterung ein.
 
 ### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Das automatisch dem Konfigurationsprofil zugewiesene Windows Defender ATP-Konfigurationspaket <!-- 2144658 -->
 Wenn Sie [Advanced Threat Protection verwenden und Geräte in Intune onboarden](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile), laden Sie derzeit ein Konfigurationspaket herunter und fügen es Ihrem Konfigurationsprofil hinzu. In einem zukünftigen Update ruft Intune das Paket automatisch aus dem Windows Defender Security Center ab und fügt es Ihrem Profil hinzu.

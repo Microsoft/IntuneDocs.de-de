@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb609f0d99378e2e30b3c3a4f769781448aea1b5
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31833364"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117870"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Synchronisieren von Geräten mit Intune, um die neuesten Richtlinien und Aktionen zu erhalten
 
@@ -43,6 +43,7 @@ Die Geräteaktion **Sync** (Synchronsieren) zwingt das ausgewählte Gerät dazu,
 4. Wählen Sie in der Liste der von Ihnen verwalteten Geräte ein Gerät aus, klicken Sie auf **Mehr** und dann auf **Synchronisieren**.
 5. Klicken Sie zum Bestätigen auf **Ja**.
 
+Um den Status der Synchronisierung anzuzeigen, wählen Sie **Geräte** > **Geräteaktionen**.
 
 ## <a name="retryable-error-codes"></a>Wiederholbare Fehlercodes
 
@@ -65,4 +66,5 @@ Wenn ein Administrator die Geräteaktion **Synchronisieren** ausführt, sind iOS
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Klicken Sie auf **Geräteaktionen**, um den Status der Synchronisierung anzuzeigen. 
+Sie können sich [die Details](device-inventory.md) des Geräts anschauen.
+ 

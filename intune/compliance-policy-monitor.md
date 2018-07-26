@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/25/2018
+ms.date: 7/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 557bdbace1752b8680cd15d7ba190577bec23e24
+ms.sourcegitcommit: 2e849eea920dcd6ef1b78e5aee26434bb7b01bff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905358"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39132458"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
@@ -167,11 +167,11 @@ Dieses Feature ist im Gerätestatusbericht enthalten:
 1. Wählen Sie **Gerätekompatibilität** > **Richtlinien** aus. Ihnen wird eine Liste mit Richtlinien angezeigt, einschließlich der Plattform (falls die Richtlinie zugewiesen ist) usw.
 2. Wählen Sie eine Richtlinie aus, und klicken Sie dann auf **Übersicht**. In dieser Ansicht enthält die Richtlinienzuweisung die folgenden Status:
 
-  - Succeeded
-  - Fehler
-  - Conflict
-  - Pending
-  - Nicht verfügbar
+  - Erfolgreich: Die Richtlinie wird angewendet.
+  - Fehler: Die Richtlinie kann nicht angewendet werden. Diese Meldung wird in der Regel mit einem Fehlercode angezeigt, der auf eine Erklärung verweist. 
+  - Konflikt: Zwei Einstellungen werden auf dasselbe Gerät angewendet, und Intune kann den Konflikt nicht lösen. Ein Administrator sollte das überprüfen.
+  - Ausstehend: Das Gerät hat sich noch nicht bei Intune eingecheckt, damit die Richtlinie angewendet werden kann. 
+  - Nicht zutreffend: Die Richtlinie kann nicht für das Gerät angewendet werden. Beispielsweise aktualisiert die Richtlinie eine Einstellung für iOS 11.1, das Gerät verwendet jedoch iOS 10. 
 
 3. Um die Details auf dem Gerät mithilfe der Richtlinie anzuzeigen, wählen Sie einen Status aus, z.B. **Succeeded** (erfolgreich). Im nächsten Fenster werden die spezifischen Gerätedetails, einschließlich des Gerätenamens und des Bereitstellungsstatus, aufgeführt.
 
@@ -181,4 +181,3 @@ Richtlinienkonflikte können auftreten, wenn mehrere Intune-Richtlinien auf ein 
 - Wenn die in Konflikt stehenden Einstellungen zu einer Intune-Konfigurationsrichtlinie und einer Kompatibilitätsrichtlinie gehören, haben die Einstellungen in der Kompatibilitätsrichtlinie Vorrang vor den Einstellungen in der Konfigurationsrichtlinie. Dies geschieht auch, wenn die Einstellungen in der Konfigurationsrichtlinie sicherer sind.
 
 - Wenn Sie mehrere Kompatibilitätsrichtlinien bereitgestellt haben, verwendet Intune die sichersten dieser Richtlinien.
-
