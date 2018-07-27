@@ -1,7 +1,7 @@
 ---
-title: Registrieren von Geräten mithilfe des Windows AutoPilot Deployment-Programms
+title: Registrieren von Geräten mithilfe von AutoPilot
 titleSuffix: Microsoft Intune
-description: Erfahren Sie, wie Sie Windows 10-Geräte mithilfe des Windows AutoPilot Deployment-Programms registrieren.
+description: Erfahren Sie, wie Sie Windows 10-Geräte mithilfe des Windows AutoPilot registrieren.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -12,14 +12,15 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 934b80d1c174c25d37e30695f46afc88c8d8bfc3
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: c96f211f18168c8ae55f0ca2391c6c140caef649
+ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39138715"
 ---
-# <a name="enroll-windows-devices-by-using-the-windows-autopilot-deployment-program"></a>Registrieren von Windows-Geräten mithilfe des Windows AutoPilot Deployment-Programms
-Das Windows AutoPilot Deployment-Programm vereinfacht die Bereitstellung von Geräten. Das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems ist ein langwieriger Prozess. Es kann ebenfalls Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und AutoPilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von AutoPilot-Geräten verwenden, können Sie z.B. Richtlinien, Profile und Apps auf den Geräten verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Overview of Windows AutoPilot (Übersicht über Windows AutoPilot)](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
+# <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Registrieren von Windows-Geräten mithilfe des Windows AutoPilot
+Windows AutoPilot vereinfacht die Bereitstellung von Geräten. Das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems ist ein langwieriger Prozess. Es kann ebenfalls Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und AutoPilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von AutoPilot-Geräten verwenden, können Sie Richtlinien, Profile und Apps usw. verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Overview of Windows AutoPilot (Übersicht über Windows AutoPilot)](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 - [Die automatische Windows-Registrierung muss aktiviert sein](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment).
@@ -33,78 +34,89 @@ Sie können Windows AutoPilot-Geräte durch Importieren einer CSV-Datei mit ihre
 
     ![Screenshot von Windows AutoPilot-Geräten](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Navigieren Sie unter **Windows AutoPilot-Geräte hinzufügen** zu einer CSV-Datei mit den Seriennummern, Windows-Produkt-IDs und Hardwarehashes der Geräte, die Sie hinzufügen möchten.
+2. Navigieren Sie unter **Windows AutoPilot-Geräte hinzufügen** zu einer CSV-Datei, die allen Geräte aufführt, die Sie hinzufügen möchten. Die Datei sollte die Seriennummern, Windows-Produkt-IDs, Hardware-Hashes und optionale Bestell-IDs der Geräte enthalten.
 
     ![Screenshot des Hinzufügens von Windows AutoPilot-Geräten](media/enrollment-autopilot/autopilot-import-device2.png)
 
-3. Wählen Sie **Importieren** aus, um mit dem Importieren von Informationen zu den Geräten zu beginnen. Dies kann mehrere Minuten dauern.
+3. Wählen Sie **Importieren** aus, um mit dem Importieren von Informationen zu den Geräten zu beginnen. Der Import kann mehrere Minuten dauern.
 
-## <a name="synchronize-devices"></a>Synchronisieren von Geräten
-Synchronisieren Sie Ihre registrierten Geräte in Intune, sodass Sie diese konfigurieren können.
+4. Nachdem der Importvorgang abgeschlossen ist, wählen Sie **Geräteregistrierung** > **Windows-Registrierung** > **Windows AutoPilot** >  **Geräte** > **Synchronisieren**. Eine Meldung zeigt an, dass die Synchronisierung ausgeführt wird. Der Prozess kann ein paar Minuten in Anspruch nehmen, je nachdem, wie viele Geräte synchronisiert werden.
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung** aus.
-4. Klicken Sie auf **Windows-Registrierung**, und wählen Sie im Abschnitt **Windows AutoPilot Deployment-Programm** die Option **Geräte** aus.
-5. Klicken Sie auf **Sync** (Synchronisieren), um Ihre registrierten Geräte zu importieren. Eine Meldung zeigt an, dass die Synchronisierung ausgeführt wird.
-6. Aktualisieren Sie die Ansicht, um neue Geräte anzuzeigen. Der Prozess kann ein paar Minuten in Anspruch nehmen, je nachdem, wie viele Geräte synchronisiert werden.  
+5. Aktualisieren Sie die Ansicht, um neue Geräte anzuzeigen.
+
+## <a name="create-an-autopilot-device-group"></a>Erstellen einer AutoPilot-Gerätegruppe
+
+1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Option **Gruppen** aus.
+2. Auf dem Blatt **Gruppe**:
+    1. Wählen Sie für **Gruppentyp** die Option **Sicherheit**.
+    2. Geben Sie einen **Gruppennamen** und eine **Gruppenbeschreibung** ein.
+    3. Für **Mitgliedschaftstyp** wählen Sie entweder **Zugewiesen** oder **Dynamisches Gerät**.
+3. Wenn Sie **Zugewiesen** als **Mitgliedschaftstyp** im vorherigen Schritt ausgewählt haben, wählen Sie anschließend auf dem Blatt **Gruppe** die Option **Mitglieder**, und fügen Sie AutoPilot Geräte zur Gruppe hinzu.
+    AutoPilot-Geräte, die noch nicht registriert sind, sind Geräte, deren Name der Seriennummer des Geräts entspricht.
+4. Wenn Sie oben **Dynamisches Geräte** als **Mitgliedschaftstyp** ausgewählt haben,wählen Sie anschließend auf dem Blatt **Gruppe** die Option **Dynamische Gerätemitglieder**, und geben Sie einen der folgenden Codes in das Feld **Erweiterte Regel** ein.
+    - Wenn Sie eine Gruppe mit all Ihren AutoPilot-Geräten erstellen möchten, geben Sie `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")` ein.
+    - Wenn Sie eine Gruppe mit all Ihren AutoPilot-Geräten mit einer bestimmten Bestell-ID erstellen möchten, geben Sie `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") ` ein.
+    - Wenn Sie eine Gruppe mit all Ihren AutoPilot-Geräten mit einer bestimmten Bestellungs-ID erstellen möchten, geben Sie `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")` ein.
+    
+    Wählen Sie nach dem Hinzufügen des Codes im Feld **Erweiterte Regel** die Option **Speichern**.
+5. Wählen Sie **Erstellen** aus.
+
+
 
 ## <a name="create-an-autopilot-deployment-profile"></a>Erstellen eines AutoPilot-Bereitstellungsprofils
 AutoPilot-Bereitstellungsprofile werden verwendet, um die AutoPilot-Geräte zu konfigurieren.
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung** aus.
-4. Klicken Sie auf **Windows-Registrierung**, und wählen Sie im Abschnitt **Windows AutoPilot Deployment-Programm** die Option **Bereitstellungsprofile** aus.
-5. Klicken Sie auf **Profil erstellen**, und geben Sie einen Namen sowie optional eine Beschreibung an.
-6. Wählen Sie unter **In Azure AD einbinden als** die Option **In Azure eingebunden** aus.
-7. Konfigurieren Sie folgende Optionen für die **Willkommensseite**, und klicken Sie dann auf **Speichern**:
+1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Windows-Registrierung** > **Bereitstellungsprofil** > **Profil erstellen** aus.
+2. Geben Sie einen **Namen** und optional eine **Beschreibung** ein.
+3. Für **Bereitstellungsmodus** wählen Sie eine der beiden folgenden Optionen:
+    - **Benutzergesteuert**: Geräte mit diesem Profil werden dem Benutzer zugeordnet, der das Gerät registriert. Für die Bereitstellung des Geräts sind Anmeldeinformationen erforderlich.
+    - **Selbstbereitstellend (Vorschauversion)**: (Windows 10 Insider Preview Build 17672 oder höher) Geräte mit diesem Profil werden nicht dem Benutzer zugeordnet, der das Gerät registriert. Für die Bereitstellung des Geräts sind keine Anmeldeinformationen erforderlich.
+4. Wählen Sie im Feld **Verknüpfen mit Azure AD als** die Option **In Azure AD eingebunden**.
+5. Wählen Sie **Willkommensseite**, konfigurieren Sie die folgenden Optionen, und wählen Sie **Speichern**:
+    - ** Sprache (Region) ***: Wählen Sie die Sprache, die für das Gerät verwendet werden soll. Diese Option ist nur verfügbar, wenn Sie **Selbstbereitstellend** als **Bereitstellungsmodus** ausgewählt haben.
+    - **Tastatur automatisch konfigurieren***: Wenn eine **Sprache (Region)** ausgewählt ist, können Sie die Tastaturauswahlseite überspringen. Diese Option ist nur verfügbar, wenn Sie **Selbstbereitstellend** als **Bereitstellungsmodus** ausgewählt haben.
+    - **Lizenzbedingungen**: (Windows 10, Version 1709 oder höher) Wählen Sie, ob die Lizenzbedingungen den Benutzern angezeigt werden sollen.
+    - **Datenschutzeinstellungen**: Wählen Sie aus, ob die Datenschutzeinstellungen den Benutzern angezeigt werden sollen.
+    - **Benutzerkontotyp**: Wählen Sie, ob der Kontotyp des Benutzers **Administrator** oder **Standardbenutzer** sein soll. 
 
-   - **Lizenzbedingungen**: Wählen Sie, ob die Lizenzbedingungen den Benutzern angezeigt werden sollen.
-   - **Datenschutzeinstellungen**: Wählen Sie aus, ob die Datenschutzeinstellungen den Benutzern angezeigt werden.
-   - **Benutzerkontotyp**: Wählen Sie, ob der Kontotyp des Benutzers **Administrator** oder **Standardbenutzer** sein soll.
+6. Wählen Sie **Erstellen** aus, um das Profil zu erstellen. Das AutoPilot-Bereitstellungsprofil ist nun verfügbar und kann Geräten zugewiesen werden.
 
-     > [!Note]    
-     > Diese Einstellung gilt nicht für Konten von globalen Administratoren oder Unternehmensadministratoren. Diese Konten gelten nicht als Konten von Standardbenutzern, da Sie Zugriff auf sämtliche Verwaltungsfunktionen in Azure AD haben.
+* Sowohl **Sprache (Region)** als auch **Tastatur automatisch konfigurieren** sind nur verfügbar, wenn **Selbstbereitstellend (Vorschauversion)** für den **Bereitstellungsmodus**  (Windows 10 Insider Preview Build 17672 oder höher) ausgewählt ist.
 
 
-6. Klicken Sie auf **Erstellen**, um das Profil zu erstellen. Das AutoPilot-Bereitstellungsprofil ist nun verfügbar und kann Geräten zugewiesen werden.
+## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>Zuweisen eines AutoPilot-Bereitstellungsprofils zu einer Gerätegruppe
 
-> [!Note]    
-> Folgende Einstellungen werden für alle AutoPilot-Bereitstellungsprofile konfiguriert:
-> - Skip Cortana, OneDrive und OEM-Setupseiten für die Registrierung
-> - Automatisches Einrichten für die Arbeit oder Schule
-> - Anmelden mit einer Unternehmens- oder Schulmarke    
-
-## <a name="assign-an-autopilot-deployment-profile"></a>Zuweisen eines AutoPilot-Bereitstellungsprofils
-Nachdem Sie AutoPilot-Bereitstellungsprofile erstellt haben, können Sie diese ausgewählten Diensten zuweisen.
-
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung** aus.
-4. Klicken Sie auf **Windows-Registrierung**, und wählen Sie im Abschnitt **Windows AutoPilot Deployment-Programm** die Option **Geräte** aus.
-5. Wählen Sie die Geräte aus, denen Sie das Bereitstellungsprofil zuweisen möchten. Sie können einen Filter in der Spalte **Profilstatus** verwenden, um Geräte ohne zugewiesenes Profil einfach zu finden.
-6. Klicken Sie auf **Profil zuweisen**, wählen Sie das AutoPilot-Bereitstellungsprofil aus, und klicken Sie dann auf **Zuweisen**. Eine Meldung zeigt an, dass die Zuweisung ausgeführt wird.
-7. Aktualisieren Sie die Ansicht, um festzustellen, ob das Profil den Geräten zugewiesen wurde. Der Prozess kann ein paar Minuten in Anspruch nehmen, je nachdem, wie viele Geräte Sie ausgewählt haben.
-
-> [!Note]
-> Das neue Profil wird dem Gerät zugewiesen. Nachdem das Gerät zurückgesetzt und erneut registriert wurde, wird das Profil wird auf Geräte, die bereits in Intune registriert wurden, angewendet.
-
-### <a name="assign-a-different-autopilot-deployment-profile"></a>Zuweisen eines anderen AutoPilot-Bereitstellungsprofils
-Wenn Sie einem Gerät ein AutoPilot-Bereitstellungsprofil zugewiesen haben und ein anderes Profil zuweisen möchten, weisen Sie dem Gerät das neue Profil zu.  
+1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Windows-Registrierung** > **Bereitstellungsprofil** ein Profil aus.
+2. Wählen Sie auf dem entsprechenden Profilblatt die Option **Zuweisungen**. 
+3. Wählen Sie **Gruppen auswählen** und dann auf dem Blatt **Gruppen auswählen** die Gruppe(n), die Sie dem Profil zuweisen möchten, und wählen Sie anschließend **Auswählen**.
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Bearbeiten eines AutoPilot-Bereitstellungsprofils
 Nachdem Sie ein AutoPilot-Bereitstellungsprofil erstellt haben, können Sie bestimmte Teile des Bereitstellungsprofils bearbeiten.   
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung** aus.
-4. Klicken Sie unter **Windows-Registrierung** im Abschnitt **Windows AutoPilot Deployment-Programm** auf **Geräte**.
-5. Wählen Sie das Profil aus, das Sie bearbeiten möchten.
-6. Klicken Sie auf der linken Seite auf **Eigenschaften**, um den Namen oder die Beschreibung des Bereitstellungsprofils zu ändern. Klicken Sie auf **Speichern**, wenn Sie Änderungen vorgenommen haben.
-7. Klicken Sie auf **Einstellungen**, um Änderungen an den OOBE-Einstellungen vorzunehmen. Klicken Sie auf **Speichern**, wenn Sie Änderungen vorgenommen haben.
+1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Option **Geräteregistrierung** aus.
+2. Wählen Sie unter **Windows-Registrierung** im Abschnitt **Windows AutoPilot** die Option **Bereitstellungsprofile**.
+3. Wählen Sie das Profil aus, das Sie bearbeiten möchten.
+4. Klicken Sie auf der linken Seite auf **Eigenschaften**, um den Namen oder die Beschreibung des Bereitstellungsprofils zu ändern. Klicken Sie auf **Speichern**, wenn Sie Änderungen vorgenommen haben.
+5. Klicken Sie auf **Einstellungen**, um Änderungen an den OOBE-Einstellungen vorzunehmen. Klicken Sie auf **Speichern**, wenn Sie Änderungen vorgenommen haben.
 
 > [!NOTE]
-> Das aktualisierte Profil ist dem Gerät zugewiesen. Das aktualisierte Profil wird jedoch nicht auf ein Gerät angewendet, das bereits bei Intune registriert ist, bis das Gerät zurückgesetzt und erneut registriert wurde.
+> Änderungen am Profil werden für die diesem Profil zugewiesenen Geräte angewendet. Das aktualisierte Profil wird jedoch nicht auf ein Gerät angewendet, das bereits bei Intune registriert ist, bis das Gerät zurückgesetzt und erneut registriert wurde.
+
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Warnungen für nicht zugewiesene Windows AutoPilot-Geräte <!-- 163236 -->
+Sie können eine Warnung anzeigen, um zu sehen, wie vielen Geräten aus dem AutoPilot-Programm keine AutoPilot-Bereitstellungsprofile zugewiesen wurden. Verwenden Sie die Informationen aus der Warnung, um Profile zu erstellen und sie den nicht zugeordneten Geräten zuzuweisen. Wenn Sie auf die Warnung klicken, sehen Sie die vollständige Liste der Windows AutoPilot-Geräte zusammen mit detaillierten Informationen.
+
+Um Warnungen für nicht zugewiesene Geräte anzuzeigen, wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Übersicht** > **Nicht zugewiesene Geräte**.  
+
+## <a name="delete-autopilot-devices"></a>Löschen von AutoPilot-Geräten
+
+Sie können Windows AutoPilot-Geräte löschen, die nicht registriert sind.
+
+1. Wenn Geräte bei Intune registriert sind, müssen Sie sie zunächst [aus Azure Active Directory-Portal löschen](devices-wipe.md#delete-devices-from-the-azure-active-directory-portal).
+
+2. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Windows-Registrierung** > **Geräte** aus.
+
+3. Wählen Sie unter **Windows AutoPilot-Geräte** die Geräte aus, die Sie löschen möchten, und wählen Sie dann **Löschen**.
+
+4. Bestätigen Sie den Löschvorgang mit **Ja**. Der Löschvorgang kann einige Minuten dauern.
 
 ## <a name="using-autopilot-in-other-portals"></a>Verwenden von AutoPilot in anderen Portalen
 Wenn die mobile Geräteverwaltung für Sie nicht von Interesse ist, können Sie AutoPilot beispielsweise in Microsoft Store für Unternehmen verwenden. Die Verwendung von anderen Portalen ist ebenfalls möglich, es wird jedoch empfohlen, ausschließlich Intune zum Verwalten Ihrer AutoPilot-Bereitstellungen zu verwenden. Wenn Sie Intune und ein anderes Portal verwenden, kann Intune folgende Funktionen nicht verwenden:
@@ -113,25 +125,6 @@ Wenn die mobile Geräteverwaltung für Sie nicht von Interesse ist, können Sie 
 - Anzeigen von Profilzuweisungen, die in einem anderen Portal vorgenommen wurden
 - Synchronisieren von Profilzuweisungen, die in einem anderen Portal vorgenommen wurden
 - Anzeigen von Änderungen an der Geräteliste, die in einem anderen Portal vorgenommen wurden
-
-## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Warnungen für nicht zugewiesene Windows AutoPilot-Geräte <!-- 163236 -->
-Sie können eine Warnung für nicht zugewiesene Windows AutoPilot-Geräte anzeigen, um zu sehen, wie vielen Geräten aus dem AutoPilot-Programm keine AutoPilot-Bereitstellungsprofile zugewiesen sind. Verwenden Sie die Informationen aus der Warnung, um Profile zu erstellen und sie den nicht zugeordneten Geräten zuzuweisen. Wenn Sie auf die Warnung klicken, sehen Sie die vollständige Liste der Windows AutoPilot-Geräte zusammen mit detaillierten Informationen.
-
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie auf dem Blatt **Intune** die Option **Geräteregistrierung** aus.
-4. Um die Warnung anzuzeigen, wählen Sie **Übersicht** aus. Klicken Sie auf die Warnung, um eine Liste der AutoPilot-Geräte anzuzeigen.  
-
-## <a name="delete-autopilot-devices"></a>Löschen von AutoPilot-Geräten
-
-Sie können Windows AutoPilot-Geräte löschen, die nicht registriert sind. Sie können die Registrierung von Geräten aufheben und sie dann löschen.
-
-1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Windows-Registrierung** > **Geräte** aus.
-
-2. Wählen Sie unter **Windows AutoPilot-Geräte** die Geräte aus, die Sie löschen möchten, und wählen Sie dann **Löschen**.
-
-3. Bestätigen Sie den Löschvorgang mit **Ja**. Der Löschvorgang kann einige Minuten dauern.
-
 
 ## <a name="next-steps"></a>Nächste Schritte
 Nachdem Sie Windows AutoPilot für registrierte Windows 10-Geräte konfiguriert haben, erfahren Sie mehr über die Verwaltung dieser Geräte. Weitere Informationen finden Sie unter [Was ist die Microsoft Intune-Geräteverwaltung?](https://docs.microsoft.com/intune/device-management).
