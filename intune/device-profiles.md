@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2018
+ms.date: 07/25/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f241c5bece72b44a6bd3c9047b5997bcd8879ec5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
+ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905188"
+ms.lasthandoff: 07/30/2018
+ms.locfileid: "39335825"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Was sind Microsoft Intune Geräteprofile?
 
@@ -32,7 +32,7 @@ Microsoft Intune umfasst Einstellungen und Features, die Sie auf unterschiedlich
 
 Dieser Artikel enthält eine Übersicht über die verschiedenen Profile, die Sie für Ihre Geräte erstellen können. Verwenden Sie diese Profile, um Features auf den Geräten zuzulassen oder zu verhindern.
 
-## <a name="before-you-begin"></a>Vorbereitungen
+## <a name="before-you-begin"></a>Vorbereitung
 Um die verfügbaren Features anzuzeigen, öffnen Sie zunächst das [Azure-Portal](https://portal.azure.com) und anschließend Ihre Intune-Ressource. 
 
 **Gerätekonfiguration** umfasst folgende Optionen:
@@ -87,7 +87,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 - Android
 - iOS
-- Windows Phone 8.1
+- Windows Phone 8.1
 - Windows 10
 
 ## <a name="vpn"></a>VPN
@@ -100,8 +100,8 @@ Dieses Features unterstützt folgende Betriebssysteme:
 - Android
 - iOS
 - macOS
-- Windows Phone 8.1
-- Windows 8,1
+- Windows Phone 8.1
+- Windows 8.1
 - Windows 10
 
 ## <a name="wi-fi"></a>WLAN
@@ -113,6 +113,13 @@ Dieses Features unterstützt folgende Betriebssysteme:
 - iOS
 - macOS
 - Windows 8.1 (nur Import)
+
+## <a name="esim-cellular---public-preview"></a>eSIM-Mobiltelefone: Public Preview
+
+Mithilfe von [eSIM-Mobilfunkprofilen](esim-device-configuration.md) können Sie Tarife für Mobilfunkdaten auf Ihre verwalteten Geräten für den Zugriff auf das Internet und auf Daten konfigurieren.  Sobald Sie Aktivierungscodes von Ihrem Mobilfunkanbieter erhalten haben, können Sie Intune zum Importieren dieser Codes verwenden und Ihren auf eSIM ausgelegten Geräten zuweisen.
+
+Dieses Features unterstützt folgende Betriebssysteme:
+- Windows 10 Fall Creators Update und höher
 
 ## <a name="education"></a>Education
 Mit den [Education settings - Windows 10](education-settings-configure.md) (Education-Einstellungen: Windows 10) können Sie Optionen für die [Take a Test-Windows-App](https://education.microsoft.com/gettrained/win10takeatest) konfigurieren. Wenn Sie diese Optionen konfigurieren, können keine anderen Apps auf dem Gerät ausgeführt werden, bis der Test abgeschlossen ist.
@@ -138,8 +145,8 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 - Android
 - iOS
-- Windows Phone 8.1
-- Windows 8,1
+- Windows Phone 8.1
+- Windows 8.1
 - Windows 10
 
 ## <a name="windows-information-protection-profile"></a>WIP-Profil (Windows Information Protection)
@@ -156,7 +163,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 - Android
 - iOS
 - macOS
-- Windows Phone 8.1
+- Windows Phone 8.1
 
 ## <a name="manage-and-troubleshoot"></a>Verwaltung und Problembehandlung
 
