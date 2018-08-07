@@ -1,27 +1,27 @@
 ---
 title: Kioskeinstellungen für Windows 10 in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: In diesem Artikel lernen Sie die Microsoft Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Windows 10-Geräten kennen.
+description: Konfigurieren Sie Ihre Windows 10-Geräte (und höher) als Single- und Multi-App-Kiosks, und passen Sie das Startmenü an, indem Sie Apps und eine Taskleiste hinzufügen und einen Webbrowser konfigurieren. Konfigurieren Sie außerdem Windows Holographic for Business-Geräte als Multi-App-Kiosks in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/24/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 897ff48253961d6e1aa83bf36113c362d4548fbf
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 6f10e7bb7a2e7c5e1d0e8b27517a62454e8bd630
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745147"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321696"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Kioskeinstellungen für Windows 10 und höher in Intune
 
-Mit Kioskprofilen können Sie Windows 10-Geräte so konfigurieren, dass sie eine oder mehrere Apps ausführen. Wenn Sie ein Kioskprofil konfigurieren, können Sie u.a. festlegen, ob ein Startmenü angezeigt und ob ein Webbrowser installiert wird.
+Mit Kioskprofilen können Sie Windows 10-Geräte so konfigurieren, dass sie entweder eine oder mehrere Apps ausführen. Wenn Sie ein Kioskprofil erstellen, können Sie u.a. festlegen, ob ein Startmenü angezeigt oder ein Webbrowser installiert wird.
 
 ## <a name="kiosk-settings"></a>Kioskeinstellungen
 
@@ -29,9 +29,9 @@ Mit Kioskprofilen können Sie Windows 10-Geräte so konfigurieren, dass sie eine
 2. Geben Sie einen **Kioskkonfigurationsnamen** für Ihren Kiosk ein. Dieser Name gibt eine Anwendungsgruppe, das Layout dieser Anwendungen im Startmenü und die Benutzer an, denen diese Kioskkonfiguration zugewiesen ist.
 3. Wählen Sie den **Kioskmodus** aus. **Kioskmodus:** Gibt den Typ des Kioskmodus an, der von der Richtlinie unterstützt wird. Zu den Optionen gehören:
 
-  - **Nicht konfiguriert** (Standard): Die Richtlinie aktiviert keinen Kioskmodus.
-  - **Kiosk mit einzelner Vollbild-App:** Das Profil lässt die Ausführung eines einzelnen Benutzerkontos auf dem Gerät zu und legt es auf eine einzelne UWP-App fest. Wenn sich der Benutzer anmeldet, wird so eine bestimmte App gestartet. Dieser Modus hindert den Benutzer auch daran, neue Apps zu öffnen oder die App zu ändern, die ausgeführt wird.
-  - **Kiosk mit mehreren Apps:** Das Profil lässt die Ausführung mehrerer UWP-Apps bzw. Win32-Apps auf dem Gerät zu. Sie können unterschiedlichen Benutzerkonten unterschiedliche Apps zuweisen. Es sind nur die Apps, die Sie hinzufügen, für den Benutzer verfügbar. Der Vorteil eines Kiosks mit mehreren Apps oder eines Geräts mit festem Zweck ist ein leicht verständlicher Prozess für die Benutzer, da diese nur auf die Apps zugreifen, die sie benötigen. Apps, die sie nicht benötigen, werden aus der Ansicht entfernt.
+    - **Nicht konfiguriert** (Standard): Die Richtlinie aktiviert den Kioskmodus nicht.
+    - **Kiosk mit einzelner Vollbild-App:** Das Profil lässt die Ausführung eines einzelnen Benutzerkontos auf dem Gerät zu und legt es auf eine einzelne UWP-App fest. Wenn sich der Benutzer anmeldet, wird so eine bestimmte App gestartet. Dieser Modus hindert den Benutzer auch daran, neue Apps zu öffnen oder die App zu ändern, die ausgeführt wird.
+    - **Kiosk mit mehreren Apps:** Das Profil lässt die Ausführung mehrerer UWP-Apps bzw. Win32-Apps auf dem Gerät zu. Sie können unterschiedlichen Benutzerkonten unterschiedliche Apps zuweisen. Es sind nur die Apps, die Sie hinzufügen, für den Benutzer verfügbar. Der Vorteil eines Kiosks mit mehreren Apps oder eines Geräts mit festem Zweck ist ein leicht verständlicher Prozess für die Benutzer, da diese nur auf die Apps zugreifen, die sie benötigen. Apps, die sie nicht benötigen, werden aus der Ansicht entfernt.
 
 #### <a name="single-full-screen-app-kiosks"></a>Kiosk mit einzelner Vollbild-App
 Legen Sie folgende Einstellungen fest:
@@ -70,21 +70,51 @@ Mit diesen Einstellungen können Sie die Webbrowser-App im Kiosk steuern. Achten
 
 1. Legen Sie folgende Einstellungen fest:
 
-  - **Standard-URL der Startseite:** Geben Sie die Standard-URL ein, die im Webbrowser geöffnet wird, wenn der Browser geöffnet oder neu gestartet wird.
+    - **Standard-URL der Startseite:** Geben Sie die Standard-URL ein, die im Webbrowser geöffnet wird, wenn der Browser geöffnet oder neu gestartet wird.
 
-  - **Startschaltfläche anzeigen:** Anzeigen (**Erforderlich**) oder Verbergen (**Nicht konfiguriert**) der Startschaltfläche des Kioskbrowsers. Standardmäßig ist die Schaltfläche nicht konfiguriert.
+    - **Startschaltfläche** Zeigen (**Zulassen**) Sie die Startschaltfläche des Kioskbrowsers an, oder verbergen Sie diese (**Nicht konfiguriert**). Standardmäßig ist die Schaltfläche nicht konfiguriert.
 
-  - **Navigationsschaltflächen anzeigen:** Anzeigen (**Erforderlich**) oder Verbergen (**Nicht konfiguriert**) der Schaltflächen „Weiter“ und „Zurück“. Standardmäßig sind die Navigationsschaltflächen nicht konfiguriert.
+    - **Navigationsschaltfläche:** Zeigen (**Zulassen**) Sie die Schaltflächen „Weiter“ und „Zurück“ an, oder verbergen Sie diese (**Nicht konfiguriert**). Standardmäßig sind die Navigationsschaltflächen nicht konfiguriert.
 
-  - **Refresh browser when user exceeds idle time limit** (Browser aktualisieren, wenn der Benutzer die zulässige Leerlaufzeit überschreitet): Geben Sie die zulässige Leerlaufzeit einer Sitzung in Minuten ein, nach der der Kioskbrowser aktualisiert wird. Der Wert ist eine ganze Zahl zwischen einer und 1440 Minuten. Standardmäßig ist der Wert leer, d.h., es gibt kein Leerlauftimeout.
+    - **Schaltfläche „Sitzung beenden“**: Zeigen (**Zulassen**) Sie die Schaltfläche „Sitzung beenden“ an, oder verbergen Sie diese (**Nicht konfiguriert**). Wenn die Schaltfläche angezeigt wird, tippt der Benutzer darauf, und die App fragt, ob die Sitzung beendet werden soll. Wenn dies bestätigt wird, löscht der Browser alle Browserdaten (z.B. Cookies und Cache) und navigiert zurück zur Standard-URL. Standardmäßig ist die Schaltfläche nicht konfiguriert. 
 
-  - **Blockierte Websites:** Eine Liste der URLs blockierter Websites (Platzhalter werden unterstützt). Verwenden Sie diese Einstellung, um zu verhindern, dass bestimmte Websites im Browser geöffnet werden. Sie können auch eine CSV-Datei **importieren**, die eine Liste enthält. Alternativ können Sie eine CSV-Datei erstellen (**Exportieren**), die von Ihnen hinzugefügt Websites enthält.
+    - **Refresh browser when user exceeds idle time limit** (Browser aktualisieren, wenn der Benutzer die zulässige Leerlaufzeit überschreitet): Geben Sie die zulässige Leerlaufzeit einer Sitzung in Minuten ein, nach der der Kioskbrowser aktualisiert wird. Der Wert ist eine ganze Zahl zwischen einer und 1440 Minuten. Standardmäßig ist der Wert leer, d.h., es gibt kein Leerlauftimeout.
 
-  - **Websiteausnahmen:** Eine Liste mit URLs, die von den blockierten Websites ausgenommen sind (Platzhalter werden unterstützt). Verwenden Sie diese Einstellung, um dem Browser das Öffnen bestimmter Websites zu gestatten. Diese Ausnahmen sind ein Teil der blockierten URLs. Wenn sich eine URL sowohl in der Liste der blockierten Websites als auch in der Liste der Websiteausnahmen befindet, gilt die Ausnahme.
+    - **Blockierte Websites:** Eine Liste der URLs blockierter Websites (Platzhalter werden unterstützt). Verwenden Sie diese Einstellung, um zu verhindern, dass bestimmte Websites im Browser geöffnet werden. Sie können auch eine CSV-Datei **importieren**, die eine Liste enthält. Alternativ können Sie eine CSV-Datei erstellen (**Exportieren**), die von Ihnen hinzugefügt Websites enthält.
+
+    - **Websiteausnahmen:** Eine Liste mit URLs, die von den blockierten Websites ausgenommen sind (Platzhalter werden unterstützt). Verwenden Sie diese Einstellung, um dem Browser das Öffnen bestimmter Websites zu gestatten. Diese Ausnahmen sind ein Teil der blockierten URLs. Wenn sich eine URL sowohl in der Liste der blockierten Websites als auch in der Liste der Websiteausnahmen befindet, gilt die Ausnahme.
 
     Sie können auch eine CSV-Datei **importieren**, die eine Liste enthält. Alternativ können Sie eine CSV-Datei erstellen (**Exportieren**), die von Ihnen hinzugefügt Websites enthält.
 
 2. Klicken Sie auf **OK**, um die Änderungen zu speichern.
+
+## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
+
+Sie können Windows Holographic for Business-Geräte so konfigurieren, dass sie im Single-App- oder im Multi-App-Kioskmodus ausgeführt werden. 
+
+#### <a name="single-full-screen-app-kiosks"></a>Kiosk mit einzelner Vollbild-App
+Legen Sie folgende Einstellungen fest:
+
+- **Bezeichner der UWP-App:** Geben Sie die **Modell-ID des Anwendungsbenutzers (AUMID)** der Kiosk-App ein. Alternativ können Sie eine vorhandene verwaltete App auswählen, die Sie über [Mobile Apps](apps-add.md) hinzugefügt haben.
+
+    Weitere Informationen zum Abrufen der ID finden Sie unter [Find the Application User Model ID of an installed app (Ermitteln der Anwendungsbenutzer-ID einer installierten App)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+
+- **Typ des Benutzerkontos**: Klicken Sie auf **Lokales Benutzerkonto**, um das (auf das Gerät bezogene) lokale Benutzerkonto oder die Anmeldeinformationen des Microsoft-Kontos anzugeben, das der Kiosk-App zugeordnet ist. Der Typ **Autologon** wird unter Windows Holographic for Business nicht unterstützt.
+
+#### <a name="multi-app-kiosks"></a>Kiosks für mehrere Apps
+Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. Diese Apps sind die einzigen Apps, die der Benutzer öffnen kann.
+
+Legen Sie folgende Einstellungen fest:
+
+- **Verwaltete Apps hinzufügen:** Wählen Sie eine vorhandene verwaltete App aus, die Sie über [Mobile Apps in Intune](apps-add.md) hinzugefügt haben.
+- **Add app by AUMID** (App nach AUMID hinzufügen): Geben Sie die [AUMID der App](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) ein (UWP-Apps).
+- **Layout des Startmenüs:** Geben Sie eine XML-Datei ein, die beschreibt, wie die Apps im Startmenü dargestellt werden (u.a. die Reihenfolge der Apps). [Startlayout anpassen und exportieren](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens): Diese Option umfasst eine Anleitung und eine XML-Datei für Windows Holographic for Business-Geräte.
+- **Typ des Benutzerkontos:** Fügen Sie mindestens ein Benutzerkonto hinzu, das die von Ihnen hinzugefügten Apps verwenden kann. Folgende Optionen werden unterstützt: 
+  - **HoloLens-Besucher**: Beim Besucherkonto handelt es sich um ein Gastkonto, für das weder Anmeldeinformationen noch eine Authentifizierung erforderlich sind. Weitere Informationen dazu finden Sie unter [shared PC mode concepts (Konzepte für den Modus freigegebener Computer)](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
+  - **Azure AD-Benutzer**: Bei dieser Option sind Benutzeranmeldeinformationen für die Anmeldung auf dem Gerät erforderlich. Verwenden Sie das Format `domain\user@tenant.com`.
+  - **Lokale Benutzerkonten**: Bei dieser Option sind Benutzeranmeldeinformationen für die Anmeldung auf dem Gerät erforderlich. 
+
+Wenn sich ein Benutzer mit einem Konto anmeldet, sind nur die in der Konfiguration definierten Apps verfügbar.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Zuweisen von Profilen](device-profile-assign.md) und [Überwachen von Profilen](device-profile-monitor.md)

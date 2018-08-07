@@ -1,41 +1,46 @@
 ---
-title: Importieren von WLAN-Einstellungen für Windows 8.1 und höher
-titleSuffix: Microsoft Intune
-description: Importieren von WLAN-Einstellungen von Windows in ein Intune-WLAN-Profil.
+title: 'Importieren von WLAN-Einstellungen für Windows-Geräte in Microsoft Intune: Azure | Microsoft-Dokumentation'
+description: Exportieren Sie WLAN-Einstellungen als XML-Datei von einem Windows-Gerät mithilfe von „netsh wlan“. Importieren Sie anschließend diese Datei in Intune, um ein WLAN-Profil für Geräte zu erstellen, auf denen Windows 8.1, Windows 10 oder Windows Holographic for Business ausgeführt wird.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 07/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 157416738e4607d5022f1c3c7ed8251a8e32fe3e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 6ce5cdd9509ed3407491714ccfa853613eb43973
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834015"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321134"
 ---
-# <a name="import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Importieren von WLAN-Einstellungen für Geräte mit Windows 8.1 und höher in Microsoft Intune
+# <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Importieren von WLAN-Einstellungen für Windows-Geräte in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Für Geräte mit Windows 8.1, Windows 10 (Desktop oder Mobile) oder Windows Holographic for Business können Sie ein WLAN-Konfigurationsprofil importieren, das zuvor in eine Datei exportiert wurde.
+Für Geräte, die Windows ausführen, können Sie ein WLAN-Konfigurationsprofil aus einer zuvor exportierten Datei importieren. **Für Geräte, auf denen Windows 10 und höher ausgeführt wird, können Sie direkt in Intune [ein WLAN-Profil erstellen](wi-fi-settings-windows.md)**.
+
+Gilt für:  
+- Windows 8.1 und höher
+- Windows 10 und höher
+- Windows 10 Desktop oder Mobile
+- Windows Holographic for Business
 
 ## <a name="export-wi-fi-settings-from-a-windows-device"></a>Exportieren von WLAN-Einstellungen von einem Windows-Gerät
 
-In Windows können Sie WLAN-Profile mit dem Hilfsprogramm **netsh wlan** in eine XML-Datei exportieren, die von Intune gelesen werden kann. Der Schlüssel muss in Nur-Text exportiert werden, damit das Profil erfolgreich verwendet werden kann.
+In Windows können Sie WLAN-Profile mit **netsh wlan** in eine XML-Datei exportieren, die von Intune gelesen werden kann. Der Schlüssel muss in Nur-Text exportiert werden, damit das Profil erfolgreich verwendet werden kann.
 
 Führen Sie auf einem Windows-Computer, auf dem das erforderliche WLAN-Profil bereits installiert ist, die folgenden Schritte aus:
 
 1. Erstellen Sie einen lokalen Ordner für die exportierten WLAN-Profile, z.B. **C:\WiFi**.
 2. Öffnen Sie eine Eingabeaufforderung als Administrator.
 3. Führen Sie den Befehl `netsh wlan show profiles` aus, und notieren Sie sich den Namen des Profils, das Sie exportieren möchten. In diesem Beispiel lautet der Profilname **WiFiName**.
-4. Führen Sie den Befehl `netsh wlan export profile name="ProfileName" folder=c:\Wifi` aus. Dadurch wird im Zielordner ein WLAN-Profil namens **Wi-Fi-WiFiName.xml** erstellt.
+4. Führen Sie den Befehl `netsh wlan export profile name="ProfileName" folder=c:\Wifi` aus. Dadurch wird im Zielordner ein WLAN-Profil mit dem Namen **Wi-Fi-WiFiName.xml** erstellt.
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Importieren der WLAN-Einstellungen in Intune
 

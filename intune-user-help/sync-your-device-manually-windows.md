@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/08/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: aa556b2939986759aa92e63750fd161c05afbc38
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
+ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "34048018"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39236054"
 ---
 # <a name="sync-your-windows-device-manually"></a>Manuelles Synchronisieren des Windows-Geräts
 
@@ -40,7 +40,7 @@ Die Funktionen der Unternehmensportal-App werden auf Windows 10-Geräten unterst
 * [Windows 10 Mobile](#windows-10-mobile)  
 * [Windows Phone 8.1](#windows-phone-81)    
 
-## <a name="sync-from-company-portal-app-for-windows"></a>Synchronisieren über die Unternehmensportal-App für Windows
+## <a name="sync-directly-from-company-portal-app-for-windows"></a>Direktes Synchronisieren über die Unternehmensportal-App für Windows
 Führen Sie die folgenden Schritte aus, um Windows 10-Geräte, auf denen Creators Update (Version 1703) oder höher ausgeführt wird, manuell zu synchronisieren.
 
 1.  Öffnen Sie die Unternehmensportal-App auf Ihrem Gerät.
@@ -49,7 +49,7 @@ Führen Sie die folgenden Schritte aus, um Windows 10-Geräte, auf denen Creator
 
     ![Screenshot der Startseite der Unternehmensportal-App, „Einstellungen“ hervorgehoben](./media/RS1_homePage_settings_04.png)  
     
-    ![Screenshot der Seite „Einstellungen“ der Unternehmensportal-App, Schaltfläche „Synchronisierung“ hervorgehoben](./media/RS1_settingspage_sync05.png)    
+    ![Screenshot der Seite „Einstellungen“ der Unternehmensportal-App, Schaltfläche „Synchronisierung“ hervorgehoben](./media/RS1_settingspage_sync05.png)  
 
 ## <a name="sync-from-settings-app"></a>Synchronisieren über die App „Einstellungen“ 
 Führen Sie die folgenden Schritte aus, um Ihre Microsoft HoloLens-, Windows 10 Desktop-, Windows 10 Mobile- oder Windows Phone 8.1-Geräte über die App „Einstellungen“ manuell zu synchronisieren.

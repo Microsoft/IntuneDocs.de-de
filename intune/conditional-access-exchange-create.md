@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fbe55be15df9755c109ec7e8e8e23db3c27931b0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 4fd82cf211360e77b17f8ea915c13719b8ab3408
+ms.sourcegitcommit: cd97505d6f5dc54db7f35a691376bcbf6f36ac9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905528"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39323241"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Erstellen einer Richtlinie für bedingten Zugriff auf eine lokale Installation von Exchange und auf das ältere Exchange Online Dedicated
 
@@ -29,7 +29,7 @@ In diesem Artikel wird dargestellt, wie Sie den bedingten Zugriff für eine loka
 
 Wenn Sie über eine Exchange Online Dedicated-Umgebung verfügen und herausfinden müssen, ob es sich um die neue oder die ältere Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer. Um den E-Mail-Zugriff auf lokales Exchange oder Ihre ältere Exchange Online Dedicated-Umgebung zu steuern, konfigurieren Sie den bedingten Zugriff für lokales Exchange in Intune.
 
-## <a name="before-you-begin"></a>Vorbereitungen
+## <a name="before-you-begin"></a>Vorbereitung
 
 Bevor Sie den bedingten Zugriff konfigurieren können, müssen Sie Folgendes überprüfen:
 
@@ -63,7 +63,7 @@ Bevor Sie den bedingten Zugriff konfigurieren können, müssen Sie Folgendes üb
 - Windows Phone 8.1 und höher
 - Systemeigene E-Mail-App unter iOS.
 - EAS-E-Mail-Clients wie Gmail unter Android 4 oder höher.
-- EAS-E-Mail-Clients für **Android-Arbeitsprofilgeräte:** Nur **Gmail**- und **Nine Work**-Apps im **Arbeitsprofil** werden auf Android-Arbeitsprofilgeräten unterstützt. Damit der bedingte Zugriff mit Android-Arbeitsprofilen funktioniert, müssen Sie ein E-Mail-Profil für die Gmail- oder Nine Work-App sowie diese Apps als erforderliche Installation bereitstellen.
+- EAS-E-Mail-Clients für **Android-Arbeitsprofilgeräte:** Nur **Gmail** und **Nine Work for Android Enterprise** im **Arbeitsprofil** werden auf Android-Arbeitsprofilgeräten unterstützt. Damit der bedingte Zugriff mit Android-Arbeitsprofilen funktioniert, müssen Sie ein E-Mail-Profil für die Gmail- oder Nine Work for Android Enterprise-App sowie diese Apps als erforderliche Installation bereitstellen.
 
 > [!NOTE]
 > Microsoft Outlook-App unter Android und iOS wird nicht unterstützt. 

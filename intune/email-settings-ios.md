@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a231adf4e1f5687bc88c8c9b15241d3f89e711d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2d2fc7f697d03c1ffcb952cd30e29f4959f2b7e9
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905336"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321168"
 ---
 # <a name="email-profile-settings-for-ios-devices---intune"></a>Einstellungen für das E-Mail-Profil für iOS-Geräte: Intune
 
@@ -44,13 +44,13 @@ Verwenden Sie die E-Mail-Profileinstellungen, um Ihre iOS-Geräte zu konfigurier
 - **E-Mail-Adressattribut aus AAD:** Die Art der Generierung der E-Mail-Adresse für den Benutzer Wählen Sie **Primäre SMTP-Adresse** (`user1@contoso.com`) aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname** (`user1@contoso.com` oder `user1`), um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden.
 - **Authentifizierungsmethode:** Wählen Sie entweder **Benutzername und Kennwort** oder **Zertifikate** als Authentifizierungsmethode aus, die vom E-Mail-Profil verwendet werden soll. Die mehrstufige Authentifizierung mit Azure wird nicht unterstützt.
   - Wenn Sie **Zertifikat** ausgewählt haben, wählen Sie ein zuvor erstelltes SCEP- oder PKCS-Clientzertifikatprofil aus, das zur Authentifizierung der Exchange-Verbindung verwendet werden soll.
-- **SSL:** Verwenden Sie SSL-Kommunikation (Secure Sockets Layer) beim Senden und Empfangen von E-Mails sowie bei der Kommunikation mit dem Exchange-Server.
-- **S/MIME:** Ausgehende E-Mails werden mithilfe der S/MIME-Signatur gesendet.
-  - Wenn Sie **Zertifikat** ausgewählt haben, wählen Sie ein PKCS-Clientzertifikatprofil aus, das Sie zur Authentifizierung der Exchange-Verbindung zuvor erstellt haben.
+- **SSL:** **Aktivieren** Sie die SSL-Kommunikation (Secure Sockets Layer) beim Senden und Empfangen von E-Mails sowie bei der Kommunikation mit dem Exchange-Server.
+- **S/MIME:** **Aktivieren Sie S/MIME**, um ausgehende E-Mails mit der S/MIME-Signatur zu senden. Wenn diese Option aktiviert ist, können Sie außerdem E-Mails an Empfänger verschlüsseln, die verschlüsselte E-Mails empfangen können, sowie empfangene E-Mails entschlüsseln.
+  - Wenn Sie **Zertifikat** ausgewählt haben, wählen Sie ein PKCS-Clientzertifikatprofil aus, das Sie zuvor zur Authentifizierung der Exchange-Verbindung erstellt haben, und bzw. oder verschlüsseln Sie Ihren E-Mail-Verkehr.
 - **Anzahl der zu synchronisierenden E-Mails:** Wählen Sie die Anzahl an Tagen von E-Mails, die Sie synchronisieren möchten. Oder wählen Sie **Unbegrenzt**, um alle verfügbaren E-Mails zu synchronisieren.
-- **Verschieben von Nachrichten in andere E-Mail-Konten zulassen:** Hiermit können Benutzer E-Mail-Nachrichten zwischen verschiedenen Konten verschieben, die auf ihrem Gerät konfiguriert sind.
-- **E-Mail-Versand aus Drittanbieteranwendungen zulassen**: Erlaubt dem Benutzer die Auswahl dieses Profils als das Standardkonto für das Senden von E-Mails und erlaubt Drittanbieteranwendungen das Öffnen von E-Mails in der nativen E-Mail-App, um beispielsweise Dateien an E-Mails anzuhängen.
-- **Kürzlich verwendete E-Mail-Adressen synchronisieren:** Erlaubt Benutzern die Liste der E-Mail-Adressen, die vor Kurzem auf dem Gerät verwendet wurden, mit dem Server zu synchronisieren.
+- **Verschieben von Nachrichten in andere E-Mail-Konten zulassen:** Wenn Sie diese Option **aktivieren**, können Benutzer E-Mail-Nachrichten zwischen verschiedenen Konten verschieben, die auf ihrem Gerät konfiguriert sind.
+- **E-Mail-Versand aus Drittanbieteranwendungen zulassen**: Wenn diese Option **aktiviert** ist, kann der Benutzer dieses Profil als Standardkonto für das Senden von E-Mails auswählen und zulassen, dass Drittanbieteranwendungen E-Mails in der nativen E-Mail-App öffnen, um beispielsweise Dateien an E-Mails anzuhängen.
+- **Kürzlich verwendete E-Mail-Adressen synchronisieren:** Wenn diese Option **aktiviert** ist, können Benutzer die Liste der E-Mail-Adressen, die vor Kurzem auf dem Gerät verwendet wurden, mit dem Server synchronisieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Konfigurieren von E-Mail-Einstellungen in Intune](email-settings-configure.md)

@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbd802b5f0482fc5dbaa801308447e2f8061189
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224934"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254534"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Vorbereiten von iOS-Apps für App-Schutzrichtlinien mit dem Intune App Wrapping Tool
 
@@ -339,7 +339,7 @@ Vor dem Umschließen Ihrer App können Sie *Berechtigungen* erteilen, um der App
 
     b.  Aktivieren Sie die entsprechenden Funktionen. Ausführlichere Informationen zu jeder einzelnen Funktion und wie Sie die richtigen Werte bestimmen, finden Sie unter [Hinzufügen von Funktionen](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in der iOS-Entwicklerbibliothek.
 
-    c.  Notieren Sie sich alle IDs, die Sie während des Prozesses erstellt haben.
+    c.  Notieren Sie sich alle IDs, die Sie während des Prozesses erstellt haben. Diese werden möglicherweise auch als `AppIdentifierPrefix`-Werte bezeichnet.
 
     d.  Erstellen und signieren Sie Ihre App, die umschlossen werden soll.
 
@@ -349,7 +349,7 @@ Vor dem Umschließen Ihrer App können Sie *Berechtigungen* erteilen, um der App
 
     b.  Erstellen Sie ein Bereitstellungsprofil für Ihre App. Anleitungen hierzu finden Sie unter [Abrufen der erforderlichen Komponenten für das Intune App Wrapping Tool für iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
 
-    c.  Aktivieren Sie in Ihrem Bereitstellungsprofil dieselben Berechtigungen, die Sie in Ihrer App haben. Sie müssen dieselben IDs angeben, die Sie während der Entwicklung Ihrer App angegeben haben.
+    c.  Aktivieren Sie in Ihrem Bereitstellungsprofil dieselben Berechtigungen, die Sie in Ihrer App haben. Sie müssen dieselben IDs (`AppIdentifierPrefix`-Werte) angeben, die Sie bei der Entwicklung Ihrer App angegeben haben. 
 
     d.  Schließen Sie den Bereitstellungsprofil-Assistenten ab, und laden Sie Ihre Datei herunter.
 

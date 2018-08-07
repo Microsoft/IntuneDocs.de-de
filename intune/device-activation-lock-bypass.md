@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2a8c14e523d33c9e0994134ff1ef468b290b3992
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
+ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022508"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39356572"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Umgehen der Aktivierungssperre auf überwachten iOS-Geräten mit Intune
 
@@ -66,15 +66,23 @@ Bevor Sie die Aktivierungssperre auf Geräten umgehen können, müssen Sie sie a
 ## <a name="how-to-use-activation-lock-bypass"></a>Verwenden der Umgehung der Aktivierungssperre
 
 >[!IMPORTANT]
->Nachdem die Aktivierungssperre auf einem Gerät umgangen wurde, wird automatisch eine neue Aktivierungssperre angewendet, wenn die App „Mein iPhone suchen“ geöffnet wird. Aus diesem Grund **muss das Gerät physisch verfügbar sein, bevor Sie dieses Verfahren ausführen**.
+>Nachdem die Aktivierungssperre auf einem Gerät umgangen wurde, wird automatisch eine neue Aktivierungssperre angewendet, wenn die App „Mein iPhone suchen“ gestartet wird. Aus diesem Grund **muss das Gerät physisch verfügbar sein, bevor Sie dieses Verfahren ausführen**.
 
-Die Intune-Remotegeräteaktion **Aktivierungssperre umgehen** entfernt die Aktivierungssperre auf einem iOS-Gerät, ohne dass die Apple-ID und das Kennwort des Benutzers angegeben werden muss. Nachdem Sie die Aktivierungssperre umgangen haben, aktiviert das Gerät die Aktivierungssperre erneut, wenn die App „Mein iPhone suchen“ gestartet wird. Umgehen Sie die Aktivierungssperre nur, wenn Sie physischen Zugriff auf das Gerät haben.
+Die Intune-Remotegeräteaktion **Aktivierungssperre umgehen** entfernt die Aktivierungssperre von einem iOS-Gerät, ohne dass die Apple-ID und das Kennwort des Benutzers angegeben werden müssen. Nachdem Sie die Aktivierungssperre umgangen haben, aktiviert das Gerät die Aktivierungssperre erneut, wenn die App „Mein iPhone suchen“ gestartet wird. Umgehen Sie die Aktivierungssperre nur, wenn Sie direkten Zugriff auf das Gerät haben.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+2. Klicken Sie auf **Alle Dienste** > **Intune**.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.
 4. Wählen Sie auf dem Blatt **Geräte** die Option **Alle Geräte** aus.
-5. Wählen Sie aus der Liste der verwalteten Geräte ein überwachtes iOS-Gerät aus, wählen Sie **...Mehr** und dann die Remotegeräteaktion **Aktivierungssperre umgehen** aus.
+5. Wählen Sie sie aus der Liste mit von Ihnen verwalteten Geräten die Remotegeräteaktion **Aktivierungssperre umgehen** aus.
+6. Navigieren Sie zum Abschnitt „Hardware“, und kopieren Sie den Wert **Code zum Umgehen der Aktivierungssperre** unter **Bedingter Zugriff**.
+
+    >[!NOTE]
+    >Kopieren Sie den Umgehungscode, bevor Sie das Gerät auf die Werkseinstellungen zurücksetzen. Wenn Sie die Geräteeinstellungen zurücksetzen, bevor Sie den Code kopieren, wird dieser aus Azure entfernt.
+
+7.  Navigieren Sie zum Blatt **Geräteübersicht**, und klicken Sie auf **Zurücksetzung auf Werkseinstellungen**.
+8.  Nachdem das Gerät zurückgesetzt wurde, werden Sie aufgefordert, die *Apple-ID* und das *Kennwort* einzugeben. Lassen Sie das Feld *ID* leer, und geben Sie den **Umgehungscode** für das *Kennwort* ein. Dadurch wird das Konto von dem Gerät entfernt. 
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 

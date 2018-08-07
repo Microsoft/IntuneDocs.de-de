@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: 0ada3be91c3b2c15e33e51449678212286362dbf
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964707"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321185"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment
 
@@ -32,9 +32,8 @@ Um die Intune-Registrierung mit Samsung KME zu aktivieren, müssen Sie sowohl da
     1. [Erstellen eines MDM-Profils](#create-mdm-profile)
     2. [Hinzufügen von Geräten](#add-devices)
     3. [Zuweisen eines MDM-Profils für die Geräte](#assign-an-mdm-profile-to-devices)
-2. Im Azure-Portal: [Identifizieren Sie Geräte als unternehmenseigen](#identify-devices-as-corporate-owned).
-3. Im Knox-Portal: [Konfigurieren Sie die Endbenutzeranmeldung](#configure-how-end-users-sign-in).
-4. [Verteilen Sie die Geräte](#distribute-devices).
+2. Im Knox-Portal: [Konfigurieren Sie die Endbenutzeranmeldung](#configure-how-end-users-sign-in).
+3. [Verteilen Sie die Geräte](#distribute-devices).
 
 
 Beim Erwerb von Geräten von autorisierten Fachhändlern, die am Knox Deployment Program teilnehmen, wird dem Knox-Portal automatisch eine Liste der Geräte-IDs (Seriennummern und IMEIs) hinzugefügt.
@@ -78,22 +77,6 @@ Damit Sie Geräten MDM-Profile zuweisen können, müssen dem Knox-Portal mithilf
 
 ## <a name="assign-an-mdm-profile-to-devices"></a>Zuweisen eines MDM-Profils für Geräte
 Sie müssen hinzugefügten Geräten im Knox-Portal ein MDM-Profil zuweisen, bevor sie registriert werden können. [Rufen Sie den Samsung Knox Enrollment User Guide auf, um Informationen zur Gerätekonfiguration zu erhalten](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm).
-
-## <a name="identify-devices-as-corporate-owned"></a>Identifizieren von Geräten als unternehmenseigen
-Sie können mit KME registrierte Geräte als unternehmenseigen identifizieren. Dies muss vor der Registrierung der Geräte erfolgen. Dadurch können Sie zusätzliche Verwaltungsaufgaben ausführen und zusätzliche Informationen sammeln, wie etwa die vollständige Telefonnummer und den Bestand von Apps.
-
-Führen Sie die folgenden Schritte aus, um Geräte als unternehmenseigen zu identifizieren:
-
-1. Exportieren Sie die Liste der Geräte aus dem Knox-Portal als CSV-Datei.
-
-2. Formatieren Sie die CSV-Datei mit einer IMEI oder Seriennummer wie [hier](https://docs.microsoft.com/en-us/intune/corporate-identifiers-add#identify-corporate-owned-devices-with-imei-or-serial-number) angegeben.
-
-3. Laden Sie im Azure-Portal die CSV-Datei nach **Geräteregistrierung** > **Bezeichner von Unternehmensgeräten** > **Hinzufügen** hoch.
-
-Jetzt werden identifizierte Geräte, die registriert werden, als unternehmenseigen gekennzeichnet.
-
-> [!NOTE]
->Intune weist Geräten, die mit dem [Geräteregistrierungs-Manager](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll)-Konto registriert wurden, automatisch den Status „Unternehmenseigen“ zu.
 
 ## <a name="configure-how-end-users-sign-in"></a>Konfigurieren der Endbenutzeranmeldung
 

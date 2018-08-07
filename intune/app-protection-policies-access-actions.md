@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/17/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: cdd3484f002a3719410d4f801073914e7f58fc4c
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138695"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254483"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Selektives Löschen von Daten mithilfe von Zugriffsaktionen für App-Schutzrichtlinien in Intune
 
@@ -44,7 +44,7 @@ Sie können diese Einstellungen verwenden, um die Unternehmensdaten bei Nichtkon
 8. Wählen Sie die **Aktion** aus, die Benutzer ausführen sollen, wenn Sie Ihre Anforderungen nicht erfüllen. In einigen Fällen können mehrere Aktionen für eine einzelne Einstellung konfiguriert werden. Weitere Informationen finden Sie unter [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md).
 
 >[!NOTE]
-> Geben Sie eine durch Semikolons getrennte Liste der Modellbezeichner ein, um die **Gerätemodelle**-Einstellung zu verwenden. 
+> Geben Sie eine durch Semikolons getrennte Liste der Modellbezeichner ein, um die Einstellung **Device model(s) or Device manufacturer(s)** (Gerätemodelle oder Gerätehersteller) zu verwenden. Vermeiden Sie Leerzeichen in Listen mit mehreren Werten. Bei den Werten wird nicht zwischen Groß- und Kleinschreibung unterschieden. 
 
 ## <a name="policy-settings"></a>Richtlinieneinstellungen 
 
@@ -83,7 +83,10 @@ Für Android können Sie mithilfe der Dropdownliste **Einstellung** Aktionen fü
 -  Gerätehersteller
 
 Geben Sie eine durch Semikolons getrennte Liste der Android-Hersteller ein, um die Einstellung **Gerätehersteller** zu verwenden. Den Android-Gerätehersteller finden Sie in den Geräteeinstellungen.<br>
-Beispieleingabe: *Hersteller A; Hersteller B; Google* 
+Beispieleingabe: *Hersteller A; Hersteller B* 
+
+>[!NOTE]
+> Die folgenden Hersteller gelten für Geräte, auf denen Intune verwendet wird, als häufig verwendet und können eingegeben werden: Asus, Blackberry, Bq; Gionee, Google, Hmd global, Htc, Huawei, Infinix, Kyocera, Lemobile, Lenovo, Lge, Motorola, Oneplus, Oppo, Samsung, Sharp, Sony, Tecno, Vivo, Vodafone, Xiaomi, Zte und Zuk.
 
 Auf Endbenutzergeräten führt der Intune-Client Aktionen auf Grundlage eines einfachen Abgleichs der Zeichenfolgen der Gerätemodelle aus, die in Intune für Anwendungsschutzrichtlinien angegeben sind. Die Übereinstimmung hängt ausschließlich davon ab, was das Gerät meldet. Sie (der IT-Administrator) können sicherstellen, dass das gewünschte Verhalten eintritt, indem Sie diese Einstellung basierend auf mehreren Geräteherstellern und -modellen und für eine kleine Benutzergruppe testen. Der Standardwert lautet **Nicht konfiguriert**.<br>
 Legen Sie eine der folgenden Aktionen fest: 

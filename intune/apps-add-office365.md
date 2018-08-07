@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869371"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321474"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Zuweisen von Office 365-Apps zu Windows 10-Geräten mit Microsoft Intune
 
 Diese App erleichtert Ihnen die Zuweisung von Office 365-Apps zu Geräten, die Sie verwalten und auf denen Windows 10 ausgeführt wird. Sie können auch Apps für den Microsoft Project Online-Desktopclient und Microsoft Visio Pro für Office 365 installieren, wenn Sie über Lizenzen für sie verfügen. Die gewünschten Apps werden in der Intune-Konsole als einzelner Eintrag in der App-Liste angezeigt.
 
 
-## <a name="before-you-start"></a>Vorbereitungen
+## <a name="before-you-start"></a>Vorbereitung
 
 >[!IMPORTANT]
 >Diese Installationsmethode für Office wird nur unterstützt, wenn keine anderen Versionen von Microsoft Office auf dem Gerät installiert sind.
@@ -60,9 +60,6 @@ Wählen Sie die Office-Apps aus, die Sie den Geräten zuweisen möchten.
     Sie können zusätzlich Apps für den Microsoft Project Online-Desktopclient und Microsoft Visio Pro für Office 365 installieren, wenn Sie über Lizenzen für sie verfügen.
 3. Wählen Sie **OK** aus.
 
->[!IMPORTANT]
-> Nachdem Sie die App-Suite erstellt haben, können Sie ihre Eigenschaften nicht bearbeiten. Um unterschiedliche Eigenschaften zu konfigurieren, löschen Sie die App-Sammlung, und erstellen Sie eine neue.
-
 ## <a name="configure-app-information"></a>Konfigurieren von App-Informationen
 
 In diesem Schritt stellen Sie Informationen über die App-Suite bereit. Diese Informationen helfen Ihnen dabei, die App-Suite in Intune zu identifizieren. Außerdem können Benutzer sie im Unternehmensportal leichter finden.
@@ -89,17 +86,14 @@ In diesem Schritt konfigurieren Sie Installationsoptionen für die App-Sammlung.
 1. Wählen Sie im Bereich **App hinzufügen** die Option **Einstellungen der App-Suite** aus.
 2. Gehen Sie im Bereich **Einstellungen der App-Suite** folgendermaßen vor:
     - **Office-Version**: Wählen Sie aus, ob Sie die 32-Bit- oder die 64-Bit-Version von Office zuweisen möchten. Sie können die 32-Bit-Version sowohl auf 32-Bit- als auch auf 64-Bit-Geräten installieren. Die 64-Bit-Version lässt sich jedoch nur auf 64-Bit-Geräten installieren.
-    - **Updatekanal**: Wählen Sie aus, wie Office auf Geräten aktualisiert wird. Informationen zu den unterschiedlichen Updatekanälen finden Sie in der [Übersicht der Updatekanäle für Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Wählen Sie aus:
+    - **Updatekanal**: Wählen Sie aus, wie Office auf Geräten aktualisiert wird. Informationen zu den unterschiedlichen Updatekanälen finden Sie in der [Übersicht der Updatekanäle für Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Es stehen die folgenden Optionen zur Auswahl:
         - **Monatlich**
         - **Monatlich (Ziel)**
         - **Halbjährlich**
         - **Halbjährlich (Ziel)**
     - **Microsoft-Software-Lizenzbedingungen automatisch akzeptieren**: Wählen Sie diese Option aus, wenn Endbenutzer die Lizenzvereinbarung nicht akzeptieren müssen. Intune akzeptiert daraufhin die automatisch die Vereinbarung.
-    - **Aktivierung gemeinsam genutzter Computer**: Wählen Sie diese Option aus, wenn sich mehrere Benutzer einen Computer teilen. Weitere Informationen finden Sie in der Übersicht über die Aktivierung gemeinsam genutzter Computer für Office 365.
+    - **Aktivierung gemeinsam genutzter Computer**: Wählen Sie diese Option aus, wenn sich mehrere Benutzer einen Computer teilen. Weitere Informationen finden Sie in der [Übersicht über die Aktivierung gemeinsam genutzter Computer für Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Sprachen**: Office installiert automatisch alle unterstützen Sprachen, die mit Windows auf Endbenutzergeräten installiert werden. Wählen Sie diese Option, wen Sie zusätzliche Sprachen mit der App-Sammlung installieren möchten.
-
->[!IMPORTANT]
-> Nachdem Sie die App-Suite erstellt haben, können Sie ihre Eigenschaften nicht bearbeiten. Um unterschiedliche Eigenschaften zu konfigurieren, löschen Sie die App-Sammlung, und erstellen Sie eine neue.
 
 ## <a name="finish-up"></a>Fertig stellen
 
@@ -120,7 +114,7 @@ In den nachstehenden Tabellen sind die häufigsten Fehlercodes aufgeführt, die 
 |997|WIP|Installation|
 |0|Nach der Installation|Die Installation war erfolgreich|    
 |1603 (ERROR_INSTALL_FAILURE)|-|Alle Voraussetzungsüberprüfungen sind fehlgeschlagen, z.B.:<ul><li>SxS (Beim Installationsversuch war 2016 MSI installiert.)</li><li>Versionskonflikt</li><li>Andere</li></ul>|  
-|0x8000ffff (E_UNEXPECTED)|-|Beim Versuch, eine Deinstallation durchzuführen, war keine „Klick-und-Los“-Version von Office auf dem Computer vorhanden.|     
+|0x8000ffff (E_UNEXPECTED)|-|Beim Versuch, eine Deinstallation durchzuführen, war keine Klick-und-Los-Version von Office auf dem Computer vorhanden.|     
 |17002|-|Das Szenario (Installation) konnte nicht abgeschlossen werden. Mögliche Gründe:<ul><li>Die Installation wurde vom Benutzer abgebrochen.</li><li>Die Installation wurde von einer anderen Installation abgebrochen.</li><li>Fehlender Speicherplatz auf dem Datenträger während der Installation</li><li>Unbekannte Sprach-ID</li></ul>|
 |17004|-|Unbekannte SKUs|   
 
@@ -130,7 +124,7 @@ In den nachstehenden Tabellen sind die häufigsten Fehlercodes aufgeführt, die 
 |||||
 |-|-|-|-|
 |Szenario|Rückgabecode|Benutzeroberfläche|Hinweis|
-|Deinstallationsaufwand, wenn es keine aktive Klick-und-Los-Installation gibt|– 2147418113, 0x8000ffff oder 2147549183|Fehlercode: 30088-1008<br>Fehlercode: 30125-1011 (404)|Office-Bereitstellungstool|
+|Deinstallationsaufwand, wenn keine aktive Klick-und-Los-Installation vorhanden ist|– 2147418113, 0x8000ffff oder 2147549183|Fehlercode: 30088-1008<br>Fehlercode: 30125-1011 (404)|Office-Bereitstellungstool|
 |Installieren, wenn eine MSI-Version installiert wird|1603|-|Office-Bereitstellungstool|
 |Die Installation wurde vom Benutzer oder einer anderen Installation abgebrochen|17002|-|Klick-und-Los|
 |Versuch, eine 64-Bit-Version auf einem Gerät mit installierter 32-Bit-Version zu installieren|1603|-|Rückgabecode der Office-Bereitstellungstools|

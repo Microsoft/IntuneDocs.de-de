@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0152d0cb7af418b500c1ac5991f2356bd2e19965
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1b1f54486ab2c3d98e663cfddded346eb61662ae
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909081"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279422"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Verknüpfen Ihres Intune-Mandantenkontos mit Ihrem Android Enterprise-Konto
 
@@ -51,7 +51,7 @@ Verknüpfen Sie Ihr Intune-Mandantenkonto mit Ihrem Android Enterprise-Konto, um
 
 ## <a name="disconnect-your-android-enterprise-administrative-account"></a>Aufheben der Verknüpfung Ihres Android Enterprise-Verwaltungskontos
 
-Sie können die Registrierung und die Verwaltung von Android deaktivieren. Wenn Sie in der Intune-Administratorkonsole auf **Trennen** klicken, werden alle Android-Arbeitsprofilgeräte und -Kioskgeräte aus der Registrierung entfernt. Außerdem wird die Beziehung zwischen dem Android Enterprise-Konto und Intune entfernt.
+Sie können die Registrierung und die Verwaltung von Android deaktivieren. Dafür müssen Sie zunächst registrierte Android-Geräte mit Arbeitsprofilen außer Betrieb nehmen. Wenn Sie in der Intune-Administratorkonsole auf **Trennen** klicken, werden alle Android-Arbeitsprofilgeräte und -Kioskgeräte aus der Registrierung entfernt. Dadurch wird außerdem die Beziehung zwischen dem Android Enterprise-Konto und Intune entfernt.
 
 1. Wählen Sie als Intune-Administrator im [Azure-Portal](https://portal.azure.com) die Optionen **Alle Dienste** > **Überwachung + Verwaltung** > **Intune** aus.
 2. Klicken Sie auf **Geräteregistrierung** > **Android-Registrierung** > **Managed Google Play** > **Trennen**.

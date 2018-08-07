@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2018
+ms.date: 07/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3b3bfe76173eff76a3175952bef5c6e23ad5e429
-ms.sourcegitcommit: afda8a0fc0f615e976b18ddddf81d56d7ae3566e
+ms.openlocfilehash: c795acb5ca6590b165b89c3a974038069b1c56ef
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2018
-ms.locfileid: "36271540"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321508"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Konfigurieren und Verwenden Ihrer PKCS-Zertifikate mit Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Zertifikate werden verwendet, um den Zugriff auf Ihre Unternehmensressourcen (z.B. ein VPN- oder ein WLAN-Netzwerk) zu authentifizieren und zu sichern. In diesem Artikel wird erläutert, wie Sie ein PKCS-Zertifikat exportieren und anschließend dieses Zertifikat zu einem Intune-Profil hinzufügen. 
+Mit Zertifikaten wird der Zugriff auf Unternehmensressourcen (z.B. ein VPN- oder ein WLAN-Netzwerk) authentifiziert und gesichert. In diesem Artikel wird erläutert, wie Sie ein PKCS-Zertifikat exportieren und anschließend dieses Zertifikat zu einem Intune-Profil hinzufügen.
 
 ## <a name="requirements"></a>Anforderungen
 
@@ -48,20 +48,26 @@ Zur Verwendung von PKCS-Zertifikaten mit Intune müssen Sie über folgende Infra
 
 - **Microsoft Intune Certificate Connector:** Verwenden Sie das Azure-Portal zum Herunterladen des Installationsprogramms für den **Certificate Connector** (**NDESConnectorSetup.exe**). 
 
+  Der Connector verarbeitet PKCS-Zertifikatanforderungen, die für die Authentifizierung oder Signierung von E-Mails mit S/MIME verwendet werden.
+
   Der NDES-Certificate Connector unterstützt ebenfalls den FIPS-Modus (Federal Information Processing Standard). FIPS ist nicht erforderlich, Sie können jedoch Zertifikate ausstellen und widerrufen, wenn dieser Modus aktiviert ist.
 
-- **Windows Server:** Hostet den Microsoft Intune Certificate Connector (NDESConnectorSetup.exe).
+- **PFX Certificate Connector für Microsoft Intune**: Wenn Sie zur Verschlüsselung von E-Mails S/MIME verwenden möchten, ist es erforderlich, dass Sie im Azure-Portal den Installer für den **PFX Certificate Connector für Microsoft Intune** ( **PfxCertificateConnectorBootstrapper.exe**) herunterladen. Der Connector verarbeitet Anforderungen für PFX-Dateien, die in Intune importiert werden, um E-Mails eines bestimmten Benutzers mit S/MIME zu verschlüsseln.
+
+- **Windows Server** hostet folgende Connectors:
+
+  - den Microsoft Intune Certificate Connector (NDESConnectorSetup.exe) zur Authentifizierung und Signierung von E-Mails mit S/MIME
+  - den PFX Certificate Connector für Microsoft Intune (PfxCertificateConnectorBootstrapper.exe) zur Verschlüsselung von E-Mails mit S/MIME
+
+  Sie können beide Connectors (den **Microsoft Intune Certificate Connector** und den **PFX Certificate Connector für Microsoft Intune**) auf demselben Server ausführen.
 
 ## <a name="export-the-root-certificate-from-the-enterprise-ca"></a>Exportieren des Stammzertifikats aus der Unternehmenszertifizierungsstelle
 
-Sie benötigen auf jedem Gerät ein Zertifikat einer Stamm- oder Zwischenzertifizierungsstelle für die Authentifizierung über VPN, WLAN und anderen Ressourcen. Die folgenden Schritte erläutern, wie das erforderliche Zertifikat von Ihrer Unternehmenszertifizierungsstelle abgerufen wird.
+Sie benötigen auf jedem Gerät ein Zertifikat einer Stamm- oder Zwischenzertifizierungsstelle für die Authentifizierung über VPN, WLAN oder andere Ressourcen. Die folgenden Schritte erläutern, wie das erforderliche Zertifikat von Ihrer Unternehmenszertifizierungsstelle abgerufen wird.
 
 1. Melden Sie sich bei Ihrer Unternehmenszertifizierungsstelle mit einem Konto an, das über Administratorrechte verfügt.
 2. Öffnen Sie eine Eingabeaufforderung als Administrator.
 3. Exportieren Sie das Zertifikat der Stammzertifizierungsstelle (.cer) an einen Speicherort, an dem Sie später darauf zugreifen können.
-
-   Beispiel:
-
 4. Nach Abschluss des Assistenten, jedoch vor dem Schließen des Assistenten, klicken Sie auf **Zertifikatconnector-Benutzeroberfläche starten**.
 
    `certutil -ca.cert certnew.cer`
@@ -73,6 +79,10 @@ Sie benötigen auf jedem Gerät ein Zertifikat einer Stamm- oder Zwischenzertifi
 1. Melden Sie sich bei Ihrer Unternehmenszertifizierungsstelle mit einem Konto an, das über Administratorrechte verfügt.
 2. Öffnen Sie die Konsole **Zertifizierungsstelle**, klicken Sie mit der rechten Maustaste auf **Zertifikatvorlagen**, und klicken Sie dann auf **Verwalten**.
 3. Suchen Sie die Zertifikatvorlage **Benutzer**, klicken Sie mit der rechten Maustaste darauf, und klicken Sie auf **Vorlage duplizieren**. Dann werden die **Eigenschaften der neuen Vorlage** geöffnet.
+
+    > [!NOTE]
+    > Zur Signierung und Verschlüsselung von E-Mails mit S/MIME nutzen viele Administratoren für die jeweiligen Schritte unterschiedliche Zertifikate. Wenn Sie Microsoft Active Directory-Zertifikatdienste verwenden, können Sie die Vorlage **Nur Exchange-Signatur** für Zertifikate zum Signieren von E-Mails mit S/MIME verwenden. Die Vorlage **Exchange-Benutzer** können Sie für Zertifikate zur Verschlüsselung mit S/MIME nutzen.  Wenn Sie auf eine Drittanbieter-Zertifizierungsstelle zurückgreifen, sollten Sie sich mit deren Leitfaden zum Einrichten von Signatur- und Verschlüsselungsvorlagen vertraut machen.
+
 4. Gehen Sie auf der Registerkarte **Konformität** wie folgt vor:
 
   - Legen Sie **Zertifizierungsstelle** auf **Windows Server 2008 R2** fest.
@@ -80,8 +90,8 @@ Sie benötigen auf jedem Gerät ein Zertifikat einer Stamm- oder Zwischenzertifi
 
 5. Legen Sie auf der Registerkarte **Allgemein** für **Vorlagenanzeigename** einen für Sie aussagekräftigen Namen fest.
 
-   > [!WARNING]
-   > **Vorlagenname** entspricht standardmäßig dem **Vorlagenanzeigenamen** *ohne Leerzeichen*. Notieren Sie sich den Namen der Vorlage, da Sie diesen später brauchen werden.
+    > [!WARNING]
+    > **Vorlagenname** entspricht standardmäßig dem **Vorlagenanzeigenamen** *ohne Leerzeichen*. Notieren Sie sich den Namen der Vorlage, da Sie diesen später brauchen werden.
 
 6. Klicken Sie unter **Anforderungsverarbeitung** auf **Exportieren von privatem Schlüssel zulassen**.
 7. Bestätigen Sie unter **Kryptografie**, dass die **Minimale Schlüsselgröße** auf 2048 festgelegt ist.
@@ -98,32 +108,51 @@ Sie benötigen auf jedem Gerät ein Zertifikat einer Stamm- oder Zwischenzertifi
 14. Gehen Sie folgendermaßen vor, damit der Server Zertifikate im Namen von bei Intune registrierten Geräten und Benutzern verwaltet:
 
     1. Klicken Sie mit der rechten Maustaste auf die Zertifizierungsstelle, und wählen Sie **Eigenschaften**.
-    2. Fügen Sie auf der Registerkarte „Sicherheit“ das Computerkonto des Servers hinzu, auf dem Sie den Microsoft Intune Certificate Connector ausführen. Erteilen Sie dem Computerkonto die Zulassungsberechtigungen **Zertifikate ausstellen und verwalten** und **Zertifikate anfordern**.
+    2. Fügen Sie auf der Registerkarte „Sicherheit“ das Computerkonto des Servers hinzu, auf dem Sie die Connectors (entweder den **Microsoft Intune Certificate Connector** oder den **PFX Certificate Connector für Microsoft Intune**) ausführen. Erteilen Sie dem Computerkonto die Zulassungsberechtigungen **Zertifikate ausstellen und verwalten** und **Zertifikate anfordern**.
 
 15. Melden Sie sich von der Unternehmenszertifizierungsstelle ab.
 
-## <a name="download-install-and-configure-the-certificate-connector"></a>Herunterladen, Installieren und Konfigurieren von Certificate Connector
+## <a name="download-install-and-configure-the-certificate-connectors"></a>Herunterladen, Installieren und Konfigurieren der Zertifikatconnectors
+
+### <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune-Zertifikatconnector
 
 ![ConnectorDownload][ConnectorDownload]
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
 3. Klicken Sie auf **Gerätekonfiguration** und dann auf **Zertifizierungsstelle**.
-4. Klicken Sie auf **Hinzufügen** und dann auf **Connectordatei herunterladen**. Speichern Sie den Download an einem Speicherort, auf den Sie auf dem Server zugreifen können, auf dem der Connector installiert wird.
+4. Klicken Sie auf **Hinzufügen**, und laden Sie anschließend den Microsoft Intune Certificate Connector herunter. Speichern Sie den Download an einem Speicherort, auf den Sie auf dem Server zugreifen können, auf dem der Connector installiert wird.
 5. Melden Sie sich beim Server an, sobald der Download abgeschlossen ist. Führen Sie anschließend Folgendes durch:
 
-    1. Stellen Sie sicher, dass .NET Framework 4.5 installiert ist (dies ist für den NDES-Certificate Connector erforderlich). .NET Framework 4.5 ist automatisch in Windows Server 2012 R2 und höheren Versionen enthalten.
-    2. Führen Sie das Installationsprogramm (NDESConnectorSetup.exe) aus, und übernehmen Sie den Standardspeicherort. Dadurch wird der Connector unter `\Program Files\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe` installiert. Klicken Sie unter den Optionen des Installationsprogramms auf **PFX Distribution** (PFX-Verteilung). Setzen Sie die Installation fort, und schließen Sie sie ab.
+    1. Stellen Sie sicher, dass .NET Framework 4.5 oder höher installiert ist (dies ist für den NDES Certificate Connector erforderlich). .NET Framework 4.5 ist automatisch in Windows Server 2012 R2 und höheren Versionen enthalten.
+    2. Führen Sie das Installationsprogramm (NDESConnectorSetup.exe) aus, und übernehmen Sie den Standardspeicherort. Dadurch wird der Connector unter `\Program Files\Microsoft Intune\NDESConnectorUI` installiert. Klicken Sie unter den Optionen des Installationsprogramms auf **PFX Distribution** (PFX-Verteilung). Setzen Sie die Installation fort, und schließen Sie sie ab.
+    3. Der Connectordienst wird standardmäßig auf dem lokalen Systemkonto ausgeführt. Wenn ein Proxy für den Internetzugriff erforderlich ist, müssen Sie überprüfen, ob das lokale Dienstkonto auf die Proxyeinstellungen auf dem Server zugreifen kann.
 
 6. Der NDES-Connector öffnet die Registerkarte **Registrierung**. Klicken Sie zum Aktivieren der Verbindung mit Intune auf **Anmelden**, und geben Sie ein Konto mit globalen Administratorberechtigungen an.
-7. Lassen Sie auf der Registerkarte **Erweitert** Optionsfeld **Use this computer's SYSTEM account (default)** (Konto SYSTEM dieses Computers verwenden (Standard)) aktiviert.
+7. Es wird empfohlen, auf der Registerkarte **Erweitert** die Option **Use this computer's SYSTEM account (default)** (Konto SYSTEM dieses Computers verwenden (Standard)) aktiviert zu lassen.
 8. Klicken Sie zuerst auf **Anwenden** und dann auf **Schließen**.
 9. Wechseln Sie zurück zum Azure-Portal (**Intune** > **Gerätekonfiguration** > **Zertifizierungsstelle**). Nach einigen Momenten wird ein grünes Häkchen angezeigt, und der **Verbindungsstatus** ist **Aktiv**. Ihr Connectorserver kann jetzt mit Intune kommunizieren.
 
 > [!NOTE]
-> Die Unterstützung für TLS 1.2 ist im NDES-Certificate Connector enthalten. Wenn der Server, auf dem NDES-Certificate Connector installiert ist, TLS 1.2 unterstützt, wird TLS 1.2 verwendet. Wenn der Server TLS 1.2 nicht unterstützt, wird TLS 1.1 verwendet. Derzeit wird TLS 1.1 für die Authentifizierung zwischen den Geräten und dem Server verwendet.
+> TLS 1.2 wird vom Microsoft Intune Certificate Connector standardmäßig unterstützt. Wenn also der Server, auf dem der Microsoft Intune Certificate Connector installiert ist, TLS 1.2 unterstützt, wird dieses Protokoll verwendet. Wenn der Server TLS 1.2 nicht unterstützt, wird TLS 1.1 verwendet. Derzeit wird TLS 1.1 für die Authentifizierung zwischen den Geräten und dem Server verwendet.
 
-## <a name="create-a-device-configuration-profile"></a>Erstellen eines Gerätekonfigurationsprofils
+### <a name="pfx-certificate-connector-for-microsoft-intune"></a>PFX Certificate Connector für Microsoft Intune
+
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
+3. Klicken Sie auf **Gerätekonfiguration** und dann auf **Zertifizierungsstelle**.
+4. Klicken Sie auf **Hinzufügen**, und laden Sie anschließend den PFX Certificate Connector für Microsoft Intune herunter. Speichern Sie den Download an einem Speicherort, auf den Sie auf dem Server zugreifen können, auf dem der Connector installiert wird.
+5. Melden Sie sich beim Server an, sobald der Download abgeschlossen ist. Führen Sie anschließend Folgendes durch:
+
+    1. Stellen Sie sicher, dass .NET Framework 4.6 oder höher installiert ist (dies ist für den PFX Certificate Connector für Microsoft Intune erforderlich). Wenn .NET Framework 4.6 nicht installiert ist, wird es vom Installer automatisch installiert.
+    2. Führen Sie den Installer (PfxCertificateConnectorBootstrapper.exe) aus, und übernehmen Sie den Standardspeicherort. Dadurch wird der Connector unter `Program Files\Microsoft Intune\PFXCertificateConnector` installiert.
+    3. Der Connectordienst wird auf dem lokalen Systemkonto ausgeführt. Wenn ein Proxy für den Internetzugriff erforderlich ist, müssen Sie überprüfen, ob das lokale Dienstkonto auf die Proxyeinstellungen auf dem Server zugreifen kann.
+
+6. Nach der Installation wird die Registerkarte **Registrierung** vom PFX Certificate Connector für Microsoft Intune geöffnet. Klicken Sie auf **Anmelden**, und geben Sie anschließend ein Konto mit Berechtigungen eines globalen Administrators oder Intune-Administrators an, um die Verbindung mit Intune zu aktivieren.
+7. Schließen Sie das Fenster.
+8. Wechseln Sie zurück zum Azure-Portal (**Intune** > **Gerätekonfiguration** > **Zertifizierungsstelle**). Nach einigen Momenten wird ein grünes Häkchen angezeigt, und der **Verbindungsstatus** ist **Aktiv**. Ihr Connectorserver kann jetzt mit Intune kommunizieren.
+
+## <a name="create-a-trusted-certificate-profile"></a>Erstellen eines vertrauenswürdigen Zertifikatprofils
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Navigieren Sie zu **Intune** > **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
@@ -132,10 +161,10 @@ Sie benötigen auf jedem Gerät ein Zertifikat einer Stamm- oder Zwischenzertifi
 
 3. Geben Sie die folgenden Eigenschaften ein:
 
-  - **Name** für das Profil
-  - Optional eine Beschreibung
-  - **Plattform**, auf der das Profil bereitgestellt werden soll
-  - Für **Profiltyp** die Option **Vertrauenswürdiges Zertifikat**
+    - **Name** für das Profil
+    - Optional eine Beschreibung
+    - **Plattform**, auf der das Profil bereitgestellt werden soll
+    - Für **Profiltyp** die Option **Vertrauenswürdiges Zertifikat**
 
 4. Gehen Sie zu **Einstellungen**, und geben Sie die zuvor exportierte CER-Datei mit dem Zertifikat der Stammzertifizierungsstelle an.
 
@@ -153,25 +182,47 @@ Sie benötigen auf jedem Gerät ein Zertifikat einer Stamm- oder Zwischenzertifi
 2. Navigieren Sie zu **Intune** > **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 3. Geben Sie die folgenden Eigenschaften ein:
 
-  - **Name** für das Profil
-  - Optional eine Beschreibung
-  - **Plattform**, auf der das Profil bereitgestellt werden soll
-  - Für **Profiltyp** die Option **PKCS-Zertifikat**
+    - **Name** für das Profil
+    - Optional eine Beschreibung
+    - **Plattform**, auf der das Profil bereitgestellt werden soll
+    - Für **Profiltyp** die Option **PKCS-Zertifikat**
 
 4. Gehen Sie zu **Einstellungen**, und geben Sie die folgenden Eigenschaften ein:
 
-  - **Erneuerungsschwellenwert (%)**: Empfohlen wird ein Wert von 20 %.
-  - **Gültigkeitsdauer des Zertifikats:** Wenn Sie die Zertifikatvorlage nicht geändert haben, ist diese Option auf ein Jahr festgelegt.
-  - **Zertifizierungsstelle:** Zeigt den internen vollqualifizierten Domänennamen (FQDN) Ihrer Unternehmenszertifizierungsstelle an.
-  - **Name der Zertifizierungsstelle:** Gibt den Namen Ihrer Unternehmenszertifizierungsstelle an, der sich ggf. vom vorherigen Element unterscheidet.
-  - **Name der Zertifikatvorlage:** Der Name der zuvor erstellten Vorlage. Beachten Sie, dass der **Vorlagenname** standardmäßig dem **Vorlagenanzeigenamen** *ohne Leerzeichen* entspricht.
-  - **Format des Antragstellernamens**: Legen Sie diese Option auf **Allgemeiner Name** fest, sofern kein anderes Format erforderlich ist.
-  - **Alternativer Antragstellername**: Legen Sie diese Option auf **Benutzerprinzipalname (UPN)** fest, sofern nichts anderes erforderlich ist.
-  - **Erweiterte Schlüsselverwendung:** Sofern Sie im vorherigen Abschnitt [Konfigurieren von Zertifikatvorlagen für die Zertifizierungsstelle](#configure-certificate-templates-on-the-certification-authority) für Schritt 10 die Standardeinstellungen verwendet haben, fügen Sie aus dem Auswahlfeld die folgenden **vordefinierten Werte** hinzu:
-    - **Verwendung für beliebigen Zweck**
-    - **Clientauthentifizierung**
-    - **Sichere E-Mail**
-  - **Stammzertifikat** (für Android-Profile): Gibt die CER-Datei an, die in Schritt 3 im Abschnitt [Exportieren des Stammzertifikats aus der Unternehmenszertifizierungsstelle](#export-the-root-certificate-from-the-enterprise-ca) exportiert wurde.
+    - **Erneuerungsschwellenwert (%)**: Empfohlen wird ein Wert von 20 %.
+    - **Gültigkeitsdauer des Zertifikats**: Wenn Sie die Zertifikatvorlage nicht geändert haben, kann diese Option auf ein Jahr festgelegt werden.
+    - **Schlüsselspeicheranbieter (KSP)**: Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus.
+    - **Zertifizierungsstelle**: Zeigt den internen vollqualifizierten Domänennamen (FQDN) Ihrer Unternehmenszertifizierungsstelle an.
+    - **Name der Zertifizierungsstelle**: Zeigt den Namen der Unternehmenszertifizierungsstelle an (z.B. „Contoso-Zertifizierungsstelle“).
+    - **Name der Zertifikatvorlage**: Der Name der zuvor erstellten Vorlage. Beachten Sie, dass der **Vorlagenname** standardmäßig dem **Vorlagenanzeigenamen** *ohne Leerzeichen* entspricht.
+    - **Format des Antragstellernamens**: Legen Sie diese Option auf **Allgemeiner Name** fest, falls kein anderes Format erforderlich ist.
+    - **Alternativer Antragstellername**: Legen Sie diese Option auf **Benutzerprinzipalname (UPN)** fest, sofern nichts anderes erforderlich ist.
+
+5. Klicken Sie zuerst auf **OK** und dann auf **Erstellen**, um Ihr Profil zu speichern.
+6. Informationen zum Zuweisen des neuen Profils zu einem oder mehreren Geräten finden Sie unter [Zuweisen von Microsoft Intune-Geräteprofilen](device-profile-assign.md).
+
+## <a name="create-a-pkcs-imported-certificate-profile"></a>Erstellen eines Profils für ein importiertes PKCS-Zertifikat
+
+Sie können Zertifikate, die von einer beliebigen Zertifizierungsstelle für einen bestimmten Benutzer ausgestellt wurden, in Intune importieren. Importierte Zertifikate werden auf allen Geräten installiert, die ein Benutzer registriert. Die Verschlüsselung von E-Mails mit S/MIME ist das häufigste Szenario für den Import vorhandener PFX-Zertifikate in Intune. Ein Benutzer kann zum Verschlüsseln von E-Mails mehrere Zertifikate verwenden. Die privaten Schlüssel dieser Zertifikate müssen auf allen Geräten des Benutzers vorhanden sein, damit die zuvor verschlüsselten E-Mails entschlüsselt werden können.
+
+Zum Importieren von Zertifikaten in Intune können Sie die [auf GitHub bereitgestellten PowerShell-Cmdlets](https://github.com/Microsoft/Intune-Resource-Access) verwenden.
+
+Nach dem Importieren der Zertifikate in Intune erstellen Sie ein Profil für ein **importiertes PKCS-Zertifikat** und weisen es Azure Active Directory-Gruppen zu:
+
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+2. Navigieren Sie zu **Intune** > **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+3. Geben Sie die folgenden Eigenschaften ein:
+
+    - **Name** für das Profil
+    - Optional eine Beschreibung
+    - **Plattform**, auf der das Profil bereitgestellt werden soll
+    - Für **Profiltyp** die Option **Importiertes PKCS-Zertifikat**
+
+4. Gehen Sie zu **Einstellungen**, und geben Sie die folgenden Eigenschaften ein:
+
+    - **Beabsichtigter Zweck**: Der Zweck der Zertifikate, die für dieses Profil importiert werden. Ein Administrator kann Zertifikate mit unterschiedlichen Zwecken (z.B. zur Authentifizierung oder zum Signieren/Verschlüsseln mit S/MIME) importieren. Der Zweck, der im Zertifikatprofil ausgewählt wird, entspricht demjenigen des Zertifikatprofils mit den korrekten importierten Zertifikaten.
+    - **Gültigkeitsdauer des Zertifikats**: Wenn Sie die Zertifikatvorlage nicht geändert haben, kann diese Option auf ein Jahr festgelegt werden.
+    - **Schlüsselspeicheranbieter (KSP)**: Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus.
 
 5. Klicken Sie zuerst auf **OK** und dann auf **Erstellen**, um Ihr Profil zu speichern.
 6. Informationen zum Zuweisen des neuen Profils zu einem oder mehreren Geräten finden Sie unter [Zuweisen von Microsoft Intune-Geräteprofilen](device-profile-assign.md).

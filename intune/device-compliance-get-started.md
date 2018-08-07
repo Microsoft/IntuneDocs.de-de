@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
+ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225441"
+ms.lasthandoff: 07/26/2018
+ms.locfileid: "39268905"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune
 
@@ -167,7 +167,7 @@ Die **Einstellungen zur Konformitätsrichtlinie** (Azure-Portal > Gerätekonform
   Für die Aktivierung dieser Einstellung müssen Geräte:
   - Ortungsdienste auf OS-Ebene aktivieren
   - dem Unternehmensportal erlauben, die Ortungsdienste zu nutzen
-  - den Jailbreak-Status mindestens alle 72 Stunden bewerten und Intune melden. Andernfalls wird das Gerät als nicht konform gekennzeichnet.
+  - den Jailbreak-Status mindestens alle 72 Stunden bewerten und Intune melden. Andernfalls wird das Gerät als nicht konform gekennzeichnet. Sie können den Auswertungsvorgang entweder auslösen, indem Sie die Unternehmensportal-App öffnen oder indem Sie das Gerät an einem anderen Ort positionieren, der mindestens 500 m entfernt ist.
 
 - **Gültigkeitszeitraum des Kompatibilitätsstatus (in Tagen):** Geben Sie den Zeitraum ein, in dem die Geräte den Status für alle empfangenen Konformitätsrichtlinien meldet. Geräte, die innerhalb dieses Zeitraums keine Statusmeldung abgeben, werden als nicht konform behandelt. Der Standardwert ist 30 Tage.
 

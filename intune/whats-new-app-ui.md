@@ -15,20 +15,41 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 998df5181b553b33b570cd78d7f0e490336d7e95
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 9180bf70c114a9bb1f034b51ee3a3d96bef253fa
+ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039385"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39279490"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Updates der Benutzeroberfläche für Endbenutzer-Apps in Intune
 Erfahren Sie, welche Updates an der Benutzeroberfläche für Apps vorgenommen wurden, die Ihre Endbenutzer in dieser Version von Microsoft Intune sehen. Wenn Sie Kenntnisse über diese Updates haben, können Sie die Benutzerkommunikation sowie alle aktualisierten Benutzerdokumentationen verbessern, die Sie zur Unterstützung der Bereitstellung erstellt haben. Es kann auch helfen, zu verstehen, wie Probleme behandelt werden, die auftauchen, wenn Benutzer den Helpdesk für den Support mithilfe des Unternehmensportals aufrufen.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-july-16-2018"></a>Woche vom 16. Juli 2018  
+
+### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Weitere Synchronisierungsoptionen in der Unternehmensportal-App für Windows   
+Mit der Unternehmensportal-App für Windows können Sie nun direkt über die Windows-Taskleiste und das Startmenü eine Synchronisierung starten. Dieses Feature ist besonders hilfreich, wenn Sie nur Geräte synchronisieren müssen und Zugriff auf Unternehmensressourcen benötigen. Klicken Sie mit der rechten Maustaste auf das Unternehmensportalsymbol, das an die Taskleiste oder das Startmenü angeheftet ist, um das neue Feature zu verwenden. Klicken Sie in den Menüoptionen (auch als Sprungliste bezeichnet) auf **Dieses Gerät synchronisieren**. Die Unternehmensportal-App wird geöffnet und zeigt die Seite **Einstellungen** an. Außerdem wird die Synchronisierung gestartet.  
+
+![Screenshot der Windows-Taskleiste auf dem Desktop eines Geräts Es wurde auf das Symbol der Unternehmensportal-App geklickt, um ein Menü mit den Optionen „An Taskleiste anheften“, „Fenster schließen“ und „Dieses Gerät synchronisieren“ anzuzeigen.](./media/sync-device-from-start-menu-1807.png)  
+
+### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Geänderte Durchsuchen-Funktion in der Unternehmensportal-App für Windows  
+
+Beim Durchsuchen von oder Suchen nach Apps in der Unternehmensportal-App für Windows können Sie zwischen der Ansicht **Kacheln** und der neu hinzugefügten Ansicht **Details** wechseln. In der neuen Ansicht werden Anwendungsdetails wie Namen, Herausgeber, Veröffentlichungsdatum und Installationsstatus angezeigt.  
+
+Auf der Seite **Apps** können Sie sich in der Ansicht **Installiert** Details zu abgeschlossenen und laufenden App-Installationen anzeigen lassen.  
+
+Beispielscreenshot der Ansicht „Kacheln“:  
+ 
+![Screenshot der Intune-Unternehmensportal-App für Windows, die die installierten Apps in der Kachelansicht anzeigt](/intune/media/tiles-installed-view-cpapp-1807.png)  
+
+Beispielscreenshot der Ansicht „Details“:  
+
+![Screenshot der Intune-Unternehmensportal-App für Windows, die die installierten Apps in der Detailansicht anzeigt](/intune/media/details-installed-view-cpapp-1807.png) 
+
 ## <a name="week-of-april-23-2018"></a>Woche vom 23. April 2018
-#### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Aktualisierte Navigationsansicht in der Unternehmensportal-App für Windows 10 <!-- 1195010 -->
+### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Aktualisierte Navigationsansicht in der Unternehmensportal-App für Windows 10 <!-- 1195010 -->
 Die Intune-Unternehmensportal-App für Windows 10 wurde mit der [Navigationsansicht von Fluent Design System](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics) aktualisiert. An der Seite der App befindet sich eine statische, vertikale Liste aller Seiten der obersten Ebene. Klicken Sie auf einen beliebigen Link, um Seiten schnell anzuzeigen und zwischen ihnen zu wechseln. Dies ist das erste von mehreren Updates, die wir Ihnen im Rahmen unserer fortlaufenden Bestrebungen präsentieren werden, die Intune-Benutzeroberfläche zu optimieren. 
 
 ![Screenshot des Unternehmensportal-App-Dashboards mit der Fluent Design-Navigationsansicht](./media/1804_WindowsCP_Fluent_01.png)
@@ -36,7 +57,7 @@ Die Intune-Unternehmensportal-App für Windows 10 wurde mit der [Navigationsansi
 
 ## <a name="week-of-april-2-2018"></a>Woche vom 2. April 2018
 
-#### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Update der Benutzeroberfläche für die Unternehmensportal-App für iOS <!-- 1412866 -->
+### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>Update der Benutzeroberfläche für die Unternehmensportal-App für iOS <!-- 1412866 -->
 Für die Unternehmensportal-App für iOS wurde ein großes Update für die Benutzeroberfläche veröffentlicht. Das Update enthält eine vollständige visuelle Überarbeitung, einschließlich eines moderneren Designs und einer verbesserten Handhabung. Wir haben die Funktion der App beibehalten, haben jedoch die Benutzerfreundlichkeit und Barrierefreiheit verbessert.  
 
 Weiterhin sind enthalten:
@@ -51,7 +72,7 @@ Weiterhin sind enthalten:
 |*Kombiniert mit vorherigen Schritten*|![02](/intune/media/cp_iosRedesign_after_1803_02.png)|
 |![03](/intune/media/cp_iosRedesign_before_1803_02.png)|![03](/intune/media/cp_iosRedesign_after_1803_03.png)|
 
-#### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>Sprachverbesserungen in der Unternehmensportal-App für Windows <!---1683758--->
+### <a name="improvements-to-the-language-in-the-company-portal-app-for-windows----1683758---"></a>Sprachverbesserungen in der Unternehmensportal-App für Windows <!-- 1683758 -->
 Die Sprache im Unternehmensportal für Windows 10 wurde verbessert und ist nun benutzerfreundlicher und unternehmensspezifischer.
 
 |Vorher|Danach|
@@ -61,7 +82,7 @@ Die Sprache im Unternehmensportal für Windows 10 wurde verbessert und ist nun b
 
 ## <a name="week-of-march-12-2018"></a>Woche vom 12. März 2018
 
-#### <a name="company-portal-for-android-visual-updates---976944---"></a>Visuelle Updates des Unternehmensportals für Android <!--976944 -->
+### <a name="company-portal-for-android-visual-updates----976944---"></a>Visuelle Updates des Unternehmensportals für Android <!-- 976944 -->
 
 Die Unternehmensportal-App wird für Android aktualisiert, um den [Material Design](https://material.io/)-Richtlinien von Android zu entsprechen.
 
@@ -78,7 +99,7 @@ Die Unternehmensportal-App wird für Android aktualisiert, um den [Material Desi
 
 ## <a name="week-of-november-27-2017"></a>Woche vom 27. November 2017
 
-### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Neuer Schritt „Gerätekategorien“ im geführten Setup für die Unternehmensportal-App für Windows 10 <!---1335292--->
+### <a name="new-device-categories-step-in-guided-setup-for-the-company-portal-app-for-windows-10----1335292---"></a>Neuer Schritt „Gerätekategorien“ im geführten Setup für die Unternehmensportal-App für Windows 10 <!-- 1335292 -->
 
 Wenn Sie [Gerätegruppenzuordnung](device-group-mapping.md) aktiviert haben, führt die Unternehmensportal-App für Windows 10 Ihre Benutzer nun durch die Auswahl einer Gerätekategorie, nachdem sie ihr Gerät registriert haben.
 
@@ -114,14 +135,14 @@ Die Seite „Einstellungen“ in der Unternehmensportal-App für Windows 10 wurd
 |![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
 
 
-### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>Verbesserungen der Suchfunktion für Unternehmensportal-Apps und die Unternehmensportal-Website <!--1418189-->
+### <a name="search-improvements-to-the-company-portal-apps-and-website----1418189---"></a>Verbesserungen der Suchfunktion für Unternehmensportal-Apps und die Unternehmensportal-Website <!-- 1418189 -->
 Für die Apps im Unternehmensportal werden jetzt Suchläufe anhand von App-Kategorien, Namen und Beschreibungen unterstützt. Die Ergebnisse werden absteigend nach der Relevanz sortiert. Diese Updates stehen auch auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com) zur Verfügung.
 
 Die Funktion zur Nachverfolgung der Relevanz wird weiterhin angepasst. Geben Sie uns daher gerne eine Rückmeldung über den „Feedback“-Link unten auf der Unternehmensportal-Website.
 
 ## <a name="week-of-october-16-2017"></a>Woche vom 16. Oktober 2017
 
-### <a name="search-improvements-to-the-company-portal-website---1331697--"></a>Verbesserungen der Suchfunktion auf der Unternehmensportal-Website <!--1331697-->
+### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>Verbesserungen der Suchfunktion auf der Unternehmensportal-Website <!-- 1331697 -->
 Die Suchfunktion unserer App soll verbessert werden. Dabei beginnen wir mit der [Unternehmensportal-Website](https://portal.manage.microsoft.com). Suchen werden nun neben den Feldern für Name und Beschreibung über App-Kategorien ausgeführt. Die Ergebnisse werden standardmäßig nach abnehmender Relevanz sortiert. 
 
 Auch iOS-Benutzer profitieren von dieser Änderung, da die Unternehmensportal-Website auch Teil der Unternehmensportal-App unter iOS ist. In den folgenden Monaten wird es ähnliche Updates für Unternehmensportal-Apps für Android und Windows geben.
@@ -135,7 +156,7 @@ Das bekannte Problem, dass im iOS-Unternehmensportal Symbole in der App-Kachel a
 
 ## <a name="week-of-october-2-2017"></a>Woche vom 2. Oktober 2017
 
-#### <a name="improvements-to-device-setup-workflow-in-company-portal---1490692--"></a>Verbesserungen des Workflows für die Geräteinstallation im Unternehmensportal <!--1490692-->
+### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>Verbesserungen des Workflows für die Geräteinstallation im Unternehmensportal <!-- 1490692 -->
 Der Workflow für die Geräteinstallation in der Unternehmensportal-App unter Android wurde verbessert. Die Sprache ist nun benutzerfreundlicher und spezifisch für Ihr Unternehmen. Zudem haben wir wo es möglich war Bildschirme vereint. 
 
 |Vorher|Danach|
@@ -164,7 +185,7 @@ Außerdem wurde der Aktivierungsbildschirm für bedingten Zugriff auf E-Mails ak
 
 ## <a name="week-of-september-11-2017"></a>Die Woche vom 11. September 2017
 
-### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Vereinfachung der Formulierung für die Unternehmensportal-App für Android <!---1396349--->  
+### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Vereinfachung der Formulierung für die Unternehmensportal-App für Android <!-- 1396349 -->  
 
 Der Registrierungsvorgang für die Unternehmensportal-App für Android wurde durch einen neuen Text vereinfacht, um Endbenutzern eine einfachere Registrierung zu bieten. Wenn Sie über eine benutzerdefinierte Registrierungsdokumentation verfügen, sollten Sie diese aktualisieren, damit diese die neuesten Bildschirme anzeigt. Unten finden Sie Abbildungen von Beispielen:
 
@@ -179,7 +200,7 @@ Der Registrierungsvorgang für die Unternehmensportal-App für Android wurde dur
 
 ## <a name="august-2017"></a>August 2017
 
-### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>Die iOS 11-Mail-App wird OAuth <!---1196951---> unterstützen.
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>Die iOS 11-Mail-App wird OAuth <!-- 1196951 --> unterstützen.
 
 Der bedingte Zugriff über Intune unterstützt nun eine sicherere Authentifizierung auf iOS-Geräten mit OAuth. Der Ablauf der Unternehmensportal-App für iOS hat sich geändert, um dies zu unterstützen und eine sicherere Authentifizierung zu ermöglichen. Wenn Endbenutzer versuchen, sich mit einem neuen Exchange-Konto in der Mail-App anzumelden, wird ihnen eine Aufforderung in der Webansicht angezeigt. Bei der Registrierung in Intune werden Benutzer dazu aufgefordert, der nativen Mail-App den Zugriff auf ein Zertifikat zu gewähren. Den meisten Benutzern werden isolierte E-Mails nicht mehr angezeigt. Bestehende E-Mail-Konten werden weiterhin das Standardauthentifizierungsprotokoll verwenden. Diesen Benutzern werden also immer noch isolierte E-Mails zugestellt. Die Anmeldung für Endbenutzer ähnelt der Anmeldung bei mobilen Office-Apps.
 
@@ -212,7 +233,7 @@ Die Dialogfelder der mobilen Anwendungsverwaltung mit Intune (MAM) werden modern
 ![moderne Schnittstelle](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Updates der Seite „Gerätedetails“ der Unternehmensportal-App für Windows 10 <!---1287448--->
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Updates der Seite „Gerätedetails“ der Unternehmensportal-App für Windows 10 <!-- 1287448 -->
 
 Das Tag __Kategorie__ wird in der Unternehmensportal-App für Windows 10 von dem Platz unter dem Titel zu einer Eigenschaft auf der Seite __Gerätedetails__ verschoben.
 

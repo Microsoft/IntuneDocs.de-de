@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/19/2018
+ms.date: 07/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2db9d991c476d89399058137adb972c06029befc
-ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
+ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/13/2018
-ms.locfileid: "39028727"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321287"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune
 
@@ -57,7 +57,7 @@ Die folgende Tabelle führt die verschiedenen App-Typen auf und erläutert, wie 
 | Branchenspezifische Android-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als **App-Typ** aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine Android-Installationsdatei mit der Erweiterung **APK** an.  |
 | Branchenspezifische iOS-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als **App-Typ** aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine iOS-Installationsdatei mit der Erweiterung **IPA** an.  |
 | Branchenspezifische Windows Phone-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als **App-Typ** aus, wählen Sie die **App-Paketdatei** aus, und geben Sie dann eine Windows Phone-Installationsdatei mit der Erweiterung **XAP** an.  |
-| Branchenspezifische Windows-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als App-Typ aus, wählen Sie die **App-Paketdatei** aus, und geben Sie dann eine Windows-Installationsdatei mit der Erweiterung **MSI**, **APPX** oder **APPXBUNDLE** an. |
+| Branchenspezifische Windows-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als App-Typ und die **App-Paketdatei** aus, und geben Sie dann eine Windows-Installationsdatei mit der Erweiterung **.msi**, **.appx**, **.appxbundle**, **.msix** oder **.msixbundle** an. |
 | Integrierte iOS-App  | Integrierte App | Wählen Sie **Integrierte App** als **App-Typ** aus, und wählen Sie dann aus der Liste der bereitgestellten Apps die gewünschte integrierte App aus.  |
 | Integrierte Android-App  | Integrierte App | Wählen Sie **Integrierte App** als **App-Typ** aus, und wählen Sie dann aus der Liste der bereitgestellten Apps die gewünschte integrierte App aus.  |
 | Web-Apps  | Web-App  | Wählen Sie **Weblink** als **App-Typ** aus, und geben Sie eine gültige URL ein, die auf die Web-App verweist.  |
@@ -119,6 +119,9 @@ Sie sollten nicht nur zwischen Web-Apps, Store-Apps und branchenspezifischen App
 - **Apple Volume Purchase Program for Business (iOS und MacOS)**: Der App Store von iOS bietet die Möglichkeit, mehrere Lizenzen für eine App zu erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Durch den Erwerb mehrerer Kopien können Sie Apps in Ihrem Unternehmen effizient verwalten. Weitere Informationen finden Sie unter [Verwalten von iOS-Apps, die per Volumenlizenz erworben wurden](vpp-apps-ios.md).
 - **Android-Arbeitsprofil**: Die Zuweisung von Apps zu Android-Arbeitsprofilgeräten unterscheidet sich von deren Zuweisung zu Android-Standardgeräten. Alle Apps, die für Android-Arbeitsprofile installiert werden, stammen aus dem verwalteten Google Play Store. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese. Die App wird dann im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt, und Sie können die Zuweisung der App wie bei jeder anderen App verwalten.
 - **Microsoft Store für Unternehmen (Windows 10)**: Im Microsoft Store für Unternehmen können Sie Apps für Ihre Organisation suchen und einzeln oder im Rahmen einer Volumenlizenz erwerben. Indem Sie den Store mit Microsoft Intune verbinden, können Sie per Volumenlizenz erworbene Apps über das Azure-Portal verwalten. Weitere Informationen finden Sie unter [Verwalten von Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md).
+
+    > [!NOTE]
+    > Für Windows-Apps können jetzt die folgenden Dateierweiterungen verwendet werden: **.msi**, **.appx**, **.appxbundle**, **.msix** und **.msixbundle**.  
 
 ## <a name="before-you-add-apps"></a>Vor dem Hinzufügen von Apps
 Bevor Sie damit beginnen, Apps hinzuzufügen und zuzuweisen, beachten Sie die folgenden Punkte:

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a797c68ca43a6173a4bac70e914d3f763ce5e6d0
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442575"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321440"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für macOS-Geräte in Intune
 
@@ -83,6 +83,13 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 ### <a name="encryption"></a>Verschlüsselung
 
 - **Verschlüsselung des Datenspeichers auf einem Gerät**: Wählen Sie **Erforderlich**, um den Datenspeicher auf Ihren Geräten zu verschlüsseln.
+
+### <a name="device-security"></a>Gerätesicherheit
+Die Firewall schützt Geräte vor nicht autorisierten Netzwerkzugriffen. Mit dieser können Sie Verbindungen für einzelne Anwendungen konfigurieren. 
+
+- **Firewall**: **Aktivieren** Sie diese, um Geräte vor nicht autorisierten Zugriffen zu schützen. Wenn Sie dieses Feature aktivieren, können Sie eingehende Internetverbindungen verarbeiten und den geschützten Modus verwenden. Durch die Standardeinstellung **Nicht konfiguriert** bleibt die Firewall deaktiviert, und Netzwerkdatenverkehr wird zugelassen (also nicht blockiert).
+- **Eingehende Verbindungen**: Mit der Einstellung **Blockieren** werden eingehende Verbindungen für grundlegende Internetdienste wie DHCP, Bonjour und IPSec zugelassen. Alle anderen eingehenden Verbindungen werden gesperrt. Durch diese Einstellung werden auch alle Freigabedienste einschließlich der Bildschirmfreigabe, des Remotezugriffs und der Freigabe von Musik über iTunes gesperrt. Durch die Standardeinstellung **Nicht konfiguriert** werden eingehende Verbindungen und Freigabedienste zugelassen. 
+- **Geschützter Modus**: **Aktivieren** Sie diesen, damit das Gerät nicht auf Suchanforderungen von böswilligen Benutzern reagiert. Wenn diese Einstellung aktiviert ist, antwortet das Gerät weiterhin auf eingehende Anforderungen für autorisierte Apps. Wenn die Standardeinstellung **Nicht konfiguriert** aktiviert ist, bleibt der geschützte Modus deaktiviert.
 
 ## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen
 
