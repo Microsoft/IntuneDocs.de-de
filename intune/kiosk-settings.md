@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/23/2018
+ms.date: 8/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f10e7bb7a2e7c5e1d0e8b27517a62454e8bd630
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
+ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321696"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39481120"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Kioskeinstellungen für Windows 10 und höher in Intune
 
@@ -25,9 +25,18 @@ Mit Kioskprofilen können Sie Windows 10-Geräte so konfigurieren, dass sie entw
 
 ## <a name="kiosk-settings"></a>Kioskeinstellungen
 
-1. Klicken Sie auf **Hinzufügen**, um eine Kioskumgebung zu erstellen.
-2. Geben Sie einen **Kioskkonfigurationsnamen** für Ihren Kiosk ein. Dieser Name gibt eine Anwendungsgruppe, das Layout dieser Anwendungen im Startmenü und die Benutzer an, denen diese Kioskkonfiguration zugewiesen ist.
-3. Wählen Sie den **Kioskmodus** aus. **Kioskmodus:** Gibt den Typ des Kioskmodus an, der von der Richtlinie unterstützt wird. Zu den Optionen gehören:
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie anschließend **Microsoft Intune** aus.
+2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+3. Geben Sie die folgenden Eigenschaften ein:
+
+   - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
+   - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. Dies ist optional, wird jedoch empfohlen.
+   - **Plattform**: Wählen Sie **Windows 10 und höher** aus.
+   - **Profiltyp**: Wählen Sie **Kiosk (Vorschauversion)** aus.
+   
+4. Klicken Sie auf **Kiosk** > **Hinzufügen**.
+5. Geben Sie einen **Kioskkonfigurationsnamen** für Ihren Kiosk ein. Dieser Name gibt eine Anwendungsgruppe, das Layout dieser Anwendungen im Startmenü und die Benutzer an, denen diese Kioskkonfiguration zugewiesen ist.
+6. Wählen Sie den **Kioskmodus** aus. **Kioskmodus:** Gibt den Typ des Kioskmodus an, der von der Richtlinie unterstützt wird. Zu den Optionen gehören:
 
     - **Nicht konfiguriert** (Standard): Die Richtlinie aktiviert den Kioskmodus nicht.
     - **Kiosk mit einzelner Vollbild-App:** Das Profil lässt die Ausführung eines einzelnen Benutzerkontos auf dem Gerät zu und legt es auf eine einzelne UWP-App fest. Wenn sich der Benutzer anmeldet, wird so eine bestimmte App gestartet. Dieser Modus hindert den Benutzer auch daran, neue Apps zu öffnen oder die App zu ändern, die ausgeführt wird.

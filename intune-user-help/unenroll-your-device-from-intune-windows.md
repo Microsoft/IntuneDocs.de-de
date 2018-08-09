@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/08/2018
+ms.date: 08/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a3cad6a73b3455790441c594933d599b2c6e89f9
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 980b7d9f221fd1a1ae12f27743757d5b3bd53492
+ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224431"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39481188"
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Entfernen Ihres Windows-Geräts aus der Intune-Verwaltung
 
@@ -33,7 +33,7 @@ Entfernen Sie ein registriertes, Windows-Gerät aus Intune, wenn Sie für folgen
 Nachdem es entfernt wurde, können Sie auf dem Gerät nicht mehr auf schulische oder geschäftliche Ressourcen zugreifen. Folgende Windows-Geräte können aus Intune entfernt werden:  
 * Windows 10-Geräte 
 * Windows 8.1-Computer
-* Mobile Windows 8.1-Geräte
+* Mobiles Windows 8.1-Gerät
  
 Weitere Informationen dazu, was beim Entfernen Ihres Geräts aus der Intune-Verwaltung geschieht, finden Sie unter [Was geschieht, wenn Sie Ihr Gerät aus Intune entfernen?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 

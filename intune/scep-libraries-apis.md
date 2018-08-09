@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5278b631d581c892f68e8ba08c2bc7893cd3782a
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
+ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321667"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575048"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Verwenden von APIs zum Hinzufügen von Drittanbieter-Zertifizierungsstellen für SCEP in Intune
 
@@ -41,11 +41,18 @@ Administratoren erstellen mit Intune SCEP-Profile und weisen diese Profile ansch
 - Das vertrauenswürdige Stammzertifikat der Zertifizierungsstelle
 - Zertifikatattribute und Vieles mehr
 
-Geräte, die bei Intune einchecken, werden dem SCEP-Profil zugewiesen und mit diesen Parametern konfiguriert. Intune erstellt ein dynamisch generiertes SCEP-Kennwort, das dem Gerät anschließend zugewiesen wird.
+Geräte, die bei Intune einchecken, werden dem SCEP-Profil zugewiesen und mit diesen Parametern konfiguriert. Intune erstellt ein dynamisch generiertes SCEP-Abfragekennwort, das dem Gerät anschließend zugewiesen wird.
 
-Dieses Kennwort enthält Details zu den Parametern, die in der Zertifikatsignieranforderung (Certificate Signing Request, CSR) erwartet werden, die das Gerät für den SCEP-Server ausführt. Darüber hinaus enthält das Kennwort den Zeitpunkt für den Ablauf der Herausforderung. Intune verschlüsselt die Informationen, signiert das verschlüsselte Blob und packt diese Details anschließend in das SCEP-Kennwort.
+Diese Abfrage enthält Folgendes:
 
-Geräte, die zur Anforderung eines Zertifikats eine Verbindung mit dem SCEP-Server herstellen, geben anschließend dieses SCEP-Kennwort an. Dieses Kennwort muss die Überprüfung bestehen, damit der SCEP-Server ein Zertifikat für das Gerät ausstellt. Bei der Überprüfung eines SCEP-Kennworts geschieht Folgendes:
+- Das dynamisch generierte Abfragekennwort
+- Die Details zu den Parametern, die in der Zertifikatsignieranforderung (Certificate Signing Request, CSR) erwartet werden, die das Gerät für den SCEP-Server ausführt.
+- Die Ablaufzeit der Abfrage
+
+Intune verschlüsselt diese Informationen, signiert das verschlüsselte Blob und packt diese Details anschließend in das SCEP-Abfragekennwort.
+
+Geräte, die zur Anforderung eines Zertifikats eine Verbindung mit dem SCEP-Server herstellen, geben anschließend dieses SCEP-Abfragekennwort an. Der SCEP-Server sendet die Zertifikatsignieranforderung und das verschlüsselte SCEP-Abfragekennwort zur Überprüfung an Intune.  Dieses Abfragekennwort und die Zertifikatsignieranforderung müssen die Überprüfung bestehen, damit der SCEP-Server ein Zertifikat für das Gerät ausstellt. Bei der Überprüfung eines SCEP-Abfragekennworts geschieht Folgendes:
+
 
 - Die Signatur des verschlüsselten Blobs wird überprüft
 - Es wird überprüft, ob die Herausforderung abgelaufen ist

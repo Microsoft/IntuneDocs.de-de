@@ -17,18 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7c61ae0d60b2baf8bf9760297a5e35cbb5188de
-ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
+ms.openlocfilehash: 04737d1e800094f21a8bdaf42047f8bce7f48e6a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39236054"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362023"
 ---
 # <a name="sync-your-windows-device-manually"></a>Manuelles Synchronisieren des Windows-Geräts
 
 Wenn die Geschwindigkeit der App-Installation nicht optimal ist, können Sie eine manuelle Gerätesynchronisierung initiieren. Bei manuellen Synchronisierungen wird erzwungen, dass Ihr Gerät eine Verbindung mit Intune herstellt, um die neuesten Updates und die aktuelle Kommunikation zu erhalten. Die Installationsgeschwindigkeit kann sich nach Abschluss der Gerätesynchronisierung erhöhen.
 
-Intune unterstützt die manuelle Synchronisierung über die Unternehmensportal-App und über die Geräte-App „Einstellungen“. 
+Intune unterstützt die manuelle Synchronisierung über die Unternehmensportal-App, die Desktoptaskleiste oder das Startmenü und über die Geräte-App „Einstellungen“. 
 
 Die Funktionen der Unternehmensportal-App werden auf Windows 10-Geräten unterstützt, auf denen Creators Update (1703) oder höher ausgeführt wird. 
 * [Synchronisieren über die Unternehmensportal-App](#Sync-from-Company-Portal-app-for-Windows)  
@@ -51,8 +51,19 @@ Führen Sie die folgenden Schritte aus, um Windows 10-Geräte, auf denen Creator
     
     ![Screenshot der Seite „Einstellungen“ der Unternehmensportal-App, Schaltfläche „Synchronisierung“ hervorgehoben](./media/RS1_settingspage_sync05.png)  
 
+## <a name="sync-from-device-taskbar-or-start-menu"></a>Synchronisieren über die Gerätetaskleiste oder das Startmenü   
+
+Sie können über den Desktop Ihres Geräts auch außerhalb der App auf die Synchronisierungssteuerung zugreifen. Dies ist nützlich, wenn Sie die App direkt an Ihre Taskleiste oder das Startmenü angeheftet haben und eine schnelle Synchronisierung durchführen möchten.  
+
+1. Suchen Sie das Symbol der Unternehmensportal-App auf Ihrer Taskleiste oder in Ihrem Startmenü.  
+2. Klicken Sie mit der rechten Maustaste auf das Symbol der App, sodass deren Menü (das sogenannte Kontextmenü) angezeigt wird.  
+
+    ![Screenshot der Windows-Taskleiste auf dem Desktop eines Geräts Es wurde auf das Symbol der Unternehmensportal-App geklickt, um ein Menü mit den Optionen „An Taskleiste anheften“, „Fenster schließen“ und „Dieses Gerät synchronisieren“ anzuzeigen.](./media/sync-device-from-start-menu-1807.png)  
+
+3. Wählen Sie **Dieses Gerät synchronisieren** aus. Die Unternehmensportal-App wird geöffnet und zeigt die Seite **Einstellungen** an. Außerdem wird die Synchronisierung gestartet.  
+
 ## <a name="sync-from-settings-app"></a>Synchronisieren über die App „Einstellungen“ 
-Führen Sie die folgenden Schritte aus, um Ihre Microsoft HoloLens-, Windows 10 Desktop-, Windows 10 Mobile- oder Windows Phone 8.1-Geräte über die App „Einstellungen“ manuell zu synchronisieren.
+Führen Sie die folgenden Schritte aus, um Ihre Microsoft HoloLens-, Windows 10 Desktop-, Windows 10 Mobile- oder Windows Phone 8.1-Geräte über die App „Einstellungen“ manuell zu synchronisieren.  
 
 ### <a name="windows-10-desktop"></a>Windows 10 Desktop
 1. Wählen Sie auf Ihrem Gerät die Optionen **Start** > **Einstellungen** aus.

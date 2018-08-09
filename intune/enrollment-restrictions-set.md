@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2900f7c211a675a20300a2e212b0d57bad3a597a
+ms.sourcegitcommit: 32a4b1eb6bf20da7262f27276f8e94e435803386
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905817"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39501148"
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
@@ -77,7 +77,7 @@ Sie können die Einstellungen für eine Gerätetypbeschränkung ändern, indem S
 4. Wählen Sie unter **Gerätetypbeschränkungen** die Beschränkung, die Sie festlegen möchten.
 5. Wählen Sie unter dem Namen der Beschränkung (**Alle Benutzer** für die Standardbeschränkung) die Option **Plattformen** aus. Wählen Sie für jede aufgeführte Plattform **Zulassen** oder **Blockieren** aus.
 6. Wählen Sie **Speichern** aus.
-7. Klicken Sie unter dem Namen der Beschränkung (**Alle Benutzer** für die Standardbeschränkung) auf **Plattformkonfigurationen**. Wählen Sie dann die mindestens erforderliche und die maximal zulässige **Version** für die aufgelisteten Plattformen aus. Die folgenden Versionen werden unterstützt:
+7. Klicken Sie unter dem Namen der Beschränkung (**Alle Benutzer** für die Standardbeschränkung) auf **Plattformkonfigurationen**. Wählen Sie dann die mindestens erforderliche und die maximal zulässige **Version** für die aufgelisteten Plattformen aus. Folgende Versionsformate werden unterstützt:
     - Android-Arbeitsprofile unterstützen major.minor.rev.build.
     - iOS unterstützt major.minor.rev.
     - Windows unterstützt major.minor.rev.build nur für Windows 10.

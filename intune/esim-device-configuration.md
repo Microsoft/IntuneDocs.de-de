@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 7/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac3bbb4a32e86d756835d136cd3923676f022a7b
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336049"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400282"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Öffentliche Vorschau: Konfigurieren von eSIM-Mobilfunkprofilen in Intune
 
@@ -26,7 +26,7 @@ ms.locfileid: "39336049"
 
 ## <a name="introduction"></a>Einführung
 
-eSIM ist ein eingebetteter SIM-Chip, mit dem Sie auf einem eSIM-fähigen Gerät, wie z.B. dem [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro), über Mobilfunk eine Verbindung mit dem Internet herstellen können. Mit einer eSIM benötigen Sie keine SIM-Karte von Ihrem Mobilfunkanbieter, und Sie können schnell zwischen Mobilfunkanbietern und Datentarifen wechseln.
+eSIM ist ein eingebetteter SIM-Chip, mit dem Sie auf einem eSIM-fähigen Gerät, wie z.B. dem [Surface LTE Pro](https://www.microsoft.com/surface/business/surface-pro), über Mobilfunk eine Verbindung mit dem Internet herstellen können. Mit einer eSIM müssen Sie keine SIM-Karte von Ihrem Mobilfunkanbieter erhalten. Wenn Sie viel reisen, können Sie zwischen den Mobilfunkanbietern und Datentarifen wechseln, um stets verbunden zu sein.
 
 Sie haben beispielsweise einen Mobilfunktarif für Ihre Arbeit und einen Datentarif bei einem anderen Mobilfunkanbieter für den persönlichen Gebrauch. Bei Reisen erhalten Sie Zugang zum Internet, indem nach Mobilfunkanbietern mit Datentarifen in diesem Gebiet gesucht wird.
 
