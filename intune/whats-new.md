@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321559"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362057"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -1123,6 +1123,16 @@ Sie können abgelehnte Apps in Intune festlegen. Wenn eine App abgelehnt wird, w
 
 
 ## <a name="notices"></a>Benachrichtigungen
+
+### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Planen der Änderung: „Change Password at Next Auth“ (Kennwort bei der nächsten Authentifizierung ändern) zu Intune hinzugefügt<!-- 1873216 -->
+Für das Service Release im September plant Intune, die von Apple neu veröffentlichte Einstellung **Change Password at Next Auth** (Kennwort bei der nächsten Authentifizierung ändern) für Geräte mit MacOS-Version 10.13 und höher zu integrieren. Vor dieser Einstellung können MDM-Anbieter nicht überprüfen, ob das Gerätekennwort geändert wurde, um kompatibel zu sein. Die Konfigurations- und Konformitätsrichtlinien von Intune validieren nur, dass bei der nächsten Änderung eines Gerätekennworts dieses als konform gekennzeichnet ist. Wenn diese neue Apple-Funktion hinzugefügt wird, erhalten Ihre MacOS-Benutzer eine Aufforderung, ihr Kennwort zu aktualisieren, selbst wenn ihr Kennwort konform ist.
+
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
+Dies wirkt sich auf Umgebungen mit einer MacOS-Geräterichtlinie unter Verwendung von Intune oder einer hybriden MDM aus. Mit der neuen Apple-Einstellung **Change Password at Next Auth** (Kennwort bei der nächsten Authentifizierung ändern) kann Intune Benutzer zwingen, ihr Kennwort zu aktualisieren, wenn eine Passwortrichtlinie durchgesetzt wird. Wenn Sie Unternehmensressourcen blockieren, bis das Gerät als konform gekennzeichnet ist, werden Ihre Endbenutzer möglicherweise für den Zugriff auf Unternehmensressourcen wie E-Mail- oder SharePoint-Websites gesperrt, bis sie ihr Kennwort zurücksetzen. Künftig zwingen alle Aktualisierungen der Konfigurations- und Konformitätskennwortrichtlinien Benutzer gezielt dazu, ihre Kennwörter zu aktualisieren.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
+Setzen Sie sich mit Ihrem Helpdesk in Verbindung. Wenn Sie diese MacOS-Geräterichtlinie nicht durchsetzen wollen, empfehlen wir Ihnen, Ihre bestehende MacOS-Richtlinie aufzuheben oder zu löschen. Kundenbefragungen zeigen, dass die meisten Kunden von dieser Änderung nicht betroffen sind. Die meisten Endbenutzer aktualisieren ihr Kennwort, nachdem sie eine Aufforderung erhalten haben, sich mit einem Kennwort anzumelden, oder setzen ihr Kennwort zurück, um konform zu bleiben.
+
 
 ### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>Änderungen einplanen: Intune unterstützt ab September iOS 10 und höher <!-- 2454656 -->
 Es wird davon ausgegangen, dass Apple im September iOS 12 veröffentlicht. Sobald die neue Version veröffentlicht wurde, wird die Unterstützung von iOS 10 und höher für die Registrierung bei Intune, das Unternehmensportal und den verwalteten Browser eingeführt.  
