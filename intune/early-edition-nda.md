@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab6c808fc860491ddece5751983071d40864c8dd
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
+ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575082"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40001909"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>Early Edition für Microsoft Intune – August 2018
 
@@ -44,7 +44,7 @@ Diese Seite wird regelmäßig aktualisiert. Überprüfen Sie, ob weitere Updates
 ### <a name="windows-hello-will-target-users-and-devices----1106609---"></a>Windows Hello ist für Benutzer und Geräte konzipiert <!-- 1106609 -->
 Wenn Sie eine [Windows Hello for Business](windows-hello.md)-Richtlinie erstellen, gilt diese für alle Benutzer innerhalb der Organisation (mandantenweit). Mit diesem Update kann die Richtlinie mithilfe einer Gerätekonfigurationsrichtlinie (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Identity Protection** > **Windows Hello for Business**) auch auf bestimmte Benutzer oder Geräte angewendet werden.
 
-In Intune im Azure-Portal sind die Windows Hello-Konfiguration und die dazugehörigen Einstellungen jeweils unter **Geräteregistrierung** und **Gerätekonfiguration** verfügbar. Die **Geräteregistrierung** ist für die gesamte Organisation (mandantenweit) konzipiert und unterstützt Windows AutoPilot (OOBE). Die **Gerätekonfiguration** ist für Geräte und Benutzer konzipiert, die eine Richtlinie verwenden, die während des Check-In angewendet wird.
+In Intune im Azure-Portal sind die Windows Hello-Konfiguration und die dazugehörigen Einstellungen jeweils unter **Geräteregistrierung** und **Gerätekonfiguration** verfügbar. Die **Geräteregistrierung** ist für die gesamte Organisation (mandantenweit) konzipiert und unterstützt Windows Autopilot (OOBE). Die **Gerätekonfiguration** ist für Geräte und Benutzer konzipiert, die eine Richtlinie verwenden, die während des Check-In angewendet wird.
 
 Gilt für:  
 - Windows 10 und höher
@@ -75,8 +75,8 @@ Um eine Bereichsmarkierung zu erstellen, klicken Sie auf **Intune-Rollen** > **B
 Um einer Rollenzuweisung eine Bereichsmarkierung hinzuzufügen, klicken Sie auf **Intune-Rollen** > **Alle Rollen** > **Policy and Profile Manager** (Richtlinien- und Profil-Manager) > **Zuweisungen** > **Bereich (Gruppen)**.
 Um eine Bereichsmarkierung zu einem Konfigurationsprofil hinzuzufügen, klicken Sie auf **Gerätekonfiguration** > **Profile**, wählen Sie ein Profil aus, und klicken Sie auf **Eigenschaften** > **Bereich (Markierungen)**.
 
-### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Hinzufügen eines Benutzer- und Anzeigenamens zu einem AutoPilot-Gerät <!--1346521 -->
-Eine zukünftige öffentliche Vorschauversion ermöglicht es Administratoren, einen Benutzer einem einzelnen AutoPilot-Gerät zuzuweisen.  Administratoren können Anzeigenamen auch vergeben, um den Benutzer zu begrüßen, wenn dieser sein Gerät mit AutoPilot einrichtet.
+### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Zuweisen eines Benutzer- und Anzeigenamens zu einem Autopilot-Gerät <!--1346521 -->
+Eine zukünftige öffentliche Vorschauversion ermöglicht es Administratoren, einen Benutzer einem einzelnen Autopilot-Gerät zuzuweisen.  Administratoren können Anzeigenamen auch vergeben, um den Benutzer zu begrüßen, wenn dieser sein Gerät mit Autopilot einrichtet.
 
 Gilt für: Windows Insider 1809 oder einen späteren Build (während der Vorschauversion).
 
@@ -99,30 +99,29 @@ Klicken Sie auf **Geräteregistrierung** > **Geräteeinschränkungen**, um diese
 Das Aktivieren dieser Einschränkung hat keine Auswirkungen auf Geräte, die bereits registriert sind.
 Nachdem eine Einschränkung aktiviert wurde, überprüft Intune, ob alle neuen Windows-Registrierungsanforderungen als Unternehmensregistrierung autorisiert wurden. Die folgenden Methoden sind als Unternehmensregistrierung autorisiert:
 - Der Benutzer, der sich registriert, verwendet ein [Konto für den Geräteregistrierungs-Manager]( device-enrollment-manager-enroll.md).
-
-- Das Gerät wird über [Windows AutoPilot](enrollment-autopilot.md) registriert.
+- Das Gerät wird über [Windows Autopilot](enrollment-autopilot.md) registriert.
 - Die IME-Nummer des Geräts ist unter **Geräteregistrierung** > **[Bezeichner von Unternehmensgeräten]( corporate-identifiers-add.md)** aufgeführt.
 - Das Gerät wird über ein [Massenbereitstellungspaket](windows-bulk-enroll.md) registriert.
 - Das Gerät wird über eine [automatische Registrierung von SCCM für die Co-Verwaltung](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management) registriert.
-Nicht autorisierte Registrierungen werden blockiert.
-Die folgenden Registrierungen werden von Intune als unternehmenseigen markiert. Da diese jedoch nicht die gerätespezifische Steuerung über den Intune-Administrator bieten, werden sie blockiert:
+
+Nicht autorisierte Registrierungen werden blockiert. Die folgenden Registrierungen werden von Intune als unternehmenseigen markiert. Da diese jedoch nicht die gerätespezifische Steuerung über den Intune-Administrator bieten, werden sie blockiert:
 - [Automatische MDM-Registrierung](windows-enroll.md#enable-windows-10-automatic-enrollment) mit der [Azure Active Directory-Einbindung während der Windows-Einrichtung](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
 - [Automatische MDM-Registrierung](windows-enroll.md#enable-windows-10-automatic-enrollment) mit der [Azure Active Directory-Einbindung bei der Windows-Einrichtung](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
+
 Die folgenden persönlichen Registrierungsmethoden werden ebenso blockiert:
 - [Automatische MDM-Registrierung](windows-enroll.md#enable-windows-10-automatic-enrollment) durch [Hinzufügen eines Geschäftskontos über die Windows-Einstellungen](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup).
-
 - Die Option [MDM enrollment only]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) (Nur MDM-Registrierung) in den Windows-Einstellungen.
 
-### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Angeben von Computernamensmustern in einem AutoPilot-Profil <!--1849855-->
-Sie können eine Vorlage für einen Computernamen angeben, um den [Computernamen](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) während der AutoPilot-Registrierung zu generieren und festzulegen. Nehmen Sie diese Einstellung im AutoPilot-Profil vor, das sich unter **Geräteregistrierung** > **Windows-Registrierung** > **Windows Autopilot Deployment-Dienst** > **Profile** befindet. Es können nur alphanumerische Zeichen und Zeichen mit Bindestrichen verwendet werden.
+### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Angeben von Computernamensmustern in einem Autopilot-Profil <!--1849855-->
+Sie können eine Vorlage für einen Computernamen angeben, um den [Computernamen](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) während der Autopilot-Registrierung zu generieren und festzulegen. Nehmen Sie diese Einstellung im Autopilot-Profil vor, das sich unter **Geräteregistrierung** > **Windows-Registrierung** > **Windows Autopilot Deployment-Dienst** > **Profile** befindet. Es können nur alphanumerische Zeichen und Zeichen mit Bindestrichen verwendet werden.
 Gilt für: Windows Insider 1809 oder einen späteren Build (während der Vorschauversion).
 
 ### <a name="ios-version-number-and-build-number-are-shown----1892471---"></a>iOS-Versionsnummer und Buildnummer werden angezeigt <!-- 1892471 -->
 Unter **Gerätekompatibilität** > **Gerätekompatibilität** wird die iOS-Betriebssystemversion angezeigt. In einem zukünftigen Update wird auch die Buildnummer angezeigt.
 Wenn Sicherheitsupdates veröffentlicht werden, bleibt die Versionsnummer von Apple in der Regel unverändert bestehen, die Buildnummer wird jedoch aktualisiert. Durch Anzeigen der Buildnummer können Sie einfach überprüfen, ob ein Sicherheitsupdate installiert wird.
 
-### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Ausblenden der Kontoänderungsoptionen für Windows AutoPilot-Profile auf der Anmeldeseite für Geschäftskontos und der Domänenfehlerseite <!--1901669 -->
-Eine öffentliche Vorschauversion enthält neue Windows AutoPilot-Profiloptionen für Administratoren zum Ausblenden der Kontoänderungsoptionen auf der Anmeldeseite für Geschäftskontos und auf der Domänenfehlerseite. Für das Ausblenden dieser Optionen muss das Unternehmensbranding in Azure Active Directory konfiguriert sein. Gilt für: Windows Insider 1809 oder einen späteren Build (während der Vorschauversion).
+### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Ausblenden der Kontoänderungsoptionen für Windows Autopilot-Profile auf der Anmeldeseite und der Domänenfehlerseite des Unternehmens <!--1901669 -->
+Eine öffentliche Vorschauversion enthält neue Windows Autopilot-Profiloptionen, mit denen Administratoren Kontoänderungsoptionen auf der Anmeldeseite und der Domänenfehlerseite des Unternehmens ausblenden können. Für das Ausblenden dieser Optionen muss das Unternehmensbranding in Azure Active Directory konfiguriert sein. Gilt für: Windows Insider 1809 oder einen späteren Build (während der Vorschauversion).
 
 ### <a name="delay-when-ios-software-updates-are-shown-on-the-device----1949583---"></a>Verzögerung, wenn iOS-Softwareupdates auf dem Gerät angezeigt werden <!-- 1949583 -->
 Sie können in Intune unter **Softwareupdates** > **Update policies for iOS** (Updaterichtlinien für iOS) die Tage und Uhrzeiten konfigurieren, an denen die Geräte keine Updates installieren sollen. In einem zukünftigen Update können Sie einen Zeitraum von 1 bis 90 Tagen einstellen, in dem ein Softwareupdate auf dem Gerät angezeigt wird. 
@@ -167,6 +166,13 @@ Gilt für:
 Konformitätsrichtlinien, die im klassischen Azure-Portal erstellt wurden, werden als veraltet markiert.  In diesem Fall können Sie vorhandenen Richtlinien überprüfen und löschen. Diese Richtlinien können jedoch nicht aktualisiert werden. Sie können diese Richtlinien als durch Trennzeichen getrennte Datei (CSV-Datei) exportieren. Verwenden Sie anschließend die Informationen in der Datei, um die Richtlinien im Intune Azure-Portal neu zu erstellen.
 > [!IMPORTANT]
 > Wenn das klassische Azure-Portal eingestellt wird, können Sie nicht mehr auf Ihre Richtlinien zugreifen und diese auch nicht anzeigen. Exportieren Sie sie deshalb auf jeden Fall, und erstellen Sie sie im Azure-Portal neu, bevor das klassische Azure-Portal eingestellt wird.
+
+### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>Änderung der Terminologie in „Außer Betrieb nehmen“ und „Zurücksetzen“ <!-- 2175759 -->
+Um Konsistenz mit der Graph-API herzustellen, werden auf der Benutzeroberfläche und in der Dokumentation von Intune folgende Begriffe geändert:
+- **Unternehmensdaten entfernen** wird zu **Außer Betrieb nehmen**.
+- **Auf Werkseinstellungen zurücksetzen** wird zu **Zurücksetzen**.
+
+
 
 <!-- 1807 start -->
 

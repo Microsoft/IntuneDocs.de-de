@@ -1,12 +1,11 @@
 ---
-title: Einstellungen für Geräteeinschränkungen für Android in Microsoft Intune
-titlesuffix: ''
-description: In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf Android-Geräten kennen.
+title: Einstellungen für Geräteeinschränkungen für Android in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: 'Hier finden Sie eine Liste aller Android-Geräteeinstellungen, die Sie in Microsoft Intune steuern und einschränken können. Mit diesen Einstellungen können Sie Folgendes steuern: Kennwort, Zugriff auf Google Play, Zulassen oder Verbieten von Apps, Steuern der Browsereinstellungen, Blockieren von Apps, Sicherung in der Google-Cloud sowie Steuern der Optionen für Nachrichten, Spracheinstellungen, Datenroaming, WLAN und Bluetooth-Verbindungen.'
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 08/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +13,14 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 100742b378b30eab84b28c01728b2b382dd5155c
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
+ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190655"
+ms.lasthandoff: 08/07/2018
+ms.locfileid: "39587022"
 ---
-# <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Android und Samsung KNOX Standard in Microsoft Intune 
+# <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Standardeinstellungen für Geräteeinschränkungen für Android und Samsung KNOX – Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -53,7 +52,7 @@ In diesem Artikel lernen Sie alle Einstellungen für Geräteeinschränkungen in 
     > Samsung Knox-Geräte erfordern automatisch eine vierstellige PIN bei der MDM-Registrierung. Native Android-Geräte erfordern möglicherweise automatisch eine PIN, damit sie konform mit den bedingten Zugriffsvoraussetzungen sind.
 
 - **Minimale Kennwortlänge:** Geben Sie die Mindestanzahl von Zeichen an, die Benutzer für das Kennwort festlegen müssen (zwischen 4 und 16 Zeichen).
-- **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung:** Gibt die Anzahl der Minuten der Inaktivität an, bevor das Gerät automatisch gesperrt wird.
+- **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung**: Geben Sie an, wie viele Minuten ein Gerät höchstens inaktiv sein darf, bevor es automatisch gesperrt wird. Ein Endbenutzer kann auf dem Gerät keinen höheren Wert als die im Profil konfigurierte Zeit festlegen. Der Endbenutzer kann einen niedrigeren Zeitwert festlegen. Wenn das Profil auf 15 Minuten festgelegt ist, kann ein Endbenutzer den Wert auf 5 Minuten festlegen, aber nicht auf 30 Minuten. 
 - **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird:** Gibt die Anzahl zulässiger Anmeldefehler an, bevor das Gerät zurückgesetzt wird.
 - **Kennwortablauf (Tage):** Gibt die Anzahl der Tage an, bevor das Gerätekennwort geändert werden muss.
 -  **Erforderlicher Kennworttyp:** Gibt den erforderlichen Grad der Kennwortkomplexität an. Zudem wird angegeben, ob biometrische Geräte zulässig sind. Es stehen die folgenden Optionen zur Auswahl:
