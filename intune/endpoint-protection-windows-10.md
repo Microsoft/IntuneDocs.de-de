@@ -98,7 +98,7 @@ Diese Einstellungen gelten für bestimmte Netzwerktypen, einschließlich **Domä
 
 ## <a name="windows-defender-smartscreen-settings"></a>Einstellungen für Windows Defender SmartScreen
 
-Dieses Feature wird auf folgenden Windows 10-Editionen unterstützt, auf denen Edge installiert ist:
+Dieses Feature wird auf folgenden Windows 10-Editionen unterstützt, auf denen Microsoft Edge installiert ist:
 - Startseite
 - Professional
 - Business

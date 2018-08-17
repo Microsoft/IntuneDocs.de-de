@@ -97,7 +97,7 @@ Diese Anweisungen gelten für Office 365, Exchange 2016, Exchange 2013 für Outl
 LinkedIn-Kontoverbindungen ermöglichen Benutzern öffentliche LinkedIn-Profilinformationen in bestimmten Microsoft-Apps anzuzeigen. Standardmäßig können Ihre Benutzer auswählen, ob sie ihre LinkedIn- und Microsoft-Arbeits- oder Schulkonten verbinden möchten, um zusätzliche LinkedIn-Profilinformationen anzuzeigen. 
 
 > [!NOTE]
-> Die Integration von LinkedIn ist derzeit für Kunden der US-Regierung und Organisationen mit Exchange Online-Postfächern nicht verfügbar, die in Australien, Kanada, China, Frankreich, Deutschland, Indien, Südkorea, Großbritannien, Japan und Südafrika gehostet werden.
+> Die Integration von LinkedIn ist derzeit für Kunden der US-Regierung und Organisationen mit Exchange Online-Postfächern nicht verfügbar, die in Australien, Kanada, China, Frankreich, Deutschland, Indien, Südkorea, Japan, Südafrika und dem Vereinigten Königreich gehostet werden.
 
 Die Richtlinien für Intune SDK und Intune-App-Schutz umfassen keine Unterstützung für die Verwaltung von LinkedIn-Kontoverbindungen, es gibt jedoch andere Möglichkeiten, diese zu verwalten. Sie können LinkedIn-Kontoverbindungen für Ihre gesamte Organisation deaktivieren. Sie können LinkedIn-Kontoverbindungen auch für ausgewählte Benutzergruppen in Ihrer Organisation aktivieren. Diese Einstellungen betreffen LinkedIn-Verbindungen über Office 365-Apps auf allen Plattformen (Web, Mobil und Desktop). Sie können:
 
