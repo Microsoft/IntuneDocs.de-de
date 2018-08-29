@@ -158,8 +158,7 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 -   **Cookies:** Erlaubt Browsern das Speichern von Internetcookies auf dem Gerät.
 -   **Javascript:** Erlaubt die Ausführung von Skripts wie z.B. JavaScript im Microsoft Edge-Browser.
 -   **Popups:** Blockiert Popupfenster im Browser (gilt nur für Windows 10 Desktop).
--   
-  **Suchvorschläge:** Ermöglicht der Such-Engine, Websites während der Eingabe von Suchausdrücken vorzuschlagen.
+-   **Suchvorschläge:** Ermöglicht der Such-Engine, Websites während der Eingabe von Suchausdrücken vorzuschlagen.
 -   **Datenverkehr im Intranet an Internet Explorer senden:** Erlaubt Benutzern, Intranetsites in Internet Explorer zu öffnen (nur Windows 10 Desktop).
 -   **AutoAusfüllen:** Erlaubt Benutzern, die Einstellungen für AutoAusfüllen im Browser zu ändern (nur Windows 10 Desktop).
 -   **Kennwort-Manager:** Aktiviert oder deaktiviert den Microsoft Edge-Kennwort-Manager.
@@ -173,8 +172,7 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 -   **Änderungen an Startseite:** Ermöglicht Benutzern das Ändern der Startseiten, die beim Öffnen von Microsoft Edge angezeigt werden. Nutzen Sie die Einstellung der Startseiten, um die Seite oder Liste von Seiten zu erstellen, die beim Starten von Microsoft Edge geöffnet werden.
 -   **Zugriff auf about:flags-Seite blockieren:** Hindert den Benutzer am Zugriff auf die about:flags-Seite in Microsoft Edge, die Entwickler- und experimentelle Einstellungen enthält.
 -   **WebRTC-LocalHost-IP-Adresse:** Blockiert die Anzeige der Localhost-IP-Adresse des Benutzers bei Anrufen über das Internet-RTC-Protokoll.
--   
-  **Standardsuch-Engine:** Gibt die zu verwendende Standardsuch-Engine an. Endbenutzer können diesen Wert jederzeit ändern.
+-   **Standardsuch-Engine:** Gibt die zu verwendende Standardsuch-Engine an. Endbenutzer können diesen Wert jederzeit ändern.
 -   **Browserdaten beim Beenden löschen:** Löscht Verlauf und Browserdaten, wenn der Benutzer Microsoft Edge beendet.
 -   **Datenerfassung für Livekacheln:** Beendet das Sammeln von Daten durch Windows aus den Livekacheln, wenn der Benutzer eine Seite an das Startmenü von Microsoft Edge anheften.
 -  **Favoritenliste:** Definiert den Pfad zur Favoritendatei. Beispiel: http://contoso.com/favorites.html.
