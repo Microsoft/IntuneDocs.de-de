@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212034"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903142"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Einrichten der Registrierung von Android Enterprise-Kioskgeräten
 
@@ -56,7 +56,7 @@ Sie müssen ein Registrierungsprofil erstellen, damit Sie Ihre Kioskgeräte regi
 1. Navigieren Sie zum [Intune-Portal](https://portal.azure.com), und klicken Sie auf **Geräteregistrierung** > **Android-Registrierung** > **Kiosk und Taskgeräteregistrierungen**.
 2. Klicken Sie auf **Erstellen**, und füllen Sie die erforderlichen Felder aus.
     - **Name:** Geben Sie einen Namen ein, den Sie zum Zuweisen des Profils zu einer dynamischen Gerätegruppe verwenden.
-    - **Datum für Tokenablauf:** Das Datum, an dem das Token abläuft. Google erzwingt maximal 30 Tage.
+    - **Datum für Tokenablauf:** Das Datum, an dem das Token abläuft. Google erzwingt maximal 90 Tage.
 3. Wählen Sie **Erstellen** aus, um das Profil zu speichern.
 
 ### <a name="create-a-device-group"></a>Erstellen einer Gerätegruppe
@@ -110,7 +110,7 @@ Bei Android 5.1- und höheren Geräten, die NFC unterstützen, können Sie Ihre 
 
 ### <a name="enroll-by-using-a-token"></a>Registrieren mithilfe eines Tokens
 
-Für Android 6-Geräte und höher können Sie das Token zum Registrieren des Geräts verwenden.
+Für Android 6-Geräte und höher können Sie das Token zum Registrieren des Geräts verwenden. Bei Android 6.1 und höheren Versionen kann bei Verwendung der Registrierungsmethode **aft#setup** auch der QR-Code-Scan genutzt werden.
 
 1. Schalten Sie das Gerät ein, das Sie auf Werkseinstellungen zurücksetzen möchten.
 2. Wählen Sie auf dem **Willkommenssbildschirm** Ihre Sprache aus.
@@ -125,6 +125,9 @@ Für Android 6-Geräte und höher können Sie das Token zum Registrieren des Ger
 ### <a name="enroll-by-using-a-qr-code"></a>Registrieren mithilfe eines QR-Codes
 
 Auf Android 7-Geräten und höher können Sie den QR-Code aus dem Registrierungsprofil scannen, um das Gerät zu registrieren.
+
+> [!Note]
+> Bei bestimmten Zoomeinstellungen des Browsers können Geräte möglicherweise keine QR-Codes scannen. Dieses Problem lässt sich durch die Erhöhung des Zooms beheben.
 
 1. Tippen Sie mehrmals auf den ersten Bildschirm, der nach einer Zurücksetzung auf die Werkseinstellungen angezeigt wird, um einen QR-Scanner auf dem Android-Gerät zu starten.
 2. Auf Android 7- und 8-Geräten werden Sie dazu aufgefordert, einen QR-Scanner zu installieren. Auf Android 9-Geräten und höher ist bereits ein QR-Scanner installiert.

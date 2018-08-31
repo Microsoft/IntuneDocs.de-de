@@ -64,7 +64,7 @@
 ### [Was geschieht, wenn Sie ein iOS-Gerät registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Installieren und Anmelden beim Unternehmensportal](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [Registrieren Ihres iOS-Geräts](enroll-your-device-in-intune-ios.md)
-### [Registrieren Ihres iOS-Geräts, das über das Apple-Programm zur Geräteregistrierung erworben wurden](enroll-your-device-dep-ios.md)
+### [Registrieren eines von Ihrer Organisation bereitgestellten iOS-Geräts](enroll-your-device-dep-ios.md)
 
 ### [Verwenden verwalteter Apps auf Ihrem Gerät](use-managed-apps-on-your-device-ios.md)
 ### [Festlegen oder Ändern der Kennung](set-or-change-your-passcode-ios.md)
@@ -103,7 +103,7 @@
 ## [Verwenden Ihres macOS-Geräts](using-your-macos-device-with-intune.md)
 ### [Was geschieht, wenn Sie ein macOS-Gerät registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [Registrieren Ihres macOS-Geräts](enroll-your-device-in-intune-macos-cp.md)
-### [Registrieren eines von einem Unternehmen bereitgestelltes macOS-Geräts](enroll-company-device-macos.md)  
+### [Registrieren eines von Ihrer Organisation bereitgestellten macOS-Geräts](enroll-company-device-macos.md)  
 ### [Aufheben der Registrierung Ihres macOS-Geräts](unenroll-your-device-from-intune-macos.md)  
 ### [Behandeln häufig auftretender Probleme mit macOS](troubleshoot-your-device-macos.md)
 #### [Meine macOS-Version wird noch nicht unterstützt.](your-macos-version-isnt-yet-supported.md)
