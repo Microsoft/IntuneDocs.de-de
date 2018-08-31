@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 095985bad8f7e35a953383fcce8296716723b8bc
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909064"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255067"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Einrichten der Registrieren von Android-Arbeitsprofilgeräten
 
@@ -34,7 +34,7 @@ Führen Sie die folgenden Schritte aus, um die Android-Arbeitsprofilerverwaltung
 2. Geben Sie die Registrierungseinstellungen von Android-Arbeitsprofilen an. Android-Arbeitsprofile werden [nur auf bestimmten Android-Geräten unterstützt](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Jedes Gerät, das Android-Arbeitsprofile unterstützt, unterstützt auch die herkömmliche Android-Verwaltung. Mit Intune können Sie angeben, wie Geräte, die Android-Arbeitsprofile unterstützen, mithilfe von [Registrierungseinschränkungen](enrollment-restrictions-set.md) verwaltet werden sollen.
     - **Blockieren (Standardeinstellung):** Alle Android-Geräte, einschließlich der Geräte, die Android-Arbeitsprofile unterstützen, werden als herkömmliche Android-Geräte registriert.
     - **Zulassen:** Alle Geräte, die Android-Arbeitsprofile unterstützen, werden als Android-Arbeitsprofilgeräte registriert. Android-Geräte, die nicht Android-Arbeitsprofile unterstützen, werden als herkömmliche Android-Geräte registriert.
-3. [Informieren Sie Ihre Benutzer darüber, wie sie ihre Geräte registrieren sollen.](/intune-user-help/enroll-your-device-in-intune-android.md)
+3. [Informieren Sie Ihre Benutzer darüber, wie sie ihre Geräte registrieren sollen.](/intune-user-help/enroll-your-device-in-intune-android)
 
 
 Wenn Sie Geräte in Android-Arbeitsprofilen registrieren möchten, die bereits als reguläre Android-Geräte registriert wurden, müssen Sie die Registrierung der Geräte aufheben und die Geräte anschließend erneut registrieren.

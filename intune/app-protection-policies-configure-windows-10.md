@@ -15,21 +15,18 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d0956f56da4fd0e93bdcd26e06c7d48aa252f9b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0f8e5c6319e01404500f5a31fabd1baeb3520067
+ms.sourcegitcommit: 0f8d46d644f78609fae8bf91197ae77c7af45d23
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831208"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251752"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Vorbereitungen zum Konfigurieren von App-Schutzrichtlinien für Windows 10 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Aktivieren Sie die Verwaltung für mobile Anwendungen (Mobile Application Management, MAM) für Windows 10, indem Sie den MAM-Anbieter in Azure AD festlegen. Durch die Festlegung eines MAM-Anbieters in Azure AD können Sie den Registrierungsstatus definieren, wenn Sie eine neue WIP-Richtlinie (Windows Information Protection) in Intune erstellen. Der Registrierungsstatus kann entweder „MAM“ oder „Mobile Geräteverwaltung (MDM)“ lauten.
-
-> [!NOTE]
-> Geräte mit einem MAM-Registrierungsstatus müssen mit Azure AD verknüpft sein.
 
 ## <a name="to-configure-the-mam-provider"></a>Konfigurieren des MAM-Anbieters
 
