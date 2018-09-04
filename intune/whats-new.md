@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 08/14/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: ff2774b76bceeeeaecec7a4dc74876b11706d574
-ms.sourcegitcommit: 56a8a3c8974f54f0f9ecc1e5b43581502ecc348e
+ms.openlocfilehash: 41c5af504bb65a661e55d09d735a78df780deb84
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39614512"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43092174"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,12 +42,21 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Sie e
 
 -->   
 
+
+## <a name="week-of-august-27-2018"></a>Woche vom 27. August 2018
+
+### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Verwendung von VPP-Gerätelizenzen, zur Vorabbereitstellung des Unternehmensportals während der DEP-Registrierung <!-- 1608345 -->
+Sie können jetzt Gerätelizenzen des Volume Purchase Program (VPP) verwenden, um das Unternehmensportal während der Registrierungsvorgänge des Programms zur Geräteregistrierung (Device Enrollment Program, DEP) vorab bereitzustellen. Geben Sie dazu bei der [Erstellung oder Bearbeitung eines Registrierungsprofils](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) das VPP-Token an, das Sie zum Installieren des Unternehmensportals verwenden möchten. Stellen Sie sicher, dass Ihr Token nicht abläuft, und dass Sie über genügend Lizenzen für die Unternehmensportal-App verfügen. In Fällen, in denen das Token abläuft oder über keine Lizenzen mehr verfügt, überträgt Intune stattdessen das App Store-Unternehmensportal mithilfe von Push (dafür ist die Eingabe eine Apple-ID erforderlich).
+
+
+## <a name="week-of-august-14-2018"></a>Woche vom 14. August 2018
+
+### <a name="macos-support-for-apple-device-enrollment-program----747651---"></a>macOS-Unterstützung für das Programm zur Geräteregistrierung von Apple<!-- 747651 -->
+Intune unterstützt jetzt die Registrierung von macOS-Geräten über das Apple-Programm zur Geräteregistrierung. Weitere Informationen finden Sie unter [Automatisches Registrieren von macOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](device-enrollment-program-enroll-macos.md).
+
 ## <a name="week-of-july-23-2018"></a>Woche vom 23. Juli 2018
 
 ### <a name="app-management"></a>App-Verwaltung
-
-####  <a name="windows-apps-file-extensions----1884873---"></a>Dateierweiterungen für Windows-Apps <!-- 1884873 -->
-Zu den Dateierweiterungen für Windows-Apps gehören nun *.msi*, *.appx*, *.appxbundle*, *.msix* und *.msixbundle*. Sie können eine App in Microsoft Intune hinzufügen, indem Sie **Mobile Apps** > **Apps** > **Hinzufügen** auswählen. Der Bereich **App hinzufügen** wird geöffnet. Dort können Sie den **App-Typ** auswählen. Wählen Sie zuerst einen App-Typ, mit dem Sie eine App-Paketdatei hochladen können, und anschließend die **App-Paketdatei** aus. Geben Sie danach eine Installationsdatei mit der entsprechenden Erweiterung an.
 
 #### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>Unterstützung von branchenspezifischen Apps für macOS <!-- 1895847 -->
 Mit Microsoft Intune können Sie branchenspezifische macOS-Apps als **Required** (Erforderlich) oder **Available with enrollment** (Mit Registrierung verfügbar) bereitstellen. Sie können Endbenutzern Apps als **Available** (Verfügbar) über das Unternehmensportal für macOS oder über die [Website des Unternehmensportals](https://portal.manage.microsoft.com) bereitstellen.
@@ -305,13 +314,13 @@ Bei diesem Update ist das Benutzerdiagramm wieder enthalten und wird im Azure-Po
 #### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118-wnready---"></a>Unterstützung für die Registrierung mit Windows Autopilot ohne Benutzerauthentifizierung <!-- 1165118 wnready -->
 Intune unterstützt jetzt die Registrierung mit Windows Autopilot ohne Benutzerauthentifizierung. Dies ist eine neue Option im Windows Autopilot-Bereitstellungsprofil („Autopilot Deployment mode“ (Autopilot-Bereitstellungsmodus) kann auf „Self-Deploying“ (Selbstbereitstellung) festgelegt werden).  Auf dem Gerät muss Windows 10 Insider Preview Build 17672 oder höher ausgeführt werden, außerdem muss ein TPM 2.0-Chip eingebaut sein, um diese Art der Registrierung erfolgreich abzuschließen. Da keine Benutzerauthentifizierung erforderlich ist, sollten Sie diese Option nur Geräte zuweisen, zu denen Sie physisch Zugang haben.
 
-#### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766-eeready---"></a>Neue Einstellung für Sprache/Region beim Konfigurieren von OOBE für Autopilot <!-- 1821766 eeready -->
+#### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766-eeready---"></a>Neue Einstellung für Sprache/Region beim Konfigurieren von OOBE für AutoPilot <!-- 1821766 eeready -->
 Es steht eine neue Konfigurationseinstellung zur Verfügung, mit der die Sprache und Region für Autopilot-Profile während der Out-of-Box-Experience festgelegt werden kann. Klicken Sie auf **Geräteregistrierung** > **Windows-Registrierung** > **Bereitstellungsprofile** > **Profil erstellen** > **Bereitstellungsmodus** = **Selbstbereitstellung** > **Standardwerte konfiguriert**, um die neuen Einstellungen anzuzeigen.
 
 #### <a name="new-setting-for-configuring-device-keyboard----1821768---"></a>Neue Einstellung zum Konfigurieren der Gerätetastatur <!-- 1821768 -->
-Es steht eine neue Einstellung zur Verfügung, mit der die Tastatur für Autopilot-Profile während der Out-of-Box-Experience konfiguriert werden kann. Klicken Sie auf **Geräteregistrierung** > **Windows-Registrierung** > **Bereitstellungsprofile** > **Profil erstellen** > **Bereitstellungsmodus** = **Selbstbereitstellung** > **Standardwerte konfiguriert**, um die neuen Einstellungen anzuzeigen.
+Es steht eine neue Einstellung zur Verfügung, mit der die Tastatur für AutoPilot-Profile während der Out-of-Box-Experience konfiguriert werden kann. Klicken Sie auf **Geräteregistrierung** > **Windows-Registrierung** > **Bereitstellungsprofile** > **Profil erstellen** > **Bereitstellungsmodus** = **Selbstbereitstellung** > **Standardwerte konfiguriert**, um die neuen Einstellungen anzuzeigen.
 
-#### <a name="autopilot-profiles-moving-to-group-targeting----1877935---"></a>Autopilot-Profile können bald Gruppenziele verwenden <!-- 1877935 -->
+#### <a name="autopilot-profiles-moving-to-group-targeting----1877935---"></a>AutoPilot-Profile können bald Gruppenziele verwenden <!-- 1877935 -->
 Autopilot-Bereitstellungsprofile können Azure AD-Gruppen zugewiesen werden, die Autopilot-Geräte enthalten.
 
 ### <a name="device-management"></a>Geräteverwaltung
@@ -321,8 +330,8 @@ In einigen Situationen empfiehlt es sich, den Zugriff auf Unternehmensressourcen
 
 Gilt für Android-Geräte 6.0 und höher mit der aktualisierten Unternehmensportal-App
 
-#### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Verhindern von Verbraucher-Apps und -Umgebungen auf dem Windows 10 Enterprise RS4 Autopilot-Gerät<!-- 1621980 -->
-Sie können die Installation von Verbraucher-Apps und -Umgebungen auf Ihren Windows 10 Enterprise RS4 Autopilot-Geräten verhindern. Navigieren Sie zu **Intune** > **Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Plattform** = **Windows 10 oder höher** > **Profiltyp** = **Geräteeinschränkungen** > **Konfigurieren** > **Windows-Blickpunkt** > **Endbenutzerfeatures**, um dieses Feature anzuzeigen. 
+#### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Verhindern von Verbraucher-Apps und -Umgebungen auf dem Windows 10 Enterprise RS4 AutoPilot-Gerät<!-- 1621980 -->
+Sie können die Installation von Verbraucher-Apps und -Umgebungen auf Ihren Windows 10 Enterprise RS4 AutoPilot-Geräten verhindern. Navigieren Sie zu **Intune** > **Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Plattform** = **Windows 10 oder höher** > **Profiltyp** = **Geräteeinschränkungen** > **Konfigurieren** > **Windows-Blickpunkt** > **Endbenutzerfeatures**, um dieses Feature anzuzeigen. 
 
 #### <a name="uninstall-the-latest-from-windows-10-software-updates----1732948-eeready---"></a>Deinstallieren der letzten Softwareupdates von Windows 10 <!-- 1732948 eeready -->
 Wenn Sie Probleme mit Unterbrechungen auf Ihren Windows 10-Computern feststellen, können Sie das neueste Featureupdate bzw. Qualitätsupdate deinstallieren (einen Rollback ausführen). Die Deinstallation eines Feature- oder Qualitätsupdates ist für den Wartungskanal nur möglich, wenn das Gerät eingeschaltet ist. Durch die Deinstallation wird eine Richtlinie ausgelöst, die das vorherige Update auf Ihren Windows 10-Computern wiederherstellt. Sie können insbesondere für Featureupdates den Zeitraum, in dem eine Deinstallation für die neueste Version durchgeführt werden kann, auf 2–60 Tage einschränken. Um die Deinstallationsoptionen für das Softwareupdate festzulegen, wählen Sie im Azure-Portal auf dem Blatt **Microsoft Intune** die Option **Softwareupdates** aus. Klicken Sie auf dem Blatt **Softwareupdates** auf **Windows 10-Updateringe**. Sie können dann die Option **Deinstallieren** im Bereich **Übersicht** auswählen.
@@ -367,7 +376,7 @@ Der Browser Microsoft Edge für mobile Geräte (iOS und Android) unterstützt nu
 
 #### <a name="require-installation-of-policies-apps-certificate-and-network-profiles----1553555---"></a>Erforderliche Installation von Richtlinien, Apps, Zertifikaten und Netzwerkprofilen <!-- 1553555 -->
 
-Administratoren können Endbenutzern den Zugriff auf Windows 10 RS4 Desktop verwehren, bis Richtlinien, Apps, Zertifikate und Netzwerkprofile während der Bereitstellung von Autopilot-Geräten von Intune installiert wurden. Weitere Informationen finden Sie unter [Set up an enrollment status page (Einrichten einer Statusseite für die Registrierung)](windows-enrollment-status.md).
+Administratoren können Endbenutzern den Zugriff auf Windows 10 RS4 Desktop verwehren, bis Richtlinien, Apps, Zertifikate und Netzwerkprofile während der Bereitstellung von AutoPilot-Geräten von Intune installiert wurden. Weitere Informationen finden Sie unter [Set up an enrollment status page (Einrichten einer Statusseite für die Registrierung)](windows-enrollment-status.md).
 
 #### <a name="configuring-your-app-protection-policies----2144597-part-2---"></a>Konfigurieren von App-Schutzrichtlinien <!-- 2144597 Part 2 -->
 
@@ -484,8 +493,8 @@ Siehe [Aktivieren von Windows Defender ATP mit bedingtem Zugriff in Intune](adva
 #### <a name="support-for-user-less-devices----1637553---"></a>Unterstützung für Geräte ohne Benutzer <!-- 1637553 -->
 Intune unterstützt die Möglichkeit, Konformität auf einem benutzerlosen Gerät zu bewerten, z.B. einem Microsoft Surface Hub-Gerät. Die Konformitätsrichtlinie kann sich auf bestimmte Geräte beziehen. Die Konformität (und auch Nichtkonformität) kann für Geräte festgelegt werden, die über keinen zugewiesenen Benutzer verfügen.
 
-#### <a name="delete-autopilot-devices----1713650---"></a>Löschen von Autopilot-Geräten <!-- 1713650 -->
-Intune-Administratoren können [Autopilot-Geräte löschen](enrollment-autopilot.md#delete-autopilot-devices).
+#### <a name="delete-autopilot-devices----1713650---"></a>Löschen von AutoPilot-Geräten <!-- 1713650 -->
+Intune-Administratoren können [AutoPilot-Geräte löschen](enrollment-autopilot.md#delete-autopilot-devices).
 
 #### <a name="improved-device-deletion-experience---1832333---"></a>Verbesserte Erfahrung bei der Gerätelöschung <!--1832333 -->
 Sie müssen nicht länger Unternehmensdaten entfernen oder das Gerät auf Werkseinstellungen zurücksetzen, bevor sie es [aus Intune löschen](devices-wipe.md#delete-devices-from-the-intune-portal).
@@ -757,10 +766,10 @@ Wir arbeiten daran, Benutzern mehr Kontrolle über ihre Daten und den Datenschut
 
 ## <a name="week-of-march-19-2018"></a>Woche vom 19. März 2018
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Exportieren aller Geräte in CSV-Dateien in Internet Explorer, Microsoft Edge oder Chrome <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Exportieren aller Geräte in CSV-Dateien in Internet Explorer, Edge oder Chrome <!-- 2258071 -->
 Unter **Geräte** > **Alle Geräte** können Sie die Geräte mithilfe der Option **Exportieren** in eine CSV-formatierte Liste exportieren. Internet Explorer-Benutzer mit mehr als 10.000 Geräten können ihre Geräte in mehrere Dateien exportieren. Jede Datei verfügt über bis zu 10.000 Geräte.
 
-Microsoft Edge- und Chrome-Benutzer mit mehr als 30.000 Geräten können ihre Geräte ebenfalls in mehrere Dateien exportieren. Jede Datei verfügt dann über bis zu 30.000 Geräte.
+Edge- und Chrome-Benutzer mit mehr als 30.000 Geräten können ihre Geräte ebenfalls in mehrere Dateien exportieren. Jede Datei verfügt dann über bis zu 30.000 Geräte.
 
 Über die Option [Geräte verwalten](device-management.md) erhalten Sie weitere Informationen dazu, wie Sie die verwalteten Geräte verwenden können.
 
@@ -1129,6 +1138,16 @@ Sie können abgelehnte Apps in Intune festlegen. Wenn eine App abgelehnt wird, w
 
 ## <a name="notices"></a>Benachrichtigungen
 
+### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Maßnahme erforderlich: Bitte aktualisieren Sie Ihre Android-Gerätebeschränkungen oder die Kennworteinstellungen für die Konformitätsrichtlinie in Intune
+Intune wird für Geräte mit Android 4.4 und höher den Kennworttyp „Gerätestandard“ entfernen. Aufgrund von unterschiedlichen Android-Plattformen und Gerätestandards wird diese Richtlinie häufig von dem Gerät als optional behandelt. Wir entfernen in einem der nächsten Releases diese Einstellung von der Benutzeroberfläche, um Unklarheiten dazu zu beseitigen, wann diese Einstellung für Android erzwungen wird. 
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
+- Wenn Sie ein Kennwort für die Geräte erforderlich machen möchten, wird empfohlen, dass Sie anstelle des „Gerätestandards“ Ihre Android-Plattformprofile bearbeiten, um den erforderlichen Kennworttypen deutlich hervorzuheben.
+- Wenn Sie möchten, dass der Endbenutzer entscheidet, ob er ein Kennwort erstellen möchte, klicken Sie auf die Schaltfläche „Nicht konfiguriert“. Wenn wir diese Einstellung von der Benutzeroberfläche entfernen, sie aber immer noch festgelegt ist, werden Sie aufgefordert, einen anderen Wert als den „Gerätestandard“ auszuwählen, wenn Sie das nächste Mal das Profil bearbeiten.
+Wie sollte ich mich für die Änderung vorbereiten?
+Prüfen Sie die Kennworteinstellungen für die Einschränkungen und Konformitätsrichtlinien für Android- und Android Enterprise-Geräte. Diese sind unter „System security for Compliance policies“ (Systemsicherheit für Konformitätsrichtlinien) und entweder unter „Gerätekennwort“ oder unter „Work profile settings for Device restrictions“ (Arbeitsprofileinstellungen für Geräteeinschränkungen) aufgeführt. Unter „zusätzliche Informationen“ finden Sie einen Link zu weiteren Informationen und Screenshots zur Konfiguration dieser Einstellungen.
+####<a name="additional-information"></a>Zusätzliche Informationen
+https://aka.ms/PasswordSettings 
+
 ### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Planen der Änderung: „Change Password at Next Auth“ (Kennwort bei der nächsten Authentifizierung ändern) zu Intune hinzugefügt<!-- 1873216 -->
 Für das Service Release im September plant Intune, die von Apple neu veröffentlichte Einstellung **Change Password at Next Auth** (Kennwort bei der nächsten Authentifizierung ändern) für Geräte mit MacOS-Version 10.13 und höher zu integrieren. Vor dieser Einstellung können MDM-Anbieter nicht überprüfen, ob das Gerätekennwort geändert wurde, um kompatibel zu sein. Die Konfigurations- und Konformitätsrichtlinien von Intune validieren nur, dass bei der nächsten Änderung eines Gerätekennworts dieses als konform gekennzeichnet ist. Wenn diese neue Apple-Funktion hinzugefügt wird, erhalten Ihre MacOS-Benutzer eine Aufforderung, ihr Kennwort zu aktualisieren, selbst wenn ihr Kennwort konform ist.
 
@@ -1171,22 +1190,6 @@ Es wird empfohlen, Abhängigkeiten von TLS 1.0 und 1.1 proaktiv aus Ihren Umgebu
 
 **Weitere Informationen:** [Umstellung von Intune auf TLS 1.2 für die Verschlüsselung](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
 
-### <a name="plan-for-change-new-windows-10-setting-for-kiosk-configuration-in-intune----1560072---"></a>Planen der Änderung: Neue Windows 10-Einstellung für die Kioskkonfiguration in Intune <!-- 1560072 -->
-Es wurde geändert, wie und wo Sie Desktops von Windows 10-Version 1709 und höher (RS3 und höher) im Intune-Azure-Portal konfigurieren.
-
-#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich? 
-Unseren Informationen zufolge verwenden Sie die Einstellung „Windows 10 > Geräteeinschränkungen > Kiosk (Vorschau)“. Diese wird im Mai in der Benutzeroberfläche in „Windows 10 > Geräteeinschränkungen > Kiosk (obsolete)“ (Kiosk (Veraltet)) umbenannt, um deutlich zu machen, dass von der Verwendung abgeraten wird. Die Einstellung bleibt jedoch bis zum Juli-Update von Intune weiterhin funktionsfähig. Anschließend wird sie im Back-End deaktiviert und wird nicht mehr funktionieren. Alternativ wird im Mai ein neues Gerätekonfigurationsprofil veröffentlicht: „Windows 10 > Kiosk“. Dieses enthält die Einstellungen zum Konfigurieren der Kiosks unter Windows 10-Version RS4 und höher.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?  
-Im Rahmen des Intune-Updates Ende Mai werden auch Anleitungen veröffentlicht, mit denen Sie testen und überprüfen können, ob Sie Ihre Kioskkonfiguration von Windows 10-Version RS3 auf die Version RS4 migrieren können. Konfigurieren Sie Ihre Geräte mithilfe dieser Anleitungen und mithilfe des neuen Gerätekonfigurationsprofils als Kiosks.
-
-#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Sowohl eigenständige Intune-Kunden als auch hybride Kunden (die Intune mit Configuration Manager verwenden) sind von dieser Änderung betroffen. Diese Integration soll Ihre Cloudverwaltung vereinfachen. Es gibt jetzt nur noch ein Blatt (das Blatt „Intune“) in Azure, über das Sie Gruppen, Richtlinien, Apps und die Verwaltung mobiler Geräte verwalten.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
-Markieren Sie bitte Intune und nicht das Dienstblatt „Intune-App-Schutz“ als Favorit, und machen Sie sich mit dem Richtlinienworkflow für den App-Schutz auf der Seite „Mobile App“ in Intune vertraut. Es wird zwar für einen kurzen Zeitraum eine Umleitung eingerichtet, aber danach wird das Blatt „App-Schutz“ entfernt. Beachten Sie, dass alle Richtlinien zum App-Schutz bereits in Intune verschoben wurden. Sie können Ihre Richtlinien für den bedingten Zugriff verändern, indem Sie die in der folgenden Dokumentation beschriebenen Schritte ausführen: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
-
-**Weitere Informationen**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>Planen der Änderung: Änderung in der Unterstützung für das Microsoft Intune App SDK-Cordova-Plug-In
 Intune beendet die Unterstützung des [Microsoft Intune App SDK-Cordova-Plug-Ins](app-sdk-cordova.md) am 1. Mai 2018. Sie sollten stattdessen das Intune App Wrapping Tool verwenden, um Ihre auf Cordova basierenden Apps auf die Verwaltbarkeit und Verfügbarkeit in Intune vorzubereiten. Wenn diese Änderung wirksam wird, wird das Microsoft Intune APP SDK-Cordova-Plug-In jedoch weder beibehalten, noch werden Updates empfangen. App-Entwickler werden dieses Plug-In nicht verwenden können. Intune plant, weiterhin mit Cordova erstellte Apps zu unterstützen. Allerdings wird die Funktionalität mit dem Microsoft Intune APP SDK-Cordova-Plug-In erstellter Apps in Intune eingeschränkt sein. Nach Wrapping mit dem Intune App Wrapping Tool können Apps Endbenutzern normal bereitgestellt werden. Für auf Cordova basierende Android-Apps, die im Google Play Store veröffentlicht werden, gilt:

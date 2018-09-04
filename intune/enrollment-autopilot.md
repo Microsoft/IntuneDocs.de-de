@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: c96f211f18168c8ae55f0ca2391c6c140caef649
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: b3c374e4ce6baeab8cc6fde3f6c45c63c48e34dd
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138715"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903074"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Registrieren von Windows-Geräten mithilfe des Windows AutoPilot
 Windows AutoPilot vereinfacht die Bereitstellung von Geräten. Das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems ist ein langwieriger Prozess. Es kann ebenfalls Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und AutoPilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von AutoPilot-Geräten verwenden, können Sie Richtlinien, Profile und Apps usw. verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Overview of Windows AutoPilot (Übersicht über Windows AutoPilot)](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -72,8 +72,8 @@ AutoPilot-Bereitstellungsprofile werden verwendet, um die AutoPilot-Geräte zu k
     - **Selbstbereitstellend (Vorschauversion)**: (Windows 10 Insider Preview Build 17672 oder höher) Geräte mit diesem Profil werden nicht dem Benutzer zugeordnet, der das Gerät registriert. Für die Bereitstellung des Geräts sind keine Anmeldeinformationen erforderlich.
 4. Wählen Sie im Feld **Verknüpfen mit Azure AD als** die Option **In Azure AD eingebunden**.
 5. Wählen Sie **Willkommensseite**, konfigurieren Sie die folgenden Optionen, und wählen Sie **Speichern**:
-    - ** Sprache (Region) ***: Wählen Sie die Sprache, die für das Gerät verwendet werden soll. Diese Option ist nur verfügbar, wenn Sie **Selbstbereitstellend** als **Bereitstellungsmodus** ausgewählt haben.
-    - **Tastatur automatisch konfigurieren***: Wenn eine **Sprache (Region)** ausgewählt ist, können Sie die Tastaturauswahlseite überspringen. Diese Option ist nur verfügbar, wenn Sie **Selbstbereitstellend** als **Bereitstellungsmodus** ausgewählt haben.
+    - **Sprache (Region):**\* Wählen Sie die Sprache aus, die für das Gerät verwendet werden soll. Diese Option ist nur verfügbar, wenn Sie **Selbstbereitstellend** als **Bereitstellungsmodus** ausgewählt haben.
+    - **Tastatur automatisch konfigurieren:**\* Wenn eine **Sprache (Region)** ausgewählt ist, können Sie die Tastaturauswahlseite überspringen. Diese Option ist nur verfügbar, wenn Sie **Selbstbereitstellend** als **Bereitstellungsmodus** ausgewählt haben.
     - **Lizenzbedingungen**: (Windows 10, Version 1709 oder höher) Wählen Sie, ob die Lizenzbedingungen den Benutzern angezeigt werden sollen.
     - **Datenschutzeinstellungen**: Wählen Sie aus, ob die Datenschutzeinstellungen den Benutzern angezeigt werden sollen.
     - **Benutzerkontotyp**: Wählen Sie, ob der Kontotyp des Benutzers **Administrator** oder **Standardbenutzer** sein soll. 
