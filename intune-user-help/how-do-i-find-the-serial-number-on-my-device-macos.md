@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 33e06cbd1ad47ee9af34c660157a5dacc3db2e80
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 14dedc8a690abe17da7e846957737f6059014859
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014332"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146721"
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>Wie finde ich die Seriennummer auf meinem Gerät?
 
 Die Seriennummer für Ihr Gerät identifiziert dieses eindeutig und kann dem Support Ihres Unternehmens bei bestimmten Aufgaben wie dem Ersetzen eines alten Geräts durch ein neues helfen. Um die Seriennummer zu suchen, navigieren Sie zum **Menü „Apple“** > **Über diesen Mac**.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

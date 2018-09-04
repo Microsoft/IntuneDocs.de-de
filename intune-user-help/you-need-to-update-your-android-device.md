@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7e5653d436dd8306ba828fd5c4244e88b4c58272
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 95c13bc48ef0b524de43b5e0944e10bd20c36bd9
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31030821"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149139"
 ---
 # <a name="you-need-to-update-your-android-device"></a>Sie müssen Ihr Android-Gerät aktualisieren
 
@@ -30,4 +30,4 @@ ms.locfileid: "31030821"
 
 Aktualisieren Sie Ihr Android-Gerät durch Tippen auf **Einstellungen** > **Geräteinformationen**. Tippen Sie im Abschnitt __Einstellungen__ auf __Nach Updates suchen__, und installieren Sie die verfügbaren Updates.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

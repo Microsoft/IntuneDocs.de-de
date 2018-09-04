@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fc6f9cd4da8dc15b1d582aa647e60c9737c7a619
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 92cd7969dafb133cf044e2bf5fd2c6d0f829f6ff
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021114"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150377"
 ---
 # <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>Was geschieht, wenn Sie die Registrierung Ihres Windows-Geräts bei Intune aufheben?
 
@@ -87,4 +87,4 @@ Wenn Sie Ihr Windows RT-Gerät entfernen, geschieht Folgendes:
 
 -   Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z.B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.
 
-Wenn Sie Fragen haben, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Wenn Sie Fragen haben, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

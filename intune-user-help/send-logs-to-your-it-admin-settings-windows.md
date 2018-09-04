@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 57c1dcfb591ceea1b85292a416d037c0b4073645
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016304"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146738"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Senden von Protokollen an den Support Ihres Unternehmens über die App „Einstellungen“ für Windows 10
 
@@ -38,4 +38,4 @@ Wenn Sie eine Fehlermeldung erhalten, während Sie Ihr Windows 10-Gerät verwend
 
 Sie müssen möglicherweise auch [Protokolle aus der Unternehmensportal-App](send-logs-to-your-it-admin-cp-windows.md) senden, um dem Support Ihres Unternehmens weitere Hilfe beim Behandeln eventueller Probleme bereitzustellen. 
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

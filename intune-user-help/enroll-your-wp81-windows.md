@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6004be5fd38efcc3ec6d325a562fc2a23267ee30
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1c0600dd17b28506e118cdaef0421c8db3b9c86e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031718"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147520"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Registrieren Ihres Windows Phone 8.1-Geräts bei Intune
 
@@ -86,4 +86,4 @@ Registrieren Sie Ihr Gerät:
 
 Wenn der Support Ihres Unternehmens das Unternehmensportal so eingerichtet hat, dass es während der Registrierung installiert wird, wird das Unternehmensportal in Ihrer App-Liste angezeigt.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

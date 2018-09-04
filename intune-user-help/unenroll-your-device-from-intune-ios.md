@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0a90cace32edb33293ba0b0b89d272465ea32418
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: ba0f2675bfd65f60f6f16d6be738cdc1baa3e7e5
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547487"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148796"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Entfernen Ihres iOS-Geräts aus Intune
 
@@ -74,4 +74,4 @@ Das Unternehmensportal speichert lokale Daten an drei verschiedenen Stellen auf 
 -   **Schlüsselbund:** Ihr Gerät speichert Ihre Kennwörter und andere Informationen, die für Anmeldungen verwendet werden, in Ihrem Schlüsselbund. Microsoft-Apps geben Ihre Anmeldeinformationen für alle von Microsoft entwickelten Apps frei, die auf Ihrem Gerät installiert sind, einschließlich Microsoft Outlook und Microsoft Authenticator. Wie bei App Analytics können diese Informationen nur entfernt werden, wenn Sie Ihr Gerät auf die Werkseinstellungen zurücksetzen. Dadurch werden alle persönlichen Informationen auf Ihrem Gerät gelöscht. Öffnen Sie hierzu **Einstellungen** > **Allgemein** > **Zurücksetzen** > **Gesamten Inhalt und alle Einstellungen löschen**.
 
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

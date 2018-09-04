@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 727889a2e3946372414151593e8433315e82e76b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 269ee4f0d3a82fffb75b507240950af73e149847
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751678"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149645"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Behandeln häufig auftretender Probleme mit Ihrem Windows-Gerät
 
-Gelegentlich können Probleme mit dem Windows-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Problemen empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) an den Support Ihres Unternehmens zu wenden.
+Gelegentlich können Probleme mit dem Windows-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Problemen empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) an den Support Ihres Unternehmens zu wenden.
 
 - [Die Registrierung meines Windows 10-Geräts funktioniert nicht](troubleshoot-your-windows-10-device-windows.md)
 - [Ich muss mein Windows-Gerät aktualisieren](you-need-to-update-your-windows-device.md)

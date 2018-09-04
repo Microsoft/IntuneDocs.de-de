@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9190282edb8d356d7d43a634d10991a4b4c19c16
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3e305848ca77aef49050df382151db75c5b03e2a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018497"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147980"
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>Aktivieren von Windows Defender zum Zugriff auf Unternehmensressourcen
 
@@ -50,4 +50,4 @@ Vergewissern Sie sich, dass der Echtzeitschutz aktiviert ist, indem Sie zu **Sta
 
 Vergewissern Sie sich, dass Ihre Virendefinitionen auf dem aktuellen Stand sind, indem Sie zu **Start** gehen und nach **Windows Defender Security Center** suchen. Wählen Sie **Schutzupdates** und **Nach Updates suchen** aus, um sicherzustellen, dass Ihr Gerät über aktuellen Schutz gegen Viren verfügt. Wenn diese Option nicht angezeigt wird, führen Sie die unter [Aktivieren von Echtzeitschutz](turn-on-defender-windows.md#turn-on-real-time-protection) beschriebenen Schritte aus.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

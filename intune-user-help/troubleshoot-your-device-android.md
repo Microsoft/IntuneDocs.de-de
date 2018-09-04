@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: eb20e5c4099d51fd5afb0fbb6700fc33da53557a
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: de0afc8babe692663af9528da313cb31a9d3ff57
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30752154"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148448"
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Behandeln häufig auftretender Probleme mit Ihrem Android-Gerät
 
-Gelegentlich können Probleme mit Ihrem iOS-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Problemen empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) an den Support Ihres Unternehmens zu wenden.
+Gelegentlich können Probleme mit Ihrem iOS-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Problemen empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) an den Support Ihres Unternehmens zu wenden.
 
 - [Überprüfen der Kompatibilität auf Ihrem Android-Gerät](check-compliance-on-your-device-android.md)
 - [Verwenden der ausführlichen Protokollierung zur Unterstützung des Supports Ihres Unternehmens bei der Behebung von Geräteproblemen](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)

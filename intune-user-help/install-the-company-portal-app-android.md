@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 05d7f1956e4537a3a51871ac3670bfaea5a9696f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 066b412fe1f52e5e7497512d744a35cd5c77f08a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017919"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147588"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Installieren der Unternehmensportal-App für Android
 
@@ -46,4 +46,4 @@ Das Unternehmensportal ist eine App, mit der Sie auf Ihre Unternehmens-, Schul- 
 
 Nachdem Sie die Unternehmensportal-App heruntergeladen haben, möchten Sie wahrscheinlich [Ihr Gerät bei Intune registrieren](enroll-your-device-in-Intune-android.md), um vollständigen Zugriff auf Ihre Arbeitsinformationen zu erhalten. Sie können sich auch [über ein anderes Gerät anmelden](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

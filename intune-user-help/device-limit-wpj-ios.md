@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4c8d6ba4f6f8a9885b0000e0d7c60ba0594504b5
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: ffdf1d524dafa280a698ff25b5118394116cd72a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30750862"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148830"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>Der Grenzwert für Geräteregistrierungen wurde erreicht
 
@@ -33,4 +33,4 @@ Jedes Unternehmen legt einen Grenzwert für die Anzahl von Geräten fest, die vo
 2. Entfernen Sie eins der Geräte aus dem [MyApps-Portal](https://myapps.microsoft.com), und wählen Sie in der oberen rechten Ecke der Seite **Profil** aus. 
 3. Kontaktieren Sie Ihren Unternehmens-Support, um zu überprüfen, ob der Grenzwert für die Geräteregistrierungen angehoben werden kann. 
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

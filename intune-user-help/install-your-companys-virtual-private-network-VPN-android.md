@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 86a41284b05d73e9cbf3833fa85757ca3cbf7f27
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b1f303edec625be2b321e95952a5c8d00aa3254c
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014009"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149966"
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>Installieren des virtuellen privaten Netzwerks (VPN) Ihres Unternehmens
 
@@ -35,4 +35,4 @@ Wenn der Support Ihres Unternehmens eine VPN-App zum Herstellen einer Verbindung
 3.  Tippen Sie auf **VPN-Unternehmensprofil installieren**, und befolgen Sie die Anweisungen. Die Installationsschritte weichen möglicherweise etwas ab, je nachdem, mit welchem VPN-Anbieter Ihr Unternehmen zusammenarbeitet.
 
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

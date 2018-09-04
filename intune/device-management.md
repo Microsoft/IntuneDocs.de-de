@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9e24f9aca0c06f69c61af6a7fab4f69afe381b6d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2e81bdb3431ac8a2e0fdae6a7f3099512319aee
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836926"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313257"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Was ist die Microsoft Intune Geräteverwaltung?
 
@@ -37,7 +37,7 @@ Die Workload **Geräte** liefert Informationen zu den verwalteten Geräten und e
    - Unter **Übersicht** wird eine Momentaufnahme der registrierten Geräte angezeigt. Außerdem wird angezeigt, wie viele Geräte die verschiedenen Plattformen verwenden, einschließlich Android, iOS usw.
    - Unter **Alle Geräte** wird eine Liste der registrierten Geräte angezeigt, die Sie verwalten.
 
-     Verwenden Sie das **Export**-Feature, um eine CSV-Liste aller Geräte in Zehntausender- (Internet Explorer) bzw. Dreißigtausenderschritten (Microsoft Edge, Chrome) anzuzeigen.
+     Verwenden Sie das **Export**-Feature, um eine CSV-Liste aller Geräte in Zehntausender- (Internet Explorer) bzw. Dreißigtausenderschritten (Edge, Chrome) anzuzeigen.
 
      Wählen Sie ein beliebiges Gerät aus, [um zusätzliche Details zu dem jeweiligen Gerät anzuzeigen](device-inventory.md), einschließlich Hardwaredetails, installierten Apps, dem Status der Konformitätsrichtlinie usw.
 
@@ -55,8 +55,8 @@ Die verfügbaren Aktionen hängen von der Geräteplattform und der Konfiguration
 
 - [Anzeigen des Gerätebestands](device-inventory.md)
 - Ausführen von Remotegeräteaktionen:
-    - [Unternehmensdaten entfernen](devices-wipe.md#remove-company-data)
-    - [Zurücksetzen auf Werkseinstellungen](devices-wipe.md#factory-reset)
+    - [Außerkraftsetzen](devices-wipe.md#retire)
+    - [Zurücksetzen](devices-wipe.md#wipe)
     - [Remotesperre](device-remote-lock.md)
     - [Kennung zurücksetzen](device-passcode-reset.md)
     - [Umgehen der Aktivierungssperre](device-activation-lock-bypass.md) (nur iOS)

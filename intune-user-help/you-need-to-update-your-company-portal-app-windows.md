@@ -17,15 +17,15 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7190049dbc204d3cdcc4b9dcfbe23e866980ce37
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 31d5a0879f3e3c3933e6b0a8f4e9ebf7e6056419
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016576"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147855"
 ---
 # <a name="your-company-portal-app-for-windows-is-out-of-date"></a>Ihre Unternehmensportal-App für Windows ist veraltet
 
 Sie müssen die Unternehmensportal-App aktualisieren, um weiterhin auf Komponenten wie Unternehmens-E-Mail, Kontakte und Dokumente zugreifen zu können. Um dieses Problem zu beheben, öffnen Sie den **Microsoft Store**, und installieren Sie die neue Version der **Unternehmensportal**-App.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

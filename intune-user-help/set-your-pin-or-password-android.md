@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: daf25bab90ccc73f782ca93d84f67e06e12f043a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7ea0adbf6c64a6ec32469368c89c462d6b4ab13b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015097"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146807"
 ---
 # <a name="set-your-pin-or-password"></a>Festlegen von PIN oder Kennwort
 
@@ -36,4 +36,4 @@ Sie können die folgenden Schritte verwenden, um eine PIN oder ein Kennwort fest
 
 Bei bestimmten Geräten müssen Sie zusätzlich zu Ihrem Bildschirmkennwort möglicherweise eine Start-PIN festlegen. Sie können versuchen, dieses Problem in den Griff zu bekommen, indem Sie in Ihrem Menüpunkt „Einstellungen“ die Stelle zum Aktivieren dieser Option finden. Auf dem Samsung Galaxy S7 aktivieren Sie beispielsweise „Sicherer Start“ über **Einstellungen** > **Sperrbildschirm und Sicherheit** > **Sicherer Start**. Weitere Informationen finden Sie [hier](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android). 
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

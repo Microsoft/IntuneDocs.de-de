@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6f81cab429f531f6839dc952d6ea6fb2977130ab
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a7f961036eab3b1bf72cc68a44e62f07bdbff6e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019190"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147900"
 ---
 # <a name="set-or-change-your-passcode"></a>Festlegen oder Ändern der Kennung
 
@@ -43,4 +43,4 @@ Wenn Sie Probleme beim Festlegen einer Kennung haben, die die Kennungsanforderun
 2. Tippen Sie auf **Kennung ändern**, und geben Sie Ihre alte Kennung ein.
 3. Geben Sie eine neue Kennung ein, die die Anforderungen des Supports Ihres Unternehmens erfüllt, und geben Sie sie zur Bestätigung nochmals ein.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

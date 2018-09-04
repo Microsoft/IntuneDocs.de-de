@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2c806edbf3855bd23a470eefb6c7be1af65d3211
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4682269cf419fb3be19921e78e2aa7e762f0303d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015794"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146576"
 ---
 # <a name="how-to-turn-off-microsoft-data-collection"></a>Deaktivieren der Datensammlung durch Microsoft
 
@@ -30,4 +30,4 @@ Microsoft sammelt automatisch bestimmte Daten zu Microsoft-Produkten und -Dienst
 
 Wenn Sie die Sammlung von Nutzungsdaten auf Ihrem iOS-Gerät deaktivieren möchten, öffnen Sie **Einstellungen**, tippen Sie auf **Unternehmensportal**, und deaktivieren Sie **Nutzungsdaten**. Öffnen Sie für macOS-Geräte das Menü des **Unternehmensportals** > **Einstellungen**, und deaktivieren Sie die Option **Erlauben Sie Microsoft die Erfassung von Nutzungsdaten**.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,17 +17,17 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 663da92e11befeae1f65467e887870a52640cbeb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 33b6199c25e9e36b65dfe2ca819640fa614e68b6
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020570"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148222"
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>Bei aktivierter Akkuoptimierung für Android synchronisiert Outlook keine verwalteten E-Mails
 
 > [!IMPORTANT]
-> Dieses Problem wird hier dokumentiert, da diesbezüglich vermehrt Kundenberichte eingetroffen sind. Wenn das Problem nach Ausführung dieser Schritte weiterhin auftritt, wenden Sie sich für zusätzliche Hilfe an [die Supportabteilung Ihres Unternehmens](https://portal.manage.microsoft.com#HelpDeskDialog).
+> Dieses Problem wird hier dokumentiert, da diesbezüglich vermehrt Kundenberichte eingetroffen sind. Wenn das Problem nach Ausführung dieser Schritte weiterhin auftritt, wenden Sie sich für zusätzliche Hilfe an [die Supportabteilung Ihres Unternehmens](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 Durch die Registrierung Ihres Geräts bei Intune können Sie auf Unternehmensressourcen zugreifen. Eine der gebräuchlichsten Ressourcen ist der E-Mail-Zugriff. Ein Problem, das bei Android-Geräten beim Zugriff auf E-Mails über Outlook beobachtet wurde, tritt bei aktivierter Akkuoptimierung auf. Die Akkuoptimierung wird möglicherweise automatisch aktiviert, damit Ihr Gerät so lange wie möglich eingeschaltet bleibt. Auf diese Weise kann die Akkuoptimierung teilweise hilfreich sein, da sie versucht, das automatische Herunterladen von E-Mails zu beenden.
 
@@ -75,4 +75,4 @@ Diese Einstellungen können beispielsweise auch über die Suche in den Systemein
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

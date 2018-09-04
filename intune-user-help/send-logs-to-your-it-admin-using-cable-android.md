@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: 89be04405f76c290c252c382fbee207176e7180d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117853"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150306"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Senden von Protokollen an den Support Ihres Unternehmens mithilfe eines USB-Kabels
 
 Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem Android-Gerät verwenden, können Sie Informationen zu diesem Fehler senden, um dem Support Ihres Unternehmens bei der Behandlung des Problems zu helfen. Die Informationen werden auf Ihrem Gerät in einem speziellen Dokument (einem so genannten _Diagnoseprotokoll_) gespeichert.
 
 > [!Note]
-> Bevor Sie beginnen, stellen Sie sicher, dass Sie die E-Mail-Adresse des Supports Ihres Unternehmens zur Hand haben. Sie wird auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog) oder in Ihrer Unternehmensportal-App aufgeführt.
+> Bevor Sie beginnen, stellen Sie sicher, dass Sie die E-Mail-Adresse des Supports Ihres Unternehmens zur Hand haben. Sie wird auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980) oder in Ihrer Unternehmensportal-App aufgeführt.
 
 1. Tippen Sie auf dem Fehlerbildschirm auf **Info senden**. Wenn Sie in einer Meldung gefragt werden, über welche Methode Sie die Protokolle senden möchten, wählen Sie die Option aus, bei der die Dateien auf Ihrem Gerät gespeichert werden.
 
@@ -39,4 +39,4 @@ Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App au
 
 4. Wählen Sie die Dateien aus, und fügen Sie sie an eine E-Mail-Nachricht an. Senden Sie diese E-Mail an den Support Ihres Unternehmens.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

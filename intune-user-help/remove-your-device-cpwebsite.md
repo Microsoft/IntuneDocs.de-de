@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f22509d780ec4d877e7e780109b34776b269c8b3
-ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
+ms.openlocfilehash: 0ea421c63cbb6c2228ea94bf82d795ece01f46ac
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2018
-ms.locfileid: "34308856"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150323"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Entfernen Ihres Geräts aus dem Unternehmensportal
 
-Wenn Sie Ihr Gerät nicht mehr von Ihrem Unternehmen oder Ihrer Organisation verwalten lassen möchten, können Sie es über die [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog) aus dem Unternehmensportal entfernen. Wenn Sie Ihr Gerät entfernen, wird es nicht mehr im Unternehmensportal aufgeführt. Möglicherweise haben Sie dann auch keinen Zugriff mehr auf Unternehmensdaten, -Apps und-E-Mails.
+Wenn Sie Ihr Gerät nicht mehr von Ihrem Unternehmen oder Ihrer Organisation verwalten lassen möchten, können Sie es über die [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980) aus dem Unternehmensportal entfernen. Wenn Sie Ihr Gerät entfernen, wird es nicht mehr im Unternehmensportal aufgeführt. Möglicherweise haben Sie dann auch keinen Zugriff mehr auf Unternehmensdaten, -Apps und-E-Mails.
 
 So entfernen Sie Ihr Gerät:
 
-1. Tippen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
+1. Tippen Sie auf der [Unternehmensportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) auf die Schaltfläche __Menü__ ![Eine kleine Abbildung der Menü-Schaltfläche, drei horizontal übereinandergestapelte Balken.](/Intune/whats-new/media/CP_hamburger_menu.png), und wählen Sie dann __Meine Geräte__ aus.
 
    ![Eine Abbildung der Unternehmensportalwebsite mit erweitertem Seitenmenü links auf dem Bildschirm und den Schaltflächen „Startseite“, „Alle Apps“, „Meine Geräte“, „Helpdesk“ und „Abmelden“.](/media/iwp-expanded-sidebar.png)
 
@@ -44,4 +44,4 @@ So entfernen Sie Ihr Gerät:
 
 4. Lesen Sie die Warnung, und tippen Sie anschließend auf **Entfernen**, um Ihr Gerät aus dem Unternehmensportal zu entfernen.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

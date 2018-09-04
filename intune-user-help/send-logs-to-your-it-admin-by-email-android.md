@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: efe251a9a347a179e56d496d761b0ea7f28ab66f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327686"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149599"
 ---
 # <a name="email-logs-to-your-company-support"></a>Senden von Protokollen per E-Mail an den Support Ihres Unternehmens
 
@@ -45,4 +45,4 @@ So senden Sie E-Mail-Protokolle an den Support Ihres Unternehmens:
 3.  Tippen Sie auf **E-Mail senden > Protokolle hochladen**.
 4.  Nachdem der Upload abgeschlossen ist, tippen Sie auf Ihre App für E-Mails. Eine E-Mail-Nachricht wird geöffnet, bei der das Feld „Betreff“ vorab mit der Vorfall-ID aufgefüllt wird. Beschreiben Sie das aufgetretene Problem im Text der E-Mail.  
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

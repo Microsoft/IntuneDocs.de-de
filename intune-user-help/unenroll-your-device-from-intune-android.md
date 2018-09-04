@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ec3c0a1c8ce4e04f4d23fb01e7c2525d8f2eed5b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 683b5ec7b07d7c270ea30ac438e7fc839b13d5fc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018361"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150343"
 ---
 # <a name="how-to-remove-your-android-device-from-intune"></a>Entfernen der Registrierung Ihres Android-Geräts aus Intune
 
@@ -46,7 +46,7 @@ Führen Sie zum Entfernen der Registrierung Ihres Geräts bei Intune und zum Ent
 
 So entfernen Sie alle Daten, die die Unternehmensportal-App für Android auf Ihrem Gerät gespeichert hat:
 
--   Klicken Sie zum Löschen von App-Daten unter „Apps“ auf die entsprechende App und anschließend auf die Schaltfläche „Daten löschen“.
+-   Klicken Sie zum Löschen von App-Daten auf die entsprechende App und anschließend auf die Schaltfläche „Daten löschen“.
 -   Löschen Sie den Ordner „\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal“.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

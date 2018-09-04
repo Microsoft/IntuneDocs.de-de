@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a7f10e178e88f871c297ed8bbac7ccbe9a802d0b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: e569b69f319cb3cf2868d86db2032b93d9bd8ab8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755486"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149122"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Was geschieht, wenn Sie Ihr Windows-Gerät mithilfe des Unternehmensportals zurücksetzen?
 
@@ -34,4 +34,4 @@ Wenn Sie Ihr Windows-Gerät mithilfe der Unternehmensportal-App oder [Unternehme
 |Das Gerät kann nur auf Firmen-E-Mail zuzugreifen.|**Windows Phone 8.1**<br />Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt und Ihr Unternehmens-E-Mail-Konto wird ebenso wie nicht gespeicherte E-Mails gelöscht.<br /><br />**Windows 7 oder Windows Vista**<br />Ein Computer mit dem Betriebssystem Windows 7 oder älter, der nur zum Abrufen von E-Mails verwendet wird, kann nicht zurückgesetzt werden.<br /><br />**Windows 8.1 und Windows 8**<br />Ihr Gerät wird nicht mehr im Unternehmensportal angezeigt und Ihr Unternehmens-E-Mail-Konto wird ebenso wie nicht gespeicherte E-Mails gelöscht.|
 |PCs und Laptops|**Windows 8.1 und Windows 8**<br />Ein Computer mit dem Betriebssystem Windows 8 oder Windows 8.1 kann nicht zurückgesetzt werden, sofern er nicht nur zum Abrufen von E-Mails verwendet wird.<br /><br />**Windows 7 oder Windows Vista**<br />Ein Computer mit dem Betriebssystem Windows 7 oder älter kann nicht zurückgesetzt werden.|
 
-Wenn Sie Fragen haben, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Wenn Sie Fragen haben, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

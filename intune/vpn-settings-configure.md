@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78f50bc49f9d7a1261759ec5fb9a1cd7628c998c
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 97bddc1a183e3a546e76b346f53f80aba6a81c50
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905103"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312872"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Erstellen von VPN-Profilen in Intune
 
@@ -33,14 +33,14 @@ Sie können benutzerdefinierte Intune-Konfigurationsrichtlinien verwenden, um VP
 * Registrierte Geräte unter Windows 8.1 und höher
 * Windows Phone 8.1 und höher
 * Registrierte Geräte unter Windows 10 Desktop
-* Windows 10 Mobile
+* Windows 10 Mobile
 * Windows Holographic for Business
 
 ## <a name="vpn-connection-types"></a>VPN-Verbindungstypen
 
 Sie können VPN-Profile mit den folgenden Verbindungstypen erstellen:
 
-|Verbindungstyp|Android<br>Android-Arbeitsprofile|iOS|macOS|Windows Phone 8.1|Windows 8,1|Windows 10|
+|Verbindungstyp|Android<br>Android-Arbeitsprofile|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |Automatisch|Nein|Nein|Nein|Nein|Nein|Ja |
 |Check Point Capsule VPN|Ja |Ja |Ja |Ja |Ja |Ja |
@@ -54,6 +54,7 @@ Sie können VPN-Profile mit den folgenden Verbindungstypen erstellen:
 |IKEv2|Nein|Nein|Nein|Nein|Nein|Ja |
 |L2TP|Nein|Nein|Nein|Nein|Nein|Ja |
 |PPTP|Nein|Nein|Nein|Nein|Nein|Ja |
+|Zscaler|Nein|Ja |Nein|Nein|Nein|Nein|
 |Benutzerdefiniertes VPN|Nein|Ja |Ja |Nein|Nein|Nein|
 
 > [!IMPORTANT]

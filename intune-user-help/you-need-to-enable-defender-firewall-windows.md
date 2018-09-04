@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 57342767b83c965c2d22ec68cd74132362b5b40e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c918b192d49c12735701382418e594b3ee4386f6
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016610"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150598"
 ---
 # <a name="turn-on-your-windows-defender-firewall"></a>Aktivieren der Windows Defender Firewall
 
@@ -32,4 +32,4 @@ Ihr Arbeitgeber oder Ihre Schule möchte sicherstellen, dass Geräte, die auf ih
 2. Öffnen Sie **System und Sicherheit** > **Windows Defender Firewall**.
 3. Wählen Sie **Einstellungen anpassen** > **Windows-Firewall ein- oder ausschalten** für die Domäne, private und öffentliche Netzwerke aus.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

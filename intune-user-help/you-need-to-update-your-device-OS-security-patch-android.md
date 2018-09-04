@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: c4a1ce01cf5d65b0bb0d6230972e5358dbe41854
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: 7d67d5cc34dfb701f68763bd6265de009055f815
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073788"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147537"
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Sie müssen das Betriebssystem Ihres Android-Geräts aktualisieren.
 
@@ -40,4 +40,4 @@ Wenn Sie über ein Samsung-Gerät verfügen, öffnen Sie **Einstellungen** > **G
 
 
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

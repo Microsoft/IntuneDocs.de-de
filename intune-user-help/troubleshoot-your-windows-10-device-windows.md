@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 97f23594a5c7b047caf37dbaa39c481585a96d76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 55d77ff939f597a9d6fc5e6986df21ce6fbef9d3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018174"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150695"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Behandlung von Problemen bei der Registrierung von Windows 10-Geräten
 Wenn Sie die Schritte unter [Registrieren Ihres Windows 10 Mobile- oder Windows 10-Desktopgeräts bei Intune](enroll-your-w10-phone-or-w10-pc-windows.md) befolgt haben, aber dennoch nicht auf E-Mails und Dateien Ihres Geschäfts-, Schul- oder Unikontos zugreifen können, führen Sie zur Problembehandlung die folgenden Schritte durch.
@@ -61,4 +61,4 @@ Wenn Sie die obigen Schritte ausgeführt haben und trotzdem nicht auf E-Mails, D
 
 Wenn eine Meldung angezeigt wird, die <strong>We couldn't auto-discover a management endpoint matching the username entered. Please check your username and try again. If you know the URL to your management endpoint, please enter it.</strong> (Es konnte automatisch kein Verwaltungsendpunkt erkannt werden, der mit dem eingegebenen Benutzernamen übereinstimmt. Bitte überprüfen Sie Ihren Benutzernamen, und versuchen Sie es noch einmal. Wenn Sie die URL zu Ihrem Verwaltungsendpunkt kennen, geben Sie sie ein.) angibt, versuchen Sie, Ihren Benutzernamen und das Kennwort erneut anzugeben. Wenn es immer noch nicht funktioniert, wenden Sie sich für die Website, die Sie im Textfeld <strong>Verwaltungsendpunkt</strong> bereitstellen müssen, an den Support Ihres Unternehmens. Dies ist eine Website, die in etwas so aussieht: <strong>www.ihrefirma.aufmicrosoft.com</strong>.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 38804de876a4856d4e4b6e39d16233608cf9857f
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: eeb9b04a3e8d7a5d1f96e58e3df7310d53817090
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755401"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146777"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>Behandeln häufig auftretender Probleme mit dem macOS-Gerät
 
-Gelegentlich können Probleme mit dem macOS-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Problemen empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) an den Support Ihres Unternehmens zu wenden.
+Gelegentlich können Probleme mit dem macOS-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Problemen empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) an den Support Ihres Unternehmens zu wenden.
 
 - [Meine macOS-Version wird noch nicht unterstützt.](your-macos-version-isnt-yet-supported.md)
 - [Aktualisieren Ihres macOS-Geräts](you-need-to-update-your-macos-device.md)

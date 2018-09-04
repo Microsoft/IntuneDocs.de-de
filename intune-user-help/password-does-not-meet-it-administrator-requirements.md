@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6011e46a3176d55f35310292b55f4786d131f269
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: bb565cdaf200e8bf7d3836fd921b0b5893734955
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38219828"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150920"
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>Ihr Kennwort entspricht nicht den Anforderungen des Supports Ihres Unternehmens
 
@@ -33,7 +33,7 @@ Erforderliche Schritte zum Festlegen Ihrer PIN bzw. Ihres Kennworts finden Sie u
 - [Festlegen oder Ändern des Kennworts Ihres Windows-Geräts](set-or-change-your-password-windows.md)
 
 > [!NOTE]
-> Wenn Sie Probleme dabei haben, festzulegen, wie Ihr Kennwort die Anforderungen des Supports Ihres Unternehmens erfüllen kann, wenden Sie sich an diesen Support. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+> Wenn Sie Probleme dabei haben, festzulegen, wie Ihr Kennwort die Anforderungen des Supports Ihres Unternehmens erfüllen kann, wenden Sie sich an diesen Support. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 ## <a name="pin-or-password-issue-descriptions"></a>Beschreibungen der PIN- bzw. Kennwortprobleme
 

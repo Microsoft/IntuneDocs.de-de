@@ -18,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4003d27bd3cbd8e0bef835df7895f7388cbd7dcd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ff7f076cf779c867ba730d8f048dd6a8a8f6d1af
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014502"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147008"
 ---
 # <a name="you-need-to-update-your-ios-device-to-install-the-outlook-app"></a>Sie müssen Ihr iOS-Gerät aktualisieren, um die Outlook-App zu installieren
 
@@ -36,4 +36,4 @@ Manchmal kann bei der Installation einer App ein Fehler auftreten, insbesondere 
 
 Tippen Sie zum Aktualisieren auf **Einstellungen** > **Allgemein** > **Softwareupdate**.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

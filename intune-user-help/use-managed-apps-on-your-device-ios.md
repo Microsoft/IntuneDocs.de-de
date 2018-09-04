@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 506b2e50333be9f284b7709fc2a57693330ff7a4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0f8139d5a17d1a6594354994fda6c0eef64a22f3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031650"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147501"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Verwenden verwalteter Apps auf Ihrem iOS-Gerät
 
@@ -64,4 +64,4 @@ Es folgen einige Beispiele für Optionen, die der Support Ihres Unternehmens in 
 
 -   Anforderungen für die Verschlüsselung von Daten
 
-Wenden Sie sich an den Support Ihres Unternehmens, um weitere Informationen zu den verwalteten Apps auf dem Gerät zu erhalten. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Wenden Sie sich an den Support Ihres Unternehmens, um weitere Informationen zu den verwalteten Apps auf dem Gerät zu erhalten. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

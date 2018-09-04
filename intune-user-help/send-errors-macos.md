@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9805dfdba67299a5a1cd9433bbc061f8bd96bc9e
-ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
+ms.openlocfilehash: 8bc441dd07191ec3eb1280330be380ca425f53cc
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34190518"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150845"
 ---
 # <a name="submit-errors-to-the-right-people-for-your-managed-macos-device"></a>Senden von Fehlern an die für Ihr verwaltetes macOS-Gerät zuständigen Personen
 
@@ -48,4 +48,4 @@ So senden Sie Protokolle an Microsoft:
 2.  Klicken Sie auf das Menü **Hilfe** und dann auf **Diagnosebericht senden**.  Nachdem die Protokolle hochgeladen wurden, erhalten Sie eine Incident-ID. Kopieren und speichern Sie die ID.
 3.  Senden Sie unter Verwendung <a href="mailto:IntuneCPiOSfeedback@microsoft.com?subject=My Company Portal App Closed Unexpectedly&body=Paste your incident ID and describe the incident here.">dieser Vorlage</a> eine E-Mail an Microsoft.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

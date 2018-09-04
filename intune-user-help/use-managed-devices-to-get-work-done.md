@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755231"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150665"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Verwenden verwalteter Geräte zum Erledigen von Aufgaben
 Microsoft Intune ist eine Softwarekomponente, mit der Betriebe Geräte (z.B. Smartphones, Tablets und PCs), Apps und andere Unternehmensressourcen (z.B. E-Mail-Dienste) verwalten können. Damit erhalten Mitarbeiter Zugriff auf ihre Arbeitsdaten von praktisch überall auf nahezu jedem Gerät, während die Unternehmensdaten gleichzeitig geschützt werden.
@@ -36,7 +36,7 @@ Der Support Ihres Unternehmens kann Informationen sehen, die für Ihre Arbeit wi
 Sie gelangen auf zwei Arten zum Unternehmensportal:
 
 - Durch Installieren der Unternehmensportal-App auf Ihrem Gerät. In der Regel erhalten Sie die Unternehmensportal-App, indem Sie sie aus dem App Store Ihres Geräts herunterladen. Allerdings kann auch die Supportabteilung Ihres Unternehmens die Unternehmensportal-App für Sie auf Ihrem Gerät installieren.
-- Besuchen Sie die [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog) der Supportabteilung Ihres Unternehmens.
+- Besuchen Sie die [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980) der Supportabteilung Ihres Unternehmens.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Was ist der Unterschied zwischen der App und der Website?
 Es gibt wenige kleinere Unterschiede zwischen der Unternehmensportal-App und der Unternehmensportal-Website, aber die meisten Aufgaben können Sie sowohl in der App als auch auf der Website genauso ausführen. Aufgaben, die Sie erledigen können, sind die folgenden:
@@ -102,4 +102,4 @@ Zunächst empfiehlt Microsoft, dass Sie versuchen, Ihr Problem selbst zu lösen.
 - [Behandeln häufig auftretender Probleme mit dem macOS-Gerät](troubleshoot-your-device-macos.md)
 - [Behandeln häufig auftretender Probleme mit Ihrem Windows-Gerät](troubleshoot-your-device-windows.md)
 
-Wenn Sie Hilfe brauchen, können Sie auch unten einen Kommentar verfassen; bitte haben Sie jedoch Verständnis dafür, dass jeder Betrieb unterschiedliche Anforderungen hat, und wir deshalb möglicherweise nicht immer alle Fragen beantworten können. Wenn Sie sich an die Supportabteilung Ihres Unternehmens wenden, erhalten Sie wahrscheinlich die schnellste und passendste Rückmeldung. Die entsprechenden Kontaktinformationen sollten Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) finden.
+Wenn Sie Hilfe brauchen, können Sie auch unten einen Kommentar verfassen; bitte haben Sie jedoch Verständnis dafür, dass jeder Betrieb unterschiedliche Anforderungen hat, und wir deshalb möglicherweise nicht immer alle Fragen beantworten können. Wenn Sie sich an die Supportabteilung Ihres Unternehmens wenden, erhalten Sie wahrscheinlich die schnellste und passendste Rückmeldung. Die entsprechenden Kontaktinformationen sollten Sie auf der [Unternehmensportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) finden.

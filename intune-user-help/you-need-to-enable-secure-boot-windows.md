@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 99431a9720ab0f97f869ea12496912391cce2179
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 32a6ff69bc848bbd0a2174ab4b60de905498d6fa
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019720"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150077"
 ---
 # <a name="you-need-to-enable-secure-boot"></a>Sicherer Start muss aktiviert werden
 
@@ -32,4 +32,4 @@ Das Aktivieren des sicheren Starts ist eine fortgeschrittene Aufgabe. Wenn Sie e
 
 Wenn Sie einen PC verwenden, können Sie sich an den Support Ihres Unternehmens wenden oder den Abschnitt „So aktivieren Sie den sicheren Start erneut“ auf der Seite [Deaktivieren des sicheren Starts](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) lesen, um zu versuchen, den sicheren Start selbst zu aktivieren.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).
