@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c871d32fbcdfa089de88ae649c2926d2c839cce2
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993716"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255498"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen (Line-of-Business, LOB) macOS-Apps zu Microsoft Intune
 
@@ -28,14 +28,15 @@ ms.locfileid: "38993716"
 
 Fügen Sie mithilfe der Informationen in diesem Artikel Microsoft Intune branchenspezifische macOS-Apps hinzu. Sie müssen ein externes Tool zur Vorverarbeitung Ihrer *PKG*-Dateien herunterladen, bevor Sie Ihre branchenspezifische Datei in Microsoft Intune hochladen können. Die Vorverarbeitung Ihrer *PKG*-Dateien muss auf einem macOS-Gerät erfolgen.
 
->[!NOTE]
->Während Benutzer von macOS-Geräten einige der integrierten macOS-Apps wie Stocks und Maps entfernen können, können Sie diese Apps über Intune nicht erneut bereitstellen. Wenn Endbenutzer diese Apps löschen, müssen sie zum App Store navigieren und die Apps manuell erneut installieren.
->
->Nur *PKG*-Dateien können verwendet werden, um macOS-LOB-Apps in Microsoft Intune hochzuladen. Konvertierung anderer Formate, z.B. *.dmg* in *.pkg*, wird nicht unterstützt.
+> [!NOTE]
+> Während Benutzer von macOS-Geräten einige der integrierten macOS-Apps wie Stocks und Maps entfernen können, können Sie diese Apps über Intune nicht erneut bereitstellen. Wenn Endbenutzer diese Apps löschen, müssen sie zum App Store navigieren und die Apps manuell erneut installieren.
 
-## <a name="step-1---pre-process-your-software-setup-file"></a>Schritt 1: Vorverarbeiten Ihrer Softwaresetupdatei
+## <a name="before-your-start"></a>Vor Ihrem Start
 
-Verwenden Sie das Intune App Wrapping Tool für Mac, um die Verwaltung von Mac-Apps mit Microsoft Intune zu ermöglichen.
+Sie müssen ein externes Tool zur Vorverarbeitung Ihrer *PKG*-Dateien herunterladen, bevor Sie Ihre branchenspezifische Datei in Microsoft Intune hochladen können. Die Vorverarbeitung Ihrer *PKG*-Dateien muss auf einem macOS-Gerät erfolgen. Verwenden Sie das Intune App Wrapping Tool für Mac, um die Verwaltung von Mac-Apps mit Microsoft Intune zu ermöglichen.
+
+> [!IMPORTANT]
+> Nur *PKG*-Dateien können verwendet werden, um macOS-LOB-Apps in Microsoft Intune hochzuladen. Konvertierung anderer Formate, z.B. *.dmg* in *.pkg*, wird nicht unterstützt.
 
 1. Laden Sie das [Intune App Wrapping Tool für Mac](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac) herunter, und führen Sie es aus.
 
@@ -55,7 +56,7 @@ Verwenden Sie das Intune App Wrapping Tool für Mac, um die Verwaltung von Mac-A
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
     Mit diesem Befehl werden die erkannten Parameter und die Version für die erstellte *INTUNEMAC*-Datei extrahiert.
 
-## <a name="step-2---specify-the-software-setup-file"></a>Schritt 2: Angeben der Softwaresetupdatei
+## <a name="step-1---specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
@@ -64,14 +65,14 @@ Verwenden Sie das Intune App Wrapping Tool für Mac, um die Verwaltung von Mac-A
 5. Wählen Sie über der Liste der Apps **Hinzufügen** aus.
 6. Klicken Sie im Bereich **App hinzufügen** auf die Option **Branchenspezifische App**.
 
-## <a name="step-3---configure-the-app-package-file"></a>Schritt 3: Konfigurieren der App-Paketdatei
+## <a name="step-2---configure-the-app-package-file"></a>Schritt 2: Konfigurieren der App-Paketdatei
 
 1. Klicken Sie im Bereich **App hinzufügen** auf die Option **App-Paketdatei**.
 2. Wählen Sie im Bereich **App-Paketdatei** die Schaltfläche „Durchsuchen“ aus, und wählen Sie eine macOS-Installationsdatei mit der Erweiterung *INTUNEMAC* aus.
 3. Wenn Sie fertig sind, wählen Sie **OK** aus.
 
 
-## <a name="step-4---configure-app-information"></a>Schritt 4: Konfigurieren von App-Informationen
+## <a name="step-3---configure-app-information"></a>Schritt 3: Konfigurieren von App-Informationen
 
 1. Klicken Sie im Bereich **App hinzufügen** auf die Option **App-Informationen**.
 2. Fügen Sie im Bereich **App-Informationen** Details zu Ihrer App hinzu. Abhängig von der ausgewählten App wurden einige der Werte in diesem Bereich möglicherweise automatisch ausgefüllt:
@@ -89,7 +90,7 @@ Verwenden Sie das Intune App Wrapping Tool für Mac, um die Verwaltung von Mac-A
     - **Logo:** Laden Sie ein Symbol hoch, das der App zugeordnet wird. Dieses Symbol wird gemeinsam mit der App angezeigt, wenn der Benutzer das Unternehmensportal durchsucht.
 3. Wenn Sie fertig sind, wählen Sie **OK** aus.
 
-## <a name="step-5---finish-up"></a>Schritt 5: Fertig stellen
+## <a name="step-4---finish-up"></a>Schritt 4: Fertig stellen
 
 1. Prüfen Sie Ihre Angaben im Bereich **App hinzufügen**.
 2. Wählen Sie **Hinzufügen** aus, um die App in Intune hochzuladen.
@@ -99,7 +100,7 @@ Die von Ihnen erstellte App erscheint in der Liste der Apps, in der Sie sie den 
 > [!NOTE]
 > Wenn die *PKG*-Datei mehrere Apps oder App-Installer enthält, meldet Microsoft Intune nur dann, wenn alle installierten Apps auf dem Gerät erkannt werden, dass die *App* erfolgreich installiert wurde.
 
-## <a name="step-6---update-a-line-of-business-app"></a>Schritt 6: Aktualisieren einer branchenspezifischen App
+## <a name="step-5---update-a-line-of-business-app"></a>Schritt 5: Aktualisieren einer branchenspezifischen App
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 

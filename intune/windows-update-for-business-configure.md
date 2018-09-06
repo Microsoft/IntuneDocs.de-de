@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
-ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
+ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822720"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255232"
 ---
 # <a name="manage-software-updates-in-intune"></a>Verwalten von Softwareupdates in Intune
 
@@ -115,11 +115,10 @@ Der neue Updatering wird in der Liste mit den Updateringen angezeigt.
 3. Wählen Sie abschließend **Auswählen** aus, um die Zuweisung abzuschließen.
 
 ## <a name="update-compliance-reporting"></a>Updateüberwachungsberichte
-Sie können die Updatekompatibilität in Intune anzeigen oder die kostenlose Lösung „Updatekompatibilität“ in Microsoft Operations Management Suite (OMS) verwenden.
+Sie können die Updatekompatibilität in Intune anzeigen oder die kostenlose Lösung „Updatekonformität“ verwenden.
 
 ### <a name="review-update-compliance-in-intune"></a>Prüfen der Updatekompatibilität in Intune 
-<!-- 1352223 -->
-Überprüfen Sie einen Richtlinienbericht, um den Bereitstellungsstatus für die Windows 10-Updateringe anzuzeigen, die Sie konfiguriert haben.
+<!-- 1352223 --> Überprüfen Sie einen Richtlinienbericht, um den Bereitstellungsstatus für die Windows 10-Updateringe anzuzeigen, die Sie konfiguriert haben.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie auf **Microsoft Intune**.
@@ -137,7 +136,7 @@ Sie können die Updatekompatibilität in Intune anzeigen oder die kostenlose Lö
       - **Benutzerstatus**
 
 ### <a name="review-update-compliance-using-oms"></a>Prüfen der Updatekompatibilität mithilfe von OMS
-Windows 10-Updaterollouts können in der Operations Management Suite (OMS) mithilfe der kostenlosen Updateüberwachung überwacht werden. Ausführliche Informationen finden Sie unter [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Überwachen von Windows-Updates mithilfe der Updateüberwachung). Bei Verwendung dieser Lösung können Sie eine Organisations-ID für jedes Ihrer mit Intune verwalteten Windows 10-Geräte bereitstellen, für das Sie Updateüberwachungsberichte verwenden möchten.
+Windows 10-Updaterollouts können mithilfe der kostenlosen Lösung „Updatekonformität“ überwacht werden. Ausführliche Informationen finden Sie unter [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Überwachen von Windows-Updates mithilfe der Updateüberwachung). Bei Verwendung dieser Lösung können Sie eine Organisations-ID für jedes Ihrer mit Intune verwalteten Windows 10-Geräte bereitstellen, für das Sie Updateüberwachungsberichte verwenden möchten.
 
 Die Organisations-ID können Sie in der Intune-Konsole mithilfe der OMA-URI-Einstellungen einer benutzerdefinierten Richtlinie konfigurieren. Ausführliche Informationen finden Sie unter [Intune-Richtlinieneinstellungen für Windows 10-Geräte in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 

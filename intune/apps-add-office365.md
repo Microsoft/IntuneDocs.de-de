@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 9db79e9d0dc82cd823663274aa02dbe097db74d4
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321474"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40252583"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Zuweisen von Office 365-Apps zu Windows 10-Geräten mit Microsoft Intune
 
@@ -29,8 +29,8 @@ Diese App erleichtert Ihnen die Zuweisung von Office 365-Apps zu Geräten, die S
 
 ## <a name="before-you-start"></a>Vorbereitung
 
->[!IMPORTANT]
->Diese Installationsmethode für Office wird nur unterstützt, wenn keine anderen Versionen von Microsoft Office auf dem Gerät installiert sind.
+> [!IMPORTANT]
+> Wenn es auf dem Endbenutzergerät MSI-Office-Apps gibt, müssen Sie diese Apps mit dem Feature **MSI entfernen** sicher deinstallieren. Andernfalls schlägt die Installation der von Intune bereitgestellten Office 365-Apps fehl.
 
 - Auf den Geräten, auf denen Sie diese Apps bereitstellen, muss das Windows 10 Creators Update oder höher ausgeführt werden.
 - Intune unterstützt nur das Hinzufügen von Office-Apps aus der Office 365-Suite.
@@ -91,6 +91,7 @@ In diesem Schritt konfigurieren Sie Installationsoptionen für die App-Sammlung.
         - **Monatlich (Ziel)**
         - **Halbjährlich**
         - **Halbjährlich (Ziel)**
+    - **Andere Versionen von Office (MSI) von Endbenutzergeräten entfernen**: Dieses Feature ermöglicht es Ihnen, alle bereits vorhandenen Office-Versionen (MSI) von den Computern der Endbenutzer zu entfernen. Es ist nicht auf die Apps beschränkt, die in **App-Suite konfigurieren** zur Installation ausgewählt wurden, sondern entfernt sämtliche Office (MSI)-Apps vom Endbenutzergerät.
     - **Microsoft-Software-Lizenzbedingungen automatisch akzeptieren**: Wählen Sie diese Option aus, wenn Endbenutzer die Lizenzvereinbarung nicht akzeptieren müssen. Intune akzeptiert daraufhin die automatisch die Vereinbarung.
     - **Aktivierung gemeinsam genutzter Computer**: Wählen Sie diese Option aus, wenn sich mehrere Benutzer einen Computer teilen. Weitere Informationen finden Sie in der [Übersicht über die Aktivierung gemeinsam genutzter Computer für Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Sprachen**: Office installiert automatisch alle unterstützen Sprachen, die mit Windows auf Endbenutzergeräten installiert werden. Wählen Sie diese Option, wen Sie zusätzliche Sprachen mit der App-Sammlung installieren möchten.

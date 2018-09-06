@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 606c173c1723d526436b9ae75d9a4085883f071b
-ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
+ms.openlocfilehash: 3a66ed41442e89ed40850f5b9cd56cbc004a43d0
+ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305432"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251574"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Erstellen und Zuweisen von App-Schutzrichtlinien
 
@@ -30,11 +30,11 @@ Erfahren Sie, wie Sie Microsoft Intune-App-Schutzrichtlinien erstellen und Ihren
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
-Wenn Sie nach Anweisungen für das klassische Intune-Portal suchen, finden Sie weitere Informationen unter [Erstellen von App-Schutzrichtlinien](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
-
-App-Schutzrichtlinien können angewendet werden, unabhängig davon, ob die Geräte, auf denen die Apps ausgeführt werden, von Intune verwaltet werden. Eine ausführlichere Beschreibung der Funktionsweise von App-Schutzrichtlinien und der von Intune-App-Schutzrichtlinien unterstützten Szenarien finden Sie im Thema [Was sind Microsoft Intune-App-Schutzrichtlinien](app-protection-policy.md).
+App-Schutzrichtlinien können angewendet werden, unabhängig davon, ob die Geräte, auf denen die Apps ausgeführt werden, von Intune verwaltet werden. Eine ausführlichere Beschreibung der Funktionsweise von App-Schutzrichtlinien und der von Intune-App-Schutzrichtlinien unterstützten Szenarien finden Sie im Thema [Was sind Microsoft Intune-App-Schutzrichtlinien?](app-protection-policy.md).
 
 Wenn Sie nach einer Liste der unterstützten MAM-Apps suchen, finden Sie weitere Informationen in der [Liste der MAM-Apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+
+Informationen zum Hinzufügen von Line-of-Business-Apps (LOB) Ihrer Organisation zu Microsoft Intune in Vorbereitung auf App-Schutzrichtlinien finden Sie unter [Hinzufügen von Apps zu Microsoft Intune](apps-add.md).
 
 ##  <a name="create-an-app-protection-policy"></a>Erstellen einer App-Schutzrichtlinie
 1. Wählen Sie in der Workload **Mobile Apps** im Bereich **Verwalten** die Option **App-Schutzrichtlinien** aus. Mit dieser Auswahl werden die Details zu **App-Schutzrichtlinien** geöffnet und Sie können neue Richtlinien erstellen und vorhandene bearbeiten.

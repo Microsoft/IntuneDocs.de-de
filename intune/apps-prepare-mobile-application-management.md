@@ -14,12 +14,12 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 351282634d6c6e087456e61e9fd967b70f9cf515
-ms.sourcegitcommit: c109ea6e9b7104630cd767aa27c5f7789286a906
+ms.openlocfilehash: 9d4dbdb3aa07020aa027dc1a4a1b2edcefefb4ca
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39450789"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251641"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien
 
@@ -28,7 +28,7 @@ ms.locfileid: "39450789"
 Sie können die Verwendung von App-Schutzrichtlinien bei Ihren Apps mit dem Intune App Wrapping Tool oder dem Intune App SDK aktivieren. Verwenden Sie diese Informationen, um diese beiden Methoden und den Zeitpunkt für ihre Verwendung kennenzulernen.
 
 ## <a name="intune-app-wrapping-tool"></a>Intune App Wrapping Tool
-Das App Wrapping Tool wird in erster Linie für interne Line-of-Business-Apps (LOB) verwendet. Das Tool ist eine Befehlszeilenanwendung, die einen Wrapper für die App erstellt, der es der App anschließend ermöglicht, von einer Intune-App-Schutzrichtlinie verwaltet zu werden.
+Das App Wrapping Tool wird in erster Linie für **interne** Line-of-Business-Apps (LOB) verwendet. Das Tool ist eine Befehlszeilenanwendung, die einen Wrapper für die App erstellt, der es der App anschließend ermöglicht, von einer Intune-App-Schutzrichtlinie verwaltet zu werden. Wenn Sie eine App schützen, die von einem unabhängigen Softwareanbieter (ISV, Independent Software Vendor) bereitgestellt wurde, sollten Sie unbedingt klären, ob der ISV die umschlossene App weiterhin unterstützt.
 
 Der Quellcode ist für die Verwendung des Tools nicht erforderlich, aber Sie benötigen entsprechende Anmeldeinformationen. Weitere Informationen zu Anmeldeinformationen finden Sie im [Intune-Blog](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Die Dokumentation zum App Wrapping Tool finden Sie unter [Android App Wrapping Tool ](app-wrapper-prepare-android.md) und [iOS App Wrapping Tool](app-wrapper-prepare-ios.md).
 
@@ -48,7 +48,7 @@ Weitere Informationen zum App Wrapping Tool für App-Schutzrichtlinien auf Gerä
 
 |**App Wrapping Tool** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |Nein – [Intune App SDK-Xamarin-Bindungen](app-sdk-xamarin.md) verwenden|Ja |
+|**iOS** |Ja |Ja |
 |**Android**|Nein – [Intune App SDK-Xamarin-Bindungen](app-sdk-xamarin.md) verwenden|Ja |
 
 ## <a name="intune-app-sdk"></a>Intune App SDK

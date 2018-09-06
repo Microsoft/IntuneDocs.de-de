@@ -15,12 +15,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: a22aafdca8c049367d4c88d27a07a7c1825a01e3
-ms.sourcegitcommit: e6e93419f46e8647d4661eeca09eb1e2e460ad2b
+ms.openlocfilehash: 5a248345a40cd7cfcff3883643562923f9535d3b
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38966917"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910637"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Verwalten von Windows-PCs als Computer mit dem Intune-Softwareclient
 
@@ -53,10 +53,10 @@ Intune unterstützt die Verwaltung von Windows-PCs als Computer mit dem Software
 
 |Anforderungen|Weitere Informationen|
 |---------------|--------------------|
-|Betriebssystem | Auf dem Windows-Gerät muss Windows 7 SP1 oder höher ausgeführt werden. </br></br>**Versionen der Home Edition werden nicht unterstützt.**|
+|Betriebssystem | Auf dem Windows-Gerät muss Windows 7 SP1 und Windows 8.1 oder höher ausgeführt werden. </br></br>**Versionen der Home Edition werden nicht unterstützt.**|
 |Administratorrechte|Das Konto, mit dem die Clientsoftware installiert wird, muss über lokale Administratorrechte auf diesem Gerät verfügen.|
 |Windows Installer 3.1|Auf dem PC wird Windows Installer 3.1 oder höher benötigt.<br /><br />So zeigen Sie die Windows Installer-Version auf einem PC an:<br /><br />  Klicken Sie auf dem PC mit der rechten Maustaste auf **%windir%\System32\msiexec.exe**, und klicken Sie dann auf **Eigenschaften**.<br /><br />Sie können die neueste Version von Windows Installer von der Microsoft Developer Network-Website unter [Windows Installer Redistributables (Weitervertreibbare Komponenten für Windows Installer)](http://go.microsoft.com/fwlink/?LinkID=234258) herunterladen.|
-|Entfernen nicht kompatibler Clientsoftware|Bevor Sie die Intune-Clientsoftware installieren, deinstallieren Sie sämtliche Clientsoftware für Configuration Manager, Operations Manager, Operations Management Suite und Service Manager auf diesem PC.|
+|Entfernen nicht kompatibler Clientsoftware|Bevor Sie die Intune-Clientsoftware installieren, deinstallieren Sie sämtliche Clientsoftware für Configuration Manager, Operations Manager und Service Manager auf diesem PC.|
 
 ## <a name="deploying-the-intune-software-client"></a>Bereitstellen des Intune-Softwareclients
 Als Intune-Administrator können Sie Benutzern den Intune-Softwareclient auf verschiedene Weisen zur Verfügung stellen. Anleitungen finden Sie unter [Installieren des Intune-Softwareclients auf Windows-PCs](install-the-windows-pc-client-with-microsoft-intune.md).

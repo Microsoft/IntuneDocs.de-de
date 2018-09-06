@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cd9db9399eb08c3ed04ff1d8920082aa0c04f06
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bedd1108ce0c9e173e6e9519a29d3948f1320c3a
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224312"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40251577"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Überwachen von App-Informationen und -Zuweisungen mit Microsoft Intune
 
@@ -62,6 +62,12 @@ Das Diagramm zeigt die Zahl der Apps für die folgenden Status an:
 | **Installation steht aus**   | Die Anzahl der Apps, deren Installation bevorsteht. |
 | **Nicht verfügbar**           | Die Anzahl der Apps, deren Status nicht verfügbar ist.            |
 
+> [!NOTE]
+> Die Anzahl der ermittelten Apps stimmt mit der Statusanzahl von App-Installationen möglicherweise nicht überein. Es gibt folgende Möglichkeiten für Inkonsistenzen:
+>    - Eine Zieländerung einer installierten verwalteten App kann dazu führen, dass die Installationsanzahl im Statusblade verringert, in den ermittelten Apps aber weiterhin berichtet wird.
+>    - Die Zielgruppenadressierung mehrerer Instanzen derselben App in einem Mandanten führt zu einer unterschiedlichen Anzahl Infolge von potenzieller Überschneidung von Benutzern oder Geräten. Jede Instanz der App zählt sich überschneidende Benutzer, doch bei den ermittelten Apps wird die Anzahl dupliziert.
+>    - Ermittelte Apps und App-Status werden zu unterschiedlichen Zeitintervallen gesammelt, und das könnte zu einer Abweichung bei der App-Anzahl führen.
+ 
 ### <a name="device-install-status"></a>Geräteinstallationsstatus
 
 Eine Liste des Gerätestatus wird angezeigt, wenn Sie im Abschnitt **Überwachen** des Menüs die Option **Geräteinstallationsstatus** auswählen. Die Tabelle mit den Details enthält die folgenden Spalten:

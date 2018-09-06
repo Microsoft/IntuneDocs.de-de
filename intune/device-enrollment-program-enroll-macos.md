@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6f9035b5a31d04e7d6ec6c5ec5b8f69a7c0943f
-ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
+ms.openlocfilehash: 7b913cc2f667cb2bb16d6f810d7449ce8ee752e8
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40090135"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751733"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>Automatisches Registrieren von macOS-Geräten mit dem Programm zur Geräteregistrierung von Apple
 
@@ -127,25 +127,30 @@ Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil fü
 
 8. Wählen Sie **Einstellungen des Einrichtungs-Assistenten** aus, um die folgenden Profileinstellungen zu konfigurieren: ![Anpassung des Setup-Assistenten](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
-
-    |                 Einstellung                  |                                                                                               Beschreibung                                                                                               |
+    | Abteilungseinstellungen | Beschreibung |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    |     <strong>Abteilungsname</strong>     |                                                             Wird angezeigt, wenn der Benutzer während der Aktivierung auf <strong>Info zur Konfiguration</strong> tippt.                                                              |
-    |    <strong>Abteilungstelefonnummer</strong>     |                                                          Wird angezeigt, wenn der Benutzer während der Aktivierung auf die Schaltfläche <strong>Benötigen Sie Hilfe?</strong> klickt.                                                          |
-    | <strong>Setup-Assistent-Optionen</strong> |                                                     Die folgenden optionalen Einstellungen können später im macOS-Menü <strong>Einstellungen</strong> eingerichtet werden.                                                      |
-    |        <strong>Kennung</strong>         | Fordert während der Aktivierung zur Eingabe der Kennung auf. Fordern Sie immer eine Kennung an, es sei denn, das Gerät und der Zugriff darauf werden auf andere Weise geschützt (d.h. im Kioskmodus zum Einschränken des Geräts auf eine App). |
-    |    <strong>Standortdienste</strong>    |                                                                 Falls aktiviert, fordert der Setup-Assistent während der Aktivierung zur Ausführung dieses Dienstes auf.                                                                  |
-    |         <strong>Wiederherstellen</strong>         |                                                                Falls aktiviert, fordert der Setup-Assistent während der Aktivierung die iCloud-Sicherung an.                                                                 |
-    |   <strong>iCloud und Apple-ID</strong>   |                         Falls aktiviert, fordert der Setup-Assistent den Benutzer auf, sich mit einer Apple-ID anzumelden, und im Bildschirm „Apps und Daten“ kann das Gerät von einer iCloud-Sicherung wiederhergestellt werden.                         |
-    |  <strong>Geschäftsbedingungen</strong>   |                                                   Falls aktiviert, fordert der Setup-Assistenten während der Aktivierung den Benutzer auf, die Apple-Geschäftsbedingungen zu akzeptieren.                                                   |
-    |        <strong>Touch ID</strong>         |                                                                 Falls aktiviert, fordert der Setup-Assistent während der Aktivierung zur Ausführung dieses Dienstes auf.                                                                 |
-    |        <strong>Apple Pay</strong>        |                                                                 Falls aktiviert, fordert der Setup-Assistent während der Aktivierung zur Ausführung dieses Dienstes auf.                                                                 |
-    |          <strong>Zoom</strong>           |                                                                 Falls aktiviert, fordert der Setup-Assistent während der Aktivierung zur Ausführung dieses Dienstes auf.                                                                 |
-    |          <strong>Siri</strong>           |                                                                 Falls aktiviert, fordert der Setup-Assistent während der Aktivierung zur Ausführung dieses Dienstes auf.                                                                 |
-    |     <strong>Diagnosedaten</strong>     |                                                                 Falls aktiviert, fordert der Setup-Assistent während der Aktivierung zur Ausführung dieses Dienstes auf.                                                                 |
-    |     <strong>FileVault</strong>           |  |
-    |     <strong>iCloud Diagnostics</strong>  |  |
-    |     <strong>Registrierung</strong>        |  |
+    | <strong>Abteilungsname</strong> | Wird angezeigt, wenn der Benutzer während der Aktivierung auf <strong>Info zur Konfiguration</strong> tippt. |
+    |    <strong>Abteilungstelefonnummer</strong>     |                                                          Wird angezeigt, wenn der Benutzer während der Aktivierung auf die Schaltfläche <strong>Benötigen Sie Hilfe?</strong> klickt. |
+
+    Sie können entscheiden, ob ein Bildschirm des Setup-Assistenten auf dem Gerät angezeigt oder ausgeblendet wird, während der Benutzer es einrichtet.
+    - Wenn Sie auf **Ausblenden** klicken, wird der Bildschirm während des Setups nicht angezeigt. Nach dem Setup des Geräts kann der Benutzer weiterhin zum Menü **Einstellungen** navigieren, um das Feature einzurichten.
+    - Wenn Sie auf **Anzeigen** klicken, wird der Bildschirm während des Setups angezeigt. Gelegentlich kann der Benutzer den Bildschirm überspringen, ohne weitere Maßnahmen ergreifen zu müssen. Er kann aber später zum Gerätemenü **Einstellungen** navigieren, um das Feature einzurichten. 
+
+    | Bildschirmeinstellungen des Setup-Assistenten | Wenn Sie während des Setups des Geräts auf **Anzeigen** klicken, führt das Gerät die folgenden Aktionen durch: |
+    |------------------------------------------|------------------------------------------|
+    | <strong>Kennung</strong> | Es fordert den Benutzer auf, eine Kennung einzugeben. Fordern Sie immer eine Kennung an, es sei denn, das Gerät und der Zugriff darauf werden auf andere Weise geschützt (d.h. im Kioskmodus zum Einschränken des Geräts auf eine App). |
+    | <strong>Standortdienste</strong> | Es fordert den Benutzer auf, seinen Standort anzugeben. |
+    | <strong>Wiederherstellen</strong> | Es zeigt den Bildschirm **Apps & Data** (Apps und Daten) an. Über diesen Bildschirm hat der Benutzer die Möglichkeit, Daten aus der iCloud-Sicherung wiederherzustellen oder aus dieser zu übertragen, wenn er das Gerät einrichtet. |
+    | <strong>iCloud und Apple-ID</strong> | Es lässt zu, dass der Benutzer sich mit seiner **Apple-ID** anmelden und **iCloud** verwenden kann.                         |
+    | <strong>Geschäftsbedingungen</strong> | Es verlangt, dass der Benutzer die Nutzungsbedingungen von Apple akzeptiert. |
+    | <strong>Touch ID</strong> | Es lässt zu, dass der Benutzer die Identifikation per Fingerabdruck für das Gerät einrichtet. |
+    | <strong>Apple Pay</strong> | Es lässt zu, dass der Benutzer Apple Pay auf dem Gerät einrichtet. |
+    | <strong>Zoom</strong> | Es lässt zu, dass der Benutzer die Anzeige vergrößern bzw. verkleinern kann, während er das Gerät einrichtet. |
+    | <strong>Siri</strong> | Es lässt zu, dass der Benutzer Siri einrichtet. |
+    | <strong>Diagnosedaten</strong> | Es zeigt dem Benutzer den Bildschirm **Diagnose** an. Über diesen Bildschirm kann der Benutzer Diagnosedaten an Apple senden. |
+    | <strong>FileVault</strong> | Es lässt zu, dass der Benutzer FileVault-Verschlüsselung einrichtet. |
+    | <strong>iCloud Diagnostics</strong> | Es lässt zu, dass der Benutzer iCloud-Diagnosedaten an Apple sendet. |
+    | <strong>Registrierung</strong>| Es verlangt, dass der Benutzer das Gerät registriert. |
 
 
 10. Wählen Sie **OK** aus.

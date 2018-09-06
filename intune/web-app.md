@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff55b013d863d1676b9b83ec93e38defe222e2d7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 26117a07e0769033dda573882c3853eb0e3921ff
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905239"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251963"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Hinzufügen von Web-Apps zu Microsoft Intune
 
@@ -45,7 +45,11 @@ Führen Sie die folgenden Schritte aus, um eine App als Verknüpfung zu einer Ap
 6. Wählen Sie im Bereich **App hinzufügen** aus der Dropdownliste **App-Typ** den Typ **Weblink** aus.
 7. Klicken Sie auf **Konfigurieren**.
 8. Fügen Sie im Bereich **App-Informationen** die folgenden Informationen hinzu:
-    - **Name**: Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt werden soll.
+    - **Name**: Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt wird. 
+    
+        > [!NOTE]
+        > Wenn Sie den Namen der App über das Intune Azure-Portal ändern, nachdem Sie sie bereitgestellt und installiert haben, kann die App mit Befehlen nicht mehr erreicht werden.
+    
     - **Beschreibung:** Geben Sie eine Beschreibung für die App ein. Die Beschreibung wird Benutzern im Unternehmensportal angezeigt.
     - **Herausgeber**: Geben Sie den Namen des Herausgebers dieser App ein.
     - **App-URL**: Geben Sie die URL der Website ein, auf der die zuzuweisende App gehostet wird.

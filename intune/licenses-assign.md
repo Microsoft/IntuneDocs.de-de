@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 8b132c0853bf9d591f16610f1e7a714b6288491b
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225407"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751649"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Zuweisen von Lizenzen zu Benutzern, damit sie ihre Geräte bei Intune registrieren können
 
@@ -61,7 +61,7 @@ In dieser [Übersicht über die Synchronisierung von Schul-/Unidaten](https://su
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Auswirkungen von Benutzer- und Gerätelizenzen auf den Zugriff auf Dienste
 * Jeder **Benutzer**, dem Sie eine Benutzersoftwarelizenz zuweisen, kann die Onlinedienste und zugehörige Software (einschließlich System Center) zum Verwalten von Anwendungen und von bis zu 15 Geräten nutzen.
-* Jedes **Gerät**, dem Sie eine Gerätesoftwarelizenz zuweisen, kann von einer beliebigen Anzahl von Benutzern für den Zugriff auf und die Nutzung der Onlinedienste und zugehörigen Software (einschließlich System Center) verwendet werden.
+* Sie können Lizenzen für alle Geräte separat von Benutzerlizenzen erwerben. Gerätelizenzen müssen den Geräten nicht zugewiesen werden. Jedes Gerät, das auf die Onlinedienste und zugehörige Software (einschließlich System Center-Software) zugreift und sie nutzt, muss über eine Gerätelizenz verfügen.
 * Wenn ein Gerät von mehreren Benutzern verwendet wird, erfordert jedes Gerät eine Gerätesoftwarelizenz, oder alle Benutzer benötigen eine Benutzersoftwarelizenz.
 
 ## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>Informationen zu denen von Ihnen erworbenen Lizenztypen

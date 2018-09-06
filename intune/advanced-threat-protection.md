@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: d43e95b2f236dc4c03bb3f63670b2b1400243531
+ms.sourcegitcommit: 0303e3b8c510f56e191e6079e3dcdccfc841f530
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744668"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "40251810"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Aktivieren von Windows Defender ATP mit bedingtem Zugriff in Intune
 
@@ -40,11 +40,11 @@ In diesem Artikel erfahren Sie, wie Sie Folgendes durchführen:
 - Erstellen der Konformitätsrichtlinie in Intune.
 - Aktivieren Sie in Azure Active Directory (AD) bedingten Zugriff auf Geräte basierend auf deren Bedrohungsstufe.
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 Um ATP mit Intune zu verwenden, stellen Sie sicher, dass Sie Folgendes konfiguriert haben und verwenden können:
 
-- Lizenzierter Mandant für Enterprise Mobility + Security E5 und Windows E5 (oder Microsoft 365 Enterprise E5)
+- Lizenzierter Mandant für Enterprise Mobility + Security E3 und Windows E5 (oder Microsoft 365 Enterprise E5)
 - Microsoft Intune-Umgebung mit [Intune-verwalteten](windows-enroll.md) Windows 10-Geräten, die auch mit Azure AD verknüpft sind
 - [Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) und Zugriff auf das Windows Defender Security Center (ATP-Portal)
 

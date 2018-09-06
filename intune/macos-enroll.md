@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,20 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4f8cddb69ac85e45acde8a846df3b5413c3b75bf
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 0d58cb3199405a8a32d169e74e4f0009841f5d09
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046246"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251709"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Registrieren von macOS-Geräten in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune ermöglicht es Ihnen, macOS-Geräte zu verwalten. Um die Geräteverwaltung zu aktivieren, müssen Ihre Benutzer ihre Geräte registrieren, indem sie auf die [Unternehmensportal-Website](http://portal.manage.microsoft.com) gehen und die Aufforderungen befolgen. Sobald sich macOS-Geräte unter Verwaltung befinden, können Sie [benutzerdefinierte Einstellungen für macOS-Geräte erstellen](custom-settings-macos.md). Weitere Funktionen sind in Kürze verfügbar.
+Intune ermöglicht Ihnen das Verwalten von macOS-Geräten, um Benutzern Zugriff auf Unternehmens-E-Mail und -Apps zu gewähren.
+
+Als Intune-Administrator können Sie die Registrierung für unternehmenseigene macOS-Geräte und macOS-Geräte in Privatbesitz ("bring your own Device" oder BYOD) einrichten. 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -39,27 +41,25 @@ Die folgenden Voraussetzungen müssen vor dem Einrichten der Registrierung von m
 - Zuweisen von Benutzerlizenzen im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Abrufen eines Apple-MDM-Push-Zertifikats](apple-mdm-push-certificate-get.md)
 
-## <a name="user-owned-ios-devices-byod"></a>iOS-Gerät im Besitz des Benutzers (BYOD)
+## <a name="user-owned-macos-devices-byod"></a>macOS-Geräte im Besitz des Benutzers (BYOD)
 
-Benutzer können ihre persönlichen Geräte für die Intune-Verwaltung registrieren. Dies wird als „bring your own device“ oder BYOD bezeichnet. Sobald Sie über die Voraussetzungen verfügen und den Benutzern Lizenzen zugewiesen haben, können diese die Unternehmensportal-App für macOS aus dem App Store herunterladen und den Registrierungsanweisungen in der App folgen.
-
-## <a name="company-owned-ios-devices"></a>Unternehmenseigenes iOS-Gerät
-Für Organisationen, die Geräte für ihre Benutzer erwerben, unterstützt Intune die Registrierung von firmeneigenen macOS-Geräten mit einem [Device Enrollment Manager](device-enrollment-manager-enroll.md)-Konto (DEM).
-
-## <a name="set-up-macos-enrollment"></a>Einrichten der macOS-Registrierung
-
-Standardmäßig erlaubt Intune bereits die Registrierung von macOS-Geräten.
-
-Informationen zum Blockieren der Registrierung von macOS-Geräten finden Sie unter [Festlegen von Gerätetypbeschränkungen](enrollment-restrictions-set.md).
-
-## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Kommunizieren der Geräteregistrierung für den Zugriff auf Unternehmensressourcen an die Benutzer
-
-Ihre Endbenutzer müssen die [Unternehmensportalwebsite](https://portal.manage.microsoft.com) besuchen und den Aufforderungen folgen, um ihre Geräte zu registrieren. Sie können ihnen auch einen Link für Online-Registrierungsschritte senden: [Registrieren Ihres Mac OS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+Benutzer können ihre persönlichen Geräte für die Intune-Verwaltung registrieren. Dies wird als „bring your own device“ oder BYOD bezeichnet. Nachdem Sie die Voraussetzungen erfüllt und Benutzerlizenzen zugewiesen haben, können Ihre Benutzer ihre Geräte registrieren, indem sie
+- zur [Website des Unternehmensportals](https://portal.manage.microsoft.com) wechseln oder
+- die Unternehmensportal-App herunterladen.
+Sie können ihnen auch einen Link für Online-Registrierungsschritte senden: [Registrieren Ihres Mac OS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
 
 Informationen zu anderen Endbenutzeraufgaben finden Sie in den folgenden Artikeln:
 
 - [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](end-user-educate.md)
 - [Verwenden Ihres macOS-Geräts mit Intune](/intune-user-help/using-your-macos-device-with-intune)
+
+## <a name="company-owned-macos-devices"></a>Unternehmenseigene macOS-Geräte
+Für Organisationen, die Geräte für Ihre Benutzer erwerben, unterstützt Intune die folgenden Methoden für die Registrierung von unternehmenseigenen macOS-Geräten:
+- [Apple-Programm zur Geräteregistrierung, Device Enrollment Program (DEP)](device-enrollment-program-enroll-macos.md): Organisationen können macOS-Geräte über das DEP erwerben. Mit DEP können Sie drahtlos (Over The Air) ein Registrierungsprofil bereitstellen, das Geräte für die Verwaltung registriert.
+- [Geräteregistrierungs-Manager (Device Enrollment Manager, DEM)](device-enrollment-manager-enroll.md): Über ein DEM-Konto können Sie bis zu 1.000 Geräte registrieren.
+
+## <a name="block-macos-enrollment"></a>Blockieren der macOS-Registrierung
+Intune lässt macOS-Geräte standardmäßig registrieren. Informationen zum Blockieren der Registrierung von macOS-Geräten finden Sie unter [Festlegen von Gerätetypbeschränkungen](enrollment-restrictions-set.md).
 
 ## <a name="enroll-virtual-macos-machines-for-testing"></a>Registrieren von virtuellen macOS-Computern zu Testzwecken
 
@@ -79,3 +79,7 @@ Die durch den Benutzer genehmigte MDM-Registrierung ist ein Typ der macOS-Regist
 Zur Genehmigung durch den Benutzer muss der Endbenutzer nach der Registrierung im macOS-Unternehmensportal die Genehmigung manuell mithilfe der Systemeinstellungen bereitstellen. Anweisungen hierzu finden Sie im macOS-Unternehmensportal für Benutzer von macOS 10.13.2 und höher.
 
 Um herauszufinden, ob ein Gerät durch den Benutzer genehmigt ist, besuchen Sie das Intune-Portal, und wählen Sie **Geräte** > **Alle Geräte**, das Gerät und dann **Hardware** aus. Aktivieren Sie das Feld **Genehmigt durch den Benutzer**.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Nachdem macOS-Geräte registriert wurden, können Sie [benutzerdefinierte Einstellungen für macOS-Geräte erstellen](custom-settings-macos.md).

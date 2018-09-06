@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed58a6af9b2b4742582c92729e7324841014f31c
-ms.sourcegitcommit: 2bc3b9655517ae874c524c3a270f4fc40c448faa
+ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
+ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34753891"
+ms.lasthandoff: 08/15/2018
+ms.locfileid: "40251965"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Die Einrichtung des Pro-App-VPN in Intune für iOS-Geräte
 
@@ -145,30 +145,41 @@ Nachdem Sie Ihr VPN-Profil hinzugefügt haben, ordnen Sie die App und Azure AD-G
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
-2. Wählen Sie **Mobile Apps** aus.
-3. Klicken Sie auf **Apps**.
-4. Wählen Sie die App aus der Liste der Apps aus.
-5. Klicken Sie auf **Zuweisungen**.
-6. Klicken Sie auf **Gruppe hinzufügen**.
-7. Wählen Sie im Bereich **Gruppe hinzufügen** für den **Zuweisungstyp** die Option **Erforderlich** aus.
-6. Wählen Sie die Gruppe aus, die Sie zuvor definiert haben, und aktivieren Sie die Option**Diese App als erforderlich festlegen**.
-8. Wählen Sie Ihre VPN-Definition für das **VPN** aus.
+3. Wählen Sie **Mobile Apps** aus.
+4. Klicken Sie auf **Apps**.
+5. Wählen Sie die App aus der Liste der Apps aus.
+6. Klicken Sie auf **Zuweisungen**.
+7. Klicken Sie auf **Gruppe hinzufügen**.
+8. Wählen Sie im Bereich **Gruppe hinzufügen** für den **Zuweisungstyp** die Option **Erforderlich** aus.
+9. Wählen Sie die Gruppe aus, die Sie zuvor definiert haben, und aktivieren Sie die Option**Diese App als erforderlich festlegen**.
+10. Wählen Sie Ihre VPN-Definition für das **VPN** aus.
  
     > [!NOTE]  
     > In einigen Fällen benötigt die VPN-Definition bis zu einer Minute, um den Wert abzurufen. Warten Sie etwa 3–5 Minuten, bevor Sie auf **Speichern** klicken.
 
-9. Klicken Sie auf **OK** und dann auf **Speichern**.
+11. Klicken Sie auf **OK** und dann auf **Speichern**.
 
     ![Zuordnen einer App zu einem VPN](./media/vpn-per-app-app-to-vpn.png)
 
+Eine Zuordnung zwischen einer App und einem Profil wird während des nächsten Geräte-Check-Ins entfernt, wenn die folgenden Bedingungen erfüllt sind:
+- Die App wurde mit erforderlicher Installationsabsicht ausgerichtet.
+- Sowohl das Profil als auch die App sind auf dieselbe Gruppe ausgerichtet.
+- Sie entfernen die Pro-App-VPN-Konfiguration aus der App-Zuweisung.
+
+Eine Zuordnung zwischen einer App und einem Profil bestehen so lange, bis der Endbenutzer eine erneute Installation aus dem Unternehmensportal anfordert, wenn die folgenden Bedingungen erfüllt sind:
+- Die App wurde mit verfügbarer Installationsabsicht ausgerichtet.
+- Sowohl das Profil als auch die App sind auf dieselbe Gruppe ausgerichtet.
+- Der Endbenutzer hat die App-Installation aus dem Unternehmensportal angefordert. Dies führt dazu, dass App und Profil auf dem Gerät installiert werden.
+- Sie entfernen die Pro-App-VPN-Konfiguration aus der App-Zuweisung.
+
 ## <a name="verify-the-connection-on-the-ios-device"></a>Überprüfen der Verbindung auf dem iOS-Gerät
 
-Sobald Ihr App-bezogenes VPN eingerichtet und Ihrer App zugeordnet ist, überprüfen Sie, ob die Verbindung von einem Gerät aus funktioniert.
+Sobald Ihr Pro-App-VPN eingerichtet und Ihrer App zugeordnet ist, überprüfen Sie, ob die Verbindung von einem Gerät aus funktioniert.
 
 ### <a name="before-you-attempt-to-connect"></a>Bevor Sie eine Verbindung herstellen
 
  - müssen Sie sicherstellen, dass iOS 9 oder höher ausgeführt wird.
- - stellen Sie sicher, dass Sie *alle* der oben erwähnten Richtlinien derselben Gruppe von Benutzern bereitstellen Wenn Sie nicht so vorgehen, wird wahrscheinlich die Servicequalität des App-bezogenen VPN beeinträchtigt.  
+ - stellen Sie sicher, dass Sie *alle* der oben erwähnten Richtlinien derselben Gruppe von Benutzern bereitstellen Wenn Sie nicht so vorgehen, wird die Servicequalität des Pro-App-VPNs wahrscheinlich beeinträchtigt.  
  - stellen Sie sicher, dass Sie die unterstützende Drittanbieter-VPN-App installiert haben Die folgenden VPN-Apps werden unterstützt:
     - Check Point Capsule Connect
     - Cisco AnyConnect
@@ -177,7 +188,7 @@ Sobald Ihr App-bezogenes VPN eingerichtet und Ihrer App zugeordnet ist, überpr�
     - Pulse Secure
     - SonicWall Mobile Connect
 
-### <a name="connect-using-the-per-app-vpn"></a>Herstellen einer Verbindung mithilfe des App-bezogenen VPNs
+### <a name="connect-using-the-per-app-vpn"></a>Herstellen einer Verbindung mithilfe des Pro-App-VPNs
 
 Überprüfen Sie die Zero Touch-Funktion, indem Sie eine Verbindung herstellen, ohne dabei das VPN auswählen oder Ihre Anmeldeinformationen eingeben zu müssen. Die Zero Touch-Funktion bedeutet Folgendes:
 
@@ -191,7 +202,7 @@ Sobald Ihr App-bezogenes VPN eingerichtet und Ihrer App zugeordnet ist, überpr�
 2. Tippen Sie auf **Verbinden**.  
 Das VPN stellt ohne weitere Aufforderungen erfolgreich eine Verbindung her.
 
-<!-- ## Troubleshooting the Per-App VPN
+<!-- ## Troubleshooting the per-app VPN
 
 The user experiences the feature by silently connecting to the VPN. This experience, however, can provide little information for troubleshooting. You can review the event logs crated by the iOS device.
 

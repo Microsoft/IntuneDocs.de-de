@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321287"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40252454"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune
 
@@ -121,13 +121,16 @@ Sie sollten nicht nur zwischen Web-Apps, Store-Apps und branchenspezifischen App
 - **Microsoft Store für Unternehmen (Windows 10)**: Im Microsoft Store für Unternehmen können Sie Apps für Ihre Organisation suchen und einzeln oder im Rahmen einer Volumenlizenz erwerben. Indem Sie den Store mit Microsoft Intune verbinden, können Sie per Volumenlizenz erworbene Apps über das Azure-Portal verwalten. Weitere Informationen finden Sie unter [Verwalten von Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md).
 
     > [!NOTE]
-    > Für Windows-Apps können jetzt die folgenden Dateierweiterungen verwendet werden: **.msi**, **.appx**, **.appxbundle**, **.msix** und **.msixbundle**.  
+    > Zu den Dateierweiterungen für Windows-Apps gehören **.msi**, **.appx**, **.appxbundle**, **.msix** und **.msixbundle**.  
 
 ## <a name="before-you-add-apps"></a>Vor dem Hinzufügen von Apps
 Bevor Sie damit beginnen, Apps hinzuzufügen und zuzuweisen, beachten Sie die folgenden Punkte:
 
 - Wenn Sie eine App aus einem Store hinzufügen und zuweisen, müssen Ihre Benutzer über ein Konto bei diesem Store verfügen, um die App installieren zu können.
 - Einige von Ihnen zugewiesene Apps oder Elemente sind möglicherweise von integrierten iOS-Apps abhängig. Wenn Sie z.B. ein Buch aus dem iOS-Store zuweisen, muss die iBooks-App auf dem Gerät vorhanden sein. Wenn Sie die integrierte iBooks-App entfernt haben, können Sie Intune nicht dazu verwenden, sie wieder zu aktivieren.
+
+> [!IMPORTANT]
+> Wenn Sie den Namen der App über das Intune Azure-Portal ändern, nachdem Sie sie bereitgestellt und installiert haben, kann die App mit Befehlen nicht mehr erreicht werden.
 
 ## <a name="cloud-storage-space"></a>Cloudspeicherplatz
 Alle Apps, die Sie mithilfe des Software-Installationsprogrammtyps erstellen (beispielsweise eine branchenspezifische App), werden paketiert und in den Intune-Cloudspeicher hochgeladen. Ein Testabonnement von Intune enthält 2 GB cloudbasierten Speicher, der zum Speichern von verwalteten Apps und Updates verwendet wird. Der Gesamtspeicherplatz wird nicht durch ein vollständiges Abonnement beeinflusst.
@@ -170,6 +173,10 @@ Die automatische Neuinstallation, Aktualisierung oder Entfernung einer erforderl
 - Wenn die Installation der erforderlichen App fehlschlägt oder die App nicht auf dem Gerät vorhanden ist, überprüft Intune die Kompatibilität und installiert die App erneut, sobald der im Zeitplan festgelegte Zyklus beendet ist.  
 - Ein Administrator machte eine App für eine Benutzergruppe verfügbar, und ein Endbenutzer installiert die App über das Unternehmensportal auf dem Gerät. Später aktualisiert der Administrator die App von Version 1 auf Version 2. Intune aktualisiert dann die App, sobald der im Zeitplan festgelegte Zyklus beendet ist. Voraussetzung dafür ist, dass die vorherige Version der App immer noch auf dem Gerät vorhanden ist.
 - Wenn der Administrator eine Lösung für eine Deinstallationsabsicht bereitstellt, die App auf dem Gerät vorhanden ist und ein Fehler bei der Deinstallation auftritt, überprüft Intune die Kompatibilität und deinstalliert die App, sobald der im Zeitplan festgelegte Zyklus beendet ist.   
+
+## <a name="app-installation-errors"></a>App-Installationsfehler
+
+Weitere Informationen zu Intune-App-Installationsfehlern finden Sie unter [App-Installationsfehler](troubleshoot-app-install.md#app-installation-errors).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/7/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bb94c5a0941dc4f4d626c6316f79d5e4b1f4b551
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: 3be9be3c290a6cbb2e68358a6810aa2dc1636065
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2018
-ms.locfileid: "35679443"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40253141"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Vorbereiten von Android-Apps für App-Schutzrichtlinien mit dem Intune App Wrapping Tool
 
@@ -50,6 +50,9 @@ Lesen Sie vor dem Ausführen des Tools die [Sicherheitsüberlegungen für das Au
     > In einigen Fällen kann die 32-Bit-Version von Java zu Speicherproblemen führen. Es ist eine gute Idee, die 64-Bit-Version zu installieren.
 
 - Für Android müssen alle App-Pakete (APK-Dateien) signiert sein. Informationen zum **Wiederverwenden** vorhandener Zertifikate und für allgemeine Anleitungen für Signaturzertifikate finden Sie unter [Wiederverwendung von Signaturzertifikaten und Umschließen von Apps](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). Das ausführbare Java-Tool „keytool.exe“ wird zum Generieren **neuer** Anmeldeinformationen verwendet, die zum Signieren der umschlossenen Ausgabe-App erforderlich sind. Kennwörter, die festgelegt werden, müssen sicher sein. Notieren Sie sich diese Kennwörter jedoch, denn sie werden benötigt, um das App Wrapping Tool auszuführen.
+
+> [!NOTE]
+> Das Intune App Wrapping Tool unterstützt nicht die v2- und anstehenden v3-Signaturschemen von Google für App-Signierung. Nachdem Sie die APK-Datei mit dem Intune App Wrapping Tool umschlossen haben, wird empfohlen, das [von Google bereitgestellte Apksigner Tool]( https://developer.android.com/studio/command-line/apksigner) zu verwenden. Dadurch wird Folgendes sichergestellt: Sobald Ihre App auf Endbenutzergeräte abgerufen wurde, kann sie durch Android-Standards ordnungsgemäß gestartet werden. 
 
 - (Optional) Aktivieren Sie Multidex innerhalb der Eingabe-App. In einigen Fällen erreicht eine App das Größenlimit der ausführbaren Dalvik-Datei (DEX) aufgrund der Intune MAM SDK-Klassen, die während der Umschließung hinzugefügt werden. DEX-Dateien sind Teil der Kompilierung einer Android-App. In diesem Falls ist die bewährte Vorgehensweise, Multidex innerhalb der App selbst zu aktivieren. In bestimmten Organisationen erfordert dies möglicherweise eine Zusammenarbeit mit demjenigen, der die App kompiliert (z.B. das App-Entwicklungsteam). 
 

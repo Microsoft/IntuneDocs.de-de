@@ -15,12 +15,12 @@ ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8c8fa146f01caae08f35ae824563ceb328c9d7f4
-ms.sourcegitcommit: 7daa778b3a5adb41acfe23495cb63754afda1c58
+ms.openlocfilehash: 6dae7f6973f6259284fc21e5e4b8e98b67517102
+ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37123400"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42823000"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Was ist die Mobile Threat Defense-Integration in Intune?
 
@@ -79,3 +79,4 @@ Lernen Sie, wie Sie den Zugriffs auf Unternehmensressourcen auf der Basis von Ge
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
+- [Better Mobile](better-mobile-threat-defense-connector.md)

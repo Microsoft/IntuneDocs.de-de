@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 08/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,32 +13,29 @@ ms.technology: ''
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5658bf2e1ee250ef9fd405b3f7ec1772b166f338
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6b66cd00f734cab3ca85f6d87f056f8c482a377d
+ms.sourcegitcommit: 2811df0f851ca6b08f6ae8c926fb2e6971c41690
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020995"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251732"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Verwenden der Aktion „Sauberer Start“ zum Zurücksetzen von Windows 10-Geräten mit Intune
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Die Geräteaktion **Sauberer Start** entfernt alle Apps, die auf einem Windows 10-PC mit Creators Update installiert sind. Danach wird der PC automatisch auf die neueste Windows-Version aktualisiert.
+Die Geräteaktion **Sauberer Start** entfernt alle Apps, die auf einem PC unter Windows 10, Version 1703 oder höher, installiert wurden. „Sauberer Start“ hilft dabei, Apps (von OEMs) zu entfernen, die auf einem neuen PC häufig vorinstalliert sind.  
 
-Diese Aktion hilft dabei, Apps (von OEMs) zu entfernen, die auf einem neuen PC häufig vorinstalliert sind. Um die Inhalte des Basisordners des Benutzers beizubehalten und nur Apps und Einstellungen zu entfernen, verwenden Sie die Einstellung `if user data is retained`.
-
-> [!IMPORTANT]
-> Der saubere Start hebt die Registrierung des Geräts bei Intune auf, das Gerät ist jedoch weiterhin in Azure Active Directory eingebunden.
-
-## <a name="use-fresh-start"></a>Verwenden des sauberen Starts
-
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie auf **Microsoft Intune**.
-3. Klicken Sie auf **Geräte** und dann auf **Alle Geräte**.
-4. Wählen Sie aus der Liste der verwalteten Geräte ein Windows 10-Desktopgerät aus, und wählen Sie dann die Option **Sauberer Start** aus.
-
-## <a name="next-steps"></a>Nächste Schritte
-
-Um den Status dieser Aktion anzuzeigen, wählen Sie **Geräteaktionen** (**Microsoft Intune** > **Geräte**) aus.
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an, und wechseln Sie zu > **Microsoft Intune** > **Geräte** > **Alle Geräte**.
+2. Wählen Sie aus der Liste der verwalteten Geräte ein Windows 10-Desktopgerät aus.
+3. Klicken Sie auf **Sauberer Start**. 
+4. Wählen Sie **Benutzerdaten auf diesem Gerät beibehalten** aus, um Folgendes zu ermöglichen:
+   * Azure AD für das Gerät bleibt eingebunden.
+    * Das Gerät bleibt bei der mobilen Geräteverwaltung registriert. 
+    * Die Inhalte des Basisordners des Gerätebenutzers werden beibehalten, und Apps und Einstellungen werden entfernt.  
+  > [!IMPORTANT]
+ > Wenn Sie die Benutzerdaten nicht beibehalten, wird das Gerät auf seinen standardmäßigen Zustand wiederhergestellt. Seine Registrierung bei Azure AD und der mobilen Geräteverwaltung wird aufgehoben. 
+ 
+5. Klicken Sie auf **OK**.   
+6. Wenn Sie den Status dieser Aktion anzeigen möchten, wechseln Sie zu **Geräte**, und klicken Sie auf **Geräteaktionen**.  

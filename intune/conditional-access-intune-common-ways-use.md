@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 49fd06d4f0f75f1aeff434ce3b271284ec1a0340
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025911"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40253144"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?
 
@@ -28,6 +28,9 @@ ms.locfileid: "31025911"
 Es gibt zwei Arten des bedingten Zugriffs in Intune: den gerätebasierten bedingten Zugriff und den App-basierten bedingten Zugriff. Sie müssen die entsprechenden Konformitätsrichtlinien konfigurieren, um die Konformität mit bedingtem Zugriff in Ihrer Organisation zu unterstützen. Der bedingte Zugriff wird häufig verwendet, um Aktionen wie die folgenden auszuführen: Zulassen oder Blockieren des Zugriffs auf Exchange lokal, Steuern des Zugriffs auf das Netzwerk oder Integrieren in eine Mobile Threat Defense-Lösung.
 
 Im Folgenden finden Sie Informationen zur Verwendung der Intune-Funktionen für die Konformität von mobilen *Geräten* und der Intune-Funktionen für die Verwaltung mobiler *Anwendungen*. 
+
+> [!NOTE]
+> Bei bedingtem Zugriff handelt es sich um eine Azure Active Directory-Funktion, die in einer Azure Active Directory Premium-Lizenz enthalten ist. Intune erweitert diese Funktion, indem es der Lösung Konformität der mobilen Geräte und Mobile App-Verwaltung hinzufügt.
 
 ## <a name="device-based-conditional-access"></a>Gerätebasierter bedingter Zugriff
 
@@ -118,11 +121,11 @@ Die Integration von Intune und Mobile Threat Defense-Lösungen spielt eine wicht
 
 ### <a name="conditional-access-for-windows-pcs"></a>Bedingter Zugriff für Windows-PCs
 
-Der bedingte Zugriff für PCs bietet eine ähnliche Funktionalität wie für mobile Geräte. Im Folgenden finden Sie Informationen zu den verschiedenen Möglichkeiten, den bedingten Zugriff beim Verwalten von PCs mit Intune zu verwenden.
+Der bedingte Zugriff für PCs bietet eine Funktionalität, die der für mobile Geräte verfügbaren ähnlich ist. Im Folgenden finden Sie Informationen zu den verschiedenen Möglichkeiten, den bedingten Zugriff beim Verwalten von PCs mit Intune zu verwenden.
 
 #### <a name="corporate-owned"></a>Unternehmenseigene Geräte
 
--   **In die lokale AD-Domäne eingebunden**: Dies ist die häufigste Bereitstellungsoption für bedingen Zugriff für Organisationen, denen die Tatsache genügt, dass sie ihre PCs bereits über AD-Gruppenrichtlinien und/oder mit System Center Configuration Manager verwalten.
+-   **In die lokale AD-Domäne eingebunden**: Diese Option wird häufig von Unternehmen genutzt, die ziemlich vertraut sind mit der Art, in der sie ihre PCs bereits über AD-Gruppenrichtlinien und/oder mit System Center Configuration Manager verwalten.
 
 -   **In die Azure AD-Domäne eingebunden und über Intune verwaltet**: Diese Option zielt üblicherweise auf CYOD-Bereitstellungen (Choose Your Own Device) und Roamingszenarien mit Laptops ab, die selten mit dem Unternehmensnetzwerk verbunden sind. Das Gerät tritt der Azure AD-Domäne bei und wird bei Intune registriert. Dadurch entsteht keinerlei Abhängigkeit von einer lokalen Active Directory-Instanz oder Domänencontrollern. Diese Option kann als Kriterium für den bedingten Zugriff auf Unternehmensressourcen verwendet werden.
 

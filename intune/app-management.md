@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/20/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906106"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255380"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Was ist die Microsoft Intune App-Verwaltung?
 
@@ -38,23 +38,22 @@ Intune bietet eine Reihe von Funktionen, die die Installation der erforderlichen
 
 ## <a name="app-management-capabilities-by-platform"></a>App-Verwaltungsfunktionen nach Plattform
 
-||||||
-|-|-|-|-|-|
-| |Android|iOS|Windows Phone 8.1|Windows 10|
-|Hinzufügen und Zuweisen von Apps für Geräte und Benutzer|Ja |Ja |Ja |Ja |
-|Zuweisen von Apps für Geräte, die nicht bei Intune registriert sind|Ja |Ja |Nein|Nein|
-|Steuern des Startverhaltens von Apps mithilfe von App-Konfigurationsrichtlinien|Nein|Ja |Nein|Nein|
-|Verwenden von Richtlinien für die Bereitstellung mobiler Apps zum Verlängern abgelaufener Apps|Nein|Ja |Nein|Nein|
-|Schützen von Unternehmensdaten in Apps mit App-Schutzrichtlinien|Ja |Ja |Nein|Nein<sup>1</sup>|
-|Entfernen ausschließlich von Unternehmensdaten aus einer installierten App (Selektive App-Zurücksetzung)|Ja |Ja |Ja |Ja |
-|Überwachen von App-Zuweisungen|Ja |Ja |Ja |Ja |
-|Zuweisen und Nachverfolgen von Per Volumenlizenz in einem App-Store erworbenen Apps|Nein|Nein|Nein|Ja |
-|Obligatorische Installation von Apps auf Geräten (erforderlich)<sup>2</sup>|Ja |Ja |Ja |Ja |
-|Optionale Installation auf Geräten über das Unternehmensportal (verfügbare Installation)|Ja |Ja |Ja |Ja |
-|Installieren von Verknüpfungen zu Apps im Internet (Weblink)|Ja |Ja |Ja |Ja |
-|Interne (branchenspezifische) Apps|Ja |Ja |Nein|Ja |
-|Apps aus einem Store|Ja |Ja |Ja |Ja |
-|Aktualisierung von Apps|Ja |Ja |Ja |Ja |
+|  | Android | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
+| Hinzufügen und Zuweisen von Apps für Geräte und Benutzer | Ja  | Ja  | Ja  | Ja  | Ja  |
+| Zuweisen von Apps für Geräte, die nicht bei Intune registriert sind | Ja  | Ja  | Nein | Nein | Nein |
+| Steuern des Startverhaltens von Apps mithilfe von App-Konfigurationsrichtlinien | Nein | Ja  | Nein | Nein | Nein |
+| Verwenden von Richtlinien für die Bereitstellung mobiler Apps zum Verlängern abgelaufener Apps | Nein | Ja  | Nein | Nein | Nein |
+| Schützen von Unternehmensdaten in Apps mit App-Schutzrichtlinien | Ja  | Ja  | Nein | Nein | Nein |
+| Entfernen ausschließlich von Unternehmensdaten aus einer installierten App (Selektive App-Zurücksetzung) | Ja  | Ja  | Nein | Ja  | Ja  |
+| Überwachen von App-Zuweisungen | Ja  | Ja  | Ja  | Ja  | Ja  |
+| Zuweisen und Nachverfolgen von per Volumenlizenz in einem App-Store erworbenen Apps | Nein | Nein | Nein | Ja  | Nein |
+| Obligatorische Installation von Apps auf Geräten (erforderlich)2 | Ja  | Ja  | Ja  | Ja  | Ja  |
+| Optionale Installation auf Geräten über das Unternehmensportal (verfügbare Installation) | Ja  | Ja  | Ja  | Ja  | Ja  |
+| Installieren von Verknüpfungen zu Apps im Internet (Weblink) | Ja  | Ja  | Ja  | Ja  | Ja  |
+| Interne (branchenspezifische) Apps | Ja  | Ja  | Ja  | Ja  | Nein |
+| Apps aus einem Store | Ja  | Ja  | Nein | Ja  | Ja  |
+| Aktualisierung von Apps | Ja  | Ja  | Nein | Ja  | Ja  |
 
 <sup>1</sup> Erwägen Sie die Verwendung [Windows Information Protection](windows-information-protection-configure.md) für den Schutz von Apps auf Geräten mit Windows 10.
 
@@ -95,8 +94,8 @@ Weitere Informationen zu diesem Abschnitt finden Sie unter [Verwalten von Apps](
 - **App-Lizenzen**: Ermöglicht das Anzeigen, Zuweisen und Überwachen von per Volumenlizenz erworbenen Apps aus App Stores. Weitere Informationen finden Sie in folgenden Quellen:
     - [Per Volumenlizenzprogramm erworbene iOS-Apps (VPP-Apps)](vpp-apps-ios.md)
     - [Per Volumenlizenz erworbene Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md)
-- **Ermittelte Apps**: Zeigt alle Apps an, die von Intune zugewiesen und auf einem Gerät installiert wurden.
-- **App-Installationsstatus:** Zeigt den Status einer App-Zuweisung, die Sie erstellt haben.
+- **Ermittelte Apps**: Zeigt alle Apps an, die von Intune zugewiesen und auf einem Gerät installiert wurden. Weitere Informationen finden Sie unter [Überwachen von App-Informationen und -Zuweisungen mit Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
+- **App-Installationsstatus:** Zeigt den Status einer App-Zuweisung, die Sie erstellt haben. Weitere Informationen finden Sie unter [Überwachen von App-Informationen und -Zuweisungen mit Microsoft Intune](apps-monitor.md#device-and-user-status-graphs).
 - **App-Schutzstatus:** Zeigt den Status einer App-Schutzrichtlinie für einen ausgewählten Benutzer an.
 - **Überwachungsprotokolle**: Zeigt die Aktivität aller IT-Administratoren in Bezug auf die Intune-App an.
 

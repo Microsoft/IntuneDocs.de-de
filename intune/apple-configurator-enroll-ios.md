@@ -15,12 +15,12 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b3965c651bb6fcc38d61a55208fc8b199223891
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: b7cff6c777de4a35aa6825d1d37fdd0c2f2d0b72
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212119"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751716"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Registrieren von iOS-Geräten mit Apple Configurator
 
@@ -57,12 +57,18 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen, die während 
 
     - **Mit Benutzeraffinität registrieren**: Wählen Sie diese Option für Geräte aus, die Benutzern gehören und das Unternehmensportal verwenden sollen, um Dienste wie z. B. die Installation von Apps nutzen zu können. Das Gerät muss mit dem Setup-Assistenten einem Benutzer zugewiesen werden und kann dann auf Unternehmensdaten und E-Mails zugreifen. Wird nur für die Registrierung des Setup-Assistenten unterstützt. Benutzeraffinität erfordert [den Endpunkt WS-Trust 13 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints). [Erfahren Sie mehr](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
-   > [!NOTE]
-   > Mehrstufige Authentifizierung (Multifactor authentication, MFA) funktioniert nicht während der Einrichtung der Registrierung mit Benutzeraffinität. Nach der Registrierung funktioniert die MFA auf Geräten wie erwartet. Geräte können Benutzer nicht dazu auffordern, ihr Kennwort zu ändern, wenn sie sich zum ersten Mal anmelden. Außerdem werden Benutzer, deren Kennwörter abgelaufen sind, während der Registrierung nicht aufgefordert, ihr Kennwort zurückzusetzen. Benutzer müssen ihr Kennwort auf einem anderen Gerät zurücksetzen.
-
     - **Ohne Benutzeraffinität registrieren**: Wählen Sie diese Option für Geräte aus, die keinem einzelnen Benutzer zugeordnet sind. Verwenden Sie diese Option für Geräte, die Aufgaben ohne den Zugriff auf lokale Benutzerdaten ausführen. Apps, die eine Benutzerzugehörigkeit erfordern (einschließlich der Unternehmensportal-App, die für die Installation branchenspezifischer Apps verwendet wird), funktionieren nicht. Dies ist für die direkte Anmeldung erforderlich.
 
 4. Wenn Sie **Mit Benutzeraffinität registrieren** ausgewählt haben, können Sie die Benutzerauthentifizierung über das Unternehmensportal statt über den Apple-Setup-Assistenten erlauben.
+
+    > [!NOTE]
+    > Wenn Sie einen der folgenden Schritte ausführen möchten, legen Sie **Über das Unternehmensportal statt über den Setup-Assistenten authentifizieren** auf **Ja** fest.
+    >    - Sie möchten die mehrstufige Authentifizierung verwenden.
+    >    - Sie möchten Benutzer zum Ändern ihres Kennworts auffordern, wenn sie sich zum ersten Mal anmelden.
+    >    - Sie möchten Benutzer dazu auffordern, ihre abgelaufenen Kennwörter bei der Registrierung zurückzusetzen.
+    >
+    > Diese Optionen werden für die Authentifizierung beim Setup-Assistenten von Apple nicht unterstützt.
+
 
 6. Wählen Sie **Erstellen** aus, um das Profil zu speichern.
 

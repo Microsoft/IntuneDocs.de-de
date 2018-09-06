@@ -15,12 +15,12 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31d09c8c97da823ec40785a6db42df64056277fb
-ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
+ms.openlocfilehash: 59449efd592f3c47bdf2350b495f81c23f442999
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164551"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751801"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Aktivieren der iOS-Geräteregistrierung mit Apple School Manager
 
@@ -94,8 +94,13 @@ Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil fü
 
     ![Authentifizieren über das Unternehmensportal](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
-    >[!NOTE]
-    >Die mehrstufige Authentifizierung (MFA) funktioniert bei der Registrierung bei Apple School Manager-Geräten nicht, wenn Sie die Profileigenschaften auf **Mit Benutzeraffinität registrieren** festgelegt haben und kein Unternehmensportal verwenden. Nach der Registrierung funktioniert die MFA auf diesen Geräten wie erwartet. Geräte können Benutzer nicht dazu auffordern, ihr Kennwort zu ändern, wenn sie sich zum ersten Mal anmelden. Außerdem werden Benutzer, deren Kennwörter abgelaufen sind, während der Registrierung nicht aufgefordert, ihr Kennwort zurückzusetzen. Benutzer müssen ihr Kennwort auf einem anderen Gerät zurücksetzen.
+    > [!NOTE]
+    > Wenn Sie einen der folgenden Schritte ausführen möchten, legen Sie **Über das Unternehmensportal statt über den Setup-Assistenten authentifizieren** auf **Ja** fest.
+    >    - Sie möchten die mehrstufige Authentifizierung verwenden.
+    >    - Sie möchten Benutzer zum Ändern ihres Kennworts auffordern, wenn sie sich zum ersten Mal anmelden.
+    >    - Sie möchten Benutzer dazu auffordern, ihre abgelaufenen Kennwörter bei der Registrierung zurückzusetzen.
+    >
+    > Diese Optionen werden für die Authentifizierung beim Setup-Assistenten von Apple nicht unterstützt.
 
 6. Wählen Sie **Geräteverwaltungseinstellungen** aus, und geben Sie an, ob Geräte mit diesem Profil überwacht werden sollen.
     Bei **überwachten** Geräten stehen mehr Verwaltungsfunktionen zur Verfügung, und die Aktivierungssperre ist standardmäßig deaktiviert. Es wird von Microsoft empfohlen, DEP als Mechanismus zur Aktivierung des überwachten Modus zu verwenden. Dies gilt insbesondere für Organisationen, die eine große Anzahl von iOS-Geräten bereitstellen.
