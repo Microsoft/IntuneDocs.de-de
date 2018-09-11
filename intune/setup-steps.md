@@ -6,20 +6,20 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/24/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: dougeby
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: f818c35a008c24a529967b09a37917343433ff7d
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.custom: intune-classic; get-started
+ms.openlocfilehash: 52bd7cd60f1ad184dc4f58d15b14e3d52ff7d30e
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225458"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253713"
 ---
 # <a name="set-up-intune"></a>Einrichten von Intune
 

@@ -7,20 +7,20 @@ author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 08/16/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 4e9dbda4c768bf9963a4ec168d6a613dca197995
-ms.sourcegitcommit: c5cba0f4bf01eb9a9492e4e3fb6cd756f0737057
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: 4189e9357c7ed135ab219b38f22d34a09ebb5318
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "40251811"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253679"
 ---
 # <a name="what-are-app-protection-policies"></a>Was sind App-Schutzrichtlinien?
 

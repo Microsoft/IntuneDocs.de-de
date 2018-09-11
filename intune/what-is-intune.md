@@ -7,19 +7,19 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/28/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
-ms.custom: ''
-ms.openlocfilehash: 4dee2c2204b90a35f0b03e2cd78a6662f67f680d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.custom: get-started
+ms.openlocfilehash: 3f8f0dce416c943dbc244d0e2a4366b12b305708
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032641"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253781"
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Einführung in Microsoft Intune im Azure-Portal
 

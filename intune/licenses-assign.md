@@ -6,20 +6,20 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 8b132c0853bf9d591f16610f1e7a714b6288491b
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.custom: intune-classic; get-started
+ms.openlocfilehash: 83be8a9dcdb433b48a70d71f4cfc2bc6a9f98e0b
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751649"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253798"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Zuweisen von Lizenzen zu Benutzern, damit sie ihre Geräte bei Intune registrieren können
 

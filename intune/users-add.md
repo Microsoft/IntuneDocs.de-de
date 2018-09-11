@@ -7,20 +7,20 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 0d38d7671218bfcecd3d2aa4671a565e0cabe37f
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.custom: intune-classic; get-started
+ms.openlocfilehash: 643f118414862e1644e6bb15d56a8e903d958d0c
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38219922"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254172"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Hinzufügen von Benutzern und Gewähren von Administratorrechten für Intune
 

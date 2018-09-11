@@ -7,20 +7,20 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 9b9f81049e7bdfdfe2861d617dceb6036a55cecf
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.custom: intune-classic; get-started
+ms.openlocfilehash: cbefc5ae5ef159c3c58a475f01a1513abb46ee90
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225254"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254070"
 ---
 # <a name="configure-a-custom-domain-name"></a>Konfigurieren eines benutzerdefinierten Domänennamens
 

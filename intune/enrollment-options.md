@@ -7,17 +7,18 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: 67805253f432098736e0fb96776e8f7f0ff44cc3
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.custom: get-started
+ms.openlocfilehash: becd0c62d57517a8c1566657b5278a46d68b9c17
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2018
-ms.locfileid: "29748717"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254019"
 ---
 # <a name="enrollment-options-for-devices-managed-by-intune"></a>Registrierungsoptionen für von Intune verwaltete Geräte
 

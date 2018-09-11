@@ -7,20 +7,20 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/03/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 938bcd352294a9875aaa3eef717ef3857211961a
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.custom: intune-classic; get-started
+ms.openlocfilehash: c83584688818e35fa9672fcf9de2ff34d9c3260f
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225237"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254002"
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Unterstützte Betriebssysteme und Browser
 

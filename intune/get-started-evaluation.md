@@ -7,20 +7,20 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 02/23/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: ''
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: e295ca95ebffd4814bb00c3f3d5223560610444a
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: 8066cd8c2e0fa1d0a9244383497ea6b417f6531b
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831682"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253730"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Wie profitiert mein Unternehmen von Intune?
 

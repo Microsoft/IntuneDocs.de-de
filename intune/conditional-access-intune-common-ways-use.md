@@ -7,19 +7,19 @@ author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 49fd06d4f0f75f1aeff434ce3b271284ec1a0340
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: 59cba4ead614fe0b5deac535efb9bcb303d5810d
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40253144"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253607"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?
 

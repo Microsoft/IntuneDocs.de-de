@@ -6,20 +6,20 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 776cb1e03730bbac1d6e7ed36f411eba0ab94cff
-ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: a26ca0c4098a5df557b736db0111f96ce5fc50b0
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39236037"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253645"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Inwiefern unterscheidet sich Intune for Education von der vollständigen Intune-Verwaltungsumgebung?
 

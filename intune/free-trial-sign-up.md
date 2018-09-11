@@ -7,19 +7,19 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 03/04/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: ''
-ms.openlocfilehash: b68c2d93071d545bf25f7810a6908099988fb902
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.custom: get-started
+ms.openlocfilehash: 6492b757376c95c366d45a63b05f2ec60bdd791b
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024667"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254121"
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registrieren für eine kostenlose Testversion von Microsoft Intune
 

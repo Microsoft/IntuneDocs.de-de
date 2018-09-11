@@ -6,19 +6,20 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
-ms.reviewer: robstack
+ms.reviewer: ''
 ms.suite: ems
-ms.openlocfilehash: dfe17cd582682126c889662dd942117c3c68dd10
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.custom: get-started
+ms.openlocfilehash: 2d95a238b3d582a9b03e9629504230349eef0638
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225271"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254053"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>So informieren sie Ihre Endbenutzer über Microsoft Intune
 

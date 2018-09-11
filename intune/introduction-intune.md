@@ -6,20 +6,20 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 03/01/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
-ms.custom: ''
-ms.openlocfilehash: 6f92cb350a69aeb600f1d48e9bdb0b22a623cb52
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.custom: get-started
+ms.openlocfilehash: efdbf141d42be11a6ba3fd750dcd80f494445862
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224805"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254036"
 ---
 # <a name="what-is-intune"></a>Was ist Intune?
 

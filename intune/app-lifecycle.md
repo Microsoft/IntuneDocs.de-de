@@ -5,21 +5,21 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
-ms.topic: get-started-article
+ms.date: 09/06/2018
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
-ms.custom: apps
-ms.openlocfilehash: 69bf4b1dc85a8a17312fe78b6a17564a8a6ff642
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.custom: apps; get-started
+ms.openlocfilehash: ad9eea41d0d40eed9aee07bcf5a77118c0efdab8
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225390"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253749"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Übersicht über den App-Lebenszyklus in Microsoft Intune
 
