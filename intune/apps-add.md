@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
-ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
+ms.openlocfilehash: cf6e7098462931000ce4cd5546390d27d68677f1
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40252454"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330159"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune
 
@@ -62,7 +62,7 @@ Die folgende Tabelle führt die verschiedenen App-Typen auf und erläutert, wie 
 | Integrierte Android-App  | Integrierte App | Wählen Sie **Integrierte App** als **App-Typ** aus, und wählen Sie dann aus der Liste der bereitgestellten Apps die gewünschte integrierte App aus.  |
 | Web-Apps  | Web-App  | Wählen Sie **Weblink** als **App-Typ** aus, und geben Sie eine gültige URL ein, die auf die Web-App verweist.  |
 
-Sie können eine App in Microsoft Intune hinzufügen, indem Sie **Mobile Apps** > **Apps** > **Hinzufügen** auswählen. Der Bereich **App hinzufügen** wird geöffnet. Dort können Sie den **App-Typ** auswählen. 
+Sie können eine App in Microsoft Intune hinzufügen, indem Sie **Client-Apps** > **Apps** > **Hinzufügen** auswählen. Der Bereich **App hinzufügen** wird geöffnet. Dort können Sie den **App-Typ** auswählen. 
 
 >[!TIP]
 > Eine branchenspezifische App wird über eine App-Installationsdatei hinzugefügt. Fügen Sie beispielweise die Anwendung hinzu, um eine branchenspezifische iOS-App zu installieren, indem Sie im Bereich **App hinzufügen** **Branchenspezifische App** als **App-Typ** auswählen. Wählen Sie dann die App-Paketdatei (mit der Erweiterung „IPA“) aus. Solche Apps werden in der Regel intern geschrieben.
@@ -148,8 +148,8 @@ Wenn Sie eine App in Intune hinzufügen, können Sie die gewünschte Kategorie a
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
-4. Wählen Sie im Workloadbereich **Mobile Apps** unter **Setup** die Option **App-Kategorien** aus.  
+3. Wählen Sie im Bereich **Intune** **Client-Apps** aus.
+4. Wählen Sie im Workloadbereich **Client-Apps** unter **Setup** die Option **App-Kategorien** aus.  
     Im Bereich **App-Kategorien** wird eine Liste der aktuellen Kategorien angezeigt. 
 5. Führen Sie einen der folgenden Schritte aus:
     - Um eine Kategorie hinzuzufügen, wählen Sie im Bereich **Kategorie erstellen** die Option **Hinzufügen** aus, und geben Sie dann einen Namen für die Kategorie ein.  

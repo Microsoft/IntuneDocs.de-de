@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a66ed41442e89ed40850f5b9cd56cbc004a43d0
-ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
+ms.openlocfilehash: 83320c78d461981f1bfff52d2fddf4f121a88b8c
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251574"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329664"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Erstellen und Zuweisen von App-Schutzrichtlinien
 
@@ -37,7 +37,7 @@ Wenn Sie nach einer Liste der unterstützten MAM-Apps suchen, finden Sie weitere
 Informationen zum Hinzufügen von Line-of-Business-Apps (LOB) Ihrer Organisation zu Microsoft Intune in Vorbereitung auf App-Schutzrichtlinien finden Sie unter [Hinzufügen von Apps zu Microsoft Intune](apps-add.md).
 
 ##  <a name="create-an-app-protection-policy"></a>Erstellen einer App-Schutzrichtlinie
-1. Wählen Sie in der Workload **Mobile Apps** im Bereich **Verwalten** die Option **App-Schutzrichtlinien** aus. Mit dieser Auswahl werden die Details zu **App-Schutzrichtlinien** geöffnet und Sie können neue Richtlinien erstellen und vorhandene bearbeiten.
+1. Wählen Sie in der Workload **Client-Apps** im Bereich **Verwalten** **App-Schutzrichtlinien** aus. Mit dieser Auswahl werden die Details zu **App-Schutzrichtlinien** geöffnet und Sie können neue Richtlinien erstellen und vorhandene bearbeiten.
 2. Wählen Sie **Richtlinie hinzufügen** aus.
 
    ![Screenshot des Blatts „Richtlinie hinzufügen“](./media/app-protection-add-policy.png)
@@ -125,7 +125,7 @@ Viele Organisationen erlauben Benutzern sowohl die Verwendung von mit Intune-MDM
 
 Da die App-Schutzrichtlinien von Intune die Identität eines Benutzers ansteuern, gelten die Schutzeinstellungen üblicherweise jeweils für registrierte (MDM-verwaltete) und nicht registrierte Geräte (kein MDM). Aus diesem Grund können Sie mit einer App-Schutzrichtlinie von Intune entweder Intune-registrierte oder nicht registrierte iOS- und Android-Geräte als Ziel verwenden. Sie können über eine Schutzrichtlinie für nicht verwaltete Geräte verfügen, bei dem Steuerelemente für die Verhinderung von Datenverlust (DLP) vorhanden sind, und eine separate Schutzrichtlinie für mit MDM verwaltete Geräte, bei denen die DLP-Steuerelemente nicht so streng sind. 
 
-Navigieren Sie in der Intune-Konsole zu den Richtlinien **Mobile Apps** > **App-Schutz**, und klicken Sie auf **Hinzufügen einer Richtlinie**, um diese Richtlinien zu erstellen. Sie können auch eine vorhandene App-Schutzrichtlinie bearbeiten. Wenn die App-Schutzrichtlinie für verwaltete und nicht verwaltete Geräte angewendet werden soll, bestätigen Sie, dass **Target to all app types** (Alle App-Typen als Ziel verwenden) auf den Standardwert **Ja** festgelegt ist. Wenn Sie eine Basis granular einem Verwaltungsstatus zuweisen wollen, legen Sie die Option **Target to all app types** (Alle App-Typen als Ziel verwenden) auf **Nein** fest. 
+Navigieren Sie in der Intune-Konsole zu den Richtlinien **Client-Apps** > **App-Schutz**, und klicken Sie auf **Hinzufügen einer Richtlinie**, um diese Richtlinien zu erstellen. Sie können auch eine vorhandene App-Schutzrichtlinie bearbeiten. Wenn die App-Schutzrichtlinie für verwaltete und nicht verwaltete Geräte angewendet werden soll, bestätigen Sie, dass **Target to all app types** (Alle App-Typen als Ziel verwenden) auf den Standardwert **Ja** festgelegt ist. Wenn Sie eine Basis granular einem Verwaltungsstatus zuweisen wollen, legen Sie die Option **Target to all app types** (Alle App-Typen als Ziel verwenden) auf **Nein** fest. 
 
 Damit iOS-Apps als „verwaltet“ erkannt werden, muss die Konfigurationsrichtlinieneinstellung **IntuneMAMUPN** für jede App bereitgestellt werden. Weitere Informationen finden Sie unter [Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 

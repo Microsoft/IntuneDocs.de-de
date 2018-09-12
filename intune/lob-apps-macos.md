@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: f907ddb631c974a9c7626483446600eae149a12c
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255498"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347395"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen (Line-of-Business, LOB) macOS-Apps zu Microsoft Intune
 
@@ -60,8 +60,8 @@ Sie müssen ein externes Tool zur Vorverarbeitung Ihrer *PKG*-Dateien herunterla
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Klicken Sie im Bereich **Intune** auf die Option **Mobile Apps**.
-4. Wählen Sie in der Workload **Mobile Apps** die Option **Verwalten** > **Apps** aus.
+3. Wählen Sie im Bereich **Intune** die Option **Client-Apps** aus.
+4. Wählen Sie in der Workload **Client-Apps** die Option **Verwalten** > **Apps** aus.
 5. Wählen Sie über der Liste der Apps **Hinzufügen** aus.
 6. Klicken Sie im Bereich **App hinzufügen** auf die Option **Branchenspezifische App**.
 

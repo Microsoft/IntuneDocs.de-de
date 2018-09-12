@@ -15,20 +15,20 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7cff6c777de4a35aa6825d1d37fdd0c2f2d0b72
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 5653e5fda04295041ebc549977007e7060b5508b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751716"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312679"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Registrieren von iOS-Geräten mit Apple Configurator
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune unterstützt die Registrierung von iOS-Geräten mithilfe des Tools [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344), das auf einem Mac-Computer ausgeführt wird. Für die Registrierung mit Apple Configurator müssen Sie jedes iOS-Gerät über USB mit einem Mac-Computer verbinden, um die Unternehmensregistrierung einzurichten. Sie können Geräte mit Apple Configurator auf zwei Arten bei Intune registrieren:
-- **Registrierung für Setup-Assistent:** Setzt das Gerät auf die Werkseinstellungen zurück und bereitet es für die Registrierung durch den Einrichtungsassistenten vor.
-- **Direkte Registrierung:** Setzt das Gerät nicht auf die Werkseinstellungen zurück und registriert das Gerät über die iOS-Einstellungen. Diese Methode wird nur von Geräten **ohne Benutzeraffinität** unterstützt.
+- **Registrierung für Einrichtungsassistent:** Setzt das Gerät zurück und bereitet es auf die Registrierung beim Einrichtungsassistenten vor.
+- **Direkte Registrierung:** Setzt das Gerät nicht zurück und registriert das Gerät über die iOS-Einstellungen. Diese Methode wird nur von Geräten **ohne Benutzeraffinität** unterstützt.
 
 Die Registrierungsmethoden von Apple Configurator können nicht mit dem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md) verwendet werden.
 
@@ -134,7 +134,7 @@ Die Geräte sind nun für die Unternehmensregistrierung bereit. Schalten Sie die
 Nachdem Benutzer ihre Geräte erhalten haben, müssen sie den Setup-Assistenten ausführen. Auf mit Benutzeraffinität konfigurierten Geräte kann die Unternehmensportal-App installiert und ausgeführt werden, um Apps herunterzuladen und Geräte zu verwalten.
 
 ## <a name="direct-enrollment"></a>Direkte Registrierung
-Wenn Sie iOS-Geräte direkt mit Apple Configurator registrieren, können Sie ein Gerät registrieren, ohne die Seriennummer des Geräts abrufen zu müssen. Sie können dem Gerät zu Identifikationszwecken auch einen Namen zuweisen, bevor Intune den Gerätenamen während der Registrierung erfasst. Die Unternehmensportal-App wird für direkt registrierte Geräte nicht unterstützt. Eine Zurücksetzung des Geräts auf Werkseinstellungen ist bei dieser Vorgehensweise nicht erforderlich.
+Wenn Sie iOS-Geräte direkt mit Apple Configurator registrieren, können Sie ein Gerät registrieren, ohne die Seriennummer des Geräts abrufen zu müssen. Sie können dem Gerät zu Identifikationszwecken auch einen Namen zuweisen, bevor Intune den Gerätenamen während der Registrierung erfasst. Die Unternehmensportal-App wird für direkt registrierte Geräte nicht unterstützt. Durch diese Methode wird das Gerät nicht auf Werkseinstellungen zurückgesetzt.
 
 Apps, die eine Benutzerzugehörigkeit erfordern (einschließlich der Unternehmensportal-App für die Installation branchenspezifischer Apps), werden nicht installiert.
 

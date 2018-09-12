@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: aebfea2f52540b4193811121334e3cebf916175b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255380"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330142"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Was ist die Microsoft Intune App-Verwaltung?
 
@@ -61,16 +61,16 @@ Intune bietet eine Reihe von Funktionen, die die Installation der erforderlichen
 
 ## <a name="get-started"></a>Erste Schritte
 
-Sie finden die meisten Informationen zu Apps im Workload **Mobile Apps**, auf die Sie wie folgt zugreifen können:
+Sie finden die meisten Informationen zu Apps in der Workload **Client-Apps**, auf die Sie wie folgt zugreifen können:
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**.  
     Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Klicken Sie im Bereich **Microsoft Intune** auf die Option **Mobile Apps**.
+3. Klicken Sie im Bereich **Microsoft Intune** auf die Option **Client-Apps**.
 
     ![Workloadbereich „Mobile Apps“](./media/apps-workload.png)
 
-Die nächsten vier Abschnitte beschreiben die Optionen im Bereich **Mobile Apps**.
+Die nächsten vier Abschnitte beschreiben die Optionen im Bereich **Client-Apps**.
 
 ### <a name="manage"></a>Verwalten von
 - **Apps**: Wählen Sie diese Option aus, um die von Ihren Mitarbeitern verwendeten Apps hinzuzufügen, anzuzeigen, zuzuweisen und zu überwachen. Weitere Informationen finden Sie in folgenden Quellen:

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/16/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4746e2f20926c102717214304711cc9883597b8
-ms.sourcegitcommit: 1e349bcfd562f34866108e566e5b5062717e0112
+ms.openlocfilehash: 7cf005b225dd11ca6b95dbed0a82330544575f92
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2018
-ms.locfileid: "40251965"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347473"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Die Einrichtung des Pro-App-VPN in Intune für iOS-Geräte
 
@@ -34,6 +34,7 @@ Pro-App-VPN ist derzeit für die folgenden Anbieter verfügbar:
  - Pulse Connect Secure
  - SonicWall
  - Palo Alto Networks GlobalProtect
+ - Zscaler
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Voraussetzungen für das Pro-App-VPN
 
@@ -145,7 +146,7 @@ Nachdem Sie Ihr VPN-Profil hinzugefügt haben, ordnen Sie die App und Azure AD-G
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
-3. Wählen Sie **Mobile Apps** aus.
+3. Wählen Sie **Client-Apps** aus.
 4. Klicken Sie auf **Apps**.
 5. Wählen Sie die App aus der Liste der Apps aus.
 6. Klicken Sie auf **Zuweisungen**.
@@ -187,6 +188,10 @@ Sobald Ihr Pro-App-VPN eingerichtet und Ihrer App zugeordnet ist, überprüfen S
     - F5 Access
     - Pulse Secure
     - SonicWall Mobile Connect
+    - Zscaler-App
+
+    > [!NOTE]
+    > Wenn Sie die VPN-App Pulse Secure verwenden, können Sie Tunneln auf App- oder auf Paketebene verwenden. Legen Sie für Tunneln auf App-Ebene den Wert **ProviderType** auf **app-proxy** oder für Tunneln auf Paketebene auf **packet-tunnel** fest.
 
 ### <a name="connect-using-the-per-app-vpn"></a>Herstellen einer Verbindung mithilfe des Pro-App-VPNs
 
