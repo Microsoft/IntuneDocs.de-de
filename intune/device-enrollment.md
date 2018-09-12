@@ -7,19 +7,19 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 06/13/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 1bd9cff2148857ab6b0ea6d6e3c940e1e731c44b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: a9761c57b15700e147bc092b7577fe1b32c78c18
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313160"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254155"
 ---
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
