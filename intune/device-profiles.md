@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/28/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: da220e1f82c59f3181d64dc01d071867d62df397
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335825"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313971"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>Was sind Microsoft Intune Geräteprofile?
 
@@ -54,6 +54,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 - iOS 
 - macOS
 
+
 ## <a name="device-restrictions"></a>Geräteeinschränkungen
 Mit [Geräteeinschränkungen](device-restrictions-configure.md) werden Einstellungen für Sicherheit, Hardware, Datenfreigabe und viele andere Einstellungen auf dem Gerät gesteuert. Sie können beispielsweise ein Geräteeinschränkungsprofil erstellen, das verhindert, dass Benutzer von iOS-Geräten auf die Kamera des Geräts zugreifen. 
 
@@ -72,6 +73,13 @@ Informationen zum Integrieren von WDATP (Windows Defender Advanced Threat Protec
 
 Dieses Features unterstützt folgende Betriebssysteme:
 - Windows 10 und höher
+
+## <a name="identity-protection"></a>Schutz der Identität
+[Identity Protection](identity-protection-configure.md) steuert die Windows Hello for Business-Funktionen auf Windows 10- und Windows 10 Mobile-Geräten. Konfigurieren Sie diese Einstellungen, um Windows Hello for Business für Benutzer und Geräte zur Verfügung zu stellen und die Anforderungen für Geräte-PINs und Gesten festzulegen.  
+
+Dieses Features unterstützt folgende Betriebssysteme:  
+- Windows 10 und höher
+- Windows Holographic for Business  
 
 ## <a name="kiosk"></a>Kiosk
 

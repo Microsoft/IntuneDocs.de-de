@@ -15,12 +15,12 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b65daa6e098954d88c502114fc7a33ad4cf5efcd
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: faa8918441bd705875fcdc72d3717af001ab2b85
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909285"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329869"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Zuweisen von Apps zu Android-Arbeitsprofilgeräten mit Intune
 
@@ -59,18 +59,18 @@ Stellen Sie sicher, dass Sie Intune und Android-Arbeitsprofile für die **Gerät
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Synchronisieren einer App aus dem Managed Google Play Store mit Intune
 
-Wenn Sie eine App aus dem Store genehmigt haben und diese im Knoten **Lizenzierte Apps** der Workload **Mobile Apps** nicht angezeigt wird, erzwingen Sie wie folgt eine sofortige Synchronisierung:
+Wenn Sie eine App aus dem Store genehmigt haben und diese nicht im Knoten **Lizenzierte Apps** der Workload **Client-Apps** angezeigt wird, erzwingen Sie wie folgt eine sofortige Synchronisierung:
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
-4. Wählen Sie im Workloadbereich **Mobile Apps** unter **Setup** die Option **Managed Google Play** aus.
+3. Klicken Sie im Bereich **Intune** auf **Client-Apps**.
+4. Wählen Sie im Workloadbereich **Client-Apps** unter **Setup** die Option **Managed Google Play** aus.
 5. Klicken Sie im Bereich **Managed Google Play** auf **Aktualisieren**.  
     Auf der Seite werden Uhrzeit und Status der letzten Synchronisierung aktualisiert.
-6. Wählen Sie im Workloadbereich **Mobile Apps** die Option **Apps** aus.  
+6. Wählen Sie im Workloadbereich **Client-Apps** die Option **Apps** aus.  
     Die neu verfügbare Managed Google Play-App wird angezeigt.
 
-Wenn die App im Knoten **App-Lizenzen** des Workloadbereichs **Mobile Apps** angezeigt wird, können Sie sie [wie jede andere App zuweisen](/intune-azure/manage-apps/deploy-apps). Die App kann nur zu Benutzergruppen zugewiesen werden.
+Wenn die App im Knoten **App-Lizenzen** des Workloadbereichs **Client-Apps** angezeigt wird, können Sie sie [wie jede andere App zuweisen](/intune-azure/manage-apps/deploy-apps). Die App kann nur zu Benutzergruppen zugewiesen werden.
 
 Nachdem Sie die App zugewiesen haben, wird sie auf den vorgesehenen Geräten installiert. Der Benutzer des Geräts wird nicht zur Genehmigung der Installation aufgefordert.
 

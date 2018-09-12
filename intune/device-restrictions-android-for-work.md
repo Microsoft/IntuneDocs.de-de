@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 34c66aabe8c094b67805bcf0eeae38dbbbbff627
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 51e52e26357143d214c4bcf7856dfdb75a68653c
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905936"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329768"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Einstellungen für Einschränkungen von Arbeitsgeräten in Intune
 
@@ -42,7 +42,7 @@ In diesem Artikel sind alle Einstellungen für Microsoft Intune-Geräteeinschrä
   - **Automatisch gewähren**
   - **Automatisch verweigern**
 
-    Der Status zur Erteilung der Berechtigungen kann für bestimmte Apps weitergehend definiert werden, indem eine App-Konfigurationsrichtlinie für eine einzelne App (unter **Mobile Apps** > **App-Konfigurationsrichtlinien**) verwendet wird.
+    Der Status zur Erteilung der Berechtigungen kann für bestimmte Apps weitergehend definiert werden, indem eine App-Konfigurationsrichtlinie für eine einzelne App (unter **Client-Apps** > **App-Konfigurationsrichtlinien**) verwendet wird.
 
 - **Konten hinzufügen und entfernen**
 

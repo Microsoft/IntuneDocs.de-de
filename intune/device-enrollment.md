@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7aabb010baa4a5e53ad5e4264edc43e3ca111c70
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1bd9cff2148857ab6b0ea6d6e3c940e1e731c44b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909200"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313160"
 ---
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,7 +34,7 @@ Standardmäßig dürfen Geräte für alle Plattformen in Intune registriert werd
 
 | **Methode** |  **Zurücksetzen erforderlich** |    [**Benutzeraffinität**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **Gesperrt** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
-| | Geräte werden bei der Registrierung auf die Werkseinstellungen zurückgesetzt. |  Diese Methode ordnet jedes Gerät einem Benutzer zu.| Benutzer können die Registrierung von Geräten nicht aufheben.  | |
+| | Geräte werden während der Registrierung auf die Werkseinstellungen zurückgesetzt. |  Diese Methode ordnet jedes Gerät einem Benutzer zu.| Benutzer können die Registrierung von Geräten nicht aufheben.  | |
 |**[BYOD](#bring-your-own-device)** | Nein|   Ja  |   Nein | [Weitere Informationen](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**| Nein |Nein |Nein  | [Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
 |**[DEP](#apple-device-enrollment-program)**|   Ja  |   Optional |  Optional|[Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
@@ -95,7 +95,7 @@ Weitere Informationen zur Registrierung über den Setup-Assistenten mit iOS Appl
 - [Registrieren von iOS-Geräten mithilfe von Configurator und Setup-Assistent](apple-configurator-setup-assistant-enroll-ios.md)
 
 ### <a name="usb-direct"></a>USB (direkt)
-Für die direkte Registrierung muss der Administrator jedes Gerät manuell registrieren, indem er eine Registrierungsrichtlinie erstellt und in Apple Configurator exportiert. Über USB angeschlossene, unternehmenseigene Geräte werden direkt registriert, ohne dass ein Zurücksetzen auf Werkseinstellungen erforderlich ist. Geräte werden als benutzerlose Geräte verwaltet. Sie werden nicht gesperrt oder überwacht und unterstützen nicht den bedingten Zugriff, die Erkennung von Jailbreaks oder die Verwaltung mobiler Geräte.
+Für die direkte Registrierung muss der Administrator jedes Gerät manuell registrieren, indem er eine Registrierungsrichtlinie erstellt und in Apple Configurator exportiert. Über USB angeschlossene, unternehmenseigene Geräte werden direkt registriert, ohne dass das Zurücksetzen auf Werkseinstellungen erforderlich ist. Geräte werden als benutzerlose Geräte verwaltet. Sie werden nicht gesperrt oder überwacht und unterstützen nicht den bedingten Zugriff, die Erkennung von Jailbreaks oder die Verwaltung mobiler Geräte.
 
 Weitere Informationen zur iOS-Registrierung finden Sie unter:
 

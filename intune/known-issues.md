@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 04/18/2018
+ms.date: 08/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073834"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347796"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekannte Probleme in Microsoft Intune
 
@@ -33,6 +33,13 @@ Wenn Sie einen Fehler melden möchten, der hier nicht aufgeführt ist, [öffnen 
 Wenn Sie sich ein neues Feature für Intune wünschen, können Sie auf der [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console)-Website einen Bericht erstellen.
 
 ## <a name="migration"></a>Migration
+
+### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal"></a>Exportieren von klassischen Azure-Portal-Konformitätsrichtlinien zur Neuerstellung dieser Richtlinien im Azure-Portal für Intune
+
+Konformitätsrichtlinien, die im klassischen Azure-Portal erstellt wurden, werden als veraltet markiert. Sie können vorhandene Konformitätsrichtlinien überprüfen und löschen, aber nicht aktualisieren. Wenn Sie Konformitätsrichtlinien zum aktuellen Azure-Portal für Intune migrieren müssen, können Sie die Richtlinien als durch Trennzeichen getrennte Datei (CSV-Datei) exportieren. Verwenden Sie anschließend die Informationen in der Datei, um die Richtlinien im Azure-Portal für Intune neu zu erstellen.
+
+> [!IMPORTANT]
+> Sobald das klassische Azure-Portal eingestellt wird, haben Sie keinen Zugriff mehr auf Ihre Konformitätsrichtlinien und können diese nicht mehr einsehen. Exportieren Sie Ihre Richtlinien deshalb auf jeden Fall, und erstellen Sie sie im Azure-Portal neu, bevor das klassische Azure-Portal eingestellt wird.
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune-Funktionen für Legacy-PC-Clients sind nur in der Silverlight-Konsole verfügbar
 
@@ -52,7 +59,7 @@ Sie können keine Statusinformationen für Richtlinien anzeigen, die aus dem kla
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Mehrfache Aufforderungen zur App-Installation für bestimmte VPP-Apps
 Möglicherweise werden mehrfache Aufforderungen zur App-Installation für bestimmte VPP-Apps angezeigt, die auf den Benutzergeräten bereits installiert sind. Dieses Problem tritt auf, wenn Sie für das VPP-Token, das Sie auf das Intune Azure-Portal hochgeladen haben, die Option **Automatische App-Updates** auf **ON** festgelegt haben.    
 
-Deaktivieren Sie zum Umgehen dieses Problems die Option **Automatische App-Updates** für das VPP-Token. Öffnen Sie dazu Microsoft Intune im Azure-Portal. Wählen Sie in Intune **Mobile Apps** > **iOS-VPP-Token** aus. Wählen Sie anschließend das VPP-Token aus, das die betroffene App bereitgestellt hat. Klicken Sie auf **Bearbeiten** > **Automatische App-Updates** > **OFF** (Deaktivieren) > **Speichern**. Alternativ können Sie die Bereitstellung der betroffenen App als VPP-App beenden, um die Aufforderungen zu beenden.    
+Deaktivieren Sie zum Umgehen dieses Problems die Option **Automatische App-Updates** für das VPP-Token. Öffnen Sie dazu Microsoft Intune im Azure-Portal. Wählen Sie in Intune **Client-Apps** > **iOS-VPP-Token** aus. Wählen Sie anschließend das VPP-Token aus, das die betroffene App bereitgestellt hat. Klicken Sie auf **Bearbeiten** > **Automatische App-Updates** > **OFF** (Deaktivieren) > **Speichern**. Alternativ können Sie die Bereitstellung der betroffenen App als VPP-App beenden, um die Aufforderungen zu beenden.    
 
 Dies ist ein bekanntes Problem im aktuellen Release. Eine Behebung des Problems ist bereits geplant. Sobald die Fehlerbehebung implementiert ist, werden den Benutzern keine mehrfachen Aufforderungen zur App-Installation mehr angezeigt.
 

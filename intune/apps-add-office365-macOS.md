@@ -15,19 +15,19 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: f8b76de6e9b3a584be7ad324391c1c071140488e
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869496"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329443"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Zuweisen von Office 365 zu macOS-Geräten mit Microsoft Intune
 
 Dieser App-Typ macht es Ihnen einfach, Office 365 2016-Apps macOS-Geräten zuzuweisen. Dieser App-Typ ermöglicht Ihnen die Installation von Word, Excel, PowerPoint, Outlook und OneNote. Diese Apps sind auch im Lieferumfang von Microsoft AutoUpdate (MAU) enthalten, um die Apps sicherer und auf dem neuesten Stand zu halten. Die gewünschten Apps werden in der Intune-Konsole als einzelne App in der App-Liste angezeigt.
 
 
-## <a name="before-you-start"></a>Vorbereitungen
+## <a name="before-you-start"></a>Vorbereitung
 
 Bevor Sie damit beginnen, macOS-Geräten Office 365 hinzuzufügen, sollten Sie sich Folgendes bewusst machen:
 
@@ -40,8 +40,8 @@ Bevor Sie damit beginnen, macOS-Geräten Office 365 hinzuzufügen, sollten Sie s
 Fügen Sie Office 365 aus dem Bereich **Apps** hinzu.
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Überwachung + Verwaltung** > **Intune**.
-3. Klicken Sie im Bereich **Intune** auf die Option **Mobile Apps**.
-4. Wählen Sie im Workloadbereich **Mobile Apps** unter **Verwalten** die Option **Apps** aus. 
+3. Wählen Sie im Bereich **Intune** die Option **Client-Apps** aus.
+4. Wählen Sie im Workloadbereich **Client-Apps** unter **Verwalten** die Option **Apps** aus. 
 5. Wählen Sie **Hinzufügen** aus.
 6. Wählen Sie aus der Liste **App-Typ** in der Gruppe **Office 365 Suite** **macOS** aus.
 7. Klicken Sie auf **Informationen zur App Suite**, um Informationen zur App-Suite abzurufen.  

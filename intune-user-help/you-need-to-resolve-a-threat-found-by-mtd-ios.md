@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,26 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: fee3f31b4a475ed3def1ee96fcdad2f2a414ab3c
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: f209fa315d5d5c36e661a931c32c70ba5ba93d81
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30752392"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150049"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Beseitigen einer Bedrohung, die von einer Mobile Threat Defense-App erkannt wurde
 
-Mobile Threat Defense hat eine potenzielle Bedrohung auf Ihrem Gerät erkannt, und Sie müssen das Problem beheben, um wieder Zugriff auf die E-Mails, Apps und Dateien Ihres Unternehmens, Ihrer Schule oder Ihrer Uni zu erhalten. Je nachdem, wie Ihr Unternehmen Mobile Threat Defense konzipiert hat, können Sie das Problem mit einer der folgenden Apps beheben.
+Mobile Threat Defense-Apps erkennen potenzielle Bedrohungen auf Ihren Geräten und geben entsprechende Warnungen aus. Einige Organisationen integrieren einen Mobile Threat Defense-Dienst in einem MDM-Anbieter wie Intune. Nach der Integration meldet der Mobile Threat Defense-Dienst erkannte Bedrohungen (wie verdächtige Apps oder Schwachstellen in Netzwerken und Betriebssystemen), indem er Ihnen eine Benachrichtigung über die Unternehmensportal-App sendet. Details zur Bedrohung und den Schritten zur Korrektur finden Sie dann in der Mobile Threat Defense-App.  
+
+Bedrohungen werden im Unternehmensportal als ungelöste Probleme angezeigt, die auf fehlende Konformität hinweisen. Wenn die Bedrohungen als besonders riskant eingestuft werden, wird Ihr Unternehmen Ihren Zugriff auf seine Unternehmensressourcen widerrufen. Solange diese Bedrohungen auf Ihrem Gerät vorhanden sind, können Sie folgende Aktionen möglicherweise nicht ausführen:  
+
+* Herstellen einer Verbindung mit Unternehmens-E-Mail
+* Herstellen einer Verbindung mit Unternehmens-WLAN
+* Herstellen einer Verbindung mit SharePoint Online
+* Synchronisieren von Unternehmensdateien mit OneDrive
+* Zugreifen auf Unternehmens-Apps
+
+Im Folgenden finden Sie die iOS-spezifischen Mobile Threat Defense-Dienste, die in Ihrem Unternehmen möglicherweise eingerichtet wurden. Wählen Sie eine App aus, um mehr über ihr Verhalten zu erfahren. 
 
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
@@ -32,13 +42,5 @@ Mobile Threat Defense hat eine potenzielle Bedrohung auf Ihrem Gerät erkannt, u
 * [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 * [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
-Öffnen Sie die Mobile Threat Defense-App, und folgen Sie den in der App angezeigten Anweisungen, um das Problem zu lösen.
-
-**Beispiel für eine App, die von Mobile Threat Defense als Bedrohung eingestuft wird**
-
-Wenn Sie eine App installiert haben, die Mobile Threat Defense als Bedrohung einstuft, wird Ihnen ein Bildschirm angezeigt, der Sie darüber informiert, um welche App es sich dabei handelt. Wenn Ihnen ein solcher Bildschirm angezeigt wird, tippen Sie auf den App-Namen oben auf Ihrem Bildschirm, und folgen Sie den Anweisungen, um die Bedrohung zu entfernen.
-
-Nach der Deinstallation der App erhalten Sie sofort wieder Zugriff auf Ihre E-Mails und anderen Firmen- oder Schuldaten. Wenn Sie die Aufforderung zur Deinstallation der App ignorieren, haben Sie solange keinen Zugriff auf Ihre Unternehmens-E-Mails und -daten, bis Sie die App deinstallieren.
-
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).
 

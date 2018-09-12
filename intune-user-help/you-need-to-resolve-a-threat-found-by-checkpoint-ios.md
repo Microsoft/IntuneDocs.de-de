@@ -1,11 +1,11 @@
 ---
 title: Vorgehen gegen von SandBlast Mobile Protect erkannte Bedrohungen unter iOS | Microsoft-Dokumentation
-description: Erfahren Sie, wie Sie gegen Bedrohungen vorgehen können, die Mobile Protect unter iOS gefunden hat.
+description: Erfahren Sie, wie Sie eine Bedrohung beheben, die von SandBlast Mobile Protect für iOS gefunden wurde.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/03/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,34 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: a34e73d3209453f07523d1c841e8ba578c85aa3d
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: f4725b76517bc9d3a27f07d7289f178c54a31bce
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755966"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148030"
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-sandblast-mobile-protect"></a>Beheben einer von SandBlast Mobile Protect erkannten Bedrohung
+# <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Beheben einer von SandBlast Mobile Protect erkannten Bedrohung
 
-SandBlast Mobile Protect hat eine potenzielle Bedrohung auf Ihrem Android-Gerät erkannt, und Sie müssen das Problem beheben, um wieder Zugriff auf die E-Mails, Apps und Dateien Ihres Unternehmens, Ihrer Schule oder Ihrer Uni zu erhalten. Die Nachricht, die Sie Ihnen angezeigt wird, hängt von dem Problem ab, das SandBlast Mobile Protect auf Ihrem Gerät erkannt hat.
+SandBlast Mobile Protect ist ein Mobile Threat Defender-Dienst, der potenzielle Bedrohungen auf Ihren iOS-Geräten identifiziert und analysiert. Anschließend wird ein Bericht über die Bedrohungen erstellt, sodass Sie sich diese in der Unternehmensportal-App ansehen können. Bedrohungen werden in der App als ungelöste Probleme angezeigt, die auf fehlende Konformität hinweisen. Solange diese Bedrohungen vorhanden sind, können Sie folgende Aktionen möglicherweise nicht ausführen:   
 
-Um das Problem zu beheben, öffnen Sie die SandBlast Mobile Protect-App, und folgen Sie den in der App angezeigten Anweisungen.
+* Herstellen einer Verbindung mit Unternehmens-E-Mail
+* Herstellen einer Verbindung mit Unternehmens-WLAN
+* Herstellen einer Verbindung mit SharePoint Online
+* Synchronisieren von Unternehmensdateien mit OneDrive
+* Zugreifen auf Unternehmens-Apps
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Was möglicherweise angezeigt wird, wenn der Zugriff des registrierten Geräts auf E-Mail oder Dateien gesperrt ist
+In diesem Artikel wird beschrieben, wie Sandblast Mobile Protect-Benachrichtigungen zu Bedrohungen zu verstehen sind und wie diese gelöst werden können.  
 
-Wenn ein Virus oder eine andere Sicherheitsbedrohung auf dem registrierten Gerät vorhanden ist und Sie versuchen, auf Unternehmens-E-Mails oder -dateien zuzugreifen, erhalten Sie eine Warnung von SandBlast Mobile Protect.
+## <a name="troubleshoot-virus-or-security-threat"></a>Problembehandlung bei Viren- oder Sicherheitsbedrohungen  
+Wenn eine Viren- oder Sicherheitsbedrohung erkannt wird, verfährt die SandBlast Mobile Protect-App gemäß den Zugriffsrichtlinien Ihrer Organisation. Zugriffsrichtlinien könnten Sie am Zugriff auf das Netzwerk, die Apps und die E-Mails hindern, die Sie für Ihre Arbeit benötigen.  
 
-Tippen Sie auf den Link **Portal für die Geräteverwaltung**, um zur [Unternehmensportalwebsite](http://portal.manage.microsoft.com) zu gelangen, auf der Sie den Anweisungen zur Behebung des Problems folgen können.
+SandBlast Mobile Protect fordert Sie dazu auf, Maßnahmen zu ergreifen, um den Zugang zu diesen Ressourcen wiederherzustellen. Wählen Sie die Bedrohung aus, und führen Sie zur Problembehebung die Anweisungen in der App aus.  
 
-## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>Beispiel für eine App, die SandBlast Mobile Protect als Bedrohung einstuft
+## <a name="troubleshoot-an-app-threat"></a>Problembehandlung bei einer App-Bedrohung  
 
-Wenn Sie eine App installiert haben, die SandBlast Mobile Protect als Bedrohung einstuft, weist Sie die App darauf hin, dass eine nicht vertrauenswürdige App auf Ihrem Gerät installiert wurde.
+Wenn Sie eine App installieren, die als Bedrohung für Ihr Gerät angesehen wird, erhalten Sie eine Benachrichtigung in SandBlast Mobile Protect. Solange die betroffene App auf Ihrem Gerät verbleibt, können Sie nicht auf Unternehmensressourcen zugreifen.  
 
-In diesem Fall deinstallieren Sie die App, um sofort wieder Zugriff auf Ihre Unternehmens-E-Mails und -daten zu erhalten. Wenn Sie die App nicht deinstallieren, haben Sie solange keinen Zugriff auf E-Mails und Daten, bis Sie die App deinstallieren.
+Zum Auflösen der Warnung wählen Sie die App in der Liste der Bedrohungen in SandBlast Mobile Protect aus. Führen Sie dann die Anweisungen aus, um die App zu entfernen und zu deinstallieren.  
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](http://portal.manage.microsoft.com).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

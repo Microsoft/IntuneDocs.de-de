@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0fb7d432edf62de48e81f65b1ac2f67c6dbad70a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 143b4f3390d3058177f4bfde4cbfe0d210f57e86
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224952"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347915"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Verwalten von Apps, die im Microsoft Store für Unternehmen mit Microsoft Intune erworben wurden
 
@@ -47,7 +47,7 @@ Im [Microsoft Store für Unternehmen](https://www.microsoft.com/business-store) 
 - Geräte müssen mit Active Directory Domain Services oder einem Arbeitsbereich verknüpft sein, damit diese Funktion verwendet werden kann.
 - Registrierte Geräte müssen die Version 1511 oder höher von Windows 10 verwenden.
 
-Ferner werden zugehörige Lizenzen und offline lizenzierte Apps aus dem Microsoft Store für Unternehmen ab sofort in der Benutzeroberfläche in einem App-Eintrag zusammengefasst. Bereitstellungsdetails aus den einzelnen Paketen werden in den jeweiligen Eintrag migriert. Wenn Sie verwandte Lizenzen im Azure-Portal abrufen möchten, klicken Sie im Azure-Portal auf der Seite **Mobile Apps** auf **App-Lizenzen**.
+Ferner werden zugehörige Lizenzen und offline lizenzierte Apps aus dem Microsoft Store für Unternehmen ab sofort in der Benutzeroberfläche in einem App-Eintrag zusammengefasst. Bereitstellungsdetails aus den einzelnen Paketen werden in den jeweiligen Eintrag migriert. Wenn Sie verwandte Lizenzen im Azure-Portal abrufen möchten, wählen Sie auf der Seite **Client-Apps** die Option **App-Lizenzen** aus.
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Verknüpfen Ihres Kontos für den Microsoft Store für Unternehmen mit Intune
 Bevor Sie die Synchronisierung in der Intune-Konsole aktivieren, müssen Sie Ihr Konto für den Windows Store für Unternehmen so konfigurieren, dass Intune als Verwaltungstool verwendet wird:
@@ -64,8 +64,8 @@ Sie können nun fortfahren und die Synchronisierung in der Intune-Konsole einric
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Klicken Sie im Bereich **Intune** auf die Option **Mobile Apps**.
-1. Wählen Sie im Bereich **Mobile Apps** die Option **Setup** > **Microsoft Store für Unternehmen** aus.
+3. Wählen Sie im Bereich **Intune** die Option **Client-Apps** aus.
+1. Wählen Sie im Bereich **Client-Apps** die Option **Setup** > **Microsoft Store für Unternehmen** aus.
 2. Klicken Sie auf **Aktivieren**.
 3. Klicken Sie auf den Link zur Registrierung für den Microsoft Store für Unternehmen, falls Sie dies noch nicht getan haben, und weisen Sie Ihr Konto wie oben beschrieben zu.
 5. Wählen Sie in der Dropdownliste **Sprache** die Sprache aus, in der Apps aus dem Microsoft Store für Unternehmen im Azure-Portal angezeigt werden sollen. Die Installation der Apps erfolgt unabhängig von der Anzeigesprache in der Sprache des Endbenutzers, sofern verfügbar.
@@ -73,7 +73,7 @@ Sie können nun fortfahren und die Synchronisierung in der Intune-Konsole einric
 
 ## <a name="synchronize-apps"></a>Synchronisieren von Apps
 
-1. Wählen Sie in der Workload **Mobile Apps** die Option **Setup** > **Microsoft Store für Unternehmen** aus.
+1. Wählen Sie in der Workload **Client-Apps** die Option **Setup** > **Microsoft Store für Unternehmen** aus.
 2. Klicken Sie auf **Synchronisieren**, um die im Microsoft Store erworbenen Apps in Intune abzurufen.
 
 ## <a name="assign-apps"></a>Zuweisen von Apps

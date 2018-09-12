@@ -6,19 +6,19 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5220d9c2e1ba98873658631798240af9e7587758
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: ff3b482f974641dd7255dc98d3af62542d802de9
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834769"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313733"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrieren von Windows Hello for Business in Microsoft Intune
 
@@ -31,7 +31,10 @@ Sie können Windows Hello for Business (früher Microsoft Passport for Work) in 
 
 Intune integriert Hello for Business auf zwei Arten:
 
--   Sie können mithilfe einer Intune-Richtlinie steuern, welche Aktionen von Benutzern zum Anmelden verwendet werden können.
+-   Sie können unter **Geräteregistrierung** eine Intune-Richtlinie erstellen. Diese Richtlinie gilt für die gesamte Organisation (mandantenweit). Sie unterstützt die Windows-Willkommensseite von Windows Autopilot und wird angewendet, wenn ein Gerät registriert wird. 
+-  Sie können ein Identity Protection-Profil unter **Gerätekonfiguration** erstellen. Dieses Profil ist für zugewiesene Benutzer und Geräte konzipiert und wird während des Check-Ins angewendet. 
+
+Nutzen Sie die Informationen in diesem Artikel, um eine Windows Hello for Business-Standardrichtlinie für Ihre gesamte Organisation zu erstellen. Informationen zum Erstellen eines Identity Protection-Profils für ausgewählte Benutzer und Gerätegruppen finden Sie unter [Configure an identity protection profile (Konfigurieren eines Identity Protection-Profils)](identity-protection-configure.md).  
 
 <!--- -   You can store authentication certificates in the Windows Hello for Business key storage provider (KSP). For more information, see [Secure resource access with certificate profiles in Microsoft Intune](secure-resource-access-with-certificate-profiles.md). --->
 
@@ -57,7 +60,7 @@ Intune integriert Hello for Business auf zwei Arten:
 
 4. Klicken Sie im Bereich **Alle Benutzer** auf **Eigenschaften**, und geben Sie einen **Namen** und optional eine **Beschreibung** für die Windows Hello for Business-Einstellungen ein.
 
-5. Klicken Sie im Bereich **Alle Benutzer** auf **Einstellungen**, und wählen Sie für **Windows Hello for Business konfigurieren** folgende Einstellungen aus:
+5. Klicken Sie im Bereich **Alle Benutzer** auf **Einstellungen**, und wählen Sie dann eine der folgenden Optionen für **Configure Windows Hello for Business** (Windows Hello for Business konfigurieren) aus:
 
     - **Deaktiviert**. Wenn Sie Windows Hello for Business nicht verwenden möchten, wählen Sie diese Einstellung aus. In diesem Fall ist keine der anderen Einstellungen auf dem Bildschirm verfügbar.
     - **Aktiviert**. Wählen Sie diese Einstellung aus, wenn Sie Windows Hello for Business-Einstellungen konfigurieren möchten.

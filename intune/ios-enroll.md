@@ -15,12 +15,12 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 545c5b26b6c908f4a9e7066d3f76cbf774c8fbea
-ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
+ms.openlocfilehash: 6c92b1b660856fb52f6259514ad9075ab96fb2fc
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39146695"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313291"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrieren von iOS-Geräten in Intune
 
@@ -55,7 +55,7 @@ Apple School Manager ist Programm zum Kauf von Geräten und deren Registrierung 
 
 ## <a name="apple-configurator"></a>Apple Configurator
 Sie können iOS-Geräte mit Apple Configurator auf einem Mac-Computer registrieren. Um Geräte vorzubereiten, verbinden Sie sie über USB, und installieren Sie das Registrierungsprogramm. Sie können Geräte mit Apple Configurator auf zwei Arten registrieren:
-- Registrierung per Setup-Assistent: Dieser Prozess setzt das Gerät auf die Werkseinstellungen zurück, bereitet es auf die Ausführung des Setup-Assistenten vor und installiert die Unternehmensrichtlinien für den neuen Benutzer des Geräts.
+- Registrierung mit dem Einrichtungsassistenten: Dieser Prozess setzt das Gerät auf die Werkseinstellungen zurück, bereitet es auf die Ausführung des Einrichtungsassistenten vor und installiert die Unternehmensrichtlinien für den neuen Benutzer des Geräts.
 - Direkte Registrierung: Dieser Prozess setzt das Gerät nicht auf die Werkseinstellungen zurück und registriert das Gerät mit einer vordefinierten Richtlinie. Diese Methode eignet sich für Geräte ohne Benutzeraffinität.
 
 Erfahren Sie mehr über die [Apple Configurator-Registrierung](apple-configurator-setup-assistant-enroll-ios.md).

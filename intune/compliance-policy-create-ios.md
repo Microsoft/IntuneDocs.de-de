@@ -14,12 +14,12 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f711a6bec9be0ac1fd94183931070f9988d49e3
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 1ee08c77fe085ad0f238d63481dd682ea15aa5ce
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442643"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313084"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für iOS-Geräte in Intune
 
@@ -106,6 +106,11 @@ Weitere Informationen zu E-Mail-Profilen finden Sie unter [Konfigurieren des Zug
 - **Maximale Anzahl von Minuten der Inaktivität vor erneuter Anforderung des Kennworts**: Geben Sie die Leerlaufzeit an, nach der ein Benutzer sein Kennwort erneut eingeben muss.
 - **Kennwortablauf (Tage):** Wählen Sie die Anzahl von Tagen aus, bevor das Kennwort abläuft und ein neues erstellt werden muss.
 - **Anzahl der vorherigen Kennwörter zur Verhinderung von Wiederverwendung**: Geben Sie die Anzahl von vorherigen Kennwörtern an, die nicht erneut verwendet werden dürfen.
+
+### <a name="restricted-applications"></a>Eingeschränkte Anwendungen 
+Sie können Apps einschränken, indem Sie ihre Bündel-IDs der Richtlinie hinzufügen. Wenn die App dann auf einem Gerät installiert wird, wird das Gerät als nicht konform gekennzeichnet. 
+- **App-Name:** Geben Sie einen benutzerfreundlichen Namen ein, damit Sie die Bündel-ID einfacher identifizieren können. 
+- **App-Bündel-ID:** Geben Sie die eindeutige Bündel-ID ein, die vom App-Anbieter zugewiesen wurde. Informationen zum Ermitteln der Bündel-ID finden Sie unter [How to find the bundle ID for an iOS app (Ermitteln der Bündel-ID für eine iOS-App)](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).  
 
 ## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen
 

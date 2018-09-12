@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 7b03c46a9095c0f300869ebd14d1a81698e294f7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400282"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43314022"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Öffentliche Vorschau: Konfigurieren von eSIM-Mobilfunkprofilen in Intune
 
@@ -179,7 +179,7 @@ Wenn Sie das Gerät aus der Azure AD-Gruppe entfernen, wird das eSIM-Profil eben
 2. Wechseln Sie zur Azure AD-Gruppe, und entfernen Sie das Gerät aus der Gruppe.
 3. Wenn das entfernte Geräte Kontakt zu Intune aufnimmt, wird die aktualisierte Richtlinie ausgewertet und das eSIM-Profil entfernt.
 
-Das eSIM-Profil wird auch entfernt, wenn der Benutzer die Registrierung des Geräts aufhebt, oder wenn der Remotevorgang [Unternehmensdaten entfernen](devices-wipe.md#remove-company-data) bzw. [Gerät zurücksetzen](devices-wipe.md#factory-reset) auf dem Gerät ausgeführt wird.
+Das eSIM-Profil wird auch entfernt, wenn der Benutzer das Gerät [außer Betrieb nimmt](devices-wipe.md#retire) oder dessen Registrierung aufhebt, oder wenn der [Remotevorgang zum Zurücksetzen des Geräts](devices-wipe.md#wipe) auf dem Gerät ausgeführt wird.
 
 > [!NOTE]
 > Durch das Entfernen des Profils wird die Abrechnung möglicherweise nicht beendet. Wenden Sie sich an Ihren Mobilfunkanbieter, um den Abrechnungsstatus für Ihr Gerät zu überprüfen.

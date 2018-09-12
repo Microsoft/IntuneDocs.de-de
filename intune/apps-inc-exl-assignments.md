@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1ec9a45ca09ddff5aa10cc7283444cf96c8153f6
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 47922a30d8106c4d60b6caa43c8855195e3a0220
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905409"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330244"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Einschließen und Ausschließen von App-Zuweisungen in Microsoft Intune
 
@@ -44,8 +44,8 @@ Intune berücksichtigt beim Ausschließen von Gruppen keine Zuweisung eines Benu
 So weisen Sie eine App Gruppen mithilfe der Ein- und Ausschlusszuweisung zu:
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie im Menü **Intune** die Option **Mobile Apps** aus.
-4. Wählen Sie im Bereich **Mobile Apps** die Option **Apps** aus. Die Liste der hinzugefügten Apps wird angezeigt.
+3. Wählen Sie im Menü **Intune** die Option **Client-Apps** aus.
+4. Wählen Sie im Bereich **Client-Apps** die Option **Apps** aus. Die Liste der hinzugefügten Apps wird angezeigt.
 5. Wählen Sie die App aus, die zugewiesen werden soll. In einem Dashboard werden Informationen zu der App angezeigt. 
 6. Wählen Sie im Abschnitt **Verwalten** des Menüs **Zuweisungen** aus. 
 

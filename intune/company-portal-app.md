@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4535bdfa9b801c605c70c0a9dad900d76044eab4
-ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
+ms.openlocfilehash: bd388131445715a4037cc0480c194d338212dbb0
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37844979"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329972"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 
@@ -31,7 +31,7 @@ Im Microsoft Intune-Unternehmensportal können Benutzer auf Unternehmensdaten zu
 > [!Tip]        
 > Wenn Sie das Unternehmensportal anpassen, gelten die Konfigurationen sowohl für die Unternehmensportal-Website als auch für die Unternehmensportal-Apps.       
 
-Durch Anpassen des Unternehmensportals können Sie Ihren Endbenutzern eine vertraute und sinnvolle Benutzeroberfläche bereitstellen. Dazu wählen Sie in der Workload **Mobile Apps** die Option **Setup** > **Branding des Unternehmensportals** aus und konfigurieren die erforderlichen Einstellungen.  
+Durch Anpassen des Unternehmensportals können Sie Ihren Endbenutzern eine vertraute und sinnvolle Benutzeroberfläche bereitstellen. Klicken Sie hierzu in der Workload **Client-Apps** auf **Setup** > **Branding des Unternehmensportals**, und konfigurieren Sie die erforderlichen Einstellungen.  
 
 > [!Note]       
 > Das Unternehmensportal für Windows 10 sendet App-Protokolle jetzt direkt an Microsoft, wenn der Benutzer den Workflow zum Abrufen von Hilfe zu einem Problem startet. So können Probleme, die Microsoft gemeldet werden, einfacher behoben und gelöst werden.  

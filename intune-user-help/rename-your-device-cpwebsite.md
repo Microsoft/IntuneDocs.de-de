@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,28 +17,29 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e31451abd79c17618377598d29c455c4c0637348
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 4afa12cffbf199d271df912bfcfc1aedb4d8b23c
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321372"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150487"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Umbenennen Ihres Geräts über die Unternehmensportalwebsite
 
-Informationen zum Umbenennen Ihres registrierten, verwalteten Geräts über die Unternehmensportalwebsite Sie können Ihrem Gerät einen anderen als den Standardmodellnamen geben, um es besser finden zu können.  
+Benennen Sie ein registriertes, verwaltetes Gerät über die Unternehmensportalwebsite um. Ändern Sie den generischen oder Standardmodellnamen eines Geräts in einen Namen, der schnell identifiziert werden kann.
 
-1. Klicken Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com/HelpDeskDialog) erst auf die Schaltfläche __Menü__ und anschließend auf __Meine Geräte__.
+1. Öffnen Sie die [Unternehmensportal-Website](https://portal.manage.microsoft.com), und wählen Sie die Schaltfläche __Menü__ und anschließend die Option __Geräte__ aus.  
 
 2. Wählen Sie das Gerät aus, dem Sie einen anderen Namen geben möchten.
 
-![Ein Screenshot der Seite „Meine Geräte“ mit mehreren nicht identifizierten Geräten oberhalb der Banneraufforderung, nicht aufgelistete Geräte zu registrieren oder nicht identifizierte Geräte zu identifizieren.](./media/macOS_enroll_002_tap_here_banner.png)  
+    ![Ein Screenshot der Seite „Geräte“ mit zwei Kacheln, auf denen nicht identifizierte Geräte mit Standardnamen angezeigt werden. Unter den Geräten befindet sich ein graues Banner, durch das Benutzer dazu aufgefordert werden, das verwendete Gerät zu identifizieren oder ein neues hinzuzufügen.](./media/rename-reset-device-step2-1808.png)   
 
-3. Klicken Sie auf **Umbenennen**.  
+3. Klicken Sie auf **Umbenennen**. Wenn die Option zum Umbenennen oben auf Ihrer Seite nicht sichtbar ist, wählen Sie **Mehr (....)** > **Umbenennen** aus.   
 
-   ![Alle Optionen für ein ausgewähltes Gerät auf der Unternehmensportalwebsite, darunter „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/iwp-screen-with-all-options.png)  
-    
+   ![Seite mit Gerätedetails für ein ausgewähltes Gerät auf der Unternehmensportalwebsite mit einer Liste der Links oben auf der Seite zu „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/rename-reset-device-1808.png)   
 
-4. Geben Sie in das Feld, in dem Ihr Gerätenamen angezeigt wird, einen neuen Namen für Ihr Gerät ein. Tippen Sie anschließend auf die Schaltfläche **Umbenennen**. Das Gerät wird jetzt mit dem neuen Namen angezeigt.
+    ![Vergrößerte Ansicht des Symbols für weitere Optionen, das durch einen roten Pfeil markiert ist.](./media/rename-reset-device-step3-more-1808.png)  
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com/HelpDeskDialog).
+4. Geben Sie in das Feld, in dem Ihr Gerätenamen angezeigt wird, einen neuen Namen für Ihr Gerät ein. Tippen Sie anschließend auf die Schaltfläche **Umbenennen**. Das Gerät wird jetzt mit dem neuen Namen angezeigt.  
+
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  

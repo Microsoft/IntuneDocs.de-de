@@ -15,12 +15,12 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 859194b364a64854922993d2d798f318b260fc80
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4e070e80bb9575154aded12f0992d04bd7a4718f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836335"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329953"
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Erste Schritte mit Microsoft Intune im Azure-Portal
 
@@ -53,7 +53,7 @@ Diese Fähigkeit wird wichtiger, wenn Sie mehr Inhalte wie Gruppen und Benutzer 
 
 ## <a name="using-services"></a>Verwenden von Diensten
 
-Wenn Sie Intune oder einen anderen Dienst in Azure öffnen, wird der Dienst in einem **Bereich** angezeigt. Einige der ersten Workloads, die Sie in Azure verwenden, wie z.B. **Benutzer**, **Gruppen** und **Mobile Apps**, werden in einem Vollbildbereich angezeigt. Wenn Sie eine Workload auswählen, wird dieser Bereich im Vollbildmodus geöffnet. Andere Bereiche werden beim Öffnen vom rechten Rand des Bereichs geschoben und unter dem Hauptbereich reduziert, von dem sie stammen.
+Wenn Sie Intune oder einen anderen Dienst in Azure öffnen, wird der Dienst in einem **Bereich** angezeigt. Einige der ersten Workloads, die Sie in Intune verwenden, wie z.B. **Benutzer**, **Gruppen** und **Client-Apps**, werden in einem Vollbildbereich angezeigt. Wenn Sie eine Workload auswählen, wird dieser Bereich im Vollbildmodus geöffnet. Andere Bereiche werden beim Öffnen vom rechten Rand des Bereichs geschoben und unter dem Hauptbereich reduziert, von dem sie stammen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

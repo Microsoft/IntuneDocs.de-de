@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321219"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313852"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Gerätebeschränkungen für Einstellungen unter Windows 10 (und höher) in Intune
 In diesem Artikel erfahren Sie alle Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für Windows 10-Geräte konfigurieren können.
@@ -37,7 +37,7 @@ In diesem Artikel erfahren Sie alle Einstellungen für Microsoft Intune-Gerätee
 - **Wechselmedien:** Gibt an, ob externe Speichergeräte wie SD-Karten mit dem Gerät verwendet werden können.
 - **Geolocation:** Gibt an, ob das Gerät Standortdienstinformationen verwenden kann.
 - **Internetfreigabe:** Erlaubt die gemeinsame Nutzung der Internetverbindung auf dem Gerät.
-- **Zurücksetzung des Telefons:** Steuert, ob Benutzer ihre Geräte auf die Werkseinstellungen zurücksetzen können.
+- **Zurücksetzung des Telefons:** Steuert, ob Benutzer ihre Geräte zurücksetzen können.
 - **USB-Verbindung (nur Mobilgerät):** Steuert, ob Geräte über eine USB-Verbindung auf externe Speichergeräte zugreifen können.
 - **AntiTheft-Modus (nur Mobilgerät)**: Konfigurieren Sie, ob der Windows-AntiTheft-Modus aktiviert ist.
 - **Cortana:** Aktiviert oder deaktiviert den Cortana-Sprach-Assistenten.
@@ -50,6 +50,7 @@ In diesem Artikel erfahren Sie alle Einstellungen für Microsoft Intune-Gerätee
 - **Dialogfeld bei SIM-Kartenfehler (nur mobile Geräte):** Blockiert die Anzeige einer Fehlermeldung auf dem Gerät, wenn keine SIM-Karte erkannt wird.
 - **Ink-Arbeitsbereich:** Blockiert den Benutzerzugriff auf den Ink-Arbeitsbereich. Wenn diese Einstellung nicht konfiguriert ist, ist der Ink-Arbeitsbereich aktiviert (Feature ist aktiviert), und der Benutzer kann ihn über den Sperrbildschirm verwenden.
 - **Automatische erneute Bereitstellung:** Ermöglicht es Benutzern mit Administratorrechten, alle Benutzerdaten und -einstellungen über **STRG+Windows+R** vom Sperrbildschirm des Geräts aus zu löschen. Das Gerät wird automatisch neu konfiguriert und bei der Verwaltung neu registriert.
+- **Require users to connect to network during device setup (Windows Insider only)** (Verlangen, dass sich Benutzer während des Gerätesetups mit dem Netzwerk verbinden müssen (nur Windows-Insider)): Wählen Sie **Require** (Anfordern) aus, um sicherzustellen, dass das Gerät eine Verbindung zu einem Netzwerk herstellen muss, bevor es während des Setups von Windows 10 über die Netzwerkseite hinausgeht. Solange sich diese Funktion in der Vorschau befindet, ist für die Verwendung dieser Einstellung der Windows-Insider-Build 1809 oder höher erforderlich.
 
 ## <a name="password"></a>Kennwort
 -   **Kennwort:** Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können.
@@ -152,28 +153,28 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 ## <a name="edge-browser"></a>Microsoft Edge-Browser
 
 -   **Microsoft Edge-Browser (nur mobil):** Erlaubt die Verwendung des Edge-Webbrowsers auf dem Gerät.
--   **Adressleisten-Dropdown (nur Desktop):** Verhindert, dass Microsoft Edge bei der Eingabe weiterhin eine Liste mit Vorschlägen in einer Dropdownliste anzeigt. So kann die zwischen Microsoft Edge und Microsoft-Diensten genutzte Netzwerkbandbreite minimiert werden.
+-   **Adressleisten-Dropdown (nur Desktop):** Verhindert, dass Edge bei der Eingabe weiterhin eine Liste mit Vorschlägen in einer Dropdownliste anzeigt. So kann die zwischen Microsoft Edge und Microsoft-Diensten genutzte Netzwerkbandbreite minimiert werden.
 -   **Favoriten zwischen Microsoft-Browsern synchronisieren (nur Desktop):** Erlaubt Windows das Synchronisieren von Favoriten zwischen Internet Explorer und Microsoft Edge.
--   **DNT-Kopfzeilen senden:** Konfiguriert den Microsoft Edge-Browser zum Senden von DNT-Headern (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.
+-   **DNT-Kopfzeilen senden:** Konfiguriert den Edge-Browser zum Senden von DNT-Headern (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.
 -   **Cookies:** Erlaubt Browsern das Speichern von Internetcookies auf dem Gerät.
--   **Javascript:** Erlaubt die Ausführung von Skripts wie z.B. JavaScript im Microsoft Edge-Browser.
+-   **Javascript:** Erlaubt die Ausführung von Skripts wie z.B. JavaScript im Edge-Browser.
 -   **Popups:** Blockiert Popupfenster im Browser (gilt nur für Windows 10 Desktop).
 -   **Suchvorschläge:** Ermöglicht der Such-Engine, Websites während der Eingabe von Suchausdrücken vorzuschlagen.
 -   **Datenverkehr im Intranet an Internet Explorer senden:** Erlaubt Benutzern, Intranetsites in Internet Explorer zu öffnen (nur Windows 10 Desktop).
 -   **AutoAusfüllen:** Erlaubt Benutzern, die Einstellungen für AutoAusfüllen im Browser zu ändern (nur Windows 10 Desktop).
--   **Kennwort-Manager:** Aktiviert oder deaktiviert den Microsoft Edge-Kennwort-Manager.
+-   **Kennwort-Manager:** Aktiviert oder deaktiviert den Edge-Kennwort-Manager.
 -   **Speicherort der Websiteliste für den Unternehmensmodus:** Gibt an, wo Sie die Liste der Websites finden, die im Unternehmensmodus geöffnet werden. Benutzer können diese Liste nicht bearbeiten.<br>(Nur Windows 10 Desktop)
--   **Entwicklungstools:** Hindert den Endbenutzer daran, die Microsoft Edge-Entwicklertools aufzurufen.
--   **Erweiterungen:** Erlaubt dem Benutzer, Microsoft Edge-Erweiterungen auf dem Gerät zu installieren.
+-   **Entwicklungstools:** Hindert den Endbenutzer daran, die Edge-Entwicklertools aufzurufen.
+-   **Erweiterungen:** Erlaubt dem Benutzer, Edge-Erweiterungen auf dem Gerät zu installieren.
 -   **InPrivate-Browsen:** Hindert den Endbenutzer daran, InPrivate-Browsersitzungen zu öffnen.
--   **Anzeigen der „Willkommen“-Seite:** Verhindert, dass die Einführungsseite bei der ersten Ausführung von Microsoft Edge angezeigt wird.
+-   **Anzeigen der „Willkommen“-Seite:** Verhindert, dass die Einführungsseite bei der ersten Ausführung von Edge angezeigt wird.
     -   **URL für erste Ausführung:** Gibt die URL einer Seite an, die bei der ersten Ausführung von Microsoft Edge angezeigt wird (nur Windows 10 Mobile).
 -   **Startseiten:** Fügt eine Liste der Websites hinzu, die Sie im Microsoft Edge-Browser als Startseiten verwendet möchten (nur Desktop).
 -   **Änderungen an Startseite:** Ermöglicht Benutzern das Ändern der Startseiten, die beim Öffnen von Microsoft Edge angezeigt werden. Nutzen Sie die Einstellung der Startseiten, um die Seite oder Liste von Seiten zu erstellen, die beim Starten von Microsoft Edge geöffnet werden.
 -   **Zugriff auf about:flags-Seite blockieren:** Hindert den Benutzer am Zugriff auf die about:flags-Seite in Microsoft Edge, die Entwickler- und experimentelle Einstellungen enthält.
 -   **WebRTC-LocalHost-IP-Adresse:** Blockiert die Anzeige der Localhost-IP-Adresse des Benutzers bei Anrufen über das Internet-RTC-Protokoll.
 -   **Standardsuch-Engine:** Gibt die zu verwendende Standardsuch-Engine an. Endbenutzer können diesen Wert jederzeit ändern.
--   **Browserdaten beim Beenden löschen:** Löscht Verlauf und Browserdaten, wenn der Benutzer Microsoft Edge beendet.
+-   **Browserdaten beim Beenden löschen:** Löscht Verlauf und Browserdaten, wenn der Benutzer Edge beendet.
 -   **Datenerfassung für Livekacheln:** Beendet das Sammeln von Daten durch Windows aus den Livekacheln, wenn der Benutzer eine Seite an das Startmenü von Microsoft Edge anheften.
 -  **Favoritenliste:** Definiert den Pfad zur Favoritendatei. Beispiel: http://contoso.com/favorites.html.
 -  **Favoritenänderungen einschränken:** Legen Sie **Blockieren** fest, um zu verhindern, dass Benutzer die Favoritenliste hinzufügen, importieren, sortieren oder bearbeiten. 

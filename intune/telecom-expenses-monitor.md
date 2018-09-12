@@ -15,12 +15,12 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ca0c0151bd90051d287c76f5d264030112b85cfd
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 53f6adba610f1ddb817e04ac8e9a0fdb2665b21a
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834083"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347813"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Einrichten eines TEM-Diensts (Telecom Expense Management) in Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -109,9 +109,9 @@ Diese Kategorien werden Benutzern während der Registrierung angezeigt. Je nachd
 
 Um die Datalert-App in Intune für jede Plattform zu erstellen, gehen Sie wie folgt vor. iOS wird in den folgenden Schritten als Beispiel verwendet.
 
-1. Klicken Sie im [Azure-Portal](https://portal.azure.com) im Bereich **Intune** auf die Option **Mobile Apps**.
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) im Bereich **Intune** die Option **Client-Apps** aus.
 
-2. Klicken Sie im Bereich **Mobile Apps** auf **Verwalten** > **Apps**.
+2. Wählen Sie im Bereich **Client-Apps** die Option **Verwalten** > **Apps** aus.
 
 3. Wählen Sie **Hinzufügen** aus, um eine App hinzuzufügen.
 

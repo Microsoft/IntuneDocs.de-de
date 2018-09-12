@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b67b50a5bd372541cf0842696e5012ca991d8b8
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b9520343f3b631fdc2732690b462c6d8fd010c82
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224159"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329494"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Hinzufügen von integrierten Apps zu Microsoft Intune
 
@@ -36,8 +36,8 @@ In früheren Versionen der Intune-Konsole stellte Intune mehrere standardmäßig
 So fügen Sie eine integrierte App Ihren verfügbaren Apps in Microsoft Intune hinzu
 1. Melden Sie sich im Azure-Portal an.
 2. Um den Bereich „Microsoft Intune“ anzuzeigen, wählen Sie **Mehr Dienste** > **Überwachung und Verwaltung** > **Intune**.
-3. Klicken Sie im Bereich **Intune** auf die Option **Mobile Apps**.
-4. Wählen Sie im Bereich **Mobile Apps** unter **Verwalten** **Apps** aus.
+3. Klicken Sie im Bereich **Intune** auf **Client-Apps**.
+4. Wählen Sie im Bereich **Client-Apps** unter **Verwalten** die Option **Apps** aus.
 5. Wählen Sie **Hinzufügen** aus.
 6. Wählen Sie im App-Bereich **Hinzufügen** in der Liste **App-Typ** die Option **Integrierte App** aus.
 7. Wählen Sie **App auswählen** aus.

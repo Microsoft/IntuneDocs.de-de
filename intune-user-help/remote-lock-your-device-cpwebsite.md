@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/22/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,53 +17,51 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: feba62cac464af75a0f0d249022edb6bd5d031f3
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 2f8a65d05ecffcf87d7a84ab23ad215256286dd0
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225373"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150074"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Sperren Ihres Geräts remote über die Unternehmensportalwebsite
 
-Unfälle passieren, und manchmal kann ein Gerät verloren gehen. Wenn Sie Ihr Gerät verloren haben oder es gestohlen wurde, machen Sie sich womöglich zuerst Sorgen darüber, dass jeder nun Zugriff auf die Informationen auf dem Gerät hat, egal wo sich dieses befindet.
+Sperren Sie remote ein verloren gegangenes oder gestohlenes Gerät über die Unternehmensportalwebsite. Wenn dies auf Ihrem Gerät unterstützt wird, sperrt diese Einstellung den Bildschirm des Geräts, unabhängig davon, wo es sich befindet. Damit das Gerät entsperrt und wieder verwendet werden kann, muss die richtige Kennung eingegeben werden.   
 
-[!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
-
-Um sicherzugehen, können Sie es mithilfe der Remotesperrfunktion auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) sperren. Die Remotesperre funktioniert für:
+Die Einstellung für die Remotesperre funktioniert für:
 
 * Android
 * iOS
 * macOS
 * Windows 10
 * Windows 10 Mobile (wenn für das Gerät bereits eine Kennung festgelegt wurde)
-* Windows Phone 8.1 (wenn für das Gerät bereits eine Kennung festgelegt wurde)
+* Windows Phone 8.1 (wenn für das Gerät bereits eine Kennung festgelegt wurde)  
 
-## <a name="to-use-remote-lock-to-lock-your-device"></a>So verwenden Sie die Remotesperre zum Sperren Ihres Geräts
+1. Wählen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com) erst die Schaltfläche __Menü__ und anschließend __Geräte__ aus.  
 
-1. Tippen Sie auf der [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) auf die Schaltfläche __menu__ (Menü) und dann auf __My Devices__ (Meine Geräte).
+2. Wählen Sie das Gerät aus, das gesperrt werden soll.  
 
-2. Wählen Sie auf der Seite __Meine Geräte__ den Namen des Geräts aus, das Sie sperren möchten.
+    ![Ein Screenshot der Seite „Geräte“ mit zwei Kacheln, auf denen nicht identifizierte Geräte mit Standardnamen angezeigt werden. Unter den Geräten befindet sich ein graues Banner, durch das Benutzer dazu aufgefordert werden, das verwendete Gerät zu identifizieren oder ein neues hinzuzufügen.](./media/rename-reset-device-step2-1808.png) 
 
-   ![Ein Screenshot der Seite „Meine Geräte“ mit mehreren nicht identifizierten Geräten oberhalb der Banneraufforderung, nicht aufgelistete Geräte zu registrieren oder nicht identifizierte Geräte zu identifizieren.](./media/macOS_enroll_002_tap_here_banner.png)
+3. Wählen Sie **Remotesperre** aus. Wenn die Option zum Sperren oben auf Ihrer Seite nicht sichtbar ist, wählen Sie **Mehr (....)** > **Remotesperre** aus.  
 
-3. Das Gerät wird in einem Popupfenster geöffnet. Tippen Sie auf die Schaltfläche **Remotesperre**.
+   ![Seite mit Gerätedetails für ein ausgewähltes Gerät auf der Unternehmensportalwebsite mit einer Liste der Links oben auf der Seite zu „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/rename-reset-device-1808.png) 
 
-   ![Alle Optionen für ein ausgewähltes Gerät auf der Unternehmensportalwebsite, darunter „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/iwp-screen-with-all-options.png)
+    ![Vergrößerte Ansicht des Symbols für weitere Optionen, das durch einen roten Pfeil markiert ist.](./media/rename-reset-device-step3-more-1808.png)    
 
-4. Eine Benachrichtigung wird angezeigt, damit Sie wissen, dass Sie gerade Ihr Gerät sperren. Tippen Sie auf **Remotesperre**, und die Unternehmensportal-Website versucht, das Gerät zu sperren.
+4. Eine Meldung wird angezeigt, die darauf hinweist, dass Sie Ihr Gerät sperren. Tippen Sie auf **Remotesperre**, um den Vorgang zu bestätigen.
 
-   Nachdem Sie **Remotesperre** ausgewählt haben, wird die Meldung „Remotesperre steht aus“ angezeigt.  Wenn die Remotesperre erfolgreich durchgeführt wurde, ändert sich der Status zu „Remotesperre war erfolgreich“.
+Nach der Bestätigung versucht die Unternehmensportal-App, Ihr Gerät zu sperren. Während dieser Zeit wird eine Meldung angezeigt, dass die Remotesperre noch aussteht. Wenn Ihr Gerät gesperrt ist, wird der Status auf „Remotesperre war erfolgreich“ gesetzt.  
 
-   Der Status „Remotesperre“ wird an drei Stellen angezeigt:
+Der Status „Remotesperre“ wird an drei Stellen angezeigt:
 
    * Im Benachrichtigungsbereich der Website.
    * Die **Detailseite** für das Gerät.
-   * Die Kachel zeigt den Gerätenamen im Bereich **My Devices** (Meine Geräte) auf der Seite.
+   * Im Bereich **Geräte** auf der Seite wird der Gerätename in der Kachel angezeigt.  
 
 > [!Note]
-> Wenn eine Meldung „Fehler bei der Remotesperre“ angezeigt wird, warten Sie einige Minuten, und versuchen Sie erneut, das Gerät zu sperren. Sobald Sie die Option zum erneuten Versuchen auswählen, ändert sich der Status wieder zu „Remotesperre steht aus“. Wenn der erneute Versuch nicht funktioniert, wenden Sie sich bitte an den Support Ihres Unternehmens.
+> Wenn eine Benachrichtigung angezeigt wird, dass die Remotesperre nicht erfolgreich war, warten Sie einige Minuten. Dann wiederholen Sie den Vorgang zum Sperren Ihres Geräts. Der Status wird wieder in „Remotesperre steht aus“ geändert. Wenn der erneute Versuch nicht funktioniert, bitten Sie den Support Ihres Unternehmens um Unterstützung.
 
-Wenn Sie Ihr Gerät wiederfinden und die Remotesperre aufheben möchten, geben Sie einfach Ihre Kennung ein.
+Wenn Sie Ihr Gerät wiederfinden und die Remotesperre aufheben möchten, geben Sie einfach Ihre Kennung ein.  
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

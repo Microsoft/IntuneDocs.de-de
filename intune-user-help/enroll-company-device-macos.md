@@ -1,11 +1,11 @@
 ---
-title: Registrieren eines unternehmenseigenen oder vom Unternehmen zur Verfügung gestellten macOS-Geräts für die Verwaltung | Microsoft-Dokumentation
+title: Registrieren Ihres vom Unternehmen zur Verfügung gestellten macOS-Geräts für die Verwaltung | Microsoft-Dokumentation
 description: Informationen zum Registrieren eines macOS-Geräts bei Intune, das von Ihrer Organisation erworben und bereitgestellt wurde.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,26 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 272a82f7d3d62d117fa5506ccf446b3169ff514f
-ms.sourcegitcommit: bb56ada81e6d4950f130415918c4acc455bb52dd
+ms.openlocfilehash: a5808a0ac80390b76058827d2ca0870249b043b9
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "43016226"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241829"
 ---
-# <a name="get-your-company-owned-macos-device-managed"></a>Lassen Sie unternehmenseigene macOS-Geräte verwalten
+# <a name="enroll-your-organization-provided-macos-device-in-management"></a>Registrieren eines von Ihrer Organisation bereitgestellten macOS-Geräts für die Verwaltung
 
-Erfahren Sie, wie Sie ein neues macOS-Gerät automatisch in Intune verwalten können.
+Erfahren Sie, wie Sie Ihr neues macOS-Gerät in Intune verwalten können.  
 
-Unternehmens- bzw. schul- oder universitätseigene Geräte werden häufig vorkonfiguriert, bevor Sie sie erhalten. Ihre Organisation sendet vorkonfigurierte Einstellungen an das Gerät, wenn Sie es einschalten und sich zum ersten Mal anmelden. Wenn Ihr Gerät das Setup abgeschlossen hat, erhalten Sie Zugriff auf Unternehmens- bzw. Schul- oder Universitätsressourcen. 
+Geräte, die Ihnen von der Arbeit, der Schule oder der Universität zur Verfügung gestellt werden, sind häufig vorkonfiguriert, bevor Sie sie erhalten. Ihre Organisation sendet diese vorkonfigurierten Einstellungen an das Gerät, nachdem Sie es eingeschaltet und sich zum ersten Mal angemeldet haben. Wenn Ihr Gerät das Setup abgeschlossen hat, erhalten Sie Zugriff auf Ihre Unternehmens- bzw. Schul- oder Universitätsressourcen. 
 
 Wenn Sie mit dem Setup der Verwaltung beginnen möchten, schalten Sie Ihr Gerät ein, und melden Sie sich mit den betreffenden Anmeldeinformationen an. Im folgenden Artikel werden die Schritte und Bildschirme erläutert, die für das Setup mit dem Setup-Assistenten von Bedeutung sind.   
 
 ## <a name="what-is-apple-dep"></a>Was ist das Apple-Programm zur Geräteregistrierung?
-Wenn Sie über ein unternehmenseigenes Gerät verfügen, wurde es möglicherweise im Rahmen des Apple-Programms zur Geräteregistrierung erworben. Einige Organisationen erwerben große Mengen von iOS- oder macOS-Geräten über das Apple-Programm zur Geräteregistrierung. Dann können sie Geräte über einen beliebigen Dienst (z.B. Intune), der die Verwaltung mobiler Geräte anbietet, konfigurieren und verwalten. Wenn Sie über Administratorberechtigungen verfügen und sich für das Apple-Programm zur Geräteregistrierung interessieren, erhalten Sie weitere Informationen unter [Automatisches Registrieren von macOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos).  
+Möglicherweise hat Ihre Organisation ihre Geräte über ein sogenanntes *Apple-Programm zur Geräteregistrierung* erworben. Über das Apple-Programm zur Geräteregistrierung haben Organisationen die Möglichkeit, große Mengen von iOS- oder macOS-Geräten zu erwerben. Dann können sie diese Geräte über einen beliebigen Dienst (z.B. Intune), der die Verwaltung mobiler Geräte anbietet, konfigurieren und verwalten. Wenn Sie über Administratorberechtigungen verfügen und sich für das Apple-Programm zur Geräteregistrierung interessieren, erhalten Sie weitere Informationen unter [Automatisches Registrieren von macOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos).  
 
 ## <a name="set-up-your-macos-device"></a>Einrichten Ihres macOS-Geräts  
-Führen Sie die folgenden Schritte aus, um Ihr macOS-Gerät für die Verwaltung zu registrieren. Wenn Sie Ihr eigenes Gerät anstelle eines unternehmenseigenen Geräts verwenden, führen Sie die Schritte für [persönliche Geräte oder Bring Your Own Device](enroll-your-device-in-intune-macos-cp.md) aus.  
+Führen Sie die folgenden Schritte aus, um Ihr macOS-Gerät für die Verwaltung zu registrieren. Wenn Sie Ihr eigenes Gerät anstelle eines organisationseigenen Geräts verwenden, führen Sie die Schritte für [persönliche Geräte oder Bring Your Own Device](enroll-your-device-in-intune-macos-cp.md) aus.  
 
 1. Schalten Sie Ihr macOS-Gerät ein. 
 2. Wählen Sie Ihre **Sprache** aus, und klicken Sie auf **Weiter**.  
@@ -64,4 +64,4 @@ Führen Sie die folgenden Schritte aus, um Ihr macOS-Gerät für die Verwaltung 
 ## <a name="get-the-company-portal-app"></a>Herunterladen der Unternehmensportal-App      
 Navigieren Sie zum App Store, um die Intune-Unternehmensportal-App auf Ihrem Gerät herunterzuladen. Mithilfe dieser App können Sie Ihr Gerät für die Verwaltung überwachen und synchronisieren bzw. zu dieser hinzufügen und Apps installieren.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

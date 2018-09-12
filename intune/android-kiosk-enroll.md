@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903142"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313460"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Einrichten der Registrierung von Android Enterprise-Kioskgeräten
 
@@ -112,7 +112,7 @@ Bei Android 5.1- und höheren Geräten, die NFC unterstützen, können Sie Ihre 
 
 Für Android 6-Geräte und höher können Sie das Token zum Registrieren des Geräts verwenden. Bei Android 6.1 und höheren Versionen kann bei Verwendung der Registrierungsmethode **aft#setup** auch der QR-Code-Scan genutzt werden.
 
-1. Schalten Sie das Gerät ein, das Sie auf Werkseinstellungen zurücksetzen möchten.
+1. Schalten Sie das zurückgesetzte Gerät ein.
 2. Wählen Sie auf dem **Willkommenssbildschirm** Ihre Sprache aus.
 3. Stellen Sie eine **WLAN**-Verbindung her, und tippen Sie dann auf **WEITER**.
 4. Akzeptieren Sie Nutzungsbedingungen von Google, und tippen Sie dann auf **WEITER**.
@@ -129,7 +129,7 @@ Auf Android 7-Geräten und höher können Sie den QR-Code aus dem Registrierungs
 > [!Note]
 > Bei bestimmten Zoomeinstellungen des Browsers können Geräte möglicherweise keine QR-Codes scannen. Dieses Problem lässt sich durch die Erhöhung des Zooms beheben.
 
-1. Tippen Sie mehrmals auf den ersten Bildschirm, der nach einer Zurücksetzung auf die Werkseinstellungen angezeigt wird, um einen QR-Scanner auf dem Android-Gerät zu starten.
+1. Tippen Sie mehrmals auf den ersten Bildschirm, der nach einer Zurücksetzung angezeigt wird, um einen QR-Scanner auf dem Android-Gerät zu starten.
 2. Auf Android 7- und 8-Geräten werden Sie dazu aufgefordert, einen QR-Scanner zu installieren. Auf Android 9-Geräten und höher ist bereits ein QR-Scanner installiert.
 3. Verwenden Sie den QR-Scanner zum Scannen des QR-Codes vom Registrierungsprofil, und führen Sie anschließend die angezeigten Eingabeaufforderungen aus, um die Registrierung durchzuführen.
 

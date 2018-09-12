@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268837"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313495"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Konfigurieren von iOS-Updaterichtlinien in Intune
 
@@ -32,7 +32,7 @@ Dieses Feature unterstützt Geräte, auf denen iOS 10.3 und höher ausgeführt w
 4. Geben Sie einen Namen und eine Beschreibung für die Richtlinie ein.
 5. Klicken Sie auf **Einstellungen**. 
 
-    Geben Sie an, wann die Installation der neuesten Updates auf iOS-Geräte nicht erzwungen werden soll. Durch diese Einstellungen wird ein eingeschränkter Zeitraum erstellt. Sie können die Wochentage, die Zeitzone sowie die Start- und Endzeit konfigurieren.
+    Geben Sie an, wann die Installation der neuesten Updates auf iOS-Geräte nicht erzwungen werden soll. Durch diese Einstellungen wird ein eingeschränkter Zeitraum erstellt. Sie können die **Tage** der Woche, die **Zeitzone**, die **Startzeit**, die **Endzeit** und die **Verzögerung der Sichtbarkeit von Softwareupdates (in Tagen)** zum Eingeben von Benutzern konfigurieren. Sie können einen Verzögerungszeitraum von 1 bis 90 Tagen für Softwareupdates festlegen. Geben Sie 0 (null) ein, um keine Verzögerung für Softwareupdates festzulegen. Diese Updateeinstellungen gelten nur für überwachte iOS-Geräte.
 
 6. Klicken Sie auf **OK**, um die Änderungen zu speichern. Klicken Sie auf **Erstellen**, um die Richtlinie zu erstellen.
 
@@ -44,7 +44,7 @@ Das Profil wird erstellt und in der Richtlinienliste angezeigt. Die mobile Gerä
 2. Wählen Sie eine vorhandene Richtlinie aus, und klicken Sie dann auf **Eigenschaften**.
 3. Aktualisieren Sie die eingeschränkten Zeiträume:
 
-    1. Wählen Sie die Wochentage aus.
+    1. Auswählen der Wochentage
     2. Wählen Sie die Zeitzone aus, in der diese Richtlinie angewendet wird.
     3. Wählen Sie die Start- und Endzeit des gesperrten Zeitraums aus.
 

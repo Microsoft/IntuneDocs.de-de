@@ -1,11 +1,11 @@
 ---
-title: Registrieren Ihres iOS-Geräts mit dem Programm zur Geräteregistrierung | Microsoft-Dokumentation
-description: Beschreibt, wie Sie ein iOS-Gerät in Intune mit einem Programm zur Geräteregistrierung registrieren
+title: Registrieren eines von Ihrer Organisation bereitgestellten iOS-Geräts für die Verwaltung | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie ein iOS-Gerät bei Intune registrieren, das von Ihrer Organisation erworben und bereitgestellt wurde.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9d1154d942069ad69294d4235c894f88513dd848
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b93f02011b0900b1a64ae6cb10a84a52cd40187a
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016406"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241795"
 ---
-# <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>Registrieren Ihres iOS-Geräts in Intune mit dem Programm zur Geräteregistrierung
+# <a name="enroll-your-organization-provided-ios-device-in-management"></a>Registrieren eines von Ihrer Organisation bereitgestellten iOS-Geräts für die Verwaltung
 
-Das Programm zur Geräteregistrierung wird von Apple angeboten, um Unternehmen das Verwalten einer hohen Anzahl von iOS-Geräten zu erleichtern. Wenn Ihr Unternehmen Ihnen erlaubt hat, Ihr eigenes Gerät mitzubringen, müssen Sie statt der Schritte auf dieser Seite die [Regulären iOS-Registrierungsschritte](enroll-your-device-in-intune-ios.md) ausführen. Wenn Ihr Unternehmen ein iOS-Gerät für Sie bereitgestellt hat und Ihnen mitgeteilt hat, dass dies Teil des Programms zur Geräteregistrierung ist, können Sie mit dem Lesen fortfahren.
+Erfahren Sie, wie Sie Ihr neues iOS-Gerät in Intune verwalten können.  
+
+Die iOS-Geräte, die Ihnen von der Arbeit, der Schule oder der Universität zur Verfügung gestellt werden, sind häufig vorkonfiguriert, bevor Sie sie erhalten. Ihre Organisation sendet diese vorkonfigurierten Einstellungen an das Gerät, nachdem Sie es eingeschaltet und sich zum ersten Mal angemeldet haben. Wenn Ihr Gerät das Setup abgeschlossen hat, erhalten Sie Zugriff auf Ihre Unternehmens- bzw. Schul- oder Universitätsressourcen.  
+
+Um mit dem Setup zu beginnen, schalten Sie Ihr Gerät ein, und melden Sie sich mit den betreffenden Anmeldeinformationen an. Im folgenden Artikel werden die Schritte und Bildschirme erläutert, die für das Setup mit dem Setup-Assistenten von Bedeutung sind. 
+
+## <a name="what-is-apple-dep"></a>Was ist das Apple-Programm zur Geräteregistrierung?
+Möglicherweise hat Ihre Organisation ihre Geräte über ein sogenanntes *Apple-Programm zur Geräteregistrierung* erworben. Über das Apple-Programm zur Geräteregistrierung haben Organisationen die Möglichkeit, große Mengen von iOS- oder macOS-Geräten zu erwerben. Dann können sie diese Geräte über einen beliebigen Dienst (z.B. Intune), der die Verwaltung mobiler Geräte anbietet, konfigurieren und verwalten. Wenn Sie über Administratorberechtigungen verfügen und sich für das Apple-Programm zur Geräteregistrierung interessieren, erhalten Sie weitere Informationen unter [Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
+
+## <a name="set-up-your-ios-device"></a>Einrichten Ihres iOS-Geräts  
+Wenn Sie Ihr eigenes iOS-Gerät anstelle eines organisationseigenen Geräts verwenden, führen Sie die Schritte für [persönliche Geräte oder Bring Your Own Device](enroll-your-device-in-intune-ios.md) aus.  
 
 1. Schalten Sie Ihr iOS-Gerät ein. 
 2. Stellen Sie auf Ihrem Gerät eine WLAN-Verbindung her, nachdem Sie Ihre **Sprache** ausgewählt haben.
@@ -46,4 +56,4 @@ Das Programm zur Geräteregistrierung wird von Apple angeboten, um Unternehmen d
 6. Akzeptieren Sie die **Geschäftsbedingungen**, und entscheiden Sie, ob Sie Diagnoseinformationen an Apple senden möchten.
 7. Sobald Sie Ihre Registrierung abgeschlossen haben, fordert Ihr Gerät Sie möglicherweise dazu auf, weitere Aktionen auszuführen. Bei einigen dieser Schritte müssen Sie möglicherweise Ihr Kennwort eingeben, damit Sie auf E-Mails zugreifen können, oder einen Zugriffscode einrichten.
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61df998dae611eb7350fa144260780b5589afc61
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34762245"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347306"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
 
@@ -62,8 +62,8 @@ Nachdem Sie Intune in Ihrer Organisation eingerichtet haben, können Sie eine WI
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**.
-3. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Mobile Apps** aus.
-4. Wählen Sie auf dem Blatt **Mobile Apps** die Option **App-Schutzrichtlinien** aus.
+3. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Client-Apps** aus.
+4. Wählen Sie auf dem Blatt **Client-Apps** die Option **App-Schutzrichtlinien** aus.
 5. Klicken Sie auf **Richtlinie hinzufügen**, um das Blatt **Richtlinie hinzufügen** anzuzeigen.
 6. Fügen Sie die folgenden Werte hinzu:
     - **Name:** Geben Sie einen Namen (Pflichtfeld) für Ihre neue Richtlinie ein.
@@ -74,8 +74,8 @@ Nachdem Sie Intune in Ihrer Organisation eingerichtet haben, können Sie eine WI
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Hinzufügen von empfohlenen Apps zur Liste der geschützten Apps
 
-1. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Mobile Apps** aus.
-2. Wählen Sie auf dem Blatt **Mobile Apps** die Option **App-Schutzrichtlinien** aus.
+1. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Client-Apps** aus.
+2. Wählen Sie auf dem Blatt **Client-Apps** die Option **App-Schutzrichtlinien** aus.
 3. Wählen Sie auf dem Blatt **App-Schutzrichtlinien** die Richtlinie aus, die Sie ändern möchten. Das Blatt **Intune-App-Schutz** wird angezeigt.
 4. Wählen Sie auf dem Blatt **Intune-App-Schutz** die Option **Geschützte Apps** aus. Das Blatt **Geschützte Apps** wird geöffnet und zeigt alle Apps an, die bereits in der Liste für diese App-Schutzrichtlinie enthalten sind.
 5. Klicken Sie auf **Apps hinzufügen**. Die Informationen bei **Apps hinzufügen** zeigen eine gefilterte Liste von Apps. Mit der Liste im oberen Bereich des Blatts können Sie den Listenfilter ändern.
@@ -86,8 +86,8 @@ Nachdem Sie Intune in Ihrer Organisation eingerichtet haben, können Sie eine WI
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>Hinzufügen einer Store-App zur Liste der geschützten Apps
 
 **Hinzufügen eine Store-App**
-1. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Mobile Apps** aus.
-2. Wählen Sie auf dem Blatt **Mobile Apps** die Option **App-Schutzrichtlinien** aus.
+1. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Client-Apps** aus.
+2. Wählen Sie auf dem Blatt **Client-Apps** die Option **App-Schutzrichtlinien** aus.
 3. Wählen Sie auf dem Blatt **App-Schutzrichtlinien** die Richtlinie aus, die Sie ändern möchten. Das Blatt **Intune-App-Schutz** wird angezeigt.
 4. Wählen Sie auf dem Blatt **Intune-App-Schutz** die Option **Geschützte Apps** aus. Das Blatt **Geschützte Apps** wird geöffnet und zeigt alle Apps an, die bereits in der Liste für diese App-Schutzrichtlinie enthalten sind.
 5. Klicken Sie auf **Apps hinzufügen**. Die Informationen bei **Apps hinzufügen** zeigen eine gefilterte Liste von Apps. Mit der Liste im oberen Bereich des Blatts können Sie den Listenfilter ändern.
@@ -99,8 +99,8 @@ Nachdem Sie Intune in Ihrer Organisation eingerichtet haben, können Sie eine WI
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Hinzufügen einer Desktop-App zur Liste der geschützten Apps
 
 **So fügen Sie eine Desktop-App hinzu**
-1. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Mobile Apps** aus.
-2. Wählen Sie auf dem Blatt **Mobile Apps** die Option **App-Schutzrichtlinien** aus.
+1. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Client-Apps** aus.
+2. Wählen Sie auf dem Blatt **Client-Apps** die Option **App-Schutzrichtlinien** aus.
 3. Wählen Sie auf dem Blatt **App-Schutzrichtlinien** die Richtlinie aus, die Sie ändern möchten. Das Blatt **Intune-App-Schutz** wird angezeigt.
 4. Wählen Sie auf dem Blatt **Intune-App-Schutz** die Option **Geschützte Apps** aus. Das Blatt **Geschützte Apps** wird geöffnet und zeigt alle Apps an, die bereits in der Liste für diese App-Schutzrichtlinie enthalten sind.
 5. Klicken Sie auf **Apps hinzufügen**. Die Informationen bei **Apps hinzufügen** zeigen eine gefilterte Liste von Apps. Mit der Liste im oberen Bereich des Blatts können Sie den Listenfilter ändern.
@@ -116,8 +116,7 @@ Nachdem Sie die Apps hinzugefügt haben, die durch WIP geschützt werden sollen,
 
 WIP Learning ist ein Bericht, mit dem Sie Ihre WIP-tauglichen und WIP-unbekannten Apps überwachen können. Unbekannte Apps sind Apps, die nicht von der IT-Abteilung Ihrer Organisation bereitgestellt wurden. Sie können diese Apps vor der Erzwingung von WIP im Modus „Blockieren“ über den Bericht exportieren und zu Ihren WIP-Richtlinien hinzufügen, um Produktivitätseinbußen zu verhindern.
 
-<!-- 1631908 -->
-Neben der Anzeige von Informationen über WIP-fähige Apps können Sie eine Zusammenfassung der Geräte anzeigen, die Arbeitsdaten für Websites freigegeben haben. Anhand dieser Informationen können Sie festlegen, welche Websites zu WIP-Gruppen- und Benutzerrichtlinien hinzugefügt werden sollen. Die Zusammenfassung zeigt, auf welche Website-URLs von WIP-aktivierten Apps zugegriffen werden kann.
+<!-- 1631908 --> Neben der Anzeige von Informationen über WIP-fähige Apps können Sie eine Zusammenfassung der Geräte anzeigen, die Arbeitsdaten für Websites freigegeben haben. Anhand dieser Informationen können Sie festlegen, welche Websites zu WIP-Gruppen- und Benutzerrichtlinien hinzugefügt werden sollen. Die Zusammenfassung zeigt, auf welche Website-URLs von WIP-aktivierten Apps zugegriffen werden kann.
 
 Beim Arbeiten mit WIP-tauglichen und WIP-unbekannten Apps sollten Sie mit **Automatisch** oder **Außerkraftsetzungen zulassen** beginnen und bei einer kleinen Gruppe überprüfen, ob die Liste der geschützten Apps die richtigen Apps enthält. Wenn Sie fertig sind, können Sie Ihre endgültige Erzwingungsrichtlinie in **Blockieren** ändern.
 
@@ -149,7 +148,7 @@ Nachdem Sie WIP deaktiviert haben, wird versucht, WIP-getaggte Dateien auf den l
 
 1. Öffnen Sie das [Azure-Portal](https://portal.azure.com). Wählen Sie **Alle Dienste** aus. Geben Sie **Intune** in das Filtertextfeld ein.
 
-3. Klicken Sie auf **Intune** > **Mobile Apps**.
+3. Wählen Sie **Intune** > **Client-Apps** aus.
 
 4. Klicken Sie anschließend auf **Status des App-Schutzes** > **Berichte** > **Windows Information Protection-Tutorial**.  
 

@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c3d0e31520aa2f73eabfce5ebc1d55d4df73946
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: d7207b84dacc47b567c0fc86c3215605965fda6d
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329925"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312797"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Häufig gestellte Fragen zu MAM und App-Schutz
 
@@ -112,10 +112,12 @@ Die PIN (Personal Identification Number) ist eine Kennung, mit der sichergestell
 
     - **Die PIN gilt für mehrere Apps des gleichen Herausgebers, um die Benutzerfreundlichkeit zu verbessern:** Unter iOS wird eine App-PIN für alle Apps **des gleichen Herausgebers** genutzt. Unter Android wird eine App-PIN für alle Apps genutzt.
     - **Das Verhalten „Zugriffsanforderungen erneut überprüfen nach (Minuten)“ nach dem Neustart eines Geräts:** Ein „PIN-Timer“ erfasst die Anzahl der inaktiven Minuten. Dadurch wird bestimmt, wann die PIN der Intune-App das nächste Mal angezeigt werden soll. Unter iOS hat ein Neustart des Geräts keine Auswirkung auf den PIN-Timer. Das bedeutet, dass ein Neustart des Geräts keine Auswirkung auf die Anzahl der inaktiven Minuten des Benutzers einer iOS-App mit der Intune-PIN-Richtlinie hat. Unter Android wird der PIN-Timer beim Neustart des Geräts zurückgesetzt. Deshalb fordern Android-Apps mit der Intune-PIN-Richtlinie den Benutzer wahrscheinlich unabhängig vom Wert der Einstellung „Zugriffsanforderungen erneut überprüfen nach (Minuten)“ nach dem **Neustart des Geräts** zur Eingabe einer PIN für die App auf.  
-    - **Die Natur des Zeitgebers, der mit der PIN verknüpft ist:** Wenn für den Zugriff auf eine App (App A) eine PIN eingegeben wurde und diese App nicht mehr im Vordergrund (Haupteingabefokus) ausgeführt wird, wird der PIN-Zeitgeber für diese PIN zurückgesetzt. Eine andere App (App B), für die die gleiche PIN gilt, fordert den Benutzer nicht zur PIN-Eingabe auf, weil der Zeitgeber zurückgesetzt wurde. Die Aufforderung wird wieder angezeigt, wenn der Wert für „Zugriffsanforderungen nach (Minuten) erneut überprüfen“ erneut erreicht wurde. 
+    - **Die Natur des Zeitgebers, der mit der PIN verknüpft ist:** Wenn für den Zugriff auf eine App (App A) eine PIN eingegeben wurde und diese App nicht mehr im Vordergrund (Haupteingabefokus) ausgeführt wird, wird der PIN-Zeitgeber für diese PIN zurückgesetzt. Eine andere App (App B), für die die gleiche PIN gilt, fordert den Benutzer nicht zur PIN-Eingabe auf, weil der Zeitgeber zurückgesetzt wurde. Die Aufforderung wird wieder angezeigt, wenn der Wert für „Zugriffsanforderungen nach (Minuten) erneut überprüfen“ erneut erreicht wurde.
+
+Selbst wenn die PIN auf iOS-Geräten unter Apps von verschiedenen Herausgebern freigegeben wird, wird die Eingabeaufforderung erneut angezeigt, wenn der Wert für **Zugriffsanforderungen nach (Minuten) erneut überprüfen** erneut für die App erreicht wird, die nicht über den Eingabefokus verfügt. Beispiel: Der Benutzer verfügt über die App _A_ von Herausgeber _X_ und über die App _B_ von Herausgeber _Y_, und für diese Apps wird die gleiche PIN verwendet. Der Benutzer verwendet App _A_ (im Vordergrund), und die App _B_ ist minimiert. Wenn der Wert für **Zugriffsanforderungen nach (Minuten) erneut überprüfen** erreicht wurde und der Benutzer zur App _B_ wechselt, ist eine PIN erforderlich.
 
       >[!NOTE] 
-      > Um die Zugriffsanforderungen des Benutzers (besonders bei häufig verwendeten Apps) öfter zu überprüfen (z. B. die PIN-Eingabeaufforderung), empfiehlt es sich, den Wert für die Einstellung „Zugriffsanforderungen nach (Minuten) erneut überprüfen“ zu senken. 
+      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
       
 - **Wie funktioniert die Intune-PIN mit integrierten App-PINs für Outlook und OneDrive?**<br></br>
 Die Funktionsweise der Intune-PIN basiert auf einem auf Inaktivität basiertem Timer (d.h. der Wert von „Zugriffsanforderungen erneut überprüfen nach (Minuten)“). Deshalb werden Aufforderungen zur Eingabe der Intune-PIN unabhängig von Aufforderungen zur Eingabe der integrierten App-PIN für Outlook und OneDrive, die standardmäßig beim Start der App angezeigt werden, angezeigt. Wenn der Benutzer gleichzeitig zur Eingabe beider PINs aufgefordert wird, sollte die Intune-PIN Vorrang haben. 
@@ -137,13 +139,13 @@ IT-Administratoren können eine App-Schutzrichtlinie bereitstellen, die erzwingt
 - **Was wird verschlüsselt?**<br></br> Nur Daten, die als „unternehmenseigen“ markiert sind, werden gemäß der vom IT-Administrator eingerichteten App-Schutzrichtlinie verschlüsselt. Daten werden als „unternehmenseigen“ betrachtet, wenn sie von einem Speicherort des Unternehmens stammen. Bei den Office-Apps betrachtet Intune Folgendes als Unternehmensspeicher: E-Mail-Speicher (Exchange) oder Cloudspeicher (OneDrive-App mit einem OneDrive for Business-Konto). Bei Branchen-Apps, die vom Intune App Wrapping Tools verwaltet werden, werden alle App-Daten als „unternehmenseigen“ betrachtet.
 
 **Wie setzt Intune Daten remote zurück?**<br></br>
-Intune kann App-Daten auf drei Arten zurücksetzen: vollständiges Zurücksetzen des Geräts, selektives Zurücksetzen für MDM und selektives Zurücksetzen für MAM. Weitere Informationen zum Remotezurücksetzen für MDM finden Sie unter [Entfernen von Geräten mithilfe der Zurücksetzung auf Werkseinstellungen oder dem Entfernen von Unternehmensdaten](devices-wipe.md#factory-reset). Weitere Informationen zum selektiven Zurücksetzen mit MAM finden Sie unter [Entfernen von Unternehmensdaten](devices-wipe.md#remove-company-data) und [So setzen Sie nur die Unternehmensdaten in einer App zurück](apps-selective-wipe.md).
+Intune kann App-Daten auf drei Arten zurücksetzen: vollständiges Zurücksetzen des Geräts, selektives Zurücksetzen für MDM und selektives Zurücksetzen für MAM. Weitere Informationen zur Remotezurücksetzung der MDM finden Sie unter [Entfernen von Geräten durch Zurücksetzen oder Abkoppeln](devices-wipe.md). Weitere Informationen zum selektiven Zurücksetzen mit MAM finden Sie unter [the Retire action (Die Aktion „Abkoppeln“)](devices-wipe.md#retire) und [Zurücksetzen von Unternehmensdaten in Apps](apps-selective-wipe.md).
 
-- **Was versteht man unter „Zurücksetzen auf Werkseinstellungen“?**<br></br> Beim [Zurücksetzen auf Werkseinstellungen](devices-wipe.md) werden alle Benutzerdaten und -einstellungen vom **Gerät** entfernt, indem das Gerät auf die werkseitigen Standardeinstellungen zurückgesetzt wird. Das Gerät wird aus Intune entfernt.
+- **Was ist Zurücksetzen?**<br></br> Beim [Zurücksetzen](devices-wipe.md) werden alle Benutzerdaten und -einstellungen vom **Gerät** entfernt, indem die werkseitigen Standardeinstellungen auf dem Gerät wiederhergestellt werden. Das Gerät wird aus Intune entfernt.
   >[!NOTE]
-  > Ein Zurücksetzen auf die Werkseinstellungen kann nur auf Geräten realisiert werden, die bei der Intune-Verwaltung mobiler Geräte (MDM) registriert sind.
+  > Die Zurücksetzung kann nur auf Geräten ausgeführt werden, die mit Intune-MDM registriert sind.
 
-- **Was ist selektives Zurücksetzen für MDM?**<br></br> Informationen zum Entfernen von Unternehmensdaten finden Sie unter [Entfernen von Geräten – Entfernen von Unternehmensdaten](devices-wipe.md#remove-company-data).
+- **Was ist selektives Zurücksetzen für MDM?**<br></br> Informationen zum Entfernen von Unternehmensdaten finden Sie unter [Remove devices - retire (Entfernen von Geräten: Abkoppeln)](devices-wipe.md#retire).
 
 - **Was ist selektives Zurücksetzen für MAM?**<br></br> Durch selektives Zurücksetzen für MAM können Unternehmensanwendungsdaten von einer App entfernt werden. Die Anforderung wird mithilfe des Azure-Portals für Intune initiiert. Informationen zum Initiieren einer Zurücksetzungsanforderung finden Sie unter [So setzen Sie nur die Unternehmensdaten in einer App zurück](apps-selective-wipe.md).
 

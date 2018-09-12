@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f0c35caf841729aae8ce6ccdbf1c9709258a8f5b
-ms.sourcegitcommit: 2e08887c07d29979300e80e6a40372aec6287103
+ms.openlocfilehash: ab88c99694df95eeaf4b5529faec73dacd1a208c
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39249725"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241880"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
@@ -230,7 +230,7 @@ ContainingAppBundleId | Zeichenfolge | Gibt die Paket-ID der Anwendung an, die d
 DebugSettingsEnabled| Boolesch | Bei der Einstellung JA können innerhalb des Einstellungspakets Testrichtlinien angewendet werden. Diese Einstellungen sollte bei ausgelieferten Anwendungen *nicht* aktiviert sein. | (Optional) Standardwert lautet „no“ (Nein)|
 MainNibFile <br> MainNibFile~ipad  | Zeichenfolge  | Diese Einstellung sollte den Namen der Haupt-NIB-Datei der Anwendung enthalten.  | Erforderlich, wenn MainNibFile für die Anwendung in der Datei „Info.plist“ definiert ist. |
 MainStoryboardFile <br> MainStoryboardFile~ipad  | Zeichenfolge  | Diese Einstellung sollte den Namen der Haupt-Storyboard-Datei der Anwendung enthalten. | Erforderlich, wenn UIMainStoryboardFile für die Anwendung in der Datei „Info.plist“ definiert ist. |
-MAMPolicyRequired| Boolesch| Gibt an, ob das Starten der App blockiert wird, wenn die App über keine Intune APP-Richtlinie verfügt. Standardwert ist "NO". <br><br> Hinweis: Apps, bei denen die Einstellung „MAMPolicyRequired“ auf „YES“ (JA) festgelegt ist, können nicht im App Store eingereicht werden. | (Optional) Standardwert lautet „no“ (Nein)|
+MAMPolicyRequired| Boolesch| Gibt an, ob das Starten der App blockiert wird, wenn die App über keine Intune APP-Richtlinie verfügt. Standardwert ist "NO". <br><br> Hinweis: Apps, bei denen die Einstellung „MAMPolicyRequired“ auf „YES“ festgelegt ist, können nicht im App Store eingereicht werden. | (Optional) Standardwert lautet „no“ (Nein)|
 MAMPolicyWarnAbsent | Boolesch| Gibt an, ob die App den Benutzer beim Starten warnt, wenn die App über keine Intune APP-Richtlinie verfügt. <br><br> Hinweis: Benutzer dürfen noch immer die App ohne Richtlinie verwenden, nachdem die Warnung verworfen wurde. | (Optional) Standardwert lautet „no“ (Nein) |
 MultiIdentity | Boolesch| Gibt an, ob die App den Umgang mit mehreren Identitäten beherrscht. | (Optional) Standardwert lautet „no“ (Nein) |
 SplashIconFile <br> SplashIconFile~ipad | Zeichenfolge  | Gibt die Datei für das Intune-Begrüßungssymbol (Startsymbol) an. | (Optional) |
@@ -465,7 +465,7 @@ Ab Version 8.0.2 kann das Intune App SDK `UIActivityViewController`-Aktionen fil
 
 ### <a name="copy-to-actions"></a>„Kopieren in“-Aktionen
 
-Beim Freigeben von Dokumenten über `UIActivityViewController` und `UIDocumentInteractionController` zeigt iOS „Kopieren in“-Aktionen für jede Anwendung an, die das Öffnen des freigegeben Dokuments unterstützt. Anwendungen deklarieren die Dokumenttypen, die sie unterstützen, durch die `CFBundleDocumentTypes`-Einstellung in ihrer Datei „Info.plist“. Diese Art der Freigabe ist nicht mehr verfügbar, wenn die Richtlinie die Freigabe für nicht verwaltete Anwendungen untersagt. Als Ersatz muss der Anwendung eine Nicht-Benutzeroberflächen-Aktionserweiterung hinzugefügt werden. Außerdem muss sie mit dem Intune APP SDK für iOS verknüpft werden. Die Aktionserweiterung ist nur ein Stub. Das SDK implementiert das Dateifreigabeverhalten. Führen Sie diese Schritte aus:
+Beim Freigeben von Dokumenten über `UIActivityViewController` und `UIDocumentInteractionController` zeigt iOS „Kopieren in“-Aktionen für jede Anwendung an, die das Öffnen des freigegeben Dokuments unterstützt. Anwendungen deklarieren die Dokumenttypen, die sie unterstützen, durch die `CFBundleDocumentTypes`-Einstellung in ihrer Datei „Info.plist“. Diese Art der Freigabe ist nicht mehr verfügbar, wenn die Richtlinie die Freigabe für nicht verwaltete Anwendungen untersagt. Als Ersatz muss der Benutzer eine Nicht-Benutzeroberflächen-Aktionserweiterung zur Anwendung hinzufügen. Außerdem muss sie mit dem Intune APP SDK für iOS verknüpft werden. Die Aktionserweiterung ist nur ein Stub. Das SDK implementiert das Dateifreigabeverhalten. Führen Sie diese Schritte aus:
 
 1. Für die Anwendung muss unter `CFBundleURLTypes` in der Datei „Info.plist“ mindestens eine schemeURL definiert sein.
 

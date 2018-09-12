@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117921"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313177"
 ---
 # <a name="see-device-details-in-intune"></a>Anzeigen von Gerätedetails in Intune
 
@@ -34,11 +34,14 @@ Dieser Artikel erläutert, wie Sie all Ihre Geräte und deren Eigenschaften im A
 2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
 3. Klicken Sie auf **Geräte** > **Alle Geräte**, und wählen Sie anschließend eins der aufgeführten Geräte aus, damit dessen Gerätedetails geöffnet werden:
 
-   - In der **Übersicht** wird der Gerätename angezeigt, und es sind einige der Schlüsseleigenschaften des Geräts aufgeführt. Sie erfahren also z.B., ob es sich um ein Bring Your Own Device-Gerät (BYOD) handelt, wann es eingecheckt hat usw. Wählen Sie **Mehr** auf, um folgende Möglichkeiten zu erhalten:
-     - Entfernen von Unternehmensdaten
-     - Löschen des Geräts
-     - Sperren des Geräts über eine Remotesperre
-     - Löschen
+   - In der **Übersicht** wird der Gerätename angezeigt, und es sind einige der Schlüsseleigenschaften des Geräts aufgeführt. Sie erfahren also z.B., ob es sich um ein Bring Your Own Device-Gerät (BYOD) handelt, wann es eingecheckt hat usw. Sie können folgende Aktionen auf dem Gerät ausführen:
+      - [Außerkraftsetzen](devices-wipe.md#retire)
+        - [Zurücksetzen](devices-wipe.md#wipe)
+        - [Remotesperre](device-remote-lock.md)
+        - [Synchronisieren von Geräten](device-sync.md)
+        - [Kennung zurücksetzen](device-passcode-reset.md)
+        - [Neu starten](device-restart.md) (nur Windows)
+        - [Sauberer Start](device-fresh-start.md) (nur Windows)
      - Starten einer Remoteunterstützungssitzung
    - Verwenden Sie die **Eigenschaften**, um eine [von Ihnen erstellte Gerätekategorie](device-group-mapping.md) zuzuweisen, und ändern Sie den Besitz des Geräts in ein privates oder ein unternehmenseigenes Gerät.
    - Der Bereich **Hardware** umfasst einige Details zu dem Gerät, einschließlich der Geräte-ID, dem Betriebssystem und der Betriebssystemversion, dem Speicherplatz, dem Modell und dem Hersteller, Einstellungen für bedingten Zugriff etc.

@@ -1,11 +1,11 @@
 ---
-title: Vorgehen gegen von Zimperium zIPS erkannte Bedrohungen unter Android | Microsoft-Dokumentation
-description: Erfahren Sie, wie Sie gegen Bedrohungen vorgehen können, die auf Ihrem Android-Gerät gefunden wurden.
+title: Vorgehen gegen von Zimperium zIPS erkannte Bedrohungen unter Android
+description: Erfahren Sie, wie Sie gegen Sicherheits- und App-Bedrohungen vorgehen können, die auf Ihrem Android-Gerät gefunden wurden.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,40 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 081554df0deca0935c32ddef0b26004c4fd2d82f
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 6c6e31ce5c3f5f988a6c4b4ff4be71bfd5e0dd80
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755316"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148057"
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-zimperium-zips"></a>Gehen Sie gegen eine von Zimperium zIPS erkannte Bedrohung vor
+# <a name="resolve-a-threat-found-by-zimperium-zips"></a>Auflösen einer von Zimperium zIPS erkannten Bedrohung
 
-Zimperium zIPS hat eine potenzielle Bedrohung auf Ihrem Gerät erkannt, und Sie müssen das Problem beheben, um wieder Zugriff auf die E-Mails, Apps und Dateien Ihres Unternehmens, Ihrer Schule oder Ihrer Universität zu erhalten. Welche Nachricht Ihnen angezeigt wird, hängt von dem Problem ab, das Zimperium zIPS auf Ihrem Gerät erkannt hat.
+Zimperium zIPS ist ein Mobile Threat Defender-Dienst, der potenzielle Bedrohungen auf Ihren Android-Geräten identifiziert. Diese Bedrohungen werden in der Unternehmensportal-App als ungelöste Probleme angezeigt, die auf fehlende Konformität hinweisen. Wenn Ihr Gerät als nicht konform identifiziert wurde, können Sie folgende Aktionen möglicherweise nicht ausführen:
 
-Öffnen Sie die Zimperium zIPS-App, und folgen Sie den Anweisungen in der App, um das Problem zu beheben.
+* Herstellen einer Verbindung mit Unternehmens-E-Mail
+* Herstellen einer Verbindung mit Unternehmens-WLAN
+* Herstellen einer Verbindung mit SharePoint Online
+* Synchronisieren von Unternehmensdateien mit OneDrive
+* Zugreifen auf Unternehmens-Apps
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Was möglicherweise angezeigt wird, wenn der Zugriff des registrierten Geräts auf E-Mail oder Dateien gesperrt ist
+In diesem Artikel wird beschrieben, wie Zimperium zIPS-Benachrichtigungen zu Bedrohungen zu verstehen sind und wie diese gelöst werden können. 
 
-Wenn ein Virus oder eine andere Sicherheitsbedrohung auf Ihrem registrierten Gerät besteht und Sie versuchen, auf Unternehmens-E-Mails oder -dateien zuzugreifen, erhalten Sie eine Warnung von Zimperium zIPS.
+## <a name="troubleshoot-virus-or-security-threat"></a>Problembehandlung bei Viren- oder Sicherheitsbedrohungen  
+Wenn eine Viren- oder Sicherheitsbedrohung erkannt wird, erzwingt Zimperium zIPS Einschränkungen gemäß den Zugriffsrichtlinien Ihrer Organisation. Die Zugriffsrichtlinien Ihres Unternehmens können Sie am Zugriff auf das Netzwerk, die Apps und die E-Mails über Ihr Gerät hindern, die Sie für Ihre Arbeit benötigen.  
 
-Tippen Sie auf den Link **Portal für die Geräteverwaltung**, um zur [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) zu gelangen, auf der Sie den Anweisungen zur Behebung des Problems folgen können.
+Zimperium zIPS fordert Sie dazu auf, Maßnahmen zu ergreifen, um den verlorenen Zugriff zurückzuerlangen. Wählen Sie die Bedrohung aus, und führen Sie zur Problembehebung die Anweisungen in der App aus.
 
-## <a name="example-of-an-app-that-zimperium-zips-sees-as-a-threat"></a>Beispiel für eine App, die Zimperium zIPS als Bedrohung ansieht
+Da die App in den MDM-Anbieter Ihres Unternehmens integriert ist, wird auch eine Warnung über den eingeschränkten Zugriff in der Unternehmensportal-App angezeigt. In der Warnmeldung werden Sie aufgefordert, Zimperium zIPS zu öffnen, um die Viren- bzw. Sicherheitsbedrohung zu beheben.  
 
-Wenn Sie eine App installiert haben, die Zimperium zIPS als Bedrohung einstuft, weist Sie die App darauf hin, dass eine nicht vertrauenswürdige App auf Ihrem Gerät installiert wurde.
+  ![Beispielscreenshot der Geräteseite des Unternehmensportals, auf der die Zimperium zIPS-Warnung angezeigt wird.](./media/CP-lookout-virus-banner-1808.png)  
 
-In diesem Fall deinstallieren Sie die App, um sofort wieder Zugriff auf Ihre Unternehmens-E-Mails und -daten zu erhalten. Wenn Sie die App nicht deinstallieren, haben Sie solange keinen Zugriff auf E-Mails und Daten, bis Sie die App deinstallieren.
+Klicken Sie auf das Warnbanner, das unter dem betroffenen Gerät angezeigt wird. Zimperium zIPS wird geöffnet und erteilt Ihnen Anweisungen zum Auflösen der Bedrohung.  
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an Ihren IT-Administrator. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+## <a name="resolve-an-app-threat"></a>Auflösen einer App-Bedrohung
+
+Wenn Sie eine App installieren, die als Bedrohung für Ihr Gerät angesehen wird, erhalten Sie eine Benachrichtigung in Zimperium zIPS. Solange die betroffene App auf Ihrem Gerät verbleibt, können Sie nicht auf Unternehmensressourcen zugreifen.  
+
+Zum Auflösen der Warnung wählen Sie die App in der Liste der Bedrohungen in Zimperium zIPS aus. Führen Sie dann die angezeigten Anweisungen aus, um die App zu entfernen und zu deinstallieren.    
+
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980). 

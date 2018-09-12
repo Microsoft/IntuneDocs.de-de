@@ -1,11 +1,11 @@
 ---
-title: Auflösen von durch SandBlast Mobile Protect erkannte Bedrohungen unter Android | Microsoft-Dokumentation
-description: Erfahren Sie, wie Sie gegen Bedrohungen vorgehen können, die von Mobile Protect unter Android gefunden wurden.
+title: Auflösen von durch SandBlast Mobile Protect erkannte Bedrohungen für Android | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie eine Bedrohung auflösen, die auf Ihrem Android-Gerät von der SandBlast Mobile Protect-App gefunden wurde.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/25/2017
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,29 +15,40 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 3413ebed27bc11c88616c4c2f07d5cf182ccf1f0
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: be3f728a4f2764a0c2494686c943cdfb43b32bd2
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30753718"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147554"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Beheben einer von SandBlast Mobile Protect erkannten Bedrohung
 
-SandBlast Mobile Protect hat eine potenzielle Bedrohung auf Ihrem Android-Gerät erkannt, und Sie müssen das Problem beheben, um wieder Zugriff auf die E-Mails, Apps und Dateien Ihres Unternehmens, Ihrer Schule oder Ihrer Uni zu erhalten. Die Nachricht, die Sie Ihnen angezeigt wird, hängt von dem Problem ab, das SandBlast Mobile Protect auf Ihrem Gerät erkannt hat.
+SandBlast Mobile Protect ist ein Mobile Threat Defender-Dienst, der potenzielle Bedrohungen auf Ihren Android-Geräten identifiziert. Er meldet Bedrohungen, die Sie dann in der Unternehmensportal-App anzeigen können. Bedrohungen werden in der App als ungelöste Probleme angezeigt, die auf eine Inkompatibilität hinweisen. Solange diese Bedrohungen vorhanden sind, können Sie folgende Aktionen möglicherweise nicht ausführen:   
 
-Um das Problem zu beheben, öffnen Sie die SandBlast Mobile Protect-App, und folgen Sie den in der App angezeigten Anweisungen.
+* Herstellen einer Verbindung mit Unternehmens-E-Mail
+* Herstellen einer Verbindung mit Unternehmens-WLAN
+* Herstellen einer Verbindung mit SharePoint Online
+* Synchronisieren von Unternehmensdateien mit OneDrive
+* Zugreifen auf Unternehmens-Apps
 
-## <a name="what-you-might-see-if-your-enrolled-device-is-blocked-from-accessing-email-or-files"></a>Was möglicherweise angezeigt wird, wenn der Zugriff des registrierten Geräts auf E-Mail oder Dateien gesperrt ist
+Dieser Artikel beschreibt, wie Sandblast Mobile Protect-Benachrichtigungen zu Bedrohungen zu verstehen sind und wie diese gelöst werden können.  
 
-Wenn ein Virus oder eine andere Sicherheitsbedrohung auf dem registrierten Gerät vorhanden ist und Sie versuchen, auf Unternehmens-E-Mails oder -dateien zuzugreifen, erhalten Sie eine Warnung von SandBlast Mobile Protect.
+## <a name="troubleshoot-virus-or-security-threat"></a>Problembehandlung bei Viren- oder Sicherheitsbedrohungen  
+Wenn eine Viren- oder Sicherheitsbedrohung erkannt wird, verfährt die SandBlast Mobile Protect-App gemäß den Zugriffsrichtlinien Ihrer Organisation. Die Zugriffsrichtlinien Ihres Unternehmens könnten Sie am Zugriff auf das Netzwerk, die Apps und die E-Mails hindern, die Sie für Ihre Arbeit benötigen.  
 
-Tippen Sie auf den Link **Portal für die Geräteverwaltung**, um zur [Unternehmensportalwebsite](https://portal.manage.microsoft.com#HelpDeskDialog) zu gelangen, auf der Sie den Anweisungen zur Behebung des Problems folgen können.
+![Beispielscreenshot einer Warnmeldung der SEP Mobile-App.](./media/skycure-list-of-potential-issues-android.png)  
 
-## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>Beispiel für eine App, die SandBlast Mobile Protect als Bedrohung einstuft
+SandBlast Mobile Protect fordert Sie jedoch auch dazu auf, Maßnahmen zu ergreifen, um den Zugang zu diesen Ressourcen wiederherzustellen. Wählen Sie die Bedrohung aus, und folgen Sie zur Problembehebung den Anweisungen in der App.
 
-Wenn Sie eine App installiert haben, die SandBlast Mobile Protect als Bedrohung einstuft, weist Sie die App darauf hin, dass eine nicht vertrauenswürdige App auf Ihrem Gerät installiert wurde.
+Da die App in den MDM-Anbieter Ihres Unternehmens integriert ist, wird auch eine Warnung über den eingeschränkten Zugriff in der Unternehmensportal-App angezeigt. In der Warnmeldung werden Sie aufgefordert, Sandblast Mobile Protect zu öffnen, um die Viren- bzw. Sicherheitsbedrohung zu beheben.
 
-In diesem Fall deinstallieren Sie die App, um sofort wieder Zugriff auf Ihre Unternehmens-E-Mails und -daten zu erhalten. Wenn Sie die App nicht deinstallieren, haben Sie solange keinen Zugriff auf E-Mails und Daten, bis Sie die App deinstallieren.
+  ![Beispielscreenshot der Geräteseite des Unternehmensportals, auf der die SandBlast Mobile Protect-Warnung angezeigt wird.](./media/CP-lookout-virus-banner-1808.png)  
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://portal.manage.microsoft.com#HelpDeskDialog).
+## <a name="troubleshoot-an-app-threat"></a>Problembehandlung bei einer App-Bedrohung  
+
+Wenn Sie eine App installieren, die als Bedrohung für Ihr Gerät angesehen wird, erhalten Sie eine Benachrichtigung in SandBlast Mobile Protect. Solange die betroffene App auf Ihrem Gerät verbleibt, können Sie nicht auf Unternehmensressourcen zugreifen.  
+
+Zum Auflösen der Warnung wählen Sie die App in der Liste der Bedrohungen in SandBlast Mobile Protect aus. Folgen Sie dann den Anweisungen, um die App zu entfernen und zu deinstallieren.     
+
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

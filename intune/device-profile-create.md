@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a9fb84fd15eb68f007e820e473dd9edf55b37777
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 7195b9d2d64c2282f2380624a209ad45220d3a4f
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905018"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313937"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Erstellen eines Geräteprofils in Microsoft Intune
 
@@ -50,6 +50,7 @@ ms.locfileid: "37905018"
        -  [Gerätefeatures](device-features-configure.md)
        -  [Geräteeinschränkungen](device-restrictions-configure.md)
        -  [Endpoint Protection](endpoint-protection-configure.md)
+       -  [Identity Protection](identity-protection-configure.md)  
        -  [Kiosk](kiosk-settings.md)
        -  [E-Mail](email-settings-configure.md)
        -  [VPN](vpn-settings-configure.md)

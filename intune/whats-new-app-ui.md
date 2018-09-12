@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/29/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,22 +15,42 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9180bf70c114a9bb1f034b51ee3a3d96bef253fa
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: 9f0140d532356a1ddb3f8acf19ea1dfaf6e85eb8
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279490"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347693"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Updates der Benutzeroberfläche für Endbenutzer-Apps in Intune
 Erfahren Sie, welche Updates an der Benutzeroberfläche für Apps vorgenommen wurden, die Ihre Endbenutzer in dieser Version von Microsoft Intune sehen. Wenn Sie Kenntnisse über diese Updates haben, können Sie die Benutzerkommunikation sowie alle aktualisierten Benutzerdokumentationen verbessern, die Sie zur Unterstützung der Bereitstellung erstellt haben. Es kann auch helfen, zu verstehen, wie Probleme behandelt werden, die auftauchen, wenn Benutzer den Helpdesk für den Support mithilfe des Unternehmensportals aufrufen.
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-august-27-2018"></a>Woche vom 27. August 2018  
+
+### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Neues Update zur Verbesserung der Benutzerfreundlichkeit der Unternehmensportalwebsite <!--2000968 -->  
+Die Unternehmensportal-Website wurde auf der Grundlage von Kundenfeedback um neue Features ergänzt. Sie werden eine erhebliche Verbesserung der vorhandenen Funktionen und Benutzerfreundlichkeit Ihrer Geräte feststellen können. Bestimmte Bereiche der Website – &ndash;z.B. Gerätedetails, Feedback und Support sowie die Geräteübersicht&ndash; – wurden mit einem neuen, modernen und dynamischen Design ausgestattet. Die [Dokumentation zur Intune-Unternehmensportalwebsite](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website) wurde entsprechend dieser Änderungen aktualisiert.   
+
+Folgende Updates werden Sie bemerken:  
+
+- optimierte Workflows auf allen Geräteplattformen
+- eine verbesserte Geräteidentifikation und optimierte Registrierungsworkflows
+- aussagekräftigere Fehlermeldungen
+- eine benutzerfreundlichere Sprache und weniger Fachbegriffe
+- Möglichkeit, direkte Links zu Apps zu teilen
+- Verbesserte Leistung bei großen App-Katalogen
+- verbesserte Barrierefreiheit für alle Benutzer  
+
+|Aktualisiert|Zurück|
+|---|---|
+|![Auf der aktualisierten Geräteseite wird das Gerät auf die Geräteinformationen ausgerichtet und wird nicht mehr oberhalb der vollständigen Liste angezeigt.](./media/iwp-device-after-1803.png)|![Die Vorgängerversion der Geräteseite.](./media/iwp-device-before-1803.png)|
+|![Auf der aktualisierten Seite zur App-Installation wird die App oberhalb einer Beschreibung und verschiedener Informationen zur Installation angezeigt. Dies umfasst ein Veröffentlichungsdatum, eine Version und einen App-Typ.](./media/iwp-app-install-after-1803.png)|![Die Vorgängerversion der Seite zur App-Installation.](./media/iwp-app-install-before-1803.png)|  
+
 ## <a name="week-of-july-16-2018"></a>Woche vom 16. Juli 2018  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Weitere Synchronisierungsoptionen in der Unternehmensportal-App für Windows   
-Mit der Unternehmensportal-App für Windows können Sie nun direkt über die Windows-Taskleiste und das Startmenü eine Synchronisierung starten. Dieses Feature ist besonders hilfreich, wenn Sie nur Geräte synchronisieren müssen und Zugriff auf Unternehmensressourcen benötigen. Klicken Sie mit der rechten Maustaste auf das Unternehmensportalsymbol, das an die Taskleiste oder das Startmenü angeheftet ist, um das neue Feature zu verwenden. Klicken Sie in den Menüoptionen (auch als Sprungliste bezeichnet) auf **Dieses Gerät synchronisieren**. Die Unternehmensportal-App wird geöffnet und zeigt die Seite **Einstellungen** an. Außerdem wird die Synchronisierung gestartet.  
+Mit der Unternehmensportal-App für Windows können Sie nun direkt über die Windows-Taskleiste und das Startmenü eine Synchronisierung starten. Dieses Feature ist besonders hilfreich, wenn Sie nur Geräte synchronisieren und auf Unternehmensressourcen zugreifen müssen. Klicken Sie mit der rechten Maustaste auf das Unternehmensportalsymbol, das an die Taskleiste oder das Startmenü angeheftet ist, um das neue Feature zu verwenden. Klicken Sie in den Menüoptionen (auch als Sprungliste bezeichnet) auf **Dieses Gerät synchronisieren**. Die Unternehmensportal-App wird geöffnet und zeigt die Seite **Einstellungen** an. Außerdem wird die Synchronisierung gestartet.  
 
 ![Screenshot der Windows-Taskleiste auf dem Desktop eines Geräts Es wurde auf das Symbol der Unternehmensportal-App geklickt, um ein Menü mit den Optionen „An Taskleiste anheften“, „Fenster schließen“ und „Dieses Gerät synchronisieren“ anzuzeigen.](./media/sync-device-from-start-menu-1807.png)  
 
@@ -42,7 +62,7 @@ Auf der Seite **Apps** können Sie sich in der Ansicht **Installiert** Details z
 
 Beispielscreenshot der Ansicht „Kacheln“:  
  
-![Screenshot der Intune-Unternehmensportal-App für Windows, die die installierten Apps in der Kachelansicht anzeigt](/intune/media/tiles-installed-view-cpapp-1807.png)  
+![Screenshot der Intune-Unternehmensportal-App für Windows mit den installierten Apps in der Kachelansicht](/intune/media/tiles-installed-view-cpapp-1807.png)  
 
 Beispielscreenshot der Ansicht „Details“:  
 
@@ -112,7 +132,7 @@ Wenn Sie [Gerätegruppenzuordnung](device-group-mapping.md) aktiviert haben, fü
 Der Workflow für die Geräteinstallation in der Unternehmensportal-App unter iOS wurde verbessert. Die Sprache ist nun benutzerfreundlicher. Zudem haben wir Bildschirme nach Möglichkeit zusammengefasst. Zudem haben wir die Sprache speziell für Ihr Unternehmen angepasst, indem der Name Ihres Unternehmens im gesamten Setuptext verwendet wird.
 
 > [!NOTE]
-> Wir verwenden den Unternehmensnamen, den Sie im Azure-Portal unter **Microsoft Intune** > **Mobile Apps** > **Branding des Unternehmensportals** > **Unternehmensname** festgelegt haben. Wenn Sie diesen Wert nicht festgelegt haben, verwenden wir den Namen des Mandanten, der unter **Azure Active Directory** > **Eigenschaften** > **Name** festgelegt wurde. Wenn Sie im Branding des Unternehmensportals keinen Unternehmensnamen festgelegt haben und nicht möchten, dass der Mandantennamen angezeigt wird, empfiehlt es sich, den Unternehmensnamen auf der Registerkarte „Branding des Unternehmensportals“ festzulegen. Wenn Sie nicht möchten, dass diese Zeichenfolge in der Kopfzeile im Unternehmensportal angezeigt wird, können Sie das Kontrollkästchen „Unternehmensnamen neben Logo anzeigen“ deaktivieren.
+> Wir verwenden den Unternehmensnamen, den Sie im Azure-Portal unter **Microsoft Intune** > **Client-Apps** > **Branding des Unternehmensportals** > **Unternehmensname** festgelegt haben. Wenn Sie diesen Wert nicht festgelegt haben, verwenden wir den Namen des Mandanten, der unter **Azure Active Directory** > **Eigenschaften** > **Name** festgelegt wurde. Wenn Sie im Branding des Unternehmensportals keinen Unternehmensnamen festgelegt haben und nicht möchten, dass der Mandantennamen angezeigt wird, empfiehlt es sich, den Unternehmensnamen auf der Registerkarte „Branding des Unternehmensportals“ festzulegen. Wenn Sie nicht möchten, dass diese Zeichenfolge in der Kopfzeile im Unternehmensportal angezeigt wird, können Sie das Kontrollkästchen „Unternehmensnamen neben Logo anzeigen“ deaktivieren.
 
 |Vorher|Danach|
 |---|---|
@@ -458,12 +478,7 @@ Es wurden auf der Grundlage von Feedback von Kunden wie Ihnen neue Features hinz
 -   Möglichkeit, direkte Links zu Apps zu teilen
 - Verbesserte Leistung bei großen App-Katalogen
 
-Sie müssen nichts tun, um sich auf diese Änderungen vorzubereiten. Sie werden informiert, sobald die aktualisierte Unternehmensportalwebsite für Sie verfügbar gemacht wird. Es kann jedoch sein, dass Sie danach die Dokumentation für die Endbenutzer aktualisieren und neue Screenshots hinzufügen müssen. Beachten Sie außerdem, dass Sie möglicherweise die Dokumentation für die Unternehmensportal-App unter iOS aktualisieren müssen, da die Website auf dem Abschnitt **Apps** der iOS-App basiert.
-
-|Aktualisiert|Zurück|
-|---|---|
-|![Auf der aktualisierten Geräteseite wird das Gerät auf die Geräteinformationen ausgerichtet und wird nicht mehr oberhalb der vollständigen Liste angezeigt.](./media/iwp-device-after-1803.png)|![Die Vorgängerversion der Geräteseite.](./media/iwp-device-before-1803.png)|
-|![Auf der aktualisierten Seite zur App-Installation wird die App oberhalb einer Beschreibung und verschiedener Informationen zur Installation angezeigt. Dies umfasst ein Veröffentlichungsdatum, eine Version und einen App-Typ.](./media/iwp-app-install-after-1803.png)|![Die Vorgängerversion der Seite zur App-Installation.](./media/iwp-app-install-before-1803.png)|
+Sie müssen nichts tun, um sich auf diese Änderungen vorzubereiten. Sie werden informiert, sobald die aktualisierte Unternehmensportalwebsite für Sie verfügbar gemacht wird. Es kann jedoch sein, dass Sie danach die Dokumentation für die Endbenutzer aktualisieren und neue Screenshots hinzufügen müssen. Beachten Sie außerdem, dass Sie möglicherweise die Dokumentation für die Unternehmensportal-App unter iOS aktualisieren müssen, da die Website auf dem Abschnitt **Apps** der iOS-App basiert.  
 
 ### <a name="ui-updates-to-the-company-portal-website---1313244-part-2--"></a>Updates für die Benutzeroberfläche der Unternehmensportal-Website<!--1313244 part 2-->
 

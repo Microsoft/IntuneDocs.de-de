@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f6532c63612b806f9824f5b9ca98f1ebbbc943f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321662"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329646"
 ---
-## <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>WLAN-Einstellungen für Geräte mit Windows 10 und höher in Intune
+# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>WLAN-Einstellungen für Geräte mit Windows 10 und höher in Intune
 
 WLAN-Einstellungen werden in einem Konfigurationsprofil verwendet, das auf Geräte mit Windows 10 und höher angewendet wird. Diese Optionen umfassen Folgendes:
 
@@ -54,7 +55,7 @@ WLAN-Einstellungen werden in einem Konfigurationsprofil verwendet, das auf Gerä
 
 ## <a name="settings-for-enterprise-profiles-only"></a>Einstellungen für Enterprise-Profile
 
-- **Einmaliges Anmelden (SSO)**: Mit dieser Einstellung können Sie SSO konfigurieren. Dabei werden Anmeldeinformationen sowohl für Anmeldungen an einem Computer als auch bei Anmeldungen bei einem WLAN-Netzwerk verwendet. Folgende Optionen sind verfügbar:
+- **Einmaliges Anmelden (SSO):** Mit dieser Einstellung können Sie SSO konfigurieren. Dabei werden Anmeldeinformationen sowohl für Anmeldungen an einem Computer als auch bei Anmeldungen bei einem WLAN-Netzwerk verwendet. Folgende Optionen sind verfügbar:
   - **Deaktivieren**: Deaktiviert SSO. Der Benutzer muss sich in einem zusätzlichen Schritt beim Netzwerk authentifizieren.
   - **Enable before user signs into device** (Aktivieren, bevor sich Benutzer beim Gerät anmeldet): Verwenden Sie SSO, um eine Authentifizierung beim Netzwerk durchzuführen, bevor der Benutzer sich anmeldet.
   - **Enable after user signs into device** (Aktivieren, nachdem Benutzer sich beim Gerät angemeldet hat): Verwenden Sie SSO, um eine Authentifizierung beim Netzwerk durchzuführen, nachdem der Benutzer sich angemeldet hat.
@@ -77,25 +78,36 @@ WLAN-Einstellungen werden in einem Konfigurationsprofil verwendet, das auf Gerä
   - **EAP-TTLS**
   - **Geschütztes EAP** (PEAP)
 
-### <a name="more-options-when-you-choose-the-eap-type"></a>Weitere Optionen beim Auswählen des EAP-Typs
+    **Weitere Einstellungen für EAP-TLS, EAP-TTLS und PEAP:**
+    
+    > [!NOTE]
+    > Aktuell werden beim Verwenden des EAP-Typs nur SCEP-Zertifikatprofile unterstützt. PKCS-Zertifikatprofile werden nicht unterstützt. Wenn der Benutzer zur Angabe des Zertifikats aufgefordert wird, muss sichergestellt werden, dass das SCEP-Zertifikat ausgewählt wird.
 
-> [!NOTE]
-> Aktuell werden beim Verwenden des EAP-Typs nur SCEP-Zertifikatprofile unterstützt. PKCS-Zertifikatprofile werden nicht unterstützt. Wenn der Benutzer zur Angabe des Zertifikats aufgefordert wird, muss sichergestellt werden, dass das SCEP-Zertifikat ausgewählt wird.
+      - **Serververtrauensstellung**  
 
-#### <a name="server-trust"></a>Serververtrauensstellung
+        **Zertifikatservernamen:** Verwenden Sie diese Option mit den EAP-Typen **EAP-TLS**, **EAP-TTLS** oder **PEAP**. Geben Sie mindestens einen allgemeinen Namen ein, der in den von der vertrauenswürdigen Zertifizierungsstelle ausgestellten Zertifikaten verwendet wird. Wenn Sie diese Informationen eingeben, können Sie das Dialogfeld für dynamische Vertrauensstellungen umgehen, das auf Benutzergeräten bei der Verbindungsherstellung mit diesem WLAN angezeigt wird.  
 
-|Name der Einstellung|Weitere Informationen|Verwendungsgrund|
-|--------------|-------------|----------|
-|**Zertifikatservername(n)**|Geben Sie mindestens einen allgemeinen Namen ein, der in den von der vertrauenswürdigen Zertifizierungsstelle ausgestellten Zertifikaten verwendet wird. Wenn Sie diese Informationen eingeben, können Sie das Dialogfeld für dynamische Vertrauensstellungen umgehen, das auf Benutzergeräten bei der Verbindungsherstellung mit diesem WLAN angezeigt wird.|Der EAP-Typ ist **EAP-TLS**, **EAP-TTLS** oder **PEAP**.|
-|**Stammzertifikat zur Servervalidierung**|Wählen Sie das vertrauenswürdige Stammzertifikatprofil zur Authentifizierung der Verbindung aus. |Der EAP-Typ ist **EAP-TLS**, **EAP-TTLS** oder **PEAP**.|
-|**Identitätsschutz (äußere Identität)**|Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.|Der EAP-Typ ist **PEAP**.|
+        **Stammzertifikat zur Servervalidierung:** Verwenden Sie diese Option mit den EAP-Typen **EAP-TLS**, **EAP-TTLS** oder **PEAP**. Wählen Sie das vertrauenswürdige Stammzertifikatprofil zur Authentifizierung der Verbindung aus.  
 
-#### <a name="client-authentication"></a>Clientauthentifizierung
+        **Identitätsschutz (äußere Identität):** Verwenden Sie diese Option mit dem EAP-Typ **PEAP**. Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.  
 
-| Name der Einstellung | Weitere Informationen | Verwendungsgrund |
-|---|---|---|
-| **Clientzertifikat zur Clientauthentifizierung (Identitätszertifikat)** |  Wählen Sie das SCEP-Zertifikatprofil zur Authentifizierung der Verbindung aus. | Der EAP-Typ ist **EAP-TLS**. |
-| **Authentifizierungsmethode** | Wählen Sie die Authentifizierungsmethode für die Verbindung aus:<br><br>- **Zertifikate**: Wählen Sie das SCEP-Clientzertifikat aus, das dem Server als Identitätszertifikat vorgelegt wird.<br><br>- **Benutzername und Kennwort**: Geben Sie als Authentifizierungsmethode eine **Nicht-EAP-Methode (innere Identität)** an. Folgende Optionen sind verfügbar:<br><br>- **Unverschlüsseltes Kennwort (PAP)**<br>- **Challenge Handshake (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP, Version 2 (MS-CHAP v2)**<br><br>- **Identitätsschutz (äußere Identität)**: Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel. | Der EAP-Typ ist **EAP-TTLS**. |
+      - **Clientauthentifizierung**
+
+        **Clientzertifikat zur Clientauthentifizierung (Identitätszertifikat):** Verwenden Sie diese Option mit dem EAP-Typ **EAP-TLS**. Wählen Sie das Zertifikatprofil zur Authentifizierung der Verbindung aus.
+
+        **Authentifizierungsmethode:** Verwenden Sie diese Option mit dem EAP-Typ **EAP-TTLS**. Wählen Sie die Authentifizierungsmethode für die Verbindung aus:  
+
+          - **Zertifikate:** Wählen Sie das Clientzertifikat aus, das dem Server als Identitätszertifikat übermittelt wird.
+          - **Benutzername und Kennwort:** Geben Sie als Authentifizierungsmethode eine **Nicht-EAP-Methode (innere Identität)** an. Folgende Optionen sind verfügbar:
+
+            - **Unverschlüsseltes Kennwort (PAP)**
+            - **Challenge Handshake (CHAP)**
+            - **Microsoft CHAP (MS-CHAP)**
+            - **Microsoft CHAP, Version 2 (MS-CHAP v2)**
+
+        **Identitätsschutz (äußere Identität):** Verwenden Sie diese Option mit dem EAP-Typ **EAP-TTLS**. Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.
+
+- **FIPS-konformes (Federal Information Processing Standard) WLAN-Profil erzwingen:** Wählen Sie bei der Validierung des FIPS 140-2-Standards **Ja** aus. Dieser Standard ist für alle US-Bundesbehörden erforderlich, die Sicherheitssysteme verwenden, die auf Kryptografie basieren, um vertrauliche aber nicht klassifizierte Informationen digital zu speichern. Wählen Sie **Nein** aus, um nicht FIPS-konform zu sein.
 
 ## <a name="use-an-imported-settings-file"></a>Verwenden einer importierten Einstellungsdatei
 

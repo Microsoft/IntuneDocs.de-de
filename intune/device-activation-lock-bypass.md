@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
-ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
+ms.openlocfilehash: b37c210425fd5abf8fd0b0501966fef8196b451b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39356572"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312620"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Umgehen der Aktivierungssperre auf überwachten iOS-Geräten mit Intune
 
@@ -78,9 +78,9 @@ Die Intune-Remotegeräteaktion **Aktivierungssperre umgehen** entfernt die Aktiv
 6. Navigieren Sie zum Abschnitt „Hardware“, und kopieren Sie den Wert **Code zum Umgehen der Aktivierungssperre** unter **Bedingter Zugriff**.
 
     >[!NOTE]
-    >Kopieren Sie den Umgehungscode, bevor Sie das Gerät auf die Werkseinstellungen zurücksetzen. Wenn Sie die Geräteeinstellungen zurücksetzen, bevor Sie den Code kopieren, wird dieser aus Azure entfernt.
+    >Kopieren Sie den Umgehungscode, bevor Sie das Gerät zurücksetzen. Wenn Sie die Geräteeinstellungen zurücksetzen, bevor Sie den Code kopieren, wird dieser aus Azure entfernt.
 
-7.  Navigieren Sie zum Blatt **Geräteübersicht**, und klicken Sie auf **Zurücksetzung auf Werkseinstellungen**.
+7.  Navigieren Sie zum Blatt **Übersicht** des Geräts, und klicken Sie dann auf **Zurücksetzen**.
 8.  Nachdem das Gerät zurückgesetzt wurde, werden Sie aufgefordert, die *Apple-ID* und das *Kennwort* einzugeben. Lassen Sie das Feld *ID* leer, und geben Sie den **Umgehungscode** für das *Kennwort* ein. Dadurch wird das Konto von dem Gerät entfernt. 
 
 

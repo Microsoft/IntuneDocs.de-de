@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1aa88264ef277863f58d21baaa136c140c5c287
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949542"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329382"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Kiosk-Einstellungen für Android-Geräte in Intune
 
@@ -55,7 +55,7 @@ Führen Sie die folgenden Hauptschritte aus, um ein Android-Kioskgerät für meh
 
 1. Navigieren Sie zur [Seite der Managed Home Screen-App in Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise), und melden Sie sich mit dem gleichen Konto an, das Sie für andere Managed Google Play-Apps verwenden.
 2. Klicken Sie auf **Genehmigen**.
-3. Wechseln Sie zum [Intune-Portal](https://portal.azure.com), und klicken Sie auf **Mobile Apps** > **Verwaltetes Google Play** > **Synchronisieren**.
+3. Wechseln Sie zum [Intune-Portal](https://portal.azure.com), und wählen Sie **Client-Apps** > **Verwaltetes Google Play** > **Synchronisieren** aus.
 4. Klicken Sie auf **Apps** > **Managed Home Screen** > **Zuweisungen** > **Gruppe hinzufügen**.
 5. Klicken Sie unter **Zuweisungstyp** auf **Erforderlich**.
 6. Klicken Sie auf **Included groups** > **Select groups to include** (Eingeschlossene Gruppen > Einzuschließende Gruppen auswählen), wählen Sie die Gerätegruppe aus, die Sie für Ihre Kioskgeräte erstellt haben, und klicken Sie anschließend auf **Auswählen** > **OK** > **OK** > **Speichern**.
@@ -65,13 +65,13 @@ Führen Sie die folgenden Hauptschritte aus, um ein Android-Kioskgerät für meh
 Führen Sie die folgenden Schritte für jede App aus, die Sie auf Ihren Kioskgeräten zur Verfügung stellen möchten:
 
 1. [Fügen Sie die App in Intune hinzu](store-apps-android.md).
-2. Klicken Sie auf **Mobile Apps** > **Apps**, wählen Sie die App aus, und klicken Sie dann auf **Zuweisungen** > **Gruppe hinzufügen**.
+2. Wählen Sie **Client-Apps** > **Apps** und dann die App aus, und klicken Sie anschließend auf **Zuweisungen** > **Gruppe hinzufügen**.
 3. Klicken Sie unter **Zuweisungstyp** auf **Erforderlich**.
 4. Klicken Sie auf **Included groups** > **Select groups to include** (Eingeschlossene Gruppen > Einzuschließende Gruppen auswählen), wählen Sie die Gerätegruppe aus, die Sie für Ihre Kioskgeräte erstellt haben, und klicken Sie anschließend auf **Auswählen** > **OK** > **OK** > **Speichern**.
 
 ### <a name="add-web-links-that-can-be-used-in-kiosk-mode"></a>Hinzufügen von Weblinks, die im Kioskmodus verwendet werden können
 
-1. Wechseln Sie zum [Intune-Portal](https://portal.azure.com), und klicken Sie auf **Mobile Apps** > **Apps** > **Hinzufügen**.
+1. Wechseln Sie zum [Intune-Portal](https://portal.azure.com), und wählen Sie **Client-Apps** > **Apps** > **Hinzufügen** aus.
 2. Wählen Sie **Weblink** unter **App-Typ** aus.
 3. Klicken Sie auf **Konfigurieren**, und geben Sie die erforderlichen Informationen an. Sie müssen kein Bild für das Logo hinzufügen, da es automatisch aus der Datei „favicon.ico“ der Website abgerufen wird.
 4. Klicken Sie auf **OK** > **Hinzufügen**.

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
-ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
+ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39587022"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313698"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Standardeinstellungen für Geräteeinschränkungen für Android und Samsung KNOX – Intune
 
@@ -35,7 +35,7 @@ In diesem Artikel lernen Sie alle Einstellungen für Geräteeinschränkungen in 
 - **Kopieren und einfügen (nur Samsung KNOX):** Lässt Kopier- und Einfügefunktionen auf dem Gerät zu.
 - **Gemeinsame Nutzung der Zwischenablage durch Apps (nur Samsung KNOX):** Erlaubt die Verwendung der Zwischenablage für das Kopieren und Einfügen zwischen Apps.
 - **Übermittlung von Diagnosedaten (nur Samsung KNOX):** Hindert den Benutzer an der Übermittlung von Diagnosedaten vom Gerät.
-- **Zurücksetzung auf Werkseinstellungen (nur Samsung KNOX):** Erlaubt dem Benutzer das Zurücksetzen des Geräts auf die Werkseinstellungen.
+- **Zurücksetzung auf Werkseinstellungen (nur Samsung KNOX):** Erlaubt dem Benutzer das [Zurücksetzen](devices-wipe.md) des Geräts.
 - **Geolocation (nur Samsung KNOX):** Erlaubt dem Gerät die Nutzung von Standortinformationen.
 - **Ausschalten (nur Samsung KNOX):** Erlaubt dem Benutzer das Ausschalten des Geräts.<br>Wenn diese Option deaktiviert ist, kann die **Anzahl von fehlgeschlagenen Anmeldungen, bevor das Gerät zurückgesetzt wird** nicht festgelegt werden.
 - **Bildschirmaufnahme (nur Samsung KNOX):** Erlaubt dem Benutzer, den Bildschirminhalt als Bild zu erfassen.

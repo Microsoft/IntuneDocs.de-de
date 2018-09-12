@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 644d5966f653e4b98e6a5e8c507dd5e7399ff9cd
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5c64b915f240cab2faac84a6a78b213a5fffa0a6
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321117"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347897"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Hinzufügen branchenspezifischer Windows-Apps zu Microsoft Intune
 
@@ -32,19 +32,15 @@ Branchenspezifische Apps werden über eine App-Installationsdatei hinzugefügt. 
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
-4. Wählen Sie in der Workload **Mobile Apps** die Option **Verwalten** > **Apps** aus.
+3. Wählen Sie im Bereich **Intune** die Option **Client-Apps** aus.
+4. Wählen Sie in der Workload **Client-Apps** die Option **Verwalten** > **Apps** aus.
 5. Wählen Sie oberhalb der App-Liste **Hinzufügen** aus.
 6. Wählen Sie im Bereich **App hinzufügen** die Option **Branchenspezifische App** aus.
 
 ## <a name="step-2-configure-the-app-package-file"></a>Schritt 2: Konfigurieren der App-Paketdatei
 
 1. Wählen Sie im Bereich **App hinzufügen** die Option **App-Paketdatei** aus.
-2. Wählen Sie im Bereich **App-Paketdatei** die Schaltfläche zum Durchsuchen. Wählen Sie dann eine Windows-Installationsdatei mit der Erweiterung **.msi**, **.appx**, **.appxbundle**, **.msix** oder **.msixbundle** aus.
-
-    > [!NOTE]
-    > Für Windows-Apps können jetzt die folgenden Dateierweiterungen verwendet werden: **.msi**, **.appx**, **.appxbundle**, **.msix** und **.msixbundle**.  
-
+2. Wählen Sie im Bereich **App-Paketdatei** die Schaltfläche zum Durchsuchen. Wählen Sie dann eine Windows-Installationsdatei mit der Erweiterung **MSI**. **APPX** oder **APPXBUNDLE**.
 3. Wählen Sie danach **OK**.
 
 

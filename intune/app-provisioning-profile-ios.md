@@ -15,12 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d3cc718c0bfd0bba68480b4cd4003cd52489a50
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5ed39a13c8866786ac044d77ca61d91becd5b89f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34225037"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329563"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Verwenden von Bereitstellungsprofilen für iOS-Apps, um zu verhindern, dass Apps ablaufen
 
@@ -43,9 +43,9 @@ Wenn Sie über Administratorberechtigungen verfügen, können Sie Sicherheitsgru
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie im Bereich **Intune** die Option **Mobile Apps** aus.
-1.  Wählen Sie in der Workload **Mobile Apps** die Option **Verwalten** > **iOS-App-Bereitstellungsprofile** aus.
-2.  Wählen Sie in dem Bereich mit der Profilliste die Option **Profil erstellen** aus.
+3. Wählen Sie im Bereich **Intune** die Option **Client-Apps** aus.
+1.  Wählen Sie in der Workload **Client-Apps** die Option **Verwalten** > **iOS-App-Bereitstellungsprofile** aus.
+2.  Klicken Sie in dem Bereich mit der Profilliste auf die Option **Profil erstellen**.
 3. Konfigurieren Sie im Bereich **Profil erstellen** folgende Werte:
     - **Name**: Geben Sie einen Namen für dieses mobile Bereitstellungsprofil an.
     - **Beschreibung**: Geben Sie optional eine Beschreibung der Richtlinie ein.

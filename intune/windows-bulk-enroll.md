@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: a1d0c445c2e6e5f2e4227d1b04ead416bf73d737
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 937fdd2130a0ae85421a4310fe6a0dc70986d2de
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444879"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313237"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Massenregistrierung für Windows-Geräte
 
@@ -85,10 +85,10 @@ Azure AD-Benutzer sind auf diesen Geräten Standardbenutzer und erhalten zugewie
 ## <a name="troubleshooting-windows-bulk-enrollment"></a>Problembehandlung bei der Massenregistrierung unter Windows
 
 ### <a name="provisioning-issues"></a>Probleme beim Bereitstellen
-Diese Bereitstellung ist für die Verwendung auf neuen Windows-Geräten gedacht. Bei Bereitstellungsfehlern ist möglicherweise ein Zurücksetzen des Geräts auf die Werkseinstellungen oder eine Wiederherstellung des Geräts von einem Startimage erforderlich. Folgende Beispiele beschreiben einige mögliche Gründe für Fehler bei der Bereitstellung:
+Diese Bereitstellung ist für die Verwendung auf neuen Windows-Geräten gedacht. Bei Bereitstellungsfehlern ist möglicherweise eine Zurücksetzung des Geräts auf die Werkseinstellungen oder eine Wiederherstellung des Geräts von einem Startimage erforderlich. Folgende Beispiele beschreiben einige mögliche Gründe für Fehler bei der Bereitstellung:
 
 - Wenn ein Bereitstellungspaket versucht, ein Gerät in eine Active Directory-Domäne oder einen Azure Active Directory-Mandanten einzubinden, die bzw. der kein lokales Konto erstellt, ist das Gerät möglicherweise nicht erreichbar, wenn der Einbindungsprozess aufgrund einer nicht vorhandenen Netzwerkverbindung nicht durchgeführt werden kann.
-- Skripts, die vom Bereitstellungspaket ausgeführt werden, werden im Systemkontext ausgeführt. Die Skripts können beliebige Änderungen am Gerätedateisystem und an den Konfigurationen vornehmen. Ein schädliches oder fehlerhaftes Skript kann das Gerät in einen Zustand versetzen, aus dem eine Wiederherstellung nur durch erneutes Aufspielen eines Images oder durch Zurücksetzen des Geräts auf die Werkseinstellungen möglich ist.
+- Skripts, die vom Bereitstellungspaket ausgeführt werden, werden im Systemkontext ausgeführt. Die Skripts können beliebige Änderungen am Gerätedateisystem und an den Konfigurationen vornehmen. Ein schädliches oder fehlerhaftes Skript kann das Gerät in einen Zustand versetzen, aus dem eine Wiederherstellung nur durch erneutes Aufspielen eines Images oder durch Zurücksetzen des Geräts möglich ist.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Probleme mit der Massenregistrierung und dem Unternehmensportal
 Wenn ein Benutzer versucht, ein Gerät zu registrieren, dass bereits in einer Massenregistrierung mit dem Unternehmensportal registriert wurde, erhält er eine Warnmeldung, dass für sein Gerät weitere Aktionen erforderlich sind, entweder die Einrichtung oder die Registrierung. Das Gerät wird registriert, aber die Registrierung wird werden von der Unternehmensportal-App oder der -Website erkannt.
