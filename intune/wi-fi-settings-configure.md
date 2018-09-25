@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2dba6e0d1c50790c8c2c2bf287695ab67fdb972
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: df2e2f81008c6dedf5660a8a9eff4bf2cfe2ec6b
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905330"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505732"
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>So konfigurieren Sie WLAN-Einstellungen in Microsoft Intune
 
@@ -62,8 +62,6 @@ Anhand der Informationen in diesem Thema lernen Sie die Grundlagen zum Konfiguri
     - **Windows 8.1 und höher**
     - **Windows 10 und höher**
 
-   > [!IMPORTANT]
-   > Wenn Sie ein Profil für Windows 10-Geräte einschließlich Windows Holographic for Business erstellen, müssen Sie die Plattform **Windows 8.1 und höher** auswählen. Die Plattform **Windows 10 und höher** schließt keinen WLAN-Profiltyp ein. 
 
 6. Wählen Sie für Apple- oder Android-Geräte in der Dropdownliste **WLAN-Typ** die Option **Standard** oder **Enterprise**. Mithilfe von **Standard** können Sie grundlegende Eigenschaften wie den Netzwerknamen und die SSID angeben. Mit **Enterprise** können Sie detailliertere Informationen angeben, z.B. das Extensible Authentication Protocol (EAP), sofern Ihr WLAN dieses Protokoll verwendet. 
 

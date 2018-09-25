@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 39478853531d924806b34c64253a128c4e7afc8e
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 64eb5c50f2e84749b5e78d2531556c1faf291eb6
+ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224397"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494080"
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Verwalten von per Volumenlizenz erworbenen Apps und Büchern mit Microsoft Intune
 

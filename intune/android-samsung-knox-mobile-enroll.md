@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f1fbe688705940d3e8038affb84268fbaf113e3
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f7565972d37c5df5acb83012bb7cebbdc1fa1cec
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313063"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028646"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment
 
@@ -39,7 +39,7 @@ Um die Intune-Registrierung mit Samsung KME zu aktivieren, müssen Sie sowohl da
 Beim Erwerb von Geräten von autorisierten Fachhändlern, die am Knox Deployment Program teilnehmen, wird dem Knox-Portal automatisch eine Liste der Geräte-IDs (Seriennummern und IMEIs) hinzugefügt.
 
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="prerequisites"></a>Erforderliche Komponenten
 
 Damit Sie sich bei Intune mit KME registrieren können, müssen Sie zuerst Ihr Unternehmen im Samsung Knox-Portal registrieren, indem Sie die folgenden Schritte ausführen:
 1.  [Vergewissern Sie sich, dass KME in Ihrer Region verfügbar ist](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME ist in über 55 Ländern verfügbar. Überprüfen Sie, ob Ihr Land/Region für die Bereitstellung unterstützt wird.
@@ -84,7 +84,7 @@ Für bei Intune mit KME registrierte Geräte können Sie wie folgt konfigurieren
 
 - **Ohne Benutzernamenzuordnung:** Lassen Sie im Knox-Portal unter **Gerätedetails** die Felder **Benutzer-ID** und **Kennwort** für die hinzugefügten Geräte leer. Dadurch muss der Endbenutzer bei der Registrierung bei Intune den Benutzernamen und ein Kennwort eingeben.
 
-- **Mit Benutzernamenzuordnung:** Geben Sie im Knox-Portal unter **Gerätedetails** eine **Benutzer-ID** (z. B. einen Benutzernamen für den zugewiesenen Benutzer oder ein [Geräteregistrierungs-Manager](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll)-Konto) für die hinzugefügten Geräte an. Dadurch wird der Benutzername vorab ausgefüllt, und der Endbenutzer muss bei der Registrierung bei Intune ein Kennwort eingeben.
+- **Mit Benutzernamenzuordnung:** Geben Sie im Knox-Portal unter **Gerätedetails** eine **Benutzer-ID** (z. B. einen Benutzernamen für den zugewiesenen Benutzer oder ein [Geräteregistrierungs-Manager](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)-Konto) für die hinzugefügten Geräte an. Dadurch wird der Benutzername vorab ausgefüllt, und der Endbenutzer muss bei der Registrierung bei Intune ein Kennwort eingeben.
 
 > [!NOTE]
 >

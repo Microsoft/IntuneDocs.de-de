@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cad4e1d6bcb47981dfb40a1146a3f5148724e08a
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 084b7bead6b294cfbfa94c9b18f539dd0e5db2a8
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330091"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028595"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Apps ohne Geräteregistrierung
 
@@ -43,7 +43,7 @@ Sie können App-Konfigurationsrichtlinien mit verwalteten Apps, die das Intune A
 7. Geben Sie für jede von der App unterstützte Konfigurationseinstellung den **Namen** und den **Wert** ein, und wählen Sie die Auslassungspunkte (**…**) aus.  
     Wählen Sie zum Löschen einer Konfiguration die Auslassungspunkte (**...**) und dann auf **Löschen** aus.  
     
-Für das Intune App SDK aktivierte Apps unterstützen Konfigurationen in Schlüssel-Wert-Paaren. Weitere Informationen zu den unterstützten Schlüssel-Wert-Konfigurationen finden Sie in der Dokumentation zu den einzelnen Apps. Beachten Sie, dass Sie Tokens verwenden können, die dynamisch mit den von der Anwendung generierten Daten aufgefüllt werden. Informationen zu den Konfigurationsrichtlinieneinstellungen für die Outlook für iOS-App finden Sie unter [Verwalten der Konfiguration der Outlook für iOS-App mit Microsoft Intune](https://technet.microsoft.com/en-us/library/mt813789(v=exchg.150).aspx).
+Für das Intune App SDK aktivierte Apps unterstützen Konfigurationen in Schlüssel-Wert-Paaren. Weitere Informationen zu den unterstützten Schlüssel-Wert-Konfigurationen finden Sie in der Dokumentation zu den einzelnen Apps. Beachten Sie, dass Sie Tokens verwenden können, die dynamisch mit den von der Anwendung generierten Daten aufgefüllt werden. Informationen zu den Konfigurationsrichtlinieneinstellungen für die Outlook für iOS-App finden Sie unter [Verwalten der Konfiguration der Outlook für iOS-App mit Microsoft Intune](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx).
 
 ## <a name="configuration-values-for-using-tokens"></a>Konfigurationswerte für das Verwenden von Token
 

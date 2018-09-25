@@ -6,7 +6,7 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 04d7acb5aa0e1a534fb6ad31519c094123aa90bb
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 832105078572b3229334ccdcb2e3e89ace9e0408
+ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347676"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46494063"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>Hinzufügen von iOS Store-Apps zu Microsoft Intune
 
@@ -31,7 +31,7 @@ Fügen Sie mithilfe der Informationen in diesem Artikel iOS Store-Apps zu Micros
 >[!NOTE]
 >Obgleich Benutzer von iOS-Geräten einige der integrierten iOS-Apps wie Stocks und Maps entfernen können, lassen sich diese Apps über Intune nicht erneut bereitstellen. Wenn Ihre Benutzer diese Apps löschen, müssen sie zum App Store navigieren und die Apps manuell erneut installieren.
 
-## <a name="before-you-start"></a>Vorbereitung
+## <a name="before-you-start"></a>Vorbereitungen
 
 Sie können mit dieser Methode nur Apps zuweisen, die im App Store kostenlos angeboten werden. Wenn Sie mithilfe von Intune kostenpflichtige Apps zuweisen möchten, erwägen Sie die Nutzung des [iOS Volume Purchase Program](vpp-apps-ios.md).
 
@@ -41,7 +41,7 @@ Sie können mit dieser Methode nur Apps zuweisen, die im App Store kostenlos ang
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**.  
     Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie im Bereich **Intune** die Option **Client-Apps** aus.
+3. Wählen Sie im Bereich **Intune** **Client-Apps** aus.
 4. Wählen Sie im Workloadbereich **Client-Apps** unter **Verwalten** die Option **Apps** aus.
 5. Klicken Sie im Bereich **Apps** auf **Hinzufügen**.
 6. Wählen Sie in der Liste **App-Typ** unter dem Typ **Store-App** die Option **iOS** aus.
