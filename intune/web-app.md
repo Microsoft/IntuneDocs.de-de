@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ec483218cb86426b237c40c8831a2f0880847ade
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 7e974a17506be36c725dddfa21329269c8fcebc8
+ms.sourcegitcommit: 572287c3bb0020b6b75e4e2ac27019c20c699159
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347456"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44340268"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Hinzufügen von Web-Apps zu Microsoft Intune
 
@@ -62,6 +62,8 @@ Führen Sie die folgenden Schritte aus, um eine App als Verknüpfung zu einer Ap
 
 > [!Note]
 > Benutzer müssen dem Startbildschirm das Intune-Widget hinzufügen, um Web-Apps anzuzeigen, die Android-Geräten zugewiesen wurden.
+>
+> Derzeit ist die Bereitstellung von Intune-Web-Apps für iOS-Geräte mit dem Verwaltungsprofil verbunden und kann nicht manuell entfernt werden. Sie können den Bereitstellungstyp im Intune-Portal in **Deinstallieren** ändern – an diesem Punkt kann die Web-App automatisch entfernt werden. Aber wenn Sie die Bereitstellung vor dem Ändern der App-Zuweisungsabsicht in **Deinstallieren** entfernen, ist die Web-App dauerhaft auf dem Gerät vorhanden, bis die Registrierung des Geräts bei Intune aufgehoben wird.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

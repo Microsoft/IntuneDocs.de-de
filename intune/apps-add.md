@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf6e7098462931000ce4cd5546390d27d68677f1
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330159"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141676"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune
 
@@ -116,7 +116,7 @@ Mit Intune verwaltete Apps können außerdem ohne Registrierung den App-Schutz a
 
 ### <a name="understanding-licensed-apps"></a>Grundlegendes zu lizenzierten Apps
 Sie sollten nicht nur zwischen Web-Apps, Store-Apps und branchenspezifischen Apps unterscheiden können, sondern auch zwischen Apps, die über ein Volumenlizenzprogramm (Volume Purchase Program) bezogen wurden, und lizenzierten Apps, wie z.B. folgende: 
-- **Apple Volume Purchase Program for Business (iOS und MacOS)**: Der App Store von iOS bietet die Möglichkeit, mehrere Lizenzen für eine App zu erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Durch den Erwerb mehrerer Kopien können Sie Apps in Ihrem Unternehmen effizient verwalten. Weitere Informationen finden Sie unter [Verwalten von iOS-Apps, die per Volumenlizenz erworben wurden](vpp-apps-ios.md).
+- **Apple Volume Purchase Program for Business (iOS)**: Der App Store von iOS bietet die Möglichkeit, mehrere Lizenzen für eine App zu erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Durch den Erwerb mehrerer Kopien können Sie Apps in Ihrem Unternehmen effizient verwalten. Weitere Informationen finden Sie unter [Verwalten von iOS-Apps, die per Volumenlizenz erworben wurden](vpp-apps-ios.md).
 - **Android-Arbeitsprofil**: Die Zuweisung von Apps zu Android-Arbeitsprofilgeräten unterscheidet sich von deren Zuweisung zu Android-Standardgeräten. Alle Apps, die für Android-Arbeitsprofile installiert werden, stammen aus dem verwalteten Google Play Store. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese. Die App wird dann im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt, und Sie können die Zuweisung der App wie bei jeder anderen App verwalten.
 - **Microsoft Store für Unternehmen (Windows 10)**: Im Microsoft Store für Unternehmen können Sie Apps für Ihre Organisation suchen und einzeln oder im Rahmen einer Volumenlizenz erwerben. Indem Sie den Store mit Microsoft Intune verbinden, können Sie per Volumenlizenz erworbene Apps über das Azure-Portal verwalten. Weitere Informationen finden Sie unter [Verwalten von Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md).
 

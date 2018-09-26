@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 49e61a140fd5e0c2c76a1a2745e29babd7b1a3ac
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: b82129c66015601640f0954b5248a1c9a80374f3
+ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224782"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43821132"
 ---
 # <a name="use-the-intune-data-warehouse"></a>Verwenden des Data Warehouse von Intune
 
@@ -40,9 +40,9 @@ Das Data Warehouse bietet Ihnen Zugriff auf mehr Informationen über Ihre mobile
 > [!Note]
 > Wenn Sie eine hybride Verwaltung mobiler Geräte (mobile device management, MDM) mit System Center Configuration Manager und Microsoft Intune verwenden, sollten Sie Ihre Daten aus SCCM abrufen. Das Intune Data Warehouse enthält nur Intune-Daten. Sie können ein SCCM Power BI-Dashboard für Ihre benutzerdefinierten Berichte verwenden. Weitere Informationen finden Sie unter [Announcing the Power BI solution template for System Center Configuration Manager (Ankündigung der Power BI-Lösungsvorlage für System Center Configuration Manager)]( https://powerbi.microsoft.com/blog/sccm-solution-template) und [Power BI-Inhalt für Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page).
 
-
 > [!Important]  
-> Sie können die neuesten Funktionen des Data Warehouse mithilfe der Betaversion ausprobieren. Für die Verwendung die Betaversion muss Ihre URL den Abfrageparameter `api-version=beta` enthalten. Die Betaversion bietet Features, bevor sie als unterstützter Dienst allgemein verfügbar gemacht werden. Da Intune kontinuierlich neue Features hinzufügt, könnten sich in der Betaversion Verhalten und Datenverträge ändern. Benutzerdefinierter Code oder Berichtstools, die von der Betaversion abhängig sind, könnten mit laufenden Updates nicht mehr funktionieren.
+> Jetzt können Sie die Version v1.0 von Intune Data Warehouse durch Festlegen des Abfrageparameters  `api-version=v1.0`verwenden. Updates von Sammlungen in Data Warehouse bauen aufeinander auf und beschädigen keine vorhandenen Szenarios.<br><br>
+> Sie können die neuesten Funktionen des Data Warehouse mithilfe der Betaversion ausprobieren. Für die Verwendung die Betaversion muss Ihre URL den Abfrageparameter  `api-version=beta` enthalten. Die Betaversion bietet Features, bevor sie als unterstützter Dienst allgemein verfügbar gemacht werden. Da Intune kontinuierlich neue Features hinzufügt, könnten sich in der Betaversion Verhalten und Datenverträge ändern. Benutzerdefinierter Code oder Berichtstools, die von der Betaversion abhängig sind, könnten mit laufenden Updates nicht mehr funktionieren.
 
 **Nächste Schritte**
 

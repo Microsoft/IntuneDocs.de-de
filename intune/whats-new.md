@@ -7,20 +7,20 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/29/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
-/ms.custom: intune-azure
-ms.openlocfilehash: 0205715a8e35d009401886af4bd0bf88fb9cf662
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: e3049fe461553ad1ba2e714d2274e0d39d169852
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347286"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44254087"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -90,7 +90,8 @@ Im Artikel [WLAN-Einstellungen für Geräte mit Windows 10 und höher in Intune]
 #### <a name="control-s-mode-on-windows-10-and-later-devices---public-preview----1958649---"></a>Steuern des S Modus für Geräte unter Windows 10 und höher – Public Preview <!-- 1958649 -->
 Mit diesem Funktionsupdate können Sie ein Gerätekonfigurationsprofil erstellen, das den S Modus auf einem Windows 10-Gerät deaktiviert oder den Benutzer davon abhält, den S Modus eines Geräts zu deaktivieren. Dieses Feature ist in Intune verfügbar. Navigieren Sie zu **Gerätekonfiguration** > **Profile** >  **Windows 10 und höher** > **Edition upgrade and mode switch** (Editionsupgrade und Moduswechsel).
 Auf der Seite [Willkommen bei Windows 10 im S Modus](https://www.microsoft.com/windows/s-mode) finden Sie weitere Informationen zum S Modus.
-Gilt für: Windows 10 und höher (1809 und höher)
+Gilt für: den aktuellen [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)-Build (während der Vorschauversion).
+
 
 #### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Das automatisch dem Konfigurationsprofil zugewiesene Windows Defender ATP-Konfigurationspaket <!-- 2144658 -->
 Wenn Sie [Advanced Threat Protection verwenden und Geräte in Intune onboarden](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile), mussten Sie zuvor ein Konfigurationspaket herunterladen und es Ihrem Konfigurationsprofil hinzufügen. Mit diesem Update ruft Intune das Paket automatisch aus dem Windows Defender Security Center ab und fügt es Ihrem Profil hinzu.
@@ -98,6 +99,8 @@ Gilt für Windows 10 und höher.
 
 #### <a name="require-users-to-connect-during-device-setup---2311457--"></a>Benutzer müssen während der Geräteeinrichtung eine Verbindung herstellen <!--2311457-->
 Sie können nun Geräteprofile so einrichten, dass das Gerät eine Verbindung zu einem Netzwerk herstellen muss, bevor es während der Einrichtung von Windows 10 mit dem Prozess nach der Seite „Netzwerk“ fortfährt. Solange sich diese Funktion in der Vorschau befindet, ist für die Verwendung dieser Einstellung der Windows-Insider-Build 1809 oder höher erforderlich.
+Gilt für: den aktuellen [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)-Build (während der Vorschauversion).
+
 
 #### <a name="restricts-apps-and-block-access-to-company-resources-on-ios-and-android-enterprise-devices----2451462---"></a>Einschränken von Apps und Blockieren des Zugriffs auf Unternehmensressourcen auf iOS- und Android Enterprise-Geräten <!-- 2451462 -->
 Unter **Gerätekompatibilität** > **Richtlinien** > **Richtlinie erstellen** > **iOS** > **Systemsicherheit** ist eine neue Einstellung verfügbar: **Restricted applications** (Eingeschränkte Anwendungen). Diese neue Einstellung verwendet eine Konformitätsrichtlinie, um den Zugriff auf Unternehmensressourcen zu blockieren, wenn bestimmte Apps auf dem Gerät erstellt werden. Das Gerät wird so lange als nicht kompatibel betrachtet, bis die eingeschränkten Apps von diesem Gerät entfernt werden.
@@ -129,19 +132,24 @@ Sie haben nun die Möglichkeit, das Unternehmensportal im Einzelanwendungsmodus 
 
 #### <a name="assign-a-user-and-friendly-name-to-an-autopilot-device---1346521---"></a>Zuweisen eines Benutzer- und Anzeigenamens zu einem Autopilot-Gerät <!--1346521 -->
 Sie können jetzt [einen Benutzer zu einem einzelnen Autopilot-Gerät zuweisen](enrollment-autopilot.md). Administratoren können Anzeigenamen auch vergeben, um den Benutzer zu begrüßen, wenn dieser sein Gerät mit AutoPilot einrichtet.
-Gilt für: Windows Insider 1809 oder einen späteren Build (während der Vorschauversion).
+Gilt für: den aktuellen [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)-Build (während der Vorschauversion).
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Verwendung von VPP-Gerätelizenzen, zur Vorabbereitstellung des Unternehmensportals während der DEP-Registrierung <!-- 1608345 -->
 Sie können jetzt Gerätelizenzen des Volume Purchase Program (VPP) verwenden, um das Unternehmensportal während der Registrierungsvorgänge des Programms zur Geräteregistrierung (Device Enrollment Program, DEP) vorab bereitzustellen. Geben Sie dazu bei der [Erstellung oder Bearbeitung eines Registrierungsprofils](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) das VPP-Token an, das Sie zum Installieren des Unternehmensportals verwenden möchten. Stellen Sie sicher, dass Ihr Token nicht abläuft, und dass Sie über genügend Lizenzen für die Unternehmensportal-App verfügen. In Fällen, in denen das Token abläuft oder über keine Lizenzen mehr verfügt, überträgt Intune stattdessen das App Store-Unternehmensportal mithilfe von Push (dafür ist die Eingabe eine Apple-ID erforderlich).
 
+### <a name="confirmation-required-to-delete-vpp-token-that-is-being-used-for-company-portal-pre-provisioning----2237634---"></a>Erforderliche Bestätigung zur Löschung von VPP-Token, die für die Vorabbereitstellung des Unternehmensportals verwendet werden <!-- 2237634 -->
+Für die Löschung eines VPP-Tokens (Volume Purchase Program) ist jetzt eine Bestätigung notwendig, falls das Token zur Vorabbereitstellung des Unternehmensportals während der DEP-Registrierung verwendet wird.
+
 #### <a name="block-windows-personal-device-enrollments----1849498---"></a>Blockieren von Registrierungen persönlicher Windows-Geräte <!-- 1849498 -->
-Sie können die Registrierung [persönlicher Windows-Geräte](enrollment-restrictions-set.md#set-device-type-restrictions) mit der [mobilen Geräteverwaltung](windows-enroll.md) in Intune blockieren. Geräte, die mit dem [Intune-PC-Agent](manage-windows-pcs-with-microsoft-intune.md) registriert sind, können nicht über dieses Feature blockiert werden.
+Sie können die Registrierung [persönlicher Windows-Geräte](enrollment-restrictions-set.md#set-device-type-restrictions) mit der [mobilen Geräteverwaltung](windows-enroll.md) in Intune blockieren. Geräte, die mit dem [Intune-PC-Agent](manage-windows-pcs-with-microsoft-intune.md) registriert sind, können nicht über dieses Feature blockiert werden. Dieses Feature wird in den nächsten Wochen eingeführt, sodass es nicht sofort in der Benutzeroberfläche zu finden ist.
 
 #### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Angeben von Computernamensmustern in einem Autopilot-Profil <!--1849855-->
-Sie können eine [Vorlage für einen Computernamen angeben](enrollment-autopilot.md#create-an-autopilot-deployment-profile), um den [Computernamen](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) während der Autopilot-Registrierung zu generieren und festzulegen.
+Sie können eine [Vorlage für einen Computernamen angeben](enrollment-autopilot.md#create-an-autopilot-deployment-profile), um den [Computernamen](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) während der Autopilot-Registrierung zu generieren und festzulegen. Gilt für: den aktuellen [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)-Build (während der Vorschauversion).
+
 
 #### <a name="for-windows-autopilot-profiles-hide-the-change-account-options-on-the-company-sign-in-page-and-domain-error-page---1901669---"></a>Ausblenden der Kontoänderungsoptionen für Windows Autopilot-Profile auf der Anmeldeseite und der Domänenfehlerseite des Unternehmens <!--1901669 -->
-Es gibt [neue Windows Autopilot-Profiloptionen](enrollment-autopilot.md#create-an-autopilot-deployment-profile), mit denen Administratoren Kontoänderungsoptionen auf der Anmeldeseite und der Domänenfehlerseite des Unternehmens ausblenden können. Für das Ausblenden dieser Optionen muss das Unternehmensbranding in Azure Active Directory konfiguriert sein. Gilt für: Windows Insider 1809 oder einen späteren Build (während der Vorschauversion).
+Es gibt [neue Windows Autopilot-Profiloptionen](enrollment-autopilot.md#create-an-autopilot-deployment-profile), mit denen Administratoren Kontoänderungsoptionen auf der Anmeldeseite und der Domänenfehlerseite des Unternehmens ausblenden können. Für das Ausblenden dieser Optionen muss das Unternehmensbranding in Azure Active Directory konfiguriert sein. Gilt für: den aktuellen [Windows Insider](https://docs.microsoft.com/en-us/windows-insider/at-work-pro/)-Build (während der Vorschauversion).
+
 
 #### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Verwendung von VPP-Gerätelizenzen, zur Vorabbereitstellung des Unternehmensportals während der DEP-Registrierung <!-- 1608345 -->
 Sie können jetzt Gerätelizenzen des Volume Purchase Program (VPP) verwenden, um das Unternehmensportal während der Registrierungsvorgänge des Programms zur Geräteregistrierung (Device Enrollment Program, DEP) vorab bereitzustellen. Geben Sie dazu bei der [Erstellung oder Bearbeitung eines Registrierungsprofils](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) das VPP-Token an, das Sie zum Installieren des Unternehmensportals verwenden möchten. Stellen Sie sicher, dass Ihr Token nicht abläuft, und dass Sie über genügend Lizenzen für die Unternehmensportal-App verfügen. In Fällen, in denen das Token abläuft oder über keine Lizenzen mehr verfügt, überträgt Intune stattdessen das App Store-Unternehmensportal mithilfe von Push (dafür ist die Eingabe eine Apple-ID erforderlich).
@@ -168,8 +176,8 @@ Die Unternehmensportalwebsite wurde auf der Grundlage von Kundenfeedback um neue
 - optimierte Workflows auf allen Geräteplattformen
 - eine verbesserte Geräteidentifikation und optimierte Registrierungsworkflows
 - aussagekräftigere Fehlermeldungen
-- eine benutzerfreundlichere Sprache und weniger Fachbegriffe
-- Möglichkeit, direkte Links zu Apps zu teilen
+- Benutzerfreundlichere Sprache, weniger technischer Jargon
+- Möglichkeit zur Freigabe direkter Links für Apps
 - Verbesserte Leistung bei großen App-Katalogen
 - verbesserte Barrierefreiheit für alle Benutzer  
 
@@ -1273,6 +1281,25 @@ Sie können abgelehnte Apps in Intune festlegen. Wenn eine App abgelehnt wird, w
 
 
 ## <a name="notices"></a>Benachrichtigungen
+
+### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Änderungsplanung: Neue Intune-Supportbenutzererfahrung für Premier-Kunden 
+Als Microsoft Premier-Kunde können Sie derzeit das Microsoft Premier Online-Portal (MPO) (premier.microsoft.com) und Intune in Azure (portal.azure.com) nutzen, um Supportanfragen für Intune zu erstellen. Ab dem 3. Dezember 2018 können Sie Supportanfragen nur in Intune unter Azure erstellen, um die Premier-Supportbenutzererfahrung auszuweiten.
+
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
+Nach dem 3. Dezember können Sie keine Supportanfragen mehr im MPO-Portal erstellen.  Wenn Sie es trotzdem versuchen, sehen Sie eine Eingabeaufforderung, die Sie nicht ablehnen können, um Sie zu Intune unter Azure umzuleiten. Hier können Sie eine Supportanfrage erstellen, die an den Microsoft-Support für Intune weitergeleitet wird, um Ihr Problem bald zu diagnostizieren und zu lösen. Im MPO-Portal erstellte Support-Anfragen können nicht im Azure-Portal angezeigt werden, darum sollten Sie keine Supportanfragen mehr im MPO-Portal erstellen.  
+
+Wenn Sie die Hybridverwaltung mobiler Geräte (Hybrid Mobile Device Management, Hybrid MDM) oder Co-Verwaltung verwenden, können Sie weiterhin im MPO-Portal Supportanfragen für Configuration Manager erstellen, aber verwenden Sie zum Erstellen von Supportanfragen für Intune das Azure-Portal. Zur Erinnerung: Die hybride Verwaltung mobiler Geräte ist veraltet, und Sie sollten planen, so bald wie möglich zu Intune in Azure zu wechseln. Weitere Informationen finden Sie unter „Move from Hybrid Mobile Device Management to Intune on Azure“ (Wechsel von der hybriden Verwaltung mobiler Geräte zu Intune unter Azure).
+
+Beachten Sie, dass nur Benutzer mit den Rollen „Globaler Administrator“, „Intune-Dienstadministrator“ und „Dienstunterstützungsadministrator“ Supporttickets im Azure-Portal erstellen können.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wie kann ich mich auf die Änderung vorbereiten?
+- Verwenden Sie nicht mehr MPO, sondern stattdessen Intune unter Azure zum Erstellen und Verwalten aller Intune-Supportanfragen.  
+- Benachrichtigen Sie bei Bedarf Ihren Helpdesk, und aktualisieren Sie die Dokumentation.
+- Wenn Benutzer ohne die Rollen „Globaler Administrator“ oder „Intune-Dienstadministrator“ derzeit Supportanfragen in MPO erstellen, weisen Sie ihnen die Rolle „Dienstunterstützungsadministrator“ in Azure Active Directory zu, damit sie weiterhin Supporttickets im Azure-Portal erstellen können.
+- Klicken Sie auf „Weitere Informationen“, um weitere Informationen und nützliche Links zu nutzen.
+
+#### <a name="additional-information"></a>Weitere Informationen
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Maßnahme erforderlich: Bitte aktualisieren Sie Ihre Android-Gerätebeschränkungen oder die Kennworteinstellungen für die Konformitätsrichtlinie in Intune
 Intune wird für Geräte mit Android 4.4 und höher den Kennworttyp „Gerätestandard“ entfernen. Aufgrund von unterschiedlichen Android-Plattformen und Gerätestandards wird diese Richtlinie häufig von dem Gerät als optional behandelt. Wir entfernen in einem der nächsten Releases diese Einstellung von der Benutzeroberfläche, um Unklarheiten dazu zu beseitigen, wann diese Einstellung für Android erzwungen wird. 
