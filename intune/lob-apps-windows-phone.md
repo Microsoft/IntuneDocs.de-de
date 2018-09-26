@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7d7554cad04dcca0d7f56986aef4c4b30193c18
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: e86db15fb4c69b57a1dc572d5a7e4f06eee3b760
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347606"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602111"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>Hinzufügen branchenspezifischer Windows Phone-Apps zu Microsoft Intune
 
@@ -32,7 +32,7 @@ Fügen Sie mithilfe der Informationen in diesem Artikel eine branchenspezifische
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie im Bereich **Intune** die Option **Client-Apps** aus.
+3. Wählen Sie im Bereich **Intune** **Client-Apps** aus.
 4. Wählen Sie in der Workload **Client-Apps** die Option **Verwalten** > **Apps** aus.
 5. Wählen Sie oberhalb der App-Liste **Hinzufügen** aus.
 6. Wählen Sie im Bereich **App hinzufügen** die Option **Branchenspezifische App** aus.

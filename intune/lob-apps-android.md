@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a49811200cd84882fe9f80708edefde7614e5cee
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: f01ff78ed833e8c621783363a7d6ad1405df6f14
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347864"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602230"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen Android-Apps zu Microsoft Intune
 
@@ -35,7 +35,7 @@ Eine branchenspezifische App (LOB) ist eine App, die Sie aus einer App-Installat
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie im Bereich **Intune** die Option **Client-Apps** aus.
+3. Wählen Sie im Bereich **Intune** **Client-Apps** aus.
 4. Wählen Sie in der Workload **Client-Apps** die Option **Verwalten** > **Apps** aus.
 5. Wählen Sie oberhalb der App-Liste **Hinzufügen** aus.
 6. Wählen Sie im Bereich **App hinzufügen** die Option **Branchenspezifische App** aus.
