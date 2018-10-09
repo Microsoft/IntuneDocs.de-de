@@ -3,8 +3,8 @@ title: Mobile Threat Defense-Connector Pradeo in Intune
 titleSuffix: Intune on Azure
 description: Richten Sie den Mobile Threat Defense-Connector Pradeo mit Intune ein.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 06/27/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
-ms.openlocfilehash: b518c51cb49fe8a70c6ed8918c0c88dcd599d915
-ms.sourcegitcommit: f70d6aaea59b52cd0d7bd3008afd243868967fd6
+ms.openlocfilehash: 784d51822425decc900e8a4ae0d348291f0a0c88
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37067500"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232153"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Mobile Threat Defense-Connector Pradeo in Intune
 

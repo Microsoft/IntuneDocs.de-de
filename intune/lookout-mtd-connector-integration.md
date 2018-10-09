@@ -3,8 +3,8 @@ title: Einrichten Ihrer Lookout-Integration in Microsoft Intune
 titlesuffix: ''
 description: Informationen zum Integrieren von Lookout Mobile Threat Defense in Intune, um den Zugriff von mobilen Geräten auf Ihre Unternehmensressourcen zu steuern.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b34bde9ef7817310c25b9a699fa4e18d3151d944
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: fe8a55153ccc2b28c23ec2f32a4285d20afaaf6a
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029864"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232178"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Einrichten Ihrer Lookout Mobile Threat Defense-Integration mit Intune
 
@@ -88,12 +88,12 @@ Führen Sie die folgenden Schritte aus, um die Informationen zusammenzustellen, 
     > [!NOTE] 
     > Alle identifizierten, von Lookout unterstützten und bei Intune registrierten Geräte von Benutzern in einer Registrierungsgruppe in Azure AD werden registriert und sind dann zur Aktivierung in der Lookout MTD-Konsole berechtigt.
 
-2. Wählen Sie in der [Lookout-Konsole](https://aad.lookout.com) im Modul **System** die Registerkarte **Connectors**, und wählen Sie **Registrierungsverwaltung**, um eine Gruppe von Benutzern zu definieren, deren Geräte bei Lookout registriert werden sollen. Fügen Sie die Azure AD-Sicherheitsgruppe **Anzeigename** für die Registrierung hinzu.
+2. Klicken Sie in der [Lookout-Konsole](https://aad.lookout.com) im Modul **System** auf die Registerkarte **Connectors**, und wählen Sie **Registrierungsverwaltung** aus, um eine Gruppe von Benutzern zu definieren, deren Geräte mit Lookout registriert werden sollen. Fügen Sie die Azure AD-Sicherheitsgruppe **Anzeigename** für die Registrierung hinzu.
 
     ![Screenshot der Intune-Seite zur Connectorregistrierung](./media/lookout-mtp-enrollment.png)
 
     >[!IMPORTANT]
-    > Beim **Anzeigenamen** muss die Groß- und Kleinschreibung beachtet werden, wie in den **Eigenschaften** der Sicherheitsgruppe im Azure-Portal dargestellt. Wie in der Abbildung unten gezeigt, wird der **Anzeigename** mit Groß- und Kleinbuchstaben geschrieben, der Titel dagegen nur mit Kleinbuchstaben. Verwenden Sie in der Lookout-Konsole für die Sicherheitsgruppe dieselbe Groß- und Kleinschreibung wie im **Anzeigenamen**.
+    > Beim **Anzeigenamen** muss die Groß- und Kleinschreibung beachtet werden, wie in den **Eigenschaften** der Sicherheitsgruppe im Azure-Portal dargestellt. Der **Anzeigename** der Sicherheitsgruppe wird wie in der folgenden Abbildung mit gemischter Groß-/Kleinschreibung angegeben, während der Titel kleingeschrieben wird. Verwenden Sie in der Lookout-Konsole für die Sicherheitsgruppe dieselbe Groß- und Kleinschreibung wie im **Anzeigenamen**.
     >![Screenshot des Azure-Portals, Azure Active Directory-Dienst, Seite „Eigenschaften“](./media/aad-group-display-name.png)
 
     >[!NOTE] 

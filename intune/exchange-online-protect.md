@@ -3,8 +3,8 @@ title: Exchange ohne Gerätemanagement
 titleSuffix: Microsoft Intune
 description: Verwenden Sie Microsoft Intune, wenn Sie Mitarbeitern Zugriff auf ihre Office 365 Exchange Online-E-Mails erteilen möchten. Sie müssen dafür kein Geräteverwaltungssystem einrichten.
 keywords: Office 365 Exchange-E-Mail-Zugriff
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 10/31/2017
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 88a0d3b9-2622-403b-8374-1396afd8066e
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 940d64cccad93a8198e091b48a4c50d101ad7977
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: 482939ac72899704e8e3696be4f0321ff977630f
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403475"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231966"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Schützen von Office 365 Exchange Online ohne erforderliche Geräteverwaltung
 

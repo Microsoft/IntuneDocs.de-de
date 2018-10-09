@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/29/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 73DF3B90-6D52-4EF6-AFFD-1873A18C7421
 ms.reviewer: dariusz
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5c9b8c97e1c5d963ff2ba03ede389e8a706b965b
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 02594a4442b91f59b3cea9e9fee5de8b39a6d19c
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34561955"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799505"
 ---
 # <a name="reference-for-intune-management-extension"></a>Referenz für die Intune-Verwaltungserweiterung
 

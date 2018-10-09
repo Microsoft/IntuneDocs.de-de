@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 269ee4f0d3a82fffb75b507240950af73e149847
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: a062abcbb0a13907baa81889b1b93d112445b84c
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149645"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260265"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Behandeln häufig auftretender Probleme mit Ihrem Windows-Gerät
 

@@ -3,8 +3,8 @@ title: Einrichten der Symantec-Integration in Microsoft Intune
 titlesuffix: ''
 description: 'Gewusst wie: Einrichten der Symantec Endpoint Protection Mobile-Lösung in Microsoft Intune, um den Zugriff mobiler Geräte auf Ihre Unternehmensressourcen zu steuern.'
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/21/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 359448d9-2384-42ac-a21c-a25148c20a7b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e43e3ff09e30a934e22b2553b8ee7c8691d22bb3
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 00ae29b831bebb770b70c38b5e76d7f19bab10ee
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046416"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231396"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Einrichten der Symantec Endpoint Protection Mobile-Integration in Intune
 

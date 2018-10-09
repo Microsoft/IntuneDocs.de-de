@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: faa8918441bd705875fcdc72d3717af001ab2b85
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 0cfb3dab58676b12b0227f381e9fd7c51e956895
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329869"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799556"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Zuweisen von Apps zu Android-Arbeitsprofilgeräten mit Intune
 
@@ -63,7 +63,7 @@ Wenn Sie eine App aus dem Store genehmigt haben und diese nicht im Knoten **Lize
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Klicken Sie im Bereich **Intune** auf **Client-Apps**.
+3. Wählen Sie im Bereich **Intune** **Client-Apps** aus.
 4. Wählen Sie im Workloadbereich **Client-Apps** unter **Setup** die Option **Managed Google Play** aus.
 5. Klicken Sie im Bereich **Managed Google Play** auf **Aktualisieren**.  
     Auf der Seite werden Uhrzeit und Status der letzten Synchronisierung aktualisiert.

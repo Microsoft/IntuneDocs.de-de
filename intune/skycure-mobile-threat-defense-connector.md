@@ -3,8 +3,8 @@ title: Symantec-Connector mit Microsoft Intune
 titlesuffix: ''
 description: Informationen zum Integrieren von Intune in Symantec Endpoint Protection Mobile, um den Zugriff mobiler Geräte auf Ihre Unternehmensressourcen zu steuern.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/09/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 577eff3a5f3965065a4066973ea8c61160ab4563
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: cf28e91789549cc82db01b052e41cfd99eafb60d
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2018
-ms.locfileid: "32046365"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231320"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile-Connector
 
