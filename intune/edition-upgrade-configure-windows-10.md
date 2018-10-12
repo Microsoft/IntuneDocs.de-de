@@ -1,35 +1,35 @@
 ---
-title: 'Upgraden von Windows 10-Geräten mit Microsoft Intune: Azure | Microsoft-Dokumentation'
-description: Erstellen eines Geräteprofils in Microsoft Intune zum Upgraden von Windows 10-Geräten auf neuere Versionen Sie erhalten auch Informationen zu unterstützten Upgradepfaden für Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic und Mobile.
+title: Upgraden oder Verwenden des S Modus auf Windows 10-Geräten mit Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Erstellen Sie ein Geräteprofil in Microsoft Intune zum Upgraden von Windows 10-Geräten auf andere Editionen. Sie können z.B. ein Upgrade von Windows 10 Professional auf Windows 10 Enterprise durchführen. Sie können auch den S Modus auf einem Gerät mit dem Konfigurationsprofil aktivieren oder verlassen. Sie erhalten auch Informationen zu unterstützten Upgradepfaden für Windows 10 Pro, N Edition, Education, Cloud, Enterprise, Core, Holographic und Mobile.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
-ms.reviewer: coryfe
+ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 994ab8e7d955d18b293e4d9e9661e0c44baaaa1f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f0e4ba42559a068ebefb453aba18060803dc36e0
+ms.sourcegitcommit: f3974c810e172f345853dacd7f2ca0abc11b1a5b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025432"
+ms.lasthandoff: 09/11/2018
+ms.locfileid: "44389624"
 ---
-# <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>Konfigurieren des Windows 10-Editionsupgradeprofils in Intune
+# <a name="use-a-configuration-profile-to-upgrade-windows-10-or-switch-from-s-mode-in-intune"></a>Verwenden eines Konfigurationsprofils zum Upgraden von Windows 10 oder Verlassen des S Modus in Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Konfigurieren Sie ein Upgradeprofil in Intune, um automatisch für Windows 10-Geräte ein Upgrade auf eine andere Edition durchzuführen. Vgl. außerdem die unterstützten Upgradepfade.
 
 ## <a name="before-you-begin"></a>Vorbereitung
-Bevor Sie Geräte auf die neueste Version aktualisieren, benötigen Sie eines der folgenden Dinge:
+Bevor Sie Geräte auf die neueste Version upgraden, müssen folgende Voraussetzungen erfüllt sein:
 
-- Einen gültigen Product Key für die Installation der aktualisierten Version von Windows auf allen Geräten, die das Ziel dieser Richtlinie sind (für Windows 10-Desktopeditionen). Sie können entweder Mehrfachaktivierungsschlüssel (Multiple Activation Keys, MAK) oder KMS-Schlüssel (Key Management Server) oder eine Lizenzdatei von Microsoft verwenden, die die Lizenzierungsinformationen zum Installieren der aktualisierten Version von Windows auf allen Geräten enthält, die das Ziel dieser Richtlinie sind (für Windows 10 Mobile- und Windows 10 Holographic-Editionen).
+- Einen gültigen Product Key für die Installation der aktualisierten Version von Windows auf allen Geräten, die das Ziel dieser Richtlinie sind (für Windows 10-Desktopeditionen). Sie können entweder Mehrfachaktivierungsschlüssel (Multiple Activation Keys, MAK) oder KMS-Schlüssel (Key Management Server, Schlüsselverwaltungsserver) verwenden. Für Windows 10 Mobile- und Windows 10 Holographic-Editionen können Sie eine Lizenzdatei von Microsoft verwenden, die die Lizenzierungsinformationen zum Installieren der aktualisierten Version von Windows auf allen Geräten enthält, die das Ziel dieser Richtlinie sind.
 - Die Windows 10-Geräte, denen Sie die Richtlinie zuweisen, müssen bei Microsoft Intune registriert sein. Die Editionsupgraderichtlinie kann nicht für PCs verwendet werden, auf denen die Intune-PC-Clientsoftware ausgeführt wird.
 
 ## <a name="supported-upgrade-paths"></a>Unterstützte Upgradepfade
@@ -121,25 +121,45 @@ The following lists provide the supported upgrade paths for the Windows 10 editi
 |Mobile|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png)|![unsupported](./media/x_blk.png)|
 |Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png) -->
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Erstellen von Geräteprofilen mit Einstellungen für Geräteeinschränkungen
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
-3. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
-4. Geben Sie für das Editionsupgradeprofil einen **Namen** und eine **Beschreibung** ein.
-5. Wählen Sie in der Dropdownliste **Plattform** die Option **Windows 10 und höher** aus.
-6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Editionsupgrade** aus.
-7. Geben Sie in den Eigenschaften **Editionsupgrade** die folgenden Einstellungen an:
-   - **Edition, auf die ein Upgrade durchgeführt wird:** Wählen Sie aus der Dropdownliste die Version von Windows 10 Desktop, Windows 10 Holographic oder Windows 10 Mobile aus, auf die die als Ziel angegebenen Geräte upgegradet werden sollen.
-   - **Product Key:** Geben Sie den Product Key ein, den Sie von Microsoft erhalten haben, und der für das Upgrade aller als Ziel festgelegten Windows 10 Desktop-Geräte verwendet werden kann. 
-    Nach dem Erstellen einer Richtlinie mit einem Product Key kann dieser nicht aktualisiert werden und wird aus Sicherheitsgründen ausgeblendet. Geben Sie den gesamten Schlüssel erneut ein, um den Product Key zu ändern.
-   - **Lizenzdatei:** Klicken Sie auf **Durchsuchen**, um die Lizenzdatei auszuwählen, die Sie von Microsoft erhalten haben. Diese Lizenzdatei enthält Lizenzinformationen zu den Editionen Windows Holographic oder Windows 10 Mobile, auf die die als Ziel angegebenen Geräte upgegradet werden sollen.
-8. Wenn Sie diese Vorgänge abgeschlossen haben, klicken Sie auf **Erstellen**, um die Änderungen zu speichern.
+## <a name="upgrade-the-edition"></a>Upgraden der Edition
+
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
+2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+3. Geben Sie einen **Namen** und eine **Beschreibung** für das Profil ein. Geben Sie zum Beispiel etwas wie `Windows 10 edition upgrade` ein.
+4. Wählen Sie unter **Plattform** die Option **Windows 10 und höher** aus.
+5. Wählen Sie für **Profiltyp** **Edition upgrade** (Editionsupgrade) aus.
+6. Geben Sie in den Eigenschaften **Editionsupgrade** die folgenden Einstellungen an:
+
+   - **Edition, auf die upgegradet werden soll:** Wählen Sie die Windows 10-Edition aus, auf die Sie das Upgrade durchführen. Für die Geräte, die das Ziel dieser Richtlinie sind, wird ein Upgrade auf die von Ihnen gewählte Edition durchgeführt.
+   - **Product Key:** Geben Sie den Product Key ein, den Sie von Microsoft erhalten haben. Nach dem Erstellen der Richtlinie mit dem Product Key kann dieser nicht aktualisiert werden und wird aus Sicherheitsgründen ausgeblendet. Geben Sie den gesamten Schlüssel erneut ein, um den Product Key zu ändern.
+   - **Lizenzdatei:** Wählen Sie für **Windows 10 Holographic for Business** oder die **Windows 10 Mobile**-Edition **Durchsuchen** aus, um die Lizenzdatei auszuwählen, die Sie von Microsoft erhalten haben. Diese Lizenzdatei enthält Lizenzinformationen für die Editionen, auf die Sie die Zielgeräte upgraden.
+
+7. Klicken Sie auf **OK**, um die Änderungen zu speichern. Klicken Sie auf **Erstellen**, um das Profil zu erstellen.
+
+## <a name="switch-out-of-s-mode"></a>Verlassen des S Modus
+
+Der [Windows 10 S Modus](https://support.microsoft.com/help/4456067/windows-10-switch-out-of-s-mode) ist auf Sicherheit und Leistung ausgelegt. Wenn Ihre Geräte nur Apps aus dem Microsoft Store ausführen, können Sie den S Modus verwenden, um Ihre Geräte zu schützen. Wenn Ihre Geräte Apps benötigen, die im Microsoft Store nicht verfügbar sind, verlassen Sie den S Modus. Das Verlassen des S Modus ist eine Möglichkeit. Sobald Sie den S Modus verlassen haben, können Sie jedoch nicht in den Windows 10 S Modus zurückkehren.
+
+In den folgenden Schritten wird gezeigt, wie Sie ein Profil erstellen, das den S Modus auf Windows 10 (1809 oder höher) kontrolliert.
+
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
+2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+3. Geben Sie einen **Namen** und eine **Beschreibung** für das Profil ein. Geben Sie zum Beispiel etwas wie `Windows 10 switch off S mode` ein.
+4. Wählen Sie unter **Plattform** die Option **Windows 10 und höher** aus.
+5. Wählen Sie für **Profiltyp** **Edition upgrade** (Editionsupgrade) aus.
+6. Wählen Sie **Mode switch (Windows Insider only)** (Modus wechseln (nur Windows-Insider)) aus, und legen Sie die Eigenschaft **Switch out of S mode** (S Modus verlassen) fest. Folgende Optionen sind verfügbar:
+
+    - **No configuration** (Keine Konfiguration): Ein Gerät im S Modus bleibt im S Modus. Ein Endbenutzer kann das Gerät aus dem S Modus holen.
+    - **Keep in S mode** (Im S Modus lassen): Der Endbenutzer kann das Gerät nicht aus dem S Modus holen.
+    - **Switch** (Verlassen): Das Gerät wird aus dem S Modus geholt.
+
+7. Klicken Sie auf **OK**, um die Änderungen zu speichern. Klicken Sie auf **Erstellen**, um das Profil zu erstellen.
 
 Das Profil wird erstellt und in der Profilliste aufgeführt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Informationen zum Zuweisen dieses Profils an Gruppen finden Sie unter [Zuweisen von Microsoft Intune-Geräteprofilen](device-profile-assign.md).
+Dieses Profil meinen Gruppen [zuweisen](device-profile-assign.md).
 
 >[!NOTE]
 >Wenn Sie später die Richtlinienzuweisung entfernen, wird die Windows-Version auf dem Gerät nicht wiederhergestellt und wird weiterhin normal ausgeführt.

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 108382a04095330745ca82dc1d70ab48e70362e5
-ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
+ms.openlocfilehash: 239c8d5dc4143ba91c78b9b5c502c7a20b101417
+ms.sourcegitcommit: 7afa90264a2098453885be3d37655ae1a32ca67d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40252450"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47229074"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Verwenden des Problembehandlungsportals zur Unterstützung von Benutzern Ihres Unternehmens
 
@@ -36,7 +36,7 @@ Wenn ein Benutzer den Support wegen eines technischen Problems mit Intune kontak
 - Benutzerstatus
 - Zuweisungen
 - Kompatibilitätsprobleme
-- Gerät nicht gefunden
+- Das Gerät reagiert nicht.
 - Das Gerät erhält keine VPN- oder WLAN-Einstellungen
 - App-Installationsfehler
 
@@ -64,16 +64,18 @@ Sie können den Bereich **Problembehandlung** verwenden, um Benutzerinformatione
 | 1.   | Kontostatus  | Zeigt den Status des aktuellen Intune-Mandanten als **Aktiv** oder **Inaktiv** an.       |
 | 2.   | Benutzerauswahl  | Der Name des aktuell ausgewählten Benutzers. Klicken Sie auf **Benutzer wechseln**, um einen neuen Benutzer auszuwählen.       |
 | 3.   | Benutzerstatus  | Zeigt den Status der Intune-Lizenz des Benutzers, die Anzahl von Geräten, die jeweilige Gerätekompatibilität, die Anzahl von Apps und die App-Kompatibilität an.       |
-| 4.   | Benutzerinformationen  | Verwenden Sie die Liste in diesem Bereich, um die zu überprüfenden Details auszuwählen. <br>Sie können Folgendes auswählen: <ul><li>Mobile Apps<li>App-Schutzrichtlinien<li>Konformitätsrichtlinien<li> Konfigurationsrichtlinien</ul>      |
+| 4.   | Benutzerinformationen  | Verwenden Sie die Liste in diesem Bereich, um die zu überprüfenden Details auszuwählen. <br>Sie können Folgendes auswählen: <ul><li>Client-Apps<li>Konformitätsrichtlinien<li> Konfigurationsrichtlinien<li>App-Schutzrichtlinien <li>Registrierungseinschränkungen</ul>      |
 | 5.   | Gruppenmitgliedschaft  | Zeigt die aktuellen Gruppen, denen der ausgewählte Benutzer als Mitglied angehört.       |
 
-## <a name="mobile-apps-reference"></a>Referenz für mobile Apps
+## <a name="client-apps-reference"></a>Referenz für Client-Apps
 
-Die Apps, die auf Geräten oder Geräten von Benutzern ausgeführt werden, die von Intune und Azure Active Directory (AD) verwaltetet werden.
+Die Apps, die auf folgenden Geräten ausgeführt werden:
+- Geräte, die von Intune und Azure Active Directory verwaltet werden 
+- Geräte, deren Benutzer von Intune und Azure Active Directory verwaltet werden
 
 ### <a name="properties"></a>Eigenschaften
 
-Die Eigenschaften von mobilen Apps
+Die Eigenschaften von Client-Apps
 
 | Eigenschaft      | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -91,7 +93,7 @@ Geräte, die von Intune oder durch Benutzer verwaltet werden, die von Intune ode
 | Gerätename        | Der Name des Gerätetyps                                                                                                     |
 | Verwaltet von         | Der Zeitstempel, zu dem Richtlinie geändert wurde                                                                                              |
 | Der Azure AD-Jointyp | Welchen Status haben die App-Schutz-Apps der einzelnen Benutzers? Die möglichen Statuswerte für die apps sind **Eingecheckt** und **Nicht eingecheckt**. |
-| Eigentum          | Der Typ des Gerätebesitzes Dieser kann **Unternehmen**, **Persönlich** oder **Unbekannt** sein.                                               |
+| Eigentum          | Der Typ des Gerätebesitzes (**Company**, **Personal** oder **Unknown** („Unternehmen“, „Privat“ oder „Unbekannt“)).                                               |
 | Mit Intune kompatibel   | Der Name des Gerätetyps                                                                                                     |
 | Mit Azure AD kompatibel | Welchen Status haben die App-Schutz-Apps der einzelnen Benutzers? Die möglichen Statuswerte für die apps sind **Eingecheckt** und **Nicht eingecheckt**. |
 | Betriebssystem                 | Das auf dem Gerät installierte Betriebssystem                                                                                       |
@@ -100,20 +102,20 @@ Geräte, die von Intune oder durch Benutzer verwaltet werden, die von Intune ode
 
 ### <a name="app-protection-status"></a>Schutzstatus der App
 
-Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die in EMS-Technologien (Enterprise Mobility Solution) integriert werden. Dadurch wird ein grundlegender Schutz Ihrer Unternehmensdaten bereitgestellt, wenn diese auf mobile Apps, einschließlich der mobilen Office-Apps, heruntergeladen wird. 
+Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die in EMS-Technologien (Enterprise Mobility Solution) integriert werden. Durch diese Richtlinien werden Ihrer Unternehmensdaten grundlegend geschützt, wenn diese auf mobile Apps, einschließlich mobile Office-Apps, heruntergeladen werden. 
 
 | Eigenschaft    | Beschreibung                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | Der Typ des Gerätebesitzes Dieser kann **Unternehmen**, **Persönlich** oder **Unbekannt** sein. |
+| Status      | Der Typ des Gerätebesitzes (**Company**, **Personal** oder **Unknown** („Unternehmen“, „Privat“ oder „Unbekannt“)). |
 | App-Name    | Der Name der Anwendung                                                           |
 | Gerätename | Der Name des Gerätetyps                                                       |
 | Gerätetyp | Der Name des Gerätetyps                                                       |
-| Richtlinien    | Der Typ des Gerätebesitzes Dieser kann **Unternehmen**, **Persönlich** oder **Unbekannt** sein. |
+| Richtlinien    | Der Typ des Gerätebesitzes (**Company**, **Personal** oder **Unknown** („Unternehmen“, „Privat“ oder „Unbekannt“)). |
 | Letzte Synchronisierung   | Der Zeitstempel, zu dem das Gerät zuletzt mit Intune synchronisiert wurde.                   |
 
 ## <a name="app-protection-policies-reference"></a>Referenz für App-Schutzrichtlinien
 
-Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die mit EMS-Technologien integriert werden. Dadurch wird ein grundlegender Schutz Ihrer Unternehmensdaten bereitgestellt, wenn diese auf mobile Apps, einschließlich der mobilen Office-Apps, heruntergeladen wird. 
+Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die mit EMS-Technologien integriert werden können. Diese Richtlinien schützen Ihre Unternehmensdaten grundlegend, wenn diese in mobile Apps heruntergeladen werden (dazu zählen auch mobile Office-Apps). 
 
 ### <a name="properties"></a>Eigenschaften
 
@@ -123,7 +125,7 @@ Die Tabelle fasst den Status der App-Schutzrichtlinien für Geräte zusammen, di
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | Name        | Der Name der Anwendung                                                                                                        |
 | Bereitgestellt    | Welchen Status haben die App-Schutz-Apps der einzelnen Benutzers? Die möglichen Statuswerte für die apps sind **Eingecheckt** und **Nicht eingecheckt**. |
-| Plattform    | Der Typ des Gerätebesitzes Dieser kann **Unternehmen**, **Persönlich** oder **Unbekannt** sein.                                               |
+| Plattform    | Der Typ des Gerätebesitzes (**Company**, **Personal** oder **Unknown** („Unternehmen“, „Privat“ oder „Unbekannt“)).                                               |
 | Anmeldung  | Der Name des Gerätetyps                                                                                                     |
 | Letzte Aktualisierung | Der Zeitstempel, zu dem Richtlinie geändert wurde                                                                                              |
 
@@ -136,7 +138,7 @@ Geräte, die von Intune oder durch Benutzer verwaltet werden, die von Intune ode
 | Gerätename        | Der Name des Gerätetyps                                                                                                     |
 | Verwaltet von         | Der Zeitstempel, zu dem Richtlinie geändert wurde                                                                                              |
 | Der Azure AD-Jointyp | Welchen Status haben die App-Schutz-Apps der einzelnen Benutzers? Die möglichen Statuswerte für die apps sind **Eingecheckt** und **Nicht eingecheckt**. |
-| Eigentum          | Der Typ des Gerätebesitzes Dieser kann **Unternehmen**, **Persönlich** oder **Unbekannt** sein.                                               |
+| Eigentum          | Der Typ des Gerätebesitzes (**Company**, **Personal** oder **Unknown** („Unternehmen“, „Privat“ oder „Unbekannt“)).                                               |
 | Mit Intune kompatibel   | Der Name des Gerätetyps                                                                                                     |
 | Mit Azure AD kompatibel | Welchen Status haben die App-Schutz-Apps der einzelnen Benutzers? Die möglichen Statuswerte für die apps sind **Eingecheckt** und **Nicht eingecheckt**. |
 | Mit Azure AD kompatibel | Welchen Status haben die App-Schutz-Apps der einzelnen Benutzers? Die möglichen Statuswerte für die apps sind **Eingecheckt** und **Nicht eingecheckt**. |
@@ -157,7 +159,7 @@ Die Eigenschaften der Kompatibilitätsrichtlinien.
 | Zuweisung    | Welchen Status haben die App-Schutz-Apps der einzelnen Benutzers? Die möglichen Statuswerte für die apps sind **Eingecheckt** und **Nicht eingecheckt**. |
 | Name          | Der Name der Anwendung                                                                                                        |
 | Betriebssystem            | Das auf dem Gerät installierte Betriebssystem                                                                                       |
-| Richtlinientyp   | Der Typ des Gerätebesitzes Dieser kann **Unternehmen**, **Persönlich** oder **Unbekannt** sein.                                               |
+| Richtlinientyp   | Der Typ des Gerätebesitzes (**Company**, **Personal** oder **Unknown** („Unternehmen“, „Privat“ oder „Unbekannt“)).                                               |
 | Zuletzt geändert | Der Name des Gerätetyps                                                                                                     |
 
 ### <a name="devices"></a>Geräte
@@ -169,7 +171,7 @@ Geräte, die von Intune oder durch Benutzer verwaltet werden, die von Intune ode
 | Gerätename        | Der Name des Gerätetyps                                                                                                     |
 | Verwaltet von         | Der Zeitstempel, zu dem Richtlinie geändert wurde                                                                                              |
 | Der Azure AD-Jointyp | Welchen Status haben die App-Schutz-Apps der einzelnen Benutzers? Die möglichen Statuswerte für die apps sind **Eingecheckt** und **Nicht eingecheckt**. |
-| Eigentum          | Der Typ des Gerätebesitzes Dieser kann **Unternehmen**, **Persönlich** oder **Unbekannt** sein.                                               |
+| Eigentum          | Der Typ des Gerätebesitzes (**Company**, **Personal** oder **Unknown** („Unternehmen“, „Privat“ oder „Unbekannt“)).                                               |
 | Mit Intune kompatibel   | Der Name des Gerätetyps                                                                                                     |
 | Mit Azure AD kompatibel | Welchen Status haben die App-Schutz-Apps der einzelnen Benutzers? Die möglichen Statuswerte für die apps sind **Eingecheckt** und **Nicht eingecheckt**. |
 | Betriebssystem                 | Das auf dem Gerät installierte Betriebssystem                                                                                       |
@@ -178,15 +180,15 @@ Geräte, die von Intune oder durch Benutzer verwaltet werden, die von Intune ode
 
 ### <a name="app-protection-policies"></a>App-Schutzrichtlinien
 
-Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die mit EMS-Technologien integriert werden. Dadurch wird ein grundlegender Schutz Ihrer Unternehmensdaten bereitgestellt, wenn diese auf mobile Apps, einschließlich der mobilen Office-Apps, heruntergeladen wird. 
+Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die mit EMS-Technologien integriert werden. Durch diese Richtlinien werden Ihrer Unternehmensdaten grundlegend geschützt, wenn diese auf mobile Apps, einschließlich mobile Office-Apps, heruntergeladen werden. 
 
 | Eigenschaft    | Beschreibung                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | Der Typ des Gerätebesitzes Dieser kann **Unternehmen**, **Persönlich** oder **Unbekannt** sein. |
+| Status      | Der Typ des Gerätebesitzes (**Company**, **Personal** oder **Unknown** („Unternehmen“, „Privat“ oder „Unbekannt“)). |
 | App-Name    | Der Name der Anwendung                                                           |
 | Gerätename | Der Name des Gerätetyps                                                       |
 | Gerätetyp | Der Name des Gerätetyps                                                       |
-| Richtlinien    | Der Typ des Gerätebesitzes Dieser kann **Unternehmen**, **Persönlich** oder **Unbekannt** sein. |
+| Richtlinien    | Der Typ des Gerätebesitzes (**Company**, **Personal** oder **Unknown** („Unternehmen“, „Privat“ oder „Unbekannt“)). |
 | Letzte Synchronisierung   | Der Zeitstempel, zu dem das Gerät zuletzt mit Intune synchronisiert wurde.                   |
 
 ## <a name="configuration-policies-reference"></a>Referenz für Konfigurationsrichtlinien
@@ -202,7 +204,7 @@ Die Eigenschaften der Konfigurationsrichtlinien
 | Zuweisung    | Welchen Status haben die App-Schutz-Apps der einzelnen Benutzers? Die möglichen Statuswerte für die apps sind **Eingecheckt** und **Nicht eingecheckt**. |
 | Name          | Der Name der Anwendung                                                                                                        |
 | Betriebssystem            | Das auf dem Gerät installierte Betriebssystem                                                                                       |
-| Richtlinientyp   | Der Typ des Gerätebesitzes Dieser kann **Unternehmen**, **Persönlich** oder **Unbekannt** sein.                                               |
+| Richtlinientyp   | Der Typ des Gerätebesitzes (**Company**, **Personal** oder **Unknown** („Unternehmen“, „Privat“ oder „Unbekannt“)).                                               |
 | Zuletzt geändert | Der Name des Gerätetyps                                                                                                     |
 
 ### <a name="devices"></a>Geräte
@@ -214,7 +216,7 @@ Geräte, die von Intune oder durch Benutzer verwaltet werden, die von Intune ode
 | Gerätename        | Der Name des Gerätetyps                                                                                                     |
 | Verwaltet von         | Der Zeitstempel, zu dem Richtlinie geändert wurde                                                                                              |
 | Der Azure AD-Jointyp | Welchen Status haben die App-Schutz-Apps der einzelnen Benutzers? Die möglichen Statuswerte für die apps sind **Eingecheckt** und **Nicht eingecheckt**. |
-| Eigentum          | Der Typ des Gerätebesitzes Dieser kann **Unternehmen**, **Persönlich** oder **Unbekannt** sein.                                               |
+| Eigentum          | Der Typ des Gerätebesitzes (**Company**, **Personal** oder **Unknown** („Unternehmen“, „Privat“ oder „Unbekannt“)).                                               |
 | Mit Intune kompatibel   | Der Name des Gerätetyps                                                                                                     |
 | Mit Azure AD kompatibel | Welchen Status haben die App-Schutz-Apps der einzelnen Benutzers? Die möglichen Statuswerte für die apps sind **Eingecheckt** und **Nicht eingecheckt**. |
 | Betriebssystem                 | Das auf dem Gerät installierte Betriebssystem                                                                                       |
@@ -224,16 +226,53 @@ Geräte, die von Intune oder durch Benutzer verwaltet werden, die von Intune ode
 
 ### <a name="app-protection-policies"></a>App-Schutzrichtlinien
 
-Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die mit EMS-Technologien integriert werden. Dadurch wird ein grundlegender Schutz Ihrer Unternehmensdaten bereitgestellt, wenn diese auf mobile Apps, einschließlich der mobilen Office-Apps, heruntergeladen wird. 
+Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die mit EMS-Technologien integriert werden. Durch diese Richtlinien werden Ihrer Unternehmensdaten grundlegend geschützt, wenn diese auf mobile Apps, einschließlich mobile Office-Apps, heruntergeladen werden. 
 
 | Eigenschaft    | Beschreibung                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Status      | Der Typ des Gerätebesitzes Dieser kann **Unternehmen**, **Persönlich** oder **Unbekannt** sein. |
+| Status      | Der Typ des Gerätebesitzes (**Company**, **Personal** oder **Unknown** („Unternehmen“, „Privat“ oder „Unbekannt“)). |
 | App-Name    | Der Name der Anwendung                                                           |
 | Gerätename | Der Name des Gerätetyps                                                       |
 | Gerätetyp | Der Name des Gerätetyps                                                       |
-| Richtlinien    | Der Typ des Gerätebesitzes Dieser kann **Unternehmen**, **Persönlich** oder **Unbekannt** sein. |
+| Richtlinien    | Der Typ des Gerätebesitzes (**Company**, **Personal** oder **Unknown** („Unternehmen“, „Privat“ oder „Unbekannt“)). |
 | Letzte Synchronisierung   | Der Zeitstempel, zu dem das Gerät zuletzt mit Intune synchronisiert wurde.                   |
+
+## <a name="enrollment-failure-reference"></a>Referenz für Registrierungsfehler
+
+In der Tabelle mit Registrierungsfehlern werden Registrierungsversuche aufgelistet, bei denen ein Fehler aufgetreten ist. Es kann sein, dass ein Gerät aus der unten stehenden Tabelle bei einem späteren Registrierungsversuch erfolgreich registriert werden kann. Zudem kann es sein, dass einige fehlgeschlagene Registrierungen nicht aufgelistet sind. Nicht für alle fehlgeschlagenen Registrierungen stehen Informationen zur Fehlerbehebung zur Verfügung.
+
+| Tabellenspalte | Beschreibung |
+|-------------|----------|
+| Enrollment start (Start der Registrierung) | Der Zeitpunkt, zu dem der Benutzer mit der Registrierung begonnen hat |
+| Betriebssystem | Das Betriebssystem des Geräts. |
+| BS-Version | Die Betriebssystemversion des Geräts |
+| Fehler | Die Ursache für den Fehler |
+
+### <a name="failure-details"></a>Failure details (Fehlerdetails)
+
+Wenn Sie eine Zeile mit einem Fehler auswählen, werden mehr Details angezeigt.
+
+| Abschnitt | Beschreibung |
+|-------------|----------|
+| Failure details (Fehlerdetails) | Eine ausführlichere Beschreibung des Fehlers |
+| Potential remediations (Mögliche Fehlerbehebungen) | Empfohlene Schritte zum Beheben des Fehlers. Für einige Fehler gibt es keine empfohlenen Fehlerbehebungen. |
+| Resources (Ressourcen) (Optional) | Links zu Artikeln oder Portalbereichen, in denen Sie entsprechende Aktionen durchführen können |
+
+### <a name="enrollment-errors"></a>Registrierungsfehler
+
+| Fehler | Details |
+|-------------|----------|
+| iOS Timeout or Failure (iOS-Timeout oder -Fehler.). | Ein Timeout zwischen Gerät und Intune, weil der Benutzer zu lange für die Registrierung gebraucht hat |
+| Benutzer nicht gefunden oder nicht lizenziert. | Der Benutzer ist nicht lizenziert oder wurde aus dem Dienst entfernt. |
+| Gerät bereits registriert. | Der Benutzer hat versucht, ein Gerät über das Unternehmensportal zu registrieren, das noch für einen anderen Benutzer registriert ist. |
+| Not onboarded into Intune (Nicht in Intune integriert.). | Der Benutzer hat versucht, ein Gerät zu registrieren, auf dem Intune-MDM nicht konfiguriert war. |
+| Fehler bei der Registrierungsautorisierung. | Der Benutzer hat versucht, ein Gerät über eine veraltete Version des Unternehmensportals zu registrieren. |
+| Gerät nicht unterstützt. | Das Gerät erfüllt nicht die Mindestanforderungen für die Intune-Registrierung. |
+| Registrierungseinschränkungen nicht erfüllt. | Die Registrierung wurde aufgrund einer vom Administrator konfigurierten Registrierungseinschränkung blockiert. |
+| Gerätekapazität erreicht | Die Registrierung wurde aufgrund einer vom Administrator konfigurierten zulässigen Anzahl von Geräten blockiert. |
+| Apple-Onboarding | Die Registrierung aller iOS-Geräte wurde blockiert, weil ein Apple-MDM-Push-Zertifikat in Intune fehlt oder abgelaufen ist. |
+| Gerät nicht vorab registriert. | Das Gerät wurde nicht vorab als Unternehmensgerät registriert, und alle Registrierungen von Privatgeräten wurden von einem Administrator blockiert. |
+| Das Feature wird nicht unterstützt. | Vermutlich hat der Benutzer versucht, sein Gerät über eine Registrierungsmethode zu registrieren, die von Ihrer Intune-Konfiguration nicht unterstützt wird. |
 
 ## <a name="collect-available-data-from-mobile-device"></a>Erfassen verfügbarer Daten mobiler Geräte
 

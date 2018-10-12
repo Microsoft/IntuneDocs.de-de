@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
+ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329817"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46329996"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für iOS-Geräte in Microsoft Intune
 
@@ -114,7 +114,7 @@ Der überwachte Modus von iOS kann nur während der ersten Einrichtung des Gerä
 
 -   **Kontrollcenterzugriff bei gesperrtem Gerät:** Erlauben Sie dem Benutzer den Zugriff auf die Kontrollcenter-App, während das Gerät gesperrt ist.
 -   **Benachrichtigungen bei Gerätesperre:** Erlauben Sie dem Benutzer den Zugriff auf die Benachrichtigungsansicht, ohne dass das Gerät entsperrt werden muss.
--   **Passbook bei Gerätesperre:** Erlauben Sie dem Benutzer den Zugriff auf die Passbook-App, während das Gerät gesperrt ist.
+-   **Wallet-Benachrichtigungen bei gesperrtem Gerät:** Erlauben Sie dem Benutzer den Zugriff auf die Wallet-App, während das Gerät gesperrt ist.
 -   **Ansicht „Heute“ bei Gerätesperre:** Erlauben Sie dem Benutzer den Zugriff auf die Ansicht „Heute“, während das Gerät gesperrt ist.
 
 ## <a name="app-store-doc-viewing-gaming"></a>App Store, Dokumentanzeige, Spiele
@@ -214,7 +214,7 @@ Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Da
 -   **Persönlicher Hotspot:** Verhindern Sie, dass das Gerät als persönlicher Hotspot genutzt wird. Diese Einstellung kann mit einigen Anbietern nicht kompatibel sein.
 -   **Verknüpfen von WLAN-Netzwerken nur mithilfe von Konfigurationsprofilen (nur überwacht):** Dem Gerät nur erlauben, eine Verbindung mit WLAN-Netzwerken herzustellen, die mit einem Intune-WLAN-Profil konfiguriert wurden.
 
-- **Mobilfunk-Verwendungsregeln (nur verwaltete Apps):** Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn Sie sich in Mobilfunknetzwerken befinden. Es stehen die folgenden Optionen zur Auswahl:
+- **Mobilfunk-Verwendungsregeln (nur verwaltete Apps):** Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn Sie sich in Mobilfunknetzwerken befinden. Wählen Sie aus:
     - **Verwendung von Datenverbindungen blockieren:** Sie können die Verwendung von Datenverbindungen für **Alle verwalteten Apps** blockieren oder **bestimmte Apps wählen**.
     - **Verwendung von Datenverbindungen beim Roaming blockieren:** Sie können die Verwendung von Datenverbindungen beim Roaming für **Alle verwalteten Apps** blockieren oder **bestimmte Apps wählen**.
 
@@ -287,7 +287,7 @@ Nachdem Sie jeden App-Namen und jede Bündel-ID angegeben haben, wählen Sie **H
 
 Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die Bündel-ID von anderen Apps zu finden, wenden Sie sich an den Softwarehersteller.
 
-| Paket-ID                   | App-Name     | Herausgeber |
+| Paket-ID                   | App-Name     | Verleger |
 |-----------------------------|--------------|-----------|
 | com.apple.AppStore          | App Store    | Apple     |
 | com.apple.calculator        | Calculator   | Apple     |
@@ -337,7 +337,7 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 -   **Popups:** Aktivieren oder deaktivieren Sie den Popupblocker des Browsers.
 
 
-## <a name="domains"></a>Domains
+## <a name="domains"></a>Domänen
 
 ### <a name="unmarked-email-domains"></a>Nicht markierte E-Mail-Domänen
 

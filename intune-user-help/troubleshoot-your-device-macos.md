@@ -1,11 +1,11 @@
 ---
-title: Behandeln häufig auftretender Probleme mit Ihrem iOS-Gerät | Microsoft-Dokumentation
-description: Lösungen für häufig auftretende Probleme mit Ihrem iOS-Gerät.
+title: Behandeln häufig auftretender Probleme mit Ihrem macOS-Gerät | Microsoft-Dokumentation
+description: Behandeln häufig auftretender Probleme mit macOS-Geräten in Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eeb9b04a3e8d7a5d1f96e58e3df7310d53817090
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 003bf4046a997e3633105e4dc41c93a82e16ee40
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146777"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505715"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>Behandeln häufig auftretender Probleme mit dem macOS-Gerät
 
-Gelegentlich können Probleme mit dem macOS-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Problemen empfehlen wir Ihnen, sich über die Kontaktinformationen auf der [Unternehmensportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) an den Support Ihres Unternehmens zu wenden.
+Behandeln häufig auftretender Probleme mit macOS-Geräten während und nach der Registrierung Wenn das aufgetretene Problem nicht unten aufgelistet ist, wenden Sie sich an den Support Ihres Unternehmens. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 - [Meine macOS-Version wird noch nicht unterstützt.](your-macos-version-isnt-yet-supported.md)
-- [Aktualisieren Ihres macOS-Geräts](you-need-to-update-your-macos-device.md)
-- [Potenzielle Fehler bei der Nutzung des Self-Service Jamf](device-little-different-jamf.md)
-- [Suchen der Seriennummer](how-do-i-find-the-serial-number-on-my-device-macos.md)
-- [Identifizieren Ihres Geräts](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+- [Ich muss mein macOS-Gerät aktualisieren.](you-need-to-update-your-macos-device.md)
+- [Mein von Jamf verwaltetes Gerät ist nicht kompatibel.](device-little-different-jamf.md)
+- [Ich kann die Seriennummer nicht finden.](how-do-i-find-the-serial-number-on-my-device-macos.md)
+- [Ich soll mein Gerät identifizieren](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/13/2017
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.technology: ''
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 223906d37159ba4081f5a5c055392321ac02e0ab
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d80d7a05dc01298dc7bc347098cf85fbdfc3689f
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020621"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403492"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Abmelden des aktuellen Benutzers eines mit Intune verwalteten iOS-Geräts
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Die Aktion **Aktiven Benutzer abmelden** meldet den aktuellen Benutzer auf einem freigegebenen iPad-Gerät ab, das für die Verwaltung der iOS Classroom-App mit einem [iOS-Bildungsprofil](education-settings-configure-ios.md) konfiguriert ist. 
+Mit der Aktion **Aktiven Benutzer abmelden** wird der aktuelle Benutzer auf einem freigegebenen iPad abgemeldet. 
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 
@@ -36,7 +36,7 @@ Die Aktion **Aktiven Benutzer abmelden** meldet den aktuellen Benutzer auf einem
 - macOS – Nicht unterstützt
 - Android – Nicht unterstützt
 
-## <a name="how-to-logout-the-current-user"></a>So melden Sie den aktuellen Benutzer ab
+## <a name="how-to-log-out-the-current-user"></a>So melden Sie den aktuellen Benutzer ab
 
 1.  Melden Sie sich beim Azure-Portal an.
 2.  Wählen Sie **Weitere Dienste** > **Überwachung und Verwaltung** > **Intune** aus.

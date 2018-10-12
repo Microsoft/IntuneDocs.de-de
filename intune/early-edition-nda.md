@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/4/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: beee1462c1b6e683287b4d304df386ce525be820
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: 0f6447f4a5cfb2638278a59414e83f744adb8c81
+ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141642"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45978262"
 ---
 # <a name="the-early-edition-for-microsoft-intune---september-2018"></a>Die Early Edition für Microsoft Intune – September 2018
 
@@ -57,6 +57,9 @@ Die Always On-VPN-Einstellung wird in **Gerätekonfiguration** > **Profile** > *
 ### <a name="outlook-for-ios-and-android-app-configuration-policy---1828527---"></a>Konfigurationsrichtlinie für Outlook für iOS und Android-App <!--1828527 -->
 Sie können eine Konfigurationsrichtlinie für Outlook für iOS und Android-Apps erstellen. Zusätzliche Konfigurationseinstellungen werden hinzugefügt, sobald sie für Outlook für iOS und Android aktiviert werden.
 
+###  <a name="windows-line-of-business-lob-app-file-extensions----1884873---"></a>Dateierweiterungen branchenspezifischer Windows-Apps (LOB-Apps) <!-- 1884873 -->
+Die Dateierweiterungen für Windows-LOB-Apps umfassen *.msi*, *.appx*, *.appxbundle*, *.msix* und *.msixbundle*. Sie können eine App in Microsoft Intune hinzufügen, indem Sie **Client-Apps** > **Apps** > **Hinzufügen** auswählen. Der Bereich **App hinzufügen** wird angezeigt. Dort können Sie den **App-Typ** auswählen. Wählen Sie für Windows-LOB-Apps **Branchenspezifische App** als App-Typ aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine Installationsdatei mit der entsprechenden Erweiterung ein.
+
 ### <a name="remotely-lock-noncompliant-devices----2064495---"></a>Remotesperren nicht konformer Geräte <!-- 2064495 -->
 Wenn ein Gerät nicht konform ist, werden Sie eine Aktion in der Konformitätsrichtlinie erstellen können, die das Gerät remote sperrt. Erstellen Sie in Intune > **Gerätekonformität** eine neue Richtlinie, oder wählen Sie eine vorhandene Richtlinie aus. Wählen Sie **Aktionen bei Inkompatibilität** > **Hinzufügen** und dann das Remotesperren des Geräts aus.
 Unterstützt auf: 
@@ -72,6 +75,9 @@ Sie werden die Steuerung der Intune-APP-Datenübertragungseinstellungen auf iOS-
 ### <a name="use-a-pre-shared-key-in-a-windows-10-wi-fi-profile----2662938---"></a>Verwenden eines vorinstallierten Schlüssels in einem Windows 10-WLAN-Profil <!-- 2662938 -->
 Sie werden einen vorinstallierten Schlüssel (Pre-Shared Key, PSK) mit dem WPA/WPA2-Personal-Sicherheitsprotokoll verwenden können, um ein WLAN-Konfigurationsprofil für Windows 10 zu authentifizieren.
 Derzeit müssen Sie ein WLAN-Profil importieren oder ein benutzerdefiniertes Profil erstellen, um einen vorinstallierten Schlüssel zu verwenden. [WLAN-Einstellungen für Geräte mit Windows 10 und höher in Intune](wi-fi-settings-windows.md) werden die aktuellen Einstellungen aufgeführt. 
+
+### <a name="app-protection-policy-app-settings-for-web-data----2662995-eeready---"></a>App-Schutzrichtlinieneinstellungen (APP) für Webdaten <!-- 2662995 eeready -->
+App-Richtlinieneinstellungen für Webinhalte auf Android- und iOS-Geräten werden aktualisiert, um sowohl HTTP- und HTTPS-Weblinks als auch Datenübertragungen über universelle iOS-Links und Android-App-Links besser zu verarbeiten.  
 
 ### <a name="autopilot-device-sync-frequency-increasing-to-every-12-hours----2753673---"></a>Erhöhen der Synchronisierungshäufigkeit von Autopilot-Geräten auf alle 12 Stunden <!-- 2753673 -->
 Autopilot-Geräte werden alle 12 Stunden statt alle 24 Stunden synchronisiert.

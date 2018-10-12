@@ -1,12 +1,11 @@
 ---
-title: Verwalten von PCs mit Softwareclient
-titlesuffix: Microsoft Intune
+title: 'Verwalten von Computern mit Clientsoftware in Microsoft Intune: Azure | Microsoft Dokumentation'
 description: Verwalten Sie Windows-PCs durch die Installation der Intune-Clientsoftware.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +14,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 5a248345a40cd7cfcff3883643562923f9535d3b
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
+ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "41910637"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45978245"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Verwalten von Windows-PCs als Computer mit dem Intune-Softwareclient
 
@@ -57,6 +56,9 @@ Intune unterstützt die Verwaltung von Windows-PCs als Computer mit dem Software
 |Administratorrechte|Das Konto, mit dem die Clientsoftware installiert wird, muss über lokale Administratorrechte auf diesem Gerät verfügen.|
 |Windows Installer 3.1|Auf dem PC wird Windows Installer 3.1 oder höher benötigt.<br /><br />So zeigen Sie die Windows Installer-Version auf einem PC an:<br /><br />  Klicken Sie auf dem PC mit der rechten Maustaste auf **%windir%\System32\msiexec.exe**, und klicken Sie dann auf **Eigenschaften**.<br /><br />Sie können die neueste Version von Windows Installer von der Microsoft Developer Network-Website unter [Windows Installer Redistributables (Weitervertreibbare Komponenten für Windows Installer)](http://go.microsoft.com/fwlink/?LinkID=234258) herunterladen.|
 |Entfernen nicht kompatibler Clientsoftware|Bevor Sie die Intune-Clientsoftware installieren, deinstallieren Sie sämtliche Clientsoftware für Configuration Manager, Operations Manager und Service Manager auf diesem PC.|
+
+> [!WARNING]
+> Microsoft hat angekündigt, dass [der Support für Windows 7 am 14. Januar 2020 endet](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). Ab diesem Datum wird auch der Support von Intune für Windows 7-Geräte eingestellt. Daher wird dringend empfohlen, dass Sie zu Windows 10 wechseln, um eine Unterbrechung von Service- oder Supportleistungen zu vermeiden. 
 
 ## <a name="deploying-the-intune-software-client"></a>Bereitstellen des Intune-Softwareclients
 Als Intune-Administrator können Sie Benutzern den Intune-Softwareclient auf verschiedene Weisen zur Verfügung stellen. Anleitungen finden Sie unter [Installieren des Intune-Softwareclients auf Windows-PCs](install-the-windows-pc-client-with-microsoft-intune.md).

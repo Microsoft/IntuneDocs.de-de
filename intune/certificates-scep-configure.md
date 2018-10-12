@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce017f323ebbe4095f5aa31990878afce0116573
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 80b860810800ca887ac55de6fbfc41b2fded3b12
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321236"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028731"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune
 
@@ -82,7 +82,7 @@ Bevor Sie Zertifikatprofile konfigurieren können, müssen Sie die folgenden Sch
 Erstellen Sie ein Domänenbenutzerkonto, das als NDES-Dienstkonto verwendet werden soll. Sie geben dieses Konto an, wenn Sie Vorlagen auf der ausstellenden Zertifizierungsstelle konfigurieren, bevor Sie NDES installieren und konfigurieren. Stellen Sie sicher, dass der Benutzer über die Standardrechte **Lokal anmelden**, **Anmelden als Dienst** und **Anmelden als Batchauftrag** verfügt. In einigen Organisationen werden diese Rechte durch Härtungsrichtlinien deaktiviert.
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Schritt 2: Konfigurieren von Zertifikatvorlagen für die Zertifizierungsstelle
-In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
+In diesem Schritt führen Sie die folgenden Aktionen aus:
 
 - Konfigurieren einer Zertifikatvorlage für NDES
 - Veröffentlichen der Zertifikatvorlage für NDES
@@ -145,7 +145,7 @@ Konfigurieren Sie die Zertifizierungsstelle, um dem Antragsteller zu ermögliche
 3. Überprüfen Sie, ob die Vorlage veröffentlicht wurde, indem Sie sie im Ordner **Zertifikatvorlagen** anzeigen.
 
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Schritt 3: Konfigurieren der Voraussetzungen auf dem NDES-Server
-In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
+In diesem Schritt führen Sie die folgenden Aktionen aus:
 
 - Hinzufügen von NDES zu einem Windows-Server und Konfigurieren von IIS zur Unterstützung von NDES
 - Hinzufügen des NDES-Dienstkontos zur Gruppe „IIS_IUSR“
@@ -156,7 +156,7 @@ In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
    1. Wählen Sie im Assistenten die Option **Active Directory-Zertifikatdienste** , um Zugriff auf die Rollendienste der AD-Zertifikatdienste zu erhalten. Wählen Sie die Option **Registrierungsdienst für Netzwerkgeräte**, deaktivieren Sie die Option **Zertifizierungsstelle**, und schließen Sie den Assistenten dann ab.
 
       > [!TIP]
-      > Klicken Sie im **Installationsfortschritt** nicht auf **Schließen**. Klicken Sie stattdessen auf den Link **Active Directory-Zertifikatdienste auf dem Zielserver konfigurieren**. Daraufhin wird der Assistent zur **AD CS-Konfiguration** geöffnet, den Sie für die nächste Aufgabe verwenden. Nachdem der Assistent für die AD CS-Konfiguration geöffnet wurde, können Sie den Assistenten zum Hinzufügen von Rollen und Features schließen.
+      > Klicken Sie im **Installationsfortschritt** nicht auf **Schließen**. Klicken Sie stattdessen auf den Link **Active Directory-Zertifikatdienste auf dem Zielserver konfigurieren**. Der Assistent für die **AD CS-Konfiguration** wird geöffnet, den Sie für den nächsten Schritt verwenden. Nachdem der Assistent für die AD CS-Konfiguration geöffnet wurde, können Sie den Assistenten zum Hinzufügen von Rollen und Features schließen.
 
    2. Wenn NDES zum Server hinzugefügt wird, installiert der Assistent ebenfalls IIS. Stellen Sie sicher, dass IIS wie folgt konfiguriert ist:
 
@@ -181,7 +181,7 @@ In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>Schritt 4: Konfigurieren von NDES für die Verwendung mit Intune
-In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
+In diesem Schritt führen Sie die folgenden Aktionen aus:
 
 - Konfigurieren von NDES für die Verwendung mit der ausstellenden Zertifizierungsstelle
 - Binden des Serverauthentifizierungszertifikats (SSL) in IIS
@@ -190,7 +190,7 @@ In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
 1. Öffnen Sie den AD CS-Konfigurations-Assistent auf dem NDES-Server, und nehmen Sie dann die folgenden Änderungen vor:
 
     > [!TIP]
-    > Dieser Assistent ist bereits geöffnet, wenn Sie in der vorherigen Aufgabe auf den Link geklickt haben. Andernfalls öffnen Sie den Server-Manager, um auf die Konfiguration nach der Bereitstellung der Active Directory-Zertifikatdienste zuzugreifen.
+    > Wenn Sie im vorherigen Schritt auf den Link geklickt haben, ist dieser Assistent bereits geöffnet. Andernfalls öffnen Sie den Server-Manager, um auf die Konfiguration nach der Bereitstellung der Active Directory-Zertifikatdienste zuzugreifen.
 
    - Wählen Sie unter **Rollendienste** die Option **Registrierungsdienst für Netzwerkgeräte** aus.
    - Geben Sie unter **Dienstkonto für NDES** das NDES-Dienstkonto an.
@@ -202,7 +202,7 @@ In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
 
     `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\`
 
-    Identifizieren Sie zunächst den **Zweck** der Zertifikatvorlage (auffindbar in der Registerkarte **Anforderungsverarbeitung**), um diesen Schlüssel zu aktualisieren. Aktualisieren Sie dann den entsprechenden Registrierungseintrag, indem Sie die vorhandenen Daten mit den Namen der Zertifikatvorlage ersetzen (nicht mit dem Anzeigenamen der Vorlage), den Sie in Aufgabe 1 angegeben haben. In der folgenden Tabelle ist der Zertifikatvorlagenzweck den Werten in der Registrierung zugeordnet:
+    Identifizieren Sie zunächst den **Zweck** der Zertifikatvorlage (auffindbar in der Registerkarte **Anforderungsverarbeitung**), um diesen Schlüssel zu aktualisieren. Aktualisieren Sie anschließend den dazugehörigen Registrierungseintrag, indem Sie die vorhandenen Daten durch den Namen der Zertifikatvorlage (nicht durch den Anzeigenamen der Vorlage) ersetzen, den Sie in Schritt 2 angegeben haben. In der folgenden Tabelle ist der Zertifikatvorlagenzweck den Werten in der Registrierung zugeordnet:
 
     |Zertifikatvorlagenzweck (auf der Registerkarte „Anforderungsverarbeitung“)|Zu bearbeitender Registrierungswert|In der Intune-Verwaltungskonsole für das SCEP-Profil angezeigter Wert|
     |---|---|---|
@@ -229,7 +229,7 @@ In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
 
     ![Testen von NDES](./media/SCEP_NDES_URL.png)
 
-    Wenn Sie die Meldung **503 – Dienst nicht verfügbar** erhalten, überprüfen Sie die Ereignisanzeige. Wahrscheinlich wurde der Anwendungspool beendet, weil eine notwendige Berechtigung für den NDES-Benutzer fehlt. Die entsprechenden Berechtigungen sind in Aufgabe 1 beschrieben.
+    Wenn Sie die Meldung **503 – Dienst nicht verfügbar** erhalten, überprüfen Sie die Ereignisanzeige. Wahrscheinlich wurde der Anwendungspool beendet, weil eine notwendige Berechtigung für den NDES-Benutzer fehlt. Diese Berechtigungen werden in Schritt 1 beschrieben.
 
 ##### <a name="install-and-bind-certificates-on-the-ndes-server"></a>Installieren und Binden von Zertifikaten auf dem NDES-Server
 
@@ -278,7 +278,7 @@ In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
 4. Starten Sie den NDES-Server neu. Der Server ist jetzt bereit zur Unterstützung des Zertifikatconnectors.
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Schritt 5: Aktivieren, Installieren und Konfigurieren des Intune Certificate Connectors
-In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
+In diesem Schritt führen Sie die folgenden Aktionen aus:
 
 - Aktivieren der Unterstützung für NDES in Intune
 - Laden Sie den Certificate Connector herunter, und installieren und konfigurieren Sie ihn auf dem Server, der die Rolle „Registrierungsdienst für Netzwerkgeräte“ (Network Device Enrollment Service, NDES) auf einem Server in Ihrer Umgebung hostet. Zum Erhöhen der Skalierbarkeit der NDES-Implementierung ihrer Organisation können Sie mehrere NDES-Server mit einem Microsoft Intune Certificate Connector auf jedem NDES-Server installieren.
@@ -299,7 +299,7 @@ In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
     > [!NOTE]
     > Bei der Installation von NDES für eigenständiges Intune wird der CRP-Dienst automatisch mit dem Zertifikatconnector installiert. Bei Verwendung von Intune mit dem Konfigurations-Manager installieren Sie den Zertifikatregistrierungspunkt als eine separate Standortsystemrolle.
 
-6. Wenn Sie zur Eingabe des Clientzertifikats für den Certificate Connector aufgefordert werden, wählen Sie **Auswählen** aus, und wählen Sie das **Clientauthentifizierungszertifikat** aus, das Sie in Aufgabe 3 auf dem NDES-Server installiert haben.
+6. Wenn Sie nach dem Clientzertifikat für den Zertifikatconnector gefragt werden, klicken Sie auf **Auswählen**, und wählen Sie das Zertifikat für die **Clientauthentifizierung** aus, das Sie auf Ihrem NDES-Server in Schritt 4 installiert haben.
 
     Nachdem Sie das Clientauthentifizierungszertifikat ausgewählt haben, wird erneut die Oberfläche **Clientzertifikat für den Microsoft Intune-Zertifikatconnector** angezeigt. Auch wenn das ausgewählte Zertifikat nicht angezeigt wird, klicken Sie auf **Weiter**, um die Eigenschaften des Zertifikats anzuzeigen. Klicken Sie auf **Weiter** und anschließend auf **Installieren**.
 
@@ -377,7 +377,7 @@ In dieser Aufgabe können Sie die folgenden Aktionen durchführen:
 
           Damit Sie die `{{onPremisesSamAccountName}}`-Variable verwenden können, stellen Sie sicher, dass das `onPremisesSamAccountName`-Benutzerattribut mithilfe von [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) mit Ihrem Azure AD synchronisiert wird.
 
-       Mithilfe einer Kombination von mindestens einer dieser Variablen und statischen Zeichenfolgen können Sie ein benutzerdefiniertes Format des Antragstellernamens erstellen, z.B.: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. <br/> In diesem Beispiel haben Sie ein Format für den Antragstellernamen erstellt, das zusätzlich zu den Variablen CN und E entsprechende Zeichenfolgen für Organisationseinheit (OU), Organisation (O), Ort (L), Bundesland/Kanton (ST) und Land/Region (C) verwendet. Die Funktion [CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) beschreibt diese Funktion und die unterstützten Zeichenfolgen.
+       Mithilfe einer Kombination von mindestens einer dieser Variablen und statischen Zeichenfolgen können Sie ein benutzerdefiniertes Format des Antragstellernamens erstellen, z.B.: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. <br/> In diesem Beispiel haben Sie ein Format für den Antragstellernamen erstellt, das zusätzlich zu den Variablen CN und E entsprechende Zeichenfolgen für Organisationseinheit (OU), Organisation (O), Ort (L), Bundesland/Kanton (ST) und Land (C) verwendet. Die Funktion [CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) beschreibt diese Funktion und die unterstützten Zeichenfolgen.
 
 - **Alternativer Antragstellername:** Geben Sie an, wie die Werte für den alternativen Antragstellernamen (Subject Alternative Name, SAN) in der Zertifikatanforderung von Intune automatisch erstellt werden sollen. Wenn Sie beispielsweise einen Benutzerzertifikattyp auswählen, können Sie den Benutzerprinzipalnamen (User Principal Name, UPN) in den alternativen Antragstellernamen aufnehmen. Wenn das Clientzertifikat für die Authentifizierung bei einem Netzwerkrichtlinienserver verwendet werden soll, müssen Sie den alternativen Antragstellernamen auf den Benutzerprinzipalnamen festlegen.
 - **Schlüsselverwendung:** Geben Sie Schlüsselverwendungsoptionen für das Zertifikat an. Folgende Optionen sind verfügbar:
@@ -450,7 +450,7 @@ Ab Version 6.1806.x.x protokolliert der Intune-Connectordienst Ereignisse in der
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Erfolgreich  | Erfolgreich |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | Die Zertifizierungsstelle ist ungültig oder nicht erreichbar. Stellen Sie sicher, dass die Zertifizierungsstelle verfügbar ist und Ihr Server mit dieser kommunizieren kann. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | Das Symantec-Clientauthentifizierungszertifikat konnte im lokalen Zertifikatspeicher nicht gefunden werden. Weitere Informationen finden Sie im Artikel [Installieren des Symantec-Zertifikats zur Registrierungsautorisierung](https://docs.microsoft.com/en-us/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate).  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | Das Symantec-Clientauthentifizierungszertifikat konnte im lokalen Zertifikatspeicher nicht gefunden werden. Weitere Informationen finden Sie im Artikel [Installieren des Symantec-Zertifikats zur Registrierungsautorisierung](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate).  |
 | 0x00000402 | RevokeCert_AccessDenied  | Für das angegebene Konto sind keine Berechtigungen vorhanden, mit denen ein Zertifikat der Zertifizierungsstelle widerrufen werden kann. Die ausstellende Zertifizierungsstelle können Sie durch das Feld für den Namen der Zertifizierungsstelle in den Ereignismeldungsdetails ermitteln.  |
 | 0x00000403 | CertThumbprint_NotFound  | Für Ihre Eingabe konnte kein zugehöriges Zertifikat gefunden werden. Registrieren Sie den Zertifikatconnector, und wiederholen Sie den Vorgang. |
 | 0x00000404 | Certificate_NotFound  | Für die Eingabe konnte kein zugehöriges Zertifikat gefunden werden. Registrieren Sie den Zertifikatconnector erneut, und wiederholen Sie den Vorgang. |

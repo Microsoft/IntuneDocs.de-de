@@ -1,13 +1,13 @@
 ---
 title: Erste Schritte mit Microsoft Intune
 titleSuffix: ''
-description: Machen Sie eine Reihe kurzer, praktischer Übungen, um mehr über Intune zu erfahren.
+description: Sehen Sie sich eine Reihe kurzer, praktischer Schnellstarts an, um mehr über Intune zu erfahren.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/23/2018
-ms.topic: conceptual
+ms.date: 09/20/2018
+ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,35 +15,35 @@ ms.assetid: 6bfab644-c1e2-4154-a254-e95b9a1d75f2
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 8066cd8c2e0fa1d0a9244383497ea6b417f6531b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 508c4826a14adfa554ff59a8095b6b5a76b41773
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253730"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403526"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Wie profitiert mein Unternehmen von Intune?
-
-Intune ist ein cloudbasierter Enterprise Mobility-Verwaltungsdienst (Enterprise Mobility Management; EMM), der die Produktivität Ihrer Mitarbeiter unterstützt und gleichzeitig Ihre Unternehmensdaten schützt.
+Microsoft Intune ist ein cloudbasierter Enterprise Mobility-Verwaltungsdienst (Enterprise Mobility Management; EMM), der die Produktivität Ihrer Mitarbeiter fördert und gleichzeitig Ihre Unternehmensdaten schützt.
 
 ![Allgemeines Architekturdiagramm für Microsoft Intune](/intune/media/intunearchitecture.svg)
 
-Wir wissen, dass die ersten Schritte mit der Verwaltung von mobilen Geräten schwierig sein können, da sie viele verschiedene Entscheidungen für Ihr Unternehmen treffen müssen. Diese Übungen führen Sie durch einige Aufgaben, in denen Sie erfahren, wie Sie Ihr Unternehmen mit Intune schützen können.
+Wir wissen, dass die ersten Schritte mit der Verwaltung von mobilen Geräten schwierig sein können, da sie viele verschiedene Entscheidungen für Ihr Unternehmen treffen müssen. Mithilfe der folgenden Schnellstartanleitungen meistern Sie die ersten Schritte mit Intune und schließen einige allgemeine Aufgaben in nur kurzer Zeit ab.
 
-## <a name="what-are-the-exercises"></a>Welche Übungen sind das?
+## <a name="quickstarts"></a>Schnellstarts
 
-Sie können die praktischen __Erste Schritte__-Übungen anhand des Inhaltsverzeichnisses links auf der Seite in der vorgegebenen Reihenfolge durchgehen. Diese Tasks sind:
+Sie können die praktischen Schnellstartanleitungen für __Erste Schritte__ anhand des Inhaltsverzeichnisses links auf der Seite in der vorgegebenen Reihenfolge durchgehen.
 
-* [Erste Schritte mit Azure:](get-started-azure.md) Lernen Sie den Aufbau des Azure-Portal kennen, und nehmen Sie Änderungen an der aktuellen Seite vor.
-* [Erste Schritte mit der Benutzerverwaltung:](get-started-users.md) Fügen Sie in Intune Benutzer hinzu, um ihnen den Zugriff auf Unternehmensressourcen auf mobilen Geräten zu ermöglichen.
-* [Erste Schritte mit Gruppen:](get-started-groups.md) Organisieren Sie Benutzer in Gruppen, um die Richtlinien und Apps leichter zu verwalten, auf die sie zugreifen können.
-* [Erste Schritte mit Richtlinien:](get-started-policies.md) Erstellen Sie Richtlinien, um zu verhindern, dass Benutzer nicht autorisierte Aktionen mit ihren Geräten vornehmen.
-* [Erste Schritte beim Registrieren von Geräten:](get-started-enroll.md) Machen Sie sich mit dem Registrierungsprozess vertraut, indem Sie ein iOS-Gerät vollständig registrieren.
-* [Erste Schritte beim Hinzufügen von Apps:](get-started-apps.md) Suchen Sie Apps, und fügen Sie sie auf Geräten hinzu, um Ihren Mitarbeitern die Arbeit zu erleichtern.
-
+- [Try Intune for free (Intune kostenlos testen):](free-trial-sign-up.md) Erstellen Sie ein kostenloses Abonnement, um Intune in einer Testumgebung zu testen.    
+- [Create a user (Erstellen eines Benutzers):](quickstart-create-user.md) Fügen Sie in Intune Benutzer hinzu, um ihnen den Zugriff auf Unternehmensressourcen über mobile Geräte zu ermöglichen.
+- [Create a group (Erstellen einer Gruppe):](quickstart-create-group.md) Organisieren Sie Benutzer in Gruppen, um die Richtlinien und Apps leichter zu verwalten, auf die sie zugreifen können.
+- [Create a policy (Erstellen einer Richtlinie):](quickstart-create-policy.md) Erstellen Sie eine Gerätekonformitätsrichtlinie für ein Windows 10-Gerät, und weisen Sie der Richtlinie eine Gruppe zu.
+- [Set up auto enrollment (Einrichten der automatischen Registrierung):](quickstart-setup-auto-enrollment.md) Richten Sie Microsoft Intune so ein, dass Geräte automatisch registriert werden, wenn sich bestimmte Benutzer auf Windows 10-Geräten anmelden.
+- [Create and assign a custom role (Erstellen und zuweisen einer benutzerdefinierten Rolle):](quickstart-create-custom-role.md) Erstellen Sie eine benutzerdefinierte Rolle mit bestimmten Berechtigungen für eine Abteilung für Sicherheitsvorgänge, und weisen Sie diese Rolle zu. 
+- [Create an email device profile for iOS (Erstellen eines E-Mail-Geräteprofils für iOS):](quickstart-email-profile.md) Erstellen Sie ein E-Mail-Geräteprofil für iOS-Geräte.
+<!--  [Add and assign apps](get-started-apps.md) - Add and assign apps to devices -->
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Bevor Sie beginnen, benötigen Sie ein Administratorkonto und ein Mandantenkonto für Intune. Für diese Konten können Sie sich [hier](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) registrieren. Aktuelle Abonnenten können diese Schritte auch in ihrem Live-Mandanten vornehmen. In diesen Artikeln für die ersten Schritte wird davon ausgegangen, dass Sie auf Testgeräten arbeiten.
+Bevor Sie beginnen, benötigen Sie ein Administratorkonto und ein Mandantenkonto für Intune. Erstellen Sie ein kostenloses Abonnement, um [Intune in einer Testumgebung kostenlos zu testen](free-trial-sign-up.md). Aktuelle Abonnenten können diese Schritte auch in ihrem Live-Mandanten vornehmen. In diesen Artikeln für die ersten Schritte wird davon ausgegangen, dass Sie auf Testgeräten arbeiten.
 
 Sie müssen auch sicherstellen, dass Sie der globale Administrator für Ihre Organisation sind, um alle „Erste Schritte“-Aufgaben abzuschließen.
 

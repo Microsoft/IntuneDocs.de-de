@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83320c78d461981f1bfff52d2fddf4f121a88b8c
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 45c394f3aadde63299b8397974f4547c4968c192
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329664"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47169031"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Erstellen und Zuweisen von App-Schutzrichtlinien
 
@@ -30,7 +30,7 @@ Erfahren Sie, wie Sie Microsoft Intune-App-Schutzrichtlinien erstellen und Ihren
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
-App-Schutzrichtlinien können angewendet werden, unabhängig davon, ob die Geräte, auf denen die Apps ausgeführt werden, von Intune verwaltet werden. Eine ausführlichere Beschreibung der Funktionsweise von App-Schutzrichtlinien und der von Intune-App-Schutzrichtlinien unterstützten Szenarien finden Sie im Thema [Was sind Microsoft Intune-App-Schutzrichtlinien?](app-protection-policy.md).
+App-Schutzrichtlinien können angewendet werden, unabhängig davon, ob die Geräte, auf denen die Apps ausgeführt werden, von Intune verwaltet werden. Eine ausführlichere Beschreibung der Funktionsweise von App-Schutzrichtlinien und der von Intune-App-Schutzrichtlinien unterstützten Szenarios finden Sie unter [Was sind Microsoft Intune-App-Schutzrichtlinien?](app-protection-policy.md).
 
 Wenn Sie nach einer Liste der unterstützten MAM-Apps suchen, finden Sie weitere Informationen in der [Liste der MAM-Apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
@@ -56,24 +56,22 @@ Informationen zum Hinzufügen von Line-of-Business-Apps (LOB) Ihrer Organisation
    Um Ihnen bei den ersten Schritten zu helfen, enthalten die Richtlinieneinstellung Standardwerte. Sie müssen keine Änderungen vornehmen, wenn die Standardwerte Ihren Anforderungen entsprechen.
 
    > [!TIP]
-   > Diese Richtlinieneinstellungen werden nur durchgesetzt, wenn Apps im beruflichen Kontext verwendet werden. Wenn der Endbenutzer die App zum Erledigen einer privaten Aufgabe verwendet, ist er von diesen Richtlinien nicht betroffen.
+   > Diese Richtlinieneinstellungen werden nur durchgesetzt, wenn Apps im beruflichen Kontext verwendet werden. Wenn der Endbenutzer die App zum Erledigen einer privaten Aufgabe verwendet, ist er von diesen Richtlinien nicht betroffen. Beachten Sie, dass Dateien, die Sie neu erstellen, als persönliche Dateien angesehen werden. 
 
-7. Wählen Sie **OK** aus, um diese Konfiguration zu speichern. Damit befinden Sie sich wieder im Bereich **Richtlinie hinzufügen**. Wählen Sie **Erstellen** aus, um die Richtlinie zu erstellen und Ihre Einstellungen zu speichern.
-8. Wählen Sie **OK** aus, um diese Konfiguration zu speichern. Damit befinden Sie sich wieder im Bereich **Richtlinie hinzufügen**.
-9. Wählen Sie **Erstellen** aus, um die Richtlinie zu erstellen und Ihre Einstellungen zu speichern.
+7. Wählen Sie **OK** aus, um diese Konfiguration zu speichern. Damit befinden Sie sich wieder im Bereich **Richtlinie hinzufügen**.
+8. Wählen Sie **Erstellen** aus, um die Richtlinie zu erstellen und Ihre Einstellungen zu speichern.
 
 Wenn Sie mit dem Erstellen einer Richtlinie wie im vorherigen Verfahren beschrieben fertig sind, wird sie noch nicht für Benutzer bereitgestellt. Informationen zum Bereitstellen einer Richtlinie finden Sie unter [Bereitstellen einer Richtlinie für Benutzer](app-protection-policies.md#deploy-a-policy-to-users).
 
 ## <a name="deploy-a-policy-to-users"></a>Bereitstellen einer Richtlinie für Benutzer
 
-
 1. Wählen Sie im Bereich **App-Schutzrichtlinien** eine Richtlinie aus.
 
-1. Wählen Sie im Bereich **Richtlinie** die Option **Zuweisungen** aus. Dadurch wird der Bereich **Intune-App-Schutz - Zuweisungen** geöffnet. Wählen Sie im Bereich **Zuweisungen** die Option **Select groups to include** (Einzuschließende Gruppen auswählen) aus, um den Bereich **Select groups to include** zu öffnen.
+2. Wählen Sie im Bereich **Richtlinie** die Option **Zuweisungen** aus. Dadurch wird der Bereich **Intune-App-Schutz - Zuweisungen** geöffnet. Wählen Sie im Bereich **Zuweisungen** die Option **Select groups to include** (Einzuschließende Gruppen auswählen) aus, um den Bereich **Select groups to include** zu öffnen.
 
    ![Screenshot des Bereichs „Zuweisungen“ mit Hervorhebung der Menüoption „Select groups to include“ (Einzuschließende Gruppen auswählen)](./media/app-protection-policy-add-users.png)
 
-2.  Im Bereich **Benutzergruppe hinzufügen** wird eine Liste der Benutzergruppen angezeigt. In dieser Liste werden alle Sicherheitsgruppen in Ihrem **Azure Active Directory** angezeigt. Wählen Sie die Benutzergruppen aus, auf die diese Richtlinie angewendet werden soll, und anschließend **Auswählen**. Die Auswahl von **Auswählen** bewirkt die Bereitstellung der Richtlinie für Benutzer.
+3.  Im Bereich **Benutzergruppe hinzufügen** wird eine Liste der Benutzergruppen angezeigt. In dieser Liste werden alle Sicherheitsgruppen in Ihrem **Azure Active Directory** angezeigt. Wählen Sie die Benutzergruppen aus, auf die diese Richtlinie angewendet werden soll, und anschließend **Auswählen**. Die Auswahl von **Auswählen** bewirkt die Bereitstellung der Richtlinie für Benutzer.
 
     ![Screenshot des Bereichs „Benutzergruppe hinzufügen“ mit der Liste der Azure Active Directory-Benutzer](./media/azure-ad-user-group-list.png)
 
@@ -125,12 +123,14 @@ Viele Organisationen erlauben Benutzern sowohl die Verwendung von mit Intune-MDM
 
 Da die App-Schutzrichtlinien von Intune die Identität eines Benutzers ansteuern, gelten die Schutzeinstellungen üblicherweise jeweils für registrierte (MDM-verwaltete) und nicht registrierte Geräte (kein MDM). Aus diesem Grund können Sie mit einer App-Schutzrichtlinie von Intune entweder Intune-registrierte oder nicht registrierte iOS- und Android-Geräte als Ziel verwenden. Sie können über eine Schutzrichtlinie für nicht verwaltete Geräte verfügen, bei dem Steuerelemente für die Verhinderung von Datenverlust (DLP) vorhanden sind, und eine separate Schutzrichtlinie für mit MDM verwaltete Geräte, bei denen die DLP-Steuerelemente nicht so streng sind. 
 
-Navigieren Sie in der Intune-Konsole zu den Richtlinien **Client-Apps** > **App-Schutz**, und klicken Sie auf **Hinzufügen einer Richtlinie**, um diese Richtlinien zu erstellen. Sie können auch eine vorhandene App-Schutzrichtlinie bearbeiten. Wenn die App-Schutzrichtlinie für verwaltete und nicht verwaltete Geräte angewendet werden soll, bestätigen Sie, dass **Target to all app types** (Alle App-Typen als Ziel verwenden) auf den Standardwert **Ja** festgelegt ist. Wenn Sie eine Basis granular einem Verwaltungsstatus zuweisen wollen, legen Sie die Option **Target to all app types** (Alle App-Typen als Ziel verwenden) auf **Nein** fest. 
+Navigieren Sie in der Intune-Konsole zu **Client-Apps** > **App-Schutzrichtlinien**, und klicken Sie auf **Richtlinie hinzufügen**, um diese Richtlinien zu erstellen. Sie können auch eine vorhandene App-Schutzrichtlinie bearbeiten. Wenn die App-Schutzrichtlinie für verwaltete und nicht verwaltete Geräte angewendet werden soll, bestätigen Sie, dass **Target to all app types** (Alle App-Typen als Ziel verwenden) auf den Standardwert **Ja** festgelegt ist. Wenn Sie eine Basis granular einem Verwaltungsstatus zuweisen wollen, legen Sie die Option **Target to all app types** (Alle App-Typen als Ziel verwenden) auf **Nein** fest. 
 
-Damit iOS-Apps als „verwaltet“ erkannt werden, muss die Konfigurationsrichtlinieneinstellung **IntuneMAMUPN** für jede App bereitgestellt werden. Weitere Informationen finden Sie unter [Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+![Screenshot vom Blatt „Richtlinie hinzufügen“ mit ausgewählter Option „Auf alle App-Typen ausrichten“](./media/app-protection-policies-target-all.png)
+
+Damit iOS-Apps als „verwaltet“ erkannt werden, muss die Konfigurationsrichtlinieneinstellung **IntuneMAMUPN** für jede App bereitgestellt werden. Weitere Informationen finden Sie unter [Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 
 > [!NOTE]
-> Spezifische iOS-Supportinfomationen über App-Schutzrichtlinien basierend auf dem Status der Geräteverwaltung finden Sie unter [MAM protection policies targeted based on management state (Angesteuerte MAM-Schutzrichtlinien basierend auf dem Verwaltungsstatus)](whats-new.md#mam-protection-policies-targeted-based-on-management-state-).
+> Spezifische iOS-Supportinfomationen über App-Schutzrichtlinien basierend auf dem Status der Geräteverwaltung finden Sie unter [MAM protection policies targeted based on management state (Angesteuerte MAM-Schutzrichtlinien basierend auf dem Verwaltungsstatus)](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-).
 
 ## <a name="policy-settings"></a>Richtlinieneinstellungen
 Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finden Sie unter den folgenden Links:

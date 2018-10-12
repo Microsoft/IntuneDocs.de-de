@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 9dd7608981da1454c1f3be29eb6ff40a5d7f3394
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481120"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562866"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Kioskeinstellungen für Windows 10 und höher in Intune
 
@@ -45,7 +45,7 @@ Mit Kioskprofilen können Sie Windows 10-Geräte so konfigurieren, dass sie entw
 #### <a name="single-full-screen-app-kiosks"></a>Kiosk mit einzelner Vollbild-App
 Legen Sie folgende Einstellungen fest:
 
-- **Bezeichner der UWP-App:** Geben Sie die **Modell-ID des Anwendungsbenutzers (AUMID)** der Kiosk-App ein. Alternativ können Sie eine vorhandene verwaltete App auswählen, die Sie über [Mobile Apps](apps-add.md) hinzugefügt haben.
+- **Bezeichner der UWP-App:** Geben Sie die **Modell-ID des Anwendungsbenutzers (AUMID)** der Kiosk-App ein. Alternativ können Sie eine vorhandene verwaltete App auswählen, die Sie über [Client-Apps](apps-add.md) hinzugefügt haben.
 
     Weitere Informationen finden Sie unter [Find the Application User Model ID of an installed app (Ermitteln der Modell-ID eines Anwendungsbenutzers einer installierten App)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
@@ -62,7 +62,7 @@ Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. D
 Legen Sie folgende Einstellungen fest:
 
 - **Win32-App hinzufügen:** Eine Win32-App ist eine herkömmliche Desktop-App. Geben Sie den **App-Namen** und den **Bezeichner** ein. Der **Bezeichner** ist der Name des vollqualifizierten Pfads der ausführbaren Datei bezogen auf das Gerät.
-- **Verwaltete Apps hinzufügen:** Wählen Sie eine vorhandene verwaltete App aus, die Sie über [Mobile Apps in Intune](apps-add.md) hinzugefügt haben.
+- **Verwaltete Apps hinzufügen:** Wählen Sie eine vorhandene verwaltete App aus, die Sie über [Client-Apps in Intune](apps-add.md) hinzugefügt haben.
 - **Add app by AUMID** (App nach AUMID hinzufügen): Geben Sie die [AUMID der App](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) ein (UWP-Apps).
 - **Taskleiste**: Wählen Sie aus, ob Sie die Taskleiste **aktivieren** (anzeigen) oder sie im Kioskmodus **nicht konfiguriert** (ausgeblendet) lassen möchten.
 - **Layout des Startmenüs:** Geben Sie eine XML-Datei ein, die beschreibt, wie die Apps im Startmenü dargestellt werden (u.a. die Reihenfolge der Apps). [Anpassen und Exportieren des Startlayouts](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout): bietet Anweisungen und XML-Beispiele.
@@ -75,7 +75,7 @@ Legen Sie folgende Einstellungen fest:
 
 ## <a name="kiosk-web-browser-settings"></a>Kioskbrowsereinstellungen
 
-Mit diesen Einstellungen können Sie die Webbrowser-App im Kiosk steuern. Achten Sie darauf, dass Sie eine Webbrowser-App mit [Mobile Apps](apps-add.md) auf dem Kiosk-Gerät bereitstellen.
+Mit diesen Einstellungen können Sie die Webbrowser-App im Kiosk steuern. Achten Sie darauf, dass Sie eine Webbrowser-App auf dem Kiosk-Gerät über [Client-Apps](apps-add.md) bereitstellen.
 
 1. Legen Sie folgende Einstellungen fest:
 
@@ -115,7 +115,7 @@ Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. D
 
 Legen Sie folgende Einstellungen fest:
 
-- **Verwaltete Apps hinzufügen:** Wählen Sie eine vorhandene verwaltete App aus, die Sie über [Mobile Apps in Intune](apps-add.md) hinzugefügt haben.
+- **Verwaltete Apps hinzufügen:** Wählen Sie eine vorhandene verwaltete App aus, die Sie über [Client-Apps in Intune](apps-add.md) hinzugefügt haben.
 - **Add app by AUMID** (App nach AUMID hinzufügen): Geben Sie die [AUMID der App](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) ein (UWP-Apps).
 - **Layout des Startmenüs:** Geben Sie eine XML-Datei ein, die beschreibt, wie die Apps im Startmenü dargestellt werden (u.a. die Reihenfolge der Apps). [Startlayout anpassen und exportieren](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens): Diese Option umfasst eine Anleitung und eine XML-Datei für Windows Holographic for Business-Geräte.
 - **Typ des Benutzerkontos:** Fügen Sie mindestens ein Benutzerkonto hinzu, das die von Ihnen hinzugefügten Apps verwenden kann. Folgende Optionen werden unterstützt: 

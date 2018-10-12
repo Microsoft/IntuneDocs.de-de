@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 08/16/2018
+ms.date: 09/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 4189e9357c7ed135ab219b38f22d34a09ebb5318
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5acdcd0a8c2fcb906f0b40e2c1ab937559c7ae01
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253679"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727576"
 ---
 # <a name="what-are-app-protection-policies"></a>Was sind App-Schutzrichtlinien?
 
@@ -103,7 +103,7 @@ Die MDM-Lösung:
 
 -   Sie tragen zum Schutz der Unternehmensdaten bei, indem der Zugriff durch Verbraucher-Apps und -Dienste verhindert wird.
 
--   Es werden Einschränkungen ("Speichern unter", Zwischenablage, PIN usw.) auf mobile Apps angewendet.
+-   Es werden Einschränkungen („Speichern unter“, Zwischenablage, PIN usw.) auf Client-Apps angewendet.
 
 -   Unternehmensdaten können aus Apps entfernt werden, ohne die Apps vom Gerät zu löschen.
 
@@ -122,6 +122,18 @@ Es gibt jedoch einige Einschränkungen, die Sie kennen sollten:
 -   Sie können auf diesen Geräten keine Zertifikatprofile bereitstellen.
 
 -   Sie können auf diesen Geräten keine unternehmensweiten WLAN- und VPN-Einstellungen bereitstellen.
+
+## <a name="app-protection-global-policy"></a>Globale App-Schutzrichtlinie
+
+Wenn ein OneDrive-Administrator zu **admin.office.com** wechselt und **Gerätezugriff** auswählt, kann er die Steuerelemente für die **Verwaltung mobiler Anwendungen** auf die OneDrive- und SharePoint-Client-Apps festlegen. 
+
+Die Einstellungen, die für die OneDrive-Administratorkonsole zur Verfügung gestellt wurden, konfigurieren eine besondere App-Schutzrichtlinie für Intune, die **globale Richtlinie**. Diese globale Richtlinie gilt für alle Benutzer in Ihrem Mandanten und kann nicht eingeschränkt angewendet werden. 
+
+Sobald sie aktiviert ist, werden die OneDrive- und SharePoint-Apps für iOS und Android standardmäßig über die ausgewählten Einstellungen geschützt. Ein IT-Experte kann diese Richtlinie in der Intune-Konsole ändern, sobald sie erstellt wurde, und weitere Ziel-Apps hinzufügen und Richtlinieneinstellungen ändern. 
+
+Standardmäßig darf nur eine **globale Richtlinie** pro Mandant vorhanden sein. Die [Intune Graph-APIs](intune-graph-apis.md) können jedoch verwendet werden, um zusätzliche globale Richtlinien pro Mandant zu erstellen. Dies wird jedoch nicht empfohlen. Das Erstellen zusätzlicher globaler Richtlinien wird nicht empfohlen, da die Problembehandlung bei der Implementierung einer solchen Richtlinie sehr kompliziert sein kann.
+
+Obwohl die **globale Richtlinie** für alle Benutzer in Ihrem Mandanten gilt, werden diese Einstellungen von jeder standardmäßigen App-Schutzrichtlinie für Intune überschrieben.
 
 
 ## <a name="multi-identity"></a>Mehrere Identitäten

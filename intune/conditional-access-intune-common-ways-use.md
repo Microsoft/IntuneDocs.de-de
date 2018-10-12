@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 09/25/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 59cba4ead614fe0b5deac535efb9bcb303d5810d
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: ee14a7983451ae37113462e1c8f0aac5785f2f09
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253607"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187868"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?
 
@@ -45,6 +45,13 @@ Gerätebasierte Richtlinien für den bedingten Zugriff für Exchange Online und 
 -   Erfahren Sie mehr über die [Gerätekonformität in Intune](device-compliance.md).
 
 -   Erfahren Sie mehr über den [Schutz von E-Mail-, Office 365- und anderen Diensten mithilfe des bedingen Zugriffs in Intune](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+
+> [!NOTE]
+> Wenn Sie den gerätebasierten Zugriff für Sharepoint Online auf Android-Geräten aktivieren, müssen Benutzer die Option **Browserzugriff aktivieren** auf dem Gerät wie folgt aktivieren:
+> 1. Starten Sie die **Unternehmensportal-App**.
+> 2. Rufen Sie die Seite **Einstellungen** über die Schaltfläche mit den drei Punkten (…) oder über die physische Menütaste auf.
+> 3. Drücken Sie die Schaltfläche **Browserzugriff aktivieren** . 
+> 4. Melden Sie sich im Chrome-Browser aus Office 365 ab, und starten Sie Chrome neu.
 
 ### <a name="conditional-access-for-exchange-on-premises"></a>Bedingter Zugriff für Exchange lokal
 

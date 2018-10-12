@@ -1,11 +1,11 @@
 ---
-title: Verwenden Ihres iOS- oder macOS-Geräts mit Intune | Microsoft-Dokumentation
-description: Liste mit Links zu Aufgaben, die Sie auf Ihrem iOS- oder macOS-Mobilgerät ausführen können, wenn das Gerät bei Intune registriert ist
+title: Verwenden Ihres macOS-Geräts mit Intune | Microsoft-Dokumentation
+description: Suchen Sie Links zur Problembehandlung oder Verwaltung Ihres mobilen macOS-Geräts aus der Unternehmensportal-App
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 4/20/2018
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 02ccde8299e4ad5d6aacb2abd120c094f752c5e6
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 887b9355bc68edca314a49743b8d11728ca2361a
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771855"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168912"
 ---
-# <a name="using-your-macos-device-with-intune"></a>Verwenden Ihres macOS-Geräts mit Intune
+# <a name="using-your-macos-device-with-intune-company-portal"></a>Verwenden Ihres macOS-Geräts mit dem Intune-Unternehmensportal
 
-Mit Intune können Sie Ihre Arbeit auf verschiedene Weise erleichtern. Dies ist eine Liste der am häufigsten vorkommenden Vorgehen, um die Sie Ihr Unternehmen möglicherweise bittet.
+Dieser Artikel enthält Tasks und Informationen zum Unternehmensportal für macOS. Verwenden Sie diese, um Probleme zu behandeln und Ihr macOS-Gerät zu verwalten. Klicken Sie auf einen beliebigen Link, um weitere Details, Schritte und Screenshots zu sehen. 
 
 ## <a name="supported-versions"></a>Unterstützte Versionen
 
-Intune unterstützt derzeit OS X El Capitan 10.11 und höher für MacOS-Geräte.
+Das Unternehmensportal für macOS unterstützt derzeit OS X El Capitan 10.11 und höher für macOS-Geräte.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>In Intune registrieren und das Unternehmenswebportal installieren
 

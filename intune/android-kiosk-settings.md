@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329382"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602179"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Kiosk-Einstellungen für Android-Geräte in Intune
 
@@ -51,7 +51,7 @@ Führen Sie die folgenden Hauptschritte aus, um ein Android-Kioskgerät für meh
 2. [Hinzufügen und Zuweisen von Apps, die im Kioskmodus verwendet werden können](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. [Hinzufügen von Weblinks, die im Kioskmodus verwendet werden können](#add-web-links-that-can-be-used-in-kiosk-mode) (optional)
 
-### <a name="import-and-deply-the-managed-home-screen-app"></a>Importieren und Bereitstellen der Managed Home Screen-App
+### <a name="import-and-deploy-the-managed-home-screen-app"></a>Importieren und Bereitstellen der Managed Home Screen-App
 
 1. Navigieren Sie zur [Seite der Managed Home Screen-App in Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise), und melden Sie sich mit dem gleichen Konto an, das Sie für andere Managed Google Play-Apps verwenden.
 2. Klicken Sie auf **Genehmigen**.
@@ -59,6 +59,9 @@ Führen Sie die folgenden Hauptschritte aus, um ein Android-Kioskgerät für meh
 4. Klicken Sie auf **Apps** > **Managed Home Screen** > **Zuweisungen** > **Gruppe hinzufügen**.
 5. Klicken Sie unter **Zuweisungstyp** auf **Erforderlich**.
 6. Klicken Sie auf **Included groups** > **Select groups to include** (Eingeschlossene Gruppen > Einzuschließende Gruppen auswählen), wählen Sie die Gerätegruppe aus, die Sie für Ihre Kioskgeräte erstellt haben, und klicken Sie anschließend auf **Auswählen** > **OK** > **OK** > **Speichern**.
+
+> [!NOTE]
+> Wenn Sie die Managed Home Screen-App dem Multi-App-Kioskprofil hinzufügen, wird ein Symbol hinzugefügt. Wenn Sie auf das Symbol klicken, geschieht jedoch nichts. Sie müssen also die Managed Home Screen-App dem Multi-App-Kioskprofil nicht hinzufügen.
 
 ### <a name="add-and-assign-apps-that-can-be-used-in-kiosk-mode"></a>Hinzufügen und Zuweisen von Apps, die im Kioskmodus verwendet werden können
 
@@ -76,7 +79,7 @@ Führen Sie die folgenden Schritte für jede App aus, die Sie auf Ihren Kioskger
 3. Klicken Sie auf **Konfigurieren**, und geben Sie die erforderlichen Informationen an. Sie müssen kein Bild für das Logo hinzufügen, da es automatisch aus der Datei „favicon.ico“ der Website abgerufen wird.
 4. Klicken Sie auf **OK** > **Hinzufügen**.
 
-Achten Sie darauf, dass Sie eine Webbrowser-App mit [Mobile Apps](apps-add.md) auf dem Kiosk-Gerät bereitstellen.
+Achten Sie darauf, dass Sie eine Web-App auf dem Kiosk-Gerät bereitgestellt haben. Weitere Informationen finden Sie unter [Hinzufügen von Web-Apps zu Microsoft Intune](web-app.md).
 
 ### <a name="create-a-multi-app-kiosk-profile"></a>Erstellen Sie ein Multi-App-Kioskprofil
 

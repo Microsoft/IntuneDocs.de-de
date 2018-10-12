@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: fd6c80c022f13b892d396768439e2c503d5425d9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 8e73a9cf189ba44a9f093559b9175dfa947a38e1
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29962529"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864590"
 ---
 # <a name="create-a-design"></a>Erstellen eines Entwurfs
 
@@ -110,7 +110,7 @@ Intune bietet zwei Bereitstellungsoptionen: eigenständig und hybrid. Eigenstän
 
 ## <a name="intune-tenant-location"></a>Standort des Intune-Mandanten
 
-Wenn Ihre Organisation weltweit tätig ist, berücksichtigen Sie bei der Planung den Standort Ihres Mandanten, wenn den Dienst abonnieren. Das Land/die Region wird definiert, wenn Sie sich erstmals für ein Intune-Abonnement registrieren. Anschließend erfolgt die Zuordnung zu Regionen rund um die Welt, die unten aufgeführt sind:
+Wenn Ihre Organisation weltweit tätig ist, berücksichtigen Sie bei der Planung den Standort Ihres Mandanten, wenn den Dienst abonnieren. Das Land wird definiert, wenn Sie sich erstmals für ein Intune-Abonnement registrieren. Anschließend erfolgt die Zuordnung zu Regionen rund um die Welt, die unten aufgeführt sind:
 
 -   Nordamerika
 
@@ -119,7 +119,7 @@ Wenn Ihre Organisation weltweit tätig ist, berücksichtigen Sie bei der Planung
 -   Asien und pazifischer Raum
 
 >[!IMPORTANT]
-> Land/Region und Standort des Mandanten können später nicht mehr geändert werden.
+> Land und Standort des Mandanten können später nicht mehr geändert werden.
 
 ## <a name="external-dependencies"></a>Externe Abhängigkeiten
 
@@ -199,8 +199,8 @@ Intune verwaltet mobile Geräte, um Unternehmensdaten zu schützen und Endbenutz
 
 | **Geräteplattform** | **Betriebssystemversionen** |
 |:---:|:---:|
-| iOS – iPhone | 9.0+ |                
-| iOS – iPad | 8.0+ |               
+| iOS – iPhone | 10.0 und höher |                
+| iOS – iPad | 10.0 und höher |               
 | Android – Samsung Knox Standard | 4.0+ |
 | Windows 10-Tablet | 10+ |
 

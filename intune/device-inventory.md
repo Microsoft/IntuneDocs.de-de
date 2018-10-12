@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313177"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187800"
 ---
 # <a name="see-device-details-in-intune"></a>Anzeigen von Gerätedetails in Intune
 
@@ -63,44 +63,38 @@ Intune erfasst nur auf unternehmenseigenen Geräten eine App-Liste. Auf persönl
 
 ## <a name="hardware-device-details"></a>Details zum Hardwaregerätestatus
 
-### <a name="windows-and-ios-device-details"></a>Details zu Windows- und iOS-Geräten:
-|Detail|Beschreibung|  
-|--------------|----------------------|  
-|Name|Der Name des Geräts.|
-|Verwaltungsname|Der Gerätename, der nur in der Konsole verwendet wird. Durch das Ändern dieses Namens wird nicht gleichzeitig der Name des Geräts geändert.|
-|UDID|Eindeutige Geräte-ID.|
-|Intune-Geräte-ID|Eine Geräte-ID, die das Gerät eindeutig bezeichnet.|
-|Seriennummer|Die vom Hersteller für das Gerät vergebene Seriennummer.|
-|Freigegebenes Gerät|Wenn **Ja** ausgewählt ist, wird das Gerät für mehr als einen Benutzer freigegeben.|
-|Durch den Benutzer genehmigte Registrierung|Wenn **Ja** ausgewählt ist, dann besitzt das Gerät eine vom Benutzer genehmigte Registrierung, mit der Administratoren bestimmte Sicherheitseinstellungen auf dem Gerät verwalten können.|
-|Betriebssystem|Das auf dem Gerät verwendete Betriebssystem.|
-|Betriebssystemversion|Die Version des Betriebssystems auf dem Gerät.|
-|Betriebssystemsprache|Die für das Betriebssystem auf dem Gerät festgelegte Sprache.|
-|Gesamtmenge des Speicherplatzes|Der gesamte Speicherplatz auf dem Gerät (in GB).|
-|Freier Speicherplatz|Der gesamte freie Speicherplatz auf dem Gerät (in GB).|
-
-
-### <a name="windows-ios-and-macos-device-details"></a>Details zu Windows-, iOS- und MacOS-Geräten
-|Detail|Beschreibung|  
-|--------------|----------------------|  
-|IMEI|Die International Mobile Equipment Identity des Geräts.|
-|MEID|Der Mobile Equipment Identifier des Geräts.|
-|Hersteller|Der Hersteller des Geräts.|
-|Modell|Das Gerätemodell.|
-|Telefonnummer|Die dem Gerät zugewiesene Telefonnummer.|
-|Netzbetreiber des Abonnenten|Der Mobilfunkanbieter des Geräts.|
-|Mobilfunktechnologie|Das vom Gerät verwendete Funksystem.|
-|WiFi-MAC|Die Media Access Control-Adresse des Geräts.|
-|ICCID|Der Integrated Circuit Card Identifier, die eindeutige Identifikationsnummer der SIM-Karte.|
-|Registrierungsdatum|Datum und Uhrzeit der Registrierung des Gerät bei Intune.|
-|Letzter Kontakt|Datum und Uhrzeit der letzten Verbindung des Gerät bei Intune.|
-|Code zur Umgehung der Aktivierungssperre|Der Code, mit denen die Aktivierungssperre umgangen werden kann.|
-|Registriert bei Azure AD|Wenn **Ja** ausgewählt ist, wurde das Gerät bei Azure Active Directory registriert.|
-|Konformität|Der Konformitätszustand des Geräts.|
-|EAS aktiviert|Wenn **Ja** ausgewählt ist, ist das Gerät mit einem Exchange-Postfach synchronisiert.|
-|EAS-Aktivierungs-ID|Die Exchange ActiveSync-ID des Geräts.|
-|Überwacht|Wenn **Ja** ausgewählt ist, haben die Administratoren die Kontrolle über das Gerät verbessert.|
-|Verschlüsselt|Wenn **Ja** ausgewählt ist, werden die auf dem Gerät gespeicherten Daten verschlüsselt.|
+|Detail|Beschreibung|Plattform| 
+|--------------|----------------------|----|  
+|Name|Der Name des Geräts.|Windows, iOS|
+|Verwaltungsname|Der Gerätename, der nur in der Konsole verwendet wird. Durch das Ändern dieses Namens wird nicht gleichzeitig der Name des Geräts geändert.|Windows, iOS|
+|UDID|Eindeutige Geräte-ID.|Windows, iOS|
+|Intune-Geräte-ID|Eine Geräte-ID, die das Gerät eindeutig bezeichnet.|Windows, iOS|
+|Seriennummer|Die vom Hersteller für das Gerät vergebene Seriennummer.|Windows, iOS|
+|Freigegebenes Gerät|Wenn **Ja** ausgewählt ist, wird das Gerät für mehr als einen Benutzer freigegeben.|Windows, iOS|
+|Durch den Benutzer genehmigte Registrierung|Wenn **Ja** ausgewählt ist, dann besitzt das Gerät eine vom Benutzer genehmigte Registrierung, mit der Administratoren bestimmte Sicherheitseinstellungen auf dem Gerät verwalten können.|Windows, iOS|
+|Betriebssystem|Das auf dem Gerät verwendete Betriebssystem.|Windows, iOS|
+|Betriebssystemversion|Die Version des Betriebssystems auf dem Gerät.|Windows, iOS|
+|Betriebssystemsprache|Die für das Betriebssystem auf dem Gerät festgelegte Sprache.|Windows, iOS|
+|Gesamtmenge des Speicherplatzes|Der gesamte Speicherplatz auf dem Gerät (in GB).|Windows, iOS|
+|Freier Speicherplatz|Der gesamte freie Speicherplatz auf dem Gerät (in GB).|Windows, iOS|
+|IMEI|Die International Mobile Equipment Identity des Geräts.|Windows, iOS, Android|
+|MEID|Der Mobile Equipment Identifier des Geräts.|Windows, iOS, Android|
+|Hersteller|Der Hersteller des Geräts.|Windows, iOS, Android|
+|Modell|Das Gerätemodell.|Windows, iOS, Android|
+|Telefonnummer|Die dem Gerät zugewiesene Telefonnummer.|Windows, iOS, Android|
+|Netzbetreiber des Abonnenten|Der Mobilfunkanbieter des Geräts.|Windows, iOS, Android|
+|Mobilfunktechnologie|Das vom Gerät verwendete Funksystem.|Windows, iOS, Android|
+|WiFi-MAC|Die Media Access Control-Adresse des Geräts.|Windows, iOS, Android|
+|ICCID|Der Integrated Circuit Card Identifier, die eindeutige Identifikationsnummer der SIM-Karte.|Windows, iOS, Android|
+|Registrierungsdatum|Datum und Uhrzeit der Registrierung des Gerät bei Intune.|Windows, iOS, Android|
+|Letzter Kontakt|Datum und Uhrzeit der letzten Verbindung des Gerät bei Intune.|Windows, iOS, Android|
+|Code zur Umgehung der Aktivierungssperre|Der Code, mit denen die Aktivierungssperre umgangen werden kann.|Windows, iOS, Android|
+|Registriert bei Azure AD|Wenn **Ja** ausgewählt ist, wurde das Gerät bei Azure Active Directory registriert.|Windows, iOS, Android|
+|Konformität|Der Konformitätszustand des Geräts.|Windows, iOS, Android|
+|EAS aktiviert|Wenn **Ja** ausgewählt ist, ist das Gerät mit einem Exchange-Postfach synchronisiert.|Windows, iOS, Android|
+|EAS-Aktivierungs-ID|Die Exchange ActiveSync-ID des Geräts.|Windows, iOS, Android|
+|Überwacht|Wenn **Ja** ausgewählt ist, haben die Administratoren die Kontrolle über das Gerät verbessert.|Windows, iOS, Android|
+|Verschlüsselt|Wenn **Ja** ausgewählt ist, werden die auf dem Gerät gespeicherten Daten verschlüsselt.|Windows, iOS, Android|
 
 
 

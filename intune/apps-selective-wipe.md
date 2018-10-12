@@ -15,12 +15,12 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 66f26811f5021b71c62a2e994c73e2144409d199
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 3f72747b1a30494304521b23054533b9f360b2fc
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329544"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562747"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Zurücksetzen nur von Unternehmensdaten in einer in Intune verwalteten App
 
@@ -44,7 +44,7 @@ Um Unternehmensdaten aus Apps selektiv zu entfernen, erstellen Sie mithilfe der 
 
     ![Screenshot des Bereichs „Microsoft Intune“](./media/apps-selective-wipe01.png)
 
-3.  Wählen Sie im Bereich **Mobile Apps** die Option **Selektive App-Zurücksetzung** aus.
+3.  Wählen Sie im Bereich **Client-Apps** die Option **Selektive App-Zurücksetzung** aus.
 
 4.  Wählen Sie **Neue Zurücksetzungsanforderung** aus. Dadurch wird der Bereich **Neue Zurücksetzungsanforderung** geöffnet.
 
@@ -62,7 +62,7 @@ Der Dienst erstellt für jede geschützte App auf dem Gerät und den zugeordnete
 
 Sie erhalten einen zusammengefassten Bericht, der den Gesamtstatus der Zurücksetzungsanforderung zeigt und die Anzahl der ausstehenden Anforderungen und Fehler enthält. Um weitere Informationen zu erhalten, gehen Sie folgendermaßen vor:
 
-1.  Im Bereich **Mobile Apps – selektive App-Zurücksetzung** wird eine Liste mit Ihren Anforderungen angezeigt, gruppiert nach Benutzern. Da das System für jede geschützte App, die auf dem Gerät ausgeführt wird, eine Zurücksetzungsanforderung erstellt, werden möglicherweise für einen Benutzer mehrere Anforderungen angezeigt. Der Status gibt an, ob eine Zurücksetzungsaufforderung noch **aussteht**oder **fehlgeschlagen**ist, bzw. **erfolgreich**ausgeführt wurde.
+1.  Im Bereich **Client-Apps – selektive App-Zurücksetzung** wird eine nach Benutzern gruppierte Liste Ihrer Anforderungen angezeigt. Da das System für jede geschützte App, die auf dem Gerät ausgeführt wird, eine Zurücksetzungsanforderung erstellt, werden möglicherweise für einen Benutzer mehrere Anforderungen angezeigt. Der Status gibt an, ob eine Zurücksetzungsaufforderung noch **aussteht**oder **fehlgeschlagen**ist, bzw. **erfolgreich**ausgeführt wurde.
 
     ![Screenshot des Zurücksetzungsanforderungsstatus im Bereich „Selektive App-Zurücksetzung“](./media/wipe-request-status-1.png)
 
@@ -75,7 +75,7 @@ Darüber hinaus können Sie den Gerätenamen und den Gerätetyp anzeigen. Diese 
 
 Zurücksetzungen mit Status „Ausstehend“ werden angezeigt, bis Sie sie manuell löschen. So löschen Sie manuell eine Zurücksetzungsanforderung
 
-1.  Öffnen Sie den Bereich **Mobile Apps – selektive App-Zurücksetzung**.
+1.  Öffnen Sie den Bereich **Client-Apps – selektive App-Zurücksetzung**.
 
 2.  Klicken Sie mit der rechten Maustaste auf die Zurücksetzungsanforderung, die Sie löschen möchten, und wählen Sie dann **Zurücksetzungsanforderung löschen** aus.
 

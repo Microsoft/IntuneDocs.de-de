@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4714b0bbe566589d970a5d959f1f361940e5701b
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31027467"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187834"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Erneutes Zuweisen von Richtlinien für bedingten Zugriff über das klassische Intune-Porta zum Azure-Portal
 
@@ -179,6 +179,9 @@ Wenn Sie Exchange Active Sync-Einstellungen als Teil einer Exchange Online-Richt
 12. Aktivieren Sie die Umschaltfläche **Richtlinie aktivieren** auf dem Blatt **Neu** der Richtlinie für den bedingten Zugriff, klicken Sie dann auf **Erstellen**.
 
     ![Bild, auf dem dargestellt wird, wie ein Vergleich der Benutzeroberfläche für die Richtlinie für bedingten Zugriff zwischen den Portalen Intune und Azure aktiviert wird](./media/reassign-ca-17.png)
+
+> [!NOTE]
+> Wenn Sie **Geräteplattformen** konfigurieren, schlägt das Speichern der Richtlinie mit der Fehlermeldung „Policy configuration is not supported“ (Die Richtlinienkonfiguration wird nicht unterstützt) fehl. Exchange ActiveSync kann die vom verbindenden Gerät verwendete Plattform nicht identifizieren. Aus diesem Grund wird das Konfigurieren von spezifischen Geräteplattformen bei der Erstellung einer Richtlinie für Exchange ActiveSync-Geräte nicht unterstützt.
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Deaktivieren von Richtlinien für bedingten Zugriff im klassischen Intune-Portal
 

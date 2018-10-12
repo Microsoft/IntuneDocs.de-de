@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f49e0bc496f176434577d42d3a372fc4e8bc22d3
+ms.sourcegitcommit: 7063072c94e43aefc6be0072780622a1da8485d5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312895"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46119102"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Android Enterprise-Kioskeinstellungen in Intune
 
@@ -45,9 +45,9 @@ Android-Kioskprofile unterstützen die folgenden Konfigurationseinstellungen. Be
 - **Installation über unbekannte Quellen zulassen:** Wenn Sie **Zulassen** festlegen, können Benutzer Installationen über unbekannte Quellen ausführen.
 - **Systemupdate:** Hier können Sie eine Option auswählen, um zu definieren, wie das Geräte Over-the-Air-Updates verarbeitet:
     - **Gerätestandard:** Die Standardeinstellung des Geräts wird verwendet.
-    - **Automatisch:** Updates werden automatisch installiert.
-    - **Zurückgestellt:** Updates werden auf ein zukünftiges Datum verschoben.
-    - **Wartungsfenster:** Benutzer werden über ein Wartungsfenster dazu aufgefordert, das Update zu genehmigen.
+    - **Automatisch:** Updates werden ohne Interaktion des Benutzers automatisch installiert. Durch das Festlegen dieser Richtlinie werden sofort alle ausstehenden Updates installiert.
+    - **Zurückgestellt:** Updates werden für 30 Tage zurückgestellt. Nach Ablauf der 30 Tage wird der Benutzer von Android zur Installation des Updates aufgefordert. Gerätehersteller oder Mobilfunkanbieter können verhindern (ausschließen), dass wichtige Sicherheitsupdates zurückgestellt werden. Bei einem ausgeschlossenen Update wird dem Benutzer eine Systembenachrichtigung auf dem Gerät angezeigt. 
+    - **Wartungsfenster:** Updates werden automatisch in einem täglichen Wartungsfenster installiert, das Sie in Intune festlegen. Die Installation wird 30 Tage lang täglich versucht und kann aufgrund von zu geringem Speicherplatz oder Akkustand fehlschlagen. Nach 30 Tagen wird der Benutzer von Android zur Installation aufgefordert. Dieses Fenster wird auch verwendet, um Updates für Google Play-Apps zu installieren. Diese Option wird für dedizierte Geräte wie Kioskgeräte empfohlen, da Apps, die im Vordergrund auf einem Gerät ausgeführt werden, auf dem der Kioskmodus für die Ausführung einer einzelnen App aktiviert ist, aktualisiert werden können. 
 
 ## <a name="kiosk-settings"></a>Kioskeinstellungen
 

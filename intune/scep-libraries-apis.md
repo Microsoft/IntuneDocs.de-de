@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/31/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 31c083dcd2087de99830317d892750a42cc5ae6d
+ms.sourcegitcommit: ae62a269778cdbf1d207cd017de522f934b030e9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575048"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44700981"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Verwenden von APIs zum Hinzufügen von Drittanbieter-Zertifizierungsstellen für SCEP in Intune
 
@@ -125,6 +125,13 @@ Die Konfiguration muss folgende Eigenschaften enthalten:
     - AAD_APP_KEY = „Der während des Integrationsprozesses abgerufene Azure-Anwendungsschlüssel“
     - TENANT = „Die während des Integrationsprozesses abgerufene Mandanten-ID“
     - PROVIDER_NAME_AND_VERSION = „Informationen zum Identifizieren Ihres Produkts und der zugehörigen Version“
+    
+Wenn Ihre Lösung eher einen Proxy mit oder ohne Authentifizierung erfordert, können Sie die folgenden Eigenschaften hinzufügen:
+
+    - PROXY_HOST="The host the proxy is hosted on." (Der Host, auf dem der Proxy gehostet wird)
+    - PROXY_PORT="The port the proxy is listening on." (Der Port, auf den der Proxy hört)
+    - PROXY_USER="The username to use if proxy uses basic authentication." (Der zu verwendende Benutzername, wenn der Proxy Standardauthentifizierung verwendet)
+    - PROXY_PASS="The password to use if proxy uses basic authentication." (Das zu verwendende Kennwort, wenn der Proxy Standardauthentifizierung verwendet)
 
 Löst aus:
 

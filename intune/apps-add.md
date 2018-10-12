@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: b92a5c7bcddbecc438aa5e72989ab2302440da7a
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141676"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562883"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune
 
@@ -90,7 +90,7 @@ Wenn Sie bestimmen, welche Apps Ihre Mitarbeiter benötigen, berücksichtigen Si
 
 Zunächst müssen Sie auf der Grundlage der Vertraulichkeitsstufe der in der App enthaltenen Daten bestimmen, welche Gruppe Zugriff auf die App haben sollte. Sie müssen möglicherweise bestimmte Rollentypen innerhalb Ihrer Organisation einschließen bzw. ausschließen. Beispielsweise kann es sein, dass für die Vertriebsgruppe nur bestimmte branchenspezifische Apps erforderlich sind, wohingegen Mitarbeiter, die im Zusammenhang mit der Technik, den Finanzen bzw. der Personal- oder Rechtsabteilung stehen, gar keine branchenspezifischen Apps verwenden müssen. Außerdem sind für die Vertriebsgruppe möglicherweise ein zusätzlicher Schutz von Daten und der Zugriff auf unternehmensinterne Dienste auf mobilen Geräten erforderlich. Sie müssen festlegen, wie diese Gruppe über die App eine Verbindung mit den Ressourcen herstellt. Sollen die Daten, auf die die App zugreift, in der Cloud oder lokal gespeichert werden? Außerdem müssen Sie festlegen, wie die Benutzer über die App eine Verbindung mit den Ressourcen herstellen. 
 
-Neben E-Mails unterstützt Intune auch das Ermöglichen des Zugriffs auf mobile Apps, die den sicheren Zugriff auf lokale Daten erfordern, z.B. ein branchenspezifischer Anwendungsserver. Sie stellen diesen Zugriffstyp in der Regel mithilfe von [Zertifikaten, die von Intune verwaltet werden](certificates-configure.md), in Kombination mit einem VPN-Standardgateway oder -proxy im Umkreis, z.B. dem Azure Active Directory-Anwendungs-Proxy, bereit. Darüber hinaus können das [App Wrapping Tool und App SDK](apps-prepare-mobile-application-management.md) von Intune dabei helfen, dass die Daten, auf die zugegriffen wird, in der branchenspezifischen App verbleiben und diese App keine Unternehmensdaten an Verbraucher-Apps oder -Dienste übergeben kann.
+Neben E-Mails unterstützt Intune auch das Ermöglichen des Zugriffs auf Client-Apps, die den sicheren Zugriff auf lokale Daten erfordern, z.B. ein branchenspezifischer Anwendungsserver. Sie stellen diesen Zugriffstyp in der Regel mithilfe von [Zertifikaten, die von Intune verwaltet werden](certificates-configure.md), in Kombination mit einem VPN-Standardgateway oder -proxy im Umkreis, z.B. dem Azure Active Directory-Anwendungs-Proxy, bereit. Darüber hinaus können das [App Wrapping Tool und App SDK](apps-prepare-mobile-application-management.md) von Intune dabei helfen, dass die Daten, auf die zugegriffen wird, in der branchenspezifischen App verbleiben und diese App keine Unternehmensdaten an Verbraucher-Apps oder -Dienste übergeben kann.
 
 Verwenden Sie das [Handbuch zur Bereitstellungs-, Entwurfs- und Implementierungsplanung für Intune](planning-guide.md), um zu ermitteln, wie Sie die Gruppen der Organisation identifizieren, die jedem App-Szenario für Anwendungsfälle und untergeordnete Anwendungsfälle zugewiesen sind. Weitere Informationen zum Zuweisen von Apps an Gruppen finden Sie unter [Zuweisen von Apps an Gruppen mit Microsoft Intune](apps-deploy.md).
 
