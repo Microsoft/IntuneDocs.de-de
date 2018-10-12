@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/22/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3d18413465dd6f87a98da4b1f275392feac27c52
-ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
+ms.openlocfilehash: d42133d8a2e52300a2414de9105db2ef26bae445
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169048"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799675"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Häufig gestellte Fragen zu MAM und App-Schutz
 
