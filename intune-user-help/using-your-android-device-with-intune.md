@@ -1,11 +1,11 @@
 ---
 title: Verwenden Ihres Android-Geräts mit Intune | Microsoft-Dokumentation
-description: Liste mit Links zu Aufgaben, die Benutzer auf ihrem Android-Mobilgerät ausführen können, wenn das Gerät bei Intune registriert ist.
+description: Liste von Links für die Problembehandlung und Verwaltung von Intune-registrierten Android-Geräten
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 347757a333bcfd8e649cb621f0a95c83f24cdc88
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 35c76db52db0f037427357eb5f3059a65908ae12
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018667"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168946"
 ---
-# <a name="using-your-android-device-with-intune"></a>Verwenden Ihres Android-Geräts mit Intune
+# <a name="using-your-android-device-with-intune-company-portal"></a>Verwenden Ihres Android-Geräts mit dem Intune-Unternehmensportal
 
-Mit Intune können Sie Ihre Arbeit auf verschiedene Weise erleichtern. Dies ist eine Liste der am häufigsten vorkommenden Vorgehen, um die Sie Ihr Unternehmen möglicherweise bittet.
+Dieser Artikel enthält Tasks und Informationen zum Unternehmensportal für Android. Verwenden Sie diese, um Probleme zu behandeln und Ihr Android-Gerät zu verwalten. Klicken Sie auf einen beliebigen Link, um weitere Details, Schritte und Screenshots zu sehen. 
 
 ## <a name="supported-versions"></a>Unterstützte Versionen
 
-Intune unterstützt derzeit Android 4.4 und höher. Dies schließt Geräte mit Samsung KNOX 4.4 und einer höheren Version ein.
+Das Unternehmensportal unterstützt derzeit Android 4.4 und höher. Es beinhaltet auch Unterstützung für Geräte mit Samsung Knox 4.4 und höher.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>In Intune registrieren und das Unternehmenswebportal installieren
 

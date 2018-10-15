@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,19 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 51bca0c2aa10f15511e1644eda9ca6dd11c36f8b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 99570a30130d35a651701749628cd918acf858e0
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031582"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864557"
 ---
-# <a name="using-your-ios-device-with-intune"></a>Verwenden Ihres iOS-Geräts mit Intune
-
-Mit Intune können Sie Ihre Arbeit auf verschiedene Weise erleichtern. Dies ist eine Liste der am häufigsten vorkommenden Vorgehen, um die Sie Ihr Unternehmen möglicherweise bittet.
+# <a name="using-your-ios-device-with-intune-company-portal"></a>Verwenden Ihres iOS-Geräts mit dem Intune-Unternehmensportal
+Dieser Artikel enthält Aufgaben und Informationen zum Unternehmensportal für iOS. Verwenden Sie diese, um Probleme zu behandeln und Ihr iOS-Gerät zu verwalten. Klicken Sie auf einen beliebigen Link, um weitere Details, Schritte und Screenshots zu sehen.
 
 ## <a name="supported-versions"></a>Unterstützte Versionen
 
-Intune unterstützt derzeit iOS 9.0 und höher.
+Das Unternehmensportal für iOS unterstützt derzeit iOS 10.0 und höher.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>In Intune registrieren und das Unternehmenswebportal installieren
 

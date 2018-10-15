@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee5a39ee8a146fbc6a85a9f4438b8e14a408a735
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 772c800e75f52d9826992bf0adfbfdcf3faba107
+ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321659"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46329979"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Hinzufügen einer Partnerzertifizierungsstelle in Intune mithilfe von SCEP
 
@@ -38,7 +38,7 @@ Mit einer Azure AD-Anwendung können Sie Rechte an Intune delegieren, wodurch si
 
 Dieser Artikel stellt eine Übersicht über dieses Feature aus der Perspektive von Administratoren bereit und geht auch auf die Erstellung einer Azure AD-Anwendung ein.
 
-## <a name="overview"></a>Übersicht
+## <a name="overview"></a>Überblick
 
 Die folgenden Schritte bieten einen Überblick über das Ausstellen von SCEP-Zertifikaten in Intune:
 
@@ -123,6 +123,7 @@ Wenn Sie die Registrierung aufheben oder das Gerät zurücksetzen, werden die Ze
 Intune wird von den folgenden Drittanbieter-Zertifizierungsstellen unterstützt:
 
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
+- [EJBCA GitHub open-source version (Open Source-Version von EJBCA in GitHub)](https://github.com/agerbergt/intune-ejbca-connector)
 
 Wenn Sie als Drittanbieter-Zertifizierungsstelle daran interessiert sind, Ihr Produkt in Intune zu integrieren, müssen Sie sich mit dem API-Leitfaden vertraut machen:
 
