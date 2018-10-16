@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/05/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b69934edc70e10ee01394cf5b6a4fed75334660
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 399efad4f4cbe4dde1b45004daa9d0264e0db777
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330057"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903402"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Erste Schritte beim Hinzufügen von Apps in Microsoft Intune
 
