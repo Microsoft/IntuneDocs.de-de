@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 151a445bf7c5c17f8ff1b5ee403df8744f2d8ba6
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268905"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102054"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune
 
@@ -153,7 +153,7 @@ Gerätekonformitätsrichtlinien können auch ohne einen bedingten Zugriff verwen
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Möglichkeiten, die Gerätekonformitätsrichtlinien bereitzustellen
 Sie können Benutzern die Konformitätsrichtlinie in Benutzergruppen oder Geräten in Gerätegruppen bereitstellen. Wenn Sie eine Konformitätsrichtlinie für einen Benutzer bereitstellen, wird die Konformität aller Geräte des Benutzers überprüft.
 
-Die **Einstellungen zur Konformitätsrichtlinie** (Azure-Portal > Gerätekonformität) enthalten Folgendes:
+Die **Standardeinstellungen zur Konformitätsrichtlinie** (Azure-Portal > Gerätekonformität) enthalten Folgendes:
 
 - **Kennzeichnen von Geräten, die keine Konformitätsrichtlinie zugewiesen haben, als:** Diese Eigenschaft verfügt über zwei Werte:
 

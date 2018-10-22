@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/27/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b89ca2c4320db733f39ce9b67d275169f4cba5c6
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 58b157cfe639651aa65e8dfb510b857d0128589a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313790"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102122"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Aktivieren von Windows Defender ATP mit bedingtem Zugriff in Intune
 
@@ -89,6 +89,10 @@ Sobald sie ein Gerät über das Konfigurationspaket integrieren, müssen Sie die
 6. Konfigurieren Sie die Einstellungen:
 
   - **Typ des Windows Defender ATP-Clientkonfigurationspakets:** Klicken Sie auf **Onboard** (Integrieren), um das Konfigurationspaket dem Profil hinzuzufügen. Klicken Sie auf **Offboard** (Integration aufheben), um das Konfigurationspaket aus dem Profil zu entfernen.
+  
+    > [!NOTE] 
+    > Wenn Sie ordnungsgemäß eine Verbindung mit Windows Defender ATP hergestellt haben, **integriert** Intune automatisch das Konfigurationsprofil für Sie.
+  
   - **Sample sharing for all files** (Freigabe von Stichproben für alle Dateien): Wenn Sie diese Option **aktivieren**, werden Stichproben erfasst und mit Windows Defender geteilt. Wenn Sie z.B. eine verdächtige Datei sehen, können Sie sie zur gründlichen Analyse an Windows Defender ATP senden. Wenn **Not configured** (Nicht konfiguriert) festgelegt ist, werden keine Stichproben mit Windows Defender ATP geteilt.
   - **Häufigkeit von Telemetrieberichten erhöhen:** **Aktivieren** Sie diese Einstellung für Geräte mit hohem Risiko, damit sie häufiger Telemetriedaten an den Windows Defender ATP-Dienst melden.
 

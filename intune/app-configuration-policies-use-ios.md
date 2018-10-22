@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8abaef622fcf633eecde3a2bb2ee261cb7c8fc9e
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b39afeaf6daf8b08c58becd0b4af07299bd79e7a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330261"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101992"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Hinzufügen App-Konfigurationsrichtlinien für verwaltete iOS-Geräte
 
@@ -31,7 +31,8 @@ Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um benutzerdefi
 Nachdem Sie eine App-Konfigurationsrichtlinie hinzugefügt haben, können Sie die Zuweisungen für die App-Konfigurationsrichtlinie festlegen. Wenn Sie die Zuweisungen für die Richtlinie festlegen, können Sie entscheiden, ob Gruppen von Benutzern ein- und ausgeschlossen werden, für welche die Richtlinie angewendet wird. Wenn Sie entscheiden, eine oder mehrere Gruppen einzuschließen, können Sie bestimmte einzuschließende Gruppen oder integrierte Gruppen auswählen. Zu den integrierten Gruppen zählen **Alle Benutzer**, **Alle Geräte** und **Alle Benutzer und alle Geräte**. 
 
 >[!NOTE]
->Intune bietet die vorab erstellten Gruppen **Alle Benutzer** und **Alle Geräte** in der Konsole zur Vereinfachung mit integrierten Optimierungen an. Sie sollten diese Gruppen unbedingt anstelle möglicherweise selbst erstellter „Alle Benutzer“- oder „Alle Geräte“-Gruppen verwenden, um alle Benutzer und alle Geräte zu erreichen.
+>Intune bietet die vorab erstellten Gruppen **Alle Benutzer** und **Alle Geräte** in der Konsole zur Vereinfachung mit integrierten Optimierungen an. Sie sollten diese Gruppen unbedingt anstelle möglicherweise selbst erstellter „Alle Benutzer“- oder „Alle Geräte“-Gruppen verwenden, um alle Benutzer und alle Geräte zu erreichen.<p></p>
+>Wie der Microsoft Intune-Administrator können Sie steuern, welche Benutzerkonten Microsoft Office-Anwendungen auf verwalteten Geräten hinzugefügt werden. Sie können den Zugriff auf zulässige Organisationsbenutzerkonten beschränken und persönliche Konten auf registrierten Geräten blockieren. Die unterstützenden Anwendungen verarbeiten die App-Konfiguration und entfernen und blockieren nicht genehmigte Konten.
 
 Nachdem Sie die eingeschlossenen Gruppen für Ihre Anwendungskonfigurationsrichtlinie ausgewählt haben, können Sie auch die bestimmten auszuschließenden Gruppen auswählen. Weitere Informationen finden Sie unter [Einschließen und Ausschließen von App-Zuweisungen in Microsoft Intune](apps-inc-exl-assignments.md).
 
@@ -58,7 +59,7 @@ Nachdem Sie die eingeschlossenen Gruppen für Ihre Anwendungskonfigurationsricht
 8.  Wählen Sie im Bereich **Konfigurationsrichtlinie hinzufügen** die Option **Konfigurationseinstellungen** aus.
 9. Wählen Sie das **Format der Konfigurationseinstellungen** aus. Wählen Sie eine der folgenden Optionen aus, um XML-Informationen hinzuzufügen:
     - **Verwenden des Konfigurations-Designers**
-    - **Eingeben von XML-Daten**<br></br>
+    - **Eingeben von XML-Daten**<br><br>
     Ausführliche Informationen zur Verwendung des Konfigurations-Designers finden Sie unter [Verwenden des Konfigurations-Designers](#use-configuration-designer). Ausführliche Informationen zum Eingeben von XML-Daten finden Sie unter [Eingeben von XML-Daten](#enter-xml-data). 
 10. Nachdem Sie Ihre XML-Daten hinzugefügt haben, wählen Sie **OK**, und wählen Sie dann **Hinzufügen**, um die Konfigurationsrichtlinie hinzuzufügen. Der Übersichtsbereich für die Konfigurationsrichtlinie wird angezeigt.
 11. Wählen Sie **Zuweisungen**, um die Ein- und Ausschlussoptionen anzuzeigen. 
@@ -95,6 +96,17 @@ Microsoft Intune bietet Konfigurationseinstellungen, die für eine App eindeutig
 2. Klicken Sie auf **Löschen**.
 
 Die Zeichen \{\{ und \}\} werden nur von Tokentypen verwendet und dürfen nicht für andere Zwecke verwendet werden.
+
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Nur Zulassen von konfigurierten Organisationskonten in Apps mit mehreren Identitäten 
+
+Verwenden Sie für Android-Geräte die folgenden Schlüssel/Wert-Paare:
+
+| **Key** | IntuneMAMAllowedAccountsOnly |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Werte** | <ul><li>**Aktiviert**: Das einzige zulässige Konto ist das verwaltete Benutzerkonto, das von dem Schlüssel [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) definiert wird.</li><li>**Deaktiviert** (oder jeder andere Wert, der keine Groß-/Kleinschreibung nicht beachtende Übereinstimmung mit **Aktiviert** ist): Jedes Konto ist zulässig.</li></ul> |
+
+   > [!NOTE]
+   > Sie müssen OneDrive für iOS 10.34 oder höher und Outlook für iOS 2.99.0 verwenden oder höher verwenden, wenn Sie nur konfigurierte Organisationskonten mit mehreren Identitäten zulassen.
 
 ## <a name="enter-xml-data"></a>Eingeben von XML-Daten
 

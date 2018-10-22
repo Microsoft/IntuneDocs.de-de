@@ -14,12 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85f11e3a9bfd43affde35806d9aeaf40dcbfe03d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: ed2dcda510c455be1ad532228bfbcbeb898d971a
+ms.sourcegitcommit: b7789fd2f34528275c13a717699cf53a289ed04e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906191"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48891028"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für Android-Geräte in Intune
 

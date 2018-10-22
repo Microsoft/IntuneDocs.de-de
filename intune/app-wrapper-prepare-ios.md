@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
-ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
+ms.openlocfilehash: 652157f41f0fbefa14e9f22fea01c918cb7704a1
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40251710"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169497"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Vorbereiten von iOS-Apps für App-Schutzrichtlinien mit dem Intune App Wrapping Tool
 
@@ -39,13 +39,13 @@ Bevor Sie das App Wrapping Tool ausführen, müssen Sie einige allgemeine Voraus
 
 * Laden Sie das [Microsoft Intune App Wrapping Tool für iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) von GitHub herunter.
 
-* Mac OS-Computer mit OS X 10.8.5 oder höher und installierter Xcode-Toolsetversion 5 oder höher.
+* Mac OS-Computer mit OS X 10.8.5 oder höher und installierter Xcode-Toolsetversion 9 oder höher.
 
 * Die Ausgangs-iOS-App muss von Ihrem Unternehmen oder einem unabhängigen Softwareanbieter (ISV) entwickelt und signiert werden.
 
   * Die Ausgangs-App-Datei muss die Erweiterung **.ipa** oder **.app** haben.
 
-  * Die Ausgangs-App muss für iOS 8.0 kompiliert sein. oder höher kompiliert werden.
+  * Die Ausgangs-App muss für iOS 10 oder höher kompiliert sein.
 
   * Die Ausgangs-App darf nicht verschlüsselt werden.
 

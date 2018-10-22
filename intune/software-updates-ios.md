@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: fdd33ea0b5d8189712c6390861131c684cfaa67d
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313495"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101952"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Konfigurieren von iOS-Updaterichtlinien in Intune
 
@@ -23,7 +23,7 @@ Durch Richtlinien für Softwareupdates können Sie erzwingen, dass das neueste U
 
 Das Gerät wird etwa alle acht Stunden bei Intune eingecheckt. Wenn ein Update verfügbar und das Einchecken nicht während eines eingeschränkten Zeitraums stattfindet, lädt das Gerät das neueste Update für das Betriebssystem herunter und installiert es. Es ist kein Benutzereingriff erforderlich, um das Gerät zu aktualisieren. Die Richtlinie verhindert nicht, dass ein Benutzer das Betriebssystem manuell aktualisiert.
 
-Dieses Feature unterstützt Geräte, auf denen iOS 10.3 und höher ausgeführt wird.
+Dieses Feature unterstützt Geräte, auf denen iOS 10.3 und höhere Versionen ausgeführt werden. Die Einstellung für die Verzögerung ist verfügbar in iOS 11.3 oder höheren Versionen.
 
 ## <a name="configure-the-policy"></a>Konfigurieren der Richtlinie
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.

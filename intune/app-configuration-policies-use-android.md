@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdf927eff77b6a97e4c763ec0d75c7e44e4c6840
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: e7e740d03453a437572f8f960ed21927f4fcbace
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799579"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102037"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Android-Geräte
 
@@ -29,7 +29,9 @@ ms.locfileid: "48799579"
 Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Einstellungen für Android-Arbeitsprofil-Apps anzugeben. Der App-Entwickler muss Konfigurationseinstellungen für mit Android verwaltete Apps zur Verfügung stellen, damit Konfigurationseinstellungen für die App angegeben werden können. Weisen Sie die Konfigurationsrichtlinien für die App der Benutzergruppe zu, für die die Einstellungen gelten sollen.  Die Richtlinieneinstellungen werden verwendet, wenn die App danach sucht (in der Regel beim ersten Ausführen).
 
 > [!Note]  
-> Nicht jede App unterstützt App-Konfigurationen. Fragen Sie den App-Entwickler, um herauszufinden, ob er die App so erstellt hat, dass App-Konfigurationsrichtlinien unterstützt werden.
+> Nicht jede App unterstützt App-Konfigurationen. Fragen Sie den App-Entwickler, um herauszufinden, ob er die App so erstellt hat, dass App-Konfigurationsrichtlinien unterstützt werden.<p></p>
+> Wie der Microsoft Intune-Administrator können Sie steuern, welche Benutzerkonten Microsoft Office-Anwendungen auf verwalteten Geräten hinzugefügt werden. Sie können den Zugriff auf zulässige Organisationsbenutzerkonten beschränken und persönliche Konten auf registrierten Geräten blockieren. Die unterstützenden Anwendungen verarbeiten die App-Konfiguration und entfernen und blockieren nicht genehmigte Konten.<p></p>
+> Für Microsoft Word, Microsoft Excel und Microsoft PowerPoint müssen Sie Android 16.0.9327.1000 und höher verwenden.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
@@ -69,6 +71,16 @@ Wenn Sie eine Variable als Werttypen auswählen möchten, haben Sie folgende Opt
 - Benutzer-ID: z.B. **3ec2c00f-b125-4519-acf0-302ac3761822**
 - Benutzername: z.B. **John Doe**
 
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Nur Zulassen von konfigurierten Organisationskonten in Apps mit mehreren Identitäten 
+
+Verwenden Sie für Android-Geräte die folgenden Schlüssel/Wert-Paare:
+
+| **Key** | com.microsoft.intune.mam.AllowedAccountUPNs |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Werte** | <ul><li>Ein oder mehrere durch <code>;</code> getrennte UPNs.</li><li>Die einzigen zulässigen Konten sind die von diesem Schlüssel definierten, verwalteten Benutzerkonten.</li><li> Für bei Intune registrierte Geräte kann das Token <code>{{userprincipalname}}</code> verwendet werden, um das angemeldete Benutzerkonto darzustellen.</li></ul> |
+
+   > [!NOTE]
+   > Sie müssen Outlook für Android 2.2.222 oder höher verwenden, wenn Sie nur konfigurierte Organisationskonten mit mehreren Identitäten zulassen. 
 
 ## <a name="enter-the-json-editor"></a>Eingabe mit dem JSON-Editor
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/30/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cbe9f28b66031f6eddef4804c157f01ca79ad81d
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 4a5333f4e94db0b41b81dcb2589133956c040725
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347517"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903504"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden
 
@@ -93,7 +93,8 @@ Achten Sie beim Einrichten eines Geräts für einen Intune-Benutzer darauf, dass
         > Wenn Sie das Land/die Region ändern, werden die Metadaten der App aktualisiert und die URL bei der nächsten Synchronisierung mit dem Apple-Dienst für Apps, die mit diesem Token erstellt wurden, gespeichert. Die App wird nicht aktualisiert, wenn sie in dem neuen regionalen Store nicht vorhanden ist.
 
     - **Typ des VPP-Kontos:** Wählen Sie **Unternehmen** oder **Bildungswesen** aus.
-    - **Automatische App-Updates**: Zur Aktivierung von automatischen Updates können Sie zwischen **On** und **Off** auswählen. Wenn diese Option aktiviert ist, erkennt Intune Updates für VPP-Apps in App Store und überträgt diese beim Geräte-Check-In automatisch mithilfe von Push auf das Gerät.
+    - **Automatische App-Updates**: Zur Aktivierung von automatischen Updates können Sie zwischen **On** und **Off** auswählen. Wenn diese Option aktiviert ist, erkennt Intune Updates für VPP-Apps in App Store und überträgt diese beim Geräte-Check-In automatisch mithilfe von Push auf das Gerät. Automatische App-Updates für Apple VPP-Apps aktualisieren nur die Apps automatisch, die mit der Installationsabsicht **Erforderlich** bereitgestellt wurden. Für Apps, die mit der Installationsabsicht **Verfügbar** bereitgestellt wurden, generiert das automatische Update eine Benachrichtigung für Sie (als Administrator), in der Sie darüber informiert werden, dass eine neue Version der App verfügbar ist. Der Benutzer muss auf „Installieren“ klicken, um die neuere Version der App zu installieren. Darüber hinaus wird dem Benutzer die App als nicht installiert im Unternehmensportal angezeigt, obwohl eine frühere Version der App installiert ist. In diesem Fall kann der Benutzer die App erneut installieren.
+    
         > [!NOTE]
         > Für iOS-Version 11.0 und höher können nun automatische App-Updates für Apps ausgeführt werden, die für Geräte und Benutzer lizenziert sind.
 6. Wenn Sie fertig sind, klicken Sie auf **Erstellen**.
