@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb891b2a602cde4510953ce00c4e206d1135fce
-ms.sourcegitcommit: a89af1f0dad61320ab3e31cb64708f14514a5081
+ms.openlocfilehash: 83a231f41f5cf9d4488e86040c2d7e141f71d0a7
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46300458"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424916"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Zurücksetzen oder Entfernen einer Gerätekennung in Intune
 
@@ -49,7 +49,6 @@ Für Android-Geräte bedeutet dies im Endeffekt, dass die Kennungsrückstellung 
 | Android-Geräte mit Version 7.x. und früher | Nein |
 | iOS | Nein |
 | macOS | Nein |
-| iOS | Nein |
 
 Verwenden Sie die Aktion „Kennung zurücksetzen“, um eine neue Kennung für das Arbeitsprofil zu erstellen. Durch diese Aktion wird eine Kennungsrückstellung ausgelöst, und es wird ausschließlich für das Arbeitsprofil eine neue temporäre Kennung erstellt. 
 

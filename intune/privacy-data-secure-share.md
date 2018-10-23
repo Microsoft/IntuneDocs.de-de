@@ -14,12 +14,12 @@ ms.assetid: 68921fd6-5f50-456c-a3af-83d7bc4b134b
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5613c1284110e85a910db8f156ff4f62a54af4ad
-ms.sourcegitcommit: dc6979f2b14d522530577cc7f212cc822356acc9
+ms.openlocfilehash: 6dc722a3d10d68c4aec30fc6d10a2867f5f0b2d7
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/29/2018
-ms.locfileid: "47453543"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425324"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Datensicherheit und -freigabe in Intune
 
@@ -68,7 +68,7 @@ Weitere Informationen zu für Drittanbieter freigegebenen Daten finden Sie in fo
 
 Microsoft Intune gibt keine Daten für System Center Configuration Manager frei. System Center Configuration Manager ist ein lokales Produkt, das direkt vom Kunden bereitgestellt, verwaltet und betrieben wird. Die Diagnose- und Nutzungsdaten, die von Configuration Manager gesammelt werden, dienen ausschließlich zur Verbesserung der Installation, der Qualität und der Sicherheit von zukünftigen Releases.
 
-Weitere Informationen finden Sie unter [Diagnose- und Nutzungsdaten für System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md). 
+Weitere Informationen finden Sie unter [Diagnose- und Nutzungsdaten für System Center Configuration Manager](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data.md). 
 
 
 ## <a name="next-steps"></a>Nächste Schritte

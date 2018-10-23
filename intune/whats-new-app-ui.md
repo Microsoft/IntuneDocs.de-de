@@ -15,12 +15,12 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9f0140d532356a1ddb3f8acf19ea1dfaf6e85eb8
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: eb1599085687c258c6853eacf269e2d1b11cbaf1
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347693"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425086"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Updates der Benutzeroberfläche für Endbenutzer-Apps in Intune
 Erfahren Sie, welche Updates an der Benutzeroberfläche für Apps vorgenommen wurden, die Ihre Endbenutzer in dieser Version von Microsoft Intune sehen. Wenn Sie Kenntnisse über diese Updates haben, können Sie die Benutzerkommunikation sowie alle aktualisierten Benutzerdokumentationen verbessern, die Sie zur Unterstützung der Bereitstellung erstellt haben. Es kann auch helfen, zu verstehen, wie Probleme behandelt werden, die auftauchen, wenn Benutzer den Helpdesk für den Support mithilfe des Unternehmensportals aufrufen.
@@ -30,15 +30,15 @@ Erfahren Sie, welche Updates an der Benutzeroberfläche für Apps vorgenommen wu
 ## <a name="week-of-august-27-2018"></a>Woche vom 27. August 2018  
 
 ### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Neues Update zur Verbesserung der Benutzerfreundlichkeit der Unternehmensportalwebsite <!--2000968 -->  
-Die Unternehmensportal-Website wurde auf der Grundlage von Kundenfeedback um neue Features ergänzt. Sie werden eine erhebliche Verbesserung der vorhandenen Funktionen und Benutzerfreundlichkeit Ihrer Geräte feststellen können. Bestimmte Bereiche der Website – &ndash;z.B. Gerätedetails, Feedback und Support sowie die Geräteübersicht&ndash; – wurden mit einem neuen, modernen und dynamischen Design ausgestattet. Die [Dokumentation zur Intune-Unternehmensportalwebsite](https://docs.microsoft.com/en-us/intune-user-help/using-the-intune-company-portal-website) wurde entsprechend dieser Änderungen aktualisiert.   
+Die Unternehmensportalwebsite wurde auf der Grundlage von Kundenfeedback um neue Features ergänzt. Sie werden eine erhebliche Verbesserung der vorhandenen Funktionen und Benutzerfreundlichkeit Ihrer Geräte feststellen können. Bestimmte Bereiche der Website – &ndash;z.B. Gerätedetails, Feedback und Support sowie die Geräteübersicht&ndash; – wurden mit einem neuen, modernen und dynamischen Design ausgestattet. Die [Dokumentation zur Intune-Unternehmensportalwebsite](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website) wurde entsprechend dieser Änderungen aktualisiert.   
 
 Folgende Updates werden Sie bemerken:  
 
 - optimierte Workflows auf allen Geräteplattformen
 - eine verbesserte Geräteidentifikation und optimierte Registrierungsworkflows
 - aussagekräftigere Fehlermeldungen
-- eine benutzerfreundlichere Sprache und weniger Fachbegriffe
-- Möglichkeit, direkte Links zu Apps zu teilen
+- Benutzerfreundlichere Sprache, weniger technischer Jargon
+- Möglichkeit zur Freigabe direkter Links für Apps
 - Verbesserte Leistung bei großen App-Katalogen
 - verbesserte Barrierefreiheit für alle Benutzer  
 

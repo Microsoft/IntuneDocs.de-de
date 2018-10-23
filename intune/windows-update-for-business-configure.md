@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255232"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425154"
 ---
 # <a name="manage-software-updates-in-intune"></a>Verwalten von Softwareupdates in Intune
 
@@ -34,7 +34,7 @@ Vereinfachen Sie die Updateverwaltung mithilfe von Windows Update for Business. 
   - Windows-Insider: langsam
   - Windows-Insider-Release 
       
-  Weitere Informationen zu den verfügbaren Wartungskanälen finden Sie unter [Übersicht über Windows as a Service](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels).
+  Weitere Informationen zu den verfügbaren Wartungskanälen finden Sie unter [Übersicht über Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
 - **Zurückstellungseinstellungen:** Konfigurieren Sie Einstellungen für die Zurückstellung von Updates, um Updateinstallationen für Gruppen von Geräten zu verzögern. Verwenden Sie diese Einstellungen zum Staffeln Ihres Updaterollouts, damit Sie den Fortschritt verfolgen können.
 - **Aussetzung:** Verschieben Sie die Installation von Updates, falls im Rahmen des Updaterollouts ein Problem auftreten sollte.
 - **Wartungsfenster:** Konfigurieren Sie die Zeiten, in denen Updates installiert werden können.
