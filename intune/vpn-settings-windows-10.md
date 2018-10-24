@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/26/2018
+ms.date: 9/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 0b064c6f0eaa67157c5c50ddad3a8fd863295b8b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: faf07b58c4480689d5f6f44bf09d6100a2eae9db
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312849"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48827852"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Windows 10-VPN-Einstellungen in Intune
 
@@ -59,12 +59,12 @@ Abhängig von den ausgewählten Einstellungen können nicht alle der aufgeführt
   - **PPTP**
 
   Wenn Sie einen VPN-Verbindungstyp auswählen, werden Sie möglicherweise aufgefordert, folgende Einstellungen vorzunehmen:  
-    - **Always On**: Aktivieren, um automatisch die VPN-Verbindung herzustellen, wenn Folgendes geschieht: 
+    - **Always On**: **Aktivieren** Sie diese Option, um die VPN-Verbindung automatisch bei folgenden Ereignissen herzustellen: 
       - Benutzer melden sich an ihren Geräten an.
       - Das Netzwerk auf dem Gerät ändert sich.
       - Der Bildschirm wird auf dem Gerät wieder eingeschaltet, nachdem er ausgeschaltet war. 
 
-    - **Authentifizierungsmethode**: Wählen Sie aus, wie Benutzer sich bei dem VPN-Server authentifizieren sollen. Die Verwendung von **Zertifikaten** bietet erweiterte Funktionen, z.B. berührungslose Authentifizierung, bedarfsgesteuertes VPN und Pro-App-VPN.
+    - **Authentifizierungsmethode**: Wählen Sie aus, wie Benutzer sich bei dem VPN-Server authentifizieren sollen. Die Verwendung von **Zertifikaten** bietet erweiterte Features, z.B. Authentifizierung ohne Benutzereingriff, bedarfsgesteuertes VPN und Pro-App-VPN.
     - **Anmeldeinformationen bei jeder Anmeldung speichern**: Wählen Sie das Zwischenspeichern von Anmeldeinformationen für die Authentifizierung aus.
     - **Benutzerdefiniertes XML**: Geben Sie benutzerdefinierte XML-Befehle zum Konfigurieren der VPN-Verbindung ein.
     - **EAP-XML**: Geben Sie EAP-XML-Befehle zum Konfigurieren der VPN-Verbindung ein.
@@ -114,7 +114,7 @@ Weitere Informationen zum Erstellen von benutzerdefinierten EAP-XML finden Sie u
 
 ## <a name="conditional-access"></a>Bedingter Zugriff
 
-- **Bedingter Zugriff für diese VPN-Verbindung**: Aktiviert den Gerätekonformitätsflow vom Client. Wenn aktiviert, versucht der VPN-Client, mit Azure Active Directory (AD) zu kommunizieren, um ein Zertifikat für die Authentifizierung abzurufen. Der VPN sollte für die Zertifikatauthentifizierung eingerichtet sein, und der VPN-Server muss dem Server vertrauen, der von Azure AD zurückgegeben wird.
+- **Bedingter Zugriff für diese VPN-Verbindung**: Aktiviert den Gerätekonformitätsflow vom Client. Wenn aktiviert, kommuniziert der VPN-Client mit Azure Active Directory (AD), um ein Zertifikat für die Authentifizierung abzurufen. Der VPN sollte für die Zertifikatauthentifizierung eingerichtet sein, und der VPN-Server muss dem Server vertrauen, der von Azure AD zurückgegeben wird.
 
 - **Einmaliges Anmelden (Single Sign-On, SSO) mit alternativem Zertifikat**: Verwenden Sie aus Gründen der Gerätekonformität ein anderes Zertifikat als das VPN-Authentifizierungszertifikat für die Kerberos-Authentifizierung. Geben Sie das Zertifikat mit den folgenden Einstellungen ein:
 
@@ -124,7 +124,17 @@ Weitere Informationen zum Erstellen von benutzerdefinierten EAP-XML finden Sie u
 
 ## <a name="dns-settings"></a>DNS-Einstellungen
 
-**Domäne und Server für diese VPN-Verbindung**: Fügen Sie Domäne und DNS-Server für das zu verwendende VPN hinzu. Sie können die DNS-Server auswählen, die die VPN-Verbindung nach dem Herstellen der Verbindung verwendet. Geben Sie für jeden Server Folgendes an:
+- **DNS-Suffixsuchliste**: Geben Sie in **DNS-Suffixe** ein DNS-Suffix ein, und klicken Sie auf **Hinzufügen**. Sie können mehrere Suffixe hinzufügen.
+
+  Wenn Sie DNS-Suffixe verwenden, können Sie nach einer Netzwerkressource mithilfe ihres Kurznamens anstelle des vollqualifizierten Domänennamens (Fully Qualified Domain Name, FQDN) suchen. Bei der Suche über den Kurznamen wird das Suffix automatisch vom DNS-Server ermittelt. Beispielsweise befindet sich `utah.contoso.com` in der DNS-Suffixliste. Pingen Sie `DEV-comp`. In diesem Szenario wird es in `DEV-comp.utah.contoso.com` aufgelöst.
+
+  DNS-Suffixe werden in der aufgeführten Reihenfolge aufgelöst, wobei die Reihenfolge geändert werden kann. Zum Beispiel sind `colorado.contoso.com` und `utah.contoso.com` in der DNS-Suffixliste enthalten, und beide weisen eine Ressource namens `DEV-comp` auf. Da `colorado.contoso.com` an erster Stelle in der Liste steht, wird es als `DEV-comp.colorado.contoso.com` aufgelöst.
+  
+  Um die Reihenfolge zu ändern, klicken Sie auf die Punkte links neben dem DNS-Suffix, und ziehen Sie das Suffix dann nach oben:
+
+  ![Auswählen der drei Punkte, Klicken und Ziehen zum Verschieben des DNS-Suffixes](./media/vpn-settings-windows10-move-dns-suffix.png)
+
+- **Domäne und Server für diese VPN-Verbindung**: Fügen Sie Domäne und DNS-Server für das zu verwendende VPN hinzu. Sie können die DNS-Server auswählen, die die VPN-Verbindung nach dem Herstellen der Verbindung verwendet. Geben Sie für jeden Server Folgendes an:
 - **Domäne**
 - **DNS-Server**
 - **Proxy**

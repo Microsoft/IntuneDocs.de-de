@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/08/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147716"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260248"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrieren Ihres macOS-Geräts bei Intune über die Unternehmensportal-App
 
@@ -80,8 +80,17 @@ Führen Sie die folgenden Schritte aus, um macOS-Geräte mit OS X El Capitan 10.
 
 9. Im Startbildschirm der Unternehmensportal-App werden Sie dann zur **Anmeldung** aufgefordert. Melden Sie sich mit demselben Geschäfts-, Schul- oder Unikonto wie bei der Unternehmensportalwebsite an.
 
-10. Das Unternehmensportal bestätigt Ihre Kontoinformationen und zeigt Ihnen Ihre Status zu **Geräteregistrierung** und **Gerätekompatibilität** an. Gelbe Dreiecke heben die Aktionen hervor, die Sie ergreifen müssen, um Ihr macOS-Gerät für die Schule, die Uni oder die Arbeit zu sichern. Klicken Sie auf **Begin** (Starten), um die Registrierung zu starten. Erfahren Sie, [welche Informationen Ihre Organisation erhält](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md), wenn Sie ein Gerät registrieren.
+10. Das Unternehmensportal bestätigt Ihre Kontoinformationen und zeigt Ihnen Ihre Status zu **Geräteregistrierung** und **Gerätekompatibilität** an. Gelbe Dreiecke heben die Aktionen hervor, die Sie ergreifen müssen, um Ihr macOS-Gerät für die Schule, die Uni oder die Arbeit zu sichern. Klicken Sie auf **Begin** (Starten), um die Registrierung zu starten. 
 
-11. Sie werden möglicherweise dazu aufgefordert, die Anmeldeinformationen Ihres Computers bereitzustellen. Es dauert einige Minuten, um Ihr Gerät für die Verwaltung zu registrieren. Während dieser Zeit können Sie auf dem Gerät andere Vorgänge ausführen. Sobald das Setup des Unternehmenszugriffs abgeschlossen ist, wird Ihnen eine Meldung angezeigt, die Sie darüber informiert.  
+11. Geben Sie die Anmeldeinformationen für Ihren Computer ein, wenn Sie dazu aufgefordert werden.  
+
+Das Registrieren Ihres Geräts für die Verwaltung kann einige Minuten beanspruchen. Während dieser Zeit können Sie auf dem Gerät andere Vorgänge ausführen. Sobald das Setup des Unternehmenszugriffs abgeschlossen ist, wird Ihnen eine Meldung angezeigt, die Sie darüber informiert.  
+
+## <a name="unverified-profiles"></a>Nicht überprüfte Profile
+Wenn Sie die installierten MDM-Profile (mobile Geräteverwaltung) für Ihr macOS-Gerät anzeigen, wird für einige Profile möglicherweise der Status **Nicht überprüft** angezeigt. Solange das **Verwaltungsprofil** den Status **Geprüft** aufweist, müssen Sie sich keine Gedanken machen.  
+
+Das Verwaltungsprofil definiert die MDM-Kanalverbindung. Solange das Verwaltungsprofil geprüft ist, erben alle anderen Profile, die dem Computer bereitgestellt werden, die Sicherheitseigenschaften des Verwaltungsprofils.
+
+Da diese anderen Profile keine individuelle Überprüfungen erfordern, können sie schneller für Geräte erstellt und bereitgestellt werden. 
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie die Supportabteilung Ihres Unternehmens. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  

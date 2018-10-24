@@ -1,11 +1,11 @@
 ---
-title: Verwenden Ihres Windows-Geräts mit Intune | Microsoft-Dokumentation
+title: Verwenden Ihres Windows-Geräts mit dem Intune-Unternehmensportal | Microsoft-Dokumentation
 description: Suchen Sie Links zur Problembehandlung oder Verwaltung Ihrer mobilen Windows-Geräte aus dem Unternehmensportal
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/24/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,41 +17,61 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c4018c73c2160a3db5d5c8b8843e803b56f2caa3
-ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
+ms.openlocfilehash: a28f12bc57fdf134554a65518f24a79287058eeb
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47168963"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866336"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>Verwenden Ihres Windows-Geräts mit dem Intune-Unternehmensportal
 
-Dieser Artikel enthält Tasks und Informationen zum Unternehmensportal für Windows. Verwenden Sie diese, um Probleme zu behandeln und Ihre Windows-Geräte zu verwalten. Klicken Sie auf einen beliebigen Link, um weitere Details, Schritte und Screenshots zu sehen.  
+Dieser Abschnitt erläutert Tasks und Informationen zum Unternehmensportal für Windows. Verwenden Sie diese, um Probleme zu behandeln und Ihre Windows-Geräte über das Unternehmensportal zu verwalten. Klicken Sie auf einen beliebigen Link unten, um weitere Details, Schritte und Screenshots zu sehen.  
+
+## <a name="how-to-get-company-portal"></a>Abrufen des Unternehmensportals
+Das Unternehmensportal ist als Websiteversion und auch als App-Download verfügbar. Melden Sie sich mit Ihren Geschäfts- ,Schul- oder Unianmeldeinformationen an, um [auf die Unternehmensportal-Website zuzugreifen](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+Ausführliche Schritte und Screenshots finden Sie unter [Anmelden beim Unternehmensportal](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal).
 
 ## <a name="supported-versions"></a>Unterstützte Versionen
 
-Das Unternehmensportal unterstützt derzeit die folgenden Windows-Versionen:
+Das Unternehmensportal unterstützt derzeit Geräte, die unter folgenden Windows-Versionen ausgeführt werden:
 
-* Windows 10 (Home, Pro, Education, S und Enterprise)
+* Windows 10 (Home, Pro, Education, S Modus und Enterprise-Versionen)
 * Windows Phone 8.1 und höher
 * Windows 8.1 RT
 * Windows 8.1
 
-Auch einige andere Versionen von Windows, z.B. [Windows 10 Holographic](https://www.microsoft.com/hololens), werden vom Unternehmensportal unterstützt. Diese Versionen werden in diesem Artikel nicht behandelt, weil sie nur für sehr spezifische Zwecke konzipiert sind.
+Auch einige andere Versionen von Windows, z.B. [Windows 10 Holographic](https://www.microsoft.com/hololens), werden vom Unternehmensportal unterstützt. Diese Versionen werden jedoch in diesem Artikel nicht behandelt, weil sie nur für sehr spezifische Zwecke konzipiert sind.
 
-## <a name="enrolling-your-device-and-installing-the-company-portal"></a>Registrieren Ihres Geräts und Installieren des Unternehmensportals
-
-- [Registrieren Ihres Windows-Geräts bei Intune](enroll-your-device-in-intune-windows.md)
-- [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-- [Auf welche Informationen kann Ihr Unternehmen zugreifen, wenn Sie Ihr Gerät bei Intune registrieren?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
-- [Zurücksetzen (Löschen) Ihres verlorenen oder gestohlenen Geräts](reset-erase-your-device-cpwebsite.md)
+## <a name="set-up-your-device-in-the-company-portal"></a>Einrichten Ihres Geräts im Unternehmensportal
+- [Get my Windows device managed in Company Portal (Mein Gerät im Unternehmensportal verwalten lassen)](enroll-your-device-in-intune-windows.md)
+- [What does it mean to get my device *managed*? (Was heißt „verwalten lassen“?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+- [Welche Informationen erhält mein Unternehmen, wenn ich mein Gerät registriere?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
+- [Verschlüsseln Ihres Geräts](encrypt-your-device-windows.md)
+- [Festlegen oder Ändern des Gerätekennworts](set-or-change-your-password-windows.md)
 
 ## <a name="things-you-can-do-after-your-device-is-enrolled-in-management"></a>Aufgaben, die Sie erledigen können, wenn Ihr Gerät für die Verwaltung registriert ist
-
-- [Verschlüsseln Ihres Geräts](encrypt-your-device-windows.md)
-- [Festlegen oder Ändern des Kennworts](set-or-change-your-password-windows.md)
-- [Aufheben der Registrierung Ihres Geräts in Intune](unenroll-your-device-from-intune-windows.md)
-- [Was geschieht, wenn Sie die Registrierung Ihres Geräts bei Intune aufheben?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
-- [Was geschieht, wenn Sie Ihr Gerät mithilfe des Unternehmensportals zurücksetzen?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
-- [Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 - [Manuelles Synchronisieren des Geräts](sync-your-device-manually-windows.md)
+- [Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
+- [Erase data from a lost or stolen device (Löschen von Daten von einem verlorenen oder gestohlenen Gerät)](reset-erase-your-device-cpwebsite.md)
+- [Was geschieht, wenn Sie Ihr Windows-Gerät mithilfe des Unternehmensportals zurücksetzen?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+- [Entfernen Ihres Windows-Geräts aus der Intune-Verwaltung](unenroll-your-device-from-intune-windows.md)
+- [Was geschieht, wenn ich mein Gerät aus dem Unternehmensportal entferne?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+
+## <a name="troubleshoot-and-maintain-your-device"></a>Problembehandlung und Verwaltung Ihres Geräts
+* [Auflösen von Einschränkungen eines Zugriffspunkts](resolve-access-point-restrictions.md)
+* [Die Registrierung meines Windows 10-Geräts funktioniert nicht](troubleshoot-your-windows-10-device-windows.md)
+* [Meine Windows-Version wird nicht unterstützt](your-windows-version-isnt-yet-supported.md)
+* [Aktualisieren Ihres Windows-Geräts](you-need-to-update-your-windows-device.md)
+* [Senden von Protokollen an die bzw. von der Unternehmensportal-App](send-logs-to-your-it-admin-cp-windows.md)
+* [Senden von Protokollen von der Einstellungs-App](send-logs-to-your-it-admin-settings-windows.md)
+* [Installieren von Office 365 auf meinem Windows 10-Gerät](install-office-windows.md)
+* [Mein Gerät muss verschlüsselt werden](you-need-to-enable-windows-encryption.md)
+* [Mein Gerät benötigt Antischadsoftware](your-device-needs-antimalware-software.md)
+* [Aktivieren des sicheren Starts](you-need-to-enable-secure-boot-windows.md)
+* [Aktivieren der Codeintegrität](you-need-to-enable-code-integrity.md)
+* [Aktivieren der Windows Defender Firewall](you-need-to-enable-defender-firewall-windows.md)
+* [Aktivieren der Benutzerzugriffssteuerung](you-need-to-enable-uac-windows.md)
+* [Aktualisieren von Betriebssystem-Buildversionen](you-need-to-update-os-build-version-windows.md)
+* [Aktivieren von Windows Defender](turn-on-defender-windows.md)

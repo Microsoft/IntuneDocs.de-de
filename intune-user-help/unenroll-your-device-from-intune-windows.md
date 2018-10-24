@@ -1,11 +1,11 @@
 ---
-title: Entfernen Ihres Windows-Geräts aus Intune
-description: Beschreibt das Entfernen eines Windows-Geräts aus Intune
+title: Entfernen Ihres Windows-Geräts aus der Intune-Verwaltung
+description: Beschreibt das Entfernen eines Windows-Geräts aus der Intune-Verwaltung
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/01/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,39 +17,56 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6090ea3509c1f355c21e02ae155bdb9035f6c508
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5984ac8ebe825a187b33945699a5fadc27e0c0cc
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148777"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828413"
 ---
-# <a name="remove-your-windows-device-from-intune-management"></a>Entfernen Ihres Windows-Geräts aus der Intune-Verwaltung
+# <a name="remove-your-windows-device-from-management"></a>Entfernen Ihres Windows-Geräts aus der Verwaltung
 
-Entfernen Sie ein registriertes, Windows-Gerät aus Intune, wenn Sie für folgende Zwecke nicht mehr wünschen oder benötigen:  
+Entfernen Sie ein registriertes Windows-Gerät aus der Verwaltung, wenn Sie es für folgende Zwecke nicht mehr wünschen oder benötigen:  
 * Verwenden Ihres Geräts für geschäftliche oder schulische Aufgaben 
 * Zugreifen auf geschäftliche oder schulische E-Mail, Apps oder andere Ressourcen
 
-Nachdem es entfernt wurde, können Sie auf dem Gerät nicht mehr auf schulische oder geschäftliche Ressourcen zugreifen. Folgende Windows-Geräte können aus Intune entfernt werden:  
+Nachdem Sie die Registrierung für das Gerät aufgehoben haben, verfügen Sie nicht mehr über die Berechtigungen für den Zugriff auf Schul-, Uni- oder Geschäftsressourcen. Sie können die folgenden Windows-Geräte aus der Verwaltung entfernen.  
 * Windows 10-Geräte 
 * Windows 8.1-Computer
-* Mobiles Windows 8.1-Gerät
+* Windows 8.1-Smartphone
  
-Weitere Informationen dazu, was beim Entfernen Ihres Geräts aus der Intune-Verwaltung geschieht, finden Sie unter [Was geschieht, wenn Sie Ihr Gerät aus Intune entfernen?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
+Weitere Informationen dazu, was beim Entfernen Ihres Geräts aus der Verwaltung geschieht, finden Sie unter [Was geschieht, wenn Sie Ihr Gerät aus Intune entfernen?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).  
 
 ## <a name="remove-your-windows-10-device"></a>Entfernen Ihres Windows 10-Geräts
-Führen Sie die folgenden Schritte zum Entfernen eines Windows 10-Geräts aus Intune aus.
+Führen Sie die folgenden Schritte zum Entfernen eines Windows 10-Geräts aus der Verwaltung aus.
 
-### <a name="via-the-company-portal-app"></a>Über die Unternehmensportal-App
+### <a name="remove-in-company-portal-app-home-page"></a>Entfernen in der Unternehmensportal-App, **Startseite**  
 
 1. Öffnen Sie die Unternehmensportal-App.
-2. Melden Sie sich mit Ihren Geschäfts-, Schul- oder Unianmeldeinformationen an.
-3. Wählen Sie in **Meine Geräte** das Gerät aus, das Sie entfernen möchten.
-4. Wählen Sie rechts oben in der App das Symbol **Mehr anzeigen** aus.
-5. Wählen Sie **Entfernen** aus. 
-6. Wählen Sie zum Bestätigen des Entfernens des Geräts **Gerät entfernen** aus.
+2. Wechseln Sie auf der **Startseite** nach unten zum Abschnitt **Meine Geräte**.
+3. Wählen Sie das Gerät aus, das Sie entfernen möchten.
+3. Wählen Sie rechts oben in der App das Symbol **Mehr anzeigen** aus.
+4. Wählen Sie **Entfernen** aus. 
+5. Wählen Sie zur Bestätigung des Vorgangs **Gerät entfernen** aus.  
 
-### <a name="via-device-settings-app"></a>In der App „Einstellungen“ des Geräts
+### <a name="remove-in-company-portal-app-device-context-menu"></a>Entfernen in der Unternehmensportal-App, Kontextmenü für das Gerät  
+
+1. Öffnen Sie die Unternehmensportal-App, und wechseln Sie zu **Meine Geräte**.
+
+    ![Beispielscreenshot der Unternehmensportal-App für Windows, Startseite mit hervorgehobenem Abschnitt „Meine Geräte“](./media/1809_CheckAccess_Context_Select_Device.png)
+
+2. Klicken Sie mit der rechten Maustaste, oder tippen Sie auf ein Gerät, und halten Sie es gedrückt, um das [Kontextmenü](https://docs.microsoft.com//windows/uwp/design/controls-and-patterns/menus) zu öffnen.  
+
+3. Wählen Sie **Entfernen** aus.  
+
+    ![Beispielscreenshot der Unternehmensportal-App für Windows, Startseite Das Kontextmenü für das Gerät wird im Abschnitt **Meine Geräte** auf der Seite angezeigt und enthält die Aktionen „Umbenennen“, „Entfernen“ und „Zugriff prüfen“.](./media/1809_DeviceContextMenu_Windows_CP.png)  
+
+5. Klicken Sie im Bestätigungsdialogfeld auf **Weitere Informationen**, um mehr darüber zu erfahren, wie sich Ihr Zugriff auf Geschäfts-, Schul- oder Uniressourcen ändern kann. Wählen Sie zur Bestätigung des Vorgangs **Gerät entfernen** aus.   
+
+     ![Beispielscreenshot der Unternehmensportal-App für Windows, Startseite Das Feld „Umbenennen“ erscheint über dem Gerät, in das der Benutzer einen neuen Namen eingeben und auf „Umbenennen“ oder „Abbrechen“ klicken kann.](./media/1808_RemoveDevice_Popup.png)  
+
+
+### <a name="remove-in-device-settings-app"></a>„Umbenennen“ in der App „Einstellungen“ des Geräts
 1. Öffnen Sie die App „Einstellungen“. 
 2. Wechseln Sie zu **Konten** > **Auf Arbeits- oder Schulkonto zugreifen**.
 3. Wählen Sie das verbundene Konto, das Sie entfernen möchten, und dann **Trennen** aus.
@@ -63,14 +80,15 @@ Führen Sie die folgenden Schritte zum Entfernen eines Windows 8.1-Computers aus
 3.  Wählen Sie unter **Turn on device management** (Geräteverwaltung aktivieren) **Turn off** (Deaktivieren) aus.
 4.  Wählen Sie im sich öffnenden Popupfenster **Turn off** (Deaktivieren) aus.
 
-## <a name="remove-your-windows-81-mobile-device"></a>Entfernen Ihres mobilen Windows 8.1-Geräts
-Führen Sie die folgenden Schritte zum Entfernen eines mobilen Geräts mit Windows 8.1 aus Intune aus.
+## <a name="remove-your-windows-81-phone"></a>Entfernen Ihres Windows 8.1-Smartphones
+Führen Sie die folgenden Schritte zum Entfernen eines Windows 8.1-Smartphones aus Intune aus.
 
 1.  Wechseln Sie zu **Einstellungen** > **Arbeitsplatz**.
 2.  Tippen Sie auf das Arbeitsplatzkonto, für das Sie die Registrierung aufheben möchten.
 3.  Tippen Sie am unteren Bildschirmrand auf **Löschen**.
 4.  Tippen Sie im Dialogfeld **Konto löschen** auf **Löschen**.  
-## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Entfernen Ihrer persönlichen Informationen nach dem Entfernen des Unternehmensportals
+## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Entfernen Ihrer persönlichen Informationen nach dem Entfernen des Unternehmensportals  
+
 Es gibt zwei Arten von Daten, die das Unternehmensportal auf Ihrem Windows-Gerät speichert:
 
 -   **Diagnoseprotokolle:** von Microsoft erfasste Aktivitätsdaten der Standard-App. Die Daten werden automatisch gelöscht, wenn Sie die Unternehmensportal-App deinstallieren. App-Aktivitätsdaten enthalten z.B. Informationen dazu, wie lange die App geöffnet war oder sie abgestürzt ist.

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f209fa315d5d5c36e661a931c32c70ba5ba93d81
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 40d4b2d316320f23b29f1a7a67c529a158a0f7d6
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150049"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48827835"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Beseitigen einer Bedrohung, die von einer Mobile Threat Defense-App erkannt wurde
 
 Mobile Threat Defense-Apps erkennen potenzielle Bedrohungen auf Ihren Geräten und geben entsprechende Warnungen aus. Einige Organisationen integrieren einen Mobile Threat Defense-Dienst in einem MDM-Anbieter wie Intune. Nach der Integration meldet der Mobile Threat Defense-Dienst erkannte Bedrohungen (wie verdächtige Apps oder Schwachstellen in Netzwerken und Betriebssystemen), indem er Ihnen eine Benachrichtigung über die Unternehmensportal-App sendet. Details zur Bedrohung und den Schritten zur Korrektur finden Sie dann in der Mobile Threat Defense-App.  
 
-Bedrohungen werden im Unternehmensportal als ungelöste Probleme angezeigt, die auf fehlende Konformität hinweisen. Wenn die Bedrohungen als besonders riskant eingestuft werden, wird Ihr Unternehmen Ihren Zugriff auf seine Unternehmensressourcen widerrufen. Solange diese Bedrohungen auf Ihrem Gerät vorhanden sind, können Sie folgende Aktionen möglicherweise nicht ausführen:  
+Bedrohungen werden im Unternehmensportal als ungelöste Probleme angezeigt, die auf fehlende Konformität hinweisen. Wenn die Bedrohungen als besonders riskant eingestuft werden, widerruft Ihr Unternehmen Ihren Zugriff auf Unternehmensressourcen. Solange diese Bedrohungen auf Ihrem Gerät vorhanden sind, können Sie folgende Aktionen möglicherweise nicht ausführen:  
 
 * Herstellen einer Verbindung mit Unternehmens-E-Mail
 * Herstellen einer Verbindung mit Unternehmens-WLAN
@@ -42,5 +42,5 @@ Im Folgenden finden Sie die iOS-spezifischen Mobile Threat Defense-Dienste, die 
 * [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 * [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie die Supportabteilung Ihres Unternehmens. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  
 

@@ -6,13 +6,6 @@ items:
     href: what-is-intune.md
   - name: Was ist Intune for Education?
     href: introduction-intune-education.md
-  - name: Intune-Features in Azure
-    href: ui-changes.md
-    items:
-    - name: Änderungen an Gruppen
-      href: groups-get-started.md
-    - name: Intune-PC-Legacyclient
-      href: intune-legacy-pc-client.md
   - name: Registrieren Sie sich für eine kostenlose Testversion
     href: free-trial-sign-up.md
   - name: Neuheiten
@@ -20,10 +13,6 @@ items:
     items:
     - name: Neuheiten bei der App-Benutzeroberfläche
       href: whats-new-app-ui.md
-    - name: Neuheiten – Archiv (Azure-Portal)
-      href: whats-new-archive.md
-    - name: Neuheiten – Archiv (klassisches Portal)
-      href: whats-new-archive-classic.md
   - name: Dienstbeschreibung
     href: microsoft-intune-service-description.md
   - name: Bekannte Probleme
@@ -34,18 +23,20 @@ items:
 - name: Schnellstarts
   href: get-started-evaluation.md
   items:
-  - name: Navigieren im Azure-Portal
-    href: get-started-azure.md
+  - name: Intune kostenlos testen
+    href: free-trial-sign-up.md
   - name: Erstellen von Benutzern
-    href: get-started-users.md
+    href: quickstart-create-user.md
   - name: Erstellen einer Gruppe
-    href: get-started-groups.md
-  - name: Zuweisen von Richtlinien
-    href: get-started-policies.md
-  - name: Registrieren von Geräten
-    href: get-started-enroll.md
-  - name: Zuweisen von Apps
-    href: get-started-apps.md
+    href: quickstart-create-group.md
+  - name: Erstellen einer Richtlinie
+    href: quickstart-create-policy.md
+  - name: Festlegen der automatischen Registrierung
+    href: quickstart-setup-auto-enrollment.md
+  - name: Erstellen und Zuweisen einer benutzerdefinierten Rolle
+    href: quickstart-create-custom-role.md
+  - name: Erstellen eines E-Mail-Geräteprofils
+    href: quickstart-email-profile.md
 - name: Implementierungshandbücher für Szenarios
   items:
   - name: Schützen von Exchange Online
@@ -60,6 +51,10 @@ items:
     href: byod-technology-decisions.md
 - name: Konzepte
   items:
+  - name: Was ist die Geräteverwaltung?
+    href: what-is-device-management.md
+  - name: Navigieren im Azure-Portal
+    href: get-started-azure.md
   - name: Grundlegende Architektur
     href: high-level-architecture.md
   - name: Lebenszyklen von Geräten und Apps
@@ -169,6 +164,8 @@ items:
         href: device-group-mapping.md
     - name: Einrichten der Windows-Registrierung
       items:
+      - name: Funktionen der Registrierungsmethode
+        href: enrollment-method-capab.md
       - name: Windows-Registrierung
         href: windows-enroll.md
       - name: Massenregistrierung
@@ -273,6 +270,8 @@ items:
           href: apps-add-office365-macos.md
       - name: Erstellen einer (branchenspezifischen) App
         items:
+        - name: Win32-App-Verwaltung
+          href: apps-win32-app-management.md
         - name: Branchenspezifische Android-Apps
           href: lob-apps-android.md
         - name: Branchenspezifische iOS-Apps
@@ -322,6 +321,8 @@ items:
         href: company-portal-app.md
       - name: Konfigurieren von Managed Browser
         href: app-configuration-managed-browser.md
+      - name: Konfigurieren von Outlook
+        href: app-configuration-policies-outlook.md
     - name: Schützen von Apps
       items:
       - name: Selektives Zurücksetzen von Apps
@@ -377,6 +378,8 @@ items:
       items:
       - name: Android
         href: device-restrictions-android.md
+      - name: Android Enterprise
+        href: device-restrictions-android-for-work.md
       - name: iOS
         href: device-restrictions-ios.md
       - name: macOS
@@ -391,8 +394,6 @@ items:
         href: device-restrictions-windows-10-teams.md
       - name: Windows Holographic for Business
         href: device-restrictions-windows-holographic.md
-      - name: Android-Arbeitsprofil
-        href: device-restrictions-android-for-work.md
     - name: Konfigurieren von Endpoint Protection
       href: endpoint-protection-configure.md
       items:
@@ -491,7 +492,7 @@ items:
     items:
     - name: Erstellen einer Android-Richtlinie
       href: compliance-policy-create-android.md
-    - name: Erstellen einer Android-Arbeitsprofilrichtlinie
+    - name: Erstellen einer Android Enterprise-Profilrichtlinie
       href: compliance-policy-create-android-for-work.md
     - name: Erstellen einer Richtlinie zum Aktivieren von Google Play Protect
       href: compliance-policy-create-google-play-protect.md
@@ -703,7 +704,7 @@ items:
         href: custom-settings-windows-10.md
       - name: Windows Holographic for Business
         href: custom-settings-windows-holographic.md
-      - name: Android-Arbeitsprofil
+      - name: Android Enterprise
         href: custom-settings-android-for-work.md
 - name: Anleitung für Entwickler
   items:
@@ -780,6 +781,8 @@ items:
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Ressourcen
   items:
+  - name: Microsoft Intune-Dokumentationsleitfaden
+    href: intune-documentation.md
   - name: Problembehandlung
     items:
     - name: Unterstützung von Benutzern beim Beheben von Problemen
@@ -804,11 +807,25 @@ items:
       href: troubleshoot-conditional-access.md
     - name: Exchange Connector-Problembehandlung
       href: troubleshoot-exchange-connector.md
+  - name: Archiv
+    items:
+    - name: Archiv für Neuheiten
+      items:
+      - name: Neuheiten – Archiv (Azure-Portal)
+        href: whats-new-archive.md
+      - name: Neuheiten – Archiv (klassisches Portal)
+        href: whats-new-archive-classic.md
+    - name: Klassische Intune-Features in Azure
+      href: ui-changes.md
+    - name: Klassische Intune-Gruppen
+      href: groups-get-started.md
+    - name: Intune-PC-Legacyclient
+      href: intune-legacy-pc-client.md
   - name: Glossar
     href: intune-glossary.md
-ms.openlocfilehash: 8926b2cb409f59bab9b4af8398dac146abeec3d2
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: a2820903d6a3609df50290af18843200ef076158
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43821115"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828056"

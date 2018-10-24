@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/14/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b92a5c7bcddbecc438aa5e72989ab2302440da7a
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: 5bcaabd66a2a9a24c3ee3f7c49cf7689d1f60eed
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562883"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863143"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune
 
@@ -61,6 +61,7 @@ Die folgende Tabelle führt die verschiedenen App-Typen auf und erläutert, wie 
 | Integrierte iOS-App  | Integrierte App | Wählen Sie **Integrierte App** als **App-Typ** aus, und wählen Sie dann aus der Liste der bereitgestellten Apps die gewünschte integrierte App aus.  |
 | Integrierte Android-App  | Integrierte App | Wählen Sie **Integrierte App** als **App-Typ** aus, und wählen Sie dann aus der Liste der bereitgestellten Apps die gewünschte integrierte App aus.  |
 | Web-Apps  | Web-App  | Wählen Sie **Weblink** als **App-Typ** aus, und geben Sie eine gültige URL ein, die auf die Web-App verweist.  |
+| Windows-App (Win32)  | LOB-App  | Wählen Sie **Windows-App (Win32)** als **App-Typ** aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine Installationsdatei mit der Erweiterung **.intunewin** an.  |
 
 Sie können eine App in Microsoft Intune hinzufügen, indem Sie **Client-Apps** > **Apps** > **Hinzufügen** auswählen. Der Bereich **App hinzufügen** wird geöffnet. Dort können Sie den **App-Typ** auswählen. 
 
@@ -194,3 +195,4 @@ Wie Sie Apps für jede Plattform in Intune hinzufügen, erfahren Sie unter:
 - [Office 365 apps for Windows 10 (Office 365-Apps für Windows 10)](apps-add-office365.md)
 - [Office 365-Apps für macOS](apps-add-office365-macos.md)
 - [Integrierte Apps](apps-add-built-in.md)
+- [Win32-Apps](apps-win32-app-management.md) 

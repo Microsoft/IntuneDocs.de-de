@@ -1,7 +1,7 @@
 
 
 ### <a name="apple"></a>Apple
-- Apple iOS 9.0 und höher
+- Apple iOS 10.0 und höher
 - Mac OS X 10.11 oder höher
 
 ### <a name="google"></a>Google

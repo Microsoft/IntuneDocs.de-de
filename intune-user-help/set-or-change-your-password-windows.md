@@ -1,11 +1,11 @@
 ---
-title: Festlegen oder Ändern des Kennworts | Microsoft-Dokumentation
+title: Festlegen oder Ändern des Gerätekennworts | Microsoft-Dokumentation
 description: ''
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 2bd36a0327472f24a3a99b7975e736c9fa5385eb
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: ed2069b3b5627dd844fadc37b898aa2688f301bc
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149062"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260231"
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>Machen Sie Ihr Gerät mit dem richtigen Kennwort sicherer
 

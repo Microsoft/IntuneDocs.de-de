@@ -6,21 +6,21 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 10/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
-ms.reviewer: mghadial
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7822e9e5a0e2bc5b054ccc3e93b9aa51bca5b79
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: f96ca3075bab5c8bacaea62bb4fc04bd957cf01e
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329409"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863177"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Selektives Löschen von Daten mithilfe von Zugriffsaktionen für App-Schutzrichtlinien in Intune
 
@@ -61,7 +61,7 @@ Für iOS können Sie mithilfe der Dropdownliste **Einstellung** Aktionen für di
 -  Gerätemodelle
 
 Geben Sie eine durch Semikolons getrennte Liste der iOS-Modellbezeichner ein, um die **Gerätemodelle**-Einstellung zu verwenden. Sie finden iOS-Modellbezeichner in der Spalte „Device Type“ (Gerätetyp) in der [Dokumentation für HockeyApp Support](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
-Beispieleingabe: *iPhone5,2; iPhone5,3*
+Beispieleingabe: *iPhone5,2;iPhone5,3*
 
 Auf Endbenutzergeräten führt der Intune-Client Aktionen auf Grundlage eines einfachen Abgleichs der Zeichenfolgen der Gerätemodelle aus, die in Intune für Anwendungsschutzrichtlinien angegeben sind. Die Übereinstimmung hängt ausschließlich davon ab, was das Gerät meldet. Sie (der IT-Administrator) können sicherstellen, dass das gewünschte Verhalten eintritt, indem Sie diese Einstellung basierend auf mehrerer Geräteherstellern und -modellen und für eine kleine Benutzergruppe testen. Der Standardwert lautet **Nicht konfiguriert**.<br>
 Legen Sie eine der folgenden Aktionen fest: 
@@ -69,7 +69,7 @@ Legen Sie eine der folgenden Aktionen fest:
 - Angegebene zulassen (nicht Angegebene löschen)
 
 **Was geschieht, wenn der IT-Administrator eine andere Liste von iOS-Modellbezeichnern zwischen den Richtlinien einfügt, die für die gleichen Apps für den gleichen Intune-Benutzer vorgesehen sind?**<br>
-Wenn ein Konflikt zwischen zwei App-Schutzrichtlinien für konfigurierte Werte entsteht, verwendet Intune in der Regel den restriktivsten Ansatz. Daher wäre die resultierende Richtlinie, die an die Ziel-App gesendet wird, die von dem entsprechenden Intune-Benutzer geöffnet wird, eine Schnittmenge des/der aufgelisteten iOS-Modellbezeichner/s in *Richtlinie A* und *Richtlinie B*, die für die gleiche App- bzw. Benutzerkombination gilt. Zum Beispiel gibt *Richtlinie A* „iPhone5,2, iPhone5,3“ an, während *Richtlinie B* „iPhone5,3“ angibt. Die resultierende Richtlinie, unter die der Intune-Benutzer durch *Richtlinie A* und *Richtlinie B* fällt, wäre demnach „iPhone5,3“. 
+Wenn ein Konflikt zwischen zwei App-Schutzrichtlinien für konfigurierte Werte entsteht, verwendet Intune in der Regel den restriktivsten Ansatz. Daher wäre die resultierende Richtlinie, die an die Ziel-App gesendet wird, die von dem entsprechenden Intune-Benutzer geöffnet wird, eine Schnittmenge des/der aufgelisteten iOS-Modellbezeichner/s in *Richtlinie A* und *Richtlinie B*, die für die gleiche App- bzw. Benutzerkombination gilt. Zum Beispiel gibt *Richtlinie A* „iPhone5,2;iPhone5,3“ an, während *Richtlinie B* „iPhone5,3“ angibt. Die resultierende Richtlinie, unter die der Intune-Benutzer durch *Richtlinie A* und *Richtlinie B* fällt, wäre demnach „iPhone5,3“. 
 
 ### <a name="android-policy-settings"></a>Android-Richtlinieneinstellungen
 
@@ -83,10 +83,10 @@ Für Android können Sie mithilfe der Dropdownliste **Einstellung** Aktionen fü
 -  Gerätehersteller
 
 Geben Sie eine durch Semikolons getrennte Liste der Android-Hersteller ein, um die Einstellung **Gerätehersteller** zu verwenden. Den Android-Gerätehersteller finden Sie in den Geräteeinstellungen.<br>
-Beispieleingabe: *Hersteller A; Hersteller B* 
+Beispieleingabe: *Hersteller A;Hersteller B* 
 
 >[!NOTE]
-> Die folgenden Hersteller gelten für Geräte, auf denen Intune verwendet wird, als häufig verwendet und können eingegeben werden: Asus, Blackberry, Bq; Gionee, Google, Hmd global, Htc, Huawei, Infinix, Kyocera, Lemobile, Lenovo, Lge, Motorola, Oneplus, Oppo, Samsung, Sharp, Sony, Tecno, Vivo, Vodafone, Xiaomi, Zte und Zuk.
+> Die folgenden Hersteller gelten für Geräte, auf denen Intune verwendet wird, als häufig verwendet und können eingegeben werden: Asus;Blackberry;Bq;Gionee;Google;Hmd global;Htc;Huawei;Infinix;Kyocera;Lemobile;Lenovo;Lge;Motorola;Oneplus;Oppo;Samsung;Sharp;Sony;Tecno;Vivo;Vodafone;Xiaomi;Zte;Zuk.
 
 Auf Endbenutzergeräten führt der Intune-Client Aktionen auf Grundlage eines einfachen Abgleichs der Zeichenfolgen der Gerätemodelle aus, die in Intune für Anwendungsschutzrichtlinien angegeben sind. Die Übereinstimmung hängt ausschließlich davon ab, was das Gerät meldet. Sie (der IT-Administrator) können sicherstellen, dass das gewünschte Verhalten eintritt, indem Sie diese Einstellung basierend auf mehreren Geräteherstellern und -modellen und für eine kleine Benutzergruppe testen. Der Standardwert lautet **Nicht konfiguriert**.<br>
 Legen Sie eine der folgenden Aktionen fest: 
@@ -94,7 +94,7 @@ Legen Sie eine der folgenden Aktionen fest:
 - Angegebene zulassen (nicht Angegebene löschen)
 
 **Was geschieht, wenn der IT-Administrator eine andere Liste von Android-Herstellern zwischen den Richtlinien einfügt, die für die gleichen Apps für den gleichen Intune-Benutzer vorgesehen sind?**<br>
-Wenn ein Konflikt zwischen zwei App-Schutzrichtlinien für konfigurierte Werte entsteht, verwendet Intune in der Regel den restriktivsten Ansatz. Daher wäre die resultierende Richtlinie, die an die Ziel-App gesendet wird, die von dem entsprechenden Intune-Benutzer geöffnet wird, eine Schnittmenge der aufgelisteten Android-Hersteller in *Richtlinie A* und *Richtlinie B*, die für die gleiche App- bzw. Benutzerkombination gilt. Zum Beispiel gibt *Richtlinie A* „Google, Samsung“ an, während *Richtlinie B* „Google“ angibt. Die resultierende Richtlinie, unter die der Intune-Benutzer durch *Richtlinie A* und *Richtlinie B* fällt, wäre demnach „Google“. 
+Wenn ein Konflikt zwischen zwei App-Schutzrichtlinien für konfigurierte Werte entsteht, verwendet Intune in der Regel den restriktivsten Ansatz. Daher wäre die resultierende Richtlinie, die an die Ziel-App gesendet wird, die von dem entsprechenden Intune-Benutzer geöffnet wird, eine Schnittmenge der aufgelisteten Android-Hersteller in *Richtlinie A* und *Richtlinie B*, die für die gleiche App- bzw. Benutzerkombination gilt. Zum Beispiel gibt *Richtlinie A* „Google;Samsung“ an, während *Richtlinie B* „Google“ angibt. Die resultierende Richtlinie, unter die der Intune-Benutzer durch *Richtlinie A* und *Richtlinie B* fällt, wäre demnach „Google“. 
 
 ### <a name="additional-settings-and-actions"></a>Zusätzliche Einstellungen und Aktionen 
 
@@ -119,5 +119,3 @@ Weitere Informationen zu den App-Schutzrichtlinien von Intune finden Sie unter:
 - [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md)
 - [Einstellungen für App-Schutzrichtlinien für iOS](app-protection-policy-settings-ios.md)
 - [Einstellungen für App-Schutzrichtlinien in Microsoft Intune](app-protection-policy-settings-android.md) 
-
-

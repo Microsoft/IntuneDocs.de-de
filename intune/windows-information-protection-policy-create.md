@@ -3,10 +3,10 @@ title: Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Inform
 titlesuffix: Microsoft Intune
 description: Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Microsoft Intune
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: c1d530059d7c5b5f759516e86d4ee3dbf8512aa5
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347306"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799624"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
 
@@ -46,19 +46,27 @@ Sie müssen mit einigen Konzepten vertraut sein, wenn Sie eine WIP-Richtlinie hi
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Sie müssen den MAM-Anbieter konfigurieren, bevor Sie eine WIP-App-Schutzrichtlinie erstellen können. Weitere Informationen finden Sie unter [Konfigurieren Ihres MAM-Anbieters in Intune](app-protection-policies-configure-windows-10.md).
+Sie müssen den MAM-Anbieter konfigurieren, bevor Sie eine WIP-App-Schutzrichtlinie erstellen können. Weitere Informationen finden Sie unter [Konfigurieren Ihres MAM-Anbieters in Intune](app-protection-policies-configure-windows-10.md).  
+
+> [!IMPORTANT]
+> WIP unterstützt nicht mehrere Identitäten; nur jeweils eine verwaltete Identität darf vorhanden sein.
 
 Darüber hinaus benötigen Sie folgende Lizenz und folgendes Update:
 
 -   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)-Lizenz
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
-> [!IMPORTANT]
-> WIP unterstützt nicht mehrere Identitäten; nur jeweils eine verwaltete Identität darf vorhanden sein.
+
+
+
 
 ## <a name="to-add-a-wip-app-protection-policy"></a>So erstellen Sie eine WIP-App-Schutzrichtlinie
 
 Nachdem Sie Intune in Ihrer Organisation eingerichtet haben, können Sie eine WIP-spezifische Richtlinie erstellen.
+
+> [!TIP]  
+> Weitere Informationen zum Erstellen von WIP-Richtlinien für Intune, einschließlich der verfügbaren Einstellungen und deren Konfiguration, finden Sie in der Bibliothek mit der Dokumentation zur Windows-Sicherheit unter [Erstellen einer Windows Information Protection-Richtlinie (WIP) mit MAM mithilfe des Azure-Portals für Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure). 
+
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**.
@@ -123,7 +131,7 @@ Beim Arbeiten mit WIP-tauglichen und WIP-unbekannten Apps sollten Sie mit **Auto
 ### <a name="what-are-the-protection-modes"></a>Was sind Schutzmodi?
 
 #### <a name="block"></a>Blockieren
-WIP prüft auf ungeeignete Datenfreigabeverfahren und hindert den Benutzer an der Durchführung der Aktion. Dies kann die Freigabe von Informationen über nicht geschützte Unternehmens-Apps hinweg sowie die Freigabe von Unternehmensdaten zwischen anderen Personen und Geräten außerhalb Ihrer Organisation einschließen.
+WIP prüft auf ungeeignete Datenfreigabeverfahren und hindert den Benutzer an der Durchführung der Aktion. Blockierte Aktionen können die Freigabe von Informationen über nicht geschützte Unternehmens-Apps hinweg sowie die Freigabe von Unternehmensdaten zwischen anderen Personen und Geräten außerhalb Ihrer Organisation einschließen.
 
 #### <a name="allow-overrides"></a>Außerkraftsetzungen zulassen
 WIP prüft auf ungeeignete Datenfreigabeverfahren, bei dem Benutzer gewarnt werden, wenn sie einen potenziell unsicheren Vorgang durchführen. In diesem Modus können Benutzer jedoch die Richtlinie überschreiben und die Daten freigeben. Die Aktion wird dabei in Ihrem Überwachungsprotokoll protokolliert.

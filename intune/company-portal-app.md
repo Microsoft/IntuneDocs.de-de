@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bd388131445715a4037cc0480c194d338212dbb0
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 2defc433ef39562750c4579f302a9c5367c6464a
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329972"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828243"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 
@@ -34,7 +34,7 @@ Im Microsoft Intune-Unternehmensportal können Benutzer auf Unternehmensdaten zu
 Durch Anpassen des Unternehmensportals können Sie Ihren Endbenutzern eine vertraute und sinnvolle Benutzeroberfläche bereitstellen. Klicken Sie hierzu in der Workload **Client-Apps** auf **Setup** > **Branding des Unternehmensportals**, und konfigurieren Sie die erforderlichen Einstellungen.  
 
 > [!Note]       
-> Das Unternehmensportal für Windows 10 sendet App-Protokolle jetzt direkt an Microsoft, wenn der Benutzer den Workflow zum Abrufen von Hilfe zu einem Problem startet. So können Probleme, die Microsoft gemeldet werden, einfacher behoben und gelöst werden.  
+> Wenn Sie Azure Government verwenden, werden dem Endbenutzer App-Protokolle angeboten. Er kann nun entscheiden, wie er diese teilen möchte, wenn der er den Prozess zum Abrufen von Hilfe zu einem Problem startet. Wird Azure Government jedoch nicht verwendet, sendet das Unternehmensportal für Windows 10 App-Protokolle direkt an Microsoft, wenn der Benutzer den Prozess zum Abrufen von Hilfe zu einem Problem startet. Das Senden der App-Protokolle an Microsoft erleichtert die Problembehandlung und -behebung. 
 
 ## <a name="company-information-and-privacy-statement"></a>Unternehmensinformationen und Datenschutzerklärung        
 Der Unternehmensname wird als Titel des Unternehmensportals angezeigt. Die Datenschutzerklärung wird angezeigt, wenn ein Benutzer auf den Datenschutzlink klickt.

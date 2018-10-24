@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 85dd6d0bcc4acc7864998976955e46ff7c72c990
-ms.sourcegitcommit: 006fa8dd4d605e2873fba6e3a965ef794d6f3764
+ms.openlocfilehash: ce977e295df3b5fa48c38b3c2e0d23035cc2f2d1
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2018
-ms.locfileid: "36943642"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863126"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installieren des Intune-Softwareclients auf Windows-PCs
 

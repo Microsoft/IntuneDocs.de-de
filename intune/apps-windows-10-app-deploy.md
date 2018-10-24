@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/31/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7508f2c2eca06ceacf203103ab2cad53abc39a65
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 61e2ec9def6ecba265521cf801322d592dd4dac9
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347431"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866353"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Windows 10-App-Bereitstellung mit Microsoft Intune 
 
 Microsoft Intune unterstützt auf Windows 10-Geräten derzeit verschiedene App-Typen und Bereitstellungsszenarios. Nachdem Sie Intune eine App hinzugefügt haben, können Sie diese Benutzern und Geräten zuweisen. In diesem Artikel erfahren Sie mehr zu den unterstützten Windows 10-Szenarios und wichtige Details, die Sie beim Bereitstellen von Apps unter Windows beachten sollten. 
 
-Branchenspezifische Apps und Apps aus dem Microsoft Store für Unternehmen werden auf Windows 10-Geräten unterstützt.
+Branchenspezifische Apps und Apps aus dem Microsoft Store für Unternehmen werden auf Windows 10-Geräten unterstützt. Zu den Dateierweiterungen für Windows-Apps gehören **.msi**, **.appx**, **.appxbundle**, **.msix** und **.msixbundle**.  
 
 > [!Note]
 > Das zum Bereitstellen von Apps im Gerätekontext erforderliche Mindestupdate für Windows 10 ist das vom [23. Mai 2018 – KB4100403 (Betriebssystembuild 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).
@@ -46,9 +46,6 @@ Apps können je nach Typ auf zwei Arten auf Windows 10-Geräten installiert werd
     - Moderne Branchenanwendungen und Apps aus dem Microsoft für Unternehmen (online und offline) können im Benutzerkontext bereitgestellt werden und unterstützen die Absichten „Erforderlich“ und „Verfügbar“.
 - **Gerätekontext:** Wenn eine Bereitstellung im Gerätekontext erfolgt, wird die verwaltete App von Intune direkt auf dem Gerät installiert.
     - Nur moderne branchenspezifische Apps und online lizenzierte Apps aus dem Microsoft Store für Unternehmen können im Gerätekontext bereitgestellt werden. Sie unterstützen nur die Absicht „Erforderlich“.
-
-> [!Note]
-> Die Bereitstellung von MSI-Dateien über MDM im Gerätekontext wird auf Windows 10-Geräten noch nicht unterstützt.
 
 Wenn eine App im Gerätekontext bereitgestellt wird, ist die Installation nur erfolgreich, wenn das betreffende Gerät den Gerätekontext unterstützt. Darüber hinaus gilt Folgendes für Bereitstellungen im Gerätekontext:
 - Wenn eine App im Gerätekontext für einen bestimmten Benutzer bereitgestellt wird, schlägt die Installation fehl. In der Verwaltungskonsole wird Folgendes angezeigt:

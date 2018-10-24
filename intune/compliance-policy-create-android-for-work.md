@@ -2,10 +2,10 @@
 title: Erstellen einer Konformitätsrichtlinie für Android-Arbeitsprofile in Microsoft Intune – Azure | Microsoft-Dokumentation
 description: Erstellen oder konfigurieren Sie eine Microsoft Intune-Gerätekonformitätsrichtlinie für Android-Arbeitsprofilgeräte. Wählen Sie, dass per Jailbreak manipulierte Geräte zulässig sind, legen Sie die zulässige Bedrohungsstufe fest, prüfen Sie auf Google Play, geben die minimale und maximale Betriebssystemversion an, wählen die Kennwortanforderungen, und lassen Sie Sideloading von Anwendungen zu.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0c7f1c7c47f2fa4c950cbffeaf8fe274fe239a63
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905086"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828158"
 ---
 # <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für Android-Arbeitsprofilgeräte in Intune
 
@@ -60,7 +60,7 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="device-health"></a>Geräteintegrität
+## <a name="device-health"></a>Device health
 
 - **Geräte mit entfernten Nutzungsbeschränkungen**: Wenn Sie diese Einstellung aktivieren, werden Geräte mit Jailbreak als nicht konform bewertet.
 - **Anfordern, dass das Gerät höchstens der angegebenen Gerätebedrohungsstufe entspricht**: Verwenden Sie diese Einstellung, um die Risikobewertung mit der Lookout MTP-Lösung als Konformitätsvoraussetzung zu fordern. Wählen Sie die maximal zulässige Bedrohungsstufe:
@@ -92,7 +92,7 @@ Wenn Ihr Unternehmen Android-Arbeitsprofile verwendet, können Sie **Bedrohungs�
 
 - **Kennwort zum Entsperren mobiler Geräte anfordern:** Klicken Sie auf **Erforderlich**, damit Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.
 - **Minimale Kennwortlänge**: Geben Sie die Mindestanzahl an Ziffern oder Zeichen an, die das Benutzerkennwort enthalten muss.
-- **Erforderlicher Kennworttyp**: Wählen Sie, ob ein Kennwort nur aus numerischen Zeichen oder aus einer Kombination aus Zahlen und anderen Zeichen bestehen soll. Wählen Sie aus:
+- **Erforderlicher Kennworttyp**: Wählen Sie, ob ein Kennwort nur aus numerischen Zeichen oder aus einer Kombination aus Zahlen und anderen Zeichen bestehen soll. Es stehen die folgenden Optionen zur Auswahl:
   - **Gerätestandard**
   - **Biometrie auf niedriger Sicherheitsstufe**
   - **Mindestens numerisch**
@@ -113,7 +113,11 @@ Wenn Ihr Unternehmen Android-Arbeitsprofile verwendet, können Sie **Bedrohungs�
 - **Apps von unbekannten Quellen blockieren:** Sie müssen diese Einstellung nicht konfigurieren, da Android-Arbeitsprofilgeräte die Installation aus unbekannten Quellen stets einschränken.
 - **Laufzeitintegrität der Unternehmensportal-App**: Überprüft, ob die Unternehmensportal-App die Standard-Laufzeitumgebung installiert hat, ordnungsgemäß signiert ist, sich nicht im Debug-Modus befindet und von einer bekannten Quelle installiert wurde.
 - **USB-Debugging auf Gerät blockieren:** Sie müssen diese Einstellungen nicht konfigurieren, da USB-Debuggen auf Android-Arbeitsprofilgeräten bereits deaktiviert ist.
-- **Mindestens erforderliche Sicherheitspatchebene**: Wählen Sie die älteste Sicherheitspatchebene, die ein Gerät haben kann. Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht kompatibel. Das Datum muss im Format „`YYYY-MM-DD`“ eingegeben werden.
+- **Mindestens erforderliche Sicherheitspatchebene**: Wählen Sie die älteste Sicherheitspatchebene, die ein Gerät haben kann. Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht kompatibel. Das Datum muss im Format *JJJJ-MM-TT* eingegeben werden.
+- **Eingeschränkte Apps**: Sie können Apps einschränken, indem Sie ihre Bündel-IDs der Richtlinie hinzufügen. Wenn die App dann auf einem Gerät installiert wird, wird das Gerät als nicht konform gekennzeichnet. 
+   - **App-Name:** Geben Sie einen benutzerfreundlichen Namen ein, damit Sie die Bündel-ID einfacher identifizieren können. 
+   - **App-Bündel-ID:** Geben Sie die eindeutige Bündel-ID für den App-Anbieter ein. Für Android wird die App-Bündel-ID aus der Store-URL der App übernommen. Wenn die URL zur App im Store z.B. *https://play.google.com/store/apps/details?id=com.Slack* ist, lautet die App-Bündel-ID *com.Slack*.
+
 
 ## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen
 

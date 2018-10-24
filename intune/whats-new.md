@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/27/2018
+ms.date: 10/01/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 567a28679b244088af8c943eb483eb4b2b4d88be
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: 723e7584e1aaf22859b293a93ddbead56f6256e7
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403628"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866438"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,111 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Sie e
 
 -->   
 
+## <a name="week-of-october-1-2018"></a>Woche vom 1. Oktober 2018
+
+### <a name="app-management"></a>App-Verwaltung
+
+#### <a name="user-account-access-of-intune-apps-on-managed-android-and-ios-devices----1248496---"></a>Benutzerkontozugriff von Intune-Apps auf verwalteten Android- und iOS-Geräten <!-- 1248496 -->
+Wie der Microsoft Intune-Administrator können Sie steuern, welche Benutzerkonten Microsoft Office-Anwendungen auf verwalteten Geräten hinzugefügt werden. Sie können den Zugriff auf zulässige Organisationsbenutzerkonten beschränken und persönliche Konten auf registrierten Geräten blockieren. 
+
+#### <a name="outlook-mobile-app-configuration-policy---1828527---"></a>Konfigurationsrichtlinie für Outlook Mobile-Apps <!--1828527 -->
+Sie können jetzt eine Konfigurationsrichtlinie für Outlook Mobile-Apps für iOS und Android erstellen. Zusätzliche Konfigurationseinstellungen werden hinzugefügt, wenn sie für die Outlook Mobile-App aktiviert sind.
+
+#### <a name="office-365-pro-plus-language-packs----1833450---"></a>Office 365 Pro Plus-Sprachpakete <!-- 1833450 -->
+Als Intune-Administrator können Sie zukünftig zusätzliche Sprachen für Office 365 Pro Plus-Apps bereitstellen, die über Intune verwaltet werden. In der Liste der verfügbaren Sprachpakete ist auch der **Typ** der Sprachpakete angegeben (grundlegende Sprachunterstützung, Sprache teilweise unterstützt und Sprachkorrekturhilfen). Klicken Sie im Azure-Portal auf **Microsoft Intune** > **Client-Apps** > **Apps** > **Hinzufügen**. Wählen Sie auf dem Blatt **App hinzufügen** in der Liste **App-Typ** unter **Office 365 Suite** den Eintrag **Windows 10** aus. Klicken Sie auf dem Blatt **Einstellungen der App-Suite** auf **Sprachen**.
+
+####  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Dateierweiterung branchenspezifischer Windows-Apps (LOB-Apps) <!-- 1884873 -->
+Die Dateierweiterungen für Windows-LOB-Apps umfassen jetzt *.msi*, *.appx*, *.appxbundle*, *.msix* und *.msixbundle*. Sie können eine App in Microsoft Intune hinzufügen, indem Sie **Client-Apps** > **Apps** > **Hinzufügen** auswählen. Der Bereich **App hinzufügen** wird geöffnet. Dort können Sie den **App-Typ** auswählen. Wählen Sie für Windows-LOB-Apps **Branchenspezifische App** als App-Typ aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine Installationsdatei mit der entsprechenden Erweiterung ein.
+
+#### <a name="windows-10-app-deployment-using-intune----2309001---"></a>Windows 10-App-Bereitstellung mit Intune <!-- 2309001 -->
+Basierend auf der bestehenden Unterstützung für Branchenanwendungen (LOB) und Microsoft Store for Business-Apps können Administratoren mit Intune die meisten der vorhandenen Anwendungen ihres Unternehmens für Endbenutzer auf Windows 10-Geräten bereitstellen. Administratoren können Anwendungen für Windows 10-Benutzer in einer Vielzahl von Formaten wie MSI, Setup.exe oder MSP hinzufügen, installieren und deinstallieren. Intune wertet vor dem Herunterladen und Installieren, dem Benachrichtigen von Endbenutzern über den Status oder Neustartanforderungen die Anforderungsregeln über das Info-Center von Windows 10 aus. Diese Funktionalität wird Unternehmen, die daran interessiert sind, diesen Workload auf Intune und die Cloud zu verlagern, effektiv entlasten. Dieses Feature befindet sich derzeit in der öffentlichen Vorschauversion und wir erwarten, dass es in den nächsten Monaten um bedeutende neue Funktionen erweitert wird. 
+
+
+### <a name="device-configuration"></a>Gerätekonfiguration
+
+#### <a name="create-dns-suffixes-in-vpn-configuration-profiles-on-devices-running-windows-10---1333668---"></a>Erstellen von DNS-Suffixen in VPN-Konfigurationsprofilen auf Geräten mit Windows 10<!-- 1333668 -->
+Beim Erstellen eines VPN-Gerätekonfigurationsprofils (**Gerätekonfiguration** > **Profile** > **Profil erstellen**  >  **Windows 10 und höher** Plattform > **VPN**-Profiltyp) geben Sie DNS-Einstellungen ein. Mit diesem Update können Sie auch mehrere **DNS-Suffixe** in Intune eingeben. Wenn Sie DNS-Suffixe verwenden, können Sie nach einer Netzwerkressource mithilfe ihres Kurznamens anstelle des vollqualifizierten Domänennamens (Fully Qualified Domain Name, FQDN) suchen. Mit diesem Update können Sie auch die Reihenfolge der DNS-Suffixe in Intune ändern.
+In [VPN-Einstellungen für Windows 10](vpn-settings-windows-10.md#dns-settings) sind die aktuellen DNS-Einstellungen aufgeführt.
+Gilt für: Windows 10-Geräte
+
+#### <a name="support-for-always-on-vpn-for-android-enterprise-work-profiles----1333705---"></a>Unterstützung für Always On-VPN für Android-Enterprisearbeitsprofile <!-- 1333705 -->
+In diesem Update können Sie Always On-VPN-Verbindungen auf Android Enterprise-Geräten mit verwalteten Arbeitsprofilen verwenden. Always On-VPN-Verbindungen bleiben erhalten oder werden sofort wieder hergestellt, wenn der Benutzer sein Gerät entsperrt, wenn das Gerät neu gestartet wird oder das drahtlose Netzwerk sich ändert. Sie können die Verbindung auch in den „Sperrmodus“ setzen, der den gesamten Netzwerkdatenverkehr blockiert, bis die VPN-Verbindung aktiv ist.
+Sie können Always On-VPN in **Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Android Enterprise** für Plattform > **Geräteeinschränkungen** > **Konnektivitätseinstellungen** aktivieren.
+
+#### <a name="issue-scep-certificates-to-user-less-devices----1744554---"></a>Ausstellen von SCEP-Zertifikaten für Geräte ohne Benutzer <!-- 1744554 -->
+Derzeit werden Zertifikate an Benutzer ausgegeben. Mit diesem Update können SCEP-Zertifikate für Geräte ausgestellt werden, einschließlich benutzerloser Geräte wie Kioske (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10 und höher** für Plattform > **SCEP-Zertifikat** für Profil). Weitere Updates enthalten:
+- Die **Betreff**-Eigenschaft in einem SCEP-Profil ist nun ein benutzerdefiniertes Textfeld und kann neue Variablen enthalten. 
+- Die **Alternativer Antragstellername**-Eigenschaft (Subject Alternative Name, SAN) in einem SCEP-Profil ist nun ein Tabellenformat und kann neue Variablen enthalten. In der Tabelle kann ein Administrator ein Attribut hinzufügen und den Wert in einem benutzerdefinierten Textfeld ausfüllen. Der SAN unterstützt die folgenden Attribute: 
+  - DNS
+  - E-Mail-Adresse
+  - UPN
+
+  Diese neuen Variablen können mit statischem Text in einem benutzerdefinierten Werttextfeld hinzugefügt werden. Beispielsweise kann das DNS-Attribut als `DNS = {{AzureADDeviceId}}.domain.com` hinzugefügt werden.
+
+  > [!NOTE]
+  > Geschweifte Klammern, Semikolons und Pipesymbole „{}; |“ funktionieren nicht im statischen SAN-Text. Geschweifte Klammern dürfen nur eine der neuen Gerätezertifikatvariablen umschließen, die entweder für `Subject` oder `Subject alternative name` akzeptiert werden. 
+
+Neue Gerätezertifikatvariablen:  
+
+```
+"{{AAD_Device_ID}}",
+"{{Device_Serial}}",
+"{{Device_IMEI}}",
+"{{SerialNumber}}",
+"{{IMEINumber}}",
+"{{AzureADDeviceId}}",
+"{{WiFiMacAddress}}",
+"{{IMEI}}",
+"{{DeviceName}}",
+"{{FullyQualifiedDomainName}}",
+"{{MEID}}",
+```
+
+> [!NOTE]
+>  - `{{FullyQualifiedDomainName}}` funktioniert nur für Windows und in die Domäne eingebundene Geräte. 
+>  -  Bei der Angabe von Geräteeigenschaften wie IMEI, Seriennummer und vollständig qualifiziertem Domänennamen im Betreff oder SAN für ein Gerätezertifikat achten Sie unbedingt darauf, dass diese Eigenschaften von einer Person mit Zugriff auf das Gerät gespooft sein könnten. 
+
+[SCEP-Zertifikatprofil erstellen](certificates-scep-configure.md#create-a-scep-certificate-profile) listet beim Erstellen eines SCEP-Konfigurationsprofils die aktuellen Variablen auf. 
+
+Gilt für: Windows 10 und höher sowie iOS, für WLAN unterstützt
+
+#### <a name="remotely-lock-uncompliant-devices----2064495---"></a>Remotesperren nicht konformer Geräte <!-- 2064495 -->
+Wenn ein Gerät nicht konform ist, können Sie eine Aktion in der Konformitätsrichtlinie erstellen, die das Gerät remote sperrt. Erstellen Sie in Intune > **Gerätekonformität** eine neue Richtlinie, oder wählen Sie eine vorhandene Richtlinie > **Eigenschaften** aus. Wählen Sie **Aktionen bei Inkompatibilität** > **Hinzufügen** und dann das Remotesperren des Geräts aus.
+Unterstützt auf: 
+- Android
+- iOS
+- macOS
+- Windows 10 Mobile 
+- Windows Phone 8.1 und höher 
+
+#### <a name="windows-10-and-later-kiosk-profile-improvements-in-the-azure-portal----2748224---"></a>Windows 10 und höher: Verbesserungen des Kioskprofils im Azure-Portal <!-- 2748224 -->
+Dieses Update umfasst die folgenden Verbesserungen am Windows 10-Kiosk-Gerätekonfigurationsprofil (**Gerätekonfiguration** > **Profile** > **Profil erstellen**  >  **Windows 10 und höher** für Plattform > **Kioskvorschau** für Profiltyp): 
+- Derzeit können Sie mehrere Kioskprofile auf demselben Gerät erstellen. Ab diesem Update unterstützt Intune nur ein Kioskprofil pro Gerät. Wenn Sie noch mehrere Kioskprofile auf einem einzelnen Gerät benötigen, können Sie einen benutzerdefinierten URI verwenden.
+- In einem **Multi-App-Kioskprofil** können Sie die Anwendungskachelgröße und Reihenfolge für das **Startmenülayout** im Raster der Anwendung auswählen. Wenn Sie eine umfassendere Anpassung bevorzugen, können Sie weiterhin eine XML-Datei hochladen.
+- Die Kioskbrowsereinstellungen werden in die **Kiosk**-Einstellungen verschoben. Derzeit haben die **Kioskwebbrowser**-Einstellungen ihre eigene Kategorie im Azure-Portal.
+Gilt für: Windows 10 und höher
+
+
+
+
+### <a name="device-enrollment"></a>Geräteregistrierung
+
+#### <a name="apply-autopilot-profile-to-enrolled-win-10-devices-not-already-registered-for-autopilot----1558983---"></a>Anwenden des Autopilot-Profils auf Win 10-Geräte, die noch nicht für Autopilot registriert sind <!-- 1558983 -->
+Sie können Autopilot-Profile auf registrierte Win 10-Geräte anwenden, die noch nicht für Autopilot registriert sind. Wählen Sie im Autopilot-Profil die Option **Alle Zielgeräte in Autopilot-Geräte konvertieren** aus, um Nicht-Autopilot-Geräte automatisch mit dem Autopilot-Bereitstellungsdienst zu registrieren. Die Verarbeitung der Registrierung kann 48 Stunden dauern. Wenn die Registrierung des Geräts aufgehoben und es zurückgesetzt ist, stellt Autopilot es bereit.
+
+#### <a name="create-and-assign-multiple-enrollment-status--page-profiles-to-azure-ad-groups----2526564---"></a>Erstellen und Zuweisen mehrerer Registrierungsstatus-Seitenprofile für Azure AD-Gruppen <!-- 2526564 -->
+Sie haben jetzt folgende Möglichkeit: [Erstellen und Zuweisen](windows-enrollment-status.md) mehrerer Registrierungsstatus-Seitenprofile für Azure ADD-Gruppen.
+
+### <a name="device-management"></a>Geräteverwaltung
+
+#### <a name="restricts-apps-and-block-access-to-company-resources-on-android-devices----2451462----"></a>Einschränken von Apps und Blockieren des Zugriffs auf Unternehmensressourcen auf Android-Geräten <!-- 2451462  -->  
+In **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** > **Android** > **Systemsicherheit** gibt es eine neue Einstellung unter dem Abschnitt *Gerätesicherheit* namens **Eingeschränkte Apps**. Die Einstellung **Eingeschränkte Apps** verwendet eine Konformitätsrichtlinie, um den Zugriff auf Unternehmensressourcen zu blockieren, wenn bestimmte Apps auf dem Gerät erstellt werden. Das Gerät wird so lange als nicht kompatibel betrachtet, bis die eingeschränkten Apps von diesem Gerät entfernt werden.
+Gilt für: 
+- Android
+
+
+
+
 ## <a name="week-of-september-24-2018"></a>Die Woche vom 24. September 2018
 
 ### <a name="microsoft-365-device-management-administration-center----3078424---"></a>Admin Center für die Microsoft 365-Geräteverwaltung <!-- 3078424 -->
@@ -49,6 +154,17 @@ Microsoft 365 verspricht unkomplizierte Verwaltung. Im Laufe der Zeit wurden die
 
 ### <a name="support-for-more-third-party-certification-authorities-ca----3093107---"></a>Unterstützung für mehr Drittanbieterzertifizierungsstellen <!-- 3093107 -->
 Mit dem Simple Certificate Enrollment-Protokoll (SCEP) können Sie jetzt neue Zertifikate auf mobilen Geräten mit Windows, iOS, Android und macOS ausstellen und vorhandene Zertifikate verlängern.
+
+### <a name="intune-moves-to-support-ios-10-and-later----2454656---"></a>Intune wird iOS 10 und höher unterstützen <!-- 2454656 -->  
+Die Intune-Registrierung, das Unternehmensportal und der verwaltete Browser unterstützen jetzt nur noch iOS-Geräte mit iOS 10 und höher. Um nach Geräten oder Benutzern zu suchen, die in Ihrem Unternehmen betroffen sind, wechseln Sie zu Intune im Azure-Portal > **Geräte** > **Alle Geräte**. Filtern Sie nach Betriebssystem und klicken Sie dann auf **Spalten**, um Details zur Betriebssystemversion anzuzeigen. Fordern Sie diese Benutzer auf, ihre Geräte auf eine unterstützte Betriebssystemversion zu aktualisieren.  
+
+Wenn Sie über eines der unten aufgelisteten Geräte verfügen oder eines der unten aufgelisteten Geräte registrieren möchten, sollten Sie beachten, dass diese nur iOS 9 und früher unterstützen.  Wenn Sie mit diesen Geräten weiter auf das Intune-Unternehmensportal zugreifen möchten, müssen Sie für diese Geräte ein Upgrade auf Geräte mit Unterstützung für iOS 10 oder höher durchführen:  
+
+* iPhone 4S 
+* iPod Touch  
+* iPad 2 
+* iPad (3. Generation) 
+* iPad Mini (1. Generation)  
 
 ## <a name="week-of-september-17-2018"></a>Die Woche vom 17. September 2018
 
@@ -94,11 +210,11 @@ Diese Funktion gilt für:
 - Windows 10 und höher
 - Windows Holographic for Business
 
-#### <a name="zscaler-is-an-available-connection-for-vpn-profiles-on-ios----1769858-eeready---"></a>Zscaler ist eine verfügbare Verbindung für VPN-Profile unter iOS <!-- 1769858 eeready -->
+#### <a name="zscaler-is-an-available-connection-for-vpn-profiles-on-ios----1769858---"></a>Zscaler ist eine verfügbare Verbindung für VPN-Profile unter iOS <!-- 1769858 -->
 Wenn Sie ein VPN-Gerätekonfigurationsprofil für iOS erstellen (unter **Gerätekonfiguration** > **Profile** > **Profil erstellen** > **iOS**, wechseln Sie zu Plattform und dann zum Profiltyp **VPN**), sind mehrere Verbindungstypen vorhanden, einschließlich Cisco, Citrix usw. Dieses Update wird Zscaler als Verbindungstyp hinzugefügt. 
 Unter [VPN settings for devices running iOS (VPN-Einstellungen für Geräte unter iOS)](vpn-settings-ios.md) sind die verfügbaren Verbindungstypen aufgeführt.
 
-#### <a name="fips-mode-for-enterprise-wi-fi-profiles-for-windows-10----1879077-eeready---"></a>FIPS-Modus für Unternehmens-WLAN-Profile für Windows 10 <!-- 1879077 eeready -->
+#### <a name="fips-mode-for-enterprise-wi-fi-profiles-for-windows-10----1879077---"></a>FIPS-Modus für Unternehmens-WLAN-Profile für Windows 10 <!-- 1879077 -->
 Sie können nun im Azure-Portal für Intune den FIPS-Modus (Federal Information Processing Standards) für Unternehmens-WLAN-Profile für Windows 10 aktivieren. Achten Sie darauf, dass der FIPS-Modus in Ihrer WLAN-Infrastruktur aktiviert ist, wenn Sie ihn in Ihren WLAN-Profilen aktiviert haben.
 Im Artikel [WLAN-Einstellungen für Geräte mit Windows 10 und höher in Intune](wi-fi-settings-windows.md) erfahren Sie, wie Sie ein WLAN-Profil erstellen können.
 
@@ -203,7 +319,7 @@ Die Einstellungen für eine verbesserte Erkennung von Jailbreaks werden nun in a
 
 ### <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
-#### <a name="scope-tags-for-policies---1081974-eeready--"></a>Bereichsmarkierungen für Richtlinien <!--1081974 eeready-->
+#### <a name="scope-tags-for-policies---1081974---"></a>Bereichsmarkierungen für Richtlinien <!--1081974 -->
 Sie können [Bereichsmarkierungen erstellen](scope-tags.md), um den Zugriff auf Intune-Ressourcen einzuschränken. Fügen Sie einer Rollenzuweisung eine Bereichsmarkierung hinzu, und fügen Sie diese anschließend einem Konfigurationsprofil hinzu. Die Rolle hat nur Zugriff auf Ressourcen mit Konfigurationsprofilen, die über übereinstimmende Bereichsmarkierungen (oder keine Bereichsmarkierung) verfügen.
 
 ## <a name="week-of-august-14-2018"></a>Woche vom 14. August 2018
@@ -259,7 +375,7 @@ Um ein Profil zu erstellen, öffnen Sie **Gerätekonfiguration** > **Profile** >
 
 Gilt für Windows 10 und höher.
 
-#### <a name="kiosk---obsolete-is-grayed-out-and-cant-be-changed----2149998-eeready---"></a>„Kiosk – Veraltet“ ist ausgegraut und kann nicht verändert werden <!-- 2149998 eeready -->
+#### <a name="kiosk---obsolete-is-grayed-out-and-cant-be-changed----2149998---"></a>„Kiosk – Veraltet“ ist ausgegraut und kann nicht verändert werden <!-- 2149998 -->
 Das [Kiosk-Feature](device-restrictions-windows-10.md#kiosk-preview---obsolete) (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10 und höher** > **Geräteeinschränkungen**) ist veraltet und wurde durch [Kiosk-Einstellungen für Windows 10 und höher](kiosk-settings.md) ersetzt. Durch dieses Update wird das Feature **Kiosk - Obsolete** (Kiosk – veraltet) ausgegraut, und die Benutzeroberfläche kann nicht verändert oder aktualisiert werden. 
 
 Informationen zum Aktivieren des Kioskmodus finden Sie unter [Kioskeinstellungen für Windows 10 und höher in Intune](kiosk-settings.md).
@@ -447,7 +563,7 @@ Die Seite für das Branding des Unternehmensportals hat ein neues Layout, neue M
 
 ### <a name="device-configuration"></a>Gerätekonfiguration
 
-#### <a name="support-for-palo-alto-networks-globalprotect-vpn-profiles----1333680-eeready----"></a>Unterstützung für VPN-Profile für Palo Alto Networks GlobalProtect <!-- 1333680 eeready ! -->
+#### <a name="support-for-palo-alto-networks-globalprotect-vpn-profiles----1333680----"></a>Unterstützung für VPN-Profile für Palo Alto Networks GlobalProtect <!-- 1333680 ! -->
 Mit diesem Update können Sie Palo Alto Networks GlobalProtect als VPN-Verbindungstyp für VPN-Profile in Intune auswählen (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Profiltyp** > **VPN**). Für dieses Release werden die folgenden Plattformen unterstützt: 
 
 - iOS
@@ -471,7 +587,7 @@ Bei diesem Update ist das Benutzerdiagramm wieder enthalten und wird im Azure-Po
 #### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118-wnready---"></a>Unterstützung für die Registrierung mit Windows Autopilot ohne Benutzerauthentifizierung <!-- 1165118 wnready -->
 Intune unterstützt jetzt die Registrierung mit Windows Autopilot ohne Benutzerauthentifizierung. Dies ist eine neue Option im Windows Autopilot-Bereitstellungsprofil („Autopilot Deployment mode“ (Autopilot-Bereitstellungsmodus) kann auf „Self-Deploying“ (Selbstbereitstellung) festgelegt werden).  Auf dem Gerät muss Windows 10 Insider Preview Build 17672 oder höher ausgeführt werden, außerdem muss ein TPM 2.0-Chip eingebaut sein, um diese Art der Registrierung erfolgreich abzuschließen. Da keine Benutzerauthentifizierung erforderlich ist, sollten Sie diese Option nur Geräte zuweisen, zu denen Sie physisch Zugang haben.
 
-#### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766-eeready---"></a>Neue Einstellung für Sprache/Region beim Konfigurieren von OOBE für AutoPilot <!-- 1821766 eeready -->
+#### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766---"></a>Neue Einstellung für Sprache/Region beim Konfigurieren von OOBE für AutoPilot <!-- 1821766 -->
 Es steht eine neue Konfigurationseinstellung zur Verfügung, mit der die Sprache und Region für Autopilot-Profile während der Out-of-Box-Experience festgelegt werden kann. Klicken Sie auf **Geräteregistrierung** > **Windows-Registrierung** > **Bereitstellungsprofile** > **Profil erstellen** > **Bereitstellungsmodus** = **Selbstbereitstellung** > **Standardwerte konfiguriert**, um die neuen Einstellungen anzuzeigen.
 
 #### <a name="new-setting-for-configuring-device-keyboard----1821768---"></a>Neue Einstellung zum Konfigurieren der Gerätetastatur <!-- 1821768 -->
@@ -490,7 +606,7 @@ Gilt für Android-Geräte 6.0 und höher mit der aktualisierten Unternehmensport
 #### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>Verhindern von Verbraucher-Apps und -Umgebungen auf dem Windows 10 Enterprise RS4 AutoPilot-Gerät<!-- 1621980 -->
 Sie können die Installation von Verbraucher-Apps und -Umgebungen auf Ihren Windows 10 Enterprise RS4 AutoPilot-Geräten verhindern. Navigieren Sie zu **Intune** > **Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Plattform** = **Windows 10 oder höher** > **Profiltyp** = **Geräteeinschränkungen** > **Konfigurieren** > **Windows-Blickpunkt** > **Endbenutzerfeatures**, um dieses Feature anzuzeigen. 
 
-#### <a name="uninstall-the-latest-from-windows-10-software-updates----1732948-eeready---"></a>Deinstallieren der letzten Softwareupdates von Windows 10 <!-- 1732948 eeready -->
+#### <a name="uninstall-the-latest-from-windows-10-software-updates----1732948---"></a>Deinstallieren der letzten Softwareupdates von Windows 10 <!-- 1732948 -->
 Wenn Sie Probleme mit Unterbrechungen auf Ihren Windows 10-Computern feststellen, können Sie das neueste Featureupdate bzw. Qualitätsupdate deinstallieren (einen Rollback ausführen). Die Deinstallation eines Feature- oder Qualitätsupdates ist für den Wartungskanal nur möglich, wenn das Gerät eingeschaltet ist. Durch die Deinstallation wird eine Richtlinie ausgelöst, die das vorherige Update auf Ihren Windows 10-Computern wiederherstellt. Sie können insbesondere für Featureupdates den Zeitraum, in dem eine Deinstallation für die neueste Version durchgeführt werden kann, auf 2–60 Tage einschränken. Um die Deinstallationsoptionen für das Softwareupdate festzulegen, wählen Sie im Azure-Portal auf dem Blatt **Microsoft Intune** die Option **Softwareupdates** aus. Klicken Sie auf dem Blatt **Softwareupdates** auf **Windows 10-Updateringe**. Sie können dann die Option **Deinstallieren** im Bereich **Übersicht** auswählen.
 
 #### <a name="search-all-devices-for-imei-and-serial-number----1793685---"></a>Durchsuchen aller Geräte nach IMEI und Seriennummer <!-- 1793685 -->
@@ -570,7 +686,7 @@ Wenn ein Endbenutzer eine benötigte App deinstalliert, installiert Intune die A
 
 ### <a name="device-configuration"></a>Gerätekonfiguration
 
-####  <a name="device-profile-chart-and-status-list-show-all-devices-in-a-group----1449153-eeready---"></a>Geräteprofildiagramm und Statusliste zeigen alle Geräte in einer Gruppe <!-- 1449153 eeready -->
+####  <a name="device-profile-chart-and-status-list-show-all-devices-in-a-group----1449153---"></a>Geräteprofildiagramm und Statusliste zeigen alle Geräte in einer Gruppe <!-- 1449153 -->
 Wenn Sie ein Geräteprofil konfigurieren (**Gerätekonfiguration** > **Profile**), wählen Sie das Geräteprofil aus, z.B. iOS. Sie weisen dieses Profil einer Gruppe zu, die iOS-Geräte und Nicht-iOS-Geräte enthält. Im Grafikdiagramm ist zu sehen, dass das Profil dem iOS-Gerät *und* dem Nicht-iOS-Gerät zugewiesen wird (**Gerätekonfiguration** > **Profile** > vorhandenes Profil auswählen > **Übersicht**). Wenn Sie das Grafikdiagramm auf der Registerkarte **Übersicht** auswählen, werden unter **Gerätestatus** alle Geräte der Gruppe aufgeführt, nicht nur iOS-Geräte. 
 
 Nach diesem Update wird im Grafikdiagramm (**Gerätekonfiguration** > **Profile** > vorhandenes Profil auswählen > **Übersicht**) nur die Anzahl für das spezifische Geräteprofil angezeigt. Wenn z.B. das Gerätekonfigurationsprofil für iOS-Geräte gilt, wird im Diagramm nur die Anzahl der iOS-Geräte aufgelistet. Wenn Sie das Grafikdiagramm auswählen und **Gerätestatus** öffnen, werden nur iOS-Geräte aufgelistet.
@@ -620,7 +736,7 @@ Die folgenden, abhängigen Technologien werden automatisch aktiviert, wenn Sie C
 #### <a name="use-a-custom-subject-name-on-scep-certificate----2064190---"></a>Verwenden eines benutzerdefinierten Antragstellernames auf dem SCEP-Zertifikat <!-- 2064190 -->
 Sie können den allgemeinen Namen **OnPremisesSamAccountName** für einen benutzerdefinierten Antragsteller auf einem SCEP-Zertifikatprofil verwenden. Sie können z. B. `CN={OnPremisesSamAccountName})` verwenden.
 
-####  <a name="block-camera-and-screen-captures-on-android-for-work----1098977-eeready--"></a>Blockieren von Kamera und Bildschirmaufnahmen unter Android for Work <!-- 1098977 eeready-->
+####  <a name="block-camera-and-screen-captures-on-android-for-work----1098977---"></a>Blockieren von Kamera und Bildschirmaufnahmen unter Android for Work <!-- 1098977 -->
 Es werden zwei neue Eigenschaften zum Blockieren beim Konfigurieren der Geräteeinschränkungen für Android-Geräte hinzugefügt: 
 - Kamera: Der Zugriff auf alle Kameras auf dem Gerät wird blockiert.
 - Bildschirmaufnahme: Die Bildschirmaufnahme wird blockiert,. Zudem wird verhindert, dass der Inhalt auf Anzeigegeräten angezeigt wird, die über keine sichere Videoausgabe verfügen.
@@ -639,7 +755,7 @@ Geräte, die mithilfe des macOS-Unternehmensportals registriert wurden, werden s
 
 ### <a name="device-management"></a>Geräteverwaltung
 
-#### <a name="advanced-threat-protection-atp-and-intune-are-fully-integrated----eeready-1629303---"></a>Advanced Threat Protection (ATP) und Intune sind vollständig integriert <!-- EEready 1629303 -->
+#### <a name="advanced-threat-protection-atp-and-intune-are-fully-integrated----1629303---"></a>Advanced Threat Protection (ATP) und Intune sind vollständig integriert <!-- 1629303 -->
 
 [Advanced Threat Protection (ATP)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/dashboard-windows-defender-advanced-threat-protection) zeigt die Risikostufe von Windows 10-Geräten an. In Windows Defender Security Center (ATP-Portal) können Sie eine Verbindung mit Microsoft Intune herstellen. Nach der Erstellung wird mit einer Konformitätsrichtlinie von Intune eine akzeptable Bedrohungsstufe bestimmt. Wenn die Bedrohungsstufe überschritten wird, kann eine Azure Active Directory-Richtlinie (AD) für bedingten Zugriff den Zugriff auf andere Apps in Ihrer Organisation blockieren.
 
@@ -695,7 +811,7 @@ Die Intune-Unternehmensportal-App für Windows 10 wurde mit der [Navigationsansi
 
 ## <a name="week-of-april-16-2018"></a>Woche vom 16. April 2018
 
-#### <a name="use-cisco-anyconnect-client-for-ios----eeready-1333708---"></a>Verwenden des Cisco AnyConnect-Clients für iOS <!-- EEready 1333708 -->
+#### <a name="use-cisco-anyconnect-client-for-ios----1333708---"></a>Verwenden des Cisco AnyConnect-Clients für iOS <!-- 1333708 -->
 
 Wenn Sie ein neues VPN-Profil für iOS erstellen, stehen Ihnen jetzt zwei Optionen zur Verfügung: **Cisco AnyConnect** und **Cisco Legacy AnyConnect**. Die Cisco AnyConnect-Profile unterstützen 4.0.7x und neuere Versionen. Bereits existierende iOS Cisco AnyConnect VPN-Profile werden als **Cisco Legacy AnyConnect** bezeichnet und auch weiterhin mit Cisco AnyConnect 4.0.5x und älteren Versionen funktionieren.
 
@@ -835,8 +951,6 @@ Es wird empfohlen, Abhängigkeiten von TLS 1.0 und 1.1 proaktiv aus Ihren Umgebu
 
 ### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>Planen von Änderungen: Verwenden von Intune in Azure für die Verwaltung Ihrer mobilen Geräte jetzt möglich <!-- 1227338 -->
 Vor über einem Jahr wurde eine [öffentlich zugängliche Vorschau von Intune in Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) angekündigt. Sechs Monate später wurde [die neue Benutzeroberfläche für Administratoren allgemein zugänglich gemacht](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/). Ab 31. August 2018 wird die Verwaltung mobiler Geräte (MDM) in der klassischen Silverlight-Konsole für Kunden deaktiviert, die eine eigenständige Intune-Version verwenden. Stattdessen können Sie [Intune in Azure](https://aka.ms/Intune_on_Azure) verwenden, wenn Sie Ihre Geräte mobil verwalten möchten. Wenn Sie immer noch die klassische Konsole für die Verwaltung mobiler Geräte verwenden, sollten Sie sich nun mit Intune in Azure vertraut machen. Diese Änderungen sollten keine Auswirkungen auf die Benutzer haben. Die klassische PC-Verwaltung bleibt in Silverlight erhalten. Erfahren Sie [hier](https://aka.ms/Intune_on_Azure_mdm) mehr über diese Änderungen und deren Folgen für Sie.
-
-## <a name="whats-coming"></a>Was steht an?
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple erfordert Updates für die Transportsicherheit für Anwendungen <!--748318-->
 Apple hat angekündigt, dass bestimmte Anforderungen für die Transportsicherheit für Anwendungen (Application Transport Security, ATS) erzwungen werden. ATS wird verwendet, um eine strengere Sicherheit in allen App-Kommunikationen über HTTPS zu erzwingen. Diese Änderung wirkt sich auf Intune-Kunden aus, die die iOS-Unternehmensportal-App verwenden. Die aktuellen Informationen finden Sie auf dem [Intune-Support-Blog](https://aka.ms/compportalats).

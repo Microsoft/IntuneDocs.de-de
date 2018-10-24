@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 841cfdeea1d33876c1b678a531c88663aea3759e
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: af1804f657041055467e302c4dc8913e1035749d
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403594"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799658"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple
 
@@ -138,6 +138,7 @@ Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil fü
     ![Screenshot der Installation des Unternehmensportals mit VPP](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
 7. Wenn Sie ein Token für **Unternehmensportal mit VPP installieren** auswählen, haben Sie unmittelbar nach Abschluss des Einrichtungsassistenten die Möglichkeit, das Gerät in den Einzelanwendungsmodus (für die Unternehmensportal-App) zu sperren. Wählen Sie für **Run Company Portal in Single App Mode until authentication** (Unternehmensportal bis zur Authentifizierung im Einzelanwendungsmodus ausführen) **Ja** aus, um diese Option festzulegen. Der Benutzer muss sich erst authentifizieren, indem er sich über das Unternehmensportal anmeldet, um das Gerät zu verwenden.
+    Dieses Feature funktioniert am besten mit iOS 11.3.1 und höher. Bei Verwendung älterer Versionen kann die Installation länger dauern.
 
 8. Wählen Sie **Geräteverwaltungseinstellungen** aus, und geben Sie an, ob Geräte mit diesem Profil überwacht werden sollen.
 

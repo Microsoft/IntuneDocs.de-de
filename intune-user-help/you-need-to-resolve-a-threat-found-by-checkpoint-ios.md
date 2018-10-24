@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f4725b76517bc9d3a27f07d7289f178c54a31bce
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 5eba9f6f920b4bf868e26b47e4043babe62a8945
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148030"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828039"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Beheben einer von SandBlast Mobile Protect erkannten Bedrohung
 
@@ -37,7 +37,12 @@ In diesem Artikel wird beschrieben, wie Sandblast Mobile Protect-Benachrichtigun
 ## <a name="troubleshoot-virus-or-security-threat"></a>Problembehandlung bei Viren- oder Sicherheitsbedrohungen  
 Wenn eine Viren- oder Sicherheitsbedrohung erkannt wird, verfährt die SandBlast Mobile Protect-App gemäß den Zugriffsrichtlinien Ihrer Organisation. Zugriffsrichtlinien könnten Sie am Zugriff auf das Netzwerk, die Apps und die E-Mails hindern, die Sie für Ihre Arbeit benötigen.  
 
-SandBlast Mobile Protect fordert Sie dazu auf, Maßnahmen zu ergreifen, um den Zugang zu diesen Ressourcen wiederherzustellen. Wählen Sie die Bedrohung aus, und führen Sie zur Problembehebung die Anweisungen in der App aus.  
+![Beispielscreenshot einer Warnmeldung der SEP Mobile-App.](./media/skycure-list-of-potential-issues-android.png)  
+SandBlast Mobile Protect fordert Sie dazu auf, Maßnahmen zu ergreifen, um den Zugang zu diesen Ressourcen wiederherzustellen. Wählen Sie die Bedrohung aus, und führen Sie zur Problembehebung die Anweisungen in der App aus.
+
+Da die App in den MDM-Anbieter Ihres Unternehmens integriert ist, wird auch eine Warnung über den eingeschränkten Zugriff in der Unternehmensportal-App angezeigt. In der Warnmeldung werden Sie aufgefordert, Sandblast Mobile Protect zu öffnen, um die Viren- bzw. Sicherheitsbedrohung zu beheben.  
+
+  ![Beispielscreenshot der Geräteseite des Unternehmensportals, auf der die Sandblast Mobile Protect-Warnung angezeigt wird](./media/CP-lookout-virus-banner-1808.png)  
 
 ## <a name="troubleshoot-an-app-threat"></a>Problembehandlung bei einer App-Bedrohung  
 
@@ -45,4 +50,4 @@ Wenn Sie eine App installieren, die als Bedrohung für Ihr Gerät angesehen wird
 
 Zum Auflösen der Warnung wählen Sie die App in der Liste der Bedrohungen in SandBlast Mobile Protect aus. Führen Sie dann die Anweisungen aus, um die App zu entfernen und zu deinstallieren.  
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie die Supportabteilung Ihres Unternehmens. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/13/2017
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,41 +15,39 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 8a83602d992ff7ea08be84272eee086ea364be0a
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 452ee2b386130a4c7ca6dc5026d3e2489c5ea33a
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147042"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863043"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Aktualisieren der Unternehmensportal-App
 
 In diesem Artikel wird beschrieben, wie Sie Ihre Version der Unternehmensportal-App in den folgenden Fällen aktualisieren:  
-* Es ist eine neuere Version der Unternehmensportal-App verfügbar.
-* Ihre Version der Unternehmensportal-App wird nicht mehr unterstützt.
+* Es ist eine neuere Version des Unternehmensportals verfügbar.
+* Ihre Version des Unternehmensportals wird nicht mehr unterstützt.
 
-In den folgenden Schritten wird beschrieben, wie Sie die App auf Android-, iOS- und Windows-Geräten aktualisieren.    
+In den folgenden Schritten wird beschrieben, wie Sie die App auf Android-, iOS- und Windows-Geräten aktualisieren oder die neueste Version erhalten.    
 
-## <a name="update-the-intune-company-portal-app-on-your-android-device"></a>Aktualisieren der Unternehmensportal-App von Intune auf Ihrem Android-Gerät
+## <a name="update-the-company-portal-app-on-your-android-device"></a>Aktualisieren der Unternehmensportal-App auf Ihrem Android-Gerät  
 
-Wenn eine neue Version des Unternehmensportals verfügbar ist, wird vom Play Store eine entsprechende Benachrichtigung angezeigt. In der Unternehmensportal-App selbst wird keine Benachrichtigung angezeigt. Wählen Sie die Benachrichtigung aus, und folgen Sie den Anweisungen, um Ihr Gerät zu aktualisieren.  
+Wenn eine neue Version des Unternehmensportals verfügbar ist, wird vom Google Play Store eine entsprechende Benachrichtigung angezeigt. In der Unternehmensportal-App selbst wird keine Benachrichtigung angezeigt. Wählen Sie die Benachrichtigung des Stores aus, und folgen Sie den Anweisungen, um Ihre App zu aktualisieren. 
 
-## <a name="update-the-intune-company-portal-app-on-your-ios-device"></a>Aktualisieren der Unternehmensportal-App von Intune auf Ihrem iOS-Gerät
+## <a name="update-the-company-portal-app-on-your-ios-device"></a>Aktualisieren der Unternehmensportal-App auf Ihrem iOS-Gerät  
 
-Wenn eine neue Version verfügbar ist, wird die Option „Aktualisieren“ angezeigt, wenn Sie die App in der Liste der installierten Apps betrachten.  
+Wenn eine neue Version verfügbar ist, wird eine Option zum **Update** in Ihrer Liste der installierten Apps neben der Unternehmensportal-App angezeigt.  
 
-1. Öffnen Sie den App Store, und suchen Sie nach **Intune**.
+1. Öffnen Sie den App Store, und suchen Sie nach **Intune**.  
+2. Wenn Sie die App gefunden haben, tippen Sie auf **Aktualisieren**.  
 
-2. Wenn Sie die App gefunden haben, tippen Sie auf **Aktualisieren**.
+## <a name="update-the-company-portal-app-on-your-windows-device"></a>Aktualisieren der Unternehmensportal-App auf Ihrem Windows-Gerät
+Öffnen Sie Microsoft Store, und wechseln Sie zu **Einstellungen**, um automatisch Updates zu erhalten, sobald diese verfügbar sind. Aktivieren Sie **App-Updates**. Um die neuesten Updates sowie Apps anzuzeigen, die sich in der Downloadwarteschlange befinden, wechseln Sie zu **Downloads und Updates**.  
 
-## <a name="update-the-intune-company-portal-app-on-your-windows-device"></a>Aktualisieren der Unternehmensportal-App von Intunes auf Ihrem Windows-Gerät
-
-1.  Navigieren Sie zum Microsoft Store, und suchen Sie nach **Intune-Unternehmensportal**.
-
-2.  Folgen Sie den Installationsschritten.
-
-    > [!NOTE]
-    > Falls Sie nicht auf den Microsoft Store zugreifen können, wenden Sie sich an den Support Ihres Unternehmens.
+Befolgen Sie die folgenden Schritte, wenn Sie die App lieber manuell aktualisieren möchten oder wenn **App-Updates** von Ihrem Unternehmen deaktiviert wurde.  
+1. Öffnen Sie den Microsoft Store.
+2. Geben Sie in der Suchleiste den Begriff **Unternehmensportal**ein.
+3. Klicken oder tippen Sie auf die App, um die neueste Version auf Ihrem Gerät zu installieren. 
 
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -3,8 +3,8 @@ title: Gerätekonformitätsrichtlinie für Jamf-Geräte
 titlesuffix: Microsoft Intune
 description: Verwenden Sie die Konformitätsrichtlinien für Microsoft Intune zusammen mit dem bedingten Zugriff auf Azure Active Directory, um mit Jamf verwaltete Geräte zu sichern.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: d4c41d3a4cdfada81b91a3dffeffdfe15e8a470f
+ms.sourcegitcommit: 17094728cfd9eb3f77ca39745fdcde9be0a8dda1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34482334"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48812820"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Erzwingen von Konformität auf mit Jamf Pro verwalteten Macs
 
@@ -73,7 +73,7 @@ Endbenutzer müssen die Unternehmensportal-App über den Jamf Self-Dienst starte
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>Entfernen eines mit Jamf verwalteten Gerätes aus Intune
 
-Sie können kein mit Jamf verwaltetes Gerät aus Intune entfernen. Sie müssen mit Jamf verwaltete Geräte aus Jamf Pro entfernen, woraufhin Jamf aus Intune entfernt wird. 
+Sie können ein von Jamf verwaltetes Gerät aus der Intune-Konsole entfernen, indem Sie **Löschen** in der Ansicht **Alle Geräte** auswählen. Die Massenlöschung von Geräten kann aktiviert werden, indem Sie mehrere Geräte auswählen und auf **Löschen** klicken.
 
 Erfahren Sie, wie Sie [ein mit Jamf verwaltetes Gerät in den Jamf Pro-Dokumenten entfernen](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). Sie können auch ein Supportticket beim [Jamf-Support](https://www.jamf.com/support/) einreichen, wenn Sie zusätzliche Hilfe benötigen. 
 
