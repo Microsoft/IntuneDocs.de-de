@@ -31,12 +31,20 @@ items:
     href: quickstart-create-group.md
   - name: Erstellen einer Richtlinie
     href: quickstart-create-policy.md
+  - name: Festlegen der Länge des Gerätekennworts
+    href: quickstart-set-password-length-android.md
   - name: Festlegen der automatischen Registrierung
     href: quickstart-setup-auto-enrollment.md
   - name: Erstellen und Zuweisen einer benutzerdefinierten Rolle
     href: quickstart-create-custom-role.md
   - name: Erstellen eines E-Mail-Geräteprofils
     href: quickstart-email-profile.md
+- name: Lernprogramme
+  items:
+  - name: Schützen von E-Mail auf verwalteten Geräten
+    href: tutorial-protect-email-on-enrolled-devices.md
+  - name: Verwenden von Autopilot zum Registrieren von Windows-Geräten
+    href: tutorial-use-autopilot-enroll-devices.md
 - name: Implementierungshandbücher für Szenarios
   items:
   - name: Schützen von Exchange Online
@@ -237,6 +245,8 @@ items:
       href: device-profile-android-teamviewer.md
     - name: Zurücksetzen der PIN unter Windows 10
       href: device-windows-pin-reset.md
+    - name: Installieren des Exchange-Connectors
+      href: exchange-service-connector-configure.md
     - name: Synchronisieren eines Geräts
       href: device-sync.md
     - name: Untersuchen des Gerätebestands
@@ -442,6 +452,8 @@ items:
       items:
       - name: Android
         href: wi-fi-settings-android.md
+      - name: Android Enterprise & Kiosk
+        href: wi-fi-settings-android-enterprise.md
       - name: iOS
         href: wi-fi-settings-ios.md
       - name: macOS
@@ -517,8 +529,6 @@ items:
       href: conditional-access-intune-common-ways-use.md
     - name: Installieren des Connectors für Exchange lokal
       href: exchange-connector-install.md
-    - name: Installieren des Exchange-Connectors
-      href: exchange-service-connector-configure.md
     - name: Erstellen und Zuweisen der Richtlinie für bedingten Zugriff
       href: conditional-access-exchange-create.md
     - name: Erneutes Zuweisen von Richtlinien für bedingten Zugriff über das klassische Intune-Portal
@@ -823,9 +833,9 @@ items:
       href: intune-legacy-pc-client.md
   - name: Glossar
     href: intune-glossary.md
-ms.openlocfilehash: a2820903d6a3609df50290af18843200ef076158
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: ad9fe7c9c344cbbd244515cb9c2025b46e74eddd
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828056"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643075"
