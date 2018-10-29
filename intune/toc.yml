@@ -487,6 +487,8 @@ items:
         href: certificate-authority-add-scep-overview.md
       - name: Symantec PKI Manager Web Service
         href: certificates-symantec-configure.md
+      - name: Entfernen von SCEP- oder PKCS-Zertifikaten
+        href: remove-certificates.md
     - name: Konfigurieren der Windows Information Protection-Einstellungen
       href: windows-information-protection-configure.md
     - name: Verwalten von PowerShell-Skripts
@@ -833,9 +835,9 @@ items:
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Glossar
     href: intune-glossary.md
-ms.openlocfilehash: 809323f7e55e5c1fc010528744e4d0c57273f622
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
+ms.openlocfilehash: 0af72efb9ae319a8af39dcbf6d923a0d3bb6796d
+ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983226"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50149069"
