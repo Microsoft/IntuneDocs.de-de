@@ -1,6 +1,6 @@
 ---
 title: Erstellen einer Konformitätsrichtlinie für Windows-Geräte in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Erstellen oder konfigurieren Sie eine Microsoft Intune-Gerätekonformitätsrichtlinie für Windows Phone 8.1, Windows 8.1 und höher sowie Windows 10 und höher. Überprüfen Sie die Konformität des minimalen und maximalen Betriebssystems, legen Sie Kennwortbeschränkungen und -längen fest, fordern Sie BitLocker an, prüfen Sie nach Antiviruslösungen von Drittanbietern, stellen Sie die akzeptable Bedrohungsstufe ein, und aktivieren Sie die Datenspeicherung, einschließlich Surface Hub und Windows Holographic for Business.
+description: Erstellen oder konfigurieren Sie eine Microsoft Intune-Gerätekonformitätsrichtlinie für Windows Phone 8.1, Windows 8.1 und höher sowie Windows 10 und höher. Überprüfen Sie die Konformität des minimalen und maximalen Betriebssystems, legen Sie Kennwortbeschränkungen und -längen fest, fordern Sie BitLocker an, prüfen Sie auf Antivirenlösungen von Drittanbietern, stellen Sie die akzeptable Bedrohungsstufe ein, und aktivieren Sie die Verschlüsselung im Datenspeicher, einschließlich Surface Hub und Windows Holographic for Business.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11ccace4ca8e43e09b8aebeb92530629cf50a472
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: e38e6f615220135e9c4c9c786ab260f5921890ea
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602315"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642897"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für Windows-Geräte in Intune
 
@@ -119,8 +119,6 @@ Windows 8.1-PCs geben die Version **3** zurück. Wenn die Regel für die Betrieb
 
 Informationen zur Funktionsweise des HAS-Diensts finden Sie unter [Integritätsnachweis-CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp).
 
-Informationen zum Einrichten von Windows Defender ATP (Advanced Threat Protection) als Bedrohungsschutzdienst finden Sie unter [Aktivieren von Windows Defender ATP mit bedingtem Zugriff](advanced-threat-protection.md).
-
 ### <a name="device-properties"></a>Geräteeigenschaften
 
 - **Minimale Version des Betriebssystems:** Geben Sie die minimal zulässige Version im Zahlenformat **Hauptversion.Nebenversion.Build.CU** ein. Um den richtigen Wert abzurufen, öffnen Sie eine Eingabeaufforderung und geben `ver` ein. Der Befehl `ver` gibt die Version im folgenden Format zurück:
@@ -183,6 +181,8 @@ Informationen zum Einrichten von Windows Defender ATP (Advanced Threat Protectio
   - **Niedrig**: Das Gerät wird als kompatibel bewertet, wenn nur Bedrohungen niedriger Stufen vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
   - **Mittel**: Das Gerät wird als kompatibel bewertet, wenn die auf dem Gerät vorhandenen Bedrohungen niedriger oder mittlerer Stufe sind. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
   - **Hoch**: Dies ist die am wenigsten sichere Option, die alle Bedrohungsebenen zulässt. Es ist möglicherweise hilfreich, diese Lösung nur zu Berichtszwecken zu verwenden.
+  
+  Informationen zum Einrichten von Windows Defender ATP (Advanced Threat Protection) als Bedrohungsschutzdienst finden Sie unter [Aktivieren von Windows Defender ATP mit bedingtem Zugriff](advanced-threat-protection.md).
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 

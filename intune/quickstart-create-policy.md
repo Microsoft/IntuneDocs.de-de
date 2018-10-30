@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/17/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73e1e0a27d128d567a924e6f2b343026b11f1a44
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 9d9169ab353da30e0f7b292cea4f5b9c93e316aa
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581650"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391551"
 ---
 # <a name="quickstart-add-a-device-compliance-policy-for-a-windows-10-device"></a>Schnellstart: Hinzufügen einer Gerätekonformitätsrichtlinie für ein Windows 10-Gerät
 Eine Intune-Konformitätsrichtlinie für Windows-Geräte gibt die Regeln und Einstellungen an, die Windows-Geräte erfüllen müssen, um als konform angesehen zu werden. Sie können diese Richtlinien mit [bedingtem Zugriff](https://docs.microsoft.com/intune/conditional-access) verwenden, um den Zugriff auf Unternehmensressourcen zuzulassen oder zu blockieren. Außerdem können Sie Geräteberichte abrufen und bei Nichtkonformität Aktionen durchführen.
@@ -28,7 +28,7 @@ In dieser Schnellstartanleitung erstellen Sie eine Gerätekonformitätsrichtlini
 
 Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für eine kostenlose Testversion](free-trial-sign-up.md).
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 - Um dieser Schnellstartanleitung zu folgen, müssen Sie zunächst [einen Benutzer](quickstart-create-user.md) und [eine Gruppe erstellen](quickstart-create-group.md).
 
 
@@ -53,4 +53,4 @@ Löschen Sie die Richtlinie, wenn Sie sie nicht länger benötigen. Wählen Sie 
 In dieser Schnellstartanleitung haben Sie eine einfache Gerätekonformitätsrichtlinie erstellt und zugewiesen. Fahren Sie mit dem Schnellstart fort, um eine automatische Registrierung festzulegen, um ein Windows 10-Gerät zu registrieren, das die Richtlinie erhält. 
  
 > [!div class="nextstepaction"]
-> [Set up automatic enrollment (Festlegen der automatischen Registrierung)](quickstart-setup-auto-enrollment.md)
+> [Festlegen der Länge des Gerätekennworts](quickstart-set-password-length-android.md)

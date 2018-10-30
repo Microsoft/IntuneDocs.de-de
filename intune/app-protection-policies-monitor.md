@@ -15,18 +15,15 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9486bb6d0d9747101535cef9f45931fa1b2cefe6
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 2f3b28a7a5c1f97871a40f108a5fae6cc6b93424
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231440"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424882"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Überwachen von App-Schutzrichtlinien
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-**Falls Sie nicht das Azure-Portal verwenden**, wird in diesem Thema erläutert, wie Sie im klassischen Intune-Portal [App-Schutzrichtlinien erstellen](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
-
 
 Überwachen Sie den Kompatibilitätsstatus der Verwaltungsrichtlinien für mobile Apps (MAM), die Sie auf Benutzer im Bereich „Intune-App-Schutz“ im [Azure-Portal](https://portal.azure.com) angewendet haben. Hier finden Sie Informationen über die Benutzer, die von der MAM-Richtlinie betroffen sind, deren Kompatibilitätsstatus sowie Probleme, die bei den Benutzern möglicherweise auftreten.
 
@@ -37,6 +34,9 @@ Es gibt drei verschiedenen Stellen, an denen der Konformitätsstatus überwacht 
 -   Detailansicht
 
 -   Berichterstellung
+
+> [!NOTE]
+> Weitere Informationen zum Erstellen von App-Schutzrichtlinien finden Sie unter [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md).
 
 ## <a name="summary-view"></a>Zusammenfassungsansicht
 

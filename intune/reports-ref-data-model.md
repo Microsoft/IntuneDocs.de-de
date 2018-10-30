@@ -15,12 +15,12 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3ba8caa74b673127a17a431d5b821d52f9767c49
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
+ms.openlocfilehash: 5680e0c53a9decfa5b172e08c04fbfe4025f2d7c
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727457"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642869"
 ---
 # <a name="data-warehouse-data-model"></a>Datenmodell von Data Warehouse
 
@@ -61,6 +61,6 @@ Das Warehouse ist Ihren Intune-Daten nachgelagert. Intune erstellt täglich um M
 
 ## <a name="next-steps"></a>Nächste Schritte
 
- - Weitere Informationen zur Nachverfolgung der Benutzerlebensdauer über das Data Warehouse in Intune finden Sie unter [Darstellung der Benutzerlebensdauer im Intune Data Warehouse](reports-ref-user-timeline.md).
- - Weitere Informationen zum Arbeiten mit Data Warehouses finden Sie unter [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) (Erstellen eines ersten Data Warehouse).
+ - Informationen zur Nachverfolgung der Benutzerlebensdauer über das Data Warehouse in Intune finden Sie unter [Darstellung der Benutzerlebensdauer im Intune Data Warehouse](reports-ref-user-timeline.md).
+ - Weitere Informationen zum Arbeiten mit Data Warehouses finden Sie unter [Erstellen des ersten Data Warehouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse).
  - Weitere Informationen zum Arbeiten mit Power BI und einem Data Warehouse finden Sie unter [Erstellen eines neuen Power BI-Berichts durch Importieren eines Datasets](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 
