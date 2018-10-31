@@ -4,6 +4,7 @@ description: Erstellen Sie eine Konfigurationsrichtlinie, um Microsoft Outlook-E
 keywords: ''
 author: Erikre
 ms.author: erikre
+ms.reviewer: smithre4
 manager: dougeby
 ms.date: 10/04/2018
 ms.topic: article
@@ -12,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7fc9f34bbd3d14ac4291582247b1e45169c2cccc
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 24ed1a895dd3e4cad6111b40913b43fa9c6a3cec
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828803"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903521"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook-Konfigurationseinstellungen 
 
@@ -29,27 +30,15 @@ Informationen zum Erstellen einer App-Konfigurationsrichtlinie für verwaltete i
 
 Wenn Sie eine Konfigurationsrichtlinie in Intune hinzufügen, können Sie bestimmte Einstellungen zur Konfiguration von Microsoft Outlook festlegen. Im Bereich **Konfigurationseinstellungen** können Sie das E-Mail-Konto konfigurieren.
 
-### <a name="email-account-settings"></a>Einstellungen des E-Mail-Kontos
+### <a name="basic-authentication-email-account-settings"></a>E-Mail-Konto-Einstellungen für die Standardauthentifizierung
+Outlook für iOS und Android bietet Exchange-Administratoren die Möglichkeit, Kontokonfigurationen an ihre lokalen Benutzer zu übertragen, die die Standardauthentifizierung mit dem ActiveSync-Protokoll verwenden. Weitere Informationen finden Sie unter [Kontoeinrichtung in Outlook für iOS und Android mithilfe der Standardauthentifizierung](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/account-setup). Um die Konfiguration für die Kontoeinrichtung zu aktivieren, können Sie die folgenden Einstellungen konfigurieren:
 
-Die folgenden Konfigurationseinstellungen gelten für Microsoft Outlook.
-
-- **E-Mail-Server:** Geben Sie den Hostnamen Ihres Exchange-Servers ein.
+- **E-Mail-Server**: Geben Sie den Hostnamen Ihres lokalen Exchange-Servers ein (z.B. „mail.contoso.com“).
 - **E-Mail-Kontoname:** Geben Sie den Anzeigenamen des E-Mail-Kontos ein. Dieser Name wird Benutzern auf ihren Geräten angezeigt.
-- **Benutzernamensattribut aus AAD:** Dieser Name ist das Attribut, dass Intune aus Azure Active Directory (AAD) abruft. Intune generiert dynamisch den Benutzernamen, der von diesem Profil verwendet wird. Folgende Optionen sind verfügbar:
+- **Benutzernamensattribut aus AAD:** Dieser Name ist das Attribut, dass Intune aus Azure Active Directory (Azure AD) abruft. Intune generiert dynamisch den Benutzernamen, der von diesem Profil verwendet wird. Diese Optionen umfassen Folgendes:
   - **Benutzerprinzipalname:** Ruft den Namen ab, z.B. `user1` oder `user1@contoso.com`
   - **Primäre SMTP-Adresse:** Ruft den Namen im Format einer E-Mail-Adresse ab, z.B. `user1@contoso.com`
-  - **SAM-Kontoname:** Erfordert die Domäne, z.B. `domain\user1`
-
-    Geben Sie außerdem Folgendes ein:  
-    - **Quelle des Benutzerdomänennamens:** Wählen Sie zwischen **AAD** oder **Benutzerdefiniert**.
-
-      Wenn Sie die Attribute von **AAD** abrufen möchten, geben Sie Folgendes ein:
-      - **Attribut des Benutzerdomänennames von AAD:** Rufen Sie entweder das Attribut **Full domain name** (vollständiger Domänenname) oder **NetBIOS name** (NetBIOS-Name) des Benutzers ab.
-
-      Wenn Sie sich dazu entscheiden, die Attribute **Benutzerdefiniert** zu verwenden, geben Sie Folgendes ein:
-      - **Zu verwendender benutzerdefinierter Domänenname:** Geben Sie einen Wert ein, den Intune als Domänennamen verwenden kann, wie z.B. `contoso.com` oder `contoso`
-
-- **E-Mail-Adressattribut aus AAD:** Die Art der Generierung der E-Mail-Adresse für den Benutzer Wählen Sie **Primäre SMTP-Adresse** (`user1@contoso.com`) aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname** (`user1@contoso.com` oder `user1`), um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden.
+- **E-Mail-Adressattribut aus AAD:** Die Art der Generierung der E-Mail-Adresse für den Benutzer Wählen Sie **Primäre SMTP-Adresse** (`user1@contoso.com`) aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname** (`user1@contoso.com` oder `user1`), um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden. Es wird empfohlen, die **Primäre SMTP-Adresse** auszuwählen.
 - **Kontodomäne**: (Optional) Die Domäne des Kontos.
 
 ## <a name="next-steps"></a>Nächste Schritte

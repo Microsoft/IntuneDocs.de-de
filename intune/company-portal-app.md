@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2defc433ef39562750c4579f302a9c5367c6464a
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828243"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307405"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 
@@ -61,7 +61,7 @@ Geben Sie die Supportinformationen Ihres Unternehmens ein, um Ihrem Mitarbeiter 
 
 
 ## <a name="company-branding-customization"></a>Anpassen des Unternehmensbrandings       
-Sie können Ihr Unternehmensportal mit Ihrem Firmenlogo, Firmennamen, Farbdesign und Hintergrund anpassen.     
+Sie können Ihr Unternehmensportal mit Ihrem Firmenlogo, Firmennamen, Farbdesign und Hintergrund anpassen. Um schnell ohne Testgerät eine Vorschau von der Brandingkonfiguration anzuzeigen, besuchen Sie [portal.manage.microsoft.com](https://portal.manage.microsoft.com). Beachten Sie, dass das Logo, das Sie hochladen, für E-Mail-Vorlagen verwendet wird.      
 
 ### <a name="theme-color"></a>Farbdesign
 Wenden Sie ein Farbdesign auf das Unternehmensportal an. Wählen Sie eine Standardfarbe aus, oder geben Sie einen sechsstelligen Hexadezimalcode ein, um eine benutzerdefinierte Farbe festzulegen.
@@ -82,3 +82,30 @@ Laden Sie Ihr Firmenlogo hoch, damit es auf der Intune-Benutzeroberfläche angez
 |**Show company name next to logo** (Firmenname neben Logo anzeigen)| Wählen Sie diese Option aus, um den eingegebenen Firmennamen neben dem hochgeladenen Logo anzuzeigen. |
 
 Nachdem Sie Ihre Änderungen gespeichert haben, können Sie im oberen Bereich des Blatts **Preview your settings in the Intune Web Portal** (Vorschau Ihrer Einstellungen im Intune-Webportal anzeigen) aktivieren, um Ihre Konfiguration zu überprüfen.
+
+## <a name="windows-company-portal-keyboard-shortcuts"></a>Tastenkombinationen für die Windows-Unternehmensportal-App
+
+Endbenutzer können mithilfe von Tastenkombinationen (Tastenkombinations-Editor) Navigations-, App- und Geräteaktionen in der Windows-Unternehmensportal-App auslösen.
+
+Die folgenden Tastenkombinationen stehen Ihnen in der Windows-Unternehmensportal-App zur Verfügung.
+
+| Bereich | Beschreibung | Tastenkombination |
+|:------------------:|:--------------:|:-----------------:|
+| Navigationsmenü | Navigation | ALT+M |
+|  | Startseite | ALT+H |
+|  | Alle Apps | ALT+A |
+|  | Installierte Apps | ALT+I |
+|  | Feedback senden | ALT+F |
+|  | Mein Profil | ALT+U |
+|  | Einstellung | ALT+T |
+| Start – Gerätekachel | Umbenennen | F2 |
+|  | Remove | STRG+D oder ENTF-TASTE |
+|  | Zugriff prüfen | STRG+M oder F9 |
+| Gerätedetails | Umbenennen | F2 |
+|  | Remove | STRG+D oder ENTF-TASTE |
+|  | Zugriff prüfen | STRG+M oder F9 |
+| App-Details | „Installieren“ zu klicken. | STRG+I |
+
+## <a name="next-steps"></a>Nächste Schritte
+
+- [Manuelles Hinzufügen der Windows 10-Unternehmensportal-App mithilfe von Microsoft Intune](store-apps-company-portal-app.md)

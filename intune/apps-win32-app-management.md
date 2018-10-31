@@ -15,12 +15,12 @@ ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c2774a8172eb389742a3fdbf805717b6bc134b43
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: f11d1a0f51935e1bcb7318c7b0c7ba674ba2d54b
+ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866370"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357103"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Standalone – Win32-App-Verwaltung (Public Preview)
 
@@ -32,7 +32,7 @@ Intune Standalone ermöglicht eine umfangreichere Verwaltung von Win32-Anwendung
 - Folgendes muss für den Windows 10-Client zutreffen: 
     - Beitritt zu Azure Active Directory (AAD) oder Hybrid Azure Active Directory und
     - Registrierung bei Intune (MDM-verwaltet)
-- Die Größe der Windows-Anwendung ist in der öffentlichen Vorschau auf 8 GB pro Anwendung begrenzt. 
+- Die Größe der Windows-Anwendung ist in der öffentlichen Vorschau auf 2 GB pro App begrenzt. 
 
 > [!NOTE]
 > Derzeit werden Pro- und Education-Versionen von Windows 10 Version 1607 getestet und wir würden uns über Ihr Feedback freuen.
@@ -51,7 +51,7 @@ Sie können das [Microsoft Intune-Tool zur Vorbereitung des Uploads von Win32-Ap
 |    `-h`     |    Hilfe    |
 |    `-c <setup_folder>`     |    Setupordner für alle Setupdateien.    |
 |   ` -s <setup_file>`     |    Setupdatei (z. B. *setup.exe* oder *setup.msi*).    |
-|    `-o <output_file>`     |    Ausgabeordner für die generierte *.intunewin*-Datei.    |
+|    `-o <output_folder>`     |    Ausgabeordner für die generierte *.intunewin*-Datei.    |
 |    `-q`       |    Stiller Modus    |
 
 ### <a name="example-commands"></a>Beispiele für Befehle
