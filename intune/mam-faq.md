@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f27baf7d40a6eb4d89769eeab7a6e035e3468825
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 57c69c1610168aa25d33c8124c38f585eb715251
+ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643024"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50225453"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Häufig gestellte Fragen zu MAM und App-Schutz
 
@@ -172,7 +172,7 @@ Wenn verschiedene Arten von Einstellungen verarbeitet werden müssen, haben die 
 **Was geschieht, wenn ich einen Fingerabdruck oder ein Gesicht auf meinem Gerät hinzufüge oder entferne?**
 Die Richtlinien für den Intune-App-Schutz ermöglichen es Ihnen, den App-Zugriff nur auf Benutzer mit Intune-Lizenz zu beschränken. Eine der Möglichkeiten, den Zugriff auf die App zu steuern, besteht darin, Apple Touch ID oder Face ID auf unterstützten Geräten zu erfordern. Intune implementiert ein Verhalten, bei dem Intune den Benutzer bei Änderungen an der biometrischen Datenbank des Geräts zur PIN-Eingabe auffordert, wenn der nächste Wert des Inaktivitätstimeouts erfüllt ist. Zu Änderungen an biometrischen Daten zählen das Hinzufügen oder Entfernen von Fingerabdrücken oder Gesichtern. Wenn der Intune-Benutzer keine PIN festgelegt hat, wird er zu einem Fenster für die Einrichtung einer Intune-PIN weitergeleitet.
  
-Durch diese Maßnahmen sollen die Daten Ihrer Organisation innerhalb der App und auf App-Ebene geschützt werden. Dieses Feature ist nur für iOS verfügbar und erfordert, dass das Intune App SDK für iOS, Version 9.0.1 oder höher in betreffende Anwendungen integriert wird. Die Integration des SDK ist erforderlich, damit das Verhalten für die Zielanwendungen erzwungen werden kann. Diese Integration erfolgt fortlaufend und ist von den jeweiligen Anwendungsteams abhängig. Zu den betreffenden Apps zählen z.B. WXP, Outlook, Managed Browser und Yammer. 
+Durch diese Maßnahmen sollen die Daten Ihrer Organisation innerhalb der App und auf App-Ebene geschützt werden. Dieses Feature ist nur für iOS verfügbar und erfordert, dass das Intune App SDK für iOS, Version 9.0.1 oder höher in betreffende Anwendungen integriert wird. Die Integration des SDK ist erforderlich, damit das Verhalten für die Zielanwendungen erzwungen werden kann. Diese Integration erfolgt kontinuierlich und ist abhängig von den jeweiligen Anwendungsteams. Zu den betreffenden Apps zählen z.B. WXP, Outlook, Managed Browser und Yammer. 
   
 **Ich kann die iOS-Freigabeerweiterung verwenden, um Geschäfts-, Uni- oder Schuldaten in nicht verwalteten Apps zu öffnen, auch wenn die Datenübertragungsrichtlinie auf „nur verwaltete Apps“ oder „keine Apps“ festgelegt ist. Führt das nicht zu Datenlecks?**<br></br>
 Die Intune-App-Schutzrichtlinie kann die iOS-Freigabeerweiterung nicht steuern, ohne das Gerät zu verwalten. Daher _**verschlüsselt Intune „unternehmenseigene“ Daten, bevor diese außerhalb der App freigegeben werden**_. Sie können dies überprüfen, indem Sie versuchen, die „unternehmenseigene“ Datei außerhalb der verwalteten App zu öffnen. Die Datei sollte verschlüsselt sein und außerhalb der verwalteten App nicht geöffnet werden können.
@@ -181,6 +181,15 @@ Die Intune-App-Schutzrichtlinie kann die iOS-Freigabeerweiterung nicht steuern, 
 Zugriffsrichtlinien für den Intune-App-Schutz werden in einer bestimmten Reihenfolge auf den Geräten von Endbenutzern angewendet, wenn diese versuchen, über ihr Unternehmenskonto auf eine App zuzugreifen. In der Regel hat ein Zurücksetzungsvorgang Vorrang vor einem Block. Verwerfbare Warnungen werden erst als letztes berücksichtigt. Es wird z.B. eine Einstellung der mindestens erforderlichen iOS-Version, die den Benutzer auffordert, ein Update des Betriebssystems auszuführen, im Anschluss an die Einstellung angewendet, die dem Benutzer den Zugriff verweigert (wenn dies auf den Benutzer/die App zutrifft). In diesem Szenario konfiguriert der IT-Administrator die Einstellung für die mindestens erforderliche iOS-Version auf Version 11.0.0.0 und die mindestens erforderliche iOS-Version, die nur für Warnungen gilt, auf 11.1.0.0. Gleichzeitig versucht das Gerät, auf dem noch die iOS-Version 10 installiert ist, auf die App zuzugreifen. In Folge dessen wird der Endbenutzer basierend auf restriktiveren Einstellungen für die mindestens erforderliche iOS-Version blockiert und erhält keinen Zugriff.
 
 Wenn verschiedene Arten von Einstellungen verarbeitet werden müssen, haben die Anforderungen hinsichtlich bestimmter Versionen des Intune App SDK Vorrang. Erst danach werden Anforderungen berücksichtigt, die eine Version einer App oder eines iOS-Betriebssystems betreffen. Anschließend werden in derselben Reihenfolge mögliche Warnungen für sämtliche Einstellungstypen überprüft. Es wird empfohlen, die Anforderung, die die Intune App SDK-Version betrifft, nur unter Anleitung des Intune-Produktteams für grundlegende Blockierungsszenarios zu konfigurieren.
+
+## <a name="app-protection-policies---policy-refresh"></a>App-Schutzrichtlinien – Richtlinienaktualisierung
+- Apps checken sich alle 30 Minuten beim APP-Dienst ein.
+- Der 30-minütige Schwellenwert basiert auf einem Timer.
+    - Wenn die App bei 30 Minuten aktiv ist, checkt sie sich bei 30 Minuten ein.
+    - Wenn sich die App bei 30 Minuten im Energiesparmodus befindet, checkt sie sich beim nächsten Fokus ein.
+- Wenn einem Benutzer keine Richtlinie zugewiesen ist, erfolgt das Einchecken alle acht Stunden.
+- Wenn keine Intune-Lizenz zugewiesen ist, erfolgt das Einchecken alle 24 Stunden.
+
 
 ## <a name="see-also"></a>Siehe auch
 - [Implementieren Ihres Intune-Plans](planning-guide-onboarding.md)
