@@ -180,7 +180,7 @@ items:
         href: windows-bulk-enroll.md
       - name: Seite zum Registrierungsstatus
         href: windows-enrollment-status.md
-      - name: Windows AutoPilot Deployment-Programm
+      - name: Windows Autopilot Deployment-Programm
         href: enrollment-autopilot.md
     - name: Einrichten der Android-Registrierung
       items:
@@ -212,6 +212,8 @@ items:
         href: device-enrollment-program-enroll-macos.md
     - name: Installieren des Intune-Softwareclients auf Windows-PCs
       href: install-the-windows-pc-client-with-microsoft-intune.md
+    - name: Abbruchbericht
+      href: enrollment-report-company-portal-abandon.md
     - name: Behandlung von Problemen bei der Geräteregistrierung
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Verwalten von Geräten
@@ -835,9 +837,9 @@ items:
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Glossar
     href: intune-glossary.md
-ms.openlocfilehash: 0af72efb9ae319a8af39dcbf6d923a0d3bb6796d
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
+ms.openlocfilehash: df67b7a497eac9e50a4f9e440a209857e210be09
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50149069"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236695"
