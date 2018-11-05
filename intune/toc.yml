@@ -182,6 +182,8 @@ items:
         href: windows-enrollment-status.md
       - name: Windows Autopilot Deployment-Programm
         href: enrollment-autopilot.md
+      - name: Hybrides Active Directory-Tool mit Autopilot
+        href: windows-autopilot-hybrid.md
     - name: Einrichten der Android-Registrierung
       items:
       - name: Einrichten der Android-Registrierung
@@ -837,9 +839,9 @@ items:
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
   - name: Glossar
     href: intune-glossary.md
-ms.openlocfilehash: df67b7a497eac9e50a4f9e440a209857e210be09
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 58768bc109a5c0e079779959a7d176565582a138
+ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236695"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50971430"
