@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/18/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8d78d850d68b8c6eb6e5b1282acddb3b93963ca4
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959518"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236151"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integrieren der Netzwerkzugriffssteuerung (NAC) mit Intune
 
@@ -27,7 +27,7 @@ Intune arbeitet mit Partnern der Netzwerkzugriffssteuerung zusammen, um Organisa
 
 ## <a name="how-do-intune-and-nac-solutions-help-protect-your-organization-resources"></a>Wie helfen Lösungen von Intune und NAC beim Schutz der Ressourcen Ihrer Organisation?
 
-Lösungen für die Zugriffssteuerung überprüfen den Registrierungs- und Kompatibilitätsstatus des Geräts mit Intune, um Entscheidungen bezüglich der Zugriffssteuerung zu treffen. Wenn das Gerät nicht registriert ist oder registriert ist, aber nicht den Intune-Gerätekonformitätsrichtlinien entspricht, sollte es für die Registrierung und/oder eine Gerätekonformitätsprüfung an Intune umgeleitet werden.
+Lösungen für die Zugriffssteuerung überprüfen den Registrierungs- und Kompatibilitätsstatus des Geräts mit Intune, um Entscheidungen bezüglich der Zugriffssteuerung zu treffen. Wenn das Gerät nicht registriert ist oder registriert ist, aber nicht den Intune-Gerätekonformitätsrichtlinien entspricht, sollte es für die Registrierung oder eine Gerätekonformitätsprüfung an Intune umgeleitet werden.
 
 ### <a name="example"></a>Beispiel
 
@@ -37,7 +37,7 @@ Wenn das Gerät registriert und mit Intune kompatibel ist, sollte die NAC-Lösun
 
 Geräte, die aktiv mit Intune synchronisiert werden, können nicht vom Zustand **Konform** / **Nicht konform** in **Nicht synchronisiert** (oder **Unbekannt**) wechseln. Der Zustand **Unbekannt** ist für neu registrierte Geräte reserviert, die noch nicht im Hinblick auf ihre Konformität ausgewertet wurden.
 
-Bei Geräten, die für den Zugriff auf Ressourcen blockiert sind, sollte der blockierende Dienst alle Benutzer auf das [Verwaltungsportal](https://portal.manage.microsoft.com) umleiten, um festzustellen, warum das Gerät blockiert ist.  Wenn die Benutzer diese Seite besuchen, werden ihre Geräte erneut synchron im Hinblick auf Konformität ausgewertet.
+Bei Geräten, die für den Zugriff auf Ressourcen blockiert sind, sollte der blockierende Dienst alle Benutzer auf das [Verwaltungsportal](https://portal.manage.microsoft.com) umleiten, um festzustellen, warum das Gerät blockiert ist.  Wenn die Benutzer diese Seite besuchen, werden ihre Geräte erneut synchron im Hinblick auf Konformität ausgewertet.
 
 ## <a name="nac-and-conditional-access"></a>NAC und bedingter Zugriff
 
@@ -54,10 +54,20 @@ Im Folgenden erhalten Sie einen Überblick darüber, wie die Integration der Net
 3. Konfigurieren Sie die Lösung des NAC-Partners für die Zertifikatauthentifizierung.
 4. Der Benutzer stellt eine Verbindung zum WLAN-Zugriffspunkt her oder fordert eine VPN-Verbindung an.
 5. Die Lösung des NAC-Partners leitet die Geräteinformationen an Intune weiter und fragt Intune nach dem Registrierungs- und Kompatibilitätsstatus des Geräts.
-6. Wenn das Gerät nicht kompatibel oder nicht registriert ist, weist die Lösung des NAC-Partners den Benutzer an, das Gerät zu registrieren oder kompatibel zu machen.
-7. Das Gerät versucht, seinen Konformitäts- und/oder Registrierungszustand erneut zu überprüfen.
+6. Wenn das Gerät nicht konform oder nicht registriert ist, weist die Lösung des NAC-Partners den Benutzer an, das Gerät zu registrieren oder die Konformitätsprobleme zu beheben.
+7. Das Gerät versucht bei Bedarf, seinen Konformitäts- und Registrierungszustand erneut zu überprüfen.
 8. Wenn das Gerät registriert wurde und kompatibel ist, erhält die Lösung des NAC-Partners von Intune eine Statusmeldung.
 9. Die Verbindung konnte erfolgreich hergestellt werden, und das Gerät erhält Zugriff auf Unternehmensressourcen.
+
+## <a name="use-nac-on-your-ios-devices"></a>Verwenden von NAC auf iOS-Geräten
+
+Für die folgenden VPN-Clients wird die Netzwerkzugriffsteuerung unter iOS derzeit nicht unterstützt:
+-   Cisco AnyConnect
+-   F5 Access
+-   Citrix SSO  
+
+Microsoft und Partner arbeiten an einer NAC-Lösung für diese neueren Clients. Dieser Artikel erhält Updates mit weiteren Informationen, sobald neue Lösungen verfügbar sind. 
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 66426e9e22c2624b9828440906e3b1b947f4b60a
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581671"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410768"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Schnellstart: Erstellen und Zuweisen einer benutzerdefinierten Rolle
 
@@ -20,7 +20,7 @@ In diesem Intune-Schnellstart erstellen Sie eine benutzerdefinierte Rolle mit be
 
 Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für eine kostenlose Testversion](free-trial-sign-up.md).
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 - Um dieser Schnellstartanleitung zu folgen, müssen Sie [eine Gruppe erstellen](quickstart-create-group.md).
 
@@ -47,7 +47,7 @@ Wenn Sie eine benutzerdefinierte Rolle erstellen, können Sie Berechtigungen fü
 
 Bevor Ihr Sicherheitsoperator die neuen Berechtigungen verwenden kann, müssen Sie die Rolle einer Gruppe zuweisen, die den Sicherheitsbenutzer enthält.
 
-1. Wählen Sie in Intune **Rollen** > **Alle Rollen** und den **Remotegeräte-Helpdesk** aus.
+1. Wählen Sie in Intune die Optionen **Rollen** > **Alle Rollen** > **Sicherheitsvorgänge** aus.
 2. Klicken Sie unter **Intune-Rollen** auf **Zuweisungen** > **Zuweisen**.
 3. Geben Sie im Feld **Zuweisungsname** *Sec ops* ein.
 4. Klicken Sie auf **Mitglied (Gruppen)** > **Hinzufügen**.

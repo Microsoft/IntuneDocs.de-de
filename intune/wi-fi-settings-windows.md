@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/30/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,28 +13,66 @@ ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 58a6681c22672b5aa2c8337708456b30361f741f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329646"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236474"
 ---
-# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>WLAN-Einstellungen für Geräte mit Windows 10 und höher in Intune
+# <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Hinzufügen von WLAN-Einstellungen für Geräte mit Windows 10 und höher in Intune
 
-WLAN-Einstellungen werden in einem Konfigurationsprofil verwendet, das auf Geräte mit Windows 10 und höher angewendet wird. Diese Optionen umfassen Folgendes:
+Sie können ein Profil mit bestimmten WLAN-Einstellungen erstellen und dieses dann auf Ihren Geräten mit Windows 10 und höher bereitstellen. Microsoft Intune bietet viele Features, darunter die Authentifizierung bei Ihrem Netzwerk mit einem vorinstallierten Schlüssel.
 
-- Einfach
-- Enterprise
+Dieser Artikel beschreibt diese Einstellungen.
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
 [Erstellen Sie ein Geräteprofil.](device-profile-create.md)
 
-## <a name="settings-for-basic-and-enterprise-profiles"></a>Einstellungen für Basic- und Enterprise-Profile
+## <a name="basic-profile"></a>Grundlegendes Profil
+
+- **WLAN-Typ**: Wählen Sie **Grundlegend** aus. 
 
 - **WLAN-Name (SSID)**: Abkürzung für Service Set Identifier. Dieser Wert entspricht dem tatsächlichen Namen des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern wird beim Auswählen der Verbindung jedoch nur der **Verbindungsname** angezeigt, den Sie konfiguriert haben.
+
 - **Verbindungsname**: Geben Sie einen Anzeigenamen für diese WLAN-Verbindung ein. Der eingegebene Text ist der Name, der den Benutzern bei der Suche nach verfügbaren WLAN-Verbindungen auf ihren Geräten angezeigt wird.
+
+- **Automatisch verbinden, wenn in Reichweite**: Wenn **Ja** festgelegt wird, verbinden sich Geräte automatisch, wenn sie sich im Empfangsbereich des Netzwerks befinden. Wenn **Nein** festgelegt wird, verbinden sich Geräte nicht automatisch.
+
+  - **Verbindung mit bevorzugtem Netzwerk herstellen, sofern verfügbar**: Wählen Sie **Ja** aus, wenn sich Geräte im Empfangsbereich das bevorzugten Netzwerks mit diesem verbinden sollen. Wählen Sie **Nein** aus, wenn das WLAN-Netzwerk in diesem Konfigurationsprofil verwendet werden soll.
+
+    Angenommen, Sie erstellen das WLAN-Netzwerk **ContosoCorp** und verwenden **ContosoCorp** im Konfigurationsprofil. Zusätzlich befindet sich das WLAN-Netzwerk **ContosoGuest** im Empfangsbereich des anderen Netzwerks. Wenn Ihre Unternehmensgeräte sich nun im Empfangsbereich befinden, sollen diese sich automatisch mit **ContosoCorp** verbinden. In diesem Szenario legen Sie die Eigenschaft **Verbindung mit bevorzugtem Netzwerk herstellen, sofern verfügbar** auf **Nein** fest.
+
+  - **Verbindung mit diesem Netzwerk herstellen, auch wenn die SSID nicht übertragen wird**: Wählen Sie für das Konfigurationsprofil **Ja** aus, damit auch dann automatisch eine Verbindung zum Netzwerk hergestellt wird, wenn das Netzwerk ausgeblendet ist (d.h., die SSID nicht öffentlich übertragen wird). Wählen Sie **Nein** aus, wenn mit diesem Konfigurationsprofil keine Verbindung mit dem ausgeblendeten Netzwerk hergestellt werden soll.
+
+- **Getaktetes Verbindungslimit:** Administratoren können bestimmen, wie der Datenverkehr des Netzwerks getaktet werden soll. Anwendungen können dann ihr Verhalten für Netzwerkdatenverkehr basierend auf dieser Einstellung anpassen. Folgende Optionen sind verfügbar:
+
+  - **Uneingeschränkt:** Standard. Die Verbindung ist nicht getaktet und der Datenverkehr wird nicht eingeschränkt.
+  - **Fest:** Verwenden Sie diese Option, wenn für das Netzwerk ein festes Limit für Datenverkehr festgelegt ist. Wenn dieses Limit erreicht ist, kann nicht mehr auf das Netzwerk zugegriffen werden.
+  - **Variabel:** Verwenden Sie diese Option, wenn Netzwerkdatenverkehr pro Byte abgerechnet wird (Kosten pro Byte).
+
+- **Sicherheitstyp für Drahtlosverbindung**: Geben Sie das Sicherheitsprotokoll an, mit dem Geräte in Ihrem Netzwerk authentifiziert werden. Folgende Optionen sind verfügbar:
+  - **Offen (keine Authentifizierung):** Verwenden Sie diese Option nur, wenn das Netzwerk nicht gesichert ist.
+  - **WPA/WPA2-Personal:** eine sicherere Option, die häufig für WLAN-Verbindungen verwendet wird. Wenn Sie mehr Sicherheit wünschen, können Sie auch ein Kennwort für einen vorinstallierten Schlüssel oder einen Netzwerkschlüssel angeben. 
+
+    - **Vorinstallierter Schlüssel:** Optional. Diese Option wird angezeigt, wenn Sie **WPA/WPA2-Personal** als Sicherheitstyp auswählen. Wenn das Netzwerk Ihrer Organisation eingerichtet oder konfiguriert wird, wird auch ein Kennwort oder ein Netzwerkschlüssel konfiguriert. Geben Sie dieses Kennwort oder den Netzwerkschlüssel für den Wert des vorinstallierten Schlüssels ein. Geben Sie eine Zeichenfolge ein, die zwischen 8 und 64 Zeichen umfasst. Wenn Ihr Kennwort oder Netzwerkschlüssel 64 Zeichen umfasst, geben Sie Hexadezimalzeichen an.
+
+- **Proxyeinstellungen für Unternehmen**: Wählen Sie die Proxyeinstellungen aus, die innerhalb Ihrer Organisation verwendet werden sollen. Folgende Optionen sind verfügbar:
+  - **Keine**: Es sind keine Proxyeinstellungen konfiguriert.
+  - **Manuell konfigurieren**: Geben Sie die **IP-Adresse des Proxyservers** and die zugehörige **Portnummer** ein.
+  - **Automatisch konfigurieren**: Geben Sie die URL ein, die auf ein PAC-Skript (Proxy auto-configuration = automatische Proxykonfiguration) verweist. Geben Sie beispielsweise `http://proxy.contoso.com/proxy.pac` ein.
+
+Wählen Sie **OK** > **Erstellen** aus, um die Änderungen zu speichern. Das Profil wird erstellt und in der Profilliste angezeigt.
+
+## <a name="enterprise-profile"></a>Unternehmensprofil
+
+- **WLAN-Typ**: Wählen Sie **Unternehmen** aus. 
+
+- **WLAN-Name (SSID)**: Abkürzung für Service Set Identifier. Dieser Wert entspricht dem tatsächlichen Namen des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern wird beim Auswählen der Verbindung jedoch nur der **Verbindungsname** angezeigt, den Sie konfiguriert haben.
+
+- **Verbindungsname**: Geben Sie einen Anzeigenamen für diese WLAN-Verbindung ein. Der eingegebene Text ist der Name, der den Benutzern bei der Suche nach verfügbaren WLAN-Verbindungen auf ihren Geräten angezeigt wird.
+
 - **Automatisch verbinden, wenn in Reichweite**: Wenn **Ja** festgelegt wird, verbinden sich Geräte automatisch, wenn sie sich im Empfangsbereich des Netzwerks befinden. Wenn **Nein** festgelegt wird, verbinden sich Geräte nicht automatisch.
   - **Verbindung mit bevorzugtem Netzwerk herstellen, sofern verfügbar**: Wählen Sie **Ja** aus, wenn sich Geräte im Empfangsbereich das bevorzugten Netzwerks mit diesem verbinden sollen. Wählen Sie **Nein** aus, wenn das WLAN-Netzwerk in diesem Konfigurationsprofil verwendet werden soll.
 
@@ -42,18 +80,11 @@ WLAN-Einstellungen werden in einem Konfigurationsprofil verwendet, das auf Gerä
 
   - **Verbindung mit diesem Netzwerk herstellen, auch wenn die SSID nicht übertragen wird**: Wählen Sie für das Konfigurationsprofil **Ja** aus, damit auch dann automatisch eine Verbindung zum Netzwerk hergestellt wird, wenn das Netzwerk ausgeblendet ist (d.h., die SSID nicht öffentlich übertragen wird). Wählen Sie **Nein** aus, wenn mit diesem Konfigurationsprofil keine Verbindung mit dem ausgeblendeten Netzwerk hergestellt werden soll.
 
-- **Proxyeinstellungen für Unternehmen**: Wählen Sie die Proxyeinstellungen aus, die innerhalb Ihrer Organisation verwendet werden sollen. Folgende Optionen sind verfügbar:
-  - **Keine**: Es sind keine Proxyeinstellungen konfiguriert.
-  - **Manuell konfigurieren**: Geben Sie die **IP-Adresse des Proxyservers** and die zugehörige **Portnummer** ein.
-  - **Automatisch konfigurieren**: Geben Sie die URL ein, die auf ein PAC-Skript (Proxy auto-configuration; automatische Proxykonfiguration) verweist. Geben Sie beispielsweise `http://proxy.contoso.com/proxy.pac` ein.
+- **Getaktetes Verbindungslimit:** Administratoren können bestimmen, wie der Datenverkehr des Netzwerks getaktet werden soll. Anwendungen können dann ihr Verhalten für Netzwerkdatenverkehr basierend auf dieser Einstellung anpassen. Folgende Optionen sind verfügbar:
 
-## <a name="settings-for-basic-profiles-only"></a>Einstellungen für Basic-Profile
-
-- **Sicherheitstyp für Drahtlosverbindung**: Geben Sie das Sicherheitsprotokoll an, mit dem Geräte in Ihrem Netzwerk authentifiziert werden. Folgende Optionen sind verfügbar:
-  - **Offen (keine Authentifizierung):** Verwenden Sie diese Option nur, wenn das Netzwerk nicht gesichert ist.
-  - **WPA/WPA2-Personal**
-
-## <a name="settings-for-enterprise-profiles-only"></a>Einstellungen für Enterprise-Profile
+  - **Uneingeschränkt:** Standard. Die Verbindung ist nicht getaktet und der Datenverkehr wird nicht eingeschränkt.
+  - **Fest:** Verwenden Sie diese Option, wenn für das Netzwerk ein festes Limit für Datenverkehr festgelegt ist. Wenn dieses Limit erreicht ist, kann nicht mehr auf das Netzwerk zugegriffen werden.
+  - **Variabel:** Verwenden Sie diese Option, wenn Netzwerkdatenverkehr pro Byte abgerechnet wird.
 
 - **Einmaliges Anmelden (SSO):** Mit dieser Einstellung können Sie SSO konfigurieren. Dabei werden Anmeldeinformationen sowohl für Anmeldungen an einem Computer als auch bei Anmeldungen bei einem WLAN-Netzwerk verwendet. Folgende Optionen sind verfügbar:
   - **Deaktivieren**: Deaktiviert SSO. Der Benutzer muss sich in einem zusätzlichen Schritt beim Netzwerk authentifizieren.
@@ -107,11 +138,24 @@ WLAN-Einstellungen werden in einem Konfigurationsprofil verwendet, das auf Gerä
 
         **Identitätsschutz (äußere Identität):** Verwenden Sie diese Option mit dem EAP-Typ **EAP-TTLS**. Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.
 
+- **Proxyeinstellungen für Unternehmen**: Wählen Sie die Proxyeinstellungen aus, die innerhalb Ihrer Organisation verwendet werden sollen. Folgende Optionen sind verfügbar:
+  - **Keine**: Es sind keine Proxyeinstellungen konfiguriert.
+  - **Manuell konfigurieren**: Geben Sie die **IP-Adresse des Proxyservers** and die zugehörige **Portnummer** ein.
+  - **Automatisch konfigurieren**: Geben Sie die URL ein, die auf ein PAC-Skript (Proxy auto-configuration; automatische Proxykonfiguration) verweist. Geben Sie beispielsweise `http://proxy.contoso.com/proxy.pac` ein.
+
 - **FIPS-konformes (Federal Information Processing Standard) WLAN-Profil erzwingen:** Wählen Sie bei der Validierung des FIPS 140-2-Standards **Ja** aus. Dieser Standard ist für alle US-Bundesbehörden erforderlich, die Sicherheitssysteme verwenden, die auf Kryptografie basieren, um vertrauliche aber nicht klassifizierte Informationen digital zu speichern. Wählen Sie **Nein** aus, um nicht FIPS-konform zu sein.
+
+Wählen Sie **OK** > **Erstellen** aus, um die Änderungen zu speichern. Das Profil wird erstellt und in der Profilliste angezeigt.
 
 ## <a name="use-an-imported-settings-file"></a>Verwenden einer importierten Einstellungsdatei
 
 Falls bestimmte Einstellungen nicht in Intune verfügbar sind, können Sie WLAN-Einstellungen eines anderen Windows-Geräts exportieren. Bei diesem Export wird eine XML-Datei mit allen Einstellungen erstellt. Importieren Sie diese Datei anschließend in Intune, und verwenden Sie sie als WLAN-Profil. Weitere Informationen finden Sie unter [Exportieren und Importieren von WLAN-Einstellungen für Windows-Geräte](wi-fi-settings-import-windows-8-1.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Konfigurieren von WLAN-Einstellungen in Intune](wi-fi-settings-configure.md)
+
+Das Profil ist nun erstellt. [Weisen Sie dieses Profil nun zu.](device-profile-assign.md)
+
+## <a name="more-resources"></a>Weitere Ressourcen
+
+- Weitere Informationen zu den verfügbaren Einstellungen finden Sie unter [Windows 8.1](wi-fi-settings-import-windows-8-1.md).
+- Weitere Informationen, z.B. zu anderen Plattformen, finden Sie in der [Übersicht zu WLAN-Einstellungen](wi-fi-settings-configure.md).

@@ -15,12 +15,12 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d8784d560d37068fd4559a2e67ecf35044ee498e
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: da10455cd6dc3cfbda23726832c539c206aea18c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494046"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025150"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Hinzufügen von Microsoft Store-Apps zu Microsoft Intune
 
@@ -54,7 +54,7 @@ Führen Sie die folgenden Schritte aus, um eine Microsoft Store-App zu Intune hi
 8. Wählen Sie **OK** aus.
 9. Wählen Sie **Hinzufügen** aus.
 
-Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie den ausgewählten Gruppen zuweisen können. 
+Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie den ausgewählten Gruppen zuweisen können. Microsoft Store-Apps können nur Gruppen zugewiesen werden, die den Zuweisungstyp **Für registrierte Geräte verfügbar** aufweisen (Benutzer installieren die App über die Unternehmensportal-App oder -Website).
 
 ## <a name="next-steps"></a>Nächste Schritte
 - [Das Zuweisen von Apps zu Gruppen](apps-deploy.md)

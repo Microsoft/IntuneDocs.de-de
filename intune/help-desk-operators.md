@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/02/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 239c8d5dc4143ba91c78b9b5c502c7a20b101417
-ms.sourcegitcommit: 7afa90264a2098453885be3d37655ae1a32ca67d
+ms.openlocfilehash: 90756da72ecdcbd049b14b45014433bb5843a5ed
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47229074"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236661"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Verwenden des Problembehandlungsportals zur Unterstützung von Benutzern Ihres Unternehmens
 
@@ -96,13 +96,14 @@ Geräte, die von Intune oder durch Benutzer verwaltet werden, die von Intune ode
 | Eigentum          | Der Typ des Gerätebesitzes (**Company**, **Personal** oder **Unknown** („Unternehmen“, „Privat“ oder „Unbekannt“)).                                               |
 | Mit Intune kompatibel   | Der Name des Gerätetyps                                                                                                     |
 | Mit Azure AD kompatibel | Welchen Status haben die App-Schutz-Apps der einzelnen Benutzers? Die möglichen Statuswerte für die apps sind **Eingecheckt** und **Nicht eingecheckt**. |
+| App-Installation | Gibt an, ob auf dem jeweiligen Gerät eine App-Installation fehlgeschlagen ist oder erfolgreich abgeschlossen wurde. |
 | Betriebssystem                 | Das auf dem Gerät installierte Betriebssystem                                                                                       |
 | BS-Version         | Die Versionsnummer des Betriebssystems auf dem Gerät                                                                                  |
 | Letzter Check-In      | Der Name des Gerätetyps                                                                                                     |
 
 ### <a name="app-protection-status"></a>Schutzstatus der App
 
-Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die in EMS-Technologien (Enterprise Mobility Solution) integriert werden. Durch diese Richtlinien werden Ihrer Unternehmensdaten grundlegend geschützt, wenn diese auf mobile Apps, einschließlich mobile Office-Apps, heruntergeladen werden. 
+Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die in EMS-Technologien (Enterprise Mobility Solution) integriert werden. Durch diese Richtlinien werden Ihrer Unternehmensdaten grundlegend geschützt, wenn diese auf mobile Apps, einschließlich mobile Office-Apps, heruntergeladen werden. 
 
 | Eigenschaft    | Beschreibung                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -115,7 +116,7 @@ Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die in EMS-Technologi
 
 ## <a name="app-protection-policies-reference"></a>Referenz für App-Schutzrichtlinien
 
-Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die mit EMS-Technologien integriert werden können. Diese Richtlinien schützen Ihre Unternehmensdaten grundlegend, wenn diese in mobile Apps heruntergeladen werden (dazu zählen auch mobile Office-Apps). 
+Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die mit EMS-Technologien integriert werden können. Diese Richtlinien schützen Ihre Unternehmensdaten grundlegend, wenn diese in mobile Apps heruntergeladen werden (dazu zählen auch mobile Office-Apps). 
 
 ### <a name="properties"></a>Eigenschaften
 
@@ -148,7 +149,7 @@ Geräte, die von Intune oder durch Benutzer verwaltet werden, die von Intune ode
 
 ## <a name="compliance-policies-reference"></a>Referenz für Kompatibilitätsrichtlinien
 
-Stellt sicher, dass die für den Zugriff auf Unternehmens-Apps und -daten verwendeten Geräte bestimmte Regeln einhalten wie beispielsweise die Verwendung einer PIN für den Zugriff auf das Gerät und die Verschlüsselung der auf dem Gerät gespeicherten Daten.
+Stellt sicher, dass die für den Zugriff auf Unternehmens-Apps und -daten verwendeten Geräte bestimmte Regeln einhalten, z.B. die Verwendung einer PIN für den Zugriff auf das Gerät und die Verschlüsselung der auf dem Gerät gespeicherten Daten.
 
 ### <a name="properties"></a>Eigenschaften
 
@@ -180,7 +181,7 @@ Geräte, die von Intune oder durch Benutzer verwaltet werden, die von Intune ode
 
 ### <a name="app-protection-policies"></a>App-Schutzrichtlinien
 
-Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die mit EMS-Technologien integriert werden. Durch diese Richtlinien werden Ihrer Unternehmensdaten grundlegend geschützt, wenn diese auf mobile Apps, einschließlich mobile Office-Apps, heruntergeladen werden. 
+Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die mit EMS-Technologien integriert werden. Durch diese Richtlinien werden Ihrer Unternehmensdaten grundlegend geschützt, wenn diese auf mobile Apps, einschließlich mobile Office-Apps, heruntergeladen werden. 
 
 | Eigenschaft    | Beschreibung                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
@@ -193,7 +194,7 @@ Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die mit EMS-Technolog
 
 ## <a name="configuration-policies-reference"></a>Referenz für Konfigurationsrichtlinien
 
-Eine App-Konfigurationsrichtlinie ist für mobile Geräte mit herstellerspezifischen Konfigurationen verfügbar. 
+Eine App-Konfigurationsrichtlinie ist für mobile Geräte mit herstellerspezifischen Konfigurationen verfügbar. 
 
 ### <a name="properties"></a>Eigenschaften
 
@@ -226,7 +227,7 @@ Geräte, die von Intune oder durch Benutzer verwaltet werden, die von Intune ode
 
 ### <a name="app-protection-policies"></a>App-Schutzrichtlinien
 
-Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die mit EMS-Technologien integriert werden. Durch diese Richtlinien werden Ihrer Unternehmensdaten grundlegend geschützt, wenn diese auf mobile Apps, einschließlich mobile Office-Apps, heruntergeladen werden. 
+Eine App-Schutzrichtlinie ist für mobile Apps verfügbar, die mit EMS-Technologien integriert werden. Durch diese Richtlinien werden Ihrer Unternehmensdaten grundlegend geschützt, wenn diese auf mobile Apps, einschließlich mobile Office-Apps, heruntergeladen werden. 
 
 | Eigenschaft    | Beschreibung                                                                           |
 |-------------|---------------------------------------------------------------------------------------|

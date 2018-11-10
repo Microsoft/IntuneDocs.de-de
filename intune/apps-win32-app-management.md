@@ -1,27 +1,10 @@
 ---
-title: Hinzufügen von Win32-Apps zu Microsoft Intune
-titlesuffix: ''
-description: Erfahren Sie, wie Sie Win32-Apps mit Microsoft Intune hinzufügen, bereitstellen und verwalten können. Dieser Artikel enthält eine Übersicht über die Funktionen zum Bereitstellen und Verwalten von Win32-Apps, die Intune bietet, sowie Informationen zur Problembehandlung bei Win32-Apps.
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 10/23/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-ms.reviewer: mghadial
-ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: d5a678e76db516034c8b6d20d58855fd281f31f8
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959586"
+title: Hinzufügen von Win32-Apps zu Microsoft Intune titlesuffix: description: Informationen zum Hinzufügen, Bereitstellen und Verwalten von Win32-Apps mit Microsoft Intune. Dieser Artikel enthält eine Übersicht über die Funktionen zum Bereitstellen und Verwalten von Win32-Apps, die Intune bietet, sowie Informationen zur Problembehandlung bei Win32-Apps. keywords: author: Erikre ms.author: erikre manager: dougeby <<<<<<< HEAD ms.date: 10/23/2018 ======= ms.date: 10/19/2018
+>>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+
+ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
 ---
+
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Standalone – Win32-App-Verwaltung (Public Preview)
 
 Intune Standalone ermöglicht eine umfangreichere Verwaltung von Win32-Anwendungen. Während es für Kunden mit Cloudverbindung möglich ist, den Configuration Manager für die Verwaltung von Win32-Anwendungen zu verwenden, verfügen Kunden, die ausschließlich Intune verwenden, über umfangreichere Verwaltungsfunktionen für ihre Win32-Branchenanwendungen (LOB, Line-of-Business). Dieser Artikel bietet eine Übersicht über das Intune-Feature zur Verwaltung von Win32-Apps und enthält Informationen zur Problembehandlung.
@@ -32,7 +15,7 @@ Intune Standalone ermöglicht eine umfangreichere Verwaltung von Win32-Anwendung
 - Folgendes muss für den Windows 10-Client zutreffen: 
     - Beitritt zu Azure Active Directory (AAD) oder Hybrid Azure Active Directory und
     - Registrierung bei Intune (MDM-verwaltet)
-- Die Größe der Windows-Anwendung ist in der öffentlichen Vorschau auf 2 GB pro App begrenzt. 
+- Die Größe der Windows-Anwendung ist in der öffentlichen Vorschau auf 8 GB pro App begrenzt 
 
 > [!NOTE]
 > Derzeit werden Pro- und Education-Versionen von Windows 10 Version 1607 getestet und wir würden uns über Ihr Feedback freuen.
@@ -109,6 +92,11 @@ Sie können das [Microsoft Intune-Tool zur Vorbereitung des Uploads von Win32-Ap
 3.  Fügen Sie die vollständige Befehlszeile zum Deinstallieren hinzu, um die App basierend auf der GUID der App zu deinstallieren. 
 
     Beispiel: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+    > [!NOTE]
+    > Sie können eine Win32-App für die Installation im **Benutzerkontext** oder **Systemkontext** konfigurieren. Der **Benutzerkontext** bezieht nur auf einen bestimmten Benutzer. Der **Systemkontext** bezieht sich auf alle Benutzer eines Windows 10-Geräts.
+    >
+    > Endbenutzer müssen nicht beim Gerät angemeldet sein, um Win32-Apps zu installieren.
 
 4.  Wählen Sie danach **OK**.
 
@@ -233,7 +221,6 @@ Agentprotokolle auf dem Clientcomputer befinden sich häufig unter `C:\ProgramDa
 ### <a name="troubleshooting-areas-to-consider"></a>Zu berücksichtigende Problembehandlungsbereiche
 - Überprüfen Sie die Zielgruppenadressierung, um sicherzustellen, dass der Agent auf dem Gerät installiert ist – Win32-App, die auf eine Gruppe ausgerichtet ist, oder PowerShell-Skript, das auf eine Gruppe ausgerichtet ist, erstellt die Installationsrichtlinie für die Sicherheitsgruppe.
 - Überprüfen Sie die Betriebssystemversion – Windows 10 1607 und höher.  
-- Ist der AAD-Benutzer auf dem Clientcomputer angemeldet?
 - Überprüfen Sie die Windows 10 SKU – Windows 10 S oder Windows-Versionen, die mit aktiviertem S-Modus ausgeführt werden, unterstützen keine MSI-Installation.
 
 ## <a name="next-steps"></a>Nächste Schritte

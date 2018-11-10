@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: ad949cc9d20e0e46ab986b4646059af733018255
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: bdf08ccac21407bc2572f1133b2fe8d45548342f
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232805"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679252"
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Welche Informationen erhält mein Unternehmen, wenn ich mein Gerät registriere?
 

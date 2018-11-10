@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5bcaabd66a2a9a24c3ee3f7c49cf7689d1f60eed
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: e0039223176afb3bed3a9ac2d2ada76b82096c26
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863143"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236627"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune
 
@@ -139,7 +139,7 @@ Alle Apps, die Sie mithilfe des Software-Installationsprogrammtyps erstellen (be
 Anforderungen für Cloudspeicherplatz:
 
 - Alle App-Installationsdateien müssen sich im selben Ordner befinden.
-- Die maximale Dateigröße für hochgeladene Dateien beträgt 2 GB.
+- Die maximale Dateigröße für hochgeladene Dateien beträgt 8 GB.
 
 ## <a name="create-and-edit-categories-for-apps"></a>Erstellen und Bearbeiten von Kategorien für Apps
 

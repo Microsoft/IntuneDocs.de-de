@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d013ad2aefbfee5eea8f240277b0f84c2c6bf05a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 05dfd1e756a7c05d29116cd9077182225f3b9fa5
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312948"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679303"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Häufig auftretende Probleme und Lösungen für Geräteprofile in Microsoft Intune
 
@@ -130,9 +130,9 @@ Wenn Sie ein Profil löschen oder ein Gerät aus einer Gruppe mit dem Profil ent
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Ich habe ein Profil für Geräteeinschränkungen geändert, aber die Änderungen wurden nicht übernommen
 Windows Phone-Geräte gestatten keine Verringerung der Sicherheitsstufe in Sicherheitsrichtlinien, die mittels MDM oder EAS festgelegt wurden, nachdem diese festgelegt wurden. Angenommen, Sie legen ein **Kennwort mit Mindestanzahl von Zeichen** auf 8 fest und versuchen dann, diesen Wert auf 4 zu verringern. Das restriktivere Profil wurde bereits auf das Gerät angewendet.
 
-Je nach Geräteplattform müssen Sie, wenn Sie das Profil auf einen niedrigeren Sicherheitswert ändern möchten, Sicherheitsrichtlinien zurücksetzen. In Windows wischen Sie beispielsweise auf dem Desktop von rechts nach innen. Wählen Sie anschließend **Einstellungen** > **Systemsteuerung** aus. Wählen Sie das Applet **Benutzerkonten** aus.
+Wenn Sie das Profil auf einen niedrigeren Sicherheitswert ändern möchten, müssen Sie die Sicherheitsrichtlinien zurücksetzen. In Windows 8.1 wischen Sie beispielsweise auf dem Desktop von rechts nach innen. Wählen Sie anschließend **Einstellungen** > **Systemsteuerung** aus. Wählen Sie das Applet **Benutzerkonten** aus. Im Navigationsmenü auf der linken Seite befindet sich im unteren Bereich ein Link **Sicherheitsrichtlinien zurücksetzen**. Wählen Sie ihn aus. Wählen Sie anschließend **Richtlinien zurücksetzen** aus.
 
-Im Navigationsmenü auf der linken Seite befindet sich im unteren Bereich ein Link **Sicherheitsrichtlinien zurücksetzen**. Wählen Sie ihn aus. Wählen Sie anschließend **Richtlinien zurücksetzen** aus. Andere MDM-Geräte, wie Android, Windows Phone 8.1 und höher sowie iOS, müssen möglicherweise außer Kraft gesetzt und bei dem Dienst neu registriert werden, damit Sie ein weniger restriktives Profil anwenden können.
+Andere MDM-Geräte, wie Android, Windows Phone 8.1 und höher, iOS sowie Windows 10, müssen möglicherweise außer Kraft gesetzt und bei dem Dienst neu registriert werden, damit Sie ein weniger restriktives Profil anwenden können.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Benötigen Sie zusätzliche Hilfe? Weitere Informationen finden Sie unter [Anfordern von Support für Microsoft Intune](get-support.md).

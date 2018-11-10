@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 11/01/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37445cb2536e02937cf3002dc1cb56ab4b78f12f
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 2f150db2e1d5fbc8e08bb7f7fcee50f0eda23ca7
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581392"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915681"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Schnellstart: Testen Sie Microsoft Intune kostenlos 
 
@@ -70,20 +70,27 @@ Sie können Intune 30 Tage lang kostenlos testen. Wenn Sie bereits über ein Arb
 
 Wenn Sie sich für eine Testversion registrieren, wird eine E-Mail mit Ihren Kontoinformationen an die von Ihnen bei der Registrierung angegebene E-Mail-Adresse gesendet. Diese E-Mail bestätigt, dass Ihre Testversion aktiv ist.
 
+> [!TIP]
+> Wenn Sie mit dem Azure-Portal arbeiten, erzielen Sie bessere Ergebnisse, wenn Sie nicht im privaten, sondern im normalen Modus mit Ihrem Browser arbeiten.
+
 ## <a name="set-the-mdm-authority-to-intune"></a>Festlegen der MDM-Autorität in Intune
 
-Die Einstellung für die Autorität für die Verwaltung mobiler Geräte (Mobile Device Management, MDM) bestimmt, wie Sie Ihre Geräte verwalten. Als IT-Administrator müssen Sie eine MDM-Autorität festlegen, damit Benutzer Geräte zur Verwaltung registrieren können.
+Wenn Sie sich im Azure-Portal anmelden und Intune auswählen wird möglicherweise ein orangefarbener Banner angezeigt, in dem darauf hingewiesen wird, dass Sie die MDM-Autorität noch nicht festgelegt haben. Die Einstellung für die Autorität für die Verwaltung mobiler Geräte (Mobile Device Management, MDM) bestimmt, wie Sie Ihre Geräte verwalten. Die MDM-Autorität muss festgelegt werden, bevor Benutzer Geräte für die Verwaltung registrieren können.
 
 Führen Sie die folgenden Schritte aus, um die MDM-Autorität in Intune festzulegen.
 
 1. Öffnen Sie ein neues Browserfenster, und geben Sie **https://portal.azure.com** in die Adressleiste ein. 
 2. Wählen Sie **Alle Dienste** > **Microsoft Intune** aus.
-3. Wählen Sie den orangefarbenen Banner aus, um die Einstellung **Autorität für die Verwaltung mobiler Geräte** zu öffnen. 
+3. Klicken Sie auf den Banner, in dem darauf hingewiesen wird, dass Sie die Geräteverwaltung nicht aktiviert haben. Wenn der Banner nicht direkt angezeigt wird, klicken Sie auf **Geräteregistrierung**. Wenn Sie die Geräteverwaltung noch nicht aktiviert haben, wird das Blatt **MDM-Autorität wählen** angezeigt.
 
     > [!NOTE]
     > Der orangefarbene Banner wird nur angezeigt, wenn Sie die MDM-Autorität noch nicht festgelegt haben.
 
-4. Legen Sie Ihre MDM-Autorität unter **Autorität für die Verwaltung mobiler Geräte** auf **Intune-MDM-Autorität** fest.
+    ![Bild des Blatts „MDM-Autorität wählen“](./media/choose-mdm-authority.png) 
+
+4. Legen Sie Ihre MDM-Autorität unter **MDM-Autorität wählen** auf **Intune-MDM-Autorität** fest.
+
+Informationen zum Festlegen der MDM-Autorität finden Sie unter [Festlegen der Autorität für die Verwaltung mobiler Geräte](mdm-authority-set.md).
 
 ## <a name="configure-your-custom-domain-name-optional"></a>Konfigurieren des Namens Ihrer benutzerdefinierten Domäne (optional)
 
@@ -120,4 +127,4 @@ Es gibt zwei verschiedene Portale, die Sie verwenden können:
 In diesem Schnellstart haben Sie ein kostenloses Abonnement erstellt, um Intune in einer Testumgebung zu testen, und Sie haben optional den Namen einer benutzerdefinierten Domäne konfiguriert. Weitere Informationen zu Microsoft Intune finden Sie im nächsten Schnellstart zum Hinzufügen von Benutzern und Zuweisen von Lizenzen.
 
 > [!div class="nextstepaction"]
-> [Erstellen eines Benutzers](get-started-users.md)
+> [Erstellen eines Benutzers](quickstart-create-user.md)

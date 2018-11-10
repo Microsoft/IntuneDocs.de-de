@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ae986e1f7a2b00c1a29208a163ee449e114f17
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 03d52c53b6e3152a5a262ca8bd6d158d5980b2c8
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425290"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236389"
 ---
 # <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Verwalten und Verwenden von Windows Holographic- und HoloLens-Geräten mit Intune
 
@@ -68,6 +68,10 @@ Mithilfe von Intune können Sie Apps zu Ihren Geräten hinzufügen, auf denen Wi
 
 Microsoft Intune kann universelle Windows-Apps für Microsoft HoloLens-Geräte bereitstellen, die Windows Holographic for Business ausführen. Sie können Ihre App-Pakete direkt in das Azure-Portal für Intune hochladen oder aus Microsoft Store für Unternehmen bereitstellen. Weitere Informationen zu verwandten Bereichen finden Sie in den folgenden Artikeln:
 - Informationen zum Bereitstellen von Line-of-Business -Apps (LOB), die das Intune-Azure-Portal nutzen, finden Sie unter [Informationen zum Hinzufügen branchenspezifischer Windows-Apps zu Microsoft Intune](lob-apps-windows.md).
+
+    > [!NOTE]
+    > Eine maximale Paketgröße von 8 GB ist in Intune zulässig. Diese Paketgröße ist nur für die LOB-Apps verfügbar, die in Intune hochgeladen werden.
+
 - Wie Sie Apps mit Microsoft Store für Unternehmen bereitstellen, erfahren Sie unter [Verwalten von Apps, die im Microsoft Store für Unternehmen mit Microsoft Intune erworben wurden](windows-store-for-business.md). 
 - Weitere Informationen zur App-Verwaltung mit Microsoft Intune finden Sie unter [Was ist die Microsoft Intune App-Verwaltung?](app-management.md).
 - Weitere Informationen zum Entwickeln von Apps für Microsoft HoloLens finden Sie unter [Mixed reality apps for Microsoft HoloLens](https://www.microsoft.com/hololens/apps) (Mixed Reality-Apps für Microsoft HoloLens). 

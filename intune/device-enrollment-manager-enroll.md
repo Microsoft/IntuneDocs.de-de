@@ -15,53 +15,26 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8e0d8d6aba74a37d1c07fa8445aa98adf5943be2
-ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
+ms.openlocfilehash: 0d510596f021725292c7221e3056986c2c3fc93c
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44141608"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410785"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Registrieren von Geräten mithilfe eines Geräteregistrierungs-Manager-Kontos
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-Mit Intune können Organisationen eine Vielzahl mobiler Geräte mit einem einzelnen Benutzerkonto verwalten. Das Konto *Geräteregistrierungsmanager* (DEM) ist ein spezielles Benutzerkonto, das bis zu 1.000 Geräte registrieren kann. Fügen Sie dem DEM-Konto vorhandene Benutzer hinzu, damit diese bestimmte DEM-Optionen erhalten. Jedes registrierte Gerät verwendet eine Einzellizenz. Es empfiehlt sich, Geräte zu verwenden, die mithilfe dieses Kontos als freigegebene Geräte registriert wurden, statt persönlicher („BYOD“) Geräte.  
-
-Es müssen Benutzer im [Azure-Portal](https://portal.azure.com) vorhanden sein, damit sie als Geräteregistrierungs-Manager hinzugefügt werden können. Für die optimale Sicherheit darf der DEM-Benutzer nicht zusätzlich Intune-Administrator sein.
-
->[!NOTE]
->Die Registrierungsmethode mit dem Geräteregistrierungs-Manager (Device Enrollment Manager, DEM) kann nicht zusammen mit den folgenden anderen Registrierungsmethoden verwendet werden: [Apple Configurator mit Setup-Assistent](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator mit direkter Registrierung](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) oder [Programm zur Geräteregistrierung (DEP)](device-enrollment-program-enroll-ios.md).
-
-## <a name="example-of-a-device-enrollment-manager-scenario"></a>Beispiel für ein Geräteregistrierungs-Manager-Szenario:
-
-Ein Restaurant möchte 50 Point-of-Sale-Tablets für sein Bedienpersonal bereitstellen sowie Bestellmonitore für seine Küchenmitarbeiter. Die Mitarbeiter müssen niemals auf Unternehmensdaten zugreifen und sich nie als Benutzer anmelden. Der Intune-Administrator erstellt ein neues Geräteregistrierungs-Manager-Konto für die Geschäftsführerin des Restaurants.  Dieses Konto ist vom primären Konto der Geschäftsführerin getrennt und wird nur zur Registrierung gemeinsam verwendeter Geräte in Intune verwendet. Der Vorgesetzte kann nun die 50 Tablets registrieren, indem er die DEM-Anmeldeinformationen verwendet.
-
-Nur Benutzer im [Azure-Portal](https://portal.azure.com) können Geräteregistrierungs-Manager sein. Der Geräteregistrierungs-Manager kann kein Intune-Administrator sein.
-
-Der DEM-Benutzer kann Folgendes tun:
-
--   Registrieren von bis zu 1000 Geräten in Intune
--   Anmelden beim Unternehmensportal, um Unternehmens-Apps abzurufen
--   Konfigurieren des Zugriffs auf Unternehmensdaten durch Bereitstellen von rollenspezifischen Apps auf den Tablets
+Sie können bis zu 1.000 mobile Geräte mit einem einzigen Azure Active Directory-Konto registrieren, indem Sie ein Geräteregistrierungs-Manager-Konto (Device Enrollment Manager, DEM) verwenden. Dabei handelt es sich um eine Intune-Berechtigung, die AAD-Benutzerkonten gewährt werden kann, mit der Benutzer bis zu 1.000 Geräte registrieren können. Ein DEM-Konto eignet sich für Szenarios, in denen Geräte registriert und vorbereitet werden, bevor Sie den Benutzern übergeben werden.
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>Einschränkungen der Geräte, die mit dem DEM Konto angemeldet sind
 
-Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurden, gelten folgende Einschränkungen:
+DEM-Benutzerkonten und Geräte, die mit einem DEM-Benutzerkonto registriert werden, unterliegen den folgenden Einschränkungen:
 
-  - Kein Zugriff auf Benutzerebene. Da Geräten kein Benutzer zugewiesen ist, hat das Gerät keinen Zugriff auf E-Mails oder Unternehmensdaten. VPN-Konfigurationen beispielsweise können noch immer dazu verwendet werden, um Geräte-Apps Zugriff auf Daten zu gestatten.
-  - Der DEM-Benutzer kann die Registrierung von DEM-Geräten auf dem Gerät mit dem Unternehmensportal nicht aufheben. Der Intune-Administrator kann Registrierungen aufheben.
+  - Die Zurücksetzung kann nicht über das Unternehmensportal erfolgen. Die Zurücksetzung eines Geräts, das über ein DEM-Benutzerkonto registriert wurde, kann über Intune im Azure-Portal erfolgen.
   - Nur das lokale Gerät erscheint in der Unternehmensportal-App oder -Website.
-  - Benutzer können Apps mit Benutzerlizenzen aus dem Apple Volume Purchase Program (VPP) nicht verwenden, weil für die Verwaltung dieser Apps benutzerspezifische Apple-IDs erforderlich sind.
-  - (Nur iOS) Wenn Sie DEM zur Registrierung von iOS-Geräten verwenden, können Sie zum Registrieren von Geräten nicht Apple Configurator, das Apple-Programm zur Geräteregistrierung (DEP) oder Apple School Manager (ASM) verwenden. Dies bedeutet, dass Sie das Gerät nicht in den überwachten Modus setzen können und daher auf einige Konfigurationsoptionen keinen Zugriff haben.
-  - (Nur Android) Die Anzahl der Android-Arbeitsprofilgeräte, die mit einem einzelnen DEM-Konto registriert werden können, ist begrenzt. Pro DEM-Konto können bis zu zehn Android-Geräte mit Arbeitsprofil registriert werden. Diese Einschränkung gilt nicht für die Android-Legacy-Registrierung.
-  - Geräte können VPP-Apps installieren, wenn sie über Gerätelizenzen verfügen.
-  - Für die Verwendung von DEM ist keine Intune-Gerätelizenz erforderlich. In diesem Artikel erfahren Sie mehr über [Benutzer- und Gerätelizenzen](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
-
-
-> [!NOTE]
-> Sie können Unternehmens-Apps für Geräte bereitstellen, die über den Geräteregistrierungs-Manager verwaltet werden. Stellen Sie die Unternehmensportal-App im Benutzerkonto des Geräteregistrierungs-Managers als **Erforderliche Installation** bereit.
-> Zur Verbesserung der Leistung werden beim Anzeigen der Unternehmensportal-App auf einem mit dem Geräteregistrierungs-Manager verwalteten Gerät nur das lokale Gerät angezeigt. Für die Remoteverwaltung anderer vom Geräteregistrierungs-Manager verwalteter Geräte muss die Intune-Verwaltungskonsole verwendet werden.
+  - DEM-Benutzerkonten können Apps aus dem Apple Volume Purchase Program (VPP) nicht mit Apple VPP-Benutzerlizenzen verwenden, weil benutzerspezifische Apple-IDs für die Verwaltung dieser Apps erforderlich sind.
+  - Geräte können VPP-Apps installieren, wenn sie über Apple VPP-Gerätelizenzen verfügen.
+  
 
 
 ## <a name="add-a-device-enrollment-manager"></a>Hinzufügen eines Geräteregistrierungs-Managers
@@ -74,21 +47,16 @@ Für Geräte, die mit einem Geräteregistrierungs-Manager-Konto registriert wurd
 
 ## <a name="permissions-for-dem"></a>Berechtigungen für DEM
 
-Globale Azure AD-Rollen oder Azure AD-Rollen für Intune-Dienstadministratoren sind für Folgendes erforderlich:
-- Aufgaben ausführen, die mit der DEM-Registrierung im Verwaltungsportal verbunden sind
-- Alle DEM-Benutzer trotz RBAC-Berechtigungen anzeigen, die aufgelistet sind und unter der benutzerdefinierten Benutzerrolle zur Verfügung stehen.
+Die Azure AD-Rollen globaler Administrator oder Intune-Dienstadministrator sind erforderlich, um
+- einem Azure AD-Benutzerkonto die DEM-Berechtigung zu gewähren
+- alle DEM-Benutzer anzuzeigen
 
-Ein Benutzer, dem keine globale Administratorrolle oder Intune-Dienstadministratorrolle zugewiesen ist, der jedoch über Leseberechtigungen für die Rolle „Geräteregistrierungs-Manager“ verfügt, kann nur die von ihm erstellten DEM-Benutzer sehen. Die Unterstützung von RBAC-Rollen für diese Features werden in der Zukunft bekannt gegeben.
+Wenn einem Benutzer keine globale Administratorrolle oder Intune-Dienstadministratorrolle zugewiesen ist, aber Leseberechtigungen für die ihm zugewiesene Rolle „Geräteregistrierungs-Manager“ aktiviert sind, kann dieser nur die von ihm erstellten DEM-Benutzer sehen.
 
 
-## <a name="remove-a-device-enrollment-manager"></a>Entfernen eines Geräteregistrierungs-Managers
+## <a name="remove-device-enrollment-manager-permissions"></a>Entfernen der DEM-Berechtigungen
 
-Wenn ein Geräteregistrierungs-Manager entfernt wird:
-
--   Registrierte Geräte sind nicht betroffen und werden weiterhin vollständig verwaltet.
--   Die entfernten DEM-Kontoanmeldeinformationen sind weiterhin gültig.
--   Der entfernte DEM kann Geräte weiterhin nicht zurücksetzen oder außer Betrieb nehmen.
--   Der entfernte DEM kann nur eine Anzahl von Geräten mit dem Limit pro Benutzer registrieren, die vom Intune-Administrator konfiguriert wurde.
+Wenn Sie einen Geräteregistrierungs-Manager entfernen, wirkt sich dies nicht auf registrierte Geräte aus.
 
 **So entfernen Sie einen Geräteregistrierungs-Manager**
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 2e3b356cc7c09b00916c24340dbbe1923540889b
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313698"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915732"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Standardeinstellungen für Geräteeinschränkungen für Android und Samsung KNOX – Intune
 
@@ -39,7 +39,7 @@ In diesem Artikel lernen Sie alle Einstellungen für Geräteeinschränkungen in 
 - **Geolocation (nur Samsung KNOX):** Erlaubt dem Gerät die Nutzung von Standortinformationen.
 - **Ausschalten (nur Samsung KNOX):** Erlaubt dem Benutzer das Ausschalten des Geräts.<br>Wenn diese Option deaktiviert ist, kann die **Anzahl von fehlgeschlagenen Anmeldungen, bevor das Gerät zurückgesetzt wird** nicht festgelegt werden.
 - **Bildschirmaufnahme (nur Samsung KNOX):** Erlaubt dem Benutzer, den Bildschirminhalt als Bild zu erfassen.
-- **Sprach-Assistent (nur Samsung KNOX):** Erlaubt die Verwendung von Sprach-Assistent-Software auf dem Gerät.
+- **Sprach-Assistent (nur Samsung KNOX):** Erlaubt die Verwendung des S Voice-Diensts und der -App auf dem Gerät. Dies gilt nicht für Bixby oder dem Sprach-Assistent für die Bedienungshilfe, der den Bildschirminhalt laut vorliest.
 - **YouTube (nur Samsung KNOX):** Erlaubt die Verwendung der YouTube-App auf dem Gerät.
 - **Freigegebene Geräte (nur Samsung KNOX):** Konfigurieren Sie ein verwaltetes Samsung KNOX Standard-Gerät als freigegeben. In diesem Modus können sich Endbenutzer des Geräts mit ihren Azure AD-Anmeldeinformationen an- und abmelden. Das Gerät wird weiterhin verwaltet, ganz gleich, ob es verwendet oder nicht.<br>In Verbindung mit einem SCEP-Zertifikatsprofil ermöglicht diese Funktion Endbenutzern die gemeinsame Nutzung eines Geräts mit denselben Apps für alle Benutzer, jedoch mit eigenem SCEP-Benutzerzertifikat.  Wenn sich Benutzer abmelden, werden alle App-Daten gelöscht.  Dieses Feature ist ausschließlich auf branchenspezifische Apps beschränkt.
 - **Datums- und Uhrzeitänderungen blockieren (Samsung KNOX)**: Verhindert, dass der Benutzer Datums- und Uhrzeiteinstellungen auf dem Gerät ändert. 

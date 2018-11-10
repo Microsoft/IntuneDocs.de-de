@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a70b6369bab130918bad472172995e6296ee4a6
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 226713d893e05c2c2aeea49cde2ce92591d06391
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391568"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915698"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune
 
@@ -153,7 +153,7 @@ Gerätekonformitätsrichtlinien können auch ohne einen bedingten Zugriff verwen
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Möglichkeiten, die Gerätekonformitätsrichtlinien bereitzustellen
 Sie können Benutzern die Konformitätsrichtlinie in Benutzergruppen oder Geräten in Gerätegruppen bereitstellen. Wenn Sie eine Konformitätsrichtlinie für einen Benutzer bereitstellen, wird die Konformität aller Geräte des Benutzers überprüft. Auf Windows 10-Geräten mit Version 1803 und höher wird empfohlen, die Bereitstellung für Gerätegruppen vorzunehmen, *falls* der primärer Benutzer das Gerät nicht registriert hat. Die Verwendung von Gerätegruppen in diesem Szenario hilft beim Erstellen von Konformitätsberichten.
 
-Die **Standardeinstellungen zur Konformitätsrichtlinie** (Azure-Portal > Gerätekonformität) enthalten Folgendes:
+Auf allen in Intune registrierten Geräten werden mehrere integrierte **Einstellungen für Konformitätsrichtlinien** (Azure-Portal > Gerätekonformität) ausgewertet. Dazu gehören:
 
 - **Kennzeichnen von Geräten, die keine Konformitätsrichtlinie zugewiesen haben, als:** Diese Eigenschaft verfügt über zwei Werte:
 
@@ -171,7 +171,7 @@ Die **Standardeinstellungen zur Konformitätsrichtlinie** (Azure-Portal > Gerät
 
 - **Gültigkeitszeitraum des Kompatibilitätsstatus (in Tagen):** Geben Sie den Zeitraum ein, in dem die Geräte den Status für alle empfangenen Konformitätsrichtlinien meldet. Geräte, die innerhalb dieses Zeitraums keine Statusmeldung abgeben, werden als nicht konform behandelt. Der Standardwert ist 30 Tage.
 
-Alle Geräte verfügen über eine **Standardrichtlinie für Gerätekonformität** (Azure-Portal > Gerätekonformität > Richtlinienkonformität). Verwenden Sie diese Standardrichtlinie, um diese Einstellungen zu überwachen.
+Alle Geräte verfügen über eine **integrierte Richtlinie für Gerätekonformität** (Azure-Portal > Gerätekonformität > Richtlinienkonformität). Verwenden Sie diese integrierte Richtlinie, um diese Einstellungen zu überwachen.
 
 Informationen darüber, wie lange es dauert, bis eine Richtlinie für mobile Geräte nach der Bereitstellung der Richtlinie abgerufen wird, finden Sie unter [Beheben von Problemen mit Profilen](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 

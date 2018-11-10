@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
-ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
+ms.openlocfilehash: ce31832421ece9008e1526e54ba3e9aa2780c666
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307405"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236287"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 
@@ -60,28 +60,48 @@ Geben Sie die Supportinformationen Ihres Unternehmens ein, um Ihrem Mitarbeiter 
 | **Weitere Informationen**| 120 | Dies wird auf der Seite **An IT-Abteilung wenden** angezeigt. |
 
 
-## <a name="company-branding-customization"></a>Anpassen des Unternehmensbrandings       
-Sie können Ihr Unternehmensportal mit Ihrem Firmenlogo, Firmennamen, Farbdesign und Hintergrund anpassen. Um schnell ohne Testgerät eine Vorschau von der Brandingkonfiguration anzuzeigen, besuchen Sie [portal.manage.microsoft.com](https://portal.manage.microsoft.com). Beachten Sie, dass das Logo, das Sie hochladen, für E-Mail-Vorlagen verwendet wird.      
+## <a name="company-identity-branding-customization"></a>Anpassen der Unternehmensmarkenidentität      
+Sie können Ihr Unternehmensportal mit Ihrem Firmenlogo, Firmennamen, Farbdesign und Hintergrund anpassen.     
 
-### <a name="theme-color"></a>Farbdesign
+### <a name="theme-color-and-logo-in-the-company-portal"></a>Farbdesign und Logo im Unternehmensportal
 Wenden Sie ein Farbdesign auf das Unternehmensportal an. Wählen Sie eine Standardfarbe aus, oder geben Sie einen sechsstelligen Hexadezimalcode ein, um eine benutzerdefinierte Farbe festzulegen.
 
 |Feldname|Weitere Informationen|
 |---|---|
-|**Farbtyp**| Wählen Sie ein Farbdesign aus, das auf das Unternehmensportal angewendet werden soll. Sie können aus einer Standardfarbe auswählen oder einen bestimmten Hexadezimalcode angeben. |
-|**Farbe auswählen** oder **Code für Hexadezimalfarbe**| Wählen Sie ein Farbdesign aus, das auf das Unternehmensportal angewendet werden soll. Sie können aus einer Standardfarbe auswählen oder einen bestimmten Hexadezimalcode angeben. Diese Optionen werden auf Grundlage des von Ihnen ausgewählten **Farbtyps** bereitgestellt.  |
+|**Select a standard color or enter a six-digit hex code** (Standardfarbe auswählen oder sechsstelligen Hexadezimalcode eingeben)| Wählen Sie **Standard** aus, um eine angezeigte Farbe auszuwählen. Wählen Sie **Benutzerdefiniert** aus, um eine bestimmte Farbe anhand eines Hexadezimalcodes auszuwählen.|
+|**Choose theme color** (Farbdesign auswählen)| Wählen Sie ein Farbdesign aus, das auf das Unternehmensportal angewendet werden soll. Sie können aus einer Standardfarbe auswählen oder einen bestimmten Hexadezimalcode angeben. |
+|**Anzeige**| Wählen Sie aus, ob **Unternehmenslogo und -name**, **nur das Unternehmenslogo** oder **nur der Unternehmensname** angezeigt werden soll. |
+|**Upload your company logo** (Firmenlogo hochladen)|Sie können Ihr Unternehmenslogo hochladen, damit es im Unternehmensportal angezeigt wird. Beachten Sie, dass die Textfarbe automatisch auf die Option mit dem höchsten Kontrast festgelegt wird. Für die optimale Darstellung laden Sie ein Logo mit transparentem Hintergrund hoch.<p><ul><li>Maximale Bildgröße: 400 px × 400 px</li><li>Maximale Dateigröße: 750 KB</li><li>Dateityp: PNG, JPG oder JPEG</li></ul>|
 
-### <a name="company-logo"></a>Firmenlogo
-Laden Sie Ihr Firmenlogo hoch, damit es auf der Intune-Benutzeroberfläche angezeigt wird.
+Nachdem Sie das Logo hochgeladen haben, wird das Logo mit dem Farbdesign im Vorschaubereich angezeigt. Wenn Sie den Unternehmensnamen anzeigen möchten, wird dieser in schwarz oder weiß im Unternehmensportal angezeigt. Die Farbe wird anhand des höchsten Kontrasts zur Designfarbe automatisch ausgewählt. Der Unternehmensname wird nicht im Vorschaubereich angezeigt. 
+
+### <a name="logo-to-use-on-white-or-light-backgrounds"></a>Logo für die Verwendung auf weißen oder hellen Hintergründen
+Wählen Sie ein Logo aus, das auf weißen oder hellen Hintergründen am besten aussieht.
 
 |Feldname|Weitere Informationen|
 |---|---|
-|**Firmenlogo anzeigen**|Wenn Sie diese Option aktivieren, können Sie Ihr Firmenlogo hochladen. Dieses wird dann im Unternehmensportal angezeigt. Sie können zwei Logos hochladen: ein Logo, das angezeigt wird, wenn der Hintergrund des Unternehmensportals weiß ist, und eines, das angezeigt wird, wenn für den Hintergrund des Unternehmensportals das von Ihnen ausgewählte Farbdesign verwendet wird. |
-|**Upload a logo to use on theme color backgrounds** (Ein Logo für die Verwendung auf Hintergründen in der Designfarbe hochladen)| Diese Option ist verfügbar, wenn Sie ausgewählt haben, dass das Firmenlogo angezeigt werden soll. Die Logodateien müssen PNG- oder JPG-Dateien sein. Ihre Auflösung darf maximal 400×400 Pixel betragen, und die Größe darf 750 KB nicht überschreiten. |
-|**Upload logo to use on light backgrounds** (Logo für die Verwendung auf hellen Hintergründen hochladen)| Diese Option ist verfügbar, wenn Sie ausgewählt haben, dass das Firmenlogo angezeigt werden soll. Die Logodateien müssen PNG- oder JPG-Dateien sein. Ihre Auflösung darf maximal 400×400 Pixel betragen, und die Größe darf 750 KB nicht überschreiten. |
-|**Show company name next to logo** (Firmenname neben Logo anzeigen)| Wählen Sie diese Option aus, um den eingegebenen Firmennamen neben dem hochgeladenen Logo anzuzeigen. |
+|**Upload your logo** (Logo hochladen)| Diese Option ist verfügbar, wenn Sie ausgewählt haben, dass das Firmenlogo angezeigt werden soll. Für die optimale Darstellung laden Sie ein Logo mit transparentem Hintergrund hoch.<p><ul><li>Maximale Bildgröße: 400 px × 400 px</li><li>Maximale Dateigröße: 750 KB</li><li>Dateityp: PNG, JPG oder JPEG</li></ul>|
 
-Nachdem Sie Ihre Änderungen gespeichert haben, können Sie im oberen Bereich des Blatts **Preview your settings in the Intune Web Portal** (Vorschau Ihrer Einstellungen im Intune-Webportal anzeigen) aktivieren, um Ihre Konfiguration zu überprüfen.
+### <a name="brand-image-for-company-portal"></a>Markenbild für das Unternehmensportal
+
+Zeigen Sie ein Markenbild an, das Ihre Unternehmensmarke widerspiegelt. Die Unterstützung für Markenbilder wird den Unternehmensportal-Apps hinzugefügt, jedoch sind sie möglicherweise nicht auf allen Plattformen sichtbar.
+
+|Feldname|Weitere Informationen|
+|---|---|
+|**Upload your brand image** (Markenbild hochladen)| Mit dieser Option können Sie ein Hintergrundbild auf der Benutzerprofilseite in der Unternehmensportal-App anzeigen.<p><ul><li>Empfohlene Bildbreite: Breiter als 1125 px, aber nicht weniger als 640 px</li><li>Maximale Bildgröße: 1,3 MB</li><li>Dateityp: PNG, JPG oder JPEG</li></ul>|
+
+Mit einem richtigen Markenbild kann das Vertrauen von Benutzern in das Unternehmensportal gesteigert werden, indem die Identität des Unternehmens aussagekräftig dargestellt wird. Im Folgenden finden Sie einige Tipps, die Sie beim Erwerben, Auswählen und Optimieren des Bilds für das Unternehmensportal beachten sollten. 
+
+- Wenden Sie sich an Ihre Marketing- oder Designabteilung. Möglicherweise verfügen sie bereits über zulässige Markenbilder. Eventuell können sie Sie bei Bedarf auch beim Optimieren der Bilder unterstützen. 
+
+- Beachten Sie die Komposition sowohl im Querformat als auch im Hochformat. Das Bild sollte ausreichend Hintergrundfläche um den Fokus herum aufweisen. Das Bild wird möglicherweise je nach Größe und Ausrichtung des Geräts anders zugeschnitten. 
+
+- Vermeiden Sie typische Archivbilder. Das Bild sollte die Marke Ihres Unternehmens widerspiegeln und für Benutzer vertraut wirken. Wenn Sie keines besitzen, ist es besser, keines zu verwenden, anstatt ein allgemeines Bild zu nutzen, das keine Bedeutung für Ihre Benutzer hat. 
+
+- Entfernen Sie unnötige Metadaten. Bilddateien können Metadaten enthalten, z.B. das Kameraprofil, der geografische Standort, Titel, Beschreibung usw. Verwenden Sie ein Bildbearbeitungstool, um diese Informationen zu entfernen, die Qualität beizubehalten und die maximale Dateigröße einzuhalten. 
+
+Nachdem Sie Ihre Änderungen gespeichert haben, können Sie im Intune-Webportal im oberen Bereich des Blatts auf **Preview your settings** (Vorschau Ihrer Einstellungen) klicken, um Ihre Konfiguration zu überprüfen. Beachten Sie, dass Sie das Markenbild nur auf einem iOS-Gerät in der Vorschau anzeigen können und nicht im Intune-Webportal. 
+
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Tastenkombinationen für die Windows-Unternehmensportal-App
 

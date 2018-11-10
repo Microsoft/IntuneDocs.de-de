@@ -1,34 +1,30 @@
 ---
-title: Konfigurieren von E-Mail-Einstellungen in Microsoft Intune
+title: Konfigurieren von E-Mail-Einstellungen in Microsoft Intune – Azure | Microsoft-Dokumentation
 titleSuffix: ''
-description: In diesem Artikel erfahren Sie, wie Sie Microsoft Intune konfigurieren, um Verbindungen mit Unternehmens-E-Mail-Diensten auf Geräten, die Sie verwalten, herzustellen.
+description: Erstellen Sie ein E-Mail-Profil in Microsoft Intune, und stellen Sie dieses Profil auf Android Enterprise-, iOS- und Windows-Geräten bereit. Verwenden Sie ein E-Mail-Profil, um allgemeine E-Mail-Einstellungen zu konfigurieren, einschließlich eines E-Mail-Servers und der Authentifizierungsmethode für die Verbindungsherstellung mit Unternehmens-E-Mails auf von Ihnen verwalteten Geräten.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15710f6115bb23dfe9ba899dfa01b38f315d00f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 41f16cf0dacc059546a09145a0c241f7c2a4a076
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905307"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236321"
 ---
-# <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Konfigurieren von E-Mail-Einstellungen in Microsoft Intune
+# <a name="add-email-settings-to-devices-using-intune"></a>Hinzufügen von E-Mail-Einstellungen für Geräte mit Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Microsoft Intune umfasst verschiedene E-Mail-Einstellungen, die Sie für Geräte in Ihrer Organisation bereitstellen können. Ein IT-Administrator kann E-Mail-Profile mit spezifischen Einstellungen für die Verbindungsherstellung mit einem E-Mail-Server – z.B. Office 365 und Gmail – erstellen. Benutzer können anschließend über ihre mobilen Geräte eine Verbindung mit ihren Organisations-E-Mail-Konten herstellen, sich authentifizieren und eine Synchronisierung durchführen. Durch das Erstellen und Bereitstellen eines E-Mail-Profils können Sie sicherstellen, dass geräteübergreifend Standardeinstellungen verwendet werden. Außerdem kann dies die Anzahl von Anrufen beim Support durch Benutzer verringern, die nicht die richtigen E-Mail-Einstellungen kennen.
 
-Mit E-Mail-Profilen können Sie Einstellungen, die zum Herstellen von Verbindungen und zum Synchronisieren mit Unternehmens-E-Mails erforderlich sind, für von Ihnen verwaltete Geräte konfigurieren. Damit können Sie sicherzustellen, dass die Einstellungen für alle Ihre Geräte einheitlich sind. Außerdem reduzieren Sie damit Supportanfragen von Endbenutzern, die nicht die richtigen E-Mail-Einstellungen kennen.
-
-Der integrierte E-Mail-Client wird auf den meisten Plattformen unterstützt. Die meisten E-Mail-Apps von Drittanbietern werden derzeit nicht unterstützt.
-
-Sie können E-Mail-Profile verwenden, um den systemeigenen E-Mail-Client auf den folgenden Gerätetypen zu konfigurieren:
+Sie können E-Mail-Profile verwenden, um die integrierten E-Mail-Einstellungen auf den folgenden Geräten zu konfigurieren:
 
 - Android Samsung KNOX Standard 4.0 und höher
 - Android-Arbeitsprofilgeräten
@@ -36,17 +32,15 @@ Sie können E-Mail-Profile verwenden, um den systemeigenen E-Mail-Client auf den
 - Windows Phone 8.1 und höher
 - Windows 10 (Desktop) und Windows 10 Mobile
 
-Anhand der Informationen in diesem Artikel lernen Sie die Grundlagen zum Konfigurieren von E-Mail-Profilen kennen. In den weiterführenden Themen zu den einzelnen Plattformen erfahren Sie etwas über Besonderheiten der jeweiligen Geräte.
+Dieser Artikel zeigt, wie Sie ein E-Mail-Profil in Microsoft Intune erstellen. Außerdem werden Links zu verschiedenen Plattformen mit Informationen zu spezifischeren Einstellungen bereitgestellt.
 
-## <a name="create-a-device-profile-containing-email-settings"></a>Erstellen eines Geräteprofils mit E-Mail-Einstellungen
+## <a name="create-a-device-profile"></a>Erstellen eines Geräteprofils
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
-2. Klicken Sie im Bereich **Gerätekonfiguration** im Abschnitt **Verwalten** auf **Profile**.
-3. Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
-4. Geben Sie auf der Seite **Profil erstellen** einen **Namen** und eine **Beschreibung** für das E-Mail-Profil ein.
-5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die Sie E-Mail-Einstellungen anwenden möchten. Derzeit können Sie eine der folgenden Plattformen für die E-Mail-Geräteeinstellungen auswählen:
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
+2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+3. Geben Sie **Name** und **Beschreibung** für das E-Mail-Profil ein.
+4. Wählen Sie in der Dropdownliste Ihre **Plattform** aus. Folgende Optionen sind verfügbar:
+
     - **Android** (nur Samsung Android KNOX Standard)
     - **Android Enterprise**
     - **iOS**
@@ -54,43 +48,50 @@ Anhand der Informationen in diesem Artikel lernen Sie die Grundlagen zum Konfigu
     - **Windows Phone 8.1**
     - **Windows 8.1 und höher**
     - **Windows 10 und höher**
-6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **E-Mail** aus.
-7. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. In den folgenden Themen finden Sie ausführliche Informationen zu den Einstellungen für die einzelnen Plattformen:
+
+5. Wählen Sie in der Dropdownliste **Profiltyp** die Option **E-Mail** aus.
+6. Die Einstellungen, die Sie konfigurieren können, richten sich nach der verwendeten Plattform. Wählen Sie für spezifische Einstellungen Ihre Plattform aus:
+
     - [Android-Arbeitsprofil- und Samsung KNOX Standardeinstellungen](email-settings-android.md)
     - [Einstellungen für iOS](email-settings-ios.md)
     - [Einstellungen für Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Einstellungen für Windows 10](email-settings-windows-10.md)
-8. Wechseln Sie anschließend wieder zum Bereich **Profil erstellen**, und klicken Sie auf **Erstellen**.
 
-Das Profil wird erstellt und im Bereich „Profilliste“ angezeigt.
-Wenn Sie fortfahren und dieses Profil Gruppen zuweisen möchten, lesen Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md) nach.
+Nachdem Sie Ihre Einstellungen eingegeben und das Profil erstellt haben, wird das Profil in der Liste angezeigt. Im nächsten Schritt [weisen Sie dieses Profil nun einigen Gruppen zu](device-profile-assign.md).
 
-## <a name="further-information"></a>Weitere Informationen
+## <a name="remove-an-email-profile"></a>Entfernen eines E-Mail-Profils
 
-### <a name="remove-an-email-profile"></a>Entfernen eines E-Mail-Profils
+E-Mail-Profile werden Gerätegruppen und nicht Benutzergruppen zugewiesen. Es gibt verschiedene Möglichkeiten, ein E-Mail-Profil von einem Gerät zu entfernen, auch wenn nur ein E-Mail-Profil vorhanden ist:
 
-Wenn Sie ein E-Mail-Profil von einem Gerät entfernen möchten, bearbeiten Sie die Zuweisung, und entfernen Sie alle Gruppen, in denen das Gerät Mitglied ist. Sie können ein E-Mail-Profil nur dann auf diese Weise entfernen, wenn es nicht das einzige E-Mail-Profil auf dem Gerät ist.
+- **Option 1:** Öffnen Sie das E-Mail-Profil (**Gerätekonfiguration** > **Profile**), und klicken Sie auf **Zuweisungen**. Auf der Registerkarte **Einschließen** werden die Gruppen angezeigt, denen das Profil zugewiesen ist. Klicken Sie mit der rechten Maustaste auf die Gruppe, und wählen Sie dann **Entfernen**. Klicken Sie auf **Speichern**, um die Änderungen zu speichern.
 
-### <a name="securing-email-access"></a>Schützen des E-Mail-Zugriffs
+- **Option 2:** [Setzen Sie das Gerät zurück, oder nehmen Sie es außer Betrieb.](devices-wipe.md) Mit diesen Optionen können Sie einige oder alle Daten und Einstellungen entfernen.
 
-E-Mail-Profile können mit einer von zwei Methoden geschützt werden:
+## <a name="secure-email-access"></a>Sicherer E-Mail-Zugriff
 
-1. **Zertifikate:** Beim Erstellen des E-Mail-Profils wählen Sie ein Zertifikatprofil aus, das Sie zuvor in Intune erstellt haben. Dieses wird als Identitätszertifikat bezeichnet und dient zur Authentifizierung anhand eines vertrauenswürdigen Zertifikatprofils (oder eines Stammzertifikats), mit dem überprüft wird, ob das Gerät des Benutzers eine Verbindung herstellen darf. Das vertrauenswürdige Zertifikat wird auf dem Computer zugewiesen, der die E-Mail-Verbindung authentifiziert. In der Regel ist dies der native Mailserver.
-Weitere Informationen zum Erstellen und Verwenden von Zertifikatprofilen in Intune finden Sie unter [Konfigurieren von Zertifikaten mit Intune](certificates-configure.md).
-2. **Benutzername und Kennwort:** Der Benutzer authentifiziert sich beim nativen Mailserver durch Angabe seines Benutzernamens und Kennworts.
-Das Kennwort ist nicht im E-Mail-Profil enthalten, sodass der Benutzer dieses beim Herstellen einer Verbindung mit dem E-Mail-System bereitstellen muss.
+E-Mail-Profile können mit einer dieser Optionen geschützt werden:
 
+- **Zertifikate**: Beim Erstellen des E-Mail-Profils wählen Sie ein Zertifikatprofil aus, das Sie zuvor in Intune erstellt haben. Dieses Zertifikat wird als Identitätszertifikat bezeichnet. Es dient zur Authentifizierung anhand eines vertrauenswürdigen Zertifikatprofils oder eines Stammzertifikats, um zu bestätigen, dass das Gerät des Benutzers eine Verbindung herstellen darf. Das vertrauenswürdige Zertifikat wird dem Computer zugewiesen, der die E-Mail-Verbindung authentifiziert. Dies ist in der Regel der native E-Mail-Server.
 
-### <a name="how-intune-handles-existing-email-accounts"></a>Behandlung vorhandener E-Mail-Konten in Intune
+  Weitere Informationen zum Erstellen und Verwenden von Zertifikatprofilen in Intune finden Sie unter [Konfigurieren von Zertifikaten mit Intune](certificates-configure.md).
 
-Wenn für den Benutzer bereits ein E-Mail-Konto konfiguriert wurde, hängt das Ergebnis der Zuweisung eines Intune-E-Mail-Profils von der Geräteplattform ab:
+- **Benutzername und Kennwort**: Der Benutzer authentifiziert sich beim nativen Mailserver durch Eingabe eines Benutzernamens und Kennworts. Das Kennwort ist nicht im E-Mail-Profil enthalten. Deshalb muss der Benutzer das Kennwort eingeben, wenn eine Verbindung mit dem E-Mail-Postfach hergestellt wird.
 
-- **iOS:** Basierend auf dem Hostnamen und der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt. Das doppelte E-Mail-Profil verhindert die Zuweisung eines Intune-Profils. In diesem Fall informiert das Unternehmensportal den Benutzer über die fehlende Konformität fordert ihn auf, das manuell konfigurierte E-Mail-Profil zu entfernen. Weisen Sie Ihre Benutzer an, sich vor der Installation eines E-Mail-Profils zu registrieren und die Einrichtung des Profils durch Intune zuzulassen, um das Problem zu vermeiden.
+## <a name="how-intune-handles-existing-email-accounts"></a>Behandlung vorhandener E-Mail-Konten in Intune
+
+Wenn der Benutzer bereits ein E-Mail-Konto konfiguriert hat, wird das E-Mail-Profil je nach Plattform unterschiedlich zugewiesen.
+
+- **iOS**: Basierend auf dem Hostnamen und der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt. Das doppelte E-Mail-Profil verhindert die Zuweisung eines Intune-Profils. In diesem Fall benachrichtigt das Unternehmensportal den Benutzer über die fehlende Konformität und fordert ihn auf, das konfigurierte E-Mail-Profil manuell zu entfernen. Weisen Sie Ihre Benutzer an, sich *vor* der Installation eines E-Mail-Profils zu registrieren und die Einrichtung des Profils durch Intune zuzulassen, um dieses Szenario zu vermeiden.
+
 - **Windows:** Basierend auf dem Hostnamen und der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt. Intune überschreibt das vorhandene vom Benutzer erstellte E-Mail-Profil.
-- **Android Samsung KNOX Standard**: Basierend auf der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt und mit dem Intune-Profil überschrieben.
-Da Android zum Identifizieren des Profils keinen Hostnamen verwendet, wird davon abgeraten, mehrere E-Mail-Profile für die Verwendung unter derselben E-Mail-Adresse auf unterschiedlichen Hosts zu erstellen, da sie sich gegenseitig überschreiben.
-- **Android-Arbeitsprofile:** Intune stellt zwei Android-Arbeitsprofil-E-Mail-Profile bereit: eines für die E-Mail-App Gmail und eines für die E-Mail-App Nine Work. Diese Apps können im Google Play Store heruntergeladen werden; sie installieren ein Arbeitsprofil auf dem Gerät, sodass keine doppelten Profile erstellt werden. Beide Apps unterstützen Verbindungen mit Exchange. Stellen Sie auf den Geräten der Benutzer eine dieser E-Mail-Apps bereit, erstellen Sie das entsprechende Profil, und stellen Sie das entsprechende E-Mail-Profil bereit, um die E-Mail-Konnektivität zu ermöglichen. E-Mail-Apps, z.B. Nine Work, können möglicherweise kostenpflichtig sein. Lesen Sie die Lizenzierungsdetails der App oder kontaktieren Sie das Unternehmen, das die App bereitstellt, um Fragen zu stellen.
 
-### <a name="update-an-email-profile"></a>Aktualisieren eines E-Mail-Profils
+- **Android Samsung KNOX Standard**: Basierend auf der E-Mail-Adresse wird ein vorhandenes doppeltes E-Mail-Profil erkannt und mit dem Intune-Profil überschrieben. Android identifiziert das Profil nicht anhand des Hostnamens. Erstellen Sie nicht mehrere E-Mail-Profile mit derselben E-Mail-Adresse auf verschiedenen Hosts. Die Profile überschreiben sich gegenseitig.
+
+- **Android-Arbeitsprofile**: Intune stellt zwei Android-E-Mail-Arbeitsprofile bereit: eines für die E-Mail-App Gmail und eines für die E-Mail-App Nine Work. Diese Apps sind im Google Play Store erhältlich und können im Arbeitsprofil des Geräts installiert werden. Diese Apps erstellen keine doppelten Profile. Beide Apps unterstützen Verbindungen mit Exchange. Zur Verwendung der E-Mail-Konnektivität stellen Sie eine dieser E-Mail-Apps für die Benutzergeräte bereit. Erstellen Sie anschließend das geeignete E-Mail-Profil, und stellen Sie es bereit. E-Mail-Apps wie z.B. Nine Work sind möglicherweise nicht kostenlos. Lesen Sie die Lizenzierungsdetails der App, oder kontaktieren Sie bei Fragen das Unternehmen, das die App bereitstellt.
+
+## <a name="changes-to-assigned-email-profiles"></a>Änderungen an zugewiesenen E-Mail-Profilen
 
 Wenn Sie ein zuvor zugewiesenes E-Mail-Profil ändern, werden Endbenutzer möglicherweise in einer Meldung aufgefordert, die Neukonfiguration ihrer E-Mail-Einstellungen zu genehmigen.
+
+## <a name="next-steps"></a>Nächste Schritte
+Das Profil ist nun erstellt, führt aber noch keine Aktionen durch. Im nächsten Schritt können Sie [das Profil einigen Geräten zuweisen](device-profile-assign.md).

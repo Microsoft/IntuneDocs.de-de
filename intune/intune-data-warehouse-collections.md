@@ -15,12 +15,12 @@ ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 4df55309587ac079cfeaec299d70635b090e300b
-ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
+ms.openlocfilehash: e54b35d677d34067bfbd0ad6aad86e3dfe17fb90
+ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "43821626"
+ms.lasthandoff: 11/03/2018
+ms.locfileid: "50971481"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune Data Warehouse-Sammlungen
 
@@ -158,7 +158,7 @@ Die Entität **DeviceConfigurationProfileDeviceActivity** listet die Anzahl der 
 
 |  Eigenschaft |                                          Beschreibung                                          |  Beispiel |
 |:---------:|:---------------------------------------------------------------------------------------------:|:--------:|
-| DateKey   | Datumsschlüssel für den Zeitpunkt, als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde. | 20160703 |
+| DateKey   | Datumsschlüssel für den Zeitpunkt, zu dem das Einchecken des Gerätekonfigurationsprofils im Data Warehouse aufgezeichnet wurde. | 20160703 |
 | Pending   | Anzahl eindeutiger Geräte im Zustand „ausstehend“                                                    | 123      |
 | Succeeded | Anzahl eindeutiger Geräte im Zustand „erfolgreich“                                                    | 12       |
 | Fehler     | Anzahl eindeutiger Geräte im Zustand „Fehler“                                                      | 10       |
@@ -499,7 +499,7 @@ Eine **termsAndConditions**-Entität stellt Metadaten und Inhalt einer bestimmte
 |    description    |    Die Beschreibung dieser Geschäftsbedingungen.     |         |
 |    title    |    Der Titel dieser Geschäftsbedingungen.     |    Unternehmensrichtlinie zur Geräteverwaltung        |
 |    summaryOfTerms    |    Die Zusammenfassung der Nutzungsbedingungen, die dem Benutzer übergeben wird.     |    Ich stimme den Geschäftsbedingungen zu.    |
-|    termsAndConditionsBodyText    |    Der Text dieser Geschäftsbedingungen.       |    * Geräteverschlüsselung   * Durchsetzung einer 6-stelligen PIN    |
+|    termsAndConditionsBodyText    |    Der Text dieser Geschäftsbedingungen.       |    *Geräteverschlüsselung:* Durchsetzung einer 6-stelligen PIN    |
 |    isDeleted    |    „True“ oder „False“, je nachdem, ob dieser Wert gelöscht ist.     |    False    |
 |    startDateInclusiveUTC    |    Das Startdatum dieser Geschäftsbedingungen.     |    23.8.2018 4:01:34 Uhr    |
 |    endDateEclusiveUTC    |    Das Enddatum dieser Geschäftsbedingungen.     |    31.12.9999 0:00:00 Uhr    |

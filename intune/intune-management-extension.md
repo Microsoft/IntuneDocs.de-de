@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2018
+ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eb7d8b35cb88223a3fbfa45e0ad8e2f8d2852a96
-ms.sourcegitcommit: ab801d715aa26f6d97f1a0c42a07e55146a14e6f
+ms.openlocfilehash: ad8e874dda47b7c6deeb614b0f893f7c922241ce
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35289022"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236338"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Verwalten von PowerShell-Skripts in Intune für Windows 10-Geräte
-Durch die Verwaltungserweiterung von Intune können Sie PowerShell-Skripts in Intune für die Ausführung auf Windows 10-Geräten hochladen. Die Verwaltungserweiterungen ergänzt Funktionen für die mobile Geräteverwaltung (mobile device management, MDM) von Windows 10 und erleichtert Ihnen den Wechsel zu einer modernen Verwaltung.
+Durch die Verwaltungserweiterung von Intune können Sie PowerShell-Skripts in Intune für die Ausführung auf Windows 10-Geräten hochladen. Die Verwaltungserweiterungen ergänzt Funktionen für die mobile Geräteverwaltung (Mobile Device Management, MDM) von Windows 10 und erleichtert Ihnen den Wechsel zu einer modernen Verwaltung.
 
 ## <a name="moving-to-modern-management"></a>Wechsel zu moderner Verwaltung
 Die individuelle Datenverarbeitung durchläuft eine digitale Transformation. Die klassische, traditionelle IT konzentriert sich auf eine einzelne Geräteplattform, unternehmenseigene Geräte, Benutzer, die vom Büro aus arbeiten und eine Vielzahl von manuellen, reaktiven IT-Prozessen. Der moderne Arbeitsplatz ermöglicht jedoch mehrere Geräteplattformen, die sowohl benutzer- als auch unternehmenseigen sind. Dadurch können Benutzer von überall aus arbeiten, und automatisierte und proaktive IT-Prozesse werden ermöglicht. 
@@ -33,7 +33,7 @@ Die Intune-Verwaltungserweiterung ergänzt die integrierten MDM-Funktionen für 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlich:
-- Geräte müssen mit Azure AD verknüpft sein. Dies schließt keine verknüpften Hybrid-AD-Geräte ein.
+- Geräte müssen mit Azure AD verknüpft sein. Die Intune-Verwaltungserweiterung unterstützt Geräte, die in Azure Active Directory und hybride Domänen eingebunden sind, sowie gemeinsam verwaltete registrierte Windows-Geräte.
 - Geräte müssen Windows 10, Version 1607, oder höher ausführen.
 - Die automatische MDM-Registrierung muss [in Azure AD aktiviert sein](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment), und Geräte müssen automatisch in Intune registriert werden.
 
@@ -56,7 +56,8 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
 
 > [!NOTE]
 > - PowerShell-Skripts können nicht auf Computergruppen angewendet werden.
-> - PowerShell-Skripts werden nur auf Geräten ausgeführt, wenn ein Azure Active Directory-Benutzer am Gerät angemeldet ist.
+> - Endbenutzer müssen nicht beim Gerät angemeldet sein, um PowerShell-Skripts auszuführen. 
+> - PowerShell-Skripts in Intune können auf AAD-Gerätesicherheitsgruppen ausgerichtet werden.
 
 Die Intune-Verwaltungserweiterung wird einmal pro Stunde mit Intune synchronisiert. Nachdem Sie die Richtlinie den Azure AD-Gruppen zugewiesen haben, wird das PowerShell-Skript ausgeführt, und die Ausführungsergebnisse werden berichtet. 
  

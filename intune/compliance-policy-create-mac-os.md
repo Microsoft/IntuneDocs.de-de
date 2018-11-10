@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: a0d9d0ac3c0cd8804ffc401cd3041d5b9a17e64f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321440"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236406"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für macOS-Geräte in Intune
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Eine Intune-Konformitätsrichtlinie für macOS-Geräte gibt die Regeln und Einstellungen an, die macOS-Geräte erfüllen müssen, um konform zu sein. Wenn Sie Richtlinien für den bedingten Zugriff verwenden, können Sie den Zugriff auf Unternehmensressourcen zulassen oder blockieren. Außerdem können Sie Geräteberichte abrufen und bei Nichtkonformität Aktionen durchführen. Gerätekonformitätsrichtlinien können für sämtliche Plattformen im Intune Azure-Portal erstellt werden. Weitere Informationen über Konformitätsrichtlinien und alle Voraussetzungen finden Sie unter [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md).
 
@@ -90,6 +88,17 @@ Die Firewall schützt Geräte vor nicht autorisierten Netzwerkzugriffen. Mit die
 - **Firewall**: **Aktivieren** Sie diese, um Geräte vor nicht autorisierten Zugriffen zu schützen. Wenn Sie dieses Feature aktivieren, können Sie eingehende Internetverbindungen verarbeiten und den geschützten Modus verwenden. Durch die Standardeinstellung **Nicht konfiguriert** bleibt die Firewall deaktiviert, und Netzwerkdatenverkehr wird zugelassen (also nicht blockiert).
 - **Eingehende Verbindungen**: Mit der Einstellung **Blockieren** werden eingehende Verbindungen für grundlegende Internetdienste wie DHCP, Bonjour und IPSec zugelassen. Alle anderen eingehenden Verbindungen werden gesperrt. Durch diese Einstellung werden auch alle Freigabedienste einschließlich der Bildschirmfreigabe, des Remotezugriffs und der Freigabe von Musik über iTunes gesperrt. Durch die Standardeinstellung **Nicht konfiguriert** werden eingehende Verbindungen und Freigabedienste zugelassen. 
 - **Geschützter Modus**: **Aktivieren** Sie diesen, damit das Gerät nicht auf Suchanforderungen von böswilligen Benutzern reagiert. Wenn diese Einstellung aktiviert ist, antwortet das Gerät weiterhin auf eingehende Anforderungen für autorisierte Apps. Wenn die Standardeinstellung **Nicht konfiguriert** aktiviert ist, bleibt der geschützte Modus deaktiviert.
+
+### <a name="gatekeeper"></a>Gatekeeper
+
+**Apps aus den folgenden Downloadquellen zulassen:** ermöglicht die Installation unterstützter Anwendungen, die von anderen Downloadquellen stammen, auf Ihren Geräten. Die folgenden Optionen sind verfügbar:
+
+- **Nicht konfiguriert:** Standard. Die Gatekeeper-Option hat keine Auswirkungen auf die Konformität. 
+- **Mac App Store:** installiert nur Apps aus dem Mac App Store. Apps, die von Drittanbietern oder festgelegten Entwicklern stammen, können nicht installiert werden. Wenn ein Benutzer auswählt, dass Gatekeeper Apps installiert, die nicht aus dem Mac App Store stammen, erfüllt das Gerät nicht die Konformitätsvorgaben.
+- **Mac App Store und festgelegte Entwickler:** installiert Apps aus dem Mac App Store und von festgelegten Entwicklern. macOS überprüft die Identität von Entwicklern und nimmt einige andere Überprüfungen vor, um die Integrität der App zu bestimmen. Wenn ein Benutzer auswählt, dass Gatekeeper Apps installiert, die nicht diesen Optionen entsprechen, erfüllt das Gerät nicht die Konformitätsvorgaben.
+- **Anywhere** (Beliebig): Apps aus jeder beliebigen Quelle und von jedem beliebigen Entwickler können installiert werden. Dies ist die am wenigsten sichere Option.
+
+Weitere Informationen finden Sie in der Apple-Dokumentation unter [Gatekeeper on macOS (Gatekeeper unter macOS)](https://support.apple.com/HT202491).
 
 ## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen
 

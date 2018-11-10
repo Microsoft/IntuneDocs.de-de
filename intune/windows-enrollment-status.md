@@ -15,36 +15,50 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5460db2d646d8bd417baa50d8188acbf69a251d
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 08d76d6b76ee7838633435ae095c171e0a3cdf8e
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827988"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236491"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Einrichten einer Statusseite für die Registrierung
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-Bei der Geräteeinrichtung werden auf der Statusseite für die Registrierung Installationsinformationen zum Gerät angezeigt. Einige Anwendungen, Profile und Zertifikate sind möglicherweise noch nicht vollständig installiert, nachdem die Registrierung des Benutzers abgeschlossen wurde. Mithilfe der Statusseite können Benutzer besser den Status Ihres Geräts während und nach der Registrierung nachvollziehen. Sie können die Statusseite für alle Ihre Benutzer aktivieren oder Profile für bestimmte Benutzergruppen erstellen.  Sie haben die Möglichkeit, Profile so einzustellen, dass sie den Fortschritt der Installation anzeigen, die Nutzung bis zum Abschluss der Installation blockieren, ein Zurücksetzen zulassen usw.
+Bei der Geräteeinrichtung werden auf der Statusseite für die Registrierung Installationsinformationen zum Gerät angezeigt. Einige Anwendungen, Profile und Zertifikate sind möglicherweise noch nicht installiert, wenn ein Benutzer die Standardregistrierung abschließt und sich am Gerät anmeldet. Mithilfe einer Registrierungsstatusseite können Benutzer den Status Ihres Geräts während der Geräteeinrichtung besser nachvollziehen. Sie können mehrere Profile für Registrierungsstatusseiten erstellen und auf verschiedene Gruppen anwenden. Folgendes kann für Profile festgelegt werden:
+- Installationsstatus anzeigen
+- Nutzung blockieren, bis die Installation abgeschlossen ist
+- Angeben, wie ein Benutzer vorgehen kann, wenn die Geräteeinrichtung fehlschlägt.
+
+Außerdem können Sie die Reihenfolge anhand der Priorität der Profile festlegen, um Konflikte durch Profilzuweisungen zum gleichen Benutzer oder Gerät zu vermeiden.
+
  
 ## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>Aktivieren der standardmäßigen Statusseite für die Registrierung für alle Benutzer
 
-Führen Sie die folgenden Schritte aus, um die Statusseite für die Registrierung für alle Endbenutzer zu aktivieren.
+Führen Sie die folgenden Schritte aus, um die Registrierungsstatusseite zu aktivieren.
  
-1.  Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Geräteregistrierung** > **Windows-Registrierung** > **Seite zum Registrierungsstatus (Vorschau)**.
-2.  Klicken Sie auf dem Blatt **Seite zum Registrierungsstatus** auf **Standard** > **Einstellungen**.
-3.  Klicken Sie für **Show app and profile installation progress** (Installationsfortschritt für die App und das Profil anzeigen) auf **Ja**.
-4.  Wählen Sie die anderen Einstellungen aus, die Sie aktivieren wollen, und klicken Sie anschließend auf **Speichern**.
+1. Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Geräteregistrierung** > **Windows-Registrierung** > **Seite zum Registrierungsstatus (Vorschau)**.
+2. Klicken Sie auf dem Blatt **Seite zum Registrierungsstatus** auf **Standard** > **Einstellungen**.
+3. Klicken Sie für **Show app and profile installation progress** (Installationsfortschritt für die App und das Profil anzeigen) auf **Ja**.
+4. Wählen Sie die anderen Einstellungen aus, die Sie aktivieren wollen, und klicken Sie anschließend auf **Speichern**.
 
-## <a name="create-enrollment-status-page-profile-to-target-specific-users"></a>Erstellen eines Profils der Statusseite für die Registrierung mit Ausrichtung auf bestimmte Benutzer
+## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Erstellen eines Profils für Registrierungsstatusseiten und Zuweisen zu einer Gruppe
 
-1.  Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Geräteregistrierung** > **Windows-Registrierung** > **Seite zum Registrierungsstatus (Vorschau)** > **Profil erstellen**.
+1. Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Geräteregistrierung** > **Windows-Registrierung** > **Seite zum Registrierungsstatus (Vorschau)** > **Profil erstellen**.
 2. Geben Sie einen **Namen** und eine **Beschreibung** an.
 3. Wählen Sie **Erstellen** aus.
 4. Wählen Sie das neue Profil in der Liste der **Seite zum Registrierungsstatus** aus.
 5. Klicken Sie auf **Zuweisungen** > **Gruppen auswählen**. Wählen Sie dann die Gruppen aus, für die dieses Profil übernommen werden soll, und klicken Sie abschließend auf **Auswählen** > **Speichern**.
 6. Wählen Sie **Einstellungen** und dann die Einstellungen aus, die Sie auf dieses Profil anwenden möchten. Klicken Sie auf **Speichern** aus.
+
+## <a name="set-the-enrollment-status-page-priority"></a>Festlegen der Priorität von Registrierungsstatusseiten
+
+Ein Gerät oder Benutzer kann zu mehreren Gruppen gehören und über mehrere Profile für Registrierungsstatusseiten verfügen. Sie können die Priorität für jedes Profil festlegen, um solche Konflikte zu beheben. Wenn jemand über mehr als ein Profil für die Registrierungsstatusseite verfügt, wird nur das Profil mit der höchsten Priorität angewendet.
+
+1. Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Geräteregistrierung** > **Windows-Registrierung** > **Seite zum Registrierungsstatus (Vorschau)**.
+2. Zeigen Sie auf das Profil in der Liste.
+3. Ziehen Sie mithilfe der drei vertikalen Punkte das Profil an die gewünschte Position in der Liste.
 
 
 ## <a name="enrollment-status-page-tracking-information"></a>Statusseite für die Registrierung, auf der Informationen nachverfolgt werden
@@ -65,8 +79,9 @@ Für die Geräteeinrichtung werden die folgenden Elemente auf der Statusseite f�
     - Branchenspezifische MSI-Apps („pro Computer“)
     - Branchenspezifische Store-Apps mit dem Installationskontext „Gerät“
     - Branchenspezifische und Offline Store-Apps mit dem Installationskontext „Gerät“
-- Konnektivitätsprofile (VPN und WLAN) werden noch nicht nachverfolgt. Diese sind immer „0 von 0“.
-- Zertifikate werden noch nicht nachverfolgt. Diese sind immer „0 von 0“.
+- Konnektivitätsprofile
+    - VPN- oder WLAN-Profile, die **allen Geräten** oder einer Gerätegruppe zugewiesen sind, in der das zu registrierende Gerät ein Mitglied ist, jedoch nur für Autopilot-Geräte
+- Zertifikat-Profile, die **allen Geräten** oder einer Gerätegruppe zugewiesen sind, in der das zu registrierende Gerät ein Mitglied ist, jedoch nur für Autopilot-Geräte
 
 ### <a name="account-setup"></a>Kontoeinrichtung
 Für die Kontoeinrichtung werden auf der Statusseite für die Registrierung die folgenden Elemente angezeigt:
