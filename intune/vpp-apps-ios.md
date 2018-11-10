@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a5333f4e94db0b41b81dcb2589133956c040725
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: fc7aac337c01db3098be5f699db22c3a81c6eb75
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903504"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236610"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden
 
@@ -71,10 +71,9 @@ Bevor Sie beginnen, müssen Sie ein VPP-Token von Apple abrufen und es in Ihr In
 * Bevor Sie Apple VPP mit Intune starten, entfernen Sie alle vorhandenen, mit anderen Anbietern für das mobile Gerätemanagement erstellten VPP-Benutzerkonten. Aus Sicherheitsgründen synchronisiert Intune diese Benutzerkonten nicht. Intune synchronisiert nur Daten aus dem Apple VPP-Dienst, der von Intune erstellt wurde.
 * Intune unterstützt bis zu 256 VPP-Token.
 * Mit dem Device Enrollment Profile-Programm (DEP) von Apple wird die Registrierung für die mobile Geräteverwaltung automatisiert. Mit DEP können Sie Firmengeräte automatisch synchronisieren. Sie können sich für das DEP-Programm registrieren, indem Sie dasselbe Programm-Agent-Konto verwenden wie für VPP von Apple. Die ID des Deployment Program von Apple ist für alle Programme, die auf der [Apple Deployment Programs](https://deploy.apple.com)-Website aufgelistet werden, eindeutig und kann nicht zur Anmeldung bei Apple-Diensten wie dem iTunes Store verwendet werden.
-* Wenn Sie Benutzern oder Geräten mit einem Benutzerlizenzierungsmodell VPP-Apps (mit Benutzeraffinität) zuweisen, muss jeder Intune-Benutzer mit einer eindeutigen Apple-ID oder einer E-Mail-Adresse verknüpft sein, wenn er die allgemeinen Geschäftsbedingungen von Apple auf ihrem Gerät akzeptiert. Achten Sie beim Einrichten eines Geräts für einen neuen Intune-Benutzer darauf, dass Sie es mit der eindeutigen Apple-ID oder der E-Mail-Adresse des Benutzers konfigurieren. Die Apple-ID bzw. E-Mail-Adresse und der Intune-Benutzer sind ein eindeutiges Paar, das auf bis zu fünf Geräten verwendet werden kann.
-* Sie können ein VPP-Token nur mit einem Intune-Konto gleichzeitig verwenden. Verwenden Sie nicht das gleiche VPP-Token für mehrere Intune-Mandanten gleichzeitig.
 * Wenn Sie Benutzern oder Geräten mit einem Benutzerlizenzierungsmodell VPP-Apps (mit Benutzeraffinität) zuweisen, muss jeder Intune-Benutzer mit einer eindeutigen Apple-ID oder einer E-Mail-Adresse verknüpft sein, wenn er die allgemeinen Geschäftsbedingungen von Apple auf ihrem Gerät akzeptiert.
-Achten Sie beim Einrichten eines Geräts für einen Intune-Benutzer darauf, dass Sie es mit der eindeutigen Apple-ID oder der E-Mail-Adresse des Benutzers konfigurieren. Die Apple-ID oder E-Mail-Adresse und der Intune-Benutzer sind ein eindeutiges Paar, das auf bis zu fünf Geräten verwendet werden kann.
+* Achten Sie beim Einrichten eines Geräts für einen neuen Intune-Benutzer darauf, dass Sie es mit der eindeutigen Apple-ID oder der E-Mail-Adresse des Benutzers konfigurieren. Die Apple-ID bzw. E-Mail-Adresse und der Intune-Benutzer sind ein eindeutiges Paar, das auf bis zu fünf Geräten verwendet werden kann.
+* Sie können ein VPP-Token nur mit einem Intune-Konto gleichzeitig verwenden. Verwenden Sie nicht das gleiche VPP-Token für mehrere Intune-Mandanten gleichzeitig.
 
 >[!IMPORTANT]
 >Nachdem Sie den VPP-Token in Intune importiert haben, importieren Sie denselben Token in keine andere Geräteverwaltungslösung. Andernfalls kann dies zu einem Verlust von Lizenzzuweisung und Benutzerdatensätzen führen.
@@ -93,7 +92,7 @@ Achten Sie beim Einrichten eines Geräts für einen Intune-Benutzer darauf, dass
         > Wenn Sie das Land/die Region ändern, werden die Metadaten der App aktualisiert und die URL bei der nächsten Synchronisierung mit dem Apple-Dienst für Apps, die mit diesem Token erstellt wurden, gespeichert. Die App wird nicht aktualisiert, wenn sie in dem neuen regionalen Store nicht vorhanden ist.
 
     - **Typ des VPP-Kontos:** Wählen Sie **Unternehmen** oder **Bildungswesen** aus.
-    - **Automatische App-Updates**: Zur Aktivierung von automatischen Updates können Sie zwischen **On** und **Off** auswählen. Wenn diese Option aktiviert ist, erkennt Intune Updates für VPP-Apps in App Store und überträgt diese beim Geräte-Check-In automatisch mithilfe von Push auf das Gerät. Automatische App-Updates für Apple VPP-Apps aktualisieren nur die Apps automatisch, die mit der Installationsabsicht **Erforderlich** bereitgestellt wurden. Für Apps, die mit der Installationsabsicht **Verfügbar** bereitgestellt wurden, generiert das automatische Update eine Benachrichtigung für Sie (als Administrator), in der Sie darüber informiert werden, dass eine neue Version der App verfügbar ist. Der Benutzer muss auf „Installieren“ klicken, um die neuere Version der App zu installieren. Darüber hinaus wird dem Benutzer die App als nicht installiert im Unternehmensportal angezeigt, obwohl eine frühere Version der App installiert ist. In diesem Fall kann der Benutzer die App erneut installieren.
+    - **Automatische App-Updates**: Mit **On** (Ein) und **Off** (Aus) können Sie automatische Updates aktivieren oder deaktivieren. Wenn diese Option aktiviert ist, erkennt Intune Updates für VPP-Apps in App Store und überträgt diese beim Geräte-Check-In automatisch mithilfe von Push auf das Gerät. Automatische App-Updates für Apple VPP-Apps aktualisieren nur die Apps automatisch, die mit der Installationsabsicht **Erforderlich** bereitgestellt wurden. Für Apps, die mit der Installationsabsicht **Verfügbar** bereitgestellt wurden, generiert das automatische Update eine Benachrichtigung für Sie (als Administrator), in der Sie darüber informiert werden, dass eine neue Version der App verfügbar ist. Der Benutzer muss auf „Installieren“ klicken, um die neuere Version der App zu installieren. Darüber hinaus wird dem Benutzer die App als nicht installiert im Unternehmensportal angezeigt, obwohl eine frühere Version der App installiert ist. In diesem Fall kann der Benutzer die App erneut installieren.
     
         > [!NOTE]
         > Für iOS-Version 11.0 und höher können nun automatische App-Updates für Apps ausgeführt werden, die für Geräte und Benutzer lizenziert sind.

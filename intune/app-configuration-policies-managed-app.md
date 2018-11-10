@@ -15,12 +15,12 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c94357d90f89e77be03df0db9ba9e2d89836623b
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: 57de118c2e13182a0d26aa36d1dc5b1f7ea9c4e9
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799522"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136963"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Apps ohne Geräteregistrierung
 
@@ -39,7 +39,7 @@ Sie können App-Konfigurationsrichtlinien mit verwalteten Apps, die das Intune A
       Die Beschreibung des Profils, das im Azure-Portal angezeigt wird
     - **Geräteregistrierungstyp**  
       Klicken Sie auf **Apps verwalten**.
-6. Klicken Sie auf **Zugeordnete App**, um die App auszuwählen, die Sie konfigurieren möchten. Wählen Sie die App aus der Liste der Apps aus, die Sie genehmigt und mit Intune synchronisiert haben.
+6. Klicken Sie auf  **Zugeordnete App** , um die App auszuwählen, die Sie konfigurieren möchten. Wählen Sie die App aus der Liste der Apps aus, die Sie genehmigt und mit Intune synchronisiert haben.
 7. Geben Sie für jede von der App unterstützte Konfigurationseinstellung den **Namen** und den **Wert** ein, und wählen Sie die Auslassungspunkte (**…**) aus.  
     Wählen Sie zum Löschen einer Konfiguration die Auslassungspunkte (**...**) und dann auf **Löschen** aus.  
     
@@ -51,13 +51,13 @@ Intune kann bestimmte Token generieren und sie an die verwaltete Anwendung sende
 
 Intune unterstützt folgende Tokentypen in den Konfigurationseinstellungen. Andere benutzerdefinierte Schlüssel-Wert-Paare werden nicht unterstützt.
 
-- \{\{userPrincipalName\}\}: z.B.**John@contoso.com**
-- \{\{Mail\}\}: z.B.**John@contoso.com**
-- \{\{partialupn\}\}: z.B. **John**
-- \{\{accountid\}\}: z.B. **fc0dc142-71d8-4b12-bbea-bae2a8514c81**
-- \{\{userid\}\}: z.B. **3ec2c00f-b125-4519-acf0-302ac3761822**
-- \{\{username\}\}: z.B. **John Doe**
-- \{\{PrimarySMTPAddress\}\}. z.B.**testuser@ad.domain.com** 
+- \{\{userPrincipalName\}\}: z.B.John@contoso.com
+- \{\{mail\}\}: z.B.John@contoso.com
+- \{\{partialupn\}\}: z.B. John
+- \{\{accountid\}\}: z.B. fc0dc142-71d8-4b12-bbea-bae2a8514c81
+- \{\{userid\}\}: z.B. 3ec2c00f-b125-4519-acf0-302ac3761822
+- \{\{username\}\}: z.B. John Doe
+- \{\{PrimarySMTPAddress\}\}. z.B.testuser@ad.domain.com
 
 
 > [!Note]  

@@ -1,42 +1,68 @@
 ---
-title: Benutzerdefinierte Microsoft Intune-Einstellungen für Windows Phone 8.1-Geräte
+title: 'Hinzufügen von benutzerdefinierten Einstellungen für Windows Phone 8.1-Geräte in Microsoft Intune: Azure | Microsoft-Dokumentation'
 titleSuffix: ''
-description: Erfahren Sie etwas über die Einstellungen, die Sie in einem benutzerdefinierten Windows Phone 8.1-Profil verwenden können.
+description: Fügen Sie ein benutzerdefinierten Profils zur Verwendung der OMA-URI-Einstellungen für Windows Phone 8.1-Geräte in Microsoft Intune hinzu, oder erstellen Sie ein solches Profil.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b21464016dff3396b25861af568fa90d8b7a260f
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f2202d7abf80c6a78fd365a4629e970bc9ec36ce
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834752"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983090"
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-phone-81"></a>Benutzerdefinierte Microsoft Intune-Geräteeinstellungen für Windows Phone 8.1-Geräte
+# <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Verwenden von benutzerdefinierten Einstellungen für Windows Phone 8.1-Geräte in Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Mit Microsoft Intune können Sie benutzerdefinierte Einstellungen für Windows Phone 8.1-Geräte mit einem benutzerdefinierten Profil hinzufügen oder erstellen. Benutzerdefinierte Profile sind ein Feature in Intune. Sie sind dafür da, Geräteeinstellungen und -features hinzuzufügen, die nicht in Intune integriert sind.
 
-Weisen Sie mithilfe des **benutzerdefinierten** Profils für Windows Phone 8.1 von Microsoft Intune die OMA-URI-Einstellungen zu, um Features auf Windows Phone 8.1-Geräten zu steuern. Dies sind die Standardeinstellungen, die viele Hersteller von mobilen Geräten verwenden, um Gerätefunktionen zu steuern.
+Benutzerdefinierte Windows Phone 8.1-Profile verwenden die OMA-URI-Einstellungen (Open Mobile Alliance Uniform Resource Identifier) zum Konfigurieren verschiedener Features. Diese Einstellungen werden in der Regel von den Herstellern der Geräte verwendet, um die Features auf dem Gerät zu steuern.
 
-Diese Funktion soll es Ihnen ermöglichen, Einstellungen zuzuweisen, die nicht mit anderen Intune-Richtlinien konfigurierbar sind.
+In diesem Artikel erfahren Sie, wie Sie ein benutzerdefiniertes Profil für Windows Phone 8.1-Geräte erstellen. 
 
-## <a name="custom-policy-settings-for-windows-phone-81-devices"></a>Benutzerdefinierte Richtlinieneinstellungen für Windows Phone 8.1-Geräte
+## <a name="create-the-profile"></a>Erstellen des Profils
 
-1. Anweisungen zu den ersten Schritten finden Sie unter [Konfigurieren von benutzerdefinierten Geräteeinstellungen in Microsoft Intune](custom-settings-configure.md).
-2. Klicken Sie im Bereich **Custom OMA-URI Settings** (Benutzerdefinierte OMA-URI-Einstellungen) auf die Option **Hinzufügen**, um mindestens eine OMA-URI-Einstellung hinzuzufügen.
-3. Konfigurieren Sie im Bereich **Zeile hinzufügen** die folgenden Werte für jede Einstellung:
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
+2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+3. Legen Sie folgende Einstellungen fest:
+
+    - **Name:** Geben Sie einen Profilnamen ein, z.B. `windows phone custom profile`.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein.
+    - **Plattform:** Wählen Sie **Windows Phone 8.1** aus.
+    - **Profiltyp:** Wählen Sie **Benutzerdefiniert** aus.
+
+4. Klicken Sie unter **Benutzerdefinierte OMA-URI-Einstellungen** auf **Hinzufügen**. Legen Sie folgende Einstellungen fest:
+
     - **Name:** Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie sie in der Liste der Einstellungen einfacher identifizieren können.
-    - **Beschreibung:** Geben Sie eine Beschreibung ein, die eine Übersicht über die Einstellung bietet, und andere relevante Informationen, die Ihnen die Suche danach erleichtern.
-    - **OMA-URI:** Geben Sie den OMA-URI an, für den Sie eine Einstellung bereitstellen möchten.
-    - **Datentyp:** Wählen Sie den Datentyp aus, in dem Sie diese OMA-URI-Einstellung angeben. Wählen Sie aus folgenden Typen aus: **Zeichenfolge**, **Zeichenfolge (XML)**, **Datum und Uhrzeit**, **Integer**, **Gleitkomma**, **Boolesch** oder **Base64** aus.
-    - **Wert:** Geben Sie den gewünschten Wert oder die Datei an, der bzw. die dem von Ihnen eingegebenen OMA-URI zugeordnet werden soll.
+    - **Beschreibung:** Geben Sie eine Beschreibung, die eine Übersicht über die Einstellung bietet, und andere relevante Informationen ein, die Ihnen die Suche nach dem Profil erleichtern.
+    - **OMA-URI** (Groß-/Kleinschreibung beachten): Geben Sie den OMA-URI an, den Sie als Einstellung verwenden möchten.
+    - **Datentyp:** Wählen Sie den Datentyp aus, den Sie für diese OMA-URI-Einstellung verwenden möchten. Folgende Optionen sind verfügbar:
 
-4. Klicken Sie abschließend auf **OK**, und fahren Sie bei Bedarf mit dem Hinzufügen weiterer Einstellungen fort.
+        - Zeichenfolge
+        - Zeichenfolge (XML-Datei)
+        - Datum und Uhrzeit
+        - Ganze Zahl
+        - Gleitkomma
+        - Boolesch
+        - Base64 (Datei)
+
+    - **Wert:** Geben Sie den gewünschten Datenwert an, der dem von Ihnen eingegebenen OMA-URI zugeordnet werden soll. Der Wert hängt vom ausgewählten Datentyp ab. Beim Datentyp **Datum und Uhrzeit** wählen Sie den Wert beispielsweise aus einer Datumsauswahl aus.
+
+    Wenn Sie einige Einstellungen hinzugefügt haben, können Sie auf **Exportieren** klicken. Wenn Sie auf **Exportieren** klicken, wird eine Liste aller hinzugefügten Werte in einer Datei mit durch Trennzeichen getrennten Werten (CSV) erstellt.
+
+5. Klicken Sie auf **OK**, um die Änderungen zu speichern. Fügen Sie nach Bedarf weitere Einstellungen hinzu.
+6. Klicken Sie anschließend auf **OK** > **Erstellen**, um das Intune-Profil zu erstellen. Dann wird das Profil erstellt und in der Liste **Gerätekonfiguration > Profile** angezeigt.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Das Profil ist nun erstellt, führt aber noch keine Aktionen durch. [Weisen Sie anschließend das Profil zu](device-profile-assign.md).
+
+Weitere Informationen zum Erstellen eines benutzerdefinierten Profils finden Sie unter [Windows 10-Geräte](custom-settings-windows-10.md).

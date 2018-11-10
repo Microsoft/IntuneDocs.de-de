@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
-ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
+ms.openlocfilehash: 67a1eba8208140306c697b7fe7dddb987e4b75c9
+ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46329996"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "50001608"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für iOS-Geräte in Microsoft Intune
 
@@ -214,9 +214,9 @@ Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Da
 -   **Persönlicher Hotspot:** Verhindern Sie, dass das Gerät als persönlicher Hotspot genutzt wird. Diese Einstellung kann mit einigen Anbietern nicht kompatibel sein.
 -   **Verknüpfen von WLAN-Netzwerken nur mithilfe von Konfigurationsprofilen (nur überwacht):** Dem Gerät nur erlauben, eine Verbindung mit WLAN-Netzwerken herzustellen, die mit einem Intune-WLAN-Profil konfiguriert wurden.
 
-- **Mobilfunk-Verwendungsregeln (nur verwaltete Apps):** Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn Sie sich in Mobilfunknetzwerken befinden. Wählen Sie aus:
-    - **Verwendung von Datenverbindungen blockieren:** Sie können die Verwendung von Datenverbindungen für **Alle verwalteten Apps** blockieren oder **bestimmte Apps wählen**.
-    - **Verwendung von Datenverbindungen beim Roaming blockieren:** Sie können die Verwendung von Datenverbindungen beim Roaming für **Alle verwalteten Apps** blockieren oder **bestimmte Apps wählen**.
+- **Mobilfunk-Verwendungsregeln (nur verwaltete Apps):** Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn Sie sich in Mobilfunknetzwerken befinden. Es stehen die folgenden Optionen zur Auswahl:
+    - **Verwendung von Datenverbindungen blockieren:** Sie können die Verwendung von Datenverbindungen für **alle verwalteten Apps** blockieren oder **bestimmte Apps wählen**.
+    - **Verwendung von Datenverbindungen beim Roaming blockieren:** Sie können die Verwendung von Datenverbindungen beim Roaming für **alle verwalteten Apps** blockieren oder **bestimmte Apps wählen**.
 
 ## <a name="connected-devices"></a>Verbundene Geräte
 
@@ -287,7 +287,7 @@ Nachdem Sie jeden App-Namen und jede Bündel-ID angegeben haben, wählen Sie **H
 
 Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die Bündel-ID von anderen Apps zu finden, wenden Sie sich an den Softwarehersteller.
 
-| Paket-ID                   | App-Name     | Verleger |
+| Paket-ID                   | App-Name     | Herausgeber |
 |-----------------------------|--------------|-----------|
 | com.apple.AppStore          | App Store    | Apple     |
 | com.apple.calculator        | Calculator   | Apple     |
@@ -337,7 +337,7 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 -   **Popups:** Aktivieren oder deaktivieren Sie den Popupblocker des Browsers.
 
 
-## <a name="domains"></a>Domänen
+## <a name="domains"></a>Domains
 
 ### <a name="unmarked-email-domains"></a>Nicht markierte E-Mail-Domänen
 

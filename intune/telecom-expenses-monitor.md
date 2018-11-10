@@ -15,17 +15,17 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16d57ee6a722e8d840b8e8a09ba583698fcb67be
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: e4c44552a0df369767bb91749351674af9eab4b3
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562900"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959552"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Einrichten eines TEM-Diensts (Telecom Expense Management) in Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune ermöglicht es Ihnen, durch Datenverwendung auf firmeneigenen mobilen Geräten Telekommunikationsausgaben zu verwalten. Die TEM-Lösung Datalert des Drittanbieter-Softwareentwicklers Saaswedo wurde in Intune integriert, um diese Funktion zu aktivieren. Bei Datalert handelt es sich um eine TEM-Software, über die Sie in Echtzeit die Nutzung von Telekommunikationsdaten verwalten können. Diese Software vermeidet aufwändige und unerwartete Daten- und Roamingüberschreitungen für Ihre mit Intune verwalteten Geräte.
+Intune ermöglicht es Ihnen, durch Datenverwendung auf firmeneigenen mobilen Geräten Telekommunikationsausgaben zu verwalten. Die [TEM-Lösung Datalert](http://datalert.biz/get-started) des Softwareentwicklers Saaswedo wurde in Intune integriert, um diese Funktion zu aktivieren. Bei Datalert handelt es sich um eine TEM-Software, über die Sie in Echtzeit die Nutzung von Telekommunikationsdaten verwalten können. Diese Software vermeidet aufwändige und unerwartete Daten- und Roamingüberschreitungen für Ihre mit Intune verwalteten Geräte.
 
 Durch die Intune-Integration mit Datalert können Sie Datennutzungsgrenzwerte im In- und Ausland zentral festlegen, überwachen und erzwingen. Es werden automatisierte Warnungen ausgelöst, wenn die definierten Schwellenwerte überschritten werden. Sie können den Dienst so konfigurieren, dass verschiedene Aktionen für Einzelpersonen oder Gruppen von Endbenutzern ausgeführt werden (z.B. das Deaktivieren von Roaming oder das Überschreiten von Schwellenwerten). Berichte für Datennutzungs- und Überwachungsinformationen stehen in der Datalert-Verwaltungskonsole zur Verfügung.
 
@@ -61,19 +61,31 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie bereits ein TEM-Dienst-Abonneme
 
 2. Gehen Sie in der Datalert-Verwaltungskonsole zur Registerkarte **Einstellungen** und anschließend zu **MDM-Konfiguration**.
 
-3. Wählen Sie **Unblock** (Blockierung aufheben) aus, damit Sie die Einstellungen auf der Seite eingeben können.
+3. Klicken Sie unten auf der Seite auf **Unblock** (Zulassen), um Einstellungen auf der Seite zu ändern.
 
-4. Wählen Sie für **Server-MDM** die Option **Microsoft Intune** aus.
+4. Klicken Sie im Bereich **Intune / Datalert Connection** (Intune/Datalert-Verbindung) für **Server MDM** (Server-MDM) auf **Microsoft Intune**.    
 
-5. Geben Sie für die **Azure AD-Domäne** Ihre Azure-Mandanten-ID ein, und wählen Sie dann die Schaltfläche **Verbindung**.
+5. Geben Sie für die **Azure AD-Domäne** Ihre Azure-Mandanten-ID ein, und klicken Sie anschließend auf **Verbindung**.
 
-    Durch das Auswählen von **Verbindung** überprüft Datalert Intune, um sicherzustellen, dass nicht bereits Verbindungen zwischen Datalert und Intune bestehen. Nach wenigen Sekunden wird eine Microsoft-Anmeldeseite angezeigt, gefolgt von der Datalert-Azure-Authentifizierung.
+    Wenn Sie auf **Verbindung** klicken, überprüft Datalert Intune, um sicherzustellen, dass nicht bereits Verbindungen zwischen Datalert und Intune bestehen. Nach wenigen Sekunden wird eine Microsoft-Anmeldeseite angezeigt, gefolgt von der Azure-Authentifizierung für Datalert.
 
-6. Wählen Sie auf Microsoft-Authentifizierungsseite **Annehmen** aus. Sie werden zu einer Seite von Datalert mit dem Inhalt „Danke“ umgeleitet, die nach einigen Sekunden geschlossen wird. Datalert überprüft die Verbindung und zeigt grüne Häkchen neben einer Liste von bereits überprüften Elementen an. Wenn die Überprüfung fehlschlägt, wird Ihnen in rot eine Meldung angezeigt. dann sollten Sie den Datalert-Support kontaktieren.
+6. Wählen Sie auf Microsoft-Authentifizierungsseite **Annehmen** aus. Sie werden zu einer Seite von Datalert mit dem Inhalt **Danke** weitergeleitet, die nach einigen Sekunden wieder geschlossen wird. Datalert überprüft die Verbindung und zeigt grüne Häkchen neben einer Liste von bereits überprüften Elementen an. Wenn die Überprüfung fehlschlägt, wird Ihnen in rot eine Meldung angezeigt. dann sollten Sie den Datalert-Support kontaktieren.
 
     Der folgende Screenshot zeigt die grünen Häkchen, die angezeigt werden, sobald die Verbindung erfolgreich aufgebaut wurde.
 
-   ![Die Datalert-Seite bei erfolgreicher Verbindung](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![Die Datalert-Seite bei erfolgreicher Verbindung](./media/tem-datalert-connection.png)
+
+7. Aktivieren Sie den Abschnitt **Datalert App / ADAL Consent** (Datalert-App/ADAL-Einwilligung) über den Schalter **Ein**. Wählen Sie auf Microsoft-Authentifizierungsseite **Annehmen** aus. Sie werden zu einer Seite von Datalert mit dem Inhalt **Danke** weitergeleitet, die nach einigen Sekunden wieder geschlossen wird. Datalert überprüft die Verbindung und zeigt grüne Häkchen neben einer Liste von bereits überprüften Elementen an. Wenn die Überprüfung fehlschlägt, wird Ihnen in rot eine Meldung angezeigt. dann sollten Sie den Datalert-Support kontaktieren.    
+
+    Der folgende Screenshot zeigt die grünen Häkchen, die angezeigt werden, sobald die Verbindung erfolgreich aufgebaut wurde.
+
+   ![Die Datalert-Seite bei erfolgreicher Verbindung](./media/tem-datalert-adal-consent.png)
+
+8. Aktivieren Sie den Abschnitt **MDM Profiles management (optional)** (Verwaltung von MDM-Profilen (optional)) über den Schalter **Ein**, damit Datalert die verfügbaren Profile in Intune lesen kann und Sie beim Einrichten von Richtlinien unterstützt. Wählen Sie auf Microsoft-Authentifizierungsseite **Annehmen** aus. Sie werden zu einer Seite von Datalert mit dem Inhalt **Danke** weitergeleitet, die nach einigen Sekunden wieder geschlossen wird. Datalert überprüft die Verbindung und zeigt grüne Häkchen neben einer Liste von bereits überprüften Elementen an. Wenn die Überprüfung fehlschlägt, wird Ihnen in rot eine Meldung angezeigt. dann sollten Sie den Datalert-Support kontaktieren.    
+
+    Der folgende Screenshot zeigt die grünen Häkchen, die angezeigt werden, sobald die Verbindung erfolgreich aufgebaut wurde.
+
+   ![Die Datalert-Seite bei erfolgreicher Verbindung](./media/tem-datalert-mdm-profiles.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Schritt 2: Überprüfen, ob die TEM-Funktion in Intune aktiv ist
 
