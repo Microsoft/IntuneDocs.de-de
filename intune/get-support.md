@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9a413e0aaf13b2dab7b211a568fbd15ce43df3a
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 47917943188b2b3d0448845b1e356d181ec8f3af
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187783"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410836"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Anfordern von Support für Microsoft Intune
 
@@ -96,6 +96,64 @@ Sie können eine Supportanfrage im Azure-Portal anzeigen. Gehen Sie hierzu folge
 1. Melden Sie sich in Azure (<https://portal.azure.com>) mit Ihren Intune-Administratoranmeldeinformationen an, und wählen Sie das <strong>?</strong> aus. in der oberen rechten Ecke des Portals aus, und wählen Sie dann <strong>Hilfe und Support</strong> aus, um zur Seite [Azure Hilfe und Support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) zu gelangen.
 
 2. Auf der Seite **Hilfe und Support** können Sie die Liste der **kürzlich gesendeten Supportanfragen** anzeigen und diese auswählen, um weitere Details anzuzeigen.
+
+
+## <a name="new-help-and-support-experience"></a>Neue Benutzeroberfläche für Hilfe und Support 
+*Die folgenden Informationen gelten nur, wenn Sie das Geräteverwaltungsportal verwenden und am Rollout der neuen Benutzeroberfläche für Hilfe und Support teilnehmen. Die Teilnehmer für diesen Rollout werden nach dem Zufallsprinzip aus den verfügbaren Intune-Mandanten ausgewählt.*  
+
+Das Update zu Hilfe und Support für Intune bietet eine neue Benutzeroberfläche, die im [Microsoft 365-Portal für die Geräteverwaltung](http://devicemanagement.microsoft.com) von einigen, aber nicht allen Mandanten genutzt werden kann. Die neue Benutzeroberfläche ähnelt der im [Microsoft 365 Admin Center](https://portal.office.com/AdminPortal/Home) und ersetzt die bisherige Benutzeroberfläche für Hilfe und Support, wenn sie von bestimmten Bereichen der Geräteverwaltungskonsole aus aufgerufen wird.  
+
+Im Geräteverwaltungsportal gelangen Sie zur neuen Benutzeroberfläche, wenn Sie unter **Alle Dienste** > **Geräteverwaltung** auf einem beliebigen Blatt **Hilfe und Support** auswählen. Davon ausgenommen ist das Blatt **Problembehandlung**. Wenn Sie auf Hilfe und Support aus anderen Bereichen, z.B. **Problembehandlung**, zugreifen, indem Sie rechts oben im Konsolenbanner auf **?** klicken, oder wenn Sie in der Liste der Dienste im linken Bereich die Option **Hilfe und Support** auswählen, wird die ursprüngliche Benutzeroberfläche aufgerufen.  
+
+In der neuen Benutzeroberfläche erhalten Sie Zugriff auf die Ansicht **Benötigen Sie Hilfe?**, wie im folgenden Bild zu sehen ist:  
+![Dashboard für die Geräteverwaltung und die Seite „Benötigen Sie Hilfe?“](./media/get-support/help-support-dashboard.png)
+
+In dieser Ansicht können Sie die folgenden Aktionen durchführen:
+
+1. [Geben Sie Details](#specify-details-about-an-issue) zum spezifischen Problem an, bei dem Sie Hilfe benötigen.  
+2. [Zeigen Sie kontextbezogene Hilfe](#view-context-sensitive-help) und zugehörige Lösungen an, die auf den von Ihnen angegebenen Details basieren.  
+3. [Erhalten Sie Support](#get-support) per E-Mail oder Telefon.  
+4. [Zeigen Sie Supportfälle](#view-support-cases) an, die Sie zuvor mit diesem neuen Workflow geöffnet haben.  
+
+### <a name="specify-details-about-an-issue"></a>Angeben von Details zu einem Problem
+Wenn Sie „Hilfe und Support“ von einem Ort aus öffnen, an dem die neue Benutzeroberfläche unterstützt wird, wird die Seite **Benötigen Sie Hilfe?**  geöffnet. Auf dieser Seite können Sie Details zu einem Problem angeben. Während der Eingabe bietet die Konsole gängige Abfragen basierend auf den von Ihnen verwendeten Schlüsselwörtern an. Sie können einen angebotenen Text auswählen oder Ihre eigene Problembeschreibung ausfüllen. Wenn Sie eine eigene Beschreibung eingeben, klicken Sie auf **Hilfe anfordern**, um sie zu übermitteln. Nachdem Sie eine Abfrage gestellt haben, gibt die Konsole kontextbezogene Informationen zurück, die zur Lösung des Problems beitragen können.
+
+Im Folgenden finden Sie Beispiele für Problembeschreibungen, die Sie absenden können:
+  
+- *Ich kann das iOS-Gerät nicht wiederherstellen.*  
+- *Ich kann keine Richtlinie für bedingten Zugriff erstellen.*  
+
+![Angeben des Problems auf der Seite „Benötigen Sie Hilfe?“](./media/get-support/describe-the-issue.png)
+
+
+### <a name="view-context-sensitive-help"></a>Anzeigen von kontextbezogener Hilfe
+Nachdem Sie sich für eine angebotene Auswahl entschieden oder eine eigene Abfrage gestellt haben, werden unter **Lösungen anzeigen** kontextbezogene Ergebnisse angezeigt. Diese Ergebnisse beinhalten sowohl Intune-spezifische Anleitungen zur Selbsthilfe als auch zusätzliche Ergebnisse aus einer auf den Abfragekriterien basierenden Websuche.  
+![Anzeige der Ergebnisse](./media/get-support/view-results.png)
+
+### <a name="get-support"></a>Anfordern von Support  
+Wenn Sie die Selbsthilfe oder die webbasierte Anleitung bei der Problemlösung nicht weiterbringt, können Sie über die Konsole eine Anfrage für E-Mail- oder Telefonsupport öffnen.  
+Wählen Sie auf der Seite **Benötigen Sie Hilfe?** die gewünschte Option aus.  
+
+- Geben Sie für eine E-Mail-Anfrage Ihre E-Mail-Adresse an. Optional haben Sie die Möglichkeit, vor dem Senden Anlagen hinzuzufügen. Wählen Sie **Senden** aus, um die Anfrage zu öffnen.  
+
+  ![E-Mail-Anfrage](./media/get-support/email-support.png)
+  
+- Wenn Sie Telefonsupport wünschen, geben Sie Ihre Telefonnummer an. Optional können Sie auch Ihre E-Mail-Adresse angeben und zu Ihrer Anfrage Anlagen hinzufügen. Wählen Sie „Anrufen“ aus, um die Anfrage zu übermitteln.  
+
+   ![Anfrage für Telefonsupport](./media/get-support/phone-support.png)
+
+### <a name="view-support-cases"></a>Anzeigen von Supportfällen
+Wählen Sie die Schaltfläche für den Verlauf, um die von Ihnen erstellten Supportanfragen anzuzeigen.  
+
+![Anzeigen von Supportfällen](./media/get-support/view-support-tickets.png)
+
+- Nur die mit dem neuen Workflow geöffneten Supportfälle sind in diesem Workflow sichtbar. Um sie anzuzeigen, wechseln Sie in der Geräteverwaltungskonsole auf die neue Ansicht „Hilfe und Support“. Für jeden Fall wird eine achtstellige Nummer vergeben. Sie können diese Fälle auch im Microsoft 365 Admin Center einsehen.  
+
+- Fälle, die Sie eröffnet haben, bevor Ihr Konto zur neuen Benutzeroberfläche für Hilfe und Support gewechselt wurde, bleiben unverändert. Diese können Sie anzeigen, indem Sie eine Ansicht für Hilfe und Support verwenden, die nicht Teil der neu eingeführten Benutzeroberfläche ist. Diese Fälle erhalten Nummern, die mit **117** oder **118** beginnen und 15 Ziffern umfassen.  Wenn Sie einen Supportfall anzeigen möchten, der geöffnet wurde, bevor Ihr Konto zur neuen Benutzeroberfläche hinzugefügt wurde, verwenden Sie das Azure-Portal. Gehen Sie hierzu folgendermaßen vor:
+
+    1. Melden Sie sich in Azure (<https://portal.azure.com>) mit Ihren Intune-Administratoranmeldeinformationen an, und wählen Sie das *?* aus. in der oberen rechten Ecke des Portals aus, und wählen Sie dann *Hilfe und Support* aus, um zur Seite [Azure Hilfe und Support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) zu gelangen.
+
+    2. Auf der Seite **Hilfe und Support** können Sie die Liste der **kürzlich gesendeten Supportanfragen** anzeigen und diese auswählen, um weitere Details anzuzeigen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Kontaktieren des telefonischen Supports für Microsoft Intune](phone-support-contact.md)

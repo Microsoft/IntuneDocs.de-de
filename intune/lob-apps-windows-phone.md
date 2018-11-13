@@ -15,12 +15,12 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e86db15fb4c69b57a1dc572d5a7e4f06eee3b760
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: ff63e3cdf670156c66c156e3defe6d67e7c04044
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602111"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212358"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>Hinzufügen branchenspezifischer Windows Phone-Apps zu Microsoft Intune
 
@@ -50,8 +50,7 @@ Fügen Sie mithilfe der Informationen in diesem Artikel eine branchenspezifische
 2. Konfigurieren Sie im Bereich **App-Informationen** die App-Informationen. Abhängig von der ausgewählten App wurden einige der Werte in diesem Bereich möglicherweise automatisch ausgefüllt.
     - **Name:** Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle App-Namen eindeutig sind. Wenn ein App-Name zweimal vergeben wird, wird im Unternehmensportal nur eine der Apps angezeigt.
     - **Beschreibung:** Geben Sie eine Beschreibung für die App ein. Die Beschreibung wird im Unternehmensportal angezeigt.
-    - **Herausgeber:** Geben Sie den Namen des Herausgebers der App ein.
-    - **App-Version ignorieren**: Legen Sie **Ja** fest, wenn der Entwickler die App automatisch aktualisiert.
+    - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein.
     - **Kategorie:** Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Kategorien erleichtern es dem Benutzer, die App über das Unternehmensportal zu finden.
     - **Diese App als ausgewählte App im Unternehmensportal anzeigen**: Zeigen Sie die App auf der Hauptseite des Unternehmensportals hervorgehoben an, wenn Benutzer nach Apps suchen.
     - **Informations-URL:** Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Die URL wird im Unternehmensportal angezeigt.

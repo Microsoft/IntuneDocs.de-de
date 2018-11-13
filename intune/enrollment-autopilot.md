@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: aa51cbea1ab1ea5f1bfc903a17638192aca59326
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 5fa3079c994a2e0ea2d587185e12c52085133f9c
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075896"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025184"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Registrieren von Windows-Geräten mithilfe des Windows Autopilot  
 Der Windows Autopilot vereinfacht das Registrieren von Geräten. Das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems ist ein langwieriger Prozess. Es kann ebenfalls Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und Autopilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von Autopilot-Geräten verwenden, können Sie Richtlinien, Profile und Apps usw. verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -26,6 +26,12 @@ Der Windows Autopilot vereinfacht das Registrieren von Geräten. Das Erstellen u
 ## <a name="prerequisites"></a>Voraussetzungen
 - [Die automatische Windows-Registrierung muss aktiviert sein](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment).
 - [Azure Active Directory Premium-Abonnement](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+
+## <a name="how-to-get-the-csv-for-import-in-intune"></a>Abrufen der CSV-Datei für den Import in Intune
+
+Sehen Sie sich das folgende PowerShell-Cmdlet an, um weitere Informationen zu dessen Verwendung zu erhalten.
+
+- [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
 ## <a name="add-devices"></a>Hinzufügen von Geräten
 
@@ -68,7 +74,7 @@ Autopilot-Bereitstellungsprofile werden verwendet, um die Autopilot-Geräte zu k
 2. Geben Sie einen **Namen** und optional eine **Beschreibung** ein.
 3. Wenn Sie möchten, dass alle Geräte in den zugewiesenen Gruppen automatisch in Autopilot konvertiert werden, legen Sie für **Alle Zielgeräte in Autopilot-Geräte konvertieren** den Wert **Ja** fest. Alle Nicht-Autopilot-Geräte in zugewiesenen Gruppen werden mit dem Autopilot-Bereitstellungsdienst registriert. Die Verarbeitung der Registrierung kann 48 Stunden dauern. Wenn die Registrierung des Geräts aufgehoben und es zurückgesetzt ist, registriert Autopilot es. Nachdem ein Gerät auf diese Weise registriert wurde, wird das Gerät durch Deaktivieren dieser Option oder Entfernen der Profilzuordnung nicht aus dem Autopilot-Bereitstellungsdienst entfernt. Sie müssen stattdessen [das Gerät direkt entfernen](enrollment-autopilot.md#delete-autopilot-devices).
 4. Für **Bereitstellungsmodus** wählen Sie eine der beiden folgenden Optionen:
-    - **Benutzergesteuert**: Geräte mit diesem Profil werden dem Benutzer zugeordnet, der das Gerät registriert. Für die Registrierung des Geräts sind Anmeldeinformationen erforderlich.
+    - **Benutzergesteuert**: Geräte mit diesem Profil werden dem Benutzer zugeordnet, der das Gerät registriert. Für die Registrierung des Geräts sind Benutzeranmeldeinformationen erforderlich.
     - **Selbstbereitstellend (Vorschauversion)**: (setzt den aktuellen [Windows 10 Insider Preview Build](https://docs.microsoft.com/windows-insider/at-work-pro/) voraus) Geräte mit diesem Profil werden nicht dem Benutzer zugeordnet, der das Gerät registriert. Für die Registrierung des Geräts sind keine Anmeldeinformationen erforderlich.
 5. Wählen Sie im Feld **Verknüpfen mit Azure AD als** die Option **In Azure AD eingebunden**.
 6. Wählen Sie **Willkommensseite**, konfigurieren Sie die folgenden Optionen, und wählen Sie **Speichern**:
@@ -153,15 +159,14 @@ Wenn die mobile Geräteverwaltung für Sie nicht von Interesse ist, können Sie 
 - Synchronisieren von Profilzuweisungen, die in einem anderen Portal vorgenommen wurden
 - Anzeigen von Änderungen an der Geräteliste, die in einem anderen Portal vorgenommen wurden
 
-## <a name="redeploying-windows-autopilot"></a>Erneutes Bereitstellen von Windows Autopilot
+## <a name="windows-autopilot-for-existing-devices"></a>Windows Autopilot für vorhandene Geräte
 
-Sie können Windows-Geräte nach einer Korrelator-ID gruppieren, wenn sie mit [Autopilot für bestehende Geräte](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) über Configuration Manager registriert werden. Die Korrelator-ID ist ein Parameter der Autopilot-Konfigurationsdatei. Das Azure AD-Geräteattribut [enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) ist standardmäßig auf „OfflineAutopilotprofile-<correlator ID>“ festgelegt. Dadurch können beliebige dynamische Azure AD-Gruppen basierend auf der Korrelator-ID über das Attribut „enrollmentprofileName“ für Offlineregistrierungen mit Autopilot erstellt werden.
+Sie können Windows-Geräte nach einer Korrelator-ID gruppieren, wenn sie mit [Autopilot für bestehende Geräte](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430) über Configuration Manager registriert werden. Die Korrelator-ID ist ein Parameter der Autopilot-Konfigurationsdatei. Das Azure AD-Geräteattribut [enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#using-attributes-to-create-rules-for-device-objects) ist standardmäßig auf „OfflineAutopilotprofile-\<correlator ID\>“ festgelegt. Dadurch können beliebige dynamische Azure AD-Gruppen basierend auf der Korrelator-ID über das Attribut „enrollmentprofileName“ erstellt werden.
 
-Wenn Sie ein Upgrade für alte Windows-Versionen durchführen, die die Autopilot-Registrierung nicht unterstützen, können Sie ein Autopilot-Offlineprofil verwenden. Autopilot kann bei Neuinstallationen von Windows 10 1809 oder höher nützlich sein. Als Teil des Offlineprofils können Sie eine Korrelator-ID angeben. 
-
-WARNUNG: Da die Korrelator-ID noch nicht in Intune aufgelistet ist, können sich Benutzer unter einer beliebigen Korrelator-ID Ihrer Wahl registrieren. Wenn der Benutzer eine Korrelator-ID erstellt, die dem Autopilot- oder Apple-DEP-Profilnamen entspricht, wird das Gerät basierend auf dem Attribut „enrollmentProfileName“ einer beliebigen dynamischen Azure AD-Gerätegruppe hinzugefügt. Um einen solchen Konflikt zu vermeiden, gehen Sie wie folgt vor:
-- Erstellen Sie stets dynamische Gruppenregeln für den *gesamten* enrollmentProfileName-Wert.
-- Vergeben Sie niemals Namen für Autopilot- oder Apple-DEP-Profile, die mit „OfflineAutopilotprofile-“ beginnen.
+>[!WARNING] 
+> Da die Korrelator-ID nicht in Intune aufgelistet ist, kann das Gerät eine beliebige Korrelator-ID melden. Wenn der Benutzer eine Korrelator-ID erstellt, die dem Autopilot- oder Apple-DEP-Profilnamen entspricht, wird das Gerät basierend auf dem Attribut „enrollmentProfileName“ einer beliebigen dynamischen Azure AD-Gerätegruppe hinzugefügt. Um einen solchen Konflikt zu vermeiden, gehen Sie wie folgt vor:
+> - Erstellen Sie stets dynamische Gruppenregeln für den *gesamten* enrollmentProfileName-Wert.
+> - Vergeben Sie niemals Namen für Autopilot- oder Apple-DEP-Profile, die mit „OfflineAutopilotprofile-“ beginnen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Nachdem Sie Windows Autopilot für registrierte Windows 10-Geräte konfiguriert haben, erfahren Sie mehr über die Verwaltung dieser Geräte. Weitere Informationen finden Sie unter [Was ist die Microsoft Intune-Geräteverwaltung?](https://docs.microsoft.com/intune/device-management).

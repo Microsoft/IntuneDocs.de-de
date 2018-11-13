@@ -14,12 +14,12 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa1a1b1085d196411a03a6228eefa808399397ea
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 439c89f7b0158111f63d2d8327291c2b5a5c1e38
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024803"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298070"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune
 
@@ -48,9 +48,6 @@ Beispiel: Sie möchten allen Geräten in Ihrem Unternehmen, mit Ausnahme von Kio
 Die Funktion „Ausschließen“ wertet nur direkte Mitglieder der Gruppen aus. Sie schließt keine Geräte ein, die einem Benutzer zugeordnet sind. Geräte, die über keinen Benutzer verfügen, erhalten die Richtlinie jedoch nicht. Grund hierfür ist, dass diese Geräte keine Beziehung zur Gruppe **Alle Benutzer** haben.
 
 Wenn Sie **Alle Geräte** einschließen und gleichzeitig **Alle Benutzer** ausschließen, erhalten alle Geräte die Richtlinie. Damit sollten eigentlich alle Geräte mit einem zugeordneten Benutzer von der Richtlinie ausgeschlossen werden. Die Geräte werden jedoch nicht ausgeschlossen, da die Funktion „Ausschließen“ nur direkte Gruppenmitglieder miteinander vergleicht.
-
->[!TIP]
->Die Funktion „Ausschließen“ ist für Konformitätsrichtlinien oder App-Zuweisungen nicht verfügbar. Zum Ausschließen von Mitgliedern aus einer Zuweisung können Sie die Zuweisungen **Verfügbar** und **Nicht zutreffend** verwenden. Beispiel: Sie weisen der Gruppe **Alle Unternehmensbenutzer** eine App mit der Absicht **Verfügbar** zu und der Gruppe **Mitarbeiter des oberen Managements** die App mit der Absicht **Nicht zutreffend**. Die App wurde nun allen Benutzern *außer* den Benutzern der Gruppe **Mitarbeiter des oberen Managements** zugewiesen. Weisen Sie die App hingegen der Gruppe **Alle Unternehmensbenutzer** mit der Absicht **Erforderlich** zu, werden die Benutzer der Gruppe **Mitarbeiter des oberen Managements** nicht ausgeschlossen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Weitere Informationen zum Überwachen der Zuweisungen von Geräteprofilen finden Sie unter [Überwachen von Geräteprofilen](device-profile-monitor.md).

@@ -35,7 +35,7 @@ Installieren Sie über die Unternehmensportal-App für Windows Apps auf Ihrem Ge
 2. Suchen und installieren Sie Apps aus einem der folgenden Abschnitte der Unternehmensportal-App:  
 
     * **Start:** Wählen Sie Apps aus einer Liste empfohlener Apps Ihrer Organisation aus.  
-    * **Alle anzeigen:** Klicken Sie auf der **Startseite** im Abschnitt **Apps** auf **Alle anzeigen, um alle verfügbaren Apps anzuzeigen.  
+    * **Alle anzeigen:** Klicken Sie auf der **Startseite** im Abschnitt **Apps** auf **Alle anzeigen**, um alle verfügbaren Apps anzuzeigen.  
     * **Alle Apps:** Wählen Sie diese Seite im Navigationsbereich aus, um alle verfügbaren Apps anzuzeigen, einschließlich aller installierten und ausgewählten Apps.  
     * **Nach Apps suchen**: Eine statische Suchleiste befindet sich im Navigationsbereich der App.  Suchen Sie nach dem App-Namen oder dem Herausgeber, um Ihre verfügbaren Apps zu finden.  
     * **Alle Apps**: Sie können alle verfügbaren Apps anzeigen, sortieren und filtern. Die Suchergebnisse werden automatisch nach Relevanz sortiert.  

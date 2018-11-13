@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f01ff78ed833e8c621783363a7d6ad1405df6f14
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: a57ae54787069f85798519a3a6bc051842db6c2b
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602230"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212324"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen Android-Apps zu Microsoft Intune
 
@@ -55,7 +55,6 @@ Eine branchenspezifische App (LOB) ist eine App, die Sie aus einer App-Installat
     - **Beschreibung:** Geben Sie eine Beschreibung für die App ein. Die Beschreibung wird im Unternehmensportal angezeigt.
     - **Herausgeber:** Geben Sie den Namen des Herausgebers der App ein.
     - **Mindestens erforderliches Betriebssystem**: Wählen Sie aus der Liste die mindestens erforderliche Betriebssystemversion aus, auf der die App installiert werden kann. Wenn Sie die App einem Gerät mit einem älteren Betriebssystem zuweisen, wird sie nicht installiert.
-    - **App-Version ignorieren**: Legen Sie **Ja** fest, wenn der Entwickler die App automatisch aktualisiert.
     - **Kategorie:** Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Kategorien erleichtern es dem Benutzer, die App über das Unternehmensportal zu finden.
     - **Diese App als ausgewählte App im Unternehmensportal anzeigen**: Zeigen Sie die App auf der Hauptseite des Unternehmensportals hervorgehoben an, wenn Benutzer nach Apps suchen.
     - **Informations-URL:** Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Die URL wird im Unternehmensportal angezeigt.

@@ -15,12 +15,12 @@ ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: e54b35d677d34067bfbd0ad6aad86e3dfe17fb90
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
+ms.openlocfilehash: 5fb0de1af9c8336cb277572faf526f1471108591
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50971481"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225950"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune Data Warehouse-Sammlungen
 
@@ -165,7 +165,7 @@ Die Entität **DeviceConfigurationProfileDeviceActivity** listet die Anzahl der 
 | Failed    | Anzahl eindeutiger Geräte im Zustand „fehlerhaft“                                                     | 2        |
 
 ## <a name="deviceconfigurationprofileuseractivities"></a>deviceConfigurationProfileUserActivities 
-Die Entität  **deviceConfigurationProfileUserActivity** listet die Anzahl der Benutzer mit dem Zustand „erfolgreich“, „ausstehend“, „fehlerhaft“ oder „Fehler“ pro Tag auf. Die Anzahl gibt die Gerätekonfigurationsprofile an, die der Entität zugewiesen sind. Wenn ein Benutzer beispielsweise den Zustand „erfolgreich“ für alle zugewiesenen Richtlinien aufweist, wird der Zähler für „erfolgreich“ für diesen Tag um eins erhöht. Wenn einem Benutzer zwei Profile zugewiesen sind, von denen eines den Zustand „erfolgreich“ und eines den Zustand „Fehler“ aufweist, wird der Benutzer für den Zustand „Fehler“ gezählt. Die Entität  **deviceConfigurationProfileUserActivity** listet für die letzten 30 Tage auf, wie viele Benutzer an einem bestimmten Tag in welchem Zustand waren. 
+Die Entität **DeviceConfigurationProfileUserActivity** listet die Anzahl der Benutzer mit dem Zustand „erfolgreich“, „ausstehend“, „fehlerhaft“ oder „Fehler“ pro Tag auf. Die Anzahl gibt die Gerätekonfigurationsprofile an, die der Entität zugewiesen sind. Wenn ein Benutzer beispielsweise den Zustand „erfolgreich“ für alle zugewiesenen Richtlinien aufweist, wird der Zähler für „erfolgreich“ für diesen Tag um eins erhöht. Wenn einem Benutzer zwei Profile zugewiesen sind, von denen eines den Zustand „erfolgreich“ und eines den Zustand „Fehler“ aufweist, wird der Benutzer für den Zustand „Fehler“ gezählt. Die Entität **DeviceConfigurationProfileUserActivity** listet für die letzten 30 Tage auf, wie viele Benutzer an einem bestimmten Tag in welchem Zustand waren. 
 
 | Eigenschaft  | Beschreibung  | Beispiel  |
 |------------|----------------------------------------------------------------------------------------------|-----------|

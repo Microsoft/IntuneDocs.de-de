@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2018
+ms.date: 11/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: 4b7a759b574b44a07499597e89627f70b99e5496
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: c9920e914a80ec3bb02f5066e6d6e34b2236c860
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643092"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212494"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
@@ -34,7 +34,7 @@ Mit dem Microsoft Intune App SDK für iOS können Sie die Intune-App-Schutzricht
 
 * Ihre App muss für iOS 10 oder höher vorgesehen sein.
 
-* Lesen Sie [die Lizenzbedingungen für das Intune App SDK für iOS (in englischer Sprache)](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Drucken Sie sich eine Kopie der Lizenzbedingungen aus und bewahren Sie diese in Ihren Unterlagen auf. Indem Sie das Intune App SDK für iOS herunterladen und verwenden, stimmen Sie diesen Lizenzbestimmungen zu.  Wenn Sie den Lizenzbedingungen nicht zustimmen, verwenden Sie die Software nicht.
+* Lesen Sie [die Lizenzbedingungen für das Intune App SDK für iOS (in englischer Sprache)](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS.pdf). Drucken Sie sich eine Kopie der Lizenzbedingungen aus und bewahren Sie diese in Ihren Unterlagen auf. Indem Sie das Intune App SDK für iOS herunterladen und verwenden, stimmen Sie diesen Lizenzbestimmungen zu.  Wenn Sie den Lizenzbedingungen nicht zustimmen, verwenden Sie die Software nicht.
 
 * Laden Sie die Dateien für das Intune App SDK für iOS von [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) herunter.
 

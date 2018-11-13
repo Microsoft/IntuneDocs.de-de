@@ -15,12 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bbf02fc9633cca5059a6c58c3ef021f05469be60
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 43ca9d165bd44684a23f7e82eaed04f833b30449
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075592"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212341"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen iOS-Apps zu Microsoft Intune
 
@@ -55,7 +55,6 @@ Fügen Sie mithilfe der Informationen in diesem Artikel branchenspezifische (LOB
     - **Beschreibung:** Geben Sie eine Beschreibung für die App ein. Die Beschreibung wird im Unternehmensportal angezeigt.
     - **Herausgeber:** Geben Sie den Namen des Herausgebers der App ein.
     - **Mindestens erforderliches Betriebssystem**: Wählen Sie aus der Liste die mindestens erforderliche Betriebssystemversion aus, auf der die App installiert werden kann. Wenn Sie die App einem Gerät mit einem älteren Betriebssystem zuweisen, wird sie nicht installiert.
-    - **App-Version ignorieren**: Legen Sie **Ja** fest, wenn der Entwickler die App automatisch aktualisiert.
     - **Kategorie:** Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Kategorien erleichtern es dem Benutzer, die App über das Unternehmensportal zu finden.
     - **Diese App als ausgewählte App im Unternehmensportal anzeigen**: Zeigen Sie die App auf der Hauptseite des Unternehmensportals hervorgehoben an, wenn Benutzer nach Apps suchen.
     - **Informations-URL:** Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Die URL wird im Unternehmensportal angezeigt.
