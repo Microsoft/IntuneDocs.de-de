@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2c2bb6e76bd6b2da7ee7c12282c0ff22d7d3e3
-ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
+ms.openlocfilehash: 270f19b6f0babb347b04731ca270a3c5bea18217
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31617208"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225667"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Erfordert mehrstufige Authentifizierung für Intune-Geräteregistrierungen
 
@@ -48,24 +48,18 @@ Befolgen Sie die folgenden Schritte, um MFA anzufordern, wenn ein Gerät registr
 >Konfigurieren Sie keine **gerätebasierten Zugriffsregeln** für die Microsoft Intune-Registrierung.
 
 1. Melden Sie sich mit Ihren Anmeldeinformationen beim [Microsoft Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie im Portal **Azure Active Directory** aus.
-2. Wählen Sie in **Azure Active Directory** **Verwalten** > **Unternehmensanwendungen** aus.
-3. Wählen Sie unter **Unternehmensanwendungen** die Optionen **Verwalten** > **Alle Anwendungen** aus. Daraufhin sehen Sie eine Liste aller Azure-Apps, die Sie verwalten.
-3. Wählen Sie aus dieser Liste **Microsoft Intune enrollment** (Microsoft Intune-Registrierung) aus.
-4. Wählen Sie unter **Microsoft Intune-Registrierung** die Optionen **Sicherheit** > **Bedingter Zugriff** aus.
-5. Wählen Sie **Neue Richtlinie** aus.
-6. Geben Sie unter **Neue Richtlinie** einen beschreibenden Namen für die Richtlinie ein.
-7. Wählen Sie im Abschnitt **Zuweisungen** die Option **Benutzer und Gruppen** aus.
-8. Wählen Sie unter **Benutzer und Gruppen** die Benutzer oder Gruppen aus, die diese Richtlinie empfangen sollen, und klicken Sie dann auf **Fertig**.
-9. Wählen Sie im Abschnitt **Zuweisungen** die Option **Cloud-Apps** aus.
-10. Wählen Sie auf der Registerkarte **Einbeziehen** von **Cloud-Apps** die Option **Apps auswählen** aus, klicken Sie dann auf **Auswählen** > **Microsoft Intune-Registrierung**, und klicken Sie dann auf **Fertig**.
-11. Wählen Sie im Abschnitt **Zuweisungen** die Option **Bedingungen** aus.
-12. Sie müssen unter **Bedingungen** keine Einstellungen für MFA konfigurieren.
-13. Wählen Sie im Abschnitt **Zugriffssteuerung** die Option **Erteilen** aus.
-14. Wählen Sie unter **Erteilen** die Option **Zugriff gewähren** aus, und wählen Sie dann **Mehrstufige Authentifizierung anfordern** aus.
-    Wählen Sie nicht **Markieren des Geräts als kompatibel erforderlich** aus, da ein Gerät vor der Registrierung nicht auf Kompatibilität geprüft werden kann.
-15. Klicken Sie auf **Auswählen**.
-16. Wählen Sie unter **Neue Richtlinie** die Optionen **Richtlinie aktivieren** > **An** aus, und klicken Sie dann auf **Erstellen**.
+2. Wechseln Sie im Portal zu **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**.
+3. Klicken Sie in **Azure Active Directory** unter „Sicherheit“ auf **[Bedingten Zugriff](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)**.
+4. Wählen Sie **Neue Richtlinie** aus.
+5. Geben Sie unter **Neue Richtlinie** einen beschreibenden Namen für die Richtlinie ein.
+6. Wählen Sie im Abschnitt **Zuweisungen** die Option **Benutzer und Gruppen** aus.
+7. Klicken Sie unter **Benutzer und Gruppen** auf **Select users or groups** (Benutzer oder Gruppen auswählen), und aktivieren Sie das Kontrollkästchen für **Benutzer und Gruppen**. Wählen Sie dann die Benutzer und/oder Gruppen aus, für die diese Richtlinie gelten soll, und klicken Sie anschließend auf **Fertig**.
+8. Wählen Sie im Abschnitt **Zuweisungen** die Option **Cloud-Apps** aus.
+9. Wählen Sie auf der Registerkarte **Einbeziehen** von **Cloud-Apps** die Option **Apps auswählen** aus, klicken Sie dann auf **Auswählen** > **Microsoft Intune-Registrierung**, und klicken Sie dann auf **Fertig**.
+10. Sie müssen im Abschnitt **Zuweisungen** unter **Bedingungen** keine Einstellungen für die mehrstufige Authentifizierung konfigurieren.
+11. Wählen Sie im Abschnitt **Zugriffssteuerung** die Option **Erteilen** aus.
+12. Wählen Sie unter **Erteilen** die Option **Zugriff gewähren** aus, und wählen Sie dann **Mehrstufige Authentifizierung anfordern** aus. Wählen Sie nicht **Markieren des Geräts als kompatibel erforderlich** aus, da ein Gerät vor der Registrierung nicht auf Kompatibilität geprüft werden kann. Klicken Sie anschließend auf **Auswählen**.
+13. Wählen Sie unter **Neue Richtlinie** die Optionen **Richtlinie aktivieren** > **An** aus, und klicken Sie dann auf **Erstellen**.
 
 
 

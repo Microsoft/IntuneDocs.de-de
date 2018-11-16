@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/18/2018
+ms.date: 11/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: bdf08ccac21407bc2572f1133b2fe8d45548342f
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: 63295d7e05889f5a8beb44e399f36a4fbe27544d
+ms.sourcegitcommit: 76c7b315b83eb6cb5b996facf1d250fb3e22f1bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679252"
+ms.lasthandoff: 11/08/2018
+ms.locfileid: "51276114"
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>Welche Informationen erhält mein Unternehmen, wenn ich mein Gerät registriere?
+# <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Welche Informationen erhält meine Organisation, wenn ich mein Gerät registriere?
 
-Ihr Unternehmen kann Ihre privaten Informationen nicht einsehen, wenn Sie ein Gerät mit Microsoft Intune registrieren. Wenn Sie ein Gerät registrieren, erhält Ihr Unternehmen die Berechtigung zum Anzeigen bestimmter Arten von Informationen auf Ihrem Gerät, z.B. das Gerätemodell und die Seriennummer. Ihr Unternehmen verwendet diese Informationen, um die Unternehmensdaten auf dem Gerät zu schützen.
+Ihre Organisation kann Ihre privaten Informationen nicht einsehen, wenn Sie ein Gerät für Microsoft Intune registrieren. Wenn Sie ein Gerät registrieren, erhält Ihre Organisation die Berechtigung zum Anzeigen bestimmter Arten von Informationen auf Ihrem Gerät, z.B. das Gerätemodell und die Seriennummer. Ihre Organisation verwendet diese Informationen, um die Unternehmensdaten auf dem Gerät zu schützen.
 
-**Was Ihr Unternehmen niemals sehen kann:**
+**Folgendes kann nicht von Ihrer Organisation eingesehen werden:**
 
 - Ihren Anrufs- und Browserverlauf
 - E-Mail-Nachrichten und SMS
@@ -35,20 +35,23 @@ Ihr Unternehmen kann Ihre privaten Informationen nicht einsehen, wenn Sie ein Ge
 - Kalender
 -   Kennwörter
 - Ihre Bilder, einschließlich dem, was sich in der Fotos- und Kamera-App befindet
+- Dateien
 
-**Was Ihr Unternehmen immer sehen kann:**
+**Folgendes kann von Ihrer Organisation eingesehen werden:**
 
 - Gerätemodell, z.B. Google Pixel
-- Hersteller, z.B. Microsoft
-- Betriebssystem, z.B. iOS
-- App-Namen, z.B. Microsoft Word
+- Gerätehersteller, z.B. Microsoft
+- Betriebssystem und Version, z.B. iOS 12.0.1
+- App-Namen wie Microsoft Word: Auf persönlichen Geräten kann Ihre Organisation nur sehen, welche verwalteten Apps installiert sind. Auf unternehmenseigenen Geräten kann Ihre Organisation alle installierten Apps sehen.
 - Geräteeigentümer
 - Gerätename
-- Seriennummer
+- Seriennummer des Geräts
+- IMEI
 
-**Was Ihr Unternehmen sehen könnte:**
+**Was Ihre Organisation möglicherweise außerdem sehen kann:**
 
--  Telefonnummer: Bei **unternehmenseigenen** Geräten kann Ihre vollständige Telefonnummer angezeigt werden. Bei Geräten, die **persönliches** Eigentum sind, werden dem Unternehmen nur die letzten vier Ziffern Ihrer Telefonnummer angezeigt. Um den **Besitztyp** jedes einzelnen Geräts festzustellen, öffnen Sie die Seite **Gerätedetails** des Geräts.
--  Standort: Ihr Unternehmen kann nie den Standort Ihres Geräts sehen, sofern Sie kein iOS-Gerät haben, das überwacht wird und verloren gegangen ist. [Wie kann ich das wissen?](https://go.microsoft.com/fwlink/?linkid=853816)
+-  Telefonnummer: Bei **unternehmenseigenen** Geräten wird möglicherweise Ihre vollständige Telefonnummer angezeigt. Bei Geräten, die **persönliches** Eigentum sind, werden der Organisation nur die letzten vier Ziffern Ihrer Telefonnummer angezeigt. Um den **Besitztyp** jedes einzelnen Geräts festzustellen, öffnen Sie die Seite **Gerätedetails** des Geräts.
+- Speicherplatz auf dem Gerät: Wenn Sie eine erforderliche App installieren, prüft Ihre Organisation möglicherweise den freien Speicherplatz auf Ihrem Gerät, um festzustellen, ob genügend Speicherplatz vorhanden ist.  
+-  Standort: Ihre Organisation kann nie den Standort Ihres Geräts sehen, sofern Sie kein iOS-Gerät haben, das überwacht wird und verloren gegangen ist. [Wie kann ich das wissen?](https://go.microsoft.com/fwlink/?linkid=853816)
 - App-Bestand: Wenn Ihr Unternehmen Mobile Threat Defense verwendet, können weitere Informationen zu den Apps auf Ihrem iOS-Gerät eingesehen werden. Erfahren Sie mehr über [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
-- Netzwerkinformationen: Möglicherweise sind einige Informationen über Netzwerkverbindungen für Android-Geräte für Ihren Unternehmenssupport verfügbar. Wenn Ihr Unternehmen beispielsweise verlangt, dass Geräte in einem bestimmten Gebäude bleiben, würde Ihr Gerät das Netzwerk identifizieren, mit dem es verbunden ist. 
+- Netzwerkinformationen: Möglicherweise sind einige Informationen über Netzwerkverbindungen für Android-Geräte für den Support Ihrer Organisation verfügbar. Wenn Ihre Organisation beispielsweise verlangt, dass Geräte in einem bestimmten Gebäude bleiben, identifiziert Ihr Gerät das Netzwerk, mit dem es verbunden ist. 

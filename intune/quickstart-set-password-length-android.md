@@ -1,12 +1,12 @@
 ---
-title: 'Schnellstart: Festlegen einer erforderlichen Kennwortlänge für Android-Geräte'
+title: 'Schnellstart: Erstellen einer Konformitätsrichtlinie für Kennwörter für Android-Geräte'
 titlesuffix: Microsoft Intune
-description: In diesem Schnellstart legen Sie mithilfe von Microsoft Intune eine erforderliche Kennwortlänge für Android-Geräte fest.
+description: In diesem Schnellstart erfahren Sie, wie Sie mithilfe von Microsoft Intune eine erforderliche Kennwortlänge für Android-Geräte festlegen.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,18 @@ ms.assetid: 81b4fa08-5333-4c54-9f49-8db5f6984ed2
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f925df731c3ddd45b13d976b0686d76d941c71e6
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 438121e0375559455547f4cc5453d272576681ca
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49395283"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510804"
 ---
-# <a name="quickstart-set-a-required-password-length-for-android-devices"></a>Schnellstart: Festlegen einer erforderlichen Kennwortlänge für Android-Geräte
+# <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Schnellstart: Erstellen einer Konformitätsrichtlinie für Kennwörter für Android-Geräte
 
 In diesem Schnellstart erfahren Sie, wie Sie mit Microsoft Intune für Ihre Mitarbeiter mit Android-Geräten festlegen, dass sie ein Kennwort mit einer bestimmten Länge angeben, bevor sie auf Informationen auf dem Gerät zugreifen können. 
+
+Mit einer Konformitätsrichtlinie für Intune-Geräte werden die Regeln und Einstellungen festgelegt, die diese Geräte erfüllen müssen, um als konform angesehen zu werden. Sie können diese Richtlinien mit bedingtem Zugriff verwenden, um den Zugriff auf Unternehmensressourcen zuzulassen oder zu blockieren. Außerdem können Sie Geräteberichte abrufen und bei Nichtkonformität Aktionen durchführen.
 
 > [!IMPORTANT]
 > Berücksichtigen Sie neben den Kennworteinstellungen auch andere Systemsicherheitseinstellungen, um Ihre Mitarbeiter zu schützen. Weitere Informationen finden Sie unter [Einstellungen für die Systemsicherheit](compliance-policy-create-android-for-work.md#system-security-settings).
@@ -33,27 +35,34 @@ Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für ein
 
 ## <a name="sign-in-to-intune"></a>Anmelden bei Intune
 
-Registrieren Sie sich bei [Intune](https://aka.ms/intuneportal) als globaler Administrator oder als Intune-Dienstadministrator. Intune finden Sie im Azure-Portal, indem Sie **Alle Dienste** > **Intune** auswählen. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+Registrieren Sie sich bei [Intune](https://aka.ms/intuneportal) als globaler Administrator oder als Intune-Dienstadministrator. 
 
 ## <a name="create-a-device-compliance-policy"></a>Erstellen einer Gerätekonformitätsrichtlinie
-1. Wenn das Blatt **Microsoft Intune** geöffnet ist, wählen Sie **Gerätekompatibilität** > **Richtlinien** > **Richtlinie erstellen** aus.
+
+In diesem Schnellstart erfahren Sie, wie Sie mit Intune für Ihre Mitarbeiter mit Android-Geräten festlegen, dass sie ein Kennwort mit einer bestimmten Länge eingeben, bevor sie auf Informationen auf dem Gerät zugreifen können.
+
+1. Wählen Sie in Intune **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** aus.
 2. Fügen Sie als **Name** **Android-Kompatibilität** hinzu. Geben Sie auch eine **Beschreibung** ein.
 3. Wählen Sie als **Plattform** die Option **Android** aus. 
 4. Wählen Sie **Einstellungen** > **Systemsicherheit** aus, um das Blatt **Systemsicherheit** für Android-Geräte anzuzeigen.
-5. Klicken Sie im Abschnitt **Kennwort** neben **Kennwort zum Entsperren mobiler Geräte erforderlich** auf **Erforderlich**.
-6. Geben Sie neben **Minimale Kennwortlänge** **6** ein.  
+5. Klicken Sie neben **Require a password to unlock mobile devices** (Ein Kennwort zum Entsperren von Mobilgeräten anfordern) auf **Anfordern**.
+6. Geben Sie neben **Minimale Kennwortlänge** **6** ein. 
 
-    ![Screenshot: Erstellen einer Gruppe in Microsoft Intune](./media/quickstart-set-password-length-android-01.png)
+    ![Screenshot: Erstellen einer Gruppe in Microsoft Intune](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 
-7. Wenn Sie fertig sind, klicken Sie auf **OK**, um das Blatt **Systemsicherheit** zu schließen. 
-8. Klicken Sie auf **OK**, um das Blatt **Android-Kompatibilitätsrichtlinie** zu schließen. 
-9. Klicken Sie auf **Erstellen**, um die Richtlinie zu erstellen.
+7. Klicken Sie anschließend auf **OK** > **OK** > **Erstellen**, um die Richtlinie zu erstellen.
 
-Wenn Sie die Richtlinie erfolgreich erstellt haben, erscheint sie in der Liste **Gerätekompatibilität – Richtlinien**. 
+Wenn Sie die Richtlinie erfolgreich erstellt haben, erscheint sie in der Liste der Gerätekonformitätsrichtlinien. 
+
+## <a name="clean-up-resources"></a>Bereinigen der Ressourcen
+
+Löschen Sie die Richtlinie, wenn Sie sie nicht länger benötigen. Wählen Sie dafür die entsprechende Konformitätsrichtlinie aus, und klicken Sie auf **Löschen**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Schnellstart haben Sie mit Intune eine Kompatibilitätsrichtlinie für die Android-Geräte Ihrer Mitarbeiter erstellt, die ein Kennwort mit einer Mindestlänge von sechs Zeichen erfordert.
+In diesem Schnellstart haben Sie mit Intune eine Kompatibilitätsrichtlinie für die Android-Geräte Ihrer Mitarbeiter erstellt, die ein Kennwort mit einer Mindestlänge von sechs Zeichen erfordert. Weitere Informationen über Gerätekonformitätsrichtlinien finden Sie unter [Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune](device-compliance-get-started.md).
+
+Weitere Informationen zu Intune erhalten Sie im nächsten Schnellstart.
 
 > [!div class="nextstepaction"]
-> [Set up automatic enrollment (Festlegen der automatischen Registrierung)](quickstart-setup-auto-enrollment.md)
+> [Quickstart: Send notifications to noncompliant devices (Schnellstart: Senden von Benachrichtigungen an nicht konforme Geräte)](quickstart-send-notification.md)

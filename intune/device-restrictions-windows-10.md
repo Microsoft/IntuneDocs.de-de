@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/26/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a95f68f0a9794047b8adb7f9ab729bb4905f2379
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: ac0348736e5975633776c86dee88555dfceb6919
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679388"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576884"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Gerätebeschränkungen für Einstellungen unter Windows 10 (und höher) in Intune
 In diesem Artikel erfahren Sie alle Einstellungen für Microsoft Intune-Geräteeinschränkungen, die Sie für Windows 10-Geräte konfigurieren können.
@@ -31,8 +31,8 @@ In diesem Artikel erfahren Sie alle Einstellungen für Microsoft Intune-Gerätee
 - **Bildschirmaufnahme (nur Mobilgerät):** Erlaubt dem Benutzer, den Bildschirm des Geräts als Bild zu erfassen.
 - **Kopieren und einfügen (nur mobil):** Erlaubt Kopier- und Einfügevorgänge zwischen Apps auf dem Gerät.
 - **Manuelle Aufhebung der Registrierung:** Erlaubt dem Benutzer das manuelle Löschen des Unternehmensbereichskontos vom Gerät.
-   - Diese Richtlinieneinstellung wird nicht angewendet, wenn der Computer mit Azure Active Directory verknüpft ist und die automatische Registrierung aktiviert ist. 
-   - Diese Richtlinieneinstellung gilt nicht für Computer, auf denen Windows 10 Home ausgeführt wird.
+   - Diese Richtlinieneinstellung wird nicht angewendet, wenn der Computer mit Azure Active Directory (Azure AD) verknüpft ist und die automatische Registrierung aktiviert ist. 
+   - Diese Richtlinieneinstellung gilt nicht für Computer mit Windows 10 Home.
 - **Manuelle Installation von Stammzertifikaten (nur Mobilgerät):** Hindert den Benutzer daran, Stammzertifikate und CAP-Zwischenzertifikate manuell zu installieren.
 
 - **Kamera:** Erlaubt oder sperrt die Verwendung der Kamera auf dem Gerät.
@@ -51,9 +51,9 @@ In diesem Artikel erfahren Sie alle Einstellungen für Microsoft Intune-Gerätee
 - **Geräteerkennung:** Verhindert, dass ein Gerät von anderen Geräten erkannt wird.
 - **Programmumschaltung (nur mobile Geräte):** Blockiert die Programmumschaltung auf dem Gerät.
 - **Dialogfeld bei SIM-Kartenfehler (nur mobile Geräte):** Blockiert die Anzeige einer Fehlermeldung auf dem Gerät, wenn keine SIM-Karte erkannt wird.
-- **Ink-Arbeitsbereich:** Blockiert den Benutzerzugriff auf den Ink-Arbeitsbereich. Wenn diese Einstellung nicht konfiguriert ist, ist der Ink-Arbeitsbereich aktiviert (Feature ist aktiviert), und der Benutzer kann ihn über den Sperrbildschirm verwenden.
+- **Ink-Arbeitsbereich:** Blockiert den Benutzerzugriff auf den Ink-Arbeitsbereich. Wenn **Nicht konfiguriert** für diese Einstellung festgelegt ist, ist der Ink-Arbeitsbereich aktiviert (Feature ist aktiviert), und der Benutzer kann ihn über den Sperrbildschirm verwenden.
 - **Automatische erneute Bereitstellung:** Ermöglicht es Benutzern mit Administratorrechten, alle Benutzerdaten und -einstellungen über **STRG+Windows+R** vom Sperrbildschirm des Geräts aus zu löschen. Das Gerät wird automatisch neu konfiguriert und bei der Verwaltung neu registriert.
-- **Require users to connect to network during device setup (Windows Insider only)** (Verlangen, dass sich Benutzer während des Gerätesetups mit dem Netzwerk verbinden müssen (nur Windows-Insider)): Wählen Sie **Require** (Anfordern) aus, um sicherzustellen, dass das Gerät eine Verbindung zu einem Netzwerk herstellen muss, bevor es während des Setups von Windows 10 über die Netzwerkseite hinausgeht. Solange sich diese Funktion in der Vorschau befindet, ist für die Verwendung dieser Einstellung der Windows-Insider-Build 1809 oder höher erforderlich.
+- **Require users to connect to network during device setup (Windows Insider only)** (Verlangen, dass sich Benutzer während des Gerätesetups mit dem Netzwerk verbinden müssen (nur Windows-Insider)): Wählen Sie **Anfordern** aus, damit das Gerät eine Verbindung mit einem Netzwerk herstellt, bevor das Windows 10-Setup an der Netzwerkseite fortfahren kann. Solange sich diese Funktion in der Vorschau befindet, ist für die Verwendung dieser Einstellung der Windows-Insider-Build 1809 oder höher erforderlich.
 
 ## <a name="password"></a>Kennwort
 -   **Kennwort:** Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können.
@@ -70,14 +70,14 @@ Für Geräte mit Windows 10 Mobile: Das Gerät wird zurückgesetzt, sobald die A
 
 ## <a name="personalization"></a>Personalization
 
-- **URL zu Desktophintergrundbild (nur Desktop):** Gibt die URL zu einem Bild im JPEG-Format an, das Sie als Windows-Desktophintergrund verwenden möchten. Benutzer können diese nicht ändern.
+- **URL zu Desktophintergrundbild (nur Desktop):** Geben Sie die URL zu einem Bild im JPEG-Format an, das Sie als Windows-Desktophintergrund verwenden möchten. Benutzer können das Bild nicht ändern.
 
 ## <a name="privacy"></a>Datenschutz
 
 -   **Eingabepersonalisierung:** Verhindert die Verwendung cloudbasierter Sprachdienste für Cortana, Diktierfunktionen oder Microsoft Store-Apps. Wenn Sie diese Dienste zulassen, kann Microsoft Voice-Daten erfassen, um den Dienst zu verbessern.
 -   **Automatisches Akzeptieren der Zustimmungsaufforderung des Benutzers zu Kopplung und Datenschutz:** Erlaubt Windows beim Ausführen von Apps das automatische Akzeptieren von Benachrichtigungen zur Zustimmung zu Kopplung und Datenschutz.
-- **Benutzeraktivitäten veröffentlichen:** Legen Sie diese Einstellung auf **Blockieren** fest, um geteilte Aktivitäten und die Ermittlungen von kürzlich verwendeten Ressourcen in der Programmumschaltung zu vermeiden.
-- **Nur lokale Aktivitäten:** Legen Sie diese Einstellungen auf **Blockieren** fest, um geteilte Aktivitäten und Ermittlungen von kürzlich in der Programmumschaltung verwendeten Ressourcen anhand von ausschließlich lokalen Aktivitäten zu vermeiden.
+- **Benutzeraktivitäten veröffentlichen:** **Blockieren** Sie diese Einstellung, um geteilte Aktivitäten und die Ermittlungen von kürzlich verwendeten Ressourcen in der Programmumschaltung zu vermeiden.
+- **Nur lokale Aktivitäten:** **Blockieren** Sie diese Einstellung, um geteilte Aktivitäten und Ermittlungen von kürzlich in der Programmumschaltung verwendeten Ressourcen anhand von ausschließlich lokalen Aktivitäten zu vermeiden.
 
 Sie können Informationen definieren, auf die alle Anwendungen auf dem Gerät zugreifen können. Zudem können Sie mithilfe von **App-bezogenen Datenschutzausnahmen** Ausnahmen für jede App definieren.
 
@@ -98,8 +98,8 @@ Sie können Informationen definieren, auf die alle Anwendungen auf dem Gerät zu
 - **Telefon**: Legen Sie fest, ob diese App auf das Telefon zugreifen darf.
 - **Radios**: Einige Apps verwenden Radios (z.B. Bluetooth) auf Ihrem Gerät, um Daten zu senden und zu empfangen, und müssen diese Radios ein- oder ausschalten. Legen Sie fest, ob diese App diese Radios steuern kann.
 - **Aufgaben**: Legen Sie fest, ob diese App auf Ihre Aufgaben zugreifen darf.
-- **Vertrauenswürdige Geräte**: Legen Sie fest, ob diese App vertrauenswürdige Geräte verwenden darf, d.h. bereits angeschlossene oder im Lieferumfang dieses PC, Tablets oder Telefons enthaltene Hardware. Hierzu zählen z.B. TV-Geräte und Projektoren.
-- **Feedback und Diagnose**: Legen Sie fest, ob diese App auf Diagnoseinformationen zugreifen darf.
+- **Vertrauenswürdige Geräte:** Legen Sie diese Einstellung fest, wenn diese App vertrauenswürdige Geräte verwenden soll, d.h. bereits angeschlossene oder im Lieferumfang dieses PC, Tablets oder Smartphones enthaltene Hardware. Hierzu zählen z.B. TV-Geräte und Projektoren.
+- **Feedback und Diagnose:** Legen Sie diese Einstellung fest, wenn diese App auf Diagnoseinformationen zugreifen soll.
 - **Mit Geräten synchronisieren**: Legen Sie fest, ob diese App automatisch Informationen mit Drahtlosgeräten teilen und synchronisieren darf, die nicht explizit mit Ihrem PC, Tablet oder Telefon gekoppelt sind.
 
 ## <a name="per-app-privacy-exceptions"></a>App-bezogene Datenschutzausnahmen
@@ -153,38 +153,38 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 -   **Game DVR (nur Desktop):** Konfiguriert, ob Aufzeichnen und Senden von Spielen zulässig ist.
 -   **Nur Apps aus dem Store**: Konfiguriert, ob Benutzer Apps von anderen Orten als aus dem App-Store installieren können.
 
-## <a name="edge-browser"></a>Microsoft Edge-Browser
+## <a name="microsoft-edge-browser"></a>Microsoft Edge-Browser
 
--   **Microsoft Edge-Browser (nur mobil):** Erlaubt die Verwendung des Edge-Webbrowsers auf dem Gerät.
--   **Adressleisten-Dropdown (nur Desktop):** Verhindert, dass Edge bei der Eingabe weiterhin eine Liste mit Vorschlägen in einer Dropdownliste anzeigt. So kann die zwischen Microsoft Edge und Microsoft-Diensten genutzte Netzwerkbandbreite minimiert werden.
--   **Favoriten zwischen Microsoft-Browsern synchronisieren (nur Desktop):** Erlaubt Windows das Synchronisieren von Favoriten zwischen Internet Explorer und Microsoft Edge.
--   **DNT-Kopfzeilen senden:** Konfiguriert den Edge-Browser zum Senden von DNT-Headern (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.
+-   **Microsoft Edge-Browser (nur mobil):** Lässt die Verwendung des Microsoft Edge-Webbrowsers auf dem Gerät zu.
+-   **Adressleisten-Dropdown (nur Desktop):** Verhindert, dass Microsoft Edge bei der Eingabe weiterhin eine Liste mit Vorschlägen in einer Dropdownliste anzeigt. Mit dieser Option kann die zwischen Microsoft Edge und Microsoft-Diensten genutzte Netzwerkbandbreite minimiert werden.
+-   **Favoriten zwischen Microsoft-Browsern synchronisieren (nur Desktop):** Lässt zu, dass Windows die Favoriten zwischen Internet Explorer und Microsoft Edge synchronisiert.
+-   **DNT-Kopfzeilen senden:** Konfiguriert Microsoft Edge für das Senden von DNT-Headern (Do Not Track, nicht nachverfolgen) an Websites, die Benutzer besuchen.
 -   **Cookies:** Erlaubt Browsern das Speichern von Internetcookies auf dem Gerät.
--   **Javascript:** Erlaubt die Ausführung von Skripts wie z.B. JavaScript im Edge-Browser.
+-   **Javascript:** Lässt die Ausführung von Skripts wie z.B. JavaScript im Microsoft Edge-Browser zu.
 -   **Popups:** Blockiert Popupfenster im Browser (gilt nur für Windows 10 Desktop).
 -   **Suchvorschläge:** Ermöglicht der Such-Engine, Websites während der Eingabe von Suchausdrücken vorzuschlagen.
 -   **Datenverkehr im Intranet an Internet Explorer senden:** Erlaubt Benutzern, Intranetsites in Internet Explorer zu öffnen (nur Windows 10 Desktop).
 -   **AutoAusfüllen:** Erlaubt Benutzern, die Einstellungen für AutoAusfüllen im Browser zu ändern (nur Windows 10 Desktop).
--   **Kennwort-Manager:** Aktiviert oder deaktiviert den Edge-Kennwort-Manager.
+-   **Kennwort-Manager:** Aktiviert oder deaktiviert den Kennwort-Manager von Microsoft Edge.
 -   **Speicherort der Websiteliste für den Unternehmensmodus:** Gibt an, wo Sie die Liste der Websites finden, die im Unternehmensmodus geöffnet werden. Benutzer können diese Liste nicht bearbeiten.<br>(Nur Windows 10 Desktop)
--   **Entwicklungstools:** Hindert den Endbenutzer daran, die Edge-Entwicklertools aufzurufen.
--   **Erweiterungen:** Erlaubt dem Benutzer, Edge-Erweiterungen auf dem Gerät zu installieren.
+-   **Entwicklungstools:** Hindert den Endbenutzer daran, die Microsoft Edge-Entwicklertools aufzurufen.
+-   **Erweiterungen:** Lässt zu, dass der Benutzer Microsoft Edge-Erweiterungen auf dem Gerät installiert.
 -   **InPrivate-Browsen:** Hindert den Endbenutzer daran, InPrivate-Browsersitzungen zu öffnen.
--   **Anzeigen der „Willkommen“-Seite:** Verhindert, dass die Einführungsseite bei der ersten Ausführung von Edge angezeigt wird.
+-   **Show first run page** (Seite für die erste Ausführung anzeigen): Mit dieser Einstellung können Sie verhindern, dass die Einführungsseite bei der ersten Ausführung von Microsoft Edge angezeigt wird.
     -   **URL für erste Ausführung:** Gibt die URL einer Seite an, die bei der ersten Ausführung von Microsoft Edge angezeigt wird (nur Windows 10 Mobile).
 -   **Startseiten:** Fügt eine Liste der Websites hinzu, die Sie im Microsoft Edge-Browser als Startseiten verwendet möchten (nur Desktop).
 -   **Änderungen an Startseite:** Ermöglicht Benutzern das Ändern der Startseiten, die beim Öffnen von Microsoft Edge angezeigt werden. Nutzen Sie die Einstellung der Startseiten, um die Seite oder Liste von Seiten zu erstellen, die beim Starten von Microsoft Edge geöffnet werden.
--   **Zugriff auf about:flags-Seite blockieren:** Hindert den Benutzer am Zugriff auf die about:flags-Seite in Microsoft Edge, die Entwickler- und experimentelle Einstellungen enthält.
--   **WebRTC-LocalHost-IP-Adresse:** Blockiert die Anzeige der Localhost-IP-Adresse des Benutzers bei Anrufen über das Internet-RTC-Protokoll.
+-   **Zugriff auf about:flags-Seite blockieren:** Hindert den Benutzer am Zugriff auf die about:flags-Seite in Microsoft Edge, die Entwicklereinstellungen und experimentelle Einstellungen enthält.
+-   **WebRTC-Localhost-IP-Adresse:** Blockiert die Anzeige der Localhost-IP-Adressen von Benutzern bei Telefonaten mit dem WebRTC-Protokoll.
 -   **Standardsuch-Engine:** Gibt die zu verwendende Standardsuch-Engine an. Endbenutzer können diesen Wert jederzeit ändern.
--   **Browserdaten beim Beenden löschen:** Löscht Verlauf und Browserdaten, wenn der Benutzer Edge beendet.
--   **Datenerfassung für Livekacheln:** Beendet das Sammeln von Daten durch Windows aus den Livekacheln, wenn der Benutzer eine Seite an das Startmenü von Microsoft Edge anheften.
+-   **Browserdaten beim Beenden löschen:** Löscht Verlauf und Browserdaten, wenn der Benutzer Microsoft Edge beendet.
+-   **Datenerfassung für Livekacheln:** Beendet das Sammeln von Daten durch Windows aus den Livekacheln, wenn Benutzer eine Seite an das Startmenü von Microsoft Edge anheften.
 -  **Favoritenliste:** Definiert den Pfad zur Favoritendatei. Beispiel: http://contoso.com/favorites.html.
--  **Favoritenänderungen einschränken:** Legen Sie **Blockieren** fest, um zu verhindern, dass Benutzer die Favoritenliste hinzufügen, importieren, sortieren oder bearbeiten. 
+-  **Änderungen an Favoriten einschränken** -  Legen Sie **Blockieren** fest, um zu verhindern, dass Benutzer die Favoritenliste hinzufügen, importieren, sortieren oder bearbeiten. 
 
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
-- **SmartScreen für Microsoft Edge**: Aktivieren Sie Edge SmartScreen für den Zugriff auf Website- und Dateidownloads.
+- **SmartScreen for Microsoft Edge** (SmartScreen für Microsoft Edge): aktiviert SmartScreen für Microsoft Edge für den Zugriff auf Website- und Dateidownloads.
 - **Zugriff auf schädliche Websites**: Hindern Sie Benutzer daran, die Warnungen des Windows Defender SmartScreen-Filters zu ignorieren, und blockieren Sie sie, damit sie die Website nicht besuchen.
 - **Download nicht überprüfter Dateien**: Hindern Sie Benutzer daran, die Warnungen des Windows Defender SmartScreen-Filters zu ignorieren, und blockieren Sie sie, damit sie nicht überprüfte Dateien herunterladen.
 
@@ -235,7 +235,27 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 
 ## <a name="start"></a>Starten
 
-- **Apps von der Taskleiste lösen:** Hindert den Benutzer daran, Apps vom Startmenü zu lösen.
+- **Startmenülayout:** Sie können eine XML-Datei hochladen, die Ihre Anpassungen, einschließlich der Reihenfolge der aufgeführten Apps und mehr, enthält, um das Startmenü auf Desktopgeräten anzupassen. Benutzer können das von Ihnen festgelegte Startmenülayout nicht ändern.
+- **Websites an Kacheln im Startmenü anheften:** Importieren Sie Bilder von Microsoft Edge, die im Windows-Startmenü von Desktopgeräten als Links angezeigt werden.
+- **Apps von der Taskleiste lösen:** Legen Sie **Blockieren** fest, damit der Benutzer keine Apps vom Startmenü lösen kann.
+- **Schneller Wechsel zwischen Benutzern:** Legen Sie **Blockieren** fest, um das Wechseln zwischen zwei gleichzeitig angemeldeten Benutzern ohne Abmeldung zu verhindern.
+- **Meistverwendete Apps:** Legen Sie **Blockieren** fest, um die Anzeige der meistverwendeten Apps im Startmenü auszublenden. Damit wird auch der entsprechende Schalter in der App „Einstellungen“ deaktiviert.
+- **Zuletzt hinzugefügte Apps:** Legen Sie **Blockieren** fest, um die Anzeige der zuletzt hinzugefügten Apps im Startmenü auszublenden. Damit wird auch der entsprechende Schalter in der App „Einstellungen“ deaktiviert.
+- **Startbildschirmmodus:** Wählen Sie aus, wie der Startbildschirm angezeigt werden soll. Sie können **Vollbild** oder **Kein Vollbild** festlegen.
+- **Zuletzt geöffnete Elemente in Sprunglisten:** Legen Sie **Blockieren** fest, um die Anzeige zuletzt verwendeter Sprunglisten im Startmenü auszublenden. Damit wird auch der entsprechende Schalter in der App „Einstellungen“ deaktiviert.
+- **App-Liste:** Legen Sie fest, wie die App „Einstellungen“ angezeigt werden soll. Folgende Optionen sind verfügbar: 
+  - Ausblenden
+  - Die App „Einstellungen“ reduzieren und deaktivieren 
+  - Die App „Einstellungen“ entfernen und deaktivieren
+- **Netzschaltersymbol:** Legen Sie **Blockieren** fest, um das Netzschaltersymbol im Startmenü auszublenden.
+- **Benutzerkachel:** Legen Sie **Blockieren** fest, um die Benutzerkachel im Startmenü auszublenden.
+  - **Sperren:** Legen Sie **Blockieren** fest, um die Option `Lock` in der Benutzerkachel im Startmenü auszublenden.
+  - **Abmelden:** Legen Sie **Blockieren** fest, um die Option `Sign out` in der Benutzerkachel im Startmenü auszublenden.
+- **Herunterfahren:** Legen Sie **Blockieren** fest, um die Optionen `Update and shut down` und `Shut down` im Netzschaltersymbol im Startmenü auszublenden.
+- **Energie sparen:** Legen Sie **Blockieren** fest, um die Option `Sleep` im Netzschaltersymbol im Startmenü auszublenden.
+- **Ruhezustand:** Legen Sie **Blockieren** fest, um die Option `Hibernate` im Netzschaltersymbol im Startmenü auszublenden.
+- **Benutzer wechseln:** Legen Sie **Blockieren** fest, um die Option `Switch account` im Startmenü auszublenden.
+- **Neustartoptionen:** Legen Sie **Blockieren** fest, um die Optionen `Update and restart` und `Restart` im Netzschaltersymbol im Startmenü auszublenden.
 - **Dokumente im Startmenü:** Blendet den Ordner „Dokumente“ im Windows-Startmenü aus oder ein.
 - **Downloads im Startmenü:** Blendet den Ordner „Downloads“ im Windows-Startmenü aus oder ein.
 - **Datei-Explorer im Startmenü:** Blendet die Datei-Explorer-App im Windows-Startmenü aus oder ein.
@@ -269,7 +289,7 @@ Ein Kiosk-Gerät führt in der Regel eine App oder eine bestimmte Gruppe von App
 #### <a name="single-app-kiosks"></a>Kiosks für einzelne Apps
 Legen Sie folgende Einstellungen fest:
 
-- **Benutzerkonto:** Geben Sie das (auf das Gerät bezogene) lokale Benutzerkonto, das AD-Domänenkonto oder die Azure AD-Kontoanmeldeinformationen ein, das bzw. die der Kiosk-App zugeordnet ist.
+- **Benutzerkonto:** Geben Sie das (auf das Gerät bezogene) lokale Benutzerkonto, AD-Domänenkonto oder Azure AD-Konto ein, das der Kiosk-App zugeordnet ist.
   - Lokales Konto: wird als `devicename\accountname`, `.\accountname` oder `accountname` eingegeben
   - Domänenkonto: wird als `domain\accountname` eingegeben
   - Azure AD-Konto: wird als `AzureAD\emailaddress` eingegeben Stellen Sie sicher, dass Sie „AzureAD“ eingeben, da es sich dabei um einen festen Domänennamen handelt. Geben Sie anschließend die Azure AD-E-Mail-Adresse ein. Geben Sie beispielsweise `AzureAD\user@contoso.onmicrosoft.com` ein.
@@ -300,7 +320,7 @@ Verwenden Sie die Schaltfläche **Hinzufügen**, um eine Kioskkonfiguration zu e
 
   [Erstellen eines Windows 10-Kiosks, in dem mehrere Apps ausgeführt werden](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file): bietet weitere Details zur Verwendung und Erstellung von XML-Dateien.
 
-- **Zugewiesene Benutzer**: Fügen Sie mindestens ein Benutzerkonto hinzu, das die von Ihnen hinzugefügten Apps verwenden kann. Wenn sich ein Benutzer mit einem Konto anmeldet, sind nur die in der Konfiguration definierten Apps verfügbar. Das Konto ist entweder für das Gerät lokal oder stellt eine Azure AD-Kontoanmeldung dar, die der Kiosk-App zugeordnet ist.
+- **Zugewiesene Benutzer**: Fügen Sie mindestens ein Benutzerkonto hinzu, das die von Ihnen hinzugefügten Apps verwenden kann. Wenn sich ein Benutzer mit einem Konto anmeldet, sind nur die in der Konfiguration definierten Apps verfügbar. Das Konto kann für das Gerät lokal oder ein Azure AD-Konto sein, das der Kiosk-App zugeordnet ist.
 
     Für Kiosks in öffentlichen Umgebungen, für die die automatische Anmeldung aktiviert ist, muss ein Benutzertyp mit den geringsten Berechtigungen (z.B. das lokale Standardbenutzerkonto) verwendet werden. Verwenden Sie das `domain\user@tenant.com`-Format, um ein Azure Active Directory-Konto (AD) für den Kioskmodus zu konfigurieren.
 
@@ -347,9 +367,9 @@ Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefunden
 ## <a name="network-proxy"></a>Netzwerkproxy
 
 -   **Proxyeinstellungen automatisch ermitteln:** Bei Aktivierung versucht das Gerät, den Pfad zu einem PAC-Skript zu finden.
--   **Proxyskript verwenden:** Wählen Sie diese Option, um einen Pfad zu einem PAC-Skript zum Konfigurieren des Proxyservers anzugeben.
+-   **Proxyskript verwenden:** Verwenden Sie diese Option, um einen Pfad zu einem PAC-Skript zum Konfigurieren des Proxyservers anzugeben.
     -   **Adress-URL für Setupskript:** Geben Sie die URL eines PAC-Skripts an, das Sie verwenden möchten, um den Proxyserver zu konfigurieren.
--   **Manuellen Proxyserver verwenden:** Wählen Sie diese Option, wenn Sie manuell Proxyserverinformationen angeben möchten.
+-   **Manuellen Proxyserver verwenden:** Verwenden Sie diese Option, wenn Sie Proxyserverinformationen manuell eingeben möchten.
     -   **Adresse**: Geben Sie den Namen oder die IP-Adresse des Proxyservers an.
     -   **Portnummer:** Geben Sie die Portnummer Ihres Proxyservers ein.
     -   **Proxyausnahmen:** Geben Sie URLs an, die den Proxyserver nicht verwenden dürfen. Trennen Sie die einzelnen Elemente durch Semikola.
@@ -374,12 +394,15 @@ Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefunden
 
 ## <a name="cloud-printer"></a>Clouddrucker
 
-- **URL für Druckerermittlung**: Endpunkt für die Erkennung von Clouddruckern
-- **Autoritäts-URL für Druckerzugriff**: Authentifizierungsendpunkt für den Abruf von OAuth-Token
-- **GUID für native Azure-Client-App**: Eine GUID einer Clientanwendung, die zum Abrufen von OAuth-Token von der OAuthAuthority berechtigt ist
-- **Druckdienstressourcen-URI**: OAuth-Ressourcen-URI für den im Azure-Portal konfigurierten Druckdienst
-- **Maximal abgefragte Drucker (nur Mobile)**: Maximale Anzahl von Druckern, die von einem Ermittlungsendpunkt abgefragt werden sollen
-- **Ressourcen-URI für Druckerermittlungsdienst**: OAuth-Ressourcen-URI für den im Azure-Portal konfigurierten Druckererkennungsdienst
+- **URL für Druckerermittlung:** Geben Sie die URL zur Ermittlung von Clouddruckern ein.
+- **Autoritäts-URL für Druckerzugriff:** Geben Sie die Authentifizierungsendpunkt-URL zum Abrufen von OAuth-Token ein. Geben Sie zum Beispiel `https://login.microsoftonline.com/your Azure AD Tenant ID` ein.
+- **GUID für native Azure-Client-App:** Geben Sie die GUID einer Clientanwendung ein, die zum Abrufen von OAuth-Tokens von der OAuthAuthority berechtigt ist.
+- **Druckdienstressourcen-URI:** Geben Sie den OAuth-Ressourcen-URI für den im Azure-Portal konfigurierten Druckdienst ein. Geben Sie zum Beispiel `http://MicrosoftEnterpriseCloudPrint/CloudPrint` ein.
+- **Maximum printers to query (Mobile only)** (Maximale Anzahl abzufragender Drucker (nur mobil)): Geben Sie die maximale Anzahl von Druckern ein, die abgefragt werden sollen. Geben Sie beispielsweise `10` ein.
+- **Ressourcen-URI für Druckerermittlungsdienst:** Geben Sie den OAuth-Ressourcen-URI für den im Azure-Portal konfigurierten Druckererkennungsdienst ein. Geben Sie zum Beispiel `http://MopriaDiscoveryService/CloudPrint` ein.
+
+> [!TIP]
+> Nachdem Sie [Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview) eingerichtet haben, können Sie diese Einstellungen konfigurieren und auf Windows-Geräten bereitstellen.
 
 ## <a name="local-printer"></a>Lokaler Drucker
 - **Drucker**: Liste der lokalen Drucker, die hinzugefügt wurden.
@@ -405,4 +428,4 @@ Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefunden
 - **RCS (nur mobil)**: Deaktivieren Sie die Funktion für RCS-Sendevorgänge/Empfangsvorgänge (Rich Communication Services) auf dem Gerät.
 
 ## <a name="more-information"></a>Weitere Informationen
-Weitere technische Details zu den einzelnen Einstellungen und den unterstützten Windows-Editionen finden Sie in der Referenz zum [Richtlinien-Konfigurationsdienstanbieter](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider) für Windows 10.
+Weitere technische Details zu den einzelnen Einstellungen und den unterstützten Windows-Editionen finden Sie in der Referenz zum [Richtlinien-Konfigurationsdienstanbieter für Windows 10](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider).

@@ -16,12 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c58cc56672409d954c4bf0b2829ea23d1b0a93df
-ms.sourcegitcommit: b01c607fc666254c560f5b60bd8a0def8e48197c
+ms.openlocfilehash: 3348f5e9673de410516cb2e2b774e20a4f17b036
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50132468"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51577003"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Neuerungen in Microsoft Intune (vorherige Monate)
 
@@ -46,7 +46,7 @@ Android Enterprise (zuvor Android for Work) unterstützt das Einschließen und A
 
 ### <a name="device-management"></a>Geräteverwaltung
 
-### <a name="export-all-devices-into-csv-files-in-ie-edge-or-chrome----2258071---"></a>Exportieren aller Geräte in CSV-Dateien in Internet Explorer, Microsoft Edge oder Chrome <!-- 2258071 -->
+### <a name="export-all-devices-into-csv-files-in-ie-microsoft-edge-or-chrome----2258071---"></a>Exportieren aller Geräte in CSV-Dateien in Internet Explorer, Microsoft Edge oder Chrome <!-- 2258071 -->
 Unter **Geräte** > **Alle Geräte** können Sie die Geräte mithilfe der Option **Exportieren** in eine CSV-formatierte Liste exportieren. Internet Explorer-Benutzer mit mehr als 10.000 Geräten können ihre Geräte in mehrere Dateien exportieren. Jede Datei verfügt über bis zu 10.000 Geräte.
 
 Edge- und Chrome-Benutzer mit mehr als 30.000 Geräten können ihre Geräte ebenfalls in mehrere Dateien exportieren. Jede Datei verfügt dann über bis zu 30.000 Geräte.
@@ -296,8 +296,8 @@ Es sind jetzt [zwei neue Datenschutzeinstellungen](device-restrictions-windows-1
 - **Benutzeraktivitäten veröffentlichen:** Legen Sie diese Einstellung auf **Blockieren** fest, um geteilte Aktivitäten und die Ermittlungen von kürzlich verwendeten Ressourcen in der Programmumschaltung zu vermeiden.
 - **Nur lokale Aktivitäten:** Legen Sie diese Einstellungen auf **Blockieren** fest, um geteilte Aktivitäten und Ermittlungen von kürzlich in der Programmumschaltung verwendeten Ressourcen anhand von ausschließlich lokalen Aktivitäten zu vermeiden.
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Neue Einstellungen für den Browser Microsoft Edge <!--1469166 -->
-Für Geräte, auf denen Microsoft Edge installiert ist, sind [zwei neue Einstellungen](device-restrictions-windows-10.md#edge-browser) verfügbar: **Path to favorites file** (Pfad zu häufig verwendeten Dateien) und **Changes to Favorites** (Änderungen an Favoriten).
+#### <a name="new-settings-for-the-microsoft-edge-browser---1469166---"></a>Neue Einstellungen für Microsoft Edge <!--1469166 -->
+Für Geräte, auf denen Microsoft Edge installiert ist, sind [zwei neue Einstellungen](device-restrictions-windows-10.md#microsoft-edge-browser) verfügbar: **Path to favorites file** (Pfad zu häufig verwendeten Dateien) und **Changes to Favorites** (Änderungen an Favoriten).
 
 ### <a name="app-management"></a>App-Verwaltung
 
@@ -1267,7 +1267,7 @@ In dieser Version haben wir neue Einstellungen für das Windows 10-Geräteeinsch
 -  Datenschutz
 -  Suchen
 -  Windows-Blickpunkt
--  Edgebrowser
+-  Microsoft Edge
 
 Weitere Informationen zu Einstellungen für Windows 10 finden Sie unter [Einstellungen für Geräteeinschränkungen für Windows 10 und höher in Microsoft Intune](device-restrictions-windows-10.md).
 

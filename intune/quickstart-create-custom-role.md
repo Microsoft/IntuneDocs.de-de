@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: 5c83af252b1c728b9e3d4015cdc8bb4fd3668ad1
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410768"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561923"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Schnellstart: Erstellen und Zuweisen einer benutzerdefinierten Rolle
 
@@ -64,7 +64,9 @@ Wenn Sie die neue benutzerdefinierte Rolle nicht mehr verwenden möchten, könne
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In diesem Schnellstart haben Sie eine benutzerdefinierte Sicherheitsvorgangsrolle erstellt und diese einer Gruppe zugewiesen. Im folgenden Artikel erhalten Sie weitere Informationen zu Sicherheitsproblemen.
+In diesem Schnellstart haben Sie eine benutzerdefinierte Sicherheitsvorgangsrolle erstellt und diese einer Gruppe zugewiesen. Weitere Informationen finden Sie unter [Role-based administration control (RBAC) with Microsoft Intune (Rollenbasierte Zugriffssteuerung mit Microsoft Intune)](role-based-access-control.md).
+
+Weitere Informationen zu Intune erhalten Sie im nächsten Schnellstart.
 
 > [!div class="nextstepaction"]
-> [Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune](device-compliance-get-started.md)
+> [Schnellstart: Erstellen eines E-Mail-Geräteprofils für iOS](quickstart-email-profile.md)

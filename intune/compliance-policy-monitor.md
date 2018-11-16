@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c103049d22c9834ecb01065686e8678144c9cae
-ms.sourcegitcommit: 8a22afcc8c7479c437c8c66da9cb2117890f0ab0
+ms.openlocfilehash: 8711b4c71c3581bde9ed1de8a5cc02f6b1a07ca7
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49410362"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576901"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
@@ -88,9 +88,7 @@ Ihnen werden weitere Details zu den Geräten mit diesem Zustand angezeigt, einsc
 
 ![Bild vom Dashboard mit weiteren Details zum Gerät mit diesem spezifischen Zustand](./media/compliance-policy-monitor/drill-down-details.png)
 
-Wenn Sie alle Geräte im Besitz eines spezifischen Benutzers anzeigen möchten, können Sie das Berichtsdiagramm filtern, indem Sie die E-Mail-Adresse des Benutzers eingeben:
-
-![Filtern nach E-Mail-Adressen, um alle Geräte des spezifischen Benutzers anzuzeigen](./media/compliance-policy-monitor/idc-3.png)
+Wenn Sie alle Geräte im Besitz eines spezifischen Benutzers anzeigen möchten, können Sie außerdem das Berichtsdiagramm filtern, indem Sie die E-Mail-Adresse des Benutzers eingeben:
 
 #### <a name="filter-and-columns"></a>Filter und Spalten
 

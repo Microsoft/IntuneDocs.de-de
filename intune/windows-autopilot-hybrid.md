@@ -15,12 +15,12 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 120478644743619dbcfc5e8e36806a1109924331
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
+ms.openlocfilehash: 7ce54f3bc51735c763359b3e59832454d0a89fad
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50972773"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298087"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot (Vorschauversion)
 Sie können in Azure Active Directory Hybrid eingebundenen Geräte mithilfe von Intune und Windows Autopilot einrichten. Führen Sie dazu die folgenden Schritte aus.
@@ -30,7 +30,7 @@ Sie können in Azure Active Directory Hybrid eingebundenen Geräte mithilfe von 
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- Erfolgreiche Konfiguration von [in Azure Active Directory Hybrid eingebundenen Geräten](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains)
+- Erfolgreiche Konfiguration von [in Azure Active Directory Hybrid eingebundenen Geräten](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)
     - Stellen Sie sicher, dass Sie [die Registrierung mithilfe des Cmdlets „Get-MsolDevice“ überprüfen]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration).
 
 Für die Registrierung müssen die Geräte über Folgendes verfügen:
@@ -110,7 +110,7 @@ Die Organisationseinheit, die die Berechtigung zum Erstellen von Computern erhal
 
 Der Intune-Connector für Active Directory muss auf einem Computer mit Windows Server 2016 installiert sein, der Zugriff auf das Internet und die Active Directory-Instanz hat. Für höhere Skalierbarkeit und Verfügbarkeit oder Unterstützung mehrerer Active Directory-Domänen können Sie mehrere Connectors in der Umgebung installieren. Es wird empfohlen, den Connector auf einem Server zu installieren, auf dem keine anderen Intune-Connectors ausgeführt werden.
 
-1. Wählen Sie in Intune im Azure-Portal **Geräteregistrierung** > **Windows-Registrierung** > **Intune-Connector für Active Directory (Vorschau)** > **Connector hinzufügen** aus. 
+1. Klicken Sie unter [Intune](https://aka.ms/intuneportal) auf **Geräteregistrierung** > **Windows-Registrierung** > **Intune-Connector für Active Directory (Vorschau)** > **Connector hinzufügen**. 
 2. Folgen Sie den Anweisungen, um den Connector herunterzuladen.
 3. Öffnen Sie die heruntergeladene Connector-Setupdatei (ODJConnectorBootstrapper.exe), um den Connector zu installieren.
 4. Wählen Sie am Ende des Setups die Option **Konfigurieren** aus.
@@ -124,7 +124,7 @@ Wenn ein Webproxy in der Netzwerkumgebung vorhanden ist, folgen Sie den hier dar
 
 
 ## <a name="create-a-device-group"></a>Erstellen einer Gerätegruppe
-1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Option **Gruppen** > **Neue Gruppe** aus.
+1. Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Gruppen** > **Neue Gruppe**.
 2. Auf dem Blatt **Gruppe**:
     1. Wählen Sie für **Gruppentyp** die Option **Sicherheit**.
     2. Geben Sie einen **Gruppennamen** und eine **Gruppenbeschreibung** ein.
@@ -175,7 +175,7 @@ Nachdem Autopilot-Geräte registriert sind, werden die Gerätenamen in den Hostn
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Erstellen und Zuweisen eines Autopilot-Bereitstellungsprofils
 Autopilot-Bereitstellungsprofile werden verwendet, um die Autopilot-Geräte zu konfigurieren.
 
-1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Windows-Registrierung** > **Bereitstellungsprofil** > **Profil erstellen** aus.
+1. Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Geräteregistrierung** > **Windows-Registrierung** > **Bereitstellungsprofile** > **Profil erstellen**.
 2. Geben Sie einen **Namen** und optional eine **Beschreibung** ein.
 3. Wählen Sie für **Bereitstellungsmodus** **Benutzergesteuert** aus.
 4. Wählen Sie im Feld **Verknüpfen mit Azure AD als** die Option **In Azure AD Hybrid eingebunden (Vorschau)**.
@@ -188,21 +188,21 @@ Es dauert etwa 15 Minuten, bis sich der Status des Geräteprofils von **Nicht zu
 
 ## <a name="turn-on-the-enrollment-status-page-optional"></a>Aktivieren der Registrierungsstatusseite (optional)
 
-1.  Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Geräteregistrierung** > **Windows-Registrierung** > **Seite zum Registrierungsstatus (Vorschau)**.
-2.  Klicken Sie auf dem Blatt **Seite zum Registrierungsstatus** auf **Standard** > **Einstellungen**.
-3.  Klicken Sie für **Show app and profile installation progress** (Installationsfortschritt für die App und das Profil anzeigen) auf **Ja**.
+1. Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Geräteregistrierung** > **Windows-Registrierung** > **Seite zum Registrierungsstatus (Vorschau)**.
+2. Klicken Sie auf dem Blatt **Seite zum Registrierungsstatus** auf **Standard** > **Einstellungen**.
+3. Klicken Sie für **Show app and profile installation progress** (Installationsfortschritt für die App und das Profil anzeigen) auf **Ja**.
 4. Konfigurieren Sie die anderen Optionen je nach Bedarf.
-5.  Wählen Sie **Speichern** aus.
+5. Wählen Sie **Speichern** aus.
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>Erstellen und Zuweisen eines Domänenbeitrittsprofils
 
-1. Klicken Sie in **Microsoft Intune** auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+1. Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 2. Geben Sie die folgenden Eigenschaften ein:
    - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein.
    - **Plattform:** Wählen Sie **Windows 10 und höher** aus.
    - **Profiltyp**: Wählen Sie **Domänenbeitritt (Vorschau)** aus.
-3.  Wählen Sie **Einstellungen** aus, und geben Sie ein **Computernamenspräfix**, einen **Domänennamen** und eine **Organisationseinheit** (optional) ein. 
+3. Wählen Sie **Einstellungen** aus, und geben Sie ein **Computernamenspräfix**, einen **Domänennamen** und eine **Organisationseinheit** (optional) ein. 
 4. Klicken Sie auf **OK** > **Erstellen**. Das Profil wird erstellt und in der Liste angezeigt.
 5. Um das Profil zuzuweisen, führen Sie die Schritte unter [Zuweisen eines Geräteprofils](device-profile-assign.md#assign-a-device-profile) aus. 
 

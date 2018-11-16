@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 8ae7a15f623b82cabed5314c4770c2edef902414
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 891b50b2280636c7a5df8ecc1a01bb10723122b5
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253560"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576728"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Was ist die Microsoft Intune Geräteverwaltung?
 
@@ -37,7 +37,7 @@ Die Workload **Geräte** liefert Informationen zu den verwalteten Geräten und e
    - Unter **Übersicht** wird eine Momentaufnahme der registrierten Geräte angezeigt. Außerdem wird angezeigt, wie viele Geräte die verschiedenen Plattformen verwenden, einschließlich Android, iOS usw.
    - Unter **Alle Geräte** wird eine Liste der registrierten Geräte angezeigt, die Sie verwalten.
 
-     Verwenden Sie das **Export**-Feature, um eine CSV-Liste aller Geräte in Zehntausender- (Internet Explorer) bzw. Dreißigtausenderschritten (Microsoft Edge, Chrome) anzuzeigen.
+     Verwenden Sie das **Export**-Feature, um eine CSV-Liste aller Geräte in Zehntausender- (Internet Explorer) bzw. Dreißigtausenderschritten (Microsoft Edge, Chrome) zu erstellen.
 
      Wählen Sie ein beliebiges Gerät aus, [um zusätzliche Details zu dem jeweiligen Gerät anzuzeigen](device-inventory.md), einschließlich Hardwaredetails, installierten Apps, dem Status der Konformitätsrichtlinie usw.
 

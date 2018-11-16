@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4287322fd494c97cf24feb8cc16435a4405f2af
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
+ms.openlocfilehash: a823ea2f04d8e3a8f1ca5a2f1364060840686501
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50150102"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561940"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Entfernen von SCEP- und PKCS-Zertifikaten in Microsoft Intune
 
@@ -131,7 +131,7 @@ In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und e
   - der Administrator den Benutzer oder die Gruppe aus Azure AD entfernt
   - der Administrator das PKCS-Profil ändert oder aktualisiert
 
-## <a name="android--android-enterprise-devices"></a>Android- und Android Enterprise-Geräte
+## <a name="android-knox-devices"></a>Android KNOX-Geräte
 
 #### <a name="scep-certificates"></a>SCEP-Zertifikate
 
@@ -177,6 +177,10 @@ In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und e
   - der Administrator das PKCS-Profil ändert oder aktualisiert
   - das Konfigurationsprofil aus der Gruppenzuweisung entfernt wird
   - die Konformitätsrichtlinie aus der Gruppenzuweisung entfernt wird 
+  
+  
+> [!NOTE]
+> Android for Work-Geräte sind für die zuvor genannten Szenarios nicht freigegeben. Android-Legacygeräte (jedes Profilgerät, das kein Samsung- oder Work-Gerät ist) sind nicht für die Entfernung von Zertifikaten freigegeben. 
 
 ## <a name="macos-certificates"></a>macOS-Zertifikate
 

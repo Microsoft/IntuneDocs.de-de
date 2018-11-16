@@ -5,19 +5,19 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 6/06/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 0e82a63cfbbb0780566f9dc1f4ddf0b914e4ca2c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425154"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576833"
 ---
 # <a name="manage-software-updates-in-intune"></a>Verwalten von Softwareupdates in Intune
 
@@ -36,7 +36,7 @@ Vereinfachen Sie die Updateverwaltung mithilfe von Windows Update for Business. 
       
   Weitere Informationen zu den verfügbaren Wartungskanälen finden Sie unter [Übersicht über Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
 - **Zurückstellungseinstellungen:** Konfigurieren Sie Einstellungen für die Zurückstellung von Updates, um Updateinstallationen für Gruppen von Geräten zu verzögern. Verwenden Sie diese Einstellungen zum Staffeln Ihres Updaterollouts, damit Sie den Fortschritt verfolgen können.
-- **Aussetzung:** Verschieben Sie die Installation von Updates, falls im Rahmen des Updaterollouts ein Problem auftreten sollte.
+- **Wird angehalten:** Wenn bei dem Rollout des Updates ein Fehler auftritt, können Sie die Installation des Updates verschieben. 
 - **Wartungsfenster:** Konfigurieren Sie die Zeiten, in denen Updates installiert werden können.
 - **Aktualisierungstyp:** Wählen Sie aus, welche Arten von Updates installiert werden. Beispiele wären etwa Qualitätsupdates, Funktionsupdates oder Treiber.
 - **Installationsverhalten**: Konfiguriert, wie das Update installiert wird. Hier können Sie beispielsweise festlegen, ob das Gerät nach der Installation automatisch neu gestartet werden soll.
@@ -59,30 +59,23 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 
     ![Windows-Einstellung für Diagnose- und Nutzungsdaten](./media/telemetry-basic.png)
 
-    Sie können diese Einstellung entweder manuell konfigurieren oder ein Intune-Geräteeinschränkungsprofil für Windows 10 und höher verwenden. Legen Sie hierzu die Einstellung **Allgemein** > **Übermittlung von Diagnosedaten** mindestens auf **Basic** fest. Weitere Informationen zu Geräteprofilen finden Sie unter [Konfigurieren von Einstellungen für Geräteeinschränkungen](device-restrictions-configure.md).
+    Sie können diese Einstellung manuell konfigurieren oder ein Intune-Profil für Windows 10 und höher verwenden (klicken Sie auf **Geräteeinschränkungen** > **Reporting and Telemetry** (Berichterstattung und Telemetrie), und legen Sie für **Share usage data** (Nutzungsdaten freigeben) mindestens **Basic** fest). Weitere Informationen zu Geräteprofilen finden Sie unter [Konfigurieren von Einstellungen für Geräteeinschränkungen](device-restrictions-configure.md).
 
-- In der Intune-Verwaltungskonsole stehen vier Einstellungen zum Steuern des Verhaltens von Softwareupdates zur Verfügung. Diese Einstellungen sind Teil der allgemeinen Konfigurationsrichtlinie für Desktop- und Mobilgeräte unter Windows 10:
-  - **Automatische Updates zulassen**
-  - **Vorabfeatures zulassen**
-  - **Geplanter Installationstag**
-  - **Geplante Installationszeit**
+- Im klassischen Azure-Portal steht auch eine begrenzte Anzahl anderer Windows 10-Updateeinstellungen im Gerätekonfigurationsprofil zur Verfügung. Falls Sie eine dieser Einstellungen konfiguriert haben und zum Azure-Portal migrieren, sollten Sie unbedingt die folgenden Schritte ausführen:
 
-  Im klassischen Azure-Portal steht auch eine begrenzte Anzahl anderer Windows 10-Updateeinstellungen im Gerätekonfigurationsprofil zur Verfügung. Falls Sie diese Einstellungen konfiguriert haben und zum Azure-Portal migrieren, sollten Sie unbedingt die folgenden Schritte ausführen:
-
-1. Erstellen Sie im Azure-Portal Windows 10-Updateringe mit den erforderlichen Einstellungen. Die Einstellung **Vorabfeatures zulassen** wird im Azure-Portal nicht unterstützt, da sie für die neuesten Windows 10-Builds nicht mehr relevant ist. Die drei anderen Einstellungen können zusammen mit anderen Windows 10-Updateeinstellungen beim Erstellen von Updateringen konfiguriert werden.
+  1. Erstellen Sie im Azure-Portal Windows 10-Updateringe mit den erforderlichen Einstellungen. Die Einstellung **Vorabfeatures zulassen** wird im Azure-Portal nicht unterstützt, da sie für die neuesten Windows 10-Builds nicht mehr relevant ist. Die anderen Einstellungen können zusammen mit anderen Windows 10-Updateeinstellungen beim Erstellen von Updateringen konfiguriert werden.
 
    > [!NOTE]
    > Im klassischen Portal erstellte Windows 10-Updateeinstellungen werden nach der Migration nicht im Azure-Portal angezeigt. Allerdings werden diese Einstellungen angewendet. Wenn Sie diese Einstellungen migrieren und die migrierte Richtlinie über das Azure-Portal bearbeiten, werden die Einstellungen aus der Richtlinie entfernt.
 
-2. Löschen Sie die Updateeinstellungen im klassischen Portal. Wenn Sie zum Azure-Portal migriert sind und die gleichen Einstellungen einem Updatering hinzufügen, müssen Sie die Einstellungen im klassischen Portal löschen, um potenzielle Richtlinienkonflikte zu vermeiden. Zum Beispiel kommt es zu einem Konflikt, wenn die gleiche Einstellung mit verschiedenen Werten konfiguriert wird. Dies ist nicht einfach zu ermitteln, da die im klassischen Portal konfigurierte Einstellung nicht im Azure-Portal angezeigt wird.
+  2. Löschen Sie die Updateeinstellungen im klassischen Portal. Wenn Sie zum Azure-Portal migriert sind und die gleichen Einstellungen einem Updatering hinzufügen, löschen Sie die Einstellungen im klassischen Portal, um potenzielle Richtlinienkonflikte zu vermeiden. Zum Beispiel kommt es zu einem Konflikt, wenn die gleiche Einstellung mit verschiedenen Werten konfiguriert wird. Dies ist nicht einfach zu ermitteln, da die im klassischen Portal konfigurierte Einstellung nicht im Azure-Portal angezeigt wird.
 
 ## <a name="create-and-assign-update-rings"></a>Erstellen und Zuweisen von Updateringen
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
-3. Wählen Sie **Softwareupdates** > **Windows 10-Updateringe** > **Erstellen** aus.
-4. Geben Sie einen Namen und (optional) eine Beschreibung ein, und klicken Sie dann auf **Konfigurieren**.
-5. Geben Sie unter **Einstellungen** die folgenden Informationen ein:
+1. Klicken Sie im [Azure-Portal](https://portal.azure.com) auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie anschließend auf **Microsoft Intune**.
+2. Wählen Sie **Softwareupdates** > **Windows 10-Updateringe** > **Erstellen** aus.
+3. Geben Sie einen Namen und (optional) eine Beschreibung ein, und klicken Sie dann auf **Konfigurieren**.
+4. Geben Sie unter **Einstellungen** die folgenden Informationen ein:
 
    - **Wartungskanal**: Legen Sie den Kanal fest, von dem das Gerät Windows-Updates erhält.
    - **Microsoft-Produktupdates**: Wählen Sie aus, dass nach App-Updates von Microsoft Update gesucht werden soll.
@@ -94,25 +87,25 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 
    - **Rückstellungszeitraum für Qualitätsupdates (Tage)**: Geben Sie die Anzahl der Tage ein, um die die Qualitätsupdates zurückgestellt werden. Sie können diese Qualitätsupdates um bis zu 30 Tage nach der Veröffentlichung zurückstellen.
 
-     Bei Qualitätsupdates handelt es sich in der Regel um Korrekturen und Verbesserungen für bereits vorhandene Windows-Funktionen. Sie werden am ersten Dienstag jedes Monats veröffentlicht. Sie können jedoch jederzeit von Microsoft veröffentlicht werden. Sie können definieren, ob und wie lange Sie die Qualitätsupdates zurückstellen, sobald sie auf Windows Update verfügbar sind.
+     Bei Qualitätsupdates handelt es sich in der Regel um Korrekturen und Verbesserungen für bereits vorhandene Windows-Funktionen. Sie werden am zweiten Dienstag jedes Monats veröffentlicht. Dies Updates („B“-Releases) sind nur für Qualitätsupdates über Windows Update verfügbar, obwohl jederzeit weitere Updates von Microsoft veröffentlicht werden können. Sie können definieren, ob und wie lange Sie die Qualitätsupdates zurückstellen, sobald diese auf Windows Update verfügbar sind. Weitere Informationen finden Sie unter [Bereitstellen von Updates mit Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
 
    - **Rückstellungszeitraum für Featureupdates (Tage)**: Geben Sie die Anzahl der Tage ein, um die die Featureupdates zurückgestellt werden sollen. Sie können Featureupdates um bis zu 180 Tage nach der Veröffentlichung zurückstellen.
 
      Bei Featureupdates handelt es sich in der Regel um neue Features für Windows. Nachdem Sie die Einstellung **Wartungskanal** konfiguriert haben, können Sie bestimmen, ob und wie lange Sie die Featureupdates zurückstellen, sobald sie auf Windows Update verfügbar sind.
 
-     Beispiel: **Wenn der Wartungskanal auf „Halbjährlicher Kanal (gezielt)“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Angenommen, das Featureupdate X ist auf Windows Update im halbjährlichen Kanal (gezielt) erstmals im Januar öffentlich verfügbar. Dann erhält das Gerät das Update erst im Februar, 30 Tage nach der Veröffentlichung.
+     Beispiel: **Wenn der Wartungskanal auf „Halbjährlicher Kanal (gezielt)“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Angenommen, das Featureupdate X ist auf Windows Update im halbjährlichen Kanal (gezielt) erstmals im Januar öffentlich verfügbar. Dann erhält das Gerät das Update erst im Februar, also 30 Tage nach der Veröffentlichung.
 
      **Wenn der Wartungskanal auf „Halbjährlicher Kanal“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Angenommen, das Featureupdate X ist auf Windows-Update erstmals im Januar als halbjährlicher Kanal (gezielt) öffentlich verfügbar. Vier Monate später, im April, wird das Funktionsupdate X dann im halbjährlichen Kanal veröffentlicht. In diesem Fall erhält das Gerät das Featureupdate 30 Tage nach dieser Veröffentlichung im halbjährlichen Kanal (also im Mai).
 
    - **Downloadmodus „Übermittlungsoptimierung“**: Wählen Sie die Methode aus, für welche Geräte Windows-Updates heruntergeladen werden sollen. Ausführliche Informationen finden Sie unter [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
 
-6. Klicken Sie auf **OK**, wenn Sie fertig sind. Klicken Sie unter **Updatering erstellen** auf **Erstellen**.
+5. Klicken Sie auf **OK**, wenn Sie fertig sind. Klicken Sie unter **Updatering erstellen** auf **Erstellen**.
 
 Der neue Updatering wird in der Liste mit den Updateringen angezeigt.
 
 1. Wählen Sie zum Zuweisen des Rings in der Liste mit den Updateringen einen Ring aus, und klicken Sie anschließend auf der Registerkarte mit dem *Namen des Rings* auf **Zuweisungen**.
 2. Klicken Sie auf der nächsten Registerkarte auf **Select groups to include** (Einzuschließende Gruppen auswählen), und wählen Sie anschließend die Gruppen aus, denen Sie diesen Ring zuweisen möchten.
-3. Wählen Sie abschließend **Auswählen** aus, um die Zuweisung abzuschließen.
+3. Klicken Sie abschließend auf **Auswählen**, um die Zuweisung abzuschließen.
 
 ## <a name="update-compliance-reporting"></a>Updateüberwachungsberichte
 Sie können die Updatekompatibilität in Intune anzeigen oder die kostenlose Lösung „Updatekonformität“ verwenden.
@@ -120,10 +113,9 @@ Sie können die Updatekompatibilität in Intune anzeigen oder die kostenlose Lö
 ### <a name="review-update-compliance-in-intune"></a>Prüfen der Updatekompatibilität in Intune 
 <!-- 1352223 --> Überprüfen Sie einen Richtlinienbericht, um den Bereitstellungsstatus für die Windows 10-Updateringe anzuzeigen, die Sie konfiguriert haben.
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie auf **Microsoft Intune**.
-3. Wählen Sie **Softwareupdates** > **Übersicht** aus. Hier finden Sie allgemeine Informationen zum Status der Updateringe, die Sie zugewiesen haben.
-4. Öffnen Sie einen der folgenden Berichte:
+1. Klicken Sie im [Azure-Portal](https://portal.azure.com) auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie anschließend auf **Microsoft Intune**.
+2. Wählen Sie **Softwareupdates** > **Übersicht** aus. Hier finden Sie allgemeine Informationen zum Status der Updateringe, die Sie zugewiesen haben.
+3. Öffnen Sie einen der folgenden Berichte:
 
    **Für alle Bereitstellungsringe**:  
    1. Unter **Softwareupdates** > **Windows 10-Updateringe**
@@ -138,7 +130,7 @@ Sie können die Updatekompatibilität in Intune anzeigen oder die kostenlose Lö
 ### <a name="review-update-compliance-using-oms"></a>Prüfen der Updatekompatibilität mithilfe von OMS
 Windows 10-Updaterollouts können mithilfe der kostenlosen Lösung „Updatekonformität“ überwacht werden. Ausführliche Informationen finden Sie unter [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Überwachen von Windows-Updates mithilfe der Updateüberwachung). Bei Verwendung dieser Lösung können Sie eine Organisations-ID für jedes Ihrer mit Intune verwalteten Windows 10-Geräte bereitstellen, für das Sie Updateüberwachungsberichte verwenden möchten.
 
-Die Organisations-ID können Sie in der Intune-Konsole mithilfe der OMA-URI-Einstellungen einer benutzerdefinierten Richtlinie konfigurieren. Ausführliche Informationen finden Sie unter [Intune-Richtlinieneinstellungen für Windows 10-Geräte in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
+Die Organisations-ID können Sie in Intune mithilfe der OMA-URI-Einstellungen einer benutzerdefinierten Richtlinie konfigurieren. Ausführliche Informationen finden Sie unter [Intune-Richtlinieneinstellungen für Windows 10-Geräte in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
 Der OMA-URI-Pfad (Groß-/Kleinschreibung beachten) zum Konfigurieren der Organisations-ID lautet „./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID“.
 
@@ -158,10 +150,9 @@ Unter **OMA-URI-Einstellung hinzufügen oder bearbeiten** können Sie beispielsw
 ## <a name="pause-updates"></a>Pausieren von Updates
 Sie können für ein Gerät den Bezug von Funktions- oder Qualitätsupdates für einen Zeitraum von bis zu 35 Tagen aussetzen (ab dem Zeitpunkt, ab dem die Updates ausgesetzt wurden). Nach Verstreichen der maximalen Anzahl von Tagen wird die Aussetzung automatisch aufgehoben, und das Gerät sucht bei Windows Update nach geeigneten Updates. Danach können Sie die Updates erneut aussetzen.
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
-3. Wählen Sie **Softwareupdates** > **Windows 10-Updateringe** aus.
-4. Klicken Sie in der Updateringliste auf den anzuhaltenden Ring und anschließend auf **...** > **Qualitätsupdate anhalten** > oder **Featureupdate anhalten** (je nachdem, welche Art von Updates Sie anhalten möchten).
+1. Klicken Sie im [Azure-Portal](https://portal.azure.com) auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie anschließend auf **Microsoft Intune**.
+2. Wählen Sie **Softwareupdates** > **Windows 10-Updateringe** aus.
+3. Klicken Sie in der Updateringliste auf den anzuhaltenden Ring und anschließend auf **...** > **Qualitätsupdate anhalten** > oder **Featureupdate anhalten** (je nachdem, welche Art von Updates Sie anhalten möchten).
 
 > [!IMPORTANT]
 > Wenn Sie einen Aussetzungsbefehl erteilen, geht dieser bei den Geräten ein, wenn sie das nächste Mal mit dem Dienst kommunizieren. Es kann vorkommen, dass die Geräte vor der Kommunikation ein geplantes Update installieren.

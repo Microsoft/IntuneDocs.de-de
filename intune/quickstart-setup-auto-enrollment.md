@@ -5,14 +5,14 @@ services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: quickstart
-ms.date: 09/21/2018
+ms.date: 11/05/2018
 ms.author: erikje
-ms.openlocfilehash: 3b713f090fb6ada884a269e286f55f6e1b1087c4
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: c219629968fbd66ee14abf61786a791bf7f5e2e0
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581649"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510787"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Schnellstart: Einrichten der automatischen Registrierung für Windows 10-Geräte
 
@@ -20,8 +20,9 @@ In dieser Schnellstartanleitung richten Sie Microsoft Intune so ein, dass Gerät
 
 Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für eine kostenlose Testversion](free-trial-sign-up.md).
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
+- Microsoft Intune-Abonnement: [Registrieren Sie sich für eine kostenlose Testversion](free-trial-sign-up.md).
 - Um dieser Schnellstartanleitung zu folgen, müssen Sie zunächst [einen Benutzer](quickstart-create-user.md) und [eine Gruppe erstellen](quickstart-create-group.md).
 
 ## <a name="sign-in-to-intune"></a>Anmelden bei Intune
@@ -30,17 +31,33 @@ Registrieren Sie sich bei [Intune](https://aka.ms/intuneportal) als globaler Adm
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Einrichten der automatischen Registrierung von Windows 10
 
-Für dieses Beispiel verwenden Sie die MDM-Registrierung, sodass die unternehmenseigenen Gerte und BYO-Geräte automatisch registriert werden können.
+In diesem Beispiel wird die MDM-Registrierung verwendet, damit sowohl unternehmenseigenen Geräte als auch BYO-Geräte automatisch registriert werden können. Sie können sich für ein kostenloses Azure Active Directory Premium-Abonnement registrieren.
 
-1. Wählen Sie in Azure **Azure Active Directory** > **Mobilität (MDM und MAM)** > **Microsoft Intune** > **Einige** aus.
-![Browser](media/quickstart-setup-auto-enrollment/setup-automatic-enrollment-win10.png)
-2. Klicken Sie auf **Gruppen auswählen** > **Contoso Tester** > **Auswählen**.
-3. Verwenden Sie die Standardwerte für die folgenden URLs:
-    - URL für MDM-Nutzungsbedingungen
-    - URL für MDM-Ermittlung
-    - MDM Compliance-URL
-4. Wählen Sie **Speichern** aus.
-5. Melden Sie sich als Benutzer in der Gruppe auf einem Windows 10-Gerät an, und befolgen Sie die Anweisungen.
+1. Klicken Sie in Azure auf **Azure Active Directory** > **Mobility (MDM and MAM)** (Mobilität (MDM und MAM)).
+2. Klicken Sie auf **Holen Sie sich die kostenlose Premium-Testversion, um dieses Feature zu verwenden**. Wenn Sie diese Option verwenden, können Sie eine automatische Registrierung über die kostenlose Premium-Testversion von Azure Active Directory durchführen. 
+
+    ![Auswahl der Premium-Testversion für Azure Active Directory](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
+
+    Klicken Sie auf die Option **Enterprise Mobility + Security E5**, um eine kostenlose Testversion zu erhalten. Anschließend müssen Sie auf **Aktivieren** klicken, um die kostenlose Testversion zu aktivieren.
+
+    ![Auswahl der Option „Enterprise Mobility + Security E5“ für die kostenlose Testversion](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
+
+3. Wählen Sie **Microsoft Intune** aus. 
+
+    ![Auswahl von Microsoft Intune aus der Liste](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-03.png)
+
+4. Klicken Sie im **MDM-Benutzerbereich** auf **Some** (Einige), um die automatische MDM-Registrierung zum Verwalten von Unternehmensdaten auf den Windows-Geräten Ihrer Mitarbeiter zu verwenden. Die automatische MDM-Registrierung wird für mit Azure AD verknüpfte Geräte und BYOD-Szenarios konfiguriert.
+
+    ![Auswahl von „Some“ (Einige) aus der Liste „Konfigurieren“](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
+
+5. Klicken Sie auf **Gruppen auswählen** > **Contoso Testers** > **Auswählen**, um die Gruppe zuzuweisen.
+
+    ![Auswahl der zu registrierenden Gruppe](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
+
+6. Klicken Sie unter **MAM Users scope** (MAM-Benutzerbereich) auf **Some** (Einige), um Daten auf den Geräten Ihrer Mitarbeiter zu verwalten.
+7. Klicken Sie auf **Gruppen auswählen** > **Contoso Testers** > **Auswählen**, um die Gruppe zuzuweisen. 
+8. Sie können die Standardwerte als verbleibende Konfigurationswerte verwenden.
+9. Wählen Sie **Speichern** aus.
 
 ## <a name="clean-up-resources"></a>Bereinigen der Ressourcen
 
@@ -48,7 +65,9 @@ Lesen Sie den Artikel [Registrierung von Windows-Geräten](windows-enroll.md), u
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In dieser Schnellstartanleitung haben Sie gelernt, wie die automatische Registrierung für Windows 10-Geräte eingerichtet wird. Sie erhalten auf allen Plattformen Informationen zu weiteren Möglichkeiten, Geräte zu registrieren.
+In dieser Schnellstartanleitung haben Sie gelernt, wie die automatische Registrierung für Windows 10-Geräte eingerichtet wird. Weitere Informationen finden Sie unter [What is device enrollment? (Was ist eine Geräteregistrierung?)](device-enrollment.md)
+
+Weitere Informationen zu Intune erhalten Sie im nächsten Schnellstart.
 
 > [!div class="nextstepaction"]
-> [Artikel: Was ist die Geräteregistrierung?](device-enrollment.md)
+> [Quickstart: Enroll your Windows 10 device (Schnellstart: Registrieren Ihres Windows 10-Geräts)](quickstart-enroll-windows-device.md)

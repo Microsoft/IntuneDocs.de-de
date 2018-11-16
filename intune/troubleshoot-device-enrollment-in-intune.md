@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 11/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2a4b4a4b2b0df706504e76b418c5b87eb66b1111
-ms.sourcegitcommit: 23997b701365bb514347d75edc2357eff1f1443f
+ms.openlocfilehash: 87f49c9aafa8b6f9f281a00e4d7bd297c354f90b
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237662"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511032"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Behandlung von Problemen bei der Geräteregistrierung bei Intune
 
@@ -391,6 +391,28 @@ Nachdem Sie die Probleme mit dem VPP-Token behoben haben, müssen Sie die blocki
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>Anweisen des Benutzers, den Registrierungsvorgang neu zu starten
 Nachdem Sie die blockierten Geräte zurückgesetzt haben, können Sie den Benutzern mitteilen, dass sie den Registrierungsvorgang neu starten sollen.
+
+## <a name="macos-issues"></a>macOS-Probleme
+
+### <a name="macos-enrollment-errors"></a>macOS-Registrierungsfehler
+**Fehlermeldung 1:** *It looks like you're using a virtual machine. Make sure you've fully configured your virtual machine, including serial number and hardware model. If this isn't a virtual machine, please contact support. (Sie verwenden scheinbar einen virtuellen Computer. Vergewissern Sie sich, dass Sie diesen vollständig konfiguriert haben und sowohl eine Seriennummer als auch ein Hardwaremodell vorhanden ist. Wenn es sich nicht um einen virtuellen Computer handelt, kontaktieren Sie den Support.)*  
+
+**Fehlermeldung 2:** *We’re having trouble getting your device managed. This problem could be caused if you're using a virtual machine, have a restricted serial number, or if this device is already assigned to someone else. Learn how to resolve these problems or contact your company support. (Die Verwaltung Ihres Geräts bereitet Probleme, die dadurch entstanden sein könnten, dass Sie einen virtuellen Computer verwenden, die Seriennummer eingeschränkt ist oder das Gerät bereits einer anderen Person zugewiesen ist. Informieren Sie sich, wie Sie diese Probleme lösen können, oder kontaktieren Sie den Support Ihres Unternehmens.)*
+
+**Problem:** Diese Meldung könnte aus einem der folgenden Gründe angezeigt werden:  
+* ein virtueller macOS-Computer ist nicht richtig konfiguriert  
+* für Sie sind Geräteeinschränkungen aktiviert, die erfordern, dass das Gerät einem Unternehmen angehört oder dass die Seriennummer eines registrierten Geräts in Intune verfügbar ist  
+* das Gerät wurde bereits registriert und ist noch einem anderen Benutzer in Intune zugewiesen  
+
+**Lösung:** Bestimmen Sie zunächst gemeinsam mit dem Benutzer, welches Problem vorliegt. Führen Sie dann die folgenden betreffenden Schritte zur Lösung des Problems aus:
+* Wenn ein Benutzer eine VM zu Testzwecken registriert, vergewissern Sie sich, dass diese vollständig konfiguriert ist, damit Intune die Seriennummer und das Hardwaremodell erkennen kann. Erfahren Sie mehr über [das Einrichten von VMs](macos-enroll.md#enroll-virtual-macos-machines-for-testing) in Intune.  
+* Wenn für Ihre Organisation Registrierungsbeschränkungen aktiviert sind, die persönliche macOS-Geräte blockieren, müssen Sie manuell die [Seriennummer des Geräts](corporate-identifiers-add.md#manually-enter-corporate-identifiers) zu Intune hinzufügen.  
+* Wenn das Gerät weiterhin einem anderen Benutzer in Intune zugewiesen ist, hat der vorherige Besitzer nicht die Unternehmensportal-App verwendet, um die Zuweisung aufzuheben oder zu entfernen. Gehen Sie wie folgt vor, um die veralteten Geräteinstellungen über Intune zu bereinigen:  
+
+    1. Navigieren Sie im [Azure-Portal zu Intune](https://portal.manage.microsoft.com), und melden Sie sich mit Ihren Anmeldeinformationen als Administrator an.
+    2. Navigieren Sie zu Intune > **Geräte** > **Alle Geräte**.  
+    3. Suchen Sie das Gerät, für das ein Registrierungsproblem aufgetreten ist. Geben Sie den Gerätenamen oder die MAC/HW-Adresse ein, um die Ergebnisse einzuschränken.
+    4. Wählen Sie das Gerät aus, und klicken Sie auf **Löschen**. Löschen Sie alle anderen Einträge, die diesem Gerät zugeordnet sind.  
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Probleme bei der Verwendung von System Center Configuration Manager mit Intune
 ### <a name="mobile-devices-disappear"></a>Mobile Geräte verschwinden

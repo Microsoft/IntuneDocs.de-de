@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/09/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,17 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7fd8c7f6f2c3dd5e6e8af323ccbb41a1ab779df
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025235"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576969"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Sie erhalten auch Informationen zu [bevorstehenden Änderungen](#whats-coming), [wichtige Hinweise](#notices) zum Dienst und Informationen zu [vorherigen Versionen](whats-new-archive.md). Einige Features werden im Laufe mehrerer Wochen bereitgestellt und sind in der ersten Woche möglicherweise nicht für alle Kunden verfügbar.
+Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Sie erhalten auch Informationen zu bevorstehenden Änderungen, [wichtige Hinweise](#notices) und Informationen zu [früheren Releases](whats-new-archive.md). Einige Features werden im Laufe mehrerer Wochen bereitgestellt und sind in der ersten Woche möglicherweise nicht für alle Kunden verfügbar.
 
 > [!Note]
 > Informationen zu neuen Funktionen der hybriden Verwaltung mobiler Geräte (MDM) finden Sie auf der Seite [Neuheiten bei der hybriden Verwaltung mobiler Geräte](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
@@ -41,6 +41,21 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Sie e
 ### Role-based access control
 
 -->     
+## <a name="week-of-november-5-2018"></a>Woche vom 5. November 2018
+
+### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>Unterstützung für iOS 12 OAuth in iOS-E-Mail-Profilen <!--2155106 -->
+
+Die iOS-E-Mail-Profile in Intune unterstützen nun Open Authorization (OAuth) für iOS 12. Wenn Sie dieses Feature verwenden möchten, erstellen Sie ein neues Profil (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **iOS** (Plattform) > **E-Mail** (Profiltyp)), oder aktualisieren Sie ein vorhandenes iOS-E-Mail-Profil. Wenn Sie OAuth in einem Profil aktivieren, das bereits für Benutzer bereitgestellt wurde, werden die Benutzer zur erneuten Authentifizierung und zum Erneuten Herunterladen ihrer E-Mails aufgefordert.
+
+Unter [Einstellungen für E-Mail-Profile für iOS-Geräte](email-settings-ios.md) finden Sie weitere Informationen zur Verwendung von OAuth für E-Mail-Profile.
+
+### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>Autopilot-Unterstützung für in Azure Active Directory Hybrid eingebundene Geräte (Vorschau)<!-- 1048100-->
+Sie können ab sofort in Azure Active Directory Hybrid eingebundene Geräte mithilfe von Autopilot einrichten. Geräte müssen mit dem Netzwerk Ihres Unternehmens verbunden sein, um das Hybrid-Autopilot-Feature nutzen zu können. Weitere Informationen finden Sie unter [Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot](windows-autopilot-hybrid.md).
+Dieses Feature wird in den nächsten Tagen für Benutzer eingeführt. Daher können Sie diese Schritte möglicherweise erst ausführen, wenn es für Ihr Konto eingeführt wurde.
+
+### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>App-Schutzrichtlinieneinstellungen (APP) für Webdaten <!-- 2662995  -->
+App-Richtlinieneinstellungen für Webinhalte auf Android- und iOS-Geräten wurden aktualisiert, um sowohl HTTP- und HTTPS-Weblinks als auch Datenübertragungen über universelle iOS-Links und Android-App-Links besser zu verarbeiten.  
+
 ## <a name="week-of-october-29-2018"></a>Woche vom 29. Oktober 2018
 
 
@@ -112,10 +127,6 @@ Sie können Autopilot-Profile zur virtuellen Gruppe „Alle Geräte“ zuweisen.
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>Neues Feature zu Azure Active Directory-Nutzungsbedingungen <!-- 2870393 -->
 Azure Active Directory verfügt über ein Feature für Nutzungsbedingungen, das Sie anstelle der bestehenden Intune-Nutzungsbedingungen verwenden können. Die Azure AD Nutzungsbedingungen bieten mehr Flexibilität bei der Anzeige von Bedingungen (Umfang und Zeitpunkt), eine bessere Lokalisierungsunterstützung, mehr Kontrolle über die Darstellung von Nutzungsbedingungen und eine verbesserte Berichterstellung. Die Azure AD-Nutzungsbedingungen erfordern Azure Active Directory Premium P1, das ebenfalls Teil der Enterprise Mobility + Security E3 Suite ist. Weitere Informationen finden Sie im Artikel [Verwalten der Geschäftsbedingungen Ihres Unternehmens für den Benutzerzugriff](terms-and-conditions-create.md).
 
-### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices-preview----1048100--"></a>Autopilot-Unterstützung für in Azure Active Directory Hybrid eingebundene Geräte (Vorschau)<!-- 1048100-->
-Sie können ab sofort in Azure Active Directory Hybrid eingebundene Geräte mithilfe von Autopilot einrichten. Geräte müssen mit dem Netzwerk Ihres Unternehmens verbunden sein, um das Hybrid-Autopilot-Feature nutzen zu können. Weitere Informationen finden Sie unter [Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot](windows-autopilot-hybrid.md).
-Dieses Feature wird in den nächsten Tagen für Benutzer eingeführt. Daher können Sie diese Schritte möglicherweise erst ausführen, wenn es für Ihr Konto eingeführt wurde.
-
 ### <a name="android-device-owner-mode-support---3188762--"></a>Unterstützung für den Modus für Android-Geräteeigentümer <!--3188762-->
 Für die Samsung Knox Mobile-Registrierung unterstützt Intune jetzt die Registrierung von Geräten im Verwaltungsmodus für Android-Geräteeigentümer. Benutzer mit einer WLAN- oder Mobilfunknetzverbindung können die Registrierung mit nur wenigen Tippbewegungen ausführen, wenn sie ihre Geräte zum ersten Mal einschalten. Weitere Informationen finden Sie unter [Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment](android-samsung-knox-mobile-enroll.md).
 
@@ -130,7 +141,10 @@ Mithilfe von Intune-App-Schutzrichtlinien können Sie verschiedene Einstellungen
 - **Zugriffsanforderungen**: Diese Gruppe enthält die PIN-Optionen pro App. Sie bestimmen, wie der Endbenutzer in einem Arbeitskontext auf die Apps zugreifen kann.  
 - **Bedingter Start**: Diese Gruppe enthält Einstellungen wie z.B. die mindestens erforderliche Betriebssystemversion, Einstellungen zur Erkennung von Jailbreak und entfernten Nutzungsbeschränkungen und die Offlinetoleranzperiode.  
   
-Die Funktionalität der Einstellungen ändert sich nicht, aber es wird einfacher sein, sie bei der Richtlinienerstellung zu finden. 
+Die Funktionalität der Einstellungen ändert sich nicht, aber es wird einfacher sein, sie bei der Richtlinienerstellung zu finden.
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>Neue Abonnement-SKU für Intune-Geräte !--3312071-->
+Eine neue gerätebasierte Abonnement-SKU ist nun verfügbar, mit der die Kosten für die Geräteverwaltung in Unternehmen reduziert werden können. Diese SKU für Intune-Geräte wird monatlich pro Gerät lizenziert. Der Preis hängt vom Lizenzierungsprogramm ab. Die SKU ist in den Lizenzierungsprogrammen Direct Channel, Enterprise Agreement (EA), Microsoft Products and Services Agreement (MPSA), Open License und Cloud Solution Provider (CSP) verfügbar.
 
 ### <a name="intune-apps"></a>Intune-Apps
 
@@ -675,7 +689,7 @@ Sie können den Zugriff mobiler Geräte auf Unternehmensressourcen mit bedingtem
 
 ## <a name="week-of-june-18-2018"></a>Woche vom 18. Juni 2018
 
-### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Unterstützung des Edge-Browsers für mobile Geräte für die App-Schutzrichtlinien von Intune <!-- 1817882 -->
+### <a name="microsoft-edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Unterstützung des Microsoft Edge-Browsers für mobile Geräte für die App-Schutzrichtlinien von Intune <!-- 1817882 -->
 
 Microsoft Edge für mobile Geräte unterstützt nun die App-Schutzrichtlinien, die in Intune definiert sind.
 
@@ -784,7 +798,7 @@ Navigieren Sie zu **Geräte** > **Alle Geräte**, wählen Sie ein Gerät aus, un
 Auf Geräten, die mit Microsoft Intune MDM verwaltet werden, können App-Installationen manchmal fehlschlagen. In diesen Fällen kann es schwierig sein, die Fehlerursache zu verstehen oder das Problem zu beheben. Wir versenden eine öffentliche Vorschau unserer Features zur App-Problembehandlung. Unter jedem einzelnen Gerät wird ein neuer Knoten mit der Bezeichnung **Verwaltete Apps** angezeigt. Hier sind die Apps aufgelistet, die über Intune MDM übermittelt wurden. Innerhalb des Knotens wird eine Liste mit App-Installationsstatus angezeigt. Bei Auswahl einer einzelnen App wird die Problembehandlungsansicht für diese bestimmte App angezeigt. In der Problembehandlungsansicht sehen Sie den End-to-End-Lebenszyklus der App, z. B. wann die App erstellt, geändert, festgelegt und an ein Gerät übermittelt wurde. Darüber hinaus wird bei einer nicht erfolgreichen App-Installation der Fehlercode und eine hilfreiche Nachricht zur Ursache des Fehlers angezeigt. 
 
 #### <a name="intune-app-protection-policies-and-microsoft-edge----1818968---"></a>Intune-App-Schutzrichtlinien und Microsoft Edge <!-- 1818968 -->
-Der Browser Microsoft Edge für mobile Geräte (iOS und Android) unterstützt nun Microsoft Intune-App-Schutzrichtlinien. Benutzer von iOS- und Android-Geräten, die sich mit ihren Azure AD-Unternehmenskonten bei der Edge-App anmelden, werden von Intune geschützt. Auf iOS-Geräten lässt die Richtlinie **Require managed browser for web content** (Managed Browser für Webinhalt erforderlich) zu, dass Benutzer Links in Edge öffnen können, wenn der Browser verwaltet wird.
+Der Browser Microsoft Edge für mobile Geräte (iOS und Android) unterstützt nun Microsoft Intune-App-Schutzrichtlinien. Benutzer von iOS- und Android-Geräten, die sich mit ihren Azure AD-Unternehmenskonten bei der Edge-App anmelden, werden von Intune geschützt. Auf iOS-Geräten lässt die Richtlinie **Require managed browser for web content** (Managed Browser für Webinhalt erforderlich) zu, dass Benutzer Links in Microsoft Edge öffnen können, wenn der Browser verwaltet wird.
 
 ## <a name="week-of-may-14-2018"></a>Woche vom 14. Mai 2018
 
@@ -1010,6 +1024,21 @@ Wenn Sie sehen möchten, wie die aktualisierte Benutzeroberfläche aussieht, wec
 Sie können jetzt lokale Exchange-Daten mit Outlook Mobile mithilfe von Intune App-Schutzrichtlinien (App Policy Protection, APP) und dem bedingten Zugriff (Conditional Access, CA) schützen. Um eine App-Schutzrichtlinie im Azure-Portal hinzuzufügen oder zu ändern, wählen Sie die Option **Microsoft Intune** > **Client-Apps** > **App-Schutzrichtlinien** aus. Bevor Sie dieses Feature verwenden, sollten Sie sicherstellen, dass Sie die [Anforderungen für Outlook für iOS und Android](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx) erfüllen.
 
 ## <a name="notices"></a>Benachrichtigungen
+
+### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Geplante Änderung: Verbesserung der Leistung von Intune for Education <!--1750215-->
+Intune for Education wird aktualisiert, um die Geschwindigkeit und Zuverlässigkeit beim Zuweisen von Einstellungen zu Benutzern oder Geräten zu verbessern. Im Rahmen dieser Änderung werden die Richtlinien- oder Einstellungszuweisungen gegen Ende November in neue Gruppen verschoben.
+
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
+
+Als Intune for Education-Kunde stehen Ihnen die beiden dynamischen Azure Active Directory-Gruppen „Alle Benutzer“ und „Alle Geräte“ zur Verfügung. Durch dieses Update werden die Azure AD-Gruppen „Alle Benutzer“ und „Alle Geräte“ nicht mehr in der Intune for Education-Konsole angezeigt. Sie werden jedoch weiterhin in der Intune-Konsole in Azure angezeigt und in „All Users (Obsolete, do not use)“ (Alle Benutzer (Veraltet, nicht verwenden)) und „All Devices (Obsolete, do not use)“ (Alle Geräte (Veraltet, nicht verwenden)) umbenannt.
+
+Wenn die Updates veröffentlicht werden, müssen Sie keine Azure AD-Gruppen mehr verwenden, um Apps und Einstellungen in Intune zuzuweisen. Die Einstellungszuweisungen werden in neue Gruppen in der Intune for Education-Konsole verschoben, die wie zuvor als „Alle Benutzer“ und „Alle Geräte“ angezeigt werden. Diese Änderungen werden über das Back-End durchgeführt, Sie werden also keinen Unterschied in der Intune for Education-Konsole bemerken. Es gibt keine Auswirkungen auf die Endbenutzer oder die registrierten Geräte. 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
+Sie müssen nichts tun, während wir Ihre Richtlinienzuweisungen verschieben. Wenn Sie derzeit Richtlinien über die Intune for Education-Konsole zuweisen, können Sie damit fortfahren.
+
+Wenn Sie derzeit über Intune in Azure Richtlinien zu den zuvor erwähnten Azure AD-Gruppen zuweisen, weisen Sie diese ab jetzt den Gruppen „Alle Benutzer“ und „Alle Geräte“ in der Intune for Education-Konsole zu. Wenn die Azure AD-Gruppen mit dem Zusatz „Obsolete“ (Veraltet) in der Konsole angezeigt werden, sollten Sie keine Richtlinien mehr über Azure AD zuweisen. Wenn Sie die umbenannten Gruppen derzeit nicht für andere Zwecke verwenden, sollten Sie diese löschen.
+
 
 ### <a name="plan-for-change-intune-will-move-to-support-macos-1012-and-higher-in-december---2970975--"></a>Geplante Änderung: Ab Dezember unterstützt Intune macOS 10.12 und höher <!--2970975--> 
 

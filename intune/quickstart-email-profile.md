@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/29/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b797951c878dd90cbb7bb716b5108f94f48921c5
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 21dda51d2ddde74f07fcc173c5a4dd2a13c9c8b8
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231949"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225746"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Schnellstart: Erstellen eines E-Mail-Geräteprofils für iOS
 
@@ -69,7 +69,7 @@ Wenn Sie das erstellte Profil nicht für weitere Tutorials oder Tests verwenden 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In dieser Schnellstartanleitung haben Sie ein E-Mail-Profil für iOS-Geräte erstellt. Jetzt können Sie mit diesem Profil bestimmen, ob ein iOS-Gerät konform ist, indem Sie eine Konformitätsrichtlinie erstellen, die alle nicht dem Profil entsprechenden iOS-Geräte als nicht konform markiert. Für noch besseren Schutz können Sie eine Richtlinie für bedingten Zugriff erstellen, die verhindert, dass nicht konforme iOS-Geräte auf E-Mails zugreifen.
+In dieser Schnellstartanleitung haben Sie ein E-Mail-Profil für iOS-Geräte erstellt. Jetzt können Sie mit diesem Profil bestimmen, ob ein iOS-Gerät konform ist, indem Sie eine Konformitätsrichtlinie erstellen, die alle nicht dem Profil entsprechenden iOS-Geräte als nicht konform markiert. Für noch besseren Schutz können Sie eine Richtlinie für bedingten Zugriff erstellen, die verhindert, dass nicht konforme iOS-Geräte auf E-Mails zugreifen. Weitere Informationen über Gerätekonformitätsrichtlinien finden Sie unter [Erste Schritte bei der Gerätekonformität in Intune](device-compliance-get-started.md).
 
 > [!div class="nextstepaction"]
-> [Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune](device-compliance-get-started.md)
+> [Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf verwalteten Geräten](tutorial-protect-email-on-enrolled-devices.md)

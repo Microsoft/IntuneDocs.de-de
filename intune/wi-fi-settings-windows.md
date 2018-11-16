@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 11/8/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 58a6681c22672b5aa2c8337708456b30361f741f
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 2252c81757b7745ed15ca86a4e7db310f03df19d
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236474"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298155"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Hinzufügen von WLAN-Einstellungen für Geräte mit Windows 10 und höher in Intune
 
@@ -57,6 +57,9 @@ Dieser Artikel beschreibt diese Einstellungen.
   - **WPA/WPA2-Personal:** eine sicherere Option, die häufig für WLAN-Verbindungen verwendet wird. Wenn Sie mehr Sicherheit wünschen, können Sie auch ein Kennwort für einen vorinstallierten Schlüssel oder einen Netzwerkschlüssel angeben. 
 
     - **Vorinstallierter Schlüssel:** Optional. Diese Option wird angezeigt, wenn Sie **WPA/WPA2-Personal** als Sicherheitstyp auswählen. Wenn das Netzwerk Ihrer Organisation eingerichtet oder konfiguriert wird, wird auch ein Kennwort oder ein Netzwerkschlüssel konfiguriert. Geben Sie dieses Kennwort oder den Netzwerkschlüssel für den Wert des vorinstallierten Schlüssels ein. Geben Sie eine Zeichenfolge ein, die zwischen 8 und 64 Zeichen umfasst. Wenn Ihr Kennwort oder Netzwerkschlüssel 64 Zeichen umfasst, geben Sie Hexadezimalzeichen an.
+    
+      > [!NOTE]
+      > Wenn Sie das WLAN-Profil speichern, wird der von Ihnen angegebene PSK-Wert aus Sicherheitsgründen nicht angezeigt. Als Grenzwert für den vorinstallierten Schlüssel wird weiterhin **Nicht konfiguriert** angezeigt, obwohl der PSK-Wert in dem Profil gespeichert ist. Wenn Sie den PSK-Wert ändern möchten, geben Sie einen neuen Schlüssel ein, und speichern Sie das Profil. Wenn Sie einen PSK-Wert speichern, bearbeiten Sie die Richtlinie, und lassen Sie das PSK-Feld leer. Dann wird der bereits vorhandene PSK-Wert weiter verwendet.
 
 - **Proxyeinstellungen für Unternehmen**: Wählen Sie die Proxyeinstellungen aus, die innerhalb Ihrer Organisation verwendet werden sollen. Folgende Optionen sind verfügbar:
   - **Keine**: Es sind keine Proxyeinstellungen konfiguriert.
