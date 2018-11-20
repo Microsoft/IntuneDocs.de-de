@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfe8d8d7c7a534dd4a21104b0c7076c039d9f504
-ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
+ms.openlocfilehash: b0ee2b2ad8d25d1040577a7f8abff4377704d2d5
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51212528"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167534"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune
 
@@ -365,6 +365,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
      - iOS
      - Windows 8.1 und höher
      - Windows 10 und höher
+     - Android Enterprise
 
    - **Format des Antragstellernamens:** Wählen Sie aus, wie Intune den Antragstellernamen in der Zertifikatanforderung automatisch erstellt. Diese Optionen ändern sich, wenn Sie den Zertifikattyp **Benutzer** oder **Gerät** auswählen. 
 

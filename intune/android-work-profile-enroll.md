@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: a38c5db1e608cb5d9a047dc72ee9109e840096e0
+ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255067"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51618989"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Einrichten der Registrieren von Android-Arbeitsprofilgeräten
 
@@ -56,5 +56,5 @@ Führen Sie die folgenden Schritte durch, um das Intune-Unternehmensportal zu ge
 5.  Wählen Sie **Genehmigt lassen, wenn Apps neue Berechtigungen anfordern** aus, und klicken Sie dann auf **Speichern**.
 
 ## <a name="next-steps-for-android-work-profiles"></a>Nächste Schritte für Android-Arbeitsprofile
-- [Deploy Android work profile apps (Bereitstellen von Android-Arbeitsprofil-Apps)](store-apps-android.md)
+- [Deploy Android work profile apps (Bereitstellen von Android-Arbeitsprofil-Apps)](apps-add-android-for-work.md)
 - [Add Android work profile configuration policies (Hinzufügen von Konfigurationsrichtlinien für Android-Arbeitsprofile)](device-profiles.md)

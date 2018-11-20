@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de77ad92eac4aa869aec504f1762ad6f216c74d2
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 97543ec74225ef86208000bccb2a8ad7852dd9c1
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602145"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610055"
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
@@ -66,7 +66,7 @@ Auf den Gerätetyp und das Gerätelimit bezogene Registrierungsbeschränkungen w
 
 ## <a name="set-device-type-restrictions"></a>Festlegen von Gerätetypbeschränkungen
 
-Sie können die Einstellungen für eine Gerätetypbeschränkung ändern, indem Sie die folgenden Schritte ausführen. Diese Beschränkungen haben keine Auswirkungen auf Geräte, die bereits registriert wurden. Geräte, die mit dem [Intune-PC-Agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune.md) registriert sind, können nicht über dieses Feature blockiert werden.
+Sie können die Einstellungen für eine Gerätetypbeschränkung ändern, indem Sie die folgenden Schritte ausführen. Diese Beschränkungen haben keine Auswirkungen auf Geräte, die bereits registriert wurden. Geräte, die mit dem [Intune-PC-Agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) registriert sind, können nicht über dieses Feature blockiert werden.
 
 1. Melden Sie sich im Azure-Portal an.
 2. Klicken Sie auf **Weitere Dienste**, suchen Sie nach **Intune**, und klicken Sie dann auf **Intune**.
@@ -100,11 +100,11 @@ Die folgenden Methoden sind als Windows-Unternehmensregistrierung autorisiert:
 - Das Gerät wird über eine [automatische Registrierung von SCCM für die Co-Verwaltung](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md) registriert.
  
 Die folgenden Registrierungen werden von Intune als unternehmenseigen markiert. Da diese jedoch nicht die gerätespezifische Steuerung über den Intune-Administrator bieten, werden sie blockiert:
- - [Automatische MDM-Registrierung](windows-enroll.md#enable-windows-10-automatic-enrollment) mit der [Azure Active Directory-Einbindung während der Windows-Einrichtung](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md)\*.
-- [Automatische MDM-Registrierung](windows-enroll.md#enable-windows-10-automatic-enrollment) mit der [Azure Active Directory-Einbindung aus den Windows-Einstellungen](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup.md)*.
+ - [Automatische MDM-Registrierung](windows-enroll.md#enable-windows-10-automatic-enrollment) mit der [Azure Active Directory-Einbindung während der Windows-Einrichtung](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
+- [Automatische MDM-Registrierung](windows-enroll.md#enable-windows-10-automatic-enrollment) mit der [Azure Active Directory-Einbindung aus den Windows-Einstellungen](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*.
  
 Die folgenden persönlichen Registrierungsmethoden werden ebenso blockiert:
-- [Automatische MDM-Registrierung](windows-enroll.md#enable-windows-10-automatic-enrollment) durch [Hinzufügen eines Geschäftskontos über die Windows-Einstellungen](https://docs.microsoft.com/azure/active-directory/device-management-azuread-registered-devices-windows10-setup.md)\*.
+- [Automatische MDM-Registrierung](windows-enroll.md#enable-windows-10-automatic-enrollment) durch [Hinzufügen eines Geschäftskontos über die Windows-Einstellungen](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network)\*.
 - Die Option [MDM enrollment only]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) (Nur MDM-Registrierung) in den Windows-Einstellungen.
 
 \* Diese werden nicht blockiert, wenn sie bei Autopilot registriert sind.
