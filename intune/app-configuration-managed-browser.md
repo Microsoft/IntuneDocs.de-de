@@ -121,7 +121,7 @@ Für SSO muss Ihr Gerät unter iOS durch Microsoft Authenticator und unter Andro
 4.  Wählen Sie auf dem Blatt **App-Konfigurationsrichtlinien** die Option **Hinzufügen** aus.
 5.  Geben Sie auf dem Blatt **Konfigurationsrichtlinie hinzufügen** einen **Namen** und optional eine **Beschreibung** für die App-Konfigurationseinstellungen ein.
 6.  Wählen Sie als Typ der **Geräteregistrierung** die Option **Verwaltete Apps** aus.
-7.  Wählen Sie **Erforderliche App auswählen** und dann auf dem Blatt **Ziel-Apps** die Option **Managed Browser** und/oder **Edge** für iOS, für Android oder für beides aus.
+7.  Wählen Sie **Erforderliche App auswählen** und dann auf dem Blatt **Ziel-Apps** die Option **Managed Browser** und/oder **Microsoft Edge** für iOS, für Android oder für beides aus.
 8.  Wählen Sie **OK** aus, um zum Blatt **Konfigurationsrichtlinie hinzufügen** zurückzukehren.
 9.  Wählen Sie **Konfigurationseinstellungen** aus. Auf dem Blatt **Konfiguration** definieren Sie Schlüssel-Wert-Paare, um Konfigurationen für Managed Browser bereitzustellen. In den folgenden Abschnitten erhalten Sie weitere Informationen zu den unterschiedlichen Schlüssel-Wert-Paaren, die Sie definieren können.
 10. Wählen Sie abschließend **OK** aus.
