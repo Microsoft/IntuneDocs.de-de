@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1180e085c0584f3da535947cad60c41d06a8026a
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: b96e9b79d70c538982aac52ca822b403d1c0e4f8
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576969"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167585"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -41,6 +41,15 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Sie e
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-november-12-2018"></a>Woche vom 12. November 2018
+
+### <a name="network-access-control-nac-support-for-citrix-sso-for-ios----3259404---"></a>Unterstützung für die Netzwerkzugriffssteuerung (Network Access Control, NAC) für Citrix SSO für iOS<!-- 3259404 -->
+
+Citrix hat ein Update für Citrix Gateway veröffentlicht, um die Netzwerkzugriffssteuerung (Network Access Control, NAC) für Citrix SSO für iOS in Intune zu ermöglichen. Sie können eine Geräte-ID in einem VPN-Profil in Intune einschließen und dieses Profil dann mithilfe von Push an Ihre iOS-Geräte übertragen. Sie müssen das neueste Update für Citrix Gateway installieren, um diese Funktion nutzen zu können.
+
+Der Artikel [Konfigurieren von VPN-Einstellungen auf iOS-Geräten in Microsoft Intune](vpn-settings-ios.md#base-vpn-settings) enthält weitere Informationen zur Verwendung der NAC sowie einige zusätzliche Anforderungen. 
+
 ## <a name="week-of-november-5-2018"></a>Woche vom 5. November 2018
 
 ### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>Unterstützung für iOS 12 OAuth in iOS-E-Mail-Profilen <!--2155106 -->
@@ -53,11 +62,7 @@ Unter [Einstellungen für E-Mail-Profile für iOS-Geräte](email-settings-ios.md
 Sie können ab sofort in Azure Active Directory Hybrid eingebundene Geräte mithilfe von Autopilot einrichten. Geräte müssen mit dem Netzwerk Ihres Unternehmens verbunden sein, um das Hybrid-Autopilot-Feature nutzen zu können. Weitere Informationen finden Sie unter [Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot](windows-autopilot-hybrid.md).
 Dieses Feature wird in den nächsten Tagen für Benutzer eingeführt. Daher können Sie diese Schritte möglicherweise erst ausführen, wenn es für Ihr Konto eingeführt wurde.
 
-### <a name="app-protection-policy-app-settings-for-web-data----2662995----"></a>App-Schutzrichtlinieneinstellungen (APP) für Webdaten <!-- 2662995  -->
-App-Richtlinieneinstellungen für Webinhalte auf Android- und iOS-Geräten wurden aktualisiert, um sowohl HTTP- und HTTPS-Weblinks als auch Datenübertragungen über universelle iOS-Links und Android-App-Links besser zu verarbeiten.  
-
 ## <a name="week-of-october-29-2018"></a>Woche vom 29. Oktober 2018
-
 
 ### <a name="app-management"></a>App-Verwaltung
 
@@ -120,9 +125,6 @@ Dieses Update beinhaltet die macOS-Gatekeeper-Anwendung, um Geräte auf Konformi
 
 #### <a name="enrollment-abandonment-report----1382924---"></a>Bericht zum Registrierungsabbruch <!-- 1382924 -->
 Ein neuer Bericht, der Details zu abgebrochenen Registrierungen enthält, ist unter **Geräteregistrierung** > **Überwachen** verfügbar. Weitere Informationen finden Sie unter [Abbruchbericht des Unternehmensportals](enrollment-report-company-portal-abandon.md).
-
-#### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522---"></a>Zuweisen von Autopilot-Profilen zur virtuellen Gruppe „Alle Geräte“ <!--2715522 -->
-Sie können Autopilot-Profile zur virtuellen Gruppe „Alle Geräte“ zuweisen. Wählen Sie dazu **Geräteregistrierung** > **Windows-Registrierung** > **Bereitstellungsprofile** aus. Wählen Sie dann ein Profil > **Zuweisungen** > und unter **Zuweisen zu** wählen Sie **Alle Geräte** aus. Weitere Informationen zu Autopilot-Profilen finden Sie unter [Registrieren von Windows-Geräten mit Windows Autopilot](enrollment-autopilot.md).
 
 #### <a name="new-azure-active-directory-terms-of-use-feature----2870393---"></a>Neues Feature zu Azure Active Directory-Nutzungsbedingungen <!-- 2870393 -->
 Azure Active Directory verfügt über ein Feature für Nutzungsbedingungen, das Sie anstelle der bestehenden Intune-Nutzungsbedingungen verwenden können. Die Azure AD Nutzungsbedingungen bieten mehr Flexibilität bei der Anzeige von Bedingungen (Umfang und Zeitpunkt), eine bessere Lokalisierungsunterstützung, mehr Kontrolle über die Darstellung von Nutzungsbedingungen und eine verbesserte Berichterstellung. Die Azure AD-Nutzungsbedingungen erfordern Azure Active Directory Premium P1, das ebenfalls Teil der Enterprise Mobility + Security E3 Suite ist. Weitere Informationen finden Sie im Artikel [Verwalten der Geschäftsbedingungen Ihres Unternehmens für den Benutzerzugriff](terms-and-conditions-create.md).
@@ -505,17 +507,6 @@ Zur Unterstützung der Android P-Version ist eine aktualisierte Version des Intu
 
 ### <a name="device-configuration"></a>Gerätekonfiguration
 
-#### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642---"></a>Verwenden von S/MIME zum Verschlüsseln und Signieren von mehreren Geräten eines Benutzers <!-- 1333642 -->
-Mit diesem Update wird die E-Mail-Verschlüsselung mit S/MIME mittels eines neuen Profils für importierte Zertifikate eingeführt. Navigieren Sie zu deren Verwendung zu **Gerätekonfiguration** > **Profile** > **Profil erstellen**, und wählen Sie zuerst die Plattform und dann den Profiltyp **Importiertes PKCS-Zertifikat** aus. In Intune können Sie Zertifikate im PFX-Format importieren. Intune kann dann genau diese Zertifikate an mehrere Geräte übergeben, die durch einen einzelnen Benutzer registriert wurden. Außerdem enthalten:
-
-- Das native iOS-E-Mail-Profil unterstützt die Aktivierung der S/MIME-Verschlüsselung mithilfe importierter Zertifikate im PFX-Format.
-- Die native E-Mail-App auf Windows Phone 10-Geräten verwendet automatisch das S/MIME-Zertifikat.
-- Die privaten Zertifikate können über mehrere Plattformen übermittelt werden. Jedoch unterstützen nicht alle E-Mail-Apps S/MIME.
-- Auf anderen Plattformen müssen Sie möglicherweise die E-Mail so konfigurieren, dass Sie S/MIME zulässt.  
-- E-Mail-Apps, die die S/MIME-Verschlüsselung unterstützen, behandeln das Abrufen von Zertifikaten für die S/MIME-E-Mail-Verschlüsselung womöglich in einer Art und Weise, die von MDM nicht unterstützt werden kann, z.B. durch Lesen über den Zertifikatspeicher des Verlegers.
-
-Unterstützt unter: Windows, Windows Phone 10, macOS, iOS, Android
-
 #### <a name="create-device-compliance-policy-using-firewall-settings-on-macos-devices----1497640---"></a>Erstellen von Konformitätsrichtlinien für macOS-Geräte über Firewalleinstellungen <!-- 1497640 -->
 Beim Erstellen einer neuen macOS-Konformitätsrichtlinie (**Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** > **Plattform: macOS** > **Systemsicherheit**) sind einige neue **Firewall**-Einstellungen verfügbar: 
 
@@ -798,7 +789,7 @@ Navigieren Sie zu **Geräte** > **Alle Geräte**, wählen Sie ein Gerät aus, un
 Auf Geräten, die mit Microsoft Intune MDM verwaltet werden, können App-Installationen manchmal fehlschlagen. In diesen Fällen kann es schwierig sein, die Fehlerursache zu verstehen oder das Problem zu beheben. Wir versenden eine öffentliche Vorschau unserer Features zur App-Problembehandlung. Unter jedem einzelnen Gerät wird ein neuer Knoten mit der Bezeichnung **Verwaltete Apps** angezeigt. Hier sind die Apps aufgelistet, die über Intune MDM übermittelt wurden. Innerhalb des Knotens wird eine Liste mit App-Installationsstatus angezeigt. Bei Auswahl einer einzelnen App wird die Problembehandlungsansicht für diese bestimmte App angezeigt. In der Problembehandlungsansicht sehen Sie den End-to-End-Lebenszyklus der App, z. B. wann die App erstellt, geändert, festgelegt und an ein Gerät übermittelt wurde. Darüber hinaus wird bei einer nicht erfolgreichen App-Installation der Fehlercode und eine hilfreiche Nachricht zur Ursache des Fehlers angezeigt. 
 
 #### <a name="intune-app-protection-policies-and-microsoft-edge----1818968---"></a>Intune-App-Schutzrichtlinien und Microsoft Edge <!-- 1818968 -->
-Der Browser Microsoft Edge für mobile Geräte (iOS und Android) unterstützt nun Microsoft Intune-App-Schutzrichtlinien. Benutzer von iOS- und Android-Geräten, die sich mit ihren Azure AD-Unternehmenskonten bei der Edge-App anmelden, werden von Intune geschützt. Auf iOS-Geräten lässt die Richtlinie **Require managed browser for web content** (Managed Browser für Webinhalt erforderlich) zu, dass Benutzer Links in Microsoft Edge öffnen können, wenn der Browser verwaltet wird.
+Der Browser Microsoft Edge für Mobilgeräte (iOS und Android) unterstützt nun Microsoft Intune-App-Schutzrichtlinien. Benutzer von iOS- und Android-Geräten, die sich mit ihren Azure AD-Unternehmenskonten bei der Edge-Anwendung anmelden, werden von Intune geschützt. Auf iOS-Geräten lässt die Richtlinie **Require managed browser for web content** (Managed Browser für Webinhalt erforderlich) zu, dass Benutzer Links in Microsoft Edge öffnen können, wenn der Browser verwaltet wird.
 
 ## <a name="week-of-may-14-2018"></a>Woche vom 14. Mai 2018
 

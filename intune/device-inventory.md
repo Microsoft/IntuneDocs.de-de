@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 2c47cd8ea136bcead14e70769f63df7b9b8f0e20
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187800"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610089"
 ---
 # <a name="see-device-details-in-intune"></a>Anzeigen von Gerätedetails in Intune
 
@@ -45,7 +45,7 @@ Dieser Artikel erläutert, wie Sie all Ihre Geräte und deren Eigenschaften im A
      - Starten einer Remoteunterstützungssitzung
    - Verwenden Sie die **Eigenschaften**, um eine [von Ihnen erstellte Gerätekategorie](device-group-mapping.md) zuzuweisen, und ändern Sie den Besitz des Geräts in ein privates oder ein unternehmenseigenes Gerät.
    - Der Bereich **Hardware** umfasst einige Details zu dem Gerät, einschließlich der Geräte-ID, dem Betriebssystem und der Betriebssystemversion, dem Speicherplatz, dem Modell und dem Hersteller, Einstellungen für bedingten Zugriff etc.
-   - Unter **Ermittelte Apps** werden alle auf dem Gerät installierten Apps aufgeführt, die von Intune gefunden wurden. Sie können die App-Liste als eine CSV-Datei **exportieren**.
+   - Unter **Ermittelte Apps** werden alle auf dem Gerät installierten Apps aufgeführt, die von Intune gefunden wurden. Sie können die App-Liste als eine CSV-Datei **exportieren**. Diese Liste wird alle 7 Tage aktualisiert.
    - Unter **Gerätekonformität** werden alle zugewiesenen Konformitätsrichtlinien aufgeführt, und es wird angezeigt, ob das Gerät mit diesen Richtlinien konform ist.
    - Unter **Gerätekonfiguration** werden alle Gerätekonfigurationsrichtlinien angezeigt, die dem Gerät zugewiesen sind, und Sie können erkennen, ob die Richtlinie erfolgreich war oder fehlgeschlagen ist.
 
@@ -60,8 +60,10 @@ Intune erfasst nur auf unternehmenseigenen Geräten eine App-Liste. Auf persönl
 |iOS|Nur verwaltete Apps|Alle auf dem Gerät installierten Apps|
 |macOS|Alle auf dem Gerät installierten Apps|Alle auf dem Gerät installierten Apps|  
 |Android|Nur verwaltete Apps|Alle auf dem Gerät installierten Apps|  
+|Android Enterprise|Nur verwaltete Apps|Nur im Arbeitsprofil installierte Apps|  
 
 ## <a name="hardware-device-details"></a>Details zum Hardwaregerätestatus
+Je nach Netzbetreiber der Geräte werden möglicherweise nicht alle Details erfasst.
 
 |Detail|Beschreibung|Plattform| 
 |--------------|----------------------|----|  

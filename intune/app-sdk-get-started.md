@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: a8cbe80154e5eac6a48c86101c76faed4602288a
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 3362de6231aa8b045d064d1f3764cb2b13f5be3c
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915715"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167432"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Erste Schritte mit dem Microsoft Intune App SDK
 
@@ -106,9 +106,6 @@ Microsoft Intune sammelt Daten zu Nutzungsstatistiken für Ihre App.
 
     * Wenn Benutzer sich dazu entschließen, diese Daten nicht zu senden, müssen sie die Telemetrie unter „Einstellungen“ in der Unternehmensportal-App deaktivieren. Weitere Informationen finden Sie unter [Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
-
- Die branchenspezifische App-Versionsnummer für iOS und Android ist sichtbar <!-- 1380712 -->.
-
 ## <a name="line-of-business-app-version-numbers"></a>Branchenspezifische App-Versionsnummern
 
 Branchenspezifische Apps in Intune zeigen nun die Versionsnummer für iOS- und Android-Apps an. Die Nummer wird im Azure-Portal in der App-Liste und im Übersichtsblatt der App angezeigt. Benutzer können die App-Nummer in der Unternehmensportal-App und im Webportal anzeigen.
@@ -164,6 +161,23 @@ Nachdem Sie die notwendigen Schritte zur Integration des Intune App SDK in Ihre 
 * **Intune-App-Schutzrichtlinien**: Um Ihre App für alle Intune-App-Schutzrichtlinien zu testen, müssen Sie das erwartete Verhalten bei jeder Richtlinieneinstellung kennen. Siehe die Beschreibungen der [iOS-App-Schutzrichtlinien](app-protection-policy-settings-ios.md) und [Android-App-Schutzrichtlinien](app-protection-policy-settings-android.md).
 
 * **Problembehandlung**: Wenn Sie beim manuellen Testen der Benutzerumgebung Ihrer App-Installation auf Probleme stoßen, lesen Sie [Problembehandlung bei der App-Installation](troubleshoot-app-install.md). 
+
+### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>Erteilen von Berechtigungen für den Zugriff auf den Intune-App-Schutzdienst durch Ihre App (optional)
+
+Wenn Ihre App die eigenen benutzerdefinierten Azure Active Directory-Einstellungen (AAD) für die Authentifizierung verwendet, sollten die folgenden Schritte für Apps aus öffentlichen Stores und interne branchenspezifische Apps durchgeführt werden. Die Schritte **müssen nicht durchgeführt werden, wenn Ihre App die standardmäßige Client-ID des Intune SDK verwendet**. 
+
+Nachdem Sie Ihre App innerhalb eines Azure-Mandanten registriert haben und sie unter **Alle Anwendungen** angezeigt wird, müssen Sie Ihrer App Zugriff auf den Intune-App-Schutzdienst (vormals bekannt als MAM-Dienst) gewähren. Im Azure-Portal:
+
+1.  Navigieren Sie zum Blatt **Azure Active Directory**.
+2.  Wählen Sie die Einrichtung **App-Registrierung** für die Anwendung aus.
+3.  Klicken Sie in den **Einstellungen** unter der Überschrift **API-Zugriff** auf **Erforderliche Berechtigung**. 
+4.  Klicken Sie auf **+ Hinzufügen**.
+5.  Klicken Sie auf **Hiermit wählen Sie eine API aus**. 
+6.  Geben Sie in das Suchfeld **Microsoft Mobile Application Management** (Verwaltung mobiler Microsoft-Anwendungen) ein.
+7.  Wählen Sie in der API-Liste **Microsoft Mobile Application Management** (Verwaltung mobiler Microsoft-Anwendungen) aus, und klicken Sie auf „Auswählen“.
+8.  Klicken Sie auf **Read and Write the User’s App Management Data** (Lese- und Schreibberechtigungen für die App-Verwaltungsdaten des Benutzers).
+9.  Klicken Sie auf **Fertig**.
+10. Klicken Sie auf **Berechtigungen erteilen**, und klicken Sie anschließend auf **Ja**. 
 
 ### <a name="badge-your-app-optional"></a>Anzeigen eines Badges auf Ihrem App-Symbol (optional)
 

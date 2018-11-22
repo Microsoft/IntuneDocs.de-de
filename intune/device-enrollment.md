@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: a9761c57b15700e147bc092b7577fe1b32c78c18
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: c46a90d36ba8b50703e62fc663b1d090ac1bcfc7
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254155"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610123"
 ---
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,7 +42,6 @@ Standardmäßig dürfen Geräte für alle Plattformen in Intune registriert werd
 |**[USB (direkt)](#usb-direct)**| Nein |    Nein  | Nein|[Weitere Informationen](./apple-configurator-direct-enroll-ios.md)|
 
 ## <a name="macos-enrollment-methods"></a>macOS-Registrierungsmethoden
-
 | **Methode** |  **Zurücksetzen erforderlich** |  **Benutzeraffinität** | **Gesperrt** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | Nein| Ja  | Nein | [Weitere Informationen](./macos-enroll.md)|
@@ -56,7 +55,11 @@ Standardmäßig dürfen Geräte für alle Plattformen in Intune registriert werd
 |**[BYOD](#bring-your-own-device)** | Nein |  Ja  |   Nein | [Weitere Informationen](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Nein |Nein |Nein  |[Weitere Informationen](device-enrollment-manager-enroll.md)|
 |**Automatische Registrierung** | Nein |Ja  |Nein | [Weitere Informationen](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**Autopilot** |Ja  |Ja  |Nein | [Weitere Informationen](enrollment-autopilot.md)]
 |**Massenregistrierung** |Nein |Nein |Nein | [Weitere Informationen](./windows-bulk-enroll.md) |
+|**Die Co-Verwaltung** |Nein |Ja  |Nein | [Weitere Informationen](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)]
+|**GPO** |Nein |Ja  |Nein | [Weitere Informationen](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)]
+
 
 ## <a name="android-enrollment-methods"></a>Android-Registrierungsmethoden
 

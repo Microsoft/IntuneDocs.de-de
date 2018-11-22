@@ -15,12 +15,12 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ce54f3bc51735c763359b3e59832454d0a89fad
-ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
+ms.openlocfilehash: 1a10d434fbdb5d827c7ecb89d1ae2f7e43c0f951
+ms.sourcegitcommit: 1e6fee4032c50ab41a5166db39fbea80a731c541
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51298087"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "51654907"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot (Vorschauversion)
 Sie können in Azure Active Directory Hybrid eingebundenen Geräte mithilfe von Intune und Windows Autopilot einrichten. Führen Sie dazu die folgenden Schritte aus.
@@ -110,12 +110,13 @@ Die Organisationseinheit, die die Berechtigung zum Erstellen von Computern erhal
 
 Der Intune-Connector für Active Directory muss auf einem Computer mit Windows Server 2016 installiert sein, der Zugriff auf das Internet und die Active Directory-Instanz hat. Für höhere Skalierbarkeit und Verfügbarkeit oder Unterstützung mehrerer Active Directory-Domänen können Sie mehrere Connectors in der Umgebung installieren. Es wird empfohlen, den Connector auf einem Server zu installieren, auf dem keine anderen Intune-Connectors ausgeführt werden.
 
-1. Klicken Sie unter [Intune](https://aka.ms/intuneportal) auf **Geräteregistrierung** > **Windows-Registrierung** > **Intune-Connector für Active Directory (Vorschau)** > **Connector hinzufügen**. 
-2. Folgen Sie den Anweisungen, um den Connector herunterzuladen.
-3. Öffnen Sie die heruntergeladene Connector-Setupdatei (ODJConnectorBootstrapper.exe), um den Connector zu installieren.
-4. Wählen Sie am Ende des Setups die Option **Konfigurieren** aus.
-5. Wählen Sie **Anmelden** aus.
-6. Geben Sie die Anmeldedaten für die Rolle „Globaler Administrator“ oder „Intune-Administrator“ ein.
+1. Stellen Sie sicher, dass Sie ein Language Pack installiert und konfiguriert haben, wie unter [Sprachanforderungen für den Intune-Connector (Vorschau)](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector) beschrieben wird.
+2. Klicken Sie unter [Intune](https://aka.ms/intuneportal) auf **Geräteregistrierung** > **Windows-Registrierung** > **Intune-Connector für Active Directory (Vorschau)** > **Connector hinzufügen**. 
+3. Folgen Sie den Anweisungen, um den Connector herunterzuladen.
+4. Öffnen Sie die heruntergeladene Connector-Setupdatei (ODJConnectorBootstrapper.exe), um den Connector zu installieren.
+5. Wählen Sie am Ende des Setups die Option **Konfigurieren** aus.
+6. Wählen Sie **Anmelden** aus.
+7. Geben Sie die Anmeldedaten für die Rolle „Globaler Administrator“ oder „Intune-Administrator“ ein.
 8. Wechseln Sie zu **Geräteregistrierung** > **Windows-Registrierung** > **Intune-Connector für Active Directory (Vorschau)**, und bestätigen Sie, dass der Verbindungsstatus **Aktiv** ist.
 
 ### <a name="configure-web-proxy-settings"></a>Konfigurieren von Webproxyeinstellungen

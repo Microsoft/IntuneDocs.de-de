@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: apps; get-started
-ms.openlocfilehash: ad9eea41d0d40eed9aee07bcf5a77118c0efdab8
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 77a8adb418759386fdd02409a51b16a734d79ba8
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253749"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167384"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Übersicht über den App-Lebenszyklus in Microsoft Intune
 
@@ -35,7 +35,7 @@ Der erste Schritt bei der App-Bereitstellung besteht darin, die Apps, die Sie ve
 
 ## <a name="deploy"></a>Bereitstellen
 
-Nachdem Sie die App zu Intune hinzugefügt haben, können Sie diese [für die von Ihnen verwalteten Benutzer und Geräte bereitstellen](apps-deploy.md). Intune vereinfacht diesen Vorgang, und nachdem die App bereitgestellt wurde, können Sie [den Erfolg der Bereitstellung über Intune im Azure-Portal überwachen](apps-monitor.md). Darüber hinaus können Sie in einigen App-Stores wie dem [Apple](vpp-apps-ios.md)- und dem [Windows](windows-store-for-business.md)-App Store App-Lizenzen für Ihr Unternehmen in einem Massenvorgang erwerben. Intune kann Daten mit diesen Stores synchronisieren, sodass Sie die Bereitstellung und Verfolgung der Lizenznutzung für diese Typen von Apps direkt von der Intune-Verwaltungskonsole aus bereitstellen und verfolgen können.
+Nachdem Sie die App zu Intune hinzugefügt haben, können Sie diese [für die von Ihnen verwalteten Benutzer und Geräte bereitstellen](apps-deploy.md). Intune vereinfacht diesen Vorgang, und nachdem die App bereitgestellt wurde, können Sie [die erfolgreiche Bereitstellung über Intune im Azure-Portal überwachen](apps-monitor.md). Darüber hinaus können Sie in einigen App-Stores wie dem [Apple](vpp-apps-ios.md)- und dem [Windows](windows-store-for-business.md)-App Store App-Lizenzen für Ihr Unternehmen in einem Massenvorgang erwerben. Intune kann Daten mit diesen Stores synchronisieren, sodass Sie die Bereitstellung und Verfolgung der Lizenznutzung für diese Typen von Apps direkt von der Intune-Verwaltungskonsole aus bereitstellen und verfolgen können.
 
 ## <a name="configure"></a>Konfigurieren
 

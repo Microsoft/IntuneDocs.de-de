@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
-ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
+ms.openlocfilehash: f311d8a389d551ed834d955c5d1c59dbc9c3c4a2
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45978245"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610021"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Verwalten von Windows-PCs als Computer mit dem Intune-Softwareclient
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Mit Microsoft Intune können Sie Windows-PCs wie unten beschrieben entweder mithilfe der [mobilen Geräteverwaltung (Mobile Device Management, MDM) als mobile Geräte](windows-enroll.md) oder mithilfe des Intune-Softwareclients als Computer verwalten. Allerdings wird Kunden empfohlen, wenn möglich die [MDM-Verwaltungslösung](windows-enroll.md) zu verwenden.
+> Mit Microsoft Intune können Sie Windows-PCs wie unten beschrieben entweder mithilfe der [mobilen Geräteverwaltung (Mobile Device Management, MDM) als mobile Geräte](windows-enroll.md) oder mithilfe des Intune-Softwareclients als Computer verwalten. Allerdings wird Kunden empfohlen, wenn möglich die [MDM-Verwaltungslösung](windows-enroll.md) zu verwenden. Weitere Informationen finden Sie unter [Vergleichen der Verwaltung von Windows-PCs als Computer oder Mobilgeräte](pc-management-comparison.md). 
 
 Intune bietet Organisationen eine umfassende Lösung für die Verwaltung mobiler Geräte. Intune kann Windows-PCs mithilfe der modernen Geräteverwaltungsfunktionen des Betriebssystems Windows 10 als mobile Geräte verwalten. Zum Erfüllen der Verwaltungsanforderungen Ihrer Organisation kann Intune Windows-PCs mithilfe des Intune-Softwareclients auch als Computer verwalten. Für diese Verwaltungsmethode werden herkömmliche Funktionen für die Computerverwaltung in älteren Windows-Betriebssystemen verwendet.
 
@@ -40,15 +40,17 @@ Intune unterstützt die Verwaltung von Windows-PCs als Computer mit dem Software
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Anforderungen für die Intune-PC-Clientverwaltung
 
-**Hardware**: Im Folgenden sind die Hardwaremindestanforderungen zum Installieren der Intune-Clientsoftware aufgeführt:
+**Hardware**:  
+Im Folgenden sind die Hardwaremindestanforderungen zum Installieren der Intune-Clientsoftware aufgeführt:
 
 |Anforderungen|Weitere Informationen|
 |---------------|--------------------|
 |Netzwerk|Für den Client ist ein PC mit Internetzugriff erforderlich.|
 |Prozessor und Arbeitsspeicher|Weitere Informationen entnehmen Sie den Prozessor- und Arbeitsspeicheranforderungen des PC-Betriebssystems.|
-|Speicherplatz|200 MB verfügbarer Speicherplatz vor der Installation der Clientsoftware|
+|Speicherplatz|200 MB verfügbarer Speicherplatz vor der Installation der Clientsoftware|
 
-**Software**: Im Folgenden sind die Softwareanforderungen zum Installieren der Clientsoftware aufgeführt:
+**Software**:  
+Im Folgenden sind die Softwareanforderungen zum Installieren der Clientsoftware aufgeführt:
 
 |Anforderungen|Weitere Informationen|
 |---------------|--------------------|

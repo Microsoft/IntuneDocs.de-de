@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c9e440aef7f434cbe675506fd6f22a9bd26b2c31
-ms.sourcegitcommit: 528d2bc70bfd25803a2d9f0fe9372c8a5f5e7dad
+ms.openlocfilehash: 457acdc212855767687f97f7d03b731f35afad46
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/28/2018
-ms.locfileid: "47446819"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811528"
 ---
 # <a name="capabilities-by-enrollment-method-for-windows-devices"></a>Funktionen nach Registrierungsmethode für Windows-Geräte
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "47446819"
 Intune ermöglicht es Ihnen, die Geräte und Apps Ihrer Mitarbeiter sowie deren Zugriff auf Ihre Unternehmensdaten zu verwalten. Die Geräte müssen zunächst beim Intune-Dienst registriert werden. Es gibt verschiedene Methoden, um die Geräte Ihrer Mitarbeiter zu registrieren. Für jede Methode gelten andere bewährte Methoden und Funktionen, wie in den Tabellen unten dargestellt.
 
 ## <a name="best-practices-by-enrollment-method"></a>Bewährte Methoden nach Registrierungsmethode
-| **Empfohlene Methoden** | **[In Azure AD eingebunden](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD verknüpft mit Autopilot](enrollment-autopilot.md)** |**[Massenregistrierung](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **GPO** |
+| **Empfohlene Methoden** | **[In Azure AD eingebunden](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD verknüpft mit Autopilot](enrollment-autopilot.md)** |**[Massenregistrierung](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |Häufig verwendet in EDU|![X](media/xmark.png)|![Häkchen](media/checkmark.png)|![Häkchen](media/checkmark.png)|![Häkchen](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
 |Geräte können als freigegebene Geräte verwendet werden|![X](media/xmark.png)|![X](media/xmark.png)|![Häkchen](media/checkmark.png)|![Häkchen](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|
@@ -36,7 +36,7 @@ Intune ermöglicht es Ihnen, die Geräte und Apps Ihrer Mitarbeiter sowie deren 
 
 ## <a name="capabilities-by-enrollment-method"></a>Funktionen nach Registrierungsmethode
 
-| **Funktionen** | **[In Azure AD eingebunden](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD verknüpft mit Autopilot](enrollment-autopilot.md)** |**[Massenregistrierung](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **GPO** |
+| **Funktionen** | **[In Azure AD eingebunden](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD verknüpft mit Autopilot](enrollment-autopilot.md)** |**[Massenregistrierung](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |Bedingter Zugriff                                      |![Häkchen](media/checkmark.png)|![Häkchen](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Häkchen](media/checkmark.png)|![Häkchen](media/checkmark.png)|
 |Benutzer wird dem Gerät zugeordnet                    |![Häkchen](media/checkmark.png)|![Häkchen](media/checkmark.png)|![X](media/xmark.png)|![X](media/xmark.png)|![Häkchen](media/checkmark.png)|![Häkchen](media/checkmark.png)|
@@ -52,5 +52,5 @@ Intune ermöglicht es Ihnen, die Geräte und Apps Ihrer Mitarbeiter sowie deren 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Optionen für die Registrierung](enrollment-options.md)
+[Einrichten der Registrierung für Windows-Geräte](windows-enroll.md)
 

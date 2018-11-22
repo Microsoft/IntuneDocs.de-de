@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8fdfa89654df1f62979240f364c2e28b5a15e78f
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 6668848bcb381299417ca7a641e267c41f9a1e79
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058913"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167390"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Verwenden von Bereitstellungsprofilen für iOS-Apps, um zu verhindern, dass Apps ablaufen
 
@@ -49,7 +49,7 @@ Wenn Sie über Administratorberechtigungen verfügen, können Sie Sicherheitsgru
 3. Konfigurieren Sie im Bereich **Profil erstellen** folgende Werte:
     - **Name**: Geben Sie einen Namen für dieses mobile Bereitstellungsprofil an.
     - **Beschreibung**: Geben Sie optional eine Beschreibung der Richtlinie ein.
-    - **Profildatei hochladen**: Klicken Sie auf **Importieren**, und wählen Sie eine Datei mit einem mobilen Apple-Konfigurationsprofil (mit der Erweiterung **.mobileprovision**) aus, die Sie von der Apple Developer-Website heruntergeladen haben.
+    - **Profildatei hochladen**: Klicken Sie auf **Importieren**, und wählen Sie eine Datei mit einem Konfigurationsprofil für Apple-Mobilgeräte (mit der Erweiterung `.mobileprovision`) aus, die Sie von der Apple Developer-Website heruntergeladen haben.
 4. Wählen Sie abschließend **Erstellen** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d44b7483d65eeb7b2a39783fb113c444184db4f3
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: b1e07bd67d4bf8b776500be01571deddb1e5e58f
+ms.sourcegitcommit: 630dfe1413c1819f35aa941ffc888a7084771a55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48232221"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "51709137"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Erstellen einer Richtlinie für bedingten Zugriff auf eine lokale Installation von Exchange und auf das ältere Exchange Online Dedicated
 
@@ -66,7 +66,7 @@ Bevor Sie den bedingten Zugriff konfigurieren können, müssen Sie Folgendes üb
 - EAS-E-Mail-Clients für **Android-Arbeitsprofilgeräte:** Nur **Gmail** und **Nine Work for Android Enterprise** im **Arbeitsprofil** werden auf Android-Arbeitsprofilgeräten unterstützt. Damit der bedingte Zugriff mit Android-Arbeitsprofilen funktioniert, müssen Sie ein E-Mail-Profil für die Gmail- oder Nine Work for Android Enterprise-App sowie diese Apps als erforderliche Installation bereitstellen.
 
 > [!NOTE]
-> Microsoft Outlook-App unter Android und iOS wird nicht unterstützt. 
+> Microsoft Outlook für Android und iOS wird nicht über den lokalen Exchange-Connector unterstützt. Wenn Sie Richtlinien für den bedingten Azure Active Directory-Zugriff und Intune-App-Schutzrichtlinien mit Outlook für iOS und Android für Ihre lokale Postfächer nutzen möchten, lesen Sie [Verwendung der modernen Hybridauthentifizierung mit Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
 
 ### <a name="support-for-pcs"></a>Unterstützung für PCs
 
@@ -79,9 +79,9 @@ Die systemeigene **E-Mail**-Anwendung unter Windows 8.1 und höher (bei Registri
 
 1. Sobald Sie erfolgreich angemeldet sind, wird das **Azure-Dashboard** angezeigt.
 
-1. Klicken Sie im Menü links auf **Alle Dienste**, und geben Sie in das Filtertextfeld **Intune** ein.
+1. Klicken Sie im Menü links auf  **Alle Dienste** , und geben Sie in das Filtertextfeld  **Intune**  ein.
 
-1. Wählen Sie **Intune** aus. Das **Intune-Dashboard** wird angezeigt.
+1. Wählen Sie  **Intune** aus. Das **Intune-Dashboard** wird angezeigt.
 
 1. Klicken Sie auf **On-premises access** (Lokaler Zugriff). Der Bereich **On-premises access** (Lokaler Zugriff) enthält den Status der Richtlinie für bedingten Zugriff und die Geräte, die davon betroffen sind.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce31832421ece9008e1526e54ba3e9aa2780c666
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 6a249962c4ac75e51be082112b884a5825d4ef2a
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236287"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811511"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 
@@ -29,7 +29,7 @@ ms.locfileid: "50236287"
 Im Microsoft Intune-Unternehmensportal können Benutzer auf Unternehmensdaten zugreifen, häufige Aufgaben wie das Registrieren von Geräten und das Installieren von Apps ausführen und sich über Unterstützungsmöglichkeiten durch Ihre IT-Abteilung informieren.        
 
 > [!Tip]        
-> Wenn Sie das Unternehmensportal anpassen, gelten die Konfigurationen sowohl für die Unternehmensportal-Website als auch für die Unternehmensportal-Apps.       
+> Wenn Sie das Unternehmensportal anpassen, gelten die Konfigurationen sowohl für die Unternehmensportal-Website als auch für die Unternehmensportal-Apps. Beachten Sie, dass Benutzern eine Intune-Lizenz zugewiesen werden muss, damit sie auf die Unternehmensportalwebsite zugreifen können.
 
 Durch Anpassen des Unternehmensportals können Sie Ihren Endbenutzern eine vertraute und sinnvolle Benutzeroberfläche bereitstellen. Klicken Sie hierzu in der Workload **Client-Apps** auf **Setup** > **Branding des Unternehmensportals**, und konfigurieren Sie die erforderlichen Einstellungen.  
 
@@ -48,7 +48,7 @@ Mit einem Sternchen (*) gekennzeichnete Felder sind obligatorisch.
 | **URL der Datenschutzerklärung** |     79     | Sie können eine eigene Datenschutzerklärung für Ihr Unternehmen angeben. Diese wird angezeigt, wenn die Benutzer im Unternehmensportal auf die Datenschutzlinks klicken. Sie müssen eine gültige URL im Format `<https://www.contoso.com>` eingeben. |
 
 ## <a name="support-information"></a>Supportinformationen      
-Geben Sie die Supportinformationen Ihres Unternehmens ein, um Ihrem Mitarbeiter einen Kontakt für auf Intune bezogene Fragen bereitzustellen.       
+Geben Sie die Supportinformationen Ihres Unternehmens ein, um Ihrem Mitarbeiter einen Kontakt für auf Intune bezogene Fragen bereitzustellen.          
 
 |Feldname|Max. Länge|Weitere Informationen|
 |---|---|---|
@@ -84,24 +84,33 @@ Wählen Sie ein Logo aus, das auf weißen oder hellen Hintergründen am besten a
 
 ### <a name="brand-image-for-company-portal"></a>Markenbild für das Unternehmensportal
 
-Zeigen Sie ein Markenbild an, das Ihre Unternehmensmarke widerspiegelt. Die Unterstützung für Markenbilder wird den Unternehmensportal-Apps hinzugefügt, jedoch sind sie möglicherweise nicht auf allen Plattformen sichtbar.
+Zeigen Sie ein Markenbild an, das Ihre Unternehmensmarke widerspiegelt. Nachdem Sie Ihre Änderungen gespeichert haben, können Sie im Intune-Webportal im oberen Bereich des Blatts auf **Preview your settings** (Vorschau Ihrer Einstellungen) klicken, um Ihre Konfiguration zu überprüfen. Beachten Sie, dass Sie das Markenbild nur auf einem iOS-Gerät in der Vorschau anzeigen können und nicht im Intune-Webportal. 
 
 |Feldname|Weitere Informationen|
 |---|---|
-|**Upload your brand image** (Markenbild hochladen)| Mit dieser Option können Sie ein Hintergrundbild auf der Benutzerprofilseite in der Unternehmensportal-App anzeigen.<p><ul><li>Empfohlene Bildbreite: Breiter als 1125 px, aber nicht weniger als 640 px</li><li>Maximale Bildgröße: 1,3 MB</li><li>Dateityp: PNG, JPG oder JPEG</li></ul>|
+|**Upload your brand image** (Markenbild hochladen)| Mit dieser Option können Sie ein Hintergrundbild auf der Benutzerprofilseite in der Unternehmensportal-App anzeigen.<p>*Hinweis*: Das Bild wird auf verschiedenen Plattformen möglicherweise unterschiedlich dargestellt.<p><ul><li>Empfohlene Bildbreite: Breiter als 1125 px, aber nicht weniger als 640 px</li><li>Maximale Bildgröße: 1,3 MB</li><li>Dateityp: PNG, JPG oder JPEG</li></ul>|
 
 Mit einem richtigen Markenbild kann das Vertrauen von Benutzern in das Unternehmensportal gesteigert werden, indem die Identität des Unternehmens aussagekräftig dargestellt wird. Im Folgenden finden Sie einige Tipps, die Sie beim Erwerben, Auswählen und Optimieren des Bilds für das Unternehmensportal beachten sollten. 
 
-- Wenden Sie sich an Ihre Marketing- oder Designabteilung. Möglicherweise verfügen sie bereits über zulässige Markenbilder. Eventuell können sie Sie bei Bedarf auch beim Optimieren der Bilder unterstützen. 
+- Wenden Sie sich an Ihre Marketing- oder Designabteilung. Möglicherweise verfügt sie bereits über zulässige Markenbilder. Eventuell können sie Sie bei Bedarf auch beim Optimieren der Bilder unterstützen. 
 
-- Beachten Sie die Komposition sowohl im Querformat als auch im Hochformat. Das Bild sollte ausreichend Hintergrundfläche um den Fokus herum aufweisen. Das Bild wird möglicherweise je nach Größe und Ausrichtung des Geräts anders zugeschnitten. 
+- Beachten Sie die Komposition sowohl im Querformat als auch im Hochformat. Das Bild sollte ausreichend Hintergrundfläche um den Fokus herum aufweisen. Das Bild wird möglicherweise je nach Größe, Ausrichtung und Plattform des Geräts anders zugeschnitten. 
 
 - Vermeiden Sie typische Archivbilder. Das Bild sollte die Marke Ihres Unternehmens widerspiegeln und für Benutzer vertraut wirken. Wenn Sie keines besitzen, ist es besser, keines zu verwenden, anstatt ein allgemeines Bild zu nutzen, das keine Bedeutung für Ihre Benutzer hat. 
 
 - Entfernen Sie unnötige Metadaten. Bilddateien können Metadaten enthalten, z.B. das Kameraprofil, der geografische Standort, Titel, Beschreibung usw. Verwenden Sie ein Bildbearbeitungstool, um diese Informationen zu entfernen, die Qualität beizubehalten und die maximale Dateigröße einzuhalten. 
 
-Nachdem Sie Ihre Änderungen gespeichert haben, können Sie im Intune-Webportal im oberen Bereich des Blatts auf **Preview your settings** (Vorschau Ihrer Einstellungen) klicken, um Ihre Konfiguration zu überprüfen. Beachten Sie, dass Sie das Markenbild nur auf einem iOS-Gerät in der Vorschau anzeigen können und nicht im Intune-Webportal. 
+Nachdem ein Markenbild in Intune hinzugefügt oder geändert wurde, wird dem Endbenutzer auf iOS-Geräten möglicherweise erst eine Änderung angezeigt, wenn das Unternehmensportal die Änderung beim Start erkannt hat und zur Anzeige des Markenbilds neu gestartet wurde. 
 
+### <a name="brand-image-examples"></a>Beispiele für Markenbilder
+
+Die folgende Abbildung zeigt ein iPad-Beispielmarkenbild:
+
+![Screenshot eines iPhone-Beispielmarkenbilds](media/company-portal-app/company-portal-app-03.png)
+
+Die folgende Abbildung zeigt ein iPhone-Beispielmarkenbild:
+
+![Screenshot eines iPad-Beispielmarkenbilds](media/company-portal-app/company-portal-app-02.png)
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Tastenkombinationen für die Windows-Unternehmensportal-App
 
@@ -125,6 +134,10 @@ Die folgenden Tastenkombinationen stehen Ihnen in der Windows-Unternehmensportal
 |  | Remove | STRG+D oder ENTF-TASTE |
 |  | Zugriff prüfen | STRG+M oder F9 |
 | App-Details | „Installieren“ zu klicken. | STRG+I |
+
+Endbenutzer können zudem die verfügbaren Tastenkombinationen in der Windows-Unternehmensportal-App einsehen.
+
+![Screenshot der verfügbaren Tastenkombinationen in der Windows-Unternehmensportal-App](media/company-portal-app/company-portal-app-01.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 
