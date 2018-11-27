@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5c916182-d99c-44c5-a779-3f596f261c40
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 95525e66cce1e9691c60799df3da184954d6bf4b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: bfb7186d7dcd764237ba4dd00fc12bd9e666f67e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312660"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187411"
 ---
 # <a name="retire-a-windows-pc"></a>Abkoppeln eines Windows-PCs
 

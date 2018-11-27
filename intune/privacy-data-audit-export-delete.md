@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c646e134f6311e7c365fe38301a9015a752b553f
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: 82d6ef4494ee85e86b42d0c500c6f5b26bb00d27
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028612"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179693"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Überwachen, Exportieren und Löschen von personenbezogenen Daten in Intune
 

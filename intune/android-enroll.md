@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3b7652c8c4f471a0a0c32da23d8ac1859e84eb13
-ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
+ms.openlocfilehash: 2b2b3ba5443cd95cd81bdca6d386ab95a2c831eb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2018
-ms.locfileid: "39400350"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190114"
 ---
 # <a name="enroll-android-devices"></a>Registrieren von Android-Geräten
 
@@ -30,7 +31,7 @@ Als Intune-Administrator können Sie die folgenden Android-Geräte verwalten:
 - Android-Geräte, einschließlich Samsung Knox Standard-Geräte
 - Android Enterprise-Geräte, einschließlich [Android-Arbeitsprofilgeräte](#enable-enrollment-of-android-for-work-devices) und Android-Kioskgeräte
 
-Geräte, die mit Samsung Knox-Standard ausgeführt werden, werden für die Mehrbenutzerverwaltung von Intune unterstützt. Dies bedeutet, dass Benutzer sich bei einem Gerät mit ihren Azure AD-Anmeldeinformationen an- und abmelden können. Das Gerät wird zentral verwaltet, ganz gleich, ob es verwendet oder nicht. Wenn sich Benutzer anmelden, verfügen sie über Zugriff auf Apps und erhalten zusätzlich alle Richtlinien, die ihnen zugewiesen sind. Wenn sich Benutzer abmelden, werden alle App-Daten gelöscht.
+Geräte, die mit Samsung Knox-Standard ausgeführt werden, werden für die Mehrbenutzerverwaltung von Intune unterstützt. Dies bedeutet, dass Benutzer sich bei einem Gerät mit ihren Azure AD-Anmeldeinformationen an- und abmelden können. Das Gerät wird zentral verwaltet, ganz gleich, ob es verwendet oder nicht. Wenn sich Benutzer anmelden, verfügen sie über Zugriff auf Apps und erhalten zusätzlich alle Richtlinien, die ihnen zugewiesen sind. Wenn sich Benutzer abmelden, werden alle App-Daten gelöscht.
 
 ## <a name="prerequisite"></a>Voraussetzung
 

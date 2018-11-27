@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 270f19b6f0babb347b04731ca270a3c5bea18217
-ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
+ms.openlocfilehash: 2e48e782a3da5f7b367236218e8ec036a5c1b7f6
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "51225667"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179710"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Erfordert mehrstufige Authentifizierung für Intune-Geräteregistrierungen
 

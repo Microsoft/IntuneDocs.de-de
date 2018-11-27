@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 459e722e059d2d868c6de52bb11d5a2f52ce94c8
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: f6559b10bb9e3c293a9719235d01d8c7b55ee62f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310588"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185388"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Verwalten von Lizenzverträgen für Windows-PC-Software in Microsoft Intune
 

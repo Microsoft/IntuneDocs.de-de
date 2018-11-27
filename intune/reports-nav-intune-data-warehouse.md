@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2d9dda7381aa7d3033dec0618843522339335c0b
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: b08746965c23c8d247a53bcd0b0844a24581b4e6
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602094"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179082"
 ---
 #  <a name="intune-data-warehouse-api"></a>Intune Data Warehouse-API
 

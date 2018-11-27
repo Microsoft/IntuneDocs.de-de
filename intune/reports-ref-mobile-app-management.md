@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 8f9313b35e6cb9da5d517e8f06e04c5a567612f4
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
+ms.openlocfilehash: 845c0639e885833bc020aed4d55dc31d6a0f03f0
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727531"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190131"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Verweis für MAM-Entitäten (Verwaltung mobiler Apps)
 

@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 937fdd2130a0ae85421a4310fe6a0dc70986d2de
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: fca6fd73da1277973ee313055eaf4b5ba073afbb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313237"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184810"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Massenregistrierung für Windows-Geräte
 

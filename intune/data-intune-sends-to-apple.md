@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e2829ffe4c8dfffd4d23f4c86b2985d41e983799
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ba9d4d779a0f609bf07e4d0d7d9aad83e5d415c5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023936"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181529"
 ---
 # <a name="data-intune-sends-to-apple"></a>Von Intune an Apple gesendete Daten
 

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 97543ec74225ef86208000bccb2a8ad7852dd9c1
-ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.openlocfilehash: d9a7ad5d77f0c085fc1e91b6991657e6b848b3f3
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51610055"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187836"
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 

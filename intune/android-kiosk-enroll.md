@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c4b9b99a17e435b1d79d2e10565abbd262c89741
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 5ea4d41477f2f0c6dc1314e47072d2c4cf862e23
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187817"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184827"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Einrichten der Registrierung von Android Enterprise-Kioskgeräten
 

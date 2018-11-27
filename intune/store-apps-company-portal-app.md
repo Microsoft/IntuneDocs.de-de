@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 109ba2ddeca3af3f1dbb9834e206330f6146b819
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
+ms.openlocfilehash: 7808d9c189f429e15cdf916d18412ba951c7e696
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727559"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190267"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Manuelles Hinzufügen der Windows 10-Unternehmensportal-App mithilfe von Microsoft Intune
 

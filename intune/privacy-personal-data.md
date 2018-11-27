@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: dc5e9af9-8a3e-4b3c-ba49-e79142092e2e
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c433fd8dc8994b94ea8a7028b6c7ff94f0274caf
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 98debd35941cacd3b83bd47805cc70ccc9afb5cc
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474580"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181035"
 ---
 # <a name="privacy-and-personal-data-in-intune"></a>Datenschutz und personenbezogene Daten in Intune
 

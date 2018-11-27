@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2f3b28a7a5c1f97871a40f108a5fae6cc6b93424
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 765fae6f0e860935f5ceccadfdf1d9c3fe45d60e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49424882"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181903"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Überwachen von App-Schutzrichtlinien
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3361ce41dfa95de0cb1a7a3bdbdbd74e7d6d5edf
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 65ecff2a21fa814c3b3518eb92e0378301dbd606
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832560"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189266"
 ---
 # <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Einstellungen des Layouts des Microsoft Intune-Startbildschirms für iOS-Geräte
 

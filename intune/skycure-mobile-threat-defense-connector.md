@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cf28e91789549cc82db01b052e41cfd99eafb60d
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 1503bdb9b62e7e9fb4b2d5a0482e058d6fed31f7
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231320"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187692"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile-Connector
 

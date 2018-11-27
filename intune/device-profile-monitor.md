@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dda53c7b21a743136bf1b16cc7bcf864c7b900fd
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: dc3a9620532951bd78e545e87b0d43dd6be3efe5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905919"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186595"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Überwachen von Geräteprofilen in Microsoft Intune
 

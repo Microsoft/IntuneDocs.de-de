@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 13a9c0a036eb6ce6ea7e984419c9598194b35b68
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+search.appverid: MET150
+ms.openlocfilehash: 651612ac403db01ff2c5b7574216459c7ee2bd16
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2018
-ms.locfileid: "29926353"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183793"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Konfigurieren der Richtlinien für die Gerätekompatibilität und die App-Verwaltung während einer Migration zu Microsoft Intune
 

@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 9cba874c9288b86f5676b38e587a68c227913200
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: 675e45a7f49a943cb57135c141a9331ba24fabe7
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562811"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184232"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune-Dienstbeschreibung
 

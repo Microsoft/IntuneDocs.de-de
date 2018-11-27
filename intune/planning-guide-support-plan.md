@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: b9428769-4333-4778-b677-f23dea1f74da
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d025afb5b3bab15876c4bbe814e271b9ffcbe3ce
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 3bb1bb97dd113ac4f7fe41e516ad93dc7b6d7f01
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961425"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188219"
 ---
 # <a name="develop-a-support-plan"></a>Entwickeln eines Supportplans
 

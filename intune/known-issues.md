@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4e523e4fb6505b2faaa0aa776b89454524130ba8
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: db655c49277051267036d76e518cc870757f67c2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187851"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183042"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekannte Probleme in Microsoft Intune
 

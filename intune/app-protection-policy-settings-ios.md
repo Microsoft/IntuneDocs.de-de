@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e9debe01604fc3275922c29e1cff3aa22dc74c50
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: 79df4e20a1dcd4a5cbc30ab0c887d53bf205ebbf
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576850"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184742"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Einstellungen für App-Schutzrichtlinien für iOS
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

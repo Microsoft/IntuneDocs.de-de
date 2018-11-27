@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7ff30ef609cf2ad742b55d80f418919bf4ab144a
-ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
+ms.openlocfilehash: 40549d8fa9bead312f39ca9a782fb555e1022cd6
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2018
-ms.locfileid: "33927439"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180407"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Gewusst wie: Konfigurieren von Intune-Einstellungen für die iOS-App „Classroom“
 

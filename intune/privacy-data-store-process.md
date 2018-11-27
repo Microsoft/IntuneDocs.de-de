@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: edb07842-6a16-482e-8c1d-541a29e169a8
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5f7c24775f03011bd936b22e41cfd318e92b5d64
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: f1adab40170227926dce1eb7c14117accf1d7d0a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474648"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185914"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Datenspeicherung und -verarbeitung in Intune
 

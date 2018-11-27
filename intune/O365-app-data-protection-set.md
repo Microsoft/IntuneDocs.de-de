@@ -15,13 +15,14 @@ ms.assetid: 852612ac-f146-4372-a900-3f6fdebd05ad
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d90ede39ab9daeb24cc1545dda93054550ed1152
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: a3eed03deb3f619f75502e8a9d1d66fefc38a081
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799607"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180070"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Was der grundlegende Schutz in verwalteten Office 365-Apps in Microsoft Intune beinhaltet umfasst.
 

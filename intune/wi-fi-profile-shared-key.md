@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 72aa45d154cc3913f5b2e3895486a8296bb7f1cf
-ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
+ms.openlocfilehash: 59736ad188cf88c994ff93b4a505731afad8f550
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49169446"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186323"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Verwenden eines benutzerdefinierten Geräteprofils zum Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel – Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

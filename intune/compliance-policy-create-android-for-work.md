@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ff1f4f6a728fc041241371a413ce9d2dfdf89605
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: a606f63bd22ce2ed543b6c5863ddc4f35d7ea212
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236457"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186204"
 ---
 # <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für Android Enterprise-Geräte in Intune
 
@@ -143,7 +144,7 @@ Sie können den Zeitplan anpassen, anhand dessen das Gerät als nicht konform ma
 
 Weitere Informationen sowie Informationen zum Erstellen einer E-Mail-Benachrichtigung an Ihre Benutzer finden Sie unter [Hinzufügen von Aktionen für nicht konforme Geräte in Intune](actions-for-noncompliance.md).
 
-## <a name="scope-tags"></a>Bereichsmarkierungen
+## <a name="scope-tags"></a>Festlegen von Tags
 
 Bereichsmarkierungen eignen sich zum Zuweisen von Richtlinien zu bestimmten Gruppen, z.B. Vertrieb, Engineering, Personalwesen usw. Sie können Bereichsmarkierungen zu Konformitätsrichtlinien hinzufügen. Weitere Informationen finden Sie unter [Verwenden von Bereichsmarkierungen zum Filtern von Richtlinien](scope-tags.md). 
 

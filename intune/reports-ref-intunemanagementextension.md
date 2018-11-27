@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 73DF3B90-6D52-4EF6-AFFD-1873A18C7421
 ms.reviewer: dariusz
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 02594a4442b91f59b3cea9e9fee5de8b39a6d19c
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: 48e08b93468fb177fd3a724e5bcc6758cf262e99
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799505"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189366"
 ---
 # <a name="reference-for-intune-management-extension"></a>Referenz für die Intune-Verwaltungserweiterung
 

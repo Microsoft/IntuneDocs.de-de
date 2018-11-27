@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f79985c9854af462fa9a456304a3184128283b9c
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: 5f201544ec92ec57ec537a904075237020be168c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576799"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182617"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Einstellungen für Geräteeinschränkungen für Windows Holographic for Business in Intune
 

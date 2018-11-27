@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1108a208a324b5ed4c46248dc986dcf08e6293fe
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: cb5fc7256e68b8ea10ba1b3ddd7cfe6ed44bd544
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236542"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180611"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für Android-Geräte in Intune
 
@@ -156,7 +157,7 @@ Bereichsmarkierungen eignen sich zum Zuweisen von Richtlinien zu bestimmten Grup
 
 ## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen
 
-Eine erstellte Richtlinie bezweckt erst etwas, wenn Sie sie zuweisen. So weisen Sie die Richtlinie zu: 
+Eine erstellte Richtlinie bezweckt erst etwas, wenn Sie sie zuweisen. So weisen Sie die Richtlinie zu 
 
 1. Wählen Sie eine Richtlinie, die Sie konfiguriert haben. Vorhandene Richtlinien befinden sich unter **Gerätekompatibilität** > **Richtlinien**.
 2. Wählen Sie die Richtlinie und dann **Zuweisungen** aus. Sie können Azure Active Directory (AD)-Sicherheitsgruppen ein- oder ausschließen.

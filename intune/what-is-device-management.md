@@ -10,14 +10,17 @@ audience: ITPro
 ms.prod: microsoft-365-enterprise
 ms.service: ''
 ms.technology: ''
-ms.custom: microsoft-intune
+ms.custom: intune
 ms.assetid: 0649d310-43a7-4b01-85d2-da255d03e1da
-ms.openlocfilehash: 153f49ce0799ed181c9cb904c7c8ed88509805cc
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.openlocfilehash: 83ac68e1f6efa9e5b0c1ee0e031d36989b634edd
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581707"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185218"
 ---
 # <a name="what-is-device-management"></a>Was ist die Geräteverwaltung? 
 
@@ -47,7 +50,7 @@ Mit Intune können Sie mehrere Geräte pro Person und die darauf ausgeführten v
 - Verwenden privater Geräte für den Zugriff auf Unternehmensressourcen
 
 ## <a name="integration-with-secure-and-protect-services"></a>Integration mit Diensten für Sicherheit und Schutz
-Eine Hauptaufgabe einer jeden Lösung für die Geräteverwaltung ist es, Sicherheit und Schutz zu bieten. Intune leistet bei der Integration mit anderen Diensten hervorragende Arbeit, um diese Aufgabe zu erfüllen. Beispiele:
+Eine Hauptaufgabe einer jeden Lösung für die Geräteverwaltung ist es, Sicherheit und Schutz zu bieten. Intune leistet bei der Integration mit anderen Diensten hervorragende Arbeit, um diese Aufgabe zu erfüllen. Beispiel:
 
 - **Microsoft 365** ist eine Schlüsselkomponente zur Vereinfachung gängiger IT-Aufgaben. Mit dem Microsoft 365 Admin Center können Sie Benutzer erstellen, Gruppen verwalten und Zugriff auf andere Dienste wie Intune, Azure Active Directory und mehr erhalten. Sie können z. B. eine iOS-Gerätegruppe in Microsoft 365 erstellen. Verwenden Sie dann Intune, um Richtlinien an die iOS-Gerätegruppe weiterzugeben, die sich auf iOS-Features konzentrieren, z. B. Zugriff auf den App Store, Verwendung von AirDrop, Sicherung in iCloud, Verwendung des Webfilters von Apple und mehr.
 

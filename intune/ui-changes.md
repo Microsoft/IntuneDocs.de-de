@@ -14,19 +14,20 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 140b19ac64003f9ddf481a33e0cf4d423e106ffd
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: 4a1c5f2b400e73566db88fea8e06383e45b363a3
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028629"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187751"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Wo ist meine Intune-Funktion in Azure jetzt?
 Wir hatten die Chance, einige Aufgaben logischer zu organisieren, als wir Intune in das Azure-Portal umgezogen haben. Jedoch kommt jede Verbesserung mit der neuen Aufgabe, die neue Organisation kennenzulernen. Dieses Referenzhandbuch wurde für diejenigen von Ihnen erstellt, die mit Intune im klassischen Portal bestens vertraut sind und sich nun fragen, wie Aufgaben in Intune im Azure-Portal erledigt werden. Wenn dieser Artikel eine Funktion, die Sie suchen, nicht behandelt, hinterlassen Sie einen Kommentar am Ende des Artikels, damit wir ihn aktualisieren können.
 ## <a name="quick-reference-guide"></a>Handbuch mit Kurzübersicht
 
-|Funktion |Pfad im klassischen Portal|Pfad in Intune im Azure-Portal|
+|Komponente |Pfad im klassischen Portal|Pfad in Intune im Azure-Portal|
 |------------|---------------|---------------|
 |Programm zur Geräteregistrierung (DEP) [nur iOS9]|Administrator > Verwaltung mobiler Geräte > iOS > Programm zur Geräteregistrierung|[Geräteregistrierung > Apple-Registrierung > Registrierungsprogrammtoken](#where-did-apple-dep-go) |
 |Programm zur Geräteregistrierung (DEP) [nur iOS9]| Administrator > Verwaltung mobiler Geräte > iOS und Mac OS X > Programm zur Geräteregistrierung |[Geräteregistrierung > Apple-Registrierung > Seriennummern des Registrierungsprogramms](#where-did-apple-dep-go) |

@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.topic: article
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 863ef32d05fed601eaf38f749aa30e1c4b657cc9
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
+ms.openlocfilehash: b66adc535d51fdaf2e3fc7a4bb1b11d34433db98
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983158"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185575"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Verwenden von benutzerdefinierten Einstellungen für Windows Holographic for Business-Geräte in Intune
 

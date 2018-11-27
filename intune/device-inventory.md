@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2c47cd8ea136bcead14e70769f63df7b9b8f0e20
-ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.openlocfilehash: 1954f59a008c699c6dcdeb46686d3f37f941908a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51610089"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180271"
 ---
 # <a name="see-device-details-in-intune"></a>Anzeigen von Gerätedetails in Intune
 

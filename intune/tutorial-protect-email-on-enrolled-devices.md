@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5e88108d6c438bf2c192516be44908c4d76dfa9f
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
+ms.openlocfilehash: 2c23ad2c63fad8c74666e3c1ae9acc543e48f8e8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652120"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181869"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf verwalteten Geräten
 In diesem Artikel erfahren Sie, wie Sie mithilfe von Gerätekonformitätsrichtlinien mit bedingtem Zugriff sicherstellen können, dass iOS-Geräte nur dann auf den Exchange Online-E-Mail-Dienst zugreifen können, wenn sie von Intune verwaltet werden und eine genehmigte E-Mail-App verwenden. 

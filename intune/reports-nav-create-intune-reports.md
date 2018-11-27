@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 83ec5b412cbf4d31548d4e43574e04b9c876d8e4
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: 13054bcaf885173e768fefb585cb71f266e9ca9e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903487"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184657"
 ---
 # <a name="use-the-intune-data-warehouse"></a>Verwenden des Data Warehouse von Intune
 

@@ -14,13 +14,14 @@ ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2f21df636ab429969429c6dbdf540daaa67a8f88
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: fbe8cc0fc3e835ee5807dfbe56ea1aa3c728547e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576765"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184725"
 ---
 # <a name="the-early-edition-for-microsoft-intune---november-2018"></a>Die Early Edition für Microsoft Intune – November 2018
 

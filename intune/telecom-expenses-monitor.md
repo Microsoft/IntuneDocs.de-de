@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e4c44552a0df369767bb91749351674af9eab4b3
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: b3ca1b95a6dcf7bdc30b61469fa747894d20fe73
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959552"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188091"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Einrichten eines TEM-Diensts (Telecom Expense Management) in Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

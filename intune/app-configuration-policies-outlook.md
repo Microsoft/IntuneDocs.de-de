@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 24ed1a895dd3e4cad6111b40913b43fa9c6a3cec
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: 691029cc7b9fd8880c5440a84b95bbf2462920d6
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903521"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180322"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook-Konfigurationseinstellungen 
 

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 6B4BC650-62F7-4049-9DE4-CDECB579B58F
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 75f8e122df08351aab2aa0a5df83bf9a21e49509
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
+ms.openlocfilehash: 55d624f63c8563cc3dde561b98cd0894d5a9b65d
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727491"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189162"
 ---
 # <a name="reference-for-date-entity"></a>Verweis für die Datumsentität
 

@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 26d5af15086e422685c7c58c5b8a7d351f9eb854
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 51b1df246c23f2e1571b3bccc3f4f26ae91e26dd
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321389"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52178351"
 ---
 # <a name="microsoft-intune-macos-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für macOS-Geräte in Microsoft Intune
 

@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 24be76637257a3252d6660e8912d7fd2e214dccf
-ms.sourcegitcommit: 4ef14cc543b73191862201c1e0bae44dddd7d9f6
+ms.openlocfilehash: af2029fb42cf132ea8df01f1b4152653ed6e4a26
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/09/2018
-ms.locfileid: "37921347"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187887"
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Filtereinstellungen für Webinhalte für iOS-Geräte
 

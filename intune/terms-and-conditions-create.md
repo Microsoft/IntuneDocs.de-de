@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f480feae1e1df95567023614744c80ec392e86cb
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: e407b2059d986841541c969e387d77e71c5e5b4b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236423"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181359"
 ---
 # <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>Verwalten der Geschäftsbedingungen Ihres Unternehmens für den Benutzerzugriff
 

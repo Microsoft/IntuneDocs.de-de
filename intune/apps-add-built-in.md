@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b12a1233daf2aeb673765342edc81fe32a28146a
-ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.openlocfilehash: e3bb60d3d6bd7321ea3e378c747e87481b659888
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/20/2018
-ms.locfileid: "52167415"
+ms.locfileid: "52181546"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Hinzufügen von integrierten Apps zu Microsoft Intune
 

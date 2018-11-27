@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ba1ee5a6811457b8c6e7343de7355261a2fcecdb
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 44a6d89b649514a08193d7144dff7d89dc3d9c55
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236749"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183365"
 ---
 # <a name="company-portal-abandonment-report"></a>Abbruchbericht des Unternehmensportals
 

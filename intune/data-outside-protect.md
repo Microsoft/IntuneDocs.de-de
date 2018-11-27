@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1fa717147d8c5fcc33f350cc16bd4af53a31efc7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d8ae737ee11f176c036382fbe77122ecebb722d2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020519"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190012"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Verhindern von nicht autorisiertem Zugriff auf Unternehmensdaten mit Microsoft Intune
 

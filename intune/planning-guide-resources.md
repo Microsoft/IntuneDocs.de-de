@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 67476afbd00cf54162b316e6c38967bccbed34ad
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+search.appverid: MET150
+ms.openlocfilehash: 012dbd8f26ed6e3cd81a88396c7a1aa5d999d95e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2018
-ms.locfileid: "29999065"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183773"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Zusätzliche Ressourcen für die Planung Ihrer Intune-Bereitstellung
 

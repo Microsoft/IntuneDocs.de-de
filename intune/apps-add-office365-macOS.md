@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b348d785d12cd044b12dca4cad9d2daaa1baedf4
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: 4aa5cb24bc153839c6aac193f074128dd46a2e5f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903438"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185405"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Zuweisen von Office 365 zu macOS-Geräten mit Microsoft Intune
 

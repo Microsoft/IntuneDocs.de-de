@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 07fe31d8b668d14a51a5c31fa321e4789a0302c0
-ms.sourcegitcommit: dec09e9c91322ca347276785aca3c50036956f32
+ms.openlocfilehash: d8e9dd1e38fdc693bd30372f2961244e4e809771
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2018
-ms.locfileid: "51859510"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180339"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK-Xamarin-Bindungen
 

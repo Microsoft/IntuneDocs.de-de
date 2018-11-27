@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1326e65e-56cc-4987-9006-3a788597ca19
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: a7af46f0f9db0d849e3c75da36c5fe9354554107
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 309391db50ecaee798485a9fd064f08ba17c0d74
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643109"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181716"
 ---
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>An den telefonischen Support für Microsoft Intune wenden
 

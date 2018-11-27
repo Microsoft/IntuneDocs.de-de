@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7195b9d2d64c2282f2380624a209ad45220d3a4f
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 6bc6f5d2f32ff060eb2eec568b0048628ad0e09c
+ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313937"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52303854"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Erstellen eines Geräteprofils in Microsoft Intune
 
@@ -37,7 +38,7 @@ ms.locfileid: "43313937"
    - **Plattform**: Wählen Sie den Plattformtyp aus:  
 
        - **Android**
-       - **Android-Arbeitsprofile**
+       - **Android Enterprise**
        - **iOS**
        - **macOS**
        - **Windows Phone 8.1**

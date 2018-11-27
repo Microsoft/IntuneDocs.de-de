@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a0d9d0ac3c0cd8804ffc401cd3041d5b9a17e64f
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 14588563dd261063071c09c1bbd3b428fb375830
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236406"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184181"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für macOS-Geräte in Intune
 

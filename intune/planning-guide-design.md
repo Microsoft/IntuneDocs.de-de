@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 8e73a9cf189ba44a9f093559b9175dfa947a38e1
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864590"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186493"
 ---
 # <a name="create-a-design"></a>Erstellen eines Entwurfs
 
@@ -34,11 +35,11 @@ Ihr Intune-Entwurf basiert auf den Informationen und Entscheidungen, die Sie bei
 
 -   Aspekte zur Geräteplattform
 
--   Anforderungen an die Zustellung  
+-   Anforderungen an die Zustellung  
 
 Die Anforderungen an die lokale Infrastruktur sind überschaubar. Ein Entwurfsplan ist dennoch hilfreich, um sicherzustellen, dass Sie eine Verwaltungslösung für Mobilgeräte verwenden, die Ihren Zielen und Anforderungen gerecht wird.
 
-Betrachten wir jeden dieser Bereiche im Detail. 
+Betrachten wir jeden dieser Bereiche im Detail. 
 
 ## <a name="record-your-current-environment"></a>Erfassen der aktuellen Umgebung
 Es ist außerdem üblich, Designänderungen während der Implementierung und der Testphase durchzuführen. Anhand Ihres Entwurfsplans können Sie diese Änderungen und die Motivation dahinter während der Durchführung dokumentieren.

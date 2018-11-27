@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6a249962c4ac75e51be082112b884a5825d4ef2a
-ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
+ms.openlocfilehash: e1d645de0dfa9c215a9670246f43375de5153286
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51811511"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185422"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 

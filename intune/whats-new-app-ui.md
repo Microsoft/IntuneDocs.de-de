@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9749f9b623c418b51b5c3292e72b699ff5cdd75c
-ms.sourcegitcommit: 1e6fee4032c50ab41a5166db39fbea80a731c541
+ms.openlocfilehash: 0d6a798f9f16f4eaa0e882fb7d90203be912051f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51654924"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190029"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Updates der Benutzeroberfläche für Endbenutzer-Apps in Intune
 Erfahren Sie, welche Updates an der Benutzeroberfläche für Apps vorgenommen wurden, die Ihre Endbenutzer in dieser Version von Microsoft Intune sehen. Wenn Sie Kenntnisse über diese Updates haben, können Sie die Benutzerkommunikation sowie alle aktualisierten Benutzerdokumentationen verbessern, die Sie zur Unterstützung der Bereitstellung erstellt haben. Es kann auch helfen, zu verstehen, wie Probleme behandelt werden, die auftauchen, wenn Benutzer den Helpdesk für den Support mithilfe des Unternehmensportals aufrufen.

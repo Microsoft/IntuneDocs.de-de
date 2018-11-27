@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9fa64ff115e6f451cef06b9cf605f55829b0b01
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 6c0c9db9955c8fbf08e5a17d3a1f9fb3fdba2cd5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231148"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184513"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Integrieren von Check Point SandBlast Mobile in Intune
 

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 932feb064552e05536821d0e75e27059387bcf56
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9a15c84ded066a26254737f75293b0d743fe5eab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029807"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181223"
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Konfigurieren von Intune-Einstellungen für Bildungseinrichtungen für freigegebene iPad-Geräte
 
@@ -183,7 +184,7 @@ Das Gerät wurde der Gerätekategorie zugeordnet. Wiederholen Sie diesen Vorgang
 5. Klicken Sie im Bereich des Profils auf **Profil erstellen**.
 6. Geben Sie im Bereich **Zuordnung erstellen** einen **Namen** und eine **Beschreibung** ein.
 7. Wählen Sie **Klassen auswählen** > **Konfigurieren** aus, um dem Cart-Profil Gruppen zuzuordnen.
-8. Wählen Sie die Klassen aus, die im Cart-Profil enthalten sein sollen, und klicken Sie dann auf **Auswählen**. 
+8. Wählen Sie die Klassen aus, die im Cart-Profil enthalten sein sollen, und klicken Sie dann auf **Auswählen**. 
 9. Wählen Sie **Carts auswählen** > **Konfigurieren** aus, um dem Cart-Profil Gruppen zuzuordnen.
 10. Wählen Sie die Gruppen aus, die im Cart-Profil enthalten sein sollen, und klicken Sie dann auf **Auswählen**.
 11. Klicken Sie im Bereich **Zuordnung erstellen** auf **Speichern**, um das Cart-Profil zu speichern.
@@ -198,7 +199,7 @@ Das Profil wird erstellt und im Bereich „Profilliste“ angezeigt.
 4. Klicken Sie im Bereich **Gerätekonfiguration** auf **Überwachen** > **Zuweisungsstatus**.
 5. Klicken Sie im Bereich **Zuweisungsstatus** auf das erstellte **Cart-Profil**.
 6. Klicken Sie im Bereich **Cart-Profil** auf die Option **Zuweisungen** und unter **Einschließen** auf **Select groups to include** (Gruppen auswählen, die eingeschlossen werden sollen).
-7. Wählen Sie die Klassen (keine Gruppe) aus, die das Cart-Profil beinhalten soll, und klicken Sie dann auf **Auswählen**. 
+7. Wählen Sie die Klassen (keine Gruppe) aus, die das Cart-Profil beinhalten soll, und klicken Sie dann auf **Auswählen**. 
 8. Wählen Sie anschließend **Speichern** aus.
 
 Die Zuweisung wird abgeschlossen, und Intune stellt das Classroom-Profil basierend auf der Classroom-Zuweisung an die Zielgeräte bereit.

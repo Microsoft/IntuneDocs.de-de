@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 23e993f883b149e86ce83e0e028572f55468b84b
-ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
+ms.openlocfilehash: ea127fb72a2e24343185d06e26d883e1183e7c2b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51947308"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185558"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Konfigurieren von VPN-Einstellungen auf iOS-Geräten in Microsoft Intune
 

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: dougeby
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: c83584688818e35fa9672fcf9de2ff34d9c3260f
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5983a31aeb2bf6c10d3f6fe828157c88a5a9364f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254002"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179268"
 ---
 # <a name="supported-operating-systems-and-browsers"></a>Unterstützte Betriebssysteme und Browser
 

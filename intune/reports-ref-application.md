@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b71e022ea99255d95aa4f06c32a98b560f903836
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 32f41e4f299af4802dd270ec4a46c0cf4d467bc9
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602247"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179132"
 ---
 # <a name="reference-for-application-entities"></a>Verweis für Anwendungsentitäten
 

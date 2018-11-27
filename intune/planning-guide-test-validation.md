@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 1346c0f5b0e1665e49e09fc566b9ff3da17fc17a
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+search.appverid: MET150
+ms.openlocfilehash: bbcf6e21b9f5dd0474461e88ff54d6dde97590aa
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2018
-ms.locfileid: "29720681"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179931"
 ---
 # <a name="intune-testing-and-validation"></a>Testen und Überprüfen von Intune
 

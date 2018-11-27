@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 8f95726cbad86544ebf717380708c8295f737530
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: d5c1fb2b6b20c9687418e14f8e35543c04833a25
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34475641"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186391"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementieren Ihres Microsoft Intune-Plans
 

@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 97bddc1a183e3a546e76b346f53f80aba6a81c50
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: cd605542a0711e27f87d68af51662fd318f3250e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312872"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184878"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Erstellen von VPN-Profilen in Intune
 

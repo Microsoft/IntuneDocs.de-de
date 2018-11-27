@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 226713d893e05c2c2aeea49cde2ce92591d06391
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 470c3b7ac273e051af047eba95012b36a8ea1deb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915698"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185992"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune
 

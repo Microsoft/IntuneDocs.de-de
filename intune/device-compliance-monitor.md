@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 0790934b-48b9-435b-a8aa-e83ed5b73191
 ms.reviewer: muhosabe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0fec00b18bd63986a537549715af84cd44539fbb
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: b6c86b8f365f5ac3e65e91725e9fcd29ccd9ef58
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31830415"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187021"
 ---
 # <a name="monitor-device-compliance-in-intune"></a>Überwachen der Gerätekompatibilität in Intune
 

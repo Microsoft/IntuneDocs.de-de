@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 73db3070-d033-40fb-a8f1-58b9d198021e
 ms.reviewer: chrisgre
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cf8b323d6f7afa5fc7e3cfecbf04f61e0d11d9c5
-ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.openlocfilehash: 0b74559eb0914d87daabaaad52902547ae7c08ac
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/20/2018
-ms.locfileid: "52167364"
+ms.locfileid: "52182039"
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>Blockieren von Apps, die keine moderne Authentifizierung verwenden (ADAL)
 

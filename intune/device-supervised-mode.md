@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 8190814-07f0-42d8-9b3a-87c67dd2b7ed
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 183acfc36e77aab85fa086452e00561c521dd830
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: c69fa80fb1c1f539252b8e25eb839090b87c97f5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34475607"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190233"
 ---
 # <a name="turn-on-ios-supervised-mode"></a>Aktivieren des überwachten iOS-Modus
 

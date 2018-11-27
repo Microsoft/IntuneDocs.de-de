@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a1b89f2d-7937-46bb-926b-b05f6fa9c749
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e76e173bef7a370f89f60f6c9eb4588bb63aefdc
-ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.openlocfilehash: af24e1c56e43fe2edfc6a9241c31600b7cfe61a7
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51510906"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186255"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Schnellstart: Senden von Benachrichtigungen an nicht konforme Geräte
 

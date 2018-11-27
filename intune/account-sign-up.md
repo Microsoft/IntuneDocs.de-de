@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 4b80281c6235811aa610bc8a7c7d94d74d5cfd6f
-ms.sourcegitcommit: fcc3e29044451a1d96cef3b377ec4b6bef7aaeae
+ms.openlocfilehash: 92dd3ddd6424d0334c9fdca353fc449cf9e246e0
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/28/2018
-ms.locfileid: "37090259"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179669"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Registrieren oder Anmelden bei Microsoft Intune
 

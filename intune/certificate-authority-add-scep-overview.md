@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e088dbf4080cb6092ff506519b81438a0d5ce64c
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: de0df4878d2461d2f7c0a022a7e3d305e58aef7f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102105"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187785"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Hinzufügen einer Partnerzertifizierungsstelle in Intune mithilfe von SCEP
 

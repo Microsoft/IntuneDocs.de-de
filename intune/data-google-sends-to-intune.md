@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: c379c8db-788a-454e-9098-665ea3bc7b56
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 368205b63fcd360adf66f964c6cae087f6da3dfc
-ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
+ms.openlocfilehash: a0678e562ab7b63c99f10c455837cf03ee30da21
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31617601"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52178778"
 ---
 # <a name="data-google-sends-to-intune"></a>Von Google an Intune gesendete Daten
 

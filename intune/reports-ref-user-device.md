@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 777484A7-09CE-4409-987F-76B3F87DFE93
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0829bbcb661822c5d00ba4ca1e5d31ece301ef02
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
+ms.openlocfilehash: a207c0f9e7f1890d88ca233df6f4c53a32aed51b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727423"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189791"
 ---
 # <a name="user-device-association"></a>Zuordnung der Benutzergeräte
 

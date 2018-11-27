@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: b96e9b79d70c538982aac52ca822b403d1c0e4f8
-ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.openlocfilehash: 1cb30c1125add982a40fa2319e1f9b8b9edae1e2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/20/2018
-ms.locfileid: "52167585"
+ms.locfileid: "52190420"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

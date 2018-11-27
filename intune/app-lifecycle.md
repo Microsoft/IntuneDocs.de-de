@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: apps; get-started
-ms.openlocfilehash: 77a8adb418759386fdd02409a51b16a734d79ba8
-ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.openlocfilehash: a23f5fb9e05cf9a7fe46456b642aef76b6a79b70
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/20/2018
-ms.locfileid: "52167384"
+ms.locfileid: "52183110"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Übersicht über den App-Lebenszyklus in Microsoft Intune
 

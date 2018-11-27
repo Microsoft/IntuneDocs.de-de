@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1ce1d429b830ac6f494346697bd7e44ac250d9b6
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 38a4383fe9fbeec4abc8ce37ad46ce55b2849090
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49642953"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182583"
 ---
 # <a name="reference-for-user-entity"></a>Verweis für die Benutzerentität
 

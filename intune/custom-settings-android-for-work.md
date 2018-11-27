@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a622264ed7cc091849bacbd02f8ae7bdb33603fe
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
+ms.openlocfilehash: 73075ed06e98ca987e87a7cfda70c546127bf881
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983141"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179591"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Verwenden benutzerdefinierter Einstellungen für Android Enterprise-Geräte in Microsoft Intune
 
@@ -62,7 +63,7 @@ In diesem Artikel erfahren Sie, wie Sie ein benutzerdefiniertes Profil für Andr
     Wenn Sie einige Einstellungen hinzugefügt haben, können Sie auf **Exportieren** klicken. Wenn Sie auf **Exportieren** klicken, wird eine Liste aller hinzugefügten Werte in einer Datei mit durch Trennzeichen getrennten Werten (CSV) erstellt.
 
 5. Klicken Sie auf **OK**, um die Änderungen zu speichern. Fügen Sie nach Bedarf weitere Einstellungen hinzu.
-6. Klicken Sie anschließend auf **OK** > **Erstellen**, um das Intune-Profil zu erstellen. Das Profil wird erstellt und in der Liste **Gerätekonfiguration > Profile** angezeigt.
+6. Klicken Sie anschließend auf **OK** > **Erstellen**, um das Intune-Profil zu erstellen. Dann wird das Profil erstellt und in der Liste **Gerätekonfiguration > Profile** angezeigt.
 
 ## <a name="example"></a>Beispiel
 

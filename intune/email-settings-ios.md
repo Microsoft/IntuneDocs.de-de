@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a6fd10ab6a1e9dd7249e2ae1d4bf558d190276ed
-ms.sourcegitcommit: b0ee8626191961dc07f9f7f9d8e6a5fb09c63350
+ms.openlocfilehash: b3aa3e7a4cd79ab990afe7f02a1d6960bc66494a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51505877"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180186"
 ---
 # <a name="email-profile-settings-for-ios-devices---intune"></a>Einstellungen für das E-Mail-Profil für iOS-Geräte: Intune
 

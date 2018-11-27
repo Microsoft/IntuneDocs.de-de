@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 6c20a54be851bba4343c383b722ca3e034e76a1c
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: 7c6bdbde87f6438696b5a262ba1890532dcfccdd
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310622"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180858"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Aktualisieren Ihrer Windows-PCs mit Softwareupdates in Microsoft Intune
 

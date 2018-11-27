@@ -11,12 +11,13 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: c7c8b860be9722138f8bd804a66131328b592022
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+search.appverid: MET150
+ms.openlocfilehash: d9ecfa44e2619e5e123c9e8af169b6a8a95ee466
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29962445"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183892"
 ---
 # <a name="audit-logs-for-intune-activities"></a>Überwachungsprotokolle für Intune-Aktivitäten
 Überwachungsprotokolle stellen Ihnen einen Datensatz von Aktivitäten zur Verfügung, die eine Änderung in Microsoft Intune bewirken. Sie können Aktionen oder Remotetasks erstellen, aktualisieren (bearbeiten), löschen und zuweisen sowie überprüfbare Überwachungsereignisse generieren. Sie können Überwachungsprotokolle für die meisten Intune-Workloads überprüfen. Die Überwachung ist standardmäßig für alle Kunden aktiviert und kann nicht deaktiviert werden. Überwachungsereignisse werden seit der Einführung des Features im Dezember 2017 aufgezeichnet; Ereignisse vor diesem Datum sind nicht verfügbar.

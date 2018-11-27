@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f3e8c5d715253810b23e5f73b3166a90c3c14930
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 070bf25a2c18a08f57080e305545f3529ab42b0b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832526"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187615"
 ---
 # <a name="microsoft-intune-classic-groups-in-the-azure-portal"></a>Klassische Microsoft Intune-Gruppen im Azure-Portal
 

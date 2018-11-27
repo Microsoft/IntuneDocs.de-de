@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 573cdf8746b9eaf593a33cd943b69a2dd83030ae
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 70d1594220b3315db2c7d7eeb01a915aaf2ec995
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391602"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186731"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Konfigurieren und Verwenden Ihrer PKCS-Zertifikate mit Intune
 
@@ -117,7 +118,7 @@ Sie benötigen auf jedem Gerät ein Zertifikat einer Stamm- oder Zwischenzertifi
 ### <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune-Zertifikatconnector
 
 > [!IMPORTANT] 
-> Der Microsoft Intune Certificate Connector **muss** auf einem separaten Windows-Server installiert sein. Er kann nicht auf der Ausstellerzertifizierungsstelle installiert werden.
+> Der Microsoft Intune Certificate Connector **muss** auf einem separaten Windows-Server installiert sein. Er kann nicht in der ausstellenden Zertifizierungsstelle installiert werden.
 
 1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
 2. Wählen Sie **Gerätekonfiguration** > **Zertifizierungsstelle** > **Hinzufügen** aus.

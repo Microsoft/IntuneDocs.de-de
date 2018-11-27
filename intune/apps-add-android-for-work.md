@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0cfb3dab58676b12b0227f381e9fd7c51e956895
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: c7d5d29df0f91a4cff1060cd10a5d2355e196e39
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799556"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180136"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Zuweisen von Apps zu Android-Arbeitsprofilgeräten mit Intune
 

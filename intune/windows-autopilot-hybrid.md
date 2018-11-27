@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1a10d434fbdb5d827c7ecb89d1ae2f7e43c0f951
-ms.sourcegitcommit: 1e6fee4032c50ab41a5166db39fbea80a731c541
+ms.openlocfilehash: 77a0c3f3a2e1ed0ee2dbc652049bb7057c736010
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "51654907"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189961"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot (Vorschauversion)
 Sie können in Azure Active Directory Hybrid eingebundenen Geräte mithilfe von Intune und Windows Autopilot einrichten. Führen Sie dazu die folgenden Schritte aus.

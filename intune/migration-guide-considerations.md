@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: f29d2894-e98b-4f2c-b444-a8ccc1b7efdd
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 23619048faca4cdf9d64b15b0db7c09cb958a082
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+search.appverid: MET150
+ms.openlocfilehash: 039b3dc4d45b340a7d7f8ed0314661a2505a779b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43314039"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179815"
 ---
 # <a name="special-migration-considerations"></a>Besondere Überlegungen bei der Migration
 

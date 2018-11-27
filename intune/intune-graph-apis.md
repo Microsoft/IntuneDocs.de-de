@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 07c07caa7d64e18aae8b44810a4fdcb2b645b9fa
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: 5129484a3cfea873be4009849b5989f9c2acd888
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562934"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187446"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Verwenden von Azure AD für den Zugriff auf die Intune-APIs in Microsoft Graph
 

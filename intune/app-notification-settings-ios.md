@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: bda26d1d-2a3b-4669-adf8-a5aa7f994916
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 43068163c15c0588a8a6ef745d5b191f4547a94d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2bf4919fecbba8ad4c0f3b8535adf8b97a35342e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025704"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182192"
 ---
 # <a name="configure-app-notifications-settings-on-ios-devices-in-intune"></a>Konfigurieren von Einstellungen der App-Benachrichtigungen für iOS-Geräte in Intune
 

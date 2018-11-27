@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
+search.appverid: MET150
 ms.custom: get-started
-ms.openlocfilehash: becd0c62d57517a8c1566657b5278a46d68b9c17
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 99a880145fc51ce6eca39bd4470157c80fa097c2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254019"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182867"
 ---
 # <a name="enrollment-options-for-devices-managed-by-intune"></a>Registrierungsoptionen für von Intune verwaltete Geräte
 

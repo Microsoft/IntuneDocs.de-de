@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 292df171b613ada7a5f8e2cf666ba358ef26df9b
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: fc5d2a6f17bdac8711348c136ee390a400fc21bd
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949474"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182498"
 ---
 # <a name="get-started-managing-users"></a>Erste Schritte mit der Benutzerverwaltung
 

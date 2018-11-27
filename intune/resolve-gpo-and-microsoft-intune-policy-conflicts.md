@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 848ce25b2ad7c4a6410befe3770dc27b477dfb3a
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: 2aee866d06a31c0fe188dd8fb313609043f0092f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310894"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190062"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Lösen von Konflikten mit Gruppenrichtlinienobjekten und Microsoft Intune-Richtlinien
 

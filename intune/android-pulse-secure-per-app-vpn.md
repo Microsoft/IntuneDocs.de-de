@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5d8357a63f80552ff4b6ebd6d1da2998e675dd00
-ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
+ms.openlocfilehash: 48f1227da6260217105120d31301f60b6e06110c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39146678"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186017"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Verwenden eines benutzerdefinierten Microsoft Intune-Profils zum Erstellen eines VPN-Profils pro App für Android-Geräte
 

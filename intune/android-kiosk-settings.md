@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 5cd16a351beefd851d51175717abd4400382c216
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602179"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185235"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Kiosk-Einstellungen für Android-Geräte in Intune
 
@@ -47,7 +48,7 @@ Wenn das Einschränkungsprofil eines Kioskgeräts auf **Kioskmodus** = **Multi-A
 
 Führen Sie die folgenden Hauptschritte aus, um ein Android-Kioskgerät für mehrere Apps festzulegen:
 
-1. [Importieren und Bereitstellen der Managed Home Screen-App über Managed Google Play](#import-and -deploy-the-managed-home-screen-app)
+1. [Importieren und Bereitstellen der Managed Home Screen-App über Managed Google Play](#import-and-deploy-the-managed-home-screen-app)
 2. [Hinzufügen und Zuweisen von Apps, die im Kioskmodus verwendet werden können](#add-and-assign-apps-that-can-be-used-in-kiosk-mode)
 3. [Hinzufügen von Weblinks, die im Kioskmodus verwendet werden können](#add-web-links-that-can-be-used-in-kiosk-mode) (optional)
 

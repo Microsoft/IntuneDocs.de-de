@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7881e117893ec01098c13f79e00a2b5388652155
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: 19d173cabda71b4e6a24008eb94f9665c54ba924
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903555"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184351"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Zurücksetzen nur von Unternehmensdaten in einer in Intune verwalteten App
 

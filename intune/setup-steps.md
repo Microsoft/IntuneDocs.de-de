@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: dougeby
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 52bd7cd60f1ad184dc4f58d15b14e3d52ff7d30e
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: db499f2d55318919f420e03be0883ec70d949d20
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253713"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180359"
 ---
 # <a name="set-up-intune"></a>Einrichten von Intune
 

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: da10455cd6dc3cfbda23726832c539c206aea18c
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: d9a5f9d502dcd62442733701ff72a6de9279ff6a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025150"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188550"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Hinzufügen von Microsoft Store-Apps zu Microsoft Intune
 

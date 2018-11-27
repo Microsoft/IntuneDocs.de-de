@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
+search.appverid: MET150
 ms.custom: get-started
-ms.openlocfilehash: 09c4f2b067d27da9761d33559a3d3fbdc6ac2d90
-ms.sourcegitcommit: cd73ef164e0df79429b97c3090adbba49592c150
+ms.openlocfilehash: 82909141b90854bb5ee7e59795e6c484d4b32649
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46448670"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187649"
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Einführung in Microsoft Intune im Azure-Portal
 
@@ -41,7 +42,7 @@ Die Microsoft Intune-Benutzeroberfläche im Azure-Portal bietet folgende Vorteil
 - Azure Active Directory-Gruppen (AD) für Kompatibilität zwischen all Ihren Azure-Anwendungen
 - Unterstützung für die meisten modernen Webbrowser
 
-## <a name="before-you-start"></a>Vorbereitungen
+## <a name="before-you-start"></a>Vorbereitung
 
 Um Intune im Azure-Portal verwenden zu können, benötigen Sie ein Administrator- und ein Mandantenkonto für Intune. [Registrieren Sie sich für ein Konto](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20), wenn Sie noch keines haben.
 

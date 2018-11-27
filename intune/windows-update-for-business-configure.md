@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 0e82a63cfbbb0780566f9dc1f4ddf0b914e4ca2c
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+search.appverid: MET150
+ms.openlocfilehash: a715fe518331d20b9a47d8374a37ce66ec59055d
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576833"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189281"
 ---
 # <a name="manage-software-updates-in-intune"></a>Verwalten von Softwareupdates in Intune
 

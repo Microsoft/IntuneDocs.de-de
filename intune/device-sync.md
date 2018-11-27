@@ -12,20 +12,21 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 30b4cf585edd7153ee01710ce8c572593056454f
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: c408c19a630daff9ca1b238afcef9bb9193f5c98
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117870"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179501"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Synchronisieren von Geräten mit Intune, um die neuesten Richtlinien und Aktionen zu erhalten
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Die Geräteaktion **Sync** (Synchronsieren) zwingt das ausgewählte Gerät dazu, sofort bei Intune einzuchecken. Checkt ein Gerät ein, empfängt es sofort alle ihm zugewiesenen ausstehenden Aktionen oder Richtlinien. Mit diesem Feature können Sie zugewiesene Richtlinien sofort überprüfen und Probleme beheben, ohne den nächsten geplanten Check-In abwarten zu müssen.
+Die Geräteaktion **Sync** (Synchronsieren) zwingt das ausgewählte Gerät dazu, sofort bei Intune einzuchecken. Checkt ein Gerät ein, empfängt es sofort alle ihm zugewiesenen ausstehenden Aktionen oder Richtlinien. Mit diesem Feature können Sie zugewiesene Richtlinien sofort überprüfen und Probleme beheben, ohne den nächsten geplanten Check-In abwarten zu müssen.
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 

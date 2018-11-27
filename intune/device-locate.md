@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dc5d9f47a8d950c6c5de9f362bd618d1724055f4
-ms.sourcegitcommit: 3e3e2af98dd92f7ba710f393841cfdb3dbcc4867
+ms.openlocfilehash: e3f4d63a2e749e1070bd5969d6f8a3046f6bcc4e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42912150"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182175"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Suchen nach verlorenen oder gestohlenen iOS-Geräten mit Intune
 

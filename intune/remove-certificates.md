@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a823ea2f04d8e3a8f1ca5a2f1364060840686501
-ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
+ms.openlocfilehash: dabd5b6ca2f8bb01421c24cb7c16ab57cf59ef56
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561940"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180985"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Entfernen von SCEP- und PKCS-Zertifikaten in Microsoft Intune
 

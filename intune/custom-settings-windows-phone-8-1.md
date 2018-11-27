@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f2202d7abf80c6a78fd365a4629e970bc9ec36ce
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
+ms.openlocfilehash: a876cf430952aa99957af4bc9a66f4bc29d65df9
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983090"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184674"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Verwenden von benutzerdefinierten Einstellungen für Windows Phone 8.1-Geräte in Intune
 

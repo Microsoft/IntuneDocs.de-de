@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 08d76d6b76ee7838633435ae095c171e0a3cdf8e
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: ada9fee575824d27a6bfdd8f14d4845d228467db
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236491"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186076"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Einrichten einer Statusseite für die Registrierung
  

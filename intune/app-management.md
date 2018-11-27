@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 25236453f0440978eda34e3a1a8b1b93daf4c6e1
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: 366fab51d88587233f945fe7d880e3b6881bef45
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025167"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179183"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Was ist die Microsoft Intune App-Verwaltung?
 

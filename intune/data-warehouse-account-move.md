@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ee3ccbf9-82fc-4fbf-9d3d-8f05e431d090
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: e01164ce7fca74f4f630f43be48dd0b2e3656baf
-ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.openlocfilehash: 470bafba548c38870e57a545c4514459dde219b4
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/20/2018
-ms.locfileid: "52167466"
+ms.locfileid: "52189389"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Verschieben Ihrer Intune Data Warehouse-Kontodaten 
 

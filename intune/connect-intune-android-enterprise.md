@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1b1f54486ab2c3d98e663cfddded346eb61662ae
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: c32effb645b329c8095ec8757a980b1f3d80a4d7
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279422"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184285"
 ---
 # <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Verknüpfen Ihres Intune-Mandantenkontos mit Ihrem Android Enterprise-Konto
 

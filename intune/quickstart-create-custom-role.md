@@ -7,12 +7,16 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 5c83af252b1c728b9e3d4015cdc8bb4fd3668ad1
-ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune
+ms.openlocfilehash: 5de108835254d6a65546b8f1c9e8d0e9c32dbd26
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2018
-ms.locfileid: "51561923"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189927"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Schnellstart: Erstellen und Zuweisen einer benutzerdefinierten Rolle
 

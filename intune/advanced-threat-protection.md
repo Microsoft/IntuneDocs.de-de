@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 58b157cfe639651aa65e8dfb510b857d0128589a
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: de80092647462f83fb92303080239fd30198bd3c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102122"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180233"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Aktivieren von Windows Defender ATP mit bedingtem Zugriff in Intune
 

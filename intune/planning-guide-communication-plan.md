@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b985b92b4ea68fedba3c0d04e53c1e6116a64015
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 013e2c6c10d5a545343c864b1b564acbede7c675
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961560"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179821"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Entwickeln eines Kommunikationsplans für den Rollout
 

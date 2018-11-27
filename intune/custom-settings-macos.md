@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb4691ff46b4d28254d11fb94fa5b2fbcffaa6f
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
+ms.openlocfilehash: 3136088f307d8e2e83faaccafbda4ad2664c6f62
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983175"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183212"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Verwenden benutzerdefinierter Einstellungen für macOS-Geräte in Microsoft Intune
 
@@ -63,7 +64,7 @@ In diesem Artikel erfahren Sie, wie Sie ein benutzerdefiniertes Profil für macO
     - **Name des benutzerdefinierten Konfigurationsprofils:** Geben Sie einen Namen für die Richtlinie ein. Dieser Name wird auf dem Gerät und im Intune-Status angezeigt.
     - **Konfigurationsprofildatei:** Navigieren Sie zum mit Apple Configurator oder dem Apple-Profil-Manager erstellten Konfigurationsprofil. Die importierte Datei wird im Bereich **Dateiinhalt** angezeigt.
 
-5. Klicken Sie auf **OK** > **Erstellen** aus, um das Intune-Profil zu erstellen. Das Profil wird erstellt und in der Liste **Gerätekonfiguration > Profile** angezeigt.
+5. Klicken Sie auf **OK** > **Erstellen** aus, um das Intune-Profil zu erstellen. Dann wird das Profil erstellt und in der Liste **Gerätekonfiguration > Profile** angezeigt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

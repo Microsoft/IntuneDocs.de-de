@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 4a94440c-11cb-11e8-b642-0ed5f89f718b
 ms.reviewer: amyro
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 6e2da4fb0f32a5753e886f18987d6c2c299c9e65
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 30918cb407f6290baeaf24bd9d5e9a2c3976e23c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224788"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52178996"
 ---
 # <a name="licenses-that-include-intune"></a>Lizenzen, die Intune enthalten
 

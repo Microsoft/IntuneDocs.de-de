@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 00f660d2ac228fbebe218c53482d00e59f09ce56
-ms.sourcegitcommit: be6f6b750635ebc7956dd2d60a0e131d124b2fc3
+ms.openlocfilehash: c6ab669b1f9331d0bd0a70ca5f86ac7f3f190fb6
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2018
-ms.locfileid: "51947325"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180376"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integrieren der Netzwerkzugriffssteuerung (NAC) mit Intune
 

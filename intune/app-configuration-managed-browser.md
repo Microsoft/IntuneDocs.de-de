@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0c2a4ff4654b937449f8e7a36778a67a978bd6db
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: d86df4c38e0d4313dbff6ff2cd9111b2126dbaba
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576867"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180934"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Verwalten des Internetzugriffs durch einen mittels Richtlinien geschützten Microsoft Intune-Browser
 

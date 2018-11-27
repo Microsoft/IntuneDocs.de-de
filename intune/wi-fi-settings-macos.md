@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e094ec72f7db6c25bcb306518df47dd5938681bf
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 6602a5507e4357899259722a7a8d095d540e2826
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425341"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181138"
 ---
 # <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>Hinzufügen von WLAN-Einstellungen für macOS-Geräte in Microsoft Intune
 
@@ -47,10 +48,10 @@ Dieser Artikel beschreibt diese Einstellungen.
 
 - **Proxyeinstellungen**: Ihre Optionen:
   - **Keine**: Es sind keine Proxyeinstellungen konfiguriert.
-  - **Manuell**: Geben Sie die **Proxyserveradresse** (als IP-Adresse) und die **Portnummer** ein.
-  - **Automatisch**: Verwenden Sie eine Konfigurationsdatei, um den Proxyserver zu konfigurieren. Geben Sie die **Proxyserver-URL** ein (z.B. `http://proxy.contoso.com`), unter der die Konfigurationsdatei zu finden ist.
+  - **Manuell**: Geben Sie die **Proxyserveradresse** als IP-Adresse und die **Portnummer** ein.
+  - **Automatisch**: Verwenden Sie eine Datei zum Konfigurieren des Proxyservers. Geben Sie die **Proxyserver-URL** ein (z.B. `http://proxy.contoso.com`), unter der die Konfigurationsdatei zu finden ist.
 
-## <a name="enterprise-profiles"></a>Enterprise-Profile
+## <a name="enterprise-profiles"></a>Profile für Unternehmen
 
 - **WLAN-Typ**: Wählen Sie **Unternehmen** aus.
 - **SSID**: Abkürzung für **Service Set Identifier**. Diese Eigenschaft entspricht dem tatsächlichen Namen des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern wird beim Auswählen der Verbindung jedoch nur der Netzwerkname angezeigt, den Sie konfiguriert haben.
@@ -60,10 +61,10 @@ Dieser Artikel beschreibt diese Einstellungen.
 - **EAP-Typ**: Wählen Sie den EAP-Typ (Extensible Authentication Protocol) zum Authentifizieren von geschützten Drahtlosverbindungen aus. Folgende Optionen sind verfügbar:
 
   - **EAP-FAST**: Geben Sie die **PAC-Einstellungen (Protected Access Credential)** ein. Bei dieser Option werden geschützte Zugriffsanmeldeinformationen verwendet, um einen authentifizierten Tunnel zwischen dem Client und dem Authentifizierungsserver zu erstellen. Folgende Optionen sind verfügbar:
-    - **Nicht (PAC) verwenden**
-    - **(PAC) verwenden**: Wenn eine PAC-Datei vorhanden ist, verwenden Sie diese.
-    - **PAC verwenden und bereitstellen**: Erstellen Sie die PAC-Datei, und fügen Sie sie auf Ihren Geräten hinzu.
-    - **PAC anonym verwenden und bereitstellen**: Erstellen Sie die PAC-Datei, und fügen Sie sie Ihren Geräte ohne Authentifizierung beim Server hinzu.
+    - **Nicht verwenden (PAC)**
+    - **(PAC) verwenden**: Sofern eine PAC-Datei vorhanden ist, verwenden Sie diese
+    - **PAC verwenden und bereitstellen**: Erstellen Sie die PAC-Datei, und fügen Sie sie Ihren Geräten hinzu
+    - **PAC anonym verwenden und bereitstellen**: Erstellen Sie die PAC-Datei, und fügen Sie sie Ihren Geräte ohne Authentifizierung beim Server hinzu
 
   - **EAP-SIM**
 
@@ -88,7 +89,7 @@ Dieser Artikel beschreibt diese Einstellungen.
     - **Clientauthentifizierung**: Wählen Sie eine **Authentifizierungsmethode** aus. Folgende Optionen sind verfügbar:
 
       - **Benutzername und Kennwort**: Fordern Sie den Benutzer zur Eingabe des Benutzernamens und Kennworts für die Authentifizierung der Verbindung auf. Geben Sie außerdem Folgendes ein:
-        - **Nicht-EAP-Methode (innere Identität)**: Wählen Sie aus, wie Sie die Verbindung authentifizieren möchten. Achten Sie darauf, dass Sie das gleiche Protokoll auswählen, das auch in Ihrem WLAN-Netzwerk konfiguriert ist.
+        - **Nicht-EAP-Methode (innere Identität)**: Wählen Sie aus, wie Sie die Verbindung authentifizieren möchten. Achten Sie darauf, dass Sie das gleiche Protokoll auswählen, das auch in Ihrem WLAN konfiguriert ist.
 
           Ihre Optionen sind **Unverschlüsseltes Kennwort (PAP)**, **Challenge Handshake Authentication-Protokoll (CHAP)**, **Microsoft CHAP (MS-CHAP)** oder **Microsoft CHAP Version 2 (MS-CHAP v2)**.
 
@@ -119,8 +120,8 @@ Dieser Artikel beschreibt diese Einstellungen.
 
 - **Proxyeinstellungen**: Ihre Optionen:
   - **Keine**: Es sind keine Proxyeinstellungen konfiguriert.
-  - **Manuell**: Geben Sie die **Proxyserveradresse** (als IP-Adresse) und die **Portnummer** ein.
-  - **Automatisch**: Verwenden Sie eine Konfigurationsdatei, um den Proxyserver zu konfigurieren. Geben Sie die **Proxyserver-URL** ein (z.B. `http://proxy.contoso.com`), unter der die Konfigurationsdatei zu finden ist.
+  - **Manuell**: Geben Sie die **Proxyserveradresse** als IP-Adresse und die **Portnummer** ein.
+  - **Automatisch**: Verwenden Sie eine Datei zum Konfigurieren des Proxyservers. Geben Sie die **Proxyserver-URL** ein (z.B. `http://proxy.contoso.com`), unter der die Konfigurationsdatei zu finden ist.
 
 Wählen Sie **OK** > **Erstellen** aus, um die Änderungen zu speichern. Das Profil wird erstellt und in der Profilliste angezeigt.
 

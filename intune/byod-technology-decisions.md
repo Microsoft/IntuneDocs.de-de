@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 0a080660fcc1b285e0ed00b76a94c2f0cc1ba40a
-ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
+search.appverid: MET150
+ms.openlocfilehash: 21257169e069a139ac94dcdecbe6074ab0778aeb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2018
-ms.locfileid: "37844962"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179557"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Technologieentscheidungen zur Ermöglichung von BYOD mit Microsoft Enterprise Mobility + Security (EMS)
 
@@ -76,7 +77,7 @@ Nach wie vor sind zahlreiche Organisationen oftmals mit besonderen Risiken konfr
 | | | |
 | Versehentliche Datenfreigabe oder Speichern an unsicheren Speicherorten | Einschränken von Datensicherungen für Geräte | Einschränken von Vorgängen zum Ausschneiden, Kopieren bzw. Einfügen|
 | Versehentliche Datenfreigabe oder Speichern an unsicheren Speicherorten | Einschränken der Speicherfunktion | Einschränken der Speicherfunktion |
-|Versehentliche Datenfreigabe oder Speichern an unsicheren Speicherorten | Drucken deaktivieren | Nicht verfügbar|
+|Versehentliche Datenfreigabe oder Speichern an unsicheren Speicherorten | Drucken deaktivieren | Nicht zutreffend|
 
 ## <a name="next-steps"></a>Nächste Schritte
 Jetzt ist es an der Zeit zu entscheiden, ob BYOD in Ihrer Organisation ermöglicht und der Schwerpunkt dabei auf der Geräte- oder App-Verwaltung oder auf einer Kombination beider Optionen liegen soll. Die Wahl der Implementierung liegt bei Ihnen. Dabei können Sie darauf vertrauen, dass die Identitäts- und Sicherheitsfeatures von Azure AD in beiden Fällen verfügbar sind.  

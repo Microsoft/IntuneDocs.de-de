@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f76e227037efd6ea8ee7ea95d61f3358698af1d9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961467"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189349"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Bestimmen der Bereitstellungsziele, sonstigen Ziele und Herausforderungen
 
@@ -78,7 +79,7 @@ Diese Ziele der Bereitstellung sind die Aktionen, mit denen Ihr Unternehmen sein
 
 Herausforderungen bei der Bereitstellung sind Aspekte, die bei einer Organisation im Vordergrund stehen und sich negativ auf die Bereitstellung auswirken können. Mitunter stehen sie in Zusammenhang mit bei früheren Projekten aufgetretenen Problemen, die vermieden werden sollen, oder es handelt sich um neue Probleme bei den aktuellen Bereitstellungsbemühungen. Nachstehend sind einige Beispiele für die Herausforderungen bei der Bereitstellung von Intune sowie mögliche Gegenmaßnahmen aufgeführt.
 
--   Die Bereitschaft des Supports und Endbenutzerfahrung werden im anfänglichen Projektumfang nicht berücksichtigt. Dies führt zu einer schwachen Akzeptanz seitens der Endbenutzer und Herausforderungen für Ihre Supportorganisation.
+-   Die Bereitschaft des Supports und Endbenutzerfahrung werden im anfänglichen Projektumfang nicht berücksichtigt. Dies führt zu einer schwachen Akzeptanz seitens der Endbenutzer und Herausforderungen für Ihre Supportorganisation.
 
     -   **Lösung:** Integrieren Sie Schulungen für den Support. Überprüfen Sie die Endbenutzererfahrung anhand der Erfolgsmetriken in Ihrem Bereitstellungsplan.
 

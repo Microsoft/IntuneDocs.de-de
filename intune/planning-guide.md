@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 7990c559429f5963884565bef4f18c09d03746dd
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: b2ddf29157255feaa7d336913640a1cf434f921c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224842"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185777"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Bereitstellungsplanungs-, Entwurfs- und Implementierungshandbuch für Intune
 

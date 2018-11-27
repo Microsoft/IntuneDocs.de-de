@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f4425f508164332295899a6132782833889aa830
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: 931aa360b82efcf4ef643fb40bc4982c05e589ee
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602264"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182991"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Erstellen eines Berichts aus dem OData-Feed mit Power BI
 

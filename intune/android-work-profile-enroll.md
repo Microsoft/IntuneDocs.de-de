@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a38c5db1e608cb5d9a047dc72ee9109e840096e0
-ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
+ms.openlocfilehash: b3592ceb2b1a4e7ba32fc0a8b3de53e0f0329d8b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51618989"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179727"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Einrichten der Registrieren von Android-Arbeitsprofilgeräten
 

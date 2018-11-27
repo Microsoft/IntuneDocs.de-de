@@ -14,13 +14,14 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ROBOTS: ''
 ms.reviewer: tscott
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1d656dcc8c3abcf3a4b0a9c6aacbc42eb896289f
-ms.sourcegitcommit: 7c70c3e0fcae7c4fa8c9e108aafb1cebb366332d
+ms.openlocfilehash: bb55ddc283ce4633b5057d5b96ae2ed6973dcf8a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44096499"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181767"
 ---
 # <a name="troubleshoot-policies-in-intune"></a>Behandlung von Richtlinienproblemen in Intune
 

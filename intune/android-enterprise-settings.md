@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f49e0bc496f176434577d42d3a372fc4e8bc22d3
-ms.sourcegitcommit: 7063072c94e43aefc6be0072780622a1da8485d5
+ms.openlocfilehash: c4db49b6727a430696d6ade3bc8eb8f4600ebe3e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "46119102"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190284"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Android Enterprise-Kioskeinstellungen in Intune
 

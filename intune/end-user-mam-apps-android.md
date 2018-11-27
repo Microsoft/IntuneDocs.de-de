@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: tisilver
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3e479ae9e3cd2caf6b893cb75f9af8fde2340f0c
-ms.sourcegitcommit: d786eb18147a12fbc8cb97a157467f88591f1bc5
+ms.openlocfilehash: 06115170300909d1683f44e565161d189f345ab8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2018
-ms.locfileid: "37133985"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188033"
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird
 

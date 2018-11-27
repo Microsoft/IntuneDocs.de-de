@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7012479023ece83ef475431c5cefe150ab2ef342
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f9d0db8e15e6de1241984f98bf651fcff1578033
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43317914"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188630"
 ---
 # <a name="configure-identity-protection-settings-in-microsoft-intune"></a>Konfigurieren von Identity Protection-Einstellungen in Microsoft Intune
 

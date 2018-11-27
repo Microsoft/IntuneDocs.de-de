@@ -12,12 +12,16 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.openlocfilehash: bb9606a8586e0dbdbb566def344c9c551cb09e52
-ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune-classic
+ms.openlocfilehash: 06f14b0ba1edcde28c7f2c732ab286e80f186bf2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164816"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188261"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Schützen von Geräten mit Microsoft Intune
 

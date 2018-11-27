@@ -10,12 +10,13 @@ ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: fdd33ea0b5d8189712c6390861131c684cfaa67d
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+search.appverid: MET150
+ms.openlocfilehash: 61bd7d5cf40355536aa7d5c361a771ce2b4f30ec
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49101952"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189876"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Konfigurieren von iOS-Updaterichtlinien in Intune
 

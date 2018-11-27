@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c24630dd3cc45b35e6313e9e66db74a548bb0851
-ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
+ms.openlocfilehash: 019f09444f96d8bb3bca046ef5be20af373a3bff
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51298104"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183706"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Einrichten des lokalen Intune Exchange Connectors in Microsoft Intune in Azure
 

@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 348a1dbf7b969956bc1ddcfb0f32a994a84e29d4
-ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
+ms.openlocfilehash: 4c65b381afaad4b3ba65fa3d8eb49ba8f52b95d1
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49983107"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183348"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Verwenden benutzerdefinierter Einstellungen für iOS-Geräte in Microsoft Intune
 

@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a52244ae9ef8490bc95d242f896e45dc4ccbdf2f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 159079686507815ad4cf1738ca4157467352f681
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024412"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189519"
 ---
 # <a name="categorize-devices-into-groups-for-easier-management"></a>Kategorisieren von Geräten in Gruppen zur einfacheren Verwaltung
 

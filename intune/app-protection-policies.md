@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3a7285edfa2dcb50cc5fd28e4fefc1be4c3b9e10
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: 2e0331210a10727ff5753e6c227777cd1ebb16d9
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679269"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185958"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Erstellen und Zuweisen von App-Schutzrichtlinien
 
@@ -51,9 +52,9 @@ Informationen zum Hinzufügen von Line-of-Business-Apps (LOB) Ihrer Organisation
 6. Wählen Sie auf dem Blatt **Richtlinie hinzufügen** die Option **Erforderliche Einstellungen konfigurieren** aus, um **Einstellungen** zu öffnen.
 
    Es gibt drei Kategorien von Richtlinieneinstellungen:
-   - **Datenverschiebung**: Diese Gruppe umfasst Steuerelemente zum Verhindern von Datenverlust, wie z.B. Einschränkungen für Ausschneiden, Kopieren, Einfügen und „Speichern unter“. Diese Einstellungen bestimmen, wie Benutzer mit Daten in den Apps interagieren kann.
+   - **Datenverschiebung**: Diese Gruppe umfasst Steuerelemente zum Verhindern von Datenverlust, wie z.B. Einschränkungen für Ausschneiden, Kopieren, Einfügen und „Speichern unter“. Diese Einstellungen bestimmen, wie Benutzer mit Daten in den Apps interagieren können.
    - **Zugriffsanforderungen**: Diese Gruppe enthält die PIN-Optionen pro App. Sie bestimmen, wie der Endbenutzer in einem Arbeitskontext auf die Apps zugreifen kann.  
-   - **Bedingter Start**: Diese Gruppe enthält Einstellungen wie z.B. die mindestens erforderliche Betriebssystemversion, Einstellungen zur Erkennung von Jailbreak und entfernten Nutzungsbeschränkungen und die Offline-Toleranzperiode.
+   - **Bedingter Start**: Diese Gruppe enthält Einstellungen wie z.B. die mindestens erforderliche Betriebssystemversion, Einstellungen zur Erkennung von Jailbreak und entfernten Nutzungsbeschränkungen und die Offlinetoleranzperiode.
 
    Um Ihnen bei den ersten Schritten zu helfen, enthalten die Richtlinieneinstellung Standardwerte. Sie müssen keine Änderungen vornehmen, wenn die Standardwerte Ihren Anforderungen entsprechen.
 
@@ -71,7 +72,7 @@ Neu erstellte Richtlinien werden erst auf die Benutzer angewendet, wenn Sie sie 
 
 2. Wählen Sie im Bereich ***Intune-App-Schutz** die Option **Zuweisungen** aus, um den Bereich **Intune-App-Schutz – Zuweisungen** zu öffnen. Klicken Sie auf der Registerkarte *Einschließen* auf **Einzuschließende Gruppen auswählen**. 
 
-   ![Screenshot des Bereichs „Zuweisungen“ mit Hervorhebung der Menüoption „Einzuschließende Gruppen auswählen“](./media/app-protection-policy-add-users.png)
+   ![Screenshot des Bereichs „Zuweisungen“ mit Hervorhebung der Menüoption „Select groups to include“ (Einzuschließende Gruppen auswählen)](./media/app-protection-policy-add-users.png)
 
 3.  Es wird eine Liste aller Sicherheitsgruppen in Ihrem **Azure Active Directory**-Verzeichnis angezeigt. Wählen Sie die Benutzergruppen aus, auf die diese Richtlinie angewendet werden soll, und klicken Sie dann auf **Auswählen**. Die Auswahl von **Auswählen** bewirkt die Bereitstellung der Richtlinie für Benutzer.
 
@@ -108,9 +109,9 @@ Für eine sofortige Anzeige der Änderungen muss der Endbenutzer sich von der Ap
 
 2.  Wählen Sie im Bereich *Intune-App-Schutz* die Option **Zuweisungen** aus, um den Bereich **Intune-App-Schutz – Zuweisungen** zu öffnen. Hier wird die Liste mit aktuellen Benutzergruppen angezeigt, denen diese Richtlinie zugewiesen ist.
 
-3.  Um eine neue Benutzergruppe hinzuzufügen, wählen Sie auf der Registerkarte **Einschließen** die Option **Einzuschließende Gruppen auswählen** und anschließend die Benutzergruppe aus. Wählen Sie **Auswählen** aus, um die Richtlinie für die ausgewählte Gruppe bereitzustellen.
+3.  Um eine neue Benutzergruppe hinzuzufügen, wählen Sie auf der Registerkarte **Einschließen** die Option **Select groups to include** (Einzuschließende Gruppen auswählen) und anschließend die Benutzergruppe aus. Wählen Sie **Auswählen** aus, um die Richtlinie für die ausgewählte Gruppe bereitzustellen.
 
-4.  Um eine Benutzergruppe zu löschen, wählen Sie auf der Registerkarte **Ausschließen** die Option **Auszuschließende Gruppen auswählen** und anschließend die Benutzergruppe aus. Wählen Sie **Auswählen** aus, um die Benutzergruppe zu entfernen.
+4.  Um eine Benutzergruppe zu löschen, wählen Sie auf der Registerkarte **Ausschließen** die Option **Select groups to exclude** (Auszuschließende Gruppen auswählen) und anschließend die Benutzergruppe aus. Wählen Sie **Auswählen** aus, um die Benutzergruppe zu entfernen.
 
 ### <a name="to-change-policy-settings"></a>So ändern Sie Richtlinieneinstellungen
 
@@ -137,7 +138,7 @@ Für iOS sind zusätzliche App-Konfigurationseinstellungen erforderlich, um APP-
 - Wenn nur **IntuneMAMDeviceID** konfiguriert ist, betrachtet die Intune-APP das Gerät als nicht verwaltet.  
 
 > [!NOTE]
-> Spezifische iOS-Supportinfomationen über App-Schutzrichtlinien basierend auf dem Status der Geräteverwaltung finden Sie unter [Anwenden von MAM-Richtlinien je nach Verwaltungsstatus](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-).
+> Spezifische iOS-Supportinfomationen über App-Schutzrichtlinien basierend auf dem Status der Geräteverwaltung finden Sie unter [MAM protection policies targeted based on management state (Angesteuerte MAM-Schutzrichtlinien basierend auf dem Verwaltungsstatus)](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-).
 
 ## <a name="policy-settings"></a>Richtlinieneinstellungen
 Eine vollständige Liste der Richtlinieneinstellungen für iOS und Android finden Sie unter den folgenden Links:

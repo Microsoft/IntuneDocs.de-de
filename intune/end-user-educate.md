@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: get-started
-ms.openlocfilehash: 2d95a238b3d582a9b03e9629504230349eef0638
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: c89a12b0c75f59b2a781ad77c88fe49c513c11a5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254053"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182209"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>So informieren sie Ihre Endbenutzer über Microsoft Intune
 

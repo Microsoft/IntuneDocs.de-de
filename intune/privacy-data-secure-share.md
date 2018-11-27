@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 68921fd6-5f50-456c-a3af-83d7bc4b134b
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6dc722a3d10d68c4aec30fc6d10a2867f5f0b2d7
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 8ce7b6020c9212a0379915e00e361853e2eb3259
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425324"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52184113"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Datensicherheit und -freigabe in Intune
 

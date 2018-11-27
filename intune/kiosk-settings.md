@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0d749d51f0ae146b68be8abb3a59a0504aea1180
-ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
+ms.openlocfilehash: 7552c9c1fa8e94560505a8971143886160cff6ce
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51298138"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185952"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Kioskeinstellungen für Windows 10 und höher in Intune
 

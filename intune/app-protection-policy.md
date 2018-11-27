@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: fea87d72e8d8485c1cde3038d357b8d6bc7f1c71
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: d974e6db3543ef3ba0b11cf67989260e429dde4c
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102000"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179166"
 ---
 # <a name="what-are-app-protection-policies"></a>Was sind App-Schutzrichtlinien?
 

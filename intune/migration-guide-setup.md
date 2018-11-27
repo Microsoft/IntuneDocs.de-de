@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 54f0d2496c40703212ad61da462a2ae499388bb4
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+search.appverid: MET150
+ms.openlocfilehash: 4cec5c593fd4191a9d73e77b13fd38df81a7fe8b
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2018
-ms.locfileid: "29926986"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179744"
 ---
 # <a name="basic-setup"></a>Grundlegende Einrichtung
 

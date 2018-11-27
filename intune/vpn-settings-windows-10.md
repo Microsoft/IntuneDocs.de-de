@@ -11,14 +11,15 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: faf07b58c4480689d5f6f44bf09d6100a2eae9db
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 0fc2ce416459221564f2edf239eb97774d5efdd4
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827852"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187938"
 ---
 # <a name="windows-10-vpn-settings-in-intune"></a>Windows 10-VPN-Einstellungen in Intune
 

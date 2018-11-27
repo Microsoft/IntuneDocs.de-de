@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4e070e80bb9575154aded12f0992d04bd7a4718f
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 1b22840429224b70ddaaf5d77f850c4d4af8b5e2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329953"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180900"
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Erste Schritte mit Microsoft Intune im Azure-Portal
 

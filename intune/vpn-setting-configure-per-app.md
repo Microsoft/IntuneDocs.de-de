@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 87c3313fd7b5fc0705460e539164ac70779bebeb
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
+ms.openlocfilehash: f4cdd3c215fbd9eab4204eca0639d5d38fe4c97a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505766"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180730"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Die Einrichtung des Pro-App-VPN in Intune für iOS-Geräte
 

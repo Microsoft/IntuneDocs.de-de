@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 1ba77bc7-505e-4eca-a49e-dcdaa75d0043
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b9efb60d169ba6f88b4765d3fc651f3a0596b230
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: 7f2ccccd76149c34f227ecc4d9eadec091ce93f1
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028578"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189259"
 ---
 # <a name="view-and-correct-personal-data"></a>Anzeigen und Korrigieren personenbezogener Daten
 

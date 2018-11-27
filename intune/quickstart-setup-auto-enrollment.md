@@ -7,12 +7,16 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 11/05/2018
 ms.author: erikje
-ms.openlocfilehash: c219629968fbd66ee14abf61786a791bf7f5e2e0
-ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.reviewer: angerobe
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune-classic
+ms.openlocfilehash: 0d6f210d055d8395985b4fe64b5a061b2c8a0304
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51510787"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179653"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Schnellstart: Einrichten der automatischen Registrierung für Windows 10-Geräte
 

@@ -12,12 +12,13 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
-ms.openlocfilehash: 1f59463eeaa9926f2a4ca0d9a9b9b60dd63a8537
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+search.appverid: MET150
+ms.openlocfilehash: d7b88b73c260a6a84fdb835069de23c52775929a
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231173"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179481"
 ---
 # <a name="integrate-pradeo-with-intune"></a>Integrieren von Pradeo in Intune
 

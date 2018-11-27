@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 47917943188b2b3d0448845b1e356d181ec8f3af
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: 103b509a562e777a28882f21aef2ca36354533f5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410836"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183248"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Anfordern von Support für Microsoft Intune
 

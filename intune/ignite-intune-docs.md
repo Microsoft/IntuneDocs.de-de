@@ -13,13 +13,14 @@ ms.technology: ''
 ms.reviewer: ''
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 600c6a00910647983cc2329f9256b613560aaf14
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: ec5127adcb12bc1196604d27ae2ac6501de03d08
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866319"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187105"
 ---
 # <a name="microsoft-intune-documentation-40ignite-special-edition41"></a>Microsoft Intune-Dokumentation &#40;Ignite Special Edition&#41;
 Willkommen bei der Microsoft Ignite 2018! Wir freuen uns, dass Sie hier sind. Im Zuge der Microsoft Ignite 2018 haben wir Ihnen einige Intune-Ressourcen zusammengestellt.
