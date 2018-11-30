@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: a38ff69b878880ffa16e327eace0afe64d336f43
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: db9cdf539f0cf80fb4640ba41929c67e643956c4
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310571"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181121"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Unterstützen des Schutzes von Windows-PCs mithilfe von Windows-Firewall-Richtlinien in Microsoft Intune
 
@@ -79,7 +80,7 @@ Mit diesen Richtlinieneinstellungen konfigurieren Sie die Windows-Firewall zum B
 Der Standardwert für jede dieser Einstellungen ist **Ja** (der sicherste Wert).
 
 > [!IMPORTANT]
-> Wenn in Ihrer Umgebung verwaltete Computer mit Windows Vista ohne installierte Service Packs vorhanden sind, müssen Sie entweder das Update installieren, das mit [Artikel 971800](http://go.microsoft.com/fwlink/?LinkId=188405) in der Microsoft Knowledge Base verknüpft ist, oder die Richtlinieneinstellung **Alle eingehenden Verbindungen blockieren** in den Richtlinien auf den entsprechenden Computern deaktivieren.
+> Wenn in Ihrer Umgebung verwaltete Computer mit Windows Vista ohne installierte Service Packs vorhanden sind, müssen Sie entweder das Update installieren, das mit [Artikel 971800](http://go.microsoft.com/fwlink/?LinkId=188405) in der Microsoft Knowledge Base verknüpft ist, oder die Richtlinieneinstellung **Block all incoming connections** (Alle eingehenden Verbindungen blockieren) in den Richtlinien auf den entsprechenden Computern deaktivieren.
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Benutzer benachrichtigen, wenn ein neues Programm von der Windows-Firewall blockiert wird
 

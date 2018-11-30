@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f7b875d370880f28fa6a611bd5f66fb54b02955d
-ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
+ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51610106"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52267253"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Zuweisen von Apps zu Gruppen mit Microsoft Intune
 
@@ -65,6 +66,8 @@ In der folgenden Tabelle werden die verschiedenen Optionen für die Zuweisung vo
 
      > [!NOTE]
      > **Nur für iOS-Apps**: Wenn Sie ein iOS-VPN-Profil erstellt haben, das Pro-App-VPN-Einstellungen enthält, können Sie es unter **VPN** auswählen. Wenn die App ausgeführt wird, wird die VPN-Verbindung geöffnet. Weitere Informationen finden Sie unter [VPN-Einstellungen für iOS-Geräte](vpn-settings-ios.md).
+     >
+     > **Nur für Android-Apps:** Wenn Sie eine Android-App als **Available with or without enrollment** (Mit und ohne Registrierung verfügbar) bereitstellen, ist der Berichtsstatus nur auf registrierten Geräten verfügbar.
 
 9. Um die Benutzergruppen auszuwählen, denen diese App zugewiesen werden soll, wählen Sie **Eingeschlossene Gruppen** aus.
 10. Wenn Sie mindestens eine Gruppe ausgewählt haben, die eingeschlossen werden soll, wählen Sie **Auswählen** aus.

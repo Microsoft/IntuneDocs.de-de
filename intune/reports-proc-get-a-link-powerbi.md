@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5020b1653dd92587805e471e80808e34f3007a84
-ms.sourcegitcommit: 63b74a60aafa8d2d6af0594448ae0471fbd79194
+ms.openlocfilehash: e2c4335b17397833fdae9e95fecc2677c8068150
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46494029"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187343"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinden mit dem Data Warehouse mit Power BI
 
@@ -53,7 +54,7 @@ Die Power BI-Datei (PBIX) enthält Verbindungsinformationen für Ihren Mandanten
 > [!Important]  
 > Jede Power BI-Datei (PBIX) kann je nach Standortort des Mandanten unterschiedlich sein. Wenn Sie mehrere Intune-Mandanten verwalten, sollten Sie darauf achten, dass Sie die Datei verwenden, die Sie aus dem Azure-Portal heruntergeladen haben, während Sie in diesem Mandanten angemeldet waren.  
 
-1.  Wählen Sie im Azure-Portal **Überwachung + Verwaltung** > **Intune** aus. Sie können auch Ressourcen nach **Intune** durchsuchen.  
+1.  Melden Sie sich im Azure-Portal an, und klicken Sie auf **Überwachung + Verwaltung** > **Intune**. Sie können auch Ressourcen für  **Intune** suchen.  
 2.  Öffnen Sie das Blatt **Microsoft Intune Data Warehouse API (Preview)** (Microsoft Intune Data Warehouse-API (Vorschau)).
 3.  Wählen Sie **Power BI-Datei herunterladen** aus. Die Datei mit der Erweiterung PBIX wird an den angegebenen Speicherort heruntergeladen.
 4.  Öffnen Sie die Datei mit Power BI. Die *Intune Data Warehouse-Berichte* werden geladen. Es kann jedoch eine Weile dauern, Ihre Mandantendaten abzurufen.
@@ -64,7 +65,7 @@ Die Power BI-Datei (PBIX) enthält Verbindungsinformationen für Ihren Mandanten
 
 Wenn der Client bei Azure AD authentifiziert ist, verbindet sich die OData-URL mit dem RESTful-Endpunkt in der Data Warehouse-API, der das Datenmodell für Ihren Berichtserstellungsclient verfügbar macht. Um mit Power BI Desktop eine Verbindung herzustellen und Ihre eigene Berichte zu erstellen, gehen Sie wie folgt vor. Sie sind nicht auf Power BI Desktop festgelegt, sondern können Ihres bevorzugtes analytisches Tools mit der OData-URL verwenden. Die gilt unter der Voraussetzung, dass der Client die OAuth 2.0-Authentifizierung und den OData v4. 0-Standard unterstützt.
 
-1.  Wählen Sie im Azure-Portal **Überwachung + Verwaltung** > **Intune** aus. Sie können auch Ressourcen nach **Intune** durchsuchen.  
+1.  Melden Sie sich im Azure-Portal an, und klicken Sie auf **Überwachung + Verwaltung** > **Intune**. Sie können auch Ressourcen für  **Intune** suchen.  
 2.  Öffnen Sie das Blatt **Microsoft Intune Data Warehouse API (Preview)** (Microsoft Intune Data Warehouse-API (Vorschau)).
 3. Rufen Sie die benutzerdefinierte Feed-URL aus dem Berichtsblatt ab, z.B. `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`.
 4. Öffnen Sie **Power BI Desktop**.

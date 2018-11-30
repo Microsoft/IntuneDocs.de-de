@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6deed5de94b72ec3dfb5e8336cc2a58678b4748f
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231473"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187461"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium Mobile Threat Defense-Connector in Intune
 
@@ -58,7 +59,7 @@ Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie
 
 ### <a name="control-access-based-on-threat-to-network"></a>Steuern des Zugriffs basierend auf der Bedrohung für das Netzwerk
 
-Erkennen Sie Bedrohungen wie **Man-in-the-Middle** im Netzwerk, und schützen Sie den Zugriff auf WLAN-Netzwerke auf der Grundlage des Geräterisikos.
+Erkennen Sie Bedrohungen wie  **Man-in-the-Middle**  im Netzwerk, und schützen Sie den Zugriff auf WLAN-Netzwerke auf der Grundlage des Geräterisikos.
 
 **Blockieren des Netzwerkzugriffs über WLAN:**
 
@@ -70,7 +71,7 @@ Erkennen Sie Bedrohungen wie **Man-in-the-Middle** im Netzwerk, und schützen Si
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Steuern des Zugriffs auf SharePoint Online basierend auf der Bedrohung für das Netzwerk
 
-Erkennen von Bedrohungen wie **Man-in-the-Middle** im Netzwerk und Verhindern der Synchronisierung von Unternehmensdateien auf der Grundlage des Geräterisikos.
+Erkennen von Bedrohungen wie  **Man-in-the-Middle** im Netzwerk und Verhindern der Synchronisierung von Unternehmensdateien auf der Grundlage des Geräterisikos.
 
 **Blockieren des Zugriffs auf SharePoint Online bei Erkennen von Bedrohungen für das Netzwerk**
 
@@ -94,7 +95,7 @@ Erkennen von Bedrohungen wie **Man-in-the-Middle** im Netzwerk und Verhindern de
 
 -   Zimperium Mobile Threat Defense-Abonnement
 
-    -   Weitere Informationen finden Sie auf der [Zimperium-Website](https://www.zimperium.com/zips-mobile-ips).
+    -   Weitere Informationen finden Sie auf der  [Zimperium-Website](https://www.zimperium.com/zips-mobile-ips) .
 
 ## <a name="next-steps"></a>Nächste Schritte
 

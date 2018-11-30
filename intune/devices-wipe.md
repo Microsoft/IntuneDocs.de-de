@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dfefb17a2d8b9b4041846b879297f388156fee54
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 28c8863e8739563a6b6c9152a46abb6bf50f2db5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312816"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189196"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Entfernen von Geräten durch Zurücksetzen, Abkoppeln oder manuelles Aufheben der Registrierung des Geräts
 
@@ -130,7 +131,7 @@ Sie können nur Kioskgeräte zurücksetzen. Sie können Android-Kioskgeräte nic
 
 ### <a name="windows"></a>Windows
 
-|Datentyp|Windows 8.1 (MDM) und Windows RT 8.1|Windows RT|Windows Phone 8.1 und Windows Phone 8|Windows 10|
+|Datentyp|Windows 8.1 (MDM) und Windows RT 8.1|Windows RT|Windows Phone 8.1 und Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
 |Von Intune installierte Unternehmens-Apps und zugehörige Daten|Die Schlüssel für Dateien, die von EFS geschützt sind, werden entfernt. Der Benutzer kann die Dateien nicht öffnen.|Unternehmens-Apps werden nicht entfernt.|Ursprünglich über das Unternehmensportal installierte Apps werden deinstalliert. Daten von Unternehmens-Apps werden entfernt.|Apps werden deinstalliert. Sideload-Schlüssel werden entfernt.<br>Für Windows 10 Version 1703 (Creators Update) und höher und Office 365 werden ProPlus-Apps nicht entfernt.|
 |Einstellung|Von der Intune-Richtlinie festgelegte Konfigurationen werden nicht mehr erzwungen. Benutzer können die Einstellungen ändern.|Von der Intune-Richtlinie festgelegte Konfigurationen werden nicht mehr erzwungen. Benutzer können die Einstellungen ändern.|Von der Intune-Richtlinie festgelegte Konfigurationen werden nicht mehr erzwungen. Benutzer können die Einstellungen ändern.|Von der Intune-Richtlinie festgelegte Konfigurationen werden nicht mehr erzwungen. Benutzer können die Einstellungen ändern.|

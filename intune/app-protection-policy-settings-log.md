@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/15/2017
+ms.date: 11/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,17 +14,26 @@ ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 05502c901f01ba134475ec69df3c42aa6e0e7480
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: eedbc17147c6f9e2988d954308f2332de10d00ab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231747"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189842"
 ---
 # <a name="review-client-app-protection-logs"></a>Überprüfen der Schutzprotokolle für Client-Apps
 
-Erfahren Sie mehr über die Einstellungen, die Sie in den App-Schutzprotokollen überprüfen können. Greifen Sie durch Aktivieren des Intune-Diagnosemodus für eine Anwendung auf einem mobilen Client auf die Protokolle zu. Die folgende Tabelle zeigt den Namen und eine Erklärung für die Einstellungen, die im Protokoll aufgezeichnet werden.
+Erfahren Sie mehr über die Einstellungen, die Sie in den App-Schutzprotokollen überprüfen können. Greifen Sie durch Aktivieren der Intune-Diagnose auf einem mobilen Client auf Protokolle zu. 
+
+Der Prozess zum Aktivieren und Sammeln von Protokollen unterscheidet sich je nach Plattform:
+- **Android-Geräte:** Verwenden Sie das *Unternehmensportal*. Weitere Informationen finden Sie unter [Senden von Protokollen per E-Mail an den Support Ihres Unternehmens](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
+- **iOS-Geräte:** Verwenden Sie Managed Browser oder *Microsoft Edge* zum Sammeln von Protokollen. Weitere Informationen finden Sie im Intune-Blogeintrag des Supportteams mit dem Titel [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser (Neue Intune-Konsole zur Diagnose für die Übertragung von Protokollen in Intune Managed Browser)](https://blogs.technet.microsoft.com/intunesupport/2017/11/10/support-tip-new-intune-diagnostic-console-for-log-submission-in-the-intune-managed-browser). 
+- **Windows 10-Geräte:** Verwenden Sie *MDMDiag* und Ereignisprotokolle. Weitere Informationen finden Sie unter [Diagnose MDM failures in Windows 10 (Diagnostizieren von MDM-Fehlern unter Windows 10)](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) in der Referenz zur Windows-Clientverwaltung und im Blogbeitrag [Troubleshooting Windows 10 Intune Policy Failures (Behandeln von Fehlern bei Intune-Richtlinien unter Windows 10)](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures).
+
+
+In der folgenden Tabelle wird der Name und eine Erklärung für die Einstellungen aufgeführt, die im Protokoll aufgezeichnet werden.
 
 ## <a name="app-protection-policy-settings"></a>Einstellungen für die App-Schutzrichtlinie
 

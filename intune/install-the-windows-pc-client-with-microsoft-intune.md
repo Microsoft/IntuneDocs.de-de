@@ -12,13 +12,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 322a60101132d5ef435752079bb5c52a7a4b3a78
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425018"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52179073"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installieren des Intune-Softwareclients auf Windows-PCs
 
@@ -117,9 +118,9 @@ Benutzer können die Intune-Clientsoftware installieren, indem Sie auf die [Unte
 
 Wenn Benutzern keine Lizenz für Intune zugewiesen wurde oder die MDM-Autorität der Organisation nicht auf Intune festgelegt wurde, werden den Benutzern keine Optionen zum Registrieren angezeigt.
 
-Wenn Benutzern eine Lizenz für Intune zugewiesen wurde und die MDM-Autorität der Organisation auf Intune festgelegt wurde:
+Wenn Benutzern eine Lizenz für Intune zugewiesen wurde und die MDM-Autorität der Organisation auf Intune festgelegt wurde, gilt Folgendes:
 
-- Windows 7- oder Windows 8-PC-Benutzern wird die Option zum Anmelden bei Intune NUR angezeigt, indem sie die PC-Clientsoftware, die in ihrer Organisation eindeutig ist, herunterladen und installieren.
+- Windows 7- oder Windows 8-PC-Benutzern wird die Option zum Anmelden bei Intune NUR angezeigt, wenn sie die PC-Clientsoftware, die für ihre Organisation eindeutig ist, herunterladen und installieren.
 
 - Windows 10- oder Windows 8.1-PC-Benutzern werden zwei Registrierungsoptionen angezeigt:
 
@@ -256,7 +257,7 @@ Führen Sie mithilfe einer Eingabeaufforderung mit erhöhten Rechten die folgend
 
 Der Prozess zur Aufhebung der Registrierung entfernt nicht den OnlineManagement-Ordner. Warten Sie nach der Deinstallation 30 Minuten, und führen Sie dann diesen Befehl aus. Wenn Sie ihn zu früh ausführen, kann die Deinstallation in einem unbekannten Status verbleiben. Um den Ordner zu entfernen, starten Sie einen Befehl mit erhöhten Rechten, und führen Sie folgendes aus:
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>Nächste Schritte
 [Verwalten von Geräten mit Microsoft Intune](device-management.md)

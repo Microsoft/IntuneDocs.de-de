@@ -5,26 +5,27 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 06/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 60d9398b80a30adee194470ac4e5c6c1efc0bd4c
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744634"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186179"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Verwenden von TeamViewer für die Remoteverwaltung von Intune-Geräten
 
 Von Intune verwaltete Geräte können mit [TeamViewer](https://www.teamviewer.com) remote verwaltet werden. TeamViewer ist ein Drittanbieterprogramm, das Sie separat erwerben können. In diesem Thema erfahren Sie, wie Sie TeamViewer in Intune konfigurieren und wie Sie ein Gerät remote verwalten können. 
 
-## <a name="prerequisites"></a>Erforderliche Komponenten
+## <a name="prerequisites"></a>Voraussetzungen
 
 - Verwenden Sie ein unterstütztes Gerät. Mit Intune verwaltete Android-, Windows-, iOS- und macOS-Geräte unterstützen Remoteverwaltung. TeamViewer bietet möglicherweise keine Unterstützung für Windows Holographic (HoloLens), Windows Team (Surface Hub) oder Windows 10 S. Unter [TeamViewer](https://www.teamviewer.com) finden Sie für sämtliche Updates Informationen zu Unterstützungsmöglichkeiten.
 
@@ -58,7 +59,10 @@ Nach der Konfiguration des Connectors können Sie ein Gerät remote verwalten. G
 
 ![Verwenden von TeamViewer für die Remoteverwaltung eines Android-Geräts – Beispiel](./media/android-teamviewer.png)
 
-Beim Starten einer Remotesitzung wird einem Benutzer auf dessen Gerät ein Benachrichtigungskennzeichen auf dem Symbol der Unternehmensportal-App angezeigt. Beim Öffnen der App wird ebenfalls eine Benachrichtigung angezeigt. Anschließend kann der Benutzer die Remoteunterstützungsanforderung annehmen.
+Beim Starten einer Remotesitzung wird dem Benutzer auf seinem Gerät ein Benachrichtigungskennzeichen auf dem Symbol der Unternehmensportal-App angezeigt. Beim Öffnen der App wird ebenfalls eine Benachrichtigung angezeigt. Dann kann der Benutzer die Remoteunterstützungsanforderung annehmen.
+
+> [!NOTE]
+> Windows-Geräte, die mithilfe von Methoden wie DEM und WCD registriert werden, die nicht vom Benutzer ausgeführt werden, zeigen die TeamViewer-Benachrichtigung nicht in der Unternehmensportal-App an. In diesen Szenarios wird die Verwendung des TeamViewer-Portals empfohlen, um die Sitzung zu erstellen.
 
 In TeamViewer können Sie einige Aktionen auf dem Gerät ausführen. Dazu zählt die Übernahme der Kontrolle über das Gerät. Alle Einzelheiten zu Ihren Möglichkeiten finden Sie im [TeamViewer-Leitfaden](https://www.teamviewer.com/support/documents/).
 

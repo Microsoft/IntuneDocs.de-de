@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: c9920e914a80ec3bb02f5066e6d6e34b2236c860
-ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
+ms.openlocfilehash: db9f0ca860186222491906aa35baf1e92d14e548
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "51212494"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181340"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
@@ -126,7 +127,7 @@ Führen Sie die folgenden Schritte aus, um das Intune App SDK zu aktivieren:
 
 4. Nachdem Sie die Freigabe des Schlüsselbunds aktiviert haben, folgen Sie den nachstehenden Schritten, um eine separate Zugriffsgruppe zu erstellen, in der das Intune App SDK seine Daten speichert. Sie können eine Zugriffsgruppe für den Schlüsselbund über die Benutzeroberfläche oder mithilfe der Berechtigungsdatei erstellen. Wenn Sie die Benutzeroberfläche zum Erstellen der Zugriffsgruppe für den Schlüsselbund verwenden, führen Sie unbedingt die folgenden Schritte aus:
 
-   1. Wenn in Ihrer mobilen App keine Zugriffsgruppen für den Schlüsselbund definiert sind, fügen Sie die Paket-ID der App als erste Gruppe hinzu.
+   1. Wenn in Ihrer mobilen App keine Keychain-Zugriffsgruppen definiert sind, fügen Sie die Paket-ID der App als **erste** Gruppe hinzu.
 
    2. Fügen Sie die freigegebene Zugriffsgruppe für den Schlüsselbund `com.microsoft.intune.mam` Ihren vorhandenen Zugriffsgruppen hinzu. Diese Zugriffsgruppe wird vom Intune App SDK zum Speichern von Daten verwendet.
 
@@ -140,7 +141,7 @@ Führen Sie die folgenden Schritte aus, um das Intune App SDK zu aktivieren:
            * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
       > [!NOTE]
-      > Eine Berechtigungsdatei ist eine für die mobile Anwendung eindeutige XML-Datei. Sie wird zum Festlegen spezieller Berechtigungen und Funktionen in Ihrer iOS-App verwendet. Wenn Ihre App vorher noch keine Berechtigungsdatei hatte, sollte die Aktivierung der Schlüsselbundfreigabe (Schritt 3) dazu geführt haben, dass Xcode eine für Ihre App generiert hat.
+      > Eine Berechtigungsdatei ist eine für die mobile Anwendung eindeutige XML-Datei. Sie wird zum Festlegen spezieller Berechtigungen und Funktionen in Ihrer iOS-App verwendet. Wenn Ihre App vorher noch keine Berechtigungsdatei hatte, sollte die Aktivierung der Schlüsselbundfreigabe (Schritt 3) dazu geführt haben, dass Xcode eine für Ihre App generiert hat. Vergewissern Sie sich, dass die Paket-ID der App als erster Eintrag in der Liste aufgeführt ist.
 
 5. Nehmen Sie jedes Protokoll, das Ihre App an `UIApplication canOpenURL` übergibt, in das `LSApplicationQueriesSchemes`-Array der Datei „Info.plist“ Ihrer App auf. Speichern Sie Ihre Änderungen, bevor Sie mit dem nächsten Schritt fortfahren.
 

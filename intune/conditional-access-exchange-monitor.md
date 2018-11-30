@@ -13,17 +13,18 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2ff5686e2d83831259bd21bee164b3c187e1c0ee
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 20a99290d2a84c22bc2bee823d7a3bb42e43aced
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231354"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180577"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Überwachen der Konformität mit bedingtem Zugriff für Exchange lokal und Exchange Online in Intune
 
-Ab Version Intune 1704 können Administratoren Berichtsinformationen in Zusammenhang mit Exchange ActiveSync-Gerät-Geräteeinträgen sehen, die entweder über den lokalen Exchange-Connector oder dem Intune Service to Service Connector (Exchange Online-Connector) mit Intune synchronisiert werden. Berichte zur Kompatibilität mit bedingtem Zugriff enthalten eine Zusammenfassung der Geräte mit unterschiedlichen Synchronisierungsstatus:
+Ab Intune 1704 können Administratoren Berichtsinformationen im Zusammenhang mit Gerätedatensätzen für Exchange Active Sync-Geräte sehen, die entweder über den lokalen Exchange Connector oder dem Intune Service to Service Connector (Exchange Online Connector) mit Intune synchronisiert werden. Berichte zur Kompatibilität mit bedingtem Zugriff enthalten eine Zusammenfassung der Geräte mit unterschiedlichen Synchronisierungsstatus:
 
 -   **Zulassen**
 
@@ -37,9 +38,9 @@ Ab Version Intune 1704 können Administratoren Berichtsinformationen in Zusammen
 
 2.  Sobald Sie erfolgreich angemeldet sind, wird das **Azure-Dashboard** angezeigt.
 
-3.  Klicken Sie im Menü links auf **Alle Dienste**, und geben Sie in das Filtertextfeld **Intune** ein.
+3.  Klicken Sie im Menü links auf  **Alle Dienste** , und geben Sie in das Filtertextfeld  **Intune**  ein.
 
-4.  Wählen Sie **Intune** aus. Das **Intune-Dashboard** wird angezeigt.
+4.  Wählen Sie  **Intune** aus. Das **Intune-Dashboard** wird angezeigt.
 
 5.  Klicken Sie auf **Bedingter Zugriff** > **Übersicht**.
 

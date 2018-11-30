@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 09e4cfc314ea21294cd3de62611a089ec724a683
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075626"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181886"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Überwachen von App-Informationen und -Zuweisungen mit Microsoft Intune
 
@@ -67,7 +68,9 @@ Das Diagramm zeigt die Zahl der Apps für die folgenden Status an:
 >    - Eine Zieländerung einer installierten verwalteten App kann dazu führen, dass die Installationsanzahl im Statusblade verringert, in den ermittelten Apps aber weiterhin berichtet wird.
 >    - Die Zielgruppenadressierung mehrerer Instanzen derselben App in einem Mandanten führt zu einer unterschiedlichen Anzahl Infolge von potenzieller Überschneidung von Benutzern oder Geräten. Jede Instanz der App zählt sich überschneidende Benutzer, doch bei den ermittelten Apps wird die Anzahl dupliziert.
 >    - Ermittelte Apps und App-Status werden zu unterschiedlichen Zeitintervallen gesammelt, und das könnte zu einer Abweichung bei der App-Anzahl führen.
- 
+> 
+> Beachten Sie außerdem, dass Android-Apps, die als **Available with or without enrollment** (Mit und ohne Registrierung verfügbar) bereitgestellt werden, nur für registrierte Geräte den Installationsstatus der App melden. Der App-Installationsstatus ist nicht für Geräte verfügbar, die nicht für Intune registriert sind.
+
 ### <a name="device-install-status"></a>Geräteinstallationsstatus
 
 Eine Liste des Gerätestatus wird angezeigt, wenn Sie im Abschnitt **Überwachen** des Menüs die Option **Geräteinstallationsstatus** auswählen. Die Tabelle mit den Details enthält die folgenden Spalten:

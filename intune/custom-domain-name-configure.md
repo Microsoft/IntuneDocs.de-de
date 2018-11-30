@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: cbefc5ae5ef159c3c58a475f01a1513abb46ee90
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: a4227399eb5cf1d2cc2e265215eccb2c05d73ac5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254070"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181495"
 ---
 # <a name="configure-a-custom-domain-name"></a>Konfigurieren eines benutzerdefinierten Domänennamens
 
@@ -32,7 +33,7 @@ Wenn sich Ihre Organisation für einen cloudbasierten Microsoft-Dienst wie Intun
 
 Bevor Sie Benutzerkonten erstellen oder Ihr lokales Active Directory-Verzeichnis synchronisieren, wird dringend empfohlen, dass Sie entscheiden, ob nur die .onmicrosoft.com-Domäne verwendet oder benutzerdefinierte Domänennamen hinzugefügt werden sollen. Richten Sie eine benutzerdefinierte Domäne ein, bevor Sie zur Vereinfachung der Benutzerverwaltung Benutzer hinzufügen. Dadurch können sich Benutzer mit den Anmeldeinformationen anmelden, die sie für den Zugriff auf andere Domänenressourcen verwenden.
 
-Wenn Sie einen cloudbasierten Dienst von Microsoft abonnieren, wird Ihre Instanz dieses Diensts zu einem Microsoft [Azure AD-Mandanten](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant). Azure AD stellt Identitäts- und Verzeichnisdienste für Ihren cloudbasierten Dienst bereit. Die Aufgaben beim Konfigurieren von Intune zum Verwenden des benutzerdefinierten Domänennamens Ihres Unternehmens sind identisch mit denen bei anderen Azure AD-Mandanten. Daher können Sie sich an den Informationen und Verfahren unter [Hinzufügen Ihrer Domäne](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/) orientieren.
+Wenn Sie einen cloudbasierten Dienst von Microsoft abonnieren, wird Ihre Instanz dieses Diensts zu einem Microsoft [Azure AD-Mandanten](http://technet.microsoft.com/library/jj573650.aspx#BKMK_WhatIsAnAzureADTenant). Azure AD stellt Identitäts- und Verzeichnisdienste für Ihren cloudbasierten Dienst bereit. Die Aufgaben beim Konfigurieren von Intune zum Verwenden des benutzerdefinierten Domänennamens Ihrer Organisation sind identisch mit denen bei anderen Azure AD-Mandanten. Daher können Sie sich an den Informationen und Verfahren unter [Hinzufügen Ihrer Domäne](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/) orientieren.
 
 > [!TIP]
 > Weitere Informationen zu benutzerdefinierten Domänen finden Sie unter [Konzeptionelle Übersicht über benutzerdefinierte Domänennamen in Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain-concepts/).
