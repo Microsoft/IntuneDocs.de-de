@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 59736ad188cf88c994ff93b4a505731afad8f550
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a7250471e698d32a305755147943311d2150f0b2
+ms.sourcegitcommit: a27a9c4cae47be50807aa3c890f0d5c0c023f04a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186323"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52618185"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Verwenden eines benutzerdefinierten Geräteprofils zum Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel – Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,9 +34,8 @@ Vorinstallierte Schlüssel (Pre-shared keys, PSK) werden üblicherweise verwende
 ## <a name="before-you-begin"></a>Vorbereitung
 
 - Möglicherweise ist es einfacher, den Code von einem Computer zu kopieren, der eine Verbindung mit dem jeweiligen Netzwerk herstellt, wie weiter unten in diesem Artikel beschrieben.
-- Für Android können Sie auch den [Android PSK Generator](http://intunepskgenerator.johnathonb.com/) verwenden.
 - Sie können mehrere Netzwerke und Schlüssel hinzufügen, indem Sie weitere OMA-URI-Einstellungen hinzufügen.
-- Verwenden Sie für iOS den Apple Configurator auf einer Mac-Station, um das Profil einzurichten. Alternativ dazu können Sie den [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/) verwenden.
+- Verwenden Sie für iOS den Apple Configurator auf einer Mac-Station, um das Profil einzurichten.
 - PSK erfordert eine Zeichenfolge von 64 Hexadezimalziffern oder eine Passphrase von 8 bis 63 druckbaren ASCII-Zeichen. Einige Zeichen wie Sternchen (*) werden nicht unterstützt.
 
 ## <a name="create-a-custom-profile"></a>Erstellen eines benutzerdefinierten Profils
