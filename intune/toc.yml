@@ -837,11 +837,9 @@ items:
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: Lösen von Richtlinienkonflikten
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-  - name: Glossar
-    href: intune-glossary.md
-ms.openlocfilehash: 79f28c5570d62e3ef973c6db913222c4cd88fdec
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.openlocfilehash: 494f4c0ada3b730251c2d7b7ece09c68558fb22e
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887082"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977387"
