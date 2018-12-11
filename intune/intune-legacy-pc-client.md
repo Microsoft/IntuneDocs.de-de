@@ -15,12 +15,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 27f3a184e355f63d20a79fd92e8326206f6eee15
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9bbf6f30b7a7490608f9896ae8fe54e27341ccae
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185626"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112322"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune in der Azure-Konsole und der Legacy-Intune-PC-Client
 
@@ -53,7 +53,7 @@ Da Windows 7 nicht über MDM verwaltet werden kann, stellen wir nur in der Silve
 
 ## <a name="mdm-capabilities"></a>MDM-Funktionen
 
-Einen ausführlichen Vergleich zwischen PC-Client und MDM-Funktionen finden Sie unter [Vergleichen der Verwaltung von Windows-PCs als Computer oder mobile Geräte](https://docs.microsoft.com/intune-classic/deploy-use/pc-management-comparison). Über MDM-Updates werden weiterhin neue Verwaltungsfunktionen für in MDM registrierte Windows 10-Geräte bereitgestellt, einschließlich Auswertungsoptionen für Win32-Apps. Unter [Neuerungen](https://docs.microsoft.com/intune/whats-new) finden Sie die neuesten Features, die dem Dienst hinzugefügt wurden.
+Einen ausführlichen Vergleich zwischen PC-Client und MDM-Funktionen finden Sie unter [Vergleichen der Verwaltung von Windows-PCs als Computer oder mobile Geräte](pc-management-comparison.md). Über MDM-Updates werden weiterhin neue Verwaltungsfunktionen für in MDM registrierte Windows 10-Geräte bereitgestellt, einschließlich Auswertungsoptionen für Win32-Apps. Unter [Neuerungen](https://docs.microsoft.com/intune/whats-new) finden Sie die neuesten Features, die dem Dienst hinzugefügt wurden.
 
 ## <a name="switch-from-pc-client-to-mdm"></a>Umstellen vom PC-Client auf MDM
 

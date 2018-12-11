@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2782190f043a6d0c2d1af52d5a77fd3ce53b739f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 69c8b4a5b786768d315bfe6ec707b8c4b915c93a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181447"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112924"
 ---
 # <a name="reference-for-devices-entities"></a>Referenz für Geräteentitäten
 
@@ -316,7 +316,7 @@ Die Entität **DevicePropertyHistory** hat die gleichen Eigenschaften wie die Ge
 
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
-Die Entität **MdmDeviceInventoryHistories** enthält tägliche Momentaufnahmen von Inventardaten für mit MDM-verwaltete Geräte für die letzten 90 Tage. Die Spalte „DateKey“ gibt den Tag für die Zeile an. Einige Eigenschaften gelten möglicherweise nicht für alle Geräte oder werden nicht für alle Geräte befüllt. Lesen Sie daher diese Seite, wenn Sie weitere Informationen suchen. Weitere Informationen finden Sie unter [Verstehen Sie Ihre Geräte mithilfe des Inventars in Microsoft Intune](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).
+Die Entität **MdmDeviceInventoryHistories** enthält tägliche Momentaufnahmen von Inventardaten für mit MDM-verwaltete Geräte für die letzten 90 Tage. Die Spalte „DateKey“ gibt den Tag für die Zeile an. Einige Eigenschaften gelten möglicherweise nicht für alle Geräte oder werden nicht für alle Geräte befüllt. Lesen Sie daher diese Seite, wenn Sie weitere Informationen suchen. Weitere Informationen finden Sie unter [Verstehen Sie Ihre Geräte mithilfe des Inventars in Microsoft Intune](device-inventory.md).
 
 | Eigenschaft  | Beschreibung |
 |---------|------------|

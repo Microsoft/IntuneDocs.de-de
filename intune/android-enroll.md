@@ -15,13 +15,13 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 2b2b3ba5443cd95cd81bdca6d386ab95a2c831eb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 79a1a03f74db8e44dc3ee4d6575e193ce7841e24
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190114"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031890"
 ---
 # <a name="enroll-android-devices"></a>Registrieren von Android-Geräten
 

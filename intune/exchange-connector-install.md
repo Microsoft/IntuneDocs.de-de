@@ -16,12 +16,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 019f09444f96d8bb3bca046ef5be20af373a3bff
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0dc87c20b0da6fcfcc4e3ab304c61c5b264aaf38
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183706"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112560"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Einrichten des lokalen Intune Exchange Connectors in Microsoft Intune in Azure
 
@@ -45,7 +45,7 @@ In der folgenden Tabelle finden Sie die Anforderungen an den Computer, auf dem S
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         Betriebssysteme          |                                                               Intune unterstützt den lokalen Exchange Connector auf Computern, auf denen eine beliebige Edition von Windows Server 2008 SP2 (64 Bit), Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 oder Windows Server 2016 ausgeführt wird.<br /><br />Auf Server Core-Installationen wird der Connector nicht unterstützt.                                                                |
 |         Microsoft Exchange         |                                                                           Für lokale Connectors sind Microsoft Exchange 2010 SP3 oder höher oder die veraltete Exchange Online Dedicated-Umgebung erforderlich. Wenn Sie herausfinden möchten, ob es sich bei Ihrer Exchange Online Dedicated-Umgebung um die <strong>neue</strong> oder die <strong>ältere</strong> Konfiguration handelt, wenden Sie sich an Ihren Kundenbetreuer.                                                                           |
-| Autorität für die Verwaltung mobiler Geräte |                                                                                                                              [Festlegen von Intune als Autorität für die Verwaltung mobiler Geräte](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).                                                                                                                               |
+| Autorität für die Verwaltung mobiler Geräte |                                                                                                                              [Festlegen von Intune als Autorität für die Verwaltung mobiler Geräte](mdm-authority-set.md).                                                                                                                               |
 |              Hardware              |                                                                                                                                                     Der Computer, auf dem Sie den Connector installieren, erfordert eine CPU mit 1,6 GHz und 2 GB RAM sowie mindestens 10 GB freien Speicherplatz.                                                                                                                                                      |
 |  Active Directory-Synchronisierung  |                                                                                      Bevor Sie den Connector für die Verbindung von Intune mit Exchange Server verwenden können, müssen Sie die [Active Directory-Synchronisierung](users-add.md) einrichten, damit Ihre lokalen Benutzer und Sicherheitsgruppen mit Ihrer Instanz von Azure Active Directory synchronisiert werden.                                                                                      |
 |        Zusätzliche Software         |                                                                                                                                           Eine vollständige Installation von Microsoft .NET Framework 4.5 und Windows PowerShell 2.0 muss auf dem Computer installiert sein, auf dem der Connector gehostet wird.                                                                                                                                           |
