@@ -61,7 +61,7 @@ Nachfolgend sind die Einstellungen aufgeführt, die der Support Ihres Unternehme
 
 * Zugriff auf bestimmte Websites  
 
-* Zugriff auf interne Unternehmenswebsites über Edge und den Azure Active Directory-Proxy  
+* Zugriff auf interne Unternehmenswebsites über Microsoft Edge und den Azure Active Directory-Proxy  
 
 * Mindestens erforderliche Version der App und des Betriebssystems
 
