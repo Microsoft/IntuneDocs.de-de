@@ -1,12 +1,12 @@
 ---
-title: Einstellungen für Geräteeinschränkungen für iOS in Microsoft Intune
+title: Hinzufügen von Einstellungen für iOS-Geräteeinschränkungen in Microsoft Intune – Azure | Microsoft-Dokumentation
 titleSuffix: ''
-description: In diesem Artikel lernen Sie die Intune-Einstellungen zur Steuerung von Geräteeinstellungen und -funktionen auf iOS-Geräten kennen.
+description: Fügen Sie Einstellungen auf iOS-Geräten hinzu, konfigurieren oder erstellen Sie sie, um Anforderungen für Kennwörter festzulegen, den gesperrten Bildschirm zu steuern, integrierte Apps zu verwenden, eingeschränkte oder genehmigte Apps hinzuzufügen, Bluetooth-Geräte zu handhaben, für Sicherung und Speicherung eine Verbindung mit der Cloud herzustellen, den Kioskmodus zu aktivieren, Domänen hinzuzufügen und zu steuern, wie Benutzer mit dem Safari-Webbrowser in Microsoft Intune interagieren.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/23/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,37 +14,43 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8f9e9533793a8792e9ad354392b9d8e911cd07f4
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a677742c5d2f876c0714f13c4f62d059ced98584
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188703"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728972"
 ---
-# <a name="microsoft-intune-ios-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für iOS-Geräte in Microsoft Intune
+# <a name="ios-device-restrictions-settings-list-in-microsoft-intune"></a>Liste der Einstellungen für iOS-Geräteeinschränkungen in Microsoft Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-In diesem Artikel lernen Sie die Einstellungen für Geräteeinschränkungen in Microsoft Intune kennen, die Sie für iOS-Geräte konfigurieren können.
+In diesem Artikel werden alle Einstellungen für Geräteeinschränkungen aufgelistet und beschrieben, die Sie für iOS-Geräte konfigurieren können. Diese Einstellungen werden einem Gerätekonfigurationsprofil hinzugefügt und dann Ihren iOS-Geräten mit Microsoft Intune zugewiesen oder bereitgestellt.
 
 ## <a name="general"></a>Allgemein
 
--   **Nutzungsdaten freigeben:** Hiermit erlauben oder verhindern Sie, dass das Gerät Diagnose- und Nutzungstelemetriedaten an Apple sendet.
--   **Übermittlung von Diagnosedaten:** Ermöglicht dem Gerät das Senden von Diagnosedaten an Apple.
--   **Bildschirmaufnahme:** Erlauben Sie dem Benutzer, den Bildschirminhalt als Bild zu erfassen.
-    - **Remotebildschirmüberwachung über die Classroom-App (nur überwacht):** Erlauben oder sperren Sie die Anzeige des Bildschirms auf iOS-Geräten durch die Apple Classroom-App.
-    - **Unaufgeforderte Bildschirmbeobachtung durch die Classroom-App (nur überwacht)**: Falls zulässig, können Lehrer im Hintergrund die Bildschirme der iOS-Geräte ihrer Schüler mithilfe der Classroom-App überwachen, ohne dass die Schüler dies mitbekommen.
--   **Nicht vertrauenswürdige TLS-Zertifikate:** Erlauben Sie nicht vertrauenswürdige TLS-Zertifikate (Transport Layer Security) auf dem Gerät.
--   **Vertrauen für Unternehmens-App:** Ermöglicht es dem Benutzer zu entscheiden, ob Apps, die nicht aus dem App Store heruntergeladen wurden, vertraut werden soll.
-- **Kontoänderung (nur überwacht):** Wenn diese Funktion blockiert ist, kann der Benutzer keine gerätespezifischen Einstellungen der iOS-Einstellungs-App ändern wie z.B. neue Gerätekonten erstellen, den Benutzernamen oder das Kennwort ändern.
-Dies gilt auch für Einstellungen, auf die über die iOS-Einstellungs-App zugegriffen werden kann wie z.B. E-Mail, Kontakte, Kalender, Facebook und Twitter. Dies gilt nicht für Apps mit Kontoeinstellungen, die nicht über die iOS-Einstellungs-App konfiguriert werden können wie z.B. die Microsoft Outlook-App.
-- **Aktivieren von Einschränkungen in den Geräteeinstellungen (nur überwacht):** Erlauben Sie Benutzern das Konfigurieren von Geräteeinschränkungen (Jugendschutz) auf dem Gerät.
-- **Verwendung der Option zum Löschen aller Inhalte und Einstellungen auf dem Gerät (nur überwacht):** Erlauben Sie dem Benutzer die Verwendung der Option zum Löschen aller Inhalte und Einstellungen auf dem Gerät.
-- **Gerätenamensänderung (nur überwacht):** Erlauben Sie dem Benutzer, den Namen des Geräts zu ändern.
-- **Änderung von Benachrichtigungseinstellungen (nur überwacht):** Erlauben Sie dem Benutzer, die Benachrichtigungseinstellungen des Geräts zu ändern.
-- **Änderung der Vertrauenseinstellungen für die Unternehmens-App (nur überwacht):** Ermöglicht es dem Benutzer zu entscheiden, ob Apps, die nicht aus dem App Store heruntergeladen wurden, vertraut werden soll.
-- **Konfigurationsprofiländerungen (nur überwacht):** Erlauben Sie dem Benutzer die Installation von Konfigurationsprofilen.
-- **Aktivierungssperre (nur überwacht):** Aktivieren Sie die Aktivierungssperre auf überwachten iOS-Geräten.
+- **Nutzungsdaten freigeben**: Wählen Sie **Blockieren** aus, um zu verhindern, dass das Gerät Diagnose- und Nutzungsdaten an Apple sendet. **Nicht konfiguriert** lässt das Senden dieser Daten zu.
+  - **Übermittlung von Diagnosedaten**: **Blockieren** verhindert, dass der Benutzer Änderungen an den Einstellungen für Diagnoseübermittlung und App-Analyse in **Diagnose- und Nutzung** (Geräteeinstellungen) vornimmt. Um diese Einstellung verwenden, muss sich das Gerät im überwachten Modus befinden (iOS 9.3.2+). **Nicht konfiguriert** ermöglicht dem Benutzer, diese Geräteeinstellungen zu ändern.
+- **Bildschirmaufnahme**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Screenshots oder Bildschirmaufnahmen auf dem Gerät vorgenommen werden. **Nicht konfiguriert** erlaubt dem Benutzer, den Bildschirminhalt als Bild zu erfassen.
+  - **Remotebildschirmüberwachung über die Classroom-App (nur überwacht):** Wählen Sie **Blockieren** aus, um zu verhindern, dass die Classroom-App den Bildschirm des Geräts remote anzeigt. Um diese Einstellung zu verwenden, muss sich das Gerät im überwachten Modus befinden (iOS 9.3+). **Nicht konfiguriert** ermöglicht der Apple Classroom-App, den Bildschirm anzuzeigen.
+  - **Unaufgeforderte Bildschirmbeobachtung durch die Classroom-App (nur überwacht)**: Falls auf **Zulassen** festgelegt, können Lehrer im Hintergrund die Bildschirme der iOS-Geräte ihrer Kursteilnehmer mithilfe der Classroom-App überwachen, ohne dass die Kursteilnehmer dies mitbekommen. In einer Klasse registrierte Kursteilnehmergeräte, die die Classroom-App verwenden, gewähren der Lehrkraft des Kurses automatisch die Berechtigung. **Nicht konfiguriert** verhindert diese Funktion.
+- **Nicht vertrauenswürdige TLS-Zertifikate:** Wählen Sie **Blockieren** aus, um zu verhindern, dass nicht vertrauenswürdige TLS-Zertifikate (Transport Layer Security) auf das Gerät gelangen. **Nicht konfiguriert** lässt TLS-Zertifikate zu.
+- **Vertrauen für Unternehmens-App**: Wählen Sie **Blockieren** aus, um die Schaltfläche **Unternehmensentwickler vertrauen** aus „Einstellungen > Allgemein > Profile und Geräteverwaltung“ auf dem Gerät zu entfernen. **Nicht konfiguriert** ermöglicht dem Benutzer, zu wählen, ob Apps, die nicht aus dem App Store heruntergeladen wurden, vertraut werden soll.
+- **Kontoänderung (nur überwacht)**: Bei Festlegung auf **Blockieren** kann der Benutzer die gerätespezifischen Einstellungen nicht über die iOS-Einstellungen-App aktualisieren. Der Benutzer kann z.B. nicht neue Gerätekonten erstellen oder Benutzernamen bzw. Kennwort ändern. **Nicht konfiguriert** ermöglicht dem Benutzer, diese Einstellungen zu ändern.
+  Diese Funktion gilt auch für Einstellungen, auf die über die iOS-Einstellungen-App zugegriffen werden kann, wie z.B. E-Mail, Kontakte, Kalender, Twitter und mehr. Diese Funktion gilt nicht für Apps mit Kontoeinstellungen, die nicht über die iOS-Einstellungen-App konfiguriert werden können, wie z.B. die Microsoft Outlook-App.
+- **Aktivieren von Einschränkungen in den Geräteeinstellungen (nur überwacht)**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer Einschränkungen in den Geräteeinstellungen aktivieren. **Nicht konfiguriert** erlaubt dem Benutzer das Konfigurieren von Geräteeinschränkungen (z.B. Jugendschutz) auf dem Gerät.
+- **Verwendung der Option zum Löschen aller Inhalte und Einstellungen auf dem Gerät (nur überwacht)**: Wählen Sie **Blockieren** aus, damit Benutzer nicht die Option zum Löschen aller Inhalte und Einstellungen auf dem Gerät (nur überwacht) verwenden können. **Nicht konfiguriert** ermöglicht Benutzern den Zugriff auf diese Einstellungen.
+- **Gerätenamensänderung (nur überwacht)**: Wählen Sie **Blockieren** aus, damit der Gerätenamen nicht geändert werden kann. **Nicht konfiguriert** ermöglicht dem Benutzer, den Namen des Geräts zu ändern.
+- **Änderung von Benachrichtigungseinstellungen (nur überwacht):** Wählen Sie **Blockieren**, damit die Benachrichtigungseinstellungen nicht geändert werden können. **Nicht konfiguriert** ermöglicht dem Benutzer, die Benachrichtigungseinstellungen des Geräts zu ändern.
+- **Änderung des Hintergrundbilds (nur überwacht)**: **Blockieren** verhindert, dass das Hintergrundbild geändert wird. **Nicht konfiguriert** ermöglicht dem Benutzer, das Hintergrundbild des Geräts zu ändern.
+- **Änderung der Vertrauenseinstellungen für die Unternehmens-App (nur überwacht)**: **Blockieren** verhindert, dass der Benutzer die Vertrauensstellungseinstellungen für die Unternehmens-App auf überwachten Geräten ändert. **Nicht konfiguriert** ermöglicht dem Benutzer, Apps zu vertrauen, die nicht aus dem App Store heruntergeladen wurden.
+- **Konfigurationsprofiländerungen (nur überwacht)**: **Blockieren** verhindert Änderungen des Konfigurationsprofils auf dem Gerät. **Nicht konfiguriert** ermöglicht dem Benutzer, Konfigurationsprofile zu installieren.
+- **Aktivierungssperre (nur überwacht)**: Wählen Sie **Zulassen** aus, um die Aktivierungssperre auf überwachten iOS-Geräten zu aktivieren. Die Aktivierungssperre erschwert die erneute Aktivierung verlorener oder gestohlener Geräte.
+- **Entfernen von Apps blockieren (nur überwacht)**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer Apps entfernen. **Nicht konfiguriert** ermöglicht Benutzern, Apps vom Gerät zu entfernen.
+- **Modus mit USB-Einschränkung blockieren (nur überwacht)**: Wählen Sie **Blockieren** aus, um den Modus mit USB-Einschränkung auf überwachten Geräten zu deaktivieren. Der Modus mit USB-Einschränkung verhindert, dass USB-Zubehör Daten mit einem Gerät austauscht, das für mehr als einer Stunde gesperrt ist. **Nicht konfiguriert** ermöglicht den Modus mit USB-Einschränkung.
+- **Automatische Datums- und Uhrzeiteinstellung erzwingen (nur überwacht)**: **Anfordern** erzwingt die automatische Einstellung von Datum und Uhrzeit auf überwachten Geräten. Die Zeitzone für das Gerät wird aktualisiert, wenn das Gerät über Mobilfunkverbindungen verfügt oder WLAN mit Standortdiensten aktiviert ist.
+- **Von Kursteilnehmern eine Berechtigung zum Verlassen des Classroom-Kurses verlangen**: **Anfordern** erzwingt, dass in einem nicht verwalteten Kurs registrierte Kursteilnehmer, die die Classroom-App verwenden, vom Kursleiter eine Berechtigung zum Verlassen des Kurses anfordern müssen. Nur in iOS 11.3 oder höher verfügbar. **Nicht konfiguriert** erzwingt nicht, dass Kursteilnehmer um eine Berechtigung bitten müssen.
+- **Drahtlose PKI-Updates zulassen**: Mit **Zulassen** können Ihre Benutzer Softwareupdates empfangen, ohne eine Verbindung ihrer Geräte mit einem Computer herzustellen.
+- **Anzeigennachverfolgung begrenzen**: Wählen Sie **Begrenzen** aus, um die Geräteanzeigen-ID zu deaktivieren. **Nicht konfiguriert** behält die Aktivierung bei.
+- **VPN-Erstellung blockieren (nur überwacht)**: **Blockieren** hindert Benutzer daran, VPN-Konfigurationseinstellungen zu erstellen. **Nicht konfiguriert** ermöglicht Benutzern das Erstellen von VPNs auf dem Gerät.
 
 ## <a name="configurations-requiring-supervision"></a>Konfigurationen, die Überwachung erfordern
 
@@ -95,194 +101,199 @@ Der überwachte Modus von iOS kann nur während der ersten Einrichtung des Gerä
 > - Siri
 
 ## <a name="password"></a>Kennwort
--   **Kennwort:** Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können.
-    -   **Einfache Kennwörter:** Erlauben Sie einfache Kennwörter wie 0000 oder 1234.
-    -   **Erforderlicher Kennworttyp:** Geben Sie den erforderlichen Typ des Kennworts an, z.B. nur numerisch oder alphanumerisch.
-    -   **Anzahl nicht alphanumerischer Zeichen im Kennwort:** Geben Sie die Anzahl von Symbolzeichen (wie **#** oder **@**) an, die im Kennwort enthalten sein müssen.
-    -   **Minimale Kennwortlänge:** Geben Sie die Mindestanzahl von Zeichen an, die das Kennwort enthalten muss.
-    -   **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird:** Gibt die Anzahl fehlerhafter Anmeldeversuche an, bevor das Gerät durch diese Einstellung zurückgesetzt wird.
-    -   **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts:**<sup>1</sup> Geben Sie an, wie lange das Gerät inaktiv bleiben kann, bevor der Benutzer sein Kennwort erneut eingeben muss.
-    -   **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung:**<sup>1</sup> Geben Sie die Anzahl der Minuten an, bevor die Anzeige des Geräts deaktiviert wird.
-    -   **Kennwortablauf (Tage):** Geben Sie die Anzahl der Tage an, bevor das Gerätekennwort geändert werden muss.
-    -   **Wiederverwendung vorheriger Kennwörter verhindern:** Geben Sie an, wie viele zuvor verwendete Kennwörter vom Gerät gespeichert werden.
-    -   **Entsperrung durch Fingerabdruck:** Erlauben Sie die Verwendung von Fingerabdrücken zum Entsperren kompatibler Geräte.
-- **Änderung von Kennung (nur überwacht):** Die Kennung kann dadurch nicht geändert, hinzugefügt oder entfernt werden.
-    - **Fingerabdruckänderung (nur überwacht):** Der Benutzer kann dadurch keine TouchID-Einstellungen ändern, hinzufügen oder entfernen.
+
+- **Kennwort:** Der Endbenutzer muss ein Kennwort eingeben, um auf das Gerät zugreifen zu können. „Nicht konfiguriert“ ermöglicht Benutzern, ohne Kennworteingabe auf das Gerät zuzugreifen.
+  - **Einfache Kennwörter**: Wählen Sie **Blockieren** aus, um komplexere Kennwörter zu erzwingen. **Nicht konfiguriert** ermöglicht einfache Kennwörter wie z.B. `0000` und `1234`.
+  - **Erforderlicher Kennworttyp**: Wählen Sie den Kennworttyp aus, den Ihre Organisation fordert. Folgende Optionen sind verfügbar:
+    - **Gerätestandard**
+    - **Numerisch**
+    - **Alphanumerisch**
+  - **Anzahl nicht alphanumerischer Zeichen im Kennwort**: Geben Sie die Anzahl von Symbolzeichen ein (z.B. `#` oder `@`), die im Kennwort enthalten sein müssen.
+  - **Minimale Kennwortlänge**: Geben Sie die Mindestlänge an, die ein Benutzer eingeben muss (zwischen 4 und 14 Zeichen).
+  - **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird**: Geben Sie die Anzahl zulässiger Anmeldefehler (von 1 bis 11) ein, bevor das Gerät zurückgesetzt wird.
+  - **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts**<sup>1</sup>: Geben Sie an, wie lange das Gerät inaktiv bleibt, bevor der Benutzer sein Kennwort erneut eingeben muss. Wenn Sie einen längeren Zeitraum eingeben, als derzeit auf dem Gerät eingestellt ist, ignoriert das Gerät Ihre Eingabe. Wird auf Geräten ab iOS 8.0 unterstützt.
+  - **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung**<sup>1</sup>: Geben Sie an, wie viele Minuten ein Gerät höchstens inaktiv sein darf, bevor es automatisch gesperrt wird. Wenn Sie einen längeren Zeitraum eingeben, als derzeit auf dem Gerät eingestellt ist, ignoriert das Gerät Ihre Eingabe.
+  - **Kennwortablauf (Tage)**: Geben Sie die Anzahl der Tage an, nach denen das Gerätekennwort geändert werden muss.
+  - **Wiederverwendung vorheriger Kennwörter verhindern**: Geben Sie die Anzahl neuer Kennwörter ein, die verwendet werden müssen, bevor ein altes Kennwort wiederverwendet werden kann.
+  - **Entsperrung durch Fingerabdruck**: Wählen Sie **Blockieren** aus, um die Verwendung eines Fingerabdrucks zum Entsperren des Geräts zu verhindern. **Nicht konfiguriert** ermöglicht dem Benutzer das Entsperren des Geräts mittels Fingerabdruck.
+- **Änderung von Kennung (nur überwacht)**: Wählen Sie **Blockieren** aus, damit die Kennung nicht geändert, hinzugefügt oder entfernt werden kann. Änderungen an Kennungseinschränkungen werden nach der Blockierung dieser Funktion auf überwachten Geräten ignoriert. **Nicht konfiguriert** ermöglicht, Kennungen hinzuzufügen, zu ändern oder zu entfernen.
+  - **Fingerabdruckänderung (nur überwacht):** **Blockieren** hindert den Benutzer daran, TouchID-Fingerabdrücke zu ändern, hinzuzufügen oder zu entfernen. **Nicht konfiguriert** ermöglicht dem Benutzer das Aktualisieren der TouchID-Fingerabdrücke auf dem Gerät.
+- **AutoAusfüllen für Kennwörter blockieren (nur überwacht)**: Wählen Sie **Blockieren** aus, um die Verwendung der Funktion zum automatischen Ausfüllen von Kennwörtern unter iOS zu verhindern. Die Auswahl von **Blockieren** bewirkt auch Folgendes:
+  - Benutzer werden nicht aufgefordert, in Safari oder beliebigen Apps gespeicherte Kennwörter zu verwenden.
+  - Automatische sichere Kennwörter sind deaktiviert, und sichere Kennwörter werden Benutzern nicht empfohlen.
+
+  **Nicht konfiguriert** lässt diese Funktionen zu.
+
+- **Kennwortanforderungen durch Näherung blockieren (nur überwacht)**: Wählen Sie **Blockieren** aus, damit das Gerät eines Benutzers keine Kennwörter von in der Nähe befindlichen Geräten anfordert. **Nicht konfiguriert** lässt diese Kennwortanforderungen zu.
+- **Kennwortfreigabe blockieren (nur überwacht)**: **Blockieren** verhindert die Freigabe von Kennwörtern zwischen Geräten mit AirDrop. **Nicht konfiguriert** ermöglicht die Freigabe von Kennwörtern.
 
 <sup>1</sup> Wenn Sie die Einstellungen **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung** und **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts** konfigurieren, werden diese nacheinander angewendet. Wenn Sie beispielsweise den Wert für beide Einstellungen auf **5** Minuten einstellen, wird der Bildschirm automatisch nach fünf Minuten deaktiviert, und das Gerät wird nach weiteren fünf Minuten gesperrt. Wenn der Benutzer den Bildschirm jedoch manuell deaktiviert, wird die zweite Einstellung sofort angewendet. Im selben Beispiel wird das Gerät fünf Minuten später gesperrt, nachdem der Benutzer den Bildschirm deaktiviert hat.
 
 ## <a name="locked-screen-experience"></a>Benutzererfahrung „Gesperrter Bildschirm“
 
--   **Kontrollcenterzugriff bei gesperrtem Gerät:** Erlauben Sie dem Benutzer den Zugriff auf die Kontrollcenter-App, während das Gerät gesperrt ist.
--   **Benachrichtigungen bei Gerätesperre:** Erlauben Sie dem Benutzer den Zugriff auf die Benachrichtigungsansicht, ohne dass das Gerät entsperrt werden muss.
--   **Wallet-Benachrichtigungen bei gesperrtem Gerät:** Erlauben Sie dem Benutzer den Zugriff auf die Wallet-App, während das Gerät gesperrt ist.
--   **Ansicht „Heute“ bei Gerätesperre:** Erlauben Sie dem Benutzer den Zugriff auf die Ansicht „Heute“, während das Gerät gesperrt ist.
+- **Kontrollcenterzugriff bei gesperrtem Gerät**: Wählen Sie **Blockieren** aus, um den Zugriff auf die Kontrollcenter-App zu verhindern, während das Gerät gesperrt ist. **Nicht konfiguriert** erlaubt dem Benutzer den Zugriff auf die Kontrollcenter-App, während das Gerät gesperrt ist.
+- **Benachrichtigungen bei Gerätesperre**: **Blockieren** verhindert den Zugriff auf Benachrichtigungen, wenn das Gerät gesperrt ist. **Nicht konfiguriert** erlaubt dem Benutzer den Zugriff auf die Benachrichtigungen, ohne dass das Gerät entsperrt werden muss.
+- **Wallet-Benachrichtigungen bei gesperrtem Gerät**: **Blockieren** verhindert den Zugriff auf die Wallet-App, wenn das Gerät gesperrt ist. **Nicht konfiguriert** erlaubt dem Benutzer den Zugriff auf die Wallet-App, während das Gerät gesperrt ist.
+- **Ansicht „Heute“ bei Gerätesperre**: **Blockieren** verhindert den Zugriff auf die Ansicht „Heute“, während das Gerät gesperrt ist. **Nicht konfiguriert** erlaubt dem Benutzer den Zugriff auf die Ansicht „Heute“, während das Gerät gesperrt ist.
 
 ## <a name="app-store-doc-viewing-gaming"></a>App Store, Dokumentanzeige, Spiele
 
-
--   **App Store:** Sperren Sie den Zugriff auf den App Store auf überwachten Geräte.
-    - **Installieren von Apps über den App Store (nur überwacht):** Blockiert den App Store vom Home-Bildschirm des Geräts. Endbenutzer können weiterhin iTunes oder das Apple Configurator-Tool zum Installieren von Apps verwenden.
-    - **Automatische App-Downloads (nur überwacht):** Dadurch können keine Apps, die auf einem anderen iOS-Gerät erworben wurden, auf dieses Gerät heruntergeladen werden.
--   **Kennwort für Zugriff auf App Store:** Erzwingen Sie die Kennworteingabe durch Benutzer, bevor diese den App Store besuchen können.
--   **In-App-Käufe:** Erlauben Sie Einkäufe im Store in einer ausgeführten App.
--   **Anstößige iTunes-Musik-, Podcast- oder Nachrichteninhalte (nur überwachter Modus):** Erlauben Sie, dass das Gerät im Store auf nicht jugendfreie Inhalte zugreift.
--   **Als „Erotik“ gekennzeichneten Inhalt aus dem iBook Store herunterladen:** Erlauben Sie dem Benutzer das Herunterladen von Büchern aus der Kategorie „Erotik“.
--   **Anzeige von Unternehmensdokumenten in nicht verwalteten Apps:** Erlauben Sie die Anzeige von Unternehmensdokumenten in beliebigen Apps.<br>**Beispiel:** Sie möchten verhindern, dass Benutzer Dateien aus der OneDrive-App in Dropbox speichern. Legen Sie für diese Einstellung „Nein“ fest. Sobald das Gerät die Richtlinie empfängt (z. B. nach einem Neustart), ist kein Speichern mehr möglich.
--   **Anzeige nicht unternehmenseigener Dokumente in Unternehmens-Apps:** Erlauben Sie die Anzeige beliebiger Dokumente in verwalteten Apps.
--   **AirDrop als nicht verwaltetes Ziel behandeln:** Verwaltete Apps am Senden von Daten mit Airdrop hindern.
--   **Hinzufügen von Game Center-Freunden (nur überwachter Modus):** Erlauben Sie, dass der Benutzer im Game Center Freunde hinzufügt.
--   **Game Center (nur überwacht):** Sperren oder erlauben Sie die Verwendung der Game Center-App.
--   **Multiplayerspiele (nur überwachter Modus):** Erlauben Sie, dass der Benutzer Spiele für mehrere Spieler auf dem Gerät spielt.
--   **Bewertungsregion:** Wählen Sie die Bewertungsregion aus, für die Sie die zulässigen Downloads konfigurieren möchten, und wählen anschließend die zulässigen Bewertungen für **Filme** und **Fernsehsendungen** aus.
--   **Apps:** Wählen Sie die zulässigen Altersfreigaben von Apps aus, die Benutzer herunterladen dürfen. Sie können auch **Alle Apps** auswählen.
+- **App Store**: **Blockieren** verhindert den Zugriff auf den App Store auf überwachten Geräte. **Nicht konfiguriert** ermöglicht den Zugriff.
+  - **Installieren von Apps über den App Store (nur überwacht)**: Wählen Sie **Blockieren** aus, um den App Store auf dem Startbildschirm des Geräts zu blockieren. Endbenutzer können weiterhin iTunes oder das Apple Configurator-Tool zum Installieren von Apps verwenden. **Nicht konfiguriert** lässt den App Store auf dem Startbildschirm zu.
+  - **Automatische App-Downloads (nur überwacht)**: Wählen Sie **Blockieren** aus, um den automatischen Download von Apps zu verhindern, die auf anderen Geräten erworben wurden. Updates vorhandener Apps sind nicht betroffen. **Nicht konfiguriert** ermöglicht, Apps auf das Gerät herunterzuladen, die auf anderen iOS-Geräten gekauft wurden.
+- **Kennwort für Zugriff auf App Store**: Mit **Anfordern** erzwingen Sie die Kennworteingabe durch Benutzer, bevor diese den App Store besuchen können. **Nicht konfiguriert** ermöglicht Benutzern, ohne Eingabe eines Kennworts auf den App Store zuzugreifen.
+- **In-App-Einkäufe**: Wählen Sie **Blockieren** aus, um In-App-Einkäufe im Store zu verhindern. **Nicht konfiguriert** ermöglicht Einkäufe im Store in einer ausgeführten App.
+- **Anstößige iTunes-Musik-, Podcast- oder Nachrichteninhalte (nur überwachter Modus)**: Wählen Sie **Blockieren** aus, um anstößige iTunes-Musik-, Podcast- oder Nachrichteninhalte zu verhindern. **Nicht konfiguriert** ermöglicht, dass das Gerät im Store auf nicht jugendfreie Inhalte zugreift.
+- **Als „Erotik“ gekennzeichneten Inhalt aus dem iBook Store herunterladen**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer Medien aus dem iBook Store herunterladen, die als „Erotik“ gekennzeichnet sind. **Nicht konfiguriert** gestattet dem Benutzer das Herunterladen von Büchern aus der Kategorie „Erotik“.
+- **Anzeige von Unternehmensdokumenten in nicht verwalteten Apps**: **Blockieren** verhindert die Anzeige unternehmenseigener Dokumente in nicht verwalteten Apps. **Nicht konfiguriert** gestattet die Anzeige von Unternehmensdokumenten in beliebigen Apps. Beispiel: Sie möchten verhindern, dass Benutzer Dateien aus der OneDrive-App in Dropbox speichern. Legen Sie für diese Einstellung **Blockieren** fest. Sobald das Gerät die Richtlinie empfängt (z.B. nach einem Neustart), ist kein Speichern mehr möglich.
+- **Anzeige nicht unternehmenseigener Dokumente in Unternehmens-Apps**: **Blockieren** verhindert die Anzeige nicht unternehmenseigener Dokumente in Unternehmens-Apps. **Nicht konfiguriert** gestattet die Anzeige beliebiger Dokumente in verwalteten Unternehmens-Apps.
+- **AirDrop als nicht verwaltetes Ziel behandeln**: **Anfordern** erzwingt, dass AirDrop als nicht verwaltetes Drop-Ziel betrachtet wird. Es hindert verwaltete Apps daran, Daten mithilfe von AirDrop zu senden. 
+- **Hinzufügen von Game Center-Freunden (nur überwachter Modus)**: **Blockieren** hindert Benutzer daran, Game Center-Freunde hinzuzufügen. **Nicht konfiguriert** gestattet dem Benutzer, im Game Center Freunde hinzuzufügen.
+- **Game Center (nur überwacht)**: **Blockieren** Sie die Verwendung der Game Center-App. **Nicht konfiguriert** ermöglicht die Verwendung der Game Center-App auf dem Gerät.
+- **Multiplayerspiele (nur überwachter Modus)**: Wählen Sie **Blockieren** aus, um Multiplayerspiele zu verhindern. **Nicht konfiguriert** ermöglicht, dass der Benutzer Multiplayerspiele auf dem Gerät spielt.
+- **Bewertungsregion**: Wählen Sie die Bewertungsregion aus, die Sie für die zulässigen Downloads verwenden möchten. Wählen Sie dann die zulässigen Bewertungen für **Filme** und **Fernsehsendungen** aus.
+- **Apps**: Wählen Sie die zulässigen Altersfreigaben von Apps aus, die Benutzer herunterladen dürfen. Sie können auch **Alle Apps** auswählen.
 
 ## <a name="built-in-apps"></a>Integrierte Apps
 
--   **Kamera:** Legen Sie fest, ob die Kamera des Geräts verwendet werden darf.
-    -   **FaceTime:** Erlauben Sie die Verwendung der FaceTime-App auf dem Gerät.
--   **Siri:** Erlauben Sie die Verwendung des Sprach-Assistenten Siri auf dem Gerät.
-    -   **Siri bei Gerätesperre:** Erlauben Sie die Verwendung des Sprach-Assistenten Siri auf dem Gerät, während das Gerät gesperrt ist.
-    -   **Siri-Filter für anstößige Ausdrücke (nur überwacht):** Verhindert, dass Siri anstößige Ausdrücke diktiert oder verwendet.
-    -   **Abfrage von benutzergeneriertem Inhalt aus dem Internet durch Siri (nur überwacht):** Erlauben Sie Siri, für die Beantwortung von Fragen auf Websites zuzugreifen.
-- **Apple News (nur überwacht):** Erlauben Sie die Verwendung der Apple News-App.
-- **iBooks Store (nur überwacht):** Erlauben Sie Benutzern die Suche nach Büchern im iBooks Store sowie den Kauf gefundener Bücher.
-- **Nachrichten-App auf dem Gerät (nur überwacht):** Erlauben Sie die Verwendung der Nachrichten-App zum Senden und Empfangen von Textnachrichten.
-- **Podcasts (nur überwacht):** Erlauben Sie die Verwendung der Podcasts-App.
-- **Musikdienst (nur überwacht):** Erlauben Sie die Verwendung der Apple Music-App.
-- **iTunes Radio-Dienst (nur überwacht):** Erlauben Sie die Verwendung der iTunes Radio-App.
-- **Änderungen an den Einstellungen der App „Meine Freunde suchen“ (nur überwacht):** Gestatten Sie Benutzern das Ändern von Einstellungen für die App „Meine Freunde suchen“.
-- **Spotlight-Suche gibt Ergebnisse aus dem Internet zurück (nur überwacht):** Erlauben Sie der Spotlight-Suche, eine Verbindung mit dem Internet herzustellen, um weitere Ergebnisse bereitzustellen.
+- **Kamera**: Wählen Sie **Blockieren** aus, um den Zugriff auf die Kamera des Geräts zu verhindern. **Nicht konfiguriert** ermöglicht den Zugriff auf die Kamera des Geräts.
+  - **FaceTime**: Mit **Blockieren** verhindern Sie den Zugriff auf die FaceTime-App. **Nicht konfiguriert** ermöglicht den Zugriff auf die FaceTime-App des Geräts.
+- **Siri**: **Blockieren** verhindert den Zugriff auf Siri. **Nicht konfiguriert** ermöglicht die Verwendung des Sprach-Assistenten Siri auf dem Gerät.
+  - **Siri bei Gerätesperre**: Wählen Sie **Blockieren** aus, um den Zugriff auf Siri zu verhindern, wenn das Gerät gesperrt ist. **Nicht konfiguriert** ermöglicht die Verwendung des Sprach-Assistenten Siri auf dem Gerät, wenn das Gerät gesperrt ist.
+  - **Siri-Filter für anstößige Ausdrücke (nur überwacht)**: **Anfordern** verhindert, dass Siri anstößige Ausdrücke diktiert oder verwendet.
+  - **Abfrage von benutzergeneriertem Inhalt aus dem Internet durch Siri (nur überwacht)**: **Blockieren** hindert Siri daran, für die Beantwortung von Fragen auf Websites zuzugreifen. **Nicht konfiguriert** ermöglicht Siri, auf benutzergenerierten Inhalt aus dem Internet zuzugreifen.
+- **Apple News (nur überwacht)**: Wählen Sie **Blockieren** aus, um den Zugriff auf die Apple News-App auf dem Gerät zu verhindern. **Nicht konfiguriert** ermöglicht die Verwendung der Apple News-App.
+- **Zugriff auf den iBooks Store (nur überwacht)**: **Blockieren** verhindert den Zugriff auf den iBooks Store. **Nicht konfiguriert** ermöglicht Benutzern, den iBooks Store zu durchsuchen und dort Bücher zu erwerben.
+- **Nachrichten-App auf dem Gerät (nur überwacht)**: Wählen Sie **Blockieren** aus, damit Benutzer die Nachrichten-App auf dem Gerät nicht verwenden können. **Nicht konfiguriert** ermöglicht die Verwendung der Nachrichten-App zum Senden und Lesen von Textnachrichten.
+- **Podcasts (nur überwacht)**: **Blockieren** hindert Benutzer an der Verwendung der Podcasts-App. **Nicht konfiguriert** ermöglicht die Verwendung der Podcasts-App.
+- **Musikdienst (nur überwacht)**: **Blockieren** setzt die Music-App in den klassischen Modus zurück und deaktiviert den Musikdienst. **Nicht konfiguriert** ermöglicht die Verwendung der Apple Music-App.
+- **iTunes Radio-Dienst (nur überwacht)**: **Blockieren** hindert Benutzer daran, die iTunes Radio-App zu verwenden. **Nicht konfiguriert** ermöglicht die Verwendung der iTunes Radio-App.
+- **Änderungen an den Einstellungen der App „Meine Freunde suchen“ (nur überwacht)**: **Blockieren** verhindert Änderungen der Einstellungen für die App „Meine Freunde suchen“. **Nicht konfiguriert** ermöglicht Benutzern das Ändern von Einstellungen für die App „Meine Freunde suchen“.
+- **Spotlight-Suche gibt Ergebnisse aus dem Internet zurück (nur überwacht)**: **Blockieren** verhindert, dass Spotlight Ergebnisse einer Internetsuche zurückgibt. **Nicht konfiguriert** ermöglicht Spotlight das Herstellen einer Verbindung mit dem Internet zur Bereitstellung von Suchergebnissen.
+- **Entfernen von System-Apps vom Gerät blockieren (nur überwacht)**: Die Auswahl von **Blockieren** deaktiviert die Möglichkeit, System-Apps vom Gerät zu entfernen. **Nicht konfiguriert** ermöglicht Benutzern, System-Apps zu entfernen.
 
 ## <a name="restricted-apps"></a>Eingeschränkte Apps
 
 In der Liste der eingeschränkten Apps können Sie eine der folgenden Listen konfigurieren:
 
-- **Unzulässige Apps:** Listet die (nicht von Intune verwalteten) Apps auf, die Benutzer nicht installieren und ausführen dürfen. Benutzer werden nicht daran gehindert, eine verbotene App zu installieren. Wenn sie dies jedoch tun, wird es Ihnen gemeldet.
-- **Genehmigte Apps:** Listet die Apps auf, die Benutzer installieren dürfen. Benutzer dürfen keine Apps installieren, die in dieser Liste nicht aufgeführt sind. Apps, die von Intune verwaltet werden, sind automatisch zugelassen. Benutzer werden nicht daran gehindert, eine App zu installieren, die nicht auf der Genehmigungsliste aufgeführt ist. Wenn sie dies jedoch tun, wird es Ihnen gemeldet.
+- **Unzulässige Apps**: Eine Liste nicht von Intune verwalteter Apps, die nicht auf dem Gerät installiert werden sollen. Wenn ein Benutzer eine App aus dieser Liste installiert, werden Sie von Intune benachrichtigt.
+- **Genehmigte Apps**: Eine Liste von Apps, die Benutzer installieren dürfen. Um die Kompatibilität zu gewährleisten, dürfen Benutzer keine anderen Apps installieren. Apps, die von Intune verwaltet werden, sind automatisch zugelassen. Wenn ein Benutzer eine App aus dieser Liste installiert, werden Sie von Intune benachrichtigt.
 
-Klicken Sie zum Konfigurieren einer Liste auf **Hinzufügen**. Geben Sie einen Namen Ihrer Wahl sowie die URL zur App im App-Store und optional den Herausgeber der App an.
+Um diesen Listen Apps hinzuzufügen, können Sie:
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Angeben der URL zu einer App im Store
+- Die iTunes App-Store-URL der App **hinzufügen**, die Sie wünschen. Geben Sie beispielsweise zum Hinzufügen der Microsoft Work Folders-App `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` ein.
 
-Verwenden Sie das folgende Format, um eine App-URL in der App-Liste anzugeben:
+  Um die URL einer App zu suchen, öffnen Sie den iTunes App Store, und suchen Sie nach der App. Suchen Sie beispielsweise nach `Microsoft Remote Desktop` oder `Microsoft Word`. Wählen Sie die App aus, und kopieren Sie die URL.
 
-Suchen Sie mithilfe einer Suchmaschine die gewünschte App im iTunes App Store, und öffnen Sie die Seite für die App.
-Kopieren Sie die URL der Seite, und verwenden Sie diese als URL zur Konfiguration der Liste zulässiger oder unzulässiger Apps oder einer App, die Sie im Kioskmodus ausführen möchten.
-Geräteprofile, die Einstellungen für eingeschränkte Apps enthalten, müssen Benutzergruppen zugewiesen werden.
+  Sie können auch iTunes verwenden, um die App zu suchen, und dann die Aufgabe **Link kopieren**, um die App-URL abzurufen.
 
-Beispiel: Suchen Sie nach Microsoft Word für iPad. Verwenden Sie die URL https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
+- Importieren Sie eine CSV-Datei mit den Details der App, einschließlich der URL. Verwenden Sie das Format <app url>, <app name>, <app publisher>. Exportieren Sie alternativ eine vorhandene Liste, die die Liste der eingeschränkten Apps im gleichen Format enthält.
 
-> [!Note]
-> Sie können auch iTunes verwenden, um die App zu suchen, und dann den Befehl **Link kopieren**, um die App-URL abzurufen.
-
-### <a name="additional-options"></a>Zusätzliche Optionen
-
-Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Datei im Format <*App-URL*>, <*App-Name*>, <*App-Herausgeber*> aufzufüllen. Sie können auch auf **Exportieren** klicken, um eine CSV-Datei mit dem Inhalt der Liste der eingeschränkten Apps im gleichen Format zu erstellen.
+> [!IMPORTANT]
+> Geräteprofile, die Einstellungen für eingeschränkte Apps verwenden, müssen Benutzergruppen zugewiesen werden.
 
 ## <a name="show-or-hide-apps-supervised-only"></a>Ein- oder Ausblenden von Apps (nur überwacht)
 
 In der Liste „Apps ein- oder ausblenden“ können Sie eine der folgenden Listen konfigurieren (erfordert überwachte Geräte mit iOS 9.3 oder höher).
 
-- **Ausgeblendete Apps:** Geben Sie eine Liste von Apps an, die vor Benutzern verborgen werden. Benutzer können diese Apps weder anzeigen noch starten.
-- **Sichtbare Apps:** Geben Sie eine Liste von Apps an, die Benutzer anzeigen und starten können. Es können keine anderen Apps angezeigt oder gestartet werden.
+- **Ausgeblendete Apps:** Geben Sie eine Liste von Apps an, die vor Benutzern verborgen werden. Benutzer können diese Apps weder anzeigen noch öffnen.
+- **Sichtbare Apps**: Geben Sie eine Liste von Apps ein, die Benutzer anzeigen und starten können. Es können keine anderen Apps angezeigt oder gestartet werden.
 
-Klicken Sie zum Konfigurieren einer Liste auf **Hinzufügen**. Geben Sie einen Namen Ihrer Wahl sowie die URL zur App im App-Store und optional den Herausgeber der App an.
+Um diesen Listen Apps hinzuzufügen, können Sie:
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Angeben der URL zu einer App im Store
+- Die iTunes App-Store-URL der App **hinzufügen**, die Sie wünschen. Geben Sie beispielsweise zum Hinzufügen der Microsoft Work Folders-App `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` ein.
 
-Verwenden Sie das folgende Format, um eine App-URL in der App-Liste anzugeben:
+  Um die URL einer App zu suchen, öffnen Sie den iTunes App Store, und suchen Sie nach der App. Suchen Sie beispielsweise nach `Microsoft Remote Desktop` oder `Microsoft Word`. Wählen Sie die App aus, und kopieren Sie die URL.
 
-Suchen Sie mithilfe einer Suchmaschine die gewünschte App im iTunes App Store, und öffnen Sie die Seite für die App.
-Kopieren Sie die URL der Seite, und verwenden Sie diese als URL zur Konfiguration der Liste zulässiger oder unzulässiger Apps oder einer App, die Sie im Kioskmodus ausführen möchten.
+  Sie können auch iTunes verwenden, um die App zu suchen, und dann die Aufgabe **Link kopieren**, um die App-URL abzurufen.
 
-Beispiel: Suchen Sie nach Microsoft Word für iPad. Verwenden Sie die URL https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
-
-> [!Note]
-> Sie können auch die iTunes-Software verwenden, um die App zu suchen, und dann den Befehl **Link kopieren** , um die App-URL abzurufen.
-
-### <a name="additional-options"></a>Zusätzliche Optionen
-
-Sie können auch auf **Importieren** klicken, um die Liste mithilfe einer CSV-Datei im Format <*App-URL*>, <*App-Name*>, <*App-Herausgeber*> aufzufüllen. Sie können auch auf **Exportieren** klicken, um eine CSV-Datei mit dem Inhalt der Liste der ein- und ausgeblendeten Apps im gleichen Format zu erstellen.
-
+- Importieren Sie eine CSV-Datei mit den Details der App, einschließlich der URL. Verwenden Sie das Format <app url>, <app name>, <app publisher>. Exportieren Sie alternativ eine vorhandene Liste, die die Liste der eingeschränkten Apps im gleichen Format enthält.
 
 ## <a name="wireless"></a>Drahtlos
--   **Datenroaming:** Erlauben Sie das Datenroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
--   **Globales Abrufen im Hintergrund beim Roaming:** Erlauben Sie, dass das Gerät Daten wie E-Mails beim Roaming in einem Mobilfunknetz abruft.
--   **Sprachwahlverfahren:** Erlauben Sie die Verwendung des Features „Sprachwahlverfahren“ auf dem Gerät.
--   **Sprachroaming:** Erlauben Sie das Sprachroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
--   **Änderungen an den App-Einstellungen zur Verwendung von Datenverbindungen (nur überwacht):** Erlauben Sie Benutzern die Steuerung, welche Apps Mobilfunkdaten verwenden dürfen.
--   **Persönlicher Hotspot:** Verhindern Sie, dass das Gerät als persönlicher Hotspot genutzt wird. Diese Einstellung kann mit einigen Anbietern nicht kompatibel sein.
--   **Verknüpfen von WLAN-Netzwerken nur mithilfe von Konfigurationsprofilen (nur überwacht):** Dem Gerät nur erlauben, eine Verbindung mit WLAN-Netzwerken herzustellen, die mit einem Intune-WLAN-Profil konfiguriert wurden.
 
-- **Mobilfunk-Verwendungsregeln (nur verwaltete Apps):** Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn Sie sich in Mobilfunknetzwerken befinden. Es stehen die folgenden Optionen zur Auswahl:
-    - **Verwendung von Datenverbindungen blockieren:** Sie können die Verwendung von Datenverbindungen für **alle verwalteten Apps** blockieren oder **bestimmte Apps wählen**.
-    - **Verwendung von Datenverbindungen beim Roaming blockieren:** Sie können die Verwendung von Datenverbindungen beim Roaming für **alle verwalteten Apps** blockieren oder **bestimmte Apps wählen**.
+- **Datenroaming**: Wählen Sie **Blockieren** aus, um Datenroaming über das Mobilfunknetz zu verhindern. **Nicht konfiguriert** ermöglicht das Datenroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
+- **Globales Abrufen im Hintergrund beim Roaming**: **Blockieren** verhindert, dass die Funktion des globalen Abrufens im Hintergrund beim Roaming über das Mobilfunknetz verwendet wird. **Nicht konfiguriert** ermöglicht, dass das Gerät Daten wie E-Mails beim Roaming in einem Mobilfunknetz abruft.
+- **Sprachwahlverfahren**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer das Sprachwahlverfahren auf dem Gerät verwenden. **Nicht konfiguriert** ermöglicht die Verwendung des Sprachwahlverfahrens auf dem Gerät.
+- **Sprachroaming**: Wählen Sie **Blockieren** aus, um Sprachroaming über das Mobilfunknetz zu verhindern. **Nicht konfiguriert** ermöglicht das Sprachroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
+- **Änderungen an den Einstellungen zur App-Mobilfunkdatennutzung (nur überwacht)**: Wählen Sie **Blockieren** aus, um Änderungen an den Einstellungen zur App-Mobilfunkdatennutzung zu verhindern. **Nicht konfiguriert** ermöglicht Benutzern, zu steuern, welche Apps Mobilfunkdaten verwenden dürfen.
+- **Privater Hotspot**: **Blockieren** verhindert, dass das Gerät als privater Hotspot verwendet wird. Diese Einstellung kann mit einigen Anbietern nicht kompatibel sein. **Nicht konfiguriert** lässt diese Funktion zu.
+- **Verknüpfen von WLAN-Netzwerken nur mithilfe von Konfigurationsprofilen (nur überwacht):** **Anfordern** erzwingt, dass das Gerät nur WLAN-Netzwerke verwendet, die mit Intune-Konfigurationsprofilen eingerichtet wurden. **Nicht konfiguriert** ermöglicht dem Gerät, andere WLAN-Netzwerke zu verwenden.
+- **Mobilfunk-Verwendungsregeln (nur verwaltete Apps)**: Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn sie sich in Mobilfunknetzwerken befinden. Folgende Optionen sind verfügbar:
+  - **Verwendung von Datenverbindungen blockieren**: Blockieren Sie die Verwendung von Datenverbindungen für **Alle verwalteten Apps**, oder Sie können **Bestimmte Apps wählen**.
+  - **Verwendung von Datenverbindungen beim Roaming blockieren:** Blockieren Sie die Verwendung von Datenverbindungen beim Roaming für **Alle verwalteten Apps**, oder Sie können **Bestimmte Apps wählen**.
 
 ## <a name="connected-devices"></a>Verbundene Geräte
 
--   **AirDrop (nur überwacht):** Lässt die Verwendung von AirDrop zum Austauschen von Inhalten mit Geräten in der Nähe zu.
--   **Apple Watch-Kopplung (nur überwacht):** Erlauben Sie die Gerätekopplung mit einer Apple Watch.
--   **Handgelenkerkennung für gekoppelte Apple Watch:** Wenn diese Funktion aktiviert ist, zeigt die Apple Watch keine Benachrichtigungen an, wenn sie nicht getragen wird.
--   **Bluetooth-Änderung (nur überwacht):** Sperren Sie die Änderung von Bluetooth-Einstellungen auf dem Gerät durch Endbenutzer.
--   **Hostkopplung, um zu steuern, mit welchen Geräten ein iOS-Gerät gekoppelt werden kann (nur überwacht):** Erlauben Sie die Hostkopplung, damit der Administrator steuern kann, mit welchen Geräten ein iOS-Gerät gekoppelt werden kann.
--   **Kopplungskennwort für ausgehende AirPlay-Anforderungen anfordern:** Erfordert ein Kopplungskennwort, wenn der Benutzer AirPlay zum Streamen von Inhalten auf andere Apple-Geräte verwendet.
+- **AirDrop (nur überwacht)**: **Blockieren** verhindert die Verwendung von AirDrop auf dem Gerät. **Nicht konfiguriert** ermöglicht die Verwendung von AirDrop zum Austauschen von Inhalten mit Geräten in der Nähe.
+- **Apple Watch-Kopplung (nur überwacht):** **Blockieren** verhindert die Gerätekopplung mit einer Apple Watch. **Nicht konfiguriert** ermöglicht die Gerätekopplung mit einer Apple Watch.
+- **Handgelenkerkennung für gekoppelte Apple Watch**: **Anfordern** erzwingt, dass eine gekoppelte Apple Watch die Handgelenkerkennung verwendet. Wenn dies erforderlich ist, zeigt die Apple Watch keine Benachrichtigungen an, wenn sie nicht getragen wird. 
+- **Bluetooth-Änderung (nur überwacht)**: **Blockieren** hindert den Endbenutzer an der Änderung von Bluetooth-Einstellungen auf dem Gerät. **Nicht konfiguriert** ermöglicht dem Benutzer, diese Einstellungen zu ändern.
+- **Hostkopplung, um zu steuern, mit welchen Geräten ein iOS-Gerät gekoppelt werden kann (nur überwacht)**: **Nicht konfiguriert** erlaubt die Hostkopplung, damit der Administrator steuern kann, mit welchen Geräten ein iOS-Gerät gekoppelt werden kann. **Blockieren** verhindert die Hostkopplung.
+- **Kopplungskennwort für ausgehende AirPlay-Anforderungen anfordern**: **Anfordern** eines Kopplungskennworts, wenn der Benutzer AirPlay zum Streamen von Inhalten auf andere Apple-Geräte verwendet. **Nicht konfiguriert** ermöglicht dem Benutzer das Streamen von Inhalten über AirPlay ohne Kennworteingabe.
+- **Block AirPrint (nur überwacht)**: Wählen Sie **Blockieren** aus, um die Verwendung der AirPrint-Funktion auf dem Gerät zu verhindern. **Nicht konfiguriert** ermöglicht dem Benutzer, AirPrint zu verwenden.
+  - **Speichern von AirPrint-Anmeldeinformationen in Keychain blockieren (nur überwacht)**: **Blockieren** verhindert, dass der Keychain-Speicher für Benutzername und Kennwort auf dem Gerät verwendet wird. **Nicht konfiguriert** ermöglicht das Speichern von AirPrint-Benutzername und -Kennwort in der Keychain-App.
+  - **Vertrauenswürdiges TLS-Zertifikat für AirPrint anfordern (nur überwacht)**: **Anfordern** erzwingt, dass das Gerät vertrauenswürdige Zertifikate für die TLS-Druckkommunikation verwendet.
+  - **iBeacon-Ermittlung von AirPrint-Druckern blockieren (nur überwacht)**: **Blockieren** hindert böswillige AirPrint Bluetooth-Beacons am Phishing nach Netzwerkverkehr. **Nicht konfiguriert** ermöglicht das Ankündigen von AirPrint-Druckern auf dem Gerät.
 
 ## <a name="keyboard-and-dictionary"></a>Tastatur und Wörterbuch
 
--   **Suche nach Wortdefinitionen (nur überwacht):** Aktivieren Sie das iOS-Feature, mit dem Sie ein Wort markieren und dessen Definition nachschlagen können.
--   **Tastaturwortvorschläge (nur überwacht):** Erlauben Sie Tastaturwortvorschläge für Wörter, die der Benutzer möglicherweise verwenden möchte.
--   **Autokorrektur (nur überwacht):** Ermöglicht dem Gerät die automatische Korrektur von falsch geschriebenen Wörter.
--   **Rechtschreibprüfung über Tastatur (nur überwacht):** Erlaubt die Verwendung der Rechtschreibprüfung auf dem Gerät.
--   **Tastenkombinationen (nur überwacht):** Erlaubt die Verwendung von Tastaturkurzbefehlen.
--   **Diktieren (nur überwacht):** Verhindert, dass der Benutzer die Spracheingabe zur Eingabe von Text verwendet.
+- **Suche nach Wortdefinitionen (nur überwacht)**: **Blockieren** hindert Benutzer daran, ein Wort zu markieren und dann auf dem Gerät nach seiner Definition zu suchen. **Nicht konfiguriert** ermöglicht den Zugriff auf die Definitionssuchfunktion.
+- **Tastaturwortvorschläge (nur überwacht)**: **Nicht konfiguriert** erlaubt die Verwendung von Tastaturwortvorschlägen für Wörter, die der Benutzer möglicherweise verwenden möchte. **Blockieren** verhindert die Verwendung dieser Funktion.
+- **Autokorrektur (nur überwacht)**: **Nicht konfiguriert** erlaubt dem Gerät die automatische Korrektur von falsch geschriebenen Wörtern. **Blockieren** verhindert die Verwendung von Autokorrektur.
+- **Rechtschreibprüfung über Tastatur (nur überwacht)**: **Nicht konfiguriert** ermöglicht das Verwenden der Rechtschreibprüfung auf dem Gerät. **Blockieren** ermöglicht die Rechtschreibprüfung.
+- **Tastenkombinationen (nur überwacht)**: **Nicht konfiguriert** ermöglicht die Verwendung von Tastenkombinationen auf dem Gerät. **Blockieren** hindert den Benutzer an der Verwendung von Tastenkombinationen.
+- **Diktatfunktion (nur überwacht)**: **Blockieren** verhindert, dass der Benutzer die Spracheingabe zur Eingabe von Text verwendet. **Nicht konfiguriert** ermöglicht dem Benutzer, die Spracheingabe zu verwenden.
 
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
--   **In iCloud sichern:** Erlauben Sie dem Benutzer, das Gerät in iCloud zu sichern.
--   **Dokumentsynchronisierung in iCloud (nur überwachter Modus):** Erlauben Sie die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher.
--   **Synchronisierung von Fotostreams in iCloud:** Ermöglicht Benutzern das Aktivieren von **Mein Photo Stream** auf ihrem Gerät, um Fotos mit iCloud zu synchronisieren, damit diese auf allen Geräten des Benutzers verfügbar sind.
--   **Verschlüsselte Sicherung:** Erzwingen Sie die Verschlüsselung von Gerätesicherungen.
--   **iCloud-Fotomediathek:** Bei Festlegung auf **Nein** wird die Verwendung der iCloud-Fotomediathek deaktiviert, die Benutzern das Speichern von Fotos und Videos in der Cloud ermöglicht.   Fotos, die nicht vollständig aus der iCloud-Fotomediathek auf das Gerät heruntergeladen wurden, werden bei Festlegung auf **Nein** vom Gerät entfernt.
--   **Synchronisierung verwalteter Apps mit der Cloud:** Erlauben Sie Apps, die Sie mit Intune verwalten, Daten mit dem iCloud-Konto des Benutzers zu synchronisieren.
--   **Streaming freigegebener Fotos:** Legen Sie diese Einstellung auf **Nein** fest, um die **iCloud-Fotofreigabe** auf dem Gerät zu deaktivieren.
--   **Aktivitätsfortsetzung:** Erlauben Sie dem Benutzer, die Arbeit, die er auf einem iOS-Gerät gestartet hat, auf einem anderen iOS- oder macOS-Gerät fortzusetzen (Übergabe).
+
+- **In iCloud sichern**: **Nicht konfiguriert** ermöglicht dem Benutzer, das Gerät in iCloud zu sichern. **Blockieren** hindert den Benutzer daran, das Gerät in iCloud zu sichern.
+- **Dokumentsynchronisierung in iCloud (nur überwachter Modus)**: **Nicht konfiguriert** ermöglicht die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher. **Blockieren** hindert iCloud daran, Dokumente und Daten zu synchronisieren.
+- **Synchronisierung von Fotostreams in iCloud**: **Nicht konfiguriert** ermöglicht Benutzern das Aktivieren von **Mein Photo Stream** auf ihren Geräten zum Synchronisieren mit iCloud, damit Fotos auf allen Geräten der Benutzer verfügbar sind. **Blockieren** verhindert die Fotostream-Synchronisierung mit iCloud.
+- **Verschlüsselte Sicherung**: **Anfordern** erzwingt die Verschlüsselung von Gerätesicherungen.
+- **iCloud-Fotomediathek**: Deaktivieren Sie mit **Blockieren** die Verwendung der iCloud-Fotomediathek zum Speichern von Fotos und Videos in der Cloud. Fotos, die nicht vollständig aus der iCloud-Fotomediathek auf das Gerät heruntergeladen wurden, werden vom Gerät entfernt. **Nicht konfiguriert** ermöglicht die Verwendung der iCloud-Fotomediathek.
+- **Synchronisierung verwalteter Apps mit der Cloud**: **Nicht konfiguriert** ermöglicht Ihren mit Intune verwalteten Apps, Daten mit dem iCloud-Konto des Benutzers zu synchronisieren. **Blockieren** verhindert diese Datensynchronisierung mit iCloud.
+- **Streaming freigegebener Fotos**: Wählen Sie **Blockieren** aus, um die **iCloud-Fotofreigabe** auf dem Gerät zu deaktivieren. **Nicht konfiguriert** ermöglicht das Streaming freigegebener Fotos.
+- **Aktivitätsfortsetzung**: **Nicht konfiguriert** ermöglicht Benutzern, die Arbeit, die sie auf einem iOS-Gerät gestartet haben, auf einem anderen iOS- oder macOS-Gerät fortzusetzen (Übergabe). **Blockieren** verhindert diese Übergabe.
+- **Synchronisierung zwischen iCloud und Keychain blockieren**: Wählen Sie **Blockieren** aus, um die Synchronisierung in der Keychain gespeicherter Anmeldeinformationen mit iCloud zu deaktivieren. **Nicht konfiguriert** ermöglicht dem Benutzer, diese Anmeldeinformationen zu synchronisieren.
+- **Enterprise Book-Sicherung blockieren**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer Enterprise Books sichern. **Nicht konfiguriert** ermöglicht dem Benutzer, diese Bücher zu sichern.
+- **Synchronisierung von Enterprise Book-Metadaten blockieren (Notizen und Highlights)**: **Blockieren** verhindert, dass Notizen und Highlights in Enterprise Books synchronisiert werden. **Nicht konfiguriert** ermöglicht die Synchronisierung.
 
 ## <a name="autonomous-single-app-mode-supervised-only"></a>Modus der autonomen einzelnen App (nur überwacht)
 
-Verwenden Sie diese Einstellungen, um iOS-Geräte zur Ausführung bestimmter Apps im Modus der autonomen einzelnen App zu konfigurieren. Wenn dieser Modus konfiguriert ist und die App ausgeführt wird, wird das Gerät gesperrt, sodass es nur die App ausführen kann. Ein Beispiel hierfür ist, wenn Sie eine App konfigurieren, mit der Benutzer einen Test auf dem Gerät ausführen können. Wenn die Aktionen der App abgeschlossen sind, oder Sie diese Richtlinie entfernen, kehrt das Gerät in seinen normalen Zustand zurück.
+Verwenden Sie diese Einstellungen, um iOS-Geräte zur Ausführung bestimmter Apps im Modus der autonomen einzelnen App zu konfigurieren. Wenn dieser Modus konfiguriert ist und die App ausgeführt wird, wird das Gerät gesperrt. Es kann nur die App ausführen. Fügen Sie z.B. eine App hinzu, mit der Benutzer einen Test auf dem Gerät durchführen können. Wenn die Aktionen der App abgeschlossen sind, oder Sie diese Richtlinie entfernen, kehrt das Gerät in seinen normalen Zustand zurück.
 
-### <a name="settings"></a>Einstellung
+Apps können Sie wie folgt hinzufügen:
 
-- **App-Name**: Geben Sie den Namen der App so ein, wie er in der Liste der Apps auf diesem Blatt angezeigt wird.
-- **App-Bündel-ID**: Geben Sie die Bündel-ID der App ein. Hilfe finden Sie in diesem Thema unter **Bündel-ID-Referenz für integrierte iOS-Apps**.
-
-Nachdem Sie jeden App-Namen und jede Bündel-ID angegeben haben, wählen Sie **Hinzufügen** zum Anfügen zur Liste.
-
-- **Importieren**: Importieren einer Datei mit kommagetrennten Werten (CSV) mit einer Liste von App-Namen und ihren zugeordneten Bündel-IDs.
-- **Exportieren**: Exportieren der von Ihnen konfigurierten App-Namen und zugeordneten Bündel-IDs nach einer Datei mit kommagetrennten Werten (CSV).
+- Geben Sie den **App-Namen** und die **App-Bündel-ID** ein, und wählen Sie **Hinzufügen** aus. [Bündel-ID-Referenz für integrierte iOS-Apps](#bundle-id-reference-for-built-in-ios-apps) (in diesem Artikel) enthält einige Apps mit ihren IDs.
+- **Importieren** Sie eine CSV-Datei mit der Liste der App-Namen und der Bündel-IDs. **Exportieren** Sie alternativ eine vorhandene Liste, die die Apps enthält.
 
 ## <a name="kiosk-supervised-only"></a>Kiosk (nur überwacht)
--   **App, die im Kioskmodus ausgeführt wird**: Klicken Sie auf **Verwaltete App**, um eine App auszuwählen, die Sie Intune hinzugefügt haben. Klicken Sie alternativ auf **Store-App**, um die URL zu einer App im Store anzugeben, oder auf **Integrierte App**, um die Paket-ID für die integrierte App anzugeben. Weitere Informationen finden Sie unter [Paket-ID-Referenz für integrierte iOS-Apps](device-restrictions-ios.md#bundle-id-reference-for-built-in-ios-apps) und [Angeben der URL zu einer App im Store](device-restrictions-ios.md#how-to-specify-the-url-to-an-app-in-the-store-1).
-    -   **Touch-Unterstützung:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung **Touch-Unterstützung**, die den Benutzer bei der Ausführung von Bildschirmgesten unterstützt, die ihm u.U. Schwierigkeiten bereiten.
-    -   **Farben umkehren:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung „Farben umkehren“, die die Anzeige für Benutzer mit eingeschränkter Sehfähigkeit anpasst.
-    -   **Mono-Audio:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung „Mono-Audio“.
-    -   **VoiceOver:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung **VoiceOver**, die den Text auf dem Gerätedisplay laut vorliest.
-    -   **Zoom:** Aktivieren oder deaktiviere Sie die Barrierefreiheitseinstellung **Zoom**, die dem Benutzer das Vergrößern des Inhalts auf dem Gerätedisplay durch Tippen ermöglicht.
-    -   **Automatische Sperre:** Aktivieren oder deaktivieren Sie die automatische Sperrung des Geräts.
-    -   **Ruftonschalter:** Aktivieren oder deaktivieren Sie die Stummschaltung (Ruftonschalter) am Gerät.
-    -   **Bildschirmdrehung:** Aktivieren oder deaktivieren Sie das Ändern der Bildschirmausrichtung, wenn der Benutzer das Gerät dreht.
-    -   **Standbytaste:** Aktivieren oder deaktivieren Sie die Standbytaste am Gerät.
-    -   **Touch:** Aktivieren oder deaktivieren Sie den Touchscreen des Geräts.
-    -   **Lautstärketasten:** Aktivieren oder deaktivieren Sie die Verwendung der Lautstärketasten am Gerät.
-    -   **AssistiveTouch-Steuerung:** Aktivieren oder deaktivieren Sie Touch-Unterstützungsanpassungen, mit denen der Benutzer die Touch-Unterstützung individuell verwenden kann.
-    -   **Steuerelement zum Umkehren von Farben:** Aktivieren oder deaktivieren Sie Farbumkehr-Anpassungen, mit denen der Benutzer die Funktion zur Farbumkehr individuell verwenden kann.
-    -   **Ausgewählten Text sprechen:** Aktivieren oder deaktivieren Sie die Barrierefreiheitseinstellung „Auswahl vorlesen“, mit der der vom Benutzer ausgewählte Text laut vorgelesen werden kann.
-    -   **VoiceOver-Steuerelement:** Aktivieren oder deaktivieren Sie VoiceOver-Anpassungen, die dem Benutzer das Anpassen der VoiceOver-Funktion ermöglichen (z.B. wie schnell Bildschirmtext laut vorgelesen wird).
-    -   **Zoomsteuerelement:** Aktivieren oder deaktivieren Sie Zoomanpassungen zur individuellen Verwendung der Zoomfunktion.
 
->[!NOTE]
-> Damit Sie ein iOS-Gerät für den Kioskmodus konfigurieren können, müssen Sie das Apple Configurator-Tool oder das Apple-Programm zur Geräteregistrierung verwenden, um das Gerät in den überwachten Modus zu versetzen. Weitere Informationen zum Apple Configurator-Tool finden Sie in der Apple-Dokumentation.
->Wenn die angegebene iOS-App nach der Zuweisung des Profils installiert wird, wird das Gerät erst nach einem Neustart in den Kioskmodus versetzt.
+- **Im Kioskmodus auszuführende App**: Wählen Sie den Typ der Apps aus, die Sie im Kioskmodus ausführen möchten. Folgende Optionen sind verfügbar: 
+  - **Store-App**: Geben Sie die URL zu einer App im iTunes App-Store ein
+  - **Verwaltete App**: Wählen Sie eine App aus, die Sie in Intune hinzugefügt haben
+  - **Integrierte App**: Geben Sie die [Bündel-ID](#bundle-id-reference-for-built-in-ios-apps) der integrierten App ein
+
+- **Touch-Unterstützung**: Zum **Anfordern** der Barrierefreiheitseinstellung „Touch-Unterstützung“ auf dem Gerät. Diese Funktion hilft Benutzern mit Bildschirmgesten bei Vorgängen, die für sie schwierig sein könnten. Mit **Nicht konfiguriert** wird dieses Feature im Kioskmodus nicht ausgeführt, oder es wird nicht aktiviert.
+- **Farben umkehren:** **Anfordern** der Barrierefreiheitseinstellung „Farben umkehren“, die die Anzeige für Benutzer mit eingeschränkter Sehfähigkeit anpasst. Mit **Nicht konfiguriert** wird dieses Feature im Kioskmodus nicht ausgeführt, oder es wird nicht aktiviert.
+- **Mono-Audio**: **Anfordern** der Barrierefreiheitseinstellung „Mono-Audio“ auf dem Gerät. Mit **Nicht konfiguriert** wird dieses Feature im Kioskmodus nicht ausgeführt, oder es wird nicht aktiviert.
+- **VoiceOver**: **Anfordern** der Barrierefreiheitseinstellung „VoiceOver“ auf dem Gerät, um Text auf dem Bildschirm vorlesen zu lassen. Mit **Nicht konfiguriert** wird dieses Feature im Kioskmodus nicht ausgeführt, oder es wird nicht aktiviert.
+- **Zoom**: **Anfordern** der Einstellung „Zoom“ auf dem Gerät, damit Benutzer die Bildschirmausgabe mittels Toucheingabe vergrößern können. Mit **Nicht konfiguriert** wird dieses Feature im Kioskmodus nicht ausgeführt, oder es wird nicht aktiviert.
+- **Automatische Sperre**: Automatische Sperrung des Geräts **Zulassen**. **Nicht konfiguriert** deaktiviert dieses Feature.
+- **Ruftonschalter:** Stummschaltung (Ruftonschalter) am Gerät **Zulassen**. **Nicht konfiguriert** deaktiviert dieses Feature.
+- **Bildschirmdrehung:** Ändern der Bildschirmausrichtung, wenn der Benutzer das Gerät dreht, **Zulassen**. **Nicht konfiguriert** deaktiviert dieses Feature.
+- **Standbytaste:** Wählen Sie **Zulassen** aus, um die Standbytaste am Gerät zu aktivieren oder deaktivieren. **Nicht konfiguriert** aktiviert diese Funktion.
+- **Touch**: **Blockieren** deaktiviert den Touchscreen des Geräts. **Nicht konfiguriert** ermöglicht dem Benutzer, den Touchscreen zu verwenden.
+- **Lautstärkeregler**: **Zulassen** der Verwendung der Lautstärkeregler am Gerät. **Nicht konfiguriert** deaktiviert die Lautstärkeregler.
+- **Steuerelement der Touch-Unterstützung**: Mit **Zulassen** können Benutzer die Touch-Unterstützungsfunktion verwenden. **Nicht konfiguriert** deaktiviert dieses Feature.
+- **Steuerelement zum Umkehren von Farben**: **Zulassen** von Farbumkehr-Anpassungen, mit denen der Benutzer die Funktion zur Farbumkehr individuell verwenden kann. **Nicht konfiguriert** deaktiviert dieses Feature.
+- **Ausgewählten Text sprechen**: **Zulassen** der Sprachauswahl-Barrierefreiheitseinstellungen auf dem Gerät. Diese Funktion liest Text, den der Benutzer auswählt, laut vor. **Nicht konfiguriert** deaktiviert dieses Feature.
+- **VoiceOver-Steuerelement**: **Zulassen** von VoiceOver-Änderungen, damit Benutzer die VoiceOver-Funktion aktualisieren können, z.B. wie schnell auf dem Bildschirm ausgegebener Text von der Sprachausgabe vorgelesen wird. **Nicht konfiguriert** verhindert VoiceOver-Änderungen.
+- **Zoomsteuerelement**: **Zulassen** von Zoomänderungen durch den Benutzer. **Nicht konfiguriert** verhindert Zoomänderungen.
+
+> [!NOTE]
+> Damit Sie ein iOS-Gerät für den Kioskmodus konfigurieren können, müssen Sie das Apple Configurator-Tool oder das Apple-Programm zur Geräteregistrierung verwenden, um das Gerät in den überwachten Modus zu versetzen. Informationen zur Verwendung des Apple Configurator-Tools finden Sie im Apple-Handbuch.
+> Wenn die iOS-App, die Sie eingeben, nach der Zuweisung des Profils installiert wird, wird das Gerät erst nach einem Neustart in den Kioskmodus versetzt.
 
 ## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Bündel-ID-Referenz für integrierte iOS-Apps
 
@@ -308,7 +319,7 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Mail         | Apple     |
-| com.apple.MapsMaps          |              | Apple     |
+| com.apple.Maps              | Zuordnungen         | Apple     |
 | com.apple.MobileSMS         | Nachrichten     | Apple     |
 | com.apple.Music             | Musik        | Apple     |
 | com.apple.news              | News         | Apple     |
@@ -330,26 +341,32 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 | com.apple.weather           | Weather      | Apple     |
 
 ## <a name="safari"></a>Safari
--   **Safari (nur überwachter Modus):** Geben Sie an, ob der Safari-Browser auf dem Gerät verwendet werden kann.
--   **AutoAusfüllen:** Erlauben Sie dem Benutzer, die Einstellungen für AutoAusfüllen im Browser zu ändern.
--   **Cookies:** Erlaubt dem Browser die Verwendung von Cookies.
--   **Javascript:** Erlaubt die Ausführung von Java-Skripts im Browser.
--   **Betrugswarnungen:** Erlaubt die Verwendung von Betrugswarnungen im Browser.
--   **Popups:** Aktivieren oder deaktivieren Sie den Popupblocker des Browsers.
 
+- **Safari (nur überwacht)**: **Blockieren** der Verwendung des Safari-Browsers auf dem Gerät. **Nicht konfiguriert** ermöglicht Benutzern die Verwendung des Safari-Browsers.
+- **AutoAusfüllen**: **Blockieren** deaktiviert das AutoAusfüllen-Feature in Safari auf dem Gerät. **Nicht konfiguriert** ermöglicht Benutzern, die Einstellungen für AutoVervollständigen im Browser zu ändern.
+- **Cookies**: Wählen Sie aus, wie Cookies auf dem Gerät behandelt werden. Folgende Optionen sind verfügbar:
+  - Allow
+  - Alle Cookies blockieren
+  - Cookies von besuchten Websites zulassen
+  - Cookies von aktueller Website zulassen
+- **JavaScript**: **Blockieren** verhindert, dass Java-Skripts im Browser auf dem Gerät ausgeführt werden. **Nicht konfiguriert** lässt Java-Skripts zu.
+- **Betrugswarnungen**: **Anfordern**, dass Betrugswarnungen im Webbrowser auf dem Gerät angezeigt werden. **Nicht konfiguriert** deaktiviert dieses Feature.
+- **Popups**: **Blockieren** deaktiviert den Popupblocker im Webbrowser. **Nicht konfiguriert** lässt den Popupblocker zu.
 
 ## <a name="domains"></a>Domains
 
 ### <a name="unmarked-email-domains"></a>Nicht markierte E-Mail-Domänen
 
-Fügen Sie im Feld **E-Mail-Domänen-URL** eine oder mehrere URLs der Liste hinzu. Wenn Endbenutzer eine E-Mail von einer anderen Domäne als einer erhalten, die Sie konfiguriert haben, wird die E-Mail in der iOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
-
+Fügen Sie in **E-Mail-Domänen-URL** eine oder mehrere URLs der Liste hinzu. Wenn Endbenutzer eine E-Mail von einer anderen Domäne als den von Ihnen eingegebenen erhalten, wird die E-Mail in der iOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
 
 ### <a name="managed-web-domains"></a>Verwaltete Webdomänen
 
-Fügen Sie im Feld **Webdomänen-URL** eine oder mehrere URLs der Liste hinzu. Wenn Dokumente von den Domänen heruntergeladen werden, die Sie angeben, gelten sie als verwaltet. Diese Einstellung gilt nur für Dokumente, die mit dem Safari-Browser heruntergeladen werden.
-
+Fügen Sie in **Webdomänen-URL** eine oder mehrere URLs der Liste hinzu. Wenn Dokumente von den Domänen heruntergeladen werden, die Sie eingeben, gelten sie als verwaltet. Diese Einstellung gilt nur für Dokumente, die mit dem Safari-Browser heruntergeladen werden.
 
 ### <a name="safari-password-autofill-domains"></a>Domänen für automatisches Ausfüllen des Safari-Kennworts
 
-Fügen Sie im Feld **Domänen-URL** eine oder mehrere URLs der Liste hinzu. Benutzer können nur Webkennwörter von URLs in dieser Liste speichern. Diese Einstellung gilt nur für den Safari-Browser und Geräte mit iOS 9.3 und höher im überwachten Modus. Wenn Sie keine URLs angeben, können Kennwörter von allen Websites gespeichert werden.
+Fügen Sie in **Domänen-URL** eine oder mehrere URLs der Liste hinzu. Benutzer können nur Webkennwörter von URLs in dieser Liste speichern. Diese Einstellung gilt nur für den Safari-Browser und Geräte mit iOS 9.3 und höher im überwachten Modus. Wenn Sie keine URLs angeben, können Kennwörter von allen Websites gespeichert werden.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+[Weisen Sie das Profil zu](device-profile-assign.md), und [überwachen Sie seinen Status](device-profile-monitor.md).

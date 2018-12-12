@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7552c9c1fa8e94560505a8971143886160cff6ce
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 574bc38fb9ce47d2b051a74f3f931139c0de7224
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185952"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728836"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Kioskeinstellungen für Windows 10 und höher in Intune
 
@@ -200,3 +200,5 @@ Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. D
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Zuweisen von Profilen](device-profile-assign.md) und [Überwachen von Profilen](device-profile-monitor.md)
+
+Außerdem können Sie Kioskmodusprofile auch für [Android](device-restrictions-android.md#kiosk)- und [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings)-Geräte erstellen.

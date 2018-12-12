@@ -16,12 +16,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d86df4c38e0d4313dbff6ff2cd9111b2126dbaba
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 829b9587849208c40d5e4c0f58169b4f6dfd4153
+ms.sourcegitcommit: a0e965b3a568d1435270012ab89e5857e72cd434
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180934"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "52630016"
 ---
 # <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Verwalten des Internetzugriffs durch einen mittels Richtlinien geschützten Microsoft Intune-Browser
 
@@ -175,7 +175,12 @@ Weitere Informationen zur möglichen gemeinsamen Verwendung von Managed Browser,
 
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>Konfigurieren der Startseite für einen geschützten Browser
 
-Mit dieser Einstellung können Sie die Startseite konfigurieren, die Benutzern beim Starten eines geschützten Browsers oder beim Erstellen einer neuen Registerkarte angezeigt wird. Geben Sie über die Prozedur zum Erstellen einer Microsoft Edge- oder Managed Browser-App-Konfiguration das folgende Schlüssel-Wert-Paar an:
+Mit dieser Einstellung können Sie die Startseite konfigurieren, die Benutzern beim Starten eines geschützten Browsers oder beim Erstellen einer neuen Registerkarte angezeigt wird. 
+- Diese Einstellung zeigt die Webseite des Managed Browser an.  Edge zeigt stattdessen eine Verknüpfung zur Startseite an.
+- Das Symbol der Verknüpfung zur Startseite wird als Symbol unterhalb des Suchsteuerelements angezeigt.  Es kann weder bearbeitet noch gelöscht werden.
+- Die Verknüpfung für die Startseite zeigt den Namen Ihrer Organisation zur Unterscheidung an.  Er wird immer als das erste Symbol angezeigt.
+
+Geben Sie über die Prozedur zum Erstellen einer Microsoft Edge- oder Managed Browser-App-Konfiguration das folgende Schlüssel-Wert-Paar an:
 
 |                                Key                                |                                                           Wert                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|

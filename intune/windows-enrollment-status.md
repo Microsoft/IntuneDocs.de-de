@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ada9fee575824d27a6bfdd8f14d4845d228467db
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186076"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52729040"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Einrichten einer Statusseite für die Registrierung
  
@@ -61,6 +61,16 @@ Ein Gerät oder Benutzer kann zu mehreren Gruppen gehören und über mehrere Pro
 2. Zeigen Sie auf das Profil in der Liste.
 3. Ziehen Sie mithilfe der drei vertikalen Punkte das Profil an die gewünschte Position in der Liste.
 
+## <a name="block-access-to-a-device-until-a-specific-application-is-installed"></a>Blockieren des Zugriffs auf ein Gerät, bis eine bestimmte Anwendung installiert ist
+
+Sie können angeben, welche Apps installiert sein müssen, bevor der Benutzer auf den Desktop zugreifen kann.
+
+1. Wählen Sie in Intune **Geräteregistrierung** > **Windows-Registrierung** > **Seite zum Registrierungsstatus (Vorschau)** aus.
+2. Wählen Sie ein Profil und dann **Einstellungen** aus.
+3. Wählen Sie **Ja** für **Installationsfortschritt für Apps und Profile anzeigen** aus.
+4. Wählen Sie **Ja** für **Geräteverwendung blockieren, bis alle Apps und Profile installiert sind** aus.
+5. Wählen Sie **Ausgewählt** für **Geräteverwendung blockieren, bis diese erforderlichen Apps installiert sind, wenn sie dem Benutzer/Gerät zugewiesen sind** aus.
+ 6. Wählen Sie **Apps auswählen**, wählen Sie die Apps und dann **Auswählen** > **Speichern** aus.
 
 ## <a name="enrollment-status-page-tracking-information"></a>Statusseite für die Registrierung, auf der Informationen nachverfolgt werden
 

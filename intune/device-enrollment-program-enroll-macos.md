@@ -1,12 +1,12 @@
 ---
-title: Registrieren von macOS-Geräten – Programm zur Geräteregistrierung
+title: Registrieren von macOS-Geräten – Programm zur Geräteregistrierung oder Apple School Manager
 titleSuffix: Microsoft Intune
 description: Hier erfahren Sie, wie Sie unternehmenseigene macOS-Geräte mit dem Programm zur Geräteregistrierung (Device Enrollment Program, DEP) registrieren.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,22 +16,22 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 92ddad3e7e8de4a10c67f9feae10d2441ec560bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180764"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728751"
 ---
-# <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>Automatisches Registrieren von macOS-Geräten mit dem Programm zur Geräteregistrierung von Apple
+# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Automatisches Registrieren von macOS-Geräten mit dem Programm zur Geräteregistrierung oder Apple School Manager
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Dieser Artikel unterstützt Sie dabei, die macOS-Geräteregistrierung für Geräte zu aktivieren, die über das [Device Enrollment Program](https://deploy.apple.com) (DEP, Programm zur Geräteregistrierung) von Apple erworben wurden. Sie können die Registrierung des Programms zur Geräteregistrierung für eine große Anzahl von Geräten einrichten, ohne diese physisch berühren zu müssen. Sie können macOS-Geräte direkt an Benutzer senden. Wenn ein Benutzer das Gerät einschaltet, wird der Setup-Assistent mit vordefinierten Einstellungen ausgeführt, und das Gerät wird bei der Intune-Verwaltung registriert.
+Dieser Artikel unterstützt Sie dabei, die macOS-Geräteregistrierung für Geräte zu aktivieren, die über das [Device Enrollment Program](https://deploy.apple.com) (DEP, Programm zur Geräteregistrierung) oder [Apple School Manager](https://school.apple.com/) von Apple erworben wurden. Sie können jedes dieser Programme zur Geräteregistrierung für eine große Anzahl von Geräten verwenden, ohne diese physisch berühren zu müssen. Sie können macOS-Geräte direkt an Benutzer senden. Wenn ein Benutzer das Gerät einschaltet, wird der Setup-Assistent mit vordefinierten Einstellungen ausgeführt, und das Gerät wird bei der Intune-Verwaltung registriert.
 
-Zum Einrichten der DEP-Registrierung können Sie sowohl das Intune-Portal als auch das Apple DEP-Portal verwenden. Sie erstellen DEP-Registrierungsprofile, die Einstellungen enthalten, die für Geräte während der Registrierung gelten.
+Zum Einrichten der Registrierung können Sie sowohl das Intune-Portal als auch das Apple DEP-Portal verwenden. Sie erstellen Registrierungsprofile, die Einstellungen enthalten, die für Geräte während der Registrierung gelten.
 
-Die Registrierung mit DEP funktioniert nicht mit dem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md) oder [Apple School Manager](apple-school-manager-set-up-ios.md).
+Weder die Registrierung mit DEP noch mit dem Apple School Manager funktioniert mit dem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md).
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -42,19 +42,19 @@ Die Registrierung mit DEP funktioniert nicht mit dem [Geräteregistrierungs-Mana
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
 ## <a name="prerequisites"></a>Voraussetzungen
-- Geräte, die unter dem [Programm zur Geräteregistrierung von Apple](http://deploy.apple.com) erworben werden.
+- Geräte, die unter [Apple School Manager](https://school.apple.com/) oder dem [Programm zur Geräteregistrierung von Apple](http://deploy.apple.com) erworben werden.
 - Eine Liste mit Seriennummern oder eine Auftragsnummer. 
 - [MDM-Autorität](mdm-authority-set.md)
 - [Apple-MDM-Push-Zertifikat](apple-mdm-push-certificate-get.md)
 
 ## <a name="get-an-apple-dep-token"></a>Abrufen eines Apple-DEP-Tokens
 
-Bevor Sie macOS-Geräte mit DEP registrieren können, benötigen Sie ein DEP-Token (P7M-Datei) von Apple. Mit diesem Token kann Intune Informationen zu DEP-Geräten synchronisieren, die Ihrem Unternehmen gehören. Zudem ermöglicht es Intune das Hochladen von Registrierungsprofilen bei Apple und das Zuweisen dieser Profile zu Geräten.
+Bevor Sie macOS-Geräte mit DEP oder Apple School Manager registrieren können, benötigen Sie ein DEP-Token (P7M-Datei) von Apple. Mit diesem Token kann Intune Informationen zu den Geräten synchronisieren, die Ihrem Unternehmen gehören. Zudem ermöglicht es Intune das Hochladen von Registrierungsprofilen bei Apple und das Zuweisen dieser Profile zu Geräten.
 
-Verwenden Sie das Apple DEP-Portal, um ein DEP-Token zu erstellen. Sie verwenden das DEP-Portal auch, um in Intune Geräte für die Verwaltung zuzuweisen.
+Verwenden Sie das Apple-Portal, um ein Token zu erstellen. Sie verwenden das Apple-Portal auch, um in Intune Geräte für die Verwaltung zuzuweisen.
 
 > [!NOTE]
-> Wenn Sie das Token vor der Migration zu Azure aus dem klassischen Intune-Portal löschen, stellt Intune womöglich ein gelöschtes Apple DEP-Token wieder her. Sie können das DEP-Token erneut aus dem Azure-Portal löschen.
+> Wenn Sie das Token vor der Migration zu Azure aus dem klassischen Intune-Portal löschen, stellt Intune womöglich ein gelöschtes Apple-Token wieder her. Sie können das Token erneut aus dem Azure-Portal löschen.
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Schritt 1: Laden Sie das Intune-Zertifikat mit öffentlichem Schlüssel herunter, das zum Erstellen des Tokens erforderlich ist.
 
@@ -66,15 +66,14 @@ Verwenden Sie das Apple DEP-Portal, um ein DEP-Token zu erstellen. Sie verwenden
 
    ![Screenshot des Bereichs „Registrierungsprogrammtoken“ im Arbeitsbereich „Apple-Zertifikate“ zum Herunterladen des öffentlichen Schlüssels](./media/device-enrollment-program-enroll-ios-newui/add-enrollment-program-token-pane.png)
 
-3. Wählen Sie **Laden Sie Ihr Zertifikat mit öffentlichem Schlüssel herunter** aus, um die Verschlüsselungsschlüsseldatei (PEM) herunterzuladen und lokal zu speichern. Die PEM-Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple Device Enrollment Program-Portal anzufordern.
+3. Wählen Sie **Laden Sie Ihr Zertifikat mit öffentlichem Schlüssel herunter** aus, um die Verschlüsselungsschlüsseldatei (PEM) herunterzuladen und lokal zu speichern. Die PEM-Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple-Portal anzufordern.
 
 
 ### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Schritt 2. Verwenden Sie Ihren Schlüssel, um ein Token von Apple herunterzuladen.
 
-1. Wählen Sie **Create a token for Apple's Device Enrollment Program** (Token für das Programm zur Geräteregistrierung von Apple erstellen) aus, um das Portal des Bereitstellungsprogramms von Apple zu öffnen. Melden Sie sich mit der Apple-ID Ihres Unternehmens an. Diese Apple-ID kann später zum Erneuern Ihres DEP-Token verwendet werden.
-2.  Wählen Sie im [Portal des Bereitstellungsprogramms](https://deploy.apple.com) von Apple die Option **Erste Schritte** für das **Programm zur Geräteregistrierung** aus.
-
-3. Wählen Sie auf der Seite **Server verwalten** die Option **MDM-Server hinzufügen** aus.
+1. Wählen Sie **Token für das Programm zur Geräteregistrierung von Apple erstellen** oder **Token über Apple School Manager erstellen** aus, um das Portal des Bereitstellungsprogramms von Apple zu öffnen. Melden Sie sich mit der Apple-ID Ihres Unternehmens an. Diese Apple-ID kann später zum Erneuern Ihres Tokens verwendet werden.
+2.  Wählen Sie im Apple-Portal für DEP **Get Started (Einstieg)** für **Device Enrollment Program (Programm zur Geräteregistrierung)** > **Manage Servers (Server verwalten)** > **Add MDM Server (MDM-Server hinzufügen)** aus.
+3.  Wählen Sie im Apple-Portal für Apple School Manager **MDM Servers (MDM-Server)** > **Add MDM Server (MDM-Server hinzufügen)** aus.
 4. Geben Sie den **MDM-Servernamen** ein, und wählen Sie anschließend **Weiter** aus. Der Servername dient als Referenz zum Identifizieren des MDM-Servers (mobile device management, Verwaltung mobiler Geräte). Es handelt sich nicht um den Namen oder die URL des Microsoft Intune-Servers.
 
 5. Das Dialogfeld **&lt;Servername&gt; hinzufügen** wird geöffnet, und die Meldung **Laden Sie Ihren öffentlichen Schlüssel hoch** wird angezeigt. Wählen Sie **Datei auswählen** aus, um die PEM-Datei hochzuladen, und wählen Sie anschließend **Weiter** aus.
@@ -89,9 +88,7 @@ Verwenden Sie das Apple DEP-Portal, um ein DEP-Token zu erstellen. Sie verwenden
 
 8. Wählen Sie als Nächstes für **Aktion auswählen** die Option **Zu Server zuweisen** aus. Wählen Sie den für Microsoft Intune angegebenen &lt;Servernamen&gt; und anschließend **OK** aus. Das Apple-Portal weist die angegebenen Geräte dem Intune-Server für die Verwaltung zu und zeigt dann **Zuweisung abgeschlossen** an.
 
-   Wechseln Sie im Apple-Portal zu **Bereitstellungsprogramme** &gt; **Programm zur Geräteregistrierung** &gt; **Zuweisungsverlauf anzeigen**, um eine Liste der Geräte und ihre MDM-Server-Zuordnung anzuzeigen.
-
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Schritt 3: Speichern Sie die zum Erstellen dieses Tokens verwendete Apple-ID.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Schritt 3: Speichern der zum Erstellen dieses Tokens verwendeten Apple-ID
 
 Geben Sie in Intune im Azure-Portal für die zukünftige Verwendung Ihre Apple-ID an.
 
@@ -102,7 +99,7 @@ Navigieren Sie im Feld **Apple-Token** zur Zertifikatsdatei (PEM), und wählen S
 
 ## <a name="create-an-apple-enrollment-profile"></a>Erstellen eines Apple-Registrierungsprofils
 
-Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil für DEP-Geräte erstellen. Ein Geräteregistrierungsprofil definiert die Einstellungen, die während der Registrierung auf eine Gruppe von Geräten angewendet werden.
+Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil für Geräte erstellen. Ein Geräteregistrierungsprofil definiert die Einstellungen, die während der Registrierung auf eine Gruppe von Geräten angewendet werden.
 
 1. Wählen Sie in Intune im Azure-Portal die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Registrierungsprogrammtoken** aus.
 2. Wählen Sie ein Token aus, und wählen Sie dann **Profile** und **Profil erstellen** aus.
@@ -134,7 +131,7 @@ Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil fü
     | <strong>Abteilungstelefonnummer</strong> | Wird angezeigt, wenn der Benutzer während der Aktivierung auf die Schaltfläche <strong>Benötigen Sie Hilfe?</strong> klickt. |
 
   Sie können entscheiden, ob ein Bildschirm des Setup-Assistenten auf dem Gerät angezeigt oder ausgeblendet wird, während der Benutzer es einrichtet.
-  - Wenn Sie auf **Ausblenden** klicken, wird der Bildschirm während des Setups nicht angezeigt. Nach dem Setup des Geräts kann der Benutzer weiterhin zum Menü **Einstellungen** navigieren, um das Feature einzurichten.
+  - Wenn Sie auf **Ausblenden** klicken, wird der Bildschirm nicht während des Setups angezeigt. Nach dem Setup des Geräts kann der Benutzer weiterhin zum Menü **Einstellungen** navigieren, um das Feature einzurichten.
   - Wenn Sie auf **Anzeigen** klicken, wird der Bildschirm während des Setups angezeigt. Gelegentlich kann der Benutzer den Bildschirm überspringen, ohne weitere Maßnahmen ergreifen zu müssen. Er kann aber später zum Gerätemenü **Einstellungen** navigieren, um das Feature einzurichten. 
 
 
@@ -185,7 +182,7 @@ Sie können ein macOS- und iOS-Standardprofil auswählen, das auf alle Geräte a
 2. Wählen Sie **Standardprofil festlegen** aus, wählen Sie ein Profil in der Dropdownliste aus, und wählen Sie dann **Speichern** aus. Dieses Profil wird auf alle Geräte angewendet, die sich mit dem Token registrieren.
 
 ## <a name="distribute-devices"></a>Verteilen von Geräten
-Sie haben die Verwaltung und Synchronisierung zwischen Apple und Intune aktiviert und haben ein Profil zugewiesen, damit Ihre DEP-Geräte registriert werden können. Sie können jetzt Geräte an Benutzer verteilen. Für Geräte mit Benutzeraffinität muss jedem Benutzer eine Intune-Lizenz zugewiesen werden. Geräte ohne Benutzeraffinität benötigen eine Gerätelizenz. Ein aktiviertes Gerät kann kein Registrierungsprofil anwenden, bis das Gerät zurückgesetzt wurde.
+Sie haben die Verwaltung und Synchronisierung zwischen Apple und Intune aktiviert und haben ein Profil zugewiesen, damit Ihre Geräte registriert werden können. Sie können jetzt Geräte an Benutzer verteilen. Für Geräte mit Benutzeraffinität muss jedem Benutzer eine Intune-Lizenz zugewiesen werden. Geräte ohne Benutzeraffinität benötigen eine Gerätelizenz. Ein aktiviertes Gerät kann kein Registrierungsprofil anwenden, bis das Gerät zurückgesetzt wurde.
 
 ## <a name="renew-a-dep-token"></a>Erneuern eines DEP-Tokens  
 1. Wechseln Sie zu deploy.apple.com.  

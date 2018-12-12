@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d974e6db3543ef3ba0b11cf67989260e429dde4c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
+ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179166"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389868"
 ---
 # <a name="what-are-app-protection-policies"></a>Was sind App-Schutzrichtlinien?
 
@@ -66,9 +66,9 @@ Es gibt weitere Vorteile bei der Verwendung einer MDM mit App-Schutzrichtlinien,
 
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>Unterstützte Plattformen für App-Schutzrichtlinien
-Die Plattform für Schutzrichtlinien für Intune-Apps ist auf die Plattformunterstützung für mobile Office-Anwendungen ausgerichtet. Weitere Informationen finden Sie im Abschnitt **Mobile Apps** unter [Systemanforderungen für Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
+Die Plattform für Schutzrichtlinien für Intune-Apps ist auf die Plattformunterstützung für mobile Office-Anwendungen für Android- und iOS-Geräte ausgerichtet. Weitere Informationen finden Sie im Abschnitt **Mobile Apps** unter [Systemanforderungen für Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
-Windows-Geräte werden momentan nicht unterstützt. Wenn Sie jedoch Windows 10-Geräte mit Intune registrieren, können Sie Windows Information Protection verwenden, das ähnliche Funktionen bietet. Weitere Informationen finden Sie unter [Schutz von Unternehmensdaten mit Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+Windows-Geräte werden momentan nicht unterstützt. Sie können jedoch Windows Information Protection verwenden, das ähnliche Funktionen bietet. Weitere Informationen finden Sie unter [Schutz von Unternehmensdaten mit Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>So schützen App-Schutzrichtlinien Ihre App-Daten
@@ -146,7 +146,9 @@ Obwohl die **globale Richtlinie** für alle Benutzer in Ihrem Mandanten gilt, we
 
 Apps, die mehrere Identitäten unterstützen, bieten Ihnen die Möglichkeit, verschiedene Konten (Geschäfts- und persönliche Konten) für den Zugriff auf die gleichen Apps zu verwenden. Hierbei werden App-Schutzrichtlinien nur angewendet, wenn die Apps im Arbeitskontext verwendet werden.
 
-Betrachten Sie beispielsweise einen Benutzer, der die OneDrive-App mit seinem Geschäftskonto startet. Im geschäftlichen Kontext kann er keine Dateien an einen privaten Speicherort verschieben. Wenn der Benutzer OneDrive später jedoch mit einem persönlichen Konto verwendet, kann er Daten ohne Einschränkung aus dem persönlichen OneDrive kopieren und verschieben.
+Stellen Sie sich als Beispiel für privaten Kontext einen Benutzer vor, der ein neues Dokument in Word beginnt – dies gilt als privater Kontext, sodass die App-Schutzrichtlinien für Intune nicht angewendet werden. Sobald das Dokument im OneDrive-Unternehmenskonto gespeichert wird, steht es im Unternehmenskontext, und App-Schutzrichtlinien für Intune werden angewendet.
+
+Betrachten Sie im geschäftlichen Kontext beispielsweise einen Benutzer, der die OneDrive-App mit seinem Geschäftskonto startet. Im geschäftlichen Kontext kann er keine Dateien an einen privaten Speicherort verschieben. Wenn der Benutzer OneDrive später jedoch mit einem persönlichen Konto verwendet, kann er Daten ohne Einschränkung aus dem persönlichen OneDrive kopieren und verschieben.
 
 - Erfahren Sie mehr über die Apps, die [die Verwaltung mobiler Anwendungen und mehrerer Identitäten](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) mit Intune unterstützen.
 

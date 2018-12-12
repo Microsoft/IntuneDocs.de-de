@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 79df4e20a1dcd4a5cbc30ab0c887d53bf205ebbf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ff7876ef5c04eb59d1e89ac03b640d4f443cca6
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184742"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728955"
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Einstellungen für App-Schutzrichtlinien für iOS
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -30,7 +30,7 @@ Die in diesem Artikel beschriebenen Richtlinieneinstellungen können im Azure-Po
 
 Es gibt drei Kategorien von Richtlinieneinstellungen: *Datenverschiebung*, *Zugriffsanforderungen* und *Bedingter Start*. In diesem Artikel bezieht sich der Begriff ***richtlinienverwaltete Apps*** auf Apps, die mit App-Schutzrichtlinien konfiguriert sind.
 
-##  <a name="data-relocation-settings"></a>Einstellungen für die Datenverlagerung
+##  <a name="data-protection-settings"></a>Datenschutzeinstellungen
 
 | Einstellung | Verwendung |  
 |------|------| 
@@ -47,7 +47,7 @@ Es gibt drei Kategorien von Richtlinieneinstellungen: *Datenverschiebung*, *Zugr
 
 
 > [!NOTE]
-> Keine der Einstellungen für die Datenverlagerung steuert das von Apple verwaltete Feature „Öffnen in“ auf iOS-Geräten. Informationen zum Verwalten der Apple-Funktion „Öffnen in“ finden Sie unter [Verwalten der Datenübertragung zwischen iOS-Apps mit Microsoft Intune](data-transfer-between-apps-manage-ios.md).
+> Keine der Einstellungen für den Datenschutz steuert das von Apple verwaltete Feature „Öffnen in“ auf iOS-Geräten. Informationen zum Verwalten der Apple-Funktion „Öffnen in“ finden Sie unter [Verwalten der Datenübertragung zwischen iOS-Apps mit Microsoft Intune](data-transfer-between-apps-manage-ios.md).
 
 ## <a name="data-transfer-exemptions"></a>Datenübertragungsausnahmen
 

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dabd5b6ca2f8bb01421c24cb7c16ab57cf59ef56
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 06b568ee7cc2dc55a8d44cf04b96078b47d8c4b3
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180985"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579165"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Entfernen von SCEP- und PKCS-Zertifikaten in Microsoft Intune
 
@@ -43,8 +43,7 @@ In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und e
   - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
   - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
   - das Gerät aus der Azure Active Directory-Gruppe entfernt wird
-  - die Konformitätsrichtlinie aus der Gruppenzuweisung entfernt wird
-  - das Konfigurationsprofil aus der Gruppenzuweisung entfernt wird
+  - Zertifikatprofil wird aus der Gruppenzuweisung entfernt
 
 - SCEP-Zertifikate werden widerrufen, wenn:
   - der Administrator das SCEP-Profil ändert oder aktualisiert
@@ -53,7 +52,6 @@ In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und e
   - die Registrierung eines Endbenutzers aufgehoben wird
   - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
   - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
-  - die Konformitätsrichtlinie aus der Gruppenzuweisung entfernt wird
 
 - SCEP-Zertifikate **verbleiben** auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
   - ein Endbenutzer seine Intune-Lizenz verliert
@@ -78,8 +76,7 @@ In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und e
   - der Administrator die Intune-Lizenz widerruft
   - der Administrator den Benutzer oder die Gruppe aus Azure AD entfernt
   - der Administrator das PKCS-Profil ändert oder aktualisiert
-  - das Konfigurationsprofil aus der Gruppenzuweisung entfernt wird
-  - die Konformitätsrichtlinie aus der Gruppenzuweisung entfernt wird 
+  - Zertifikatprofil wird aus der Gruppenzuweisung entfernt
 
 
 ## <a name="ios-devices"></a>iOS-Geräte
@@ -92,8 +89,7 @@ In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und e
   - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
   - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
   - das Gerät aus der Azure Active Directory-Gruppe entfernt wird
-  - die Konformitätsrichtlinie aus der Gruppenzuweisung entfernt wird
-  - das Konfigurationsprofil aus der Gruppenzuweisung entfernt wird
+  - Zertifikatprofil wird aus der Gruppenzuweisung entfernt
 
 - SCEP-Zertifikate werden widerrufen, wenn:
   - der Administrator das SCEP-Profil ändert oder aktualisiert
@@ -102,7 +98,6 @@ In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und e
   - die Registrierung eines Endbenutzers aufgehoben wird
   - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
   - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
-  - die Konformitätsrichtlinie aus der Gruppenzuweisung entfernt wird
 
 - SCEP-Zertifikate **verbleiben** auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
   - ein Endbenutzer seine Intune-Lizenz verliert
@@ -118,8 +113,7 @@ In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und e
   - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
 
 - Das PKCS-Zertifikat wird entfernt, wenn:
-  - die Konformitätsrichtlinie aus der Gruppenzuweisung entfernt wird
-  - das Konfigurationsprofil aus der Gruppenzuweisung entfernt wird
+  - Zertifikatprofil wird aus der Gruppenzuweisung entfernt
   
 - Das Stammzertifikat wird entfernt, wenn:
   - die Registrierung eines Endbenutzers aufgehoben wird
@@ -143,8 +137,7 @@ In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und e
 - SCEP-Zertifikate werden widerrufen, wenn:
   - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
   - das Gerät aus der Azure Active Directory-Gruppe entfernt wird
-  - die Konformitätsrichtlinie aus der Gruppenzuweisung entfernt wird
-  - das Konfigurationsprofil aus der Gruppenzuweisung entfernt wird
+  - Zertifikatprofil wird aus der Gruppenzuweisung entfernt
   - der Administrator den Benutzer oder die Gruppe aus Azure Active Directory (AD) entfernt
   - der Administrator das SCEP-Profil ändert oder aktualisiert
 
@@ -176,8 +169,7 @@ In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und e
   - der Administrator die Intune-Lizenz widerruft
   - der Administrator den Benutzer oder die Gruppe aus Azure AD entfernt
   - der Administrator das PKCS-Profil ändert oder aktualisiert
-  - das Konfigurationsprofil aus der Gruppenzuweisung entfernt wird
-  - die Konformitätsrichtlinie aus der Gruppenzuweisung entfernt wird 
+  - Zertifikatprofil wird aus der Gruppenzuweisung entfernt
   
   
 > [!NOTE]
@@ -191,8 +183,7 @@ In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und e
   - die Registrierung eines Endbenutzers aufgehoben wird
   - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
   - das Gerät aus der Azure Active Directory-Gruppe entfernt wird
-  - die Konformitätsrichtlinie aus der Gruppenzuweisung entfernt wird
-  - das Konfigurationsprofil aus der Gruppenzuweisung entfernt wird
+  - Zertifikatprofil wird aus der Gruppenzuweisung entfernt
 
 - SCEP-Zertifikate werden widerrufen, wenn:
   - der Administrator das SCEP-Profil ändert oder aktualisiert

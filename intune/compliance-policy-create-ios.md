@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 56427f5b6d72d952ce9c388b4d5289d3075b7df0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 35091139e3afaabac4fad0b22fc6096cf7ada7c3
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182267"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728870"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für iOS-Geräte in Intune
 
@@ -54,7 +54,8 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 ## <a name="create-a-device-compliance-policy"></a>Erstellen einer Gerätekonformitätsrichtlinie
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. Wählen Sie als **Plattform** die Option **iOS** aus. Wählen Sie **Einstellungen konfigurieren**, um die Einstellungen zu **E-Mail**, **Geräteintegrität**, **Geräteeigenschaften** und **Systemsicherheit** anzugeben. Wenn Sie fertig sind, wählen Sie **OK** und dann **Erstellen**.
+4. Wählen Sie als **Plattform** die Option **iOS** aus. 
+5. Wählen Sie **Einstellungen konfigurieren**, um die in diesem Thema beschriebenen Einstellungen zu **E-Mail**, **Geräteintegrität**, **Geräteeigenschaften** und **Systemsicherheit** anzugeben. Wenn Sie fertig sind, wählen Sie **OK** und dann **Erstellen**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -88,6 +89,8 @@ Weitere Informationen zu E-Mail-Profilen finden Sie unter [Konfigurieren des Zug
 
 - **Minimal erforderliches Betriebssystem**: Wenn ein Gerät die Anforderungen an die erforderliche Mindestversion des Betriebssystems nicht erfüllt, wird es als nicht kompatibel gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Benutzer kann sein Gerät aktualisieren. Danach kann er auf Unternehmensressourcen zugreifen.
 - **Maximal zulässige Betriebssystemversion**: Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt. Der Benutzer wird dann dazu aufgefordert, sich an den zuständigen IT-Administrator zu wenden. Mit diesem Gerät kann solange nicht auf Unternehmensressourcen zugegriffen werden, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
+- **Mindestbuildversion des Betriebssystems**: Wenn Apple Sicherheitsupdates veröffentlicht, wird die Nummer des Builds in der Regel aktualisiert, nicht die Betriebssystemversion. Verwenden Sie diese Funktion, um eine zulässige minimale Buildnummer am Gerät einzugeben. Diese Konformitätsprüfung unterstützt Geräte mit iOS 8.0 und höher. 
+- **Höchste Buildversion des Betriebssystems**: Wenn Apple Sicherheitsupdates veröffentlicht, wird die Nummer des Builds in der Regel aktualisiert, nicht die Betriebssystemversion. Verwenden Sie diese Funktion, um eine zulässige maximale Buildnummer am Gerät einzugeben. Diese Konformitätsprüfung unterstützt Geräte mit iOS 8.0 und höher.
 
 ## <a name="system-security"></a>Systemsicherheit
 

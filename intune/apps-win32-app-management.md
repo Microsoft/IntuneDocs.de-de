@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/15/2018
+ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc1974a57e5a5aa6808936c37e02fd31a7cac7b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187292"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829146"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Standalone – Win32-App-Verwaltung (Public Preview)
 
@@ -29,15 +29,11 @@ Intune Standalone ermöglicht eine umfangreichere Verwaltung von Win32-Anwendung
 
 ## <a name="prerequisites-for-public-preview"></a>Voraussetzungen für die öffentliche Vorschau
 
-- Windows 10, Version 1607 oder höher (Enterprise)
+- Windows 10 Version 1607 oder höher (Education-, Pro- und Enterprise-Versionen)
 - Folgendes muss für den Windows 10-Client zutreffen: 
     - Beitritt zu Azure Active Directory (AAD) oder Hybrid Azure Active Directory und
     - Registrierung bei Intune (MDM-verwaltet)
 - Die Größe der Windows-Anwendung ist in der öffentlichen Vorschau auf 8 GB pro App begrenzt 
-
-> [!NOTE]
-> Derzeit werden Pro- und Education-Versionen von Windows 10 Version 1607 getestet und wir würden uns über Ihr Feedback freuen.
-
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Vorbereiten des Inhalts der Win32-App für den Upload
 
@@ -227,6 +223,10 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
 8.  Wählen Sie im Bereich **Zuweisungen** die Option **Speichern** aus.
 
 An dieser Stelle haben Sie die Schritte zum Hinzufügen einer Win32-App zu Intune abgeschlossen. Informationen zur Zuweisung und Überwachung von Apps finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) und [Überwachen von App-Informationen und -Zuweisungen mit Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
+
+## <a name="delivery-optimization"></a>Übermittlungsoptimierung
+
+Clients von Windows 10 RS3 und höher laden Intune Win32-App-Inhalte mit einer Komponente zur Übermittlungsoptimierung auf den Windows 10-Client herunter. Die Übermittlungsoptimierung bietet Peer-zu-Peer-Funktionen, die standardmäßig eingeschaltet sind. Die Übermittlungsoptimierung kann mit einer Gruppenrichtlinie und in der Zukunft über Intune MDM konfiguriert werden. Weitere Informationen finden Sie unter [Übermittlungsoptimierung für Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
 ## <a name="install-required-and-available-apps-on-devices"></a>Installieren erforderlicher und verfügbarer Apps auf Geräten
 

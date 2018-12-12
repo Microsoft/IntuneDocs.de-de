@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2407225bfd0cdb5892663bf2e66de36157aaf4e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 24b64d4d7b2ccd376f666e9d7961706025b6eaad
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182005"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829096"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Apps ohne Geräteregistrierung
 
@@ -40,7 +40,7 @@ Sie können App-Konfigurationsrichtlinien mit verwalteten Apps, die das Intune A
       Die Beschreibung des Profils, das im Azure-Portal angezeigt wird
     - **Geräteregistrierungstyp**  
       Klicken Sie auf **Apps verwalten**.
-6. Klicken Sie auf  **Zugeordnete App** , um die App auszuwählen, die Sie konfigurieren möchten. Wählen Sie die App aus der Liste der Apps aus, die Sie genehmigt und mit Intune synchronisiert haben.
+6. Klicken Sie auf **Zugeordnete App** , um die App auszuwählen, die Sie konfigurieren möchten. Wählen Sie die App aus der Liste der Apps aus, die Sie genehmigt und mit Intune synchronisiert haben.
 7. Geben Sie für jede von der App unterstützte Konfigurationseinstellung den **Namen** und den **Wert** ein, und wählen Sie die Auslassungspunkte (**…**) aus.  
     Wählen Sie zum Löschen einer Konfiguration die Auslassungspunkte (**...**) und dann auf **Löschen** aus.  
     

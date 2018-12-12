@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 14588563dd261063071c09c1bbd3b428fb375830
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 583a64b5dd91df2ef9e5acbaf129b447aca7f2d9
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184181"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52828993"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für macOS-Geräte in Intune
 
@@ -49,7 +49,8 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 ## <a name="create-a-device-compliance-policy"></a>Erstellen einer Gerätekonformitätsrichtlinie
 
 [!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-5. Wählen Sie als **Plattform** die Option **macOS** aus. Wählen Sie **Einstellungen konfigurieren**, um die Einstellungen zu **Geräteintegrität**, **Geräteeigenschaften** und **Systemsicherheit** anzugeben. Wenn Sie fertig sind, wählen Sie **OK** und dann **Erstellen**.
+4. Wählen Sie als **Plattform** die Option **macOS** aus. 
+5. Wählen Sie **Einstellungen konfigurieren**, um die in diesem Artikel beschriebenen Einstellungen zu **Geräteintegrität**, **Geräteeigenschaften** und **Systemsicherheit** anzugeben. Wenn Sie fertig sind, wählen Sie **OK** und dann **Erstellen**.
 
 ## <a name="device-health"></a>Geräteintegrität
 
@@ -59,6 +60,8 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 
 - **Minimale Betriebssystemversion:** Wenn ein Gerät die Anforderungen an die erforderliche Mindestversion des Betriebssystems nicht erfüllt, wird es als nicht konform gemeldet. Ein Link mit Informationen zum Upgradevorgang wird angezeigt. Der Endbenutzer kann ein Upgrade seines Geräts durchführen, und anschließend auf die Unternehmensressourcen zugreifen.
 - **Maximale Version des Betriebssystems:** Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt. Der Benutzer wird dazu aufgefordert, sich an den zuständigen IT-Administrator zu wenden. Mit diesem Gerät kann solange nicht auf Unternehmensressourcen zugegriffen werden, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
+- **Mindestbuildversion des Betriebssystems**: Wenn Apple Sicherheitsupdates veröffentlicht, wird die Nummer des Builds in der Regel aktualisiert, nicht die Betriebssystemversion. Verwenden Sie diese Funktion, um eine zulässige minimale Buildnummer am Gerät einzugeben.
+- **Höchste Buildversion des Betriebssystems**: Wenn Apple Sicherheitsupdates veröffentlicht, wird die Nummer des Builds in der Regel aktualisiert, nicht die Betriebssystemversion. Verwenden Sie diese Funktion, um eine zulässige maximale Buildnummer am Gerät einzugeben.
 
 ## <a name="system-security-settings"></a>Einstellungen für die Systemsicherheit
 

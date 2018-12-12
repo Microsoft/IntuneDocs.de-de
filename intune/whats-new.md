@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 11/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1cb30c1125add982a40fa2319e1f9b8b9edae1e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ed6a79142c2bbe3bd93b02c17e92f4f11f2583f3
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190420"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829197"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,6 +42,89 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Sie e
 ### Role-based access control
 
 -->     
+
+## <a name="week-of-november-26-2018"></a>Woche vom 26. November 2018
+
+### <a name="app-management"></a>App-Verwaltung
+
+#### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>Deinstallieren von Apps auf unternehmenseigenen überwachten iOS-Geräten<!-- 1281677 -->
+
+Sie können beliebige unternehmenseigene überwachte iOS-Geräte entfernen. Sie können eine beliebige App entfernen, indem Sie entweder Benutzer- oder Gerätegruppen mit dem Zuweisungstyp **Deinstallieren** als Ziel verwenden. Für persönliche oder nicht überwachte iOS-Geräte können weiterhin nur Apps entfernt werden, die mit Intune installiert wurden.
+
+#### <a name="downloading-intune-win32-app-content----2617320---"></a>Herunterladen der Intune Win32-App-Inhalte <!-- 2617320 -->
+Clients von Windows 10 RS3 und höher laden Intune Win32-App-Inhalte mit einer Komponente zur Übermittlungsoptimierung auf den Windows 10-Client herunter. Die Übermittlungsoptimierung bietet Peer-zu-Peer-Funktionen, die standardmäßig eingeschaltet sind. Die Übermittlungsoptimierung kann mit einer Gruppenrichtlinie und in der Zukunft über Intune MDM konfiguriert werden. Weitere Informationen finden Sie unter [Übermittlungsoptimierung für Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+
+#### <a name="end-user-device-and-app-content-menu----2771453---"></a>Endbenutzergeräte- und App-Inhaltsmenü <!-- 2771453 -->
+Endbenutzer können jetzt über das Kontextmenü auf Geräten und in Apps häufig verwendete Aktionen auslösen, z.B. das Umbenennen eines Geräts oder die Prüfung der Konformität.
+
+#### <a name="set-custom-background-in-managed-home-screen-app-----3041945---"></a>Festlegen eines benutzerdefinierten Hintergrunds in der Managed Home Screen-App <!-- 3041945 -->
+Es wird eine Einstellung hinzugefügt, mit der Sie den Hintergrund der Managed Home Screen-App auf Android Enterprise-, Multi-App- und Kioskmodusgeräten anpassen können.  Um eine **URL für einen benutzerdefinierten Hintergrund** zu konfigurieren, wechseln Sie im Azure-Portal zu Intune und dann zur Gerätekonfiguration. Wählen Sie ein aktuelles Gerätekonfigurationsprofil aus, oder erstellen Sie ein neues Profil, um die zugehörigen Kioskeinstellungen zu bearbeiten.
+Informationen zu den Kioskeinstellungen finden Sie unter [Einstellungen für Geräteeinschränkungen für Android Enterprise](device-restrictions-android-for-work.md).
+
+#### <a name="app-protection-policy-assignment-save-and-apply----3104570---"></a>Speichern und Anwenden von App-Schutzrichtlinienzuweisungen <!-- 3104570 -->
+Sie erhalten jetzt eine bessere Kontrolle über Ihre [App-Schutzrichtlinienzuweisungen](app-protection-policies.md#deploy-a-policy-to-users). Wenn Sie *Zuweisungen* auswählen, um die Zuweisungen einer Richtlinie festzulegen oder zu bearbeiten, müssen Sie Ihre Konfiguration **speichern**, bevor die Änderung angewendet wird. Löschen Sie mit **Verwerfen** alle Änderungen, die Sie vornehmen, ohne Änderungen in den Listen zum Einschließen oder Ausschließen zu speichern.  Wenn Speichern oder Verwerfen erforderlich ist, werden nur die von Ihnen vorgesehenen Benutzer einer App-Schutzrichtlinie zugewiesen.
+
+#### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Neue Microsoft Edge-Browsereinstellungen für Windows 10 und höher <!-- 3174639 -->
+Dieses Update enthält neue Einstellungen, die Sie dabei unterstützen, den Microsoft Edge-Browser auf Ihren Geräten zu steuern und zu verwalten. Eine Liste dieser Einstellungen finden Sie in den [Geräteeinschränkungen für Windows 10 (und höher)](device-restrictions-windows-10.md#microsoft-edge-browser).
+
+#### <a name="new-apps-support-with-app-protection-policies----3330037---"></a>Neue Apps-Unterstützung mit App-Schutzrichtlinien <!-- 3330037 -->
+Sie können jetzt die folgenden Apps mit [Intune-App-Schutzrichtlinien](app-protection-policies.md) verwalten:
+- Stream (iOS)
+- To DO (Android, iOS)
+- PowerApps (Android, iOS)
+- Flow (Android, iOS)
+
+Verwenden Sie App-Schutzrichtlinien, um für diese Apps Unternehmensdaten zu schützen und die Datenübertragung zu steuern, wie andere richtlinienverwaltete Intune-Apps. Hinweis: Wenn Flow noch nicht in der Konsole sichtbar ist, fügen Sie Flow beim Erstellen oder Bearbeiten von App-Schutzrichtlinien hinzu. Verwenden Sie hierzu die Option **+ Weitere Apps**, und geben Sie dann die *App-ID* für Flow in das Eingabefeld ein. Verwenden Sie für Android *com.microsoft.flow* und für iOS *com.microsoft.procsimo*.
+
+#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Aktualisierte Benutzeroberfläche für Intune-App-Schutzrichtlinien <!-- 3251427 -->
+Wir haben die Bezeichnungen für Einstellungen und Schaltflächen für den Intune-App-Schutz geändert, um die Verständlichkeit zu erleichtern. Einige Änderungen sind:  
+
+- **Ja** / **Nein**-Steuerelemente wurden in erster Linie in **Blockieren** / **Zulassen**- und **Deaktivieren** / **Aktivieren**-Steuerelemente geändert. Die Bezeichnungen wurden ebenfalls aktualisiert.  
+- Einstellungen wurden darüber hinaus neu formatiert, um die Einstellungen und ihre Bezeichnungen im Steuerelement nebeneinander anzuzeigen und eine bessere Navigation zu ermöglichen.   
+
+Die Standardeinstellungen und die Anzahl von Einstellungen bleiben gleich, aber durch die oben genannten Änderungen werden Verständlichkeit, Navigation und Verwendung der Einstellungen verbessert, um dem Benutzer eine einfachere Anwendung der ausgewählten App-Schutzrichtlinien zu ermöglichen.
+
+### <a name="device-configuration"></a>Gerätekonfiguration
+
+#### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>Die iOS- und macOS-Versionsnummern und -Buildnummern werden angezeigt <!-- 1892471 -->
+Unter **Gerätekonformität** > **Gerätekonformität** wird die iOS-und macOS-Betriebssystemversion angezeigt, für die Konformitätsrichtlinien verwendet werden können. Dieses zukünftige Update umfasst auch die Buildnummer, die für beide Plattformen konfigurierbar ist.
+Wenn Sicherheitsupdates veröffentlicht werden, bleibt die Versionsnummer von Apple in der Regel unverändert bestehen, die Buildnummer wird jedoch aktualisiert. Wenn Sie die Buildnummer in einer Konformitätsrichtlinie verwenden, können Sie einfach überprüfen, ob ein Sicherheitsupdate installiert wurde.
+Wie Sie dieses Feature verwenden, erfahren Sie in den [iOS](compliance-policy-create-ios.md#device-health)- und [macOS](compliance-policy-create-mac-os.md#device-properties)-Konformitätsrichtlinien.
+
+#### <a name="update-rings-are-being-replaced-with-delivery-optimization-settings-for-windows-10-and-later----2753807---"></a>Updateringe werden mit Einstellungen zur Übermittlungsoptimierung für Windows 10 und höher ersetzt <!-- 2753807 -->
+Die Übermittlungsoptimierung ist ein neues Konfigurationsprofil für Windows 10 und höher. Diese Funktion bietet eine optimierte Benutzeroberfläche zum Übermitteln von Softwareupdates an Geräte in Ihrer Organisation. Mit diesem Update können Sie die Einstellungen auch mithilfe eines Konfigurationsprofils an neue und vorhandene Updateringe übermitteln.
+Wie Sie ein Konfigurationsprofil für die Übermittlungsoptimierung konfigurieren, erfahren Sie unter [Einstellungen zur Übermittlungsoptimierung in Microsoft Intune in Windows 10 (und höher)](delivery-optimization-windows.md).
+
+
+### <a name="device-enrollment"></a>Geräteregistrierung
+
+#### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>Auswählen von Apps zur Nachverfolgung auf der Seite mit dem Registrierungsstatus <!-- 2531007 -->
+Sie können auswählen, welche Apps auf der Registrierungsstatusseite nachverfolgt werden. Solange diese Apps nicht installiert sind, kann der Benutzer das Gerät nicht verwenden. Weitere Informationen finden Sie unter [Einrichten einer Statusseite für die Registrierung](windows-enrollment-status.md).
+
+#### <a name="search-for-autopilot-device-by-serial-number---2595788---"></a>Suchen nach dem Autopilot-Gerät mithilfe der Seriennummer <!--2595788 -->
+Sie können jetzt mithilfe der Seriennummer nach dem Autopilot-Gerät suchen. Wählen Sie zu diesem Zweck **Geräteregistrierung** > **Windows-Registrierung** > **Geräte** aus, geben Sie die Seriennummer in das Feld **Nach Seriennummer suchen** ein, und drücken Sie die EINGABETASTE.
+
+#### <a name="track-installation-of-office-proplus---2620217---"></a>Nachverfolgen der Installation von Office ProPlus <!--2620217 -->
+Benutzer können den Installationsfortschritt von [Office ProPlus](apps-add-office365.md) mithilfe der [Seite zum Registrierungsstatus](windows-enrollment-status.md) nachverfolgen. Weitere Informationen finden Sie unter [Einrichten einer Statusseite für die Registrierung](windows-enrollment-status.md).
+
+#### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>Warnungen für ablaufende VPP-Token oder Ausreizung der Unternehmensportal-Lizenz <!-- 2237572 -->
+Wenn Sie das Volume Purchase Programm (VPP) zur Vorabbereitstellung des Unternehmensportals während der DEP-Registrierung verwenden, warnt Intune Sie, wenn das VPP-Token vor dem Ablauf steht und die Lizenzen für das Unternehmensportal knapp werden.
+
+### <a name="macos-device-enrollment-program-support-for-apple-school-manager-accounts---3006133---"></a>Unterstützung des Programms zur macOS-Geräteregistrierung für Apple School Manager-Konten <!--3006133 -->
+Intune unterstützt jetzt die Verwendung des Programms zur Geräteregistrierung für macOS-Geräte für Apple School Manager-Konten.  Weitere Informationen finden Sie unter [Automatisches Registrieren von macOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](device-enrollment-program-enroll-macos.md).
+
+### <a name="new-intune-device-subscription-sku---3312071--"></a>Neue Abonnement-SKU für Intune-Geräte <!--3312071-->
+Eine neue gerätebasierte Abonnement-SKU ist nun verfügbar, mit der die Kosten für die Geräteverwaltung in Unternehmen reduziert werden können. Diese SKU für Intune-Geräte wird monatlich pro Gerät lizenziert. Der Preis hängt vom Lizenzierungsprogramm ab. Die SKU ist in den Lizenzierungsprogrammen Direct Channel, Enterprise Agreement (EA), Microsoft Products and Services Agreement (MPSA), Open License und Cloud Solution Provider (CSP) verfügbar.
+
+### <a name="device-management"></a>Geräteverwaltung
+
+#### <a name="temporarily-pause-kiosk-mode-on-android-devices-to-make-changes----3041935---"></a>Temporäres Anhalten des Kioskmodus auf Android-Geräten zum Durchführen von Änderungen <!-- 3041935 -->
+Bei Verwendung von Android-Geräten im Multi-App-Kioskmodus kann es erforderlich werden, dass ein IT-Administrator Änderungen am Gerät vornimmt. Dieses Update beinhaltet eine neue Multi-App-Kioskeinstellung, die dem IT-Administrator erlaubt, den Kioskmodus unter Verwendung einer PIN temporär anzuhalten und Zugriff auf das gesamte Gerät zu erhalten.
+Informationen zu den Kioskeinstellungen finden Sie unter [Einstellungen für Geräteeinschränkungen für Android Enterprise](device-restrictions-android-for-work.md).
+
+#### <a name="enable-virtual-home-button-on-android-enterprise-kiosk-devices-----3042021---"></a>Aktivieren einer virtuellen Startschaltfläche auf Android Enterprise-Kioskgeräten <!-- 3042021 -->
+Eine neue Einstellung erlaubt es den Benutzern, auf ihrem Gerät auf einen Softkey zu tippen, um auf ihrem Multi-App-Kioskgerät zwischen der Managed Home Screen-App und anderen zugewiesenen Apps zu wechseln. Diese Einstellung ist insbesondere dann nützlich, wenn eine Kiosk-App des Benutzers nicht ordnungsgemäß auf die ZURÜCK-Taste reagiert. Sie können diese Einstellung für unternehmenseigene, einzeln genutzte Android-Geräte konfigurieren. Wechseln Sie im Azure-Portal zu Intune und anschließend zur Gerätekonfiguration, um die Einstellung **Virtuelle Startschaltfläche** zu aktivieren oder zu deaktivieren. Wählen Sie ein aktuelles Gerätekonfigurationsprofil aus, oder erstellen Sie ein neues Profil, um die zugehörigen Kioskeinstellungen zu bearbeiten.
+Informationen zu den Kioskeinstellungen finden Sie unter [Einstellungen für Geräteeinschränkungen für Android Enterprise](device-restrictions-android-for-work.md).
 
 ## <a name="week-of-november-12-2018"></a>Woche vom 12. November 2018
 
@@ -84,7 +167,7 @@ Sehen Sie sich im Blatt **Problembehandlung** die Spalte **App-Installation** an
 
 ### <a name="device-configuration"></a>Gerätekonfiguration
 
-#### <a name="network-access-control-support-on-ios-vpn-clients----1333693-wnready---"></a>Unterstützung der Netzwerkzugriffssteuerung auf iOS-VPN-Clients <!-- 1333693 wnready -->
+#### <a name="network-access-control-support-on-ios-vpn-clients----1333693---"></a>Unterstützung der Netzwerkzugriffssteuerung auf iOS-VPN-Clients <!-- 1333693 -->
 Mit diesem Update gibt es eine neue Einstellung zum Aktivieren der Netzwerkzugriffssteuerung (Network Access Control, NAC), wenn Sie ein VPN-Konfigurationsprofil für Cisco AnyConnect, F5 Access und Citrix SSO für iOS erstellen. Über diese Einstellung kann die NAC-ID des Geräts in das VPN-Profil aufgenommen werden. Derzeit gibt es keine VPN-Clients oder NAC-Partnerlösungen, die diese neue NAC-ID unterstützen, aber wir werden Sie über unseren [Supportblogbeitrag](ttps://aka.ms/iOS12_and_vpn) auf dem Laufenden halten.
 
 Zur Nutzung der Netzwerkzugriffssteuerung ist Folgendes erforderlich:
@@ -146,9 +229,6 @@ Mithilfe von Intune-App-Schutzrichtlinien können Sie verschiedene Einstellungen
   
 Die Funktionalität der Einstellungen ändert sich nicht, aber es wird einfacher sein, sie bei der Richtlinienerstellung zu finden.
 
-### <a name="new-intune-device-subscription-sku---3312071--"></a>Neue Abonnement-SKU für Intune-Geräte !--3312071-->
-Eine neue gerätebasierte Abonnement-SKU ist nun verfügbar, mit der die Kosten für die Geräteverwaltung in Unternehmen reduziert werden können. Diese SKU für Intune-Geräte wird monatlich pro Gerät lizenziert. Der Preis hängt vom Lizenzierungsprogramm ab. Die SKU ist in den Lizenzierungsprogrammen Direct Channel, Enterprise Agreement (EA), Microsoft Products and Services Agreement (MPSA), Open License und Cloud Solution Provider (CSP) verfügbar.
-
 ### <a name="intune-apps"></a>Intune-Apps
 
 #### <a name="intune-will-support-a-maximum-package-size-of-8-gb-for-lob-apps----1727158---"></a>Intune-Unterstützung für eine maximale Paketgröße von 8 GB für LOB-Anwendungen <!-- 1727158 -->
@@ -173,7 +253,7 @@ Für Kunden, die am Rollout teilnehmen, ersetzt diese neue Benutzeroberfläche d
 
 Weitere Informationen finden Sie in „Anfordern von Support für Microsoft Intune“ unter [Neue Benutzeroberfläche für Hilfe und Support](get-support.md#new-help-and-support-experience).  
 
-### <a name="powershell-module-for-intune--preview-available----wnready-951068---"></a>Vorschauversion für das PowerShell-Modul für Intune verfügbar <!-- wnready 951068 -->
+### <a name="powershell-module-for-intune--preview-available----951068---"></a>Vorschauversion für das PowerShell-Modul für Intune verfügbar <!-- 951068 -->
 Ein neues PowerShell-Modul, das über Microsoft Graph eine Unterstützung für die Intune-API bietet, ist nun als Vorschauversion auf [GitHub]( https://aka.ms/intunepowershell) verfügbar. Weitere Informationen zur Verwendung dieses Moduls finden Sie dort unter README. 
 
 
@@ -355,7 +435,7 @@ Informationen zu den aktuell verfügbaren VPN-Profileinstellungen finden Sie unt
 
 #### <a name="the-macos-company-portal-installer-now-includes-the-version-number-in-the-installer-file-name---2652728--"></a>Im Dateinamen des Installationsprogramm für das macOS-Unternehmensportal ist nun die Versionsnummer des Installationsprogramms enthalten<!--2652728-->
 
-#### <a name="ios-automatic-app-updates----2729759-wnready---"></a>Automatische App-Updates unter iOS<!-- 2729759 wnready -->
+#### <a name="ios-automatic-app-updates----2729759---"></a>Automatische App-Updates unter iOS<!-- 2729759 -->
 Für iOS-Version 11.0 und höher können nun automatische App-Updates für Apps ausgeführt werden, die für Geräte und Benutzer lizenziert sind.
 
 
@@ -733,7 +813,7 @@ Bei diesem Update ist das Benutzerdiagramm wieder enthalten und wird im Azure-Po
 
 ### <a name="device-enrollment"></a>Geräteregistrierung
 
-#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118-wnready---"></a>Unterstützung für die Registrierung mit Windows Autopilot ohne Benutzerauthentifizierung <!-- 1165118 wnready -->
+#### <a name="support-for-windows-autopilot-enrollment-without-user-authentication----1165118---"></a>Unterstützung für die Registrierung mit Windows Autopilot ohne Benutzerauthentifizierung <!-- 1165118 -->
 Intune unterstützt jetzt die Registrierung mit Windows Autopilot ohne Benutzerauthentifizierung. Dies ist eine neue Option im Windows Autopilot-Bereitstellungsprofil („Autopilot Deployment mode“ (Autopilot-Bereitstellungsmodus) kann auf „Self-Deploying“ (Selbstbereitstellung) festgelegt werden).  Auf dem Gerät muss Windows 10 Insider Preview Build 17672 oder höher ausgeführt werden, außerdem muss ein TPM 2.0-Chip eingebaut sein, um diese Art der Registrierung erfolgreich abzuschließen. Da keine Benutzerauthentifizierung erforderlich ist, sollten Sie diese Option nur Geräte zuweisen, zu denen Sie physisch Zugang haben.
 
 #### <a name="new-languageregion-setting-when-configuring-oobe-for-autopilot----1821766---"></a>Neue Einstellung für Sprache/Region beim Konfigurieren von OOBE für AutoPilot <!-- 1821766 -->
@@ -781,7 +861,7 @@ Für jedes Gerät sind jetzt auch die CCID-Informationen (Chip Card Interface De
 #### <a name="assign-all-users-and-all-devices-as-scope-groups----2196803---"></a>Zuweisen aller Benutzer und aller Geräte als Bereichsgruppen <!-- 2196803 -->
 Sie können alle Benutzer, alle Geräte sowie alle Benutzer und alle Geräte in Bereichsgruppen zuweisen. Klicken Sie hierzu auf **Intune-Rollen** > **Alle Rollen** > **Policy and profile manage** (Richtlinien- und Profil-Manager) > **Zuweisungen**, wählen Sie eine Zuweisung aus, und klicken Sie dann auf **Bereich (Gruppen)**.
 
-#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806-wnready--"></a>UDID-Informationen für iOS- und macOS-Geräte <!-- 2219806 wnready-->
+#### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806---"></a>UDID-Informationen für iOS- und macOS-Geräte <!-- 2219806 -->
 Navigieren Sie zu **Geräte** > **Alle Geräte**, wählen Sie ein Gerät aus, und klicken Sie auf **Hardware**, um die UDID (eindeutiger Gerätebezeichner) für iOS- und macOS-Geräte anzuzeigen. Die UDID ist nur für Unternehmensgeräte verfügbar (wie unter **Geräte** > **Ale Geräte**, Gerät auswählen, **Eigenschaften** > **Gerätebesitz** festgelegt).
 
 ### <a name="intune-apps"></a>Intune-Apps
@@ -955,7 +1035,7 @@ Die Unternehmensportal-App für macOS-Geräte wurde aktualisiert, um die Kundene
 
 Weitere Informationen finden Sie unter [Melden von macOS-Fehlern](/intune-user-help/send-errors-macos).
 
-#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010-wnready---"></a>Intune wird an Fluent Design System in der Unternehmensportal-App für Windows 10 angepasst <!-- 1195010 WNready -->
+#### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10----1195010---"></a>Intune wird an Fluent Design System in der Unternehmensportal-App für Windows 10 angepasst <!-- 1195010 -->
 Die Intune-Unternehmensportal-App für Windows 10 wurde mit der [Navigationsansicht von Fluent Design System](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics) aktualisiert. An der Seite der App befindet sich eine statische, vertikale Liste aller Seiten der obersten Ebene. Klicken Sie auf einen beliebigen Link, um Seiten schnell anzuzeigen und zwischen ihnen zu wechseln. Dies ist das erste von mehreren Updates, die wir Ihnen im Rahmen unserer fortlaufenden Bestrebungen präsentieren werden, die Intune-Benutzeroberfläche zu optimieren. Wenn Sie sehen möchten, wie die aktualisierte Benutzeroberfläche aussieht, wechseln Sie zur Seite [Updates der Benutzeroberfläche für Benutzer-Apps in Intune](whats-new-app-ui.md).
 
 ## <a name="week-of-april-16-2018"></a>Woche vom 16. April 2018
@@ -1016,6 +1096,27 @@ Wenn Sie sehen möchten, wie die aktualisierte Benutzeroberfläche aussieht, wec
 Sie können jetzt lokale Exchange-Daten mit Outlook Mobile mithilfe von Intune App-Schutzrichtlinien (App Policy Protection, APP) und dem bedingten Zugriff (Conditional Access, CA) schützen. Um eine App-Schutzrichtlinie im Azure-Portal hinzuzufügen oder zu ändern, wählen Sie die Option **Microsoft Intune** > **Client-Apps** > **App-Schutzrichtlinien** aus. Bevor Sie dieses Feature verwenden, sollten Sie sicherstellen, dass Sie die [Anforderungen für Outlook für iOS und Android](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx) erfüllen.
 
 ## <a name="notices"></a>Benachrichtigungen
+
+### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Änderungsplan: Connector zum Herstellen der Verbindung von Exchange Online mit Intune wird in Intune nicht verfügbar sein <!-- 3105122 -->
+Um Ihre Erfahrung mit Exchange Online und bedingtem Zugriff zu vereinfachen, werden wir den „Dienst-zu-Dienst“-Connector zum Herstellen der Verbindung von Exchange Online mit Intune deaktivieren. Diese Änderung beginnt mit dem Dienstupdate vom Dezember und wird mit dem Dienstupdate vom Februar 2019 abgeschlossen.
+
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
+Sie erhalten diese Nachricht, da Sie unseren Unterlagen zufolge die „Dienst-zu-Dienst“-Connectorfunktionalität in Ihrer Umgebung verwenden. Der „Dienst-zu-Dienst“-Connector unterstützt die Intune-Verwaltung von Exchange Active Sync Only-Geräten für Exchange Online und nicht die lokale Infrastruktur. Dieser Connector scheint aufgrund der Art, wie er in der Konsole angezeigt wird, für bedingten Zugriff (Conditional Access, CA) erforderlich zu sein, ist es in der Praxis jedoch nicht. Mit dem Dezember-Update des Intune-Diensts werden wir die Schaltfläche zum Einrichten neuer Connector deaktivieren, damit dies in der Konsole eindeutig ist. Anschließend werden im Februar 2019 alle vorhandenen Connector zum Herstellen der Verbindung von Exchange Online mit Intune deaktiviert.
+
+Wenn Sie diese Connector in Ihrer Umgebung verwenden, können Sie nach dem Deaktivieren der Connector im Februar keine Exchange Active Sync Only-Geräte in Intune mehr überwachen oder zurücksetzen. Während dieser Änderung werden keine Auswirkungen für Ihre Endbenutzer erwartet.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wie kann ich mich auf die Änderung vorbereiten?
+
+Wenn Sie den „Dienst-zu-Dienst“-Connector eingerichtet haben und über Exchange Active Sync Only-Geräte verfügen, wechseln Sie zu anderen Methoden zum Verwalten Ihrer Geräte. Hierzu stehen Ihnen folgende Optionen zur Verfügung:
+
+- Registrieren von Geräten in der mobilen Geräteverwaltung (Mobile Device Management, MDM)
+- Verwenden von App-Schutzrichtlinien zum Verwalten Ihrer Geräte
+- Verwenden Sie Exchange-Steuerelemente wie hier in der Dokumentation beschrieben. 
+
+#### <a name="additional-information"></a>Weitere Informationen
+[Konfigurieren des Exchange-Dienstconnectors für Intune und Exchange Online](https://docs.microsoft.com/intune/exchange-service-connector-configure)
+
+
 
 ### <a name="plan-for-change-performance-updates-to-intune-for-education---1750215--"></a>Geplante Änderung: Verbesserung der Leistung von Intune for Education <!--1750215-->
 Intune for Education wird aktualisiert, um die Geschwindigkeit und Zuverlässigkeit beim Zuweisen von Einstellungen zu Benutzern oder Geräten zu verbessern. Im Rahmen dieser Änderung werden die Richtlinien- oder Einstellungszuweisungen gegen Ende November in neue Gruppen verschoben.
@@ -1090,14 +1191,8 @@ Prüfen Sie die Kennworteinstellungen für die Einschränkungen und Konformität
 #### <a name="additional-information"></a>Zusätzliche Informationen
 https://aka.ms/PasswordSettings 
 
-### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Planen der Änderung: „Change Password at Next Auth“ (Kennwort bei der nächsten Authentifizierung ändern) zu Intune hinzugefügt<!-- 1873216 -->
-Für das Service Release im September plant Intune, die von Apple neu veröffentlichte Einstellung **Change Password at Next Auth** (Kennwort bei der nächsten Authentifizierung ändern) für Geräte mit MacOS-Version 10.13 und höher zu integrieren. Vor dieser Einstellung können MDM-Anbieter nicht überprüfen, ob das Gerätekennwort geändert wurde, um kompatibel zu sein. Die Konfigurations- und Konformitätsrichtlinien von Intune validieren nur, dass bei der nächsten Änderung eines Gerätekennworts dieses als konform gekennzeichnet ist. Wenn diese neue Apple-Funktion hinzugefügt wird, erhalten Ihre MacOS-Benutzer eine Aufforderung, ihr Kennwort zu aktualisieren, selbst wenn ihr Kennwort konform ist.
-
-#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Dies wirkt sich auf Umgebungen mit einer MacOS-Geräterichtlinie unter Verwendung von Intune oder einer hybriden MDM aus. Mit der neuen Apple-Einstellung **Change Password at Next Auth** (Kennwort bei der nächsten Authentifizierung ändern) kann Intune Benutzer zwingen, ihr Kennwort zu aktualisieren, wenn eine Passwortrichtlinie durchgesetzt wird. Wenn Sie Unternehmensressourcen blockieren, bis das Gerät als konform gekennzeichnet ist, werden Ihre Endbenutzer möglicherweise für den Zugriff auf Unternehmensressourcen wie E-Mail- oder SharePoint-Websites gesperrt, bis sie ihr Kennwort zurücksetzen. Künftig zwingen alle Aktualisierungen der Konfigurations- und Konformitätskennwortrichtlinien Benutzer gezielt dazu, ihre Kennwörter zu aktualisieren.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
-Setzen Sie sich mit Ihrem Helpdesk in Verbindung. Wenn Sie diese MacOS-Geräterichtlinie nicht durchsetzen wollen, empfehlen wir Ihnen, Ihre bestehende MacOS-Richtlinie aufzuheben oder zu löschen. Kundenbefragungen zeigen, dass die meisten Kunden von dieser Änderung nicht betroffen sind. Die meisten Endbenutzer aktualisieren ihr Kennwort, nachdem sie eine Aufforderung erhalten haben, sich mit einem Kennwort anzumelden, oder setzen ihr Kennwort zurück, um konform zu bleiben.
+### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple erfordert Updates für die Transportsicherheit für Anwendungen <!--748318-->
+Apple hat angekündigt, dass bestimmte Anforderungen für die Transportsicherheit für Anwendungen (Application Transport Security, ATS) erzwungen werden. ATS wird verwendet, um eine strengere Sicherheit in allen App-Kommunikationen über HTTPS zu erzwingen. Diese Änderung wirkt sich auf Intune-Kunden aus, die die iOS-Unternehmensportal-App verwenden. Die aktuellen Informationen finden Sie auf dem [Intune-Support-Blog](https://aka.ms/compportalats).
 
 ### <a name="plan-for-change-intune-moving-to-tls-12"></a>Geplante Änderung: Umstellung von Intune auf TLS 1.2
 Ab dem 31. Oktober 2018 unterstützt Intune die Version 1.2 des Transport Layer Security-Protokolls (TLS), um die beste Verschlüsselung bereitzustellen und den Dienst standardmäßig sicherer zu gestalten und auf andere Microsoft-Dienste wie Microsoft Office 365 auszurichten. Für Office wurde diese Änderung in MC128929 bekannt gegeben.
@@ -1113,13 +1208,6 @@ Wenn ab dem 31. Oktober 2018 Probleme in Zusammenhang mit der Verwendung einer �
 Es wird empfohlen, Abhängigkeiten von TLS 1.0 und 1.1 proaktiv aus Ihren Umgebungen zu entfernen und TLS 1.0 und 1.1 nach Möglichkeit auf Betriebssystemebene zu deaktivieren. Beginnen Sie schon heute mit der Planung der Migration zu TLS 1.2. Im Blogbeitrag unten finden Sie eine Liste der Geräte, die derzeit nicht von Intune unterstützt werden, aber weiterhin Richtlinien erhalten, und bei denen keine Kommunikation mithilfe von TLS 1.2 möglich ist. Sie müssen diese Endbenutzer möglicherweise darüber benachrichtigen, dass sie den Zugriff auf Unternehmensressourcen verlieren.
 
 **Weitere Informationen:** [Umstellung von Intune auf TLS 1.2 für die Verschlüsselung](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/)
-
-
-### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>Planen von Änderungen: Verwenden von Intune in Azure für die Verwaltung Ihrer mobilen Geräte jetzt möglich <!-- 1227338 -->
-Vor über einem Jahr wurde eine [öffentlich zugängliche Vorschau von Intune in Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) angekündigt. Sechs Monate später wurde [die neue Benutzeroberfläche für Administratoren allgemein zugänglich gemacht](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/). Ab 31. August 2018 wird die Verwaltung mobiler Geräte (MDM) in der klassischen Silverlight-Konsole für Kunden deaktiviert, die eine eigenständige Intune-Version verwenden. Stattdessen können Sie [Intune in Azure](https://aka.ms/Intune_on_Azure) verwenden, wenn Sie Ihre Geräte mobil verwalten möchten. Wenn Sie immer noch die klassische Konsole für die Verwaltung mobiler Geräte verwenden, sollten Sie sich nun mit Intune in Azure vertraut machen. Diese Änderungen sollten keine Auswirkungen auf die Benutzer haben. Die klassische PC-Verwaltung bleibt in Silverlight erhalten. Erfahren Sie [hier](https://aka.ms/Intune_on_Azure_mdm) mehr über diese Änderungen und deren Folgen für Sie.
-
-### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple erfordert Updates für die Transportsicherheit für Anwendungen <!--748318-->
-Apple hat angekündigt, dass bestimmte Anforderungen für die Transportsicherheit für Anwendungen (Application Transport Security, ATS) erzwungen werden. ATS wird verwendet, um eine strengere Sicherheit in allen App-Kommunikationen über HTTPS zu erzwingen. Diese Änderung wirkt sich auf Intune-Kunden aus, die die iOS-Unternehmensportal-App verwenden. Die aktuellen Informationen finden Sie auf dem [Intune-Support-Blog](https://aka.ms/compportalats).
 
 
 

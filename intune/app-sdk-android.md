@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 12c48a00e4b755409b698d5f2ee6182403802f23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c556bab6deadc0db0ea625ee3c26bba636ea497d
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190403"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829180"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Entwicklerhandbuch zum Microsoft Intune App SDK für Android
 
@@ -639,21 +639,9 @@ Keine zusätzlichen Manifestwerte müssen konfiguriert werden.
 
 Bei Bedarf können die Autorität und NonBrokerRedirectURI angegeben werden.
 
-Führen Sie die folgenden Schritte aus, um Ihre App für Azure AD zu registrieren.
-
-Im Azure-Portal:
-1.  Navigieren Sie zum Blatt **Azure Active Directory**.
-2.  Wählen Sie die Einrichtung **App-Registrierung** für die Anwendung aus.
-3.  Klicken Sie in den **Einstellungen** unter der Überschrift **API-Zugriff** auf **Erforderliche Berechtigung**. 
-4.  Klicken Sie auf **+ Hinzufügen**.
-5.  Klicken Sie auf **Hiermit wählen Sie eine API aus**. 
-6.  Geben Sie in das Suchfeld **Microsoft Mobile Application Management** (Verwaltung mobiler Microsoft-Anwendungen) ein.
-7.  Wählen Sie in der API-Liste **Microsoft Mobile Application Management** (Verwaltung mobiler Microsoft-Anwendungen) aus, und klicken Sie auf „Auswählen“.
-8.  Klicken Sie auf **Read and Write the User’s App Management Data** (Lese- und Schreibberechtigungen für die App-Verwaltungsdaten des Benutzers).
-9.  Klicken Sie auf **Fertig**.
-10. Klicken Sie auf **Berechtigungen erteilen**, und klicken Sie anschließend auf **Ja**. 
-
-Informationen über das Registrieren einer Anwendung mit Azure AD finden Sie [hier](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications). 
+Führen Sie die folgenden Schritte aus, um Ihre App für Azure AD zu registrieren:
+* Informationen über das Registrieren einer Anwendung mit Azure AD finden Sie [hier](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications). 
+* Stellen Sie sicher, dass die Schritte befolgt werden, um Ihrer Android-App Berechtigungen für den Dienst der App-Schutzrichtlinie (App Protection Policy, APP) zu erteilen. Verwenden Sie die Anweisungen im [Leitfaden zu den ersten Schritten mit dem Intune SDK](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) unter „Erteilen von Berechtigungen für den Zugriff auf den Intune-App-Schutzdienst durch Ihre App (optional)“. 
 
 Darüber hinaus finden Sie unten die Anforderungen für den [bedingten Zugriff](#conditional-access).
 

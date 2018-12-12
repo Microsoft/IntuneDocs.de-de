@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/30/2018
+ms.date: 11//28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e0331210a10727ff5753e6c227777cd1ebb16d9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185958"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728819"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Erstellen und Zuweisen von App-Schutzrichtlinien
 
@@ -74,10 +74,14 @@ Neu erstellte Richtlinien werden erst auf die Benutzer angewendet, wenn Sie sie 
 
    ![Screenshot des Bereichs „Zuweisungen“ mit Hervorhebung der Menüoption „Select groups to include“ (Einzuschließende Gruppen auswählen)](./media/app-protection-policy-add-users.png)
 
-3.  Es wird eine Liste aller Sicherheitsgruppen in Ihrem **Azure Active Directory**-Verzeichnis angezeigt. Wählen Sie die Benutzergruppen aus, auf die diese Richtlinie angewendet werden soll, und klicken Sie dann auf **Auswählen**. Die Auswahl von **Auswählen** bewirkt die Bereitstellung der Richtlinie für Benutzer.
+3.  Es wird eine Liste aller Sicherheitsgruppen in Ihrem **Azure Active Directory**-Verzeichnis angezeigt. Wählen Sie die Benutzergruppen aus, auf die diese Richtlinie angewendet werden soll, und klicken Sie dann auf **Auswählen**. 
 
     ![Screenshot des Bereichs „Benutzergruppe hinzufügen“ mit der Liste der Azure Active Directory-Benutzer](./media/azure-ad-user-group-list.png)
 
+4.  Wählen Sie nach dem Einschließen und Ausschließen von Gruppen **Speichern** zum Speichern der Konfiguration und Bereitstellen der Richtlinie für Benutzer aus. Wenn Sie **Verwerfen** auswählen, bevor Sie Ihre Konfiguration speichern, verwerfen Sie alle Änderungen, die Sie auf den Registerkarten *Einschließen* und *Ausschließen* vorgenommen haben.   
+ 
+     ![Screenshot mit Optionen zum Speichern und Verwerfen](./media/save-assignment.png)
+  
 Damit haben Sie eine Richtlinie erstellt und für die Benutzer bereitgestellt.
 
 Von der Richtlinie sind nur Benutzer mit zugewiesenen Microsoft Intune-Lizenzen betroffen. Benutzer in der ausgewählten Sicherheitsgruppe, denen keine Intune-Lizenz zugewiesen wurde, sind nicht betroffen.
@@ -109,9 +113,13 @@ Für eine sofortige Anzeige der Änderungen muss der Endbenutzer sich von der Ap
 
 2.  Wählen Sie im Bereich *Intune-App-Schutz* die Option **Zuweisungen** aus, um den Bereich **Intune-App-Schutz – Zuweisungen** zu öffnen. Hier wird die Liste mit aktuellen Benutzergruppen angezeigt, denen diese Richtlinie zugewiesen ist.
 
-3.  Um eine neue Benutzergruppe hinzuzufügen, wählen Sie auf der Registerkarte **Einschließen** die Option **Select groups to include** (Einzuschließende Gruppen auswählen) und anschließend die Benutzergruppe aus. Wählen Sie **Auswählen** aus, um die Richtlinie für die ausgewählte Gruppe bereitzustellen.
+3.  Um eine neue Benutzergruppe hinzuzufügen, wählen Sie auf der Registerkarte *Einschließen* die Option **Select groups to include** (Einzuschließende Gruppen auswählen) und anschließend die Benutzergruppe aus. Wählen Sie **Auswählen** aus, um die Gruppe hinzuzufügen. 
 
-4.  Um eine Benutzergruppe zu löschen, wählen Sie auf der Registerkarte **Ausschließen** die Option **Select groups to exclude** (Auszuschließende Gruppen auswählen) und anschließend die Benutzergruppe aus. Wählen Sie **Auswählen** aus, um die Benutzergruppe zu entfernen.
+4.  Um eine Benutzergruppe auszuschließen, wählen Sie auf der Registerkarte *Ausschließen* die Option **Wählen Sie die Gruppen aus, die ausgeschlossen werden sollen.** und anschließend die Benutzergruppe aus. Wählen Sie **Auswählen** aus, um die Benutzergruppe zu entfernen.  
+
+5.  Um Gruppen zu löschen, die zuvor auf einer der Registerkarten *Einschließen* oder *Ausschließen* hinzugefügt wurden, wählen Sie die Auslassungspunkte (...) und **Löschen** aus. 
+
+5.  Nachdem Ihre Änderungen der Zuweisungen bereit sind, wählen Sie **Speichern** zum Speichern der Konfiguration und Bereitstellen der Richtlinie für die neue Gruppe von Benutzern aus. Wenn Sie **Verwerfen** auswählen, bevor Sie Ihre Konfiguration speichern, verwerfen Sie alle Änderungen, die Sie auf den Registerkarten *Einschließen* und *Ausschließen* vorgenommen haben.
 
 ### <a name="to-change-policy-settings"></a>So ändern Sie Richtlinieneinstellungen
 

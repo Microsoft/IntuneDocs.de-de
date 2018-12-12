@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d5a2bc0939da5ee4cb35585a930f145b832a58ad
-ms.sourcegitcommit: 0dbce0415e53fe963dc7f927ac4b0c06411f199c
+ms.openlocfilehash: e252822569723be6cfe18e488f79a7605f21193c
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281104"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728666"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune
 
@@ -38,7 +38,7 @@ Verwenden Sie App-Schutzrichtlinien mit dem iOS-Feature **Open in Management**, 
 
 -   **Private Geräte von Mitarbeitern, die von keiner MDM-Lösung verwaltet werden:** Sie können die Einstellungen der App-Schutzrichtlinie so festlegen, dass die **App nur Daten an per Richtlinien verwaltete Apps übertragen darf**. Das *Open-In*-Verhalten einer per Richtlinie verwalteten App stellt nur andere per Richtlinie verwaltete Apps als Option für die Freigabe dar. Wenn ein Benutzer versucht, eine richtliniengeschützte Datei als Anhang von OneDrive in der nativen E-Mail-App zu senden, ist diese Datei nicht lesbar.
 
--   **Von Intune verwaltete Geräte:** Für Geräte, die bei Intune registriert sind, wird die Datenübertragung zwischen Apps mit App-Schutzrichtlinien und anderen verwalteten iOS-Apps, die über Intune bereitgestellt wurden, automatisch zugelassen. Aktivieren Sie die Einstellung **Allow app to transfer data to other apps** (Zulassen, dass die App Daten an andere Apps überträgt), und wählen Sie die gewünschte Freigabestufe aus, um festzulegen, wie Daten an andere Apps übertragen werden sollen. Aktivieren Sie die Einstellung **Allow app to receive data from other apps** (Zulassen, dass die App Daten von anderen Apps empfängt), und wählen Sie die gewünschte Datenempfangsstufe aus, um festzulegen, wie eine App Daten von anderen Apps empfangen soll. Sie können das Feature **Open in Management** verwenden, um die Datenübertragung zwischen Apps zu steuern, die über Intune bereitgestellt werden. Weitere Informationen zum Empfangen und Senden von App-Daten finden Sie unter [Einstellungen für die Datenverlagerung](app-protection-policy-settings-ios.md#data-relocation-settings).   
+-   **Von Intune verwaltete Geräte:** Für Geräte, die bei Intune registriert sind, wird die Datenübertragung zwischen Apps mit App-Schutzrichtlinien und anderen verwalteten iOS-Apps, die über Intune bereitgestellt wurden, automatisch zugelassen. Aktivieren Sie die Einstellung **Allow app to transfer data to other apps** (Zulassen, dass die App Daten an andere Apps überträgt), und wählen Sie die gewünschte Freigabestufe aus, um festzulegen, wie Daten an andere Apps übertragen werden sollen. Aktivieren Sie die Einstellung **Allow app to receive data from other apps** (Zulassen, dass die App Daten von anderen Apps empfängt), und wählen Sie die gewünschte Datenempfangsstufe aus, um festzulegen, wie eine App Daten von anderen Apps empfangen soll. Sie können das Feature **Open in Management** verwenden, um die Datenübertragung zwischen Apps zu steuern, die über Intune bereitgestellt werden. Weitere Informationen zum Empfangen und Senden von App-Daten finden Sie unter [Einstellungen für die Datenverlagerung](app-protection-policy-settings-ios.md#data-protection-settings).   
 
 -   **Von einer MDM-Lösung eines Drittanbieters verwaltete Geräte:** Sie können die Datenübertragung mithilfe des iOS-Features **Open in Management** auf verwaltete Apps einschränken.
 Wenn Sie sicherstellen möchten, dass Apps, die Sie mithilfe der MDM-Lösung eines Drittanbieters bereitstellen, auch den in Intune konfigurierten App-Schutzrichtlinien zugeordnet sind, müssen Sie die Benutzer-UPN-Einstellung wie im folgenden Abschnitt mit der Überschrift [Konfigurieren der Benutzer-UPN-Einstellung](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) beschrieben konfigurieren. Wenn Apps mithilfe der Benutzer-UPN-Einstellung bereitgestellt werden, werden die App-Schutzrichtlinien auf die App angewendet, wenn sich der Benutzer mit seinem Geschäftskonto anmeldet.
@@ -52,7 +52,7 @@ Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die mit
 
 3.  Stellen Sie die App mithilfe der folgenden App-Konfigurationseinstellungen bereit:
 
-      **Schlüssel** = IntuneMAMUPN, **Wert** = <username@company.com>
+      **key** = IntuneMAMUPN, **value** = <username@company.com>
 
       Beispiel: [‘IntuneMAMUPN’, ‚jondoe@microsoft.com‘]
 
@@ -65,7 +65,7 @@ Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die mit
 
 2. Geben Sie im Abschnitt „Anwendungskonfiguration“ die folgende Einstellung ein:
 
-   **Schlüssel** = IntuneMAMUPN, **Wert** = <username@company.com>
+   **key** = IntuneMAMUPN, **value** = <username@company.com>
 
    Die genaue Syntax des Schlüssel-Wert-Paares kann sich basierend auf Ihrem MDM-Anbieter eines Drittanbieters unterscheiden. In der folgenden Tabelle finden Sie Beispiele für MDM-Lösungen von Drittanbietern sowie die genauen Werte, die Sie für das Schlüssel-Wert-Paar eingeben müssen.
 
