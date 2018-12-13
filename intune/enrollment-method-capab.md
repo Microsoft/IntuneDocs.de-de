@@ -1,7 +1,7 @@
 ---
-title: Intune-Funktionen nach Registrierungsmethode für Windows-Geräte
+title: Funktionen der Intune-Registrierungsmethoden für Windows-Geräte
 titlesuffix: Microsoft Intune
-description: Erfahren Sie, welche Funktionen jede Registrierungsmethode für Windows-Geräte unterstützt.
+description: Funktionen jeder Registrierungsmethode für Windows-Geräte
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -14,18 +14,18 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 38bb88015261aa50d6c27aec026614f1205aebe8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f32a0967c094c16b76ad4c4572ebd8e80c6115b2
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189808"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032128"
 ---
-# <a name="capabilities-by-enrollment-method-for-windows-devices"></a>Funktionen nach Registrierungsmethode für Windows-Geräte
+# <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Funktionen der Intune-Registrierungsmethoden für Windows-Geräte
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Intune ermöglicht es Ihnen, die Geräte und Apps Ihrer Mitarbeiter sowie deren Zugriff auf Ihre Unternehmensdaten zu verwalten. Die Geräte müssen zunächst beim Intune-Dienst registriert werden. Es gibt verschiedene Methoden, um die Geräte Ihrer Mitarbeiter zu registrieren. Für jede Methode gelten andere bewährte Methoden und Funktionen, wie in den Tabellen unten dargestellt.
+Es gibt verschiedene Methoden, um die Geräte Ihrer Mitarbeiter in Intune zu registrieren. Für jede Methode gelten andere bewährte Methoden und Funktionen, wie in den Tabellen unten dargestellt.
 
 ## <a name="best-practices-by-enrollment-method"></a>Bewährte Methoden nach Registrierungsmethode
 | **Empfohlene Methoden** | **[In Azure AD eingebunden](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD verknüpft mit Autopilot](enrollment-autopilot.md)** |**[Massenregistrierung](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** |

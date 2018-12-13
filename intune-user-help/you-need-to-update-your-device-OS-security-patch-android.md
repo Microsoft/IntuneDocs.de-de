@@ -1,11 +1,12 @@
 ---
 title: Sie müssen Ihr Android-Gerät aktualisieren | Microsoft-Dokumentation
-description: ''
+titlesuffix: Microsoft Intune
+description: Sie müssen das Betriebssystem Ihres Android-Geräts aktualisieren.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/11/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,15 +15,15 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope:
 - User help
 ROBOTS: ''
-ms.custom: intune-enduser
-ms.openlocfilehash: 7d67d5cc34dfb701f68763bd6265de009055f815
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: d7edf041157ba0ffc5e195b08633f1f0407c0c88
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147537"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031669"
 ---
-# <a name="you-need-to-update-your-android-devices-operating-system"></a>Sie müssen das Betriebssystem Ihres Android-Geräts aktualisieren.
+# <a name="you-need-to-update-your-android-devices-operating-system"></a>Sie müssen das Betriebssystem Ihres Android-Geräts aktualisieren
 
 Wenn Ihnen in einer Meldung angezeigt wird, dass Ihre Android-Sicherheitspatchebene zu niedrig ist, müssen Sie ein Update installieren, damit Ihr Gerät weiterhin sicher ist. Ein _Patch_ zur Softwarewartung wird veröffentlicht, um dafür zu sorgen, dass die Software reibungslos ausgeführt wird und auf dem neuesten Stand ist. Die Supportabteilung Ihres Unternehmens fordert Sie auf, dieses Patch zu installieren, um sicherzustellen, dass Unternehmensdaten auf Ihrem Gerät so gut wie möglich geschützt sind. Der Speicherort des Sicherheitspatches richtet sich nach dem Typ Ihres Android-Geräts.
 

@@ -1,12 +1,12 @@
 ---
-title: Einrichten der Intune-Registrierung für in Active Directory Hybrid eingebundene Geräte mit Windows Autopilot
-titleSuffix: Microsoft Intune
-description: Verwenden Sie Windows Autopilot, um in Active Directory Hybrid eingebundene Geräte in Intune zu registrieren.
+title: Registrierung für in Active Directory Hybrid eingebundene Geräte – Windows Autopilot
+titleSuffix: ''
+description: Verwenden Sie Windows Autopilot, um in Active Directory Hybrid eingebundene Geräte in Microsoft Intune zu registrieren.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/2/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 77a0c3f3a2e1ed0ee2dbc652049bb7057c736010
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189961"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112441"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot (Vorschauversion)
 Sie können in Azure Active Directory Hybrid eingebundenen Geräte mithilfe von Intune und Windows Autopilot einrichten. Führen Sie dazu die folgenden Schritte aus.
@@ -68,7 +68,7 @@ Für die Registrierung müssen die Geräte über Folgendes verfügen:
 
 Der Intune-Connector für Active Directory erstellt Computer mit Registrierung per Autopilot in der lokalen Active Directory-Domäne. Der Hostcomputer des Intune-Connectors muss über die Berechtigung verfügen, die Computerobjekte innerhalb der Domäne zu erstellen. 
 
-In einigen Domänen werden Computern keine Berechtigungen zum Erstellen von Computern gewährt. Oder möglicherweise möchten Administratoren das domänenweite Computerkontolimit nicht erhöhen. In diesen Situationen können die Berechtigungen an die Organisationseinheit delegiert werden, in der in Azure AD Hybrid eingebundene Geräte erstellt werden.
+In einigen Domänen werden Computern keine Berechtigungen zum Erstellen von Computern gewährt. Darüber hinaus verfügen Domänen über ein integriertes Limit (Standardeinstellung: 10), das für alle Benutzer und Computer gilt, an die keine Rechte zum Erstellen von Computerobjekten delegiert wurden. Deshalb müssen die Rechte an Computer delegiert werden, die den Intune-Connector in der Organisationseinheit hosten, in der in Azure AD Hybrid eingebundene Geräte erstellt werden.
 
 Die Organisationseinheit, die die Berechtigung zum Erstellen von Computern erhalten hat, muss mit Folgendem übereinstimmen:
 - Mit der Organisationseinheit, die im Profil „Domäne beitreten“ eingetragen ist.
@@ -122,7 +122,7 @@ Der Intune-Connector für Active Directory muss auf einem Computer mit Windows S
 
 ### <a name="configure-web-proxy-settings"></a>Konfigurieren von Webproxyeinstellungen
 
-Wenn ein Webproxy in der Netzwerkumgebung vorhanden ist, folgen Sie den hier dargelegten Anweisungen, damit der Intune-Connector für Active Directory ordnungsgemäß funktioniert: [Verwenden von vorhandenen lokalen Proxyservern](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers)
+Wenn ein Webproxy in der Netzwerkumgebung vorhanden ist, folgen Sie den hier dargelegten Anweisungen, damit der Intune-Connector für Active Directory ordnungsgemäß funktioniert: [Verwenden von vorhandenen lokalen Proxyservern](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
 
 
 ## <a name="create-a-device-group"></a>Erstellen einer Gerätegruppe
@@ -201,8 +201,8 @@ Es dauert etwa 15 Minuten, bis sich der Status des Geräteprofils von **Nicht zu
 1. Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 2. Geben Sie die folgenden Eigenschaften ein:
    - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
-   - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein.
-   - **Plattform:** Wählen Sie **Windows 10 und höher** aus.
+   - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein.
+   - **Plattform**: Wählen Sie **Windows 10 und höher** aus.
    - **Profiltyp**: Wählen Sie **Domänenbeitritt (Vorschau)** aus.
 3. Wählen Sie **Einstellungen** aus, und geben Sie ein **Computernamenspräfix**, einen **Domänennamen** und eine **Organisationseinheit** (optional) ein. 
 4. Klicken Sie auf **OK** > **Erstellen**. Das Profil wird erstellt und in der Liste angezeigt.

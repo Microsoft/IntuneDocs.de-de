@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: db655c49277051267036d76e518cc870757f67c2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fafc9381f59ceb4e78e3e76d24694cd0acdcf8d0
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183042"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112373"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekannte Probleme in Microsoft Intune
 
@@ -31,7 +31,7 @@ In diesem Artikel erhalten Sie Informationen zu bekannten Problemen in Microsoft
 
 Wenn Sie einen Fehler melden möchten, der hier nicht aufgeführt ist, [öffnen Sie eine Supportanfrage](get-support.md).
 
-Wenn Sie sich ein neues Feature für Intune wünschen, können Sie auf der [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console)-Website einen Bericht erstellen.
+Wenn Sie ein neues Feature für Intune anfragen möchten, können Sie über die Seite [Microsoft Intune Feedback](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console) einen Bericht senden.
 
 ## <a name="migration"></a>Migration
 
@@ -44,13 +44,13 @@ Konformitätsrichtlinien, die im klassischen Azure-Portal erstellt wurden, werde
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Intune-Funktionen für Legacy-PC-Clients sind nur in der Silverlight-Konsole verfügbar
 
-Die Möglichkeit zum Verwalten von Windows 10 über die Registrierung bei Windows MDM steht in Intune über das Azure-Portal zur Verfügung. Weitere Informationen finden Sie unter [Intune in der Azure-Konsole und der Legacy-Intune-PC-Client](https://docs.microsoft.com/intune-classic/deploy-use/intune-on-azure).
+Die Möglichkeit zum Verwalten von Windows 10 über die Registrierung bei Windows MDM steht in Intune über das Azure-Portal zur Verfügung. Weitere Informationen finden Sie unter [Intune in der Azure-Konsole und der Legacy-Intune-PC-Client](intune-legacy-pc-client.md).
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Während der Migration von Intune erstellte Gruppen könnten die Funktionalität anderer Microsoft-Produkte beeinträchtigen.
 
 Beim Migrieren von Intune zum Azure-Portal könnten Sie eine neue Gruppe mit dem Namen **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421** sehen. Diese Gruppe enthält alle Benutzer in Ihrem Azure Active Directory, nicht nur Benutzer mit Intune-Lizenz. Dies könnte zu Problemen mit anderen Microsoft-Produkten führen, wenn Sie erwarten, dass einige vorhandene oder neue Benutzer nicht Mitglieder von Gruppen sind.
 
-### <a name="status-blades-for-migrated-policies-do-not-work"></a>Statusblätter für migrierte Richtlinien funktionieren nicht
+### <a name="status-blades-for-migrated-policies-dont-work"></a>Statusblätter für migrierte Richtlinien funktionieren nicht
 
 Sie können keine Statusinformationen für Richtlinien anzeigen, die aus dem klassischen Azure-Portal in das Azure-Portal migriert wurden. Im klassischen Portal können Sie jedoch weiterhin Berichte für diese Richtlinien anzeigen. Zum Anzeigen von Statusinformationen für migrierte Konfigurationsrichtlinien müssen Sie diese im Azure-Portal neu erstellen.
 
@@ -60,9 +60,9 @@ Sie können keine Statusinformationen für Richtlinien anzeigen, die aus dem kla
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Mehrfache Aufforderungen zur App-Installation für bestimmte VPP-Apps
 Möglicherweise werden mehrfache Aufforderungen zur App-Installation für bestimmte VPP-Apps angezeigt, die auf den Benutzergeräten bereits installiert sind. Dieses Problem tritt auf, wenn Sie für das VPP-Token, das Sie auf das Intune Azure-Portal hochgeladen haben, die Option **Automatische App-Updates** auf **ON** festgelegt haben.    
 
-Deaktivieren Sie zum Umgehen dieses Problems die Option **Automatische App-Updates** für das VPP-Token. Öffnen Sie dazu Microsoft Intune im Azure-Portal. Wählen Sie in Intune **Client-Apps** > **iOS-VPP-Token** aus. Wählen Sie anschließend das VPP-Token aus, das die betroffene App bereitgestellt hat. Klicken Sie auf **Bearbeiten** > **Automatische App-Updates** > **OFF** (Deaktivieren) > **Speichern**. Alternativ können Sie die Bereitstellung der betroffenen App als VPP-App beenden, um die Aufforderungen zu beenden.    
+Deaktivieren Sie zur Umgehung dieses Problems die Option **Automatische App-Updates** für das VPP-Token. Öffnen Sie dazu Microsoft Intune im Azure-Portal. Wählen Sie in Intune **Client-Apps** > **iOS-VPP-Token** aus. Wählen Sie anschließend das VPP-Token aus, das die betroffene App bereitgestellt hat. Klicken Sie auf **Bearbeiten** > **Automatische App-Updates** > **OFF** (Deaktivieren) > **Speichern**. Alternativ können Sie die Bereitstellung der betroffenen App als VPP-App beenden, um die Aufforderungen zu beenden.    
 
-Dies ist ein bekanntes Problem im aktuellen Release. Eine Behebung des Problems ist bereits geplant. Sobald die Fehlerbehebung implementiert ist, werden den Benutzern keine mehrfachen Aufforderungen zur App-Installation mehr angezeigt.
+Dies ist ein bekanntes Problem im aktuellen Release. Wir arbeiten bereits an einer Fehlerbehebung zur Lösung dieses Problems. Sobald die Fehlerbehebung implementiert ist, werden den Benutzern keine mehrfachen Aufforderungen zur App-Installation mehr angezeigt.
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>Per Volumenlizenz erworbene Apps nur in Standardsprache des Intune-Mandanten verfügbar
 Per Volumenlizenz erworbene iOS-Apps werden angezeigt und können nur für den gleichen Ländercode wie Ihr Intune-Konto zugewiesen werden. Intune synchronisiert nur Apps aus dem gleichen iTunes-Gebietsschema wie der Ländercode des Intune-Mandantenkontos. Wenn Sie beispielsweise eine App kaufen, die nur im US-Store verfügbar ist, Ihr Intune-Konto jedoch auf Deutsch ist, zeigt Intune diese App nicht an.

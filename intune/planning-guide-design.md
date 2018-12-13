@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Entwurfs
+title: Erstellen Ihres Microsoft Intune-Entwurfs
 titlesuffix: Microsoft Intune
 description: Dieser Artikel unterstützt Sie beim Erstellen eines Entwurfs für einen Microsoft Intune-Cloudentwurf und seine Implementierung.
 keywords: ''
@@ -15,13 +15,13 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.custom: ''
-ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186493"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112985"
 ---
 # <a name="create-a-design"></a>Erstellen eines Entwurfs
 
@@ -211,7 +211,7 @@ Sie können eine [Vorlage der oben stehenden Tabelle herunterladen](https://gall
 
 Intune unterstützt sowohl unternehmenseigene als auch persönliche Geräte. Ein Gerät wird als unternehmenseigen betrachtet, wenn Sie es über einen Geräteregistrierungs-Manager oder ein Programm zur Geräteregistrierung registrieren. Beispielsweise kann ein Gerät über das Programm zur Geräteregistrierung von Apple (Device Enrollment Program, DEP) registriert, als unternehmenseigen markiert und in eine Gerätegruppe aufgenommen werden, die gezielte Unternehmensrichtlinien und Apps empfängt.
 
-Weitere Informationen zu Unternehmens- und BYOD-Anwendungsfällen finden Sie unter [Abschnitt 3: Bestimmen von Anwendungsfallanforderungen](planning-guide-requirements.md).
+Siehe [Abschnitt 3: Bestimmen von Anwendungsfallanforderungen](planning-guide-requirements.md). Hier finden Sie weitere Informationen zu Unternehmens- und BYOD-Anwendungsfällen.
 
 ### <a name="bulk-enrollment"></a>Massenregistrierung
 
@@ -402,7 +402,7 @@ Bedingter Zugriff wird verwendet, um nur konformen Geräten den Zugriff auf E-Ma
 
 Entscheiden Sie hinsichtlich des Onlinezugriffs für welche Plattformen und Benutzergruppen die Richtlinien für bedingten Zugriff vorgesehen sind. Darüber hinaus entscheiden Sie, ob Sie den dienstübergreifenden Intune-Connector für Exchange Online oder Exchange lokal installieren/konfigurieren müssen. Weitere Informationen zum Installieren und Konfigurieren von dienstübergreifenden Intune-Connectors: <!---these links are correct--->
 
--   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
+-   [Exchange Online](exchange-service-connector-configure.md)
 
 -   [Exchange lokal](exchange-connector-install.md)
 

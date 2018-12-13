@@ -1,11 +1,11 @@
 ---
-title: Intune-Lizenzen
+title: Verfügbare Lizenzen für Microsoft Intune
 description: 'Die folgenden Intune-Lizenzen sind verfügbar:'
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/14/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 4a94440c-11cb-11e8-b642-0ed5f89f718b
 ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 30918cb407f6290baeaf24bd9d5e9a2c3976e23c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: d6020207ab32a4e7c18f59f74caeedc9e4f17bf4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178996"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031686"
 ---
 # <a name="licenses-that-include-intune"></a>Lizenzen, die Intune enthalten
 

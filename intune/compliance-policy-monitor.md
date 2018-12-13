@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f835f2bd2802454bbcdb27251524dfa4d2400f1a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178371"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977302"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
@@ -58,17 +58,20 @@ Wenn Sie sich diese Berichterstattung genauer ansehen, sehen Sie auch spezifisch
 
 Das Diagramm veranschaulicht die Konformitätszustände für alle in Intune registrierten Geräte. Die Gerätekonformitätszustände werden in zwei verschiedenen Datenbanken gespeichert: Intune und Azure Active Directory. 
 
+> [!IMPORTANT]
+> Intune folgt bei allen Konformitätsauswertungen auf dem Gerät dem Zeitplan für das Einchecken von Geräten. [Weitere Informationen zum Zeitplan für das Einchecken von Geräten](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)
+
 Beschreibungen der verschiedenen Zustände der Gerätekonformitätsrichtlinie:
 
-- **Konform:** Das Gerät hat mindestens eine Einstellung einer Gerätekonformitätsrichtlinie erfolgreich angewendet.
+- **Konform**: Das Gerät hat mindestens eine Einstellung einer Gerätekonformitätsrichtlinie erfolgreich angewendet.
 
-- **In-grace period** (In Toleranzperiode): Mindestens eine Einstellung der Gerätekompatibilitätsrichtlinie gilt für das Gerät. Jedoch hat der Benutzer die Richtlinien noch nicht angewandt. Das bedeutet, dass das Gerät nicht konform ist, sich jedoch in der vom Administrator festgelegten Toleranzperiode befindet.
+- **In Toleranzperiode**: Mindestens eine Einstellung der Gerätekompatibilitätsrichtlinie gilt für das Gerät. Der Benutzer hat die Richtlinien jedoch noch nicht angewendet. Das bedeutet, dass das Gerät nicht konform ist, sich jedoch in der vom Administrator festgelegten Toleranzperiode befindet.
 
   - Erfahren Sie mehr über [Aktionen für nicht konforme Geräte](actions-for-noncompliance.md).
 
-- **Nicht ausgewertet:** Ein ursprünglicher Zustand für neu registrierte Geräte. Oder Geräte, denen keine Konformitätsrichtlinie zugewiesen wurde und die über keinen Auslöser für die Überprüfung auf Konformität verfügen.
+- **Nicht ausgewertet**: Ein anfänglicher Zustand für neu registrierte Geräte. Oder Geräte, denen keine Konformitätsrichtlinie zugewiesen wurde und die über keinen Auslöser für die Überprüfung auf Konformität verfügen.
 
-- **Nicht konform:** Das Gerät konnte keine Einstellungen einer Gerätekompatibilitätsrichtlinie anwenden. Oder der Benutzer hat die Richtlinien nicht eingehalten.
+- **Nicht konform**: Das Gerät konnte keine Einstellungen einer Gerätekompatibilitätsrichtlinie anwenden. Oder der Benutzer hat die Richtlinien nicht eingehalten.
 
 - **Gerät nicht synchronisiert**: Das Gerät konnte den Status der Gerätekonformitätsrichtlinie nicht melden. Mögliche Ursachen:
 
@@ -152,13 +155,13 @@ Dieses Feature ist im Gerätestatusbericht enthalten:
 1. Wählen Sie **Gerätekompatibilität** > **Richtlinien** aus. Ihnen wird eine Liste mit Richtlinien angezeigt, einschließlich der Plattform (falls die Richtlinie zugewiesen ist) usw.
 2. Wählen Sie eine Richtlinie aus, und klicken Sie dann auf **Übersicht**. In dieser Ansicht enthält die Richtlinienzuweisung die folgenden Status:
 
-    - Erfolgreich: Die Richtlinie wird angewendet.
+    - Erfolgreich: Die Richtlinie wurde angewendet.
     - Fehler: Die Richtlinie kann nicht angewendet werden. Diese Meldung wird in der Regel mit einem Fehlercode angezeigt, der auf eine Erklärung verweist. 
     - Konflikt: Zwei Einstellungen werden auf dasselbe Gerät angewendet, und Intune kann den Konflikt nicht lösen. Ein Administrator sollte das überprüfen.
     - Ausstehend: Das Gerät hat sich noch nicht bei Intune eingecheckt, damit die Richtlinie angewendet werden kann. 
-    - Nicht zutreffend: Die Richtlinie kann nicht für das Gerät angewendet werden. Beispielsweise aktualisiert die Richtlinie eine Einstellung für iOS 11.1, das Gerät verwendet jedoch iOS 10. 
+    - Nicht zutreffend: Die Richtlinie kann nicht auf das Gerät angewendet werden. Beispielsweise aktualisiert die Richtlinie eine Einstellung für iOS 11.1, das Gerät verwendet jedoch iOS 10. 
 
-3. Um die Details auf dem Gerät mithilfe der Richtlinie anzuzeigen, wählen Sie einen Status aus, z.B. **Succeeded** (erfolgreich). Im nächsten Fenster werden die spezifischen Gerätedetails, einschließlich des Gerätenamens und des Bereitstellungsstatus, aufgeführt.
+3. Um die Details auf dem Gerät mithilfe der Richtlinie anzuzeigen, wählen Sie einen Status aus. Wählen Sie z.B. **Erfolgreich** aus. Im nächsten Fenster werden die spezifischen Gerätedetails, einschließlich des Gerätenamens und des Bereitstellungsstatus, aufgeführt.
 
 ## <a name="how-intune-resolves-policy-conflicts"></a>Wie Intune-Richtlinienkonflikte löst
 Richtlinienkonflikte können auftreten, wenn mehrere Intune-Richtlinien auf ein Gerät angewendet werden. Wenn sich Richtlinieneinstellungen überschneiden, löst Intune Konflikte nach den folgenden Regeln:

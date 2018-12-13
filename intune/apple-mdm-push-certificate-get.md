@@ -1,7 +1,7 @@
 ---
-title: Abrufen eines Apple-MDM-Push-Zertifikats
-titlesuffix: Microsoft Intune
-description: Lernen Sie die Schritte kennen, mit denen Sie ein Apple-MDM-Push-Zertifikat zum Verwalten von iOS-Geräten mit Intune abrufen.
+title: Abrufen eines Apple-MDM-Push-Zertifikats für Intune
+titlesuffix: ''
+description: Rufen Sie ein Apple-MDM-Push-Zertifikat zum Verwalten von iOS-Geräten mit Intune ab.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 927da6f2e7584cb3b43bede77cfbc19ec91b568a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 053e3f42553268aaeff0502e2cfe05b33b18618b
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189468"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032162"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Abrufen eines Apple-MDM-Push-Zertifikats
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune ermöglicht die Verwaltung mobiler Geräte (mobile device management, MDM) wie iPads, iPhones und Mac-Computer und ermöglicht Benutzern den Zugriff auf Unternehmens-E-Mails und -Apps. Für die Verwaltung von iOS- und macOS-Geräten ist ein MDM-Pushzertifikat erforderlich. Wenn Sie das Zertifikat zu Intune hinzugefügt haben, können Ihre Benutzer ihre Geräte registrieren, indem sie folgende Hilfsmittel verwenden:
+Für die Verwaltung von iOS- und macOS-Geräten ist ein MDM-Pushzertifikat erforderlich. Wenn Sie das Zertifikat zu Intune hinzugefügt haben, können Ihre Benutzer ihre Geräte registrieren, indem sie folgende Hilfsmittel verwenden:
 
 - die Unternehmensportal-App
 

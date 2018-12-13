@@ -16,12 +16,12 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 034919a7ae7d223a30b11b4c3aa1f495e028e89c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 00e8b0e35514fe583027d15fdcc810295aa9fa9e
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184623"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977285"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Windows 10-App-Bereitstellung mit Microsoft Intune 
 
@@ -45,11 +45,11 @@ Bei Apps aus dem Microsoft Store für Unternehmen handelt es sich um moderne App
 ## <a name="installing-apps-on-windows-10-devices"></a>Installieren von Apps auf Windows 10-Geräten
 Apps können je nach Typ auf zwei Arten auf Windows 10-Geräten installiert werden:
 
-- **Benutzerkontext:** Wenn eine Bereitstellung im Benutzerkontext erfolgt, wird die verwaltete App erst auf dem Gerät installiert, wenn sich der Benutzer darauf anmeldet. Beachten Sie, dass die App-Installation erst erfolgreich ausgeführt wird, wenn sich der Benutzer auf dem Gerät anmeldet. 
+- **Benutzerkontext**: Wenn eine Bereitstellung im Benutzerkontext erfolgt, wird die verwaltete App erst auf dem Gerät installiert, wenn sich der Benutzer beim Gerät anmeldet. Beachten Sie, dass die App-Installation erst erfolgreich ausgeführt wird, wenn sich der Benutzer auf dem Gerät anmeldet. 
     - Moderne Branchenanwendungen und Apps aus dem Microsoft für Unternehmen (online und offline) können im Benutzerkontext bereitgestellt werden und unterstützen die Absichten „Erforderlich“ und „Verfügbar“.
     - Win32-Apps, die im **Benutzermodus** oder **Dualmodus** erstellt wurden, können im Benutzerkontext bereitgestellt werden und unterstützen sowohl die Priorität **Erforderlich** als auch **Verfügbar**. 
-- **Gerätekontext:** Wenn eine Bereitstellung im Gerätekontext erfolgt, wird die verwaltete App von Intune direkt auf dem Gerät installiert.
-    - Nur moderne branchenspezifische Apps und online lizenzierte Apps aus dem Microsoft Store für Unternehmen können im Gerätekontext bereitgestellt werden. Sie unterstützen nur die Absicht „Erforderlich“.
+- **Gerätekontext**: Wenn eine Bereitstellung im Gerätekontext erfolgt, wird die verwaltete App von Intune direkt auf dem Gerät installiert.
+    - Nur moderne branchenspezifische Apps und offline lizenzierte Apps aus dem Microsoft Store für Unternehmen können im Gerätekontext bereitgestellt werden. Sie unterstützen nur die Absicht „Erforderlich“.
     - Win32-Apps, die im **Computermodus** oder **Dualmodus** erstellt wurden, können im Benutzerkontext bereitgestellt werden und unterstützen nur die Priorität **Erforderlich**.
 
 > [!NOTE]
@@ -57,11 +57,11 @@ Apps können je nach Typ auf zwei Arten auf Windows 10-Geräten installiert werd
 
 Wenn eine App im Gerätekontext bereitgestellt wird, ist die Installation nur erfolgreich, wenn das betreffende Gerät den Gerätekontext unterstützt. Darüber hinaus gilt Folgendes für Bereitstellungen im Gerätekontext:
 - Wenn eine App im Gerätekontext für einen bestimmten Benutzer bereitgestellt wird, schlägt die Installation fehl. In der Verwaltungskonsole wird Folgendes angezeigt:
-    - Status: Failed. (Fehler bei der Installation.)
-    - Fehler: A user can’t be targeted with a Device context install. (Für einen bestimmten Benutzer kann keine Installation im Gerätekontext ausgeführt werden.)
+    - Status: Fehlerhaft.
+    - Fehler: Ein Benutzer kann nicht als Ziel für eine Gerätekontextinstallation festgelegt werden.
 - Wenn eine App für ein bestimmtes Gerät, das keinen Gerätekontext unterstützt, im Gerätekontext bereitgestellt wird, schlägt die Installation fehl. In der Verwaltungskonsole wird Folgendes angezeigt:
-    - Status: Failed. (Fehler bei der Installation.)
-    - Fehler: This platform does not support device context installs. (Diese Plattform unterstützt keine Installationen im Gerätekontext.) 
+    - Status: Fehlerhaft.
+    - Fehler: Diese Plattform unterstützt die Gerätekontextinstallation nicht. 
 
 > [!Note]
 > Wenn eine App-Zuweisung mit einer bestimmten Bereitstellung gespeichert wird, kann der Kontext für die Zuweisung nur noch für moderne Apps geändert werden. Bei modernen Apps kann der Kontext von „Benutzerkontext“ in „Gerätekontext“ geändert werden. 

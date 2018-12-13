@@ -14,19 +14,19 @@ ms.technology: ''
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 159079686507815ad4cf1738ca4157467352f681
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 0abc42de95f90b3690e91908f92bb53d11a802d8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189519"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031755"
 ---
-# <a name="categorize-devices-into-groups-for-easier-management"></a>Kategorisieren von Geräten in Gruppen zur einfacheren Verwaltung
+# <a name="categorize-devices-into-groups"></a>Kategorisieren von Geräten in Gruppen
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Verwenden Sie Gerätekategorien für Microsoft Intune basierend auf definierten Kategorien, um automatisch Geräte zu Gruppen hinzufügen. Dadurch können Sie diese Geräte einfacher verwalten.
+Zur einfacheren Geräteverwaltung können Sie Microsoft Intune-Gerätekategorien verwenden, um Geräte automatisch zu Gruppen hinzuzufügen, die auf von Ihnen definierten Kategorien basieren.
 
 Gerätekategorien verwenden den folgenden Workflow:
 1. Erstellen Sie Kategorien, die Benutzer beim Registrieren ihrer Geräte verwenden können.
@@ -51,7 +51,7 @@ Sie können beliebige Gerätekategorien erstellen. Beispiel:
 
 Verwenden Sie den Kategorienamen des Geräts zum Erstellen von Azure Active Directory-Sicherheitsgruppen (Azure AD) in Schritt 2.
 
-### <a name="step-2-create-azure-active-directory-security-groups"></a>Schritt 2: Erstellen von Azure Active Directory-Sicherheitsgruppen
+### <a name="step-2-create-azure-active-directory-security-groups"></a>Schritt 2: Erstellen von Azure Active Directory-Sicherheitsgruppen
 In diesem Schritt erstellen Sie dynamische Gruppen im Azure-Portal auf Basis der Gerätekategorie und des Gerätekategorienamens.
 
 Wenn Sie fortfahren möchten, erhalten Sie weitere Informationen zum [Verwenden von Attributen zum Erstellen erweiterter Regeln](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) in der Dokumentation zu Azure Active Directory.

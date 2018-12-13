@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: a715fe518331d20b9a47d8374a37ce66ec59055d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189281"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112764"
 ---
 # <a name="manage-software-updates-in-intune"></a>Verwalten von Softwareupdates in Intune
 
@@ -30,16 +30,16 @@ Vereinfachen Sie die Updateverwaltung mithilfe von Windows Update for Business. 
 
 - **Windows 10-Wartungskanal**: Wählen Sie den Wartungskanal aus, von dem Gerätegruppen Updates erhalten. Folgende Kanäle sind verfügbar: 
   - Halbjährlicher Kanal
-  - Halbjähriger Kanal (gezielt)
+  - Halbjährlicher Kanal (gezielt)
   - Windows-Insider: schnell
   - Windows-Insider: langsam
   - Windows-Insider-Release 
       
   Weitere Informationen zu den verfügbaren Wartungskanälen finden Sie unter [Übersicht über Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
-- **Zurückstellungseinstellungen:** Konfigurieren Sie Einstellungen für die Zurückstellung von Updates, um Updateinstallationen für Gruppen von Geräten zu verzögern. Verwenden Sie diese Einstellungen zum Staffeln Ihres Updaterollouts, damit Sie den Fortschritt verfolgen können.
-- **Wird angehalten:** Wenn bei dem Rollout des Updates ein Fehler auftritt, können Sie die Installation des Updates verschieben. 
-- **Wartungsfenster:** Konfigurieren Sie die Zeiten, in denen Updates installiert werden können.
-- **Aktualisierungstyp:** Wählen Sie aus, welche Arten von Updates installiert werden. Beispiele wären etwa Qualitätsupdates, Funktionsupdates oder Treiber.
+- **Rückstellungseinstellungen**: Konfigurieren Sie Einstellungen für die Zurückstellung von Updates, um Updateinstallationen für Gruppen von Geräten zu verzögern. Verwenden Sie diese Einstellungen zum Staffeln Ihres Updaterollouts, damit Sie den Fortschritt verfolgen können.
+- **Anhalten**: Wenn beim Rollout des Updates ein Fehler auftritt, können Sie die Installation des Updates verschieben. 
+- **Wartungsfenster**: Konfigurieren Sie die Zeiträume, in denen Updates installiert werden können.
+- **Updatetyp**: Wählen Sie aus, welche Arten von Updates installiert werden. Beispiele wären etwa Qualitätsupdates, Funktionsupdates oder Treiber.
 - **Installationsverhalten**: Konfiguriert, wie das Update installiert wird. Hier können Sie beispielsweise festlegen, ob das Gerät nach der Installation automatisch neu gestartet werden soll.
 - **Peerdownloads**: Sie können Peerdownloads konfigurieren. Falls ja, können Geräte das Update von einem anderen Gerät herunterladen, das den Downloadvorgang bereits abgeschlossen hat. Durch diese Einstellung lässt sich der Downloadprozess beschleunigen.
 
@@ -79,26 +79,26 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 4. Geben Sie unter **Einstellungen** die folgenden Informationen ein:
 
    - **Wartungskanal**: Legen Sie den Kanal fest, von dem das Gerät Windows-Updates erhält.
-   - **Microsoft-Produktupdates**: Wählen Sie aus, dass nach App-Updates von Microsoft Update gesucht werden soll.
-   - **Windows-Treiber**: Wählen Sie aus, dass Windows Update-Treiber bei Updates ausgeschlossen werden sollen.
-   - **Automatisches Updateverhalten**: Wählen Sie aus, wie automatische Updates installiert werden und wann Neustarts ausgeführt werden. Ausführliche Informationen finden Sie unter [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
-     - **Häufigkeit für automatisches Verhalten**: Wenn Sie **Auto install and restart at scheduled time** (Automatisch zur geplanten Zeit installieren und neustarten) für das Updateverhalten auswählen, wird diese Einstellung angezeigt. Verwenden Sie diese Einstellung zum Planen, wann Updates installiert werden, einschließlich der Woche, des Tags und der Uhrzeit.
+   - **Microsoft-Produktupdates**: Wählen Sie aus, ob nach App-Updates von Microsoft Update gesucht werden soll.
+   - **Windows-Treiber**: Wählen Sie aus, ob Windows Update-Treiber bei Updates ausgeschlossen werden sollen.
+   - **Automatisches Updateverhalten**: Wählen Sie aus, wie automatische Updates installiert und wann Neustarts ausgeführt werden. Ausführliche Informationen finden Sie unter [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
+     - **Häufigkeit für automatisches Verhalten**: Wenn Sie **Zur geplanten Zeit automatisch installieren und neu starten** als Updateverhalten auswählen, wird diese Einstellung angezeigt. Verwenden Sie diese Einstellung zum Planen, wann Updates installiert werden, einschließlich der Woche, des Tags und der Uhrzeit.
 
    - **Neustartüberprüfungen**: Standardmäßig aktiviert. Wenn Sie ein Gerät neustarten, treten einige Überprüfungen auf, einschließlich der Überprüfung der aktiven Benutzer, dem Akkustand, der ausgeführten Spiele und mehr. Klicken Sie auf **Überspringen**, um diese Überprüfungen beim Neustart eines Geräts zu überspringen.
 
-   - **Rückstellungszeitraum für Qualitätsupdates (Tage)**: Geben Sie die Anzahl der Tage ein, um die die Qualitätsupdates zurückgestellt werden. Sie können diese Qualitätsupdates um bis zu 30 Tage nach der Veröffentlichung zurückstellen.
+   - **Zeitraum für die Zurückstellung von Qualitätsupdates in Tagen**: Geben Sie die Anzahl von Tagen ein, für die Qualitätsupdates zurückgestellt werden. Sie können diese Qualitätsupdates um bis zu 30 Tage nach der Veröffentlichung zurückstellen.
 
      Bei Qualitätsupdates handelt es sich in der Regel um Korrekturen und Verbesserungen für bereits vorhandene Windows-Funktionen. Sie werden am zweiten Dienstag jedes Monats veröffentlicht. Dies Updates („B“-Releases) sind nur für Qualitätsupdates über Windows Update verfügbar, obwohl jederzeit weitere Updates von Microsoft veröffentlicht werden können. Sie können definieren, ob und wie lange Sie die Qualitätsupdates zurückstellen, sobald diese auf Windows Update verfügbar sind. Weitere Informationen finden Sie unter [Bereitstellen von Updates mit Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
 
-   - **Rückstellungszeitraum für Featureupdates (Tage)**: Geben Sie die Anzahl der Tage ein, um die die Featureupdates zurückgestellt werden sollen. Sie können Featureupdates um bis zu 180 Tage nach der Veröffentlichung zurückstellen.
+   - **Zeitraum für die Zurückstellung von Featureupdates in Tagen**: Geben Sie die Anzahl von Tagen ein, für die Featureupdates zurückgestellt werden. Sie können Featureupdates um bis zu 180 Tage nach der Veröffentlichung zurückstellen.
 
      Bei Featureupdates handelt es sich in der Regel um neue Features für Windows. Nachdem Sie die Einstellung **Wartungskanal** konfiguriert haben, können Sie bestimmen, ob und wie lange Sie die Featureupdates zurückstellen, sobald sie auf Windows Update verfügbar sind.
 
-     Beispiel: **Wenn der Wartungskanal auf „Halbjährlicher Kanal (gezielt)“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Angenommen, das Featureupdate X ist auf Windows Update im halbjährlichen Kanal (gezielt) erstmals im Januar öffentlich verfügbar. Dann erhält das Gerät das Update erst im Februar, also 30 Tage nach der Veröffentlichung.
+     Beispiel: **Wartungskanal festgelegt auf „Halbjährlicher Kanal (gezielt)“, Zurückstellungszeitraum 30 Tage**: Angenommen, Featureupdate X ist mit der Einstellung „Halbjährlicher Kanal (gezielt)“ in Windows Update zum ersten Mal im Januar öffentlich verfügbar. Dann erhält das Gerät das Update erst im Februar, also 30 Tage nach der Veröffentlichung.
 
-     **Wenn der Wartungskanal auf „Halbjährlicher Kanal“ festgelegt ist und der Zurückstellungszeitraum 30 Tage beträgt**: Angenommen, das Featureupdate X ist auf Windows-Update erstmals im Januar als halbjährlicher Kanal (gezielt) öffentlich verfügbar. Vier Monate später, im April, wird das Funktionsupdate X dann im halbjährlichen Kanal veröffentlicht. In diesem Fall erhält das Gerät das Featureupdate 30 Tage nach dieser Veröffentlichung im halbjährlichen Kanal (also im Mai).
+     **Wartungskanal festgelegt auf „Halbjährlicher Kanal“, Zurückstellungszeitraum 30 Tage**: Angenommen, das Featureupdate X ist mit der Einstellung „Halbjährlicher Kanal (gezielt)“ in Windows Update zum ersten Mal im Januar öffentlich verfügbar. Vier Monate später, im April, wird das Featureupdate X dann im halbjährlichen Kanal veröffentlicht. In diesem Fall erhält das Gerät das Featureupdate 30 Tage nach dieser Veröffentlichung im halbjährlichen Kanal (also im Mai).
 
-   - **Downloadmodus „Übermittlungsoptimierung“**: Wählen Sie die Methode aus, für welche Geräte Windows-Updates heruntergeladen werden sollen. Ausführliche Informationen finden Sie unter [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   - **Downloadmodus für Übermittlungsoptimierung**: Wählen Sie die Methode aus, mit der Geräte Windows-Updates herunterladen. Ausführliche Informationen finden Sie unter [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
 
 5. Klicken Sie auf **OK**, wenn Sie fertig sind. Klicken Sie unter **Updatering erstellen** auf **Erstellen**.
 
@@ -131,14 +131,14 @@ Sie können die Updatekompatibilität in Intune anzeigen oder die kostenlose Lö
 ### <a name="review-update-compliance-using-oms"></a>Prüfen der Updatekompatibilität mithilfe von OMS
 Windows 10-Updaterollouts können mithilfe der kostenlosen Lösung „Updatekonformität“ überwacht werden. Ausführliche Informationen finden Sie unter [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Überwachen von Windows-Updates mithilfe der Updateüberwachung). Bei Verwendung dieser Lösung können Sie eine Organisations-ID für jedes Ihrer mit Intune verwalteten Windows 10-Geräte bereitstellen, für das Sie Updateüberwachungsberichte verwenden möchten.
 
-Die Organisations-ID können Sie in Intune mithilfe der OMA-URI-Einstellungen einer benutzerdefinierten Richtlinie konfigurieren. Ausführliche Informationen finden Sie unter [Intune-Richtlinieneinstellungen für Windows 10-Geräte in Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
+Die Organisations-ID können Sie in Intune mithilfe der OMA-URI-Einstellungen einer benutzerdefinierten Richtlinie konfigurieren. Ausführliche Informationen finden Sie unter [Intune-Richtlinieneinstellungen für Windows 10-Geräte in Microsoft Intune](custom-settings-windows-10.md).   
 
 Der OMA-URI-Pfad (Groß-/Kleinschreibung beachten) zum Konfigurieren der Organisations-ID lautet „./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID“.
 
 Unter **OMA-URI-Einstellung hinzufügen oder bearbeiten** können Sie beispielsweise folgende Werte verwenden:
 
-- **Name**: Organisations-ID für die Windows-Analyse
-- **Beschreibung**: Konfigurieren der Organisations-ID für Windows Analytics-Lösungen
+- **Einstellungsname**: Kommerzielle Windows Analytics-ID
+- **Einstellungsbeschreibung**: Konfigurieren der kommerziellen ID für Windows Analytics-Lösungen
 - **OMA-URI** (Groß-/Kleinschreibung beachten): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 - **Datentyp**: Zeichenfolge
 - **Wert**: <*Verwenden Sie die GUID, die in Ihrem OMS-Arbeitsbereich auf der Registerkarte „Windows-Telemetrie“ angezeigt wird.*>

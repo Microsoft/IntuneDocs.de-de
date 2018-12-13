@@ -5,31 +5,31 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/05/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
-ms.reviewer: angerobe
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 13ffb9e7091b484c59f44802de675b1ab45b1c77
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5876b0df6787640e465952cb1cca17f4f3105762
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183467"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977336"
 ---
-# <a name="quickstart-enroll-your-windows-10-device"></a>Schnellstart: Registrieren Ihres Windows 10-Geräts
+# <a name="quickstart-enroll-your-windows-10-device"></a>Schnellstart: Registrierung Ihres Windows 10-Geräts
 
 In diesem Schnellstart registrieren Sie Ihr Windows 10-Gerät als Intune-Benutzer bei Microsoft Intune. Gehen Sie anschließend zu Intune zurück, und bestätigen Sie das registrierte Gerät.
 
 Wenn Sie Ihre Geräte bei Microsoft Intune registrieren, können Ihre Windows 10-Geräte Zugriff auf die sicheren Daten Ihres Unternehmens wie E-Mails, Dateien und andere Ressourcen erhalten. Dies gilt für Windows 10 Desktop- und Windows 10 Mobile-Geräte. Durch die Registrierung Ihrer Geräte können Sie diesen Zugriff sowohl für sich selbst als auch für Ihr Unternehmen sichern und Ihre Arbeitsdaten von Ihren persönlichen Daten getrennt halten.
 
 > [!TIP]
-> Erfahren Sie, was geschieht, wenn Sie [Ihr Gerät bei Intune registrieren](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md), und was das für die [Informationen auf Ihrem Gerät](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) bedeutet.
+> Erfahren Sie, was geschieht, wenn Sie [Ihr Gerät bei Intune registrieren](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows), und was das für die [Informationen auf Ihrem Gerät](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) bedeutet.
 
 Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für eine kostenlose Testversion](free-trial-sign-up.md).
 
@@ -58,7 +58,7 @@ Bevor Sie Ihr Windows 10-Desktopgerät registrieren, müssen Sie die installiert
 4. Bestätigen Sie, dass Ihre **Version** von Windows 10 **1607 oder höher** ist.
 
     > [!IMPORTANT]
-    > Die Schritte in diesem Schnellstart beziehen sich auf Version **1607 oder höher** von Windows 10. Wenn Sie Version **1511 oder niedriger** verwenden, fahren Sie mit [diesen Schritten](/intune-user-help/enroll-your-w10-device-your-account.md) fort.
+    > Die Schritte in diesem Schnellstart beziehen sich auf Version **1607 oder höher** von Windows 10. Wenn Sie Version **1511 oder niedriger** verwenden, fahren Sie mit [diesen Schritten](/intune-user-help/enroll-your-w10-device-your-account) fort.
 
 ## <a name="enroll-windows-10-desktop"></a>Registrieren von Windows 10-Desktopgeräten
 
@@ -85,7 +85,7 @@ Bevor Sie Ihr Windows 10-Desktopgerät registrieren, müssen Sie die installiert
 
    ![Screenshot des neu hinzugefügten Kontos](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-06.png)
 
-    Wenn Sie die obigen Schritte ausgeführt haben und trotzdem nicht auf E-Mails und Dateien Ihres Geschäfts-, Schul- oder Unikontos zugreifen können, befolgen Sie die Schritte unter [Schritte zur Problembehandlung bei Anzeige von „Zugriff auf Geschäfts-, Schul- oder Unikonto“](/intune-user-help/troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
+    Wenn Sie die obigen Schritte ausgeführt haben und trotzdem nicht auf E-Mails und Dateien Ihres Geschäfts-, Schul- oder Unikontos zugreifen können, befolgen Sie die Schritte unter [Schritte zur Problembehandlung bei Anzeige von „Zugriff auf Geschäfts-, Schul- oder Unikonto“](/intune-user-help/troubleshoot-your-windows-10-device-windows#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Bestätigen der Geräteregistrierung bei Intune
 
@@ -97,11 +97,11 @@ Bevor Sie Ihr Windows 10-Desktopgerät registrieren, müssen Sie die installiert
 
 ## <a name="clean-up-resources"></a>Bereinigen der Ressourcen
 
-Weitere Informationen zur Aufhebung der Registrierung eines Geräts finden Sie unter [Entfernen Ihres Windows-Geräts aus der Verwaltung](/intune-user-help/unenroll-your-device-from-intune-windows.md).
+Weitere Informationen zur Aufhebung der Registrierung eines Geräts finden Sie unter [Entfernen Ihres Windows-Geräts aus der Verwaltung](/intune-user-help/unenroll-your-device-from-intune-windows).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In dieser Schnellstartanleitung haben Sie gelernt, wie Sie ein Windows 10-Gerät bei Intune registrieren. Sie erhalten auf allen Plattformen Informationen zu weiteren Möglichkeiten, Geräte zu registrieren. Weitere Informationen zur Verwendung von Geräten mit Intune finden Sie unter [Verwenden verwalteter Geräte zum Erledigen von Aufgaben](/intune-user-help/use-managed-devices-to-get-work-done.md).
+In dieser Schnellstartanleitung haben Sie gelernt, wie Sie ein Windows 10-Gerät bei Intune registrieren. Sie erhalten auf allen Plattformen Informationen zu weiteren Möglichkeiten, Geräte zu registrieren. Weitere Informationen zur Verwendung von Geräten mit Intune finden Sie unter [Verwenden verwalteter Geräte zum Erledigen von Aufgaben](/intune-user-help/use-managed-devices-to-get-work-done).
 
 Weitere Informationen zu Intune erhalten Sie im nächsten Schnellstart.
 

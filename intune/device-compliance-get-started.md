@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 470c3b7ac273e051af047eba95012b36a8ea1deb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fd3a38b331507ddc50a7b5e4ce8794e71d0e5dc5
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185992"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977353"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune
 
@@ -40,6 +40,9 @@ Konformitätsanforderungen gehören zu den wesentlichen Regeln, wie die Notwendi
 - Vorgabe, dass das Gerät höchstens die Mobile Threat Defense-Stufe aufweisen darf
 
 Mithilfe von Kompatibilitätsrichtlinien können Sie den Kompatibilitätsstatus auf Ihren Geräten überwachen.
+
+> [!IMPORTANT]
+> Intune folgt bei allen Konformitätsauswertungen auf dem Gerät dem Zeitplan für das Einchecken von Geräten. [Weitere Informationen zum Zeitplan für das Einchecken von Geräten](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)
 
 <!---### Actions for noncompliance
 
@@ -156,21 +159,21 @@ Sie können Benutzern die Konformitätsrichtlinie in Benutzergruppen oder Gerät
 
 Auf allen in Intune registrierten Geräten werden mehrere integrierte **Einstellungen für Konformitätsrichtlinien** (Azure-Portal > Gerätekonformität) ausgewertet. Dazu gehören:
 
-- **Kennzeichnen von Geräten, die keine Konformitätsrichtlinie zugewiesen haben, als:** Diese Eigenschaft verfügt über zwei Werte:
+- **Geräte ohne zugewiesene Konformitätsrichtlinie kennzeichnen als**: Diese Eigenschaft verfügt über zwei Werte:
 
   - **Konform:** Sicherheitsfeature ist ausgeschaltet
   - **Nicht konform** (Standard): Sicherheitsfeature ist eingeschaltet
 
   Ist einem Gerät keine Konformitätsrichtlinie zugewiesen, dann wird dieses Gerät als nicht konform erachtet. Standardmäßig werden Geräte als **Konform** gekennzeichnet. Wenn Sie den bedingten Zugriff verwenden, sollten Sie die Einstellung auf **Nicht konform** festlegen. Falls ein Benutzer nicht konform ist, da keine Richtlinie zugewiesen ist, führt das Unternehmensportal `No compliance policies have been assigned` auf.
 
-- **Verbesserte Erkennung von Jailbreaks:** Ist diese Einstellung aktiviert, werden iOS-Geräte bei Intune regelmäßiger eingecheckt. Durch die Aktivierung dieser Eigenschaft werden die Ortungsdienste des Gerätes verwendet und der Akkuverbrauch wird beeinflusst. Die Ortungsdaten des Benutzers werden nicht bei Intune gespeichert.
+- **Verbesserte Erkennung von Jailbreaks**: Ist diese Einstellung aktiviert, werden iOS-Geräte bei Intune regelmäßiger eingecheckt. Durch die Aktivierung dieser Eigenschaft werden die Ortungsdienste des Gerätes verwendet und der Akkuverbrauch wird beeinflusst. Die Ortungsdaten des Benutzers werden nicht bei Intune gespeichert.
 
   Für die Aktivierung dieser Einstellung müssen Geräte:
   - Ortungsdienste auf OS-Ebene aktivieren
   - dem Unternehmensportal erlauben, die Ortungsdienste zu nutzen
   - den Jailbreak-Status mindestens alle 72 Stunden bewerten und Intune melden. Andernfalls wird das Gerät als nicht konform gekennzeichnet. Sie können den Auswertungsvorgang entweder auslösen, indem Sie die Unternehmensportal-App öffnen oder indem Sie das Gerät an einem anderen Ort positionieren, der mindestens 500 m entfernt ist.
 
-- **Gültigkeitszeitraum des Kompatibilitätsstatus (in Tagen):** Geben Sie den Zeitraum ein, in dem die Geräte den Status für alle empfangenen Konformitätsrichtlinien meldet. Geräte, die innerhalb dieses Zeitraums keine Statusmeldung abgeben, werden als nicht konform behandelt. Der Standardwert ist 30 Tage.
+- **Gültigkeitszeitraum des Konformitätsstatus (Tage)**: Geben Sie den Zeitraum an, in dem Geräte den Status für alle empfangenen Konformitätsrichtlinien melden müssen. Geräte, die innerhalb dieses Zeitraums keine Statusmeldung abgeben, werden als nicht konform behandelt. Der Standardwert ist 30 Tage.
 
 Alle Geräte verfügen über eine **integrierte Richtlinie für Gerätekonformität** (Azure-Portal > Gerätekonformität > Richtlinienkonformität). Verwenden Sie diese integrierte Richtlinie, um diese Einstellungen zu überwachen.
 
@@ -208,4 +211,4 @@ Sie müssen eine neue Gerätekonformitätsrichtlinien im Azure-Portal erstellen,
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)
 
-- Weitere Informationen zu den Richtlinienentitäten für Intune-Data Warehouse finden Sie unter [Reference for policy entities (Referenz für Richtlinienentitäten)](reports-ref-policy.md).
+- Weitere Informationen zu den Richtlinienentitäten für Intune-Data Warehouse finden Sie unter [Referenz für Richtlinienentitäten](reports-ref-policy.md).

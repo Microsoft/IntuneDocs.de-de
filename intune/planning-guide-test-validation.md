@@ -15,12 +15,12 @@ ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bbcf6e21b9f5dd0474461e88ff54d6dde97590aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ba214e059e9a5ddb17a8b1344d4d30ab1d7b40fa
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179931"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112458"
 ---
 # <a name="intune-testing-and-validation"></a>Testen und Überprüfen von Intune
 
@@ -34,15 +34,15 @@ Wir empfehlen, die folgenden Schritte zu dokumentieren:
 
 -   **Testkriterien:** Identifizieren Sie die Benchmarks, anhand derer die Messung erfolgt.
 
--   **Entwurfskomponenten:** Müssen in mindestens einem Testkriterium vorhanden sein.
+-   **Entwurfskomponenten**: Müssen in mindestens einem Testkriterium vorhanden sein.
 
 Wenn eine Entwurfskomponente nicht in mindestens einem auf eine Anforderung oder ein Szenario ausgerichteten Testkriterium vorhanden ist, überlegen Sie, ob die Entwurfskomponente erforderlich ist oder nicht. Stellen Sie darüber hinaus sicher, dass die folgenden Elemente vorhanden sind:
 
--   **Konten:** Testkonten, die für EMS und Office 365 lizenziert sind, um alle Anwendungsszenarios testen zu können.
+-   **Konten**: Testkonten, die für EMS und Office 365 lizenziert sind, um alle Anwendungsszenarios testen zu können.
 
 -   **Geräte:** Testgeräte, die zurückgesetzt oder auf Werkseinstellungen zurückgesetzt werden können.
 
--   **Integrationskomponenten:** Alle Integrationskomponenten (Certificate Connector, dienstübergreifender Intune-Connector für gehostetes Exchange und Intune-Connector für lokale Exchange-Umgebungen) müssen bei Bedarf installiert und konfiguriert werden.
+-   **Integrationskomponenten**: Alle Integrationskomponenten (Certificate Connector, dienstübergreifender Intune-Connector für gehostetes Exchange und Intune-Connector für lokale Exchange-Umgebungen) müssen bei Bedarf installiert und konfiguriert werden.
 
 Sie benötigen möglicherweise Entwurfsänderungen, um unvorhergesehene Probleme zu berücksichtigen. Darüber hinaus müssen alle Entwurfsänderungen vollständig zusammen mit der jeweiligen Begründung dokumentiert werden. Hier sehen Sie ein Beispiel für die Veranschaulichung einer Änderung:
 
@@ -52,7 +52,7 @@ Möglicherweise gibt es Herausforderungen oder Probleme, die technische Hilfe od
 
 -   [Informationen zum Erhalten von Intune-Support](get-support.md)
 
--   [Kontaktieren des telefonischen Supports für Microsoft Intune](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune)
+-   [Kontaktieren des telefonischen Supports für Microsoft Intune](get-support.md)
 
 ## <a name="functional-validation-testing"></a>Test zur Funktionsüberprüfung
 

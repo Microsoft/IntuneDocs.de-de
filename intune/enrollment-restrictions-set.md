@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9a7ad5d77f0c085fc1e91b6991657e6b848b3f3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187836"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112951"
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
@@ -67,7 +67,7 @@ Auf den Gerätetyp und das Gerätelimit bezogene Registrierungsbeschränkungen w
 
 ## <a name="set-device-type-restrictions"></a>Festlegen von Gerätetypbeschränkungen
 
-Sie können die Einstellungen für eine Gerätetypbeschränkung ändern, indem Sie die folgenden Schritte ausführen. Diese Beschränkungen haben keine Auswirkungen auf Geräte, die bereits registriert wurden. Geräte, die mit dem [Intune-PC-Agent](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) registriert sind, können nicht über dieses Feature blockiert werden.
+Sie können die Einstellungen für eine Gerätetypbeschränkung ändern, indem Sie die folgenden Schritte ausführen. Diese Beschränkungen haben keine Auswirkungen auf Geräte, die bereits registriert wurden. Geräte, die mit dem [Intune-PC-Agent](manage-windows-pcs-with-microsoft-intune.md) registriert sind, können nicht über dieses Feature blockiert werden.
 
 1. Melden Sie sich im Azure-Portal an.
 2. Klicken Sie auf **Weitere Dienste**, suchen Sie nach **Intune**, und klicken Sie dann auf **Intune**.
@@ -123,7 +123,7 @@ Sie können die Einstellungen für eine Gerätelimitbeschränkung ändern, indem
 6. Wählen Sie **Speichern** aus.
 
 
-Benutzer erhalten eine Benachrichtigung darüber, wann das Limit registrierter Geräte erreicht ist. Bei iOS sieht dies wie folgt aus:
+Während der BYOD-Registrierung erhalten Benutzer eine Benachrichtigung darüber, wenn das Limit registrierter Geräte erreicht ist. Bei iOS sieht dies wie folgt aus:
 
 ![iOS-Gerätelimitbenachrichtigung](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 5ea4d41477f2f0c6dc1314e47072d2c4cf862e23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184827"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031992"
 ---
-# <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Einrichten der Registrierung von Android Enterprise-Kioskgeräten
+# <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Einrichten der Intune-Registrierung von Android Enterprise-Kioskgeräten
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -56,8 +56,8 @@ Sie müssen ein Registrierungsprofil erstellen, damit Sie Ihre Kioskgeräte regi
 
 1. Navigieren Sie zum [Intune-Portal](https://portal.azure.com), und klicken Sie auf **Geräteregistrierung** > **Android-Registrierung** > **Kiosk und Taskgeräteregistrierungen**.
 2. Klicken Sie auf **Erstellen**, und füllen Sie die erforderlichen Felder aus.
-    - **Name:** Geben Sie einen Namen ein, den Sie zum Zuweisen des Profils zu einer dynamischen Gerätegruppe verwenden.
-    - **Datum für Tokenablauf:** Das Datum, an dem das Token abläuft. Google erzwingt maximal 90 Tage.
+    - **Name**: Geben Sie einen Namen ein, den Sie zum Zuweisen des Profils zu einer dynamischen Gerätegruppe verwenden.
+    - **Datum für Tokenablauf**: Der Ablaufzeitpunkt des Tokens. Google erzwingt maximal 90 Tage.
 3. Wählen Sie **Erstellen** aus, um das Profil zu speichern.
 
 ### <a name="create-a-device-group"></a>Erstellen einer Gerätegruppe
@@ -66,12 +66,12 @@ Sie können Apps und Richtlinien auf zugewiesene oder dynamische Gerätegruppen 
 
 1. Navigieren Sie zum [Intune-Portal](https://portal.azure.com), und klicken Sie auf **Gruppen** > **Alle Gruppen** > **Neue Gruppe**.
 2. Füllen Sie auf dem Blatt **Gruppe** die erforderlichen Felder wie folgt aus:
-    - **Gruppentyp:** Sicherheit
-    - **Gruppenname:** Geben Sie einen aussagekräftigen Namen ein (z.B. Factory 1-Geräte)
-    - **Mitgliedschaftstyp:** Dynamisches Gerät
+    - **Gruppentyp**: Sicherheit
+    - **Gruppenname**: Geben Sie einen aussagekräftigen Namen ein (z.B. Factory 1-Geräte)
+    - **Mitgliedschaftstyp**: Dynamisches Gerät
 3. Klicken Sie auf **Dynamische Abfrage hinzufügen**.
 4. Füllen Sie die Felder auf dem Blatt **Dynamische Mitgliedschaftsregeln** wie folgt aus:
-    - **Regel für dynamische Mitgliedschaft hinzufügen:** Einfache Regel
+    - **Regel für dynamische Mitgliedschaft hinzufügen**: Einfache Regel
     - **Geräte hinzufügen, wobei:** enrollmentProfileName
     - Klicken Sie im mittleren Feld auf **Übereinstimmung**.
     - Geben Sie im letzten Feld den Namen des Registrierungsprofils ein, das Sie zuvor erstellt haben.
@@ -82,8 +82,8 @@ Sie können Apps und Richtlinien auf zugewiesene oder dynamische Gerätegruppen 
 
 Sie können Token und QR-Codes ersetzen oder entfernen.
 
-- **Token ersetzen:** Sie können ein neues Token bzw. einen neuen QR-Code generieren, wenn das Ablaufdatum sich nähert, indem Sie „Token ersetzen“ verwenden.
-- **Token widerrufen:** Sie können das Token bzw. den QR-Code sofort ablaufen lassen. Von diesem Zeitpunkt an kann das Token bzw. der QR-Code nicht mehr verwendet werden. Sie können diese Option verwenden, wenn Sie:
+- **Token ersetzen**: Sie können ein neues Token bzw. einen neuen QR-Code generieren, wenn das Ablaufdatum sich nähert, indem Sie „Token ersetzen“ verwenden.
+- **Token widerrufen**: Sie können das Token bzw. den QR-Code sofort für ungültig erklären. Von diesem Zeitpunkt an kann das Token bzw. der QR-Code nicht mehr verwendet werden. Sie können diese Option verwenden, wenn Sie:
     - das Token bzw. den QR-Code versehentlich mit nicht autorisierten Personen geteilt haben
     - alle Registrierungen abgeschlossen haben und das Token bzw. den QR-Code nicht mehr benötigen
 

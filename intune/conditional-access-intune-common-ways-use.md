@@ -1,6 +1,6 @@
 ---
-title: Bedingter Zugriff mit Microsoft Intune
-titlesuffix: ''
+title: Szenarien für den bedingten Zugriff
+titlesuffix: Microsoft Intune
 description: Erfahren Sie, wie der bedingte Zugriff von Intune im Allgemeinen für den gerätebasierten und den App-basierten bedingten Zugriff verwendet wird.
 keywords: ''
 author: brenduns
@@ -14,13 +14,13 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
-ms.openlocfilehash: d7c47e7e82928ea40d0b39dfbb17472441eac4f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; get-started; seodec18
+ms.openlocfilehash: 7073c5c617806bcf35934aba73bf15a9a195a506
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187666"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112475"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?
 
@@ -45,7 +45,7 @@ Gerätebasierte Richtlinien für den bedingten Zugriff für Exchange Online und 
 
 -   Erfahren Sie mehr über die [Gerätekonformität in Intune](device-compliance.md).
 
--   Erfahren Sie mehr über den [Schutz von E-Mail-, Office 365- und anderen Diensten mithilfe des bedingen Zugriffs in Intune](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+-   Erfahren Sie mehr über den [Schutz von E-Mail-, Office 365- und anderen Diensten mithilfe des bedingen Zugriffs in Intune](app-based-conditional-access-intune.md).
 
 > [!NOTE]
 > Wenn Sie den gerätebasierten Zugriff für Sharepoint Online auf Android-Geräten aktivieren, müssen Benutzer die Option **Browserzugriff aktivieren** auf dem Gerät wie folgt aktivieren:
@@ -125,7 +125,7 @@ Wenn der Mobile Threat Defense-Agent auf mobilen Geräten installiert ist, kann 
 
 Die Integration von Intune und Mobile Threat Defense-Lösungen spielt eine wichtige Rolle bei Entscheidungen zum bedingten Zugriff basierend auf dem Geräterisiko.
 
--   Erfahren Sie mehr über [Intune Mobile Threat Defense](https://docs.microsoft.com/intune-classic/deploy-use/mobile-threat-defense).
+-   Erfahren Sie mehr über [Intune Mobile Threat Defense](mobile-threat-defense.md).
 
 ### <a name="conditional-access-for-windows-pcs"></a>Bedingter Zugriff für Windows-PCs
 
@@ -133,7 +133,7 @@ Der bedingte Zugriff für PCs bietet eine Funktionalität, die der für mobile G
 
 #### <a name="corporate-owned"></a>Unternehmenseigene Geräte
 
--   **In die lokale AD-Domäne eingebunden**: Diese Option wird häufig von Unternehmen genutzt, die ziemlich vertraut sind mit der Art, in der sie ihre PCs bereits über AD-Gruppenrichtlinien und/oder mit System Center Configuration Manager verwalten.
+-   **In die lokale AD-Domäne eingebunden**: Diese Option wird häufig von Unternehmen genutzt, die bereits mit der PC-Verwaltung über AD-Gruppenrichtlinien und/oder System Center Configuration Manager vertraut sind.
 
 -   **In die Azure AD-Domäne eingebunden und über Intune verwaltet**: Diese Option zielt üblicherweise auf CYOD-Bereitstellungen (Choose Your Own Device) und Roamingszenarien mit Laptops ab, die selten mit dem Unternehmensnetzwerk verbunden sind. Das Gerät tritt der Azure AD-Domäne bei und wird bei Intune registriert. Dadurch entsteht keinerlei Abhängigkeit von einer lokalen Active Directory-Instanz oder Domänencontrollern. Diese Option kann als Kriterium für den bedingten Zugriff auf Unternehmensressourcen verwendet werden.
 

@@ -1,12 +1,12 @@
 ---
-title: Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment
+title: Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment (KME)
 titlesuffix: Microsoft Intune
 description: Informationen zum Registrieren von Android-Geräten mit Samsung KME
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: ''
-ms.date: 05/08/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: fdd99d7c3987eee852399c37108c890a827e1111
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 47627bc9f223c301fd04b88c0080b3a6fea26fe8
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189740"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032458"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment
 
@@ -43,15 +43,15 @@ Beim Erwerb von Geräten von autorisierten Fachhändlern, die am Knox Deployment
 ## <a name="prerequisites"></a>Voraussetzungen
 
 Damit Sie sich bei Intune mit KME registrieren können, müssen Sie zuerst Ihr Unternehmen im Samsung Knox-Portal registrieren, indem Sie die folgenden Schritte ausführen:
-1.  [Vergewissern Sie sich, dass KME in Ihrer Region verfügbar ist](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME ist in über 55 Ländern verfügbar. Überprüfen Sie, ob Ihr Land/Region für die Bereitstellung unterstützt wird.
+1.  [Stellen Sie sicher, dass KME in Ihrer Region verfügbar ist](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME steht in mehr als 55 Ländern zur Verfügung. Überprüfen Sie, ob Ihr Land/Region für die Bereitstellung unterstützt wird.
 
-2.  [Unterstützte Geräte:](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+) KME ist auf allen Samsung-Geräten mit mindestens Knox 2.4 für die Android-Registrierung und mindestens Knox 2.8 für die Android Enterprise-Registrierung verfügbar.
+2.  [Unterstützte Geräte](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME ist auf allen Samsung-Geräten ab Knox 2.4 für die Android-Registrierung und ab Knox 2.8 für die Android Enterprise-Registrierung verfügbar.
 
-3.  [Netzwerkanforderungen](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm): Stellen Sie sicher, dass die erforderlichen Firewall- und Netzwerkzugriffsregeln in Ihrem Netzwerk zulässig sind.
+3.  [Netzwerkanforderungen](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm): Stellen Sie sicher, dass die erforderlichen Firewall- und Netzwerkzugriffsregeln in Ihrem Netzwerk zugelassen sind.
 
-4.  [Registrieren Sie sich für ein Samsung-Konto](https://www2.samsungknox.com/en/user/register):Ein Samsung-Konto ist erforderlich, um KME zu registrieren und zu aktivieren und alle Knox Enterprise-Berechtigungen an einem zentralen Ort zu verwalten.
+4.  [Registrieren Sie sich für ein Samsung-Konto](https://www2.samsungknox.com/en/user/register): Ein Samsung-Konto ist erforderlich, um KME zu registrieren und zu aktivieren und alle Knox Enterprise-Berechtigungen an einem zentralen Ort zu verwalten.
 
-5.  Registrierungsüberprüfung: Nachdem Ihr Profil vervollständigt und übermittelt wurde, führt Samsung eine Überprüfung Ihres Gesuchs durch und genehmigt es entweder sofort oder versetzt es in einen ausstehenden Überprüfungsstatus zur weiteren Nachverfolgung. Nachdem Ihr Konto genehmigt wurde, können Sie mit weiteren Schritten fortfahren.
+5.  Registrierungsüberprüfung: Nachdem Ihr Profil vervollständigt und übermittelt wurde, überprüft Samsung Ihre Anfrage und genehmigt diese entweder sofort oder versetzt die Anfrage zur weiteren Nachverfolgung in den Überprüfungsstatus „Ausstehend“. Nachdem Ihr Konto genehmigt wurde, können Sie mit weiteren Schritten fortfahren.
 
 ## <a name="create-mdm-profile"></a>Erstellen eines MDM-Profils
 
@@ -68,7 +68,7 @@ Wenn Ihr Unternehmen erfolgreich registriert wurde, können Sie Ihr MDM-Profil f
 |Diese App als Google-Geräteinhaber aktivieren | Ja  | Aktivieren Sie diese Option, um die Registrierung für Android Enterprise durchzuführen. 
 |Unterstützte MDM      | Ja        |Microsoft Intune 
 |Alle System-Apps aktiviert lassen | Nein | Aktivieren Sie diese Option, um sicherzustellen, dass alle Apps für das Profil aktiviert und verfügbar sind. Wenn diese Option nicht aktiviert ist, wird nur eine sehr eingeschränkte Anzahl von System-Apps in der App-Liste des Geräts angezeigt. Apps wie die E-Mail-App werden ausgeblendet. 
-|Custom JSON        | Nein        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Geben Sie die Zeichenfolge des Intune-Registrierungstokens ein"}. Erfahren Sie, [wie Sie ein Registrierungsprofil erstellen](android-kiosk-enroll.md). 
+|Benutzerdefinierte JSON        | Nein        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Geben Sie die Zeichenfolge des Intune-Registrierungstokens ein"}. Erfahren Sie, [wie Sie ein Registrierungsprofil erstellen](android-kiosk-enroll.md). 
 | Lizenzvereinbarungen hinzufügen | Nein | Lassen Sie dieses Feld leer. 
 
 ### <a name="for-android"></a>Für Android
@@ -91,9 +91,9 @@ Associate a Knox license with this profile | Nein | Lassen Sie diese Option deak
 ## <a name="add-devices"></a>Hinzufügen von Geräten
 
 Damit Sie Geräten MDM-Profile zuweisen können, müssen dem Knox-Portal mithilfe einer der folgenden Methoden unterstützte Samsung Knox-Geräte hinzugefügt werden:
-- **Verwenden von autorisierten Samsung-Fachhändlern:** Verwenden Sie diese Methode, wenn Sie Geräte von einem der von Samsung zugelassenen Fachhändler erwerben. Bei entsprechender Genehmigung können Fachhändler Geräte für Sie automatisch hochladen. [Rufen Sie den Samsung Knox Enrollment User Guide auf, um Informationen zum Hinzufügen von Fachhändlern zu erhalten](https://docs.samsungknox.com/KME-Getting-Started/Content/Register_resellers.htm).
+- **Verwenden von autorisierten Samsung-Fachhändlern**: Verwenden Sie diese Methode, wenn Sie Geräte von einem der von Samsung zugelassenen Fachhändler erwerben. Bei entsprechender Genehmigung können Fachhändler Geräte für Sie automatisch hochladen. [Rufen Sie den Samsung Knox Enrollment User Guide auf, um Informationen zum Hinzufügen von Fachhändlern zu erhalten](https://docs.samsungknox.com/KME-Getting-Started/Content/Register_resellers.htm).
 
-- **Verwenden der Knox Deployment App (KDA):** Verwenden Sie diese Methode, wenn Sie über bestehende Geräte verfügen, die mit KME registriert werden müssen. Bei dieser Methode können Sie Bluetooth oder NFC verwenden, um Geräte zum Knox-Portal hinzuzufügen. [Rufen Sie den Samsung Knox Enrollment User Guide auf, um Informationen zum Verwenden der KDA zu erhalten](https://docs.samsungknox.com/KME-Getting-Started/Content/add-device-info.htm).
+- **Verwenden der Knox Deployment App (KDA)**: Verwenden Sie diese Methode, wenn Sie über vorhandene Geräte verfügen, die mit KME registriert werden müssen. Bei dieser Methode können Sie Bluetooth oder NFC verwenden, um Geräte zum Knox-Portal hinzuzufügen. [Rufen Sie den Samsung Knox Enrollment User Guide auf, um Informationen zum Verwenden der KDA zu erhalten](https://docs.samsungknox.com/KME-Getting-Started/Content/add-device-info.htm).
 
 ## <a name="assign-an-mdm-profile-to-devices"></a>Zuweisen eines MDM-Profils für Geräte
 Sie müssen hinzugefügten Geräten im Knox-Portal ein MDM-Profil zuweisen, bevor sie registriert werden können. [Rufen Sie den Samsung Knox Enrollment User Guide auf, um Informationen zur Gerätekonfiguration zu erhalten](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm).
@@ -102,9 +102,9 @@ Sie müssen hinzugefügten Geräten im Knox-Portal ein MDM-Profil zuweisen, bevo
 
 Für bei Intune mit KME für Android registrierte Geräte können Sie wie folgt konfigurieren, wie sich ein Endbenutzer anmelden kann:
 
-- **Ohne Benutzernamenzuordnung:** Lassen Sie im Knox-Portal unter **Gerätedetails** die Felder **Benutzer-ID** und **Kennwort** für die hinzugefügten Geräte leer. Dadurch muss der Endbenutzer bei der Registrierung bei Intune den Benutzernamen und ein Kennwort eingeben.
+- **Ohne Benutzernamenzuordnung**: Lassen Sie im Knox-Portal unter **Gerätedetails** die Felder **Benutzer-ID** und **Kennwort** für die hinzugefügten Geräte leer. Dadurch muss der Endbenutzer bei der Registrierung bei Intune den Benutzernamen und ein Kennwort eingeben.
 
-- **Mit Benutzernamenzuordnung:** Geben Sie im Knox-Portal unter **Gerätedetails** eine **Benutzer-ID** (z. B. einen Benutzernamen für den zugewiesenen Benutzer oder ein [Geräteregistrierungs-Manager](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)-Konto) für die hinzugefügten Geräte an. Dadurch wird der Benutzername vorab ausgefüllt, und der Endbenutzer muss bei der Registrierung bei Intune ein Kennwort eingeben.
+- **Mit Benutzernamenzuordnung**: Geben Sie im Knox-Portal unter **Gerätedetails** eine **Benutzer-ID** (z.B. einen Benutzernamen für den zugewiesenen Benutzer oder ein [Geräteregistrierungs-Manager](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)-Konto) für die hinzugefügten Geräte an. Dadurch wird der Benutzername vorab ausgefüllt, und der Endbenutzer muss bei der Registrierung bei Intune ein Kennwort eingeben.
 
 > [!NOTE]
 >
@@ -119,13 +119,15 @@ Benötigen Sie weitere Unterstützung? Lesen Sie den vollständigen [Knox Mobile
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-- **Unterstützung für Gerätebesitzer:** Intune unterstützt die Registrierung von Geräten mit Android Enterprise nur im Kioskmodus. Weitere Modi für Android Enterprise-Gerätebesitzer werden unterstützt, wenn sie in Intune zur Verfügung stehen.
+- **Unterstützung für Gerätebesitzer**: Intune unterstützt die Registrierung von Geräten nur im Kioskmodus mit Android Enterprise. Weitere Modi für Android Enterprise-Gerätebesitzer werden unterstützt, wenn sie in Intune zur Verfügung stehen.
 
-- **Zurücksetzung auf Werkseinstellungen zum Registrieren bei Android Enterprise:** Wenn Geräte, die bereits eingerichtet wurden, für einen anderen Zweck genutzt werden sollen, müssen sie für die Registrierung bei Android Enterprise auf die Werkseinstellungen zurückgesetzt werden.
+- **Keine Unterstützung für Arbeitsprofile**: KME ist eine Registrierungsmethode für Unternehmensgeräte, und in einem Android-Arbeitsprofil registrierte Geräte stellen sicher, dass geschäftliche und persönliche Daten auf privaten Geräten voneinander getrennt werden. Deshalb ist die Geräteregistrierung in einem Arbeitsprofil mit KME kein unterstütztes Szenario in Intune.
 
-- **Updates mit einem Google Play-Konto:** Ein Google Play-Konto ist für die Registrierung des Geräts bei Microsoft Intune erforderlich. Für zukünftige Updates der Intune-Unternehmensportal-App ist jedoch möglicherweise ein Google Play-Konto auf dem Gerät erforderlich. Ein Google Play-Konto ist nicht erforderlich, wenn die Registrierung bei einem Google-Geräteinhaber erfolgt.
+- **Zurücksetzung auf Werkseinstellungen zum Registrieren bei Android Enterprise**: Wenn Geräte, die bereits eingerichtet wurden, für einen anderen Zweck genutzt werden sollen, müssen sie für die Registrierung bei Android Enterprise auf die Werkseinstellungen zurückgesetzt werden.
 
-- **Das Feld „Kennwort“ wird ignoriert:** Wenn im Knox-Portal unter **Gerätedetails** das Feld **Kennwort** aufgefüllt wird, dann wird es während der Android-Registrierung von der Intune-Unternehmensportal-App ignoriert. Der Endbenutzer muss auf dem Gerät ein Kennwort eingeben, um die Geräteregistrierung abzuschließen.
+- **Google Play-Konto**: Für die Registrierung des Geräts bei Microsoft Intune ist kein Google Play-Konto erforderlich. Für zukünftige Updates der Intune-Unternehmensportal-App ist jedoch möglicherweise ein Google Play-Konto auf dem Gerät erforderlich. Ein Google Play-Konto ist nicht erforderlich, wenn die Registrierung bei einem Google-Geräteinhaber erfolgt.
+
+- **Das Feld „Kennwort“ wird ignoriert**: Wenn im Knox-Portal unter **Gerätedetails** das Feld **Kennwort** aufgefüllt wird, dann wird es während der Android-Registrierung von der Intune-Unternehmensportal-App ignoriert. Der Endbenutzer muss auf dem Gerät ein Kennwort eingeben, um die Geräteregistrierung abzuschließen.
 
 
 ## <a name="getting-support"></a>Unterstützung erhalten

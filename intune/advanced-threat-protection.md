@@ -14,18 +14,18 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de80092647462f83fb92303080239fd30198bd3c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180233"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53167993"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Aktivieren von Windows Defender ATP mit bedingtem Zugriff in Intune
 
 Windows Defender Advanced Threat Protection (ATP) und Microsoft Intune tragen gemeinsam zum Verhindern von Sicherheitsverletzungen bei und begrenzen die Auswirkungen von Sicherheitsverletzungen innerhalb einer Organisation.
 
-Dieses Feature ist für Windows 10-Geräte gültig.
+Diese Funktion gilt für: Windows 10-Geräte
 
 Eine Person sendet z.B. eine Word-Anlage mit eingebettetem bösartigem Code an einen Benutzer in Ihrer Organisation. Der Benutzer öffnet die Anlage und aktiviert den Inhalt. Ein Angriff mit erhöhten Rechten beginnt, und ein Angreifer an einem Remotecomputer verfügt über Administratorrechte für das Gerät des Opfers. Der Angreifer greift dann remote auf die anderen Geräte des Benutzers zu.
 
@@ -89,13 +89,13 @@ Sobald sie ein Gerät über das Konfigurationspaket integrieren, müssen Sie die
 5. Wählen Sie für **Profiltyp** die Option **Windows Defender ATP (Windows 10 Desktop)** aus.
 6. Konfigurieren Sie die Einstellungen:
 
-  - **Typ des Windows Defender ATP-Clientkonfigurationspakets:** Klicken Sie auf **Onboard** (Integrieren), um das Konfigurationspaket dem Profil hinzuzufügen. Klicken Sie auf **Offboard** (Integration aufheben), um das Konfigurationspaket aus dem Profil zu entfernen.
+  - **Pakettyp für die Windows Defender ATP-Clientkonfiguration**: Wählen Sie **Onboarding** aus, um das Konfigurationspaket zum Profil hinzuzufügen. Klicken Sie auf **Offboarding**, um das Konfigurationspaket aus dem Profil zu entfernen.
   
     > [!NOTE] 
-    > Wenn Sie ordnungsgemäß eine Verbindung mit Windows Defender ATP hergestellt haben, **integriert** Intune automatisch das Konfigurationsprofil für Sie.
+    > Wenn Sie eine ordnungsgemäße Verbindung mit Windows Defender ATP hergestellt haben, führt Intune automatisch ein **Onboarding** für das Konfigurationsprofil für Sie durch, und die Einstellung **Pakettyp für die Windows Defender ATP-Clientkonfiguration** ist nicht verfügbar.
   
-  - **Sample sharing for all files** (Freigabe von Stichproben für alle Dateien): Wenn Sie diese Option **aktivieren**, werden Stichproben erfasst und mit Windows Defender geteilt. Wenn Sie z.B. eine verdächtige Datei sehen, können Sie sie zur gründlichen Analyse an Windows Defender ATP senden. Wenn **Not configured** (Nicht konfiguriert) festgelegt ist, werden keine Stichproben mit Windows Defender ATP geteilt.
-  - **Häufigkeit von Telemetrieberichten erhöhen:** **Aktivieren** Sie diese Einstellung für Geräte mit hohem Risiko, damit sie häufiger Telemetriedaten an den Windows Defender ATP-Dienst melden.
+  - **Beispielfreigabe für alle Dateien**: Durch das **Aktivieren** dieser Option werden Stichproben erfasst und mit Windows Defender ATP geteilt. Wenn Sie z.B. eine verdächtige Datei sehen, können Sie sie zur gründlichen Analyse an Windows Defender ATP senden. Wenn **Nicht konfiguriert** festgelegt ist, werden keine Stichproben mit Windows Defender ATP geteilt.
+  - **Häufigkeit von Telemetrieberichten erhöhen**: Bei Geräten mit hohem Risiko werden durch das **Aktivieren** dieser Option häufiger Telemetriedaten an den Windows Defender ATP-Dienst gemeldet.
 
     [Konfigurieren von Endpunkten mithilfe von System Center Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection) enthält nähere Informationen zu diesen Windows Defender ATP-Einstellungen.
 
@@ -110,7 +110,7 @@ Die Konformitätsrichtlinie legt eine akzeptable Risikostufe für ein Gerät fes
 4. Wählen Sie unter **Plattform** die Option **Windows 10 und höher** aus.
 5. Legen Sie in den Einstellungen für **Windows Defender ATP** für **Anfordern, dass das Gerät höchstens das angegebene Computerrisiko aufweist** die bevorzugte Stufe fest:
 
-  - **Clear** (Löschen): Diese Stufe ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
+  - **Löschen**: Diese Stufe ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
   - **Niedrig**: Das Gerät ist konform, wenn nur Bedrohungen auf niedriger Stufe vorliegen. Geräte mit mittleren oder hohen Bedrohungsstufen sind nicht konform.
   - **Mittel**: Das Gerät ist konform, wenn auf dem Gerät Bedrohungen niedriger oder mittlerer Stufe gefunden werden. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
   - **Hoch**: Dies ist die unsicherste Stufe, die alle Bedrohungsstufen zulässt. Also werden Geräte mit hohen, mittleren oder niedrigen Bedrohungsstufen als konform angesehen.
