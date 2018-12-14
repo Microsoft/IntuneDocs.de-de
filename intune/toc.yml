@@ -113,7 +113,7 @@ items:
     - name: Vorbereiten von Intune
       href: migration-guide-prepare.md
       items:
-      - name: Einfaches Setup
+      - name: Grundlegende Einrichtung
         href: migration-guide-setup.md
       - name: Konfigurieren von Richtlinien für die Verwaltung von Geräten und Apps
         href: migration-guide-configure-policies.md
@@ -408,7 +408,7 @@ items:
         href: device-restrictions-windows-8-1.md
       - name: Windows Phone 8.1
         href: device-restrictions-windows-phone-8-1.md
-      - name: Windows 10
+      - name: Windows 10
         href: device-restrictions-windows-10.md
       - name: Windows 10 Team
         href: device-restrictions-windows-10-teams.md
@@ -421,7 +421,7 @@ items:
       items:
       - name: macOS
         href: endpoint-protection-macos.md
-      - name: Windows 10
+      - name: Windows 10
         href: endpoint-protection-windows-10.md
     - name: Konfiguration von Identity Protection
       href: identity-protection-configure.md
@@ -436,7 +436,7 @@ items:
         href: email-settings-ios.md
       - name: Windows Phone 8.1
         href: email-settings-windows-phone-8-1.md
-      - name: Windows 10
+      - name: Windows 10
         href: email-settings-windows-10.md
     - name: Konfigurieren von VPN-Einstellungen
       href: vpn-settings-configure.md
@@ -453,7 +453,7 @@ items:
         href: vpn-settings-windows-8-1.md
       - name: Windows Phone 8.1
         href: vpn-settings-windows-phone-8-1.md
-      - name: Windows 10
+      - name: Windows 10
         href: vpn-settings-windows-10.md
     - name: Konfigurieren von WLAN-Einstellungen
       href: wi-fi-settings-configure.md
@@ -466,7 +466,7 @@ items:
         href: wi-fi-settings-ios.md
       - name: macOS
         href: wi-fi-settings-macos.md
-      - name: Windows 10
+      - name: Windows 10
         href: wi-fi-settings-windows.md
       - name: Windows 8.1
         href: wi-fi-settings-import-windows-8-1.md
@@ -476,7 +476,7 @@ items:
       items:
       - name: Freigegebene iOS-Geräte
         href: education-settings-configure-ios-shared.md
-      - name: Windows 10
+      - name: Windows 10
         href: education-settings-configure.md
     - name: Konfigurieren der Einstellungen des Windows 10-Editionsupgrades
       href: edition-upgrade-configure-windows-10.md
@@ -541,6 +541,8 @@ items:
       href: exchange-connector-install.md
     - name: Erstellen und Zuweisen der Richtlinie für bedingten Zugriff
       href: conditional-access-exchange-create.md
+    - name: Gerätebasierte bedingte Zugriffsrichtlinie
+      href: create-conditional-access-intune.md
     - name: Erneutes Zuweisen von Richtlinien für bedingten Zugriff über das klassische Intune-Portal
       href: conditional-access-intune-reassign.md
     - name: App-basierter bedingter Zugriff
@@ -685,7 +687,7 @@ items:
         href: custom-settings-ios.md
       - name: macOS
         href: custom-settings-macos.md
-      - name: Windows 10
+      - name: Windows 10
         href: custom-settings-windows-10.md
       - name: Windows Holographic for Business
         href: custom-settings-windows-holographic.md
@@ -839,9 +841,9 @@ items:
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: Lösen von Richtlinienkonflikten
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-ms.openlocfilehash: 73ed5975edd4ac8312e9b23eefec471ebf005dd9
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: ada41d711516760e9d928c78968b0a24d719d783
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247219"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325047"
