@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 85a05f4816692d3bccfe695c7e69f54d007f3b59
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 7a54a72afb6052ed11566c2d2ada596ebde2159b
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187003"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112407"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Registrieren von macOS-Geräten in Intune
 
@@ -37,7 +37,7 @@ Die folgenden Voraussetzungen müssen vor dem Einrichten der Registrierung von m
 
 - [Konfigurieren von Domänen](custom-domain-name-configure.md)
 - [Festlegen der MDM-Autorität](mdm-authority-set.md)
-- [Erstellen von Gruppen](https://docs.microsoft.com/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
+- [Erstellen von Gruppen](groups-add.md)
 - [Konfigurieren des Unternehmensportals](company-portal-app.md)
 - Zuweisen von Benutzerlizenzen im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Abrufen eines Apple-MDM-Push-Zertifikats](apple-mdm-push-certificate-get.md)
@@ -47,7 +47,7 @@ Die folgenden Voraussetzungen müssen vor dem Einrichten der Registrierung von m
 Benutzer können ihre persönlichen Geräte für die Intune-Verwaltung registrieren. Dies wird als „bring your own device“ oder BYOD bezeichnet. Nachdem Sie die Voraussetzungen erfüllt und Benutzerlizenzen zugewiesen haben, können Ihre Benutzer ihre Geräte registrieren, indem sie
 - zur [Website des Unternehmensportals](https://portal.manage.microsoft.com) wechseln oder
 - die Unternehmensportal-App herunterladen.
-Sie können ihnen auch einen Link für Online-Registrierungsschritte senden: [Registrieren Ihres Mac OS-Geräts bei Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos).
+Sie können ihnen auch einen Link zu den Schritten für die Onlineregistrierung senden: [Registrieren Ihres macOS-Geräts in Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
 
 Informationen zu anderen Endbenutzeraufgaben finden Sie in den folgenden Artikeln:
 
@@ -56,7 +56,7 @@ Informationen zu anderen Endbenutzeraufgaben finden Sie in den folgenden Artikel
 
 ## <a name="company-owned-macos-devices"></a>Unternehmenseigene macOS-Geräte
 Für Organisationen, die Geräte für Ihre Benutzer erwerben, unterstützt Intune die folgenden Methoden für die Registrierung von unternehmenseigenen macOS-Geräten:
-- [Apple-Programm zur Geräteregistrierung, Device Enrollment Program (DEP)](device-enrollment-program-enroll-macos.md): Organisationen können macOS-Geräte über das DEP erwerben. Mit DEP können Sie drahtlos (Over The Air) ein Registrierungsprofil bereitstellen, das Geräte für die Verwaltung registriert.
+- [Apple-Programm zur Geräteregistrierung (DEP)](device-enrollment-program-enroll-macos.md): Organisationen können macOS-Geräte über das Apple-Programm zur Geräteregistrierung (Device Enrollment Program, DEP) erwerben. Mit DEP können Sie drahtlos (Over The Air) ein Registrierungsprofil bereitstellen, das Geräte für die Verwaltung registriert.
 - [Geräteregistrierungs-Manager (Device Enrollment Manager, DEM)](device-enrollment-manager-enroll.md): Über ein DEM-Konto können Sie bis zu 1.000 Geräte registrieren.
 
 ## <a name="block-macos-enrollment"></a>Blockieren der macOS-Registrierung
@@ -69,9 +69,9 @@ Intune lässt macOS-Geräte standardmäßig registrieren. Informationen zum Bloc
 
 Sie können virtuelle macOS-Computer mithilfe von Parallels Desktop oder VMware Fusion zu Testzwecken verwenden. 
 
-Für Parallels Desktop müssen Sie den Hardwaretyp sowie die Seriennummer für die virtuellen Computer festlegen, damit Intune diese erkennen kann. Befolgen Sie die Anleitungen von Parallels zum [Festlegen des Hardwaretyps](http://kb.parallels.com/123594) sowie der [Seriennummer](http://kb.parallels.com/123455), um die nötigen Einstellungen für die Tests einzurichten. Es wird empfohlen, den Hardwaretyp des Geräts, auf dem die virtuellen Computer ausgeführt werden, mit dem Hardwaretyp der von Ihnen erstellten virtuellen Computer abzustimmen. Sie finden diesen Hardwaretyp im **Apple-Menü** unter **Über diesen Mac** > **Systembericht** > **Modell-Identifizierung**. 
+Für Parallels Desktop müssen Sie den Hardwaretyp sowie die Seriennummer für die virtuellen Computer festlegen, damit Intune diese erkennen kann. Befolgen Sie die Anleitungen von Parallels zum [Festlegen des Hardwaretyps](http://kb.parallels.com/123594) sowie der [Seriennummer](http://kb.parallels.com/123455), um die nötigen Einstellungen für die Tests einzurichten. Es wird empfohlen, den Hardwaretyp des Geräts, auf dem die virtuellen Computer ausgeführt werden, mit dem Hardwaretyp der von Ihnen erstellten virtuellen Computer abzustimmen. Sie finden diesen Hardwaretyp im **Apple-Menü** > **Über diesen Mac** > **Systembericht** > **Modell-Identifizierung**. 
 
-Für VMware Fusion müssen Sie die [VMX-Datei bearbeiten](https://kb.vmware.com/s/article/1014782), um das Hardwaremodell und die Seriennummer des virtuellen Computers festzulegen. Es wird empfohlen, den Hardwaretyp des Geräts, auf dem die virtuellen Computer ausgeführt werden, mit dem Hardwaretyp der von Ihnen erstellten virtuellen Computer abzustimmen. Sie finden diesen Hardwaretyp im **Apple-Menü** unter **Über diesen Mac** > **Systembericht** > **Modell-Identifizierung**. 
+Für VMware Fusion müssen Sie die [VMX-Datei bearbeiten](https://kb.vmware.com/s/article/1014782), um das Hardwaremodell und die Seriennummer des virtuellen Computers festzulegen. Es wird empfohlen, den Hardwaretyp des Geräts, auf dem die virtuellen Computer ausgeführt werden, mit dem Hardwaretyp der von Ihnen erstellten virtuellen Computer abzustimmen. Sie finden diesen Hardwaretyp im **Apple-Menü** > **Über diesen Mac** > **Systembericht** > **Modell-Identifizierung**. 
 
 ## <a name="user-approved-enrollment"></a>Durch den Benutzer genehmigte Registrierung
 
