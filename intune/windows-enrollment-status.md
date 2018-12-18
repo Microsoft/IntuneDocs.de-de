@@ -1,7 +1,7 @@
 ---
 title: Einrichten einer Statusseite für die Registrierung
 titleSuffix: Microsoft Intune
-description: Begrüßen Sie Ihre Benutzer, die Windows 10-Geräte registrieren.
+description: Richten Sie eine Begrüßungsseite für Benutzer ein, die Windows 10-Geräte registrieren.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729040"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032094"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Einrichten einer Statusseite für die Registrierung
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-Bei der Geräteeinrichtung werden auf der Statusseite für die Registrierung Installationsinformationen zum Gerät angezeigt. Einige Anwendungen, Profile und Zertifikate sind möglicherweise noch nicht installiert, wenn ein Benutzer die Standardregistrierung abschließt und sich am Gerät anmeldet. Mithilfe einer Registrierungsstatusseite können Benutzer den Status Ihres Geräts während der Geräteeinrichtung besser nachvollziehen. Sie können mehrere Profile für Registrierungsstatusseiten erstellen und auf verschiedene Gruppen anwenden. Folgendes kann für Profile festgelegt werden:
+Bei der Geräteeinrichtung mit Intune werden auf der Statusseite für die Registrierung Installationsinformationen zum Gerät angezeigt. Einige Anwendungen, Profile und Zertifikate sind möglicherweise noch nicht installiert, wenn ein Benutzer die Standardregistrierung abschließt und sich am Gerät anmeldet. Mithilfe einer Registrierungsstatusseite können Benutzer den Status Ihres Geräts während der Geräteeinrichtung besser nachvollziehen. Sie können mehrere Profile für Registrierungsstatusseiten erstellen und auf verschiedene Gruppen anwenden. Folgendes kann für Profile festgelegt werden:
 - Installationsstatus anzeigen
 - Nutzung blockieren, bis die Installation abgeschlossen ist
 - Angeben, wie ein Benutzer vorgehen kann, wenn die Geräteeinrichtung fehlschlägt.

@@ -5,34 +5,36 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36cfb5ac05b2d69b5c7349f4ebc6054848a08fc8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 1b83a380620704e9e3f616cee77b33d577c86c0d
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52730401"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977268"
 ---
 # <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Übermittlungsoptimierungseinstellungen in Microsoft Intune für Windows 10 (und höher)
 
-In diesem Artikel werden alle Übermittlungsoptimierungseinstellungen aufgelistet und beschrieben, die Sie für Windows 10-Geräte konfigurieren können. Diese Einstellungen werden einem Gerätekonfigurationsprofil hinzugefügt und dann Ihren Geräten mit Microsoft Intune zugewiesen oder bereitgestellt.
+In diesem Artikel werden alle Übermittlungsoptimierungseinstellungen aufgelistet und beschrieben, die Sie für Windows 10-Geräte konfigurieren können. Diese Einstellungen werden einem Gerätekonfigurationsprofil hinzugefügt und dann Ihren Geräten mit Microsoft Intune zugewiesen oder bereitgestellt. 
+
+[Updates für die Übermittlungsoptimierung](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) sind eine hervorragende Ressource, um mehr über die Übermittlungsoptimierung unter Windows 10 zu erfahren.
 
 ## <a name="settings"></a>Einstellung
 
-**Downloadmodus für Bereitstellungsoptimierung**: Wählen Sie aus, wie Updates Ihren Geräten übermittelt werden. Folgende Optionen sind verfügbar:
+**Downloadmodus für die Übermittlungsoptimierung:** Wählen Sie aus, wie Updates an Ihre Geräte übermittelt werden. Folgende Optionen sind verfügbar:
 
-- **Nicht konfiguriert**: Endbenutzer aktualisieren ihre Geräte mit ihren eigenen Methoden, möglicherweise mit Verwendung der Einstellungen für **Windows-Updates** oder **Übermittlungsoptimierung** im Betriebssystem.
-- **Nur HTTP, kein Peering**: Updates nur aus dem Internet beziehen. Beziehen Sie Updates nicht von anderen Computern in Ihrem Netzwerk (als Peering oder Peer-zu-Peer bezeichnet).
-- **HTTP kombiniert mit Peering hinter dem gleichen NAT-HTTP kombiniert mit Peering über eine private Gruppe**: Updates aus dem Internet und von anderen Computern in Ihrem Netzwerk beziehen. Peering bezieht sich auf Geräte am gleichen Active Directory-Standort (sofern vorhanden) oder in der gleichen Domäne. Wenn diese Option ausgewählt ist, erfolgt das Peering die IP-Adressen Ihrer Netzwerkadressenübersetzung (Network Address Translation, NAT) übergreifend.
-- **HTTP kombiniert mit Internetpeering**: Updates aus dem Internet und von anderen Computern in Ihrem Netzwerk beziehen.
-- **Einfacher Downloadmodus ohne Peering**: Updates aus dem Internet direkt vom Updatebesitzer wie z.B. Microsoft beziehen. Die Clouddienste zur Übermittlungsoptimierung werden nicht in Anspruch genommen.
-- **Umgehungsmodus**: Verwenden Sie den intelligenten Hintergrundübertragungsdienst (Background Intelligent Transfer Service, BITS), um Updates zu beziehen. Verwenden Sie nicht die Übermittlungsoptimierung.
+- **Nicht konfiguriert:** Endbenutzer aktualisieren ihre Geräte mit ihren eigenen Methoden, möglicherweise unter Verwendung der Einstellungen für **Windows-Updates** oder **Übermittlungsoptimierung** im Betriebssystem.
+- **Nur HTTP, kein Peering:** Updates nur aus dem Internet beziehen. Beziehen Sie Updates nicht von anderen Computern in Ihrem Netzwerk (als Peering oder Peer-zu-Peer bezeichnet).
+- **HTTP kombiniert mit Peering hinter dem gleichen NAT-HTTP kombiniert mit Peering über eine private Gruppe:** Updates aus dem Internet und von anderen Computern in Ihrem Netzwerk beziehen. Peering bezieht sich auf Geräte am gleichen Active Directory-Standort (sofern vorhanden) oder in der gleichen Domäne. Wenn diese Option ausgewählt ist, erfolgt das Peering die IP-Adressen Ihrer Netzwerkadressenübersetzung (Network Address Translation, NAT) übergreifend.
+- **HTTP kombiniert mit Internetpeering:** Updates aus dem Internet und von anderen Computern in Ihrem Netzwerk beziehen.
+- **Einfacher Downloadmodus ohne Peering:** Updates aus dem Internet direkt vom Updatebesitzer wie z.B. Microsoft beziehen. Die Clouddienste zur Übermittlungsoptimierung werden nicht in Anspruch genommen.
+- **Umgehungsmodus:** Den intelligenten Hintergrundübertragungsdienst (Background Intelligent Transfer Service, BITS) verwenden, um Updates zu beziehen. Verwenden Sie nicht die Übermittlungsoptimierung.
 
 ## <a name="move-from-existing-update-rings-to-delivery-optimization"></a>Wechsel von vorhandenen Updateringen zur Übermittlungsoptimierung
 

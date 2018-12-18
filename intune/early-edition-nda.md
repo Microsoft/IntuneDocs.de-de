@@ -1,6 +1,7 @@
 ---
-title: Early Edition
-description: ''
+title: Early Edition – Microsoft Intune
+titlesuffix: ''
+description: Early Edition für Microsoft Intune
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,18 +16,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: d00c367cdcd0b8172d64c3ebbcd0dec2165407c9
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.custom: seodec18
+ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829129"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112832"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Die Early Edition für Microsoft Intune – Dezember 2018
 
 > [!Note]
-> Benachrichtigung zum Geheimhaltungsvertrag: Die folgenden Änderungen befinden sich in der Entwicklung für Intune. Die Freigabe dieser Informationen erfolgt im Geheimhaltungsvertrag (GHV) auf einer sehr begrenzten Basis. Posten Sie keine der folgenden Informationen in sozialen Medien oder auf öffentlichen Websites wie Twitter, UserVoice, Reddit usw. 
+> GHV-Benachrichtigung: Die folgenden Änderungen sind in der Entwicklung für Intune. Die Freigabe dieser Informationen erfolgt im Geheimhaltungsvertrag (GHV) auf einer sehr begrenzten Basis. Posten Sie keine der folgenden Informationen in sozialen Medien oder auf öffentlichen Websites wie Twitter, UserVoice, Reddit usw. 
 
 Die **Early Edition** enthält eine Liste der Features, die im Rahmen des Geheimhaltungsvertrags freigegeben und in späteren Releases von Microsoft Intune zur Verfügung stehen werden. Diese Informationen werden auf einer begrenzten Basis bereitgestellt, und Änderungen sind vorbehalten. Verfassen Sie außerhalb Ihres Unternehmens keinen Tweet oder Post auf UserVoice o.Ä. über diese Informationen. Einige der hier aufgeführten Features werden möglicherweise bis zum Stichtag nicht fertig und werden erst in eine spätere Version aufgenommen. Andere Features werden in einer Pilotphase getestet (Test-Flighting), um sicherzustellen, dass sie für Kunden bereit sind. Wenden Sie sich mit Fragen oder Bedenken an den Ansprechpartner für Ihre Microsoft-Produktgruppe.
 
@@ -48,10 +49,21 @@ Für Android-Geräte in einem Bereitstellungsszenario mit einer nicht registrier
 ### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices----1333665-2999078---"></a>Neue Optionen zum automatischen Herstellen einer Verbindung und Beibehalten von Regeln bei der Verwendung von DNS-Einstellungen unter Windows 10 und höher <!-- 1333665, 2999078 -->
 Auf Geräten unter Windows 10 und höher werden Sie möglicherweise ein VPN-Konfigurationsprofil erstellen können, das eine Liste von DNS-Servern zum Auflösen von Domänen enthält, z.B. „contoso.com“. Dazu gehören neue Einstellungen für die Namensauflösung (**Gerätekonfiguration** > **Profile** > **Profil erstellen**, wählen Sie **Windows 10 und höher** als Plattform und **VPN** als Profiltyp aus, und wählen Sie **DNS-Einstellungen** >**Hinzufügen** aus): 
 
-- **Automatisch verbinden**: Wenn **Aktiviert**, stellt das Gerät automatisch eine Verbindung mit dem VPN her, wenn ein Gerät mit einer Domäne Kontakt aufnimmt, die Sie eingeben, z.B. „contoso.com“.
-- **Persistent**: Standardmäßig sind alle Regeln der Namensauflösungsrichtlinie-Tabelle (Name Resolution Policy Table, NRPT) aktiv, solange das Gerät über dieses VPN-Profil verbunden ist. Wenn diese Einstellung für eine NRPT-Regel **Aktiviert** ist, bleibt die Regel auch dann auf dem Gerät aktiv, wenn das VPN getrennt ist oder das VPN-Profil entfernt wird. Die Regel gilt, bis sie manuell entfernt wird – dies ist mit PowerShell möglich.
+- **Automatisch verbinden:** Wenn diese Option **Aktiviert** ist, stellt das Gerät automatisch eine Verbindung mit dem VPN her, wenn ein Gerät mit einer Domäne Kontakt aufnimmt, die Sie eingeben, z.B. „contoso.com“.
+- **Persistent:** Standardmäßig sind alle Regeln der Namensauflösungsrichtlinie-Tabelle (Name Resolution Policy Table, NRPT) aktiv, solange das Gerät über dieses VPN-Profil verbunden ist. Wenn diese Einstellung für eine NRPT-Regel **Aktiviert** ist, bleibt die Regel auch dann auf dem Gerät aktiv, wenn das VPN getrennt ist oder das VPN-Profil entfernt wird. Die Regel gilt, bis sie manuell entfernt wird – dies ist mit PowerShell möglich.
 
 In [VPN-Einstellungen für Windows 10](vpn-settings-windows-10.md) wird die aktuelle Liste der Einstellungen beschrieben. 
+
+### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>Verwenden von S/MIME zum Verschlüsseln und Signieren von mehreren Geräten eines Benutzers <!-- 1333642 eeready -->
+Die E-Mail-Verschlüsselung mit S/MIME mittels eines neuen Profils für importierte Zertifikate wird unterstützt. Navigieren Sie zu deren Verwendung zu **Gerätekonfiguration** > **Profile** > **Profil erstellen**, und wählen Sie zuerst die Plattform und dann den Profiltyp **Importiertes PKCS-Zertifikat** aus. In Intune können Sie Zertifikate im PFX-Format importieren. Intune kann dann genau diese Zertifikate an mehrere Geräte übergeben, die durch einen einzelnen Benutzer registriert wurden. Außerdem enthalten:
+
+- Das native iOS-E-Mail-Profil unterstützt die Aktivierung der S/MIME-Verschlüsselung mithilfe importierter Zertifikate im PFX-Format.
+- Die native E-Mail-App auf Windows Phone 10-Geräten verwendet automatisch das S/MIME-Zertifikat.
+- Die privaten Zertifikate können über mehrere Plattformen übermittelt werden. Jedoch unterstützen nicht alle E-Mail-Apps S/MIME.
+- Auf anderen Plattformen müssen Sie möglicherweise die E-Mail so konfigurieren, dass Sie S/MIME zulässt.  
+- E-Mail-Apps, die die S/MIME-Verschlüsselung unterstützen, behandeln das Abrufen von Zertifikaten für die S/MIME-E-Mail-Verschlüsselung womöglich in einer Art und Weise, die von MDM nicht unterstützt werden kann, z.B. durch Lesen über den Zertifikatspeicher des Verlegers.
+
+Unterstützt auf: Windows, Windows Phone 10, macOS, iOS, Android
 
 ### <a name="help-and-support-page-in-the-windows-company-portal-app----1488939---"></a>Hilfe- und Supportseite in der Windows-Unternehmensportal-App <!-- 1488939 -->
 Der Windows-Unternehmensportal-App wird eine neue Seite hinzugefügt. Die Hilfe- und Supportseite enthält die Helpdesk-Kontaktinformationen. Benutzer werden darüber hinaus Unternehmensportalprotokolle senden können, wenn Probleme auftreten. Die Seite bietet auch einen FAQ-Abschnitt, um Endbenutzer zu unterstützen.
@@ -59,9 +71,6 @@ Der Windows-Unternehmensportal-App wird eine neue Seite hinzugefügt. Die Hilfe-
 ### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>Verwenden vertrauenswürdiger Netzwerkerkennung für VPN-Profile auf Windows 10-Geräten <!-- 1500165 -->
 Wenn Sie die Erkennung vertrauenswürdiger Netzwerke verwenden, werden Sie verhindern können, dass VPN-Profile automatisch eine VPN-Verbindung herstellen, wenn der Benutzer sich bereits in einem vertrauenswürdigen Netzwerk befindet. Sie werden DNS-Suffixe zum Aktivieren der Erkennung vertrauenswürdiger Netzwerke auf Geräten mit Windows 10 und höher hinzufügen können (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10 und höher** als Plattform > **VPN** als Profiltyp).
 In [VPN-Einstellungen für Windows 10](vpn-settings-windows-10.md) sind die aktuellen VPN-Einstellungen aufgeführt.
-
-### <a name="support-for-android-corporate-owned-fully-managed-devices----574342---"></a>Unterstützung für vollständig verwaltete Android-Unternehmensgeräte <!-- 574342 -->
-Intune wird vollständig verwaltete Android-Geräte in einem „Gerätebesitzer“-Szenario unterstützen, in dem das Unternehmen Besitzer ist und die Geräte konsequent von der IT-Abteilung verwaltet und einzelnen Benutzern zugewiesen werden. So können Administratoren das gesamte Gerät verwalten, einen erweiterten Bereich von Richtlinienkontrollen erzwingen, die Arbeitsprofilen nicht zur Verfügung stehen, und Benutzer werden derart eingeschränkt, dass sie nur Apps von verwaltetem Google Play installieren können. Um vollständig verwaltete Android-Geräte einzurichten, wechseln Sie zu **Geräteregistrierung** > **Android-Registrierung** > **Unternehmenseigene, vollständig verwaltete Geräte**.
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Das Intune App SDK unterstützt 256-Bit-Verschlüsselungsschlüssel <!-- 1832174 -->
 Das Intune App SDK für iOS wird 256-Bit-Verschlüsselungsschlüssel verwenden, wenn die Verschlüsselung von App-Schutzrichtlinien aktiviert ist. Das SDK bietet zur Kompatibilität mit Inhalten und Apps, die ältere SDK-Versionen verwenden, weiterhin Unterstützung der 128-Bit-Schlüssel.
@@ -99,11 +108,14 @@ Sie werden ein E-Mail-Profil erstellen können, das unterschiedliche Einstellung
 [iOS-E-Mail-Konfigurationseinstellungen](email-settings-ios.md) listet die aktuellen Einstellungen auf.
 
 ### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>Weitere Setup-Assistent-Bildschirme auf einem iOS-DEP-Gerät überspringen <!-- 2687509 -->
-Zusätzlich zu den Bildschirmen, die Sie derzeit überspringen können, werden Sie in der Lage sein, iOS-DEP-Geräte so einzustellen, dass die folgenden Bildschirme des Setup-Assistenten übersprungen werden, wenn ein Benutzer das Gerät registriert: „Displayton“, „Datenschutz“, „Android-Migration“, „Home-Taste“, „iMessage & FaceTime“, „Onboarding“, „Watch-Migration“, „Darstellung“, „Bildschirmzeit“, „Softwareupdate“, „SIM-Setup“.
+Zusätzlich zu den Anzeigen, die Sie derzeit überspringen können, können Sie künftig festlegen, dass iOS-DEP-Geräte die folgenden Anzeigen im Setup-Assistenten überspringen, wenn ein Benutzer das Gerät registriert: Displayton, Privatsphäre, Android-Migration, Startschaltfläche, iMessage & FaceTime, Onboarding, Watch-Migration, Darstellung, Bildschirmzeit, Softwareupdate und SIM-Setup.
 Um die zu überspringenden Bildschirme auszuwählen, wechseln Sie zu **Geräteregistrierung** > **Apple-Registrierung** > **Token für Registrierungsprogramm**, wählen Sie das Token und unter **Profile** das Profil aus, wählen Sie **Eigenschaften** > **Anpassung des Setup-Assistenten** und **Ausblenden**  für alle Bildschirme aus, die Sie überspringen möchten, und wählen Sie **OK** aus.
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Einige BitLocker-Einstellungen unterstützen die Windows 10 Pro-Edition<!-- 2727036 -->
 Sie werden ein Konfigurationsprofil erstellen können, das die Endpunktschutz-Einstellungen auf Windows 10-Geräten einschließlich BitLocker festlegt. Damit wird auch die Windows 10 Professional-Edition für einige BitLocker-Einstellungen unterstützt. Die aktuellen Einstellungen für die Windows 10-Edition finden Sie unter [Endpoint protection settings for Windows 10 (Endpunktschutz-Einstellungen für Windows 10)](endpoint-protection-windows-10.md#windows-encryption).
+Intune wird zusätzliche Felder zur Geräteberichtserstellung bieten, einschließlich Feldern für Android-Hersteller, Modell und Sicherheitspatchversion sowie iOS-Modell. In Intune werden diese Felder durch Auswahl von **Client-Apps** > **Status des App-Schutzes** und **Bericht zum App-Schutz: iOS, Android** verfügbar sein. Darüber hinaus werden diese Parameter Sie bei der Konfiguration der **Zulassen**-Liste für den Gerätehersteller (Android), der **Zulassen**-Liste für das Gerätemodell (Android und iOS) sowie der Einstellung der mindestens erforderlichen Android-Sicherheitspatchversion unterstützen. 
+
+### <a name="intune-device-reporting-fields----2748738---"></a>Felder zur Geräteberichterstellung in Intune <!-- 2748738 -->
 Intune wird zusätzliche Felder zur Geräteberichtserstellung bieten, einschließlich Feldern für Android-Hersteller, Modell und Sicherheitspatchversion sowie iOS-Modell. In Intune werden diese Felder durch Auswahl von **Client-Apps** > **Status des App-Schutzes** und **Bericht zum App-Schutz: iOS, Android** verfügbar sein. Darüber hinaus werden diese Parameter Sie bei der Konfiguration der **Zulassen**-Liste für den Gerätehersteller (Android), der **Zulassen**-Liste für das Gerätemodell (Android und iOS) sowie der Einstellung der mindestens erforderlichen Android-Sicherheitspatchversion unterstützen. 
 
 ### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal----2809362---"></a>Konfiguration freigegebener Geräte wird im Azure-Portal in „Nachricht auf Sperrbildschirm“ für iOS-Geräte umbenannt <!-- 2809362 -->
@@ -136,7 +148,7 @@ Um die aktuellen Einstellungen anzuzeigen, wechseln Sie zu [Windows 10 device re
 Gilt für: Windows 10 und höher
 
 ### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Administrative Vorlagen stehen als Public Preview zur Verfügung und werden in ihr eigenes Konfigurationsprofil verschoben <!-- 3322847 -->
-Administrative Vorlagen in Intune (**Gerätekonfiguration** > **Administrative Vorlagen**) stehen derzeit als Public Preview zur Verfügung. Mit diesem Update umfassen die administrativen Vorlagen über 300 Einstellungen, die in Intune verwaltet werden können. Diese Einstellungen waren zuvor nur im Gruppenrichtlinien-Editor vorhanden.
+Administrative Vorlagen in Intune (**Gerätekonfiguration** > **Administrative Vorlagen**) stehen derzeit als Public Preview zur Verfügung. Mit diesem Update: Administrative Vorlagen umfasst über 300 Einstellungen, die in Intune verwaltet werden können. Diese Einstellungen waren zuvor nur im Gruppenrichtlinien-Editor vorhanden.
 Administrative Vorlagen stehen als Public Preview zur Verfügung und werden von **Gerätekonfiguration** > **Administrative Vorlagen** verschoben. Gehen Sie zukünftig wie folgt vor, um administrative Vorlagen aufzurufen: **Gerätekonfiguration** > **Profile** >**Profil erstellen**, wählen Sie für **Plattform** **Windows 10 und höher** und für **Profiltyp** **Administrative Vorlagen** aus.
 Berichterstellung wird aktiviert. Gilt für: Windows 10 und höher
 
@@ -154,10 +166,10 @@ Um eine Bereichsmarkierung zu einem Konfigurationsprofil hinzuzufügen, klicken 
 
 ### <a name="tenant-health-dashboard----1124854---"></a>Dashboard zur Mandantenintegrität <!-- 1124854 -->
 Auf der Seite zum Mandantenstatus in Intune werden Informationen zum Mandantenstatus an einem zentralen Ort bereitgestellt. Die Seite ist in vier Abschnitte unterteilt:  
-- **Mandantendetails**: Enthält Informationen, z. B. Ihre MDM-Autorität, die insgesamt bei Ihrem Mandanten angemeldeten Geräte und Ihre Lizenzzähler. In diesem Abschnitt wird auch die aktuelle Dienstversion für Ihren Mandanten angezeigt.
-- **Connectorstatus**: Enthält Informationen zu konfigurierten Connectors, z. B. Apple VPP, Windows Store for Business und Zertifikatsconnectors. Basierend auf ihrem aktuellen Zustand werden die Connectors als *Fehlerfrei*, *Warnung* oder *Fehlerhaft* gekennzeichnet.
-- **Intune Service Health**: Enthält aktive Vorfälle oder Ausfälle für Ihren Mandanten. Die Informationen in diesem Abschnitt werden direkt über das Office-Nachrichtencenter abgerufen ([https://portal.office.com](https://portal.office.com)).
-- **Intune News**: Enthält aktive Nachrichten für Ihren Mandanten, z. B. Benachrichtigungen, dass Ihr Mandant die neuesten Intune-Features erhalten hat. Die Informationen in diesem Abschnitt werden direkt über das Office-Nachrichtencenter abgerufen ([https://portal.office.com](https://portal.office.com)).
+- **Mandantendetails:** Enthält Informationen wie Ihre MDM-Autorität, die insgesamt bei Ihrem Mandanten angemeldeten Geräte und Ihre Lizenzzähler. In diesem Abschnitt wird auch die aktuelle Dienstversion für Ihren Mandanten angezeigt.
+- **Connectorstatus:** Enthält Informationen zu konfigurierten Connectors wie Apple VPP, Windows Store for Business und Zertifikatconnectors. Basierend auf ihrem aktuellen Zustand werden die Connectors als *Fehlerfrei*, *Warnung* oder *Fehlerhaft* gekennzeichnet.
+- **Intune Service Health:** Enthält aktive Vorfälle oder Ausfälle für Ihren Mandanten. Die Informationen in diesem Abschnitt werden direkt über das Office-Nachrichtencenter abgerufen ([https://portal.office.com](https://portal.office.com)).
+- **Intune-News** (Neuigkeiten zu Intune): Enthält aktive Nachrichten für Ihren Mandanten wie Benachrichtigungen, dass Ihr Mandant die neuesten Intune-Features erhalten hat. Die Informationen in diesem Abschnitt werden direkt über das Office-Nachrichtencenter abgerufen ([https://portal.office.com](https://portal.office.com)).
 
 
 ### <a name="deployed-wip-policies-without-user-enrollment----1434452---"></a>Bereitgestellte WIP-Richtlinien ohne Benutzerregistrierung <!-- 1434452 -->

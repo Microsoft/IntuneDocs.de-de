@@ -1,12 +1,12 @@
 ---
 title: Registrieren von macOS-Geräten – Programm zur Geräteregistrierung oder Apple School Manager
-titleSuffix: Microsoft Intune
+titleSuffix: ''
 description: Hier erfahren Sie, wie Sie unternehmenseigene macOS-Geräte mit dem Programm zur Geräteregistrierung (Device Enrollment Program, DEP) registrieren.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728751"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032349"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Automatisches Registrieren von macOS-Geräten mit dem Programm zur Geräteregistrierung oder Apple School Manager
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Dieser Artikel unterstützt Sie dabei, die macOS-Geräteregistrierung für Geräte zu aktivieren, die über das [Device Enrollment Program](https://deploy.apple.com) (DEP, Programm zur Geräteregistrierung) oder [Apple School Manager](https://school.apple.com/) von Apple erworben wurden. Sie können jedes dieser Programme zur Geräteregistrierung für eine große Anzahl von Geräten verwenden, ohne diese physisch berühren zu müssen. Sie können macOS-Geräte direkt an Benutzer senden. Wenn ein Benutzer das Gerät einschaltet, wird der Setup-Assistent mit vordefinierten Einstellungen ausgeführt, und das Gerät wird bei der Intune-Verwaltung registriert.
+Sie können die Intune-Registrierung für macOS-Geräte einrichten, die über das [Programm zur Geräteregistrierung](https://deploy.apple.com) oder [Apple School Manager](https://school.apple.com/) von Apple erworben wurden. Sie können jedes dieser Programme zur Geräteregistrierung für eine große Anzahl von Geräten verwenden, ohne diese physisch berühren zu müssen. Sie können macOS-Geräte direkt an Benutzer senden. Wenn ein Benutzer das Gerät einschaltet, wird der Setup-Assistent mit vordefinierten Einstellungen ausgeführt, und das Gerät wird bei der Intune-Verwaltung registriert.
 
 Zum Einrichten der Registrierung können Sie sowohl das Intune-Portal als auch das Apple DEP-Portal verwenden. Sie erstellen Registrierungsprofile, die Einstellungen enthalten, die für Geräte während der Registrierung gelten.
 
@@ -123,7 +123,7 @@ Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil fü
  
 7. Wählen Sie **OK** aus.
 
-8. Wählen Sie **Einstellungen des Einrichtungs-Assistenten** aus, um die folgenden Profileinstellungen zu konfigurieren: ![Anpassung des Setup-Assistenten](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
+8. Wählen Sie **Einstellungen des Einrichtungs-Assistenten** aus, um die folgenden Profileinstellungen zu konfigurieren:  ![Anpassung des Setup-Assistenten](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
     | Abteilungseinstellungen | Beschreibung |
     |---|---|
