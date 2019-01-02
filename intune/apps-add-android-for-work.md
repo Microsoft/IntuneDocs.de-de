@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c7d5d29df0f91a4cff1060cd10a5d2355e196e39
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180136"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305929"
 ---
 # <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Zuweisen von Apps zu Android-Arbeitsprofilgeräten mit Intune
 
@@ -56,7 +56,7 @@ Stellen Sie sicher, dass Sie Intune und Android-Arbeitsprofile für die **Gerät
 
     ![Optionen für die Behandlung neuer App-Berechtigungsanforderungen](media/approve-app-settings.png)
 
-    Die App wird genehmigt und in Ihrer IT-Verwaltungskonsole angezeigt. Als Nächstes können Sie [die Android-Arbeitsprofil-App mit Intune synchronisieren](apps-add-android-for-work.md#sync-an-android-for-work-app-with-intune). 
+    Die App wird genehmigt und in Ihrer IT-Verwaltungskonsole angezeigt. Als Nächstes können Sie [die Android-Arbeitsprofil-App mit Intune synchronisieren](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune). 
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Synchronisieren einer App aus dem Managed Google Play Store mit Intune
 
@@ -84,7 +84,7 @@ Wenn ein App-Entwickler eine neue Version der App mit aktualisierten Berechtigun
 
 Besuchen Sie regelmäßig die verwaltete Google Play-Konsole, um zu prüfen, ob neue Berechtigungen vorliegen. Sie können Google Play so konfigurieren, dass eine E-Mail an Sie oder andere Personen gesendet wird, wenn neue Berechtigungen für eine genehmigte App erforderlich sind. Wenn Sie eine App zuweisen und feststellen, dass sie nicht auf Geräten installiert ist, überprüfen Sie folgendermaßen, ob neue Berechtigungen vorliegen:
 
-1. Wechseln Sie zu [Google Play](http://play.google.com/work).
+1. Wechseln Sie zu [Google Play](https://play.google.com/work).
 2. Melden Sie sich mit dem Google-Konto an, das Sie zum Veröffentlichen und Genehmigen der Apps verwendet haben.
 3. Wählen Sie die Registerkarte **Updates** aus, und überprüfen Sie, ob andere Apps ein Update erfordern.  
     Alle aufgelisteten Apps erfordern neue Berechtigungen und werden erst zugewiesen, wenn diese Berechtigungen angewendet wurden.

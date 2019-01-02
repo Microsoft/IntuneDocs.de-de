@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 11/13/2018
 ms.prod: ''
 ms.service: microsoft-intune
+ms.topic: article
 ms.technology: ''
 ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9f6d5bc8c124e3ba26b7e3fc110510c7d5e0e6a3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3158d0531de4809bf654c030b8c1e0ef90185362
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183161"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247066"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Überprüfen der Einrichtung von App-Schutzrichtlinien
 

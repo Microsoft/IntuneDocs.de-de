@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 470bafba548c38870e57a545c4514459dde219b4
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 76f155d84a3f447cf067970c614d2bd7fd4f1798
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189389"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305895"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Verschieben Ihrer Intune Data Warehouse-Kontodaten 
 
@@ -81,4 +81,4 @@ Kunde X fordert eine Kontoverschiebung beginnend am 06.01.2018 an. Als Antwort a
 ## <a name="next-steps"></a>Nächste Schritte
 
  - Erfahren Sie [jede Woche die Neuerungen in Intune](whats-new.md). Sie erhalten auch Informationen zu bevorstehenden Änderungen, wichtige Hinweise zum Dienst und Informationen zu vorherigen Releases.
- - Lesen Sie den [Microsoft Intune-Blog](http://go.microsoft.com/fwlink/?LinkID=273882).
+ - Lesen Sie den [Microsoft Intune-Blog](https://go.microsoft.com/fwlink/?LinkID=273882).

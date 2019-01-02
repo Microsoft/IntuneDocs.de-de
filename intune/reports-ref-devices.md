@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 69c8b4a5b786768d315bfe6ec707b8c4b915c93a
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 44dc3f82b8d51007d3eaf1d71f1a416ebfe319b4
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112924"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738068"
 ---
 # <a name="reference-for-devices-entities"></a>Referenz für Geräteentitäten
 

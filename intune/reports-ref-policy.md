@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9fb05991b3e289d4a24cc2f3a5b2c398c12b1a15
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 9e95f1c3e1480cfb07a8f2dd270a23699632a2f9
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032434"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429745"
 ---
 # <a name="reference-for-policy-entities"></a>Referenz für Richtlinienentitäten
 
