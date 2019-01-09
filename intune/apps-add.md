@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a0fb9aca406c1a49c979b59e5d879d66a730c1c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9cd03d4953376d20e96ec146ece91120d592cb99
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185887"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429779"
 ---
-# <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune
+# <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -99,9 +99,9 @@ Verwenden Sie das [Handbuch zur Bereitstellungs-, Entwurfs- und Implementierungs
 ### <a name="determine-the-type-of-app-for-your-solution"></a>Bestimmen des App-Typs für Ihre Lösung
 
 Sie können unter folgenden App-Typen wählen:
-- **Apps aus dem Store**: Apps, die in den Microsoft-, iOS- oder Android-Store hochgeladen wurden, sind Store-Apps. Der Anbieter der Store-App verwaltet die Updates für die App und stellt sie bereit. Wählen Sie die App aus der Store-Liste aus, und machen Sie sie mithilfe von Intune für alle Benutzer verfügbar.
-- **Interne (branchenspezifische) Apps**: Intern erstelle Apps gelten als branchenspezifische Apps. Die Funktionen dieses App-Typs wurden für eine der von Intune unterstützten Plattformen wie Windows, iOS oder Android erstellt. Ihre Organisation erstellt Updates als unabhängige Dateien und stellt sie für Sie bereit. Sie fügen dann mithilfe von Intune die Updates für die App-Benutzer hinzu und stellen sie bereit.
-- **Apps im Web**: Web-Apps sind Client/Server-Anwendungen. Der Server stellt die Web-App bereit, welche die Benutzeroberfläche, den Inhalt und die Funktionen umfasst. Außerdem bieten moderne Webhostingplattformen häufig Vorteile bei Sicherheit und Lastenausgleich. Der App-Typ wird separat im Web verwaltet. Verwenden Sie Intune, um auf diesen App-Typ zu verweisen. Sie legen ebenfalls fest, welche Benutzergruppen auf diese App zugreifen können. Beachten Sie, dass Android keine Web-Apps unterstützt.
+- **Apps aus dem Store**: Apps, die in die Stores von Microsoft, iOS oder Android hochgeladen wurden, sind Store-Apps. Der Anbieter der Store-App verwaltet die Updates für die App und stellt sie bereit. Wählen Sie die App aus der Store-Liste aus, und machen Sie sie mithilfe von Intune für alle Benutzer verfügbar.
+- **Intern erstellte (branchenspezifische) Apps**: Intern erstelle Apps gelten als branchenspezifische Apps. Die Funktionen dieses App-Typs wurden für eine der von Intune unterstützten Plattformen wie Windows, iOS oder Android erstellt. Ihre Organisation erstellt Updates als unabhängige Dateien und stellt sie für Sie bereit. Sie fügen dann mithilfe von Intune die Updates für die App-Benutzer hinzu und stellen sie bereit.
+- **Apps im Web**: Web-Apps sind Client-Server-Anwendungen. Der Server stellt die Web-App bereit, welche die Benutzeroberfläche, den Inhalt und die Funktionen umfasst. Außerdem bieten moderne Webhostingplattformen häufig Vorteile bei Sicherheit und Lastenausgleich. Der App-Typ wird separat im Web verwaltet. Verwenden Sie Intune, um auf diesen App-Typ zu verweisen. Sie legen ebenfalls fest, welche Benutzergruppen auf diese App zugreifen können. Beachten Sie, dass Android keine Web-Apps unterstützt.
 
 Wenn Sie festlegen, welche Apps Ihre Organisation benötigt, überprüfen Sie, wie die Apps mit Clouddiensten zusammenarbeiten, auf welche Daten die App zugreift, ob die Apps für BYOD-Benutzer verfügbar sind und ob die Apps Internetzugriff erfordern.
 
@@ -118,9 +118,9 @@ Mit Intune verwaltete Apps können außerdem ohne Registrierung den App-Schutz a
 
 ### <a name="understanding-licensed-apps"></a>Grundlegendes zu lizenzierten Apps
 Sie sollten nicht nur zwischen Web-Apps, Store-Apps und branchenspezifischen Apps unterscheiden können, sondern auch zwischen Apps, die über ein Volumenlizenzprogramm (Volume Purchase Program) bezogen wurden, und lizenzierten Apps, wie z.B. folgende: 
-- **Apple Volume Purchase Program for Business (iOS)**: Der App Store von iOS bietet die Möglichkeit, mehrere Lizenzen für eine App zu erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Durch den Erwerb mehrerer Kopien können Sie Apps in Ihrem Unternehmen effizient verwalten. Weitere Informationen finden Sie unter [Verwalten von iOS-Apps, die per Volumenlizenz erworben wurden](vpp-apps-ios.md).
-- **Android-Arbeitsprofil**: Die Zuweisung von Apps zu Android-Arbeitsprofilgeräten unterscheidet sich von deren Zuweisung zu Android-Standardgeräten. Alle Apps, die für Android-Arbeitsprofile installiert werden, stammen aus dem verwalteten Google Play Store. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese. Die App wird dann im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt, und Sie können die Zuweisung der App wie bei jeder anderen App verwalten.
-- **Microsoft Store für Unternehmen (Windows 10)**: Im Microsoft Store für Unternehmen können Sie Apps für Ihre Organisation suchen und einzeln oder im Rahmen einer Volumenlizenz erwerben. Indem Sie den Store mit Microsoft Intune verbinden, können Sie per Volumenlizenz erworbene Apps über das Azure-Portal verwalten. Weitere Informationen finden Sie unter [Verwalten von Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md).
+- **Apple Volume Purchasing Program für Unternehmen (iOS)**: Im iOS-App-Store können Sie mehrere Lizenzen für eine App erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Durch den Erwerb mehrerer Kopien können Sie Apps in Ihrem Unternehmen effizient verwalten. Weitere Informationen finden Sie unter [Verwalten von iOS-Apps, die per Volumenlizenz erworben wurden](vpp-apps-ios.md).
+- **Android-Arbeitsprofil**: Das Zuweisen von Apps zu Android-Arbeitsprofilgeräten unterscheidet sich von deren Zuweisung zu „normalen“ Android-Geräten. Alle Apps, die für Android-Arbeitsprofile installiert werden, stammen aus dem verwalteten Google Play Store. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese. Die App wird dann im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt, und Sie können die Zuweisung der App wie bei jeder anderen App verwalten.
+- **Microsoft Store für Unternehmen (Windows 10)**: Im Microsoft Store für Unternehmen können Sie Apps für Ihre Organisation suchen und einzeln oder mit Volumenlizenz erwerben. Indem Sie den Store mit Microsoft Intune verbinden, können Sie per Volumenlizenz erworbene Apps über das Azure-Portal verwalten. Weitere Informationen finden Sie unter [Verwalten von Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md).
 
     > [!NOTE]
     > Zu den Dateierweiterungen für Windows-Apps gehören **.msi**, **.appx**, **.appxbundle**, **.msix** und **.msixbundle**.  

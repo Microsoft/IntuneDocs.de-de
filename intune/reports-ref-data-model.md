@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 228b662739d161a4f4d6d145746fc68e7c3b87e0
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ce4689aaecd40d7d44f0064b1e951823fa0bb2c2
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188108"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738000"
 ---
-# <a name="data-warehouse-data-model"></a>Datenmodell von Data Warehouse
+# <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune-Data Warehouse-Datenmodell
 
 Intune Data Warehouse entnimmt täglich Datenstichproben, um eine Verlaufsansicht Ihrer sich ständig ändernden Umgebung mobiler Geräte bereitzustellen. Die Ansicht besteht aus zeitlich aufeinander bezogenen Entitäten.
 
@@ -56,7 +56,7 @@ Die Entitäten und Beziehungen verwenden ein Sternschemamodell. Ein Sternschema 
 
 Ein Sternschema-Modell bietet hohe für Flexibilität und Analysefunktionen, damit Sie die Berichte erstellen können, die zum Verständnis der Entwicklung Ihrer mobilen Umgebung benötigen.
 
-## <a name="time-daily-snapshots"></a>Zeit: Tägliche Momentaufnahmen
+## <a name="time-daily-snapshots"></a>Uhrzeit: Tägliche Momentaufnahmen
 
 Das Warehouse ist Ihren Intune-Daten nachgelagert. Intune erstellt täglich um Mitternacht UTC eine Momentaufnahme und speichert die Momentaufnahme im Warehouse. Die Dauer der Aufbewahrung von Momentaufnahmen unterscheidet sich von Faktentabelle zu Faktentabelle. Einige werden sieben Tage, andere 30 Tage und einige auch länger gespeichert.
 

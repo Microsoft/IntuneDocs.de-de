@@ -1,7 +1,7 @@
 ---
 title: Datenverwaltung von Office 365-Apps in Microsoft Intune
 titlesuffix: ''
-description: Erfahren Sie mehr über die Datenverwaltung von Office 365-Apps in Microsoft Intune.
+description: Erfahren Sie mehr über Datenverwaltung und Datenschutz von Office 365-Apps in Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a3eed03deb3f619f75502e8a9d1d66fefc38a081
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 05af4625c06975e4eb7b2566ce676c4610500bdf
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180070"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642472"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Was der grundlegende Schutz in verwalteten Office 365-Apps in Microsoft Intune beinhaltet umfasst.
 

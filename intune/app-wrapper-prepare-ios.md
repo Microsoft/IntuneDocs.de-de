@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 94e4f955a57f5a505bfbbdc84ae236bbfb85fe8b
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112862"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738051"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Vorbereiten von iOS-Apps für App-Schutzrichtlinien mit dem Intune App Wrapping Tool
 
@@ -100,7 +100,7 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 
 4. Klicken Sie auf **Certificates, IDs & Profiles**.
 
-   ![Apple Developer-Portal](./media/iOS-signing-cert-1.png)
+   ![Apple Developer-Portal: Zertifikate, IDs und Profile](./media/iOS-signing-cert-1.png)
 
 5. Klicken Sie auf ![das Pluszeichen im Apple Developer-Portal](./media/iOS-signing-cert-2.png) (rechts oben), um ein iOS-Zertifikat hinzuzufügen.
 
@@ -125,7 +125,7 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 
 11. Befolgen Sie die obigen Anweisungen auf der Apple Developer-Website zum Erstellen einer CSR-Datei. Speichern Sie die CSR-Datei auf Ihrem macOS-Computer.
 
-    ![Anfordern eines Zertifikats von einer Zertifizierungsinstanz in Schlüsselbundverwaltung](./media/iOS-signing-cert-6.png)
+    ![Geben Sie Informationen zum angeforderten Zertifikat ein.](./media/iOS-signing-cert-6.png)
 
 12. Kehren Sie zur Apple Developer-Website zurück. Klicken Sie auf **Continue**(Weiter). Laden Sie dann die CSR-Datei hoch.
 
@@ -141,7 +141,7 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 
 16. Ein Informationsfenster wird angezeigt. Scrollen Sie nach unten, und sehen Sie unter der Bezeichnung **Fingerabdrücke** nach. Kopieren Sie die **SHA1**-Zeichenfolge (unscharf), die Sie als Parameter „-c“ für das App Wrapping Tool verwenden.
 
-    ![Hinzufügen Ihres Zertifikats zu einem Schlüsselbund](./media/iOS-signing-cert-9.png)
+    ![iPhone-Informationen: Fingerabdruck-SHA-1-Zeichenfolge](./media/iOS-signing-cert-9.png)
 
 
 
@@ -179,7 +179,7 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 
 Öffnen Sie das macOS-Terminal, und führen Sie den folgenden Befehl aus:
 
-```
+```bash
 /Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
@@ -188,7 +188,7 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 
 **Beispiel:** Der Befehl im folgenden Beispiel führt das App Wrapping Tool für eine App mit dem Namen „MyApp.ipa“ aus. Es werden ein Bereitstellungsprofil und ein SHA-1-Hash des Signaturzertifikats angegeben und zum Signieren der umschlossenen App verwendet. Die Ausgabe-App („MyApp_Wrapped.ipa“) wird erstellt und in Ihrem Desktopordner gespeichert.
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
 ```
 
@@ -289,7 +289,7 @@ Apps, die mit dem App Wrapping Tool umschlossen wurden, generieren Protokolle, d
 
 3.  Filtern Sie die gespeicherten Protokolle nach der Ausgabe von App-Einschränkungen, indem Sie das folgende Skript in die Konsole eingeben:
 
-    ```
+    ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
     Sie können die gefilterten Protokolle an Microsoft senden.
@@ -368,20 +368,20 @@ So überprüfen Sie die vorhandenen Berechtigungen einer signierten App und eine
 
 3.  Verwenden Sie das Codesignaturtool, um die Berechtigungen des APP-Pakets zu überprüfen. Dabei ist `YourApp.app` der tatsächliche Name Ihres APP-Pakets:
 
-    ```
+    ```bash
     $ codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
 4.  Verwenden Sie das Sicherheitstool, um die Berechtigungen des in die App eingebetteten Bereitstellungsprofils zu überprüfen. Dabei ist `YourApp.app` der tatsächliche Name Ihres APP-Pakets.
 
-    ```
+    ```bash
     $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>Entfernen von Berechtigungen aus einer App mit dem Parameter „–e“
 Dieser Befehl entfernt alle aktivierten Funktionen in der App, die nicht in der Berechtigungsdatei enthalten sind. Wenn Sie Funktionen entfernen, die von der App verwendet werden, kann dies zu einer Beschädigung der App führen. Fehlende Funktionen können beispielsweise dann entfernt werden, wenn eine Drittanbieter-App standardmäßig über alle Funktionen verfügt.
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
@@ -416,12 +416,12 @@ Um das `-citrix`-Flag verwenden zu können, müssen Sie auch den [Citrix MDX App
 Führen Sie einfach Ihren allgemeinen App-Umschließungsbefehl mit angefügtem `-citrix`-Flag aus. Für das `-citrix`-Flag können derzeit keine Argumente eingegeben werden.
 
 **Nutzungsformat**:
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **Beispielbefehl**:
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
 

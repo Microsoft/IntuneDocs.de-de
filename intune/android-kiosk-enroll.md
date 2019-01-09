@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 76a16df06c085eb3b40a3a48d4398a46233a09b8
+ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031992"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53626083"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Einrichten der Intune-Registrierung von Android Enterprise-Kioskgeräten
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android unterstützt kioskartige Geräte mit unternehmenseigenen Lösungen zur einmaligen Verwendung. Solche Geräte werden für einen einzigen Zweck verwendet, dazu gehören z.B. die digitale Beschilderung, das Drucken von Tickets oder die Bestandsverwaltung. Administratoren beschränken die Verwendung eines Geräts auf eine begrenzte Anzahl von Apps und Weblinks. Außerdem wird verhindert, dass Benutzer andere Apps hinzufügen oder andere Aktionen auf dem Gerät ausführen können.
+Android unterstützt Geräte im Kioskstil mit dem Lösungssatz für [dedizierte Geräte](https://developers.google.com/android/work/overview#company-owned-devices-for-dedicated-use). Solche Geräte werden für einen einzigen Zweck verwendet, dazu gehören z.B. die digitale Beschilderung, das Drucken von Tickets oder die Bestandsverwaltung. Administratoren beschränken die Verwendung eines Geräts auf eine begrenzte Anzahl von Apps und Weblinks. Außerdem wird verhindert, dass Benutzer andere Apps hinzufügen oder andere Aktionen auf dem Gerät ausführen können.
 
 Intune unterstützt Sie beim Bereitstellen von Apps und Einstellungen für Android-Kioskgeräte. Ausführliche Informationen über Android Enterprise finden Sie in den [Voraussetzungen für Android Enterprise](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 

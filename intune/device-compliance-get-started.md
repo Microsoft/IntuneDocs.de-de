@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fd3a38b331507ddc50a7b5e4ce8794e71d0e5dc5
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: b896a1607dfc036fe248c233477239700dc96091
+ms.sourcegitcommit: 3297fe04ad0d10bc32ebdb903406c2152743179e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977353"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53531327"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune
 
@@ -171,7 +171,7 @@ Auf allen in Intune registrierten Geräten werden mehrere integrierte **Einstell
   Für die Aktivierung dieser Einstellung müssen Geräte:
   - Ortungsdienste auf OS-Ebene aktivieren
   - dem Unternehmensportal erlauben, die Ortungsdienste zu nutzen
-  - den Jailbreak-Status mindestens alle 72 Stunden bewerten und Intune melden. Andernfalls wird das Gerät als nicht konform gekennzeichnet. Sie können den Auswertungsvorgang entweder auslösen, indem Sie die Unternehmensportal-App öffnen oder indem Sie das Gerät an einem anderen Ort positionieren, der mindestens 500 m entfernt ist.
+  - den Jailbreak-Status mindestens alle 72 Stunden bewerten und Intune melden. Andernfalls wird das Gerät als nicht konform gekennzeichnet. Sie können den Auswertungsvorgang entweder auslösen, indem Sie die Unternehmensportal-App öffnen oder indem Sie das Gerät an einem anderen Ort positionieren, der mindestens 500 m entfernt ist. Wenn das Gerät nicht innerhalb von 72 Stunden um 500 Meter verlagert wird, muss der Benutzer die Unternehmensportal-App für eine erweiterte Bewertung des Jailbreak-Status öffnen.
 
 - **Gültigkeitszeitraum des Konformitätsstatus (Tage)**: Geben Sie den Zeitraum an, in dem Geräte den Status für alle empfangenen Konformitätsrichtlinien melden müssen. Geräte, die innerhalb dieses Zeitraums keine Statusmeldung abgeben, werden als nicht konform behandelt. Der Standardwert ist 30 Tage.
 
@@ -211,4 +211,4 @@ Sie müssen eine neue Gerätekonformitätsrichtlinien im Azure-Portal erstellen,
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)
 
-- Weitere Informationen zu den Richtlinienentitäten für Intune-Data Warehouse finden Sie unter [Referenz für Richtlinienentitäten](reports-ref-policy.md).
+- Weitere Informationen zu den Richtlinienentitäten für Intune-Data Warehouse finden Sie unter [Reference for policy entities (Referenz für Richtlinienentitäten)](reports-ref-policy.md).

@@ -1,12 +1,12 @@
 ---
 title: Data Warehouse-Zeitachse für die Benutzerentität
 titlesuffix: Microsoft Intune
-description: Erfahren Sie, wie das Intune Data Warehouse Benutzer auf einer Zeitachse darstellt.
+description: Erfahren Sie, wie das Microsoft Intune-Data Warehouse Benutzer auf einer Zeitachse darstellt.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 4493ea8442642c09ee7a94b9b73fe0412c015649
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d270aef9bd7102148466006f4057f1c598b02b0e
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189910"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642700"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Darstellung der Benutzerlebensdauer im Microsoft Intune-Data Warehouse
 

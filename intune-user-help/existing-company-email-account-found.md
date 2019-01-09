@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/07/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,32 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f44b281bc8a0edd39e25bf966841a5f458c6677e
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: 3c06bb8efd0d6f7795094f36dcb513c5dca63e77
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903470"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570790"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Es wurde ein vorhandenes geschäftliches E-Mail-Konto gefunden
 
-Sie besitzen bereits ein E-Mail-Konto bei Ihrer Organisation oder Ihrem Unternehmen und möchten nun über Ihr mobiles Gerät auf dieses Konto zugreifen. Der Support Ihres Unternehmens benötigt Ihre Hilfe, um Ihren E-Mail-Zugang zu schützen, während die E-Mail vom Absender an Ihr Gerät gesendet wird. Ihre aktuelle E-Mail hat womöglich gut funktioniert, die folgenden Schritte machen Ihre Informationen jedoch noch ein wenig sicherer.
+Möglicherweise hatten Sie mobilen Zugriff auf Ihr Geschäfts-, Schul- oder Unikonto, *bevor* Ihr Gerät verwaltet wurde. Wenn Ihr Gerät jetzt verwaltet wird, empfiehlt sich folgende Vorgehensweise:
 
-1.  Suchen Sie die **Einstellungen** auf Ihrem Gerät, und entfernen Sie die Verbindung, die Sie zuvor für Ihre Unternehmens-E-Mail festgelegt haben.  Tippen Sie beispielsweise auf einem iOS-Gerät auf **Einstellungen** > **Mail** > **Konten**. Wählen Sie Ihr geschäftliches E-Mail-Konto aus, und tippen Sie dann auf **Löschen**.
+* Trennen Sie die Verbindung mit dem vorhandenen geschäftlichen E-Mail-Konto von Ihrem Gerät.
+* Synchronisieren Sie die Geräteeinstellungen erneut aus der Unternehmensportal-App.  
 
-2.  Beenden Sie **Einstellungen**, und öffnen Sie die Unternehmensportal-App auf Ihrem Gerät.  
+So stellen Sie sicher, dass Ihr Gerät die Sicherheitsanforderungen Ihres Unternehmens erfüllt und Ihre E-Mails geschützt sind.
 
-3. Wechseln Sie zu **Gerät**, und wählen Sie das Gerät aus, das Sie aktualisieren möchten.
+1.  Wechseln Sie auf Ihrem Gerät zu den **Einstellungen**, und suchen Sie Ihre verbundenen Konten. Wählen Sie auf einem Gerät mit iOS 11 oder höher z.B. **Kennwort und Konten** aus.
+ 
+2. Wählen Sie Ihr geschäftliches E-Mail-Konto aus, und entfernen Sie es.
 
-4. Wählen Sie **Einstellungen überprüfen** aus. Innerhalb weniger Augenblicke wird Ihr Gerät mit den neuen E-Mail-Einstellungen aktualisiert.
+3. Öffnen Sie die Unternehmensportal-App auf Ihrem Gerät.  
+
+4. Wählen Sie in der Geräteliste das Gerät aus, das Sie aktualisieren möchten.
+
+5. Wählen Sie **Einstellungen überprüfen** aus. Innerhalb weniger Augenblicke synchronisiert Ihr Gerät die neuen E-Mail-Einstellungen.
+
+6. Melden Sie sich bei Ihrem Geschäfts-, Schul- oder Unikonto an.
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

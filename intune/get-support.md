@@ -16,12 +16,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 103b509a562e777a28882f21aef2ca36354533f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2feb18f9c21929d803bbb3605842effa8f63d75d
+ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183248"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53247168"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Anfordern von Support für Microsoft Intune
 
@@ -31,75 +31,90 @@ Microsoft bietet für Microsoft Intune Unterstützung bei allgemeinen technische
 
 >[!IMPORTANT]
 > Wenden Sie sich für den technischen Support für Drittanbieterprodukte, die mit Intune eingesetzt werden können (z.B. Saaswedo, Cisco oder Lookout), zuerst an den Lieferanten des Produkts. Bevor Sie beim Intune-Support eine Anforderung stellen, sollten Sie sicherstellen, dass Sie das andere Produkt richtig konfiguriert haben.
-> 
+>
 > Weitere Informationen zur Problembehandlung im Zusammenhang mit Microsoft Intune finden Sie im [Abschnitt zur Problembehandlung](help-desk-operators.md) in der Intune-Dokumentation.
 
-Als IT-Administrator können Sie die Option **Hilfe und Support** verwenden, um ein Onlinesupportticket für Intune über das Azure-Portal einzureichen. Damit Sie ein Supportticket erstellen können, muss Ihrem Konto eine der folgenden [Administratorrollen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) zugewiesen sein: 
+Als IT-Administrator können Sie die Option **Hilfe und Support** verwenden, um ein Onlinesupportticket für Intune über das Azure-Portal einzureichen. Damit Sie ein Supportticket erstellen können, muss Ihrem Konto eine der folgenden [Administratorrollen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) zugewiesen sein:
 
-- Intune-Administrator 
-- Globaler Administrator 
+- Intune-Administrator
+- Globaler Administrator
 - Dienstadministrator  
 
+## <a name="get-context-sensitive-help"></a>Anfordern von kontextbezogener Hilfe
+Nachdem Sie sich beim Azure-Portal angemeldet und Intune geöffnet haben, können Sie auf jedem Intune-Blatt im Azure-Portal die Option **Hilfe und Support** auswählen, um Lösungen für häufige Probleme in diesem bestimmten Bereich von Intune anzuzeigen.
 
-## <a name="get-context-sensitive-help"></a>Anfordern von kontextbezogener Hilfe 
-Nachdem Sie sich beim Azure-Portal angemeldet und Intune geöffnet haben, können Sie **Hilfe und Support** über jedes Intune-Blatt im Azure-Portal auswählen, um Lösungen für häufige Probleme für diesen bestimmten Bereich von Intune anzuzeigen. 
-
-Wenn die allgemeinen Lösungen nicht hilfreich sind, können Sie **Supportanfrage** auswählen, um eine neue Supportanfrage zu erstellen, die im Blatt **Grundlagen** der Seite *Hilfe und Support* in Azure geöffnet wird. Um fortzufahren und ein Supportticket zu erstellen, gehen Sie zu *Schritt 3* unter [Erstellen eines Onlinesupporttickets](#create-an-online-support-ticket) 
+Wenn die allgemeinen Lösungen nicht hilfreich sind, können Sie **Supportanfrage** auswählen, um eine neue Supportanfrage zu erstellen, die auf der Registerkarte **Grundlagen** der Seite *Hilfe und Support* in Azure geöffnet wird. Um fortzufahren und ein Supportticket zu erstellen, gehen Sie zu *Schritt 3* unter [Erstellen eines Onlinesupporttickets](#create-an-online-support-ticket)
 
 ## <a name="create-an-online-support-ticket"></a>Erstellen eines Onlinesupporttickets
 
-1. Melden Sie sich im Azure-Portal (<https://portal.azure.com>) mit Ihren Intune-Administratoranmeldeinformationen an, und wählen Sie das Symbol <strong>?</strong> aus. in der oberen rechten Ecke des Portals aus, und wählen Sie dann <strong>Hilfe und Support</strong> aus, um zur Seite [Azure Hilfe und Support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) zu gelangen.
-    ![Screenshot des Fragezeichen-Links zu Hilfe und Support im Azure-Portal mit hervorgehobenem Link „Hilfe und Support“](./media/azure-get-support.png)
+1. Melden Sie sich im Azure-Portal (<https://portal.azure.com>) mit Ihren Intune-Administratoranmeldeinformationen an, und wählen Sie das Symbol **?** aus. in der oberen rechten Ecke des Portals aus, und wählen Sie dann **Hilfe und Support** aus, um zur Seite [Azure Hilfe und Support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) zu gelangen.
 
-2. Wählen Sie auf der Seite *Hilfe und Support* in Azure die Option **Neue Supportanfrage** aus.
+   ![Screenshot des Fragezeichen-Links zu Hilfe und Support im Azure-Portal mit hervorgehobenem Link „Hilfe und Support“](./media/azure-get-support.png)
 
-    ![Screenshot der Azure-Portal-Seite Hilfe und Support mit hervorgehobenem Link „Neue Supportanfrage“](./media/azure-support-ticket-link.png)
+2. Wählen Sie auf der Seite **Hilfe und Support** in Azure die Option **Neue Supportanfrage** aus.
 
-3. Für die meisten Probleme mit dem technischen Support von Intune wählen Sie auf dem Blatt **Grundeinstellungen** folgende Optionen aus:
-   - **Problemtyp**: **Technical** (Technisch)
+   ![Screenshot der Azure-Portal-Seite Hilfe und Support mit hervorgehobenem Link „Neue Supportanfrage“](media/azure-support-ticket-link.png)
+
+3. Für die meisten technischen Probleme mit Intune wählen Sie auf dem Blatt **Grundlagen** folgende Optionen aus:
+   - **Problemtyp**: **Technisch**
+   - **Abonnement**: <*Ihr Abonnement*>
    - **Dienst**: **Microsoft Intune**
-   - **Supportplan**: **Technischer Support – enthalten** (bei technischen Problemen mit Intune ist der Support kostenlos) oder **Premier**
-    
+   - **Problemtyp**: Wählen Sie den Problemtyp im Dropdownmenü aus.
+   - **Problemuntertyp**: Wählen Sie den Problemuntertyp im Dropdownmenü aus.
+   - **Betreff**: Beschreiben Sie kurz das Problem.
+
+   ![Screenshot der Registerkarte „Grundlagen“ auf der Seite „Hilfe und Support -> Neue Supportanfrage“](./media/get-support/help-new-support-case-basics.png)
+
+   Klicken Sie auf **Weiter: Lösungen**, um den Vorgang fortzusetzen.
+4. Überprüfen Sie auf der Registerkarte **Lösungen** die empfohlenen Schritte, mit denen Sie das Problem möglicherweise lösen können, ohne ein Ticket einreichen zu müssen. Wenn Sie nach dem Überprüfen der Schritte weiterhin eine Supportanfrage erstellen möchten, klicken Sie auf **Weiter: Details**.
+
+   ![Screenshot der Registerkarte „Lösungen“ auf der Seite „Hilfe und Support -> Neue Supportanfrage“](./media/get-support/help-new-support-case-solutions.png)
+5. Geben Sie auf der Registerkarte **Details** Informationen zum Problem, zur Supportmethode sowie Ihre Kontaktinformationen an, und klicken Sie auf **Weiter: Überprüfen und erstellen**.
+
+   ![Screenshot der Registerkarte „Details“ auf der Seite „Hilfe und Support -> Neue Supportanfrage“](./media/get-support/help-new-support-case-details.png)
+6. Überprüfen Sie, ob die Informationen richtig sind, und klicken Sie dann auf **Erstellen**, um die Supportanfrage zu übermitteln.
+
+   ![Screenshot der Registerkarte „Überprüfen und erstellen“ auf der Seite „Hilfe und Support -> Neue Supportanfrage“](./media/get-support/help-new-support-case-create.png)
+
+<!--
+  - **Support plan**: **Technical support - included** (for Intune technical issues, support is complimentary) or **Premier**
      >[!IMPORTANT]
-     >- Wenn Sie **Premier-Kunde** sind und Ihnen **Supportplan: Premier** nicht angezeigt wird, wenden Sie sich an Ihren Technical Account Manager, um Hilfe bei der Verknüpfung Ihres Vertrags und des Mandanten zu erhalten.
-     >- Der Support für Intune und für Intune mit Configuration Manager ist kostenlos. Informationen zum Premier Support-Angebot finden Sie in der Dokumentation [Beschreibung der Dienstleistungen](https://enterprise.microsoft.com/en-us/services/services-list/) im Abschnitt 5.3.3 „Beratende Dienstleistungen“.
+     >- If you are a **Premier customer** and don't see **Support plan: Premier**, contact your Technical Account Manager for help linking your contract and tenant.
+     >- Support for Intune, and for Intune when used with Configuration Manager, is free of charge. To review details of the Premier Support offering, see the [Description of Services](https://enterprise.microsoft.com/en-us/services/services-list/) documentation, section 5.3.3 "Advisory Services."
 
-     Klicken Sie auf **Weiter**, um fortzufahren.
+4. On the **Problem** blade, to make sure your request is addressed by the right subject matter expert for your problem, select the following options:
 
-4. Wählen Sie auf dem Blatt **Problem** die folgenden Optionen aus, um sicherzustellen, dass Ihre Anforderung an den richtigen Experten für Ihr Problem gerichtet wird:
+   - **Severity**
+   - **Problem type**
+   - **Category**
 
-   - **Schweregrad**
-   - **Problemtyp**
-   - **Kategorie**
+     These details also let us provide **Related help** that might solve your problem without filing a ticket.
 
-     Durch diese Informationen können wir auch **verwandte Hilfethemen** bereitstellen, durch die Sie Ihr Problem möglicherweise lösen können, ohne ein Ticket erstellen zu müssen.
+     ![Screenshot of Azure portal help and support page with Problem items filled out and displaying solutions based on your problem](./media/support-need-solutions.png)
 
-     ![Screenshot der Azure-Portal-Seite Hilfe und Support mit ausgefüllten Problemelementen und angezeigten Lösungen basierend auf Ihrem Problem](./media/support-need-solutions.png)
-
-     Geben Sie die folgenden Informationen ein, um uns bei der Untersuchung und Lösung Ihres Problems zu unterstützen:
+     To help the support team research and resolve your problem, enter the following information:
     
    - **Details**
-   - **Datum**
-   - **Uhrzeit**
-   - **Zusätzliche Daten**
+   - **Date**
+   - **Time**
+   - **Supplemental data**
 
-   Klicken Sie auf **Weiter**.
+   Choose **Next**.
 
-5. Geben Sie **Kontaktinformationen** für diese Supportanfrage an. Der Microsoft-Support verwendet diese Informationen, um Sie zu kontaktieren.
-6. Wählen Sie **Erstellen** aus, um Ihre Supportanfrage zu übermitteln.
-
+5. Provide **Contact information** for this support request. Microsoft support uses this information to contact you.
+6. Choose **Create** to submit your support request.
+-->
 >[!IMPORTANT]
 >Wenn Sie eine Frage zur Abrechnung oder zum Abonnement haben, können Sie über das [Office-Verwaltungscenter](https://portal.office.com/Support/SupportEntry.aspx) einen Fall erstellen, um Support zu erhalten.
 
 ## <a name="view-support-requests"></a>Anzeigen aller Supportanfragen
 Sie können eine Supportanfrage im Azure-Portal anzeigen. Gehen Sie hierzu folgendermaßen vor:
 
-1. Melden Sie sich in Azure (<https://portal.azure.com>) mit Ihren Intune-Administratoranmeldeinformationen an, und wählen Sie das <strong>?</strong> aus. in der oberen rechten Ecke des Portals aus, und wählen Sie dann <strong>Hilfe und Support</strong> aus, um zur Seite [Azure Hilfe und Support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) zu gelangen.
+1. Melden Sie sich in Azure (<https://portal.azure.com>) mit Ihren Intune-Administratoranmeldeinformationen an, und wählen Sie das **?** aus. in der oberen rechten Ecke des Portals aus, und wählen Sie dann **Hilfe und Support** aus, um zur Seite [Azure Hilfe und Support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) zu gelangen.
 
 2. Auf der Seite **Hilfe und Support** können Sie die Liste der **kürzlich gesendeten Supportanfragen** anzeigen und diese auswählen, um weitere Details anzuzeigen.
 
-
-## <a name="new-help-and-support-experience"></a>Neue Benutzeroberfläche für Hilfe und Support 
+## <a name="new-help-and-support-experience"></a>Neue Benutzeroberfläche für Hilfe und Support
 *Die folgenden Informationen gelten nur, wenn Sie das Geräteverwaltungsportal verwenden und am Rollout der neuen Benutzeroberfläche für Hilfe und Support teilnehmen. Die Teilnehmer für diesen Rollout werden nach dem Zufallsprinzip aus den verfügbaren Intune-Mandanten ausgewählt.*  
 
 Das Update zu Hilfe und Support für Intune bietet eine neue Benutzeroberfläche, die im [Microsoft 365-Portal für die Geräteverwaltung](http://devicemanagement.microsoft.com) von einigen, aber nicht allen Mandanten genutzt werden kann. Die neue Benutzeroberfläche ähnelt der im [Microsoft 365 Admin Center](https://portal.office.com/AdminPortal/Home) und ersetzt die bisherige Benutzeroberfläche für Hilfe und Support, wenn sie von bestimmten Bereichen der Geräteverwaltungskonsole aus aufgerufen wird.  
@@ -117,7 +132,7 @@ In dieser Ansicht können Sie die folgenden Aktionen durchführen:
 4. [Zeigen Sie Supportfälle](#view-support-cases) an, die Sie zuvor mit diesem neuen Workflow geöffnet haben.  
 
 ### <a name="specify-details-about-an-issue"></a>Angeben von Details zu einem Problem
-Wenn Sie „Hilfe und Support“ von einem Ort aus öffnen, an dem die neue Benutzeroberfläche unterstützt wird, wird die Seite **Benötigen Sie Hilfe?**  geöffnet. Auf dieser Seite können Sie Details zu einem Problem angeben. Während der Eingabe bietet die Konsole gängige Abfragen basierend auf den von Ihnen verwendeten Schlüsselwörtern an. Sie können einen angebotenen Text auswählen oder Ihre eigene Problembeschreibung ausfüllen. Wenn Sie eine eigene Beschreibung eingeben, klicken Sie auf **Hilfe anfordern**, um sie zu übermitteln. Nachdem Sie eine Abfrage gestellt haben, gibt die Konsole kontextbezogene Informationen zurück, die zur Lösung des Problems beitragen können.
+Wenn Sie „Hilfe und Support“ von einem Ort aus öffnen, an dem die neue Benutzeroberfläche unterstützt wird, wird die Seite **Benötigen Sie Hilfe?**  geöffnet. Auf dieser Seite können Sie Details zu einem Problem angeben. Während der Eingabe bietet die Konsole gängige Abfragen basierend auf den von Ihnen verwendeten Schlüsselwörtern an. Sie können einen angebotenen Text auswählen oder Ihre eigene Problembeschreibung ausfüllen. Wenn Sie eine eigene Beschreibung eingeben, klicken Sie auf **Hilfe anfordern**, um sie zu übermitteln. Nachdem Sie eine Abfrage gesendet haben, gibt die Konsole kontextbezogene Informationen zurück, die zur Lösung des Problems beitragen können.
 
 Im Folgenden finden Sie Beispiele für Problembeschreibungen, die Sie absenden können:
   
@@ -126,12 +141,11 @@ Im Folgenden finden Sie Beispiele für Problembeschreibungen, die Sie absenden k
 
 ![Angeben des Problems auf der Seite „Benötigen Sie Hilfe?“](./media/get-support/describe-the-issue.png)
 
-
 ### <a name="view-context-sensitive-help"></a>Anzeigen von kontextbezogener Hilfe
 Nachdem Sie sich für eine angebotene Auswahl entschieden oder eine eigene Abfrage gestellt haben, werden unter **Lösungen anzeigen** kontextbezogene Ergebnisse angezeigt. Diese Ergebnisse beinhalten sowohl Intune-spezifische Anleitungen zur Selbsthilfe als auch zusätzliche Ergebnisse aus einer auf den Abfragekriterien basierenden Websuche.  
 ![Anzeige der Ergebnisse](./media/get-support/view-results.png)
 
-### <a name="get-support"></a>Anfordern von Support  
+### <a name="get-support"></a>Anfordern von Support
 Wenn Sie die Selbsthilfe oder die webbasierte Anleitung bei der Problemlösung nicht weiterbringt, können Sie über die Konsole eine Anfrage für E-Mail- oder Telefonsupport öffnen.  
 Wählen Sie auf der Seite **Benötigen Sie Hilfe?** die gewünschte Option aus.  
 

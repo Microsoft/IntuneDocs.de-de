@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: fd401875e1a98690d9673243b28b48347e4c6183
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977302"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642811"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
@@ -65,11 +65,16 @@ Beschreibungen der verschiedenen Zustände der Gerätekonformitätsrichtlinie:
 
 - **Konform**: Das Gerät hat mindestens eine Einstellung einer Gerätekonformitätsrichtlinie erfolgreich angewendet.
 
-- **In Toleranzperiode**: Mindestens eine Einstellung der Gerätekompatibilitätsrichtlinie gilt für das Gerät. Der Benutzer hat die Richtlinien jedoch noch nicht angewendet. Das bedeutet, dass das Gerät nicht konform ist, sich jedoch in der vom Administrator festgelegten Toleranzperiode befindet.
+- **In Toleranzperiode**: Mindestens eine Einstellung der Gerätekompatibilitätsrichtlinie gilt für das Gerät. Jedoch hat der Benutzer die Richtlinien noch nicht angewandt. Das bedeutet, dass das Gerät nicht konform ist, sich jedoch in der vom Administrator festgelegten Toleranzperiode befindet.
 
   - Erfahren Sie mehr über [Aktionen für nicht konforme Geräte](actions-for-noncompliance.md).
 
-- **Nicht ausgewertet**: Ein anfänglicher Zustand für neu registrierte Geräte. Oder Geräte, denen keine Konformitätsrichtlinie zugewiesen wurde und die über keinen Auslöser für die Überprüfung auf Konformität verfügen.
+- **Nicht ausgewertet**: Ein anfänglicher Zustand für neu registrierte Geräte. Für diesen Zustand können auch folgende Gründe vorliegen:
+
+  - Geräte, denen keine Konformitätsrichtlinie zugewiesen wurde und die keinen Auslöser für die Überprüfung auf Konformität besitzen
+  - Geräte, die seit der letzten Aktualisierung der Konformitätsrichtlinie nicht eingecheckt wurden
+  - Geräte, die keinem bestimmten Benutzer zugeordnet sind
+  - Geräte, die bei einem Geräteregistrierungs-Manager-Konto registriert sind
 
 - **Nicht konform**: Das Gerät konnte keine Einstellungen einer Gerätekompatibilitätsrichtlinie anwenden. Oder der Benutzer hat die Richtlinien nicht eingehalten.
 
@@ -158,10 +163,10 @@ Dieses Feature ist im Gerätestatusbericht enthalten:
     - Erfolgreich: Die Richtlinie wurde angewendet.
     - Fehler: Die Richtlinie kann nicht angewendet werden. Diese Meldung wird in der Regel mit einem Fehlercode angezeigt, der auf eine Erklärung verweist. 
     - Konflikt: Zwei Einstellungen werden auf dasselbe Gerät angewendet, und Intune kann den Konflikt nicht lösen. Ein Administrator sollte das überprüfen.
-    - Ausstehend: Das Gerät hat sich noch nicht bei Intune eingecheckt, damit die Richtlinie angewendet werden kann. 
+    - Pending: Das Gerät hat sich noch nicht bei Intune eingecheckt, damit die Richtlinie angewendet werden kann. 
     - Nicht zutreffend: Die Richtlinie kann nicht auf das Gerät angewendet werden. Beispielsweise aktualisiert die Richtlinie eine Einstellung für iOS 11.1, das Gerät verwendet jedoch iOS 10. 
 
-3. Um die Details auf dem Gerät mithilfe der Richtlinie anzuzeigen, wählen Sie einen Status aus. Wählen Sie z.B. **Erfolgreich** aus. Im nächsten Fenster werden die spezifischen Gerätedetails, einschließlich des Gerätenamens und des Bereitstellungsstatus, aufgeführt.
+3. Um die Details auf dem Gerät mithilfe der Richtlinie anzuzeigen, wählen Sie einen Status aus, z.B. **Succeeded** (erfolgreich). Im nächsten Fenster werden die spezifischen Gerätedetails, einschließlich des Gerätenamens und des Bereitstellungsstatus, aufgeführt.
 
 ## <a name="how-intune-resolves-policy-conflicts"></a>Wie Intune-Richtlinienkonflikte löst
 Richtlinienkonflikte können auftreten, wenn mehrere Intune-Richtlinien auf ein Gerät angewendet werden. Wenn sich Richtlinieneinstellungen überschneiden, löst Intune Konflikte nach den folgenden Regeln:

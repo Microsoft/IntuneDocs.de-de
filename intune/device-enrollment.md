@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/13/2018
+ms.date: 12/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: e677b62c7610739079184bc5ef59e47544f833bb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 73caf328bd25cb31bacea6b964c1db7601f3aec6
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190216"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570807"
 ---
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -47,6 +47,7 @@ Standardmäßig dürfen Geräte für alle Plattformen in Intune registriert werd
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | Nein| Ja  | Nein | [Weitere Informationen](./macos-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Nein |Nein |Nein  | [Weitere Informationen](./device-enrollment-manager-enroll.md)|
+|**[DEP](#apple-device-enrollment-program)**|   Ja  |   Optional |  Optional|[Weitere Informationen](./device-enrollment-program-enroll-macos.md)|
 
 
 ## <a name="windows-enrollment-methods"></a>Windows-Registrierungsmethoden
@@ -56,10 +57,10 @@ Standardmäßig dürfen Geräte für alle Plattformen in Intune registriert werd
 |**[BYOD](#bring-your-own-device)** | Nein |  Ja  |   Nein | [Weitere Informationen](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Nein |Nein |Nein  |[Weitere Informationen](device-enrollment-manager-enroll.md)|
 |**Automatische Registrierung** | Nein |Ja  |Nein | [Weitere Informationen](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
-|**Autopilot** |Ja  |Ja  |Nein | [Weitere Informationen](enrollment-autopilot.md)]
+|**Autopilot** |Ja  |Ja  |Nein | [Weitere Informationen](enrollment-autopilot.md)
 |**Massenregistrierung** |Nein |Nein |Nein | [Weitere Informationen](./windows-bulk-enroll.md) |
-|**Die Co-Verwaltung** |Nein |Ja  |Nein | [Weitere Informationen](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)]
-|**GPO** |Nein |Ja  |Nein | [Weitere Informationen](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)]
+|**Die Co-Verwaltung** |Nein |Ja  |Nein | [Weitere Informationen](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+|**GPO** |Nein |Ja  |Nein | [Weitere Informationen](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
 
 ## <a name="android-enrollment-methods"></a>Android-Registrierungsmethoden
@@ -81,7 +82,7 @@ Zu BYOD-Geräten (Bring Your Own Device) gehören Mobiltelefone, Tablets und PCs
 Der Geräteregistrierungs-Manager (DEM) ist ein besonderes Benutzerkonto, das zum Registrieren und Verwalten mehrerer firmeneigener Geräte verwendet wird. Manager können das Unternehmensportal installieren und viele benutzerlose Geräte registrieren. Diese Gerätetypen eignen sich z.B. für POS- oder Hilfsprogramm-Apps, nicht aber für Benutzer, die Zugriff auf E-Mails oder Unternehmensressourcen benötigen. Erfahren Sie mehr über den [DEM](./device-enrollment-manager-enroll.md). 
 
 ### <a name="apple-device-enrollment-program"></a>Apple-Programm zur Geräteregistrierung
-Mit der Apple DEP-Verwaltung (Device Enrollment Program, Programm zur Geräteregistrierung) können Sie Richtlinien erstellen und „drahtlos“ auf iOS-Geräten bereitstellen, die mit DEP erworben wurden und verwaltet werden. Das Gerät wird beim ersten Einschalten durch den Benutzer registriert und führt dann den iOS-Setup-Assistenten aus. Diese Methode unterstützt den überwachten Modus von iOS, der zulässt, dass ein Gerät mit bestimmten Funktionen konfiguriert wird.
+Mit der Apple DEP-Verwaltung (Device Enrollment Program, Programm zur Geräteregistrierung) können Sie Richtlinien erstellen und „drahtlos“ auf iOS- und macOS-Geräten bereitstellen, die über DEP erworben wurden und verwaltet werden. Das Gerät wird registriert, wenn ein Benutzer es zum ersten Mal einschaltet und den Setup-Assistenten ausführt. Diese Methode unterstützt den überwachten Modus von iOS, der zulässt, dass ein Gerät mit bestimmten Funktionen konfiguriert wird.
 
 Weitere Informationen zur iOS DEP-Registrierung finden Sie unter:
 

@@ -14,19 +14,19 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 9059ddb164dfa57ed76b57141aad89dbb716a09f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 66402d9e2bc66ec96de88f64dd61c41e1ddb34e5
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179073"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553638"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installieren des Intune-Softwareclients auf Windows-PCs
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Mit Microsoft Intune können Sie Windows-PCs wie unten beschrieben entweder mithilfe der [mobilen Geräteverwaltung (Mobile Device Management, MDM) als mobile Geräte](windows-enroll.md) oder mithilfe des Intune-Softwareclients als Computer verwalten. Allerdings wird Kunden empfohlen, wenn möglich die [MDM-Verwaltungslösung](windows-enroll.md) zu verwenden.
+> Mit Microsoft Intune können Sie Windows-PCs wie unten beschrieben entweder mithilfe der [mobilen Geräteverwaltung (Mobile Device Management, MDM) als mobile Geräte](windows-enroll.md) oder mithilfe des Intune-Softwareclients als Computer verwalten. Allerdings wird Kunden empfohlen, wenn möglich die [MDM-Verwaltungslösung](windows-enroll.md) zu verwenden. Weitere Informationen finden Sie unter [Vergleichen der Verwaltung von Windows-PCs als Computer oder Mobilgeräte](pc-management-comparison.md). 
 
 
 Windows-PCs können mithilfe der Installation der Intune-Clientsoftware registriert werden. Die Intune-Clientsoftware kann mithilfe der folgenden Methoden installiert werden:
@@ -124,7 +124,7 @@ Wenn Benutzern eine Lizenz für Intune zugewiesen wurde und die MDM-Autorität d
 
 - Windows 10- oder Windows 8.1-PC-Benutzern werden zwei Registrierungsoptionen angezeigt:
 
-  -  **PC als mobiles Gerät registrieren**: Benutzer wählen die Schaltfläche **ANLEITUNG ZUM REGISTRIEREN** und werden zu Anweisungen weitergeleitet, wie sie ihren PC als mobiles Gerät registrieren. Diese Schaltfläche wird hervorgehoben angezeigt, da die MDM-Registrierung die Standardeinstellung und die bevorzugte Registrierungsoption ist. Die MDM-Option ist jedoch nicht auf dieses Thema anwendbar, das nur die Installation der Clientsoftware behandelt.
+  -  **Registrieren des PCs als mobiles Gerät**: Benutzer klicken auf die Schaltfläche **Anleitung zum Registrieren** und werden zu Anweisungen weitergeleitet, wie sie ihren PC als mobiles Gerät registrieren. Diese Schaltfläche wird hervorgehoben angezeigt, da die MDM-Registrierung die Standardeinstellung und die bevorzugte Registrierungsoption ist. Die MDM-Option ist jedoch nicht auf dieses Thema anwendbar, das nur die Installation der Clientsoftware behandelt.
   - **Registrieren des PCs mit Intune-Clientsoftware**: Ihre Benutzer müssen den Link **Zum Herunterladen hier klicken** auswählen, der sie durch die Installation der Clientsoftware führt.
 
 In der folgende Tabelle werden die Optionen zusammengefasst.
@@ -260,4 +260,4 @@ Der Prozess zur Aufhebung der Registrierung entfernt nicht den OnlineManagement-
     "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>Nächste Schritte
-[Verwalten von Geräten mit Microsoft Intune](device-management.md)
+[Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Intune-Softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

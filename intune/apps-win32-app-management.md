@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829146"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734288"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Standalone – Win32-App-Verwaltung (Public Preview)
 
@@ -76,32 +76,32 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
 3.  Wählen Sie im **Intune**-Bereich die Option **Client-Apps** > **Apps** > **Hinzufügen** aus.
 4.  Wählen Sie im Bereich **App hinzufügen** die Option **Windows-App (Win32) – Vorschau** aus der bereitgestellten Dropdownliste aus.
 
-    ![Screenshot: App hinzufügen – Dropdownfeld zum Hinzufügen des Typs](./media/apps-win32-app-01.png)
+    ![Screenshot des Blatts „App hinzufügen“ – Dropdownfeld zum Hinzufügen des Typs](./media/apps-win32-app-01.png)
 
-### <a name="step-2-upload-the-app-package-file"></a>Schritt 2: Hochladen der App-Paketdatei
+### <a name="step-2-upload-the-app-package-file"></a>Schritt 2: Hochladen der App-Paketdatei
 
 1.  Wählen Sie im Bereich **App hinzufügen** die Option **App-Paketdatei** aus, um eine Datei auszuwählen. Der Bereich „App-Paketdatei“ wird angezeigt.
 
-    ![Screenshot: App-Paketdatei](./media/apps-win32-app-02.png)
+    ![Screenshot des Blatts „App-Paketdatei“](./media/apps-win32-app-02.png)
 
 2.  Wählen Sie im Bereich **App-Paketdatei** die Schaltfläche zum Durchsuchen. Wählen Sie dann eine Windows-Installationsdatei mit der Erweiterung *.intunewin* aus.
 3.  Wählen Sie danach **OK**.
 
-### <a name="step-3-configure-app-information"></a>Schritt 3: Konfigurieren von App-Informationen
+### <a name="step-3-configure-app-information"></a>Schritt 3: Konfigurieren von App-Informationen
 
 1.  Wählen Sie im Bereich **App hinzufügen** die Option **App-Informationen** aus, um die App zu konfigurieren.
 2.  Konfigurieren Sie im Bereich **App-Informationen** die folgenden Informationen. Einige der Werte in diesem Bereich wurden möglicherweise automatisch ausgefüllt.
-    - **Name:** Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt wird. Wenn derselbe App-Name doppelt vorhanden ist, wird jede App im Unternehmensportal angezeigt.
-    - **Beschreibung:** Geben Sie eine Beschreibung für die App ein. Die Beschreibung wird im Unternehmensportal angezeigt.
+    - **Name**: Geben Sie den Namen der App so ein, wie er im Unternehmensportal angezeigt wird. Wenn derselbe App-Name doppelt vorhanden ist, wird jede App im Unternehmensportal angezeigt.
+    - **Beschreibung**: Geben Sie eine Beschreibung der App ein. Die Beschreibung wird im Unternehmensportal angezeigt.
     - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein.
-    - **Kategorie**: Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Kategorien erleichtern es dem Benutzer, die App über das Unternehmensportal zu finden.
-    - **Diese App als ausgewählte App im Unternehmensportal anzeigen**: Zeigen Sie die App auf der Hauptseite des Unternehmensportals hervorgehoben an, wenn Benutzer nach Apps suchen.
-    - **Informations-URL:** Geben Sie optional die URL zu einer Website ein, die Informationen über die App enthält. Die URL wird im Unternehmensportal angezeigt.
-    - **URL zu den Datenschutzbestimmungen:** Geben Sie optional die URL zu einer Website ein, die Datenschutzinformationen für die App enthält. Die URL wird im Unternehmensportal angezeigt.
-    - **Entwickler:** Geben Sie optional den Namen des App-Entwicklers ein.
-    - **Besitzer:** Geben Sie optional einen Namen für den Besitzer dieser App ein. Ein Beispiel ist **Personalabteilung**.
-    - **Anmerkungen:** Geben Sie Hinweise zu dieser App ein.
-    - **Logo**: Laden Sie ein Symbol für die App hoch. Das Symbol wird mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
+    - **Kategorie**: Wählen Sie eine oder mehrere der integrierten oder von Ihnen erstellten App-Kategorien aus. Kategorien erleichtern es dem Benutzer, die App über das Unternehmensportal zu finden.
+    - **Diese App als ausgewählte App im Unternehmensportal anzeigen**: Präsentieren Sie die App herausgehoben auf der Hauptseite des Unternehmensportals, wenn die Benutzer nach Apps suchen.
+    - **Informations-URL**: Geben Sie optional die URL einer Website ein, die Informationen über die App enthält. Die URL wird im Unternehmensportal angezeigt.
+    - **URL zu den Datenschutzbestimmungen**: Geben Sie optional die URL einer Website ein, die Datenschutzinformationen für diese App enthält. Die URL wird im Unternehmensportal angezeigt.
+    - **Entwickler**: Geben Sie optional den Namen des App-Entwicklers ein.
+    - **Besitzer**: Geben Sie optional einen Namen für den Besitzer dieser App ein. Ein Beispiel ist **Personalabteilung**.
+    - **Anmerkungen**: Geben Sie Hinweise zu dieser App ein.
+    - **Logo**: Laden Sie ein Symbol hoch, das der App zugeordnet wird. Das Symbol wird mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
 3.  Wählen Sie danach **OK**.
 
 ### <a name="step-4-configure-app-installation-details"></a>Schritt 4: Konfigurieren von Details zur Installation der App
@@ -121,16 +121,16 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
 
 4.  Wählen Sie danach **OK**.
 
-### <a name="step-5-configure-app-requirements"></a>Schritt 5: Konfigurieren der App-Anforderungen
+### <a name="step-5-configure-app-requirements"></a>Schritt 5: Konfigurieren der App-Anforderungen
 
 1.  Wählen Sie im Bereich **App hinzufügen** die Option **Anforderungen** aus, um die Anforderungen zu konfigurieren, die Geräte erfüllen müssen, bevor die App installiert wird.
 2.  Konfigurieren Sie im Bereich **Anforderungen** die folgenden Informationen. Einige der Werte in diesem Bereich wurden möglicherweise automatisch ausgefüllt.
     - **Betriebssystemarchitektur**: Wählen Sie die Architekturen aus, die für die Installation der App erforderlich sind.
-    - **Mindestversion des Betriebssystems**: Wählen Sie die für die Installation der App erforderliche Mindestversion des Betriebssystems aus.
+    - **Mindestens erforderliches Betriebssystem**: Wählen Sie die für die Installation der App mindestens erforderliche Version des Betriebssystems aus.
     - **Erforderlicher Speicherplatz (MB)**: Optional können Sie den freien Speicherplatz hinzufügen, der auf dem Systemlaufwerk erforderlich ist, um die App zu installieren.
-    - **Erforderlicher physischer Arbeitsspeicher (MB)**: Optional können Sie den für die Installation der App erforderlichen physischen Arbeitsspeicher (RAM) hinzufügen.
-    - **Mindestanzahl der erforderlichen logischen Prozessoren**: Optional können Sie die Mindestanzahl der logischen Prozessoren hinzufügen, die für die Installation der App erforderlich ist.
-    - **Erforderliche CPU-Mindestgeschwindigkeit (MHz)**: Optional können Sie die CPU-Mindestgeschwindigkeit hinzufügen, die für die Installation der App erforderlich ist.
+    - **Erforderlicher physischer Speicher (MB)**: Optional können Sie den für die Installation der App erforderlichen physischen Arbeitsspeicher (RAM) hinzufügen.
+    - **Mindestens erforderliche Anzahl logischer Prozessoren**: Optional können Sie die Anzahl von logischen Prozessoren hinzufügen, die für die Installation der App mindestens erforderlich sind.
+    - **Mindestens erforderliche CPU-Geschwindigkeit (MHz)**: Optional können Sie die CPU-Geschwindigkeit hinzufügen, die für die Installation der App mindestens erforderlich ist.
 3.  Wählen Sie danach **OK**.
 
 ### <a name="step-6-configure-app-detection-rules"></a>Schritt 6: Konfigurieren von App-Erkennungsregeln
@@ -182,17 +182,19 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
     - **Benutzerdefiniertes Erkennungsskript verwenden** – Geben Sie das PowerShell-Skript an, das zum Erkennen dieser App verwendet werden soll. 
     
         1.  **Skriptdatei** – Wählen Sie ein PowerShell-Skript aus, das das Vorhandensein der App auf dem Client erkennt. Die App wird erkannt, wenn das Skript sowohl einen 0-Wert als Exitcode zurückgibt als auch einen Zeichenfolgenwert an STDOUT ausgibt.
-        2.  **Skript als 32-Bit-Prozess auf 64-Bit-Clients ausführen** – Wählen Sie **Ja** aus, um das Skript mit den Anmeldeinformationen des angemeldeten Endbenutzers auszuführen. Wählen Sie **Nein** (Standard) aus, um das Skript im Systemkontext auszuführen.
+
+        2.  **Skript auf 64-Bit-Clients als 32-Bit-Prozess ausführen**: Wählen Sie **Ja** aus, um das Skript in einem 32-Bit-Prozess auf 64-Bit-Clients auszuführen. Wählen Sie **Nein** (Standardeinstellung) aus, um das Skript in einem 64-Bit-Prozess auf 64-Bit-Clients auszuführen. Auf 32-Bit-Clients wird das Skript in einem 32-Bit-Prozess ausgeführt.
+
         3.  **Skriptsignaturprüfung erzwingen** – Wählen Sie **Ja** aus, um sicherzustellen, dass das Skript von einem vertrauenswürdigen Herausgeber signiert ist, sodass das Skript ohne Warnungen oder Aufforderungen ausgeführt werden kann. Das Skript wird ohne Blockierung ausgeführt. Wählen Sie **Nein** (Standard) aus, um das Skript mit Endbenutzerbestätigung ohne Signaturüberprüfung auszuführen.
     
-        Intune Sidecar überprüft die Ergebnisse des Skripts. Es liest die Werte, die vom Skript in den Standardausgabestream (STDOUT), den Standardfehlerstream (STDERR) und den Exitcode geschrieben wurden. Wenn das Skript mit einem Wert ungleich 0 (null) beendet wird, schlägt das Skript fehl und der Erkennungszustand der Anwendung ist „nicht installiert“. Wenn der Exitcode gleich null ist und in „STDOUT“-Daten enthalten sind, ist der Erkennungszustand der Anwendung „Installiert“. 
-    
-        > [!NOTE]
-        > Wenn das Skript mit dem Wert 0 beendet wird, war die Skriptausführung erfolgreich. Der zweite Ausgabekanal zeigt an, dass die App erkannt wurde – STDOUT-Daten zeigen an, dass die App auf dem Client gefunden wurde. Wir suchen nicht nach einer bestimmten Zeichenfolge von STDOUT.
-    
-3.  Nachdem Sie Ihre Regel(n) hinzugefügt haben, wählen Sie **Hinzufügen** > **OK** aus.
+            Der Intune-Agent überprüft die Ergebnisse des Skripts. Es liest die Werte, die vom Skript in den Standardausgabestream (STDOUT), den Standardfehlerstream (STDERR) und den Exitcode geschrieben wurden. Wenn das Skript mit einem Wert ungleich 0 (null) beendet wird, schlägt das Skript fehl und der Erkennungszustand der Anwendung ist „nicht installiert“. Wenn der Exitcode gleich null ist und in „STDOUT“-Daten enthalten sind, ist der Erkennungszustand der Anwendung „Installiert“. 
 
-### <a name="step-7-configure-app-return-codes"></a>Schritt 7: Konfigurieren der App-Rückgabecodes
+            > [!NOTE]
+            > Wenn das Skript mit dem Wert 0 beendet wird, war die Skriptausführung erfolgreich. Der zweite Ausgabekanal zeigt an, dass die App erkannt wurde – STDOUT-Daten zeigen an, dass die App auf dem Client gefunden wurde. Wir suchen nicht nach einer bestimmten Zeichenfolge von STDOUT.
+
+        4.  Nachdem Sie Ihre Regel(n) hinzugefügt haben, wählen Sie **Hinzufügen** > **OK** aus.
+
+### <a name="step-7-configure-app-return-codes"></a>Schritt 7: Konfigurieren der App-Rückgabecodes
 
 1.  Wählen Sie im Bereich **App hinzufügen** die Option **Rückgabecodes** aus, um die Rückgabecodes hinzuzufügen, die verwendet werden, um entweder das Verhalten bei der erneuten Installation der App oder das Verhalten nach der Installation anzugeben. Rückgabecodeeinträge werden standardmäßig bei der Erstellung der App hinzugefügt. Sie können jedoch zusätzliche Rückgabecodes hinzufügen oder bestehende Rückgabecodes ändern. 
 2.  Fügen Sie im Bereich **Rückgabecodes** zusätzliche Rückgabecodes hinzu oder ändern Sie bestehende Rückgabecodes.
@@ -208,7 +210,7 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
 1.  Überprüfen Sie im Bereich **App hinzufügen**, ob die konfigurierten App-Informationen richtig sind.
 2.  Wählen Sie **Hinzufügen**, um die App in Intune hochzuladen.
 
-### <a name="step-9-assign-the-app"></a>Schritt 9: Zuweisen der App
+### <a name="step-9-assign-the-app"></a>Schritt 9: Zuweisen der App
 
 1.  Wählen Sie im App-Bereich die Option **Zuweisungen** aus.
 2.  Wählen Sie **Gruppe hinzufügen** aus, um den Bereich **Gruppe hinzufügen** zu öffnen, der mit der App verknüpft ist.
@@ -232,16 +234,16 @@ Clients von Windows 10 RS3 und höher laden Intune Win32-App-Inhalte mit einer K
 
 Der Endbenutzer erhält Windows-Popupbenachrichtigungen für die erforderlichen und verfügbaren App-Installationen. Die folgende Abbildung zeigt eine exemplarische Popupbenachrichtigung, bei der die App-Installation erst nach einem Neustart des Geräts abgeschlossen ist. 
 
-![Screenshotbeispiel für Windows-Popupbenachrichtigungen für eine App-Installation](./media/apps-win32-app-08.png)    
+![Screenshot der Windows-Popupbenachrichtigungen für eine App-Installation](./media/apps-win32-app-08.png)    
 
 Die folgende Abbildung zeigt dem Endbenutzer an, dass App-Änderungen am Gerät vorgenommen werden.
 
-![Screenshotbeispiel zur Benachrichtigung des Endbenutzers, dass App-Änderungen am Gerät vorgenommen werden](./media/apps-win32-app-09.png)    
+![Screenshot mit einer Benachrichtigung an den Benutzer, dass Änderungen an der App vorgenommen wurden](./media/apps-win32-app-09.png)    
 
 ## <a name="troubleshoot-win32-app-issues"></a>Behandeln von Win32-App-Problemen
 Agentprotokolle auf dem Clientcomputer befinden sich häufig unter `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Sie können `CMTrace.exe` nutzen, um diese Protokolldateien anzuzeigen. *CMTrace.exe* kann unter [SCCM-Clienttools](https://docs.microsoft.com/sccm/core/support/tools) heruntergeladen werden. 
 
-![Screenshot zu den Agentprotokollen](./media/apps-win32-app-10.png)    
+![Screenshot der Agent-Protokolle auf dem Clientcomputer](./media/apps-win32-app-10.png)    
 
 ### <a name="troubleshooting-areas-to-consider"></a>Zu berücksichtigende Problembehandlungsbereiche
 - Überprüfen Sie die Zielgruppenadressierung, um sicherzustellen, dass der Agent auf dem Gerät installiert ist – Win32-App, die auf eine Gruppe ausgerichtet ist, oder PowerShell-Skript, das auf eine Gruppe ausgerichtet ist, erstellt die Installationsrichtlinie für die Sicherheitsgruppe.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5a28cdcf4d19aec62cd05808f4fb3cda68e083ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 3f53ce0b2afd214dec98082c23f7187b4e69317b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032051"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734237"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Selektives Löschen von Daten mithilfe von Zugriffsaktionen für App-Schutzrichtlinien in Intune
 
@@ -110,7 +110,7 @@ Die folgende Liste enthält häufig verwendete Aktionen:
 
 In einigen Fällen, z.B. bei der Einstellung **Mindestversion für Betriebssystem**, können Sie die Einstellung konfigurieren, um alle anwendbaren Aktionen basierend auf verschiedenen Versionsnummern auszuführen. 
 
-![Screenshot der Zugriffsaktionen für den Intune-App-Schutz: Mindestversion für Betriebssystem](./media/apps-selective-wipe-access-actions05.png)
+![Screenshot der Zugriffsaktionen für den App-Schutz: Mindestversion für Betriebssystem](./media/apps-selective-wipe-access-actions05.png)
 
 Sobald eine Einstellung vollständig konfiguriert wurde, wird die Zeile in einer schreibgeschützten Ansicht angezeigt und kann jederzeit bearbeitet werden. Darüber hinaus wird eine Zeile angezeigt, die eine Dropdownliste zur Auswahl in der Spalte **Einstellung** enthält. Einstellungen, die bereits konfiguriert wurden und mehrere Aktionen nicht zulassen, sind in der Dropdownliste nicht verfügbar.
 

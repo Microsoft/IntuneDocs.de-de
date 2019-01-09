@@ -17,12 +17,12 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 21d89d97355430f071763391d69fe332cf3ef369
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112832"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642896"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>Die Early Edition für Microsoft Intune – Dezember 2018
 
@@ -50,11 +50,11 @@ Für Android-Geräte in einem Bereitstellungsszenario mit einer nicht registrier
 Auf Geräten unter Windows 10 und höher werden Sie möglicherweise ein VPN-Konfigurationsprofil erstellen können, das eine Liste von DNS-Servern zum Auflösen von Domänen enthält, z.B. „contoso.com“. Dazu gehören neue Einstellungen für die Namensauflösung (**Gerätekonfiguration** > **Profile** > **Profil erstellen**, wählen Sie **Windows 10 und höher** als Plattform und **VPN** als Profiltyp aus, und wählen Sie **DNS-Einstellungen** >**Hinzufügen** aus): 
 
 - **Automatisch verbinden:** Wenn diese Option **Aktiviert** ist, stellt das Gerät automatisch eine Verbindung mit dem VPN her, wenn ein Gerät mit einer Domäne Kontakt aufnimmt, die Sie eingeben, z.B. „contoso.com“.
-- **Persistent:** Standardmäßig sind alle Regeln der Namensauflösungsrichtlinie-Tabelle (Name Resolution Policy Table, NRPT) aktiv, solange das Gerät über dieses VPN-Profil verbunden ist. Wenn diese Einstellung für eine NRPT-Regel **Aktiviert** ist, bleibt die Regel auch dann auf dem Gerät aktiv, wenn das VPN getrennt ist oder das VPN-Profil entfernt wird. Die Regel gilt, bis sie manuell entfernt wird – dies ist mit PowerShell möglich.
+- **Persistent:** Standardmäßig sind alle Regeln der Namensauflösungsrichtlinie-Tabelle (Name Resolution Policy Table, NRPT) aktiv, solange das Gerät über dieses VPN-Profil verbunden ist. Wenn diese Einstellung für eine NRPT-Regel **aktiviert** ist, bleibt die Regel auch dann auf dem Gerät aktiv, wenn das VPN getrennt ist. Die Regel bleibt in Kraft, bis das VPN-Profil entfernt wird oder bis die Regel manuell entfernt wird – dies kann über PowerShell erfolgen.
 
 In [VPN-Einstellungen für Windows 10](vpn-settings-windows-10.md) wird die aktuelle Liste der Einstellungen beschrieben. 
 
-### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>Verwenden von S/MIME zum Verschlüsseln und Signieren von mehreren Geräten eines Benutzers <!-- 1333642 eeready -->
+### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user----1333642-eeready---"></a>Verwenden von S/MIME zum Verschlüsseln und Signieren von mehreren Geräten für einen Benutzer <!-- 1333642 eeready -->
 Die E-Mail-Verschlüsselung mit S/MIME mittels eines neuen Profils für importierte Zertifikate wird unterstützt. Navigieren Sie zu deren Verwendung zu **Gerätekonfiguration** > **Profile** > **Profil erstellen**, und wählen Sie zuerst die Plattform und dann den Profiltyp **Importiertes PKCS-Zertifikat** aus. In Intune können Sie Zertifikate im PFX-Format importieren. Intune kann dann genau diese Zertifikate an mehrere Geräte übergeben, die durch einen einzelnen Benutzer registriert wurden. Außerdem enthalten:
 
 - Das native iOS-E-Mail-Profil unterstützt die Aktivierung der S/MIME-Verschlüsselung mithilfe importierter Zertifikate im PFX-Format.
@@ -73,14 +73,14 @@ Wenn Sie die Erkennung vertrauenswürdiger Netzwerke verwenden, werden Sie verhi
 In [VPN-Einstellungen für Windows 10](vpn-settings-windows-10.md) sind die aktuellen VPN-Einstellungen aufgeführt.
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>Das Intune App SDK unterstützt 256-Bit-Verschlüsselungsschlüssel <!-- 1832174 -->
-Das Intune App SDK für iOS wird 256-Bit-Verschlüsselungsschlüssel verwenden, wenn die Verschlüsselung von App-Schutzrichtlinien aktiviert ist. Das SDK bietet zur Kompatibilität mit Inhalten und Apps, die ältere SDK-Versionen verwenden, weiterhin Unterstützung der 128-Bit-Schlüssel.
+Das Intune App SDK für Android verwendet 256-Bit-Verschlüsselungsschlüssel, wenn die Verschlüsselung durch App-Schutzrichtlinien aktiviert ist. Das SDK bietet zur Kompatibilität mit Inhalten und Apps, die ältere SDK-Versionen verwenden, weiterhin Unterstützung der 128-Bit-Schlüssel.
 
 ### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>Aktivierte freigegebene PC-Einstellungen im Intune-Profil <!-- 1907917 -->
 Derzeit können Sie freigegebene PC-Einstellungen auf Windows 10-Desktopgeräten mithilfe einer benutzerdefinierten OMA-URI-Einstellung konfigurieren. Ein neues Profil zum Konfigurieren freigegebener PC-Einstellungen wird hinzugefügt (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10 und höher** > **Freigegebenes, von mehreren Benutzern verwendetes Gerät**).
 Gilt für: Windows 10 und höher, Windows Holographic for Business
 
 ### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Authentifizierungsmethode für Intune-Richtlinienupdate und Installation der Unternehmensportal-App  <!-- 1927359 -->
-Intune wird die Unternehmensportal-App auf bestimmten Geräten nicht mehr unterstützen, wenn sie aus dem App Store installiert wird. Diese Änderung ist nur relevant, wenn Sie sich während der Registrierung mit dem Setup-Assistenten von Apple authentifizieren. Diese Änderung wirkt sich nur auf iOS-Geräte aus, die registriert werden über:  
+Bei Geräten, die bereits mithilfe des Setup-Assistenten über eine der Methoden von Apple für die Registrierung von Unternehmensgeräten registriert wurden, unterstützt Intune das Unternehmensportal nicht mehr, wenn es manuell von Endbenutzern aus dem App-Store installiert wurde. Diese Änderung ist nur relevant, wenn Sie sich während der Registrierung mit dem Setup-Assistenten von Apple authentifizieren. Diese Änderung wirkt sich nur auf iOS-Geräte aus, die registriert werden über:  
 * Apple Configurator
 * Apple Business Manager
 * Apple School Manager
@@ -113,6 +113,9 @@ Um die zu überspringenden Bildschirme auszuwählen, wechseln Sie zu **Gerätere
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Einige BitLocker-Einstellungen unterstützen die Windows 10 Pro-Edition<!-- 2727036 -->
 Sie werden ein Konfigurationsprofil erstellen können, das die Endpunktschutz-Einstellungen auf Windows 10-Geräten einschließlich BitLocker festlegt. Damit wird auch die Windows 10 Professional-Edition für einige BitLocker-Einstellungen unterstützt. Die aktuellen Einstellungen für die Windows 10-Edition finden Sie unter [Endpoint protection settings for Windows 10 (Endpunktschutz-Einstellungen für Windows 10)](endpoint-protection-windows-10.md#windows-encryption).
+
+
+### <a name="intune-device-reporting-fields----2748738---"></a>Felder zur Geräteberichterstellung in Intune <!-- 2748738 -->
 Intune wird zusätzliche Felder zur Geräteberichtserstellung bieten, einschließlich Feldern für Android-Hersteller, Modell und Sicherheitspatchversion sowie iOS-Modell. In Intune werden diese Felder durch Auswahl von **Client-Apps** > **Status des App-Schutzes** und **Bericht zum App-Schutz: iOS, Android** verfügbar sein. Darüber hinaus werden diese Parameter Sie bei der Konfiguration der **Zulassen**-Liste für den Gerätehersteller (Android), der **Zulassen**-Liste für das Gerätemodell (Android und iOS) sowie der Einstellung der mindestens erforderlichen Android-Sicherheitspatchversion unterstützen. 
 
 ### <a name="intune-device-reporting-fields----2748738---"></a>Felder zur Geräteberichterstellung in Intune <!-- 2748738 -->

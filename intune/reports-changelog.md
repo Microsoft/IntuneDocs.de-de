@@ -1,7 +1,7 @@
 ---
 title: Änderungsprotokoll für Intune Data Warehouse
 titlesuffix: Microsoft Intune
-description: Eine Liste der Änderungen in der Intune Data Warehouse-API.
+description: Dieses Thema enthält eine Liste der Änderungen für die Microsoft Intune-Data Warehouse-API.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: dfdbaffeb8872e8b121d138ee0aca0315279e718
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189944"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642760"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Änderungsprotokoll für die Intune Data Warehouse-API
 
@@ -95,4 +95,4 @@ Mithilfe von Informationen über Benutzergerätezuordnungen können Sie Berichte
 
 ## <a name="next-steps"></a>Nächste Schritte
  - Erfahren Sie [jede Woche die Neuerungen in Intune](whats-new.md). Sie erhalten auch Informationen zu bevorstehenden Änderungen, wichtige Hinweise zum Dienst und Informationen zu vorherigen Releases.
- - Lesen Sie den [Microsoft Intune-Blog](http://go.microsoft.com/fwlink/?LinkID=273882).
+ - Lesen Sie den [Microsoft Intune-Blog](https://go.microsoft.com/fwlink/?LinkID=273882).

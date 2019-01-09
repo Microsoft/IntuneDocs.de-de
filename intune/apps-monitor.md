@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bff4e2b3afe684fe12243fa0f410728eb16eeaba
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181886"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325176"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Überwachen von App-Informationen und -Zuweisungen mit Microsoft Intune
 
@@ -36,7 +36,7 @@ Intune bietet verschiedene Möglichkeiten, mit denen Sie die Eigenschaften von A
 5. Wählen Sie in der Liste der Apps eine zu überwachende App aus. Daraufhin wird der App-Bereich mit einer Übersicht des Gerätestatus und des Benutzerstatus angezeigt.
 
 > [!NOTE]
-> Android Store-Apps, die als **Verfügbar** bereitgestellt werden, melden keinen Installationsstatus.
+> Android Store-Apps, die als **verfügbar** bereitgestellt werden, und Android-LOB-Apps, die als **Verfügbar mit oder ohne Registrierung** bereitgestellt werden, informieren nicht über ihren Installationsstatus.
 
 ## <a name="app-overview-pane"></a>App-Übersichtsbereich
 

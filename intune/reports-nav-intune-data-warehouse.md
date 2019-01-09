@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b08746965c23c8d247a53bcd0b0844a24581b4e6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 730195b200448d529d2a56ac8e8a45548264de2d
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179082"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429643"
 ---
-#  <a name="intune-data-warehouse-api"></a>Intune Data Warehouse-API
+#  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune-Data Warehouse-API
 
 Die Data Warehouse-API von Intune ermöglicht es Ihnen, auf Ihre Intune-Daten in einem computerlesbaren Format zuzugreifen, um sie in Ihrem bevorzugten analytischen Tool zu verwenden. Mithilfe dieser API können Sie Berichte erstellen, die einen Einblick in Ihre mobile Unternehmensumgebung ermöglichen. Die API verwendet das OData-Protokoll, das folgenden Standardmustern folgt:
 
@@ -66,6 +66,6 @@ OData definiert ein abstraktes Datenmodell und ein Protokoll, mit denen alle Cli
 
 Erfahren Sie mehr über die Arbeit mit Azure AD unter [Authentifizierungsszenarios für Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
 
-OData-Ressourcen finden Sie unter [odata.org](http://www.odata.org).
+OData-Ressourcen finden Sie unter [odata.org](https://www.odata.org).
   
-Überprüfen Sie die Standardversion 4.0 von OData unter [OData Version 4.0] http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+Überprüfen Sie die Standardversion 4.0 von OData unter [OData Version 4.0] https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  

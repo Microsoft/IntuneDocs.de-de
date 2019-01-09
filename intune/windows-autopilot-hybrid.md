@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 9de47f996706255c072926524860cfcc833e8b8b
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112441"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642556"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot (Vorschauversion)
 Sie können in Azure Active Directory Hybrid eingebundenen Geräte mithilfe von Intune und Windows Autopilot einrichten. Führen Sie dazu die folgenden Schritte aus.
@@ -204,7 +204,7 @@ Es dauert etwa 15 Minuten, bis sich der Status des Geräteprofils von **Nicht zu
    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein.
    - **Plattform**: Wählen Sie **Windows 10 und höher** aus.
    - **Profiltyp**: Wählen Sie **Domänenbeitritt (Vorschau)** aus.
-3. Wählen Sie **Einstellungen** aus, und geben Sie ein **Computernamenspräfix**, einen **Domänennamen** und eine **Organisationseinheit** (optional) ein. 
+3. Wählen Sie **Einstellungen** aus, und geben Sie ein **Computernamenspräfix**, einen **Domänennamen** und eine **Organisationseinheit** im DN-Format (optional) ein. 
 4. Klicken Sie auf **OK** > **Erstellen**. Das Profil wird erstellt und in der Liste angezeigt.
 5. Um das Profil zuzuweisen, führen Sie die Schritte unter [Zuweisen eines Geräteprofils](device-profile-assign.md#assign-a-device-profile) aus. 
 

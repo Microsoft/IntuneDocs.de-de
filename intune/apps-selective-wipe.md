@@ -1,7 +1,7 @@
 ---
 title: So setzen Sie nur die Unternehmensdaten in einer App zurück
 titleSuffix: Microsoft Intune
-description: Erfahren Sie, wie Sie Apps mit Microsoft Intune selektiv zurücksetzen.
+description: Erfahren Sie, wie Sie Unternehmensdaten mit Microsoft Intune selektiv in durch Intune verwalteten Apps zurücksetzen.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 19d173cabda71b4e6a24008eb94f9665c54ba924
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 57e22c7b999f2f672c67dc623a20bf643e739376
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184351"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642573"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Zurücksetzen nur von Unternehmensdaten in einer in Intune verwalteten App
 

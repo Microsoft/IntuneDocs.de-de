@@ -1,12 +1,12 @@
 ---
 title: Blockieren von Apps ohne moderne Authentifizierung in Intune
 titleSuffix: Microsoft Intune
-description: Erfahren Sie, wie Sie Apps blockieren können, die keine moderne Authentifizierung verwenden (ADAL).
+description: Erfahren Sie, wie Sie über Microsoft Intune Apps blockieren können, die keine moderne Authentifizierung (ADAL) verwenden.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0b74559eb0914d87daabaaad52902547ae7c08ac
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: dc9318d46892eab21e81c7eb2992f3476720abd1
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182039"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642454"
 ---
 # <a name="block-apps-that-do-not-use-modern-authentication-adal"></a>Blockieren von Apps, die keine moderne Authentifizierung verwenden (ADAL)
 
@@ -29,14 +29,17 @@ ms.locfileid: "52182039"
 
 Der App-basierte bedingte Zugriff mit App-Schutzrichtlinien hängt von Anwendungen ab, die die [moderne Authentifizierung](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) nutzen, bei der es sich um eine Implementierung von OAuth2 handelt. Die meisten aktuellen mobilen und desktopbasierten Office-Anwendungen nutzen die moderne Authentifizierung. Es gibt jedoch Apps von Drittanbietern oder ältere Office-Apps, die andere Authentifizierungsmethoden wie die Standardauthentifizierung und die formularbasierte Authentifizierung nutzen.
 
-Zum Blockieren des Zugriffs auf diese Apps werden folgende Methoden empfohlen:
+## <a name="block-apps"></a>Blockieren von Apps
 
-* Richten Sie die Anspruchsregeln für Active Directory-Verbunddienste (ADFS) dahingehend ein, dass nicht moderne Authentifizierungsprotokolle blockiert werden. Detaillierte Anleitungen werden in Szenario 3 beschrieben: [Blockieren des gesamten Zugriffs auf Office 365, bis auf browserbasierte Anwendungen](https://technet.microsoft.com/library/dn592182.aspx).
-* Verwenden Sie bei **Exchange und SharePoint Online** den bedingten Zugriff für Azure Active Directory, und verwenden Sie bei SharePoint Online das PowerShell-Cmdlet "Set-SPOTenant". Ausführliche Anweisungen finden Sie unter [Einrichten von SharePoint Online und Exchange Online für bedingten Zugriff mit Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols).
+Um den Zugriff auf Apps zu blockieren, die keine moderne Authentifizierung verwenden, empfehlen wir die folgenden Methoden:
+
+- Richten Sie die Anspruchsregeln für Active Directory-Verbunddienste (ADFS) dahingehend ein, dass nicht moderne Authentifizierungsprotokolle blockiert werden. Detaillierte Anleitungen werden in Szenario 3 beschrieben: [Blockieren des gesamten Zugriffs auf Office 365, bis auf browserbasierte Anwendungen](https://technet.microsoft.com/library/dn592182.aspx).
+- Verwenden Sie bei **Exchange und SharePoint Online** den bedingten Zugriff für Azure Active Directory, und verwenden Sie bei SharePoint Online das PowerShell-Cmdlet "Set-SPOTenant". Ausführliche Anweisungen finden Sie unter [Einrichten von SharePoint Online und Exchange Online für bedingten Zugriff mit Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication#legacy-authentication-protocols).
 
 
 >[!IMPORTANT]
 >Die App-basierte zertifikatbasierte Authentifizierung darf nicht mit der zertifikatbasierten Authentifizierung von Azure Active Directory (Azure AD) verwendet werden. Es darf immer jeweils nur eine Authentifizierungsmethode konfiguriert werden.
 
-### <a name="see-also"></a>Siehe auch
-[App-basierter bedingter Zugriff mit Intune](app-based-conditional-access-intune.md)
+## <a name="next-steps"></a>Nächste Schritte
+
+- [App-basierter bedingter Zugriff mit Intune](app-based-conditional-access-intune.md)

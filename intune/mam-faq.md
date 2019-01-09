@@ -15,12 +15,12 @@ ms.reviewer: erikre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7cb6e5e603b353be5d3c0d3fdaca4f1d8af675ad
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1e2b97970a7ab440a032eb29f5307e4dbeddc3bc
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181189"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53306014"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Häufig gestellte Fragen zu MAM und App-Schutz
 
@@ -37,9 +37,9 @@ MAM schützt die Daten einer Organisation innerhalb einer Anwendung. Mit MAM ohn
 
 **Welche Gerätekonfigurationen unterstützt MAM?**<br></br>
 Intune MAM unterstützt zwei Konfigurationen:
-- **Intune MDM + MAM**: IT-Administratoren können Apps mithilfe von MAM und App-Schutzrichtlinien nur auf Geräten verwalten, die bei der Intune-Verwaltung mobiler Geräte (Mobile Device Management, MDM) registriert sind. Um Apps mithilfe von MDM und MAM zu verwalten, sollten Kunden die Intune-Konsole im Azure-Portal unter https://portal.azure.com verwenden.
+- **Intune MDM und MAM**: IT-Administratoren können Apps mithilfe von MAM und App-Schutzrichtlinien nur auf Geräten verwalten, die bei der Intune-Verwaltung mobiler Geräte (Mobile Device Management, MDM) registriert sind. Um Apps mithilfe von MDM und MAM zu verwalten, sollten Kunden die Intune-Konsole im Azure-Portal unter https://portal.azure.com verwenden.
 
-- **MAM ohne Geräteregistrierung**: Mit MAM ohne Geräteregistrierung (MAM without enrollment, MAM-WE) können IT-Administratoren Apps mithilfe von MAM und App-Schutzrichtlinien auf Geräten verwalten, die nicht bei Intune MDM registriert sind. Dies bedeutet, dass Apps über Intune auf Geräten verwaltet werden können, die bei EMM-Drittanbietern registriert sind. Um Apps mithilfe von MAM-WE zu verwalten, sollten Kunden unter http://portal.azure.com die Intune-Konsole im Azure-Portal verwenden. Darüber hinaus können Apps auf Geräten, die entweder bei EMM-Drittanbietern (Enterprise Mobility Management, EMM) oder überhaupt nicht bei einer MDM registriert sind, von Intune verwaltet werden.
+- **MAM ohne Geräteregistrierung**: Mit MAM ohne Geräteregistrierung (MAM without enrollment, MAM-WE) können IT-Administratoren Apps mithilfe von MAM und App-Schutzrichtlinien auf Geräten verwalten, die nicht bei Intune MDM registriert sind. Dies bedeutet, dass Apps über Intune auf Geräten verwaltet werden können, die bei EMM-Drittanbietern registriert sind. Um Apps mithilfe von MAM-WE zu verwalten, sollten Kunden unter https://portal.azure.com die Intune-Konsole im Azure-Portal verwenden. Darüber hinaus können Apps auf Geräten, die entweder bei EMM-Drittanbietern (Enterprise Mobility Management, EMM) oder überhaupt nicht bei einer MDM registriert sind, von Intune verwaltet werden.
 
 
 ## <a name="app-protection-policies"></a>App-Schutzrichtlinien
@@ -61,7 +61,7 @@ Jede App, die in das [Intune App SDK](/intune/app-sdk) integriert oder vom [Intu
 
 - Dem AAD-Konto des Endbenutzers muss eine Lizenz für Microsoft Intune zugewiesen sein. Informationen zum Zuweisen von Intune-Lizenzen zu Endbenutzern finden Sie unter [Verwalten von Intune-Lizenzen](/intune/licenses-assign).
 
-- Der Endbenutzer muss zu einer Sicherheitsgruppe gehören, für die eine App-Schutzrichtlinie gilt. Die gleiche App-Schutzrichtlinie muss für die verwendete App gelten. App-Schutzrichtlinien können in der Intune-Konsole im [Azure-Portal](http://portal.azure.com) erstellt und bereitgestellt werden. Sicherheitsgruppen können zurzeit im [Office-Portal](http://portal.office.com) erstellt werden.
+- Der Endbenutzer muss zu einer Sicherheitsgruppe gehören, für die eine App-Schutzrichtlinie gilt. Die gleiche App-Schutzrichtlinie muss für die verwendete App gelten. App-Schutzrichtlinien können in der Intune-Konsole im [Azure-Portal](https://portal.azure.com) erstellt und bereitgestellt werden. Sicherheitsgruppen können zurzeit im [Office-Portal](https://portal.office.com) erstellt werden.
 
 - Der Endbenutzer muss sich mit seinem AAD-Konto bei der App anmelden.
 
@@ -76,7 +76,7 @@ Jede App, die in das [Intune App SDK](/intune/app-sdk) integriert oder vom [Intu
 
 **Welche zusätzlichen Anforderungen gelten für die Verwendung der [Word-, Excel- und PowerPoint](https://products.office.com/business/office)-Apps?**
 
-- Mit dem AAD-Konto des Endbenutzers muss eine Lizenz für [Office 365 Business oder Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) verknüpft sein. Das Abonnement muss die Office-Apps auf mobilen Geräten enthalten und kann ein Cloudspeicherkonto mit [OneDrive for Business](https://onedrive.live.com/about/business/) umfassen. Office 365-Lizenzen können im [Office-Portal](http://portal.office.com) zugewiesen werden. Befolgen Sie diese [Anweisungen](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+- Mit dem AAD-Konto des Endbenutzers muss eine Lizenz für [Office 365 Business oder Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) verknüpft sein. Das Abonnement muss die Office-Apps auf mobilen Geräten enthalten und kann ein Cloudspeicherkonto mit [OneDrive for Business](https://onedrive.live.com/about/business/) umfassen. Office 365-Lizenzen können im [Office-Portal](https://portal.office.com) zugewiesen werden. Befolgen Sie diese [Anweisungen](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
 - Der Benutzer muss über einen verwalteten Speicherort verfügen, der mithilfe der Funktion „Speichern unter“ unter der Einstellung für die Anwendungsschutzrichtlinie zum Verhindern von „Speichern unter“ konfiguriert wird. Wenn beispielsweise der verwaltete Speicherort OneDrive ist, muss die [OneDrive](https://onedrive.live.com/about/)-App in der Word-, Excel- oder PowerPoint-App des Endbenutzer konfiguriert werden.
 
@@ -109,9 +109,9 @@ Die PIN (Personal Identification Number) ist eine Kennung, mit der sichergestell
 
 - **Wie häufig wird ein Benutzer zur Eingabe der Intune-PIN aufgefordert?**<br></br> Der IT-Administrator kann in der Intune-Verwaltungskonsole die Einstellung „Zugriffsanforderungen nach (Minuten) erneut überprüfen“ für die Intune-App-Schutzrichtlinie definieren. Diese Einstellung gibt die Zeitspanne an, nach der die Zugriffsanforderungen auf dem Gerät überprüft werden und der Bildschirm zur Eingabe der PIN erneut angezeigt wird. Folgende Faktoren beeinflussen, wie häufig ein Benutzer zur PIN-Eingabe aufgefordert wird: 
 
-    - **Die PIN gilt für mehrere Apps des gleichen Herausgebers, um die Benutzerfreundlichkeit zu verbessern:** Unter iOS wird eine App-PIN für alle Apps **des gleichen Herausgebers** genutzt. Unter Android wird eine App-PIN für alle Apps genutzt.
-    - **Das Verhalten „Zugriffsanforderungen erneut überprüfen nach (Minuten)“ nach dem Neustart eines Geräts:** Ein „PIN-Timer“ erfasst die Anzahl der inaktiven Minuten. Dadurch wird bestimmt, wann die PIN der Intune-App das nächste Mal angezeigt werden soll. Unter iOS hat ein Neustart des Geräts keine Auswirkung auf den PIN-Timer. Das bedeutet, dass ein Neustart des Geräts keine Auswirkung auf die Anzahl der inaktiven Minuten des Benutzers einer iOS-App mit der Intune-PIN-Richtlinie hat. Unter Android wird der PIN-Timer beim Neustart des Geräts zurückgesetzt. Deshalb fordern Android-Apps mit der Intune-PIN-Richtlinie den Benutzer wahrscheinlich unabhängig vom Wert der Einstellung „Zugriffsanforderungen erneut überprüfen nach (Minuten)“ nach dem **Neustart des Geräts** zur Eingabe einer PIN für die App auf.  
-    - **Die Natur des Zeitgebers, der mit der PIN verknüpft ist:** Wenn für den Zugriff auf eine App (App A) eine PIN eingegeben wurde und diese App nicht mehr im Vordergrund (Haupteingabefokus) ausgeführt wird, wird der PIN-Zeitgeber für diese PIN zurückgesetzt. Eine andere App (App B), für die die gleiche PIN gilt, fordert den Benutzer nicht zur PIN-Eingabe auf, weil der Zeitgeber zurückgesetzt wurde. Die Aufforderung wird wieder angezeigt, wenn der Wert für „Zugriffsanforderungen nach (Minuten) erneut überprüfen“ erneut erreicht wurde.
+    - **Eine PIN wird für alle Apps des gleichen Herausgebers genutzt, um die Benutzerfreundlichkeit zu erhöhen**: In iOS wird eine gemeinsame App-PIN für alle Apps **des gleichen App-Herausgebers** genutzt. Unter Android wird eine App-PIN für alle Apps genutzt.
+    - **Das Verhalten für „Zugriffsanforderungen erneut überprüfen nach (Minuten)“ nach einem Geräteneustart**: Ein „PIN-Timer“ zählt die Anzahl von Minuten der Inaktivität, die angeben, wann die Intune-App-PIN das nächste Mal angezeigt werden soll. Unter iOS hat ein Neustart des Geräts keine Auswirkung auf den PIN-Timer. Das bedeutet, dass ein Neustart des Geräts keine Auswirkung auf die Anzahl der inaktiven Minuten des Benutzers einer iOS-App mit der Intune-PIN-Richtlinie hat. Unter Android wird der PIN-Timer beim Neustart des Geräts zurückgesetzt. Deshalb fordern Android-Apps mit der Intune-PIN-Richtlinie den Benutzer wahrscheinlich unabhängig vom Wert der Einstellung „Zugriffsanforderungen erneut überprüfen nach (Minuten)“ nach dem **Neustart des Geräts** zur Eingabe einer PIN für die App auf.  
+    - **Das Wiederholungsverhalten des Timers für die PIN**: Wenn für den Zugriff auf eine App (App A) eine PIN eingegeben wurde und diese App auf dem Gerät nicht mehr im Vordergrund (Haupteingabefokus) ausgeführt wird, wird der PIN-Zeitgeber für diese PIN zurückgesetzt. Eine andere App (App B), für die die gleiche PIN gilt, fordert den Benutzer nicht zur PIN-Eingabe auf, weil der Zeitgeber zurückgesetzt wurde. Die Aufforderung wird wieder angezeigt, wenn der Wert für „Zugriffsanforderungen nach (Minuten) erneut überprüfen“ erneut erreicht wurde.
 
 Selbst wenn die PIN auf iOS-Geräten unter Apps von verschiedenen Herausgebern freigegeben wird, wird die Eingabeaufforderung erneut angezeigt, wenn der Wert für **Zugriffsanforderungen nach (Minuten) erneut überprüfen** erneut für die App erreicht wird, die nicht über den Eingabefokus verfügt. Beispiel: Der Benutzer verfügt über die App _A_ von Herausgeber _X_ und über die App _B_ von Herausgeber _Y_, und für diese Apps wird die gleiche PIN verwendet. Der Benutzer verwendet App _A_ (im Vordergrund), und die App _B_ ist minimiert. Wenn der Wert für **Zugriffsanforderungen nach (Minuten) erneut überprüfen** erreicht wurde und der Benutzer zur App _B_ wechselt, ist eine PIN erforderlich.
 

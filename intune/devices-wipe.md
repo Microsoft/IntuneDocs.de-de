@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 44923d89647118268c7a55746599354ac88fbfd2
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861012"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553655"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Entfernen von Geräten durch Zurücksetzen, Abkoppeln oder manuelles Aufheben der Registrierung des Geräts
 
@@ -81,7 +81,7 @@ In den folgenden Tabellen wird beschrieben, welche Daten entfernt werden und wel
 
 |Datentyp|iOS|
 |-------------|-------|
-|Von Intune installierte Unternehmens-Apps und zugehörige Daten|**Mit dem Unternehmensportal installierte Apps**: Alle App-Daten und die Apps werden entfernt. Zu diesen Apps gehören diejenigen, die ursprünglich aus dem App Store installiert und später als Unternehmens-Apps verwaltet werden. <br /><br /> **Microsoft-Apps mit mobiler App-Verwaltung, die aus dem App Store installiert wurden**: Persönliche App-Daten werden entfernt. Unternehmensdaten der App und die Apps selbst werden nicht entfernt.|
+|Von Intune installierte Unternehmens-Apps und zugehörige Daten|**Mit dem Unternehmensportal installierte Apps**: Alle App-Daten und die Apps werden entfernt. Zu diesen Apps gehören diejenigen, die ursprünglich aus dem App Store installiert und später als Unternehmens-Apps verwaltet werden. <br /><br /> **Microsoft-Apps mit mobiler App-Verwaltung, die aus dem App Store installiert wurden**: Daten von Unternehmens-Apps werden entfernt. Persönliche App-Daten und die Apps selbst werden nicht entfernt.|
 |Einstellung|Von der Intune-Richtlinie festgelegte Konfigurationen werden nicht mehr erzwungen. Benutzer können die Einstellungen ändern.|
 |Einstellungen für WLAN- und VPN-Profil|Entfernt.|
 |Zertifikatprofil-Einstellungen|Zertifikate werden entfernt und gesperrt.|

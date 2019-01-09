@@ -14,12 +14,12 @@ ms.reviewer: kmyrup
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73a3b26eb9a18475530e3b52ba9b91c4af5e685d
-ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
+ms.openlocfilehash: ee61063a36a486a0840446f82834bc37cc96bfc0
+ms.sourcegitcommit: a843bd081e9331838ade05a3c05b02d60b6bec4c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52303871"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53597374"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune
 
@@ -29,21 +29,21 @@ In diesem Artikel wird erläutert, wie Sie Ihre Infrastruktur konfigurieren und 
 
 - **Active Directory-Domäne**: Alle in diesem Abschnitt aufgeführten Server (außer dem Webanwendungsproxy-Server) müssen der Active Directory-Domäne angehören.
 
-- **Zertifizierungsstelle** (Certification Authority, CA): Eine Unternehmenszertifizierungsstelle von Microsoft, die auf einer Enterprise-Edition von Windows Server 2008 R2 oder höher ausgeführt wird. Eine eigenständige Zertifizierungsstelle wird nicht unterstützt. Informationen finden Sie unter [Installieren der Zertifizierungsstelle](http://technet.microsoft.com/library/jj125375.aspx).
+- **Zertifizierungsstelle**: Hierbei muss es sich um eine Unternehmenszertifizierungsstelle von Microsoft handeln, die auf einer Enterprise-Edition von Windows Server 2008 R2 oder höher ausgeführt wird. Eine eigenständige Zertifizierungsstelle wird nicht unterstützt. Informationen finden Sie unter [Installieren der Zertifizierungsstelle](http://technet.microsoft.com/library/jj125375.aspx).
     Wenn die Zertifizierungsstelle unter Windows Server 2008 R2 ausgeführt wird, müssen Sie [den Hotfix von KB2483564 installieren](http://support.microsoft.com/kb/2483564/).
 
 - **NDES-Server**: Richten Sie auf einem Server mit Windows Server 2012 R2 oder höher die Serverrolle „Registrierungsdienst für Netzwerkgeräte“ (Network Device Enrollment Service, NDES) ein. Intune unterstützt die Verwendung von NDES nicht auf Servern, die auch die Unternehmenszertifizierungsstelle ausführen. Im [Leitfaden für den Registrierungsdienst für Netzwerkgeräte](http://technet.microsoft.com/library/hh831498.aspx) finden Sie Anweisungen zum Konfigurieren von Windows Server 2012 R2 zum Hosten von NDES.
 Der NDES-Server muss mit einer Domäne verknüpft sein, die dieselbe Gesamtstruktur aufweist wie die Unternehmenszertifizierungsstelle. Weitere Informationen zum Bereitstellen des NDES-Servers in einer separaten Gesamtstruktur, in einem isolierten Netzwerk oder in einer internen Domäne finden Sie unter [Verwenden eines Richtlinienmoduls mit dem Registrierungsdienst für Netzwerkgeräte](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **Microsoft Intune Certificate Connector:** Laden Sie den Installer (**NDESConnectorSetup.exe**) für den **Certificate Connector** über das Intune-Verwaltungsportal herunter. Führen Sie diesen Installer über die NDES-Rolle auf dem Server aus.  
+- **Microsoft Intune Certificate Connector**: Laden Sie das Installationsprogramm (**NDESConnectorSetup.exe**) für den **Certificate Connector** aus dem Intune-Verwaltungsportal herunter. Führen Sie dieses Installationsprogramm über die NDES-Rolle auf dem Server aus.  
 
   - Der NDES-Certificate Connector unterstützt ebenfalls den FIPS-Modus (Federal Information Processing Standard). FIPS ist nicht erforderlich, Sie können jedoch Zertifikate ausstellen und widerrufen, wenn dieser Modus aktiviert ist.
 
-- **Webanwendungsproxy-Server** (optional): Verwenden Sie einen Server unter Windows Server 2012 R2 oder höher als Webanwendungsproxy-Server (WAP). Diese Konfiguration:
+- **Webanwendungsproxy-Server** (optional): Verwenden Sie einen Server, der Windows Server 2012 R2 oder höher ausführt, als Webanwendungsproxy-Server (WAP). Diese Konfiguration:
   - ermöglicht Geräten das Empfangen von Zertifikaten über eine Internetverbindung,
   - ist eine Sicherheitsempfehlung, wenn Geräte eine Verbindung über das Internet herstellen, um Zertifikate zu empfangen oder zu erneuern.
   
-- **Azure AD-Anwendungsproxy** (optional): Der Azure AD-Anwendungsproxy kann anstelle eines dedizierten WAP-Servers (Web Application Proxy) verwendet werden, um den NDES-Server im Internet zu veröffentlichen. Weitere Informationen finden Sie unter [Gewusst wie: Bereitstellen von sicherem Remotezugriff auf lokale Anwendungen](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+- **Azure AD-Anwendungsproxy** (optional): Der Azure AD-Anwendungsproxy kann anstelle eines dedizierten WAP-Servers (Webanwendungsproxy) verwendet werden, um den NDES-Server im Internet zu veröffentlichen. Weitere Informationen finden Sie unter [Gewusst wie: Bereitstellen von sicherem Remotezugriff auf lokale Anwendungen](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
 #### <a name="additional"></a>Zusätzliche Informationen
 
@@ -261,7 +261,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 
     Das Clientauthentifizierungszertifikat muss die folgenden Eigenschaften aufweisen:
 
-    - **Erweiterte Schlüsselverwendung**: Dieser Wert muss die **Clientauthentifizierung** umfassen.
+    - **Erweiterte Schlüsselverwendung**: Dieser Wert muss die **Clientauthentifizierung** enthalten.
 
     - **Antragstellername**: Der Wert muss mit dem DNS-Namen des Servers identisch sein, auf dem das Zertifikat installiert wird (d.h. dem NDES-Server).
 
@@ -280,8 +280,8 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 
     Stellen Sie sicher, dass die folgenden Werte als DWORD-Einträge festgelegt sind:
 
-    - Name: **MaxFieldLength**mit einem Dezimalwert von **65534**
-    - Name: **MaxRequestBytes**mit einem Dezimalwert von **65534**
+    - Name: **MaxFieldLength** mit einem Dezimalwert von **65534**
+    - Name: **MaxRequestBytes** mit einem Dezimalwert von **65534**
 
 4. Starten Sie den NDES-Server neu. Der Server ist jetzt bereit zur Unterstützung des Zertifikatconnectors.
 
@@ -305,7 +305,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 4. Nachdem der Download abgeschlossen ist, navigieren Sie zum Server, der die NDES-Rolle hostet. Führen Sie anschließend Folgendes durch:
 
     1. Stellen Sie sicher, dass .NET Framework 4.5 installiert ist (dies ist für den NDES-Certificate Connector erforderlich). .NET Framework 4.5 ist automatisch in Windows Server 2012 R2 und höheren Versionen enthalten.
-    2. Führen Sie den Installer aus (**NDESConnectorSetup.exe**). Das Installationsprogramm installiert auch das Richtlinienmodul für NDES und den CRP-Webdienst. Der CRP-Webdienst „CertificateRegistrationSvc“ wird als Anwendung in IIS ausgeführt.
+    2. Führen Sie das Installationsprogramm (**NDESConnectorSetup.exe**) aus. Das Installationsprogramm installiert auch das Richtlinienmodul für NDES und den CRP-Webdienst. Der CRP-Webdienst „CertificateRegistrationSvc“ wird als Anwendung in IIS ausgeführt.
 
     > [!NOTE]
     > Bei der Installation von NDES für eigenständiges Intune wird der CRP-Dienst automatisch mit dem Zertifikatconnector installiert. Bei Verwendung von Intune mit dem Konfigurations-Manager installieren Sie den Zertifikatregistrierungspunkt als eine separate Standortsystemrolle.
@@ -368,7 +368,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
      - Windows 10 und höher
      - Android Enterprise
 
-   - **Format des Antragstellernamens:** Wählen Sie aus, wie Intune den Antragstellernamen in der Zertifikatanforderung automatisch erstellt. Diese Optionen ändern sich, wenn Sie den Zertifikattyp **Benutzer** oder **Gerät** auswählen. 
+   - **Format des Antragstellernamens**: Wählen Sie aus, auf welche Weise Intune den Antragstellernamen in der Zertifikatanforderung automatisch erstellen soll. Diese Optionen ändern sich, wenn Sie den Zertifikattyp **Benutzer** oder **Gerät** auswählen. 
 
         **Benutzerzertifikattyp**  
 
@@ -380,17 +380,17 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
         - **Allgemeiner Name als E-Mail-Adresse**
         - **IMEI (International Mobile Equipment Identity)**
         - **Seriennummer**
-        - **Benutzerdefiniert**: Bei Auswahl dieser Option wird ebenfalls ein **benutzerdefiniertes** Textfeld angezeigt. In dieses Feld können Sie ein benutzerdefiniertes Format für den Antragstellernamen, einschließlich Variablen, eingeben. Das benutzerdefinierte Format unterstützt zwei Variablen: **Allgemeiner Name (CN)** und **E-Mail (E)**. **Allgemeiner Name (CN)** kann auf eine der folgenden Variablen festgelegt werden:
+        - **Benutzerdefiniert**: Bei Auswahl dieser Option wird auch ein **benutzerdefiniertes** Textfeld angezeigt. In dieses Feld können Sie ein benutzerdefiniertes Format für den Antragstellernamen, einschließlich Variablen, eingeben. Das benutzerdefinierte Format unterstützt zwei Variablen: **Common Name (CN)** (Allgemeiner Name) und **Email (E)** (E-Mail-Adresse). **Allgemeiner Name (CN)** kann auf eine der folgenden Variablen festgelegt werden:
 
-            - **CN={{UserName}}:** Der Benutzerprinzipalname des Benutzers, z.B. janedoe@contoso.com.
-            - **CN={{AAD_Device_ID}}:** Eine ID, die zugewiesen wird, wenn Sie ein Gerät in Azure Active Directory (AD) registrieren. Diese ID wird in der Regel für die Authentifizierung bei Azure Active Directory verwendet.
-            - **CN={{SERIALNUMBER}}:** Die eindeutige Seriennummer (SN) wird in der Regel vom Hersteller verwendet, um ein Gerät zu identifizieren.
-            - **CN={{IMEINumber}}:** Die eindeutige IMEI-Nummer (International Mobile Equipment Identity), die verwendet wird, um ein Mobiltelefon zu identifizieren.
-            - **CN={{OnPrem_Distinguished_Name}}:** Eine Sequenz von relativ definierten Namen, die durch Kommas getrennt sind, z.B. `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`.
+            - **CN={{UserName}}**: Der Benutzerprinzipalname des Benutzers, z.B. „janedoe@contoso.com“
+            - **CN={{AAD_Device_ID}}**: Eine ID, die zugewiesen wird, wenn Sie ein Gerät in Azure Active Directory (AD) registrieren. Diese ID wird in der Regel für die Authentifizierung bei Azure Active Directory verwendet.
+            - **CN={{SERIALNUMBER}}**: Die eindeutige Seriennummer (SN), die in der Regel vom Hersteller zum Identifizieren eines Geräts verwendet wird.
+            - **CN={{IMEINumber}}**: Die eindeutige IMEI-Nummer (International Mobile Equipment Identity), die verwendet wird, um ein Mobiltelefon zu identifizieren.
+            - **CN={{OnPrem_Distinguished_Name}}**: Eine Sequenz von relativen definierten Namen, die durch Kommas getrennt sind, z.B. `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`.
 
                 Damit Sie die `{{OnPrem_Distinguished_Name}}`-Variable verwenden können, stellen Sie sicher, dass das `onpremisesdistingishedname`-Benutzerattribut mithilfe von [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) mit Ihrem Azure AD synchronisiert wird.
 
-            - **CN={{onPremisesSamAccountName}}**: Administratoren können das Attribut samAccountName aus Active Directory mithilfe von Azure AD Connect in einem Attribut mit dem Namen `onPremisesSamAccountName` mit Azure AD synchronisieren. Intune kann die Variable als Teil einer Zertifikatsausstellungsanforderung im Antragsteller eines SCEP-Zertifikats ersetzen.  Das Attribut samAccountName ist der zur Unterstützung von Clients und Servern aus einer früheren Version von Windows (vor Windows 2000) verwendete Benutzeranmeldename. Das Format des Benutzeranmeldenamens ist: `DomainName\testUser`, oder nur `testUser`.
+            - **CN={{onPremisesSamAccountName}}**: Administratoren können das samAccountName-Attribut aus Active Directory mithilfe von Azure AD Connect in einem Attribut mit dem Namen `onPremisesSamAccountName` mit Azure AD synchronisieren. Intune kann die Variable als Teil einer Zertifikatsausstellungsanforderung im Antragsteller eines SCEP-Zertifikats ersetzen.  Das Attribut samAccountName ist der zur Unterstützung von Clients und Servern aus einer früheren Version von Windows (vor Windows 2000) verwendete Benutzeranmeldename. Das Format des Benutzeranmeldenamens ist: `DomainName\testUser`, oder nur `testUser`.
 
                 Damit Sie die `{{onPremisesSamAccountName}}`-Variable verwenden können, stellen Sie sicher, dass das `onPremisesSamAccountName`-Benutzerattribut mithilfe von [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) mit Ihrem Azure AD synchronisiert wird.
 
@@ -428,7 +428,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
         >  - Das Profil wird nicht auf dem Gerät installiert, wenn die angegebenen Gerätevariablen nicht unterstützt werden. Beispiel: Wenn „{{IMEI}}“ im Antragstellernamen des SCEP-Profils, das einem Gerät ohne IMEI-Nummer zugewiesen ist, verwendet wird, tritt bei der Profilinstallation ein Fehler auf. 
 
 
-   - **Alternativer Antragstellername:** Geben Sie an, wie die Werte für den alternativen Antragstellernamen (Subject Alternative Name, SAN) in der Zertifikatanforderung von Intune automatisch erstellt werden sollen. Diese Optionen ändern sich, wenn Sie den Zertifikattyp **Benutzer** oder **Gerät** auswählen. 
+   - **Alternativer Antragstellername**: Wählen Sie aus, auf welche Weise Intune die Werte für den alternativen Antragstellernamen (Subject Alternative Name, SAN) in der Zertifikatanforderung automatisch erstellen soll. Diese Optionen ändern sich, wenn Sie den Zertifikattyp **Benutzer** oder **Gerät** auswählen. 
 
         **Benutzerzertifikattyp**  
 
@@ -470,23 +470,23 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
         >  -  Bei der Verwendung von Geräteeigenschaften wie IMEI, Seriennummer und vollständig qualifiziertem Domänennamen im Betreff oder SAN für ein Gerätezertifikat achten Sie unbedingt darauf, dass diese Eigenschaften von einer Person mit Zugriff auf das Gerät gespooft sein könnten.
         >  - Das Profil wird nicht auf dem Gerät installiert, wenn die angegebenen Gerätevariablen nicht unterstützt werden. Beispiel: Wenn „{{IMEI}}“ im alternativer Antragstellernamen des SCEP-Profils, das einem Gerät ohne IMEI-Nummer zugewiesen ist, verwendet wird, tritt bei der Profilinstallation ein Fehler auf.  
 
-   - **Gültigkeitsdauer des Zertifikats:** Wenn Sie den Befehl `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` auf der ausstellenden Zertifizierungsstelle ausgeführt haben, die eine benutzerdefinierte Gültigkeitsdauer ermöglicht, können Sie die verbleibende Dauer bis zum Ablauf des Zertifikats eingeben.<br>Sie können einen niedrigeren Wert als den für die Gültigkeitsdauer in der Zertifikatvorlage eingeben, aber keinen höheren. Wenn die Gültigkeitsdauer des Zertifikats in der Zertifikatvorlage beispielsweise zwei Jahre beträgt, können Sie als Wert „ein Jahr“ eingeben, aber nicht „fünf Jahre“. Zudem muss der Wert niedriger als die verbleibende Gültigkeitsdauer des Zertifikats der ausstellenden Zertifizierungsstelle sein. 
-   - **Schlüsselspeicheranbieter (KSP):** (Windows Phone 8.1, Windows 8.1, Windows 10) Geben Sie an, wo der Schlüssel für das Zertifikat gespeichert wird. Wählen Sie einen der folgenden Werte aus:
+   - **Gültigkeitsdauer des Zertifikats**: Wenn Sie den Befehl `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE`, der eine benutzerdefinierte Gültigkeitsdauer ermöglicht, für die ausstellende Zertifizierungsstelle ausgeführt haben, können Sie die verbleibende Dauer vor dem Ablaufen des Zertifikats angeben.<br>Sie können einen niedrigeren Wert als den für die Gültigkeitsdauer in der Zertifikatvorlage eingeben, aber keinen höheren. Wenn die Gültigkeitsdauer des Zertifikats in der Zertifikatvorlage beispielsweise zwei Jahre beträgt, können Sie als Wert „ein Jahr“ eingeben, aber nicht „fünf Jahre“. Zudem muss der Wert niedriger als die verbleibende Gültigkeitsdauer des Zertifikats der ausstellenden Zertifizierungsstelle sein. 
+   - **Schlüsselspeicheranbieter (Key Storage Provider, KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): Geben Sie an, wo der Schlüssel für das Zertifikat gespeichert wird. Wählen Sie einen der folgenden Werte aus:
      - **Bei TPM-KSP (Trusted Platform Module) registrieren, falls vorhanden, andernfalls Software-KSP**
      - **Bei TPM-KSP (Trusted Platform Module) registrieren, andernfalls Fehler**
      - **Bei Passport registrieren, andernfalls Fehler (Windows 10 und höher)**
      - **Bei Software-KSP registrieren**
 
-   - **Schlüsselverwendung:** Geben Sie Schlüsselverwendungsoptionen für das Zertifikat an. Folgende Optionen sind verfügbar:
-     - **Schlüsselverschlüsselung:** Lässt den Schlüsselaustausch nur zu, wenn der Schlüssel verschlüsselt ist.
-     - **Digitale Signatur:** Lässt den Schlüsselaustausch nur zu, wenn der Schlüssel durch eine digitale Signatur geschützt ist.
-   - **Schlüsselgröße (Bit):** Wählen Sie die Anzahl der Bits aus, die im Schlüssel enthalten sein sollen.
-   - **Hashalgorithmus** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Wählen Sie einen der verfügbaren Hashalgorithmustypen aus, der für dieses Zertifikat verwendet werden soll. Wählen Sie die höchste Sicherheitsebene aus, die die verbundenen Geräten unterstützen.
-   - **Stammzertifikat:** Wählen Sie ein Profil für ein Zertifikat der Stammzertifizierungsstelle aus, das Sie zuvor konfiguriert und dem Benutzer und/oder dem Gerät zugewiesen haben. Dieses Zertifizierungsstellenzertifikat muss das Stammzertifikat für die Zertifizierungsstelle sein, die das Zertifikat ausstellt, das Sie in diesem Zertifikatprofil konfigurieren. Vergewissern Sie sich, dass Sie dieses Profil für das vertrauenswürdige Stammzertifikat der Gruppe zuweisen, die auch dem SCEP-Zertifikatprofil zugewiesen ist.
-   - **Erweiterte Schlüsselverwendung:** Klicken Sie auf **Hinzufügen**, um Werte für den beabsichtigten Zweck des Zertifikats hinzuzufügen. In den meisten Fällen erfordert das Zertifikat **Clientauthentifizierung**, damit der Benutzer bzw. das Gerät auf einem Server authentifiziert werden kann. Sie können jedoch nach Bedarf weitere Schlüsselverwendungen hinzufügen.
+   - **Schlüsselverwendung**: Geben Sie Schlüsselverwendungsoptionen für das Zertifikat an. Folgende Optionen sind verfügbar:
+     - **Schlüsselverschlüsselung**: Der Schlüsselaustausch wird nur gestattet, wenn der Schlüssel verschlüsselt ist.
+     - **Digitale Signatur**: Der Schlüsselaustausch wird nur gestattet, wenn der Schutz des Schlüssels durch eine digitale Signatur unterstützt wird.
+   - **Schlüsselgröße (Bits)**: Wählen Sie die Anzahl der Bits aus, die im Schlüssel enthalten sein sollen.
+   - **Hashalgorithmus** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Wählen Sie einen der verfügbaren Hashalgorithmustypen, der für dieses Zertifikat verwendet werden soll. Wählen Sie die höchste Sicherheitsebene aus, die die verbundenen Geräten unterstützen.
+   - **Stammzertifikat**: Wählen Sie ein Profil für das Zertifikat der Stammzertifizierungsstelle aus, das Sie zuvor konfiguriert und dem Benutzer und/oder dem Gerät zugewiesen haben. Dieses Zertifizierungsstellenzertifikat muss das Stammzertifikat für die Zertifizierungsstelle sein, die das Zertifikat ausstellt, das Sie in diesem Zertifikatprofil konfigurieren. Vergewissern Sie sich, dass Sie dieses Profil für das vertrauenswürdige Stammzertifikat der Gruppe zuweisen, die auch dem SCEP-Zertifikatprofil zugewiesen ist.
+   - **Erweiterte Schlüsselverwendung**: Hier können Sie Werte für den beabsichtigten Zweck des Zertifikats **hinzufügen**. In den meisten Fällen erfordert das Zertifikat **Clientauthentifizierung**, damit der Benutzer bzw. das Gerät auf einem Server authentifiziert werden kann. Sie können jedoch nach Bedarf weitere Schlüsselverwendungen hinzufügen.
    - **Registrierungseinstellungen**
-     - **Erneuerungsschwellenwert (%):** Geben Sie den Prozentsatz der Zertifikatgültigkeitsdauer an, die verbleibt, bevor das Gerät eine Erneuerung des Zertifikats anfordert.
-     - **SCEP-Server-URLs:** Geben Sie eine oder mehrere URLs für die NDES-Server ein, die Zertifikate über SCEP ausstellen.
+     - **Verlängerungsschwellenwert (%)**: Geben Sie den Prozentsatz der Zertifikatgültigkeitsdauer an, die verbleibt, bevor das Gerät eine Verlängerung des Zertifikats anfordert.
+     - **SCEP-Server-URLs**: Geben Sie mindestens eine URL für die NDES-Server ein, die Zertifikate über SCEP ausstellen. Geben Sie zum Beispiel `https://ndes.contoso.com/certsrv/mscep/mscep.dll` ein.
      - Klicken Sie auf **OK**, und **erstellen** Sie Ihr Profil.
 
 Das Profil wird erstellt und im Bereich „Profilliste“ angezeigt.

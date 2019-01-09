@@ -1,7 +1,7 @@
 ---
 title: Endpunkt der Intune Data Warehouse-API
 titlesuffix: Microsoft Intune
-description: Das Referenzthema beschreibt die URL-Struktur der Intune Data Warehouse-API.
+description: Dieses Referenzthema beschreibt die URL-Struktur der Microsoft Intune-Data Warehouse-API. Es werden Beispiele für Filter bereitgestellt.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d819656b59f1f1ceffa1e19645bddc0e8427ad8c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 58a78cee51a411c940d4510cd8498994c14129f0
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180594"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642743"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Endpunkt der Intune Data Warehouse-API
 

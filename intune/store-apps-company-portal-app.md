@@ -1,12 +1,12 @@
 ---
 title: Manuelles Hinzufügen der Windows 10-Unternehmensportal-App
 titleSuffix: Microsoft Intune
-description: Erfahren Sie, wie Sie die Windows 10-Unternehmensportal-App manuell hinzufügen.
+description: Erfahren Sie, wie Ihre Mitarbeiter die Windows 10-Unternehmensportal-App manuell aus dem Microsoft Store zu ihrem PC hinzufügen können.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7808d9c189f429e15cdf916d18412ba951c7e696
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190267"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642590"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Manuelles Hinzufügen der Windows 10-Unternehmensportal-App mithilfe von Microsoft Intune
 
@@ -51,7 +51,7 @@ Benutzer können die Unternehmensportal-App selbst über den Microsoft Store ins
 
 7. Laden Sie alle Pakete unter „Required Frameworks“ (Erforderliche Frameworks) herunter, indem Sie auf **Download** (Herunterladen) klicken.  
     Diese Aktion muss für die x86-, x64- und ARM-Architektur ausgeführt werden. Dadurch ergeben sich insgesamt 12 Pakete.
-8. Erstellen Sie einen Ordner (beispielsweise „C:\Company Portal“), bevor Sie die Unternehmensportal-App in Intune hochladen, und strukturieren Sie die Pakete wie folgt:
+8. Bevor Sie die Unternehmensportal-App nach Intune hochladen, erstellen Sie einen Ordner (z.B.: C:\Unternehmensportal), und strukturieren Sie die Pakete folgendermaßen:
    - Platzieren Sie das Unternehmensportal-Paket im Ordner „C:\Company Portal“. Erstellen Sie dort auch einen Unterordner mit dem Namen *Dependencies*.  
 
      ![Ordner „Dependencies“ und APPXBUN-Datei](./media/Win10CP-Dependencies-save.png)

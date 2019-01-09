@@ -1,12 +1,12 @@
 ---
 title: Zuweisen von Apps zu Gruppen in Microsoft Intune
 titlesuffix: ''
-description: Informationen zum Zuweisen einer Intune-App zu Gruppen von Benutzern oder Geräten.
+description: Erfahren Sie, wie Sie eine Intune-App mithilfe von Microsoft Intune einer Gruppe von Benutzern oder Geräten zuweisen.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
-ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
+ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52267253"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734271"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Zuweisen von Apps zu Gruppen mit Microsoft Intune
 
@@ -29,20 +29,22 @@ ms.locfileid: "52267253"
 
 Nachdem Sie Microsoft Intune [eine App hinzugefügt](apps-add.md) haben, können Sie diese Benutzern und Geräten zuweisen. Beachten Sie: Sie können eine App einem Gerät unabhängig davon zuweisen, ob das Gerät von Intune verwaltet wird. 
 
+> [!NOTE]
+> Die Absicht „Verfügbare Bereitstellung“ wird nur für Benutzergruppen unterstützt, nicht für Gerätegruppen.
+
 In der folgenden Tabelle werden die verschiedenen Optionen für die Zuweisung von Apps zu Benutzern und Geräten erläutert:
 
-||||
-|-|-|-|-|
-|&nbsp;|**Bei Intune registrierte Geräte**|**Nicht bei Intune registrierte Geräte**|
-|Zuweisen zu Benutzern|Ja |Ja |
-|Zuweisen zu Geräten|Ja |Nein|
-|Zuweisen von umschlossenen Apps oder Apps, die das Intune SDK enthalten (für App-Schutzrichtlinien)|Ja |Ja |
-|Zuweisen von Apps als verfügbar|Ja |Ja |
-|Zuweisen von Apps als erforderlich|Ja |Nein|
-|Deinstallieren von Apps|Ja |Nein|
-|Erhalten von App-Updates von Intune|Ja |Nein|
-|Endbenutzer installieren verfügbare Apps über die Unternehmensportal-App|Ja |Nein|
-|Endbenutzer installieren verfügbare Apps über das webbasierte Unternehmensportal|Ja |Ja |
+|   | Bei Intune registrierte Geräte | Nicht bei Intune registrierte Geräte |
+|-------------------------------------------------------------------------------------------|------------------------------|----------------------------------|
+| Zuweisen zu Benutzern | Ja  | Ja  |
+| Zuweisen zu Geräten | Ja  | Nein |
+| Zuweisen von umschlossenen Apps oder Apps, die das Intune SDK enthalten (für App-Schutzrichtlinien) | Ja  | Ja  |
+| Zuweisen von Apps als verfügbar | Ja  | Ja  |
+| Zuweisen von Apps als erforderlich | Ja  | Nein |
+| Deinstallieren von Apps | Ja  | Nein |
+| Erhalten von App-Updates von Intune | Ja  | Nein |
+| Endbenutzer installieren verfügbare Apps über die Unternehmensportal-App | Ja  | Nein |
+| Endbenutzer installieren verfügbare Apps über das webbasierte Unternehmensportal | Ja  | Ja  |
 
 > [!NOTE]
 > Derzeit können Sie iOS- und Android-Apps (Branchen-Apps und Apps aus dem Store) Geräten zuweisen, die nicht bei Intune registriert sind.
@@ -59,15 +61,15 @@ In der folgenden Tabelle werden die verschiedenen Optionen für die Zuweisung vo
 6. Wählen Sie im Abschnitt **Verwalten** des Menüs **Zuweisungen** aus.
 7. Wählen Sie **Gruppe hinzufügen** aus, um den Bereich **Gruppe hinzufügen** zu öffnen, der mit der App verknüpft ist.
 8. Wählen Sie für die bestimmte App einen **Zuweisungstyp** aus:
-   - **Für registrierte Geräte verfügbar**: Weisen Sie die App einer Gruppe von Benutzern zu, die die App über die Unternehmensportal-App oder -Website installieren können.
-   - **Verfügbar mit oder ohne Registrierung**: Weisen Sie diese App Benutzergruppen zu, deren Geräte nicht bei Intune registriert sind. Apps von Managed Google Play unterstützen diese Option nicht. 
-   - **Erforderlich**: Die App wird auf Geräten in den ausgewählten Gruppen installiert.
-   - **Deinstallieren**: Die App wird auf Geräten in den ausgewählten Gruppen deinstalliert.
+   - **Für registrierte Geräte verfügbar**: Weisen Sie die App Gruppen von Benutzern zu, die die App über die Unternehmensportal-App oder -Website installieren können.
+   - **Verfügbar mit oder ohne Registrierung**: Weisen Sie diese App Gruppen von Benutzern zu, deren Geräte nicht bei Intune registriert sind. Apps von Managed Google Play unterstützen diese Option nicht. Benutzern muss eine Intune-Lizenz zugewiesen sein. Weitere Informationen finden Sie unter [Intune-Lizenzen](licenses.md).
+   - **Erforderlich**: Die App wird auf Geräten in den ausgewählten Gruppen installiert. Auf einigen Plattformen muss der Endbenutzer möglicherweise weitere Eingabeaufforderungen bestätigen, bevor die App-Installation startet.
+   - **Deinstallieren**: Die App wird auf Geräten in den ausgewählten Gruppen deinstalliert, wenn Intune die App zuvor über eine Zuweisung vom Typ „Für registrierte Geräte verfügbar“ oder „Erforderlich“ in der gleichen Bereitstellung auf dem Gerät installiert hat. Weblinks können nach der Bereitstellung nicht entfernt werden.
 
      > [!NOTE]
-     > **Nur für iOS-Apps**: Wenn Sie ein iOS-VPN-Profil erstellt haben, das Pro-App-VPN-Einstellungen enthält, können Sie es unter **VPN** auswählen. Wenn die App ausgeführt wird, wird die VPN-Verbindung geöffnet. Weitere Informationen finden Sie unter [VPN-Einstellungen für iOS-Geräte](vpn-settings-ios.md).
+     > **Nur für iOS-Apps**: Wenn Sie ein iOS-VPN-Profil erstellt haben, das VPN-Einstellungen pro App enthält, können Sie dieses unter **VPN** auswählen. Wenn die App ausgeführt wird, wird die VPN-Verbindung geöffnet. Weitere Informationen finden Sie unter [VPN-Einstellungen für iOS-Geräte](vpn-settings-ios.md).
      >
-     > **Nur für Android-Apps:** Wenn Sie eine Android-App als **Available with or without enrollment** (Mit und ohne Registrierung verfügbar) bereitstellen, ist der Berichtsstatus nur auf registrierten Geräten verfügbar.
+     > **Nur für Android-Apps**: Wenn Sie eine Android-App als **Verfügbar mit oder ohne Registrierung** bereitstellen, ist der Berichtsstatus nur auf registrierten Geräten verfügbar.
 
 9. Um die Benutzergruppen auszuwählen, denen diese App zugewiesen werden soll, wählen Sie **Eingeschlossene Gruppen** aus.
 10. Wenn Sie mindestens eine Gruppe ausgewählt haben, die eingeschlossen werden soll, wählen Sie **Auswählen** aus.
@@ -83,9 +85,8 @@ Die App wird jetzt den von Ihnen ausgewählten Gruppen zugewiesen. Weitere Infor
 
 In manchen Fällen wird die gleiche App mehreren Gruppen zugewiesen, jedoch mit unterschiedlichen Absichten. Verwenden Sie in diesen Fällen diese Tabelle, um die sich ergebende Absicht zu verstehen:
 
-||||
-|-|-|-|
-|**Absicht Gruppe 1**|**Absicht Gruppe 2**|**Resultierende Absicht**|
+| Absicht Gruppe 1 | Absicht Gruppe 2 | Resultierende Absicht |
+|-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Erforderlicher Benutzer|Verfügbarer Benutzer|Erforderlich und Verfügbar|
 |Erforderlicher Benutzer|Benutzer nicht verfügbar|Erforderlich|
 |Erforderlicher Benutzer|Benutzerdeinstallation|Erforderlich|

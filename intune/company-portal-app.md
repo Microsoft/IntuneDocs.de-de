@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e1d645de0dfa9c215a9670246f43375de5153286
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185422"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738017"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 
@@ -72,7 +72,7 @@ Wenden Sie ein Farbdesign auf das Unternehmensportal an. Wählen Sie eine Standa
 |**Select a standard color or enter a six-digit hex code** (Standardfarbe auswählen oder sechsstelligen Hexadezimalcode eingeben)| Wählen Sie **Standard** aus, um eine angezeigte Farbe auszuwählen. Wählen Sie **Benutzerdefiniert** aus, um eine bestimmte Farbe anhand eines Hexadezimalcodes auszuwählen.|
 |**Choose theme color** (Farbdesign auswählen)| Wählen Sie ein Farbdesign aus, das auf das Unternehmensportal angewendet werden soll. Sie können aus einer Standardfarbe auswählen oder einen bestimmten Hexadezimalcode angeben. |
 |**Anzeige**| Wählen Sie aus, ob **Unternehmenslogo und -name**, **nur das Unternehmenslogo** oder **nur der Unternehmensname** angezeigt werden soll. |
-|**Upload your company logo** (Firmenlogo hochladen)|Sie können Ihr Unternehmenslogo hochladen, damit es im Unternehmensportal angezeigt wird. Beachten Sie, dass die Textfarbe automatisch auf die Option mit dem höchsten Kontrast festgelegt wird. Für die optimale Darstellung laden Sie ein Logo mit transparentem Hintergrund hoch.<p><ul><li>Maximale Bildgröße: 400 px × 400 px</li><li>Maximale Dateigröße: 750 KB</li><li>Dateityp: PNG, JPG oder JPEG</li></ul>|
+|**Upload your company logo** (Firmenlogo hochladen)|Sie können Ihr Unternehmenslogo hochladen, damit es im Unternehmensportal angezeigt wird. Beachten Sie, dass die Textfarbe automatisch auf die Option mit dem höchsten Kontrast festgelegt wird. Für die optimale Darstellung laden Sie ein Logo mit transparentem Hintergrund hoch.<p><ul><li>Maximale Bildgröße: 400 x 400 px</li><li>Maximale Dateigröße: 750 KB</li><li>Dateityp: PNG, JPG oder JPEG</li></ul>|
 
 Nachdem Sie das Logo hochgeladen haben, wird das Logo mit dem Farbdesign im Vorschaubereich angezeigt. Wenn Sie den Unternehmensnamen anzeigen möchten, wird dieser in schwarz oder weiß im Unternehmensportal angezeigt. Die Farbe wird anhand des höchsten Kontrasts zur Designfarbe automatisch ausgewählt. Der Unternehmensname wird nicht im Vorschaubereich angezeigt. 
 
@@ -81,7 +81,7 @@ Wählen Sie ein Logo aus, das auf weißen oder hellen Hintergründen am besten a
 
 |Feldname|Weitere Informationen|
 |---|---|
-|**Upload your logo** (Logo hochladen)| Diese Option ist verfügbar, wenn Sie ausgewählt haben, dass das Firmenlogo angezeigt werden soll. Für die optimale Darstellung laden Sie ein Logo mit transparentem Hintergrund hoch.<p><ul><li>Maximale Bildgröße: 400 px × 400 px</li><li>Maximale Dateigröße: 750 KB</li><li>Dateityp: PNG, JPG oder JPEG</li></ul>|
+|**Upload your logo** (Logo hochladen)| Diese Option ist verfügbar, wenn Sie ausgewählt haben, dass das Firmenlogo angezeigt werden soll. Für die optimale Darstellung laden Sie ein Logo mit transparentem Hintergrund hoch.<p><ul><li>Maximale Bildgröße: 400 x 400 px</li><li>Maximale Dateigröße: 750 KB</li><li>Dateityp: PNG, JPG oder JPEG</li></ul>|
 
 ### <a name="brand-image-for-company-portal"></a>Markenbild für das Unternehmensportal
 
@@ -125,7 +125,7 @@ Die folgenden Tastenkombinationen stehen Ihnen in der Windows-Unternehmensportal
 |  | Startseite | ALT+H |
 |  | Alle Apps | ALT+A |
 |  | Installierte Apps | ALT+I |
-|  | Feedback senden | ALT+F |
+|  | Senden von Feedback | ALT+F |
 |  | Mein Profil | ALT+U |
 |  | Einstellung | ALT+T |
 | Start – Gerätekachel | Umbenennen | F2 |
@@ -138,7 +138,7 @@ Die folgenden Tastenkombinationen stehen Ihnen in der Windows-Unternehmensportal
 
 Endbenutzer können zudem die verfügbaren Tastenkombinationen in der Windows-Unternehmensportal-App einsehen.
 
-![Screenshot der verfügbaren Tastenkombinationen in der Windows-Unternehmensportal-App](media/company-portal-app/company-portal-app-01.png)
+![Screenshot der verfügbaren Tastenkombinationen im Windows-Unternehmensportal](media/company-portal-app/company-portal-app-01.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

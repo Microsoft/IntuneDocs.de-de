@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/20/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 827766d76a66ea7d69ebbd3ba77efe785689e7e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189179"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737915"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Schnellstart: Testen Sie Microsoft Intune kostenlos 
 
@@ -50,7 +50,7 @@ Sie können Intune 30 Tage lang kostenlos testen. Wenn Sie bereits über ein Arb
 
 2. Erstellen Sie ein Konto mit dem Namen Ihres Unternehmens gefolgt von **.onmicrosoft.com**. 
 
-    ![Screenshot der Website für die Registrierung für das Microsoft Intune-Testkonto](./media/account-sign-up-site-user-id.png)
+    ![Screenshot des Prozesses für neue Anmeldeinformationen für das Microsoft Intune-Testkonto](./media/account-sign-up-site-user-id.png)
 
     Wenn Ihre Organisation über eine eigene benutzerdefinierte Domäne verfügt, die Sie ohne **.onmicrosoft.com** verwenden möchten, können Sie diese über das Verwaltungsportal von Microsoft Office 365 ändern. Näheres hierzu wird später in diesem Artikel erläutert.
 
@@ -106,13 +106,13 @@ Wie vorstehend erwähnt, können Sie eine benutzerdefinierte Domäne über das V
 
 3. Geben Sie den Namen Ihrer benutzerdefinierten Domäne ein. Wählen Sie anschließend **Weiter** aus.
 
-   ![Screenshot des Office 365 Admin Center, bei dem „Einstellungen“ > „Domänen“ ausgewählt wurde und ein neuer Domänenname hinzugefügt wird](./media/domain-custom-add.png)
+   ![Screenshot von Office 365 Admin Center: Domäne hinzufügen](./media/domain-custom-add.png)
 
 4. Überprüfen Sie, ob Sie Besitzer der im vorherigen Schritt eingegebenen Domäne sind. 
     
     Durch das Auswählen von **Send Code via Email** (Code per E-Mail senden) wird an den registrierten Kontakt Ihrer Domäne eine E-Mail gesendet. Kopieren Sie nach dem Empfang der E-Mail den Code, und geben Sie diesen in das Feld **Type your verification code here** (Geben Sie Ihren Prüfcode hier ein) ein. Stimmt der Prüfcode überein, wird die Domäne zu Ihrem Mandanten hinzugefügt. Die angezeigte E-Mail kommt Ihnen möglicherweise nicht bekannt vor. Einige Registrierungsstellen blenden die tatsächliche E-Mail-Adresse aus, die bei der Registrierung der Domäne angegeben wurde.
 
-   ![Screenshot des Office 365 Admin Center: Überprüfen des hinzugefügten Domänennamens](./media/domain-custom-verify.png)
+   ![Screenshot von Office 365 Admin Center: Domäne überprüfen](./media/domain-custom-verify.png)
 
    > [!NOTE]
    > Einzelheiten zur Überprüfung von TXT-Datensätzen finden Sie unter [Erstellen von DNS-Datensätzen bei jedem DNS-Hostinganbieter für Office 365](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
