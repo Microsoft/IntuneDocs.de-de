@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/06/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 59e9af2449f384fce22acaef9a696f2944eabaa1
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737915"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067430"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Schnellstart: Testen Sie Microsoft Intune kostenlos 
 
@@ -50,7 +50,7 @@ Sie können Intune 30 Tage lang kostenlos testen. Wenn Sie bereits über ein Arb
 
 2. Erstellen Sie ein Konto mit dem Namen Ihres Unternehmens gefolgt von **.onmicrosoft.com**. 
 
-    ![Screenshot des Prozesses für neue Anmeldeinformationen für das Microsoft Intune-Testkonto](./media/account-sign-up-site-user-id.png)
+    ![Screenshot des Prozesses für neue Anmeldeinformationen für das Intune-Testkonto](./media/account-sign-up-site-user-id.png)
 
     Wenn Ihre Organisation über eine eigene benutzerdefinierte Domäne verfügt, die Sie ohne **.onmicrosoft.com** verwenden möchten, können Sie diese über das Verwaltungsportal von Microsoft Office 365 ändern. Näheres hierzu wird später in diesem Artikel erläutert.
 

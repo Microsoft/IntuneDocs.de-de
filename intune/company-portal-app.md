@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 6d9d6cb1eccd91e7832a9456504c36cb983b4810
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738017"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817380"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 
@@ -89,7 +89,7 @@ Zeigen Sie ein Markenbild an, das Ihre Unternehmensmarke widerspiegelt. Nachdem 
 
 |Feldname|Weitere Informationen|
 |---|---|
-|**Upload your brand image** (Markenbild hochladen)| Mit dieser Option können Sie ein Hintergrundbild auf der Benutzerprofilseite in der Unternehmensportal-App anzeigen.<p>*Hinweis*: Das Bild wird auf verschiedenen Plattformen möglicherweise unterschiedlich dargestellt.<p><ul><li>Empfohlene Bildbreite: Breiter als 1125 px, aber nicht weniger als 640 px</li><li>Maximale Bildgröße: 1,3 MB</li><li>Dateityp: PNG, JPG oder JPEG</li></ul>|
+|**Upload your brand image** (Markenbild hochladen)| Mit dieser Option können Sie ein Hintergrundbild auf der Benutzerprofilseite in der Unternehmensportal-App anzeigen.<p>*Hinweis*: Das Bild wird auf verschiedenen Plattformen möglicherweise unterschiedlich dargestellt.<p><ul><li>Empfohlene Bildbreite: Weniger als 1125 px, aber nicht weniger als 640 px</li><li>Maximale Bildgröße: 1,3 MB</li><li>Dateityp: PNG, JPG oder JPEG</li></ul>|
 
 Mit einem richtigen Markenbild kann das Vertrauen von Benutzern in das Unternehmensportal gesteigert werden, indem die Identität des Unternehmens aussagekräftig dargestellt wird. Im Folgenden finden Sie einige Tipps, die Sie beim Erwerben, Auswählen und Optimieren des Bilds für das Unternehmensportal beachten sollten. 
 

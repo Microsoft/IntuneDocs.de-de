@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429711"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067447"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Erstellen eines Berichts aus dem OData-Feed mit Power BI
 
@@ -61,7 +61,7 @@ Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI 
 7. Fügen Sie die benutzerdefinierte Feed-URL in das URL-Feld im Fenster **OData-Feed** ein.
 8. Wählen Sie **Basic** aus.
 
-    ![OData-Feed](media/reports-create-01-odatafeed.png)
+    ![OData-Feed für Intune Data Warehouse für Ihren Mandanten](media/reports-create-01-odatafeed.png)
 
 9. Wählen Sie **OK** aus.
 10. Wählen Sie **Organisationskonto** aus, und melden Sie sich anschließend mit Ihren Anmeldeinformationen für Intune an.
@@ -70,7 +70,7 @@ Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI 
 
 11. Wählen Sie **Verbinden** aus. Der Navigator öffnet sich und zeigt Ihnen eine Liste mit Tabelle im Intune Data Warehouse an.
 
-    ![Der Navigator](media/reports-create-02-loadentities.png)
+    ![Screenshot des Navigators mit der Liste der Data Warehouse-Tabellen](media/reports-create-02-loadentities.png)
 
 12. Wählen Sie die **Geräte** und die **OwnerTypes**-Tabellen aus.  Wählen Sie **Laden** aus. Power BI lädt die Daten in das Modell.
 
@@ -78,7 +78,7 @@ Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI 
 
 Sie können mehrerer Tabellen importieren, um nicht nur die Daten in einer einzigen Tabelle zu analysieren, sondern auch tabellenübergreifende Daten.  In Power BI gibt es eine Funktion, die **Autodetect** genannt wird und Beziehungen findet sowie erstellt. Die Tabellen im Data Warehouse wurden so konzipiert, dass sie mit der Autodetect-Funktion von Power BI kompatibel sind. Auch wenn Power BI die Beziehungen nicht automatisch finden sollte, verwalten Sie sie trotzdem.
 
-![Verwalten von Beziehungen](media/reports-create-03-managerelationships.png)
+![Tabellenübergreifendes Verwalten von Beziehungen verwandter Daten](media/reports-create-03-managerelationships.png)
 
 1. Wählen Sie **Beziehungen verwalten** aus.
 2. Wählen Sie **Autodetect...** aus, wenn Power BI die Beziehungen noch nicht erkannt hat.
@@ -99,7 +99,7 @@ In einem Treemap-Diagramm werden hierarchische Daten als Felder in Feldern angez
 
 Jetzt verfügen Sie über eine Visualisierung der Verteilung von Herstellern und Geräten innerhalb Ihrer Organisation.
 
-![Treemap mit Daten](media/reports-create-06-treemapwdata.png)
+![Treemap mit Daten: Verteilung der Gerätehersteller](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>Hinzufügen eines Filters
 
@@ -111,7 +111,7 @@ Sie können Ihrer Treemap einen Filter hinzufügen, damit Sie mithilfe Ihrer App
 
    In der Gerätetabelle gibt es ein Datenfeld mit der Bezeichnung **OwnerTypeKey**, das einen Code enthält, der darauf hinweist, ob ein Gerät Eigentum eines Unternehmens oder einer Privatperson ist. Da Sie Anzeigenamen in diesem Filter anzeigen wollen, suchen Sie nach der Tabelle **ownerTypes**, und ziehen Sie den **ownerTypeName** dorthin. Das folgende Beispiel zeigt, wie das Datenmodell Beziehungen zwischen den Tabellen unterstützt.
 
-![Treemap mit Filter](media/reports-create-08_ownertype.png)
+![Treemap mit Filter: Unterstützung von Beziehungen zwischen Tabellen](media/reports-create-08_ownertype.png)
 
 Nun verfügen Sie über einen interaktiven Filter, der zum Wechseln zwischen unternehmenseigenen und privaten Geräten verwendet werden kann. Mit diesem Filter können Sie Veränderungen in der Verteilung nachvollziehen.
 

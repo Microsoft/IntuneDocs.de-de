@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 05af4625c06975e4eb7b2566ce676c4610500bdf
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ef84a77961dafc1a881bdb54208fae602857ae32
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642472"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067464"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Was der grundlegende Schutz in verwalteten Office 365-Apps in Microsoft Intune beinhaltet umfasst.
 
@@ -82,7 +82,7 @@ In diesem Artikel wird OneDrive for Business als Beispiel verwendet, um die Benu
 >[!NOTE]
 >Beim nächsten Öffnen von OneDrive for Business werden Sie möglicherweise aufgefordert, eine PIN festzulegen, wenn die IT-Abteilung dies vorschreibt. Nachdem Sie die PIN festgelegt und bestätigt haben, können Sie OneDrive for Business weiter verwenden.
 
-![Abbildung der Aufforderung für die PIN](./media/pin-prompt-android.png)
+![Darstellung der Aufforderung zum Festlegen und Bestätigen der PIN](./media/pin-prompt-android.png)
 
 
 <!--- Original steps: 6. The next time you open OneDrive for Business, you may be asked to set a PIN, if your IT requires one to use the OneDrive for Business app. ART 7. After you set and confirm the PIN, you can continue on to OneDrive for Business. -->
@@ -102,14 +102,14 @@ In diesem Artikel wird OneDrive for Business als Beispiel verwendet, um die Benu
 |"Speichern unter" verhindern | Nein | Nein|
 |Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken | Jede App | Jede App |
 |Einschränken von anzuzeigenden Webinhalten in einem unternehmensverwalteten Browser | Nein| Nein|
-|App-Daten verschlüsseln | Wenn das Gerät gesperrt ist | Ja |
+|App-Daten verschlüsseln | Wenn das Gerät gesperrt ist | Ja|
 |Kontaktsynchronisierung deaktivieren | Nein| Nein|
 |Drucken deaktivieren | Nein | Nein|
-|PIN für Zugriff anfordern | Nein | Ja |
+|PIN für Zugriff anfordern | Nein | Ja|
 |Anzahl der Versuche vor dem Zurücksetzen der PIN | N/V |5|
-|Einfache PIN zulassen | N/V |Ja |
+|Einfache PIN zulassen | N/V |Ja|
 |PIN-Länge | N/V | 4|
-|Fingerabdruck anstelle von PIN zulassen | N/V | Ja  |
+|Fingerabdruck anstelle von PIN zulassen | N/V | Ja |
 |Unternehmensanmeldeinformationen für Zugriff erforderlich | Nein | Nein|
 |Blockieren der Ausführung von verwalteten Apps auf per Jailbreak oder Rooting manipulierten Geräten | Nein | Nein|
 |Zugriffsanforderungen nach (Minuten) erneut überprüfen – Timeout | 30 | 30|
