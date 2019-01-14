@@ -374,9 +374,11 @@ items:
   - name: Konfigurieren von Geräten
     href: device-profiles.md
     items:
-    - name: Konfigurieren von Geräteprofilen
+    - name: Geräteprofile
       href: device-profile-create.md
-    - name: Konfigurieren von Gerätefunktionen
+    - name: Administrative Vorlagen
+      href: administrative-templates-windows.md
+    - name: Gerätefeatures für iOS und macOS
       href: device-features-configure.md
       items:
       - name: AirPrint für iOS und macOS
@@ -387,13 +389,13 @@ items:
         href: home-screen-settings-ios.md
       - name: App-Benachrichtigungen für iOS
         href: app-notification-settings-ios.md
-      - name: Freigegebene Geräte für iOS
+      - name: Sperrbildschirmnachricht für iOS
         href: shared-device-settings-ios.md
       - name: Konfigurieren von Intune für einmaliges Anmelden von iOS-Geräten
         href: sso-ios.md
       - name: Webfiltereinstellungen für iOS
         href: web-content-filter-settings-ios.md
-    - name: Konfigurieren von Geräteeinschränkungen
+    - name: Geräteeinschränkungen
       href: device-restrictions-configure.md
       items:
       - name: Android
@@ -416,18 +418,18 @@ items:
         href: device-restrictions-windows-holographic.md
     - name: Übermittlungsoptimierung
       href: delivery-optimization-windows.md
-    - name: Konfigurieren von Endpoint Protection
+    - name: Endpoint Protection
       href: endpoint-protection-configure.md
       items:
       - name: macOS
         href: endpoint-protection-macos.md
       - name: Windows 10
         href: endpoint-protection-windows-10.md
-    - name: Konfiguration von Identity Protection
+    - name: Schutz der Identität
       href: identity-protection-configure.md
     - name: Windows 10-Kioskeinstellungen
       href: kiosk-settings.md
-    - name: Konfigurieren von E-Mail-Einstellungen
+    - name: E-Mail-Einstellungen
       href: email-settings-configure.md
       items:
       - name: Android
@@ -438,7 +440,7 @@ items:
         href: email-settings-windows-phone-8-1.md
       - name: Windows 10
         href: email-settings-windows-10.md
-    - name: Konfigurieren von VPN-Einstellungen
+    - name: VPN-Einstellungen
       href: vpn-settings-configure.md
       items:
       - name: Android
@@ -455,7 +457,7 @@ items:
         href: vpn-settings-windows-phone-8-1.md
       - name: Windows 10
         href: vpn-settings-windows-10.md
-    - name: Konfigurieren von WLAN-Einstellungen
+    - name: WLAN-Einstellungen
       href: wi-fi-settings-configure.md
       items:
       - name: Android
@@ -470,7 +472,7 @@ items:
         href: wi-fi-settings-windows.md
       - name: Windows 8.1
         href: wi-fi-settings-import-windows-8-1.md
-    - name: Konfigurieren von eSIM-Mobilfunkprofilen
+    - name: eSIM-Mobilfunkprofile
       href: esim-device-configuration.md
     - name: Education
       items:
@@ -478,27 +480,34 @@ items:
         href: education-settings-configure-ios-shared.md
       - name: Windows 10
         href: education-settings-configure.md
-    - name: Konfigurieren der Einstellungen des Windows 10-Editionsupgrades
+    - name: Einstellungen für Windows 10-Editionsupgrades
       href: edition-upgrade-configure-windows-10.md
-    - name: Konfigurieren von iOS-Updaterichtlinien
+    - name: iOS-Updaterichtlinien
       href: software-updates-ios.md
-    - name: Konfigurieren von Zertifikaten
+    - name: Zertifikate
       href: certificates-configure.md
       items:
       - name: SCEP
         href: certificates-scep-configure.md
       - name: PKCS
         href: certficates-pfx-configure.md
-      - name: Verwenden von S/MIME zum Verschlüsseln von E-Mails
+      - name: S/MIME zum Verschlüsseln von E-Mails
         href: certificates-s-mime-encryption-sign.md
-      - name: Verwenden einer Drittanbieter-Zertifizierungsstelle mit SCEP
+      - name: Drittanbieterzertifizierungsstellen mit SCEP
         href: certificate-authority-add-scep-overview.md
       - name: Symantec PKI Manager Web Service
         href: certificates-symantec-configure.md
       - name: Entfernen von SCEP- oder PKCS-Zertifikaten
         href: remove-certificates.md
-    - name: Konfigurieren der Windows Information Protection-Einstellungen
+    - name: Windows Information Protection-Einstellungen
       href: windows-information-protection-configure.md
+    - name: Von mehren Benutzern gemeinsam verwendete Geräte
+      href: shared-user-device-settings.md
+      items:
+      - name: Windows 10
+        href: shared-user-device-settings-windows.md
+      - name: Windows Holographic for Business
+        href: shared-user-device-settings-windows-holographic.md
     - name: Verwalten von PowerShell-Skripts
       href: intune-management-extension.md
     - name: Überwachen der Telekommunikationsausgaben
@@ -512,17 +521,17 @@ items:
   - name: Gerätekompatibilität festlegen
     href: device-compliance-get-started.md
     items:
-    - name: Erstellen einer Android-Richtlinie
+    - name: Android-Richtlinie
       href: compliance-policy-create-android.md
-    - name: Erstellen einer Android Enterprise-Profilrichtlinie
+    - name: Android Enterprise-Profilrichtlinie
       href: compliance-policy-create-android-for-work.md
-    - name: Erstellen einer Richtlinie zum Aktivieren von Google Play Protect
+    - name: Aktivieren von Google Play Protect
       href: compliance-policy-create-google-play-protect.md
-    - name: Erstellen einer iOS-Richtlinie
+    - name: iOS-Richtlinie
       href: compliance-policy-create-ios.md
-    - name: Erstellen einer macOS-Richtlinie
+    - name: macOS-Richtlinie
       href: compliance-policy-create-mac-os.md
-    - name: Erstellen einer Windows-Richtlinie
+    - name: Windows-Richtlinie
       href: compliance-policy-create-windows.md
     - name: Standortbasierte Richtlinie
       href: use-network-locations.md
@@ -693,6 +702,10 @@ items:
         href: custom-settings-windows-holographic.md
       - name: Windows Phone 8.1
         href: custom-settings-windows-phone-8-1.md
+- name: Hilfe und Support
+  items:
+  - name: Mandantenstatus
+    href: tenant-status.md
 - name: Anleitung für Entwickler
   items:
   - name: API zum Hinzufügen einer Drittanbieter-Zertifizierungsstelle
@@ -841,9 +854,9 @@ items:
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: Lösen von Richtlinienkonflikten
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-ms.openlocfilehash: ada41d711516760e9d928c78968b0a24d719d783
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.openlocfilehash: 1f17ae67e609e9836c29f6afd810bbea5ece99b4
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325047"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203585"

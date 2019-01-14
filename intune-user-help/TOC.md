@@ -130,6 +130,7 @@
 ### [Was geschieht, wenn Sie Ihr Gerät zurücksetzen?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Manuelles Synchronisieren des Geräts](sync-your-device-manually-windows.md)
+### [Anfordern von Hilfe und Support](help-support-windows-cpapp.md)
 
 ### [Behandeln häufig auftretender Probleme für Windows](troubleshoot-your-device-windows.md)
 #### [Auflösen von Einschränkungen eines Zugriffspunkts](resolve-access-point-restrictions.md)
