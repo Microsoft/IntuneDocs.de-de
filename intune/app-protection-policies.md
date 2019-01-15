@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11//28/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 35fd4650d5508995f879f4d83030f70fe9c550b8
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728819"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817363"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Erstellen und Zuweisen von App-Schutzrichtlinien
 
@@ -72,11 +72,11 @@ Neu erstellte Richtlinien werden erst auf die Benutzer angewendet, wenn Sie sie 
 
 2. Wählen Sie im Bereich ***Intune-App-Schutz** die Option **Zuweisungen** aus, um den Bereich **Intune-App-Schutz – Zuweisungen** zu öffnen. Klicken Sie auf der Registerkarte *Einschließen* auf **Einzuschließende Gruppen auswählen**. 
 
-   ![Screenshot des Bereichs „Zuweisungen“ mit Hervorhebung der Menüoption „Select groups to include“ (Einzuschließende Gruppen auswählen)](./media/app-protection-policy-add-users.png)
+   ![Screenshot des Bereichs „Zuweisungen“ mit dem Menü „Select groups to include“ (Einzuschließende Gruppen auswählen)](./media/app-protection-policy-add-users.png)
 
 3.  Es wird eine Liste aller Sicherheitsgruppen in Ihrem **Azure Active Directory**-Verzeichnis angezeigt. Wählen Sie die Benutzergruppen aus, auf die diese Richtlinie angewendet werden soll, und klicken Sie dann auf **Auswählen**. 
 
-    ![Screenshot des Bereichs „Benutzergruppe hinzufügen“ mit der Liste der Azure Active Directory-Benutzer](./media/azure-ad-user-group-list.png)
+    ![Screenshot des Bereichs „Add user group“ (Benutzergruppe hinzufügen) mit einer Liste der Azure AD-Benutzer](./media/azure-ad-user-group-list.png)
 
 4.  Wählen Sie nach dem Einschließen und Ausschließen von Gruppen **Speichern** zum Speichern der Konfiguration und Bereitstellen der Richtlinie für Benutzer aus. Wenn Sie **Verwerfen** auswählen, bevor Sie Ihre Konfiguration speichern, verwerfen Sie alle Änderungen, die Sie auf den Registerkarten *Einschließen* und *Ausschließen* vorgenommen haben.   
  
@@ -138,7 +138,7 @@ Da die App-Schutzrichtlinien von Intune an die Identität eines Benutzers gekopp
 
 Um diese Richtlinien zu erstellen, navigieren Sie in der Intune-Konsole zu **Client-Apps** > **App-Schutzrichtlinien**, und klicken Sie dann auf **Richtlinie hinzufügen**. Sie können auch eine vorhandene App-Schutzrichtlinie bearbeiten. Wenn die App-Schutzrichtlinie sowohl auf verwaltete als auch auf nicht verwaltete Geräte angewendet werden soll, bestätigen Sie, dass **Auf alle App-Typen ausrichten** auf den Standardwert **Ja** festgelegt ist. Wenn Sie eine feiner abgestufte Zuweisung basierend auf dem Verwaltungszustand durchführen möchten, legen Sie die Option **Auf alle App-Typen ausrichten** auf **Nein** fest. 
 
-![Screenshot vom Blatt „Richtlinie hinzufügen“ mit ausgewählter Option „Auf alle App-Typen ausrichten“](./media/app-protection-policies-target-all.png)
+![Screenshot vom Blatt „Richtlinie hinzufügen“ mit der Option „Auf alle App-Typen ausrichten“](./media/app-protection-policies-target-all.png)
 
 Für iOS sind zusätzliche App-Konfigurationseinstellungen erforderlich, um APP-Einstellungen für Apps auf bei Intune registrierten Geräten bereitzustellen:
 - **IntuneMAMUPN** muss für alle mit MDM verwalteten Anwendungen konfiguriert sein. Weitere Informationen finden Sie unter [Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).

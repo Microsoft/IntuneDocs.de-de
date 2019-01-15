@@ -1,12 +1,11 @@
 ---
-title: Einrichten Ihrer Lookout-Integration in Microsoft Intune
-titlesuffix: ''
+title: Einrichten der Lookout-Integration in Microsoft Intune | Microsoft Intune
 description: Informationen zum Integrieren von Lookout Mobile Threat Defense in Intune, um den Zugriff von mobilen Geräten auf Ihre Unternehmensressourcen zu steuern.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2017
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f0ff43e5a25a2f2d7d97564e638d01b014ab81cb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 84bc12d568fce0f5cd6e460595eedf0af0d6296e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181046"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816870"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Einrichten Ihrer Lookout Mobile Threat Defense-Integration mit Intune
 
@@ -57,7 +56,7 @@ Führen Sie die folgenden Schritte aus, um die Informationen zusammenzustellen, 
 
 3. Suchen Sie Ihre Azure AD-Gruppen-ID. Die Lookout-Konsole unterstützt zwei Zugriffsebenen:  
    * **Vollzugriff:** Der Azure AD-Administrator kann eine Gruppe für Benutzer erstellen, die Vollzugriff erhalten sollen, und optional eine Gruppe für Benutzer erstellen, die eingeschränkten Zugriff erhalten sollen.  Nur die Benutzer in diesen Gruppen können sich dann bei der **Lookout-Konsole** anmelden.
-   * **Eingeschränkter Zugriff:** Die Benutzer in dieser Gruppe haben keinen Zugriff auf verschiedene Module der Lookout-Konsole für die Konfiguration und Registrierung und schreibgeschützten Zugriff auf das Modul **Sicherheitsrichtlinie** der Lookout-Konsole.  
+   * **Eingeschränkter Zugriff:** Die Benutzer in dieser Gruppe verfügen nicht über Zugriff auf verschiedene Module der Lookout-Konsole für die Konfiguration und Registrierung, sie haben zudem schreibgeschützten Zugriff auf das Modul **Sicherheitsrichtlinie** der Lookout-Konsole.  
 
      > [!TIP] 
      > Weitere Details zu den Berechtigungen finden Sie in [diesem Artikel](https://personal.support.lookout.com/hc/articles/114094105653) auf der Lookout-Website.
@@ -77,11 +76,11 @@ Führen Sie die folgenden Schritte aus, um die Informationen zusammenzustellen, 
 
 3. Wählen Sie in der [Lookout-Konsole](https://aad.lookout.com) im Modul **System** die Registerkarte **Connectors** und dann **Intune** aus.
 
-   ![Screenshot der Lookout-Konsole mit geöffneter Registerkarte „Connectors“ und hervorgehobener Option „Intune“](./media/lookout_mtp_setup-intune-connector.png)
+   ![Darstellung der Lookout-Konsole mit der Intune-Option auf der Registerkarte „Connectors“](./media/lookout_mtp_setup-intune-connector.png)
 
 4. Wechseln Sie zu **Connectors** > **Verbindungseinstellungen**, und geben Sie die **Taktfrequenz** in Minuten an.
 
-   ![Screenshot der Registerkarte „Verbindungseinstellungen“ mit konfigurierter Taktfrequenz](./media/lookout-mtp-connection-settings.png)
+   ![Darstellung der Registerkarte „Verbindungseinstellungen“ mit konfigurierter Taktfrequenz](./media/lookout-mtp-connection-settings.png)
 
 ## <a name="configure-enrollment-groups"></a>Konfigurieren von Registrierungsgruppen
 1. Es ist eine bewährte Methode, eine Azure AD-Sicherheitsgruppe im [Azure AD-Verwaltungsportal](https://manage.windowsazure.com) mit einer geringen Anzahl von Benutzern zu erstellen, um die Lookout-Integration zu testen.
@@ -95,10 +94,10 @@ Führen Sie die folgenden Schritte aus, um die Informationen zusammenzustellen, 
 
     >[!IMPORTANT]
     > Beim **Anzeigenamen** muss die Groß- und Kleinschreibung beachtet werden, wie in den **Eigenschaften** der Sicherheitsgruppe im Azure-Portal dargestellt. Der **Anzeigename** der Sicherheitsgruppe wird wie in der folgenden Abbildung mit gemischter Groß-/Kleinschreibung angegeben, während der Titel kleingeschrieben wird. Verwenden Sie in der Lookout-Konsole für die Sicherheitsgruppe dieselbe Groß- und Kleinschreibung wie im **Anzeigenamen**.
-    >![Screenshot des Azure-Portals, Azure Active Directory-Dienst, Seite „Eigenschaften“](./media/aad-group-display-name.png)
+    >![Darstellung des Azure-Portals, des Azure Active Directory-Diensts und der Eigenschaftenseite](./media/aad-group-display-name.png)
 
     >[!NOTE] 
-    >Die bewährte Methode ist das Verwenden des Standardwerts (5 Minuten) für die Überprüfung auf neue Geräte. Aktuelle Einschränkungen: **Lookout kann Anzeigenamen von Gruppen nicht überprüfen:** Stellen Sie sicher, dass das Feld **ANZEIGENAME** im Azure-Portal genau mit der Azure AD-Sicherheitsgruppe übereinstimmt. **Das Erstellen geschachtelter Gruppen wird nicht unterstützt:** In Lookout verwendete Azure AD-Sicherheitsgruppen dürfen nur Benutzer enthalten. Sie dürfen keine anderen Gruppen umfassen.
+    >Die bewährte Methode ist das Verwenden des Standardwerts (5 Minuten) für die Überprüfung auf neue Geräte. Aufgrund der aktuellen Einschränkungen **kann Lookout keine Gruppenanzeigenamen überprüfen:** Stellen Sie sicher, dass das Feld **ANZEIGENAME** im Azure-Portal exakt mit der Azure AD-Sicherheitsgruppe übereinstimmt. **Das Erstellen von geschachtelten Gruppen wird nicht unterstützt:**  In Lookout verwendete Azure AD-Sicherheitsgruppen dürfen nur Benutzer enthalten. Sie dürfen keine anderen Gruppen umfassen.
 
 3.  Wenn ein Benutzer nach dem Hinzufügen einer Gruppe die Lookout for Work-App auf einem unterstützten Gerät öffnet, wird das Gerät in Lookout aktiviert.
 
@@ -115,7 +114,7 @@ Geben Sie in der Option **Fehlerverwaltung** die E-Mail-Adresse ein, an die die 
 ## <a name="configure-enrollment-settings"></a>Konfigurieren von Registrierungseinstellungen
 Geben Sie im Modul **System** auf der Seite **Connectors** die Anzahl von Tagen an, bevor ein Gerät als getrennt bezeichnet werden kann.  Nicht verbundene Geräte gelten als nicht kompatibel und der Zugriff auf Unternehmensanwendungen wird ihnen auf Grundlage der Intune-Richtlinien für den bedingten Zugriff verwehrt. Sie können Werte zwischen 1 und 90 Tagen angeben.
 
-![Lookout-Registrierungseinstellungen](./media/lookout-console-enrollment-settings.png)
+![Lookout-Registrierungseinstellungen im Systemmodul](./media/lookout-console-enrollment-settings.png)
 
 ## <a name="configure-email-notifications"></a>Konfigurieren von E-Mail-Benachrichtigungen
 Wenn Sie bei Bedrohungen Warnungen per E-Mail erhalten möchten, melden Sie sich bei der [Lookout-Konsole](https://aad.lookout.com) mit dem Benutzerkonto an, das die Benachrichtigungen erhalten soll. Wählen Sie im Modul **System** auf der Registerkarte **Einstellungen** die Bedrohungsstufen aus, für die Benachrichtigungen gesendet werden sollen, und legen Sie sie auf **EIN** fest. Speichern Sie die Änderungen.
@@ -123,7 +122,7 @@ Wenn Sie bei Bedrohungen Warnungen per E-Mail erhalten möchten, melden Sie sich
 ![Screenshot der Seite „Einstellungen“ mit angezeigtem Benutzerkonto](./media/lookout-mtp-email-notifications.png) Wenn Sie keine E-Mail-Benachrichtigungen mehr empfangen möchten, legen Sie die Benachrichtigungen auf **AUS** fest, und speichern Sie Ihre Änderungen.
 
 ### <a name="configure-threat-classification"></a>Konfigurieren der Bedrohungsklassifizierung
-Lookout Mobile Threat Defense klassifiziert verschiedene Typen von Bedrohungen für mobile Geräte. Den [Lookout-Bedrohungsklassifizierungen](http://personal.support.lookout.com/hc/articles/114094130693) sind Standardrisikostufen zugeordnet. Sie können diese jederzeit gemäß den Anforderungen Ihres Unternehmens ändern.
+Lookout Mobile Threat Defense klassifiziert verschiedene Typen von Bedrohungen für mobile Geräte. Den [Lookout-Bedrohungsklassifizierungen](https://personal.support.lookout.com/hc/articles/114094130693) sind Standardrisikostufen zugeordnet. Sie können diese jederzeit gemäß den Anforderungen Ihres Unternehmens ändern.
 
 ![Screenshot der Richtlinienseite mit Bedrohung und Klassifikationen](./media/lookout-mtp-threat-classification.png)
 

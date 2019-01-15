@@ -1,6 +1,5 @@
 ---
-title: Symantec-Connector mit Microsoft Intune
-titlesuffix: ''
+title: Symantec-Connector mit Microsoft Intune | Microsoft Intune
 description: Informationen zum Integrieren von Intune in Symantec Endpoint Protection Mobile, um den Zugriff mobiler Geräte auf Ihre Unternehmensressourcen zu steuern.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1503bdb9b62e7e9fb4b2d5a0482e058d6fed31f7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5ba90d47f13ac22465927fc5724a254f121c800e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187692"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817120"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile-Connector
 
@@ -67,11 +66,11 @@ Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie
 
 **Blockieren, wenn Apps mit Schadsoftware entdeckt werden:**
 
-![Apps mit Schadsoftware entdeckt](./media/symantec-arch-1.png)
+![Darstellung des Szenarios, wenn Apps mit Schadsoftware erkannt werden](./media/symantec-arch-1.png)
 
 **Zugriff nach Beseitigung gewährt:**
 
-![Zugriff nach Beseitigung von entdeckten Apps mit Schadsoftware gewährt](./media/symantec-arch-2.png)
+![Darstellung des gewährten Zugriffs nach Beseitigung von erkannten Apps mit Schadsoftware](./media/symantec-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Steuern des Zugriffs basierend auf der Bedrohung für das Netzwerk
 

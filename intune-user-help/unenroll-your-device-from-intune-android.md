@@ -1,11 +1,11 @@
 ---
 title: Entfernen der Registrierung Ihres Android-Geräts aus Intune | Microsoft-Dokumentation
-description: Beschreibt das Aufheben der Registrierung eines Android-Geräts bei Intune.
+description: Entfernen Ihres Android-Geräts aus dem Intune-Unternehmensportal
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d932005c955afed7f16e9766b559b77b2cd43182
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: 75b26e178badbaa7905199eb91490134d2b72ba9
+ms.sourcegitcommit: 61ed365f7f8826451c41bcab5e19bef97b5a3c72
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959484"
+ms.lasthandoff: 01/05/2019
+ms.locfileid: "54057337"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Aufheben der Registrierung Ihres Android-Geräts für die Verwaltung  
 
@@ -51,8 +51,23 @@ So entfernen Sie alle Daten, die die Unternehmensportal-App für Android auf Ihr
 -   Löschen Sie den Ordner „\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal“.
 
 ## <a name="uninstall-the-company-portal-app"></a>Deinstallieren der Unternehmensportal-App  
-Das Unternehmensportal ist eine App zur Geräteverwaltung. Daher kann diese erst deinstalliert werden, wenn Sie [die Registrierung für die Verwaltung des Geräts aufheben](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management). Wenn dies geschehen ist, tippen Sie auf das Symbol für die Unternehmensportal-App und halten Sie dieses so lange gedrückt, bis die Option **Deinstallieren** angezeigt wird. Tippen Sie auf **Deinstallieren**, um die App von Ihrem Gerät zu entfernen.  
+Das Unternehmensportal ist eine App für die Geräteverwaltung. Daher kann diese erst deinstalliert werden, wenn Sie [die Registrierung für die Verwaltung des Geräts aufheben](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management). Wenn dies geschehen ist, tippen Sie auf das Symbol für die Unternehmensportal-App und halten Sie dieses so lange gedrückt, bis die Option **Deinstallieren** angezeigt wird. Tippen Sie auf **Deinstallieren**, um die App von Ihrem Gerät zu entfernen.  
 
 Stattdessen können Sie auch auf **Einstellungen** > **Apps** > **Unternehmensportal** > **Deinstallieren** tippen.  
+
+### <a name="remove-company-portal-app-as-device-administrator"></a>Entfernen der Unternehmensportal-App als Geräteadministrator  
+Als letzte Alternative können Sie die App von Ihrem Gerät deinstallieren, indem Sie sie als Geräteadministrator entfernen.  
+
+Wenn Sie ein unternehmenseigenes Gerät besitzen, setzt Ihre Organisation möglicherweise voraus, dass das Unternehmensportal immer auf dem Gerät installiert ist. Wenn Sie es deinstallieren, könnten Sie den Zugriff auf geschützte Unternehmensressourcen wie E-Mails, Apps, WLAN-Netzwerke oder VPNs verlieren, bis die App neu installiert wird. Weitere Informationen zum Installieren, Aktualisieren und Entfernen erforderlicher Apps finden Sie unter [Hinzufügen von Apps zu Microsoft Intune](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune).  
+
+Führen Sie die folgenden Schritte aus, um das Unternehmensportal als Geräteadministrator zu deaktivieren. Die tatsächlichen Namen der einzelnen Einstellungen können je nach Android-Gerät variieren.  
+
+**Schritte für Android (Option 1):**  
+1. Klicken Sie auf **Einstellungen** > **Sicherheit** > **Andere Sicherheitseinstellungen** > **Geräteadministratoren**.  
+2. Deaktivieren Sie die Option **Unternehmensportal**.  
+
+**Schritte für Android (Option 2):**  
+1. Klicken Sie auf **Einstellungen** > **Sperrbildschirm und Sicherheit** > **Andere Sicherheitseinstellungen** > **Geräteadministratoren**.  
+2. Deaktivieren Sie die Option **Unternehmensportal**.    
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980).

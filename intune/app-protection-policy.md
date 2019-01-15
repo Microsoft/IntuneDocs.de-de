@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
-ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
+ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389868"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006283"
 ---
 # <a name="what-are-app-protection-policies"></a>Was sind App-Schutzrichtlinien?
 
@@ -37,14 +37,14 @@ Sie können Intune-App-Schutzrichtlinien **unabhängig von jeglicher mobilen Ger
 
 App-Schutzrichtlinien können für Apps konfiguriert werden, die auf Geräten ausgeführt werden, die folgende Voraussetzungen erfüllen:
 
-- **Registriert bei Microsoft Intune:** Diese Geräte sind in der Regel unternehmenseigene Geräte.
+- **Bei Microsoft Intune registriert:** In der Regel sind diese Geräte unternehmenseigene Geräte.
 
-- **Registriert bei einer Drittanbieterlösung für die Verwaltung mobiler Geräte (MDM, Mobile Device Management):** Diese Geräte sind in der Regel unternehmenseigene Geräte.
+- **Bei einer Drittanbieterlösung für die Verwaltung mobiler Geräte (MDM, Mobile Device Management) registriert:** In der Regel sind diese Geräte unternehmenseigene Geräte.
 
   > [!NOTE]
   > Verwaltungsrichtlinien für mobile Apps sollten nicht in Verbindung mit Verwaltungslösungen für mobile Geräte von Drittanbietern oder sicheren Containerlösungen verwendet werden.
 
-- **Nicht bei einer Lösung für die Verwaltung mobiler Geräte registriert:** Diese Geräte sind in der Regel mitarbeitereigene Geräte, die weder bei Intune noch anderen MDM-Lösungen registriert sind oder dort verwaltet werden.
+- **Nicht bei einer Lösung für die mobile Geräteverwaltung registriert:** Diese Geräte sind in der Regel eigene Geräte der Mitarbeiter, die nicht in Intune oder anderen MDM-Lösungen verwaltet oder registriert werden.
 
 > [!IMPORTANT]
 > Sie können Verwaltungsrichtlinien für mobile Apps für mobile Office-Apps erstellen, die eine Verbindung mit Office 365-Diensten herstellen. Außerdem können Sie den Zugriff auf lokale Exchange-Postfächer schützen, indem Sie Intune-App-Schutzrichtlinien für Outlook für iOS und Android erstellen, die mit hybrider moderner Authentifizierung aktiviert wurden. Bevor Sie dieses Feature verwenden, sollten Sie sicherstellen, dass Sie die [Anforderungen für Outlook für iOS und Android](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx) erfüllen. App-Schutzrichtlinien werden nicht für andere Apps unterstützt, die eine Verbindung mit lokalen Exchange- oder SharePoint-Diensten herstellen.
@@ -75,14 +75,14 @@ Windows-Geräte werden momentan nicht unterstützt. Sie können jedoch Windows I
 
 #### <a name="apps-without-app-protection-policies"></a>Apps ohne App-Schutzrichtlinien
 
-![Die Abbildung zeigt, dass Daten ungehindert zwischen Apps verschoben werden können, wenn keine App-Schutzrichtlinien angewendet werden.](./media/apps-without-protection-policies.png)
+![Darstellung der Datenverschiebung zwischen Apps ohne Richtlinien](./media/apps-without-protection-policies.png)
 
 Wenn Apps ohne Einschränkungen verwendet werden, können Unternehmensdaten und private Daten vermischt werden. Unternehmensdaten können damit an Speicherorten wie dem persönlichen Speicher abgelegt oder an Apps außerhalb Ihres Zuständigkeitsbereichs übermittelt werden, was Datenverlust bedeuten würde. Die Pfeile im vorangehenden Diagramm zeigen die uneingeschränkte Datenverschiebung zwischen sowohl geschäftlichen als auch privaten Apps sowie zu Speicherorten.
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>Datenschutz mit App-Schutzrichtlinien
 
-![Das Bild zeigt, wie Unternehmensdaten durch die Anwendung von App-Schutzrichtlinien geschützt werden ](./media/apps-with-protection-policies.png)
+![Darstellung von Unternehmensdaten, die durch Richtlinien geschützt werden](./media/apps-with-protection-policies.png)
 
 
 Mit App-Schutzrichtlinien können Sie verhindern, dass Unternehmensdaten im lokalen Speicher des Geräts gespeichert werden. Außerdem können Sie das Verschieben von Daten in andere Apps einschränken, die nicht durch App-Schutzrichtlinien geschützt sind. Einstellungen für App-Schutzrichtlinien:
@@ -146,7 +146,7 @@ Obwohl die **globale Richtlinie** für alle Benutzer in Ihrem Mandanten gilt, we
 
 Apps, die mehrere Identitäten unterstützen, bieten Ihnen die Möglichkeit, verschiedene Konten (Geschäfts- und persönliche Konten) für den Zugriff auf die gleichen Apps zu verwenden. Hierbei werden App-Schutzrichtlinien nur angewendet, wenn die Apps im Arbeitskontext verwendet werden.
 
-Stellen Sie sich als Beispiel für privaten Kontext einen Benutzer vor, der ein neues Dokument in Word beginnt – dies gilt als privater Kontext, sodass die App-Schutzrichtlinien für Intune nicht angewendet werden. Sobald das Dokument im OneDrive-Unternehmenskonto gespeichert wird, steht es im Unternehmenskontext, und App-Schutzrichtlinien für Intune werden angewendet.
+Stellen Sie sich als Beispiel für privaten Kontext einen Benutzer vor, der ein neues Dokument in Word beginnt – dies gilt als privater Kontext, sodass die App-Schutzrichtlinien für Intune nicht angewendet werden. Sobald das Dokument im OneDrive-Unternehmenskonto gespeichert wird, steht es im Unternehmenskontext, und Intune-App-Schutzrichtlinien werden angewendet.
 
 Betrachten Sie im geschäftlichen Kontext beispielsweise einen Benutzer, der die OneDrive-App mit seinem Geschäftskonto startet. Im geschäftlichen Kontext kann er keine Dateien an einen privaten Speicherort verschieben. Wenn der Benutzer OneDrive später jedoch mit einem persönlichen Konto verwendet, kann er Daten ohne Einschränkung aus dem persönlichen OneDrive kopieren und verschieben.
 

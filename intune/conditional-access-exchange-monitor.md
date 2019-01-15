@@ -1,6 +1,5 @@
 ---
-title: Überwachen von bedingtem Zugriff auf Exchange in Microsoft Intune
-titlesuffix: ''
+title: Überwachen des bedingten Zugriffs auf Exchange in Microsoft Intune | Microsoft Intune
 description: Überwachen der Konformität mit bedingtem Zugriff bei einer lokalen Installation von Exchange und Exchange Online durch das Azure-Portal für Intune.
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 20a99290d2a84c22bc2bee823d7a3bb42e43aced
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8c9602dbe183501cc779fcb9b5d5a1e6e4bf6154
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180577"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816769"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Überwachen der Konformität mit bedingtem Zugriff für Exchange lokal und Exchange Online in Intune
 
@@ -58,7 +57,7 @@ Im Bereich mit den Gerätedetails finden Sie weitere Informationen:
 
 -   **Übersicht:** Folgende Eigenschaften des Geräts werden angezeigt: Betriebssystemversion, Gerätemodell, Besitz, Seriennummer, Gerätehersteller, Telefonnummer und Zeitpunkt, an dem das Gerät zuletzt eingecheckt wurde.
 
--   **Eigenschaften:** Sie können den Gerätebesitz (privat oder Unternehmen) festlegen.
+-   **Eigenschaften**: Sie können den Gerätebesitz (privat oder Unternehmen) festlegen.
 
 -   **Hardware:** Dieser Abschnitt enthält Informationen, die Sie in der Übersicht sehen, sowie Speicherdetails (gesamter und freier Speicherplatz), Systemgehäuse, Netzwerkdetails, Netzwerkdienst und weitere Details über Sperrungen des bedingten Zugriffs.
 

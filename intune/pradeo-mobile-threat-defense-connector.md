@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
-ms.openlocfilehash: bf08796be801e1947fc1b18f2b5d2c49a5db945d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f565697d9c76f8a2990074b072ed43547284c29b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179897"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816887"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Mobile Threat Defense-Connector Pradeo in Intune
 
@@ -48,7 +48,7 @@ Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie
 
 **Blockieren, wenn Apps mit Schadsoftware entdeckt werden:**
 
-![Apps mit Schadsoftware entdeckt](./media/pradeo_maliciousapps_blocked.png)
+![Darstellung des Szenarios, wenn Apps mit Schadsoftware erkannt werden](./media/pradeo_maliciousapps_blocked.png)
 
 **Zugriff nach Beseitigung gewährt:**
 
@@ -64,7 +64,7 @@ Erkennen von Bedrohungen wie **Man-in-the-Middle-Angriffe** für Ihr Netzwerk un
 
 **Zugriff nach Beseitigung gewährt:**
 
-![Zugriff erteilt nach der Behebung](./media/pradeo_network_wifi_unblocked.png)
+![Darstellung des Szenarios, wenn der Zugriff nach der Behebung wieder erteilt wird](./media/pradeo_network_wifi_unblocked.png)
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Steuern des Zugriffs auf SharePoint Online basierend auf der Bedrohung für das Netzwerk
 
@@ -76,7 +76,7 @@ Erkennen von Bedrohungen wie **Man-in-the-Middle-Angriffe** für Ihr Netzwerk un
 
 **Zugriff nach Beseitigung gewährt:**
 
-![Zugriff erteilt nach der Behebung für Sharepoint-Beispiel](./media/pradeo_network_spo_unblocked.png)
+![Darstellung des Szenarios für das Sharepoint-Beispiel, wenn der Zugriff nach der Behebung wieder erteilt wird](./media/pradeo_network_spo_unblocked.png)
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 

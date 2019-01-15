@@ -1,12 +1,12 @@
 ---
-title: Gerätekonformitätsrichtlinie für Jamf-Geräte
+title: Gerätekonformitätsrichtlinie für Jamf-Geräte | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Verwenden Sie die Konformitätsrichtlinien für Microsoft Intune zusammen mit dem bedingten Zugriff auf Azure Active Directory, um mit Jamf verwaltete Geräte zu sichern.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6fa89e96b05e5344dec32fb452be8ebeaa58bc12
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d7d054b11a4abc969ad411169d0222be37fd6711
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817227"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Erzwingen von Konformität auf mit Jamf Pro verwalteten Macs
 
@@ -31,7 +31,7 @@ Gilt für: Intune im Azure-Portal
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Einrichten von Gerätekonformitätsrichtlinien in Intune
 
-1. Öffnen Sie Microsoft Azure, und navigieren Sie zu **Intune** > **Gerätekonformität** > **Richtlinien**. Sie können Richtlinien für macOS erstellen und dabei eine Reihe von Aktionen für nicht konforme Benutzer und Gruppen auswählen (z.B. Warn-E-Mails senden).
+1. Öffnen Sie Microsoft Azure, und navigieren Sie zu **Intune** > **Gerätekonformität** > **Richtlinien**. Sie können Richtlinien für macOS erstellen und dabei eine Reihe von Aktionen für nicht konforme Benutzer und Gruppen auswählen (z. B. Warn-E-Mails senden).
 2. Suchen Sie nach den gewünschten Gruppen, und wenden Sie die Richtlinien an.
 
 > [!Note]
@@ -57,7 +57,7 @@ Sie müssen die Unternehmensportal-App für macOS in Jamf Pro als Hintergrundins
 ## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>Erstellen Sie eine Richtlinie in Jamf Pro, damit Benutzer ihre Geräte bei Azure Active Directory registrieren.
 
 > [!NOTE]
-> Sie müssen das [Unternehmensportal für macOS bereitstellen](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos), bevor Sie die nächsten Schritten durchführen.  
+> Sie müssen das [Unternehmensportal für macOS bereitstellen](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro), bevor Sie die nächsten Schritten durchführen.  
 
 Endbenutzer müssen die Unternehmensportal-App über den Jamf Self-Dienst starten, um das Gerät bei Azure AD als mit Jamf Pro verwaltetes Gerät zu registrieren. Dies erfordert, dass Ihre Endbenutzer Maßnahmen ergreifen. Wir empfehlen, dass Sie [Ihre Endbenutzer ](end-user-educate.md) über E-Mail, Jamf Pro-Benachrichtigungen oder andere Methoden kontaktieren und auffordern, auf die Schaltfläche in Jamf Self Service zu klicken.
 

@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer Richtlinie für bedingten Zugriff auf Exchange
+title: Erstellen einer Richtlinie für bedingten Zugriff auf Exchange | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Konfigurieren Sie den bedingten Zugriff für eine lokale Installation von Exchange und für das ältere Exchange Online Dedicated in Intune.
 keywords: ''
@@ -15,12 +15,12 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0a539000153ad45b5256e4e63086fa72fee44947
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186096"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817057"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Erstellen einer Richtlinie für bedingten Zugriff auf eine lokale Installation von Exchange und auf das ältere Exchange Online Dedicated
 

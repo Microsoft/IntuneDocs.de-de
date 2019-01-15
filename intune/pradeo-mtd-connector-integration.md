@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
-ms.openlocfilehash: d7b88b73c260a6a84fdb835069de23c52775929a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 65b480b60b195ab012743f9a4006fb69aa929dbb
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179481"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816802"
 ---
 # <a name="integrate-pradeo-with-intune"></a>Integrieren von Pradeo in Intune
 
@@ -67,7 +67,7 @@ Der Prozess zur Autorisierung der Pradeo-App umfasst Folgendes:
 
 4.  Klicken Sie im Fenster **EMM (Enterprise Mobility Management) - Intune** unter **Step 1** (Schritt 1) auf die Schaltfläche **Pradeo Connector**. 
 
-    ![Intune-EMM-Fenster von Pradeo](./media/pradeo_setup.png)
+    ![Screenshot des Intune-EMM-Fensters von Pradeo](./media/pradeo_setup.png)
 
 5. Geben Sie Ihre Intune-Anmeldeinformationen im Microsoft Intune-Verbindungsfenster ein.
 

@@ -16,18 +16,18 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aad6687a110642f3b21dc0cff3a791f4714c7949
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b94b4228f05abd2e7c815797f2f187efb8b303e4
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187461"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817244"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium Mobile Threat Defense-Connector in Intune
 
 Sie können den Zugriff mobiler Geräte auf Unternehmensressourcen mit bedingtem Zugriff basierend auf Risikobewertungen steuern, die von Zimperium vorgenommen werden, einer Mobile Threat Defense-Lösung (MTD), die mit Microsoft Intune zusammenarbeitet. Das Risiko wird basierend auf Telemetriedaten von Geräten bewertet, auf denen die Zimperium-App ausgeführt wird.
 
-Sie können Richtlinien für bedingten Zugriff basierend auf der Zimperium-Risikobewertung konfigurieren, die über Intune-Gerätekompatibilitätsrichtlinien aktiviert werden, und so anhand der erkannten Bedrohungen nicht kompatible Geräte für den Zugriff auf Unternehmensressourcen zulassen oder blockieren.
+Sie können Richtlinien für bedingten Zugriff basierend auf Risikobewertungen von Zimperium konfigurieren, die mithilfe von Intune-Gerätekonformitätsrichtlinien aktiviert werden. Richtlinien für die Risikobewertung können den Zugriff nicht konformer Geräte auf Unternehmensressourcen basierend auf den erkannten Bedrohungen gewähren oder verweigern.
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Wie helfen Intune und Zimperium beim Schutz von Unternehmensressourcen?
 
@@ -51,11 +51,11 @@ Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie
 
 **Blockieren, wenn Apps mit Schadsoftware entdeckt werden:**
 
-![Apps mit Schadsoftware entdeckt](./media/Maliciousapps_blocked_Zimperium.png)
+![Darstellung des Szenarios, wenn Apps mit Schadsoftware erkannt werden](./media/Maliciousapps_blocked_Zimperium.png)
 
 **Zugriff nach Beseitigung gewährt:**
 
-![Apps mit Schadsoftware entdeckt, Zugriff gewährt](./media/maliciousapps_unblocked_Zimperium.png)
+![Darstellung des Szenarios, wenn der Zugriff nach der Behebung wieder erteilt wird](./media/maliciousapps_unblocked_Zimperium.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Steuern des Zugriffs basierend auf der Bedrohung für das Netzwerk
 
@@ -95,7 +95,7 @@ Erkennen von Bedrohungen wie  **Man-in-the-Middle** im Netzwerk und Verhindern
 
 -   Zimperium Mobile Threat Defense-Abonnement
 
-    -   Weitere Informationen finden Sie auf der  [Zimperium-Website](https://www.zimperium.com/zips-mobile-ips) .
+    -   Weitere Informationen finden Sie auf der  [Zimperium-Website](https://www.zimperium.com/zips-mobile-ips).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

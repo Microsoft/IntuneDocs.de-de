@@ -3,8 +3,8 @@ title: Konfigurieren von App-Schutzrichtlinien für Windows 10
 titleSuffix: Microsoft Intune
 description: Einrichten des MAM-Anbieters (Mobile Application Management) in Azure AD
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: e6e725d2e499c7f004ebf982bc0e70457c166f67
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 189afded0674958720234df86ed5d09c5cb8193d
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031975"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297336"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Vorbereitungen zum Konfigurieren von App-Schutzrichtlinien für Windows 10 
 

@@ -1,6 +1,5 @@
 ---
-title: Lookout MTD-Connector mit Microsoft Intune
-titlesuffix: ''
+title: Lookout MTD-Connector mit Microsoft Intune | Microsoft Intune
 description: Informationen zum Integrieren von Intune mit Lookout Mobile Threat Defense (MTD), um den Zugriff von mobilen Geräten auf Ihre Unternehmensressourcen zu steuern.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d7a545fe08acc9ab88086fa92be934c860ae4716
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bd61b10ee60e1f9413c22d0d618bc5c270dc76a6
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179540"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817074"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense-Connector mit Intune
 
@@ -63,34 +62,34 @@ Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie
 
 **Blockieren, wenn Apps mit Schadsoftware entdeckt werden:**
 
-![Diagramm das zeigt, wie die Richtlinie für bedingten Zugriff den Zugriff blockiert, wenn das Gerät aufgrund von böswilligen Apps auf dem Gerät als nicht konform eingestuft wird](./media/malicious-apps-blocked.png)
+![Darstellung der Richtlinie, die den Zugriff aufgrund von Apps mit Schadsoftware blockiert](./media/malicious-apps-blocked.png)
 
 **Zugriff nach Beseitigung gewährt:**
 
-![Diagramm, das die Richtlinie für bedingten Zugriff darstellt, die den Zugriff erteilt, nachdem das Gerät nach der Sanierung als kompatibel bewertet wurde](./media/malicious-apps-unblocked.png)
+![Darstellung des gewährten Zugriffs nach der Beseitigung](./media/malicious-apps-unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Steuern des Zugriffs basierend auf der Bedrohung für das Netzwerk
 Erkennen Sie Bedrohungen Ihres Netzwerks, wie etwa Man-in-the-Middle-Angriffe, und Schützen Sie den Zugriff auf WLANs auf der Grundlage des Geräterisikos.
 
 **Blockieren des Netzwerkzugriffs über WLAN:**
 
-![Diagramm das zeigt, wie bedingter Zugriff den Zugriff auf WLAN basierend auf Netzwerkbedrohungen blockiert](./media/network-wifi-blocked.png)
+![Darstellung des blockierten WLAN-Zugriffs basierend auf Netzwerkbedrohungen](./media/network-wifi-blocked.png)
 
 **Zugriff nach Beseitigung gewährt:**
 
-![Diagramm, das den Zugriff durch bedingten Zugriff nach der Beseitigung der Bedrohung erteilt](./media/network-wifi-unblocked.png)
+![Darstellung des bedingten Zugriffs, der den Zugriff nach der Beseitigung der Bedrohung gewährt](./media/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Steuern des Zugriffs auf SharePoint Online basierend auf der Bedrohung für das Netzwerk
 
 Erkennen von Bedrohungen Ihres Netzwerks, wie etwa Man-in-the-Middle-Angriffen, und Verhindern der Synchronisierung von Unternehmensdateien auf der Grundlage des Geräterisikos.
 
 **Blockieren des Zugriffs auf SharePoint Online bei Erkennen von Bedrohungen für das Netzwerk**
 
-![Diagramm, das die Blockierung des Gerätezugriffs auf SharePoint Online mithilfe von bedingtem Zugriff basierend auf der Erkennung von Bedrohungen darstellt](./media/network-spo-blocked.png)
+![Darstellung des blockierten Zugriffs auf SharePoint Online](./media/network-spo-blocked.png)
 
 
 **Zugriff nach Beseitigung gewährt:**
 
-![Diagramm, das den bedingten Zugriff nach dem Beheben der Netzwerkbedrohung darstellt](./media/network-spo-unblocked.png)
+![Darstellung des gewährten Zugriffs, nachdem die Netzwerkbedrohung beseitigt wurde](./media/network-spo-unblocked.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 Hier sind die wichtigsten Schritte, die Sie ausführen müssen, um diese Lösung zu implementieren:

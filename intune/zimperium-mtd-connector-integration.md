@@ -1,6 +1,5 @@
 ---
-title: Integrieren von Zimperium MTD in Microsoft Intune
-titleSuffix: ''
+title: Integrieren von Zimperium MTD in Microsoft Intune | Microsoft Intune
 description: Einrichten der Zimperium Mobile Threat Defense-Lösung (MTD) in Microsoft Intune, um den Zugriff mobiler Geräte auf Ihre Unternehmensressourcen zu steuern.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3f2ffb3f99ce0dc925c52f733b25292cdbddae3e
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: b12cec7a01d809eb5a6b6523a73dd224c10c972e
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52860995"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817193"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Integrieren von Zimperium in Intune
 
@@ -63,15 +62,15 @@ Der Prozess zur Autorisierung der App Zimperium umfasst Folgendes:
 Weitere Informationen zu Einwilligung und Azure Active Directory-Anwendungen finden Sie unter [Anfordern der Berechtigungen von einem Verzeichnisadministrator](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#request-the-permissions-from-a-directory-admin) im Artikel *Berechtigungen und Einwilligung im Azure Active Directory v2.0-Endpunkt*.
 
 
-## <a name="to-set-up-zimperium-integration"></a>Einrichten der Zimperium-Integration
+## <a name="to-set-up-zimperium-integration"></a>Einrichten der Zimperium Integration
 
 1.  Wechseln Sie zur  [Zimperium-MTD-Konsole](https://sso.zimperium.com/signon/aad/) , und melden Sie sich mit Ihren Anmeldeinformationen an. Um die Zimperium-Integration einzurichten, müssen Sie sich als ein Azure Active Directory-Benutzer anmelden, dem die Rolle „Globaler Administrator“ zugewiesen ist. Bei dieser einmaligen Einrichtung werden Rechte als globaler Administrator benötigt, um den Zimperium-Apps die Berechtigung zur Kommunikation mit Intune in Ihrer Organisation zu gewähren. 
 
-2.  Wählen Sie im linken Menü **Management** (Verwaltung) aus.
+2.  Wählen Sie im linken Menü **Verwaltung** aus.
 
 3.  Klicken Sie auf die Registerkarte **MDM settings** (MDM-Einstellungen).
 
-4.  Wählen Sie **Add MDM** (MDM hinzufügen) aus, und wählen Sie dann **Microsoft Intune** in der Liste **MDM provider** (MDM-Anbieter) aus.
+4.  Wählen Sie **Add MDM** (MDM hinzufügen) aus, und wählen Sie dann **Microsoft Intune** aus der Liste der **MDM-Anbieter** aus.
 
 5.  Nachdem Sie Microsoft Intune als MDM-Dienst festgelegt haben, wird das Fenster  **Microsoft Intune Configuration**  (Microsoft Intune-Konfiguration) geöffnet. Wählen Sie in diesem Fenster für jede Option  **Add Azure Active Directory**  (Azure Active Directory hinzufügen) aus: **Zimperium zConsole**, **zIPS iOS and Android apps** (zIPS iOS und Android-Apps). Auf diese Weise wird Zimperium zur Kommunikation mit Intune und Azure AD über Azure AD-SSO (Single Sign-On, einmaliges Anmelden) autorisiert.
 

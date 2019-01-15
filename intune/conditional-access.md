@@ -1,6 +1,5 @@
 ---
-title: Bedingter Zugriff mit Microsoft Intune
-titlesuffix: ''
+title: Bedingter Zugriff mit Microsoft Intune | Microsoft Intune
 description: Erfahren Sie, wie Sie die Bedingungen definieren, die Benutzer, Geräte und Apps erfüllen müssen, um Zugriff auf Unternehmensressourcen in Microsoft Intune zu erhalten.
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 1e9e8db76978f9547d10fd4709d74ea809f2c281
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f25fe74c9506d2179c683156821ef9afb218128a
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184844"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816564"
 ---
 # <a name="whats-conditional-access"></a>Was ist bedingter Zugriff?
 

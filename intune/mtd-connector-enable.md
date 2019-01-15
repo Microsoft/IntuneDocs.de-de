@@ -1,6 +1,5 @@
 ---
-title: Aktivieren Sie den Mobile Threat Defense-Connector in Microsoft Intune.
-titleSuffix: ''
+title: Aktivieren des Mobile Threat Defense-Connectors in Microsoft Intune | Microsoft Intune
 description: Aktivieren Sie den Connector zwischen Ihrem Mobile Threat Defense-Partner (MTD) und Microsoft Intune.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2937814ae5ceb6c7d8b3def4e954c8eec9337126
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cfd6f222533728c754f55a76b78698eac5e4031b
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180475"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816683"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Aktivieren Sie den Mobile Threat Defense-Connector in Intune.
 
@@ -52,17 +51,17 @@ Während des Mobile Threat Defense-Setups (MTD) haben Sie eine Richtlinie zum Kl
 
 Sie können entscheiden, welche MTD-Optionen Sie aktivieren müssen, um die Anforderungen Ihrer Organisation zu erfüllen. Nachfolgend finden Sie weitere Details:
 
-- **Herstellen einer Verbindung zwischen Geräten unter Android 4.1 und höher und MTD von [MTD-Partnername] for Work**: Wenn Sie diese Option aktivieren, können Geräte unter Android 4.1 und höher Sicherheitsrisiken an Intune melden.
-    - **Als nicht kompatibel markieren, wenn keine Daten erhalten werden**: Wenn Intune keine Daten über ein Gerät auf dieser Plattform vom MTD-Partner empfängt, betrachten Sie das Gerät als nicht kompatibel.
+- **Herstellen einer Verbindung zwischen Android-Geräten ab Version 4.1 mit [MTD-Partnername] for Work MTD:** Wenn Sie diese Option aktivieren, können Geräte unter Android 4.1 und höher Sicherheitsrisiken an Intune melden.
+    - **Als nicht konform markieren, wenn keine Daten empfangen werden:** Wenn Intune keine Daten über ein Gerät auf dieser Plattform vom MTD-Partner empfängt, wird das Gerät als nicht konform betrachtet.
 <br></br>
-- **Herstellen einer Verbindung zwischen Geräten unter iOS 8.0 und höher und MTD von [MTD-Partnername] for Work:** Wenn Sie diese Option aktivieren, können Geräte unter iOS 8.0 und höher Sicherheitsrisiken an Intune melden.
-    - **Als nicht kompatibel markieren, wenn keine Daten erhalten werden**: Wenn Intune keine Daten über ein Gerät auf dieser Plattform vom MTD-Partner empfängt, betrachten Sie das Gerät als nicht kompatibel.
+- **Herstellen einer Verbindung zwischen iOS-Geräten ab Version 8.0 mit [MTD-Partnername] for Work MTD:** Wenn Sie diese Option aktivieren, können Geräte unter iOS 8.0 und höher Sicherheitsrisiken an Intune melden.
+    - **Als nicht konform markieren, wenn keine Daten empfangen werden:** Wenn Intune keine Daten über ein Gerät auf dieser Plattform vom MTD-Partner empfängt, wird das Gerät als nicht konform betrachtet.
 <br></br>
-- **App-Synchronisierung für iOS-Geräte aktivieren**: Ermöglicht diesem Mobile Threat Defense-Partner, Metadaten von iOS-Anwendungen aus Intune zur Bedrohungsanalyse anzufordern.
+- **Aktivieren der App-Synchronisierung für iOS-Geräte:** Ermöglicht diesem Mobile Threat Defense-Partner, Metadaten zur Bedrohungsanalyse von iOS-Anwendungen aus Intune anzufordern.
 
-- **Nicht unterstützte Betriebssystemversionen blockieren**: Blockieren, wenn auf dem Gerät eine frühere Betriebssystem ausgeführt wird, als die minimal unterstützte Version.
+- **Nicht unterstützte Betriebssystemversionen blockieren:** Blockieren, wenn auf dem Gerät eine frühere Betriebssystem ausgeführt wird, als die minimal unterstützte Version.
 
-- **Anzahl von Tagen, bis Partner als nicht reaktionsfähig gilt**: Anzahl von Tagen mit Inaktivität, bevor Intune den Partner als nicht reaktionsfähig betrachtet, da die Verbindung unterbrochen wurde. Intune ignoriert den Kompatibilitätszustand für nicht reaktionsfähige MTD-Partner.
+- **Anzahl von Tagen, bis Partner als nicht reaktionsfähig gilt:** Anzahl von Tagen mit Inaktivität, bevor Intune den Partner als nicht reaktionsfähig betrachtet, da die Verbindung unterbrochen wurde. Intune ignoriert den Kompatibilitätszustand für nicht reaktionsfähige MTD-Partner.
 
 > [!IMPORTANT] 
 > Sie müssen die MTD-Apps hinzufügen und zuweisen, bevor Sie die Richtlinienregeln für Kompatibilität und bedingten Zugriff erstellen. Dadurch wird sichergestellt, dass die MTD-App für die Installation durch Endbenutzer bereit und verfügbar ist, bevor sie Zugriff auf E-Mail oder andere Unternehmensressourcen erhalten.
