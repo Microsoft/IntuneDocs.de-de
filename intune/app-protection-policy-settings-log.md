@@ -3,8 +3,8 @@ title: Überprüfen der Protokolle von App-Schutzrichtlinien | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Erfahren Sie mehr über die Einstellungen, die Sie in den App-Schutzprotokollen überprüfen können.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 11/20/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3e7b6ec1063b4337f44de0a4502bcbf7c2a45edf
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: a6801eab86fcb2adab6edc8dab621d4100a415b5
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817210"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297195"
 ---
 # <a name="review-client-app-protection-logs"></a>Überprüfen der Schutzprotokolle für Client-Apps
 
