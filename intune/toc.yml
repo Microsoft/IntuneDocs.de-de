@@ -583,12 +583,12 @@ items:
           href: data-apple-sends-to-intune.md
         - name: Von Google an Intune gesendete Daten
           href: data-google-sends-to-intune.md
+        - name: Von Jamf Pro an Intune gesendete Daten
+          href: data-jamf-sends-to-intune.md
         - name: Von Intune an Apple gesendete Daten
           href: data-intune-sends-to-apple.md
         - name: Von Intune an Google gesendete Daten
           href: data-intune-sends-to-google.md
-        - name: Von Jamf Pro für Intune freigegebene Informationen
-          href: conditional-access-integrate-jamf.md
       - name: Anzeigen und Korrigieren personenbezogener Daten
         href: privacy-data-view-correct.md
       - name: Überwachen, Exportieren, Löschen
@@ -854,9 +854,9 @@ items:
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: Lösen von Richtlinienkonflikten
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-ms.openlocfilehash: 1f17ae67e609e9836c29f6afd810bbea5ece99b4
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 2939459eafe7771c33ec20fd150c36c7808c2b1c
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203585"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325048"
