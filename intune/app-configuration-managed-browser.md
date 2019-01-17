@@ -176,7 +176,7 @@ Weitere Informationen zur möglichen gemeinsamen Verwendung von Managed Browser,
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>Konfigurieren der Startseite für einen geschützten Browser
 
 Mit dieser Einstellung können Sie die Startseite konfigurieren, die Benutzern beim Starten eines geschützten Browsers oder beim Erstellen einer neuen Registerkarte angezeigt wird. 
-- Diese Einstellung zeigt die Webseite des Managed Browser an.  Edge zeigt stattdessen eine Verknüpfung zur Startseite an.
+- Diese Einstellung zeigt die Webseite des Managed Browser an.  Microsoft Edge zeigt stattdessen eine Verknüpfung zur Startseite an.
 - Das Symbol der Verknüpfung zur Startseite wird als Symbol unterhalb des Suchsteuerelements angezeigt.  Es kann weder bearbeitet noch gelöscht werden.
 - Die Verknüpfung für die Startseite zeigt den Namen Ihrer Organisation zur Unterscheidung an.  Er wird immer als das erste Symbol angezeigt.
 
