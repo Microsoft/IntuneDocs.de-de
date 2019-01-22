@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: ec170727b8846caae3e96cc19be8d1e274c17427
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642590"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210736"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Manuelles Hinzufügen der Windows 10-Unternehmensportal-App mithilfe von Microsoft Intune
 
@@ -47,7 +47,7 @@ Benutzer können die Unternehmensportal-App selbst über den Microsoft Store ins
 5. Wählen Sie **Windows 10 all devices** (Alle Windows 10-Geräte) als **Platform** (Plattform) aus. Legen Sie anschließend für **Minimum version** (Mindestversion), **Architecture** (Architektur) und **Download app metadata** (App-Metadaten herunterladen) die entsprechenden Werte fest. 
 6. Klicken Sie auf **Download** (Herunterladen), um die Datei auf Ihrem lokalen Computer zu speichern.
 
-    ![Details zum Downloadpaket für „Windows 10 all devices“ (Alle Windows 10-Geräte) und für die x86-Architektur](./media/Win10CP-all-devices.png)
+    ![Windows 10-Geräte mit x86-Architektur sind ausgewählt.](./media/Win10CP-all-devices.png)
 
 7. Laden Sie alle Pakete unter „Required Frameworks“ (Erforderliche Frameworks) herunter, indem Sie auf **Download** (Herunterladen) klicken.  
     Diese Aktion muss für die x86-, x64- und ARM-Architektur ausgeführt werden. Dadurch ergeben sich insgesamt 12 Pakete.

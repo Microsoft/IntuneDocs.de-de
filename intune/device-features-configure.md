@@ -14,12 +14,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65457a65504b633018bb61851f16c8c65fa1c806
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2282ba4dd3caf8c71c8624884bc124393ea52d2f
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185677"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203092"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Hinzufügen von Einstellungen für iOS- oder macOS-Gerätefunktionen in Intune
 
@@ -30,7 +30,7 @@ Mit Gerätefunktionen können Sie verschiedene Einstellungen und Features auf iO
 - AirPrint- und AirPlay-Einstellungen
 - Layout des Startbildschirms
 - Benachrichtigungen von Apps
-- Konfiguration für freigegebene Geräte
+- Sperrbildschirmnachricht
 - Einrichten des einmaligen Anmeldens
 - Filtern von Webinhalten
 
@@ -44,18 +44,18 @@ Dieser Artikel erläutert die Grundlagen der Konfiguration von Profilen für iOS
 4. Geben Sie die folgenden Eigenschaften ein:
 
    - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
-   - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein. (Optional, jedoch empfohlen)
-   - **Plattform:** Wählen Sie den Plattformtyp aus:
+   - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. (Diese Einstellung ist optional, wird jedoch empfohlen.)
+   - **Plattform**: Wählen Sie den Plattformtyp aus:
      - **iOS**
      - **macOS**
-   - **Profiltyp:** Wählen Sie **Gerätefunktionen** aus.
-   - **Einstellungen**: Die Einstellungen richten sich nach der ausgewählten Plattform. Die folgenden Artikel beschreiben die Einstellungen für die einzelnen Profiltypen:
+   - **Profiltyp**: Wählen Sie **Gerätefunktionen** aus.
+   - **Einstellungen:** Die Einstellungen richten sich nach der ausgewählten Plattform. Die folgenden Artikel beschreiben die Einstellungen für die einzelnen Profiltypen:
 
      - [AirPrint settings for iOS and MacOS](air-print-settings-ios-macos.md) (AirPrint-Einstellungen für iOS- und macOS-Geräte)
      - [AirPlay settings for iOS](airplay-settings-ios.md) (AirPlay-Einstellungen für iOS-Geräte)
      - [Home screen layout settings for iOS](home-screen-settings-ios.md) (Einstellungen des Startbildschirmlayouts für iOS-Geräte)
      - [App notification settings for iOS](app-notification-settings-ios.md) (App-Benachrichtigungseinstellungen für iOS-Geräte)
-     - [Shared device configuration settings for iOS](shared-device-settings-ios.md) (Konfigurationseinstellungen für freigegebene iOS-Geräte)
+     - [Lock Screen Message settings for iOS](shared-device-settings-ios.md) (Einstellungen der Sperrbildschirmnachricht für iOS)
      - [Konfigurieren von Intune für einmaliges Anmelden von iOS-Geräten](sso-ios.md)
      - [Web content filter settings for iOS](web-content-filter-settings-ios.md) (Filtereinstellungen für Webinhalte für iOS-Geräte)
 

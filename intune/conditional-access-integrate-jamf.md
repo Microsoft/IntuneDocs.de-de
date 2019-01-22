@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/04/2018
+ms.date: 01/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cc547926d95e3fa1bec54b4ea55f764b5701b3b7
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 8e607dc612f71cdf72322b9fa7ecf14abb5fd809
+ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816819"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "54270587"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrieren von Jamf Pro in Intune zu Konformitätszwecken
 
@@ -44,47 +44,44 @@ Eine Verbindung zwischen Intune und Jamf Pro können Sie folgendermaßen herstel
 2. Ermöglichen einer Integration von Intune in Jamf Pro
 3. Konfigurieren des bedingten Zugriffs in Jamf Pro
 
-## <a name="create-a-new-application-in-azure-active-directory"></a>Erstellen einer neuen Anwendung in Azure Active Directory
+## <a name="create-an-application-in-azure-active-directory"></a>Registrieren einer Anwendung in Azure Active Directory
 
-1. Öffnen Sie **Azure Active Directory** > **App-Registrierungen**.
-2. Klicken Sie auf **+Registrierung einer neuen Anwendung**.
+1. Navigieren Sie im [Azure-Portal](https://portal.azure.com) zu **Azure Active Directory** > **App-Registrierungen**.
+2. Wählen Sie anschließend **Neue Anwendungsregistrierung** aus.
 3. Geben Sie einen **Anzeigenamen** ein, z.B. **Bedingter Zugriff in Jamf**.
 4. Wählen Sie **Web-App/API**.
 5. Geben Sie die **Anmelde-URL** in Form Ihrer Jamf Pro-Instanz-URL an.
-6. Klicken Sie auf **Anwendung erstellen**.
-7. Speichern Sie die neu erstellte **Anwendungs-ID**. Öffnen Sie dann **Einstellungen**, und navigieren Sie zu **API-Zugriff** > **Schlüssel**, um einen neuen Anwendungsschlüssel zu erstellen. Geben Sie eine **Beschreibung** und eine **Ablaufzeit** ein, und speichern Sie dann den Anwendungsschlüssel.
+6. Wählen Sie **Erstellen** aus. Die Anwendung wird erstellt, und im Portal werden die Anwendungsdetails angezeigt.
+7. Speichern Sie eine Kopie der **Anwendungs-ID** für die neue Anwendung. Sie geben die ID zu einem späteren Zeitpunkt in einer Prozedur an. Wählen Sie als Nächstes **Einstellungen** aus, und wechseln Sie zu **API-Zugriff** > **Schlüssel**.
+8. Geben Sie im Bereich *Schlüssel* eine **Beschreibung** ein, wie lange gewartet werden soll, bevor er **abläuft**. Wählen Sie dann **Speichern** aus, um den Anwendungsschlüssel (Wert) zu generieren.
 
    > [!IMPORTANT]
    > Der Anwendungsschlüssel wird während dieses Vorgangs nur einmal angezeigt. Achten Sie darauf, dass Sie ihn an einer Stelle speichern, an der Sie ihn problemlos abrufen können.
 
-8. Öffnen Sie **Einstellungen**, und navigieren Sie dann zu **API-Zugriff** > **Erforderliche Berechtigungen**, und löschen Sie alle Berechtigungen.
-
-   > [!NOTE]
-   > Fügen Sie eine neue erforderliche Berechtigung hinzu. Die Anwendung kann nur ordnungsgemäß funktionieren, wenn sie die einzelne erforderliche Berechtigung aufweist.
-
-9. Wählen Sie **Microsoft Intune-API**, und klicken Sie auf **Auswählen**.
-10. Wählen Sie **Geräteattribute an Microsoft Intune senden**, und klicken Sie auf **Auswählen**.
-11. Klicken Sie auf die Schaltfläche **Berechtigungen erteilen**, nachdem Sie die erforderlichen Berechtigungen für die Anwendung gespeichert haben.
+8. Navigieren Sie im Bereich *Einstellungen* für die App zu **API-Zugriff** > **Erforderliche Berechtigungen**. Wählen Sie alle vorhandenen Berechtigungen aus, und klicken Sie dann auf **Löschen**, um alle Berechtigungen zu löschen. Das Löschen vorhandener Berechtigungen ist notwendig, wenn Sie eine neue Berechtigung hinzufügen, und die Anwendung funktioniert nur, wenn sie ausschließlich über die erforderliche Berechtigung verfügt.  
+9. Um eine neue Berechtigung zuzuweisen, wählen Sie **+ Hinzufügen** > **Hiermit wählen Sie eine API aus** > **Microsoft Intune-API** aus und klicken dann auf **Auswählen**.
+10. Wählen Sie im Bereich *Zugriff aktivieren* die Option **Geräteattribute an Microsoft Intune senden** aus. Klicken Sie auf **Auswählen** und dann auf **Fertig**.
+11. Wählen Sie im Bereich *Erforderliche Berechtigungen* die Option **Berechtigungen erteilen** und dann **Ja** aus, um die erforderlichen Berechtigungen auf die Anwendung anzuwenden.
 
     > [!NOTE]
     > Wenn der Anwendungsschlüssel abläuft, müssen Sie einen neuen Anwendungsschlüssel in Microsoft Azure erstellen und dann die Daten für den bedingten Zugriff in Jamf Pro aktualisieren. In Azure kann sowohl der alte als auch der neue Schlüssel aktiv sein, um Dienstunterbrechungen zu verhindern.
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Ermöglichen einer Integration von Intune in Jamf Pro
 
-1. Öffnen Sie im Microsoft Azure-Portal **Microsoft Intune** > **Gerätekonformität** > **Partner > Geräteverwaltung**.
-2. Aktivieren Sie den Konformitätsconnector für Jamf durch Einfügen der Anwendungs-ID in das Feld **Azure Active Directory-App-ID für Jamf**.
-3. Klicken Sie auf **Speichern**.
+1. Wechseln Sie im [Azure-Portal](https://portal.azure.com) zu **Microsoft Intune** > **Gerätekonformität** > **Partnergeräteverwaltung**.
+2. Aktivieren Sie den Konformitätsconnector für Jamf durch Einfügen der zuvor gespeicherten Anwendungs-ID in das Feld **Azure Active Directory-App-ID für Jamf**.
+3. Wählen Sie **Speichern** aus.
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Konfigurieren der Microsoft Intune-Integration in Jamf Pro
 
 1. Navigieren Sie in Jamf Pro zu **Global Management** > **Conditional Access** (Globale Verwaltung > Bedingter Zugriff). Klicken Sie auf der Registerkarte **Integration von Intune** auf die Schaltfläche **Bearbeiten**.
 2. Aktivieren Sie das Kontrollkästchen **Integration von Microsoft Intune aktivieren**.
 3. Geben Sie die erforderlichen Informationen zu Ihrem Azure-Mandanten ein, einschließlich **Location** (Standort) und **Domain name** (Domänenname) sowie die Angaben zu **Application ID** (Anwendungs-ID) und **Application Key** (Anwendungsschlüssel), die Sie in den vorherigen Schritten gespeichert haben.
-4. Klicken Sie auf **Speichern**. Jamf Pro testet Ihre Einstellungen und überprüft den Erfolg des Vorgangs.
+4. Wählen Sie **Speichern** aus. Jamf Pro testet Ihre Einstellungen und überprüft den Erfolg des Vorgangs.
 
 ## <a name="set-up-compliance-policies-and-register-devices"></a>Einrichten von Konformitätsrichtlinien und Registrieren von Geräten
 
-Nachdem Sie die Konfiguration der Integration zwischen Intune und Jamf abgeschlossen haben, müssen Sie [Konformitätsrichtlinien zu von Jamf verwalteten Geräten ](conditional-access-assign-jamf.md) zuordnen.
+Nach dem Konfigurieren der Integration zwischen Intune und Jamf verwenden Sie die Option [Anwenden von Konformitätsrichtlinien auf mit Jamf verwaltete Geräte](conditional-access-assign-jamf.md).
 
 ## <a name="information-shared-from-jamf-pro-to-intune"></a>Von Jamf Pro für Intune freigegebene Informationen
 

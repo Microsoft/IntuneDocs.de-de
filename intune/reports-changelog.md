@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/11/2010
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,25 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 3fce49decb7574d32d1923a77bb2cca28384ce11
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642760"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297229"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Änderungsprotokoll für die Intune Data Warehouse-API
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bleiben Sie auf dem neuesten Stand bezüglich Updates für Intune Data Warehouse.
+
+## <a name="1812"></a>1812 
+_Im Dezember 2018 veröffentlicht_
+
+### <a name="enrollment-activities-collection-released-to-v10"></a>Registrierungsaktivitätensammlung in Version v1.0 veröffentlicht 
+
+Die Registrierungsaktivitätensammlung ist nun in der Version v1.0 verfügbar. Mithilfe dieser Sammlung können Sie die Volumen und Trends von Registrierungsfehlern in Ihrer Umgebung besser nachvollziehen. Weitere Informationen finden Sie unter [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities), [enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses), [enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories) und [enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons).
 
 ## <a name="1808"></a>1808
 _Veröffentlicht: August 2018_
@@ -36,9 +43,9 @@ _Veröffentlicht: August 2018_
 
 Jetzt können Sie die Version v1.0 von Intune Data Warehouse durch Festlegen des Abfrageparameters `api-version=v1.0`verwenden. Updates von Sammlungen in Data Warehouse bauen aufeinander auf und beschädigen keine vorhandenen Szenarios.
 
-### <a name="enrollment-failure-collection-released-to-beta"></a>Registrierungsfehlersammlung in Betaversion veröffentlicht
+### <a name="enrollment-activities-collection-released-to-beta"></a>Registrierungsaktivitätensammlung in Betaversion veröffentlicht
 
-Die neue `Enrollment Failure`-Sammlung ist für die Betaversion freigegeben. Diese Sammlung kann Ihnen helfen, den Verlauf Ihrer Registrierung zu verstehen, da hier die häufigsten Fehler aufgeführt werden. 
+Die neue `Enrollment Activities`-Sammlung ist für die Betaversion freigegeben. Diese Sammlung kann Ihnen helfen, den Verlauf Ihrer Registrierung zu verstehen, da hier die häufigsten Fehler aufgeführt werden. 
 
 
 ## <a name="1805"></a>1805

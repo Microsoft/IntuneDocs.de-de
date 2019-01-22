@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/14/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f8139d5a17d1a6594354994fda6c0eef64a22f3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: c3f1c28fb94823dd3370080c62c0d6f3d0da521e
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147501"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203262"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Verwenden verwalteter Apps auf Ihrem iOS-Gerät
 
@@ -34,7 +34,7 @@ Wenn Sie in einer verwalteten App auf Unternehmensdaten zugreifen, wird eine Mel
 
 ![managed-apps-message-ios](./media/managed-apps-message.png)
 
-### <a name="how-do-i-get-managed-apps"></a>Wie erhalte ich verwaltete Apps?
+## <a name="how-do-i-get-managed-apps"></a>Wie erhalte ich verwaltete Apps?  
 Es gibt verschiedene Möglichkeiten, verwaltete Apps zu erhalten:
 
 -   Wenn Ihr Gerät bei Microsoft Intune registriert ist, installieren Sie die App entweder über die Unternehmensportal-App oder -Website, oder der Support Ihres Unternehmens installiert sie auf Ihrem Gerät. Informationen zum Registrieren finden Sie unter [Registrieren Ihres iOS-Geräts bei Intune](enroll-your-device-in-intune-ios.md) oder [Registrieren Ihres macOS-Geräts bei Intune](enroll-your-device-in-intune-macos.md).
@@ -43,7 +43,16 @@ Es gibt verschiedene Möglichkeiten, verwaltete Apps zu erhalten:
 
 Der Support Ihres Unternehmens kauft womöglich in einigen Fällen mehrere Lizenzen für eine App, die Sie installieren. Wenn Sie eine Meldung sehen, die Sie auffordert, die Apple Volume Purchase Program-Vereinbarung zu akzeptieren, ist dies normal, und Sie können sie akzeptieren. Wenn Sie die Vereinbarung nicht akzeptieren, können Sie die App nicht installieren.
 
-### <a name="what-can-my-company-support-manage-in-an-app"></a>Was kann der Support meines Unternehmens in einer App verwalten?
+## <a name="available-apps"></a>Verfügbare Apps   
+ Ihre Organisation wählt die entsprechenden Apps aus, die für die Arbeit, Schule oder Universität nützlich sind. Sie finden nur diese Apps im Unternehmensportal.   
+
+ Sie haben auch abhängig von Ihrem Gerätetyp Zugriff auf bestimmte Apps. Wenn Sie beispielsweise die Unternehmensportal-App für iOS verwenden, haben Sie Zugriff auf iOS-Apps, nicht aber auf Android-Apps.   
+
+## <a name="request-an-app-for-work-or-school"></a>Anfordern einer App für die Arbeit, Schule oder Universität   
+ Wenn Sie eine App benötigen, diese jedoch nicht im Unternehmensportal finden, können Sie sie anfordern. Die Kontaktdetails für Ihren **Helpdesk** finden Sie unter **Support** in der App des Unternehmensportals. Sie finden entsprechende Kontaktinformationen auf der [Website des Unternehmensportals](https://go.microsoft.com/fwlink/?linkid=2010980).   
+ 
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>Was kann der Support meines Unternehmens in einer App verwalten?  
 Es folgen einige Beispiele für Optionen, die der Support Ihres Unternehmens in einer App verwalten kann und die sich auf Ihre Interaktionen mit Unternehmensdaten auf Ihrem Gerät auswirken können:
 
 -   Zugriff auf bestimmte Websites

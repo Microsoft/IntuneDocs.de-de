@@ -14,12 +14,12 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: 753ad125e541936586f2939985a23ed3b06ea7ea
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: a762f14fd93400d76c63d2108a41229bf2ffc34d
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817159"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122586"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?
 
@@ -39,15 +39,14 @@ Intune und Azure Active Directory stellen gemeinsam sicher, dass nur verwaltete 
 Intune stellt Funktionen für Gerätekonformitätsrichtlinien bereit, die den Konformitätsstatus der Geräte bewerten. Der Konformitätsstatus wird an Azure Active Directory gemeldet, um die in Azure Active Directory erstellte Richtlinie für den bedingten Zugriff zu erzwingen, wenn der Benutzer versucht, auf Unternehmensressourcen zuzugreifen.
 
 Gerätebasierte Richtlinien für den bedingten Zugriff für Exchange Online und andere Office 365-Produkte werden über das [Azure-Portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune) konfiguriert.
-
--   Erfahren Sie mehr über den [bedingten Zugriff in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
+-   Erfahren Sie mehr über [Vorschreiben der Verwendung verwalteter Geräte für den Zugriff auf Cloud-Apps mithilfe des bedingten Zugriffs](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/require-managed-devices).
 
 -   Erfahren Sie mehr über die [Gerätekonformität in Intune](device-compliance.md).
 
--   Erfahren Sie mehr über den [Schutz von E-Mail-, Office 365- und anderen Diensten mithilfe des bedingen Zugriffs in Intune](app-based-conditional-access-intune.md).
+-   Erfahren Sie mehr über [Unterstützte Browser für den bedingten Zugriff in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/technical-reference#supported-browsers).
 
 > [!NOTE]
-> Wenn Sie den gerätebasierten Zugriff für Sharepoint Online auf Android-Geräten aktivieren, müssen Benutzer die Option **Browserzugriff aktivieren** auf dem Gerät wie folgt aktivieren:
+> Wenn Sie auf Android-Geräten den gerätebasierten Zugriff für Sharepoint Online oder den browserbasierten Zugriff auf Exchange Online aktivieren, müssen Benutzer die Option **Browserzugriff aktivieren** auf dem Gerät wie folgt aktivieren:
 > 1. Starten Sie die **Unternehmensportal-App**.
 > 2. Rufen Sie die Seite **Einstellungen** über die Schaltfläche mit den drei Punkten (…) oder über die physische Menütaste auf.
 > 3. Drücken Sie die Schaltfläche **Browserzugriff aktivieren** . 
@@ -146,7 +145,9 @@ Der bedingte Zugriff für PCs bietet eine Funktionalität, die der für mobile G
 
 #### <a name="bring-your-own-device-byod"></a>Bring Your Own Device (BYOD)
 
--   **Arbeitsplatzbeitritt und Intune-Verwaltung**: Bei dieser Option können Benutzer ihre persönlichen Geräte einbinden, um auf Unternehmensressourcen und -dienste zuzugreifen. Sie können den Arbeitsplatzbeitritt verwenden und Geräte bei Intune registrieren, um Richtlinien auf Geräteebene zu erhalten. Dies ist eine weitere Option zum Auswerten von Kriterien für den bedingten Zugriff.
+-   **Arbeitsplatzbeitritt und Intune-Verwaltung**: Bei dieser Option können Benutzer ihre persönlichen Geräte einbinden, um auf Unternehmensressourcen und -dienste zuzugreifen. Sie können den Arbeitsplatzbeitritt verwenden und Geräte bei Intune MDM registrieren, um Richtlinien auf Geräteebene zu erhalten. Dies ist eine weitere Option zum Auswerten von Kriterien für den bedingten Zugriff.
+
+Erfahren Sie mehr über [Geräteverwaltung in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/overview).
 
 ## <a name="app-based-conditional-access"></a>App-basierter bedingter Zugriff
 

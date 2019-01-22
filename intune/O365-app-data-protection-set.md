@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ef84a77961dafc1a881bdb54208fae602857ae32
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: 807bc306848a731e63f7f854a9d4b451264e21a8
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067464"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210804"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Was der grundlegende Schutz in verwalteten Office 365-Apps in Microsoft Intune beinhaltet umfasst.
 
@@ -89,33 +89,32 @@ In diesem Artikel wird OneDrive for Business als Beispiel verwendet, um die Benu
 
 ## <a name="what-policies-does-this-wizard-set"></a>Welche Richtlinien legt dieser Assistent fest?
 
-|     |       | |
-|----|--------|-|
-|**Name**|Verwalten von Office 365-Apps| |
-| **Beschreibung**|Erstellt vom Assistenten zum Verwalten von Office 365-Apps| |
-| |  | |
-| **Einstellungsname** |**iOS-Richtlinienwert** | **Android-Richtlinienwert** |
-|iTunes- und iCloud-Datensicherungen verhindern| Nein | N/V |
-|Android-Datensicherungen verhindern |N/V | Nein|
-|App Übertragung von Daten an andere Apps erlauben | Alle Apps | Alle Apps|
-|App Empfang von Daten aus anderen Apps erlauben| Alle Apps | Alle Apps|
-|"Speichern unter" verhindern | Nein | Nein|
-|Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken | Jede App | Jede App |
-|Einschränken von anzuzeigenden Webinhalten in einem unternehmensverwalteten Browser | Nein| Nein|
-|App-Daten verschlüsseln | Wenn das Gerät gesperrt ist | Ja|
-|Kontaktsynchronisierung deaktivieren | Nein| Nein|
-|Drucken deaktivieren | Nein | Nein|
-|PIN für Zugriff anfordern | Nein | Ja|
-|Anzahl der Versuche vor dem Zurücksetzen der PIN | N/V |5|
-|Einfache PIN zulassen | N/V |Ja|
-|PIN-Länge | N/V | 4|
-|Fingerabdruck anstelle von PIN zulassen | N/V | Ja |
-|Unternehmensanmeldeinformationen für Zugriff erforderlich | Nein | Nein|
-|Blockieren der Ausführung von verwalteten Apps auf per Jailbreak oder Rooting manipulierten Geräten | Nein | Nein|
-|Zugriffsanforderungen nach (Minuten) erneut überprüfen – Timeout | 30 | 30|
-|Zugriffsanforderungen nach (Minuten) erneut überprüfen – Offline-Toleranzperiode | 720 |720|
-|Offline-Intervall (in Tagen), bevor App-Daten zurückgesetzt werden | 90 | 90|
-|Bildschirmaufnahme blockieren (nur Android-Geräte) | N/V | Nein |
+**Name**: Verwalten von Office 365-Apps<br>
+**Beschreibung**: Erstellt vom Assistenten zum Verwalten von Office 365-Apps
+
+| Name der Einstellung | iOS-Richtlinienwert | Android-Richtlinienwert |
+|------------------------------------------------------------------------|-----------------------|----------------------|
+| iTunes- und iCloud-Datensicherungen verhindern | Nein | N/V |
+| Android-Datensicherungen verhindern | N/V | Nein |
+| App Übertragung von Daten an andere Apps erlauben | Alle Apps | Alle Apps |
+| App Empfang von Daten aus anderen Apps erlauben | Alle Apps | Alle Apps |
+| "Speichern unter" verhindern | Nein | Nein |
+| Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken | Jede App | Jede App |
+| Einschränken von anzuzeigenden Webinhalten in einem unternehmensverwalteten Browser | Nein | Nein |
+| App-Daten verschlüsseln | Wenn das Gerät gesperrt ist | Ja |
+| Kontaktsynchronisierung deaktivieren | Nein | Nein |
+| Drucken deaktivieren | Nein | Nein |
+| PIN für Zugriff anfordern | Nein | Ja |
+| Anzahl der Versuche vor dem Zurücksetzen der PIN | N/V | 5 |
+| Einfache PIN zulassen | N/V | Ja |
+| PIN-Länge | N/V | 4 |
+| Fingerabdruck anstelle von PIN zulassen | N/V | Ja |
+| Unternehmensanmeldeinformationen für Zugriff erforderlich | Nein | Nein |
+| Blockieren der Ausführung von verwalteten Apps auf per Jailbreak oder Rooting manipulierten Geräten | Nein | Nein |
+| Zugriffsanforderungen nach (Minuten) erneut überprüfen – Timeout | 30 | 30 |
+| Zugriffsanforderungen nach (Minuten) erneut überprüfen – Offline-Toleranzperiode | 720 | 720 |
+| Offline-Intervall (in Tagen), bevor App-Daten zurückgesetzt werden | 90 | 90 |
+| Bildschirmaufnahme blockieren (nur Android-Geräte) | N/V | Nein |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>Warum nur für Android-Geräte eine App-PIN-Richtlinie konfiguriert?
 Die Verschlüsselung funktioniert unter iOS und Android unterschiedlich.

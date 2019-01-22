@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 44dc3f82b8d51007d3eaf1d71f1a416ebfe319b4
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 3993cb4e7ccbc04ccc1d341a9bd72594948f3262
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738068"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297518"
 ---
 # <a name="reference-for-devices-entities"></a>Referenz für Geräteentitäten
 
@@ -46,7 +46,7 @@ Die Entität **DeviceTypes** stellt den Gerätetyp dar, auf den von anderen Data
 | DeviceTypeKey |Der eindeutige Bezeichner des Gerätetyps im Data Warehouse – Ersatzschlüssel |
 | DeviceTypeName |Gerätetyp |
 
-## <a name="example"></a>Beispiel
+### <a name="example"></a>Beispiel
 
 | deviceTypeID  | Name | Beschreibung |
 |---------|------------|--------|
@@ -81,7 +81,7 @@ Die Entität **ClientRegistrationStateTypes** stellt den Registrierungstyp dar, 
 | clientRegisterationStateKey |Der eindeutige Bezeichner des Registrierungsstatus im Data Warehouse – Ersatzschlüssel |
 | clientRegisterationStateName |Registrierungsstatus |
 
-## <a name="example"></a>Beispiel
+### <a name="example"></a>Beispiel
 
 | ClientRegisterationStateID  | Name | Beschreibung |
 |---------|------------|--------|
@@ -95,6 +95,93 @@ Die Entität **ClientRegistrationStateTypes** stellt den Registrierungstyp dar, 
 | 7 |NotRegisteredPendingEnrollment |Nicht registriert, Registrierung ausstehend |
 | 8 |Unbekannt |Unbekannter Status |
 
+## <a name="enrollmentactivities"></a>enrollmentActivities 
+Die Entität **enrollmentActivity** gibt die Aktivität einer Geräteregistrierung an.
+
+| Eigenschaft                      | Beschreibung                                                               |
+|-------------------------------|---------------------------------------------------------------------------|
+| dateKey                       | Der Schlüssel des Datums, an dem diese Registrierungsaktivität aufgezeichnet wurde.               |
+| deviceEnrollmentTypeKey       | Der Schlüssel des Typs der Registrierung.                                        |
+| deviceTypeKey                 | Der Schlüssel des Gerätetyps.                                                |
+| enrollmentEventStatusKey      | Der Schlüssel des Status, der auf eine erfolgreiche bzw. fehlgeschlagene Registrierung hinweist.    |
+| enrollmentFailureCategoryKey  | Der Schlüssel der Kategorie des Registrierungsfehlers (bei fehlgeschlagener Registrierung).        |
+| enrollmentFailureReasonKey    | Der Schlüssel des Grunds des Registrierungsfehlers (bei fehlgeschlagener Registrierung).          |
+| osVersion                     | Die Betriebssystemversion des Geräts.                               |
+| count                         | Die Gesamtanzahl der Registrierungsaktivitäten, die den oben genannten Klassifizierungen entsprechen.  |
+
+## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
+Die Entität **enrollmentEventStatus** gibt das Ergebnis einer Geräteregistrierung an.
+
+| Eigenschaft                   | Beschreibung                                                                       |
+|----------------------------|-----------------------------------------------------------------------------------|
+| enrollmentEventStatusKey   | Eindeutiger Bezeichner des Registrierungsstatus im Data Warehouse (Ersatzschlüssel).  |
+| enrollmentEventStatusName  | Die Bezeichnung des Registrierungsstatus. Siehe folgende Beispiele.                            |
+
+### <a name="example"></a>Beispiel
+
+| enrollmentEventStatusName  | Beschreibung                            |
+|----------------------------|----------------------------------------|
+| Erfolgreich                    | Eine erfolgreiche Geräteregistrierung.         |
+| Failed                     | Eine fehlerhafte Geräteregistrierung.             |
+| Nicht verfügbar              | Der Registrierungsstatus ist nicht verfügbar.  |
+
+## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
+Die Entität **enrollmentFailureCategory** gibt an, warum eine Geräteregistrierung fehlgeschlagen ist. 
+
+| Eigenschaft                       | Beschreibung                                                                                 |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+| enrollmentFailureCategoryKey   | Eindeutiger Bezeichner der Fehlerkategorie für die Registrierung im Data Warehouse (Ersatzschlüssel).  |
+| enrollmentFailureCategoryName  | Der Name der Fehlerkategorie für die Registrierung. Siehe folgende Beispiele.                            |
+
+### <a name="example"></a>Beispiel
+
+| enrollmentFailureCategoryName   | Beschreibung                                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------|
+| Nicht zutreffend                  | Die Fehlerkategorie für die Registrierung ist nicht anwendbar.                                                            |
+| Nicht verfügbar                   | Die Fehlerkategorie für die Registrierung ist nicht verfügbar.                                                             |
+| Unbekannt                         | Unbekannter Fehler.                                                                                                |
+| Authentifizierung                  | Fehler bei der Authentifizierung.                                                                                        |
+| Autorisierung                   | Aufruf war authentifiziert, aber nicht für eine Registrierung autorisiert.                                                         |
+| AccountValidation               | Fehler beim Überprüfen des Kontos für die Registrierung. (Konto gesperrt, Registrierung nicht aktiviert)                      |
+| UserValidation                  | Benutzer konnte nicht überprüft werden. (Benutzer ist nicht vorhanden, fehlende Lizenz)                                           |
+| DeviceNotSupported              | Das Gerät wird für die mobile Geräteverwaltung nicht unterstützt.                                                         |
+| InMaintenance                   | Das Konto befindet sich im Wartungsmodus.                                                                                    |
+| BadRequest                      | Der Client hat eine Anforderung gesendet, die vom Dienst nicht verstanden bzw. unterstützt wird.                                        |
+| FeatureNotSupported             | Die von dieser Registrierung verwendeten Features werden für dieses Konto nicht unterstützt.                                        |
+| EnrollmentRestrictionsEnforced  | Vom Administrator konfigurierte Registrierungseinschränkungen haben diese Registrierung blockiert.                                          |
+| ClientDisconnected              | Für den Client gab es eine Zeitüberschreitung, oder die Registrierung wurde vom Benutzer abgebrochen.                                                        |
+| UserAbandonment                 | Die Registrierung wurde vom Benutzer vorzeitig beendet. (Der Benutzer hat mit dem Onboarding begonnen, aber dieses nicht rechtzeitig abgeschlossen.)  |
+
+## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
+Die Entität **enrollmentFailureReason** gibt eine ausführlichere Ursache für einen Fehler bei der Geräteregistrierung innerhalb einer Fehlerkategorie an.  
+
+| Eigenschaft                     | Beschreibung                                                                               |
+|------------------------------|-------------------------------------------------------------------------------------------|
+| enrollmentFailureReasonKey   | Eindeutiger Bezeichner für die Fehlerursache bei der Registrierung im Data Warehouse (Ersatzschlüssel).  |
+| enrollmentFailureReasonName  | Die Bezeichnung der Fehlerursache bei der Registrierung. Siehe folgende Beispiele.                            |
+
+### <a name="example"></a>Beispiel
+
+| enrollmentFailureReasonName      | Beschreibung                                                                                                                                                                                            |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nicht zutreffend                   | Die Fehlerursache für die Registrierung ist nicht anwendbar.                                                                                                                                                       |
+| Nicht verfügbar                    | Die Fehlerursache für die Registrierung ist nicht verfügbar.                                                                                                                                                        |
+| Unbekannt                          | Unbekannter Fehler.                                                                                                                                                                                         |
+| UserNotLicensed                  | Der Benutzer wurde nicht in Intune gefunden oder verfügt über keine gültige Lizenz.                                                                                                                                     |
+| UserUnknown                      | Der Benutzer ist Intune nicht bekannt.                                                                                                                                                                           |
+| BulkAlreadyEnrolledDevice        | Nur ein Benutzer kann ein Gerät registrieren. Dieses Gerät wurde zuvor von einem anderen Benutzer registriert.                                                                                                                |
+| EnrollmentOnboardingIssue        | Die Intune-Autorität für die mobile Geräteverwaltung (MDM) ist noch nicht konfiguriert.                                                                                                                                 |
+| AppleChallengeIssue              | Die Installation des iOS-Verwaltungsprofils hat sich verzögert oder war fehlerhaft.                                                                                                                                         |
+| AppleOnboardingIssue             | Für die Registrierung in Intune ist ein Apple-MDM-Pushzertifikat erforderlich.                                                                                                                                       |
+| DeviceCap                        | Der Benutzer hat versucht, mehr Geräte zu registrieren, als maximal zulässig sind.                                                                                                                                        |
+| AuthenticationRequirementNotMet  | Der Intune-Registrierungsdienst konnte diese Anforderung nicht autorisieren.                                                                                                                                            |
+| UnsupportedDeviceType            | Das Gerät erfüllt nicht die Mindestanforderungen für die Intune-Registrierung.                                                                                                                                  |
+| EnrollmentCriteriaNotMet         | Dieses Gerät konnte aufgrund einer konfigurierten Regel zur Einschränkung von Registrierungen nicht registriert werden.                                                                                                                          |
+| BulkDeviceNotPreregistered       | Die IMEI (International Mobile Equipment Identity) bzw. die Seriennummer dieses Geräts wurde nicht gefunden.  Ohne diesen Bezeichner werden Geräte als persönliche Geräte erkannt, die zurzeit gesperrt sind.  |
+| FeatureNotSupported              | Der Benutzer hat versucht, auf eine Funktion zuzugreifen, die noch nicht für alle Kunden freigegeben oder nicht mit Ihrer Intune-Konfiguration kompatibel ist.                                                            |
+| UserAbandonment                  | Die Registrierung wurde vom Benutzer vorzeitig beendet. (Der Benutzer hat mit dem Onboarding begonnen, aber dieses nicht rechtzeitig abgeschlossen.)                                                                                           |
+| APNSCertificateExpired           | Apple-Geräte können nicht mit einem abgelaufenen Apple-MDM-Pushzertifikat verwaltet werden.                                                                                                                            |
+
 ## <a name="enrollmenttypes"></a>EnrollmentTypes
 
 Die Entität **EnrollmentTypes** gibt an, wie ein Gerät registriert wurde. Der Registrierungstyp erfasst die Registrierungsmethode. In den Beispielen werden die verschiedenen Registrierungstypen und ihre Bedeutung aufgelistet.
@@ -105,7 +192,7 @@ Die Entität **EnrollmentTypes** gibt an, wie ein Gerät registriert wurde. Der 
 | managementStateKey |Der eindeutige Bezeichner des Verwaltungsstatus im Data Warehouse – Ersatzschlüssel |
 | managementStateName |Gibt den Status der Remoteaktion an, die auf dieses Gerät angewendet wurde |
 
-## <a name="example"></a>Beispiel
+### <a name="example"></a>Beispiel
 
 | enrollmentTypeID  | Name | Beschreibung |
 |---------|------------|--------|
@@ -140,14 +227,14 @@ Die Entität **MdmStatuses** gibt den Konformitätszustand des Geräts an.
 | ComplianceStatus |Der Kompatibilitätszustand des Geräts sollte einem der Werte aus der untenstehenden Tabelle entsprechen. | 
 
 
-## <a name="example"></a>Beispiel
+### <a name="example"></a>Beispiel
 
 | MdmStatusID  | ComplianceStatus | Beschreibung |
 |---------|------------|--------|
 | 0 |Unbekannt |Der Kompatibilitätszustand des Geräts ist „Unbekannt“. |
 | 1 |Kompatibel |Das Gerät ist kompatibel. |
 | 2 |Nicht richtlinienkonform |Das Gerät ist nicht richtlinienkonform. |
-| 3 |Conflict |Die Kompatibilität des Geräts hat einen Konflikt ausgelöst. |
+| 3 |Konflikt |Die Kompatibilität des Geräts hat einen Konflikt ausgelöst. |
 | 4 |Fehler |Beim Lesen des Kompatibilitätszustands des Geräts ist ein Fehler aufgetreten. |
 
 
@@ -161,7 +248,7 @@ Die Entität **ManagementStates** stellt Details zum Status des Geräts bereit. 
 | managementStateKey | Der eindeutige Bezeichner des Verwaltungsstatus im Data Warehouse – Ersatzschlüssel |
 | managementStateName | Gibt den Status der Remoteaktion an, die auf dieses Gerät angewendet wurde |
 
-## <a name="example"></a>Beispiel
+### <a name="example"></a>Beispiel
 
 | managementStateID  | Name | Beschreibung |
 |---------|------------|--------|
@@ -188,7 +275,7 @@ Die Entität **WorkPlaceJoinStateTypes** stellt den Status des Azure Active Dire
 | WorkPlaceJoinStateKey | Der eindeutige Bezeichner des Status des Beitritts zum Arbeitsplatz im Data Warehouse – Ersatzschlüssel |
 | WorkPlaceJoinStateName | Status des Beitritts zum Arbeitsplatz |
 
-## <a name="example"></a>Beispiel
+### <a name="example"></a>Beispiel
 
 | workPlaceJoinStateID  | Name | Beschreibung |
 |---------|------------|--------|
@@ -212,7 +299,7 @@ Die Entität **ManagementAgentTypes** stellt die Agents dar, die zum Verwalten v
 | ManagementAgentTypeKey | Eindeutiger Bezeichner des Verwaltungs-Agent-Typen im Data Warehouse – Ersatzschlüssel |
 | ManagementAgentTypeName |Gibt an, welche Art von Agent zum Verwalten des Geräts verwendet wird |
 
-## <a name="example"></a>Beispiel
+### <a name="example"></a>Beispiel
 
 | ManagementAgentTypeID  | Name | Beschreibung |
 |---------|------------|--------|

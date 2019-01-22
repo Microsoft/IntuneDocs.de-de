@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 60df25542e69422e15a2a57473a3fbfa2cc413a5
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: d5b07262dad3eaab76dd4854b82f0e45b3921b26
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959501"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203500"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Verwenden verwalteter Apps auf Ihrem Android-Gerät
 Verwaltete Apps werden so konfiguriert, dass sie den Sicherheitsanforderungen Ihrer Organisation entsprechen. Sie schützen die Daten von Unternehmen, Schulen und Universitäten. Diese Apps werden auf Ihrem Gerät zur Verfügung gestellt und automatisch installiert bzw. verwendet. 
@@ -56,7 +56,15 @@ Zunächst müssen Sie das Unternehmensportal installieren und ggf. Ihr Gerät ve
 * Ihre Organisation stellt verwaltete Apps im Unternehmensportal zur Verfügung. Sie können diese Apps über die Unternehmensportal-App oder -website suchen, abrufen und installieren. 
 * Sie können die App über den Google Play Store installieren und sich anschließend mit Ihrem Geschäfts-, Schul- oder Unikonto anmelden.  
 
-## <a name="what-can-my-company-support-manage-in-an-app"></a>Was kann der Support meines Unternehmens in einer App verwalten?
+ ## <a name="available-apps"></a>Verfügbare Apps   
+ Ihre Organisation wählt die entsprechenden Apps aus, die für die Arbeit, Schule oder Universität nützlich sind. Sie finden nur diese Apps im Unternehmensportal.   
+
+ Sie haben auch abhängig von Ihrem Gerätetyp Zugriff auf bestimmte Apps. Wenn Sie beispielsweise die Unternehmensportal-App für Android verwenden, haben Sie Zugriff auf Android-Apps, nicht aber auf iOS-Apps.   
+
+ ## <a name="request-an-app-for-work-or-school"></a>Anfordern einer App für die Arbeit, Schule oder Universität   
+ Wenn Sie eine App benötigen, diese jedoch nicht im Unternehmensportal finden, können Sie sie anfordern. Die Kontaktdetails für Ihren **Helpdesk** finden Sie unter **IT kontaktieren** in der App des Unternehmensportals. Sie finden entsprechende Kontaktinformationen auf der [Website des Unternehmensportals](https://go.microsoft.com/fwlink/?linkid=2010980).   
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>Was kann der Support meines Unternehmens in einer App verwalten?  
 Nachfolgend sind die Einstellungen aufgeführt, die der Support Ihres Unternehmens innerhalb einer App verwalten kann. Diese Einstellungen haben Einfluss darauf, wie Sie Unternehmens-, Schul- oder Unidaten auf Ihrem Gerät abrufen, auf diese Zugreifen oder auf andere Weise mit diesen arbeiten:
 
 * Zugriff auf bestimmte Websites  

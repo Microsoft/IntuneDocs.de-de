@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 1/17/2018
+ms.date: 1/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 305799fa21ae7c3464caf8f7019dcf9e8170d3ac
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 32281ae37b7b36dfbf49503275a8a1e6c35d8f6d
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181478"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210787"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Häufig auftretende Probleme und Lösungen für Geräteprofile in Microsoft Intune
 
@@ -51,14 +51,14 @@ Wenn ein Gerät sich nach der ersten Benachrichtigung nicht zum Abrufen der Rich
 - iOS und macOS: alle sechs Stunden
 - Android: alle acht Stunden
 - Windows Phone: alle acht Stunden
-- Als Geräte registrierte PCs unter Windows 8.1 und Windows 10: alle acht Stunden
+- Als Geräte registrierte PCs unter Windows 8.1 und Windows 10: alle acht Stunden
 
 Wenn das Gerät gerade registriert wurde, ist die Check-In-Frequenz höher:
 
 - iOS und macOS: sechs Stunden lang alle 15 Minuten, danach alle sechs Stunden
 - Android: 15 Minuten lang alle drei Minuten, danach zwei Stunden lang alle 15 Minuten, anschließend alle acht Stunden
 - Windows Phone: 15 Minuten lang alle fünf Minuten, danach zwei Stunden lang alle 15 Minuten, anschließend alle acht Stunden
-- Als Geräte registrierte Windows-PCs: 30 Minuten lang alle drei Minuten, danach alle acht Stunden.
+- Windows-PCs, die als Geräte registriert sind: 30 Minuten lang alle drei Minuten, danach alle acht Stunden
 
 Benutzer können auch jederzeit die Unternehmensportal-App öffnen und das Gerät synchronisieren, um sofort zu prüfen, ob neue Richtlinien vorliegen.
 
@@ -72,11 +72,11 @@ Andere Änderungen, wie z. B. die Überarbeitung der Kontaktinformationen im Un
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Wie finde ich heraus, welche Einstellungen angewendet werden, wenn für denselben Benutzer oder dasselbe Gerät mehrere Richtlinien zugewiesen werden?
 Bei Zuweisung mehrerer Richtlinien für denselben Benutzer oder dasselbe Gerät wird auf der Ebene der einzelnen Einstellungen festgelegt, welche Einstellung angewendet werden soll:
 
--   Kompatibilitätsrichtlinieneinstellungen haben immer Vorrang vor Konfigurationsrichtlinieneinstellungen
+- Kompatibilitätsrichtlinieneinstellungen haben immer Vorrang vor Konfigurationsrichtlinieneinstellungen
 
--   Die restriktivste Kompatibilitätsrichtlinie wird angewendet, wenn sie anhand derselben Einstellung in einer anderen Kompatibilitätsrichtlinie ausgewertet wird.
+- Die restriktivste Kompatibilitätsrichtlinie wird angewendet, wenn sie anhand derselben Einstellung in einer anderen Kompatibilitätsrichtlinie ausgewertet wird.
 
--   Falls eine Konfigurationsrichtlinieneinstellung im Konflikt mit einer Einstellung in einer anderen Konfigurationsrichtlinie steht, wird dieser Konflikt im Azure-Portal angezeigt. Konflikte dieser Art müssen Sie manuell auflösen.
+- Falls eine Konfigurationsrichtlinieneinstellung im Konflikt mit einer Einstellung in einer anderen Konfigurationsrichtlinie steht, wird dieser Konflikt im Azure-Portal angezeigt. Konflikte dieser Art müssen Sie manuell auflösen.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>Was geschieht, wenn App-Schutzrichtlinien in Konflikt stehen? Welche wird auf die App angewendet?
 Konfliktwerte sind die restriktivsten Einstellungen, die in einer App-Schutzrichtlinie zur Verfügung stehen, außer für die Zahleneingabefelder (z. B. PIN-Versuche vor dem Zurücksetzen). Die Zahleneingabefelder werden auf dieselben Werte gesetzt, die auch verwendet werden, wenn Sie in der Konsole eine MAM-Richtlinie erstellen und die empfohlenen Einstellungen verwenden.
@@ -93,40 +93,43 @@ Wenn Sie ein benutzerdefiniertes Profil zuweisen, stellen Sie sicher, dass die k
 ## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>Was geschieht, wenn ein Profil gelöscht wird oder nicht mehr gilt?
 Wenn Sie ein Profil löschen oder ein Gerät aus einer Gruppe mit dem Profil entfernen, werden das Profil und die Einstellungen gemäß den folgenden Listen vom Gerät entfernt.
 
-- WLAN-, VPN-, Zertifikat- und E-Mail-Profile: Diese Profile werden von allen unterstützten registrierten Geräten entfernt.
+- WLAN-, VPN-, Zertifikat- und E-Mail-Profile Diese Profile werden von allen unterstützten registrierten Geräten entfernt.
 - Alle anderen Profiltypen:  
-    - **Windows- und Android-Geräte**: Einstellungen werden nicht vom Gerät entfernt.
-    - **Windows Phone 8.1-Geräte**: Die folgenden Einstellungen werden entfernt:  
-        - Anfordern eines Kennworts zum Entsperren mobiler Geräte
-        - Einfache Kennwörter zulassen
-        - Minimale Kennwortlänge
-        - Erforderlicher Kennworttyp
-        - Kennwortablauf (Tage)
-        - Kennwortverlauf speichern
-        - Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird
-        - Minuten der Inaktivität, bevor ein Kennwort erforderlich ist
-        - Erforderlicher Kennworttyp – Mindestanzahl von Zeichensätzen
-        - Kamera zulassen
-        - Verschlüsselung auf mobilem Gerät anfordern
-        - Wechselspeichermedien zulassen
-        - Webbrowser zulassen
-        - App Store zulassen
-        - Bildschirmaufnahme zulassen
-        - Geolocation zulassen
-        - Microsoft-Konto erlauben
-        - Kopieren und Einfügen zulassen
-        - WLAN-Tethering zulassen
-        - Automatische Verbindung mit unverschlüsselten WLAN-Hotspots zulassen
-        - Berichterstellung für WLAN-Hotspots zulassen
-        - Zurücksetzen zulassen
-        - Bluetooth zulassen
-        - NFC zulassen
-        - WLAN zulassen
 
-    - **iOS**: Alle Einstellungen werden entfernt, außer:
-        - Sprachroaming zulassen
-        - Datenroaming zulassen
-        - Automatische Synchronisierung beim Roaming zulassen
+  - **Windows- und Android-Geräte:** Einstellungen werden nicht von dem Gerät entfernt
+  - **Windows Phone 8.1-Geräte:** Die folgenden Einstellungen werden entfernt:  
+  
+    - Anfordern eines Kennworts zum Entsperren mobiler Geräte
+    - Einfache Kennwörter zulassen
+    - Minimale Kennwortlänge
+    - Erforderlicher Kennworttyp
+    - Kennwortablauf (Tage)
+    - Kennwortverlauf speichern
+    - Anzahl zulässiger wiederholter Anmeldefehler, bevor das Gerät zurückgesetzt wird
+    - Minuten der Inaktivität, bevor ein Kennwort erforderlich ist
+    - Erforderlicher Kennworttyp – Mindestanzahl von Zeichensätzen
+    - Kamera zulassen
+    - Verschlüsselung auf mobilem Gerät anfordern
+    - Wechselspeichermedien zulassen
+    - Webbrowser zulassen
+    - App Store zulassen
+    - Bildschirmaufnahme zulassen
+    - Geolocation zulassen
+    - Microsoft-Konto erlauben
+    - Kopieren und Einfügen zulassen
+    - WLAN-Tethering zulassen
+    - Automatische Verbindung mit unverschlüsselten WLAN-Hotspots zulassen
+    - Berichterstellung für WLAN-Hotspots zulassen
+    - Zurücksetzen zulassen
+    - Bluetooth zulassen
+    - NFC zulassen
+    - WLAN zulassen
+
+  - **iOS**: Alle Einstellungen werden entfernt, außer:
+  
+    - Sprachroaming zulassen
+    - Datenroaming zulassen
+    - Automatische Synchronisierung beim Roaming zulassen
 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>Ich habe ein Profil für Geräteeinschränkungen geändert, aber die Änderungen wurden nicht übernommen
 Windows Phone-Geräte gestatten keine Verringerung der Sicherheitsstufe in Sicherheitsrichtlinien, die mittels MDM oder EAS festgelegt wurden, nachdem diese festgelegt wurden. Angenommen, Sie legen ein **Kennwort mit Mindestanzahl von Zeichen** auf 8 fest und versuchen dann, diesen Wert auf 4 zu verringern. Das restriktivere Profil wurde bereits auf das Gerät angewendet.
@@ -134,6 +137,14 @@ Windows Phone-Geräte gestatten keine Verringerung der Sicherheitsstufe in Siche
 Wenn Sie das Profil auf einen niedrigeren Sicherheitswert ändern möchten, müssen Sie die Sicherheitsrichtlinien zurücksetzen. In Windows 8.1 wischen Sie beispielsweise auf dem Desktop von rechts nach innen. Wählen Sie anschließend **Einstellungen** > **Systemsteuerung** aus. Wählen Sie das Applet **Benutzerkonten** aus. Im Navigationsmenü auf der linken Seite befindet sich im unteren Bereich ein Link **Sicherheitsrichtlinien zurücksetzen**. Wählen Sie ihn aus. Wählen Sie anschließend **Richtlinien zurücksetzen** aus.
 
 Andere MDM-Geräte, wie Android, Windows Phone 8.1 und höher, iOS sowie Windows 10, müssen möglicherweise außer Kraft gesetzt und bei dem Dienst neu registriert werden, damit Sie ein weniger restriktives Profil anwenden können.
+
+## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Einige Einstellungen in einem Windows 10-Profil werden als „Nicht verfügbar“ zurückgegeben
+Einige Einstellungen auf Windows 10-Geräten werden möglicherweise als „Nicht verfügbar“ angezeigt. In diesen Fällen werden die Einstellungen von der auf Ihrem Gerät ausgeführten Windows-Version oder -Edition nicht unterstützt. Diese Meldung kann aus folgenden Gründen angezeigt werden:
+
+- Die Einstellung ist nur auf neueren Windows-Versionen und nicht auf der aktuellen Betriebssystemversion verfügbar.
+- Die Einstellung ist nur für bestimmte Windows-Editionen oder bestimmte SKUs, z. B. Home, Professional, Education und Enterprise, verfügbar.
+
+Weitere Informationen zu den Anforderungen an Version und SKU für die verschiedenen Einstellungen finden Sie in der [Configuration Service Provider (CSP) reference (Referenz zu Konfigurationsdienstanbietern)](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference).
 
 ## <a name="next-steps"></a>Nächste Schritte
 Benötigen Sie zusätzliche Hilfe? Weitere Informationen finden Sie unter [Anfordern von Support für Microsoft Intune](get-support.md).

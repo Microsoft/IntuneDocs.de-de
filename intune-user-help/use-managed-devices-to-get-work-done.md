@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,26 +17,26 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150665"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203145"
 ---
-# <a name="use-managed-devices-to-get-work-done"></a>Verwenden verwalteter Geräte zum Erledigen von Aufgaben
-Microsoft Intune ist eine Softwarekomponente, mit der Betriebe Geräte (z.B. Smartphones, Tablets und PCs), Apps und andere Unternehmensressourcen (z.B. E-Mail-Dienste) verwalten können. Damit erhalten Mitarbeiter Zugriff auf ihre Arbeitsdaten von praktisch überall auf nahezu jedem Gerät, während die Unternehmensdaten gleichzeitig geschützt werden.
+# <a name="use-managed-devices-to-access-work-or-school-resources"></a>Verwenden verwalteter Geräte für den Zugriff auf Geschäfts-, Schul- und Uniressourcen
+Microsoft Intune ist ein Geräteverwaltungssystem, mit dem Organisationen den Zugriff auf Geräte, Apps und E-Mails verwalten können. Mithilfe der Geräteverwaltung können Sie und andere Mitarbeiter, Schüler bzw. Studenten auf Ihre relevanten Informationen von praktisch überall und von nahezu jedem Gerät aus zugreifen. Selbst wenn Sie an einem Remotestandort arbeiten, bleiben Ihre Daten und die Informationen Ihrer Organisation geschützt.
 
-Wenn Sie ein Gerät für die Verwaltung durch Intune registrieren, kann Ihre IT-Abteilung diese Geschäfts-, Schul- oder Uniressourcen verwalten, das Gerät schützen und Ihnen und den Mitarbeitern gleichzeitig die Möglichkeit bieten, Ihr bevorzugtes Gerät zu verwenden, um Ihre Arbeit erledigen. Der wichtigste Schritt ist die Registrierung des Geräts in der Verwaltung über das Unternehmensportal.
+Microsoft Intune ist die Software, mit der Ihr Unternehmen seine Sicherheits- und Geräteanforderungen konfiguriert. Wenn Sie Ihr Gerät verwalten lassen möchten, verwenden Sie einfach die Intune-Unternehmensportal-App. Über diese App können Sie mit Ihrem bevorzugten Gerät auf Geschäfts-, Schul- oder Uniressourcen zugreifen. 
 
-## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>Welche Informationen erhält mein Unternehmen, wenn ich mein Gerät in Intune registriere?
-Der Support Ihres Unternehmens kann Informationen sehen, die für Ihre Arbeit wichtig sind, nicht jedoch Ihre persönlichen Informationen. Dies ist besonders dann wichtig für Sie, wenn Sie ein persönliches Gerät für Ihre Arbeit registrieren wollen. Im nächsten Artikel in der Benutzerhilfe schlüsseln wir genau auf, [was sie sehen und was sie nicht sehen können](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+## <a name="what-information-can-my-company-see-when-i-get-my-device-managed"></a>Welche Informationen erhält mein Unternehmen, wenn ich mein Gerät verwalten lasse?
+Nachdem Sie im Unternehmensportal registriert wurden, können Supportmitarbeiter Ihres Unternehmens nur noch geschäftsrelevante Informationen sehen. Persönliche Daten können sie nicht anzeigen. Dies ist besonders dann wichtig für Sie, wenn Sie ein persönliches Gerät für Ihre Arbeit registrieren wollen. Im nächsten Artikel finden Sie genaue Informationen darüber, [was sie sehen und was sie nicht sehen können](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
-## <a name="how-do-i-get-the-company-portal"></a>Wie gelange ich zum Unternehmensportal?
-Sie gelangen auf zwei Arten zum Unternehmensportal:
+## <a name="how-do-i-get-company-portal"></a>Wie gelange ich zum Unternehmensportal?
+Auf das Unternehmensportal können Sie wie folgt zugreifen:
 
 - Durch Installieren der Unternehmensportal-App auf Ihrem Gerät. In der Regel erhalten Sie die Unternehmensportal-App, indem Sie sie aus dem App Store Ihres Geräts herunterladen. Allerdings kann auch die Supportabteilung Ihres Unternehmens die Unternehmensportal-App für Sie auf Ihrem Gerät installieren.
-- Besuchen Sie die [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980) der Supportabteilung Ihres Unternehmens.
+- Durch Öffnen der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980) der Supportabteilung Ihres Unternehmens.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Was ist der Unterschied zwischen der App und der Website?
 Es gibt wenige kleinere Unterschiede zwischen der Unternehmensportal-App und der Unternehmensportal-Website, aber die meisten Aufgaben können Sie sowohl in der App als auch auf der Website genauso ausführen. Aufgaben, die Sie erledigen können, sind die folgenden:

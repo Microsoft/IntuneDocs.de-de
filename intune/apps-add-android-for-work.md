@@ -1,12 +1,12 @@
 ---
-title: Zuweisen von Apps zu Android-Arbeitsprofilgeräten
+title: Zuweisen von verwalteten Google Play-Apps für Android Enterprise-Geräte
 titlesuffix: Microsoft Intune
-description: Erfahren Sie, wie Sie Apps mit Android-Arbeitsprofilgeräten synchronisieren und sie diesen über den Managed Google Play Store zuweisen.
+description: Erfahren Sie, wie Sie Apps mit Android Enterprise-Geräten synchronisieren und sie diesen über den verwalteten Google Play Store zuweisen.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305929"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239573"
 ---
-# <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Zuweisen von Apps zu Android-Arbeitsprofilgeräten mit Intune
+# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Zuweisen von verwalteten Google Play-Apps für Android Enterprise-Geräte mit Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android Enterprise ist ein Programm für Android-Geräte mit Arbeitsprofilen und für Android-Kioskgeräte. Für Android-Geräte mit Arbeitsprofilen stellt Android Enterprise eine Reihe von Features und Diensten bereit, die Ihre privaten Apps und Daten von Ihrem Arbeitsprofil von Geschäfts-Apps und -daten trennt. Android Enterprise bietet zusätzliche Verwaltungsoptionen und zusätzlichen Datenschutz, wenn Benutzer ihre Android-Geräte für die Arbeit verwenden. Intune unterstützt Sie bei der Bereitstellung von Apps und Einstellungen auf Android-Arbeitsprofilgeräten und stellt so sicher, dass geschäftliche und private Informationen immer getrennt bleiben. Alle Apps, die für Android-Geräte mit Arbeitsprofilen installiert werden, stammen aus dem Managed Google Play Store. Das Zuweisen von Apps zu Android-Arbeitsprofilgeräten unterscheidet sich von deren Zuweisung zu „normalen“ Android-Geräten. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese. Die App wird dann im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt, und Sie können die Zuweisung der App wie bei jeder anderen App verwalten.
+Android Enterprise ist ein Programm für Android-Arbeitsprofilgeräte, dedizierte bzw. Kioskgeräte sowie vollständig verwaltete Geräte. Für Android-Geräte mit Arbeitsprofilen stellt Android Enterprise eine Reihe von Features und Diensten bereit, die Ihre privaten Apps und Daten von Ihrem Arbeitsprofil von Geschäfts-Apps und -daten trennt. Android Enterprise bietet zusätzliche Verwaltungsoptionen und zusätzlichen Datenschutz, wenn Benutzer ihre Android-Geräte für die Arbeit verwenden. Intune unterstützt Sie bei der Bereitstellung von Apps und Einstellungen auf Android-Arbeitsprofilgeräten und stellt so sicher, dass geschäftliche und private Informationen immer getrennt bleiben. Alle Apps, die für Android-Geräte mit Arbeitsprofilen installiert werden, stammen aus dem Managed Google Play Store. Das Zuweisen von Apps zu Android-Arbeitsprofilgeräten unterscheidet sich von deren Zuweisung zu „normalen“ Android-Geräten. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese. Die App wird dann im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt, und Sie können die Zuweisung der App wie bei jeder anderen App verwalten.
 
 Wenn Sie eigene branchenspezifische Apps erstellt haben, können Sie diese ebenfalls wie folgt zuweisen:
 - Registrieren Sie sich für ein Google Developer-Konto, über das Sie Apps in einem privaten Bereich im Google Play Store veröffentlichen können.

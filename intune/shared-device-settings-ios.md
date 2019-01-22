@@ -1,12 +1,12 @@
 ---
-title: Microsoft Intune-Konfigurationseinstellungen für freigegebene iOS-Geräte
+title: 'Anpassen des Sperrbildschirms auf iOS-Geräten mithilfe von Microsoft Intune: Azure | Microsoft-Dokumentation'
 titlesuffix: ''
-description: Erfahren Sie mehr über die Microsoft Intune-Einstellungen zur Anzeige von Informationen auf dem Sperrbildschirm von iOS-Geräten.
+description: Erfahren Sie mehr über die Microsoft Intune-Einstellungen zur Anzeige von Informationen auf dem Sperrbildschirm von iOS-Geräten mithilfe der Konfigurationseinstellungen für freigegebene Geräte für iOS.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 12/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,34 +14,41 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 638b4b3ebc83917faae0d34ec407b8ad47b4a4fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9f4d75d795421c761398f349c324b498fd21ca01
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183382"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203075"
 ---
-# <a name="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen"></a>Konfigurationseinstellungen für freigegebene Geräte zum Anzeigen von Nachrichten auf dem iOS-Geräte-Sperrbildschirm
+# <a name="add-custom-messages-to-lock-screen-and-login-window-on-ios-devices-using-microsoft-intune"></a>Hinzufügen benutzerdefinierter Nachrichten zum Sperrbildschirm und Anmeldefenster auf iOS-Geräten mithilfe von Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-In diesem Artikel erfahren Sie mehr über die Microsoft Intune-Einstellungen zur Anzeige von Informationen auf dem Sperrbildschirm von iOS-Geräten.
+In diesem Artikel erfahren Sie mehr über die Microsoft Intune-Einstellungen zur Anzeige von Informationen auf dem Sperrbildschirm und im Anmeldefenster von iOS-Geräten. 
 
-Mit Konfigurationseinstellungen für freigegebene Geräte können Sie optionalen Text angeben, der im Anmeldefenster und auf dem Sperrbildschirm angezeigt wird. So können Sie z.B. eine „Wenn verloren, zurück an“-Nachricht und Bestandskennzeicheninformationen eingeben. 
+Verwenden Sie diese Einstellungen, um eine benutzerdefinierte Nachricht oder einen Text im Anmeldefenster und auf dem Sperrbildschirm anzuzeigen. So können Sie z.B. eine „Wenn verloren, zurück an“-Nachricht und Bestandskennzeicheninformationen eingeben.
 
->[!IMPORTANT]
-> Diese Funktion wird auf überwachten Geräten mit iOS 9.3 und höher unterstützt.
+Diese Einstellungen unterstützen überwachte Geräte, auf denen iOS 9.3 oder höher ausgeführt wird.
 
-## <a name="create-shared-device-settings"></a>Erstellen von freigegebenen Geräteeinstellungen
+## <a name="create-the-profile"></a>Erstellen des Profils
 
-1. Navigieren Sie in [Intune im Azure-Portal](https://portal.azure.com) [im Gerätekonfigurationsbereich zu **Gerätefunktionen**](device-features-configure.md). 
-1. Klicken Sie im Bereich **Gerätefeatures** auf die Option **Shared Device Configuration (supervised only)** (Konfiguration freigegebener Geräte (nur überwacht)).
-2. Konfigurieren Sie im Bereich **Shared Device Configuration (supervised only)** (Konfiguration freigegebener Geräte (nur überwacht)) die folgenden Einstellungen:
-    - **Bestandskennzeicheninformationen**: Geben Sie Informationen zum Bestandskennzeichen des Geräts ein. Beispiel: **Im Besitz von Contoso Corp**. Die von Ihnen eingegebenen Informationen werden auf alle Geräte angewendet, denen Sie dieses Profil zuweisen.
-    - **Fußnote zum Sperrbildschirm**: Geben Sie einen Hinweis ein, der Ihnen helfen könnte, das Gerät zurückzubekommen, wenn es verloren geht oder gestohlen wird. Beispiel: **Wenn Sie dieses Gerät gefunden haben, rufen Sie bitte „Nummer“ an**.
-3. Wenn Sie fertig sind, klicken Sie auf **OK**, bis Sie zum Bereich **Profil erstellen** zurückkehren, und klicken Sie dann auf **Erstellen**. 
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie anschließend **Intune** aus.
+2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+3. Geben Sie einen **Namen** und eine **Beschreibung** für das Profil ein.
+4. Wählen Sie in **Plattform** die Option **iOS** aus. Wählen Sie in **Profiltyp** die Option **Gerätefunktionen** aus.
+5. Wählen Sie in **Einstellungen** die Option **Nachricht auf Sperrbildschirm (nur überwacht)**  aus. Konfigurieren Sie die folgenden Einstellungen:
 
+    - **Bestandskennzeicheninformationen:** Geben Sie Informationen zum Bestandskennzeichen des Geräts ein. Geben Sie beispielsweise `123xyz` ein.
+
+        Der von Ihnen eingegebene Text wird im Anmeldefenster und Sperrbildschirm auf dem Gerät angezeigt.
+
+    - **Fußnote im Sperrbildschirm:** Geben Sie einen Hinweis ein, der Ihnen helfen könnte, das Gerät zurückzubekommen, wenn es verloren geht oder gestohlen wird. In dem Feld können Sie einen beliebigen Text eingeben. Geben Sie zum Beispiel `If found, call Contoso at ...` ein.
+
+    Gerätetoken können auch verwendet werden, um gerätespezifische Informationen zu diesen Feldern hinzuzufügen. Geben Sie zum Beispiel zur Anzeige der Seriennummer `Serial Number: {{serialnumber}}` ein. Auf dem Sperrbildschirm sieht der Text dann in etwa so aus: `Serial Number 123456789ABC`. Achten Sie darauf, bei der Eingabe von Variablen geschweifte Klammern `{{ }}` zu verwenden. [App-Konfigurationstoken](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) umfassen eine Reihe von Variablen, die Sie nutzen können. Zudem können Sie `deviceName` oder einen anderen gerätespezifischen Wert verwenden.
+
+6. Wählen Sie abschließend **OK** > **OK** > **Erstellen** aus. Ihr Profil wird in der Liste angezeigt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sie können nun das Geräteprofil den von Ihnen ausgewählten Gruppen zuweisen. Weitere Informationen finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md).
+Das Profil ist nun erstellt, führt aber noch keine Aktionen durch. Die nächsten Schritte sind das [Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune](device-profile-assign.md) und das [Überwachen von Geräteprofilen in Microsoft Intune](device-profile-monitor.md).

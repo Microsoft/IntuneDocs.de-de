@@ -16,12 +16,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 81f84c2e645a9a6a20ff901239117b562a26b0aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9d6c894e30b050ec6e824e1e77d0c476d4dc15bc
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186646"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149626"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Verwalten von Verknüpfungen zwischen Benutzern und Geräten für Windows-PCs
 
@@ -43,7 +43,7 @@ So verknüpfen Sie einen Benutzer mit einem PC
 
    - Wählen Sie **Abbrechen** aus, um die Verknüpfung des PC mit einem ggf. vorhandenen aktuellen Benutzer beizubehalten.
 
-   - Klicken Sie zum Entfernen der Verknüpfung mit dem aktuellen Benutzer ggf. auf <strong>Verknüpfung entfernen **&gt; OK</strong>.
+   - Klicken Sie zum Entfernen der Verknüpfung mit dem aktuellen Benutzer ggf. auf <strong>Verknüpfung entfernen**&gt;** OK</strong>.
 
    - Zum Verknüpfen des PC mit einem neuen Benutzer wählen Sie diesen in der Liste **Alle Benutzer** aus. Überprüfen Sie, ob die Benutzerdaten korrekt sind, und wählen Sie **OK** aus.
 

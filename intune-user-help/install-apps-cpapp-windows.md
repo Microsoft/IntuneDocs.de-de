@@ -1,11 +1,11 @@
 ---
 title: Installieren von Apps über die Intune-Unternehmensportal-App für Windows
-description: Informationen zum Installieren und Freigeben von Apps über die Unternehmensportal-App für Windows
+description: Installieren und Freigeben von Apps über die Unternehmensportal-App für Windows
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e2bf5ffd5c913b4e2c51c9efd0aa40ba3d3f0fa7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: 5c57db351aae613d0213e4ef439084ad9577a3fc
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863092"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203228"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Installieren und freigeben von Apps auf Ihrem Gerät
 Installieren Sie über die Unternehmensportal-App für Windows Apps auf Ihrem Gerät.
@@ -35,10 +35,10 @@ Installieren Sie über die Unternehmensportal-App für Windows Apps auf Ihrem Ge
 2. Suchen und installieren Sie Apps aus einem der folgenden Abschnitte der Unternehmensportal-App:  
 
     * **Start:** Wählen Sie Apps aus einer Liste empfohlener Apps Ihrer Organisation aus.  
-    * **Alle anzeigen:** Klicken Sie auf der **Startseite** im Abschnitt **Apps** auf **Alle anzeigen**, um alle verfügbaren Apps anzuzeigen.  
+    * **Alle anzeigen:** Klicken Sie auf der **Startseite** > **Apps** auf **Alle anzeigen**, um alle verfügbaren Apps anzuzeigen.  
     * **Alle Apps:** Wählen Sie diese Seite im Navigationsbereich aus, um alle verfügbaren Apps anzuzeigen, einschließlich aller installierten und ausgewählten Apps.  
-    * **Nach Apps suchen**: Eine statische Suchleiste befindet sich im Navigationsbereich der App.  Suchen Sie nach dem App-Namen oder dem Herausgeber, um Ihre verfügbaren Apps zu finden.  
-    * **Alle Apps**: Sie können alle verfügbaren Apps anzeigen, sortieren und filtern. Die Suchergebnisse werden automatisch nach Relevanz sortiert.  
+    * **Nach Apps suchen:** Eine statische Suchleiste befindet sich im Navigationsbereich der App.  Suchen Sie nach dem App-Namen oder dem Herausgeber, um Ihre verfügbaren Apps zu finden.  
+    * **Alle Apps:** Sie können alle verfügbaren Apps anzeigen, sortieren und filtern. Die Suchergebnisse werden automatisch nach Relevanz sortiert.  
 
 3. Wählen Sie eine App aus.   
 4. Klicken Sie auf der Seite mit den App-Details auf **Installieren**. Nach Abschluss der Installation wird auf der Seite der Status **Installiert** angezeigt.  
@@ -63,4 +63,16 @@ Empfehlen Sie Ihren Arbeits- oder Schul- bzw. Unikontakten Apps, und geben Sie s
 
 Nachdem Sie den Link mit einer Person geteilt haben, erhält der Empfänger einen Link sowie eine Benachrichtigung, um die Details der App anzuzeigen. Mit dem Link wird die Seite **App-Details** des Unternehmensportals geöffnet. 
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).
+## <a name="available-apps"></a>Verfügbare Apps  
+
+Ihre Organisation wählt die entsprechenden Apps aus, die für die Arbeit, Schule oder Universität nützlich sind. Diese Apps finden Sie als einzige im Unternehmensportal.  
+
+Sie haben auch abhängig von Ihrem Gerätetyp Zugriff auf bestimmte Apps. Wenn Sie beispielsweise die Unternehmensportal-App für Windows verwenden, haben Sie Zugriff auf Windows-Apps, nicht aber auf iOS-Apps.  
+
+## <a name="request-an-app-for-work-or-school"></a>Anfordern einer App für die Arbeit, Schule oder Universität  
+Wenn Sie eine App benötigen, diese jedoch nicht im Unternehmensportal finden, können Sie sie anfordern. Die Kontaktdetails für Ihren **Helpdesk** finden Sie in der Unternehmensportal-App auf der Seite für Hilfe und Support. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).    
+
+  ![Die Unternehmensportal-App für Windows 10 mit der Seite „Hilfe und Support“, auf der die Helpdesk-Details hervorgehoben sind. ](./media/1812_UCP_Help_Support_helpdesk.png)  
+
+
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  

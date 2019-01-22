@@ -15,16 +15,16 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 3e66dd3d77cc36a6d311afea82e0f2087b469495
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817261"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239590"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Einrichten des lokalen Intune Exchange Connectors in Microsoft Intune in Azure
 
-In einer lokalen Exchange Server-Umgebung kann der bedingte Zugriff für Intune verwendet werden, um Zugriff auf lokale Exchange-Postfächer zu erlauben oder zu blockieren. Verwenden Sie lokale Exchange Active Sync-Connectors, um Intune mit Ihren Exchange-Organisationen zu verbinden und um den bedingten Zugriff für Intune zusammen mit Richtlinien für die Gerätekonformität einzurichten. Wenn dann ein Gerät versucht, eine Verbindung mit Exchange herzustellen, bestimmt Intune, ob das Gerät in Intune registriert wird und konform ist. Um zu bestimmen, welche Geräte in Intune registriert werden können, ordnet der lokale Exchange Connector die Exchange Active Sync-Datensätze (EAS) in Exchange Server den Intune-Datensätzen zu. Weitere Informationen zu dieser Vorgehensweise finden Sie unter [Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?](conditional-access-intune-common-ways-use.md)
+In einer lokalen Exchange Server-Umgebung kann der bedingte Zugriff für Intune verwendet werden, um Zugriff auf lokale Exchange-Postfächer zu erlauben oder zu blockieren. Verwenden Sie lokale Exchange Active Sync-Connectors, um Intune mit Ihren Exchange-Organisationen zu verbinden und um den bedingten Zugriff für Intune zusammen mit Richtlinien für die Gerätekonformität einzurichten. Wenn dann ein Gerät versucht, eine Verbindung mit Exchange herzustellen, ermittelt Intune, ob das Gerät in Intune registriert und konform ist. Um zu bestimmen, welche Geräte in Intune registriert werden können, ordnet der lokale Exchange Connector die Exchange Active Sync-Datensätze (EAS) in Exchange Server den Intune-Datensätzen zu. Weitere Informationen zu dieser Vorgehensweise finden Sie unter [Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?](conditional-access-intune-common-ways-use.md)
 
 > [!IMPORTANT]
 > Intune unterstützt jetzt mehrere lokale Exchange Connectors pro Abonnement. Wenn Sie über mehr als eine lokale Exchange-Organisation verfügen, können Sie einen separaten Connector für jede Exchange-Organisation einrichten.
@@ -78,7 +78,7 @@ Sie müssen in Active Directory ein Benutzerkonto erstellen, das vom lokalen Exc
 
 4. Klicken Sie unter **Setup** auf **Exchange ActiveSync-Connector** und dann auf **Download the on-premises connector** (Lokalen Connector herunterladen).
 
-5.  Der lokale Exchange Connector ist in einem komprimierten Ordner (ZIP-Archiv) enthalten, der geöffnet oder gespeichert werden kann. Wählen Sie im Dialogfeld **Dateidownload** die Option **Speichern** aus, um den komprimierten Ordner an einem sicheren Speicherort zu speichern.
+5.  Der lokale Exchange Connector befindet sich in einem komprimierten Ordner (.zip), der geöffnet oder gespeichert werden kann. Wählen Sie im Dialogfeld **Dateidownload** die Option **Speichern** aus, um den komprimierten Ordner an einem sicheren Speicherort zu speichern.
 
     > [!IMPORTANT]
     > Die Dateien im Ordner des lokalen Exchange Connectors dürfen nicht umbenannt oder verschoben werden. Bei Verschieben oder Umbenennen der Inhalte des Ordners ist die Exchange Connector-Installation nicht mehr funktionsfähig.
@@ -116,15 +116,15 @@ Führen Sie die folgenden Schritte aus, um den lokalen Intune Exchange Connector
 
        4. Wählen Sie **OK** aus.
 
-   5. Geben Sie in den Feldern **Benutzer (Domäne\Benutzer)** und **Kennwort** die für die Verbindung mit Ihrem Exchange-Server erforderlichen Anmeldeinformationen an.
+4. Geben Sie in den Feldern **Benutzer (Domäne\Benutzer)** und **Kennwort** die für die Verbindung mit Ihrem Exchange-Server erforderlichen Anmeldeinformationen an.
 
-   6.  Geben Sie die zum Senden von Benachrichtigungen an das Exchange Server-Postfach eines Benutzers erforderlichen Anmeldeinformationen ein. Dieser Benutzer ist nur für Benachrichtigungen reserviert. Der Benutzer für Benachrichtigungen benötigt ein Exchange-Postfach, um Benachrichtigungen per Mail senden zu können. Sie können diese Benachrichtigungen über Richtlinien für den bedingten Zugriff in Intune konfigurieren.  
+5. Geben Sie die zum Senden von Benachrichtigungen an das Exchange Server-Postfach eines Benutzers erforderlichen Anmeldeinformationen ein. Dieser Benutzer ist nur für Benachrichtigungen reserviert. Der Benutzer für Benachrichtigungen benötigt ein Exchange-Postfach, um Benachrichtigungen per Mail senden zu können. Sie können diese Benachrichtigungen über Richtlinien für den bedingten Zugriff in Intune konfigurieren.  
 
-       Stellen Sie sicher, dass die AutoErmittlungs- und Exchange-Webdienste auf dem Exchange-Clientzugriffsserver konfiguriert sind. Weitere Informationen finden Sie unter [Clientzugriffsserver](https://technet.microsoft.com/library/dd298114.aspx).
+       Ensure that the Autodiscover service and Exchange Web Services are configured on the Exchange Client Access Server. For more information, see [Client Access server](https://technet.microsoft.com/library/dd298114.aspx).
 
-   7.  Geben Sie im Feld **Kennwort** das Kennwort für dieses Konto an, damit Intune auf Exchange Server zugreifen kann.
+6. Geben Sie im Feld **Kennwort** das Kennwort für dieses Konto an, damit Intune auf Exchange Server zugreifen kann.
 
-   8. Wählen Sie **Verbinden** aus.
+7. Wählen Sie **Verbinden** aus.
 
    > [!NOTE]
    > Das Konfigurieren der Verbindung kann möglicherweise einige Minuten in Anspruch nehmen.
@@ -157,12 +157,12 @@ Nachdem Sie Exchange Connectors erfolgreich konfiguriert haben, können Sie den 
 
 Sie können auch die Uhrzeit und das Datum des letzten erfolgreichen Synchronisationsversuchs überprüfen.
 
-### <a name="system-center-operations-manager-scom-management-pack"></a>System Center Operations Manager (SCOM) Management Pack
+### <a name="system-center-operations-manager-management-pack"></a>System Center Operations Manager Management Pack
 
-Ab der Intune-Version 1710 können Sie das [SCOM Management Pack für Exchange-Connector und Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) verwenden. Es bietet Ihnen verschiedene Möglichkeiten zur Überwachung des Exchange-Connectors bei der Problembehandlung.
+Ab Intune-Release 1710 können Sie das [Operations Manager Management Pack für Exchange Connector und Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True) verwenden. Es bietet Ihnen verschiedene Möglichkeiten zur Überwachung des Exchange-Connectors bei der Problembehandlung.
 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Manuelle Erzwingung einer schnellen oder vollständigen Synchronisierung
-Ein lokaler Exchange Connector synchronisiert regelmäßig automatisch EAS und Datensätze für Intune-Geräte. Wenn sich der Konformitätsstatus eines Geräts verändert, aktualisiert der automatische Synchronisierungsprozess regelmäßig Datensätze, damit der Gerätezugriff entsprechend blockiert und erlaubt werden kann.
+Ein lokaler Exchange Connector synchronisiert regelmäßig EAS und Datensätze für Intune-Geräte. Wenn sich der Konformitätsstatus eines Geräts verändert, aktualisiert der automatische Synchronisierungsprozess regelmäßig Datensätze, damit der Gerätezugriff entsprechend blockiert und erlaubt werden kann.
 
    - Die **Schnellsynchronisierung** wird regelmäßig mehrmals täglich ausgeführt. Eine schnelle Synchronisierung ruft Geräteinformationen für die Benutzer ab, die über Intune-Lizenzen und bedingten Zugriff mit lokalem Exchange verfügen, die sich seit der letzten Synchronisierung geändert haben.
 

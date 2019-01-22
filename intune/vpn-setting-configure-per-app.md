@@ -15,12 +15,12 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f4cdd3c215fbd9eab4204eca0639d5d38fe4c97a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 12131fe0b78814850cfadee15533620dd5813f6c
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180730"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297399"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Die Einrichtung des Pro-App-VPN in Intune für iOS-Geräte
 
@@ -33,9 +33,9 @@ Pro-App-VPN ist derzeit für die folgenden Anbieter verfügbar:
  - Citrix
  - F5
  - Pulse Connect Secure
+ - Palo Alto-Netzwerke
  - SonicWall
- - Palo Alto Networks GlobalProtect
- - Zscaler
+ - Privater Zscaler-Zugriff
 
 ## <a name="prerequisites-for-per-app-vpn"></a>Voraussetzungen für das Pro-App-VPN
 
@@ -186,10 +186,12 @@ Sobald Ihr Pro-App-VPN eingerichtet und Ihrer App zugeordnet ist, überprüfen S
     - Check Point Capsule Connect
     - Cisco AnyConnect
     - Citrix VPN
+    - Citrix SSO
     - F5 Access
+    - Palo Alto Networks GlobalProtect
     - Pulse Secure
     - SonicWall Mobile Connect
-    - Zscaler-App
+    - Zscaler
 
     > [!NOTE]
     > Wenn Sie die VPN-App Pulse Secure verwenden, können Sie Tunneln auf App- oder auf Paketebene verwenden. Legen Sie für Tunneln auf App-Ebene den Wert **ProviderType** auf **app-proxy** oder für Tunneln auf Paketebene auf **packet-tunnel** fest.

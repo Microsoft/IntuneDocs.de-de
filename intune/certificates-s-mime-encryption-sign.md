@@ -1,41 +1,46 @@
 ---
-title: 'S/MIME für die Signierung und Verschlüsselung von E-Mails: Azure | Microsoft-Dokumentation'
-description: Verwenden oder Aktivieren Sie S/MIME zum Signieren und Verschlüsseln von E-Mails in Microsoft Intune
+title: 'Signieren und Verschlüsseln der E-Mails mit S/MIME: Microsoft Intune – Azure | Microsoft-Dokumentation'
+description: Erfahren Sie, wie Sie digitale E-Mail-Zertifikate in Microsoft Intune zum Signieren und Verschlüsseln von E-Mails auf Geräten verwenden können. Diese Zertifikate werden als „S/MIME“ bezeichnet und über Gerätekonfigurationsprofile konfiguriert. Signatur- und Verschlüsselungszertifikate verwenden PKCS oder private Zertifikate und verwenden einen Connector, um Zertifikate zu importieren.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/21/2018
+ms.date: 12/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: eaa85870b289bb3b65ce997d8610324f43d69452
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; seodec18
+ms.openlocfilehash: 0339be98bf045d280912bf88e88b5ba544b0a1f4
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185643"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203126"
 ---
-# <a name="smime-email-signing-and-encryption-in-intune"></a>S/MIME für die Signierung und Verschlüsselung von E-Mails in Intune
+# <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>S/MIME-Übersicht zum Signieren und Verschlüsseln von E-Mails in Intune
 
-> [!IMPORTANT]
-> Wir nehmen zurzeit einige Verbesserungen an dem in diesem Artikel beschriebenen S/MIME-Feature vor. Deshalb wurde das S/MIME-Feature in Intune vorübergehend entfernt. Nach der Veröffentlichung des Features werden wir diesen Hinweis entfernen.
+E-Mail-Zertifikate, auch bekannt als S/MIME-Zertifikate, bieten zusätzliche Sicherheit für Ihre E-Mail-Kommunikation durch Ver- und Entschlüsselung. Microsoft Intune kann S/MIME-Zertifikate verwenden, um E-Mails auf mobilen Geräten mit den folgenden Plattformen zu signieren und zu verschlüsseln:
 
-S/MIME-bietet durch Ver- und Entschlüsselungen eine zusätzliche Sicherheitsstufe für Ihre E-Mail-Kommunikation. Microsoft Intune kann mit S/MIME E-Mails an mobile Geräte signieren und verschlüsseln, die unter iOS, Windows, Windows Phone, Android und macOS ausgeführt werden.
+- Android
+- iOS
+- macOS
+- Windows 10 und höher
+- Windows Phone
 
-Auf iOS-Geräten können Sie ein von Intune verwaltetes E-Mail-Profil erstellen, das S/MIME und Zertifikate zum Signieren und Verschlüsseln eingehender und ausgehender E-Mails verwendet. Für andere Plattformen wird S/MIME möglicherweise nicht unterstützt. Wenn S/MIME unterstützt wird, können Sie Zertifikate installieren, welche die S/MIME-Signierung und -Verschlüsselung verwenden. Anschließend kann ein Benutzer S/MIME in seiner E-Mail-Anwendung aktivieren.
+Auf iOS-Geräten können Sie ein von Intune verwaltetes E-Mail-Profil erstellen, das S/MIME und Zertifikate zum Signieren und Verschlüsseln eingehender und ausgehender E-Mails verwendet. Für andere Plattformen wird S/MIME möglicherweise nicht unterstützt. Wenn S/MIME unterstützt wird, installieren Sie Zertifikate, welche die S/MIME-Signatur und -Verschlüsselung verwenden. Anschließend aktiviert ein Endbenutzer S/MIME in seiner E-Mail-Anwendung.
 
-Weitere Informationen zu S/MIME für die Signierung und Verschlüsselung von E-Mails finden Sie unter [S/MIME für die Nachrichtensignierung und -verschlüsselung](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
+Weitere Informationen zur S/MIME-E-Mail-Signatur und -Verschlüsselung finden Sie unter [S/MIME for message signing and encryption (S/MIME für die Nachrichtensignatur und -verschlüsselung)](https://docs.microsoft.com/Exchange/policy-and-compliance/smime).
+
+In diesem Artikel erhalten Sie eine Übersicht über die Verwendung von S/MIME-Zertifikaten zum Signieren und Verschlüsseln von E-Mails auf Ihren Geräten.
 
 ## <a name="signing-certificates"></a>Signaturzertifikate
 
 Mithilfe von Signaturzertifikaten kann die E-Mail-App des Clients sicher mit dem E-Mail-Server kommunizieren.
 
-Für die Verwendung von Signaturzertifikaten müssen Sie eine Vorlage in Ihrer Zertifizierungsstelle erstellen, deren Schwerpunkt auf der Signierung liegt. In der Zertifizierungsstelle von Microsoft Active Directory werden unter [Konfigurieren der Zertifikatvorlage des Servers](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) die Schritte für die Erstellung der Zertifikatvorlagen aufgeführt.
+Für die Verwendung von Signaturzertifikaten müssen Sie eine Vorlage in Ihrer Zertifizierungsstelle erstellen, deren Schwerpunkt auf dem Signieren liegt. In der Zertifizierungsstelle von Microsoft Active Directory werden unter [Konfigurieren der Zertifikatvorlage des Servers](https://docs.microsoft.com/windows-server/networking/core-network-guide/cncg/server-certs/configure-the-server-certificate-template) die Schritte für die Erstellung der Zertifikatvorlagen aufgeführt.
 
 Signaturzertifikate in Intune verwenden PKCS-Zertifikate. Unter [Konfigurieren und Verwenden von PKCS-Zertifikate](certficates-pfx-configure.md) wird beschrieben, wie PKCS-Zertifikate in Ihrer Intune-Umgebung bereitgestellt und verwendet werden. Diese Schritte umfassen:
 
@@ -71,3 +76,10 @@ Wenn Sie ein PKCS-Zertifikat bereitstellen möchten, das in Intune für die E-Ma
 ## <a name="smime-email-profiles"></a>S/MIME-E-Mail-Profile
 
 Nachdem Sie S/MIME-Zertifikatprofile für die Signierung und Verschlüsselung erstellt haben, können Sie [S/MIME für native iOS-E-Mails aktivieren](email-settings-ios.md).
+
+## <a name="next-steps"></a>Nächste Schritte
+
+- [Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune](certificates-scep-configure.md)
+- [Konfigurieren und Verwenden von PKCS-Zertifikaten mit Intune](certficates-pfx-configure.md)
+- [Verwenden einer Partnerzertifizierungsstelle](certificate-authority-add-scep-overview.md)
+- [Einrichten des Intune Certificate Connectors für den Symantec PKI-Manager-Webdienst](certificates-symantec-configure.md)

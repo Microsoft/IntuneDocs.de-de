@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0c09a80f97056f7cb08d69d6a8deedc4e421a556
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 37483f0fa33db109510ee537772a7bdead79e4f3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190301"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203551"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Verwenden des Problembehandlungsportals zur Unterstützung von Benutzern Ihres Unternehmens
 
@@ -271,6 +271,15 @@ Wenn Sie eine Zeile mit einem Fehler auswählen, werden mehr Details angezeigt.
 | Fehler bei der Registrierungsautorisierung. | Der Benutzer hat versucht, ein Gerät über eine veraltete Version des Unternehmensportals zu registrieren. |
 | Gerät nicht unterstützt. | Das Gerät erfüllt nicht die Mindestanforderungen für die Intune-Registrierung. |
 | Registrierungseinschränkungen nicht erfüllt. | Die Registrierung wurde aufgrund einer vom Administrator konfigurierten Registrierungseinschränkung blockiert. |
+| Geräteversion zu niedrig. | Der Administrator hat eine Registrierungseinschränkung konfiguriert, die eine höhere Geräteversion erfordert. |
+| Geräteversion zu hoch. | Der Administrator hat eine Registrierungseinschränkung konfiguriert, die eine niedrigere Geräteversion erfordert. |
+| Registrierung als persönliches Gerät nicht möglich. | Der Administrator hat eine Registrierungseinschränkung konfiguriert, um persönliche Registrierungen zu blockieren, und das Gerät, bei dem der Fehler aufgetreten ist, wurde nicht als unternehmenseigen vordefiniert. |
+| Geräteplattform blockiert. | Der Administrator hat eine Registrierungseinschränkung konfiguriert, die die Plattform dieses Geräts blockiert. |
+| Massentoken abgelaufen. | Das Massentoken im Bereitstellungspaket ist abgelaufen. |
+| Autopilot-Gerät oder -Details nicht gefunden. | Das Autopilot-Gerät wurde beim Versuch, sich zu registrieren, nicht gefunden. |
+| Autopilot-Profil nicht gefunden oder nicht zugewiesen. | Das Gerät verfügt über kein aktives Autopilot-Profil. |
+| Unerwartete Autopilot-Registrierungsmethode. | Das Gerät hat versucht, sich über eine nicht zugelassene Methode zu registrieren. |
+| Autopilot-Gerät entfernt. | Das Gerät, das versucht, sich zu registrieren, wurde für dieses Konto aus Autopilot entfernt. |
 | Gerätekapazität erreicht | Die Registrierung wurde aufgrund einer vom Administrator konfigurierten zulässigen Anzahl von Geräten blockiert. |
 | Apple-Onboarding | Die Registrierung aller iOS-Geräte wurde blockiert, weil ein Apple-MDM-Push-Zertifikat in Intune fehlt oder abgelaufen ist. |
 | Gerät nicht vorab registriert. | Das Gerät wurde nicht vorab als Unternehmensgerät registriert, und alle Registrierungen von Privatgeräten wurden von einem Administrator blockiert. |

@@ -3,10 +3,10 @@ title: Überwachen von App-Schutzrichtlinien
 titleSuffix: Microsoft Intune
 description: Überwachen Sie den Kompatibilitätsstatus der Verwaltungsrichtlinien für mobile Apps in Intune.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: f86ebd91125ec60d2ad0a28b47f5ac01fb62e8e2
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816839"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297297"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Überwachen von App-Schutzrichtlinien
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -44,20 +44,16 @@ Es gibt drei verschiedenen Stellen, an denen der Konformitätsstatus überwacht 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie im Bereich **Intune** die Option **Client-Apps** aus.
-4. Wählen Sie in der Workload **Client-Apps** die Option **Überwachen** > **Status des App-Schutzes** aus, um die Zusammenfassungsansicht anzuzeigen:
+4. Wählen Sie in der Workload **Client-Apps** im Abschnitt **Überwachen** die Option **Status des App-Schutzes** aus, um die Zusammenfassungsansicht anzuzeigen:
 
 ![Kachel „Zusammenfassung“ im Bereich „Verwaltung mobiler Anwendungen mit Intune“](./media/app-protection-user-status-summary.png)
 
--   **Benutzer**: Die Gesamtzahl von Benutzern in Ihrem Unternehmen, die eine App verwenden, die einer Richtlinie in einem geschäftlichen Kontext zugeordnet ist
+-   **Zugewiesene Benutzer:** Die Gesamtzahl von zugewiesenen Benutzern in Ihrem Unternehmen, die eine App verwenden, die einer Richtlinie in einem geschäftlichen Kontext zugeordnet ist, und geschützt und lizenziert sind, sowie die zugewiesenen Benutzer, die nicht geschützt und lizenziert sind.
+-   **Gekennzeichnete Benutzer:** Die Anzahl von Benutzern, bei denen Probleme auftreten. Per Jailbreak manipulierte Geräte werden unter **Gekennzeichnete Benutzer** gemeldet.
+-   **Benutzerstatus für iOS** und **Benutzerstatus für Android**: Die Anzahl von Benutzern, die eine App verwendet haben und denen eine Richtlinie in einem geschäftlichen Kontext für die entsprechende Plattform zugewiesen ist. Diese Informationen zeigen die Anzahl der von der Richtlinie verwalteten Benutzer sowie die Anzahl der Benutzer an, die eine App verwenden, die von keiner Richtlinie in einem geschäftlichen Kontext erfasst wird. Sie sollten erwägen, diese Benutzer zur Richtlinie hinzuzufügen.
 
--   **VERWALTET DURCH RICHTLINIE:** Die Anzahl von Benutzern, die eine App verwendet haben und denen eine Richtlinie in einem geschäftlichen Kontext zugeordnet ist
-
--   **KEINE RICHTLINIE:** Die Anzahl von Benutzern, die eine App verwenden, die unter keine Richtlinie in einem geschäftlichen Kontext fallen. Sie sollten erwägen, diese Benutzer zur Richtlinie hinzuzufügen.
     > [!NOTE]
     > Wenn Sie über mehrere Richtlinien pro Plattform verfügen, gilt ein Benutzer als durch eine Richtlinie verwaltet, wenn ihm mindestens eine Richtlinie zugewiesen ist.
-
-- **Gekennzeichnete Benutzer:** Die Anzahl von Benutzern, bei denen Probleme auftreten. Derzeit werden nur Benutzer mit per Jailbreak manipulierten Geräten unter **Gekennzeichnete Benutzer** gemeldet.
-
 
 ## <a name="detailed-view"></a>Detailansicht
 Sie können zur detaillierten Ansicht der Zusammenfassung gelangen, indem Sie auf die Kachel **Benutzerstatus** (basierend auf der Betriebssystemplattform des Geräts) und dann auf die Kachel **Gekennzeichnete Benutzer** klicken.
@@ -79,7 +75,7 @@ Sie können nach einem einzelnen Benutzer suchen und den Kompatibilitätsstatus 
 
 Um die Berichterstattung für einen Benutzer anzuzeigen, gehen Sie folgendermaßen vor:
 
-1.  Wählen Sie die Kachel **Zusammenfassung** aus, um einen Benutzer auszuwählen.
+1.  Wählen Sie die Kachel **Benutzerstatus** aus, um einen Benutzer auszuwählen.
 
     ![Screenshot der Kachel „Zusammenfassung“ der mobilen Anwendungsverwaltung mit Intune](./media/MAM-reporting-6.png)
 
@@ -94,18 +90,24 @@ In der Detailansicht werden die Fehlermeldung, die App, auf die bei Auftreten de
 
 ## <a name="reporting-view"></a>Berichterstellung
 
-Sie können die gleichen Berichte in der Detailansicht finden sowie zusätzliche Berichte, die Ihnen mit dem Konformitätsstatus der MAM-Richtlinie weiterhelfen:
+Dieselben Berichte finden Sie auch über das Blatt **Status des App-Schutzes**.
 
-![Screenshot mit Hervorhebung der beiden im Bereich „Einstellungen“ verfügbaren Berichte](./media/MAM-reporting-7.png)
+> [!NOTE]
+> Intune bietet zusätzliche Felder zur Geräteberichtserstellung, einschließlich Feldern für App-Registrierungs-ID, Android-Hersteller, Modell und Sicherheitspatchversion sowie iOS-Modell. In Intune sind diese Felder unter **Client-Apps** > **Status des App-Schutzes** und **Bericht zum App-Schutz: iOS, Android** verfügbar. Darüber hinaus werden diese Parameter Sie bei der Konfiguration der **Zulassen**-Liste für den Gerätehersteller (Android), der **Zulassen**-Liste für das Gerätemodell (Android und iOS) sowie der Einstellung der mindestens erforderlichen Android-Sicherheitspatchversion unterstützen. 
 
--   **Benutzerbericht zum App-Schutz:** Darin werden dieselben Informationen dargestellt, die auch im obigen Abschnitt „Detailansicht“ im Bericht **Benutzerstatus** angezeigt werden.
+Als Unterstützung für den Konformitätsstatus der MAM-Richtlinie stehen weitere Berichte zur Verfügung. Wählen Sie zum Anzeigen dieser Berichte **Client-Apps** > **Status des App-Schutzes** > **Berichte** aus. 
 
--   **App-Bericht zum App-Schutz:** Es werden zwei verschiedene Status zum App-Schutz bereitgestellt, die Administratoren auswählen können, bevor sie den Bericht generieren. Der Status kann geschützt oder nicht geschützt sein.
+Das Blatt **Berichte** bietet mehrere Berichte zu Benutzern und Apps, z.B.:
+
+
+-   **Benutzerbericht:** Darin werden dieselben Informationen dargestellt, die auch im obigen Abschnitt „Detailansicht“ im Bericht **Benutzerstatus** angezeigt werden.
+
+-   **App-Bericht:** Es werden zwei verschiedene Status zum App-Schutz bereitgestellt, die Administratoren auswählen können, bevor sie den Bericht generieren. Der Status kann geschützt oder nicht geschützt sein.
 
     -   Benutzerstatus für verwaltete MAM-Aktivität (geschützt): Dieser Bericht veranschaulicht die Aktivität von jeder verwalteten MAM-App pro Benutzer.
 
         -   Er zeigt alle Apps, die unter MAM-Richtlinien für jeden Benutzer fallen, und schlüsselt den Status jeder App, die unter MAM-Richtlinien eingecheckt sind oder die unter eine MAM-Richtlinie fallen, doch nie eingecheckt waren.
-<br></br>
+<br><br>
     -   Benutzerstatus für nicht verwaltete MAM-Aktivität (nicht geschützt): Dieser Bericht veranschaulicht pro Benutzer die Aktivitäten von MAM-fähigen Apps, die derzeit nicht verwaltet sind. Dies kann entsprechend der folgenden Gründe auftreten:
 
         -   Diese Apps werden entweder von einem Benutzer oder von einer App verwendet, die derzeit nicht unter eine MAM-Richtlinie fällt.

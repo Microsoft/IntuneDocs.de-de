@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/25/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 88107a580eb72f647bb7c32d52ed5d3c848cd392
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146738"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203313"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Senden von Protokollen an den Support Ihres Unternehmens über die App „Einstellungen“ für Windows 10
 
-Wenn Sie eine Fehlermeldung erhalten, während Sie Ihr Windows 10-Gerät verwenden, das von Ihrem Unternehmen verwaltet wird, können Sie Informationen über den Fehler per E-Mail senden, um dem Support Ihres Unternehmens bei der Behandlung des Problems zu helfen. Die Informationen werden auf Ihrem Gerät in einem speziellen Dokument (einem so genannten _Diagnoseprotokoll_) gespeichert.
+Verwenden Sie die App „Einstellungen“, um Probleme mit dem Unternehmensportal für Windows 10 zu beheben. Wenn bei der Ausführung einer App auf Ihrem Windows 10-Gerät ein Problem auftritt, können Sie eine E-Mail an Ihr Supportteam senden. Ereignisse und Fehler in der Unternehmensportal-App werden auf Ihrem Gerät in einem speziellen Dokument gespeichert, das als _Diagnoseprotokoll_ bezeichnet wird. Dieses kann Aufschluss über den Fehler geben und als Export für die Supportteams hilfreich sein.
 
-1. Zum Öffnen der Windows-**Einstellungen** klicken Sie im **Startmenü** auf die Schaltfläche **Einstellungen**. Sie können auch über die Suchleiste nach „Einstellungen“ suchen.
+1. Zum Öffnen der App **Einstellungen** wechseln Sie zum Menü **Start** und dann zu **Einstellungen**. Sie können auch über die Suchleiste nach *Einstellungen* suchen.
 2. Wechseln Sie zu **Konten** > **Auf Arbeits- oder Schulkonto zugreifen**.
-3. Wählen Sie „Verwaltungsprotokolldateien exportieren“ aus.
+3. Wählen Sie **Verwaltungsprotokolldateien exportieren** aus.
 
    ![Der Bildschirm „Auf Arbeits- oder Schulkonto zugreifen“ mit der Exportoption unterhalb der Überschrift „Verwandte Einstellungen“.](./media/w10-export-logs.png)
 

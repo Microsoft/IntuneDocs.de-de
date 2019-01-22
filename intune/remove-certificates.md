@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,162 +14,162 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 06b568ee7cc2dc55a8d44cf04b96078b47d8c4b3
-ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
+ms.openlocfilehash: f653cd8c7eb0181581d9c21b7f9bc35a008c6df6
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/28/2018
-ms.locfileid: "52579165"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122543"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Entfernen von SCEP- und PKCS-Zertifikaten in Microsoft Intune
 
-Sie können in Microsoft Intune SCEP- und PKCS-Zertifikate zu Geräten hinzufügen. Diese Zertifikate können anschließend auch wieder entfernt werden, wenn Sie das Gerät [zurücksetzen](devices-wipe.md#wipe) oder [außer Betrieb nehmen](devices-wipe.md#retire). In einigen anderen Szenarios werden Zertifikate automatisch entfernt bzw. sie verbleiben auf dem Gerät.
+In Microsoft Intune können Sie Simple Certificate Enrollment Protocol-Zertifikate (SCEP) und Public Key Cryptography Standards-Zertifikate (PKCS) zu Geräten hinzufügen. Diese Zertifikate können anschließend auch wieder entfernt werden, wenn Sie das Gerät [zurücksetzen](devices-wipe.md#wipe) oder [außer Betrieb nehmen](devices-wipe.md#retire). 
 
-In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und es wird beschrieben, welche Auswirkungen diese auf PKCS- und SCEP-Zertifikate haben.
+In einigen anderen Szenarios werden Zertifikate automatisch entfernt bzw. sie verbleiben auf dem Gerät. In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und es wird beschrieben, welche Auswirkungen diese auf PKCS- und SCEP-Zertifikate haben.
 
 > [!NOTE]
-> Führen Sie die nachfolgenden Schritte in der richtigen Reihenfolge aus, um sicherzustellen, dass Zertifikate für einen Benutzer entfernt bzw. widerrufen werden, der aus Active Directory (AD) oder Azure AD entfernt wird:
+> Führen Sie die nachfolgenden Schritte in der richtigen Reihenfolge aus, um sicherzustellen, dass Zertifikate für einen Benutzer entfernt bzw. widerrufen werden, der aus einer lokalen Active Directory-Instanz bzw. Azure Active Directory (Azure AD) entfernt wird:
 >
->    1. Setzen Sie das Gerät des Benutzers zurück, oder nehmen Sie es außer Betrieb.
->    2. Entfernen Sie den Benutzer aus AD oder Azure AD.
+> 1. Setzen Sie das Gerät des Benutzers zurück, oder nehmen Sie es außer Betrieb.
+> 2. Entfernen Sie den Benutzer aus der lokalen Active Directory-Instanz bzw. aus Azure AD.
 
 ## <a name="windows-devices"></a>Windows-Geräte
 
 #### <a name="scep-certificates"></a>SCEP-Zertifikate
 
-- SCEP-Zertifikate werden widerrufen *und* entfernt, wenn:
+SCEP-Zertifikate werden widerrufen *und* entfernt, wenn:
 
-  - die Registrierung eines Endbenutzers aufgehoben wird
-  - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
-  - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
-  - das Gerät aus der Azure Active Directory-Gruppe entfernt wird
-  - Zertifikatprofil wird aus der Gruppenzuweisung entfernt
+- die Registrierung eines Benutzers aufgehoben wird.
+- ein Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) ausführt.
+- ein Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) ausführt.
+- das Gerät aus einer Azure AD-Gruppe entfernt wird.
+- ein Zertifikatprofil aus der Gruppenzuweisung entfernt wird.
 
-- SCEP-Zertifikate werden widerrufen, wenn:
-  - der Administrator das SCEP-Profil ändert oder aktualisiert
+SCEP-Zertifikate werden widerrufen, wenn:
+- ein Administrator das SCEP-Profil ändert oder aktualisiert.
 
-- Das Stammzertifikat wird entfernt, wenn:
-  - die Registrierung eines Endbenutzers aufgehoben wird
-  - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
-  - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
+Das Stammzertifikat wird entfernt, wenn:
+- die Registrierung eines Benutzers aufgehoben wird.
+- ein Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) ausführt.
+- ein Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) ausführt.
 
-- SCEP-Zertifikate **verbleiben** auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
-  - ein Endbenutzer seine Intune-Lizenz verliert
-  - der Administrator die Intune-Lizenz widerruft
-  - der Administrator den Benutzer oder die Gruppe aus Azure AD entfernt
+SCEP-Zertifikate *verbleiben* auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
+- ein Benutzer seine Intune-Lizenz verliert.
+- ein Administrator die Intune-Lizenz widerruft.
+- ein Administrator den Benutzer oder die Gruppe aus Azure AD entfernt
 
 #### <a name="pkcs-certificates"></a>PKCS-Zertifikate
 
-- PKCS-Zertifikate werden widerrufen *und* entfernt, wenn:
+PKCS-Zertifikate werden widerrufen *und* entfernt, wenn:
 
-  - die Registrierung eines Endbenutzers aufgehoben wird
-  - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
-  - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
+- die Registrierung eines Benutzers aufgehoben wird.
+- ein Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) ausführt.
+- ein Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) ausführt.
 
-- Das Stammzertifikat wird entfernt, wenn:
-  - die Registrierung eines Endbenutzers aufgehoben wird
-  - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
-  - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
+Das Stammzertifikat wird entfernt, wenn:
+- die Registrierung eines Benutzers aufgehoben wird.
+- ein Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) ausführt.
+- ein Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) ausführt.
 
-- PKCS-Zertifikate **verbleiben** auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
-  - ein Endbenutzer seine Intune-Lizenz verliert
-  - der Administrator die Intune-Lizenz widerruft
-  - der Administrator den Benutzer oder die Gruppe aus Azure AD entfernt
-  - der Administrator das PKCS-Profil ändert oder aktualisiert
-  - Zertifikatprofil wird aus der Gruppenzuweisung entfernt
+PKCS-Zertifikate *verbleiben* auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
+- ein Benutzer seine Intune-Lizenz verliert.
+- ein Administrator die Intune-Lizenz widerruft.
+- ein Administrator den Benutzer oder die Gruppe aus Azure AD entfernt.
+- ein Administrator das PKCS-Profil ändert oder aktualisiert
+- ein Zertifikatprofil aus der Gruppenzuweisung entfernt wird.
 
 
 ## <a name="ios-devices"></a>iOS-Geräte
 
 #### <a name="scep-certificates"></a>SCEP-Zertifikate
 
-- SCEP-Zertifikate werden widerrufen *und* entfernt, wenn:
+SCEP-Zertifikate werden widerrufen *und* entfernt, wenn:
 
-  - die Registrierung eines Endbenutzers aufgehoben wird
-  - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
-  - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
-  - das Gerät aus der Azure Active Directory-Gruppe entfernt wird
-  - Zertifikatprofil wird aus der Gruppenzuweisung entfernt
+- die Registrierung eines Benutzers aufgehoben wird.
+- ein Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) ausführt.
+- ein Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) ausführt.
+- das Gerät aus der Azure AD-Gruppe entfernt wird.
+- ein Zertifikatprofil aus der Gruppenzuweisung entfernt wird.
 
-- SCEP-Zertifikate werden widerrufen, wenn:
-  - der Administrator das SCEP-Profil ändert oder aktualisiert
+SCEP-Zertifikate werden widerrufen, wenn:
+- ein Administrator das SCEP-Profil ändert oder aktualisiert.
 
-- Das Stammzertifikat wird entfernt, wenn:
-  - die Registrierung eines Endbenutzers aufgehoben wird
-  - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
-  - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
+Das Stammzertifikat wird entfernt, wenn:
+- die Registrierung eines Benutzers aufgehoben wird.
+- ein Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) ausführt.
+- ein Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) ausführt.
 
-- SCEP-Zertifikate **verbleiben** auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
-  - ein Endbenutzer seine Intune-Lizenz verliert
-  - der Administrator die Intune-Lizenz widerruft
-  - der Administrator den Benutzer oder die Gruppe aus Azure AD entfernt
+SCEP-Zertifikate *verbleiben* auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
+- ein Benutzer seine Intune-Lizenz verliert.
+- ein Administrator die Intune-Lizenz widerruft.
+- ein Administrator den Benutzer oder die Gruppe aus Azure AD entfernt.
 
 #### <a name="pkcs-certificates"></a>PKCS-Zertifikate
 
-- PKCS-Zertifikate werden widerrufen *und* entfernt, wenn:
+PKCS-Zertifikate werden widerrufen *und* entfernt, wenn:
 
-  - die Registrierung eines Endbenutzers aufgehoben wird
-  - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
-  - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
+- die Registrierung eines Benutzers aufgehoben wird.
+- ein Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) ausführt.
+- ein Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) ausführt.
 
-- Das PKCS-Zertifikat wird entfernt, wenn:
-  - Zertifikatprofil wird aus der Gruppenzuweisung entfernt
+Das PKCS-Zertifikat wird entfernt, wenn:
+- ein Zertifikatprofil aus der Gruppenzuweisung entfernt wird.
   
-- Das Stammzertifikat wird entfernt, wenn:
-  - die Registrierung eines Endbenutzers aufgehoben wird
-  - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
-  - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
+Das Stammzertifikat wird entfernt, wenn:
+- die Registrierung eines Benutzers aufgehoben wird.
+- ein Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) ausführt.
+- ein Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) ausführt.
 
-- PKCS-Zertifikate **verbleiben** auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
-  - ein Endbenutzer seine Intune-Lizenz verliert
-  - der Administrator die Intune-Lizenz widerruft
-  - der Administrator den Benutzer oder die Gruppe aus Azure AD entfernt
-  - der Administrator das PKCS-Profil ändert oder aktualisiert
+PKCS-Zertifikate *verbleiben* auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
+- ein Benutzer seine Intune-Lizenz verliert.
+- ein Administrator die Intune-Lizenz widerruft.
+- ein Administrator den Benutzer oder die Gruppe aus Azure AD entfernt.
+- ein Administrator das PKCS-Profil ändert oder aktualisiert
 
 ## <a name="android-knox-devices"></a>Android KNOX-Geräte
 
 #### <a name="scep-certificates"></a>SCEP-Zertifikate
 
-- SCEP-Zertifikate werden widerrufen *und* entfernt, wenn:
-  - die Registrierung eines Endbenutzers aufgehoben wird
-  - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
+SCEP-Zertifikate werden widerrufen *und* entfernt, wenn:
+- die Registrierung eines Benutzers aufgehoben wird.
+- ein Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) ausführt.
 
-- SCEP-Zertifikate werden widerrufen, wenn:
-  - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
-  - das Gerät aus der Azure Active Directory-Gruppe entfernt wird
-  - Zertifikatprofil wird aus der Gruppenzuweisung entfernt
-  - der Administrator den Benutzer oder die Gruppe aus Azure Active Directory (AD) entfernt
-  - der Administrator das SCEP-Profil ändert oder aktualisiert
+SCEP-Zertifikate werden widerrufen, wenn:
+- ein Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) ausführt.
+- das Gerät aus einer Azure AD-Gruppe entfernt wird.
+- ein Zertifikatprofil aus der Gruppenzuweisung entfernt wird.
+- ein Administrator den Benutzer oder die Gruppe aus Azure AD entfernt.
+- ein Administrator das SCEP-Profil ändert oder aktualisiert.
 
-- Das Stammzertifikat wird entfernt, wenn:
-  - die Registrierung eines Endbenutzers aufgehoben wird
-  - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
-  - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
+Das Stammzertifikat wird entfernt, wenn:
+- die Registrierung eines Benutzers aufgehoben wird.
+- ein Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) ausführt.
+- ein Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) ausführt.
 
-- SCEP-Zertifikate **verbleiben** auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
-  - ein Endbenutzer seine Intune-Lizenz verliert
-  - der Administrator die Intune-Lizenz widerruft
-  - der Administrator den Benutzer oder die Gruppe aus Azure AD entfernt
+SCEP-Zertifikate *verbleiben* auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
+- ein Benutzer seine Intune-Lizenz verliert.
+- ein Administrator die Intune-Lizenz widerruft.
+- ein Administrator den Benutzer oder die Gruppe aus Azure AD entfernt.
 
 #### <a name="pkcs-certificates"></a>PKCS-Zertifikate
 
-- PKCS-Zertifikate werden widerrufen *und* entfernt, wenn:
+PKCS-Zertifikate werden widerrufen *und* entfernt, wenn:
 
-  - die Registrierung eines Endbenutzers aufgehoben wird
-  - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
-  - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
+- die Registrierung eines Benutzers aufgehoben wird.
+- ein Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) ausführt.
+- ein Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) ausführt.
 
-- Das Stammzertifikat wird entfernt, wenn:
-  - die Registrierung eines Endbenutzers aufgehoben wird
-  - der Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) durchführt
-  - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
+Das Stammzertifikat wird entfernt, wenn:
+- die Registrierung eines Benutzers aufgehoben wird.
+- ein Administrator die Aktion [Zurücksetzen](devices-wipe.md#wipe) ausführt.
+- ein Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) ausführt.
 
-- PKCS-Zertifikate **verbleiben** auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
-  - ein Endbenutzer seine Intune-Lizenz verliert
-  - der Administrator die Intune-Lizenz widerruft
-  - der Administrator den Benutzer oder die Gruppe aus Azure AD entfernt
-  - der Administrator das PKCS-Profil ändert oder aktualisiert
-  - Zertifikatprofil wird aus der Gruppenzuweisung entfernt
+PKCS-Zertifikate *verbleiben* auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
+- ein Benutzer seine Intune-Lizenz verliert.
+- ein Administrator die Intune-Lizenz widerruft.
+- ein Administrator den Benutzer oder die Gruppe aus Azure AD entfernt.
+- ein Administrator das PKCS-Profil ändert oder aktualisiert
+- ein Zertifikatprofil aus der Gruppenzuweisung entfernt wird.
   
   
 > [!NOTE]
@@ -179,19 +179,19 @@ In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und e
 
 #### <a name="scep-certificates"></a>SCEP-Zertifikate
 
-- SCEP-Zertifikate werden widerrufen *und* entfernt, wenn:
-  - die Registrierung eines Endbenutzers aufgehoben wird
-  - der Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) durchführt
-  - das Gerät aus der Azure Active Directory-Gruppe entfernt wird
-  - Zertifikatprofil wird aus der Gruppenzuweisung entfernt
+SCEP-Zertifikate werden widerrufen *und* entfernt, wenn:
+- die Registrierung eines Benutzers aufgehoben wird.
+- ein Administrator die Aktion [Außer Betrieb nehmen](devices-wipe.md#retire) ausführt.
+- das Gerät aus einer Azure AD-Gruppe entfernt wird.
+- ein Zertifikatprofil aus der Gruppenzuweisung entfernt wird.
 
-- SCEP-Zertifikate werden widerrufen, wenn:
-  - der Administrator das SCEP-Profil ändert oder aktualisiert
+SCEP-Zertifikate werden widerrufen, wenn:
+- ein Administrator das SCEP-Profil ändert oder aktualisiert.
 
-- SCEP-Zertifikate **verbleiben** auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
-  - ein Endbenutzer seine Intune-Lizenz verliert
-  - der Administrator die Intune-Lizenz widerruft
-  - der Administrator den Benutzer oder die Gruppe aus Azure AD entfernt
+SCEP-Zertifikate *verbleiben* auf dem Gerät (d.h., sie werden weder widerrufen noch entfernt), wenn:
+- ein Benutzer seine Intune-Lizenz verliert.
+- ein Administrator die Intune-Lizenz widerruft.
+- ein Administrator den Benutzer oder die Gruppe aus Azure AD entfernt.
 
 > [!NOTE]
 > Die Aktion [Zurücksetzen](devices-wipe.md#wipe) zum Zurücksetzen von macOS-Geräten auf die Werkseinstellungen wird nicht unterstützt.

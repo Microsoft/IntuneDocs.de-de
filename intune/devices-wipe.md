@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
-ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
+ms.openlocfilehash: ad2d2842672853587da1396cae6c15ebd7ade44a
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53553655"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122637"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Entfernen von Geräten durch Zurücksetzen, Abkoppeln oder manuelles Aufheben der Registrierung des Geräts
 
@@ -36,8 +36,8 @@ Die Aktion **Zurücksetzen** setzt das Gerät auf die Werkseinstellungen zurück
 
 |Aktion „Zurücksetzen“|**Registrierungszustand und Benutzerkonto beibehalten**|Aus der Intune-Verwaltung entfernt|Beschreibung|
 |:-------------:|:------------:|:------------:|------------|
-|**Zurücksetzen**| Nicht geprüft | Ja  | Setzt alle Benutzerkonten, Daten, MDM-Richtlinien und Einstellungen zurück. Setzt das Betriebssystem auf Standardzustand und -einstellungen zurück.|
-|**Zurücksetzen**| Markiert | Nein | Setzt alle MDM-Richtlinien zurück. Behält Benutzerkonten und Kennwörter bei. Setzt Benutzereinstellungen auf die Standardwerte zurück. Setzt das Betriebssystem auf Standardzustand und -einstellungen zurück.|
+|**Zurücksetzen**| Nicht geprüft | Ja | Setzt alle Benutzerkonten, Daten, MDM-Richtlinien und Einstellungen zurück. Setzt das Betriebssystem auf Standardzustand und -einstellungen zurück.|
+|**Zurücksetzen**| Überprüft | Nein | Setzt alle MDM-Richtlinien zurück. Behält Benutzerkonten und Kennwörter bei. Setzt Benutzereinstellungen auf die Standardwerte zurück. Setzt das Betriebssystem auf Standardzustand und -einstellungen zurück.|
 
 Die Option **Registrierungszustand und Benutzerkonto beibehalten** steht Ihnen nur für Windows 10, Version 1709 oder höher, zur Verfügung.
 
@@ -192,6 +192,10 @@ Wenn Sie ein Apple-DEP-Gerät vollständig aus der Intune-Verwaltung entfernen m
 6. Wählen Sie **Reassign** (Neu zuweisen) aus.
 
     ![Screenshot für die Neuzuweisung für Apple](./media/devices-wipe/apple-reassign.png)
+
+## <a name="fresh-start"></a>Sauberer Start
+
+Gilt für Geräte mit Windows 10 Weitere Informationen finden Sie unter [Verwenden der Aktion „Sauberer Start“ zum Zurücksetzen von Windows 10-Geräten mit Intune](https://docs.microsoft.com/intune/device-fresh-start).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

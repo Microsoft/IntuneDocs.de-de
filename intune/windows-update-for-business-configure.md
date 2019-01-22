@@ -2,10 +2,10 @@
 title: Konfigurieren von Windows Update for Business in Microsoft Intune – Azure | Microsoft-Dokumentation
 description: Aktualisieren der Softwareupdateeinstellungen in einem Profil zum Erstellen eines Updaterings, Überprüfen der Konformität und Pausieren von Updates in den Einstellungen von Windows Update for Business auf Windows 10-Geräten mithilfe von Microsoft Intune.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112764"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297382"
 ---
 # <a name="manage-software-updates-in-intune"></a>Verwalten von Softwareupdates in Intune
 
@@ -30,7 +30,7 @@ Vereinfachen Sie die Updateverwaltung mithilfe von Windows Update for Business. 
 
 - **Windows 10-Wartungskanal**: Wählen Sie den Wartungskanal aus, von dem Gerätegruppen Updates erhalten. Folgende Kanäle sind verfügbar: 
   - Halbjährlicher Kanal
-  - Halbjährlicher Kanal (gezielt)
+  - Halbjähriger Kanal (gezielt)
   - Windows-Insider: schnell
   - Windows-Insider: langsam
   - Windows-Insider-Release 
@@ -76,16 +76,12 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 1. Klicken Sie im [Azure-Portal](https://portal.azure.com) auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie anschließend auf **Microsoft Intune**.
 2. Wählen Sie **Softwareupdates** > **Windows 10-Updateringe** > **Erstellen** aus.
 3. Geben Sie einen Namen und (optional) eine Beschreibung ein, und klicken Sie dann auf **Konfigurieren**.
-4. Geben Sie unter **Einstellungen** die folgenden Informationen ein:
+4. Geben Sie unter **Einstellungen** die folgenden Informationen ein:  
 
+   **Einstellungen aktualisieren**  
    - **Wartungskanal**: Legen Sie den Kanal fest, von dem das Gerät Windows-Updates erhält.
    - **Microsoft-Produktupdates**: Wählen Sie aus, ob nach App-Updates von Microsoft Update gesucht werden soll.
    - **Windows-Treiber**: Wählen Sie aus, ob Windows Update-Treiber bei Updates ausgeschlossen werden sollen.
-   - **Automatisches Updateverhalten**: Wählen Sie aus, wie automatische Updates installiert und wann Neustarts ausgeführt werden. Ausführliche Informationen finden Sie unter [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
-     - **Häufigkeit für automatisches Verhalten**: Wenn Sie **Zur geplanten Zeit automatisch installieren und neu starten** als Updateverhalten auswählen, wird diese Einstellung angezeigt. Verwenden Sie diese Einstellung zum Planen, wann Updates installiert werden, einschließlich der Woche, des Tags und der Uhrzeit.
-
-   - **Neustartüberprüfungen**: Standardmäßig aktiviert. Wenn Sie ein Gerät neustarten, treten einige Überprüfungen auf, einschließlich der Überprüfung der aktiven Benutzer, dem Akkustand, der ausgeführten Spiele und mehr. Klicken Sie auf **Überspringen**, um diese Überprüfungen beim Neustart eines Geräts zu überspringen.
-
    - **Zeitraum für die Zurückstellung von Qualitätsupdates in Tagen**: Geben Sie die Anzahl von Tagen ein, für die Qualitätsupdates zurückgestellt werden. Sie können diese Qualitätsupdates um bis zu 30 Tage nach der Veröffentlichung zurückstellen.
 
      Bei Qualitätsupdates handelt es sich in der Regel um Korrekturen und Verbesserungen für bereits vorhandene Windows-Funktionen. Sie werden am zweiten Dienstag jedes Monats veröffentlicht. Dies Updates („B“-Releases) sind nur für Qualitätsupdates über Windows Update verfügbar, obwohl jederzeit weitere Updates von Microsoft veröffentlicht werden können. Sie können definieren, ob und wie lange Sie die Qualitätsupdates zurückstellen, sobald diese auf Windows Update verfügbar sind. Weitere Informationen finden Sie unter [Bereitstellen von Updates mit Windows Update for Business](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
@@ -96,9 +92,21 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 
      Beispiel: **Wartungskanal festgelegt auf „Halbjährlicher Kanal (gezielt)“, Zurückstellungszeitraum 30 Tage**: Angenommen, Featureupdate X ist mit der Einstellung „Halbjährlicher Kanal (gezielt)“ in Windows Update zum ersten Mal im Januar öffentlich verfügbar. Dann erhält das Gerät das Update erst im Februar, also 30 Tage nach der Veröffentlichung.
 
-     **Wartungskanal festgelegt auf „Halbjährlicher Kanal“, Zurückstellungszeitraum 30 Tage**: Angenommen, das Featureupdate X ist mit der Einstellung „Halbjährlicher Kanal (gezielt)“ in Windows Update zum ersten Mal im Januar öffentlich verfügbar. Vier Monate später, im April, wird das Featureupdate X dann im halbjährlichen Kanal veröffentlicht. In diesem Fall erhält das Gerät das Featureupdate 30 Tage nach dieser Veröffentlichung im halbjährlichen Kanal (also im Mai).
+     **Wartungskanal festgelegt auf „Halbjährlicher Kanal“, Zurückstellungszeitraum 30 Tage**: Angenommen, das Featureupdate X ist mit der Einstellung „Halbjährlicher Kanal (gezielt)“ in Windows Update zum ersten Mal im Januar öffentlich verfügbar. Vier Monate später, im April, wird das Funktionsupdate X dann im halbjährlichen Kanal veröffentlicht. In diesem Fall erhält das Gerät das Featureupdate 30 Tage nach dieser Veröffentlichung im halbjährlichen Kanal (also im Mai).  
 
-   - **Downloadmodus für Übermittlungsoptimierung**: Wählen Sie die Methode aus, mit der Geräte Windows-Updates herunterladen. Ausführliche Informationen finden Sie unter [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   **Einstellungen für Benutzeroberfläche**
+   
+   - **Automatisches Updateverhalten**: Wählen Sie aus, wie automatische Updates installiert und wann Neustarts ausgeführt werden. Ausführliche Informationen finden Sie unter [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
+
+     Eine Einstellung von *Standard wiederherstellen* stellt die ursprünglichen Einstellungen für die automatische Aktualisierung auf Windows 10-Computern wieder her, auf denen das *Update von Oktober 2018* oder später ausgeführt wird.  
+
+     - **Häufigkeit für automatisches Verhalten**: Wenn Sie **Zur geplanten Zeit automatisch installieren und neu starten** als Updateverhalten auswählen, wird diese Einstellung angezeigt. Verwenden Sie diese Einstellung zum Planen, wann Updates installiert werden, einschließlich der Woche, des Tags und der Uhrzeit.
+
+   - **Neustartüberprüfungen**: Standardmäßig aktiviert. Wenn Sie ein Gerät neustarten, treten einige Überprüfungen auf, einschließlich der Überprüfung der aktiven Benutzer, dem Akkustand, der ausgeführten Spiele und mehr. Klicken Sie auf **Überspringen**, um diese Überprüfungen beim Neustart eines Geräts zu überspringen.
+
+   - **Anhalten von Windows-Updates durch Benutzer blockieren**: Standardmäßig zulässig. Konfigurieren Sie diese Einstellung, mit der Sie blockieren oder zulassen können, dass Ihre Benutzer Updateinstallationen über die *Einstellungen* ihrer Computer anhalten. 
+      
+   - **Downloadmodus für die Übermittlungsoptimierung:** Die Übermittlungsoptimierung wird nicht mehr als Teil eines Windows 10-Updaterings unter „Softwareupdates“ konfiguriert. Sie wird nun über die Gerätekonfiguration festgelegt. Frühere Konfigurationen bleiben jedoch in der Konsole verfügbar. Sie können diese vorherigen Konfigurationen entfernen, indem Sie sie auf *Nicht konfiguriert* setzen. Anderweitig können sie jedoch nicht geändert werden. Um Konflikte zwischen neuer und alter Richtlinie zu vermeiden, lesen Sie [Wechsel von vorhandenen Updateringen zur Übermittlungsoptimierung](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) und verschieben Ihre Einstellungen dann in ein Profil für die Übermittlungsoptimierung. 
 
 5. Klicken Sie auf **OK**, wenn Sie fertig sind. Klicken Sie unter **Updatering erstellen** auf **Erstellen**.
 
