@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: af767ce47b9382012f01de48ccd280c29ccfc27c
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 17e60e489b024b5f70c0c3c9a1fe564ed227172e
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112861"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210855"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrieren von Windows-Geräten in Intune mithilfe von Windows Autopilot  
 Windows Autopilot vereinfacht das Registrieren von Geräten in Intune. Das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems ist ein langwieriger Prozess. Es kann ebenfalls Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und Autopilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von Autopilot-Geräten verwenden, können Sie Richtlinien, Profile und Apps usw. verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -79,20 +79,20 @@ Autopilot-Bereitstellungsprofile werden verwendet, um die Autopilot-Geräte zu k
 3. Wenn Sie möchten, dass alle Geräte in den zugewiesenen Gruppen automatisch in Autopilot konvertiert werden, legen Sie für **Alle Zielgeräte in Autopilot-Geräte konvertieren** den Wert **Ja** fest. Alle Nicht-Autopilot-Geräte in zugewiesenen Gruppen werden mit dem Autopilot-Bereitstellungsdienst registriert. Die Verarbeitung der Registrierung kann 48 Stunden dauern. Wenn die Registrierung des Geräts aufgehoben und es zurückgesetzt ist, registriert Autopilot es. Nachdem ein Gerät auf diese Weise registriert wurde, wird das Gerät durch Deaktivieren dieser Option oder Entfernen der Profilzuordnung nicht aus dem Autopilot-Bereitstellungsdienst entfernt. Sie müssen stattdessen [das Gerät direkt entfernen](enrollment-autopilot.md#delete-autopilot-devices).
 4. Für **Bereitstellungsmodus** wählen Sie eine der beiden folgenden Optionen:
     - **Benutzergesteuert**: Geräte mit diesem Profil werden dem Benutzer zugeordnet, der das Gerät registriert. Für die Registrierung des Geräts sind Benutzeranmeldeinformationen erforderlich.
-    - **Selbstbereitstellend (Vorschauversion)**: (setzt den aktuellen [Windows 10 Insider Preview Build](https://docs.microsoft.com/windows-insider/at-work-pro/) voraus) Geräte mit diesem Profil werden nicht dem Benutzer zugeordnet, der das Gerät registriert. Für die Registrierung des Geräts sind keine Anmeldeinformationen erforderlich.
+    - **Selbstbereitstellend (Vorschauversion)**: (Windows 10, Version 1809 oder höher, erforderlich) Geräte mit diesem Profil werden nicht dem Benutzer zugeordnet, der das Gerät registriert. Für die Registrierung des Geräts sind keine Anmeldeinformationen erforderlich.
 5. Wählen Sie im Feld **Verknüpfen mit Azure AD als** die Option **In Azure AD eingebunden**.
 6. Wählen Sie **Willkommensseite**, konfigurieren Sie die folgenden Optionen, und wählen Sie **Speichern**:
     - **Sprache (Region)**\*: Wählen Sie die Sprache aus, die für das Gerät verwendet werden soll. Diese Option ist nur verfügbar, wenn Sie **Selbstbereitstellend** als **Bereitstellungsmodus** ausgewählt haben.
     - **Tastatur automatisch konfigurieren**\*: Wenn **Sprache (Region)** ausgewählt ist, können Sie mit **Ja** die Tastaturauswahlseite überspringen. Diese Option ist nur verfügbar, wenn Sie **Selbstbereitstellend** als **Bereitstellungsmodus** ausgewählt haben.
     - **Microsoft-Software-Lizenzbedingungen**: (Windows 10, Version 1709 oder höher) Wählen Sie aus, ob die Lizenzbedingungen den Benutzern angezeigt werden sollen.
     - **Datenschutzeinstellungen**: Wählen Sie aus, ob die Datenschutzeinstellungen den Benutzern angezeigt werden.
-    - **Optionen zur Kontoänderung ausblenden (nur Windows-Insider)**: Wählen Sie **Ausblenden** aus, um zu verhindern, dass Optionen zum Ändern des Kontos auf der Anmeldeseite des Unternehmens und den Domänenfehlerseiten angezeigt werden. Für diese Option muss das [Unternehmensbranding in Azure Active Directory konfiguriert](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) sein.
+    - **Optionen zur Kontoänderung ausblenden (Windows 10, Version 1809 oder höher, erforderlich)**: Wählen Sie **Ausblenden** aus, um zu verhindern, dass Optionen zum Ändern des Kontos auf der Anmeldeseite des Unternehmens und den Domänenfehlerseiten angezeigt werden. Für diese Option muss das [Unternehmensbranding in Azure Active Directory konfiguriert](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) sein.
     - **Art des Benutzerkontos**: Wählen Sie den Kontotyp des Benutzers aus (**Administrator** oder **Standardbenutzer**).
-    - **Vorlage für Computernamen anwenden (nur Windows-Insider)**: Klicken Sie auf **Ja**, um eine Vorlage für die Benennung eines Geräts während der Registrierung zu erstellen. Namen dürfen höchstens 15 Zeichen lang sein und können Buchstaben, Zahlen und Bindestriche enthalten. Ein Name darf nicht nur aus Zahlen bestehen. Verwenden Sie das [%SERIAL%-Makro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp), um eine hardwarespezifische Seriennummer hinzuzufügen. Verwenden Sie alternativ das [%RAND:x%-Makro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp), um eine zufällige Zeichenfolge von Zahlen hinzuzufügen, bei der x der Anzahl der hinzuzufügenden Ziffern entspricht. 
+    - **Apply computer name template (Computernamensvorlage anwenden) (Windows 10, Version 1809 oder höher, erforderlich)**: Klicken Sie auf **Ja**, um eine Vorlage für die Benennung eines Geräts während der Registrierung zu erstellen. Namen dürfen höchstens 15 Zeichen lang sein und können Buchstaben, Zahlen und Bindestriche enthalten. Ein Name darf nicht nur aus Zahlen bestehen. Verwenden Sie das [%SERIAL%-Makro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp), um eine hardwarespezifische Seriennummer hinzuzufügen. Verwenden Sie alternativ das [%RAND:x%-Makro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp), um eine zufällige Zeichenfolge von Zahlen hinzuzufügen, bei der x der Anzahl der hinzuzufügenden Ziffern entspricht. 
 
 6. Wählen Sie **Erstellen** aus, um das Profil zu erstellen. Das Autopilot-Bereitstellungsprofil ist nun verfügbar und kann Geräten zugewiesen werden.
 
-*Sowohl **Sprache (Region)** als auch **Tastatur automatisch konfigurieren** sind nur verfügbar, wenn **Selbstbereitstellend (Vorschauversion)** für den **Bereitstellungsmodus** ausgewählt ist (setzt den aktuellen [Windows 10 Insider Preview Build](https://docs.microsoft.com/windows-insider/at-work-pro/) voraus).
+* Sowohl **Sprache (Region)** als auch **Tastatur automatisch konfigurieren** sind nur verfügbar, wenn **Selbstbereitstellend (Vorschauversion)** für den **Bereitstellungsmodus**  (Windows 10, Version 1809 oder höher, erforderlich) ausgewählt ist.
 
 
 ## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>Zuweisen eines Autopilot-Bereitstellungsprofils zu einer Gerätegruppe
@@ -100,6 +100,9 @@ Autopilot-Bereitstellungsprofile werden verwendet, um die Autopilot-Geräte zu k
 1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Windows-Registrierung** > **Bereitstellungsprofil** ein Profil aus.
 2. Wählen Sie auf dem entsprechenden Profilblatt die Option **Zuweisungen**. 
 3. Wählen Sie **Gruppen auswählen** und dann auf dem Blatt **Gruppen auswählen** die Gruppe(n), die Sie dem Profil zuweisen möchten, und wählen Sie anschließend **Auswählen**.
+
+> [!NOTE]
+> Intune führt regelmäßig eine Überprüfung auf neuen Geräten in den zugewiesenen Gruppen durch und beginnt dann mit der Zuweisung von Profilen zu diesen Geräten. Dieser Vorgang kann einige Minuten dauern. Vor der Bereitstellung eines Geräts stellen Sie sicher, dass der Vorgang abgeschlossen ist.  Sehen Sie unter **Geräteregistrierung** > **Windows-Registrierung ** > **Gerät** nach, wo der Profilstatus von „Nicht zugewiesen“ auf „Wird zugewiesen“ und schließlich auf „Zugewiesen“ geändert werden sollte. 
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Bearbeiten eines Autopilot-Bereitstellungsprofils
 Nachdem Sie ein Autopilot-Bereitstellungsprofil erstellt haben, können Sie bestimmte Teile des Bereitstellungsprofils bearbeiten.   
@@ -125,7 +128,7 @@ Um Warnungen für nicht zugewiesene Geräte anzuzeigen, wählen Sie in [Intune i
 
 Sie können einen Benutzer zu einem bestimmten Autopilot-Gerät hinzufügen. Durch diese Zuweisung werden während der Windows-Einrichtung auf der [unternehmensspezifischen](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) Anmeldeseite schon vorab die Informationen für einen Benutzer eingetragen, der in Azure Active Directory verwaltet wird. Sie können auch eine benutzerdefinierte Begrüßung festlegen. Die Windows-Anmeldung wird nicht vorab ausgefüllt oder geändert. Nur lizenzierte Intune-Benutzer können so zugewiesen werden.
 
-Voraussetzungen: Das Azure Active Directory-Unternehmensportal wurde konfiguriert, und der aktuelle [Windows 10 Insider Preview Build](https://docs.microsoft.com/windows-insider/at-work-pro/) wird verwendet.
+Voraussetzungen: Das Azure Active Directory-Unternehmensportal wurde konfiguriert und verfügt über Windows 10, Version 1809 oder höher.
 
 1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Windows-Registrierung** > **Geräte** aus, wählen Sie anschließend das Gerät aus, und klicken Sie auf **Benutzer zuweisen**.
 
