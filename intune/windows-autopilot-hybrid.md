@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f6a78c6612f98903fcbaa9d33b8037c5ea4a3960
-ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
+ms.openlocfilehash: f81875afffa461e036bc319febc9a6141967c440
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54149660"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380466"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot (Vorschauversion)
 Sie können in Azure Active Directory Hybrid eingebundenen Geräte mithilfe von Intune und Windows Autopilot einrichten. Führen Sie dazu die folgenden Schritte aus.
@@ -116,6 +116,9 @@ Der Intune-Connector für Active Directory muss auf einem Computer mit Windows S
 6. Wählen Sie **Anmelden** aus.
 7. Geben Sie die Anmeldedaten für die Rolle „Globaler Administrator“ oder „Intune-Administrator“ ein.
 8. Wechseln Sie zu **Geräteregistrierung** > **Windows-Registrierung** > **Intune-Connector für Active Directory (Vorschau)**, und bestätigen Sie, dass der Verbindungsstatus **Aktiv** ist.
+
+ > [!NOTE]
+ > Nachdem der **Anmeldung** im Connector, dauert es möglicherweise einige Minuten, bis er in [Intune](https://aka.ms/intuneportal) angezeigt wird. Beachten Sie, dass der Connector nur angezeigt wird, wenn er erfolgreich mit dem Intune-Dienst kommunizieren kann.
 
 ### <a name="configure-web-proxy-settings"></a>Konfigurieren von Webproxyeinstellungen
 

@@ -1,12 +1,12 @@
 ---
-title: Registrieren von Android Enterprise-Kioskgeräten in Intune
+title: Einrichten der Intune-Registrierung für dedizierte Enterprise-Android-Geräte
 titlesuffix: Microsoft Intune
-description: Erfahren Sie, wie Sie Android Enterprise-Kioskgeräte in Intune registrieren.
+description: Erfahren Sie, wie Sie dedizierte Enterprise-Android-Geräte in Intune registrieren.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 6/21/2018
+ms.date: 1/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,43 +16,43 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5a84bcd820b7596d1b1df01342604562c7853140
-ms.sourcegitcommit: a44359b426e19b8bf4b99eca6af2755c6d3c6fb8
+ms.openlocfilehash: 4a6818f67ab4e3b04364b412fb8ecf71227328d4
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54098316"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54386913"
 ---
-# <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Einrichten der Intune-Registrierung von Android Enterprise-Kioskgeräten
+# <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Einrichten der Intune-Registrierung für dedizierte Enterprise-Android-Geräte
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android unterstützt Geräte im Kioskstil mit dem Lösungssatz für [dedizierte Geräte](https://developers.google.com/android/work/overview#company-owned-devices-for-dedicated-use). Solche Geräte werden für einen einzigen Zweck verwendet, dazu gehören z.B. die digitale Beschilderung, das Drucken von Tickets oder die Bestandsverwaltung. Administratoren beschränken die Verwendung eines Geräts auf eine begrenzte Anzahl von Apps und Weblinks. Außerdem wird verhindert, dass Benutzer andere Apps hinzufügen oder andere Aktionen auf dem Gerät ausführen können.
+Android unterstützt unternehmenseigene kioskartige Geräte mit unternehmenseigenen Lösungen zur einmaligen Verwendung. Solche Geräte werden für einen einzigen Zweck verwendet, dazu gehören z.B. die digitale Beschilderung, das Drucken von Tickets oder die Bestandsverwaltung. Administratoren beschränken die Verwendung eines Geräts auf eine begrenzte Anzahl von Apps und Weblinks. Außerdem wird verhindert, dass Benutzer andere Apps hinzufügen oder andere Aktionen auf dem Gerät ausführen können.
 
-Intune unterstützt Sie beim Bereitstellen von Apps und Einstellungen für Android-Kioskgeräte. Ausführliche Informationen über Android Enterprise finden Sie in den [Voraussetzungen für Android Enterprise](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Intune unterstützt Sie beim Bereitstellen von Apps und Einstellungen für dedizierte Android-Geräte. Ausführliche Informationen über Android Enterprise finden Sie in den [Voraussetzungen für Android Enterprise](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 Geräte, die Sie auf diese Weise verwalten, werden ohne Benutzerkonto in Intune registriert und keinem Endbenutzer zugeordnet. Sie sind nicht für den persönlichen Gebrauch von Anwendungen oder Apps vorgesehen, die ausführliche Voraussetzung für benutzerspezifische Kontodaten umfassen, z.B. Outlook oder Gmail.
 
 ## <a name="device-requirements"></a>Geräteanforderungen
 
-Geräte müssen diese Anforderungen erfüllen, um als Android Enterprise-Kioskgerät verwaltet zu werden:
+Geräte müssen diese Anforderungen erfüllen, um als dediziertes Enterprise-Android-Gerät verwaltet zu werden:
 
 - Android-Betriebssystemversion 5.1 und höher.
 - Geräte müssen eine Android-Verteilung ausführen, die über GMS-Konnektivität (Google Mobile Services) verfügt. Geräte müssen über GMS verfügen und dazu in der Lage sein, eine Verbindung mit GMS herzustellen.
 
-## <a name="set-up-android-kiosk-management"></a>Einrichten der Android-Kioskverwaltung
+## <a name="set-up-android-dedicated-device-management"></a>Einrichten der Verwaltung von dedizierten Android-Geräten
 
-Führen Sie die folgenden Schritte aus, um die Android-Kioskverwaltung einzurichten:
+Führen Sie die folgenden Schritte aus, um die Verwaltung für dedizierte Android-Geräte einzurichten:
 
 1. Sie müssen [**Microsoft Intune** als MDM-Autorität (mobile Geräteverwaltung) festlegen](mdm-authority-set.md), um die Verwaltung von mobilen Geräten vorzubereiten. Sie legen dieses Element nur einmal fest, wenn Sie die Ersteinrichtung von Intune für die Verwaltung mobiler Geräte durchführen.
 2. [Verknüpfen Sie Ihr Intune-Mandantenkonto mit Ihrem Android Enterprise-Konto](connect-intune-android-enterprise.md).
 3. [Erstellen Sie ein Registrierungsprofil](#create-an-enrollment-profile).
 4. [Erstellen Sie eine Gerätegruppe](#create-a-device-group).
-5. [Registrieren Sie die Kioskgeräte](#enroll-the-kiosk-devices).
+5. [Registrieren Sie die dedizierten Geräte](#enroll-the-dedicated-devices).
 
 ### <a name="create-an-enrollment-profile"></a>Erstellen eines Anmeldungsprofils
 
-Sie müssen ein Registrierungsprofil erstellen, damit Sie Ihre Kioskgeräte registrieren können. Wenn das Profil erstellt wird, wird ein Registrierungstoken (zufällige Zeichenfolge) und ein QR-Code bereitgestellt. Je nach Android-Betriebssystem und Version des Geräts können Sie entweder das Token oder den QR-Code zum [Registrieren des Kioskgeräts](#enroll-the-kiosk-devices) verwenden.
+Sie müssen ein Registrierungsprofil erstellen, damit Sie Ihre dedizierten Geräte registrieren können. Wenn das Profil erstellt wird, wird ein Registrierungstoken (zufällige Zeichenfolge) und ein QR-Code bereitgestellt. Je nach Android-Betriebssystem und Version des Geräts können Sie entweder das Token oder den QR-Code zum [Registrieren des dedizierten Geräts](#enroll-the-dedicated-devices) verwenden.
 
 1. Navigieren Sie zum [Intune-Portal](https://portal.azure.com), und klicken Sie auf **Geräteregistrierung** > **Android-Registrierung** > **Kiosk und Taskgeräteregistrierungen**.
 2. Klicken Sie auf **Erstellen**, und füllen Sie die erforderlichen Felder aus.
@@ -95,81 +95,20 @@ Das Ersetzen oder Widerrufen eines Tokens bzw. QR-Codes hat keine Auswirkungen a
 4. Klicken Sie auf **Token ersetzen**, um das Token zu ersetzen.
 5. Klicken Sie auf **Token widerrufen**, um das Token zu widerrufen.
 
-## <a name="enroll-the-kiosk-devices"></a>Registrieren der Kioskgeräte
+## <a name="enroll-the-dedicated-devices"></a>Registrieren der dedizierten Geräte
 
-Nachdem Sie das Registrierungsprofil und die dynamische Gerätegruppe erstellt haben, können Sie Ihre Kioskgeräte registrieren. Wie Sie Ihre Android-Geräte registrieren hängt vom Betriebssystem ab.
+Sie können jetzt [Ihre dedizierten Geräte registrieren](android-dedicated-devices-fully-managed-enroll.md).
 
-| Registrierungsmethode | Niedrigste unterstützte Android-Betriebssystemversion |
-| ----- | ----- |
-| Near Field Communication | 5.1 |
-| Token-Eingabe | 6.0 |
-| QR-Code | 7.0 |
-| Zero-Touch | 8.0 bei beteiligten Herstellern |
+## <a name="managing-apps-on-android-dedicated-devices"></a>Verwalten von Apps auf dedizierten Android-Geräten
 
-### <a name="enroll-by-using-near-field-communication-nfc"></a>Registrieren mit NFC (Near Field Communication)
-
-Bei Android 5.1- und höheren Geräten, die NFC unterstützen, können Sie Ihre Geräte bereitstellen, indem Sie ein speziell formatiertes NFC-Tag erstellen. Sie können Ihre eigene App oder ein beliebiges NFC-Tagerstellungstool verwenden. Weitere Informationen finden Sie in der [Google-Dokumentation zur Android-Verwaltungs-API](https://developers.google.com/android/management/provision-device#nfc_method).
-
-### <a name="enroll-by-using-a-token"></a>Registrieren mithilfe eines Tokens
-
-Für Android 6-Geräte und höher können Sie das Token zum Registrieren des Geräts verwenden. Bei Android 6.1 und höheren Versionen kann bei Verwendung der Registrierungsmethode **afw#setup** auch der QR-Code-Scan genutzt werden.
-
-1. Schalten Sie das zurückgesetzte Gerät ein.
-2. Wählen Sie auf dem **Willkommenssbildschirm** Ihre Sprache aus.
-3. Stellen Sie eine **WLAN**-Verbindung her, und tippen Sie dann auf **WEITER**.
-4. Akzeptieren Sie Nutzungsbedingungen von Google, und tippen Sie dann auf **WEITER**.
-5. Geben Sie auf dem Google-Anmeldebildschirm anstelle eines Gmail-Kontos **afw#setup** ein, und tippen Sie dann auf **WEITER**.
-6. Tippen Sie bei der **Android-Geräterichtlinien**-App auf **INSTALLIEREN**.
-7. Fahren Sie mit der Installation dieser Richtlinie fort.  Einige Geräte erfordern möglicherweise, dass zusätzliche Lizenzbedingungen akzeptiert werden. 
-8. Lassen Sie auf dem Bildschirm **Dieses Gerät registrieren** zu, dass Ihr Gerät den QR-Code scannen kann, oder geben Sie das Token manuell ein.
-9. Führen Sie die angezeigten Eingabeaufforderungen durch, um die Registrierung abzuschließen. 
-
-### <a name="enroll-by-using-a-qr-code"></a>Registrieren mithilfe eines QR-Codes
-
-Auf Android 7-Geräten und höher können Sie den QR-Code aus dem Registrierungsprofil scannen, um das Gerät zu registrieren.
-
-> [!Note]
-> Bei bestimmten Zoomeinstellungen des Browsers können Geräte möglicherweise keine QR-Codes scannen. Dieses Problem lässt sich durch die Erhöhung des Zooms beheben.
-
-1. Tippen Sie mehrmals auf den ersten Bildschirm, der nach einer Zurücksetzung angezeigt wird, um einen QR-Scanner auf dem Android-Gerät zu starten.
-2. Auf Android 7- und 8-Geräten werden Sie dazu aufgefordert, einen QR-Scanner zu installieren. Auf Android 9-Geräten und höher ist bereits ein QR-Scanner installiert.
-3. Verwenden Sie den QR-Scanner zum Scannen des QR-Codes vom Registrierungsprofil, und führen Sie anschließend die angezeigten Eingabeaufforderungen aus, um die Registrierung durchzuführen.
-
-### <a name="enroll-by-using-google-zero-touch"></a>Registrieren mithilfe von Google Zero-Touch
-
-Das Gerät muss das Zero-Touch-System von Google unterstützen und einem Lieferanten zugeordnet sein, der Teil des Diensts ist, damit das System verwendet werden kann.  Weitere Informationen finden Sie auf der [Website zum Zero-Touch-Programm von Google](https://www.android.com/enterprise/management/zero-touch/). 
-
-
-1. Erstellen Sie eine neue Konfiguration in der Zero-Touch-Konsole.
-2. Wählen Sie in der EMM DPC-Dropdownliste **Microsoft Intune** aus.
-3. Kopieren Sie den folgenden JSON-Code, und fügen Sie ihn in der Zero-Touch-Konsole von Google in das Feld „DPC-Extras“ ein. Ersetzen Sie die Zeichenfolge *YourEnrollmentToken* mit dem Registrierungstoken, das Sie als Teil Ihres Registrierungsprofils erstellt haben. Stellen Sie sicher, dass das Registrierungstoken mit doppelten Anführungszeichen umgeben ist.
-
-```
-{ 
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME": "com.google.android.apps.work.clouddpc/.receivers.CloudDeviceAdminReceiver", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM": "I5YvS0O5hXY46mb01BlRjq4oJJGs2kuUcHvVkAPEXlg", 
-
-    "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION": "https://play.google.com/managed/downloadManagingApp?identifier=setup", 
-
-    "android.app.extra.PROVISIONING_ADMIN_EXTRAS_BUNDLE": { 
-        "com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "YourEnrollmentToken" 
-    } 
-} 
-```
-4. Wählen Sie **Anwenden** aus.
-
-## <a name="managing-apps-on-android-kiosk-devices"></a>Verwalten von Apps auf Android-Kioskgeräten
-
-Nur Apps, deren Zuweisungstyp auf [Erforderlich](apps-deploy.md#to-assign-an-app) festgelegt ist, können auf Android-Kioskgeräten installiert werden. Apps werden über den verwalteten Google Play Store auf die gleiche Weise installiert wie bei Android-Arbeitsprofilgeräten.
+Nur Apps, deren Zuweisungstyp auf [Erforderlich](apps-deploy.md#to-assign-an-app) festgelegt ist, können auf dedizierten Android-Geräten installiert werden. Apps werden über den verwalteten Google Play Store auf die gleiche Weise installiert wie bei Android-Arbeitsprofilgeräten.
 
 Apps werden auf verwalteten Geräten automatisch aktualisiert, wenn der App-Entwickler ein Update auf Google Play veröffentlicht.
 
-Sie können eine der folgenden Aktionen durchführen, um eine App von Android-Kioskgeräten zu entfernen:
+Sie können eine der folgenden Aktionen durchführen, um eine App von dedizierten Android-Geräten zu entfernen:
 -   Löschen Sie die erforderliche App-Bereitstellung.
 -   Erstellen Sie eine Deinstallationsdatei für die App.
 
-
 ## <a name="next-steps"></a>Nächste Schritte
-- [Bereitstellen von Android-Kiosk-Apps](apps-deploy.md)
-- [Hinzufügen von Konfigurationsrichtlinien für einen Android-Kiosk](device-profiles.md)
+- [Android-Apps bereitstellen](apps-deploy.md)
+- [Android-Konfigurationsrichtlinien hinzufügen](device-profiles.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: ''
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad2d2842672853587da1396cae6c15ebd7ade44a
-ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
+ms.openlocfilehash: 1866d658503cb2dcdf482a050d7bbd73a914858b
+ms.sourcegitcommit: 398b8a0d98e928b3406f59ab3d061554643ef60b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54122637"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "54400023"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Entfernen von Geräten durch Zurücksetzen, Abkoppeln oder manuelles Aufheben der Registrierung des Geräts
 
@@ -81,22 +81,20 @@ In den folgenden Tabellen wird beschrieben, welche Daten entfernt werden und wel
 
 |Datentyp|iOS|
 |-------------|-------|
-|Von Intune installierte Unternehmens-Apps und zugehörige Daten|**Mit dem Unternehmensportal installierte Apps**: Alle App-Daten und die Apps werden entfernt. Zu diesen Apps gehören diejenigen, die ursprünglich aus dem App Store installiert und später als Unternehmens-Apps verwaltet werden. <br /><br /> **Microsoft-Apps mit mobiler App-Verwaltung, die aus dem App Store installiert wurden**: Daten von Unternehmens-Apps werden entfernt. Persönliche App-Daten und die Apps selbst werden nicht entfernt.|
+|Von Intune installierte Unternehmens-Apps und zugehörige Daten|**Über das Unternehmensportal installierte Apps:** Für Apps, die am Verwaltungsprofil fixiert sind, werden alle Appdaten und Apps entfernt. Zu diesen Apps gehören diejenigen, die ursprünglich aus dem App Store installiert und später als Unternehmens-Apps verwaltet werden. <br /><br /> **Microsoft-Apps mit mobiler App-Verwaltung, die aus dem App Store installiert wurden**: Bei Apps, die nicht vom Unternehmensportal verwaltet werden, werden die Daten der Unternehmensapps, die durch die Mobile Application Management (MAM)-Verschlüsselung innerhalb des lokalen Speichers der App geschützt sind, entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt. Persönliche App-Daten und die Apps selbst werden nicht entfernt.|
 |Einstellung|Von der Intune-Richtlinie festgelegte Konfigurationen werden nicht mehr erzwungen. Benutzer können die Einstellungen ändern.|
 |Einstellungen für WLAN- und VPN-Profil|Entfernt.|
 |Zertifikatprofil-Einstellungen|Zertifikate werden entfernt und gesperrt.|
 |Verwaltungs-Agent|Das Verwaltungsprofil wird entfernt.|
 |E-Mail|E-Mail-Profile, die über Intune bereitgestellt werden, werden entfernt. Auf dem Gerät zwischengespeicherte E-Mails werden gelöscht.|
-|Outlook|E-Mails, die über die Microsoft Outlook-App für iOS empfangen wurden, werden entfernt. Dies erfordert, dass die mobile Outlook-App als erforderliche App zunächst für iOS-Benutzer bereitgestellt wird.|
 |Entfernen von Azure AD|Der Azure AD-Datensatz wird entfernt.|
-|Kontakte |Kontakte, die direkt aus der App mit dem internen Adressbuch synchronisiert werden, werden entfernt. Alle Kontakte, die aus dem internen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht entfernt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.
 
 ### <a name="android"></a>Android
 
 |Datentyp|Android|Android Samsung Knox Standard|
 |-------------|-----------|------------------------|
 |Weblinks|Entfernt.|Entfernt.|
-|Nicht verwaltete Google Play-Apps|Apps und Daten bleiben installiert.|Apps und Daten bleiben installiert.|
+|Nicht verwaltete Google Play-Apps|Apps und Daten bleiben installiert. <br /> <br />Daten der Unternehmensapps, die durch die Mobile Application Management (MAM)-Verschlüsselung innerhalb des lokalen Speichers der App geschützt sind, werden entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt. |Apps und Daten bleiben installiert. <br /> <br />Daten der Unternehmensapps, die durch die Mobile Application Management (MAM)-Verschlüsselung innerhalb des lokalen Speichers der App geschützt sind, werden entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|
 |Nicht verwaltete Geschäftssparten-Apps|Apps und Daten bleiben installiert.|Apps werden deinstalliert, und daher werden auch die lokalen Daten der App entfernt. Daten außerhalb der App (z.B. auf einer SD-Karte) werden nicht entfernt.|
 |Verwaltete Google Play-Apps|App-Daten werden entfernt. Die App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung (Mobile Application Management) außerhalb der App (z.B. auf einer SD-Karte) geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|App-Daten werden entfernt. Die App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (z.B. auf einer SD-Karte) geschützt sind, bleiben verschlüsselt, werden aber nicht entfernt.|
 |Nicht verwaltete Geschäftssparten-Apps|App-Daten werden entfernt. Die App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (z.B. auf einer SD-Karte) geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|App-Daten werden entfernt. Die App wird nicht entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App (z.B. auf einer SD-Karte) geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt.|
@@ -105,9 +103,7 @@ In den folgenden Tabellen wird beschrieben, welche Daten entfernt werden und wel
 |Zertifikatprofil-Einstellungen|Zertifikate werden gesperrt, aber nicht entfernt.|Zertifikate werden entfernt und gesperrt.|
 |Verwaltungs-Agent|Die Berechtigung „Geräteadministrator“ wird gesperrt.|Die Berechtigung „Geräteadministrator“ wird gesperrt.|
 |E-Mail|N/V (E-Mail-Profile werden von Android-Geräten nicht unterstützt.)|E-Mail-Profile, die über Intune bereitgestellt werden, werden entfernt. Auf dem Gerät zwischengespeicherte E-Mails werden gelöscht.|
-|Outlook|Von der Outlook-App für Android empfangene E-Mails werden entfernt, allerdings nur, wenn Outlook durch MAM-Richtlinien geschützt wird. Andernfalls wird Outlook nicht zurückgesetzt, wenn das Gerät abgemeldet wird.|Von der Outlook-App für Android empfangene E-Mails werden entfernt, allerdings nur, wenn Outlook durch MAM-Richtlinien geschützt wird. Andernfalls wird Outlook nicht zurückgesetzt, wenn das Gerät abgemeldet wird.|
 |Entfernen von Azure AD|Der Azure AD-Datensatz wird entfernt.|Der Azure AD-Datensatz wird entfernt.|
-|Kontakte |Kontakte, die direkt aus der App mit dem internen Adressbuch synchronisiert werden, werden entfernt. Alle Kontakte, die aus dem internen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht entfernt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.|Kontakte, die direkt aus der App mit dem internen Adressbuch synchronisiert werden, werden entfernt. Alle Kontakte, die aus dem internen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht entfernt werden. <br /> <br />Derzeit wird nur die Outlook-App unterstützt.
 
 ### <a name="android-work-profile"></a>Android-Arbeitsprofil
 

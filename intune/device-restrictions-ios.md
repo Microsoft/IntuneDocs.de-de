@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d6fb1c65199b68f7492b1f397c4f6075e345d3e8
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 80eb088063522ba3acb293776064fd98846b9a3e
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203670"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380509"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
@@ -151,12 +151,12 @@ Der überwachte Modus von iOS kann nur während der ersten Einrichtung des Gerä
 - **Anstößige iTunes-Musik, Podcasts oder Nachrichteninhalte (nur überwacht):** Wählen Sie **Blockieren** aus, um anstößige iTunes-Musik, Podcasts oder Nachrichteninhalte zu verhindern. **Nicht konfiguriert** ermöglicht, dass das Gerät im Store auf nicht jugendfreie Inhalte zugreift.
 - **Download content from iBook store flagged as 'Erotica'** (Als „Erotik“ gekennzeichneten Inhalt aus dem iBooks Store herunterladen): Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer Medien aus dem iBook Store herunterladen, die als „Erotik“ gekennzeichnet sind. **Nicht konfiguriert** gestattet dem Benutzer das Herunterladen von Büchern aus der Kategorie „Erotik“.
 - **Anzeige von Unternehmensdokumenten in nicht verwalteten Apps:** **Blockieren** verhindert, die Anzeige nicht unternehmenseigener Dokumente in Unternehmens-Apps. **Nicht konfiguriert** gestattet die Anzeige von Unternehmensdokumenten in beliebigen Apps. Beispiel: Sie möchten verhindern, dass Benutzer Dateien aus der OneDrive-App in Dropbox speichern. Legen Sie für diese Einstellung **Blockieren** fest. Sobald das Gerät die Richtlinie empfängt (z.B. nach einem Neustart), ist kein Speichern mehr möglich.
-  - **Schreiben von Kontakten in nicht verwaltete Kontaktkonten für verwaltete Apps zulassen (nur überwacht):** Wenn Sie **Zulassen** auswählen, können Benutzer die Outlook-Kontaktinformationen jeder Person zur App „Kontakte“, die auf dem Geräte integriert ist, hinzufügen oder sie mit ihr synchronisieren, einschließlich geschäftlicher Kontakte und Firmenkontakte. Wenn Sie **Nicht konfiguriert** auswählen, können Benutzer Outlook-Kontakte nicht der auf dem Gerät integrierten App „Kontakte“ hinzufügen.
+  - **Schreiben von Kontakten in nicht verwaltete Kontaktkonten für verwaltete Apps zulassen**: Wenn Sie **Zulassen** auswählen, können Benutzer die Outlook-Kontaktinformationen jeder Person zur App „Kontakte“, die auf dem Geräte integriert ist, hinzufügen oder sie mit ihr synchronisieren, einschließlich geschäftlicher Kontakte und Firmenkontakte. Wenn Sie **Nicht konfiguriert** auswählen, können Benutzer Outlook-Kontakte nicht der auf dem Gerät integrierten App „Kontakte“ hinzufügen.
   
     Wenn Sie diese Einstellung verwenden möchten, legen Sie die Einstellung **Anzeige von Unternehmensdokumenten in nicht verwalteten Apps** auf **Blockieren** fest.
   
 - **Anzeige nicht unternehmenseigener Dokumente in Unternehmens-Apps:** **Blockieren** verhindert, dass nicht unternehmenseigene Dokumente in Unternehmens-Apps angesehen werden können. **Nicht konfiguriert** gestattet die Anzeige beliebiger Dokumente in verwalteten Unternehmens-Apps.
-  - **Lesen aus verwalteten Kontaktkonten für nicht verwaltete Apps zulassen (nur überwacht):** Wenn Sie **Zulassen** auswählen, können Benutzer Kontaktinformationen von jeder Person aus der iContacts-App in Outlook einfügen. **Nicht konfiguriert** verhindert, dass die integrierte App „Kontakte“ auf dem Gerät gelesen oder Duplikate entfernt werden können.
+  - **Lesen aus verwalteten Kontaktkonten für nicht verwaltete Apps zulassen**: Wenn Sie **Zulassen** auswählen, können Benutzer Kontaktinformationen von jeder Person aus der iContacts-App in Outlook einfügen. **Nicht konfiguriert** verhindert, dass die integrierte App „Kontakte“ auf dem Gerät gelesen oder Duplikate entfernt werden können.
   
     Wenn Sie diese Einstellung verwenden möchten, legen Sie die Einstellung **Anzeige nicht unternehmenseigener Dokumente in Unternehmens-Apps** auf **Blockieren** fest.
   

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 671c713be805038c7c2f2608dbadd9d8afdce344
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203602"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387017"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune
 
@@ -87,7 +87,7 @@ In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschri
 
 ### <a name="kiosk-settings"></a>Kioskeinstellungen
 
-Sie können ein Gerät zum Ausführen einer App oder mehrerer Apps konfigurieren. Im Kioskmodus eines Geräts stehen nur die Apps zur Verfügung, die Sie hinzufügen.
+Sie können ein Gerät zum Ausführen einer App oder mehrerer Apps konfigurieren. Im Kioskmodus eines Geräts stehen nur die Apps zur Verfügung, die Sie hinzufügen. Diese Einstellungen gelten für dedizierte Android-Geräte, nicht aber für vollständig verwaltete dedizierte Android-Geräte.
 
 **Kioskmodus:** Wählen Sie aus, ob das Gerät eine App oder mehrere Apps ausführt.
 
