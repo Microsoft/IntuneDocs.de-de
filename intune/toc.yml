@@ -196,12 +196,8 @@ items:
         href: connect-intune-android-enterprise.md
       - name: Einrichten der Registrierung von Android-Arbeitsprofilen
         href: android-work-profile-enroll.md
-      - name: Einrichten der Registrierung von dedizierten Android-Geräten
+      - name: Einrichten der Android-Kioskregistrierung
         href: android-kiosk-enroll.md
-      - name: Einrichten der Registrierung von vollständig verwalteten Android-Geräten
-        href: android-fully-managed-enroll.md
-      - name: Einrichten von dedizierten oder vollständig verwalteten Android-Geräten
-        href: android-dedicated-devices-fully-managed-enroll.md
       - name: Verwalten von Android-Arbeitsprofilgeräten
         href: android-enterprise-overview.md
       - name: Registrierung mobiler Geräte für Samsung Knox
@@ -858,9 +854,9 @@ items:
         href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
       - name: Lösen von Richtlinienkonflikten
         href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-ms.openlocfilehash: a227b0eecc9a32202fcb801bb48bc2507f8dede8
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 2939459eafe7771c33ec20fd150c36c7808c2b1c
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54386990"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325048"
