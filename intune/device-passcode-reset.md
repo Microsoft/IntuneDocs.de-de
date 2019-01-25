@@ -14,12 +14,12 @@ ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8b5f86a8f0d9beaef9e55d2281e3500e0c298a16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2992dbfef4c51b8550e748bde453c85070b6910b
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182397"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418175"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Zurücksetzen oder Entfernen einer Gerätekennung in Intune
 
@@ -31,9 +31,9 @@ In diesem Dokument wird die Kennungsrückstellung auf Dienstebene sowie die Kenn
 
 | Plattform | Unterstützt? |
 | ---- | ---- |
-| Geräte unter Android Version 6.x oder früher | Ja  |
-| Android Enterprise-Geräte im Kioskmodus | Ja  |
-| iOS-Geräte | Ja  |
+| Geräte unter Android Version 6.x oder früher | Ja |
+| Android Enterprise-Geräte im Kioskmodus | Ja |
+| iOS-Geräte | Ja |
 | Android-Geräte, die mit einem Arbeitsprofil registriert sind (Version 7.0 und früher) | Nein |
 | Geräte unter Android 7.0 und höher | Nein |
 | macOS | Nein |
@@ -45,7 +45,7 @@ Für Android-Geräte bedeutet dies im Endeffekt, dass die Kennungsrückstellung 
 
 | Plattform | Unterstützt? |
 | ---- | ---- |
-| Android Enterprise-Geräte, die mit einem Arbeitsprofil registriert sind und auf denen Version 8.0 und höher ausgeführt wird | Ja  |
+| Android Enterprise-Geräte, die mit einem Arbeitsprofil registriert sind und auf denen Version 8.0 und höher ausgeführt wird | Ja |
 | Android Enterprise-Geräte, die mit einem Arbeitsprofil registriert sind und auf denen Version 7.x und früher ausgeführt wird | Nein |
 | Android-Geräte mit Version 7.x. und früher | Nein |
 | iOS | Nein |
@@ -55,7 +55,8 @@ Verwenden Sie die Aktion „Kennung zurücksetzen“, um eine neue Kennung für 
 
 ## <a name="reset-a-passcode"></a>Zurücksetzen einer Kennung
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
+
+1. Melden Sie sich mit einer der folgenden Rollen beim [Azure-Portal](https://portal.azure.com) an: Azure Active Directory Global Admin, Azure Active Directory Intune Service Admin, Helpdesk Operator oder Role Administrator (Globaler Administrator in Azure Active Directory, Intune-Dienstadministrator in Azure Active Directory, Support oder Administrator für Rollen). Eine vollständige Liste der Rollen und Berechtigungen finden Sie in der [Tabelle für die rollenbasierten Zugriffsteuerung in Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
 2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
 3. Klicken Sie auf **Geräte** und dann auf **Alle Geräte**.
 4. Wählen Sie aus der Liste der von Ihnen verwalteten Geräten ein Gerät aus, und klicken Sie auf **...Weitere**. Wählen Sie dann die Remotegeräteaktion **Kennung entfernen** aus.

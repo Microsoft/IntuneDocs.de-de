@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8ce7b6020c9212a0379915e00e361853e2eb3259
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c7e9fe1b0b54d020c3b3a4368922d570c64ae8ee
+ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184113"
+ms.lasthandoff: 01/16/2019
+ms.locfileid: "54325031"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Datensicherheit und -freigabe in Intune
 
@@ -63,7 +63,7 @@ Weitere Informationen zu für Drittanbieter freigegebenen Daten finden Sie in fo
 - [Von Intune an Google gesendete Daten](data-intune-sends-to-google.md)
 - [Von Apple an Intune gesendete Daten](data-apple-sends-to-intune.md)
 - [Von Google an Intune gesendete Daten](data-google-sends-to-intune.md)
-- [Von Jamf Pro für Intune freigegebene Informationen](conditional-access-integrate-jamf.md#information-shared-from-jamf-pro-to-intune)
+- [Data Jamf Pro sends to Intune (Von Jamf Pro an Intune gesendete Daten)](data-jamf-sends-to-intune.md)
 
 ### <a name="system-center-configuration-manager-data-sharing"></a>Freigeben von Daten für System Center Configuration Manager
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ffe25f7e4870f2ea6969d1261f33c69362d75469
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: b96363d679a6f09327bf9a1b46421e786d1956a8
+ms.sourcegitcommit: 912aee714432c4a1e8efeee253ca2be4f972adaa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032026"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54316881"
 ---
 # <a name="android-and-android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Android- und Android Enterprise-Geräteeinstellungen zum Konfigurieren von E-Mail, Authentifizierung und Synchronisierung in Intune
 
@@ -69,7 +69,9 @@ Als Intune-Administrator können Sie für folgende Android-Geräte E-Mail-Einste
 
 ### <a name="content-sync-settings"></a>Inhaltssynchronisierungseinstellungen
 
-- **Zu synchronisierender Inhaltstyp**: Wählen Sie die Inhaltstypen aus, die auf Geräten synchronisiert werden sollen:
+- **Zu synchronisierender Inhaltstyp**: Wählen Sie die Inhaltstypen aus, die auf den Geräten synchronisiert werden sollen. Mit der Option **Nicht konfiguriert** wird diese Einstellung deaktiviert. Wenn ein Endbenutzer die Synchronisierung auf einem Gerät aktiviert, für das **Nicht konfiguriert** festgelegt ist, wird die Synchronisierung wieder deaktiviert, wenn das Gerät mit Intune synchronisiert wird, da die Richtlinie erneut angewendet wird. 
+
+  Sie können folgende Inhalte synchronisieren: 
   - **Kontakte**
   - **Kalender**
   - **Aufgaben**
@@ -84,7 +86,9 @@ Als Intune-Administrator können Sie für folgende Android-Geräte E-Mail-Einste
   - Wenn Sie **Zertifikat** ausgewählt haben, wählen Sie ein SCEP- oder PKCS-Clientzertifikatprofil aus, das Sie zur Authentifizierung der Exchange-Verbindung zuvor erstellt haben.
 - **SSL**: Verwenden Sie die SSL-Kommunikation (Secure Sockets Layer) beim Senden und Empfangen von E-Mails sowie bei der Kommunikation mit dem Exchange-Server.
 - **Menge an E-Mails für die Synchronisierung**: Geben Sie die Anzahl von Tagen an, für die E-Mails synchronisiert werden sollen, oder wählen Sie **Unbegrenzt** aus, um alle verfügbaren E-Mail-Nachrichten zu synchronisieren.
-- **Zu synchronisierender Inhaltstyp** (nur Nine Work): Wählen Sie die Inhaltstypen aus, die auf Geräten synchronisiert werden sollen:
+- **Zu synchronisierender Inhaltstyp** (nur Nine Work): Wählen Sie die Inhaltstypen aus, die auf den Geräten synchronisiert werden sollen. Mit der Option **Nicht konfiguriert** wird diese Einstellung deaktiviert. Wenn ein Endbenutzer die Synchronisierung auf einem Gerät aktiviert, für das **Nicht konfiguriert** festgelegt ist, wird die Synchronisierung wieder deaktiviert, wenn das Gerät mit Intune synchronisiert wird, da die Richtlinie erneut angewendet wird. 
+
+  Sie können folgende Inhalte synchronisieren: 
   - **Kontakte**
   - **Kalender**
   - **Aufgaben**
