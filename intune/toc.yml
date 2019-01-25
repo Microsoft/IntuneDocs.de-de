@@ -842,7 +842,7 @@ items:
       href: intune-graph-apis.md
       items:
       - name: Intune-API-Referenz
-        href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+        href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Ressourcen
   items:
   - name: Microsoft Intune-Dokumentationsleitfaden
@@ -938,9 +938,9 @@ items:
       href: data-outside-protect.md
     - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
       href: data-leak-prevention.md
-ms.openlocfilehash: 79bff18a23b6613fbc1e2522b6fd7c6c414ffef5
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.openlocfilehash: dc9c232605e6cb274d0707bb8d314bc39301de23
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899126"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831648"
