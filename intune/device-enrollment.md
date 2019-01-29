@@ -15,12 +15,12 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 73caf328bd25cb31bacea6b964c1db7601f3aec6
-ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
+ms.openlocfilehash: a94722c4f4a1d199e32f6ba0c56ca4bdb2b3b09b
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53570807"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199454"
 ---
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -36,40 +36,40 @@ Standardmäßig dürfen Geräte für alle Plattformen in Intune registriert werd
 | **Methode** |  **Zurücksetzen erforderlich** |    [**Benutzeraffinität**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **Gesperrt** | **Details** |
 |:---:|:---:|:---:|:---:|:---:|
 | | Geräte werden während der Registrierung auf die Werkseinstellungen zurückgesetzt. |  Diese Methode ordnet jedes Gerät einem Benutzer zu.| Benutzer können die Registrierung von Geräten nicht aufheben.  | |
-|**[BYOD](#bring-your-own-device)** | Nein|   Ja  |   Nein | [Weitere Informationen](./apple-mdm-push-certificate-get.md)|
+|**[BYOD](#bring-your-own-device)** | Nein|   Ja |   Nein | [Weitere Informationen](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**| Nein |Nein |Nein  | [Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
-|**[DEP](#apple-device-enrollment-program)**|   Ja  |   Optional |  Optional|[Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
-|**[USB (Setup-Assistent)](#usb-sa)**| Ja  |   Optional |  Nein| [Weitere Informationen](./apple-configurator-setup-assistant-enroll-ios.md)|
+|**[DEP](#apple-device-enrollment-program)**|   Ja |   Optional |  Optional|[Weitere Informationen](./device-enrollment-program-enroll-ios.md)|
+|**[USB (Setup-Assistent)](#usb-sa)**| Ja |   Optional |  Nein| [Weitere Informationen](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB (direkt)](#usb-direct)**| Nein |    Nein  | Nein|[Weitere Informationen](./apple-configurator-direct-enroll-ios.md)|
 
 ## <a name="macos-enrollment-methods"></a>macOS-Registrierungsmethoden
 | **Methode** |  **Zurücksetzen erforderlich** |  **Benutzeraffinität** | **Gesperrt** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#bring-your-own-device)** | Nein| Ja  | Nein | [Weitere Informationen](./macos-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | Nein| Ja | Nein | [Weitere Informationen](./macos-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Nein |Nein |Nein  | [Weitere Informationen](./device-enrollment-manager-enroll.md)|
-|**[DEP](#apple-device-enrollment-program)**|   Ja  |   Optional |  Optional|[Weitere Informationen](./device-enrollment-program-enroll-macos.md)|
+|**[DEP](#apple-device-enrollment-program)**|   Ja |   Optional |  Optional|[Weitere Informationen](./device-enrollment-program-enroll-macos.md)|
 
 
 ## <a name="windows-enrollment-methods"></a>Windows-Registrierungsmethoden
 
 | **Methode** |  **Zurücksetzen erforderlich** |    **Benutzeraffinität**   |   **Gesperrt** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#bring-your-own-device)** | Nein |  Ja  |   Nein | [Weitere Informationen](windows-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | Nein |  Ja |   Nein | [Weitere Informationen](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Nein |Nein |Nein  |[Weitere Informationen](device-enrollment-manager-enroll.md)|
-|**Automatische Registrierung** | Nein |Ja  |Nein | [Weitere Informationen](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
-|**Autopilot** |Ja  |Ja  |Nein | [Weitere Informationen](enrollment-autopilot.md)
+|**Automatische Registrierung** | Nein |Ja |Nein | [Weitere Informationen](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**Autopilot** |Ja |Ja |Nein | [Weitere Informationen](enrollment-autopilot.md)
 |**Massenregistrierung** |Nein |Nein |Nein | [Weitere Informationen](./windows-bulk-enroll.md) |
-|**Die Co-Verwaltung** |Nein |Ja  |Nein | [Weitere Informationen](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
-|**GPO** |Nein |Ja  |Nein | [Weitere Informationen](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
+|**Die Co-Verwaltung** |Nein |Ja |Nein | [Weitere Informationen](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)
+|**GPO** |Nein |Ja |Nein | [Weitere Informationen](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)
 
 
 ## <a name="android-enrollment-methods"></a>Android-Registrierungsmethoden
 
 | **Methode** |  **Zurücksetzen erforderlich** |    **Benutzeraffinität**   |   **Gesperrt** | **Details**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#bring-your-own-device)** | Nein|   Ja  |   Nein | [Weitere Informationen](./android-enroll.md)|
+|**[BYOD](#bring-your-own-device)** | Nein|   Ja |   Nein | [Weitere Informationen](./android-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| Nein |Nein |Nein  |[Weitere Informationen](./device-enrollment-manager-enroll.md)|
-|**Android-Arbeitsprofile**| Nein | Ja  | Nein| [Weitere Informationen](./android-work-profile-enroll.md) |
+|**Android-Arbeitsprofile**| Nein | Ja | Nein| [Weitere Informationen](./android-work-profile-enroll.md) |
 
 
 ## <a name="bring-your-own-device"></a>Bring Your Own Device
@@ -106,9 +106,6 @@ Weitere Informationen zur iOS-Registrierung finden Sie unter:
 
 - [Auswählen der Registrierungsmethode für iOS-Geräte](enrollment-method-choose-ios.md)
 - [Registrieren von iOS-Geräten mithilfe von Configurator und direkter Registrierung](apple-configurator-direct-enroll-ios.md)
-
-## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Verwaltung mobiler Geräte mit Exchange ActiveSync und Intune
-Mobile Geräte, die nicht registriert, aber mit Exchange ActiveSync (EAS) verbunden sind, können von Intune mit der EAS-MDM-Richtlinie verwaltet werden. Intune verwendet Exchange Connector für die Kommunikation mit EAS, entweder lokal oder in der Cloud gehostet. Weitere Informationen folgen in Kürze.
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Bereinigen mobiler Geräte nach Ablauf des MDM-Zertifikats
 

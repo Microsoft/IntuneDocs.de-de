@@ -16,12 +16,12 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 7283b728e519eb2ca5a9a0b7516774c8cfc26f9b
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831512"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Geschäftsbedingungen für den Benutzerzugriff
 
@@ -29,7 +29,7 @@ ms.locfileid: "53032298"
 
 Als Intune-Administrator können Sie verlangen, dass Benutzer die Nutzungsbedingungen Ihres Unternehmens akzeptieren, bevor sie das Unternehmensportal für folgende Zwecke verwenden:
 - Registrieren von Geräten
-- Zugriff auf Ressourcen wie Unternehmens-Apps und -E-Mails.
+- Zugriff auf Ressourcen wie Unternehmens-Apps und -E-Mails.    
 Die Konfiguration der Geschäftsbedingungen ist optional.
 
 Sie können mehrere Sätze von Bedingungen erstellen und diese verschiedenen Gruppen zuweisen, um z. B. verschiedene Sprachen zu unterstützen.
@@ -52,7 +52,7 @@ Führen Sie die folgenden Schritte aus, um Geschäftsbedingungen zu erstellen. D
 
    - **Beschreibung**: Optionale Details, die Ihnen dabei helfen, diese Bedingungen im Azure-Portal zu identifizieren.
 
-4. Klicken Sie auf den Pfeil neben **Nutzungsbedingungen definieren**, um den Bereich „Nutzungsbedingungen“ zu öffnen, und geben Sie dann die folgenden Informationen ein:
+4. Klicken Sie auf den Pfeil neben **Define terms of use** (Nutzungsbedingungen definieren), um den Bereich „Nutzungsbedingungen“ zu öffnen, und geben Sie dann die folgenden Informationen ein:
 
    ![Screenshots des Bildschirms mit der Akzeptanz von Nutzungsbedingungen für Endbenutzer mit der Zusammenfassung der Nutzungsbedingungen](./media/terms-summary-create.png)
 

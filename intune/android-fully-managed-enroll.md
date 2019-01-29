@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 45c1d1f293454b32b97c8147f08809565714743a
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: d457ca413f3069e8528dc6f4951f834e3f1dac6a
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387204"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146909"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>Einrichten der Intune-Registrierung von vollständig verwalteten Android-Geräten (Vorschauversion)
 
@@ -38,7 +38,7 @@ Sie benötigen einen eigenständigen Intune-Mandanten, um vollständig verwaltet
 
 Geräte müssen folgende Anforderungen erfüllen, um als vollständig verwaltete Android-Geräte verwaltet zu werden:
 
-- Mindestens Android-Betriebssystemversion 6.0.
+- Android-Betriebssystemversion 5.1 und höher.
 - Geräte müssen ein Android-Build ausführen, das über GMS-Konnektivität (Google Mobile Services) verfügt. Geräte müssen über GMS verfügen und dazu in der Lage sein, eine Verbindung mit GMS herzustellen.
 
 Wenn die obigen Anforderungen erfüllt sind, gibt es keine Einschränkungen bezüglich Gerätehersteller bzw. OEM.

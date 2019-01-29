@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297382"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831563"
 ---
 # <a name="manage-software-updates-in-intune"></a>Verwalten von Softwareupdates in Intune
 
@@ -106,7 +106,7 @@ Die erstellten Updateringe werden Gerätegruppen zugewiesen. Mithilfe von Update
 
    - **Anhalten von Windows-Updates durch Benutzer blockieren**: Standardmäßig zulässig. Konfigurieren Sie diese Einstellung, mit der Sie blockieren oder zulassen können, dass Ihre Benutzer Updateinstallationen über die *Einstellungen* ihrer Computer anhalten. 
       
-   - **Downloadmodus für die Übermittlungsoptimierung:** Die Übermittlungsoptimierung wird nicht mehr als Teil eines Windows 10-Updaterings unter „Softwareupdates“ konfiguriert. Sie wird nun über die Gerätekonfiguration festgelegt. Frühere Konfigurationen bleiben jedoch in der Konsole verfügbar. Sie können diese vorherigen Konfigurationen entfernen, indem Sie sie auf *Nicht konfiguriert* setzen. Anderweitig können sie jedoch nicht geändert werden. Um Konflikte zwischen neuer und alter Richtlinie zu vermeiden, lesen Sie [Wechsel von vorhandenen Updateringen zur Übermittlungsoptimierung](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) und verschieben Ihre Einstellungen dann in ein Profil für die Übermittlungsoptimierung. 
+   - **Downloadmodus für die Übermittlungsoptimierung:** Die Übermittlungsoptimierung wird nicht mehr als Teil eines Windows 10-Updaterings unter „Softwareupdates“ konfiguriert. Sie wird nun über die Gerätekonfiguration festgelegt. Frühere Konfigurationen bleiben jedoch in der Konsole verfügbar. Sie können diese vorherigen Konfigurationen entfernen, indem Sie sie auf *Nicht konfiguriert* setzen. Anderweitig können sie jedoch nicht geändert werden. Um Konflikte zwischen neuer und alter Richtlinie zu vermeiden, lesen Sie [Wechsel von vorhandenen Updateringen zur Übermittlungsoptimierung](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) und verschieben Ihre Einstellungen dann in ein Profil für die Übermittlungsoptimierung. 
 
 5. Klicken Sie auf **OK**, wenn Sie fertig sind. Klicken Sie unter **Updatering erstellen** auf **Erstellen**.
 
