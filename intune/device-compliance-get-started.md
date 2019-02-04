@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/17/2018
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,30 +14,26 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b896a1607dfc036fe248c233477239700dc96091
-ms.sourcegitcommit: 3297fe04ad0d10bc32ebdb903406c2152743179e
+ms.openlocfilehash: 806df8077045a4ad81cb7e221bd053059461a2fd
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2018
-ms.locfileid: "53531327"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199403"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Konformitätsanforderungen gehören zu den wesentlichen Regeln, wie die Notwendigkeit eines Geräte-PINs oder die Verschlüsselung. Gerätekonformitätsrichtlinien definieren diese Regeln und Einstellungen, die ein Gerät erfüllen muss, damit es als konform eingestuft wird. Diese Regeln beinhalten:
+Viele MDM-Lösungen (Mobile Device Management) tragen zum Schutz von Unternehmensdaten bei, da Benutzer und Geräte bestimmte Anforderungen erfüllen müssen. In Intune wird dieses Feature „Konformitätsrichtlinien“ genannt. Konformitätsrichtlinien definieren Regeln und Einstellungen, die Benutzer und Geräte erfüllen müssen, um als „konform“ zu gelten. In Kombination mit dem bedingten Zugriff können Administratoren Benutzern und Geräten, die die Regeln nicht erfüllen, blockieren. Beispielsweise kann die Intune-Administrator anfordern, dass:
 
-- Verwendung eines Kennworts für den Gerätezugriff
+- Endbenutzer zum Zugriff auf Organisationsdaten über mobile Geräte ein Kennwort verwenden.
 
-- Verschlüsselung
+- Das Gerät nicht mit Jailbreak oder Rootzugriff manipuliert wurde.
 
-- Ermittlung, ob das Gerät mit Jailbreak oder Rooting manipuliert wurde
+- Das Gerät eine minimale oder maximale Betriebssystemversion hat.
 
-- Mindestens erforderliche Betriebssystemversion
-
-- Maximal zulässige Betriebssystemversion
-
-- Vorgabe, dass das Gerät höchstens die Mobile Threat Defense-Stufe aufweisen darf
+- Das Gerät höchstens einer angegebenen Gerätebedrohungsstufe entspricht
 
 Mithilfe von Kompatibilitätsrichtlinien können Sie den Kompatibilitätsstatus auf Ihren Geräten überwachen.
 
@@ -68,7 +64,8 @@ compliance issues on the device. You can also use this time to create your actio
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Folgendes ist erforderlich, um die Gerätekonformitätsrichtlinien zu verwenden:
+
+Stellen Sie zum Verwenden von Konformitätsrichtlinien folgendes sicher:
 
 - Verwenden Sie folgende Abonnements:
 
@@ -84,30 +81,28 @@ Folgendes ist erforderlich, um die Gerätekonformitätsrichtlinien zu verwenden:
   - Windows Phone 8.1
   - Windows 10
 
-- Geräte müssen in Intune registriert werden, um deren Konformitätsstatus melden zu können.
+- Registrieren Sie Geräte in Intune, um den Konformitätsstatus zu ermitteln
 
-- Geräte, die für einen Benutzer oder ein Gerät ohne primären Benutzer registriert sind, werden unterstützt. Mehrere Benutzerkontexte werden nicht unterstützt.
+- Registrieren Sie Geräte für einen Benutzer oder registrieren Sie ohne einen Hauptbenutzer. Für mehrere Benutzer registrierte Geräte werden nicht unterstützt.
 
-## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>So funktionieren Intune-Gerätekonformitätsrichtlinien mit Azure AD
+## <a name="how-device-compliance-policies-work-with-azure-ad"></a>So funktionieren Gerätekonformitätsrichtlinien mit Azure AD
 
 Wenn ein Gerät in Intune registriert wird, beginnt der Azure AD-Registrierungsprozess, wodurch die Geräteattribute in Azure AD aktualisiert werden. Ein wichtiger Teil der Information ist der Gerätekonformitätsstatus. Dieser Gerätekonformitätsstatus wird von bedingten Zugriffsrichtlinien zum Blockieren oder Zulassen des Zugriffs auf E-Mails und andere Unternehmensressourcen verwendet.
 
 Der [Azure AD-Registrierungsprozess](https://docs.microsoft.com/azure/active-directory/device-management-introduction) bietet mehr Informationen.
 
-### <a name="assign-a-resulting-device-configuration-profile-status"></a>Zuweisen eines resultierenden Profilstatus für die Gerätekonfiguration
+## <a name="refresh-cycle-times"></a>Aktualisierungszykluszeit
 
-Wenn ein Gerät mehrere Konfigurationsprofile hat und es über verschiedene Konformitätsstatus für mindestens zwei zugeordnete Konfigurationsprofile verfügt, wird genau ein resultierender Konformitätsstaus zugewiesen. Diese Zuweisung basiert auf einem konzeptuellen Schweregrad, der den einzelnen Konformitätsstatus zugewiesen ist. Jeder Konformitätsstatus verfügt über den folgenden Schweregrad:
+Bei der Prüfung der Konformität verwendet Intune den gleichen Aktualisierungszyklus wie für Konfigurationsprofile. Im Allgemeinen gelten folgende Zeiten:
 
-|Status  |Schweregrad  |
-|---------|---------|
-|Pending     |1|
-|Succeeded     |2|
-|Failed     |3|
-|Fehler     |4|
+- iOS: alle sechs Stunden
+- macOS: alle sechs Stunden
+- Android: alle acht Stunden
+- Windows 10-PCs, die als Geräte registriert sind alle acht Stunden
+- Windows Phone: alle acht Stunden
+- Windows 8.1: alle acht Stunden
 
-Hat ein Gerät mehrere Konfigurationsprofile, so wird dem Gerät der höchste Schweregrad aller Profile zugewiesen.
-
-Angenommen, ein Gerät verfügt z.B. über drei ihm zugewiesene Profile: einen Status „Ausstehend“ (Schweregrad = 1), einen Status „Erfolgreich“ (Schweregrad = 2) und einen Status „Fehler“ (Schweregrad = 4). Der Status „Fehler“ hat den höchsten Schweregrad, sodass alle drei Profile über den Konformitätsstatus „Fehler“ verfügen.
+Eine Konformitätsprüfung findet unmittelbar nach der Registrierung eines Geräts häufiger statt.
 
 ### <a name="assign-an-ingraceperiod-status"></a>Zuweisung eines InGracePeriod-Status
 
@@ -157,14 +152,14 @@ Gerätekonformitätsrichtlinien können auch ohne einen bedingten Zugriff verwen
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Möglichkeiten, die Gerätekonformitätsrichtlinien bereitzustellen
 Sie können Benutzern die Konformitätsrichtlinie in Benutzergruppen oder Geräten in Gerätegruppen bereitstellen. Wenn Sie eine Konformitätsrichtlinie für einen Benutzer bereitstellen, wird die Konformität aller Geräte des Benutzers überprüft. Auf Windows 10-Geräten mit Version 1803 und höher wird empfohlen, die Bereitstellung für Gerätegruppen vorzunehmen, *falls* der primärer Benutzer das Gerät nicht registriert hat. Die Verwendung von Gerätegruppen in diesem Szenario hilft beim Erstellen von Konformitätsberichten.
 
-Auf allen in Intune registrierten Geräten werden mehrere integrierte **Einstellungen für Konformitätsrichtlinien** (Azure-Portal > Gerätekonformität) ausgewertet. Dazu gehören:
+Auf allen in Intune registrierten Geräten werden mehrere integrierte Einstellungen (**Intune** > **Gerätekonformität**)ausgewertet. Dazu gehören:
 
 - **Geräte ohne zugewiesene Konformitätsrichtlinie kennzeichnen als**: Diese Eigenschaft verfügt über zwei Werte:
 
   - **Konform:** Sicherheitsfeature ist ausgeschaltet
   - **Nicht konform** (Standard): Sicherheitsfeature ist eingeschaltet
 
-  Ist einem Gerät keine Konformitätsrichtlinie zugewiesen, dann wird dieses Gerät als nicht konform erachtet. Standardmäßig werden Geräte als **Konform** gekennzeichnet. Wenn Sie den bedingten Zugriff verwenden, sollten Sie die Einstellung auf **Nicht konform** festlegen. Falls ein Benutzer nicht konform ist, da keine Richtlinie zugewiesen ist, führt das Unternehmensportal `No compliance policies have been assigned` auf.
+  Ist einem Gerät keine Konformitätsrichtlinie zugewiesen, dann wird dieses Gerät als nicht konform erachtet. Standardmäßig werden Geräte als **Nicht konform** gekennzeichnet. Wenn Sie den bedingten Zugriff verwenden, sollten Sie die Einstellung auf **Nicht konform** festlegen. Falls ein Benutzer nicht konform ist, da keine Richtlinie zugewiesen ist, führt das Unternehmensportal `No compliance policies have been assigned` auf.
 
 - **Verbesserte Erkennung von Jailbreaks**: Ist diese Einstellung aktiviert, werden iOS-Geräte bei Intune regelmäßiger eingecheckt. Durch die Aktivierung dieser Eigenschaft werden die Ortungsdienste des Gerätes verwendet und der Akkuverbrauch wird beeinflusst. Die Ortungsdaten des Benutzers werden nicht bei Intune gespeichert.
 
@@ -173,7 +168,7 @@ Auf allen in Intune registrierten Geräten werden mehrere integrierte **Einstell
   - dem Unternehmensportal erlauben, die Ortungsdienste zu nutzen
   - den Jailbreak-Status mindestens alle 72 Stunden bewerten und Intune melden. Andernfalls wird das Gerät als nicht konform gekennzeichnet. Sie können den Auswertungsvorgang entweder auslösen, indem Sie die Unternehmensportal-App öffnen oder indem Sie das Gerät an einem anderen Ort positionieren, der mindestens 500 m entfernt ist. Wenn das Gerät nicht innerhalb von 72 Stunden um 500 Meter verlagert wird, muss der Benutzer die Unternehmensportal-App für eine erweiterte Bewertung des Jailbreak-Status öffnen.
 
-- **Gültigkeitszeitraum des Konformitätsstatus (Tage)**: Geben Sie den Zeitraum an, in dem Geräte den Status für alle empfangenen Konformitätsrichtlinien melden müssen. Geräte, die innerhalb dieses Zeitraums keine Statusmeldung abgeben, werden als nicht konform behandelt. Der Standardwert ist 30 Tage.
+- **Gültigkeitszeitraum des Konformitätsstatus (Tage)**: Geben Sie den Zeitraum an, in dem Geräte den Status für alle empfangenen Konformitätsrichtlinien melden müssen. Geräte, die innerhalb dieses Zeitraums keine Statusmeldung abgeben, werden als nicht konform behandelt. Der Standardwert beträgt 30 Tage.
 
 Alle Geräte verfügen über eine **integrierte Richtlinie für Gerätekonformität** (Azure-Portal > Gerätekonformität > Richtlinienkonformität). Verwenden Sie diese integrierte Richtlinie, um diese Einstellungen zu überwachen.
 

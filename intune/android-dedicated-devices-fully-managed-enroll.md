@@ -16,23 +16,23 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9f9f95c42be252e0b2be515344e01a1d93e2cc6c
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: 0eb12470c20efd8d455f8bb165455ae4266da956
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387217"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146892"
 ---
 # <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Registrieren Ihrer vollständig verwalteten oder dedizierten Android-Geräte (Vorschauversion)
 
 Nachdem Sie Ihre [vollständig verwalteten](android-fully-managed-enroll.md) oder [dedizierten Android-Geräte](android-kiosk-enroll.md) in Intune eingerichtet haben, können Sie sie registrieren. Wie Sie Ihre Android-Geräte registrieren hängt vom Betriebssystem ab.
 
-| Registrierungsmethode | Mindestversion des Android-Betriebssystems für dedizierte Geräte | Mindestversion des Android-Betriebssystems für vollständig verwaltete Geräte |
-| ----- | ----- | ----- |
-| Near Field Communication | 5.1 | 6.0 |
-| Token-Eingabe | 6.0 | 6.0 |
-| QR-Code | 7.0 | 7.0 |
-| Zero-Touch  | 8.0\* | 8.0\* |
+| Registrierungsmethode | Mindestversion des Android-Betriebssystems für dedizierte und vollständig verwaltete Geräte |
+| ----- | ----- |
+| Near Field Communication | 5.1 |
+| Token-Eingabe | 6.0 |
+| QR-Code | 7.0 |
+| Zero-Touch  | 8.0\* |
 
 \* Bei beteiligten Herstellern
 
@@ -42,7 +42,7 @@ Bei Geräten, die NFC unterstützen, können Sie Ihre Geräte bereitstellen, ind
 
 ### <a name="enroll-by-using-a-token"></a>Registrieren mithilfe eines Tokens
 
-Für Android 6-Geräte und höher können Sie das Token zum Registrieren des Geräts verwenden. Bei Android 6.1 und höheren Versionen kann bei Verwendung der Registrierungsmethode **aft#setup** auch der QR-Code-Scan genutzt werden.
+Für Android 6-Geräte und höher können Sie das Token zum Registrieren des Geräts verwenden. Bei Android 6.1 und höheren Versionen kann bei Verwendung der Registrierungsmethode **afw#setup** auch der QR-Code-Scan genutzt werden.
 
 1. Schalten Sie das zurückgesetzte Gerät ein.
 2. Wählen Sie auf dem **Willkommenssbildschirm** Ihre Sprache aus.

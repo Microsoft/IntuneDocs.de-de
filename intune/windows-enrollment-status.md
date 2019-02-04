@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: f01009a0cb35f4270bdb1e768ee781172c8bfa2f
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032094"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105186"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Einrichten einer Statusseite für die Registrierung
  

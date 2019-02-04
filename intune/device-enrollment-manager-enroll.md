@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: eb369d8e89ff41e75d5bd669819afbe98b6d1ba7
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: be348840df2e1d7864b0c1c57efbb7abcb698392
+ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031839"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55199386"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Registrieren von Geräten in Intune mithilfe eines Geräteregistrierungs-Manager-Kontos
 
@@ -36,6 +36,7 @@ DEM-Benutzerkonten und Geräte, die mit einem DEM-Benutzerkonto registriert werd
   - DEM-Benutzerkonten können Apps aus dem Apple Volume Purchase Program (VPP) nicht mit Apple VPP-Benutzerlizenzen verwenden, weil benutzerspezifische Apple-IDs für die Verwaltung dieser Apps erforderlich sind.
   - Geräte können VPP-Apps installieren, wenn sie über Apple VPP-Gerätelizenzen verfügen.
   - Geräte werden für den bedingten Zugriff mit Ausnahme von Windows 10-Version 1803 und höher blockiert.
+  - Jedes mit deinem DEM-Konto registrierte Gerät benötigt seine eigene Intune-Gerätelizenz.
 
 
 ## <a name="add-a-device-enrollment-manager"></a>Hinzufügen eines Geräteregistrierungs-Managers

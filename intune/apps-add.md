@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 95f41985f11803e6e1a474b38a2af6a891ddafcb
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: c615dd2dda680cd106fd099d180f57ce2a5ebfef
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067481"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105220"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune 
 
@@ -52,7 +52,7 @@ Die folgende Tabelle führt die verschiedenen App-Typen auf und erläutert, wie 
 | iOS Store-Apps  | Store-App  | Wählen Sie **iOS** als **App-Typ** aus, suchen Sie nach der App, und wählen Sie die App in Intune aus. |
 | Windows Phone 8.1 Store-Apps  | Store-App  | Wählen Sie **Windows Phone 8.1** als **App-Typ** aus, und geben Sie die Microsoft Store-URL für die App ein. |
 | Microsoft Store-Apps  | Store-App  | Wählen Sie **Windows** als **App-Typ** aus, und geben Sie die Microsoft Store-URL für die App ein. |
-| Android-Arbeitsprofil-Apps | Store-App  | Suchen und genehmigen Sie die Android-Arbeitsprofil-App über den verwalteten Google Play Store.  |
+| Verwaltete Google Play-Apps | Store-App  | Wählen Sie **Verwaltetes Google Play** als **App-Typ** aus, suchen Sie nach der App, und wählen Sie die App in Intune aus. |
 | Office 365-Apps für Windows 10  | Store-App (Office 365) | Wählen Sie **Windows 10** in der **Office 365 Suite** als **App-Typ** aus, und wählen Sie dann die Office 365-App aus, die Sie installieren möchten.  |
 | Office 365-Apps für macOS | Store-App (Office 365) | Wählen Sie **macOS** in der **Office 365 Suite** als **App-Typ** aus, und wählen Sie dann die Office 365-App-Suite aus. |
 | Branchenspezifische Android-Apps | LOB-App | Wählen Sie **Branchenspezifische App** als **App-Typ** aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine Android-Installationsdatei mit der Erweiterung **APK** an.  |
@@ -119,7 +119,7 @@ Mit Intune verwaltete Apps können außerdem ohne Registrierung den App-Schutz a
 ### <a name="understanding-licensed-apps"></a>Grundlegendes zu lizenzierten Apps
 Sie sollten nicht nur zwischen Web-Apps, Store-Apps und branchenspezifischen Apps unterscheiden können, sondern auch zwischen Apps, die über ein Volumenlizenzprogramm (Volume Purchase Program) bezogen wurden, und lizenzierten Apps, wie z.B. folgende: 
 - **Apple Volume Purchasing Program für Unternehmen (iOS)**: Im iOS-App-Store können Sie mehrere Lizenzen für eine App erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Durch den Erwerb mehrerer Kopien können Sie Apps in Ihrem Unternehmen effizient verwalten. Weitere Informationen finden Sie unter [Verwalten von iOS-Apps, die per Volumenlizenz erworben wurden](vpp-apps-ios.md).
-- **Android-Arbeitsprofil**: Das Zuweisen von Apps zu Android-Arbeitsprofilgeräten unterscheidet sich von deren Zuweisung zu „normalen“ Android-Geräten. Alle Apps, die für Android-Arbeitsprofile installiert werden, stammen aus dem verwalteten Google Play Store. Melden Sie sich beim Store an, suchen Sie nach den gewünschten Apps, und genehmigen Sie diese. Die App wird dann im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt, und Sie können die Zuweisung der App wie bei jeder anderen App verwalten.
+- **Android-Arbeitsprofil**: Das Zuweisen von Apps zu Android-Arbeitsprofilgeräten unterscheidet sich von deren Zuweisung zu „normalen“ Android-Geräten. Alle Apps, die für Android-Arbeitsprofile installiert werden, stammen aus dem verwalteten Google Play Store. Verwenden Sie zum Durchsuchen Intune, suchen Sie nach der gewünschten App, und genehmigen Sie sie. Die App wird dann im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt, und Sie können die Zuweisung der App wie bei jeder anderen App verwalten.
 - **Microsoft Store für Unternehmen (Windows 10)**: Im Microsoft Store für Unternehmen können Sie Apps für Ihre Organisation suchen und einzeln oder mit Volumenlizenz erwerben. Indem Sie den Store mit Microsoft Intune verbinden, können Sie per Volumenlizenz erworbene Apps über das Azure-Portal verwalten. Weitere Informationen finden Sie unter [Verwalten von Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md).
 
     > [!NOTE]

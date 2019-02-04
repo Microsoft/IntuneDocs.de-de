@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/26/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 5981b3dbb74209fbd4d7f0ab03adb5a35a41954b
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d9dfa25c2528ea2f929c3db6714bc68fee013a7b
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203534"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072574"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Einstellungen für Windows 10 (und höher), um Geräte zu schützen, die Intune verwenden.
 
@@ -152,6 +152,9 @@ Dieses Feature wird auf folgenden Windows 10-Editionen unterstützt:
 Bei den Grundeinstellungen handelt es sich um universelle BitLocker-Einstellungen, die für alle Typen von Datenträgern gelten. Durch diese Einstellungen wird verwaltet, welche Aufgaben für die Laufwerkverschlüsselung oder Konfigurationsoptionen der Benutzer auf allen Typen von Laufwerken ändern kann.
 
 - **Warnung zu anderer Datenträgerverschlüsselung:** Legen Sie diese Einstellung auf **Blockieren** fest, um die Warnung zu deaktivieren, die angezeigt wird, wenn ein anderer Dienst zur Datenträgerverschlüsselung auf dem Gerät vorhanden ist. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird diese Warnung angezeigt.
+    - **Standardbenutzern erlauben, die Verschlüsselung während Azure AD Join zu aktivieren**: Wenn Sie **Erlauben** auswählen, können Standardbenutzer/Nichtadministratoren die BitLocker-Verschlüsselung aktivieren, wenn der Benutzer angemeldet ist. Diese Einstellung gilt nur für in das Azure Active Directory eingebunden Geräte (Azure ADJ). Wenn **nicht konfiguriert** ausgewählt ist, können nur Administratoren die BitLocker-Verschlüsselung auf dem Gerät aktivieren.
+      
+      Diese Einstellung gilt nur für in das Azure Active Directory eingebunden Geräte (Azure ADJ). Außerdem ist es erforderlich, dass die Einstellung **Warnung zu anderer Datenträgerverschlüsselung** auf **Blockieren** gesetzt ist.
 - **Verschlüsselungsmethoden konfigurieren:** **Aktivieren** Sie diese Einstellung, um Verschlüsselungsalgorithmen für Betriebssystem- und Datenlaufwerke sowie Wechseldatenträger zu konfigurieren. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, verwendet BitLocker XTS-AES 128-Bit als Standardverschlüsselungsmethode oder die Verschlüsselungsmethode, die von einem Setupskript festgelegt wird.
   - **Verschlüsselung für Betriebssystemlaufwerke:** Wählen Sie die Verschlüsselungsmethode für Betriebssystemlaufwerke aus. Es wird empfohlen, dass Sie den XTS-AES-Algorithmus verwenden.
   - **Verschlüsselung für Festplattenlaufwerke:** Wählen Sie die Verschlüsselungsmethode für Festplattenlaufwerke (integriert) aus. Es wird empfohlen, dass Sie den XTS-AES-Algorithmus verwenden.
