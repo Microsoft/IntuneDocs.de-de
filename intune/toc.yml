@@ -231,19 +231,19 @@ items:
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Gerätekompatibilität festlegen
     items:
-    - name: Übersicht über die Gerätekonformität
+    - name: Konformitätsübersicht
       href: device-compliance-get-started.md
-    - name: Erstellen einer Android-Richtlinie
+    - name: Android-Konformität
       href: compliance-policy-create-android.md
-    - name: Erstellen einer Android Enterprise-Profilrichtlinie
+    - name: Android Enterprise-Konformität
       href: compliance-policy-create-android-for-work.md
-    - name: Erstellen einer Richtlinie zum Aktivieren von Google Play Protect
+    - name: Aktivieren von Google Play Protect
       href: compliance-policy-create-google-play-protect.md
-    - name: Erstellen einer iOS-Richtlinie
+    - name: iOS-Konformität
       href: compliance-policy-create-ios.md
-    - name: Erstellen einer Windows-Richtlinie
+    - name: Windows-Konformität
       href: compliance-policy-create-windows.md
-    - name: Standortbasierte Richtlinie
+    - name: Standortbasierte Konformität
       href: use-network-locations.md
     - name: Richtlinie auswerten
       href: policy-evaluate.md
@@ -251,39 +251,39 @@ items:
       href: actions-for-noncompliance.md
     - name: Überwachen der Gerätekonformität
       href: compliance-policy-monitor.md
-  - name: Konfigurieren von Geräten
+  - name: Konfigurieren von Geräteeinstellungen
     items:
-    - name: Konfigurieren von Geräten mithilfe von Profilen
+    - name: 'Übersicht: Gerätekonfiguration'
       href: device-profiles.md
     - name: Geräteprofile
       href: device-profile-create.md
     - name: Administrative Vorlagen
       href: administrative-templates-windows.md
-    - name: Gerätefeatures auf iOS und macOS
+    - name: Gerätefunktionen
       href: device-features-configure.md
-    - name: Geräteeinschränkungen
+    - name: Einschränken von Geräteeinstellungen und -funktionen
       href: device-restrictions-configure.md
-    - name: Übermittlungsoptimierung
+    - name: Veröffentlichen von Updates
       href: delivery-optimization-windows.md
-    - name: Editionsupgrade und Moduswechsel
+    - name: Upgradeeditionen und S-Modus
       href: edition-upgrade-configure-windows-10.md
     - name: E-Mail-Einstellungen
       href: email-settings-configure.md
-    - name: Kioskeinstellungen
+    - name: Aktivieren des Kioskmodus
       href: kiosk-settings.md
-    - name: VPN-Einstellungen
+    - name: Hinzufügen eines VPN
       href: vpn-settings-configure.md
       items:
       - name: App-bezogenes VPN für Android
         href: android-pulse-secure-per-app-vpn.md
       - name: App-bezogenes VPN für iOS
         href: vpn-setting-configure-per-app.md
-    - name: WLAN-Einstellungen
+    - name: Hinzufügen eines WLAN-Netzwerks
       href: wi-fi-settings-configure.md
       items:
       - name: WLAN mit einem vorinstallierten Schlüssel
         href: wi-fi-profile-shared-key.md
-    - name: Education-Einstellungen
+    - name: 'Microsoft Education: Prüfungs-App'
       href: education-settings-configure.md
     - name: Von mehren Benutzern gemeinsam verwendete Geräte
       href: shared-user-device-settings.md
@@ -295,7 +295,7 @@ items:
       href: device-profile-assign.md
     - name: Überwachen von Profilen
       href: device-profile-monitor.md
-    - name: Beheben von Problemen mit Profilen
+    - name: Häufig gestellte Fragen und deren Antworten
       href: device-profile-troubleshoot.md
   - name: Schützen von Gerätedaten
     items:
@@ -854,6 +854,8 @@ items:
       items:
       - name: Intune-API-Referenz
         href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+    - name: Graph-APIs zur Gerätekonfiguration
+      href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Ressourcen
   items:
   - name: Microsoft Intune-Dokumentationsleitfaden
@@ -949,9 +951,9 @@ items:
       href: data-outside-protect.md
     - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
       href: data-leak-prevention.md
-ms.openlocfilehash: 9ba87d149285aea0e39e790f7e620bba52bb47bd
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504543"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645188"
