@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1584344907df168a98f947e187d6f0f0ef4a492a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d6ee36785c4134dd1c346bdc464096e832df3a9c
+ms.sourcegitcommit: f854ed8619ac66fe626198d8e4a8cac2e0c0710a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187917"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54460054"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Verwalten von Apps, die im Microsoft Store für Unternehmen mit Microsoft Intune erworben wurden
 
@@ -52,12 +52,12 @@ Ferner werden zugehörige Lizenzen und offline lizenzierte Apps aus dem Microsof
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Verknüpfen Ihres Kontos für den Microsoft Store für Unternehmen mit Intune
 Bevor Sie die Synchronisierung in der Intune-Konsole aktivieren, müssen Sie Ihr Konto für den Windows Store für Unternehmen so konfigurieren, dass Intune als Verwaltungstool verwendet wird:
-1. Stellen Sie sicher, dass Sie sich beim Windows Store für Unternehmen und bei Intune mit demselben Mandantenkonto anmelden.
-2. Wählen Sie im Windows Store für Unternehmen **Einstellungen** > **Verwaltungstools** aus.
-3. Wählen Sie auf der Seite „Verwaltungstools“ die Option **Verwaltungstool hinzufügen** und dann **Microsoft Intune** aus.
+1. Stellen Sie sicher, dass Sie sich beim [Microsoft Store für Unternehmen](https://www.microsoft.com/business-store) und bei Intune mit demselben Mandantenkonto anmelden.
+2. Wählen Sie im Store für Unternehmen die Registerkarte **Verwalten**, **Einstellungen** und die Registerkarte **Verteilen** aus.
+3. Wenn Sie nicht ausdrücklich **Microsoft Intune** als Verwaltungstool für mobile Geräte angegeben haben, wählen Sie **Verwaltungstool hinzufügen** aus, um **Microsoft Intune** hinzuzufügen. Wenn Sie nicht **Microsoft Intune** als Ihr Verwaltungstool für mobile Geräte aktiviert haben, klicken Sie neben **Microsoft Intune** auf **Aktivieren**. Beachten Sie, dass Sie **Microsoft Intune** statt **Microsoft Intune-Registrierung** aktivieren sollten.
 
 > [!NOTE]
-> Zuvor konnten Sie nur ein Verwaltungstool zum Zuweisen von Apps mit Microsoft Store für Unternehmen zuweisen. Nun können Sie mehrere Verwaltungstools dem Store zuordnen, z.B. Intune und Configuration Manager.
+> Zuvor konnten Sie nur ein Verwaltungstool zum Zuweisen von Apps mit Microsoft Store für Unternehmen zuweisen. Nun können Sie mehrere Verwaltungstools dem Store zuordnen, z.B. Intune und Configuration Manager. 
 
 Sie können nun fortfahren und die Synchronisierung in der Intune-Konsole einrichten.
 
@@ -92,12 +92,12 @@ Wenn Sie eine App aus dem Microsoft Store für Unternehmen zuweisen, wird von je
 
 ## <a name="remove-apps"></a>Entfernen von Apps
 
-Sie müssen sich beim Microsoft Store für Unternehmen anmelden und die App kündigen, um eine App zu entfernen, die über den Microsoft Store für Unternehmen synchronisiert wird.
+Sie müssen sich beim Microsoft Store für Unternehmen anmelden und die App kündigen, um eine App zu entfernen, die über den Microsoft Store für Unternehmen synchronisiert wird. Der Prozess ist identisch, ob die App kostenlos ist oder nicht. Für eine kostenlose App werden im Store 0US-Dollar rückerstattet. Das folgende Beispiel zeigt eine Rückerstattung für eine kostenlose App. 
 
 ![Screenshot vom Entfernen der App](./media/microsoft-store-for-business-01.png)
 
 > [!NOTE]
-> Durch Entfernen der Sichtbarkeit einer App im privaten Store wird die Synchronisierung durch Intune nicht beendet. Sie müssen die App kündigen.
+> Durch Entfernen der Sichtbarkeit einer App im privaten Store wird die Synchronisierung der App durch Intune nicht beendet. Sie müssen eine Rückerstattung für die App leisten, um die App vollständig zu entfernen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

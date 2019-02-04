@@ -1,12 +1,11 @@
 ---
-title: WLAN-Einstellungen für Android Enterprise- und Kioskgeräte
-titleSuffix: Microsoft Intune
+title: WLAN-Einstellungen für Android Enterprise- und Kioskgeräte – Microsoft Intune | Microsoft-Dokumentation
 description: Erstellen Sie ein WLAN-Gerätekonfigurationsprofils für Android Enterprise- und Android-Kioskgeräte, oder fügen Sie eines hinzu. Erfahren Sie mehr über die verschiedenen Einstellungen, z.B., wie Sie Zertifikate hinzufügen oder einen EAP-Typ bzw. eine Authentifizierungsmethode in Microsoft Intune auswählen. Geben Sie für Kioskgeräte außerdem den vorinstallierten Schlüssel Ihres Netzwerks ein.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,22 +13,22 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1424cd43c6ccde17724a4165fe74def4da291e29
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: ea72cda4cb72af9028c52078e2215619bb2bef3c
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112356"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831478"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Festlegen von WLAN-Einstellungen für Geräte mit Android Enterprise und Android-Kioskgeräte in Microsoft Intune
 
 Sie können ein Profil mit bestimmten WLAN-Einstellungen erstellen und dieses dann auf Ihren Android Enterprise- und Android-Kioskgeräten bereitstellen. Microsoft Intune bietet viele Features, darunter die Authentifizierung bei Ihrem Netzwerk mit einem vorinstallierten Schlüssel.
 
-Dieser Artikel beschreibt diese Einstellungen.
+Dieser Artikel beschreibt diese Einstellungen. [Hinzufügen und Verwenden von WLAN-Einstellungen auf Microsoft Intune-Geräten](wi-fi-settings-configure.md) enthält weitere Informationen über die WLAN-Funktion in Microsoft Intune.
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
-[Erstellen Sie ein Geräteprofil.](device-profile-create.md)
+[Erstellen Sie ein Geräteprofil.](wi-fi-settings-configure.md#create-a-device-profile)
 
 ## <a name="device-owner-only---kiosk"></a>Nur Gerätebesitzer – Kiosk
 
@@ -66,7 +65,7 @@ Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
   - **EAP-TLS**: Geben Sie außerdem Folgendes ein:
 
-    - **Serververtrauensstellung** - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes, vertrauenswürdiges Stammzertifikatprofil aus. Dieses Zertifikat wird dem Server bereitgestellt, wenn sich der Client mit dem Netzwerk verbindet, und zur Authentifizierung der Verbindung verwendet.
+    - **Serververtrauensstellung** - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes, vertrauenswürdiges Stammzertifikatprofil aus. Wenn sich der Client mit dem Netzwerk verbindet, wird dieses Zertifikat dem Server bereitgestellt und zur Authentifizierung der Verbindung verwendet.
 
       Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
@@ -76,7 +75,7 @@ Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
   - **EAP-TTLS**: Geben Sie außerdem Folgendes ein:
 
-    - **Serververtrauensstellung** - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes, vertrauenswürdiges Stammzertifikatprofil aus. Dieses Zertifikat wird dem Server bereitgestellt, wenn sich der Client mit dem Netzwerk verbindet, und zur Authentifizierung der Verbindung verwendet.
+    - **Serververtrauensstellung** - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes, vertrauenswürdiges Stammzertifikatprofil aus. Wenn sich der Client mit dem Netzwerk verbindet, wird dieses Zertifikat dem Server bereitgestellt und zur Authentifizierung der Verbindung verwendet.
 
       Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
@@ -95,7 +94,7 @@ Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
   - **PEAP**: Geben Sie außerdem Folgendes ein:
 
-    - **Serververtrauensstellung** - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes, vertrauenswürdiges Stammzertifikatprofil aus. Dieses Zertifikat wird dem Server bereitgestellt, wenn sich der Client mit dem Netzwerk verbindet, und zur Authentifizierung der Verbindung verwendet.
+    - **Serververtrauensstellung** - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes, vertrauenswürdiges Stammzertifikatprofil aus. Wenn sich der Client mit dem Netzwerk verbindet, wird dieses Zertifikat dem Server bereitgestellt und zur Authentifizierung der Verbindung verwendet.
 
       Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
@@ -116,9 +115,6 @@ Wählen Sie **OK** > **Erstellen** aus, um die Änderungen zu speichern. Das Pro
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Das Profil ist nun erstellt. [Weisen Sie dieses Profil nun zu.](device-profile-assign.md)
+Das Profil ist nun erstellt. Die nächsten Schritte sind das [Zuweisen dieses Profils](device-profile-assign.md) und das [Überwachen seines Status](device-profile-monitor.md).
 
-## <a name="more-resources"></a>Weitere Ressourcen
-
-- Die verfügbaren Einstellungen für Android-Geräte finden Sie unter [Festlegen von WLAN-Einstellungen für Android-Geräte in Microsoft Intune](wi-fi-settings-android.md).
-- Verschaffen Sie sich eine [Übersicht über WLAN-Einstellungen](wi-fi-settings-configure.md) auf unterschiedlichen Plattformen.
+Sie können WLAN-Profile auch für [Android](wi-fi-settings-android.md)-, [iOS](wi-fi-settings-ios.md)-, [macOS](wi-fi-settings-macos.md)-, [Windows 10](wi-fi-settings-windows.md)- und [Windows 8.1](wi-fi-settings-import-windows-8-1.md)-Geräte erstellen.

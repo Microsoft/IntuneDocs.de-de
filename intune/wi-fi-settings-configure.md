@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,24 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a338cce6249cc7c5214a9d69a897cad3eaa09e93
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 54af9b1ef7872caddb972515d9c4765f8492bf00
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188397"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831359"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Hinzufügen und Verwenden von WLAN-Einstellungen auf Microsoft Intune-Geräten
 
-Verwenden Sie WLAN-Profile in Microsoft Intune, um Benutzern und Geräten in Ihrer Organisation Einstellungen für Drahtlosnetzwerke zuzuweisen. Wenn Sie ein WLAN-Profil zuweisen, können Ihre Benutzer auf das WLAN Ihrer Organisation zugreifen, ohne es selbst zu konfigurieren.
+WLAN ist ein drahtloses Netzwerk, das von vielen mobilen Geräten verwendet wird, um Zugriff auf das Netzwerk zu erhalten. Microsoft Intune umfasst integrierte WLAN-Einstellungen, die für Benutzer und Geräte in Ihrer Organisation bereitgestellt werden können. Diese Gruppe von Einstellungen wird als „Profil“ bezeichnet und kann verschiedenen Benutzern und Gruppen zugewiesen werden. Nach der Zuweisung können Ihre Benutzer Zugriff auf das WLAN Ihrer Organisation erhalten, ohne es selbst zu konfigurieren.
 
 Angenommen, Sie installieren ein neues WLAN mit dem Namen „Contoso-WLAN“. Daraufhin möchten Sie alle iOS-Geräte so einrichten, dass sie sich mit diesem Netzwerk verbinden. Gehen Sie dazu folgendermaßen vor:
 
-1. Erstellen Sie ein WLAN-Profil mit den Einstellungen zum Verbinden mit dem Drahtlosnetzwerk „Contoso-WLAN“.
+1. Erstellen Sie ein WLAN-Profil mit den Einstellungen zum Herstellen der Verbindung mit dem Drahtlosnetzwerk „Contoso-WLAN“.
 2. Weisen Sie das Profil einer Gruppe zu, die alle iOS-Gerätebenutzer enthält.
 3. Benutzer finden nun das neue WLAN von Contoso in der Liste der Drahtlosnetzwerke auf ihrem Gerät. Sie können sich dann über die von Ihnen ausgewählte Authentifizierungsmethode mit dem Netzwerk verbinden.
 
-Verwenden Sie die Schritte in diesem Artikel, um ein WLAN-Profil zu erstellen. Lesen Sie dann die Themen zu den plattformspezifischen Einstellungen und die Details.
+In diesem Artikel sind die Schritte zum Erstellen eines WLAN-Profils aufgelistet. Darüber hinaus enthält er Links, in denen die verschiedenen Einstellungen für die einzelnen Plattformen beschrieben werden.
 
 ## <a name="supported-device-platforms"></a>Unterstützte Geräteplattformen
 
@@ -45,7 +45,7 @@ WLAN-Profile unterstützen folgende Geräteplattformen:
 > [!NOTE]
 > Auf Geräten mit Windows 8.1 können Sie eine WLAN-Konfiguration importieren, die zuvor von einem anderen Gerät exportiert wurde.
 
-## <a name="create-a-wi-fi-device-profile"></a>Erstellen eines WLAN-Geräteprofils
+## <a name="create-a-device-profile"></a>Erstellen eines Geräteprofils
 
 1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie anschließend **Microsoft Intune** aus. 
 2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
@@ -56,7 +56,6 @@ WLAN-Profile unterstützen folgende Geräteplattformen:
     - **Android Enterprise**
     - **iOS**
     - **macOS**
-    - **Windows Phone 8.1**
     - **Windows 8.1 und höher**
     - **Windows 10 und höher**
 
@@ -80,4 +79,4 @@ WLAN-Profile unterstützen folgende Geräteplattformen:
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Das Profil ist nun erstellt. [Weisen Sie dieses Profil nun zu.](device-profile-assign.md)
+Das Profil ist nun erstellt. Die nächsten Schritte sind das [Zuweisen dieses Profils](device-profile-assign.md) und das [Überwachen seines Status](device-profile-monitor.md).

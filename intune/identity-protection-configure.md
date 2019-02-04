@@ -1,11 +1,11 @@
 ---
-title: Konfigurieren von Identity Protection-Einstellungen in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Hinzufügen eines Geräteprofils zum Festlegen der Windows Hello for Business-Einstellungen auf Windows 10-Geräten in Microsoft Intune
+title: Verwenden einer PIN zur Anmeldung bei Windows 10-Geräten mit Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Verwenden Sie Windows Hello for Business, um Benutzern die Anmeldung bei Geräten mit einer PIN, einem Fingerabdruck und auf sonstige Weise zu ermöglichen. Erstellen Sie in Intune ein Identity Protection-Konfigurationsprofil für Windows 10-Geräte mit diesen Einstellungen, und weisen Sie das Profil Benutzergruppen und Gerätegruppen zu.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/29/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,83 +13,54 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f9d0db8e15e6de1241984f98bf651fcff1578033
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 843806681fcee4ddec175207c2c49d6db95e0f0d
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188630"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831381"
 ---
-# <a name="configure-identity-protection-settings-in-microsoft-intune"></a>Konfigurieren von Identity Protection-Einstellungen in Microsoft Intune
+# <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Verwenden von Windows Hello for Business auf Windows 10-Geräten mit Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Über Identity Protection-Profile wird gesteuert, wie Windows Hello for Business auf verwalteten Windows 10-Geräten bereitgestellt und konfiguriert wird. Erstellen Sie dieses Profil, um Folgendes zu konfigurieren:  
-* Windows Hello for Business-Verfügbarkeit für Geräte und Benutzer
-* Geräte-PIN-Anforderungen
-* Für die Anmeldung bei ihren Geräten zulässige und unzulässige Benutzergesten  
+Windows Hello for Business ist eine Methode zum Anmelden bei Windows-Geräten durch Ersetzen der Kennwörter, Smartcards und virtuellen Smartcards. Intune umfasst integrierte Einstellungen, damit Administratoren Windows Hello for Business konfigurieren und verwenden können. Beispielsweise können Sie mit diesen Einstellungen:
 
- Sie können dieses Profil zur Auswahl von Benutzer- und Gerätegruppen oder allen Benutzern und allen Geräten zuweisen. Gruppen erhalten das Identity Protection-Profil, wenn sie bei Intune einchecken.    
+- Windows Hello for Business für Geräte und Benutzer aktivieren
+- Geräte-PIN-Anforderungen festlegen, einschließlich einer minimalen oder maximalen PIN-Länge
+- Gesten festlegen, z.B. einen Fingerabdruck, mit denen Benutzer sich bei Geräten anmelden können (oder nicht)
 
-Verwenden Sie die Informationen in diesem Artikel, um ein Identity Protection-Profil zu erstellen. [Weisen Sie dann Ihr Profil](device-profile-assign.md) Benutzer- und Gerätegruppen zu.
+Dieses Feature gilt für das ausgeführte Gerät:
 
-Dieses Feature gilt für das ausgeführte Gerät:  
 - Windows 10 und höher
-- Windows Holographic for Business  
+- Windows 10 Mobile
+- Windows Holographic for Business
 
-## <a name="create-a-device-profile-with-identity-protection-settings"></a>Erstellen eines Geräteprofils mit Identity Protection-Einstellungen
+Intune verwendet „Konfigurationsprofile“ zum Erstellen und Anpassen dieser Einstellungen für die Anforderungen Ihrer Organisation. Nachdem Sie diese Funktionen in einem Profil hinzugefügt haben, übertragen Sie diese Einstellungen mithilfe von Push auf Benutzer- und Gerätegruppen in Ihrer Organisation, oder stellen Sie sie für Gruppen bereit.
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
-3. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
-4. Geben Sie einen **Namen** und eine **Beschreibung** für das Identity Protection-Profil ein.
-5. Wählen Sie in der Dropdownliste **Plattform** die Option **Windows 10 und höher** aus. Windows Hello for Business wird nur auf Geräten mit Windows 10 und höher unterstützt.
-6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Identity Protection** aus.
-7. Wählen Sie im Bereich „Windows Hello for Business“ unter den folgenden Optionen für die Konfiguration von Windows Hello for Business aus:
-    * Deaktiviert. Wenn Sie Windows Hello for Business nicht verwenden möchten, wählen Sie diese Einstellung aus. In diesem Fall ist keine der anderen Einstellungen auf dem Bildschirm verfügbar.
-    * Aktiviert Wählen Sie diese Einstellung aus, wenn Sie Windows Hello for Business-Einstellungen konfigurieren möchten.  
+In diesem Artikel erfahren Sie, wie Sie ein Gerätekonfigurationsprofil erstellen. Eine Liste mit allen Einstellungen und ihren Funktionen finden Sie unter [Einstellungen für Windows 10-Geräte (und höher) zum Aktivieren von Windows Hello for Business](identity-protection-windows-settings.md).
 
-8. Wenn Sie im letzten Schritt **Aktiviert** ausgewählt haben, konfigurieren Sie die erforderlichen Einstellungen, die auf die registrierten Zielgeräte mit Windows 10 und Windows 10 Mobile sowie auf die Benutzer angewendet werden.
+## <a name="create-the-device-profile"></a>Erstellen des Geräteprofils
 
-> [!NOTE]
-> Wenn Sie Identity Protection-Profile nur für Benutzer zuweisen, wird der Gerätekontext standardmäßig auf **Nicht konfiguriert** gesetzt.  
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
+2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+3. Geben Sie die folgenden Eigenschaften ein:
 
-   - **PIN-Mindestlänge**/**Maximale PIN-Länge**. Konfiguriert Geräte für die Verwendung der von Ihnen angegebenen minimalen und maximalen PIN-Länge, um eine sichere Anmeldung zu gewährleisten. Die Standard-PIN-Länge beträgt 6 Zeichen, aber Sie können eine Mindestlänge von 4 Zeichen erzwingen. Die maximale PIN-Länge ist 127 Zeichen.  
+    - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
+    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Plattform**: Wählen Sie **Windows 10 und höher** aus. Windows Hello for Business wird nur auf Geräten mit Windows 10 und höher unterstützt.
+    - **Profiltyp**: Wählen Sie **Identity Protection** aus.
+    - **Konfigurieren Sie Windows Hello for Business**: Wählen Sie aus, wie Sie Windows Hello for Business konfigurieren möchten. Folgende Optionen sind verfügbar:
 
-   - **Kleinbuchstaben in PIN**/**Großbuchstaben in PIN**/**Sonderzeichen in PIN**. Sie können eine stärkere PIN erzwingen, indem Sie die Nutzung von Großbuchstaben, Kleinbuchstaben und Sonderzeichen in der PIN vorschreiben. Es stehen die folgenden Optionen zur Auswahl:
+        - **Nicht konfiguriert:** [Stellt Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) auf dem Gerät bereit. Wenn Sie Identity Protection-Profile nur für Benutzer zuweisen, wird der Gerätekontext standardmäßig auf **Nicht konfiguriert** gesetzt.
+        - **Deaktiviert:** Wenn Sie Windows Hello for Business nicht verwenden möchten, wählen Sie diese Option aus. Diese Option deaktiviert Windows Hello for Business für alle Benutzer.
+        - **Aktiviert**: Wählen Sie diese Option zum [Bereitstellen]((https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning)) aus, und konfigurieren Sie Windows Hello for Business-Einstellungen in Intune. Geben Sie die Einstellungen ein, die Sie konfigurieren möchten. Eine Liste aller Einstellungen und ihrer Funktionen finden Sie unter:
 
-     - **Zulässig**. Benutzer können den Zeichentyp in ihrer PIN verwenden, aber es ist nicht zwingend erforderlich.
+            - [Einstellungen für Windows 10-Geräte (und höher) zum Aktivieren von Windows Hello for Business](identity-protection-windows-settings.md)
 
-     - **Erforderlich**. Benutzer müssen mindestens einen der Zeichentypen in ihrer PIN verwenden. Beispielsweise ist es üblich, die Verwendung mindestens eines Großbuchstabens und eines Sonderzeichens vorzuschreiben.
+4. Wenn Sie fertig sind, wählen Sie **OK** > **Erstellen** aus, um Ihre Änderungen zu speichern.
 
-     - **Nicht zulässig** (Standard). Benutzer dürfen diese Zeichentypen in ihrer PIN nicht verwenden. (Dieses Verhalten tritt auch auf, wenn die Einstellung nicht konfiguriert ist.)<br>Gilt für diese Sonderzeichen: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**
-
-   - **PIN-Ablauf (Tage)**. Es wird empfohlen, ein Ablaufdatum für eine PIN anzugeben, nach dem sie vom Benutzer geändert werden muss. Die Standardeinstellung ist 41 Tage.
-
-   - **PIN-Verlauf speichern**. Schränkt die Wiederverwendung zuvor verwendeter PINs ein. Standardmäßig können die letzten fünf PINs nicht erneut verwendet werden.  
-   - **PIN-Wiederherstellung aktivieren**: Ermöglicht es dem Benutzer, seine PIN mithilfe des PIN-Wiederherstellungsdiensts von Windows Hello for Business zu ändern. 
-       - **Aktivieren**. Der Clouddienst verschlüsselt ein Geheimnis für die PIN-Wiederherstellung, das auf dem Gerät gespeichert wird. Der Benutzer kann seine PIN bei Bedarf ändern.  
-       - **Nicht konfiguriert** (Standardeinstellung). Es wird kein Geheimnis für die PIN-Wiederherstellung erstellt oder gespeichert. Wenn der Benutzer seine PIN vergisst, gibt es nur eine Möglichkeit, eine neue PIN zu erhalten: Er muss die vorhandene PIN löschen und eine neue erstellen. Infolgedessen muss sich der Benutzer bei allen Diensten, auf die er mit der alten PIN zugreifen konnte, neu registrieren.  
-   
-   - **Trusted Platform Module (TPM) verwenden**. Ein TPM-Chip bietet eine zusätzliche Sicherheitsebene für Daten. Wählen Sie einen der folgenden Werte aus:  
-     - **Aktivieren**. Nur Geräte mit verfügbarem TPM können Windows Hello for Business bereitstellen.
-     - **Nicht konfiguriert**. Alle Geräte können Windows Hello for Business bereitstellen, selbst wenn kein verwendbares TPM vorhanden ist. Es wird zunächst versucht, ein TPM zu verwenden, sollte jedoch keins verfügbar sein, können Geräte auf die Softwareverschlüsselung zurückgreifen.  
-
-   - **Biometrische Authentifizierung zulassen**. Aktiviert die biometrische Authentifizierung, z. B. die Gesichtserkennung oder Fingerabdrücke, als Alternative zu einer PIN für Windows Hello for Business. Benutzer müssen für den Fall dennoch eine PIN konfigurieren, dass die biometrische Authentifizierung fehlschlägt. Es stehen die folgenden Optionen zur Auswahl:
-
-     - **Aktivieren**. Windows Hello for Business ermöglicht biometrische Authentifizierung.
-     - **Nicht konfiguriert** (Standardeinstellung). Windows Hello for Business verhindert die biometrische Authentifizierung (für alle Arten von Konten).
-
-   - **Erweitertes Antispoofing verwenden, falls verfügbar**. Konfiguriert, ob die Antispoofingfeatures von Windows Hello auf Geräten verwendet werden, die diese unterstützen (z. B. Erkennung eines Fotos von einem Gesicht anstelle eines echten Gesichts).
-       - **Aktivieren**. Windows erfordert, dass alle Benutzer Antispoofing für Gesichtsmerkmale einsetzen, sofern dies unterstützt wird.  
-       - **Nicht konfiguriert** (Standardeinstellung). Antispoofingkonfigurationen auf dem Gerät werden von Windows berücksichtigt.
-
-   - **Zertifikat für lokale Ressourcen**. 
-       - **Aktivieren**. Ermöglicht es Windows Hello for Business, Zertifikate zur Authentifizierung bei lokalen Ressourcen zu verwenden.
-       - **Nicht konfiguriert** (Standardeinstellung). Verhindert, dass Windows Hello for Business Zertifikate zur Authentifizierung bei lokalen Ressourcen verwendet.  
-9. Klicken Sie auf **OK**, um Ihr Profil zu speichern.  
-
-Das Profil wird erstellt und in der Liste **Gerätekonfigurationsprofile** angezeigt. Wenn Sie fortfahren und dieses Profil Gruppen zuweisen möchten, finden Sie weitere Informationen unter [Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune](device-profile-assign.md).  
+Das Profil wird erstellt und in der Profilliste angezeigt. Im nächsten Schritt [weisen](device-profile-assign.md) Sie dieses Profil Gruppen zu.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 
@@ -100,3 +71,8 @@ In this high-level example, you'll create a device restriction policy that block
 ![How to disable the camera on Android devices](./media/disable-android-camera.png)
 
 -->
+
+## <a name="next-steps"></a>Nächste Schritte
+
+- Lesen Sie eine Liste aller [Einstellungen und ihrer Funktionen](identity-protection-windows-settings.md).
+- [Zuweisen von Profilen](device-profile-assign.md) und [Überwachen von Profilen](device-profile-monitor.md)

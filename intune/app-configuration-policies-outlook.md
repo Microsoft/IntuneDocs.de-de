@@ -6,7 +6,7 @@ author: Erikre
 ms.author: erikre
 ms.reviewer: smithre4
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 691029cc7b9fd8880c5440a84b95bbf2462920d6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 433d15d91bc32ef409c9a89c4d71cacb7478e74d
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180322"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068304"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook-Konfigurationseinstellungen 
 
@@ -29,18 +29,9 @@ Informationen zum Erstellen einer App-Konfigurationsrichtlinie für verwaltete i
 
 ## <a name="configuration-settings"></a>Konfigurationseinstellungen
 
-Wenn Sie eine Konfigurationsrichtlinie in Intune hinzufügen, können Sie bestimmte Einstellungen zur Konfiguration von Microsoft Outlook festlegen. Im Bereich **Konfigurationseinstellungen** können Sie das E-Mail-Konto konfigurieren.
+Wenn Sie eine Konfigurationsrichtlinie in Intune hinzufügen, können Sie bestimmte Einstellungen zur Konfiguration von Microsoft Outlook auf iOS und Android festlegen. Im Bereich „Konfigurationseinstellungen“ können Sie die E-Mail-Konto-Konfiguration festlegen und app-spezifische Einstellungen konfigurieren. Darüber hinaus können Sie diese Einstellungen konfigurieren und/oder Name/Wert-Paare verwenden.
 
-### <a name="basic-authentication-email-account-settings"></a>E-Mail-Konto-Einstellungen für die Standardauthentifizierung
-Outlook für iOS und Android bietet Exchange-Administratoren die Möglichkeit, Kontokonfigurationen an ihre lokalen Benutzer zu übertragen, die die Standardauthentifizierung mit dem ActiveSync-Protokoll verwenden. Weitere Informationen finden Sie unter [Kontoeinrichtung in Outlook für iOS und Android mithilfe der Standardauthentifizierung](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/account-setup). Um die Konfiguration für die Kontoeinrichtung zu aktivieren, können Sie die folgenden Einstellungen konfigurieren:
-
-- **E-Mail-Server**: Geben Sie den Hostnamen Ihres lokalen Exchange-Servers ein (z.B. „mail.contoso.com“).
-- **E-Mail-Kontoname:** Geben Sie den Anzeigenamen des E-Mail-Kontos ein. Dieser Name wird Benutzern auf ihren Geräten angezeigt.
-- **Benutzernamensattribut aus AAD:** Dieser Name ist das Attribut, dass Intune aus Azure Active Directory (Azure AD) abruft. Intune generiert dynamisch den Benutzernamen, der von diesem Profil verwendet wird. Diese Optionen umfassen Folgendes:
-  - **Benutzerprinzipalname:** Ruft den Namen ab, z.B. `user1` oder `user1@contoso.com`
-  - **Primäre SMTP-Adresse:** Ruft den Namen im Format einer E-Mail-Adresse ab, z.B. `user1@contoso.com`
-- **E-Mail-Adressattribut aus AAD:** Die Art der Generierung der E-Mail-Adresse für den Benutzer Wählen Sie **Primäre SMTP-Adresse** (`user1@contoso.com`) aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname** (`user1@contoso.com` oder `user1`), um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden. Es wird empfohlen, die **Primäre SMTP-Adresse** auszuwählen.
-- **Kontodomäne**: (Optional) Die Domäne des Kontos.
+Setupinformationen für das Outlook-Konto und entsprechende Schritte für iOS- und Android-Geräte in Microsoft Intune finden Sie unter [Bereitstellen von Outlook für iOS und Android-app-Konfigurationseinstellungen](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune).
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Konfigurieren von E-Mail-Einstellungen in Intune](email-settings-configure.md)

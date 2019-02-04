@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,50 +14,34 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4839206db5e34a039c9e99dd74f5ab1bad328418
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 80d4cf8db5789e6eeb22a777eeef74dce3009856
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112339"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831291"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Aktualisieren von Geräten, die Windows Holographic ausführen, auf Windows Holographic for Business
 
+In Microsoft Intune gibt es viele Einstellungen, die dazu dienen, Ihre Geräte zu verwalten und zu schützen. In diesem Artikel werden die Einstellungen zum Upgraden von Windows Holographic-Geräten auf Windows Holographic for Business aufgelistet und beschrieben. Diese Einstellungen werden in Intune in einem Upgradekonfigurationsprofil erstellt, das auf Geräte übertragen oder für sie bereitgestellt wird.
 
-Zum Verwalten von Geräten, die Windows Holographic mit Microsoft Intune ausführen, müssen Sie die Geräte von Windows Holographic auf Windows Holographic for Business zu upgraden. Sie können ein Editionsupgradeprofil erstellen, um das Upgrade auszuführen. Für Microsoft HoloLens können Sie die Commercial Suite erwerben, um die erforderliche Lizenz für das Upgrade zu erhalten. Weitere Informationen finden Sie unter [Entsperren der Features von Windows Holographic für Unternehmen](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise).
+Als Bestandteil Ihrer Lösung für die mobile Geräteverwaltung (Mobile Device Management, MDM) verwenden Sie diese Einstellungen, um Ihre Windows Holographic-Geräte zu aktualisieren. Für Microsoft HoloLens können Sie die Commercial Suite erwerben, um die erforderliche Lizenz für das Upgrade zu erhalten. Weitere Informationen finden Sie unter [Entsperren der Features von Windows Holographic für Unternehmen](https://docs.microsoft.com/hololens/hololens-upgrade-enterprise).
 
-## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>So richten Sie ein Editionsupgrade- Gerätekonfigurationsprofil ein
+Weitere Informationen zu diesem Feature finden Sie unter [Verwenden eines Konfigurationsprofils zum Upgraden von Windows 10 oder Verlassen des S Modus in Intune](edition-upgrade-configure-windows-10.md).
 
-1. Melden Sie sich mit Ihrem Administratorkonto beim [Azure-Portal](https://portal.azure.com) an.
+## <a name="before-you-begin"></a>Vorbereitung
 
+[Erstellen Sie eine Gerätekonfigurationsprofil.](edition-upgrade-configure-windows-10.md#create-the-profile)
 
-2.  Klicken Sie auf **Gerätekonfiguration**, **Profile** und dann auf **Profil erstellen**.
+## <a name="edition-upgrade"></a>Upgrade der Edition
 
-    ![Profil erstellen](media/Holographic-create-profile.png)
+- **Edition, auf die das Upgrade erfolgen soll**: Wählen Sie **Windows 10 Holographic for Business** aus.
+- **Lizenzdatei**: Navigieren Sie zu der XML-Lizenzdatei, die für Sie bereitgestellt wurde, und wählen Sie sie aus.
 
-3.  Geben Sie auf der Seite **Profil erstellen** einen Namen für das Profil ein, wählen Sie **Windows 10 und höher** für die Plattform aus, und klicken Sie für den Profiltyp auf **Editionsupgrade**. Klicken Sie auf **Einstellungen konfigurieren**.
-
-5. Klicken Sie auf der Seite **Editionsupgrade** unter **Edition to upgrade to** (Edition, auf die ein Upgrade ausgeführt werden soll) auf die Option **Windows 10 Holographic for Business**. Navigieren Sie unter **Lizenzdatei** zu der XML-Lizenzdatei, die für Sie bereitgestellt wurde, und wählen Sie sie aus.
-
-    ![Geben Sie den XML-Dateinamen ein.](media/Holographic-edition-upgrade.png)
+  ![Geben Sie den Namen der XML-Datei ein, die die Holographic for Business-Lizenzinformationen enthält.](media/Holographic-edition-upgrade.png)
  
-5.  Klicken Sie auf **OK** und dann auf **Erstellen**, um das Profil zu erstellen.
-
-
-## <a name="deploy-the-edition-upgrade-policy"></a>Bereitstellen der Editionsaktualisierungsrichtlinie
-
-Als Nächstes weisen Sie das Editionsupgradeprofil ausgewählten Gruppen oder Geräten zu.
-
-1. Klicken Sie auf dem Profil, das Sie in den vorherigen Schritten erstellt haben, auf **Zuweisungen**.
-
-2. Wählen Sie auf der Seite **Zuweisungen** die Benutzergruppen und Geräte aus, die Sie in Richtlinie einschließen bzw. von ihr ausschließen möchten.
-
-![Ein- und Ausschließen von Gruppen](media/Holographic-groups.PNG)
-
-Wenn diese Benutzer oder Geräte in Intune registriert sind, wird das Editionsupgradeprofil angewendet. 
-
 ## <a name="next-steps"></a>Nächste Schritte
 
-Weitere Informationen zu Gruppen finden Sie unter [Erste Schritte mit Gruppen](get-started-groups.md).
+Das Profil ist nun erstellt, führt aber vielleicht noch keine Aktionen durch. Denken Sie daran, das [Profil zuzuweisen](device-profile-assign.md) und [seinen Status zu überwachen](device-profile-monitor.md).
 
-
+Sie können auch Editionsupgradeprofile für [Windows 10-Geräte und höher](edition-upgrade-windows-settings.md) erstellen.

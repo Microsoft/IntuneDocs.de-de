@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 11b241a14ed70a2e999fa505449cd12cdd1e025e
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 7ab60e64927db5537a106c1257a5624670771f86
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728785"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831410"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Konfigurieren von Einstellungen für Geräteeinschränkungen in Microsoft Intune
 
@@ -32,7 +32,7 @@ Sie können beispielsweise ein Geräteeinschränkungsprofil erstellen, das verhi
 
 Sie lernen die Grundlagen der Geräteeinschränkungsprofile und lesen weitere Artikel zu den Besonderheiten der Geräte auf jeder Plattform.
 
-## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Erstellen von Geräteprofilen mit Einstellungen für Geräteeinschränkungen
+## <a name="create-the-profile"></a>Erstellen des Profils
 
 1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie anschließend **Intune** aus.
 2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
@@ -48,7 +48,7 @@ Sie lernen die Grundlagen der Geräteeinschränkungsprofile und lesen weitere Ar
     - **Windows 10 und höher**
 
 5. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Geräteeinschränkungen** aus. Um ein Geräteeinschränkungsprofil für Windows 10 Team-Geräte wie etwa ein Surface Hub zu erstellen, wählen Sie **Geräteeinschränkungen (Windows 10 Team)** aus.
-6. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. Wählen Sie detaillierte Einstellungen für Ihre Plattform aus:
+6. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. Wählen Sie Ihre Plattform für detaillierte Einstellungen aus:
 
     - [Einstellungen für Android](device-restrictions-android.md)
     - [Android-Einstellungen für Unternehmen](device-restrictions-android-for-work.md)
@@ -60,13 +60,13 @@ Sie lernen die Grundlagen der Geräteeinschränkungsprofile und lesen weitere Ar
     - [Einstellungen für Windows 10 Team](device-restrictions-windows-10-teams.md)
     - [Einstellungen für Windows Holographic for Business](device-restrictions-windows-holographic.md)
 
-7. Wechseln Sie anschließend wieder zur Seite **Profil erstellen**, und klicken Sie auf **Erstellen**.
+7. Wenn Sie fertig sind, wählen Sie **OK** > **Erstellen** aus, um Ihre Änderungen zu speichern.
 
-Das Profil wird erstellt und auf der Seite mit der Profilliste angezeigt. 
+Das Profil wird erstellt und in der Profilliste angezeigt.
 
-## <a name="next-step"></a>Nächster Schritt
+## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem das Profil erstellt wurde, kann es zugewiesen werden. Eine exemplarische Vorgehensweise finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md). 
+Nachdem das Profil erstellt wurde, kann es zugewiesen werden. Die nächsten Schritte sind das [Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune](device-profile-assign.md) und das [Überwachen von Geräteprofilen in Microsoft Intune](device-profile-monitor.md).
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

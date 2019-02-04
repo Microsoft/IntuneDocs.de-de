@@ -15,12 +15,12 @@ ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 11bcf3742270a3f32919b133efdc2ab3f0c4d2d1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 87d25fa76b3d2716099178ca428c8032fd99886c
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203347"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831631"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Anfordern von Support für Microsoft Intune
 
@@ -42,7 +42,7 @@ Als IT-Administrator können Sie die Option **Hilfe und Support** verwenden, um 
 
 ## <a name="help-and-support-experience"></a>Benutzeroberfläche für Hilfe und Support
 > [!TIP]   
-> Ab Januar 2019 steht eine neue Benutzeroberfläche für Hilfe und Support für alle Mandanten zur Verfügung. Wenn Ihr Mandant noch nicht über diese neue Benutzeroberfläche verfügt, finden Sie Informationen über die bisherige Benutzeroberfläche in diesem Artikel unter [Azure-Benutzeroberfläche für Hilfe und Support](#azure-help-+-support-experience).  
+> Eine neue Benutzeroberfläche für Hilfe und Support steht allen Mandanten zur Verfügung. Wenn diese neue Oberfläche nicht in Ihrem Mandanten angezeigt wird, löschen Sie den Browsercache, und laden Sie die Seite neu.
 
 Die Benutzeroberfläche für Hilfe und Support für Intune ist über das [Microsoft 365-Portal für die Geräteverwaltung](http://devicemanagement.microsoft.com) und über alle Blätter (oder Seiten) unter Intune im Azure-Portal verfügbar. 
 

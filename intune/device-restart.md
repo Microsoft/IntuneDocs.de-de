@@ -14,12 +14,12 @@ ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aa16e180b016ec142ecca5644b7f93fb088d15f5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f814abc4d47517c17e24a188c7efb5da771bc328
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184302"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068270"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Remoteneustart von Geräten mit Intune
 
@@ -32,7 +32,7 @@ Die Geräteaktion **Neu starten** führt dazu, dass das von Ihnen gewählte Ger�
 
 - Windows – unter Windows 8.1 und höher unterstützt
 - Windows Phone – Unterstützt auf Windows Phone 8.1 und später
-- Android-Kioskgeräte: Unterstützt
+- Android-Kioskgeräte – unterstützt unter Android 7.0 und höher
 - iOS – Unterstützt
 
     > [!Note]  

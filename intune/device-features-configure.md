@@ -1,68 +1,64 @@
 ---
 title: Erstellen von iOS- oder macOS-Geräteprofilen in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Erstellen Sie in Microsoft Intune ein iOS- oder macOS-Geräteprofil, oder fügen Sie ein solches Profil hinzu. Konfigurieren Sie dann Einstellungen für AirPrint, AirPlay, das Layout des Startbildschirms, App-Benachrichtigungen, freigegebene Geräte, einmaliges Anmelden und Webinhaltsfilter.
+description: Erstellen Sie in Microsoft Intune ein iOS- oder macOS-Geräteprofil, oder fügen Sie ein solches Profil hinzu. Konfigurieren Sie dann Einstellungen für AirPrint, das Layout des Startbildschirms, App-Benachrichtigungen, freigegebene Geräte, einmaliges Anmelden und Webinhaltsfilter.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: heenamac
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2282ba4dd3caf8c71c8624884bc124393ea52d2f
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 4542a65afa87668702620a1b50443c9844692a87
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203092"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831274"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Hinzufügen von Einstellungen für iOS- oder macOS-Gerätefunktionen in Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Intune umfasst zahlreiche Funktionen und Einstellungen, mit denen Administratoren iOS- und macOS-Geräte steuern können. Administratoren können z.B.:
 
-Mit Gerätefunktionen können Sie verschiedene Einstellungen und Features auf iOS- und macOS-Geräten steuern, wie z.B. diese:
+- Benutzern den Zugriff auf AirPrint-Drucker in Ihrem Netzwerk ermöglichen
+- Apps und Ordner dem Startbildschirm hinzufügen, einschließlich Hinzufügen von neuen Seiten
+- Wählen, ob und wie App-Benachrichtigungen angezeigt werden
+- Den Sperrbildschirm so konfigurieren, dass eine Nachricht oder das Bestandskennzeichen angezeigt wird, insbesondere für gemeinsam genutzte Geräte
+- Benutzern sicheres einmaliges Anmelden ermöglichen, um Anmeldeinformationen zwischen Apps freizugeben
+- Websites herausfiltern, die nicht jugendfreie Sprache verwenden, und bestimmte Websites zulassen oder blockieren
 
-- AirPrint- und AirPlay-Einstellungen
-- Layout des Startbildschirms
-- Benachrichtigungen von Apps
-- Sperrbildschirmnachricht
-- Einrichten des einmaligen Anmeldens
-- Filtern von Webinhalten
+Diese Features sind in Intune verfügbar und werden vom Administrator konfiguriert. Intune verwendet „Konfigurationsprofile“ zum Erstellen und Anpassen dieser Einstellungen für die Anforderungen Ihrer Organisation. Nachdem Sie diese Features in einem Profil hinzugefügt haben, können Sie das Profil auf iOS- und macOS-Geräte in Ihrer Organisation übertragen oder für sie bereitstellen.
 
-Dieser Artikel erläutert die Grundlagen der Konfiguration von Profilen für iOS-Gerätefunktionen. Danach können Sie weitere Artikel lesen, um plattformspezifische Einstellungen für Ihre Geräte zu konfigurieren.
+In diesem Artikel erfahren Sie, wie Sie ein Gerätekonfigurationsprofil erstellen. Sie können auch alle verfügbaren Einstellungen für [iOS](ios-device-features-settings.md)- und [macOS](macos-device-features-settings.md)-Geräte sehen.
 
 ## <a name="create-a-device-profile"></a>Erstellen eines Geräteprofils
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
-3. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
-4. Geben Sie die folgenden Eigenschaften ein:
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie anschließend **Intune** aus.
+2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+3. Geben Sie die folgenden Eigenschaften ein:
 
-   - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
-   - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. (Diese Einstellung ist optional, wird jedoch empfohlen.)
-   - **Plattform**: Wählen Sie den Plattformtyp aus:
-     - **iOS**
-     - **macOS**
-   - **Profiltyp**: Wählen Sie **Gerätefunktionen** aus.
-   - **Einstellungen:** Die Einstellungen richten sich nach der ausgewählten Plattform. Die folgenden Artikel beschreiben die Einstellungen für die einzelnen Profiltypen:
+    - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
+    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Plattform**: Wählen Sie Ihre Plattform aus:
+        - **iOS**
+        - **macOS**
+    - **Profiltyp**: Wählen Sie **Gerätefunktionen** aus.
+    - **Einstellungen:** Geben Sie die Einstellungen ein, die Sie konfigurieren möchten. Eine Liste aller Einstellungen und ihrer Funktionen finden Sie unter:
 
-     - [AirPrint settings for iOS and MacOS](air-print-settings-ios-macos.md) (AirPrint-Einstellungen für iOS- und macOS-Geräte)
-     - [AirPlay settings for iOS](airplay-settings-ios.md) (AirPlay-Einstellungen für iOS-Geräte)
-     - [Home screen layout settings for iOS](home-screen-settings-ios.md) (Einstellungen des Startbildschirmlayouts für iOS-Geräte)
-     - [App notification settings for iOS](app-notification-settings-ios.md) (App-Benachrichtigungseinstellungen für iOS-Geräte)
-     - [Lock Screen Message settings for iOS](shared-device-settings-ios.md) (Einstellungen der Sperrbildschirmnachricht für iOS)
-     - [Konfigurieren von Intune für einmaliges Anmelden von iOS-Geräten](sso-ios.md)
-     - [Web content filter settings for iOS](web-content-filter-settings-ios.md) (Filtereinstellungen für Webinhalte für iOS-Geräte)
+        - [iOS](ios-device-features-settings.md)
+        - [macOS](macos-device-features-settings.md)
 
-5. Wenn Sie fertig sind, klicken Sie auf **OK** und dann auf **Erstellen**, um Ihre Änderungen zu speichern.
+4. Wenn Sie fertig sind, klicken Sie auf **OK** und dann auf **Erstellen**, um Ihre Änderungen zu speichern.
 
-Das Profil wird erstellt und in der Liste angezeigt.
+Das Profil wird erstellt und in der Liste angezeigt. Denken Sie daran, das [Profil zuzuweisen](device-profile-assign.md) und [seinen Status zu überwachen](device-profile-monitor.md).
 
-## <a name="next-step"></a>Nächster Schritt
+## <a name="next-steps"></a>Nächste Schritte
 
-Informationen zum Zuweisen dieses Profils an Gruppen finden Sie unter [Zuweisen von Microsoft Intune-Geräteprofilen](device-profile-assign.md).
+Nachdem das Profil erstellt wurde, kann es zugewiesen werden. Die nächsten Schritte sind das [Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune](device-profile-assign.md) und das [Überwachen von Geräteprofilen in Microsoft Intune](device-profile-monitor.md).
+
+Zeigen Sie alle Einstellungen für Gerätefunktionen für [iOS](ios-device-features-settings.md)- und [macOS](macos-device-features-settings.md)-Geräte an.
