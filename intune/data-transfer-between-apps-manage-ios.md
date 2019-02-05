@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 58d0cbbd503697575cd63e66fff80bd91e742e5e
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831446"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229898"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune
 
@@ -37,7 +37,7 @@ Verwenden Sie App-Schutzrichtlinien mit dem iOS-Feature **Open in Management**, 
 
 -   **Mitarbeitereigene Geräte, die von keiner MDM-Lösung verwaltet werden:** Sie können die Einstellungen der App-Schutzrichtlinie so festlegen, dass die **App nur Daten an per Richtlinien verwaltete Apps übertragen darf**. Das *Open-In*-Verhalten einer per Richtlinie verwalteten App stellt nur andere per Richtlinie verwaltete Apps als Option für die Freigabe dar. Wenn ein Benutzer versucht, eine richtliniengeschützte Datei als Anhang von OneDrive in der nativen E-Mail-App zu senden, ist diese Datei nicht lesbar.
 
--   **Von Intune verwaltete Geräte:** Für Geräte, die bei Intune registriert sind, wird die Datenübertragung zwischen Apps mit App-Schutzrichtlinien und anderen verwalteten iOS-Apps, die über Intune bereitgestellt wurden, automatisch zugelassen. Aktivieren Sie die Einstellung **Allow app to transfer data to other apps** (Zulassen, dass die App Daten an andere Apps überträgt), und wählen Sie die gewünschte Freigabestufe aus, um festzulegen, wie Daten an andere Apps übertragen werden sollen. Aktivieren Sie die Einstellung **Allow app to receive data from other apps** (Zulassen, dass die App Daten von anderen Apps empfängt), und wählen Sie die gewünschte Datenempfangsstufe aus, um festzulegen, wie eine App Daten von anderen Apps empfangen soll. Sie können das Feature **Open in Management** verwenden, um die Datenübertragung zwischen Apps zu steuern, die über Intune bereitgestellt werden. Weitere Informationen zum Empfangen und Senden von App-Daten finden Sie unter [Einstellungen für die Datenverlagerung](app-protection-policy-settings-ios.md#data-protection-settings).   
+-   **Von Intune verwaltete Geräte:** Für Geräte, die bei Intune registriert sind, wird die Datenübertragung zwischen Apps mit App-Schutzrichtlinien und anderen verwalteten iOS-Apps, die über Intune bereitgestellt wurden, automatisch zugelassen. Aktivieren Sie die Einstellung **Allow app to transfer data to other apps** (Zulassen, dass die App Daten an andere Apps überträgt), und wählen Sie die gewünschte Freigabestufe aus, um festzulegen, wie Daten an andere Apps übertragen werden sollen. Aktivieren Sie die Einstellung **Allow app to receive data from other apps** (Zulassen, dass die App Daten von anderen Apps empfängt), und wählen Sie die gewünschte Datenempfangsstufe aus, um festzulegen, wie eine App Daten von anderen Apps empfangen soll. Sie können das Feature **Open in Management** verwenden, um die Datenübertragung zwischen Apps zu steuern, die über Intune bereitgestellt werden. Weitere Informationen zum Empfangen und Senden von App-Daten finden Sie unter [Einstellungen für die Datenverlagerung](app-protection-policy-settings-ios.md#data-protection).   
 
 -   **Mit einer MDM-Lösung eines Drittanbieters verwaltete Geräte:** Sie können die Datenübertragung mithilfe des iOS-Features **Open in Management** auf verwaltete Apps einschränken.
 Wenn Sie sicherstellen möchten, dass Apps, die Sie mithilfe der MDM-Lösung eines Drittanbieters bereitstellen, auch den in Intune konfigurierten App-Schutzrichtlinien zugeordnet sind, müssen Sie die Benutzer-UPN-Einstellung wie im folgenden Abschnitt mit der Überschrift [Konfigurieren der Benutzer-UPN-Einstellung](#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) beschrieben konfigurieren. Wenn Apps mithilfe der Benutzer-UPN-Einstellung bereitgestellt werden, werden die App-Schutzrichtlinien auf die App angewendet, wenn sich der Benutzer mit seinem Geschäftskonto anmeldet.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: bc28bca31c43140a7bca528655825bab60c53be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: cf2bfbc992d4577e345b73f07ec465990feac317
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203517"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229983"
 ---
 # <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Anwenden von Einstellungen für Funktionen auf Ihren Geräten mit Geräteprofilen in Microsoft Intune
 
@@ -123,7 +123,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 - Android Enterprise
 - iOS
 - macOS
-- Windows 10
+- Windows 10 und höher
 - Windows 10 Team
 
 ## <a name="delivery-optimization"></a>Übermittlungsoptimierung
@@ -174,7 +174,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 - Android
 - iOS
 - Windows Phone 8.1
-- Windows 10
+- Windows 10 und höher
 
 ## <a name="vpn"></a>VPN
 
@@ -189,7 +189,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 - macOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 und höher
 
 ## <a name="wi-fi"></a>WLAN
 
@@ -201,6 +201,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 - iOS
 - macOS
 - Windows 8.1 (nur Import)
+- Windows 10 und höher
 
 ## <a name="esim-cellular---public-preview"></a>eSIM-Mobiltelefone: Public Preview
 
@@ -241,7 +242,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 - iOS
 - Windows Phone 8.1
 - Windows 8.1
-- Windows 10
+- Windows 10 und höher
 
 ## <a name="windows-information-protection-profile"></a>WIP-Profil (Windows Information Protection)
 
