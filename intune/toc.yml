@@ -55,8 +55,6 @@ items:
     href: what-is-device-management.md
   - name: Was ist Intune for Education?
     href: introduction-intune-education.md
-  - name: Navigieren im Azure-Portal
-    href: get-started-azure.md
   - name: Grundlegende Architektur
     href: high-level-architecture.md
   - name: Gerätelebenszyklus
@@ -955,9 +953,9 @@ items:
       href: data-outside-protect.md
     - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
       href: data-leak-prevention.md
-ms.openlocfilehash: cb54a7f48a96684c98ed73584adf4acc57a19f56
-ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.openlocfilehash: 1c293290d9d2e2dc2ba44278f77edf9976cb2a7c
+ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690783"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "55761006"
