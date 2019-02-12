@@ -15,12 +15,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c7e9fe1b0b54d020c3b3a4368922d570c64ae8ee
-ms.sourcegitcommit: 7c41f42d6e398ed46aa602ec8aaa4f39aaf92772
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: acbb5c75be4e7733a9b886d0e573d26b6b841f2f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54325031"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836828"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Datensicherheit und -freigabe in Intune
 

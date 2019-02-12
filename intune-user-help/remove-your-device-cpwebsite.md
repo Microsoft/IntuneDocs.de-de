@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fd58fae2f48791e8c63b9391a825838040b1202f
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d8127d10cee17dd445e1830a8e15a278adfa55ad
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863109"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848021"
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Entfernen Ihres Geräts aus dem Unternehmensportal
 

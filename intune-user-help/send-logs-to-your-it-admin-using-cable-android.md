@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 89be04405f76c290c252c382fbee207176e7180d
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cd91a7c862b87d9842d08a2346e2e23af4f3665e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150306"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836326"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Senden von Protokollen an den Support Ihres Unternehmens mithilfe eines USB-Kabels
 

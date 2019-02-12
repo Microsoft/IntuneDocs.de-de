@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 2aee866d06a31c0fe188dd8fb313609043f0092f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c36585b8482cc679de6b86f933abed4411c2dc4a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190062"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837355"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Lösen von Konflikten mit Gruppenrichtlinienobjekten und Microsoft Intune-Richtlinien
 

@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 80d4cf8db5789e6eeb22a777eeef74dce3009856
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bfca0cb5b02fdf77fa9a0bab42af05fd04b5c140
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831291"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838885"
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Aktualisieren von Geräten, die Windows Holographic ausführen, auf Windows Holographic for Business
 

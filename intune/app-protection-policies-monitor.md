@@ -16,12 +16,13 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f86ebd91125ec60d2ad0a28b47f5ac01fb62e8e2
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7efa888344b91c74672563730bbdea6c7424214b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297297"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835094"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Überwachen von App-Schutzrichtlinien
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

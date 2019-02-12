@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 40e022fceecff0c12be9e7112af77b5d830ff94a
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b9c489e6bdfa2842f0939d7ee5cd43b258ef2b50
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148183"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833989"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Installieren von Symantec Endpoint Protection Mobile auf Ihrem Android-Gerät
 

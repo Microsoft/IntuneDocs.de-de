@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 52201b68e946ec59b7c70ea5ff735c26728e27ce
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 61ec5fbe3504f972085af49e6860f4258cfc9484
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429728"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835264"
 ---
 # <a name="reference-for-user-entity"></a>Referenz für die Benutzerentität
 
@@ -38,7 +39,7 @@ Die Entitätssammlung **Benutzer** enthält Benutzerdaten. Zu diesen Datensätze
 | UserKey |Eindeutiger Bezeichner des Benutzers im Data Warehouse – Ersatzschlüssel |123 |
 | UserId |Eindeutiger Bezeichner des Benutzers – Ähnlich wie UserKey, ist jedoch ein natürlicher Schlüssel |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |E-Mail-Adresse des Benutzers |John@constoso.com |
-| UPN | Der Prinzipalname des Benutzers. | John@constoso.com |
+| UPN | Benutzerprinzipalname des Benutzers | John@constoso.com |
 | DisplayName |Anzeigename des Benutzers |John |
 | IntuneLicensed |Gibt an, ob dieser Benutzer über Intune lizenziert ist oder nicht. |Wahr/falsch |
 | isDeleted | Gibt an, ob alle Lizenzen des Benutzers abgelaufen sind und ob der Benutzer daher aus Intune entfernt wurde. Dieses Flag wird für einen einzelnen Datensatz nicht geändert. Stattdessen wird ein neuer Datensatz für einen neuen Benutzerzustand erstellt. |Wahr/falsch |

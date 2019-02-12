@@ -15,12 +15,13 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 41ae1ffc17eee93b45f00e4eef5590f6a5d0b7b4
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 28f6cfe3b97381cd60bf485b8110cfa602ea9133
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112509"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838596"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für iOS-Geräte in Intune
 

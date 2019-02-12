@@ -15,12 +15,13 @@ ms.assetid: ab396092-907a-44b7-a157-aabee62176a9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 64f8b31c4fab5b247ae466df52a0b965f1be813b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 92fd3b9ac83ba5b279fb234fb82242138f1405af
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179965"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839174"
 ---
 # <a name="erase-all-data-from-a-macos-device"></a>Löschen aller Daten von einem macOS-Gerät
 

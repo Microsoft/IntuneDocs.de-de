@@ -14,12 +14,13 @@ ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: f25fe74c9506d2179c683156821ef9afb218128a
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a540d47d9b4418f7cf613fa401e92463d74a17fa
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816564"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838562"
 ---
 # <a name="whats-conditional-access"></a>Was ist bedingter Zugriff?
 

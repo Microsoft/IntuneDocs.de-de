@@ -16,12 +16,13 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0ece7f3d5b7f0d01359a342da5e3dca9b8193a27
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 92416bf0b26855ef675fbb939eb2745e73003285
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642607"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834737"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Windows 10-App-Bereitstellung mit Microsoft Intune 
 

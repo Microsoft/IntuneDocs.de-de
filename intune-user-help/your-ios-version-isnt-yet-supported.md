@@ -18,12 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
-ms.openlocfilehash: 86c42b3e2d115906684d069f80a63ed8f9d5c51f
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 645a844a3566f7d72138c602c3dc12e5a0fafa67
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031703"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838851"
 ---
 # <a name="your-ios-devices-operating-system-version-isnt-yet-supported"></a>Die Betriebssystemversion Ihres iOS-Geräts wird noch nicht unterstützt
 

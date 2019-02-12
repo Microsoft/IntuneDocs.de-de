@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e31eacb0d106fa7200275fcc369a2ea22cf36219
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2bce4f7bbbd7fcb501c2380b60a3cf79d6548aac
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147266"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840279"
 ---
 # <a name="sync-your-ios-device-manually"></a>Manuelles Synchronisieren des iOS-Geräts
 

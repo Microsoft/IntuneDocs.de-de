@@ -15,12 +15,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 32281ae37b7b36dfbf49503275a8a1e6c35d8f6d
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 528e26ddca1b3327fb0afa2f5cff6f2dbdca1660
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210787"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846484"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Häufig auftretende Probleme und Lösungen für Geräteprofile in Microsoft Intune
 

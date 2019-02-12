@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 174bc67e98d5724c8943ea178057bbac6dc85cba
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b2544ddf5d925d7dc62438a9fcc8c5e4e6b60828
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54205011"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839123"
 ---
 # <a name="get-help-and-support-in-company-portal-for-windows-10"></a>Hilfe und Support erhalten im Unternehmensportal für Windows 10
 

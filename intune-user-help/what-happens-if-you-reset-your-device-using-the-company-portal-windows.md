@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e569b69f319cb3cf2868d86db2032b93d9bd8ab8
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0390be417648a5fd4ea667b6aee26731448a460f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149122"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840024"
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>Was geschieht, wenn Sie Ihr Windows-Gerät mithilfe des Unternehmensportals zurücksetzen?
 

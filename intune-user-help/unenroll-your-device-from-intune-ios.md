@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ba0f2675bfd65f60f6f16d6be738cdc1baa3e7e5
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2d52ef6f2cf995031c25bc9065212e39235041b2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148796"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841147"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Entfernen Ihres iOS-Geräts aus Intune
 

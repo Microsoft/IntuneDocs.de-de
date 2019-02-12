@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f667564443115ba350cf244009d3509fe8d760d0
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1b55d41939b9772227cee0f12da65040edbca0d0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148357"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843764"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Installieren von SandBlast Mobile Protect auf Ihrem Android-Gerät
 

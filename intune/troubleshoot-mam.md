@@ -15,12 +15,13 @@ ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 58ff1bd91a5c95d66d75ad6546137dd2de9feac3
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899092"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086147"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Problembehandlung der Verwaltung von mobilen Geräten
 
@@ -34,9 +35,9 @@ Dies sind Probleme, mit denen der IT-Administrator bei Verwendung der Intune-App
 
 | Problem | Beschreibung | Lösung |
 | -- | -- | -- |
-| Richtlinie wird nicht auf Skype für Business angewendet. | Eine App-Schutzrichtlinie ohne im Azure-Portal vorgenommene Geräteregistrierung wird auf iOS- und Android-Geräten nicht auf die Skype for Business-App angewendet. | Skype for Business muss für die moderne Authentifizierung eingerichtet werden.  Führen Sie die Anweisungen in [Enable your tenant for modern authentication (Aktivieren Ihres Mandanten für moderne Authentifizierung)](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) aus, um moderne Authentifizierung für Skype einzurichten. |
+| Richtlinie wird nicht auf Skype für Business angewendet. | Eine App-Schutzrichtlinie ohne im Azure-Portal vorgenommene Geräteregistrierung wird auf iOS- und Android-Geräten nicht auf die Skype for Business-App angewendet. | Skype for Business muss für die moderne Authentifizierung eingerichtet werden.  Führen Sie die Anweisungen in [Enable your tenant for modern authentication (Aktivieren Ihres Mandanten für moderne Authentifizierung)](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) aus, um moderne Authentifizierung für Skype einzurichten. |
 | Office-App-Richtlinie wird nicht angewendet. | App-Schutzrichtlinien werden für keinen Benutzer und auf keine [unterstützte Office-App](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) angewendet. | Vergewissern Sie sich, dass der Benutzer für Intune lizenziert ist und dass für die Office-Apps eine bereitgestellte App-Schutzrichtlinie gilt. Es kann bis zu 8 Stunden dauern, bis eine neu bereitgestellte App-Schutzrichtlinie angewendet wird. |
-| Der Administrator kann im Azure-Portal keine App-Schutzrichtlinie konfigurieren. | Der IT-Administratorbenutzer kann im Azure-Portal keine App-Schutzrichtlinien konfigurieren. | Folgende Benutzerrollen haben Zugriff auf das Azure-Portal: <ul><li>Globaler Administrator, den Sie im [Office-Portal](http://portal.office.com/) einrichten können.</li><li>Besitzer, den Sie im [Azure-Portal](https://portal.azure.com/) einrichten können.</li><li>Mitwirkender, den Sie im [Azure-Portal](https://portal.azure.com/) einrichten können.</li></ul> Unter [Was ist die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC)?](role-based-access-control.md) finden Sie Hilfe zum Einrichten dieser Rollen.|
+| Der Administrator kann im Azure-Portal keine App-Schutzrichtlinie konfigurieren. | Der IT-Administratorbenutzer kann im Azure-Portal keine App-Schutzrichtlinien konfigurieren. | Folgende Benutzerrollen haben Zugriff auf das Azure-Portal: <ul><li>Globaler Administrator, den Sie im [Office-Portal](https://portal.office.com/) einrichten können.</li><li>Besitzer, den Sie im [Azure-Portal](https://portal.azure.com/) einrichten können.</li><li>Mitwirkender, den Sie im [Azure-Portal](https://portal.azure.com/) einrichten können.</li></ul> Unter [Was ist die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC)?](role-based-access-control.md) finden Sie Hilfe zum Einrichten dieser Rollen.|
 |Benutzerkonten fehlen in Berichten von App-Schutzrichtlinien. | In den Berichten der Verwaltungskonsole werden keine Benutzerkonten angezeigt, für die vor Kurzem eine App-Schutzrichtlinie bereitgestellt wurde. | Wenn ein Benutzer neu als Ziel einer App-Schutzrichtlinie festgelegt worden ist, kann es bis zu 24 Stunden dauern, bis dieser Benutzer in Berichten als Zielbenutzer aufgeführt wird. |
 | Richtlinienänderungen funktionieren nicht. | Es kann bis zu 8 Stunden dauern, bis Änderungen und Aktualisierungen für App-Schutzrichtlinien angewendet werden. | Ggf. können Endbenutzer sich bei der App abmelden und wieder anmelden, um die Synchronisierung mit dem Dienst zu erzwingen. |
 | App-Schutzrichtlinie funktioniert nicht mit DEP. | Die App-Schutzrichtlinie wird nicht auf Apple DEP-Geräte angewendet. | Stellen Sie sicher, dass Sie User Affinity mit Apple DEP (Device Enrollment Program) verwenden. User Affinity ist für alle Apps erforderlich, die Benutzerauthentifizierung unter DEP benötigen. <br><br>Weitere Informationen zur iOS DEP-Registrierung finden Sie unter [Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](device-enrollment-program-enroll-ios.md).|

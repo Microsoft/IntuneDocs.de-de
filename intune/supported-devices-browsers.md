@@ -16,12 +16,13 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 2d47a8f61c85b390ae53311154f27d2d85860840
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bbddbd1bd74044e161b1a18fcf58c5a64bdb8c70
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626041"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842490"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>In Intune unterstützte Betriebssysteme und Browser
 

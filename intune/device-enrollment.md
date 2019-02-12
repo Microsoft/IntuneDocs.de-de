@@ -15,12 +15,13 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: a94722c4f4a1d199e32f6ba0c56ca4bdb2b3b09b
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1472d48dae13a02895b4e8a45c90979d03cf410b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199454"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844495"
 ---
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

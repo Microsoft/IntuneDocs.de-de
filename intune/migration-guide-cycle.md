@@ -15,12 +15,13 @@ ms.assetid: 3688b724-9521-4210-bf4d-bcf47d8d4ca0
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 7b082f2d160b78332bf6e0f389adb9a49ccb52a4
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2217b7548a8eb06510d8a31043fe960a7d344614
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186714"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839947"
 ---
 # <a name="typical-migration-cycle"></a>Typischer Migrationszyklus
 

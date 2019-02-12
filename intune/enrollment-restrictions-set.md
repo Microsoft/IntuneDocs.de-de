@@ -16,12 +16,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bd282a6b23f33b11cbd046cac4f791d6d675e365
-ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cfbfb26569a85d8cd19b840ab86ec58160a1dec4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54751211"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839670"
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 

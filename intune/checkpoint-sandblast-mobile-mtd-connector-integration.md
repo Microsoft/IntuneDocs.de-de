@@ -16,12 +16,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 494edf17b67e841aa661877c6545adab1ce9a6f2
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1dcd355ac5b0376db2977f046258ce6bb83a2234
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817114"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846700"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Integrieren von Check Point SandBlast Mobile in Intune
 

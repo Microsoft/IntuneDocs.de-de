@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3c68f5f89098a5e294644973f23f57c038936d40
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c9ecf976ea973fdb1a9b8025fec0bf49d7f87d0c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54202973"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836471"
 ---
 # <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>E-Mails zu Problemen an den Support Ihres Unternehmens über das Unternehmensportal für Windows
 

@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: cf2bfbc992d4577e345b73f07ec465990feac317
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4b9bd8aaca9aaf6e39c7a120518eeca1cef31511
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55229983"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845090"
 ---
 # <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Anwenden von Einstellungen für Funktionen auf Ihren Geräten mit Geräteprofilen in Microsoft Intune
 

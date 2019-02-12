@@ -15,12 +15,13 @@ ms.assetid: 93cda587-bf56-4d41-b123-9fe203fad788
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 92485c4d479e1cb96e23f01c129fa2639657cd27
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fa9df81c363099cc487497fdd4503df8c91ea4a5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297314"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837032"
 ---
 # <a name="configure-app-protection-policies-optional"></a>Konfigurieren von App-Schutzrichtlinien (optional)
 

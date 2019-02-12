@@ -15,12 +15,13 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 97f51b4934a2dc2267e255da0ec1d896dd6b8961
-ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3d3ed544fa14f821cc02749c80fc567259b2082b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54751194"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843679"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Massenregistrierung für Windows-Geräte
 

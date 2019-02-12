@@ -16,12 +16,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 6a49ee917540c9378f69dc6a025fbe5f8429767c
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c81162d5208ecdca2c26d7a981170d370b68115e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112815"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837491"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Einrichten der iOS-Geräteregistrierung mit Apple Configurator
 

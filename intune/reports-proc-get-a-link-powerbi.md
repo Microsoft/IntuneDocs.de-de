@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 833e58d8add6b316267e7cb1e177384a0ca4966d
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c91d6951fd6f59d85b163fb998ff4833782f03e4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899109"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834601"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinden mit dem Data Warehouse mit Power BI
 

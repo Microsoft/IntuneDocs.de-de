@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 413c5e2b1201b5ead1af1cd112e5a1320262778e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2e46c98264833231836fdb53fc93897d95366dac
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150104"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843696"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr iOS-Gerät bei Intune registrieren?
 

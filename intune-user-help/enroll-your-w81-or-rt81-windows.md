@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 425c3a829975e8a4a42b7f9e0302701666124aee
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b20acc1c6b3fd64536b473013182d06e2bc04623
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146555"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834193"
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Registrieren Ihres Windows 8.1- oder Windows RT 8.1-Geräts bei Intune
 

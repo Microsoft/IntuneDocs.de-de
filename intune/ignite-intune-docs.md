@@ -16,12 +16,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5735a2059690655a76425b049eff9e26f5ab8179
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b68ca31b03bb3274d48b185335f956e38e140ae8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032570"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848558"
 ---
 # <a name="microsoft-intune-documentation-40ignite-2018-special-edition41"></a>Microsoft Intune-Dokumentation &#40;Ignite 2018 Special Edition&#41;
 Willkommen bei der Microsoft Ignite 2018! Wir freuen uns, dass Sie hier sind. Im Zuge der Microsoft Ignite 2018 haben wir Ihnen einige Intune-Ressourcen zusammengestellt.
@@ -43,10 +44,10 @@ Einige Schnellstarts wurden aktualisiert oder neu erstellt. Schließen Sie die f
 - [Hinzufügen und Zuweisen einer Client-App](quickstart-add-assign-app.md): Fügen Sie eine Client-App für Ihre Mitarbeiter hinzu, und weisen Sie diese zu.
 - [Erstellen und Zuweisen einer App-Schutzrichtlinie](quickstart-create-assign-app-policy.md): Erstellen Sie eine App-Schutzrichtlinie für eine Client-App auf dem Gerät eines Endbenutzers, und weisen Sie diese zu. 
 - [Erstellen und Zuweisen einer benutzerdefinierten Rolle](quickstart-create-custom-role.md): Erstellen Sie eine benutzerdefinierte Rolle mit bestimmten Berechtigungen für eine Abteilung für Sicherheitsvorgänge, und weisen Sie diese zu. 
-- [Erstellen eines E-Mail-Geräteprofils für iOS](quickstart-email-profile.md): Erstellen Sie ein E-Mail-Geräteprofil für iOS-Geräte.
+- [Create an email device profile for iOS (Erstellen eines E-Mail-Geräteprofils für iOS):](quickstart-email-profile.md) Erstellen Sie ein E-Mail-Geräteprofil für iOS-Geräte.
 
-## <a name="learn"></a>Mehr erfahren
-- [Neues in Intune](whats-new.md)
+## <a name="learn"></a>Kennenlernen von
+- [Intune What’s New (Neues in Intune)](whats-new.md)
 - [Intune-Dokumentationsbibliothek](https://docs.microsoft.com/intune/)
 
 ## <a name="contribute-to-docs"></a>So können Sie an der Dokumentation mitwirken
@@ -54,8 +55,8 @@ Einige Schnellstarts wurden aktualisiert oder neu erstellt. Schließen Sie die f
 - [Wichtigste Mitwirkende an der Intune-Dokumentation](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-10-01&to=2019-12-31&type=c)  
 
 ## <a name="start-using-intune"></a>Starten der Verwendung von Intune
-- [Lizenzen, die Intune enthalten](licenses.md)
-- [Intune kostenlos testen](free-trial-sign-up.md)
+- [Licenses that include Intune (Lizenzen, die Intune enthalten)](licenses.md)
+- [Try Intune for free (Intune kostenlos testen)](free-trial-sign-up.md)
 - [Einrichten von Intune](setup-steps.md)
 - [FastTrack Center-Leistungsangebot](https://docs.microsoft.com/enterprise-mobility-security/Solutions/enterprise-mobility-fasttrack-program)
 

@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: e0bb198b078695b567756c6a7db832d00e7a8c5b
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1ea7ee32794a120c12b0720be5fa11f3b97536ab
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210838"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848809"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Erste Schritte mit dem Microsoft Intune App SDK
 

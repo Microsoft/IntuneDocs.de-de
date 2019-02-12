@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bdd8267701b20600d67e6927c8b55d7f9c11a34f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 487ad607bc34d5fc2137f1b3903b0711e793658d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186765"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840540"
 ---
 # <a name="understand-the-users-experience-enrolling-an-ios-device"></a>Grundlegendes zur Benutzerfreundlichkeit der Registrierung von iOS-Geräten
 

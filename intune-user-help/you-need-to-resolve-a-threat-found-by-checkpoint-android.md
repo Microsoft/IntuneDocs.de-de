@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: be3f728a4f2764a0c2494686c943cdfb43b32bd2
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3fdf06339435d0605c6ac84d82dc2ab6c643b2df
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147554"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839021"
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Beheben einer von SandBlast Mobile Protect erkannten Bedrohung
 
@@ -32,7 +33,7 @@ SandBlast Mobile Protect ist ein Mobile Threat Defender-Dienst, der potenzielle 
 * Synchronisieren von Unternehmensdateien mit OneDrive
 * Zugreifen auf Unternehmens-Apps
 
-Dieser Artikel beschreibt, wie Sandblast Mobile Protect-Benachrichtigungen zu Bedrohungen zu verstehen sind und wie diese gelöst werden können.  
+In diesem Artikel wird beschrieben, wie Sandblast Mobile Protect-Benachrichtigungen zu Bedrohungen zu verstehen sind und wie diese gelöst werden können.  
 
 ## <a name="troubleshoot-virus-or-security-threat"></a>Problembehandlung bei Viren- oder Sicherheitsbedrohungen  
 Wenn eine Viren- oder Sicherheitsbedrohung erkannt wird, verfährt die SandBlast Mobile Protect-App gemäß den Zugriffsrichtlinien Ihrer Organisation. Die Zugriffsrichtlinien Ihres Unternehmens könnten Sie am Zugriff auf das Netzwerk, die Apps und die E-Mails hindern, die Sie für Ihre Arbeit benötigen.  
@@ -49,6 +50,6 @@ Da die App in den MDM-Anbieter Ihres Unternehmens integriert ist, wird auch eine
 
 Wenn Sie eine App installieren, die als Bedrohung für Ihr Gerät angesehen wird, erhalten Sie eine Benachrichtigung in SandBlast Mobile Protect. Solange die betroffene App auf Ihrem Gerät verbleibt, können Sie nicht auf Unternehmensressourcen zugreifen.  
 
-Zum Auflösen der Warnung wählen Sie die App in der Liste der Bedrohungen in SandBlast Mobile Protect aus. Folgen Sie dann den Anweisungen, um die App zu entfernen und zu deinstallieren.     
+Zum Auflösen der Warnung wählen Sie die App in der Liste der Bedrohungen in SandBlast Mobile Protect aus. Führen Sie dann die Anweisungen aus, um die App zu entfernen und zu deinstallieren.     
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

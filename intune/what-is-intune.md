@@ -15,21 +15,22 @@ ms.reviewer: pmay
 ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
-ms.openlocfilehash: ed87f9d2554972a0affd9c93eca1804c460e6144
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 021c2e1e86219310eb34c4bba54d903246dbf28e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52860978"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835026"
 ---
 # <a name="what-is-microsoft-intune"></a>Was ist Microsoft Intune?
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Intune ist ein cloudbasierter Dienst für den Bereich Enterprise Mobility, der die Produktivität Ihrer Mitarbeiter unterstützt und gleichzeitig Ihre Unternehmensdaten schützt. Genau wie andere Azure-Dienste ist Microsoft Intune im Azure-Portal verfügbar. Intune ermöglicht Folgendes:
+Intune ist ein cloudbasierter Dienst für den Bereich Enterprise Mobility, der die Produktivität Ihrer Mitarbeiter unterstützt und gleichzeitig Ihre Unternehmensdaten schützt. Genau wie andere Azure-Dienste ist Microsoft Intune im Azure-Portal verfügbar. Mit Intune können Sie folgende Aktionen ausführen:
 * Verwalten der mobilen Geräte und PCs, die Ihre Mitarbeiter zum Zugriff auf Unternehmensdaten verwenden
-* Verwalten der mobilen Apps, die Ihre Mitarbeiter verwenden
-* Schutz Ihrer Unternehmensinformationen, indem Sie steuern, wie Ihre Mitarbeiter darauf zugreifen und diese freigeben
+* Die mobilen Apps verwalten, die Ihre Mitarbeiter verwenden
+* Ihre Unternehmensinformationen schützen, indem Sie steuern, wie Ihre Mitarbeiter darauf zugreifen und diese freigeben
 * Sicherstellen, dass Geräte und Apps kompatibel mit den Sicherheitsanforderungen des Unternehmens sind
 
 ## <a name="common-business-problems-that-intune-helps-solve"></a>Häufig auftretende geschäftliche Probleme, die mithilfe von Intune gelöst werden können

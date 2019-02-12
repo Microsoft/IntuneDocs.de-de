@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7ab60e64927db5537a106c1257a5624670771f86
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6e30b5fc544d67dcb9e10502d19961d1c91a3e47
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831410"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843101"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Konfigurieren von Einstellungen für Geräteeinschränkungen in Microsoft Intune
 

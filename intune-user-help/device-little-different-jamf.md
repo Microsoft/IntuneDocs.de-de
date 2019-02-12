@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9e6935dd5f25e14a5cef44d899c647d2927ebbbb
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d1749d2b40a83ddbc8b869bc33329f6c891a97e4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147076"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851541"
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Ausführen von Aktionen auf einem macOS-Gerät, das von Jamf verwaltet wird
 

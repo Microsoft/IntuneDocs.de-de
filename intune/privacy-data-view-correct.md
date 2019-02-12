@@ -15,12 +15,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7f2ccccd76149c34f227ecc4d9eadec091ce93f1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c816cf46a85c602327c833104c94e6b90f66ea44
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189259"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838919"
 ---
 # <a name="view-and-correct-personal-data"></a>Anzeigen und Korrigieren personenbezogener Daten
 

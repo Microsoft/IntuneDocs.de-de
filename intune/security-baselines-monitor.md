@@ -2,8 +2,8 @@
 title: Überprüfen von Erfolg oder Fehler bei Sicherheitsbaselines in Microsoft Intune – Azure | Microsoft-Dokumentation
 description: Überprüfen Sie Fehler-, Konflikt- und Erfolgsstatus bei der Bereitstellung von Sicherheitsbaselines für Benutzer und Geräte in Microsoft Intune MDM. Erfahren Sie, wie Sie Probleme mithilfe von Clientprotokollen und den Berichtsfunktionen in Intune behandeln.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/24/2019
 ms.topic: article
@@ -14,12 +14,13 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 28a98a20e5f0b5181628da46ccd662f1f8f503dd
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bfbdad6d98065a691528d4cdada0b6f9377e1109
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55070212"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848235"
 ---
 # <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Überwachen von Sicherheitsbaseline und Profil in Microsoft Intune
 

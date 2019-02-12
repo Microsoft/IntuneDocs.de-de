@@ -18,12 +18,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ffdf1d524dafa280a698ff25b5118394116cd72a
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9b0132090d638421fd6c463a852705b268925700
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148830"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847742"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>Der Grenzwert für Geräteregistrierungen wurde erreicht
 

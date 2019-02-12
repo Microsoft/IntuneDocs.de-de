@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 76f155d84a3f447cf067970c614d2bd7fd4f1798
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 41aabef5e25280b514cd94537c5bb98c63b76295
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305895"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847086"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Verschieben Ihrer Intune Data Warehouse-Kontodaten 
 

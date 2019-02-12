@@ -16,12 +16,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 235356e88dc2ba25b789ebe262c1ae9b32840793
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6f78c2460130068652b91b27ddcf5726a077e59e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150884"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833462"
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Behandeln häufig auftretender Probleme mit dem Samsung KNOX-Gerät
 

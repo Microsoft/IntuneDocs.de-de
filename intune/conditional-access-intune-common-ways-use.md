@@ -14,12 +14,13 @@ ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
-ms.openlocfilehash: a762f14fd93400d76c63d2108a41229bf2ffc34d
-ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bd29f52b4d108173b8f08b68cf8b85ce291a0077
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/09/2019
-ms.locfileid: "54122586"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842761"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?
 

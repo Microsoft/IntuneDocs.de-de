@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
-ms.openlocfilehash: ab949b1bbb7752e20b5c93402b40b1b4dcec3f5a
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e9a441ff22c98fbf66f90902d9b1e0b685ab2739
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032044"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837559"
 ---
 # <a name="you-need-to-enable-secure-boot"></a>Sicherer Start muss aktiviert werden
 

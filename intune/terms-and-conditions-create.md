@@ -16,12 +16,13 @@ ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 7283b728e519eb2ca5a9a0b7516774c8cfc26f9b
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d126852366ff67adbbfecd2eb5ebe14a129c5945
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831512"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839228"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Geschäftsbedingungen für den Benutzerzugriff
 

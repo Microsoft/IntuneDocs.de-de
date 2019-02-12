@@ -15,12 +15,13 @@ ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 012dbd8f26ed6e3cd81a88396c7a1aa5d999d95e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1d76b3af1cb0a597877d80394e152eefdcbbaa51
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183773"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841299"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Zusätzliche Ressourcen für die Planung Ihrer Intune-Bereitstellung
 

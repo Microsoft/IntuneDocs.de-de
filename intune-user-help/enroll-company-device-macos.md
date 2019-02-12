@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 603a501ff8b8b3ebc6b142a823b1c5bea4e48b98
-ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: acbfafcc26aa924a5a9d0a7712bb56119099af43
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "46505749"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848218"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Registrieren eines von Ihrer Organisation bereitgestellten macOS-Geräts für die Verwaltung
 

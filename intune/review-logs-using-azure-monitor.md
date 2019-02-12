@@ -14,12 +14,13 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6323eda16ef54df3cb14f9a8dd4f8349e51d1b01
-ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f4f93ab1cd2c662cb97dafd19684b353268087f6
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55105152"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842574"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Senden von Daten an den Speicher, an Event Hubs oder Log Analytics in Intune (Vorschauversion)
 

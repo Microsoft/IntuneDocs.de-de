@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6f7d7ccb4c94300d00f02dcace5c3a089cd9f2a2
-ms.sourcegitcommit: d54a12a836503f7e8b90346f16b7ad2d83b710dc
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 95db6ca8cbcb6e4e80b549b26a352c748f20c7f5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2019
-ms.locfileid: "54270570"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847216"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Schnellstart: Erstellen einer Gruppe zum Verwalten von Benutzern
 

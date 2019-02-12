@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fc5d2a6f17bdac8711348c136ee390a400fc21bd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 646a72eaa3837b48b4af718904064fddaeb98955
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182498"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840381"
 ---
 # <a name="get-started-managing-users"></a>Erste Schritte mit der Benutzerverwaltung
 

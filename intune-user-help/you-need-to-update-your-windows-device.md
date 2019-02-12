@@ -18,12 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
-ms.openlocfilehash: 0f51c9091dfa4ad91ad4e648e954b6b5ca0fe3d8
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 01edd6fa365a755c87f21ea4b90f348c16b682d9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031788"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841129"
 ---
 # <a name="you-need-to-update-your-windows-device"></a>Sie müssen Ihr Windows-Gerät aktualisieren
 

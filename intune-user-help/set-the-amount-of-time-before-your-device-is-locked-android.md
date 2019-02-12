@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f00b5b62ce6dcad347399e51e6c48b6e0b7c022a
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 62a91de6b4f86500afa043d0b8045980e6437af3
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150972"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843135"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-device-is-locked"></a>Festlegen der Zeit, bevor das Gerät gesperrt wird
 

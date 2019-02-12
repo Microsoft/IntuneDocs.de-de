@@ -15,12 +15,13 @@ ms.reviewer: erikre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1e2b97970a7ab440a032eb29f5307e4dbeddc3bc
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6844fc94755805e95b56d3d457ada6ce54807874
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53306014"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846450"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Häufig gestellte Fragen zu MAM und App-Schutz
 

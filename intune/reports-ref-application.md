@@ -16,14 +16,15 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1a6019365b03a54e5897bc8788c171ef969e0d1e
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ec227fc3057f80e94ae58ce68c19f06b7dba8bc5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032373"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848473"
 ---
-# <a name="reference-for-application-entities"></a>Referenz für Anwendungsentitäten
+# <a name="reference-for-application-entities"></a>Verweis für Anwendungsentitäten
 
 Die Kategorie **Anwendung** (Application) enthält Entitäten für mobile Geräte, die folgende Informationen nachverfolgen:
 

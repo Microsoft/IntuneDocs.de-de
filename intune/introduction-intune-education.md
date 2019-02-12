@@ -15,12 +15,13 @@ ms.reviewer: travisj
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 705149f3399c016879f4743065630f66ecefd263
-ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d786880c6f1ee77bfbd0bdeb3a8dbe80221dc954
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53570773"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839157"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Inwiefern unterscheidet sich Intune for Education von der vollständigen Intune-Verwaltungsumgebung?
 

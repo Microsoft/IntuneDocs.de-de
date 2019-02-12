@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren der Geräte- und App-Konformität während einer Intune-Migration
 titlesuffix: Microsoft Intune
-description: Dieser Artikel stellt die für das Konfigurieren der Richtlinien für die Gerätekonformität und die App-Verwaltung notwendigen Schritte während einer Migration zu Microsoft Intune bereit.
+description: Dieser Artikel stellt die für das Konfigurieren der Richtlinien für die Gerätekompatibilität und die App-Verwaltung notwendigen Schritte während einer Migration zu Microsoft Intune bereit.
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -16,16 +16,17 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 99f8f1eb297ac1530f9379dd4f033b72eee0b0f4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1880d580a8719dcf72f54f9c22306bea001bc3b0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031822"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834572"
 ---
-# <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Konfigurieren der Richtlinien für die Gerätekonformität und die App-Verwaltung während einer Migration zu Microsoft Intune
+# <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Konfigurieren der Richtlinien für die Gerätekompatibilität und die App-Verwaltung während einer Migration zu Microsoft Intune
 
-Das Hauptziel der Migration zu Intune ist die Registrierung aller Geräte in Intune und die Konformität aller Geräte mit ihren Richtlinien. Geräterichtlinien helfen Ihnen nicht nur dabei, firmeneigene Geräte mit nur einem Benutzer zu verwalten, sondern auch bei der Verwaltung persönlicher (Bring-Your-Own-Device, BYOD) und freigegebener Geräte, wie z.B. Kiosks, Verkaufsortcomputer, Tablets, die von mehreren Schülern in einem Klassenzimmer verwendet werden, oder Geräte ohne Benutzer (nur iOS).
+Das Hauptziel der Migration zu Intune ist die Registrierung aller Geräte in Intune und die Kompatibilität aller Geräte mit ihren Richtlinien. Geräterichtlinien helfen Ihnen nicht nur dabei, firmeneigene Geräte mit nur einem Benutzer zu verwalten, sondern auch bei der Verwaltung persönlicher (Bring-Your-Own-Device, BYOD) und freigegebener Geräte, wie z.B. Kiosks, Verkaufsortcomputer, Tablets, die von mehreren Schülern in einem Klassenzimmer verwendet werden, oder Geräte ohne Benutzer (nur iOS).
 
 Jede Geräteplattform hat möglicherweise unterschiedliche Einstellungen, aber Geräterichtlinien von Intune funktionieren durch folgende MDM-Funktionen mit jeder Geräteplattform:
 
@@ -35,12 +36,12 @@ Jede Geräteplattform hat möglicherweise unterschiedliche Einstellungen, aber G
 
 -   Bereitstellen von Apps, E-Mail-Profilen, VPN-Profilen, etc.
 
--   Auswerten der Kriterien für Richtlinien zur Sicherheitskonformität auf Geräteebene
+-   Auswerten der Kriterien für Sicherheitskompatibilitätsrichtlinien auf der Geräteebene
 
 > [!IMPORTANT]
 > Geräteverwaltungsrichtlinien werden einzelnen Geräten oder Benutzern nicht direkt zugewiesen, sondern ganzen Benutzergruppen. Die Richtlinien können direkt auf Benutzergruppen und somit auch auf das Geräte des Benutzers angewendet werden; die Richtlinien können auch auf eine Gerätegruppe und somit auch auf Gruppenmitglieder angewendet werden.
 
-## <a name="task-list-for-device-compliance-policies"></a>Aufgabenliste für Gerätekonformitätsrichtlinien
+## <a name="task-list-for-device-compliance-policies"></a>Aufgabenliste für Gerätekompatibilitätsrichtlinien
 
 ### <a name="task-1-add-device-groups-optional"></a>Aufgabe 1: Hinzufügen von Gerätegruppen (optional)
 
@@ -76,11 +77,11 @@ Gerätekonformitätsrichtlinien werten sicherheitsorientierte Einstellungen aus 
 
 -   BS-Version
 
-Hier finden Sie weitere Ressourcen zu den Einstellungen der Gerätekonformität:
+Hier finden Sie weitere Ressourcen für die Einstellungen der Gerätekompatibilität:
 
--   Erfahren Sie mehr über [Gerätekonformitätsrichtlinien](device-compliance.md).
+-   Erfahren Sie mehr über [Gerätekompatibilitätsrichtlinien](device-compliance.md).
 
--   Erfahren Sie, wie Sie eine [Gerätekonformitätsrichtlinien erstellen](device-compliance-get-started.md).
+-   Erfahren Sie, wie Sie eine [Gerätekompatibilitätsrichtlinie erstellen](device-compliance-get-started.md) können.
 
 ### <a name="task-5-publish-and-deploy-apps"></a>Aufgabe 4: Veröffentlichen und Bereitstellen von Apps
 

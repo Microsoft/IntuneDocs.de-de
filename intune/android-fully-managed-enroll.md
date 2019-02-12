@@ -16,12 +16,13 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: d457ca413f3069e8528dc6f4951f834e3f1dac6a
-ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a730dbb702286f71534623b2c08da6b388c3e499
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55146909"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835842"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>Einrichten der Intune-Registrierung von vollständig verwalteten Android-Geräten (Vorschauversion)
 

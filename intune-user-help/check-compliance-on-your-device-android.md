@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 88caf56a2483690f9130818191b04f412a7ed641
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 812c012bbb69c32d518c9dfa772ed4b37e1260a6
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146836"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837984"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Überprüfen der Kompatibilität auf Ihrem Android-Gerät
 

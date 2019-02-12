@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: cc7e61d7b5dd0d7ff16836602b8d959683a971e7
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c8e90ee88ba0f03aacff25d50538e4dfca947dfc
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210719"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834127"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Erstellen eines Berichts aus dem OData-Feed mit Power BI
 

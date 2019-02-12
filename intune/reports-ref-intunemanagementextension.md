@@ -16,12 +16,13 @@ ms.reviewer: dariusz
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 48e08b93468fb177fd3a724e5bcc6758cf262e99
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0df0d97b41933f316db788fd0af09ba75196549b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189366"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836868"
 ---
 # <a name="reference-for-intune-management-extension"></a>Referenz für die Intune-Verwaltungserweiterung
 

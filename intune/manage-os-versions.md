@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
-ms.openlocfilehash: 27a581a72c20c940a04a791ef9e63a2dc8bf5b24
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: faf51236be219a860447d2243967b90e3aab1d01
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816989"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837236"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Verwalten von Betriebssystemversionen mit Intune
 Für aktuelle mobile Plattformen und Desktopplattformen werden ständig größere Updates, Patches und neue Versionen herausgegeben. Es gibt Steuerelemente, mit denen Sie Updates und Patches unter Windows vollständig verwalten können. Andere Plattformen wie iOS und Android verlangen, dass sich die Benutzer an dem Vorgang beteiligen.  Microsoft Intune verfügt über Funktionen, mit denen Sie Ihre Betriebssystemversionsverwaltung plattformübergreifend strukturieren können.

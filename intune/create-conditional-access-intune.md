@@ -15,12 +15,13 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 320ded06b59b583baf27544249393029f7488b2d
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5c9fc2b2e973fdebfd303382e88630ef9999b517
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53267715"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844155"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Erstellen einer gerätebasierten Richtlinie für bedingten Zugriff
 
@@ -43,7 +44,7 @@ Eine Richtlinie für bedingten Zugriff gibt die Apps oder Dienste an, die Sie sc
   
     - **Benutzer und Gruppen auswählen**: Wählen Sie diese Option aus, und geben Sie mindestens eine der folgenden Optionen an:
   
-      a. **Sämtliche Gastbenutzer**: Mit dieser Option können Sie externe Gastbenutzer (z.B. Partner oder externe Projektmitarbeiter) ein- oder ausschließen.
+      ein. **Sämtliche Gastbenutzer**: Mit dieser Option können Sie externe Gastbenutzer (z.B. Partner oder externe Projektmitarbeiter) ein- oder ausschließen.
        
       b. **Verzeichnisrollen**: Wählen Sie eine oder mehrere Azure AD-Rollen aus, um Benutzer ein- oder auszuschließen, denen diese Rollen zugewiesen wurden.
       

@@ -16,12 +16,13 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: f01009a0cb35f4270bdb1e768ee781172c8bfa2f
-ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0762c099d30cbeda37ffdaffcb0bed2091f7b9c1
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55105186"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837083"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Einrichten einer Statusseite für die Registrierung
  

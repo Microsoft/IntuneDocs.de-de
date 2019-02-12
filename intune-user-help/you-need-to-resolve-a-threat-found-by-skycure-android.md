@@ -15,16 +15,17 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ae001eb4d85a35b587eee4fa04df5f1987b247f7
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9b008130ec089b99ab64fe0dbbef7ae89b753817
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149806"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844189"
 ---
 # <a name="resolve-a-threat-found-by-symantec-endpoint-protection-mobile"></a>Beseitigen einer Bedrohung, die von Symantec Endpoint Protection Mobile erkannt wurde
 
-Symantec Endpoint Protection (SEP) Mobile ist ein Mobile Threat Defender-Dienst, der potenzielle Bedrohungen auf Ihren Android-Geräten identifiziert. Diese Bedrohungen werden in der Unternehmensportal-App als ungelöste Probleme angezeigt, die auf fehlende Konformität hinweisen. Wenn Ihr Gerät als nicht kompatibel identifiziert wurde, können Sie folgende Aktionen möglicherweise nicht ausführen:
+Symantec Endpoint Protection (SEP) Mobile ist ein Mobile Threat Defender-Dienst, der potenzielle Bedrohungen auf Ihren Android-Geräten identifiziert. Diese Bedrohungen werden in der Unternehmensportal-App als ungelöste Probleme angezeigt, die auf fehlende Konformität hinweisen. Wenn Ihr Gerät als nicht konform identifiziert wurde, können Sie folgende Aktionen möglicherweise nicht ausführen:
 
 * Herstellen einer Verbindung mit Unternehmens-E-Mail
 * Herstellen einer Verbindung mit Unternehmens-WLAN
@@ -32,11 +33,11 @@ Symantec Endpoint Protection (SEP) Mobile ist ein Mobile Threat Defender-Dienst,
 * Synchronisieren von Unternehmensdateien mit OneDrive
 * Zugreifen auf Unternehmens-Apps
 
-Dieser Artikel beschreibt, wie SEP Mobile-Benachrichtigungen zu Bedrohungen zu verstehen sind und wie diese gelöst werden können. 
+In diesem Artikel wird beschrieben, wie SEP Mobile-Benachrichtigungen zu Bedrohungen zu verstehen sind und wie diese gelöst werden können. 
 
 ## <a name="resolve-virus-or-security-threat"></a>Auflösen von Viren- oder Sicherheitsbedrohungen  
 
-1. Wenn Sie versuchen, auf Unternehmens-E-Mails oder -websites zuzugreifen, erhalten Sie eine Meldung wie im folgenden Screenshot gezeigt. Tippen Sie auf den Link **Portal für die Geräteverwaltung**, um die [Unternehmensportalwebsite](https://portal.manage.microsoft.com/devices) zu öffnen.
+1. Wenn Sie versuchen, auf Unternehmens-E-Mails oder -Websites zuzugreifen, erhalten Sie eine Meldung, die der im folgenden Screenshot gezeigten ähnelt. Tippen Sie auf den Link **Portal für die Geräteverwaltung**, um die [Unternehmensportalwebsite](https://portal.manage.microsoft.com/devices) zu öffnen.
 
     ![Beispielscreenshot einer Lookout for Work-Fehlermeldung mit einem Link zur Website des Unternehmensportals und blauer Schaltfläche „OK“.](./media/mtd-go-to-device-management-portal-android.png)  
 
@@ -49,7 +50,7 @@ Dieser Artikel beschreibt, wie SEP Mobile-Benachrichtigungen zu Bedrohungen zu v
 
 Wenn Sie eine App installieren, die als Bedrohung für Ihr Gerät angesehen wird, erhalten Sie eine Benachrichtigung in der SEP Mobile-App. Solange die betroffene App auf Ihrem Gerät verbleibt, können Sie nicht auf Unternehmensressourcen zugreifen.  
 
-Zum Auflösen der Warnung wählen Sie die App in der Liste der Bedrohungen in SEP Mobile aus. Folgen Sie dann den Anweisungen auf dem Bildschirm, um die App zu entfernen und zu deinstallieren.  
+Zum Auflösen der Warnung wählen Sie die App in der Liste der Bedrohungen in SEP Mobile aus. Führen Sie dann die angezeigten Anweisungen aus, um die App zu entfernen und zu deinstallieren.  
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  
 

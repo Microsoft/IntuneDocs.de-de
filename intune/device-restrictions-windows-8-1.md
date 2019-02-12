@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e6d42edaa5cdef9a149f3232e1b150e0847e542
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: aff862170ec6a4eca8db5b4e8b1b5eaa242203b0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180628"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837472"
 ---
 # <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Windows 8.1 und höher in Microsoft Intune
 

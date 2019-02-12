@@ -18,12 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
-ms.openlocfilehash: 946eafdbfa4e6a03abf68fe1e6b6b9bb8b34e5dd
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 70b76e84e1ad44136bdc9f3ab42c4314933e907b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031737"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840007"
 ---
 # <a name="your-android-devices-operating-system-version-isnt-yet-supported"></a>Die Betriebssystemversion Ihres Android-Geräts wird noch nicht unterstützt
 

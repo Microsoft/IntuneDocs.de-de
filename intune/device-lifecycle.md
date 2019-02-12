@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: c0d6dcc4bee31ce0197699a8106a25dbcd71af17
-ms.sourcegitcommit: 580eb4920d18ce09c9431d9d0dfee9d195459c0e
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 25df77266e0ce10329d94f7185a78c944b3771cb
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2018
-ms.locfileid: "52887133"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844614"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Übersicht über den MDM-Lebenszyklus von Microsoft Intune (MDM = Mobile Device Management; mobile Geräteverwaltung)
 

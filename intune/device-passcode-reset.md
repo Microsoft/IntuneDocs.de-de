@@ -14,12 +14,13 @@ ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2992dbfef4c51b8550e748bde453c85070b6910b
-ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: aecc509a0a98f277de0fc550317151d71b4ecb2d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418175"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839659"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Zurücksetzen oder Entfernen einer Gerätekennung in Intune
 

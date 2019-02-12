@@ -16,14 +16,15 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser; seodec18
-ms.openlocfilehash: d7edf041157ba0ffc5e195b08633f1f0407c0c88
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 83ff4d6b50a656c996d1a7987f10da7065cb40f9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031669"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844278"
 ---
-# <a name="you-need-to-update-your-android-devices-operating-system"></a>Sie müssen das Betriebssystem Ihres Android-Geräts aktualisieren
+# <a name="you-need-to-update-your-android-devices-operating-system"></a>Sie müssen das Betriebssystem Ihres Android-Geräts aktualisieren.
 
 Wenn Ihnen in einer Meldung angezeigt wird, dass Ihre Android-Sicherheitspatchebene zu niedrig ist, müssen Sie ein Update installieren, damit Ihr Gerät weiterhin sicher ist. Ein _Patch_ zur Softwarewartung wird veröffentlicht, um dafür zu sorgen, dass die Software reibungslos ausgeführt wird und auf dem neuesten Stand ist. Die Supportabteilung Ihres Unternehmens fordert Sie auf, dieses Patch zu installieren, um sicherzustellen, dass Unternehmensdaten auf Ihrem Gerät so gut wie möglich geschützt sind. Der Speicherort des Sicherheitspatches richtet sich nach dem Typ Ihres Android-Geräts.
 

@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: efe251a9a347a179e56d496d761b0ea7f28ab66f
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b709ec1cf900645fd53fe47329a3d0833e1cf87d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149599"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850423"
 ---
 # <a name="email-logs-to-your-company-support"></a>Senden von Protokollen per E-Mail an den Support Ihres Unternehmens
 

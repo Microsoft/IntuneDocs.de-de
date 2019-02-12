@@ -15,12 +15,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1e49e1673e0bebdcdafb8ad7792051c76b80f696
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 27f573ca028c64a5aae64bc6feef707d42ad7f06
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831456"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841605"
 ---
 # <a name="use-the-take-a-test-app-on-windows-10-devices-in-microsoft-intune"></a>Verwenden der „Take a Test“-App für Windows 10-Geräte in Microsoft Intune
 

@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e3d0b47bcb8ecbf3d8f76a83f0247f98c0c698f3
-ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1100be1b4df5bdd6c794cf6527a9ff9ad42fecd5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54006351"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849022"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>App-Konfigurationsrichtlinien für Microsoft Intune
 

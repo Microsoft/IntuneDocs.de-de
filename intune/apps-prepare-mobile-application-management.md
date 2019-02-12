@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 742b4892c4dbe9ee2dfa2bb03eebb2667803c6bf
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 74445c678455dc881f79fed20ed68be6f090fe78
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210753"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834771"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien
 

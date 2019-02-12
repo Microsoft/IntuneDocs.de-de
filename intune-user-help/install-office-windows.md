@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 443234bea9623ccbf5ac916d179a8fe202a392dd
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 430881acd1bf42ba1e44c643318c32091fead34d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147777"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848167"
 ---
 # <a name="installing-office-365-on-your-windows-10-device"></a>Installieren von Office 365 auf Ihrem Windows 10-Gerät
 

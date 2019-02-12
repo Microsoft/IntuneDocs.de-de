@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2e07fb54cd2377b0ac164a172e0760bb6e1efef0
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2d50e8d6035dcd700bcc03a32656480d129d6b46
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016729"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843067"
 ---
 # <a name="send-enrollment-errors-to-your-company-support"></a>Senden von Registrierungsfehlermeldungen an den Support Ihres Unternehmens
 

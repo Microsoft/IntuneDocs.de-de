@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4006f5784115a063eee80c817dc9b99c99dec827
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 59e33e75a38711e95631613e18ce1bd2fb459582
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149686"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833068"
 ---
 # <a name="update-your-windows-10-device"></a>Aktualisieren Ihres Windows 10-Geräts
 

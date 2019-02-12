@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 50f2304ba5fc174707a007b4c4d791cf2db1c656
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 32dfb275e96ecf1d8c60f115881d7ceb0593a3b2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147917"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837429"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>Was geschieht, wenn Sie die Registrierung Ihres Android-Geräts bei Intune aufheben?
 

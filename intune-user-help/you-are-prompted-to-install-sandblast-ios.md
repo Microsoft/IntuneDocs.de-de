@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: a52c72c82e54643f5a348a17d3f7b1e0cc8b9d71
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dd8934d3318459ecc7587a9c51bba9b6f744dbc7
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146323"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841690"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>Installieren von SandBlast Mobile Protect auf Ihrem iOS-Gerät
 

@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 06442f7ab943ed5f96990496b00060e67c122675
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5e72922659c943c5f7748d589bf75560a1565598
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146462"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847011"
 ---
 # <a name="install-mobile-threat-defense-on-your-android-device"></a>Installieren von Mobile Threat Defense auf Ihrem Android-Gerät
 

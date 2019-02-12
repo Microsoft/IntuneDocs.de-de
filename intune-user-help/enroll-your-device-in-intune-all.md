@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 93eeabf700a9783d24de67e7d07402719b20e8d3
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 522aaf2e6a105ec64342d54ad12a6cd8fc2b51ca
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31013414"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835451"
 ---
 # <a name="enroll-your-device-in-intune"></a>Registrieren Ihres Geräts bei Intune
 

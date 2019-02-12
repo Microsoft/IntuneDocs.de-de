@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 8c783d182ec1a2a7ad29e65ee9eea3ccc99191c5
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 428025e5e56450fd859f6bf2c9a990cbdca4f263
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204959"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835111"
 ---
 # <a name="windows-holographic-for-business-settings-to-manage-shared-devices-using-intune"></a>Windows Holographic for Business-Einstellungen zum Verwalten gemeinsam genutzter Geräte in Intune
 

@@ -14,12 +14,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 66402d9e2bc66ec96de88f64dd61c41e1ddb34e5
-ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5fbc8de520441bdbeac3910c82603ccd311cce8b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53553638"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835230"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installieren des Intune-Softwareclients auf Windows-PCs
 

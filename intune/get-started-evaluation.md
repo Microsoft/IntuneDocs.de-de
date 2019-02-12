@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: c8e15675beb97b396c9340e2ab3bfa86a3a43f76
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1df3676b4259ac84cf1ae5f0ce76ee300aa92f85
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831427"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839140"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Wie profitiert mein Unternehmen von Intune?
 Microsoft Intune ist ein cloudbasierter Enterprise Mobility-Verwaltungsdienst (Enterprise Mobility Management; EMM), der die Produktivität Ihrer Mitarbeiter fördert und gleichzeitig Ihre Unternehmensdaten schützt.

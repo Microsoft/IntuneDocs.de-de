@@ -16,12 +16,13 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: db6aed3d87b8a8df55c5c95e52eb3dd9ccc690a7
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 512fc924f71ba9a9fdd46ba8f5f5c087de83c2dd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54386962"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840415"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Android-Geräte
 

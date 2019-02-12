@@ -14,12 +14,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: cdc5f5fe2c94dee2349cab777c7671c2673f52b2
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: db89dd2cce679597533d2861a43a7a2fd82abd14
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54832321"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850572"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>macOS-Gerätefunktionseinstellungen in Intune
 

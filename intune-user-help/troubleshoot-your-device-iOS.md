@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: db65c33fe90497ccb511f18c8668a876c0d352fc
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 54ea19ab95bbb7056281dcc8e67a706415964a75
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146398"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833897"
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>Behandeln häufig auftretender Probleme mit dem iOS-Gerät
 

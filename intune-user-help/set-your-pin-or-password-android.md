@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7ea0adbf6c64a6ec32469368c89c462d6b4ab13b
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 95862c006baef40bfb219e5cff50d5622c8c00b4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146807"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844512"
 ---
 # <a name="set-your-pin-or-password"></a>Festlegen von PIN oder Kennwort
 

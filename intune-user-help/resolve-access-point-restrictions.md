@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: a6f5fb0ae4ab5f4f5cafbba6122c0b42e4591c4b
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: aefde274ec7ca925d45dd101ee0ebef1083f7f19
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745144"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851269"
 ---
 # <a name="resolve-access-point-restrictions"></a>Auflösen von Einschränkungen eines Zugriffspunkts
 

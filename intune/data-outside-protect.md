@@ -16,12 +16,13 @@ ms.reviewer: pchacon
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a6048ebd793b1325e3a3320e388135bc63cda2cf
-ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 04dc3e51228df449a6d89e73823d54da82cfcd37
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2019
-ms.locfileid: "54418158"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846875"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Verhindern von nicht autorisiertem Zugriff auf Unternehmensdaten mit Microsoft Intune
 

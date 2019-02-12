@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fdafb646f7b6c3d8910bf018071a72af49a70249
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e6f5da597ae0c765ea1328ee44d4c4e69d41b5ea
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147139"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847684"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>So schützen Sie Ihr Windows-Gerät mit Verschlüsselung
 

@@ -13,12 +13,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 64dc02be20ecc15574959d50f1cfc89542c484fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: daeda6918442b9a2fc8b344a73873258cd738a7b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181427"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836429"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Reduzieren von Helpdeskkosten mit Self-Service-Kennwortzurücksetzung
 

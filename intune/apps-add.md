@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c615dd2dda680cd106fd099d180f57ce2a5ebfef
-ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5cab9a2316357f8e8b32c76c9618ce0b60d403b2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55105220"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851618"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune 
 

@@ -16,12 +16,13 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3bb1bb97dd113ac4f7fe41e516ad93dc7b6d7f01
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 64ad33008dcff21ff2b033bec17ec1d4ce4a4e67
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188219"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845736"
 ---
 # <a name="develop-a-support-plan"></a>Entwickeln eines Supportplans
 

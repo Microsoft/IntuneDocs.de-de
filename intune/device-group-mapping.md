@@ -15,12 +15,13 @@ ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 0abc42de95f90b3690e91908f92bb53d11a802d8
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a7bb551784af2f61b61cfc57b968e32ab4db2f7e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031755"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848048"
 ---
 # <a name="categorize-devices-into-groups"></a>Kategorisieren von Geräten in Gruppen
 

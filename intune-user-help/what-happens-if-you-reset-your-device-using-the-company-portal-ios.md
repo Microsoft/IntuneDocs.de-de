@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 11c82861a7367b1552e9f505fc622e439bb86ad0
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9f328577ba2da97595c116efc51626176a14931a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149541"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840755"
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Was geschieht, wenn Sie Ihr iOS-Gerät mithilfe des Unternehmensportals zurücksetzen?
 

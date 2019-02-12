@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a59cab5f709897e064b315193b292cb46dc2f2e
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f335c8acf9e979366fe75d1a3da2318b7ec46400
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831546"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836692"
 ---
 # <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Übermittlungsoptimierungseinstellungen in Microsoft Intune für Windows 10 (und höher)
 

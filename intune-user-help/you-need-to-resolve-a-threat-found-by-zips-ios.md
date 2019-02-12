@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 8b77eeb57bb3887e28242ca845ec6e83d4e9a817
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6affa9f3577d71ba8e0794454987860f183446ad
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863072"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841156"
 ---
 # <a name="resolve-a-threat-found-by-zimperium-zips"></a>Auflösen einer von Zimperium zIPS erkannten Bedrohung
 

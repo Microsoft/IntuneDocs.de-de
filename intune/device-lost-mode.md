@@ -14,12 +14,13 @@ ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b708ed69817ca85dc6648242ceafbdfa25b91fc9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2188a5a67111b666def107d5f38282adc9780323
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180696"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835578"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Aktivieren des Modus für verlorene Geräte auf iOS-Geräten mit Intune
 

@@ -15,12 +15,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
-ms.openlocfilehash: e122f2c0c62fbde04a328b1423416be82dcfa1f9
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d7e271151afa90680cc3ab46db1b419ec4a32d42
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734220"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836267"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Übersicht über den App-Lebenszyklus in Microsoft Intune
 

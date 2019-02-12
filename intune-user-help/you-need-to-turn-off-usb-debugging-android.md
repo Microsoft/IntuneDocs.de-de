@@ -16,12 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser; seodec18
-ms.openlocfilehash: 97b0dfe7be4c6bfaa50dd8f2c2a88a5386cc19c4
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fc95e1223815a961b354b4977b6650472a3a3eb2
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031914"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847198"
 ---
 # <a name="you-need-to-turn-off-usb-debugging"></a>Sie müssen das USB-Debugging deaktivieren.
 

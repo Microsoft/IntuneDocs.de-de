@@ -18,12 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
-ms.openlocfilehash: e40ac2fd81375b84084dd229f4cb5a6ab3e9915f
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cc86a53dd790059297430fd6b08f1a699aafbc84
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032213"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850657"
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>Auf Ihrem Gerät ist ein erforderliches Zertifikat nicht vorhanden
 

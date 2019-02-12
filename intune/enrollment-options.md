@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
 search.appverid: MET150
 ms.custom: get-started
-ms.openlocfilehash: 99a880145fc51ce6eca39bd4470157c80fa097c2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cf3cc41bfb92c6e213121f0ace71eca276d6e8ab
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182867"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840056"
 ---
 # <a name="enrollment-options-for-devices-managed-by-intune"></a>Registrierungsoptionen für von Intune verwaltete Geräte
 

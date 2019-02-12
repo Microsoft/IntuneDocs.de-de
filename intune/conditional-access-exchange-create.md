@@ -15,12 +15,13 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8b4f35dba38dd1b69f770a3a10689ce87eaf3a27
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817057"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840398"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Erstellen einer Richtlinie für bedingten Zugriff auf eine lokale Installation von Exchange und auf das ältere Exchange Online Dedicated
 
@@ -80,9 +81,9 @@ Die systemeigene **E-Mail**-Anwendung unter Windows 8.1 und höher (bei Registri
 
 1. Sobald Sie erfolgreich angemeldet sind, wird das **Azure-Dashboard** angezeigt.
 
-1. Klicken Sie im Menü links auf  **Alle Dienste** , und geben Sie in das Filtertextfeld  **Intune**  ein.
+1. Klicken Sie im Menü links auf **Alle Dienste**, und geben Sie in das Filtertextfeld **Intune** ein.
 
-1. Wählen Sie  **Intune** aus. Das **Intune-Dashboard** wird angezeigt.
+1. Wählen Sie **Intune** aus. Das **Intune-Dashboard** wird angezeigt.
 
 1. Klicken Sie auf **On-premises access** (Lokaler Zugriff). Der Bereich **On-premises access** (Lokaler Zugriff) enthält den Status der Richtlinie für bedingten Zugriff und die Geräte, die davon betroffen sind.
 

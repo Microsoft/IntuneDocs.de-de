@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3e2b1b0d17d4d13ed377e940f24f217a4bdf3bfd
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 19c9df658183757955bad5d02f121fea17be6f18
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738085"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846178"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Verweis für MAM-Entitäten (Verwaltung mobiler Apps)
 

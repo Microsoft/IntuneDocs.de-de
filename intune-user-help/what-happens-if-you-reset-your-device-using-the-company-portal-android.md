@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f340df3463bc94afbe83efb8873f3f5a31326c8e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a7f07235bfd5177e95eecbe1853240ee31286e24
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147334"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846960"
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>Was geschieht, wenn Sie Ihr Android-Gerät mit dem Unternehmensportal zurücksetzen?
 

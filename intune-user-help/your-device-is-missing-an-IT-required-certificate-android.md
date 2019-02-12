@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 19128e9de06239fb82266654fe038b4be9ce7d41
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e0ef2bc644b537787bd5275e95a4ecc72c899393
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149780"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835876"
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Auf Ihrem Android-Gerät fehlt ein Zertifikat, das von der Supportabteilung Ihres Unternehmens verlangt wird.
 

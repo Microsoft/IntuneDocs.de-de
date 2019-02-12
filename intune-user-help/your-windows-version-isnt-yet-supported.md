@@ -18,12 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
-ms.openlocfilehash: 26fe26bbbde30a2cdae80b69b8ad62cbf91f0f1d
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ed8ea635dcc071ad94e7b323285674747e4c28c8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53031761"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837282"
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>Die Betriebssystemversion Ihres Windows-Geräts wird noch nicht unterstützt.
 

@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: bb565cdaf200e8bf7d3836fd921b0b5893734955
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ac0a8b076fe6f21621826dec32f7aaa72eba88c7
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150920"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837015"
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>Ihr Kennwort entspricht nicht den Anforderungen des Supports Ihres Unternehmens
 

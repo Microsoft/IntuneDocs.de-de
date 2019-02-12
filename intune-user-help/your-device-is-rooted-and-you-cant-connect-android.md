@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c4cce70abac079ab1761994ba91040c16375e013
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 872fda55e47d517fdc67584c0621975dd065af11
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149754"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840561"
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>Von Ihrem Android-Gerät wurden die Nutzungsbeschränkungen entfernt, daher können Sie keine Verbindung herstellen
 

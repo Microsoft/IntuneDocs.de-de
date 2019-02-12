@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 202a7cc118a4eb8a2e15c1b0de32c27450d064db
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8643d1b76ede1bb0a2c0fced5abb6923e99f42e5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149428"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846739"
 ---
 # <a name="your-macos-devices-operating-system-version-isnt-yet-supported"></a>Die Betriebssystemversion Ihres macOS-Geräts wird noch nicht unterstützt.
 

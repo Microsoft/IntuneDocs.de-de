@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: ed2069b3b5627dd844fadc37b898aa2688f301bc
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: da3a864e492506845432b2106e0ecce4fb2e331a
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260231"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838113"
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>Machen Sie Ihr Gerät mit dem richtigen Kennwort sicherer
 

@@ -15,12 +15,13 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a7250471e698d32a305755147943311d2150f0b2
-ms.sourcegitcommit: a27a9c4cae47be50807aa3c890f0d5c0c023f04a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40711576af9b7799211971418a0b2529d12468cd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "52618185"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836386"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Verwenden eines benutzerdefinierten Geräteprofils zum Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel – Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -215,7 +216,7 @@ Sie können die XML-Datei auch mit folgenden Schritten aus einer vorhandenen WLA
 2. Durchsuchen Sie die XML-Dateien, um die Datei mit dem richtigen Namen zu finden.
 3. Nachdem Sie die richtige XML-Datei gefunden haben, kopieren Sie den XML-Code in das Feld **Daten** auf der Seite mit den OMA-URI-Einstellungen.
 
-## <a name="best-practices"></a>Bewährte Methoden
+## <a name="best-practices"></a>Empfohlene Methoden
 - Bevor Sie ein WLAN-Profil mit PSK bereitstellen, vergewissern Sie sich, dass das Gerät eine direkte Verbindung mit dem Endpunkt herstellen kann.
 
 - Rechnen Sie beim Rotieren von Schlüsseln (Kennwörtern oder Passphrasen) mit Ausfallzeiten, und planen Sie Ihre Bereitstellungen entsprechend. Erwägen Sie die Push-Übertragung von neuen WLAN-Profilen in der arbeitsfreien Zeit. Außerdem sollten Sie die Benutzer warnen, dass die Konnektivität beeinträchtigt sein kann.

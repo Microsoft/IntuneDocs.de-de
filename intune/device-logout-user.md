@@ -15,12 +15,13 @@ ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 24b59e5b60f2a8dce0522c689463ac095617052c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 68c22c8fb966fe3ad4e821dd7e61510e0a519a82
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185660"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835707"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Abmelden des aktuellen Benutzers eines mit Intune verwalteten iOS-Geräts
 

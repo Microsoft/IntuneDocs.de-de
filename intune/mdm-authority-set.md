@@ -16,12 +16,13 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 889e298d3d04429c1b9be2ee70519d68063953ab
-ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a783b784f63453ba706e69bbb5078b0c3cda37d8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54006300"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834516"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Festlegen der Autorität für die Verwaltung mobiler Geräte
 

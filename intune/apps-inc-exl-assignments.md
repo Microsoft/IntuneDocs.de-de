@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fee473cd6cb6fa7e8a092ebd70192f2b7f8a8b84
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 67a6164f3d766d32543dfc13ae6b5090e5a7a061
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737932"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845311"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Einschließen und Ausschließen von App-Zuweisungen in Microsoft Intune
 

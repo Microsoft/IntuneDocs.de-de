@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cd605542a0711e27f87d68af51662fd318f3250e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b2d0bde56c6622648d47fe47458bdac62d7843ca
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184878"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838460"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Erstellen von VPN-Profilen in Intune
 
@@ -43,20 +44,20 @@ Sie können VPN-Profile mit den folgenden Verbindungstypen erstellen:
 
 |Verbindungstyp|Android<br>Android-Arbeitsprofile|iOS|macOS|Windows Phone 8.1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Automatisch|Nein|Nein|Nein|Nein|Nein|Ja |
-|Check Point Capsule VPN|Ja |Ja |Ja |Ja |Ja |Ja |
-|Cisco AnyConnect|Ja |Ja |Ja |Nein|Nein|Nein|
-|SonicWall Mobile Connect|Ja |Ja |Ja |Ja |Ja |Ja |
-|F5 Edge Client|Ja |Ja |Ja |Ja |Ja |Ja |
-|Palo Alto Networks GlobalProtect|Nein|Ja |Nein|Nein|Nein|Ja |
-|Pulse Secure|Ja |Ja |Ja |Ja |Ja |Ja |
-|Cisco (IPsec)|Nein|Ja |Nein|Nein|Nein|Nein|
-|Citrix|Ja (nur Android)|Ja |Nein|Nein|Nein|Ja |
-|IKEv2|Nein|Nein|Nein|Nein|Nein|Ja |
-|L2TP|Nein|Nein|Nein|Nein|Nein|Ja |
-|PPTP|Nein|Nein|Nein|Nein|Nein|Ja |
-|Zscaler|Nein|Ja |Nein|Nein|Nein|Nein|
-|Benutzerdefiniertes VPN|Nein|Ja |Ja |Nein|Nein|Nein|
+|Automatisch|Nein|Nein|Nein|Nein|Nein|Ja|
+|Check Point Capsule VPN|Ja|Ja|Ja|Ja|Ja|Ja|
+|Cisco AnyConnect|Ja|Ja|Ja|Nein|Nein|Nein|
+|SonicWall Mobile Connect|Ja|Ja|Ja|Ja|Ja|Ja|
+|F5 Edge Client|Ja|Ja|Ja|Ja|Ja|Ja|
+|Palo Alto Networks GlobalProtect|Nein|Ja|Nein|Nein|Nein|Ja|
+|Pulse Secure|Ja|Ja|Ja|Ja|Ja|Ja|
+|Cisco (IPsec)|Nein|Ja|Nein|Nein|Nein|Nein|
+|Citrix|Ja (nur Android)|Ja|Nein|Nein|Nein|Ja|
+|IKEv2|Nein|Nein|Nein|Nein|Nein|Ja|
+|L2TP|Nein|Nein|Nein|Nein|Nein|Ja|
+|PPTP|Nein|Nein|Nein|Nein|Nein|Ja|
+|Zscaler|Nein|Ja|Nein|Nein|Nein|Nein|
+|Benutzerdefiniertes VPN|Nein|Ja|Ja|Nein|Nein|Nein|
 
 > [!IMPORTANT]
 > Vor der Verwendung von VPN-Profilen, die auf einem Gerät zugewiesen werden, müssen Sie die entsprechende VPN-App für das Profil installieren. Die Informationen im Artikel [Was ist die App-Verwaltung in Microsoft Intune?](app-management.md) unterstützen Sie beim Zuweisen der App mit Intune.  

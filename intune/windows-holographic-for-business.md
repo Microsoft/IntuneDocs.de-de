@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: df91908f3d3be7be23e3cecfa83e2d92b656b91e
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0ec71fa69c88b695880377de1bbe8beaef11706c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831597"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835468"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Verwalten und Verwenden verschiedener Geräteverwaltungsfeatures für Windows Holographic- und HoloLens-Geräten mit Intune
 

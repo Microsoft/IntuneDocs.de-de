@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7c0d2d4d787f29f873302765e3b6ff0c58184db7
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 61419707b5b4f7c57f96b34708949a3764d5f19c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149452"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837918"
 ---
 # <a name="your-macos-device-doesnt-have-the-required-minimum-operating-system-version"></a>Ihr macOS-Gerät verfügt nicht über die mindestens erforderliche Betriebssystemversion.
 

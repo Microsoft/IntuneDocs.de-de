@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
-ms.openlocfilehash: a6329a44f1ccfa55025ad558fe2f277a41293538
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b9fdd1891f8a0e893d61ac3a0b40dac5a01f602c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53266901"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851337"
 ---
 # <a name="reference-for-current-user-entity"></a>Verweis für die Entität „Aktueller Benutzer“
 
@@ -35,9 +36,9 @@ Die Entität **Aktueller Benutzer** listet alle Benutzer von Azure Active Direct
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
 | UserKey |Eindeutiger Bezeichner des Benutzers im Data Warehouse – Ersatzschlüssel |123 |
-| UserId |Eindeutiger Bezeichner des Benutzers – ähnlich wie UserKey, ist jedoch ein natürlicher Schlüssel |b66bc706-ffff-7437-0340-032819502773 |
+| UserId |Eindeutiger Bezeichner des Benutzers – Ähnlich wie UserKey, ist jedoch ein natürlicher Schlüssel |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |E-Mail-Adresse des Benutzers |John@constoso.com |
-| UPN | Der Prinzipalname des Benutzers. | John@constoso.com |
+| UPN | Benutzerprinzipalname des Benutzers | John@constoso.com |
 | DisplayName |Anzeigename des Benutzers |John |
 | IntuneLicensed |Gibt an, ob dieser Benutzer über Intune lizenziert ist oder nicht. |Wahr/falsch |
 | StartDateInclusiveUTC |Datum und Uhrzeit in UTC, als der Benutzer im Data Warehouse erstellt wurde |23.11.2016 12:00:00 Uhr |

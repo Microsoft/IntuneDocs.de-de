@@ -15,12 +15,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5962ff96b9c92bcf69a75221f1b7c5a5ab2f2634
-ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8a7ef9462d5d46a88c9590bb1f643e57b5bd76af
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53995979"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844529"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Erstellen einer Mobile Threat Defense-Gerätekompatibilitätsrichtlinie (MTD) mit Intune
 

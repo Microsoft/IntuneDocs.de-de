@@ -16,12 +16,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 22951d6e129b50d37fb16d865f0b9ad9aada012f
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: ec625b2ef7f968f8098a8288832c62d3510c4906
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032281"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837650"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrieren von iOS-Geräten in Intune
 

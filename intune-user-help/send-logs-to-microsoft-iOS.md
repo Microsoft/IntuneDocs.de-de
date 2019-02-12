@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 334f2d14a2cf4fb79310b1a2b4e1026d42754e35
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9da053d0358d9b85426d75de51aeaea8beb866c1
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148606"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843169"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-ios-devices"></a>Senden von Protokollen an Unternehmensportal-Entwickler für iOS-Geräte
 

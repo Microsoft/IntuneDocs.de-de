@@ -16,12 +16,13 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: b6ebc3db81b969d83bc22034057ab4217e90931f
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dbb6a8f159aebe837fabf671a84dd96223298227
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297280"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55836352"
 ---
 # <a name="what-are-app-protection-policies"></a>Was sind App-Schutzrichtlinien?
 

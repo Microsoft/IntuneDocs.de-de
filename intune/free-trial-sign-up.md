@@ -16,12 +16,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 59e9af2449f384fce22acaef9a696f2944eabaa1
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b0ed363acca7fc0021569009b1f672a06101e29f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067430"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834176"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Schnellstart: Testen Sie Microsoft Intune kostenlos 
 

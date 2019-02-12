@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4109c437ae5a096c78c19aef489218cf7286eb01
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c7178ae7231586e781766adb1fea45b375a76920
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032332"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842047"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Verwenden von APIs zum Hinzufügen von Drittanbieter-Zertifizierungsstellen für SCEP in Intune
 

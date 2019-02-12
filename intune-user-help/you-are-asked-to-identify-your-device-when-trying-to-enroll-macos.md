@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1cf4b5eb051775a289e727ec6bc03c5af8734b6f
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4ef70964523b165c748fe540c2dfcf3504d54c21
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147247"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839055"
 ---
 # <a name="you-need-to-identify-your-device-when-youre-trying-to-enroll"></a>Identifizierung Ihres Geräts beim Versuch der Registrierung
 

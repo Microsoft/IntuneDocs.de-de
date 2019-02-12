@@ -14,12 +14,13 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1866d658503cb2dcdf482a050d7bbd73a914858b
-ms.sourcegitcommit: 398b8a0d98e928b3406f59ab3d061554643ef60b
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e24043bb1c41d68de04669ff27cc659624dc56c1
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "54400023"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846824"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Entfernen von Geräten durch Zurücksetzen, Abkoppeln oder manuelles Aufheben der Registrierung des Geräts
 

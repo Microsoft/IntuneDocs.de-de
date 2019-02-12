@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b2ec10ec1174e5e689802d2c4f17a21de8312a15
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0e8af65738e51d7c1a5d0b1a0779c210b09bc044
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305963"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835434"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden
 

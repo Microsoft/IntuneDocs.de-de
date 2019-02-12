@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 066b412fe1f52e5e7497512d744a35cd5c77f08a
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 08eb5c3d2f306fef6f867fbe9f3976cb7a5aea80
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147588"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55837848"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Installieren der Unternehmensportal-App für Android
 

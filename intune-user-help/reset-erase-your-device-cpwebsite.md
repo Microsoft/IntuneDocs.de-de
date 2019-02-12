@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 00b5c1ededa0b5dbc3df5786e583738fb2c2008e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6880cd679aa88896ff78a350e3b43f4568052918
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147733"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833955"
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Zurücksetzen Ihres Geräts über die Unternehmensportalwebsite
 

@@ -15,12 +15,13 @@ ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cd43bfda69b42fb81a72d520d169fe1785161f65
-ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 65391ca620892dcd3b95719454dabc30eb35cb6f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53267006"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839379"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Problembehandlung bei der App-Installation
 

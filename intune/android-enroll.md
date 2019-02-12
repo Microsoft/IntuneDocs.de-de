@@ -16,12 +16,13 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 3d86afec4e501533ab0048e866969a5bf73c2c57
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 866db22b79f2ca9255f9eccdfdba28dc353836ed
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387044"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846756"
 ---
 # <a name="enroll-android-devices"></a>Registrieren von Android-Geräten
 

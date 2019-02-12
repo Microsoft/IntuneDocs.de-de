@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5c57db351aae613d0213e4ef439084ad9577a3fc
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 39f19d347cb799a47d07ade4f8458fade68b1b99
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203228"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834652"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Installieren und freigeben von Apps auf Ihrem Gerät
 Installieren Sie über die Unternehmensportal-App für Windows Apps auf Ihrem Gerät.
@@ -65,7 +66,7 @@ Nachdem Sie den Link mit einer Person geteilt haben, erhält der Empfänger eine
 
 ## <a name="available-apps"></a>Verfügbare Apps  
 
-Ihre Organisation wählt die entsprechenden Apps aus, die für die Arbeit, Schule oder Universität nützlich sind. Diese Apps finden Sie als einzige im Unternehmensportal.  
+Ihre Organisation wählt die entsprechenden Apps aus, die für die Arbeit, Schule oder Universität nützlich sind. Sie finden nur diese Apps im Unternehmensportal.  
 
 Sie haben auch abhängig von Ihrem Gerätetyp Zugriff auf bestimmte Apps. Wenn Sie beispielsweise die Unternehmensportal-App für Windows verwenden, haben Sie Zugriff auf Windows-Apps, nicht aber auf iOS-Apps.  
 

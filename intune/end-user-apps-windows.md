@@ -15,12 +15,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1fa409619d5c0fc0c0fc32573f9a7346350191e8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 789477f8f29ea46ab8dd45944fee7d766d63940f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188720"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849550"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Wie Ihre Windows-Benutzer Apps erhalten
 
