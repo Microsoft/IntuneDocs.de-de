@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6df3f16940a9478756cc1f268ad98b7c9d3f044e
-ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3b21a2efc67773f1762e422af5fe8e576b1a97db
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50001557"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843458"
 ---
 # <a name="using-your-android-device-with-intune-company-portal"></a>Verwenden Ihres Android-Geräts mit dem Intune-Unternehmensportal
 
