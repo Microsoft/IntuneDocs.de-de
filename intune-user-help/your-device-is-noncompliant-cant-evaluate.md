@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8f4cec690431ded00e7645e7ca76bd156453fb62
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9aec5cedb4874a9eb96ce5694a49fb475239ba86
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148200"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849984"
 ---
 # <a name="your-device-is-noncompliant"></a>Ihr Gerät ist nicht richtlinienkonform
 

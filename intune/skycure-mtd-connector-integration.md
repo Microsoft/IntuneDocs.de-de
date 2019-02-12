@@ -15,12 +15,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4b519c30f432a6d8584c2bd5bca94ead95a862b1
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c4dd164e266f0038c427b6b0a51fe8a92b4b44e8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817346"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844461"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Einrichten der Symantec Endpoint Protection Mobile-Integration in Intune
 

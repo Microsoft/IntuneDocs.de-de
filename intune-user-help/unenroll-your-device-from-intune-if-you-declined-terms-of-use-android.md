@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 24aa876b7100f0f802ab3723cedf92a32bc7e9d7
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dbf35b77c843b4dc084916b2c283b6c66d5f066d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43149706"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849232"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>Entfernen Ihres Geräts aus der Verwaltung bei Ablehnung der Nutzungsbedingungen
 

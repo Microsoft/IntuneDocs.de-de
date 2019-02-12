@@ -15,12 +15,13 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 576e690e6f77480756e1406e6c0bea8696c422ea
-ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 89a03bde6ecdfb031f7beaad407cd713ebc6f03e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380448"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848890"
 ---
 # <a name="set-up-intune"></a>Einrichten von Intune
 

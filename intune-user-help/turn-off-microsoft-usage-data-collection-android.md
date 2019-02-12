@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d08dba92060fdf1dd72e34201dd88674d26f42ef
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e9354c6019821a3d320c9bc50589ce420e969581
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147283"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847453"
 ---
 # <a name="turn-off-microsoft-usage-data-collection"></a>Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft
 

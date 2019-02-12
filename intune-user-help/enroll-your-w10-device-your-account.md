@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bc9a351b24e35359f628a9af9ac906ed0c41a6ff
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 06d28cb18ccb800641fd5e4f95e3f5d07e3ca02b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017324"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847055"
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Registrieren eines Windows 10-Geräts bei Intune
 

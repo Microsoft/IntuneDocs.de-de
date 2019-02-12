@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: ce4689aaecd40d7d44f0064b1e951823fa0bb2c2
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b45f8d5b548bd88715381f25ba0b5c3e9155b344
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738000"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841792"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune-Data Warehouse-Datenmodell
 
@@ -56,7 +57,7 @@ Die Entitäten und Beziehungen verwenden ein Sternschemamodell. Ein Sternschema 
 
 Ein Sternschema-Modell bietet hohe für Flexibilität und Analysefunktionen, damit Sie die Berichte erstellen können, die zum Verständnis der Entwicklung Ihrer mobilen Umgebung benötigen.
 
-## <a name="time-daily-snapshots"></a>Uhrzeit: Tägliche Momentaufnahmen
+## <a name="time-daily-snapshots"></a>Zeit: Tägliche Momentaufnahmen
 
 Das Warehouse ist Ihren Intune-Daten nachgelagert. Intune erstellt täglich um Mitternacht UTC eine Momentaufnahme und speichert die Momentaufnahme im Warehouse. Die Dauer der Aufbewahrung von Momentaufnahmen unterscheidet sich von Faktentabelle zu Faktentabelle. Einige werden sieben Tage, andere 30 Tage und einige auch länger gespeichert.
 

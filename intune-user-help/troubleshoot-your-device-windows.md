@@ -16,12 +16,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: a062abcbb0a13907baa81889b1b93d112445b84c
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 00d927b396619e237986502e60efdc0f9d11bc0b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260265"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845498"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Behandeln häufig auftretender Probleme mit Ihrem Windows-Gerät
 

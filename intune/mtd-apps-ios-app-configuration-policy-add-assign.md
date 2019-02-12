@@ -15,12 +15,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d08a7332ba96f552b488ad3f5d00004d0445d7ec
-ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 44faac275eb19c9c73c935a6c7d6c950b9ac653e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/03/2019
-ms.locfileid: "53995996"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55847130"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Hinzufügen und Zuweisen von Mobile Threat Defense-Apps (MTD) mit Intune
 

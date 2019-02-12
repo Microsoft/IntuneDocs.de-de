@@ -15,12 +15,13 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a2a7d7ab1603300119f28596e81ae49cbbcbf550
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 24f763cf3231bd76a01870d889cb7637f2f36532
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54832305"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849674"
 ---
 # <a name="windows-10-and-newer-device-settings-to-upgrade-editions-or-enable-s-mode-in-intune"></a>Windows 10-Geräteeinstellungen (und höher) zum Upgrade von Editionen oder Aktivieren des S-Modus in Intune
 

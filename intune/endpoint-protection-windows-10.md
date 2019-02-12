@@ -15,12 +15,13 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: d9dfa25c2528ea2f929c3db6714bc68fee013a7b
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5f87c2fa5fcb7e76fa8d398018e87ec0b15c05e9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072574"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843390"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Einstellungen für Windows 10 (und höher), um Geräte zu schützen, die Intune verwenden.
 

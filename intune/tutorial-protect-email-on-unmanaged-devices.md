@@ -15,12 +15,13 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bcf66037995c6b5cb2b0c5b3f090d3af2e42cd6a
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8339f91468abca548b3923df4d4380aabb88c5a8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53262883"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848711"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf nicht verwalteten Geräten
 

@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: cf35d2ab2a1e08591669ef21ed3c24a00076a1ae
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d5c4f31ca9137609641c2cd09ca0dedd70c21c1c
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204946"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850147"
 ---
 # <a name="control-access-accounts-and-power-features-on-shared-pc-or-multi-user-devices-using-intune"></a>Steuern von Zugriff, Konten und Energiefunktionen auf gemeinsam genutzten PCs oder von mehreren Benutzern verwendeten Geräten mit Intune
 

@@ -16,12 +16,13 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4aa5cb24bc153839c6aac193f074128dd46a2e5f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 40278904cd3af75451d0323a7665e88f6b526928
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185405"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844255"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Zuweisen von Office 365 zu macOS-Geräten mit Microsoft Intune
 
@@ -48,17 +49,17 @@ Fügen Sie Office 365 aus dem Bereich **Apps** hinzu.
 7. Klicken Sie auf **Informationen zur App Suite**, um Informationen zur App-Suite abzurufen.  
     Diese Informationen helfen Ihnen dabei, die App-Suite in Intune zu identifizieren. Außerdem können Benutzer sie im Unternehmensportal leichter finden.
 8. Geben Sie die folgenden Informationen ein:
-    - **Name der Suite**: Geben Sie den Namen der App-Suite ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle Suitenamen eindeutig sind. Wenn ein Sammlungsname zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
-    - **Beschreibung der Suite**: Geben Sie eine Beschreibung für die App-Suite ein.
+    - **Name der Suite**: Geben Sie den Namen der App-Suite so ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle Suitenamen eindeutig sind. Wenn ein Sammlungsname zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
+    - **Beschreibung der Suite**: Geben Sie eine Beschreibung der App-Suite ein.
     - **Herausgeber**: Als Herausgeber wird Microsoft angezeigt.
-    - **Kategorie:** Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Diese Einstellung erleichtert den Benutzern die Suche nach der App-Suite im Unternehmensportal.
-    - **Display this as a featured app in the Company Portal** (Diese App als ausgewählte App im Unternehmensportal anzeigen): Diese Einstellung zeigt die App-Suite auf der Hauptseite des Unternehmensportals hervorgehoben an, wenn Benutzer nach Apps suchen.
+    - **Kategorie**: Wählen Sie eine der integrierten oder von Ihnen erstellten App-Kategorien aus. Diese Einstellung erleichtert den Benutzern die Suche nach der App-Suite im Unternehmensportal.
+    - **Diese App als ausgewählte App im Unternehmensportal anzeigen**: Wählen Sie diese Option, um die App-Suite auf der Hauptseite des Unternehmensportals hervorgehoben anzuzeigen, wenn die Benutzer nach Apps suchen.
     - **Informations-URL**: Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
     - **URL zu den Datenschutzbestimmungen**: Geben Sie optional eine URL zu einer Website ein, die Datenschutzinformationen für diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
     - **Entwickler**: Als Entwickler wird Microsoft angezeigt.
     - **Besitzer**: Als Besitzer wird Microsoft angezeigt.
-    - **Hinweise**: Geben Sie optional Hinweise zu dieser App ein.
-    - **Logo**: Das Office 365-Logo wird gemeinsam mit der App angezeigt, wenn der Benutzer das Unternehmensportal durchsucht.
+    - **Anmerkungen**: Geben Sie optional Hinweise zu dieser App ein.
+    - **Logo**: Das Office 365-Logo wird gemeinsam mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
 9. Wählen Sie **OK** aus.
 10. Klicken Sie anschließend im Bereich **App hinzufügen** auf **Hinzufügen**.  
     Die Suite wird in der Liste der Apps als einzelnen Eintrag angezeigt.

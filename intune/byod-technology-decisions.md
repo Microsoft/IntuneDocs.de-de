@@ -13,12 +13,13 @@ ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 21257169e069a139ac94dcdecbe6074ab0778aeb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 776b1c6fcba6487a45133f486bf68bab312b86c9
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179557"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848133"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Technologieentscheidungen zur Ermöglichung von BYOD mit Microsoft Enterprise Mobility + Security (EMS)
 

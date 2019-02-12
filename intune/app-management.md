@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: f156accf5b51e7fff51db738c70b0b0840d7e365
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0f2c5da7772ff137e44fead66f00fe34004bb1f4
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642828"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850902"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Was ist die Microsoft Intune App-Verwaltung?
 
@@ -41,20 +42,20 @@ Intune bietet eine Reihe von Funktionen, die die Installation der erforderlichen
 
 |  | Android | iOS | macOS | Windows 10 | Windows Phone 8.1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
-| Hinzufügen und Zuweisen von Apps für Geräte und Benutzer | Ja  | Ja  | Ja  | Ja  | Ja  |
-| Zuweisen von Apps für Geräte, die nicht bei Intune registriert sind | Ja  | Ja  | Nein | Nein | Nein |
-| Steuern des Startverhaltens von Apps mithilfe von App-Konfigurationsrichtlinien | Nein | Ja  | Nein | Nein | Nein |
-| Verwenden von Richtlinien für die Bereitstellung mobiler Apps zum Verlängern abgelaufener Apps | Nein | Ja  | Nein | Nein | Nein |
-| Schützen von Unternehmensdaten in Apps mit App-Schutzrichtlinien | Ja  | Ja  | Nein | Nein | Nein |
-| Entfernen ausschließlich von Unternehmensdaten aus einer installierten App (Selektive App-Zurücksetzung) | Ja  | Ja  | Nein | Ja  | Ja  |
-| Überwachen von App-Zuweisungen | Ja  | Ja  | Ja  | Ja  | Ja  |
-| Zuweisen und Nachverfolgen von per Volumenlizenz in einem App-Store erworbenen Apps | Nein | Nein | Nein | Ja  | Nein |
-| Obligatorische Installation von Apps auf Geräten (erforderlich)2 | Ja  | Ja  | Ja  | Ja  | Ja  |
-| Optionale Installation auf Geräten über das Unternehmensportal (verfügbare Installation) | Ja  | Ja  | Ja  | Ja  | Ja  |
-| Installieren von Verknüpfungen zu Apps im Internet (Weblink) | Ja  | Ja  | Ja  | Ja  | Ja  |
-| Interne (branchenspezifische) Apps | Ja  | Ja  | Ja  | Ja  | Nein |
-| Apps aus einem Store | Ja  | Ja  | Nein | Ja  | Ja  |
-| Aktualisierung von Apps | Ja  | Ja  | Nein | Ja  | Ja  |
+| Hinzufügen und Zuweisen von Apps für Geräte und Benutzer | Ja | Ja | Ja | Ja | Ja |
+| Zuweisen von Apps für Geräte, die nicht bei Intune registriert sind | Ja | Ja | Nein | Nein | Nein |
+| Steuern des Startverhaltens von Apps mithilfe von App-Konfigurationsrichtlinien | Nein | Ja | Nein | Nein | Nein |
+| Verwenden von Richtlinien für die Bereitstellung mobiler Apps zum Verlängern abgelaufener Apps | Nein | Ja | Nein | Nein | Nein |
+| Schützen von Unternehmensdaten in Apps mit App-Schutzrichtlinien | Ja | Ja | Nein | Nein | Nein |
+| Entfernen ausschließlich von Unternehmensdaten aus einer installierten App (Selektive App-Zurücksetzung) | Ja | Ja | Nein | Ja | Ja |
+| Überwachen von App-Zuweisungen | Ja | Ja | Ja | Ja | Ja |
+| Zuweisen und Nachverfolgen von per Volumenlizenz in einem App-Store erworbenen Apps | Nein | Nein | Nein | Ja | Nein |
+| Obligatorische Installation von Apps auf Geräten (erforderlich)2 | Ja | Ja | Ja | Ja | Ja |
+| Optionale Installation auf Geräten über das Unternehmensportal (verfügbare Installation) | Ja | Ja | Ja | Ja | Ja |
+| Installieren von Verknüpfungen zu Apps im Internet (Weblink) | Ja | Ja | Ja | Ja | Ja |
+| Interne (branchenspezifische) Apps | Ja | Ja | Ja | Ja | Nein |
+| Apps aus einem Store | Ja | Ja | Nein | Ja | Ja |
+| Aktualisierung von Apps | Ja | Ja | Nein | Ja | Ja |
 
 <sup>1</sup> Erwägen Sie die Verwendung [Windows Information Protection](windows-information-protection-configure.md) für den Schutz von Apps auf Geräten mit Windows 10.
 

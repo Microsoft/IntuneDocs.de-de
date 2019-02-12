@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 02bf1672db70bce57e527a0992f6a979b2e099e7
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 99c2824e8f229ad6f4d68516bc892ad3818ac5c1
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429575"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843016"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Verwenden des Data Warehouse von Microsoft Intune
 

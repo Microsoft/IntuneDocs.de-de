@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fafc9381f59ceb4e78e3e76d24694cd0acdcf8d0
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 985c3b2cf3de712e5441f72c3a9f52da6e482fcd
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112373"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842421"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Bekannte Probleme in Microsoft Intune
 
