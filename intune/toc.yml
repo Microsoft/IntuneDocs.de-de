@@ -425,6 +425,8 @@ items:
       items:
       - name: Einstellungen für Windows Update for Business
         href: windows-update-for-business-configure.md
+      - name: Konformitätsberichte zu Windows Update
+        href: windows-update-compliance-reports.md
       - name: iOS-Updaterichtlinien
         href: software-updates-ios.md
   - name: Verwalten von Apps
@@ -737,6 +739,8 @@ items:
           href: shared-user-device-settings-windows.md
         - name: Benutzerdefiniert
           href: custom-settings-windows-10.md
+      - name: Windows Update-Einstellungen
+        href: windows-update-settings.md
     - name: Windows Holographic for Business
       items:
       - name: Geräteeinschränkungen
@@ -953,9 +957,9 @@ items:
       href: data-outside-protect.md
     - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
       href: data-leak-prevention.md
-ms.openlocfilehash: 1c293290d9d2e2dc2ba44278f77edf9976cb2a7c
-ms.sourcegitcommit: 01d6832978cb7ca23049000950696b300a87abd4
+ms.openlocfilehash: ace0bec62318d846cdcc37330abb63b2a89fef14
+ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55761006"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "55986908"
