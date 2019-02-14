@@ -15,12 +15,12 @@ ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 8c4e5e18c0b995ad84340cdbc07a8a11b09e4f3a
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 811bf4ba6ed611dab0e42625a8aa3dc2b18e007c
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112781"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290705"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Grundlegendes zum Verständnis von Meldungen in der Unternehmensportal-App
 
@@ -108,7 +108,7 @@ Wenn Sie die Unternehmensportal-App nicht zur Liste **Zulässige Apps** oder **A
 
 ### <a name="what-it-means"></a>Bedeutung
 
-Fügen Sie dem Unternehmensportal die Liste der **zulässigen Apps** und **ausgenommenen Apps** hinzu, die in der Windows Information Protection-App-Schutzrichtlinie aufgeführt sind. Weitere Informationen finden Sie unter [Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune](windows-information-protection-policy-create.md).
+Fügen Sie das Unternehmensportal zur Liste der **zulässigen Apps** oder **ausgenommenen Apps** hinzu, die in der Windows Information Protection-App-Schutzrichtlinie aufgeführt sind. Weitere Informationen finden Sie unter [Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune](windows-information-protection-policy-create.md).
 
 ### <a name="see-also"></a>Siehe auch
 [Informieren der Endbenutzer über den Einsatz von Intune](end-user-educate.md)

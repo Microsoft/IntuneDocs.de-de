@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 063a5cbbe18efc5c406c9dc7f2fa40d614b2e48a
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 444fd63f8c582d35891dfa5aedb9eadd6626e541
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52860961"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303394"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Verwalten von PowerShell-Skripts in Intune für Windows 10-Geräte
 
@@ -38,7 +38,7 @@ Die Intune-Verwaltungserweiterung ergänzt die integrierten MDM-Features für Wi
 
 Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlich:
 
-- Geräte müssen mit Azure AD verknüpft und [automatisch registriert](windows-enroll.md#enable-windows-10-automatic-enrollment) werden. Die Intune-Verwaltungserweiterung unterstützt Geräte, die mit Azure AD und hybriden Domänen verknüpft sind, sowie gemeinsam verwaltete registrierte Windows-Geräte. GPO-registrierte Geräte werden nicht unterstützt.
+- Die Geräte müssen mit Azure AD verknüpft oder registriert sein, und Azure AD muss für die [automatische Registrierung bei Intune](windows-enroll.md#enable-windows-10-automatic-enrollment) konfiguriert sein. Die Intune-Verwaltungserweiterung unterstützt Geräte, die mit Azure AD und hybriden Domänen verknüpft sind, sowie gemeinsam verwaltete registrierte Windows-Geräte.
 - Geräte müssen Windows 10 Version 1607 oder höher ausführen.
 - Der Agent für die Intune-Verwaltungserweiterung wird installiert, wenn ein PowerShell-Skript oder eine Win32-App an einen Benutzer oder eine Gerätesicherheitsgruppe bereitgestellt wird.
 
@@ -62,9 +62,9 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
 3. Wählen Sie mindestens eine Gruppe aus, die die Benutzer enthält, deren Geräte das Skript erhalten sollen. Klicken Sie auf **Auswählen**, um die Richtlinie den ausgewählten Gruppen zuzuweisen.
 
 > [!NOTE]
-> - PowerShell-Skripts können nicht auf Computergruppen angewendet werden.
 > - Endbenutzer müssen sich nicht beim Gerät anmelden, um PowerShell-Skripts auszuführen.
 > - PowerShell-Skripts in Intune können auf Azure AD-Gerätesicherheitsgruppen ausgerichtet werden.
+> - PowerShell-Skripts in Intune können auf Azure AD-Benutzersicherheitsgruppen ausgerichtet werden.
 
 Der Intune-Verwaltungserweiterungsclient wird einmal pro Stunde mit Intune abgeglichen. Nachdem Sie die Richtlinie den Azure AD-Gruppen zugewiesen haben, wird das PowerShell-Skript ausgeführt, und die Ausführungsergebnisse werden berichtet.
 

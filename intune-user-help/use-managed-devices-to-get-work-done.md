@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e067ce76046355a7da6bb785ae3302c0fc3e8bb9
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 360715881e3d6b2f61e7bf251045fc3356c44f6b
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203145"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690681"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>Verwenden verwalteter Geräte für den Zugriff auf Geschäfts-, Schul- und Uniressourcen
 Microsoft Intune ist ein Geräteverwaltungssystem, mit dem Organisationen den Zugriff auf Geräte, Apps und E-Mails verwalten können. Mithilfe der Geräteverwaltung können Sie und andere Mitarbeiter, Schüler bzw. Studenten auf Ihre relevanten Informationen von praktisch überall und von nahezu jedem Gerät aus zugreifen. Selbst wenn Sie an einem Remotestandort arbeiten, bleiben Ihre Daten und die Informationen Ihrer Organisation geschützt.
@@ -39,16 +39,9 @@ Auf das Unternehmensportal können Sie wie folgt zugreifen:
 - Durch Öffnen der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980) der Supportabteilung Ihres Unternehmens.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>Was ist der Unterschied zwischen der App und der Website?
-Es gibt wenige kleinere Unterschiede zwischen der Unternehmensportal-App und der Unternehmensportal-Website, aber die meisten Aufgaben können Sie sowohl in der App als auch auf der Website genauso ausführen. Aufgaben, die Sie erledigen können, sind die folgenden:
+Jede Unternehmensportal-App für Windows 10, iOS, macOS und Android ist nahtlos in die jeweilige Plattform Ihres Geräts integriert. Die Website ist über jedes Gerät erreichbar und stellt Ihnen unabhängig vom Gerät dieselbe universelle Benutzeroberfläche zu Verfügung. 
 
-- Registrieren Ihrer Geräte für die Verwaltung
-- Anzeigen des Status Ihrer Geräte
-- Herunterladen empfohlener und benötigter Apps für Ihre Organisation
-- Umbenennen Ihres Geräts
-- Zurücksetzen der PIN oder des Kennworts des Geräts
-- Kontaktaufnahme mit der IT-Abteilung bei Supportbedarf
-
-Wenn Sie die Möglichkeiten der Unternehmensportal-Website mit denen der Unternehmensportal-App auf Ihrem Gerät vergleichen möchten, wählen Sie einen der folgenden Links aus:
+Unter den folgenden Links finden Sie Anleitungen zum Unternehmensportal für die jeweiligen Geräteplattformen mitsamt der Schritte zur Registrierung:  
 
 - [Verwenden Ihres Android-Geräts](using-your-android-device-with-intune.md)
 - [Verwenden Ihres iOS-Geräts](using-your-ios-device-with-intune.md)

@@ -2,8 +2,8 @@
 title: Konfigurieren von Richtlinien für iOS-Softwareupdates in Microsoft Intune – Azure | Microsoft-Dokumentation
 description: Erstellen Sie in Microsoft Intune eine Konfigurationsrichtlinie, oder fügen Sie eine hinzu, um einzuschränken, wann Softwareupdates auf iOS-Geräten, die von Intune verwaltet oder überwacht werden, automatisch installiert werden. Sie können auswählen, an welchem Datum und zu welcher Uhrzeit Updates nicht installiert werden sollen. Sie können diese Richtlinie ebenfalls Gruppen, Benutzern oder Geräten zuweisen oder Überprüfungen auf Installationsfehler durchführen.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 10/11/2018
 ms.topic: article
@@ -11,12 +11,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 search.appverid: MET150
-ms.openlocfilehash: 61bd7d5cf40355536aa7d5c361a771ce2b4f30ec
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d73dc96c966b93f26269cc53527a787824c94d3b
+ms.sourcegitcommit: 00fe2b601e3becbe5d644fcbd35a706da3b43af2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189876"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55652628"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Konfigurieren von iOS-Updaterichtlinien in Intune
 
@@ -33,7 +33,10 @@ Dieses Feature unterstützt Geräte, auf denen iOS 10.3 und höhere Versionen au
 4. Geben Sie einen Namen und eine Beschreibung für die Richtlinie ein.
 5. Klicken Sie auf **Einstellungen**. 
 
-    Geben Sie an, wann die Installation der neuesten Updates auf iOS-Geräte nicht erzwungen werden soll. Durch diese Einstellungen wird ein eingeschränkter Zeitraum erstellt. Sie können die **Tage** der Woche, die **Zeitzone**, die **Startzeit**, die **Endzeit** und die **Verzögerung der Sichtbarkeit von Softwareupdates (in Tagen)** zum Eingeben von Benutzern konfigurieren. Sie können einen Verzögerungszeitraum von 1 bis 90 Tagen für Softwareupdates festlegen. Geben Sie 0 (null) ein, um keine Verzögerung für Softwareupdates festzulegen. Diese Updateeinstellungen gelten nur für überwachte iOS-Geräte.
+    Geben Sie an, wann die Installation der neuesten Updates auf iOS-Geräte nicht erzwungen werden soll. Durch diese Einstellungen wird ein eingeschränkter Zeitraum erstellt. Sie können die **Tage** der Woche, die **Zeitzone**, die **Startzeit**, die **Endzeit** und die **Verzögerung der Sichtbarkeit von Softwareupdates (in Tagen)** zum Eingeben von Benutzern konfigurieren. Sie können einen Verzögerungszeitraum von 1 bis 90 Tagen für Softwareupdates festlegen. Nach der Verzögerung erhalten Benutzer eine Benachrichtigung für ein Update auf die früheste Version des Betriebssystems, die verfügbar war, als die Verzögerung ausgelöst wurde. Geben Sie 0 (null) ein, um keine Verzögerung für Softwareupdates festzulegen. Diese Updateeinstellungen gelten nur für überwachte iOS-Geräte.
+  
+    Wenn iOS 12.a beispielsweise am **1. Januar** verfügbar ist und Sie die Option **Delay OS Updates** (Betriebssystemupdates verzögern) auf **5 Tage** festgelegt haben, wird diese spezifische Version auf allen Endbenutzergeräten, die diesem Profil zugewiesen sind, nicht als verfügbares Update angezeigt. Dieses Update wird am **sechsten Tag** nach dem Release als verfügbar angezeigt, und alle Endbenutzer können das Update starten.
+
 
 6. Klicken Sie auf **OK**, um die Änderungen zu speichern. Klicken Sie auf **Erstellen**, um die Richtlinie zu erstellen.
 
@@ -44,7 +47,7 @@ Das Profil wird erstellt und in der Richtlinienliste angezeigt. Die mobile Gerä
 1. Klicken Sie unter **Softwareupdates** auf **Update policies for iOS (Updaterichtlinien für iOS)**.
 2. Wählen Sie eine vorhandene Richtlinie aus, und klicken Sie dann auf **Eigenschaften**.
 3. Aktualisieren Sie die eingeschränkten Zeiträume:
-
+    
     1. Auswählen der Wochentage
     2. Wählen Sie die Zeitzone aus, in der diese Richtlinie angewendet wird.
     3. Wählen Sie die Start- und Endzeit des gesperrten Zeitraums aus.

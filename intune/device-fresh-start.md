@@ -2,8 +2,8 @@
 title: Zurücksetzen von Windows 10-Geräten mit Microsoft Intune – Azure | Microsoft-Dokumentation
 description: Verwenden Sie den sauberen Start, um Apps mithilfe von Microsoft Intune von Windows 10 PCs zu entfernen oder zu deinstallieren.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 08/09/2018
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cd2320e4c3935c4865d785bbb2461bba20afffdb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1eb1e671cc16196974cb15cdc785ba7d99fa8f46
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188737"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303411"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Verwenden der Aktion „Sauberer Start“ zum Zurücksetzen von Windows 10-Geräten mit Intune
 
@@ -33,10 +33,11 @@ Die Geräteaktion **Sauberer Start** entfernt alle Apps, die auf einem PC unter 
 3. Klicken Sie auf **Sauberer Start**. 
 4. Wählen Sie **Benutzerdaten auf diesem Gerät beibehalten** aus, um Folgendes zu ermöglichen:
    * Azure AD für das Gerät bleibt eingebunden.
-    * Das Gerät bleibt bei der mobilen Geräteverwaltung registriert. 
+    * Das Gerät wird erneut bei der mobilen Geräteverwaltung registriert, wenn ein Azure Active Directory-Benutzer sich am Gerät anmeldet.
     * Die Inhalte des Basisordners des Gerätebenutzers werden beibehalten, und Apps und Einstellungen werden entfernt.  
   > [!IMPORTANT]
- > Wenn Sie die Benutzerdaten nicht beibehalten, wird das Gerät auf seinen standardmäßigen Zustand wiederhergestellt. Seine Registrierung bei Azure AD und der mobilen Geräteverwaltung wird aufgehoben. 
+ > Wenn Sie die Benutzerdaten nicht beibehalten, wird das Gerät auf seinen standardmäßigen Zustand wiederhergestellt. Die Registrierung bei Azure AD und der mobilen Geräteverwaltung von BYOD-Geräten wird aufgehoben.
+ > Mit Azure AD verknüpfte Geräte werden erneut bei der mobilen Geräteverwaltung registriert, wenn ein Azure Active Directory-Benutzer sich am Gerät anmeldet.
  
 5. Klicken Sie auf **OK**.   
 6. Wenn Sie den Status dieser Aktion anzeigen möchten, wechseln Sie zu **Geräte**, und klicken Sie auf **Geräteaktionen**.  

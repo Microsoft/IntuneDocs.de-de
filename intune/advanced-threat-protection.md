@@ -2,10 +2,10 @@
 title: Verwenden von Windows Defender ATP in Microsoft Intune – Azure | Microsoft-Dokumentation
 description: In einem End-to-End-Szenario erfahren Sie, wie Sie Windows Defender Advanced Threat Protection (ATP) aktivieren, inklusive Einschalten von ATP in Intune und Windows Defender Security Center (ATP-Portal), Integrieren von Geräten mit einem ATP-Konfigurationsprofil, Erstellen einer Intune-Gerätekonformitätsrichtlinie, Erstellen einer Azure AD-Richtlinie für bedingten Zugriff und Überwachen der Gerätekonformität.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
-ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
+ms.openlocfilehash: 25328bc119b91d7c9c3bb678962b90123a0d1faa
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53167993"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290688"
 ---
-# <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Aktivieren von Windows Defender ATP mit bedingtem Zugriff in Intune
+# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Erzwingen der Konformität für Windows Defender ATM mit bedingtem Zugriff in Intune
 
 Windows Defender Advanced Threat Protection (ATP) und Microsoft Intune tragen gemeinsam zum Verhindern von Sicherheitsverletzungen bei und begrenzen die Auswirkungen von Sicherheitsverletzungen innerhalb einer Organisation.
 
@@ -89,12 +89,12 @@ Sobald sie ein Gerät über das Konfigurationspaket integrieren, müssen Sie die
 5. Wählen Sie für **Profiltyp** die Option **Windows Defender ATP (Windows 10 Desktop)** aus.
 6. Konfigurieren Sie die Einstellungen:
 
-  - **Pakettyp für die Windows Defender ATP-Clientkonfiguration**: Wählen Sie **Onboarding** aus, um das Konfigurationspaket zum Profil hinzuzufügen. Klicken Sie auf **Offboarding**, um das Konfigurationspaket aus dem Profil zu entfernen.
+  - **Pakettyp für die Windows Defender ATP-Clientkonfiguration**: Wählen Sie **Onboarding** aus, um das Konfigurationspaket zum Profil hinzuzufügen. Klicken Sie auf **Offboard** (Integration aufheben), um das Konfigurationspaket aus dem Profil zu entfernen.
   
     > [!NOTE] 
     > Wenn Sie eine ordnungsgemäße Verbindung mit Windows Defender ATP hergestellt haben, führt Intune automatisch ein **Onboarding** für das Konfigurationsprofil für Sie durch, und die Einstellung **Pakettyp für die Windows Defender ATP-Clientkonfiguration** ist nicht verfügbar.
   
-  - **Beispielfreigabe für alle Dateien**: Durch das **Aktivieren** dieser Option werden Stichproben erfasst und mit Windows Defender ATP geteilt. Wenn Sie z.B. eine verdächtige Datei sehen, können Sie sie zur gründlichen Analyse an Windows Defender ATP senden. Wenn **Nicht konfiguriert** festgelegt ist, werden keine Stichproben mit Windows Defender ATP geteilt.
+  - **Beispielfreigabe für alle Dateien**: Durch das **Aktivieren** dieser Option werden Stichproben erfasst und mit Windows Defender ATP geteilt. Wenn Sie z.B. eine verdächtige Datei sehen, können Sie sie zur gründlichen Analyse an Windows Defender ATP senden. Wenn **Not configured** (Nicht konfiguriert) festgelegt ist, werden keine Stichproben mit Windows Defender ATP geteilt.
   - **Häufigkeit von Telemetrieberichten erhöhen**: Bei Geräten mit hohem Risiko werden durch das **Aktivieren** dieser Option häufiger Telemetriedaten an den Windows Defender ATP-Dienst gemeldet.
 
     [Konfigurieren von Endpunkten mithilfe von System Center Configuration Manager](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-sccm-windows-defender-advanced-threat-protection) enthält nähere Informationen zu diesen Windows Defender ATP-Einstellungen.

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/20/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,47 +13,47 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 849e3feed23b46585f9b737cb0ee91ecdf47ecae
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bf9581fe81aea3d2671da0adb2d37bbc203875c8
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186136"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303530"
 ---
 # <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>E-Mail-Profileinstellungen für Windows 10-Geräte: Intune
 
-Mit den E-Mail-Profileinstellungen können Sie Ihre Windows 10-Geräte konfigurieren.
+Mit den E-Mail-Profileinstellungen können Sie die E-Mail-App auf Ihren Windows 10-Geräte konfigurieren.
 
-- **E-Mail-Server:** Geben Sie den Hostnamen Ihres Exchange-Servers ein.
-- **Kontoname:** Geben Sie den Anzeigenamen des E-Mail-Kontos ein. Dieser Name wird Benutzern auf ihren Geräten angezeigt.
-- **Benutzernamensattribut aus AAD:** Dieser Name ist das Attribut, dass Intune aus Azure Active Directory (AAD) abruft. Intune generiert dynamisch den Benutzernamen, der von diesem Profil verwendet wird. Folgende Optionen sind verfügbar:
-  - **Benutzerprinzipalname:** Ruft den Namen ab, z.B. `user1` oder `user1@contoso.com`
-  - **Primäre SMTP-Adresse:** Ruft den Namen im Format einer E-Mail-Adresse ab, z.B. `user1@contoso.com`
-  - **SAM-Kontoname:** Erfordert die Domäne, z.B. `domain\user1`
+- **E-Mail-Server**: Geben Sie den Hostnamen Ihres Exchange-Servers ein.
+- **Kontoname**: Geben Sie den Anzeigenamen des E-Mail-Kontos ein. Dieser Name wird Benutzern auf ihren Geräten angezeigt.
+- **Benutzernamensattribut aus AAD**: Dieser Name ist das Attribut, dass Intune aus Azure Active Directory (AAD) abruft. Intune generiert dynamisch den Benutzernamen, der von diesem Profil verwendet wird. Folgende Optionen sind verfügbar:
+  - **Benutzerprinzipalname**: Hiermit wird der Name abgerufen, z.B. `user1` oder `user1@contoso.com`.
+  - **Primäre SMTP-Adresse**: Ruft den Namen im Format einer E-Mail-Adresse ab, z.B. `user1@contoso.com`.
+  - **SAM-Kontoname**: Erfordert die Domäne, z.B. `domain\user1`.
 
     Geben Sie außerdem Folgendes ein:  
-    - **Quelle des Benutzerdomänennamens:** Wählen Sie zwischen **AAD** oder **Benutzerdefiniert**.
+    - **Quelle für Benutzerdomänenname**: Wählen Sie zwischen **AAD** (Azure Active Directory) oder **Benutzerdefiniert**.
 
       Wenn Sie die Attribute von **AAD** abrufen möchten, geben Sie Folgendes ein:
-      - **Attribut des Benutzerdomänennames von AAD:** Rufen Sie entweder das Attribut **Full domain name** (vollständiger Domänenname) oder **NetBIOS name** (NetBIOS-Name) des Benutzers ab.
+      - **Attribut für Benutzerdomänenname aus AAD**: Rufen Sie entweder das Attribut **Vollständiger Domänenname** oder das Attribut **NetBIOS-Name** des Benutzers ab.
 
       Wenn Sie sich dazu entscheiden, die Attribute **Benutzerdefiniert** zu verwenden, geben Sie Folgendes ein:
-      - **Zu verwendender benutzerdefinierter Domänenname:** Geben Sie einen Wert ein, den Intune als Domänennamen verwenden kann, wie z.B. `contoso.com` oder `contoso`
+      - **Zu verwendender benutzerdefinierter Domänenname**: Geben Sie einen Wert ein, den Intune als Domänennamen verwenden kann, z.B. `contoso.com` oder `contoso`.
 
-- **E-Mail-Adressattribut aus AAD:** Die Art der Generierung der E-Mail-Adresse für den Benutzer Wählen Sie **Primäre SMTP-Adresse** (`user1@contoso.com`) aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname** (`user1@contoso.com` oder `user1`), um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden.
+- **Attribut für E-Mail-Adresse aus AAD**: Wählen Sie aus, wie die E-Mail-Adresse für den Benutzer generiert wird. Wählen Sie **Primäre SMTP-Adresse** (`user1@contoso.com`) aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname** (`user1@contoso.com` oder `user1`), um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden.
 
 ## <a name="security-settings"></a>Sicherheitseinstellungen
 
-- **SSL:** Verwenden Sie SSL-Kommunikation (Secure Sockets Layer) beim Senden und Empfangen von E-Mails sowie bei der Kommunikation mit dem Exchange-Server.
+- **SSL**: Verwenden Sie die SSL-Kommunikation (Secure Sockets Layer) beim Senden und Empfangen von E-Mails sowie bei der Kommunikation mit dem Exchange-Server.
 
 ## <a name="synchronization-settings"></a>Synchronisierungseinstellungen
 
-- **Anzahl der zu synchronisierenden E-Mails:** Wählen Sie die Anzahl an Tagen von E-Mails, die Sie synchronisieren möchten. Oder wählen Sie **Unbegrenzt**, um alle verfügbaren E-Mails zu synchronisieren.
-- **Synchronisierungszeitplan:** Wählen Sie den zeitlichen Ablauf der Synchronisierung der Daten vom Exchange-Server aus. Außerdem können Sie **Bei Eintreffen von Nachrichten** wählen, wodurch Daten bei Eingang synchronisiert werden, oder **Manuell**, wodurch der Benutzer des Geräts die Synchronisierung von Hand starten muss.
+- **Menge an E-Mails für die Synchronisierung**: Wählen Sie die Anzahl der Tage aus, für die E-Mails synchronisiert werden sollen. Oder wählen Sie **Unbegrenzt**, um alle verfügbaren E-Mails zu synchronisieren.
+- **Synchronisierungszeitplan**: Wählen Sie den zeitlichen Ablauf der Synchronisierung der Daten vom Exchange-Server aus. Außerdem können Sie **Bei Eintreffen von Nachrichten** wählen, wodurch Daten bei Eingang synchronisiert werden, oder **Manuell**, wodurch der Benutzer des Geräts die Synchronisierung von Hand starten muss.
 
 ## <a name="content-sync-settings"></a>Inhaltssynchronisierungseinstellungen
 
-- **Zu synchronisierender Inhaltstyp:** Wählen Sie die Inhaltstypen aus, die auf Geräten synchronisiert werden sollen:
+- **Zu synchronisierender Inhaltstyp**: Wählen Sie die Inhaltstypen aus, die auf Geräten synchronisiert werden sollen:
   - **Kontakte**
   - **Kalender**
   - **Aufgaben**

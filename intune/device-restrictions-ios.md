@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune; seodec18
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 80eb088063522ba3acb293776064fd98846b9a3e
-ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
+ms.openlocfilehash: 94e09f413ea0e6b3811c7c19a93d188ac15ee04c
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54380509"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230085"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
@@ -322,12 +322,16 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 | com.apple.compass           | Compass      | Apple     |
 | com.apple.MobileAddressBook | Kontakte     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.DocumentsApp      | Dateien        | Apple     |
 | com.apple.mobileme.fmf1     | Find Friends | Apple     |
 | com.apple.mobileme.fmip1    | Find iPhone  | Apple     |
 | com.apple.gamecenter        | Gamecenter  | Apple     |
 | com.apple.mobilegarageband  | GarageBand   | Apple     |
 | com.apple.Health            | Integrität       | Apple     |
+| com.apple.Home              | Startseite         | Apple     |
 | com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.iMovie            | iMovie       | Apple     |
+| com.apple.itunesconnect.mobile | iTunes Connect | Apple |
 | com.apple.MobileStore       | iTunes Store | Apple     |
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
@@ -345,8 +349,10 @@ Diese Liste zeigt die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die
 | com.apple.reminders         | Reminders    | Apple     |
 | com.apple.MobileSafari      | Safari       | Apple     |
 | com.apple.Preferences       | Einstellung     | Apple     |
+| com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Stocks       | Apple     |
 | com.apple.tips              | Tipps         | Apple     |
+| com.apple.TV                | TV           | Apple     |
 | com.apple.videos            | Videos       | Apple     |
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |

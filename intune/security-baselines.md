@@ -2,10 +2,10 @@
 title: Verwenden von Sicherheitsrichtlinien in Microsoft Intune – Azure | Microsoft-Dokumentation
 description: Fügen Sie die empfohlenen Gruppensicherheitsrichtlinien hinzu, oder konfigurieren Sie sie, um Benutzer und Daten auf Geräten mit Microsoft Intune zur mobilen Geräteverwaltung zu schützen. Aktivieren von BitLocker, Konfigurieren von Windows Defender Advanced Threat Protection, Steuern von Internet Explorer, Verwenden von SmartScreen, Festlegen lokaler Sicherheitsrichtlinien, Anfordern eines Kennworts, Blockieren von Internetdownloads und vieles mehr.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,23 +14,23 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d78adf8e7d6d2ce05951171e6248dcc8c389945d
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 8102ab88e878f7976ab7946f67080c4d4f23d6b1
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55070204"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690715"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Erstellen einer Windows 10-Sicherheitsbaseline in Intune
 
-Sicherheitsbaselines sind ein Feature in der Vorschau, das für Geräte unter Windows 10 und höher verfügbar ist. Dieses Feature umfasst viele Intune-Einstellungen zum Sichern und Schützen Ihrer Benutzer und Geräte. Es setzt diese Einstellungen auch automatisch auf Werte, die von Sicherheitsteams empfohlen werden. Die Baseline aktiviert beispielsweise u.a. automatisch BitLocker, fordert automatisch ein Kennwort zum Entsperren eines Geräts an und deaktiviert automatisch die Standardauthentifizierung.
+Sicherheitsbaselines sind ein Feature in der Vorschau, das für Geräte unter Windows 10 und höher verfügbar ist. Dieses Feature umfasst viele von Intune unterstützte Einstellungen, mit denen Sie Ihre Benutzer und Geräte sichern und schützen können. Es setzt diese Einstellungen auch automatisch auf Werte, die von Sicherheitsteams empfohlen werden. Die Baseline aktiviert beispielsweise u.a. automatisch BitLocker, fordert automatisch ein Kennwort zum Entsperren eines Geräts an und deaktiviert automatisch die Standardauthentifizierung.
 
 Diese Funktion gilt für:
 
 - Windows 10, Version 1809 und höher
 
 > [!NOTE]
-> Die Sicherheitsbaselines sind zwar in der Vorschau verfügbar, aber Microsoft empfiehlt nicht die Verwendung von Profilen in einer Produktionsumgebung, da die Baselines sich im Verlauf der Vorschau ändern können.
+> Die Sicherheitsbaselines sind zwar in der Vorschau verfügbar, aber Microsoft empfiehlt nicht die Verwendung von Profilen in einer Produktionsumgebung, da die Baselines sich im Verlauf der Vorschau ändern können. Sobald die Sicherheitsbaselines allgemein verfügbar sind, werden bestehende Profile nicht mehr in die neusten unterstützten Profile konvertiert.
 
 Das Ziel der Verwendung von Sicherheitsbaselines ist die Bereitstellung eines sicheren End-to-End-Workflows bei der Arbeit mit Microsoft 365. Einige Vorteile sind:
 
@@ -94,6 +94,12 @@ Nachdem das Profil erstellt wurde, kann es Benutzern, Geräten und Gruppen zugew
 
 Sobald Sie das Profil gespeichert haben, erfolgt die Pushübertragung auf Geräte, wenn sie sich bei Intune einchecken. Dies kann also sofort geschehen.
 
+## <a name="available-security-baselines"></a>Verfügbare Sicherheitsbaselines  
+
+Die folgenden Sicherheitsbaselines können für Intune verwendet werden.
+- **Vorschau: Sicherheitsbaseline für die Verwaltung mobiler Geräte**
+  - Version: [Oktober 2018](security-baseline-settings-windows.md)
+
 ## <a name="q--a"></a>Q & A
 
 #### <a name="why-these-settings"></a>Warum diese Einstellungen?
@@ -117,5 +123,5 @@ Streng genommen, nicht. Das Microsoft-Sicherheitsteam berät Unternehmen wie CIS
 - Das Migrieren von lokalen Active Directory-Gruppenrichtlinien zu einer reinen Cloudlösung mithilfe von Azure Active Directory (AD) mit Microsoft Intune ist eine Reise. Zur Unterstützung dienen begleitende GPOs, die für hybride AD- und in Azure AD eingebundene Geräte veröffentlicht werden. Diese Geräte können MDM-Einstellungen aus der Cloud (Intune) und Gruppenrichtlinieneinstellungen vom lokalen Domänencontroller nach Bedarf abrufen.
 
 ## <a name="next-steps"></a>Nächste Schritte
-
-Überprüfen Sie den Status und überwachen Sie [Baseline und Profil](security-baselines-monitor.md).
+- Lesen Sie sich den Artikel zu den [Windows-Einstellungen für Sicherheitsbaselines](security-baseline-settings-windows.md) durch, die von Intune unterstützt werden.  
+- Überprüfen Sie den Status und überwachen Sie [Baseline und Profil](security-baselines-monitor.md).

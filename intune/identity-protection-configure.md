@@ -2,10 +2,10 @@
 title: Verwenden einer PIN zur Anmeldung bei Windows 10-Geräten mit Microsoft Intune – Azure | Microsoft-Dokumentation
 description: Verwenden Sie Windows Hello for Business, um Benutzern die Anmeldung bei Geräten mit einer PIN, einem Fingerabdruck und auf sonstige Weise zu ermöglichen. Erstellen Sie in Intune ein Identity Protection-Konfigurationsprofil für Windows 10-Geräte mit diesen Einstellungen, und weisen Sie das Profil Benutzergruppen und Gerätegruppen zu.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 843806681fcee4ddec175207c2c49d6db95e0f0d
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.openlocfilehash: c6ca040c91437a35d12626f54b8385311d6631eb
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831381"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290654"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>Verwenden von Windows Hello for Business auf Windows 10-Geräten mit Microsoft Intune
 
@@ -60,7 +60,7 @@ In diesem Artikel erfahren Sie, wie Sie ein Gerätekonfigurationsprofil erstelle
 
 4. Wenn Sie fertig sind, wählen Sie **OK** > **Erstellen** aus, um Ihre Änderungen zu speichern.
 
-Das Profil wird erstellt und in der Profilliste angezeigt. Im nächsten Schritt [weisen](device-profile-assign.md) Sie dieses Profil Gruppen zu.
+Das Profil wird erstellt und in der Profilliste angezeigt. [Weisen](device-profile-assign.md) Sie als nächstes dieses Profil Ihren Anforderungen entsprechend Benutzer- oder Gerätegruppen zu.
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 

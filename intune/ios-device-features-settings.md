@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: a5a756cd3fd8b78893cee6a3c4629e49d6ac7c87
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 8656e480c292fc9ed1212f9d2c180b791cb4f94c
+ms.sourcegitcommit: ce76541ceb783eb2e242032ef8579041d2f61532
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072540"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431489"
 ---
 # <a name="ios-device-feature-settings-in-intune"></a>iOS-Gerätefunktionseinstellungen in Intune
 
@@ -177,16 +177,23 @@ Wählen Sie aus, wie installierte Apps auf iOS-Geräten Benachrichtigungen sende
 
 Verwenden Sie diese Einstellungen, um eine benutzerdefinierte Nachricht oder einen Text im Anmeldefenster und auf dem Sperrbildschirm anzuzeigen. So können Sie z.B. eine „Wenn verloren, zurück an“-Nachricht und Bestandskennzeicheninformationen eingeben. 
 
-Diese Einstellungen unterstützen überwachte Geräte, auf denen iOS 9.3 oder höher ausgeführt wird.
+Dieses Feature unterstützt überwachte Geräte, auf denen das folgende Betriebssystem installiert ist:
 
-1. Wählen Sie in den **Einstellungen** die Option **Konfiguration für freigegebene Geräte (nur überwacht)**.
+- iOS 9.3 und höher
+
+1. Wählen Sie in **Einstellungen** die Option **Nachricht auf Sperrbildschirm (nur überwacht)**  aus.
 2. Legen Sie folgende Einstellungen fest:
 
-    - **Bestandskennzeicheninformationen:** Geben Sie Informationen zum Bestandskennzeichen des Geräts ein. Geben Sie beispielsweise `Owned by Contoso Corp` ein. 
+    - **Bestandskennzeicheninformationen:** Geben Sie Informationen zum Bestandskennzeichen des Geräts ein. Geben Sie beispielsweise `Owned by Contoso Corp` oder `Serial Number: {{serialnumber}}` ein. 
 
       Der von Ihnen eingegebene Text wird im Anmeldefenster und Sperrbildschirm auf dem Gerät angezeigt.
 
-    - **Fußnote im Sperrbildschirm:** Geben Sie einen Hinweis ein, der Ihnen helfen könnte, das Gerät zurückzubekommen, wenn es verloren geht oder gestohlen wird. Geben Sie zum Beispiel `If found, call Contoso at ...` ein.
+    - **Fußnote im Sperrbildschirm:** Geben Sie einen Hinweis ein, der Ihnen helfen könnte, das Gerät zurückzubekommen, wenn es verloren geht oder gestohlen wird. Sie können einen beliebigen Text eingeben. Geben Sie zum Beispiel `If found, call Contoso at ...` ein.
+
+    Gerätetoken können auch verwendet werden, um gerätespezifische Informationen zu diesen Feldern hinzuzufügen. Geben Sie zum Beispiel zur Anzeige der Seriennummer `Serial Number: {{serialnumber}}` ein. Auf dem Sperrbildschirm sieht der Text dann in etwa so aus: `Serial Number 123456789ABC`. Achten Sie darauf, bei der Eingabe von Variablen geschweifte Klammern `{{ }}` zu verwenden. [App-Konfigurationstoken](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) umfassen eine Reihe von Variablen, die Sie nutzen können. Zudem können Sie `deviceName` oder einen anderen gerätespezifischen Wert verwenden.
+
+    > [!NOTE]
+    > Variablen werden nicht auf der Benutzeroberfläche überprüft. Daher gibt es möglicherweise Profile, die mit fehlerhaften Eingaben gespeichert wurden. Wenn Sie beispielsweise `{{Devicename}}` anstelle von `{{devicename}}` eingeben, wird die Zeichenfolge anstelle des eindeutigen Gerätenamens angezeigt.
 
 3. Klicken Sie zum Speichern Ihrer Änderungen auf **OK**.
 
@@ -279,6 +286,8 @@ Diese Einstellungen steuern den Browser-URL-Zugriff auf iOS-Geräte.
 ## <a name="wallpaper-settings"></a>Hintergrundbild-Einstellungen
 
 Fügen Sie ein benutzerdefiniertes PNG-, JPG- oder JPEG-Bild auf Ihren überwachten iOS-Geräten hinzu. Verwenden Sie z.B. ein Unternehmenslogo auf dem Sperrbildschirm.
+
+Möglicherweise kommt es zu unerwartetem Verhalten, wenn ein Profil ohne Bild einem Gerät mit einem Bild zugewiesen wird. Angenommen, Sie erstellen z.B. ein Profil ohne Bild. Dieses Profil wird dann Geräten zugewiesen, für die bereits Bilder vorhanden sind. In diesem Szenario ändert sich das Bild möglicherweise in den Gerätestandard, oder es wird weiter das ursprüngliche Bild auf dem Gerät verwendet. Dieses Verhalten wird von der MDM-Plattform von Apple kontrolliert und eingeschränkt.
 
 - **Position für die Anzeige des Hintergrundbilds**: Wählen Sie die Position auf dem Gerät, an dem das Bild angezeigt werden soll. Folgende Optionen sind verfügbar:
   - **Nicht konfiguriert:** Es ist kein benutzerdefiniertes Bild auf dem Gerät hinzugefügt. Das Gerät nutzt den Standard des Betriebssystems.

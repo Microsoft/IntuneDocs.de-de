@@ -28,7 +28,9 @@ Durch die automatische Registrierung können Benutzer ihre Windows 10-Geräte in
    - **Alle**: Alle Benutzer können ihre Windows 10-Geräte automatisch registrieren.
 
       > [!IMPORTANT]
-      > Wenn der **MAM-Benutzerbereich** und die automatische MDM-Registrierung (**MDM-Benutzerbereich**) für eine Gruppe aktiviert sind, wird nur MAM aktiviert. Nur MAM wird für Benutzer in dieser Gruppe hinzugefügt, wenn ihr persönliches Gerät dem Arbeitsplatz beitritt. Geräte werden nicht automatisch in MDM registriert.
+      > Für BYOD-Geräte hat der MAM-Benutzerbereich Vorrang, wenn sowohl der MAM- als auch der MDM-Benutzerbereich (automatische MDM-Registrierung) für alle Benutzer aktiviert sind (oder für die gleichen Gruppen von Benutzern). Das Gerät verwendet dann WIP-Richtlinien (Windows Information Protection) (sofern Sie diese konfiguriert haben) und wird nicht für die mobile Geräteverwaltung registriert.
+      >
+      > Für unternehmenseigene Geräte hat der MDM-Benutzerbereich Vorrang, wenn beide Bereiche aktiviert sind. Die Geräte werden für die mobile Geräteverwaltung registriert.
 
    ![Screenshot des Azure-Portals](../media/auto-enroll-scope.png)
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
-ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
+ms.openlocfilehash: 9258bf1847e83087404967c0ded50481da3a8dff
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53734271"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290739"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Zuweisen von Apps zu Gruppen mit Microsoft Intune
 
@@ -36,22 +36,22 @@ In der folgenden Tabelle werden die verschiedenen Optionen für die Zuweisung vo
 
 |   | Bei Intune registrierte Geräte | Nicht bei Intune registrierte Geräte |
 |-------------------------------------------------------------------------------------------|------------------------------|----------------------------------|
-| Zuweisen zu Benutzern | Ja  | Ja  |
-| Zuweisen zu Geräten | Ja  | Nein |
-| Zuweisen von umschlossenen Apps oder Apps, die das Intune SDK enthalten (für App-Schutzrichtlinien) | Ja  | Ja  |
-| Zuweisen von Apps als verfügbar | Ja  | Ja  |
-| Zuweisen von Apps als erforderlich | Ja  | Nein |
-| Deinstallieren von Apps | Ja  | Nein |
-| Erhalten von App-Updates von Intune | Ja  | Nein |
-| Endbenutzer installieren verfügbare Apps über die Unternehmensportal-App | Ja  | Nein |
-| Endbenutzer installieren verfügbare Apps über das webbasierte Unternehmensportal | Ja  | Ja  |
+| Zuweisen zu Benutzern | Ja | Ja |
+| Zuweisen zu Geräten | Ja | Nein |
+| Zuweisen von umschlossenen Apps oder Apps, die das Intune SDK enthalten (für App-Schutzrichtlinien) | Ja | Ja |
+| Zuweisen von Apps als verfügbar | Ja | Ja |
+| Zuweisen von Apps als erforderlich | Ja | Nein |
+| Deinstallieren von Apps | Ja | Nein |
+| Erhalten von App-Updates von Intune | Ja | Nein |
+| Endbenutzer installieren verfügbare Apps über die Unternehmensportal-App | Ja | Nein |
+| Endbenutzer installieren verfügbare Apps über das webbasierte Unternehmensportal | Ja | Ja |
 
 > [!NOTE]
 > Derzeit können Sie iOS- und Android-Apps (Branchen-Apps und Apps aus dem Store) Geräten zuweisen, die nicht bei Intune registriert sind.
 >
 > Um App-Updates zu Geräten zu erhalten, die nicht bei Intune registriert sind, müssen Gerätebenutzer zum Unternehmensportal Ihrer Organisation navigieren und App-Updates manuell installieren.
 
-## <a name="to-assign-an-app"></a>So weisen Sie eine App zu
+## <a name="assign-an-app"></a>Zuweisen einer App
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
@@ -62,7 +62,7 @@ In der folgenden Tabelle werden die verschiedenen Optionen für die Zuweisung vo
 7. Wählen Sie **Gruppe hinzufügen** aus, um den Bereich **Gruppe hinzufügen** zu öffnen, der mit der App verknüpft ist.
 8. Wählen Sie für die bestimmte App einen **Zuweisungstyp** aus:
    - **Für registrierte Geräte verfügbar**: Weisen Sie die App Gruppen von Benutzern zu, die die App über die Unternehmensportal-App oder -Website installieren können.
-   - **Verfügbar mit oder ohne Registrierung**: Weisen Sie diese App Gruppen von Benutzern zu, deren Geräte nicht bei Intune registriert sind. Apps von Managed Google Play unterstützen diese Option nicht. Benutzern muss eine Intune-Lizenz zugewiesen sein. Weitere Informationen finden Sie unter [Intune-Lizenzen](licenses.md).
+   - **Verfügbar mit oder ohne Registrierung**: Weisen Sie diese App Gruppen von Benutzern zu, deren Geräte nicht bei Intune registriert sind. Benutzern muss eine Intune-Lizenz zugewiesen sein. Weitere Informationen finden Sie unter [Intune-Lizenzen](licenses.md).
    - **Erforderlich**: Die App wird auf Geräten in den ausgewählten Gruppen installiert. Auf einigen Plattformen muss der Endbenutzer möglicherweise weitere Eingabeaufforderungen bestätigen, bevor die App-Installation startet.
    - **Deinstallieren**: Die App wird auf Geräten in den ausgewählten Gruppen deinstalliert, wenn Intune die App zuvor über eine Zuweisung vom Typ „Für registrierte Geräte verfügbar“ oder „Erforderlich“ in der gleichen Bereitstellung auf dem Gerät installiert hat. Weblinks können nach der Bereitstellung nicht entfernt werden.
 
@@ -122,6 +122,9 @@ In manchen Fällen wird die gleiche App mehreren Gruppen zugewiesen, jedoch mit 
 > [!NOTE]
 > Nur für verwaltete iOS Store-Apps: Wenn Sie diese Apps Microsoft Intune hinzufügen und als **Erforderlich** zuweisen, werden sie automatisch sowohl mit der Absicht **Erforderlich** als auch mit der Absicht **Verfügbar** erstellt.<br><br>
 > iOS Store-Apps (keine iOS-VPP-Apps), die mit der Absicht „Erforderlich“ als Ziel verwendet werden, werden auf dem Gerät beim Check-In erzwungen und in der Unternehmensportal-App angezeigt.
+
+## <a name="android-enterprise-app-we-app-deployment"></a>Android Enterprise APP-WE-App-Bereitstellung
+Für Android-Geräte in einem Bereitstellungsszenario mit einer nicht registrierten App-Schutzrichtlinie ohne Registrierung (App Protection Policy Without Enrollment, APP-WE) können Sie jetzt verwaltetes Google Play zum Bereitstellen von Store-Apps und branchenspezifischen Apps für Benutzer verwenden. Insbesondere können Sie Endbenutzern einen App-Katalog bieten und für einen Installationsvorgang sorgen, in dem Endbenutzer nicht mehr den Sicherheitsstatus ihrer Geräte kompromittieren müssen, indem sie Installationen aus unbekannten Quellen zulassen. Darüber hinaus sorgt dieses Bereitstellungsszenario für höhere Benutzerfreundlichkeit. Anweisungen zum Zuweisen einer App finden Sie unter [Zuweisen einer App](apps-deploy.md#assign-an-app).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

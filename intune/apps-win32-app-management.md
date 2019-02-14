@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,30 +16,30 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: ba77c14e470ed75a87f44adcaf0ba9b98cd06438
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068321"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290756"
 ---
-# <a name="intune-standalone---win32-app-management-public-preview"></a>Intune Standalone – Win32-App-Verwaltung (Public Preview)
+# <a name="intune-standalone---win32-app-management"></a>Eigenständiges Intune – Win32-App-Verwaltung
 
 Intune Standalone ermöglicht eine umfangreichere Verwaltung von Win32-Anwendungen. Während es für Kunden mit Cloudverbindung möglich ist, den Configuration Manager für die Verwaltung von Win32-Anwendungen zu verwenden, verfügen Kunden, die ausschließlich Intune verwenden, über umfangreichere Verwaltungsfunktionen für ihre Win32-Branchenanwendungen (LOB, Line-of-Business). Dieser Artikel bietet eine Übersicht über das Intune-Feature zur Verwaltung von Win32-Apps und enthält Informationen zur Problembehandlung.
 
-## <a name="prerequisites-for-public-preview"></a>Voraussetzungen für die öffentliche Vorschau
+## <a name="prerequisites"></a>Voraussetzungen
 
 - Windows 10 Version 1607 oder höher (Education-, Pro- und Enterprise-Versionen)
 - Folgendes muss für den Windows 10-Client zutreffen: 
     - Beitritt zu Azure Active Directory (AAD) oder Hybrid Azure Active Directory und
     - Registrierung bei Intune (MDM-verwaltet)
-- Die Größe der Windows-Anwendung ist in der öffentlichen Vorschau auf 8 GB pro App begrenzt 
+- Die Größe der Windows-Anwendung ist auf 8 GB pro App begrenzt
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Vorbereiten des Inhalts der Win32-App für den Upload
 
-Verwenden Sie das [Microsoft Intune-Tool zur Vorbereitung des Uploads von Win32-Apps](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool), um Win32-Apps vorab zu verarbeiten. Das Paketerstellungstool konvertiert die Installationsdateien der Anwendung in der *.intunewin*-Format. Das Paketerstellungstool erkennt auch einige der Attribute, die Intune benötigt, um den Installationsstatus der Anwendung zu bestimmen. Nachdem Sie dieses Tool im Installationsordner der App verwendet haben, können Sie in der Intune-Konsole eine Win32-App erstellen.
+Verwenden Sie das [Microsoft Win32-Inhaltsvorbereitungstool](https://go.microsoft.com/fwlink/?linkid=2065730) für die Vorabverarbeitung von Win32-Apps. Das Tool konvertiert Anwendungsinstallationsdateien in das *INTUNEWIN*-Format. Das Tool erkennt auch einige der Attribute, die Intune benötigt, um den Installationsstatus der Anwendung zu bestimmen. Nachdem Sie dieses Tool im Installationsordner der App verwendet haben, können Sie in der Intune-Konsole eine Win32-App erstellen.
 
-Sie können das [Microsoft Intune-Tool zur Vorbereitung des Uploads von Win32-Apps](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) von GitHub herunterladen.
+Sie können das [Microsoft Win32-Inhaltsvorbereitungstool](https://go.microsoft.com/fwlink/?linkid=2065730) von GitHub herunterladen.
 
 ### <a name="available-command-line-parameters"></a>Verfügbare Befehlszeilenparameter: 
 
@@ -74,7 +74,7 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
 1.  Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) an.
 2.  Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3.  Wählen Sie im **Intune**-Bereich die Option **Client-Apps** > **Apps** > **Hinzufügen** aus.
-4.  Wählen Sie im Bereich **App hinzufügen** die Option **Windows-App (Win32) – Vorschau** aus der bereitgestellten Dropdownliste aus.
+4.  Wählen Sie **Windows-App (Win32)** aus der Dropdownliste im App-Bereich **Hinzufügen** aus.
 
     ![Screenshot des Blatts „App hinzufügen“ – Dropdownfeld zum Hinzufügen des Typs](./media/apps-win32-app-01.png)
 
@@ -85,6 +85,10 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
     ![Screenshot des Blatts „App-Paketdatei“](./media/apps-win32-app-02.png)
 
 2.  Wählen Sie im Bereich **App-Paketdatei** die Schaltfläche zum Durchsuchen. Wählen Sie dann eine Windows-Installationsdatei mit der Erweiterung *.intunewin* aus.
+
+    > [!IMPORTANT]
+    > Stellen Sie sicher, dass Sie die neueste Version des Microsoft Win32-Inhaltsvorbereitungstools verwenden. Wenn Sie nicht die neueste Version verwenden, wird eine Warnung angezeigt, die angibt, dass die App mit einer älteren Version des Tools verpackt wurde. 
+
 3.  Wählen Sie danach **OK**.
 
 ### <a name="step-3-configure-app-information"></a>Schritt 3: Konfigurieren von App-Informationen
@@ -171,7 +175,7 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
             
                 ![Screenshot des Erkennungsregelbereichs – Registrierungsschlüsselvorkommen](./media/apps-win32-app-05.png)    
             
-            2.  Überprüfen Sie auf vorhandene Registrierungswerte (**Nicht verfügbar in der Vorschau**).
+            2.  Überprüfen Sie, ob der Registrierungswert vorhanden ist.
         
                 ![Screenshot des Erkennungsregelbereichs – Registrierungswertvorkommen](./media/apps-win32-app-06.png)    
         

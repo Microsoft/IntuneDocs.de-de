@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3c100ef3e598bf377f0464bfba161d4ad689ba98
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: bab1656ec141b26cc3e9cb4195da7c1c24e401a1
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626038"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230170"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Registrierung von Windows-Geräten
 
@@ -82,6 +82,12 @@ Der Contoso DNS-Administrator sollte die folgenden CNAMEs erstellen:
 `EnterpriseEnrollment-s.manage.microsoft.com` – Unterstützt eine Umleitung zum Intune-Dienst mit Domänenerkennung anhand des E-Mail-Domänennamens
 
 Es kann bis zu 72 Stunden dauern, bis Änderungen an DNS-Einträgen vollständig verteilt sind. Sie können die DNS-Änderung in Intune erst überprüfen, wenn der DNS-Eintrag verteilt ist.
+
+## <a name="additional-endpoints-are-supported-but-not-recommended"></a>Zusätzliche Endpunkte werden unterstützt, aber nicht empfohlen
+„EnterpriseEnrollment-s.manage.microsoft.com“ ist der bevorzugte vollqualifizierte Domänenname für die Registrierung, es gibt jedoch zwei andere Endpunkte, die bereits von Kunden verwendet wurden und unterstützt werden. „EnterpriseEnrollment.manage.microsoft.com“ (ohne „-s“) und „manage.microsoft.com“ sind beide gültige Ziele für den Server für die automatische Ermittlung, allerdings muss der Benutzer dann auf einer Bestätigungsmeldung auf „OK“ tippen. Wenn Sie auf „EnterpriseEnrollment-s.manage.microsoft.com“ zeigen, muss der Benutzer keinen zusätzlichen Bestätigungsschritt vornehmen, weshalb dies die empfohlene Konfiguration ist.
+
+## <a name="alternate-methods-of-redirection-are-not-supported"></a>Alternative Umleitungsmethoden werden nicht unterstützt
+Das Verwenden einer anderen Methode als die CNAME-Konfiguration wird nicht unterstützt. Beispielsweise wird die Verwendung eines Proxyservers zum Umleiten von „enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc“ auf „enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc“ oder „manage.microsoft.com/EnrollmentServer/Discovery.svc“ nicht unterstützt.
 
 **Schritt 2: Verifizieren des CNAME-Eintrags** (optional)<br>
 1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Windows-Registrierung** > **CNAME-Validierung** aus.

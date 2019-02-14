@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba60df2dcec51e1c45e6a84a8fc9831937f70aef
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 25b6ca031b0c31f3ef517c9d2886853ec41c31da
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190061"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303513"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Öffentliche Vorschau: Konfigurieren von eSIM-Mobilfunkprofilen in Intune
 
@@ -35,7 +35,7 @@ In Intune können Sie einmalige Aktivierungscodes importieren, die von Ihrem Mob
 
 Für die Bereitstellung von eSIM auf Ihren Geräten mithilfe von Intune ist Folgendes erforderlich:
 
-- **eSIM-fähige Geräte**, z.B. das Surface LTE. Überprüfen Sie, ob [Ihr Gerät eSIM unterstützt](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data). Alternativ können Sie eine Liste [einiger der bekannten eSIM-fähigen Geräte](#esim-capable-devices) anzeigen (in diesem Artikel).
+- **eSIM-fähige Geräte**, z.B. das Surface LTE: Überprüfen Sie, [ob Ihr Gerät eSIM unterstützt](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data). Alternativ können Sie eine Liste [einiger der bekannten eSIM-fähigen Geräte](#esim-capable-devices) anzeigen (in diesem Artikel).
 - **PC mit Windows 10 Fall Creators Update** (ab 1709), der registriert ist und von Intune MDM-verwaltet wird
 - Von Ihrem Mobilfunkanbieter bereitgestellte **Aktivierungscodes**. Diese einmaligen Aktivierungscodes werden zu Intune hinzugefügt und auf Ihren eSIM-fähigen Geräten bereitgestellt. eSIM-Aktivierungscodes können Sie bei Ihrem Mobilfunkanbieter erwerben.
 
@@ -65,6 +65,9 @@ Die folgenden Geräte wurden als eSIM-fähig angekündigt oder sind aktuell auf 
 - Lenovo T480
 - Samsung Galaxy Book
 - Surface Pro LTE
+- HP Spectre Folio 13
+- Lenovo Yoga C630
+- Samsung Galaxy Book 2
 
 ## <a name="step-1-add-cellular-activation-codes"></a>Schritt 1: Hinzufügen von Aktivierungscodes für Mobilfunkverbindungen
 
@@ -92,7 +95,7 @@ Stellen Sie bei der Arbeit mit der CSV-Datei, welche die Aktivierungscodes enth�
 2. Die zweite und alle weiteren Zeilen enthalten eindeutige, einmalige Aktivierungscodes mit zwei Werten:
 
     1. Die erste Spalte enthält die ICCID (Bezeichner des SIM-Chips)
-    2. Die zweite Spalte enthält die entsprechende ID, die nur durch ein Komma von der ICCID getrennt ist (kein Komma am Ende). Dieser Schritt wird im folgenden Beispiel dargestellt:
+    2. Die zweite Spalte enthält die entsprechende ID, die nur durch ein Komma von der ICCID getrennt ist (kein Komma am Ende). Siehe das folgende Beispiel:
 
         ![CSV-Beispieldatei mit Aktivierungscodes des Mobilfunkanbieters](./media/esim-device-configuration/url-activation-code-examples.png)
 
@@ -100,7 +103,7 @@ Stellen Sie bei der Arbeit mit der CSV-Datei, welche die Aktivierungscodes enth�
 
     ![Der Abonnementpool der Mobilfunkverbindung wird nach dem Namen der CSV-Beispieldatei mit dem Aktivierungscode benannt](./media/esim-device-configuration/subscription-pool-name-csv-file.png)
 
-## <a name="step-2-create-an-azure-ad-device-group"></a>Schritt 2: Erstellen einer Azure AD-Gerätegruppe
+## <a name="step-2-create-an-azure-ad-device-group"></a>Schritt 2: Erstellen einer Azure AD-Gerätegruppe
 
 Erstellen Sie eine Gerätegruppe, welche die eSIM-fähigen Geräte enthält. Unter [Hinzufügen von Gruppen](groups-add.md) werden die einzelnen Schritte aufgeführt.
 
@@ -108,7 +111,7 @@ Erstellen Sie eine Gerätegruppe, welche die eSIM-fähigen Geräte enthält. Unt
 > - Es gibt nur Zielgeräte, keine Zielbenutzer.
 > - Es wird empfohlen, eine statische Azure AD-Gerätegruppe zu erstellen, die Ihre eSIM-Geräte enthält. Durch die Verwendung einer Gruppe wird bestätigt, dass Sie nur über eSIM-Zielgeräte verfügen.
 
-## <a name="step-3-assign-esim-activation-codes-to-devices"></a>Schritt 3: Zuweisen von eSIM Aktivierungscodes zu Geräten
+## <a name="step-3-assign-esim-activation-codes-to-devices"></a>Schritt 3: Zuweisen von eSIM Aktivierungscodes zu Geräten
 
 Weisen Sie der Azure AD-Gruppe mit Ihren eSIM-Geräten das Profil zu.
 
@@ -145,10 +148,10 @@ Nachdem Sie Ihr Geräteprofil erstellt haben, bietet Intune grafische Diagramme.
 
     Intune zeigt den Bereitstellungs- und den Installationsstatus für den Aktivierungscode der Zielgeräte an.
 
-    - **Gerät nicht synchronisiert**: Das Zielgerät hat seit der Erstellung der eSIM-Bereitstellungsrichtlinie keinen Kontakt zu Intune aufgenommen
-    - **Ausstehende Aktivierung**: Ein vorübergehender Zustand, in dem Intune den Aktivierungscode auf dem Gerät installiert
-    - **Aktiv**: Die Installation des Aktivierungscodes war erfolgreich
-    - **Fehler bei Aktivierung**: Die Installation des Aktivierungscodes ist fehlgeschlagen; weitere Informationen finden Sie im Leitfaden für die Problembehandlung.
+    - **Gerät nicht synchronisiert:** Das Zielgerät hat seit der Erstellung der eSIM-Bereitstellungsrichtlinie keinen Kontakt zu Intune aufgenommen
+    - **Aktivierung steht aus:** Ein vorübergehender Zustand, in dem Intune den Aktivierungscode auf dem Gerät installiert
+    - **Aktiv:** Die Installation des Aktivierungscodes war erfolgreich
+    - **Fehler bei der Aktivierung:** Die Installation des Aktivierungscodes ist fehlgeschlagen. Weitere Informationen finden Sie im Leitfaden zur Problembehandlung.
 
 #### <a name="view-the-detailed-device-status"></a>Anzeigen des detaillierten Gerätestatus
 
@@ -157,12 +160,12 @@ Sie können eine detaillierte Liste der Geräte überwachen und anzeigen, die un
 1. Wählen Sie **Gerätekonfiguration** > **eSIM-Mobilfunkprofile** > Select an existing subscription (Vorhandenes Abonnement auswählen) aus.
 2. Wählen Sie **Gerätestatus** aus. Intune zeigt weitere Details zu dem Gerät an:
 
-  - **Gerätename**: Der Name des Zielgeräts
-  - **Benutzer**: Der Benutzer des registrierten Geräts
-  - **ICCID**: Ein eindeutiger Code, der vom Mobilfunkanbieter im Aktivierungscode des Geräts bereitgestellt wird
-  - **Aktivierungsstatus**: Der Bereitstellungs- und Installationsstatus des Aktivierungscodes auf dem Gerät von Intune
-  - **Mobilfunkstatus**: Der vom Mobilfunkanbieter bereitgestellte Status. Befassen Sie sich zur Fehlerbehebung näher mit dem Mobilfunkanbieter.
-  - **Letzter Check-in**: Das Datum, an dem das Gerät zuletzt mit Intune kommuniziert hat
+  - **Gerätename:** Der Name des Zielgeräts
+  - **Benutzer:** Der Benutzer des registrierten Geräts
+  - **ICCID:** Ein eindeutiger Code, der vom Mobilfunkanbieter im Aktivierungscode des Geräts bereitgestellt wird
+  - **Aktivierungsstatus:** Der Bereitstellungs- und Installationsstatus des Aktivierungscodes auf dem Gerät von Intune
+  - **Mobilfunkstatus:** Der vom Mobilfunkanbieter bereitgestellte Status Befassen Sie sich zur Fehlerbehebung näher mit dem Mobilfunkanbieter.
+  - **Letztes Einchecken:** Das Datum, an dem das Gerät zuletzt mit Intune kommuniziert hat
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Überwachen von eSIM-Profildetails auf dem aktuellen Gerät
 
@@ -190,8 +193,8 @@ Das eSIM-Profil wird auch entfernt, wenn der Benutzer das Gerät [außer Betrieb
 - Achten Sie darauf, dass Ihre CSV-Datei ordnungsgemäß formatiert ist. Vergewissern Sie sich, dass die Datei weder doppelte Codes noch mehrere Mobilfunkanbieter oder unterschiedliche Datentarife enthält. Beachten Sie, dass jede Datei für einen Mobilfunkbetreiber und einen Datenverbindungstarif eindeutig sein muss.
 - Erstellen Sie eine statische Azure AD-Gruppe, die nur die vorgesehenen eSIM-Geräte enthält.
 - Überprüfen Sie Folgendes, wenn bei dem Bereitstellungsstatus ein Problem vorliegt:
-  - **Dateiformat nicht ordnungsgemäß**: Informationen zur ordnungsgemäßen Formatierung Ihrer Datei finden Sie unter **Schritt 1: Hinzufügen von Aktivierungscodes für Mobilfunkverbindungen** (in diesem Artikel).
-  - **Fehler bei der Aktivierung der Mobilfunkverbindung, Kontaktieren des Mobilfunkanbieters**: Der Aktivierungscode kann möglicherweise nicht in ihrem Netzwerk aktiviert werden. Alternativ können auch das Herunterladen des Profils und die Aktivierung der Mobilfunkverbindung fehlschlagen.
+  - **File format not proper** (Nicht unterstütztes Dateiformat): Siehe **Schritt 1: Hinzufügen von Aktivierungscodes für Mobilfunkverbindungen** (in diesem Artikel), um in Erfahrung zu bringen, wie Sie Ihre Datei ordnungsgemäß formatieren.
+  - **Cellular activation failure, contact mobile operator** (Die Aktivierung der Mobilfunkverbindung ist fehlgeschlagen, wenden Sie sich an den Mobilfunkanbieter): Möglicherweise ist der Aktivierungscode nicht im Netzwerk aktiviert. Alternativ können auch das Herunterladen des Profils und die Aktivierung der Mobilfunkverbindung fehlschlagen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 [Konfigurieren von Geräteprofilen](device-profiles.md)

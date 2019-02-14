@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f2b75eb5a87dbfd7a17aee83f173d3d472920428
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203636"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230119"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
@@ -420,7 +420,7 @@ Sie können Informationen definieren, auf die alle Apps auf dem Gerät zugreifen
 
 - **Startmenülayout:** Sie können eine XML-Datei hochladen, die Ihre Anpassungen einschließlich der Reihenfolge der aufgeführten Apps etc. enthält, um das Startmenü auf Desktopgeräten anzupassen. Benutzer können das von Ihnen festgelegte Startmenülayout nicht ändern.
 - **Pin websites to tiles in Start menu** (Websites an Kacheln im Startmenü anheften): Importieren Sie Bilder von Microsoft Edge, die im Windows-Startmenü von Desktopgeräten als Links angezeigt werden.
-- **Unpin apps from task bar** (Apps von der Taskleiste lösen): Wählen Sie die Option **Blockieren** aus, damit der Benutzer keine Apps vom Startmenü lösen kann.
+- **Unpin apps from task bar** (Apps von der Taskleiste lösen): Wählen Sie die Option **Blockieren** aus, damit der Benutzer keine Apps von der Taskleiste lösen kann.
 - **Schneller Wechsel zwischen Benutzern:** Wählen Sie die Option **Blockieren** aus, um das Wechseln zwischen zwei gleichzeitig angemeldeten Benutzern ohne Abmeldung zu verhindern.
 - **Most used apps** (Meistverwendete Apps): Wählen Sie die Option **Blockieren** aus, um die Anzeige der meistverwendeten Apps im Startmenü auszublenden. Damit wird auch der entsprechende Schalter in der App „Einstellungen“ deaktiviert.
 - **Zuletzt hinzugefügte Apps:** Wählen Sie die Option **Blockieren** aus, um die Anzeige der zuletzt hinzugefügten Apps im Startmenü auszublenden. Damit wird auch der entsprechende Schalter in der App „Einstellungen“ deaktiviert.

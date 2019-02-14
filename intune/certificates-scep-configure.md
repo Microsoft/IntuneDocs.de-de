@@ -2,24 +2,24 @@
 title: 'Verwenden von SCEP-Zertifikaten mit Microsoft Intune: Azure | Microsoft-Dokumentation'
 description: Konfigurieren Sie ihre lokale AD-Domäne, erstellen Sie eine Zertifizierungsstelle, richten Sie den NDES-Server ein und installieren Sie Intune Certificate Connector, um SCEP-Zertifikate in Microsoft Intune zu verwenden. Erstellen Sie dann ein SCEP-Zertifikatprofil, und weisen Sie dieses Gruppen zu. Sie können sich außerdem einen Überblick über die verschiedenen Ereignis-IDs und ihre Beschreibungen sowie über Diagnosecodes für den Intune-Connectordienst verschaffen.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: kmyrup
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ee61063a36a486a0840446f82834bc37cc96bfc0
-ms.sourcegitcommit: a843bd081e9331838ade05a3c05b02d60b6bec4c
+ms.openlocfilehash: f8b4d1aded0198dfc3dcccf6bdeda30bb54ee651
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53597374"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230153"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune
 
@@ -35,7 +35,7 @@ In diesem Artikel wird erläutert, wie Sie Ihre Infrastruktur konfigurieren und 
 - **NDES-Server**: Richten Sie auf einem Server mit Windows Server 2012 R2 oder höher die Serverrolle „Registrierungsdienst für Netzwerkgeräte“ (Network Device Enrollment Service, NDES) ein. Intune unterstützt die Verwendung von NDES nicht auf Servern, die auch die Unternehmenszertifizierungsstelle ausführen. Im [Leitfaden für den Registrierungsdienst für Netzwerkgeräte](http://technet.microsoft.com/library/hh831498.aspx) finden Sie Anweisungen zum Konfigurieren von Windows Server 2012 R2 zum Hosten von NDES.
 Der NDES-Server muss mit einer Domäne verknüpft sein, die dieselbe Gesamtstruktur aufweist wie die Unternehmenszertifizierungsstelle. Weitere Informationen zum Bereitstellen des NDES-Servers in einer separaten Gesamtstruktur, in einem isolierten Netzwerk oder in einer internen Domäne finden Sie unter [Verwenden eines Richtlinienmoduls mit dem Registrierungsdienst für Netzwerkgeräte](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **Microsoft Intune Certificate Connector**: Laden Sie das Installationsprogramm (**NDESConnectorSetup.exe**) für den **Certificate Connector** aus dem Intune-Verwaltungsportal herunter. Führen Sie dieses Installationsprogramm über die NDES-Rolle auf dem Server aus.  
+- **Microsoft Intune Certificate Connector**: Laden Sie das Installationsprogramm (**NDESConnectorSetup.exe**) für den **Certificate Connector** aus dem Intune-Verwaltungsportal herunter. Führen Sie diesen Installer über die NDES-Rolle auf dem Server aus.  
 
   - Der NDES-Certificate Connector unterstützt ebenfalls den FIPS-Modus (Federal Information Processing Standard). FIPS ist nicht erforderlich, Sie können jedoch Zertifikate ausstellen und widerrufen, wenn dieser Modus aktiviert ist.
 
@@ -305,7 +305,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 4. Nachdem der Download abgeschlossen ist, navigieren Sie zum Server, der die NDES-Rolle hostet. Führen Sie anschließend Folgendes durch:
 
     1. Stellen Sie sicher, dass .NET Framework 4.5 installiert ist (dies ist für den NDES-Certificate Connector erforderlich). .NET Framework 4.5 ist automatisch in Windows Server 2012 R2 und höheren Versionen enthalten.
-    2. Führen Sie das Installationsprogramm (**NDESConnectorSetup.exe**) aus. Das Installationsprogramm installiert auch das Richtlinienmodul für NDES und den CRP-Webdienst. Der CRP-Webdienst „CertificateRegistrationSvc“ wird als Anwendung in IIS ausgeführt.
+    2. Führen Sie den Installer aus (**NDESConnectorSetup.exe**). Das Installationsprogramm installiert auch das Richtlinienmodul für NDES und den CRP-Webdienst. Der CRP-Webdienst „CertificateRegistrationSvc“ wird als Anwendung in IIS ausgeführt.
 
     > [!NOTE]
     > Bei der Installation von NDES für eigenständiges Intune wird der CRP-Dienst automatisch mit dem Zertifikatconnector installiert. Bei Verwendung von Intune mit dem Konfigurations-Manager installieren Sie den Zertifikatregistrierungspunkt als eine separate Standortsystemrolle.
@@ -556,9 +556,10 @@ Ab Version 6.1806.x.x protokolliert der Intune-Connectordienst Ereignisse in der
 | 0x00000409 | CRPSCEPSigningCert_NotFound  | Das Signaturzertifikat konnte nicht abgerufen werden. Stellen Sie sicher, dass der Intune-Connectordienst richtig konfiguriert ist und der Intune-Connectordienst ausgeführt wird. Achten Sie außerdem darauf, dass Zertifikatdownloads erfolgreich abgeschlossen wurden. |
 | 0x00000410 | CRPSCEPDeserialize_Failed  | Die SCEP-Abfrage konnte nicht deserialisiert werden. Stellen Sie sicher, dass SCEP und der Intune-Connector richtig eingerichtet sind. |
 | 0x00000411 | CRPSCEPChallenge_Expired  | Die Anforderung wurde aufgrund einer abgelaufenen Zertifikatabfrage abgelehnt. Das Clientgerät kann eine neue Anforderung stellen, nachdem es eine neue Abfrage vom Verwaltungsserver abgerufen hat. |
-| 0x0FFFFFFFF | Unknown_Error  | Die Anforderung kann nicht abgeschlossen werden, da ein serverseitiger Fehler aufgetreten ist. Wiederholen Sie den Vorgang. |
+| 0x0FFFFFFFF | Unknown_Error  | Die Anforderung kann nicht abgeschlossen werden, da ein serverseitiger Fehler aufgetreten ist. Bitte versuchen Sie es erneut. |
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Verwenden Sie PKCS-Zertifikate](certficates-pfx-configure.md) oder [stellen Sie PKCS-Zertifikate über einen Symantec-PKI-Verwaltungswebservice aus](certificates-symantec-configure.md).
-- [Add a 3rd party CA to use SCEP with Intune (Hinzufügen einer Zertifizierungsstelle eines Drittanbieters zur Verwendung von SCEP mit Intune)](certificate-authority-add-scep-overview.md)
+- [Verwenden Sie PKCS-Zertifikate](certficates-pfx-configure.md), oder [stellen Sie PKCS-Zertifikate über einen Symantec-PKI-Verwaltungswebservice aus](certificates-symantec-configure.md).
+- [Hinzufügen einer Partnerzertifizierungsstelle in Intune mithilfe von SCEP](certificate-authority-add-scep-overview.md)
+- Weitere Unterstützung finden Sie im Leitfaden zur [Problembehandlung für die Bereitstellung eines SCEP-Zertifikatprofils in Microsoft Intune](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune).
