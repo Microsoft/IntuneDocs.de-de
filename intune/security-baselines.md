@@ -14,12 +14,13 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8102ab88e878f7976ab7946f67080c4d4f23d6b1
-ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c610371760413cc157bee84382280666f387432b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690715"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850827"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Erstellen einer Windows 10-Sicherheitsbaseline in Intune
 

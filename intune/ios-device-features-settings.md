@@ -14,12 +14,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 8656e480c292fc9ed1212f9d2c180b791cb4f94c
-ms.sourcegitcommit: ce76541ceb783eb2e242032ef8579041d2f61532
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4a2acd4e54329dbfd43e468a3a0f3b1fa62eee44
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431489"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850104"
 ---
 # <a name="ios-device-feature-settings-in-intune"></a>iOS-Gerätefunktionseinstellungen in Intune
 

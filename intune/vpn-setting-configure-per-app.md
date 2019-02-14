@@ -15,12 +15,13 @@ ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c0177e136d516ba1d4fe44c7301b1534ab1c5e6a
-ms.sourcegitcommit: 12f8b7f0bca1baa2c1f68dd6af4f16a4814daa11
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 36ba25941950e403d1ab1861efac8db7dd3daede
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55737467"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841707"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Einrichten eines Pro-App-VPN für iOS-Geräte in Intune
 

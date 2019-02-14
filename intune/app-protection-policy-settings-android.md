@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 1/28/2019
+ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,13 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 08848853a70d0fbdabeb123960f36dc19478e6c2
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 89945a1b5036ff298a49bba444b23a8f317681b1
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230051"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086164"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Einstellungen für App-Schutzrichtlinien in Microsoft Intune
 In diesem Artikel werden die Einstellungen für App-Schutzrichtlinien für Android-Geräte beschrieben. Die beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Einstellungen** für eine Schutzrichtlinie [konfiguriert](app-protection-policies.md) werden.

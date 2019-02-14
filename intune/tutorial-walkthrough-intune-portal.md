@@ -16,12 +16,13 @@ Customer intent: As an Intune admin, I want to learn where to find the different
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f9d72ec2f35f15e2515160869fc352360b17e812
-ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 18c7a63900f0d77bbf90ecd6f3e8627d77a4f6e5
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "55645171"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55839199"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: Überblick über Microsoft Intune im Azure-Portal
 

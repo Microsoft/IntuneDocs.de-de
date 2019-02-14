@@ -14,12 +14,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 94e09f413ea0e6b3811c7c19a93d188ac15ee04c
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 302f9b34102240c057f7de80abd03a5dda65945f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230085"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850235"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
