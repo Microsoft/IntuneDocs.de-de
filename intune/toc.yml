@@ -65,6 +65,8 @@ items:
     href: common-scenarios.md
   - name: Technologieentscheidungen für BYOD mit EMS
     href: byod-technology-decisions.md
+  - name: App-Schutzrichtlinien und Arbeitsprofile (Android)
+    href: android-deployment-scenarios-app-protection-work-profiles.md
   - name: Verwalten von Betriebssystemversionen
     href: manage-os-versions.md
   - name: Verwalten von Windows Holographic
@@ -227,6 +229,45 @@ items:
       href: enrollment-report-company-portal-abandon.md
     - name: Behandlung von Problemen bei der Geräteregistrierung
       href: troubleshoot-device-enrollment-in-intune.md
+  - name: Verwalten von Geräten
+    href: device-management.md
+    items:
+    - name: Funktionen zur Geräteverwaltung
+      href: device-management-capabilities.md
+    - name: Aktivierungssperre umgehen
+      href: device-activation-lock-bypass.md
+    - name: Verwalten von Windows Fresh Start
+      href: device-fresh-start.md
+    - name: Finden eines verlorenen iOS-Geräts
+      href: device-locate.md
+    - name: Aktivieren des iOS-Modus für verlorene Geräte
+      href: device-lost-mode.md
+    - name: Aktivieren des überwachten iOS-Modus
+      href: device-supervised-mode.md
+    - name: Sperren eines Geräts
+      href: device-remote-lock.md
+    - name: Kennung zurücksetzen
+      href: device-passcode-reset.md
+    - name: Neustarten eines Geräts
+      href: device-restart.md
+    - name: Abmelden eines aktuellen Benutzers
+      href: device-logout-user.md
+    - name: Benutzer entfernen
+      href: device-remove-user.md
+    - name: Gerät löschen
+      href: device-erase.md
+    - name: Remotesteuerung mobiler Geräte
+      href: device-profile-android-teamviewer.md
+    - name: Zurücksetzen der PIN unter Windows 10
+      href: device-windows-pin-reset.md
+    - name: Installieren des Exchange-Connectors
+      href: exchange-service-connector-configure.md
+    - name: Synchronisieren eines Geräts
+      href: device-sync.md
+    - name: Untersuchen des Gerätebestands
+      href: device-inventory.md
+    - name: Entfernen von Geräten
+      href: devices-wipe.md
   - name: Gerätekompatibilität festlegen
     items:
     - name: Konformitätsübersicht
@@ -957,9 +998,9 @@ items:
       href: data-outside-protect.md
     - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
       href: data-leak-prevention.md
-ms.openlocfilehash: ace0bec62318d846cdcc37330abb63b2a89fef14
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 365777adf57d1f36577e2e6f20cce6b193a829f8
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986908"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302199"
