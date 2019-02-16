@@ -372,7 +372,8 @@ items:
       - name: Installieren des Connectors für Exchange lokal
         href: exchange-connector-install.md
       - name: Erstellen und Zuweisen der Richtlinie für bedingten Zugriff
-        href: conditional-access-exchange-create.md
+      - name: Gerätebasierte bedingte Zugriffsrichtlinie
+        href: create-conditional-access-intune.md
       - name: Erneutes Zuweisen von Richtlinien für bedingten Zugriff über das klassische Intune-Portal
         href: conditional-access-intune-reassign.md
       - name: App-basierter bedingter Zugriff
@@ -998,9 +999,9 @@ items:
       href: data-outside-protect.md
     - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
       href: data-leak-prevention.md
-ms.openlocfilehash: 365777adf57d1f36577e2e6f20cce6b193a829f8
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: 1183db94d839619e1130261345f6988a627938bb
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302199"
+ms.locfileid: "56307854"
