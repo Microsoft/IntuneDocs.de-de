@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f5afb23fd571b03e4fde97cb7800c399819d4cc8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230119"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849842"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
@@ -70,6 +71,7 @@ Diese Einstellungen werden erst einem Gerätekonfigurationsprofil in Intune hinz
 - **Microsoft-Konto**: Ermöglicht dem Benutzer, das Gerät einem Microsoft-Konto zuzuordnen.
 - **Nicht-Microsoft-Konto:** erlaubt dem Benutzer, dem Gerät E-Mail-Konten hinzuzufügen, die nicht mit einem Microsoft-Konto verknüpft sind.
 - **Settings synchronization for Microsoft account** (Einstellungssynchronisierung für das Microsoft-Konto): ermöglicht das Synchronisieren der mit einem Microsoft-Konto verknüpften Geräte- und App-Einstellungen zwischen Geräten.
+- **Anmelde-Assistent für Microsoft-Konten:** Klicken Sie auf **Deaktivieren**, um zu verhindern, dass Endbenutzer den Anmelde-Assistenten für Microsoft-Konten (wlidsvc) konfigurieren, z.B. den Dienst manuell anhalten oder starten. Wenn der wlidsvc NT-Dienst auf **Not configured** (nicht konfiguriert) festgelegt wurde, verwendet er die Standardeinstellung des Betriebssystems, wodurch Endbenutzer den Dienst starten und anhalten können. Dieser Dienst wird vom Betriebssystem genutzt, damit sich Benutzer bei ihrem Microsoft-Konto anmelden können.
 
 ## <a name="cloud-printer"></a>Clouddrucker
 
@@ -192,7 +194,7 @@ Verwenden Sie die Schaltfläche **Hinzufügen**, um eine Kioskkonfiguration zu e
 ## <a name="locked-screen-experience"></a>Gesperrter Bildschirm
 
 - **Benachrichtigungen des Info-Centers (nur Mobilgerät):** lässt Info-Center-Benachrichtigungen auf dem Gerätesperrbildschirm anzeigen (nur Windows 10 Mobile).
-- **URL zu Bild für gesperrten Bildschirm (nur Desktop):** Geben Sie die URL zu einem Bild im JPEG-Format ein, das als Hintergrund für den Windows-Sperrbildschirm verwendet wird. Benutzer können diese Einstellung nicht ändern.
+- **URL zu Bild für gesperrten Bildschirm (nur Desktop):** Geben Sie die URL zu einem Bild im JPEG-Format ein, das als Hintergrund für den Windows-Sperrbildschirm verwendet wird. Durch dieses Einstellung wird das Bild gesperrt. Das Bild kann im Nachhinein nicht geändert werden.
 - **Vom Benutzer konfigurierbares Bildschirmtimeout (nur Mobilgeräte):** lässt Benutzer die Zeitspanne konfigurieren. 
 - **Cortana on locked screen (desktop only)** (Cortana auf Sperrbildschirm (nur Desktopgeräte)): lässt nicht zu, dass der Benutzer mit Cortana interagiert, wenn auf dem Gerät der Sperrbildschirm zu sehen ist (nur Windows 10 Desktop).
 - **Toast notifications on locked screen** (Popupbenachrichtigungen auf Sperrbildschirm): verhindert, dass Warnmeldungen auf dem Gerätesperrbildschirm angezeigt werden.
@@ -313,7 +315,6 @@ Verwenden Sie die Schaltfläche **Hinzufügen**, um eine Kioskkonfiguration zu e
   - **Wiederverwendung vorheriger Kennwörter verhindern:** Gibt an, wie viele zuvor verwendete Kennwörter vom Gerät gespeichert werden.
   - **Require password when device returns from idle state (Mobile only)** (Kennwort anfordern, wenn das Gerät aus Leerlaufzustand zurückkehrt (nur Mobilgeräte)): Gibt an, dass der Benutzer ein Kennwort zum Entsperren des Geräts eingeben muss (nur Windows 10 Mobile).
   - **Einfache Kennwörter:** Erlaubt die Verwendung einfacher Kennwörter wie 1111 oder 1234. Diese Einstellung ermöglicht es auch, die Verwendung von Windows-Bildcodes zu blockieren.
-- **Verschlüsselung:** Ermöglicht die Verschlüsselung auf Zielgeräten.
 
 ## <a name="per-app-privacy-exceptions"></a>App-bezogene Datenschutzausnahmen
 
