@@ -32,6 +32,9 @@ Durch die automatische Registrierung können Benutzer ihre Windows 10-Geräte in
       >
       > Für unternehmenseigene Geräte hat der MDM-Benutzerbereich Vorrang, wenn beide Bereiche aktiviert sind. Die Geräte werden für die mobile Geräteverwaltung registriert.
 
+   > [!NOTE]
+   > Der MAM-Benutzerbereich muss auf eine Benutzergruppe oder eine Sammlung festgelegt werden.
+
    ![Screenshot des Azure-Portals](../media/auto-enroll-scope.png)
 
 5. Verwenden Sie die Standardwerte für die folgenden URLs:

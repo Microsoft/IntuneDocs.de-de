@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d0594c9f14b9d18c597de9ca37826a669dde5f3
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 573ca3aa10094e61165d297730d556e2ef559767
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986874"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302182"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Verwalten von PowerShell-Skripts in Intune für Windows 10-Geräte
 
@@ -31,9 +31,9 @@ Verwenden Sie die Verwaltungserweiterung von Intune, um PowerShell-Skripts in In
 
 Die individuelle Datenverarbeitung durchläuft eine digitale Transformation. Die klassische, traditionelle IT konzentriert sich auf eine einzelne Geräteplattform, unternehmenseigene Geräte, Benutzer, die vom Büro aus arbeiten und eine Vielzahl von manuellen, reaktiven IT-Prozessen. Am modernen Arbeitsplatz werden viele benutzer- und unternehmenseigene Plattformen verwendet. Dadurch können Benutzer von überall aus arbeiten, und automatisierte und proaktive IT-Prozesse werden ermöglicht.
 
-MDM-Dienste wie Microsoft Intune können mobile Geräte und Desktopgeräte verwalten, die Windows 10 ausführen. Der integrierte Windows 10-Verwaltungsclient kommuniziert mit Intune, um Aufgaben für die Unternehmensverwaltung auszuführen. Einige Funktionen, die Sie möglicherweise benötigen, wie die erweiterte Gerätekonfiguration, die Problembehandlung und eine ältere Win32-App-Verwaltung sind derzeit nicht für die mobile Geräteverwaltung für Windows 10 verfügbar. Für diese Funktionen können Sie den Intune-Softwareclient auf Ihren Windows 10-Geräten ausführen. Das [Vergleichen der Verwaltung von Windows-PCs als Computer oder mobile Geräte](pc-management-comparison.md) ist eine großartige Ressource.
+MDM-Dienste wie Microsoft Intune können mobile Geräte und Desktopgeräte verwalten, die Windows 10 ausführen. Der integrierte Windows 10-Verwaltungsclient kommuniziert mit Intune, um Aufgaben für die Unternehmensverwaltung auszuführen. Es gibt einige Aufgaben, die Sie ggf. ausführen müssen, z.B. erweiterte Gerätekonfiguration und Problembehandlung. Für die Verwaltung von Win32-Apps können Sie das Feature [Win32-App-Verwaltung](apps-win32-app-management.md) auf Ihren Windows 10-Geräten verwenden.
 
-Die Intune-Verwaltungserweiterung ergänzt die integrierten MDM-Features für Windows 10. Sie können PowerShell-Skripts für die Ausführung auf Windows 10-Geräten erstellen. Sie können beispielsweise ein PowerShell-Skript erstellen, das eine ältere Win32-App installiert, das Skript in Intune hochlädt, es einer Azure Active Directory-Gruppe (AD) zuweist und ausführt. Sie können dann den Ausführungsstatus des Skripts von Anfang bis Ende überwachen.
+Die Intune-Verwaltungserweiterung ergänzt die integrierten MDM-Features für Windows 10. Sie können PowerShell-Skripts für die Ausführung auf Windows 10-Geräten erstellen. Sie können beispielsweise ein PowerShell-Skript erstellen, das erweiterte Gerätekonfigurationen ausführt, das Skript in Intune hochlädt, es einer Azure Active Directory-Gruppe (AD) zuweist und ausführt. Sie können dann den Ausführungsstatus des Skripts von Anfang bis Ende überwachen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 

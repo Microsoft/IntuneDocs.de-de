@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74445c678455dc881f79fed20ed68be6f090fe78
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 10b2ef5844c2d8889fd1d5c377fcefb8330be9e2
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834771"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325434"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien
 
@@ -87,7 +87,6 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 |App Empfang von Daten aus anderen Apps erlauben|X|X|
 |Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken|X|X|
 |Einfache PIN für Zugriff erforderlich|X|X|
-|Ersetzen der integrierten App-PIN durch die Intune-PIN|X||
 |Angeben der Anzahl von Versuchen vor dem Zurücksetzen der PIN|X|X|
 |Fingerabdruck anstelle von PIN zulassen|X|X|
 |Gesichtserkennung anstelle von PIN zulassen (nur iOS)|X|X|
@@ -98,8 +97,8 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 |Angeben der Offlinetoleranzperiode|X|X|
 |Blockieren von Bildschirmaufnahmen (nur Android)|X|X|
 |Unterstützung von MAM ohne Geräteregistrierung|X|X|
-|Vollständiges Zurücksetzen|X|X|
-|Selektives Zurücksetzen <br><br>**Hinweis:** Für iOS wird beim Entfernen des Verwaltungsprofils auch die App entfernt.|X||
+|Vollständiges Zurücksetzen von App-Daten|X|X|
+|Selektives Zurücksetzen von Geschäfts-, Schul- oder Unikontodaten in Szenarien mit mehreren Identitäten <br><br>**Hinweis:** Für iOS wird beim Entfernen des Verwaltungsprofils auch die App entfernt.|X||
 |Verhindern von „Speichern unter“|X||
 |Angestrebte Anwendungskonfiguration|X||
 |Unterstützung von mehreren Identitäten|X||

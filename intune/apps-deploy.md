@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ff89d1776d71dc24ea675de167f3fd22d6bdf04
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6b0c2bff4051a1adba1a68f38d8f0a9b80b914b4
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838766"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240060"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Zuweisen von Apps zu Gruppen mit Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Nachdem Sie Microsoft Intune [eine App hinzugefügt](apps-add.md) haben, können Sie diese Benutzern und Geräten zuweisen. Beachten Sie: Sie können eine App einem Gerät unabhängig davon zuweisen, ob das Gerät von Intune verwaltet wird. 
+Nachdem Sie Microsoft Intune [eine App hinzugefügt](apps-add.md) haben, können Sie diese Benutzern und Geräten zuweisen. Beachten Sie: Sie können eine App einem Gerät unabhängig davon zuweisen, ob das Gerät von Intune verwaltet wird.
 
 > [!NOTE]
 > Die Absicht „Verfügbare Bereitstellung“ wird nur für Benutzergruppen unterstützt, nicht für Gerätegruppen.
@@ -124,8 +124,19 @@ In manchen Fällen wird die gleiche App mehreren Gruppen zugewiesen, jedoch mit 
 > Nur für verwaltete iOS Store-Apps: Wenn Sie diese Apps Microsoft Intune hinzufügen und als **Erforderlich** zuweisen, werden sie automatisch sowohl mit der Absicht **Erforderlich** als auch mit der Absicht **Verfügbar** erstellt.<br><br>
 > iOS Store-Apps (keine iOS-VPP-Apps), die mit der Absicht „Erforderlich“ als Ziel verwendet werden, werden auf dem Gerät beim Check-In erzwungen und in der Unternehmensportal-App angezeigt.
 
-## <a name="android-enterprise-app-we-app-deployment"></a>Android Enterprise APP-WE-App-Bereitstellung
-Für Android-Geräte in einem Bereitstellungsszenario mit einer nicht registrierten App-Schutzrichtlinie ohne Registrierung (App Protection Policy Without Enrollment, APP-WE) können Sie jetzt verwaltetes Google Play zum Bereitstellen von Store-Apps und branchenspezifischen Apps für Benutzer verwenden. Insbesondere können Sie Endbenutzern einen App-Katalog bieten und für einen Installationsvorgang sorgen, in dem Endbenutzer nicht mehr den Sicherheitsstatus ihrer Geräte kompromittieren müssen, indem sie Installationen aus unbekannten Quellen zulassen. Darüber hinaus sorgt dieses Bereitstellungsszenario für höhere Benutzerfreundlichkeit. Anweisungen zum Zuweisen einer App finden Sie unter [Zuweisen einer App](apps-deploy.md#assign-an-app).
+## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Verwaltete Google Play-App-Bereitstellung für nicht verwaltete Geräte
+Für Android-Geräte in einem Bereitstellungsszenario mit einer nicht registrierten App-Schutzrichtlinie ohne Registrierung (App Protection Policy Without Enrollment, APP-WE) können Sie verwaltetes Google Play zum Bereitstellen von Store-Apps und branchenspezifischen Apps (LOB-Anwendungen) für Benutzer verwenden. Verwaltete Google Play-Apps mit dem Ziel **Verfügbar mit oder ohne Registrierung** werden in der Play Store-App auf dem Gerät des Benutzers und nicht in der Unternehmensportal-App angezeigt. Der Endbenutzer durchsucht und installiert wird die auf diese Weise bereitgestellten Apps aus der Play-App. Da die Apps über verwaltetes Google Play installiert werden, muss der Endbenutzer seine Geräteeinstellungen nicht ändern, um die App-Installation aus unbekannten Quellen zu ermöglichen, was bedeutet, dass die Geräte sicherer sind. Wenn der App-Entwickler eine neue Version einer App in Play veröffentlicht, die auf dem Gerät eines Benutzers installiert wurde, wird die App automatisch von Play aktualisiert. 
+
+Schritte zum Zuweisen einer verwalteten Google Play-App zu nicht verwalteten Geräten:
+
+1. Verbinden Sie Ihren Intune-Mandanten mit verwaltetem Google Play. Wenn dies bereits geschehen ist, um das Android Enterprise-Arbeitsprofil, dedizierte oder vollständig verwaltete Geräte zu verwalten, müssen Sie diesen Vorgang nicht erneut ausführen.
+2. Fügen Sie Apps aus verwaltetem Google Play Ihrer Intune-Konsole hinzu.
+3. Stellen Sie verwaltete Google Play-Apps als Ziel **Verfügbar mit oder ohne Registrierung** für die gewünschte Benutzergruppe bereit. Die App-Ziele **Erforderlich** und **Deinstallieren** werden für nicht registrierte Geräte nicht unterstützt.
+4. Weisen Sie der Benutzergruppe eine App-Schutzrichtlinie zu.
+5. Das nächste Mal, wenn der Endbenutzer die Unternehmensportal-App öffnet, erhält er eine Meldung, die besagt, dass Apps in der Play Store-App verfügbar sind.  Der Benutzer kann auf diese Benachrichtigung tippen, um direkt zur Play-App zu gelangen, um Unternehmens-Apps anzuzeigen, oder er kann separat zur Play Store-App navigieren.
+6. Der Endnutzer kann das Kontextmenü innerhalb der Play Store-App erweitern und zwischen seinem persönlichen Google-Konto (in dem seine persönlichen Apps angezeigt werden) und seinem Geschäftskonto (in dem die auf ihn zugeschnittenen Store- und LOB-Apps angezeigt werden) wechseln. Endbenutzer installieren die Apps durch Tippen auf „Installieren“ in der Play Store-App.
+
+Wenn ein selektiver APP-Löschbefehl in der Intune-Konsole ausgegeben wird, wird das Geschäftskonto automatisch aus der Play Store-App entfernt, und der Endbenutzer sieht ab diesem Zeitpunkt keine Geschäfts-Apps mehr im Play Store-App-Katalog. Wenn das Geschäftskonto von einem Gerät entfernt wird, bleiben aus dem Play Store installierte Apps auf dem Gerät installiert und werden nicht deinstalliert. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
