@@ -25,7 +25,6 @@
 
 ### [Behandeln häufig auftretender Probleme mit Android](troubleshoot-your-device-android.md)
 #### [Überprüfen der Gerätekompatibilität](check-compliance-on-your-device-android.md)
-#### [E-Mail-Synchronisierung in Outlook mit dem Stromsparmodus](power-saving-mode-android.md)
 #### [Beheben häufig auftretender Probleme mit Samsung Knox](samsung-knox-errors-android.md)
 #### [Aktualisieren Ihres Geräts für die Installation von Outlook](update-device-outlook-android.md)
 
