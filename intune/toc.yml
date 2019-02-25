@@ -199,15 +199,15 @@ items:
         href: android-enroll.md
       - name: Herstellen einer Verbindung zwischen Intune und Android Enterprise
         href: connect-intune-android-enterprise.md
-      - name: Einrichten der Registrierung von Android-Arbeitsprofilen
+      - name: Registrierung von Android Enterprise-Arbeitsprofilgeräten
         href: android-work-profile-enroll.md
-      - name: Einrichten der Registrierung von dedizierten Android-Geräten
+      - name: Registrierung von dedizierten Android Enterprise-Geräten
         href: android-kiosk-enroll.md
-      - name: Einrichten der Registrierung von vollständig verwalteten Android-Geräten
+      - name: Registrierung von vollständig verwalteten Android Enterprise-Geräten
         href: android-fully-managed-enroll.md
-      - name: Einrichten von dedizierten oder vollständig verwalteten Android-Geräten
+      - name: Registrierung dedizierter Android Enterprise-Geräte oder vollständig verwalteter Geräte
         href: android-dedicated-devices-fully-managed-enroll.md
-      - name: Verwalten von Android-Arbeitsprofilgeräten
+      - name: Verwalten von Android Enterprise-Arbeitsprofilgeräten
         href: android-enterprise-overview.md
       - name: Registrierung mobiler Geräte für Samsung Knox
         href: android-samsung-knox-mobile-enroll.md
@@ -250,6 +250,8 @@ items:
       href: device-remote-lock.md
     - name: Kennung zurücksetzen
       href: device-passcode-reset.md
+    - name: Gerät umbenennen
+      href: device-rename.md
     - name: Neustarten eines Geräts
       href: device-restart.md
     - name: Abmelden eines aktuellen Benutzers
@@ -578,6 +580,8 @@ items:
             href: app-protection-policies-exception.md
         - name: Überprüfen von App-Schutzrichtlinien
           href: app-protection-policies-validate.md
+        - name: Zustellung von App-Schutzrichtlinien
+          href: app-protection-policy-delivery.md
         - name: Überwachen des Benutzerstatus bei App-Schutz
           href: app-protection-policies-monitor.md
         - name: Vorbereitungen für WIP-App-Schutzrichtlinien
@@ -1001,9 +1005,9 @@ items:
       href: data-outside-protect.md
     - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
       href: data-leak-prevention.md
-ms.openlocfilehash: d10d6c5a1c19430a0413e4f3149035a9e783dfc6
-ms.sourcegitcommit: f1681554ad842c22ad3f82f0e6d44d5966e4aa3d
+ms.openlocfilehash: 680ae510d7f3387b53ad6ae50c8e4d8ba194f8b9
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56458908"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742821"
