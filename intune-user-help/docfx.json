@@ -1,6 +1,5 @@
 {
   "build": {
-    "markdownEngineName": "markdig",
     "content": [
       {
         "files": [
@@ -14,8 +13,8 @@
       }
     ],
     "resource": [
-        {
-          "files": [
+      {
+        "files": [
           "**/images/**",
           "**/*.png",
           "**/*.jpg",
@@ -23,7 +22,7 @@
           "**/*.bmp",
           "**/*.html",
           "**/*.css"
-          ],
+        ],
         "exclude": [
           "**/obj/**",
           "_themes/**"
@@ -35,16 +34,24 @@
     "globalMetadata": {
       "layout": "Conceptual",
       "breadcrumb_path": "/enterprise-mobility/toc.json",
-      "product_feedback_displaytext" : "Intune Feedback",
+      "product_feedback_displaytext": "Intune Feedback",
       "product_feedback_url": "https://microsoftintune.uservoice.com/",
-      "contributors_to_exclude": [ "herohua", "fenxu" ],
-      "searchScope": ["Intune"],
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/Intunedocs.de-de",      
+      "contributors_to_exclude": [
+        "herohua",
+        "fenxu"
+      ],
+      "searchScope": [
+        "Intune"
+      ],
       "_op_documentIdPathDepotMapping": {
         "./": {
           "depot_name": "Azure.EndUser",
           "folder_relative_path_in_docset": "."
         }
       }
-    }
+    },
+    "markdownEngineName": "markdig"
   }
 }
