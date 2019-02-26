@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50235e4e21e738081dc1b41d8e6a8b6210430064
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
+ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838126"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "56742736"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune
 
@@ -364,10 +364,12 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 6. Legen Sie folgende Einstellungen fest:
 
    - **Zertifikattyp**: Wählen Sie **Benutzer** für Benutzerzertifikate aus. Wählen Sie **Gerät** für benutzerlose Geräte, z.B. Kiosks, aus. Zertifikate für **Geräte** sind für folgende Plattformen verfügbar:  
+     - Android Enterprise
      - iOS
+     - macOS
      - Windows 8.1 und höher
      - Windows 10 und höher
-     - Android Enterprise
+
 
    - **Format des Antragstellernamens**: Wählen Sie aus, auf welche Weise Intune den Antragstellernamen in der Zertifikatanforderung automatisch erstellen soll. Diese Optionen ändern sich, wenn Sie den Zertifikattyp **Benutzer** oder **Gerät** auswählen. 
 

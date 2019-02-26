@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 02/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: ae8113a603ae4c091005f7c82045708f7e9e3e97
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086147"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655390"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Problembehandlung der Verwaltung von mobilen Geräten
 
@@ -78,7 +78,7 @@ Fehlermeldung oder Dialogfeld | Ursache | Wartung |
 **App nicht eingerichtet**: Diese App wurde nicht zur Verwendung durch Sie eingerichtet. Wenden Sie sich an Ihren IT-Administrator, um Unterstützung zu erhalten. | Fehler bei der Ermittlung der erforderlichen App-Schutzrichtlinie für die App. |Stellen Sie sicher, dass eine iOS-App-Schutzrichtlinie für die Sicherheitsgruppe des Benutzers bereitgestellt und diese App als Ziel festgelegt wurde.
 **Willkommen beim Intune Managed Browser**: Diese App funktioniert am besten, wenn sie von Microsoft Intune verwaltet wird. Mit dieser App können Sie jederzeit das Web durchsuchen. Wenn sie über Microsoft Intune verwaltet wird, können Sie auf zusätzliche Features zum Schutz von Daten zugreifen. | Fehler bei der Ermittlung einer erforderlichen App-Schutzrichtlinie für die Intune Managed Browser-App. <br><br>Der Benutzer kann die App trotzdem verwenden, um das Web zu durchsuchen, aber die App wird nicht von Intune verwaltet. | Stellen Sie sicher, dass eine iOS-App-Schutzrichtlinie für die Sicherheitsgruppe des Benutzers bereitgestellt und die Intune Managed Browser-App als Ziel festgelegt wurde.
 **Fehler bei der Anmeldung**: Eine Anmeldung ist zurzeit nicht möglich. Wiederholen Sie den Vorgang zu einem späteren Zeitpunkt. | Fehler bei Registrierung des Benutzers beim MAM-Dienst nach dem Versuch des Benutzers, sich mit seinem Geschäfts-, Schul- oder Unikonto anzumelden. | Stellen Sie sicher, dass eine iOS-App-Schutzrichtlinie für die Sicherheitsgruppe des Benutzers bereitgestellt und diese App als Ziel festgelegt wurde.
-**Konto nicht eingerichtet**: Ihre Organisation hat Ihr Konto nicht für den Zugriff auf Geschäfts-, Schul- oder Unidaten eingerichtet. Wenden Sie sich an Ihren IT-Administrator, um Hilfe zu erhalten. | Das Benutzerkonto verfügt über keine Windows Intune A Direct-Lizenz. | Stellen Sie sicher, dass dem Konto des Benutzers im [Office-Portal](http://portal.office.com) eine Intune-Lizenz zugewiesen ist.
+**Konto nicht eingerichtet**: Ihre Organisation hat Ihr Konto nicht für den Zugriff auf Geschäfts-, Schul- oder Unidaten eingerichtet. Wenden Sie sich an Ihren IT-Administrator, um Hilfe zu erhalten. | Das Benutzerkonto verfügt über keine Windows Intune A Direct-Lizenz. | Stellen Sie sicher, dass dem Konto des Benutzers im [Office-Portal](https://portal.office.com) eine Intune-Lizenz zugewiesen ist.
 **Gerät nicht kompatibel**: Diese App kann nicht verwendet werden, weil Sie ein Gerät mit Jailbreak verwenden. Wenden Sie sich an Ihren IT-Administrator, um Unterstützung zu erhalten. | Intune hat festgestellt, dass der Benutzer ein Gerät mit Jailbreak verwendet. | Setzen Sie das Gerät auf die Werkseinstellungen zurück. Führen Sie [diese Anweisungen](https://support.apple.com/HT201274) über die Apple-Support-Website aus.
 **Internetverbindung erforderlich**: Sie benötigen eine Internetverbindung, um zu überprüfen, ob Sie diese App verwenden dürfen. | Das Gerät ist nicht mit dem Internet verbunden. | Verbinden Sie das Gerät mit einem WLAN oder Datennetzwerk.
 **Unbekannter Fehler**: Versuchen Sie, diese App neu zu starten. Wenn das Problem weiterhin besteht, wenden Sie sich an Ihren IT-Administrator, um Hilfe zu erhalten. | Ein unbekannter Fehler ist aufgetreten. | Warten Sie eine gewisse Zeit, und versuchen Sie es erneut. Wenn der Fehler weiterhin auftritt, erstellen Sie ein [Supportticket](get-support.md#create-an-online-support-ticket) mit Intune.
@@ -97,7 +97,7 @@ Dialog/Fehlermeldung | Ursache | Wartung |
 **Fehler bei der Anmeldung**: Versuchen Sie, sich erneut anzumelden. Wenn das Problem weiterhin besteht, wenden Sie sich an Ihren IT-Administrator, um Hilfe zu erhalten. | Fehler bei der Authentifizierung des Kontos, mit dem der Benutzer versucht hat, sich anzumelden. | Vergewissern Sie sich, dass sich der Benutzer mit dem bereits beim Intune MAM-Dienst registrierten Geschäfts-, Schul- oder Unikonto anmeldet (dem ersten Geschäfts-, Schul- oder Unikonto, das erfolgreich bei dieser App registriert wurde). <br><br> Löschen Sie die Daten der App. <br><br> Stellen Sie sicher, dass die App-Version auf dem neuesten Stand ist. <br><br> Stellen Sie sicher, dass die Version des Unternehmensportals auf dem neuesten Stand ist.
 **Internetverbindung erforderlich**: Sie benötigen eine Internetverbindung, um zu überprüfen, ob Sie diese App verwenden dürfen. | Das Gerät ist nicht mit dem Internet verbunden. | Verbinden Sie das Gerät mit einem WLAN oder Datennetzwerk.
 **Gerät nicht kompatibel**: Sie können diese App nicht verwenden, da bei Ihrem Gerät die Nutzungsbeschränkungen entfernt wurden. Wenden Sie sich an Ihren IT-Administrator, um Unterstützung zu erhalten. | Intune hat festgestellt, dass der Benutzer ein Gerät verwendet, bei dem die Nutzungsbeschränkungen entfernt wurden. | Setzen Sie das Gerät auf die Werkseinstellungen zurück.
-**Konto nicht eingerichtet**: Diese App muss mit Microsoft Intune verwaltet werden, Ihr Konto wurde jedoch noch nicht eingerichtet. Wenden Sie sich an Ihren IT-Administrator, um Unterstützung zu erhalten. | Das Benutzerkonto verfügt über keine Windows Intune A Direct-Lizenz. | Stellen Sie sicher, dass dem Konto des Benutzers im [Office-Portal](http://portal.office.com) eine Intune-Lizenz zugewiesen ist.
+**Konto nicht eingerichtet**: Diese App muss mit Microsoft Intune verwaltet werden, Ihr Konto wurde jedoch noch nicht eingerichtet. Wenden Sie sich an Ihren IT-Administrator, um Unterstützung zu erhalten. | Das Benutzerkonto verfügt über keine Windows Intune A Direct-Lizenz. | Stellen Sie sicher, dass dem Konto des Benutzers im [Office-Portal](https://portal.office.com) eine Intune-Lizenz zugewiesen ist.
 **Registrierung der App nicht möglich**: Diese App muss mit Microsoft Intune verwaltet werden, eine Registrierung der App ist momentan jedoch nicht möglich. Wenden Sie sich an Ihren IT-Administrator, um Unterstützung zu erhalten. | Bei der automatischen Registrierung der App beim MAM-Dienst tritt ein Fehler auf, wenn eine App-Schutzrichtlinie erforderlich ist. | Löschen Sie die Daten der App. <br><br> Senden Sie Protokolle über die Unternehmensportal-App an Intune, oder erstellen Sie ein Supportticket. Weitere Informationen finden Sie unter [Anfordern von Support für Microsoft Intune](get-support.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
