@@ -7,7 +7,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/01/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6203304922f035a825ca0530c09524f4bfcf25db
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6ccc46914e53e72d941cc726b6a32fa421e23ca4
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842727"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57232130"
 ---
 # <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>Graph-APIs und zum Abgleich von Windows 10-CSPs, die in Intune verwendet
 
