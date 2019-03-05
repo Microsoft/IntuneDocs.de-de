@@ -6,7 +6,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/24/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96d4143b5105a174ba47c8c7a713ae7bee9bcb94
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 1128daf5f3a0cbc969bcae2ce060cd05ea29af84
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835732"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57232113"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Suchen nach verlorenen oder gestohlenen iOS-Geräten mit Intune
 

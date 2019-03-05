@@ -6,7 +6,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 06/15/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 071fe12df19a86e29bb7a36e3a6634fe5adb9fcd
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 717f85737ac7db4bd7c0401eb7e763e4fc691406
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848439"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57238165"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune in der Azure-Konsole und der Legacy-Intune-PC-Client
 

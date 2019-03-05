@@ -6,7 +6,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/06/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bf0b81cf424e3ec3f003306ae24638eb0b973b9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: b91b283286209c3ebccc5c3ae803507d74c248b0
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833565"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57234153"
 ---
 # <a name="licenses-that-include-intune"></a>Lizenzen, die Intune enthalten
 

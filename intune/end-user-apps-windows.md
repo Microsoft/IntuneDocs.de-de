@@ -6,7 +6,7 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 12/05/2016
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 789477f8f29ea46ab8dd45944fee7d766d63940f
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6f15aff30c6d1d7318396a7be80023fcd448fa34
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849550"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57230090"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Wie Ihre Windows-Benutzer Apps erhalten
 

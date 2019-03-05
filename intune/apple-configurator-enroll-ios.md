@@ -7,7 +7,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/04/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c81162d5208ecdca2c26d7a981170d370b68115e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: d91e92b561bbf7b574e0d8271374c0d8c6bd4a64
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837491"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57230396"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Einrichten der iOS-Geräteregistrierung mit Apple Configurator
 

@@ -7,19 +7,19 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 07/25/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4783ec9ac1dfa9b1754d1c15f73bf22f35fa11a5
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 7a37eee7e50c3db692cbec84dd6da17c2b9e5e80
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839660"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57234629"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Better Mobile Threat Defense-Connector mit Intune
 

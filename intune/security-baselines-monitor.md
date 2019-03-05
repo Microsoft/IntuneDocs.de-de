@@ -6,7 +6,7 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 01/24/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bfbdad6d98065a691528d4cdada0b6f9377e1109
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: b853d42efc247f6080cc4ed6ad8b4943b85b3215
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55848235"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57230821"
 ---
 # <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Überwachen von Sicherheitsbaseline und Profil in Microsoft Intune
 

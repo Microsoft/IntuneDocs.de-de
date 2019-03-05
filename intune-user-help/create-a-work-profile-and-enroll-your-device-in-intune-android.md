@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 683156b968c743c4c82b472c6e566d5762c22c1a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: eab28cdd4515561ad34a433773e351150a87f626
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844665"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334951"
 ---
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Erstellen eines Arbeitsprofils und Registrieren Ihres Geräts bei Intune
 
@@ -33,7 +33,7 @@ Der Support Ihres Unternehmens kann nur das Arbeitsprofil verwalten, das Ihre Ge
 
 So erstellen Sie ein Arbeitsprofil:
 
-1.  Tippen Sie im Android-Unternehmensportal auf dem **Willkommensbildschirm** auf **Anmelden**, und melden Sie sich dann mit Ihrem Geschäfts-, Schul- oder Unikonto an. Wenn Sie die kostenlose App noch nicht installiert haben, laden Sie diese herunter, und installieren Sie sie von [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
+1.  Tippen Sie im Android-Unternehmensportal auf dem **Willkommensbildschirm** auf **Anmelden**, und melden Sie sich dann mit Ihrem Geschäfts-, Schul- oder Unikonto an. Wenn Sie die kostenlose App noch nicht installiert haben, laden Sie diese herunter, und installieren Sie sie von [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
     ![Willkommensbildschirm der Android-Unternehmensportal-App](./media/and-enroll-0-welcome-screen.png)
 

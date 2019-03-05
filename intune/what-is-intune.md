@@ -5,8 +5,8 @@ keywords: Was ist Intune
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 12/03/2018
-ms.topic: conceptual
+ms.date: 02/26/2019
+ms.topic: overview
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 021c2e1e86219310eb34c4bba54d903246dbf28e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 92cd9a5a6c3ee49b2431b43b024c338e06b5dfe2
+ms.sourcegitcommit: 7d694e3cd01623513c2b163946e60a99ab9535d2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835026"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "56891605"
 ---
 # <a name="what-is-microsoft-intune"></a>Was ist Microsoft Intune?
 

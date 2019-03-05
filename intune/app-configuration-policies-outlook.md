@@ -7,7 +7,7 @@ ms.author: erikre
 ms.reviewer: smithre4
 manager: dougeby
 ms.date: 01/24/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 853f6e932b19ed8157899d7068b0eb7298fe5d7a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ed3352bf494ddab61b2e8a53422de1adfae5f0c0
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843203"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57231144"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook-Konfigurationseinstellungen 
 

@@ -7,7 +7,7 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 437740779e0739ec53d9c89e46234cd5b31857e4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a2fd42ece4a0df60ebe6f15b67c91bba46f210ff
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55835575"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57233156"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Grundlegendes zum Verständnis von Meldungen in der Unternehmensportal-App
 

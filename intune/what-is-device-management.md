@@ -5,7 +5,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 09/21/2018
-ms.topic: article
+ms.topic: conceptual
 audience: ITPro
 ms.prod: microsoft-365-enterprise
 ms.service: ''
@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4f69673e6cb91e18469922d7b2277bc5b6936d9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 93e34c3de77dde59b87829617b8cbbd2614f7081
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845464"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57231246"
 ---
 # <a name="what-is-device-management"></a>Was ist die Geräteverwaltung? 
 

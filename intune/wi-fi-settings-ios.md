@@ -7,7 +7,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 10/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a17be2e6cb30612fbf8a91f63d3b99ed6c7e19b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 1b2640a28fde07a69da3cb154e198e0ebbbd73ea
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837430"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57234646"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Hinzufügen von WLAN-Einstellungen für iOS-Geräte in Microsoft Intune
 
@@ -49,7 +49,7 @@ Dieser Artikel beschreibt diese Einstellungen.
 
 - **Proxyeinstellungen:** Folgende Optionen sind verfügbar:
   - **Keine**: Es sind keine Proxyeinstellungen konfiguriert.
-  - **Manuell**: Geben Sie die **Proxyserveradresse** als IP-Adresse und die zugehörige **Portnummer** ein.
+  - **Manuell:** Geben Sie die **Proxyserveradresse** als IP-Adresse und die zugehörige **Portnummer** ein.
   - **Automatisch:** Verwenden Sie eine Datei, um den Proxyserver zu konfigurieren. Geben Sie die **Proxyserver-URL** ein (z.B. `http://proxy.contoso.com`), unter der die Konfigurationsdatei zu finden ist.
 
 ## <a name="enterprise-profiles"></a>Profile für Unternehmen
@@ -121,7 +121,7 @@ Dieser Artikel beschreibt diese Einstellungen.
 
 - **Proxyeinstellungen:** Folgende Optionen sind verfügbar:
   - **Keine**: Es sind keine Proxyeinstellungen konfiguriert.
-  - **Manuell**: Geben Sie die **Proxyserveradresse** als IP-Adresse und die zugehörige **Portnummer** ein.
+  - **Manuell:** Geben Sie die **Proxyserveradresse** als IP-Adresse und die zugehörige **Portnummer** ein.
   - **Automatisch:** Verwenden Sie eine Datei, um den Proxyserver zu konfigurieren. Geben Sie die **Proxyserver-URL** ein (z.B. `http://proxy.contoso.com`), unter der die Konfigurationsdatei zu finden ist.
 
 Wählen Sie **OK** > **Erstellen** aus, um die Änderungen zu speichern. Das Profil wird erstellt und in der Profilliste angezeigt.

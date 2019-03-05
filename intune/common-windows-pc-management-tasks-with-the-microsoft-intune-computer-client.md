@@ -7,7 +7,7 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35ebc9ff72d07fb699f1a1bb6a6426219ae2832a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: ae911a3407576ff712114b30b60f2c1ba333ebb6
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837542"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57232827"
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Intune-Softwareclient
 

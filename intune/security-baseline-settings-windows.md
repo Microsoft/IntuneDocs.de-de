@@ -6,7 +6,7 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 02/09/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91a8364927667bbc910d86dc3e95f447eb5cf93a
-ms.sourcegitcommit: 77c63ddb51ffd5258f4ea0e68672c2eb011b83e1
+ms.openlocfilehash: a2dce0b743cd2944569e19a8106327f6735b1d6b
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55905814"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57231705"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Windows-Einstellungen für Sicherheitsbaselines in Intune  
 
@@ -45,7 +45,7 @@ Weitere Informationen finden Sie unter [Policy CSP - AppRuntime (Richtlinien-Kon
 
 - **Microsoft-Konten optional für Windows Store-Apps**  
   Mit dieser Richtlinieneinstellung können Sie steuern, ob für Windows Store-Apps, die eine Anmeldung mit einem Konto erfordern, Microsoft-Konten optional sind. Diese Richtlinie betrifft nur Windows Store-Apps, die dies unterstützen. Wenn Sie diese Richtlinieneinstellung aktivieren, ermöglichen Windows Store-Apps, die normalerweise die Anmeldung mit einem Microsoft-Konto erfordern, Benutzern stattdessen die Anmeldung mit einem Unternehmenskonto. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, müssen Benutzer sich mit einem Microsoft-Konto anmelden.  
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
 
 ## <a name="application-management"></a>Anwendungsverwaltung   
 Weitere Informationen finden Sie unter [Policy CSP - ApplicationManagement (Richtlinien-Konfigurationsdienstanbieter: ApplicationManagement)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) in Ihrer Windows-Dokumentation.  
@@ -68,7 +68,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Autoplay (Richtlinien-Konfi
 
 - **Automatische Wiedergabe für Nicht-Volume-Geräte blockieren**  
   Diese Richtlinieneinstellung deaktiviert die automatische Wiedergabe für MTP-Geräte wie Kameras oder Telefone. Wenn Sie diese Richtlinieneinstellung aktivieren, ist die automatische Wiedergabe auf MTP-Geräten wie Kameras oder Telefonen nicht möglich. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, ist die automatische Wiedergabe für Nicht-Volume-Geräte aktiviert.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
 
 ## <a name="bitlocker"></a>BitLocker    
 Weitere Informationen finden Sie unter [Policy CSP - BitLocker (Richtlinien-Konfigurationsdienstanbieter: BitLocker)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bitlocker
@@ -123,11 +123,11 @@ Weitere Informationen finden Sie unter [Policy CSP – Connectivity (Richtlinien
 
 - **Block Internet download for web publishing and online ordering wizards** (Internet-Download für die Assistenten „Webpublishing“ und „Onlinebestellung von Abzügen“ deaktivieren)  
   Diese Richtlinieneinstellung legt fest, ob Windows eine Liste von Anbietern für den Webpublishing-Assistenten und den Assistenten für Onlinebestellung herunterladen soll. Diese Assistenten ermöglichen Benutzern, aus einer Liste Firmen auszuwählen, die Dienste wie Onlinespeicherung und Fotodruck anbieten. Standardmäßig werden zusätzlich zu den in der Registrierung angegebenen Anbietern auch solche angezeigt, die von einer Windows-Website heruntergeladen wurden. Wenn Sie diese Richtlinieneinstellung aktivieren, werden keine Anbieter heruntergeladen, sondern nur die Dienstanbieter angezeigt, die in der lokalen Registrierung zwischengespeichert sind. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird eine Liste von Anbietern heruntergeladen, wenn der Benutzer den Webpublishing-Assistenten und den Assistenten für Onlinebestellung verwendet. Weitere Informationen über den Webpublishing-Assistenten und den Assistenten für Onlinebestellung finden Sie in der Dokumentation, einschließlich Details über das Angeben von Dienstanbietern in der Registrierung.  
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
 
 - **Block downloading of print drivers over HTTP** (Download von Druckertreibern über HTTP blockieren)  
   Diese Richtlinieneinstellung gibt an, ob dieser Client Druckertreiberpakete über HTTP herunterladen darf. Nicht im Lieferumfang enthaltene Treiber müssen über HTTP heruntergeladen werden, um das HTTP-Drucken einzurichten. Hinweis: Diese Richtlinieneinstellung hindert den Client nicht, auf Druckern im Intranet oder Internet über HTTP zu drucken. Sie verhindert nur das Herunterladen von Treibern, die noch nicht lokal installiert sind. Wenn Sie diese Richtlinieneinstellung aktivieren, können keine Druckertreiber über HTTP heruntergeladen werden. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können die Benutzer Druckertreiber über HTTP herunterladen.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
 
 ## <a name="credentials-delegation"></a>Delegierung von Anmeldeinformationen  
 Weitere Informationen finden Sie unter [Policy CSP – CredentialsDelegation (Richtlinien-Konfigurationsdienstanbieter: CredentialsDelegation)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsdelegation
@@ -136,7 +136,7 @@ Weitere Informationen finden Sie unter [Policy CSP – CredentialsDelegation (Ri
 - **Remote host delegation of non-exportable credentials** (Remotehostdelegierung nicht exportierbarer Anmeldeinformationen)  
   Remotehost ermöglicht die Delegierung nicht exportierbarer Anmeldeinformationen. Bei Verwendung der Delegierung von Anmeldeinformationen stellen Geräte eine exportierbare Version der Anmeldeinformationen für den Remotehost bereit. Dadurch laufen Benutzer Gefahr, dass ihre Anmeldeinformationen von Angreifern auf dem Remotehost gestohlen werden. Wenn Sie die Richtlinieneinstellung aktivieren, unterstützt der Host den eingeschränkten Verwaltungsmodus oder Remote Credential Guard-Modus. Wenn Sie die Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden der eingeschränkte Verwaltungsmodus und der Remote Credential Guard-Modus nicht unterstützt, und Benutzer müssen ihre Anmeldeinformationen immer an den Host übergeben.  
 
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
 
 ## <a name="credentials-ui"></a>Benutzeroberfläche für Anmeldeinformationen  
 Weitere Informationen finden Sie unter [Policy CSP – Connectivity (Richtlinien-Konfigurationsdienstanbieter: CredentialsUI)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-credentialsui) in der Windows-Dokumentation.  
@@ -146,7 +146,7 @@ Weitere Informationen finden Sie unter [Policy CSP – Connectivity (Richtlinien
 
   - **Standardeinstellung:** Deaktiviert  
 
-## <a name="data-protection"></a>Datenschutz  
+## <a name="data-protection"></a>Schutz von Daten  
 Weitere Informationen finden Sie unter [Policy CSP – Defender (Richtlinien-Konfigurationsdienstanbieter: DataProtection)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection
 ) in der Windows-Dokumentation.  
 
@@ -175,7 +175,7 @@ Weitere Informationen finden Sie unter [Policy CSP – DeviceGuard (Richtlinien-
   - **Default**: Yes  
   -->
 - **Launch system guard** (Systemschutz starten)  
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
 
 ## <a name="device-installation"></a>Geräteinstallation  
 Weitere Informationen finden Sie unter [Policy CSP – DeviceInstallation (Richtlinien-Konfigurationsdienstanbieter: DeviceInstallation)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceinstallation) in der Windows-Dokumentation.  
@@ -209,7 +209,7 @@ Weitere Informationen finden Sie unter [Policy CSP - DeviceLock (Richtlinien-CSP
 
 - **Verwendung der Kamera verhindern**  
   Deaktiviert das Ein-/Ausschalten der Kamera auf dem Sperrbildschirm in den PC-Einstellungen und verhindert, dass eine Kamera auf dem Sperrbildschirm aufgerufen wird. Standardmäßig können Benutzer das Aufrufen einer verfügbaren Kamera auf dem Sperrbildschirm aktivieren. Wenn Sie diese Einstellung aktivieren, können Benutzer den Kamerazugriff auf den Sperrbildschirm in den PC-Einstellungen nicht mehr aktivieren, und die Kamera kann nicht mehr auf dem Sperrbildschirm aufgerufen werden.  
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
 
 - **Kennwort anfordern**  
   Gibt an, ob eine Gerätesperre aktiviert ist.
@@ -246,7 +246,7 @@ Weitere Informationen finden Sie unter [Policy CSP - DeviceLock (Richtlinien-CSP
 
 - **Diashow verhindern**  
   Deaktiviert die Diashow-Einstellungen für den Sperrbildschirm in den PC-Einstellungen und verhindert das Abspielen einer Diashow auf dem Sperrbildschirm. Standardmäßig können Benutzer eine Diashow aktivieren, die nach dem Sperren des Computers abgespielt wird. Wenn Sie diese Einstellung aktivieren, ist es für Benutzer nicht mehr möglich, Diashow-Einstellungen in den PC-Einstellungen zu ändern, und es wird nie eine Diashow abgespielt.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
     *Die Einstellung „Deaktiviert“ verhindert das Abspielen von Diashows.* 
 
 - **Minimales Kennwortalter in Tagen**  
@@ -331,7 +331,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer certificate address mismatch warning** (Warnung für Zertifikatadressenkonflikte in Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie die Sicherheitswarnung für Zertifikatadressenkonflikte aktivieren. Wenn diese Richtlinieneinstellung aktiviert ist, wird der Benutzer gewarnt, wenn eine sichere HTTP-Website (HTTPS) Zertifikate enthält, die für eine andere Adresse ausgestellt wurden. Durch diese Warnung können Spoofingangriffe verhindert werden. Wenn Sie diese Richtlinieneinstellung aktivieren, wird die Warnung für Zertifikatadressenkonflikte immer angezeigt. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, kann der Benutzer über die Seite „Erweitert“ in der Internetsystemsteuerung festlegen, ob die Warnung für Zertifikatadressenkonflikte angezeigt wird.
-  - **Standardeinstellung:** Enabled 
+  - **Standardeinstellung:** Aktiviert 
   
 - **Internet Explorer restricted zone less privileged sites** (Websites mit geringeren Berechtigung in der eingeschränkten Zone in Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob Websites aus Zonen mit geringeren Berechtigungen, z.B. aus der Internetzone, zu dieser Zone navigieren können. Wenn Sie diese Richtlinieneinstellung aktivieren, können Websites aus Zonen mit geringeren Berechtigungen neue Fenster in dieser Zone öffnen oder zu dieser Zone navigieren. Die Sicherheitszone wird ohne den zusätzlichen Schutz durch das Sicherheitsfeature „Schutz vor Zonenanhebung“ ausgeführt. Wenn Sie im Dropdownfeld „Bestätigen“ auswählen, wird der Benutzer gewarnt, dass er dabei ist, in einen möglicherweise gefährlichen Bereich zu navigieren. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden potentiell gefährliche Navigationsvorgänge verhindert. Wie von „Schutz vor Zonenanhebung“ festgelegt, ist das Internet Explorer-Sicherheitsfeature ist in dieser Zone aktiviert. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, werden potentiell gefährliche Navigationsvorgänge verhindert. Wie von „Schutz vor Zonenanhebung“ festgelegt, ist das Internet Explorer-Sicherheitsfeature ist in dieser Zone aktiviert.
@@ -347,7 +347,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer internet zone allow only approved domains to use tdc Active X controls** (Nur genehmigte Domänen können das TDC-ActiveX-Steuerelement in Internetzonen in Internet Explorer verwenden)  </br>
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob Benutzern erlaubt wird, das TDC-ActiveX-Steuerelement auf Websites auszuführen. Wenn Sie diese Richtlinieneinstellung aktivieren, wird das TDC-ActiveX-Steuerelement nicht von Websites in dieser Zone ausgeführt. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird das TDC-ActiveX-Steuerelement von allen Websites in dieser Zone ausgeführt.
-  - **Standardeinstellung:** Enabled 
+  - **Standardeinstellung:** Aktiviert 
   
 - **Internet Explorer restricted zone script initiated windows** (Durch Skripts geöffnete Fenster für die eingeschränkte Zone von Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie die Einschränkungen zu durch Skripts geöffneten Popupfenstern und Fenstern mit Titel und Leisten verwalten. Wenn Sie diese Richtlinieneinstellung aktivieren, gilt das Sicherheitsfeature für Fenstereinschränkungen in dieser Zone nicht. Die Sicherheitszone wird also ohne die Sicherheitsebene ausgeführt, die von diesem Feature bereitgestellt wird. Wenn Sie diese Richtlinieneinstellung deaktivieren, können potenziell schädliche Aktionen aus durch Skripts initiierten Popupfenstern und Fenstern mit Titeln und Leisten nicht ausgeführt werden. Dieses Sicherheitsfeature von Internet Explorer wird in der Zone so verwendet, wie es im Sicherheitsfeature für durch Skripts geöffnete Fenster für den Prozess festgelegt ist. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, können potenziell schädliche Aktionen aus durch Skripts initiierten Popupfenstern und Fenstern mit Titeln und Leisten nicht ausgeführt werden. Dieses Sicherheitsfeature von Internet Explorer wird in der Zone so verwendet, wie es im Sicherheitsfeature für durch Skripts geöffnete Fenster für den Prozess festgelegt ist.
@@ -359,7 +359,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer disable processes in enhanced protected mode** (Deaktivieren von Prozessen im erweiterten geschützten Modus in Internet Explorer)  
   Mit dieser Richtlinieneinstellung wird bestimmt, ob 64-Bit-Prozesse (höhere Sicherheit) oder 32-Bit-Prozesse (bessere Kompatibilität) von Internet Explorer 11 verwendet werden, wenn unter 64-Bit-Versionen von Windows der erweiterte geschützte Modus aktiv ist. Wichtig: Einige ActiveX-Steuerelemente und Symbolleisten sind möglicherweise nicht verfügbar, wenn 64-Bit-Prozesse verwendet werden. Wenn Sie diese Richtlinieneinstellung aktivieren, werden 64-Bit-Registerkartenprozesse von Internet Explorer 11 verwendet, sofern der erweiterte geschützte Modus unter 64-Bit-Versionen von Windows aktiv ist. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden 32-Bit-Registerkartenprozesse von Internet Explorer 11 verwendet, sofern der erweiterte geschützte Modus unter 64-Bit-Versionen von Windows aktiv ist. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, können Benutzer dieses Feature über die Internet Explorer-Einstellungen ein- oder ausschalten. Dieses Feature ist standardmäßig deaktiviert.
-  - **Standardeinstellung:** Enabled 
+  - **Standardeinstellung:** Aktiviert 
   
 - **Internet Explorer ignore certificate errors** (Zertifikatfehler in Internet Explorer ignorieren)  </br>
   Diese Richtlinieneinstellung verhindert, dass der Benutzer SSL/TLS-Zertifikatfehler (Secure Sockets Layer/Transport Layer Security), die die Navigation in Internet Explorer unterbrechen (z.B. „Abgelaufen“, „Gesperrt“ oder „Name stimmt nicht überein“ ) ignoriert. Wenn Sie diese Richtlinieneinstellung aktivieren, können Benutzer das Browsen nicht mehr fortsetzen. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, kann der Benutzer entscheiden, ob Zertifikatfehler ignoriert werden sollen und das Browsen fortsetzen.
@@ -371,7 +371,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer internet zone automatic prompt for file downloads** (Automatische Eingabeaufforderung für Dateidownloads in der Internetzone von Internet Explorer)  </br>
   Mit dieser Richtlinieneinstellung wird festgelegt, ob eine Eingabeaufforderung bei Dateidownloads angezeigt wird, die nicht vom Benutzer gestartet werden. Downloaddialogfelder werden unabhängig von dieser Einstellung für vom Benutzer gestartete Downloadvorgänge angezeigt. Wenn Sie diese Einstellung aktivieren, werden den Benutzern Downloaddialogfelder für automatische Downloadversuche angezeigt. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden Dateidownloads, die nicht von Benutzern gestartet werden, blockiert, und Benutzern wird die Benachrichtigungsleiste anstelle des Downloaddialogfelds angezeigt. Die Benutzer können dann auf die Benachrichtigungsleiste klicken, um den Dateidownload zu genehmigen.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer restricted zone security warning for potentially unsafe files** (Sicherheitswarnung für potenziell unsichere Dateien in der eingeschränkten Zone von Internet Explorer)  
   Mit dieser Richtlinieneinstellung wird bestimmt, ob die Nachricht „Datei öffnen – Sicherheitswarnung“ angezeigt wird, wenn der Benutzer versucht, ausführbare Dateien oder andere potenziell unsichere Dateien (z.B. aus einer Dateifreigabe im Intranet über den Datei-Explorer) zu öffnen. Wenn Sie diese Richtlinieneinstellung aktivieren und „Aktivieren“ im Dropdownfeld auswählen, werden diese Dateien ohne Sicherheitswarnung geöffnet. Wenn Sie das Dropdownfeld auf „Bestätigen“ einstellen, wird eine Sicherheitswarnung angezeigt, bevor die Dateien geöffnet werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden diese Dateien nicht geöffnet. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, kann der Benutzer konfigurieren, wie der Computer diese Dateien behandeln soll. Standardmäßig werden diese Dateien in der eingeschränkten Zone blockiert, in der Intranetzone sowie in Zonen für lokale Computer aktiviert und in Internetzonen und vertrauenswürdigen Zonen auf „Bestätigen“ festgelegt.
@@ -379,7 +379,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer internet zone cross site scripting filter** (Cross-Site Scripting-Filter in der Internetzone von Internet Explorer)  
   Mit dieser Richtlinie können Sie steuern, ob websiteübergreifende Skripteinschleusungen in Websites in dieser Zone vom XSS-Filter (Cross-Site Scripting) erkannt und verhindert werden. Wenn Sie diese Richtlinieneinstellung aktivieren, wird der XSS-Filter für Websites in dieser Zone aktiviert, um Versuche einer websiteübergreifenden Skripteinschleusung zu blockieren. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird der XSS-Filter für Websites in dieser Zone deaktiviert, und Internet Explorer lässt die websiteübergreifende Skripteinschleusung zu.
-  - **Standardeinstellung:** Enabled 
+  - **Standardeinstellung:** Aktiviert 
   
 - **Internet Explorer fallback to SSL3** (Fallback auf SSL3 in Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie unsichere Fallbacks auf SSL 3.0 blockieren. Wenn die Richtlinie aktiviert ist und TLS 1.0 oder höher einen Fehler verursacht, versucht Internet Explorer, über SSL 3.0 oder eine niedrigere Version eine Verbindung mit Websites herzustellen. Es wird empfohlen, unsichere Fallbacks nicht zuzulassen, um Man-in-the-Middle-Angriffe zu vermeiden. Die Richtlinie wirkt sich nicht darauf aus, welche Sicherheitsprotokolle aktiviert sind. Wenn Sie diese Richtlinie deaktivieren, werden die Standardeinstellungen des Systems verwendet.
@@ -387,7 +387,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer locked down internet zone java permissions** (SmartScreen-Filter für gesperrte Internetzonen in Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt überprüft. Wenn Sie diese Richtlinieneinstellung aktivieren, überprüft der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden Seiten in dieser Zone vom SmartScreen-Filter nicht auf schädlichen Inhalt überprüft. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, kann der Benutzer entscheiden, ob der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt überprüft. Hinweis: In Internet Explorer 7 steuert diese Richtlinieneinstellung, ob der Phishingfilter Seiten in dieser Zone auf schädlichen Inhalt überprüft.
-  - **Standardeinstellung:** Enabled 
+  - **Standardeinstellung:** Aktiviert 
   
 - **Internet Explorer restricted zone launch applications and files in an iFrame** (Anwendungen und Dateien in einem iFrame in einer eingeschränkten Zone in Internet Explorer starten)  
   Mit dieser Richtlinieneinstellung können Sie steuern, ob Anwendungen ausgeführt und Dateien aus einem iFrame-Verweis im HTML-Code der Seiten in dieser Zone heruntergeladen werden können. Wenn Sie diese Richtlinieneinstellung aktivieren, können Benutzer Anwendungen ausführen und Dateien aus iFrames auf den Seiten in dieser Zone ohne Benutzereingriff herunterladen. Wenn Sie „Bestätigen“ aus dem Dropdownfeld auswählen, werden Benutzer dazu aufgefordert, zu entscheiden, ob Anwendungen ausgeführt und Daten aus iFrames auf den Seiten in dieser Zone heruntergeladen werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Benutzer keine Anwendungen ausführen und keine Daten aus iFrames auf den Seiten in dieser Zone herunterladen. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, können Benutzer keine Anwendungen ausführen und keine Daten aus iFrames auf den Seiten in dieser Zone herunterladen.
@@ -402,7 +402,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer processes consistent MIME handling** (Prozesse für die konsistente MIME-Verarbeitung in Internet Explorer)  
   Internet Explorer enthält dynamische Binärverhalten: Komponenten, die spezifische Funktionalität für die HTML-Elemente einkapseln, an die sie angefügt sind. Mit dieser Richtlinieneinstellung wird gesteuert, ob Binärverhalten durch die Sicherheitseinschränkungen verhindert oder zugelassen wird. Wenn Sie diese Richtlinieneinstellung aktivieren, werden Binärverhalten für alle Datei-Explorer- und Internet Explorer-Prozesse verhindert. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden Binärverhalten für alle Datei-Explorer- und Internet Explorer-Prozesse zugelassen. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, werden Binärverhalten für alle Datei-Explorer- und Internet Explorer-Prozesse verhindert.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer restricted zone java permissions** (Java-Berechtigungen in der eingeschränkten Zone in Internet Explorer) Mit dieser Richtlinieneinstellung können Sie Berechtigungen für Java-Applets verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie Optionen aus dem Dropdownfeld auswählen. Wählen Sie „Benutzerdefiniert“ aus, um Berechtigungseinstellungen einzeln zu bestimmen. Wählen Sie „Niedrige Sicherheit“ aus, um Applets die Ausführung aller Vorgänge zu ermöglichen. Wählen Sie „Mittlere Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox (ein Bereich im Speicher, außerhalb dessen das Programm keine Aufrufe ausführen kann) sowie Funktionen wie den sicheren Speicherbereich (ein geschützter und sicherer Speicherbereich auf dem Clientcomputer) und die benutzergesteuerte Datei-E/A zu ermöglichen. Wählen Sie „Hohe Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox zu ermöglichen. Deaktivieren Sie Java, um zu verhindern, dass Applets ausgeführt werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Java-Applets nicht ausgeführt werden. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, sind Java-Applets deaktiviert.
   - **Standardeinstellung:** Java deaktivieren  
@@ -418,7 +418,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer processes MK protocol security restriction** (Internet Explorer-Prozesse, Sicherheitseinschränkung für Skriptfenster)  
   Internet Explorer lässt zu, das Skripts programmgesteuert Fenster verschiedener Typen öffnen und in Größe und Position anpassen können. Die Sicherheitsfunktion für Fenstereinschränkungen schränkt Popupfenster ein und verhindert, dass Skripts Fenster anzeigen, in denen Titel- und Statusleiste für den Benutzer nicht sichtbar sind oder die die Sichtbarkeit der Titel- und Statusleiste anderer Fenster behindern. Wenn Sie diese Richtlinieneinstellung aktivieren, werden Skriptfenster für alle Prozesse eingeschränkt. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden Skriptfenster nicht eingeschränkt.
-  - **Standardeinstellung:** Enabled   
+  - **Standardeinstellung:** Aktiviert   
   
 - **Internet Explorer restricted zone download signed Active X controls** (Signierte ActiveX-Steuerelemente und -Plug-Ins in eingeschränkten Zonen in Internet Explorer ausführen)  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob ActiveX-Steuerelemente und Plug-Ins über die festgelegte Zone auf Seiten in Internet Explorer ausgeführt werden kann. Wenn Sie diese Richtlinieneinstellung aktivieren, werden Steuerelemente und Plug-Ins ohne Benutzereingriff ausgeführt. Wenn Sie die Option „Bestätigen“ im Dropdownfeld ausgewählt haben, werden Benutzer dazu aufgefordert, auszuwählen, ob Steuerelemente oder Plug-Ins ausgeführt werden dürfen. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden Steuerelemente und Plug-Ins nicht ausgeführt. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, werden Steuerelemente und Plug-Ins nicht ausgeführt.
@@ -438,7 +438,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer check server certificate revocation** (Serverzertifikatwiderrufstatus in Internet Explorer prüfen)  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob Internet Explorer den Widerrufstatus der Serverzertifikat prüft. Zertifikate werden widerrufen, wenn sie kompromittiert wurden oder nicht mehr gültig sind. Durch diese Option wird verhindert, dass Benutzer vertrauliche Daten an eine Website übermitteln, die unter Betrugsverdacht steht oder nicht sicher ist. Wenn Sie diese Richtlinieneinstellung aktivieren, prüft Internet Explorer, ob Serverzertifikate widerrufen wurden. Wenn Sie diese Richtlinieneinstellung deaktivieren, prüft Internet Explorer nicht, ob Serverzertifikate widerrufen wurden. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, prüft Internet Explorer nicht, ob Serverzertifikate widerrufen wurden.
-  - **Standardeinstellung:** Enabled 
+  - **Standardeinstellung:** Aktiviert 
   
 - **Internet Explorer internet zone less privileged sites** (Websites mit geringeren Berechtigung in Internetzonen in Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob Websites aus Zonen mit geringeren Berechtigungen, z.B. eingeschränkte Websites, zu dieser Zone navigieren können. Wenn Sie diese Richtlinieneinstellung aktivieren, können Websites aus Zonen mit geringeren Berechtigungen neue Fenster in dieser Zone öffnen oder zu dieser Zone navigieren. Die Sicherheitszone wird ohne den zusätzlichen Schutz durch das Sicherheitsfeature „Schutz vor Zonenanhebung“ ausgeführt. Wenn Sie im Dropdownfeld „Bestätigen“ auswählen, wird der Benutzer gewarnt, dass er dabei ist, in einen möglicherweise gefährlichen Bereich zu navigieren. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden potentiell gefährliche Navigationsvorgänge verhindert. Wie von „Schutz vor Zonenanhebung“ festgelegt, ist das Internet Explorer-Sicherheitsfeature ist in dieser Zone aktiviert. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, können Websites aus Zonen mit geringeren Berechtigungen neue Fenster in dieser Zone öffnen oder zu dieser Zone navigieren.
@@ -454,7 +454,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer prevent per user installation of Active X controls** (Installation von ActiveX-Steuerelementen pro Benutzer in Internet Explorer verhindern)  </br>
   Mit dieser Richtlinieneinstellung können Sie die Installation von ActiveX-Steuerelement pro Benutzer verhindern. Wenn Sie diese Richtlinieneinstellung aktivieren, können keine ActiveX-Steuerelemente pro Benutzer installiert werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, können ActiveX-Steuerelemente pro Benutzer installiert werden.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer prevent managing smart screen filter** (Verwalten des SmartScreen Filters in Internet Explorer verhindern)  </br>
   Diese Richtlinieneinstellung verhindert, dass der Benutzer den SmartScreen Filter verwalten kann, der den Benutzer warnt, wenn er eine Website besucht, die in der Vergangenheit durch Phishing persönliche Informationen gesammelt hat, oder wenn bekannt ist, dass die Website Schadsoftware hostet. Wenn Sie diese Richtlinieneinstellung aktivieren, wird der Benutzer nicht aufgefordert, den SmartScreen-Filter zu aktivieren. Alle Websiteadressen, die sich nicht auf der Zulassungsliste des Filters befinden, werden automatisch an Microsoft gesendet, ohne dass der Benutzer dies bestätigen muss. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird der Benutzer bei der ersten Ausführung aufgefordert, den SmartScreen Filter zu aktivieren oder zu deaktivieren.
@@ -462,7 +462,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer processes MIME sniffing safety feature** (Internet Explorer-Prozesse, Sicherheitsfunktion für MIME-Ermittlung)  
   Diese Richtlinieneinstellung bestimmt, ob die MIME-Ermittlung von Internet Explorer die Höherstufung einer Datei eines bestimmten Typs auf einen gefährlicheren Dateitypen verhindert. Wenn Sie diese Einstellung aktivieren, stuft die MIME-Ermittlung eine Datei eines bestimmten Typs nie auf einen gefährlicheren Dateityp hoch. Wenn Sie diese Richtlinieneinstellung deaktivieren, lassen Internet Explorer-Prozesse die Höherstufung eines Dateityps auf einen gefährlicheren Dateityp durch die MIME-Ermittlung zu. Wenn Sie diese Einstellung nicht konfigurieren, stuft die MIME-Ermittlung eine Datei eines bestimmten Typs nie auf einen gefährlicheren Dateityp hoch.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer restricted zone download signed Active X controls** (Signierte ActiveX-Steuerelemente in eingeschränkten Zonen in Internet Explorer herunterladen)  </br>
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob Benutzer signierte ActiveX-Steuerelemente auf einer Seite in der Zone herunterladen können. Wenn Sie diese Richtlinieneinstellung aktivieren, können Benutzer signierte Steuerelemente ohne Benutzereingriff herunterladen. Wenn Sie „Bestätigen“ in der Dropdownliste auswählen, werden Benutzer zur Bestätigung aufgefordert, ob Steuerelemente von nicht vertrauenswürdigen Herausgebern heruntergeladen werden sollen. Von vertrauenswürdigen Herausgebern signierter Code wird im Hintergrund heruntergeladen. Wenn Sie diese Richtlinieneinstellung deaktivieren, können signierte Steuerelemente nicht heruntergeladen werden. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, werden die Benutzer gefragt, ob Steuerelemente von nicht vertrauenswürdigen Herausgebern heruntergeladen werden sollen. Von vertrauenswürdigen Herausgebern signierter Code wird im Hintergrund heruntergeladen.
@@ -478,7 +478,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer restricted zone allow only approved domains to use tdc Active X controls** (Nur genehmigte Domänen können das TDC-ActiveX-Steuerelement in eingeschränkten Zonen in Internet Explorer verwenden)  </br>
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob Benutzern erlaubt wird, das TDC-ActiveX-Steuerelement auf Websites auszuführen. Wenn Sie diese Richtlinieneinstellung aktivieren, wird das TDC-ActiveX-Steuerelement nicht von Websites in dieser Zone ausgeführt. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird das TDC-ActiveX-Steuerelement von allen Websites in dieser Zone ausgeführt.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer trusted zone do not run antimalware against Active X controls** (Keine Antischadsoftwareprogramme für ActiveX-Steuerelemente in vertrauenswürdigen Zonen in Internet Explorer ausführen)   </br>
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob von Internet Explorer Antischadsoftwareprogramme für ActiveX-Steuerelemente ausgeführt werden, um zu überprüfen, ob sie sicher auf Seiten geladen werden können. Wenn Sie diese Richtlinieneinstellung aktivieren, prüft Internet Explorer nicht anhand des Antischadsoftwareprogramms, ob das Erstellen einer Instanz des ActiveX-Steuerelements sicher ist. Wenn Sie diese Richtlinieneinstellung deaktivieren, prüft Internet Explorer immer anhand des Antischadsoftwareprogramms, ob das Erstellen einer Instanz des ActiveX-Steuerelements sicher ist. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, prüft Internet Explorer immer anhand des Antischadsoftwareprogramms, ob das Erstellen einer Instanz des ActiveX-Steuerelements sicher ist. Benutzer können diese Option über die Sicherheitseinstellungen von Internet Explorer aktivieren und deaktivieren.
@@ -498,7 +498,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer processes notification bar** (Internet Explorer-Prozesse, Benachrichtigungsleiste)  </br>  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob die Benachrichtigungsleiste für Internet Explorer-Prozesse angezeigt wird, wenn Datei- oder Codeinstallationen eingeschränkt sind. Die Benachrichtigungsleiste wird standardmäßig für Internet Explorer-Prozesse angezeigt. Wenn Sie diese Richtlinieneinstellung aktivieren, wird die Benachrichtigungsleiste für Internet Explorer-Prozesse angezeigt. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird die Benachrichtigungsleiste nicht für Internet Explorer-Prozesse angezeigt. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, wird die Benachrichtigungsleiste für Internet Explorer-Prozesse angezeigt.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer internet zone download signed Active X controls** (Herunterladen signierter ActiveX-Steuerelemente in Internetzonen in Internet Explorer)  </br>
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob Benutzer signierte ActiveX-Steuerelemente auf einer Seite in der Zone herunterladen können. Wenn Sie diese Richtlinieneinstellung aktivieren, können Benutzer signierte Steuerelemente ohne Benutzereingriff herunterladen. Wenn Sie „Bestätigen“ in der Dropdownliste auswählen, werden Benutzer zur Bestätigung aufgefordert, ob Steuerelemente von nicht vertrauenswürdigen Herausgebern heruntergeladen werden sollen. Von vertrauenswürdigen Herausgebern signierter Code wird im Hintergrund heruntergeladen. Wenn Sie diese Richtlinieneinstellung deaktivieren, können signierte Steuerelemente nicht heruntergeladen werden. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, werden die Benutzer gefragt, ob Steuerelemente von nicht vertrauenswürdigen Herausgebern heruntergeladen werden sollen. Von vertrauenswürdigen Herausgebern signierter Code wird im Hintergrund heruntergeladen.
@@ -506,11 +506,11 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer restricted zone smart screen** (SmartScreen Filter in eingeschränkten Zonen in Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt überprüft. Wenn Sie diese Richtlinieneinstellung aktivieren, überprüft der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden Seiten in dieser Zone vom SmartScreen-Filter nicht auf schädlichen Inhalt überprüft. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, kann der Benutzer entscheiden, ob der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt überprüft. Hinweis: In Internet Explorer 7 steuert diese Richtlinieneinstellung, ob der Phishingfilter Seiten in dieser Zone auf schädlichen Inhalt überprüft.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Schaltfläche „Run this time“ (Dieses Mal ausführen) für veraltete ActiveX-Steuerelemente in Internet Explorer entfernen**  </br>
   Mit dieser Richtlinieneinstellung können Sie verhindern, dass Benutzer die Schaltfläche „Run this time“ (Dieses Mal ausführen) sehen und bestimmte veraltete ActiveX-Steuerelemente in Internet Explorer ausführen. Wenn Sie diese Richtlinieneinstellung aktivieren, können Benutzer die Schaltfläche „Run this time“ (Dieses Mal ausführen) in der Warnmeldung nicht sehen, die angezeigt wird, wenn Internet Explorer ein veraltetes ActiveX-Steuerelement blockiert. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Schaltfläche „Run this time“ in der Warnung sehen, die angezeigt wird, wenn Internet Explorer ein veraltetes ActiveX-Steuerelement in Internet Explorer blockiert. Durch Klicken auf diese Schaltfläche kann der Benutzer das veraltete ActiveX-Steuerelement einmal ausführen. Weitere Informationen finden Sie unter „Outdated ActiveX Controls“ (Veraltete ActiveX-Steuerelemente) in der TechNet-Bibliothek in Internet Explorer.
-  - **Standardeinstellung:** Enabled 
+  - **Standardeinstellung:** Aktiviert 
   
 - **Anwendungen und Dateien in einem iFrame starten für die Internetzone von Internet Explorer**  
   Mit dieser Richtlinieneinstellung können Sie steuern, ob Anwendungen ausgeführt und Dateien aus einem iFrame-Verweis im HTML-Code der Seiten in dieser Zone heruntergeladen werden können. Wenn Sie diese Richtlinieneinstellung aktivieren, können Benutzer Anwendungen ausführen und Dateien aus iFrames auf den Seiten in dieser Zone ohne Benutzereingriff herunterladen. Wenn Sie „Bestätigen“ aus dem Dropdownfeld auswählen, werden Benutzer dazu aufgefordert, zu entscheiden, ob Anwendungen ausgeführt und Daten aus iFrames auf den Seiten in dieser Zone heruntergeladen werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Benutzer keine Anwendungen ausführen und keine Daten aus iFrames auf den Seiten in dieser Zone herunterladen. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, werden Benutzer dazu aufgefordert, zu entscheiden, ob Anwendungen ausgeführt und Daten aus iFrames auf den Seiten in dieser Zone heruntergeladen werden.
@@ -522,7 +522,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **SmartScreen für die Internetzone von Internet Explorer**  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt überprüft. Wenn Sie diese Richtlinieneinstellung aktivieren, überprüft der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden Seiten in dieser Zone vom SmartScreen-Filter nicht auf schädlichen Inhalt überprüft. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, kann der Benutzer entscheiden, ob der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt überprüft. Hinweis: In Internet Explorer 7 steuert diese Richtlinieneinstellung, ob der Phishingfilter Seiten in dieser Zone auf schädlichen Inhalt überprüft.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Java-Berechtigungen für die gesperrte vertrauenswürdige Zone in Internet Explorer**  
   Mit dieser Richtlinieneinstellung können Sie Berechtigungen für Java-Applets verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie Optionen aus dem Dropdownfeld auswählen. Wählen Sie „Benutzerdefiniert“ aus, um Berechtigungseinstellungen einzeln zu bestimmen. Wählen Sie „Niedrige Sicherheit“ aus, um Applets die Ausführung aller Vorgänge zu ermöglichen. Wählen Sie „Mittlere Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox (ein Bereich im Speicher, außerhalb dessen das Programm keine Aufrufe ausführen kann) sowie Funktionen wie den sicheren Speicherbereich (ein geschützter und sicherer Speicherbereich auf dem Clientcomputer) und die benutzergesteuerte Datei-E/A zu ermöglichen. Wählen Sie „Hohe Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox zu ermöglichen. Deaktivieren Sie Java, um zu verhindern, dass Applets ausgeführt werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Java-Applets nicht ausgeführt werden. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, sind Java-Applets deaktiviert.
@@ -530,7 +530,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Signaturen von heruntergeladenen Programmen in Internet Explorer überprüfen**  
   Mit dieser Richtlinieneinstellung können Sie steuern, ob Internet Explorer auf Computern von Benutzern ausführbare Programme auf digitale Signaturen überprüft (was den Herausgeber von signierter Software identifiziert und verifiziert, dass diese nicht verändert oder manipuliert wurde), bevor diese heruntergeladen werden. Wenn Sie diese Richtlinieneinstellung aktivieren, überprüft Internet Explorer die digitalen Signaturen von ausführbaren Programmen und zeigt ihre Identitäten an, bevor sie auf Computer von Benutzern heruntergeladen werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, überprüft Internet Explorer die digitalen Signaturen von ausführbaren Programmen nicht oder zeigt ihre Identitäten nicht an, bevor sie auf Computer von Benutzern heruntergeladen werden. Wenn Sie diese Richtlinie nicht konfigurieren, überprüft Internet Explorer die digitalen Signaturen von ausführbaren Programmen nicht oder zeigt ihre Identitäten nicht an, bevor sie auf Computer von Benutzern heruntergeladen werden.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Scripting von WebBrowser-Steuerelementen in der eingeschränkten Zone von Internet Explorer**  
   Diese Richtlinieneinstellung bestimmt, ob eine Seite eingebettete WebBrowser-Steuerelemente per Skript steuern kann. Wenn Sie diese Richtlinieneinstellung aktivieren, ist der Skriptzugriff auf das WebBrowser-Steuerelement möglich. Wenn Sie diese Richtlinieneinstellung deaktivieren, ist der Skriptzugriff auf das WebBrowser-Steuerelement nicht möglich. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, kann der Benutzer den Skriptzugriff auf das WebBrowser-Steuerelement aktivieren oder deaktivieren. Standardmäßig ist der Skriptzugriff auf das WebBrowser-Steuerelement nur auf dem lokalen Computer und in Intranetzonen möglich.
@@ -538,7 +538,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Cross-Site Scripting-Filter in der eingeschränkten Zone von Internet Explorer**  
   Mithilfe dieser Richtlinie können Sie steuern, ob mit dem XSS-Filter (Cross-Site Scripting) die siteübergreifende Skripteinschleusung in Websites in dieser Zone erkannt und verhindert wird. Wenn Sie diese Richtlinieneinstellung aktivieren, wird der XSS-Filter für Websites in dieser Zone aktiviert, um Versuche einer websiteübergreifenden Skripteinschleusung zu blockieren. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird der XSS-Filter für Websites in dieser Zone deaktiviert, und Internet Explorer lässt die websiteübergreifende Skripteinschleusung zu.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Dynamische Binär- und Skriptverhalten in der eingeschränkten Zone von Internet Explorer**  
   Diese Richtlinieneinstellung ermöglicht Ihnen, dynamische Binär- und Skriptverhalten zu verwalten: Komponenten, die spezifische Funktionalität für die HTML-Elemente einkapseln, an die sie angefügt wurden. Wenn Sie diese Richtlinieneinstellung aktivieren, stehen Binär- und Skriptverhalten zur Verfügung. Wenn Sie „Vom Administrator genehmigt“ in der Dropdownliste auswählen, sind nur Verhalten verfügbar, die in der Liste „Vom Administrator zugelassenes Verhalten“ der Richtlinie „ Sicherheitseinschränkung für Binärverhalten“ aufgeführt sind. Wenn Sie diese Richtlinieneinstellung deaktivieren, stehen Binär- und Skriptverhalten nicht zur Verfügung, es sei denn, Anwendungen haben einen benutzerdefinierten Sicherheits-Manager implementiert. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, stehen Binär- und Skriptverhalten nicht zur Verfügung, es sei denn, Anwendungen haben einen benutzerdefinierten Sicherheits-Manager implementiert.
@@ -546,11 +546,11 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Überprüfung der Sicherheitseinstellungen von Internet Explorer**  </br>
   Mit dieser Richtlinieneinstellung wird die Funktion zur Überprüfung der Sicherheitseinstellungen deaktiviert, die die Sicherheitseinstellungen von Internet Explorer überprüft, um zu bestimmen, wann die Einstellungen für Internet Explorer ein potenzielles Risiko darstellen. Wenn Sie diese Richtlinieneinstellung aktivieren, wird die Funktion deaktiviert. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird die Funktion aktiviert.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Sicherheitswarnung für potenziell unsichere Dateien in der Internetzone von Internet Explorer**  
   Mit dieser Richtlinieneinstellung wird bestimmt, ob die Nachricht „Datei öffnen - Sicherheitswarnung“ angezeigt wird, wenn der Benutzer versucht, ausführbare Dateien oder andere potenziell unsichere Dateien (z.B. aus einer Dateifreigabe im Intranet über den Datei-Explorer) zu öffnen. Wenn Sie diese Richtlinieneinstellung aktivieren und „Aktivieren“ im Dropdownfeld auswählen, werden diese Dateien ohne Sicherheitswarnung geöffnet. Wenn Sie das Dropdownfeld auf „Bestätigen“ einstellen, wird eine Sicherheitswarnung angezeigt, bevor die Dateien geöffnet werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden diese Dateien nicht geöffnet. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, kann der Benutzer konfigurieren, wie der Computer diese Dateien behandeln soll. Standardmäßig werden diese Dateien in der eingeschränkten Zone blockiert, in der Intranetzone sowie in Zonen für lokale Computer aktiviert und in Internetzonen und vertrauenswürdigen Zonen auf „Bestätigen“ festgelegt.
-  - **Standardeinstellung:** &lt;Bestätigung&gt;  
+  - **Standardeinstellung:**   
   
 - **Java-Berechtigungen in der Intranetzone von Internet Explorer**  
   Mit dieser Richtlinieneinstellung können Sie Berechtigungen für Java-Applets verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie Optionen aus dem Dropdownfeld auswählen. Wählen Sie „Benutzerdefiniert“ aus, um Berechtigungseinstellungen einzeln zu bestimmen. Wählen Sie „Niedrige Sicherheit“ aus, um Applets die Ausführung aller Vorgänge zu ermöglichen. Wählen Sie „Mittlere Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox (ein Bereich im Speicher, außerhalb dessen das Programm keine Aufrufe ausführen kann) sowie Funktionen wie den sicheren Speicherbereich (ein geschützter und sicherer Speicherbereich auf dem Clientcomputer) und die benutzergesteuerte Datei-E/A zu ermöglichen. Wählen Sie „Hohe Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox zu ermöglichen. Deaktivieren Sie Java, um zu verhindern, dass Applets ausgeführt werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Java-Applets nicht ausgeführt werden. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, wird die Berechtigung auf „Mittlere Sicherheit“ festgelegt.
@@ -558,7 +558,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Veraltete ActiveX-Steuerelementen in Internet Explorer blockieren**  </br>
   Mit dieser Richtlinieneinstellung wird bestimmt, ob Internet Explorer bestimmte veraltete ActiveX-Steuerelemente blockiert. Veraltete ActiveX-Steuerelemente werden in der Intranetzone nie blockiert. Wenn Sie diese Richtlinieneinstellung aktivieren, blockiert Internet Explorer veraltete ActiveX-Steuerelemente nicht mehr. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, blockiert Internet Explorer weiterhin bestimmte veraltete ActiveX-Steuerelemente. Weitere Informationen finden Sie unter „Outdated ActiveX Controls“ (Veraltete ActiveX-Steuerelemente) in der TechNet-Bibliothek in Internet Explorer.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Popupblocker in der eingeschränkten Zone von Internet Explorer**  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob unerwünschte Popupfenster angezeigt werden. Popupfenster, die geöffnet werden, wenn der Endbenutzer auf einen Link klickt, werden nicht blockiert. Wenn Sie diese Richtlinieneinstellung aktivieren, werden die meisten unerwünschten Popupfenster nicht angezeigt. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden Popupfenster angezeigt. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, werden die meisten unerwünschten Popupfenster nicht angezeigt.
@@ -566,7 +566,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer processes MK protocol security restriction** (Internet Explorer-Prozesse, Sicherheitseinschränkung für MK-Protokoll)  
   Die Richtlinieneinstellung „Sicherheitseinschränkung für MK-Protokoll“ verringert die Angriffsfläche durch Blockieren des MK-Protokolls. Bei Ressourcen, die im MK-Prokoll gehostet werden, treten Fehler auf. Wenn Sie diese Richtlinieneinstellung aktivieren, wird das MK-Protokoll für den Datei-Explorer und Internet Explorer blockiert. Bei Ressourcen, die im MK-Protokoll gehostet werden, treten Fehler auf. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Anwendungen die MK-Protokoll-API verwenden. Ressourcen, die im MK-Protokoll gehostet werden, können für den Datei-Explorer und für Internet Explorer-Prozesse verwendet werden. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, wird das MK-Protokoll für den Datei-Explorer und Internet Explorer blockiert. Bei Ressourcen, die im MK-Protokoll gehostet werden, treten Fehler auf.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer trusted zone java permissions** (Java-Berechtigungen für vertrauenswürdige Zonen in Internet Explorer)  </br>
   Mit dieser Richtlinieneinstellung können Sie Berechtigungen für Java-Applets verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie Optionen aus dem Dropdownfeld auswählen. Wählen Sie „Benutzerdefiniert“ aus, um Berechtigungseinstellungen einzeln zu bestimmen. Wählen Sie „Niedrige Sicherheit“ aus, um Applets die Ausführung aller Vorgänge zu ermöglichen. Wählen Sie „Mittlere Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox (ein Bereich im Speicher, außerhalb dessen das Programm keine Aufrufe ausführen kann) sowie Funktionen wie den sicheren Speicherbereich (ein geschützter und sicherer Speicherbereich auf dem Clientcomputer) und die benutzergesteuerte Datei-E/A zu ermöglichen. Wählen Sie „Hohe Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox zu ermöglichen. Deaktivieren Sie Java, um zu verhindern, dass Applets ausgeführt werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Java-Applets nicht ausgeführt werden. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, wird die Berechtigung auf „Niedrige Sicherheit“ festgelegt.
@@ -582,7 +582,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer internet zone allow only approved domains to use Active X controls** (Nur genehmigte Domänen können das ActiveX-Steuerelement in Internetzonen in Internet Explorer verwenden)  </br>
   Mit dieser Richtlinieneinstellung wird bestimmt, ob Benutzer dazu aufgefordert werden, zuzulassen, dass ActiveX-Steuerelemente auf Websites ausgeführt werden, die nicht die Website sind, auf der das ActiveX-Steuerelement installiert wurde. Wenn Sie diese Richtlinieneinstellung aktivieren, werden Benutzer zur Bestätigung aufgefordert, bevor die ActiveX-Steuerelemente von Websites in dieser Zone ausgeführt werden können. Der Benutzer kann die Ausführung des Steuerelements wahlweise für die aktuelle Website oder für alle Websites zulassen. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden die Benutzer nicht pro Website zum Zulassen von ActiveX aufgefordert, und ActiveX-Steuerelemente dürfen für alle Websites in dieser Zone ausgeführt werden.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer include all network paths** (Alle Netzwerkpfade in Internet Explorer einbeziehen)  
   Alle Netzwerkpfade in Internet Explorer einbeziehen
@@ -598,7 +598,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer locked down restricted zone java permissions** (SmartScreen Filter für gesperrte eingeschränkte Zonen in Internet Explorer)  </br>
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt überprüft. Wenn Sie diese Richtlinieneinstellung aktivieren, überprüft der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden Seiten in dieser Zone vom SmartScreen-Filter nicht auf schädlichen Inhalt überprüft. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, kann der Benutzer entscheiden, ob der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt überprüft. Hinweis: In Internet Explorer 7 steuert diese Richtlinieneinstellung, ob der Phishingfilter Seiten in dieser Zone auf schädlichen Inhalt überprüft.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer crash detection** (Absturzermittlung in Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie die Absturzermittlungsfunktion der Add-On-Verwaltung verwalten. Wenn Sie diese Richtlinieneinstellung aktivieren, wird durch einen Absturz von Internet Explorer die Windows-Fehlerberichterstattung eingeleitet. Dieses Verhalten gibt es im Windows XP Professional Service Pack 1 und früher. Alle Richtlinieneinstellung für die Windows-Fehlerberichterstattung bleiben bestehen. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, bleibt die Absturzermittlungsfunktion für die Add-On-Verwaltung aktiviert.
@@ -614,7 +614,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer internet zone logon options** (Anmeldeoptionen für die Internetzone von Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie Einstellungen für Anmeldeoptionen verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie eine der folgenden Anmeldeoptionen auswählen. Die Anmeldung kann anonym durchgeführt werden, um die HTTP-Authentifizierung zu deaktivieren, und das Gastkonto kann nur für das CIFS-Protokoll (Common Internet File System) verwendet werden. Sie können die Eingabe eines Benutzernamens und eines Kennworts anfordern, um die Benutzer-ID und Kennwörter von Benutzern abzufragen. Nachdem ein Benutzer abgefragt wurde, können diese Werte für den Rest der Sitzung im Hintergrund verwendet werden. Sie können die automatische Anmeldung nur in der Intranetzone zulassen, um Benutzer-IDs und Kennwörter von Benutzern in anderen Zonen abzufragen. Nachdem ein Benutzer abgefragt wurde, können diese Werte für den Rest der Sitzung im Hintergrund verwendet werden. Sie können die automatische Anmeldung mit dem aktuellen Benutzernamen und Kennwort durchführen, um die Anmeldung mithilfe der NTLM-Authentifizierung (auch bekannt als Windows NT Challenge Response) durchzuführen. Wenn die NTLM-Authentifizierung vom Server unterstützt wird, werden der Netzwerkbenutzername und das Kennwort für die Anmeldung verwendet. Wenn die NTLM-Authentifizierung nicht vom Server unterstützt wird, wird der Benutzer dazu aufgefordert, seinen Benutzernamen und sein Kennwort einzugeben. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird die automatische Anmeldung nur in der Intranetzone zugelassen. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, wird die automatische Anmeldung nur in der Intranetzone zugelassen.
-  - **Standardeinstellung:** &lt;Bestätigung&gt;  
+  - **Standardeinstellung:**   
   
 - **Internet Explorer restricted zone allow vbscript to run** (Zulassen der Ausführung von VBScript in einer eingeschränkten Internet Explorer-Zone)  </br>  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob das VBScript über die in Internet Explorer festgelegte Zone auf Seiten ausgeführt werden kann. Wenn Sie die Option „Aktivieren“ im Dropdownfeld ausgewählt haben, kann das VBScript ohne Benutzereingriff verwendet werden. Wenn Sie die Option „Bestätigen“ im Dropdownfeld ausgewählt haben, werden Benutzer dazu aufgefordert, auszuwählen, ob das VBScript ausgeführt werden darf. Wenn Sie die Option „Deaktivieren“ im Dropdownfeld ausgewählt haben, wird die Ausführung des VBScript verhindert. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren oder deaktivieren, wird die Ausführung des VBScript verhindert.
@@ -642,7 +642,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer processes restrict Active X install** (Einschränken der Installation von ActiveX-Steuerelementen mit Internet Explorer-Prozessen)  </br>
   Diese Richtlinieneinstellung ermöglicht es Anwendungen, die das WebBrowser-Steuerelement hosten, die automatische Eingabeaufforderung für die Installation von ActiveX-Steuerelementen zu blockieren. Wenn Sie diese Richtlinieneinstellung aktivieren, blockiert das WebBrowser-Steuerelement die automatische Eingabeaufforderung für die Installation von ActiveX-Steuerelementen für alle Prozesse. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren oder deaktivieren, wird die automatische Eingabeaufforderung für die Installation von ActiveX-Steuerelementen nicht vom Webbrowsersteuerelement für alle Prozesse blockiert.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer internet zone scriptlets** (Skriptlets für Internetzonen in Internet Explorer) Mit dieser Richtlinieneinstellung können Sie verwalten, ob Benutzer Skriptlets ausführen können. Wenn Sie diese Richtlinieneinstellung aktivieren, können Benutzer Skriptlets ausführen. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Benutzer Skriptlets nicht ausführen. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, können Benutzer Skriptlets aktivieren oder deaktivieren.
   - **Standardeinstellung:** Deaktivieren  
@@ -672,7 +672,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer – Sicherheitszonen: Nur Computereinstellungen verwenden**  
   Mit dieser Einstellung werden Informationen zu Sicherheitszonen für alle Benutzer desselben Computers angewendet. Bei einer Sicherheitszone handelt es sich um Websites, die die gleiche Sicherheitsstufe aufweisen. Wenn Sie diese Richtlinie aktivieren, werden die Änderungen, die ein Benutzer an einer Sicherheitszone vornimmt, für alle Benutzer dieses Computers übernommen. Wenn Sie diese Richtlinie deaktivieren oder nicht konfigurieren, können die Benutzer des Computers eigene Einstellungen für Sicherheitszonen einrichten. Durch diese Richtlinie soll sichergestellt werden, dass die Einstellungen für Sicherheitszonen einheitlich auf einen Benutzer angewendet werden und sich nicht von Benutzer zu Benutzer unterscheiden. Weitere Informationen finden Sie im Abschnitt zur Richtlinie „Sicherheitszonen: Benutzer können keine Einstellungen ändern“.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer locked down local machine zone java permissions** (Java-Berechtigungen für gesperrte Zonen mit lokalen Computern in Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie Berechtigungen für Java-Applets verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie Optionen aus dem Dropdownfeld auswählen. Wählen Sie „Benutzerdefiniert“ aus, um Berechtigungseinstellungen einzeln zu bestimmen. Wählen Sie „Niedrige Sicherheit“ aus, um Applets die Ausführung aller Vorgänge zu ermöglichen. Wählen Sie „Mittlere Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox (ein Bereich im Speicher, außerhalb dessen das Programm keine Aufrufe ausführen kann) sowie Funktionen wie den sicheren Speicherbereich (ein geschützter und sicherer Speicherbereich auf dem Clientcomputer) und die benutzergesteuerte Datei-E/A zu ermöglichen. Wählen Sie „Hohe Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox zu ermöglichen. Deaktivieren Sie Java, um zu verhindern, dass Applets ausgeführt werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Java-Applets nicht ausgeführt werden. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, sind Java-Applets deaktiviert.
@@ -699,11 +699,11 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer use Active X installer service** (ActiveX-Installationsdienst in Internet Explorer verwenden)  </br>
   Mit dieser Richtlinieneinstellung können Sie festlegen, wie ActiveX-Steuerelemente installiert werden. Wenn Sie diese Richtlinieneinstellung aktivieren, werden ActiveX-Steuerelemente nur installiert, wenn der ActiveX-Installationsdienst vorhanden ist und dafür konfiguriert wurde, die Installation von ActiveX-Steuerelementen zuzulassen. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden ActiveX-Steuerelemente (einschließlich Benutzersteuerelemente) über den Standardinstallationsvorgang installiert.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer processes protection from zone elevation** (Schutz vor Erhöhung der Rechte von Prozessen für Zonen in Internet Explorer)  
   Internet Explorer wendet auf jede Website, die geöffnet wird, Einschränkungen an. Diese hängen vom Speicherort der Webseite ab (z.B. Internet, Intranet, lokaler Computer). Für Webseiten, die sich auf lokalen Computern befinden, gelten beispielsweise die niedrigsten Sicherheitseinschränkungen. Sie befinden sich in der Zone „Lokaler Computer“, sodass diese in der Regel das Primärziel von Angreifern darstellt. Wenn Sie diese Richtlinieneinstellung aktivieren, kann jede Zone gegen die Erhöhung der Rechte durch alle Prozesse geschützt werden. Wenn Sie diese Richtlinie deaktivieren oder nicht konfigurieren, ist kein Schutz vor Prozessen vorhanden, die nicht Internet Explorer oder die in der Prozessliste aufgeführten Prozesse darstellen.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer internet zone download unsigned Active X controls** (Herunterladen nicht signierter ActiveX-Steuerelemente in Internetzonen in Internet Explorer)  </br>
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob Benutzer nicht signierte ActiveX-Steuerelemente aus der Zone herunterladen können. Insbesondere, wenn Code aus einer nicht vertrauenswürdigen Zone stammt, kann er potenziell schädlich sein. Wenn Sie diese Richtlinieneinstellung aktivieren, können Benutzer nicht signierte Steuerelemente ohne Benutzereingriff ausführen. Wenn Sie die Option „Bestätigen“ im Dropdownfeld auswählen, werden Benutzer dazu aufgefordert, auszuwählen, ob die Ausführung von nicht signierten Steuerelementen zugelassen werden soll. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Benutzer nicht signierte Steuerelemente nicht ausführen. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, können Benutzer nicht signierte Steuerelemente nicht ausführen.
@@ -721,11 +721,11 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   - **Standardeinstellung:** Deaktiviert  
   
 - **Internet Explorer processes restrict file download** (Dateidownloads für Prozesse in Internet Explorer einschränken)  </br> Diese Richtlinieneinstellung ermöglicht es Anwendungen, die das WebBrowser-Steuerelement hosten, die automatische Eingabeaufforderung für nicht vom Benutzer initiierte Dateidownloads zu blockieren. Wenn Sie diese Richtlinieneinstellung aktivieren, blockiert das WebBrowser-Steuerelement die automatische Eingabeaufforderung für nicht vom Benutzer initiierte Dateidownloads für alle Prozesse. Wenn Sie diese Richtlinieneinstellung deaktivieren, blockiert das WebBrowser-Steuerelement die automatische Eingabeaufforderung für nicht vom Benutzer initiierte Dateidownloads für alle Prozesse nicht.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer restricted zone allow only approved domains to use Active X controls** (Nur genehmigte Domänen können das ActiveX-Steuerelement in eingeschränkten Zonen in Internet Explorer verwenden)  </br>
   Mit dieser Richtlinieneinstellung wird bestimmt, ob Benutzer dazu aufgefordert werden, zuzulassen, dass ActiveX-Steuerelemente auf Websites ausgeführt werden, die nicht die Website sind, auf der das ActiveX-Steuerelement installiert wurde. Wenn Sie diese Richtlinieneinstellung aktivieren, werden Benutzer zur Bestätigung aufgefordert, bevor die ActiveX-Steuerelemente von Websites in dieser Zone ausgeführt werden können. Der Benutzer kann die Ausführung des Steuerelements wahlweise für die aktuelle Website oder für alle Websites zulassen. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden die Benutzer nicht pro Website zum Zulassen von ActiveX aufgefordert, und ActiveX-Steuerelemente dürfen für alle Websites in dieser Zone ausgeführt werden.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer restricted zone initialize and script Active X controls not marked as safe** (ActiveX-Steuerelemente in eingeschränkten Zonen in Internet Explorer initialisieren und ausführen, die als unsicher gekennzeichnet sind)  
   Mit dieser Richtlinieneinstellung können Sie ActiveX-Steuerelemente verwalten, die als unsicher gekennzeichnet sind. Wenn Sie diese Richtlinieneinstellung aktivieren, werden ActiveX-Steuerelemente ausgeführt und mit Parametern geladen, und das Skript wird ohne Festlegen der Objektsicherheit für nicht vertrauenswürdige Daten oder Skripts erstellt. Von dieser Einstellung wird abgeraten, es sei denn, es handelt sich um sichere und verwaltete Zonen. Mit dieser Einstellung werden sowohl unsichere als auch sichere Steuerelemente initialisiert und Skripte für diese erstellt, ohne dabei die Option „ActiveX-Steuerelemente ausführen, die für Skripting sicher sind“ zu beachten. Wenn Sie diese Richtlinieneinstellung aktivieren und die Option „Bestätigen“ im Dropdownfeld auswählen, werden Benutzer dazu aufgefordert, auszuwählen, ob das Steuerelement mit Parametern geladen oder ein Skript erstellt werden soll. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden ActiveX-Steuerelemente, die nicht als sicher gekennzeichnet werden können, nicht geladen, und es wird kein Skript erstellt. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, werden ActiveX-Steuerelemente, die nicht als sicher gekennzeichnet werden können, nicht geladen, und es wird kein Skript erstellt.
@@ -758,7 +758,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer enhanced protected mode** (Erweiterter geschützter Modus in Internet Explorer)  
   Der erweiterte geschützte Modus bietet einen zusätzlichen Schutz gegen Websites mit Schadsoftware, indem er bei 64-Bit-Versionen von Windows 64-Bit-Prozesse verwendet. Bei Computern mit Windows 8 oder höher beschränkt der erweiterte geschützte Modus außerdem die Speicherorte von Internet Explorer in der Registrierung und im Dateisystem. Wenn Sie diese Richtlinieneinstellung aktivieren, wird der erweiterte geschützte Modus aktiviert. In allen Zonen mit aktiviertem geschützten Modus wird der erweiterte geschützte Modus verwendet. Die Benutzer können den erweiterten geschützten Modus nicht deaktivieren. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird der erweiterte geschützte Modus deaktiviert. In allen Zonen mit aktiviertem geschützten Modus wird die Version des geschützten Modus verwendet, die mit Internet Explorer 7 für Windows Vista eingeführt wurde. Wenn Sie diese Richtlinie nicht konfigurieren, können die Benutzer den erweiterten geschützten Modus über die Registerkarte „Erweitert“ im Dialogfeld „Internetoptionen“ ein oder ausschalten.
-  - **Standardeinstellung:** Enabled  
+  - **Standardeinstellung:** Aktiviert  
   
 - **Internet Explorer bypass smart screen warnings** (SmartScreen-Warnungen in Internet Explorer umgehen)  
   Mit dieser Richtlinieneinstellung wird bestimmt, ob Benutzer Warnungen des SmartScreen-Filters umgehen können. Der SmartScreen-Filter warnt Benutzer vor ausführbaren Dateien im Internet, die selten von Benutzern heruntergeladen werden. Wenn Sie diese Richtlinieneinstellung aktivieren, hindern die Warnungen des SmartScreen-Filters Benutzer am Herunterladen. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Warnungen des SmartScreen-Filters umgehen.
@@ -858,7 +858,7 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
 Weitere Informationen finden Sie unter [Policy CSP - MSSecurityGuide (Richtlinien-CSP: MSSecurityGuide)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-mssecurityguide) in der Windows-Dokumentation.  
 
 - **Apply UAC restrictions to local accounts on network logon** (UAC-Einschränkungen auf lokale Konten bei der Netzwerkanmeldung anwenden)  
-    - **Standardeinstellung:** Enabled
+    - **Standardeinstellung:** Aktiviert
   
 - **SMB v1 client driver start configuration** (Startkonfiguration den SMB v1-Clienttreibers)  
   - **Standardeinstellung:** Treiber deaktiviert
@@ -870,7 +870,7 @@ Weitere Informationen finden Sie unter [Policy CSP - MSSecurityGuide (Richtlinie
   - **Standardeinstellung:** Deaktiviert
   
 - **Structured exception handling overwrite protection** (Überschreibungsschutz bei der Behandlung strukturierter Ausnahmen)  
-  - **Standardeinstellung:** Enabled
+  - **Standardeinstellung:** Aktiviert
   
 ## <a name="mss-legacy"></a>MSS Legacy  
 Weitere Informationen finden Sie unter [Policy CSP - MSSLegacy (Richtlinen-CSP: MSSLegacy)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-msslegacy) in der Windows-Dokumentation.  
@@ -879,7 +879,7 @@ Weitere Informationen finden Sie unter [Policy CSP - MSSLegacy (Richtlinen-CSP: 
   - **Standardeinstellung:** Höchster Schutz 
   
 - **Network ignore NetBIOS name release requests except from WINS servers** (Das Netzwerk ignoriert Namensanforderungen von NetBIOS, es sei denn, sie stammen von WINS-Servern)  
-  - **Standardeinstellung:** Enabled
+  - **Standardeinstellung:** Aktiviert
   
 - **Network IPv6 source routing protection level** (Schutzebene für das Quellrouting von Netzwerk-IPv6-Adressen)  
   - **Standardeinstellung:** Höchster Schutz
@@ -892,7 +892,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Power (Richtlinien-CSP: Pow
 
 - **Require password on wake while plugged in** (Kennwort bei Reaktivierung im Netzbetrieb anfordern)  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob der Benutzer zur Eingabe eines Kennworts aufgefordert wird, wenn das System aus dem Energiesparmodus reaktiviert wird. Wenn Sie diese Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird der Benutzer beim Verlassen des Energiesparmodus zur Eingabe eines Kennworts aufgefordert. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird der Benutzer beim Verlassen des Energiesparmodus nicht zur Eingabe eines Kennworts aufgefordert.
-  - **Standardeinstellung:** Enabled
+  - **Standardeinstellung:** Aktiviert
   
 - **Standby states when sleeping while on battery** (Standbyzustände im Energiesparmodus im Akkubetrieb)  
   Diese Richtlinieneinstellung legt fest, ob Windows Standbyzustände verwenden darf, wenn der Computer in den Energiesparmodus versetzt wird. Wenn Sie diese Richtlinieneinstellung aktivieren oder nicht konfigurieren, verwendet Windows Standbyzustände, um den Computer in den Energiesparmodus zu versetzen. Wenn Sie diese Richtlinieneinstellung deaktivieren, sind Standbyzustände (S1–S3) nicht zulässig.
@@ -904,26 +904,26 @@ Weitere Informationen finden Sie unter [Policy CSP - Power (Richtlinien-CSP: Pow
   
 - **Require password on wake while on battery** (Kennwort bei Reaktivierung im Akkubetrieb anfordern)  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob der Benutzer zur Eingabe eines Kennworts aufgefordert wird, wenn das System aus dem Energiesparmodus reaktiviert wird. Wenn Sie diese Richtlinieneinstellung aktivieren oder nicht konfigurieren, wird der Benutzer beim Verlassen des Energiesparmodus zur Eingabe eines Kennworts aufgefordert. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird der Benutzer beim Verlassen des Energiesparmodus nicht zur Eingabe eines Kennworts aufgefordert.
-  - **Standardeinstellung:** Enabled
+  - **Standardeinstellung:** Aktiviert
   
 ## <a name="remote-desktop-services"></a>Remotedesktopdienste  
 Weitere Informationen finden Sie unter [Policy CSP – RemoteDesktopServices (Richtlinien-Konfigurationsdienstanbieter: RemoteDesktopServices)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotedesktopservices) in der Windows-Dokumentation.  
 
 - **Block password saving** (Speichern von Kennwörtern blockieren)  
   Diese Richtlinieneinstellung steuert, ob Kennwörter auf diesem Computer über die Remotedesktopverbindung gespeichert werden können. Wenn Sie diese Einstellung aktivieren, wird das Kontrollkästchen für die Kennwortspeicherung in der Remotedesktopverbindung deaktiviert, und Benutzer können Kennwörter nicht mehr speichern. Wenn ein Benutzer eine RDP-Datei über die Remotedesktopverbindung öffnet und seine Einstellungen speichert, werden alle zuvor in der RDP-Datei vorhandenen Kennwörter gelöscht. Wenn Sie diese Einstellung deaktivieren oder nicht konfigurieren, kann der Benutzer Kennwörter über die Remotedesktopverbindung speichern.
-  - **Standardeinstellung:** Enabled
+  - **Standardeinstellung:** Aktiviert
   
 - **Secure RPC communication** (RPC-Kommunikation sichern)  
   Diese Richtlinieneinstellung legt fest, ob für einen Remotedesktopsitzungs-Hostserver die sichere RPC-Kommunikation mit allen Clients erforderlich bzw. ob die unsichere Kommunikation zulässig ist. Mit dieser Einstellung können Sie die Sicherheit der RPC-Kommunikation mit Clients verbessern, indem Sie nur authentifizierte und verschlüsselte Anforderungen zulassen. Wenn die Einstellung aktiviert ist, akzeptieren Remotedesktopdienste Anforderungen von RPC-Clients, die sichere Anforderungen unterstützen, und unterstützen keine unsichere Kommunikation mit nicht vertrauenswürdigen Clients. Wenn die Einstellung deaktiviert ist, muss der gesamte RPC-Datenverkehr für Remotedesktopdienste immer sicher sein. Für RPC-Clients, die nicht auf die Anforderung reagieren, ist jedoch eine unsichere Kommunikation zulässig. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, ist die unsichere Kommunikation zulässig. Hinweis: Die RPC-Schnittstelle wird zum Verwalten und Konfigurieren der Remotedesktopdienste verwendet.
-  - **Standardeinstellung:** Enabled
+  - **Standardeinstellung:** Aktiviert
   
 - **Block drive redirection** (Laufwerkumleitung blockieren)  
   Mit dieser Richtlinieneinstellung wird festgelegt, ob die Zuordnung von Clientlaufwerken während einer Remotedesktopdienst-Sitzung (Laufwerkumleitung) verhindert werden soll. Remotedesktopdienst-Hostserver ordnen Clientlaufwerke standardmäßig beim Herstellen der Verbindung automatisch zu. Zugeordnete Laufwerke werden in der Sitzungsordnerstruktur im Datei-Explorer oder unter Computer mit dem Format *\<Laufwerkbuchstabe>* auf *\<Computername>* angezeigt. Mit dieser Richtlinieneinstellung können Sie dieses Verhalten überschreiben. Wenn Sie diese Richtlinieneinstellung aktivieren, ist die Umleitung von Clientlaufwerken in Remotedesktopdienst-Sitzungen nicht zulässig, und die Zwischenablageumleitung beim Kopieren von Dateien ist auf Computern unter Windows Server 2003, Windows 8 und Windows XP nicht zulässig. Wenn Sie diese Richtlinieneinstellung deaktivieren, ist die Umleitung von Clientlaufwerken immer zulässig. Außerdem ist die Zwischenablageumleitung beim Kopieren von Dateien immer zulässig, wenn die Zwischenablageumleitung zulässig ist. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, werden die Umleitung von Clientlaufwerken und die Zwischenablageumleitung beim Kopieren von Dateien nicht auf Gruppenrichtlinienebene festgelegt.
-  - **Standardeinstellung:** Enabled
+  - **Standardeinstellung:** Aktiviert
   
 - **Prompt for password upon connection** (Kennwort bei der Herstellung einer Verbindung anfordern)  
   Diese Richtlinieneinstellung legt fest, ob Remotedesktopdienste beim Herstellen einer Verbindung immer ein Kennwort vom Client anfordern. Mit dieser Einstellung können Sie erzwingen, dass Benutzer, die sich bei Remotedesktopdiensten anmelden, selbst dann zur Eingabe eines Kennworts aufgefordert werden, wenn sie das Kennwort bereits im Remotedesktopverbindungs-Client angegeben haben. Remotedesktopdienste lassen standardmäßig zu, dass Benutzer sich automatisch anmelden, indem sie ein Kennwort im Remotedesktopverbindungs-Client eingeben. Wenn Sie diese Richtlinieneinstellung aktivieren, können sich Benutzer nicht automatisch bei Remotedesktopdiensten anmelden, indem sie ihr Kennwort im Remotedesktopverbindungs-Client eingeben. Sie müssen bei der Anmeldung ein Kennwort eingeben. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Benutzer sich immer automatisch bei Remotedesktopdiensten anmelden, indem sie ihr Kennwort im Remotedesktopverbindungs-Client eingeben. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, wird die automatische Anmeldung nicht auf Gruppenrichtlinienebene festgelegt. 
-  - **Standardeinstellung:** Enabled
+  - **Standardeinstellung:** Aktiviert
   
 - **Remote desktop services client connection encryption level** (Verschlüsselungsstufe der Verbindung des Remotedesktopdienst-Clients)  
   Mit dieser Richtlinieneinstellung wird festgelegt, ob eine bestimmte Verschlüsselungsstufe zum Schutz der Kommunikation zwischen Clientcomputern und RD-Sitzungshostservern während RDP-Verbindungen (Remotedesktopprotokoll) erforderlich ist. Diese Richtlinie gilt nur, wenn Sie die native RDP-Verschlüsselung verwenden. Allerdings wird von der Verwendung der nativen RDP-Verschlüsselung (im Gegensatz zur SSL-Verschlüsselung) abgeraten. Diese Richtlinie gilt nicht für die SSL-Verschlüsselung. Wenn Sie diese Richtlinieneinstellung aktivieren, muss für die gesamte Kommunikation zwischen Clients und RD-Sitzungshostservern während Remoteverbindungen die in dieser Einstellung festgelegte Verschlüsselungsmethode verwendet werden. Die Verschlüsselungsstufe ist standardmäßig auf „Hoch“ festgelegt. Die folgenden Verschlüsselungsmethoden stehen zur Verfügung:  
@@ -932,14 +932,14 @@ Weitere Informationen finden Sie unter [Policy CSP – RemoteDesktopServices (Ri
   - *Niedrig:* Mit der Einstellung „Niedrig“ werden nur vom Client an den Server gesendete Daten mithilfe der 56-Bit-Verschlüsselung verschlüsselt.  
   
   Wenn Sie diese Einstellung deaktivieren oder nicht konfigurieren, wird die für Remoteverbindungen mit RD-Sitzungshostservern zu verwendende Verschlüsselungsstufe nicht über Gruppenrichtlinien erzwungen. Wichtig: die FIPS-Konformität (Federal Information Processing Standard) kann mithilfe der Systemkryptografie konfiguriert werden. Verwenden Sie FIPS-konforme Algorithmen für die Verschlüsselung, das Hashing und das Signieren von Einstellungen in der Gruppenrichtlinie (unter Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options). Mit der FIPS-konformen Einstellung werden Daten, die vom Client an den Server und vom Server an den Client gesendet werden, mit Verschlüsselungsalgorithmen gemäß FIPS 140 mithilfe von kryptografischen Modulen von Microsoft verschlüsselt und entschlüsselt. Verwenden Sie diese Verschlüsselungsstufe, wenn die Kommunikation zwischen Clients und RD-Sitzungshostservern die höchste Verschlüsselungsstufe erfordert.
-  - **Standardeinstellung:** High (Hoch)
+  - **Standardeinstellung:** Hoch
   
 ## <a name="remote-management"></a>Remoteverwaltung  
 Weitere Informationen finden Sie unter [Policy CSP – RemoteManagement (Richtlinien-Konfigurationsdienstanbieter: RemoteManagement)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotemanagement) in der Windows-Dokumentation.  
 
 - **Block storing run as credentials** (Speichern von Anmeldeinformationen für „Ausführen als“ blockieren)  
   Standardclientauthentifizierung
-  - **Standardeinstellung:** Enabled
+  - **Standardeinstellung:** Aktiviert
   
 - **Standardauthentifizierung**  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob der Windows-Remoteverwaltungsdienst (Windows Remote Management, WinRM) die Standardauthentifizierung von einem Remoteclient akzeptiert. Wenn Sie diese Richtlinieneinstellung aktivieren, akzeptiert der WinRM-Dienst die Standardauthentifizierung von einem Remoteclient. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, akzeptiert der WinRM-Dienst keine Standardauthentifizierung von einem Remoteclient.
@@ -1026,9 +1026,9 @@ Weitere Informationen finden Sie unter [Policy CSP - WindowsConnectionManager (R
   - Manuelle Verbindungsversuche: Wenn der Computer bereits mit einem nicht-domänenbasierten Netzwerk oder einem domänenbasierten Netzwerk über andere Medien als Ethernet verbunden ist, und ein Benutzer versucht, entgegen dieser Richtlinieneinstellung eine manuelle Verbindung zu einem zusätzlichen Netzwerk herzustellen, wird die bestehende Netzwerkverbindung abgebrochen und die manuelle Verbindung gestattet. Wenn der Computer bereits mit einem nicht-domänenbasierten Netzwerk oder einem domänenbasierten Netzwerk über Ethernet verbunden ist, und ein Benutzer versucht, entgegen dieser Richtlinieneinstellung eine manuelle Verbindung zu einem zusätzlichen Netzwerk herzustellen, wird die bestehende Ethernet-Verbindung gehalten und der manuelle Verbindungsversuch wird blockiert.  
 
   Wenn diese Richtlinieneinstellung nicht konfiguriert oder deaktiviert wird, ist es zulässig, dass Computer gleichzeitig eine Verbindung mit einem Domänen- und einem Nicht-Domänennetzwerk herstellen.
-  - **Standardeinstellung:** Enabled
+  - **Standardeinstellung:** Aktiviert
   
-## <a name="windows-defender"></a>Windows Defender  
+## <a name="windows-defender"></a>Windows Defender  
 Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfigurationsdienstanbieter: Defender)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) in Ihrer Windows-Dokumentation.  
 
 - **Eingehende E-Mail überprüfen**  
@@ -1124,12 +1124,12 @@ Weitere Informationen finden Sie unter [Policy CSP - WindowsInkWorkspace (Richtl
 
 - **Ink-Arbeitsbereich**  
   Gibt an, ob der Benutzer auf den Ink-Arbeitsbereich zugreifen darf. 0 - Der Zugriff auf den Ink-Arbeitsbereich ist deaktiviert. Die Funktion ist deaktiviert. 1 - Der Ink-Arbeitsbereich ist aktiviert (Funktion ist aktiviert), aber der Benutzer kann nicht über den Sperrbildschirm darauf zugreifen. 2 (Standard) - Der Ink-Arbeitsbereich ist aktiviert (Funktion ist aktiviert), und der Benutzer kann auch über den Sperrbildschirm darauf zugreifen.
-  - **Standardeinstellung:** Enabled
+  - **Standardeinstellung:** Aktiviert
  
-## <a name="windows-powershell"></a>Windows PowerShell  
+## <a name="windows-powershell"></a>Windows PowerShell  
 Weitere Informationen finden Sie unter [Policy CSP - WindowsPowerShell (Richtlinien-Konfigurationsdienstanbieter - WindowsPowerShell)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowspowershell) in Ihrer Windows-Dokumentation.  
 
 - **PowerShell-Shellskriptblock-Protokollierung**  
   Mit dieser Richtlinieneinstellung können alle PowerShell-Skript-Eingaben im Microsoft-Windows-PowerShell/Operational-Ereignisprotokoll protokolliert werden. Wenn Sie diese Richtlinieneinstellung aktivieren, protokolliert Windows PowerShell die Verarbeitung von Befehlen, Skriptblöcken, Funktionen und Skripts, unabhängig davon, ob diese interaktiv oder automatisch aufgerufen wurden. Wenn Sie diese Richtlinieneinstellung deaktivieren, ist das Protokollieren von PowerShell-Skript-Eingaben deaktiviert. Wenn Sie die Protokollierung von Skriptblockaufrufen aktivieren, protokolliert PowerShell zusätzlich Protokollereignisse, wenn ein Befehl, ein Skriptblock, eine Funktion oder Skriptstarts oder -stops aufgerufen werden. Das Aktivieren der Protokollierung von Aufrufen führt zu einer großen Anzahl von Ereignisprotokollen. Hinweis: Diese Richtlinieneinstellung ist sowohl unter„Computerkonfiguration“ als auch unter „Benutzerkonfiguration“ im Editor für Gruppenrichtlinien vorhanden. Die Richtlinieneinstellung in der Computerkonfiguration hat Vorrang vor der Richtlinieneinstellung in der Benutzerkonfiguration.
-  - **Standardeinstellung:** Enabled
+  - **Standardeinstellung:** Aktiviert
  

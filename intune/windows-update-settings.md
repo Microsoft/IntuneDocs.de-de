@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98c3425c58b6039c8a1c3b5750f9473c74a78634
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
+ms.openlocfilehash: 28e7109a82a5c083b4be26bc823bb0e06d97a7ca
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325468"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334985"
 ---
 # <a name="windows-update-settings-for-intune"></a>Windows-Updateeinstellungen für Intune  
 
@@ -236,6 +236,6 @@ Die folgenden Einstellungen werden zum Steuern verwendet, wann erzwungene Neusta
 
 Die Übermittlungsoptimierung wird nicht mehr als Teil eines Windows 10-Updaterings unter „Softwareupdates“ konfiguriert. Sie wird nun über die Gerätekonfiguration festgelegt. Frühere Konfigurationen bleiben jedoch in der Konsole verfügbar. Sie können diese vorherigen Konfigurationen entfernen, indem Sie sie auf *Nicht konfiguriert* setzen. Anderweitig können sie jedoch nicht geändert werden. 
 
-Um Konflikte zwischen neuer und alter Richtlinie zu vermeiden, lesen Sie [Wechsel von vorhandenen Updateringen zur Übermittlungsoptimierung](https://docs.microsoft.com/en-us/intune/delivery-optimization-windows#move-from-existing-update-rings-to-delivery-optimization) und verschieben Ihre Einstellungen dann in ein Profil für die Übermittlungsoptimierung.
+Um Konflikte zwischen neuer und alter Richtlinie zu vermeiden, lesen Sie [Wechsel von vorhandenen Updateringen zur Übermittlungsoptimierung](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) und verschieben Ihre Einstellungen dann in ein Profil für die Übermittlungsoptimierung.
 
 

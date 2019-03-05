@@ -6,8 +6,8 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
-ms.topic: article
+ms.date: 01/02/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0df0d97b41933f316db788fd0af09ba75196549b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: e1f56b7b1a2349ff6e5ab11fb5c4de4278f5af36
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836868"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57228662"
 ---
 # <a name="reference-for-intune-management-extension"></a>Referenz für die Intune-Verwaltungserweiterung
 

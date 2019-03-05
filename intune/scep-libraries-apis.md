@@ -7,7 +7,7 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 12/06/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7178ae7231586e781766adb1fea45b375a76920
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: b290e1f9c5fd4e7549cda7245b8d56b1e6fa5699
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842047"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57236108"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Verwenden von APIs zum Hinzufügen von Drittanbieter-Zertifizierungsstellen für SCEP in Intune
 

@@ -7,7 +7,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/09/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b059d3512576faaa6049bd2c91be9e94ff919058
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 12e770a549d300b10000fa83ab68a0b6f3393b71
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844308"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57238352"
 ---
 # <a name="evaluate-how-many-users-are-targeted-by-a-policy"></a>Auswerten der Anzahl der Benutzer, die von einer Richtlinie betroffen sind
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

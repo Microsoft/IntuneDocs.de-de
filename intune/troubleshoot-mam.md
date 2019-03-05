@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/21/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae8113a603ae4c091005f7c82045708f7e9e3e97
-ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
+ms.openlocfilehash: c94fc26543123f0b3cf6a0f08f8089c48d78778b
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56655390"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57232198"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Problembehandlung der Verwaltung von mobilen Geräten
 

@@ -7,7 +7,7 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 487ad607bc34d5fc2137f1b3903b0711e793658d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 376d00a03feb78b4e66b3f8a4ed15567d3bc7976
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840540"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57230277"
 ---
 # <a name="understand-the-users-experience-enrolling-an-ios-device"></a>Grundlegendes zur Benutzerfreundlichkeit der Registrierung von iOS-Geräten
 

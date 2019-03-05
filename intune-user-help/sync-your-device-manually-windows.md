@@ -18,21 +18,18 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4666779620aa0404c12107a374280c403d66bec3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840211"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335070"
 ---
 # <a name="sync-your-windows-device-manually"></a>Manuelles Synchronisieren des Windows-Geräts
 
 Wenn die Geschwindigkeit der App-Installation nicht optimal ist, können Sie eine manuelle Gerätesynchronisierung initiieren. Bei manuellen Synchronisierungen wird erzwungen, dass Ihr Gerät eine Verbindung mit Intune herstellt, um die neuesten Updates und die aktuelle Kommunikation zu erhalten. Die Installationsgeschwindigkeit kann sich nach Abschluss der Gerätesynchronisierung erhöhen.
 
-Intune unterstützt die manuelle Synchronisierung über die Unternehmensportal-App, die Desktoptaskleiste oder das Startmenü und über die Geräte-App „Einstellungen“. 
-
-Die Funktionen der Unternehmensportal-App werden auf Windows 10-Geräten unterstützt, auf denen Creators Update (1703) oder höher ausgeführt wird. 
-* [Synchronisieren über die Unternehmensportal-App](#Sync-from-Company-Portal-app-for-Windows)  
+Intune unterstützt die manuelle Synchronisierung über die Unternehmensportal-App, die Desktoptaskleiste oder das Startmenü und über die Geräte-App „Einstellungen“. Die Funktionen der Unternehmensportal-App werden auf Windows 10-Geräten unterstützt, auf denen Creators Update (1703) oder höher ausgeführt wird. 
 
 Über die Geräte-App „Einstellungen“ können alle Windows-Geräte synchronisiert werden, einschließlich:
 
@@ -75,11 +72,11 @@ Führen Sie die folgenden Schritte aus, um Ihre Microsoft HoloLens-, Windows 10 
 
 3. Für Desktops gibt es mehrere Versionen von Windows 10. Vergleichen Sie Ihren Bildschirm mit den nachstehenden Screenshots, um zu bestimmen, welche Schritte Sie ausführen müssen. 
 
-    * Wenn auf Ihrem Bildschirm die Option **Zugriff auf Geschäfts-, Schul- oder Unikonto** angezeigt wird, fahren Sie mit den Schritten unter [Zugriff auf Geschäfts-, Schul- oder Unikonto](#access-work-or-school) fort.
+    * Wenn auf Ihrem Bildschirm die Option **Zugriff auf Geschäfts-, Schul- oder Unikonto** angezeigt wird, fahren Sie mit den Schritten unter [Zugriff auf Geschäfts-, Schul- oder Unikonto](#access-work-or-school-steps) fort.
 
     ![Option „Zugriff auf Geschäfts-, Schul- oder Unikonto“ in der App „Einstellungen“](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-    * Wenn auf Ihrem Bildschirm die Option **Arbeitsplatzzugriff** angezeigt wird, fahren Sie mit den Schritten unter [Arbeitsplatzzugriff](#work-access) fort.  
+    * Wenn auf Ihrem Bildschirm die Option **Arbeitsplatzzugriff** angezeigt wird, fahren Sie mit den Schritten unter [Arbeitsplatzzugriff](#work-access-steps) fort.  
 
     ![Auswählen des Arbeitsplatzzugriffs als den Kontotyp](./media/win10pc-sync-3-work-access.png)
 

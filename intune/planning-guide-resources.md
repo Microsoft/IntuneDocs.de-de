@@ -7,7 +7,7 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d76b3af1cb0a597877d80394e152eefdcbbaa51
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: fb42270a585bf390e91995a010168414a030a66f
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841299"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57236465"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Zusätzliche Ressourcen für die Planung Ihrer Intune-Bereitstellung
 

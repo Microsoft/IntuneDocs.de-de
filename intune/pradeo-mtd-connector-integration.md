@@ -7,19 +7,19 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/27/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b76549ad4be80d510638e3f79111d700a80f73ca
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 77a276a687201d528613f6d16d17b8d30d73ab9d
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838528"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57236193"
 ---
 # <a name="integrate-pradeo-with-intune"></a>Integrieren von Pradeo in Intune
 
