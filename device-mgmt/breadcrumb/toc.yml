@@ -8,7 +8,7 @@ items:
     topicHref: /device-mgmt/index
   - name: Intune-Benutzerhilfe
     tocHref: /intune-user-help/
-    topicHref: /intune-user-help/index
+    topicHref: /intune-user-help
 - name: -Geräteverwaltung
   tocHref: /azure/
   topicHref: /azure/index
@@ -16,9 +16,9 @@ items:
   - name: Azure Active Directory
     tocHref: /azure/active-directory/
     topicHref: /azure/active-directory/
-ms.openlocfilehash: 2a63867fb48b2e51dc45d4787210b870496183ad
-ms.sourcegitcommit: a624abbfc3c80c5fba6c47a19cf1a6923c5fd438
+ms.openlocfilehash: 91b26562d216695baee982b4c57b2884d3b2facc
+ms.sourcegitcommit: 9a4c5b6c2ce511edaeace25426a23f180cb71e15
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 03/07/2019
-ms.locfileid: "57528189"
+ms.locfileid: "57564481"
