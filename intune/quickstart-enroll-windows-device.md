@@ -9,6 +9,7 @@ ms.date: 12/05/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c04dc3169fbf6a60d0c4d7db8358092909e90240
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55841817"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57389980"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Schnellstart: Registrierung Ihres Windows 10-Geräts
 
@@ -59,7 +60,7 @@ Bevor Sie Ihr Windows 10-Desktopgerät registrieren, müssen Sie die installiert
 4. Bestätigen Sie, dass Ihre **Version** von Windows 10 **1607 oder höher** ist.
 
     > [!IMPORTANT]
-    > Die Schritte in diesem Schnellstart beziehen sich auf Version **1607 oder höher** von Windows 10. Wenn Sie Version **1511 oder niedriger** verwenden, fahren Sie mit [diesen Schritten](/intune-user-help/enroll-your-w10-device-your-account) fort.
+    > Die Schritte in diesem Schnellstart beziehen sich auf Version **1607 oder höher** von Windows 10. Wenn Sie Version **1511 oder niedriger** verwenden, fahren Sie mit [diesen Schritten](/intune-user-help/enroll-windows-10-device.md) fort.  
 
 ## <a name="enroll-windows-10-desktop"></a>Registrieren von Windows 10-Desktopgeräten
 

@@ -10,6 +10,7 @@ ms.date: 01/11/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 723f4b4e-3090-4811-84ff-6af652abea5a
 ms.reviewer: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95db6ca8cbcb6e4e80b549b26a352c748f20c7f5
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: e22aecbeddeb03060ebd91f3b1d7109d01b8daad
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55847216"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57391540"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Schnellstart: Erstellen einer Gruppe zum Verwalten von Benutzern
 

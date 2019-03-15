@@ -10,6 +10,7 @@ ms.date: 01/31/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e892d8a3-7f74-498c-98d5-e968a8fbb049
 Customer intent: As an Intune admin, I want to learn where to find the different features in Intune.
@@ -17,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18c7a63900f0d77bbf90ecd6f3e8627d77a4f6e5
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: c733dbbf992ae10e14ba711b34e621d3f0fb3da8
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839199"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57395265"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: Überblick über Microsoft Intune im Azure-Portal
 
