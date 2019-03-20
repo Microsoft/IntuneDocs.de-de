@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/14/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6B4BC650-62F7-4049-9DE4-CDECB579B58F
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4808381f56f27220a66d2ae76a0b27232724d951
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 2813c2b3f94bf0d57d63b75250239149eb2c1726
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235972"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565994"
 ---
 # <a name="reference-for-date-entity"></a>Verweis für die Datumsentität
 

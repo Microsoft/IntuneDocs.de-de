@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cd91a7c862b87d9842d08a2346e2e23af4f3665e
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55836326"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Senden von Protokollen an den Support Ihres Unternehmens mithilfe eines USB-Kabels

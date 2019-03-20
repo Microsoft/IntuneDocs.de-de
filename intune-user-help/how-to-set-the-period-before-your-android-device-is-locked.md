@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 913e157e8b2f16376eccf8fc93af137792015eb9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55847997"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Einstellen der Zeit bis zur Sperrung des Bildschirms durch Ihr Android-Gerät

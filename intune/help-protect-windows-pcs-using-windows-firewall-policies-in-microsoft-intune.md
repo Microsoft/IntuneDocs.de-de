@@ -7,9 +7,10 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eea44c92e168cafa9276c8fc75abb2e389b98d0c
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: ee84ca92d247a162653b398fd1332161fb887599
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234408"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461078"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Unterstützen des Schutzes von Windows-PCs mithilfe von Windows-Firewall-Richtlinien in Microsoft Intune
 

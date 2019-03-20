@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/14/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: C29A6EEA-72B7-427E-9601-E05B408F3BB0
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11c3cc35408b2d50e781c50cd1821b8cead19ad7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: ccd9a14c29db5039ce0173d0c09fd3d2851755f3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232385"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566249"
 ---
 # <a name="reference-for-user-entity"></a>Referenz für die Benutzerentität
 

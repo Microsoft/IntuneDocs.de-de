@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: dfb70327737bcfe9e6bd2ded964a07a00f9d7610
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 115025d60038daea6f43c97cbdc03a20d5b0bf59
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148948"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55838171"
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>So schützen Sie Ihr Android-Gerät mit Verschlüsselung
 

@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fbfff91d2993becc99e2132285bef78d245ff50e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "35289500"
+---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Aktivieren der automatischen Registrierung von Windows 10
 
 Mit der Funktion der automatischen Registrierung können Benutzer ihre Windows 10-Geräte bei Intune registrieren, wenn sie ihr Arbeitskonto auf Geräten hinzufügen, die ihnen privat gehören, oder wenn sie ihre unternehmenseigenen Geräte in Ihr Azure Active Directory einbinden. Im Hintergrund registriert sich das Gerät des Benutzers und tritt Azure Active Directory bei. Nach der Registrierung wird das Gerät mit Intune verwaltet.

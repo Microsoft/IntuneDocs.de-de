@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c23d035b37cec47d187c65b518c5a7ff18d16caa
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c7265eb7b4679d72fa6ab348c17f9f4f7508482e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146343"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55836424"
 ---
 # <a name="your-computer-is-already-enrolled"></a>Ihr Computer ist bereits registriert
 

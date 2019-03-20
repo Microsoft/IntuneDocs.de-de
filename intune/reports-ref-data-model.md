@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e305d419a101410a9a934a200dfcfb1c3488ff7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 2cbf6e1bde3f8853f2e5c6c1919089bf0dc10126
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238284"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565519"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune-Data Warehouse-Datenmodell
 

@@ -14,11 +14,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 68090a038cec49009b6bd0ce0515a075f62483b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
-ms.translationtype: HT
+ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "20283568"
 ---
 # <a name="metadata-and-markdown-template"></a>Metadaten- und Markdown-Vorlage
@@ -37,7 +37,7 @@ Den vollständigen Metadatenblock finden Sie oben, unterteilt in erforderliche F
 - Doppelpunkte in einem Wert (z. B. ein Titel) unterbrechen den Metadaten-Parser. Verwenden Sie stattdessen die HTML-Codierung „&#58;“ (z. B. „Titel: Azure Rights Management&#58; die Grundlagen | Azure RMS“).
 - **Titel**: Dieser Titel wird in Suchergebnissen angezeigt. Der Titel sollte mit einem senkrechten Strich (|) gefolgt vom Namen des Diensts (z. B. siehe oben) enden. Der Titel muss nicht (und sollte nicht) mit dem Titel in der H1-Überschrift übereinstimmen. Er sollte ungefähr 65 Zeichen (einschließlich | NAME DES DIENSTS) umfassen.
 - **Autor**, **Manager**, **Prüfer**: Das Autorenfeld sollte den **Github-Benutzernamen** des Autors enthalten, nicht den Alias.  Die Felder „Manager“ und „Prüfer“ sollten andererseits Aliasnamen enthalten. „ms.reviewer“ gibt den Namen des Projektmanagers an, der dem Artikel oder Dienst zugeordnet ist.
-- **ms.assetid**: Dies ist die GUID des Artikels in Großbuchstaben. Wenn Sie eine neue Markdown-Datei erstellen, rufen Sie eine GUID von [https://www.guidgenerator.com](https://www.guidgenerator.com) ab. 
+- **ms.assetid**: Dies ist die GUID des Artikels in Großbuchstaben. Wenn Sie eine neue Markdowndatei erstellen, rufen Sie eine GUID unter [https://www.guidgenerator.com](https://www.guidgenerator.com) ab. 
 - **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: Mögliche Werte für diese Elemente finden Sie [hier](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default).
 
 ## <a name="basic-markdown-and-gfm"></a>Grundlegendes Markdown und GFM
@@ -147,7 +147,7 @@ Wenn eine URL in einer Markdown-Datei angezeigt wird, wird sie in einen klickbar
 | Tabellen        | Sind           | Gut  |
 | ------------- |:-------------:| -----:|
 | Sp 3 ist      | rechtsbündig | $1600 |
-| Sp 2 ist      | zentriert      |   $12 |
+| Sp 2 ist      | zentriert      |   12 $ |
 | SP 1 ist der Standard | linksbündig     |    $1 |
 
 
@@ -167,7 +167,7 @@ Dies ist ein Beispiel für `in-line code`.
 
 ## <a name="blockquotes"></a>Blockquotes
 
-> Die Trockenheit hatte nun zehn Millionen Jahre angedauert, und die Herrschaft der schrecklichen Echsen hatte längst geendet. Hier am Äquator, in dem Kontinent, der eines Tages zu Afrika werden würde, hatte der Kampf ums Überleben eine neue Wildheit erreicht, und ein Sieger war noch nicht in Sicht. In diesem trostlosen und verdorrten Land konnte nur der Kleine, der Schnelle oder der Wilde gedeihen oder zumindest überleben.
+> Die Trockenheit hatte nun zehn Millionen Jahre lang angehalten, und die Herrschaft der schrecklichen Echsen hatte längst geendet. Hier am Äquator, in dem Kontinent, der eines Tages zu Afrika werden würde, hatte der Kampf ums Überleben eine neue Wildheit erreicht, und ein Sieger war noch nicht in Sicht. In diesem trostlosen und verdorrten Land konnte nur der Kleine, der Schnelle oder der Wilde gedeihen oder zumindest überleben.
 
 ## <a name="images"></a>Bilder
 

@@ -7,19 +7,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4c65b381afaad4b3ba65fa3d8eb49ba8f52b95d1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8e1edae77144b85d100bf590716768792afd8470
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183348"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565536"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Verwenden benutzerdefinierter Einstellungen für iOS-Geräte in Microsoft Intune
 

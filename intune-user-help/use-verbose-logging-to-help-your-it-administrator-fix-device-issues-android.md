@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3b0eb38b92ff5c18d58cf6ebe6f31e4b8a320dd9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839964"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069191"
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Verwenden der ausführlichen Protokollierung zur Unterstützung des Supports Ihres Unternehmens bei der Behebung von Geräteproblemen
 
