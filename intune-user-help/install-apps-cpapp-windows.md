@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39f19d347cb799a47d07ade4f8458fade68b1b99
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834652"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56742532"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Installieren und freigeben von Apps auf Ihrem Gerät
 Installieren Sie über die Unternehmensportal-App für Windows Apps auf Ihrem Gerät.
@@ -36,10 +36,11 @@ Installieren Sie über die Unternehmensportal-App für Windows Apps auf Ihrem Ge
 2. Suchen und installieren Sie Apps aus einem der folgenden Abschnitte der Unternehmensportal-App:  
 
     * **Start:** Wählen Sie Apps aus einer Liste empfohlener Apps Ihrer Organisation aus.  
-    * **Alle anzeigen:** Klicken Sie auf der **Startseite** > **Apps** auf **Alle anzeigen**, um alle verfügbaren Apps anzuzeigen.  
+    * **Alle anzeigen:** Klicken Sie auf der **Startseite** im Abschnitt **Apps** auf **Alle anzeigen**, um alle verfügbaren Apps anzuzeigen.  
     * **Alle Apps:** Wählen Sie diese Seite im Navigationsbereich aus, um alle verfügbaren Apps anzuzeigen, einschließlich aller installierten und ausgewählten Apps.  
-    * **Nach Apps suchen:** Eine statische Suchleiste befindet sich im Navigationsbereich der App.  Suchen Sie nach dem App-Namen oder dem Herausgeber, um Ihre verfügbaren Apps zu finden.  
-    * **Alle Apps:** Sie können alle verfügbaren Apps anzeigen, sortieren und filtern. Die Suchergebnisse werden automatisch nach Relevanz sortiert.  
+    * **App-Kategorien**: Wählen Sie auf dieser Seite im Navigationsbereich, um apps, die basierend auf Typ oder die Funktion auszuwählen. Apps sind in Kategorien sortiert, z. B. **ausgewähltes**, **Education**, und **Produktivität**.  
+    * **Nach Apps suchen**: Eine statische Suchleiste befindet sich im Navigationsbereich der App.  Suchen Sie nach dem App-Namen oder dem Herausgeber, um Ihre verfügbaren Apps zu finden.  
+    * **Alle Apps**: Sie können alle verfügbaren Apps anzeigen, sortieren und filtern. Die Suchergebnisse werden automatisch nach Relevanz sortiert.  
 
 3. Wählen Sie eine App aus.   
 4. Klicken Sie auf der Seite mit den App-Details auf **Installieren**. Nach Abschluss der Installation wird auf der Seite der Status **Installiert** angezeigt.  
