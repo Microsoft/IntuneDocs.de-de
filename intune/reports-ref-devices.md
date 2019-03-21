@@ -7,21 +7,23 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/20/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3993cb4e7ccbc04ccc1d341a9bd72594948f3262
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: fe16111095051c1fddb4b87d5b4f815ae2798e92
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297518"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566368"
 ---
 # <a name="reference-for-devices-entities"></a>Referenz für Geräteentitäten
 
@@ -214,7 +216,10 @@ Die Entität **EnrollmentTypes** gibt an, ob ein Gerät einem Unternehmen oder e
 |---------|------------|--------|
 | ownerTypeID |Eindeutiger Bezeichner des Besitzertyps | |
 | ownerTypeKey |Eindeutige Bezeichner des Besitzertyps im Data Warehouse – Ersatzschlüssel | |
-| ownerTypeName |Stellt den Besitzertypen der Geräte dar:  <br>Company (Unternehmen): das Gerät gehört einem Unternehmen <br>Personal (Privat): Das Gerät befindet sich im Privatbesitz (BYOD).  <br>Unknown (Unbekannt): Es liegen keine Informationen zu diesem Gerät vor. |Company, Personal, Unknown |
+| ownerTypeName |Stellt den Besitzertypen der Geräte dar:  <br>Unternehmen – Gerät gehört einem Unternehmen. <br>Personal (Privat): Das Gerät befindet sich im Privatbesitz (BYOD).  <br>Unknown (Unbekannt): Es liegen keine Informationen zu diesem Gerät vor. |Unternehmen Personal, Unknown |
+
+> [!Note]  
+> Für die `ownerTypeName` in Azure AD, wenn Sie dynamische Gruppen für Geräte zu erstellen, müssen Sie den Filterwert festlegen `deviceOwnership` als `Company`. Weitere Informationen finden Sie unter [Regeln für Geräte,](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="mdmstatuses"></a>MdmStatuses
 

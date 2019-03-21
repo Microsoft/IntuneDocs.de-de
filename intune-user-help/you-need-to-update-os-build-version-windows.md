@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 59e33e75a38711e95631613e18ce1bd2fb459582
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833068"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069104"
 ---
 # <a name="update-your-windows-10-device"></a>Aktualisieren Ihres Windows 10-Geräts
 

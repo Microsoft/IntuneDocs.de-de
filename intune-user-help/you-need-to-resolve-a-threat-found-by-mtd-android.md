@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c0357744619f3e1905b97b27b5dbd2ec3ea5e0dc
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838375"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069116"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Beseitigen einer Bedrohung, die von einer Mobile Threat Defense-App erkannt wurde
 

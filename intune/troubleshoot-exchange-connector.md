@@ -6,9 +6,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/18/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: a7e3c742-295b-40bb-9afa-17f243062500
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89611dd197c968df43cac6006d3982fe5f1ec5c2
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: d2cbe4e213854c4dbf5cc29b8a05aec7fb0d46b3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232640"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460647"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Behandeln von Problemen mit dem lokalen Intune Exchange Connector
 

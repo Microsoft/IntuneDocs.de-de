@@ -18,16 +18,16 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cace30f5120bb5c02d3569d9668d336a00f69ff
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 85ccfb526ada4d6851fb32b077d07d3538f90361
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55846841"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Windows-Gerät bei Intune registrieren?
 
-Wenn Sie die Unternehmensportal-App installieren und darüber anschließend ein Windows- oder Windows Phone-Gerät registrieren, erlauben Sie der Supportabteilung Ihres Unternehmens bzw. Ihrer Schule oder Universität, Ihr Gerät zu verwalten, um die Daten des Unternehmens bzw. der Schule oder Universität zu schützen. In diesem Thema wird beschrieben, was bei Geräten mit einer früheren Version als Windows 10 geschieht. Windows 10-Geräte werden im [verwandten Thema](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) behandelt.
+Wenn Sie die Unternehmensportal-App installieren und darüber anschließend ein Windows- oder Windows Phone-Gerät registrieren, erlauben Sie der Supportabteilung Ihres Unternehmens bzw. Ihrer Schule oder Universität, Ihr Gerät zu verwalten, um die Daten des Unternehmens bzw. der Schule oder Universität zu schützen. In diesem Thema wird beschrieben, was bei Geräten mit einer früheren Version als Windows 10 geschieht. Windows 10-Geräte werden im [verwandten Thema](about-cp-app-for-windows-10.md) behandelt.  
 
 ## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>Was mit allen Windows-Geräten nach der Registrierung geschieht
 Wenn Sie Ihr Windows- oder Windows Phone-Gerät bei Intune registrieren, haben Sie folgende Möglichkeiten:

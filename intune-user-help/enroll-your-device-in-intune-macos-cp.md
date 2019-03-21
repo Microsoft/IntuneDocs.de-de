@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55834720"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrieren Ihres macOS-Geräts bei Intune über die Unternehmensportal-App
@@ -58,7 +58,7 @@ Führen Sie die folgenden Schritte aus, um macOS-Geräte mit OS X El Capitan 10.
 
 4. Auf der Seite __Geräte__ wird entweder eine Liste der verwalteten Geräte oder ein Banner angezeigt. Was Sie dort sehen, hängt davon ab, ob Sie bereits über ein verwaltetes Gerät verfügen. 
     * Wählen Sie zum Hinzufügen eines nicht aufgelisteten Geräts das Banner mit dem folgenden Hinweis aus: **Tap here to tell us which device you're using or add a new device.** (Tippen Sie hier, um das von Ihnen verwendete Gerät anzugeben, oder fügen Sie ein neues Gerät hinzu.)
-    * Wenn Sie über keine Geräte verfügen, wird Folgendes auf dem Banner angezeigt: **You don't have any managed devices. Add this one by tapping here.** (Es sind noch keine verwalteten Geräte vorhanden. Tippen Sie hier, um dieses Gerät hinzuzufügen.) Klicken Sie auf das Banner, um Ihr Gerät hinzuzufügen.  
+    * Wenn Sie noch keine Geräte hinzugefügt haben, wird auf dem Banner Folgendes angezeigt: **You don't have any managed devices. Add this one by tapping here.** (Es sind noch keine verwalteten Geräte vorhanden. Tippen Sie hier, um dieses Gerät hinzuzufügen.) Klicken Sie auf das Banner, um Ihr Gerät hinzuzufügen.  
 
      ![Ein Screenshot der Seite für Geräte auf dem ein roter Rahmen um das Banner markiert, wo Sie klicken können.](./media/CP-enroll-MACOS-1808.png)  
 5.  Führen Sie den nachfolgenden Schritt entsprechend der im Unternehmensportal angezeigten Meldung aus.  

@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc5ed233bf3368ae9b0ce21b8688966a1ffdef
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: f38803d3be05182639ac8eca2578e9ce121f7c2f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232351"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566011"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Geräteeinstellungen bei Windows Holographic for Business zur Ausführung als Kiosk in Intune
 
@@ -39,11 +40,11 @@ Weitere Informationen zur Windows-Kioskfunktion in Intune finden Sie unter [Konf
 
 Wenn Sie den Einzel-App-Kioskmodus auswählen, nehmen Sie die folgenden Einstellungen vor:
 
-- **Typ der Benutzeranmeldung:** Wählen Sie **Lokales Benutzerkonto** aus, um das lokale Benutzerkonto (auf dem Gerät) oder ein Microsoft-Konto (MSA) einzugeben, das der Kiosk-App zugeordnet ist. Der Typ **Autologon** wird unter Windows Holographic for Business nicht unterstützt.
+- **Typ der Benutzeranmeldung**: Wählen Sie **Lokales Benutzerkonto** aus, um das lokale Benutzerkonto (auf dem Gerät) oder ein Microsoft-(MSA)-Konto einzugeben, das der Kiosk-App zugeordnet ist. Der Typ **Autologon** wird unter Windows Holographic for Business nicht unterstützt.
 
-- **Anwendungstyp:** Wählen Sie **Store-App** aus.
+- **Anwendungstyp**: Wählen Sie **Store-App** aus.
 
-- **App zur Ausführung im Kioskmodus:** Klicken Sie auf **Store-App hinzufügen**, und wählen Sie eine App aus der Liste aus.
+- **App zur Ausführung im Kioskmodus**: Wählen Sie **Store-App hinzufügen** und eine App aus der Liste aus.
 
     Es sind keine Apps aufgelistet? Fügen Sie einige mithilfe der Schritte unter [Client-Apps](apps-add.md) hinzu.
 
@@ -53,30 +54,30 @@ Wenn Sie den Einzel-App-Kioskmodus auswählen, nehmen Sie die folgenden Einstell
 
 Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. Diese Apps sind die einzigen Apps, die der Benutzer öffnen kann. Wenn Sie den Multi-App-Kioskmodus auswählen, nehmen Sie die folgenden Einstellungen vor:
 
-- **Geräte unter Windows 10 im S Modus als Ziel verwenden:** Wählen Sie **Nein** aus. Der S Modus wird unter Windows Holographic for Business nicht unterstützt.
+- **Geräte unter Windows 10 im S Modus als Ziel verwenden**: Wählen Sie **Nein** aus. Der S Modus wird unter Windows Holographic for Business nicht unterstützt.
 
-- **Typ der Benutzeranmeldung:** Fügen Sie mindestens ein Benutzerkonto hinzu, das die von Ihnen hinzugefügten Apps verwenden kann. Folgende Optionen sind verfügbar: 
+- **Typ der Benutzeranmeldung**: Fügen Sie mindestens ein Benutzerkonto hinzu, das die von Ihnen hinzugefügten Apps verwenden kann. Folgende Optionen sind verfügbar: 
 
-  - **Auto logon** (Automatische Anmeldung): Wird unter Windows Holographic for Business nicht unterstützt.
-  - **Lokale Benutzerkonten:** **Fügen Sie das lokale Benutzerkonto (auf dem Gerät) hinzu**. Das von Ihnen eingegebene Konto wird zum Anmelden im Kiosk verwendet.
-  - **Azure AD-Benutzer oder Gruppe (Windows 10, Version 1803 und höher):** Bei dieser Option sind Benutzeranmeldeinformationen für die Anmeldung auf dem Gerät erforderlich. Wählen Sie **Hinzufügen** aus, um Azure AD-Benutzer oder Gruppen aus der Liste auszuwählen. Sie können mehrere Benutzer und Gruppen auswählen. Wählen Sie **OK** aus, um die Änderungen zu speichern.
-  - **HoloLens-Besucher:** Beim Besucherkonto handelt es sich um ein Gastkonto, für das keine Anmeldeinformationen oder Authentifizierung erforderlich ist. Weitere Informationen dazu finden Sie unter [shared PC mode concepts (Konzepte für den Modus „Freigegebener Computer“)](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
+  - **Automatische Anmeldung**: Diese Option wird unter Windows Holographic for Business nicht unterstützt.
+  - **Lokale Benutzerkonten**: **Fügen** Sie das lokale Benutzerkonto (auf dem Gerät) hinzu. Das von Ihnen eingegebene Konto wird zum Anmelden im Kiosk verwendet.
+  - **Azure AD-Benutzer oder Gruppe (Windows 10, Version 1803 und höher)**: Benutzer müssen ihre Anmeldeinformationen angeben, um sich auf dem Gerät anzumelden. Wählen Sie **Hinzufügen** aus, um Azure AD-Benutzer oder Gruppen aus der Liste auszuwählen. Sie können mehrere Benutzer und Gruppen auswählen. Wählen Sie **OK** aus, um die Änderungen zu speichern.
+  - **HoloLens-Besucher**: Beim Besucherkonto handelt es sich um ein Gastkonto, für das weder Anmeldeinformationen noch eine Authentifizierung erforderlich sind. Weitere Informationen dazu finden Sie unter [shared PC mode concepts (Konzepte für den Modus freigegebener Computer)](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
-- **Anwendungen:** Wählen Sie die Apps aus, die auf dem Kioskgerät ausgeführt werden sollen. Denken Sie daran, dass Sie mehrere Apps hinzufügen können.
+- **Anwendungen**: Wählen Sie die Apps aus, die auf dem Kioskgerät ausgeführt werden sollen. Denken Sie daran, dass Sie mehrere Apps hinzufügen können.
 
-  - **Store-App hinzufügen:** Wählen Sie eine vorhandene App aus, die Sie mit [Client-Apps](apps-add.md) hinzugefügt haben. Wenn keine Apps aufgelistet sind, können Sie Apps abrufen und [Intune hinzufügen](store-apps-windows.md).
-  - **Win32-App hinzufügen:** Wird unter Windows Holographic for Business nicht unterstützt.
-  - **Nach AUMID hinzufügen:** Fügen Sie mit dieser Option Windows-Apps für den Posteingang hinzu. Geben Sie die folgenden Eigenschaften ein: 
+  - **Store-App hinzufügen**: Wählen Sie eine vorhandene App aus, die Sie mit [Client-Apps](apps-add.md) hinzugefügt haben. Wenn keine Apps aufgelistet sind, können Sie Apps abrufen und [Intune hinzufügen](store-apps-windows.md).
+  - **Win32-App hinzufügen**: Diese Option wird unter Windows Holographic for Business nicht unterstützt.
+  - **Nach AUMID hinzufügen**: Fügen Sie mit dieser Option Windows-Posteingangs-Apps hinzu. Geben Sie die folgenden Eigenschaften ein: 
 
-    - **Anwendungsname:** Erforderlich. Geben Sie einen Namen für die Anwendung ein.
-    - **Anwendungsbenutzermodell-ID (AUMID):** Erforderlich. Geben Sie die AUMID der Windows-App ein. Weitere Informationen zum Abrufen dieser ID finden Sie unter [Ermitteln der Anwendungsbenutzermodell-ID einer installierten App](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
-    - **Kachelgröße:** Erforderlich. Wählen Sie eine der folgenden App-Kachelgrößen aus: „Klein“, „Mittelgroß“, „Breit“ oder „Groß“.
+    - **Anwendungsname**: Pflichtfeld. Geben Sie einen Namen für die Anwendung ein.
+    - **Anwendungsbenutzermodell-ID (AUMID)**: Pflichtfeld. Geben Sie die AUMID der Windows-App ein. Weitere Informationen zum Abrufen dieser ID finden Sie unter [Ermitteln der Anwendungsbenutzermodell-ID einer installierten App](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+    - **Kachelgröße**: Pflichtfeld. Wählen Sie eine der folgenden App-Kachelgrößen aus: „Klein“, „Mittelgroß“, „Breit“ oder „Groß“.
 
-- **Einstellungen für Kioskbrowser:** Wird unter Windows Holographic for Business nicht unterstützt.
+- **Einstellungen für Kioskbrowser**: Diese Option wird unter Windows Holographic for Business nicht unterstützt.
 
-- **Alternatives Startlayout verwenden:** Wählen Sie **Ja** aus, um eine XML-Datei einzufügen, die beschreibt, wie die Apps im Startmenü dargestellt werden (u. a. die Reihenfolge der Apps). Verwenden Sie diese Option, wenn Sie in Ihrem Startmenü weitere Anpassungen vornehmen möchten. [Startlayout anpassen und exportieren](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens): Diese Option umfasst eine Anleitung und eine XML-Datei für Windows Holographic for Business-Geräte.
+- **Alternatives Startlayout verwenden**: Wählen Sie **Ja** aus, um eine XML-Datei einzugeben, die beschreibt, wie die Apps im Startmenü angezeigt werden, einschließlich der Reihenfolge. Verwenden Sie diese Option, wenn Sie in Ihrem Startmenü weitere Anpassungen vornehmen möchten. [Startlayout anpassen und exportieren](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens): Diese Option umfasst eine Anleitung und eine XML-Datei für Windows Holographic for Business-Geräte.
 
-- **Windows-Taskleiste:** Wird unter Windows Holographic for Business nicht unterstützt.
+- **Windows-Taskleiste**: Diese Option wird unter Windows Holographic for Business nicht unterstützt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

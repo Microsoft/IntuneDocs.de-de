@@ -6,9 +6,10 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 09/25/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 5fa59501-5f33-46b7-a5f5-75eeae9f1209
 ms.reviewer: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 522e2e8b424c3c8865b29a5503c301b80b3c36ba
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 50c147e13a59df00ce9527a0843784d223afec20
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845406"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460715"
 ---
 # <a name="troubleshoot-conditional-access"></a>Problembehandlung beim bedingten Zugriff
 
@@ -74,7 +75,7 @@ Wenn Sie ein Gerät ermitteln, das nicht kompatibel ist, aber weiterhin Zugriff 
 - Überprüfen Sie die Ziel- und Ausschlussgruppen. Wenn sich ein Benutzer nicht in der richtigen Zielgruppe oder in der Ausschlussgruppe befindet, wird er nicht blockiert. Nur die Geräte der Benutzer in einer Zielgruppe werden hinsichtlich der Kompatibilität überprüft.
 - Stellen Sie sicher, dass das Gerät ermittelt wird. Verweist der Exchange Connector auf einen Exchange 2010-Clientzugriffsserver, obwohl sich der Benutzer auf einem Exchange 2013-Server befindet? In diesem Fall kann Intune die Verbindung des Geräts mit Exchange nicht erkennen, wenn die Exchange-Standardregel „Zulassen“ lautet, auch wenn sich der Benutzer in der Zielgruppe befindet.
 - Überprüfen Sie die Existenz und den Zugriffsstatus des Geräts in Exchange:
-  - Verwenden Sie das folgende PowerShell-Cmdlet, um eine Liste aller mobilen Geräte für ein Postfach abzurufen: „Get-ActiveSyncDeviceStatistics -mailbox mbx“. Wenn das Gerät nicht aufgeführt ist, greift es nicht auf Exchange zu.
+  - Verwenden Sie dieses PowerShell-Cmdlet, um eine Liste aller mobilen Geräte für ein Postfach abzurufen: „Get-ActiveSyncDeviceStatistics -mailbox mbx“. Wenn das Gerät nicht aufgeführt ist, greift es nicht auf Exchange zu.
   - Wenn das Gerät aufgeführt ist, verwenden Sie das Cmdlet „Get-CASmailbox -identity:’upn’ | fl“, um ausführliche Informationen zum Zugriffsstatus zu erhalten und diese Informationen dem Microsoft-Support bereitzustellen.
 
 ## <a name="next-steps"></a>Nächste Schritte

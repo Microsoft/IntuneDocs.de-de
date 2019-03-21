@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5984ac8ebe825a187b33945699a5fadc27e0c0cc
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 46f2193a3a13183d41b10f03b6efe7100f0d9f9d
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828413"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55840364"
 ---
 # <a name="remove-your-windows-device-from-management"></a>Entfernen Ihres Windows-Geräts aus der Verwaltung
 

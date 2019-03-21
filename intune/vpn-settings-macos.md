@@ -7,19 +7,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ffb7ecc9bfd183c6fa7a863a5b1440ee7d25b0f3
-ms.sourcegitcommit: 0dbce0415e53fe963dc7f927ac4b0c06411f199c
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5bc1ed991109ff32d03ae9a2e1da33adb62e6a4c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52281070"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565263"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>Konfigurieren von VPN-Einstellungen für macOS-Geräte in Microsoft Intune
 

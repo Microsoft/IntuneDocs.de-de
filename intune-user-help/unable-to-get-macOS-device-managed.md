@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9582f5acafdc60663f935ca18d18d6d34887817a
-ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9d39c065dd991fab548cd6050337379746bc28c2
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51510950"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "55838800"
 ---
 # <a name="unable-to-get-macos-device-managed"></a>Verwalten von macOS-Geräten nicht möglich
 

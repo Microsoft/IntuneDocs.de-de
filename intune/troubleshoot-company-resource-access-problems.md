@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 06/08/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77963d9d338fcd9d5d58e5efeffe06379714e8e3
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: ebb311eab93abd66f6a23e58737573622b68f3e8
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231501"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461497"
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen in Microsoft Intune
 
@@ -303,13 +304,13 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 
 |Statuscode|Hexadezimaler Fehlercode|Fehlermeldung|
 |---------------|--------------------------|-----------------|
-|-2016344008|0x87D10838|(1404): Zugriff auf Zertifikat verweigert.|
-|-2016344009|0x87D10837|(1403): Das Zertifikat wurde nicht gefunden.|
-|-2016344010|0x87D10836|DCMO(1402): Fehler beim Vorgang.|
-|-2016344011|0x87D10835|DCMO(1401): Der Benutzer hat den Vorgang bei Aufforderung nicht akzeptiert.|
+|-2016344008|0x87D10838|(1404): Zugriff auf Zertifikat verweigert|
+|-2016344009|0x87D10837|(1403): Zertifikat nicht gefunden|
+|-2016344010|0x87D10836|DCMO(1402): Fehler beim Vorgang|
+|-2016344011|0x87D10835|DCMO(1401): Der Benutzer hat den Vorgang bei Aufforderung nicht akzeptiert|
 |-2016344012|0x87D10834|DCMO(1400): Clientfehler|
-|-2016344108|0x87D107D4|DCMO(1400): Gerätefunktion ist deaktiviert. Der Benutzer ist zur Reaktivierung berechtigt.|
-|-2016344109|0x87D107D3|DCMO(1203): Gerätefunktion ist deaktiviert. Der Benutzer ist zur Reaktivierung nicht berechtigt.|
+|-2016344108|0x87D107D4|DCMO(1204): Gerätefunktion ist deaktiviert. Benutzer ist zur Reaktivierung berechtigt.|
+|-2016344109|0x87D107D3|DCMO(1203): Gerätefunktion ist deaktiviert. Benutzer ist zur Reaktivierung nicht berechtigt.|
 |-2016344110|0x87D107D2|DCMO(1202): Aktivierung wurde erfolgreich ausgeführt, doch die Gerätefunktion ist derzeit getrennt.|
 |-2016344111|0xF3FB4D95|DCMO(1201): Aktivierung wurde erfolgreich ausgeführt, und die Gerätefunktion ist derzeit angefügt.|
 |-2016344112|0x87D107D0|DCMO(1200): Der Vorgang wurde erfolgreich ausgeführt.|
@@ -320,33 +321,33 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 |-2016345600|0x87D10200|Syncml(512): Bei der Synchronisierungssitzung ist ein Anwendungsfehler aufgetreten.|
 |-2016345601|0x87D101FF|Syncml(511): Bei der Verarbeitung der Anforderung ist auf dem Server ein schwerwiegender Fehler aufgetreten.|
 |-2016345602|0x87D101FE|Syncml(510): Bei der Verarbeitung der Anforderung ist ein Fehler aufgetreten. Ursache des Fehlers ist ein Fehler im Datenspeicher des Empfängers.|
-|-2016345603|0x87D101FD|Syncml(509): Reserviert für zukünftige Verwendung.|
+|-2016345603|0x87D101FD|Syncml(509): Zur künftigen Verwendung reserviert.|
 |-2016345604|0x87D101FC|Syncml(508): Aufgrund eines Fehlers muss der aktuelle Synchronisierungszustand des Clients auf dem Server aktualisiert werden.|
 |-2016345605|0x87D101FB|Syncml(507): Aufgrund des Fehlers konnte keiner der SyncML-Befehle in einem unteilbaren Element ausgeführt werden.|
 |-2016345606|0x87D101FA|Syncml(506): Bei der Verarbeitung der Anforderung ist ein Fehler aufgetreten.|
 |-2016345607|0x87D101F9|Syncml(505): Der Empfänger unterstützt die angegebene Version der SyncML DTD in der SyncML-Abfragemeldung nicht oder weist sie zurück.|
-|-2016345608|0x87D101F8|Syncml(504): In seiner Funktion als Gateway oder Proxy empfing der Empfänger keine rechtzeitige Antwort von dem im URI angegebenen Upstreamempfänger (z. B. HTTP, FTP, LDAP), oder von einem anderen Hilfsempfänger, auf den bei der Erfüllung der Anforderung zugegriffen werden muss (z. B. DNS).|
-|-2016345609|0x87D101F7|Syncml(503): Die Anforderung kann derzeit aufgrund einer zeitweiligen Überlastung oder einer Wartung des Empfängers nicht verarbeitet werden.|
-|-2016345610|0x87D101F6|Syncml(502): In seiner Funktion als Gateway oder Proxy empfing der Empfänger eine ungültige Antwort von dem Upstreamempfänger, auf den er zur Erfüllung der Anforderung zugegriffen hat.|
-|-2016345611|0x87D101F5|Syncml(501): Der Empfänger unterstützt den zur Erfüllung der Anforderung erforderlichen Befehl nicht. 	|
+|-2016345608|0x87D101F8|Syncml(504): In seiner Funktion als Gateway oder Proxy empfing der Empfänger keine rechtzeitige Antwort von dem im URI angegebenen vorgelagerten Empfänger (z. B. HTTP, FTP, LDAP), oder von einem anderen Hilfsempfänger (z. B. DNS) auf den bei der Erfüllung der Anforderung zugegriffen werden muss.|
+|-2016345609|0x87D101F7|Syncml(503): Die Anforderung kann derzeit aufgrund einer zeitweisen Überlastung oder einer Wartung des Empfängers nicht verarbeitet werden.|
+|-2016345610|0x87D101F6|Syncml(502): In seiner Funktion als Gateway oder Proxy empfing der Empfänger eine ungültige Antwort vom vorgelagerten Empfänger, auf den er zur Erfüllung der Anforderung zugegriffen hat.|
+|-2016345611|0x87D101F5|Syncml(501): Der Empfänger unterstützt den zur Erfüllung der Anforderung erforderlichen Befehl nicht.|
 |-2016345612|0x87D101F4|Syncml(500): Aufgrund einer unerwarteten Bedingung konnte die Anforderung vom Empfänger nicht erfüllt werden.|
 |-2016345684|0x87D101AC|Syncml(428): Fehler beim Verschieben.|
 |-2016345685|0x87D101AB|Syncml(427): Das übergeordnete Element enthält untergeordnete Elemente und kann daher nicht gelöscht werden.|
 |-2016345686|0x87D101AA|Syncml(426): Ein unvollständiges Element wurde nicht angenommen.|
 |-2016345687|0x87D101A9|Syncml(425): Beim Anforderungsbefehl ist ein Fehler aufgetreten, weil der Absender auf dem Empfänger keine ausreichende Zugriffssteuerungsberechtigung (ACL) besitzt.|
 |-2016345688|0x87D101A8|Syncml(424): Das aufgeteilte Objekt wurde empfangen, seine Größe entsprach jedoch nicht dem im ersten Teil angegebenen Wert.|
-|-2016345689|0x87D101A7|Syncml(423): Beim Anforderungsbefehl ist ein Fehler aufgetreten, weil das "vorläufig gelöschte" Element zuvor auf dem Server dauerhaft gelöscht wurde.|
-|-2016345690|0x87D101A6|Syncml(422): Beim Anforderungsbefehl auf dem Server ist ein Fehler aufgetreten, weil das CGI-Skript im LocURI fehlerhaft war.|
+|-2016345689|0x87D101A7|Syncml(423): Beim Anforderungsbefehl ist ein Fehler aufgetreten, weil das „vorläufig gelöschte“ Element zuvor auf dem Server dauerhaft gelöscht wurde.|
+|-2016345690|0x87D101A6|Syncml(422): Beim Anforderungsbefehl ist ein Fehler aufgetreten, weil das CGI-Skript im LocURI fehlerhaft war.|
 |-2016345691|0x87D101A5|Syncml(421): Beim Anforderungsbefehl ist ein Fehler aufgetreten, weil die angegebene Suchgrammatik unbekannt war.|
 |-2016345692|0x87D101A4|Syncml(420): Auf dem Empfänger ist nicht genügend Speicherplatz für die restlichen Synchronisierungsdaten vorhanden.|
 |-2016345693|0x87D101A3|Syncml(419): Aufgrund der Clientanforderung entstand ein Konflikt, der zugunsten des Serverbefehls gelöst wurde.|
 |-2016345694|0x87D101A2|Syncml(418): Der angeforderte Put- oder Add-Befehl konnte nicht ausgeführt werden, da das Ziel bereits vorhanden ist.|
-|-2016345695|0x87D101A1|Syncml(417): Die Anforderung konnte zu diesem Zeitpunkt nicht ausgeführt werden. Der ursprüngliche Absender sollte sie später erneut stellen.|
+|-2016345695|0x87D101A1|Syncml(417): Die Anforderung konnte derzeit nicht ausgeführt werden und sollte später vom Anfordernden erneut versucht werden.|
 |-2016345696|0x87D101A0|Syncml(416): Die Anforderung konnte nicht ausgeführt werden, da die angeforderte Bytegröße zu hoch war.|
 |-2016345697|0x87D1019F|Syncml(415): Typ oder Format des Mediums nicht unterstützt.|
 |-2016345698|0x87D1019E|Syncml(414): Der angeforderte Befehl wurde nicht ausgeführt, weil der URI für die Verarbeitung durch den Empfänger zu lang ist.|
 |-2016345699|0x87D1019D|Syncml(413): Die Anforderung wird vom Empfänger abgewiesen, da das angeforderte Element für die Verarbeitung durch den Empfänger zu groß ist.|
-|-2016345700|0x87D1019C|Syncml(412): Die Anforderung wurde auf dem Empfänger nicht verarbeitet, da sie unvollständig oder nicht korrekt war.|
+|-2016345700|0x87D1019C|Syncml(412): Die Anforderung wurde auf dem Empfänger nicht verarbeitet, da sie unvollständig oder nicht ordnungsgemäß war.|
 |-2016345701|0x87D1019B|Syncml(411): Der Anforderungsbefehl muss eine Bytegrößen- oder Bytelängenangabe im Metaelementtyp enthalten.|
 |-2016345702|0x87D1019A|Syncml(410): Das angeforderte Ziel befindet sich nicht mehr auf dem Empfänger, und der Weiterleitungs-URI ist unbekannt.|
 |-2016345703|0x87D10199|Syncml(409): Die Anforderung konnte nicht erfüllt werden, da bei den Datenversionen auf Client und Server ein Aktualisierungskonflikt besteht.|
@@ -361,16 +362,16 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 |-2016345712|0x87D10190|Syncml(400): Der angeforderte Befehl konnte aufgrund eines Syntaxfehlers nicht ausgeführt werden.|
 |-2016345807|0x87D10131|Syncml(305): Auf das angeforderte Ziel muss über den angegebenen Proxy-URI zugegriffen werden.|
 |-2016345808|0x87D10130|Syncml (304): Der angeforderte SyncML-Befehl wurde auf dem Ziel nicht ausgeführt.|
-|-2016345809|0x87D1012F|Syncml(303): Das angeforderte Ziel besitzt einen anderen URI.|
-|-2016345810|0x87D1012E|Syncml(302): Das angeforderte Ziel wurde vorübergehend an einen anderen URI verschoben.|
-|-2016345811|0x87D1012D|Syncml(301): Das angeforderte Ziel besitzt einen neuen URI.|
+|-2016345809|0x87D1012F|Syncml(303): Das angeforderte Ziel ist bei einem anderen URI zu finden.|
+|-2016345810|0x87D1012E|Syncml(302): Das angeforderte Ziel wurde vorübergehend zu einem anderen URI verschoben.|
+|-2016345811|0x87D1012D|Syncml(301): Das angeforderte Ziel hat einen neuen URI.|
 |-2016345812|0x87D1012C|Syncml(300): Das angeforderte Ziel ist eines von mehreren Alternativen.|
-|-2016345896|0x87D100D8|Syncml(216): Der Befehl befand sich in einem unteilbaren Element, und bei Atomic ist ein Fehler aufgetreten. Der Befehl konnte nicht zurückgesetzt werden.|
-|-2016345897|0x87D100D7|Syncml(215): Ein Befehl wurde aufgrund einer Benutzerinteraktion nicht ausgeführt, und der Benutzer hat die Auswahl nicht akzeptiert.|
+|-2016345896|0x87D100D8|Syncml(216): Der Befehl befand sich in einem unteilbaren Element, und bei Atomic ist ein Fehler aufgetreten. Dieser Befehl wurde erfolgreich rückgängig gemacht.|
+|-2016345897|0x87D100D7|Syncml(215): Ein Befehl wurde aufgrund einer Benutzerinteraktion nicht ausgeführt, da der Benutzer die Wahl nicht akzeptiert hat.|
 |-2016345898|0x87D100D6|Syncml(214): Vorgang abgebrochen. Der SyncML-Befehl wurde erfolgreich abgeschlossen, aber in der Sitzung werden keine weiteren Befehle verarbeitet.|
-|-2016345899|0x87D100D5|Syncml(213): Aufgeteiltes Element akzeptiert und gepuffert.|
+|-2016345899|0x87D100D5|Syncml(213): Aufgeteiltes Element wurde akzeptiert und gepuffert.|
 |-2016345900|0x87D100D4|Syncml(212): Authentifizierung akzeptiert. Für den Rest der Synchronisierungssitzung ist keine weitere Authentifizierung erforderlich. Dieser Antwortcode kann nur als Antwort auf eine Anforderung verwendet werden, in der die Anmeldeinformationen bereitgestellt wurden.|
-|-2016345901|0x87D100D3|Syncml(211): Das Element wurde nicht gelöscht. Das angeforderte Element wurde nicht gefunden. Es wurde möglicherweise zuvor gelöscht.|
+|-2016345901|0x87D100D3|Syncml(211): Element nicht gelöscht. Das angeforderte Element wurde nicht gefunden. Es wurde möglicherweise zuvor gelöscht.|
 |-2016345902|0x87D100D2|Syncml(210): Ohne Archivieren löschen. Die Antwort gibt an, dass die angeforderten Daten erfolgreich gelöscht wurden, ohne sie jedoch vor dem Löschen zu archivieren, da diese OPTIONALE Funktion von der Implementierung nicht unterstützt wurde.|
 |-2016345903|0x87D100D1|Konflikt durch Duplizieren behoben. Die Antwort gibt an, dass die Anforderung einen Aktualisierungskonflikt verursacht hat, der durch Duplizieren der in der Serverdatenbank erstellten Clientdaten behoben wurde. Die Antwort enthält im Statuselement beide Ziel-URI des Duplikats. Darüber hinaus wird bei einer bidirektionalen Synchronisierung ein Add-Befehl mit der duplizierten Datendefinition zurückgegeben.|
 |-2016345904|0x87D100D0|Konflikt behoben, wobei der Clientbefehl "gewinnt". Die Antwort gibt an, dass ein Aktualisierungskonflikt aufgetreten ist, der behoben wurde, indem der Clientbefehl gewinnt.|

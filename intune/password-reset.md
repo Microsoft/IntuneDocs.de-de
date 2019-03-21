@@ -7,19 +7,20 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8210af8b9bf92b3f20578fb47e76ef213939df0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 621df273e7910e51cf7de869aa7858039d66549b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228424"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57459967"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Reduzieren von Helpdeskkosten mit Self-Service-Kennwortzurücksetzung
 

@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a8080b07a937b7e827ed0dca3a9fb2c3072b41c5
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55847385"
 ---
 # <a name="you-need-to-update-your-ios-device-to-install-the-outlook-app"></a>Sie müssen Ihr iOS-Gerät aktualisieren, um die Outlook-App zu installieren

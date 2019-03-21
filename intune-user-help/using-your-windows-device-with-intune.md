@@ -18,11 +18,11 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9bdb3e5c79b348b323df129c2dec4c02af596215
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 85856e77fc8ebbd4054ef819a9110e0fa258ced3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55844546"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>Verwenden Ihres Windows-Geräts mit dem Intune-Unternehmensportal
@@ -46,7 +46,7 @@ Das Unternehmensportal unterstützt derzeit Geräte, die unter folgenden Windows
 Auch einige andere Versionen von Windows, z.B. [Windows 10 Holographic](https://www.microsoft.com/hololens), werden vom Unternehmensportal unterstützt. Diese Versionen werden jedoch in diesem Artikel nicht behandelt, weil sie nur für sehr spezifische Zwecke konzipiert sind.
 
 ## <a name="set-up-your-device-in-the-company-portal"></a>Einrichten Ihres Geräts im Unternehmensportal
-- [Get my Windows device managed in Company Portal (Mein Gerät im Unternehmensportal verwalten lassen)](enroll-your-device-in-intune-windows.md)
+- [Get my Windows device managed in Company Portal (Mein Gerät im Unternehmensportal verwalten lassen)](windows-enrollment-company-portal.md)  
 - [What does it mean to get my device *managed*? (Was heißt „verwalten lassen“?)](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 - [Welche Informationen erhält mein Unternehmen, wenn ich mein Gerät registriere?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 - [Verschlüsseln Ihres Geräts](encrypt-your-device-windows.md)

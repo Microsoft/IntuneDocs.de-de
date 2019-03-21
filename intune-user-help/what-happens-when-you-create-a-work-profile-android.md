@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2114161bfb13b02a217a0a209c11350b8f9944e9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846552"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069131"
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>Was geschieht beim Erstellen eines Arbeitsprofils?
 
