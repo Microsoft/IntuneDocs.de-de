@@ -262,8 +262,6 @@ items:
       href: device-profile-android-teamviewer.md
     - name: Zurücksetzen der PIN unter Windows 10
       href: device-windows-pin-reset.md
-    - name: Installieren des Exchange-Connectors
-      href: exchange-service-connector-configure.md
     - name: Synchronisieren eines Geräts
       href: device-sync.md
     - name: Untersuchen des Gerätebestands
@@ -329,6 +327,11 @@ items:
       href: education-settings-configure.md
     - name: Von mehren Benutzern gemeinsam verwendete Geräte
       href: shared-user-device-settings.md
+    - name: Erweiterung der Mobilität auf Zebra-Geräten
+      href: android-zebra-mx-overview.md
+      items:
+      - name: StageNow-Protokolle und allgemeine Probleme
+        href: android-zebra-mx-logs-troubleshoot.md
     - name: Überwachen der Telekommunikationsausgaben
       href: telecom-expenses-monitor.md
     - name: Benutzerdefinierte Geräteeinstellungen
@@ -854,8 +857,6 @@ items:
             href: reports-ref-user-timeline.md
           - name: Verweis für Anwendungsentitäten
             href: reports-ref-application.md
-          - name: Verweis für die aktuelle Benutzerentität
-            href: reports-ref-current-user.md
           - name: Verweis für die Datumsentität
             href: reports-ref-date.md
           - name: Referenz für Geräteentitäten
@@ -946,9 +947,9 @@ items:
       href: data-outside-protect.md
     - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
       href: data-leak-prevention.md
-ms.openlocfilehash: 2a7f7b7a1d1c56cf316362ef8dc2693343e64955
-ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
+ms.openlocfilehash: f342d2ce12fb45db49cf06263807ed4a155fba55
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58306858"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394679"
