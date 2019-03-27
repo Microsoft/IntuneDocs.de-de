@@ -45,7 +45,7 @@ So verknüpfen Sie einen Benutzer mit einem PC
 
    - Wählen Sie **Abbrechen** aus, um die Verknüpfung des PC mit einem ggf. vorhandenen aktuellen Benutzer beizubehalten.
 
-   - Klicken Sie zum Entfernen der Verknüpfung mit dem aktuellen Benutzer ggf. auf <strong>Verknüpfung entfernen**&gt;** OK</strong>.
+   - Klicken Sie zum Entfernen der Verknüpfung mit dem aktuellen Benutzer ggf. auf <strong>Verknüpfung entfernen **&gt;** OK</strong>.
 
    - Zum Verknüpfen des PC mit einem neuen Benutzer wählen Sie diesen in der Liste **Alle Benutzer** aus. Überprüfen Sie, ob die Benutzerdaten korrekt sind, und wählen Sie **OK** aus.
 
