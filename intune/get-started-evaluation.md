@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34d1cbe969b8e186d9e067660237da9c4ca88fb8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 313e4ccf0e96536b3e99edb968298e4cc3343aa1
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396222"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429732"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>Wie profitiert mein Unternehmen von Intune?
 Microsoft Intune ist ein cloudbasierter Enterprise Mobility-Verwaltungsdienst (Enterprise Mobility Management; EMM), der die Produktivität Ihrer Mitarbeiter fördert und gleichzeitig Ihre Unternehmensdaten schützt.
@@ -46,15 +46,15 @@ Mit Intune können Sie folgende Aktionen ausführen:
 
 ## <a name="quickstarts"></a>Schnellstarts
 
-Wir wissen, dass die ersten Schritte mit der Verwaltung von mobilen Geräten schwierig sein können, da sie viele verschiedene Entscheidungen für Ihr Unternehmen treffen müssen. Mithilfe der folgenden Schnellstartanleitungen meistern Sie die ersten Schritte mit Intune und schließen einige allgemeine Aufgaben in nur kurzer Zeit ab.
+Uns ist bewusst, dass der Einstieg in die Verwaltung mobiler Geräte schwierig sein kann. Es sind viele verschiedene Entscheidungen im Auftrag Ihres Unternehmens zu treffen. Mithilfe der folgenden Schnellstartanleitungen meistern Sie die ersten Schritte mit Intune und schließen einige allgemeine Aufgaben mit geringem Zeitaufwand ab.
 
-Sie können die **Schnellstarts** anhand des Inhaltsverzeichnisses links auf der Seite in der vorgegebenen Reihenfolge durchgehen.
+Sie können die **Schnellstarts** anhand des Inhaltsverzeichnisses links auf dieser Seite in der vorgegebenen Reihenfolge durchgehen.
 
 - [Try Intune for free (Intune kostenlos testen):](free-trial-sign-up.md) Erstellen Sie ein kostenloses Abonnement, um Intune in einer Testumgebung zu testen.    
 - [Create a user (Erstellen eines Benutzers):](quickstart-create-user.md) Fügen Sie in Intune Benutzer hinzu, um ihnen den Zugriff auf Unternehmensressourcen über mobile Geräte zu ermöglichen.
 - [Create a group (Erstellen einer Gruppe):](quickstart-create-group.md) Organisieren Sie Benutzer in Gruppen, um die Richtlinien und Apps leichter zu verwalten, auf die sie zugreifen können.
-- [Einrichten der automatischen Registrierung:](quickstart-setup-auto-enrollment.md) Richten Sie Microsoft Intune so ein, dass Geräte automatisch registriert werden, wenn sich bestimmte Benutzer auf Windows 10-Geräten anmelden.
-- [Enroll your device (Registrieren von Geräten):](quickstart-enroll-windows-device.md) Nehmen Sie die Rolle eines Intune-Benutzers an, und registrieren Sie sich für Microsoft Intune. Gehen Sie anschließend zu Intune zurück, und bestätigen Sie das registrierte Gerät.
+- [Einrichten der automatischen Registrierung:](quickstart-setup-auto-enrollment.md) Richten Sie Intune so ein, dass Geräte automatisch registriert werden, wenn sich bestimmte Benutzer auf Windows 10-Geräten anmelden.
+- [Enroll your device (Registrieren von Geräten):](quickstart-enroll-windows-device.md) Nehmen Sie die Rolle eines Intune-Benutzers an, und registrieren Sie sich für Intune. Gehen Sie anschließend zu Intune zurück, und bestätigen Sie, dass das Gerät erfolgreich registriert wurde.
 - [Create a policy (Erstellen einer Richtlinie):](quickstart-set-password-length-android.md) Erstellen Sie eine Gerätekonformitätsrichtlinie, und weisen Sie der Richtlinie eine Gruppe zu.
 - [Send notifications to noncompliant devices (Senden von Benachrichtigungen bei nicht konformen Geräten):](quickstart-send-notification.md) Senden Sie E-Mail-Benachrichtigungen an Ihre Mitarbeiter, wenn deren Geräte nicht konform sind, indem Sie eine Konformitätsrichtlinie erstellen und zuweisen.
 - [Add and assign an app (Hinzufügen und Zuweisen von Apps):](quickstart-add-assign-app.md) Fügen Sie eine Client-App für Ihre Mitarbeiter hinzu, und weisen Sie diese zu.
@@ -64,7 +64,7 @@ Sie können die **Schnellstarts** anhand des Inhaltsverzeichnisses links auf der
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Bevor Sie beginnen, benötigen Sie ein Administratorkonto und ein Mandantenkonto für Intune. Erstellen Sie ein kostenloses Abonnement, um [Intune in einer Testumgebung kostenlos zu testen](free-trial-sign-up.md). Aktuelle Abonnenten können diese Schritte auch in ihrem Live-Mandanten vornehmen. In diesen Artikeln für die ersten Schritte wird davon ausgegangen, dass Sie auf Testgeräten arbeiten.
+Bevor Sie beginnen, benötigen Sie ein Administratorkonto und ein aktives Mandantenkonto für Intune. Erstellen Sie ein kostenloses Abonnement, um [Intune in einer Testumgebung kostenlos zu testen](free-trial-sign-up.md). Aktuelle Abonnenten können diese Schritte auch in ihrem Live-Mandanten vornehmen. In diesen Artikeln für die ersten Schritte wird davon ausgegangen, dass Sie auf Testgeräten arbeiten.
 
 Sie müssen auch sicherstellen, dass Sie der globale Administrator für Ihre Organisation sind, um alle „Erste Schritte“-Aufgaben abzuschließen.
 
