@@ -1,6 +1,6 @@
 ---
 title: Was ist Microsoft Intune?
-description: Erfahren Sie mehr zu Intune, der Komponente der „Enterprise Mobility + Security“-Lösung für die Verwaltung mobiler Geräte (MDM) und die Verwaltung mobiler Apps (MAM), und wie Intune Sie beim Schutz von Unternehmensdaten unterstützt.
+description: Erfahren Sie mehr zu Microsoft Intune, der Komponente der „Enterprise Mobility + Security“-Lösung für die Verwaltung mobiler Geräte (MDM) und die Verwaltung mobiler Apps (MAM), und wie Intune Sie beim Schutz von Unternehmensdaten unterstützt.
 keywords: Was ist Intune
 author: dougeby
 ms.author: dougeby
@@ -9,6 +9,7 @@ ms.date: 02/26/2019
 ms.topic: overview
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
@@ -16,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92cd9a5a6c3ee49b2431b43b024c338e06b5dfe2
-ms.sourcegitcommit: 7d694e3cd01623513c2b163946e60a99ab9535d2
+ms.openlocfilehash: 511e672193ec609f817c10572c99ac73831c54ae
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56891605"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460579"
 ---
 # <a name="what-is-microsoft-intune"></a>Was ist Microsoft Intune?
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Intune ist ein cloudbasierter Dienst für den Bereich Enterprise Mobility, der die Produktivität Ihrer Mitarbeiter unterstützt und gleichzeitig Ihre Unternehmensdaten schützt. Genau wie andere Azure-Dienste ist Microsoft Intune im Azure-Portal verfügbar. Mit Intune können Sie folgende Aktionen ausführen:
+Microsoft Intune ist ein cloudbasierter Dienst für den Bereich Enterprise Mobility, der die Produktivität Ihrer Mitarbeiter unterstützt und gleichzeitig Ihre Unternehmensdaten schützt. Genau wie andere Azure-Dienste ist Microsoft Intune im Azure-Portal verfügbar. Mit Intune können Sie folgende Aktionen ausführen:
 * Verwalten der mobilen Geräte und PCs, die Ihre Mitarbeiter zum Zugriff auf Unternehmensdaten verwenden
 * Die mobilen Apps verwalten, die Ihre Mitarbeiter verwenden
 * Ihre Unternehmensinformationen schützen, indem Sie steuern, wie Ihre Mitarbeiter darauf zugreifen und diese freigeben
@@ -44,7 +45,7 @@ Intune ist ein cloudbasierter Dienst für den Bereich Enterprise Mobility, der d
 
 
 ## <a name="how-does-intune-work"></a>Funktionsweise von Intune
-Intune ist die Komponente von Enterprise Mobility + Security (EMS), mit der mobile Geräte und Apps verwaltet werden. Die Lösung lässt sich eng in andere EMS-Komponenten wie Azure Active Directory (Azure AD) integrieren und bietet Identitäts- und Zugriffsteuerungsfunktionen sowie Azure Information Protection für den Datenschutz. Wenn Sie EMS zusammen mit Office 365 bereitstellen, können Ihre Mitarbeiter auf allen ihren Geräten produktiv arbeiten, während die Informationen Ihres Unternehmens geschützt bleiben.
+Intune ist die Komponente von Enterprise Mobility + Security-Suite (EMS) von Microsoft, mit der mobile Geräte und Apps verwaltet werden. Die Lösung lässt sich eng in andere EMS-Komponenten wie Azure Active Directory (Azure AD) integrieren und bietet Identitäts- und Zugriffsteuerungsfunktionen sowie Azure Information Protection für den Datenschutz. Wenn Sie EMS zusammen mit Office 365 bereitstellen, können Ihre Mitarbeiter auf allen ihren Geräten produktiv arbeiten, während die Informationen Ihres Unternehmens geschützt bleiben.
 
 ![Abbild der Intune-Architektur](./media/intunearch_sm.png)
 
@@ -77,7 +78,7 @@ Wenn wir über die App-Verwaltung sprechen, sprechen wir über Folgendes:
 * Berichte über das mobile App-Inventar
 * Nachverfolgen der Nutzung mobiler Apps
 
-Mit dem Begriff „Mobile App-Verwaltung“ können diese Punkte einzeln oder in bestimmten Kombinationen gemeint sein. Insbesondere wird das Konzept der App-Konfiguration mit dem Konzept zum Schutz von Unternehmensdaten in mobilen Apps verbunden, weil einige mobile Apps Einstellungen verfügbar machen, mit denen ihre Datensicherheitsfeatures konfiguriert werden können.
+Mit dem Begriff „Mobile App-Verwaltung“ können diese Punkte einzeln oder in bestimmten Kombinationen gemeint sein. Insbesondere wird das Konzept der App-Konfiguration mit dem Konzept zum Schutz von Unternehmensdaten in mobilen Apps kombiniert. weil einige mobile Apps Einstellungen verfügbar machen, mit denen ihre Datensicherheitsfeatures konfiguriert werden können.
 
 Wenn wir über App-Konfiguration und Intune sprechen, meinen wir genau solche Technologien wie die [verwaltete App-Konfiguration unter iOS](https://developer.apple.com/library/content/samplecode/sc2279/Introduction/Intro.html).
 
@@ -108,7 +109,7 @@ Die meisten Enterprise Mobility Management-Lösungen unterstützen grundlegende 
 
 Unternehmen unterscheiden sich, inwieweit sie Szenarios ohne Registrierung übernehmen. Einige Unternehmen machen dieses Szenario zu Ihrem Standard. Einige ermöglichen es bloß für Begleitgeräte wie z.B. ein persönliches Tablet. Andere unterstützen es überhaupt nicht. Auch im letzten Fall, in dem eine Organisation von allen Mitarbeitern fordert, ihre Geräte in MDM zu registrieren, unterstützen sie in der Regel Szenarios ohne Registrierung für Auftragnehmer, Lieferanten und für andere Geräte, die über eine bestimmte Freistellung verfügen.
 
-Sie können die Intune-Technologie für die Geräteverwendung ohne Registrierung sogar auf registrierten Geräten verwenden. Beispielsweise kann vom mobilen Betriebssystem für ein Gerät, das in MDM registriert ist, die Schutzfunktion „Öffnen In“ bereitgestellt werden. (Es handelt sich hierbei um ein iOS-Feature, das Sie daran hindert, ein Dokument aus einer App, z.B. Outlook, in einer anderen App, z.B. Word, zu öffnen – es sei denn, beide Apps werden vom MDM-Anbieter verwaltet.) Darüber hinaus kann die IT die App-Schutzrichtlinie auf EMS-verwaltete mobile Apps anwenden, um die Option „Speichern als“ zu steuern oder eine mehrstufige Authentifizierung bereitzustellen.
+Sie können die Intune-Technologie für die Geräteverwendung ohne Registrierung sogar auf registrierten Geräten verwenden. Beispielsweise kann vom mobilen Betriebssystem für ein Gerät, das in MDM registriert ist, die Schutzfunktion „Öffnen In“ bereitgestellt werden. Es handelt sich hierbei um ein Feature von Apple iOS, das Sie daran hindert, ein Dokument aus einer App, z.B. Outlook, in einer anderen App, z.B. Word, zu öffnen – es sei denn, beide Apps werden vom gleichen MDM-Anbieter verwaltet. Darüber hinaus kann die IT die App-Schutzrichtlinie auf EMS-verwaltete mobile Apps anwenden, um die Option „Speichern unter“ zu steuern oder eine mehrstufige Authentifizierung bereitzustellen.
 
 Intune verfügt als Teil von EMS über Tools, mit denen Sie Ihre Produktivität steigern und gleichzeitig Ihre Unternehmensdaten schützen können – unabhängig von der Position Ihrer Organisation zu registrierten und nicht registrierten mobilen Geräten und Apps.
 
@@ -133,7 +134,7 @@ Eine kurze Einführung zum Anpassen Ihrer Portalumgebung finden Sie unter [Erste
 
 ### <a name="before-you-start"></a>Vorbereitung
 
-Um Intune im Azure-Portal verwenden zu können, benötigen Sie ein Administrator- und ein Mandantenkonto für Intune. [Registrieren Sie sich für ein Konto](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20), wenn Sie noch keines haben.
+Um Intune im Azure-Portal verwenden zu können, benötigen Sie ein Administrator- und ein Mandantenkonto für Intune. [Registrieren Sie sich für ein Konto](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20), wenn Sie noch keines haben.
 
 ### <a name="supported-web-browsers-for-the-azure-portal"></a>Unterstützte Webbrowser für das Azure-Portal
 

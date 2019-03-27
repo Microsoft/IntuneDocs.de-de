@@ -10,18 +10,20 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1b89f2d-7937-46bb-926b-b05f6fa9c749
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: af24e1c56e43fe2edfc6a9241c31600b7cfe61a7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186255"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57991121"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Schnellstart: Senden von Benachrichtigungen an nicht konforme Geräte
 
@@ -47,12 +49,12 @@ Zum Senden einer E-Mail an Ihre Benutzer müssen Sie eine Benachrichtigungsvorla
 1. Klicken Sie in Intune auf **Gerätekonformität** > **Benachrichtigungen** > **Benachrichtigung erstellen**. 
 2. Geben Sie die folgenden Informationen ein:
 
-   - **Name:** *Contoso-Administrator*
-   - **Betreff:** *Gerätekonformität*
-   - **Nachricht:** *Ihr Gerät entspricht derzeit nicht den Konformitätsanforderungen des Unternehmens.*
-   - **E-Mail-Kopfzeile: Unternehmenslogo einfügen:** Legen Sie **Aktiviert** fest, damit das Logo Ihres Unternehmens angezeigt wird.
-   - **E-Mail-Fußzeile: Unternehmensname einfügen:** Legen Sie **Aktiviert** fest, damit der Name Ihres Unternehmens angezeigt wird.
-   - **E-Mail-Fußzeile: Kontaktinformationen einfügen:** Legen Sie **Aktiviert** fest, damit die Kontaktinformationen Ihres Unternehmens angezeigt werden.
+   - **Name**: *Contoso Admin*
+   - **Betreff**: *Gerätekompatibilität*
+   - **Nachricht**: *Ihr Gerät entspricht derzeit nicht den Complianceanforderungen des Unternehmens.*
+   - **E-Mail-Kopfzeile: Unternehmenslogo einschließen**: Auf **Aktiviert** festgelegt, um das Logo Ihrer Organisation zu zeigen.
+   - **E-Mail-Fußzeile: Unternehmensnamen einschließen**: Auf **Aktiviert** festgelegt, um den Namen Ihrer Organisation zu zeigen.
+   - **E-Mail-Fußzeile: Kontaktinformationen einschließen**: Auf **Aktiviert** festgelegt, um die Kontaktinformationen Ihrer Organisation zu zeigen.
 
    ![Beispiel einer Benachrichtigung zur Konformität in Intune](./media/quickstart-send-notification-01.png)
 
@@ -73,9 +75,9 @@ Mit den folgenden Schritten wird eine Konformitätsrichtlinie für Windows 10-Ge
 2. Klicken Sie auf **Richtlinien** > **Richtlinie erstellen**.
 3. Geben Sie die folgenden Informationen ein:
 
-   - **Name:** *Konformität von Windows 10*
-   - **Beschreibung:** *Windows 10-Konformitätsrichtlinie*
-   - **Plattform:** Windows 10 und höher
+   - **Name**: *Windows 10-Kompatibilität*
+   - **Beschreibung**: *Windows 10-Kompatibilitätsrichtlinie*
+   - **Plattform**: Windows 10 und höher
 
 4. Klicken Sie auf **Einstellungen** > **Systemsicherheit**, um die sicherheitsbezogenen Geräteeinstellungen anzuzeigen.
 5. Legen Sie **Anfordern** für die Option **Kennwort zum Entsperren mobiler Geräte erforderlich** fest. Mit dieser Einstellung wird festgelegt, ob Benutzer ein Kennwort eingeben müssen, damit auf die Daten auf ihren mobilen Geräten zugegriffen werden kann. 
@@ -84,7 +86,7 @@ Mit den folgenden Schritten wird eine Konformitätsrichtlinie für Windows 10-Ge
     ![Systemsicherheitseinstellungen für eine neue Konformitätsrichtlinie](./media/quickstart-send-notification-02.png) 
 
 7. Klicken Sie auf **OK** > **OK** > **Erstellen**, um Ihre Konformitätsrichtlinie zu erstellen.
-8. Wählen Sie den Namen Ihrer neuen Richtlinie aus: **Konformität von Windows 10**.
+8. Wählen Sie den Namen Ihrer neuen Richtlinie aus: **Windows 10-Kompatibilität**.
 9. Klicken Sie auf **Eigenschaften** > **Aktion bei Nichtkonformität** > **Hinzufügen**.
 10. Vergewissern Sie sich, dass **Send email to end users** (E-Mail an Endbenutzer senden) im Dropdownfeld **Aktion** ausgewählt ist.
 11. Klicken Sie auf **Nachrichtenvorlage** > **Contoso-Administrator** > **Auswählen**, um die Nachrichtenvorlage auszuwählen, die Sie zuvor erstellt haben.

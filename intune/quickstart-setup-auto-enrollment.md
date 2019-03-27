@@ -4,6 +4,7 @@ description: 'Schnellstart: Einrichten der automatischen Registrierung für Wind
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 11/05/2018
 ms.author: erikje
@@ -11,12 +12,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0d6f210d055d8395985b4fe64b5a061b2c8a0304
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 810adbf06ddcd0aabb5c758f6a71c898116a9cee
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179653"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57394313"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Schnellstart: Einrichten der automatischen Registrierung für Windows 10-Geräte
 
@@ -74,4 +76,4 @@ In dieser Schnellstartanleitung haben Sie gelernt, wie die automatische Registri
 Weitere Informationen zu Intune erhalten Sie im nächsten Schnellstart.
 
 > [!div class="nextstepaction"]
-> [Quickstart: Enroll your Windows 10 device (Schnellstart: Registrieren Ihres Windows 10-Geräts)](quickstart-enroll-windows-device.md)
+> [Schnellstart: Registrieren Ihres Windows 10-Geräts](quickstart-enroll-windows-device.md)

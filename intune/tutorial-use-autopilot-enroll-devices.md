@@ -10,6 +10,7 @@ ms.date: 10/19/2018
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
@@ -17,12 +18,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 087f890f84c9bc0ff0c46f129ef84b8a268c738e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187734"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57395978"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Tutorial: Registrieren von Windows-Geräten in Intune mithilfe von Autopilot
 Windows Autopilot vereinfacht das Registrieren von Geräten. Mit Microsoft Intune und Autopilot können Sie Ihren Endbenutzern neue Geräte geben, ohne die benutzerdefinierten Betriebssystemimages erstellen, verwalten und auf diese anwenden zu müssen. 
@@ -49,7 +51,7 @@ Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen von Autopilot 
 
 Der erste Schritt beim Einrichten von Windows Autopilot besteht darin, die Windows-Geräte zu Intune hinzuzufügen. Sie müssen lediglich eine CSV-Datei erstellen und in Intune importieren.
 
-1. Erstellen Sie in einem beliebigen Text-Editor eine CSV-Datei (Comma-Separated Values), die die Windows-Geräte identifiziert. Verwenden Sie folgendes Format:
+1. Erstellen Sie in einem beliebigen Text-Editor eine CSV-Datei (Comma-Separated Values), die die Windows-Geräte identifiziert. Verwenden Sie das folgende Format:
     
     *serial-number*, *windows-product-id*, *hardware-hash*, *optional-order-id*
     

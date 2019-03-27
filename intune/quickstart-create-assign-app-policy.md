@@ -10,20 +10,22 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2586fce0-5dca-4686-b9c4-791778838401
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2ae378550a75f756390053e44eb4fbd04f665612
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179074"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57393361"
 ---
-# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Schnellstart: Erstellen und Zuweisen von App-Schutzrichtlinien
+# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Schnellstart: Erstellen und Zuweisen einer App-Schutzrichtlinie
 
 In diesem Schnellstart erfahren Sie, wie Sie mithilfe von Intune eine App-Schutzrichtlinie erstellen und einer Client-App auf dem Gerät eines Endbenutzers zuweisen. Intune verwendet App-Schutzrichtlinien, um zu überprüfen, ob bestimmte Apps die Datenschutzanforderungen des jeweiligen Unternehmens erfüllen.
 
@@ -44,10 +46,10 @@ Führen Sie die folgenden Schritte aus, um eine App-Schutzrichtlinie zu erstelle
 1. Klicken Sie unter [Intune](https://aka.ms/intuneportal) auf **Client-Apps** > **App-Schutzrichtlinien** > **Richtlinie erstellen**. 
 2. Geben Sie die folgenden Informationen an: 
 
-    - **Name:** *Inhaltsschutz für Windows 10*
-    - **Beschreibung:** *Benutzer, denen die Richtlinie zugewiesen ist, können in zugewiesenen Apps und anderen nicht verwalteten Apps auf dem Gerät keine Inhalte ausschneiden, kopieren oder einfügen.*
+    - **Name**: *Inhaltsschutz für Windows 10*
+    - **Beschreibung**: *Benutzer, denen die Richtlinie zugewiesen ist, können in zugewiesenen Apps und anderen nicht verwalteten Apps auf dem Gerät keine Inhalte ausschneiden, kopieren oder einfügen.*
     - **Plattform**: *Windows 10*
-    - **Registrierungsstatus:** *Mit Registrierung*
+    - **Registrierungsstatus**: *Mit Registrierung*
 
 3. Klicken Sie auf **Protected apps** (Geschützte Apps), um die Apps auszuwählen, für die diese Richtlinie gelten soll.
 4. Klicken Sie auf **Apps hinzufügen**.

@@ -6,10 +6,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 03/11/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0ed363acca7fc0021569009b1f672a06101e29f
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834176"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57756852"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Schnellstart: Testen Sie Microsoft Intune kostenlos 
 
@@ -53,7 +54,7 @@ Sie können Intune 30 Tage lang kostenlos testen. Wenn Sie bereits über ein Arb
 
     ![Screenshot des Prozesses für neue Anmeldeinformationen für das Intune-Testkonto](./media/account-sign-up-site-user-id.png)
 
-    Wenn Ihre Organisation über eine eigene benutzerdefinierte Domäne verfügt, die Sie ohne **.onmicrosoft.com** verwenden möchten, können Sie diese über das Verwaltungsportal von Microsoft Office 365 ändern. Näheres hierzu wird später in diesem Artikel erläutert.
+    Wenn Ihre Organisation über eine eigene benutzerdefinierte Domäne verfügt, die Sie ohne **.onmicrosoft.com** verwenden möchten, können Sie diese im Microsoft 365 Admin Center ändern. Näheres hierzu wird später in diesem Artikel erläutert.
 
 3. Am Ende des Registrierungsvorgangs werden Ihre neuen Kontoinformationen angezeigt.
 
@@ -86,34 +87,34 @@ Führen Sie die folgenden Schritte aus, um die MDM-Autorität in Intune festzule
 3. Klicken Sie auf den Banner, in dem darauf hingewiesen wird, dass Sie die Geräteverwaltung nicht aktiviert haben. Wenn der Banner nicht direkt angezeigt wird, klicken Sie auf **Geräteregistrierung**. Wenn Sie die Geräteverwaltung noch nicht aktiviert haben, wird das Blatt **MDM-Autorität wählen** angezeigt.
 
     > [!NOTE]
-    > Der orangefarbene Banner wird nur angezeigt, wenn Sie die MDM-Autorität noch nicht festgelegt haben.
+    > Wenn Sie die MDM-Autorität festgelegt haben, können Sie den Wert der MDM-Autorität auf dem Blatt **Geräteregistrierung** sehen. Der orangefarbene Banner wird nur angezeigt, wenn Sie die MDM-Autorität noch nicht festgelegt haben. 
 
     ![Bild des Blatts „MDM-Autorität wählen“](./media/choose-mdm-authority.png) 
 
-4. Legen Sie Ihre MDM-Autorität unter **MDM-Autorität wählen** auf **Intune-MDM-Autorität** fest.
+4. Wenn Ihre MDM-Autorität nicht festgelegt ist, legen Sie Ihre MDM-Autorität unter **MDM-Autorität wählen** auf **Intune-MDM-Autorität** fest.
 
 Informationen zum Festlegen der MDM-Autorität finden Sie unter [Festlegen der Autorität für die Verwaltung mobiler Geräte](mdm-authority-set.md).
 
 ## <a name="configure-your-custom-domain-name-optional"></a>Konfigurieren des Namens Ihrer benutzerdefinierten Domäne (optional)
 
-Wie vorstehend erwähnt, können Sie eine benutzerdefinierte Domäne über das Verwaltungsportal von Microsoft Office 365 ändern, wenn Ihre Organisation über eine eigene benutzerdefinierte Domäne verfügt, die Sie ohne **.onmicrosoft.com** verwenden möchten. Sie können den Namen Ihrer benutzerdefinierten Domäne hinzufügen, überprüfen und konfigurieren.  
+Wie vorstehend erwähnt, können Sie eine benutzerdefinierte Domäne im Microsoft 365 Admin Center ändern, wenn Ihre Organisation über eine eigene benutzerdefinierte Domäne verfügt, die Sie ohne **.onmicrosoft.com** verwenden möchten. Sie können Ihren benutzerdefinierten Domänennamen mithilfe der folgenden Schritte hinzufügen, überprüfen und konfigurieren.  
 
 > [!IMPORTANT]
-> Sie können den Namen der Anfangsdomäne **onmicrosoft.com** nicht umbenennen oder entfernen. Sie können in Intune verwendete benutzerdefinierte Domänennamen hinzufügen, überprüfen oder entfernen, damit Ihre Geschäftsidentität eindeutig bleibt.
+> Sie können den *ursprünglichen* **onmicrosoft.com**-Teil des Domänennamens nicht umbenennen oder entfernen. Jedoch können Sie in Intune verwendete *benutzerdefinierte* Domänennamen hinzufügen, überprüfen oder entfernen, damit Ihre Geschäftsidentität eindeutig bleibt. Weitere Informationen finden Sie unter [Konfigurieren eines benutzerdefinierten Domänennamens](custom-domain-name-configure.md).
 
-1. Wechseln Sie zum [Verwaltungsportal von Microsoft Office 365](https://portal.office.com/Admin/Default.aspx), und melden Sie sich über Ihr Administratorkonto an.
+1. Wechseln Sie zum [Microsoft 365 Admin Center](https://admin.microsoft.com), und melden Sie sich über Ihr Administratorkonto an.
 
 2. Wählen Sie im Navigationsbereich **Einrichtung** > **Domänen** > **Domäne hinzufügen** aus.
 
 3. Geben Sie den Namen Ihrer benutzerdefinierten Domäne ein. Wählen Sie anschließend **Weiter** aus.
 
-   ![Screenshot von Office 365 Admin Center: Domäne hinzufügen](./media/domain-custom-add.png)
+   ![Screenshot von Microsoft 365 Admin Center: Domäne hinzufügen](./media/domain-custom-add.png)
 
 4. Überprüfen Sie, ob Sie Besitzer der im vorherigen Schritt eingegebenen Domäne sind. 
     
-    Durch das Auswählen von **Send Code via Email** (Code per E-Mail senden) wird an den registrierten Kontakt Ihrer Domäne eine E-Mail gesendet. Kopieren Sie nach dem Empfang der E-Mail den Code, und geben Sie diesen in das Feld **Type your verification code here** (Geben Sie Ihren Prüfcode hier ein) ein. Stimmt der Prüfcode überein, wird die Domäne zu Ihrem Mandanten hinzugefügt. Die angezeigte E-Mail kommt Ihnen möglicherweise nicht bekannt vor. Einige Registrierungsstellen blenden die tatsächliche E-Mail-Adresse aus, die bei der Registrierung der Domäne angegeben wurde.
+    Durch das Auswählen von **Send Code via Email** (Code per E-Mail senden) wird an den registrierten Kontakt Ihrer Domäne eine E-Mail gesendet. Kopieren Sie nach dem Empfang der E-Mail den Code, und geben Sie diesen in das Feld **Type your verification code here** (Geben Sie Ihren Prüfcode hier ein) ein. Stimmt der Prüfcode überein, wird die Domäne zu Ihrem Mandanten hinzugefügt. Die angezeigte E-Mail kommt Ihnen möglicherweise nicht bekannt vor. Einige Registrierungsstellen verbergen die reale E-Mail-Adresse. Ferner kann die E-Mail-Adresse von der abweichen, die bei der Registrierung der Domäne zur Verfügung gestellt wurde.
 
-   ![Screenshot von Office 365 Admin Center: Domäne überprüfen](./media/domain-custom-verify.png)
+   ![Screenshot von Microsoft 365 Admin Center: Domäne überprüfen](./media/domain-custom-verify.png)
 
    > [!NOTE]
    > Einzelheiten zur Überprüfung von TXT-Datensätzen finden Sie unter [Erstellen von DNS-Datensätzen bei jedem DNS-Hostinganbieter für Office 365](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).
@@ -122,7 +123,7 @@ Wie vorstehend erwähnt, können Sie eine benutzerdefinierte Domäne über das V
 
 Es gibt zwei verschiedene Portale, die Sie verwenden können:
 - Das Intune-Dashboard in Azure ([portal.azure.com](https://portal.azure.com)), auf dem Sie die [Funktionen von Intune](what-is-intune.md) erkunden können. In der Regel arbeiten Sie auf dem Intune-Dashboard.
-- Das Office 365 Admin Center ([portal.office.com](https://portal.office.com)), in dem Sie Benutzer hinzufügen und verwalten können, wenn Sie dazu nicht Azure Active Directory verwenden. Sie können auch andere Aspekte Ihres Kontos verwalten, einschließlich Abrechnung und Support.
+- Das Microsoft 365 Admin Center ([admin.microsoft.com](https://admin.microsoft.com)) ist der Ort, an dem Sie Benutzer hinzufügen und verwalten können, wenn Sie dazu nicht Azure Active Directory verwenden. Sie können auch andere Aspekte Ihres Kontos verwalten, einschließlich Abrechnung und Support.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
