@@ -389,8 +389,6 @@ items:
         href: app-based-conditional-access-intune-create.md
       - name: ADAL und Intune
         href: app-modern-authentication-block.md
-      - name: Überwachen der Konformität für bedingten Zugriff
-        href: conditional-access-exchange-monitor.md
       - name: Integrieren von Jamf Pro in Intune zu Konformitätszwecken
         href: conditional-access-integrate-jamf.md
       - name: Erzwingen von Konformität auf mit Jamf Pro verwalteten Macs
@@ -947,9 +945,9 @@ items:
       href: data-outside-protect.md
     - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
       href: data-leak-prevention.md
-ms.openlocfilehash: f342d2ce12fb45db49cf06263807ed4a155fba55
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: d273d9c300f49a2d78f8b9ed62031497b06a0060
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394679"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514421"
