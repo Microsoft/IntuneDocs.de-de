@@ -4,6 +4,7 @@ description: 'Schnellstart: Erstellen eines Benutzers in Intune'
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 10/30/2018
 ms.author: erikje
@@ -11,14 +12,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: b5653c67766a3312cf7ce2872e8b0cd4301b0e8b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189488"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57991084"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Schnellstart: Erstellen eines Benutzers und Zuweisen einer Lizenz zu diesem Benutzer
+# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Schnellstart: Erstellen eines Benutzers und Zuweisen einer Lizenz
 
 In diesem Schnellstart erfahren Sie, wie Sie einen Benutzer erstellen und diesem anschließend eine Lizenz zuweisen können. Wenn Sie Intune verwenden, muss jede Person, die Zugriff auf Unternehmensdaten haben soll, über ein Benutzerkonto verfügen. Intune-Administratoren können später festlegen, dass diese Benutzer die Zugriffssteuerung verwalten sollen.
 
@@ -45,9 +47,9 @@ Benutzer benötigen ein Benutzerkonto, um sich für die Intune-Geräteverwaltung
 
 ## <a name="assign-a-license-to-the-user"></a>Zuweisen einer Benutzerlizenz
 
-Nachdem Sie einen Benutzer erstellt haben, müssen Sie diesem über das [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) eine Intune-Lizenz zuweisen. Wenn ein Benutzer keine Lizenz hat, kann er sein Gerät auch nicht bei Intune registrieren. 
+Nachdem Sie einen Benutzer erstellt haben, müssen Sie diesem über das [Microsoft 365 Admin Center](http://go.microsoft.com/fwlink/p/?LinkId=698854) eine Intune-Lizenz zuweisen. Wenn ein Benutzer keine Lizenz hat, kann er sein Gerät auch nicht bei Intune registrieren. 
 
-1. Melden Sie sich im [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) mit den gleichen Anmeldeinformationen an, die Sie auch zur Anmeldung in Intune verwendet haben.
+1. Melden Sie sich im [Microsoft 365 Admin Center](http://go.microsoft.com/fwlink/p/?LinkId=698854) mit den gleichen Anmeldeinformationen an, die Sie auch zur Anmeldung in Intune verwendet haben.
 2. Klicken Sie auf **Benutzer** > **Aktive Benutzer**, und wählen Sie den Benutzer aus, den Sie soeben erstellt haben.
 3. Klicken Sie neben **Produktlizenzen** auf **Bearbeiten**.
 4. Wählen Sie unter **Standort** einen Standort für den Benutzer aus.
@@ -61,7 +63,7 @@ Für den neuen aktiven Intune-Benutzer wird jetzt angezeigt, dass er eine **Intu
 
 ## <a name="clean-up-resources"></a>Bereinigen der Ressourcen
 
-Wenn Sie diesen Benutzer nicht mehr benötigen, können Sie diesen löschen, indem Sie zum [Office 365-Portal](http://go.microsoft.com/fwlink/p/?LinkId=698854) navigieren und auf **Benutzer** > **Aktive Benutzer** klicken, den *Benutzer aus der Liste auswählen*, und dann auf **Benutzer löschen** > **Benutzer löschen** > **Änderungen bestätigen** > **Schließen** klicken.
+Wenn Sie diesen Benutzer nicht mehr benötigen, können Sie diesen löschen, indem Sie zum [Microsoft 365 Admin Center](http://go.microsoft.com/fwlink/p/?LinkId=698854) navigieren und auf **Benutzer** > **Aktive Benutzer**klicken, den *Benutzer aus der Liste auswählen*, und dann auf **Benutzer löschen** > **Benutzer löschen** > **Änderungen bestätigen** > **Schließen** klicken.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
