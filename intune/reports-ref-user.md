@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ccd9a14c29db5039ce0173d0c09fd3d2851755f3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4ab0674304f1e74c8bf2ad1aeecd419575484e5f
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566249"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358169"
 ---
 # <a name="reference-for-user-entity"></a>Referenz für die Benutzerentität
 
@@ -40,13 +40,10 @@ Die Entitätssammlung **Benutzer** enthält Benutzerdaten. Zu diesen Datensätze
 | UserKey |Eindeutiger Bezeichner des Benutzers im Data Warehouse – Ersatzschlüssel |123 |
 | UserId |Eindeutiger Bezeichner des Benutzers – Ähnlich wie UserKey, ist jedoch ein natürlicher Schlüssel |b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail |E-Mail-Adresse des Benutzers |John@constoso.com |
-| UPN | Benutzerprinzipalname des Benutzers | John@constoso.com |
+| userPrincipalName | Benutzerprinzipalname des Benutzers | John@constoso.com |
 | DisplayName |Anzeigename des Benutzers |John |
 | IntuneLicensed |Gibt an, ob dieser Benutzer über Intune lizenziert ist oder nicht. |Wahr/falsch |
 | isDeleted | Gibt an, ob alle Lizenzen des Benutzers abgelaufen sind und ob der Benutzer daher aus Intune entfernt wurde. Dieses Flag wird für einen einzelnen Datensatz nicht geändert. Stattdessen wird ein neuer Datensatz für einen neuen Benutzerzustand erstellt. |Wahr/falsch |
-| StartDateInclusiveUTC |Bei „IsDeleted = FALSE“ gibt dieser DateTime-Wert in UTC an, wann dem Benutzer eine Lizenz zugewiesen wurde und ab wann er in Intune vorhanden war. Bei „IsDeleted = TRUE“ gibt dieser DateTime-Wert in UTC an, wann die Lizenz des Benutzers abgelaufen ist und wann der Benutzer aus Intune entfernt wurde. |23.11.2016 12:00:00 Uhr |
-| EndDateExclusiveUTC |Bei „IsDeleted = FALSE“ gibt dieser DateTime-Wert in UTC an, wann die Lizenz des Benutzers abgelaufen ist und wann der Benutzer aus Intune entfernt wurde. Die Lizenz ist irgendwann am Vortag abgelaufen. Bei „IsDeleted = TRUE“ gibt dieser DateTime-Wert in UTC an, wann der Benutzer eine neue Lizenz erhalten hat und in Intune neu erstellt wurde.  |23.11.2016 12:00:00 Uhr |
-| IsCurrent |Gibt an, ob dieser Datensatz den aktuellen Zustand des Benutzers darstellt. Für einen einzelnen Benutzer können mehrere Datensätze vorhanden sein, aber nur einer davon stellt den aktuellen Zustand dar.  |Wahr/falsch |
 | RowLastModifiedDateTimeUTC |Datum und Uhrzeit in UTC, als der Datensatz im Data Warehouse zuletzt geändert wurde  |23.11.2016 12:00:00 Uhr |
 
 ## <a name="next-steps"></a>Nächste Schritte

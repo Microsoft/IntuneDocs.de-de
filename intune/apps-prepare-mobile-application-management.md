@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 03/19/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1e3e510cf1ef7e13e653f7793433045b0610ef
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f3addd79b20c685c5643a2b99fb7120e958cdecb
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565470"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394880"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien
 
@@ -87,6 +87,7 @@ In dieser Tabelle sind die Einstellungen aufgeführt, die Sie für das App SDK u
 |App Übertragung von Daten an andere Apps erlauben|X|X|
 |App Empfang von Daten aus anderen Apps erlauben|X|X|
 |Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken|X|X|
+|Geben Sie die Anzahl von Zeichen, die möglicherweise ausgeschnitten bzw. kopiert wird aus einer verwalteten Anwendung|X|X|
 |Einfache PIN für Zugriff erforderlich|X|X|
 |Angeben der Anzahl von Versuchen vor dem Zurücksetzen der PIN|X|X|
 |Fingerabdruck anstelle von PIN zulassen|X|X|

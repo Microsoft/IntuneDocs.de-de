@@ -1,11 +1,11 @@
 ---
-title: Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen | Microsoft-Dokumentation
-description: Verwenden der Fehler- und Statuscodes von Microsoft-Intune, die Ihnen beim Beheben von Problemen mit dem Zugriff auf Ressourcen helfen.
+title: Fehle- und Statuscodes in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Eine Liste der Fehler angezeigt, Statuscode, Beschreibungen und Lösungen bei Verwendung der Verwaltung mobiler Geräte verwaltete Geräte, die Zugriff auf Unternehmensressourcen zugreifen, Fehler auf iOS-Geräten und OMA-Antwort-Fehler in Microsoft Intune abrufen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/08/2018
+ms.date: 03/20/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebb311eab93abd66f6a23e58737573622b68f3e8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461497"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330477"
 ---
-# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen in Microsoft Intune
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Allgemeine Fehlercodes und Beschreibungen in Microsoft Intune
 
-Verwenden Sie die Fehle- und Statuscodes in diesem Thema zur Problembehandlung, wenn von einer Microsoft Intune-Aktion ein Fehlercode zurückgegeben wurde.
+In diesem Artikel werden häufige Fehler, Statuscodes, Beschreibungen und mögliche Lösungen aufgeführt, beim Zugriff auf Organisationsressourcen. Verwenden Sie diese Informationen, um Probleme beheben können, wenn es sich bei Microsoft Intune verwendet.
 
-Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [How to get support for Microsoft Intune](get-support.md) (Anfordern von Support für Microsoft Intune) weitere Möglichkeiten, Hilfe zu erhalten.
+Wenn Sie Hilfe benötigen, finden Sie unter [erhalten von Support für Microsoft Intune](get-support.md).
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>Statuscodes für MDM-verwaltete Windows-Geräte
 
@@ -385,5 +385,6 @@ Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie 
 |-2016345912|0x87D100C8|Der SyncML-Befehl wurde erfolgreich abgeschlossen.|
 |-2016346011|0x87D10065|Der angegebene SyncML-Befehl wird ausgeführt, wurde aber noch nicht abgeschlossen.|
 
-### <a name="next-steps"></a>Nächste Schritte
-Wenn diese Informationen zur Problembehandlung für Sie nicht hilfreich waren, wenden Sie sich wie in [Anfordern von Support für Microsoft Intune](get-support.md) beschrieben an den Microsoft Support.
+## <a name="next-steps"></a>Nächste Schritte
+
+Wenden Sie sich an Microsoft Support, um [erhalten von Support für Microsoft Intune](get-support.md).
