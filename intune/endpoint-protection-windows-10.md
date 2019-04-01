@@ -2,8 +2,8 @@
 title: 'Schutzeinstellungen für Windows 10-Geräte in Microsoft Intune: Azure | Microsoft-Dokumentation'
 description: Verwenden oder konfigurieren Sie Einstellungen zu Endpoint Protection auf Windows 10-Geräten, um das Feature Windows Defender zu aktivieren, das Application Guard, Firewall, SmartScreen, Verschlüsselung und BitLocker, Exploit Guard, Anwendungssteuerung, Security Center und Sicherheit auf lokalen Geräten in Microsoft Intune enthält.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 03/04/2019
 ms.topic: reference
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbbdbbb92c033a99f1c439271c745c1abfbcd562
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 4c2df888e146a7f240530e5cbc6628dbce34cb61
+ms.sourcegitcommit: b0b1030017e741d92c508130447a8242d9ad7a51
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566691"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58342996"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Einstellungen für Windows 10 (und höher), um Geräte zu schützen, die Intune verwenden.
 
@@ -47,7 +47,7 @@ Bei der Verwendung von Microsoft Edge schützt Windows Defender Application Guar
 
 Application Guard ist nur für Windows 10-Geräte (64-Bit) verfügbar. Mithilfe dieses Profils wird eine Win32-Komponente zur Aktivierung von Application Guard installiert.
 
-- **Application Guard**: Legen Sie diese Einstellung auf **Aktiviert für Edge** fest, um dieses Feature zu aktivieren. Dadurch werden nicht vertrauenswürdige Websites in einem virtualisierten Hyper-V-Browsercontainer geöffnet. **Nicht konfiguriert** (Standardeinstellung) bedeutet, dass jede Website (genehmigt und nicht genehmigt) auf dem Gerät geöffnet wird.
+- **Application Guard**: Legen Sie diese Einstellung auf **Aktiviert für Edge** fest, um dieses Feature zu aktivieren. Dadurch werden nicht vertrauenswürdige Websites in einem virtualisierten Hyper-V-Browsercontainer geöffnet. **Nicht konfiguriert** (Standard) bedeutet, dass es sich bei einem beliebigen Standort (vertrauenswürdige und nicht vertrauenswürdige) auf dem Gerät öffnet.
 - **Verhalten der Zwischenablage**: Legen Sie zulässige Aktionen für das Kopieren und Einfügen zwischen dem lokalen Computer und dem virtuellen Browser von Application Guard fest.
 - **Externer Inhalt auf Unternehmenswebsites:** Legen Sie diese Einstellung auf **Blockieren** fest, damit keine Inhalte von nicht genehmigten Websites geladen werden. **Nicht konfiguriert** (Standardeinstellung) bedeutet, dass Websites, bei denen es sich nicht um Unternehmenswebsites handelt, auf dem Gerät geöffnet werden können.
 - **Aus virtuellem Browser drucken**: Wählen Sie **Zulassen** aus, damit PDF-, XPS-, lokale und Netzwerkdrucker Inhalte aus dem virtuellem Browser drucken können. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, werden alle Druckfunktionen deaktiviert.
@@ -87,8 +87,7 @@ Diese Einstellungen können auf alle Netzwerktypen angewendet werden.
 
 Diese Einstellungen gelten für bestimmte Netzwerktypen, einschließlich **Domänennetzwerk (Arbeitsplatz)**, **Privates Netzwerk (sichtbar)** und **Öffentliches Netzwerk (nicht sichtbar)**.
 
-#### <a name="general-settings"></a>Allgemeine Einstellungen
-
+#### <a name="general-settings"></a>Allgemeine Einstellungen  
 - **Windows Defender Firewall**: Legen Sie diese Einstellung auf **Aktivieren** fest, um die Firewall und die erweiterte Sicherheit zu aktivieren. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird sämtlicher Netzwerkdatenverkehr unabhängig von anderen Richtlinieneinstellungen zugelassen.
 - **Geschützter Modus:** Legen Sie diese Einstellung auf **Blockieren** fest, damit die Firewall nicht im geschützten Modus ausgeführt werden kann. Wenn Sie den geschützten Modus blockieren, ermöglichen Sie ebenfalls das Blockieren von **durch IPsec gesicherten Paketausnahmen**. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird die Firewall im geschützten Modus ausgeführt. Dadurch werden Antworten auf Suchanforderungen verhindert.
 - **Geschützt:** Legen Sie diese Einstellung auf **Blockieren** fest, um dieses Feature zu deaktivieren. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird diese Einstellung aktiviert. Wenn diese Einstellung und Windows Defender Firewall aktiviert sind, wird sämtlicher eingehender Datenverkehr unabhängig von anderen Richtlinieneinstellungen blockiert.
@@ -294,11 +293,11 @@ Blockieren Sie diese Optionen, um Bedrohungen durch E-Mails zu verhindern:
 
 > [!IMPORTANT]
 > Um ordnungsgemäße Installation und Ausführung von LOB-Win32-apps zu ermöglichen, sollten Anti-malwareeinstellungen ausgeschlossen, dass die folgenden Verzeichnisse überprüft wird:<p>
-> Für Clientcomputer:<br>
+> **Auf X64 Clientcomputern**:<br>
 > *C:\Programme\Microsoft Dateien (x86) \Microsoft Intune Verwaltung Extension\Content*<br>
 > *C:\windows\IMECache*
 >  
-> Für Clientcomputer:<br>
+> **Auf X86 Clientcomputern**:<br>
 > *C:\Program Files\Microsoft Intune Verwaltung Extension\Content*<br>
 > *C:\windows\IMECache*
 
@@ -310,13 +309,13 @@ Schützen Sie wichtige Daten vor schädlichen Apps und Bedrohungen, z.B. vor Ran
 
 ### <a name="network-filtering"></a>Netzwerkfilterung
 
-- **Netzwerkschutz**: ausgehende Verbindungen von beliebigen Apps schützt, um die IP-Adressen mit schlechtem Ruf oder Domänen. Ziel ist es, die Endbenutzer aus apps mit Zugriff auf Phishing-Angriffen, Exploit-hosting von Websites und bösartige Inhalte im Internet zu schützen. Dabei wird auch verhindert, dass Browser von Drittanbietern Verbindungen zu gefährlichen Websites herstellen.
+- **Netzwerkschutz**: ausgehende Verbindungen von beliebigen Apps schützt, um die IP-Adressen mit schlechtem Ruf oder Domänen. Ziel ist es, die Endbenutzer aus apps mit Zugriff auf Phishing-Angriffen, Exploit-hosting von Websites und bösartige Inhalte im Internet zu schützen. Es wird außerdem verhindert, dass Browsern von Drittanbietern Herstellen einer Verbindung mit gefährliche Sites.
 
   Folgende Optionen sind verfügbar:
 
-  - Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird dieses Feature deaktiviert. Benutzer und apps werden nicht blockiert, eine Verbindung mit gefährliche Domänen herstellen. Diese Aktivität wird im Windows Defender Security Center angezeigt.
-  - **Aktivieren Sie** Netzwerkzugriffsschutz, und die Benutzer blockiert und apps eine Verbindung herstellen, um gefährliche Domänen aktiviert. Diese Aktivität wird im Windows Defender Security Center angezeigt.
-  - **Nur überwachen**: Benutzer und apps werden nicht blockiert, eine Verbindung mit gefährliche Domänen herstellen. Diese Aktivität wird im Windows Defender Security Center angezeigt.
+  - Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird dieses Feature deaktiviert. Benutzer und apps werden nicht blockiert, eine Verbindung mit gefährliche Domänen herstellen. Administratoren können nicht auf diese Aktivität in Windows Defender Security Center anzeigen.
+  - **Aktivieren Sie** Netzwerkzugriffsschutz, und die Benutzer blockiert und apps eine Verbindung herstellen, um gefährliche Domänen aktiviert. Administratoren können diese Aktivität in Windows Defender Security Center anzeigen.
+  - **Nur überwachen**: Benutzer und apps werden nicht blockiert, eine Verbindung mit gefährliche Domänen herstellen. Administratoren können diese Aktivität in Windows Defender Security Center anzeigen.
 
   [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 

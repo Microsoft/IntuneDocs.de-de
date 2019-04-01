@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fa6a68d1b5a8d2ccf87587ecab36c7807770d48
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 0a59c40a5f1095e832f84c4b21d553e3c5f11ed7
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565348"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330418"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>macOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
@@ -46,7 +46,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
   Diese Funktion gilt für:  
   - macOS 10.13 und höher
 
-- **Zurückstellen von Softwareupdates (nur überwacht)**: bei Festlegung auf **nicht konfiguriert** (Standard), Softwareupdates angezeigt werden, auf dem Gerät wie Apple veröffentlicht. Z. B. wenn ein MacOS-Update von Apple an einem bestimmten Datum veröffentlicht ruft wird dann das Update auf natürliche Weise auf dem Gerät, um das Datum der Veröffentlichung.
+- **Zurückstellen von Softwareupdates**: bei Festlegung auf **nicht konfiguriert** (Standard), Softwareupdates angezeigt werden, auf dem Gerät wie Apple veröffentlicht. Z. B. wenn ein MacOS-Update von Apple an einem bestimmten Datum veröffentlicht ruft wird dann das Update auf natürliche Weise auf dem Gerät, um das Datum der Veröffentlichung. SEED-Build-Updates werden ohne Verzögerung zulässig.
 
   **Aktivieren Sie** lässt sich verzögern, wenn Softwareupdates auf Geräten, von 0 bis 90 Tage angezeigt werden. Diese Einstellung steuern nicht, wann Updates sind, oder werden nicht installiert. 
 

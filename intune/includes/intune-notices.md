@@ -1,23 +1,30 @@
 ---
-ms.openlocfilehash: dc86f2c22410236368753acd4dd3b66698037241
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+title: Includedatei
+description: Includedatei
+author: ErikjeMS
+ms.service: microsoft-intune
+ms.topic: include
+ms.date: 03/28/2019
+ms.author: erikje
+ms.custom: include file
+ms.openlocfilehash: 073115d33f9a4f22fe3706ef15860c2a8d8a68ee
+ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57736856"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "58675492"
 ---
-
 Diese Hinweise bieten wichtige Informationen, die Ihnen helfen kann für zukünftige Änderungen von Intune und Features vorbereiten. 
 
 ### <a name="change-in-enrollment-workflow-with-intune-company-portal-on-corporate-ios-devices-authenticating-with-setup-assistant----1927359---"></a>Ändern Sie im registrierungsworkflow mit Intune-Unternehmensportal auf unternehmenseigene iOS-Geräten, die die Authentifizierung mit Setup-Assistenten <!-- 1927359 -->
 Beim Setup mit besteht eine Anstehende Änderung der Workflow für die Registrierung von iOS-Geräte über eine Apple Unternehmens geräteregistrierungsmethoden – Apple Configurator, Apple Business Manager, Apple School Manager oder das Apple Device Enrollment Program (DEP), Assistent für die Authentifizierung. Diese Änderung gilt nur für Geräte mit benutzeraffinität registriert.
 
 #### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Wenn diese Änderung im ~~März~~ April eingeführt wird, werden Registrierungsprofile in Intune im Azure-Portal aktualisiert, sodass Sie angeben können, wie sich Geräte authentifizieren, und ob sie die Unternehmensportal-App erhalten. Es fallen ein verbesserter Workflow zum Registrieren von iOS-Geräte über die oben aufgeführten Methoden. Hinweis:
+Wenn diese Änderung im ~~März~~ April eingeführt wird, werden Registrierungsprofile in Intune im Azure-Portal aktualisiert, sodass Sie angeben können, wie sich Geräte authentifizieren, und ob sie die Unternehmensportal-App erhalten. Es fallen ein verbesserter Workflow zum Registrieren von iOS-Geräte über die oben aufgeführten Methoden. 
 
 - Wenn neue Geräte registrieren und Authentifizieren mit Setup-Assistent, Sie auswählen, ob die Unternehmensportal-app automatisch bereitgestellt werden. Endbenutzer wird nicht mehr auf dem Bildschirm "Gerät identifizieren" und der "Bestätigen, dass Ihr Gerät"-Bildschirm in der Registrierungsvorgang angezeigt.  
 - Auf Geräten, die bereits über den Setup-Assistenten über eine der Methoden für die Registrierung von Apple Gerät des Unternehmens registriert werden müssen Sie Maßnahmen ergreifen, wenn Sie den bedingten Zugriff aktivieren möchten. Sie müssen zum Konfigurieren einer app-Konfigurationsrichtlinie mit einer bestimmten XML-die Unternehmensportal-App bis hin zu diesen Geräten mithilfe von Push übertragen. Anweisungen hierzu sind im Blogbeitrag unter dem Link für zusätzliche Informationen. Wenn Sie die Unternehmensportal-App auf diese Weise mithilfe von Push übertragen möchten, sehen Endbenutzer nicht mehr dem Bildschirm "Gerät identifizieren" und der "Bestätigen, dass Ihr Gerät"-Bildschirm in den Registrierungsvorgang. 
-- Nachdem diese Änderung eingeführt wird, wenn Sie mit der Unternehmensportal-App bereitgestellt haben die app-Konfigurationsprofil erwähnt und Endbenutzer-Download, die Unternehmensportal-app aus der App zu speichern, sie müssen sich anmelden können, aber sie müssen eine Fehlermeldung erhalten. Sie wird nicht die app für den bedingten Zugriff verwenden können. 
+- Nachdem diese Änderung eingeführt wird, wenn Sie mit der Unternehmensportal-App bereitgestellt haben die app-Konfigurationsprofil erwähnt und Endbenutzer-Download, die Unternehmensportal-app aus der App zu speichern, können sie sich anmelden, aber sie müssen eine Fehlermeldung erhalten. Sie wird nicht die app für den bedingten Zugriff verwenden können. 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
 Wenn Sie den geänderten Workflow verwenden möchten, müssen Sie Ihre Endbenutzer-Leitfaden, um anzugeben, dass aktualisieren möchten:
@@ -32,52 +39,6 @@ Finden Sie unsere Unterstützung Blogbeitrag unter dem Link für zusätzliche In
 #### <a name="additional-information"></a>Weitere Informationen 
 [https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
 
-
-### <a name="company-portal-changes-for-ios-122-enrollment-in-intune"></a>Unternehmens-Portal-Änderungen für die iOS 12.2-Registrierung in Intune
-In MC172534 wurde mitgeteilt, dass Apple einige Änderungen für die Registrierung von iOS-Geräten bei MDM-Diensten (mobile Geräteverwaltung) angekündigt hat. In der Veröffentlichung von iOS in der März-2019 stattfindende als auch für alle zukünftigen iOS-Versionen werden wahrscheinlich die Änderung angezeigt. Machen wir einige Updates in der Unternehmensportal-App, um Apple Änderungen widerzuspiegeln. 
- 
-#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Wenn Ihre Endbenutzer ihre Geräte für iOS 12.2 und höher aktualisieren, wissen Sie, dass ein geänderter Workflow vorhanden ist und sie zusätzliche Schritte, um vollständige Registrierung bei Intune ausführen müssen. Nach dem März-Update zu Intune ist hier was sie tun müssen:  
-
-- Registrierung in der Unternehmensportal-app ein verwaltungsprofil herunterladen
-- Wechseln Sie zu Einstellungen > Allgemein > Profile und suchen Sie nach einer roten signalbenachrichtigung
-- Wählen Sie das richtige Profil aus, und klicken Sie auf Installieren
-- Zurück zu der Unternehmensportal-App, um die Registrierung abschließen
-
-Klicken Sie auf zusätzliche Informationen, ausführliche Informationen zu den Registrierungsvorgang.
-
-Es sei denn, sie die Registrierung aufgehoben können und benötigen eine neue Registrierung, Geräte, die bereits registriert und ein Upgrade auf iOS 12.2 sind und höher sollten nicht beeinträchtigt werden. Die Benutzeroberfläche für die Registrierung von Geräten mit iOS 12.1 und früheren Versionen ist von diesem neuen Release von Apple nicht betroffen. Geräte, die durch mindestens einen Apple Registrierung beim Unternehmen Methoden (Device Enrollment Program, Apple School Manager oder Apple-Geschäftsleiter) registriert sind nicht betroffen.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wie kann ich mich auf die Änderung vorbereiten?
-Sie sollten ein Upgrade für Ihre Dokumentation und Endbenutzeranleitung planen. Sie sollten auch Ihre Helpdesk-Mitarbeiter über diese Änderungen informieren. Wir halten Sie die informiert über unsere neue Seite neuerungen bei der diese Änderung online geschaltet wird. 
-
-Wenn Sie die Unternehmensportal-App-Änderungen nutzen wir einführen möchten, stellen Sie Ihre Endbenutzer, aktualisieren Sie ihr Gerät auf die neue iOS-Version, nachdem das März-Update im Intune-Dienst beim Unternehmensportal-app-Version 3.9.0 zu. wird veröffentlicht.
-
-Klicken Sie auf zusätzliche Informationen für einen Support-Blogbeitrag mit Vorschau Screenshots der Unternehmensportal-App-Änderungen ein.
-
-Weitere Informationen [https://aka.ms/CP_changes_iOS12](https://aka.ms/CP_changes_iOS12)
-
-### <a name="plan-for-change-workflow-changes-for-ios-12-enrollment-in-intune"></a>Planen der Änderung: workflowänderungen für iOS-12-Registrierung in Intune
-Apple hat einige Änderungen für die Registrierung von iOS-Geräten bei MDM-Diensten (mobile Geräteverwaltung) angekündigt. Die Änderungen werden vermutlich im iOS-Release für den Frühling 2019 und in den weiteren, zukünftigen iOS-Releases veröffentlicht.
-
-#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Wenn Ihre Benutzer im Frühling ein Upgrade für ihre Geräte auf diese neue Version von iOS 12 durchführen, sollten Sie wissen, dass der Workflow geändert wurde und Ihre Benutzer zusätzliche Schritte vornehmen müssen, um die Registrierung bei Intune abzuschließen. Wenn Apple diese Änderungen eingeführt werden, müssen sich Endbenutzer auf:
-
-- Registrierung in der Unternehmensportal-app ein verwaltungsprofil herunterladen
-- Wechseln Sie zu Einstellungen > Allgemein > Profile
-- Wählen Sie das richtige Profil aus, und klicken Sie auf Installieren
-- Zurück zu der Unternehmensportal-App, um die Registrierung abschließen 
-
-Geräte, die bereits registriert sind und für die ein Upgrade auf das neue iOS-Release durchgeführt wird, sollten von dieser Änderung nicht betroffen sein. Eine Ausnahme stellen Geräte dar, deren Registrierung aufgehoben wurde, wodurch eine neue Registrierung erforderlich wird.
-
-Die Benutzeroberfläche für die Registrierung von Geräten mit iOS 12.1 und früheren Versionen ist von diesem neuen Release von Apple nicht betroffen.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wie kann ich mich auf die Änderung vorbereiten?
-Sie sollten ein Upgrade für Ihre Dokumentation und Endbenutzeranleitung planen. Sie sollten auch Ihre Helpdesk-Mitarbeiter über diese Änderungen informieren. Weitere Informationen erhalten Sie über das Nachrichtencenter und die Seite zu den Neuerungen, sobald diese Änderung eingeführt wird.
-
-#### <a name="additional-information"></a>Weitere Informationen
-[Blogbeitrag mit Screenshots und Videos von der erwarteten Registrierungsvorgang unterstützen](https://aka.ms/iOS_enrollment_changes).
-
 ### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Geplante Änderung: Update der Benutzeroberfläche für die Intune-Unternehmensportal-App für iOS
 Wir freuen uns, Ihnen mitteilen zu können, dass Intune in Kürze ein wichtiges Update für die iOS-Unternehmensportal-App veröffentlichen wird. Das Update wird ein visuelles Neugestaltung der Homepage mit erweiterten Filtern und schnellerem Zugriff auf Apps und Bücher beinhalten.
 
@@ -88,35 +49,13 @@ Dieses Update für die Benutzeroberfläche bietet weiterhin die aktuellen iOS-Un
 - Möglichkeit, E-Books zu suchen
 - Suchverlauf für apps und -e-Books
 
-Wenn Sie am Apple TestFlight-Programm teilnehmen, werden Sie über die Vorabversion der aktualisierten iOS-Unternehmensportal-App von Intune informiert, sobald diese verfügbar ist. Wenn Sie nicht Teil des Apple TestFlight-Programms sind, können Sie sich immer noch registrieren. Durch eine Registrierung können Sie die aktualisierte Unternehmensportal-App verwenden, bevor sie Ihren Endbenutzern zur Verfügung steht. Sie müssen auch das Intune-Team direkt Feedback bereitstellen können.  
+Wenn Sie am Apple TestFlight-Programm teilnehmen, werden Sie über die Vorabversion der aktualisierten iOS-Unternehmensportal-App von Intune informiert, sobald diese verfügbar ist. Wenn Sie nicht Teil des Apple TestFlight-Programms sind, können Sie sich immer noch registrieren. Durch eine Registrierung können Sie die aktualisierte Unternehmensportal-App verwenden, bevor sie Ihren Endbenutzern zur Verfügung steht. Sie können auch direkt dem Intune-Team Feedback bereitstellen.  
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wie kann ich mich auf die Änderung vorbereiten?
 Sie müssen keine Maßnahmen ergreifen. Diese Änderungen werden in einem kommenden Release der iOS-CP-App veröffentlicht. 
 
 #### <a name="additional-information"></a>Weitere Informationen
 [https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
-
-
-### <a name="reminder-removal-of-existing-exchange-online-to-intune-connectors----3105122---"></a>Erinnerung: Entfernen der vorhandenen Exchange Online, um Intune-connectors <!-- 3105122 -->
-In MC165575 haben wir bekannt gegeben, dass wir die Exchange Online, um Intune "Service to Service"-Connector-Funktionalität in einem zukünftigen Update entfernt werden würde. Mit dem Update vom Februar an der Intune-Dienst werden deaktivieren wir die Schaltfläche, um neue Connectors einzurichten. Wir planen, entfernen Sie alle vorhandenen Exchange Online, um Intune-Connectors im März 2019.
- 
-#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Sie erhalten diese Nachricht, da Sie unseren Unterlagen zufolge die „Dienst-zu-Dienst“-Connectorfunktionalität in Ihrer Umgebung verwenden. Der Service to Service Connector unterstützt die Intune-Verwaltung von Exchange Active Sync Only-Geräten für Exchange Online und nicht die lokale Infrastruktur. Dieser Connector scheint aufgrund der Art, wie er in der Konsole angezeigt wird, für den bedingten Zugriff erforderlich zu sein, ist es in der Praxis jedoch nicht. Sie können diesen Connector bereits verwenden, um die Verwendung von Exchange Online zu verstehen, bevor Sie den bedingten Zugriff anwenden. Diese Informationen werden von Microsoft 365 Admin Center bereits bereitgestellt. Hier finden Sie Nutzungsberichte enthält, für Exchange Online, einschließlich der app ein, die für die zwischen 7 und 180 Tagen verwendet wird. Weitere Informationen finden Sie unter [Office 365-Berichte im Admin Center – Nutzung der-e-Mail-apps](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage?view=o365-worldwide).  
- 
-Wenn Sie diesen Connector in Ihrer Umgebung verwenden, können Sie nach dem Deaktivieren der Connectors im Februar keine Exchange Active Sync Only-Geräte in Intune mehr überwachen oder zurücksetzen. Während dieser Änderung werden keine Auswirkungen für Ihre Benutzer erwartet.
- 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wie kann ich mich auf die Änderung vorbereiten?
-Wenn Sie den „Dienst-zu-Dienst“-Connector eingerichtet haben und über Exchange Active Sync Only-Geräte verfügen, wechseln Sie zu anderen Methoden zum Verwalten Ihrer Geräte. Hierzu stehen Ihnen folgende Optionen zur Verfügung:
-
-- Registrieren von Geräten in der mobilen Geräteverwaltung (Mobile Device Management, MDM) 
-- Verwenden von App-Schutzrichtlinien zum Verwalten Ihrer Geräte 
-- Verwenden Sie Exchange-Steuerelemente wie [hier](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online) in der Dokumentation beschrieben. 
-
-#### <a name="additional-information"></a>Weitere Informationen  
-https://docs.microsoft.com/intune/exchange-service-connector-configure
-
-
-
 
 ### <a name="check-your-delay-visibility-of-software-updates-setting-in-intune"></a>Überprüfen Sie die Einstellung "Verzögerung der Sichtbarkeit von Softwareupdates" in Intune 
 
@@ -140,3 +79,38 @@ Finden Sie unsere Unterstützung Blogbeitrag unter zusätzliche Informationen We
 
 #### <a name="additional-information"></a>Weitere Informationen 
 [https://aka.ms/Delay_visibility_setting_iOS](https://aka.ms/Delay_visibility_setting_iOS)
+
+### <a name="plan-for-change-upcoming-fix-for-windows-10-email-profiles-in-intune---3904031--"></a>Planen der Änderung: bevorstehenden Fix für Windows 10-e-Mail-Profile in Intune <!--3904031-->
+Wir aktualisieren die Möglichkeit, die Intune-e-Mail, die Profile für Windows 10 in der April zu, auf die Intune-Dienst ebenfalls einen Fehler zu beheben schreibt aktualisieren, stellen Sie sicher, dass Ihre e-Mail-Profile, die in zukünftigen Versionen von Windows 10 funktioniert weiterhin. Es sind Aktionen müssen Sie nach Abschluss dieses Updates bereitgestellt wird.
+
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
+Diese Änderung wirkt sich auf Sie bei Verwendung von Windows 10-e-Mail-Profilen mit
+- Der native E-Mail-Client unter Windows 10-Desktops oder
+- Der Outlook-e-Mail-Client auf Windows 10 Mobile
+
+Dies wirkt sich auf beide Kunden Intune Standalone und hybrider Verwaltung mobiler Geräte (MDM) aus.
+
+Nachdem das Update von April bereitgestellt wird, müssen Sie diese Profile in der Intune-Verwaltungskonsole (in der Configuration Manager-Verwaltungskonsole, bei Verwendung einer MDM-hybridlösung) neu zu erstellen.
+
+Wenn Sie keine Maßnahmen ergreifen, ist hier für die Profile erstellt wurden, vor dem Update von April angezeigt:
+
+- Vorhandene e-Mail-Profile werden in den Status "Fehler" in der Intune-Verwaltungskonsole oder der Configuration Manager-Verwaltungskonsole angezeigt, aber Benutzer haben weiterhin Zugriff auf e-Mail-Adresse. Allerdings nach ein späteren Update von Windows bereitgestellt wird, funktioniert diese Profile nicht. Benutzern mit diesen Profilen Geräte verlieren den Zugriff auf e-Mails.
+- Änderungen, die an diese Profile nach April in nicht angezeigt wird, als Ziel festgelegten Geräten.
+- Selektives Zurücksetzen funktioniert nicht für das Entfernen dieser Profile, auch nachdem die Lösung im April eingeführt wird.
+
+Wenn Sie Maßnahmen ergreifen und die e-Mail-Profile neu erstellen, müssen Endbenutzer Schritte ähneln denen durchlaufen zu lassen, wenn zum ersten Mal eine e-Mail-Profil bereitgestellt wird. Ihre e-Mails werden synchronisiert, bis sie das Update akzeptieren, das das neue Profil gilt blockiert.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
+Sie müssen Maßnahmen ergreifen, nachdem die Lösung mit dem Update von April eingeführt wird. Wir erreichen Sie Sie über das Nachrichtencenter, wenn diese Änderung online geschaltet wird, damit Sie beginnen können, um Ihre Profile in Intune neu zu erstellen.
+
+Wenn Sie Windows 10-e-Mail-Profile in Intune verwenden, müssen Sie die folgenden Schritte ausführen:
+
+1. Vorhandene Win 10-Profil-Einstellungen erfassen
+2. Aufheben der Zuweisung bzw. löschen Sie vorhandene Profile
+3. Neue Profile, die mit den erfassten Einstellungen erstellen und die neuen Profile denselben Gruppen zuweisen
+
+Sie müssen Ihre Endbenutzer zu benachrichtigen, und lassen Ihren Helpdesk über diese Änderung kennen. Finden Sie im Blogbeitrag "Support" auf zusätzliche Informationen Fehlerdetails und Anweisungen für diese Profile neu zu erstellen.
+
+#### <a name="additional-information"></a>Weitere Informationen
+https://aka.ms/Win10EmailProfiles
+

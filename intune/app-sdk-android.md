@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a7ccc2da5fd99c3c72c8c9beb765f292e896eee
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
-ms.translationtype: HT
+ms.openlocfilehash: 965dcfbb711eac1b38977e023d1975f4dc0e8b81
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069321"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514496"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Entwicklerhandbuch zum Microsoft Intune App SDK für Android
 
@@ -832,7 +832,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     > [!NOTE]
     > Stellen Sie sicher, dass Ihre app nutzt die `resourceId` und `aadId` Parameter zu übergeben, um `acquireToken()` , damit das richtige Token abgerufen wird.
 
-    ```
+    ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
         return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
@@ -1031,11 +1031,11 @@ Die `getComplianceStatus()` Methode gibt das Ergebnis des Versuchs des Complianc
 
 |Statuscode | Erläuterung |
 | -- | -- |
-| UNBEKANNT | Clientstatus ist unbekannt. Dies kann ein unerwartetes Fehlerursache hinweisen. Weitere Informationen kann in den Protokollen für die Unternehmensportal-App gefunden werden. |
+| UNBEKANNT | Status ist unbekannt. Dies kann ein unerwartetes Fehlerursache hinweisen. Weitere Informationen kann in den Protokollen für die Unternehmensportal-App gefunden werden. |
 | KONFORM | Compliance-Wiederherstellung erfolgreich war, und die app ist jetzt mit der Richtlinie konform. Die ADAL tokenabruf muss wiederholt werden. |
 | NOT_COMPLIANT | Fehler beim Beheben von Compliance.  Die app ist nicht kompatibel, und ADAL tokenabruf nicht wiederholt werden soll, bis die fehlerbedingung behoben wurde.  Zusätzliche Fehlerinformationen wird mit der MAMComplianceNotification gesendet. |
 | SERVICE_FAILURE | Fehler beim Abrufen von Compliance-Daten aus dem Intune Service. Weitere Informationen kann in den Protokollen für die Unternehmensportal-App gefunden werden. |
-| NETWORK_FAILURE | Fehler beim Herstellen von Verbindungen mit dem WMI-Namespace. Die app sollte die tokenabruf erneut versuchen, wenn die Netzwerkverbindung wiederhergestellt wird. |
+| NETWORK_FAILURE | Fehler bei der Verbindung mit der Intune-Service. Die app sollte die tokenabruf erneut versuchen, wenn die Netzwerkverbindung wiederhergestellt wird. |
 | CLIENT_ERROR | Der Versuch um Compliance-Gründen im Zusammenhang mit der Client Fehler zu beheben.  Beispielsweise wurde kein token oder falschen Benutzer. Zusätzliche Fehlerinformationen wird mit der MAMComplianceNotification gesendet. |
 | PENDING (AUSSTEHEND) | Fehler beim Wiederherstellen der Kompatibilität, da die Statusantwort nicht noch vom Dienst empfangen wurden, wenn das Zeitlimit überschritten wurde. Die app sollte die tokenabruf es später noch Mal versuchen. |
 | COMPANY_PORTAL_REQUIRED | Die Unternehmensportal-App muss auf dem Gerät in der Reihenfolge für die Kompatibilität wiederhergestellt werden, um erfolgreich installiert werden.  Wenn die Unternehmensportal-App bereits auf dem Gerät installiert ist, muss die app neu gestartet werden.  In diesem Fall wird ein Dialogfeld angezeigt, der Benutzer gefragt wird um die app neu starten. |
@@ -1633,7 +1633,7 @@ Wenn eine App mit mehreren Identitäten für die `WIPE_USER_DATA`-Benachrichtigu
 
 Eine App, die für `WIPE_USER_DATA` registriert wird, verfügt über keine Vorteile des Standardverhaltens des SDK für die selektive Zurücksetzung. Für Apps, die mehrere Identitäten haben können, kann dieser Verlust erheblicher sein, da die selektive Zurücksetzung nach MAM-Standard nur Dateien zurücksetzt, deren Identität das Ziel einer Zurücksetzung ist. Wenn eine App, die mehrere Identitäten haben kann, eine selektive Zurücksetzung nach MAM-Standard _**und**_ die Ausführung eigener Aktionen bei der Zurücksetzung wünscht, sollte sie für `WIPE_USER_AUXILIARY_DATA`-Benachrichtigungen registriert werden. Diese Benachrichtigung wird sofort vom SDK gesendet, bevor es die selektive Zurücksetzung nach MAM-Standard durchführt. Eine App darf niemals gleichzeitig für `WIPE_USER_DATA` und für `WIPE_USER_AUXILIARY_DATA` registriert sein.
 
-Die standardmäßige selektive Zurücksetzung wird die app ordnungsgemäß geschlossen, Aktivitäten abschließen und den app-Prozess zu beenden. Wenn Ihre app die Seletive standardzurücksetzung überschreibt, empfiehlt es sich, schließen Sie Ihre app manuell, um zu verhindern, dass den Benutzer den Zugriff auf Daten im Arbeitsspeicher, nachdem eine Zurücksetzung.
+Die standardmäßige selektive Zurücksetzung wird die app ordnungsgemäß geschlossen, Aktivitäten abschließen und den app-Prozess zu beenden. Wenn Ihre app die standardmäßige selektive Zurücksetzung überschreibt, empfiehlt es sich, schließen Sie Ihre app manuell, um zu verhindern, dass den Benutzer den Zugriff auf Daten im Arbeitsspeicher, nachdem eine Zurücksetzung.
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Aktivieren der MAM-Zielkonfiguration für Ihre Android-Anwendungen (optional)
@@ -1785,7 +1785,7 @@ Das Intune SDK verwaltet des von der Android-API bereitgestellten Vertrag; jedoc
 
 ## <a name="telemetry"></a>Telemetrie
 
-Das Intune App SDK für Android kontrolliert nicht die Datensammlung über Ihre App. Standardmäßig protokolliert die Unternehmensportal-Anwendung Telemetriedaten. Diese Daten werden an Microsoft Intune gesendet. Gemäß der Microsoft-Richtlinie sammeln wir keine personenbezogenen Informationen (PII).
+Das Intune App SDK für Android kontrolliert nicht die Datensammlung über Ihre App. Die Unternehmensportal-Anwendung protokolliert systemgenerierte Daten standardmäßig an. Diese Daten werden an Microsoft Intune gesendet. Gemäß der Microsoft Policy werden wir persönlichen Daten nicht erfasst.
 
 > [!NOTE]
 > Wenn Benutzer sich dazu entschließen, diese Daten nicht zu senden, müssen sie die Telemetrie unter „Einstellungen“ in der Unternehmensportal-App deaktivieren. Weitere Informationen finden Sie unter [Deaktivieren der Erfassung von Nutzungsdaten durch Microsoft](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
