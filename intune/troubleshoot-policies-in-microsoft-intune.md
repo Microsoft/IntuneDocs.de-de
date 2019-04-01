@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/29/2019
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ROBOTS: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90c92eb7ea08fbe89464911c9f1eb5c6aea452db
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 6d1f790aeedff1e13ecc220ed7a6d8f311e12585
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237502"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460511"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Richtlinien und Profile zur Problembehandlung in Intune
 
@@ -49,25 +50,25 @@ In diesem Artikel werden häufig verwendete Methoden zur Problembehandlung aufge
 
 5. Suchen Sie unter **Geräte** das Gerät, bei dem ein Problem auftritt. Überprüfen Sie folgende Spalten:
 
-    - **Verwaltet:** Damit ein Gerät Konformitäts- oder Konfigurationsrichtlinien empfangen kann, muss diese Eigenschaft auf **MDM** oder **EAS/MDM** festgelegt sein.
+    - **Verwaltet**: Damit ein Gerät Konformitäts- oder Konfigurationsrichtlinien empfangen kann, muss diese Eigenschaft auf **MDM** oder **EAS/MDM** festgelegt sein.
 
       - Wenn **Verwaltet** nicht auf **MDM** oder **EAS/MDM** festgelegt ist, ist das Gerät nicht registriert. Es empfängt keine Konformitäts- oder Konfigurationsrichtlinien, bevor die Registrierung durchgeführt wurde.
 
       - Ein Gerät muss jedoch nicht registriert sein, um App-Schutzrichtlinien (Mobile Anwendungsverwaltung) zu empfangen. Weitere Informationen finden Sie unter [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md).
 
-    - **Azure AD-Verknüpfungstyp:** Diese Spalte sollte auf **Arbeitsbereich** oder **Azure AD** festgelegt sein.
+    - **Azure AD-Verknüpfungstyp**: sollte festgelegt werden, um **Workplace** oder **AzureAD**.
  
       - Wenn die Spalte den Wert **Nicht registriert** aufweist, liegt möglicherweise ein Problem mit der Registrierung vor. Dieses Problem kann üblicherweise durch das Aufheben der Registrierung und das erneute Registrieren des Geräts behoben werden.
 
-    - **Intune-konform:** Diese Spalte sollte auf **Ja** festgelegt sein. Wenn **Nein** angezeigt wird, liegt möglicherweise ein Problem mit den Konformitätsrichtlinien vor oder das Gerät ist nicht mit dem Intune-Dienst verbunden. Das Gerät könnte beispielsweise ausgeschaltet oder nicht mit dem Netzwerk verbunden sein. In Folge dessen wird das Gerät als „Nicht konform“ eingestuft (z.B. nach 30 Tagen).
+    - **Intune-kompatiblen**: muss **Ja**. Wenn **Nein** angezeigt wird, liegt möglicherweise ein Problem mit den Konformitätsrichtlinien vor oder das Gerät ist nicht mit dem Intune-Dienst verbunden. Das Gerät könnte beispielsweise ausgeschaltet oder nicht mit dem Netzwerk verbunden sein. In Folge dessen wird das Gerät als „Nicht konform“ eingestuft (z.B. nach 30 Tagen).
 
       Weitere Informationen finden Sie unter [Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune](device-compliance-get-started.md).
 
-    - **Azure AD-konform:** Diese Spalte sollte auf **Ja** festgelegt sein. Wenn **Nein** angezeigt wird, liegt möglicherweise ein Problem mit den Konformitätsrichtlinien vor oder das Gerät ist nicht mit dem Intune-Dienst verbunden. Das Gerät könnte beispielsweise ausgeschaltet oder nicht mit dem Netzwerk verbunden sein. In Folge dessen wird das Gerät als „Nicht konform“ eingestuft (z.B. nach 30 Tagen).
+    - **Azure AD-konform**: muss **Ja**. Wenn **Nein** angezeigt wird, liegt möglicherweise ein Problem mit den Konformitätsrichtlinien vor oder das Gerät ist nicht mit dem Intune-Dienst verbunden. Das Gerät könnte beispielsweise ausgeschaltet oder nicht mit dem Netzwerk verbunden sein. In Folge dessen wird das Gerät als „Nicht konform“ eingestuft (z.B. nach 30 Tagen).
 
       Weitere Informationen finden Sie unter [Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune](device-compliance-get-started.md).
 
-    - **Letzte Anmeldung:** Diese Spalte sollte ein aktuelles Datum und eine aktuelle Uhrzeit enthalten. Intune-Geräte melden sich standardmäßig alle 8 Stunden an.
+    - **Überprüfen Sie die im letzten**: muss eine aktuelle Uhrzeit und Datum. Intune-Geräte melden sich standardmäßig alle 8 Stunden an.
 
       - Wenn der Wert von **Letzte Anmeldung** über 24 Stunden zurück liegt, liegt vermutlich ein Problem mit dem Gerät vor. Ein Gerät, das sich nicht anmelden kann, kann auch keine Richtlinien von Intune empfangen.
 
@@ -86,10 +87,10 @@ In diesem Artikel werden häufig verwendete Methoden zur Problembehandlung aufge
 
       **Richtlinienzustände:**
 
-      - **Nicht anwendbar:** Diese Richtlinie wird auf dieser Plattform nicht unterstützt. Beispielsweise funktionieren iOS-Richtlinien nicht unter Android. Samsung KNOX-Richtlinien funktionieren nicht auf Windows-Geräten.
-      - **Konflikt:** Auf dem Gerät ist bereits eine Einstellung vorhanden, die von Intune nicht überschrieben werden kann. Möglicherweise haben Sie auch zwei Richtlinien mit der gleichen Einstellung, aber mit unterschiedlichen Werten bereitgestellt.
-      - **Ausstehend:** Das Gerät hat sich noch nicht bei Intune angemeldet, um die Richtlinie zu empfangen. Möglicherweise hat das Gerät die Richtlinie auch bereits empfangen, aber keinen Status an Intune gesendet.
-      - **Fehler:** Weitere Informationen zu Fehlern und möglichen Lösungen finden Sie unter [Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen in Microsoft Intune](troubleshoot-company-resource-access-problems.md).
+      - **Nicht zutreffend**: Diese Richtlinie wird auf dieser Plattform nicht unterstützt. Beispielsweise funktionieren iOS-Richtlinien nicht unter Android. Samsung KNOX-Richtlinien funktionieren nicht auf Windows-Geräten.
+      - **Konflikt**: Auf dem Gerät ist bereits eine Einstellung vorhanden, die von Intune nicht überschrieben werden kann. Möglicherweise haben Sie auch zwei Richtlinien mit der gleichen Einstellung, aber mit unterschiedlichen Werten bereitgestellt.
+      - **Ausstehend**: Das Gerät hat sich noch nicht bei Intune angemeldet, um die Richtlinie abzurufen. Möglicherweise hat das Gerät die Richtlinie auch bereits empfangen, aber keinen Status an Intune gesendet.
+      - **Fehler**: Weitere Informationen zu Fehlern und möglichen Fehlerbehebungen finden Sie unter [Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen](troubleshoot-company-resource-access-problems.md).
 
       **Nützliche Links:** 
 
@@ -103,20 +104,20 @@ In diesem Artikel werden häufig verwendete Methoden zur Problembehandlung aufge
 
     Für jedes Gerät werden die Profile aufgelistet. Jedes Profil verfügt über einen **Status**. Der Status setzt sich aus den zugewiesenen Profilen (einschließlich Einschränkungen und Anforderungen von Hardware und Betriebssystem) zusammen. Mögliche Status sind:
 
-    - **Entsprechung:** Das Gerät hat das Profil empfangen und meldet Intune, dass es der Einstellung entspricht.
+    - **Konform**: Das Gerät hat das Profil empfangen und meldet Intune, dass es der Einstellung entspricht.
 
-    - **Nicht zutreffend**: Diese Profileinstellung kann nicht angewendet werden. Beispielsweise sind E-Mail-Einstellungen für iOS-Geräte nicht auf ein Android-Gerät anwendbar.
+    - **Nicht zutreffend**: Die Profileinstellung ist nicht zutreffend. Beispielsweise sind E-Mail-Einstellungen für iOS-Geräte nicht auf ein Android-Gerät anwendbar.
 
-    - **Ausstehend:** Das Profil wurde an das Gerät gesendet, hat aber noch keinen Status an Intune gemeldet. Beispiel: Verschlüsselung unter Android erfordert, dass der Benutzer die Verschlüsselung aktiviert, und sie könnte als ausstehend angezeigt werden.
+    - **Ausstehend**: Das Profil wurde an das Gerät gesendet, hat aber noch keinen Status an Intune gemeldet. Beispiel: Verschlüsselung unter Android erfordert, dass der Benutzer die Verschlüsselung aktiviert, und sie könnte als ausstehend angezeigt werden.
 
-**Nützlicher Link:** [Überwachen von Geräteprofilen in Microsoft Intune](device-profile-monitor.md)
+**Hilfreiche Links**: [Überwachen von Geräteprofilen Konfiguration](device-profile-monitor.md)
 
 > [!NOTE]
 > Wenn zwei Richtlinien mit unterschiedlichen Einschränkungsstufen für das gleiche Gerät gelten, wird die restriktivere Richtlinie angewendet.
 
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Warnung: Fehler beim Speichern von Zugriffsregeln in Exchange
 
-**Problem:** Sie erhalten die Warnung **Fehler beim Speichern von Zugriffsregeln in Exchange.** in der Verwaltungskonsole.
+**Problem**: Sie erhalten die Warnung **Fehler beim Speichern von Zugriffsregeln in Exchange**  in der Verwaltungskonsole.
 
 Wenn Sie Richtlinien im Exchange-Arbeitsbereich „Lokale Richtlinie“ (Verwaltungskonsole) erstellt haben, aber Office 365 verwenden, werden die konfigurierten Richtlinieneinstellungen von Intune nicht erzwungen. Beachten Sie die Richtlinienquelle in der Warnung. Löschen Sie im Arbeitsbereich „Richtlinie für lokales Exchange“ die Legacyregeln. Die Legacyregeln sind globale Exchange-Regeln in Intune für lokales Exchange und für Office 365 nicht relevant. Erstellen Sie dann eine neue Richtlinie für Office 365.
 
@@ -156,7 +157,7 @@ Bei Windows-PCs, die mit dem Intune-Softwareclient verwaltet werden, können Ric
 
 4. Verschieben Sie den Schieberegler für Benachrichtigungen auf die Standardeinstellung.
 
-### <a name="error-cannot-obtain-the-value-from-the-computer-0x80041013"></a>FEHLER: Der Wert kann nicht vom Computer abgerufen werden, 0x80041013.
+### <a name="error-cannot-obtain-the-value-from-the-computer-0x80041013"></a>FEHLER: Der Wert kann nicht vom Computer abgerufen werden, 0x80041013
 
 Dieser Fehler tritt auf, wenn die Zeit auf dem lokalen System um mindestens fünf Minuten abweicht. Wenn die Zeit auf dem lokalen Computer nicht synchron ist, schlagen sichere Transaktionen fehl, da die Zeitstempel ungültig sind.
 

@@ -5,20 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 518bb2ab0f59b5692ff2c2391fe971abba0639c6
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e6e82e24f051e64d07487d915ac6fd0848727ecf
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072523"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566810"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für Windows-Geräte in Intune
 
@@ -40,7 +42,7 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 | **E-Mail-Profil** | Nicht verfügbar | Nicht verfügbar |   
 | **Minimale Version des Betriebssystems** | Isoliert | Isoliert |   
 | **Maximale Version des Betriebssystems** | Isoliert | Isoliert |   
-| **Windows-Integritätsnachweis** | Isoliert: Windows 10 und Windows 10 Mobile|Nicht zutreffend: Windows 8.1 |
+| **Windows-Integritätsnachweis** | Isoliert: Windows 10 und Windows 10 Mobile|Nicht verfügbar: Windows 8.1 |
 
 -------------------------------
 
@@ -73,8 +75,8 @@ Diese Richtlinieneinstellungen gelten für Geräte mit den folgenden Plattformen
 
 ### <a name="device-properties"></a>Geräteeigenschaften
 
-- **Minimal erforderliche Betriebssystemversion:** Wenn ein Gerät die Anforderung an die Mindestversion des Betriebssystems nicht erfüllt, wird es als nicht konform gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Endbenutzer kann ein Upgrade seines Geräts durchführen, und anschließend auf die Unternehmensressourcen zugreifen.
-- **Maximal zulässige Betriebssystemversion:** Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt. Der Benutzer wird dazu aufgefordert, sich an den zuständigen IT-Administrator zu wenden. Das Gerät kann nicht auf Ressourcen der Organisation zugreifen, bis Sie die Regel dahingehend ändern, dass die betreffende Betriebssystemversion zugelassen wird.
+- **Minimal erforderliches Betriebssystem:** Wenn ein Gerät die Anforderungen für die minimal erforderliche Betriebssystemversion nicht erfüllt, wird es als nicht konform gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Endbenutzer kann ein Upgrade seines Geräts durchführen, und anschließend auf die Unternehmensressourcen zugreifen.
+- **Maximal zulässige Betriebssystemversion**: Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als in der Regel angegeben, wird der Zugriff auf Unternehmensressourcen gesperrt. Der Benutzer wird dazu aufgefordert, sich an den zuständigen IT-Administrator zu wenden. Das Gerät kann nicht auf Ressourcen der Organisation zugreifen, bis Sie die Regel dahingehend ändern, dass die betreffende Betriebssystemversion zugelassen wird.
 
 Windows 8.1-PCs geben die Version **3** zurück. Wenn die Regel für die Betriebssystemversion für Windows auf Windows 8.1 festgelegt ist, wird das betreffende Gerät als nicht kompatibel gemeldet, selbst wenn auf ihm Windows 8.1 installiert ist.
 
@@ -82,17 +84,17 @@ Windows 8.1-PCs geben die Version **3** zurück. Wenn die Regel für die Betrieb
 
 #### <a name="password"></a>Kennwort
 
-- **Anfordern eines Kennworts zum Entsperren mobiler Geräte:** Legen Sie diese Option auf **Anfordern** fest, damit Benutzer ein Kennwort eingeben müssen, bevor sie auf ihr Gerät zugreifen können.
-- **Einfache Kennwörter:** Legen Sie diese Option auf **Blockieren** fest, damit Benutzer kein einfaches Kennwort wie **1234** oder **1111** erstellen können. Wenn Sie diese Option auf **Nicht konfiguriert** setzen, können Benutzer Kennwörter wie **1234** oder **1111** erstellen.
-- **Minimale Kennwortlänge:** Geben Sie die Mindestanzahl an Ziffern oder Zeichen ein, die das Kennwort enthalten muss.
+- **Kennwort zum Entsperren mobiler Geräte anfordern:** Klicken Sie auf **Erforderlich**, damit Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.
+- **Einfache Kennwörter:** Legen Sie **Blockieren** fest, damit Benutzer kein einfaches Kennwort wie **1234** oder **1111** erstellen können. Wenn Sie diese Option auf **Nicht konfiguriert** setzen, können Benutzer Kennwörter wie **1234** oder **1111** erstellen.
+- **Minimale Kennwortlänge**: Geben Sie die Mindestanzahl an Ziffern oder Zeichen an, die das Kennwort enthalten muss.
 
   Für Geräte, die unter Windows laufen und auf die mit einem Microsoft-Konto zugegriffen wird, wird die Konformitätsrichtlinie in diesem Fällen nicht korrekt ausgewertet:
   - Wenn die minimale Kennwortlänge mehr als acht Zeichen umfasst.
   - Oder, wenn die minimale Anzahl von Zeichensätzen mehr als zwei ist.
 
-- **Kennworttyp**: Wählen Sie aus, ob ein Kennwort nur aus **numerischen** Zeichen bestehen oder eine Kombination aus Zahlen und anderen Zeichen verwendet werden soll (**alphanumerisch**).
+- **Kennworttyp**: Wählen Sie diese Option, wenn ein Kennwort nur aus **numerischen** Zeichen bestehen soll, oder wenn eine Kombination aus Zahlen und anderen Zeichen verwendet werden soll (**alphanumerisch**).
   
-  - **Anzahl nicht alphanumerischer Zeichen im Kennwort:** Wenn **Erforderlicher Kennworttyp** auf **Alphanumerisch** festgelegt ist, gibt diese Einstellung die Mindestanzahl an Zeichensätzen an, die das Kennwort enthalten muss. Es gibt vier Zeichensätze:
+  - **Anzahl nicht alphanumerischer Zeichen im Kennwort**: Wenn **Erforderlicher Kennworttyp** auf **Alphanumerisch** festgelegt ist, gibt diese Einstellung die Mindestanzahl von Zeichensätzen an, die das Kennwort enthalten muss. Es gibt vier Zeichensätze:
     - Kleinbuchstaben
     - Großbuchstaben
     - Symbole
@@ -103,9 +105,9 @@ Windows 8.1-PCs geben die Version **3** zurück. Wenn die Regel für die Betrieb
     - Wenn die minimale Kennwortlänge mehr als acht Zeichen umfasst.
     - Oder wenn die minimale Anzahl von Zeichensätzen mehr als zwei ist.
 
-- **Minuten der Inaktivität vor Anforderung des Kennworts:** Geben Sie die Leerlaufzeit ein, nach der ein Benutzer sein Kennwort erneut eingeben muss.
-- **Kennwortablauf (Tage):** Wählen Sie die Anzahl der Tage aus, nach der das Kennwort abläuft und ein neues erstellt werden muss.
-- **Anzahl vorheriger Kennwörter zum Verhindern der Wiederverwendung:** Geben Sie die Anzahl der zuvor verwendeten Kennwörter ein, die nicht erneut verwendet werden können.
+- **Maximale Anzahl von Minuten der Inaktivität vor erneuter Anforderung des Kennworts**: Geben Sie die Leerlaufzeit an, nach der ein Benutzer sein Kennwort erneut eingeben muss.
+- **Kennwortablauf (Tage):** Wählen Sie die Anzahl von Tagen aus, bevor das Kennwort abläuft und ein neues erstellt werden muss.
+- **Anzahl der vorherigen Kennwörter zur Verhinderung von Wiederverwendung**: Geben Sie die Anzahl der bereits verwendeten Kennwörtern an, die nicht erneut verwendet werden dürfen.
 
 #### <a name="encryption"></a>Verschlüsselung
 
@@ -119,7 +121,7 @@ Windows 8.1-PCs geben die Version **3** zurück. Wenn die Regel für die Betrieb
 - **Sicherer Start muss auf dem Gerät aktiviert sein**: Wenn der sichere Start aktiviert ist, wird das System gezwungen, in einem vertrauenswürdigen Zustand zu starten. Wenn der sichere Start aktiviert ist, müssen die zum Starten des Computers verwendeten Kernkomponenten zudem über die richtigen kryptografischen Signaturen verfügen, denen das Unternehmen vertraut, das das Gerät hergestellt hat. Die Signatur wird von der UEFI-Firmware überprüft, bevor der Computer gestartet werden kann. Wenn Dateien derart manipuliert werden, dass ihre Signatur beschädigt wird, wird das System nicht gestartet.
 
   > [!NOTE]
-  > Die Einstellung **Sicherer Start muss auf dem Gerät aktiviert sein** wird von TPM 1.2- und TPM 2.0-Geräten unterstützt. Für Geräte, die TPM 2.0 oder höher nicht unterstützen, wird der Richtlinienstatus in Intune als **Nicht konform** angezeigt. Dies ist eine Einschränkung des Dienstes [Integritätsnachweis für Geräte](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation) unter Windows 10.
+  > Die Einstellung **Sicherer Start muss auf dem Gerät aktiviert sein** wird von einigen TPM 1.2- und TPM 2.0-Geräten unterstützt. Für Geräte, die TPM 2.0 oder höher nicht unterstützen, wird der Richtlinienstatus in Intune als **Nicht konform** angezeigt. Weitere Informationen zu unterstützten Versionen finden Sie unter [Nachweis der Geräteintegration](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation).
 
 - **Codeintegrität erforderlich**: Die Codeintegrität ist ein Feature, das die Integrität eines Treibers oder einer Systemdatei jedes Mal überprüft, wenn diese(r) in den Speicher geladen wird. Die Codeintegrität erkennt, ob ein nicht signierter Treiber oder eine Systemdatei in den Kernel geladen wird. Sie erkennt auch, ob eine Systemdatei durch böswillige Software manipuliert wurde, die von einem Benutzerkonto mit Administratorrechten ausgeführt wird.
 
@@ -127,23 +129,23 @@ Informationen zur Funktionsweise des HAS-Diensts finden Sie unter [Integritätsn
 
 ### <a name="device-properties"></a>Geräteeigenschaften
 
-- **Mindestversion des Betriebssystems**: Geben Sie die minimal zulässige Version im Zahlenformat **Hauptversion.Nebenversion.Build.CU** ein. Um den richtigen Wert abzurufen, öffnen Sie eine Eingabeaufforderung und geben `ver` ein. Der Befehl `ver` gibt die Version im folgenden Format zurück:
+- **Minimale Version des Betriebssystems:** Geben Sie die minimal zulässige Version im Zahlenformat **Hauptversion.Nebenversion.Build.CU** ein. Um den richtigen Wert abzurufen, öffnen Sie eine Eingabeaufforderung und geben `ver` ein. Der Befehl `ver` gibt die Version im folgenden Format zurück:
 
   `Microsoft Windows [Version 10.0.17134.1]`
 
   Wenn ein Gerät eine frühere Version als die von Ihnen eingegebene Betriebssystemversion aufweist, wird es als nicht kompatibel gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Endbenutzer kann sein Gerät aktualisieren. Nach dem Upgrade kann er auf Unternehmensressourcen zugreifen.
 
-- **Maximale Version des Betriebssystems**: Geben Sie die maximal zulässige Version im Zahlenformat **Hauptversion.Nebenversion.Build.Revision** ein. Um den richtigen Wert abzurufen, öffnen Sie eine Eingabeaufforderung und geben `ver` ein. Der Befehl `ver` gibt die Version im folgenden Format zurück:
+- **Maximale Version des Betriebssystems:** Geben Sie die maximal zulässige Version im Zahlenformat **Hauptversion.Nebenversion.Build.Revision** ein. Um den richtigen Wert abzurufen, öffnen Sie eine Eingabeaufforderung und geben `ver` ein. Der Befehl `ver` gibt die Version im folgenden Format zurück:
 
   `Microsoft Windows [Version 10.0.17134.1]`
 
   Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt, und der Benutzer wird gebeten, sich an den IT-Administrator zu wenden. Das Gerät kann solange nicht auf Unternehmensressourcen zugreifen, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
 
-- **Minimal erforderliches Betriebssystem für mobile Geräte**: Geben Sie die minimal zulässige Version im Zahlenformat „Hauptversion.Nebenversion.Build“ ein.
+- **Minimale Version des Betriebssystems für mobile Geräte**: Geben Sie die minimal zulässige Version im Zahlenformat „Hauptversion.Nebenversion.Build“ ein.
 
   Wenn ein Gerät eine frühere Version als die von Ihnen eingegebene Betriebssystemversion aufweist, wird es als nicht kompatibel gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Endbenutzer kann sein Gerät aktualisieren. Nach dem Upgrade kann er auf Unternehmensressourcen zugreifen.
 
-- **Maximal erforderliches Betriebssystem für mobile Geräte**: Geben Sie die maximal zulässige Version im Zahlenformat „Hauptversion.Nebenversion.Build“ ein.
+- **Maximale Version des Betriebssystems für mobile Geräte**: Geben Sie die maximal zulässige Version im Zahlenformat „Hauptversion.Nebenversion.Build“ ein.
 
   Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt, und der Benutzer wird gebeten, sich an den IT-Administrator zu wenden. Das Gerät kann solange nicht auf Unternehmensressourcen zugreifen, bis die Regel geändert und die betreffende Betriebssystemversion zugelassen wird.
 
@@ -153,7 +155,7 @@ Informationen zur Funktionsweise des HAS-Diensts finden Sie unter [Integritätsn
 
 Gilt nur für gemeinsam verwaltete Geräte mit Windows 10 und höher. Ausschließliche Intune-Geräte geben einen „Nicht verfügbar“-Status zurück.
 
-- **Gerätekonformität von System Center Configuration Manager erforderlich**: Wählen Sie **Erforderlich** aus, um zu erzwingen, dass alle Einstellungen (Konfigurationselemente) in System Center Configuration Manager konform sind. 
+- **Gerätekonformität von System Center Configuration Manager erforderlich**: Wählen Sie **erfordern** gezwungen alle Einstellungen (Konfigurationselemente) in System Center Configuration Manager kompatibel sein müssen. 
 
   Beispielsweise sollen alle Softwareupdates auf Geräten installiert werden. Im Configuration Manager hat diese Anforderung den Zustand „Installiert“. Falls sich Programme auf dem Gerät in einem unbekannten Zustand befinden, so ist das Gerät in Intune nicht konform.
   
@@ -163,11 +165,11 @@ Gilt nur für gemeinsam verwaltete Geräte mit Windows 10 und höher. Ausschlie�
 
 #### <a name="password"></a>Kennwort
 
-- **Anfordern eines Kennworts zum Entsperren mobiler Geräte:** Legen Sie diese Option auf **Anfordern** fest, damit Benutzer ein Kennwort eingeben müssen, bevor sie auf ihr Gerät zugreifen können.
-- **Einfache Kennwörter:** Legen Sie diese Option auf **Blockieren** fest, damit Benutzer kein einfaches Kennwort wie **1234** oder **1111** erstellen können. Wenn Sie diese Option auf **Nicht konfiguriert** setzen, können Benutzer Kennwörter wie **1234** oder **1111** erstellen.
-- **Kennworttyp**: Wählen Sie aus, ob ein Kennwort nur aus **numerischen** Zeichen bestehen oder eine Kombination aus Zahlen und anderen Zeichen verwendet werden soll (**alphanumerisch**).
+- **Kennwort zum Entsperren mobiler Geräte anfordern:** Klicken Sie auf **Erforderlich**, damit Benutzer ein Kennwort eingeben müssen, um auf ihre Geräte zugreifen zu können.
+- **Einfache Kennwörter:** Legen Sie **Blockieren** fest, damit Benutzer kein einfaches Kennwort wie **1234** oder **1111** erstellen können. Wenn Sie diese Option auf **Nicht konfiguriert** setzen, können Benutzer Kennwörter wie **1234** oder **1111** erstellen.
+- **Kennworttyp**: Wählen Sie diese Option, wenn ein Kennwort nur aus **numerischen** Zeichen bestehen soll, oder wenn eine Kombination aus Zahlen und anderen Zeichen verwendet werden soll (**alphanumerisch**).
 
-  - **Anzahl nicht alphanumerischer Zeichen im Kennwort:** Wenn **Erforderlicher Kennworttyp** auf **Alphanumerisch** festgelegt ist, gibt diese Einstellung die Mindestanzahl an Zeichensätzen an, die das Kennwort enthalten muss. Es gibt vier Zeichensätze:
+  - **Anzahl nicht alphanumerischer Zeichen im Kennwort**: Wenn **Erforderlicher Kennworttyp** auf **Alphanumerisch** festgelegt ist, gibt diese Einstellung die Mindestanzahl von Zeichensätzen an, die das Kennwort enthalten muss. Es gibt vier Zeichensätze:
     - Kleinbuchstaben
     - Großbuchstaben
     - Symbole
@@ -175,31 +177,31 @@ Gilt nur für gemeinsam verwaltete Geräte mit Windows 10 und höher. Ausschlie�
 
     Wenn Sie eine höhere Anzahl festlegen, muss der Benutzer ein komplexeres Kennwort erstellen.
 
-- **Minimale Kennwortlänge:** Geben Sie die Mindestanzahl an Ziffern oder Zeichen ein, die das Kennwort enthalten muss.
-- **Minuten der Inaktivität vor Anforderung des Kennworts:** Geben Sie die Leerlaufzeit ein, nach der ein Benutzer sein Kennwort erneut eingeben muss.
-- **Kennwortablauf (Tage):** Wählen Sie die Anzahl der Tage aus, nach der das Kennwort abläuft und ein neues erstellt werden muss.
-- **Anzahl vorheriger Kennwörter zum Verhindern der Wiederverwendung:** Geben Sie die Anzahl der zuvor verwendeten Kennwörter ein, die nicht erneut verwendet werden können.
-- **Kennwort anfordern, wenn Gerät aus Leerlaufzustand zurückkehrt (Mobile und Holographic)**: Hiermit zwingen Sie den Benutzer, immer das Kennwort einzugeben, wenn das Gerät aus dem Leerlauf zurückkehrt.
+- **Minimale Kennwortlänge**: Geben Sie die Mindestanzahl an Ziffern oder Zeichen an, die das Kennwort enthalten muss.
+- **Maximale Anzahl von Minuten der Inaktivität vor erneuter Anforderung des Kennworts**: Geben Sie die Leerlaufzeit an, nach der ein Benutzer sein Kennwort erneut eingeben muss.
+- **Kennwortablauf (Tage):** Wählen Sie die Anzahl von Tagen aus, bevor das Kennwort abläuft und ein neues erstellt werden muss.
+- **Anzahl der vorherigen Kennwörter zur Verhinderung von Wiederverwendung**: Geben Sie die Anzahl der bereits verwendeten Kennwörtern an, die nicht erneut verwendet werden dürfen.
+- **Kennwort anfordern, wenn Gerät aus Leerlaufzustand zurückkehrt (Mobile und Holographic)**: Erzwingen Sie die Eingabe des Kennworts, wenn das Gerät aus dem Leerlaufzustand zurückkehrt.
 
 #### <a name="encryption"></a>Verschlüsselung
 
-- **Verschlüsselung des Datenspeichers auf einem Gerät**: Wählen Sie **Erforderlich** aus, um die Datenspeicher auf Ihren Geräten zu verschlüsseln.
+- **Verschlüsselung des Datenspeichers auf einem Gerät**: Wählen Sie **Erforderlich**, um den Datenspeicher auf Ihren Geräten zu verschlüsseln.
 
   > [!NOTE]
   > Die Einstellung **Encryption of data storage on a device** (Verschlüsselung des Datenspeichers auf einem Gerät) überprüft allgemein, ob das Gerät über Verschlüsselung verfügt. Für eine stabilere Verschlüsselungseinstellung sollten Sie **BitLocker erforderlich** in Betracht ziehen. Dabei wird der Windows-Integritätsnachweis für Geräte genutzt, um den BitLocker-Status auf Ebene des TPM (Trusted Platform Module) zu überprüfen.
 
 #### <a name="device-security"></a>Gerätesicherheit
 
-- **Antivirus:** Wenn für diese Einstellung **Require** (Erforderlich) festgelegt ist, können Sie die Konformität mit Antivirenlösungen wie Symantec und Windows Defender überprüfen, die beim Windows-Sicherheitscenter registriert sind. Wenn sie **nicht konfiguriert** ist, prüft Intune nicht nach Antiviruslösungen, die auf dem Gerät installiert sind.
-- **AntiSpyware:** Wenn für diese Einstellung **Require** (Erforderlich) festgelegt ist, können Sie die Konformität mit Antispyware-Lösungen wie Symantec und Windows Defender überprüfen, die beim Windows-Sicherheitscenter registriert sind. Wenn sie **nicht konfiguriert** ist, prüft Intune nicht nach Antispyware-Lösungen, die auf dem Gerät installiert sind.
+- **Antivirus**: Bei Festlegung auf **Erforderlich** können Sie die Konformität mit Antivirenlösungen (beispielsweise Symantec und Windows Defender) überprüfen, die beim [Windows-Sicherheitscenter](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/) registriert sind. Wenn sie **nicht konfiguriert** ist, prüft Intune nicht nach Antiviruslösungen, die auf dem Gerät installiert sind.
+- **Antispyware**: Bei Festlegung auf **Erforderlich** können Sie die Konformität mit Antispyware-Lösungen (beispielsweise Symantec und Windows Defender) überprüfen, die beim [Windows-Sicherheitscenter](https://blogs.windows.com/windowsexperience/2017/01/23/introducing-windows-defender-security-center/) registriert sind. Wenn sie **nicht konfiguriert** ist, prüft Intune nicht nach Antispyware-Lösungen, die auf dem Gerät installiert sind.
 
 ### <a name="windows-defender-atp"></a>Windows Defender ATP
 
-- **Anfordern, dass das Gerät höchstens das angegebene Computerrisiko aufweist**: Verwenden Sie diese Einstellung, um die Risikobewertung Ihrer Dienste zur Verteidigung gegen Bedrohungen als Konformitätsvoraussetzung zu fordern. Wählen Sie die maximal zulässige Bedrohungsstufe:
-  - **Löschen**: Diese Option ist die sicherste, da auf dem Gerät keine Bedrohungen vorhanden sein dürfen. Wenn auf dem Gerät Bedrohungen jeglicher Stufen erkannt werden, wird es als nicht konform bewertet.
-  - **Niedrig:** Das Gerät wird als konform bewertet, wenn nur Bedrohungen niedriger Stufen vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
-  - **Mittel:** Das Gerät wird als konform bewertet, wenn die auf dem Gerät vorhandenen Bedrohungen niedriger oder mittlerer Stufe sind. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht konform bewertet.
-  - **Hoch:** Dies ist die am wenigsten sichere Option, die alle Bedrohungsstufen zulässt. Es ist möglicherweise hilfreich, diese Lösung nur zu Berichtszwecken zu verwenden.
+- **Anfordern, dass das Gerät höchstens das angegebene Computerrisiko aufweist:** Verwenden Sie diese Einstellung, um die Risikobewertung Ihrer Dienste zur Verteidigung gegen Bedrohungen als Konformitätsvoraussetzung zu fordern. Wählen Sie die maximal zulässige Bedrohungsstufe:
+  - **Clear** (Löschen): Diese Option ist die sicherste, da auf dem Gerät keine Bedrohungen vorhanden sein können. Wenn auf dem Gerät Bedrohungen jeglicher Stufen erkannt werden, wird es als nicht konform bewertet.
+  - **Niedrig**: Das Gerät wird als kompatibel bewertet, wenn nur Bedrohungen niedriger Stufen vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
+  - **Mittel**: Das Gerät wird als kompatibel bewertet, wenn die auf dem Gerät vorhandenen Bedrohungen niedriger oder mittlerer Stufe sind. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht konform bewertet.
+  - **Hoch**: Dies ist die am wenigsten sichere Option, die alle Bedrohungsebenen zulässt. Es ist möglicherweise hilfreich, diese Lösung nur zu Berichtszwecken zu verwenden.
   
   Informationen zum Einrichten von Windows Defender ATP (Advanced Threat Protection) als Bedrohungsschutzdienst finden Sie unter [Aktivieren von Windows Defender ATP mit bedingtem Zugriff](advanced-threat-protection.md).
 

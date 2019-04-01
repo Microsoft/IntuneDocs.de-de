@@ -6,28 +6,29 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
-ms.topic: article
+ms.date: 02/19/2019
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65391ca620892dcd3b95719454dabc30eb35cb6f
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 5a5e000a973932db0bbaa215ea94976219ff905c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839379"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57577845"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Problembehandlung bei der App-Installation
 
 Auf Geräten, die mit Microsoft Intune MDM verwaltet werden, können App-Installationen manchmal fehlschlagen. In diesen Fällen kann es schwierig sein, die Fehlerursache zu verstehen oder das Problem zu beheben. Microsoft Intune stellt Details zu fehlgeschlagenen App-Installationen bereit. So können Helpdeskmitarbeiter und Intune-Administratoren App-Informationen nutzen, um Benutzern bei ihren Anliegen zu helfen. Der Intune-Bereich „Problembehandlung“ stellt Fehlerdetails bereit, einschließlich Informationen zu verwalteten Apps auf Benutzergeräten. Details zum End-to-End-Lebenszyklus einer App finden Sie unter dem jeweiligen Gerät im Bereich **Verwaltete Apps**. Sie können Installationsprobleme ansehen, z. B. wann die App erstellt, geändert, ausgerichtet und auf einem Gerät bereitgestellt wurde. 
 
-## <a name="to-review-app-troubleshooting-details"></a>Überprüfen von Details zur Problembehandlung von Apps
+## <a name="app-troubleshooting-details"></a>Problembehandlung bei App-details
 
 Intune stellt anhand von Apps, die auf dem jeweiligen Benutzergerät installiert sind, App-Informationen zur Problembehandlung bereit.
 
@@ -52,6 +53,47 @@ Die Details zum App-Installationsfehler weisen auf das Problem hin. Anhand diese
 > [!Note]  
 > Sie können auch auf den Bereich **Problembehandlung** zugreifen, indem Sie in Ihrem Browser zu [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) navigieren.
 
+## <a name="win32-app-installation-troubleshooting"></a>Problembehandlung bei Win32-app-installation
+
+Wählen Sie die Win32-app, die die Intune-Verwaltungserweiterung mit bereitgestellt wurde. Sie können auswählen, die **Sammeln von Protokollen** option, wenn die Win32-app-Installation ein Fehler auftritt. 
+
+> [!IMPORTANT]
+> Die **Sammeln von Protokollen** Option ist nicht aktiviert, wenn die Win32-app auf dem Gerät wurde erfolgreich installiert wurde.<p>Bevor Sie die Win32-app-Protokollinformationen erfassen können, muss die Intune-Verwaltungserweiterung auf dem Windows-Client installiert werden. Die Intune-Verwaltungserweiterung wird installiert, wenn ein PowerShell-Skript oder eine Win32-App für eine Benutzer- oder Gerätesicherheitsgruppe bereitgestellt wird. Weitere Informationen finden Sie unter [Intune-Verwaltungserweiterung - Voraussetzungen](intune-management-extension.md#prerequisites).
+
+### <a name="collect-log-file"></a>Sammeln Sie die Protokolldatei
+
+Um die Installationsprotokolle der Win32-app zu erfassen, und führen Sie zuerst die Schritte im Abschnitt [App, die Informationen für die Problembehandlung](troubleshoot-app-install.md#app-troubleshooting-details). Fahren Sie mit den folgenden Schritten:
+
+1. Klicken Sie auf die **Sammeln von Protokollen** option die **Installationsdetails** Blatt.
+
+    <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
+
+2. Geben Sie Dateipfade mit Dateinamen, die Datei protokollsammelprozess beginnen, und klicken Sie auf **OK**.
+    
+    > [!NOTE]
+    > Protokollsammlung dauert weniger als zwei Stunden. Unterstützte Dateitypen: *log, txt, dmp, CAB, ZIP, XML, EVTX und .evtl*. Maximal 25 Dateipfade sind zulässig.
+
+3. Die Protokolldateien erfasst wurden, wählen Sie die **Protokolle** Link zum Herunterladen der Protokolldateien.
+
+    <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
+
+    > [!NOTE]
+    > Eine Benachrichtigung wird angezeigt, der angibt, der des Erfolgs der Protokollsammlung app.
+
+#### <a name="win32-log-collection-requirements"></a>Anforderungen an die Auflistung von Win32-Datenbankprotokoll
+
+Es gibt bestimmte Anforderungen, die beachtet werden müssen, um Protokolldateien zu sammeln:
+
+- Sie müssen den vollständigen Pfad angeben. 
+- Sie können Umgebungsvariablen für die Erfassung von Protokollen, z. B. Folgendes angeben:<br>
+  *%PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP%*
+- Nur exakte Dateierweiterungen sind, z. B. zulässig:<br>
+  *.log, .txt, .dmp, .cab, .zip, .xml*
+- Die maximale Log-Datei zum Hochladen ist 60 MB oder 25 Dateien, welches Ereignis zuerst eintritt. 
+- Win32-app installieren-Protokollsammlung aktiviert ist, für apps, die die erforderlichen erfüllen verfügbar ist, und die deinstallierte Absicht der app-Zuweisung.
+- Gespeicherte Protokolle werden verschlüsselt, um alle Personenbezogene Informationen enthalten, die in den Protokollen zu schützen.
+- Beim Öffnen-Unterstützung für Win32-Fehler bei der app-tickets, fügen Sie die zugehörigen Fehlerprotokolle, die mithilfe der oben angegebenen Schritte aus.
+
 ## <a name="app-installation-errors"></a>App-Installationsfehler
 
 Die folgenden Fehlermeldungen und Beschreibungen bieten weitere Informationen zu Installationsfehlern unter Android und iOS. 
@@ -66,24 +108,34 @@ Die folgenden Fehlermeldungen und Beschreibungen bieten weitere Informationen zu
 |    Die Anwendung wurde nach erfolgreicher Installation nicht erkannt. (0x87D1041C)    |    Der Benutzer hat die App explizit deinstalliert. Diese Fehlermeldung wird nicht vom Client zurückgegeben. Der Fehler wurde dadurch verursacht, dass die App zu einem bestimmten Zeitpunkt noch installiert wurde, aber dann vom Benutzer deinstalliert wurde. Dieser Fehler sollte nur bei erforderlichen Apps auftreten. Benutzer können nicht benötigte Apps deinstallieren. Dieser Fehler kann nur bei DA auftreten. KNOX blockiert die Deinstallation von verwalteten Apps.       Bei der nächsten Synchronisierung wird die Benachrichtigung zur Installation auf dem Gerät erneut für den Benutzer veröffentlicht.   Der Benutzer kann die Benachrichtigung ignorieren. Dieser Fehler wird so lange gemeldet, bis der Benutzer die App installiert hat.    |
 |    Der Download war aufgrund eines unerwarteten Fehlers nicht erfolgreich. (0xC7D14FB2)    |    Dieser Fehler tritt auf, wenn das Herunterladen nicht erfolgreich war. Häufig wird dieser Fehler durch Probleme mit dem WLAN oder zu langsamen Verbindungen verursacht.       Diese Fehlermeldung wird nur für DA-Szenarios zurückgegeben. Bei KNOX-Szenarios wird der Benutzer nicht zur Installation aufgefordert. Diese kann im Hintergrund ausgeführt werden. Intune zeigt eine Benachrichtigung an, auf die Benutzer klicken können, um den Vorgang zu wiederholen. Handelt es sich bei der App um eine verfügbare App, kann die Benachrichtigung geschlossen werden. Wenn die App jedoch erforderlich ist, kann die Benachrichtigung nicht verworfen werden.    |
 |    Der Download war aufgrund eines unerwarteten Fehlers nicht erfolgreich. Die Anwendung der Richtlinie wird beim nächsten Mal, wenn das Gerät synchronisiert wird, wiederholt. (0xC7D15078)    |    Dieser Fehler tritt auf, wenn das Herunterladen nicht erfolgreich war. Häufig wird dieser Fehler durch Probleme mit dem WLAN oder zu langsamen Verbindungen verursacht.       Diese Fehlermeldung wird nur für DA-Szenarios zurückgegeben. Bei KNOX-Szenarios wird der Benutzer nicht zur Installation aufgefordert. Diese kann im Hintergrund ausgeführt werden.    |
-|    Der Endbenutzer hat die App-Installation abgebrochen. (0xC7D14FB1)    |    Der Benutzer hat die App explizit deinstalliert. Diese Fehlermeldung wird zurückgegeben, wenn die Installation durch das Android-Betriebssystem vom Benutzer abgebrochen wurde. Als die Eingabeaufforderung zur Betriebssysteminstallation angezeigt wurde, hat der Benutzer auf die Schaltfläche „Abbrechen“ geklickt oder die Eingabeaufforderung einfach geschlossen.        Diese Fehlermeldung wird nur für DA-Szenarios zurückgegeben. Bei KNOX-Szenarios wird der Benutzer nicht zur Installation aufgefordert. Diese kann im Hintergrund ausgeführt werden. Intune zeigt eine Benachrichtigung an, auf die Benutzer klicken können, um den Vorgang zu wiederholen. Handelt es sich bei der App um eine verfügbare App, kann die Benachrichtigung geschlossen werden. Wenn die App jedoch erforderlich ist, kann die Benachrichtigung nicht verworfen werden.    |
+|    Der Benutzer hat die App-Installation abgebrochen. (0xC7D14FB1)    |    Der Benutzer hat die App explizit deinstalliert. Diese Fehlermeldung wird zurückgegeben, wenn die Installation durch das Android-Betriebssystem vom Benutzer abgebrochen wurde. Als die Eingabeaufforderung zur Betriebssysteminstallation angezeigt wurde, hat der Benutzer auf die Schaltfläche „Abbrechen“ geklickt oder die Eingabeaufforderung einfach geschlossen.        Diese Fehlermeldung wird nur für DA-Szenarios zurückgegeben. Bei KNOX-Szenarios wird der Benutzer nicht zur Installation aufgefordert. Diese kann im Hintergrund ausgeführt werden. Intune zeigt eine Benachrichtigung an, auf die Benutzer klicken können, um den Vorgang zu wiederholen. Handelt es sich bei der App um eine verfügbare App, kann die Benachrichtigung geschlossen werden. Wenn die App jedoch erforderlich ist, kann die Benachrichtigung nicht verworfen werden.    |
 |    Der Prozess zum Herunterladen der Datei wurde unerwartet beendet. (0xC7D15015)    |    Der Download wurde vom Betriebssystem beendet, bevor dieser abgeschlossen war. Dieser Fehler kann auftreten, wenn das Gerät über eine niedrige Akkukapazität verfügt oder der Download zu lange dauert.       Diese Fehlermeldung wird nur für DA-Szenarios zurückgegeben. Bei KNOX-Szenarios wird der Benutzer nicht zur Installation aufgefordert. Diese kann im Hintergrund ausgeführt werden. Intune zeigt eine Benachrichtigung an, auf die Benutzer klicken können, um den Vorgang zu wiederholen. Handelt es sich bei der App um eine verfügbare App, kann die Benachrichtigung geschlossen werden. Wenn die App jedoch erforderlich ist, kann die Benachrichtigung nicht verworfen werden.    |
 |    Der Dienst zum Herunterladen der Datei wurde unerwartet beendet. Die Anwendung der Richtlinie wird beim nächsten Mal, wenn das Gerät synchronisiert wird, wiederholt. (0xC7D1507C)    |    Der Download wurde vom Betriebssystem beendet, bevor dieser abgeschlossen war. Dieser Fehler kann auftreten, wenn das Gerät über eine niedrige Akkukapazität verfügt oder der Download zu lange dauert.       Diese Fehlermeldung wird nur für DA-Szenarios zurückgegeben. Bei KNOX-Szenarios wird der Benutzer nicht zur Installation aufgefordert. Diese kann im Hintergrund ausgeführt werden.    |
 
 ### <a name="ios-errors"></a>iOS-Fehler
 
-|    Fehlermeldung/-code    |    Beschreibung    |
-|:----------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|    (0x87D12906)    |    Ein Fehler beim Ausführen des Installationsbefehls wurde vom Apple-MDM-Agent zurückgegeben.        |
-|    (0x87D1313C)    |    Die Netzwerkverbindung wurde unterbrochen, während die aktualisierte URL des Downloaddiensts an das Gerät gesendet wurde. Insbesondere konnte ein Server mit dem angegebenen Hostnamen nicht gefunden werden.    |
-|    iOS-Gerät ist derzeit ausgelastet. (0x87D11388)    |    Das iOS-Gerät war ausgelastet, was zu einem Fehler führte.    |
-|    Fehler bei der App-Installation. (0x87D13B64)    |    Ein Fehler bei der App-Installation ist aufgetreten. Zur Behebung dieses Fehlers werden XCODE-Protokolle benötigt.    |
-|    Die App wird verwaltet, ist jedoch abgelaufen oder wurde vom Benutzer entfernt. (0x87D13B66)    |    Der Benutzer hat die App explizit deinstalliert. Oder, die App ist abgelaufen, aber der Download ist fehlgeschlagen, oder die App-Erkennung entspricht nicht der Antwort des Geräts.   Darüber hinaus kann dieser Fehler aufgrund eines Plattformfehlers von iOS 9.2.2 auftreten.    |
-|    Die App ist für die Installation geplant, erfordert jedoch einen Einlösecode, um die Transaktion abschließen zu können.   (0x87D13B60)    |    Dieser Fehler tritt in der Regel bei iOS Store-Apps auf, bei denen es sich um bezahlte Apps handelt.     |
-|    Die Anwendung wurde nach erfolgreicher Installation nicht erkannt. (0x87D1041C)    |    Die App-Erkennung stimmte nicht mit der Antwort des Geräts überein.    |
-|    Der Benutzer hat die Installation der App abgelehnt. (0x87D13B62)    |    Während der ersten App-Installation hat der Benutzer auf „Abbrechen“ geklickt.    |
-|    Der Benutzer hat das Update für die App abgelehnt. (0x87D13B63)    |    Der Endbenutzer hat während des Updates auf „Abbrechen“ geklickt.     |
-|    Unbekannter Fehler (0x87D103E8)    |    Bei der App-Installation ist ein unbekannter Fehler aufgetreten. Dieser Fehler ergibt sich, wenn keiner der anderen Fehler aufgetreten ist.    |
+| Fehlermeldung/-code | Beschreibung/Problembehandlung Tipps |
+|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| (0x87D12906) | Ein Fehler beim Ausführen des Installationsbefehls wurde vom Apple-MDM-Agent zurückgegeben. |
+| (0x87D1313C) | Die Netzwerkverbindung wurde unterbrochen, während die aktualisierte URL des Downloaddiensts an das Gerät gesendet wurde. Insbesondere konnte ein Server mit dem angegebenen Hostnamen nicht gefunden werden. |
+| Das iOS-Gerät ist derzeit ausgelastet. (0x87D11388) | Das iOS-Gerät war ausgelastet, was zu einem Fehler führte. |
+| Fehler bei der App-Installation. (0x87D13B64) | Es ist ein Fehler bei der App-Installation aufgetreten. Zur Behebung dieses Fehlers werden XCODE-Protokolle benötigt. |
+| Die App wird verwaltet, ist jedoch abgelaufen oder wurde vom Benutzer entfernt. (0x87D13B66) | Die App wurde vom Benutzer explizit deinstalliert. Oder, die App ist abgelaufen, aber der Download ist fehlgeschlagen, oder die App-Erkennung entspricht nicht der Antwort des Geräts.   Darüber hinaus kann dieser Fehler aufgrund eines Plattformfehlers von iOS 9.2.2 auftreten. |
+| Die App ist für die Installation geplant, benötigt jedoch einen Einlösecode, um die Transaktion abschließen zu können. (0x87D13B60) | Dieser Fehler tritt in der Regel bei iOS Store-Apps auf, bei denen es sich um bezahlte Apps handelt. |
+| Die Anwendung wurde nach erfolgreicher Installation nicht erkannt.   (0x87D1041C) | Die App-Erkennung stimmte nicht mit der Antwort des Geräts überein. |
+| Der Benutzer hat die angebotene Installation der App abgelehnt. (0x87D13B62) | Während der ersten App-Installation hat der Benutzer auf „Abbrechen“ geklickt. |
+| Der Benutzer hat das angebotene Update für die App abgelehnt. (0x87D13B63) | Der Benutzer hat während des Updates auf „Abbrechen“ geklickt. |
+| Unbekannter Fehler (0x87D103E8) | Bei der App-Installation ist ein unbekannter Fehler aufgetreten. Dieser Fehler ergibt sich, wenn kein anderer Fehler aufgetreten ist. |
+| VPP-apps kann nur unter gemeinsam genutztes iPad (-2016330861) installiert werden. | Die apps müssen mithilfe von Apple Volume Purchase Program So installieren Sie auf ein gemeinsam genutztes iPad abgerufen werden. |
+| Apps kann nicht installiert werden, wenn die App-Store deaktiviert ist (-2016330860).  | Die Store-App muss für den Benutzer zur Installation der app aktiviert sein. |
+| VPP-Lizenzen für die app (-2016330859) wurde nicht gefunden.  | Versuchen Sie es widerrufen und erneutes Zuweisen von app-Lizenz. |
+| System-apps kann nicht mit Ihrem MDM-Anbieter (-2016330858) installiert werden. | Installieren von apps, die vom iOS-Betriebssystem bereits installiert sind, ist nicht unterstützt. |
+| Wenn das Gerät im Modus für verlorene Geräte (-2016330857) befindet, können keine apps installieren. | Jegliche Nutzung des Geräts wird im Modus für verlorene Geräte blockiert.   Modus für verlorene Geräte zum Installieren von apps zu deaktivieren. |
+| Wenn das Gerät im Kiosk-Modus (-2016330856) ist, können keine apps installieren. | Versuchen Sie es dieses Gerät zu einer Gruppe ausschließen für Kiosk-Modus-Konfigurationsrichtlinie, apps zu installieren. |
+| 32-Bit-apps kann nicht auf diesem Gerät (-2016330852) installiert werden. | Das Gerät unterstützt nicht die Installation von 32-Bit-Anwendungen. Versuchen Sie die 64-Bit-Version der app bereitzustellen. |
+| Benutzer muss sich die App Store (-2016330855) anmelden. | Der Benutzer muss für die Anmeldung bei der App-Store, damit die app installiert werden kann. |
+| Unbekanntes Problem. Bitte versuchen Sie es erneut (-2016330854). | Fehler bei der app-Installation aus unbekanntem Grund.   Versuchen Sie es später erneut. |
+| Fehler bei der app-Installation. Intune versucht beim nächsten das Gerät synchronisiert sich (-2016330853). | Die app-Installation ist ein Gerätefehler aufgetreten. Synchronisieren des Geräts und zum Installieren der app erneut. |
 
 ### <a name="other-installation-errors"></a>Andere Installationsfehler
 

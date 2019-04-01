@@ -6,10 +6,11 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2010
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
@@ -17,18 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8e10549e05f814975337831e3eb9821d87a3f43
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 20c9c1bf5eea12407cba2e00288a039b74fcaca7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834006"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565637"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Änderungsprotokoll für die Intune Data Warehouse-API
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Bleiben Sie auf dem neuesten Stand bezüglich Updates für Intune Data Warehouse.
+
+## <a name="1902"></a>1902 
+_Veröffentlicht: Februar 2019_
+
+### <a name="power-bi-compliance-app"></a>Power BI-Compliance-app 
+
+Zugriff auf Ihre Intune Data Warehouse in Power BI Online mithilfe der [Intune-Konformitätsrichtlinien (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) app. Mit diesem Power BI-app können Sie jetzt Zugriff auf und Freigeben von vorab erstellten Berichten ohne dafür ein Setup und ohne Webbrowser verlassen zu müssen. 
+
+> [!NOTE]
+> Es gibt zwei zusätzliche Filter, die Sie auf die Intune-Konformitätsrichtlinien app anwenden können.
+
+#### <a name="add-additional-filters-to-the-intune-compliance-app"></a>Fügen Sie zusätzliche Filter für die app des Intune-Konformitätsrichtlinien
+1. Öffnen der [Intune-Konformitätsrichtlinien (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) -app in Ihrer Web-Browser.
+2. Klicken Sie auf **nicht konforme Geräte** , und wählen Sie **nicht konforme** in die **ComplianceStatus** Filter. 
+3. Klicken Sie auf **unbekannte Geräte** , und wählen Sie **noch nicht verfügbar.** in die **ComplianceStatus** Filter. 
 
 ## <a name="1812"></a>1812 
 _Im Dezember 2018 veröffentlicht_
@@ -83,7 +99,7 @@ Sie können <code>$select</code> als OData-Abfrageparameter verwenden. Die aktue
 ## <a name="1710"></a>1710
 _Veröffentlicht im November 2017_
 
-### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data----1544273---"></a>Eine neue Entitätssammlung namens „Aktueller Benutzer“ ist auf die Daten der momentan aktiven Benutzer beschränkt.<!-- 1544273 -->
+### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data----1544273---"></a>Eine neue Entitätssammlung namens „Aktueller Benutzer“ ist auf die Daten der derzeit aktiven Benutzer beschränkt <!-- 1544273 -->
 
 Die Entitätssammlung **Benutzer** listet alle Benutzer von Azure Active Directory (Azure AD) mit zugewiesenen Lizenzen in Ihrem Unternehmen auf. Zu diesen Datensätzen gehören Benutzerzustände während der Datensammlung, selbst wenn der Benutzer entfernt wurde. Beispielsweise kann ein Benutzer in Intune hinzugefügt und dann im Verlauf des letzten Monats entfernt worden sein. Auch wenn dieser Benutzer zum Zeitpunkt der Berichterstellung nicht vorhanden ist, liegen Angaben zu Benutzer und Zustand in den Daten vor. Sie können einen Bericht erstellen, der die Dauer der Präsenz des Benutzers in Ihren Daten zeigt.
 
@@ -92,11 +108,11 @@ Im Gegensatz dazu enthält die neue Entitätssammlung **Aktueller Benutzer** nur
 ## <a name="1709"></a>1709
 _Veröffentlicht im Oktober 2017_
 
-### <a name="user-device-association-entity-collection-added-to-intune-data-warehouse-data-model----1187917---"></a>Hinzufügen der Entitätssammlung von Benutzergerätezuordnungen zum Intune Data Warehouse-Datenmodell <!-- 1187917 -->
+### <a name="user-device-association-entity-collection-added-to-intune-data-warehouse-data-model----1187917---"></a>Eine Entitätssammlung von Benutzergerätezuordnungen wurde dem Intune Data Warehouse-Datenmodell hinzugefügt <!-- 1187917 -->
 
 Mithilfe von Informationen über Benutzergerätezuordnungen können Sie Berichte und Datenvisualisierungen erstellen, die Entitätssammlungen von Benutzern und Geräten zuordnet. Auf das Datenmodell kann über die Power BI-Datei (PBIX) zugegriffen werden, die über die Data Warehouse-Seite von Intune, den OData-Endpunkt oder durch die Entwicklung eines benutzerdefinierten Clients abgerufen wird. Weitere Informationen finden Sie unter [Zuordnung der Benutzergeräte](reports-ref-user-device.md).
 
-### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>Neue Entitäten im Data Warehouse-Datenmodell<!-- 1479526 --><!-- -->
+### <a name="new-entities-in-the-in-data-warehouse-data-model----1479526--------"></a>Neue Entitäten im Data Warehouse-Datenmodell <!-- 1479526 --><!-- -->
 
  - Die Entität [**UserDeviceAssociation**](reports-ref-user-device.md) wurde hinzugefügt. **UserDeviceAssociation** enthält Zuweisungen von Benutzergeräten in Ihrer Organisation. Mithilfe von Informationen über Benutzergerätezuordnungen können Sie Berichte und Datenvisualisierungen erstellen, die Entitätssammlungen von Benutzern und Geräten zuordnet.  
  - Die Entität [ **IntuneManagementExtension**](reports-ref-intunemanagementextension.md) wurde hinzugefügt. **IntuneManagementExtension** enthält Entitäten für mobile Geräte zur Nachverfolgung von Informationen, wie z. B. Version und Installationsstatus.

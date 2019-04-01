@@ -6,10 +6,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
-ms.topic: article
+ms.date: 02/21/2018
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
@@ -17,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71f4ce34abdb0c1b3d7dbc2bbd3f41f618715fb3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 065535bc6bb4dc586ab45ffa0a9a1250c0a1c908
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55837396"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566487"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune App SDK – Übersicht
-Das für IOS und Android verfügbare Intune App SDK aktiviert Ihre App für Intune-App-Schutzrichtlinien. Es zielt darauf ab, die vom App-Entwickler vorzunehmenden Codeänderungen zu minimieren. Sie werden feststellen, dass Sie die meisten SDK-Features aktivieren können, ohne das Verhalten Ihrer App ändern zu müssen. Um die Benutzerfreundlichkeit der App für Endbenutzer und IT-Administratoren zu verbessern, können Sie unsere APIs verwenden und so das App-Verhalten für Features anpassen, die Ihre Mitwirkung erfordern.
+Das für iOS und Android verfügbare Intune App SDK aktiviert die App für die Unterstützung der [Intune-App-Schutzrichtlinien](app-protection-policy.md). Wenn Ihre app app-Schutzrichtlinien angewendet hat, können von Intune verwaltet werden und wird von Intune als verwaltete app erkannt. Mithilfe des SDK soll die Anzahl der vom App-Entwickler vorzunehmenden Codeänderungen minimiert werden. Sie werden feststellen, dass Sie die meisten SDK-Features aktivieren können, ohne das Verhalten Ihrer App ändern zu müssen. Um die Benutzerfreundlichkeit der App für Benutzer und IT-Administratoren zu verbessern, können Sie mithilfe der SDK-APIs das App-Verhalten an die Unterstützung von Funktionen anpassen, die Ihre Mitwirkung erfordern.
 
-Nachdem Sie Ihre App für App-Schutzrichtlinien aktiviert haben, können IT-Administratoren diese Richtlinien zum Schutz ihrer Unternehmensdaten innerhalb der App bereitstellen.
+Nachdem Sie Ihre App für die Unterstützung der Intune-App-Schutzrichtlinien aktiviert haben, können IT-Administratoren diese Richtlinien zum Schutz der Unternehmensdaten innerhalb der App bereitstellen.
 
 ## <a name="app-protection-features"></a>App-Schutzfunktionen
 
@@ -51,13 +52,13 @@ IT-Administratoren können erzwingen, dass Weblinks in der App mit der [Intune M
 ### <a name="enforce-a-pin-policy"></a>Erzwingen einer PIN-Richtlinie
 IT-Administratoren können erzwingen, dass Endbenutzer eine PIN eingeben, ehe sie in der App Zugriff auf Unternehmensdaten erhalten. Dadurch wird sichergestellt, dass es sich bei der Person, die die App verwendet, um dieselben Person handelt, die sich ursprünglich mit ihrem Geschäfts-, Schul- oder Unikonto angemeldet hat. Wenn Endbenutzer ihre PIN konfigurieren, verwendet das Intune App SDK Azure Active Directory, um die Anmeldeinformationen der Endbenutzer mit den Daten des registrierten Intune-Kontos abzugleichen.
 
-### <a name="require-users-to-sign-in-with-work-or-school-account-for-app-access"></a>Benutzer zwingen, sich für den Zugriff auf die App mit einem Geschäfts-, Schul- oder Unikonto anzumelden
+### <a name="require-users-to-sign-in-with-a-work-or-school-account-for-app-access"></a>Benutzer zwingen, sich für den Zugriff auf die App mit einem Geschäfts-, Schul- oder Unikonto anzumelden
 IT-Administratoren können Benutzer zwingen, sich für den Zugriff auf die App mit ihrem Geschäfts-, Schul- oder Unikonto anzumelden. Das Intune App SDK verwendet Azure Active Directory für die Bereitstellung von einmaligem Anmelden (SSO), damit die einmal eingegebenen Anmeldeinformationen auch für nachfolgende Anmeldungen gelten. Darüber hinaus wird auch die Authentifizierung von Lösungen für die Identitätsverwaltung im Verbund mit Azure Active Directory unterstützt.
 
 ### <a name="check-device-health-and-compliance"></a>Überprüfen der Geräteintegrität und -konformität
 IT-Administratoren können die Integrität des Geräts und dessen Konformität mit den Intune-Richtlinien abgleichen, bevor Endbenutzer auf die App zugreifen. Unter iOS überprüft diese Richtlinie, ob es sich um ein Gerät handelt, auf das ein Jailbreak angewendet wurde. Unter Android überprüft diese Richtlinie, ob es sich um ein Gerät handelt, das gerootet wurde.
 
-### <a name="multi-identity-support"></a>Unterstützung mehrerer Identitäten
+### <a name="support-multi-identity"></a>Unterstützung mehrerer Identitäten
 Die Unterstützung mehrerer Identitäten (Multi-Identity Support) ist ein Feature des SDK, das die Koexistenz von per Richtlinie verwalteten Geschäftskonten und nicht verwalteten Privatkonten in einer App gestattet.
 
 So konfigurieren beispielsweise viele Benutzer in den mobilen Office-App für iOS und Android sowohl Unternehmens-E-Mail-Konten als auch private E-Mail-Konten. Wenn ein Benutzer auf Daten im Firmenkonto zugreift, muss der IT-Administrator sicher sein, dass die App-Schutzrichtlinie gilt. Wenn ein Benutzer jedoch auf ein privates E-Mail-Konto zugreift, sollten sich diese Daten außerhalb der Kontrolle des IT-Administrators befinden. Das Intune App SDK erreicht dies durch Begrenzen der App-Schutzrichtlinie auf **ausschließlich** die Firmenidentität in der App.
@@ -80,4 +81,4 @@ Weitere Informationen zu Citrix MDX finden Sie in den Artikeln zu den [Grundlage
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Erfahren Sie mehr über [App-Schutzrichtlinien](app-protection-policy.md).
+- [Erste Schritte mit dem Microsoft Intune App SDK](app-sdk-get-started.md)

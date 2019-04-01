@@ -10,18 +10,20 @@ ms.date: 01/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 2eae4ea2bfabe1b41af88ae34b81fbf12ef5f9d9
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297501"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57400482"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune Data Warehouse-Sammlungen
 
@@ -343,7 +345,7 @@ Die Entität **enrollmentEventStatus** gibt das Ergebnis einer Geräteregistrier
 | Nicht verfügbar              | Der Registrierungsstatus ist nicht verfügbar.  |
 
 ## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
-Die Entität **EnrollmentFailureCategory** gibt an, warum eine Geräteregistrierung fehlgeschlagen ist. 
+Die Entität **enrollmentFailureCategory** gibt an, warum eine Geräteregistrierung fehlgeschlagen ist. 
 
 | Eigenschaft                       | Beschreibung                                                                                 |
 |--------------------------------|---------------------------------------------------------------------------------------------|
@@ -390,7 +392,7 @@ Die Entität **enrollmentFailureReason** gibt eine ausführlichere Ursache für 
 | EnrollmentOnboardingIssue        | Die Intune-Autorität für die mobile Geräteverwaltung (MDM) ist noch nicht konfiguriert.                                                                                                                                 |
 | AppleChallengeIssue              | Die Installation des iOS-Verwaltungsprofils hat sich verzögert oder war fehlerhaft.                                                                                                                                         |
 | AppleOnboardingIssue             | Für die Registrierung in Intune ist ein Apple-MDM-Pushzertifikat erforderlich.                                                                                                                                       |
-| DeviceCap                        | Der Benutzer hat versucht, mehr Geräte zu registrieren, als maximal erlaubt sind.                                                                                                                                        |
+| DeviceCap                        | Der Benutzer hat versucht, mehr Geräte zu registrieren, als maximal zulässig sind.                                                                                                                                        |
 | AuthenticationRequirementNotMet  | Der Intune-Registrierungsdienst konnte diese Anforderung nicht autorisieren.                                                                                                                                            |
 | UnsupportedDeviceType            | Das Gerät erfüllt nicht die Mindestanforderungen für die Intune-Registrierung.                                                                                                                                  |
 | EnrollmentCriteriaNotMet         | Dieses Gerät konnte aufgrund einer konfigurierten Regel zur Einschränkung von Registrierungen nicht registriert werden.                                                                                                                          |
@@ -505,7 +507,10 @@ Die Entität **ownerType** gibt an, ob ein Gerät einem Unternehmen oder einer P
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Eindeutiger Bezeichner des Besitzertyps                                                                                                                                               |                            |
 | ownerTypeKey  | Eindeutiger Bezeichner des Besitzertyps im Data Warehouse – Ersatzschlüssel.                                                                                                       |                            |
-| ownerTypeName | Stellt den Besitzertypen der Geräte dar:  Unternehmen: Das Gerät gehört einem Unternehmen.  Persönlich: Das Gerät befindet sich im Privatbesitz (BYOD).   Unbekannt: Es liegen keine Informationen zu diesem Gerät vor. | Unternehmen, Persönlich, Unbekannt |
+| ownerTypeName | Stellt den Besitzertyp der Geräte dar: Unternehmen: Das Gerät gehört einem Unternehmen.  Persönlich: Das Gerät befindet sich im Privatbesitz (BYOD).   Unbekannt: Es liegen keine Informationen zu diesem Gerät vor. | Unternehmen Personal, Unknown |
+
+> [!Note]  
+> Für die `ownerTypeName` Filter in Azure AD, wenn Sie dynamische Gruppen für Geräte zu erstellen, müssen Sie zum Festlegen des Werts `deviceOwnership` als `Company`. Weitere Informationen finden Sie unter [Regeln für Geräte,](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="policies"></a>Richtlinien
 Die Entität **Policy** (Richtlinie) listet Gerätekonfigurationsprofile, Appkonfigurationsprofile und Kompatibilitätsrichtlinien auf. Sie können die Richtlinien mit der mobilen Geräteverwaltung (MDM) zu einer Gruppe in Ihrem Unternehmen zuweisen.

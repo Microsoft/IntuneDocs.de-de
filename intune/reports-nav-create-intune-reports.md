@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/14/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 57019B11-DF9B-4D8A-95FE-254C75398DDE
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ac6591256e1bb45c0e2ac9c1d6fe9ac213b106a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: c3112683d44b7c4d4a3e9d1bccc6fb8c06450600
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234034"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "58069119"
 ---
 # <a name="use-the-microsoft-intune-data-warehouse"></a>Verwenden des Data Warehouse von Microsoft Intune
 
@@ -42,7 +43,7 @@ Das Data Warehouse bietet Ihnen Zugriff auf mehr Informationen über Ihre mobile
   -  Ein Datenmodell, das den OData-Standard verwendet
 
 > [!Note]
-> Wenn Sie eine hybride Verwaltung mobiler Geräte (mobile device management, MDM) mit System Center Configuration Manager und Microsoft Intune verwenden, sollten Sie Ihre Daten aus SCCM abrufen. Das Intune Data Warehouse enthält nur Intune-Daten. Sie können ein SCCM Power BI-Dashboard für Ihre benutzerdefinierten Berichte verwenden. Weitere Informationen finden Sie unter [Announcing the Power BI solution template for System Center Configuration Manager (Ankündigung der Power BI-Lösungsvorlage für System Center Configuration Manager)]( https://powerbi.microsoft.com/blog/sccm-solution-template) und [Power BI-Inhalt für Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page).
+> Wenn Sie eine gemeinsame Verwaltung mobiler Geräte (Mobile Device Management, MDM) mit System Center Configuration Manager und Microsoft Intune verwenden, müssen Sie Ihre Daten aus Configuration Manager abrufen. Das Intune Data Warehouse enthält nur Intune-Daten. Sie können eine Configuration Manager-Power-BI-Dashboard für Ihre benutzerdefinierten Berichte verwenden. Weitere Informationen finden Sie unter [Announcing the Power BI solution template for System Center Configuration Manager (Ankündigung der Power BI-Lösungsvorlage für System Center Configuration Manager)]( https://powerbi.microsoft.com/blog/sccm-solution-template) und [Power BI-Inhalt für Dynamics 365](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page).
 
 > [!Important]  
 > Jetzt können Sie die Version v1.0 von Intune Data Warehouse durch Festlegen des Abfrageparameters  `api-version=v1.0`verwenden. Updates von Sammlungen in Data Warehouse bauen aufeinander auf und beschädigen keine vorhandenen Szenarios.<br><br>
@@ -52,4 +53,4 @@ Das Data Warehouse bietet Ihnen Zugriff auf mehr Informationen über Ihre mobile
 
 - Rufen Sie einen Link ab und verwenden Sie Power BI, um Einblicke zu erhalten. Anweisungen hierzu finden Sie unter [Connect to the Intune Data Warehouse with Power BI (Verbinden mit dem Data Warehouse von Intune mit Power BI)](reports-proc-get-a-link-powerbi.md).
 - Erstellen Sie mit Ihrem Link einen benutzerdefinierten Bericht mit Power BI. Weitere Anweisungen hierzu finden Sie unter [Create a report from the OData feed with Power BI (Erstellen eines Berichts aus dem OData-Feed mit Power BI)](reports-proc-create-with-odata.md).
-- Weitere Informationen über die Intune-Data Warehouse-API, das Datenmodell und Beziehungen zwischen Entitäten<!-- , and an example of creating a custom client to retrieve data,--> finden Sie unter [Intune Data Warehouse-API](reports-nav-intune-data-warehouse.md).
+- Weitere Informationen über die Intune Data Warehouse-API, das Datenmodell und Beziehungen zwischen Entitäten<!-- , and an example of creating a custom client to retrieve data,--> finden Sie unter [Intune Data Warehouse-API](reports-nav-intune-data-warehouse.md).

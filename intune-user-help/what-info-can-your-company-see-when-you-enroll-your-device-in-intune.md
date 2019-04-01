@@ -18,10 +18,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 91ea3aab5cd04624bfa036615b8d7710573bcae1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55846977"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Welche Informationen erhält meine Organisation, wenn ich mein Gerät registriere?
@@ -43,7 +43,7 @@ Ihre Organisation kann Ihre privaten Informationen nicht einsehen, wenn Sie ein 
 - Gerätemodell, z.B. Google Pixel
 - Gerätehersteller, z.B. Microsoft
 - Betriebssystem und Version, z.B. iOS 12.0.1
-- App-Namen, z.B. „Microsoft Word“: Auf persönlichen Geräten kann Ihre Organisation nur sehen, welche verwalteten Apps installiert sind. Auf unternehmenseigenen Geräten kann Ihre Organisation alle installierten Apps sehen.
+- App-Namen wie Microsoft Word: Auf persönlichen Geräten kann Ihre Organisation nur sehen, welche verwalteten Apps installiert sind. Auf unternehmenseigenen Geräten kann Ihre Organisation alle installierten Apps sehen.
 - Geräteeigentümer
 - Gerätename
 - Seriennummer des Geräts
@@ -51,8 +51,8 @@ Ihre Organisation kann Ihre privaten Informationen nicht einsehen, wenn Sie ein 
 
 **Was Ihre Organisation möglicherweise außerdem sehen kann:**
 
--  Telefonnummer: Bei **unternehmenseigenen** Geräten ist Ihre vollständige Telefonnummer zu sehen. Bei Geräten, die **persönliches** Eigentum sind, werden der Organisation nur die letzten vier Ziffern Ihrer Telefonnummer angezeigt. Um den **Besitztyp** jedes einzelnen Geräts festzustellen, öffnen Sie die Seite **Gerätedetails** des Geräts.
-- Speicherplatz auf dem Gerät: Wenn Sie eine erforderliche App nicht installieren können, prüft Ihre Organisation möglicherweise den freien Speicherplatz auf Ihrem Gerät, um festzustellen, ob der Speicherplatz nicht ausreicht.  
--  Speicherort: Ihre Organisation kann den Standort Ihres Geräts niemals anzeigen, es sei denn, Sie müssen ein überwachtes iOS-Gerät auffinden, das verloren gegangen ist. In der [Dokumentation zu Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) erhalten Sie weitere Informationen zu überwachten Geräten.  
-- App-Bestand: Wenn Ihr Unternehmen Mobile Threat Defense verwendet, können weitere Informationen zu den Apps auf Ihrem iOS-Gerät eingesehen werden. Erfahren Sie mehr über [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+-  Telefonnummer: Bei **unternehmenseigenen** Geräten wird möglicherweise Ihre vollständige Telefonnummer angezeigt. Bei Geräten, die **persönliches** Eigentum sind, werden der Organisation nur die letzten vier Ziffern Ihrer Telefonnummer angezeigt. Um den **Besitztyp** jedes einzelnen Geräts festzustellen, öffnen Sie die Seite **Gerätedetails** des Geräts.
+- Speicherplatz auf dem Gerät: Wenn Sie eine erforderliche App installieren, prüft Ihre Organisation möglicherweise den freien Speicherplatz auf Ihrem Gerät, um festzustellen, ob genügend Speicherplatz vorhanden ist.  
+-  Standort: Ihre Organisation kann den Standort Ihres Geräts niemals anzeigen, sofern Sie nicht ein überwachtes iOS-Gerät auffinden müssen, das verloren gegangen ist. In der [Dokumentation zu Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) erhalten Sie weitere Informationen zu überwachten Geräten.  
+- App-Bestand: Wenn Ihr Unternehmen Mobile Threat Defense verwendet, können Informationen zu den Apps auf Ihrem iOS-Gerät eingesehen werden. Erfahren Sie mehr über [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
 - Netzwerkinformationen: Möglicherweise sind einige Informationen über Netzwerkverbindungen für Android-Geräte für den Support Ihrer Organisation verfügbar. Wenn Ihre Organisation beispielsweise verlangt, dass Geräte in einem bestimmten Gebäude bleiben, identifiziert Ihr Gerät das Netzwerk, mit dem es verbunden ist. 

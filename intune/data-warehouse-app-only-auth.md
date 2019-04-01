@@ -7,21 +7,23 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/11/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: d7166563-6bb5-4624-b8c8-6b300a997c3a
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 096a6ee5d2f80600d800293ae9b5d4be6a07b027
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d3511644b9de87cb3f2d36ad3f3c738663085c02
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642794"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57564787"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Nur-Anwendung-Authentifizierung von Intune Data Warehouse
 

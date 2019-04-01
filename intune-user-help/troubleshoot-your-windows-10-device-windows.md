@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/13/2017
+ms.date: 03/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,15 +18,15 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3dba2401240b19b93318946af0e8760fef121518
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55837576"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Behandlung von Problemen bei der Registrierung von Windows 10-Geräten
-Wenn Sie die Schritte unter [Registrieren Ihres Windows 10 Mobile- oder Windows 10-Desktopgeräts bei Intune](enroll-your-w10-phone-or-w10-pc-windows.md) befolgt haben, aber dennoch nicht auf E-Mails und Dateien Ihres Geschäfts-, Schul- oder Unikontos zugreifen können, führen Sie zur Problembehandlung die folgenden Schritte durch.
+Wenn Sie Ihr Gerät registriert haben, aber immer noch Zugriff können nicht auf Ihre Geschäfts- oder Schul-e-Mail und Dateien, versuchen Sie diese Schritte zur Problembehandlung.  
 
 1.  Sehen Sie sich die beiden folgenden Bildschirme an, und suchen Sie denjenigen heraus, der der Anzeige auf Ihrem Gerät entspricht. Befolgen Sie die Schritte, die zu diesem Bildschirm gehören.
 
@@ -48,13 +48,13 @@ Wenn Sie die Schritte unter [Registrieren Ihres Windows 10 Mobile- oder Windows 
 
      ![validate-successful-enrollment](./media/w10-enroll-rs1-validate-successful-enrollment.png)
 
-   - Wenn die oben gezeigten Verbindungsinformationen nicht angezeigt werden oder einige Optionen fehlen, tippen Sie auf **Verbinden**, und melden Sie sich mit den Anmeldeinformationen für Ihr Geschäfts-, Schul- oder Unikonto an. Jetzt sollte eine Verbindung hergestellt sein.
+   - Wenn die oben gezeigte Verbindungsinformationen nicht angezeigt oder angezeigt, aber es einige der Optionen fehlen, tippen Sie auf **Connect**. Melden Sie sich anschließend mit Ihren Geschäfts-, Schul- oder Unianmeldeinformationen an, um eine Verbindung herzustellen.  
 
 ## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Schritte zur Problembehandlung bei Anzeige von „Mein Konto“
 
 Wenn Sie die obigen Schritte ausgeführt haben und trotzdem nicht auf E-Mails, Dateien und andere Daten Ihres Geschäfts-, Schul- oder Unikontos zugreifen können, wechseln Sie zurück zu **Konten**, und tippen Sie auf **Geschäftszugriff**.
 
-- Wenn Ihr Geschäfts- oder Schulkonto angezeigt wird, sind keine weiteren Schritte erforderlich. Sie sind verbunden.
+- Wenn Sie Ihr Geschäfts- oder schulkonto an, die aufgeführt, sind Sie verbunden.  
 
 - Wenn Ihr Geschäfts- oder Schulkonto nicht angezeigt wird, tippen Sie auf **Verbinden**, und melden Sie sich mit den Anmeldeinformationen Ihres Geschäfts- oder Schulkontos an.
 

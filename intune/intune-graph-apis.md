@@ -7,20 +7,22 @@ author: dougeby
 manager: dougeby
 ms.author: dougeby
 ms.date: 03/08/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5129484a3cfea873be4009849b5989f9c2acd888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8625eddaa3c6223767c7c93022275b028b4a145b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187446"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566555"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Verwenden von Azure AD für den Zugriff auf die Intune-APIs in Microsoft Graph
 
@@ -146,13 +148,13 @@ __Remoteaktionen mit Auswirkungen auf Benutzer auf Microsoft Intune-Geräten aus
 __Microsoft Intune-Geräte lesen und schreiben__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Microsoft Intune-Geräte lesen__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Einstellungen für die rollenbasierte Zugriffssteuerung von Microsoft Intune-Geräten lesen und schreiben__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__Einstellungen für die rollenbasierte Zugriffssteuerung von Microsoft Intune-Geräten lesen__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__Einstellungen für die rollenbasierte Zugriffssteuerung von Microsoft Intune-Geräten lesen__ | DeviceManagementRBAC.Read.All
 __Microsoft Intune-Apps lesen und schreiben__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
 __Microsoft Intune-Apps lesen__ | [DeviceManagementApps.Read.All](#app-ro)
-__Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen und schreiben__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+__Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen und schreiben__ | DeviceManagementConfiguration.ReadWrite.All
 __Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
 __Microsoft Intune-Konfiguration lesen und schreiben__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
-__Microsoft Intune-Konfiguration lesen__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
+__Microsoft Intune-Konfiguration lesen__ | DeviceManagementServiceConfig.Read.All
 
 Die Tabelle enthält die Einstellungen in der Reihenfolge, in der sie im Azure-Portal angezeigt werden. In den folgenden Abschnitten werden die Bereiche in alphabetischer Reihenfolge beschrieben.
 
@@ -588,7 +590,7 @@ Denken Sie daran, den Benutzer bei Bedarf anderen Rollen hinzuzufügen. Um beisp
 
 Ferner gilt Folgendes:
 
-- Verwenden Sie https://portal.office.com, um Ihrem Benutzerkonto eine Intune-Lizenz zuzuweisen.
+- Verwenden Sie https://admin.microsoft.com, um Ihrem Benutzerkonto eine Intune-Lizenz zuzuweisen.
 
 - Ändern Sie den Anwendungscode so, dass die Azure AD-Mandantendomäne des Clients und nicht Ihre eigene authentifiziert wird.
 

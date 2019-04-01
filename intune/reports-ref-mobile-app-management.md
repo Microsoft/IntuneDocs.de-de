@@ -6,10 +6,11 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a21194b218cc7df230bf1ef1969b8d4483940d75
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7ea3e2c87055e4f111c8f12c47c468dff2c4e587
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238760"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565688"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Verweis für MAM-Entitäten (Verwaltung mobiler Apps)
 
@@ -83,12 +84,12 @@ Die Entität **MamCheckin** stellt Daten dar, die gesammelt wurden, als eine MAM
 | Eigenschaft | Beschreibung | Beispiel |
 |---------|------------|--------|
 | DateKey |Date Key für den Zeitpunkt als das Einchecken der MAM-App im Data Warehouse aufgezeichnet wurde | 20160703 |
-| ApplicationInstanceKey |Schlüssel der App-Instanz, der diesem Eincheckvorgang der MAM-App zugeordnet wird |02.5.1900 12:00:00 |
-| UserKey |Schlüssel des Benutzers, der diesem Eincheckvorgang der MAM-App zugeordnet wird |12.01.1900 12:00:00 |
-| ApplicationKey |Schlüssel der MAM-App, der eingecheckt wurde |10.01.1900 12:00:00 |
-| DeviceHealthKey |Schlüssel von DeviceHealth, der diesem Eincheckvorgang der MAM-App zugeordnet wird |02.01.1900 12:00:00 |
-| PlatformKey |Stellt die Plattform des Geräts dar, die diesem Eincheckvorgang der MAM-App zugeordnet wird |01.01.1900 12:00:00 |
-| EffectiveAppliedPolicyKey |Stellt die effektiv angewendete Richtlinie dar, die mit der MAM-App in Verbindung gebracht wird, die eingecheckt wurde. Eine effektiv angewendete Richtlinie stammt vom Zusammenfügen aller Richtlinien, die für eine bestimmte App und einen Benutzer relevant sind. |02.5.1900 12:00:00 |
+| ApplicationInstanceKey |Schlüssel der App-Instanz, der diesem Eincheckvorgang der MAM-App zugeordnet wird | 123 |
+| UserKey |Schlüssel des Benutzers, der diesem Eincheckvorgang der MAM-App zugeordnet wird | 4323 |
+| ApplicationKey |Schlüssel der MAM-App, der eingecheckt wurde |234 |
+| DeviceHealthKey |Schlüssel von DeviceHealth, der diesem Eincheckvorgang der MAM-App zugeordnet wird | 321 |
+| PlatformKey |Stellt die Plattform des Geräts dar, die diesem Eincheckvorgang der MAM-App zugeordnet wird |123 |
+| EffectiveAppliedPolicyKey |Stellt die effektiv angewendete Richtlinie dar, die mit der MAM-App in Verbindung gebracht wird, die eingecheckt wurde. Eine effektiv angewendete Richtlinie stammt vom Zusammenfügen aller Richtlinien, die für eine bestimmte App und einen Benutzer relevant sind. | 322 |
 | LastCheckInDate |Datum und Uhrzeit, wann diese MAM-App zuletzt eingecheckt wurde. Der Wert kann NULL sein. |23.11.2016 12:00:00 Uhr |
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
@@ -97,8 +98,8 @@ Die Entität **MamDeviceHealth** stellt Geräte dar, die bereitgestellte MAM-Ric
 
 | Eigenschaft | Beschreibung | Beispiel |
 |---------|------------|--------|
-| DeviceHealthKey |Eindeutiger Bezeichner des Geräts, der der Integrität im Data Warehouse zugeordnet wird – Ersatzschlüssel |01.01.1900 12:00:00 |
-| DeviceHealth |Eindeutiger Bezeichner des Geräts und dessen Integrität – ähnlich wie DeviceHealthKey, allerdings ist der Bezeichner ein natürlicher Schlüssel |01.01.1900 12:00:00 |
+| DeviceHealthKey |Eindeutiger Bezeichner des Geräts, der der Integrität im Data Warehouse zugeordnet wird – Ersatzschlüssel |123 |
+| DeviceHealth |Eindeutiger Bezeichner des Geräts und dessen Integrität – ähnlich wie DeviceHealthKey, allerdings ist der Bezeichner ein natürlicher Schlüssel |b66bc706-ffff-7777-0340-032819502773 |
 | DeviceHealthName |Stellt den Status des Geräts dar. <br>Nicht verfügbar – keine Informationen zu diesem Gerät. <br>Fehlerfrei: Gerät wurde nicht per Jailbreak manipuliert. <br>Nicht Fehlerfrei: Gerät wurde per Jailbreak manipuliert. |Nicht verfügbar fehlerfrei nicht fehlerfrei |
 | RowLastModifiedDateTimeUtc |Datum und Uhrzeit in UTC, als diese bestimmte MAM-Geräteintegrität im Data Warehouse zuletzt geändert wurde |23.11.2016 12:00:00 Uhr |
 

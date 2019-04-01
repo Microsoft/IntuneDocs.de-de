@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: dagerrit
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38087afa95dc5933b55e6342ad46386cf0185f42
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: c2a8c234c305744c48785763c87913c2635276ad
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228968"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565603"
 ---
 # <a name="windows-10-and-newer-device-settings-to-upgrade-editions-or-enable-s-mode-in-intune"></a>Windows 10-Geräteeinstellungen (und höher) zum Upgrade von Editionen oder Aktivieren des S-Modus in Intune
 
@@ -37,15 +38,15 @@ Weitere Informationen zu diesem Feature finden Sie unter [Verwenden eines Konfig
 
 ## <a name="edition-upgrade"></a>Upgrade der Edition
 
-- **Edition, auf die upgegradet werden soll**: Wählen Sie die Windows 10-Edition aus, auf die Sie das Upgrade durchführen. Für die Geräte, die das Ziel dieser Richtlinie sind, wird ein Upgrade auf die von Ihnen gewählte Edition durchgeführt.
-- **Product Key**: Geben Sie den Product Key ein, den Sie von Microsoft erhalten haben. Nach dem Erstellen der Richtlinie mit dem Product Key kann dieser nicht aktualisiert werden und wird aus Sicherheitsgründen ausgeblendet. Geben Sie den gesamten Schlüssel erneut ein, um den Product Key zu ändern.
-- **Lizenzdatei**: Wählen Sie für **Windows 10 Holographic for Business** oder die **Windows 10 Mobile**-Edition **Durchsuchen** aus, um die Lizenzdatei auszuwählen, die Sie von Microsoft erhalten haben. Diese Lizenzdatei enthält Lizenzinformationen für die Editionen, auf die Sie die Geräte upgraden.
+- **Edition, auf die upgegradet werden soll:** Wählen Sie die Windows 10-Edition aus, auf die Sie das Upgrade durchführen. Für die Geräte, die das Ziel dieser Richtlinie sind, wird ein Upgrade auf die von Ihnen gewählte Edition durchgeführt.
+- **Product Key:** Geben Sie den Product Key ein, den Sie von Microsoft erhalten haben. Nach dem Erstellen der Richtlinie mit dem Product Key kann dieser nicht aktualisiert werden und wird aus Sicherheitsgründen ausgeblendet. Geben Sie den gesamten Schlüssel erneut ein, um den Product Key zu ändern.
+- **Lizenzdatei:** Wählen Sie für **Windows 10 Holographic for Business** oder die **Windows 10 Mobile**-Edition **Durchsuchen** aus, um die Lizenzdatei auszuwählen, die Sie von Microsoft erhalten haben. Diese Lizenzdatei enthält Lizenzinformationen für die Editionen, auf die Sie die Geräte upgraden.
 
 ## <a name="mode-switch"></a>Moduswechsel
 
-- **Keine Konfiguration**: Ein S-Modusgerät bleibt im S-Modus. Ein Endbenutzer kann das Gerät aus dem S Modus holen.
-- **Im S Modus lassen**: Der Endbenutzer kann das Gerät nicht aus dem S-Modus holen.
-- **Verlassen**: Das Gerät wird aus dem S-Modus geholt.
+- **Keine Konfiguration**: Ein Gerät im S-Modus bleibt im S-Modus. Ein Endbenutzer kann das Gerät aus dem S Modus holen.
+- **Keep in S mode** (Im S Modus lassen): Der Endbenutzer kann das Gerät nicht aus dem S Modus holen.
+- **Switch** (Verlassen): Das Gerät wird aus dem S Modus geholt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

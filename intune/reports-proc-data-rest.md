@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/10/2019
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: D6D15039-4036-446C-A58F-A5E18175720A
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c43b27a07aa5eafc19ce1528bbfe34c1a6dbb1d
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 0e57d197cadf2ba6586aa39fdc5dbb9cddba554c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839466"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566572"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Abrufen von Daten aus der Intune-Data Warehouse-API mit einem REST-Client
 
@@ -164,7 +165,7 @@ Das folgende Beispiel enthält einen einfachen REST-Client. Der Code verwendet d
 
     ![„Program.cs“ und Projektmappen-Explorer in Visual Studio](./media/reports-get_rest_data_in.png)
 
-8. Ersetzen Sie den Code in „Program.cs“ durch den folgenden Code:  
+8. Ersetzen Sie den Code in *Program.cs* durch den folgenden Code:  
    ```csharp
    namespace IntuneDataWarehouseSamples
    {

@@ -1,8 +1,16 @@
+---
+ms.openlocfilehash: 9a18bceb6b42f06464baf31a4cdd4dea21d19675
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461293"
+---
 ## <a name="april-2017"></a>April 2017
 
 ### <a name="new-capabilities"></a>Neue Funktionen
 
-#### <a name="myapps-available-for-managed-browser---822308-822303--"></a>MyApps verfügbar für Managed Browser <!--822308, 822303-->
+#### <a name="myapps-available-for-managed-browser---822308-822303--"></a>„Meine Apps“ für Managed Browser verfügbar <!--822308, 822303-->
 
 Microsoft MyApps verfügen jetzt über eine bessere Unterstützung innerhalb von Managed Browser. Managed Browser-Benutzer, die nicht für die Verwaltung vorgesehen sind, werden direkt an den MyApps-Dienst weitergeleitet, wo sie auf ihre durch den Administrator bereitgestellte SaaS-Apps zugreifen können. Benutzer, die für die Verwendung für die Intune-Verwaltung ausgelegt sind, können weiterhin auf MyApps vom integrierten Managed Browser-Lesezeichen aus zugreifen.
 
@@ -16,7 +24,7 @@ Die Symbole für die Android-, iOS- und Windows-Versionen der App werden im Unte
 
 Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der Anmeldung an, wenn der Benutzer die App startet oder fortsetzt. Die Statusanzeige durchläuft die neuen Phasen, beginnend mit „Verbindung wird aufgebaut“, „Anmeldung“ und dann „Suchen nach Sicherheitsanforderungen“, bevor dem Benutzer der Zugriff auf die App gewährt wird. Screenshots der neuen Bildschirme für die Unternehmensportal-App finden Sie auf der Seite mit den [Neuerungen der Intune-App-Benutzeroberfläche](/intune/whats-new-app-ui).
 
-#### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Verhindern, dass Apps auf SharePoint Online zugreifen<!-- 679339 -->
+#### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Verhindern, dass Apps auf SharePoint Online zugreifen <!-- 679339 -->
 
 Sie können jetzt eine Richtlinie für den App-basierten bedingten Zugriff erstellen, um Apps, auf die keine Schutzrichtlinien angewendet wurden, am Zugriff auf [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online) zu hindern. Im Szenario des App-basierten bedingten Zugriffs können Sie Apps festlegen, die über das Azure-Portal auf SharePoint Online zugreifen können sollen.
 
@@ -37,9 +45,9 @@ Sie können die neue Statusanzeige auf der Seite [Aktualisierungen für die Benu
 
 #### <a name="bulk-enroll-windows-10-devices----747607---"></a>Massenregistrierung von Windows 10-Geräten <!-- 747607 -->
 
-Sie können jetzt eine große Anzahl von Geräten, auf denen das Windows 10 Creators Update ausgeführt wird, mit Windows Configuration Designer (WCD) in Azure Active Directory und Intune einbinden. Um die [MDM-Massenregistrierung](/intune-classic/deploy-use/bulk-enroll-windows) für Ihren Azure AD-Mandanten zu aktivieren, erstellen Sie ein Bereitstellungspaket, das Geräte mithilfe von Windows Configuration Designer in Ihren Azure AD-Mandanten einbindet. Sie können das Paket auf alle unternehmenseigenen Geräte anwenden, die Sie per Massenvorgang registrieren und verwalten möchten. Nachdem das Paket auf Ihre Geräte angewendet wurde, werden die Geräte in Azure AD eingebunden und bei Intune registriert. Die Geräte sind dann bereit für die Anmeldung durch Ihre Azure AD-Benutzer.  Azure AD-Benutzer sind auf diesen Geräten Standardbenutzer und erhalten zugewiesene Richtlinien sowie erforderliche Apps. Die Verwendung von Self-Service-Funktionen und Unternehmensportalen wird derzeit nicht unterstützt.
+Sie können jetzt eine große Anzahl von Geräten, auf denen das Windows 10 Creators Update ausgeführt wird, mit Windows Configuration Designer (WCD) in Azure Active Directory und Intune einbinden. Um die [MDM-Massenregistrierung](/intune-classic/deploy-use/bulk-enroll-windows) für Ihren Azure AD-Mandanten zu aktivieren, erstellen Sie ein Bereitstellungspaket, das Geräte mithilfe von Windows Configuration Designer in Ihren Azure AD-Mandanten einbindet. Sie können das Paket auf alle unternehmenseigenen Geräte anwenden, die Sie per Massenvorgang registrieren und verwalten möchten. Nachdem das Paket auf Ihre Geräte angewendet wurde, werden die Geräte in Azure AD eingebunden und bei Intune registriert. Die Geräte sind dann bereit für die Anmeldung durch Ihre Azure AD-Benutzer.  Azure AD-Benutzer sind auf diesen Geräten Standardbenutzer und erhalten zugewiesene Richtlinien sowie erforderliche Apps. Die Verwendung von Self-Service-Funktionen und Unternehmensportalen wird derzeit nicht unterstützt.
 
-### <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Neuigkeiten in der öffentlichen Vorschau der neuen Intune-Administratoroberfläche auf Azure <!--736542-->
+### <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Neuigkeiten in der öffentlichen Vorschau der Intune-Administratoroberfläche auf Azure <!--736542-->
 
 Anfang 2017 erfolgt die Migration der gesamten Administratoroberfläche zu Azure. Dies ermöglicht die leistungsstarke und integrierte Verwaltung von EMS-Kernworkflows in einer modernen, mit Grafik-APIs erweiterbaren Dienstplattform.
 
@@ -51,11 +59,11 @@ Neuigkeiten in der Intune-Vorschau in Azure finden Sie [hier](/intune/whats-new)
 
 ### <a name="notices"></a>Benachrichtigungen
 
-#### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Direkter Zugriff auf Apple-Registrierungsszenarien <!--951869-->
+#### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Direkter Zugriff auf Apple-Registrierungsszenarios <!--951869-->
 
 Für Intune-Konten, die nach Januar 2017 erstellt wurden, hat Intune direkten Zugriff auf Apple-Registrierungsszenarien mithilfe der Workload „Geräte registrieren“ im Azure-Vorschauportal aktiviert. Bisher konnte nur über Links im klassischen Intune-Portal auf die Apple-Registrierungsvorschau zugegriffen werden. Vor Januar 2017 erstellte Intune-Konten erfordern eine einmalige Migration, bevor diese Features in Azure verfügbar sind. Der Zeitplan für die Migration wurde noch nicht angekündigt, aber Sie erfahren so bald wie möglich Näheres. Wir empfehlen Ihnen dringend, ein Testkonto zu erstellen, um die neue Oberfläche zu testen, wenn Sie mit Ihrem vorhandenen Konto nicht auf die Vorschau zugreifen können.
 
-#### <a name="whats-coming-for-appx-in-intune-in-the-azure-portal----1000270---"></a>Neuigkeiten für APPX in Intune im Azure-Portal <!-- 1000270 -->
+#### <a name="whats-coming-for-appx-in-intune-in-the-azure-portal----1000270---"></a>Anstehende Neuerungen bei APPX in Intune im Azure-Portal <!-- 1000270 -->
 
 Im Rahmen der Migration zu Intune im Azure-Portal werden wir drei APPX-Änderungen vornehmen:
 
@@ -73,23 +81,23 @@ Nach der Migration müssen Sie die APPX erneut als PC-APPX hochladen, wenn Sie n
 
 #### <a name="administration-roles-being-replaced-in-azure-portal"></a>Administratorrollen werden im Azure-Portal ersetzt
 
-Die in der Verwaltung mobiler Anwendungen (Mobile Application Management, MAM) vorhandenen Administratorrollen (Mitwirkender, Besitzer und Schreibgeschützt), die im klassischen Intune-Portal (Silverlight) verwendet werden, werden im Intune-Azure-Portal durch einen vollständigen Satz neuer rollenbasierter Zugriffssteuerung (Role-Based Access Control, RBAC) ersetzt. Nach der Migration zum Azure-Portal müssen Sie die Administratoren diesen neuen Administratorrollen neu zuweisen. Weitere Informationen zu RBAC und den neuen Rollen finden Sie unter [Rollenbasierte Zugriffssteuerung für Microsoft Intune](/intune/role-based-access-control).
+Die Administratorrollen (Mitwirkender, Besitzer und Schreibgeschützt) für die Verwaltung mobiler Anwendungen (Mobile Application Management, MAM), die im klassischen Intune-Portal (Silverlight) verwendet werden, werden im Intune-Azure-Portal durch mehrere neue Steuerelemente für die rollenbasierte Verwaltung ersetzt. Nach der Migration zum Azure-Portal müssen Sie die Administratoren diesen neuen Administratorrollen neu zuweisen. Weitere Informationen zu RBAC und den neuen Rollen finden Sie unter [Rollenbasierte Zugriffssteuerung für Microsoft Intune](/intune/role-based-access-control).
 
 ### <a name="whats-coming"></a>Was steht an?
 
-#### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Verbesserter Anmeldevorgang für alle Unternehmensportal-Apps auf allen Plattformen <!--User Story 1132123-->
+#### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Verbesserte Anmeldefunktion für alle Unternehmensportal-Apps auf allen Plattformen <!--User Story 1132123-->
 
 Wir kündigen eine in den nächsten Monaten kommende Änderung an, durch die der Anmeldevorgang für die Intune-Unternehmensportal-Apps für Android, iOS und Windows verbessert wird. Die neue Benutzeroberfläche wird für die Unternehmensportal-App automatisch auf allen Plattformen eingeführt, sobald Azure AD die Änderung umsetzt. Darüber hinaus können Benutzer sich jetzt mithilfe eines generierten Codes zur einmaligen Verwendung von einem anderen Gerät aus beim Unternehmensportal anmelden. Dies ist besonders nützlich, wenn Benutzer sich ohne Anmeldeinformationen anmelden müssen.
 
 Screenshots der vorherigen Anmeldeoberfläche, der neuen Anmeldeoberfläche mit Anmeldeinformationen und der neuen Anmeldeoberfläche zur Anmeldung von einem anderen Gerät aus finden Sie auf der Seite mit den [Neuerungen der App-Benutzeroberfläche](/intune/whats-new-app-ui).
 
-#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Stellen Sie sich auf eine Änderung ein: Intune ändert die Oberfläche des Intune-Partnerportals <!-- 1050016 -->
+#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>Geplante Änderung: Intune ändert die Oberfläche des Intune-Partnerportals <!-- 1050016 -->
 
 Ab dem Dienstupdate Mitte Mai 2017 entfernen wir die Intune-Partnerseite von manage.microsoft.com.  
 
 Wenn Sie ein Partneradministrator sind, können Sie über die Intune-Partnerseite nicht mehr im Namen Ihrer Kunden Elemente anzeigen und Aktionen durchführen. Stattdessen müssen Sie sich bei einer der beiden anderen Partnerportale von Microsoft anmelden.
 
-Sowohl das [Microsoft Partner Center](https://partnercenter.microsoft.com/) als auch das [Microsoft Office 365 Partner Admin Center](https://portal.office.com/) ermöglichen Ihnen das Anmelden bei den von Ihnen verwalteten Kundenkonten. Verwenden Sie als Partner künftig eine dieser Websites für die Verwaltung Ihrer Kunden.
+Sie können sich sowohl über das [Microsoft Partner Center](https://partnercenter.microsoft.com/) als auch über das [Microsoft 365 Admin Center](https://admin.microsoft.com/) bei den von Ihnen verwalteten Kundenkonten anmelden. Verwenden Sie als Partner künftig eine dieser Websites für die Verwaltung Ihrer Kunden.
 
 
 #### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple erfordert Updates für die Transportsicherheit für Anwendungen <!--748318-->
@@ -142,7 +150,7 @@ Die Version iOS 10.3 wurde am 27. März 2017 für iOS-Benutzer eingeführt. Alle
 
 Es gibt derzeit keine bekannten Probleme. Wenn Probleme mit iOS 10.3 auftreten, können Sie sich gerne an das [Intune-Supportteam](/intune-classic/troubleshoot/contact-assisted-phone-support-for-microsoft-intune) wenden.
 
-#### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Verbesserte Unterstützung für Android-Benutzer in China<!--720444-->
+#### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Verbesserte Unterstützung für Android-Benutzer in China <!--720444-->
 
 Da der Google Play Store in China nicht verfügbar ist, müssen Android-Geräte Apps von chinesischen Marktplätzen beziehen. Das Unternehmensportal unterstützt diesen Workflow durch Umleiten von Android-Benutzern in China, damit sie das Unternehmensportal und Outlook-Apps von lokalen App-Stores herunterladen können. Dies verbessert die Benutzerfreundlichkeit, wenn Richtlinien für bedingten Zugriff aktiviert sind, sowohl für die mobile Geräteverwaltung als auch die mobile Anwendungsverwaltung. Das Unternehmensportal und Outlook-Apps für Android sind in den folgenden chinesischen App-Stores verfügbar:
 
@@ -170,7 +178,7 @@ Microsoft hat die allgemeine Verfügbarkeit von Microsoft Teams angekündigt. Di
 
 ### <a name="new-capabilities"></a>Neue Funktionen
 
-### <a name="modernizing-the-company-portal-website---753980--"></a>Modernisieren der Unternehmensportal-Website<!--753980-->
+### <a name="modernizing-the-company-portal-website---753980--"></a>Modernisieren der Unternehmensportal-Website <!--753980-->
 Die Unternehmensportal-Website wird Apps unterstützen, die für Benutzer bestimmt sind, die über keine verwalteten Geräte verfügen. Die Website wird an andere Microsoft-Produkte und -Dienste mithilfe eines neuen Farbschemas, dynamischen Illustrationen und einem „Hamburger-Menü“ ausgerichtet, ![Miniaturansicht des Hamburger-Menüs, das nun in der linken oberen Ecke der Unternehmensportal-App zu sehen ist,](/intune/whats-new-app-ui).
 
 ### <a name="notices"></a>Benachrichtigungen
@@ -182,13 +190,13 @@ Sobald ein Mandant den Migrationsprozess zur Gruppierung und Adressierung beitri
 
 Genauso wird Intune eine dynamische Gruppe erstellen, wenn der IT-Administrator die Einstellung ändert, auf welche Gruppe durch das Profil für die Unternehmensgeräteregistrierung abgezielt wird, die die neue Profilzuweisung widerspiegelt, jedoch nicht die für die alte Zuweisung erstellte dynamische Gruppe entfernen.
 
-### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Standardmäßige Verwaltung von Windows-Desktopgeräten über Windows-Einstellungen <!--663050-->
+### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Standardverwaltung von Windows-Desktopgeräten über Windows-Einstellungen <!--663050-->
 Das Standardverhalten für die Registrierung von Windows 10-Geräten ändert sich. Neue Registrierungen erfolgen gemäß dem typischen Registrierungsprozess über den MDM-Agent, nicht mehr über den PC-Agent. Windows 10-Desktopbenutzer erhalten auf der Unternehmensportal-Website Registrierungsanweisungen, die sie durch den Prozess zum Hinzufügen von Windows 10-Desktopcomputern als mobile Geräte leiten. Dies wirkt sich nicht auf aktuell bereits registrierte PCs aus, und Ihre Organisation kann [auf Wunsch](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune) Windows 10-Desktops weiterhin über den PC-Agent verwalten.
 
 #### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Verbesserte Unterstützung der Verwaltung mobiler Apps für das selektive Zurücksetzen <!--581242-->
-Endbenutzer erhalten zusätzliche Anleitungen, um erneut Zugriff auf Geschäfts-, Schul- oder Unidaten zu erhalten, wenn diese Daten aufgrund der Richtlinie „Offline-Intervall, bevor App-Daten zurückgesetzt werden“ automatisch entfernt wurden.<!--, or the removal of the Intune Company Portal on Android.-->
+Benutzer erhalten zusätzliche Anleitungen, um erneut Zugriff auf Geschäfts-, Schul- oder Unidaten zu erhalten, wenn diese Daten aufgrund der Richtlinie „Offline-Intervall, bevor App-Daten zurückgesetzt werden“ automatisch entfernt wurden.<!--, or the removal of the Intune Company Portal on Android.-->
 
-#### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>Links im Unternehmensportal für iOS öffnen sich innerhalb der App <!--665954-->
+#### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>Links im Unternehmensportal für iOS werden innerhalb der App geöffnet <!--665954-->
 Links in der Unternehmensportal-App für iOS, einschließlich Links zu Dokumentationen und Apps, werden über eine In-App-Ansicht von Safari direkt in der Unternehmensportal-App geöffnet. Dieses Update wird getrennt vom Dienstupdate im Januar ausgeliefert.
 
 #### <a name="new-mdm-server-address-for-windows-devices---893007--"></a>Neue MDM-Serveradresse für Windows-Geräte <!--893007-->
@@ -204,10 +212,10 @@ Ab März befolgt die Unternehmensportal-App für Android die [material design gu
 
 Sie finden Vorher- und Nachherbilder auf der Seite [Änderungen an der Intune App-Benutzeroberfläche](/intune/whats-new-app-ui).
 
-### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>Zuordnen mehrerer Verwaltungstools mit dem Microsoft Store für Unternehmen <!--926135-->
+### <a name="associate-multiple-management-tools-with-the-microsoft-store-for-business---926135--"></a>Zuordnen mehrerer Verwaltungstools zum Microsoft Store für Unternehmen <!--926135-->
 Wenn Sie mehr als ein Verwaltungstool zum Bereitstellen des Microsoft Store für Unternehmen-Apps verwenden, konnten Sie vorher nur eine App dem Microsoft Store für Unternehmen zuordnen. Nun können Sie mehrere Verwaltungstools dem Store zuordnen, z.B. Intune und Configuration Manager. Einzelheiten finden Sie unter [Manage apps you purchased from the Microsoft Store for Business with Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune) (Verwalten von Apps, die im Microsoft Store für Unternehmen erworben wurden, mit Microsoft Intune).
 
-## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Neuigkeiten in der öffentlichen Vorschau der neuen Intune-Administratoroberfläche auf Azure <!--736542-->
+## <a name="whats-new-in-the-public-preview-of-the-intune-admin-experience-on-azure---736542--"></a>Neuigkeiten in der öffentlichen Vorschau der Intune-Administratoroberfläche auf Azure <!--736542-->
 
 Anfang 2017 erfolgt die Migration der gesamten Administratoroberfläche zu Azure. Dies ermöglicht die leistungsstarke und integrierte Verwaltung von EMS-Kernworkflows in einer modernen, mit Grafik-APIs erweiterbaren Dienstplattform.
 
@@ -232,18 +240,18 @@ Wenn Geräte von Benutzern keinen Kontakt mehr mit Intune haben, können Sie neu
 
 ### <a name="notices"></a>Benachrichtigungen
 
-#### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Standardmäßige Verwaltung von Windows-Desktopgeräten über Windows-Einstellungen <!--663050-->
+#### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Standardverwaltung von Windows-Desktopgeräten über Windows-Einstellungen <!--663050-->
 Das Standardverhalten für die Registrierung von Windows 10-Geräten ändert sich. Neue Registrierungen erfolgen gemäß dem typischen Registrierungsprozess über den MDM-Agent, nicht mehr über den PC-Agent.
 
 Windows 10-Desktopbenutzer erhalten auf der Unternehmensportal-Website Registrierungsanweisungen, die sie durch den Prozess zum Hinzufügen von Windows 10-Desktopcomputern als mobile Geräte leiten. Dies wirkt sich nicht auf aktuell bereits registrierte PCs aus, und Ihre Organisation kann [auf Wunsch](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune) Windows 10-Desktops weiterhin über den PC-Agent verwalten.
 
 #### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Verbesserte Unterstützung der Verwaltung mobiler Apps für das selektive Zurücksetzen <!--581242-->
-Endbenutzer erhalten zusätzliche Anleitungen, um erneut Zugriff auf Geschäfts-, Schul- oder Unidaten zu erhalten, wenn diese Daten aufgrund der Richtlinie „Offline-Intervall, bevor App-Daten zurückgesetzt werden“ automatisch entfernt wurden.<!--, or the removal of the Intune Company Portal on Android.-->
+Benutzer erhalten zusätzliche Anleitungen, um erneut Zugriff auf Geschäfts-, Schul- oder Unidaten zu erhalten, wenn diese Daten aufgrund der Richtlinie „Offline-Intervall, bevor App-Daten zurückgesetzt werden“ automatisch entfernt wurden.<!--, or the removal of the Intune Company Portal on Android.-->
 
-#### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>Links im Unternehmensportal für iOS öffnen sich innerhalb der App <!--665954-->
+#### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>Links im Unternehmensportal für iOS werden innerhalb der App geöffnet <!--665954-->
 Links in der Unternehmensportal-App für iOS, einschließlich Links zu Dokumentationen und Apps, werden über eine In-App-Ansicht von Safari direkt in der Unternehmensportal-App geöffnet. Dieses Update wird getrennt vom Dienstupdate im Januar ausgeliefert.
 
-#### <a name="modernizing-the-company-portal-website---753980--"></a>Modernisieren der Unternehmensportal-Website<!--753980-->
+#### <a name="modernizing-the-company-portal-website---753980--"></a>Modernisieren der Unternehmensportal-Website <!--753980-->
 Ab Februar unterstützt die Unternehmensportal-Website Apps, die für Benutzer bestimmt sind, die über keine verwalteten Geräte verfügen. Die Website wird an andere Microsoft-Produkte und -Dienste mithilfe eines neuen Farbschemas, dynamischen Illustrationen und einem „Hamburger-Menü“ ausgerichtet, ![Hamburger-Menü der Unternehmensportal-Website](/intune/whats-new-app-ui).
 
 #### <a name="new-documentation-for-app-protection-policies---583398--"></a>Neue Dokumentation für App-Schutzrichtlinien <!--583398-->
@@ -266,18 +274,21 @@ Für das Unternehmensportal für iOS wurde eine Statusanzeige auf dem Startbilds
 
 ## <a name="december-2016"></a>Dezember 2016
 
-### <a name="public-preview-of-the-new-intune-admin-experience-on-azure---736542--"></a>Öffentliche Vorschau der neuen Intune-Administratoroberfläche in Azure <!--736542-->
+### <a name="public-preview-of-the-new-intune-admin-experience-on-azure---736542--"></a>Öffentliche Vorschau der neuen Intune-Administratoroberfläche auf Azure <!--736542-->
 Anfang 2017 erfolgt die Migration der gesamten Administratoroberfläche zu Azure. Dies ermöglicht die leistungsstarke und integrierte Verwaltung von EMS-Kernworkflows in einer modernen, mit Grafik-APIs erweiterbaren Dienstplattform. Im Vorfeld der allgemeinen Verfügbarkeit dieses Portals für alle Intune-Mandanten freuen wir uns, bekannt geben zu können, dass noch in diesem Monat mit dem Rollout einer Vorschau dieser neuen Verwaltungsoberfläche für ausgewählte Mandanten begonnen wird.
 
 Die Administratoroberfläche im Azure-Portal verwendet die bereits angekündigten neuen Gruppierungs- und Zielgruppenadressierungsfunktionen. Bei der Migration eines vorhandenen Mandanten zur neuen Gruppierungsoberfläche erfolgt gleichzeitig die Migration zur Vorschau der neuen Administratoroberfläche auf Ihrem Mandanten. In der Zwischenzeit erfahren Sie im Azure-Portal in der [neuen Dokumentation](/intune/what-is-intune) mehr über die Neuigkeiten zu Microsoft Intune.
 
-__Integration von TEM-Diensten (Telecom Expense Management) in der öffentlichen Vorschau des Azure-Portals__ <!--747605--> Wir starten nun mit der Vorschau der Integration mit TEM-Diensten (Telecom Expense Management) von Drittanbietern im Azure-Portal. Mit Intune können Sie Beschränkungen für das Datenroaming im In- und Ausland erzwingen. Diese Integrationen starten mit [Saaswedo](http://www.saaswedo.com/). Wenn Sie dieses Feature in Ihrem Testmandanten aktivieren möchten, [wenden Sie sich bitte an den Microsoft-Support](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune).
+__Integration der Verwaltung der Telekommunikationsausgaben in der öffentlichen Vorschau des Azure-Portals__ <!--747605-->
+Aktuell beginnt die Vorschau der Integration mit TEM-Diensten (Telecom Expense Management) von Drittanbietern im Azure-Portal. Mit Intune können Sie Beschränkungen für das Datenroaming im In- und Ausland erzwingen. Diese Integrationen starten mit [Saaswedo](http://www.saaswedo.com/). Wenn Sie dieses Feature in Ihrem Testmandanten aktivieren möchten, [wenden Sie sich bitte an den Microsoft-Support](/intune-classic/troubleshoot/how-to-get-support-for-microsoft-intune).
 
 ### <a name="new-capabilities"></a>Neue Funktionen
 
-__Plattformübergreifende Multi-Factor Authentication__ <!--747590--> Sie können Multi-Factor Authentication (MFA) jetzt für eine ausgewählte Gruppe von Benutzern erzwingen, wenn diese ein iOS- oder Android-Gerät bzw. ein Gerät mit Windows 8.1 und höher oder Windows Phone 8.1 und höher über das Azure-Verwaltungsportal registrieren. Dazu konfigurieren Sie MFA in der Microsoft Intune-Registrierungsanwendung in Azure Active Directory.
+__Mehrstufige Authentifizierung auf allen Plattformen__ <!--747590-->
+Sie können die mehrstufige Authentifizierung jetzt für eine ausgewählte Gruppe von Benutzern erzwingen, wenn diese ein iOS- oder Android-Gerät bzw. ein Gerät mit Windows 8.1 und höher oder Windows Phone 8.1 und höher über das Azure-Verwaltungsportal registrieren möchten. Dazu konfigurieren Sie MFA in der Microsoft Intune-Registrierungsanwendung in Azure Active Directory.
 
-__Einschränkungsmöglichkeit für die Registrierung mobiler Geräte__ <!--747596--> Es wurden neue Registrierungseinschränkungen zu Intune hinzugefügt, mit denen sich steuern lässt, welche Mobilgeräteplattformen für die Registrierung zugelassen werden. Intune unterscheidet dabei zwischen den Mobilgeräteplattformen iOS, macOS, Android, Windows und Windows Mobile.
+__Einschränken der Registrierung von mobilen Geräten__ <!--747596-->
+Es wurden neue Registrierungseinschränkungen zu Intune hinzugefügt, mit denen sich kontrollieren lässt, welche Mobilgeräteplattformen für die Registrierung zugelassen werden. Intune unterscheidet dabei zwischen den Mobilgeräteplattformen iOS, macOS, Android, Windows und Windows Mobile.
 * Durch das Einschränken der Registrierung von Mobilgeräten wird die Registrierung von PC-Clients nicht eingeschränkt.
 * Für iOS gibt es eine zusätzliche Option, mit der die Registrierung persönlicher Geräte blockiert werden kann.
 
@@ -285,9 +296,11 @@ Intune kennzeichnet alle neuen Geräte als persönlich, es sei denn, der IT-Admi
 
 ### <a name="notices"></a>Benachrichtigungen
 
-__Multi-Factor Authentication bei der Registrierung wird in das Azure-Portal verlagert__ <!--VSO 750545--> Bisher mussten sich Administratoren entweder bei der Intune-Konsole oder der Configuration Manager-Konsole (vor der Version von Oktober 2016) anmelden, um MFA für Intune-Registrierungen festzulegen. Mit diesem aktualisierten Feature melden Sie sich jetzt mit Ihren Intune-Anmeldeinformationen beim [Microsoft Azure-Portal](https://manage.windowsazure.com) an und konfigurieren die MFA-Einstellungen über Azure AD. Weitere Informationen dazu finden Sie [hier](https://aka.ms/mfa_ad).
+__Die mehrstufige Authentifizierung bei der Registrierung wechselt zum Azure-Portal__ <!--VSO 750545-->
+Bisher mussten sich Administratoren entweder bei der Intune-Konsole oder der Configuration Manager-Konsole (vor der Version von Oktober 2016) anmelden, um MFA für Intune-Registrierungen festzulegen. Mit diesem aktualisierten Feature melden Sie sich jetzt mit Ihren Intune-Anmeldeinformationen beim [Microsoft Azure-Portal](https://manage.windowsazure.com) an und konfigurieren die MFA-Einstellungen über Azure AD. Weitere Informationen dazu finden Sie [hier](https://aka.ms/mfa_ad).
 
-__Unternehmensportal-App für Android jetzt in China verfügbar__  <!--VSO 658093--> Wir veröffentlichen die Unternehmensportal-App für Android zum Download in China. Da der Google Play Store in China nicht verfügbar ist, müssen Android-Geräte Apps von chinesischen App-Marktplätzen beziehen. Die Unternehmensportal-App für Android wird in den folgenden Stores zum Download zur Verfügung stehen:
+__Die Unternehmensportal-App für Android ist jetzt in China verfügbar__ <!--VSO 658093-->
+Die Unternehmensportal-App für Android wird jetzt zum Download in China veröffentlicht. Da der Google Play Store in China nicht verfügbar ist, müssen Android-Geräte Apps von chinesischen App-Marktplätzen beziehen. Die Unternehmensportal-App für Android wird in den folgenden Stores zum Download zur Verfügung stehen:
 * [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 * [Huawei](https://go.microsoft.com/fwlink/?linkid=836948)
 * [Tencent](https://go.microsoft.com/fwlink/?linkid=836949)
@@ -306,11 +319,14 @@ Die Unternehmensportal-App für Android verwendet Google Play Services für die 
 
 ### <a name="deprecations"></a>Veraltete Funktionen
 
-__Firefox-Unterstützung für Silverlight wird eingestellt__ <!--VSO TBA--> Mozilla stellt ab März 2017 die Unterstützung für Silverlight in Version 52 des [Firefox-Browsers](https://www.mozilla.org/firefox) ein. Infolgedessen können Sie sich nicht mehr mit Firefox-Versionen über 51 bei der vorhandenen Intune-Konsole anmelden. Wir empfehlen, für den Zugriff auf die Verwaltungskonsole Internet Explorer 10 oder 11 oder eine [Firefox-Version vor Version 52](https://ftp.mozilla.org/pub/firefox/releases/) zu verwenden. Durch den Übergang von Intune zum Azure-Portal wird die Unterstützung einer Reihe von [modernen Browsern](/azure/azure-preview-portal-supported-browsers-devices) ohne Abhängigkeit von Silverlight möglich.
+__Silverlight wird von Firefox nicht mehr unterstützt__ <!--VSO TBA-->
+Mozilla entfernt die Unterstützung für Silverlight in Version 52 des [Firefox-Browsers](https://www.mozilla.org/firefox) ab März 2017. Infolgedessen können Sie sich nicht mehr mit Firefox-Versionen über 51 bei der vorhandenen Intune-Konsole anmelden. Wir empfehlen, für den Zugriff auf die Verwaltungskonsole Internet Explorer 10 oder 11 oder eine [Firefox-Version vor Version 52](https://ftp.mozilla.org/pub/firefox/releases/) zu verwenden. Durch den Übergang von Intune zum Azure-Portal wird die Unterstützung einer Reihe von [modernen Browsern](/azure/azure-preview-portal-supported-browsers-devices) ohne Abhängigkeit von Silverlight möglich.
 
-__Entfernung von Postfachrichtlinien für Exchange Online__ <!--770687--> Seit Dezember können Administratoren Richtlinien für das mobile Exchange Online-Postfach (EAS) nicht mehr in der Intune-Konsole anzeigen oder konfigurieren. Das Rollout dieser Änderung erfolgt für alle Intune-Mandanten im Laufe des Dezembers und Januars. Die Konfiguration aller vorhandenen Richtlinien bleibt unverändert. Verwenden Sie zum Konfigurieren neuer Richtlinien die Exchange-Verwaltungsshell. Weitere Informationen finden Sie [hier](https://technet.microsoft.com/library/bb123783%28v=exchg.150%29.aspx).
+__Entfernen von Richtlinien für das mobile Exchange Online-Postfach__ <!--770687-->
+Seit Dezember können Administratoren Richtlinien für das mobile Exchange Online-Postfach (EAS) nicht mehr in der Intune-Konsole anzeigen oder konfigurieren. Das Rollout dieser Änderung erfolgt für alle Intune-Mandanten im Laufe des Dezembers und Januars. Die Konfiguration aller vorhandenen Richtlinien bleibt unverändert. Verwenden Sie zum Konfigurieren neuer Richtlinien die Exchange-Verwaltungsshell. Weitere Informationen finden Sie [hier](https://technet.microsoft.com/library/bb123783%28v=exchg.150%29.aspx).
 
-__Intune AV-Player, Image Viewer und PDF-Viewer-Apps werden nicht mehr von Android unterstützt__ <!--747553--> Ab Mitte Dezember 2016 können Benutzer Intune AV-Player-, Image Viewer und PDF-Viewer-Apps nicht mehr verwenden. Diese Apps wurden durch die Azure Information Protection-App ersetzt. [Hier](/information-protection/rms-client/mobile-app-faq) erfahren Sie mehr über die Azure Information Protection-App.
+__Intune AV Player-, Image Viewer- und PDF Viewer-Apps werden unter Android nicht mehr unterstützt__ <!--747553-->
+Ab Mitte Dezember 2016 können Benutzer die Intune AV-Player-, Image Viewer- und PDF Viewer-Apps nicht mehr verwenden. Diese Apps wurden durch die Azure Information Protection-App ersetzt. [Hier](/information-protection/rms-client/mobile-app-faq) erfahren Sie mehr über die Azure Information Protection-App.
 
 ## <a name="november-2016"></a>November 2016
 

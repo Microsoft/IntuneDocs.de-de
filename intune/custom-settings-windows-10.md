@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86c822ba197851fe7e05d91ff8aa703fb9fe3811
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 44be460ee910818d52179da55151d1bceeb8b306
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842780"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565909"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Verwenden von benutzerdefinierten Einstellungen für Windows 10-Geräte in Intune
 
@@ -43,17 +44,17 @@ In diesem Artikel:
 2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 3. Legen Sie folgende Einstellungen fest:
 
-    - **Name**: Geben Sie einen Profilnamen ein, z.B. `windows 10 custom profile`.
-    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein.
-    - **Plattform**: Wählen Sie **Windows 10 und höher** aus.
-    - **Profiltyp**: Wählen Sie **Benutzerdefiniert** aus.
+    - **Name:** Geben Sie einen Profilnamen ein, z.B. `windows 10 custom profile`.
+    - **Beschreibung:** Geben Sie eine Beschreibung für das Profil ein.
+    - **Plattform:** Wählen Sie **Windows 10 und höher** aus.
+    - **Profiltyp:** Wählen Sie **Benutzerdefiniert** aus.
 
 4. Klicken Sie unter **Benutzerdefinierte OMA-URI-Einstellungen** auf **Hinzufügen**. Legen Sie folgende Einstellungen fest:
 
-    - **Name**: Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie sie in der Liste der Einstellungen leichter identifizieren können.
-    - **Beschreibung**: Geben Sie eine Beschreibung ein, die einen Überblick über die Einstellung und andere wichtige Details bietet.
-    - **OMA-URI** (Groß-/Kleinschreibung beachten): Geben Sie den OMA-URI ein, für den Sie eine Einstellung bereitstellen möchten.
-    - **Datentyp**: Wählen Sie den Datentyp aus, den Sie für diese OMA-URI-Einstellung verwenden möchten. Folgende Optionen sind verfügbar:
+    - **Name:** Geben Sie einen eindeutigen Namen für die OMA-URI-Einstellung ein, damit Sie sie in der Liste der Einstellungen einfacher identifizieren können.
+    - **Beschreibung:** Geben Sie eine Beschreibung ein, die einen Überblick über die Einstellung und andere wichtige Details bietet.
+    - **OMA-URI** (Groß-/Kleinschreibung beachten): Geben Sie den OMA-URI an, den Sie als Einstellung verwenden möchten.
+    - **Datentyp:** Wählen Sie den Datentyp aus, den Sie für diese OMA-URI-Einstellung verwenden möchten. Folgende Optionen sind verfügbar:
 
         - Zeichenfolge
         - Zeichenfolge (XML-Datei)
@@ -63,7 +64,7 @@ In diesem Artikel:
         - Boolesch
         - Base64 (Datei)
 
-    - **Wert**: Geben Sie den gewünschten Datenwert an, der dem von Ihnen eingegebenen OMA-URI zugeordnet werden soll. Der Wert hängt vom ausgewählten Datentyp ab. Beim Datentyp **Datum und Uhrzeit** wählen Sie den Wert beispielsweise aus einer Datumsauswahl aus.
+    - **Wert:** Geben Sie den gewünschten Datenwert an, der dem von Ihnen eingegebenen OMA-URI zugeordnet werden soll. Der Wert hängt vom ausgewählten Datentyp ab. Beim Datentyp **Datum und Uhrzeit** wählen Sie den Wert beispielsweise aus einer Datumsauswahl aus.
 
     Wenn Sie einige Einstellungen hinzugefügt haben, können Sie auf **Exportieren** klicken. Wenn Sie auf **Exportieren** klicken, wird eine Liste aller hinzugefügten Werte in einer Datei mit durch Trennzeichen getrennten Werten (CSV) erstellt.
 
@@ -82,7 +83,7 @@ Eine vollständige Liste aller Konfigurationsdienstanbieter (CSP), die von Windo
 
 Nicht alle Einstellungen sind mit allen Windows 10-Versionen kompatibel. Über die [Konfigurationsdienstanbieter-Referenz](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) erfahren Sie, welche Versionen für die einzelnen Konfigurationsdienstanbieter unterstützt werden.
 
-Außerdem unterstützt Intune nicht alle Einstellungen, die in der [Referenz zum Konfigurationsdienstanbieter](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) aufgeführt sind. Öffnen Sie den Artikel für die jeweilige Einstellung, um herauszufinden, ob die gewünschte Einstellung von Intune unterstützt wird. Auf jeder Einstellungsseite wird angezeigt, welcher Vorgang jeweils unterstützt wird. Damit die Einstellung mit Intune funktioniert, muss sie die Vorgänge **Hinzufügen** oder **Ersetzen** unterstützen.
+Außerdem unterstützt Intune nicht alle Einstellungen, die in der [Referenz zum Konfigurationsdienstanbieter](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) aufgeführt sind. Öffnen Sie den Artikel für die jeweilige Einstellung, um herauszufinden, ob die gewünschte Einstellung von Intune unterstützt wird. Auf jeder Einstellungsseite wird angezeigt, welcher Vorgang jeweils unterstützt wird. Damit die Einstellung mit Intune funktioniert, muss sie die Vorgänge **Hinzufügen**, **Ersetzen** und **Abrufen** unterstützen. Wenn der Rückgabewert von der **abrufen** Vorgang entspricht nicht den Wert der **hinzufügen** oder **ersetzen** Vorgänge, und klicken Sie dann auf Intune meldet einen Fehler: Kompatibilität.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
