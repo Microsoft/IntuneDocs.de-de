@@ -144,7 +144,7 @@ items:
       href: users-add.md
     - name: Hinzufügen von Gruppen
       href: groups-add.md
-    - name: Lizenzen zuweisen
+    - name: Zuweisen von Lizenzen
       href: licenses-assign.md
     - name: Intune-Lizenzen
       href: licenses.md
@@ -154,6 +154,10 @@ items:
       items:
       - name: Rollenbasierte Zugriffssteuerung
         href: role-based-access-control.md
+      - name: Zuweisen einer Rolle zu einem Benutzer
+        href: assign-role.md
+      - name: Erstellen einer benutzerdefinierten Rolle
+        href: create-custom-role.md
       - name: Verwenden von Bereichsmarkierungen
         href: scope-tags.md
   - name: Registrieren von Geräten
@@ -945,9 +949,9 @@ items:
       href: data-outside-protect.md
     - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
       href: data-leak-prevention.md
-ms.openlocfilehash: d273d9c300f49a2d78f8b9ed62031497b06a0060
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: c58e250d7aeb4913554874c8a1e931b2dc356dfd
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514421"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658573"
