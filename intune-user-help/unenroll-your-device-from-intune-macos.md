@@ -1,11 +1,11 @@
 ---
-title: Aufheben der Registrierung Ihres macOS-Geräts bei Intune | Microsoft-Dokumentation
-description: Beschreibt das Aufheben der Registrierung eines macOS-Geräts bei Intune.
+title: Aufheben der Registrierung Ihres macOS-Geräts beim Intune-Unternehmensportal | Microsoft-Dokumentation
+description: Beschreibt das Aufheben der Registrierung eines macOS-Geräts beim Unternehmensportal.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/12/2018
+ms.date: 03/20/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,22 +18,24 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3518707aa90c3866fbf8b24936db6d781712bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19cb76df318abe84670c1a7d703e85e3b7e7539a
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55839967"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330397"
 ---
-# <a name="unenroll-your-macos-device-from-intune"></a>Aufheben der Registrierung Ihres macOS-Geräts bei Intune
+# <a name="unenroll-your-macos-device-from-company-portal"></a>Aufheben der Registrierung Ihres MacOS-Geräts aus der Unternehmensportal-App
 
 Nachdem Sie die Registrierung Ihres macOS-Geräts bei Intune aufgehoben haben, können Sie nicht mehr auf Unternehmensressourcen zugreifen.
 
 Um die Registrierung Ihres macOS-Geräts über die Verwaltung aufzuheben, führen Sie die folgenden Schritte durch:
 
-1.  Wählen Sie in der Unternehmensportal-App unter **Meine Geräte** das Gerät aus, dessen Registrierung Sie aufheben möchten.
+1.  Melden Sie sich beim Unternehmensportal für macOS an.
+2.  Wechseln Sie zu **Geräte**, und wählen Sie das Gerät aus, dessen Registrierung Sie aufheben möchten.
 
-2.  Klicken Sie auf **Entfernen** > **Entfernen**.
+3.  Wählen Sie das Symbol "Auslassungspunkte im Menü" > **entfernen**.
+4.  Eine Bestätigungsmeldung wird angezeigt. Wählen Sie **entfernen** Registrierung Ihres Geräts aufheben. 
 
 Wenn Sie die Registrierung Ihres Geräts bei Intune aufheben passiert Folgendes:
 

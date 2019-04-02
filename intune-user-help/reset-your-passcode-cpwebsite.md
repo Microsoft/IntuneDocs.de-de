@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e973e18a79c18af6b201194fc1a6534da5fa38a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838035"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58163427"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>So setzen Sie Ihre Kennung über die Unternehmensportalwebsite zurück
 
@@ -32,7 +32,7 @@ Wenn Sie die PIN oder das Kennwort verloren haben, können Sie die PIN bzw. das 
 Wenn Sie ein firmeneigenes Gerät verwenden, wird Ihnen die Option zum Zurücksetzen der Gerätekennung möglicherweise nicht angezeigt. Wenden Sie sich in diesem Fall an den Support Ihres Unternehmens, um die Kennung zurücksetzen zu lassen.
 
    > [!NOTE]
-   > Für Geräte mit Android 7.0 und höher kann die Kennung nicht zurückgesetzt werden. Wenn Sie eine Kennung vergessen haben, setzen Sie das Gerät auf die Werkseinstellungen zurück. 
+   > Für Geräte mit Android 7.0 und höher kann der Passcode nicht zurückgesetzt werden. Wenn Sie den Passcode vergessen, müssen Sie das Gerät auf die Werkseinstellungen zurücksetzen. 
 
 ## <a name="reset-your-passcode"></a>Zurücksetzen der Kennung
 

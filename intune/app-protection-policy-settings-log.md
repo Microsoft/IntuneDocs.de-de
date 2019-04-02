@@ -6,24 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2018
+ms.date: 03/19/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
-ms.reviewer: andcerat
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff80a5911c4bb027cbe2f9289a415ed9797277a6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 6c42003f53e5d4ff7afa8afe9c242ef2470b5ee3
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460494"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394792"
 ---
 # <a name="review-client-app-protection-logs"></a>Überprüfen der Schutzprotokolle für Client-Apps
 
@@ -43,6 +43,7 @@ In der folgenden Tabelle wird der Name und eine Erklärung für die Einstellunge
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x Minuten                                                                                                                                                                                                                                                                                                   | [Zugriff] Zugriffsanforderungen erneut prüfen – Offlinetoleranzperiode<br>Hinweis: Dies ist der Zeitraum, der abgewartet wird, bevor die Zugriffsanforderungen für die App erneut geprüft werden, wenn das Gerät offline ist.             |
 | AccessRecheckOnlineTimeout  | _x_ Minuten                                                                                                                                                                                                                                                                                                   | [Zugriff] Zugriffsanforderungen erneut prüfen – Timeout<br>Hinweis: Dies ist der Zeitraum, der abgewartet wird, bevor die Zugriffsanforderungen nach dem Starten der App erneut geprüft werden, wenn das Gerät online ist. |
+| AllowedOutboundClipboardSharingExceptionLength               | x Zeichen                                                                                                                                                                                                                                                                                           | [Zugriff] Geben Sie die Anzahl von Zeichen, die ausgeschnitten oder kopiert, aus einer verwalteten Anwendung werden kann.  Diese Einstellung überschreibt die `AllowedOutboundClipboardSharingLevel` Einschränkung. Der Standardwert "0" bedeutet, dass keine Ausnahme zulässig ist. 
 | AppPinDisabled              | 0 = Nein<br>1 = Ja                                                                                                                                                                                                                                                                                           | [Zugriff] App-PIN deaktivieren, wenn die Geräte-PIN verwaltet wird.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = Keine Apps<br>1 = Verwaltete Apps<br>2 = Jede App                                                                                                                                                                                                                                                              | [Datenverlagerung] Dieser App den Empfang von Daten von anderen Apps erlauben                                                                                                                        |
 | AppSharingToLevel           | 0 = Keine Apps<br>1 = Verwaltete Apps<br>2 = Jede App                                                                                                                                                                                                                                                              | [Datenverlagerung] Dieser App die Übertragung von Daten an andere Apps erlauben                                                                                                                         |

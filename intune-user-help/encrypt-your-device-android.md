@@ -1,11 +1,11 @@
 ---
-title: Schützen Ihres Android-Geräts mit Verschlüsselung | Microsoft-Dokumentation
-description: Schützen Ihres Android-Geräts
+title: Verschlüsseln von Android-Gerät für Intune-Unternehmensportal | Microsoft-Dokumentation
+description: Schritte zum Aktivieren der geräteverschlüsselung auf Android-Geräten
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,31 +18,47 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 115025d60038daea6f43c97cbdc03a20d5b0bf59
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c9f1e7bbbad243e37f34cb298466adf886be9273
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838171"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490586"
 ---
-# <a name="how-to-protect-your-android-device-using-encryption"></a>So schützen Sie Ihr Android-Gerät mit Verschlüsselung
+# <a name="encrypting-your-android-device"></a>Verschlüsseln Ihres Android-Geräts
 
-Wenn Sie ein Gerät verschlüsseln, umschließen Sie die darauf enthaltenen Informationen mit einer Schicht aus schützendem Code, der den Zugriff durch Unbefugte darauf verhindert. Damit sichergestellt werden kann, dass Ihre Informationen geschützt sind, werden Sie von Ihrer Organisation angewiesen, Ihr Android-Gerät zu schützen, bevor Sie auf Unternehmensdateien, -E-Mails und -daten zugreifen können.
+Geräteverschlüsselung schützt die Dateien und Ordner vor nicht autorisiertem Zugriff, wenn Ihr Gerät verloren geht oder gestohlen wird. Nachdem Sie geräteverschlüsselung aktivieren, werden nur Personen mit dem korrekten Kennwort oder Pin auf Ihrem Gerät anmelden können. 
+
+Bevor Sie schulkonto oder Geschäfts-Ressourcen zugreifen können, Ihre Organisation müssen Sie möglicherweise Ihr Android-Gerät zu verschlüsseln. Einige neuere Android-Geräte werden standardmäßig verschlüsselt Out-of-the-Box.  
+
+## <a name="turn-on-encryption"></a>Verschlüsselung aktivieren
+
+Wenn eine Meldung im Unternehmensportal, die Sie benötigen angezeigt, um Ihr Gerät zu verschlüsseln, führen Sie die folgenden Schritte aus. 
 
 > [!Note]
-> Bestimmte Android-Geräte, beispielsweise einige Geräte von Huawei und die Geräte von Vivo und OPPO, können nicht verschlüsselt werden. [Hier](your-device-appears-encrypted-but-cp-says-otherwise-android.md) erfahren Sie mehr.
+> Bestimmte Android-Geräte von Huawei, Vivo und OPPO, können nicht verschlüsselt werden. [Hier](your-device-appears-encrypted-but-cp-says-otherwise-android.md) erfahren Sie mehr.  
 
-Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
+1.  Legen Sie eine Geräte-Sperrbildschirm.  
+    ein. Wechseln Sie zu **Einstellungen** > **Lock Screen and Security** > **Screen lock** (Sperrbildschirm und Sicherheit > Bildschirmsperre).  
+    b. Wählen Sie entweder **PIN**, **Kennwort**, oder **Muster**.  
+    c. Führen Sie die Anweisungen auf dem Bildschirm so konfigurieren Sie Ihre Bildschirmsperre ein.  
 
-1.  Stellen Sie sicher, dass eine Bildschirmsperren-PIN oder ein Kennwort für das Gerät festgelegt wurde.
+2. Wechseln Sie zurück zur **Sperrbildschirm und Sicherheit** , und wählen Sie **sicherer Start**.
+3. Wählen Sie **PIN anfordern, wenn das Gerät eingeschaltet** > **OK**.
+4. Geben Sie Ihre PIN zur Bestätigung und zum Verschlüsseln Ihres Geräts aus.
+5. Öffnen Sie die Unternehmensportal-App, wählen Sie das Gerät aus, und tippen Sie auf **Geräteeinstellungen überprüfen**.  
 
-2.  Wählen Sie unter **Einstellungen** die Option **Sicherheit** > **Encrypt Device** (Gerät verschlüsseln) aus.
-    (Bei einigen Telefonen müssen Sie **Speicher** > **Speicherverschlüsselung** oder **Speicher** > **Lock Screen and Security** (Sperrbildschirm und Sicherheit) > **Weitere Sicherheitseinstellungen** auswählen, um auf die Option „Verschlüsseln“ zuzugreifen).
+Geräte mit Android 4.4 oder früheren möglicherweise nicht die **sicherer Start** Option. In diesem Fall führen Sie die folgenden Schritte aus, zum Verschlüsseln des Geräts.
 
-3.  Folgen Sie den Anweisungen auf dem Bildschirm. Während der Verschlüsselung startet Ihr Gerät möglicherweise mehrmals neu.
+1. Wechseln Sie zu **Einstellungen** > **Sicherheit** > **Gerät verschlüsseln**. Auf dem Bildschirm Bezeichnungen variieren zwischen Android-Geräte. Wenn Sie nicht sehen die **Gerät verschlüsseln** aus, überprüfen Sie die im:
+    * **Storage** > **speicherverschlüsselung**
+    * **Storage** > **Sperrbildschirm und Sicherheit** > **andere Sicherheitseinstellungen** 
 
-### <a name="what-to-do-if-you-have-issues"></a>Vorgehensweise bei Problemen
-**Problem**: Sie haben Ihr Gerät bereits verschlüsselt und stellen eines der folgenden Probleme fest:
+2. Folgen Sie den Anweisungen auf dem Bildschirm. Während der Verschlüsselung startet Ihr Gerät möglicherweise mehrmals neu.
+3. Öffnen Sie die Unternehmensportal-App, wählen Sie das Gerät aus, und tippen Sie auf **Geräteeinstellungen überprüfen**.  
+
+## <a name="troubleshoot"></a>Problembehandlung  
+**Problem**: Sie haben Ihr Gerät bereits verschlüsselt und
 
 - Die Schaltfläche „Verschlüsselung“ ist deaktiviert.
 - Eine Meldung wird angezeigt, dass die Verschlüsselung noch ausgeführt werden muss.
@@ -50,20 +66,7 @@ Wenn Sie Ihr Telefon abmelden, bleibt es verschlüsselt.
 
 **Versuchen Sie Folgendes**
 
-- Stellen Sie sicher, dass das Gerät aufgeladen und angeschlossen ist.
-- Stellen Sie sicher, dass Sie auf Ihrem Gerät eine PIN oder ein Kennwort festgelegt haben.
-- Wenn Sie bereits eine PIN oder ein Kennwort auf dem Gerät eingerichtet haben, führen Sie die folgenden Schritte aus. Diese werden möglicherweise vom Support Ihres Unternehmens verlangt, damit die Sicherheit Ihres Geräts gewährleistet ist. Die angezeigten Menünamen können möglicherweise je nach Art Ihres Android-Geräts geringfügig von den in den Schritten angegebenen Bezeichnungen abweichen.
+- Stellen Sie sicher, dass das Gerät aufgeladen und angeschlossen ist.  
+- Stellen Sie sicher, dass Sie auf Ihrem Gerät eine PIN oder ein Kennwort festgelegt haben.  
 
-    1. Wechseln Sie zu **Einstellungen** > **Lock Screen and Security** > **Screen lock** (Sperrbildschirm und Sicherheit > Bildschirmsperre). Bestätigen Sie Ihre aktuelle PIN bzw. Ihr Kennwort.
-
-    2. Wählen Sie auf dem Bildschirm **Bildschirmsperre auswählen** den Typ der Bildschirmsperre aus, die Sie verwenden möchten. 
-
-    3. Nachdem Sie Ihre Bildschirmsperre ausgewählt haben, wechseln Sie zurück zum Bildschirm **Sperrbildschirm und Sicherheit**, und wählen Sie **Sicherer Start** aus. 
-    
-    4. Tippen Sie auf dem Bildschirm **Sicherer Start** auf **Require PIN to start device** (PIN zum Starten des Geräts anfordern), und tippen Sie auf **Weiter**.
-
-    5. Wählen Sie eine PIN aus (Sie können dieselbe PIN verwenden, die Sie zuvor eingegeben haben), und tippen Sie auf **PIN bestätigen**.
-
-    6. Öffnen Sie die Unternehmensportal-App, wählen Sie das Gerät aus, und tippen Sie auf **Kompatibilität überprüfen**.
-
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an den Support Ihres Unternehmens (suchen Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-Team</a>.
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an den Support Ihres Unternehmens (suchen Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-Team</a>.  

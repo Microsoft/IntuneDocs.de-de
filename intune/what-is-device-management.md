@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise umfasst Microsoft Intune. Erfahren Sie, wi
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 03/29/2018
 ms.topic: conceptual
 audience: ITPro
 ms.prod: microsoft-365-enterprise
@@ -16,16 +16,16 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93e34c3de77dde59b87829617b8cbbd2614f7081
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: ea24101600c7a0e485440f50fc043c14bd840968
+ms.sourcegitcommit: 8e6f4acb592dbe5de63aa7642ee9487288740714
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57231246"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58646487"
 ---
 # <a name="what-is-device-management"></a>Was ist die Geräteverwaltung? 
 
-Eine Hauptaufgabe eines jeden Administrators ist der Schutz und die Sicherung der Ressourcen und Daten eines Unternehmens. Diese Aufgabe ist die Geräteverwaltung. Benutzer verfügen über viele Geräte, von denen aus sie persönliche Dateien öffnen und freigeben, Websites besuchen und Apps und Spiele installieren. Dieselben Benutzer sind zugleich Mitarbeiter und Auszubildende und möchten mit ihren Geräten auf Arbeits- und Schulressourcen wie E-Mail und OneNote zugreifen. Die *Geräteverwaltung* ermöglicht es Unternehmen, ihre Ressourcen und Daten zu schützen und zu sichern. 
+Eine Hauptaufgabe eines jeden Administrators ist der Schutz und die Sicherung der Ressourcen und Daten eines Unternehmens. Diese Aufgabe ist die *Geräteverwaltung*. Benutzer verfügen über viele Geräte, von denen aus sie persönliche Dateien öffnen und freigeben, Websites besuchen und Apps und Spiele installieren. Dieselben Benutzer sind zugleich Mitarbeiter und Auszubildende und möchten mit ihren Geräten auf Arbeits- und Schulressourcen wie E-Mail und OneNote zugreifen. Die Geräteverwaltung ermöglicht es Unternehmen, ihre Ressourcen und Daten zu schützen und zu sichern. 
 
 Mithilfe eines Anbieters für die Geräteverwaltung können Unternehmen sicherstellen, dass nur autorisierte Personen und Geräte Zugriff auf geschützte Informationen erhalten. Ebenso können sich Gerätebenutzer beim Zugriff auf Unternehmensdaten von ihrem Telefon aus sicher fühlen, da sie wissen, dass ihr Gerät den Sicherheitsanforderungen ihres Unternehmens entspricht. Als Unternehmen könnten Sie sich fragen: **Womit können wir unsere Ressourcen schützen?**
 
