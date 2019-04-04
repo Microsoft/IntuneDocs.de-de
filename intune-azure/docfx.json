@@ -1,11 +1,7 @@
 {
   "build": {
-    "markdownEngineName": "markdig",
     "content": [
       {
-        "files": [
-          "**/*.md"
-        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -13,26 +9,30 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
+        ],
+        "files": [
+          "**/*.md"
         ]
       }
     ],
+    "dest": "intune-azure-redir",
+    "externalReference": [],
+    "fileMetadata": {},
+    "globalMetadata": {},
+    "markdownEngineName": "markdig",
+    "overwrite": [],
     "resource": [
       {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**"
+        ],
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
         ]
       }
     ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {},
-    "fileMetadata": {},
-    "template": [],
-    "dest": "intune-azure-redir"
+    "template": []
   }
 }
