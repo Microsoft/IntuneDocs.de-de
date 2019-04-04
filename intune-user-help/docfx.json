@@ -2,45 +2,18 @@
   "build": {
     "content": [
       {
+        "files": [
+          "**/*.md"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
           "**/old-TOC.md"
-        ],
-        "files": [
-          "**/*.md"
         ]
       }
     ],
-    "dest": "intune-user-help",
-    "globalMetadata": {
-      "_op_documentIdPathDepotMapping": {
-        "./": {
-          "depot_name": "Azure.EndUser",
-          "folder_relative_path_in_docset": "."
-        }
-      },
-      "breadcrumb_path": "/enterprise-mobility/toc.json",
-      "contributors_to_exclude": [
-        "herohua",
-        "fenxu"
-      ],
-      "feedback_github_repo": "MicrosoftDocs/Intunedocs.de-de",
-      "feedback_system": "GitHub",
-      "layout": "Conceptual",
-      "product_feedback_displaytext": "Intune Feedback",
-      "product_feedback_url": "https://microsoftintune.uservoice.com/",
-      "searchScope": [
-        "Intune"
-      ]
-    },
-    "markdownEngineName": "markdig",
     "resource": [
       {
-        "exclude": [
-          "**/obj/**",
-          "_themes/**"
-        ],
         "files": [
           "**/images/**",
           "**/*.png",
@@ -49,9 +22,36 @@
           "**/*.bmp",
           "**/*.html",
           "**/*.css"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "_themes/**"
         ]
       }
     ],
-    "template": "docs.html"
+    "dest": "intune-user-help",
+    "template": "docs.html",
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "breadcrumb_path": "/enterprise-mobility-security/toc.json",
+      "product_feedback_displaytext": "Intune Feedback",
+      "product_feedback_url": "https://microsoftintune.uservoice.com/",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/Intunedocs.de-de",      
+      "contributors_to_exclude": [
+        "herohua",
+        "fenxu"
+      ],
+      "searchScope": [
+        "Intune"
+      ],
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "Azure.EndUser",
+          "folder_relative_path_in_docset": "."
+        }
+      }
+    },
+    "markdownEngineName": "markdig"
   }
 }
