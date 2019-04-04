@@ -2,44 +2,46 @@
   "build": {
     "content": [
       {
+        "exclude": [
+          "**/obj/**",
+          "intune-azure/**",
+          "**/includes/**"
+        ],
         "files": [
           "**/*.md",
           "**/*.yml"
-        ],
+        ]
+      }
+    ],
+    "dest": "intune-azure",
+    "externalReference": [],
+    "fileMetadata": {},
+    "globalMetadata": {
+      "breadcrumb_path": "/enterprise-mobility-security/toc.json",
+      "feedback_github_repo": "MicrosoftDocs/Intunedocs.de-de",
+      "feedback_product_url": "https://microsoftintune.uservoice.com/",
+      "feedback_system": "GitHub",
+      "product_feedback_displaytext": "Intune Feedback",
+      "product_feedback_url": "https://microsoftintune.uservoice.com/",
+      "searchScope": [
+        "Intune"
+      ]
+    },
+    "markdownEngineName": "markdig",
+    "overwrite": [],
+    "resource": [
+      {
         "exclude": [
           "**/obj/**",
           "intune-azure/**",
           "**/includes/**"
-        ]
-      }
-    ],
-    "resource": [
-      {
+        ],
         "files": [
           "**/*.png",
           "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "intune-azure/**",
-          "**/includes/**"
         ]
       }
     ],
-    "overwrite": [],
-    "externalReference": [],
-    "globalMetadata": {
-      "breadcrumb_path": "/enterprise-mobility-security/toc.json",
-      "product_feedback_displaytext": "Intune Feedback",
-      "product_feedback_url": "https://microsoftintune.uservoice.com/",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/Intunedocs.de-de",
-      "feedback_product_url": "https://microsoftintune.uservoice.com/",  
-      "searchScope": ["Intune"]
-    },
-    "fileMetadata": {},
-    "template": [],
-    "dest": "intune-azure",
-    "markdownEngineName": "markdig"
+    "template": []
   }
 }
