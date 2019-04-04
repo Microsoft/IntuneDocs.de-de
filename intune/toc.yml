@@ -282,8 +282,6 @@ items:
       href: compliance-policy-create-android.md
     - name: Android Enterprise-Konformität
       href: compliance-policy-create-android-for-work.md
-    - name: Aktivieren von Google Play Protect
-      href: compliance-policy-create-google-play-protect.md
     - name: iOS-Konformität
       href: compliance-policy-create-ios.md
     - name: Windows-Konformität
@@ -951,9 +949,9 @@ items:
       href: data-outside-protect.md
     - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
       href: data-leak-prevention.md
-ms.openlocfilehash: cdee45edb7f19f3e747ec29515304f59ace1227e
-ms.sourcegitcommit: 55323746ca3c1c66326f1453ba66ded9c1b73b0e
+ms.openlocfilehash: eae3f1d1507f7bdfe18855aa568edeac3d211230
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58867448"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899179"
