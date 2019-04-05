@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8190365ad2b50dfa7369b8899e8984b6a52f1cba
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566745"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394999"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
@@ -29,7 +29,7 @@ In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschri
 Diese Einstellungen werden erst einem Gerätekonfigurationsprofil in Intune hinzugefügt und dann Ihren Windows 10-Geräten zugewiesen oder für diese bereitgestellt.
 
 > [!Note]
-> Nicht alle Optionen sind in allen Windows-Editionen verfügbar.
+> Nicht alle Optionen sind in allen Windows-Editionen verfügbar. Die unterstützten Editionen, finden Sie in der [Richtlinie CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (öffnet eine andere Microsoft-Website).
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
@@ -59,13 +59,13 @@ Diese Einstellungen werden erst einem Gerätekonfigurationsprofil in Intune hinz
 - **Bluetooth-Erkennbarkeit**: Ermöglicht die Erkennung dieses Geräts durch andere Bluetooth-Geräte.
 - **Bluetooth-Vorabkopplung**: Ermöglicht das Konfigurieren spezifischer Bluetooth-Geräte für automatisches Koppeln mit einem Hostgerät.
 - **Bluetooth-Werbung**: Ermöglicht das Empfangen von Werbung per Bluetooth durch das Gerät.
-- **Dienst für verbundene Geräte**: Ermöglicht die Entscheidung, ob dem Dienst für verbundene Geräte die Ermittlung von und Verbindung mit anderen Bluetooth-Geräten erlaubt wird.
-- **NFC**: Erlaubt dem Benutzer das Aktivieren und Konfigurieren von NFC-Funktionen (Near Field Communication) auf dem Gerät.
+- **Dienst für verbundene Geräte:** Ermöglicht die Entscheidung, dem Dienst für verbundene Geräte die Ermittlung von und Verbindung mit anderen Bluetooth-Geräten zu erlauben.
+- **NFC:** Erlaubt dem Benutzer das Aktivieren und Konfigurieren von NFC-Funktionen (Near Field Communication) auf dem Gerät.
 - **WLAN**: Erlaubt dem Benutzer das Aktivieren und Konfigurieren von WLAN auf dem Gerät (nur Windows 10 Mobile).
 - **Automatische Verbindung mit WLAN-Hotspots herstellen**: Ermöglicht automatische Verbindungen des Geräts mit unverschlüsselten WLAN-Hotspots und das automatische Akzeptieren der Geschäftsbedingungen für die Verbindung.
 - **Manuelle WLAN-Konfiguration**: Steuert, ob die Benutzer eigene WLAN-Verbindungen konfigurieren dürfen oder ob nur über WLAN-Profile konfigurierte Verbindungen verwendet werden dürfen (nur Windows 10 Mobile).
-- **Intervall für WLAN-Suche**: Gibt an, wie oft Geräte nach WLAN-Netzwerken suchen. Geben Sie einen Wert zwischen 1 (am häufigsten) und 500 (am seltensten) an.
-- **Zulässige Bluetooth-Dienste**: Gibt in Form von hexadezimalen Zeichenfolgen eine Liste zulässiger Bluetooth-Dienste und -Profile an.
+- **Intervall für WLAN-Suche:** Geben Sie ein, wie oft Geräte nach WLAN-Netzwerken suchen. Geben Sie einen Wert zwischen 1 (am häufigsten) und 500 (am seltensten) ein.
+- **Zulässige Bluetooth-Dienste:** Geben Sie eine Liste zulässiger Bluetooth-Dienste und -Profile in Form von hexadezimalen Zeichenfolgen ein.
 
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
 
@@ -145,7 +145,6 @@ Diese Einstellungen werden erst einem Gerätekonfigurationsprofil in Intune hinz
 
 - **Task-Manager-Prozesse beenden**: Diese Einstellung bestimmt, ob nicht-Administratoren die Task-Manager für End-Aufgaben verwenden können. Die Option **Blockieren** verhindert, dass Standardbenutzer (also keine Administratoren) den Task-Manager zum Beenden von Prozessen oder Tasks auf dem Gerät verwenden. Über die Option **Nicht konfiguriert** (Standard) erhalten Standardbenutzer die Erlaubnis, Prozesse oder Tasks mithilfe des Task-Managers zu beenden.
 
-
 ## <a name="locked-screen-experience"></a>Gesperrter Bildschirm
 
 - **Info-Center-Benachrichtigungen (nur Mobilgerät)**: Lässt Info-Center-Benachrichtigungen auf dem Gerätesperrbildschirm anzeigen (nur Windows 10 Mobile).
@@ -157,7 +156,7 @@ Diese Einstellungen werden erst einem Gerätekonfigurationsprofil in Intune hinz
 
 ## <a name="messaging"></a>Messaging
 
-- **Nachrichtensynchronisierung (nur mobil)**: Deaktivieren Sie das Feature „Nachrichten – Überall“ sowie die SMS-Sicherung und -Wiederherstellung.
+- **Nachrichtensynchronisierung (nur mobil):** Deaktivieren Sie das Feature „Nachrichten – Überall“ sowie die SMS-Sicherung und -Wiederherstellung.
 - **MMS (nur mobil)**: Deaktivieren Sie die Funktion zum Senden/Empfangen von MMS auf dem Gerät.
 - **RCS (nur mobil)**: Deaktivieren Sie die Funktion für RCS-Sendevorgänge/Empfangsvorgänge (Rich Communication Services) auf dem Gerät.
 
@@ -168,25 +167,25 @@ Diese Einstellungen werden erst einem Gerätekonfigurationsprofil in Intune hinz
 Die verfügbaren Einstellungen hängen davon ab, was Sie auswählen. Folgende Optionen sind verfügbar:
 
 - **Keine** (Standard): Microsoft Edge nicht im Kiosk-Modus ausgeführt wird. Alle Microsoft Edge-Einstellungen sind verfügbar für die Sie ändern und zu konfigurieren.
-- **Digital/Interactive Beschilderung (Kiosk mit einzelner app)**: Filter-Edge-Einstellungen, die für den Kioskmodus für die Verwendung nur auf Windows 10-Single-app-Kiosks Digital/Interactive Beschilderung Edge anwendbar sind. Wählen Sie diese Einstellung aus, um eine vollständige URL-Bildschirm zu öffnen, und nur zeigen Sie den Inhalt auf dieser Website an. [Einrichten von digitalen schildern](https://docs.microsoft.com/windows/configuration/setup-digital-signage) finden Sie weitere Informationen zu dieser Funktion.
-- **InPrivate-öffentliche Browsen (Kiosk mit einzelner app)**: Filter-Edge-Einstellungen, die für InPrivate-öffentliche Durchsuchen von Edge-Kiosk-Modus für die Verwendung in Windows 10-Single-app-Kiosks anwendbar sind. Führt eine mehreren Registerkarte-Version von Microsoft Edge.
-- **Normaler Modus (Multi-app-Kiosk)**: Filter-Edge-Einstellungen, die für den normalen Edge-Kioskmodus anwendbar sind. Führt eine Vollversion von Microsoft Edge-Funktionen zum Durchsuchen.
-- **Öffentliche Durchsuchen (Multi-app-Kiosk)**: Filter-Edge-Einstellungen, die für das Durchsuchen von öffentlich auf einem Windows 10-Kiosks mit mehreren Apps anwendbar sind.  Eine Registerkarte "Multi"-Version von Microsoft Edge-InPrivate ausführt.
+- **Digital/Interactive Beschilderung (Kiosk mit einzelner app)**: Filter Microsoft Edge-Einstellungen, die für den Digital/Interactive Beschilderung Microsoft Edge Kiosk-Modus für die Verwendung nur auf Windows 10-Single-app-Kiosks anwendbar sind. Wählen Sie diese Einstellung aus, um eine vollständige URL-Bildschirm zu öffnen, und nur zeigen Sie den Inhalt auf dieser Website an. [Einrichten von digitalen schildern](https://docs.microsoft.com/windows/configuration/setup-digital-signage) finden Sie weitere Informationen zu dieser Funktion.
+- **InPrivate-öffentliche Browsen (Kiosk mit einzelner app)**: Filter Microsoft Edge-Einstellungen, die für InPrivate-öffentliche Durchsuchen von Microsoft Edge Kiosk-Modus für die Verwendung in Windows 10-Single-app-Kiosks anwendbar sind. Führt eine mehreren Registerkarte-Version von Microsoft Edge.
+- **Normaler Modus (Multi-app-Kiosk)**: Filter Microsoft Edge-Einstellungen, die für den normalen Microsoft Edge-Kioskmodus anwendbar sind. Führt eine Vollversion von Microsoft Edge-Funktionen zum Durchsuchen.
+- **Öffentliche Durchsuchen (Multi-app-Kiosk)**: Filter Microsoft Edge-Einstellungen, die für das Durchsuchen von öffentlich auf einem Windows 10-Kiosks mit mehreren Apps anwendbar sind.  Eine Registerkarte "Multi"-Version von Microsoft Edge-InPrivate ausführt.
 
 > [!TIP]
 > Weitere Informationen dazu, was wie folgt vor, diese Optionen, finden Sie unter [Microsoft Edge Kiosk-Modus-Konfigurationstypen](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
 Dieses Profil für geräteeinschränkungen steht in direkter Beziehung zu den kioskprofil erstellen Sie mit der [Einstellungen der Windows-Kioskmodus](kiosk-settings-windows.md). Zusammenfassung:
 
-1. Erstellen der [Einstellungen der Windows-Kioskmodus](kiosk-settings-windows.md) Profils, das auf dem Gerät im Kiosk-Modus ausgeführt. Wählen Sie Microsoft Edge, wie die Anwendung, und legen Sie den Edge-Kiosk-Modus im Kiosk-Profil.
-2. Erstellen Sie das Profil für geräteeinschränkungen in diesem Artikel beschrieben, und konfigurieren Sie bestimmter Features und Einstellungen in Microsoft Edge zulässig. Achten Sie darauf, dass Sie denselben Edge Kiosk-Modustyp wie in Ihrem kioskprofil ausgewählten auswählen ([Einstellungen der Windows-Kioskmodus](kiosk-settings-windows.md)). 
+1. Erstellen der [Einstellungen der Windows-Kioskmodus](kiosk-settings-windows.md) Profils, das auf dem Gerät im Kiosk-Modus ausgeführt. Wählen Sie Microsoft Edge, wie die Anwendung aus, und legen Sie den Microsoft Edge-Kiosk-Modus im Kiosk-Profil.
+2. Erstellen Sie das Profil für geräteeinschränkungen in diesem Artikel beschrieben, und konfigurieren Sie bestimmter Features und Einstellungen in Microsoft Edge zulässig. Achten Sie darauf, dass Sie den gleichen Microsoft Edge Kiosk-Modus-Typ in Ihrem kioskprofil ausgewählte auswählen ([Einstellungen der Windows-Kioskmodus](kiosk-settings-windows.md)). 
 
     [Einstellungen für den Kioskmodus unterstützt](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) ist eine großartige Ressource.
 
 > [!IMPORTANT] 
 > Achten Sie darauf, dass Sie den gleichen Geräten als Ihr kioskprofil diesem Microsoft Edge-Profil zuweisen ([Einstellungen der Windows-Kioskmodus](kiosk-settings-windows.md)).
 
-CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
+[ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### <a name="start-experience"></a>Startoberfläche
 
@@ -204,7 +203,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **Benutzerdefinierte URL der Startschaltfläche**: Die Option, die Sie für die Einstellung **URL der Startschaltfläche** ausgewählt haben, wird ausgeführt.
   - **Startschaltfläche ausblenden**: Blendet die Startschaltfläche aus.
 - **Benutzer kann Startschaltfläche ändern**: **Zulassen** ermöglicht Benutzern das Ändern der Startschaltfläche. Die Änderungen des Benutzers setzen Administratoreinstellungen für die Startschaltfläche außer Kraft. **Nicht konfiguriert** verwendet das Standardverhalten des Betriebssystems auf dem Gerät, das Benutzern möglicherweise das Ändern der Administratorkonfiguration der Startschaltfläche nicht erlaubt.
-- **Willkommensseite anzeigen**: **Blockieren** verhindert, dass die Einführungsseite bei der ersten Ausführung von Microsoft Edge angezeigt wird. Diese Funktion ermöglicht Unternehmen, die z.B. in Nullemissionskonfigurationen registriert sind, diese Seite zu blockieren. **Nicht konfiguriert** zeigt die Einführungsseite an.
+- **Willkommensseite anzeigen**: **Blockieren** verhindert, dass die Einführungsseite bei der ersten Ausführung von Microsoft Edge angezeigt wird. Diese Funktion ermöglicht Unternehmen, also z. B. die Organisationen, die in Nullemissionskonfigurationen registriert sind, diese Seite zu blockieren. **Nicht konfiguriert** zeigt die Einführungsseite an.
   - **URL für Willkommensseite**: Geben Sie die URL der Seite an, die angezeigt wird, wenn der Benutzer Microsoft Edge zum ersten Mal ausführt (nur Windows 10 Mobile).
 - **Aktualisieren der Browser nach einer Leerlaufzeit**: Geben Sie die Anzahl der Minuten im Leerlauf, bis der Browser, von 0 – 1440 aktualisiert wird Minuten. Der Standardwert ist `5` Minuten. Bei Festlegung auf `0` (null), die der Browser nicht nach einem Leerlauf aktualisiert.
 
@@ -331,7 +330,7 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 - **Telefon**: Legen Sie fest, ob diese App auf das Telefon zugreifen darf.
 - **Radios**: Einige Apps verwenden Radios (z.B. Bluetooth) auf Ihrem Gerät, um Daten zu senden und zu empfangen, und müssen diese Radios ein- oder ausschalten. Legen Sie fest, ob diese App diese Radios steuern kann.
 - **Aufgaben**: Legen Sie fest, ob diese App auf Ihre Aufgaben zugreifen darf.
-- **Vertrauenswürdige Geräte**: Legen Sie diese Einstellung fest, wenn diese App vertrauenswürdige Geräte verwenden soll, d.h. bereits angeschlossene oder im Lieferumfang dieses Geräts enthaltene Hardware. Verwenden Sie z. B. Fernsehgeräte oder Projektoren als vertrauenswürdige Geräte.
+- **Vertrauenswürdige Geräte**: Wählen Sie, wenn diese app vertrauenswürdige Geräte verwenden können. Als vertrauenswürdige Geräte wird Hardware angesehen, mit der Sie bereits eine Verbindung hergestellt haben oder die in das Gerät integriert ist. Verwenden Sie z. B. Fernsehgeräte oder Projektoren als vertrauenswürdige Geräte.
 - **Feedback und Diagnose**: Legen Sie fest, ob diese App auf Diagnoseinformationen zugreifen darf.
 - **Mit Geräten synchronisieren**: Legen Sie fest, ob diese App automatisch Informationen mit Drahtlosgeräten teilen und synchronisieren darf, die nicht explizit mit dem Gerät gekoppelt sind.
 
@@ -352,7 +351,7 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 - **Benutzeraktivitäten veröffentlichen**: **Blockieren** Sie diese Einstellung, um geteilte Aktivitäten und die Ermittlungen von kürzlich verwendeten Ressourcen in der Programmumschaltung zu vermeiden.
 - **Nur lokale Aktivitäten**: **Blockieren** Sie diese Einstellung, um geteilte Aktivitäten und Ermittlungen von kürzlich in der Programmumschaltung verwendeten Ressourcen anhand von ausschließlich lokalen Aktivitäten zu vermeiden.
 
-Sie können Informationen definieren, auf die alle Apps auf dem Gerät zugreifen können. Zudem können Sie mithilfe von **App-bezogenen Datenschutzausnahmen** Ausnahmen für jede App definieren.
+Sie können Informationen definieren, auf die alle Apps auf dem Gerät zugreifen können. Definieren Sie ebenfalls Ausnahmen für jede App mithilfe von **App-bezogenen Datenschutzausnahmen**.
 
 ### <a name="exceptions"></a>Ausnahmen
 
@@ -371,7 +370,7 @@ Sie können Informationen definieren, auf die alle Apps auf dem Gerät zugreifen
 - **Telefon**: Legen Sie fest, ob diese App auf das Telefon zugreifen darf.
 - **Radios**: Einige Apps verwenden Radios (z.B. Bluetooth) auf Ihrem Gerät, um Daten zu senden und zu empfangen, und müssen diese Radios ein- oder ausschalten. Legen Sie fest, ob diese App diese Radios steuern kann.
 - **Aufgaben**: Legen Sie fest, ob diese App auf Ihre Aufgaben zugreifen darf.
-- **Vertrauenswürdige Geräte**: Wählen Sie, wenn diese app vertrauenswürdige Geräte verwenden können. Als vertrauenswürdige Geräte wird Hardware angesehen, mit der Sie bereits eine Verbindung hergestellt haben oder die in das Gerät integriert ist. Verwenden Sie z.B. Fernsehgeräte, Projektoren usw. als vertrauenswürdige Geräte.
+- **Vertrauenswürdige Geräte**: Wählen Sie, wenn diese app vertrauenswürdige Geräte verwenden können. Als vertrauenswürdige Geräte wird Hardware angesehen, mit der Sie bereits eine Verbindung hergestellt haben oder die in das Gerät integriert ist. Verwenden Sie z. B. Fernsehgeräte oder Projektoren als vertrauenswürdige Geräte.
 - **Feedback und Diagnose**: Legen Sie diese Einstellung fest, wenn diese App auf Diagnoseinformationen zugreifen soll.
 - **Mit Geräten synchronisieren**: Legen Sie fest, ob diese App automatisch Informationen mit Drahtlosgeräten teilen und synchronisieren darf, die nicht explizit mit Ihrem PC, Tablet oder Telefon gekoppelt sind.
 
@@ -385,7 +384,7 @@ Sie können Informationen definieren, auf die alle Apps auf dem Gerät zugreifen
 
 - **Nutzungsdaten freigeben**: Wählen Sie die Ebene der Diagnosedaten, die gesendet werden. Folgende Optionen sind verfügbar:
   - Sicherheit
-  - Basic
+  - Einfach
   - Erweitert
   - Vollständig
 - **Microsoft Edge-Browserdaten an Microsoft 365 Analytics senden**: Um dieses Feature verwenden zu können, legen Sie für die Einstellung **Nutzungsdaten freigeben** **Erweitert** oder **Vollständig** fest. Dieses Feature steuert, welche Daten Microsoft Edge an Microsoft 365 Analytics für Unternehmensgeräte mit einer konfigurierten kommerziellen ID sendet. Folgende Optionen sind verfügbar:
@@ -467,24 +466,46 @@ Sie können Informationen definieren, auf die alle Apps auf dem Gerät zugreifen
 - **Alle Downloads überprüfen**: Steuert, ob Defender alle aus dem Internet heruntergeladenen Dateien überprüft.
 - **In Microsoft-Webbrowsern geladene Skripts überprüfen**: Ermöglicht Defender die Überprüfung von Skripts, die in Internet Explorer verwendet werden.
 - **Endbenutzerzugriff auf Defender**: Steuert, ob die Benutzeroberfläche von Windows Defender für Endbenutzer ausgeblendet ist. Wenn diese Einstellung geändert wird, wird die Änderung wirksam, wenn der Endbenutzer-PC das nächste Mal neu gestartet wird.
-- **Intervall für Signaturaktualisierung (in Stunden)**: Gibt das Intervall an, in dem Defender auf neue Signaturdateien prüft.
+- **Intervall für Signaturaktualisierung (in Stunden):** Geben Sie das Intervall ein, in dem Defender auf neue Signaturdateien prüft.
 - **Datei- und Programmaktivität überwachen**: Ermöglicht Defender die Überwachung der Datei- und Programmaktivität auf Geräten.
-- **Tage bis zum Löschen von in Quarantäne befindlicher Schadsoftware**: Ermöglicht Defender die fortgesetzte Nachverfolgung behandelter Schadsoftware für die angegebene Anzahl von Tagen, damit Sie zuvor betroffene Geräte manuell überprüfen können. Wenn Sie die Anzahl von Tagen auf **0** festlegen, bleibt Schadsoftware im Quarantäneordner und wird nicht automatisch entfernt.
-- **CPU-Nutzungslimit während einer Überprüfung**: Ermöglicht die Begrenzung der CPU-Nutzung, die bei Überprüfungen genutzt werden darf (von **1** bis **100**).
+- **Tage bis zum Löschen von in Quarantäne befindlicher Schadsoftware**: Überwachung fortsetzen, erkannte Malware für die Anzahl der Tage, die Sie eingeben, damit Sie zuvor betroffene Geräte manuell überprüfen können. Wenn Sie die Anzahl von Tagen auf **0** festlegen, bleibt Schadsoftware im Quarantäneordner und wird nicht automatisch entfernt.
+- **CPU-Nutzungslimit während einer Überprüfung:** Begrenzen Sie die CPU-Nutzung, die bei Überprüfungen genutzt werden darf (von **1** bis **100**).
 - **Archivdateien überprüfen**: Ermöglicht Defender die Überprüfung von Archivdateien wie ZIP- oder CAB-Dateien.
 - **Eingehende E-Mail überprüfen**: Ermöglicht Defender das Überprüfen von E-Mail-Nachrichten beim Eingang auf dem Gerät.
 - **Bei einer vollständigen Überprüfung Wechseldatenträger überprüfen**: Ermöglicht Defender das Überprüfen von Wechseldatenträgern wie USB-Sticks.
 - **Bei einer vollständigen Überprüfung zugeordnete Netzlaufwerke überprüfen**: Ermöglicht Defender das Überprüfen von Dateien auf zugeordneten Netzwerklaufwerken.
   Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefundene Schadsoftware nicht entfernen.
 - **Über Netzwerkordner geöffnete Dateien überprüfen**: Ermöglicht Defender das Überprüfen von Dateien auf freigegebenen Netzlaufwerken (z.B. Dateien, auf die über einen UNC-Pfad zugegriffen wird). Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefundene Schadsoftware nicht entfernen.
-- **Cloudschutz**: Erlaubt oder sperrt den Empfang von Informationen über Schadsoftwareaktivitäten der von Ihnen verwalteten Geräten durch den Microsoft Active Protection Service. Diese Informationen werden verwendet, um den Dienst in der Zukunft zu verbessern.
+- **Cloudschutz**: Erlaubt oder sperrt den Empfang von Informationen über Schadsoftwareaktivitäten der von Ihnen verwalteten Geräten durch den Microsoft Active Protection Service. Diese Informationen wird den Dienst in der Zukunft verbessert.
 - **Vor dem Senden von Beispielen bei Benutzern nachfragen**: Steuert, ob potenziell schädliche Dateien, die möglicherweise genauer analysiert werden müssen, automatisch an Microsoft gesendet werden.
-- **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung**: Ermöglicht Ihnen die Planung einer Schnellüberprüfung, die täglich zum ausgewählten Zeitpunkt erfolgt.
-- **Art der durchzuführenden Systemüberprüfung**: Geben Sie die Überprüfungsebene für eine geplante Systemüberprüfung ein.
+- **Uhrzeit für die Durchführung einer täglichen schnellüberprüfung**: Wählen Sie die Stunde tägliche eine schnellüberprüfung ausgeführt. **Nicht konfiguriert** tägliche Überprüfung nicht ausführen. Wenn Sie weitere anpassen möchten, konfigurieren die **Typ der durchzuführenden systemüberprüfung** festlegen.
+
+  [Defender/ScheduleQuickScanTime (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- **Typ der durchzuführenden systemüberprüfung**: Planen einer systemüberprüfung, einschließlich der Überprüfungsebene, und den Tag und die Uhrzeit zum Ausführen der Überprüfung. Folgende Optionen sind verfügbar:
+  - **Nicht konfiguriert**: nicht systemüberprüfung auf dem Gerät planen. Endbenutzer können Überprüfungen als erforderlich oder erwünscht manuell auf ihren Geräten ausführen.
+  - **Deaktivieren Sie**: jedes System Scannen auf dem Gerät deaktiviert. Wählen Sie diese Option aus, wenn Sie eine Partner Antivirus-Lösung verwenden, die Geräte überprüft.
+  - **Schnellüberprüfung**: Allgemein verwendete Speicherorte untersucht, es Malware kann registriert werden, z. B. Registrierungsschlüssel und bekannte Windows-Startordner.
+    - **Geplant am**: Wählen Sie den Tag, um die Überprüfung ausführen.
+    - **Geplante Zeit**: Wählen Sie die Stunde, um die Überprüfung ausführen.
+  - **Vollständige Überprüfung**: Allgemein verwendete Speicherorte überprüft, kann Malware registriert und auch durchsucht alle Dateien und Ordner auf dem Gerät.
+    - **Geplant am**: Wählen Sie den Tag, um die Überprüfung ausführen.
+    - **Geplante Zeit**: Wählen Sie die Stunde, um die Überprüfung ausführen.
+
+  Diese Einstellung steht in Konflikt mit der **Uhrzeit für die Durchführung einer täglichen schnellüberprüfung** festlegen. Empfehlungen:
+
+  - Führen Sie eine tägliche schnellüberprüfung konfigurieren die **Uhrzeit für die Durchführung einer täglichen schnellüberprüfung** festlegen.
+  - Um eine tägliche schnellüberprüfung und eine vollständige Überprüfung jede Woche auszuführen, und konfigurieren Sie dann die **Uhrzeit für die Durchführung einer täglichen schnellüberprüfung**, und legen Sie **Typ der durchzuführenden systemüberprüfung** zu einer vollständigen Überprüfung mit dem Tag und Uhrzeit.
+  - Konfigurieren Sie keinen der **Uhrzeit für die Durchführung einer täglichen schnellüberprüfung** gleichzeitig festlegen, mit der **Typ der durchzuführenden systemüberprüfung** festgelegt **schnell-Scan**. Diese Einstellungen können in Konflikt stehen, und eine Überprüfung kann möglicherweise nicht ausgeführt.
+  - Konfigurieren Sie zum Ausführen einer schnellüberprüfung jeden Dienstag um 6 Uhr der **Typ der durchzuführenden systemüberprüfung** festlegen.
+
+  [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+
 - **Möglicherweise unerwünschte Software erkennen**: Ermöglicht die Auswahl einer der folgenden Schutzebenen, wenn Windows potenziell unerwünschte Software erkennt:
   - **Blockieren**
   - **Überwachung** Weitere Informationen zu potenziell unerwünschten Apps finden Sie in [Erkennen und Blockieren möglicherweise unerwünschter Anwendungen](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
-- **Aktionen für erkannte Schadsoftwarebedrohungen**: Wählen Sie mit dieser Option die Maßnahmen aus, die Defender bei den einzelnen erkannten Bedrohungsstufen (Niedrig, Mittel, Hoch und Schwerwiegend) ergreifen soll. Folgende Optionen sind verfügbar:
+- **Aktionen für erkannte Schadsoftwarebedrohungen**: Wählen Sie die Maßnahmen aus, die Defender bei den einzelnen erkannten Bedrohungsstufen (Niedrig, Mittel, Hoch und Schwerwiegend) ergreifen soll. Folgende Optionen sind verfügbar:
   - **Bereinigen**
   - **Quarantäne**
   - **Entfernen**

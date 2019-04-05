@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400482"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358316"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune Data Warehouse-Sammlungen
 
@@ -231,7 +231,7 @@ In der Entität **device** werden alle für die Verwaltung registrierten Geräte
 | DeviceEnrollmentType       | Der Schlüssel des Registrierungstyps, der mit diesem Gerät verknüpft ist und die Registrierungsmethode angibt.                                                                                             |
 | ComplianceStateKey         | Der Schlüssel des Konformitätsstatus, der mit diesem Gerät verknüpft ist.                                                                                                                             |
 | OSVersion                  | Betriebssystemversion des Geräts                                                                                                                                                |
-| EasDeviceId                | Die Exchange ActiveSync-ID des Geräts.                                                                                                                                                  |
+| EasDeviceId                | Exchange ActiveSync-ID des Geräts                                                                                                                                                  |
 | SerialNumber               | SerialNumber                                                                                                                                                                           |
 | UserId                     | Eindeutiger Bezeichner für den Benutzer, der dem Gerät zugeordnet ist.                                                                                                                           |
 | RowLastModifiedDateTimeUTC | UTC-Zeitpunkt, zu dem dieses Gerät zuletzt in Data Warehouse geändert wurde.                                                                                                       |
@@ -281,7 +281,7 @@ Die Entität **deviceType** stellt den Gerätetyp dar, auf den von anderen Data 
 | 12           | ISocConsumer      | iSoc Consumer-Gerät                                |
 | 13           | Unix              | Unix-Gerät                                         |
 | 14           | MacMDM            | Mac OS X-Gerät, das mit dem integrierten MDM-Agent verwaltet wird |
-| 15           | HoloLens          | HoloLens-Gerät                                    |
+| 15           | HoloLens          | HoloLens-Gerät                                       |
 | 16           | SurfaceHub        | Surface Hub-Gerät                                  |
 | 17           | AndroidForWork    | Android-Gerät, das mit dem Android-Profilbesitzer verwaltet wird  |
 | 18           | AndroidEnterprise | Android Enterprise-Gerät.                          |
@@ -368,8 +368,8 @@ Die Entität **enrollmentFailureCategory** gibt an, warum eine Geräteregistrier
 | BadRequest                      | Der Client hat eine Anforderung gesendet, die vom Dienst nicht verstanden bzw. unterstützt wird.                                        |
 | FeatureNotSupported             | Die von dieser Registrierung verwendeten Features werden für dieses Konto nicht unterstützt.                                        |
 | EnrollmentRestrictionsEnforced  | Vom Administrator konfigurierte Registrierungseinschränkungen haben diese Registrierung blockiert.                                          |
-| ClientDisconnected              | Für den Client gab es eine Zeitüberschreitung, oder die Registrierung wurde vom Benutzer abgebrochen.                                                        |
-| UserAbandonment                 | Die Registrierung wurde vom Benutzer vorzeitig beendet. (Der Benutzer hat mit dem Onboarding begonnen, aber dieses nicht rechtzeitig abgeschlossen.)  |
+| ClientDisconnected              | Für den Client gab es eine Zeitüberschreitung, oder die Registrierung wurde vom Endbenutzer abgebrochen.                                                        |
+| UserAbandonment                 | Die Registrierung wurde vom Endbenutzer vorzeitig beendet. (Der Endbenutzer hat mit dem Onboarding begonnen, aber dieses nicht rechtzeitig abgeschlossen.)  |
 
 ## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
 Die Entität **enrollmentFailureReason** gibt eine ausführlichere Ursache für einen Fehler bei der Geräteregistrierung innerhalb einer Fehlerkategorie an.  
@@ -398,7 +398,7 @@ Die Entität **enrollmentFailureReason** gibt eine ausführlichere Ursache für 
 | EnrollmentCriteriaNotMet         | Dieses Gerät konnte aufgrund einer konfigurierten Regel zur Einschränkung von Registrierungen nicht registriert werden.                                                                                                                          |
 | BulkDeviceNotPreregistered       | Die IMEI (International Mobile Equipment Identity) bzw. die Seriennummer dieses Geräts wurde nicht gefunden.  Ohne diesen Bezeichner werden Geräte als persönliche Geräte erkannt, die zurzeit gesperrt sind.  |
 | FeatureNotSupported              | Der Benutzer hat versucht, auf eine Funktion zuzugreifen, die noch nicht für alle Kunden freigegeben oder nicht mit Ihrer Intune-Konfiguration kompatibel ist.                                                            |
-| UserAbandonment                  | Die Registrierung wurde vom Benutzer vorzeitig beendet. (Der Benutzer hat mit dem Onboarding begonnen, aber dieses nicht rechtzeitig abgeschlossen.)                                                                                           |
+| UserAbandonment                  | Die Registrierung wurde vom Endbenutzer vorzeitig beendet. (Der Endbenutzer hat mit dem Onboarding begonnen, aber dieses nicht rechtzeitig abgeschlossen.)                                                                                           |
 | APNSCertificateExpired           | Apple-Geräte können nicht mit einem abgelaufenen Apple-MDM-Pushzertifikat verwaltet werden.                                                                                                                            |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
@@ -448,7 +448,7 @@ Die Entität **managementAgentType** stellt die Agents dar, die zum Verwalten vo
 | 5                     | EasIntuneClient                   | Das Gerät wird sowohl von Exchange ActiveSync als auch vom Intune-PC-Agent verwaltet. |
 | 8                     | ConfigManagerClient               | Das Gerät wird vom System Center Configuration Manager-Agent verwaltet.     |
 | 10                    | ConfigurationManagerClientMdm     | Das Gerät wird vom Configuration Manager und MDM verwaltet.                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | Das Gerät wird von Configuration Manager, MDM und Eas verwaltet.               |
+| 11                    | ConfigurationManagerCLientMdmEas  | Das Gerät wird von Configuration Manager, Verwaltung mobiler Geräte und Exchange Active Sync verwaltet.               |
 | 16                    | Unbekannt                           | Unbekannter Verwaltungs-Agent-Typ                                              |
 | 32                    | Jamf                              | Die Geräteattribute werden von Jamf abgerufen.                               |
 | 64                    | GoogleCloudDevicePolicyController |  Das Gerät wird von CloudDPC von Google verwaltet.                                 |
@@ -617,7 +617,7 @@ Die Entitätssammlung **user** enthält Benutzerdaten. Zu diesen Datensätzen ge
 | UserKey                    | Eindeutiger Bezeichner des Benutzers im Data Warehouse – Ersatzschlüssel.                                                                                                                                                         | 123                                  |
 | UserId                     | Eindeutiger Bezeichner des Benutzers – ähnlich wie UserKey, ist jedoch ein natürlicher Schlüssel.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | E-Mail-Adresse des Benutzers                                                                                                                                                                                                     | John@constoso.com                    |
-| UPN                        | Benutzerprinzipalname des Benutzers                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | Benutzerprinzipalname des Benutzers                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                | Anzeigename des Benutzers                                                                                                                                                                                                      | John                                 |
 | IntuneLicensed             | Gibt an, ob dieser Benutzer über Intune lizenziert ist oder nicht.                                                                                                                                                                              | Wahr/falsch                           |
 | isDeleted                  | Gibt an, ob alle Lizenzen des Benutzers abgelaufen sind und ob der Benutzer daher aus Intune entfernt wurde. Dieses Flag wird für einen einzelnen Datensatz nicht geändert. Stattdessen wird ein neuer Datensatz für einen neuen Benutzerzustand erstellt. | Wahr/falsch                           |

@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756801"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658548"
 ---
-# <a name="use-rbac-and-scope-tags-for-distributed-it"></a>Verwenden von RBAC und die Scope-Tags für verteilte IT
+# <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Verwenden Sie rollenbasierte Zugriffssteuerung (RBAC) und bereichsmarkierungen für verteilte IT
 
-Sie können die rollenbasierte Zugriffssteuerung (RBAC) und bereichsmarkierungen verwenden, um sicherzustellen, dass die richtigen Administratoren die richtigen Zugriffsrechte und die Sichtbarkeit auf die richtige Intune-Objekte verfügen. Rollen bestimmen, welche Administratoren haben, auf welche Objekte. Bereichsmarkierungen bestimmen, welche Objekte Administratoren anzeigen können.
+Sie können rollenbasierten Zugriff Kontrolle und Bereich-Tags verwenden, um sicherzustellen, dass die richtigen Administratoren die richtigen Zugriffsrechte und die Sichtbarkeit auf die richtige Intune-Objekte verfügen. Rollen bestimmen, welche Administratoren haben, auf welche Objekte. Bereichsmarkierungen bestimmen, welche Objekte Administratoren anzeigen können.
 
 Nehmen wir beispielsweise an, dass ein Niederlassung Seattle-Administrator die Richtlinien- und Profil-Manager-Rolle zugewiesen ist. Sie möchten diesen Administrator anzeigen und verwalten nur die Profile und Richtlinien, die nur für Seattle Geräte gelten. Zu diesem Zweck sollen wie folgt vor:
 
@@ -83,6 +83,21 @@ Nehmen wir beispielsweise an, dass ein Niederlassung Seattle-Administrator die R
 3. Klicken Sie unter **Tags auswählen**, wählen Sie die Tags, die Sie zum Profil hinzufügen möchten.
 4. Wählen Sie **wählen** > **OK** > **speichern**.
 
+## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>Eine app-Konfigurationsrichtlinie eine bereichsmarkierung zuweisen
+Für Geräte mit **geräteregistrierungstyp** festgelegt **verwaltete Geräte**:
+1. Wählen Sie **Clientanwendungen** > **App-Konfigurationsrichtlinien** > Wählen Sie eine app-Konfigurationsrichtlinie.
+2. Wählen Sie **Eigenschaften** > **Bereich (Markierungen)** > Wählen Sie die Tags, die Sie für die Richtlinie zuweisen möchten.
+
+Für Geräte mit **geräteregistrierungstyp** festgelegt **verwaltete apps**:
+1. Wählen Sie **Clientanwendungen** > **App-Konfigurationsrichtlinien** > Wählen Sie eine app-Konfigurationsrichtlinie.
+2. Wählen Sie **Bereich (Markierungen)** > Wählen Sie die Tags, die Sie für die Richtlinie zuweisen möchten.
+
+
+## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>Eine iOS-app, das Bereitstellungsprofil eine bereichsmarkierung zuweisen
+1. Wählen Sie in Intune **Clientanwendungen** > **iOS-app-bereitstellungsprofile** > Auswählen eines Profils.
+2. Wählen Sie **Eigenschaften** > **Bereich (Markierungen)** > Wählen Sie die Tags, die Sie dem Profil zuweisen möchten.
+3. Wählen Sie **wählen** > **OK** > **speichern**.
+
 ## <a name="scope-tag-details"></a>Tag-Details des berechtigungsbereichs
 Bei der Arbeit mit bereichsmarkierungen Beachten Sie Folgendes aus:
 
@@ -96,20 +111,13 @@ Bei der Arbeit mit bereichsmarkierungen Beachten Sie Folgendes aus:
     - App-Konfigurationsrichtlinien für verwaltete Geräte
     - PowerShell-Skripts
     - DEP-Token
+    - Bereitstellungsprofil für iOS-Apps
 - Wenn ein Administrator ein Objekt in Intune erstellt, werden alle bereichsmarkierungen, die den betreffenden Administrator zugewiesen automatisch das neue Objekt zugewiesen werden.
 - Intune RBAC gilt nicht für Azure Active Directory-Rollen. Daher haben, die Intune-Dienstadministratoren Gruppenverwaltungsaufgaben und globale Administratoren von Rollen vollständigen Administratorzugriff auf Intune unabhängig davon, welche bereichsmarkierungen, sie haben.
 - Administratoren in einer rollenzuweisung mit bereichsmarkierungen können auch keine bereichsmarkierungen Intune Objekten anzeigen.
 - Sie können nur eine bereichsmarkierung zuweisen, die Sie in Ihren rollenzuweisungen verfügen.
 - Sie können nur für den Zielgruppen, die im Bereich (Gruppen) der rollenzuweisung aufgeführt sind.
 - Wenn Sie eine bereichsmarkierung für Ihre Rolle zugewiesen haben, kann nicht alle bereichsmarkierungen für ein Intune-Objekt gelöscht werden. Mindestens eine bereichsmarkierung ist erforderlich.
-- Wenn ein Benutzer mehrere rollenzuweisungen verfügt, erweitern Berechtigungen in die rollenzuweisungen für verschiedene Objekte wie folgt:
-    - Weisen Sie Berechtigungen gelten nur für die Objekte (z. B. Richtlinien oder apps) in dieser rollenzuweisung Bereich (Gruppen). Weisen Sie Berechtigungen für Objekte in anderen rollenzuweisungen gelten nicht, es sei denn, die andere Zuweisung explizit erteilt.
-    - Andere Berechtigungen (z. B. das Erstellen und Lesen), gelten für alle Objekte des gleichen Typs (z. B. alle Richtlinien "oder" alle apps ") in einer der Zuweisungen von des Benutzers.
-    - Berechtigungen für Objekte unterschiedlicher Typen (z.B. Richtlinien oder apps), gelten nicht, miteinander. Eine Read-Berechtigung für eine Richtlinie kann bereitstellen nicht zum Beispiel eine Read-Berechtigung für apps des Benutzers Zuweisungen.
-
-
-
-
 
 ## <a name="next-steps"></a>Nächste Schritte
 

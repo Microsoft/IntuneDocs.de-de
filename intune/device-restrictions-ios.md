@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a92d18615f6be7c1e0ce931d443d2ac986db991e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566708"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490725"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
@@ -38,24 +38,24 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 ## <a name="general"></a>Allgemein
 
 - **Nutzungsdaten freigeben**: Wählen Sie **Blockieren** aus, um zu verhindern, dass das Gerät Diagnose- und Nutzungsdaten an Apple sendet. **Nicht konfiguriert** (Standard) erlaubt das Senden dieser Daten.
-  - **Übermittlung von Diagnosedaten**: **Blockieren** verhindert, dass der Benutzer Änderungen an den Einstellungen für Diagnoseübermittlung und App-Analyse in **Diagnose- und Nutzung** (Geräteeinstellungen) vornimmt. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Geräteeinstellungen zu ändern.
+  - **Einstellungen zur diagnoseübermittlung (nur überwacht)**: **Block** verhindert, dass der Benutzer daran, Änderungen an der diagnoseübermittlung und zur app Analytics diagnoseeinstellungen in **Diagnose- und Nutzungsdaten**(geräteeinstellungen). **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Geräteeinstellungen zu ändern.
 
     Diese Funktion gilt für:  
     - iOS 9.3.2 und höher
 
-- **Bildschirmaufnahme**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Screenshots oder Bildschirmaufnahmen auf dem Gerät vorgenommen werden. **Nicht konfiguriert** (Standard) erlaubt dem Benutzer, den Bildschirminhalt als Bild zu erfassen.
+- **Bildschirmaufnahme**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Screenshots oder Bildschirmaufnahmen auf dem Gerät vorgenommen werden. In iOS 9.0 und höher schließt dies bildschirmaufzeichnungen blockiert. **Nicht konfiguriert** (Standard) erlaubt dem Benutzer, den Bildschirminhalt als Bild oder Video zu erfassen.
   - **Remotebildschirmüberwachung über die Classroom-App (nur überwacht):** Wählen Sie **Blockieren** aus, um zu verhindern, dass die Classroom-App den Bildschirm des Geräts remote anzeigt. **Nicht konfiguriert** (Standard) erlaubt der Classroom-App von Apple, den Bildschirm anzuzeigen.
 
     Diese Funktion gilt für:  
     - iOS 9.3 und höher
 
-  - **Unangekündigte Bildschirmüberwachung über Classroom-App (nur überwacht)**: Falls auf **Zulassen** festgelegt, können Lehrer im Hintergrund die Bildschirme der iOS-Geräte ihrer Kursteilnehmer mithilfe der Classroom-App überwachen, ohne dass die Kursteilnehmer dies mitbekommen. In einer Klasse registrierte Kursteilnehmergeräte, die die Classroom-App verwenden, gewähren der Lehrkraft des Kurses automatisch die Berechtigung. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird dieses Feature deaktiviert.
-- **Nicht vertrauenswürdige TLS-Zertifikate:** Wählen Sie **Blockieren** aus, um zu verhindern, dass nicht vertrauenswürdige TLS-Zertifikate (Transport Layer Security) auf das Gerät gelangen. **Nicht konfiguriert** lässt TLS-Zertifikate zu.
+  - **Unangekündigte Bildschirmüberwachung über Classroom-App (nur überwacht)**: Falls auf **Zulassen** festgelegt, können Lehrer im Hintergrund die Bildschirme der iOS-Geräte ihrer Kursteilnehmer mithilfe der Classroom-App überwachen, ohne dass die Kursteilnehmer dies mitbekommen. In einer Klasse registrierte Kursteilnehmergeräte, die die Classroom-App verwenden, gewähren der Lehrkraft des Kurses automatisch die Berechtigung. **Nicht konfiguriert** (Standard) wird verhindert, dass diese Funktion.
+- **Nicht vertrauenswürdige TLS-Zertifikate:** Wählen Sie **Blockieren** aus, um zu verhindern, dass nicht vertrauenswürdige TLS-Zertifikate (Transport Layer Security) auf das Gerät gelangen. **Nicht konfiguriert** (Standard) ermöglicht die TLS-Zertifikate.
 - **Vertrauen für Unternehmens-App**: Wählen Sie **Blockieren** aus, um die Schaltfläche **Unternehmensentwickler vertrauen** aus „Einstellungen > Allgemein > Profile und Geräteverwaltung“ auf dem Gerät zu entfernen. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer zu wählen, ob Apps, die nicht aus dem App Store heruntergeladen wurden, vertraut werden soll.
 - **Kontoänderung (nur überwacht)**: Bei Festlegung auf **Blockieren** kann der Benutzer die gerätespezifischen Einstellungen nicht über die iOS-Einstellungen-App aktualisieren. Der Benutzer kann z.B. nicht neue Gerätekonten erstellen oder Benutzernamen bzw. Kennwort ändern. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Einstellungen zu ändern.
 
   Diese Funktion gilt auch für Einstellungen, auf die über die iOS-Einstellungen-App zugegriffen werden kann, wie z.B. E-Mail, Kontakte, Kalender, Twitter und mehr. Diese Funktion gilt nicht für Apps mit Kontoeinstellungen, die nicht über die iOS-Einstellungen-App konfiguriert werden können, wie z.B. die Microsoft Outlook-App.
-- **Bildschirm (nur überwacht) Zeit**: Wählen Sie **Block** verhindert, dass Benutzer eigene Einschränkungen im Bildschirm-Zeit (Einstellungen für Geräte) festlegen. **Nicht konfiguriert** erlaubt dem Benutzer das Konfigurieren von Geräteeinschränkungen (z.B. Jugendschutz) auf dem Gerät.
+- **Bildschirm (nur überwacht) Zeit**: Wählen Sie **Block** verhindert, dass Benutzer eigene Einschränkungen im Bildschirm-Zeit (Einstellungen für Geräte) festlegen. **Nicht konfiguriert** ermöglicht es dem Benutzer konfigurieren von geräteeinschränkungen (z. B. Jugendschutz oder Inhalt und datenschutzbeschränkungen) auf dem Gerät.
 
   Diese Einstellung wurde entsprechend von **Aktivieren von Einschränkungen in den geräteeinstellungen**. Die Auswirkungen dieser Änderung:  
   
@@ -70,7 +70,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 - **Konfigurationsprofiländerungen (nur überwacht)**: **Blockieren** verhindert Änderungen des Konfigurationsprofils auf dem Gerät. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, Konfigurationsprofile zu installieren.
 - **Aktivierungssperre (nur überwacht)**: Wählen Sie **Zulassen** aus, um die Aktivierungssperre auf überwachten iOS-Geräten zu aktivieren. Die Aktivierungssperre erschwert die erneute Aktivierung verlorener oder gestohlener Geräte.
 - **Entfernen von Apps blockieren (nur überwacht)**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer Apps entfernen. **Nicht konfiguriert** (Standard) ermöglicht Benutzern, Apps vom Gerät zu entfernen.
-- **Modus mit USB-Einschränkung blockieren (nur überwacht)**: Wählen Sie **Blockieren** aus, um den Modus mit USB-Einschränkung auf überwachten Geräten zu deaktivieren. Der Modus mit USB-Einschränkung verhindert, dass USB-Zubehör Daten mit einem Gerät austauscht, das für mehr als einer Stunde gesperrt ist. **Nicht konfiguriert** ermöglicht den Modus mit USB-Einschränkung.
+- **Modus mit USB-Einschränkung blockieren (nur überwacht)**: Wählen Sie **Blockieren** aus, um den Modus mit USB-Einschränkung auf überwachten Geräten zu deaktivieren. Der Modus mit USB-Einschränkung verhindert, dass USB-Zubehör Daten mit einem Gerät austauscht, das für mehr als einer Stunde gesperrt ist. **Nicht konfiguriert** (Standard) ermöglicht das USB-eingeschränkten Modus.
 - **Automatische Datums- und Uhrzeiteinstellung erzwingen (nur überwacht)**: **Anfordern** erzwingt die automatische Einstellung von Datum und Uhrzeit auf überwachten Geräten. Die Zeitzone für das Gerät wird aktualisiert, wenn das Gerät über Mobilfunkverbindungen verfügt oder WLAN mit Standortdiensten aktiviert ist.
 - **Von Kursteilnehmern eine Berechtigung zum Verlassen des Classroom-Kurses verlangen**: **Anfordern** erzwingt, dass in einem nicht verwalteten Kurs registrierte Kursteilnehmer, die die Classroom-App verwenden, vom Kursleiter eine Berechtigung zum Verlassen des Kurses anfordern müssen. **Nicht konfiguriert** (Standard) erzwingt nicht, dass Kursteilnehmer um eine Berechtigung bitten müssen.
 
@@ -103,7 +103,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
     Z. B. wenn iOS 12.a steht auf **am 1. Januar**, und **verzögern Sichtbarkeit** nastaven NA hodnotu **5 Tage**, dann iOS 12.a wird nicht als verfügbares Update auf Endbenutzergeräten angezeigt. Auf der **sechsten Tag** nach der Freigabe, die, dass Update verfügbar ist, und Benutzer können es installieren.
 
-    Diese Einstellung gilt nur für .  
+    Diese Einstellung gilt für:  
     - iOS 11.3 und höher
 
 ## <a name="password"></a>Kennwort
@@ -159,7 +159,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 - **Anstößige iTunes-Musik-, Podcast- oder Nachrichteninhalte (nur überwachter Modus)**: Wählen Sie **Blockieren** aus, um anstößige iTunes-Musik-, Podcast- oder Nachrichteninhalte zu verhindern. **Nicht konfiguriert** ermöglicht, dass das Gerät im Store auf nicht jugendfreie Inhalte zugreift.
 - **Als „Erotik“ gekennzeichneten Inhalt aus dem iBook Store herunterladen**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer Medien aus dem iBook Store herunterladen, die als „Erotik“ gekennzeichnet sind. **Nicht konfiguriert** gestattet dem Benutzer das Herunterladen von Büchern aus der Kategorie „Erotik“.
 - **Anzeige von Unternehmensdokumenten in nicht verwalteten Apps**: **Blockieren** verhindert die Anzeige unternehmenseigener Dokumente in nicht verwalteten Apps. **Nicht konfiguriert** gestattet die Anzeige von Unternehmensdokumenten in beliebigen Apps. Beispiel: Sie möchten verhindern, dass Benutzer Dateien aus der OneDrive-App in Dropbox speichern. Legen Sie für diese Einstellung **Blockieren** fest. Sobald das Gerät die Richtlinie empfängt (z.B. nach einem Neustart), ist kein Speichern mehr möglich.
-  - Wenn Sie **Zulassen** auswählen, können Benutzer die Outlook-Kontaktinformationen jeder Person zur App „Kontakte“, die auf dem Geräte integriert ist, hinzufügen oder sie mit ihr synchronisieren, einschließlich geschäftlicher Kontakte und Firmenkontakte. Wenn Sie **Nicht konfiguriert** auswählen, können Benutzer Outlook-Kontakte nicht der auf dem Gerät integrierten App „Kontakte“ hinzufügen.
+  - **Durch verwaltete apps Schreiben auf nicht verwalteten Kontakte-Konten zulassen**: bei Festlegung auf **zulassen**, Benutzer hinzufügen können, oder jeder Person Outlook wenden Sie sich an Informationen, einschließlich Unternehmen und Unternehmen Kontakte zu synchronisieren der integrierte app "Kontakte" auf dem Gerät. Wenn Sie **Nicht konfiguriert** auswählen, können Benutzer Outlook-Kontakte nicht der auf dem Gerät integrierten App „Kontakte“ hinzufügen.
   
     Wenn Sie diese Einstellung verwenden möchten, legen Sie die Einstellung **Anzeige von Unternehmensdokumenten in nicht verwalteten Apps** auf **Blockieren** fest.
   
@@ -255,7 +255,7 @@ Um diesen Listen Apps hinzuzufügen, können Sie:
   Diese Funktion gilt für:  
   - iOS 11.0 und höher
 
-- **Privater Hotspot**: **Blockieren** verhindert, dass das Gerät als privater Hotspot verwendet wird. Diese Einstellung kann mit einigen Anbietern nicht kompatibel sein. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird dieses Feature deaktiviert.
+- **Persönlicher Hotspot**: **Block** der persönlicher Hotspot auf dem Benutzergerät mit jeder gerätesynchronisierung deaktiviert. Diese Einstellung kann mit einigen Anbietern nicht kompatibel sein. **Nicht konfiguriert** (Standard) bleibt die persönlicher Hotspot-Konfiguration als der Standardwert, der vom Benutzer festgelegt wird.
 - **Verknüpfen von WLAN-Netzwerken nur mithilfe von Konfigurationsprofilen (nur überwacht):** **Anfordern** erzwingt, dass das Gerät nur WLAN-Netzwerke verwendet, die mit Intune-Konfigurationsprofilen eingerichtet wurden. **Nicht konfiguriert** (Standard) ermöglicht dem Gerät, andere WLAN-Netzwerke zu verwenden.
 - **Mobilfunk-Verwendungsregeln (nur verwaltete Apps)**: Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn sie sich in Mobilfunknetzwerken befinden. Folgende Optionen sind verfügbar:
   - **Verwendung von Datenverbindungen blockieren**: Blockieren Sie die Verwendung von Datenverbindungen für **Alle verwalteten Apps**, oder Sie können **Bestimmte Apps wählen**.
@@ -316,7 +316,7 @@ Apps können Sie wie folgt hinzufügen:
   - **Nicht konfiguriert**: kioskeinstellungen werden nicht angewendet. Das Gerät im Kiosk-Modus wird nicht ausgeführt.
   - **Store-App**: Geben Sie die URL zu einer App im iTunes App-Store ein.
   - **Verwaltete App**: Wählen Sie eine App aus, die Sie in Intune hinzugefügt haben.
-  - **Integrierte App**: Geben Sie die [Bündel-ID](#bundle-ids-for-built-in-ios-apps) der integrierten App ein
+  - **Integrierte App**: Geben Sie die [Paket-ID](#bundle-ids-for-built-in-ios-apps) (in diesem Artikel) der integrierten app.
 
 - **Touch-Unterstützung**: Zum **Anfordern** der Barrierefreiheitseinstellung „Touch-Unterstützung“ auf dem Gerät. Diese Funktion hilft Benutzern mit Bildschirmgesten bei Vorgängen, die für sie schwierig sein könnten. Mit **Nicht konfiguriert** wird dieses Feature im Kioskmodus nicht ausgeführt, oder es wird nicht aktiviert.
 - **Farben umkehren:** **Anfordern** der Barrierefreiheitseinstellung „Farben umkehren“, die die Anzeige für Benutzer mit eingeschränkter Sehfähigkeit anpasst. Mit **Nicht konfiguriert** wird dieses Feature im Kioskmodus nicht ausgeführt, oder es wird nicht aktiviert.
@@ -343,7 +343,7 @@ Apps können Sie wie folgt hinzufügen:
 
 - **Nicht markierte e-Mail-Domänen** > **-e-Mail-Domänen-URL**: eine oder mehrere URLs der Liste hinzufügen. Wenn Endbenutzer eine E-Mail von einer anderen Domäne als den von Ihnen eingegebenen erhalten, wird die E-Mail in der iOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
 
-- Fügen Sie in **Webdomänen-URL** eine oder mehrere URLs der Liste hinzu. Wenn Dokumente von den Domänen heruntergeladen werden, die Sie eingeben, gelten sie als verwaltet. Diese Einstellung gilt nur für Dokumente, die mit dem Safari-Browser heruntergeladen werden.
+- **Verwaltete Webdomänen** > **Webdomänen-URL**; Fügen Sie eine oder mehrere URLs der Liste hinzu. Wenn Dokumente von den Domänen heruntergeladen werden, die Sie eingeben, gelten sie als verwaltet. Diese Einstellung gilt nur für Dokumente, die mit dem Safari-Browser heruntergeladen werden.
 
 - **AutoAusfüllen-Domänen für Safari-Kennworts** > **Domänen-URL**: eine oder mehrere URLs der Liste hinzufügen. Benutzer können nur Webkennwörter von URLs in dieser Liste speichern. Diese Einstellung gilt nur für den Safari-Browser und Geräte mit iOS 9.3 und höher im überwachten Modus. Wenn Sie keine URLs angeben, können Kennwörter von allen Websites gespeichert werden.
 
