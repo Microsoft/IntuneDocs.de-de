@@ -1,6 +1,6 @@
 ---
 title: APIs zum Onboarding von Zertifizierungsstellen von Drittanbietern
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Fügen Sie die SCEP-GitHub-Lösung für Drittanbieter-Zertifizierungsstellen (Certificate Authorities, CA) hinzu oder integrieren Sie diese, um SCEP-Zertifikate für Geräte in Microsoft Intune auszustellen. Diese Lösung umfasst Java- und C#-APIs, die Benachrichtigungen über die erfolgreiche und fehlgeschlagene Ausführung überprüfen, an Intune senden und über eine SSL-Socket-Factory mit Intune kommunizieren. Darüber hinaus können Sie einen Überblick über die Schritte anzeigen, um Ihre SCEP-Konfiguration für Zertifizierungsstellen zu testen.
 keywords: ''
 author: MandiOhlinger
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 274b512a8fa4b4026d26c8b5e6a704f51a0bef95
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bf5a9d509bd390561614f59fdce208e8e9f10dde
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565790"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799619"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Verwenden von APIs zum Hinzufügen von Drittanbieter-Zertifizierungsstellen für SCEP in Intune
 

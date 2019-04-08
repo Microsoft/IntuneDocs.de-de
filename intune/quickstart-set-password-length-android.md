@@ -1,12 +1,12 @@
 ---
 title: 'Schnellstart: Erstellen einer Konformitätsrichtlinie für Kennwörter für Android-Geräte'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In diesem Schnellstart erfahren Sie, wie Sie mithilfe von Microsoft Intune eine erforderliche Kennwortlänge für Android-Geräte festlegen.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ae0c7b9a00c3e07bb49261ca1a20bd5ef5db15
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a16272f32b8546e7e9bb12a22f16235ab49aed
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57397240"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799657"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Schnellstart: Erstellen einer Konformitätsrichtlinie für Kennwörter für Android-Geräte
 
@@ -49,7 +49,8 @@ In diesem Schnellstart erfahren Sie, wie Sie mit Intune für Ihre Mitarbeiter mi
 3. Wählen Sie als **Plattform** die Option **Android** aus. 
 4. Wählen Sie **Einstellungen** > **Systemsicherheit** aus, um das Blatt **Systemsicherheit** für Android-Geräte anzuzeigen.
 5. Klicken Sie neben **Require a password to unlock mobile devices** (Ein Kennwort zum Entsperren von Mobilgeräten anfordern) auf **Anfordern**.
-6. Geben Sie neben **Minimale Kennwortlänge** **6** ein. 
+6. Wählen Sie für **Mindestens numerisch** die Option **Erforderlicher Kennworttyp** aus.
+7. Geben Sie neben **Minimale Kennwortlänge** **6** ein. 
 
     ![Screenshot: Erstellen einer Gruppe in Microsoft Intune](media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 

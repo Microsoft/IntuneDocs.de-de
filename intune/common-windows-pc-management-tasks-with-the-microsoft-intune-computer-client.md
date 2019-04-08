@@ -1,6 +1,6 @@
 ---
 title: Allgemeine Aufgaben zur Verwaltung von Windows-PCs
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Lernen Sie Möglichkeiten kennen, wie Sie Windows-PCs verwalten, auf denen der Intune-Softwareclient ausgeführt wird.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75b6d9eda926cab6c7b2b34e1c7beceee88266d6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2fdb45c711e605da9a1d160593d37564ef846d32
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460409"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58797949"
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Intune-Softwareclient
 

@@ -1,12 +1,12 @@
 ---
 title: 'Schnellstart: Erstellen und Zuweisen von App-Schutzrichtlinien'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In diesem Schnellstart erfahren Sie, wie Sie Microsoft Intune zum Erstellen und Zuweisen von App-Schutzrichtlinien verwenden.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5d7e63542563425606cf1f9a8509a7bf0c09b9a9
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393361"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871360"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Schnellstart: Erstellen und Zuweisen einer App-Schutzrichtlinie
 
@@ -72,7 +72,7 @@ Führen Sie die folgenden Schritte aus, um eine App-Schutzrichtlinie zu zuzuweis
 3.  Wählen Sie **Zuweisungen** aus.
 4.  Klicken Sie auf der Registerkarte **Einschließen** auf **Select groups to include** (Einzuschließende Gruppen auswählen).
 5.  Wählen Sie **Contoso Testers** als einzuschließende Gruppe aus.
-6.  Klicken Sie auf **Auswählen**. 
+6.  Klicken Sie auf **Auswählen** > **Speichern**. 
 
 Somit ist die App-Schutzrichtlinie zugewiesen.
 

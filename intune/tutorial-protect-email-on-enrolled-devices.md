@@ -1,12 +1,12 @@
 ---
 title: 'Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf durch Intune verwalteten Geräten'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Erfahren Sie, wie Sie Exchange Online durch Intune-Konformitätsrichtlinien für iOS und bedingten Azure AD-Zugriff auf verwaltete Geräte und die Outlook-App schützen können.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a8e873c48ceb59bfb8ac98fec9a29fa51d6cd3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528206"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799767"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf verwalteten Geräten
 In diesem Artikel erfahren Sie, wie Sie mithilfe von Gerätekonformitätsrichtlinien mit bedingtem Zugriff sicherstellen können, dass iOS-Geräte nur dann auf den Exchange Online-E-Mail-Dienst zugreifen können, wenn sie von Intune verwaltet werden und eine genehmigte E-Mail-App verwenden. 
@@ -43,7 +43,7 @@ Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für ein
 
 ## <a name="sign-in-to-intune"></a>Anmelden bei Intune
 
-Registrieren Sie sich bei [Intune](https://aka.ms/intuneportal) als globaler Administrator oder als Intune-Dienstadministrator. Intune finden Sie im Azure-Portal, indem Sie **Alle Dienste** > **Intune** auswählen.
+Registrieren Sie sich bei [Intune](https://aka.ms/intuneportal) als globaler Administrator oder als Intune-Dienstadministrator. Wenn Sie ein Testabonnement für Intune erstellt haben, besitzt das Konto, mit dem Sie das Abonnement erstellt haben, die Rolle des globalen Administrators.
 
 ## <a name="create-the-ios-device-compliance-policy"></a>Erstellen der iOS-Gerätekonformitätsrichtlinie
 Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen festzulegen, die ein Gerät erfüllen muss, um als konform angesehen zu werden. Für dieses Tutorial erstellen wir eine Gerätekonformitätsrichtlinie für iOS-Geräte. Konformitätsrichtlinien sind plattformspezifisch, weshalb Sie eine separate Konformitätsrichtlinie für jede Geräteplattform benötigen, die Sie auswerten möchten.
@@ -93,7 +93,7 @@ Jetzt erstellen wir eine Richtlinie für bedingten Zugriff, die für den Zugriff
 5.  Klicken Sie unter **Zuweisungen** auf **Bedingungen** > **Geräteplattformen**.
      
     1. Klicken Sie unter **Konfigurieren** auf **Ja**.
-    2. Klicken Sie auf der Registerkarte **Einschließen** auf **Alle Plattformen (auch nicht unterstützte)** und dann auf **Fertig**. 
+    2. Wählen Sie auf der Registerkarte **Einschließen** die Option **Alle Benutzer** und dann **Fertig** aus. 
     3. Klicken Sie erneut auf **Fertig**.
    
     ![Auswählen der Office 365 Exchange Online-App](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)

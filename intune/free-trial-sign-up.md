@@ -1,6 +1,6 @@
 ---
 title: 'Schnellstart: Testen Sie Microsoft Intune kostenlos'
-titlesuffix: ''
+titleSuffix: ''
 description: In diesem Schnellstart erstellen Sie ein kostenloses Testabonnement, können unterstützte Konfigurationen und Netzwerkanforderungen nachvollziehen und optional Ihren Domänennamen konfigurieren.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c83ab0f70a5a40bd745b4db83ef16ac14acd00
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 63f9ef266c9a5754d5de57232a8f7bc41a6c5777
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756852"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871394"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Schnellstart: Testen Sie Microsoft Intune kostenlos 
 

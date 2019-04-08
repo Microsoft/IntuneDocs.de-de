@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 03/27/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b9247d07ae947e61528095a4853e5cdbcbc80c0
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6dfdf61159d899a81e1ef53a1aaa649c98833b0e
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57389980"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871415"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Schnellstart: Registrierung Ihres Windows 10-Geräts
 
@@ -72,7 +72,7 @@ Bevor Sie Ihr Windows 10-Desktopgerät registrieren, müssen Sie die installiert
 
     ![Wählen Sie „Auf Geschäfts-,Schul- oder Unikonto zugreifen“ aus](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-04.png)
 
-3. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Intune an, und klicken Sie auf **Weiter**. Wenn Sie den Schnellstart „Erstellen eines Benutzers und Zuweisen einer Lizenz“ abgeschlossen haben, können Sie sich mit dem dort erstellten Benutzerkonto anmelden.
+3. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto bei Intune an, und klicken Sie auf **Weiter**. Wenn Sie den Schnellstart [Erstellen eines Benutzers und Zuweisen einer Lizenz](quickstart-create-user.md) abgeschlossen haben, können Sie sich mit dem dort erstellten Benutzerkonto anmelden.
 
     > [!NOTE]
     > Wenn Sie eine onmicrosoft.com-Domäne einrichten, ist **.onmicrosoft.com** Teil der Adresse des Benutzerkontos. 

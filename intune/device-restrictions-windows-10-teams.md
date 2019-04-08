@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune-Geräteeinschränkungen für Windows 10 Team
-titlesuffix: ''
+titleSuffix: ''
 description: In diesem Artikel erfahren Sie etwas über die verfügbaren Geräteeinschränkungen für Windows 10 Team-Geräte.
 keywords: ''
 author: MandiOhlinger
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4630493c67a1b81402d5a92ca5e6979c1862485e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f82950259746010c347e5dafa832a7335026721c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564872"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799310"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Windows 10 Team in Microsoft Intune
 

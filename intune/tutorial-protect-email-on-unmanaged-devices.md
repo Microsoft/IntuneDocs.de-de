@@ -1,12 +1,12 @@
 ---
 title: 'Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf nicht verwalteten Geräten'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Erfahren Sie, wie Sie Office 365 Exchange Online mit Intune-App-Schutzrichtlinien und dem bedingten Zugriff in Azure AD sichern.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4692e19d657e19efe18a91273ce585eb59c6cb65
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528274"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798783"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf nicht verwalteten Geräten
 
@@ -91,8 +91,8 @@ Nun erstellen wir zwei Richtlinien für den bedingten Zugriff, um alle Gerätepl
 5.  Klicken Sie unter **Zuweisungen** auf **Bedingungen** > **Geräteplattformen**.
      
     1. Klicken Sie unter **Konfigurieren** auf **Ja**.
-    2. Klicken Sie auf der Registerkarte **Einschließen** auf **Alle Plattformen (auch nicht unterstützte)**. 
-    3. Wählen Sie **Fertig** aus.
+    2. Wählen Sie auf der Registerkarte **Einschließen** die Option **Jedes Gerät** aus.
+    1. Wählen Sie **Fertig** aus.
    
 6.  Wählen Sie im Bereich **Bedingungen** die Option **Client-Apps** aus.
      
@@ -136,7 +136,7 @@ Die Richtlinie für bedingten Zugriff für Clients mit moderner Authentifizierun
 5.  Klicken Sie unter **Zuweisungen** auf **Bedingungen** > **Geräteplattformen**.
      
     1. Klicken Sie unter **Konfigurieren** auf **Ja**.
-    2. Klicken Sie auf der Registerkarte **Einschließen** auf **Alle Plattformen (auch nicht unterstützte)** und dann auf **Fertig**. 
+    2. Wählen Sie auf der Registerkarte **Einschließen** die Option **Alle Benutzer** und dann **Fertig** aus. 
     3. Klicken Sie erneut auf **Fertig**.
 
 6.  Wählen Sie im Bereich **Bedingungen** die Option **Client-Apps** aus.

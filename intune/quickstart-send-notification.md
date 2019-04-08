@@ -1,12 +1,12 @@
 ---
 title: 'Schnellstart: Senden von Benachrichtigungen an nicht konforme Geräte'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In diesem Schnellstart verwenden Sie Microsoft Intune zum Senden von E-Mail-Benachrichtigungen an nicht konforme Geräte.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57991121"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871432"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Schnellstart: Senden von Benachrichtigungen an nicht konforme Geräte
 
@@ -40,7 +40,7 @@ Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für ein
 
 ## <a name="sign-in-to-intune"></a>Anmelden bei Intune
 
-Melden Sie sich beim [Intune](https://aka.ms/intuneportal)-Portal als [globaler Administrator](users-add.md#types-of-administrators) oder als Intune-[Dienstadministrator](users-add.md#types-of-administrators) an. 
+Melden Sie sich beim [Intune](https://aka.ms/intuneportal)-Portal als [globaler Administrator](users-add.md#types-of-administrators) oder als Intune-[Dienstadministrator](users-add.md#types-of-administrators) an. Wenn Sie ein Testabonnement für Intune erstellt haben, besitzt das Konto, mit dem Sie das Abonnement erstellt haben, die Rolle des globalen Administrators.
 
 ## <a name="create-a-notification-message-template"></a>Erstellen einer Benachrichtigungsvorlage
 
@@ -83,14 +83,13 @@ Mit den folgenden Schritten wird eine Konformitätsrichtlinie für Windows 10-Ge
 5. Legen Sie **Anfordern** für die Option **Kennwort zum Entsperren mobiler Geräte erforderlich** fest. Mit dieser Einstellung wird festgelegt, ob Benutzer ein Kennwort eingeben müssen, damit auf die Daten auf ihren mobilen Geräten zugegriffen werden kann. 
 6. Legen Sie die **minimale Kennwortlänge** auf **6** fest. Mit dieser Einstellung wird die Mindestanzahl an Zahlen oder Zeichen im Kennwort festgelegt.
 
-    ![Systemsicherheitseinstellungen für eine neue Konformitätsrichtlinie](./media/quickstart-send-notification-02.png) 
+    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
 7. Klicken Sie auf **OK** > **OK** > **Erstellen**, um Ihre Konformitätsrichtlinie zu erstellen.
-8. Wählen Sie den Namen Ihrer neuen Richtlinie aus: **Windows 10-Kompatibilität**.
-9. Klicken Sie auf **Eigenschaften** > **Aktion bei Nichtkonformität** > **Hinzufügen**.
-10. Vergewissern Sie sich, dass **Send email to end users** (E-Mail an Endbenutzer senden) im Dropdownfeld **Aktion** ausgewählt ist.
-11. Klicken Sie auf **Nachrichtenvorlage** > **Contoso-Administrator** > **Auswählen**, um die Nachrichtenvorlage auszuwählen, die Sie zuvor erstellt haben.
-12. Speichern Sie Ihre Änderungen, indem Sie auf **OK** > **OK** > **Speichern** klicken.
+8. Klicken Sie auf **Eigenschaften** > **Aktion bei Nichtkonformität** > **Hinzufügen**.
+9. Vergewissern Sie sich, dass **Send email to end users** (E-Mail an Endbenutzer senden) im Dropdownfeld **Aktion** ausgewählt ist.
+10. Klicken Sie auf **Nachrichtenvorlage** > **Contoso-Administrator** > **Auswählen**, um die Nachrichtenvorlage auszuwählen, die Sie zuvor erstellt haben.
+11. Speichern Sie Ihre Änderungen, indem Sie **HINZUFÜGEN** > **OK** > **Speichern** auswählen.
 
 ## <a name="assign-the-policy"></a>Zuweisen der Richtlinie
 
