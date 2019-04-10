@@ -278,18 +278,10 @@ items:
     items:
     - name: Konformitätsübersicht
       href: device-compliance-get-started.md
-    - name: Android-Konformität
-      href: compliance-policy-create-android.md
-    - name: Android Enterprise-Konformität
-      href: compliance-policy-create-android-for-work.md
-    - name: iOS-Konformität
-      href: compliance-policy-create-ios.md
-    - name: Windows-Konformität
-      href: compliance-policy-create-windows.md
+    - name: Erstellen einer Richtlinie
+      href: create-compliance-policy.md
     - name: Standortbasierte Konformität
       href: use-network-locations.md
-    - name: Richtlinie auswerten
-      href: policy-evaluate.md
     - name: Aktionen bei Inkompatibilität
       href: actions-for-noncompliance.md
     - name: Überwachen der Gerätekonformität
@@ -298,7 +290,7 @@ items:
     items:
     - name: 'Übersicht: Gerätekonfiguration'
       href: device-profiles.md
-    - name: Geräteprofile
+    - name: Erstellen eines Profils
       href: device-profile-create.md
     - name: Administrative Vorlagen
       href: administrative-templates-windows.md
@@ -735,7 +727,7 @@ items:
     - name: Windows 10 und höher
       items:
       - name: Einstellungen für Kompatibilitätsrichtlinie
-        href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
+        href: compliance-policy-create-windows.md
       - name: Einstellungen für das Konfigurationsprofil
         items:
         - name: Einstellungen für die Übermittlungsoptimierung
@@ -770,20 +762,24 @@ items:
         href: windows-update-settings.md
     - name: Windows Holographic for Business
       items:
-      - name: Geräteeinschränkungen
-        href: device-restrictions-windows-holographic.md
-      - name: Von mehreren Benutzern gemeinsam verwendetes Gerät
-        href: shared-user-device-settings-windows-holographic.md
-      - name: Editionsupgrade und Moduswechsel
-        href: holographic-upgrade.md
-      - name: Kiosk
-        href: kiosk-settings-holographic.md
-      - name: Benutzerdefiniert
-        href: custom-settings-windows-holographic.md
+      - name: Einstellungen für Kompatibilitätsrichtlinie
+        href: compliance-policy-create-windows.md#windows-holographic-for-business
+      - name: Einstellungen für das Konfigurationsprofil
+        items:
+        - name: Geräteeinschränkungen
+          href: device-restrictions-windows-holographic.md
+        - name: Von mehreren Benutzern gemeinsam verwendetes Gerät
+          href: shared-user-device-settings-windows-holographic.md
+        - name: Editionsupgrade und Moduswechsel
+          href: holographic-upgrade.md
+        - name: Kiosk
+          href: kiosk-settings-holographic.md
+        - name: Benutzerdefiniert
+          href: custom-settings-windows-holographic.md
     - name: Windows 8.1
       items:
       - name: Einstellungen für Kompatibilitätsrichtlinie
-        href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
+        href: compliance-policy-create-windows-8-1.md
       - name: Einstellungen für das Konfigurationsprofil
         items:
         - name: Geräteeinschränkungen
@@ -795,7 +791,7 @@ items:
     - name: Windows Phone 8.1
       items:
       - name: Einstellungen für Kompatibilitätsrichtlinie
-        href: compliance-policy-create-windows.md#windows-81-devices-policy-settings
+        href: compliance-policy-create-windows-8-1.md
       - name: Einstellungen für das Konfigurationsprofil
         items:
         - name: Geräteeinschränkungen
@@ -949,9 +945,9 @@ items:
       href: data-outside-protect.md
     - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
       href: data-leak-prevention.md
-ms.openlocfilehash: eae3f1d1507f7bdfe18855aa568edeac3d211230
-ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
+ms.openlocfilehash: e120e5432fe68f479cc19fed5ea2263e7824245c
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58899179"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423838"
