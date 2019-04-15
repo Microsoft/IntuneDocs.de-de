@@ -10,18 +10,19 @@ ms.date: 02/15/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8190814-07f0-42d8-9b3a-87c67dd2b7ed
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb03bbdb5c4f52472a110af4f15eec0aeba4a6f3
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d5a521641c2d916f1a40679bc8d9445abaaf9872
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238658"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57399170"
 ---
 # <a name="turn-on-ios-supervised-mode"></a>Aktivieren des überwachten iOS-Modus
 

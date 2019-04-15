@@ -1,5 +1,6 @@
 ---
-title: Lookout MTD-Connector mit Microsoft Intune | Microsoft Intune
+title: Lookout MTD-Connector mit Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Informationen zum Integrieren von Intune mit Lookout Mobile Threat Defense (MTD), um den Zugriff von mobilen Geräten auf Ihre Unternehmensressourcen zu steuern.
 keywords: ''
 author: brenduns
@@ -9,6 +10,7 @@ ms.date: 06/09/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
 ms.reviewer: heenamac
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7115421ea75e96c17ba3ca78773a9368f752d2a7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 9cf507ba470013bddf4809b6ad6ad54b4cb52d9d
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236132"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569427"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Lookout Mobile Threat Defense-Connector mit Intune
 

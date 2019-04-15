@@ -1,6 +1,6 @@
 ---
 title: Festlegen von Nutzungsbedingungen in Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Legen Sie Geschäftsbedingungen fest, die Benutzern im Unternehmensportal für Intune angezeigt werden.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 10/20/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b0571ad6196277ee2bc257d72cc4db24fcc3424
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7c056e86f7e768d79b4851fda327dc2e32fa349c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237944"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567308"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Geschäftsbedingungen für den Benutzerzugriff
 
@@ -43,7 +44,7 @@ Es gibt zwei Möglichkeiten zum Erstellen der Nutzungsbedingungen Ihres Unterneh
 Führen Sie die folgenden Schritte aus, um Geschäftsbedingungen zu erstellen. Der Anzeigename und die Beschreibung sind für administrative Zwecke vorgesehen, während die Eigenschaften der Bedingungen den Benutzern im Unternehmensportal angezeigt werden.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Klicken Sie im Bereich **Intune** auf **Geräteregistrierung** > **Nutzungsbedingungen**.
 2. Wählen Sie **Erstellen** aus.
 ![Screenshot: Azure-Portal mit Schaltfläche zum Erstellen von Geschäftsbedingungen](media/terms-create-terms.png)

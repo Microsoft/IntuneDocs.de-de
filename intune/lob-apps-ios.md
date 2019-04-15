@@ -1,15 +1,16 @@
 ---
 title: Hinzufügen von branchenspezifischen iOS-Apps zu Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Erfahren Sie, wie Sie eine branchenspezifische (Line-of-Business, LOB) iOS-App zu Microsoft Intune hinzufügen.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7206a29bea5a53bf13b43a9881c629f27e949dbb
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d687fee70a5983379d1e4e95a7be6aa454f26f8a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229987"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568569"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen iOS-Apps zu Microsoft Intune
 
@@ -77,7 +78,7 @@ Die von Ihnen erstellte App wird nun in der Liste der Apps angezeigt. Sie könne
 > [!NOTE]
 > Bei Bereitstellungsprofilen für branchenspezifische iOS-Apps gibt es eine Mitteilung für 30 Tage, bevor sie ablaufen.
 
-## <a name="step-5-update-a-line-of-business-app"></a>Schritt 5: Aktualisieren einer branchenspezifischen App
+## <a name="step-5-update-a-line-of-business-app"></a>Schritt 5: Aktualisieren einer branchenspezifischen App
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 

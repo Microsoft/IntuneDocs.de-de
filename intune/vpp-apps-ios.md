@@ -1,15 +1,16 @@
 ---
 title: Verwalten von über ein Volumenprogramm erworbenen iOS-Apps in Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Erfahren Sie, wie Sie Apps, die Sie über ein Volumenprogramm im iOS Store erworben haben, in Microsoft Intune synchronisieren und dann deren Nutzung verwalten und nachverfolgen können.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 606fe0dfe7160d6fe61366db98b7f22a45216bd0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: dca219f1593265e0bf6447c054969548d5d79351
+ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229827"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59570636"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS-Apps, die über ein Volumenprogramm mit Microsoft Intune erworben wurden
 
@@ -83,7 +84,7 @@ Bevor Sie beginnen, müssen Sie ein VPP-Token von Apple abrufen und es in Ihr In
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>So können Sie einen Apple VPP-Token abrufen und hochladen
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3.  Wählen Sie im Bereich **Intune** unter **Setup** (Einrichtung) **Client-Apps** > **iOS-VPP-Token** aus.
 4.  Klicken Sie im Bereich mit der Liste der VPP-Token auf **Erstellen**.
 5. Geben Sie im Bereich **VPP-Token erstellen** die folgenden Informationen an:
@@ -124,11 +125,11 @@ Der Benutzer erhält Aufforderungen zur VPP-App-Installation im Zusammenhang mit
 
 | # | Szenario                                | Einladen zum Apple VPP-Programm                              | Aufforderung zur App-Installation | Aufforderung für die Apple-ID |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD: lizenzierter Benutzer                             | „Y“ zugeordnet ist                                                                                               | „Y“ zugeordnet ist                                           | „Y“ zugeordnet ist                                 |
-| 2 | Corp: lizenzierter Benutzer (Gerät wird nicht überwacht)     | „Y“ zugeordnet ist                                                                                               | „Y“ zugeordnet ist                                           | „Y“ zugeordnet ist                                 |
-| 3 | Corp: lizenzierter Benutzer (Gerät wird überwacht)         | „Y“ zugeordnet ist                                                                                               | N                                           | „Y“ zugeordnet ist                                 |
-| 4 | BYOD: lizenziertes Gerät                           | N                                                                                               | „Y“ zugeordnet ist                                           | N                                 |
-| 5 | Corp: lizenziertes Gerät (Gerät wird nicht überwacht)                           | N                                                                                               | „Y“ zugeordnet ist                                           | N                                 |
+| 1 | BYOD: lizenzierter Benutzer                             | J                                                                                               | J                                           | J                                 |
+| 2 | Corp: lizenzierter Benutzer (Gerät wird nicht überwacht)     | J                                                                                               | J                                           | J                                 |
+| 3 | Corp: lizenzierter Benutzer (Gerät wird überwacht)         | J                                                                                               | N                                           | J                                 |
+| 4 | BYOD: lizenziertes Gerät                           | N                                                                                               | J                                           | N                                 |
+| 5 | Corp: lizenziertes Gerät (Gerät wird nicht überwacht)                           | N                                                                                               | J                                           | N                                 |
 | 6 | Corp: lizenziertes Gerät (Gerät wird überwacht)                           | N                                                                                               | N                                           | N                                 |
 | 7 | Kioskmodus (Gerät wird überwacht): lizenziertes Gerät | N                                                                                               | N                                           | N                                 |
 | 8 | Kioskmodus (Gerät wird überwacht): lizenzierter Benutzer   | --- | ---                                          | ---                                |

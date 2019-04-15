@@ -1,6 +1,6 @@
 ---
 title: Was ist die Microsoft Intune Geräteregistrierung?
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In diesem Artikel finden Sie Informationen zur Registrierung bei iOS-, Android- und Windows-Geräten.
 keywords: ''
 author: ErikjeMS
@@ -10,18 +10,19 @@ ms.date: 12/11/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1472d48dae13a02895b4e8a45c90979d03cf410b
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: d089d0e9724a1ce150fa7e8697c80734fb0d7e9c
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55844495"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568426"
 ---
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]

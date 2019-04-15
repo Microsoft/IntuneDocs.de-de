@@ -1,6 +1,6 @@
 ---
 title: Registrieren von iOS-Geräten in Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Richten Sie die Registrierung von iOS-Geräten in Microsoft Intune ein.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd27238b6cdb1ba33bc93da63a84dd25dba273af
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: eef5524cff3ce29e802ca8078ba2b5e104e89775
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235997"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568855"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrieren von iOS-Geräten in Intune
 

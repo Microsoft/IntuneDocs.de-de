@@ -1,6 +1,6 @@
 ---
 title: Windows 10-App-Bereitstellung mit Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: In diesem Artikel lernen Sie die für Microsoft Intune verfügbaren Bereitstellungsszenarien für Windows 10-Apps kennen.
 keywords: ''
 author: Erikre
@@ -10,6 +10,7 @@ ms.date: 02/28/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac5c1fe3c456d31150f4cb5f23c20ed02559ada0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: f9c263b9b5fbb7916fb1ae9b9835e2647593f3b1
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231484"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567191"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Windows 10-App-Bereitstellung mit Microsoft Intune 
 

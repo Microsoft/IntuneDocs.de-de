@@ -1,6 +1,6 @@
 ---
 title: Registrierung von Windows-Geräten mit Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Registrierung von Windows-Geräten
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 09/27/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2192b6d653bfb51503b006a5045d454c202618f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d7dd4ab5f7cecfa8a765b6dfa038b73015a0c768
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234103"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567295"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Registrierung von Windows-Geräten
 
@@ -42,8 +43,8 @@ Zwei Faktoren bestimmen, wie Sie die Registrierung von Windows-Geräten vereinfa
 
 ||**Azure AD Premium**|**AD (Sonstiges)**|
 |----------|---------------|---------------|  
-|**Windows 10**|[Automatische Registrierung](#enable-windows-10-automatic-enrollment) |[Benutzerregistrierung](#enable-windows-enrollment-without-azure-ad-premium)|
-|**Frühere Windows-Versionen**|[Benutzerregistrierung](#enable-windows-enrollment-without-azure-ad-premium)|[Benutzerregistrierung](#enable-windows-enrollment-without-azure-ad-premium)|
+|**Windows 10**|[Automatische Registrierung](#enable-windows-10-automatic-enrollment) |Benutzerregistrierung|
+|**Frühere Windows-Versionen**|Benutzerregistrierung|Benutzerregistrierung|
 
 Organisationen, die die automatische Registrierung nutzen, können mithilfe der Windows Configuration Designer-App auch [Geräte für die Massenregistrierung](windows-bulk-enroll.md) konfigurieren.
 

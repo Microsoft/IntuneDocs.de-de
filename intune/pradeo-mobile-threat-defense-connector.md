@@ -10,16 +10,17 @@ ms.date: 06/27/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6a511a9fe0316b0db3ffae39b85f85c8b8b5aa00
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 129e9df21a922fccfe380babe7034ec475c4fc70
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229002"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57398519"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Mobile Threat Defense-Connector Pradeo in Intune
 

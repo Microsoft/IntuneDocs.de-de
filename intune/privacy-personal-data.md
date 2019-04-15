@@ -9,6 +9,7 @@ ms.date: 05/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dc5e9af9-8a3e-4b3c-ba49-e79142092e2e
 ms.reviewer: angerobe
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d40d7d771972a387d633d578aa932ac835df700f
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 523b4683a796e6eb6ff7387bd9f78ca66aff0bb8
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237451"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57395680"
 ---
 # <a name="privacy-and-personal-data-in-intune"></a>Datenschutz und personenbezogene Daten in Intune
 

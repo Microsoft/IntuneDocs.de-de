@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d0a113a30ad7394491552fdbc3b3fb300e0ae6df
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57333805"
+---
 
 
 ### <a name="apple"></a>Apple

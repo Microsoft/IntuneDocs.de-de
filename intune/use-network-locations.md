@@ -9,6 +9,7 @@ ms.date: 05/21/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ayesham
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad1c633261e4d917cb88793efbac2ff4416dd429
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: d2431695f89c9cdf339a0192e27f8140ec042435
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236686"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396240"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Verwenden von Standorten (Netzwerk-Fencing) in Intune
 

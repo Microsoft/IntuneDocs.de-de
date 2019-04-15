@@ -1,5 +1,6 @@
 ---
-title: Einrichten der Lookout-Integration in Microsoft Intune | Microsoft Intune
+title: Einrichten Ihrer Lookout-Integration in Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Informationen zum Integrieren von Lookout Mobile Threat Defense in Intune, um den Zugriff von mobilen Geräten auf Ihre Unternehmensressourcen zu steuern.
 keywords: ''
 author: brenduns
@@ -9,6 +10,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69e9cfa1ffc294ca26f94bab94d8b758611a4ac0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 3644ebaa0582cea5e79c5123ac89b97bc6f97f29
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237570"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569570"
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Einrichten Ihrer Lookout Mobile Threat Defense-Integration mit Intune
 

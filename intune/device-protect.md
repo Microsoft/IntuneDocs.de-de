@@ -10,6 +10,7 @@ ms.date: 07/19/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: angerobe
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13598a5c5a564b84c932907f6ae19a10810d81e7
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ce2c5e51c7a902e7b132f78a216b9067690011b8
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229495"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57394259"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Schützen von Geräten mit Microsoft Intune
 

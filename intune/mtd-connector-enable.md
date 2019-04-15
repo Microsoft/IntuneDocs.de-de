@@ -1,5 +1,6 @@
 ---
-title: Aktivieren des Mobile Threat Defense-Connectors in Microsoft Intune | Microsoft Intune
+title: Aktivieren Sie den Mobile Threat Defense-Connector in Microsoft Intune.
+titleSuffix: Microsoft Intune
 description: Aktivieren Sie den Connector zwischen Ihrem Mobile Threat Defense-Partner (MTD) und Microsoft Intune.
 keywords: ''
 author: brenduns
@@ -9,6 +10,7 @@ ms.date: 02/27/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 434db774a5e356306fd91f4fc33ce61526e138fe
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ab9fef5a577783ebbdd512de6d00ab98483e754c
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229979"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569622"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Aktivieren Sie den Mobile Threat Defense-Connector in Intune.
 

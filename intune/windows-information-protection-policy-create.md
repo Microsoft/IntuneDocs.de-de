@@ -1,5 +1,6 @@
 ---
-title: Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) | Microsoft Intune
+title: Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection)
+titleSuffix: Microsoft Intune
 description: Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Microsoft Intune
 keywords: ''
 author: Erikre
@@ -9,6 +10,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6494bbff9ca1c9d46c4af03ff90340fcca36ec97
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1b8257b315bc18b10e7c2c86e931af005e44730c
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231569"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569765"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
 
@@ -125,7 +127,8 @@ Nachdem Sie die Apps hinzugefügt haben, die durch WIP geschützt werden sollen,
 
 WIP Learning ist ein Bericht, mit dem Sie Ihre WIP-tauglichen und WIP-unbekannten Apps überwachen können. Unbekannte Apps sind Apps, die nicht von der IT-Abteilung Ihrer Organisation bereitgestellt wurden. Sie können diese Apps vor der Erzwingung von WIP im Modus „Blockieren“ über den Bericht exportieren und zu Ihren WIP-Richtlinien hinzufügen, um Produktivitätseinbußen zu verhindern.
 
-<!-- 1631908 --> Neben der Anzeige von Informationen über WIP-fähige Apps können Sie eine Zusammenfassung der Geräte anzeigen, die Arbeitsdaten für Websites freigegeben haben. Anhand dieser Informationen können Sie festlegen, welche Websites zu WIP-Gruppen- und Benutzerrichtlinien hinzugefügt werden sollen. Die Zusammenfassung zeigt, auf welche Website-URLs von WIP-aktivierten Apps zugegriffen werden kann.
+<!-- 1631908 -->
+Neben der Anzeige von Informationen über WIP-fähige Apps können Sie eine Zusammenfassung der Geräte anzeigen, die Arbeitsdaten für Websites freigegeben haben. Anhand dieser Informationen können Sie festlegen, welche Websites zu WIP-Gruppen- und Benutzerrichtlinien hinzugefügt werden sollen. Die Zusammenfassung zeigt, auf welche Website-URLs von WIP-aktivierten Apps zugegriffen werden kann.
 
 Beim Arbeiten mit WIP-tauglichen und WIP-unbekannten Apps sollten Sie mit **Automatisch** oder **Außerkraftsetzungen zulassen** beginnen und bei einer kleinen Gruppe überprüfen, ob die Liste der geschützten Apps die richtigen Apps enthält. Wenn Sie fertig sind, können Sie Ihre endgültige Erzwingungsrichtlinie in **Blockieren** ändern.
 
