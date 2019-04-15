@@ -1,5 +1,6 @@
 ---
-title: Problembehandlung bei Exchange-Connectors | Microsoft Intune
+title: Exchange Connector-Problembehandlung
+titleSuffix: Microsoft Intune
 description: Erfahren Sie, wie Sie Problemen mit dem lokalen Intune Exchange Connector behandeln.
 keywords: ''
 author: brenduns
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2cbe4e213854c4dbf5cc29b8a05aec7fb0d46b3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 15108167b9f2495fb5c8d8257083606b439b0430
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460647"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292316"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Behandeln von Problemen mit dem lokalen Intune Exchange Connector
 
@@ -47,9 +48,9 @@ In diesem Artikel wird beschrieben, wie Sie Problemen mit dem lokalen Intune Exc
 
 
 ## <a name="using-powershell-to-get-more-data-on-exchange-connector-issues"></a>Verwenden von PowerShell zum Abrufen weiterer Daten bei Exchange Connector-Problemen
-- Verwenden Sie den Befehl „Get-ActiveSyncDeviceStatistics -mailbox mbx“, um eine Liste aller mobilen Geräte für ein Postfach abzurufen.
-- Verwenden Sie den Befehl „Get-Mailbox -Identity user | select emailaddresses | fl“, um eine Liste von SMTP-Adressen für ein Postfach abzurufen.
-- Verwenden Sie „Get-CASMailbox <upn> | fl“, um ausführliche Informationen zum Zugriffsstatus eines Geräts abzurufen.
+- Verwenden Sie den Befehl „Get-ActiveSyncDeviceStatistics -mailbox mbx“, um eine Liste aller mobilen Geräte für ein Postfach abzurufen
+- Verwenden Sie den Befehl „Get-Mailbox -Identity user | select emailaddresses | fl“, um eine Liste von SMTP-Adressen für ein Postfach abzurufen
+- Verwenden Sie „Get-CASMailbox <upn> | fl“, um ausführliche Informationen zum Zugriffsstatus eines Geräts abzurufen
 
 ### <a name="next-steps"></a>Nächste Schritte
 Wenn Sie weitere Hilfe benötigen, können Sie ebenfalls [Support für Microsoft Intune](get-support.md) anfordern.

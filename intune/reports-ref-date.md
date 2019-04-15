@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 04/10/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f69da2ced8e9c249514bb30490372db66c00b8c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: dc88aaca62868af2db024dcea90594161269fd86
+ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798499"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59533591"
 ---
 # <a name="reference-for-date-entity"></a>Verweis für die Datumsentität
 
