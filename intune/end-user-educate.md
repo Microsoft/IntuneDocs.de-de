@@ -1,5 +1,6 @@
 ---
-title: So informieren sie Ihre Endbenutzer über Microsoft Intune | Microsoft Intune
+title: So informieren sie Ihre Endbenutzer über Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Geben Sie diese Informationen an Ihre Gerätebenutzer weiter, damit Ihre Intune-Bereitstellung Erfolg hat.
 keywords: ''
 author: lenewsad
@@ -9,6 +10,7 @@ ms.date: 06/01/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: ''
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6789064c0fd12a3d5ed381af0caf1c3906a7fd02
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4f8405aceaa1fd9c00b966d03a1f7b80e5946d96
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850810"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569778"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>So informieren sie Ihre Endbenutzer über Microsoft Intune
 
