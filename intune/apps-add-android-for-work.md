@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/25/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b99f9e394fdced985b5b1309640b09b8e7fa5e6
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 1ad07252ccf10fefdd1c753ab103eb91a2789c39
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568751"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587347"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Hinzufügen von verwalteten Google Play-Apps für Android Enterprise-Geräte mit Intune
 
