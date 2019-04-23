@@ -17,11 +17,11 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 177448eaebfb7e78ead7bc2e0eb7443a7d8c7d49
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61514156"
 ---
 # <a name="graph-apis-and-matching-windows-10-csps-used-in-intune"></a>Graph-APIs und zum Abgleich von Windows 10-CSPs, die in Intune verwendet
 
