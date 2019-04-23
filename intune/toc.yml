@@ -1,953 +1,948 @@
-items:
 - name: Microsoft Intune-Dokumentation
   href: index.yml
 - name: Übersicht
-  items:
-  - name: Was ist Intune?
-    href: what-is-intune.md
-  - name: Wie profitiert mein Unternehmen von Intune?
-    href: get-started-evaluation.md
-  - name: Neuheiten
-    href: whats-new.md
-    items:
-    - name: Neuheiten bei der App-Benutzeroberfläche
-      href: whats-new-app-ui.md
-    - name: Features in der Entwicklung
-      href: in-development.md
   expanded: true
+  items:
+    - name: Was ist Intune?
+      href: what-is-intune.md
+    - name: Wie profitiert mein Unternehmen von Intune?
+      href: get-started-evaluation.md
+    - name: Neuheiten
+      href: whats-new.md
+      items:
+        - name: Neuheiten bei der App-Benutzeroberfläche
+          href: whats-new-app-ui.md
+        - name: Features in der Entwicklung
+          href: in-development.md
 - name: Schnellstarts
   items:
-  - name: Intune kostenlos testen
-    href: free-trial-sign-up.md
-  - name: Erstellen von Benutzern
-    href: quickstart-create-user.md
-  - name: Erstellen einer Gruppe
-    href: quickstart-create-group.md
-  - name: Festlegen der automatischen Registrierung
-    href: quickstart-setup-auto-enrollment.md
-  - name: Registrierung Ihres Windows 10-Geräts
-    href: quickstart-enroll-windows-device.md
-  - name: Erstellen einer Gerätekonformitätsrichtlinie
-    href: quickstart-set-password-length-android.md
-  - name: Senden von Benachrichtigungen an nicht konforme Geräte
-    href: quickstart-send-notification.md
-  - name: Hinzufügen und Zuweisen einer App
-    href: quickstart-add-assign-app.md
-  - name: Erstellen und Zuweisen einer App-Schutzrichtlinie
-    href: quickstart-create-assign-app-policy.md
-  - name: Erstellen und Zuweisen einer benutzerdefinierten Rolle
-    href: quickstart-create-custom-role.md
-  - name: Erstellen eines E-Mail-Geräteprofils
-    href: quickstart-email-profile.md
+    - name: Intune kostenlos testen
+      href: free-trial-sign-up.md
+    - name: Erstellen von Benutzern
+      href: quickstart-create-user.md
+    - name: Erstellen einer Gruppe
+      href: quickstart-create-group.md
+    - name: Festlegen der automatischen Registrierung
+      href: quickstart-setup-auto-enrollment.md
+    - name: Registrierung Ihres Windows 10-Geräts
+      href: quickstart-enroll-windows-device.md
+    - name: Erstellen einer Gerätekonformitätsrichtlinie
+      href: quickstart-set-password-length-android.md
+    - name: Senden von Benachrichtigungen an nicht konforme Geräte
+      href: quickstart-send-notification.md
+    - name: Hinzufügen und Zuweisen einer App
+      href: quickstart-add-assign-app.md
+    - name: Erstellen und Zuweisen einer App-Schutzrichtlinie
+      href: quickstart-create-assign-app-policy.md
+    - name: Erstellen und Zuweisen einer benutzerdefinierten Rolle
+      href: quickstart-create-custom-role.md
+    - name: Erstellen eines E-Mail-Geräteprofils
+      href: quickstart-email-profile.md
 - name: Lernprogramme
   items:
-  - name: Exemplarische Vorgehensweise für Intune im Azure-Portal
-    href: tutorial-walkthrough-intune-portal.md
-  - name: Schützen von E-Mail auf verwalteten Geräten
-    href: tutorial-protect-email-on-enrolled-devices.md
-  - name: Schützen von E-Mails auf nicht verwalteten Geräten
-    href: tutorial-protect-email-on-unmanaged-devices.md
-  - name: Verwenden von Autopilot zum Registrieren von Windows-Geräten
-    href: tutorial-use-autopilot-enroll-devices.md
-  - name: Verwenden von DEP zur Registrierung von iOS-Geräten
-    href: tutorial-use-device-enrollment-program-enroll-ios.md
+    - name: Exemplarische Vorgehensweise für Intune im Azure-Portal
+      href: tutorial-walkthrough-intune-portal.md
+    - name: Schützen von E-Mail auf verwalteten Geräten
+      href: tutorial-protect-email-on-enrolled-devices.md
+    - name: Schützen von E-Mails auf nicht verwalteten Geräten
+      href: tutorial-protect-email-on-unmanaged-devices.md
+    - name: Verwenden von Autopilot zum Registrieren von Windows-Geräten
+      href: tutorial-use-autopilot-enroll-devices.md
+    - name: Verwenden von DEP zur Registrierung von iOS-Geräten
+      href: tutorial-use-device-enrollment-program-enroll-ios.md
 - name: Konzepte
   items:
-  - name: Was ist die Geräteverwaltung?
-    href: what-is-device-management.md
-  - name: Was ist Intune for Education?
-    href: introduction-intune-education.md
-  - name: Grundlegende Architektur
-    href: high-level-architecture.md
-  - name: Gerätelebenszyklus
-    href: device-lifecycle.md
-  - name: App-Lebenszyklus
-    href: app-lifecycle.md
-  - name: Häufige Szenarien
-    href: common-scenarios.md
-  - name: Technologieentscheidungen für BYOD mit EMS
-    href: byod-technology-decisions.md
-  - name: App-Schutzrichtlinien und Arbeitsprofile (Android)
-    href: android-deployment-scenarios-app-protection-work-profiles.md
-  - name: Verwalten von Betriebssystemversionen
-    href: manage-os-versions.md
-  - name: Verwalten von Windows Holographic
-    href: windows-holographic-for-business.md
-  - name: Windows Information Protection-Einstellungen
-    href: windows-information-protection-configure.md
-  - name: MAM – HÄUFIG GESTELLTE FRAGEN
-    href: mam-faq.md
+    - name: Was ist die Geräteverwaltung?
+      href: what-is-device-management.md
+    - name: Was ist Intune for Education?
+      href: introduction-intune-education.md
+    - name: Grundlegende Architektur
+      href: high-level-architecture.md
+    - name: Gerätelebenszyklus
+      href: device-lifecycle.md
+    - name: App-Lebenszyklus
+      href: app-lifecycle.md
+    - name: Häufige Szenarien
+      href: common-scenarios.md
+    - name: Technologieentscheidungen für BYOD mit EMS
+      href: byod-technology-decisions.md
+    - name: App-Schutzrichtlinien und Arbeitsprofile (Android)
+      href: android-deployment-scenarios-app-protection-work-profiles.md
+    - name: Verwalten von Betriebssystemversionen
+      href: manage-os-versions.md
+    - name: Verwalten von Windows Holographic
+      href: windows-holographic-for-business.md
+    - name: Windows Information Protection-Einstellungen
+      href: windows-information-protection-configure.md
+    - name: MAM – HÄUFIG GESTELLTE FRAGEN
+      href: mam-faq.md
 - name: Schrittanleitungen
   items:
-  - name: Planen der Bereitstellung
-    items:
-    - name: Planning guide (Planungshandbuch)
-      href: planning-guide.md
+    - name: Planen der Bereitstellung
       items:
-      - name: Bestimmen von Zielsetzungen
-        href: planning-guide-deployment-goals.md
-      - name: Bestimmen von Szenarien
-        href: planning-guide-scenarios.md
-      - name: Bestimmen der Anforderungen
-        href: planning-guide-requirements.md
-      - name: Entwickeln eines Rolloutplans
-        href: planning-guide-rollout-plan.md
-      - name: Entwickeln eines Kommunikationsplans
-        href: planning-guide-communication-plan.md
-      - name: Entwickeln eines Supportplans
-        href: planning-guide-support-plan.md
-      - name: Entwurf
-        href: planning-guide-design.md
-      - name: Implementieren
-        href: planning-guide-onboarding.md
-      - name: Testen und Überprüfen
-        href: planning-guide-test-validation.md
-      - name: Zusätzliche Ressourcen
-        href: planning-guide-resources.md
-    - name: Migrationshandbuch
-      href: migration-guide.md
+        - name: Planning guide (Planungshandbuch)
+          href: planning-guide.md
+          items:
+            - name: Bestimmen von Zielsetzungen
+              href: planning-guide-deployment-goals.md
+            - name: Bestimmen von Szenarien
+              href: planning-guide-scenarios.md
+            - name: Bestimmen der Anforderungen
+              href: planning-guide-requirements.md
+            - name: Entwickeln eines Rolloutplans
+              href: planning-guide-rollout-plan.md
+            - name: Entwickeln eines Kommunikationsplans
+              href: planning-guide-communication-plan.md
+            - name: Entwickeln eines Supportplans
+              href: planning-guide-support-plan.md
+            - name: Entwurf
+              href: planning-guide-design.md
+            - name: Implementieren
+              href: planning-guide-onboarding.md
+            - name: Testen und Überprüfen
+              href: planning-guide-test-validation.md
+            - name: Zusätzliche Ressourcen
+              href: planning-guide-resources.md
+        - name: Migrationshandbuch
+          href: migration-guide.md
+          items:
+            - name: Vorbereiten von Intune
+              href: migration-guide-prepare.md
+              items:
+                - name: Grundlegende Einrichtung
+                  href: migration-guide-setup.md
+                - name: Konfigurieren von Richtlinien für die Verwaltung von Geräten und Apps
+                  href: migration-guide-configure-policies.md
+                - name: Konfigurieren von App-Schutzrichtlinien
+                  href: migration-guide-app-protection-policies.md
+                - name: Überlegungen zur Migration
+                  href: migration-guide-considerations.md
+            - name: Migration
+              href: migration-guide-campaign.md
+              items:
+                - name: Planen der Kommunikation
+                  href: migration-guide-communication-plan.md
+                - name: Steuern der Einführung
+                  href: migration-guide-drive-adoption.md
+                - name: Typischer Migrationszyklus
+                  href: migration-guide-cycle.md
+    - name: Einrichten von Intune
       items:
-      - name: Vorbereiten von Intune
-        href: migration-guide-prepare.md
-        items:
-        - name: Grundlegende Einrichtung
-          href: migration-guide-setup.md
-        - name: Konfigurieren von Richtlinien für die Verwaltung von Geräten und Apps
-          href: migration-guide-configure-policies.md
-        - name: Konfigurieren von App-Schutzrichtlinien
-          href: migration-guide-app-protection-policies.md
-        - name: Überlegungen zur Migration
-          href: migration-guide-considerations.md
-      - name: Migration
-        href: migration-guide-campaign.md
-        items:
-        - name: Planen der Kommunikation
-          href: migration-guide-communication-plan.md
-        - name: Steuern der Einführung
-          href: migration-guide-drive-adoption.md
-        - name: Typischer Migrationszyklus
-          href: migration-guide-cycle.md
-  - name: Einrichten von Intune
-    items:
-    - name: Schritte zum Einrichten von Intune
-      href: setup-steps.md
-    - name: Unterstützte Konfigurationen
-      href: supported-devices-browsers.md
+        - name: Schritte zum Einrichten von Intune
+          href: setup-steps.md
+        - name: Unterstützte Konfigurationen
+          href: supported-devices-browsers.md
+          items:
+            - name: Netzwerkkonfiguration
+              href: network-bandwidth-use.md
+        - name: Anmelden bei Intune
+          href: account-sign-up.md
+        - name: Konfigurieren von Domänen
+          href: custom-domain-name-configure.md
+        - name: Hinzufügen von Benutzern
+          href: users-add.md
+        - name: Hinzufügen von Gruppen
+          href: groups-add.md
+        - name: Zuweisen von Lizenzen
+          href: licenses-assign.md
+        - name: Intune-Lizenzen
+          href: licenses.md
+        - name: Festlegen der MDM-Autorität
+          href: mdm-authority-set.md
+        - name: Verwalten von Rollen
+          items:
+            - name: Rollenbasierte Zugriffssteuerung
+              href: role-based-access-control.md
+            - name: Zuweisen einer Rolle zu einem Benutzer
+              href: assign-role.md
+            - name: Erstellen einer benutzerdefinierten Rolle
+              href: create-custom-role.md
+            - name: Verwenden von Bereichsmarkierungen
+              href: scope-tags.md
+    - name: Registrieren von Geräten
       items:
-      - name: Netzwerkkonfiguration
-        href: network-bandwidth-use.md
-    - name: Anmelden bei Intune
-      href: account-sign-up.md
-    - name: Konfigurieren von Domänen
-      href: custom-domain-name-configure.md
-    - name: Hinzufügen von Benutzern
-      href: users-add.md
-    - name: Hinzufügen von Gruppen
-      href: groups-add.md
-    - name: Zuweisen von Lizenzen
-      href: licenses-assign.md
-    - name: Intune-Lizenzen
-      href: licenses.md
-    - name: Festlegen der MDM-Autorität
-      href: mdm-authority-set.md
-    - name: Verwalten von Rollen
+        - name: Was ist die Geräteregistrierung?
+          href: device-enrollment.md
+        - name: Funktionen zur Geräteverwaltung
+          href: device-management-capabilities.md
+        - name: Optionen für die Registrierung
+          href: enrollment-options.md
+          items:
+            - name: Nutzungsbedingungen
+              href: terms-and-conditions-create.md
+            - name: Einschränkungen
+              href: enrollment-restrictions-set.md
+            - name: Apple-MDM-Push-Zertifikat
+              href: apple-mdm-push-certificate-get.md
+            - name: Unternehmensbezeichner
+              href: corporate-identifiers-add.md
+            - name: Mehrstufige Authentifizierung
+              href: multi-factor-authentication.md
+            - name: Geräteregistrierungs-Manager
+              href: device-enrollment-manager-enroll.md
+            - name: Zuweisen von Geräten zu Gruppen
+              href: device-group-mapping.md
+        - name: Einrichten der Windows-Registrierung
+          items:
+            - name: Windows-Registrierungsmethoden
+              href: windows-enrollment-methods.md
+            - name: Funktionen der Registrierungsmethode
+              href: enrollment-method-capab.md
+            - name: Windows-Registrierung
+              href: windows-enroll.md
+            - name: Massenregistrierung
+              href: windows-bulk-enroll.md
+            - name: Seite zum Registrierungsstatus
+              href: windows-enrollment-status.md
+            - name: Windows Autopilot Deployment-Programm
+              href: enrollment-autopilot.md
+            - name: Azure AD Hybrid mit Autopilot
+              href: windows-autopilot-hybrid.md
+            - name: Konfigurieren von Proxys für den Intune-AD-Connector
+              href: autopilot-hybrid-connector-proxy.md
+        - name: Einrichten der Android-Registrierung
+          items:
+            - name: Einrichten der Android-Registrierung
+              href: android-enroll.md
+            - name: Herstellen einer Verbindung zwischen Intune und Android Enterprise
+              href: connect-intune-android-enterprise.md
+            - name: Registrierung von Android Enterprise-Arbeitsprofilgeräten
+              href: android-work-profile-enroll.md
+            - name: Registrierung von dedizierten Android Enterprise-Geräten
+              href: android-kiosk-enroll.md
+            - name: Registrierung von vollständig verwalteten Android Enterprise-Geräten
+              href: android-fully-managed-enroll.md
+            - name: Registrierung dedizierter Android Enterprise-Geräte oder vollständig verwalteter Geräte
+              href: android-dedicated-devices-fully-managed-enroll.md
+            - name: Verwalten von Android Enterprise-Arbeitsprofilgeräten
+              href: android-enterprise-overview.md
+            - name: Registrierung mobiler Geräte für Samsung Knox
+              href: android-samsung-knox-mobile-enroll.md
+        - name: Einrichten der iOS-Registrierung
+          href: ios-enroll.md
+          items:
+            - name: Geräteregistrierungsprogramm
+              href: device-enrollment-program-enroll-ios.md
+            - name: Apple School Manager
+              href: apple-school-manager-set-up-ios.md
+            - name: Apple Configurator
+              href: apple-configurator-enroll-ios.md
+        - name: Einrichten der macOS-Registrierung
+          href: macos-enroll.md
+          items:
+            - name: Programm zur Geräteregistrierung oder Apple School Manager
+              href: device-enrollment-program-enroll-macos.md
+        - name: Unvollständiger Registrierungsbericht
+          href: enrollment-report-company-portal-abandon.md
+        - name: Behandlung von Problemen bei der Geräteregistrierung
+          href: troubleshoot-device-enrollment-in-intune.md
+    - name: Verwalten von Geräten
+      href: device-management.md
       items:
-      - name: Rollenbasierte Zugriffssteuerung
-        href: role-based-access-control.md
-      - name: Zuweisen einer Rolle zu einem Benutzer
-        href: assign-role.md
-      - name: Erstellen einer benutzerdefinierten Rolle
-        href: create-custom-role.md
-      - name: Verwenden von Bereichsmarkierungen
-        href: scope-tags.md
-  - name: Registrieren von Geräten
-    items:
-    - name: Was ist die Geräteregistrierung?
-      href: device-enrollment.md
-    - name: Funktionen zur Geräteverwaltung
-      href: device-management-capabilities.md
-    - name: Optionen für die Registrierung
-      href: enrollment-options.md
+        - name: Funktionen zur Geräteverwaltung
+          href: device-management-capabilities.md
+        - name: Aktivierungssperre umgehen
+          href: device-activation-lock-bypass.md
+        - name: Verwalten von Windows Fresh Start
+          href: device-fresh-start.md
+        - name: Finden eines verlorenen iOS-Geräts
+          href: device-locate.md
+        - name: Aktivieren des iOS-Modus für verlorene Geräte
+          href: device-lost-mode.md
+        - name: Aktivieren des überwachten iOS-Modus
+          href: device-supervised-mode.md
+        - name: Sperren eines Geräts
+          href: device-remote-lock.md
+        - name: Kennung zurücksetzen
+          href: device-passcode-reset.md
+        - name: Gerät umbenennen
+          href: device-rename.md
+        - name: Neustarten eines Geräts
+          href: device-restart.md
+        - name: Abmelden des aktuellen Benutzers
+          href: device-logout-user.md
+        - name: Benutzer entfernen
+          href: device-remove-user.md
+        - name: Löschen eines macOS-Geräts
+          href: device-erase.md
+        - name: Remotesteuerung mobiler Geräte
+          href: device-profile-android-teamviewer.md
+        - name: Zurücksetzen der PIN unter Windows 10
+          href: device-windows-pin-reset.md
+        - name: Synchronisieren eines Geräts
+          href: device-sync.md
+        - name: Untersuchen des Gerätebestands
+          href: device-inventory.md
+        - name: Entfernen von Geräten
+          href: devices-wipe.md
+    - name: Gerätekompatibilität festlegen
       items:
-      - name: Nutzungsbedingungen
-        href: terms-and-conditions-create.md
-      - name: Einschränkungen
-        href: enrollment-restrictions-set.md
-      - name: Apple-MDM-Push-Zertifikat
-        href: apple-mdm-push-certificate-get.md
-      - name: Unternehmensbezeichner
-        href: corporate-identifiers-add.md
-      - name: Mehrstufige Authentifizierung
-        href: multi-factor-authentication.md
-      - name: Geräteregistrierungs-Manager
-        href: device-enrollment-manager-enroll.md
-      - name: Zuweisen von Geräten zu Gruppen
-        href: device-group-mapping.md
-    - name: Einrichten der Windows-Registrierung
+        - name: Konformitätsübersicht
+          href: device-compliance-get-started.md
+        - name: Erstellen einer Richtlinie
+          href: create-compliance-policy.md
+        - name: Standortbasierte Konformität
+          href: use-network-locations.md
+        - name: Aktionen bei Inkompatibilität
+          href: actions-for-noncompliance.md
+        - name: Überwachen der Gerätekonformität
+          href: compliance-policy-monitor.md
+    - name: Konfigurieren von Geräteeinstellungen
       items:
-      - name: Windows-Registrierungsmethoden
-        href: windows-enrollment-methods.md
-      - name: Funktionen der Registrierungsmethode
-        href: enrollment-method-capab.md
-      - name: Windows-Registrierung
-        href: windows-enroll.md
-      - name: Massenregistrierung
-        href: windows-bulk-enroll.md
-      - name: Seite zum Registrierungsstatus
-        href: windows-enrollment-status.md
-      - name: Windows Autopilot Deployment-Programm
-        href: enrollment-autopilot.md
-      - name: Hybrides Active Directory-Tool mit Autopilot
-        href: windows-autopilot-hybrid.md
-    - name: Einrichten der Android-Registrierung
+        - name: 'Übersicht: Gerätekonfiguration'
+          href: device-profiles.md
+        - name: Erstellen eines Profils
+          href: device-profile-create.md
+        - name: Administrative Vorlagen
+          href: administrative-templates-windows.md
+        - name: Gerätefunktionen
+          href: device-features-configure.md
+        - name: Einschränken von Geräteeinstellungen und -funktionen
+          href: device-restrictions-configure.md
+        - name: Veröffentlichen von Updates
+          href: delivery-optimization-windows.md
+          displayName: delivery optimization; updates
+        - name: Upgradeeditionen und S-Modus
+          href: edition-upgrade-configure-windows-10.md
+        - name: E-Mail-Einstellungen
+          href: email-settings-configure.md
+        - name: Aktivieren des Kioskmodus
+          href: kiosk-settings.md
+        - name: Hinzufügen eines VPN
+          href: vpn-settings-configure.md
+          items:
+            - name: App-bezogenes VPN für Android
+              href: android-pulse-secure-per-app-vpn.md
+            - name: App-bezogenes VPN für iOS
+              href: vpn-setting-configure-per-app.md
+        - name: Hinzufügen eines WLAN-Netzwerks
+          href: wi-fi-settings-configure.md
+          items:
+            - name: WLAN mit einem vorinstallierten Schlüssel
+              href: wi-fi-profile-shared-key.md
+        - name: 'Microsoft Education: Prüfungs-App'
+          href: education-settings-configure.md
+        - name: Von mehren Benutzern gemeinsam verwendete Geräte
+          href: shared-user-device-settings.md
+        - name: Erweiterung der Mobilität auf Zebra-Geräten
+          href: android-zebra-mx-overview.md
+          items:
+            - name: StageNow-Protokolle und allgemeine Probleme
+              href: android-zebra-mx-logs-troubleshoot.md
+        - name: Überwachen der Telekommunikationsausgaben
+          href: telecom-expenses-monitor.md
+        - name: Benutzerdefinierte Geräteeinstellungen
+          href: custom-settings-configure.md
+        - name: Zuweisen von Profilen
+          href: device-profile-assign.md
+        - name: Überwachen von Profilen
+          href: device-profile-monitor.md
+        - name: Häufig gestellte Fragen und deren Antworten
+          href: device-profile-troubleshoot.md
+    - name: Schützen von Gerätedaten
       items:
-      - name: Einrichten der Android-Registrierung
-        href: android-enroll.md
-      - name: Herstellen einer Verbindung zwischen Intune und Android Enterprise
-        href: connect-intune-android-enterprise.md
-      - name: Registrierung von Android Enterprise-Arbeitsprofilgeräten
-        href: android-work-profile-enroll.md
-      - name: Registrierung von dedizierten Android Enterprise-Geräten
-        href: android-kiosk-enroll.md
-      - name: Registrierung von vollständig verwalteten Android Enterprise-Geräten
-        href: android-fully-managed-enroll.md
-      - name: Registrierung dedizierter Android Enterprise-Geräte oder vollständig verwalteter Geräte
-        href: android-dedicated-devices-fully-managed-enroll.md
-      - name: Verwalten von Android Enterprise-Arbeitsprofilgeräten
-        href: android-enterprise-overview.md
-      - name: Registrierung mobiler Geräte für Samsung Knox
-        href: android-samsung-knox-mobile-enroll.md
-    - name: Einrichten der iOS-Registrierung
-      href: ios-enroll.md
+        - name: Überblick über den Geräteschutz
+          href: device-protect.md
+        - name: Datenschutz und personenbezogene Daten
+          href: privacy-personal-data.md
+          items:
+            - name: Datensammlung
+              href: privacy-data-collect.md
+            - name: Datenspeicherung und -verarbeitung
+              href: privacy-data-store-process.md
+            - name: Datensicherheit und -freigabe
+              href: privacy-data-secure-share.md
+              items:
+                - name: Von Apple an Intune gesendete Daten
+                  href: data-apple-sends-to-intune.md
+                - name: Von Google an Intune gesendete Daten
+                  href: data-google-sends-to-intune.md
+                - name: Von Intune an Apple gesendete Daten
+                  href: data-intune-sends-to-apple.md
+                - name: Von Intune an Google gesendete Daten
+                  href: data-intune-sends-to-google.md
+                - name: Von Jamf Pro für Intune freigegebene Informationen
+                  href: data-jamf-sends-to-intune.md
+            - name: Anzeigen und Korrigieren personenbezogener Daten
+              href: privacy-data-view-correct.md
+            - name: 'Überwachen, Exportieren, Löschen'
+              href: privacy-data-audit-export-delete.md
+        - name: Bedingter Zugriff
+          href: conditional-access.md
+          items:
+            - name: Gängige Möglichkeiten der Nutzung des bedingten Zugriffs
+              href: conditional-access-intune-common-ways-use.md
+            - name: Installieren des Connectors für Exchange lokal
+              href: exchange-connector-install.md
+            - name: Erstellen und Zuweisen der Richtlinie für bedingten Zugriff
+              href: conditional-access-exchange-create.md
+            - name: Gerätebasierte bedingte Zugriffsrichtlinie
+              href: create-conditional-access-intune.md
+            - name: Erneutes Zuweisen von Richtlinien für bedingten Zugriff über das klassische Intune-Portal
+              href: conditional-access-intune-reassign.md
+            - name: App-basierter bedingter Zugriff
+              href: app-based-conditional-access-intune.md
+            - name: Einrichten des App-basierten bedingten Zugriffs
+              href: app-based-conditional-access-intune-create.md
+            - name: ADAL und Intune
+              href: app-modern-authentication-block.md
+            - name: Integrieren von Jamf Pro in Intune zu Konformitätszwecken
+              href: conditional-access-integrate-jamf.md
+            - name: Erzwingen von Konformität auf mit Jamf Pro verwalteten Macs
+              href: conditional-access-assign-jamf.md
+        - name: Bedrohungsschutz
+          items:
+            - name: Mobile Threat Defense
+              href: mobile-threat-defense.md
+              items:
+                - name: Einrichten von Lookout
+                  href: lookout-mobile-threat-defense-connector.md
+                  items:
+                    - name: Lookout- und Intune-Integration
+                      href: lookout-mtd-connector-integration.md
+                - name: Einrichten von Symantec
+                  href: skycure-mobile-threat-defense-connector.md
+                  items:
+                    - name: Symantec- und Intune-Integration
+                      href: skycure-mtd-connector-integration.md
+                - name: Einrichten von Check Point
+                  href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
+                  items:
+                    - name: Check Point- und Intune-Integration
+                      href: checkpoint-sandblast-mobile-mtd-connector-integration.md
+                - name: Einrichten von Zimperium
+                  href: zimperium-mobile-threat-defense-connector.md
+                  items:
+                    - name: Zimperium- und Intune-Integration
+                      href: zimperium-mtd-connector-integration.md
+                - name: Einrichten von Pradeo
+                  href: pradeo-mobile-threat-defense-connector.md
+                  items:
+                    - name: Integration von Pradeo in Intune
+                      href: pradeo-mtd-connector-integration.md
+                - name: Einrichten von Better Mobile
+                  href: better-mobile-threat-defense-connector.md
+                  items:
+                    - name: Better Mobile- und Intune-Integration
+                      href: better-mobile-mtd-connector-integration.md
+                - name: Einrichten von Intune für MDM
+                  items:
+                    - name: Hinzufügen von MTD-Apps
+                      href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                    - name: Erstellen einer MTD-Gerätekonformitätsrichtlinie
+                      href: mtd-device-compliance-policy-create.md
+                    - name: Aktivieren von MTD in Intune
+                      href: mtd-connector-enable.md
+            - name: Windows Defender ATP
+              href: advanced-threat-protection.md
+            - name: Sicherheitsbaselines
+              href: security-baselines.md
+              items:
+                - name: Überwachen von Baselines
+                  href: security-baselines-monitor.md
+            - name: Endpoint Protection
+              href: endpoint-protection-configure.md
+        - name: Netzwerkzugriffssteuerung
+          href: network-access-control-integrate.md
+        - name: Windows Hello
+          href: windows-hello.md
+        - name: Überwachen der Geräteverschlüsselung
+          href: encryption-monitor.md
+        - name: Zertifikate
+          href: certificates-configure.md
+          items:
+            - name: SCEP
+              href: certificates-scep-configure.md
+            - name: PKCS
+              href: certficates-pfx-configure.md
+            - name: Verwenden von S/MIME zum Verschlüsseln von E-Mails
+              href: certificates-s-mime-encryption-sign.md
+            - name: Verwenden einer Drittanbieter-Zertifizierungsstelle mit SCEP
+              href: certificate-authority-add-scep-overview.md
+            - name: Symantec PKI Manager Web Service
+              href: certificates-symantec-configure.md
+            - name: Entfernen von SCEP- oder PKCS-Zertifikaten
+              href: remove-certificates.md
+        - name: eSIM-Mobilfunkprofile
+          href: esim-device-configuration.md
+        - name: Schutz der Identität
+          href: identity-protection-configure.md
+        - name: Softwareupdates
+          items:
+            - name: Einstellungen für Windows Update for Business
+              href: windows-update-for-business-configure.md
+            - name: Konformitätsberichte zu Windows Update
+              href: windows-update-compliance-reports.md
+            - name: iOS-Updaterichtlinien
+              href: software-updates-ios.md
+    - name: Verwalten von Apps
       items:
-      - name: Geräteregistrierungsprogramm
-        href: device-enrollment-program-enroll-ios.md
-      - name: Apple School Manager
-        href: apple-school-manager-set-up-ios.md
-      - name: Apple Configurator
-        href: apple-configurator-enroll-ios.md
-    - name: Einrichten der macOS-Registrierung
-      href: macos-enroll.md
+        - name: Was ist die Intune App-Verwaltung?
+          href: app-management.md
+        - name: Hinzufügen von Apps
+          href: apps-add.md
+          items:
+            - name: Durch Intune geschützte Apps
+              href: apps-supported-intune-apps.md
+            - name: Store-Apps
+              items:
+                - name: Android Store-Apps
+                  href: store-apps-android.md
+                - name: iOS Store-Apps
+                  href: store-apps-ios.md
+                - name: Windows Phone 8.1 Store-Apps
+                  href: store-apps-windows-phone-8-1.md
+                - name: Microsoft Store-Apps
+                  href: store-apps-windows.md
+                  items:
+                    - name: Manuelles Hinzufügen der Unternehmensportal-App
+                      href: store-apps-company-portal-app.md
+                - name: Verwaltete Google Play-Apps
+                  href: apps-add-android-for-work.md
+                - name: Office 365-Apps für Windows 10
+                  href: apps-add-office365.md
+                - name: Office 365-Apps für macOS
+                  href: apps-add-office365-macos.md
+            - name: Erstellen einer (branchenspezifischen) App
+              items:
+                - name: Win32-App-Verwaltung
+                  href: apps-win32-app-management.md
+                - name: Branchenspezifische Android-Apps
+                  href: lob-apps-android.md
+                - name: Branchenspezifische iOS-Apps
+                  href: lob-apps-ios.md
+                - name: Branchenspezifische Windows Phone-Apps
+                  href: lob-apps-windows-phone.md
+                - name: Branchenspezifische Windows-Apps
+                  href: lob-apps-windows.md
+                - name: Querladen von Branchenspezifische Windows-Apps
+                  href: app-sideload-windows.md
+                - name: Branchenspezifische macOS-Apps
+                  href: lob-apps-macos.md
+            - name: Web-Apps
+              href: web-app.md
+            - name: Integrierte Apps
+              href: apps-add-built-in.md
+            - name: PowerShell-Skripts
+              href: intune-management-extension.md
+        - name: Bereitstellen von Apps
+          href: apps-deploy.md
+          items:
+            - name: Einschließen und Ausschließen von Apps
+              href: apps-inc-exl-assignments.md
+            - name: Bereitstellen von Windows 10-apps
+              href: apps-windows-10-app-deploy.md
+            - name: Bereitstellen von Apps in Government-Umgebungen
+              href: apps-deploy-gcc-dod.md
+        - name: Überwachen von Apps
+          href: apps-monitor.md
+        - name: Konfigurieren von Apps
+          href: app-configuration-policies-overview.md
+          items:
+            - name: iOS Verwaltete Geräte
+              href: app-configuration-policies-use-ios.md
+            - name: Android Verwaltete Geräte
+              href: app-configuration-policies-use-android.md
+            - name: Verwaltete Apps
+              href: app-configuration-policies-managed-app.md
+            - name: Verwenden von iOS-App-Bereitstellungsprofilen
+              href: app-provisioning-profile-ios.md
+            - name: Arbeiten mit per Volumenlizenz erworbenen Apps und Büchern
+              href: vpp-apps.md
+              items:
+                - name: VPP-Apps für iOS
+                  href: vpp-apps-ios.md
+                - name: Apps im Microsoft Store für Unternehmen
+                  href: windows-store-for-business.md
+                - name: iOS-E-Books
+                  href: vpp-ebooks-ios.md
+            - name: Konfigurieren der Unternehmensportal-App
+              href: company-portal-app.md
+            - name: Konfigurieren von Managed Browser
+              href: app-configuration-managed-browser.md
+            - name: Konfigurieren von Outlook
+              href: app-configuration-policies-outlook.md
+        - name: Schützen von Apps
+          items:
+            - name: Selektives Zurücksetzen von Apps
+              href: apps-selective-wipe.md
+            - name: Verwenden von App-Schutzrichtlinien
+              href: app-protection-policy.md
+              items:
+                - name: Erstellen von App-Schutzrichtlinien
+                  href: app-protection-policies.md
+                  items:
+                    - name: Einstellungen für Android
+                      href: app-protection-policy-settings-android.md
+                    - name: Einstellungen für iOS
+                      href: app-protection-policy-settings-ios.md
+                    - name: Zugriffsaktionen
+                      href: app-protection-policies-access-actions.md
+                    - name: Datenübertragungsausnahme
+                      href: app-protection-policies-exception.md
+                - name: Überprüfen von App-Schutzrichtlinien
+                  href: app-protection-policies-validate.md
+                - name: Zustellung von App-Schutzrichtlinien
+                  href: app-protection-policy-delivery.md
+                - name: Überwachen des Benutzerstatus bei App-Schutz
+                  href: app-protection-policies-monitor.md
+                - name: Vorbereitungen für WIP-App-Schutzrichtlinien
+                  href: app-protection-policies-configure-windows-10.md
+                - name: Erstellen und Zuweisen von WIP-App-Schutzrichtlinien
+                  href: windows-information-protection-policy-create.md
+                - name: Verwalten der Datenübertragung zwischen iOS-Apps
+                  href: data-transfer-between-apps-manage-ios.md
+    - name: Schulen von Benutzern
       items:
-      - name: Programm zur Geräteregistrierung oder Apple School Manager
-        href: device-enrollment-program-enroll-macos.md
-    - name: Unvollständiger Registrierungsbericht
-      href: enrollment-report-company-portal-abandon.md
-    - name: Behandlung von Problemen bei der Geräteregistrierung
-      href: troubleshoot-device-enrollment-in-intune.md
-  - name: Verwalten von Geräten
-    href: device-management.md
-    items:
-    - name: Funktionen zur Geräteverwaltung
-      href: device-management-capabilities.md
-    - name: Aktivierungssperre umgehen
-      href: device-activation-lock-bypass.md
-    - name: Verwalten von Windows Fresh Start
-      href: device-fresh-start.md
-    - name: Finden eines verlorenen iOS-Geräts
-      href: device-locate.md
-    - name: Aktivieren des iOS-Modus für verlorene Geräte
-      href: device-lost-mode.md
-    - name: Aktivieren des überwachten iOS-Modus
-      href: device-supervised-mode.md
-    - name: Sperren eines Geräts
-      href: device-remote-lock.md
-    - name: Kennung zurücksetzen
-      href: device-passcode-reset.md
-    - name: Gerät umbenennen
-      href: device-rename.md
-    - name: Neustarten eines Geräts
-      href: device-restart.md
-    - name: Abmelden des aktuellen Benutzers
-      href: device-logout-user.md
-    - name: Benutzer entfernen
-      href: device-remove-user.md
-    - name: Löschen eines macOS-Geräts
-      href: device-erase.md
-    - name: Remotesteuerung mobiler Geräte
-      href: device-profile-android-teamviewer.md
-    - name: Zurücksetzen der PIN unter Windows 10
-      href: device-windows-pin-reset.md
-    - name: Synchronisieren eines Geräts
-      href: device-sync.md
-    - name: Untersuchen des Gerätebestands
-      href: device-inventory.md
-    - name: Entfernen von Geräten
-      href: devices-wipe.md
-  - name: Gerätekompatibilität festlegen
-    items:
-    - name: Konformitätsübersicht
-      href: device-compliance-get-started.md
-    - name: Erstellen einer Richtlinie
-      href: create-compliance-policy.md
-    - name: Standortbasierte Konformität
-      href: use-network-locations.md
-    - name: Aktionen bei Inkompatibilität
-      href: actions-for-noncompliance.md
-    - name: Überwachen der Gerätekonformität
-      href: compliance-policy-monitor.md
-  - name: Konfigurieren von Geräteeinstellungen
-    items:
-    - name: 'Übersicht: Gerätekonfiguration'
-      href: device-profiles.md
-    - name: Erstellen eines Profils
-      href: device-profile-create.md
-    - name: Administrative Vorlagen
-      href: administrative-templates-windows.md
-    - name: Gerätefunktionen
-      href: device-features-configure.md
-    - name: Einschränken von Geräteeinstellungen und -funktionen
-      href: device-restrictions-configure.md
-    - name: Veröffentlichen von Updates
-      displayName: delivery optimization; updates
-      href: delivery-optimization-windows.md
-    - name: Upgradeeditionen und S-Modus
-      href: edition-upgrade-configure-windows-10.md
-    - name: E-Mail-Einstellungen
-      href: email-settings-configure.md
-    - name: Aktivieren des Kioskmodus
-      href: kiosk-settings.md
-    - name: Hinzufügen eines VPN
-      href: vpn-settings-configure.md
-      items:
-      - name: App-bezogenes VPN für Android
-        href: android-pulse-secure-per-app-vpn.md
-      - name: App-bezogenes VPN für iOS
-        href: vpn-setting-configure-per-app.md
-    - name: Hinzufügen eines WLAN-Netzwerks
-      href: wi-fi-settings-configure.md
-      items:
-      - name: WLAN mit einem vorinstallierten Schlüssel
-        href: wi-fi-profile-shared-key.md
-    - name: 'Microsoft Education: Prüfungs-App'
-      href: education-settings-configure.md
-    - name: Von mehren Benutzern gemeinsam verwendete Geräte
-      href: shared-user-device-settings.md
-    - name: Erweiterung der Mobilität auf Zebra-Geräten
-      href: android-zebra-mx-overview.md
-      items:
-      - name: StageNow-Protokolle und allgemeine Probleme
-        href: android-zebra-mx-logs-troubleshoot.md
-    - name: Überwachen der Telekommunikationsausgaben
-      href: telecom-expenses-monitor.md
-    - name: Benutzerdefinierte Geräteeinstellungen
-      href: custom-settings-configure.md
-    - name: Zuweisen von Profilen
-      href: device-profile-assign.md
-    - name: Überwachen von Profilen
-      href: device-profile-monitor.md
-    - name: Häufig gestellte Fragen und deren Antworten
-      href: device-profile-troubleshoot.md
-  - name: Schützen von Gerätedaten
-    items:
-    - name: Überblick über den Geräteschutz
-      href: device-protect.md
-    - name: Datenschutz und personenbezogene Daten
-      href: privacy-personal-data.md
-      items:
-      - name: Datensammlung
-        href: privacy-data-collect.md
-      - name: Datenspeicherung und -verarbeitung
-        href: privacy-data-store-process.md
-      - name: Datensicherheit und -freigabe
-        href: privacy-data-secure-share.md
-        items:
-        - name: Von Apple an Intune gesendete Daten
-          href: data-apple-sends-to-intune.md
-        - name: Von Google an Intune gesendete Daten
-          href: data-google-sends-to-intune.md
+        - name: Informieren der Endbenutzer
+          href: end-user-educate.md
+        - name: Unternehmensportalnachrichten
+          href: end-user-company-portal-messages.md
+        - name: App-Schutz für Android
+          href: end-user-mam-apps-android.md
+        - name: App-Schutz für iOS
+          href: end-user-mam-apps-ios.md
+        - name: Beziehen von Android-Apps
+          href: end-user-apps-android.md
+        - name: Beziehen von iOS-Apps
+          href: end-user-apps-ios.md
+        - name: Beziehen von Windows-Apps
+          href: end-user-apps-windows.md
         - name: Von Intune an Apple gesendete Daten
           href: data-intune-sends-to-apple.md
         - name: Von Intune an Google gesendete Daten
           href: data-intune-sends-to-google.md
-        - name: Von Jamf Pro für Intune freigegebene Informationen
-          href: data-jamf-sends-to-intune.md
-      - name: Anzeigen und Korrigieren personenbezogener Daten
-        href: privacy-data-view-correct.md
-      - name: Überwachen, Exportieren, Löschen
-        href: privacy-data-audit-export-delete.md
-    - name: Bedingter Zugriff
-      href: conditional-access.md
+        - name: Von Apple an Intune gesendete Daten
+          href: data-apple-sends-to-intune.md
+        - name: Von Google an Intune gesendete Daten
+          href: data-google-sends-to-intune.md
+    - name: Anfordern von Hilfe und Support
       items:
-      - name: Gängige Möglichkeiten der Nutzung des bedingten Zugriffs
-        href: conditional-access-intune-common-ways-use.md
-      - name: Installieren des Connectors für Exchange lokal
-        href: exchange-connector-install.md
-      - name: Erstellen und Zuweisen der Richtlinie für bedingten Zugriff
-        href: conditional-access-exchange-create.md
-      - name: Gerätebasierte bedingte Zugriffsrichtlinie
-        href: create-conditional-access-intune.md
-      - name: Erneutes Zuweisen von Richtlinien für bedingten Zugriff über das klassische Intune-Portal
-        href: conditional-access-intune-reassign.md
-      - name: App-basierter bedingter Zugriff
-        href: app-based-conditional-access-intune.md
-      - name: Einrichten des App-basierten bedingten Zugriffs
-        href: app-based-conditional-access-intune-create.md
-      - name: ADAL und Intune
-        href: app-modern-authentication-block.md
-      - name: Integrieren von Jamf Pro in Intune zu Konformitätszwecken
-        href: conditional-access-integrate-jamf.md
-      - name: Erzwingen von Konformität auf mit Jamf Pro verwalteten Macs
-        href: conditional-access-assign-jamf.md
-    - name: Bedrohungsschutz
-      items:
-      - name: Mobile Threat Defense
-        href: mobile-threat-defense.md
-        items:
-        - name: Einrichten von Lookout
-          href: lookout-mobile-threat-defense-connector.md
+        - name: Mandantenstatus
+          href: tenant-status.md
+        - name: Problembehandlung
           items:
-          - name: Lookout- und Intune-Integration
-            href: lookout-mtd-connector-integration.md
-        - name: Einrichten von Symantec
-          href: skycure-mobile-threat-defense-connector.md
-          items:
-          - name: Symantec- und Intune-Integration
-            href: skycure-mtd-connector-integration.md
-        - name: Einrichten von Check Point
-          href: checkpoint-sandblast-mobile-mobile-threat-defense-connector.md
-          items:
-          - name: Check Point- und Intune-Integration
-            href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-        - name: Einrichten von Zimperium
-          href: zimperium-mobile-threat-defense-connector.md
-          items:
-          - name: Zimperium- und Intune-Integration
-            href: zimperium-mtd-connector-integration.md
-        - name: Einrichten von Pradeo
-          href: pradeo-mobile-threat-defense-connector.md
-          items:
-          - name: Integration von Pradeo in Intune
-            href: pradeo-mtd-connector-integration.md
-        - name: Einrichten von Better Mobile
-          href: better-mobile-threat-defense-connector.md
-          items:
-          - name: Better Mobile- und Intune-Integration
-            href: better-mobile-mtd-connector-integration.md
-        - name: Einrichten von Intune für MDM
-          items:
-          - name: Hinzufügen von MTD-Apps
-            href: mtd-apps-ios-app-configuration-policy-add-assign.md
-          - name: Erstellen einer MTD-Gerätekonformitätsrichtlinie
-            href: mtd-device-compliance-policy-create.md
-          - name: Aktivieren von MTD in Intune
-            href: mtd-connector-enable.md
-      - name: Windows Defender ATP
-        href: advanced-threat-protection.md
-      - name: Sicherheitsbaselines
-        href: security-baselines.md
-        items:
-        - name: Überwachen von Baselines
-          href: security-baselines-monitor.md
-      - name: Endpoint Protection
-        href: endpoint-protection-configure.md
-    - name: Netzwerkzugriffssteuerung
-      href: network-access-control-integrate.md
-    - name: Windows Hello
-      href: windows-hello.md
-    - name: Überwachen der Geräteverschlüsselung
-      href: encryption-monitor.md
-    - name: Zertifikate
-      href: certificates-configure.md
-      items:
-      - name: SCEP
-        href: certificates-scep-configure.md
-      - name: PKCS
-        href: certficates-pfx-configure.md
-      - name: Verwenden von S/MIME zum Verschlüsseln von E-Mails
-        href: certificates-s-mime-encryption-sign.md
-      - name: Verwenden einer Drittanbieter-Zertifizierungsstelle mit SCEP
-        href: certificate-authority-add-scep-overview.md
-      - name: Symantec PKI Manager Web Service
-        href: certificates-symantec-configure.md
-      - name: Entfernen von SCEP- oder PKCS-Zertifikaten
-        href: remove-certificates.md
-    - name: eSIM-Mobilfunkprofile
-      href: esim-device-configuration.md
-    - name: Schutz der Identität
-      href: identity-protection-configure.md
-    - name: Softwareupdates
-      items:
-      - name: Einstellungen für Windows Update for Business
-        href: windows-update-for-business-configure.md
-      - name: Konformitätsberichte zu Windows Update
-        href: windows-update-compliance-reports.md
-      - name: iOS-Updaterichtlinien
-        href: software-updates-ios.md
-  - name: Verwalten von Apps
-    items:
-    - name: Was ist die Intune App-Verwaltung?
-      href: app-management.md
-    - name: Hinzufügen von Apps
-      href: apps-add.md
-      items:
-      - name: Durch Intune geschützte Apps
-        href: apps-supported-intune-apps.md
-      - name: Store-Apps
-        items:
-        - name: Android Store-Apps
-          href: store-apps-android.md
-        - name: iOS Store-Apps
-          href: store-apps-ios.md
-        - name: Windows Phone 8.1 Store-Apps
-          href: store-apps-windows-phone-8-1.md
-        - name: Microsoft Store-Apps
-          href: store-apps-windows.md
-          items:
-          - name: Manuelles Hinzufügen der Unternehmensportal-App
-            href: store-apps-company-portal-app.md
-        - name: Verwaltete Google Play-Apps
-          href: apps-add-android-for-work.md
-        - name: Office 365-Apps für Windows 10
-          href: apps-add-office365.md
-        - name: Office 365-Apps für macOS
-          href: apps-add-office365-macos.md
-      - name: Erstellen einer (branchenspezifischen) App
-        items:
-        - name: Win32-App-Verwaltung
-          href: apps-win32-app-management.md
-        - name: Branchenspezifische Android-Apps
-          href: lob-apps-android.md
-        - name: Branchenspezifische iOS-Apps
-          href: lob-apps-ios.md
-        - name: Branchenspezifische Windows Phone-Apps
-          href: lob-apps-windows-phone.md
-        - name: Branchenspezifische Windows-Apps
-          href: lob-apps-windows.md
-        - name: Querladen von Branchenspezifische Windows-Apps
-          href: app-sideload-windows.md
-        - name: Branchenspezifische macOS-Apps
-          href: lob-apps-macos.md
-      - name: Web-Apps
-        href: web-app.md
-      - name: Integrierte Apps
-        href: apps-add-built-in.md
-      - name: PowerShell-Skripts
-        href: intune-management-extension.md
-    - name: Bereitstellen von Apps
-      href: apps-deploy.md
-      items:
-      - name: Einschließen und Ausschließen von Apps
-        href: apps-inc-exl-assignments.md
-      - name: Bereitstellen von Windows 10-apps
-        href: apps-windows-10-app-deploy.md
-      - name: Bereitstellen von Apps in Government-Umgebungen
-        href: apps-deploy-gcc-dod.md
-    - name: Überwachen von Apps
-      href: apps-monitor.md
-    - name: Konfigurieren von Apps
-      href: app-configuration-policies-overview.md
-      items:
-      - name: iOS Verwaltete Geräte
-        href: app-configuration-policies-use-ios.md
-      - name: Android Verwaltete Geräte
-        href: app-configuration-policies-use-android.md
-      - name: Verwaltete Apps
-        href: app-configuration-policies-managed-app.md
-      - name: Verwenden von iOS-App-Bereitstellungsprofilen
-        href: app-provisioning-profile-ios.md
-      - name: Arbeiten mit per Volumenlizenz erworbenen Apps und Büchern
-        href: vpp-apps.md
-        items:
-        - name: VPP-Apps für iOS
-          href: vpp-apps-ios.md
-        - name: Apps im Microsoft Store für Unternehmen
-          href: windows-store-for-business.md
-        - name: iOS-E-Books
-          href: vpp-ebooks-ios.md
-      - name: Konfigurieren der Unternehmensportal-App
-        href: company-portal-app.md
-      - name: Konfigurieren von Managed Browser
-        href: app-configuration-managed-browser.md
-      - name: Konfigurieren von Outlook
-        href: app-configuration-policies-outlook.md
-    - name: Schützen von Apps
-      items:
-      - name: Selektives Zurücksetzen von Apps
-        href: apps-selective-wipe.md
-      - name: Verwenden von App-Schutzrichtlinien
-        href: app-protection-policy.md
-        items:
-        - name: Erstellen von App-Schutzrichtlinien
-          href: app-protection-policies.md
-          items:
-          - name: Einstellungen für Android
-            href: app-protection-policy-settings-android.md
-          - name: Einstellungen für iOS
-            href: app-protection-policy-settings-ios.md
-          - name: Zugriffsaktionen
-            href: app-protection-policies-access-actions.md
-          - name: Datenübertragungsausnahme
-            href: app-protection-policies-exception.md
-        - name: Überprüfen von App-Schutzrichtlinien
-          href: app-protection-policies-validate.md
-        - name: Zustellung von App-Schutzrichtlinien
-          href: app-protection-policy-delivery.md
-        - name: Überwachen des Benutzerstatus bei App-Schutz
-          href: app-protection-policies-monitor.md
-        - name: Vorbereitungen für WIP-App-Schutzrichtlinien
-          href: app-protection-policies-configure-windows-10.md
-        - name: Erstellen und Zuweisen von WIP-App-Schutzrichtlinien
-          href: windows-information-protection-policy-create.md
-        - name: Verwalten der Datenübertragung zwischen iOS-Apps
-          href: data-transfer-between-apps-manage-ios.md
-  - name: Schulen von Benutzern
-    items:
-    - name: Informieren der Endbenutzer
-      href: end-user-educate.md
-    - name: Unternehmensportalnachrichten
-      href: end-user-company-portal-messages.md
-    - name: App-Schutz für Android
-      href: end-user-mam-apps-android.md
-    - name: App-Schutz für iOS
-      href: end-user-mam-apps-ios.md
-    - name: Beziehen von Android-Apps
-      href: end-user-apps-android.md
-    - name: Beziehen von iOS-Apps
-      href: end-user-apps-ios.md
-    - name: Beziehen von Windows-Apps
-      href: end-user-apps-windows.md
-    - name: Von Intune an Apple gesendete Daten
-      href: data-intune-sends-to-apple.md
-    - name: Von Intune an Google gesendete Daten
-      href: data-intune-sends-to-google.md
-    - name: Von Apple an Intune gesendete Daten
-      href: data-apple-sends-to-intune.md
-    - name: Von Google an Intune gesendete Daten
-      href: data-google-sends-to-intune.md
-  - name: Anfordern von Hilfe und Support
-    items:
-    - name: Mandantenstatus
-      href: tenant-status.md
-    - name: Problembehandlung
-      items:
-      - name: Unterstützung von Benutzern beim Beheben von Problemen
-        href: help-desk-operators.md
-      - name: Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen
-        href: troubleshoot-company-resource-access-problems.md
-      - name: Problembehandlung bei der App-Installation
-        href: troubleshoot-app-install.md
-      - name: Problembehandlung der Verwaltung von mobilen Geräten
-        href: troubleshoot-mam.md
-      - name: Überwachungsprotokolle für Intune-Aktivitäten
-        href: monitor-audit-logs.md
-      - name: Überprüfen von Protokollen mit Azure Monitor
-        href: review-logs-using-azure-monitor.md
-      - name: Überprüfen der App-Schutzprotokolle
-        href: app-protection-policy-settings-log.md
-      - name: Behandeln von Problemen mit E-Mail-Profilen
-        href: troubleshoot-email-profiles-in-microsoft-intune.md
-      - name: Behandlung von Problemen bei Softwareupdates
-        href: troubleshoot-software-updates-in-microsoft-intune.md
-      - name: Beheben von Problemen mit Endpoint Protection
-        href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-      - name: Problembehandlung für Richtlinien und Profile
-        href: troubleshoot-policies-in-microsoft-intune.md
-      - name: Problembehandlung beim bedingten Zugriff
-        href: troubleshoot-conditional-access.md
-      - name: Exchange Connector-Problembehandlung
-        href: troubleshoot-exchange-connector.md
-    - name: Anfordern von Support
-      href: get-support.md
+            - name: Unterstützung von Benutzern beim Beheben von Problemen
+              href: help-desk-operators.md
+            - name: Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen
+              href: troubleshoot-company-resource-access-problems.md
+            - name: Problembehandlung bei der App-Installation
+              href: troubleshoot-app-install.md
+            - name: Problembehandlung der Verwaltung von mobilen Geräten
+              href: troubleshoot-mam.md
+            - name: Überwachungsprotokolle für Intune-Aktivitäten
+              href: monitor-audit-logs.md
+            - name: Überprüfen von Protokollen mit Azure Monitor
+              href: review-logs-using-azure-monitor.md
+            - name: Überprüfen der App-Schutzprotokolle
+              href: app-protection-policy-settings-log.md
+            - name: Behandeln von Problemen mit E-Mail-Profilen
+              href: troubleshoot-email-profiles-in-microsoft-intune.md
+            - name: Behandlung von Problemen bei Softwareupdates
+              href: troubleshoot-software-updates-in-microsoft-intune.md
+            - name: Beheben von Problemen mit Endpoint Protection
+              href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+            - name: Problembehandlung für Richtlinien und Profile
+              href: troubleshoot-policies-in-microsoft-intune.md
+            - name: Problembehandlung beim bedingten Zugriff
+              href: troubleshoot-conditional-access.md
+            - name: Exchange Connector-Problembehandlung
+              href: troubleshoot-exchange-connector.md
+        - name: Anfordern von Support
+          href: get-support.md
 - name: Referenz
   items:
-  - name: Einstellungslisten
-    items:
-    - name: Android
+    - name: Einstellungslisten
       items:
-      - name: Einstellungen für Kompatibilitätsrichtlinie
-        href: compliance-policy-create-android.md
-      - name: Einstellungen für das Konfigurationsprofil
-        items:
-        - name: Geräteeinschränkungen
-          href: device-restrictions-android.md
-        - name: E-Mail
-          href: email-settings-android.md
-        - name: VPN
-          href: vpn-settings-android.md#android-vpn-settings
-        - name: WLAN
-          href: wi-fi-settings-android.md
-        - name: Benutzerdefiniert
-          href: custom-settings-android.md
+        - name: Android
           items:
-          - name: Zulassen/Blockieren von Apps für Samsung Knox Standard
-            href: samsung-knox-apps-allow-block.md
-    - name: Android Enterprise
-      items:
-      - name: Einstellungen für Kompatibilitätsrichtlinie
-        href: compliance-policy-create-android-for-work.md
-      - name: Einstellungen für das Konfigurationsprofil
-        items:
-        - name: Geräteeinschränkungen
-          href: device-restrictions-android-for-work.md
-        - name: E-Mail
-          href: email-settings-android-enterprise.md
-        - name: VPN
-          href: vpn-settings-android.md#android-enterprise-vpn-settings
-        - name: WLAN
-          href: wi-fi-settings-android-enterprise.md
-        - name: Benutzerdefiniert
-          href: custom-settings-android-for-work.md
-    - name: iOS
-      items:
-      - name: Einstellungen für Kompatibilitätsrichtlinie
-        href: compliance-policy-create-ios.md
-      - name: Einstellungen für das Konfigurationsprofil
-        items:
-        - name: Gerätefunktionen
-          href: ios-device-features-settings.md
-        - name: Geräteeinschränkungen
-          href: device-restrictions-ios.md
-        - name: E-Mail
-          href: email-settings-ios.md
-        - name: VPN
-          href: vpn-settings-ios.md
-        - name: WLAN
-          href: wi-fi-settings-ios.md
-        - name: Benutzerdefiniert
-          href: custom-settings-ios.md
-    - name: macOS
-      items:
-      - name: Einstellungen für Kompatibilitätsrichtlinie
-        href: compliance-policy-create-mac-os.md
-      - name: Einstellungen für das Konfigurationsprofil
-        items:
-        - name: Gerätefunktionen
-          href: macos-device-features-settings.md
-        - name: Geräteeinschränkungen
-          href: device-restrictions-macos.md
-        - name: Endpoint Protection
-          href: endpoint-protection-macos.md
-        - name: VPN
-          href: vpn-settings-macos.md
-        - name: WLAN
-          href: wi-fi-settings-macos.md
-        - name: Benutzerdefiniert
-          href: custom-settings-macos.md
-    - name: Windows 10 und höher
-      items:
-      - name: Einstellungen für Kompatibilitätsrichtlinie
-        href: compliance-policy-create-windows.md
-      - name: Einstellungen für das Konfigurationsprofil
-        items:
-        - name: Einstellungen für die Übermittlungsoptimierung
-          href: delivery-optimization-settings.md
-        - name: Geräteeinschränkungen
-          href: device-restrictions-windows-10.md
-        - name: Geräteeinschränkungen für Windows 10-Team
-          href: device-restrictions-windows-10-teams.md
-        - name: Editionsupgrade und Moduswechsel
-          href: edition-upgrade-windows-settings.md
-        - name: E-Mail
-          href: email-settings-windows-10.md
-        - name: Endpoint Protection
-          href: endpoint-protection-windows-10.md
-        - name: Schutz der Identität
-          href: identity-protection-windows-settings.md
-        - name: Kiosk
-          href: kiosk-settings-windows.md
-        - name: VPN
-          href: vpn-settings-windows-10.md
-        - name: WLAN
-          href: wi-fi-settings-windows.md
-        - name: Education
-          href: education-settings-windows.md
-        - name: Von mehreren Benutzern gemeinsam verwendetes Gerät
-          href: shared-user-device-settings-windows.md
-        - name: Benutzerdefiniert
-          href: custom-settings-windows-10.md
-      - name: Einstellungen für Sicherheitsbaselines
-        href: security-baseline-settings-windows.md
-      - name: Windows Update-Einstellungen
-        href: windows-update-settings.md
-    - name: Windows Holographic for Business
-      items:
-      - name: Einstellungen für Kompatibilitätsrichtlinie
-        href: compliance-policy-create-windows.md#windows-holographic-for-business
-      - name: Einstellungen für das Konfigurationsprofil
-        items:
-        - name: Geräteeinschränkungen
-          href: device-restrictions-windows-holographic.md
-        - name: Von mehreren Benutzern gemeinsam verwendetes Gerät
-          href: shared-user-device-settings-windows-holographic.md
-        - name: Editionsupgrade und Moduswechsel
-          href: holographic-upgrade.md
-        - name: Kiosk
-          href: kiosk-settings-holographic.md
-        - name: Benutzerdefiniert
-          href: custom-settings-windows-holographic.md
-    - name: Windows 8.1
-      items:
-      - name: Einstellungen für Kompatibilitätsrichtlinie
-        href: compliance-policy-create-windows-8-1.md
-      - name: Einstellungen für das Konfigurationsprofil
-        items:
-        - name: Geräteeinschränkungen
-          href: device-restrictions-windows-8-1.md
-        - name: VPN
-          href: vpn-settings-windows-8-1.md
-        - name: Importieren von WLAN-Konfigurationen
-          href: wi-fi-settings-import-windows-8-1.md
-    - name: Windows Phone 8.1
-      items:
-      - name: Einstellungen für Kompatibilitätsrichtlinie
-        href: compliance-policy-create-windows-8-1.md
-      - name: Einstellungen für das Konfigurationsprofil
-        items:
-        - name: Geräteeinschränkungen
-          href: device-restrictions-windows-phone-8-1.md
-        - name: E-Mail
-          href: email-settings-windows-phone-8-1.md
-        - name: VPN
-          href: vpn-settings-windows-phone-8-1.md
-        - name: Benutzerdefiniert
-          href: custom-settings-windows-phone-8-1.md
-  - name: Anleitung für Entwickler
-    items:
-    - name: API zum Hinzufügen einer Drittanbieter-Zertifizierungsstelle
-      href: scep-libraries-apis.md
-    - name: Schützen von Apps mit dem Intune App SDK
-      href: app-sdk.md
-      items:
-      - name: Erste Schritte mit dem Intune App SDK
-        href: app-sdk-get-started.md
-      - name: Vorbereiten von branchenspezifischen Apps für den App-Schutz
-        href: apps-prepare-mobile-application-management.md
-      - name: App Wrapping Tool für iOS
-        href: app-wrapper-prepare-ios.md
-      - name: Intune App SDK für iOS
-        href: app-sdk-ios.md
-      - name: App Wrapping Tool für Android
-        href: app-wrapper-prepare-android.md
-      - name: Intune App SDK für Android
-        href: app-sdk-android.md
-        items:
-        - name: 'Intune App SDK für Android: Testleitfaden'
-          href: app-sdk-android-testing-guide.md
-      - name: Microsoft Intune App SDK Xamarin Bindings (Microsoft Intune-App SDK-Xamarin-Bindungen)
-        href: app-sdk-xamarin.md
-    - name: Verwenden des Data Warehouse von Intune
-      href: reports-nav-create-intune-reports.md
-      items:
-      - name: Änderungsprotokoll für Data Warehouse
-        href: reports-changelog.md
-      - name: Verbinden mit dem Data Warehouse mit Power BI
-        href: reports-proc-get-a-link-powerbi.md
-      - name: Erstellen eines Berichts aus dem OData-Feed mit Power BI
-        href: reports-proc-create-with-odata.md
-    - name: Berichterstattung mit der Intune Data Warehouse-API
-      href: reports-nav-intune-data-warehouse.md
-      items:
-      - name: Abrufen von Daten aus der Data Warehouse-API mit einem REST-Client
-        href: reports-proc-data-rest.md
-      - name: Endpunkt der Data Warehouse-API
-        href: reports-api-url.md
-      - name: Nur-Anwendung-Authentifizierung von Data Warehouse
-        href: data-warehouse-app-only-auth.md
-      - name: Datenmodell von Data Warehouse
-        href: reports-ref-data-model.md
-        items:
-        - name: Data Warehouse-Sammlungen
-          href: intune-data-warehouse-collections.md
-        - name: Data Warehouse-Sammlungen (Betaversion)
+            - name: Einstellungen für Kompatibilitätsrichtlinie
+              href: compliance-policy-create-android.md
+            - name: Einstellungen für das Konfigurationsprofil
+              items:
+                - name: Geräteeinschränkungen
+                  href: device-restrictions-android.md
+                - name: E-Mail
+                  href: email-settings-android.md
+                - name: VPN
+                  href: 'vpn-settings-android.md#android-vpn-settings'
+                - name: WLAN
+                  href: wi-fi-settings-android.md
+                - name: Benutzerdefiniert
+                  href: custom-settings-android.md
+                  items:
+                    - name: Zulassen/Blockieren von Apps für Samsung Knox Standard
+                      href: samsung-knox-apps-allow-block.md
+        - name: Android Enterprise
           items:
-          - name: Darstellung der Benutzerlebensdauer im Intune-Data Warehouse
-            href: reports-ref-user-timeline.md
-          - name: Verweis für Anwendungsentitäten
-            href: reports-ref-application.md
-          - name: Verweis für die Datumsentität
-            href: reports-ref-date.md
-          - name: Referenz für Geräteentitäten
-            href: reports-ref-devices.md
-          - name: Verweis für die Intune-Verwaltungserweiterungsentität
-            href: reports-ref-intunemanagementextension.md
-          - name: Verweis für MAM-Entitäten (Verwaltung mobiler Apps)
-            href: reports-ref-mobile-app-management.md
-          - name: Verweis für Richtlinienentitäten
-            href: reports-ref-policy.md
-          - name: Verweis für die Entität der Benutzergerätezuordnung
-            href: reports-ref-user-device.md
-          - name: Verweis für die Benutzerentität
-            href: reports-ref-user.md
-      - name: Verschieben Ihrer Intune Data Warehouse-Kontodaten
-        href: data-warehouse-account-move.md
-    - name: Verwenden von Azure AD für den Zugriff auf Intune-APIs in Microsoft Graph
-      href: intune-graph-apis.md
+            - name: Einstellungen für Kompatibilitätsrichtlinie
+              href: compliance-policy-create-android-for-work.md
+            - name: Einstellungen für das Konfigurationsprofil
+              items:
+                - name: Geräteeinschränkungen
+                  href: device-restrictions-android-for-work.md
+                - name: E-Mail
+                  href: email-settings-android-enterprise.md
+                - name: VPN
+                  href: 'vpn-settings-android.md#android-enterprise-vpn-settings'
+                - name: WLAN
+                  href: wi-fi-settings-android-enterprise.md
+                - name: Benutzerdefiniert
+                  href: custom-settings-android-for-work.md
+        - name: iOS
+          items:
+            - name: Einstellungen für Kompatibilitätsrichtlinie
+              href: compliance-policy-create-ios.md
+            - name: Einstellungen für das Konfigurationsprofil
+              items:
+                - name: Gerätefunktionen
+                  href: ios-device-features-settings.md
+                - name: Geräteeinschränkungen
+                  href: device-restrictions-ios.md
+                - name: E-Mail
+                  href: email-settings-ios.md
+                - name: VPN
+                  href: vpn-settings-ios.md
+                - name: WLAN
+                  href: wi-fi-settings-ios.md
+                - name: Benutzerdefiniert
+                  href: custom-settings-ios.md
+        - name: macOS
+          items:
+            - name: Einstellungen für Kompatibilitätsrichtlinie
+              href: compliance-policy-create-mac-os.md
+            - name: Einstellungen für das Konfigurationsprofil
+              items:
+                - name: Gerätefunktionen
+                  href: macos-device-features-settings.md
+                - name: Geräteeinschränkungen
+                  href: device-restrictions-macos.md
+                - name: Endpoint Protection
+                  href: endpoint-protection-macos.md
+                - name: VPN
+                  href: vpn-settings-macos.md
+                - name: WLAN
+                  href: wi-fi-settings-macos.md
+                - name: Benutzerdefiniert
+                  href: custom-settings-macos.md
+        - name: Windows 10 und höher
+          items:
+            - name: Einstellungen für Kompatibilitätsrichtlinie
+              href: compliance-policy-create-windows.md
+            - name: Einstellungen für das Konfigurationsprofil
+              items:
+                - name: Einstellungen für die Übermittlungsoptimierung
+                  href: delivery-optimization-settings.md
+                - name: Geräteeinschränkungen
+                  href: device-restrictions-windows-10.md
+                - name: Geräteeinschränkungen für Windows 10-Team
+                  href: device-restrictions-windows-10-teams.md
+                - name: Editionsupgrade und Moduswechsel
+                  href: edition-upgrade-windows-settings.md
+                - name: E-Mail
+                  href: email-settings-windows-10.md
+                - name: Endpoint Protection
+                  href: endpoint-protection-windows-10.md
+                - name: Schutz der Identität
+                  href: identity-protection-windows-settings.md
+                - name: Kiosk
+                  href: kiosk-settings-windows.md
+                - name: VPN
+                  href: vpn-settings-windows-10.md
+                - name: WLAN
+                  href: wi-fi-settings-windows.md
+                - name: Education
+                  href: education-settings-windows.md
+                - name: Von mehreren Benutzern gemeinsam verwendetes Gerät
+                  href: shared-user-device-settings-windows.md
+                - name: Benutzerdefiniert
+                  href: custom-settings-windows-10.md
+            - name: Einstellungen für Sicherheitsbaselines
+              href: security-baseline-settings-windows.md
+            - name: Windows Update-Einstellungen
+              href: windows-update-settings.md
+        - name: Windows Holographic for Business
+          items:
+            - name: Einstellungen für Kompatibilitätsrichtlinie
+              href: 'compliance-policy-create-windows.md#windows-holographic-for-business'
+            - name: Einstellungen für das Konfigurationsprofil
+              items:
+                - name: Geräteeinschränkungen
+                  href: device-restrictions-windows-holographic.md
+                - name: Von mehreren Benutzern gemeinsam verwendetes Gerät
+                  href: shared-user-device-settings-windows-holographic.md
+                - name: Editionsupgrade und Moduswechsel
+                  href: holographic-upgrade.md
+                - name: Kiosk
+                  href: kiosk-settings-holographic.md
+                - name: Benutzerdefiniert
+                  href: custom-settings-windows-holographic.md
+        - name: "Windows\_8.1"
+          items:
+            - name: Einstellungen für Kompatibilitätsrichtlinie
+              href: compliance-policy-create-windows-8-1.md
+            - name: Einstellungen für das Konfigurationsprofil
+              items:
+                - name: Geräteeinschränkungen
+                  href: device-restrictions-windows-8-1.md
+                - name: VPN
+                  href: vpn-settings-windows-8-1.md
+                - name: Importieren von WLAN-Konfigurationen
+                  href: wi-fi-settings-import-windows-8-1.md
+        - name: "Windows\_Phone\_8.1"
+          items:
+            - name: Einstellungen für Kompatibilitätsrichtlinie
+              href: compliance-policy-create-windows-8-1.md
+            - name: Einstellungen für das Konfigurationsprofil
+              items:
+                - name: Geräteeinschränkungen
+                  href: device-restrictions-windows-phone-8-1.md
+                - name: E-Mail
+                  href: email-settings-windows-phone-8-1.md
+                - name: VPN
+                  href: vpn-settings-windows-phone-8-1.md
+                - name: Benutzerdefiniert
+                  href: custom-settings-windows-phone-8-1.md
+    - name: Anleitung für Entwickler
       items:
-      - name: Intune-API-Referenz
-        href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
-    - name: Graph-APIs zur Gerätekonfiguration
-      href: graph-apis-used-by-intune-device-configuration-windows.md
+        - name: API zum Hinzufügen einer Drittanbieter-Zertifizierungsstelle
+          href: scep-libraries-apis.md
+        - name: Schützen von Apps mit dem Intune App SDK
+          href: app-sdk.md
+          items:
+            - name: Erste Schritte mit dem Intune App SDK
+              href: app-sdk-get-started.md
+            - name: Vorbereiten von branchenspezifischen Apps für den App-Schutz
+              href: apps-prepare-mobile-application-management.md
+            - name: App Wrapping Tool für iOS
+              href: app-wrapper-prepare-ios.md
+            - name: Intune App SDK für iOS
+              href: app-sdk-ios.md
+            - name: App Wrapping Tool für Android
+              href: app-wrapper-prepare-android.md
+            - name: Intune App SDK für Android
+              href: app-sdk-android.md
+              items:
+                - name: 'Intune App SDK für Android: Testleitfaden'
+                  href: app-sdk-android-testing-guide.md
+            - name: Microsoft Intune App SDK Xamarin Bindings (Microsoft Intune-App SDK-Xamarin-Bindungen)
+              href: app-sdk-xamarin.md
+        - name: Verwenden des Data Warehouse von Intune
+          href: reports-nav-create-intune-reports.md
+          items:
+            - name: Änderungsprotokoll für Data Warehouse
+              href: reports-changelog.md
+            - name: Verbinden mit dem Data Warehouse mit Power BI
+              href: reports-proc-get-a-link-powerbi.md
+            - name: Erstellen eines Berichts aus dem OData-Feed mit Power BI
+              href: reports-proc-create-with-odata.md
+        - name: Berichterstattung mit der Intune Data Warehouse-API
+          href: reports-nav-intune-data-warehouse.md
+          items:
+            - name: Abrufen von Daten aus der Data Warehouse-API mit einem REST-Client
+              href: reports-proc-data-rest.md
+            - name: Endpunkt der Data Warehouse-API
+              href: reports-api-url.md
+            - name: Nur-Anwendung-Authentifizierung von Data Warehouse
+              href: data-warehouse-app-only-auth.md
+            - name: Datenmodell von Data Warehouse
+              href: reports-ref-data-model.md
+              items:
+                - name: Data Warehouse-Sammlungen
+                  href: intune-data-warehouse-collections.md
+                - name: Data Warehouse-Sammlungen (Betaversion)
+                  items:
+                    - name: Darstellung der Benutzerlebensdauer im Intune-Data Warehouse
+                      href: reports-ref-user-timeline.md
+                    - name: Verweis für Anwendungsentitäten
+                      href: reports-ref-application.md
+                    - name: Verweis für die Datumsentität
+                      href: reports-ref-date.md
+                    - name: Referenz für Geräteentitäten
+                      href: reports-ref-devices.md
+                    - name: Verweis für die Intune-Verwaltungserweiterungsentität
+                      href: reports-ref-intunemanagementextension.md
+                    - name: Verweis für MAM-Entitäten (Verwaltung mobiler Apps)
+                      href: reports-ref-mobile-app-management.md
+                    - name: Verweis für Richtlinienentitäten
+                      href: reports-ref-policy.md
+                    - name: Verweis für die Entität der Benutzergerätezuordnung
+                      href: reports-ref-user-device.md
+                    - name: Verweis für die Benutzerentität
+                      href: reports-ref-user.md
+            - name: Verschieben Ihrer Intune Data Warehouse-Kontodaten
+              href: data-warehouse-account-move.md
+        - name: Verwenden von Azure AD für den Zugriff auf Intune-APIs in Microsoft Graph
+          href: intune-graph-apis.md
+          items:
+            - name: Intune-API-Referenz
+              href: 'https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview'
+        - name: Graph-APIs zur Gerätekonfiguration
+          href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Ressourcen
   items:
-  - name: Archiv
-    items:
-    - name: Archiv für Neuheiten
+    - name: Archiv
       items:
-      - name: Neuheiten – Archiv (Azure-Portal)
-        href: whats-new-archive.md
-      - name: Neuheiten – Archiv (klassisches Portal)
-        href: whats-new-archive-classic.md
-    - name: Klassische Intune-Features in Azure
-      href: ui-changes.md
-    - name: Klassische Intune-Gruppen
-      href: groups-get-started.md
-    - name: iOS-Einstellungen für Bildungseinrichtungen
+        - name: Archiv für Neuheiten
+          items:
+            - name: Neuheiten – Archiv (Azure-Portal)
+              href: whats-new-archive.md
+            - name: Neuheiten – Archiv (klassisches Portal)
+              href: whats-new-archive-classic.md
+        - name: Klassische Intune-Features in Azure
+          href: ui-changes.md
+        - name: Klassische Intune-Gruppen
+          href: groups-get-started.md
+        - name: iOS-Einstellungen für Bildungseinrichtungen
+          items:
+            - name: iPad
+              href: education-settings-configure-ios.md
+            - name: Gemeinsam genutzte iPads
+              href: education-settings-configure-ios-shared.md
+        - name: Intune-PC-Legacyclient
+          href: intune-legacy-pc-client.md
+        - name: Verwalten von PCs über einen Software-Agent
+          href: manage-windows-pcs-with-microsoft-intune.md
+          items:
+            - name: Vergleichen der Verwaltung von PCs
+              href: pc-management-comparison.md
+            - name: Installieren des PC-Clients
+              href: install-the-windows-pc-client-with-microsoft-intune.md
+            - name: Allgemeine Aufgaben zur Verwaltung von PCs
+              href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
+              items:
+                - name: PC-Richtlinien
+                  href: use-policies-to-simplify-windows-pc-management.md
+                - name: Anzeigen des Bestands
+                  href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
+                - name: Außerkraftsetzen von PCs
+                  href: retire-a-windows-pc-with-microsoft-intune.md
+                - name: Verknüpfen von PCs mit Benutzern
+                  href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
+                - name: Remoteunterstützung
+                  href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
+            - name: Richtlinien zum Schutz von Windows-PCs
+              href: policies-to-protect-windows-pcs-in-microsoft-intune.md
+              items:
+                - name: Softwareupdates
+                  href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
+                - name: Windows-Firewall
+                  href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
+                - name: Endpoint Protection
+                  href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
+            - name: Hinzufügen von Apps für Intune-Client-PCs
+              href: add-apps-for-windows-pcs-in-microsoft-intune.md
+            - name: Verwalten von Lizenzverträgen
+              href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
+            - name: Lösen von Richtlinienkonflikten
+              href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
+    - name: Implementierungshandbücher für Szenarios
       items:
-      - name: iPad
-        href: education-settings-configure-ios.md
-      - name: Gemeinsam genutzte iPads
-        href: education-settings-configure-ios-shared.md
-    - name: Intune-PC-Legacyclient
-      href: intune-legacy-pc-client.md
-    - name: Verwalten von PCs über einen Software-Agent
-      href: manage-windows-pcs-with-microsoft-intune.md
-      items:
-      - name: Vergleichen der Verwaltung von PCs
-        href: pc-management-comparison.md
-      - name: Installieren des PC-Clients
-        href: install-the-windows-pc-client-with-microsoft-intune.md
-      - name: Allgemeine Aufgaben zur Verwaltung von PCs
-        href: common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md
-        items:
-        - name: PC-Richtlinien
-          href: use-policies-to-simplify-windows-pc-management.md
-        - name: Anzeigen des Bestands
-          href: view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md
-        - name: Außerkraftsetzen von PCs
-          href: retire-a-windows-pc-with-microsoft-intune.md
-        - name: Verknüpfen von PCs mit Benutzern
-          href: manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md
-        - name: Remoteunterstützung
-          href: request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md
-      - name: Richtlinien zum Schutz von Windows-PCs
-        href: policies-to-protect-windows-pcs-in-microsoft-intune.md
-        items:
-        - name: Softwareupdates
-          href: keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md
-        - name: Windows-Firewall
-          href: help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md
-        - name: Endpoint Protection
-          href: help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md
-      - name: Hinzufügen von Apps für Intune-Client-PCs
-        href: add-apps-for-windows-pcs-in-microsoft-intune.md
-      - name: Verwalten von Lizenzverträgen
-        href: manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md
-      - name: Lösen von Richtlinienkonflikten
-        href: resolve-gpo-and-microsoft-intune-policy-conflicts.md
-  - name: Implementierungshandbücher für Szenarios
-    items:
-    - name: Schützen von Exchange Online
-      href: exchange-online-protect.md
-    - name: Reduzieren von Helpdeskkosten
-      href: password-reset.md
-    - name: Verhindern von nicht autorisiertem Zugriff
-      href: data-outside-protect.md
-    - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
-      href: data-leak-prevention.md
-ms.openlocfilehash: e120e5432fe68f479cc19fed5ea2263e7824245c
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
-ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423838"
+        - name: Schützen von Exchange Online
+          href: exchange-online-protect.md
+        - name: Reduzieren von Helpdeskkosten
+          href: password-reset.md
+        - name: Verhindern von nicht autorisiertem Zugriff
+          href: data-outside-protect.md
+        - name: Verhindern von Datenverlusten auf nicht verwalteten Geräten
+          href: data-leak-prevention.md
