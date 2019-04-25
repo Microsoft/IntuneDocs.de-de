@@ -19,11 +19,11 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c601af8c2b73ac68ec88f45d3684fcfd41f1c87f
-ms.sourcegitcommit: 1144247aa7f042eb1b99d8fd8dd17b909eae38c5
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61516332"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: Überblick über Microsoft Intune im Azure-Portal
 

@@ -18,11 +18,11 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3919ae461fbbd5c5c69c1fbe4983cc8468f576c6
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59567581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490075"
 ---
 # <a name="typical-migration-cycle"></a>Typischer Migrationszyklus
 

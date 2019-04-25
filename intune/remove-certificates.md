@@ -18,11 +18,11 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
 ms.openlocfilehash: 6a1280ca2a78853ae188ad68620f0b82846a365a
-ms.sourcegitcommit: 9daaeba9a960c50efcc951856234fbfec3635737
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59569258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511122"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Entfernen von SCEP- und PKCS-Zertifikaten in Microsoft Intune
 

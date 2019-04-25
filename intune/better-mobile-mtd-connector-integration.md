@@ -16,11 +16,11 @@ ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 282fb642e147353f50e730884037815ef2dc16aa
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57390118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508472"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Integrieren von Better Mobile in Intune
 

@@ -14,11 +14,11 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6cf4e365f4e68920ea5d24dc3ce2e1bd5eb9f817
-ms.sourcegitcommit: 9af102e1232d9a568a7901783c30ba9905e64d99
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58477127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511570"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Schnellstart: Erstellen und Zuweisen einer benutzerdefinierten Rolle
 
