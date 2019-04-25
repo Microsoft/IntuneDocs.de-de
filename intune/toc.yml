@@ -329,6 +329,8 @@
           items:
             - name: StageNow-Protokolle und allgemeine Probleme
               href: android-zebra-mx-logs-troubleshoot.md
+        - name: OEMConfig unter Android Enterprise
+          href: android-oem-configuration-overview.md
         - name: Überwachen der Telekommunikationsausgaben
           href: telecom-expenses-monitor.md
         - name: Benutzerdefinierte Geräteeinstellungen

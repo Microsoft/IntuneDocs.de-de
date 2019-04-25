@@ -8,10 +8,12 @@
 
 ## [Anmelden bei der Unternehmensportal-App](sign-in-to-the-company-portal.md)
 
-## [Verwenden Ihres Android-Geräts](using-your-android-device-with-intune.md)
-### [Was geschieht, wenn Sie ein Android-Gerät registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-### [Registrieren Ihres Geräts](enroll-your-device-in-Intune-android.md)
-#### [Registrieren Ihres Geräts mit Android for Work](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+## Verwendung Ihres Android-Geräts
+### [Warum sollten Sie Ihr Android-Gerät registrieren?](why-enroll-android-device.md)
+### Registrieren Sie Ihr Gerät
+#### [Registrierung Ihres Android-Geräts](enroll-device-android-company-portal.md)  
+#### [Registrieren mit dem Android-Arbeitsprofil](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
+#### [Registrieren mit der Microsoft Intune-App](enroll-device-android-microsoft-intune-app.md)
 ### [Verwenden verwalteter Apps auf Ihrem Gerät](use-managed-apps-on-your-device-android.md)
 ### [Verschlüsseln Ihres Geräts](encrypt-your-device-android.md)
 ### [Festlegen von PIN oder Kennwort](set-your-pin-or-password-android.md)
@@ -23,16 +25,15 @@
 #### [Aufheben der Registrierung Ihres Geräts](unenroll-your-device-from-intune-android.md)
 #### [Aufheben der Registrierung Ihres Geräts bei Ablehnung der Nutzungsbedingungen](unenroll-your-device-from-intune-if-you-declined-terms-of-use-android.md)
 
-### [Behandeln häufig auftretender Probleme mit Android](troubleshoot-your-device-android.md)
+### Behandeln häufig auftretender Probleme mit Android
 #### [Überprüfen der Gerätekompatibilität](check-compliance-on-your-device-android.md)
 #### [Beheben häufig auftretender Probleme mit Samsung Knox](samsung-knox-errors-android.md)
 #### [Aktualisieren Ihres Geräts für die Installation von Outlook](update-device-outlook-android.md)
 
-#### Beheben von Problemen mithilfe von Protokollen
+#### Logging
 ##### [Aktivieren der ausführlichen Protokollierung](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-##### [Senden von Protokollen per E-Mail](send-logs-to-your-it-admin-by-email-android.md)
+##### [Hochladen von Protokollen und Versenden per E-Mail](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Senden von Protokollen mithilfe eines USB-Kabels](send-logs-to-your-it-admin-using-cable-android.md)
-##### [Senden von Registrierungsfehlern](send-enrollment-errors-to-your-it-admin-android.md)
 ##### [Senden von Fehlern an Microsoft](send-logs-to-microsoft-android.md)
 
 ### Fragen zum Betriebssystem
