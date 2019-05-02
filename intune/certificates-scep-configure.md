@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510048"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune
 
@@ -36,9 +37,9 @@ In diesem Artikel wird erläutert, wie Sie Ihre Infrastruktur konfigurieren und 
 - **NDES-Server**: Richten Sie auf einem Server mit Windows Server 2012 R2 oder höher die Serverrolle „Registrierungsdienst für Netzwerkgeräte“ (Network Device Enrollment Service, NDES) ein. Intune unterstützt die Verwendung von NDES nicht auf Servern, die auch die Unternehmenszertifizierungsstelle ausführen. Im [Leitfaden für den Registrierungsdienst für Netzwerkgeräte](http://technet.microsoft.com/library/hh831498.aspx) finden Sie Anweisungen zum Konfigurieren von Windows Server 2012 R2 zum Hosten von NDES.
 Der NDES-Server muss mit einer Domäne verknüpft sein, die dieselbe Gesamtstruktur aufweist wie die Unternehmenszertifizierungsstelle. Weitere Informationen zum Bereitstellen des NDES-Servers in einer separaten Gesamtstruktur, in einem isolierten Netzwerk oder in einer internen Domäne finden Sie unter [Verwenden eines Richtlinienmoduls mit dem Registrierungsdienst für Netzwerkgeräte](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **Microsoft Intune Certificate Connector**: Laden Sie das Installationsprogramm (**NDESConnectorSetup.exe**) für den **Certificate Connector** aus dem Intune-Verwaltungsportal herunter. Führen Sie diesen Installer über die NDES-Rolle auf dem Server aus.  
+- **Microsoft Intune Certificate Connector**: Navigieren Sie im Intune-Portal zu **Gerätekonfiguration** > **Certificate Connectors** > **Hinzufügen**, und führen Sie die *notwendigen Schritte aus, um den Connector für SCEP zu installieren*. Verwenden Sie den Downloadlink im Portal zum Herunterladen des Installationsprogramms für den Certificate Connector (**NDESConnectorSetup.exe**).  Führen Sie diesen Installer über die NDES-Rolle auf dem Server aus.  
 
-  - Der NDES-Certificate Connector unterstützt ebenfalls den FIPS-Modus (Federal Information Processing Standard). FIPS ist nicht erforderlich, Sie können jedoch Zertifikate ausstellen und widerrufen, wenn dieser Modus aktiviert ist.
+Dieser NDES-Certificate Connector unterstützt ebenfalls den FIPS-Modus (Federal Information Processing Standard). FIPS ist nicht erforderlich, Sie können jedoch Zertifikate ausstellen und widerrufen, wenn dieser Modus aktiviert ist.
 
 - **Webanwendungsproxy-Server** (optional): Verwenden Sie einen Server, der Windows Server 2012 R2 oder höher ausführt, als Webanwendungsproxy-Server (WAP). Diese Konfiguration:
   - ermöglicht Geräten das Empfangen von Zertifikaten über eine Internetverbindung,
@@ -262,7 +263,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 
     Das Clientauthentifizierungszertifikat muss die folgenden Eigenschaften aufweisen:
 
-    - **Erweiterte Schlüsselverwendung**: Dieser Wert muss die **Clientauthentifizierung** enthalten.
+    - **Erweiterte Schlüsselverwendung:** Dieser Wert muss die **Clientauthentifizierung** enthalten.
 
     - **Antragstellername**: Der Wert muss mit dem DNS-Namen des Servers identisch sein, auf dem das Zertifikat installiert wird (d.h. dem NDES-Server).
 
@@ -298,12 +299,13 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 > Der Microsoft Intune Certificate Connector **muss** auf einem separaten Windows-Server installiert sein. Er kann nicht in der ausstellenden Zertifizierungsstelle installiert werden. Zudem **muss** er auf dem gleichen Server installiert werden, dem die NDES-Rolle (Network Device Enrollment Service) zugewiesen ist.
 
 1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
-2. Wählen Sie **Gerätekonfiguration** > **Zertifizierungsstelle** > **Hinzufügen** aus.
-3. Laden Sie die Datei des Connectors herunter, und speichern Sie sie. Speichern Sie sie an einem Ort, auf den von dem Server aus zugegriffen werden kann, auf dem der Connector installiert wird.
+2. Klicken Sie auf **Gerätekonfiguration** > **Certificate Connectors** > **Hinzufügen**.
+3. Laden Sie die Datei des Connectors für die SCEP-Datei herunter, und speichern Sie sie. Speichern Sie sie an einem Ort, auf den von dem Server aus zugegriffen werden kann, auf dem der Connector installiert wird.
 
-    ![ConnectorDownload](./media/certificates-download-connector.png)
+   ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
-4. Nachdem der Download abgeschlossen ist, navigieren Sie zum Server, der die NDES-Rolle hostet. Führen Sie anschließend Folgendes durch:
+
+4. Nachdem der Download abgeschlossen ist, navigieren Sie zu dem Server, der den Registrierungsdienst für Netzwerkgeräte (Network Device Enrollment Service, NDES) hostet. Führen Sie anschließend Folgendes durch:
 
     1. Stellen Sie sicher, dass .NET Framework 4.5 installiert ist (dies ist für den NDES-Certificate Connector erforderlich). .NET Framework 4.5 ist automatisch in Windows Server 2012 R2 und höheren Versionen enthalten.
     2. Führen Sie den Installer aus (**NDESConnectorSetup.exe**). Das Installationsprogramm installiert auch das Richtlinienmodul für NDES und den CRP-Webdienst. Der CRP-Webdienst „CertificateRegistrationSvc“ wird als Anwendung in IIS ausgeführt.
@@ -363,8 +365,8 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 5. Wählen Sie in der Dropdownliste **Profiltyp** die Option **SCEP-Zertifikat** aus.
 6. Legen Sie folgende Einstellungen fest:
 
-   - **Zertifikattyp**: Wählen Sie **Benutzer** für Benutzerzertifikate aus. Wählen Sie **Gerät** für benutzerlose Geräte, z.B. Kiosks, aus. Zertifikate für **Geräte** sind für folgende Plattformen verfügbar:  
-     - Android Enterprise
+   - **Zertifikattyp**: Wählen Sie **Benutzer** für Benutzerzertifikate aus. Beim Zertifikattyp **Benutzer** können sowohl Benutzer- als auch Geräteattribute im Betreff und im alternativen Antragstellernamen des Zertifikats enthalten sein.  Klicken Sie für benutzerlose Geräte wie Kiosks oder für Windows-Geräte auf **Gerät**. Dadurch wird das Zertifikat im Zertifikatspeicher des lokalen Computers gespeichert. Beim Zertifikattyp **Gerät** können nur Geräteattribute im Betreff und im alternativen Antragstellernamen des Zertifikats enthalten sein.  Zertifikate für **Geräte** sind für folgende Plattformen verfügbar:  
+     - Android Enterprise-Arbeitsprofil
      - iOS
      - macOS
      - Windows 8.1 und höher

@@ -1,32 +1,34 @@
 ---
 title: Behandlung von Problemen bei der Geräteregistrierung
-description: Vorschläge zur Problembehandlung bei Problemen mit der Geräteregistrierung.
+titleSuffix: Microsoft Intune
+description: Vorschläge zur Behandlung von Problemen bei der Geräteregistrierung in Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
+ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2d345ba84eb963600a921c0f77f7a93ed6aa1b0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 06a8bd8d0a46b7d7eed8efb4cb8b4c2d4e21f77d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509230"
 ---
-# <a name="troubleshoot-device-enrollment-in-intune"></a>Behandlung von Problemen bei der Geräteregistrierung bei Intune
+# <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Behandlung von Problemen bei der Geräteregistrierung in Microsoft Intune
 
-Dieser Artikel enthält Vorschläge zur Problembehandlung bei Problemen mit der Geräteregistrierung. Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [Anfordern von Support für Microsoft Intune](get-support.md) weitere Möglichkeiten, Hilfe zu erhalten.
+Dieser Artikel enthält Vorschläge zur Behandlung von Problemen bei der [Geräteregistrierung](device-enrollment.md). Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [Anfordern von Support für Microsoft Intune](get-support.md) weitere Möglichkeiten, Hilfe zu erhalten.
 
 
 ## <a name="initial-troubleshooting-steps"></a>Erste Schritte bei der Problembehandlung
@@ -100,7 +102,7 @@ Entfernen Sie alte Geräteeinträge, um zu verhindern, dass das Limit erreicht w
 
 1.  Achten Sie darauf, dass die MDM-Autorität [entsprechend festgelegt wurde](mdm-authority-set.md).
     
-2.  Überprüfen Sie, ob die Anmeldeinformationen des Benutzers korrekt mit Azure Active Directory synchronisiert wurden. Sie können überprüfen, ob die UPN des Benutzers mit den Active Directory-Informationen im Office 365-Portal übereinstimmt.
+2.  Überprüfen Sie, ob die Anmeldeinformationen des Benutzers korrekt mit Azure Active Directory synchronisiert wurden. Sie können überprüfen, ob die UPN des Benutzers mit den Active Directory-Informationen im Microsoft 365 Admin Center übereinstimmt.
     Wenn der UPN nicht mit den Active Directory-Informationen übereinstimmt:
 
     1.  Deaktivieren Sie DirSync auf dem lokalen Server.
@@ -131,7 +133,7 @@ Entfernen Sie alte Geräteeinträge, um zu verhindern, dass das Limit erreicht w
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>Erstellen einer Richtlinie oder Registrieren von Geräten ist nicht möglich, wenn der Firmenname Sonderzeichen enthält
 **Problem:** Sie können keine Richtlinie erstellen bzw. keine Geräte registrieren.
 
-**Lösung:** Entfernen Sie im [Office 365 Admin Center](https://portal.office.com/) die Sonderzeichen aus den Firmennamen, und speichern Sie die Unternehmensinformationen.
+**Lösung:** Entfernen Sie im [Microsoft 365 Admin Center](https://admin.microsoft.com/) die Sonderzeichen aus dem Firmennamen, und speichern Sie die Unternehmensinformationen.
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>Anmelden oder Registrieren von Geräten ist nicht möglich, wenn Sie mehrere überprüfte Domänen haben
 **Problem:** Dieses Problem kann auftreten, wenn Sie eine zweite verifizierte Domäne zu Ihrer ADFS-Instanz hinzufügen. Benutzer mit dem Benutzerprinzipalnamen-Suffix (UPN) der zweiten Domäne können sich möglicherweise nicht bei Portalen anmelden oder Geräte registrieren.
@@ -225,7 +227,7 @@ Wenn Lösung 2 nicht zur Behebung des Problems führt, führen Sie die folgenden
 
 **Lösung 1**:
 
-Der Benutzer kann das fehlende Zertifikat abrufen, indem er die Anweisungen unter [Auf Ihrem Gerät ist ein erforderliches Zertifikat nicht vorhanden](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator) befolgt. Wenn der Fehler weiterhin auftritt, versuchen Sie es mit Lösung 2.
+Der Benutzer kann das fehlende Zertifikat abrufen, indem er die Anweisungen unter [Auf Ihrem Gerät ist ein erforderliches Zertifikat nicht vorhanden](/intune-user-help/your-device-is-missing-a-required-certificate-android) befolgt. Wenn der Fehler weiterhin auftritt, versuchen Sie es mit Lösung 2.
 
 **Lösung 2**:
 
@@ -492,7 +494,7 @@ Das Kontozertifikat des vorherigen Kontos ist immer noch auf dem Computer vorhan
 |0x80043008, 0x80CF3008|Microsoft-Onlinedienst zur Updateverwaltung konnte nicht gestartet werden.|Wenden Sie sich dazu an den Microsoft Support, wie unter [Anfordern von Support für Microsoft Intune](get-support.md) beschrieben.|
 |0x80043009, 0x80CF3009|Der Clientcomputer ist bereits für den Dienst registriert.|Sie müssen den Clientcomputer abkoppeln, bevor sie ihn erneut für den Dienst registrieren können.|
 |0x8004300B, 0x80CF300B|Das Installationspaket für die Clientsoftware kann nicht ausgeführt werden, da die Windows-Version auf dem Client nicht unterstützt wird.|Die auf dem Client ausgeführte Windows-Version wird von Intune nicht unterstützt.|
-|0xAB2|Fehler beim Zugriff von Windows Installer auf die VBScript-Laufzeit für die benutzerdefinierte Aktion.|Dieser Fehler wird von einer benutzerdefinierten Aktion verursacht, die auf DLLs (Dynamic-Link Libraries) aufbaut. Um den DLL-Fehler zu behandeln, benötigen Sie möglicherweise die Tools, die im [Artikel 198038 der Microsoft-Support-KB: Hilfreiche Tools bei Problemen mit der Paketerstellung und Weitergabe](https://support.microsoft.com/kb/198038) erläutert werden.|
+|0xAB2|Fehler beim Zugriff von Windows Installer auf die VBScript-Laufzeit für die benutzerdefinierte Aktion.|Dieser Fehler wird von einer benutzerdefinierten Aktion verursacht, die auf DLLs (Dynamic-Link Libraries) aufbaut. Um den DLL-Fehler zu behandeln, benötigen Sie möglicherweise die Tools, die unter [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues (Microsoft-Support KB198038: Hilfreiche Tools bei Problemen mit der Erstellung und Bereitstellung von Paketen)](https://support.microsoft.com/kb/198038) beschrieben werden.|
 |0x80cf0440|Die Verbindung zum Dienstendpunkt wurde abgebrochen.|Test- oder kostenpflichtige Konto wird angehalten. Erstellen Sie ein neues Test- oder kostenpflichtiges Konto und registrieren Sie sich erneut.|
 
 

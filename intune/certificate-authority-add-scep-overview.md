@@ -6,20 +6,22 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 07/26/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de0df4878d2461d2f7c0a022a7e3d305e58aef7f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d042a160d016343c6e8374dff8f74560b9806014
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508481"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Hinzufügen einer Partnerzertifizierungsstelle in Intune mithilfe von SCEP
 
@@ -87,7 +89,7 @@ Erteilen Sie nach der Erstellung der Anwendung der Microsoft Intune-API die erfo
 3. Klicken Sie unter **Berechtigungen auswählen** auf **SCEP challenge validation** (Überprüfung der SCEP-Aufforderung) > **Auswählen**.
 4. Wählen Sie **Fertig** aus, um die Änderungen zu speichern.
 
-**Schritt 3: Abrufen der Anwendungs-ID und des Authentifizierungsschlüssels**
+**Schritt 3: Abrufen der Anwendungs-ID und des Authentifizierungsschlüssels**
 
 Rufen Sie nun die ID und die Schlüsselwerte Ihrer Azure AD-Anwendung ab. Die folgenden Werte sind erforderlich:
 
