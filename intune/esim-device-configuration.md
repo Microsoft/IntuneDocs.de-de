@@ -9,17 +9,18 @@ ms.date: 7/31/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 680853446b40949309ef406a6cab5b6b0181798a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 4bdaf5768c1b78fbd07a732ee6690e59638fcff1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513737"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Öffentliche Vorschau: Konfigurieren von eSIM-Mobilfunkprofilen in Intune
 
@@ -194,7 +195,7 @@ Das eSIM-Profil wird auch entfernt, wenn der Benutzer das Gerät [außer Betrieb
 - Achten Sie darauf, dass Ihre CSV-Datei ordnungsgemäß formatiert ist. Vergewissern Sie sich, dass die Datei weder doppelte Codes noch mehrere Mobilfunkanbieter oder unterschiedliche Datentarife enthält. Beachten Sie, dass jede Datei für einen Mobilfunkbetreiber und einen Datenverbindungstarif eindeutig sein muss.
 - Erstellen Sie eine statische Azure AD-Gruppe, die nur die vorgesehenen eSIM-Geräte enthält.
 - Überprüfen Sie Folgendes, wenn bei dem Bereitstellungsstatus ein Problem vorliegt:
-  - **File format not proper** (Nicht unterstütztes Dateiformat): Siehe **Schritt 1: Hinzufügen von Aktivierungscodes für Mobilfunkverbindungen** (in diesem Artikel), um in Erfahrung zu bringen, wie Sie Ihre Datei ordnungsgemäß formatieren.
+  - **File format not proper** (Nicht unterstütztes Dateiformat): Weitere Informationen erhalten Sie unter **Schritt 1: Hinzufügen von Aktivierungscodes für Mobilfunkverbindungen** (in diesem Artikel), um in Erfahrung zu bringen, wie Sie Ihre Datei ordnungsgemäß formatieren.
   - **Cellular activation failure, contact mobile operator** (Die Aktivierung der Mobilfunkverbindung ist fehlgeschlagen, wenden Sie sich an den Mobilfunkanbieter): Möglicherweise ist der Aktivierungscode nicht im Netzwerk aktiviert. Alternativ können auch das Herunterladen des Profils und die Aktivierung der Mobilfunkverbindung fehlschlagen.
 
 ## <a name="next-steps"></a>Nächste Schritte

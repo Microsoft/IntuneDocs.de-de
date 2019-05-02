@@ -1,14 +1,15 @@
 ---
-title: Verwalten von PowerShell-Skripts in Microsoft Intune für Windows 10-Geräte – Azure | Microsoft-Dokumentation
-description: Fügen Sie PowerShell-Skripts hinzu, weisen Sie Azure Active Directory-Gruppen Skriptrichtlinien zu, überwachen Sie Skripts mit Berichten, und erfahren Sie, wie Sie hinzugefügte Skripte auf Windows 10-Geräten in Microsoft Intune löschen. Außerdem finden Sie einige häufige Probleme und Lösungen.
+title: Hinzufügen von PowerShell-Skripts zu Windows 10-Geräten in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Erstellen Sie PowerShell-Skripts, und führen Sie diese aus, weisen Sie der Skriptrichtlinie Azure Active Directory-Gruppen zu, überwachen Sie Skripts mit Berichten, und erfahren Sie, wie Sie hinzugefügte Skripte von Windows 10-Geräten in Microsoft Intune löschen. Außerdem finden Sie einige häufige Probleme und Lösungen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/03/2018
-ms.topic: article
+ms.date: 04/03/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
@@ -16,18 +17,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 573ca3aa10094e61165d297730d556e2ef559767
-ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
+ms.openlocfilehash: 66a23b75913f6465064a988bd8f2ba9c2b4c36d6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56302182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61514119"
 ---
-# <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Verwalten von PowerShell-Skripts in Intune für Windows 10-Geräte
+# <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Verwenden von PowerShell-Skripts auf Windows 10-Geräten in Intune
 
-Verwenden Sie die Verwaltungserweiterung von Intune, um PowerShell-Skripts in Intune für die Ausführung auf Windows 10-Geräten hochzuladen. Die Verwaltungserweiterung verbessert die mobile Geräteverwaltung (Mobile Device Management, MDM) von Windows 10 und erleichtert den Wechsel zu einer modernen Verwaltung.
+Verwenden Sie die Verwaltungserweiterung von Microsoft Intune, um PowerShell-Skripts in Intune für die Ausführung auf Windows 10-Geräten hochzuladen. Die Verwaltungserweiterung verbessert die mobile Geräteverwaltung (Mobile Device Management, MDM) von Windows 10 und erleichtert den Wechsel zu einer modernen Verwaltung.
 
-## <a name="moving-to-modern-management"></a>Wechsel zu moderner Verwaltung
+Diese Funktion gilt für:
+
+- Windows 10 und höher
+
+## <a name="move-to-modern-management"></a>Wechseln zur modernen Verwaltung
 
 Die individuelle Datenverarbeitung durchläuft eine digitale Transformation. Die klassische, traditionelle IT konzentriert sich auf eine einzelne Geräteplattform, unternehmenseigene Geräte, Benutzer, die vom Büro aus arbeiten und eine Vielzahl von manuellen, reaktiven IT-Prozessen. Am modernen Arbeitsplatz werden viele benutzer- und unternehmenseigene Plattformen verwendet. Dadurch können Benutzer von überall aus arbeiten, und automatisierte und proaktive IT-Prozesse werden ermöglicht.
 
@@ -39,25 +44,38 @@ Die Intune-Verwaltungserweiterung ergänzt die integrierten MDM-Features für Wi
 
 Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlich:
 
-- Die Geräte müssen mit Azure AD verknüpft oder registriert sein, und Azure AD muss für die [automatische Registrierung bei Intune](windows-enroll.md#enable-windows-10-automatic-enrollment) konfiguriert sein. Die Intune-Verwaltungserweiterung unterstützt Geräte, die mit Azure AD und hybriden Domänen verknüpft sind, sowie gemeinsam verwaltete registrierte Windows-Geräte.
+- Die Geräte müssen mit Azure AD verknüpft oder für diesen Dienst registriert sowie für die [automatische Registrierung](quickstart-setup-auto-enrollment.md) bei Azure AD und Intune konfiguriert sein. Die Intune-Verwaltungserweiterung unterstützt Geräte, die mit Azure AD und hybriden Azure AD-Domänen verknüpft sind, sowie gemeinsam verwaltete registrierte Windows-Geräte.
 - Geräte müssen Windows 10 Version 1607 oder höher ausführen.
 - Der Agent für die Intune-Verwaltungserweiterung wird installiert, wenn ein PowerShell-Skript oder eine Win32-App an einen Benutzer oder eine Gerätesicherheitsgruppe bereitgestellt wird.
 
-## <a name="create-a-powershell-script-policy"></a>Erstellen einer PowerShell-Skriptrichtlinie 
+## <a name="create-a-script-policy"></a>Erstellen einer Skriptrichtlinie 
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie anschließend **Intune** aus.
 2. Klicken Sie auf **Gerätekonfiguration** > **PowerShell-Skripts** > **Hinzufügen**.
-3. Geben Sie einen **Namen** und eine **Beschreibung** für das PowerShell-Skript ein. Navigieren Sie zum PowerShell-Skript für den **Skriptstandort**. Das Skript darf nicht größer sein als 200 KB.
-4. Wählen Sie **Konfigurieren** aus. Wählen Sie dann aus, ob das Skript mit den Anmeldeinformationen des Benutzers auf dem Gerät (**Ja**) oder im Systemkontext (**Nein**) ausgeführt werden soll. Standardmäßig werden die Skripts im Systemkontext ausgeführt. Wählen Sie **Ja** aus, wenn das Skript nicht im Systemkontext ausgeführt werden muss. 
-  ![Bereich „PowerShell-Skript hinzufügen“](./media/mgmt-extension-add-script.png)
-5. Wählen Sie aus, ob das Skript von einem vertrauenswürdigen Herausgeber signiert werden muss (**Ja**). Standardmäßig muss das Skript nicht signiert werden. 
-6. Klicken Sie auf **OK** und dann auf **Erstellen**, um Ihr Skript zu speichern.
+3. Geben Sie die folgenden Eigenschaften ein:
+    - **Name**: Geben Sie einen Namen für das PowerShell-Skript ein. 
+    - **Beschreibung**: Geben Sie eine Beschreibung für das PowerShell-Skript ein. Diese Einstellung ist optional, wird jedoch empfohlen. 
+    - **Skriptspeicherort:** Wechseln Sie zum PowerShell-Skript. Das Skript muss kleiner als 200 KB (ASCII) sein.
+4. Klicken Sie auf **Konfigurieren**, und geben Sie die folgenden Eigenschaften ein:
+    - **Dieses Skript mit den Anmeldeinformationen des angemeldeten Benutzers ausführen:** Klicken Sie auf **Ja**, um das Skript mit den Anmeldeinformationen des Benutzers auf dem Gerät auszuführen. Klicken Sie auf **Nein** (Standard), um das Skript im Systemkontext auszuführen. Viele Administratoren entscheiden sich für die Option **Ja**. Klicken Sie auf **Nein**, wenn das Skript nicht im Systemkontext ausgeführt werden muss.
+    - **Skriptsignaturprüfung erzwingen:** Klicken Sie auf **Ja**, wenn das Skript von einem vertrauenswürdigen Herausgeber signiert werden muss. Klicken Sie auf **Nein** (Standard), wenn das Skript nicht signiert werden muss. 
+    - **Skript in 64-Bit-Version des PowerShell-Hosts ausführen:** Klicken Sie auf **Ja**, um das Skript in einer 64-Bit-Version des PowerShell-Hosts auf einer 64-Bit-Clientarchitektur auszuführen. Wenn Sie auf **Nein** (Standard) klicken, wird das Skript in einer 32-Bit-Version des PowerShell-Hosts ausgeführt.
 
-## <a name="assign-a-powershell-script-policy"></a>Zuweisen einer PowerShell-Skriptrichtlinie
+      Wenn Sie die Optionen **Ja** oder **Nein** auswählen, verwenden Sie die folgende Tabelle für neues und bereits bestehendes Richtlinienverhalten:
+
+      | Skript in 64-Bit-Version des PowerShell-Hosts ausführen | Clientarchitektur | Neues PowerShell-Skript | Bereits bestehende PowerShell-Richtlinie |
+      | --- | --- | --- | --- | 
+      | Nein | 32 Bit  | 32-Bit-Version des PowerShell-Hosts unterstützt | Wird nur in einer 32-Bit-Version des PowerShell-Hosts ausgeführt, der sowohl auf 32-Bit- als auch auf 64-Bit-Architekturen funktioniert |
+      | Ja | 64-Bit | Wird nur in einer 64-Bit-Version des PowerShell-Hosts für 64-Bit-Architekturen verwendet. Wenn das Skript auf einer 32-Bit-Version ausgeführt wird, passiert dies in einer 32-Bit-Version des PowerShell-Hosts. | Führt das Skript in einer 32-Bit-Version des PowerShell-Hosts aus. Wenn diese Einstellung in „64-Bit“ geändert wird, wird das Skript in einer 64-Bit-Version des PowerShell-Hosts geöffnet (aber nicht ausgeführt) und meldet die Ergebnisse. Wenn das Skript auf einer 32-Bit-Version ausgeführt wird, passiert dies in einer 32-Bit-Version des PowerShell-Hosts. |
+
+    ![Hinzufügen und Verwenden von PowerShell-Skripts in Microsoft Intune](./media/mgmt-extension-add-script.png)
+5. Klicken Sie auf **OK** > **Erstellen**, um das Skript zu speichern.
+
+## <a name="assign-the-policy"></a>Zuweisen der Richtlinie
 
 1. Wählen Sie unter **PowerShell-Skripts** das zuzuweisende Skript aus, und klicken Sie dann auf **Verwalten** > **Zuweisungen**.
 
-    ![Bereich „PowerShell-Skript hinzufügen“](./media/mgmt-extension-assignments.png)
+    ![Zuweisen oder Bereitstellen eines PowerShell-Skripts an/für Gerätegruppen in Microsoft Intune](./media/mgmt-extension-assignments.png)
 
 2. Klicken Sie auf **Gruppen auswählen**, um verfügbare Azure AD-Gruppen aufzulisten. 
 3. Wählen Sie mindestens eine Gruppe aus, die die Benutzer enthält, deren Geräte das Skript erhalten sollen. Klicken Sie auf **Auswählen**, um die Richtlinie den ausgewählten Gruppen zuzuweisen.
@@ -67,9 +85,9 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
 > - PowerShell-Skripts in Intune können auf Azure AD-Gerätesicherheitsgruppen ausgerichtet werden.
 > - PowerShell-Skripts in Intune können auf Azure AD-Benutzersicherheitsgruppen ausgerichtet werden.
 
-Der Intune-Verwaltungserweiterungsclient wird einmal pro Stunde mit Intune abgeglichen. Nachdem Sie die Richtlinie den Azure AD-Gruppen zugewiesen haben, wird das PowerShell-Skript ausgeführt, und die Ausführungsergebnisse werden berichtet.
+Der Intune-Verwaltungserweiterungsclient überprüft Intune einmal pro Stunde und nach jedem Neustart auf neue Skripts oder Änderungen. Nachdem Sie die Richtlinie den Azure AD-Gruppen zugewiesen haben, wird das PowerShell-Skript ausgeführt, und die Ausführungsergebnisse werden berichtet. Das Skript wird nur einmal ausgeführt. Eine erneute Ausführung erfolgt nur, wenn eine Änderung am Skript oder der Richtlinie vorgenommen wird.
 
-## <a name="monitor-run-status-for-powershell-scripts"></a>Überwachen des Ausführungsstatus für PowerShell-Skripts
+## <a name="monitor-run-status"></a>Überwachen des Ausführungsstatus
 
 Sie können den Ausführungsstatus von PowerShell-Skripts für Benutzer und Geräte im Azure-Portal überwachen.
 
@@ -78,13 +96,13 @@ Wählen Sie unter **PowerShell-Skripts** das zu überwachende Skript aus, klicke
 - **Gerätestatus**
 - **Benutzerstatus**
 
-## <a name="troubleshoot-powershell-scripts"></a>Problembehandlung bei PowerShell-Skripts
+## <a name="troubleshoot-scripts"></a>Behandeln von Problemen mit Skripts
 
 Agentprotokolle auf dem Clientcomputer befinden sich in der Regel unter `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Sie können mit [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) diese Protokolldateien anzeigen. 
 
-![Screenshot zu den Agentprotokollen](./media/apps-win32-app-10.png)  
+![Screenshot oder Beispiel-Agent-Protokolle von CMTrace in Microsoft Intune](./media/apps-win32-app-10.png)  
 
-## <a name="delete-a-powershell-script"></a>Löschen eines PowerShell-Skripts
+## <a name="delete-a-script"></a>Löschen eines Skripts
 
 Klicken Sie unter **PowerShell-Skripts** mit der rechten Maustaste auf das Skript, und klicken Sie dann auf **Löschen**.
 
@@ -106,7 +124,7 @@ Die PowerShell-Skripts werden nicht bei jeder Anmeldung ausgeführt. Sie werden 
 
     Das [Aktivieren der automatischen Registrierung von Windows 10](windows-enroll.md#enable-windows-10-automatic-enrollment) umfasst diese Schritte.
 
-#### <a name="issue-the-powershell-scripts-do-not-run"></a>Problem: Die PowerShell-Skripts werden nicht ausgeführt
+#### <a name="issue-powershell-scripts-do-not-run"></a>Problem: PowerShell-Skripts werden nicht ausgeführt
 
 **Mögliche Lösungen:**
 

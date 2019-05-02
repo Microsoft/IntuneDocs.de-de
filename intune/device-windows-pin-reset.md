@@ -6,20 +6,22 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/07/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 36ed7a4dda91cfcc3cc4b97cc9ab8872b0a2c80e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: b53ffbed93195b84544570e6a740fa614e219458
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513514"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Zurücksetzen der Kennung auf Windows-Geräten mit Intune
 
@@ -40,9 +42,9 @@ Die folgenden Plattformen werden **nicht** unterstützt:
 Integrieren Sie den PIN-Zurücksetzungsdienst in Ihren Intune-Mandanten, um die Kennung auf Windows-Geräten zurückzusetzen.
 
 1. Navigieren Sie zum [Microsoft PIN Reset Service production](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent) (Microsoft-PIN-Zurücksetzungsdienst für die Produktion), und melden sich mit dem Mandantenadministratorkonto an.
-2. Klicken Sie auf **Akzeptieren**, um dem PIN-Zurücksetzungsdienst zu erlauben, auf Ihr Konto zuzugreifen: ![Akzeptieren Sie die Berechtigungsanforderung des PIN-Zurücksetzungsdiensts](./media/pin-reset-service-home-screen.png).
+2. Klicken Sie auf **Akzeptieren**, um dem PIN-Zurücksetzungsdienst zu erlauben, auf Ihr Konto zuzugreifen: ![Berechtigungsanforderung zum Zurücksetzen der PIN für den Server akzeptieren](./media/pin-reset-service-home-screen.png)
 3. Navigieren Sie zum [Client des PIN-Zurücksetzungsdiensts von Microsoft](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), und melden sich mit dem Mandantenadministratorkonto an. Klicken Sie auf **Akzeptieren**, um dem PIN-Zurücksetzungsclient zu erlauben, auf Ihr Konto zuzugreifen.
-4. Bestätigen Sie im [Azure-Portal](https://portal.azure.com), dass die PIN-Zurücksetzungsdienste unter „Enterprise applications (All applications)“ (Unternehmensanwendungen (Alle Anwendungen)) aufgelistet sind: ![Berechtigungsseite für den PIN-Zurücksetzungsdienst](./media/pin-reset-service-application.png).
+4. Überprüfen Sie im [Azure-Portal](https://portal.azure.com), ob die PIN-Zurücksetzungsdienste unter „Enterprise applications (All applications)“ (Unternehmensanwendungen (Alle Anwendungen)) aufgelistet sind: ![Berechtigungsseite für den PIN-Zurücksetzungsdienst](./media/pin-reset-service-application.png)
 
 > [!NOTE]
 > Nachdem Sie die Anforderung der PIN-Zurücksetzung akzeptiert haben, wird Ihnen möglicherweise die Meldung `Page not found` angezeigt, oder es scheint, als würde nichts passieren. Dieses Verhalten ist normal. Achten Sie darauf, dass die beiden Anwendungen für Ihren Mandanten aufgelistet sind.

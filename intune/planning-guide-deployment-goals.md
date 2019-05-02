@@ -1,27 +1,29 @@
 ---
 title: Bestimmen der Bereitstellungsziele, sonstigen Ziele und Herausforderungen
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Dieser Artikel hilft Ihnen beim Bestimmen von langfristigen und kurzfristigen Zielen sowie von Herausforderungen bei der Intune-Bereitstellung für eine reine Microsoft Intune-Cloudimplementierung.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cd1fd6198e71dd585d0216c0850c0140f5e71344
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512677"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Bestimmen der Bereitstellungsziele, sonstigen Ziele und Herausforderungen
 
@@ -35,25 +37,25 @@ Bereitstellungsziele sind langfristig angelegt und sollen durch das Bereitstelle
 
     -   **Beschreibung:** Bereitstellen einer engen Integration in Office 365 und Verwendung von Office Mobile-Apps mit App-Schutz.
 
-    -   **Geschäftlicher Nutzen:** Sichere und verbesserte Benutzeroberfläche, da Benutzer Apps verwenden können, die sie kennen und bevorzugen.
+    -   **Geschäftswert:** Sichere und verbesserte Benutzeroberfläche, da Benutzer Apps verwenden können, die sie kennen und bevorzugen.
 
 -   **Aktivieren des Zugriffs auf interne Unternehmensdienste auf mobilen Geräten**
 
     -   **Beschreibung:** Mitarbeitern an jedem beliebigen Ort und mit dem jeweils geeigneten Gerät Produktivität ermöglichen. Dieses Projekt sollte darauf ausgerichtet sein, mobile Produktivität und Zugriff auf Unternehmensdaten auf sichere Weise zu ermöglichen.
 
-    -   **Geschäftlicher Nutzen:** Indem Mitarbeitern die Flexibilität eingeräumt wird, an jedem beliebigen Standort zu arbeiten, ist das Unternehmen konkurrenzfähiger und kann eine interessante Arbeitsumgebung bieten.
+    -   **Geschäftswert:** Indem Mitarbeitern die Flexibilität eingeräumt wird, an jedem beliebigen Standort zu arbeiten, ist das Unternehmen konkurrenzfähiger und kann eine interessante Arbeitsumgebung bieten.
 
 -   **Bereitstellen von Datenschutz auf mobilen Geräten**
 
-    -   **Beschreibung:** Wenn Daten auf einem mobilen Gerät gespeichert sind, müssen sie vor böswilligem und unbeabsichtigtem Datenverlust oder vor Freigabe geschützt werden.
+    -   **Beschreibung:** Wenn Daten auf einem mobilen Gerät gespeichert sind, müssen sie geschützt werden, um Datenverlust oder -freigabe in Folge von Angriffen zu vermeiden.
 
-    -   **Geschäftlicher Nutzen:** Datenschutz ist wichtig, um sicherzustellen, dass wir wettbewerbsfähig bleiben und unsere Kunden und deren Daten mit den größtmöglichen Sorgfalt behandeln.
+    -   **Geschäftswert:** Datenschutz ist wichtig, um sicherzustellen, dass wir wettbewerbsfähig bleiben und unsere Kunden und deren Daten mit der größtmöglichen Sorgfalt behandelt werden.
 
 -   **Kostensenkung**
 
     -   **Beschreibung:** Nach Möglichkeit werden durch das Projekt die Kosten für Bereitstellung und Betrieb verringert.
 
-    -    **Geschäftlicher Nutzen:** Durch die effiziente Verwendung von Ressourcen kann das Unternehmen in andere Bereiche investieren, wirksamer konkurrieren und den Kunden einen besseren Service bieten.
+    -    **Geschäftswert:** Durch die effiziente Verwendung von Ressourcen kann das Unternehmen in andere Bereiche investieren, wirksamer konkurrieren und den Kunden einen besseren Service bieten.
 
 ## <a name="deployment-objectives"></a>Kurzfristige Bereitstellungsziele
 
@@ -61,19 +63,19 @@ Diese Ziele der Bereitstellung sind die Aktionen, mit denen Ihr Unternehmen sein
 
 -   **Verringern der Anzahl von Geräteverwaltungslösungen**
 
-    -   **Umsetzung:** Konsolidieren Sie auf eine einzige Lösung zur Verwaltung mobiler Geräte, nämlich Microsoft Intune, für den Schutz von Unternehmensdaten von Apps und Geräten.
+    -   **Implementierung:** Konsolidieren Sie zu einer einzelnen Verwaltungslösung für mobile Geräte: Microsoft Intune für Unternehmensdatenschutz für Apps und Geräte
 
 -   **Bereitstellen eines sicheren Zugriffs auf Exchange Online und SharePoint Online**
 
-    -   **Umsetzung:** Implementieren Sie den bedingten Zugriff für Exchange Online und SharePoint Online.
+    -   **Implementierung:** Implementieren Sie den bedingten Zugriff für Exchange Online und SharePoint Online.
 
 -   **Verhindern, dass Unternehmensdaten gespeichert oder an unternehmensfremde Dienste auf dem mobilen Gerät weitergeleitet werden**
 
-    -   **Umsetzung:** Implementieren Sie Intune-Richtlinien zum App-Schutz für Microsoft Office- und branchenspezifische Apps.
+    -   **Implementierung:** Implementieren Sie Intune-Richtlinien zum App-Schutz für Microsoft Office- und branchenspezifische Apps.
 
 -   **Bereitstellen der Funktion zum Entfernen von Unternehmensdaten vom Gerät**
 
-    -   **Umsetzung:** Registrieren Sie Geräte bei Intune. Dies bietet Ihnen die Möglichkeit, bei Bedarf eine Remotezurücksetzung von Unternehmensdaten und -ressourcen vorzunehmen.
+    -   **Implementierung:** Registrieren Sie Ihre Geräte bei Intune. Dies bietet Ihnen die Möglichkeit, bei Bedarf eine Remotezurücksetzung von Unternehmensdaten und -ressourcen vorzunehmen.
 
 ## <a name="deployment-challenges"></a>Herausforderungen bei der Bereitstellung
 
@@ -93,4 +95,4 @@ Herausforderungen bei der Bereitstellung sind Aspekte, die bei einer Organisatio
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Sie haben Ihre langfristigen und kurzfristigen Ziele sowie die möglichen Herausforderungen Ihrer Bereitstellung identifiziert. Fahren Sie nun mit dem nächsten Abschnitt fort: [Identifizieren von Anwendungsszenarien](planning-guide-scenarios.md).
+Sie haben Ihre langfristigen und kurzfristigen Ziele sowie die möglichen Herausforderungen Ihrer Bereitstellung identifiziert. Fahren Sie nun mit dem nächsten Abschnitt fort: [Bestimmen von Szenarios für Anwendungsfälle für die Verwaltung von Mobilgeräten](planning-guide-scenarios.md).

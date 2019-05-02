@@ -1,32 +1,33 @@
 ---
-title: Installieren von Office 365-Apps auf Geräten mit Microsoft Intune
-titlesuffix: ''
-description: Erfahren Sie, wie Sie Microsoft Intune verwenden können, um die Installation von Office 365-Apps auf Windows 10-Geräten zu vereinfachen.
+title: Zuweisen von Office 365-Apps an Windows 10-Geräte mit Microsoft Intune
+titleSuffix: ''
+description: Erfahren Sie, wie Sie Microsoft Intune verwenden können, um Office 365-Apps auf Windows 10-Geräten zu installieren.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
-ms.reviewer: aiwang
+ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d3db1449ec583678924fadb0db930146c3cd848
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: c640e3e02d7d016785b87d681443b2c49f7a6281
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507116"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Zuweisen von Office 365-Apps zu Windows 10-Geräten mit Microsoft Intune
 
-Diese App erleichtert Ihnen die Zuweisung von Office 365-Apps zu Geräten, die Sie verwalten und auf denen Windows 10 ausgeführt wird. Sie können auch Apps für den Microsoft Project Online-Desktopclient und Microsoft Visio Pro für Office 365 installieren, wenn Sie über Lizenzen für sie verfügen. Die gewünschten Apps werden in der Intune-Konsole als einzelner Eintrag in der App-Liste angezeigt.
+Bevor Sie Apps zuweisen, überwachen, konfigurieren oder schützen können, müssen Sie sie zu Intune hinzufügen. Zu den verfügbaren [App-Typen](apps-add.md#app-types-in-microsoft-intune) gehören Office 365-Apps für Windows 10-Geräte. Wenn Sie den App-Typ in Intune auswählen, können Sie Office 365-Apps zuweisen und auf Geräten mit Windows 10 installieren. Sie können auch Apps für den Microsoft Project Online-Desktopclient und Microsoft Visio Online Plan 2 zuweisen und installieren, wenn Sie über die entsprechenden Lizenzen verfügen. Die verfügbaren Office 365-Apps werden in Azure in der Intune-Konsole als einzelne Einträge in der App-Liste angezeigt.
 
 > [!NOTE]
 > Sie müssen Office 365 ProPlus-Lizenzen verwenden, um Office 365 ProPlus-Apps zu aktivieren, die über Microsoft Intune bereitgestellt wurden. Die Office 365 Business-Edition wird nicht von Intune unterstützt.
@@ -54,18 +55,25 @@ Diese App erleichtert Ihnen die Zuweisung von Office 365-Apps zu Geräten, die S
 5. Wählen Sie **Hinzufügen** aus.
 6. Wählen Sie im Bereich **Apps hinzufügen** in der Liste **App-Typ** unter **Office 365 Suite** die Option **Windows 10** aus.
 
-Sie können die App-Suite jetzt konfigurieren.
+## <a name="select-settings-format"></a>Auswählen von Einstellungsformaten
 
-## <a name="configure-the-app-suite"></a>Konfigurieren der App-Sammlung
+Sie können eine Methode zum Konfigurieren von App-Einstellungen auswählen, indem Sie auf **Einstellungsformat** klicken. Es stehen die folgenden Einstellungsformate zur Verfügung:
+- Konfigurations-Designer
+- Eingeben von XML-Daten
 
-Wählen Sie die Office-Apps aus, die Sie den Geräten zuweisen möchten.
+Wenn Sie auf **Konfigurations-Designer** klicken, ändert sich das Blatt **App hinzufügen**, und es werden zwei weitere Einstellungsoptionen angezeigt:
+- App-Suite konfigurieren
+- Einstellungen der App-Suite
 
-1. Wählen Sie auf dem Blatt **App hinzufügen** die Option **App-Suite konfigurieren** aus.
-2. Wählen Sie auf dem Blatt **App-Suite konfigurieren** die Office-Standard-Apps aus, die Sie Geräten zuweisen möchten.  
-    Sie können zusätzlich Apps für den Microsoft Project Online-Desktopclient und Microsoft Visio Pro für Office 365 installieren, wenn Sie über Lizenzen für sie verfügen.
-3. Wählen Sie **OK** aus.
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-## <a name="configure-app-information"></a>Konfigurieren von App-Informationen
+Wenn Sie auf **XML-Daten eingeben** klicken, wird das Blatt **App hinzufügen** mit der Option **XML-Daten eingeben** angezeigt. Klicken Sie auf diese Option, um das Blatt **Konfigurationsdatei** anzuzeigen. 
+
+![Konfigurations-Designer für Office 365 hinzufügen](./media/apps-add-office365/apps-add-office365-01.png)
+    
+Weitere Informationen zur Option **XML-Daten eingeben** finden Sie weiter unten im Abschnitt [Eingeben von XML-Daten](apps-add-office365.md#enter-xml-format).
+
+## <a name="configure-app-suite-information"></a>Konfigurieren von Informationen zur App-Suite
 
 In diesem Schritt stellen Sie Informationen über die App-Suite bereit. Diese Informationen helfen Ihnen dabei, die App-Suite in Intune zu identifizieren. Außerdem können Benutzer sie im Unternehmensportal leichter finden.
 
@@ -84,9 +92,18 @@ In diesem Schritt stellen Sie Informationen über die App-Suite bereit. Diese In
     - **Logo**: Das Office 365-Logo wird gemeinsam mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
 3. Wählen Sie **OK** aus.
 
-## <a name="configure-app-settings"></a>App-Einstellungen konfigurieren
+## <a name="configure-app-suite"></a>Konfigurieren der App-Suite
 
-In diesem Schritt konfigurieren Sie Installationsoptionen für die App-Sammlung. Die Einstellungen gelten für alle Apps, die Sie der Suite hinzugefügt haben.
+Wenn Sie im Dropdownfeld **Setting format** (Einstellungsformat) die Option **Konfigurations-Designer** ausgewählt haben, wird die Option **App-Suite konfigurieren** auf dem Blatt **App hinzufügen** angezeigt. Wählen Sie die Office-Apps aus, die Sie den Geräten zuweisen möchten.
+
+1. Wählen Sie auf dem Blatt **App hinzufügen** die Option **App-Suite konfigurieren** aus.
+2. Wählen Sie auf dem Blatt **App-Suite konfigurieren** die Office-Standard-Apps aus, die Sie Geräten zuweisen möchten.  
+    Sie können zusätzlich Apps für den Microsoft Project Online-Desktopclient und Microsoft Visio Online Plan 2 installieren, wenn Sie über die entsprechenden Lizenzen verfügen.
+3. Wählen Sie **OK** aus.
+
+## <a name="configure-app-suite-settings"></a>Konfigurieren der Einstellungen der App-Suite
+
+Wenn Sie im Dropdownfeld **Setting format** (Einstellungsformat) die Option **Konfigurations-Designer** ausgewählt haben, wird die Option **Einstellungen der App-Suite** auf dem Blatt **App hinzufügen** angezeigt. In diesem Schritt konfigurieren Sie Installationsoptionen für die App-Sammlung. Die Einstellungen gelten für alle Apps, die Sie der Suite hinzugefügt haben.
 
 1. Wählen Sie im Bereich **App hinzufügen** die Option **Einstellungen der App-Suite** aus.
 2. Gehen Sie im Bereich **Einstellungen der App-Suite** folgendermaßen vor:
@@ -110,6 +127,10 @@ In diesem Schritt konfigurieren Sie Installationsoptionen für die App-Sammlung.
     - **Aktivierung gemeinsam genutzter Computer verwenden**: Wählen Sie diese Option aus, wenn sich mehrere Benutzer einen Computer teilen. Weitere Informationen finden Sie in der [Übersicht über die Aktivierung gemeinsam genutzter Computer für Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Sprachen**: Office wird automatisch in allen unterstützen Sprachen installiert, die mit Windows auf Endbenutzergeräten installiert wurden. Wählen Sie diese Option, wen Sie zusätzliche Sprachen mit der App-Sammlung installieren möchten. <p></p>
     Sie können zusätzliche Sprachen für Office 365 Pro Plus-Apps bereitstellen, die über Intune verwaltet werden. In der Liste der verfügbaren Sprachpakete ist auch der **Typ** der Sprachpakete angegeben (grundlegende Sprachunterstützung, Sprache teilweise unterstützt und Sprachkorrekturhilfen). Klicken Sie im Azure-Portal auf **Microsoft Intune** > **Client-Apps** > **Apps** > **Hinzufügen**. Wählen Sie auf dem Blatt **App hinzufügen** in der Liste **App-Typ** unter **Office 365 Suite** den Eintrag **Windows 10** aus. Klicken Sie auf dem Blatt **Einstellungen der App-Suite** auf **Sprachen**. Weitere Informationen finden Sie unter [Übersicht über die Bereitstellung von Sprachen in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+
+## <a name="enter-xml-format"></a>Eingeben von XML-Daten
+
+Wenn Sie im Dropdownfeld **Setting format** (Einstellungsformat) die Option **XML-Daten eingeben** ausgewählt haben, wird die Option **Enter XML format** (XML-Format eingeben) auf dem Blatt **App hinzufügen** angezeigt. Weitere Informationen finden Sie unter [Konfigurationsoptionen für das Office-Bereitstellungstool](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
 
 ## <a name="finish-up"></a>Fertig stellen
 

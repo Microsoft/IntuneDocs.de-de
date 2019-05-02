@@ -1,71 +1,85 @@
 ---
 title: Überprüfen von Erfolg oder Fehler bei Sicherheitsbaselines in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Überprüfen Sie Fehler-, Konflikt- und Erfolgsstatus bei der Bereitstellung von Sicherheitsbaselines für Benutzer und Geräte in Microsoft Intune MDM. Erfahren Sie, wie Sie Probleme mithilfe von Clientprotokollen und den Berichtsfunktionen in Intune behandeln.
+description: Überprüfen Sie Fehler-, Konflikt- und Erfolgsstatus bei der Bereitstellung von Sicherheitsbaselines für Benutzer und Geräte bei der Verwaltung mobiler Geräte für Microsoft Intune. Erfahren Sie, wie Sie Probleme mithilfe von Clientprotokollen und den Berichtsfunktionen in Intune behandeln.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 04/19/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b853d42efc247f6080cc4ed6ad8b4943b85b3215
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506985"
 ---
-# <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Überwachen von Sicherheitsbaseline und Profil in Microsoft Intune
+# <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Überwachen der Sicherheitsbaseline und von Profilen in Microsoft Intune  
 
-Bei der Verwendung von Sicherheitsbaselines stehen verschiedene Optionen für die Überwachung zur Verfügung. Sie können das Sicherheitsbaselineprofil überwachen, das für Ihre Benutzer und Geräte gilt. Sie können auch die tatsächliche Baseline überwachen, und alle Geräte, die den empfohlenen Werten entsprechen (oder nicht).
+Intune umfasst mehrere Optionen zum Überwachen Ihrer Sicherheitsbaselines. Sie können das Sicherheitsbaselineprofil überwachen, das für Ihre Benutzer und Geräte gilt. Sie können auch die tatsächliche Baseline überwachen, und alle Geräte, die den empfohlenen Werten entsprechen (oder nicht).
 
 Dieser Artikel führt Sie durch beide Überwachungsoptionen.
 
 Im Artikel [Erstellen einer Windows 10-Sicherheitsbaseline in Intune](security-baselines.md) finden Sie weitere Details zum Sicherheitsbaselinefeature in Microsoft Intune.
 
-## <a name="monitor-the-baseline-and-your-devices"></a>Überwachen der Baseline und Ihrer Geräte
+## <a name="monitor-the-baseline-and-your-devices"></a>Überwachen der Baseline und Ihrer Geräte  
 
-Wenn Sie die Baseline überwachen, erhalten Sie basierend auf den Empfehlungen von Microsoft Einblicke in den Sicherheitsstatus Ihrer Geräte.
+Wenn Sie eine Baseline überwachen, erhalten Sie basierend auf den Empfehlungen von Microsoft Einblicke in den Sicherheitsstatus Ihrer Geräte. Diese können Sie im Bereich „Übersicht“ der Sicherheitsbaseline in der Intune-Konsole abrufen.  Im Anschluss an die Zuweisung einer Baseline dauert es 24 Stunden, bis die Daten angezeigt werden. Änderungen, die danach vorgenommen werden, werden innerhalb von sechs Stunden angezeigt.  
 
-> [!NOTE]
-> Nach der Zuweisung einer Baseline kann es bis zu 24 Stunden dauern, bis Berichte aktualisiert werden. Anschließend kann es bis zur Aktualisierung 6 Stunden dauern.
+Melden Sie sich beim [Intune-Portal](https://aka.ms/intuneportal) an, um Überwachungsdaten für die Baseline und die Geräte anzuzeigen. Klicken Sie als Nächstes auf **Sicherheitsbaselines (Vorschau)**, wählen Sie eine Baseline aus, und rufen Sie den Bereich **Übersicht** ab.
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com/) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie anschließend **Intune** aus.
-2. Wählen Sie **Sicherheitsbaselines (Vorschau)** und dann eine Baseline aus.
-3. Das Diagramm in **Übersicht** zeigt, wie viele Geräte von der Baseline betroffen sind, die Sie ausgewählt haben, sowie die verschiedenen Status:
+Der Bereich **Übersicht** umfasst zwei Methoden zum Überwachen von Statusangaben:
+- **Geräteansicht:** eine Zusammenfassung der Anzahl der Geräte, die sich in den einzelnen Statuskategorien der Baseline befinden  
+- **Per-category** (Kategoriebasierte Ansicht): Ansicht der einzelnen Kategorien in der Baseline, auf der auch der Anteil der Geräte (in Prozent) für die einzelnen Statusgruppen der Baselinekategorien angegeben sind 
 
-    ![Überprüfen des Status der Geräte](./media/security-baselines-monitor/overview.png)
+Jedem Gerät ist eine der folgenden Statusangaben zugewiesen, die sowohl in der *Geräteansicht* als auch in den einzelnen *kategoriebasierten* Ansichten angegeben werden:  
+- **Matches baseline** (Übereinstimmung mit Baseline): alle Einstellungen in der Baseline stimmen mit den empfohlenen Einstellungen überein
+- **Does not match baseline** (Keine Übereinstimmung mit Baseline): mindestens eine Einstellung in der Baseline entspricht nicht den empfohlenen Einstellungen
+- **Falsch konfiguriert:** mindestens eine Einstellung wurde nicht ordnungsgemäß konfiguriert Dieser Status bedeutet, dass die Einstellung sich in einem Konflikt-, Fehler- oder ausstehenden Status befindet.
+- **Not applicable** (Nicht verfügbar): mindestens eine Einstellung ist nicht verfügbar und wird nicht angewendet
 
-    Die folgenden Status sind verfügbar:
 
-    - **Entspricht Baseline**: Alle Einstellungen in der Baseline stimmen mit den empfohlenen Einstellungen überein.
-    - **Entspricht nicht Baseline**: Mindestens eine Einstellung in der Basislinie entspricht nicht den empfohlenen Einstellungen.
-    - **Falsch konfiguriert**: Mindestens eine Einstellung wurde nicht ordnungsgemäß konfiguriert. Dieser Status bedeutet, dass die Einstellung sich in einem Konflikt-, Fehler- oder ausstehenden Status befindet.
-    - **Nicht zutreffend**: Mindestens eine Einstellung ist nicht zutreffend und wird nicht angewendet.
+### <a name="device-view"></a>Geräteansicht
+Der Bereich „Übersicht“ umfasst eine diagrammbasierte Zusammenfassung der Anzahl der Geräte mit einem bestimmten Baselinestatus; **Status der Sicherheitsbaseline für zugewiesene Windows 10-Geräte**.  
 
-4. Wählen Sie einen Status aus, dem Geräte zugeordnet sind. Wählen Sie z.B. den Status **Falsch konfiguriert** aus.
+![Überprüfen des Status der Geräte](./media/security-baselines-monitor/overview.png)
 
-5. Eine Liste aller Geräte mit diesem Status wird angezeigt. Wählen Sie ein bestimmtes Gerät aus, um weitere Details anzuzeigen. 
+Wenn ein Gerät verschiedene Statusangaben aus unterschiedlichen Baselinekategorien aufweist, wird dem Gerät ein einzelner Status zugewiesen. Dieser Status wird entsprechend der folgenden Reihenfolge bestimmt: **Falsch konfiguriert**, **Does not match baseline** (Keine Übereinstimmung mit Baseline), **Not applicable** (Nicht verfügbar), **Matches baseline** (Übereinstimmung mit Baseline).  
 
-    Wählen Sie im folgenden Beispiel **Gerätekonfiguration** und dann das Profil mit einem Fehlerstatus aus:
+Wenn also für ein Gerät einmal die Einstellung *Falsch konfiguriert* und einmal (oder mehrmals) die Einstellung *Does not match baseline* (Keine Übereinstimmung mit Baseline) festgelegt ist, wird dem Gerät der Status *Falsch konfiguriert* zugewiesen.  
 
-    ![Überprüfen des Status der Geräte](./media/security-baselines-monitor/device-configuration-profile-list.png)
+Sie können auf das Diagramm klicken, um einen Drillthrough auszuführen und eine Liste der Geräte mit den verschiedenen Statusangaben anzuzeigen. Anschließen können Sie einzelne Geräte aus der Liste auswählen, um Details zu diesen abzurufen. Beispiel:
+- Klicken Sie auf **Gerätekonfiguration**, und wählen Sie dann das Profil mit einem Fehlerstatus aus:
 
-    Wählen Sie das „Fehler“-Profil aus. Eine Liste aller Einstellungen im Profil und deren Status werden angezeigt. Jetzt können Sie scrollen, um die Einstellung zu finden, die den Fehler verursacht:
+  ![Überprüfen des Status der Geräte](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
-    ![Anzeigen der Einstellung, die den Fehler verursacht hat](./media/security-baselines-monitor/profile-with-error-status.png)
+- Wählen Sie das „Fehler“-Profil aus. Eine Liste aller Einstellungen im Profil und deren Status werden angezeigt. Jetzt können Sie scrollen, um die Einstellung zu finden, die den Fehler verursacht:
+
+  ![Anzeigen der Einstellung, die den Fehler verursacht hat](./media/security-baselines-monitor/profile-with-error-status.png)
 
 Verwenden Sie diese Berichterstellung, um alle Einstellungen in einem Profil anzuzeigen, die ein Problem verursachen. Außerdem erhalten Sie weitere Informationen zu Richtlinien und Profilen, die auf den Geräten bereitgestellt werden.
 
 > [!NOTE]
 > Wenn eine Eigenschaft in der Baseline auf **Nicht konfiguriert** festgelegt ist, wird die Einstellung ignoriert, und keine Einschränkungen werden erzwungen. Die Eigenschaft wird nicht in Berichten angezeigt.
+
+### <a name="per-category-view"></a>Kategorieansichten
+Der Bereich „Übersicht“ umfasst ein kategoriebasiertes Diagramm für die Baseline; **Kategoriebasierter Status der Sicherheitsbaseline**.  Diese Ansicht enthält die einzelnen Baselinekategorien und den Anteil der Geräte (in Prozent), die diesen Kategorien zugeordnet werden können. 
+ 
+![Kategoriebasierte Statusansicht](./media/security-baselines-monitor/monitor-baseline-per-category.png)
+
+Der Status für **Matches baseline** (Übereinstimmung mit Baseline) wird erst angezeigt, wenn 100 % der Geräte diesen Kategoriestatus aufweisen.   
+
+Sie können die Ansicht für die einzelnen Kategorien nach Spalten sortieren, indem Sie im oberen Bereich der Spalte auf die Pfeile nach unten bzw. nach oben klicken.  
+
 
 ## <a name="monitor-the-profile"></a>Überwachen des Profils
 

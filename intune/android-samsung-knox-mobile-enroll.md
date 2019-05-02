@@ -1,27 +1,29 @@
 ---
 title: Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment (KME)
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Informationen zum Registrieren von Android-Geräten mit Samsung KME
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: ''
 ms.date: 12/06/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 47627bc9f223c301fd04b88c0080b3a6fea26fe8
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3f753b959d7b2c64358abd92f4276a8e7f55c0f6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504005"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment
 
@@ -62,13 +64,13 @@ Wenn Ihr Unternehmen erfolgreich registriert wurde, können Sie Ihr MDM-Profil f
 | MDM-Profilfelder| Erforderlich? | Werte | 
 |-------------------|-----------|-------| 
 |MDM Server URI     | Nein        |Lassen Sie dieses Feld leer. 
-|Profilname       | Ja        |Geben Sie einen Profilnamen Ihrer Wahl ein. 
+|Profilname       | Ja       |Geben Sie einen Profilnamen Ihrer Wahl ein. 
 |Beschreibung        | Nein        |Geben Sie Text ein, der das Profil beschreibt. 
-|MDM Agent APK      | Ja        |https://aka.ms/intune_kme_deviceowner 
-|Diese App als Google-Geräteinhaber aktivieren | Ja  | Aktivieren Sie diese Option, um die Registrierung für Android Enterprise durchzuführen. 
-|Unterstützte MDM      | Ja        |Microsoft Intune 
+|MDM Agent APK      | Ja       |https://aka.ms/intune_kme_deviceowner 
+|Diese App als Google-Geräteinhaber aktivieren | Ja | Aktivieren Sie diese Option, um die Registrierung für Android Enterprise durchzuführen. 
+|Unterstützte MDM      | Ja       |Microsoft Intune 
 |Alle System-Apps aktiviert lassen | Nein | Aktivieren Sie diese Option, um sicherzustellen, dass alle Apps für das Profil aktiviert und verfügbar sind. Wenn diese Option nicht aktiviert ist, wird nur eine sehr eingeschränkte Anzahl von System-Apps in der App-Liste des Geräts angezeigt. Apps wie die E-Mail-App werden ausgeblendet. 
-|Benutzerdefinierte JSON        | Nein        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Geben Sie die Zeichenfolge des Intune-Registrierungstokens ein"}. Erfahren Sie, [wie Sie ein Registrierungsprofil erstellen](android-kiosk-enroll.md). 
+|Custom JSON        | Nein        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Geben Sie die Zeichenfolge des Intune-Registrierungstokens ein"}. Erfahren Sie, [wie Sie ein Registrierungsprofil erstellen](android-kiosk-enroll.md). 
 | Lizenzvereinbarungen hinzufügen | Nein | Lassen Sie dieses Feld leer. 
 
 ### <a name="for-android"></a>Für Android
@@ -78,9 +80,9 @@ Schritt-für-Schritt-Anleitungen können Sie dem [Samsung Knox-Assistenten für 
 | MDM-Profilfelder| Erforderlich? | Werte |
 |-------------------|-----------|-------|
 |MDM Server URI     | Nein        |Lassen Sie dieses Feld leer.
-|Profilname       | Ja        |Geben Sie einen Profilnamen Ihrer Wahl ein.
+|Profilname       | Ja       |Geben Sie einen Profilnamen Ihrer Wahl ein.
 |description        | Nein        |Geben Sie Text ein, der das Profil beschreibt.
-|MDM Agent APK      | Ja        |https://aka.ms/intune_kme
+|MDM Agent APK      | Ja       |https://aka.ms/intune_kme
 |Diese App als Google-Geräteinhaber aktivieren | Nein | Lassen Sie diese Option für Android deaktiviert. Dies gilt ausschließlich für Android Enterprise.
 |Skip Setup wizard  | Nein        |Wählen Sie diese Option aus, um die Eingabeaufforderungen für die Standardgeräteeinrichtung im Namen des Endbenutzers zu überspringen.
 |Allow End User to Cancel Enrollment | Nein | Wählen Sie diese Option aus, um Benutzern zu erlauben, KME abzubrechen.

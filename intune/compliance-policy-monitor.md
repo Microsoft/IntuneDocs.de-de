@@ -6,19 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 12/19/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fd401875e1a98690d9673243b28b48347e4c6183
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508994"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
@@ -163,8 +165,8 @@ Dieses Feature ist im Gerätestatusbericht enthalten:
     - Erfolgreich: Die Richtlinie wurde angewendet.
     - Fehler: Die Richtlinie kann nicht angewendet werden. Diese Meldung wird in der Regel mit einem Fehlercode angezeigt, der auf eine Erklärung verweist. 
     - Konflikt: Zwei Einstellungen werden auf dasselbe Gerät angewendet, und Intune kann den Konflikt nicht lösen. Ein Administrator sollte das überprüfen.
-    - Pending: Das Gerät hat sich noch nicht bei Intune eingecheckt, damit die Richtlinie angewendet werden kann. 
-    - Nicht zutreffend: Die Richtlinie kann nicht auf das Gerät angewendet werden. Beispielsweise aktualisiert die Richtlinie eine Einstellung für iOS 11.1, das Gerät verwendet jedoch iOS 10. 
+    - Ausstehend: Das Gerät hat sich noch nicht bei Intune eingecheckt, damit die Richtlinie angewendet werden kann. 
+    - Nicht anwendbar: Die Richtlinie kann nicht auf das Gerät angewendet werden. Beispielsweise aktualisiert die Richtlinie eine Einstellung für iOS 11.1, das Gerät verwendet jedoch iOS 10. 
 
 3. Um die Details auf dem Gerät mithilfe der Richtlinie anzuzeigen, wählen Sie einen Status aus, z.B. **Succeeded** (erfolgreich). Im nächsten Fenster werden die spezifischen Gerätedetails, einschließlich des Gerätenamens und des Bereitstellungsstatus, aufgeführt.
 

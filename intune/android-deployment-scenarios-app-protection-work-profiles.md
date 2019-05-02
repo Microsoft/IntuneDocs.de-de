@@ -9,17 +9,18 @@ ms.date: 02/13/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6fd12432d07d1486e0943f88c0cf8b4536e651bc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: cbd3b13215a58a831a15884bfe451f00a35ba379
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490194"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Anwendungsschutzrichtlinien und Arbeitsprofile für Android Enterprise-Geräte in Intune
 
@@ -50,7 +51,7 @@ Einzelne Android-Apps werden auf verschiedene Weise für APP aktiviert:
 
     Zur Unterstützung beinhaltet Intune das **App Wrapping Tool** für vorhandene Android-Anwendungen (APK-Dateien) und erstellt eine App, die APP-Richtlinien erkennt.
 
-    Weitere Informationen zu diesem Tool finden Sie unter [Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien](apps-prepare-mobile-application-management.md).
+    Weitere Informationen zu diesem Tool finden Sie unter [Prepare line-of-business apps for app protection policies (Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien)](apps-prepare-mobile-application-management.md).
 
 Eine Liste der mit APP aktivierten Anwendungen finden Sie unter [Verwaltete Anwendungen mit einer umfangreichen Sammlung von Schutzrichtlinien für mobile Anwendungen](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 

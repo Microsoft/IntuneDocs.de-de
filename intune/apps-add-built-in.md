@@ -1,27 +1,29 @@
 ---
 title: Hinzufügen von integrierten Apps zu mobilen Geräten mit Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Erfahren Sie, wie Sie Intune verwenden können, um integrierte Apps einfacher auf mobilen Geräten installieren zu können.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e3bb60d3d6bd7321ea3e378c747e87481b659888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5f46cd1295c9ecf593765cf26f4c8685eccbffa0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506830"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Hinzufügen von integrierten Apps zu Microsoft Intune
 
@@ -55,16 +57,16 @@ Sie können die Informationen zu der integrierten App ändern. Diese Information
 3. Um die Informationen zu der integrierten App zu ändern, wählen Sie die Option **Konfigurieren** aus.
 4. Im Bereich **App-Informationen** können Sie die folgenden Informationen ändern:
     - **Name**: Geben Sie den Namen der integrierten App ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle Namen eindeutig sind. Wenn ein App-Name zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
-    - **Beschreibung:** Geben Sie eine Beschreibung für die App ein. 
+    - **Beschreibung**: Geben Sie eine Beschreibung der App ein. 
     - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein.
     - **Kategorie**: Wählen Sie optional mindestens eine der Kategorien für integrierte Apps aus. Die Einstellung dieser Option erleichtert Benutzern, die App im Unternehmensportal zu finden.
-    - **Diese App als ausgewählte App im Unternehmensportal anzeigen**: Zeigen Sie die App auf der Hauptseite des Unternehmensportals hervorgehoben an, wenn Benutzer nach Apps suchen.
+    - **Diese App als ausgewählte App im Unternehmensportal anzeigen:** Präsentieren Sie die App herausgehoben auf der Hauptseite des Unternehmensportals, wenn die Benutzer nach Apps suchen.
     - **Informations-URL**: Geben Sie optional eine URL zu einer Website ein, die Informationen über diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
     - **URL zu den Datenschutzbestimmungen**: Geben Sie optional eine URL zu einer Website ein, die Datenschutzinformationen für diese App enthält. Diese URL wird Benutzern im Unternehmensportal angezeigt.
     - **Entwickler**: Geben Sie optional den Namen des App-Entwicklers ein.
-    - **Besitzer**: Geben Sie optional einen Namen für den Besitzer dieser App ein (z.B. *Personalabteilung*).
+    - **Besitzer**: Geben Sie optional einen Namen für den Besitzer dieser App ein, (z. B. *Personalabteilung*).
     - **Anmerkungen**: Geben Sie Hinweise zu dieser App ein.
-    - **Symbol hochladen**: Laden Sie ein Symbol hoch, das gemeinsam mit der App angezeigt wird, wenn die Benutzer das Unternehmensportal durchsuchen.
+    - **Symbol hochladen:** Laden Sie ein Symbol hoch, das mit der App angezeigt wird, wenn Benutzer das Unternehmensportal durchsuchen.
 4. Wählen Sie **OK** aus.
 5. Wählen Sie im Bereich **Eigenschaften** die Option **Speichern**.
 

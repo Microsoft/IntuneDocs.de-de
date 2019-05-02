@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/01/2019
+ms.date: 03/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 180a4cad27082105aa41c2bd79e6f9c05a65d162
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 5b2a5e2bbd6d06cc4ec0cf71ee815229b01040a8
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490686"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Erstellen einer Windows 10-Sicherheitsbaseline in Intune
 
@@ -46,6 +47,10 @@ Nach der Zuweisung des Profils können Sie das Profil und die Baseline überwach
 Dieser Artikel veranschaulicht die Verwendung der Sicherheitsbaselines zum Erstellen eines Profils, Zuweisen und Überwachen des Profils.
 
 Der Artikel [Windows-Sicherheitsgrundsätze](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) ist eine hervorragende Ressource, um mehr über dieses Feature zu erfahren. Der Artikel [Mobile Geräteverwaltung](https://docs.microsoft.com/windows/client-management/mdm/) (Mobile Device Management, MDM) ist eine hervorragende Ressource zu MDM und den Möglichkeiten, die Ihnen Windows-Geräte bieten.
+
+## <a name="prerequisites"></a>Voraussetzungen
+Wenn Sie Baselines in Intune verwalten möchten, muss Ihr Konto über die integrierte Rolle [Policy and Profile Manger](role-based-access-control.md#built-in-roles) (Richtlinien- und Profilmanager) verfügen.
+
 
 ## <a name="co-managed-devices"></a>Gemeinsam verwaltete Geräte
 

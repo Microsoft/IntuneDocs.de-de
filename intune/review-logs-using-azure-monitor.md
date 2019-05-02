@@ -5,26 +5,27 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2019
-ms.topic: article
+ms.date: 03/18/2019
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4f93ab1cd2c662cb97dafd19684b353268087f6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: fb33a1207e165323de2e82467c7a0dd5239d9713
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507379"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Senden von Daten an den Speicher, an Event Hubs oder Log Analytics in Intune (Vorschauversion)
 
-Microsoft Intune umfasst integrierte Protokolle, die Informationen zu Ihrer Umgebung bereitstellen. **Überwachungsprotokolle** zeigen Details zu verschiedenen Ereignissen oder Task an, die in Intune auftreten. **Betriebsprotokolle (Vorschau)** zeigen Details für Benutzer und Geräte an, die sich erfolgreich (oder erfolglos) registriert haben.
+Microsoft Intune umfasst integrierte Protokolle, die Informationen zu Ihrer Umgebung bereitstellen. **Überwachungsprotokolle** zeigen Details zu verschiedenen Ereignissen oder Task an, die in Intune auftreten. **Betriebsprotokolle (Vorschau)** zeigen Details für Benutzer und Geräte an, die sich erfolgreich (oder erfolglos) registriert haben, sowie Informationen zu nicht-konformen Geräten.
 
 Die Protokolle können an Azure Monitor-Dienste gesendet werden, einschließlich Speicherkonten, Event Hubs und Log Analytics. Insbesondere bestehen die folgenden Möglichkeiten:
 
@@ -33,7 +34,7 @@ Die Protokolle können an Azure Monitor-Dienste gesendet werden, einschließlich
 * Integrieren Sie Intune-Protokolle in Ihre eigene benutzerdefinierte Protokolllösungen, indem sie an einen Event Hub streamen.
 * Senden Sie Intune-Protokolle an Log Analytics, um ansprechende Visualisierungen, die Überwachung und Warnungen für die verbundenen Daten zu aktivieren.
 
-Diese Funktionen sind Teil der **Diagnoseeinstellungen** in Intune. 
+Diese Funktionen sind Teil der **Diagnoseeinstellungen** in Intune.
 
 Dieser Artikel zeigt Ihnen, wie Sie **Diagnoseeinstellungen** verwenden können, um Protokolldaten an verschiedene Dienste zu senden, und er enthält Beispiele und Kostenschätzungen und beantwortet einige häufige Fragen.
 
@@ -82,7 +83,7 @@ Je nachdem, wohin Sie die Überwachungsprotokolldaten weiterleiten möchten, ben
 
       Wenn Sie sich für ein Speicherkonto entscheiden, geben Sie auch an, wie viele Tage Sie die Daten aufbewahren möchten (Vermerkdauer). Um Daten für immer zu behalten, setzen Sie **Vermerkdauer (Tage)**  auf `0` (Null) fest.
 
-    - **LOG** > **OperationalLogs**: Betriebsprotokolle (Vorschau) zeigen den Erfolg oder Misserfolg von Benutzern und Geräten an, die in Intune registriert werden. Wählen Sie diese Option, um die Registrierungsprotokolle an Ihr Speicherkonto, Ihren Event Hub oder Log Analytics zu senden.
+    - **LOG** > **OperationalLogs**: Betriebsprotokolle (Vorschau) zeigen den Erfolg oder Misserfolg von Benutzern und Geräten an, die in Intune registriert werden, sowie Informationen zu nicht-konformen Geräten. Wählen Sie diese Option, um die Registrierungsprotokolle an Ihr Speicherkonto, Ihren Event Hub oder Log Analytics zu senden.
 
       Wenn Sie sich für ein Speicherkonto entscheiden, geben Sie auch an, wie viele Tage Sie die Daten aufbewahren möchten (Vermerkdauer). Um Daten für immer zu behalten, setzen Sie **Vermerkdauer (Tage)**  auf `0` (Null) fest.
 
@@ -94,6 +95,19 @@ Je nachdem, wohin Sie die Überwachungsprotokolldaten weiterleiten möchten, ben
     ![Beispielbild, bei dem Intune-Überwachungsprotokolle an ein Azure-Speicherkonto gesendet werden](media/diagnostics-settings-example.png)
 
 4. **Speichern** Sie die Änderungen. Ihre Einstellung wird in der Liste angezeigt. Nach der Erstellung können Sie die Einstellungen ändern. Gehen Sie dazu zu **Einstellung bearbeiten** > **Speichern**.
+
+## <a name="use-audit-logs-throughout-intune"></a>Verwenden von Überwachungsprotokollen in allen Bereichen von Intune
+
+Sie können die Überwachungsprotokolle auch in andere Bereiche von Intune exportieren. Dazu gehören u. a. Registrierung, Konformität, Konfiguration, Geräte und Client-Apps.
+
+So exportieren Sie beispielsweise die Überwachungsprotokolle bei Verwendung von Gerätekonformität:
+
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com/) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie anschließend **Intune** aus.
+2. Wählen Sie **Gerätekonformität** > **Überwachung** > **Überwachungsprotokolle** aus:
+
+    ![Screenshot: Auswählen der Überwachungsprotokolle, um Intune-Daten an Azure Monitor-Speicher, -Event Hubs oder Analytics zu senden](media/audit-logs-under-monitor-in-compliance.png)
+
+3. Wählen Sie **Einstellungen für das Exportieren von Daten** aus. Wenn die **Diagnoseeinstellungen** nicht aktiviert sind, aktivieren Sie sie. Sie können auch auswählen, wohin die Protokolle gesendet werden sollen. Dies ist in diesem Artikel unter [Senden von Protokollen an Azure Monitor](#send-logs-to-azure-monitor) beschrieben.
 
 ## <a name="cost-considerations"></a>Überlegungen zu Kosten
 

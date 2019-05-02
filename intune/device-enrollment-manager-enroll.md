@@ -1,6 +1,6 @@
 ---
 title: Registrieren von Geräten mithilfe eines Geräteregistrierungs-Manager-Kontos
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Verwenden Sie das Konto „Geräteregistrierungs-Manager“, um Geräte in Intune zu registrieren.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 02/22/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a12d162b9877bbbc73ecbcc7bb2ed2f1e0095b9e
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 6bb3289bf2136506903d1fefe6c5170580a6fc11
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509801"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Registrieren von Geräten in Intune mithilfe eines Geräteregistrierungs-Manager-Kontos
 
@@ -32,12 +33,14 @@ Sie können bis zu 1.000 mobile Geräte mit einem einzigen Azure Active Director
 
 DEM-Benutzerkonten und Geräte, die mit einem DEM-Benutzerkonto registriert werden, unterliegen den folgenden Einschränkungen:
 
+  - Einem DEM-Kontobenutzer muss eine Intune-Lizenz zugewiesen werden.
   - Die Zurücksetzung kann nicht über das Unternehmensportal erfolgen. Die Zurücksetzung eines Geräts, das über ein DEM-Benutzerkonto registriert wurde, kann über Intune im Azure-Portal erfolgen.
   - Nur das lokale Gerät erscheint in der Unternehmensportal-App oder -Website.
   - DEM-Benutzerkonten können Apps aus dem Apple Volume Purchase Program (VPP) nicht mit Apple VPP-Benutzerlizenzen verwenden, weil benutzerspezifische Apple-IDs für die Verwaltung dieser Apps erforderlich sind.
   - Geräte können VPP-Apps installieren, wenn sie über Apple VPP-Gerätelizenzen verfügen.
   - Geräte werden für den bedingten Zugriff mit Ausnahme von Windows 10-Version 1803 und höher blockiert.
-  - Jedes mit deinem DEM-Konto registrierte Gerät benötigt seine eigene Intune-Gerätelizenz.
+  - Jedes Gerät, das bei DEM-Konten registriert ist, muss für die Verwaltung durch Intune korrekt lizenziert sein. Bei der Lizenz kann es sich um eine Intune-Benutzerlizenz oder um eine Intune-Gerätelizenz handeln.
+
 
 
 ## <a name="add-a-device-enrollment-manager"></a>Hinzufügen eines Geräteregistrierungs-Managers

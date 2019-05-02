@@ -1,15 +1,16 @@
 ---
 title: Erstellen Ihres Microsoft Intune-Entwurfs
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Dieser Artikel unterstützt Sie beim Erstellen eines Entwurfs für einen Microsoft Intune-Cloudentwurf und seine Implementierung.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22af3d4de296d90a89bb3d812cab0e55983e786b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 307895935e1cd6fe2489a4ee8ae03333ce97d55b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512703"
 ---
 # <a name="create-a-design"></a>Erstellen eines Entwurfs
 
@@ -110,6 +111,10 @@ Sie können eine [Vorlage der oben stehenden Tabelle herunterladen](https://gall
 
 Intune bietet zwei Bereitstellungsoptionen: eigenständig und hybrid. Eigenständig bezieht sich darauf, dass der Intune-Dienst in der Cloud ausgeführt wird. Hybrid bezieht sich auf die Integration von Intune in System Center Configuration Manager. Dieses Handbuch ist in erster Linie auf die Verwendung der eigenständigen Option ausgerichtet. [Entscheiden Sie, welche Option Ihren geschäftlichen Anforderungen am meisten entspricht.](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)
 
+> [!Important]
+>Das Onboarding neuer MDM-Kunden (hybrid) ist veraltet. Weitere Informationen finden Sie im Blogbeitrag [Move from Hybrid Mobile Device Management to Intune on Azure (Wechsel von der hybriden Verwaltung mobiler Geräte zu Intune unter Azure)](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
+
+
 ## <a name="intune-tenant-location"></a>Standort des Intune-Mandanten
 
 Wenn Ihre Organisation weltweit tätig ist, berücksichtigen Sie bei der Planung den Standort Ihres Mandanten, wenn den Dienst abonnieren. Das Land wird definiert, wenn Sie sich erstmals für ein Intune-Abonnement registrieren. Anschließend erfolgt die Zuordnung zu Regionen rund um die Welt, die unten aufgeführt sind:
@@ -133,7 +138,7 @@ Externe Abhängigkeiten sind Dienste und Produkte, die separat von Intune ausgef
 
 -   Public Key-Infrastruktur (PKI)
 
-Betrachten wir diese gängigen externen Abhängigkeiten unten im Detail.
+Im Folgenden betrachten wir diese gängigen externen Abhängigkeiten im Detail.
 
 ### <a name="identity"></a>Identität
 
@@ -399,11 +404,9 @@ Es folgt ein Beispiel zum Entwerfen einer Konformitätsrichtlinie:
 Sie können eine [Vorlage der oben stehenden Tabelle herunterladen](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), um die Anforderungen an Ihre Konformitätsrichtlinien zu ermitteln.
 #### <a name="conditional-access-policies"></a>Bedingte Zugriffsrichtlinien
 
-Bedingter Zugriff wird verwendet, um nur konformen Geräten den Zugriff auf E-Mails und andere Unternehmensressourcen zu erlauben. Intune kann mit EMS (Enterprise Mobility + Security) zum Steuern des Zugriffs auf Unternehmensressourcen eingesetzt werden. Sie müssen entscheiden, ob der bedingte Zugriff erforderlich ist und was gesichert werden muss. Weitere Informationen zum [bedingten Zugriff](conditional-access.md).
+Bedingter Zugriff wird verwendet, um nur konformen Geräten den Zugriff auf E-Mails und andere Unternehmensressourcen zu erlauben. Intune kann mit EMS (Enterprise Mobility + Security) zum Steuern des Zugriffs auf Unternehmensressourcen eingesetzt werden. Entscheiden Sie, ob der bedingte Zugriff erforderlich ist und was gesichert werden muss. Weitere Informationen zum [bedingten Zugriff](conditional-access.md).
 
-Entscheiden Sie hinsichtlich des Onlinezugriffs für welche Plattformen und Benutzergruppen die Richtlinien für bedingten Zugriff vorgesehen sind. Darüber hinaus entscheiden Sie, ob Sie den dienstübergreifenden Intune-Connector für Exchange Online oder Exchange lokal installieren/konfigurieren müssen. Weitere Informationen zum Installieren und Konfigurieren von dienstübergreifenden Intune-Connectors: <!---these links are correct--->
-
--   [Exchange Online](exchange-service-connector-configure.md)
+Entscheiden Sie hinsichtlich des Onlinezugriffs für welche Plattformen und Benutzergruppen die Richtlinien für bedingten Zugriff vorgesehen sind. Darüber hinaus entscheiden Sie, ob Sie den Intune-Connector für Exchange lokal installieren oder konfigurieren müssen. 
 
 -   [Exchange lokal](exchange-connector-install.md)
 

@@ -5,10 +5,11 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ROBOTS: NOINDEX,NOFOLLOW
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b5308eb1f9d83bcc9b9cbc29cac9bcf09356e77
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 293fa40b59d0005f60aad45a3fc42d3dd790857d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510145"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Verwaltungsfunktionen für registrierte Geräte in Microsoft Intune
 
@@ -30,7 +31,7 @@ Mit Microsoft Intune können Sie eine Vielzahl von Geräten verwalten, indem Sie
 
 Dieser Artikel umfasst eine vollständige Liste der Funktionen, die Ihnen nach der Registrierung Ihrer Geräte zur Verfügung stehen.
 
-Verwaltung, Bestandserfassung, App-Bereitstellung und Außerbetriebnahme erfolgen über das Intune-Portal.
+Verwaltung, Bestandserfassung, App-Bereitstellung und Außerbetriebnahme erfolgen über Intune im Azure-Portal.
 
 Benutzer erhalten Zugriff auf das Unternehmensportal, das es ihnen ermöglicht, Apps zu installieren, Geräte zu registrieren und zu entfernen und ihre IT-Abteilung oder ihren Helpdesk zu kontaktieren.
 
@@ -42,7 +43,7 @@ Benutzer erhalten Zugriff auf das Unternehmensportal, das es ihnen ermöglicht, 
 |--------------|-----------|--------------------|
 |Konfigurationsrichtlinien<br><br>Benutzerdefinierte Richtlinien| Ermöglicht die Verwaltung vieler Einstellungen und Features auf mobilen Geräten in Ihrer Organisation. Beispielsweise kann das Anfordern eines Kennworts, das Beschränken der Anzahl misslungener Anmeldeversuche, das Begrenzen des Zeitraums bis zur Sperrung des Bildschirms, das Festlegen eines Zeitraums für den Kennwortablauf und das Unterbinden der erneuten Verwendung zuvor bereits verwendeter Kennwörter festgelegt werden. Sie können auch die Verwendung von Hardware- und Softwarefunktionen steuern, z.B. die Verwendung der Gerätekamera oder des Webbrowsers.<br><br>Verwenden Sie benutzerdefinierte Richtlinien, wenn Konfigurationsrichtlinien nicht die Einstellungen enthalten, die Sie benötigen. Bei iOS-Geräten können Sie die Einstellungen importieren, die Sie aus dem Apple Configurator-Tool exportiert haben. Bei anderen Geräten können Sie OMA-URI-Einstellungen (Open Mobile Alliance Uniform Resource Identifier) verwenden, um Einstellungen und Features auf dem Gerät zu konfigurieren.|[Verwalten von Einstellungen und Features auf Ihren Geräten mit Microsoft Intune-Richtlinien](device-compliance-get-started.md)|
 |Remotezurücksetzen, Remotesperre und Kennungsrückstellung|Löscht sensible Daten, wenn ein Gerät verloren geht oder gestohlen wird. Beispielsweise können Sie das Gerät remote sperren, die Werkseinstellungen wiederherstellen oder nur Unternehmensdaten zurücksetzen.<br><br>Sie können Passcodes zurücksetzen, wenn Benutzer nicht mehr auf ihr Gerät zugreifen können, und verlorene oder gestohlene Geräte sperren oder alle darauf vorhandenen Daten zurücksetzen.|Geräteschutz durch [Remotesperre](device-remote-lock.md) und [Zurücksetzen der Kennung](device-passcode-reset.md)|
-|Kioskmodus|Ermöglicht das Sperren bestimmter Features mobiler Geräte, z.B. der Bildschirmaufnahme und Netzschaltern. Außerdem können Sie Geräte auf die Ausführung einer einzigen, von Ihnen angegebenen App beschränken.|[Einstellungen für iOS-Konfigurationsrichtlinien in Microsoft Intune](device-restrictions-ios.md)|
+|Kioskmodus|Ermöglicht das Sperren bestimmter Features mobiler Geräte, z.B. der Bildschirmaufnahme und Netzschaltern. Außerdem können Sie Geräte auf die Ausführung einer einzigen, von Ihnen angegebenen App beschränken. |[Einstellungen für iOS-Konfigurationsrichtlinien in Microsoft Intune](device-restrictions-ios.md)|
 
 ## <a name="app-management"></a>App-Verwaltung
 

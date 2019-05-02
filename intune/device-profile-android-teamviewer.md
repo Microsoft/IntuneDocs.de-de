@@ -2,24 +2,26 @@
 title: Remoteverwaltung von Geräten in Microsoft Intune – Azure | Microsoft-Dokumentation
 description: Anzeigen der für die Verwendung von TeamViewer erforderlichen Rollen, Installieren des TeamViewer Connectors und ausführliche Anleitung zur Remoteverwaltung von Geräten mit Microsoft Intune im Azure-Portal
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 06/12/2018
-ms.topic: article
+ms.date: 02/05/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dd2d9f0a0caf87eb75ba3a9cdc123e69425ceb8b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509727"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Verwenden von TeamViewer für die Remoteverwaltung von Intune-Geräten
 
@@ -31,10 +33,10 @@ Von Intune verwaltete Geräte können mit [TeamViewer](https://www.teamviewer.co
 
 - Der Intune-Administrator im Azure-Portal muss über folgende [Intune-Rollen](role-based-access-control.md) verfügen:  
 
-    - **Aktualisieren von Remoteunterstützung**: Ermöglicht es Administratoren, die Einstellungen für den TeamViewer Connector zu ändern
-    - **Anfordern von Remoteunterstützung**: Ermöglicht es Administratoren, für jeden Benutzer eine neue Remoteunterstützungssitzung zu starten. Benutzer mit dieser Rolle werden nicht durch eine Intune-Rolle innerhalb eines Bereichs beschränkt. Darüber hinaus können Benutzer- oder Gerätegruppen, denen eine Intune-Rolle innerhalb eines Bereichs zugewiesen ist, auch Remoteunterstützung anfordern. 
+    - **Aktualisieren von Remoteunterstützung:** Ermöglicht es Administratoren, die Einstellungen für den TeamViewer Connector zu ändern
+    - **Anfordern von Remoteunterstützung:** Ermöglicht es Administratoren, für jeden Benutzer eine neue Remoteunterstützungssitzung zu starten. Benutzer mit dieser Rolle werden nicht durch eine Intune-Rolle innerhalb eines Bereichs beschränkt. Darüber hinaus können Benutzer- oder Gerätegruppen, denen eine Intune-Rolle innerhalb eines Bereichs zugewiesen ist, auch Remoteunterstützung anfordern. 
 
-- Ein [TeamViewer](https://www.teamviewer.com)-Konto mit den Anmeldeinformationen
+- Ein [TeamViewer](https://www.teamviewer.com)-Konto mit den Anmeldeinformationen. Möglicherweise unterstützen nur einige TeamViewer-Lizenzen die Integration in Intune. Weitere Informationen zu besonderen TeamViewer-Anforderungen finden Sie unter [TeamViewer Integration für Microsoft Intune in Azure](https://www.teamviewer.com/integrations/microsoft-intune/).
 
 Durch die Verwendung von TeamViewer ermöglichen Sie es dem TeamViewer Connector für Intune TeamViewer-Sitzungen zu erstellen, Active Directory-Daten zu lesen und das Zugriffstoken des TeamViewer-Kontos zu speichern.
 

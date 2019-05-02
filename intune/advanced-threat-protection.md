@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 036f2ca8302f9b3c2d700a04918c4c49a4c6211a
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490547"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Erzwingen der Konformität für Windows Defender ATM mit bedingtem Zugriff in Intune
 
@@ -109,12 +110,12 @@ Die Konformitätsrichtlinie legt eine akzeptable Risikostufe für ein Gerät fes
 2. Wählen Sie **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** aus.
 3. Geben Sie einen **Namen** und eine **Beschreibung** ein.
 4. Wählen Sie unter **Plattform** die Option **Windows 10 und höher** aus.
-5. Legen Sie in den Einstellungen für **Windows Defender ATP** für **Anfordern, dass das Gerät höchstens das angegebene Computerrisiko aufweist** die bevorzugte Stufe fest:
+5. Legen Sie in den Einstellungen für **Windows Defender ATP** für **Require the device to be at or under the machine risk score (Anfordern, dass das Gerät höchstens das angegebene Computerrisiko aufweist)** die bevorzugte Stufe fest: Bedrohungsstufenklassifizierungen werden [von Windows Defender ATP bestimmt](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
 
-  - **Löschen**: Diese Stufe ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
-  - **Niedrig**: Das Gerät ist konform, wenn nur Bedrohungen auf niedriger Stufe vorliegen. Geräte mit mittleren oder hohen Bedrohungsstufen sind nicht konform.
-  - **Mittel**: Das Gerät ist konform, wenn auf dem Gerät Bedrohungen niedriger oder mittlerer Stufe gefunden werden. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
-  - **Hoch**: Dies ist die unsicherste Stufe, die alle Bedrohungsstufen zulässt. Also werden Geräte mit hohen, mittleren oder niedrigen Bedrohungsstufen als konform angesehen.
+   - **Löschen**: Diese Stufe ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet. (Windows Defender ATP verwendet den Wert *Sicher*.)
+   - **Niedrig:** Das Gerät ist konform, wenn nur Bedrohungen auf niedriger Stufe vorliegen. Geräte mit mittleren oder hohen Bedrohungsstufen sind nicht konform.
+   - **Mittel**: Das Gerät ist konform, wenn auf dem Gerät Bedrohungen niedriger oder mittlerer Stufe gefunden werden. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
+   - **Hoch**: Dies ist die unsicherste Stufe, die alle Bedrohungsstufen zulässt. Also werden Geräte mit hohen, mittleren oder niedrigen Bedrohungsstufen als konform angesehen.
 
 6. Wählen Sie **OK** und **Erstellen** aus, um Ihre Änderungen zu speichern (und die Richtlinie zu erstellen).
 
@@ -126,10 +127,13 @@ Die Konformitätsrichtlinie legt eine akzeptable Risikostufe für ein Gerät fes
 4. Schließen Sie Ihre Azure AD-Gruppen ein- oder aus, um ihnen die Richtlinie zuzuweisen.
 5. Wählen Sie zum Bereitstellen der Richtlinie für die Gruppen **Speichern** aus. Die Benutzergeräte, denen die Richtlinie zugewiesen wurde, werden auf Konformität überprüft.
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>Erstellen einer Azure AD-Richtlinie für bedingten Zugriff
-Die Richtlinie für bedingten Zugriff blockiert den Zugriff auf Ressourcen, *wenn* das Gerät nicht konform ist. Wenn also ein Gerät die Bedrohungsstufe überschreitet, können Sie den Zugriff auf Unternehmensressourcen wie SharePoint oder Exchange Online blockieren.
+## <a name="create-a-conditional-access-policy"></a>Erstellen einer Richtlinie für den bedingten Zugriff
+Die Richtlinie für bedingten Zugriff blockiert den Zugriff auf Ressourcen, *wenn* das Gerät nicht konform ist. Wenn also ein Gerät die Bedrohungsstufe überschreitet, können Sie den Zugriff auf Unternehmensressourcen wie SharePoint oder Exchange Online blockieren.  
 
-1. Öffnen Sie im [Azure-Portal](https://portal.azure.com) die Option **Azure Active Directory** > **Bedingter Zugriff** > **Neue Richtlinie**.
+> [!TIP]  
+> Der bedingte Zugriff ist eine Technologie von Azure Active Directory (Azure AD). Bei dem Knoten für bedingten Zugriff, auf den aus *Intune* zugegriffen wird, handelt es sich um denselben Knoten, auf den aus *Azure AD* zugegriffen wird.  
+
+1. Öffnen Sie im [Azure-Portal](https://portal.azure.com) **Intune** > **Bedingter Zugriff** > **Neue Richtlinie**.
 2. Geben Sie einen **Namen** für die Richtlinie ein, und wählen Sie **Benutzer und Gruppen** aus. Fügen Sie mit den Optionen „Einschließen“ oder „Ausschließen“ Ihre Gruppen für die Richtlinie hinzu, und wählen Sie **Fertig** aus.
 3. Wählen Sie **Cloud-Apps** und die zu schützenden Apps aus. Wählen Sie z.B. **Apps auswählen** und **Office 365 SharePoint Online** sowie **Office 365 Exchange Online** aus.
 

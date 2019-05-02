@@ -1,26 +1,28 @@
 ---
 title: Fördern der Akzeptanz durch Endbenutzer mit bedingtem Zugriff
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Erfahren Sie, wie Sie den bedingten Zugriff verwenden können, um die Registrierung in Microsoft Intune zu unterstützen.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 4fad67bcde44246e7673d6ebe12afcdcf14fc8cd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 803bcda24b7d6fa1cf923ff28848b8d2b71cf62e
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508156"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Vorantreiben der Einführung mit bedingtem Zugriff für Endbenutzer in Microsoft Intune
 
@@ -55,11 +57,11 @@ Dies ist ein Ansatz unter vielen. Sie können auch einen einfacheren Prozess aus
 
 ## <a name="task-list-for-conditional-access"></a>Aufgabenliste für bedingten Zugriff
 
-### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>Aufgabe 1: Entscheiden Sie, wie Sie den bedingten Zugriff implementieren möchten.
+### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>Aufgabe 1: Entscheiden Sie, wie Sie den bedingten Zugriff implementieren
 
 [Gängige Möglichkeiten der Nutzung des bedingten Zugriffs](conditional-access-intune-common-ways-use.md)
 
-### <a name="task-2-set-up-intune-conditional-access"></a>Aufgabe 2: Richten Sie den bedingten Zugriff für Intune ein.
+### <a name="task-2-set-up-intune-conditional-access"></a>Aufgabe 2: Richten Sie den bedingten Zugriff für Intune ein
 
 Wählen Sie eine der folgenden Optionen aus:
 

@@ -1,15 +1,16 @@
 ---
-title: Hinzufügen von Win32-Apps zu Microsoft Intune
-titlesuffix: ''
-description: Erfahren Sie, wie Sie Win32-Apps mit Microsoft Intune hinzufügen, bereitstellen und verwalten können. Dieser Artikel enthält eine Übersicht über die Funktionen zum Bereitstellen und Verwalten von Win32-Apps, die Intune bietet, sowie Informationen zur Problembehandlung bei Win32-Apps.
+title: Hinzufügen und Zuweisen von Win32-Apps zu Microsoft Intune
+titleSuffix: ''
+description: Erfahren Sie, wie Sie Win32-Apps mit Microsoft Intune hinzufügen, zuweisen und verwalten können. Dieser Artikel enthält eine Übersicht über die Funktionen zum Bereitstellen und Verwalten von Win32-Apps, die Intune bietet, sowie Informationen zur Problembehandlung bei Win32-Apps.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2019
-ms.topic: article
+ms.date: 04/15/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
@@ -17,37 +18,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61a2abee2e926605a4d7d35baa53f6259ef77db3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
+ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62426152"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Eigenständiges Intune – Win32-App-Verwaltung
 
-Intune Standalone ermöglicht eine umfangreichere Verwaltung von Win32-Anwendungen. Während es für Kunden mit Cloudverbindung möglich ist, den Configuration Manager für die Verwaltung von Win32-Anwendungen zu verwenden, verfügen Kunden, die ausschließlich Intune verwenden, über umfangreichere Verwaltungsfunktionen für ihre Win32-Branchenanwendungen (LOB, Line-of-Business). Dieser Artikel bietet eine Übersicht über das Intune-Feature zur Verwaltung von Win32-Apps und enthält Informationen zur Problembehandlung.
+Die [eigenständige Intune-Version](mdm-authority-set.md) ermöglicht nun eine umfangreichere Verwaltung von Win32-Apps. Während es für Kunden mit Cloudverbindung möglich ist, den Configuration Manager für die Verwaltung von Win32-Anwendungen zu verwenden, verfügen Kunden, die ausschließlich Intune verwenden, über umfangreichere Verwaltungsfunktionen für ihre Win32-Branchenanwendungen (LOB, Line-of-Business). Dieser Artikel bietet eine Übersicht über das Intune-Feature zur Verwaltung von Win32-Apps und enthält Informationen zur Problembehandlung.
+
+> [!NOTE]
+> Für Windows-Anwendungen unterstützt dieses App-Verwaltungsfeature sowohl eine 32-Bit- als auch 64-Bit-Betriebssystemarchitektur.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
+Stellen Sie sicher, dass die folgenden Kriterien erfüllt sind, wenn Sie die Win32-App-Verwaltung verwenden wollen:
+
 - Windows 10 Version 1607 oder höher (Education-, Pro- und Enterprise-Versionen)
 - Folgendes muss für den Windows 10-Client zutreffen: 
-    - Beitritt zu Azure Active Directory (AAD) oder Hybrid Azure Active Directory und
-    - Registrierung bei Intune (MDM-verwaltet)
-- Die Größe der Windows-Anwendung ist auf 8 GB pro App begrenzt
+    - Geräte müssen mit Azure AD verknüpft und automatisch registriert werden. Die Intune-Verwaltungserweiterung unterstützt Geräte, die mit Azure AD und hybriden Domänen verknüpft sind, sowie durch das Gruppenrichtlinien-Tool registrierte Geräte. 
+    > [!NOTE]
+    > Für durch das Gruppenrichtlinien-Tool registrierte Szenarios: Der Endbenutzer verwendet das lokale Benutzerkonto zum Einbinden seines Windows 10-Geräts in Azure AD. Der Benutzer muss sich mit seinem Azure AD-Benutzerkonto auf dem Gerät anmelden und sich bei Intune registrieren. Intune installiert die Intune-Verwaltungserweiterung auf dem Gerät, wenn ein PowerShell-Skript oder eine Win32-App auf einen Benutzer oder ein Gerät ausgerichtet sind.
+- Die Größe der Windows-Anwendung ist auf 8 GB pro App begrenzt.
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Vorbereiten des Inhalts der Win32-App für den Upload
 
-Verwenden Sie das [Microsoft Win32-Inhaltsvorbereitungstool](https://go.microsoft.com/fwlink/?linkid=2065730) für die Vorabverarbeitung von Win32-Apps. Das Tool konvertiert Anwendungsinstallationsdateien in das *INTUNEWIN*-Format. Das Tool erkennt auch einige der Attribute, die Intune benötigt, um den Installationsstatus der Anwendung zu bestimmen. Nachdem Sie dieses Tool im Installationsordner der App verwendet haben, können Sie in der Intune-Konsole eine Win32-App erstellen.
+Verwenden Sie das [Microsoft Win32-Inhaltsvorbereitungstool](https://go.microsoft.com/fwlink/?linkid=2065730) zum Vorverarbeiten von klassischen Windows-Apps (Win32). Das Tool konvertiert Anwendungsinstallationsdateien in das *INTUNEWIN*-Format. Das Tool erkennt auch einige der Attribute, die Intune benötigt, um den Installationsstatus der Anwendung zu bestimmen. Nachdem Sie dieses Tool im Installationsordner der App verwendet haben, können Sie in der Intune-Konsole eine Win32-App erstellen.
 
-Sie können das [Microsoft Win32-Inhaltsvorbereitungstool](https://go.microsoft.com/fwlink/?linkid=2065730) von GitHub herunterladen.
+> [!IMPORTANT]
+> Beim Erstellen der *.intunewin*-Datei zippt das [Microsoft Win32-Inhaltsvorbereitungstool](https://go.microsoft.com/fwlink/?linkid=2065730) alle Dateien und Unterordner. Achten Sie darauf, das Microsoft Win32-Inhaltsvorbereitungstool nicht zusammen mit den Installationsdateien und -ordnern zu speichern, damit Sie das Tool oder andere unnötige Dateien und Ordner nicht in Ihre *.intunewin*-Datei einschließen.
+
+Sie können das [Microsoft Win32-Inhaltsvorbereitungstool](https://go.microsoft.com/fwlink/?linkid=2065730) als ZIP-Datei von GitHub herunterladen. Die ZIP-Datei enthält einen Ordner namens **Microsoft-Win32-Content-Prep-Tool-master**. Der Ordner enthält das Vorbereitungstool, die Lizenz, eine Infodatei und die Versionshinweise. 
+
+### <a name="process-flow-to-create-intunewin-file"></a>Prozessflow zum Erstellen der .intunewin-Datei
+
+   ![Prozessflow zum Erstellen einer .intunewin-Datei](./media/prepare-win32-app.svg)
+
+### <a name="run-the-microsoft-win32-content-prep-tool"></a>Ausführen des Microsoft Win32-Inhaltsvorbereitungstools
+
+Wenn Sie `IntuneWinAppUtil.exe` aus dem Befehlsfenster ohne Parameter ausführen, leitet Sie das Tool Schritt für Schritt durch die Eingabe der erforderlichen Parameter. Sie können dem Befehl die Parameter auch basierend auf den folgenden verfügbaren Befehlszeilenparametern hinzufügen:
 
 ### <a name="available-command-line-parameters"></a>Verfügbare Befehlszeilenparameter: 
 
 |    **Befehlszeilenparameter**    |    **Beschreibung**    |
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    Hilfe    |
-|    `-c <setup_folder>`     |    Setupordner für alle Setupdateien.    |
+|    `-c <setup_folder>`     |    Ordner für alle Setupdateien. Alle Dateien in diesem Ordner werden in die *.intunewin*-Datei komprimiert.    |
 |   ` -s <setup_file>`     |    Setupdatei (z. B. *setup.exe* oder *setup.msi*).    |
 |    `-o <output_folder>`     |    Ausgabeordner für die generierte *.intunewin*-Datei.    |
 |    `-q`       |    Stiller Modus    |
@@ -57,7 +75,7 @@ Sie können das [Microsoft Win32-Inhaltsvorbereitungstool](https://go.microsoft.
 |    **Beispielbefehl**    |    **Beschreibung**    |
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    Dieser Befehl zeigt Nutzungsinformationen für das Tool an.    |
-|    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    Mit diesem Befehl wird die Datei `.intunewin` aus dem angegebenen Quellordner und der Setupdatei generiert. Für die MSI-Setupdatei ruft dieses Tool die erforderlichen Informationen für Intune ab. Wenn `-q` angegeben ist, wird der Befehl im stillen Modus ausgeführt, und wenn die Ausgabedatei bereits vorhanden ist, wird sie überschrieben. Wenn der Ausgabeordner nicht vorhanden ist, wird er automatisch erstellt.    |
+|    `IntuneWinAppUtil -c c:\testapp\v1.0 -s c:\testapp\v1.0\setup.exe -o c:\testappoutput\v1.0 -q`    |    Mit diesem Befehl wird die Datei `.intunewin` aus dem angegebenen Quellordner und der Setupdatei generiert. Für die MSI-Setupdatei ruft dieses Tool die erforderlichen Informationen für Intune ab. Wenn `-q` angegeben ist, wird der Befehl im stillen Modus ausgeführt, und wenn die Ausgabedatei bereits vorhanden ist, wird sie überschrieben. Wenn der Ausgabeordner nicht vorhanden ist, wird er automatisch erstellt.    |
 
 Wenn Sie eine Datei mit der Erweiterung *.intunewin* generieren, legen Sie alle Dateien, die Sie als Referenz benötigen, in einem Unterordner des Setupordners ab. Verwenden Sie dann einen relativen Pfad, um auf die gewünschte Datei zu verweisen. Beispiel:
 
@@ -68,7 +86,15 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>Erstellen, Zuweisen und Überwachen einer Win32-App
 
-Ähnlich wie eine Branchenanwendung (LOB) können Sie eine Win32-App zu Microsoft Intune hinzufügen. Diese Art von App wird typischerweise intern oder von einem Drittanbieter geschrieben. Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-App zu Intune.
+Ähnlich wie eine Branchenanwendung (LOB) können Sie eine Win32-App zu Microsoft Intune hinzufügen. Diese Art von App wird typischerweise intern oder von einem Drittanbieter geschrieben. 
+
+### <a name="process-flow-to-add-a-win32-app-to-intune"></a>Prozessflow für das Hinzufügen einer Win32-App zu Intune
+
+   ![Prozessflow für das Hinzufügen einer Win32-App zu Intune](./media/add-win32-app.svg)
+
+### <a name="add-a-win32-app-to-intune"></a>Hinzufügen einer Win32-App zu Intune
+
+Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-App zu Intune.
 
 ### <a name="step-1-specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
 
@@ -113,7 +139,11 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
 1.  Wählen Sie im Bereich **App hinzufügen** die Option **Programm** aus, um die Befehle zur Installation und Entfernung der App zu konfigurieren.
 2.  Füge die komplette Befehlszeile für die Installation hinzu, um die App zu installieren. 
 
-    Wenn Ihr App-Dateiname z. B. **MyApp123** lautet, fügen Sie Folgendes hinzu: `msiexec /i “MyApp123.msi”`
+    Wenn Ihr App-Dateiname z. B. **MyApp123** lautet, fügen Sie Folgendes hinzu:<br>
+    `msiexec /p “MyApp123.msp”`<p>
+    Wenn die Anwendung `ApplicationName.exe` ist, entspricht der Befehl dem Anwendungsnamen gefolgt von den Befehlsargumenten, die vom Paket unterstützt werden. <br>Beispiel:<br>
+    `ApplicationName.exe /quite`<br>
+    Im obigen Befehl unterstützt das `ApplicaitonName.exe`-Paket das `/quite`-Befehlsargument.<p> Wenden Sie sich für die spezifischen Argumente, die das Anwendungspaket unterstützt, an den Anbieter der Anwendung.
 
 3.  Fügen Sie die vollständige Befehlszeile zum Deinstallieren hinzu, um die App basierend auf der GUID der App zu deinstallieren. 
 
@@ -126,17 +156,35 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
 
 4.  Wählen Sie danach **OK**.
 
-### <a name="step-5-configure-app-requirements"></a>Schritt 5: Konfigurieren der App-Anforderungen
+### <a name="step-5-configure-app-requirements"></a>Schritt 5: Konfigurieren der App-Anforderungen
 
 1.  Wählen Sie im Bereich **App hinzufügen** die Option **Anforderungen** aus, um die Anforderungen zu konfigurieren, die Geräte erfüllen müssen, bevor die App installiert wird.
-2.  Konfigurieren Sie im Bereich **Anforderungen** die folgenden Informationen. Einige der Werte in diesem Bereich wurden möglicherweise automatisch ausgefüllt.
+2.  Konfigurieren Sie im Bereich **Add a Requirement rule** (Anforderungsregel hinzufügen) die folgenden Informationen: Einige der Werte in diesem Bereich wurden möglicherweise automatisch ausgefüllt.
     - **Betriebssystemarchitektur**: Wählen Sie die Architekturen aus, die für die Installation der App erforderlich sind.
     - **Mindestens erforderliches Betriebssystem**: Wählen Sie die für die Installation der App mindestens erforderliche Version des Betriebssystems aus.
     - **Erforderlicher Speicherplatz (MB)**: Optional können Sie den freien Speicherplatz hinzufügen, der auf dem Systemlaufwerk erforderlich ist, um die App zu installieren.
     - **Erforderlicher physischer Speicher (MB)**: Optional können Sie den für die Installation der App erforderlichen physischen Arbeitsspeicher (RAM) hinzufügen.
     - **Mindestens erforderliche Anzahl logischer Prozessoren**: Optional können Sie die Anzahl von logischen Prozessoren hinzufügen, die für die Installation der App mindestens erforderlich sind.
     - **Mindestens erforderliche CPU-Geschwindigkeit (MHz)**: Optional können Sie die CPU-Geschwindigkeit hinzufügen, die für die Installation der App mindestens erforderlich ist.
-3.  Wählen Sie danach **OK**.
+
+3. Klicken Sie auf **Hinzufügen**, um das Blatt **Add a Requirement rule** (Anforderungsregel hinzufügen) anzuzeigen und weitere Anforderungsregeln zu konfigurieren. Wählen Sie den **Anforderungstyp** aus, um die Art der Regel auszuwählen, mit der Sie bestimmen, auf welche Art eine Anforderung überprüft wird. Anforderungsregeln können auf Dateisysteminformationen, Registrierungswerten oder PowerShell-Skripts basieren. 
+    - **Datei:** Wenn Sie **Datei** als **Anforderungstyp** auswählen, muss die Anforderungsregel eine Datei oder einen Ordner, ein Datum, eine Version oder eine Größe erkennen. 
+        - **Pfad** – Der vollständige Pfad des Ordners, der die zu erkennende Datei oder den Ordner enthält.
+        - **Datei oder Ordner** – Die zu erkennende Datei oder der zu erkennende Ordner.
+        - **Eigenschaft:** Wählen Sie die Art der Regel aus, mit der das Vorhandensein der App überprüft wird.
+        - **Einer 32-Bit-App auf 64-Bit-Clients zugeordnet** – Wählen Sie **Ja** aus, um alle Pfadumgebungsvariablen im 32-Bit-Kontext auf 64-Bit-Clients zu erweitern. Wählen Sie **Nein** (Standard) aus, um Pfadvariablen im 64-Bit-Kontext auf 64-Bit-Clients zu erweitern. 32-Bit-Clients verwenden immer den 32-Bit-Kontext.
+    - **Registrierung:** Wenn Sie **Registrierung** als **Anforderungstyp** auswählen, muss die Anforderungsregel eine auf Wert, Zeichenfolge, Integer oder Version basierte Registrierungseinstellung erkennen.
+        - **Schlüsselpfad** – Der vollständige Pfad des Registrierungseintrags, der den zu erkennenden Wert enthält.
+        - **Wertname** – Gibt den Namen des Registrierungswerts an. Wenn dieser Wert leer ist, erfolgt die Erkennung über den Schlüssel. Der (Standard-) Wert eines Schlüssels wird als Erkennungswert verwendet, wenn die Erkennungsmethode eine andere ist als das Vorhandensein von Dateien oder Ordnern.
+        - **Registrierungsschlüsselanforderung:** Wählen Sie die Art des verwendeten Registrierungsschlüsselvergleichs, um zu bestimmen, wie die Anforderungsregel überprüft wird.
+        - **Einer 32-Bit-App auf 64-Bit-Clients zugeordnet** – Wählen Sie **Ja** aus, um die 32-Bit-Registrierung auf 64-Bit-Clients zu durchsuchen. Wählen Sie **Nein** (Standard) aus, um die 64-Bit-Registrierung auf 64-Bit-Clients zu durchsuchen. 32-Bit-Clients durchsuchen immer die 32-Bit-Registrierung.
+    - **Skript:** Wählen Sie **Skript** als **Anforderungstyp** aus, wenn Sie keine Anforderungsregel erstellen können, die auf Datei, Registrierung oder auf einer anderen in der Intune-Konsole verfügbaren Methode basiert.
+        - **Skriptdatei:** Für eine Anforderungsregel, die auf einem PowerShell-Skript basiert. Wenn der Exitcode ein 0 ist, erfolgt die Erfassung von STDOUT genauer. Sie können z. B. STDOUT als einen Integer erkennen, der einen Wert 1 aufweist.
+        - **Skript auf 64-Bit-Clients als 32-Bit-Prozess ausführen**: Wählen Sie **Ja** aus, um das Skript in einem 32-Bit-Prozess auf 64-Bit-Clients auszuführen. Wählen Sie **Nein** (Standardeinstellung) aus, um das Skript in einem 64-Bit-Prozess auf 64-Bit-Clients auszuführen. Auf 32-Bit-Clients wird das Skript in einem 32-Bit-Prozess ausgeführt.
+        - **Dieses Skript mit den Anmeldeinformationen des angemeldeten Benutzers ausführen:** Wählen Sie **Ja** aus, um das Skript mit den Anmeldeinformationen** des angemeldeten Geräts auszuführen.
+        - **Skriptsignaturprüfung erzwingen** – Wählen Sie **Ja** aus, um sicherzustellen, dass das Skript von einem vertrauenswürdigen Herausgeber signiert ist, sodass das Skript ohne Warnungen oder Aufforderungen ausgeführt werden kann. Das Skript wird ohne Blockierung ausgeführt. Wählen Sie **Nein** (Standard) aus, um das Skript mit Endbenutzerbestätigung ohne Signaturüberprüfung auszuführen.
+        - **Ausgabedatentyp auswählen:** Wählen Sie den Datentyp aus, der beim Bestimmen einer Übereinstimmung mit einer Anforderungsregel verwendet wird.
+4.  Wählen Sie danach **OK**.
 
 ### <a name="step-6-configure-app-detection-rules"></a>Schritt 6: Konfigurieren von App-Erkennungsregeln
 
@@ -199,7 +247,7 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
 
         4.  Nachdem Sie Ihre Regel(n) hinzugefügt haben, wählen Sie **Hinzufügen** > **OK** aus.
 
-### <a name="step-7-configure-app-return-codes"></a>Schritt 7: Konfigurieren der App-Rückgabecodes
+### <a name="step-7-configure-app-return-codes"></a>Schritt 7: Konfigurieren der App-Rückgabecodes
 
 1.  Wählen Sie im Bereich **App hinzufügen** die Option **Rückgabecodes** aus, um die Rückgabecodes hinzuzufügen, die verwendet werden, um entweder das Verhalten bei der erneuten Installation der App oder das Verhalten nach der Installation anzugeben. Rückgabecodeeinträge werden standardmäßig bei der Erstellung der App hinzugefügt. Sie können jedoch zusätzliche Rückgabecodes hinzufügen oder bestehende Rückgabecodes ändern. 
 2.  Fügen Sie im Bereich **Rückgabecodes** zusätzliche Rückgabecodes hinzu oder ändern Sie bestehende Rückgabecodes.
@@ -210,7 +258,7 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
     - **Erfolg** – Der Rückgabewert, der angibt, dass die App erfolgreich installiert wurde.
 3.  Wählen Sie **OK** aus, nachdem Sie Ihre Liste der Rückgabecodes hinzugefügt oder geändert haben.
 
-### <a name="step-8-add-the-app"></a>Schritt 8: Hinzufügen der App
+### <a name="step-8-add-the-app"></a>Schritt 8: Hinzufügen der App
 
 1.  Überprüfen Sie im Bereich **App hinzufügen**, ob die konfigurierten App-Informationen richtig sind.
 2.  Wählen Sie **Hinzufügen**, um die App in Intune hochzuladen.
@@ -229,11 +277,41 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
 7.  Wählen Sie im Bereich **Gruppe hinzufügen** die Option **OK** aus.
 8.  Wählen Sie im Bereich **Zuweisungen** die Option **Speichern** aus.
 
-An dieser Stelle haben Sie die Schritte zum Hinzufügen einer Win32-App zu Intune abgeschlossen. Informationen zur Zuweisung und Überwachung von Apps finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) und [Überwachen von App-Informationen und -Zuweisungen mit Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
+An dieser Stelle haben Sie alle Schritte zum Hinzufügen einer Win32-App zu Intune abgeschlossen. Informationen zur Zuweisung und Überwachung von Apps finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) und [Überwachen von App-Informationen und -Zuweisungen mit Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
+
+## <a name="app-dependencies"></a>App-Abhängigkeiten
+
+App-Abhängigkeiten sind Anwendungen, die installiert sein müssen, bevor Ihre Win32-App installiert werden kann. Sie können anfordern, dass andere Apps als Abhängigkeiten installiert werden. Das heißt, das Gerät muss die abhängige(n) App(s) installieren, bevor die Win32-App installiert wird. Es sind maximal 100 Abhängigkeiten möglich. Dazu zählen die Abhängigkeiten aller eingeschlossenen Abhängigkeiten sowie die App selbst. Sie können Win32-App-Abhängigkeiten erst hinzufügen, nachdem Ihre Win32-App zu Intune hinzugefügt und darin hochgeladen wurde. Sobald Ihre Win32-App hinzugefügt wurde, sehen Sie die Option **Abhängigkeiten** auf dem Blatt für Ihre Win32-App. 
+
+> [!NOTE]
+> Die Funktionalität der App-Abhängigkeit steht nur zur Verfügung, wenn der Intune-Verwaltungs-Agent auf Version 1904 (höher als 1.18.120.0) aktualisiert wurde, was nach dem Upgrade des Diensts auf Version 1904 ein bis zwei weitere Wochen dauern kann.
+
+Wenn Sie eine App-Abhängigkeit hinzufügen, können Sie basierend auf dem Namen und dem Herausgeber der App Suchvorgänge ausführen. Darüber hinaus können Sie Ihre hinzugefügten Abhängigkeiten nach Name und Herausgeber der App sortieren. Bereits zuvor hinzugefügte App-Abhängigkeiten können nicht aus der Liste der hinzugefügten App-Abhängigkeiten ausgewählt werden. 
+
+Sie können auswählen, ob jede abhängige App automatisch installiert wird. Standardmäßig ist für die Option **Automatisch installieren** für jede Abhängigkeit **Ja** festgelegt. Durch das automatische Installieren einer abhängigen App, selbst wenn diese nicht auf den Benutzer oder das Gerät ausgerichtet ist, installiert Intune die App auf dem Gerät. Dadurch wird das Abhängigkeitskriterium erfüllt, bevor Ihre Win32-App installiert wird. Dabei ist es wichtig, zu beachten, dass eine Abhängigkeit rekursive Unterabhängigkeiten haben kann, und jede Unterabhängigkeit vor der Hauptabhängigkeit installiert wird. Zudem erfolgt die Installation von Abhängigkeiten nicht in einer Installationsreihenfolge auf einer vorgegebenen Abhängigkeitsebene.
+
+Führen Sie die folgenden Schritte aus, um eine App-Abhängigkeit zu Ihrer Win32-App hinzuzufügen:
+
+1. Wählen Sie in Intune **Client-Apps** > **Apps** aus, um die Liste der hinzugefügten Client-Apps anzuzeigen. 
+2. Wählen Sie eine hinzugefügte **Windows-App (Win32)** aus. 
+3. Klicken Sie auf **Abhängigkeiten**, um die abhängigen Apps hinzuzufügen, die installiert werden müssen, bevor die Win32-App installiert werden kann. 
+4. Klicken Sie auf **Hinzufügen**, um eine App-Abhängigkeit hinzuzufügen.
+5. Nachdem Sie die abhängige(n) App(s) hinzugefügt haben, klicken Sie auf **Auswählen**.
+6. Wählen Sie durch Klicken auf **Ja** oder **Nein** unter **Automatisch installieren** aus, ob die abhängige App automatisch installiert werden soll.
+7. Klicken Sie auf **Speichern**.
+
+Dem Endbenutzer werden Windows-Popupbenachrichtigungen angezeigt, die angeben, dass abhängige Apps heruntergeladen und zusammen mit der Win32-App installiert werden. Wenn darüber hinaus eine abhängige App nicht installiert ist, wird dem Endbenutzer in der Regel eine der folgenden Benachrichtigungen angezeigt:
+- 1 or more dependent apps failed to install (Fehler bei der Installation von mindestens einer abhängigen App)
+- 1 or more dependent app requirements not met (Mindestens eine abhängige App-Anforderung ist nicht erfüllt)
+- 1 or more dependent apps are pending a device reboot (Geräteneustart für mindestens eine abhängige App ausstehend)
+
+Wenn Sie für die Option **Automatisch installieren** die Auswahl „Nein“ festlegen, erfolgt kein Versuch, die Win32-App (Abhängigkeit) zu installieren. Darüber hinaus zeigt die App-Berichterstellung, dass die Abhängigkeit als `failed` gekennzeichnet wurde, und gibt eine Fehlerursache an. Durch Klicken auf einen Fehler (oder eine Warnung) in den [Installationsdetails](troubleshoot-app-install.md#win32-app-installation-troubleshooting) der Win32-App können Sie den Installationsfehler für die Abhängigkeit anzeigen. 
+
+Jede Abhängigkeit entspricht der Wiederholungslogik für Win32-Apps in Intune (3 Installationsversuche mit jeweils 5 Minuten Wartezeit dazwischen) und dem globalen Zeitplan für die erneute Auswertung. Abhängigkeiten gelten außerdem nur während die Win32-App auf dem Gerät installiert wird. Abhängigkeiten gelten nicht, wenn eine Win32-App deinstalliert wird. Klicken Sie auf die Ellipsen (drei Punkte) links neben der abhängigen App am Ende des Datensatzes der Abhängigkeitsliste, um eine Abhängigkeit zu löschen. 
 
 ## <a name="delivery-optimization"></a>Übermittlungsoptimierung
 
-Clients von Windows 10 RS3 und höher laden Intune Win32-App-Inhalte mit einer Komponente zur Übermittlungsoptimierung auf den Windows 10-Client herunter. Die Übermittlungsoptimierung bietet Peer-zu-Peer-Funktionen, die standardmäßig eingeschaltet sind. Die Übermittlungsoptimierung kann mit einer Gruppenrichtlinie und in der Zukunft über Intune MDM konfiguriert werden. Weitere Informationen finden Sie unter [Übermittlungsoptimierung für Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+Clients von Windows 10 Version 1709 und höher laden Intune Win32-App-Inhalte mit einer Komponente zur Übermittlungsoptimierung auf den Windows 10-Client herunter. Die Übermittlungsoptimierung bietet Peer-zu-Peer-Funktionen, die standardmäßig eingeschaltet sind. Die Übermittlungsoptimierung kann mit dem Gruppenrichtlinien-Tool und über die Intune-Gerätekonfiguration konfiguriert werden. Weitere Informationen finden Sie unter [Übermittlungsoptimierung für Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
 ## <a name="install-required-and-available-apps-on-devices"></a>Installieren erforderlicher und verfügbarer Apps auf Geräten
 
@@ -248,10 +326,25 @@ Die folgende Abbildung zeigt dem Endbenutzer an, dass App-Änderungen am Gerät 
 ## <a name="toast-notifications-for-win32-apps"></a>Popupbenachrichtigungen für Win32-Apps 
 Bei Bedarf können Sie die Anzeige von Popupbenachrichtigungen für die Benutzer pro App-Zuweisung unterdrücken. Wählen Sie in Intune **Client-Apps** > **Apps** > App-Auswahl > **Zuweisungen** > **Gruppen einschließen**. 
 
+> [!NOTE]
+> Win32-Apps, die über die Intune-Verwaltungserweiterung installiert wurden, werden auf Geräten mit aufgehobener Registrierung nicht deinstalliert. Administratoren können Zuweisungsausnahmen nutzen, um Win32-Apps für BYOD-Geräte auszuschließen.
+
 ## <a name="troubleshoot-win32-app-issues"></a>Behandeln von Win32-App-Problemen
-Agentprotokolle auf dem Clientcomputer befinden sich häufig unter `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Sie können `CMTrace.exe` nutzen, um diese Protokolldateien anzuzeigen. *CMTrace.exe* kann unter [SCCM-Clienttools](https://docs.microsoft.com/sccm/core/support/tools) heruntergeladen werden. 
+Agentprotokolle auf dem Clientcomputer befinden sich häufig unter `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Sie können `CMTrace.exe` nutzen, um diese Protokolldateien anzuzeigen. *CMTrace.exe* kann unter [Configuration Manager-Tools](https://docs.microsoft.com/sccm/core/support/tools) heruntergeladen werden. 
 
 ![Screenshot der Agent-Protokolle auf dem Clientcomputer](./media/apps-win32-app-10.png)    
+
+> [!IMPORTANT]
+> Durch die entsprechenden Antischadsoftwareeinstellungen sollte die Überprüfung der folgenden Verzeichnisse ausgeschlossen werden, damit Win32-Branchenanwendungen ordnungsgemäß installiert und ausgeführt werden können:<p>
+> **Auf X64-Clientcomputern:**<br>
+> *C:\Program Files (x86)\Microsoft Intune Management Extension\Content*<br>
+> *C:\windows\IMECache*
+>  
+> **Auf X86-Clientcomputern:**<br>
+> *C:\Program Files\Microsoft Intune Management Extension\Content*<br>
+> *C:\windows\IMECache*
+
+Weitere Informationen zur Behandlung von Problemen mit Win32-Apps finden Sie unter [Win32 app installation troubleshooting (Problembehandlung bei der Win32-App-Installation)](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
 ### <a name="troubleshooting-areas-to-consider"></a>Zu berücksichtigende Problembehandlungsbereiche
 - Überprüfen Sie die Zielgruppenadressierung, um sicherzustellen, dass der Agent auf dem Gerät installiert ist – Win32-App, die auf eine Gruppe ausgerichtet ist, oder PowerShell-Skript, das auf eine Gruppe ausgerichtet ist, erstellt die Installationsrichtlinie für die Sicherheitsgruppe.

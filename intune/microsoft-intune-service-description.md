@@ -9,18 +9,20 @@ ms.date: 05/30/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 675e45a7f49a943cb57135c141a9331ba24fabe7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: d43c999cf5dc90d62b9409e3c4565502b773ddf4
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508225"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune-Dienstbeschreibung
 
@@ -35,7 +37,7 @@ Die Lösung lässt sich eng in Azure Active Directory (Azure AD) integrieren und
 Weitere Informationen zum Verwalten von Geräten und Apps und zum Schützen von Unternehmensdaten mit Intune finden Sie in der [Intune-Dokumentation](https://docs.microsoft.com/intune/).
 
 ## <a name="30-day-free-trial"></a>30-tägige kostenlose Testversion
-Sie können Intune zunächst mit einer 30-tägigen kostenlosen Testversion verwenden, die 100 Benutzerlizenzen enthält. Um Ihre kostenlose Testversion zu starten, [besuchen Sie die Anmeldeseite von Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Wenn Ihre Organisation über ein Enterprise Agreement oder einen vergleichbaren Volumenlizenzvertrag verfügt, wenden Sie sich an Ihren Microsoft-Vertreter, um Ihre kostenlose Testversion einzurichten.
+Sie können Intune zunächst mit einer 30-tägigen kostenlosen Testversion verwenden, die 100 Benutzerlizenzen enthält. Um Ihre kostenlose Testversion zu starten, [besuchen Sie die Anmeldeseite von Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Wenn Ihre Organisation über ein Enterprise Agreement oder einen vergleichbaren Volumenlizenzvertrag verfügt, wenden Sie sich an Ihren Microsoft-Vertreter, um Ihre kostenlose Testversion einzurichten.
 
 > [!NOTE]
 > Wenn Ihre Organisation bereits über ein Geschäfts- oder Schulkonto für Microsoft Online Services verfügt und Sie dieses Intune-Abonnement nach Ende der Testphase möglicherweise in die Produktionsumgebung übernehmen möchten, wählen Sie die **Anmelden**-Option auf dieser Seite. Zur Authentifizierung verwenden Sie das globale Administratorenkonto Ihrer Organisation. Dadurch wird sichergestellt, dass Ihre Intune-Testversion mit Ihrem bestehenden Geschäfts-, Schul- oder Unikonto verknüpft wird.
@@ -57,7 +59,7 @@ Da sich das Ökosystem für die mobile Geräteverwaltung durch Updates von Betri
 
 - [Neuerungen in Microsoft Intune](whats-new.md). Dieses Thema wird mit dem monatlichen Dienstupdate und zudem wöchentlich aktualisiert, wenn z.B. Apps wie die Unternehmensportal-App veröffentlicht werden.
 
-- Wichtige Dienstupdates werden auch im [Verwaltungsportal von Office 365](https://portal.office.com/Admin/Default.aspx) im Nachrichtencenter angekündigt. Wenn Sie die begleitende [mobilen Office 365-Admin-App](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) installieren, können Sie Benachrichtigungen auf Ihrem mobilen Gerät erhalten. Erfahren Sie mehr über das [Office 365-Nachrichtencenter](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
+- Wichtige Dienstupdates werden auch im [Microsoft 365 Admin Center](https://admin.microsoft.com/) im Nachrichtencenter angekündigt. Wenn Sie die begleitende [mobilen Office 365-Admin-App](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) installieren, können Sie Benachrichtigungen auf Ihrem mobilen Gerät erhalten. Erfahren Sie mehr über das [Office 365-Nachrichtencenter](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
 
     Einige hilfreiche Tipps:
 
@@ -76,7 +78,7 @@ Da sich das Ökosystem für die mobile Geräteverwaltung durch Updates von Betri
     - [Blog zum Intune-Support](https://blogs.technet.microsoft.com/intunesupport/)
 
 >[!Note]
->Sie können Intune-Dienststatus im [Verwaltungsportal von Office 365](https://portal.office.com/Admin/Default.aspx) überwachen. Wählen Sie im linken Bereich **Dienststatus** aus. Sie können auch die [mobile App für die Office 365-Verwaltung](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) zum Anzeigen des Dienststatus nutzen.
+>Sie können die Dienstintegrität von Intune im [Microsoft 365 Admin Center](https://admin.microsoft.com) überwachen. Wählen Sie im linken Bereich **Dienststatus** aus. Sie können auch die [mobile App für die Office 365-Verwaltung](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) zum Anzeigen des Dienststatus nutzen.
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Typen von Benachrichtigungen von Microsoft zum Intune-Dienst
 
@@ -101,7 +103,7 @@ You can set up Intune in several ways to manage and help protect your company's 
 - **Intune with System Center Configuration Manager.** Use the Configuration Manager management console to manage computers and mobile devices in your enterprise. This configuration can help you to manage all your organization’s devices through a single console, the Configuration Manager Admin Console. Configuration Manager supports large numbers of mobile devices, servers, and computers. For more about Configuration Manager, see [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](/sccm/mdm/understand/hybrid-mobile-device-management). For more help deciding which approach is right for you, see [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager](/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).--->
 
 ## <a name="language-support"></a>Sprachunterstützung
-Intune wird im Azure-Portal ausgeführt, das die folgenden Sprachen unterstützt: Chinesisch (Vereinfacht), Chinesisch (Traditionell), Tschechisch, Niederländisch, Englisch, Deutsch, Ungarisch, Italienisch, Japanisch, Portugiesisch (Brasilien), Portugiesisch (Portugal), Russisch, Spanisch, Französisch, Koreanisch, Polnisch, Schwedisch und Türkisch.
+Intune wird im Azure-Portal ausgeführt, das folgende Sprachen unterstützt: Chinesisch (Vereinfacht), Chinesisch (Traditionell), Tschechisch, Niederländisch, Englisch, Deutsch, Ungarisch, Italienisch, Japanisch, Portugiesisch (Brasilien), Portugiesisch (Portugal), Russisch, Spanisch, Französisch, Koreanisch, Polnisch, Schwedisch und Türkisch.
 
 Die Intune-Verwaltungskonsole und die mobilen Oberflächen für Benutzer unterstützen zusätzlich zu allen vom Azure-Portal unterstützten Sprachen außerdem Dänisch, Griechisch, Finnisch, Norwegisch und Rumänisch.
 

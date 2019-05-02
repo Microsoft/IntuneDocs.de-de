@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69cc0d732c9dc850d55acedf4e6dbae0f43f350a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506813"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Häufig gestellte Fragen zu MAM und App-Schutz
 
@@ -62,7 +63,7 @@ Jede App, die in das [Intune App SDK](/intune/app-sdk) integriert oder vom [Intu
 
 - Dem AAD-Konto des Endbenutzers muss eine Lizenz für Microsoft Intune zugewiesen sein. Informationen zum Zuweisen von Intune-Lizenzen zu Endbenutzern finden Sie unter [Verwalten von Intune-Lizenzen](/intune/licenses-assign).
 
-- Der Endbenutzer muss zu einer Sicherheitsgruppe gehören, für die eine App-Schutzrichtlinie gilt. Die gleiche App-Schutzrichtlinie muss für die verwendete App gelten. App-Schutzrichtlinien können in der Intune-Konsole im [Azure-Portal](https://portal.azure.com) erstellt und bereitgestellt werden. Sicherheitsgruppen können zurzeit im [Office-Portal](https://portal.office.com) erstellt werden.
+- Der Endbenutzer muss zu einer Sicherheitsgruppe gehören, für die eine App-Schutzrichtlinie gilt. Die gleiche App-Schutzrichtlinie muss für die verwendete App gelten. App-Schutzrichtlinien können in der Intune-Konsole im [Azure-Portal](https://portal.azure.com) erstellt und bereitgestellt werden. Sicherheitsgruppen können zurzeit im [Microsoft 365 Admin Center](https://admin.microsoft.com) erstellt werden.
 
 - Der Endbenutzer muss sich mit seinem AAD-Konto bei der App anmelden.
 
@@ -77,7 +78,7 @@ Jede App, die in das [Intune App SDK](/intune/app-sdk) integriert oder vom [Intu
 
 **Welche zusätzlichen Anforderungen gelten für die Verwendung der [Word-, Excel- und PowerPoint](https://products.office.com/business/office)-Apps?**
 
-- Mit dem AAD-Konto des Endbenutzers muss eine Lizenz für [Office 365 Business oder Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) verknüpft sein. Das Abonnement muss die Office-Apps auf mobilen Geräten enthalten und kann ein Cloudspeicherkonto mit [OneDrive for Business](https://onedrive.live.com/about/business/) umfassen. Office 365-Lizenzen können im [Office-Portal](https://portal.office.com) zugewiesen werden. Befolgen Sie diese [Anweisungen](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+- Mit dem AAD-Konto des Endbenutzers muss eine Lizenz für [Office 365 Business oder Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) verknüpft sein. Das Abonnement muss die Office-Apps auf mobilen Geräten enthalten und kann ein Cloudspeicherkonto mit [OneDrive for Business](https://onedrive.live.com/about/business/) umfassen. Office 365-Lizenzen können im [Microsoft 365 Admin Center](https://admin.microsoft.com) zugewiesen werden. Befolgen Sie dazu diese [Anweisungen](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
 - Der Benutzer muss über einen verwalteten Speicherort verfügen, der mithilfe der Funktion „Speichern unter“ unter der Einstellung für die Anwendungsschutzrichtlinie zum Verhindern von „Speichern unter“ konfiguriert wird. Wenn beispielsweise der verwaltete Speicherort OneDrive ist, muss die [OneDrive](https://onedrive.live.com/about/)-App in der Word-, Excel- oder PowerPoint-App des Endbenutzer konfiguriert werden.
 
@@ -170,6 +171,27 @@ Zugriffsrichtlinien für den Intune-App-Schutz werden in einer bestimmten Reihen
 
 Wenn verschiedene Arten von Einstellungen verarbeitet werden müssen, haben die Anforderungen hinsichtlich bestimmter App-Versionen Vorrang. Erst danach werden Anforderungen berücksichtigt, die eine Version des Android-Betriebssystems und Android-Patch-Versionen betreffen. Anschließend werden in derselben Reihenfolge mögliche Warnungen für sämtliche Einstellungstypen überprüft.
 
+**In Intune-App-Schutzrichtlinien können Administratoren festlegen, dass Endbenutzergeräte SafetyNet Attestation von Google für Android-Geräte übergeben müssen. Wie oft wird ein neues SafetyNet Attestation-Ergebnis an den Dienst gesendet?** <br><br> Eine neue Google Play-Dienstbestimmung wird in einem von Intune festgelegten Intervall an den IT-Administrator gesendet. Die Anzahl der Dienstaufrufe wird in Abhängigkeit von der Last gedrosselt; dieser Wert wird also intern verwaltet und kann nicht konfiguriert werden. Jede Aktion für die Einstellung von SafetyNet Attestation von Google, die von einem IT-Administrator konfiguriert wurde, wird auf Grundlage des zuletzt an Intune gemeldeten Ergebnisses zum Zeitpunkt des bedingten Starts ausgeführt. Wenn keine Daten vorhanden sind, wird der Zugriff abhängig davon gewährt, dass keine anderen Überprüfungen für den bedingten Start fehlschlagen, und der „Roundtrip“ des Google Play-Diensts zur Bestimmung der Nachweisergebnisse im Back-End startet. Wenn es beim Gerät zu Problemen kommt, wird der Benutzer asynchron benachrichtigt. Wenn die Daten veraltet sind, wird der Zugriff auf Grundlage des zuletzt gemeldeten Ergebnisses blockiert oder gewährt, und ein „Roundtrip“ des Google Play-Diensts zur Bestimmung der Nachweisergebnisse startet. Wenn es beim Gerät zu Problemen kommt, wird der Benutzer asynchron benachrichtigt.
+
+**In Intune-App-Schutz-Richtlinien können Administratoren festlegen, dass Endbenutzergeräte Signale über die Verify Apps-API von Google für Android-Geräte (API von Google für die Überprüfung von Apps für Android-Geräte) senden müssen. Wie können Endbenutzer die Überprüfung der App aktivieren, sodass der Zugriff für sie aufgrund einer solchen Richtlinie nicht blockiert wird?**<br><br> Die dafür erforderlichen Schritte unterscheiden sich leicht je nach Gerät. Grundsätzlich müssen Sie dafür den Google Play Store besuchen, dort auf **My apps & games** (Meine Apps und Spiele) klicken und dann auf das Ergebnis der letzten App-Überprüfung klicken. Dadurch gelangen Sie zum Play Protect-Menü. Sorgen Sie dafür, dass die Option **Scan device for security threats** (Gerät auf Sicherheitsbedrohungen überprüfen) aktiviert ist.
+
+**Was genau überprüft die SafetyNet Attestation-API von Google auf Android-Geräten eigentlich? Worin besteht der Unterschied zwischen den konfigurierbaren Werten von „Check basic integrity“ (Basisintegrität überprüfen) und „Check basic integrity & certified devices“ (Basisintegrität und zertifizierte Geräte überprüfen)?** <br><br>
+Für Intune werden die Google Play Protect SafetyNet-APIs verwendet, um die vorhandenen Überprüfungen auf Rootingerkennung für nicht registrierte Geräte zu ergänzen. Google hat diese APIs für Android-Apps entwickelt und verwaltet sie, wenn die Apps nicht auf gerooteten Geräten ausgeführt werden sollen. Sie kommen z. B. bei der Google Pay-App zum Einsatz. Google stellt zwar nicht alle Überprüfungen, die durchgeführt werden, um Rooting zu erkennen, öffentlich zur Verfügung; wir gehen jedoch davon aus, dass diese APIs Benutzer identifizieren können, die ihr Gerät gerootet haben. Diesen Benutzern kann der Zugriff dann verwehrt werden, oder ihre Unternehmenskonten können aus den Apps entfernt werden, für die Richtlinien aktiviert sind. Die Option „Check basic integrity“ (Basisintegrität überprüfen) informiert Sie über die allgemeine Integrität des Geräts. Für gerootete Geräte, Emulatoren, virtuelle Geräte und Geräte, die Anzeichen von Manipulationen aufweisen, schlägt die Überprüfung der grundlegenden Integrität fehl. Die Option „Check basic integrity & certified devices“ (Basisintegrität und zertifizierte Geräte überprüfen) informiert Sie über die Kompatibilität des Geräts mit Google-Diensten. Nur unveränderte Geräte, die von Google zertifiziert wurden, bestehen diese Überprüfung. Die folgenden Geräte bestehen die Überprüfung nicht:
+* Geräte, für die die Überprüfung der Basisintegrität fehlschlägt
+* Geräte mit entsperrtem Bootloader
+* Geräte mit einem benutzerdefinierten Systemimage/ROM
+* Geräte, für die der Hersteller entweder keine Google-Zertifizierung beantragt hat, oder für die diese nicht bestanden wurde 
+* Geräte mit einem Systemimage, das direkt aus den Quelldateien des Open Source-Programms für Android erstellt wurde
+* Geräte mit einem Systemimage, das sich noch in der Betaversion oder in der Entwicklervorschau befindet
+
+Technische Details finden Sie in der [Dokumentation von Google zu „SafetyNet Attestation“](https://developer.android.com/training/safetynet/attestation).
+
+**Beim Erstellen einer Intune-App-Schutzrichtlinie für Android-Geräte gibt es im Bereich „Conditional Launch“ (Bedingter Start) zwei ähnliche Überprüfungen. Sollte als Anforderung die Einstellung „SafetyNet device attestation“ (SafetyNet-Gerätenachweis) oder die Einstellung „jailbroken/rooted devices“ (Mit Jailbreak oder Rooting manipulierte Geräte) verwendet werden?** <br><br>
+Die Überprüfungen im Rahmen der SafetyNet-API von Google Play Protect erfordern, dass der Endbenutzer online ist, zumindest während der Zeit, in der der „Roundtrip“ zur Bestimmung von Nachweisergebnissen ausgeführt wird. Wenn der Endbenutzer offline ist, kann der IT-Administrator immer noch davon ausgehen, dass ein Ergebnis der Einstellung „jailbroken/rooted devices“ (Mit Jailbreak oder Rooting manipulierte Geräte) erzwungen wird. Vor diesem Hintergrund kommt der Wert „Offline grace period“ (Offlinetoleranzperiode) ins Spiel, wenn der Endbenutzer zu lange offline war, und sobald der Zeitwert erreicht wird, wird der Zugriff auf Unternehmens- oder Schuldaten solange blockiert, bis wieder Netzwerkzugriff besteht. Wenn beide Einstellungen aktiviert werden, steht Ihnen ein mehrstufiger Ansatz zur Verfügung, um die Integrität von Endbenutzergeräten zu gewährleisten, was wichtig ist, wenn Endbenutzer über Mobilgeräte auf Unternehmens- und Schuldaten zugreifen. 
+
+**Für die Schutzrichtlinieneinstellungen für Apps, die APIs von Google Play Protect verwenden, muss Google Play Services funktionieren. Was ist, wenn Google Play Services am Standort des Endbenutzers nicht zulässig sind?**<br><br>
+Für die beiden Einstellungen „SafetyNet device attestation“ (SafetyNet-Gerätenachweis) und „Threat scan on apps“ (Apps auf Bedrohungen überprüfen) muss die von Google bestimmte Version von Google Play Services ordnungsgemäß funktionieren. Da diese Einstellungen in den Sicherheitsbereich fallen, werden die Endbenutzer blockiert, für die diese Einstellungen gelten, wenn diese nicht die entsprechende Version von Google Play Services verwenden oder keinen Zugriff auf Google Play Services haben. 
+
 ## <a name="app-experience-on-ios"></a>Apps unter iOS
 **Was geschieht, wenn ich einen Fingerabdruck oder ein Gesicht auf meinem Gerät hinzufüge oder entferne?**
 Die Richtlinien für den Intune-App-Schutz ermöglichen es Ihnen, den App-Zugriff nur auf Benutzer mit Intune-Lizenz zu beschränken. Eine der Möglichkeiten, den Zugriff auf die App zu steuern, besteht darin, Apple Touch ID oder Face ID auf unterstützten Geräten zu erfordern. Intune implementiert ein Verhalten, bei dem Intune den Benutzer bei Änderungen an der biometrischen Datenbank des Geräts zur PIN-Eingabe auffordert, wenn der nächste Wert des Inaktivitätstimeouts erfüllt ist. Zu Änderungen an biometrischen Daten zählen das Hinzufügen oder Entfernen von Fingerabdrücken oder Gesichtern. Wenn der Intune-Benutzer keine PIN festgelegt hat, wird er zu einem Fenster für die Einrichtung einer Intune-PIN weitergeleitet.
@@ -184,20 +206,13 @@ Zugriffsrichtlinien für den Intune-App-Schutz werden in einer bestimmten Reihen
 
 Wenn verschiedene Arten von Einstellungen verarbeitet werden müssen, haben die Anforderungen hinsichtlich bestimmter Versionen des Intune App SDK Vorrang. Erst danach werden Anforderungen berücksichtigt, die eine Version einer App oder eines iOS-Betriebssystems betreffen. Anschließend werden in derselben Reihenfolge mögliche Warnungen für sämtliche Einstellungstypen überprüft. Es wird empfohlen, die Anforderung, die die Intune App SDK-Version betrifft, nur unter Anleitung des Intune-Produktteams für grundlegende Blockierungsszenarios zu konfigurieren.
 
-## <a name="app-protection-policies---policy-refresh"></a>App-Schutzrichtlinien – Richtlinienaktualisierung
-- Apps checken sich alle 30 Minuten beim APP-Dienst ein.
-- Der 30-minütige Schwellenwert basiert auf einem Timer.
-    - Wenn die App bei 30 Minuten aktiv ist, checkt sie sich bei 30 Minuten ein.
-    - Wenn sich die App bei 30 Minuten im Energiesparmodus befindet, checkt sie sich beim nächsten Fokus ein.
-- Wenn einem Benutzer keine Richtlinie zugewiesen ist, erfolgt das Einchecken alle acht Stunden.
-- Wenn keine Intune-Lizenz zugewiesen ist, erfolgt das Einchecken alle 24 Stunden.
-
 
 ## <a name="see-also"></a>Siehe auch
 - [Implementieren Ihres Intune-Plans](planning-guide-onboarding.md)
 - [Testen und Überprüfen von Intune](planning-guide-test-validation.md)
 - [Android-Richtlinieneinstellungen für die Verwaltung mobiler Apps in Microsoft Intune](app-protection-policy-settings-android.md)
 - [iOS-Richtlinieneinstellungen für die Verwaltung mobiler Apps](app-protection-policy-settings-ios.md)
-- [Überprüfen Ihrer App-Schutzrichtlinien](app-protection-policies-validate.md)
+- [App protection policies policy refresh (Zustellung von App-Schutzrichtlinien)](app-protection-policy-delivery.md)
+- [Überprüfen Ihrer App-Schutzrichtlinien](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
 - [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Apps ohne Geräteregistrierung](app-configuration-policies-managed-app.md)
 - [Anfordern von Support für Microsoft Intune](get-support.md)

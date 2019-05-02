@@ -10,6 +10,7 @@ ms.date: 10/5/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 ms.reviewer: angerobe
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f9b0cb07e6dcf192aa25c13e8637934c46d6799
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 65c19f58e41e4f8a739ae16a1b56703fb743b738
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235326"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513110"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrieren von Windows-Geräten in Intune mithilfe von Windows Autopilot  
 Windows Autopilot vereinfacht das Registrieren von Geräten in Intune. Das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems ist ein langwieriger Prozess. Es kann ebenfalls Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und Autopilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von Autopilot-Geräten verwenden, können Sie Richtlinien, Profile und Apps usw. verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -102,6 +103,7 @@ Autopilot-Bereitstellungsprofile werden verwendet, um die Autopilot-Geräte zu k
 2. Wählen Sie auf dem entsprechenden Profilblatt die Option **Zuweisungen**. 
 3. Wählen Sie **Gruppen auswählen** und dann auf dem Blatt **Gruppen auswählen** die Gruppe(n), die Sie dem Profil zuweisen möchten, und wählen Sie anschließend **Auswählen**.
 
+
 > [!NOTE]
 > Intune führt regelmäßig eine Überprüfung auf neuen Geräten in den zugewiesenen Gruppen durch und beginnt dann mit der Zuweisung von Profilen zu diesen Geräten. Dieser Vorgang kann einige Minuten dauern. Vor der Bereitstellung eines Geräts stellen Sie sicher, dass der Vorgang abgeschlossen ist.  Sehen Sie unter **Geräteregistrierung** > **Windows-Registrierung ** > **Gerät** nach, wo der Profilstatus von „Nicht zugewiesen“ auf „Wird zugewiesen“ und schließlich auf „Zugewiesen“ geändert werden sollte. 
 
@@ -117,7 +119,7 @@ Nachdem Sie ein Autopilot-Bereitstellungsprofil erstellt haben, können Sie best
 > [!NOTE]
 > Änderungen am Profil werden für die diesem Profil zugewiesenen Geräte angewendet. Das aktualisierte Profil wird jedoch nicht auf ein Gerät angewendet, das bereits bei Intune registriert ist, bis das Gerät zurückgesetzt und erneut registriert wurde.
 
-## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Warnungen für nicht zugewiesene Windows Autopilot-Geräte <!-- 163236 -->  
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Warnungen für nicht zugewiesene Windows Autopilot-Geräte  <!-- 163236 -->  
 
 Warnungen zeigen an, wie viele Autopilot-Programmgeräte keine Autopilot-Bereitstellungsprofile aufweisen. Verwenden Sie die Informationen aus der Warnung, um Profile zu erstellen und sie den nicht zugeordneten Geräten zuzuweisen. Wenn Sie auf die Warnung klicken, sehen Sie die vollständige Liste der Windows Autopilot-Geräte zusammen mit detaillierten Informationen.
 

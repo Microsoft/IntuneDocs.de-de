@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Fügen Sie Gruppen zum Organisieren von Benutzern und Geräten nach Geografie, Abteilung oder nach Hardwareeigenschaften hinzu.
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 06/13/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6e7d45c4f1c990123e310c8910e9b7bd3cf0ce4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 9e0e3994addf8722adc8606f20517bcd4aeb7acd
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61514068"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten
 Intune verwendet Azure Active Directory-Gruppen (AD) zur Verwaltung von Geräten und Benutzern. Als Intune-Administrator können Sie Gruppen entsprechend der Anforderungen Ihrer Organisation einrichten. Sie können Gruppen erstellen, um Benutzer oder Geräte nach geografischem Standort, Abteilung oder Hardwareeigenschaften zu organisieren. Sie können Gruppen zur bedarfsgerechten Verwaltung von Aufgaben verwenden. So können Sie beispielsweise Richtlinien für viele Benutzer festlegen oder Apps für eine Reihe von Geräten bereitstellen.
@@ -35,11 +36,11 @@ Sie können die folgenden Gruppentypen hinzufügen:
 
 Führen Sie die folgenden Schritte aus, um eine neue Gruppe zu erstellen:
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie im Bereich **Intune** die Option **Gruppen** und dann im Bereich **Alle Gruppen** die Option **Neue Gruppe** aus.
    ![Screenshot des Azure-Portals mit ausgewählter Option „Neue Gruppe“](./media/groups-add-new.png)
 4. Wählen Sie unter **Gruppentyp** eine der folgenden Optionen aus:
-    - **Sicherheit**: Sicherheitsgruppen sind eine gute Ressource zum Auffüllen von Benutzergruppen. Da in Sicherheitsgruppen definiert wird, wer auf welche Ressourcen zugreifen kann, lassen sich Sicherheitsgruppen oft gut in Intune-Benutzergruppen übersetzen. Sicherheitsgruppen, die von Active Directory nach Azure Active Directory synchronisiert oder direkt mithilfe des Office 365 Admin Centers oder des Azure Portals in Azure Active Directory erstellt werden, stehen Ihnen beim Erstellen von Benutzergruppen in Intune zur Verfügung.
+    - **Sicherheit**: Sicherheitsgruppen sind eine gute Ressource zum Auffüllen von Benutzergruppen. Da in Sicherheitsgruppen definiert wird, wer auf welche Ressourcen zugreifen kann, lassen sich Sicherheitsgruppen oft gut in Intune-Benutzergruppen übersetzen. Sicherheitsgruppen, die aus Active Directory mit Azure Active Directory synchronisiert oder direkt mithilfe des Microsoft 365 Admin Centers oder des Azure-Portals in Azure Active Directory erstellt werden, stehen Ihnen beim Erstellen von Benutzergruppen in Intune zur Verfügung.
     - **Office 365**
 
 5. Geben Sie einen **Namen** und eine **Beschreibung** für die neue Gruppe ein. Diese Eigenschaften werden nur im Verwaltungsportal und nicht den Benutzern angezeigt.

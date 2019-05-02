@@ -1,43 +1,43 @@
 ---
-title: Mobile Threat Defense in Microsoft Intune | Microsoft Intune
+title: Mobile Threat Defense mit Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Verwenden Sie Intune Mobile Threat Defense (MTD) mit Ihrem Mobile Threat Defense-Partner, um den Zugriff auf Unternehmensressourcen basierend auf dem Geräterisiko zu schützen.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/28/2017
-ms.topic: article
+ms.date: 03/20/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
 ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 18161e8293ae92420f9437dab18e008e8e57b93a
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e364ad88591b8ecc945702659255d9378723624f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513014"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Was ist die Mobile Threat Defense-Integration in Intune?
-
-
-Mit Intune Mobile Threat Defense-Connectors können Sie Ihren ausgewählten Mobile Threat Defense-Hersteller als Informationsquelle für Ihre Konformitätsrichtlinien und bedingte Zugriffsregeln nutzen. Dadurch können IT-Administratoren insbesondere für gefährdete Mobilgeräte eine Schutzebene zu ihren Unternehmensressourcen wie Exchange und SharePoint hinzufügen.
+Intune kann Daten von einem Mobile Threat Defense-Hersteller als Informationsquelle für Kompatibilitätsrichtlinien und bedingte Zugriffsregeln integrieren. Sie können diese Informationen verwenden, um Unternehmensressourcen wie Exchange und SharePoint zu schützen, indem Sie den Zugriff von manipulierten mobilen Geräten blockieren.  
 
 ## <a name="what-problem-does-this-solve"></a>Welches Problem wird dadurch gelöst?
+Die Integration von Informationen von einem Mobile Threat Defense-Hersteller unterstützt Sie dabei, Ihre Unternehmensressourcen vor Bedrohungen zu schützen, die mobile Plattformen beeinträchtigen.  
 
-Unternehmen müssen vertrauliche Daten vor auftretenden Bedrohungen schützen. Dazu gehören physische, App-und netzwerkbasierte Bedrohungen sowie Sicherheitsrisiken beim Betriebssystem.
-
-In der Vergangenheit haben Firmen PCs vor Angriffen proaktiv geschützt, während mobile Geräte nicht überwacht wurden und ungeschützt blieben. Mobile Plattformen bieten integrierten Schutz in Form von App-Isolierung und sicherheitsgeprüfter App Stores für Verbraucher, doch diese Plattformen bleiben weiterhin für komplexe Angriffe anfällig. Immer mehr Mitarbeiter nutzen ihre Geräte für die Arbeit und benötigen Zugriff auf vertrauliche Informationen. Geräte müssen gegen zunehmend raffinierter werdende Angriffe geschützt werden.
+Normalerweise schützen Firmen PCs proaktiv vor Sicherheitsrisiken und Angriffen, während mobile Geräte oft nicht überwacht werden und ungeschützt bleiben. Während mobile Plattformen integrierten Schutz in Form von App-Isolierung und sicherheitsgeprüfter App Stores für Verbraucher bieten, bleiben diese Plattformen anfällig für komplexe Angriffe. Da mehr Angestellte Geräte für die Arbeit und für den Zugriff auf vertrauliche Informationen verwenden, unterstützen Sie die Informationen des Mobile Threat Defense-Herstellers dabei, Geräte und Ihre Ressourcen vor immer komplexeren Angriffen zu schützen.  
 
 ## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Wie funktionieren die Intune Mobile Threat Defense-Connectors?
 
-Der Connector schützt Unternehmensressourcen, indem er einen Kommunikationskanal zwischen Intune und Ihrem ausgewählten Mobile Threat Defense-Hersteller erstellt. Intune Mobile Threat Defense-Partner bieten intuitive und leicht bereitzustellende Anwendungen für Mobilgeräte, die aktiv Informationen zu Bedrohungen überprüfen und analysieren, um sie mit Intune für Berichts- oder Erzwingungszwecke zu teilen. 
+Intune verwendet einen Mobile Threat Defense-Connector, um einen Kommunikationskanal zwischen Intune und Ihrem ausgewählten Mobile Threat Defense-Hersteller zu erstellen. Mobile Threat Defense-Partner von Intune bieten intuitive, einfach anwendbare Anwendungen für mobile Geräte an. Diese Anwendungen überprüfen und analysieren aktiv Bedrohungsinformationen und teilen diese mit Intune. Intune verwendet diese Daten dann entweder für Berichte oder für Erzwingungen.  
 
-Wenn eine verbundene Mobile Threat Defense-App z.B. einem Mobile Threat Defense-Hersteller mitteilt, dass ein Telefon in Ihrem Netzwerk aktuell mit einem Netzwerk verbunden ist, das anfällig für „Man in the Middle“-Angriffe ist, wird diese Information an eine entsprechende Risikostufe (niedrig/mittel/hoch) weitergeleitet. Diese kann anschließend mit Ihren konfigurierten Zulassungen der Risikostufe in Intune verglichen werden, um zu bestimmen, ob der Zugriff auf bestimmte Ressourcen Ihrer Wahl aufgehoben werden sollte, während das Gerät gefährdet ist.
+Beispiel: Eine verbundene Mobile Threat Defense-App meldet dem Mobile Threat Defense-Hersteller, dass ein Telefon in Ihrem Netzwerk gegenwärtig mit einem Netzwerk verbunden ist, das für Man-in-the-Middle-Angriffe anfällig ist. Diese Informationen werden in eine entsprechende Risikostufe eingeteilt: niedrig, mittel oder hoch. Die Risikostufe wird dann mit den Toleranzwerten für Risikostufen verglichen, die Sie in Intune festgelegt haben. Auf Grundlage dieses Vergleichs kann der Zugriff auf bestimmte Ressourcen, die Sie auswählen, widerrufen werden, während das Gerät manipuliert ist.
 
 ## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Welche Daten erfasst Intune für Mobile Threat Defense?
 
@@ -80,3 +80,5 @@ Lernen Sie, wie Sie den Zugriffs auf Unternehmensressourcen auf der Basis von Ge
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)
 - [Pradeo](pradeo-mobile-threat-defense-connector.md)
 - [Better Mobile](better-mobile-threat-defense-connector.md)
+- Sophos (weitere Informationen folgen bald)
+- Wandera (weitere Informationen folgen bald)

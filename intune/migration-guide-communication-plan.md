@@ -1,26 +1,28 @@
 ---
 title: Planen der Kommunikation für die Migration
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Dieser Artikel bietet einen Kommunikationsplan und eine Strategie für die Migration zu Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e6a52506-2d29-41f7-a171-5d684a740dd4
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: e19ce1aa39d6402ccf1de93af493457b0a10d0b8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 08fcda324d2c3c397deb99924d731ed4d4512651
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490147"
 ---
 # <a name="plan-communications"></a>Planen der Kommunikation
 
@@ -57,6 +59,8 @@ Intune verfügt über zusätzliche Vorlagen, die Sie zur Förderung der Geräter
 -   Die [Endbenutzer-Registrierungsvorlage für IT-Administratoren von Intune](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) ist ein anpassbares Word-Dokument, das erklärt, wie Android-, iOS- und Mac-Geräte in Intune registriert werden.
 
 -   [FastTrack for EMS how to guides & emails (Die Anleitungen und E-Mails zu FastTrack für EMS)](https://gallery.technet.microsoft.com/FastTrack-for-EMS-How-To-f170da4c) können mit dem Logo Ihres Unternehmens versehen werden, um die Einführung von Intune und EMS innerhalb Ihrer Organisation voranzubringen.
+
+-   Geben Sie die [URL der Unternehmensportal-App](http://go.microsoft.com/fwlink/?LinkID=396941) für Ihre Android-, iOS- und Windows-Benutzer frei. Diese URL führt zum jeweiligen Eintrag der Unternehmensportal-App auf Android-, iOS- und Windows-Geräten.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

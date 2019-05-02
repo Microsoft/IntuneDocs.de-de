@@ -1,26 +1,29 @@
 ---
-title: Verwalten der Datenübertragung zwischen iOS-Apps | Microsoft Intune
+title: Verwalten der Datenübertragung zwischen iOS-Apps
+titleSuffix: Microsoft Intune
 description: Hier finden Sie Informationen zur Verwendung der Richtlinien zur Verwaltung mobiler Apps in Microsoft Intune zum Verwalten der Datenübertragung zwischen Apps.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/28/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bb109f8c837fe8848ad8cb19c930de765ed381d1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55229898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509510"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune
 
@@ -49,11 +52,15 @@ Die Konfiguration der UPN-Einstellung ist für Geräte **erforderlich**, die mit
 
 2.  Stellen Sie die Apps und das E-Mail-Profil bereit, das mit Intune oder der MDM-Lösung eines Drittanbieters verwaltet werden soll, indem Sie die folgenden allgemeinen Schritte ausführen. Dies wird auch im *Beispiel 1* behandelt.
 
-3.  Stellen Sie die App mithilfe der folgenden App-Konfigurationseinstellungen bereit:
+3.  Stellen Sie die App mit den folgenden App-Konfigurationseinstellungen für das verwaltete Gerät bereit:
 
       **key** = IntuneMAMUPN, **value** = <username@company.com>
 
       Beispiel: [‘IntuneMAMUPN’, ‚jondoe@microsoft.com‘]
+      
+       > [!NOTE]
+       > In Intune muss die App-Konfigurationsrichtlinie für den Registrierungstyp „Verwaltete Geräte“ ausgelegt sein.
+       > Zudem muss die App entweder aus dem Intune-Unternehmensportal installiert werden, wenn sie als verfügbar festgelegt ist, oder bei Bedarf mithilfe von Push an das Gerät übertragen werden. 
 
 4.  Stellen Sie die Richtlinie **Open in Management** mithilfe von Intune oder Ihrem MDM-Anbieter eines Drittanbieters für registrierte Geräte bereit.
 

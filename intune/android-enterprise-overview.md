@@ -1,15 +1,16 @@
 ---
-title: Verwalten von Android-Arbeitsprofilgeräten in Microsoft Intune
-titlesuffix: ''
-description: Microsoft Intune verwaltet Android-Arbeitsprofilgeräte, um zusätzliche Verwaltungsfunktionen und zusätzlichen Datenschutz zu bieten, wenn Benutzer ihre Android-Geräte für die Arbeit verwenden.
+title: Verwalten von Android Enterprise-Arbeitsprofilgeräten in Microsoft Intune
+titleSuffix: ''
+description: Microsoft Intune verwaltet Android Enterprise-Arbeitsprofilgeräte, um zusätzliche Verwaltungsfunktionen und zusätzlichen Datenschutz zu bieten, wenn Benutzer ihre privaten Android-Geräte für die Arbeit verwenden.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2cc3c960-1fdd-47ca-a693-420d47b403de
 ms.reviewer: chrisbal
@@ -17,36 +18,36 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 481f1231dd66b84b59599534c2ee3810f8bdeaf8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 305ed5c18ad0e8beeaa47bc644266d4cb19f80e6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55849039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501050"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Verwalten von Android-Arbeitsprofilgeräten mit Intune
 
-Android Enterprise eine Reihe von Features und Diensten bereit, die Ihre privaten Apps und Daten von Ihrem Arbeitsprofil von Geschäfts-Apps und -daten trennt. Android Enterprise bietet zusätzliche Verwaltungsfunktionen und zusätzlichen Datenschutz, wenn Benutzer ihre Android-Geräte für die Arbeit verwenden. 
+Android Enterprise bietet mehrere Registrierungsoptionen, die Benutzer mit den aktuellsten und sichersten Features versorgen. Mit einer Registrierung für ein Android Enterprise-Arbeitsprofil stehen eine Reihe von Features und Diensten bereit, die Ihre privaten Apps und Daten von Ihren Geschäfts-Apps und -daten trennen. Außerdem stehen zusätzliche Verwaltungsfunktionen und zusätzlicher Datenschutz zur Verfügung, wenn Benutzer ihre privaten Android-Geräte für die Arbeit verwenden. 
 
 ## <a name="supported-devices"></a>Unterstützte Geräte
 
-Verwaltungsfunktionen von Android Enterprise sind abhängig von Features, die Teil der aktuelleren Android-Betriebssystems sind. Für Geräte, die Android Enterprise nicht unterstützen, bleibt die konventionelle Android-Verwaltung verfügbar. Weitere Informationen finden Sie im Artikel zu den [Android Enterprise-Anforderungen](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Die Verwaltungsfunktionen von Android Enterprise sind abhängig von Features, die Teil der aktuelleren Android-Betriebssysteme sind. Für Geräte, die Android Enterprise nicht unterstützen, bleibt die konventionelle Android-Verwaltung verfügbar. Weitere Informationen finden Sie im Artikel zu den [Android Enterprise-Anforderungen](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 ## <a name="onboarding"></a>Onboarding
 
-Vor dem Registrieren von Android-Arbeitsprofilgeräten müssen Sie einige Onboardingschritte abschließen. Durch diese Schritte wird eine Verbindung zwischen Ihrem Intune-Mandanten und dem Google Play for Work-Dienst hergestellt. Weitere Informationen finden Sie unter [Enable enrollment of Android work profile devices (Aktivieren der Registrierung für Android-Arbeitsprofilgeräte)](android-work-profile-enroll.md).
+Vor dem Registrieren von Android-Arbeitsprofilgeräten müssen Sie einige Onboardingschritte abschließen. Durch diese Schritte wird eine Verbindung zwischen Ihrem Intune-Mandanten und Managed Google Play hergestellt. Weitere Informationen finden Sie unter [Enable enrollment of Android work profile devices (Aktivieren der Registrierung für Android-Arbeitsprofilgeräte)](android-work-profile-enroll.md).
 
 ## <a name="work-profile-management"></a>Arbeitsprofilverwaltung
 
-Wenn Sie ein Android-Arbeitsprofilgerät mit Intune verwalten, verwalten Sie nicht das gesamte Gerät. Das Verwalten von Funktionen wirkt sich nur auf das Arbeitsprofil aus, das während der Registrierung auf dem Gerät erstellt wurde. Alle Apps, die dem Gerät mit Intune bereitgestellt werden, werden auf dem Arbeitsprofil installiert. App-Symbole im Arbeitsprofil unterscheiden sich von den Symbolen privater Apps auf dem Gerät. Alle Android-Apps und Daten außerhalb des Android Enterprise-Bereichs des Geräts bleiben privat und unter der Kontrolle des Endbenutzers. Benutzer können im privaten Bereich alle Apps installieren, die sie installieren möchten. Administratoren können Apps und Aktionen im Arbeitsprofil verwalten und überwachen.
+Wenn Sie ein Android Enterprise-Arbeitsprofilgerät mit Intune verwalten, verwalten Sie nicht das gesamte Gerät. Das Verwalten von Funktionen wirkt sich nur auf das Arbeitsprofil aus, das während der Registrierung auf dem Gerät erstellt wurde. Alle Apps, die dem Gerät mit Intune bereitgestellt werden, werden auf dem Arbeitsprofil installiert. App-Symbole im Arbeitsprofil unterscheiden sich von den Symbolen privater Apps auf dem Gerät. Alle Android-Apps und Daten außerhalb des Android Enterprise-Bereichs des Geräts bleiben privat und unter der Kontrolle des Endbenutzers. Benutzer können im privaten Bereich alle Apps installieren, die sie installieren möchten. Administratoren können Apps und Aktionen im Arbeitsprofil verwalten und überwachen.
 
 Intune bietet eine Vielzahl integrierter allgemeiner Einstellungen, die Sie auf Android-Arbeitsprofilgeräten konfigurieren können. Weitere Informationen finden Sie unter [Hinzufügen einer Gerätekonformitätsrichtlinie für Android for Work-Geräte in Intune](compliance-policy-create-android-for-work.md).
 
 ## <a name="app-publishing-and-distribution"></a>Veröffentlichung und Verteilung von Apps
 
-Der Google Play for Work-Dienst ist integraler Bestandteil der App-Verteilung und -Verwaltung von Android Enterprise. Alle für Android-Arbeitsprofilgeräte im Arbeitsprofil bereitgestellten Apps stammen vom Managed Google Play-Dienst. Zum Verwalten und Bereitstellen von Apps im Play Store melden Sie sich auf der Google Play-Website mit den Administratoranmeldeinformationen für die Google-Verwaltung Ihres Unternehmens an. Sie können Apps für die Android Enterprise-Bereitstellung genehmigen, damit sie in den Arbeitsprofilen der Geräte angezeigt werden. Diese Apps werden dann mit der Intune-Konsole synchronisiert, wo sie mithilfe von Intune verwaltet und bereitgestellt werden können. Von Ihrer Organisation entwickelte branchenspezifische Apps (Line of Business, LOB) müssen mithilfe der Veröffentlichungskonsole für Android-Apps von Google für Managed Google Play veröffentlicht werden. Branchenspezifische Apps müssen in der Veröffentlichungskonsole für Android-Apps für den Zugriff auf Ihre Organisation konfiguriert werden.
+Managed Google Play ist integraler Bestandteil der App-Verteilung und -Verwaltung von Android Enterprise. Alle für Android Enterprise-Arbeitsprofilgeräte im Arbeitsprofil bereitgestellten Apps stammen vom Managed Google Play-Dienst. Zum Verwalten und Bereitstellen von Apps im Play Store melden Sie sich auf der Google Play-Website mit den Administratoranmeldeinformationen für die Google-Verwaltung Ihres Unternehmens an. Sie können Apps für die Android Enterprise-Bereitstellung genehmigen, damit sie in den Arbeitsprofilen der Geräte angezeigt werden. Diese Apps werden dann mit der Intune-Konsole synchronisiert, wo sie mithilfe von Intune verwaltet und bereitgestellt werden können. Von Ihrer Organisation entwickelte branchenspezifische Apps (Line of Business, LOB) müssen mithilfe der Veröffentlichungskonsole für Android-Apps von Google für Managed Google Play veröffentlicht werden. Branchenspezifische Apps müssen in der Veröffentlichungskonsole für Android-Apps für den Zugriff auf Ihre Organisation konfiguriert werden.
 
-Die Installation von Apps kann ohne Eingreifen des Benutzers, und ohne dass der Benutzer **Installation aus unbekannten Quellen** zulassen muss, erfolgen. Zum Suchen nach und Installieren optionaler oder verfügbarer Apps können die Benutzer den Play for Work Store auf ihren Geräten durchsuchen. Weitere Informationen finden Sie unter [Zuweisen von Apps zu Android-Arbeitsprofilgeräten mit Intune](apps-add-android-for-work.md).
+Die Installation von Apps kann ohne Eingreifen des Benutzers, und ohne dass der Benutzer **Installation aus unbekannten Quellen** zulassen muss, erfolgen. Zum Suchen nach und Installieren optionaler oder verfügbarer Apps können die Benutzer den Play for Work Store auf ihren Geräten durchsuchen. Weitere Informationen finden Sie unter [Zuweisen von Apps zu Android Enterprise-Arbeitsprofilgeräten mit Intune](apps-add-android-for-work.md).
 
 ## <a name="app-configuration"></a>App-Konfiguration
 
@@ -58,15 +59,15 @@ Android Enterprise stellt keine Standard-E-Mail-App bzw. kein natives E-Mail-Pro
 
 Intune bietet Konfigurationsvorlagen für Gmail- und Nine Work-Apps, wenn diese als Work-Apps verwaltet werden. Andere E-Mail-Apps, die App-Konfigurationsprofile unterstützen, können mit Konfigurationsrichtlinien für mobile Apps konfiguriert werden.
 
-Wenn Sie bedingten Exchange ActiveSync-Zugriff für Android-Arbeitsprofilgeräte verwenden, ziehen Sie entweder die Gmail- oder Nine Work-E-Mail-App in Erwägung. Die Microsoft Outlook for Android-App oder jede andere E-Mail-App, die moderne Authentifizierung über ADAL verwendet, wird ebenfalls unterstützt. Weitere Informationen finden Sie unter [Konfigurieren von E-Mail-Einstellungen in Microsoft Intune](email-settings-configure.md).
+Wenn Sie bedingten Exchange ActiveSync-Zugriff für Android Enterprise-Arbeitsprofilgeräte verwenden, sollten Sie entweder die Gmail- oder Nine Work-E-Mail-App in Erwägung ziehen. Die Microsoft Outlook for Android-App oder jede andere E-Mail-App, die moderne Authentifizierung über ADAL verwendet, wird ebenfalls unterstützt. Weitere Informationen finden Sie unter [Konfigurieren von E-Mail-Einstellungen in Microsoft Intune](email-settings-configure.md).
 
 ## <a name="app-protection-policies"></a>App-Schutzrichtlinien
 
-Angewendete App-Schutzrichtlinien werden im Arbeitsprofil und im persönlichen Profil vollständig unterstützt. Unter https://play.google.com/apps/publish können Sie branchenspezifische Apps in der Veröffentlichungskonsole für Android-Apps veröffentlichen. Diese Konsole enthält eine Option, mit der Sie Apps für Ihr Unternehmen als privat kennzeichnen können. Weitere Informationen finden Sie unter [Hinzufügen einer Gerätekonformitätsrichtlinie für Android for Work-Geräte in Intune](compliance-policy-create-android-for-work.md). Allgemeine Informationen zu App-Schutzrichtlinien finden Sie unter [Was sind App-Schutzrichtlinien?](app-protection-policy.md)
+Angewendete App-Schutzrichtlinien werden im Arbeitsprofil und im persönlichen Profil vollständig unterstützt. Unter https://play.google.com/apps/publish können Sie branchenspezifische Apps in der Veröffentlichungskonsole für Android-Apps veröffentlichen. Diese Konsole enthält eine Option, mit der Sie Apps für Ihr Unternehmen als privat kennzeichnen können. Weitere Informationen finden Sie unter [Add a device compliance policy for Android Enterprise work profile devices in Intune (Hinzufügen einer Gerätekonformitätsrichtlinie für Android Enterprise-Arbeitsprofilgeräte in Intune)](compliance-policy-create-android-for-work.md). Allgemeine Informationen zu App-Schutzrichtlinien finden Sie unter [Was sind App-Schutzrichtlinien?](app-protection-policy.md)
 
 ## <a name="vpn-profiles"></a>VPN-Profile
 
-VPN-Unterstützung entspricht Android VPN-Profilen. Für Android Enterprise sind prinzipiell die gleichen VPN-Anbieter und grundlegenden Konfigurationsoptionen verfügbar. Es gibt nur dir folgenden zwei Unterschiede:
+VPN-Unterstützung entspricht Android VPN-Profilen. Für die Android Enterprise-Verwaltung sind prinzipiell die gleichen VPN-Anbieter und grundlegenden Konfigurationsoptionen verfügbar. Es gibt die folgenden zwei Unterschiede:
 
 -  **Arbeitsprofilbezogenes VPN**: VPN-Verbindungen sind auf die Apps beschränkt, die für das Arbeitsprofil bereitgestellt werden. Nur von Android Enterprise verwaltete Apps können die VPN-Verbindung verwenden. Persönliche Apps auf dem Gerät können eine verwaltete VPN-Verbindung nicht verwenden. Weitere Informationen finden Sie im Artikel zu den [Android Enterprise-VPN-Einstellungen](vpn-settings-android.md#android-enterprise-vpn-settings).
 
@@ -77,7 +78,7 @@ VPN-Unterstützung entspricht Android VPN-Profilen. Für Android Enterprise sind
 
 ## <a name="certificate-profiles"></a>Zertifikatprofile
 
-Die gleichen Zertifikatprofil-Konfigurationsoptionen, die für die Android-Verwaltung zur Verfügung stehen, sind auf Android-Arbeitsprofilgeräten verfügbar. Android Enterprise bietet verbesserte Zertifikatverwaltungs-APIs. Verbesserte Zertifikatsverwaltung bietet die folgenden Funktionen:
+Die gleichen Zertifikatprofil-Konfigurationsoptionen, die für die Android-Verwaltung zur Verfügung stehen, sind auf Android Enterprise-Arbeitsprofilgeräten verfügbar. Android Enterprise bietet verbesserte Zertifikatverwaltungs-APIs. Verbesserte Zertifikatsverwaltung bietet die folgenden Funktionen:
 
 -  Gewährleistung, dass die Zertifikatbereitstellung im Hintergrund und nahtlos für den Benutzer erfolgt.
 -  Gewährleistung, dass die bereitgestellten Zertifikate entfernt werden, wenn ein Gerät von Intune zurückgezogen und das Arbeitsprofil entfernt wird.
@@ -91,4 +92,4 @@ Von Android Enterprise verwaltete WLAN-Profile werden entfernt, wenn das Gerät 
 
 ## <a name="next-steps"></a>Nächste Schritte
 - [Registrieren von Android-Geräten](android-enroll.md)
-- [Zuweisen von Apps zu Android-Arbeitsprofilgeräten mit Intune](apps-add-android-for-work.md)
+- [Hinzufügen von verwalteten Google Play-Apps für Android Enterprise-Geräte mit Intune](apps-add-android-for-work.md)

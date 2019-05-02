@@ -6,21 +6,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1171740-936d-46a5-af37-f418bd6fa63e
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73cd8b4f0cf5bdfa02a301d476df31a01fc9691f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: eede87fdca31e8e263d1dea78d766fec59f05f58
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511301"
 ---
 # <a name="data-collection-in-intune"></a>Datensammlung in Intune
 
@@ -79,7 +81,7 @@ Zu den identifizierten Daten, die von Intune gesammelt werden, zählen unter and
     - App-Name
     - -Version
     - App-ID
-    - size
+    - Größe
     - Installationspfad
     - Anwendungsbestandsdaten werden nur gesammelt, wenn das Gerät vom Administrator als unternehmenseigenes Gerät markiert wird oder das kompatible App-Feature aktiviert ist.  
 - Mandanten-IDs von Drittanbietern des Kunden, z.B. die Apple-ID. 
@@ -127,10 +129,10 @@ Zu den aggregierten Daten, die von Intune gesammelt werden, zählen unter andere
     - Die Anzahl der registrierten Geräte oder Benutzer
     - Die Anzahl der identifizierten Geräteplattformen  
     - Die Anzahl der installierten Geräte
-    - installedDeviceCount: Die Anzahl der Geräte, auf denen die Anwendung installiert ist.
-    - notApplicableDeviceCount: Die Anzahl der Geräte, die nicht mit der Anwendung kompatibel sind.
-    - notInstalledDeviceCount: Die Anzahl der Geräte, die mit der Anwendung kompatibel sind, auf denen sie jedoch nicht installiert ist.
-    - pendingInstallDeviceCount: Die Anzahl der Geräte, die mit der Anwendung kompatibel sind, bei denen die Installation jedoch aussteht.
+    - installedDeviceCount: die Anzahl der Geräte, auf denen die Anwendung installiert ist
+    - notApplicableDeviceCount: die Anzahl der Geräte, für die die Anwendung nicht verfügbar ist
+    - notInstalledDeviceCount: die Anzahl der Geräte, für die die Anwendung zwar verfügbar, auf denen sie jedoch nicht installiert ist
+    - pendingInstallDeviceCount: die Anzahl der Geräte, für die die Anwendung verfügbar ist und bei denen die Installation noch aussteht
     
 ## <a name="next-steps"></a>Nächste Schritte
 

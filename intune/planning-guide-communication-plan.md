@@ -1,27 +1,29 @@
 ---
 title: Entwickeln eines Kommunikationsplans für den Rollout
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: In diesem Artikel erhalten Sie Informationen zum Entwickeln eines Kommunikationsplans für den Rollout Ihrer Microsoft Intune-Bereitstellung.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 013e2c6c10d5a545343c864b1b564acbede7c675
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6e3584d97bf9f1a223b15c986f398681a20520c1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513289"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Entwickeln eines Kommunikationsplans für den Rollout
 
@@ -55,7 +57,7 @@ Im [Registrierungshandbuch für Endbenutzer](https://gallery.technet.microsoft.c
 
 Es gibt verschiedene Übermittlungsmethoden, die Sie für die Verbreitung von Intune-Rolloutinformationen an die Zielgruppen und -benutzer in Ihrer Organisation verwenden können. In der folgenden Liste finden Sie einige Beispiele und die Phasen in denen Sie die Methode verwenden können:
 
--   Organisationsweite persönliche oder Skype-Besprechungen für die Einführungsphase
+-   Organisationsweite persönliche oder Microsoft Teams-Besprechungen für die Einführungsphase
 
 -   E-Mail für die Phasen vor, während und nach der Registrierung
 

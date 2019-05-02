@@ -5,21 +5,23 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/02/2018
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 4cec5c593fd4191a9d73e77b13fd38df81a7fe8b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a9f16c563ff0416092abe3812b3505c2f6d92587
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512898"
 ---
 # <a name="basic-setup"></a>Grundlegende Einrichtung
 
@@ -31,11 +33,11 @@ Nachdem Sie Ihre Umgebung analysiert haben, können Sie mit dem Einrichten von M
 
 Intune erfordert Azure Active Directory (AAD) als Identitäts- und Benutzergruppierungsanbieter. Weitere Informationen:
 
--  [Identitätsanforderungen](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
+-  [Identitätsanforderungen](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
--   [Anforderungen für die Verzeichnissynchronisierung](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
+-   [Anforderungen für die Verzeichnissynchronisierung](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   [Anforderungen für mehrstufige Authentifizierung (Multi-Factor Authentication, MFA)](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
+-   [So funktioniert's: Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
 -   [Planen von Benutzer- und Gerätegruppen](users-add.md)
 
@@ -58,7 +60,7 @@ Wenn Sie Zertifikat-basierte Authentifizierung für VPN-, WLAN- oder E-Mail-Prof
 
 Bevor Sie zu Intune migrieren können, brauchen Sie ein Intune-Abonnement.
 
--   Suchen Sie [diese Seite](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) auf, um Informationen zu den folgenden Vorgängen zu erhalten:
+-   Suchen Sie [diese Seite](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) auf, um Informationen zu den folgenden Vorgängen zu erhalten:
 
     -   Erstellen eines neuen Intune-Abonnements, das mit einem neuen AAD-Mandanten verknüpft ist
 
@@ -70,7 +72,7 @@ Bevor Sie zu Intune migrieren können, brauchen Sie ein Intune-Abonnement.
 
 -   Wenn Sie bereits einen neuen AAD-Mandanten erstellt haben, erfahren Sie, wie Sie [neue Benutzer erstellen oder Benutzer aus Ihrem lokalen Active Directory (AD) synchronisieren](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) können.
 
-### <a name="task-3-set-your-mdm-authority-to-intune"></a>Aufgabe 3: Stellen Sie die MDM-Autorität auf Intune um
+### <a name="task-3-set-your-mdm-authority-to-intune"></a>Aufgabe 3: Umstellen Ihrer MDM-Autorität auf Intune
 
 Intune kann über das Azure-Portal oder über die Konsole von Configuration Manager Current Branch verwaltet werden. Wenn Sie Intune nicht in eine Bereitstellung mit Configuration Manager Current Branch integrieren müssen, wird empfohlen, Intune über das [Azure-Portal](https://portal.azure.com) zu verwalten.
 

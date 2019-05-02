@@ -1,15 +1,16 @@
 ---
-title: Registrieren dedizierter Android-Geräte oder vollständig verwalteter Geräte in Intune
-titlesuffix: Microsoft Intune
+title: Registrierung dedizierter Android Enterprise-Geräte oder vollständig verwalteter Geräte in Intune
+titleSuffix: Microsoft Intune
 description: Erfahren Sie, wie Sie dedizierte Android Enterprise-Geräte und vollständig verwaltete Geräte in Intune registrieren.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a83676f67866bc81ea81f7bb721dec5825a95c9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f56e2987fefcc514911f762c5fd82ca1ebc6779c
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503873"
 ---
-# <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Registrieren Ihrer vollständig verwalteten oder dedizierten Android-Geräte (Vorschauversion)
+# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Registrieren Ihrer dedizierten Android Enterprise-Geräte oder vollständig verwalteten Geräte (Vorschauversion)
 
-Nachdem Sie Ihre [vollständig verwalteten](android-fully-managed-enroll.md) oder [dedizierten Android-Geräte](android-kiosk-enroll.md) in Intune eingerichtet haben, können Sie sie registrieren. Wie Sie Ihre Android-Geräte registrieren hängt vom Betriebssystem ab.
+Nachdem Sie Ihre [dedizierten Android Enterprise-Geräte](android-kiosk-enroll.md) oder [vollständig verwalteten](android-fully-managed-enroll.md) Geräte in Intune eingerichtet haben, können Sie sie registrieren. Wie Sie Ihre Android Enterprise-Geräte registrieren, hängt vom Betriebssystem ab.
 
 | Registrierungsmethode | Mindestversion des Android-Betriebssystems für dedizierte und vollständig verwaltete Geräte |
 | ----- | ----- |

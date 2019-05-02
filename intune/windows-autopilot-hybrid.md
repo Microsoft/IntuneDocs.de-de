@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e51c13136b5dd79ba9ff395008c6a8cb3e67e9e4
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61515511"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot (Vorschauversion)
 Sie können in Azure AD Hybrid eingebundene Geräte mithilfe von Intune und Windows Autopilot einrichten. Führen Sie dazu die Schritte in diesen Artikel durch.
@@ -36,6 +37,7 @@ Für die Registrierung müssen die Geräte über Folgendes verfügen:
 - Internetverbindung
 - Zugriff auf die Active Directory-Instanz (VPN-Verbindung wird nicht unterstützt)
 - Sie müssen eingerichtet worden sein.
+- Die Fähigkeit, den Domänencontroller der Domäne zu pingen, der Sie beitreten möchten
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Einrichten der automatischen Registrierung von Windows 10
 
@@ -119,7 +121,7 @@ Der Intune-Connector für Azure AD muss auf einem Computer mit Windows Server 20
 
 ### <a name="configure-web-proxy-settings"></a>Konfigurieren von Webproxyeinstellungen
 
-Wenn ein Webproxy in der Netzwerkumgebung vorhanden ist, stellen Sie sicher, dass der Intune-Connector für Active Directory ordnungsgemäß funktioniert. Informationen finden Sie unter [Verwenden von vorhandenen lokalen Proxyservern](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
+Wenn ein Webproxy in der Netzwerkumgebung vorhanden ist, stellen Sie sicher, dass der Intune-Connector für Active Directory ordnungsgemäß funktioniert. Informationen finden Sie unter [Verwenden von vorhandenen lokalen Proxyservern](autopilot-hybrid-connector-proxy.md).
 
 
 ## <a name="create-a-device-group"></a>Erstellen einer Gerätegruppe
@@ -210,6 +212,9 @@ Es dauert etwa 15 Minuten, bis sich der Status des Geräteprofils von *Nicht zug
 1. Klicken Sie auf **OK** > **Erstellen**.  
     Das Profil wird erstellt und in der Liste angezeigt.
 1. Um das Profil zuzuweisen, führen Sie die Schritte unter [Zuweisen eines Geräteprofils](device-profile-assign.md#assign-a-device-profile) aus. 
+
+> [!NOTE]
+> Die Benennungsfunktionen für Windows Autopilot für Azure AD Hybrid Join unterstützen keine Variablen wie %SERIAL%. Sie unterstützen ausschließlich Präfixe für den Computernamen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

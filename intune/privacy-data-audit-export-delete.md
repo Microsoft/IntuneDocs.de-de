@@ -9,6 +9,7 @@ ms.date: 05/18/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
 ms.reviewer: angerobe
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76e0c411afe1fb4e32b26c6ad669cb91b6cd3336
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 5a253894e400e4b63de40d2d8ef56cefef5b2ca0
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512808"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Überwachen, Exportieren und Löschen von personenbezogenen Daten in Intune
 
@@ -79,6 +80,9 @@ Wenn Sie eine hybride MDM-Umgebung (Mobile Device Management, Verwaltung mobiler
 1. Löschen Sie den Benutzer aus dem lokalen Active Directory-Dienst (AD). Wenn Sie einen Benutzer löschen, wird dieser nicht mehr mit Azure AD synchronisiert und von der Configuration Manager-Ermittlung ermittelt. 
 2. Löschen Sie den Benutzer über die Configuration Manager-Konsole, um ihn und die zugeordneten Daten aus Configuration Manager zu entfernen. Navigieren Sie in der Konsole zu **Asset and Compliance** > **Users** (Bestand und Konformität > Benutzer), klicken Sie mit der rechten Maustaste auf den Benutzer, der gelöscht werden soll, und klicken Sie auf **Löschen**.
 3. [Löschen Sie den Benutzer aus AAD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory.md#delete-users-from-azure-ad). Hierdurch werden der Benutzer und die zugehörigen Daten gleichzeitig aus Azure Active Directory und Intune entfernt. Wenn der Benutzer aus AAD gelöscht wird (dauerhaft), empfängt Intune den Löschbefehl von AAD und beginnt automatisch damit, alle personenbezogenen Daten des Benutzers aus dem Intune-Dienst zu löschen. Die Benutzerinformationen werden aus dem Intune-Dienst innerhalb von 30 Tagen nach dem Löschvorgang gelöscht.
+
+> [!Important]
+>Das Onboarding neuer MDM-Kunden (hybrid) ist veraltet. Weitere Informationen finden Sie im Blogbeitrag [Move from Hybrid Mobile Device Management to Intune on Azure (Wechsel von der hybriden Verwaltung mobiler Geräte zu Intune unter Azure)](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

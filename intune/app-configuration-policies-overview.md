@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/03/2019
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 844342d0d21110f46ac9a344edbd7409f7d779cb
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: cc29e7bb56c5a5e21264e275cfecf0ea4b0e9273
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59567217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501367"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>App-Konfigurationsrichtlinien für Microsoft Intune
 
@@ -31,16 +31,16 @@ Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Konfiguratio
 
 Sie können einer Gruppe von Benutzern und Geräten mithilfe einer Kombination aus Ein- und Ausschlusszuweisungen eine App-Konfigurationsrichtlinie zuweisen. Nachdem Sie eine App-Konfigurationsrichtlinie hinzugefügt haben, können Sie die Zuweisungen für die App-Konfigurationsrichtlinie festlegen. Wenn Sie die Zuweisungen für die Richtlinie festlegen, können Sie entscheiden, ob Gruppen von Benutzern ein- und ausgeschlossen werden, für welche die Richtlinie angewendet wird. Wenn Sie entscheiden, eine oder mehrere Gruppen einzuschließen, können Sie bestimmte einzuschließende Gruppen oder integrierte Gruppen auswählen. Zu den integrierten Gruppen zählen **Alle Benutzer**, **Alle Geräte** und **Alle Benutzer und alle Geräte**.
 
-Beispielsweise kann eine App erfordern, dass Sie folgende Informationen angeben:
+Beispielsweise kann eine App-Konfigurationseinstellung erfordern, dass Sie folgende Informationen angeben:
 
 - Eine benutzerdefinierte Portnummer
 - Spracheinstellungen
 - Sicherheitseinstellungen
 - Brandingeinstellungen wie z. B. ein Unternehmenslogo
 
-Wenn Benutzer diese Einstellungen nicht ordnungsgemäß eingeben, kann dies zur erhöhten Belastung Ihres Helpdesks führen und die Annahme der neuen Apps verlangsamen.
+Wenn Benutzer stattdessen diese Einstellungen eingeben müssten, könnten sie dies möglicherweise nicht ordnungsgemäß tun; dies könnte zu einer erhöhten Belastung Ihres Helpdesks führen und die Annahme der neuen Apps verlangsamen.
 
-Mit App-Konfigurationsrichtlinien können Sie diese Probleme beseitigen, da Sie diese Einstellungen in einer Richtlinie Benutzern zuweisen können, bevor diese die App ausführen. Die Einstellungen werden dann automatisch bereitgestellt, und die Benutzer müssen keine weitere Aktion durchführen.
+Mit App-Konfigurationsrichtlinien können Sie App-Einrichtungsprobleme beseitigen, indem Sie diese Konfigurationseinstellungen einer Richtlinie zuweisen, die Benutzern zugewiesen ist, bevor diese die App ausführen. Die Einstellungen werden dann automatisch bereitgestellt, und die Benutzer müssen keine weitere Aktion durchführen.
 
 Die Konfigurationseinstellungen werden verwendet, wenn die App nach ihnen prüft. In der Regel überprüft eine App die Konfigurationseinstellungen, wenn der Benutzer sie zum ersten Mal ausführt.
 

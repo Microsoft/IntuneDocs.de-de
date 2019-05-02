@@ -1,15 +1,16 @@
 ---
-title: Einrichten der Intune-Registrierung für vollständig verwaltete Android-Geräte
-titlesuffix: Microsoft Intune
-description: Erfahren Sie, wie Sie vollständig verwaltete Android-Geräte in Intune registrieren.
+title: Einrichten der Intune-Registrierung für vollständig verwaltete Android Enterprise-Geräte
+titleSuffix: Microsoft Intune
+description: Erfahren Sie, wie Sie vollständig verwaltete Android Enterprise-Geräte in Intune registrieren.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,36 +18,36 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 482ae185f221b3ff77534c1cfd8cccd8278965b7
-ms.sourcegitcommit: 84ab7a49aad853591a4ae362382f293e29b360df
+ms.openlocfilehash: 0e3615f1f090af3ce589e83f11d12e95a2f07641
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503843"
 ---
-# <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>Einrichten der Intune-Registrierung von vollständig verwalteten Android-Geräten (Vorschauversion)
+# <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Einrichten der Intune-Registrierung von vollständig verwalteten Android Enterprise-Geräten (Vorschauversion)
 
-Vollständig verwaltete Android-Geräte sind unternehmenseigene Geräte, die einem einzelnen Benutzer zugeordnet sind und ausschließlich für die Arbeit verwendet werden und nicht für persönliche Zwecke. Administratoren können das gesamte Gerät verwalten und Richtlinienkontrollen durchsetzen, die für Arbeitsprofile nicht verfügbar sind, z. B.:
-- Installieren von Apps nur über den Managed Google Play Store zulassen
+Vollständig verwaltete Android Enterprise-Geräte sind unternehmenseigene Geräte, die einem einzelnen Benutzer zugeordnet sind und ausschließlich für die Arbeit verwendet werden und nicht für persönliche Zwecke. Administratoren können das gesamte Gerät verwalten und Richtlinienkontrollen durchsetzen, die für Arbeitsprofile nicht verfügbar sind, z. B.:
+- Installieren von Apps nur über Managed Google Play zulassen
 - Deinstallieren von verwalteten Apps blockieren
 - Zurücksetzen von Geräten auf Werkseinstellungen durch Benutzer verhindern usw.
 
-Intune unterstützt Sie beim Bereitstellen von Apps und Einstellungen für Android Enterprise-Geräte, einschließlich vollständig verwaltete Android-Geräte. Ausführliche Informationen über Android Enterprise finden Sie in den [Voraussetzungen für Android Enterprise](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
+Intune unterstützt Sie beim Bereitstellen von Apps und Einstellungen für Android Enterprise-Geräte, einschließlich vollständig verwaltete Android Enterprise-Geräte. Ausführliche Informationen über Android Enterprise finden Sie in den [Voraussetzungen für Android Enterprise](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 
 ## <a name="technical-requirements"></a>Technische Anforderungen
 
-Sie benötigen einen eigenständigen Intune-Mandanten, um vollständig verwaltete Android-Geräte zu verwalten. Die Verwaltung vollständig verwalteter Geräte ist weder im hybriden Modus (mit SCCM verknüpft) noch in der älteren Verwaltungskonsole von Silverlight verfügbar.
+Sie benötigen einen eigenständigen Intune-Mandanten, um vollständig verwaltete Android Enterprise-Geräte zu verwalten. Die Verwaltung vollständig verwalteter Geräte ist weder im hybriden Modus (mit SCCM verknüpft) noch in der älteren Verwaltungskonsole von Silverlight verfügbar.
 
-Geräte müssen folgende Anforderungen erfüllen, um als vollständig verwaltete Android-Geräte verwaltet zu werden:
+Geräte müssen folgende Anforderungen erfüllen, um als vollständig verwaltete Android Enterprise-Geräte verwaltet zu werden:
 
 - Android-Betriebssystemversion 5.1 und höher.
 - Geräte müssen ein Android-Build ausführen, das über GMS-Konnektivität (Google Mobile Services) verfügt. Geräte müssen über GMS verfügen und dazu in der Lage sein, eine Verbindung mit GMS herzustellen.
 
 Wenn die obigen Anforderungen erfüllt sind, gibt es keine Einschränkungen bezüglich Gerätehersteller bzw. OEM.
 
-## <a name="set-up-android-fully-managed-device-management"></a>Einrichten der Verwaltung vollständig verwalteter Android-Geräte
+## <a name="set-up-android-enterprise-fully-managed-device-management"></a>Einrichten der Verwaltung vollständig verwalteter Android Enterprise-Geräte
 
-Führen Sie die folgenden Schritte aus, um die Verwaltung für vollständig verwaltete Android-Geräte einzurichten:
+Führen Sie die folgenden Schritte aus, um die Verwaltung für vollständig verwaltete Android Enterprise-Geräte einzurichten:
 
 1. Sie müssen Sie [die MDM-Autorität (Mobile Device Management, mobile Geräteverwaltung) auf **Microsoft Intune** festlegen](mdm-authority-set.md), um die Verwaltung mobiler Geräte vorzubereiten. Sie legen dieses Element nur einmal fest, wenn Sie die Ersteinrichtung von Intune für die Verwaltung mobiler Geräte durchführen.
 2. [Verknüpfen Sie Ihr Intune-Mandantenkonto mit Ihrem Android Enterprise-Konto](connect-intune-android-enterprise.md).
@@ -64,9 +65,9 @@ Wenn für diese Einstellung **Ja** ausgewählt ist, erhalten Sie ein Registrieru
 Sie können jetzt [Ihre vollständig verwalteten Geräte registrieren](android-dedicated-devices-fully-managed-enroll.md).
 
 ## <a name="considerations-for-this-preview-feature"></a>Überlegungen zu diesem Vorschaufeature
-Diese Public Preview enthält Kernfeatures für Lösungen für vollständig verwaltete Android-Geräte. Teilen Sie dem Team Ihre Erfahrungen mit dem Vorschaufeature über aktuelle Kommunikationskanäle mit (z. B. [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853)).
+Diese öffentliche Vorschauversion enthält Kernfeatures für Lösungen für vollständig verwaltete Android Enterprise-Geräte. Teilen Sie dem Team Ihre Erfahrungen mit dem Vorschaufeature über aktuelle Kommunikationskanäle mit (z. B. [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas?category_id=210853)).
 
-Die folgenden Features werden in dieser Vorschau für vollständig verwaltete Android-Geräte unterstützt:
+Die folgenden Features werden in dieser Vorschau für vollständig verwaltete Android Enterprise-Geräte unterstützt:
 - Geräteregistrierung per NFC, Eingabe von Tokens, QR-Code und Zero-Touch
 - Gerätekonfiguration für Benutzergruppen
 - App-Verteilung und Konfiguration für Benutzergruppen
@@ -74,15 +75,15 @@ Die folgenden Features werden in dieser Vorschau für vollständig verwaltete An
 
 Beachten Sie bei der Verwendung dieses Vorschaufeatures Folgendes:
 - Von in der Vorschau befindlichen Features wird bei unternehmenskritischen oder Produktionsbereitstellungen abgeraten. 
-- Vorschaufeatures werden gemäß Produktionsstandards in Microsoft Intune implementiert. Allerdings stehen nicht alle Intune-Features für die Verwendung mit vollständig verwalteten Android-Benutzergeräten zur Verfügung. Vorschaufeatures sind in der Intune-Konsole deutlich mit „(Vorschau)“ gekennzeichnet. 
+- Vorschaufeatures werden gemäß Produktionsstandards in Microsoft Intune implementiert. Allerdings stehen nicht alle Intune-Features für die Verwendung mit vollständig verwalteten Android Enterprise-Benutzergeräten zur Verfügung. Vorschaufeatures sind in der Intune-Konsole deutlich mit „(Vorschau)“ gekennzeichnet. 
 - Die Vorschaufeatures werden vollständig über die üblichen Intune-Supportkanäle unterstützt.
-- Das Registrieren von vollständig verwalteten Android-Geräten mit Samsung Knox Mobile Enrollment wird in der Public Preview nicht unterstützt. 
-- Die Verwendung der Intune-Unternehmensportal-App wird auf vollständig verwalteten Android-Geräten nicht unterstützt. 
+- Das Registrieren von vollständig verwalteten Android Enterprise-Geräten mit Samsung Knox Mobile Enrollment wird in der Vorschauversion nicht unterstützt. 
+- Die Verwendung der Intune-Unternehmensportal-App wird auf vollständig verwalteten Android Enterprise-Geräten nicht unterstützt. 
 - Intune-Features wie der bedingte Zugriff, App-Schutzrichtlinien und die Zertifikatbereitstellung werden in der Public Preview nicht unterstützt. 
 - Gerätegruppenziele für Profile oder Apps werden in der Public Preview nicht unterstützt. Lediglich Benutzergruppenziele werden unterstützt. 
 - Es gibt keine hochwertige Benutzeroberfläche zur Konfiguration von E-Mails, WLAN oder VPNs. Verwenden Sie App-Konfigurationsrichtlinien zum Konfigurieren unterstützter App-Konfigurationseinstellung.
 
 ## <a name="next-steps"></a>Nächste Schritte
-- [Hinzufügen von Konfigurationsrichtlinien für vollständig verwaltete Android-Geräte](device-restrictions-android-for-work.md#device-owner-only)
-- [Konfigurieren von App-Konfigurationsrichtlinien für vollständig verwaltete Android-Geräte](app-configuration-policies-use-android.md)
+- [Add Android Enterprise fully managed device configuration policies (Hinzufügen von Konfigurationsrichtlinien für vollständig verwaltete Android Enterprise-Geräte)](device-restrictions-android-for-work.md#device-owner-only)
+- [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Android-Geräte](app-configuration-policies-use-android.md)
 

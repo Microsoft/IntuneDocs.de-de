@@ -5,35 +5,33 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 02/27/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36076aab02f16937066cb3d47d573f7c74dd6277
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 704abe5e03410b52d54c7729e1832e527ae4dfb6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504319"
 ---
-# <a name="windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Windows 10-Vorlagen zum Konfigurieren von Gruppenrichtlinieneinstellungen in Microsoft Intune
+# <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Verwenden von Windows 10-Vorlagen zum Konfigurieren von Gruppenrichtlinieneinstellungen in Microsoft Intune
 
 Wenn Sie Geräte in Ihrer Organisation verwalten, sollten Sie auch Einstellungen erstellen, die dann auf unterschiedliche Gerätegruppen angewendet werden. Nehmen Sie beispielsweise an, dass Sie über mehrere Gerätegruppen verfügen. Sie sollten Gruppe A mehrere bestimmte Einstellungen zuweisen. Gruppe B soll andere Einstellungen erhalten. Ihre Einstellungen sollen in einer einfachen, konfigurierbaren Ansicht angezeigt werden.
 
-Sie können diese Aufgabe mithilfe der **administrativen Vorlagen** in Microsoft Intune erledigen. Die administrativen Vorlagen enthalten Hunderte Einstellungen, die Funktionen in Internet Explorer, Microsoft Office-Programmen und Remotedesktop anpassen sowie den Zugriff auf OneDrive und die Verwendung eines Bildkennworts oder einer PIN für die Anmeldung kontrollieren können. Diese Vorlagen ähneln den Gruppenrichtlinieneinstellungen (GPO) in Active Directory (AD) und sind [durch ADMX unterstützte Einstellungen](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies), die XML verwenden. Die Vorlagen in Intune sind jedoch vollständig cloudbasiert. Sie bieten eine einfachere und unkompliziertere Möglichkeit, die Einstellungen zu konfigurieren und die Einstellungen zu suchen, die Sie nutzen möchten.
+Sie können diese Aufgabe mithilfe der **administrativen Vorlagen** in Microsoft Intune erledigen. Die administrativen Vorlagen enthalten Hunderte Einstellungen, die Funktionen in Internet Explorer, Microsoft Office-Programmen und Remotedesktop anpassen sowie den Zugriff auf OneDrive und die Verwendung eines Bildkennworts oder einer PIN für die Anmeldung kontrollieren können. Diese Vorlagen ähneln den Gruppenrichtlinieneinstellungen (GPO) in Active Directory (AD) und sind [durch ADMX unterstützte Einstellungen](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (öffnet eine andere Dokumentationsseite), die XML verwenden. Die Vorlagen in Intune sind jedoch vollständig cloudbasiert. Sie bieten eine einfachere und unkompliziertere Möglichkeit, die Einstellungen zu konfigurieren und die Einstellungen zu suchen, die Sie nutzen möchten.
 
 **Administrative Vorlagen** sind in Intune integriert, einschließlich der Verwendung des OMA-URI, und erfordern keine weiteren Anpassungen. Als Bestandteil Ihrer Lösung für die mobile Geräteverwaltung (Mobile Device Management, MDM) verwenden Sie diese Vorlageneinstellungen als Anlaufstelle, um Ihre Windows 10-Geräte zu verwalten.
 
 In diesem Artikel sind die Schritte zum Erstellen einer Vorlage für Windows 10-Geräte aufgeführt. Zudem wird erläutert, wie alle verfügbaren Einstellungen in Microsoft Intune gefiltert werden können. Wenn Sie die Vorlage erstellen, wird ein Gerätekonfigurationsprofil erstellt. Sie können dieses Profil dann Windows 10-Geräten in Ihrer Organisation zuweisen oder für diese bereitstellen.
-
-> [!NOTE]
-> Administrative Vorlagen werden für eigenständige Geräte unterstützt. Sie werden derzeit jedoch nicht für gemeinsam verwaltete Geräte mit System Center Configuration Manager (SCCM) unterstützt.
 
 ## <a name="create-a-template"></a>Erstellen einer Vorlage
 
@@ -75,6 +73,8 @@ In diesem Vorlagen sind Hunderte von Einstellungen verfügbar. Nutzen Sie die in
   ![Klick auf „Path“ (Pfad), um die Liste alphabetisch zu sortieren](./media/administrative-templates-windows/search-copy-settings.png)
 
   Suchen Sie in einem anderen Beispiel nach `microsoft word`. Es werden alle Einstellungen angezeigt, die Sie für das Microsoft Word-Programm festlegen können. Suchen Sie nach `explorer`, um alle Internet Explorer-Einstellungen anzuzeigen, die Sie Ihrer Vorlage hinzufügen können.
+
+Dieses Feature verwendet [Windows-Richtlinien-CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (öffnet eine andere Dokumentationsseite). Die CSPs funktionieren unter verschiedenen Windows-Editionen, z. B. Home, Professional, Enterprise. Wenn Sie herausfinden möchten, ob ein CSP unter einer bestimmten Edition funktioniert, klicken Sie auf [Windows-Richtlinien-CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (öffnet eine andere Dokumentationsseite).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -1,48 +1,50 @@
 ---
-title: Abbruch der Registrierung beim Unternehmensportal in Intune
-titlesuffix: Microsoft Intune
-description: Erfahren Sie mehr über den Abbruchbericht des Unternehmensportals.
+title: Unvollständige Berichte zu Benutzerregistrierungen in Intune
+titleSuffix: Microsoft Intune
+description: Informationen zu unvollständigen Berichten zu Benutzerregistrierungen
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/20/2018
+ms.date: 2/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 44a6d89b649514a08193d7144dff7d89dc3d9c55
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 78d55ef2baf0608d22af53bf0803634700e01eb3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183365"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505861"
 ---
-# <a name="company-portal-abandonment-report"></a>Abbruchbericht des Unternehmensportals
+# <a name="incomplete-user-enrollments-report"></a>Unvollständige Berichte zu Benutzerregistrierungen
 
-Dieser Bericht zeigt auf, wo Benutzer im Unternehmensportal den Registrierungsprozess abbrechen.
+In diesem Bericht wird festgehalten, an welcher Stelle Benutzer im Unternehmensportal den Registrierungsprozess abbrechen.
 
-Um den Bericht anzuzeigen, wählen Sie **Intune** > **Geräteregistrierung** > **Unternehmensportalabbruch**.
+Wenn Sie den Bericht abrufen möchten, klicken Sie auf **Intune** > **Geräteregistrierung** > **Unvollständige Benutzerregistrierungen**.
 
-Mithilfe dieser Abbruchinformationen können Sie Ihre Onboardingdokumente aktualisieren, um Benutzer so besser beim Registrierungsprozess zu unterstützen. Wenn beispielsweise viele Benutzer den Prozess bereits bei den Nutzungsbedingungen abbrechen, können Sie überlegen, wie Sie diesen Bereich für Benutzer intuitiver gestalten.
+Mithilfe dieser Informationen können Sie Ihre Onboardingdokumente aktualisieren, um Benutzer so besser beim Registrierungsprozess zu unterstützen. Wenn beispielsweise viele Benutzer den Prozess bereits bei den Nutzungsbedingungen abbrechen, können Sie überlegen, wie Sie diesen Bereich für Benutzer intuitiver gestalten.
 
-## <a name="what-is-abandonment"></a>Was ist ein Abbruch?
+## <a name="what-is-an-incomplete-enrollment"></a>Was ist eine unvollständige Registrierung?
 
-Als Abbruch wird eine der folgenden Benutzeraktionen bezeichnet:
+Folgende Benutzeraktionen gelten als unvollständige Registrierungen:
 
 -   Der Benutzer wählt explizit eine Aktion aus, um die Registrierung zu stoppen.
 -   Der Benutzer schließt das Firmenportal während der Registrierung.
 -   Der Benutzer lässt mehr als 30 Minuten zwischen den Registrierungsabschnitten verstreichen.
 
-Wenn ein Benutzer sich dafür entscheidet, die Registrierung zu stoppen und mehrmals neu zu starten, wird dies als mehrere Versuche und mehrere Abbrüche angezeigt. Wenn ein Benutzer 30 Minuten lang zwischen verschiedenen Registrierungsbildschirmen wartet, wird dies als mehrfacher Abbruch betrachtet.
+Wenn sich ein Benutzer dafür entscheidet, die Registrierung mehrmals zu stoppen und neu zu starten, liegen mehrere Versuche und mehrere unvollständige Registrierungen vor. Wenn ein Benutzer 30 Minuten lang zwischen verschiedenen Registrierungsbildschirmen wartet, liegen mehrere unvollständige Registrierungen vor.
 
 ## <a name="what-does-the-report-show"></a>Was ist im Bericht enthalten?
 
-Die Registrierungsberichte enthalten Daten für iOS- und Android-Geräte.
+Die Berichte enthalten Daten für iOS- und Android-Geräte.
 
 Die Berichte zeigen Daten der letzten beiden Wochen an, aber sie können so gefiltert werden, dass ein beliebiger Zeitraum der letzten 30 Tagen angezeigt wird.
 
@@ -50,15 +52,15 @@ Sie können nach Datumsbereich, Betriebssystem und Registrierungsbereich filtern
 
 ### <a name="number-and-percentage-tiles"></a>Kacheln mit Anzahl und Prozentsatz
 
-Am oberen Rand des Berichts sehen Sie die Anzahl und den Prozentsatz der Abbruchberichte in Bezug auf alle Registrierungen.
+Im oberen Teil des Berichts sehen Sie die Anzahl und den Anteil (in Prozent) der unvollständigen Registrierungen im Verhältnis zu allen Registrierungen.
 
--   Initiierte Registrierungen: Die Anzahl der versuchten Registrierungen.
--   Abgebrochene Registrierungen: Die Anzahl der versuchten Registrierungen, die nicht zu einem vollständig registrierten und konformen Gerät geführt haben.
--   Abbruchrate: Der Prozentsatz der Registrierungsversuche, die abgebrochen wurden (abgebrochene Registrierungen bzw. initiierte Registrierungen).
+-   Initiierte Registrierungen: die Anzahl der versuchten Registrierungen
+-   Unvollständige Registrierungen: die Anzahl der versuchten Registrierungen, die nicht zu einem vollständig registrierten und konformen Gerät geführt haben
+-   Unvollständigkeitsrate: der Anteil (in Prozent) der Registrierungsversuche, die abgebrochen wurden (abgebrochene Registrierungen bzw. initiierte Registrierungen)
 
 ### <a name="line-graph"></a>Liniendiagramm
 
-Das Liniendiagramm zeigt die täglichen Abbrüche für jeden der vier Hauptregistrierungsabschnitte:
+Das Liniendiagramm zeigt die täglichen unvollständigen Registrierungen für jeden der vier Hauptregistrierungsabschnitte:
 
 -   Prüfliste für das Setup
 -   Plattformbildschirme
@@ -67,12 +69,12 @@ Das Liniendiagramm zeigt die täglichen Abbrüche für jeden der vier Hauptregis
 
 ### <a name="user-abandonment-actions"></a>Abbruchaktionen von Benutzern
 
-Die folgende Tabelle enthält die Liste der Benutzeraktionen, die als Abbruch gewertet werden. Beispiele zu Registrierungsbildschirmen finden Sie in den Registrierungsvideos für [iOS](https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment) und [Android](https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment). 
+Die folgende Tabelle enthält die Liste der Benutzeraktionen, die als Aufforderung für eine unvollständige Registrierung gewertet werden. Beispiele zu Registrierungsbildschirmen finden Sie in den Registrierungsvideos für [iOS](https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment) und [Android](https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment). 
 
 
 #### <a name="setup-checklist-section"></a>Abschnitt „Prüfliste für das Setup“
 
-| Abbruchbezeichnung | Bildschirm oder Workflow | Plattform | Aktion |
+| Name der Aktion | Bildschirm oder Workflow | Plattform | Aktion |
 | ---- |---- |---- |---- |
 | EnrollmentWrapUp | Aufforderung zum Öffnen einer Seite im Unternehmensportal | iOS/Android | **Abbrechen** |
 | EnrollmentWrapUp | Bildschirm „Gerät wird registriert“ bis zum Ende von **Unternehmensressourcen werden geladen** | iOS/Android | Dauerte länger als 30 Minuten |
@@ -82,7 +84,7 @@ Die folgende Tabelle enthält die Liste der Benutzeraktionen, die als Abbruch ge
 
 #### <a name="platform-screens-section"></a>Abschnitt „Plattformbildschirme“
 
-| Abbruchbezeichnung | Bildschirm oder Workflow | Plattform | Aktion |
+| Name der Aktion | Bildschirm oder Workflow | Plattform | Aktion |
 | ---- |---- |---- |---- |
 | iOSProfileLaunch | Aufforderung zum Anzeigen eines Konfigurationsprofils | iOS | **Ignorieren** |
 | iOSProfileLaunch | Bildschirm „Profil wird installiert“ | iOS | **Abbrechen** |
@@ -95,14 +97,14 @@ Die folgende Tabelle enthält die Liste der Benutzeraktionen, die als Abbruch ge
 
 #### <a name="terms-of-use-section"></a>Abschnitt „Nutzungsbedingungen“
 
-| Abbruchbezeichnung | Bildschirm oder Workflow | Plattform | Aktion |
+| Name der Aktion | Bildschirm oder Workflow | Plattform | Aktion |
 | ---- |---- |---- |---- |
 | TermsofUse | Nutzungsbedingungen (sofern der Administrator konfiguriert ist) | iOS/Android | **Alle ablehnen** |
 | TermsofUse | Nutzungsbedingungen bis **Alle akzeptieren** | iOS/Android | Dauerte länger als 30 Minuten |
 
 #### <a name="complianceactivation-section"></a>Abschnitt „Konformität/Aktivierung“
 
-| Abbruchbezeichnung | Bildschirm oder Workflow | Plattform | Aktion |
+| Name der Aktion | Bildschirm oder Workflow | Plattform | Aktion |
 | ---- |---- |---- |---- |
 | Konformität | Gerätekonformität (sofern der Administrator konfiguriert ist) wird beim Zugriff auf das Setup nach der Registrierung nicht grün angezeigt.| iOS/Android | **Verschieben** |
 | Konformität | Gerätekonformität wird nicht grün angezeigt; erst nach dem Aktualisieren wird sie grün angezeigt. | iOS/Android | Dauerte länger als 30 Minuten |
@@ -111,4 +113,4 @@ Die folgende Tabelle enthält die Liste der Benutzeraktionen, die als Abbruch ge
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie die Abbruchraten überprüft haben, können Sie die [Registrierungsoptionen](enrollment-options.md) durchgehen, um mögliche Änderungen zur Verbesserung des Registrierungsprozesses vorzunehmen.
+Nachdem Sie die Raten der unvollständigen Registrierungen überprüft haben, können Sie die [Registrierungsoptionen](enrollment-options.md) durchgehen, um mögliche Änderungen zur Verbesserung des Registrierungsprozesses vorzunehmen.

@@ -1,33 +1,34 @@
 ---
 title: Einrichten des gerätebasierten bedingten Zugriffs mit Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Erfahren Sie, wie Sie eine gerätebasierte Richtlinie für bedingten Zugriff auf Grundlage der Gerätekonformität in Microsoft Intune und der Verwaltung mobiler Apps erstellen.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ca9a65d5a62c75c45541b42c9b2aa5c4871a18
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: aaf9b82bc810dd3a616eb25f39f4b5830b1c3e6f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508652"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Erstellen einer gerätebasierten Richtlinie für bedingten Zugriff
 
-In Intune können Sie den bedingten Zugriff in Azure Active Directory erweitern, indem Sie den Zugriffssteuerungen Informationen zur Konformität mobiler Geräte hinzufügen. Nachdem Sie eine Intune-Konformitätsrichtlinie erstellt haben, die die Voraussetzungen für die Konformität von Geräten definiert, können Sie den Konformitätsstatus eines Geräts verwenden, um den Zugriff auf Ihre Apps und Dienste zuzulassen oder zu blockieren. Erstellen Sie zu diesem Zweck eine Richtlinie für bedingten Zugriff, die die Einstellung **Markieren des Geräts als kompatibel erforderlich** verwendet. 
+In Intune können Sie den bedingten Zugriff in Azure Active Directory erweitern, indem Sie den Zugriffssteuerungen Informationen zur Konformität mobiler Geräte hinzufügen. Nachdem Sie eine Intune-Konformitätsrichtlinie erstellt haben, die die Voraussetzungen für die Konformität von Geräten definiert, können Sie den Konformitätsstatus eines Geräts verwenden, um den Zugriff auf Ihre Apps und Dienste zuzulassen oder zu blockieren. Erstellen Sie zu diesem Zweck eine Richtlinie für bedingten Zugriff, die die Einstellung **Markieren des Geräts als kompatibel erforderlich** verwendet.  
 
-Eine Richtlinie für bedingten Zugriff gibt die Apps oder Dienste an, die Sie schützen möchten, die Bedingungen, unter denen auf die Apps oder Dienste zugegriffen werden kann, und die Benutzer, auf die die Richtlinie zutrifft. Der bedingte Zugriff ist ein Azure AD-Premium-Feature, das in Azure Active Directory konfiguriert werden kann. Sie können diese Richtlinien aber auch im Intune-Portal einrichten. 
+Eine Richtlinie für bedingten Zugriff gibt die Apps oder Dienste an, die Sie schützen möchten, die Bedingungen, unter denen auf die Apps oder Dienste zugegriffen werden kann, und die Benutzer, auf die die Richtlinie zutrifft. Der bedingte Zugriff ist ein Azure AD-Premium-Feature, das in Azure Active Directory konfiguriert werden kann. Sie können diese Richtlinien aber auch im Intune-Portal einrichten. Bei dem Knoten für bedingten Zugriff, auf den aus *Intune* zugegriffen wird, handelt es sich um denselben Knoten, auf den aus *Azure AD* zugegriffen wird.  
 
 > [!IMPORTANT]
 > Bevor Sie den bedingten Zugriff einrichten, müssen Sie Intune-Gerätekonformitätsrichtlinien festlegen, um Geräte danach zu bewerten, ob sie bestimmte Voraussetzungen erfüllen. Informationen dazu finden Sie unter [Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune](device-compliance-get-started.md).
