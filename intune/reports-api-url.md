@@ -1,6 +1,6 @@
 ---
 title: Endpunkt der Intune Data Warehouse-API
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Dieses Referenzthema beschreibt die URL-Struktur der Microsoft Intune-Data Warehouse-API. Es werden Beispiele für Filter bereitgestellt.
 keywords: Intune Data Warehouse
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e56c2dd4e26c68a82d5cb9d902e4480e1b98c8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 50be11f9ada92670c201fc2540499effa5a7edef
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396478"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798498"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Endpunkt der Intune Data Warehouse-API
 
@@ -31,7 +31,7 @@ Sie können die Intune-Data Warehouse-API mit einem Konto mit bestimmten rollenb
 
 [!INCLUDE [reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
-## <a name="authorization"></a>Autorisierung
+## <a name="authorization"></a>Authorization
 
 Azure Active Directory (Azure AD) bietet Ihnen über OAuth 2.0 die Möglichkeit, den Zugriff auf Webanwendungen und Web-APIs in Ihrem Azure AD-Mandanten zu autorisieren. Dieser Leitfaden ist sprachenunabhängig und beschreibt, wie HTTP-Nachrichten gesendet und empfangen werden können, ohne Open Source-Bibliotheken zu verwenden. Der Codefluss zur Autorisierung mit OAuth 2.0 wird in [section 4.1 (Abschnitt 4.1)](https://tools.ietf.org/html/rfc6749#section-4.1) der OAuth 2.0-Spezifikation beschrieben.
 
@@ -53,7 +53,7 @@ Die URL enthält die folgenden Elemente:
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | Die Basis-URL kann im Blatt „Data Warehouse API“ im Azure Portal gefunden werden. |
 | Entitätssammlung | Daten | Der Name der OData-Entitätssammlung. Weitere Informationen zu Sammlungen und Entitäten im Datenmodell finden Sie unter [Data Model (Datenmodell)](reports-ref-data-model.md). |
-| api-version | Beta | Die Version ist die Version der API, auf die zugegriffen wird. Weitere Informationen finden Sie unter [Version](#API-version-information). |
+| api-version | Beta | Die Version ist die Version der API, auf die zugegriffen wird. Weitere Informationen finden Sie unter [Version](reports-api-url.md#api-version-information). |
 | maxhistorydays | 7 | (Optional) Die maximale Anzahl an Tagen des Verlaufs, die abgerufen werden soll Dieser Parameter kann für jede Sammlung bereitgestellt werden, hat jedoch nur bei Sammlungen einen Effekt, deren Schlüsseleigenschaft `dateKey` enthält. Weitere Informationen finden Sie unter [DateKey Range Filters (DateKey-Bereichsfilter)](reports-api-url.md#datekey-range-filters). |
 
 ## <a name="api-version-information"></a>Information zur API-Version

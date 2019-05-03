@@ -1,65 +1,44 @@
 ---
-title: 'Erstellen einer Konformitätsrichtlinie für Android Enterprise in Microsoft Intune: Azure | Microsoft-Dokumentation'
-description: Erstellen oder konfigurieren Sie eine Microsoft Intune-Gerätekonformitätsrichtlinie für Geräte mit Android Enterprise oder Android-Arbeitsprofilgeräte. Wählen Sie, dass per Jailbreak manipulierte Geräte zulässig sind, legen Sie die zulässige Bedrohungsstufe fest, prüfen Sie auf Google Play, geben die minimale und maximale Betriebssystemversion an, wählen die Kennwortanforderungen, und lassen Sie Sideloading von Anwendungen zu.
+title: Android Enterprise-Geräteeinstellungen in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Eine Liste mit allen Einstellungen, mit denen Sie beim Festlegen von Kompatibilität für Ihre Android Enterprise-Geräte in Microsoft Intune angezeigt. Kennwortregeln festlegen, wählen Sie eine minimale oder maximale Betriebssystemversion, bestimmte apps beschränken, verhindert die Wiederverwendung von Kennwort und vieles mehr.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6f1f07c1cb7b5dbe81120fd678f429a996f230e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 16db0acab84a1095c40e9a92648c75c2581187cd
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566232"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423559"
 ---
-# <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für Android Enterprise-Geräte in Intune
+# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>So markieren Geräte als kompatibel oder nicht kompatibel mit Intune Einstellungen für Android Enterprise
 
-Konformitätsrichtlinien für Geräte sind ein wichtiges Feature bei der Verwendung von Intune, um die Ressourcen Ihrer Organisation zu schützen. In Intune können Sie Regeln und Einstellungen erstellen, die Geräte erfüllen müssen, um als konform angesehen zu werden, z.B. eine Kennwortlänge. Wenn das Gerät nicht konform ist, können Sie dann den Zugriff auf Daten und Ressourcen mit [bedingtem Zugriff](conditional-access.md) blockieren. 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Sie können auch Geräteberichte abrufen und Maßnahmen ergreifen, sollte das Gerät nicht konform sein, wie z.B. eine Benachrichtigungs-E-Mail an den Benutzer zu senden. Weitere Informationen über Konformitätsrichtlinien und alle Voraussetzungen finden Sie unter [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md).
+Dieser Artikel enthält und beschreibt die verschiedenen Einstellungen, die Sie auf Android Enterprise-Geräte in Intune konfigurieren können. Verwenden Sie im Rahmen Ihrer Lösung für mobile Geräte (MDM) diese Einstellungen sind Geräte mit entfernten nutzungsbeschränkungen (mit jailbreak) als nicht kompatibel markieren, eine zulässige Bedrohungsstufe festlegen, das Aktivieren von Google Play Protect und vieles mehr.
 
-In diesem Artikel werden die Einstellungen aufgeführt, die Sie in einer Konformitätsrichtlinie für Geräte mit Android Enterprise verwenden können.
+Diese Funktion gilt für:
 
-## <a name="non-compliance-and-conditional-access"></a>Nichtkonformität und bedingter Zugriff
+- Android Enterprise
 
-In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verwaltet werden, wenn eine Konformitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird.
+Verwenden Sie als Intune-Administrator diesen Complianceeinstellungen zum Schutz der Ressourcen Ihrer Organisation ein. Weitere Informationen über Konformitätsrichtlinien und alle Voraussetzungen finden Sie unter [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md).
 
---------------------------
+## <a name="before-you-begin"></a>Vorbereitung
 
-|**Richtlinieneinstellung**| **Android Enterprise-Profil** |
-| --- | --- |
-| **PIN- oder Kennwortkonfiguration** |  Isoliert |
-| **Geräteverschlüsselung** |  Isoliert |
-| **Per Jailbreak oder Rootzugriff manipuliertes Gerät** | Unter Quarantäne gestellt (keine Einstellung) |
-| **E-Mail-Profil** | Nicht verfügbar |
-| **Minimale Version des Betriebssystems** | Isoliert |
-| **Maximale Version des Betriebssystems** | Isoliert |
-| **Windows-Integritätsnachweis** |Nicht verfügbar |
-
-**Wiederhergestellt** = Das Betriebssystem des Geräts erzwingt die Kompatibilität. Beispiel: Der Benutzer ist gezwungen, eine PIN festzulegen.
-
-**In Quarantäne**: Das Betriebssystem des Geräts erzwingt keine Konformität. Android-Geräte zwingen den Benutzer z.B. nicht dazu, das Gerät zu verschlüsseln. Wenn das Gerät nicht kompatibel ist, erfolgen die folgenden Aktionen:
-
-  - Wenn eine Richtlinie für bedingten Zugriff für den Benutzer gilt, wird das Gerät blockiert.
-  - Das Unternehmensportal benachrichtigt den Benutzer über Kompatibilitätsprobleme.
-
-## <a name="create-a-device-compliance-policy"></a>Erstellen einer Gerätekonformitätsrichtlinie
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. Wählen Sie **Android Enterprise** als **Plattform** aus. 
-5. Klicken Sie auf **Einstellungen konfigurieren**. Passen Sie die Einstellungen **Geräteintegrität**, **Geräteeigenschaften** und **Systemsicherheit** wie in diesem Artikel beschrieben an.
+[Erstellen einer Konformitätsrichtlinie](create-compliance-policy.md#create-the-policy) Wählen Sie **Android Enterprise** als **Plattform** aus.
 
 ## <a name="device-health"></a>Device health
 
@@ -69,6 +48,9 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
   - **Niedrig**: Das Gerät wird als kompatibel bewertet, wenn nur Bedrohungen niedriger Stufen vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
   - **Mittel**: Das Gerät wird als kompatibel bewertet, wenn die auf dem Gerät gefundenen Bedrohungen niedriger oder mittlerer Stufe sind. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht konform bewertet.
   - **Hoch**: Dies ist die am wenigsten sichere Option, die alle Bedrohungsebenen zulässt. Es ist möglicherweise hilfreich, diese Lösung nur zu Berichtszwecken zu verwenden.
+
+### <a name="google-play-protect"></a>Google Play-Schutz
+
 - **Google Play Services ist konfiguriert:** **Erfordert**, dass die Google Play Services-App installiert und aktiviert ist. Google Play Services ermöglicht Sicherheitsupdates und stellt eine grundlegende Abhängigkeit für viele Sicherheitsfunktionen auf zertifizierten Google-Geräten dar. Wenn Sie **Nicht konfiguriert** (Standardeinstellung) auswählen, wird diese Einstellung nicht für die Konformitätsprüfung ausgewertet.
 - **Aktueller Sicherheitsanbieter:** **Erfordert**, dass ein aktueller Sicherheitsanbieter ein Gerät vor bekannten Sicherheitslücken schützen kann. Wenn Sie **Nicht konfiguriert** (Standardeinstellung) auswählen, wird diese Einstellung nicht für die Konformitätsprüfung ausgewertet.
 - **SafetyNet-Gerätenachweis**: Legen Sie die Integritätsstufe des [SafetyNet-Nachweises](https://developer.android.com/training/safetynet/attestation.html) fest, die eingehalten werden muss. Folgende Optionen sind verfügbar:
@@ -76,9 +58,8 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
   - **Grundlegende Integrität prüfen**
   - **Grundlegende Integrität und zertifizierte Geräte prüfen**
 
-#### <a name="threat-scan-on-apps"></a>Bedrohungsüberprüfung für Apps
-
-Auf Android Enterprise-Geräten ist die Einstellung **Bedrohungsüberprüfung für Apps** eine Konfigurationsrichtlinie. Siehe [Einstellungen für Geräteeinschränkungen für Android Enterprise](device-restrictions-android-for-work.md).
+> [!NOTE]
+> Auf Android Enterprise-Geräten **bedrohungsüberprüfung für apps** ist eine Richtlinie für die Gerätekonfiguration. Administratoren können mithilfe einer Richtlinie, die Einstellung auf einem Gerät aktivieren. Siehe [Einstellungen für Geräteeinschränkungen für Android Enterprise](device-restrictions-android-for-work.md).
 
 ## <a name="device-properties-settings"></a>Einstellungen für Geräteeigenschaften
 
@@ -136,31 +117,10 @@ Auf Android Enterprise-Geräten ist die Einstellung **Bedrohungsüberprüfung f�
 
 - **Mindestens erforderliche Sicherheitspatchebene**: Wählen Sie die älteste Sicherheitspatchebene, die ein Gerät haben kann. Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht konform. Das Datum muss im Format *JJJJ-MM-TT* eingegeben werden.
 
-Wenn Sie fertig sind, klicken Sie auf **OK** > **OK**, um die Änderungen zu speichern.
-
-## <a name="actions-for-noncompliance"></a>Aktionen bei Inkompatibilität
-
-Klicken Sie auf **Actions for noncompliance** (Aktionen bei Nichtkonformität). Die Standardaktion markiert das Gerät umgehend als nicht konform.
-
-Sie können den Zeitplan anpassen, anhand dessen das Gerät als nicht konform markiert wird, z.B. nach einem Tag. Sie können auch eine zweite Aktion konfigurieren, durch die E-Mails an Benutzer gesendet werden, wenn das Gerät nicht mehr konform ist.
-
-Weitere Informationen sowie Informationen zum Erstellen einer E-Mail-Benachrichtigung an Ihre Benutzer finden Sie unter [Hinzufügen von Aktionen für nicht konforme Geräte in Intune](actions-for-noncompliance.md).
-
-## <a name="scope-tags"></a>Festlegen von Tags
-
-Bereichsmarkierungen eignen sich zum Zuweisen von Richtlinien zu bestimmten Gruppen, z.B. Vertrieb, Engineering, Personalwesen usw. Sie können Bereichsmarkierungen zu Konformitätsrichtlinien hinzufügen. Weitere Informationen finden Sie unter [Verwenden von Bereichsmarkierungen zum Filtern von Richtlinien](scope-tags.md). 
-
-## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen
-
-Eine erstellte Richtlinie bezweckt erst etwas, wenn Sie sie zuweisen. So weisen Sie die Richtlinie zu 
-
-1. Wählen Sie eine Richtlinie, die Sie konfiguriert haben. Vorhandene Richtlinien befinden sich unter **Gerätekompatibilität** > **Richtlinien**.
-2. Wählen Sie die Richtlinie und dann **Zuweisungen** aus. Sie können Azure Active Directory (AD)-Sicherheitsgruppen ein- oder ausschließen.
-3. Wählen Sie **Ausgewählte Gruppen**, um Ihre Azure AD-Sicherheitsgruppen anzuzeigen. Wählen Sie die Benutzergruppen aus, auf die diese Richtlinie angewendet werden soll, und dann wählen Sie **Speichern**, um die Richtlinie für die Benutzer bereitzustellen.
-
-Sie haben die Richtlinie auf Benutzer angewendet. Die von den Benutzern verwendeten Geräte, für die die Richtlinie gilt, werden auf Konformität überprüft.
+Wählen Sie **OK** > **Erstellen** aus, um die Änderungen zu speichern.
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Automatisieren von E-Mails und Hinzufügen von Aktionen für nicht konforme Geräte](actions-for-noncompliance.md)  
-[Überwachen von Intune-Richtlinien zur Gerätekompatibilität](compliance-policy-monitor.md)  
-[Einstellungen für Kompatibilitätsrichtlinien für Android](compliance-policy-create-android.md)
+
+- [Hinzufügen von Aktionen für nicht kompatible Geräte](actions-for-noncompliance.md) und [bereichsmarkierungen Filter-Richtlinien verwenden](scope-tags.md).
+- [Überwachen Sie Ihre Compliance-Richtlinien](compliance-policy-monitor.md).
+- [Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte](compliance-policy-create-android.md)

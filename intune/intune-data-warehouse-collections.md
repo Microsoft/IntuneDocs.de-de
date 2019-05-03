@@ -1,12 +1,12 @@
 ---
 title: Sammlungen von Intune Date Warehouse
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Die Intune Data Warehouse-Sammlungen bieten Details im Zusammenhang mit der Data Warehouse-API.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 00a0bd4936d1ad8ba8dd52f1839e7d42505db60e
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358316"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429223"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune Data Warehouse-Sammlungen
 
@@ -116,7 +116,7 @@ In der folgenden Tabelle sind die Zuweisungsstatus der Konformitätsrichtlinien 
 
 |  complianceStatus  |                       Beschreibung                      |
 |:------------------:|:------------------------------------------------------:|
-|    Unbekannt         |    Unbekannt                                                                        |
+|    Unbekannt         |    Unbekannt.                                                                        |
 |    Kompatibel       |    Kompatibel.                                                                      |
 |    Nicht richtlinienkonform    |       Gerät ist nicht konform und wird nicht in die Unternehmensressourcen einbezogen.             |
 |    Konflikt        |    Konflikt mit anderen Regeln.                                                      |
@@ -427,6 +427,85 @@ Die Entität **IntuneManagementExtensionVersion** listet alle von **IntuneManage
 |:-------------------:|:-------------------------------------------------------------:|:-------:|
 | ExtensionVersionKey | Eindeutiger Bezeichner für die IntuneManagementExtension-Version. | 1       |
 | ExtensionVersion    | Die vierstellige Versionsnummer                                   | 1.0.2.0 |
+
+## <a name="mamapplications"></a>MamApplications
+
+Die Entität **MamApplication** führt branchenspezifische Apps (LOB, Line-of-Business) auf, die über die Verwaltung mobiler Geräte (MAM) ohne Registrierung in Ihrem Unternehmen verwaltet werden.
+
+| Eigenschaft | Beschreibung | Beispiel |
+|---------|------------|--------|
+| mamApplicationKey |Eindeutiger Bezeichner der MAM-Anwendung. | 432 |
+| mamApplicationName |Der Name der MAM-Anwendung. |Beispielname für MAM-Anwendung |
+| mamApplicationId |Anwendungs-ID der MAM-App | 123 |
+| isDeleted |Gibt an, ob dieser MAM-App-Datensatz aktualisiert wurde <br>Wahr: MAM-App verfügt über einen neuen Datensatz mit aktualisierten Feldern in dieser Tabelle. <br>Falsch: der neueste Datensatz für diese MAM-App. |Wahr/falsch |
+| StartDateInclusiveUTC |Datum und Uhrzeit in UTC, als diese MAM-App im Data Warehouse erstellt wurde |23.11.2016 12:00:00 Uhr |
+| DeletedDateUTC |Datum und Uhrzeit in UTC, als IsDeleted in TRUE geändert wurde |23.11.2016 12:00:00 Uhr |
+| RowLastModifiedDateTimeUTC |Datum und Uhrzeit in UTC, als diese MAM-App zuletzt im Data Warehouse geändert wurde |23.11.2016 12:00:00 Uhr |
+
+
+## <a name="mamapplicationinstances"></a>MamApplicationInstances
+
+Die Entität **MamApplicationInstance** führt verwaltete MAM-Apps (Mobile Application Management, Verwaltung von mobilen Anwendungen) als Singularinstanz pro Benutzer pro Gerät auf. Alle aufgeführten Benutzer und Geräte in der Entität sind geschützt, d.h., ihnen wurde mindestens eine MAM-Richtlinie zugewiesen.
+
+
+|          Eigenschaft          |                                                                                                  Beschreibung                                                                                                  |               Beispiel                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               Eindeutiger Bezeichner für die MAM-App-Instanz im Data Warehouse – Ersatzschlüssel                                                                |                 123                  |
+|           UserId           |                                                                              Benutzer-ID des Benutzers, der diese MAM-App installiert hat                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              Eindeutiger Bezeichner der MAM-App-Instanz – ähnlich wie ApplicationInstanceKey, jedoch ist der Bezeichner ein natürlicher Schlüssel                                              | b66bc706-ffff-7437-0340-032819502773 |
+| mamApplicationId | Anwendungs-Id der Mam-Anwendung, die für die diese Mam-Anwendungsinstanz erstellt wurde.   | 23.11.2016 12:00:00 Uhr   |
+|     ApplicationVersion     |                                                                                     Anwendungsversion dieser MAM-App                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 Datum, als dieser Datensatz der MAM-App-Instanz erstellt wurde. Der Wert kann NULL sein.                                                                 |        23.11.2016 12:00:00        |
+|          Plattform          |                                                                          Plattform des Geräts, auf dem diese MAM-App installiert wurde                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      Plattformversion des Geräts, auf dem diese MAM-App installiert wurde                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            Die Version des MAM SDKs, mit der diese MAM-App umschlossen wurde                                                                            |                 3.2                  |
+| mamDeviceId | Geräte-Id des Geräts mit dem MAM-Anwendung-Instanz zugeordnet ist.   | 23.11.2016 12:00:00 Uhr   |
+| mamDeviceType | Der Gerätetyp des Geräts mit dem MAM-Anwendung-Instanz zugeordnet ist.   | 23.11.2016 12:00:00 Uhr   |
+| mamDeviceName | Der Gerätename des Geräts mit dem MAM-Anwendung-Instanz zugeordnet ist.   | 23.11.2016 12:00:00 Uhr   |
+|         isDeleted          | Gibt an, ob dieser Datensatz der MAM-App-Instanz aktualisiert wurde <br>Wahr: Diese MAM-App-Instanz verfügt über einen neuen Datensatz mit aktualisierten Feldern in dieser Tabelle. <br>Falsch: der neueste Datensatz für diese MAM-App-Instanz. |              Wahr/falsch              |
+|   StartDateInclusiveUtc    |                                                              Datum und Uhrzeit in UTC, als diese MAM-App-Instanz im Data Warehouse erstellt wurde                                                               |        23.11.2016 12:00:00 Uhr        |
+|       DeletedDateUtc       |                                                                             Datum und Uhrzeit in UTC, als IsDeleted in TRUE geändert wurde                                                                              |        23.11.2016 12:00:00 Uhr        |
+| RowLastModifiedDateTimeUtc |                                                           Datum und Uhrzeit in UTC, als diese MAM-App-Instanz im Data Warehouse zuletzt geändert wurde                                                            |        23.11.2016 12:00:00 Uhr        |
+
+## <a name="mamcheckins"></a>MamCheckins
+
+Die Entität **MamCheckin** stellt Daten dar, die gesammelt wurden, als eine MAM-App-Instanz sich bei Intune Service gemeldet hat. 
+
+> [!Note]  
+> Wenn eine App-Instanz sich mehrmals pro Tag meldet, speichert das Data Warehouse dies als einmalige Anmeldung.
+
+| Eigenschaft | Beschreibung | Beispiel |
+|---------|------------|--------|
+| DateKey |Date Key für den Zeitpunkt als das Einchecken der MAM-App im Data Warehouse aufgezeichnet wurde | 20160703 |
+| ApplicationInstanceKey |Schlüssel der App-Instanz, der diesem Eincheckvorgang der MAM-App zugeordnet wird | 123 |
+| UserKey |Schlüssel des Benutzers, der diesem Eincheckvorgang der MAM-App zugeordnet wird | 4323 |
+| mamApplicationKey |Schlüssel der Anwendung zugeordneten Einchecken der MAM-Anwendung. | 432 |
+| DeviceHealthKey |Schlüssel von DeviceHealth, der diesem Eincheckvorgang der MAM-App zugeordnet wird | 321 |
+| PlatformKey |Stellt die Plattform des Geräts dar, die diesem Eincheckvorgang der MAM-App zugeordnet wird |123 |
+| LastCheckInDate |Datum und Uhrzeit, wann diese MAM-App zuletzt eingecheckt wurde. Der Wert kann NULL sein. |23.11.2016 12:00:00 Uhr |
+
+## <a name="mamdevicehealths"></a>MamDeviceHealths
+
+Die Entität **MamDeviceHealth** stellt Geräte dar, die bereitgestellte MAM-Richtlinien besitzen, auch wenn sie per Jailbreak manipuliert wurden.
+
+| Eigenschaft | Beschreibung | Beispiel |
+|---------|------------|--------|
+| DeviceHealthKey |Eindeutiger Bezeichner des Geräts, der der Integrität im Data Warehouse zugeordnet wird – Ersatzschlüssel |123 |
+| DeviceHealth |Eindeutiger Bezeichner des Geräts und dessen Integrität – ähnlich wie DeviceHealthKey, allerdings ist der Bezeichner ein natürlicher Schlüssel |b66bc706-ffff-7777-0340-032819502773 |
+| DeviceHealthName |Stellt den Status des Geräts dar. <br>Nicht verfügbar – keine Informationen zu diesem Gerät. <br>Fehlerfrei: Gerät wurde nicht per Jailbreak manipuliert. <br>Nicht Fehlerfrei: Gerät wurde per Jailbreak manipuliert. |Nicht verfügbar fehlerfrei nicht fehlerfrei |
+| RowLastModifiedDateTimeUtc |Datum und Uhrzeit in UTC, als diese bestimmte MAM-Geräteintegrität im Data Warehouse zuletzt geändert wurde |23.11.2016 12:00:00 Uhr |
+
+## <a name="mamplatforms"></a>MamPlatforms
+
+Die Entität **MamPlatform** führt Plattformnamen und -typen auf, auf denen eine MAM-App installiert wurde.
+
+
+|          Eigenschaft          |                                    Beschreibung                                    |                         Beispiel                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     Eindeutiger Bezeichner für die Plattform im Data Warehouse – Ersatzschlüssel      |                           123                           |
+|          Plattform          | Eindeutiger Bezeichner der Plattform – ähnlich wie PlatformKey, es handelt sich allerdings um einen natürlichen Schlüssel |                           123                           |
+|        PlatformName        |                                   Plattformname                                   | Nicht verfügbar <br>Keine <br>Windows <br>iOS <br>Android: |
+| RowLastModifiedDateTimeUtc | Datum und Uhrzeit in UTC, als diese Plattform zuletzt im Data Warehouse geändert wurde  |                 23.11.2016 12:00:00 Uhr                  |
 
 ## <a name="managementagenttypes"></a>managementAgentTypes
 Die Entität **managementAgentType** stellt die Agents dar, die zum Verwalten von Geräten verwendet werden.

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 23c254094281c7591730b2972ec0de41f5243e66
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: c6389bc9790fce45604887bc2d73b3d5d8c35c45
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566385"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423593"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Erste Schritte mit dem Microsoft Intune App SDK
 
@@ -34,7 +34,7 @@ Das Intune App SDK unterstützt ähnliche Szenarien auf ios- und Android-Plattfo
 
 ### <a name="if-your-app-is-internal-to-your-organization-and-will-not-be-publicly-available"></a>Wenn Ihre App für Ihre Organisation intern ist und nicht öffentlich verfügbar sein wird:
 
-Dann muss die App _**nicht**_ registriert werden. Für die interne [Line-of-Business (LOB) apps](apps-add.md#app-types-in-microsoft-intune) , die geschrieben wurden durch oder für Ihr Unternehmen IT-Administrator stellt intern die app bereit. Intune erkennt, dass die App mit dem SDK erstellt wurde, und ermöglicht dem IT-Administrator das Anwenden von App-Schutzrichtlinien auf die App. Sie können zum Abschnitt [Aktivieren Ihrer iOS- oder Android-App für die App-Schutzrichtlinie](#enable-your-iOS-or-Android-app-for-app-protection-policy) wechseln.
+Dann muss die App _**nicht**_ registriert werden. Für die interne [Line-of-Business (LOB) apps](apps-add.md#app-types-in-microsoft-intune) , die geschrieben wurden durch oder für Ihr Unternehmen IT-Administrator stellt intern die app bereit. Intune erkennt, dass die App mit dem SDK erstellt wurde, und ermöglicht dem IT-Administrator das Anwenden von App-Schutzrichtlinien auf die App. Sie können zum Abschnitt [Aktivieren Ihrer iOS- oder Android-App für die App-Schutzrichtlinie](#enable-your-ios-or-android-app-for-app-protection-policy) wechseln.
 
 ### <a name="if-your-app-will-be-released-to-a-public-app-store-like-the-apple-app-store-or-google-play"></a>Wenn Ihre App in einem öffentlichen App Store (z.B. Apple App Store oder Google Play) freigegeben wird, gilt Folgendes:
 

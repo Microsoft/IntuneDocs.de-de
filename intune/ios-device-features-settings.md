@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34f0869b46323606d69891c3761bfbc154f3b6a3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566623"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799264"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Einstellungen für iOS-Geräte zum Verwenden der allgemeinen iOS-Features in Intune
 
@@ -46,7 +46,7 @@ Mit dieser Funktion können iOS-Benutzer über bekannte AirPrint-Drucker drucken
     - **Port**: Geben Sie den Lauschport des AirPrint-Ziels ein. Wenn Sie diese Eigenschaft leer lassen, verwendet AirPrint den Standardport. In iOS 11.0 und höher verfügbar.
     - **TLS**: Wählen Sie **Aktivieren** aus, um AirPrint-Verbindungen mit Transport Layer Security (TLS) zu sichern. In iOS 11.0 und höher verfügbar.
 
-2. Wählen Sie **Hinzufügen** aus. Der AirPrint-Server wird der Liste hinzugefügt. Sie können viele AirPrint-Server hinzufügen.
+2. Klicken Sie auf **Hinzufügen**. Der AirPrint-Server wird der Liste hinzugefügt. Sie können viele AirPrint-Server hinzufügen.
 
     Sie können auch eine durch Kommas getrennte Datei (.csv) mit diesen Informationen **importieren**. Nach der Erstellung der Liste können Sie Ihre Liste an AirPrint-Server auch **exportieren**.
 
@@ -97,6 +97,9 @@ Mit der Einstellung **Dock** können Sie dem Dock des iOS-Bildschirms bis zu sec
       3. Wählen Sie **Hinzufügen** aus. Sie können für den Gerätedock bis zu **20** Seiten hinzufügen.
       4. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
+> [!NOTE]
+> Wenn Sie Symbole, die mit den Einstellungen Dock hinzufügen, die Symbole auf dem Startbildschirm und Seiten sind gesperrt und können nicht verschoben werden. Dies kann mit iOS und Apple MDM-Richtlinien beabsichtigt sein.
+
 #### <a name="example"></a>Beispiel
 
 Im folgenden Beispiel zeigt der Dockbildschirm nur die Anwendungen Safari, Mail und Stocks an. Die Mail-App wird ausgewählt, um deren Eigenschaften anzuzeigen:
@@ -117,7 +120,7 @@ Fügen Sie die Seiten hinzu, die auf dem Startbildschirm angezeigt werden sollen
 1. Wählen Sie in den **Einstellungen** die Option **Layout des Startbildschirms (nur überwacht)** > **Seiten** > **Hinzufügen** aus. Sie können bis zu **40** Seiten zu einem Gerät hinzufügen.
 2. Geben Sie einen **Seitennamen** ein. Dieser Name wird im Azure-Portal zur Referenz verwendet und auf dem iOS-Gerät *nicht* angezeigt. 
 
-    Wählen Sie **Hinzufügen** aus. Sie können auf einem Gerät bis zu **60** Elemente hinzufügen (Apps und Ordner kombiniert).
+    Klicken Sie auf **Hinzufügen**. Sie können auf einem Gerät bis zu **60** Elemente hinzufügen (Apps und Ordner kombiniert).
 
 3. Wählen Sie unter **Typ**, ob Sie eine **App** oder einen **Ordner** hinzufügen möchten.
 
@@ -323,7 +326,7 @@ Die folgende Liste enthält die Bündel-ID einiger gängiger integrierter iOS-Ap
 | com.apple.gamecenter        | Gamecenter  | Apple     |
 | com.apple.mobilegarageband  | GarageBand   | Apple     |
 | com.apple.Health            | Integrität       | Apple     |
-| com.apple.Home              | Startseite         | Apple     |
+| com.apple.Home              | -Startseite         | Apple     |
 | com.apple.iBooks            | iBooks       | Apple     |
 | com.apple.iMovie            | iMovie       | Apple     |
 | com.apple.itunesconnect.mobile | iTunes Connect | Apple |
@@ -332,7 +335,7 @@ Die folgende Liste enthält die Bündel-ID einiger gängiger integrierter iOS-Ap
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Mail         | Apple     |
 | com.apple.Maps              | Zuordnungen         | Apple     |
-| com.apple.MobileSMS         | Nachrichten     | Apple     |
+| com.apple.MobileSMS         | Messages     | Apple     |
 | com.apple.Music             | Musik        | Apple     |
 | com.apple.news              | News         | Apple     |
 | com.apple.mobilenotes       | Hinweise        | Apple     |
@@ -343,7 +346,7 @@ Die folgende Liste enthält die Bündel-ID einiger gängiger integrierter iOS-Ap
 | com.apple.podcasts          | Podcasts     | Apple     |
 | com.apple.reminders         | Reminders    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
-| com.apple.Preferences       | Einstellung     | Apple     |
+| com.apple.Preferences       | Einstellungen     | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Stocks       | Apple     |
 | com.apple.tips              | Tipps         | Apple     |

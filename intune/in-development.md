@@ -1,12 +1,12 @@
 ---
 title: Bei der Entwicklung - Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Microsoft Intune-Funktionen in der Entwicklung
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e068e2c9834290b705e8e7bc2f895636415f9ba
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.openlocfilehash: aa38a684a32756d4f2c3be3b750f8e79b66e98f6
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675441"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587381"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>Bei der Entwicklung für Microsoft Intune – April 2019
 
 Für Ihre Bereitschaft und planen, diese Seite enthält, die Intune UI aktualisiert und die features dieses Produkts, sind in der Entwicklung, aber noch nicht veröffentlicht wurden. Zusätzlich:
 
-- Wenn wir davon ausgehen, dass Sie eine Aktion vor einer Änderung müssen, veröffentlichen wir kostenloses Office-Nachrichtencenter Post.
+- Wenn wir davon ausgehen, dass Sie eine Aktion vor einer Änderung müssen, veröffentlichen wir ergänzende Post Office-Nachrichtencenter.
 - Wenn eine Funktion wird entweder als Vorschau in der Produktion gestartet oder allgemein verfügbar ist, der featurebeschreibung wird verschieben außerhalb dieser Seite und auf die [neuerungen neue Seite](whats-new.md).
 - Auf dieser Seite und die [neuerungen neue Seite](whats-new.md) in regelmäßigen Abständen aktualisiert werden. Überprüfen Sie, ob weitere Updates vorliegen.
 - Finden Sie in der [M365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS) für strategische lieferleistungen und Zeitpläne.
@@ -60,18 +60,6 @@ Sie werden bald Intune zum Verwalten von auf Clients für Windows Defender die b
 
 ### <a name="require-app-protection-conditional-access----1634317---"></a>Bedingter Zugriff auf App-Schutz erforderlich  <!--1634317 -->
 Sie verwenden, werden *erfordern App-Schutzrichtlinie*, was bestätigt, dass Richtlinie App des Benutzers angewendet wird, bevor die Anmeldung abgeschlossen ist, um zu verhindern, dass Benutzer den Zugriff auf Daten, die Sie schützen, mit dem bedingten Zugriff. Während die erste Verwendung Erfahrung Richtlinie Assurance verlangsamen kann, ist es zum Schutz vor Netzwerkprobleme, administrative Fehlkonfigurationen oder absichtlich den anwendungsschutzrichtlinien dadurch hilfreich. 
-
-### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660---"></a>Bereitstellung von online lizenzierten Apps im Microsoft Store für Unternehmen <!-- 16726660 -->
-Sie können die erforderlichen Microsoft Store für Unternehmen-Apps mit Onlinelizenz im Gerätekontext zuweisen. Wenn Sie eine Microsoft Store für Unternehmen-App auf diese Weise bereitstellen, kann die App für alle Benutzer auf dem Gerät installiert werden. Dies gilt nur für Windows 10 RS4-Desktopgeräte und höher. Die Option zur Installation im Gerätekontext ist auf der Seite für die Zuweisung von Client-Apps für online lizenzierte Microsoft Store für Unternehmen-Apps verfügbar.
-
-### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>Einschließen und Ausschließen von Kombination von Benutzer- und Gerätegruppen, beim Zuweisen von Richtlinien und Profile <!-- 1807547 -->
-Beim Zuweisen von Konformitätsrichtlinien oder Konfigurationsprofile können Sie diese Sicherheitsgruppen mit Benutzern oder Geräten zuweisen. Derzeit können Sie einschließen und Ausschließen von Benutzergruppen nur, *oder* einschließen und Ausschließen von nur für Gerätegruppen. Sie können keine umfassen und eine Mischung aus Gruppen auszuschließen, z. B. Benutzergruppen *und* ausschließen eine Gruppe von Geräten.
-
-Sie werden möglicherweise von ein-und Ausschließen von einer Kombination von Benutzer- und Gerätegruppen. Sie können eine Gruppe von Benutzern einschließen und Ausschließen von einer Gruppe von Geräten. Sie können z. B. zuweisen oder ein gerätekonfigurationsprofil für eine Gruppe von Benutzern bereitstellen, aber schließen Sie persönliche Geräte.
-
-[Weisen Sie gerätekonfigurationsprofile](device-profile-assign.md) enthält weitere Informationen zum Zuweisen von Profilen zu Benutzer- und Gerätegruppen.
-
-Gilt für: alle Plattformen
 
 ### <a name="retire-noncompliant-devices----1827291---"></a>Nicht kompatible Geräte abkoppeln <!-- 1827291 -->
 Wir werden eine neue Compliance-Aktion, um ein nicht konformes Gerät abkoppeln hinzufügen. Ein nicht konformes Gerät abkoppeln entfernt alle Unternehmensdaten aus und entfernt auch das Gerät von Intune verwaltet werden. Diese Aktion ausgeführt wird, wenn der konfigurierte Wert in Tagen erreicht wird. Der Mindestwert beträgt 30 Tage. 
@@ -142,7 +130,7 @@ Gilt für: Android Enterprise vollständig verwaltete Geräte
 ### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Überprüfen Sie für eine TPM-Chipsatz in einer Konformitätsrichtlinie für Windows 10-Gerät <!-- 3617671 -->
 Viele Windows 10 und höher haben Chipsätzen von Trusted Platform Module (TPM). Eine neue konformitätseinstellung überprüft, ob ein TPM auf dem Gerät ist.
 
-[Windows 10 und höher kompatibilitätsrichtlinieneinstellungen](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) werden die aktuellen Einstellungen aufgeführt.
+[Windows 10 und höher kompatibilitätsrichtlinieneinstellungen](compliance-policy-create-windows.md) werden die aktuellen Einstellungen aufgeführt.
 
 Gilt für: 
 - Windows 10 und höher
@@ -177,15 +165,6 @@ Wir fügen eine neue Windows Update-Ring-Einstellung, mit denen Sie für Benutze
 
 ### <a name="windows-update-notifications----3316782---"></a>Windows Update-Benachrichtigungen <!-- 3316782 -->
 Wir fügen Unterstützung an den Windows Update Ring Konfigurationen sodass Sie die Windows Update-Benachrichtigungen zu konfigurieren, die den Benutzern angezeigt werden können. Diese Einstellung nicht in das Portal verfügbar, aber Sie können mithilfe der Graph-API von Intune konfiguriert werden.
-
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Änderungen an der Unternehmensportal-App-Registrierung für Benutzer von iOS-12-Geräte <!--3448635 --> 
-Unternehmensportal-App für iOS wird aktualisiert, die Bildschirme der app-Registrierung und die Schritte an der MDM-Registrierung ändert sich, die in Apple iOS 12.2 veröffentlicht ausgerichtet. Der aktualisierte Workflow wird jetzt auffordern, Benutzer:
-
-- Ermöglichen Sie Safari öffnen Sie die Unternehmensportal-Website (über Safari) und das verwaltungsprofil vor der Rückgabe an den Unternehmensportal-app herunterladen.
-- Öffnen Sie die Einstellungen-app, um das verwaltungsprofil auf seinem Gerät zu installieren.
-- Gibt zurück, schließen Sie die Registrierung der Unternehmensportal-app.
-
-Weitere Informationen dazu, wie Sie diese Änderungen vorbereiten können, finden Sie unter den [Microsoft Tech Community Post](https://aka.ms/CP_changes_iOS12). In der Zwischenzeit um neue Registrierungen für iOS im Unternehmensportal zu unterstützen, wurden aktualisiert die Schritte im [Registrieren von iOS-Geräts bei Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). Diese Doc-Änderungen werden nach der Veröffentlichung des Apple iOS-Version 12.2 live. 
 
 ### <a name="easier-access-to-diagnostic-settings----3804627---"></a>Einfacher Zugriff auf die Diagnoseeinstellungen für <!-- 3804627 -->
 Fügen wir eine neue Option, um die **Überwachungsprotokolle** auf dem Blatt für jede Workload Überwachungsprotokoll geschrieben, in der Intune-Verwaltungskonsole, die Sie verwenden können, um direkt zu öffnen der *Diagnoseeinstellungen* Seite.

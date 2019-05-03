@@ -1,6 +1,6 @@
 ---
 title: 'macOS-Geräteeinstellungen in Microsoft Intune: Azure | Microsoft-Dokumentation'
-titlesuffix: ''
+titleSuffix: ''
 description: Fügen Sie Einstellungen auf macOS-Geräten hinzu, und konfigurieren oder erstellen Sie sie, um Funktionen einzuschränken. Hierzu gehören das Festlegen von Anforderungen für Kennwörter, die Anpassung des Sperrbildschirms, die Verwendung integrierter Apps, das Hinzufügen eingeschränkter oder genehmigter Apps, die Handhabung von Bluetooth-Geräten, das Herstellen einer Verbindung zur Cloud für Sicherung und Speicherung, die Aktivierung des Kioskmodus, das Hinzufügen von Domänen und die Steuerung, wie Benutzer mit dem Safari-Webbrowser in Microsoft Intune interagieren.
 keywords: ''
 author: MandiOhlinger
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a59c40a5f1095e832f84c4b21d553e3c5f11ed7
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
-ms.translationtype: MTE75
+ms.openlocfilehash: 5feec66e791da4038bd069cdad69a7ba573f27f3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330418"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798376"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>macOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
@@ -116,7 +116,7 @@ Klicken Sie zum Konfigurieren einer Liste auf **Hinzufügen**. Geben Sie dann ei
 - **Blockieren von iCloud-Sicherung von Lesezeichen**: **Block** verhindert, dass iCloud synchronisieren die Lesezeichen-Geräte. **Nicht konfiguriert** (Standard) ermöglicht die Lesezeichen-Synchronisierung in iCloud.
 - **ICloud-Sicherung von Anmerkungen zu dieser Version blockieren**: **Block** verhindert, dass iCloud synchronisieren die Anmerkungen zu dieser Geräte. **Nicht konfiguriert** (Standard) ermöglicht die Anmerkungen zu dieser Synchronisierung in iCloud.
 
-## <a name="domains"></a>Domains
+## <a name="domains"></a>Domänen
 
 - **E-Mail-Domänen-URL**: Fügen Sie eine oder mehrere URLs zur Liste hinzu. Wenn Benutzer eine E-Mail von einer Domäne erhalten, die Sie nicht konfiguriert haben, wird die E-Mail in der macOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
 

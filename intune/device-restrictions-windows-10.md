@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: 8957c8d8aad2eaa1741b1a625afd4b5a41a8bb51
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394999"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423695"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
@@ -138,7 +138,10 @@ Diese Einstellungen werden erst einem Gerätekonfigurationsprofil in Intune hinz
 - **Dialogfeld bei SIM-Kartenfehler (nur mobile Geräte)**: Blockiert die Anzeige einer Fehlermeldung auf dem Gerät, wenn keine SIM-Karte erkannt wird.
 - **Ink-Arbeitsbereich**: Blockiert den Benutzerzugriff auf den Ink-Arbeitsbereich. **Nicht konfiguriert** aktiviert den Ink-Arbeitsbereich, und der Benutzer kann ihn über den Sperrbildschirm verwenden.
 - **Automatische erneute Bereitstellung**: Ermöglicht Benutzern mit Administratorrechten, alle Benutzerdaten und -einstellungen über **STRG+Windows+R** vom Sperrbildschirm des Geräts aus zu löschen. Das Gerät wird automatisch neu konfiguriert und bei der Verwaltung neu registriert.
-- **Benutzer müssen während der Geräteeinrichtung eine Netzwerkverbindung herstellen (nur Windows-Insider)**: Wählen Sie **Anfordern** aus, damit das Gerät eine Verbindung mit einem Netzwerk herstellt, bevor das Windows 10-Setup auf der Netzwerkseite fortfahren kann. Solange sich diese Funktion in der Vorschau befindet, ist für die Verwendung dieser Einstellung der Windows-Insider-Build 1809 oder höher erforderlich.
+- **Benutzer müssen während der Geräteeinrichtung eine Netzwerkverbindung herstellen (nur Windows-Insider)**: Wählen Sie **Anfordern** aus, damit das Gerät eine Verbindung mit einem Netzwerk herstellt, bevor das Windows 10-Setup auf der Netzwerkseite fortfahren kann.
+
+  Die Einstellung wird wirksam, das nächste Mal das Gerät zurückgesetzt oder zurückgesetzt wird. Wie alle anderen Intune-Konfiguration muss das Gerät registriert und von Intune zum Empfangen von Einstellungen verwaltet werden. Aber nachdem es registriert ist, und Empfangen von Richtlinien, die dann Zurücksetzen des Geräts erzwingt die Einstellung während der nächsten Windows-Einrichtung.
+
 - **Direkter Speicherzugriff**: Bei Festlegung auf **Blockieren** wird der direkte Speicherzugriff (Direct Memory Access, DMA) für alle Hot-Plug-PCI-Downstreamanschlüsse verhindert, bis sich ein Benutzer bei Windows anmeldet. **Aktiviert** (Standardeinstellung) ermöglicht den Zugriff auf DMA selbst dann, wenn ein Benutzer nicht angemeldet ist.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
@@ -305,6 +308,29 @@ Dieses Profil für geräteeinschränkungen steht in direkter Beziehung zu den ki
   - **Wiederverwendung vorheriger Kennwörter verhindern**: Gibt an, wie viele zuvor verwendete Kennwörter vom Gerät gespeichert werden.
   - **Kennwort anfordern, wenn Gerät aus Leerlaufzustand zurückkehrt (nur Mobile)**: Gibt an, dass der Benutzer ein Kennwort zum Entsperren des Geräts eingeben muss (nur Windows 10 Mobile).
   - **Einfache Kennwörter**: Erlaubt die Verwendung einfacher Kennwörter wie 1111 oder 1234. Diese Einstellung ermöglicht es auch, die Verwendung von Windows-Bildcodes zu blockieren.
+- **Automatische Verschlüsselung bei AADJ**: **Block** automatische BitLocker-geräteverschlüsselung verhindert, wenn das Gerät für die erste Verwendung vorbereitet wird, wenn das Gerät Azure AD verknüpft ist. **Nicht konfiguriert** (Standard) verwendet, die Standardeinstellung Betriebssystem, die Verschlüsselung aktivieren kann. Weitere Informationen zur [BitLocker-geräteverschlüsselung](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+
+  [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
+
+- **Federal Information Processing Standard (FIPS) Richtlinie**: **zulassen** verwendet die Federal Information Processing Standard (FIPS)-Richtlinie, die eine US-Regierung ist standard für die Verschlüsselung, hashing und Signatur. **Nicht konfiguriert** (Standard) verwendet den Standardwert Betriebssystem FIPS nicht verwendet.
+
+  [Kryptografie/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+
+- **Windows Hello-Geräteauthentifizierung**: **zulassen** Benutzer einer Windows Hello begleitgerät, wie z. B. eine Phone, Fitness-Band- oder IoT-Geräte, für die Anmeldung mit einem Windows 10-Computer verwenden. **Nicht konfiguriert** (Standard) verwendet die Betriebssystem-Standard, die Windows Hello-Begleitgeräten für die Authentifizierung mit Windows verhindern kann.
+
+  [Authentifizierung/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
+
+- **Webanmeldung**: können Windows-Anmeldung Unterstützung für nicht-AD FS (Active Directory Federation Services)-Verbund-Anbieter, z. B. Security Assertion Markup Language (SAML). SAML verwendet sichere Token, die angeben, dass Webbrowser eines single Sign-on (SSO) auftreten. Folgende Optionen sind verfügbar:
+
+  - **Nicht konfiguriert** (Standard): das Betriebssystem auf dem Gerät verwendet.
+  - **Aktiviert**: die Web-Anmeldeinformationsanbieter für die Anmeldung aktiviert ist.
+  - **Deaktiviert**: die Web-Anmeldeinformationsanbieter für die Anmeldung deaktiviert ist.
+
+  [Authentifizierung/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+
+- **Bevorzugte Azure AD-mandantendomäne**: Geben Sie einen vorhandenen Domänennamen in Ihrem Azure AD-Organisation. Wenn Benutzer in dieser Domäne anmelden, müssen sie den Domänennamen eingeben. Geben Sie beispielsweise `contoso.com` ein. Benutzer in der `contoso.com` Domäne kann melden Sie sich mit ihren Benutzernamen ein, z. B. "abby" anstelle von "abby@contoso.com".
+
+  [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>App-bezogene Datenschutzausnahmen
 

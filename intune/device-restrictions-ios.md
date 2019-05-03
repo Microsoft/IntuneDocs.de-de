@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 0d0623e9d12132ac470813d65510bc2c76379109
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490725"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871470"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
@@ -195,7 +195,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 #### <a name="safari"></a>Safari
 
-- **Safari**: **Blockieren** der Verwendung des Safari-Browsers auf dem Gerät. **Nicht konfiguriert** ermöglicht Benutzern die Verwendung des Safari-Browsers.
+- **Safari (nur überwacht)**: **Blockieren** der Verwendung des Safari-Browsers auf dem Gerät. **Nicht konfiguriert** ermöglicht Benutzern die Verwendung des Safari-Browsers.
 - **AutoAusfüllen**: **Blockieren** deaktiviert das AutoAusfüllen-Feature in Safari auf dem Gerät. **Nicht konfiguriert** ermöglicht Benutzern, die Einstellungen für AutoVervollständigen im Browser zu ändern.
 - **Cookies**: Wählen Sie aus, wie Cookies auf dem Gerät behandelt werden. Folgende Optionen sind verfügbar:
   - Zulassen
@@ -290,7 +290,7 @@ Um diesen Listen Apps hinzuzufügen, können Sie:
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
 
 - **In iCloud sichern**: **Nicht konfiguriert** ermöglicht dem Benutzer, das Gerät in iCloud zu sichern. **Blockieren** hindert den Benutzer daran, das Gerät in iCloud zu sichern.
-- **Block iCloud Document sync** (Dokumentsynchronisierung in iCloud blockieren): **Nicht konfiguriert** ermöglicht die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher. **Blockieren** hindert iCloud daran, Dokumente und Daten zu synchronisieren.
+- **Dokumentsynchronisierung in iCloud (nur überwachter Modus)**: **Nicht konfiguriert** ermöglicht die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher. **Blockieren** hindert iCloud daran, Dokumente und Daten zu synchronisieren.
 - **Synchronisierung von Fotostreams in iCloud**: **Nicht konfiguriert** ermöglicht Benutzern das Aktivieren von **Mein Photo Stream** auf ihren Geräten zum Synchronisieren mit iCloud, damit Fotos auf allen Geräten der Benutzer verfügbar sind. **Blockieren** verhindert die Fotostream-Synchronisierung mit iCloud.
 - **Verschlüsselte Sicherung**: **Anfordern** erzwingt die Verschlüsselung von Gerätesicherungen.
 - **iCloud-Fotomediathek**: Deaktivieren Sie mit **Blockieren** die Verwendung der iCloud-Fotomediathek zum Speichern von Fotos und Videos in der Cloud. Fotos, die nicht vollständig aus der iCloud-Fotomediathek auf das Gerät heruntergeladen wurden, werden vom Gerät entfernt. **Nicht konfiguriert** ermöglicht die Verwendung der iCloud-Fotomediathek.
@@ -339,7 +339,7 @@ Apps können Sie wie folgt hinzufügen:
 > Damit Sie ein iOS-Gerät für den Kioskmodus konfigurieren können, müssen Sie das Apple Configurator-Tool oder das Apple-Programm zur Geräteregistrierung verwenden, um das Gerät in den überwachten Modus zu versetzen. Informationen zur Verwendung des Apple Configurator-Tools finden Sie im Apple-Handbuch.
 > Wenn die iOS-App, die Sie eingeben, nach der Zuweisung des Profils installiert wird, wird das Gerät erst nach einem Neustart in den Kioskmodus versetzt.
 
-## <a name="domains"></a>Domains
+## <a name="domains"></a>Domänen
 
 - **Nicht markierte e-Mail-Domänen** > **-e-Mail-Domänen-URL**: eine oder mehrere URLs der Liste hinzufügen. Wenn Endbenutzer eine E-Mail von einer anderen Domäne als den von Ihnen eingegebenen erhalten, wird die E-Mail in der iOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
 
@@ -367,7 +367,7 @@ Die folgende Liste enthält die Bündel-ID einiger gängiger integrierter iOS-Ap
 | com.apple.gamecenter        | Gamecenter  | Apple     |
 | com.apple.mobilegarageband  | GarageBand   | Apple     |
 | com.apple.Health            | Integrität       | Apple     |
-| com.apple.Home              | Startseite         | Apple     |
+| com.apple.Home              | -Startseite         | Apple     |
 | com.apple.iBooks            | iBooks       | Apple     |
 | com.apple.iMovie            | iMovie       | Apple     |
 | com.apple.itunesconnect.mobile | iTunes Connect | Apple |
@@ -376,7 +376,7 @@ Die folgende Liste enthält die Bündel-ID einiger gängiger integrierter iOS-Ap
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Mail         | Apple     |
 | com.apple.Maps              | Zuordnungen         | Apple     |
-| com.apple.MobileSMS         | Nachrichten     | Apple     |
+| com.apple.MobileSMS         | Messages     | Apple     |
 | com.apple.Music             | Musik        | Apple     |
 | com.apple.news              | News         | Apple     |
 | com.apple.mobilenotes       | Hinweise        | Apple     |
@@ -387,7 +387,7 @@ Die folgende Liste enthält die Bündel-ID einiger gängiger integrierter iOS-Ap
 | com.apple.podcasts          | Podcasts     | Apple     |
 | com.apple.reminders         | Reminders    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
-| com.apple.Preferences       | Einstellung     | Apple     |
+| com.apple.Preferences       | Einstellungen     | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Stocks       | Apple     |
 | com.apple.tips              | Tipps         | Apple     |
