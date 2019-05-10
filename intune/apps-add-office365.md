@@ -149,16 +149,9 @@ In den nachstehenden Tabellen sind die häufigsten Fehlercodes aufgeführt, die 
 | Fehlercode aus CertVerifyCertificateChainPolicy | - | Fehlgeschlagene Zertifizierungsprüfung für das heruntergeladene Office-Bereitstellungstool. |
 | 997 | WIP | Installation |
 | 0 | Nach der Installation | Die Installation war erfolgreich |
-| 1603 (ERROR_INSTALL_FAILURE) | - | Fehler bei Voraussetzungsprüfungen, z.B.:
-SxS (beim Installationsversuch war 2016 MSI installiert)
-Nicht übereinstimmende Version
-Sonstiges |
+| 1603 (ERROR_INSTALL_FAILURE) | - | Fehler bei Voraussetzungsprüfungen, z.B.:SxS (beim Installationsversuch war 2016 MSI installiert)Nicht übereinstimmende VersionSonstiges |
 | 0x8000ffff (E_UNEXPECTED) | - | Beim Versuch, eine Deinstallation durchzuführen, war keine Klick-und-Los-Version von Office auf dem Computer vorhanden. |
-| 17002 | - | Das Szenario (Installation) konnte nicht abgeschlossen werden. Mögliche Gründe:
-Installation durch Benutzer abgebrochen
-Installation durch andere Installation abgebrochen
-Fehlender Speicherplatz auf dem Datenträger während der Installation
-Unbekannte Sprach-ID |
+| 17002 | - | Das Szenario (Installation) konnte nicht abgeschlossen werden. Mögliche Gründe:Installation durch Benutzer abgebrochen Installation durch andere Installation abgebrochen Fehlender Speicherplatz auf dem Datenträger während der Installation Unbekannte Sprach-ID |
 | 17004 | - | Unbekannte SKUs |
 
 
