@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/23/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa2734247569245794bce7fe1de68c8b20c6091f
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 69814b91978aa3cd74c4dc239b099883ae402af9
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490603"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764770"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Verwenden und Verwalten von Zebra-Geräten mit Zebra Mobility-Erweiterungen in Microsoft Intune
 
@@ -30,7 +30,9 @@ ms.locfileid: "58490603"
 
 Intune umfasst einen umfangreichen Satz von Funktionen, einschließlich apps verwalten und Konfigurieren von Einstellungen für Geräte. Diese integrierten Funktionen und Einstellungen werden zum Verwalten von Android-Geräte von Zebra Technologies, auch bekannt als "Zebra Geräte" hergestellt werden.
 
-Wenn Sie anpassen oder weitere Zebra-spezifischen Einstellungen hinzufügen möchten, können Sie auch verwenden, Zebra **Mobility-Erweiterungen (MX)** auf diesen Geräten. 
+Auf Android-Geräten verwenden **Mobility-Erweiterungen (MX)** Profile anpassen oder Hinzufügen weiterer Zebra-spezifischen Einstellungen.
+
+Dieser Artikel veranschaulicht die Zebra Mobility Extensions (MX) auf Zebra-Geräte in Microsoft Intune verwenden.
 
 Diese Funktion gilt für:
 
@@ -39,8 +41,6 @@ Diese Funktion gilt für:
 Ihr Unternehmen möglicherweise Zebra-Geräte für den Einzelhandel, in der Fabrik und vieles mehr verwenden. Beispielsweise haben einen Händler, und Ihre Umgebung enthält Tausende von Zebra mobile Geräte, die Vertriebsmitarbeiter. Intune kann helfen, diese Geräte als Teil Ihrer Lösung für mobile Geräte (MDM) verwalten.
 
 Zebra-Geräte, um Ihre Line-of-Business-apps auf den Geräten bereitstellen können Sie mithilfe von Intune registrieren. "Gerätekonfiguration" Profilen können Sie die MX-Profile zum Verwalten Ihrer Zebra-spezifischen Einstellungen zu erstellen.
-
-Dieser Artikel veranschaulicht die Zebra Mobility Extensions (MX) auf Zebra-Geräte in Microsoft Intune verwenden.
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
@@ -95,7 +95,7 @@ Veröffentlichen das Profil und nutzen es mit der StageNow-app auf dem Gerät we
 
 Nach Abschluss der ersten beiden Schritte ist die Unternehmensportal-app auf dem Gerät installiert. Das Gerät kann bei Intune registriert werden.
 
-[Registrieren von Android-Geräten](android-enroll.md) sind die Schritte aufgeführt. Wenn Sie viele Zebra Geräte verfügen, Sie möchten verwenden eine [geräteregistrierungs-Managerkonto](device-enrollment-manager-enroll.md).
+[Registrieren von Android-Geräten](android-enroll.md) sind die Schritte aufgeführt. Wenn Sie viele Zebra Geräte verfügen, Sie möchten verwenden eine [geräteregistrierungs-Manager (DEM) Konto](device-enrollment-manager-enroll.md). Mit einem geräteregistrierungs-Manager-Konto entfernt auch die Option zum Aufheben der Registrierung der Unternehmensportal-App, damit Benutzer die Registrierung des Geräts als einfach aufheben können nicht.
 
 ## <a name="step-4-create-a-device-management-profile-in-stagenow"></a>Schritt 4: Erstellen eines geräteprofils für die Verwaltung in StageNow
 
@@ -149,6 +149,5 @@ Das nächste Mal das Gerät eincheckt Updates für die Konfiguration, wird das M
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Zuweisen von Profilen](device-profile-assign.md) und [Überwachen von Profilen](device-profile-monitor.md)
-
-[Verwenden Sie StageNow-Protokolle zur Problembehandlung Zebra Geräte](android-zebra-mx-logs-troubleshoot.md).
+- [Zuweisen von Profilen](device-profile-assign.md) und [Überwachen von Profilen](device-profile-monitor.md)
+- [Verwenden Sie StageNow-Protokolle zur Problembehandlung Zebra Geräte](android-zebra-mx-logs-troubleshoot.md).
