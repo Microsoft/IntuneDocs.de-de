@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426152"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135116"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Eigenständiges Intune – Win32-App-Verwaltung
 
@@ -142,8 +142,8 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
     Wenn Ihr App-Dateiname z. B. **MyApp123** lautet, fügen Sie Folgendes hinzu:<br>
     `msiexec /p “MyApp123.msp”`<p>
     Wenn die Anwendung `ApplicationName.exe` ist, entspricht der Befehl dem Anwendungsnamen gefolgt von den Befehlsargumenten, die vom Paket unterstützt werden. <br>Beispiel:<br>
-    `ApplicationName.exe /quite`<br>
-    Im obigen Befehl unterstützt das `ApplicaitonName.exe`-Paket das `/quite`-Befehlsargument.<p> Wenden Sie sich für die spezifischen Argumente, die das Anwendungspaket unterstützt, an den Anbieter der Anwendung.
+    `ApplicationName.exe /quiet`<br>
+    Im obigen Befehl unterstützt das `ApplicationName.exe`-Paket das `/quiet`-Befehlsargument.<p> Wenden Sie sich für die spezifischen Argumente, die das Anwendungspaket unterstützt, an den Anbieter der Anwendung.
 
 3.  Fügen Sie die vollständige Befehlszeile zum Deinstallieren hinzu, um die App basierend auf der GUID der App zu deinstallieren. 
 
@@ -282,9 +282,6 @@ An dieser Stelle haben Sie alle Schritte zum Hinzufügen einer Win32-App zu Intu
 ## <a name="app-dependencies"></a>App-Abhängigkeiten
 
 App-Abhängigkeiten sind Anwendungen, die installiert sein müssen, bevor Ihre Win32-App installiert werden kann. Sie können anfordern, dass andere Apps als Abhängigkeiten installiert werden. Das heißt, das Gerät muss die abhängige(n) App(s) installieren, bevor die Win32-App installiert wird. Es sind maximal 100 Abhängigkeiten möglich. Dazu zählen die Abhängigkeiten aller eingeschlossenen Abhängigkeiten sowie die App selbst. Sie können Win32-App-Abhängigkeiten erst hinzufügen, nachdem Ihre Win32-App zu Intune hinzugefügt und darin hochgeladen wurde. Sobald Ihre Win32-App hinzugefügt wurde, sehen Sie die Option **Abhängigkeiten** auf dem Blatt für Ihre Win32-App. 
-
-> [!NOTE]
-> Die Funktionalität der App-Abhängigkeit steht nur zur Verfügung, wenn der Intune-Verwaltungs-Agent auf Version 1904 (höher als 1.18.120.0) aktualisiert wurde, was nach dem Upgrade des Diensts auf Version 1904 ein bis zwei weitere Wochen dauern kann.
 
 Wenn Sie eine App-Abhängigkeit hinzufügen, können Sie basierend auf dem Namen und dem Herausgeber der App Suchvorgänge ausführen. Darüber hinaus können Sie Ihre hinzugefügten Abhängigkeiten nach Name und Herausgeber der App sortieren. Bereits zuvor hinzugefügte App-Abhängigkeiten können nicht aus der Liste der hinzugefügten App-Abhängigkeiten ausgewählt werden. 
 

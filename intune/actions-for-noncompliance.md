@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/19/2019
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 751d89ef023bea07d3c8bdb69904605d88c9e0b6
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504202"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135225"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatisieren von E-Mails und Hinzufügen von Aktionen für nicht konforme Geräte in Intune
 
@@ -103,9 +103,6 @@ Sie können beim Erstellen einer Konformitätsrichtlinie oder Aktualisieren eine
          - Geben Sie durch die Auswahl von Gruppen **zusätzliche Empfänger** ein
     
     - **Nicht konformes Gerät remote sperren:** Sperren Sie das Gerät, wenn es nicht konform ist. Durch diese Aktion wird der Benutzer zur Eingabe einer PIN oder eines Kennworts gezwungen, um das Gerät zu entsperren 
-
-    - **Retire the noncompliant device** (Nicht konformes Gerät deaktivieren): Wenn das Gerät nicht konform ist, entfernen Sie alle Unternehmensdaten vom Gerät, und entfernen Sie das Gerät aus der Intune-Verwaltung. Damit ein Gerät nicht versehentlich gelöscht wird, unterstützt diese Aktion einen minimalen Zeitplan von **30** Tagen.  
-
     
 5. Konfigurieren Sie einen **Zeitplan**: Geben Sie die Anzahl von Tagen (0 bis 365) nach der Nichtkonformität ein, nach der die Aktion auf Benutzergeräten ausgelöst werden soll. Nach dieser Toleranzperiode können Sie eine Richtlinie für bedingten Zugriff erzwingen. Wenn Sie als Anzahl von Tagen **0** (null) eingeben, wird der bedingte Zugriff **sofort** wirksam. Sie können den Zugriff auf Unternehmensressourcen beispielsweise sofort blockieren, wenn ein Gerät nicht konform ist.
 
