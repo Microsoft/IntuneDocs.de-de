@@ -552,6 +552,8 @@
               href: app-configuration-policies-use-ios.md
             - name: Android Verwaltete Geräte
               href: app-configuration-policies-use-android.md
+            - name: Managed Home Screen-App für Android Enterprise
+              href: app-configuration-managed-home-screen-app.md
             - name: Verwaltete Apps
               href: app-configuration-policies-managed-app.md
             - name: Verwenden von iOS-App-Bereitstellungsprofilen
