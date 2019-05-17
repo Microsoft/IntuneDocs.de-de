@@ -2,18 +2,44 @@
   "build": {
     "content": [
       {
+        "files": [
+          "**/*.md"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
           "**/old-TOC.md"
-        ],
+        ]
+      }
+    ],
+    "resource": [
+      {
         "files": [
-          "**/*.md"
+          "**/images/**",
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp",
+          "**/*.html",
+          "**/*.css"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "_themes/**"
         ]
       }
     ],
     "dest": "InTuneDocs",
+    "template": "docs.html",
     "globalMetadata": {
+      "layout": "Conceptual",
+      "breadcrumb_path": "/enterprise-mobility/toc.json",
+      "product_feedback_displaytext": "Intune Feedback",
+      "product_feedback_url": "https://microsoftintune.uservoice.com/",
+      "contributors_to_exclude": [
+        "herohua"
+      ],
+      "searchScope": ["Intune"],
       "_op_documentIdPathDepotMapping": {
         "EndUser/": {
           "depot_name": "Azure.EndUser",
@@ -23,6 +49,10 @@
           "depot_name": "Azure.IntTroubleshoot",
           "folder_relative_path_in_docset": "."
         },
+        "understand-explore/": {
+          "depot_name": "Azure.IntUnderstand",
+          "folder_relative_path_in_docset": "."
+        },
         "deploy-use/": {
           "depot_name": "Azure.IntDeployUse",
           "folder_relative_path_in_docset": "."
@@ -30,41 +60,9 @@
         "get-started/": {
           "depot_name": "Azure.IntGetStarted",
           "folder_relative_path_in_docset": "."
-        },
-        "understand-explore/": {
-          "depot_name": "Azure.IntUnderstand",
-          "folder_relative_path_in_docset": "."
         }
-      },
-      "breadcrumb_path": "/enterprise-mobility/toc.json",
-      "contributors_to_exclude": [
-        "herohua"
-      ],
-      "layout": "Conceptual",
-      "product_feedback_displaytext": "Intune Feedback",
-      "product_feedback_url": "https://microsoftintune.uservoice.com/",
-      "searchScope": [
-        "Intune"
-      ]
-    },
-    "markdownEngineName": "markdig",
-    "resource": [
-      {
-        "exclude": [
-          "**/obj/**",
-          "_themes/**"
-        ],
-        "files": [
-          "**/images/**",
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif",
-          "**/*.bmp",
-          "**/*.html",
-          "**/*.css"
-        ]
       }
-    ],
-    "template": "docs.html"
+    },
+    "markdownEngineName": "markdig"
   }
 }
