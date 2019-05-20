@@ -442,11 +442,16 @@
                       items:
                         - name: Sophos Mobile- und Intune-Integration
                           href: sophos-mtd-connector-integration.md
-            - name: Windows Defender ATP
-              href: advanced-threat-protection.md
-            - name: Sicherheitsbaselines
-              href: security-baselines.md
+            - name: Microsoft Defender
               items:
+                - name: Microsoft Defender ATP
+                  href: advanced-threat-protection.md
+                - name: Sicherheitsaufgaben
+                  href: atp-manage-vulnerabilities.md
+            - name: Sicherheitsbaselines
+              items:
+                - name: Sicherheitsbaselines
+                  href: security-baselines.md
                 - name: Überwachen von Baselines
                   href: security-baselines-monitor.md
             - name: Endpoint Protection
@@ -552,7 +557,7 @@
               href: app-configuration-policies-use-ios.md
             - name: Android Verwaltete Geräte
               href: app-configuration-policies-use-android.md
-            - name: Managed Home Screen-App für Android Enterprise
+            - name: Konfigurieren von Managed Home Screen
               href: app-configuration-managed-home-screen-app.md
             - name: Verwaltete Apps
               href: app-configuration-policies-managed-app.md
@@ -770,8 +775,12 @@
                   href: shared-user-device-settings-windows.md
                 - name: Benutzerdefiniert
                   href: custom-settings-windows-10.md
-            - name: Einstellungen für Sicherheitsbaselines
-              href: security-baseline-settings-windows.md
+            - name: Sicherheitsbaselines
+              items:
+                - name: "Einstellungen für Windows\_10-Baseline"
+                  href: security-baseline-settings-windows.md
+                - name: Einstellungen für Microsoft Defender ATP-Baseline
+                  href: security-baseline-settings-defender-atp.md
             - name: Windows Update-Einstellungen
               href: windows-update-settings.md
         - name: Windows Holographic for Business
