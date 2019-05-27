@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/10/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ae5ee7a33ca069853201c553e461d9e36c9bbdb
-ms.sourcegitcommit: af2512a1342d8037a96a61c8cc2c63e107913733
+ms.openlocfilehash: d7401b5da7629addf03498afd44033a59839d39e
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59533511"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045318"
 ---
 # <a name="reference-for-user-device-association-entity"></a>Verweis für die Entität „Benutzergerätezuordnung“
 

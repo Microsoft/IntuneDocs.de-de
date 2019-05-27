@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 11/13/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: edb01e1cbe5fdbc79b48ee90e39fe45a2ccefb2a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: eeb70727a187a769e56a9cfd517ecd7b583ba1c1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566351"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042465"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Listen der Standardeinstellungen für Geräteeinschränkungen für Android und Samsung KNOX in Intune
 
@@ -33,17 +32,17 @@ In diesem Artikel lernen Sie alle Einstellungen für Geräteeinschränkungen in 
 ## <a name="general"></a>Allgemein
 
 - **Kamera**: Wählen Sie **Blockieren** aus, um den Zugriff auf die Kamera zu verhindern. **Nicht konfiguriert** ermöglicht den Zugriff auf die Kamera des Geräts.
-- **Kopieren und einfügen (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um Kopieren und Einfügen zu verhindern. **Nicht konfiguriert** lässt Kopier- und Einfügefunktionen auf dem Gerät zu.
-- **Gemeinsame Nutzung der Zwischenablage durch Apps (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um die Verwendung der Zwischenablage für das Kopieren und Einfügen zwischen Apps zu verhindern. **Nicht konfiguriert** ermöglicht die Verwendung der Zwischenablage zum Kopieren und Einfügen zwischen Apps.
-- **Übermittlung von Diagnosedaten (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um den Benutzer an der Übermittlung von Diagnosedaten vom Gerät zu hindern. **Nicht konfiguriert** ermöglicht dem Benutzer, Daten zu übermitteln.
-- **Zurücksetzung auf Werkseinstellungen (nur Samsung KNOX)**: Erlaubt dem Benutzer das [Zurücksetzen](devices-wipe.md) des Geräts.
-- **Geolocation (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um die Verwendung von Standortinformationen durch das Gerät zu deaktivieren. **Nicht konfiguriert** erlaubt dem Gerät die Nutzung von Standortinformationen.
-- **Ausschalten (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um zu verhindern, dass der Benutzer das Gerät ausschaltet. Wenn diese Einstellung deaktiviert ist, kann die Einstellung **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird** nicht festgelegt werden und funktioniert nicht. **Nicht konfiguriert** erlaubt dem Benutzer das Ausschalten des Geräts.
-- **Bildschirmaufnahme (nur Samsung Knox)**: Wählen Sie **Blockieren** aus, um Screenshots zu verhindern. **Nicht konfiguriert** erlaubt dem Benutzer, den Bildschirminhalt als Bild zu erfassen.
-- **Sprach-Assistent (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um den S Voice-Dienst zu deaktivieren. **Nicht konfiguriert** erlaubt die Verwendung des S Voice-Diensts und der -App auf dem Gerät. Diese Einstellung gilt nicht für Bixby oder den Sprach-Assistenten für die Bedienungshilfe, der den Bildschirminhalt laut vorliest.
-- **YouTube (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer die YouTube-App verwenden. **Nicht konfiguriert** ermöglicht die Verwendung der YouTube-App auf dem Gerät.
-- **Freigegebene Geräte (nur Samsung KNOX)**: Konfigurieren Sie ein verwaltetes Samsung KNOX Standard-Gerät als freigegeben. Bei Festlegung auf **Zulassen** können sich Endbenutzer des Geräts mit ihren Azure AD-Anmeldeinformationen an- und abmelden. Das Gerät wird weiterhin verwaltet, ganz gleich, ob es verwendet wird oder nicht.</br>In Verbindung mit einem SCEP-Zertifikatsprofil ermöglicht diese Funktion Endbenutzern die gemeinsame Nutzung eines Geräts mit denselben Apps für alle Benutzer. Aber jeder Benutzer verfügt über ein eigenes SCEP-Benutzerzertifikat. Wenn sich Benutzer abmelden, werden alle App-Daten gelöscht. Dieses Feature ist ausschließlich auf branchenspezifische Apps beschränkt. </br>**Nicht konfiguriert** verhindert, dass mehrere Endbenutzer sich bei der Unternehmensportal-App auf dem Gerät mit ihren Azure AD-Anmeldeinformationen anmelden.
-- **Datums- und Uhrzeitänderungen blockieren (Samsung KNOX)**: Wählen Sie **Blockieren** aus, um zu verhindern, dass der Benutzer Datums- und Uhrzeiteinstellungen auf dem Gerät ändert. **Nicht konfiguriert** ermöglicht dem Benutzer, die Datums- und Uhrzeiteinstellungen zu ändern.
+- **Kopieren und einfügen (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um Kopieren und Einfügen zu verhindern. **Nicht konfiguriert** lässt Kopier- und Einfügefunktionen auf dem Gerät zu.
+- **Gemeinsame Nutzung der Zwischenablage durch Apps (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um die Verwendung der Zwischenablage für das Kopieren und Einfügen zwischen Apps zu verhindern. **Nicht konfiguriert** ermöglicht die Verwendung der Zwischenablage zum Kopieren und Einfügen zwischen Apps.
+- **Übermittlung von Diagnosedaten (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um den Benutzer an der Übermittlung von Diagnosedaten vom Gerät zu hindern. **Nicht konfiguriert** ermöglicht dem Benutzer, Daten zu übermitteln.
+- **Zurücksetzung auf Werkseinstellungen (nur Samsung KNOX)** : Erlaubt dem Benutzer das [Zurücksetzen](devices-wipe.md) des Geräts.
+- **Geolocation (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um die Verwendung von Standortinformationen durch das Gerät zu deaktivieren. **Nicht konfiguriert** erlaubt dem Gerät die Nutzung von Standortinformationen.
+- **Ausschalten (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um zu verhindern, dass der Benutzer das Gerät ausschaltet. Wenn diese Einstellung deaktiviert ist, kann die Einstellung **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird** nicht festgelegt werden und funktioniert nicht. **Nicht konfiguriert** erlaubt dem Benutzer das Ausschalten des Geräts.
+- **Bildschirmaufnahme (nur Samsung Knox)** : Wählen Sie **Blockieren** aus, um Screenshots zu verhindern. **Nicht konfiguriert** erlaubt dem Benutzer, den Bildschirminhalt als Bild zu erfassen.
+- **Sprach-Assistent (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um den S Voice-Dienst zu deaktivieren. **Nicht konfiguriert** erlaubt die Verwendung des S Voice-Diensts und der -App auf dem Gerät. Diese Einstellung gilt nicht für Bixby oder den Sprach-Assistenten für die Bedienungshilfe, der den Bildschirminhalt laut vorliest.
+- **YouTube (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer die YouTube-App verwenden. **Nicht konfiguriert** ermöglicht die Verwendung der YouTube-App auf dem Gerät.
+- **Freigegebene Geräte (nur Samsung KNOX)** : Konfigurieren Sie ein verwaltetes Samsung KNOX Standard-Gerät als freigegeben. Bei Festlegung auf **Zulassen** können sich Endbenutzer des Geräts mit ihren Azure AD-Anmeldeinformationen an- und abmelden. Das Gerät wird weiterhin verwaltet, ganz gleich, ob es verwendet wird oder nicht.</br>In Verbindung mit einem SCEP-Zertifikatsprofil ermöglicht diese Funktion Endbenutzern die gemeinsame Nutzung eines Geräts mit denselben Apps für alle Benutzer. Aber jeder Benutzer verfügt über ein eigenes SCEP-Benutzerzertifikat. Wenn sich Benutzer abmelden, werden alle App-Daten gelöscht. Dieses Feature ist ausschließlich auf branchenspezifische Apps beschränkt. </br>**Nicht konfiguriert** verhindert, dass mehrere Endbenutzer sich bei der Unternehmensportal-App auf dem Gerät mit ihren Azure AD-Anmeldeinformationen anmelden.
+- **Datums- und Uhrzeitänderungen blockieren (Samsung KNOX)** : Wählen Sie **Blockieren** aus, um zu verhindern, dass der Benutzer Datums- und Uhrzeiteinstellungen auf dem Gerät ändert. **Nicht konfiguriert** ermöglicht dem Benutzer, die Datums- und Uhrzeiteinstellungen zu ändern.
 
 ## <a name="password"></a>Kennwort
 
@@ -55,7 +54,7 @@ In diesem Artikel lernen Sie alle Einstellungen für Geräteeinschränkungen in 
 - **Minimale Kennwortlänge**: Geben Sie die Mindestanzahl von Zeichen an, die Benutzer für das Kennwort festlegen müssen (zwischen 4 und 16 Zeichen).
 - **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung**: Geben Sie an, wie viele Minuten ein Gerät höchstens inaktiv sein darf, bevor es automatisch gesperrt wird. Ein Endbenutzer kann auf dem Gerät keinen höheren Wert als die im Profil konfigurierte Zeit festlegen. Der Endbenutzer kann einen niedrigeren Zeitwert festlegen. Wenn das Profil auf 15 Minuten festgelegt ist, kann ein Endbenutzer den Wert auf 5 Minuten festlegen, aber nicht auf 30 Minuten. 
 - **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird**: Geben Sie die Anzahl zulässiger Anmeldefehler ein, bevor das Gerät zurückgesetzt wird.
-- **Kennwortablauf (Tage)**: Geben Sie die Anzahl der Tage an, nach denen das Gerätekennwort geändert werden muss.
+- **Kennwortablauf (Tage)** : Geben Sie die Anzahl der Tage an, nach denen das Gerätekennwort geändert werden muss.
 - **Erforderlicher Kennworttyp**: Geben Sie den erforderlichen Grad der Kennwortkomplexität an und ob biometrische Geräte zulässig sind. Folgende Optionen sind verfügbar:
   - **Gerätestandard**
   - **Biometrie auf niedriger Sicherheitsstufe**
@@ -65,7 +64,7 @@ In diesem Artikel lernen Sie alle Einstellungen für Geräteeinschränkungen in 
   - **Mindestens alphanumerisch**
   - **Mindestens alphanumerisch mit Symbolen**
 - **Wiederverwendung vorheriger Kennwörter verhindern**: Hindert den Endbenutzer daran, ein bereits verwendetes Kennwort erneut festzulegen.
-- **Entsperrung durch Fingerabdruck (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um die Verwendung eines Fingerabdrucks zum Entsperren des Geräts zu verhindern. **Nicht konfiguriert** ermöglicht dem Benutzer das Entsperren des Geräts mittels Fingerabdruck.
+- **Entsperrung durch Fingerabdruck (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um die Verwendung eines Fingerabdrucks zum Entsperren des Geräts zu verhindern. **Nicht konfiguriert** ermöglicht dem Benutzer das Entsperren des Geräts mittels Fingerabdruck.
 - **Smart Lock und andere Vertrauens-Agents**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Smart Lock oder andere Vertrauens-Agents (Samsung KNOX Standard 5.0 und höher) Sperrbildschirmeinstellungen anpassen. Dieses Telefonfeature wird manchmal auch als Vertrauens-Agent bezeichnet und ermöglicht Ihnen, das Kennwort für den Gerätesperrbildschirm zu deaktivieren oder zu umgehen, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet. Dieses Feature kann beispielsweise verwendet werden, wenn das Gerät mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet. Mit dieser Einstellung können Sie verhindern, dass Benutzer Smart Lock konfigurieren.
 - **Verschlüsselung**: Wählen Sie **Anfordern** aus, sodass die Dateien auf dem Gerät verschlüsselt werden. Nicht alle Geräte unterstützen die Verschlüsselung. Legen Sie zur Nutzung dieser Funktion außerdem Folgendes fest: 
   1. Legen Sie für **Kennwort** **Anfordern** fest.
@@ -84,7 +83,7 @@ Wenn Sie für **Erforderlicher Kennworttyp** **Numerisch komplex** festlegen und
 
 ## <a name="google-play-store"></a>Google Play Store
 
-- **Google Play Store (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer den Google Play Store verwenden. **Nicht konfiguriert** ermöglicht dem Benutzer den Zugriff auf den Google Play Store auf dem Gerät.
+- **Google Play Store (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer den Google Play Store verwenden. **Nicht konfiguriert** ermöglicht dem Benutzer den Zugriff auf den Google Play Store auf dem Gerät.
 
 ## <a name="restricted-apps"></a>Eingeschränkte Apps
 
@@ -103,15 +102,15 @@ Um diesen Listen Apps hinzuzufügen, können Sie:
 
 ## <a name="browser"></a>Browser
 
-- **Webbrowser (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um zu verhindern, dass der Standardwebbrowser auf dem Gerät verwendet wird. **Nicht konfiguriert** ermöglicht die Verwendung des Standardwebbrowsers des Geräts.
-- **AutoAusfüllen (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um das automatische Ausfüllen von Text im Browser zu verhindern. **Nicht konfiguriert** ermöglicht die Verwendung der AutoAusfüllen-Funktion des Webbrowsers.
-- **Cookies (nur Samsung KNOX)**: Wählen Sie aus, wie Sie mit Cookies von Websites auf dem Gerät umgehen möchten. Folgende Optionen sind verfügbar:
+- **Webbrowser (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um zu verhindern, dass der Standardwebbrowser auf dem Gerät verwendet wird. **Nicht konfiguriert** ermöglicht die Verwendung des Standardwebbrowsers des Geräts.
+- **AutoAusfüllen (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um das automatische Ausfüllen von Text im Browser zu verhindern. **Nicht konfiguriert** ermöglicht die Verwendung der AutoAusfüllen-Funktion des Webbrowsers.
+- **Cookies (nur Samsung KNOX)** : Wählen Sie aus, wie Sie mit Cookies von Websites auf dem Gerät umgehen möchten. Folgende Optionen sind verfügbar:
   - Zulassen
   - Alle Cookies blockieren
   - Cookies von besuchten Websites zulassen
   - Cookies von aktueller Website zulassen
-- **JavaScript (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um zu verhindern, dass der Webbrowser Java-Skripts ausführt. **Nicht konfiguriert** ermöglicht die Ausführung von Java-Skripts im Webbrowser des Geräts.
-- **Popups (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um Popups im Webbrowser zu verhindern. **Nicht konfiguriert** lässt Popups im Webbrowser zu.
+- **JavaScript (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um zu verhindern, dass der Webbrowser Java-Skripts ausführt. **Nicht konfiguriert** ermöglicht die Ausführung von Java-Skripts im Webbrowser des Geräts.
+- **Popups (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um Popups im Webbrowser zu verhindern. **Nicht konfiguriert** lässt Popups im Webbrowser zu.
 
 ## <a name="allow-or-block-apps"></a>Zulassen oder Blockieren von Apps
 
@@ -131,21 +130,21 @@ Fügen Sie für jede Einstellung eine Liste von Apps hinzu. Folgende Optionen si
 
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
 
-- **Google-Sicherung (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um zu verhindern, dass das Gerät mit der Google-Sicherung synchronisiert wird. **Nicht konfiguriert** erlaubt die Verwendung der Google-Sicherung.
-- **Automatische Synchronisierung des Google-Kontos (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um die automatische Synchronisierung des Google-Kontos auf dem Gerät zu verhindern. **Nicht konfiguriert** erlaubt die automatische Synchronisierung der Einstellungen von Google-Konten.
-- **Wechselmedien (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um den Einsatz von Wechselmedien auf dem Gerät zu verhindern. **Nicht konfiguriert** ermöglicht dem Gerät die Verwendung von Wechselmedien, z.B. SD-Karten.
-- **Verschlüsselung auf Speicherkarten (nur Samsung KNOX)**: **Anfordern** erzwingt die Verschlüsselung von Speicherkarten. **Nicht konfiguriert** ermöglicht die Verwendung unverschlüsselter Speicherkarten. Nicht alle Geräte unterstützen die Speicherkartenverschlüsselung. Wenden Sie sich zur Bestätigung an den Gerätehersteller.
+- **Google-Sicherung (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um zu verhindern, dass das Gerät mit der Google-Sicherung synchronisiert wird. **Nicht konfiguriert** erlaubt die Verwendung der Google-Sicherung.
+- **Automatische Synchronisierung des Google-Kontos (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um die automatische Synchronisierung des Google-Kontos auf dem Gerät zu verhindern. **Nicht konfiguriert** erlaubt die automatische Synchronisierung der Einstellungen von Google-Konten.
+- **Wechselmedien (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um den Einsatz von Wechselmedien auf dem Gerät zu verhindern. **Nicht konfiguriert** ermöglicht dem Gerät die Verwendung von Wechselmedien, z.B. SD-Karten.
+- **Verschlüsselung auf Speicherkarten (nur Samsung KNOX)** : **Anfordern** erzwingt die Verschlüsselung von Speicherkarten. **Nicht konfiguriert** ermöglicht die Verwendung unverschlüsselter Speicherkarten. Nicht alle Geräte unterstützen die Speicherkartenverschlüsselung. Wenden Sie sich zur Bestätigung an den Gerätehersteller.
 
 ## <a name="cellular-and-connectivity"></a>Mobilfunk und Konnektivität
 
-- **Datenroaming (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um Datenroaming über das Mobilfunknetz zu verhindern. **Nicht konfiguriert** ermöglicht das Datenroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
-- **SMS-/MMS-Nachrichten (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um Textnachrichten auf dem Gerät zu verhindern. **Nicht konfiguriert** ermöglicht die Verwendung von SMS- und MMS-Nachrichten auf dem Gerät.
-- **Sprachwahlverfahren (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer das Sprachwahlverfahren auf dem Gerät verwenden. **Nicht konfiguriert** ermöglicht die Verwendung des Sprachwahlverfahrens auf dem Gerät.
-- **Sprachroaming (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um Sprachroaming über das Mobilfunknetz zu verhindern. **Nicht konfiguriert** ermöglicht das Sprachroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
-- **Bluetooth (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um die Verwendung von Bluetooth auf dem Gerät zu verhindern. **Nicht konfiguriert** ermöglicht die Verwendung von Bluetooth auf dem Gerät.
-- **NFC (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um die Near Field Communication-Technologie (NFC) zu beenden. **Nicht konfiguriert** ermöglicht Vorgänge, bei dem NFC (Near Field Communication) auf unterstützten Geräten zum Einsatz kommt.
-- **WLAN (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um die WLAN-Verwendung auf dem Gerät zu verhindern. **Nicht konfiguriert** ermöglicht die Verwendung der WLAN-Features auf dem Gerät.
-- **WLAN-Tethering (nur Samsung KNOX)**: Wählen Sie **Blockieren** aus, um die WLAN-Tethering-Verwendung auf dem Gerät zu verhindern. **Nicht konfiguriert** ermöglicht die Verwendung des WLAN-Tetherings auf dem Gerät.
+- **Datenroaming (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um Datenroaming über das Mobilfunknetz zu verhindern. **Nicht konfiguriert** ermöglicht das Datenroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
+- **SMS-/MMS-Nachrichten (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um Textnachrichten auf dem Gerät zu verhindern. **Nicht konfiguriert** ermöglicht die Verwendung von SMS- und MMS-Nachrichten auf dem Gerät.
+- **Sprachwahlverfahren (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer das Sprachwahlverfahren auf dem Gerät verwenden. **Nicht konfiguriert** ermöglicht die Verwendung des Sprachwahlverfahrens auf dem Gerät.
+- **Sprachroaming (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um Sprachroaming über das Mobilfunknetz zu verhindern. **Nicht konfiguriert** ermöglicht das Sprachroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
+- **Bluetooth (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um die Verwendung von Bluetooth auf dem Gerät zu verhindern. **Nicht konfiguriert** ermöglicht die Verwendung von Bluetooth auf dem Gerät.
+- **NFC (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um die Near Field Communication-Technologie (NFC) zu beenden. **Nicht konfiguriert** ermöglicht Vorgänge, bei dem NFC (Near Field Communication) auf unterstützten Geräten zum Einsatz kommt.
+- **WLAN (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um die WLAN-Verwendung auf dem Gerät zu verhindern. **Nicht konfiguriert** ermöglicht die Verwendung der WLAN-Features auf dem Gerät.
+- **WLAN-Tethering (nur Samsung KNOX)** : Wählen Sie **Blockieren** aus, um die WLAN-Tethering-Verwendung auf dem Gerät zu verhindern. **Nicht konfiguriert** ermöglicht die Verwendung des WLAN-Tetherings auf dem Gerät.
 
 ## <a name="kiosk"></a>Kiosk
 

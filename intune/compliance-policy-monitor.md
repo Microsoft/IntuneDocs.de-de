@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: b5da0e5f14d3b87827d42d48341fa7080d73c567
+ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508994"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65942051"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
@@ -75,7 +75,9 @@ Beschreibungen der verschiedenen Zustände der Gerätekonformitätsrichtlinie:
 
   - Geräte, denen keine Konformitätsrichtlinie zugewiesen wurde und die keinen Auslöser für die Überprüfung auf Konformität besitzen
   - Geräte, die seit der letzten Aktualisierung der Konformitätsrichtlinie nicht eingecheckt wurden
-  - Geräte, die keinem bestimmten Benutzer zugeordnet sind
+  - Geräte, die keinem bestimmten Benutzer zugeordnet sind, z. B.:
+    - Über das Programm zur Geräteregistrierung von Apple erworbene iOS-Geräte ohne Benutzeraffinität
+    - Dedizierte Android Kiosk- oder Android Enterprise-Geräte
   - Geräte, die bei einem Geräteregistrierungs-Manager-Konto registriert sind
 
 - **Nicht konform**: Das Gerät konnte keine Einstellungen einer Gerätekompatibilitätsrichtlinie anwenden. Oder der Benutzer hat die Richtlinien nicht eingehalten.

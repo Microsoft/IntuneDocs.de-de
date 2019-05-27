@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511519"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65732990"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Tutorial: Registrieren von Windows-Geräten in Intune mithilfe von Autopilot
 Windows Autopilot vereinfacht das Registrieren von Geräten. Mit Microsoft Intune und Autopilot können Sie Ihren Endbenutzern neue Geräte geben, ohne die benutzerdefinierten Betriebssystemimages erstellen, verwalten und auf diese anwenden zu müssen. 
@@ -90,23 +90,20 @@ Als Nächstes erstellen Sie eine Gerätegruppe und platzieren darin die Autopilo
 Nach dem Erstellen einer Gerätegruppe müssen Sie ein Bereitstellungsprofil erstellen, um die Autopilot-Geräte konfigurieren zu können.
 
 1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Windows-Registrierung** > **Bereitstellungsprofil** > **Profil erstellen** aus.
-2. Geben Sie als **Name** *Autopilot-Profil* ein. Geben Sie für **Beschreibung** *Testprofil für Autopilot-Geräte* ein.
+2. Geben Sie auf der Seite **Grundlagen** als **Name** *Autopilot-Profil* ein. Geben Sie für **Beschreibung** *Testprofil für Autopilot-Geräte* ein.
 3. Legen Sie **Alle als Ziel angegebenen Geräte in Autopilot konvertieren** auf **Ja** fest. Durch diese Einstellung wird sichergestellt, dass alle Geräte in der Liste beim Autopilot-Bereitstellungsdienst registriert werden. Die Verarbeitung der Registrierung kann 48 Stunden dauern.
-4. Wählen Sie für **Bereitstellungsmodus** **Benutzergesteuert** aus. Geräte mit diesem Profil werden dem Benutzer zugeordnet, der das Gerät registriert. Für die Registrierung des Geräts sind Benutzeranmeldeinformationen erforderlich.
-5. Wählen Sie im Feld **Verknüpfen mit Azure AD als** die Option **In Azure AD eingebunden**.
-6. Wählen Sie **Windows-Willkommensseite**, konfigurieren Sie die folgenden Optionen, und übernehmen Sie die anderen Standardwerte. Klicken Sie anschließend auf **Speichern**:
+4. Wählen Sie **Weiter** aus.
+5. Wählen Sie auf der Seite **Out-of-Box-Experience (OOBE)** als **Bereitstellungsmodus** **Benutzergesteuert** aus. Geräte mit diesem Profil werden dem Benutzer zugeordnet, der das Gerät registriert. Für die Registrierung des Geräts sind Benutzeranmeldeinformationen erforderlich.
+6. Wählen Sie im Feld **Verknüpfen mit Azure AD als** die Option **In Azure AD eingebunden**.
+7. Konfigurieren Sie die folgenden Optionen, und übernehmen Sie für die anderen die Standardwerte:
     - **Microsoft-Software-Lizenzbedingungen**: **Ausblenden**
     - **Datenschutzeinstellungen**: **Anzeigen**
     - **Art des Benutzerkontos**: **Standard**
-
-6. Wählen Sie **Erstellen** aus, um das Profil zu erstellen. Das Autopilot-Bereitstellungsprofil ist nun verfügbar und kann Geräten zugewiesen werden.
-
-## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>Zuweisen eines Autopilot-Bereitstellungsprofils zu einer Gerätegruppe
-
-Nachdem das Bereitstellungsprofil nun erstellt wurde, müssen Sie es der Gerätegruppe zuweisen.
-1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Windows-Registrierung** > **Bereitstellungsprofil** ein Profil aus.
-2. Wählen Sie auf dem entsprechenden Profilblatt die Option **Zuweisungen**. 
-3. Klicken Sie auf **Gruppen auswählen** und auf dem Blatt **Gruppen auswählen** dann auf **Autopilot-Gruppe** und **Auswählen**.
+8. Wählen Sie **Weiter** aus.
+9. Wählen Sie auf der Seite **Zuweisungen** für **Zuweisen an** die Option **Ausgewählte Gruppen** aus.
+10. Wählen Sie **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen** und dann **Autopilot-Gruppe** aus.
+11. Wählen Sie **Weiter** aus.
+12. Wählen Sie auf der Seite **Überprüfen + Erstellen** den Befehl **Erstellen** aus, um das Profil zu erstellen.
 
 ## <a name="distribute-devices-to-users"></a>Verteilen von Geräten an Benutzer
 

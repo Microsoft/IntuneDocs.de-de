@@ -1,7 +1,7 @@
 ---
-title: Windows-Einstellungen für Sicherheitsbaselines in Intune
+title: Intune-Einstellungen für Sicherheitsbaselines in Windows 10
 titleSuffix: Microsoft Intune
-description: Von Intune unterstützte Windows-Einstellungen für Sicherheitsbaselines
+description: Intune-Einstellungen für Sicherheitsbaselines zur Verwaltung von Windows 10
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67938f8697002f94f275f953510d1b0f4864a3fa
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 1d9d095db4d10630555e5696610535bb828f0b5f
+ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566725"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65733058"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Windows-Einstellungen für Sicherheitsbaselines in Intune  
 
@@ -64,7 +64,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Autoplay (Richtlinien-Konfi
 - **Standardverhalten für automatische Ausführung der automatischen Wiedergabe**  
   Diese Einstellung betrifft das Standardverhalten für AutoRun-Befehle. AutoRun-Befehle werden in autorun.inf-Dateien gespeichert und können Installationsprogramme oder andere Routinen auslösen. Wenn das Standardverhalten für AutoRun-Befehle *Aktiviert* ist, können es Administratoren auf einem Gerät ändern, das Windows Vista oder eine höhere Version ausführt. Für das Verhalten bestehen die folgenden Einstellungsmöglichkeiten: a) AutoRun-Befehle komplett deaktivieren, oder b) Wiederherstellen des Verhaltens vor der Ausführung von Windows Vista, damit AutoRun-Befehle wieder automatisch ausgeführt werden. Wenn *Deaktiviert* oder *Nicht konfiguriert* eingestellt ist, wird der Benutzer von Geräten, auf denen Windows Vista ausgeführt wird, dazu aufgefordert, zu entscheiden, ob ein AutoRun-Befehl ausgeführt werden soll.
   
-  **Standard**: nicht ausgeführt  
+  **Standard**: Nicht ausführen  
   
 - **Modus für automatische Wiedergabe**  
   Diese Richtlinieneinstellung ermöglicht Ihnen, die Funktion für die automatische Wiedergabe zu deaktivieren. Die automatische Wiedergabe startet den Lesevorgang von einem Laufwerk, sobald Sie Medien in das Laufwerk einlegen. Daher wird die Installationsdatei von Programmen sofort gestartet, und Musik auf Audiomedien wird sofort abgespielt. In Versionen vor Windows XP SP2 ist die automatische Wiedergabe standardmäßig auf Wechseldatenträgern wie dem Diskettenlaufwerk (nicht aber auf dem CD-ROM-Laufwerk) und Netzlaufwerken deaktiviert. Ab Windows XP SP2 ist die automatische Wiedergabe auch für Wechseldatenträger, einschließlich Ziplaufwerken und einigen USB-Massenspeichergeräten, aktiviert. Wenn Sie diese Richtlinieneinstellung aktivieren, ist die automatische Wiedergabe auf CD-ROM-Laufwerken und Wechselmedien oder auf allen Laufwerken deaktiviert. Diese Richtlinieneinstellung deaktiviert die automatische Wiedergabe auf weiteren Laufwerktypen. Sie können diese Einstellung nicht dazu verwenden, die automatische Wiedergabe auf Laufwerken zu aktivieren, auf denen sie standardmäßig deaktiviert ist. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, ist die automatische Wiedergabe aktiviert. Hinweis: Diese Richtlinieneinstellung wird sowohl in den Ordnern für die Computerkonfiguration als auch für die Benutzerkonfiguration angezeigt. Wenn die Richtlinieneinstellungen miteinander im Konflikt stehen, hat die Richtlinieneinstellung in der Computerkonfiguration Vorrang gegenüber der Richtlinieneinstellung in der Benutzerkonfiguration.
@@ -83,27 +83,27 @@ Weitere Informationen finden Sie unter [Policy CSP - BitLocker (Richtlinien-Konf
 - **Richtlinie für BitLocker-Verschlüsselung von Wechseldatenträgern**  
   Diese Richtlinieneinstellung wird verwendet, um die Verschlüsselungsmethode und Verschlüsselungsstärke zu steuern. Die Werte dieser Richtlinie bestimmen die Stärke der Verschlüsselung, die BitLocker für die Verschlüsselung verwendet. Unternehmen sollten die Verschlüsselungsstufe für erhöhte Sicherheit steuern (AES-256 ist sicherer als AES-128). Wenn Sie diese Einstellung aktivieren, können Sie einen Verschlüsselungsalgorithmus konfigurieren und für Festplattenlaufwerke, Betriebssystemlaufwerke und Wechseldatenträger die Verschlüsselungsstärke für Schlüssel individuell konfigurieren. Für Festplatten- und Betriebssystemlaufwerke wird die Verwendung des XTS-AES-Algorithmus empfohlen. Für Wechseldatenträger sollten Sie AES-CBC 128-Bit oder AES-CBC 256-Bit verwenden, wenn es in anderen Geräten verwendet wird, auf denen nicht Windows 10, Version 1511 oder höher ausgeführt wird. Das Ändern der Verschlüsselungsmethode hat keine Auswirkungen, wenn das Laufwerk bereits verschlüsselt ist oder die Verschlüsselung gerade ausgeführt wird. In diesen Fällen wird diese Richtlinieneinstellung ignoriert.
 
-  Bit BitLocker-Wechseldatenträger-Richtlinie konfigurieren Sie die folgenden Einstellungen:
+  Konfigurieren Sie bei der Richtlinie für BitLocker-Verschlüsselung von Wechseldatenträgern die folgenden Einstellungen:
 
     - **Verschlüsselung für Schreibzugriff anfordern**  
       **Standard**: Ja  
   
     - **Verschlüsselungsmethode**  
-      **Standard**: AES-256-Bit-CBC  
+      **Standard**: AES-256-Bit (CBC)  
 
 - **Richtlinie für BitLocker-Verschlüsselung von Festplattenlaufwerken**  
   Diese Richtlinieneinstellung wird verwendet, um die Verschlüsselungsmethode und Verschlüsselungsstärke zu steuern. Die Werte dieser Richtlinie bestimmen die Stärke der Verschlüsselung, die BitLocker für die Verschlüsselung verwendet. Unternehmen sollten die Verschlüsselungsstufe für erhöhte Sicherheit steuern (AES-256 ist sicherer als AES-128). Wenn Sie diese Einstellung aktivieren, können Sie einen Verschlüsselungsalgorithmus konfigurieren und für Festplattenlaufwerke, Betriebssystemlaufwerke und Wechseldatenträger die Verschlüsselungsstärke für Schlüssel individuell konfigurieren. Für Festplatten- und Betriebssystemlaufwerke wird die Verwendung des XTS-AES-Algorithmus empfohlen. Für Wechseldatenträger sollten Sie AES-CBC 128-Bit oder AES-CBC 256-Bit verwenden, wenn es in anderen Geräten verwendet wird, auf denen nicht Windows 10, Version 1511 oder höher ausgeführt wird. Das Ändern der Verschlüsselungsmethode hat keine Auswirkungen, wenn das Laufwerk bereits verschlüsselt ist oder die Verschlüsselung gerade ausgeführt wird. In diesen Fällen wird diese Richtlinieneinstellung ignoriert.  
  
-   Konfigurieren Sie für BitLocker festen Laufwerk-Richtlinie die folgenden Einstellungen: 
+   Konfigurieren Sie bei der Richtlinie für BitLocker-Verschlüsselung von Festplattenlaufwerken die folgenden Einstellungen: 
    - **Verschlüsselungsmethode**
-     **Standard**: AES-256-Bit-XTS  
+     **Standard**: AES-256-Bit (XTS)  
 
 - **Richtlinie für BitLocker-Verschlüsselung von Systemlaufwerken**  
   Diese Richtlinieneinstellung wird verwendet, um die Verschlüsselungsmethode und Verschlüsselungsstärke zu steuern. Die Werte dieser Richtlinie bestimmen die Stärke der Verschlüsselung, die BitLocker für die Verschlüsselung verwendet. Unternehmen sollten die Verschlüsselungsstufe für erhöhte Sicherheit steuern (AES-256 ist sicherer als AES-128). Wenn Sie diese Einstellung aktivieren, können Sie einen Verschlüsselungsalgorithmus konfigurieren und für Festplattenlaufwerke, Betriebssystemlaufwerke und Wechseldatenträger die Verschlüsselungsstärke für Schlüssel individuell konfigurieren. Für Festplatten- und Betriebssystemlaufwerke wird die Verwendung des XTS-AES-Algorithmus empfohlen. Für Wechseldatenträger sollten Sie AES-CBC 128-Bit oder AES-CBC 256-Bit verwenden, wenn es in anderen Geräten verwendet wird, auf denen nicht Windows 10, Version 1511 oder höher ausgeführt wird. Das Ändern der Verschlüsselungsmethode hat keine Auswirkungen, wenn das Laufwerk bereits verschlüsselt ist oder die Verschlüsselung gerade ausgeführt wird. In diesen Fällen wird diese Richtlinieneinstellung ignoriert.  
 
-   Bit Schließfach System Drive-Richtlinie konfigurieren Sie die folgenden Einstellungen:
+   Konfigurieren Sie bei der Richtlinie für BitLocker-Verschlüsselung von Systemlaufwerken die folgenden Einstellungen:
   - **Verschlüsselungsmethode**  
-    **Standard**: AES-256-Bit-XTS  
+    **Standard**: AES-256-Bit (XTS)  
 
 ## <a name="browser"></a>Browser  
 Weitere Informationen finden Sie unter [Policy CSP - Browser (Richtlinien-Konfigurationsdienstanbieter - Browser)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) in Ihrer Windows-Dokumentation.  
@@ -150,7 +150,7 @@ Weitere Informationen finden Sie unter [Policy CSP – CredentialsDelegation (Ri
 ) in der Windows-Dokumentation.  
 
 - **Remote host delegation of non-exportable credentials** (Remotehostdelegierung nicht exportierbarer Anmeldeinformationen)  
-  Remotehost ermöglicht die Delegierung nicht exportierbarer Anmeldeinformationen. Wenn Delegierung der Standardanmeldeinformationen verwenden zu können, stellen Geräte eine exportierbare Version von Anmeldeinformationen mit dem Remotehost, der Benutzer auf das Risiko der Diebstahl von Anmeldeinformationen vor Angreifern, auf dem Remotehost verfügbar macht. Wenn Sie die Richtlinieneinstellung aktivieren, unterstützt der Host den eingeschränkten Verwaltungsmodus oder Remote Credential Guard-Modus. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden der eingeschränkte Verwaltungsmodus und der Remote Credential Guard-Modus nicht unterstützt, und Benutzer müssen ihre Anmeldeinformationen immer an den Host übergeben.  
+  Remotehost ermöglicht die Delegierung nicht exportierbarer Anmeldeinformationen. Bei Verwendung der Delegierung von Anmeldeinformationen stellen Geräte eine exportierbare Version der Anmeldeinformationen für den Remotehost bereit. Dadurch laufen Benutzer Gefahr, dass ihre Anmeldeinformationen von Angreifern auf dem Remotehost gestohlen werden. Wenn Sie die Richtlinieneinstellung aktivieren, unterstützt der Host den eingeschränkten Verwaltungsmodus oder Remote Credential Guard-Modus. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, werden der eingeschränkte Verwaltungsmodus und der Remote Credential Guard-Modus nicht unterstützt, und Benutzer müssen ihre Anmeldeinformationen immer an den Host übergeben.  
 
   
   **Standard**: Aktiviert  
@@ -180,7 +180,7 @@ Weitere Informationen finden Sie unter [Policy CSP – DeviceGuard (Richtlinien-
 - **Credential Guard**  
   Mit dieser Einstellung können Benutzer Credential Guard mit virtualisierungsbasierter Sicherheit aktivieren, um den Schutz von Anmeldeinformationen beim nächsten Neustart zu unterstützen.
    
-  **Standard**: mit UEFI-Sperre aktivieren 
+  **Standard**: Mit UEFI-Sperre aktivieren 
 
 - **Enable virtualization based security** (Virtualisierungsbasierte Sicherheit aktivieren)  </br>
   Aktiviert die virtualisierungsbasierte Sicherheit (VBS) beim nächsten Neustart. Virtualisierungsbasierte Sicherheit verwendet Windows Hypervisor, um die Sicherheitsdienste zu unterstützen.
@@ -205,7 +205,7 @@ Weitere Informationen finden Sie unter [Policy CSP – DeviceInstallation (Richt
   
   **Standard**: Block hardware device installation (Hardwaregeräteinstallation blockieren)  
 
-    Wenn *Blockieren von Hardware-Geräteinstallation* ist ausgewählt haben, sind folgende Einstellungen verfügbar.
+    Wenn *Block hardware device installation* ausgewählt wurde, stehen die folgenden Einstellungen zur Verfügung.
   
     - **Remove matching hardware devices**  (Übereinstimmende Hardwaregeräte entfernen)  
     Diese Einstellung ist nur verfügbar, wenn die Option *Hardware device installation by device identifiers* (Installation von Hardwaregeräten anhand der Geräte-ID) auf *Block hardware device installation* (Hardwaregeräteinstallation blockieren) festgelegt ist.
@@ -222,7 +222,7 @@ Weitere Informationen finden Sie unter [Policy CSP – DeviceInstallation (Richt
   
   **Standard**: Block hardware device installation (Hardwaregeräteinstallation blockieren)  
 
-    Wenn *Blockieren von Hardware-Geräteinstallation* ist ausgewählt haben, sind folgende Einstellungen verfügbar.
+    Wenn *Block hardware device installation* ausgewählt wurde, stehen die folgenden Einstellungen zur Verfügung.
     - **Remove matching hardware devices**   (Übereinstimmende Hardwaregeräte entfernen)  
     Diese Einstellung ist nur verfügbar, wenn *Hardware device installation by setup classes (Hardwaregeräteinstallation nach Setup-Klasse)* auf *Block hardware device installation (Hardwaregeräteinstallation blockieren)* eingestellt ist.  
 
@@ -246,10 +246,10 @@ Weitere Informationen finden Sie unter [Policy CSP - DeviceLock (Richtlinien-CSP
   
   **Standard**: Ja  
   
-    Wenn *Kennwort anfordern,* nastaven NA hodnotu *Ja*, die folgenden Einstellungen stehen zur Verfügung.
+    Wenn *Kennwort anfordern* auf *Ja* festgelegt wurde, stehen die folgenden Einstellungen zur Verfügung.
 
     - **Mindestanzahl von Zeichensätzen für Kennwörter**  
-      Anzahl der komplexen Elementtypen (Groß- und Kleinbuchstaben, Zahlen und Interpunktionszeichen), die für eine sichere PIN oder ein sicheres Kennwort erforderlich sind. PIN erzwingt das folgende Verhalten für Desktop- und mobile Geräte: 1 - Ziffern nur 2 – Ziffern und Kleinbuchstaben werden erforderlichen 3 - Ziffern, Kleinbuchstaben, und Großbuchstaben erforderlich sind. Nicht unterstützt in Microsoft- und Domänenkonten für Desktopgeräte. 4: Ziffern, Kleinbuchstaben, Großbuchstaben und Sonderzeichen sind erforderlich. Nicht unterstützt für Desktop-Geräte. Der Standardwert lautet 1. 
+      Anzahl der komplexen Elementtypen (Groß- und Kleinbuchstaben, Zahlen und Interpunktionszeichen), die für eine sichere PIN oder ein sicheres Kennwort erforderlich sind. Die PIN erzwingt das folgende Verhalten für Desktop- und mobile Geräte: 1 – nur Ziffern; 2 – Ziffern und Kleinbuchstaben sind erforderlich; 3 – Ziffern, Kleinbuchstaben und Großbuchstaben sind erforderlich. Nicht unterstützt in Microsoft- und Domänenkonten für Desktopgeräte. 4: Ziffern, Kleinbuchstaben, Großbuchstaben und Sonderzeichen sind erforderlich. Nicht unterstützt für Desktop-Geräte. Der Standardwert lautet 1. 
       
       **Standard**: 3  
   
@@ -280,12 +280,12 @@ Weitere Informationen finden Sie unter [Policy CSP - DeviceLock (Richtlinien-CSP
         *Eine Einstellung auf „Ja“ verhindert die Verwendung einfacher Kennwörter.* 
 
   - **Wiederverwendung vorheriger Kennwörter verhindern**  
-    Gibt an, wie viele Kennwörter, die nicht mehr verwendet werden können, im Verlauf gespeichert werden können. Der Wert schließt das aktuelle Kennwert des Benutzers mit ein. Z. B. mit der Einstellung *1* der Benutzer nicht ihr aktuelle Kennwort wiederverwenden, wenn Sie ein neues Kennwort auswählen. Die Einstellung *5* bedeutet, dass das neue Kennwort nicht auf ihr aktuelles Kennwort oder eines vorherigen vier Kennwörter durch ein Benutzer festgelegt werden kann.
+    Gibt an, wie viele Kennwörter, die nicht mehr verwendet werden können, im Verlauf gespeichert werden können. Der Wert schließt das aktuelle Kennwert des Benutzers mit ein. So kann der Benutzer beispielsweise bei der Einstellung *1* sein aktuelles Kennwort nicht ändern, wenn er ein neues Kennwort auswählt. Die Einstellung *5* bedeutet, dass ein Benutzer sein neues Kennwort nicht auf sein aktuelles Kennwort oder eines seiner vorherigen vier Kennwörter festlegen kann.
     
     **Standard**: 24  
 
 - **Diashow verhindern**  
-  Deaktiviert die Diashow-Einstellungen für den Sperrbildschirm in den PC-Einstellungen und verhindert das Abspielen einer Diashow auf dem Sperrbildschirm. Standardmäßig können Benutzer eine Diashow aktivieren, die nach dem Sperren des Computers abgespielt wird. Wenn Sie diese Einstellung aktivieren, Benutzer können keine Bildschirmpräsentation-Einstellungen in die PC-Einstellungen ändern, und können keine Bildschirmpräsentation zu starten.
+  Deaktiviert die Diashow-Einstellungen für den Sperrbildschirm in den PC-Einstellungen und verhindert das Abspielen einer Diashow auf dem Sperrbildschirm. Standardmäßig können Benutzer eine Diashow aktivieren, die nach dem Sperren des Computers abgespielt wird. Wenn Sie diese Einstellung aktivieren, können Benutzer Diashow-Einstellungen in den PC-Einstellungen nicht ändern, und es kann keine Diashow gestartet werden.
   
     **Standard**: Aktiviert  
     *Die Einstellung „Deaktiviert“ verhindert das Abspielen von Diashows.* 
@@ -321,7 +321,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Experience (Richtlinien-Kon
   
   **Standard**: Ja  
 
-  Wenn *Windows-Blickpunkt blockieren* nastaven NA hodnotu *Ja*, die folgenden Einstellungen stehen zur Verfügung.
+  Wenn *Windows-Blickpunkt blockieren* auf *Ja* festgelegt wurde, stehen die folgenden Einstellungen zur Verfügung.
   
   - **Drittanbietervorschläge in Windows-Blickpunkt blockieren**  
     Gibt an, ob App- und Inhaltsvorschläge durch Herausgeber von Drittanbieter-Software in Features von Windows-Blickpunkt (z.B. Windows-Blickpunkt auf dem Sperrbildschirm, vorgeschlagene Apps im Startmenü oder Windows-Tipps) zulässig sind. Benutzer sehen möglicherweise trotzdem Vorschläge für Microsoft-Features, -Apps und -Dienste.
@@ -339,7 +339,7 @@ Weitere Informationen finden Sie unter [Policy CSP - ExploitGuard (Richtlinien-K
 - **Exploit-Schutz-XML**  
   Ermöglicht dem IT-Administrator, eine Konfiguration vorzunehmen, die für alle Geräte in der Organisation die gewünschten Optionen zur Risikominderung für System und Anwendungen abbildet. Die Konfiguration wird in einer XML-Datei vorgenommen. Durch den Exploit-Schutz können Geräte vor Schadsoftware geschützt werden, die Exploits für die Verbreitung und den Befall von Systemen verwendet. Sie können die App „Windows-Sicherheit“ oder PowerShell verwenden, um Lösungen zur Entschärfung (Konfigurationen) zu erstellen. Diese Konfiguration können Sie anschließend als XML-Datei exportieren und für die Computer in Ihrem Netzwerk freigeben, sodass diese über dieselben Einstellungen zur Entschärfung verfügen. Sie können außerdem eine vorhandene XML-Konfigurationsdatei aus EMET in eine XML-Konfigurationsdatei für den Exploit-Schutz konvertieren und importieren.
   
-  **Standard**: *Beispiel-Xml wird bereitgestellt.* 
+  **Standard:** *Sample xml is provided* (XML-Beispieldatei wird bereitgestellt) 
  
 ## <a name="file-explorer"></a>Datei-Explorer  
 Weitere Informationen finden Sie unter [Policy CSP - FileExplorer (Richtlinien-CSP: FileExplorer)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-fileexplorer) in der Windows-Dokumentation.  
@@ -409,7 +409,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   **Standard**: Deaktivieren 
   
 - **Internet Explorer internet zone allow only approved domains to use tdc Active X controls** (Nur genehmigte Domänen können das TDC-ActiveX-Steuerelement in Internetzonen in Internet Explorer verwenden)  
-  Diese Einstellung steuert, ob der Benutzer das TDC ActiveX-Steuerelement auf Websites ausgeführt werden kann. Wenn Sie diese Richtlinieneinstellung aktivieren, wird das TDC-ActiveX-Steuerelement nicht von Websites in dieser Zone ausgeführt. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird das TDC-ActiveX-Steuerelement von allen Websites in dieser Zone ausgeführt.
+  Diese Richtlinieneinstellung steuert, ob der Benutzer das TDC-ActiveX-Steuerelement auf Websites ausführen kann. Wenn Sie diese Richtlinieneinstellung aktivieren, wird das TDC-ActiveX-Steuerelement nicht von Websites in dieser Zone ausgeführt. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird das TDC-ActiveX-Steuerelement von allen Websites in dieser Zone ausgeführt.
   
   **Standard**: Aktiviert 
   
@@ -456,7 +456,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
 - **Internet Explorer fallback to SSL3** (Fallback auf SSL3 in Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie unsichere Fallbacks auf SSL 3.0 blockieren. Wenn die Richtlinie aktiviert ist und TLS 1.0 oder höher einen Fehler verursacht, versucht Internet Explorer, über SSL 3.0 oder eine niedrigere Version eine Verbindung mit Websites herzustellen. Es wird empfohlen, unsichere Fallbacks nicht zuzulassen, um Man-in-the-Middle-Angriffe zu vermeiden. Die Richtlinie wirkt sich nicht darauf aus, welche Sicherheitsprotokolle aktiviert sind. Wenn Sie diese Richtlinie deaktivieren, werden die Standardeinstellungen des Systems verwendet.
   
-  **Standard**: keine Standorte 
+  **Standard**: Keine Standorte 
   
 - **Internet Explorer locked down internet zone java permissions** (SmartScreen-Filter für gesperrte Internetzonen in Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt überprüft. Wenn Sie diese Richtlinieneinstellung aktivieren, überprüft der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden Seiten in dieser Zone vom SmartScreen-Filter nicht auf schädlichen Inhalt überprüft. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, kann der Benutzer entscheiden, ob der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt überprüft. Hinweis: In Internet Explorer 7 steuert diese Richtlinieneinstellung, ob der Phishingfilter Seiten in dieser Zone auf schädlichen Inhalt überprüft.
@@ -468,7 +468,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
   **Standard**: Deaktivieren 
   
-- **Internet Explorer umgehen, SmartScreen-Warnungen zu ungewöhnlich, dass Dateien**  
+- **Internet Explorer bypass smart screen warnings about uncommon files** (SmartScreen-Warnungen zu ungewöhnlichen Dateien in Internet Explorer umgehen)  
   Mit dieser Richtlinieneinstellung wird bestimmt, ob Benutzer Warnungen des SmartScreen-Filters umgehen können. Der SmartScreen-Filter warnt Benutzer vor ausführbaren Dateien im Internet, die selten von Benutzern heruntergeladen werden. Wenn Sie diese Richtlinieneinstellung aktivieren, hindern die Warnungen des SmartScreen-Filters Benutzer am Herunterladen. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Benutzer die Warnungen des SmartScreen-Filters umgehen.
   
   **Standard**: Deaktiviert  
@@ -483,7 +483,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
   **Standard**: Aktiviert  
   
-- **Internet Explorer eingeschränkt Zone Java-Berechtigungen**  
+- **Internet Explorer restricted zone java permissions (Java-Berechtigungen für eingeschränkte Zonen in Internet Explorer)**  
   Mit dieser Richtlinieneinstellung können Sie Berechtigungen für Java-Applets verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie Optionen aus dem Dropdownfeld auswählen. Wählen Sie „Benutzerdefiniert“ aus, um Berechtigungseinstellungen einzeln zu bestimmen. Wählen Sie „Niedrige Sicherheit“ aus, um Applets die Ausführung aller Vorgänge zu ermöglichen. Wählen Sie „Mittlere Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox (ein Bereich im Speicher, außerhalb dessen das Programm keine Aufrufe ausführen kann) sowie Funktionen wie den sicheren Speicherbereich (ein geschützter und sicherer Speicherbereich auf dem Clientcomputer) und die benutzergesteuerte Datei-E/A zu ermöglichen. Wählen Sie „Hohe Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox zu ermöglichen. Deaktivieren Sie Java, um zu verhindern, dass Applets ausgeführt werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Java-Applets nicht ausgeführt werden. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, sind Java-Applets deaktiviert.
   
   **Standard**: Java deaktivieren  
@@ -518,12 +518,12 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   Mit dieser Richtlinieneinstellung können Sie Einstellungen für Anmeldeoptionen verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie eine der folgenden Anmeldeoptionen auswählen. 
   - *Anonym*: Verwenden Sie die anonyme Anmeldung, um die HTTP-Authentifizierung zu deaktivieren. Das Gastkonto kann nur für das CIFS-Protokoll (Common Internet File System) verwendet werden. 
   - *Nach Benutzername und Kennwort fragen*: Verwenden Sie „Nach Benutzername und Kennwort fragen“, um die Benutzer-IDs und Kennwörter von Benutzern abzufragen. Nachdem ein Benutzer abgefragt wurde, können diese Werte für den Rest der Sitzung im Hintergrund verwendet werden. 
-  - *Automatisches Anmelden nur in der Intranetzone* -verwenden Sie diese Option, um Benutzer der Attributbereichsabfrage für Benutzer-IDs und Kennwörtern in anderen Zonen. Nachdem ein Benutzer abgefragt wurde, können diese Werte für den Rest der Sitzung im Hintergrund verwendet werden. 
-  - *Automatische melden Sie sich mit aktuellen Benutzernamen und Kennwort*-mit dieser Option können Sie versuchen, melden Sie sich mit Windows NT Challenge-Response (auch bekannt als NTLM-Authentifizierung). Wenn der Server unterstützt die Windows NT-Anfrage-Antwort, die Anmeldung wird der Benutzername des Benutzers im Netzwerk und das Kennwort für die Anmeldung. Wenn die NTLM-Authentifizierung vom Server nicht unterstützt wird, wird der Benutzer dazu aufgefordert, seinen Benutzernamen und sein Kennwort einzugeben. 
+  - *Automatisches Anmelden nur in der Intranetzone* – Verwenden Sie diese Option, um Benutzer-IDs und Kennwörter von Benutzern in anderen Zonen abzufragen. Nachdem ein Benutzer abgefragt wurde, können diese Werte für den Rest der Sitzung im Hintergrund verwendet werden. 
+  - *Automatische Anmeldung mit aktuellem Benutzernamen und Kennwort* – Verwenden Sie diese Option, um die Anmeldung mithilfe der NTLM-Authentifizierung (auch bekannt als „integrierte Windows-Authentifizierung“ oder „Windows NT Challenge Response“) durchzuführen. Wenn der Server die NTLM-Authentifizierung unterstützt, wird der Netzwerkbenutzername und das Kennwort des Benutzers für die Anmeldung verwendet. Wenn die NTLM-Authentifizierung vom Server nicht unterstützt wird, wird der Benutzer dazu aufgefordert, seinen Benutzernamen und sein Kennwort einzugeben. 
 
   Wenn Sie diese Richtlinieneinstellung deaktivieren, wird die *automatische Anmeldung nur in der Intranetzone zugelassen*. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, wird *Nach Benutzername und Kennwort fragen* für die Anmeldung festgelegt.
   
-  **Standard**: anonyme  
+  **Standard**: Anonym  
   
 - **Internet Explorer trusted zone initialize and script Active X controls not marked as safe** (ActiveX-Steuerelementen in vertrauenswürdigen Zonen in Internet Explorer initialisieren und skripten, die als unsicher gekennzeichnet sind)  
   Mit dieser Richtlinieneinstellung können Sie ActiveX-Steuerelemente verwalten, die als unsicher gekennzeichnet sind. Wenn Sie diese Richtlinieneinstellung aktivieren, werden ActiveX-Steuerelemente ausgeführt und mit Parametern geladen, und das Skript wird ohne Festlegen der Objektsicherheit für nicht vertrauenswürdige Daten oder Skripts erstellt. Von dieser Einstellung wird abgeraten, es sei denn, es handelt sich um sichere und verwaltete Zonen. Mit dieser Einstellung werden sowohl unsichere als auch sichere Steuerelemente initialisiert und Skripte für diese erstellt, ohne dabei die Option „ActiveX-Steuerelemente ausführen, die für Skripting sicher sind“ zu beachten. Wenn Sie diese Richtlinieneinstellung aktivieren und die Option „Prompt“ (Bestätigen) im Dropdownfeld auswählen, werden Benutzer dazu aufgefordert, auszuwählen, ob das Steuerelement mit Parametern geladen oder ein Skript erstellt werden soll. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden ActiveX-Steuerelemente, die nicht als sicher gekennzeichnet werden können, nicht geladen, und es wird kein Skript erstellt. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, werden Benutzer dazu aufgefordert, auszuwählen, ob das Steuerelement mit Parametern geladen oder ein Skript erstellt werden soll.
@@ -584,7 +584,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   **Standard**: Deaktivieren  
   
 - **Internet Explorer restricted zone allow only approved domains to use tdc Active X controls** (Nur genehmigte Domänen können das TDC-ActiveX-Steuerelement in eingeschränkten Zonen in Internet Explorer verwenden)  
-  Diese Einstellung steuert, ob der Benutzer das TDC ActiveX-Steuerelement auf Websites ausgeführt werden kann. Wenn Sie diese Richtlinieneinstellung aktivieren, wird das TDC-ActiveX-Steuerelement nicht von Websites in dieser Zone ausgeführt. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird das TDC-ActiveX-Steuerelement von allen Websites in dieser Zone ausgeführt.
+  Diese Richtlinieneinstellung steuert, ob der Benutzer das TDC-ActiveX-Steuerelement auf Websites ausführen kann. Wenn Sie diese Richtlinieneinstellung aktivieren, wird das TDC-ActiveX-Steuerelement nicht von Websites in dieser Zone ausgeführt. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird das TDC-ActiveX-Steuerelement von allen Websites in dieser Zone ausgeführt.
   
   **Standard**: Aktiviert  
   
@@ -598,7 +598,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
   **Standard**: Java deaktivieren 
   
-- **Internet Explorer Intranet-Zone laufen nicht Antischadsoftware für ActiveX-Steuerelementen** dieser richtlinieneinstellung wird festgelegt, ob Internet Explorer Antischadsoftware für ActiveX-Steuerelemente führt, zu überprüfen, ob diese sicher in Seiten geladen sind. Wenn Sie diese Richtlinieneinstellung aktivieren, prüft Internet Explorer nicht anhand des Antischadsoftwareprogramms, ob das Erstellen einer Instanz des ActiveX-Steuerelements sicher ist. Wenn Sie diese Richtlinieneinstellung deaktivieren, prüft Internet Explorer immer anhand des Antischadsoftwareprogramms, ob das Erstellen einer Instanz des ActiveX-Steuerelements sicher ist. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, prüft Internet Explorer nicht anhand des Antischadsoftwareprogramms, ob das Erstellen einer Instanz des ActiveX-Steuerelements sicher ist. Benutzer können diese Option über die Sicherheitseinstellungen von Internet Explorer aktivieren und deaktivieren.
+- **Internet Explorer intranet zone do not run antimalware against Active X controls** (Keine Antischadsoftwareprogramme für ActiveX-Steuerelemente in Intranetzonen in Internet Explorer ausführen) Mit dieser Richtlinieneinstellung können Sie bestimmen, ob Internet Explorer Antischadsoftwareprogramme für ActiveX-Steuerelemente ausführen soll, um zu überprüfen, ob sie auf Seiten sicher geladen werden können. Wenn Sie diese Richtlinieneinstellung aktivieren, prüft Internet Explorer nicht anhand des Antischadsoftwareprogramms, ob das Erstellen einer Instanz des ActiveX-Steuerelements sicher ist. Wenn Sie diese Richtlinieneinstellung deaktivieren, prüft Internet Explorer immer anhand des Antischadsoftwareprogramms, ob das Erstellen einer Instanz des ActiveX-Steuerelements sicher ist. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, prüft Internet Explorer nicht anhand des Antischadsoftwareprogramms, ob das Erstellen einer Instanz des ActiveX-Steuerelements sicher ist. Benutzer können diese Option über die Sicherheitseinstellungen von Internet Explorer aktivieren und deaktivieren.
   
   **Standard**: Deaktiviert  
 
@@ -680,7 +680,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
 - **Java-Berechtigungen in der Intranetzone von Internet Explorer**  
   Mit dieser Richtlinieneinstellung können Sie Berechtigungen für Java-Applets verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie Optionen aus dem Dropdownfeld auswählen. Wählen Sie „Benutzerdefiniert“ aus, um Berechtigungseinstellungen einzeln zu bestimmen. Wählen Sie „Niedrige Sicherheit“ aus, um Applets die Ausführung aller Vorgänge zu ermöglichen. Wählen Sie „Mittlere Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox (ein Bereich im Speicher, außerhalb dessen das Programm keine Aufrufe ausführen kann) sowie Funktionen wie den sicheren Speicherbereich (ein geschützter und sicherer Speicherbereich auf dem Clientcomputer) und die benutzergesteuerte Datei-E/A zu ermöglichen. Wählen Sie „Hohe Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox zu ermöglichen. Deaktivieren Sie Java, um zu verhindern, dass Applets ausgeführt werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Java-Applets nicht ausgeführt werden. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, wird die Berechtigung auf „Mittlere Sicherheit“ festgelegt.
   
-  **Standard**: hohe Sicherheit 
+  **Standard**: Hohe Sicherheit 
   
 - **Veraltete ActiveX-Steuerelementen in Internet Explorer blockieren**  </br>
   Mit dieser Richtlinieneinstellung wird bestimmt, ob Internet Explorer bestimmte veraltete ActiveX-Steuerelemente blockiert. Veraltete ActiveX-Steuerelemente werden in der Intranetzone nie blockiert. Wenn Sie diese Richtlinieneinstellung aktivieren, blockiert Internet Explorer veraltete ActiveX-Steuerelemente nicht mehr. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, blockiert Internet Explorer weiterhin bestimmte veraltete ActiveX-Steuerelemente. Weitere Informationen finden Sie unter „Outdated ActiveX Controls“ (Veraltete ActiveX-Steuerelemente) in der TechNet-Bibliothek in Internet Explorer.
@@ -700,7 +700,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
 - **Internet Explorer trusted zone java permissions** (Java-Berechtigungen für vertrauenswürdige Zonen in Internet Explorer)  </br>
   Mit dieser Richtlinieneinstellung können Sie Berechtigungen für Java-Applets verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie Optionen aus dem Dropdownfeld auswählen. Wählen Sie „Benutzerdefiniert“ aus, um Berechtigungseinstellungen einzeln zu bestimmen. Wählen Sie „Niedrige Sicherheit“ aus, um Applets die Ausführung aller Vorgänge zu ermöglichen. Wählen Sie „Mittlere Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox (ein Bereich im Speicher, außerhalb dessen das Programm keine Aufrufe ausführen kann) sowie Funktionen wie den sicheren Speicherbereich (ein geschützter und sicherer Speicherbereich auf dem Clientcomputer) und die benutzergesteuerte Datei-E/A zu ermöglichen. Wählen Sie „Hohe Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox zu ermöglichen. Deaktivieren Sie Java, um zu verhindern, dass Applets ausgeführt werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Java-Applets nicht ausgeführt werden. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, wird die Berechtigung auf „Niedrige Sicherheit“ festgelegt.
   
-  **Standard**: hohe Sicherheit  
+  **Standard**: Hohe Sicherheit  
   
 - **Internet Explorer restricted zone scripting of java applets** (Skripting von Java-Applets in eingeschränkten Zonen in Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob Applets in dieser Zone für Skripts verfügbar gemacht werden. Wenn Sie diese Richtlinie aktivieren, können Skripts automatisch und ohne Benutzereingriff auf Applets zugreifen. Wenn Sie im Dropdownfeld „Bestätigen“ auswählen, werden die Benutzer zur Bestätigung aufgefordert, ob ein Skript auf Applets zugreifen darf. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Skripts nicht auf Applets zugreifen. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, können Skripts nicht auf Applets zugreifen.
@@ -753,7 +753,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   **Standard**: Deaktivieren  
   
 - **Internet Explorer internet zone logon options** (Anmeldeoptionen für die Internetzone von Internet Explorer)  
-  Mit dieser Richtlinieneinstellung können Sie Einstellungen für Anmeldeoptionen verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie eine der folgenden Anmeldeoptionen auswählen. Die Anmeldung kann anonym durchgeführt werden, um die HTTP-Authentifizierung zu deaktivieren, und das Gastkonto kann nur für das CIFS-Protokoll (Common Internet File System) verwendet werden. Sie können die Eingabe eines Benutzernamens und eines Kennworts anfordern, um die Benutzer-ID und Kennwörter von Benutzern abzufragen. Nachdem ein Benutzer abgefragt wurde, können diese Werte für den Rest der Sitzung im Hintergrund verwendet werden. Sie können die automatische Anmeldung nur in der Intranetzone zulassen, um Benutzer-IDs und Kennwörter von Benutzern in anderen Zonen abzufragen. Nachdem ein Benutzer abgefragt wurde, können diese Werte für den Rest der Sitzung im Hintergrund verwendet werden. Sie können die automatische Anmeldung mit dem aktuellen Benutzernamen und Kennwort durchführen, um die Anmeldung mithilfe der NTLM-Authentifizierung (auch bekannt als Windows NT Challenge Response) durchzuführen. Wenn der Server, Windows NT-Anfrage-Antwort, die Anmeldung verwendet Netzwerk-Benutzernamen des Benutzers und das Kennwort für die Anmeldung unterstützt. Wenn die NTLM-Authentifizierung nicht vom Server unterstützt wird, wird der Benutzer dazu aufgefordert, seinen Benutzernamen und sein Kennwort einzugeben. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird die automatische Anmeldung nur in der Intranetzone zugelassen. Wenn Sie diese richtlinieneinstellung nicht konfigurieren, melden Sie sich mit automatischer Anmeldung festgelegt ist nur im Intranet-Zone.
+  Mit dieser Richtlinieneinstellung können Sie Einstellungen für Anmeldeoptionen verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie eine der folgenden Anmeldeoptionen auswählen. Die Anmeldung kann anonym durchgeführt werden, um die HTTP-Authentifizierung zu deaktivieren, und das Gastkonto kann nur für das CIFS-Protokoll (Common Internet File System) verwendet werden. Sie können die Eingabe eines Benutzernamens und eines Kennworts anfordern, um die Benutzer-ID und Kennwörter von Benutzern abzufragen. Nachdem ein Benutzer abgefragt wurde, können diese Werte für den Rest der Sitzung im Hintergrund verwendet werden. Sie können die automatische Anmeldung nur in der Intranetzone zulassen, um Benutzer-IDs und Kennwörter von Benutzern in anderen Zonen abzufragen. Nachdem ein Benutzer abgefragt wurde, können diese Werte für den Rest der Sitzung im Hintergrund verwendet werden. Sie können die automatische Anmeldung mit dem aktuellen Benutzernamen und Kennwort durchführen, um die Anmeldung mithilfe der NTLM-Authentifizierung (auch bekannt als Windows NT Challenge Response) durchzuführen. Wenn der Server die NTLM-Authentifizierung unterstützt, werden der Netzwerkbenutzername und das Kennwort für die Anmeldung verwendet. Wenn die NTLM-Authentifizierung nicht vom Server unterstützt wird, wird der Benutzer dazu aufgefordert, seinen Benutzernamen und sein Kennwort einzugeben. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird die automatische Anmeldung nur in der Intranetzone zugelassen. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, wird für die Anmeldung „Automatisches Anmelden nur in der Intranetzone“ festgelegt.
   
   **Standard**: Eingabeaufforderung  
   
@@ -815,7 +815,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   **Standard**: Deaktiviert  
   
 - **Internet Explorer users adding sites** (Internet Explorer-Benutzer dürfen keine Sites hinzufügen)  
-  Durch diese Einstellung wird verhindert, dass Benutzer Sites zu Sicherheitszonen hinzufügen oder aus diesen entfernen. Bei einer Sicherheitszone handelt es sich um Websites, die die gleiche Sicherheitsstufe aufweisen. Wenn Sie diese Richtlinie aktivieren, werden die Verwaltungseinstellungen für Sites für Sicherheitszonen deaktiviert. (Sie können die Verwaltungseinstellungen für Sites für Sicherheitszonen aufrufen, indem Sie im Dialogfeld „Internetoptionen“ auf die Registerkarte „Sicherheit“ und dann auf die Schaltfläche „Sites“ klicken.) Wenn Sie diese Richtlinie deaktivieren oder nicht konfigurieren, können Benutzer Websites hinzufügen oder aus den Zonen für vertrauenswürdige oder eingeschränkte Sites entfernen oder die Einstellungen für das lokale Intranet bearbeiten. Durch diese Richtlinie wird verhindert, dass Benutzer die Verwaltungseinstellungen für Sites für Sicherheitszonen ändern, die vom Administrator eingerichtet wurden. Hinweis: Die Richtlinie „Sicherheitsseite deaktivieren“ (unter \Benutzerkonfiguration\Administrative Vorlagen\Windows-Komponenten\Internet Explorer\Internetsystemsteuerung) entfernt die Registerkarte „Sicherheit“ aus der Benutzeroberfläche und hat somit Vorrang vor dieser Richtlinie. Ist sie aktiviert, wird diese Richtlinie ignoriert. Sehen Sie sich auch die "Sicherheitszonen: Verwendung nur Einstellungen für Computer" Richtlinie.
+  Durch diese Einstellung wird verhindert, dass Benutzer Sites zu Sicherheitszonen hinzufügen oder aus diesen entfernen. Bei einer Sicherheitszone handelt es sich um Websites, die die gleiche Sicherheitsstufe aufweisen. Wenn Sie diese Richtlinie aktivieren, werden die Verwaltungseinstellungen für Sites für Sicherheitszonen deaktiviert. (Sie können die Verwaltungseinstellungen für Sites für Sicherheitszonen aufrufen, indem Sie im Dialogfeld „Internetoptionen“ auf die Registerkarte „Sicherheit“ und dann auf die Schaltfläche „Sites“ klicken.) Wenn Sie diese Richtlinie deaktivieren oder nicht konfigurieren, können Benutzer Websites hinzufügen oder aus den Zonen für vertrauenswürdige oder eingeschränkte Sites entfernen oder die Einstellungen für das lokale Intranet bearbeiten. Durch diese Richtlinie wird verhindert, dass Benutzer die Verwaltungseinstellungen für Sites für Sicherheitszonen ändern, die vom Administrator eingerichtet wurden. Hinweis: Die Richtlinie „Sicherheitsseite deaktivieren“ (unter \Benutzerkonfiguration\Administrative Vorlagen\Windows-Komponenten\Internet Explorer\Internetsystemsteuerung) entfernt die Registerkarte „Sicherheit“ aus der Benutzeroberfläche und hat somit Vorrang vor dieser Richtlinie. Ist sie aktiviert, wird diese Richtlinie ignoriert. Weitere Informationen finden Sie im Abschnitt zur Richtlinie „Sicherheitszonen: Nur Computereinstellungen verwenden“.
   
   **Standard**: Deaktiviert  
   
@@ -825,7 +825,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   **Standard**: Deaktiviert  
   
 - **Internet Explorer – Sicherheitszonen: Nur Computereinstellungen verwenden**  
-  Mit dieser Einstellung werden Informationen zu Sicherheitszonen für alle Benutzer desselben Computers angewendet. Bei einer Sicherheitszone handelt es sich um Websites, die die gleiche Sicherheitsstufe aufweisen. Wenn Sie diese Richtlinie aktivieren, werden die Änderungen, die ein Benutzer an einer Sicherheitszone vornimmt, für alle Benutzer dieses Computers übernommen. Wenn Sie diese Richtlinie deaktivieren oder nicht konfigurieren, können die Benutzer des Computers eigene Einstellungen für Sicherheitszonen einrichten. Verwenden Sie diese Richtlinie, um sicherzustellen, dass die Einstellungen für Sicherheitszonen einheitlich auf einen Benutzer angewendet werden und sich nicht von Benutzer zu Benutzer unterscheiden. Sehen Sie sich auch die "Sicherheitszonen: Ändern von Richtlinien Benutzer dürfen nicht" Richtlinie.
+  Mit dieser Einstellung werden Informationen zu Sicherheitszonen für alle Benutzer desselben Computers angewendet. Bei einer Sicherheitszone handelt es sich um Websites, die die gleiche Sicherheitsstufe aufweisen. Wenn Sie diese Richtlinie aktivieren, werden die Änderungen, die ein Benutzer an einer Sicherheitszone vornimmt, für alle Benutzer dieses Computers übernommen. Wenn Sie diese Richtlinie deaktivieren oder nicht konfigurieren, können die Benutzer des Computers eigene Einstellungen für Sicherheitszonen einrichten. Verwenden Sie diese Richtlinie, um sicherzustellen, dass die Einstellungen für Sicherheitszonen einheitlich auf einen Benutzer angewendet werden und sich nicht von Benutzer zu Benutzer unterscheiden. Weitere Informationen finden Sie im Abschnitt zur Richtlinie „Sicherheitszonen: Benutzer können keine Einstellungen ändern“.
   
   **Standard**: Aktiviert  
   
@@ -879,7 +879,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   **Standard**: Deaktivieren  
   
 - **Internet Explorer internet zone updates to status bar via script** (Skriptgesteuerte Updates für die Statusleiste in der Internetzone von Internet Explorer)  
-  Über diese Richtlinieneinstellung können Sie festlegen, ob die Statusleiste in der Zone durch Skripts aktualisiert werden darf. Wenn Sie diese richtlinieneinstellung aktivieren, können Skripts auf die Statusleiste aktualisieren. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, kann die Statusleiste nicht über Skripts aktualisiert werden.
+  Über diese Richtlinieneinstellung können Sie festlegen, ob die Statusleiste in der Zone durch Skripts aktualisiert werden darf. Wenn Sie diese Richtlinieneinstellung aktivieren, kann die Statusleiste durch Skripts aktualisiert werden. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, kann die Statusleiste nicht über Skripts aktualisiert werden.
   
   **Standard**: Deaktiviert  
   
@@ -902,7 +902,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   **Standard**: Deaktivieren  
   
 - **Internet Explorer users changing policies** (Ändern von Einstellungen durch Benutzer in Internet Explorer)  
-    Durch diese Einstellung wird verhindert, dass Benutzer die Einstellungen für Sicherheitszonen ändern können. Bei einer Sicherheitszone handelt es sich um Websites, die die gleiche Sicherheitsstufe aufweisen. Wenn Sie diese Richtlinie aktivieren, werden die Schaltfläche „Custom Level“ (Stufe anpassen) und der Schieberegler „Sicherheitsstufe“ auf der Registerkarte „Sicherheit“ im Dialogfeld „Internetoptionen“ deaktiviert. Wenn Sie diese Richtlinie deaktivieren oder nicht konfigurieren, können Benutzer die Einstellungen für Sicherheitszonen bearbeiten. Durch diese Richtlinie wird verhindert, dass Benutzer die Einstellungen für Sicherheitszonen ändern, die vom Administrator eingerichtet wurden. Hinweis: Die Richtlinie „Sicherheitsseite deaktivieren“ (unter \Benutzerkonfiguration\Administrative Vorlagen\Windows-Komponenten\Internet Explorer\Internetsystemsteuerung) entfernt die Registerkarte „Sicherheit“ aus Internet Explorer in der Systemsteuerung und hat somit Vorrang vor dieser Richtlinie. Ist sie aktiviert, wird diese Richtlinie ignoriert. Sehen Sie sich auch die "Sicherheitszonen: Verwendung nur Einstellungen für Computer" Richtlinie.
+    Durch diese Einstellung wird verhindert, dass Benutzer die Einstellungen für Sicherheitszonen ändern können. Bei einer Sicherheitszone handelt es sich um Websites, die die gleiche Sicherheitsstufe aufweisen. Wenn Sie diese Richtlinie aktivieren, werden die Schaltfläche „Custom Level“ (Stufe anpassen) und der Schieberegler „Sicherheitsstufe“ auf der Registerkarte „Sicherheit“ im Dialogfeld „Internetoptionen“ deaktiviert. Wenn Sie diese Richtlinie deaktivieren oder nicht konfigurieren, können Benutzer die Einstellungen für Sicherheitszonen bearbeiten. Durch diese Richtlinie wird verhindert, dass Benutzer die Einstellungen für Sicherheitszonen ändern, die vom Administrator eingerichtet wurden. Hinweis: Die Richtlinie „Sicherheitsseite deaktivieren“ (unter \Benutzerkonfiguration\Administrative Vorlagen\Windows-Komponenten\Internet Explorer\Internetsystemsteuerung) entfernt die Registerkarte „Sicherheit“ aus Internet Explorer in der Systemsteuerung und hat somit Vorrang vor dieser Richtlinie. Ist sie aktiviert, wird diese Richtlinie ignoriert. Weitere Informationen finden Sie im Abschnitt zur Richtlinie „Sicherheitszonen: Nur Computereinstellungen verwenden“.
     
   **Standard**: Deaktiviert  
   
@@ -951,12 +951,12 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
 Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOptions (Richtlinien-Konfigurationsdienstanbieter: LocalPoliciesSecurityOptions)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions) in der Windows-Dokumentation. 
 
 - **Restrict anonymous access to named pipes and shares** (Anonymen Zugriff auf Named Pipes und Freigaben einschränken)  
-  Wenn aktiviert, schränkt diese sicherheitseinstellung anonymen Zugriff auf Freigaben und Pipes zu den Einstellungen für: (1) Named Pipes, die sein können anonym zugegriffen (2)-Freigaben, auf die anonym zugegriffen werden können
+  Wenn diese Sicherheitseinstellung aktiviert ist, wird der anonyme Zugriff auf Freigaben und Pipes für folgende Einstellungen eingeschränkt: (1) Named Pipes, auf die anonym zugegriffen werden kann; (2) Freigaben, auf die anonym zugegriffen werden kann
   
   **Standard**: Ja  
   
 - **Minimum session security for NTLM SSP based servers** (Minimale Sitzungssicherheit für NTLM-basierte SSP-Server)  
-  Mit dieser Sicherheitseinstellung kann die Aushandlung der 128-Bit-Verschlüsselung und bzw. oder der NTLMv2-Sitzungssicherheit für einen Server als erforderlich festgelegt werden. Diese Werte hängen vom Wert des Sicherheitseinstellungswerts für die LAN Manager-Authentifizierungsebene ab. Die Optionen sind: NTLMv2-sitzungssicherheit erforderlich: die Verbindung schlägt fehl, wenn die Nachrichtenintegrität ausgehandelt wird nicht. 128-Bit-Verschlüsselung erfordern: Die Verbindung schlägt fehl, wenn die keine starke Verschlüsselung (128-Bit) ausgehandelt wird.
+  Mit dieser Sicherheitseinstellung kann die Aushandlung der 128-Bit-Verschlüsselung und bzw. oder der NTLMv2-Sitzungssicherheit für einen Server als erforderlich festgelegt werden. Diese Werte hängen vom Wert des Sicherheitseinstellungswerts für die LAN Manager-Authentifizierungsebene ab. Die Optionen sind: „NTLMv2-Sitzungssicherheit erfordern: Die Verbindung schlägt fehl, wenn die Nachrichtenintegrität nicht ausgehandelt wird“. 128-Bit-Verschlüsselung erfordern: Die Verbindung schlägt fehl, wenn die keine starke Verschlüsselung (128-Bit) ausgehandelt wird.
   
   **Standard**: NTLMv2- und 128-Bit-Verschlüsselung verlangen  
   
@@ -965,7 +965,7 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
   
   **Standard**: 15
   
-- **Require client to always digitally sign communications** (Digitale Signierung der Kommunikation immer vom Client erfordern) Diese Sicherheitseinstellung bestimmt, ob von Domänenmitgliedern gestarteter Datenverkehr über den sicheren Kanal signiert oder verschlüsselt sein muss. Wenn ein Computer einer Domäne beitritt, wird ein Computerkonto erstellt. Daraufhin wird das Kennwort des Computerkontos beim Starten des Systems zum Erstellen eines sicheren Kanals mit einem Domänencontroller als Domäne verwendet. Dieser sichere Kanal wird verwendet, um Vorgänge wie die NTLM-Pass-Through-Authentifizierung, LSA SID/Namenlookups usw. durchzuführen. Diese Einstellung bestimmt, ob jeglicher Datenverkehr über den sicheren Kanal, der von Domänenmitgliedern gestartet wird, den Mindestanforderungen für die Sicherheit entspricht. Insbesondere bestimmt sie, ob von Domänenmitgliedern gestarteter Datenverkehr über den sicheren Kanal signiert oder verschlüsselt sein muss. Wenn diese Richtlinie aktiviert ist, wird der sichere Kanal nicht erstellt, es sei denn, die Signierung oder Verschlüsselung des gesamten Datenverkehrs über den sicheren Kanal wird ausgehandelt. Wenn diese Richtlinie deaktiviert, Verschlüsselung ist und Signierung des gesamten Datenverkehrs von sicheren Kanal mit dem Domänencontroller ausgehandelt hängt in diesem Fall die Ebene der Signierung und Verschlüsselung der Version des Domänencontrollers und die Einstellungen der beiden folgenden Richtlinien: Domänenmitglied: Daten (wenn möglich) des sicheren Kanals digital verschlüsseln Domänenbenutzer-Mitglied: sicheren Daten (wenn möglich) des Kanals digital signieren
+- **Require client to always digitally sign communications** (Digitale Signierung der Kommunikation immer vom Client erfordern) Diese Sicherheitseinstellung bestimmt, ob von Domänenmitgliedern gestarteter Datenverkehr über den sicheren Kanal signiert oder verschlüsselt sein muss. Wenn ein Computer einer Domäne beitritt, wird ein Computerkonto erstellt. Daraufhin wird das Kennwort des Computerkontos beim Starten des Systems zum Erstellen eines sicheren Kanals mit einem Domänencontroller als Domäne verwendet. Dieser sichere Kanal wird verwendet, um Vorgänge wie die NTLM-Pass-Through-Authentifizierung, LSA SID/Namenlookups usw. durchzuführen. Diese Einstellung bestimmt, ob jeglicher Datenverkehr über den sicheren Kanal, der von Domänenmitgliedern gestartet wird, den Mindestanforderungen für die Sicherheit entspricht. Insbesondere bestimmt sie, ob von Domänenmitgliedern gestarteter Datenverkehr über den sicheren Kanal signiert oder verschlüsselt sein muss. Wenn diese Richtlinie aktiviert ist, wird der sichere Kanal nicht erstellt, es sei denn, die Signierung oder Verschlüsselung des gesamten Datenverkehrs über den sicheren Kanal wird ausgehandelt. Wenn diese Richtlinie deaktiviert ist, wird die Verschlüsselung und Signierung des gesamten Datenverkehrs über den sicheren Kanal mit dem Domänencontroller ausgehandelt. In diesem Fall sind die Signierung und Verschlüsselung von der Version des Domänencontrollers und den Einstellungen der beiden folgenden Richtlinien abhängig: „Domänenmitglied: Daten des sicheren Kanals digital verschlüsseln (wenn möglich)“; „Domänenmitglied: Daten des sicheren Kanals digital signieren (wenn möglich)“
   
   **Standard**: Ja
   
@@ -1003,8 +1003,8 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
   
 - **Minimum session security for NTLM SSP based clients** (Minimale Sitzungssicherheit für NTLM-basierte SSP-Clients)  
   Mit dieser Sicherheitseinstellung kann die Aushandlung der 128-Bit-Verschlüsselung und bzw. oder der NTLMv2-Sitzungssicherheit für einen Client als erforderlich festgelegt werden. Diese Werte hängen vom Wert des Sicherheitseinstellungswerts für die LAN Manager-Authentifizierungsebene ab. Folgende Optionen sind verfügbar:
-  - Erfordern Sie NTLMv2-sitzungssicherheit: die Verbindung schlägt fehl, wenn die NTLMv2-Protokoll ausgehandelt wird nicht. 
-  - *128-Bit-Verschlüsselung anfordern*: die Verbindung schlägt fehl, wenn starke Verschlüsselung (128-Bit) ausgehandelt wird nicht.
+  - „NTLMv2-Sitzungssicherheit erfordern“: Die Verbindung schlägt fehl, wenn das NTLMv2-Protokoll nicht ausgehandelt wird. 
+  - *128-Bit-Verschlüsselung erfordern*: Die Verbindung schlägt fehl, wenn keine starke Verschlüsselung (128-Bit) ausgehandelt wird.
   - *NTLMv2- und 128-Bit-Verschlüsselung erfordern*. 
 
   **Standard**: NTLMv2- und 128-Bit-Verschlüsselung erfordern
@@ -1012,7 +1012,7 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
 - **Smart card removal behavior** (Verhalten beim Entfernen von Smartcards)  
     Diese Sicherheitseinstellung legt fest, was geschieht, wenn die Smartcard für einen angemeldeten Benutzer aus dem Smartcardleser entfernt wird. Folgende Optionen sind verfügbar:
      - *Keine Aktion*. 
-     - *Arbeitsstation sperren* – die Arbeitsstation ist gesperrt, wenn die Smartcard entfernt wird, ermöglicht Benutzern, lassen den Bereich und nutzen ihre Smartcard mit ihnen noch eine geschützte Sitzung beibehalten,.
+     - *Arbeitsstation sperren* – Die Arbeitsstation wird beim Entfernen der Smartcard gesperrt, sodass Benutzer den Arbeitsbereich verlassen, die Smartcard mitnehmen und dennoch eine geschützte Sitzung aufrechterhalten können.
      - *Abmeldung erzwingen*: Der Benutzer wird automatisch abgemeldet, wenn die Smartcard entfernt wird.
      - *Disconnect Remote Desktop session* (Remotedesktopsitzung beenden): Das Entfernen der Smartcard beendet die Sitzung, ohne den Benutzer abzumelden. Dies ermöglicht es Benutzern, die Smartcard einzulegen und die Sitzung später oder auf einem anderen Computer mit Smartcard-Leser fortzusetzen, ohne sich erneut anmelden zu müssen. Wenn die Sitzung lokal stattfindet, funktioniert diese Richtlinie genau wie „Arbeitsstation sperren“.  <br><br>
     
@@ -1024,7 +1024,7 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
   **Standard**: Ja
   
 - **Block remote logon with blank password** (Remoteanmeldung mit leerem Kennwort blockieren)  
-  Diese Sicherheitseinstellung legt fest, ob lokale Konten, die nicht kennwortgeschützt sind, zum Anmelden an anderen Orten als der Konsole des physischen Computers verwendet werden können. Wenn aktiviert, müssen lokale Konten, die ein Kennwort geschützt sind, melden Sie sich auf der Tastatur des Computers verwenden. 
+  Diese Sicherheitseinstellung legt fest, ob lokale Konten, die nicht kennwortgeschützt sind, zum Anmelden an anderen Orten als der Konsole des physischen Computers verwendet werden können. Wenn diese Einstellung aktiviert ist, können lokale Konten ohne Kennwortschutz nur über die Computertastatur angemeldet werden. 
 
   *Warnung*: Für Computer, die sich nicht an physisch sicheren Orten befinden, sollten immer strikte Kennwortrichtlinien für alle Benutzerkonten verwendet werden. Ansonsten kann sich jeder mit physischem Zugang zu dem Computer mit einem Benutzerkonto ohne Kennwort anmelden. Dies gilt besonders für tragbare Computer. 
 
@@ -1050,7 +1050,7 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
 - **Prevent anonymous enumeration of SAM accounts** (Anonyme Enumerationen von SAM-Konten verhindern)  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, welche zusätzlichen Berechtigungen für anonyme Verbindungen mit dem Computer gewährt werden. Windows erlaubt anonymen Benutzern bestimmte Aktionen, z.B. das Aufzählen der Namen von Domänenkonten und Netzwerkfreigaben. Das kann z. B. besonders nützlich sein, wenn ein Administrator Benutzern in einer vertrauenswürdigen Domäne Zugriffsberechtigungen gewähren möchte, die diese Vertrauensstellung nicht erwidert. Mit dieser Sicherheitseinstellung können die folgenden zusätzlichen Einschränkungen für anonyme Verbindungen vorgenommen werden: 
   - *Ja*: Enumeration von SAM-Konten nicht zulassen. Diese Option ersetzt die Option „Everyone with Authenticated Users“ (Jeder mit authentifizierten Benutzern) in den Sicherheitsberechtigungen für Ressourcen.
-  - *Nicht konfiguriert*: keine weiteren Einschränkungen. Es gelten die Standardberechtigungen.  
+  - *Nicht konfiguriert*: Keine zusätzlichen Einschränkungen. Es gelten die Standardberechtigungen.  
   
   **Standard**: Ja
   
@@ -1112,18 +1112,18 @@ Weitere Informationen finden Sie unter [Policy CSP - MSSecurityGuide (Richtlinie
 Weitere Informationen finden Sie unter [Policy CSP - MSSLegacy (Richtlinen-CSP: MSSLegacy)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-msslegacy) in der Windows-Dokumentation.  
 
 - **Network IP source routing protection level** (Schutzebene für das Quellrouting von Netzwerk-IP-Adressen)  
-  **Standard**: Höchste Schutzebene  
+  **Standard**: Höchster Schutz  
   
 - **Network ignore NetBIOS name release requests except from WINS servers** (Das Netzwerk ignoriert Namensanforderungen von NetBIOS, es sei denn, sie stammen von WINS-Servern)  
   **Standard**: Aktiviert
   
 - **Network IPv6 source routing protection level** (Schutzebene für das Quellrouting von Netzwerk-IPv6-Adressen)  
-  **Standard**: Höchste Schutzebene
+  **Standard**: Höchster Schutz
 
 - **Network ICMP redirects to override OSPF generated routes** (Umleitungen durch das Netzwerk-ICMP zum Überschreiben von Routen, die vom OSPF generiert wurden)  
   **Standard**: Deaktiviert
   
-## <a name="power"></a>Leistung  
+## <a name="power"></a>Power  
 Weitere Informationen finden Sie unter [Policy CSP - Power (Richtlinien-CSP: Power)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power) in der Windows-Dokumentation.  
 
 - **Require password on wake while plugged in** (Kennwort bei Reaktivierung im Netzbetrieb anfordern)  
@@ -1132,12 +1132,12 @@ Weitere Informationen finden Sie unter [Policy CSP - Power (Richtlinien-CSP: Pow
   **Standard**: Aktiviert
   
 - **Standby states when sleeping while on battery** (Standbyzustände im Energiesparmodus im Akkubetrieb)  
-  Mit dieser richtlinieneinstellung wird verwaltet, wenn es sich bei Windows standby-Status verwenden können, die beim Festlegen der Computer im Standbymodus. Wenn Sie diese Richtlinieneinstellung aktivieren oder nicht konfigurieren, verwendet Windows Standbyzustände, um den Computer in den Energiesparmodus zu versetzen. Wenn Sie diese Richtlinieneinstellung deaktivieren, sind Standbyzustände (S1–S3) nicht zulässig.
+  Diese Richtlinieneinstellung legt fest, ob Windows Standbyzustände verwenden kann, wenn der Computer in den Energiesparmodus versetzt wird. Wenn Sie diese Richtlinieneinstellung aktivieren oder nicht konfigurieren, verwendet Windows Standbyzustände, um den Computer in den Energiesparmodus zu versetzen. Wenn Sie diese Richtlinieneinstellung deaktivieren, sind Standbyzustände (S1–S3) nicht zulässig.
   
   **Standard**: Deaktiviert
   
 - **Standby states when sleeping while plugged in** (Standbyzustände im Energiesparmodus im Netzbetrieb)  
-  Mit dieser richtlinieneinstellung wird verwaltet, wenn es sich bei Windows standby-Status verwenden können, die beim Festlegen der Computer im Standbymodus. Wenn Sie diese Richtlinieneinstellung aktivieren oder nicht konfigurieren, verwendet Windows Standbyzustände, um den Computer in den Energiesparmodus zu versetzen. Wenn Sie diese Richtlinieneinstellung deaktivieren, sind Standbyzustände (S1–S3) nicht zulässig.
+  Diese Richtlinieneinstellung legt fest, ob Windows Standbyzustände verwenden kann, wenn der Computer in den Energiesparmodus versetzt wird. Wenn Sie diese Richtlinieneinstellung aktivieren oder nicht konfigurieren, verwendet Windows Standbyzustände, um den Computer in den Energiesparmodus zu versetzen. Wenn Sie diese Richtlinieneinstellung deaktivieren, sind Standbyzustände (S1–S3) nicht zulässig.
   
   **Standard**: Deaktiviert
   
@@ -1177,7 +1177,7 @@ Weitere Informationen finden Sie unter [Policy CSP – RemoteDesktopServices (Ri
   
   Wenn Sie diese Einstellung deaktivieren oder nicht konfigurieren, wird die für Remoteverbindungen mit RD-Sitzungshostservern zu verwendende Verschlüsselungsstufe nicht über Gruppenrichtlinien erzwungen. Wichtig: die FIPS-Konformität (Federal Information Processing Standard) kann mithilfe der Systemkryptografie konfiguriert werden. Verwenden Sie FIPS-konforme Algorithmen für die Verschlüsselung, das Hashing und das Signieren von Einstellungen in der Gruppenrichtlinie (unter Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options). Mit der FIPS-konformen Einstellung werden Daten, die vom Client an den Server und vom Server an den Client gesendet werden, mit Verschlüsselungsalgorithmen gemäß FIPS 140 mithilfe von kryptografischen Modulen von Microsoft verschlüsselt und entschlüsselt. Verwenden Sie diese Verschlüsselungsstufe, wenn die Kommunikation zwischen Clients und RD-Sitzungshostservern die höchste Verschlüsselungsstufe erfordert.
   
-  **Standard**: High
+  **Standard**: Hoch
   
 ## <a name="remote-management"></a>Remoteverwaltung  
 Weitere Informationen finden Sie unter [Policy CSP – RemoteManagement (Richtlinien-Konfigurationsdienstanbieter: RemoteManagement)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remotemanagement) in der Windows-Dokumentation.  
@@ -1222,7 +1222,7 @@ Weitere Informationen finden Sie unter [Policy CSP – RemoteProcedureCall (Rich
   - Durch *Authenticated* (Authentifiziert) wird nur authentifizierten RPC-Clients (per oben stehender Definition) gestattet, sich mit RPC-Servern zu verbinden, die auf dem Computer ausgeführt werden, auf den die Richtlinieneinstellung angewandt wird. Ausnahmen werden für Schnittstellen gewährt, die solche angefordert haben. 
   - Durch *Authenticated without exceptions* (Authentifiziert ohne Ausnahmen) wird nur authentifizierten RPC-Clients (per oben stehender Definition) gestattet, sich mit RPC-Servern zu verbinden, die auf dem Computer ausgeführt werden, auf den die Richtlinieneinstellung angewandt wird. Ausnahmen sind nicht zulässig. Hinweis: Diese Richtlinieneinstellung wird erst angewendet, wenn das System neu gestartet wird.  
 
-  **Standard**: Authentifizierung
+  **Standard**: Authentifiziert
 
 ## <a name="search"></a>Suchen 
 Weitere Informationen finden Sie unter [Policy CSP - Search (Richtlinien-Konfigurationsdienstanbieter: Search)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search) in Ihrer Windows-Dokumentation.  
@@ -1232,7 +1232,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Search (Richtlinien-Konfigu
   
 **Standard**: Ja
   
-## <a name="smart-screen"></a>Smart Screen  
+## <a name="smart-screen"></a>SmartScreen  
 Weitere Informationen finden Sie unter [Policy CSP - SmartScreen (Richtlinien-Konfigurationsdienstanbieter: SmartScreen)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen) in Ihrer Windows-Dokumentation.  
 
 - **Ausführen nicht überprüfter Dateien blockieren**  
@@ -1258,7 +1258,7 @@ Weitere Informationen finden Sie unter [Policy CSP - System (Richtlinien-Konfigu
 - **Starttreiberinitialisierung für Systemstart**  
   Mit dieser Richtlinieneinstellung können Sie angeben, welche Bootstarttreiber initialisiert werden. Dies geschieht basierend auf einer durch den Bootstarttreiber für den Antischadsoftware-Frühstart festgelegten Klassifizierung. Der Bootstarttreiber für den Antischadsoftware-Frühstart kann die folgenden Klassifizierungen für die einzelnen Bootstarttreiber zurückgeben: 
   - *Gut*: Der Treiber wurde signiert und nicht manipuliert.  
-  - *Schlecht:* Der Treiber wurde als Schadsoftware identifiziert. Es wird empfohlen, dass Sie nicht zulassen, dass bekannte fehlerhafte Treiber initialisiert werden. 
+  - *Schlecht:* Der Treiber wurde als Schadsoftware identifiziert. Wir empfehlen, die Initialisierung von bekannten schlechten Treibern nicht zuzulassen. 
   - *Schlecht, doch für den Bootvorgang erforderlich*: Der Treiber wurde als Schadsoftware identifiziert, doch der Computer kann nicht erfolgreich gestartet werden, ohne diesen Treiber zu laden. 
   - *Unbekannt*: Dieser Treiber wurde von Ihrer Anwendung zur Erkennung von Schadsoftware nicht bestätigt und vom Bootstarttreiber für den Antischadsoftware-Frühstart nicht klassifiziert.  
 
@@ -1303,7 +1303,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
 - **Office apps launch child process type** (Untergeordnete Prozesse in Office-Apps starten)  
   Das Erstellen von untergeordneten Prozessen mit Office-Apps ist nicht gestattet. Dazu zählen Microsoft Word, Excel, PowerPoint, OneNote und Access. Dies ist ein typisches Verhalten für eine Schadsoftware, besonders für makrobasierte Angriffe, mit denen versucht wird, Office-Apps zum Starten oder Herunterladen ausführbarer schädlicher Dateien zu verwenden.
   
-  **Standard**: blockieren
+  **Standard**: Blockieren
   
 - **Defender sample submission consent type** (Zustimmungstyp für die Übermittlung von Beispielen in Windows Defender)  
   Diese Einstellung sucht nach der Benutzerzustimmungsebene in Windows Defender, um Daten zu senden. Wenn die erforderliche Zustimmung bereits erteilt wurde, sendet Windows Defender die Daten. Wenn nicht (und wenn der Benutzer angegeben hat, nie zu fragen), wird die Benutzeroberfläche gestartet, um nach der Benutzerzustimmung zu fragen (wenn Defender/AllowCloudProtection gestattet ist), bevor Daten gesendet werden.
@@ -1318,7 +1318,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
 - **Ausführungstyp für heruntergeladene Nutzlast für Skript**  
   Ausführungstyp für heruntergeladene Nutzlast für Skript in Defender
   
-  **Standard**: blockieren
+  **Standard**: Blockieren
   
 - **Diebstahl von Anmeldeinformationen verhindern**  
   Windows Defender Credential Guard nutzt auf Virtualisierung basierende Sicherheitsverfahren, um geheime Daten zu isolieren, damit nur durch privilegierte Systemsoftware auf diese Daten zugegriffen werden kann. Ein nicht autorisierter Zugriff auf diese geheimen Daten kann Angriffe zum Diebstahl von Anmeldeinformationen zur Folge haben (z. B. Pass-the-Hash- oder Pass-the-Ticket-Angriffe). Windows Defender Credential Guard verhindert diese Angriffe durch den Schutz von NTLM-Kennworthashes, Kerberos Ticket-Granting Tickets und Anmeldeinformationen, die von Anwendungen als Domänenanmeldeinformationen gespeichert werden.
@@ -1326,19 +1326,19 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Aktivieren
 
 - **Ausführungstyp für E-Mail-Inhalt**  
-  Diese Regel blockiert die folgenden Dateitypen wird ausgeführt oder per e-Mail finden Sie in Microsoft Outlook oder Webmail (z. B. "Gmail.com" oder "Outlook.com") gestartet: ausführbare Dateien (z. B. .exe, DLL oder .scr) Skriptdateien (z. B. ein PowerShell-PS-, VisualBasic .vbs, oder JavaScript-JS-Datei) Skript-Archivdateien.
+  Diese Regel verhindert die Ausführung oder das Starten der folgenden Dateitypen aus einer E-Mail, die in Microsoft Outlook oder einem webbasierten E-Mail-Dienst (z.B. Gmail.com oder Outlook.com) angezeigt wird: ausführbare Dateien (z.B. EXE, DLL oder SCR), Skriptdateien (z.B. PS PowerShell, VBS VisualBasic oder JS JavaScript) und Skriptarchivdateien.
   
-  **Standard**: blockieren
+  **Standard**: Blockieren
   
 - **Netzwerkschutztyp**  
-  Mit dieser Richtlinieneinstellung können Sie Netzwerkschutz in Windows Defender Exploit Guard aktivieren (blockieren/überwachen) oder deaktivieren. Netzwerkschutz ist ein Feature von Windows Defender Exploit Guard, das Arbeitnehmer davor schützt, eine Anwendung im Zuge betrügerischer Phishing-Versuche mit Zugriffsabsicht, Hostseiten für Exploits und schädliche Inhalte im Internet zu verwenden. Dabei wird auch verhindert, dass Browser von Drittanbietern Verbindungen zu gefährlichen Websites herstellen. Der Werttyp ist Integer. Wenn Sie diese Einstellung aktivieren, wird der Netzwerkschutz aktiviert, und Arbeitnehmer können ihn nicht mehr deaktivieren. Sein Verhalten kann mit den folgenden Optionen gesteuert werden: „Blockieren“ und „Überwachen“. Wenn Sie diese Richtlinie mit der Option „Blockieren“ aktivieren, können Benutzer und Anwendungen keine Verbindungen zu gefährlichen Domänen herstellen. Sie können diese Aktivität in Windows Defender Security Center anzeigen. Wenn Sie diese Richtlinie mit der Option „Überwachen“ aktivieren, können Benutzer/Anwendungen Verbindungen zu gefährlichen Domänen herstellen. Diese Aktivität wird jedoch trotzdem im Windows Defender Security Center angezeigt. Wenn Sie diese Richtlinie deaktivieren, können Benutzer/Anwendungen Verbindungen zu gefährlichen Domänen herstellen. Im Windows Defender Security Center werden keine Netzwerkaktivitäten angezeigt. Wenn Sie diese Richtlinie nicht konfigurieren, ist das Netzwerk blockiert standardmäßig deaktiviert.
+  Mit dieser Richtlinieneinstellung können Sie Netzwerkschutz in Windows Defender Exploit Guard aktivieren (blockieren/überwachen) oder deaktivieren. Netzwerkschutz ist ein Feature von Windows Defender Exploit Guard, das Arbeitnehmer davor schützt, eine Anwendung im Zuge betrügerischer Phishing-Versuche mit Zugriffsabsicht, Hostseiten für Exploits und schädliche Inhalte im Internet zu verwenden. Dabei wird auch verhindert, dass Browser von Drittanbietern Verbindungen zu gefährlichen Websites herstellen. Der Werttyp ist Integer. Wenn Sie diese Einstellung aktivieren, wird der Netzwerkschutz aktiviert, und Arbeitnehmer können ihn nicht mehr deaktivieren. Sein Verhalten kann mit den folgenden Optionen gesteuert werden: „Blockieren“ und „Überwachen“. Wenn Sie diese Richtlinie mit der Option „Blockieren“ aktivieren, können Benutzer und Anwendungen keine Verbindungen zu gefährlichen Domänen herstellen. Diese Aktivität wird im Windows Defender Security Center angezeigt. Wenn Sie diese Richtlinie mit der Option „Überwachen“ aktivieren, können Benutzer/Anwendungen Verbindungen zu gefährlichen Domänen herstellen. Diese Aktivität wird jedoch trotzdem im Windows Defender Security Center angezeigt. Wenn Sie diese Richtlinie deaktivieren, können Benutzer/Anwendungen Verbindungen zu gefährlichen Domänen herstellen. Im Windows Defender Security Center werden keine Netzwerkaktivitäten angezeigt. Wenn Sie diese Richtlinie nicht konfigurieren, wird die Blockierung des Netzwerks standardmäßig deaktiviert.
   
   **Standard**: Aktivieren
   
 - **Defender-Überprüfungstag planen**  
   Defender-Überprüfungstag planen.
   
-  **Standard**: täglich
+  **Standard**: Täglich
   
 - **Schutz über die Cloud**  
   Um Ihren PC bestmöglich zu schützen, sendet Windows Defender zu jedem entdeckten Problem Informationen an Microsoft. Microsoft analysiert diese Informationen, erfährt mehr über die Probleme, die Sie und andere Kunden betreffen, und bietet verbesserte Lösungen an.
@@ -1346,14 +1346,14 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Ja  
 
 - **Potenziell unerwünschte App-Aktion in Defender**  
-  Die PUA-Schutzfunktion (für potenziell unerwünschte Anwendungen) in Windows Defender Antivirus kann PUAs identifizieren und sie daran hindern, Endpunkte herunterzuladen und in ihrem Netzwerk zu installieren. Bei diesen Anwendungen handelt es sich nicht um Viren, Schadsoftware oder andere Arten von Bedrohungen. Diese Anwendungen können Aktionen auf Endpunkten ausführen, die deren Leistung oder Verwendung beeinträchtigen. Mit PUAs können auch Anwendungen gemeint sein, die einen schlechten Ruf haben. Typische PUA-Verhalten umfasst: verschiedene Arten von Software, die Bündelung von Ad-Injection in Webbrowsern Treiber und Registrierung-Optimierer, die Zahlung der Anforderung zum Beheben der Fehler, Probleme zu erkennen ist aber bleiben Sie auf den Endpunkt, und stellen Sie keine Änderungen oder Optimierungen (auch bekannt als" Rogue antivirus-Software). Diese Anwendungen können erhöhen das Risiko Ihres Netzwerks mit Schadsoftware infiziert wird, dazu führen, dass Malware-Infektionen, schwieriger identifiziert werden, und können IT-Ressourcen in Anwendungen bereinigen zu verschwenden.  
+  Die PUA-Schutzfunktion (für potenziell unerwünschte Anwendungen) in Windows Defender Antivirus kann PUAs identifizieren und sie daran hindern, Endpunkte herunterzuladen und in ihrem Netzwerk zu installieren. Bei diesen Anwendungen handelt es sich nicht um Viren, Schadsoftware oder andere Arten von Bedrohungen. Diese Anwendungen können Aktionen auf Endpunkten ausführen, die deren Leistung oder Verwendung beeinträchtigen. Mit PUAs können auch Anwendungen gemeint sein, die einen schlechten Ruf haben. Typisches PUA-Verhalten umfasst: Verschiedene Arten von Softwarebündelungen; Einschleusung von Werbung in Webbrowser; Treiber- und Registrierungsoptimierungen, die Probleme erkennen, eine Zahlung zur Fehlerbehebung anfordern, aber auf dem Endpunkt verbleiben und weder Änderungen noch Optimierungen vornehmen (auch bekannt als „Rogue-Sicherheitssoftware“). Diese Anwendungen können das Risiko einer Infektion mit Schadsoftware für Ihr Netzwerk erhöhen, das Identifizieren von Infektionen erschweren und unnötig IT-Ressourcen zum Bereinigen der Anwendungen belegen.  
   
-  **Standard**: blockieren  
+  **Standard**: Blockieren  
 
 - **Verborgener Makrocodetyp von Skripten**  
   Schadsoftware und andere Bedrohungen versuchen möglicherweise ihren schädlichen Code in einigen Skriptdateien zu verbergen oder auszublenden. Mit dieser Regel wird verhindert, dass verborgen scheinende Skripts ausgeführt werden.
   
-  **Standard**: blockieren
+  **Standard**: Blockieren
   
 - **Bei einer vollständigen Überprüfung Wechseldatenträger überprüfen**  
   Ermöglicht Windows Defender die Überprüfung von Wechseldatenträgern (z.B. USB-Speichersticks) auf schädliche und unerwünschte Software während einer vollständigen Überprüfung. Windows Defender Antivirus überprüft auf USB-Geräten alle Dateien, bevor diese ausgeführt werden.
@@ -1366,7 +1366,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Ja
   
 - **Verhaltensüberwachung**  
-  Erlaubt oder verhindert die Funktionalität der Windows Defender-Verhaltensüberwachung. Diese in Windows 10 eingebetteten Sensoren sammeln und verarbeiten Signale zum Verhalten des Betriebssystems und senden diese Sensordaten an Ihre private, isolierte Cloudinstanz von Windows Defender ATP.
+  Erlaubt oder verhindert die Funktionalität der Windows Defender-Verhaltensüberwachung. Diese in Windows 10 eingebetteten Sensoren sammeln und verarbeiten Signale zum Verhalten des Betriebssystems und senden diese Sensordaten an Ihre private, isolierte Cloudinstanz von Microsoft Defender ATP.
   
   **Standard**: Ja
 
@@ -1378,22 +1378,22 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
 - **Nicht vertrauenswürdiger USB-Prozesstyp**  
   Mit dieser Regel können Administratoren verhindern, dass nicht signierte oder nicht vertrauenswürdige ausführbare Dateien von USB-Wechseldatenträgern, einschließlich SD-Karten, ausgeführt werden.
   
-  **Standard**: blockieren
+  **Standard**: Blockieren
   
 - **Injectionstyp für andere Prozesse in Office-Apps**  
   Office-Apps, einschließlich Word, Excel, PowerPoint und OneNote, können keinen Code in andere Prozesse einfügen. Dieses Verfahren zum Ausführen von schädlichem Code ist typisch für Schadsoftware bei dem Versuch, die Aktivität vor Antivirusprogrammen zu verstecken.
   
-  **Standard**: blockieren
+  **Standard**: Blockieren
   
 - **Win32-Importtyp aus Office-Makrocode gestatten**  
   Schadsoftware kann Makrocode in Office-Dateien verwenden, um Win32-DLLs zu importieren und zu laden, mit denen dann API-Aufrufe möglich sind, um eine Infektion des gesamten Systems zu ermöglichen. Mit dieser Regel wird versucht, Office-Dateien zu blockieren, die Makrocode enthalten, in den Win32-DLLs importiert werden können. Dazu zählen Microsoft Word, Excel, PowerPoint und OneNote.
   
-  **Standard**: blockieren  
+  **Standard**: Blockieren  
   
 - **Defender-Cloud-Block-Level**  
   Defender-Cloud-Block-Level.
   
-  **Standard**: nicht konfiguriert
+  **Standard**: Nicht konfiguriert
 
 - **Echtzeitüberwachung**  
   Für Defender ist eine Echtzeitüberwachung erforderlich.
@@ -1403,7 +1403,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
 - **Mit Office-Apps ausführbare Inhaltserstellung oder Starttypen**  
   Diese Regel zielt auf typische Verhalten von verdächtigen und schädlichen Add-Ons und Skripts (Erweiterungen) ab, die ausführbare Dateien erstellen oder starten. Dies ist ein typisches Verfahren von Schadsoftware. Die Verwendung von Erweiterungen durch Office-Apps wird blockiert. Typischerweise verwenden diese Erweiterungen den Windows Scripting Host (WSH-Dateien), um Skripts auszuführen, die bestimmte Aufgaben automatisieren oder von Benutzern erstellte Add-On-Features bieten.
   
-  **Standard**: blockieren
+  **Standard**: Blockieren
 
 ## <a name="windows-ink-workspace"></a>Windows Ink-Arbeitsbereich  
 Weitere Informationen finden Sie unter [Policy CSP - WindowsInkWorkspace (Richtlinien-Konfigurationsdienstanbieter - WindowsInkWorkspace)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace) in Ihrer Windows-Dokumentation.  
@@ -1412,7 +1412,7 @@ Weitere Informationen finden Sie unter [Policy CSP - WindowsInkWorkspace (Richtl
   Gibt an, ob der Benutzer auf den Ink-Arbeitsbereich zugreifen darf. 
   - *Deaktiviert*: Der Zugriff auf den Ink-Arbeitsbereich ist deaktiviert. Die Funktion ist deaktiviert.
   - *Aktiviert*: Der Ink-Arbeitsbereich ist aktiviert, aber der Benutzer kann nicht über den Sperrbildschirm darauf zugreifen.
-  - *Nicht konfiguriert* - Funktion von der Ink-Arbeitsbereich aktiviert ist, und der Benutzer kann über den Sperrbildschirm verwenden.  
+  - *Nicht konfiguriert* – Der Ink-Arbeitsbereich ist aktiviert, und der Benutzer kann über den Sperrbildschirm darauf zugreifen.  
 
   **Standard**: Aktiviert
  

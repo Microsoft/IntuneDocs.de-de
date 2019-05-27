@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c9ea11cd19fee8f491329020753501996b47f40
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834720"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196781"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrieren Ihres macOS-Geräts bei Intune über die Unternehmensportal-App
 
@@ -31,7 +31,9 @@ Registrieren Sie Ihr macOS-Gerät bei der Intune-Unternehmensportal-App, um sich
 
 Organisationen verlangen oft, dass Sie Ihr Gerät verwalten lassen, bevor Sie auf proprietäre Daten zugreifen können. Sobald es sich dann um ein verwaltetes Gerät handelt, können Organisationen über ihren MDM-Anbieter Richtlinien und Apps auf das Gerät übertragen. Um von Ihrem Gerät aus kontinuierlich auf Ihre Geschäfts-, Schul- oder Uniressourcen zugreifen zu können, müssen Sie Ihr Gerät entsprechend der Richtlinieneinstellungen konfigurieren.  
 
-In diesem Artikel wird beschrieben, wie Sie Ihr Gerät mit der Intune-Unternehmensportal-App für macOS registrieren, konfigurieren und verwalten, um die Anforderungen Ihrer Organisation zu erfüllen.
+In diesem Artikel wird beschrieben, wie Sie Ihr Gerät mit der Intune-Unternehmensportal-App für macOS registrieren, konfigurieren und verwalten, um die Anforderungen Ihrer Organisation zu erfüllen.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk?rel=0]
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>Vorteile der Unternehmensportal-App
 

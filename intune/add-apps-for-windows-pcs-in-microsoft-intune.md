@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 08/29/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e4f6a8c3e460e9806aabadd710ec102aa77d44ab
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 86cbea29233d792006bce68fcd2a36fb1a7ec0a6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798892"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050198"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird
 
@@ -78,7 +77,7 @@ Mithilfe der folgenden Vorgehensweise verwenden Sie den Intune-Softwareherausgeb
 5. Auf der Seite **Erkennungsregeln** können Sie Regeln konfigurieren, um festzustellen, ob die zu konfigurierende App bereits auf einem PC installiert ist. Sie können auch die Standarderkennungsregeln verwenden, um alle zuvor installierten Versionen der App automatisch zu überschreiben. Diese Option gilt für Windows Installer (nur EXE-Dateien).
 
    Sie können folgende Regeln konfigurieren:
-   - **Die Datei ist vorhanden**. Geben Sie den Pfad zu der Datei an, die Sie erkennen möchten. Sie können den PC unter **%ProgramFiles%** durchsuchen (dabei wird **Programme**\&lt;Pfad&gt; und **Programme (x86)**\&lt;Pfad&gt; durchsucht) oder unter **%SystemDrive%** (dabei wird das Stammlaufwerk des PCs durchsucht, in der Regel Laufwerk „C:“)
+   - **Die Datei ist vorhanden**. Geben Sie den Pfad zu der Datei an, die Sie erkennen möchten. Sie können den PC unter **%ProgramFiles%** durchsuchen (dabei wird **Programme**\&lt;Pfad&gt; und **Programme (x86)** \&lt;Pfad&gt; durchsucht) oder unter **%SystemDrive%** (dabei wird das Stammlaufwerk des PCs durchsucht, in der Regel Laufwerk „C:“)
    - **Der MSI-Produktcode ist vorhanden**. Wählen Sie **Durchsuchen**, um die zu erkennende Windows Installer-Datei (MSI-Datei) auszuwählen.
    - <strong>Der Registrierungsschlüssel ist vorhanden</strong>. Geben Sie einen Registrierungsschlüssel an, der mit <strong>HKEY_LOCAL_MACHINE\</strong> beginnt. Es werden 32-Bit- und 64-Bit-Registrierungspfade durchsucht. Wenn der angegebene Schlüssel an einem der beiden Speicherorte vorhanden ist, ist die Erkennungsregel erfüllt.
 

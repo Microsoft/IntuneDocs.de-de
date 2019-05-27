@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 05/21/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 31b5697d9673866d378cc526a3735138d6a120b3
+ms.sourcegitcommit: 6de06b475f16893710dc34027096138aa697e482
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506813"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65992903"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Häufig gestellte Fragen zu MAM und App-Schutz
 
@@ -51,6 +51,13 @@ App-Schutzrichtlinien sind Regeln, die sicherstellen, dass die Daten einer Organ
 
 **Was sind Beispiele für App-Schutzrichtlinien?**<br></br>
 Ausführliche Informationen zu den einzelnen Einstellungen für App-Schutzrichtlinien finden Sie unter [Android-Verwaltungsrichtlinieneinstellungen für mobile Apps in Microsoft Intune](app-protection-policy-settings-android.md) und [iOS-Richtlinieneinstellungen für die Verwaltung mobiler Apps](app-protection-policy-settings-ios.md).
+
+**Ist es möglich, sowohl MDM- als auch MAM-Richtlinien gleichzeitig auf denselben Benutzer, aber für verschiedene Geräte angewendet zu haben? Wenn ein Benutzer beispielsweise von seinem eigenen MAM-fähigen Computer aus auf seine Arbeitsressourcen zugreifen könnte, aber auch zur Arbeit kommen und dort ein mit Intune MDM verwaltetes Gerät verwenden könnte. Gibt es Vorbehalte gegenüber dieser Idee?**<br></br>
+Wenn Sie eine MAM-Richtlinie auf den Benutzer anwenden, ohne den Gerätezustand festzulegen, erhält der Benutzer die MAM-Richtlinie sowohl auf dem BYOD-Gerät als auch auf dem mit Intune verwalteten Gerät. Sie können eine MAM-Richtlinie auch basierend auf dem verwalteten Zustand anwenden. Wenn Sie also eine App-Schutzrichtlinie erstellen, würden Sie neben „Ziel“ für alle App-Typen „Nein“ auswählen. Gehen Sie dann auf eine der folgenden Arten vor:
+- Wenden Sie eine weniger strenge MAM-Richtlinie auf mit Intune verwaltete Geräte an, und wenden Sie eine restriktivere MAM-Richtlinie auf nicht bei MDM registrierte Geräte an.
+- Wenden Sie eine MAM-Richtlinie nur auf nicht registrierte Geräte an.
+
+Weitere Informationen finden Sie unter [Überwachen von App-Schutzrichtlinien](app-protection-policies-monitor.md).
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Apps, die mit App-Schutzrichtlinien verwaltet werden können
 

@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/19/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68eeb174b7cc2be09ea4b6da9f151695157ac819
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: deea42bf9ef35d173761fddb16aa43eaa8876269
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799247"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041078"
 ---
 # <a name="reference-for-application-entities"></a>Verweis für Anwendungsentitäten
 

@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 11/8/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.reviewer: tycast
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 880a81b49a78e7afd83aca510f85133e91416cf4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 502babf80b4286adb19a09988d16bd56562d4925
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566266"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046665"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Hinzufügen von WLAN-Einstellungen für Geräte mit Windows 10 und höher in Intune
 
@@ -37,7 +36,7 @@ Dieser Artikel beschreibt diese Einstellungen.
 
 - **WLAN-Typ**: Wählen Sie **Grundlegend** aus. 
 
-- **WLAN-Name (SSID)**: Abkürzung für Service Set Identifier. Dieser Wert entspricht dem tatsächlichen Namen des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern wird beim Auswählen der Verbindung jedoch nur der **Verbindungsname** angezeigt, den Sie konfiguriert haben.
+- **WLAN-Name (SSID)** : Abkürzung für Service Set Identifier. Dieser Wert entspricht dem tatsächlichen Namen des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern wird beim Auswählen der Verbindung jedoch nur der **Verbindungsname** angezeigt, den Sie konfiguriert haben.
 
 - **Verbindungsname**: Geben Sie einen Anzeigenamen für diese WLAN-Verbindung ein. Der eingegebene Text ist der Name, der den Benutzern bei der Suche nach verfügbaren WLAN-Verbindungen auf ihren Geräten angezeigt wird.
 
@@ -75,7 +74,7 @@ Wählen Sie **OK** > **Erstellen** aus, um die Änderungen zu speichern. Das Pro
 
 - **WLAN-Typ**: Wählen Sie **Unternehmen** aus. 
 
-- **WLAN-Name (SSID)**: Abkürzung für Service Set Identifier. Dieser Wert entspricht dem tatsächlichen Namen des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern wird beim Auswählen der Verbindung jedoch nur der **Verbindungsname** angezeigt, den Sie konfiguriert haben.
+- **WLAN-Name (SSID)** : Abkürzung für Service Set Identifier. Dieser Wert entspricht dem tatsächlichen Namen des Drahtlosnetzwerks, mit dem Geräte eine Verbindung herstellen. Den Benutzern wird beim Auswählen der Verbindung jedoch nur der **Verbindungsname** angezeigt, den Sie konfiguriert haben.
 
 - **Verbindungsname**: Geben Sie einen Anzeigenamen für diese WLAN-Verbindung ein. Der eingegebene Text ist der Name, der den Benutzern bei der Suche nach verfügbaren WLAN-Verbindungen auf ihren Geräten angezeigt wird.
 

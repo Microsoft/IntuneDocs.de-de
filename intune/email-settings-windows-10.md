@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/29/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e2b3708b6b0c75a1384a7cdbdb524dff3f0627d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 87a48c677e122d93bb03508e18b86549b7fe285d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565433"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047989"
 ---
 # <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>E-Mail-Profileinstellungen für Windows 10-Geräte: Intune
 

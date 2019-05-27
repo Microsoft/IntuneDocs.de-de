@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 06/14/2018
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8eddf9af16e0218733f1e0445d85ab7e0176ed27
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: ec655a53018c2e45d1cb771c1ce9c0aad376b2b1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461420"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040150"
 ---
 # <a name="troubleshoot-endpoint-protection-in-intune"></a>Beheben von Problemen mit Endpoint Protection in Intune
 

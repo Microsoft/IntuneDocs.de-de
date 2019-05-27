@@ -8,7 +8,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92262a9d1f07b8756ced8788feee586ffa30088a
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 417d244cbe64af967e61112f67dbf7829ce7feda
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798800"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046950"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Verwalten von Lizenzverträgen für Windows-PC-Software in Microsoft Intune
 
@@ -68,7 +67,7 @@ In Intune-Volumenlizenzverträgen werden Lizenzinformationen für Software berei
 
         -   Nur ASCII-Zeichen werden unterstützt.
 
-        -   Folgende Zeichen sind im Vertragsnamen nicht zulässig: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Leerzeichen sind im Namen zulässig.
+        -   Folgende Zeichen sind im Vertragsnamen nicht zulässig: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Leerzeichen sind im Namen zulässig.
 
         -   Der Dateiname darf eine Länge von 128 Zeichen nicht überschreiten.
 
@@ -94,7 +93,7 @@ In Intune-Volumenlizenzverträgen werden Lizenzinformationen für Software berei
 
         -   **Vertragsname:** Geben Sie einen eindeutigen Namen für den Vertrag ein.
 
-            Der Vertragsname darf höchstens 256 Zeichen umfassen. Folgende Zeichen sind nicht zulässig: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Leerzeichen sind im Namen zulässig.
+            Der Vertragsname darf höchstens 256 Zeichen umfassen. Folgende Zeichen sind nicht zulässig: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Leerzeichen sind im Namen zulässig.
 
         -   **Autorisierungs-/Vertragsnummer:** Geben Sie die Autorisierungs-/Vertragsnummer des Lizenzpaars ein.
 
@@ -103,7 +102,7 @@ In Intune-Volumenlizenzverträgen werden Lizenzinformationen für Software berei
         > [!NOTE]
         > Wenn Sie mehrere Vertragsnummernpaare hinzufügen, wird von Intune ein Vertrag mit dem Namen, den Sie angeben, erstellt, und alle Paare, die Sie hinzugefügt haben, werden Teil dieses Vertrags.
 
-    Klicken Sie auf **+**, um ein weiteres Vertragsnummernpaar hinzuzufügen, bzw. auf **-**, um ein bereits eingegebenes Vertragsnummernpaar zu entfernen.
+    Klicken Sie auf **+**, um ein weiteres Vertragsnummernpaar hinzuzufügen, bzw. auf **-** , um ein bereits eingegebenes Vertragsnummernpaar zu entfernen.
 
 4.  Führen Sie im Bereich **Lizenzgruppe auswählen** einen der folgenden Schritte aus:
 
@@ -147,7 +146,7 @@ Außerdem können Sie zusätzlich zu Microsoft-Volumenlizenzverträgen weitere T
 
 4.  Geben Sie im Bereich **Vertragsdetails hinzufügen** Folgendes an:
 
-    -   **Agreement name** (erforderlich). Der Vertragsname darf höchstens 256 Zeichen umfassen. Folgende Zeichen sind nicht zulässig: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /**. Leerzeichen sind im Namen zulässig.
+    -   **Agreement name** (erforderlich). Der Vertragsname darf höchstens 256 Zeichen umfassen. Folgende Zeichen sind nicht zulässig: **~ ! @ # $ ^ &amp; &#42; ( ) = + [ ] { } \ | ; : ' " &lt; &gt; /** . Leerzeichen sind im Namen zulässig.
 
     -   **Herausgeber** (erforderlich). Wenn Sie mit der Eingabe eines Herausgebers beginnen, werden die Namen aller Herausgeber abgerufen, die die eingegebenen Buchstaben enthalten. Wenn Sie beispielsweise "soft" eingeben, werden alle Herausgebernamen abgerufen, die die Zeichenfolge "soft" im Namen enthalten, z. B. "Microsoft" und "Microsoft Research". Die Herausgebernamen werden vom Software Asset-Katalog bezogen. Bevor Sie den Produkttitel eingeben, müssen Sie den Herausgeber auswählen.
 

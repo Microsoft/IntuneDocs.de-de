@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 6/14/2018
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e7ec762e7e7299e400fefedbf7a8810e1da929f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 000f48f062e9e7300337ade04c8cf872d96eab2a
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461344"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040232"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Behandlung von Problemen bei Softwareupdates in Microsoft Intune
 
@@ -173,7 +172,7 @@ In der nachfolgenden Tabelle werden Fehlercodes für den Intune-**Update-Agent**
 |**0x80cf4028**|OM_E_PT_NO_AUTH_COOKIES_CREATED|Vom Agent konnten keine gültigen Authentifizierungscookies erstellt werden.|
 |**0x80cf4029**|OM_E_PT_INVALID_CONFIG_PROP|Ein Wert einer Konfigurationseigenschaft war falsch.|
 |**0x80cf402A**|OM_E_PT_CONFIG_PROP_MISSING|Ein Wert einer Konfigurationseigenschaft fehlte.|
-|**0x80cf402B**|OM_E_PT_HTTP_STATUS_NOT_MAPPED|Die HTTP-Anforderung konnte nicht abgeschlossen werden. Der Grund entsprach keinem **OM_E_PT_HTTP_&#42;**-Fehlercode.|
+|**0x80cf402B**|OM_E_PT_HTTP_STATUS_NOT_MAPPED|Die HTTP-Anforderung konnte nicht abgeschlossen werden. Der Grund entsprach keinem **OM_E_PT_HTTP_&#42;** -Fehlercode.|
 |**0x80cf402C**|OM_E_PT_WINHTTP_NAME_NOT_RESOLVED|Identisch mit **ERROR_WINHTTP_NAME_NOT_RESOLVED**. Der Proxyserver- oder Zielservername kann nicht aufgelöst werden.|
 |**0x80cf402F**|OM_E_PT_ECP_SUCCEEDED_WITH_ERRORS|Die externe CAB-Dateiverarbeitung wurde fehlerhaft abgeschlossen.|
 |**0x80cf4030**|OM_E_PT_ECP_INIT_FAILED|Die externe CAB-Prozessorinitialisierung wurde nicht abgeschlossen.|
@@ -182,7 +181,7 @@ In der nachfolgenden Tabelle werden Fehlercodes für den Intune-**Update-Agent**
 |**0x80cf4033**|OM_E_PT_ECP_FAILURE_TO_EXTRACT_DIGEST|Der Dateidigest konnte nicht aus einer externen CAB-Datei extrahiert werden.|
 |**0x80cf4034**|OM_E_PT_ECP_FAILURE_TO_DECOMPRESS_CAB_FILE|Eine externe CAB-Datei konnte nicht dekomprimiert werden.|
 |**0x80cf4035**|OM_E_PT_ECP_FILE_LOCATION_ERROR|Vom externen CAB-Prozessor konnten die Dateispeicherorte nicht abgerufen werden.|
-|**0x80cf4FFF**|OM_E_PT_UNEXPECTED|Ein Kommunikationsfehler ist aufgetreten, der von keinem anderen **OM_E_PT_&#42;**-Fehlercode abgedeckt wird.|
+|**0x80cf4FFF**|OM_E_PT_UNEXPECTED|Ein Kommunikationsfehler ist aufgetreten, der von keinem anderen **OM_E_PT_&#42;** -Fehlercode abgedeckt wird.|
 |**0x80cf6001**|OM_E_DM_URLNOTAVAILABLE|Ein Download-Manager-Vorgang konnte nicht abgeschlossen werden, da die angeforderte Datei keine URL aufweist.|
 |**0x80cf6002**|OM_E_DM_INCORRECTFILEHASH|Ein Download-Manager-Vorgang konnte nicht abgeschlossen werden, da der Dateidigest nicht erkannt wurde.|
 |**0x80cf6003**|OM_E_DM_UNKNOWNALGORITHM|Ein Download-Manager-Vorgang konnte nicht abgeschlossen werden, da von den Dateimetadaten ein unbekannter Hashalgorithmus angefordert wurde.|
@@ -192,7 +191,7 @@ In der nachfolgenden Tabelle werden Fehlercodes für den Intune-**Update-Agent**
 |**0x80cf6009**|OM_E_DM_BITSTRANSFERERROR|Fehler bei einem Download-Manager-Vorgang aufgrund eines unbestimmten Transferfehlers des Intelligenten Hintergrundübertragungsdiensts (Background Intelligent Transfer Service, BITS).|
 |**0x80cf600a**|OM_E_DM_DOWNLOADLOCATIONCHANGED|Ein Download muss neu gestartet werden, da sich der Downloadquellspeicherort verändert hat.|
 |**0x80cf600B**|OM_E_DM_CONTENTCHANGED|Ein Download muss neu gestartet werden, da der Updateinhalt in einer neuen Revision geändert wurde.|
-|**0x80cf6FFF**|OM_E_DM_UNEXPECTED|Ein Download-Manager-Fehler ist aufgetreten, der von keinem anderen **OM_E_DM_&#42;**-Fehlercode abgedeckt wird.|
+|**0x80cf6FFF**|OM_E_DM_UNEXPECTED|Ein Download-Manager-Fehler ist aufgetreten, der von keinem anderen **OM_E_DM_&#42;** -Fehlercode abgedeckt wird.|
 |**0x80cf7003**|OM_E_INVALID_EVENT_PAYLOAD|Eine ungültige Ereignisnutzlast wurde angegeben.|
 |**0x80cf7004**|OM_E_INVALID_EVENT_PAYLOADSIZE|Die Größe, die von der Ereignisnutzlast übermittelt wurde, ist ungültig.|
 |**0x80cf7005**|OM_E_SERVICE_NOT_REGISTERED|Der Dienst ist nicht registriert.|
@@ -224,13 +223,13 @@ In der nachfolgenden Tabelle werden Fehlercodes für den Intune-**Update-Agent**
 |**0x80cf801B**|OM_E_DS_SCHEMAMISMATCH|Das Schema des aktuellen Datenspeichers und das Schema einer Tabelle in einem XML-Sicherungsdokument stimmen nicht überein.|
 |**0x80cf801C**|OM_E_DS_RESETREQUIRED|Vom Datenspeicher wird ein Zurücksetzen der Sitzung gefordert. Geben Sie die Sitzung frei, und wiederholen Sie den Vorgang mit einer neuen Sitzung.|
 |**0x80cf801D**|OM_E_DS_IMPERSONATED|Ein Datenspeichervorgang konnte nicht abgeschlossen werden, da er mit einer imitierten Identität angefordert wurde.|
-|**0x80cf8FFF**|OM_E_DS_UNEXPECTED|Ein Datenspeicherfehler ist aufgetreten, der von keinem anderen **OM_E_DS_&#42;**-Code abgedeckt wird.|
+|**0x80cf8FFF**|OM_E_DS_UNEXPECTED|Ein Datenspeicherfehler ist aufgetreten, der von keinem anderen **OM_E_DS_&#42;** -Code abgedeckt wird.|
 |**0x80cfA000**|OM_E_AU_NOSERVICE|Eingehende Anforderungen konnten von "Automatische Updates" nicht bedient werden.|
 |**0x80cfA004**|OM_E_AU_PAUSED|Eingehende Anforderungen konnten von "Automatische Updates" nicht verarbeitet werden, da "Automatische Updates" angehalten wurde.|
 |**0x80cfA005**|OM_E_AU_NO_REGISTERED_SERVICE|Kein unverwalteter Dienst ist bei "Automatische Updates" registriert.|
 |**0x80cfA006**|OM_E_AU_DETECT_SVCID_MISMATCH|Der Standarddienst, der bei "Automatische Updates" registriert wurde, wurde während der Suche geändert.|
 |**0x80cfA007**|OM_E_AU_ALREADY_PROMPTING_FOR_REBOOT|Der Benutzer wird bereits von "Automatische Updates" zu einem Neustart aufgefordert.|
-|**0x80cfAFFF**|OM_E_AU_UNEXPECTED|In "Automatische Updates" ist ein Fehler aufgetreten, der von keinem anderen **OM_E_AU &#42;**-Code abgedeckt wird.|
+|**0x80cfAFFF**|OM_E_AU_UNEXPECTED|In "Automatische Updates" ist ein Fehler aufgetreten, der von keinem anderen **OM_E_AU &#42;** -Code abgedeckt wird.|
 |**0x80cfE001**|OM_E_EE_UNKNOWN_EXPRESSION|Ein Ausdrucksauswertungsvorgang konnte nicht abgeschlossen werden, da ein Ausdruck nicht erkannt wurde.|
 |**0x80cfE002**|OM_E_EE_INVALID_EXPRESSION|Ein Ausdrucksauswertungsvorgang konnte nicht abgeschlossen werden, da ein Ausdruck ungültig war.|
 |**0x80cfE003**|OM_E_EE_MISSING_METADATA|Ein Ausdrucksauswertungsvorgang konnte nicht abgeschlossen werden, da in einem Ausdruck eine falsche Anzahl an Metadatenknoten enthalten war.|
@@ -238,7 +237,7 @@ In der nachfolgenden Tabelle werden Fehlercodes für den Intune-**Update-Agent**
 |**0x80cfE005**|OM_E_EE_NOT_INITIALIZED|Die Ausdrucksauswertung konnte nicht initialisiert werden.|
 |**0x80cfE006**|OM_E_EE_INVALID_ATTRIBUTEDATA|Ein Ausdrucksauswertungsvorgang konnte nicht abgeschlossen werden, da ein Attribut ungültig ist.|
 |**0x80cfE007**|OM_E_EE_CLUSTER_ERROR|Ein Ausdrucksauswertungsvorgang konnte nicht abgeschlossen werden, da der Clusterstatus des Computers nicht bestimmt werden konnte.|
-|**0x80cfEFFF**|OM_E_EE_UNEXPECTED|Ein Ausdrucksauswertungsfehler ist aufgetreten, der von keinem anderen **OM_E_EE_&#42;**-Fehlercode abgedeckt wird.|
+|**0x80cfEFFF**|OM_E_EE_UNEXPECTED|Ein Ausdrucksauswertungsfehler ist aufgetreten, der von keinem anderen **OM_E_EE_&#42;** -Fehlercode abgedeckt wird.|
 |**0x80cfF001**|OM_E_REPORTER_EVENTCACHECORRUPT|Die Ereigniscachedatei war fehlerhaft.|
 |**0x80cfF002**|OM_E_REPORTER_EVENTNAMESPACEPARSEFAILED|Die XML-Datei im Ereignis-Namespacedeskriptor konnte nicht analysiert werden.|
 |**0x80cfF003**|OM_E_INVALID_EVENT|Die XML-Datei im Ereignis-Namespacedeskriptor ist ungültig.|
