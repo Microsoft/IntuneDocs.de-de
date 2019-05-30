@@ -8,19 +8,18 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 04/30/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67f3f329cb66716a2126f47eb2984ca26854b6de
-ms.sourcegitcommit: b1ad73f5c9fd0ad8026c572aef8d15e258951c8f
+ms.openlocfilehash: eeddbf39093210e640125db3be6ddd6bcad7d59b
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "64880755"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045002"
 ---
 # <a name="integrate-sophos-mobile-with-intune"></a>Integrieren von Sophos Mobile in Intune  
 

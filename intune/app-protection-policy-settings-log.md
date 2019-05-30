@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 03/19/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d593ee1389cfa183c5daaefdeae3ea7f6c44a8a8
-ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
-ms.translationtype: HT
+ms.openlocfilehash: 96cb9869db746942615221c5ab112ea5afd8de9c
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59671865"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66049672"
 ---
 # <a name="review-client-app-protection-logs"></a>Überprüfen der Schutzprotokolle für Client-Apps
 

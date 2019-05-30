@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 00a0bd4936d1ad8ba8dd52f1839e7d42505db60e
-ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
-ms.translationtype: HT
+ms.openlocfilehash: 8581d047e76ac1734b2d6c7816facf601e397957
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59429223"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041719"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Intune Data Warehouse-Sammlungen
 

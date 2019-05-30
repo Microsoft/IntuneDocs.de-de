@@ -7,7 +7,6 @@ manager: dougeby
 ms.date: 03/29/2019
 ms.topic: conceptual
 audience: ITPro
-ms.prod: microsoft-365-enterprise
 ms.service: ''
 ms.technology: ''
 ms.custom: intune
@@ -16,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15f908a34f0a9315552acfad56cbf560a23fa26d
-ms.sourcegitcommit: e63e3debb5f4d9a757f767913e72e39742137b17
-ms.translationtype: HT
+ms.openlocfilehash: 452cb8e4163b82d699347a33fd8dfda9c792b6fc
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58788444"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050272"
 ---
 # <a name="what-is-device-management"></a>Was ist die Geräteverwaltung? 
 

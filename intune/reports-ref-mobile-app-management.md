@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 04/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 456abbf849120675b6a7c108ca65c6f9967ae64a
-ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
-ms.translationtype: HT
+ms.openlocfilehash: 059f39a52b1dbc6e5f7a014741c0657a2ba8bc10
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59429198"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045361"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Verweis für MAM-Entitäten (Verwaltung mobiler Apps)
 
