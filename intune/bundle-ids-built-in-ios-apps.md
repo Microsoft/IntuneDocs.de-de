@@ -1,7 +1,7 @@
 ---
-title: iOS bundle-IDs für integrierte apps in Microsoft Intune – Azure | Microsoft-Dokumentation
+title: iOS-Bündel-IDs für integrierte Apps in Microsoft Intune – Azure | Microsoft-Dokumentation
 titleSuffix: ''
-description: Eine Liste mit der Bündel-IDs für integrierte iOS-apps angezeigt. Verwenden Sie diese Bündel-IDs, um apps im gerätekonfigurationsprofile und Richtlinien in Microsoft Intune explizit zu ermöglichen.
+description: Hier finden Sie eine Liste der Bündel-IDs für integrierte iOS-Apps. Verwenden Sie diese Bündel-IDs, um Apps in Gerätekonfigurationsprofilen und Richtlinien in Microsoft Intune explizit zuzulassen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -18,16 +18,16 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 052a5f533ef577358b8c28262116c065b3c4748d
 ms.sourcegitcommit: d1b4f0d5487e35902e8bcd478ad02f93125cc31d
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/24/2019
 ms.locfileid: "64336704"
 ---
-# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Bündel-IDs für integrierte iOS-apps, die Sie in Intune verwenden können
+# <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Bündel-IDs für integrierte iOS-Apps, die Sie in Intune verwenden können
 
-Wenn Sie Funktionen auf iOS-Geräten konfigurieren, können Sie auch die integrierten apps auf iOS-Geräte hinzufügen. Dieser Artikel beschreibt die Bündel-IDs einiger gängiger integrierter iOS-Apps. Um die Bündel-ID von anderen Apps zu finden, wenden Sie sich an den Softwarehersteller.
+Wenn Sie Features auf iOS-Geräten konfigurieren, können Sie auch die integrierten Apps auf iOS-Geräten hinzufügen. Dieser Artikel enthält eine Liste der Bündel-IDs einiger gängiger integrierter iOS-Apps. Um die Bündel-ID von anderen Apps zu finden, wenden Sie sich an den Softwarehersteller.
 
-## <a name="bundle-ids"></a>Paket-ID
+## <a name="bundle-ids"></a>Bündel-IDs
 
 | Paket-ID                   | App-Name     | Herausgeber |
 |-----------------------------|--------------|-----------|
@@ -78,4 +78,4 @@ Wenn Sie Funktionen auf iOS-Geräten konfigurieren, können Sie auch die integri
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Verwenden Sie diese Bündel-IDs so konfigurieren Sie [Gerätefunktionen](ios-device-features-settings.md) und [zulassen und beschränken Sie einige Einstellungen](device-restrictions-ios.md) auf iOS-Geräten.
+Verwenden Sie diese Bündel-IDs, um [Gerätefeatures](ios-device-features-settings.md) zu konfigurieren und um auf iOS-Geräten [einige Einstellungen zuzulassen oder einzuschränken](device-restrictions-ios.md).

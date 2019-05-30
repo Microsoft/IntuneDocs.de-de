@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 04/25/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d914ea9bffe9485d2e37f8ede4d168f597f9e200
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: eb7ff33384b86267e007e986737eeea6b8d3203e
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565930"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040121"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Konfigurieren von VPN-Einstellungen auf iOS-Geräten in Microsoft Intune
 
@@ -42,7 +41,7 @@ Wählen Sie den VPN-Verbindungstyp aus der folgenden Liste von Anbietern aus:
 - **Cisco (IPsec)**
 - **Citrix-VPN**
 - **Citrix SSO**
-- **Zscaler**: Erfordert die Integration von Zscaler Private Access (ZPA) in Ihr Azure AD-Konto. Ausführliche Schritte finden Sie in der [Zscaler-Dokumentation](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
+- **Zscaler**: Um den bedingten Zugriff zu nutzen oder Benutzern zu ermöglichen, den Zscaler-Anmeldebildschirm zu umgehen, müssen Sie Zscaler Private Access (ZPA) in Ihr Azure AD-Konto integrieren. Ausführliche Schritte finden Sie in der [Zscaler-Dokumentation](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
 - **Benutzerdefiniertes VPN**
 
 > [!NOTE]
@@ -53,7 +52,7 @@ Wählen Sie den VPN-Verbindungstyp aus der folgenden Liste von Anbietern aus:
 Die in der folgenden Liste gezeigten Einstellungen hängen vom ausgewählten VPN-Verbindungstyp ab.  
 
 - **Verbindungsname**: Endbenutzern wird dieser Name angezeigt, wenn sie auf ihrem Gerät eine Liste der verfügbaren VPN-Verbindungen durchsuchen.
-- **Benutzerdefinierter Domänennamen** (nur für Zscaler): Füllen Sie das Anmeldefeld der Zscaler-App mit der Domäne, zu der Ihre Benutzer gehören. Wenn beispielsweise ein Benutzername `Joe@contoso.net` lautet, würde die Domäne `contoso.net` beim Öffnen der App statisch im Feld erscheinen. Wenn Sie keinen Domänennamen eingeben, wird der Domänenteil des UPN in Azure Active Directory (AD) verwendet.
+- **Benutzerdefinierter Domänennamen** (nur für Zscaler): Füllen Sie das Anmeldefeld der Zscaler-App vorab mit der Domäne auf, zu der Ihre Benutzer gehören. Wenn beispielsweise ein Benutzername `Joe@contoso.net` lautet, würde die Domäne `contoso.net` beim Öffnen der App statisch im Feld erscheinen. Wenn Sie keinen Domänennamen eingeben, wird der Domänenteil des UPN in Azure Active Directory (AD) verwendet.
 - **IP-Adresse oder FQDN**: Die IP-Adresse oder der vollqualifizierte Domänenname (FQDN) des VPN-Servers ein, mit dem Geräte eine Verbindung herstellen. Geben Sie beispielsweise `192.168.1.1` oder `vpn.contoso.com` ein.
 - **Cloudname der Organisation** (nur für Zscaler): Geben Sie den Namen der Cloud ein, in der Ihre Organisation bereitgestellt wird. In der von Ihnen verwendeten URL, die Sie für die Anmeldung bei Zscaler verwenden, ist der Name enthalten.  
 - **Authentifizierungsmethode:** Wählen Sie aus, wie sich Geräte beim VPN-Server authentifizieren. 
@@ -70,19 +69,28 @@ Die in der folgenden Liste gezeigten Einstellungen hängen vom ausgewählten VPN
 - **VPN-Bezeichner** (benutzerdefiniertes VPN, Zscaler und Citrix): Ein Bezeichner für die verwendete VPN-App, der von Ihrem VPN-Anbieter bereitgestellt wird.
   - **Geben Sie Schlüssel-Wert-Paare für die benutzerdefinierten VPN-Attribute Ihrer Organisation ein:** Fügen Sie **Schlüssel** und **Werte** zum Anpassen der VPN-Verbindung hinzu, oder importieren Sie sie. Denken Sie daran, dass diese Werte in der Regel von Ihrem VPN-Anbieter bereitgestellt werden.
 
-- **Netzwerkzugriffssteuerung (NAC) aktivieren** (nur Citrix SSO): Wenn Sie auf **Ich stimme zu** klicken, wird die Geräte-ID in das VPN-Profil eingeschlossen. Diese ID kann für die Authentifizierung beim VPN verwendet werden, um Zugriff auf das Netzwerk zu ermöglichen oder zu verhindern.
+- **Netzwerkzugriffssteuerung (NAC) aktivieren** (nur Citrix SSO, F5 Access): Wenn Sie auf **Ich stimme zu** klicken, wird die Geräte-ID in das VPN-Profil eingeschlossen. Diese ID kann für die Authentifizierung beim VPN verwendet werden, um Zugriff auf das Netzwerk zu ermöglichen oder zu verhindern.
+
+  Achten Sie bei **Verwenden von F5 Access** auf Folgendes:
+
+  - Vergewissern Sie sich, dass Sie F5 BIG-IP 13.1.1.5 nutzen. BIG-IP 14 wird nicht unterstützt.
+  - Integrieren Sie BIG-IP für NAC in Intune. Siehe die F5-Anleitung [Konfigurieren von APM für Gerätestatusüberprüfungen mit Endpunktverwaltungssystemen](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+  - Aktivieren Sie die NAC im VPN-Profil.
 
   **Wenn Sie Citrix SSO mit Gateway verwenden**, führen Sie Folgendes durch:
 
   - Vergewissern Sie sich, dass Sie Citrix Gateway 12.0.59 oder höher verwenden.
   - Vergewissern Sie sich, dass Ihre Benutzer Citrix SSO 1.1.6 oder höher auf ihren Geräten installiert haben.
-  - Integrieren Sie Citrix Gateway in Intune für die NAC. Dies wird im Citrix-Bereitstellungsleitfaden [Integrating Microsoft Intune/Enterprise Mobility Suite with NetScaler (LDAP+OTP Scenario)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) (Integration von Microsoft Intune/Enterprise Mobility + Security E3 in NetScaler (Szenario mit LDAP+OTP)) beschrieben.
+  - Integrieren Sie Citrix Gateway für NAC in Intune. Siehe den Citrix-Bereitstellungsleitfaden [Integrating Microsoft Intune/Enterprise Mobility Suite with NetScaler (LDAP+OTP Scenario)](https://www.citrix.com/content/dam/citrix/en_us/documents/guide/integrating-microsoft-intune-enterprise-mobility-suite-with-netscaler.pdf) (Integration von Microsoft Intune/Enterprise Mobility + Security E3 in NetScaler [Szenario mit LDAP+OTP]).
   - Aktivieren Sie die NAC im VPN-Profil.
 
-  Wichtige Details:  
+  **Wichtige Details**:  
 
-  - Wenn die NAC aktiviert ist, wird die VPN-Verbindung alle 24 Stunden getrennt.
-  - Die Geräte-ID ist Teil des Profils, kann in Intune aber nicht angezeigt werden. Diese ID wird nicht von Microsoft gespeichert oder weitergegeben. Sobald dies von VPN-Partnern unterstützt wird, kann der VPN-Client, z.B. Citrix SSO, die ID abrufen. Außerdem kann er Intune abfragen, um zu bestätigen, dass das Gerät registriert ist und ob das VPN-Profil kompatibel ist.
+  - Wenn die NAC aktiviert ist, wird die VPN-Verbindung alle 24 Stunden getrennt. Die VPN-Verbindung kann sofort wiederhergestellt werden.
+  - Die Geräte-ID ist Teil des Profils, wird aber in Intune nicht angezeigt. Diese ID wird nicht von Microsoft gespeichert oder weitergegeben.
+
+  Wenn die Geräte-ID von VPN-Partnern unterstützt wird, kann der VPN-Client, z.B. Citrix SSO, die ID abrufen. Anschließend kann Intune abgefragt werden, um zu bestätigen, dass das Gerät registriert ist und ob das VPN-Profil konform ist oder nicht.
+
   - Zum Entfernen dieser Einstellung erstellen Sie das Profil neu und wählen **Ich stimme zu** nicht aus. Anschließend weisen Sie das Profil neu zu.
 
 ## <a name="automatic-vpn-settings"></a>Automatische VPN-Einstellungen
@@ -92,10 +100,10 @@ Die in der folgenden Liste gezeigten Einstellungen hängen vom ausgewählten VPN
   - Wenn Sie **Pro-App-VPN**-Profile für iOS mit Pulse Secure oder einem benutzerdefinierten VPN verwenden, können Sie das Tunneln entweder auf App-Ebene (app-proxy) oder auf Paketebene (packet-tunnel) nutzen. Legen Sie für Tunneln auf App-Ebene den Wert **ProviderType** auf **app-proxy** oder für Tunneln auf Paketebene auf **packet-tunnel** fest. Wenn Sie sich nicht sicher sind, welcher Wert benutzt werden soll, lesen Sie dies in der Dokumentation Ihres VPN-Anbieters nach.
   - **Safari URLs, die dieses VPN auslösen**: Fügen Sie mindestens eine Website-URL hinzu. Wenn diese URLs mit dem Safari-Browser auf dem Gerät aufgerufen werden, wird die VPN-Verbindung automatisch aufgebaut.
 
-- **Bedarfsgesteuertes VPN:** Konfigurieren Sie bedingte Regeln, die steuern, wann die VPN-Verbindung gestartet wird. Erstellen Sie beispielsweise eine Bedingung, in der die VPN-Verbindung nur verwendet wird, wenn ein Gerät nicht mit einem WLAN des Unternehmens verbunden ist. Erstellen Sie alternativ eine Bedingung, in der die VPN-Verbindung nicht initiiert wird, wenn ein Gerät nicht auf eine eingegebene DNS-Suchdomäne zugreifen kann.
+- **Bedarfsgesteuertes VPN:** Konfigurieren Sie bedingte Regeln, die steuern, wann die VPN-Verbindung gestartet wird. Erstellen Sie beispielsweise eine Bedingung, in der die VPN-Verbindung nur verwendet wird, wenn ein Gerät nicht mit einem WLAN des Unternehmens verbunden ist. Oder erstellen Sie eine Bedingung. Wenn beispielsweise ein Gerät nicht auf eine von Ihnen angegebene DNS-Suchdomäne zugreifen kann, wird die VPN-Verbindung nicht gestartet.
 
   - **SSIDs oder DNS-Suchdomänen:** Wählen Sie aus, ob diese Bedingung **SSIDs** des Drahtlosnetzwerks oder **DNS-Suchdomänen** verwenden soll. Klicken Sie auf **Hinzufügen**, um SSIDs oder Suchdomänen zu konfigurieren.
-  - **URL-Zeichenfolgentest:** Optional. Geben Sie eine URL ein, die die Regel als Test verwenden soll. Wenn das Gerät mit diesem Profil auf diese URL ohne Umleitung zugreift, wird die VPN-Verbindung initiiert. Und das Gerät wird mit der Ziel-URL verbunden. Der Standort des URL-Zeichenfolgentests wird dem Benutzer nicht angezeigt. Ein Beispiel für einen URL-Zeichenfolgentest ist die Adresse eines Überwachungswebservers, der die Gerätekonformität prüft, bevor die VPN-Verbindung hergestellt wird. Eine andere Möglichkeit besteht darin, mit der URL zu testen, ob das VPN eine Verbindung mit einem Standort herstellen kann, bevor das Gerät über das VPN mit der Ziel-URL verbunden wird.
+  - **URL-Zeichenfolgentest:** Optional. Geben Sie eine URL ein, die die Regel als Test verwenden soll. Wenn das Gerät mit diesem Profil auf diese URL ohne Umleitung zugreift, wird die VPN-Verbindung gestartet. Und das Gerät wird mit der Ziel-URL verbunden. Der Standort des URL-Zeichenfolgentests wird dem Benutzer nicht angezeigt. Ein Beispiel für einen URL-Zeichenfolgentest ist die Adresse eines Überwachungswebservers, der die Gerätekonformität prüft, bevor die VPN-Verbindung hergestellt wird. Eine andere Möglichkeit besteht darin, mit der URL zu testen, ob das VPN eine Verbindung mit einem Standort herstellen kann, bevor das Gerät über das VPN mit der Ziel-URL verbunden wird.
   - **Domänenaktion:** Wählen Sie eine der folgenden Optionen aus:
     - Bei Bedarf verbinden
     - Nie verbinden

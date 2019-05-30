@@ -27,12 +27,12 @@ ms.locfileid: "61497517"
 ---
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Registrieren Ihres Windows Phone 8.1-Geräts bei Intune  
 
-Registrieren Sie Ihrer Geräte aus, um Zugriff auf Geschäfts- oder Schul-e-Mail, Dateien und anderen Ressourcen erhalten. Wenn Sie Ihre Geräte registrieren, kann Ihre Organisation Unternehmensdaten schützen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) und unter [Was der Support Ihres Unternehmens auf Ihrem Gerät sehen bzw. nicht sehen kann](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
+Registrieren Sie Ihre Geräte, um Zugang zu E-Mails, Dateien und anderen Ressourcen am Arbeitsplatz oder in der (Hoch-) Schule zu erhalten. Wenn Sie Ihre Geräte registrieren, kann Ihre Organisation Unternehmensdaten schützen. Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) und unter [Was der Support Ihres Unternehmens auf Ihrem Gerät sehen bzw. nicht sehen kann](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).  
 
-Um Ihr Gerät bei Intune zu registrieren, befolgen Sie die Anweisungen, die mit Ihrer Berechtigungen oder die aktuellen Kontostatus übereinstimmen.
+Um Ihr Gerät bei Intune zu registrieren, folgen Sie den Anweisungen, die Ihren Berechtigungen oder dem aktuellen Kontostatus entsprechen.
 
-## <a name="enroll-through-company-portal"></a>Über die Unternehmensportal-App registrieren  
-Gehen Sie folgendermaßen vor, wenn Sie die Unternehmensportal-app aus dem Microsoft Store installieren können. 
+## <a name="enroll-through-company-portal"></a>Registrieren über das Unternehmensportal  
+Gehen Sie folgendermaßen vor, wenn Sie die Unternehmensportal-App aus dem Microsoft Store herunterladen und installieren können. 
 
 1.  Tippen Sie auf **Start** > **Store**.  
 
@@ -77,8 +77,8 @@ Registrieren Sie Ihr Gerät:
 
     ![Bildschirm „Konto hinzugefügt“](./media/WP81-enroll-4-account-added.png)  
 
-## <a name="enroll-through-settings-app"></a>Registrieren Sie über die app "Einstellungen"  
-Gehen Sie folgendermaßen vor, wenn Sie den Microsoft Store von Ihrem Windows Phone-Gerät zugreifen können, oder wenn Sie nicht über ein Microsoft-Account verfügen.
+## <a name="enroll-through-settings-app"></a>Registrieren über die App „Einstellungen“  
+Gehen Sie folgendermaßen vor, wenn Sie auf Ihrem Windows Phone-Gerät nicht auf den Microsoft Store zuzugreifen können oder kein Microsoft-Konto haben.
 
 1.  Tippen Sie auf **Einstellungen** &gt; **Arbeitsplatz**.  
 

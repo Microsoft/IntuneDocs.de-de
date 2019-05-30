@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 5/17/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: c13c5d71d1ff631d7a3c84cd3f62037569757917
-ms.sourcegitcommit: bc5e4dff18f5f9b79077a888f8a58dcc490708c0
+ms.openlocfilehash: 184781a315dcaeaac9540294746a9c2cd85da917
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975778"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041905"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Hinzufügen der Endpoint Protection-Einstellungen in Intune
 
@@ -46,7 +45,7 @@ Bevor Sie ein Profil erstellen, lesen Sie die folgenden Artikel, in denen die Ei
    - **macOS**
    - **Windows 10 und höher**
 6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Endpoint Protection** aus. 
-7. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. Weitere Informationen:
+7. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. Weitere Informationen finden Sie unter:
    - [Einstellungen für macOS](endpoint-protection-macos.md)
    - [Einstellungen für Windows 10](endpoint-protection-windows-10.md)  
 

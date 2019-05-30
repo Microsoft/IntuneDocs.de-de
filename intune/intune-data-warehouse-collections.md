@@ -435,8 +435,8 @@ Die Entität **MamApplication** führt branchenspezifische Apps (LOB, Line-of-Bu
 | Eigenschaft | Beschreibung | Beispiel |
 |---------|------------|--------|
 | mamApplicationKey |Eindeutiger Bezeichner der MAM-Anwendung. | 432 |
-| mamApplicationName |Der Name der MAM-Anwendung. |Beispielname für MAM-Anwendung |
-| mamApplicationId |Anwendungs-ID der MAM-App | 123 |
+| mamApplicationName |Name der MAM-Anwendung. |Beispielname für MAM-Anwendung |
+| mamApplicationId |Anwendungs-ID der MAM-Anwendung. | 123 |
 | isDeleted |Gibt an, ob dieser MAM-App-Datensatz aktualisiert wurde <br>Wahr: MAM-App verfügt über einen neuen Datensatz mit aktualisierten Feldern in dieser Tabelle. <br>Falsch: der neueste Datensatz für diese MAM-App. |Wahr/falsch |
 | StartDateInclusiveUTC |Datum und Uhrzeit in UTC, als diese MAM-App im Data Warehouse erstellt wurde |23.11.2016 12:00:00 Uhr |
 | DeletedDateUTC |Datum und Uhrzeit in UTC, als IsDeleted in TRUE geändert wurde |23.11.2016 12:00:00 Uhr |
@@ -453,15 +453,15 @@ Die Entität **MamApplicationInstance** führt verwaltete MAM-Apps (Mobile Appli
 |   ApplicationInstanceKey   |                                                               Eindeutiger Bezeichner für die MAM-App-Instanz im Data Warehouse – Ersatzschlüssel                                                                |                 123                  |
 |           UserId           |                                                                              Benutzer-ID des Benutzers, der diese MAM-App installiert hat                                                                              | b66bc706-ffff-7437-0340-032819502773 |
 |   ApplicationInstanceId    |                                              Eindeutiger Bezeichner der MAM-App-Instanz – ähnlich wie ApplicationInstanceKey, jedoch ist der Bezeichner ein natürlicher Schlüssel                                              | b66bc706-ffff-7437-0340-032819502773 |
-| mamApplicationId | Anwendungs-Id der Mam-Anwendung, die für die diese Mam-Anwendungsinstanz erstellt wurde.   | 23.11.2016 12:00:00 Uhr   |
+| mamApplicationId | Anwendungs-ID der MAM-Anwendung, die für die diese MAM-Anwendungsinstanz erstellt wurde.   | 23.11.2016 12:00:00 Uhr   |
 |     ApplicationVersion     |                                                                                     Anwendungsversion dieser MAM-App                                                                                      |                  2                   |
 |        CreatedDate         |                                                                 Datum, als dieser Datensatz der MAM-App-Instanz erstellt wurde. Der Wert kann NULL sein.                                                                 |        23.11.2016 12:00:00        |
 |          Plattform          |                                                                          Plattform des Geräts, auf dem diese MAM-App installiert wurde                                                                           |                  2                   |
 |      PlatformVersion       |                                                                      Plattformversion des Geräts, auf dem diese MAM-App installiert wurde                                                                       |                 2.2                  |
 |         SdkVersion         |                                                                            Die Version des MAM SDKs, mit der diese MAM-App umschlossen wurde                                                                            |                 3.2                  |
-| mamDeviceId | Geräte-Id des Geräts mit dem MAM-Anwendung-Instanz zugeordnet ist.   | 23.11.2016 12:00:00 Uhr   |
-| mamDeviceType | Der Gerätetyp des Geräts mit dem MAM-Anwendung-Instanz zugeordnet ist.   | 23.11.2016 12:00:00 Uhr   |
-| mamDeviceName | Der Gerätename des Geräts mit dem MAM-Anwendung-Instanz zugeordnet ist.   | 23.11.2016 12:00:00 Uhr   |
+| mamDeviceId | Geräte-Id des Geräts, dem die MAM-Anwendungsinstanz zugeordnet ist.   | 23.11.2016 12:00:00 Uhr   |
+| mamDeviceType | Gerätetyp des Geräts, dem die MAM-Anwendungsinstanz zugeordnet ist.   | 23.11.2016 12:00:00 Uhr   |
+| mamDeviceName | Gerätename des Geräts, dem die MAM-Anwendungsinstanz zugeordnet ist.   | 23.11.2016 12:00:00 Uhr   |
 |         isDeleted          | Gibt an, ob dieser Datensatz der MAM-App-Instanz aktualisiert wurde <br>Wahr: Diese MAM-App-Instanz verfügt über einen neuen Datensatz mit aktualisierten Feldern in dieser Tabelle. <br>Falsch: der neueste Datensatz für diese MAM-App-Instanz. |              Wahr/falsch              |
 |   StartDateInclusiveUtc    |                                                              Datum und Uhrzeit in UTC, als diese MAM-App-Instanz im Data Warehouse erstellt wurde                                                               |        23.11.2016 12:00:00 Uhr        |
 |       DeletedDateUtc       |                                                                             Datum und Uhrzeit in UTC, als IsDeleted in TRUE geändert wurde                                                                              |        23.11.2016 12:00:00 Uhr        |
@@ -479,7 +479,7 @@ Die Entität **MamCheckin** stellt Daten dar, die gesammelt wurden, als eine MAM
 | DateKey |Date Key für den Zeitpunkt als das Einchecken der MAM-App im Data Warehouse aufgezeichnet wurde | 20160703 |
 | ApplicationInstanceKey |Schlüssel der App-Instanz, der diesem Eincheckvorgang der MAM-App zugeordnet wird | 123 |
 | UserKey |Schlüssel des Benutzers, der diesem Eincheckvorgang der MAM-App zugeordnet wird | 4323 |
-| mamApplicationKey |Schlüssel der Anwendung zugeordneten Einchecken der MAM-Anwendung. | 432 |
+| mamApplicationKey |Anwendungsschlüssel der Anwendung, die dem Einchecken der MAM-Anwendung zugeordnet ist. | 432 |
 | DeviceHealthKey |Schlüssel von DeviceHealth, der diesem Eincheckvorgang der MAM-App zugeordnet wird | 321 |
 | PlatformKey |Stellt die Plattform des Geräts dar, die diesem Eincheckvorgang der MAM-App zugeordnet wird |123 |
 | LastCheckInDate |Datum und Uhrzeit, wann diese MAM-App zuletzt eingecheckt wurde. Der Wert kann NULL sein. |23.11.2016 12:00:00 Uhr |
@@ -527,7 +527,7 @@ Die Entität **managementAgentType** stellt die Agents dar, die zum Verwalten vo
 | 5                     | EasIntuneClient                   | Das Gerät wird sowohl von Exchange ActiveSync als auch vom Intune-PC-Agent verwaltet. |
 | 8                     | ConfigManagerClient               | Das Gerät wird vom System Center Configuration Manager-Agent verwaltet.     |
 | 10                    | ConfigurationManagerClientMdm     | Das Gerät wird vom Configuration Manager und MDM verwaltet.                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | Das Gerät wird von Configuration Manager, Verwaltung mobiler Geräte und Exchange Active Sync verwaltet.               |
+| 11                    | ConfigurationManagerCLientMdmEas  | Das Gerät wird von Configuration Manager, MDM und Exchange Active Sync verwaltet.               |
 | 16                    | Unbekannt                           | Unbekannter Verwaltungs-Agent-Typ                                              |
 | 32                    | Jamf                              | Die Geräteattribute werden von Jamf abgerufen.                               |
 | 64                    | GoogleCloudDevicePolicyController |  Das Gerät wird von CloudDPC von Google verwaltet.                                 |
@@ -586,10 +586,10 @@ Die Entität **ownerType** gibt an, ob ein Gerät einem Unternehmen oder einer P
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Eindeutiger Bezeichner des Besitzertyps                                                                                                                                               |                            |
 | ownerTypeKey  | Eindeutiger Bezeichner des Besitzertyps im Data Warehouse – Ersatzschlüssel.                                                                                                       |                            |
-| ownerTypeName | Stellt den Besitzertyp der Geräte dar: Unternehmen: Das Gerät gehört einem Unternehmen.  Persönlich: Das Gerät befindet sich im Privatbesitz (BYOD).   Unbekannt: Es liegen keine Informationen zu diesem Gerät vor. | Unternehmen Personal, Unknown |
+| ownerTypeName | Stellt den Besitzertyp der Geräte dar: Unternehmen: Das Gerät gehört einem Unternehmen.  Persönlich: Das Gerät befindet sich im Privatbesitz (BYOD).   Unbekannt: Es liegen keine Informationen zu diesem Gerät vor. | Corporate Personal Unknown |
 
 > [!Note]  
-> Für die `ownerTypeName` Filter in Azure AD, wenn Sie dynamische Gruppen für Geräte zu erstellen, müssen Sie zum Festlegen des Werts `deviceOwnership` als `Company`. Weitere Informationen finden Sie unter [Regeln für Geräte,](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
+> Für den Filter `ownerTypeName` in AzureAD müssen Sie beim Erstellen dynamischer Gruppen für Geräte den Wert `deviceOwnership` als `Company` festlegen. Weitere Informationen finden Sie unter [Regeln für Geräte](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="policies"></a>Richtlinien
 Die Entität **Policy** (Richtlinie) listet Gerätekonfigurationsprofile, Appkonfigurationsprofile und Kompatibilitätsrichtlinien auf. Sie können die Richtlinien mit der mobilen Geräteverwaltung (MDM) zu einer Gruppe in Ihrem Unternehmen zuweisen.

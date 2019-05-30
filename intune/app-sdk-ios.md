@@ -604,7 +604,7 @@ Es ist Aufgabe der App, die Identitäten passend für verwaltete und nicht verwa
 
 Jeder Thread weist jederzeit eine effektive Identität für Benutzeroberflächen- und Dateiaufgaben auf. Dies ist die Identität, mit der überprüft wird, welche Richtlinien, sofern zutreffend, angewendet werden sollen. Wenn die Identität „no identity“ ist oder der Benutzer nicht verwaltet ist, werden keine Richtlinien angewendet. Die unten stehenden Diagramme zeigen, wie effektive Identitäten bestimmt werden.
 
-  ![Intune App SDK iOS: Identity-Ermittlung](./media/ios-thread-identities.png)
+  ![Intune App SDK für iOS: Identitätsermittlungsprozess](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>Thread-Warteschlangen
 

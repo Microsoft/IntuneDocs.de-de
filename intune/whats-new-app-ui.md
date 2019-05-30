@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 753c261ea08ce304176f19e1c64389053b055d5f
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9955330d9f20c13b9239f900b77828d582d12bff
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61517281"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046420"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Updates der Benutzeroberfläche für Endbenutzer-Apps in Intune
 Lernen Sie die neuesten Updates für die Microsoft Intune-Apps kennen. Wir verbessern regelmäßig die App und Website des Intune-Unternehmensportals und fügen Neues hinzu. Wenn Sie ein Intune-Administrator sind oder im Support arbeiten, bietet Ihnen dieser Artikel Informationen für Folgendes:
@@ -303,7 +302,7 @@ Der bedingte Zugriff über Intune unterstützt nun eine sicherere Authentifizier
 
 ### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Dialogfelder der mobilen Anwendungsverwaltung mit Intune erhalten eine moderne Schnittstelle <!-- 1199015 -->
 
-Die Dialogfelder der mobilen Anwendungsverwaltung mit Intune (Mobile Application Management, MAM) werden moderner aussehen und sich verhalten. Die Dialogfelder funktionieren wie zuvor.
+Die Dialogfelder der mobilen Anwendungsverwaltung mit Intune (MAM) werden moderner aussehen und sich verhalten. Die Dialogfelder funktionieren wie zuvor.
 
 **Bisherige Benutzeroberfläche**
 

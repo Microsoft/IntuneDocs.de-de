@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/03/2019
+ms.date: 05/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8b05b7f2a0b56321023bc8444528578aeface0b
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 491610fcefa1b20159ebfe487c9e2d95a6f5e7c6
+ms.sourcegitcommit: 586114e1beee31aa8553f69c0ba4d731afcb45e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61508586"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65402067"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Konfigurieren und Verwenden Ihrer PKCS-Zertifikate mit Intune
 
@@ -189,7 +189,7 @@ Jedes Gerät benötigt ein Zertifikat einer Stamm- oder Zwischenzertifizierungss
 3. Gehen Sie zu **Einstellungen**, und geben Sie die zuvor exportierte CER-Datei mit dem Zertifikat der Stammzertifizierungsstelle an.
 
    > [!NOTE]
-   > Abhängig von der in **Schritt 3** ausgewählten Plattform besitzen Sie möglicherweise die Option zum Auswählen des **Zielspeichers** für das Zertifikat.
+   > Je nach der in **Schritt 2** ausgewählten Plattform besitzen Sie möglicherweise die Option zum Auswählen des **Zielspeichers** für das Zertifikat.
 
    ![Profil erstellen und ein vertrauenswürdiges Zertifikat hochladen](media/certificates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
 
@@ -208,9 +208,9 @@ Jedes Gerät benötigt ein Zertifikat einer Stamm- oder Zwischenzertifizierungss
 
 3. Gehen Sie zu **Einstellungen**, und geben Sie die folgenden Eigenschaften ein:
 
-    - **Verlängerungsschwellenwert (%)**: Empfohlen sind 20%.
+    - **Verlängerungsschwellenwert (%)** : Empfohlen sind 20%.
     - **Gültigkeitsdauer des Zertifikats**: Wenn Sie die Zertifikatvorlage nicht geändert haben, kann diese Option auf ein Jahr festgelegt werden.
-    - **Schlüsselspeicheranbieter (KSP)**: Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus.
+    - **Schlüsselspeicheranbieter (KSP)** : Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus.
     - **Zertifizierungsstelle**: Zeigt den internen vollqualifizierten Domänennamen (FQDN) Ihrer Unternehmenszertifizierungsstelle an.
     - **Name der Zertifizierungsstelle**: Zeigt den Namen der Unternehmenszertifizierungsstelle an (z.B. „Contoso-Zertifizierungsstelle“).
     - **Name der Zertifikatvorlage**: Der Name der zuvor erstellten Vorlage. Beachten Sie, dass der **Vorlagenname** standardmäßig dem **Vorlagenanzeigenamen** *ohne Leerzeichen* entspricht.
@@ -240,7 +240,7 @@ Nach dem Importieren der Zertifikate in Intune erstellen Sie ein Profil für ein
 
     - **Beabsichtigter Zweck**: Der Zweck der Zertifikate, die für dieses Profil importiert werden. Ein Administrator kann Zertifikate mit unterschiedlichen Zwecken (z.B. zur Authentifizierung oder zum Signieren/Verschlüsseln mit S/MIME) importieren. Der Zweck, der im Zertifikatprofil ausgewählt wird, entspricht demjenigen des Zertifikatprofils mit den korrekten importierten Zertifikaten.
     - **Gültigkeitsdauer des Zertifikats**: Wenn Sie die Zertifikatvorlage nicht geändert haben, kann diese Option auf ein Jahr festgelegt werden.
-    - **Schlüsselspeicheranbieter (KSP)**: Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus.
+    - **Schlüsselspeicheranbieter (KSP)** : Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus.
 
 4. Wählen Sie **OK** > **Erstellen** aus, um Ihr Profil zu speichern.
 5. Informationen zum Zuweisen des neuen Profils zu einem oder mehreren Geräten finden Sie unter [Zuweisen von Microsoft Intune-Geräteprofilen](device-profile-assign.md).
@@ -248,16 +248,21 @@ Nach dem Importieren der Zertifikate in Intune erstellen Sie ein Profil für ein
 ## <a name="whats-new-for-connectors"></a>Neuerungen für Connectors
 Es werden regelmäßig Updates für die beiden Certificate Connectors veröffentlicht. Sobald wir ein Update für einen Connector veröffentlichen, werden Sie hier darüber informiert. 
 
-Der *PFX-Certificate Connector* [unterstützt automatische Updates](#requirements). Der Intune Certificate Connector wird hingegen manuell aktualisiert.
+Der *PFX-Certificate Connector für Microsoft Intune* [unterstützt automatische Updates](#requirements). Der *Intune Certificate Connector* wird hingegen manuell aktualisiert.
+
+### <a name="may-6-2019"></a>6. Mai 2019
+- **PFX-Zertifikatconnector für Microsoft Intune – Version 6.1905.0.402**  
+  Änderungen in diesem Release:  
+  - Das Abrufintervall für den Connector wird von 5 Minuten auf 30 Sekunden verkürzt.
  
 ### <a name="april-2-2019"></a>2. April 2019
-- **NDES-Certificate Connector: Version 6.1904.1.0**  
+- **Intune-Zertifikatconnector – Version 6.1904.1.0**  
   Änderungen in diesem Release:  
   - Es wurde ein Problem behoben, bei dem die Möglichkeit bestand, dass sich der Connector nach der Anmeldung mit dem globalen Administratorkonto nicht bei Intune registrieren konnte.  
   - Umfasst Fehlerbehebungen in Bezug auf die Zuverlässigkeit bei Zertifikatsperrungen  
   - Umfasst Fehlerbehebungen in Bezug auf die Leistung, um die Verarbeitung von Anforderungen von PKCS-Zertifikaten zu beschleunigen  
 
-- **PFX-Certificate Connector: Version 6.1904.0.401**
+- **PFX-Zertifikatconnector für Microsoft Intune – Version 6.1904.0.401**
   > [!NOTE]  
   > Ein automatisches Update für diese Version des PFX-Connectors ist erst ab dem 11. April 2019 verfügbar.  
 

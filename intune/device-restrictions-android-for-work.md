@@ -1,6 +1,6 @@
 ---
 title: Android Enterprise-Geräteeinstellungen in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Auf Geräten mit Android Enterprise oder Android for Work können Sie auf dem Gerät Einstellungen einschränken, darunter Kopieren und Einfügen, Benachrichtigungen anzeigen, App-Berechtigungen, Datenfreigabe, Kennwortlänge, Anmeldefehler, Entsperren per Fingerabdruck, Wiederverwenden von Kennwörtern und Aktivieren der Freigabe von Geschäftskontakten per Bluetooth. Konfigurieren von Geräten als ein dediziertes Gerät Kiosk-app ein oder mehrere apps ausgeführt.
+description: Auf Geräten mit Android Enterprise oder Android for Work können Sie auf dem Gerät Einstellungen einschränken, darunter Kopieren und Einfügen, Benachrichtigungen anzeigen, App-Berechtigungen, Datenfreigabe, Kennwortlänge, Anmeldefehler, Entsperren per Fingerabdruck, Wiederverwenden von Kennwörtern und Aktivieren der Freigabe von Geschäftskontakten per Bluetooth. Konfigurieren Sie Geräte als dedizierten Gerätekiosk zur Ausführung einer oder mehrerer Apps.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,7 +17,7 @@ ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4840ccac35f37e956c363a1f6103da623ef27782
 ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/23/2019
 ms.locfileid: "61505776"
@@ -76,13 +76,13 @@ In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschri
 
 ### <a name="system-security-settings"></a>Einstellungen für die Systemsicherheit
 
-- **Bedrohungsüberprüfung für apps**: **erfordern** aktiviert (Standard), Google Play Protect apps zu überprüfen, bevor und nachdem sie installiert sind. Wenn eine Bedrohung erkannt wird, kann es den Benutzer die app vom Gerät entfernt warnen. **Nicht konfiguriert** nicht aktivieren, oder führen Sie die Google Play Protect, um apps zu überprüfen.
+- **Bedrohungsüberprüfung für Apps**: Die Standardeinstellung **Anfordern** aktiviert Google Play Protect so, dass Apps vor und nach der Installation überprüft werden. Wenn das Tool eine Bedrohung erkennt, kann es den Benutzer warnen, damit er die App vom Gerät entfernt. Bei Wahl von **Nicht konfiguriert** wird Google Play Protect nicht zum Überprüfen von Apps aktiviert oder ausgeführt.
 
-### <a name="dedicated-device-settings"></a>Dedizierte geräteeinstellungen
+### <a name="dedicated-device-settings"></a>Einstellungen dedizierter Geräte
 
-Verwenden Sie diese Einstellungen, um ein Kiosk-Umgebung auf Ihren dedizierten Geräten zu konfigurieren. Sie können ein Gerät so konfigurieren, dass eine App oder mehrerer Apps ausgeführt werden. Im Kioskmodus eines Geräts stehen nur die Apps zur Verfügung, die Sie hinzufügen. Diese Einstellungen gelten für Android, dedizierte Enterprise-Geräte. Sie gelten nicht für Android Enterprise vollständig verwaltete Geräte.
+Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dedizierten Geräten zu konfigurieren. Sie können ein Gerät so konfigurieren, dass eine App oder mehrerer Apps ausgeführt werden. Im Kioskmodus eines Geräts stehen nur die Apps zur Verfügung, die Sie hinzufügen. Diese Einstellungen gelten für dedizierte Android Enterprise-Geräte. Sie gelten nicht für vollständig verwaltete Android Enterprise-Geräte.
 
-**Kiosk-Modus**: Wählen Sie, wenn das Gerät eine app führt oder mehrere apps führt.
+**Kioskmodus**: Wählen Sie aus, ob auf dem Gerät eine App oder mehrere Apps ausgeführt werden.
 
 - **Einzelanwendungsmodus**: Benutzer können auf dem Gerät nur auf eine einzelne App zugreifen. Wenn das Gerät gestartet wird, wird nur die jeweilige App gestartet. Benutzer können keine neuen Apps öffnen oder die ausgeführte App ändern.
 
@@ -109,7 +109,7 @@ Verwenden Sie diese Einstellungen, um ein Kiosk-Umgebung auf Ihren dedizierten G
     Sie können auch andere [Android-Apps](apps-add-android-for-work.md) und [Web-Apps](web-app.md) hinzufügen, die von Ihrer Organisation für das Gerät erstellt wurden. Achten Sie darauf, [die App der Gerätegruppe zuzuweisen, die für Ihre dedizierten Geräte erstellt wurde](apps-deploy.md).
 
   - **Virtuelle Startschaltfläche**: Wählen Sie **Aktivieren** aus, um eine Startschaltfläche auf dem dedizierten Gerät anzuzeigen. Bei Auswahl dieser Option gelangt der Benutzer zurück zum Startbildschirm des Geräts, wo er problemlos zwischen Apps wechseln kann. Auf einigen Android-Geräten müssen Benutzer möglicherweise mit dem Finger über den Bildschirm wischen, damit die Startschaltfläche angezeigt wird. Mit **Deaktivieren** wird keine Startschaltfläche angezeigt, sodass Benutzer mit der Schaltfläche „Zurück“ zwischen Apps wechseln müssen.
-  - **Kioskmodus verlassen**: Wählen Sie **Aktivieren** aus, um Administratoren zu ermöglichen, den Kioskmodus vorübergehend zu beenden, um das Gerät zu aktualisieren. Der Administrator dieses Feature verwenden zu können: 
+  - **Kioskmodus verlassen**: Wählen Sie **Aktivieren** aus, um Administratoren zu ermöglichen, den Kioskmodus vorübergehend zu beenden, um das Gerät zu aktualisieren. Um dieses Feature verwenden zu können, führt der Administrator Folgendes aus: 
   
     1. Weiteres Betätigen der Schaltfläche „Zurück“, bis die Schaltfläche „Kiosk beenden“ angezeigt wird. 
     2. Auswählen der Schaltfläche und Eingabe der PIN für den **Code zum Verlassen des Kioskmodus**.
@@ -122,50 +122,50 @@ Verwenden Sie diese Einstellungen, um ein Kiosk-Umgebung auf Ihren dedizierten G
   - **Benutzerdefinierten URL-Hintergrund festlegen**: Geben Sie eine URL zum Anpassen des Hintergrundbildschirms auf dem dedizierten Gerät ein.
     
     > [!NOTE]
-    > In den meisten Fällen wird empfohlen, beginnend mit Images von mindestens die folgenden Größen:
+    > In den meisten Fällen empfehlen wir, mit Bildern mit mindestens den folgenden Größen zu beginnen:
     >
-    > - Telefon: 1080 x 1920 Pixel
+    > - Smartphone: 1080 x 1920 Pixel
     > - Tablet: 1920 × 1080 Pixel
     >    
-    > Für die bestmögliche Erfahrung und Details zu den schärfer wird empfohlen, dass pro geräteimage Assets mit den Spezifikationen für die Anzeige erstellt werden.
+    > Für ein optimales Erlebnis und scharfe Details wird empfohlen, Bildobjekte gerätebezogen gemäß den Displayspezifikationen zu erstellen.
     >
-    > Moderne werden höhere Dichte der Pixel haben und können entsprechende 2 KB / 4K Definition Bilder anzeigen.
-  - **WLAN-Konfiguration**: Wählen Sie **aktivieren** können Endbenutzer das Gerät auf anderen WLAN-Netzwerke zu verbinden. Durch Aktivieren dieses Features aktiviert auch Gerätestandort. **Nicht konfiguriert** (Standard) verhindert, dass Benutzer eine Verbindung mit WLAN-Netzwerke in der verwalteten Startbildschirm (Sperrmodus Aufgabe) herstellen.
+    > Moderne Displays haben höhere Pixeldichten und können entsprechende Bilder mit 2K-/4K-Auflösung anzeigen.
+  - **WLAN-Konfiguration**: Wählen Sie **Aktivieren**, damit Endbenutzer das Gerät mit verschiedenen WLAN-Netzwerken verbinden können. Durch Aktivieren dieses Features wird auch der Gerätestandort aktiviert. Die Standardeinstellung **Nicht konfiguriert** verhindert, dass Benutzer sich auf dem Managed Home Screen (Aufgabensperrmodus) mit WLAN-Netzwerken verbinden.
 
-    Weitere Informationen zur [Aufgabe Sperrmodus](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (öffnet die Android-Website).
+    Erfahren Sie mehr zum [Aufgabensperrmodus](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (öffnet die Android-Website).
 
-  - **Bluetooth-Konfiguration**: Wählen Sie **aktivieren** erlauben Bluetooth auf dem Gerät, und Endbenutzer Paar Geräte über Bluetooth zulassen. Durch Aktivieren dieses Features aktiviert auch Gerätestandort. **Nicht konfiguriert** (Standard) verhindert, dass Benutzer Bluetooth konfigurieren und Paarbildung, Geräte in der verwalteten Startbildschirm (Sperrmodus Aufgabe). 
+  - **Bluetooth-Konfiguration**: Wählen Sie **Aktivieren**, um Bluetooth auf dem Gerät zuzulassen und Endbenutzern das Koppeln von Geräten per Bluetooth zu ermöglichen. Durch Aktivieren dieses Features wird auch der Gerätestandort aktiviert. Die Standardeinstellung **Nicht konfiguriert** verhindert, dass Benutzer auf dem Managed Home Screen (Aufgabensperrmodus) Bluetooth konfigurieren und Geräte damit koppeln. 
 
-    Weitere Informationen zur [Aufgabe Sperrmodus](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (öffnet die Android-Website).
+    Erfahren Sie mehr zum [Aufgabensperrmodus](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (öffnet die Android-Website).
 
 ### <a name="device-password-settings"></a>Gerätekennworteinstellungen
 
-- **Keyguard:** Wenn Sie **Deaktivieren** festlegen, können Benutzer das Bildschirmsperrfeature Keyguard nicht auf dem Gerät verwenden. **Nicht konfiguriert** ermöglicht dem Benutzer, die Keyguard-Features zu verwenden.
-- **Sperre Bildschirmfeatures deaktiviert**: Wenn Keyguard auf dem Gerät aktiviert ist, wählen Sie die Funktionen zu deaktivieren. Ist beispielsweise **Kamera absichern** ausgewählt, ist die Kamerafunktion auf dem Gerät deaktiviert. Alle nicht ausgewählten Features sind auf dem Gerät aktiviert.
+- **Sperrbildschirm deaktivieren:** Wenn Sie **Deaktivieren** festlegen, können Benutzer das Bildschirmsperrfeature Keyguard nicht auf dem Gerät verwenden. **Nicht konfiguriert** ermöglicht dem Benutzer, die Keyguard-Features zu verwenden.
+- **Deaktivierte Sperrbildschirmfeatures**: Wenn Keyguard auf dem Gerät aktiviert ist, wählen Sie die Features aus, die Sie deaktivieren möchten. Ist beispielsweise **Kamera absichern** ausgewählt, ist die Kamerafunktion auf dem Gerät deaktiviert. Alle nicht ausgewählten Features sind auf dem Gerät aktiviert.
 
-  Diese Funktionen sind für Benutzer verfügbar, wenn das Gerät gesperrt ist. Benutzer nicht angezeigt und Zugriff auf Funktionen, die überprüft werden.
+  Diese Features sind für Benutzer verfügbar, wenn das Gerät gesperrt ist. Benutzer können mit einem Häkchen versehene Features weder anzeigen noch darauf zugreifen.
 
 - **Erforderlicher Kennworttyp:** Hiermit wird der Typ des erforderlichen Kennworts für das Gerät definiert. Folgende Optionen sind verfügbar:
   - **Gerätestandard**
   - **Kennwort erforderlich, keine Einschränkungen**
-  - **Schwache biometrische**: [starke Konsistenz oder schwache Biometrie](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (öffnet die Android-Website)
-  - **Numerische**: Kennwort muss nur Zahlen, wie z. B. `123456789`. **Minimale Kennwortlänge**: Geben Sie die Mindestlänge an, die ein Benutzer eingeben muss (zwischen 4 und 16 Zeichen).
-  - **Numerisch komplex**: Sich wiederholende oder fortlaufende Ziffern wie „1111“ oder „1234“ sind nicht zulässig. **Minimale Kennwortlänge**: Geben Sie die Mindestlänge an, die ein Benutzer eingeben muss (zwischen 4 und 16 Zeichen).
-  - **Alphabetische**: Buchstabe des Alphabets erforderlich sind. Zahlen und Symbole sind nicht erforderlich. **Minimale Kennwortlänge**: Geben Sie die Mindestlänge an, die ein Benutzer eingeben muss (zwischen 4 und 16 Zeichen).
-  - **Alphanumerische**: enthält Großbuchstaben, Kleinbuchstaben und Ziffern. **Minimale Kennwortlänge**: Geben Sie die Mindestlänge an, die ein Benutzer eingeben muss (zwischen 4 und 16 Zeichen).
-  - **Alphanumerisch mit Symbolen**: enthält Großbuchstaben, Kleinbuchstaben, Ziffern, Interpunktionszeichen und Symbole. Geben Sie außerdem Folgendes ein:
+  - **Schwach biometrisch**: [Vergleich von stark und schwach biometrisch](https://android-developers.googleblog.com/2018/06/better-biometrics-in-android-p.html) (öffnet Android-Website)
+  - **Numerisch**: Kennwort darf nur aus Zahlen bestehen. Beispiel: `123456789`. Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
+  - **Numerisch komplex**: Sich wiederholende oder fortlaufende Ziffern wie „1111“ oder „1234“ sind nicht zulässig. Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
+  - **Alphabetisch**: Buchstaben des Alphabets sind erforderlich. Zahlen und Symbole sind nicht erforderlich. Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
+  - **Alphanumerisch**: Schließt Großbuchstaben, Kleinbuchstaben und Ziffern ein. Geben Sie die **minimale Kennwortlänge** ein, die Benutzer für das Kennwort eingeben müssen (4 bis 16 Zeichen).
+  - **Alphanumerisch mit Symbolen**: Schließt Großbuchstaben, Kleinbuchstaben, Ziffern, Interpunktionszeichen und Symbole ein. Geben Sie außerdem Folgendes ein:
 
-    - **Minimale Kennwortlänge**: Geben Sie die minimale Länge, die das Kennwort muss zwischen 4 und 16 Zeichen enthalten.
-    - **Erforderliche Anzahl von Zeichen**: Geben Sie die Anzahl von Zeichen, die das Kennwort enthalten muss, zwischen 0 und 16 Zeichen.
-    - **Anzahl von Kleinbuchstaben erforderlich**: Geben Sie die Anzahl von Kleinbuchstaben, die das Kennwort enthalten muss, zwischen 0 und 16 Zeichen.
-    - **Anzahl der erforderlichen Großbuchstaben**: Geben Sie die Anzahl von Großbuchstaben, die das Kennwort enthalten muss, zwischen 0 und 16 Zeichen.
-    - **Anzahl von Zeichen als einem Buchstaben, die erforderlich sind**: Geben Sie die Anzahl von nicht--Buchstaben (Alles außer der Buchstabe des Alphabets) das Kennwort enthalten muss, zwischen 0 und 16 Zeichen.
-    - **Erforderliche Anzahl von numerischen Zeichen**: Geben Sie die Anzahl der Zeichen (`1`, `2`, `3`usw.) das Kennwort muss zwischen 0 und 16 Zeichen enthalten.
-    - **Anzahl von Symbolzeichen erforderlich**: Geben Sie die Anzahl von Symbolzeichen (`&`, `#`, `%`usw.) das Kennwort muss zwischen 0 und 16 Zeichen enthalten.
+    - **Minimale Kennwortlänge**: Geben Sie die Mindestlänge des Kennworts ein (4 bis 16 Zeichen).
+    - **Erforderliche Anzahl von Zeichen**: Geben Sie die erforderliche Anzahl von Zeichen des Kennworts ein (0 bis 16 Zeichen).
+    - **Erforderliche Anzahl von Kleinbuchstaben**: Geben Sie die erforderliche Anzahl von Kleinbuchstaben des Kennworts ein (0 bis 16 Zeichen).
+    - **Erforderliche Anzahl von Großbuchstaben**: Geben Sie die erforderliche Anzahl von Großbuchstaben des Kennworts ein (0 bis 16 Zeichen).
+    - **Erforderliche Anzahl anderer Zeichen als Buchstaben**: Geben Sie die erforderliche Anzahl anderer Zeichen als Buchstaben (alles außer Buchstaben im Alphabet) des Kennworts ein (0 bis 16 Zeichen).
+    - **Erforderliche Anzahl numerischer Zeichen**: Geben Sie die erforderliche Anzahl numerischer Zeichen (`1`, `2`, `3` usw.) des Kennworts ein (0 bis 16 Zeichen).
+    - **Erforderliche Anzahl von Symbolen**: Geben Sie die erforderliche Anzahl von Symbolen (`&`, `#`, `%` usw.) des Kennworts ein (0 bis 16 Zeichen).
 
-- **Anzahl der Tage bis zum Ablauf des Kennworts**: Geben Sie die Anzahl von Tagen zwischen 1 – 365, bis das Gerätekennwort geändert werden muss. Geben Sie beispielsweise zum Ändern des Kennworts nach 60 Tagen `60`. Wenn das Kennwort abläuft, werden Benutzer aufgefordert, ein neues Kennwort erstellen.
-- **Anzahl von Kennwörtern erforderlich, bevor der Benutzer kann beabsichtigen, ein Kennwort**: Geben Sie die Anzahl der zuletzt verwendeten Kennwörter ein, die nicht können, zwischen 1 und 24 wiederverwendet werden. Verwenden Sie diese Einstellung, um zu verhindern, dass der Benutzer zuvor verwendete Kennwörter erstellt.
-- **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird**: Geben Sie die Anzahl zulässiger Anmeldefehler (von 4 bis 11) ein, bevor das Gerät zurückgesetzt wird.
+- **Anzahl von Tagen bis zum Kennwortablauf**: Geben Sie die Anzahl der Tage (1-365) an, nach denen das Gerätekennwort geändert werden muss. Geben Sie beispielsweise zum Ändern des Kennworts nach 60 Tagen `60` ein. Wenn das Kennwort abläuft, werden Benutzer aufgefordert, ein neues Kennwort zu erstellen.
+- **Anzahl erforderlicher Kennwörter, bevor ein Benutzer ein Kennwort wiederverwenden kann**: Geben Sie die Anzahl der letzten Kennwörter ein, die nicht wiederverwendet werden können (1-24). Verwenden Sie diese Einstellung, um zu verhindern, dass der Benutzer zuvor verwendete Kennwörter erstellt.
+- **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird**: Geben Sie die Anzahl zulässiger Anmeldefehler (4 bis 11) ein, bevor das Gerät zurückgesetzt wird.
 
 ### <a name="power-settings"></a>Energieeinstellungen
 
@@ -180,8 +180,8 @@ Verwenden Sie diese Einstellungen, um ein Kiosk-Umgebung auf Ihren dedizierten G
 
 ### <a name="applications"></a>Applications
 
-- **Installation über unbekannte Quellen zulassen**: Wenn Sie **Zulassen** festlegen, können Benutzer Installationen über **Unbekannte Quellen** ausführen. Mit dieser Einstellung können apps aus unbekannten Quellen, einschließlich von anderen Quellen als dem Google Play Store installieren. **Nicht konfiguriert** verhindert, dass Benutzer **Unbekannte Quellen** nutzen.
-- **Zulassen des Zugriffs auf alle apps im Google Play Store**: bei Festlegung auf **zulassen**, Benutzer erhalten Zugriff auf alle apps im Google Play Store. Erhalten sie Zugriff auf die apps, die der Administrator, freigegebene in Blöcke nicht [Clientanwendungen](apps-add-android-for-work.md). **Nicht konfiguriert** erzwingt, dass Benutzern nur die der Administrator stellt die verfügbaren Google Play Store-apps oder apps, die erforderlich sind, den Zugriff auf [Clientanwendungen](apps-add-android-for-work.md).
+- **Installation über unbekannte Quellen zulassen**: Wenn Sie **Zulassen** festlegen, können Benutzer **Unbekannte Quellen** aktivieren. Diese Einstellung ermöglicht die Installation von Apps aus unbekannten Quellen, einschließlich anderer Quellen als Google Play Store. **Nicht konfiguriert** verhindert, dass Benutzer **Unbekannte Quellen** nutzen.
+- **Zugriff auf alle Apps im Google Play Store zulassen**: Bei Festlegung auf **Zulassen** erhalten Benutzer Zugriff auf alle Apps im Google Play Store. Sie erhalten keinen Zugriff auf die Apps, die der Administrator in [Client-Apps](apps-add-android-for-work.md) sperrt. **Nicht konfiguriert** zwingt Benutzer, nur auf die Apps zuzugreifen, die der Administrator im Google Play Store zur Verfügung stellt, oder auf die Apps, die in [Client-Apps](apps-add-android-for-work.md) erforderlich sind.
 - **Automatische App-Updates**: Wählen Sie diese Option aus, wenn automatische Updates installiert werden. Folgende Optionen sind verfügbar:
   - **Nicht konfiguriert**
   - **Benutzerauswahl**

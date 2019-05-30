@@ -7,7 +7,6 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 03/05/2019
 ms.topic: article
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96a0da69cdb77ae36ce2456186593f5c334c870c
-ms.sourcegitcommit: 4980c094faaca452f8ec8ddded04f47b3229ff38
+ms.openlocfilehash: 04c4cb95d9eacd8967ecacedfe1a5d335b729005
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65765413"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043729"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune
 
@@ -225,7 +224,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 3. Der NDES-Server empfängt sehr lange URLs (Abfragen), weshalb Sie zwei Registrierungseinträge hinzufügen müssen:
 
 
-   |                        Speicherort                        |      Value      | Type  |      Daten       |
+   |                        Standort                        |      Wert      | Typ  |      Daten       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (Dezimal) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (Dezimal) |
@@ -273,8 +272,8 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 
 2. Klicken Sie auf **Featureeinstellungen bearbeiten**, und legen Sie dann die folgenden Werte fest:
 
-    - **Abfragezeichenfolge (Bytes)** = **65534**
-    - **Maximale URL-Länge (Bytes)** = **65534**
+    - **Abfragezeichenfolge (Bytes)**  = **65534**
+    - **Maximale URL-Länge (Bytes)**  = **65534**
 
 3. Überprüfen Sie den folgenden Registrierungsschlüssel:
 
@@ -377,7 +376,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 
         **Benutzerzertifikattyp**  
 
-        Sie können die E-Mail-Adresse des Benutzers im Antragstellernamen einschließen. Es stehen folgende Optionen zur Auswahl:
+        Sie können die E-Mail-Adresse des Benutzers im Antragstellernamen einschließen. Es stehen die folgenden Optionen zur Auswahl:
 
         - **Nicht konfiguriert**
         - **Allgemeiner Name**
@@ -387,15 +386,15 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
         - **Seriennummer**
         - **Benutzerdefiniert**: Bei Auswahl dieser Option wird auch ein **benutzerdefiniertes** Textfeld angezeigt. In dieses Feld können Sie ein benutzerdefiniertes Format für den Antragstellernamen, einschließlich Variablen, eingeben. Das benutzerdefinierte Format unterstützt zwei Variablen: **Common Name (CN)** (Allgemeiner Name) und **Email (E)** (E-Mail-Adresse). **Allgemeiner Name (CN)** kann auf eine der folgenden Variablen festgelegt werden:
 
-            - **CN={{UserName}}**: Der Benutzerprinzipalname des Benutzers, z.B. „janedoe@contoso.com“
-            - **CN={{AAD_Device_ID}}**: Eine ID, die zugewiesen wird, wenn Sie ein Gerät in Azure Active Directory (AD) registrieren. Diese ID wird in der Regel für die Authentifizierung bei Azure Active Directory verwendet.
-            - **CN={{SERIALNUMBER}}**: Die eindeutige Seriennummer (SN), die in der Regel vom Hersteller zum Identifizieren eines Geräts verwendet wird.
-            - **CN={{IMEINumber}}**: Die eindeutige IMEI-Nummer (International Mobile Equipment Identity), die verwendet wird, um ein Mobiltelefon zu identifizieren.
-            - **CN={{OnPrem_Distinguished_Name}}**: Eine Sequenz von relativen definierten Namen, die durch Kommas getrennt sind, z.B. `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`.
+            - **CN={{UserName}}** : Der Benutzerprinzipalname des Benutzers, z.B. „janedoe@contoso.com“
+            - **CN={{AAD_Device_ID}}** : Eine ID, die zugewiesen wird, wenn Sie ein Gerät in Azure Active Directory (AD) registrieren. Diese ID wird in der Regel für die Authentifizierung bei Azure Active Directory verwendet.
+            - **CN={{SERIALNUMBER}}** : Die eindeutige Seriennummer (SN), die in der Regel vom Hersteller zum Identifizieren eines Geräts verwendet wird.
+            - **CN={{IMEINumber}}** : Die eindeutige IMEI-Nummer (International Mobile Equipment Identity), die verwendet wird, um ein Mobiltelefon zu identifizieren.
+            - **CN={{OnPrem_Distinguished_Name}}** : Eine Sequenz von relativen definierten Namen, die durch Kommas getrennt sind, z.B. `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`.
 
                 Damit Sie die `{{OnPrem_Distinguished_Name}}`-Variable verwenden können, stellen Sie sicher, dass das `onpremisesdistingishedname`-Benutzerattribut mithilfe von [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) mit Ihrem Azure AD synchronisiert wird.
 
-            - **CN={{onPremisesSamAccountName}}**: Administratoren können das samAccountName-Attribut aus Active Directory mithilfe von Azure AD Connect in einem Attribut mit dem Namen `onPremisesSamAccountName` mit Azure AD synchronisieren. Intune kann die Variable als Teil einer Zertifikatsausstellungsanforderung im Antragsteller eines SCEP-Zertifikats ersetzen.  Das Attribut samAccountName ist der zur Unterstützung von Clients und Servern aus einer früheren Version von Windows (vor Windows 2000) verwendete Benutzeranmeldename. Das Format des Benutzeranmeldenamens ist: `DomainName\testUser`, oder nur `testUser`.
+            - **CN={{onPremisesSamAccountName}}** : Administratoren können das samAccountName-Attribut aus Active Directory mithilfe von Azure AD Connect in einem Attribut mit dem Namen `onPremisesSamAccountName` mit Azure AD synchronisieren. Intune kann die Variable als Teil einer Zertifikatsausstellungsanforderung im Antragsteller eines SCEP-Zertifikats ersetzen.  Das Attribut samAccountName ist der zur Unterstützung von Clients und Servern aus einer früheren Version von Windows (vor Windows 2000) verwendete Benutzeranmeldename. Das Format des Benutzeranmeldenamens ist: `DomainName\testUser`, oder nur `testUser`.
 
                 Damit Sie die `{{onPremisesSamAccountName}}`-Variable verwenden können, stellen Sie sicher, dass das `onPremisesSamAccountName`-Benutzerattribut mithilfe von [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) mit Ihrem Azure AD synchronisiert wird.
 
@@ -426,7 +425,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
         Diese Variablen können mit statischem Text in einem benutzerdefinierten Werttextfeld hinzugefügt werden. Beispielsweise kann der allgemeine Name als `CN = {{DeviceName}}text` hinzugefügt werden.
 
         > [!IMPORTANT]
-        >  - In einem statischen Text des Antragstellers verursachen geschweifte Klammern **{}**, die keine Variable einschließen, einen Fehler. 
+        >  - In einem statischen Text des Antragstellers verursachen geschweifte Klammern **{}** , die keine Variable einschließen, einen Fehler. 
         >  - Wenn Sie eine Gerätezertifikatvariable verwenden, schließen Sie die Variable in geschweifte Klammern **{ }{ }** ein.
         >  - `{{FullyQualifiedDomainName}}` funktioniert nur für Windows und in die Domäne eingebundene Geräte. 
         >  -  Bei der Verwendung von Geräteeigenschaften wie IMEI, Seriennummer und vollständig qualifiziertem Domänennamen im Betreff oder SAN für ein Gerätezertifikat achten Sie unbedingt darauf, dass diese Eigenschaften von einer Person mit Zugriff auf das Gerät gespooft sein könnten.
@@ -448,7 +447,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 
         Ein Textfeld im Tabellenformat, das Sie anpassen können. Die folgenden Attribute sind verfügbar:
 
-        - Domain Name System
+        - DNS
 
         Mit dem Zertifikattyp **Gerät** können Sie die folgenden Gerätzertifikatvariablen für den Wert verwenden:  
 
@@ -469,7 +468,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
         Diese Variablen können mit statischem Text im benutzerdefinierten Werttextfeld hinzugefügt werden. Beispielsweise kann das DNS-Attribut als `DNS name = {{AzureADDeviceId}}.domain.com` hinzugefügt werden.
 
         > [!IMPORTANT]
-        >  - Im statischen Text des SAN funktionieren geschweifte Klammern **{ }**, Pipesymbole **|** und Semikolons **;** nicht. 
+        >  - Im statischen Text des SAN funktionieren geschweifte Klammern **{ }** , Pipesymbole **|** und Semikolons **;** nicht. 
         >  - Wenn Sie eine Gerätezertifikatvariable verwenden, schließen Sie die Variable in geschweifte Klammern **{ }{ }** ein.
         >  - `{{FullyQualifiedDomainName}}` funktioniert nur für Windows und in die Domäne eingebundene Geräte. 
         >  -  Bei der Verwendung von Geräteeigenschaften wie IMEI, Seriennummer und vollständig qualifiziertem Domänennamen im Betreff oder SAN für ein Gerätezertifikat achten Sie unbedingt darauf, dass diese Eigenschaften von einer Person mit Zugriff auf das Gerät gespooft sein könnten.
@@ -485,12 +484,12 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
    - **Schlüsselverwendung**: Geben Sie Schlüsselverwendungsoptionen für das Zertifikat an. Folgende Optionen sind verfügbar:
      - **Schlüsselverschlüsselung**: Der Schlüsselaustausch wird nur gestattet, wenn der Schlüssel verschlüsselt ist.
      - **Digitale Signatur**: Der Schlüsselaustausch wird nur gestattet, wenn der Schutz des Schlüssels durch eine digitale Signatur unterstützt wird.
-   - **Schlüsselgröße (Bits)**: Wählen Sie die Anzahl der Bits aus, die im Schlüssel enthalten sein sollen.
-   - **Hashalgorithmus** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Wählen Sie einen der verfügbaren Hashalgorithmustypen, der für dieses Zertifikat verwendet werden soll. Wählen Sie die höchste Sicherheitsebene aus, die von Geräten unterstützt wird, mit denen eine Verbindung hergestellt wird.
+   - **Schlüsselgröße (Bits)** : Wählen Sie die Anzahl der Bits aus, die im Schlüssel enthalten sein sollen.
+   - **Hashalgorithmus** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Wählen Sie einen der verfügbaren Hashalgorithmustypen, der für dieses Zertifikat verwendet werden soll. Wählen Sie die höchste Sicherheitsebene aus, die die verbundenen Geräten unterstützen.
    - **Stammzertifikat**: Wählen Sie ein Profil für das Zertifikat der Stammzertifizierungsstelle aus, das Sie zuvor konfiguriert und dem Benutzer und/oder dem Gerät zugewiesen haben. Dieses Zertifizierungsstellenzertifikat muss das Stammzertifikat für die Zertifizierungsstelle sein, die das Zertifikat ausstellt, das Sie in diesem Zertifikatprofil konfigurieren. Vergewissern Sie sich, dass Sie dieses Profil für das vertrauenswürdige Stammzertifikat der Gruppe zuweisen, die auch dem SCEP-Zertifikatprofil zugewiesen ist.
-   - **Erweiterte Schlüsselverwendung**: Hier können Sie Werte für den beabsichtigten Zweck des Zertifikats **hinzufügen**. In den meisten Fällen erfordert das Zertifikat **Clientauthentifizierung**, damit der Benutzer bzw. das Gerät auf einem Server authentifiziert werden kann. Allerdings können Sie andere Schlüsselverwendungen nach Bedarf hinzufügen.
+   - **Erweiterte Schlüsselverwendung**: Hier können Sie Werte für den beabsichtigten Zweck des Zertifikats **hinzufügen**. In den meisten Fällen erfordert das Zertifikat **Clientauthentifizierung**, damit der Benutzer bzw. das Gerät auf einem Server authentifiziert werden kann. Sie können jedoch nach Bedarf weitere Schlüsselverwendungen hinzufügen.
    - **Registrierungseinstellungen**
-     - **Verlängerungsschwellenwert (%)**: Geben Sie den Prozentsatz der Zertifikatgültigkeitsdauer an, die verbleibt, bevor das Gerät eine Verlängerung des Zertifikats anfordert.
+     - **Verlängerungsschwellenwert (%)** : Geben Sie den Prozentsatz der Zertifikatgültigkeitsdauer an, die verbleibt, bevor das Gerät eine Verlängerung des Zertifikats anfordert.
      - **SCEP-Server-URLs**: Geben Sie mindestens eine URL für die NDES-Server ein, die Zertifikate über SCEP ausstellen. Geben Sie zum Beispiel `https://ndes.contoso.com/certsrv/mscep/mscep.dll` ein.
      - Klicken Sie auf **OK**, und **erstellen** Sie Ihr Profil.
 

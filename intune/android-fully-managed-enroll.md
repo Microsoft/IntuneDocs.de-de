@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e3615f1f090af3ce589e83f11d12e95a2f07641
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 9edfa2ec7a408f512d4cb0b99a468db0b29f5868
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61503843"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044203"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices-preview"></a>Einrichten der Intune-Registrierung von vollständig verwalteten Android Enterprise-Geräten (Vorschauversion)
 

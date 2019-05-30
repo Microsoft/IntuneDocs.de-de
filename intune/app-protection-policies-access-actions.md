@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 05/20/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10d710c7cd1da4953a53acfee8103aa31699259f
-ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
+ms.openlocfilehash: 490c7312f510651cafc6ade516e5f7dca8131b3a
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65942071"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043966"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Selektives Löschen von Daten mithilfe von Zugriffsaktionen für App-Schutzrichtlinien in Intune
 

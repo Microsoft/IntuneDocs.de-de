@@ -29,7 +29,7 @@ In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschri
 Diese Einstellungen werden erst einem Gerätekonfigurationsprofil in Intune hinzugefügt und dann Ihren Windows 10-Geräten zugewiesen oder für diese bereitgestellt.
 
 > [!Note]
-> Nicht alle Optionen sind in allen Windows-Editionen verfügbar. Die unterstützten Editionen, finden Sie in der [Richtlinie CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (öffnet eine andere Microsoft-Website).
+> Nicht alle Optionen sind in allen Windows-Editionen verfügbar. Die unterstützten Editionen finden Sie in unter [Konfigurationsdienstanbieter für Richtlinien](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (öffnet eine andere Microsoft-Website).
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
@@ -138,15 +138,15 @@ Diese Einstellungen werden erst einem Gerätekonfigurationsprofil in Intune hinz
 - **Dialogfeld bei SIM-Kartenfehler (nur mobile Geräte)**: Blockiert die Anzeige einer Fehlermeldung auf dem Gerät, wenn keine SIM-Karte erkannt wird.
 - **Ink-Arbeitsbereich**: Blockiert den Benutzerzugriff auf den Ink-Arbeitsbereich. **Nicht konfiguriert** aktiviert den Ink-Arbeitsbereich, und der Benutzer kann ihn über den Sperrbildschirm verwenden.
 - **Automatische erneute Bereitstellung**: Ermöglicht Benutzern mit Administratorrechten, alle Benutzerdaten und -einstellungen über **STRG+Windows+R** vom Sperrbildschirm des Geräts aus zu löschen. Das Gerät wird automatisch neu konfiguriert und bei der Verwaltung neu registriert.
-- **Benutzer müssen während der Geräteeinrichtung eine Netzwerkverbindung herstellen (nur Windows-Insider)**: Wählen Sie **Anfordern** aus, damit das Gerät eine Verbindung mit einem Netzwerk herstellt, bevor das Windows 10-Setup auf der Netzwerkseite fortfahren kann.
+- **Benutzer müssen während der Geräteeinrichtung eine Netzwerkverbindung herstellen**: Wählen Sie **Anfordern** aus, damit das Gerät eine Verbindung mit einem Netzwerk herstellt, bevor das Setup von Windows 10 über die Seite „Netzwerk“ hinaus fortgesetzt werden kann.
 
-  Die Einstellung wird wirksam, das nächste Mal das Gerät zurückgesetzt oder zurückgesetzt wird. Wie alle anderen Intune-Konfiguration muss das Gerät registriert und von Intune zum Empfangen von Einstellungen verwaltet werden. Aber nachdem es registriert ist, und Empfangen von Richtlinien, die dann Zurücksetzen des Geräts erzwingt die Einstellung während der nächsten Windows-Einrichtung.
+  Die Einstellung wird beim nächsten Zurücksetzen des Geräts wirksam. Wie jede andere Intune-Konfiguration muss das Gerät von Intune registriert und verwaltet werden, um Konfigurationseinstellungen zu empfangen. Sobald es jedoch registriert ist und Richtlinien empfängt, erzwingt das Zurücksetzen des Geräts die Einstellung während des nächsten Setups von Windows.
 
 - **Direkter Speicherzugriff**: Bei Festlegung auf **Blockieren** wird der direkte Speicherzugriff (Direct Memory Access, DMA) für alle Hot-Plug-PCI-Downstreamanschlüsse verhindert, bis sich ein Benutzer bei Windows anmeldet. **Aktiviert** (Standardeinstellung) ermöglicht den Zugriff auf DMA selbst dann, wenn ein Benutzer nicht angemeldet ist.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
-- **Task-Manager-Prozesse beenden**: Diese Einstellung bestimmt, ob nicht-Administratoren die Task-Manager für End-Aufgaben verwenden können. Die Option **Blockieren** verhindert, dass Standardbenutzer (also keine Administratoren) den Task-Manager zum Beenden von Prozessen oder Tasks auf dem Gerät verwenden. Über die Option **Nicht konfiguriert** (Standard) erhalten Standardbenutzer die Erlaubnis, Prozesse oder Tasks mithilfe des Task-Managers zu beenden.
+- **Prozesse über den Task-Manager beenden**: Diese Einstellung bestimmt, ob der Task-Manager von anderen Benutzern als Administratoren zum Beenden von Tasks verwendet werden darf. Die Option **Blockieren** verhindert, dass Standardbenutzer (also keine Administratoren) den Task-Manager zum Beenden von Prozessen oder Tasks auf dem Gerät verwenden. Über die Option **Nicht konfiguriert** (Standard) erhalten Standardbenutzer die Erlaubnis, Prozesse oder Tasks mithilfe des Task-Managers zu beenden.
 
 ## <a name="locked-screen-experience"></a>Gesperrter Bildschirm
 
@@ -165,30 +165,30 @@ Diese Einstellungen werden erst einem Gerätekonfigurationsprofil in Intune hinz
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge-Browser
 
-### <a name="use-microsoft-edge-kiosk-mode"></a>Verwenden Sie Microsoft Edge-Kiosk-Modus
+### <a name="use-microsoft-edge-kiosk-mode"></a>Verwenden des Microsoft Edge-Kioskmodus
 
-Die verfügbaren Einstellungen hängen davon ab, was Sie auswählen. Folgende Optionen sind verfügbar:
+Die verfügbaren Einstellungen hängen davon ab, was Sie wählen. Folgende Optionen sind verfügbar:
 
-- **Keine** (Standard): Microsoft Edge nicht im Kiosk-Modus ausgeführt wird. Alle Microsoft Edge-Einstellungen sind verfügbar für die Sie ändern und zu konfigurieren.
-- **Digital/Interactive Beschilderung (Kiosk mit einzelner app)**: Filter Microsoft Edge-Einstellungen, die für den Digital/Interactive Beschilderung Microsoft Edge Kiosk-Modus für die Verwendung nur auf Windows 10-Single-app-Kiosks anwendbar sind. Wählen Sie diese Einstellung aus, um eine vollständige URL-Bildschirm zu öffnen, und nur zeigen Sie den Inhalt auf dieser Website an. [Einrichten von digitalen schildern](https://docs.microsoft.com/windows/configuration/setup-digital-signage) finden Sie weitere Informationen zu dieser Funktion.
-- **InPrivate-öffentliche Browsen (Kiosk mit einzelner app)**: Filter Microsoft Edge-Einstellungen, die für InPrivate-öffentliche Durchsuchen von Microsoft Edge Kiosk-Modus für die Verwendung in Windows 10-Single-app-Kiosks anwendbar sind. Führt eine mehreren Registerkarte-Version von Microsoft Edge.
-- **Normaler Modus (Multi-app-Kiosk)**: Filter Microsoft Edge-Einstellungen, die für den normalen Microsoft Edge-Kioskmodus anwendbar sind. Führt eine Vollversion von Microsoft Edge-Funktionen zum Durchsuchen.
-- **Öffentliche Durchsuchen (Multi-app-Kiosk)**: Filter Microsoft Edge-Einstellungen, die für das Durchsuchen von öffentlich auf einem Windows 10-Kiosks mit mehreren Apps anwendbar sind.  Eine Registerkarte "Multi"-Version von Microsoft Edge-InPrivate ausführt.
+- **Nein** (Standard): Microsoft Edge wird nicht im Kioskmodus ausgeführt. Sie können alle Microsoft Edge-Einstellungen ändern und konfigurieren.
+- **Digitale/interaktive Beschilderung (Kiosk mit einzelner App)**: Filtert Microsoft Edge-Einstellungen, die für „Digitale/interaktive Beschilderung“ in Frage kommen. Der Kioskmodus von Microsoft Edge ist nur für die Verwendung auf Windows 10-Kiosks mit einzelner App vorgesehen. Wählen Sie diese Einstellung, um eine URL im Vollbildmodus zu öffnen und nur den Inhalt dieser Website anzuzeigen. Unter [Einrichten digitaler Beschilderungen](https://docs.microsoft.com/windows/configuration/setup-digital-signage) finden weitere Informationen zu dieser Funktion.
+- **Öffentliches Browsen (InPrivate, Kiosk mit einzelner App) **: Filtert Microsoft Edge-Einstellungen, die für „Öffentliches Browsen (InPrivate)“ in Frage kommen. Der Kioskmodus von Microsoft Edge ist für die Verwendung auf Windows 10-Kiosks mit einzelner App vorgesehen. Führt eine Version von Microsoft Edge mit mehreren Registerkarten aus.
+- **Normalmodus (Kiosk mit mehreren Apps)**: Filtert Microsoft Edge-Einstellungen, die für den normalen Kioskmodus von Microsoft Edge gelten. Führt eine Vollversion von Microsoft Edge mit sämtlichen Funktionen für das Browsen aus.
+- **Öffentliches Browsen (Kiosk mit mehreren Apps)**: Filtert Microsoft Edge-Einstellungen, die für das öffentliche Browsen auf einem Windows 10-Kiosk mit mehreren Apps gelten.  Führt eine Version von Microsoft Edge-InPrivate mit mehreren Registerkarten aus.
 
 > [!TIP]
-> Weitere Informationen dazu, was wie folgt vor, diese Optionen, finden Sie unter [Microsoft Edge Kiosk-Modus-Konfigurationstypen](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+> Weitere Informationen zur Aufgabe dieser Optionen finden Sie unter [Konfigurationstypen für den Microsoft Edge-Kioskmodus](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
-Dieses Profil für geräteeinschränkungen steht in direkter Beziehung zu den kioskprofil erstellen Sie mit der [Einstellungen der Windows-Kioskmodus](kiosk-settings-windows.md). Zusammenfassung:
+Dieses Geräteeinschränkungsprofil steht in direktem Zusammenhang mit dem Kioskprofil, das Sie mithilfe der [Windows-Kioskeinstellungen](kiosk-settings-windows.md) erstellen. Zusammenfassung:
 
-1. Erstellen der [Einstellungen der Windows-Kioskmodus](kiosk-settings-windows.md) Profils, das auf dem Gerät im Kiosk-Modus ausgeführt. Wählen Sie Microsoft Edge, wie die Anwendung aus, und legen Sie den Microsoft Edge-Kiosk-Modus im Kiosk-Profil.
-2. Erstellen Sie das Profil für geräteeinschränkungen in diesem Artikel beschrieben, und konfigurieren Sie bestimmter Features und Einstellungen in Microsoft Edge zulässig. Achten Sie darauf, dass Sie den gleichen Microsoft Edge Kiosk-Modus-Typ in Ihrem kioskprofil ausgewählte auswählen ([Einstellungen der Windows-Kioskmodus](kiosk-settings-windows.md)). 
+1. Erstellen Sie das Profil [Windows-Kioskeinstellungen](kiosk-settings-windows.md), um das Gerät im Kioskmodus auszuführen. Wählen Sie Microsoft Edge als Anwendung aus, und legen Sie den Microsoft Edge-Kioskmodus im Profil „Kiosk“ fest.
+2. Erstellen Sie das in diesem Artikel beschriebene Profil für Geräteeinschränkungen, und konfigurieren Sie spezifische Funktionen und Einstellungen, die in Microsoft Edge zulässig sind. Stellen Sie sicher, dass Sie den gleichen Microsoft Edge-Kioskmodustyp wie in Ihrem Kioskprofil wählen ([Windows-Kioskeinstellungen](kiosk-settings-windows.md)). 
 
-    [Einstellungen für den Kioskmodus unterstützt](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) ist eine großartige Ressource.
+    Unter [Unterstützte Einstellungen für den Kioskmodus ](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) finden Sie hilfreiche Informationen.
 
 > [!IMPORTANT] 
-> Achten Sie darauf, dass Sie den gleichen Geräten als Ihr kioskprofil diesem Microsoft Edge-Profil zuweisen ([Einstellungen der Windows-Kioskmodus](kiosk-settings-windows.md)).
+> Achten Sie darauf, dass dieses Microsoft Edge-Profil den gleichen Geräten wie Ihr Kioskprofil zugewiesen wird ([Windows-Kioskeinstellungen](kiosk-settings-windows.md)).
 
-[ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
+[CSP: ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### <a name="start-experience"></a>Startoberfläche
 
@@ -208,9 +208,9 @@ Dieses Profil für geräteeinschränkungen steht in direkter Beziehung zu den ki
 - **Benutzer kann Startschaltfläche ändern**: **Zulassen** ermöglicht Benutzern das Ändern der Startschaltfläche. Die Änderungen des Benutzers setzen Administratoreinstellungen für die Startschaltfläche außer Kraft. **Nicht konfiguriert** verwendet das Standardverhalten des Betriebssystems auf dem Gerät, das Benutzern möglicherweise das Ändern der Administratorkonfiguration der Startschaltfläche nicht erlaubt.
 - **Willkommensseite anzeigen**: **Blockieren** verhindert, dass die Einführungsseite bei der ersten Ausführung von Microsoft Edge angezeigt wird. Diese Funktion ermöglicht Unternehmen, also z. B. die Organisationen, die in Nullemissionskonfigurationen registriert sind, diese Seite zu blockieren. **Nicht konfiguriert** zeigt die Einführungsseite an.
   - **URL für Willkommensseite**: Geben Sie die URL der Seite an, die angezeigt wird, wenn der Benutzer Microsoft Edge zum ersten Mal ausführt (nur Windows 10 Mobile).
-- **Aktualisieren der Browser nach einer Leerlaufzeit**: Geben Sie die Anzahl der Minuten im Leerlauf, bis der Browser, von 0 – 1440 aktualisiert wird Minuten. Der Standardwert ist `5` Minuten. Bei Festlegung auf `0` (null), die der Browser nicht nach einem Leerlauf aktualisiert.
+- **Browser nach Leerlaufzeit aktualisieren:**: Geben Sie die Anzahl der Leerlaufminuten bis zur Aktualisierung des Browsers ein (von 0-1440 Minuten). Der Standardwert ist `5` Minuten. Bei Festlegung auf `0` wird der Browser nach einem Leerlauf nicht aktualisiert.
 
-  Diese Einstellung ist nur verfügbar, wenn die Ausführung im [öffentliche InPrivate-Browsen (Single-app-Kiosk)](#use-microsoft-edge-kiosk-mode).
+  Diese Einstellung ist nur bei Ausführung im Modus [Öffentliches Browsen (InPrivate, Kiosk mit einzelner App)](#use-microsoft-edge-kiosk-mode) verfügbar.
 
   CSP: [ConfigureKioskResetAfterIdleTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskresetafteridletimeout)
 
@@ -245,9 +245,9 @@ Dieses Profil für geräteeinschränkungen steht in direkter Beziehung zu den ki
   - Yahoo
   - Benutzerdefinierter Wert
 - **Suchvorschläge**: **Nicht konfiguriert** ermöglicht der Such-Engine, Websites während der Eingabe von Suchausdrücken in der Adressleiste vorzuschlagen. **Blockieren** verhindert die Verwendung dieser Funktion.
-- **Änderungen an die Engine suchen zulassen**: **Ja** (Standard) ermöglicht das Hinzufügen von neuen Suchmaschinen oder ändern die Standardsuchmaschine in Microsoft Edge. Wählen Sie **keine** verhindert, dass Benutzer die Such-Engine anpassen.
+- **Änderungen an der Suchmaschine zulassen**: **Ja** (Standard) ermöglicht es Benutzern, neue Suchmaschinen hinzuzufügen oder die Standardsuchmaschine in Microsoft Edge zu ändern. Wählen Sie **Nein**, um zu verhindern, dass Benutzer die Suchmaschine anpassen.
 
-  Diese Einstellung ist nur verfügbar, wenn die Ausführung im [normalen Modus (Multi-app-Kiosk)](#use-microsoft-edge-kiosk-mode).
+  Diese Einstellung ist nur bei Ausführung im [Normalmodus (Kiosk mit mehreren Apps)](#use-microsoft-edge-kiosk-mode) verfügbar.
 
   CSP: [AllowSearchEngineCustomization](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsearchenginecustomization)
 
@@ -308,29 +308,29 @@ Dieses Profil für geräteeinschränkungen steht in direkter Beziehung zu den ki
   - **Wiederverwendung vorheriger Kennwörter verhindern**: Gibt an, wie viele zuvor verwendete Kennwörter vom Gerät gespeichert werden.
   - **Kennwort anfordern, wenn Gerät aus Leerlaufzustand zurückkehrt (nur Mobile)**: Gibt an, dass der Benutzer ein Kennwort zum Entsperren des Geräts eingeben muss (nur Windows 10 Mobile).
   - **Einfache Kennwörter**: Erlaubt die Verwendung einfacher Kennwörter wie 1111 oder 1234. Diese Einstellung ermöglicht es auch, die Verwendung von Windows-Bildcodes zu blockieren.
-- **Automatische Verschlüsselung bei AADJ**: **Block** automatische BitLocker-geräteverschlüsselung verhindert, wenn das Gerät für die erste Verwendung vorbereitet wird, wenn das Gerät Azure AD verknüpft ist. **Nicht konfiguriert** (Standard) verwendet, die Standardeinstellung Betriebssystem, die Verschlüsselung aktivieren kann. Weitere Informationen zur [BitLocker-geräteverschlüsselung](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+- **Automatische Verschlüsselung bei AADJ**: Die Wahl von **Blockieren** verhindert die automatische BitLocker-Geräteverschlüsselung bei der Vorbereitung des Geräts für die erste Verwendung, wenn das Gerät Azure AD beitritt. **Nicht konfiguriert** (Standard) verwendet die Standardeinstellung des Betriebssystems, die ggf. die Verschlüsselung aktiviert. Weitere Informationen zur [Geräteverschlüsselung mit BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
 
-  [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
+  [CSP: Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **Federal Information Processing Standard (FIPS) Richtlinie**: **zulassen** verwendet die Federal Information Processing Standard (FIPS)-Richtlinie, die eine US-Regierung ist standard für die Verschlüsselung, hashing und Signatur. **Nicht konfiguriert** (Standard) verwendet den Standardwert Betriebssystem FIPS nicht verwendet.
+- **FIPS-Richtlinie (Federal Information Processing Standard)**: Bei Wahl von **Zulassen** wird die FIPS-Richtlinie (Federal Information Processing Standard) verwendet, die in den USA ein bundesgesetzlicher Standard für Verschlüsselung, Hashing und Signatur ist. Bei Wahl von **Nicht konfiguriert** (Standard) gilt die Standardeinstellung des Betriebssystems, die FIPS nicht verwendet.
 
-  [Kryptografie/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+  [CSP: Cryptography/AllowFipsAlgorithmPolicy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
-- **Windows Hello-Geräteauthentifizierung**: **zulassen** Benutzer einer Windows Hello begleitgerät, wie z. B. eine Phone, Fitness-Band- oder IoT-Geräte, für die Anmeldung mit einem Windows 10-Computer verwenden. **Nicht konfiguriert** (Standard) verwendet die Betriebssystem-Standard, die Windows Hello-Begleitgeräten für die Authentifizierung mit Windows verhindern kann.
+- **Windows Hello-Geräteauthentifizierung**: Bei Wahl von **Zulassen** wird Benutzern ermöglicht, sich mit einem Windows Hello-Begleitgerät, wie beispielsweise einem Smartphone, Fitnessband oder IoT-Gerät, bei einem Windows 10-Computer anzumelden. Bei Wahl von **Nicht konfiguriert** (Standard) gilt die Standardeinstellung des Betriebssystems, die Windows Hello-Begleitgeräte an der Authentifizierung bei Windows hindern kann.
 
-  [Authentifizierung/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
+  [CSP: Authentication/AllowSecondaryAuthenticationDevice](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
 
-- **Webanmeldung**: können Windows-Anmeldung Unterstützung für nicht-AD FS (Active Directory Federation Services)-Verbund-Anbieter, z. B. Security Assertion Markup Language (SAML). SAML verwendet sichere Token, die angeben, dass Webbrowser eines single Sign-on (SSO) auftreten. Folgende Optionen sind verfügbar:
+- **Webanmeldung**: Ermöglicht die Unterstützung der Windows-Anmeldung für nicht zu AD FS (Active Directory-Verbunddienste) gehörige Verbundanbieter, wie beispielsweise SAML (Security Assertion Markup Language). SAML verwendet sichere Token, die Benutzern in Webbrowsern einmaliges Anmelden (SSO) ermöglichen. Folgende Optionen sind verfügbar:
 
-  - **Nicht konfiguriert** (Standard): das Betriebssystem auf dem Gerät verwendet.
-  - **Aktiviert**: die Web-Anmeldeinformationsanbieter für die Anmeldung aktiviert ist.
-  - **Deaktiviert**: die Web-Anmeldeinformationsanbieter für die Anmeldung deaktiviert ist.
+  - Bei Wahl von **Nicht konfiguriert** (Standard) wird die Standardeinstellung des Betriebssystems auf dem Gerätverwendet.
+  - **Aktiviert**: Der Anbieter für Webanmeldeinformationen ist für die Anmeldung aktiviert.
+  - **Deaktiviert**: Der Anbieter für Webanmeldeinformationen ist für die Anmeldung deaktiviert.
 
-  [Authentifizierung/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+  [CSP: Authentifizierung/EnableWebSignIn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
 
-- **Bevorzugte Azure AD-mandantendomäne**: Geben Sie einen vorhandenen Domänennamen in Ihrem Azure AD-Organisation. Wenn Benutzer in dieser Domäne anmelden, müssen sie den Domänennamen eingeben. Geben Sie beispielsweise `contoso.com` ein. Benutzer in der `contoso.com` Domäne kann melden Sie sich mit ihren Benutzernamen ein, z. B. "abby" anstelle von "abby@contoso.com".
+- **Bevorzugte Azure AD-Mandantendomäne**: Geben Sie einen in Ihrer Azure AD-Organisation vorhandenen Domänennamen ein. Wenn sich Benutzer bei dieser Domäne anmelden, müssen sie den Domänennamen nicht eingeben. Geben Sie beispielsweise `contoso.com` ein. Benutzer in der Domäne `contoso.com` können sich mit ihrem Benutzernamen, wie beispielsweise „abby“, statt mit „abby@contoso.com“ anmelden.
 
-  [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
+  [CSP: Authentication/PreferredAadTenantDomainName](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>App-bezogene Datenschutzausnahmen
 
@@ -356,7 +356,7 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 - **Telefon**: Legen Sie fest, ob diese App auf das Telefon zugreifen darf.
 - **Radios**: Einige Apps verwenden Radios (z.B. Bluetooth) auf Ihrem Gerät, um Daten zu senden und zu empfangen, und müssen diese Radios ein- oder ausschalten. Legen Sie fest, ob diese App diese Radios steuern kann.
 - **Aufgaben**: Legen Sie fest, ob diese App auf Ihre Aufgaben zugreifen darf.
-- **Vertrauenswürdige Geräte**: Wählen Sie, wenn diese app vertrauenswürdige Geräte verwenden können. Als vertrauenswürdige Geräte wird Hardware angesehen, mit der Sie bereits eine Verbindung hergestellt haben oder die in das Gerät integriert ist. Verwenden Sie z. B. Fernsehgeräte oder Projektoren als vertrauenswürdige Geräte.
+- **Vertrauenswürdige Geräte:** Legen Sie fest, ob diese App vertrauenswürdige Geräte verwenden kann. Als vertrauenswürdige Geräte wird Hardware angesehen, mit der Sie bereits eine Verbindung hergestellt haben oder die in das Gerät integriert ist. Verwenden Sie z. B. Fernsehgeräte oder Projektoren als vertrauenswürdige Geräte.
 - **Feedback und Diagnose**: Legen Sie fest, ob diese App auf Diagnoseinformationen zugreifen darf.
 - **Mit Geräten synchronisieren**: Legen Sie fest, ob diese App automatisch Informationen mit Drahtlosgeräten teilen und synchronisieren darf, die nicht explizit mit dem Gerät gekoppelt sind.
 
@@ -396,7 +396,7 @@ Sie können Informationen definieren, auf die alle Apps auf dem Gerät zugreifen
 - **Telefon**: Legen Sie fest, ob diese App auf das Telefon zugreifen darf.
 - **Radios**: Einige Apps verwenden Radios (z.B. Bluetooth) auf Ihrem Gerät, um Daten zu senden und zu empfangen, und müssen diese Radios ein- oder ausschalten. Legen Sie fest, ob diese App diese Radios steuern kann.
 - **Aufgaben**: Legen Sie fest, ob diese App auf Ihre Aufgaben zugreifen darf.
-- **Vertrauenswürdige Geräte**: Wählen Sie, wenn diese app vertrauenswürdige Geräte verwenden können. Als vertrauenswürdige Geräte wird Hardware angesehen, mit der Sie bereits eine Verbindung hergestellt haben oder die in das Gerät integriert ist. Verwenden Sie z. B. Fernsehgeräte oder Projektoren als vertrauenswürdige Geräte.
+- **Vertrauenswürdige Geräte:** Legen Sie fest, ob diese App vertrauenswürdige Geräte verwenden kann. Als vertrauenswürdige Geräte wird Hardware angesehen, mit der Sie bereits eine Verbindung hergestellt haben oder die in das Gerät integriert ist. Verwenden Sie z. B. Fernsehgeräte oder Projektoren als vertrauenswürdige Geräte.
 - **Feedback und Diagnose**: Legen Sie diese Einstellung fest, wenn diese App auf Diagnoseinformationen zugreifen soll.
 - **Mit Geräten synchronisieren**: Legen Sie fest, ob diese App automatisch Informationen mit Drahtlosgeräten teilen und synchronisieren darf, die nicht explizit mit Ihrem PC, Tablet oder Telefon gekoppelt sind.
 
@@ -494,7 +494,7 @@ Sie können Informationen definieren, auf die alle Apps auf dem Gerät zugreifen
 - **Endbenutzerzugriff auf Defender**: Steuert, ob die Benutzeroberfläche von Windows Defender für Endbenutzer ausgeblendet ist. Wenn diese Einstellung geändert wird, wird die Änderung wirksam, wenn der Endbenutzer-PC das nächste Mal neu gestartet wird.
 - **Intervall für Signaturaktualisierung (in Stunden):** Geben Sie das Intervall ein, in dem Defender auf neue Signaturdateien prüft.
 - **Datei- und Programmaktivität überwachen**: Ermöglicht Defender die Überwachung der Datei- und Programmaktivität auf Geräten.
-- **Tage bis zum Löschen von in Quarantäne befindlicher Schadsoftware**: Überwachung fortsetzen, erkannte Malware für die Anzahl der Tage, die Sie eingeben, damit Sie zuvor betroffene Geräte manuell überprüfen können. Wenn Sie die Anzahl von Tagen auf **0** festlegen, bleibt Schadsoftware im Quarantäneordner und wird nicht automatisch entfernt.
+- **Tage bis zum Löschen von in Quarantäne befindlicher Schadsoftware**: Ermöglicht die fortgesetzte Nachverfolgung behandelter Schadsoftware für die eingegebene Anzahl von Tagen, damit Sie zuvor betroffene Geräte manuell überprüfen können. Wenn Sie die Anzahl von Tagen auf **0** festlegen, bleibt Schadsoftware im Quarantäneordner und wird nicht automatisch entfernt.
 - **CPU-Nutzungslimit während einer Überprüfung:** Begrenzen Sie die CPU-Nutzung, die bei Überprüfungen genutzt werden darf (von **1** bis **100**).
 - **Archivdateien überprüfen**: Ermöglicht Defender die Überprüfung von Archivdateien wie ZIP- oder CAB-Dateien.
 - **Eingehende E-Mail überprüfen**: Ermöglicht Defender das Überprüfen von E-Mail-Nachrichten beim Eingang auf dem Gerät.
@@ -502,31 +502,31 @@ Sie können Informationen definieren, auf die alle Apps auf dem Gerät zugreifen
 - **Bei einer vollständigen Überprüfung zugeordnete Netzlaufwerke überprüfen**: Ermöglicht Defender das Überprüfen von Dateien auf zugeordneten Netzwerklaufwerken.
   Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefundene Schadsoftware nicht entfernen.
 - **Über Netzwerkordner geöffnete Dateien überprüfen**: Ermöglicht Defender das Überprüfen von Dateien auf freigegebenen Netzlaufwerken (z.B. Dateien, auf die über einen UNC-Pfad zugegriffen wird). Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefundene Schadsoftware nicht entfernen.
-- **Cloudschutz**: Erlaubt oder sperrt den Empfang von Informationen über Schadsoftwareaktivitäten der von Ihnen verwalteten Geräten durch den Microsoft Active Protection Service. Diese Informationen wird den Dienst in der Zukunft verbessert.
+- **Cloudschutz**: Erlaubt oder sperrt den Empfang von Informationen über Schadsoftwareaktivitäten der von Ihnen verwalteten Geräten durch den Microsoft Active Protection Service. Diese Informationen dienen zum Verbessern des Diensts für die Zukunft.
 - **Vor dem Senden von Beispielen bei Benutzern nachfragen**: Steuert, ob potenziell schädliche Dateien, die möglicherweise genauer analysiert werden müssen, automatisch an Microsoft gesendet werden.
-- **Uhrzeit für die Durchführung einer täglichen schnellüberprüfung**: Wählen Sie die Stunde tägliche eine schnellüberprüfung ausgeführt. **Nicht konfiguriert** tägliche Überprüfung nicht ausführen. Wenn Sie weitere anpassen möchten, konfigurieren die **Typ der durchzuführenden systemüberprüfung** festlegen.
+- **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung**: Wählen Sie die Uhrzeit der Ausführung einer täglichen Schnellüberprüfung. Bei Wahl von **Nicht konfiguriert** erfolgt keine tägliche Überprüfung. Wenn Sie eine weitere Anpassung wünschen, konfigurieren Sie die Einstellung **Art der durchzuführenden Systemüberprüfung**.
 
   [Defender/ScheduleQuickScanTime (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
-- **Typ der durchzuführenden systemüberprüfung**: Planen einer systemüberprüfung, einschließlich der Überprüfungsebene, und den Tag und die Uhrzeit zum Ausführen der Überprüfung. Folgende Optionen sind verfügbar:
-  - **Nicht konfiguriert**: nicht systemüberprüfung auf dem Gerät planen. Endbenutzer können Überprüfungen als erforderlich oder erwünscht manuell auf ihren Geräten ausführen.
-  - **Deaktivieren Sie**: jedes System Scannen auf dem Gerät deaktiviert. Wählen Sie diese Option aus, wenn Sie eine Partner Antivirus-Lösung verwenden, die Geräte überprüft.
-  - **Schnellüberprüfung**: Allgemein verwendete Speicherorte untersucht, es Malware kann registriert werden, z. B. Registrierungsschlüssel und bekannte Windows-Startordner.
-    - **Geplant am**: Wählen Sie den Tag, um die Überprüfung ausführen.
-    - **Geplante Zeit**: Wählen Sie die Stunde, um die Überprüfung ausführen.
-  - **Vollständige Überprüfung**: Allgemein verwendete Speicherorte überprüft, kann Malware registriert und auch durchsucht alle Dateien und Ordner auf dem Gerät.
-    - **Geplant am**: Wählen Sie den Tag, um die Überprüfung ausführen.
-    - **Geplante Zeit**: Wählen Sie die Stunde, um die Überprüfung ausführen.
+- **Art der durchzuführenden Systemüberprüfung**: Planen Sie eine Systemüberprüfung, einschließlich des Grads der Überprüfung, sowie Tag und Uhrzeit der Ausführung der Überprüfung. Folgende Optionen sind verfügbar:
+  - **Nicht konfiguriert**: Es erfolgt keine Planung einer Systemüberprüfung auf dem Gerät. Endbenutzer können Überprüfungen nach Bedarf oder Wunsch manuell auf ihren Geräten durchführen.
+  - **Deaktivieren**: Deaktiviert die Systemüberprüfung auf dem Gerät. Wählen Sie diese Option, wenn Sie eine Antivirenlösung eines Partners verwenden, die Geräte überprüft.
+  - **Schnellüberprüfung**: Dient zum Überprüfen gängiger Speicherorte, an denen Schadsoftware registriert sein kann (z.B. Registrierungsschlüssel und bekannte Windows-Startordner).
+    - **Geplanter Tag**: Wählen Sie den Tag der Ausführung der Überprüfung.
+    - **Geplante Zeit**: Wählen Sie die Uhrzeit der Ausführung der Überprüfung.
+  - **Vollständige Überprüfung**: Dient zum Überprüfen gängiger Speicherorte, an denen Schadsoftware registriert sein kann sowie aller Dateien und Ordner auf dem Gerät.
+    - **Geplanter Tag**: Wählen Sie den Tag der Ausführung der Überprüfung.
+    - **Geplante Zeit**: Wählen Sie die Uhrzeit der Ausführung der Überprüfung.
 
-  Diese Einstellung steht in Konflikt mit der **Uhrzeit für die Durchführung einer täglichen schnellüberprüfung** festlegen. Empfehlungen:
+  Diese Einstellung steht ggf. in Konflikt mit der Einstellung **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung**. Empfehlungen:
 
-  - Führen Sie eine tägliche schnellüberprüfung konfigurieren die **Uhrzeit für die Durchführung einer täglichen schnellüberprüfung** festlegen.
-  - Um eine tägliche schnellüberprüfung und eine vollständige Überprüfung jede Woche auszuführen, und konfigurieren Sie dann die **Uhrzeit für die Durchführung einer täglichen schnellüberprüfung**, und legen Sie **Typ der durchzuführenden systemüberprüfung** zu einer vollständigen Überprüfung mit dem Tag und Uhrzeit.
-  - Konfigurieren Sie keinen der **Uhrzeit für die Durchführung einer täglichen schnellüberprüfung** gleichzeitig festlegen, mit der **Typ der durchzuführenden systemüberprüfung** festgelegt **schnell-Scan**. Diese Einstellungen können in Konflikt stehen, und eine Überprüfung kann möglicherweise nicht ausgeführt.
-  - Konfigurieren Sie zum Ausführen einer schnellüberprüfung jeden Dienstag um 6 Uhr der **Typ der durchzuführenden systemüberprüfung** festlegen.
+  - Konfigurieren Sie zum Ausführen einer täglichen Schnellüberprüfung die Einstellung **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung**.
+  - Um eine tägliche Schnellüberprüfung und vollständige Überprüfung einmal pro Woche auszuführen, konfigurieren Sie die Einstellung **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung**, und legen Sie die Einstellung **Art der durchzuführenden Systemüberprüfung** auf eine vollständige Überprüfung mit Tag und Uhrzeit fest.
+  - Konfigurieren Sie **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung** nicht parallel mit auf **Schnellüberprüfung** festgelegter Einstellung **Art der durchzuführenden Systemüberprüfung**. Diese Einstellungen können in Konflikt stehen und eine Überprüfung möglicherweise verhindern.
+  - Um jeden Dienstag um 6 Uhr eine Schnellüberprüfung durchzuführen, konfigurieren Sie die Einstellung **Art der durchzuführenden Systemüberprüfung**.
 
-  [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
-  [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
-  [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+  [CSP: Defender/ScanParameter](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [CSP: Defender/ScheduleScanDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [CSP: Defender/ScheduleScanTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
 - **Möglicherweise unerwünschte Software erkennen**: Ermöglicht die Auswahl einer der folgenden Schutzebenen, wenn Windows potenziell unerwünschte Software erkennt:
   - **Blockieren**

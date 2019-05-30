@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/09/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cf06508cc21682a580c09e8207343b09e39eb
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 0a5064a9065dba75f3594f2e6bb6fb36b42be2e2
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506677"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044960"
 ---
 # <a name="control-access-accounts-and-power-features-on-shared-pc-or-multi-user-devices-using-intune"></a>Steuern von Zugriff, Konten und Energiefunktionen auf gemeinsam genutzten PCs oder von mehreren Benutzern verwendeten Geräten mit Intune
 
@@ -49,7 +48,7 @@ Wenn das Profil in Intune erstellt wird, stellen Sie das Profil für die Geräte
    - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
    - **Plattform**: Wählen Sie **Windows 10 und höher** aus.
-   - **Profiltyp**: Wählen Sie **Freigegebenes, von mehreren Benutzern verwendetes Gerät**  aus.
+   - **Profiltyp**: Wählen Sie **Freigegebenes, von mehreren Benutzern verwendetes Gerät ** aus.
 
 4. Konfigurieren Sie die Einstellungen für [Windows 10 und höher](shared-user-device-settings-windows.md) oder [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md).
 

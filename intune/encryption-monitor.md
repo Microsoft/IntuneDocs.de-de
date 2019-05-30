@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a18c579853b162024aaa93d5dad2bfd854d8c0d2
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
+ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61512930"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65527216"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Überwachen von BitLocker und Geräteverschlüsselung  
 Intune stellt einen zentralen Ort zur Verfügung, an dem der Verschlüsselungsstatus Ihrer Windows 10-Geräte bestimmt werden kann, und unterstützt Sie dabei, über Ihre Geräte auf wichtige Informationen für BitLocker zuzugreifen, z. B. Informationen in Active Directory (Azure AD).  
@@ -60,7 +60,7 @@ Wenn Sie ein Gerät auswählen, zeigt Intune den Bereich **Geräteverschlüsselu
 
 In diesem Bereich finden Sie die folgenden Details:  
 - **Gerätename:** Der Name des Geräts, das Sie sich ansehen  
-- **Verschlüsselungsbereitschaft:** Eine Auswertung der Bereitschaft der Geräte, die BitLocker-Verschlüsselung zu unterstützen Es wäre nicht möglich, dass ein Gerät den Verschlüsselungsstatus *Verschlüsselt* aufweist, obwohl seine Verschlüsselungsbereitschaft *Nicht bereit* ist, da ein TPM fehlt. Weitere Informationen zur Verschlüsselungsbereitschaft finden Sie im vorherigen Abschnitt.
+- **Verschlüsselungsbereitschaft:** Eine Auswertung der Bereitschaft der Geräte, die BitLocker-Verschlüsselung zu unterstützen Es wäre nicht möglich, dass ein Gerät den Verschlüsselungsstatus *Verschlüsselt* aufweist, obwohl seine Verschlüsselungsbereitschaft *Nicht bereit* ist, da ein TPM fehlt. (Weitere Informationen zur Verschlüsselungsbereitschaft finden Sie im vorherigen Abschnitt.)
 - **Verschlüsselungsstatus:** Gibt an, ob das Betriebssystemlaufwerk verschlüsselt ist  
 - **Profile:** Eine Liste von *Gerätekonfigurationsprofilen*, die auf das Gerät zutreffen, und die folgenden Profiltypen und -einstellungen beinhalten:  
   - Profiltyp = *Endpoint Protection*  

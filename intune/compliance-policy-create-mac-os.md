@@ -1,11 +1,11 @@
 ---
-title: Erstellen einer Konformitätsrichtlinie für macOS-Geräte in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Erstellen oder konfigurieren Sie eine Microsoft Intune-Gerätekonformitätsrichtlinie für MacOS-Geräte, um Systemintegritätsschutz zu verwenden, legen Sie die minimale und maximale Betriebssystemversion fest, wählen Sie Ihre Kennwortanforderungen, und verschlüsseln Sie die Datenspeicherung.
+title: Konformitätseinstellungen für macOS-Geräte in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Dieser Artikel enthält eine Liste aller Einstellungen, die Sie verwenden können, um Konformität für Ihre macOS-Geräte in Microsoft Intune festzulegen. Sie können den Systemintegritätsschutz von Apple in Anspruch nehmen, Kennwortbeschränkungen festlegen, eine Firewall anfordern, Gatekeeper zulassen und vieles mehr.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,47 +16,32 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21eca671d40f1ee2f2f9176a272cab5754140a26
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: b3224e7400ad56f971488aba53bb073a0d33bb9d
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566606"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423644"
 ---
-# <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Hinzufügen einer Gerätekonformitätsrichtlinie für macOS-Geräte in Intune
+# <a name="macos-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>macOS-Einstellungen, um Geräte mit Intune als konform oder nicht konform zu kennzeichnen
 
-Eine Intune-Konformitätsrichtlinie für macOS-Geräte gibt die Regeln und Einstellungen an, die macOS-Geräte erfüllen müssen, um konform zu sein. Wenn Sie Richtlinien für den bedingten Zugriff verwenden, können Sie den Zugriff auf Unternehmensressourcen zulassen oder blockieren. Außerdem können Sie Geräteberichte abrufen und bei Nichtkonformität Aktionen durchführen. Gerätekonformitätsrichtlinien können für sämtliche Plattformen im Intune Azure-Portal erstellt werden. Weitere Informationen über Konformitätsrichtlinien und alle Voraussetzungen finden Sie unter [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md).
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verwaltet werden, wenn eine Konformitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird:
+In diesem Artikel werden die verschiedenen Konformitätseinstellungen aufgeführt und beschrieben, die Sie in Intune für macOS-Geräte festlegen können. Im Rahmen Ihrer MDM-Lösung (Mobile Device Management, Verwaltung mobiler Geräte) können Sie mit diesen Einstellungen eine minimale oder maximale Betriebssystemversion festlegen, ein Ablaufdatum für Kennwörter festlegen und vieles mehr.
 
----------------------------
+Diese Funktion gilt für:
 
-| Richtlinieneinstellung | macOS 10.11 und höher |
-| --- | --- |
-| **PIN- oder Kennwortkonfiguration** | Wiederhergestellt |   
-| **Geräteverschlüsselung** | Wiederhergestellt (durch Festlegen der PIN) |
-| **E-Mail-Profil** | Isoliert |
-|**Minimale Version des Betriebssystems** | Isoliert |
-| **Maximale Version des Betriebssystems** | Isoliert |
+- macOS
 
----------------------------
+Als Intune-Administrator verwenden Sie diese Konformitätseinstellungen, um die Ressourcen Ihrer Organisation zu schützen. Weitere Informationen zu Konformitätsrichtlinien und ihren Aufgaben finden Sie unter [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md).
 
-**Wiederhergestellt** = Das Betriebssystem des Geräts erzwingt die Kompatibilität. Beispiel: Der Benutzer ist gezwungen, eine PIN festzulegen.
+## <a name="before-you-begin"></a>Vorbereitung
 
-**Isoliert** = Das Betriebssystem des Geräts erzwingt keine Kompatibilität. (Beispiel: Android-Geräte zwingen den Benutzer nicht, das Gerät zu verschlüsseln.) Wenn das Gerät nicht kompatibel ist, erfolgen die folgenden Aktionen:
-
-- Das Gerät wird blockiert, wenn eine Richtlinie für bedingten Zugriff für den Benutzer gilt.
-- Das Unternehmensportal benachrichtigt den Benutzer über Kompatibilitätsprobleme.
-
-## <a name="create-a-device-compliance-policy"></a>Erstellen einer Gerätekonformitätsrichtlinie
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. Wählen Sie als **Plattform** die Option **macOS** aus. 
-5. Wählen Sie **Einstellungen konfigurieren**, um die in diesem Artikel beschriebenen Einstellungen zu **Geräteintegrität**, **Geräteeigenschaften** und **Systemsicherheit** anzugeben. Wenn Sie fertig sind, wählen Sie **OK** und dann **Erstellen**.
+[Erstellen einer Konformitätsrichtlinie](create-compliance-policy.md#create-the-policy) Wählen Sie als **Plattform** die Option **macOS** aus.
 
 ## <a name="device-health"></a>Geräteintegrität
 
-- **Ein Systemintegritätsschutz ist erforderlich**: Legen Sie dies auf **Erforderlich** fest, um zu überprüfen, ob Ihre macOS-Geräte den [Systemintegritätsschutz](https://support.apple.com/HT204899) aktiviert haben.
+- **Systemintegritätsschutz erforderlich**: Legen Sie dies auf **Anfordern** fest, um zu überprüfen, ob Ihre macOS-Geräte den [Systemintegritätsschutz](https://support.apple.com/HT204899) (öffnet die Website von Apple) aktiviert haben. In der Standardeinstellung **Nicht konfiguriert** wird diese Einstellung nicht für die Konformitätsprüfung ausgewertet.
 
 ## <a name="device-properties"></a>Geräteeigenschaften
 
@@ -73,13 +58,13 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 - **Einfache Kennwörter:** Legen Sie **Blockieren** fest, damit Benutzer kein einfaches Kennwort wie **1234** oder **1111** erstellen können. Wenn Sie diese Option auf **Nicht konfiguriert** setzen, können Benutzer Kennwörter wie **1234** oder **1111** erstellen.
 - **Minimale Kennwortlänge**: Geben Sie die Mindestanzahl an Ziffern oder Zeichen an, die das Kennwort enthalten muss.
 - **Kennworttyp**: Wählen Sie diese Option, wenn ein Kennwort nur aus **numerischen** Zeichen bestehen soll, oder wenn eine Kombination aus Zahlen und anderen Zeichen verwendet werden soll (**alphanumerisch**).
-- **Anzahl nicht alphanumerischer Zeichen im Kennwort**: Geben Sie die Mindestanzahl von Sonderzeichen (&, #, %, !, usw.) an, die im Kennwort enthalten sein müssen.
+- **Anzahl nicht alphanumerischer Zeichen im Kennwort**: Geben Sie die Mindestanzahl von Sonderzeichen (`&`, `#`, `%`, `!` usw.) an, die im Kennwort enthalten sein müssen.
 
     Wenn Sie eine höhere Anzahl festlegen, muss der Benutzer ein komplexeres Kennwort erstellen.
 
 - **Maximale Anzahl von Minuten der Inaktivität vor erneuter Anforderung des Kennworts**: Geben Sie die Leerlaufzeit an, nach der ein Benutzer sein Kennwort erneut eingeben muss.
 - **Kennwortablauf (Tage):** Wählen Sie die Anzahl von Tagen aus, bevor das Kennwort abläuft und ein neues erstellt werden muss.
-- **Anzahl der vorherigen Kennwörter zur Verhinderung von Wiederverwendung**: Geben Sie die Anzahl von vorherigen Kennwörtern an, die nicht erneut verwendet werden dürfen.
+- **Anzahl der vorherigen Kennwörter zur Verhinderung von Wiederverwendung**: Geben Sie die Anzahl der bereits verwendeten Kennwörtern an, die nicht erneut verwendet werden dürfen.
 
     > [!IMPORTANT]
     > Wenn die Kennwortanforderung auf einem macOS-Gerät geändert wird, werden die Änderungen erst wirksam, wenn der Benutzer sein Kennwort ändert. Wenn Sie beispielsweise die Längeneinschränkung des Kennworts auf acht Ziffern festlegen, und das macOS-Gerät derzeit ein Kennwort mit sechs Ziffern besitzt, bleibt das Gerät kompatibel, bis der Benutzer das nächste Mal das Kennwort auf dem Gerät ändert.
@@ -89,13 +74,16 @@ In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verw
 - **Verschlüsselung des Datenspeichers auf einem Gerät**: Wählen Sie **Erforderlich**, um den Datenspeicher auf Ihren Geräten zu verschlüsseln.
 
 ### <a name="device-security"></a>Gerätesicherheit
+
 Die Firewall schützt Geräte vor nicht autorisierten Netzwerkzugriffen. Mit dieser können Sie Verbindungen für einzelne Anwendungen konfigurieren. 
 
-- **Firewall**: **Aktivieren** Sie diese, um Geräte vor nicht autorisierten Zugriffen zu schützen. Wenn Sie dieses Feature aktivieren, können Sie eingehende Internetverbindungen verarbeiten und den geschützten Modus verwenden. Durch die Standardeinstellung **Nicht konfiguriert** bleibt die Firewall deaktiviert, und Netzwerkdatenverkehr wird zugelassen (also nicht blockiert).
-- **Eingehende Verbindungen**: Mit der Einstellung **Blockieren** werden eingehende Verbindungen für grundlegende Internetdienste wie DHCP, Bonjour und IPSec zugelassen. Alle anderen eingehenden Verbindungen werden gesperrt. Durch diese Einstellung werden auch alle Freigabedienste einschließlich der Bildschirmfreigabe, des Remotezugriffs und der Freigabe von Musik über iTunes gesperrt. Durch die Standardeinstellung **Nicht konfiguriert** werden eingehende Verbindungen und Freigabedienste zugelassen. 
-- **Geschützter Modus**: **Aktivieren** Sie diesen, damit das Gerät nicht auf Suchanforderungen von böswilligen Benutzern reagiert. Wenn diese Einstellung aktiviert ist, antwortet das Gerät weiterhin auf eingehende Anforderungen für autorisierte Apps. Wenn die Standardeinstellung **Nicht konfiguriert** aktiviert ist, bleibt der geschützte Modus deaktiviert.
+- **Firewall**: Legen Sie diese Einstellung auf **Aktivieren** fest, um Geräte vor nicht autorisierten Zugriffen zu schützen. Wenn Sie dieses Feature aktivieren, können Sie eingehende Internetverbindungen verarbeiten und den geschützten Modus verwenden. Durch die Standardeinstellung **Nicht konfiguriert** bleibt die Firewall deaktiviert, und Netzwerkdatenverkehr wird zugelassen (also nicht blockiert).
+- **Eingehende Verbindungen:** **Blockieren** Sie alle eingehenden Netzwerkverbindungen außer denjenigen, die für grundlegende Internetdienste erforderlich sind, z.B. DHCP, Bonjour und IPSec. Durch diese Einstellung werden auch alle Freigabedienste einschließlich der Bildschirmfreigabe, des Remotezugriffs und der Freigabe von Musik über iTunes gesperrt. Durch die Standardeinstellung **Nicht konfiguriert** werden eingehende Verbindungen und Freigabedienste zugelassen.
+- **Geschützter Modus**: **Aktivieren** Sie diese Einstellung, damit das Gerät nicht auf Suchanforderungen von böswilligen Benutzern reagiert. Wenn diese Einstellung aktiviert ist, antwortet das Gerät weiterhin auf eingehende Anforderungen für autorisierte Apps. Wenn die Standardeinstellung **Nicht konfiguriert** aktiviert ist, bleibt der geschützte Modus deaktiviert.
 
 ### <a name="gatekeeper"></a>Gatekeeper
+
+Weitere Informationen finden Sie unter [Gatekeeper unter MacOS](https://support.apple.com/HT202491) (öffnet die Website von Apple).
 
 **Apps aus den folgenden Downloadquellen zulassen:** ermöglicht die Installation unterstützter Anwendungen, die von anderen Downloadquellen stammen, auf Ihren Geräten. Die folgenden Optionen sind verfügbar:
 
@@ -104,19 +92,10 @@ Die Firewall schützt Geräte vor nicht autorisierten Netzwerkzugriffen. Mit die
 - **Mac App Store und festgelegte Entwickler:** installiert Apps aus dem Mac App Store und von festgelegten Entwicklern. macOS überprüft die Identität von Entwicklern und nimmt einige andere Überprüfungen vor, um die Integrität der App zu bestimmen. Wenn ein Benutzer auswählt, dass Gatekeeper Apps installiert, die nicht diesen Optionen entsprechen, erfüllt das Gerät nicht die Konformitätsvorgaben.
 - **Anywhere** (Beliebig): Apps aus jeder beliebigen Quelle und von jedem beliebigen Entwickler können installiert werden. Dies ist die am wenigsten sichere Option.
 
-Weitere Informationen finden Sie in der Apple-Dokumentation unter [Gatekeeper on macOS (Gatekeeper unter macOS)](https://support.apple.com/HT202491).
-
-## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen
-
-1. Wählen Sie eine Richtlinie, die Sie konfiguriert haben. Vorhandene Richtlinien befinden sich unter **Gerätekompatibilität** > **Richtlinien**.
-2. Wählen Sie die Richtlinie und dann **Zuweisungen** aus. Sie können Azure Active Directory (AD)-Sicherheitsgruppen ein- oder ausschließen.
-3. Wählen Sie **Ausgewählte Gruppen**, um Ihre Azure AD-Sicherheitsgruppen anzuzeigen. Wählen Sie die Benutzergruppen aus, auf die diese Richtlinie angewendet werden soll, und dann wählen Sie **Speichern**, um die Richtlinie für die Benutzer bereitzustellen.
-
-> [!TIP]
-> Standardmäßig wird die Konformität von den Geräten alle acht Stunden geprüft. Benutzer können diesen Prozess jedoch auch über die Intune-Unternehmensportal-App erzwingen.
-
-Sie haben die Richtlinie auf Benutzer angewendet. Die von den Benutzern verwendeten Geräte, denen die Richtlinie zugewiesen wurde, werden auf Konformität überprüft.
+Wählen Sie **OK** > **Erstellen** aus, um die Änderungen zu speichern.
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Automatisieren von E-Mails und Hinzufügen von Aktionen für nicht konforme Geräte](actions-for-noncompliance.md)  
-[Überwachen von Intune-Richtlinien zur Gerätekompatibilität](compliance-policy-monitor.md)
+
+- [Hinzufügen von Aktionen für nicht kompatible Geräte](actions-for-noncompliance.md) und [Verwenden von Bereichsmarkierungen zum Filtern von Richtlinien](scope-tags.md).
+- [Überwachen Ihrer Konformitätsrichtlinien](compliance-policy-monitor.md).
+- Siehe die [Einstellungen für Kompatibilitätsrichtlinien für iOS](compliance-policy-create-ios.md)-Geräte.

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/22/2019
+ms.date: 04/25/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dff7e28daff503570350950b60ae974cd048c5c
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 401bc833b2b864983ec301972950ffbd04fe2229
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426229"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135189"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 
@@ -46,6 +46,25 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Auße
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-may-6-2019"></a>Woche vom 6. Mai 2019 
+
+### <a name="device-configuration"></a>Gerätekonfiguration
+
+#### <a name="network-access-control-nac-support-for-f5-access-for-ios-devices----4500808---"></a>NAC-Unterstützung (Network Access Control, Netzwerkzugriffssteuerung) für F5 Access für iOS-Geräte <!-- 4500808 -->
+
+F5 hat ein Update zu BIG-IP 13 veröffentlicht, dass NAC-Funktionalität für F5 Access unter iOS in Intune ermöglicht. Zur Nutzung dieses Features ist Folgendes erforderlich:
+
+- Aktualisieren Sie BIG-IP auf 13.1.1.5. BIG-IP 14 wird nicht unterstützt.
+- Integrieren Sie BIG-IP für NAC in Intune. Lesen Sie dazu die Schritte in [Übersicht: Konfigurieren von APM für Gerätestatusüberprüfungen mit Endpunktverwaltungssystemen](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89).
+- Überprüfen Sie die Einstellung **Netzwerkzugriffssteuerung (NAC) aktivieren** im VPN-Profil in Intune.
+
+Die verfügbaren Einstellungen finden Sie unter [Configure VPN settings on iOS devices (Konfigurieren von VPN-Einstellungen auf iOS-Geräten)](vpn-settings-ios.md).
+
+Gilt für: iOS
+
+#### <a name="updated-pfx-certificate-connector-for-microsoft-intune----doc-vso-1521237----"></a>PFX-Zertifikatconnector für Microsoft Intune aktualisiert <!-- doc-vso 1521237  -->  
+Wir haben ein Update für den [PFX-Zertifikatconnector für Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) veröffentlicht, wodurch das Abrufintervall von 5 Minuten auf 30 Sekunden verkürzt wird.
 
 ## <a name="week-of-april-22-2019"></a>Woche vom 22. April 2019
 
@@ -75,7 +94,7 @@ Im folgenden Beispiel werden die DSGVO-Kontrollen aufgeschlüsselt. 49 Kontroll
 Intune-App-Schutzrichtlinien für Android-Geräte nutzen nun eine OpenSSL-Verschlüsselungsbibliothek, die FIPS 140-2-konform ist. Weitere Informationen finden Sie im Abschnitt [Verschlüsselung](app-protection-policy-settings-android.md#encryption) unter [Einstellungen für App-Schutzrichtlinien in Microsoft Intune](app-protection-policy-settings-android.md).
 
 #### <a name="enable-win32-app-dependencies----2617348----"></a>Aktivieren von Win32-App-Abhängigkeiten <!-- 2617348  -->
-Als Administrator können Sie voraussetzen, dass Apps als Abhängigkeiten installiert werden, bevor Ihre Win32-App installiert wird. Das heißt, das Gerät muss die abhängige(n) App(s) installieren, bevor die Win32-App installiert wird. Klicken Sie in Intune auf **Client-Apps** > **Apps** > **Hinzufügen**, um das Blatt **App hinzufügen** anzuzeigen. Wählen Sie **Windows-App (Win32)** als **App-Typ** aus. Nachdem Sie die App hinzugefügt haben, können Sie auf **Abhängigkeiten** klicken, um die abhängigen Apps hinzuzufügen, die installiert werden müssen, bevor die Win32-App installiert werden kann. Weitere Informationen finden Sie unter [Eigenständiges Intune – Win32-App-Verwaltung](apps-win32-app-management.md). Diese Funktionalität steht nur zur Verfügung, wenn der Intune-Verwaltungs-Agent auf Version 1904 (höher als 1.18.120.0) aktualisiert wurde, was ein oder zwei weitere Wochen nach dem Upgrade des Diensts auf Version 1904 dauern kann.
+Als Administrator können Sie voraussetzen, dass Apps als Abhängigkeiten installiert werden, bevor Ihre Win32-App installiert wird. Das heißt, das Gerät muss die abhängige(n) App(s) installieren, bevor die Win32-App installiert wird. Klicken Sie in Intune auf **Client-Apps** > **Apps** > **Hinzufügen**, um das Blatt **App hinzufügen** anzuzeigen. Wählen Sie **Windows-App (Win32)** als **App-Typ** aus. Nachdem Sie die App hinzugefügt haben, können Sie auf **Abhängigkeiten** klicken, um die abhängigen Apps hinzuzufügen, die installiert werden müssen, bevor die Win32-App installiert werden kann. Weitere Informationen finden Sie unter [Eigenständiges Intune – Win32-App-Verwaltung](apps-win32-app-management.md). 
 
 #### <a name="app-version-installation-information-for-microsoft-store-for-business-apps----3537391-----"></a>Installationsinformationen zur App-Version für Apps im Microsoft Store für Unternehmen <!-- 3537391   -->
 Berichte zur App-Installation enthalten Informationen zur App-Version für Apps im Microsoft Store für Unternehmen. Klicken Sie in Intune auf **Client-Apps** > **Apps**. Wählen Sie eine **App im Microsoft Store für Unternehmen** aus, und klicken Sie dann im Abschnitt **Überwachen** auf **Geräteinstallationsstatus**.
@@ -91,6 +110,9 @@ Die Seite „Geräteübersicht“ zeigt den primären Benutzer (Affinität zwisc
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Zusätzliche Berichterstellung für verwaltete Google Play-Apps für Android Enterprise-Arbeitsprofilgeräte <!-- 4105925  -->
 Sie können die Versionsnummer von auf Android Enterprise-Arbeitsprofilgeräten bereitgestellten, verwalteten Google Play-Apps anzeigen. Dies gilt nur für erforderliche Apps. Die gleiche Funktionalität wird in einem zukünftigen Release für verfügbare Apps bereitgestellt. 
+
+#### <a name="ios-third-party-keyboards----4111843-idready-eeready---"></a>Tastaturen von Drittanbietern für iOS <!-- 4111843 idready eeready -->
+Die Intune APP-Unterstützung (App Protection Policy, App-Schutzrichtlinie) für die Einstellung **Tastaturen von Drittanbietern** für iOS wird aufgrund einer Änderung an der iOS-Plattform beendet. Sie können diese Einstellung in der Intune-Verwaltungskonsole nicht mehr konfigurieren, und sie wird auf dem Client im Intune App SDK nicht mehr erzwungen.
 
 ### <a name="device-configuration"></a>Gerätekonfiguration
 
@@ -108,7 +130,7 @@ Gilt für: Dedizierte Android Enterprise-Geräte im Multi-App-Kioskmodus
 
 
 #### <a name="configure-bluetooth-and-pairing-on-android-enterprise-device-owner-dedicated-devices-running-in-multi-app-kiosk-mode----3041941----"></a>Konfigurieren von Bluetooth und Kopplung auf dedizierten Geräten im Multi-App-Kioskmodus für Android Enterprise-Gerätebesitzer <!-- 3041941  -->
-Sie können die Einstellungen für Android Enterprise-Gerätebesitzer aktivieren, wenn das Gerät als dediziertes Gerät im Multi-App-Kioskmodus ausgeführt wird. Mit diesem Update können Sie Benutzern ermöglichen, Bluetooth zu aktivieren und Geräte per Bluetooth zu koppeln (**Intune** > **Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Android Enterprise** (Plattform) > **Nur Gerätebesitzer > Geräteeinschränkungen** (Profiltyp) > **Dedizierte Geräte** > **Kioskmodus**: **Multi-App** > **Bluetooth-Konfiguration**). 
+Sie können die Einstellungen für Android Enterprise-Gerätebesitzer aktivieren, wenn das Gerät als dediziertes Gerät im Multi-App-Kioskmodus ausgeführt wird. Mit diesem Update können Sie Benutzern ermöglichen, Bluetooth zu aktivieren und Geräte per Bluetooth zu koppeln (**Intune** > **Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Android Enterprise** (Plattform) > **Nur Gerätebesitzer > Geräteeinschränkungen** (Profiltyp) > **Dedizierte Geräte** > **Kioskmodus**): **Multi-App** > **Bluetooth-Konfiguration**). 
 
 Eine Liste aller konfigurierbaren Einstellungen finden Sie unter [Android Enterprise device settings to allow or restrict features (Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features)](device-restrictions-android-for-work.md).
 
@@ -124,7 +146,7 @@ Weitere Informationen zu diesem Feature finden Sie unter [Use and manage Android
 Gilt für: Android Enterprise
 
 #### <a name="windows-update-notifications-----3316758-3316782----"></a>Windows Update-Benachrichtigungen  <!-- 3316758, 3316782  -->
-Es wurden zwei *Einstellungen für die Benutzeroberfläche* zur Windows Update-Ringkonfiguration hinzugefügt, die Sie über die Intune-Konsole verwalten können. Sie können nun:
+Wir haben den Windows Update-Ringkonfigurationen zwei *Einstellungen für die Benutzeroberfläche* hinzugefügt, die Sie über die Intune-Konsole verwalten können. Sie können nun:
 - Benutzern erlauben oder verweigern, [nach Windows-Updates zu suchen](windows-update-settings.md#block-user-from-scanning-for-windows-updates).
 - die [Windows Update-Benachrichtigungsebene](windows-update-settings.md#windows-update-notification-level) verwalten, die Benutzern angezeigt wird.
 
@@ -207,7 +229,7 @@ Sie können nun Bereichsmarkierungen zu Apple-VPP-Token hinzufügen. Nur Benutze
 ### <a name="device-configuration"></a>Gerätekonfiguration
 
 #### <a name="updated-certificate-connectors-----icm-113304612---"></a>Update für Zertifikatconnectors  <!-- ICM 113304612 -->
-[Intune Certificate Connector und der PFX-Zertifikatconnector](certficates-pfx-configure.md#whats-new-for-connectors) wurden aktualisiert. Mit diesen neuen Releases wurden einige bekannte Probleme behoben.  
+Wir haben Updates für den [Intune-Zertifikatconnector und den PFX-Zertifikatconnector für Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) veröffentlicht. Mit diesen neuen Releases wurden einige bekannte Probleme behoben.  
 
 ### <a name="app-management"></a>App-Verwaltung
 
@@ -303,7 +325,7 @@ Die Intune-Konsole unterstützt das Anzeigen und Verwalten von Geräten mit nur 
 - Verwenden von Exchange-Steuerelementen gemäß den Anweisungen unter [Clients and mobile in Exchange Online (Clients und Mobilgeräte in Exchange Online)](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)
 
 ### <a name="search-the-all-devices-page-for-an-exact-device-by-using-name---4254930---"></a>Suchen eines bestimmten Geräts auf der Seite „Alle Geräte“ mithilfe von [Name] <!--4254930 -->
-Sie können nun nach exakten Gerätenamen suchen. Wechseln Sie zu **Intune** > **Geräte** > **Alle Geräte**, und umschließen Sie den gesuchten Gerätenamen im Suchfeld mit {}, um nach einer genauen Übereinstimmung zu suchen. Zum Beispiel: **{Gerät12345}**.
+Sie können nun nach exakten Gerätenamen suchen. Wechseln Sie zu **Intune** > **Geräte** > **Alle Geräte**, und umschließen Sie den gesuchten Gerätenamen im Suchfeld mit {}, um nach einer genauen Übereinstimmung zu suchen. Zum Beispiel: **{Gerät12345}** .
 
 ### <a name="monitor-and-troubleshoot"></a>Überwachung und Problembehandlung
 
@@ -376,7 +398,7 @@ Navigieren Sie in Intune zu **Client-Apps** > **Apps** > Name der App > **Gerät
 Eine neue Anzeige namens **App-Kategorien** wurde hinzugefügt, um das Durchsuchen und Auswählen von Apps im Unternehmensportal für Windows 10 zu verbessern. Für Benutzer werden Apps nun sortiert nach Kategorien wie **Empfohlen**, **Bildung** und **Produktivität** angezeigt. Diese Änderung ist im Unternehmensportal ab Version 10.3.3451.0 vorhanden. Informationen zu dieser neuen Anzeige finden Sie unter [Updates der Benutzeroberfläche für Endbenutzer-Apps in Intune](https://docs.microsoft.com/intune/whats-new-app-ui). Weitere Informationen zu den Apps im Unternehmensportal finden Sie unter [Install and share apps on your device (Installieren und Freigeben von Apps auf Ihrem Gerät)](/intune-user-help/install-apps-cpapp-windows).  
 
 #### <a name="power-bi-compliance-app----1455231-doc-work-item---"></a>Power BI-Compliance-App <!-- 1455231 doc-work-item -->
-Sie können über die App [Intune Compliance (Data Warehouse)](https://app.powerbi.com/groups/me/getapps/services/Intune_dw_compliance) in Power BI auf Ihre Intune Data Warehouse-Instanz zugreifen. Mit dieser Power BI-App können Sie nun auf vorab erstellte Berichte zugreifen und diese freigeben, ohne dafür ein Setup durchzuführen und ohne Ihren Webbrowser zu verlassen. Weitere Informationen finden Sie im [Änderungsprotokoll für die Intune Data Warehouse-API](reports-changelog.md#power-bi-compliance-app).
+Sie können über die App [Intune Compliance (Data Warehouse)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) in Power BI auf Ihre Intune Data Warehouse-Instanz zugreifen. Mit dieser Power BI-App können Sie nun auf vorab erstellte Berichte zugreifen und diese freigeben, ohne dafür ein Setup durchzuführen und ohne Ihren Webbrowser zu verlassen. Weitere Informationen finden Sie im [Änderungsprotokoll für die Intune Data Warehouse-API](reports-changelog.md#power-bi-compliance-app).
 
 
 ### <a name="device-configuration"></a>Gerätekonfiguration
@@ -453,7 +475,7 @@ Android Enterprise
 Für iOS-Geräte können Sie Safari-Einstellungen festlegen und Softwareupdates konfigurieren. Mit diesem Update werden diese Einstellungen auf der Intune-Benutzeroberfläche verschoben:
 
 - Die Safari-Einstellungen wurden von **Safari** (**Gerätekonfiguration** > **Profile** > **Neues Profil** > **iOS** (Plattform) > **Geräteeinschränkungen** (Profiltyp)) zu **[Integrierte Apps](device-restrictions-ios.md#built-in-apps)** verschoben.
-- Die Einstellung **Delaying user software update visibility for supervised iOS devices** (Sichtbarkeit von Updates für Benutzer von überwachten iOS-Geräten verzögern) (**Softwareupdates** > **Richtlinien für iOS aktualisieren**) wurde zu **Geräteeinschränkungen** > **[Allgemein](device-restrictions-ios.md#general)** verschoben.  Weitere Informationen zu den Auswirkungen auf vorhandene Richtlinien finden Sie unter [Konfigurieren von iOS-Updaterichtlinien in Intune](software-updates-ios.md#configure-the-policy). 
+- Die Einstellung **Delaying user software update visibility for supervised iOS devices** (Sichtbarkeit von Updates für Benutzer von überwachten iOS-Geräten verzögern) (**Softwareupdates** > **Richtlinien für iOS aktualisieren**) wurde zu **Geräteeinschränkungen** >  **[Allgemein](device-restrictions-ios.md#general)** verschoben.  Weitere Informationen zu den Auswirkungen auf vorhandene Richtlinien finden Sie unter [Konfigurieren von iOS-Updaterichtlinien in Intune](software-updates-ios.md#configure-the-policy). 
 
 Eine Liste der Einstellungen finden Sie unter:
 

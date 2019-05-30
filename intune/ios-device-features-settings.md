@@ -5,9 +5,8 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/01/2019
+ms.date: 04/23/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,18 +15,18 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: HT
+ms.openlocfilehash: b31c7778ea167b98468a0a9ad9e37047c30ce201
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799264"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047178"
 ---
-# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>Einstellungen für iOS-Geräte zum Verwenden der allgemeinen iOS-Features in Intune
+# <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>iOS-Geräteeinstellungen zur Verwendung gängiger iOS-Features in Intune
 
 Intune enthält einige eingebaute Einstellungen, damit iOS-Benutzer verschiedene Apple-Funktionen auf ihren Geräten nutzen können. Administratoren können beispielsweise steuern, wie iOS-Benutzer AirPrint-Drucker verwenden, Apps und Ordner zum Dock und zu den Seiten auf dem Startbildschirm hinzufügen, App-Benachrichtigungen anzeigen, Details zu Bestandskennzeichen auf dem Sperrbildschirm anzeigen, Authentifizierung für einmaliges Anmelden verwenden und Benutzer mit Zertifikaten authentifizieren.
 
-Verwenden Sie diese Funktionen, um iOS-Geräten als Teil Ihrer Lösung für mobile Geräte (MDM) zu steuern.
+Nutzen Sie diese Features, um iOS-Geräte im Rahmen Ihrer MDM-Lösung (Mobile Device Management, Verwaltung mobiler Geräte) zu verwalten.
 
 In diesem Artikel werden diese Einstellungen mit ihren Funktionsbeschreibungen aufgeführt.
 
@@ -35,22 +34,18 @@ In diesem Artikel werden diese Einstellungen mit ihren Funktionsbeschreibungen a
 
 [Erstellen Sie ein iOS-Gerätekonfigurationsprofil.](device-features-configure.md#create-a-device-profile)
 
-## <a name="airprint-settings"></a>AirPrint-Einstellungen
+## <a name="airprint"></a>AirPrint
 
-Mit dieser Funktion können iOS-Benutzer über bekannte AirPrint-Drucker drucken.
+- **IP-Adresse**: Geben Sie die IPv4- oder IPv6-Adresse des Druckers ein. Wenn Sie den Hostnamen verwenden, um Drucker zu identifizieren, erhalten Sie die IP-Adresse, indem Sie den Drucker am Terminal pingen. Der Abschnitt über das Abrufen von IP-Adresse und Pfad (in diesem Artikel) enthält weitere Details.
+- **Pfad**: Der Pfad lautet für Drucker in Ihrem Netzwerk in der Regel `ipp/print`. Der Abschnitt über das Abrufen von IP-Adresse und Pfad (in diesem Artikel) enthält weitere Details.
+- **Port**: Geben Sie den Lauschport des AirPrint-Ziels ein. Wenn Sie diese Eigenschaft leer lassen, verwendet AirPrint den Standardport. In iOS 11.0 und höher verfügbar.
+- **TLS**: Wählen Sie **Aktivieren** aus, um AirPrint-Verbindungen mit Transport Layer Security (TLS) zu sichern. In iOS 11.0 und höher verfügbar.
 
-1. Wählen Sie in **Einstellungen** die Option **AirPrint** aus. Geben Sie die folgenden Eigenschaften des AirPrint-Servers ein:
+Über **Hinzufügen** wird der AirPrint-Server der Liste hinzugefügt. Sie können viele AirPrint-Server hinzufügen. Sie können auch eine durch Kommas getrennte Datei (.csv) mit diesen Informationen **importieren**. Nach der Erstellung der Liste können Sie Ihre Liste an AirPrint-Server auch **exportieren**.
 
-    - **IP-Adresse**: Geben Sie die IPv4- oder IPv6-Adresse des Druckers ein. Wenn Sie den Hostnamen verwenden, um Drucker zu identifizieren, erhalten Sie die IP-Adresse, indem Sie den Drucker am Terminal pingen. Der Abschnitt über das Abrufen von IP-Adresse und Pfad (in diesem Artikel) enthält weitere Details.
-    - **Pfad**: Der Pfad lautet für Drucker in Ihrem Netzwerk in der Regel `ipp/print`. Der Abschnitt über das Abrufen von IP-Adresse und Pfad (in diesem Artikel) enthält weitere Details.
-    - **Port**: Geben Sie den Lauschport des AirPrint-Ziels ein. Wenn Sie diese Eigenschaft leer lassen, verwendet AirPrint den Standardport. In iOS 11.0 und höher verfügbar.
-    - **TLS**: Wählen Sie **Aktivieren** aus, um AirPrint-Verbindungen mit Transport Layer Security (TLS) zu sichern. In iOS 11.0 und höher verfügbar.
+Klicken Sie auf **OK**, um Ihre Liste zu speichern.
 
-2. Klicken Sie auf **Hinzufügen**. Der AirPrint-Server wird der Liste hinzugefügt. Sie können viele AirPrint-Server hinzufügen.
-
-    Sie können auch eine durch Kommas getrennte Datei (.csv) mit diesen Informationen **importieren**. Nach der Erstellung der Liste können Sie Ihre Liste an AirPrint-Server auch **exportieren**.
-
-3. Klicken Sie zum Speichern Ihrer Liste auf **OK**.
+### <a name="get-server-ip-address-resource-path-and-port"></a>Abrufen der IP-Adresse des Servers, des Ressourcenpfads und Ports
 
 Um AirPrinter-Server hinzuzufügen, benötigen Sie die IP-Adresse des Druckers, den Ressourcenpfad und den Port. Die folgenden Schritte zeigen Ihnen, wie Sie diese Informationen abrufen.
 
@@ -73,32 +68,35 @@ Mit diesen Einstellungen konfigurieren Sie das Layout von Apps und Ordner auf de
 
 Mit der Einstellung **Dock** können Sie dem Dock des iOS-Bildschirms bis zu sechs Elemente oder Ordner hinzufügen. Viele Geräte unterstützen weniger Elemente. Beispielsweise unterstützen iPhone-Geräte bis zu vier Elemente. In diesem Fall werden nur die ersten vier Elemente, die Sie hinzugefügt haben, auf dem Gerät angezeigt.
 
-1. Wählen Sie in den **Einstellungen** die Option **Layout des Startbildschirms (nur überwacht)** > **Andocken** > **Hinzufügen** aus. Sie können für den Gerätedock bis zu **sechs** Elemente hinzufügen (Apps und Ordner kombiniert).
-2. Wählen Sie unter **Typ**, ob Sie eine **App** oder einen **Ordner** hinzufügen möchten.
+Sie können für den Gerätedock bis zu **sechs** Elemente hinzufügen (Apps und Ordner kombiniert).
 
-    - **App hinzufügen**: Wählen Sie diese Option aus, um Apps zum Dock auf dem Bildschirm hinzuzufügen. Geben Sie folgenden Code ein:
+- **Hinzufügen**: Fügt dem Dock auf dem Gerät Apps oder Ordner hinzu.
+- **Typ**: Fügen Sie eine **App** oder einen **Ordner** hinzu:
 
+  - **App**: Wählen Sie diese Option, um Apps zum Dock auf dem Bildschirm hinzuzufügen. Geben Sie folgenden Code ein:
+
+    - **App-Namen**: Geben Sie einen Namen für die app. Dieser Name wird im Azure-Portal zur Referenz verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
+    - **App-Bündel-ID**: Geben Sie die Bündel-ID der App ein. Einige Beispiele finden Sie unter [Bündel-IDs für integrierte iOS-Apps](bundle-ids-built-in-ios-apps.md).
+
+    Klicken Sie auf **OK**, um die Änderungen zu speichern.
+
+  - **Ordner**: Wählen Sie diese Option, um einen Ordner zum Dock auf dem Bildschirm hinzuzufügen.
+
+    Apps, die Sie zu einer Seite in einem Ordner hinzufügen, werden von links nach rechts und in der gleichen Reihenfolge wie die Liste angeordnet. Wenn Sie mehr Apps hinzufügen, als auf eine Seite passen, werden die Apps auf eine andere Seite verschoben.
+
+    - **Ordnername**: Geben Sie den Namen des Ordners ein. Dieser Name wird Benutzern auf ihren Geräten angezeigt.
+    - **Liste der Seiten**: Wählen Sie **Hinzufügen** aus, und geben Sie die folgenden Eigenschaften ein:
+
+      - **Seitenname**: Geben Sie einen Namen für die Seite. Dieser Name wird im Azure-Portal zur Referenz verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
       - **App-Namen**: Geben Sie einen Namen für die app. Dieser Name wird im Azure-Portal zur Referenz verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
-      - **App-Bündel-ID**: Geben Sie die Bündel-ID der App ein. Einige Beispiele finden Sie in [Bündel-IDs für integrierte iOS-Apps](#bundle-ids-for-built-in-ios-apps) (in diesem Artikel).
+      - **App-Bündel-ID**: Geben Sie die Bündel-ID der App ein. Einige Beispiele finden Sie unter [Bündel-IDs für integrierte iOS-Apps](bundle-ids-built-in-ios-apps.md).
 
-      Klicken Sie auf **OK**, um die Änderungen zu speichern.
+      Sie können für den Gerätedock bis zu **20** Seiten hinzufügen.
 
-    - **Ordner hinzufügen**: Wählen Sie diese Option aus, um einen Ordner zum Dock auf dem Bildschirm hinzuzufügen. 
-
-      Apps, die Sie zu einer Seite in einem Ordner hinzufügen, werden von links nach rechts und in der gleichen Reihenfolge wie die Liste angeordnet. Wenn Sie mehr Apps hinzufügen, als auf eine Seite passen, werden die Apps auf eine andere Seite verschoben.
-
-      1. Geben Sie einen **Ordnernamen** ein. Dieser Name wird Benutzern auf ihren Geräten angezeigt.
-      2. Wählen Sie **Hinzufügen** aus, und geben Sie die folgenden Eigenschaften ein:
-
-          - **Seitenname**: Geben Sie einen Namen für die Seite. Dieser Name wird im Azure-Portal zur Referenz verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
-          - **App-Namen**: Geben Sie einen Namen für die app. Dieser Name wird im Azure-Portal zur Referenz verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
-          - **App-Bündel-ID**: Geben Sie die Bündel-ID der App ein. Einige Beispiele finden Sie in [Bündel-IDs für integrierte iOS-Apps](#bundle-ids-for-built-in-ios-apps) (in diesem Artikel).
-
-      3. Wählen Sie **Hinzufügen** aus. Sie können für den Gerätedock bis zu **20** Seiten hinzufügen.
-      4. Klicken Sie auf **OK**, um die Änderungen zu speichern.
+    Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 > [!NOTE]
-> Wenn Sie Symbole, die mit den Einstellungen Dock hinzufügen, die Symbole auf dem Startbildschirm und Seiten sind gesperrt und können nicht verschoben werden. Dies kann mit iOS und Apple MDM-Richtlinien beabsichtigt sein.
+> Wenn Sie Symbole mithilfe der Dock-Einstellungen hinzufügen, sind die Symbole auf dem Startbildschirm und den Seiten gesperrt und können nicht verschoben werden. Dies kann bei iOS und MDM-Richtlinien von Apple absichtlich der Fall sein.
 
 #### <a name="example"></a>Beispiel
 
@@ -117,33 +115,37 @@ Fügen Sie die Seiten hinzu, die auf dem Startbildschirm angezeigt werden sollen
 > [!TIP]
 > Elemente auf jedem Startbildschirm und auf allen Seiten können Sie mittels Ziehen und Ablegen sortieren.
 
-1. Wählen Sie in den **Einstellungen** die Option **Layout des Startbildschirms (nur überwacht)** > **Seiten** > **Hinzufügen** aus. Sie können bis zu **40** Seiten zu einem Gerät hinzufügen.
-2. Geben Sie einen **Seitennamen** ein. Dieser Name wird im Azure-Portal zur Referenz verwendet und auf dem iOS-Gerät *nicht* angezeigt. 
+Sie können bis zu **40** Seiten zu einem Gerät hinzufügen.
 
-    Klicken Sie auf **Hinzufügen**. Sie können auf einem Gerät bis zu **60** Elemente hinzufügen (Apps und Ordner kombiniert).
+- **Liste der Seiten**: Wählen Sie **Hinzufügen** aus, und geben Sie die folgenden Eigenschaften ein:
 
-3. Wählen Sie unter **Typ**, ob Sie eine **App** oder einen **Ordner** hinzufügen möchten.
+  - **Seitenname**: Geben Sie einen Namen für die Seite. Dieser Name wird im Azure-Portal zur Referenz verwendet und auf dem iOS-Gerät *nicht* angezeigt.
 
-    - **App hinzufügen**: Wählen Sie diese Option aus, um Apps zu einer Seite auf dem Bildschirm hinzuzufügen. Geben Sie folgenden Code ein:
+  Sie können auf einem Gerät bis zu **60** Elemente hinzufügen (Apps und Ordner kombiniert).
 
-      - **App-Namen**: Geben Sie einen Namen für die app. Dieser Name wird im Azure-Portal zur Referenz verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
-      - **App-Bündel-ID**: Geben Sie die Bündel-ID der App ein. Einige Beispiele finden Sie in [Bündel-IDs für integrierte iOS-Apps](#bundle-ids-for-built-in-ios-apps) (in diesem Artikel).
+  - **Hinzufügen**: Fügt einer Seite auf dem Gerät Apps oder Ordner hinzu.
+
+    - **Typ**: Fügen Sie eine **App** oder einen **Ordner** hinzu:
+
+      - **App**: Verwenden Sie diese Option, um Apps einer Seite auf dem Bildschirm hinzuzufügen. Geben Sie außerdem Folgendes ein:
+
+        - **App-Namen**: Geben Sie einen Namen für die app. Dieser Name wird im Azure-Portal zur Referenz verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
+        - **App-Bündel-ID**: Geben Sie die Bündel-ID der App ein. Einige Beispiele finden Sie unter [Bündel-IDs für integrierte iOS-Apps](bundle-ids-built-in-ios-apps.md).
 
       Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
-    - **Ordner hinzufügen**: Wählen Sie diese Option aus, um einen Ordner zum Dock auf dem Bildschirm hinzuzufügen. 
+      - **Ordner**: Wählen Sie diese Option, um einen Ordner zum Dock auf dem Bildschirm hinzuzufügen.
 
-      Apps, die Sie zu einer Seite in einem Ordner hinzufügen, werden von links nach rechts und in der gleichen Reihenfolge wie die Liste angeordnet. Wenn Sie mehr Apps hinzufügen, als auf eine Seite passen, werden die Apps auf eine andere Seite verschoben.
+        Apps, die Sie zu einer Seite in einem Ordner hinzufügen, werden von links nach rechts und in der gleichen Reihenfolge wie die Liste angeordnet. Wenn Sie mehr Apps hinzufügen, als auf eine Seite passen, werden die Apps auf eine andere Seite verschoben.
 
-      1. Geben Sie einen **Ordnernamen** ein. Dieser Name wird Benutzern auf ihren Geräten angezeigt.
-      2. Wählen Sie **Hinzufügen** aus, und geben Sie die folgenden Eigenschaften ein:
+        - **Ordnername:** Geben Sie einen Namen für den Ordner ein. Dieser Name wird Benutzern auf dem Gerät angezeigt.
+        - **Hinzufügen**: Fügt dem Ordner Seiten hinzu. Geben Sie auch die folgenden Eigenschaften ein:
 
           - **Seitenname**: Geben Sie einen Namen für die Seite. Dieser Name wird im Azure-Portal zur Referenz verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
           - **App-Namen**: Geben Sie einen Namen für die app. Dieser Name wird im Azure-Portal zur Referenz verwendet. Er wird *nicht* auf dem iOS-Gerät angezeigt.
-          - **App-Bündel-ID**: Geben Sie die Bündel-ID der App ein. Einige Beispiele finden Sie in [Bündel-IDs für integrierte iOS-Apps](#bundle-ids-for-built-in-ios-apps) (in diesem Artikel).
+          - **App-Bündel-ID**: Geben Sie die Bündel-ID der App ein. Einige Beispiele finden Sie unter [Bündel-IDs für integrierte iOS-Apps](bundle-ids-built-in-ios-apps.md).
 
-      3. Wählen Sie **Hinzufügen** aus.
-      4. Klicken Sie auf **OK**, um die Änderungen zu speichern.
+      Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 #### <a name="example"></a>Beispiel
 
@@ -159,50 +161,43 @@ Wenn Sie einem iPhone die Richtlinie zuweisen, sieht die Seite etwa so aus:
 
 Wählen Sie aus, wie installierte Apps auf iOS-Geräten Benachrichtigungen senden. Diese Einstellungen unterstützen überwachte Geräte, auf denen iOS 9.3 oder höher ausgeführt wird.
 
-1. Wählen Sie in den **Einstellungen** die Option **App-Benachrichtigungen (nur überwacht)** > **Hinzufügen**:
+- **Hinzufügen**: Hinzufügen von Benachrichtigungen für Apps:
 
     ![Hinzufügen von App-Benachrichtigungen in einem iOS-Profil in Intune](./media/ios-macos-app-notifications.png)
 
-2. Geben Sie die folgenden Eigenschaften ein:
+  - **App-Bündel-ID**: Geben Sie die **App-Bündel-ID** der App ein, die Sie hinzufügen möchten. Einige Beispiele finden Sie unter [Bündel-IDs für integrierte iOS-Apps](bundle-ids-built-in-ios-apps.md).
+  - **App-Name**: Geben Sie den Namen der App ein, die Sie hinzufügen möchten. Dieser Name wird im Azure-Portal zur Referenz verwendet. Er wird *nicht* auf dem Gerät angezeigt.
+  - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein, die Sie hinzufügen. Dieser Name wird im Azure-Portal zur Referenz verwendet. Er wird *nicht* auf dem Gerät angezeigt.
+  - **Benachrichtigungen**: **Aktivieren** oder **deaktivieren** Sie das Senden von Benachrichtigungen von der App an das Gerät.
+    - **In Mitteilungszentrale anzeigen**: Mit **Aktivieren** lassen Sie zu, dass Benachrichtigungen der App in der Mitteilungszentrale des Geräts angezeigt werden. **Deaktivieren** Sie diese Option, um zu verhindern, dass Benachrichtigungen in der Mitteilungszentrale angezeigt werden.
+    - **In Sperrbildschirm anzeigen**: Wählen Sie **Aktivieren** aus, damit Benachrichtigungen der App auf dem Sperrbildschirm des Geräts angezeigt werden. **Deaktivieren** Sie diese Option, um zu verhindern, dass Benachrichtigungen im Sperrbildschirm angezeigt werden.
+    - **Benachrichtigungstyp**: Wählen Sie aus, wie die Benachrichtigung angezeigt wird, wenn das Gerät entsperrt wird. Folgende Optionen sind verfügbar:
+      - **Keine**: Es werden keine Benachrichtigungen angezeigt.
+      - **Banner**: Es wird kurz ein Banner mit der Benachrichtigung angezeigt.
+      - **Modal**: Die Benachrichtigung wird angezeigt, und der Benutzer muss sie manuell schließen, um das Gerät weiter verwenden zu können.
+    - **Badge für app-Symbol**: Wählen Sie **aktivieren** so das app-Symbol einen Badge hinzu. Das Badge bedeutet, dass die App eine Benachrichtigung gesendet hat.
+    - **Sounds**: Wählen Sie **Aktivieren**, um einen Sound wiederzugeben, wenn eine Benachrichtigung eintrifft.
 
-    - **App-Bündel-ID**: Geben Sie die **App-Bündel-ID** der App ein, die Sie hinzufügen möchten. Einige Beispiele finden Sie in [Bündel-IDs für integrierte iOS-Apps](#bundle-ids-for-built-in-ios-apps) (in diesem Artikel).
-    - **App-Name**: Geben Sie den Namen der App ein, die Sie hinzufügen möchten. Dieser Name wird im Azure-Portal zur Referenz verwendet. Er wird *nicht* auf dem Gerät angezeigt.
-    - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein, die Sie hinzufügen. Dieser Name wird im Azure-Portal zur Referenz verwendet. Er wird *nicht* auf dem Gerät angezeigt.
-    - **Benachrichtigungen**: **Aktivieren** oder **deaktivieren** Sie das Senden von Benachrichtigungen von der App an das Gerät.
-       - **In Mitteilungszentrale anzeigen**: Mit **Aktivieren** lassen Sie zu, dass Benachrichtigungen der App in der Mitteilungszentrale des Geräts angezeigt werden. **Deaktivieren** Sie diese Option, um zu verhindern, dass Benachrichtigungen in der Mitteilungszentrale angezeigt werden.
-       - **In Sperrbildschirm anzeigen**: Wählen Sie **Aktivieren** aus, damit Benachrichtigungen der App auf dem Sperrbildschirm des Geräts angezeigt werden. **Deaktivieren** Sie diese Option, um zu verhindern, dass Benachrichtigungen im Sperrbildschirm angezeigt werden.
-       - **Benachrichtigungstyp**: Wählen Sie aus, wie die Benachrichtigung angezeigt wird, wenn das Gerät entsperrt wird. Folgende Optionen sind verfügbar:
-         - **Keine**: Es werden keine Benachrichtigungen angezeigt.
-         - **Banner**: Es wird kurz ein Banner mit der Benachrichtigung angezeigt.
-         - **Modal**: Die Benachrichtigung wird angezeigt, und der Benutzer muss sie manuell schließen, um das Gerät weiter verwenden zu können.
-       - **Badge für app-Symbol**: Wählen Sie **aktivieren** so das app-Symbol einen Badge hinzu. Das Badge bedeutet, dass die App eine Benachrichtigung gesendet hat.
-       - **Sounds**: Wählen Sie **Aktivieren**, um einen Sound wiederzugeben, wenn eine Benachrichtigung eintrifft.
-
-3. Klicken Sie auf **OK**, um die Änderungen zu speichern. Fügen Sie die weiteren gewünschten Apps hinzu. Wählen Sie danach **OK**.
+Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="lock-screen-message-settings"></a>Einstellungen der Sperrbildschirmnachricht
 
 Verwenden Sie diese Einstellungen, um eine benutzerdefinierte Nachricht oder einen Text im Anmeldefenster und auf dem Sperrbildschirm anzuzeigen. So können Sie z.B. eine „Wenn verloren, zurück an“-Nachricht und Bestandskennzeicheninformationen eingeben. 
 
-Dieses Feature unterstützt überwachte Geräte, auf denen das folgende Betriebssystem installiert ist:
+Dieses Feature unterstützt überwachte Geräte, auf denen iOS 9.3 oder höher ausgeführt wird.
 
-- iOS 9.3 und höher
+- **Bestandskennzeicheninformationen**: Geben Sie Informationen zum Bestandskennzeichen des Geräts ein. Geben Sie beispielsweise `Owned by Contoso Corp` oder `Serial Number: {{serialnumber}}` ein.
 
-1. Wählen Sie in **Einstellungen** die Option **Nachricht auf Sperrbildschirm (nur überwacht)**  aus.
-2. Legen Sie folgende Einstellungen fest:
+  Der von Ihnen eingegebene Text wird im Anmeldefenster und Sperrbildschirm auf dem Gerät angezeigt.
 
-    - **Bestandskennzeicheninformationen**: Geben Sie Informationen zum Bestandskennzeichen des Geräts ein. Geben Sie beispielsweise `Owned by Contoso Corp` oder `Serial Number: {{serialnumber}}` ein. 
+- **Fußnote zum Sperrbildschirm**: Geben Sie einen Hinweis ein, der Ihnen helfen könnte, das Gerät zurückzuerhalten, wenn es verloren geht oder gestohlen wird. Sie können einen beliebigen Text eingeben. Geben Sie zum Beispiel `If found, call Contoso at ...` ein.
 
-      Der von Ihnen eingegebene Text wird im Anmeldefenster und Sperrbildschirm auf dem Gerät angezeigt.
+  Gerätetoken können auch verwendet werden, um gerätespezifische Informationen zu diesen Feldern hinzuzufügen. Geben Sie zum Beispiel zur Anzeige der Seriennummer `Serial Number: {{serialnumber}}` ein. Auf dem Sperrbildschirm sieht der Text dann in etwa so aus: `Serial Number 123456789ABC`. Achten Sie darauf, bei der Eingabe von Variablen geschweifte Klammern `{{ }}` zu verwenden. [App-Konfigurationstoken](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) umfassen eine Reihe von Variablen, die Sie nutzen können. Zudem können Sie `deviceName` oder einen anderen gerätespezifischen Wert verwenden.
 
-    - **Fußnote zum Sperrbildschirm**: Geben Sie einen Hinweis ein, der Ihnen helfen könnte, das Gerät zurückzuerhalten, wenn es verloren geht oder gestohlen wird. Sie können einen beliebigen Text eingeben. Geben Sie zum Beispiel `If found, call Contoso at ...` ein.
+  > [!NOTE]
+  > Variablen werden nicht auf der Benutzeroberfläche überprüft. Daher gibt es möglicherweise Profile, die mit fehlerhaften Eingaben gespeichert wurden. Wenn Sie beispielsweise `{{Devicename}}` anstelle von `{{devicename}}` eingeben, wird die Zeichenfolge anstelle des eindeutigen Gerätenamens angezeigt.
 
-    Gerätetoken können auch verwendet werden, um gerätespezifische Informationen zu diesen Feldern hinzuzufügen. Geben Sie zum Beispiel zur Anzeige der Seriennummer `Serial Number: {{serialnumber}}` ein. Auf dem Sperrbildschirm sieht der Text dann in etwa so aus: `Serial Number 123456789ABC`. Achten Sie darauf, bei der Eingabe von Variablen geschweifte Klammern `{{ }}` zu verwenden. [App-Konfigurationstoken](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) umfassen eine Reihe von Variablen, die Sie nutzen können. Zudem können Sie `deviceName` oder einen anderen gerätespezifischen Wert verwenden.
-
-    > [!NOTE]
-    > Variablen werden nicht auf der Benutzeroberfläche überprüft. Daher gibt es möglicherweise Profile, die mit fehlerhaften Eingaben gespeichert wurden. Wenn Sie beispielsweise `{{Devicename}}` anstelle von `{{devicename}}` eingeben, wird die Zeichenfolge anstelle des eindeutigen Gerätenamens angezeigt.
-
-3. Klicken Sie zum Speichern Ihrer Änderungen auf **OK**.
+Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="single-sign-on-settings"></a>Einstellungen für einmaliges Anmelden
 
@@ -213,82 +208,77 @@ Um einmaliges Anmelden zu verwenden, achten Sie darauf, dass Sie folgende Anford
 - Es muss eine App vorhanden sein, die dafür codiert ist, den Anmeldeinformationsspeicher des Benutzers zum einmaligen Anmelden auf dem Gerät zu durchsuchen.
 - Intune muss für einmaliges Anmelden von iOS-Geräten konfiguriert sein.
 
-1. Wählen Sie in den **Einstellungen**die Option **Einmaliges Anmelden**:
+![Bereich „Einmaliges Anmelden“](./media/sso-blade.png)
 
-   ![Bereich „Einmaliges Anmelden“](./media/sso-blade.png)
+- **Benutzernamensattribut aus Azure AD:** Intune sucht für jeden Azure AD-Benutzer nach diesem Attribut. Intune füllt anschließend das entsprechende Feld (z.B. „UPN“) auf, bevor die auf dem Gerät zu installierende XML-Nutzlast generiert wird. Folgende Optionen sind verfügbar:
 
-2. Legen Sie folgende Einstellungen fest:
+  - **Benutzerprinzipalname**: Der Benutzerprinzipalname wird wie folgt analysiert:
 
-    - **Benutzernamensattribut aus Azure AD:** Intune sucht für jeden Azure AD-Benutzer nach diesem Attribut. Intune füllt anschließend das entsprechende Feld (z.B. „UPN“) auf, bevor die auf dem Gerät zu installierende XML-Nutzlast generiert wird. Folgende Optionen sind verfügbar:
+    ![Benutzernamensattribut](media/User-name-attribute.png)
 
-      - **Benutzerprinzipalname**: Der Benutzerprinzipalname wird wie folgt analysiert:
+    Sie können den Bereich auch mit dem Text überschreiben, den Sie in das Textfeld **Bereich** eingeben.
 
-        ![Benutzernamensattribut](media/User-name-attribute.png)
+    Beispielsweise verfügt Contoso über mehrere Regionen, wie z.B. Europa, Asien und Nordamerika. Contoso möchte, dass seine Benutzer in Asien das einmalige Anmelden verwenden und der UPN muss laut App im Format `username@asia.contoso.com` vorliegen. Wenn Sie den **Benutzerprinzipalname** auswählen, wird der Bereich für die einzelnen Benutzer aus Azure AD übernommen, z.B. `contoso.com`. Wählen Sie für Benutzer in Asien, also **Benutzerprinzipalname**, und geben Sie `asia.contoso.com` ein. Daraufhin wird für den UPN des Endbenutzers `username@asia.contoso.com` anstelle von `username@contoso.com` verwendet.
 
-        Sie können den Bereich auch mit dem Text überschreiben, den Sie in das Textfeld **Bereich** eingeben.
+  - **Intune-Geräte-ID**: Intune wählt die Intune-Geräte-ID automatisch aus.
 
-        Beispielsweise verfügt Contoso über mehrere Regionen, wie z.B. Europa, Asien und Nordamerika. Contoso möchte, dass seine Benutzer in Asien das einmalige Anmelden verwenden und der UPN muss laut App im Format `username@asia.contoso.com` vorliegen. Wenn Sie den **Benutzerprinzipalname** auswählen, wird der Bereich für die einzelnen Benutzer aus Azure AD übernommen, z.B. `contoso.com`. Wählen Sie für Benutzer in Asien, also **Benutzerprinzipalname**, und geben Sie `asia.contoso.com` ein. Daraufhin wird für den UPN des Endbenutzers `username@asia.contoso.com` anstelle von `username@contoso.com` verwendet.
+    Standardmäßig müssen Apps lediglich die Geräte-ID verwenden. Wenn Ihre App den Bereich und die Geräte-ID verwendet, können Sie den Bereich in das Textfeld „Bereich“ eingeben.
 
-      - **Intune-Geräte-ID**: Intune wählt die Intune-Geräte-ID automatisch aus.
+    > [!NOTE]
+    > Der Bereich sollte standardmäßig leer gelassen werden, wenn Sie die Geräte-ID verwenden.
 
-        Standardmäßig müssen Apps lediglich die Geräte-ID verwenden. Wenn Ihre App den Bereich und die Geräte-ID verwendet, können Sie den Bereich in das Textfeld „Bereich“ eingeben.
+  - **Azure AD-Geräte-ID**
 
-        > [!NOTE]
-        > Der Bereich sollte standardmäßig leer gelassen werden, wenn Sie die Geräte-ID verwenden.
+- **Bereich**: Geben Sie den Domänenteil der URL ein. Geben Sie beispielsweise `contoso.com` ein.
+- **URL prefixes that will use Single Sign On** (URL-Präfixe, die Single Sign-On verwenden): **Fügen**Sie alle URLs in Ihrer Organisation hinzu, für die Benutzer eine Single Sign-On-Authentifizierung durchführen müssen.
 
-      - **Azure AD-Geräte-ID**
+  Wenn ein Benutzer beispielsweise mit einer dieser Websites eine Verbindung herstellt, verwendet das iOS-Gerät die Anmeldeinformationen für Single Sign-On. Der Benutzer muss keine zusätzlichen Anmeldeinformationen eingeben. Wenn Sie die mehrstufige Authentifizierung aktiviert haben, müssen Benutzer die zweite Authentifizierungsmethode anwenden.
 
-    - **Bereich**: Geben Sie den Domänenteil der URL ein. Geben Sie beispielsweise `contoso.com` ein.
-    - **URL prefixes that will use Single Sign On** (URL-Präfixe, die Single Sign-On verwenden): **Fügen**Sie alle URLs in Ihrer Organisation hinzu, für die Benutzer eine Single Sign-On-Authentifizierung durchführen müssen.
+  > [!NOTE]
+  > Bei diesen URLs muss es sich um ordnungsgemäß formatierte FQDNs handeln. Bei Apple müssen diese im Format `http://<yourURL.domain>` sein.
 
-        Wenn ein Benutzer beispielsweise mit einer dieser Websites eine Verbindung herstellt, verwendet das iOS-Gerät die Anmeldeinformationen für Single Sign-On. Der Benutzer muss keine zusätzlichen Anmeldeinformationen eingeben. Wenn Sie die mehrstufige Authentifizierung aktiviert haben, müssen Benutzer die zweite Authentifizierungsmethode anwenden.
+  Die URL-Übereinstimmungsmuster müssen entweder mit `http://` oder `https://` beginnen. Es wird ein einfacher Zeichenfolgenabgleich ausgeführt, sodass das URL-Präfix `http://www.contoso.com/` nicht mit `http://www.contoso.com:80/` übereinstimmt. Ab iOS 10.0 oder höher kann ein einzelnes Platzhalterzeichen (\*) verwendet werden, um alle übereinstimmenden Werte anzugeben. Beispielsweise entspricht `http://*.contoso.com/` sowohl `http://store.contoso.com/` als auch `http://www.contoso.com`.
 
-        > [!NOTE]
-        > Bei diesen URLs muss es sich um ordnungsgemäß formatierte FQDNs handeln. Bei Apple müssen diese im Format `http://<yourURL.domain>` sein.
+  Die Muster `http://.com` und `https://.com` stimmen mit allen HTTP- bzw. HTTPS-URLs überein.
 
-        Die URL-Übereinstimmungsmuster müssen entweder mit `http://` oder `https://` beginnen. Es wird ein einfacher Zeichenfolgenabgleich ausgeführt, sodass das URL-Präfix `http://www.contoso.com/` nicht mit `http://www.contoso.com:80/` übereinstimmt. Ab iOS 10.0 oder höher kann ein einzelnes Platzhalterzeichen (\*) verwendet werden, um alle übereinstimmenden Werte anzugeben. Beispielsweise entspricht `http://*.contoso.com/` sowohl `http://store.contoso.com/` als auch `http://www.contoso.com`.
+- **Apps, die Single Sign-On verwenden:** **Fügen Sie Apps auf Endbenutzergeräten hinzu, die Single Sign-On verwenden können**.
 
-        Die Muster `http://.com` und `https://.com` stimmen mit allen HTTP- bzw. HTTPS-URLs überein.
+  Das `AppIdentifierMatches`-Array muss Zeichenfolgen enthalten, die mit App-Bündel-IDs übereinstimmen. Bei diesen Zeichenfolgen kann es sich um exakte Übereinstimmungen (z.B. `com.contoso.myapp`) handeln. Sie können aber auch Präfixübereinstimmungen der Bündel-ID unter Verwendung des Platzhalterzeichens \* angeben. Das Platzhalterzeichen muss nach einem Punkt (.) folgen und kann nur einmal am Ende der Zeichenfolge verwendet werden (z.B. `com.contoso.*`). Wenn ein Platzhalter enthalten ist, erhält jede App, deren Bündel-ID mit dem Präfix beginnt, Zugriff auf das Konto.
 
-    - **Apps, die Single Sign-On verwenden:** **Fügen Sie Apps auf Endbenutzergeräten hinzu, die Single Sign-On verwenden können**.
+  Verwenden Sie den **App-Namen** als benutzerfreundlichen Namen, um die Bündel-ID einfacher identifizieren zu können.
 
-        Das `AppIdentifierMatches`-Array muss Zeichenfolgen enthalten, die mit App-Bündel-IDs übereinstimmen. Bei diesen Zeichenfolgen kann es sich um exakte Übereinstimmungen (z.B. `com.contoso.myapp`) handeln. Sie können aber auch Präfixübereinstimmungen der Bündel-ID unter Verwendung des Platzhalterzeichens \* angeben. Das Platzhalterzeichen muss nach einem Punkt (.) folgen und kann nur einmal am Ende der Zeichenfolge verwendet werden (z.B. `com.contoso.*`). Wenn ein Platzhalter enthalten ist, erhält jede App, deren Bündel-ID mit dem Präfix beginnt, Zugriff auf das Konto.
+- **Zertifikat zum Erneuern der Anmeldeinformationen**: Erfolgt die Authentifizierung anhand von Zertifikaten (nicht Kennwörtern), wählen Sie als Authentifizierungszertifikat das vorhandene SCEP- oder PFX-Zertifikat aus. In der Regel handelt es sich dabei um dasselbe Zertifikat, das dem Benutzer für andere Profile wie VPN, WLAN oder E-Mail bereitgestellt wird.
 
-        Verwenden Sie den **App-Namen** als benutzerfreundlichen Namen, um die Bündel-ID einfacher identifizieren zu können.
-
-    - **Zertifikat zum Erneuern der Anmeldeinformationen**: Erfolgt die Authentifizierung anhand von Zertifikaten (nicht Kennwörtern), wählen Sie als Authentifizierungszertifikat das vorhandene SCEP- oder PFX-Zertifikat aus. In der Regel handelt es sich dabei um dasselbe Zertifikat, das dem Benutzer für andere Profile wie VPN, WLAN oder E-Mail bereitgestellt wird.
-
-3. Klicken Sie zum Speichern Ihrer Änderungen auf **OK**.
+Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="web-content-filter-settings"></a>Filtereinstellungen für Webinhalt
 
 Diese Einstellungen steuern den Browser-URL-Zugriff auf iOS-Geräte.
 
-1. Wählen Sie in den **Einstellungen** die Option **Webinhaltsfilter (nur überwacht)**.
-2. Wählen Sie **Filtertyp** aus. Folgende Optionen sind verfügbar:
+- **Filtertyp**: Wählen, ob bestimmte Websites zugelassen werden sollen. Folgende Optionen sind verfügbar:
 
-    - **URLs konfigurieren**: Verwenden Sie den integrierten Webfilter von Apple, der nach nicht jugendfreien Inhalten wie Anzüglichkeiten oder Obszönitäten sucht. Diese Funktion wertet jede Webseite beim Laden aus und identifiziert und blockiert ungeeignete Inhalte. Sie können auch URLs hinzufügen, die nicht vom Filter überprüft werden sollen. Alternativ können bestimmte URLs blockiert werden, unabhängig von den Apple-Filtereinstellungen.
+  - **URLs konfigurieren**: Verwenden Sie den integrierten Webfilter von Apple, der nach nicht jugendfreien Inhalten wie Anzüglichkeiten oder Obszönitäten sucht. Diese Funktion wertet jede Webseite beim Laden aus und identifiziert und blockiert ungeeignete Inhalte. Sie können auch URLs hinzufügen, die nicht vom Filter überprüft werden sollen. Alternativ können bestimmte URLs blockiert werden, unabhängig von den Apple-Filtereinstellungen.
 
-      - **Zulässige URLs**: **hinzufügen** die URLs, die Sie zulassen möchten. Diese URLs umgehen den Apple-Webfilter.
+    - **Zulässige URLs**: **Fügen** Sie die URLs hinzu, die Sie zulassen möchten. Diese URLs umgehen den Apple-Webfilter.
 
-        > [!NOTE]
+      > [!NOTE]
         > Die eingegebene URLs sind die URLs, die Sie nicht vom Apple-Webfilter überprüfen lassen möchten. Diese URLs sind keine Liste der zulässigen Websites. Um eine Liste der zulässigen Websites zu erstellen, legen Sie **Filtertyp** auf **Nur bestimmte Websites** fest.
 
-        Klicken Sie auf **OK**, um die Änderungen zu speichern.
+      Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
-      - **Blockierte URLs**: Verwenden Sie **Hinzufügen**, um die URLs hinzuzufügen, die Sie unabhängig von den Einstellung für den Apple-Webfilter nicht öffnen möchten.
-
-        Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
-    - **Nur bestimmte Websites** (nur für den Safari-Webbrowser): Diese URLs werden zu den Lesezeichen des Safari-Browsers hinzugefügt. Benutzer dürfen **nur** diese Websites besuchen, der Zugriff auf andere Websites ist nicht möglich. Verwenden Sie diese Option nur, wenn Sie genau wissen, auf welche URLs Benutzer zugreifen können.
-
-      - **URL**: Geben Sie die URL der Website ein, die Sie zulassen möchten. Geben Sie beispielsweise `https://www.contoso.com` ein.
-      - **Pfad als Lesezeichen**: Geben Sie den Pfad zum Speichern des Lesezeichens. Geben Sie beispielsweise `/Contoso/Business Apps` ein. Wenn Sie keinen Pfad angeben, wird das Lesezeichen zum Standardordner für Lesezeichen auf dem Gerät hinzugefügt.
-      - **Titel**: Geben Sie einen beschreibenden Titel für das Lesezeichen ein.
-
-      Wenn Sie keine URLs eingeben, können Endbenutzer nur auf `microsoft.com`, `microsoft.net` und `apple.com` zugreifen. Diese URLs werden von Intune automatisch zugelassen.
+    - **Blockierte URLs**: Verwenden Sie **Hinzufügen**, um die URLs hinzuzufügen, die Sie unabhängig von den Einstellung für den Apple-Webfilter nicht öffnen möchten.
 
       Klicken Sie auf **OK**, um die Änderungen zu speichern.
+
+  - **Nur bestimmte Websites** (nur für den Safari-Webbrowser): Diese URLs werden zu den Lesezeichen des Safari-Browsers hinzugefügt. Benutzer dürfen **nur** diese Websites besuchen, der Zugriff auf andere Websites ist nicht möglich. Verwenden Sie diese Option nur, wenn Sie genau wissen, auf welche URLs Benutzer zugreifen können.
+
+    - **URL**: Geben Sie die URL der Website ein, die Sie zulassen möchten. Geben Sie beispielsweise `https://www.contoso.com` ein.
+    - **Pfad als Lesezeichen**: Geben Sie den Pfad zum Speichern des Lesezeichens. Geben Sie beispielsweise `/Contoso/Business Apps` ein. Wenn Sie keinen Pfad angeben, wird das Lesezeichen zum Standardordner für Lesezeichen auf dem Gerät hinzugefügt.
+    - **Titel**: Geben Sie einen beschreibenden Titel für das Lesezeichen ein.
+
+    Wenn Sie keine URLs eingeben, können Endbenutzer nur auf `microsoft.com`, `microsoft.net` und `apple.com` zugreifen. Diese URLs werden von Intune automatisch zugelassen.
+
+    Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="wallpaper-settings"></a>Hintergrundbild-Einstellungen
 
@@ -296,66 +286,15 @@ Fügen Sie ein benutzerdefiniertes PNG-, JPG- oder JPEG-Bild auf Ihren überwach
 
 Möglicherweise kommt es zu unerwartetem Verhalten, wenn ein Profil ohne Bild einem Gerät mit einem Bild zugewiesen wird. Angenommen, Sie erstellen z.B. ein Profil ohne Bild. Dieses Profil wird dann Geräten zugewiesen, für die bereits Bilder vorhanden sind. In diesem Szenario ändert sich das Bild möglicherweise in den Gerätestandard, oder es wird weiter das ursprüngliche Bild auf dem Gerät verwendet. Dieses Verhalten wird von der MDM-Plattform von Apple kontrolliert und eingeschränkt.
 
-- **Hintergrundbild Anzeigepfad**: Wählen Sie einen Speicherort auf dem Gerät das Bild angezeigt. Folgende Optionen sind verfügbar:
+- **Position für die Anzeige des Hintergrundbilds**: Wählen Sie die Position auf dem Gerät, an dem das Bild angezeigt werden soll. Folgende Optionen sind verfügbar:
   - **Nicht konfiguriert**: ein benutzerdefiniertes Image wird nicht auf dem Gerät hinzugefügt. Das Gerät nutzt den Standard des Betriebssystems.
   - **Sperrbildschirm**: Hinzufügen des Images auf dem Sperrbildschirm angezeigt.
   - **Home-Bildschirm**: Hinzufügen des Images an die Startseite.
-  - **Sperrbildschirm und Startbildschirm**: verwendet das gleiche Image auf dem Sperrbildschirm und home-Bildschirm.
+  - **Sperrbildschirm und Startbildschirm**:Verwendet das gleiche Bild auf dem Sperr- und dem Startbildschirm.
 - **Hintergrundbild**: Laden Sie ein vorhandenes PNG-, JPG- oder JPEG-Bild hoch, das Sie verwenden möchten. Achten Sie darauf, dass die Dateigröße kleiner als 750 KB ist. Sie können ein hinzugefügtes Bild auch **entfernen**.
 
 > [!TIP]
 > Um verschiedene Bilder auf dem Sperrbildschirm und dem Startbildschirm anzuzeigen, erstellen Sie ein Profil mit dem Sperrbildschirmbild. Erstellen Sie ein anderes Profil mit dem Startbildschirmbild. Fügen Sie beide Profile zu Ihren iOS-Benutzer- oder Gerätegruppen hinzu.
-
-## <a name="bundle-ids-for-built-in-ios-apps"></a>Bündel-ID für integrierte iOS-Apps
-
-Die folgende Liste enthält die Bündel-ID einiger gängiger integrierter iOS-Apps. Um die Bündel-ID von anderen Apps zu finden, wenden Sie sich an den Softwarehersteller.
-
-| Paket-ID                   | App-Name     | Herausgeber |
-|-----------------------------|--------------|-----------|
-| com.apple.AppStore          | App Store    | Apple     |
-| com.apple.calculator        | Calculator   | Apple     |
-| com.apple.mobilecal         | Kalender     | Apple     |
-| com.apple.camera            | Kamera       | Apple     |
-| com.apple.mobiletimer       | Clock        | Apple     |
-| com.apple.compass           | Compass      | Apple     |
-| com.apple.MobileAddressBook | Kontakte     | Apple     |
-| com.apple.facetime          | FaceTime     | Apple     |
-| com.apple.DocumentsApp      | Dateien        | Apple     |
-| com.apple.mobileme.fmf1     | Find Friends | Apple     |
-| com.apple.mobileme.fmip1    | Find iPhone  | Apple     |
-| com.apple.gamecenter        | Gamecenter  | Apple     |
-| com.apple.mobilegarageband  | GarageBand   | Apple     |
-| com.apple.Health            | Integrität       | Apple     |
-| com.apple.Home              | -Startseite         | Apple     |
-| com.apple.iBooks            | iBooks       | Apple     |
-| com.apple.iMovie            | iMovie       | Apple     |
-| com.apple.itunesconnect.mobile | iTunes Connect | Apple |
-| com.apple.MobileStore       | iTunes Store | Apple     |
-| com.apple.itunesu           | iTunes U     | Apple     |
-| com.apple.Keynote           | Keynote      | Apple     |
-| com.apple.mobilemail        | Mail         | Apple     |
-| com.apple.Maps              | Zuordnungen         | Apple     |
-| com.apple.MobileSMS         | Messages     | Apple     |
-| com.apple.Music             | Musik        | Apple     |
-| com.apple.news              | News         | Apple     |
-| com.apple.mobilenotes       | Hinweise        | Apple     |
-| com.apple.Numbers           | Zahlen      | Apple     |
-| com.apple.Pages             | Seiten        | Apple     |
-| com.apple.Photo-Booth       | Photo Booth  | Apple     |
-| com.apple.mobileslideshow   | Fotos       | Apple     |
-| com.apple.podcasts          | Podcasts     | Apple     |
-| com.apple.reminders         | Reminders    | Apple     |
-| com.apple.mobilesafari      | Safari       | Apple     |
-| com.apple.Preferences       | Einstellungen     | Apple     |
-| com.apple.SiriViewService   | Siri         | Apple     |
-| com.apple.stocks            | Stocks       | Apple     |
-| com.apple.tips              | Tipps         | Apple     |
-| com.apple.TV                | TV           | Apple     |
-| com.apple.videos            | Videos       | Apple     |
-| com.apple.VoiceMemos        | VoiceMemos   | Apple     |
-| com.apple.Passbook          | Wallet       | Apple     |
-| com.apple.Bridge            | Überwachen        | Apple     |
-| com.apple.weather           | Weather      | Apple     |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

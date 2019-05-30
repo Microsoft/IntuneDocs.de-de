@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 05/20/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5da0e5f14d3b87827d42d48341fa7080d73c567
-ms.sourcegitcommit: ac3fe7504e58c74495a560a68eae2b784a4f7d46
+ms.openlocfilehash: 9b530d509e87871d30f015cf6bc77410660563da
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65942051"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043353"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 

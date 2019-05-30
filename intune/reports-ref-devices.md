@@ -167,10 +167,10 @@ Die Entität **EnrollmentTypes** gibt an, ob ein Gerät einem Unternehmen oder e
 |---------|------------|--------|
 | ownerTypeID |Eindeutiger Bezeichner des Besitzertyps | |
 | ownerTypeKey |Eindeutige Bezeichner des Besitzertyps im Data Warehouse – Ersatzschlüssel | |
-| ownerTypeName |Stellt den Besitzertypen der Geräte dar:  <br>Unternehmen – Gerät gehört einem Unternehmen. <br>Personal (Privat): Das Gerät befindet sich im Privatbesitz (BYOD).  <br>Unknown (Unbekannt): Es liegen keine Informationen zu diesem Gerät vor. |Unternehmen Personal, Unknown |
+| ownerTypeName |Stellt den Besitzertypen der Geräte dar:  <br>Corporate (Unternehmen): Das Gerät gehört einem Unternehmen. <br>Personal (Privat): Das Gerät befindet sich im Privatbesitz (BYOD).  <br>Unknown (Unbekannt): Es liegen keine Informationen zu diesem Gerät vor. |Corporate Personal Unknown |
 
 > [!Note]  
-> Für die `ownerTypeName` in Azure AD, wenn Sie dynamische Gruppen für Geräte zu erstellen, müssen Sie den Filterwert festlegen `deviceOwnership` als `Company`. Weitere Informationen finden Sie unter [Regeln für Geräte,](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
+> Für `ownerTypeName` in AzureAD müssen Sie beim Erstellen dynamischer Gruppen für Geräte den Filterwert `deviceOwnership` als `Company` festlegen. Weitere Informationen finden Sie unter [Regeln für Geräte](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="managementstates"></a>ManagementStates
 

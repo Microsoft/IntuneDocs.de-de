@@ -6,9 +6,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 05/09/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3e9c9c538f9311da4c383b5de24048eb836ab0a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 8fccf991f93a1b2804d31418bdb0f84edf681c92
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61513442"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66041590"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Hinzufügen und Zuweisen von Mobile Threat Defense-Apps (MTD) mit Intune
 
@@ -59,6 +58,7 @@ Wählen Sie den Abschnitt aus, der Ihrem MTD-Anbieter entspricht:
   - [Zimperium](#configure-zimperium-apps)
   - [Pradeo](#configure-pradeo-apps)
   - [Better Mobile](#configure-better-mobile-apps)
+  - [Sophos Mobile](#configure-sophos-apps)
 
 ### <a name="configure-lookout-for-work-apps"></a>Konfigurieren von Lookout for Work-Apps
 
@@ -142,7 +142,18 @@ Wählen Sie den Abschnitt aus, der Ihrem MTD-Anbieter entspricht:
 
     - Sehen Sie sich die Anleitungen für [das Hinzufügen von iOS Store-Apps zu Microsoft Intune](store-apps-ios.md) an. Verwenden Sie diese [URL des ActiveShield-App Stores](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4) in **Schritt 12** im Abschnitt **Konfigurieren von App-Informationen**.
 
+
+### <a name="configure-sophos-apps"></a>Konfigurieren von Sophos-Apps  
+- **Android**
+
+    - Sehen Sie sich die Anleitungen für [das Hinzufügen von Android Store-Apps zu Microsoft Intune](store-apps-android.md) an. Verwenden Sie diese [Store-URL der Sophos-App](https://play.google.com/store/apps/details?id=com.sophos.smsec) in **Schritt 7**.
+
+ - **iOS**
+
+    - Sehen Sie sich die Anleitungen für [das Hinzufügen von iOS Store-Apps zu Microsoft Intune](store-apps-ios.md) an. Verwenden Sie diese [URL des ActiveShield-App Stores](https://itunes.apple.com/us/app/sophos-mobile-security/id1086924662?mt=8) in **Schritt 12** im Abschnitt **Konfigurieren von App-Informationen**.
+
 ## <a name="configure-your-mtd-apps-with-an-ios-app-configuration-policy"></a>Konfigurieren der MTD-Apps mit einer iOS-App-Konfigurationsrichtlinie
+
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Konfigurationsrichtlinie für Lookout for Work-Apps
 
@@ -157,13 +168,13 @@ Wählen Sie den Abschnitt aus, der Ihrem MTD-Anbieter entspricht:
 
     -   Wechseln Sie zu **Einstellungen**, und wählen Sie unter **Integrationen** die Option **Intune** aus. Wählen Sie **EMM Integration Selection** (EMM-Integrationsauswahl) aus. Wählen Sie **Microsoft** aus, und speichern Sie Ihre Auswahl.
 
-    -   Klicken Sie auf den Link **Integration setup files** (Integrationssetupdateien), und speichern Sie die generierte \*.zip-Datei. Die ZIP-Datei enthält die Datei „***.plist**“, die zum Erstellen der iOS-App-Konfigurationsrichtlinie in Intune verwendet wird.
+    -   Klicken Sie auf den Link **Integration setup files** (Integrationssetupdateien), und speichern Sie die generierte \*.zip-Datei. Die ZIP-Datei enthält die Datei „* **.plist**“, die zum Erstellen der iOS-App-Konfigurationsrichtlinie in Intune verwendet wird.
 
     -   In den Anweisungen für [die Verwendung der iOS-App-Konfigurationsrichtlinien von Microsoft Intune](app-configuration-policies-use-ios.md) erfahren Sie, wie Sie die iOS-App-Konfigurationsrichtlinie für SEP Mobile hinzufügen.
 
-    - Verwenden Sie in **Schritt 8** die Option **XML-Daten eingeben**, kopieren Sie den Inhalt aus der Datei „***.plist**“, und fügen Sie den Inhalt in den Text der Konfigurationsrichtlinie ein.
+    - Verwenden Sie in **Schritt 8** die Option **XML-Daten eingeben**, kopieren Sie den Inhalt aus der Datei „* **.plist**“, und fügen Sie den Inhalt in den Text der Konfigurationsrichtlinie ein.
 
-> [!NOTE]
+> [!NOTE]  
 > Wenn Sie die Dateien nicht abrufen können, wenden Sie sich an den [Symantec Endpoint Protection Mobile Enterprise Support](https://support.symantec.com/en_US/contact-support.html).
 
 ### <a name="check-point-sandblast-mobile-app-configuration-policy"></a>Konfigurationsrichtlinie für Check Point SandBlast Mobile-Apps
@@ -192,6 +203,9 @@ Wählen Sie den Abschnitt aus, der Ihrem MTD-Anbieter entspricht:
 <string>{{udidlast4digits}}</string>
 </dict>
 ```
+### <a name="pradeo-app-configuration-policy"></a>Pradeo-App-Konfigurationsrichtlinie
+Pradeo unterstützt keine App-Konfigurationsrichtlinie für iOS.  Wenn Sie eine konfigurierte App erhalten möchten, arbeiten Sie stattdessen mit Pradeo zusammen, um benutzerdefinierte IPA- und APK-Dateien zu implementieren, die mit den gewünschten Einstellungen vorkonfiguriert sind.
+
 
 ### <a name="better-mobile-app-configuration-policy"></a>Konfigurationsrichtlinie für Better Mobile-Apps
 
@@ -208,6 +222,9 @@ Wählen Sie den Abschnitt aus, der Ihrem MTD-Anbieter entspricht:
 <string>{{userprincipalname}}</string>
 </dict>
 ```
+
+### <a name="sophos-mobile-app-configuration-policy"></a>Konfigurationsrichtlinie für Sophos Mobile-Apps
+Erstellen Sie die iOS-App-Konfigurationsrichtlinie wie im Artikel [zur Verwendung der iOS-App-Konfigurationsrichtlinie](app-configuration-policies-use-ios.md) beschrieben.
 
 ## <a name="assign-apps-to-groups"></a>Zuweisen von Apps zu Gruppen
 

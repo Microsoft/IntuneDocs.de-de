@@ -44,6 +44,6 @@ Die Windows-Firewall hilft Ihnen, Hacker, Schadsoftware und andere Bedrohungen v
 
 Eine Ihrer wichtigsten Aufgaben als IT-Administrator besteht darin, die von Ihnen [verwalteten Windows-PCs frei von Schadsoftware und Viren zu halten](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md). Endpoint Protection kann in Intune integriert werden, um Echtzeitschutz vor Schadsoftwarebedrohungen zu bieten, Schadsoftwaredefinitionen auf dem aktuellen Stand zu halten und Computer automatisch zu überprüfen. Endpoint Protection bietet außerdem Tools, mit denen Sie Angriffe durch Schadsoftware kontrollieren und überwachen können.
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 
-[Allgemeine Fragen, Probleme und Lösungen für das Geräterichtlinien und Profile](device-profile-troubleshoot.md)
+[Häufige Fragen, Probleme und entsprechende Behebungen mit Geräterichtlinien und -profilen](device-profile-troubleshoot.md)

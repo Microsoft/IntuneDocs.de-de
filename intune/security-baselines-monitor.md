@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: a013698e56b342953e52296270e7571a257db860
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61506985"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135090"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Überwachen der Sicherheitsbaseline und von Profilen in Microsoft Intune  
 
@@ -35,7 +35,7 @@ Im Artikel [Erstellen einer Windows 10-Sicherheitsbaseline in Intune](security-b
 
 Wenn Sie eine Baseline überwachen, erhalten Sie basierend auf den Empfehlungen von Microsoft Einblicke in den Sicherheitsstatus Ihrer Geräte. Diese können Sie im Bereich „Übersicht“ der Sicherheitsbaseline in der Intune-Konsole abrufen.  Im Anschluss an die Zuweisung einer Baseline dauert es 24 Stunden, bis die Daten angezeigt werden. Änderungen, die danach vorgenommen werden, werden innerhalb von sechs Stunden angezeigt.  
 
-Melden Sie sich beim [Intune-Portal](https://aka.ms/intuneportal) an, um Überwachungsdaten für die Baseline und die Geräte anzuzeigen. Klicken Sie als Nächstes auf **Sicherheitsbaselines (Vorschau)**, wählen Sie eine Baseline aus, und rufen Sie den Bereich **Übersicht** ab.
+Melden Sie sich beim [Intune-Portal](https://go.microsoft.com/fwlink/?linkid=2090973) an, um Überwachungsdaten für die Baseline und die Geräte anzuzeigen. Wählen Sie als Nächstes **Gerätesicherheit** > **Sicherheitsbaselines (Vorschau)** , dann eine Baseline aus, und zeigen Sie den Bereich **Übersicht** an.
 
 Der Bereich **Übersicht** umfasst zwei Methoden zum Überwachen von Statusangaben:
 - **Geräteansicht:** eine Zusammenfassung der Anzahl der Geräte, die sich in den einzelnen Statuskategorien der Baseline befinden  

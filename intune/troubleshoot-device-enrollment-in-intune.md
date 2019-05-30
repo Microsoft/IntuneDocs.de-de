@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 11/09/2018
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -19,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06a8bd8d0a46b7d7eed8efb4cb8b4c2d4e21f77d
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 6175fca13f1883338b7f5858538728132183b8db
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61509230"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040602"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Behandlung von Problemen bei der Geräteregistrierung in Microsoft Intune
 
@@ -285,7 +284,7 @@ In der folgenden Tabelle sind Fehler aufgeführt, die bei der Registrierung von 
 
 **Lösung:** Teilen Sie die folgenden Lösungen mit Ihren Endbenutzern, damit Sie wieder Zugriff auf Unternehmensressourcen erhalten.
 
-Wenn Benutzer die iOS-Unternehmensportal-App starten, können sie sehen, ob deren Gerät keinen Kontakt mehr mit Intune hat. Wenn erkannt wird, dass kein Kontakt mehr mit Intune besteht, wird automatisch versucht, eine Synchronisation mit Intune durchzuführen, um die Verbindung wieder herzustellen (Benutzer sehen die **Synchronisierungsversuch...**- Meldung).
+Wenn Benutzer die iOS-Unternehmensportal-App starten, können sie sehen, ob deren Gerät keinen Kontakt mehr mit Intune hat. Wenn erkannt wird, dass kein Kontakt mehr mit Intune besteht, wird automatisch versucht, eine Synchronisation mit Intune durchzuführen, um die Verbindung wieder herzustellen (Benutzer sehen die **Synchronisierungsversuch...** - Meldung).
 
   ![Versuch, Benachrichtigungen zu synchronisieren](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
@@ -465,7 +464,7 @@ Das Kontozertifikat des vorherigen Kontos ist immer noch auf dem Computer vorhan
 1. Geben Sie im Menü **Start** **Ausführen** -> **MMC** ein.
 1. Wählen Sie **Datei** > **Snap-Ins hinzufügen/entfernen** aus.
 1. Doppelklicken Sie auf **Zertifikate**, wählen Sie **Computerkonto**,  >  **Weiter**, und wählen Sie die Option **Lokaler Computer** aus.
-1. Doppelklicken Sie auf **Zertifikate (lokaler Computer)**, und wählen Sie **Persönlich/Zertifikate** aus.
+1. Doppelklicken Sie auf **Zertifikate (lokaler Computer)** , und wählen Sie **Persönlich/Zertifikate** aus.
 1. Suchen Sie nach dem von Sc_Online_Issuing ausgestellten Intune-Zertifikat, und löschen Sie es, falls vorhanden.
 1. Falls der folgende Registrierungsschlüssel vorhanden ist, löschen Sie ihn: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey**. Löschen Sie auch eventuell vorhandene untergeordnete Schlüssel.
 1. Versuchen Sie, eine erneute Registrierung durchzuführen.
@@ -494,7 +493,7 @@ Das Kontozertifikat des vorherigen Kontos ist immer noch auf dem Computer vorhan
 |0x80043008, 0x80CF3008|Microsoft-Onlinedienst zur Updateverwaltung konnte nicht gestartet werden.|Wenden Sie sich dazu an den Microsoft Support, wie unter [Anfordern von Support für Microsoft Intune](get-support.md) beschrieben.|
 |0x80043009, 0x80CF3009|Der Clientcomputer ist bereits für den Dienst registriert.|Sie müssen den Clientcomputer abkoppeln, bevor sie ihn erneut für den Dienst registrieren können.|
 |0x8004300B, 0x80CF300B|Das Installationspaket für die Clientsoftware kann nicht ausgeführt werden, da die Windows-Version auf dem Client nicht unterstützt wird.|Die auf dem Client ausgeführte Windows-Version wird von Intune nicht unterstützt.|
-|0xAB2|Fehler beim Zugriff von Windows Installer auf die VBScript-Laufzeit für die benutzerdefinierte Aktion.|Dieser Fehler wird von einer benutzerdefinierten Aktion verursacht, die auf DLLs (Dynamic-Link Libraries) aufbaut. Um den DLL-Fehler zu behandeln, benötigen Sie möglicherweise die Tools, die unter [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues (Microsoft-Support KB198038: Hilfreiche Tools bei Problemen mit der Erstellung und Bereitstellung von Paketen)](https://support.microsoft.com/kb/198038) beschrieben werden.|
+|0xAB2|Fehler beim Zugriff von Windows Installer auf die VBScript-Laufzeit für die benutzerdefinierte Aktion.|Dieser Fehler wird von einer benutzerdefinierten Aktion verursacht, die auf DLLs (Dynamic-Link Libraries) aufbaut. Um den DLL-Fehler zu behandeln, benötigen Sie möglicherweise die Tools, die im [Artikel 198038 der Microsoft-Support-KB: Useful Tools for Package and Deployment Issues (Microsoft-Support KB198038: Hilfreiche Tools bei Problemen mit der Erstellung und Bereitstellung von Paketen)](https://support.microsoft.com/kb/198038) beschrieben werden.|
 |0x80cf0440|Die Verbindung zum Dienstendpunkt wurde abgebrochen.|Test- oder kostenpflichtige Konto wird angehalten. Erstellen Sie ein neues Test- oder kostenpflichtiges Konto und registrieren Sie sich erneut.|
 
 

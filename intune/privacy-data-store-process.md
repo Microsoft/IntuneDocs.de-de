@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 05/18/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b499f3171910f28a2d190d28e8ab6e945fa463a
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 64a66fde0f501bf2e1e7f6b0cc98eddd871717b2
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511267"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050369"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Datenspeicherung und -verarbeitung in Intune
 

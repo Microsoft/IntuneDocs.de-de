@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4a1c81b1b2f54b15397e9e1d7451ee7ed911848
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 024c4eb37d1b9991db6d1ca0b5c528e9dd333422
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798742"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764792"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Schnellstart: Hinzufügen und Zuweisen einer Client-App
 
@@ -51,7 +51,7 @@ Führen Sie die folgenden Schritte aus, um eine App zu Intune hinzuzufügen:
 4. Klicken Sie auf **OK**, um die standardmäßig ausgewählten Apps zu akzeptieren.
 5. Klicken Sie auf **Informationen zur App-Suite**.
 6. Geben Sie **Microsoft Office 365-App-Suite** als **Name der Suite** ein.
-7. Geben Sie **Die Microsoft Office 365-App-Suite.** als **Beschreibung der Suite** ein.
+7. Geben Sie **Microsoft Office 365-App-Suite** als **Beschreibung der Suite** ein.
 8. Klicken Sie neben **Diese App als ausgewählte App im Unternehmensportal anzeigen** auf **Ja**.
 9. Klicken Sie auf **OK**.
 

@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ab718cd087757211ad4e84cbba39808cf9de7d3
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
+ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61515511"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65619436"
 ---
-# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot (Vorschauversion)
+# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot
 Sie können in Azure AD Hybrid eingebundene Geräte mithilfe von Intune und Windows Autopilot einrichten. Führen Sie dazu die Schritte in diesen Artikel durch.
 
 ## <a name="prerequisites"></a>Voraussetzungen
@@ -35,7 +35,7 @@ Konfigurieren Sie Ihre [Azure AD Hybrid-Geräte](https://docs.microsoft.com/azur
 Für die Registrierung müssen die Geräte über Folgendes verfügen:
 - Windows 10 mit dem [Update von Oktober 2018](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/)
 - Internetverbindung
-- Zugriff auf die Active Directory-Instanz (VPN-Verbindung wird nicht unterstützt)
+- Greifen Sie auf Ihre Active Directory-Instanz zu (VPN-Verbindung wird zu diesem Zeitpunkt nicht unterstützt).
 - Sie müssen eingerichtet worden sein.
 - Die Fähigkeit, den Domänencontroller der Domäne zu pingen, der Sie beitreten möchten
 
@@ -75,7 +75,7 @@ Die Organisationseinheit, der die Berechtigung zum Erstellen von Computern gewä
 
     ![Menübefehl „Delegate Control...“ (Objektverwaltung zuweisen...)](media/windows-autopilot-hybrid/delegate-control.png)
 
-1. Wählen Sie im Assistenten zum Zuweisen der **Objektverwaltung** die Optionen **Weiter** > **Hinzufügen...** > **Objekttypen** aus.
+1. Wählen Sie im Assistenten zum Zuweisen der **Objektverwaltung** die Optionen **Weiter** > **Hinzufügen...**  > **Objekttypen** aus.
 
 1. Aktivieren Sie im Bereich **Objekttypen** das Kontrollkästchen **Computer**, und klicken Sie dann auf **OK**.
 
@@ -107,14 +107,14 @@ Die Organisationseinheit, der die Berechtigung zum Erstellen von Computern gewä
 Der Intune-Connector für Azure AD muss auf einem Computer mit Windows Server 2016 oder höher installiert werden. Der Computer muss zudem über Internetzugriff und eine Active Directory-Instanz verfügen. Für höhere Skalierbarkeit und Verfügbarkeit oder Unterstützung mehrerer Active Directory-Domänen können Sie mehrere Connectors in der Umgebung installieren. Es wird empfohlen, den Connector auf einem Server zu installieren, auf dem keine anderen Intune-Connectors ausgeführt werden.
 
 1. Stellen Sie sicher, dass Sie ein Language Pack installiert und konfiguriert haben, wie unter [Sprachanforderungen für den Intune-Connector (Vorschau)](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector) beschrieben wird.
-2. Klicken Sie unter [Intune](https://aka.ms/intuneportal) auf **Geräteregistrierung** > **Windows-Registrierung** > **Intune-Connector für Active Directory (Vorschau)** > **Connector hinzufügen**. 
+2. Klicken Sie unter [Intune](https://aka.ms/intuneportal) auf **Geräteregistrierung** > **Windows-Registrierung** > **Intune-Connector für Active Directory (Vorschau)**  > **Connector hinzufügen**. 
 3. Folgen Sie den Anweisungen, um den Connector herunterzuladen.
 4. Öffnen Sie die heruntergeladene Connectorsetupdatei (*ODJConnectorBootstrapper.exe*), um den Connector zu installieren.
 5. Klicken Sie am Ende des Setups auf **Konfigurieren**.
 6. Klicken Sie auf **Sign In** (Anmelden).
 7. Geben Sie die Anmeldedaten für die Rolle „Globaler Administrator“ oder „Intune-Administrator“ ein.  
    Dem Benutzerkonto muss eine Intune-Lizenz zugewiesen werden.
-8. Navigieren Sie zu **Geräteregistrierung** > **Windows-Registrierung** > **Intune-Connector für Active Directory (Vorschau)**, und stellen Sie sicher, dass der Verbindungsstatus **Active** (Aktiv) ist.
+8. Navigieren Sie zu **Geräteregistrierung** > **Windows-Registrierung** > **Intune-Connector für Active Directory (Vorschau)** , und stellen Sie sicher, dass der Verbindungsstatus **Active** (Aktiv) ist.
 
 > [!NOTE]
 > Nach der Anmeldung im Connector dauert es möglicherweise einige Minuten, bis er in [Intune](https://aka.ms/intuneportal) angezeigt wird. Er wird nur angezeigt, wenn er mit Intune kommunizieren kann.
@@ -174,7 +174,7 @@ Nachdem Ihre Autopilot-Geräte *registriert* wurden, werden sie an vier Stellen 
 - Im Bereich **Alle Geräte** unter Azure Active Directory im Azure-Portal. Klicken Sie auf **Geräte** > **Alle Geräte**.
 - Im Bereich **Alle Geräte** unter Intune im Azure-Portal. Klicken Sie auf **Geräte** > **Alle Geräte**.
 
-Nachdem Ihre Autopilot-Geräte registriert wurden, werden die Gerätenamen in den Hostnamen des Geräts geändert. Standardmäßig beginnt der Hostname mit *DESKTOP-*.
+Nachdem Ihre Autopilot-Geräte registriert wurden, werden die Gerätenamen in den Hostnamen des Geräts geändert. Standardmäßig beginnt der Hostname mit *DESKTOP-* .
 
 
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Erstellen und Zuweisen eines Autopilot-Bereitstellungsprofils
@@ -211,7 +211,14 @@ Es dauert etwa 15 Minuten, bis sich der Status des Geräteprofils von *Nicht zug
 1. Wählen Sie **Einstellungen** aus, und geben Sie anschließend ein **Computernamenspräfix**, einen **Domänennamen** und optional eine **Organisationseinheit** im [DN-Format](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name) ein. 
 1. Klicken Sie auf **OK** > **Erstellen**.  
     Das Profil wird erstellt und in der Liste angezeigt.
-1. Um das Profil zuzuweisen, führen Sie die Schritte unter [Zuweisen eines Geräteprofils](device-profile-assign.md#assign-a-device-profile) aus. 
+1. Um das Profil zuzuweisen, führen Sie die Schritte unter [Zuweisen eines Geräteprofils](device-profile-assign.md#assign-a-device-profile) aus, und weisen Sie das Profil derselben Gruppe zu, die beim Schritt [Erstellen einer Gerätegruppe](windows-autopilot-hybrid.md#create-a-device-group) verwendet wurde.
+   - Bereitstellen mehrerer Domänenbeitrittsprofile
+   
+     ein. Erstellen Sie eine dynamische Gruppe, die alle Ihre Autopilot-Geräte mit einem bestimmten Autopilot-Bereitstellungsprofil enthält. Geben Sie dazu „(device.enrollmentProfileName -eq ‚Autopilot-Profilname‘)“ ein. 
+     
+     b. Ersetzen Sie ‚Autopilot-Profilname‘ durch den Anzeigenamen des Profils, das Sie unter [Erstellen und Zuweisen eines Autopilot-Bereitstellungsprofils](windows-autopilot-hybrid.md#create-and-assign-an-autopilot-deployment-profile) erstellt haben. 
+     
+     c. Erstellen Sie mehrere Autopilot-Bereitstellungsprofile, und weisen Sie dieses Gerät dem Profil zu, das Sie in dieser dynamischen Gruppe angegeben haben.
 
 > [!NOTE]
 > Die Benennungsfunktionen für Windows Autopilot für Azure AD Hybrid Join unterstützen keine Variablen wie %SERIAL%. Sie unterstützen ausschließlich Präfixe für den Computernamen.

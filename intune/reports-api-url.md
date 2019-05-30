@@ -8,7 +8,6 @@ ms.author: erikre
 manager: dougeby
 ms.date: 02/25/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50be11f9ada92670c201fc2540499effa5a7edef
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
-ms.translationtype: HT
+ms.openlocfilehash: 122a7eef56f2850fced164a37b518f650ed2ecdf
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58798498"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045872"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Endpunkt der Intune Data Warehouse-API
 
@@ -31,7 +30,7 @@ Sie können die Intune-Data Warehouse-API mit einem Konto mit bestimmten rollenb
 
 [!INCLUDE [reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
-## <a name="authorization"></a>Authorization
+## <a name="authorization"></a>Autorisierung
 
 Azure Active Directory (Azure AD) bietet Ihnen über OAuth 2.0 die Möglichkeit, den Zugriff auf Webanwendungen und Web-APIs in Ihrem Azure AD-Mandanten zu autorisieren. Dieser Leitfaden ist sprachenunabhängig und beschreibt, wie HTTP-Nachrichten gesendet und empfangen werden können, ohne Open Source-Bibliotheken zu verwenden. Der Codefluss zur Autorisierung mit OAuth 2.0 wird in [section 4.1 (Abschnitt 4.1)](https://tools.ietf.org/html/rfc6749#section-4.1) der OAuth 2.0-Spezifikation beschrieben.
 
@@ -64,7 +63,7 @@ Sie können die neuesten Funktionen des Data Warehouse mithilfe der Betaversion 
 
 ## <a name="odata-query-options"></a>OData-Abfrageoptionen
 
-Die aktuelle Version unterstützt die OData-Abfrageparameter `$filter`, `$select`, `$skip,` und `$top`. In `$filter`, nur `DateKey` oder `RowLastModifiedDateTimeUTC` kann unterstützt werden, wenn die Spalten gelten, und andere Eigenschaften eine ungültige Anforderung auslösen würde.
+Die aktuelle Version unterstützt die OData-Abfrageparameter `$filter`, `$select`, `$skip,` und `$top`. In `$filter` kann nur `DateKey` oder `RowLastModifiedDateTimeUTC` unterstützt werden, wenn die Spalten in Frage kommen und andere Eigenschaften eine fehlerhafte Anforderung auslösen würden.
 
 ## <a name="datekey-range-filters"></a>DateKey-Bereichsfilter
 
@@ -84,4 +83,4 @@ Die aktuelle Version unterstützt die OData-Abfrageparameter `$filter`, `$select
 |    `$filter=DateKey eq 20180214`                                 |    Vollständig                                      |    Gibt Daten mit `DateKey` gleich 20180214 zurück.                                                    |
 |    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Vollständig                                      |    Gibt Daten mit `DateKey` zwischen 20180214 und 20180220 zurück.                                     |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Vollständig                                      |    Gibt Daten mit `DateKey` gleich 20180214 zurück. `maxhistorydays` wird ignoriert.                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Vollständig                                       |    Zurückgeben von Daten mit `RowLastModifiedDateTimeUTC` ist größer als oder gleich `2018-02-21T23:18:51.3277273Z`                             |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Vollständig                                       |    Rückgabedaten, bei denen `RowLastModifiedDateTimeUTC` größer oder gleich `2018-02-21T23:18:51.3277273Z` ist                             |

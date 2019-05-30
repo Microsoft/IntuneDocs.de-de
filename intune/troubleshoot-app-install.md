@@ -28,11 +28,11 @@ ms.locfileid: "58799500"
 
 Auf Geräten, die mit Microsoft Intune MDM verwaltet werden, können App-Installationen manchmal fehlschlagen. In diesen Fällen kann es schwierig sein, die Fehlerursache zu verstehen oder das Problem zu beheben. Microsoft Intune stellt Details zu fehlgeschlagenen App-Installationen bereit. So können Helpdeskmitarbeiter und Intune-Administratoren App-Informationen nutzen, um Benutzern bei ihren Anliegen zu helfen. Der Intune-Bereich „Problembehandlung“ stellt Fehlerdetails bereit, einschließlich Informationen zu verwalteten Apps auf Benutzergeräten. Details zum End-to-End-Lebenszyklus einer App finden Sie unter dem jeweiligen Gerät im Bereich **Verwaltete Apps**. Sie können Installationsprobleme ansehen, z. B. wann die App erstellt, geändert, ausgerichtet und auf einem Gerät bereitgestellt wurde. 
 
-## <a name="app-troubleshooting-details"></a>Problembehandlung bei App-details
+## <a name="app-troubleshooting-details"></a>Details zur Problembehandlung von Apps
 
 Intune stellt anhand von Apps, die auf dem jeweiligen Benutzergerät installiert sind, App-Informationen zur Problembehandlung bereit.
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com).
+1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie im Bereich **Intune** die Option **Problembehandlung** aus.
 4. Klicken Sie auf **Benutzer auswählen**, um einen Benutzer auszuwählen, für den ein Problem behoben werden muss. Der Bereich **Benutzer auswählen** wird angezeigt.
@@ -53,46 +53,46 @@ Die Details zum App-Installationsfehler weisen auf das Problem hin. Anhand diese
 > [!Note]  
 > Sie können auch auf den Bereich **Problembehandlung** zugreifen, indem Sie in Ihrem Browser zu [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) navigieren.
 
-## <a name="win32-app-installation-troubleshooting"></a>Problembehandlung bei Win32-app-installation
+## <a name="win32-app-installation-troubleshooting"></a>Problembehandlung bei der Installation von Win32-Apps
 
-Wählen Sie die Win32-app, die die Intune-Verwaltungserweiterung mit bereitgestellt wurde. Sie können auswählen, die **Sammeln von Protokollen** option, wenn die Win32-app-Installation ein Fehler auftritt. 
+Wählen Sie die Win32-App aus, die über die Intune-Verwaltungserweiterung bereitgestellt wurde. Wenn die Installation Ihrer Win32-App fehlschlägt, können Sie die Option **Protokolle sammeln** auswählen. 
 
 > [!IMPORTANT]
-> Die **Sammeln von Protokollen** Option ist nicht aktiviert, wenn die Win32-app auf dem Gerät wurde erfolgreich installiert wurde.<p>Bevor Sie die Win32-app-Protokollinformationen erfassen können, muss die Intune-Verwaltungserweiterung auf dem Windows-Client installiert werden. Die Intune-Verwaltungserweiterung wird installiert, wenn ein PowerShell-Skript oder eine Win32-App für eine Benutzer- oder Gerätesicherheitsgruppe bereitgestellt wird. Weitere Informationen finden Sie unter [Intune-Verwaltungserweiterung - Voraussetzungen](intune-management-extension.md#prerequisites).
+> Die Option **Protokolle sammeln** wird nicht aktiviert, wenn die Win32-App erfolgreich auf dem Gerät installiert wurde.<p>Bevor Sie Protokollinformationen für eine Win32-App sammeln können, muss die Intune-Verwaltungserweiterung auf dem Windows-Client installiert werden. Die Intune-Verwaltungserweiterung wird installiert, wenn ein PowerShell-Skript oder eine Win32-App für eine Benutzer- oder Gerätesicherheitsgruppe bereitgestellt wird. Weitere Informationen finden Sie unter [Intune-Verwaltungserweiterung – Voraussetzungen](intune-management-extension.md#prerequisites).
 
-### <a name="collect-log-file"></a>Sammeln Sie die Protokolldatei
+### <a name="collect-log-file"></a>Sammeln von Protokollen
 
-Um die Installationsprotokolle der Win32-app zu erfassen, und führen Sie zuerst die Schritte im Abschnitt [App, die Informationen für die Problembehandlung](troubleshoot-app-install.md#app-troubleshooting-details). Fahren Sie mit den folgenden Schritten:
+Wenn Sie Ihre Win32-App-Installationsprotokolle sammeln möchten, führen Sie zunächst die Schritte aus, die im Abschnitt [Details zur Problembehandlung von Apps](troubleshoot-app-install.md#app-troubleshooting-details) beschrieben sind. Fahren Sie anschließend mit den folgenden Schritten fort:
 
-1. Klicken Sie auf die **Sammeln von Protokollen** option die **Installationsdetails** Blatt.
+1. Klicken Sie auf dem Blatt **Installationsdetails** auf **Protokolle sammeln**.
 
     <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
 
-2. Geben Sie Dateipfade mit Dateinamen, die Datei protokollsammelprozess beginnen, und klicken Sie auf **OK**.
+2. Geben Sie Dateipfade mit Protokolldateinamen an, um die Protokolldateierfassung zu starten, und klicken Sie auf **OK**.
     
     > [!NOTE]
-    > Protokollsammlung dauert weniger als zwei Stunden. Unterstützte Dateitypen: *log, txt, dmp, CAB, ZIP, XML, EVTX und .evtl*. Maximal 25 Dateipfade sind zulässig.
+    > Die Protokollsammlung dauert weniger als zwei Stunden. Unterstützte Dateitypen: *.log, .txt, .dmp, .cab, .zip, .xml, .evtx und .evtl*. Maximal 25 Dateipfade sind zulässig.
 
-3. Die Protokolldateien erfasst wurden, wählen Sie die **Protokolle** Link zum Herunterladen der Protokolldateien.
+3. Nachdem die Protokolldateien gesammelt wurden, können Sie auf den Link **Protokolle** klicken, um die Protokolldateien herunterzuladen.
 
     <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
 
     > [!NOTE]
-    > Eine Benachrichtigung wird angezeigt, der angibt, der des Erfolgs der Protokollsammlung app.
+    > Eine Benachrichtigung über den Erfolg der App-Protokollsammlung wird angezeigt.
 
-#### <a name="win32-log-collection-requirements"></a>Anforderungen an die Auflistung von Win32-Datenbankprotokoll
+#### <a name="win32-log-collection-requirements"></a>Anforderungen für die Sammlung von Win32-Protokollen
 
-Es gibt bestimmte Anforderungen, die beachtet werden müssen, um Protokolldateien zu sammeln:
+Es gelten besondere Anforderungen, die beim Sammeln von Protokolldateien zu beachten sind:
 
-- Sie müssen den vollständigen Pfad angeben. 
-- Sie können Umgebungsvariablen für die Erfassung von Protokollen, z. B. Folgendes angeben:<br>
+- Sie müssen den vollständigen Protokolldateipfad angeben. 
+- Sie können für die Protokollsammlung Umgebungsvariablen angeben, wie z.B. die folgenden:<br>
   *%PROGRAMFILES%, %PROGRAMDATA% %PUBLIC%, %WINDIR%, %TEMP%, %TMP%*
-- Nur exakte Dateierweiterungen sind, z. B. zulässig:<br>
+- Nur exakte Dateierweiterungen sind zulässig wie z.B.:<br>
   *.log, .txt, .dmp, .cab, .zip, .xml*
-- Die maximale Log-Datei zum Hochladen ist 60 MB oder 25 Dateien, welches Ereignis zuerst eintritt. 
-- Win32-app installieren-Protokollsammlung aktiviert ist, für apps, die die erforderlichen erfüllen verfügbar ist, und die deinstallierte Absicht der app-Zuweisung.
-- Gespeicherte Protokolle werden verschlüsselt, um alle Personenbezogene Informationen enthalten, die in den Protokollen zu schützen.
-- Beim Öffnen-Unterstützung für Win32-Fehler bei der app-tickets, fügen Sie die zugehörigen Fehlerprotokolle, die mithilfe der oben angegebenen Schritte aus.
+- Es können maximal 60 MB oder 25 Dateien hochgeladen werden, je nachdem, was zuerst der Fall ist. 
+- Die Sammlung von Win32-App-Installationsprotokollen ist für Apps aktiviert, die die App-Zuweisungsabsicht (Erforderlich, Verfügbar und Deinstallieren) erfüllen.
+- Gespeicherte Protokolle werden verschlüsselt, um alle in den Protokollen enthaltenen personenbezogenen Daten zu schützen.
+- Wenn Sie Supporttickets für Win32-App-Fehler öffnen, fügen Sie die zugehörigen Fehlerprotokolle wie vorstehend beschrieben hinzu.
 
 ## <a name="app-installation-errors"></a>App-Installationsfehler
 
@@ -114,7 +114,7 @@ Die folgenden Fehlermeldungen und Beschreibungen bieten weitere Informationen zu
 
 ### <a name="ios-errors"></a>iOS-Fehler
 
-| Fehlermeldung/-code | Beschreibung/Problembehandlung Tipps |
+| Fehlermeldung/-code | Beschreibung/Tipps zur Problembehandlung |
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | (0x87D12906) | Ein Fehler beim Ausführen des Installationsbefehls wurde vom Apple-MDM-Agent zurückgegeben. |
 | (0x87D1313C) | Die Netzwerkverbindung wurde unterbrochen, während die aktualisierte URL des Downloaddiensts an das Gerät gesendet wurde. Insbesondere konnte ein Server mit dem angegebenen Hostnamen nicht gefunden werden. |
@@ -126,16 +126,16 @@ Die folgenden Fehlermeldungen und Beschreibungen bieten weitere Informationen zu
 | Der Benutzer hat die angebotene Installation der App abgelehnt. (0x87D13B62) | Während der ersten App-Installation hat der Benutzer auf „Abbrechen“ geklickt. |
 | Der Benutzer hat das angebotene Update für die App abgelehnt. (0x87D13B63) | Der Benutzer hat während des Updates auf „Abbrechen“ geklickt. |
 | Unbekannter Fehler (0x87D103E8) | Bei der App-Installation ist ein unbekannter Fehler aufgetreten. Dieser Fehler ergibt sich, wenn kein anderer Fehler aufgetreten ist. |
-| VPP-apps kann nur unter gemeinsam genutztes iPad (-2016330861) installiert werden. | Die apps müssen mithilfe von Apple Volume Purchase Program So installieren Sie auf ein gemeinsam genutztes iPad abgerufen werden. |
-| Apps kann nicht installiert werden, wenn die App-Store deaktiviert ist (-2016330860).  | Die Store-App muss für den Benutzer zur Installation der app aktiviert sein. |
-| VPP-Lizenzen für die app (-2016330859) wurde nicht gefunden.  | Versuchen Sie es widerrufen und erneutes Zuweisen von app-Lizenz. |
-| System-apps kann nicht mit Ihrem MDM-Anbieter (-2016330858) installiert werden. | Installieren von apps, die vom iOS-Betriebssystem bereits installiert sind, ist nicht unterstützt. |
-| Wenn das Gerät im Modus für verlorene Geräte (-2016330857) befindet, können keine apps installieren. | Jegliche Nutzung des Geräts wird im Modus für verlorene Geräte blockiert.   Modus für verlorene Geräte zum Installieren von apps zu deaktivieren. |
-| Wenn das Gerät im Kiosk-Modus (-2016330856) ist, können keine apps installieren. | Versuchen Sie es dieses Gerät zu einer Gruppe ausschließen für Kiosk-Modus-Konfigurationsrichtlinie, apps zu installieren. |
-| 32-Bit-apps kann nicht auf diesem Gerät (-2016330852) installiert werden. | Das Gerät unterstützt nicht die Installation von 32-Bit-Anwendungen. Versuchen Sie die 64-Bit-Version der app bereitzustellen. |
-| Benutzer muss sich die App Store (-2016330855) anmelden. | Der Benutzer muss für die Anmeldung bei der App-Store, damit die app installiert werden kann. |
-| Unbekanntes Problem. Bitte versuchen Sie es erneut (-2016330854). | Fehler bei der app-Installation aus unbekanntem Grund.   Versuchen Sie es später erneut. |
-| Fehler bei der app-Installation. Intune versucht beim nächsten das Gerät synchronisiert sich (-2016330853). | Die app-Installation ist ein Gerätefehler aufgetreten. Synchronisieren des Geräts und zum Installieren der app erneut. |
+| VPP-Apps können nur auf einem freigegebenen iPad installiert werden (-2016330861). | Die Apps müssen über das Apple Volume Purchase Program bezogen werden, damit sie auf einem freigegebenen iPad installiert werden können. |
+| Wenn der App Store deaktiviert ist, können keine Apps installiert werden (-2016330860).  | Der App Store muss aktiviert sein, damit der Benutzer die App installieren kann. |
+| Es wurde keine VPP-Lizenz für die App gefunden (-2016330859).  | Versuchen Sie, die App-Lizenz zu widerrufen und neu zuzuweisen. |
+| System-Apps können nicht mit Ihrem MDM-Anbieter installiert werden (-2016330858). | Die Installation von Apps, die vom iOS-Betriebssystem vorinstalliert wurden, wird nicht unterstützt. |
+| Wenn sich das Gerät im Modus für verlorene Geräte befindet, können keine Apps installiert werden (-2016330857). | Im Modus für verlorene Geräte wird jegliche Nutzung des Geräts blockiert.   Deaktivieren Sie den Modus für verlorene Geräte, um Apps installieren zu können. |
+| Wenn sich das Gerät im Kioskmodus befindet, können keine Apps installiert werden (-2016330856). | Versuchen Sie, dieses Gerät zu einer Ausschlussgruppe für die Konfigurationsrichtlinie für den Kioskmodus hinzuzufügen, um Apps zu installieren. |
+| Auf diesem Gerät können keine 32-Bit-Apps installiert werden (-2016330852). | Das Gerät unterstützt nicht die Installation von 32-Bit-Apps. Versuchen Sie, die 64-Bit-Version der App bereitzustellen. |
+| Der Benutzer muss sich beim App Store anmelden (-2016330855). | Der Benutzer muss sich beim App Store anmelden, bevor die App installiert werden kann. |
+| Unbekanntes Problem. Bitte versuchen Sie es erneut (-2016330854). | Die Installation der App ist aus einem unbekannten Grund fehlgeschlagen.   Versuchen Sie es später erneut. |
+| Fehler bei der App-Installation. Der Versuch wird von Intune bei der nächsten Gerätesynchronisierung wiederholt (-2016330853). | Bei der App-Installation ist ein Gerätefehler aufgetreten. Synchronisieren Sie das Gerät, und versuchen Sie, die App erneut zu installieren. |
 
 ### <a name="other-installation-errors"></a>Andere Installationsfehler
 

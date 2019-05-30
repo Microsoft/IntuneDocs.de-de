@@ -1,6 +1,6 @@
 ---
-title: Android Enterprise-Geräteeinstellungen in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Eine Liste mit allen Einstellungen, mit denen Sie beim Festlegen von Kompatibilität für Ihre Android Enterprise-Geräte in Microsoft Intune angezeigt. Kennwortregeln festlegen, wählen Sie eine minimale oder maximale Betriebssystemversion, bestimmte apps beschränken, verhindert die Wiederverwendung von Kennwort und vieles mehr.
+title: Android Enterprise-Konformitätseinstellungen in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Dieser Artikel enthält eine Liste aller Einstellungen, die Sie verwenden können, um Konformität für Ihre Android Enterprise-Geräte in Microsoft Intune festzulegen. Sie können Kennwortregeln festlegen, eine minimale oder maximale Betriebssystemversion auswählen, bestimmte Anwendungen einschränken, die Wiederverwendung von Kennwörtern verhindern und vieles mehr.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -24,17 +24,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59423559"
 ---
-# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>So markieren Geräte als kompatibel oder nicht kompatibel mit Intune Einstellungen für Android Enterprise
+# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Android Enterprise-Einstellungen, um Geräte mit Intune als konform oder nicht konform zu kennzeichnen
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Dieser Artikel enthält und beschreibt die verschiedenen Einstellungen, die Sie auf Android Enterprise-Geräte in Intune konfigurieren können. Verwenden Sie im Rahmen Ihrer Lösung für mobile Geräte (MDM) diese Einstellungen sind Geräte mit entfernten nutzungsbeschränkungen (mit jailbreak) als nicht kompatibel markieren, eine zulässige Bedrohungsstufe festlegen, das Aktivieren von Google Play Protect und vieles mehr.
+In diesem Artikel werden die verschiedenen Konformitätseinstellungen aufgeführt und beschrieben, die Sie in Intune für Android Enterprise-Geräte festlegen können. Im Rahmen Ihrer MDM-Lösung (Mobile Device Management, Verwaltung mobiler Geräte) verwenden Sie diese Einstellungen, um Geräte des Typs „Rooted“ (mit Jailbreak) als nicht konform zu markieren, eine zulässige Bedrohungsstufe festzulegen, Google Play Protect zu aktivieren und vieles mehr.
 
 Diese Funktion gilt für:
 
 - Android Enterprise
 
-Verwenden Sie als Intune-Administrator diesen Complianceeinstellungen zum Schutz der Ressourcen Ihrer Organisation ein. Weitere Informationen über Konformitätsrichtlinien und alle Voraussetzungen finden Sie unter [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md).
+Als Intune-Administrator verwenden Sie diese Konformitätseinstellungen, um die Ressourcen Ihrer Organisation zu schützen. Weitere Informationen zu Konformitätsrichtlinien und ihren Aufgaben finden Sie unter [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md).
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
@@ -49,7 +49,7 @@ Verwenden Sie als Intune-Administrator diesen Complianceeinstellungen zum Schutz
   - **Mittel**: Das Gerät wird als kompatibel bewertet, wenn die auf dem Gerät gefundenen Bedrohungen niedriger oder mittlerer Stufe sind. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht konform bewertet.
   - **Hoch**: Dies ist die am wenigsten sichere Option, die alle Bedrohungsebenen zulässt. Es ist möglicherweise hilfreich, diese Lösung nur zu Berichtszwecken zu verwenden.
 
-### <a name="google-play-protect"></a>Google Play-Schutz
+### <a name="google-play-protect"></a>Google Play Protect
 
 - **Google Play Services ist konfiguriert:** **Erfordert**, dass die Google Play Services-App installiert und aktiviert ist. Google Play Services ermöglicht Sicherheitsupdates und stellt eine grundlegende Abhängigkeit für viele Sicherheitsfunktionen auf zertifizierten Google-Geräten dar. Wenn Sie **Nicht konfiguriert** (Standardeinstellung) auswählen, wird diese Einstellung nicht für die Konformitätsprüfung ausgewertet.
 - **Aktueller Sicherheitsanbieter:** **Erfordert**, dass ein aktueller Sicherheitsanbieter ein Gerät vor bekannten Sicherheitslücken schützen kann. Wenn Sie **Nicht konfiguriert** (Standardeinstellung) auswählen, wird diese Einstellung nicht für die Konformitätsprüfung ausgewertet.
@@ -59,7 +59,7 @@ Verwenden Sie als Intune-Administrator diesen Complianceeinstellungen zum Schutz
   - **Grundlegende Integrität und zertifizierte Geräte prüfen**
 
 > [!NOTE]
-> Auf Android Enterprise-Geräten **bedrohungsüberprüfung für apps** ist eine Richtlinie für die Gerätekonfiguration. Administratoren können mithilfe einer Richtlinie, die Einstellung auf einem Gerät aktivieren. Siehe [Einstellungen für Geräteeinschränkungen für Android Enterprise](device-restrictions-android-for-work.md).
+> Auf Android Enterprise-Geräten ist die Einstellung **Bedrohungsüberprüfung für Apps** eine Gerätekonfigurationsrichtlinie. Administratoren können mithilfe einer Richtlinie die Einstellung auf einem Gerät aktivieren. Siehe [Einstellungen für Geräteeinschränkungen für Android Enterprise](device-restrictions-android-for-work.md).
 
 ## <a name="device-properties-settings"></a>Einstellungen für Geräteeigenschaften
 
@@ -89,7 +89,7 @@ Verwenden Sie als Intune-Administrator diesen Complianceeinstellungen zum Schutz
 
 - **Verschlüsselung des Datenspeichers auf einem Gerät**: Wählen Sie **Erforderlich**, um den Datenspeicher auf Ihren Geräten zu verschlüsseln. Wenn Sie **Nicht konfiguriert** (Standardeinstellung) auswählen, wird diese Einstellung nicht für die Konformitätsprüfung ausgewertet. 
 
-  Diese Einstellung muss nicht konfiguriert werden, da Android-Arbeitsprofilgeräte eine Verschlüsselung erzwingen.
+  Diese Einstellung muss nicht konfiguriert werden, da Android Enterprise-Arbeitsprofilgeräte eine Verschlüsselung erzwingen.
 
 ### <a name="device-security"></a>Gerätesicherheit
 
@@ -100,7 +100,7 @@ Verwenden Sie als Intune-Administrator diesen Complianceeinstellungen zum Schutz
   > [!IMPORTANT]
   > Das Sideloading von Anwendungen erfordert, dass die Einstellung **Apps von unbekannten Quellen blockieren** aktiviert ist. Erzwingen Sie diese Konformitätsrichtlinie nur, wenn Sie kein Sideloading von Android-Apps auf Geräten durchführen.
 
-  Sie müssen diese Einstellung nicht konfigurieren, da Android-Arbeitsprofilgeräte die Installation aus unbekannten Quellen stets einschränken.
+  Sie müssen diese Einstellung nicht konfigurieren, da Android Enterprise-Arbeitsprofilgeräte die Installation aus unbekannten Quellen stets einschränken.
 
 - **Laufzeitintegrität der Unternehmensportal-App:** Legen Sie **Erforderlich** fest, um zu überprüfen, ob die Unternehmensportal-App alle der folgenden Anforderungen erfüllt:
 
@@ -113,7 +113,7 @@ Verwenden Sie als Intune-Administrator diesen Complianceeinstellungen zum Schutz
 
 - **USB-Debugging auf dem Gerät blockieren**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Geräte das USB-Debuggingfeature verwenden. Wenn Sie **Nicht konfiguriert** (Standardeinstellung) auswählen, wird diese Einstellung nicht für die Konformitätsprüfung ausgewertet.
 
-  Sie müssen diese Einstellungen nicht konfigurieren, da USB-Debuggen auf Android-Arbeitsprofilgeräten bereits deaktiviert ist.
+  Sie müssen diese Einstellungen nicht konfigurieren, da USB-Debuggen auf Android Enterprise-Geräten bereits deaktiviert ist.
 
 - **Mindestens erforderliche Sicherheitspatchebene**: Wählen Sie die älteste Sicherheitspatchebene, die ein Gerät haben kann. Geräte, die nicht mindestens diese Patchebene aufweisen, sind nicht konform. Das Datum muss im Format *JJJJ-MM-TT* eingegeben werden.
 
@@ -121,6 +121,6 @@ Wählen Sie **OK** > **Erstellen** aus, um die Änderungen zu speichern.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Hinzufügen von Aktionen für nicht kompatible Geräte](actions-for-noncompliance.md) und [bereichsmarkierungen Filter-Richtlinien verwenden](scope-tags.md).
-- [Überwachen Sie Ihre Compliance-Richtlinien](compliance-policy-monitor.md).
-- [Einstellungen für Kompatibilitätsrichtlinien für Android-Geräte](compliance-policy-create-android.md)
+- [Hinzufügen von Aktionen für nicht kompatible Geräte](actions-for-noncompliance.md) und [Verwenden von Bereichsmarkierungen zum Filtern von Richtlinien](scope-tags.md).
+- [Überwachen Ihrer Konformitätsrichtlinien](compliance-policy-monitor.md).
+- Siehe die [Einstellungen für Kompatibilitätsrichtlinien für Android](compliance-policy-create-android.md)-Geräte.

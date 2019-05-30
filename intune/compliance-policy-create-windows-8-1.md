@@ -1,6 +1,6 @@
 ---
-title: Windows 8.1-Education-Einstellungen in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Eine Liste mit allen Einstellungen, mit denen Sie beim Festlegen von Kompatibilität mit Ihrer Windows 8.1 und Windows Phone 8.1-Geräte in Microsoft Intune angezeigt. Überprüfung der Kompatibilität auf des minimalen und maximalen Betriebssystems, legen und die Länge Aktivieren der Verschlüsselung auf die Speicherung von Daten und vieles mehr.
+title: Windows 8.1-Konformitätseinstellungen in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Dieser Artikel enthält eine Liste aller Einstellungen, die Sie verwenden können, um Konformität für Ihre Windows 8.1- und Windows Phone 8.1-Geräte in Microsoft Intune festzulegen. Überprüfen Sie die Konformität mit der minimalen und maximalen Betriebssystemversion, legen Sie Kennwortbeschränkungen und -länge fest, aktivieren Sie die Verschlüsselung der Datenspeicherung und vieles mehr.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -22,27 +22,27 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/09/2019
 ms.locfileid: "59424941"
 ---
-# <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Einstellungen für Windows 8.1-Geräte als kompatibel oder nicht kompatibel mit Intune zu markieren
+# <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Windows 8.1-Einstellungen, um Geräte mit Intune als konform oder nicht konform zu kennzeichnen
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Dieser Artikel enthält und beschreibt die verschiedenen Einstellungen, die Sie auf Windows 8.1-Geräte in Intune konfigurieren können. Verwenden Sie diese Einstellungen als Teil Ihrer Lösung für mobile Geräte (MDM) einfache Kennwörter blockieren, legen Sie eine minimale und maximale Version des Betriebssystems und mehr.
+In diesem Artikel werden die verschiedenen Konformitätseinstellungen aufgeführt und beschrieben, die Sie in Intune für Windows 8.1-Geräte festlegen können. Im Rahmen Ihrer MDM-Lösung (Mobile Device Management, Verwaltung mobiler Geräte) können Sie mit diesen Einstellungen einfache Kennwörter blockieren, eine minimale oder maximale Betriebssystemversion festlegen und vieles mehr.
 
 Diese Funktion gilt für:
 
 - Windows Phone 8.1
 - Windows 8.1 und höher
 
-Verwenden Sie als Intune-Administrator diesen Complianceeinstellungen zum Schutz der Ressourcen Ihrer Organisation ein. Weitere Informationen über Konformitätsrichtlinien und alle Voraussetzungen finden Sie unter [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md).
+Als Intune-Administrator verwenden Sie diese Konformitätseinstellungen, um die Ressourcen Ihrer Organisation zu schützen. Weitere Informationen zu Konformitätsrichtlinien und ihren Aufgaben finden Sie unter [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md).
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
-[Erstellen einer Konformitätsrichtlinie](create-compliance-policy.md#create-the-policy) Für **Plattform**Option **Windows Phone 8.1** oder **Windows 8.1 und höher**.
+[Erstellen einer Konformitätsrichtlinie](create-compliance-policy.md#create-the-policy) Wählen Sie als **Plattform** die Option **Windows Phone 8.1** oder **Windows 8.1 und höher**aus.
 
 ## <a name="device-properties"></a>Geräteeigenschaften
 
-- **Minimal erforderliches Betriebssystem**: Geben Sie die zulässige Mindestversion. Wenn ein Gerät die Anforderung an die Mindestversion des Betriebssystems nicht erfüllt, wird es als nicht konform gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Endbenutzer kann ein Upgrade seines Geräts durchführen, und anschließend auf die Unternehmensressourcen zugreifen.
-- **Maximal zulässige Betriebssystemversion**: Geben Sie die maximal zulässige Version. Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt. Der Benutzer wird dazu aufgefordert, sich an den zuständigen IT-Administrator zu wenden. Das Gerät kann nicht auf Ressourcen der Organisation zugreifen, bis Sie die Regel dahingehend ändern, dass die betreffende Betriebssystemversion zugelassen wird.
+- **Mindestversion des Betriebssystems erforderlich**: Geben Sie die zulässige Mindestversion ein. Wenn ein Gerät die Anforderung an die Mindestversion des Betriebssystems nicht erfüllt, wird es als nicht konform gemeldet. Ein Link zur Vorgehensweise zum Upgrade wird angezeigt. Der Endbenutzer kann ein Upgrade seines Geräts durchführen, und anschließend auf die Unternehmensressourcen zugreifen.
+- **Maximale Version des Betriebssystems**: Geben Sie die zulässige maximale Version ein. Wenn auf einem Gerät eine neuere Betriebssystemversion verwendet wird, als die Regel erlaubt, wird der Zugriff auf Unternehmensressourcen gesperrt. Der Benutzer wird dazu aufgefordert, sich an den zuständigen IT-Administrator zu wenden. Das Gerät kann nicht auf Ressourcen der Organisation zugreifen, bis Sie die Regel dahingehend ändern, dass die betreffende Betriebssystemversion zugelassen wird.
 
 Windows 8.1-PCs geben die Version **3** zurück. Wenn die Regel für die Betriebssystemversion für Windows auf Windows 8.1 festgelegt ist, wird das betreffende Gerät als nicht kompatibel gemeldet, selbst wenn auf ihm Windows 8.1 installiert ist.
 
@@ -83,6 +83,6 @@ Wählen Sie **OK** > **Erstellen** aus, um die Änderungen zu speichern.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Hinzufügen von Aktionen für nicht kompatible Geräte](actions-for-noncompliance.md) und [bereichsmarkierungen Filter-Richtlinien verwenden](scope-tags.md).
-- [Überwachen Sie Ihre Compliance-Richtlinien](compliance-policy-monitor.md).
-- Finden Sie unter den [Einstellungen für Kompatibilitätsrichtlinien für Windows 10 und höher](compliance-policy-create-windows.md) Geräte.
+- [Hinzufügen von Aktionen für nicht kompatible Geräte](actions-for-noncompliance.md) und [Verwenden von Bereichsmarkierungen zum Filtern von Richtlinien](scope-tags.md).
+- [Überwachen Ihrer Konformitätsrichtlinien](compliance-policy-monitor.md).
+- Siehe die [Einstellungen für Kompatibilitätsrichtlinien für Geräte mit Windows 10 und höher](compliance-policy-create-windows.md).
