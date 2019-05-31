@@ -6,9 +6,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 05/17/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,23 +16,23 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 52b92483ddafadf460911caaa472825a0bc0a20f
-ms.sourcegitcommit: b4483c8476a209de83102e8993d8074dbb323493
+ms.openlocfilehash: d90bc17d01a76c9c566210edc3bdc265511fa16d
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65527216"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66047824"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Überwachen von BitLocker und Geräteverschlüsselung  
 Intune stellt einen zentralen Ort zur Verfügung, an dem der Verschlüsselungsstatus Ihrer Windows 10-Geräte bestimmt werden kann, und unterstützt Sie dabei, über Ihre Geräte auf wichtige Informationen für BitLocker zuzugreifen, z. B. Informationen in Active Directory (Azure AD).  
 
-- Der [Verschlüsselungsbericht (in der öffentlichen Vorschauversion)](#encryption-report) stellt Details zum Verschlüsselungsstatus eines Geräts und zu dessen Bereitschaft zur Verfügung. Mithilfe der Informationen aus dem Bericht können Sie Probleme erkennen, die die erfolgreiche Verschlüsselung von Geräten behindern, die Sie schützen möchten.  
-- [Sehen Sie sich über das Intune-Portal BitLocker-Details (in der öffentlichen Vorschauversion) an](#bitlocker-recovery-keys), z. B. die Schlüssel-ID und Wiederherstellungsschlüssel für Ihre Geräte.  
+- Der [Verschlüsselungsbericht](#encryption-report) stellt Details zum Verschlüsselungsstatus eines Geräts und zu dessen Bereitschaft zur Verfügung. Mithilfe der Informationen aus dem Bericht können Sie Probleme erkennen, die die erfolgreiche Verschlüsselung von Geräten behindern, die Sie schützen möchten.  
+- [Sehen Sie sich über das Intune-Portal BitLocker-Details an](#bitlocker-recovery-keys), z.B. die Schlüssel-ID und Wiederherstellungsschlüssel für Ihre Geräte.  
 
 ## <a name="encryption-report"></a>Verschlüsselungsbericht
-Verwenden Sie den Verschlüsselungsbericht (in der öffentlichen Vorschauversion), um sich Details zum Verschlüsselungsstatus Ihrer Windows 10-Geräte anzusehen.  
+Verwenden Sie den Verschlüsselungsbericht, um sich Details zum Verschlüsselungsstatus Ihrer Windows 10-Geräte anzusehen.  
 
-Den Bericht finden Sie, indem Sie sich bei [Intune](https://aka.ms/intuneportal) anmelden, zur **Gerätekonfiguration** navigieren, und dann unter *Überwachung* die Option **Verschlüsselungsbericht (Vorschau)** auswählen.  
+Den Bericht finden Sie, indem Sie sich bei [Intune](https://aka.ms/intuneportal) anmelden, zur **Gerätekonfiguration** navigieren und dann unter *Überwachung* die Option **Verschlüsselungsbericht** auswählen.  
 
 ### <a name="prerequisites"></a>Voraussetzungen:
 Damit ein Gerät im Verschlüsselungsbericht aufgeführt wird, muss mindestens die Windows-Version 1607 ausgeführt werden.  
@@ -90,14 +89,14 @@ In diesem Bereich finden Sie die folgenden Details:
    - Die Verschlüsselungsmethode des Festplattenlaufwerks stimmt nicht mit der BitLocker-Richtlinie überein.  
    - Wenn Laufwerke verschlüsselt werden sollen, erfordert die BitLocker-Richtlinie entweder eine Anmeldung des Benutzers als Administrator, oder die Richtlinie „AllowStandardUserEncryption“ muss auf 1 festgelegt werden, wenn das Gerät mit Azure AD verknüpft ist.  
    - Die Windows-Wiederherstellungsumgebung (Windows Recovery Environment, WinRE) ist nicht konfiguriert.  
-   - Für BitLocker steht kein TPM zur Verfügung, entweder, weil keines vorhanden ist, es in der Registrierung nicht mehr zur Verfügung steht, oder weil sich das Betriebssystem auf einem Laufwerk befindet, das entfernt werden kann.  
+   - Für BitLocker steht kein TPM zur Verfügung – entweder, weil keines vorhanden ist, es in der Registrierung nicht mehr zur Verfügung steht oder weil sich das Betriebssystem auf einem Laufwerk befindet, das entfernt werden kann.  
    - Das TMP ist nicht bereit für BitLocker.  
    - Das Netzwerk ist nicht verfügbar. Dies ist aber eine Voraussetzung zur Sicherung des Wiederherstellungsschlüssels.  
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker-Wiederherstellungsschlüssel
-Intune gewährt im Rahmen einer öffentlichen Vorschauversion Zugriff auf das Azure AD-Blatt für BitLocker, sodass Sie sich über das Intune-Portal die BitLocker-Schlüssel-IDs und -Wiederherstellungsschlüssel für Ihre Windows 10-Geräte ansehen können.  Damit auf ein Gerät zugegriffen werden kann, müssen die dazugehörigen Schlüssel in Azure AD hinterlegt sein. 
+Intune gewährt Zugriff auf das Azure AD-Blatt für BitLocker, sodass Sie sich über das Intune-Portal die BitLocker-Schlüssel-IDs und -Wiederherstellungsschlüssel für Ihre Windows 10-Geräte ansehen können.  Damit auf ein Gerät zugegriffen werden kann, müssen die dazugehörigen Schlüssel in Azure AD hinterlegt sein. 
 1. Melden Sie sich bei [Intune](https://aka.ms/intuneportal) an, navigieren Sie zu **Geräte**, und wählen Sie dann unter *Verwalten* die Option **Alle Geräte** aus.
-2. Wählen Sie aus der Liste ein Gerät aus, und wählen Sie dann unter *Überwachung* die Option **Recovery keys – Preview** (Wiederherstellungsschlüssel – Vorschau) aus.  
+2. Wählen Sie ein Gerät aus der Liste aus, und wählen Sie dann unter *Überwachung* die Option **Recovery keys** (Wiederherstellungsschlüssel) aus.  
   
 Wenn Schlüssel in Azure AD verfügbar sind, sind die folgenden Informationen verfügbar:
 - BitLocker-Schlüssel-ID

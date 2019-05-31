@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 12/06/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be0598d09f10403892fa6a82e109ecc90015ccf9
-ms.sourcegitcommit: 47d8ca144ea4e8b8817e95ac4b8c6bd8591fcc06
+ms.openlocfilehash: 030467009e0fed8716a1aa622474188352c0e0b0
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65619436"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66050351"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot
 Sie können in Azure AD Hybrid eingebundene Geräte mithilfe von Intune und Windows Autopilot einrichten. Führen Sie dazu die Schritte in diesen Artikel durch.
@@ -119,6 +118,9 @@ Der Intune-Connector für Azure AD muss auf einem Computer mit Windows Server 20
 > [!NOTE]
 > Nach der Anmeldung im Connector dauert es möglicherweise einige Minuten, bis er in [Intune](https://aka.ms/intuneportal) angezeigt wird. Er wird nur angezeigt, wenn er mit Intune kommunizieren kann.
 
+### <a name="turn-off-ie-enhanced-security-configuration"></a>Deaktivieren der verstärkten Sicherheitskonfiguration für IE
+Bei Windows Server ist die verstärkte Sicherheitskonfiguration für Internet Explorer standardmäßig aktiviert. Wenn Sie sich beim Intune-Connector für Active Directory nicht anmelden können, deaktivieren Sie die verstärkte Sicherheitskonfiguration für IE für den Administrator. [Deaktivieren der verstärkten Sicherheitskonfiguration für Internet Explorer](https://blogs.technet.microsoft.com/chenley/2011/03/10/how-to-turn-off-internet-explorer-enhanced-security-configuration)
+
 ### <a name="configure-web-proxy-settings"></a>Konfigurieren von Webproxyeinstellungen
 
 Wenn ein Webproxy in der Netzwerkumgebung vorhanden ist, stellen Sie sicher, dass der Intune-Connector für Active Directory ordnungsgemäß funktioniert. Informationen finden Sie unter [Verwenden von vorhandenen lokalen Proxyservern](autopilot-hybrid-connector-proxy.md).
@@ -137,7 +139,7 @@ Wenn ein Webproxy in der Netzwerkumgebung vorhanden ist, stellen Sie sicher, das
 
 1. Wenn Sie oben **Dynamische Geräte** als Mitgliedschaftstyp ausgewählt haben,wählen Sie anschließend im Bereich **Gruppe** die Option **Dynamische Gerätemitglieder** aus, und geben Sie einen der folgenden Codes in das Feld **Erweiterte Regel** ein:
     - Wenn Sie eine Gruppe mit all Ihren Autopilot-Geräten erstellen möchten, geben Sie `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")` ein.
-    - Wenn Sie eine Gruppe mit all Ihren Autopilot-Geräten mit einer bestimmten Bestell-ID erstellen möchten, geben Sie `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")` ein.
+    - Das Intune-Feld „Gruppentag“ wird dem Attribut „OrderID“ auf Azure AD-Geräten zugeordnet. Wenn Sie eine Gruppe erstellen möchten, die all Ihre Autopilot-Geräte mit einem bestimmten Gruppentag („OrderID“) enthält, müssen Sie eingeben:  `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Wenn Sie eine Gruppe mit all Ihren Autopilot-Geräten mit einer bestimmten Bestellungs-ID erstellen möchten, geben Sie `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")` ein.
     
 1. Wählen Sie **Speichern** aus.
@@ -194,7 +196,7 @@ Es dauert etwa 15 Minuten, bis sich der Status des Geräteprofils von *Nicht zug
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>Aktivieren der Registrierungsstatusseite (optional)
 
-1. Wählen Sie in [Intune](https://aka.ms/intuneportal) **Geräteregistrierung** > **Windows-Registrierung** > **Seite zum Registrierungsstatus (Vorschau)** aus.
+1. Wählen Sie in [Intune](https://aka.ms/intuneportal) **Geräteregistrierung** > **Windows-Registrierung** > **Seite zum Registrierungsstatus** aus.
 1. Klicken Sie im Bereich **Seite zum Registrierungsstatus** auf **Standard** > **Einstellungen**.
 1. Legen Sie für **Installationsfortschritt für Apps und Profile anzeigen** **Yes** (Ja) fest.
 1. Konfigurieren Sie die anderen Optionen je nach Bedarf.
