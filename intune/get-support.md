@@ -1,14 +1,16 @@
 ---
-title: Anfordern von Support für Microsoft Intune | Microsoft Intune
+title: Anfordern von Support für Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Erhalten Sie online und telefonisch Support für kostenpflichtige Abonnements und Testabonnements von Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/04/2019
+ms.date: 04/05/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01cffe9143034b9f4221cd760f9cb91f1cceebce
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
+ms.openlocfilehash: cf1e87d40459d194f2c4aa0ff702a137e45504ab
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57334968"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569752"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Anfordern von Support für Microsoft Intune
 
@@ -29,16 +31,28 @@ ms.locfileid: "57334968"
 
 Microsoft bietet für Microsoft Intune Unterstützung bei allgemeinen technischen Fragen, der Vertriebsvorbereitung sowie bei Fragen zu Rechnungen und Abonnements. Der Support ist für kostenpflichtige Abonnements und für Testabonnements online und telefonisch verfügbar. Der technische Onlinesupport ist nur auf Englisch und Japanisch verfügbar. Der telefonische Support und der Support zu Abrechnungen sind in zusätzlichen Sprachen verfügbar.
 
+Als Intune-Administrator können Sie die Option **Hilfe und Support** verwenden, um ein Onlinesupportticket für Intune über das Azure-Portal einzureichen. Ihr Konto muss einer Azure Active Directory-Rolle (Azure AD) zugewiesen sein, die die *Aktion* **microsoft.office365.supportTickets/allEntities/allTasks** enthält. Weitere Informationen zu Azure AD-Rollen und -Berechtigungen, die zum Erstellen eines Supporttickets erforderlich sind, finden Sie unter [Berechtigungen der Administratorrolle in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal). 
+
+**Bekannte Probleme beim Erstellen einer Supportanfrage**
+
+Wenn Ihr Konto über die erforderlichen Berechtigungen verfügt, aber nicht auf „Hilfe und Support“ zugreifen kann oder keine Supportanfrage erstellen oder bearbeiten kann, sehen Sie sich die folgenden bekannten Probleme und entsprechenden Lösungen an:  
+- Veraltetes Benutzertoken für Ihr Konto. Sie können dieses Problem beheben, indem Sie sich von allen aktiven Konsolensitzungen abmelden, dann erneut anmelden und dann versuchen, eine Supportanfrage zu erstellen oder zu bearbeiten. 
+- Mehrere aktive Sitzungen. Wenn Sie mit mehr als einem Benutzerkonto oder mehr als einer Sitzung angemeldet sind, melden Sie sich von allen Konsolen außer einer ab. Versuchen Sie dann, mit einer einzigen aktiven Sitzung eine Supportanfrage zu erstellen oder zu bearbeiten.
+
+Weitere Aktionen, die möglicherweise erforderlich sind, um Zugriffsprobleme zu beheben:
+- Löschen Sie alle Cookies in aktiven Browsersitzungen, und versuchen Sie danach erneut, eine Supportanfrage zu erstellen oder zu bearbeiten.
+- Verwenden Sie eine InPrivate-Browsersitzung, um sich bei Intune anzumelden, und versuchen Sie danach erneut, eine Supportanfrage zu erstellen oder zu bearbeiten.  
+
+Wenn Sie die oben aufgeführten Punkte beachtet haben, aber dennoch nicht keine Anfragen erstellen/bearbeiten können, navigieren Sie zum [Microsoft 365 Admin Center](https://admin.microsoft.com), und erstellen Sie dort ein Supportticket. Aktuell arbeiten wir an einem Fix, der im Spätsommer verfügbar gemacht wird. 
+
+
+
 >[!IMPORTANT]  
 > Wenden Sie sich für den technischen Support für Drittanbieterprodukte, die mit Intune eingesetzt werden können (z.B. Saaswedo, Cisco oder Lookout), zuerst an den Lieferanten des Produkts. Bevor Sie beim Intune-Support eine Anforderung stellen, sollten Sie sicherstellen, dass Sie das andere Produkt richtig konfiguriert haben.
 >
 > Weitere Informationen zur Problembehandlung im Zusammenhang mit Microsoft Intune finden Sie im [Abschnitt zur Problembehandlung](help-desk-operators.md) in der Intune-Dokumentation.
 
-Als IT-Administrator können Sie die Option **Hilfe und Support** verwenden, um ein Onlinesupportticket für Intune über das Azure-Portal einzureichen. Damit Sie ein Supportticket erstellen können, muss Ihrem Konto eine der folgenden [Administratorrollen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) zugewiesen sein:
 
-- Intune-Administrator
-- Globaler Administrator
-- Dienstadministrator  
 
 
 ## <a name="help-and-support-experience"></a>Benutzeroberfläche für Hilfe und Support
@@ -50,19 +64,19 @@ Die Benutzeroberfläche für Hilfe und Support für Intune ist über das [Micros
 ![Blätter „Intune“](./media/get-support/intune-blades.png)
 
 
-Die neue Benutzeroberfläche ähnelt der im [Microsoft 365 Admin Center](https://portal.office.com/AdminPortal/Home) und ersetzt die [bisherige Benutzeroberfläche für Hilfe und Support](#azure-help-+-support-experience). 
+Die neue Benutzeroberfläche ähnelt derjenigen im [Microsoft 365 Admin Center](https://admin.microsoft.com/) und ersetzt die bisherige Benutzeroberfläche für Hilfe und Support. 
 
-Für den Zugriff auf Hilfe und Support verwenden Sie Folgendes:  
+Sie können über die folgenden Optionen auf „Hilfe und Support“ zugreifen:  
 - **Im Dashboard für die Geräteverwaltung:**
    - Wählen Sie eine der verfügbaren Optionen für **Hilfe und Support** aus.
-   - Wählen Sie das **?**-Symbol in der oberen rechten Ecke des Portals aus.
+   - Wählen Sie das **?** -Symbol in der oberen rechten Ecke des Portals aus.
 
 - **Im Azure-Portal:**
    - Wählen Sie **Hilfe und Support** auf einer der Intune-Blätter oder -Seiten aus.
 
-   Wählen Sie entweder das **?**-Symbol in der oberen rechten Ecke aus, oder öffnen Sie *Hilfe und Support* für Azure über die Option **Hilfe und Support** im linken Navigationsbereich, unabhängig davon, wo sich gerade im Azure-Portal befinden. Es wird empfohlen, die Option *Hilfe und Support* auf dem Intune-Blatt zu verwenden.  
+   Wählen Sie entweder das **?** -Symbol in der oberen rechten Ecke aus, oder öffnen Sie *Hilfe und Support* für Azure über die Option **Hilfe und Support** im linken Navigationsbereich, unabhängig davon, wo sich gerade im Azure-Portal befinden. Es wird empfohlen, die Option *Hilfe und Support* auf dem Intune-Blatt zu verwenden.  
 
-In der neuen Benutzeroberfläche erhalten Sie Zugriff auf die Ansicht **Benötigen Sie Hilfe?**, wie im folgenden Bild des Dashboards für die Geräteverwaltung zu sehen ist:  
+In der neuen Benutzeroberfläche erhalten Sie Zugriff auf die Ansicht **Benötigen Sie Hilfe?** , wie im folgenden Bild des Dashboards für die Geräteverwaltung zu sehen ist:  
 ![Dashboard für die Geräteverwaltung und die Seite „Benötigen Sie Hilfe?“](./media/get-support/help-support-dashboard.png)
 
 In dieser Ansicht können Sie die folgenden Aktionen durchführen:
@@ -73,7 +87,7 @@ In dieser Ansicht können Sie die folgenden Aktionen durchführen:
 4. [Zeigen Sie Supportfälle](#view-support-cases) an, die Sie zuvor mit diesem neuen Workflow geöffnet haben.  
 
 ### <a name="specify-details-about-an-issue"></a>Angeben von Details zu einem Problem
-Wenn Sie „Hilfe und Support“ von einem Ort aus öffnen, an dem die neue Benutzeroberfläche unterstützt wird, wird die Seite **Benötigen Sie Hilfe?**  geöffnet. Auf dieser Seite können Sie Details zu einem Problem angeben. Während der Eingabe bietet die Konsole gängige Abfragen basierend auf den von Ihnen verwendeten Schlüsselwörtern an. Sie können einen angebotenen Text auswählen oder Ihre eigene Problembeschreibung ausfüllen. Wenn Sie eine eigene Beschreibung eingeben, klicken Sie auf **Hilfe anfordern**, um sie zu übermitteln. Nachdem Sie eine Abfrage gesendet haben, gibt die Konsole kontextbezogene Informationen zurück, die zur Lösung des Problems beitragen können.
+Wenn Sie „Hilfe und Support“ von einem Ort aus öffnen, an dem die neue Benutzeroberfläche unterstützt wird, wird die Seite **Benötigen Sie Hilfe?** geöffnet. Auf dieser Seite können Sie Details zu einem Problem angeben. Während der Eingabe bietet die Konsole gängige Abfragen basierend auf den von Ihnen verwendeten Schlüsselwörtern an. Sie können einen aufgeführte Option auswählen oder Ihre eigene Problembeschreibung eingeben. Wenn Sie eine eigene Beschreibung eingeben, klicken Sie auf **Hilfe anfordern**, um sie zu übermitteln. Nachdem Sie eine Abfrage gesendet haben, gibt die Konsole kontextbezogene Informationen zurück, die zur Lösung des Problems beitragen können.
 
 Im Folgenden finden Sie Beispiele für Problembeschreibungen, die Sie absenden können:
   
@@ -87,7 +101,7 @@ Nachdem Sie sich für eine angebotene Auswahl entschieden oder eine eigene Abfra
 ![Anzeige der Ergebnisse](./media/get-support/view-results.png)
 
 ### <a name="get-support"></a>Anfordern von Support
-Wenn Sie die Selbsthilfe oder die webbasierte Anleitung bei der Problemlösung nicht weiterbringt, können Sie über die Konsole eine Anfrage für E-Mail- oder Telefonsupport öffnen.  
+Wenn Sie die Selbsthilfe oder die webbasierte Anleitung bei der Problemlösung nicht weiterbringt, können Sie über die Konsole eine Anfrage für E-Mail- oder Telefonsupport einreichen.  
 Wählen Sie auf der Seite **Benötigen Sie Hilfe?** die gewünschte Option aus.  
 
 - Geben Sie für eine E-Mail-Anfrage Ihre E-Mail-Adresse an. Optional haben Sie die Möglichkeit, vor dem Senden Anlagen hinzuzufügen. Wählen Sie **Senden** aus, um die Anfrage zu öffnen.  
@@ -113,11 +127,11 @@ Wählen Sie die Schaltfläche für den Verlauf, um die von Ihnen erstellten Supp
 
 
 ## <a name="azure-help--support-experience"></a>Azure-Benutzeroberfläche für Hilfe und Support
-Die folgenden Informationen beschreiben die Azure-Benutzeroberfläche „Hilfe und Support“, die über das Azure-Portal zugänglich bleibt, wenn Sie im linken Navigationsbereich die Option **Hilfe + Unterstützung** oder das **?**-Symbol in der oberen rechten Ecke des Azure-Portals verwenden. Ab Januar 2019 ist die Azure-Benutzeroberfläche *Hilfe und Support* nicht mehr auf den Intune-Blättern über die Option *Hilfe und Support* verfügbar.  
+Die folgenden Informationen beschreiben die Azure-Benutzeroberfläche „Hilfe und Support“, die über das Azure-Portal zugänglich bleibt, wenn Sie im linken Navigationsbereich die Option **Hilfe + Unterstützung** oder das **?** -Symbol in der oberen rechten Ecke des Azure-Portals verwenden. Ab Januar 2019 ist die Azure-Benutzeroberfläche *Hilfe und Support* nicht mehr auf den Intune-Blättern über die Option *Hilfe und Support* verfügbar.  
 
 ### <a name="create-an-online-support-ticket"></a>Erstellen eines Onlinesupporttickets
 
-1. Melden Sie sich im Azure-Portal (<https://portal.azure.com>) mit Ihren Intune-Administratoranmeldeinformationen an, und wählen Sie das Symbol **?** aus. in der oberen rechten Ecke des Portals aus, und wählen Sie dann **Hilfe und Support** aus, um zur Seite [Azure Hilfe und Support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) zu gelangen.
+1. Melden Sie sich im Azure-Portal (<https://portal.azure.com>) mit Ihren Intune-Administratoranmeldeinformationen an, und wählen Sie das Symbol **?** aus. in der oberen rechten Ecke des Portals aus, und wählen Sie dann **Hilfe und Support** aus, um zur Seite [Azure Hilfe und Support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) zu gelangen.
 
    ![Darstellung des Fragezeichenlinks mit Hervorhebung des Links „Hilfe + Support“](./media/azure-get-support.png)
 
@@ -131,7 +145,7 @@ Die folgenden Informationen beschreiben die Azure-Benutzeroberfläche „Hilfe u
    - **Dienst**: **Microsoft Intune**
    - **Problemtyp**: Wählen Sie den Problemtyp im Dropdownmenü aus.
    - **Problemuntertyp**: Wählen Sie den Problemuntertyp im Dropdownmenü aus.
-   - **Betreff**: Beschreiben Sie kurz das Problem.
+   - **Betreff**: Beschreiben Sie kurz das Problem, bei dem Sie Hilfe benötigen.
 
    ![Darstellung der Registerkarte „Grundlagen“ auf der Seite „Hilfe und Support“ > „Neue Supportanfrage“](./media/get-support/help-new-support-case-basics.png)
 
@@ -142,7 +156,7 @@ Die folgenden Informationen beschreiben die Azure-Benutzeroberfläche „Hilfe u
 5. Geben Sie auf der Registerkarte **Details** Informationen zum Problem, zur Supportmethode sowie Ihre Kontaktinformationen an, und klicken Sie auf **Weiter: Überprüfen und erstellen**.
 
    ![Darstellung der Registerkarte „Details“ auf der Seite „Hilfe und Support“ > „Neue Supportanfrage“](./media/get-support/help-new-support-case-details.png)
-6. Überprüfen Sie, ob die Informationen richtig sind, und klicken Sie dann auf **Erstellen**, um die Supportanfrage zu übermitteln.
+6. Überprüfen Sie die Informationen auf ihre Richtigkeit, und klicken Sie dann auf **Erstellen**, um die Supportanfrage zu übermitteln.
 
    ![Darstellung der Registerkarte „Überprüfen und erstellen“ auf der Seite „Neue Supportanfrage“](./media/get-support/help-new-support-case-create.png)
 
@@ -175,17 +189,16 @@ Die folgenden Informationen beschreiben die Azure-Benutzeroberfläche „Hilfe u
 6. Choose **Create** to submit your support request.
 -->
 >[!IMPORTANT]
->Wenn Sie eine Frage zur Abrechnung oder zum Abonnement haben, können Sie über das [Office-Verwaltungscenter](https://portal.office.com/Support/SupportEntry.aspx) einen Fall erstellen, um Support zu erhalten.
+>Wenn Sie eine Frage zur Abrechnung oder zum Abonnement haben, können Sie über das [Microsoft 365 Admin Center](https://admin.microsoft.com/Support/SupportEntry.aspx) eine Anfrage einreichen, um Support zu erhalten.
 
 ### <a name="view-support-requests"></a>Anzeigen aller Supportanfragen
 Sie können eine Supportanfrage im Azure-Portal anzeigen. Gehen Sie hierzu folgendermaßen vor:
 
-1. Melden Sie sich in Azure (<https://portal.azure.com>) mit Ihren Intune-Administratoranmeldeinformationen an, und wählen Sie das **?** aus. in der oberen rechten Ecke des Portals aus, und wählen Sie dann **Hilfe und Support** aus, um zur Seite [Azure Hilfe und Support](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) zu gelangen.
+1. Melden Sie sich in Azure (<https://portal.azure.com>) mit Ihren Intune-Administratoranmeldeinformationen an, und wählen Sie das **?** aus. in der oberen rechten Ecke des Portals aus, und wählen Sie dann **Hilfe und Support** aus, um zur Seite [Azure Hilfe und Support](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) zu gelangen.
 
 2. Auf der Seite **Hilfe und Support** können Sie die Liste der **kürzlich gesendeten Supportanfragen** anzeigen und diese auswählen, um weitere Details anzuzeigen.
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen
-- [Kontaktieren des telefonischen Supports für Microsoft Intune](phone-support-contact.md)
 - [Support für Abrechnung und Abonnementverwaltung](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Volumenlizenzierung](https://go.microsoft.com/fwlink/p/?LinkID=282015)
 - [Problembehandlung bei Intune](help-desk-operators.md)

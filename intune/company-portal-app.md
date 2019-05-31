@@ -6,10 +6,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c61eb47f29b201997d04fa6b1405ad2f186e4fcc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 33f24a3d7b30973855bb303bb97bf703cd4dc5fa
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237188"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567269"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 
@@ -33,7 +34,7 @@ Im Microsoft Intune-Unternehmensportal können Benutzer auf Unternehmensdaten zu
 > [!Tip]        
 > Wenn Sie das Unternehmensportal anpassen, gelten die Konfigurationen sowohl für die Unternehmensportal-Website als auch für die Unternehmensportal-Apps. Beachten Sie, dass Benutzern eine Intune-Lizenz zugewiesen werden muss, damit sie auf die Unternehmensportalwebsite zugreifen können.
 
-Durch Anpassen des Unternehmensportals können Sie Ihren Endbenutzern eine vertraute und sinnvolle Benutzeroberfläche bereitstellen. Klicken Sie hierzu in der Workload **Client-Apps** auf **Setup** > **Branding des Unternehmensportals**, und konfigurieren Sie die erforderlichen Einstellungen.  
+Durch Anpassen des Unternehmensportals können Sie Ihren Endbenutzern eine vertraute und hilfreiche Benutzeroberfläche bereitstellen. Klicken Sie hierzu im Intune-Portal auf **Client apps** > **Branding and customization** (Client-Apps > Branding und Anpassung), und konfigurieren Sie anschließend die erforderlichen Einstellungen. 
 
 > [!Note]       
 > Wenn Sie Azure Government verwenden, werden dem Endbenutzer App-Protokolle angeboten. Er kann nun entscheiden, wie er diese teilen möchte, wenn der er den Prozess zum Abrufen von Hilfe zu einem Problem startet. Wird Azure Government jedoch nicht verwendet, sendet das Unternehmensportal für Windows 10 App-Protokolle direkt an Microsoft, wenn der Benutzer den Prozess zum Abrufen von Hilfe zu einem Problem startet. Das Senden der App-Protokolle an Microsoft erleichtert die Problembehandlung und -behebung. 
@@ -90,7 +91,7 @@ Zeigen Sie ein Markenbild an, das Ihre Unternehmensmarke widerspiegelt. Nachdem 
 
 |Feldname|Weitere Informationen|
 |---|---|
-|**Upload your brand image** (Markenbild hochladen)| Mit dieser Option können Sie ein Hintergrundbild auf der Benutzerprofilseite in der Unternehmensportal-App anzeigen.<p>*Hinweis*: Das Bild wird auf verschiedenen Plattformen möglicherweise unterschiedlich dargestellt.<p><ul><li>Empfohlene Bildbreite: Weniger als 1125 px, aber nicht weniger als 640 px</li><li>Maximale Bildgröße: 1,3 MB</li><li>Dateityp: PNG, JPG oder JPEG</li></ul>|
+|**Upload your brand image** (Markenbild hochladen)| Mithilfe dieser Option können Sie ein Markenbild anzeigen. Im iOS-Unternehmensportal wird dieses als Hintergrundbild auf der Profilseite des Benutzers angezeigt.<p><ul><li>Empfohlene Bildbreite: Weniger als 1125 px, aber nicht weniger als 640 px</li><li>Maximale Bildgröße: 1,3 MB</li><li>Dateityp: PNG, JPG oder JPEG</li></ul>|
 
 Mit einem richtigen Markenbild kann das Vertrauen von Benutzern in das Unternehmensportal gesteigert werden, indem die Identität des Unternehmens aussagekräftig dargestellt wird. Im Folgenden finden Sie einige Tipps, die Sie beim Erwerben, Auswählen und Optimieren des Bilds für das Unternehmensportal beachten sollten. 
 

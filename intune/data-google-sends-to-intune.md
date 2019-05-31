@@ -7,21 +7,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 04/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c379c8db-788a-454e-9098-665ea3bc7b56
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a0678e562ab7b63c99f10c455837cf03ee30da21
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 89d6b21fd5bbc690d533695ead0b5b207ddeb6c0
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178778"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57392270"
 ---
 # <a name="data-google-sends-to-intune"></a>Von Google an Intune gesendete Daten
 
@@ -32,10 +34,10 @@ Wenn die Android-Geräteverwaltung für Unternehmen auf einem Gerät installiert
 In der folgenden Tabelle sind die Daten aufgeführt, die Google an Intune versendet, wenn auf einem Gerät die Geräteverwaltung aktiviert ist:
 
 
-| Von Google an Intune gesendete Daten | Details | Verwendung | Beispiel |
+| Von Google an Intune gesendete Daten | Details | Verwendet für | Beispiel |
 |:---:|:---:|:---:|:---:|
-| Unternehmensdaten | Unternehmens-IDs des Kunden in Google. | Verknüpft die Kundeninformationen zwischen Intune und Google. | **enterpriseId** Beispiel: LC04eik8a6.<br>**Name**. Der Administratorname, wie bei der Konfiguration von Android für das Unternehmen eingegeben. Beispiel: Johann Schmidt<br>**Administrator-E-Mail-Adresse**. YourAdmin@gmail.com, die bei der Konfiguration von Android für das Unternehmen verwendet wurde. |
-| Anwendungsdaten | Daten für verwaltete Play Store-Anwendungen. | Zuordnen der Anwendung zu Benutzern und Geräten wie verfügbar oder erforderlich. | **Anwendungsname** – Beispiel: Contoso Warehouse Inventory Application.<br>**Eindeutiger Bezeichner zur Darstellung der Anwendung** – Beispiel: app:com.Contoso.Warehouse.InventoryTracking |
+| Unternehmensdaten | Unternehmens-IDs des Kunden in Google. | Verknüpft die Kundeninformationen zwischen Intune und Google. | **enterpriseId** Beispiel: LC04eik8a6.<br>**Name**. Der Administratorname, wie bei der Konfiguration von Android für das Unternehmen eingegeben. Beispiel: Joe Smith<br>**Administrator-E-Mail-Adresse**. YourAdmin@gmail.com, die bei der Konfiguration von Android für das Unternehmen verwendet wurde. |
+| Anwendungsdaten | Daten für verwaltete Play Store-Anwendungen. | Zuordnen der Anwendung zu Benutzern und Geräten wie verfügbar oder erforderlich. | **Anwendungsname** – Beispiel: Contoso Warehouse Inventory Application<br>**Eindeutiger Bezeichner zur Darstellung der Anwendung** – Beispiel: app:com.Contoso.Warehouse.InventoryTracking |
 | Dienstkonto | Eindeutiges internes Google-Dienstkonto für die Verwendung bei bestimmten Kundenanrufen. | Wird für Anrufe in Google im Namen des Kunden verwendet (zum Anzeigen von Apps, Geräten und mehr). | **Name** – Beispiel: InternalAccount@InternalService.com.<br>**Schlüssel** – Beispiel: ServiceAccountPassword |
 
 

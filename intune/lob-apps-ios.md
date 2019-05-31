@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d687fee70a5983379d1e4e95a7be6aa454f26f8a
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 1bb213230db5a699be913929cc3b68b90a8f019a
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568569"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571755"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen iOS-Apps zu Microsoft Intune
 
@@ -33,6 +33,8 @@ Fügen Sie mithilfe der Informationen in diesem Artikel branchenspezifische (LOB
 
 >[!NOTE]
 >Benutzer von iOS-Geräten können einige der integrierten iOS-Apps wie Stocks und Maps entfernen. Über Intune können diese Apps jedoch nicht erneut bereitgestellt werden. Wenn Benutzer diese Apps löschen, müssen sie zum App Store navigieren und die Apps manuell erneut installieren.
+>
+>Für branchenspezifische iOS-Apps gilt das Größenlimit von maximal 4 GB pro App.
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
 

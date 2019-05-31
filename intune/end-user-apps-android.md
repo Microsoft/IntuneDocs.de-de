@@ -6,21 +6,23 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 08/21/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5f8263f06fe33537a74a6d1889b02b89ee6a825f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f4169f5625965ebc7d2bbbf9153cb4183fcd22b3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183399"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57388085"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Wie Ihre Android-Benutzer Apps erhalten
 
@@ -37,8 +39,8 @@ Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Android-Endb
 
 Ihre Benutzer müssen die Installation aus unbekannten Quellen zulassen, damit [branchenspezifische Apps](lob-apps-android.md) installiert werden können. Diese befinden sich normalerweise an zwei verschiedenen Orten:
 
-* **Android 7.1.2 und früher**: **Einstellungen** > **Sicherheit** > **Unknown sources** (Unbekannte Quellen)
-* **Android 8.0 und höher**: **Einstellungen** > **Apps & Benachrichtigungen** > **Special app access** > **Install unknown apps**  > **Unternehmensportal** > **Allow from this source** (Spezieller App-Zugriff > Unbekannte App installieren > Unternehmensportal > Aus dieser Quelle zulassen)
+* **Android 7.1.2 und höher:** **Einstellungen** > **Sicherheit** > **Unknown sources** (Unbekannte Quellen)
+* **Android 8.0 und höher:** **Einstellungen** > **Apps & Benachrichtigungen** > **Special app access** > **Install unknown apps**  > **Unternehmensportal** > **Allow from this source** (Spezieller App-Zugriff > Unbekannte App installieren > Unternehmensportal > Aus dieser Quelle zulassen)
 
 In diesem Fall informiert die Unternehmensportal-App den Benutzer und führt ihn zur entsprechenden Einstellung. 
 

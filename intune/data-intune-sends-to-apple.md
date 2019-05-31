@@ -7,21 +7,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/26/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba9d4d779a0f609bf07e4d0d7d9aad83e5d415c5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f1fbf8f37b989112025bd6d54328dd61246913f7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181529"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57400210"
 ---
 # <a name="data-intune-sends-to-apple"></a>Von Intune an Apple gesendete Daten
 
@@ -38,7 +40,7 @@ Damit Microsoft Intune eine Verbindung einrichten kann, müssen Sie zunächst f�
 
 In der folgenden Tabelle sind die Daten aufgeführt, die Microsoft Intune von einem Gerät an den aktivierten Apple-Dienst sendet. 
 
-| Dienst | An Apple versendete Daten | Verwendung |
+| Dienst | An Apple versendete Daten | Verwendet für |
 |---|---| ---|
 | [APNS](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token, PushMagic | Wenn der Server das Gerät akzeptiert, stellt das Gerät sein Gerätetoken für Pushbenachrichtigungen für den Server bereit. Der Server verwendet dieses Token zum Versenden von Pushbenachrichtigungen an das Gerät. Diese Meldung zum Eincheckvorgang enthält auch eine also PushMagic-Zeichenfolge. Der Server speichert diese Zeichenfolge und fügt sie in alle Pushbenachrichtigungen ein, die er an das Gerät sendet. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Servertoken | Gerätetoken für Pushbenachrichtigungen zur Authentifizierung beim Apple-Dienst. |
@@ -59,10 +61,10 @@ In der folgenden Tabelle sind die Daten aufgeführt, die Microsoft Intune von ei
 | ASM/DEP | device_assigned_by | Die E-Mail-Adresse der Person, die das Gerät zugewiesen hat. |
 | ASM/DEP | os | Das Betriebssystem des Geräts: iOS, OSX oder tvOS. Dieser Schlüssel ist ab X-Server-Protocol-Version 2 gültig. |
 | ASM/DEP | device_family | Die Apple-Produktfamilie des Geräts: iPad, iPhone, iPod, Mac oder AppleTV. Dieser Schlüssel ist ab X-Server-Protocol-Version 2 gültig. |
-| ASM/DEP | profile_name | Zeichenfolge. Ein lesbarer Name für das Profil. |
-| ASM/DEP | support_phone_number | (Optional) Zeichenfolge. Eine Supportrufnummer für die Organisation. |
-| ASM/DEP | support_email_address | (Optional) Zeichenfolge. Eine Support-E-Mail-Adresse für die Organisation. Dieser Schlüssel ist ab X-Server-Protocol-Version 2 gültig. |
-| ASM/DEP | Abteilung | (Optional) Zeichenfolge. Der benutzerdefinierte Abteilungs- oder Standortname. |
+| ASM/DEP | profile_name | Zeichenfolge Ein lesbarer Name für das Profil. |
+| ASM/DEP | support_phone_number | (Optional) Zeichenfolge Eine Supportrufnummer für die Organisation. |
+| ASM/DEP | support_email_address | (Optional) Zeichenfolge Eine Support-E-Mail-Adresse für die Organisation. Dieser Schlüssel ist ab X-Server-Protocol-Version 2 gültig. |
+| ASM/DEP | Abteilung | (Optional) Zeichenfolge Der benutzerdefinierte Abteilungs- oder Standortname. |
 | ASM/DEP | Geräte | Zeichenfolgenarrays, die die Seriennummer des Geräts enthalten. (Kann leer sein.) |
 | VPP | Intune UserId guid | Von Intune generierte GUID. |
 | VPP | Managed AppleId UPN | AppleID, die vom Administrator beim Konfigurieren der VPP-Tokenverbindung mit Apple angegeben wurde. |

@@ -1,45 +1,45 @@
 ---
 title: Gerätekonformitätsrichtlinien in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Anforderungen für die Nutzung von Gerätekonformitätsrichtlinien, Übersicht über den Status und die Sicherheitsebenen, Verwendung des InGracePeriod-Status, Arbeiten mit bedingtem Zugriff, Handhabung von Geräten ohne zugewiesene Richtlinie und die Unterschiede bei der Konformität im Azure-Portal und im klassischen Portal in Microsoft Intune
+description: Verwenden Sie Gerätekonformitätsrichtlinien,erhalten Sie eine Übersicht über Status- und die Sicherheitsebenen, verwenden Sie den InGracePeriod-Status, arbeiten Sie mit bedingtem Zugriff, verwalten Sie Geräte ohne zugewiesene Richtlinie, und erfahren Sie mehr zu den Unterschieden bei der Konformität im Azure-Portal und im klassischen Portal in Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2019
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2a3a9838043d4e9b69c6369da87a6f54087f76c
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: fbed6185abe7656c3269805d1d5ed09eccbaf05e
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850001"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570428"
 ---
-# <a name="get-started-with-device-compliance-policies-in-intune"></a>Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune
+# <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Legen Sie mit Intune Regeln auf Geräten fest, um Zugriff auf Ressourcen in Ihrer Organisation zu gewähren
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Viele MDM-Lösungen (Mobile Device Management) tragen zum Schutz von Unternehmensdaten bei, da Benutzer und Geräte bestimmte Anforderungen erfüllen müssen. In Intune wird dieses Feature „Konformitätsrichtlinien“ genannt. Konformitätsrichtlinien definieren Regeln und Einstellungen, die Benutzer und Geräte erfüllen müssen, um als „konform“ zu gelten. In Kombination mit dem bedingten Zugriff können Administratoren Benutzern und Geräten, die die Regeln nicht erfüllen, blockieren. Beispielsweise kann die Intune-Administrator anfordern, dass:
+Viele MDM-Lösungen (Mobile Device Management) tragen zum Schutz von Unternehmensdaten bei, da Benutzer und Geräte bestimmte Anforderungen erfüllen müssen. In Intune wird dieses Feature „Konformitätsrichtlinien“ genannt. Konformitätsrichtlinien definieren Regeln und Einstellungen, die Benutzer und Geräte erfüllen müssen, um als „konform“ zu gelten. In Kombination mit dem bedingten Zugriff können Administratoren Benutzern und Geräten, die die Regeln nicht erfüllen, blockieren.
+
+Beispielsweise kann die Intune-Administrator anfordern, dass:
 
 - Endbenutzer zum Zugriff auf Organisationsdaten über mobile Geräte ein Kennwort verwenden.
-
 - Das Gerät nicht mit Jailbreak oder Rootzugriff manipuliert wurde.
-
 - Das Gerät eine minimale oder maximale Betriebssystemversion hat.
-
 - Das Gerät höchstens einer angegebenen Gerätebedrohungsstufe entspricht
 
-Mithilfe von Kompatibilitätsrichtlinien können Sie den Kompatibilitätsstatus auf Ihren Geräten überwachen.
+Außerdem können Sie diese Funktion verwenden, um den Konformitätsstatus von Geräten in Ihrer Organisation zu überwachen.
 
 > [!IMPORTANT]
-> Intune folgt bei allen Konformitätsauswertungen auf dem Gerät dem Zeitplan für das Einchecken von Geräten. [Weitere Informationen zum Zeitplan für das Einchecken von Geräten](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)
+> Intune folgt bei allen Konformitätsauswertungen auf dem Gerät dem Zeitplan für das Einchecken von Geräten. [Weitere Informationen zum Zeitplan für das Einchecken von Geräten](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned)
 
 <!---### Actions for noncompliance
 
@@ -64,121 +64,74 @@ compliance issues on the device. You can also use this time to create your actio
 
 Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
-## <a name="prerequisites"></a>Voraussetzungen
+## <a name="device-compliance-policies-work-with-azure-ad"></a>Gerätekonformitätsrichtlinien mit Azure AD
 
-Stellen Sie zum Verwenden von Konformitätsrichtlinien folgendes sicher:
+Intune verwendet den [bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) von Azure Active Directory (Azure AD), um Konformität zu erzwingen. Wenn ein Gerät in Intune registriert wird, beginnt der Azure AD-Registrierungsprozess, wodurch die Geräteinformationen in Azure AD aktualisiert werden. Ein wichtiger Teil der Information ist der Gerätekonformitätsstatus. Dieser Gerätekonformitätsstatus wird von Richtlinien für den bedingten Zugriff zum Blockieren oder Zulassen des Zugriffs auf E-Mails und andere Organisationsressourcen verwendet.
 
-- Verwenden Sie folgende Abonnements:
+- Unter [Worum handelt es sich bei der Geräteverwaltung in Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/device-management-introduction) erhalten Sie weitere Informationen zur Registrierung von Geräten in Azure AD.
 
-  - Intune
-  - Azure Active Directory (AD) Premium
-
-- Verwenden Sie eine unterstützte Plattform:
-
-  - Android
-  - iOS
-  - macOS (Vorschau)
-  - Windows 8.1
-  - Windows Phone 8.1
-  - Windows 10
-
-- Registrieren Sie Geräte in Intune, um den Konformitätsstatus zu ermitteln
-
-- Registrieren Sie Geräte für einen Benutzer oder registrieren Sie ohne einen Hauptbenutzer. Für mehrere Benutzer registrierte Geräte werden nicht unterstützt.
-
-## <a name="how-device-compliance-policies-work-with-azure-ad"></a>So funktionieren Gerätekonformitätsrichtlinien mit Azure AD
-
-Wenn ein Gerät in Intune registriert wird, beginnt der Azure AD-Registrierungsprozess, wodurch die Geräteattribute in Azure AD aktualisiert werden. Ein wichtiger Teil der Information ist der Gerätekonformitätsstatus. Dieser Gerätekonformitätsstatus wird von bedingten Zugriffsrichtlinien zum Blockieren oder Zulassen des Zugriffs auf E-Mails und andere Unternehmensressourcen verwendet.
-
-Der [Azure AD-Registrierungsprozess](https://docs.microsoft.com/azure/active-directory/device-management-introduction) bietet mehr Informationen.
-
-## <a name="refresh-cycle-times"></a>Aktualisierungszykluszeit
-
-Bei der Prüfung der Konformität verwendet Intune den gleichen Aktualisierungszyklus wie für Konfigurationsprofile. Im Allgemeinen gelten folgende Zeiten:
-
-- iOS: alle sechs Stunden
-- macOS: alle sechs Stunden
-- Android: alle acht Stunden
-- Windows 10-PCs, die als Geräte registriert sind alle acht Stunden
-- Windows Phone: alle acht Stunden
-- Windows 8.1: alle acht Stunden
-
-Eine Konformitätsprüfung findet unmittelbar nach der Registrierung eines Geräts häufiger statt.
-
-### <a name="assign-an-ingraceperiod-status"></a>Zuweisung eines InGracePeriod-Status
-
-Der InGracePeriod-Status für eine Konformitätsrichtlinie ist ein Wert. Der Wert wird durch die Kombination der Toleranzzeit eines Geräts und dem tatsächlichen Status eines Geräts für diese Konformitätsrichtlinie ermittelt.
-
-Im Detail bedeutet das: Wenn ein Gerät den Status „NonCompliant“ für eine zugewiesene Richtlinie aufweist und:
-
-- dem Gerät keine Toleranzperiode zugewiesen ist, lautet der zugewiesene Wert für die Konformitätsrichtlinie „NonCompliant“.
-- die Toleranzperiode des Geräts abgelaufen ist, lautet der zugewiesene Wert für die Konformitätsrichtlinie „NonCompliant“.
-- die Toleranzperiode des Geräts erst in der Zukunft abläuft, lautet der zugewiesene Wert für die Konformitätsrichtlinie „InGracePeriod“.
-
-In der folgenden Tabelle werden diese Punkte zusammengefasst:
-
-|Tatsächlicher Konformitätsstatus|Wert der zugewiesenen Toleranzperiode|Effektiver Konformitätsstatus|
-|---------|---------|---------|
-|NonCompliant |Keine Toleranzperiode zugewiesen |NonCompliant |
-|NonCompliant |Datum vom Vortag|NonCompliant|
-|NonCompliant |Datum des folgenden Tages|InGracePeriod|
-
-Weitere Informationen zum Überwachen der Richtlinien zur Gerätekonformität finden Sie unter [Überwachen von Intune-Richtlinien zur Gerätekonformität](compliance-policy-monitor.md).
-
-### <a name="assign-a-resulting-compliance-policy-status"></a>Zuweisen eines resultierenden Konformitätsrichtlinienstatus
-
-Wenn ein Gerät mehrere Konfigurationsprofile hat und es über verschiedene Konformitätsstatus für mindestens zwei zugeordnete Konformitätsprofile verfügt, wird genau ein resultierender Konformitätsstaus zugewiesen. Diese Zuweisung basiert auf einem konzeptuellen Schweregrad, der den einzelnen Konformitätsstatus zugewiesen ist. Jeder Konformitätsstatus verfügt über den folgenden Schweregrad:
-
-|Status  |Schweregrad  |
-|---------|---------|
-|Unbekannt     |1|
-|NotApplicable     |2|
-|Kompatibel|3|
-|InGracePeriod|4|
-|NonCompliant|5|
-|Fehler|6|
-
-Hat ein Gerät mehrere Konformitätsrichtlinien, so wird dem Gerät der höchste Schweregrad aller Richtlinien zugewiesen.
-
-Angenommen, einem Gerät sind z.B. drei Konformitätsrichtlinien zugewiesen: ein Status „Unbekannt“ (Schweregrad = 1), ein Status „Konform“ (Schweregrad = 3) und ein Status „InGracePeriod“ (Schweregrad = 4). Der Status „InGracePeriod“ hat den höchsten Schweregrad, sodass alle drei Richtlinien über den Konformitätsstatus „InGracePeriod“ verfügen.
+- Unter [Was ist bedingter Zugriff?](conditional-access.md) und [Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?](conditional-access-intune-common-ways-use.md) wird diese Funktion im Zusammenhang mit Intune beschrieben.
 
 ## <a name="ways-to-use-device-compliance-policies"></a>Möglichkeiten, die Gerätekonformitätsrichtlinien zu verwalten
 
 #### <a name="with-conditional-access"></a>Mit bedingten Zugriff
-Geräten, welche die Richtlinienregeln einhalten, können Sie Zugriff auf E-Mail- und andere Unternehmensressourcen gewähren. Wenn die Geräte die Richtlinienregeln nicht einhalten, erhalten sie keinen Zugriff auf Unternehmensressourcen. Dies ist der bedingte Zugriff.
+
+Geräten, welche die Richtlinienregeln einhalten, können Sie Zugriff auf E-Mail- und andere Organisationsressourcen gewähren. Wenn die Geräte die Richtlinienregeln nicht einhalten, erhalten sie keinen Zugriff auf Organisationsressourcen. Dies ist der bedingte Zugriff.
 
 #### <a name="without-conditional-access"></a>Ohne bedingten Zugriff
+
 Gerätekonformitätsrichtlinien können auch ohne einen bedingten Zugriff verwendet werden. Bei unabhängiger Nutzung von Kompatibilitätsrichtlinien werden die Zielgeräte ausgewertet und mit ihrem Kompatibilitätsstatus gemeldet. So können Sie beispielsweise einen Bericht dazu erstellen, wie viele Geräte nicht verschlüsselt sind oder mit Jailbreak oder Rootzugriff manipuliert wurden. Wenn Sie Kompatibilitätsrichtlinien ohne bedingten Zugriff nutzen, gelten keine Zugriffsbeschränkungen für Unternehmensressourcen.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Möglichkeiten, die Gerätekonformitätsrichtlinien bereitzustellen
+
 Sie können Benutzern die Konformitätsrichtlinie in Benutzergruppen oder Geräten in Gerätegruppen bereitstellen. Wenn Sie eine Konformitätsrichtlinie für einen Benutzer bereitstellen, wird die Konformität aller Geräte des Benutzers überprüft. Auf Windows 10-Geräten mit Version 1803 und höher wird empfohlen, die Bereitstellung für Gerätegruppen vorzunehmen, *falls* der primärer Benutzer das Gerät nicht registriert hat. Die Verwendung von Gerätegruppen in diesem Szenario hilft beim Erstellen von Konformitätsberichten.
 
-Auf allen in Intune registrierten Geräten werden mehrere integrierte Einstellungen (**Intune** > **Gerätekonformität**)ausgewertet. Dazu gehören:
+Intune umfasst zudem einige integrierte Konformitätsrichtlinieneinstellungen. Die folgenden integrierten Richtlinien werden auf allen Geräten ausgewertet, die in Intune registriert wurden:
 
 - **Geräte ohne zugewiesene Konformitätsrichtlinie kennzeichnen als**: Diese Eigenschaft verfügt über zwei Werte:
 
   - **Konform:** Sicherheitsfeature ist ausgeschaltet
   - **Nicht konform** (Standard): Sicherheitsfeature ist eingeschaltet
 
-  Ist einem Gerät keine Konformitätsrichtlinie zugewiesen, dann wird dieses Gerät als nicht konform erachtet. Standardmäßig werden Geräte als **Nicht konform** gekennzeichnet. Wenn Sie den bedingten Zugriff verwenden, sollten Sie die Einstellung auf **Nicht konform** festlegen. Falls ein Benutzer nicht konform ist, da keine Richtlinie zugewiesen ist, führt das Unternehmensportal `No compliance policies have been assigned` auf.
+  Ist einem Gerät keine Konformitätsrichtlinie zugewiesen, dann wird dieses Gerät als nicht konform erachtet. Standardmäßig werden Geräte als **Nicht konform** gekennzeichnet. Wenn Sie den bedingten Zugriff verwenden, sollten Sie die Einstellung auf **Nicht konform** festlegen. Falls ein Benutzer nicht konform ist, weil ihm keine Richtlinie zugewiesen ist, zeigt die [Unternehmensportal-App](company-portal-app.md) `No compliance policies have been assigned` an.
 
-- **Verbesserte Erkennung von Jailbreaks**: Ist diese Einstellung aktiviert, werden iOS-Geräte bei Intune regelmäßiger eingecheckt. Durch die Aktivierung dieser Eigenschaft werden die Ortungsdienste des Gerätes verwendet und der Akkuverbrauch wird beeinflusst. Die Ortungsdaten des Benutzers werden nicht bei Intune gespeichert.
+- **Verbesserte Erkennung von Jailbreaks**: Ist diese Einstellung aktiviert, werden iOS-Geräte bei Intune regelmäßiger eingecheckt. Durch die Aktivierung dieser Eigenschaft werden die Ortungsdienste des Gerätes verwendet und der Akkuverbrauch wird beeinflusst. Die Standortdaten des Benutzers werden nicht in Intune gespeichert.
 
   Für die Aktivierung dieser Einstellung müssen Geräte:
-  - Ortungsdienste auf OS-Ebene aktivieren
+  - Ortungsdienste auf Betriebssystemebene aktivieren
   - dem Unternehmensportal erlauben, die Ortungsdienste zu nutzen
-  - den Jailbreak-Status mindestens alle 72 Stunden bewerten und Intune melden. Andernfalls wird das Gerät als nicht konform gekennzeichnet. Sie können den Auswertungsvorgang entweder auslösen, indem Sie die Unternehmensportal-App öffnen oder indem Sie das Gerät an einem anderen Ort positionieren, der mindestens 500 m entfernt ist. Wenn das Gerät nicht innerhalb von 72 Stunden um 500 Meter verlagert wird, muss der Benutzer die Unternehmensportal-App für eine erweiterte Bewertung des Jailbreak-Status öffnen.
+  - den Jailbreak-Status mindestens alle 72 Stunden bewerten und Intune melden. Andernfalls wird das Gerät als nicht konform gekennzeichnet. Sie können den Auswertungsvorgang auslösen, indem Sie die Unternehmensportal-App öffnen oder indem Sie das Gerät an einem anderen Ort positionieren, der mindestens 500 m entfernt ist. Wenn das Gerät nicht innerhalb von 72 Stunden um 500 Meter verlagert wird, muss der Benutzer die Unternehmensportal-App für eine erweiterte Bewertung des Jailbreak-Status öffnen.
 
-- **Gültigkeitszeitraum des Konformitätsstatus (Tage)**: Geben Sie den Zeitraum an, in dem Geräte den Status für alle empfangenen Konformitätsrichtlinien melden müssen. Geräte, die innerhalb dieses Zeitraums keine Statusmeldung abgeben, werden als nicht konform behandelt. Der Standardwert beträgt 30 Tage.
+- **Gültigkeitszeitraum des Konformitätsstatus (Tage)** : Geben Sie den Zeitraum an, in dem Geräte den Status für alle empfangenen Konformitätsrichtlinien melden müssen. Geräte, die innerhalb dieses Zeitraums keine Statusmeldung abgeben, werden als nicht konform behandelt. Der Standardwert beträgt 30 Tage.
 
-Alle Geräte verfügen über eine **integrierte Richtlinie für Gerätekonformität** (Azure-Portal > Gerätekonformität > Richtlinienkonformität). Verwenden Sie diese integrierte Richtlinie, um diese Einstellungen zu überwachen.
-
-Informationen darüber, wie lange es dauert, bis eine Richtlinie für mobile Geräte nach der Bereitstellung der Richtlinie abgerufen wird, finden Sie unter [Beheben von Problemen mit Profilen](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+Sie können die integrierten Richtlinien verwenden, um diese Einstellungen zu überwachen. Intune wird außerdem je nach Geräteplattform in regelmäßigen Abständen [aktualisiert oder sucht nach Updates](create-compliance-policy.md#refresh-cycle-times). Unter [Häufig auftretende Probleme und Lösungen für Geräteprofile in Microsoft Intune](device-profile-troubleshoot.md) finden Sie weitere Informationen.
 
 Mit Konformitätsberichten können Sie den Status von Geräten überprüfen. Weitere Informationen finden Sie unter [Überwachen von Intune-Richtlinien zur Gerätekompatibilität](compliance-policy-monitor.md).
 
-### <a name="actions-for-noncompliance"></a>Aktionen bei Inkompatibilität
-Sie können eine zeitlich strukturierte Aktionsfolge für Geräte konfigurieren, die die Kriterien der Konformitätsrichtlinie nicht erfüllen. Diese Aktionen für Nichtkonformität können wie unter [Automatisieren von E-Mails und Hinzufügen von Aktionen für nicht konforme Geräte in Intune](actions-for-noncompliance.md) automatisiert werden.
+## <a name="non-compliance-and-conditional-access-on-the-different-platforms"></a>Nichtkonformität und bedingter Zugriff auf unterschiedlichen Plattformen
+
+In der folgenden Tabelle wird beschrieben, wie nicht konforme Einstellungen verwaltet werden, wenn eine Konformitätsrichtlinie mit einer Richtlinie für bedingten Zugriff verwendet wird.
+
+---------------------------
+
+|**Richtlinieneinstellung**| **Plattform** |
+| --- | ----|
+| **PIN- oder Kennwortkonfiguration** | - **Android 4.0 und höher:** Isoliert</br>- **Samsung Knox Standard 4.0 und höher:** Isoliert</br>- **Android Enterprise:** Isoliert</br></br>- **iOS 8.0 oder höher:** Wiederhergestellt</br>- **macOS 10.11 und höher:** Wiederhergestellt</br></br>- **Windows 8.1 und höher:** Wiederhergestellt</br>- **Windows Phone 8.1 oder höher:** Wiederhergestellt|
+| **Geräteverschlüsselung** | - **Android 4.0 und höher:** Isoliert</br>- **Samsung Knox Standard 4.0 und höher:** Isoliert</br>- **Android Enterprise:** Isoliert</br></br>- **iOS 8.0 oder höher:** Wiederhergestellt (durch Festlegen der PIN)</br>- **macOS 10.11 und höher:** Wiederhergestellt (durch Festlegen der PIN)</br></br>- **Windows 8.1 und höher:** Nicht verfügbar</br>- **Windows Phone 8.1 oder höher:** Wiederhergestellt |
+| **Per Jailbreak oder Rootzugriff manipuliertes Gerät** | - **Android 4.0 und höher:** Unter Quarantäne gestellt (keine Einstellung)</br>- **Samsung Knox Standard 4.0 und höher:** Unter Quarantäne gestellt (keine Einstellung)</br>- **Android Enterprise:** Unter Quarantäne gestellt (keine Einstellung)</br></br>- **iOS 8.0 oder höher:** Unter Quarantäne gestellt (keine Einstellung)</br>- **macOS 10.11 und höher:** Nicht verfügbar</br></br>- **Windows 8.1 und höher:** Nicht verfügbar</br>- **Windows Phone 8.1 oder höher:** Nicht verfügbar |
+| **E-Mail-Profil** | - **Android 4.0 und höher:** Nicht verfügbar</br>- **Samsung Knox Standard 4.0 und höher:** Nicht verfügbar</br>- **Android Enterprise:** Nicht verfügbar</br></br>- **iOS 8.0 oder höher:** Isoliert</br>- **macOS 10.11 und höher:** Isoliert</br></br>- **Windows 8.1 und höher:** Nicht verfügbar</br>- **Windows Phone 8.1 oder höher:** Nicht verfügbar |
+| **Minimale Version des Betriebssystems** | - **Android 4.0 und höher:** Isoliert</br>- **Samsung Knox Standard 4.0 und höher:** Isoliert</br>- **Android Enterprise:** Isoliert</br></br>- **iOS 8.0 oder höher:** Isoliert</br>- **macOS 10.11 und höher:** Isoliert</br></br>- **Windows 8.1 und höher:** Isoliert</br>- **Windows Phone 8.1 oder höher:** Isoliert |
+| **Maximale Version des Betriebssystems** | - **Android 4.0 und höher:** Isoliert</br>- **Samsung Knox Standard 4.0 und höher:** Isoliert</br>- **Android Enterprise:** Isoliert</br></br>- **iOS 8.0 oder höher:** Isoliert</br>- **macOS 10.11 und höher:** Isoliert</br></br>- **Windows 8.1 und höher:** Isoliert</br>- **Windows Phone 8.1 oder höher:** Isoliert |
+| **Windows-Integritätsnachweis** | - **Android 4.0 und höher:** Nicht verfügbar</br>- **Samsung Knox Standard 4.0 und höher:** Nicht verfügbar</br>- **Android Enterprise:** Nicht verfügbar</br></br>- **iOS 8.0 oder höher:** Nicht verfügbar</br>- **macOS 10.11 und höher:** Nicht verfügbar</br></br>- **Windows 10 und Windows 10 Mobile:** Isoliert</br>- **Windows 8.1 und höher:** Isoliert</br>- **Windows Phone 8.1 oder höher:** Nicht verfügbar |
+
+---------------------------
+
+**Bereinigt:** Das Betriebssystem des Geräts erzwingt die Konformität. Beispiel: Der Benutzer ist gezwungen, eine PIN festzulegen.
+
+**In Quarantäne:** Das Betriebssystem des Geräts erzwingt keine Konformität. Android- und Android Enterprise-Geräte zwingen den Benutzer z. B. nicht dazu, das Gerät zu verschlüsseln. Wenn das Gerät nicht kompatibel ist, erfolgen die folgenden Aktionen:
+
+  - Wenn eine Richtlinie für bedingten Zugriff für den Benutzer gilt, wird das Gerät blockiert.
+  - Die Unternehmensportal-App benachrichtigt den Benutzer über Konformitätsprobleme.
 
 ## <a name="azure-classic-portal-vs-azure-portal"></a>Klassisches Azure-Portal im Vergleich mit dem Azure-Portal
 
@@ -187,11 +140,9 @@ Der Hauptunterschied bei der Verwendung von Gerätekonformitätsrichtlinien im A
 - Im Azure-Portal werden die Konformitätsrichtlinien separat für jede unterstützte Plattform erstellt.
 - Im klassischen Azure-Portal wird eine Gerätekonformitätsrichtlinie für alle unterstützten Plattformen verwendet.
 
-<!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
+<!--- -   In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
 
 -   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
-
-## <a name="device-compliance-policies-in-the-classic-portal-and-azure-portal"></a>Gerätekonformitätsrichtlinien im klassischen Portal und im Azure-Portal
 
 Gerätekonformitätsrichtlinien, die im [klassischen Portal](https://manage.microsoft.com) erstellt wurden, erscheinen nicht im [Azure-Portal](https://portal.azure.com). Sie sind jedoch weiterhin für Benutzer bestimmt und können mithilfe des klassischen Portals verwaltet werden.
 
@@ -199,12 +150,14 @@ Sie müssen eine neue Gerätekonformitätsrichtlinien im Azure-Portal erstellen,
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Plattformspezifische Informationen zum Erstellen einer Gerätekonformitätsrichtlinie finden Sie hier:
+- [Erstellen Sie eine Richtlinie](create-compliance-policy.md), und sehen Sie sich die Anforderungen an.
+- In den Konformitätseinstellungen für die unterschiedlichen Geräteplattformen finden Sie weitere Informationen:
 
   - [Android](compliance-policy-create-android.md)
-  - [Android-Arbeitsprofil](compliance-policy-create-android-for-work.md)
+  - [Android Enterprise](compliance-policy-create-android-for-work.md)
   - [iOS](compliance-policy-create-ios.md)
   - [macOS](compliance-policy-create-mac-os.md)
-  - [Windows](compliance-policy-create-windows.md)
+  - [Windows 10 und höher](compliance-policy-create-windows.md)
+  - [Windows 8.1 und Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
 
-- Weitere Informationen zu den Richtlinienentitäten für Intune-Data Warehouse finden Sie unter [Reference for policy entities (Referenz für Richtlinienentitäten)](reports-ref-policy.md).
+- Weitere Informationen zu den Intune-Richtlinienentitäten für Data Warehouses finden Sie unter [Reference for policy entities (Referenz für Richtlinienentitäten)](reports-ref-policy.md).

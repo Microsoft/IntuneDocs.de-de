@@ -1,6 +1,6 @@
 ---
 title: Unternehmensportalmeldungen, die Benutzern möglicherweise auf Geräten angezeigt werden
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Verstehen Sie die unterschiedlichen Nachrichten, die Endbenutzern im Unternehmensportal angezeigt werden können.
 keywords: ''
 author: lenewsad
@@ -10,18 +10,19 @@ ms.date: 03/09/2017
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2fd42ece4a0df60ebe6f15b67c91bba46f210ff
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233156"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59569128"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Grundlegendes zum Verständnis von Meldungen in der Unternehmensportal-App
 
@@ -110,6 +111,34 @@ Wenn Sie die Unternehmensportal-App nicht zur Liste **Zulässige Apps** oder **A
 ### <a name="what-it-means"></a>Bedeutung
 
 Fügen Sie das Unternehmensportal zur Liste der **zulässigen Apps** oder **ausgenommenen Apps** hinzu, die in der Windows Information Protection-App-Schutzrichtlinie aufgeführt sind. Weitere Informationen finden Sie unter [Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune](windows-information-protection-policy-create.md).
+
+## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>Genehmigen einer iOS-Unternehmensportal-App (branchenspezifischen App) auf Ihrem iOS-Gerät 
+
+### <a name="where-it-appears"></a>Position in der Oberfläche
+Ihr Gerät vertraut iOS-Apps, die von Ihrer Organisation entwickelt wurden und nicht im App Store verfügbar sind, standardmäßig nicht. Wenn Sie solche Apps über das Unternehmensportal installieren und die App starten, wird folgende Meldung angezeigt:
+
+![Meldung in iOS-App: Untrusted Enterprise Developer (Nicht vertrauenswürdiger Unternehmensentwickler)](./media/end-user-company-portal-messages/end-user-company-portal-messages-01.png)
+
+### <a name="what-it-means"></a>Bedeutung
+Diese Meldung bedeutet, dass Sie Ihre iOS-Geräteeinstellungen bearbeiten müssen, damit eine App, die von Ihrem Unternehmen entwickelt wurde, auf Ihrem iOS-Gerät genehmigt und installiert wird.
+
+Wenn Sie solche Apps über das Unternehmensportal installieren und die App dann öffnen, führen Sie folgende Schritte aus, um die App nach dem Download zu genehmigen:
+
+1. Beim Öffnen einer installierten Unternehmens-App (branchenspezifischen App) wird Ihnen die Meldung „Untrusted Enterprise Developer“ (Nicht vertrauenswürdiger Unternehmensentwickler) angezeigt. <br>
+   Wählen Sie **Abbrechen** aus.
+2. Navigieren Sie zu **Settings** > **General** > **Device Management** (Einstellungen > Allgemein > Geräteverwaltung).
+
+   ![Benutzeroberfläche eines iOS-Geräts – Geräteverwaltung](./media/end-user-company-portal-messages/end-user-company-portal-messages-02.png)
+
+3. Klicken Sie auf **Management Profile** > **Enterprise app** (Verwaltungsprofil > Unternehmens-App).
+4. Wählen Sie den Entwicklernamen aus.
+5. Drücken Sie auf **Trust _developer name_** ([Entwicklername] vertrauen).
+6. Bestätigen Sie die App, indem Sie bei der Popupmeldung bei der App-Installation auf **Trust** (Vertrauen) klicken.
+
+   ![Benutzeroberfläche eines iOS-Geräts – Meldung: App vertrauen](./media/end-user-company-portal-messages/end-user-company-portal-messages-03.png)
+
+    Sie sollten die Unternehmens-App nun öffnen und verwenden können.
+
 
 ### <a name="see-also"></a>Siehe auch
 [Informieren der Endbenutzer über den Einsatz von Intune](end-user-educate.md)

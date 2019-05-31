@@ -1,14 +1,15 @@
 ---
 title: 'Gerätefunktionen und -einstellungen in Microsoft Intune: Azure | Microsoft-Dokumentation'
-description: In dieser Übersicht über die verschiedenen Microsoft Intune-Geräteprofile finden Sie Angaben zu Funktionen, Einschränkungen, E-Mail-Adressen, WLAN, VPN, Bildungswesen, Zertifikaten, zum Upgrade von Windows 10, BitLocker und Windows Defender, Windows Information Protection sowie zu administrativen Vorlagen und benutzerdefinierten Einstellungen für die Gerätekonfiguration im Azure-Portal. Verwenden Sie diese Profile zum Verwalten und Schützen von Daten und Geräten in Ihrem Unternehmen.
+description: Übersicht über die unterschiedlichen Microsoft Intune-Geräteprofile. Sie erhalten Informationen zu Funktionen, Einschränkungen, E-Mail-Adressen, WLAN, VPN, Bildungswesen, Zertifikaten, zum Upgrade von Windows 10, BitLocker und Windows Defender, Windows Information Protection sowie zu administrativen Vorlagen und benutzerdefinierten Einstellungen für die Gerätekonfiguration im Azure-Portal. Verwenden Sie diese Profile zum Verwalten und Schützen von Daten und Geräten in Ihrem Unternehmen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
@@ -16,90 +17,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b9bd8aaca9aaf6e39c7a120518eeca1cef31511
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 4dc68071886b8f2a0852feb69bf78c2c265f046d
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845090"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570350"
 ---
-# <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Anwenden von Einstellungen für Funktionen auf Ihren Geräten mit Geräteprofilen in Microsoft Intune
+# <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Anwenden von Einstellungen und Funktionen auf Ihren Geräten mit Geräteprofilen in Microsoft Intune
 
-Microsoft Intune umfasst Einstellungen und Funktionen, die Sie auf unterschiedlichen Geräten in Ihrer Organisation aktivieren oder deaktivieren können. Diese Einstellungen und Funktionen werden zu „Konfigurationsprofilen“ hinzugefügt. Sie können Profile für verschiedene Geräte und Plattformen erstellen, wie iOS, Android und Windows, und dann mit Intune das Profil auf Geräte in Ihrem Unternehmen anwenden.
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Beispiele für Profile:
+Microsoft Intune umfasst Einstellungen und Funktionen, die Sie auf unterschiedlichen Geräten in Ihrer Organisation aktivieren oder deaktivieren können. Diese Einstellungen und Funktionen werden zu „Konfigurationsprofilen“ hinzugefügt. Sie können Profile für unterschiedliche Geräte und Plattformen einrichten, z.B. für iOS, Android und Windows. Verwenden Sie Intune, um das Profil Geräten zuzuweisen.
+
+Im Rahmen Ihrer MDM-Lösung (Mobile Device Management, Verwaltung mobiler Geräte) können Sie diese Konfigurationsprofile verwenden, um verschiedene Aufgaben zu erledigen. Beispiele für Profile:
 
 - Verwenden Sie auf Windows 10-Geräten eine Profilvorlage, die ActiveX-Steuerelemente im Internet Explorer blockiert.
 - Ermöglichen Sie es Benutzern auf iOS- und macOS-Geräten, AirPrint-Drucker in Ihrer Organisation zu verwenden.
 - Gewähren oder verhindern Sie den Zugriff per Bluetooth auf das Gerät.
 - Erstellen Sie ein WLAN- oder VPN-Profil, das verschiedenen Geräten den Zugriff auf Ihr Unternehmensnetzwerk ermöglicht.
-- Verwalten Sie Softwareupdates, auch wenn sie installiert sind.
+- Verwalten Sie Softwareupdates, auch wenn sie installiert werden.
 - Führen Sie ein Android-Gerät als dediziertes Kioskgerät aus, auf dem bei Bedarf auch mehr als eine App ausgeführt werden kann.
 
-Dieser Artikel listet die Schritte zum Erstellen eines Profils auf und gibt einen Überblick über die verschiedenen Profiltypen, die Sie erstellen können. Verwenden Sie diese Profile, um bestimmte Funktionen auf den Geräten zuzulassen oder zu verhindern.
-
-## <a name="create-the-profile"></a>Erstellen des Profils
-
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie anschließend **Intune** aus.
-
-2. Wählen Sie **Gerätekonfiguration** aus. Hierzu stehen Ihnen folgende Optionen zur Verfügung:
-
-    - **Übersicht:** Hier werden die Status Ihrer Profile sowie weitere Details zu den Profilen angezeigt, die Sie Benutzern und Geräten zugewiesen haben.
-    - **Verwalten:** Erstellen Sie Geräteprofile, und laden Sie benutzerdefinierte [PowerShell-Skripts](intune-management-extension.md) zur Ausführung im Profil hoch. Fügen Sie mit [eSIM](esim-device-configuration.md) Datenpläne zu Geräten hinzu.
-    - **Überwachen:** Prüfen Sie den Status eines Profils, und zeigen Sie Protokolle zu Ihren Profilen an.
-    - **Setup:** Fügen Sie eine Zertifizierungsstelle (SCEP oder PFX) hinzu, oder aktivieren Sie [Telecom Expense Management](telecom-expenses-monitor.md) für das Profil.
-
-3. Wählen Sie **Profile** > **Profil erstellen** aus. Geben Sie die folgenden Eigenschaften ein:
-
-   - **Name**: Geben Sie einen aussagekräftigen Namen für das Profil ein.
-   - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
-   - **Plattform**: Wählen Sie die Plattform Ihrer Geräte aus. Folgende Optionen sind verfügbar:  
-
-       - **Android**
-       - **Android Enterprise**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 und höher**
-       - **Windows 10 und höher**
-
-   - **Profiltyp**: Wählen Sie den Typ der Einstellungen aus, den Sie erstellen möchten. Die angezeigte Liste variiert je nach ausgewählter **Plattform**.
-
-       - [Administrative Vorlagen](administrative-templates-windows.md)
-       - [Benutzerdefiniert](custom-settings-configure.md)
-       - [Übermittlungsoptimierung](delivery-optimization-windows.md)
-       - [Gerätefeatures](device-features-configure.md)
-       - [Geräteeinschränkungen](device-restrictions-configure.md)
-       - [Editionsupgrade und Moduswechsel](edition-upgrade-configure-windows-10.md)
-       - [Bildungswesen](education-settings-configure.md)
-       - [E-Mail](email-settings-configure.md)
-       - [Endpoint Protection](endpoint-protection-configure.md)
-       - [Identity Protection](identity-protection-configure.md)  
-       - [Kiosk](kiosk-settings.md)
-       - [PKCS-Zertifikat](certficates-pfx-configure.md)
-       - [SCEP-Zertifikat](certificates-scep-configure.md)
-       - [ Vertrauenswürdiges Zertifikat](certificates-configure.md)
-       - [Updaterichtlinien](software-updates-ios.md)
-       - [VPN](vpn-settings-configure.md)
-       - [WLAN](wi-fi-settings-configure.md)
-       - [Windows Defender ATP](advanced-threat-protection.md)
-       - [Windows Information Protection](windows-information-protection-configure.md)
-
-     Wenn Sie beispielsweise **iOS** für die Plattform auswählen, werden folgende Optionen für den Profiltyp angezeigt:
-
-     ![Erstellen eines iOS-Profils in Intune](./media/create-device-profile.png)
-
-4. Klicken Sie auf **Einstellungen**. Die Einstellungen sind nach Kategorien geordnet. Wählen Sie eine Kategorie aus, um eine Liste aller Einstellungen anzuzeigen, die Sie konfigurieren können.
-
-5. Wählen Sie anschließend **OK** > **Erstellen** aus, um Ihre Änderungen zu speichern.
-
-Weitere Informationen zu den verschiedenen Profiltypen finden Sie in den nächsten Abschnitten dieses Artikels.
+In diesem Artikel erhalten Sie einen Überblick über die unterschiedlichen Arten von Profilen, die Sie erstellen können. Verwenden Sie diese Profile, um bestimmte Funktionen auf den Geräten zuzulassen oder zu verhindern.
 
 ## <a name="administrative-templates-preview"></a>Administrative Vorlagen (Vorschau)
 
-[Administrative Vorlagen](administrative-templates-windows.md) enthält Hunderte von Einstellungen, die Sie für Internet Explorer, OneDrive, Remotedesktop, Word, Excel oder andere Office-Programme und vieles mehr konfigurieren können.
+[Administrative Vorlagen](administrative-templates-windows.md) enthalten Hunderte von Einstellungen, die Sie für Internet Explorer, OneDrive, Remotedesktop, Word, Excel oder andere Office-Programme konfigurieren können.
 
-Diese Vorlagen bieten Administratoren eine einfache und vereinfachte Ansicht der Einstellungen ähnlich der Gruppenrichtlinie, sind aber zu 100 Prozent cloudbasiert. 
+Diese Vorlagen bieten Administratoren eine vereinfachte Ansicht der Einstellungen ähnlich wie die Gruppenrichtlinie, sind aber vollständig cloudbasiert.
 
 Dieses Features unterstützt folgende Betriebssysteme:
 
@@ -164,7 +110,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 - Windows 10 und höher
 
-Kioskeinstellungen sind auch als Geräteeinschränkungen für [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings) und [ios](device-restrictions-ios.md#kiosk-supervised-only) verfügbar.
+Kioskeinstellungen sind auch als Geräteeinschränkungen für [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) und [ios](device-restrictions-ios.md#kiosk-supervised-only) verfügbar.
 
 ## <a name="email"></a>E-Mail
 
@@ -173,6 +119,7 @@ Mit [E-Mail-Einstellungen](email-settings-configure.md) können Sie Exchange Act
 Dieses Features unterstützt folgende Betriebssysteme: 
 
 - Android
+- Android Enterprise
 - iOS
 - Windows Phone 8.1
 - Windows 10 und höher
@@ -186,6 +133,7 @@ Virtuelle private Netzwerke (Virtual Private Networks, VPNs) ermöglichen Benutz
 Dieses Features unterstützt folgende Betriebssysteme: 
 
 - Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows Phone 8.1
@@ -199,6 +147,7 @@ Mit [WLAN-Einstellungen](wi-fi-settings-configure.md) können Sie Benutzern und 
 Dieses Features unterstützt folgende Betriebssysteme: 
 
 - Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows 8.1 (nur Import)
@@ -235,12 +184,14 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 ## <a name="certificates"></a>Zertifikate
 
-Mit [Zertifikate](certificates-configure.md) können Sie vertrauenswürdige SCEP- und PKCS-Zertifikate konfigurieren, die Geräten zugewiesen und zum Authentifizieren von WLAN-, VPN- und E-Mail-Profilen verwendet werden.
+[Zertifikate](certificates-configure.md) konfigurieren vertrauenswürdige SCEP- und PKCS-Zertifikate, die Geräten zugewiesen werden. Diese Zertifikate authentifizieren WLAN-, VPN- und E-Mail-Profile.
 
 Dieses Features unterstützt folgende Betriebssysteme: 
 
 - Android
+- Android Enterprise
 - iOS
+- macOS
 - Windows Phone 8.1
 - Windows 8.1
 - Windows 10 und höher
@@ -264,21 +215,30 @@ Dieses Features unterstützt folgende Betriebssysteme:
 - Windows 10 und höher
 - Windows Holographic for Business
 
-## <a name="custom-profile"></a>Benutzerdefiniertes Profil
+## <a name="zebra-mobility-extensions-mx"></a>Zebra Mobility Extensions (MX)
 
-Mithilfe von [benutzerdefinierten Einstellungen](custom-settings-configure.md) können Administratoren Geräteeinstellungen zuweisen, die nicht in Intune integriert sind. So können beispielsweise auf Android-Geräten OMA-URI-Werte eingegeben werden. Auf iOS-Geräten können Sie eine Konfigurationsdatei importieren, die Sie in Apple Configurator erstellt haben. 
+Mit [Zebra Mobility Extensions (MX)](android-zebra-mx-overview.md) können Administratoren Zebra-Geräte in Intune verwenden und verwalten. Sie erstellen StageNow-Profile mit Ihren Einstellungen und verwenden dann Intune, um diese Profile Ihren Zebra-Geräten zuzuweisen und bereitzustellen. Unter [StageNow-Protokolle und häufige Probleme](android-zebra-mx-logs-troubleshoot.md) finden Sie weitere Informationen zur Problembehebungen bei Profilen und zu möglichen Problemen bei der Verwendung von StageNow.
 
 Dieses Features unterstützt folgende Betriebssysteme:
 
 - Android
+
+## <a name="custom-profile"></a>Benutzerdefiniertes Profil
+
+Mithilfe von [benutzerdefinierten Einstellungen](custom-settings-configure.md) können Administratoren Geräteeinstellungen zuweisen, die nicht in Intune integriert sind. So können beispielsweise auf Android-Geräten OMA-URI-Werte eingegeben werden. Auf iOS-Geräten können Sie eine Konfigurationsdatei importieren, die Sie in Apple Configurator erstellt haben.
+
+Dieses Features unterstützt folgende Betriebssysteme:
+
+- Android
+- Android Enterprise
 - iOS
 - macOS
 - Windows Phone 8.1
 
 ## <a name="manage-and-troubleshoot"></a>Verwaltung und Problembehandlung
 
-[Verwalten Sie Ihre Profile](device-profile-monitor.md), um den Status von Geräten und die zugewiesenen Profile zu überprüfen. Lösen Sie Konflikte leichter, indem Sie sich die Einstellungen ansehen, die Konflikte verursachen, und die Profile, die diese Einstellungen enthalten. Im Artikel zu [Häufigen Problemen und Lösungen](device-profile-troubleshoot.md) finden Sie eine Liste mit Fragen und Antworten, um Sie bei der Arbeit mit Profilen zu unterstützen. Dort erfahren Sie u.a., was beim Löschen eines Profils passiert und wodurch Benachrichtigungen an Geräte gesendet werden.
+[Verwalten Sie Ihre Profile](device-profile-monitor.md), um den Status von Geräten und die zugewiesenen Profile zu überprüfen. Lösen Sie Konflikte leichter, indem Sie sich die Einstellungen ansehen, die Konflikte verursachen, und die Profile, die diese Einstellungen enthalten. Unter [Häufige Probleme und Auflösungen](device-profile-troubleshoot.md) werden wichtige Informationen für Administratoren zusammengefasst, die mit Profilen arbeiten. Dort wird u. a. beschrieben, wie Sie ein Profil löschen können und wann Benachrichtigungen an Geräte geschickt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Wählen Sie Ihre Plattform aus, und legen Sie los:
 
+Wählen Sie Ihre Plattform aus, und legen Sie los.

@@ -1,26 +1,28 @@
 ---
-title: Szenarios für den bedingten Zugriff | Microsoft Intune
+title: Szenarien für den bedingten Zugriff
+titleSuffix: Microsoft Intune
 description: Erfahren Sie, wie der bedingte Zugriff von Intune im Allgemeinen für den gerätebasierten und den App-basierten bedingten Zugriff verwendet wird.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 03/31/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd29f52b4d108173b8f08b68cf8b85ce291a0077
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 666a62e9aa42212bacba0e0222a828d89d780eef
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842761"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569375"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?
 
@@ -31,7 +33,7 @@ Es gibt zwei Arten des bedingten Zugriffs in Intune: den gerätebasierten beding
 Im Folgenden finden Sie Informationen zur Verwendung der Intune-Funktionen für die Konformität von mobilen *Geräten* und der Intune-Funktionen für die Verwaltung mobiler *Anwendungen*. 
 
 > [!NOTE]
-> Bei bedingtem Zugriff handelt es sich um eine Azure Active Directory-Funktion, die in einer Azure Active Directory Premium-Lizenz enthalten ist. Intune erweitert diese Funktion, indem es der Lösung Konformität der mobilen Geräte und Mobile App-Verwaltung hinzufügt.
+> Bei bedingtem Zugriff handelt es sich um eine Azure Active Directory-Funktion, die in einer Azure Active Directory Premium-Lizenz enthalten ist. Intune erweitert diese Funktion, indem es der Lösung Konformität der mobilen Geräte und Mobile App-Verwaltung hinzufügt. Bei dem Knoten für bedingten Zugriff, auf den aus *Intune* zugegriffen wird, handelt es sich um denselben Knoten, auf den aus *Azure AD* zugegriffen wird.  
 
 ## <a name="device-based-conditional-access"></a>Gerätebasierter bedingter Zugriff
 
@@ -71,15 +73,15 @@ Wenn Geräte die Bedingungen nicht erfüllen, erhält der Benutzer Anweisungen z
 
 Der Intune Exchange-Connector ruft alle EAS-Datensätze (Exchange Active Sync) ab, die auf dem Exchange-Server vorhanden sind, damit Intune diese Datensätze verwenden und den Intune-Gerätedatensätzen zuordnen kann. Bei diesen Datensätzen handelt es sich um Geräte, die bei Intune registriert sind und von Intune erkannt werden. Dieser Prozess erlaubt oder blockiert den E-Mail-Zugriff.
 
-Wenn ein EAS-Datensatz neu und Intune noch nicht bekannt ist, gibt Intune ein Cmdlet aus, das den Zugriff auf E-Mails blockiert. Im Folgenden finden Sie weitere Details zur Funktionsweise dieses Prozesses:
+Wenn ein EAS-Datensatz neu und Intune noch nicht bekannt ist, gibt Intune ein Cmdlet („command-let“ ausgesprochen) aus, das den Zugriff auf E-Mails blockiert. Im Folgenden finden Sie weitere Details zur Funktionsweise dieses Prozesses:
 
 ![Flussdiagramm: Exchange lokal mit bedingtem Zugriff](./media/ca-intune-common-ways-1.png)
 
 1.  Ein Benutzer versucht, auf Unternehmens-E-Mails zuzugreifen, die in Exchange lokal 2010 SP1 oder höher gehostet werden.
 
-2.  Wenn das Gerät nicht durch Intune verwaltet wird, wird der E-Mail-Zugriff blockiert. Intune senden eine Benachrichtigung zur Blockierung an den EAS-Client.
+2.  Der E-Mail-Zugriff wird blockiert, wenn das Gerät nicht durch Intune verwaltet wird. Intune sendet eine Benachrichtigung zur Blockierung an den EAS-Client.
 
-3.  EAS empfängt die Benachrichtigung, verschiebt das Gerät in die Quarantäne und sendet eine Quarantäne-E-Mail mit Schritten zur Behebung und entsprechenden Links, sodass der Benutzer das Gerät registrieren kann.
+3.  EAS empfängt die Benachrichtigung zur Blockierung, verschiebt das Gerät in die Quarantäne und sendet eine Quarantäne-E-Mail mit Schritten zur Behebung und entsprechenden Links, sodass Benutzer ihre Geräte registrieren können.
 
 4.  Der Prozess für den Arbeitsplatzbeitritt wird ausgeführt. Dies ist der erste Schritt, mit dem ein Gerät zur Verwaltung in Intune eingebunden wird.
 
@@ -91,7 +93,7 @@ Wenn ein EAS-Datensatz neu und Intune noch nicht bekannt ist, gibt Intune ein Cm
 
 8.  Der Azure AD Device Registration-Prozess speichert die Informationen zum Gerätezustand.
 
-9.  Wenn der Benutzer die Richtlinien für den bedingten Zugriff erfüllt, gibt Intune ein Cmdlet über den Intune Exchange-Connector aus, mit dem das Postfach synchronisiert werden kann.
+9.  Wenn der Benutzer die Richtlinien für den bedingten Zugriff erfüllt, gibt Intune ein Cmdlet über den Intune Exchange Connector aus, mit dem das Postfach synchronisiert werden kann.
 
 10. Der Exchange-Server sendet eine Benachrichtigung an den EAS-Client, damit der Benachrichtigung auf die E-Mails zugreifen kann.
 

@@ -1,15 +1,15 @@
 ---
 title: Einrichten einer App-basierten Richtlinie für bedingten Zugriff mit Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Erfahren Sie, wie Sie mit Intune eine App-basierte Richtlinie für bedingten Zugriff erstellen.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/26/2018
-ms.topic: article
+ms.date: 02/22/2019
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2026a446ffef3bd845affe45a7732ef3ab8ec24
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 1514fe9dfcd09e2b77967b0fed8c36fb7a06634f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842915"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567490"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Einrichten App-basierter Richtlinien für bedingten Zugriff mit Intune
 
@@ -33,12 +33,11 @@ Richten Sie die App-basierten bedingten Zugriffsrichtlinien für Apps ein, die i
 > [!IMPORTANT]
 > In diesem Artikel werden die einzelnen Schritte erläutert, die notwendig sind, um eine App-basierte Richtlinie für bedingten Zugriff hinzuzufügen. Sie können die gleichen Schritte auch beim Hinzufügen von Apps wie SharePoint Online, Microsoft Teams und Microsoft Exchange Online aus der Liste der genehmigten Apps verwenden.
 
-## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Erstellen von App-basierten Richtlinien für den bedingten Zugriff in der Azure AD-Workload
-
-IT-Administratoren können App-basierte Richtlinien für den bedingten Zugriff über die Azure AD-Workload erstellen. Mit diesem Zugriff müssen Sie nicht zwischen den Azure- und Intune-Workloads wechseln.
+## <a name="create-app-based-conditional-access-policies"></a>Erstellen App-basierter Richtlinien für bedingten Zugriff
+Der bedingte Zugriff ist eine Technologie von Azure Active Directory (Azure AD). Bei dem Knoten für bedingten Zugriff, auf den aus *Intune* zugegriffen wird, handelt es sich um denselben Knoten, auf den aus *Azure AD* zugegriffen wird. Dies bedeutet, dass Sie zum Konfigurieren von Richtlinien nicht zwischen Intune und Azure AD wechseln müssen.
 
 > [!IMPORTANT]
-> Sie benötigen eine Azure AD Premium-Lizenz, um im Azure-Portal für Intune Azure AD-Richtlinien für den bedingten Zugriff zu erstellen.
+> Sie benötigen eine Azure AD Premium-Lizenz, um im Intune-Portal Richtlinien für den bedingten Zugriff zu erstellen.
 
 ### <a name="to-create-an-app-based-conditional-access-policy"></a>So erstellen Sie eine App-basierte bedingte Zugriffsrichtlinie
 

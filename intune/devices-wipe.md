@@ -5,28 +5,29 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: ''
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e24043bb1c41d68de04669ff27cc659624dc56c1
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 896008594e17c3773831edede263c8c47cde3c48
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846824"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59570545"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Entfernen von Geräten durch Zurücksetzen, Abkoppeln oder manuelles Aufheben der Registrierung des Geräts
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Mithilfe der Aktionen **Abkoppeln** und **Zurücksetzen** können Sie Geräte aus Intune entfernen, die nicht mehr benötigt werden, einem neuen Zweck zugeführt werden oder verloren gegangen sind. Für private Geräte, die in Intune registriert sind, können die Benutzer über das Intune-Unternehmensportal einen Remotebefehl erteilen.
+Mithilfe der Aktionen **Abkoppeln** und **Zurücksetzen** können Sie Geräte aus Intune entfernen, die nicht mehr benötigt werden, einem neuen Zweck zugeführt werden oder verloren gegangen sind. Für Geräte, die in Intune registriert sind, können die Benutzer über das Intune-Unternehmensportal einen Remotebefehl ausführen.
 
 > [!NOTE]
 > Bevor Sie einen Benutzer aus Azure Active Directory (Azure AD) entfernen, verwenden Sie die Aktionen **Zurücksetzen** oder **Abkoppeln** für alle Geräte, die diesem Benutzer zugeordnet sind. Wenn Sie Benutzer mit verwalteten Geräten aus Azure AD entfernen, kann Intune keine Zurücksetzung oder Abkopplung für diese Geräte mehr vornehmen.
@@ -82,7 +83,7 @@ In den folgenden Tabellen wird beschrieben, welche Daten entfernt werden und wel
 
 |Datentyp|iOS|
 |-------------|-------|
-|Von Intune installierte Unternehmens-Apps und zugehörige Daten|**Über das Unternehmensportal installierte Apps:** Für Apps, die am Verwaltungsprofil fixiert sind, werden alle Appdaten und Apps entfernt. Zu diesen Apps gehören diejenigen, die ursprünglich aus dem App Store installiert und später als Unternehmens-Apps verwaltet werden. <br /><br /> **Microsoft-Apps mit mobiler App-Verwaltung, die aus dem App Store installiert wurden**: Bei Apps, die nicht vom Unternehmensportal verwaltet werden, werden die Daten der Unternehmensapps, die durch die Mobile Application Management (MAM)-Verschlüsselung innerhalb des lokalen Speichers der App geschützt sind, entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt. Persönliche App-Daten und die Apps selbst werden nicht entfernt.|
+|Von Intune installierte Unternehmens-Apps und zugehörige Daten|**Über das Unternehmensportal installierte Apps:** Für Apps, die am Verwaltungsprofil angeheftet sind, werden alle App-Daten und Apps entfernt. Zu diesen Apps gehören diejenigen, die ursprünglich aus dem App Store installiert und später als Unternehmens-Apps verwaltet werden. <br /><br /> **Microsoft-Apps mit mobiler App-Verwaltung, die aus dem App Store installiert wurden**: Bei Apps, die nicht vom Unternehmensportal verwaltet werden, werden die Daten der Unternehmensapps, die durch die Mobile Application Management (MAM)-Verschlüsselung innerhalb des lokalen Speichers der App geschützt sind, entfernt. Daten, die von der MAM-Verschlüsselung außerhalb der App geschützt sind, bleiben verschlüsselt und unbrauchbar, werden aber nicht entfernt. Persönliche App-Daten und die Apps selbst werden nicht entfernt.|
 |Einstellung|Von der Intune-Richtlinie festgelegte Konfigurationen werden nicht mehr erzwungen. Benutzer können die Einstellungen ändern.|
 |Einstellungen für WLAN- und VPN-Profil|Entfernt.|
 |Zertifikatprofil-Einstellungen|Zertifikate werden entfernt und gesperrt.|
@@ -130,7 +131,7 @@ Sie können nur Kioskgeräte zurücksetzen. Sie können Android-Kioskgeräte nic
 
 |Datentyp|Windows 8.1 (MDM) und Windows RT 8.1|Windows RT|Windows Phone 8.1 und Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Von Intune installierte Unternehmens-Apps und zugehörige Daten|Die Schlüssel für Dateien, die von EFS geschützt sind, werden entfernt. Der Benutzer kann die Dateien nicht öffnen.|Unternehmens-Apps werden nicht entfernt.|Ursprünglich über das Unternehmensportal installierte Apps werden deinstalliert. Daten von Unternehmens-Apps werden entfernt.|Apps werden deinstalliert. Sideload-Schlüssel werden entfernt.<br>Für Windows 10 Version 1703 (Creators Update) und höher und Office 365 werden ProPlus-Apps nicht entfernt.|
+|Von Intune installierte Unternehmens-Apps und zugehörige Daten|Die Schlüssel für Dateien, die von EFS geschützt sind, werden entfernt. Der Benutzer kann die Dateien nicht öffnen.|Unternehmens-Apps werden nicht entfernt.|Ursprünglich über das Unternehmensportal installierte Apps werden deinstalliert. Daten von Unternehmens-Apps werden entfernt.|Apps werden deinstalliert. Sideload-Schlüssel werden entfernt.<br>Für Windows 10 Version 1703 (Creators Update) und höher und Office 365 werden ProPlus-Apps nicht entfernt. Win32-Apps, die über die Intune-Verwaltungserweiterung installiert wurden, werden auf Geräten mit aufgehobener Registrierung nicht deinstalliert. Administratoren können Zuweisungsausnahmen nutzen, um Win32-Apps für BYOD-Geräte auszuschließen.|
 |Einstellung|Von der Intune-Richtlinie festgelegte Konfigurationen werden nicht mehr erzwungen. Benutzer können die Einstellungen ändern.|Von der Intune-Richtlinie festgelegte Konfigurationen werden nicht mehr erzwungen. Benutzer können die Einstellungen ändern.|Von der Intune-Richtlinie festgelegte Konfigurationen werden nicht mehr erzwungen. Benutzer können die Einstellungen ändern.|Von der Intune-Richtlinie festgelegte Konfigurationen werden nicht mehr erzwungen. Benutzer können die Einstellungen ändern.|
 |Einstellungen für WLAN- und VPN-Profil|Entfernt.|Entfernt.|Nicht unterstützt.|Entfernt.|
 |Zertifikatprofil-Einstellungen|Zertifikate werden entfernt und gesperrt.|Zertifikate werden entfernt und gesperrt.|Nicht unterstützt.|Zertifikate werden entfernt und gesperrt.|
@@ -166,7 +167,7 @@ Sie können Intune so konfigurieren, dass Geräte automatisch gelöscht werden, 
 
 Aufgrund von Kommunikationsproblemen oder fehlenden Geräten müssen Sie möglicherweise Geräte aus Azure AD löschen. Sie können die Aktion **Löschen** aber dazu verwenden, Gerätedatensätze aus dem Azure-Portal von den Geräten zu entfernen, von denen Sie wissen, dass sie schwer zugänglich sind, und für die eine erneute Kommunikation mit Azure unwahrscheinlich ist. Die Aktion **Löschen** entfernt keine Geräte aus der Verwaltung.
 
-1.  Melden Sie sich mit Ihren Administratoranmeldeinformationen [im Azure-Portal bei Azure Active Directory](http://aka.ms/accessaad) an. Sie können sich ebenfalls im [Office 365-Portal](https://portal.office.com) anmelden. Klicken Sie im Menü auf **Admin Center** > **Azure AD**.
+1.  Melden Sie sich mit Ihren Administratoranmeldeinformationen [im Azure-Portal bei Azure Active Directory](http://aka.ms/accessaad) an. Sie können sich auch beim [Microsoft 365 Admin Center](https://admin.microsoft.com) anmelden. Klicken Sie im Menü auf **Admin Center** > **Azure AD**.
 2.  Erstellen Sie ein Azure-Abonnement, wenn Sie noch keins besitzen. Hierzu sollte keine Kreditkarte oder Zahlung erforderlich sein, wenn Sie ein gebührenpflichtiges Konto besitzen (klicken Sie auf den Abonnementlink **Ihr kostenloses Azure Active Directory registrieren**).
 3.  Wählen Sie zuerst **Azure Active Directory** und dann Ihre Organisation aus.
 4.  Wählen Sie die Registerkarte **Benutzer** aus.

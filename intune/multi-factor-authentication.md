@@ -1,27 +1,28 @@
 ---
 title: Anfordern der mehrstufigen Authentifizierung für die Intune-Geräteregistrierung
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Anfordern der mehrstufigen Authentifizierung in Azure AD für die Intune-Geräteregistrierung.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/10/2018
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71d551ca64f85c3ba6a807fac70e3b0662e1b89a
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: cf5611b3b9292222582d66cae39b4f751279dcec
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834091"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568790"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Erfordert mehrstufige Authentifizierung für Intune-Geräteregistrierungen
 
@@ -50,11 +51,10 @@ Befolgen Sie die folgenden Schritte, um MFA anzufordern, wenn ein Gerät registr
 >Konfigurieren Sie keine **gerätebasierten Zugriffsregeln** für die Microsoft Intune-Registrierung.
 
 1. Melden Sie sich mit Ihren Anmeldeinformationen beim [Microsoft Azure-Portal](https://portal.azure.com) an.
-2. Wechseln Sie im Portal zu **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**.
-3. Klicken Sie in **Azure Active Directory** unter „Sicherheit“ auf **[Bedingten Zugriff](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)**.
+2. Wechseln Sie im Portal zu **Intune**, und wählen Sie **Bedingter Zugriff** aus. Bei dem Knoten für bedingten Zugriff, auf den aus *Intune* zugegriffen wird, handelt es sich um denselben Knoten, auf den aus *Azure AD* zugegriffen wird.
 4. Wählen Sie **Neue Richtlinie** aus.
 5. Geben Sie unter **Neue Richtlinie** einen beschreibenden Namen für die Richtlinie ein.
-6. Wählen Sie im Abschnitt **Zuweisungen** die Option **Benutzer und Gruppen** aus.
+6. Wählen Sie im Abschnitt **Zuweisungen** die Option **Benutzer und Gruppen** aus. 
 7. Klicken Sie unter **Benutzer und Gruppen** auf **Select users or groups** (Benutzer oder Gruppen auswählen), und aktivieren Sie das Kontrollkästchen für **Benutzer und Gruppen**. Wählen Sie dann die Benutzer und/oder Gruppen aus, für die diese Richtlinie gelten soll, und klicken Sie anschließend auf **Fertig**.
 8. Wählen Sie im Abschnitt **Zuweisungen** die Option **Cloud-Apps** aus.
 9. Wählen Sie auf der Registerkarte **Einbeziehen** von **Cloud-Apps** die Option **Apps auswählen** aus, klicken Sie dann auf **Auswählen** > **Microsoft Intune-Registrierung**, und klicken Sie dann auf **Fertig**.

@@ -1,15 +1,16 @@
 ---
 title: Registrieren von Android-Geräten in Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Erfahren Sie, wie Sie Android-Geräte in Intune registrieren.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 12/31/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 866db22b79f2ca9255f9eccdfdba28dc353836ed
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 363a7d0ef32aee0c21c6e5cecbd55cc3087f4613
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846756"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568673"
 ---
 # <a name="enroll-android-devices"></a>Registrieren von Android-Geräten
 
@@ -31,9 +32,9 @@ ms.locfileid: "55846756"
 Als Intune-Administrator können Sie die folgenden Android-Geräte verwalten:
 - Android-Geräte, einschließlich Samsung Knox Standard-Geräte
 - Android Enterprise-Geräte, einschließlich folgender:
-    - **Android-Arbeitsprofilgeräte:** Persönliche Geräte mit Berechtigung für den Zugriff auf Unternehmensdaten. Administratoren können Arbeitskonten, -Apps und -daten verwalten. Auf dem Gerät gespeicherte persönliche Daten werden von den arbeitsbezogenen Daten getrennt, und Administratoren können weder auf persönliche Einstellungen noch auf persönliche Daten zugreifen. 
-    - **Dedizierte Android-Geräte:** Unternehmenseigene Geräte für einen einzigen Verwendungszweck, z. B. für die digitale Beschilderung, zum Drucken von Tickets oder für die Bestandsverwaltung. Administratoren beschränken die Verwendung eines Geräts auf eine begrenzte Anzahl von Apps und Weblinks. Außerdem wird verhindert, dass Benutzer andere Apps hinzufügen oder andere Aktionen auf dem Gerät ausführen können.
-    - **Vollständig verwaltete Android-Geräte:** Unternehmenseigene Geräte für einzelne Benutzer, die ausschließlich für die Arbeit verwendet werden und nicht für persönliche Zwecke. Administratoren können das gesamte Gerät verwalten und Richtlinienkontrollen durchsetzen, die für Arbeitsprofile nicht verfügbar sind. 
+    - **Android Enterprise-Arbeitsprofilgeräte**: Persönliche Geräte mit Berechtigung für den Zugriff auf Unternehmensdaten. Administratoren können Arbeitskonten, -Apps und -daten verwalten. Auf dem Gerät gespeicherte persönliche Daten werden von den arbeitsbezogenen Daten getrennt, und Administratoren können weder auf persönliche Einstellungen noch auf persönliche Daten zugreifen. 
+    - **Dedizierte Android Enterprise-Geräte**: Unternehmenseigene Geräte für einen einzigen Verwendungszweck, z. B. für die digitale Beschilderung, zum Drucken von Tickets oder für die Bestandsverwaltung. Administratoren beschränken die Verwendung eines Geräts auf eine begrenzte Anzahl von Apps und Weblinks. Außerdem wird verhindert, dass Benutzer andere Apps hinzufügen oder andere Aktionen auf dem Gerät ausführen können.
+    - **Vollständig verwaltete Android Enterprise-Geräte**: Unternehmenseigene Geräte für einzelne Benutzer, die ausschließlich für die Arbeit verwendet werden und nicht für persönliche Zwecke. Administratoren können das gesamte Gerät verwalten und Richtlinienkontrollen durchsetzen, die für Arbeitsprofile nicht verfügbar sind. 
 
 ## <a name="prerequisite"></a>Voraussetzung
 
@@ -54,11 +55,11 @@ Um Android-Geräte oder nur die Registrierung von persönlichen Android-Geräten
 
 ## <a name="set-up-android-enterprise-enrollment"></a>Einrichten der Android Enterprise-Registrierung
 
-Android Enterprise umfasst eine Reihe von Android-Gerätefeatures und -Diensten, die Ihre privaten Apps und Daten von Ihrem Arbeitsprofil trennt, das Geschäfts-Apps und -daten enthält. Android Enterprise-Geräte umfassen Arbeitsprofilgeräte, vollständig verwaltete Geräte und dedizierte Geräte. 
+Android Enterprise bietet mehrere Registrierungsoptionen, die Benutzer mit den aktuellsten und sichersten Features versorgen. Android Enterprise-Registrierungsoptionen umfassen Arbeitsprofilgeräte, vollständig verwaltete Geräte und dedizierte Geräte.
 
-- [Set up Android work profile enrollments (Einrichten der Registrierung von Android-Arbeitsprofilen)](android-work-profile-enroll.md)
-- [Einrichten der Registrierung von dedizierten Android-Geräten](android-kiosk-enroll.md)
-- [Set up Android fully managed enrollments (Einrichten der Registrierung von vollständig verwalteten Android-Geräten)](android-fully-managed-enroll.md)
+- [Set up enrollment of Android Enterprise work profile devices (Einrichten der Registrierung von Android Enterprise-Arbeitsprofilgeräten)](android-work-profile-enroll.md)
+- [Set up Intune enrollment of Android Enterprise dedicated devices (Einrichten der Intune-Registrierung von dedizierten Android Enterprise-Geräten)](android-kiosk-enroll.md)
+- [Set up Intune enrollment of Android Enterprise fully managed devices (Preview) (Einrichten der Intune-Registrierung von vollständig verwalteten Android Enterprise-Geräten (Preview))](android-fully-managed-enroll.md)
 
 ## <a name="end-user-experience-when-enrolling-a-samsung-knox-device"></a>Endbenutzererfahrung bei der Registrierung eines Samsung KNOX-Geräts
 
@@ -76,6 +77,6 @@ Im Folgenden finden Sie einige Überlegungen bei der Registrierung von Samsung K
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Set up Android work profile enrollments (Einrichten der Registrierung von Android-Arbeitsprofilen)](android-work-profile-enroll.md)
-- [Einrichten der Registrierung von dedizierten Android-Geräten](android-kiosk-enroll.md)
-- [Set up Android fully managed enrollments (Einrichten der Registrierung von vollständig verwalteten Android-Geräten)](android-fully-managed-enroll.md)
+- [Set up enrollment of Android Enterprise work profile devices (Einrichten der Registrierung von Android Enterprise-Arbeitsprofilgeräten)](android-work-profile-enroll.md)
+- [Set up Intune enrollment of Android Enterprise dedicated devices (Einrichten der Intune-Registrierung von dedizierten Android Enterprise-Geräten)](android-kiosk-enroll.md)
+- [Set up Intune enrollment of Android Enterprise fully managed devices (Preview) (Einrichten der Intune-Registrierung von vollständig verwalteten Android Enterprise-Geräten (Preview))](android-fully-managed-enroll.md)

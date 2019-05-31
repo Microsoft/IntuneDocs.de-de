@@ -1,35 +1,36 @@
 ---
-title: Verwalten von Apps aus dem Microsoft Store für Unternehmen
-titlesuffix: Microsoft Intune
-description: Erfahren Sie, wie Sie Apps aus dem Microsoft Store für Unternehmen in Intune synchronisieren und sie dann zuweisen und nachverfolgen können.
+title: Verwalten von per Volumenlizenz erworbenen oder kostenlosen Apps aus Microsoft Store für Unternehmen
+titleSuffix: Microsoft Intune
+description: Erfahren Sie, wie Sie erworbene oder kostenlose Apps aus Microsoft Store für Unternehmen in Intune synchronisieren können.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75e6cdd97bbc591a76e541874152455c4fe258c0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 67d99977776657219638980eb6de8a4079384185
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57234926"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587500"
 ---
-# <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Verwalten von Apps, die im Microsoft Store für Unternehmen mit Microsoft Intune erworben wurden
+# <a name="how-to-manage-volume-purchased-or-free-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Verwalten von per Volumenlizenz erworbenen (oder kostenlosen) Apps aus Microsoft Store für Unternehmen mit Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Im [Microsoft Store für Unternehmen](https://www.microsoft.com/business-store) können Sie Apps für Ihre Organisation suchen und einzeln oder im Rahmen eines Volumenprogramms erwerben. Indem Sie den Store mit Microsoft Intune verbinden, können Sie im Rahmen von per Volumenlizenz erworbenen Apps über das Azure-Portal verwalten. Beispiel:
-* Sie können die Liste der Apps, die Sie im Speicher erworben haben, mit Intune synchronisieren.
+* Sie können die Liste der Apps, die Sie im Speicher erworben haben (oder die kostenlos sind), mit Intune synchronisieren.
 * Synchronisierte Apps werden in der Intune-Verwaltungskonsole angezeigt und können wie alle anderen Apps zugewiesen werden.
 * Sie können in der Intune-Verwaltungskonsole die Anzahl der verfügbaren und der verwendeten Lizenzen nachverfolgen.
 * Intune blockiert die Zuweisung und Installation von Apps, wenn nicht genügend Lizenzen vorhanden sind.
@@ -65,7 +66,7 @@ Sie können nun fortfahren und die Synchronisierung in der Intune-Konsole einric
 ## <a name="configure-synchronization"></a>Konfigurieren der Synchronisierung
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie im Bereich **Intune** die Option **Client-Apps** aus.
 1. Wählen Sie im Bereich **Client-Apps** die Option **Setup** > **Microsoft Store für Unternehmen** aus.
 2. Klicken Sie auf **Aktivieren**.
@@ -80,7 +81,7 @@ Sie können nun fortfahren und die Synchronisierung in der Intune-Konsole einric
 
 ## <a name="assign-apps"></a>Zuweisen von Apps
 
-Sie weisen Apps aus dem Store auf die gleiche Weise wie andere Intune-Apps zu. Weitere Informationen finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](apps-deploy.md). Anstelle der Zuweisung von Apps auf der Seite **Alle Apps** weisen Sie diese über die Seite **Lizenzierte Apps** zu.
+Sie weisen Apps aus dem Store auf die gleiche Weise wie andere Intune-Apps zu. Weitere Informationen finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](apps-deploy.md). 
 
 Offline-Apps können Benutzergruppen, Gerätegruppen oder Gruppen mit Benutzern und Geräten als Ziel haben.
 Offline-Apps können für einen bestimmten Benutzer auf einem Gerät oder für alle Benutzer auf einem Gerät installiert werden. 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3dfd2442d737b91d5722f26313ac1d0200a341a7
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 58fea39d7461f4ce6b1838b0df78434f6bc53372
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59568374"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571789"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune 
 
@@ -120,9 +120,9 @@ Mit Intune verwaltete Apps können außerdem ohne Registrierung den App-Schutz a
 
 ### <a name="understanding-licensed-apps"></a>Grundlegendes zu lizenzierten Apps
 Sie sollten nicht nur zwischen Web-Apps, Store-Apps und branchenspezifischen Apps unterscheiden können, sondern auch zwischen Apps, die über ein Volumenlizenzprogramm (Volume Purchase Program) bezogen wurden, und lizenzierten Apps, wie z.B. folgende: 
-- **Apple Volume Purchasing Program für Unternehmen (iOS)**: Im iOS-App-Store können Sie mehrere Lizenzen für eine App erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Durch den Erwerb mehrerer Kopien können Sie Apps in Ihrem Unternehmen effizient verwalten. Weitere Informationen finden Sie unter [Verwalten von iOS-Apps, die per Volumenlizenz erworben wurden](vpp-apps-ios.md).
+- **Apple Volume Purchasing Program für Unternehmen (iOS)** : Im iOS-App-Store können Sie mehrere Lizenzen für eine App erwerben, die in Ihrem Unternehmen ausgeführt werden soll. Durch den Erwerb mehrerer Kopien können Sie Apps in Ihrem Unternehmen effizient verwalten. Weitere Informationen finden Sie unter [Verwalten von iOS-Apps, die per Volumenlizenz erworben wurden](vpp-apps-ios.md).
 - **Android-Arbeitsprofil**: Das Zuweisen von Apps zu Android-Arbeitsprofilgeräten unterscheidet sich von deren Zuweisung zu „normalen“ Android-Geräten. Alle Apps, die für Android-Arbeitsprofile installiert werden, stammen aus dem verwalteten Google Play Store. Verwenden Sie zum Durchsuchen Intune, suchen Sie nach der gewünschten App, und genehmigen Sie sie. Die App wird dann im Knoten **Lizenzierte Apps** des Azure-Portals angezeigt, und Sie können die Zuweisung der App wie bei jeder anderen App verwalten.
-- **Microsoft Store für Unternehmen (Windows 10)**: Im Microsoft Store für Unternehmen können Sie Apps für Ihre Organisation suchen und einzeln oder mit Volumenlizenz erwerben. Indem Sie den Store mit Microsoft Intune verbinden, können Sie per Volumenlizenz erworbene Apps über das Azure-Portal verwalten. Weitere Informationen finden Sie unter [Verwalten von Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md).
+- **Microsoft Store für Unternehmen (Windows 10)** : Im Microsoft Store für Unternehmen können Sie Apps für Ihre Organisation suchen und einzeln oder mit Volumenlizenz erwerben. Indem Sie den Store mit Microsoft Intune verbinden, können Sie per Volumenlizenz erworbene Apps über das Azure-Portal verwalten. Weitere Informationen finden Sie unter [Verwalten von Apps aus dem Microsoft Store für Unternehmen](windows-store-for-business.md).
 
     > [!NOTE]
     > Zu den Dateierweiterungen für Windows-Apps gehören **.msi**, **.appx**, **.appxbundle**, **.msix** und **.msixbundle**.  
@@ -144,6 +144,9 @@ Anforderungen für Cloudspeicherplatz:
 - Alle App-Installationsdateien müssen sich im selben Ordner befinden.
 - Die maximale Dateigröße für hochgeladene Dateien beträgt 8 GB.
 
+  > [!NOTE]
+  > Für branchenspezifische Windows-Apps (LOB) gilt das Größenlimit von maximal 8 GB pro App. Für branchenspezifische iOS-Apps gilt das Größenlimit von maximal 4 GB pro App.
+
 ## <a name="create-and-edit-categories-for-apps"></a>Erstellen und Bearbeiten von Kategorien für Apps
 
 Mithilfe von App-Kategorien können Sie Apps sortieren, damit Benutzer sie einfacher im Unternehmensportal finden können. Sie können einer App auch mehrere Kategorien zuweisen, z.B. *Entwickler-Apps* oder *Kommunikations-Apps*.
@@ -158,7 +161,7 @@ Wenn Sie eine App in Intune hinzufügen, können Sie die gewünschte Kategorie a
 5. Führen Sie einen der folgenden Schritte aus:
     - Um eine Kategorie hinzuzufügen, wählen Sie im Bereich **Kategorie erstellen** die Option **Hinzufügen** aus, und geben Sie dann einen Namen für die Kategorie ein.  
     Namen können in nur einer Sprache eingegeben werden und werden von Intune nicht übersetzt.
-    - Um eine Kategorie zu bearbeiten, wählen Sie die Auslassungspunkte (**...** ) neben der Kategorie aus und dann **An Dashboard anheften** oder **Löschen**.
+    - Um eine Kategorie zu bearbeiten, wählen Sie die Auslassungspunkte ( **...** ) neben der Kategorie aus und dann **An Dashboard anheften** oder **Löschen**.
 6. Wählen Sie **Erstellen** aus.
 
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Von Intune automatisch hinzugefügte Apps

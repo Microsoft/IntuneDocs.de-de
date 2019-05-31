@@ -6,21 +6,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 06/25/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dc3a9620532951bd78e545e87b0d43dd6be3efe5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 786cd6e7d0acaeb6e78035d8ec580c30d29d09e7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186595"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57391711"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Überwachen von Geräteprofilen in Microsoft Intune
 
@@ -65,10 +67,10 @@ Nachdem Sie Ihr Geräteprofil erstellt haben, bietet Intune grafische Diagramme.
 
 5. Wählen Sie in der Liste **Profile** dann ein bestimmtes Profil aus. Sie können auch vorhandene Eigenschaften ändern:
   - **Eigenschaften**: Ändern Sie den Namen, oder aktualisieren Sie alle vorhandenen Einstellungen.
-  - **Zuweisungen**: Schließen Sie Geräte für die Anwendung der Richtlinie ein oder davon aus. Wählen Sie **Ausgewählte Gruppen** aus, um bestimmte Gruppen auszuwählen.
-  - **Gerätestatus**: Die dem Profil zugeordneten Geräte sind aufgelistet, und es wird angezeigt, ob das Profil erfolgreich bereitgestellt wurde. Sie können ein bestimmtes Gerät einschließlich der installierten Apps auswählen, um noch mehr Details zu erfahren.
-  - **Benutzerstatus**: Listet die Namen der Benutzer mit Geräten auf, die diesem Profil unterliegen, und ob das Profil erfolgreich bereitgestellt wurde. Sie können einen bestimmten Benutzer auswählen, um noch mehr Informationen zu erhalten.
-  - **Status pro Einstellung**: Filtert die Ausgabe durch Anzeige der einzelnen Einstellungen innerhalb des Profils, und zeigt an, ob die Einstellung erfolgreich angewendet wurde.
+  - **Zuweisungen:** Schließen Sie Geräte für die Anwendung der Richtlinie ein oder davon aus. Wählen Sie **Ausgewählte Gruppen** aus, um bestimmte Gruppen auszuwählen.
+  - **Gerätestatus:** Die dem Profil zugeordneten Geräte sind aufgelistet, und es wird angezeigt, ob das Profil erfolgreich bereitgestellt wurde. Sie können ein bestimmtes Gerät einschließlich der installierten Apps auswählen, um noch mehr Details zu erfahren.
+  - **Benutzerstatus:** Listet die Namen der Benutzer mit Geräten auf, die diesem Profil unterliegen, und ob das Profil erfolgreich bereitgestellt wurde. Sie können einen bestimmten Benutzer auswählen, um noch mehr Informationen zu erhalten.
+  - **Einstellungsspezifischer Status:** Filtert die Ausgabe durch Anzeigen der einzelnen Einstellungen innerhalb des Profils, und zeigt an, ob die Einstellung erfolgreich angewendet wurde.
 
 ## <a name="view-conflicts"></a>Anzeigen von Konflikten
 

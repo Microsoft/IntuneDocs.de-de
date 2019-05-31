@@ -1,6 +1,6 @@
 ---
 title: Hinzufügen von Benutzern und Gewähren von Berechtigungen
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Synchronisieren lokaler Benutzer mit Azure AD und Gewähren von Administratorberechtigungen für Ihr Intune-Abonnement
 keywords: ''
 author: ErikjeMS
@@ -10,6 +10,7 @@ ms.date: 02/28/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: dougeby
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01f1102c71aa182a63e395c3ee3be21a134ff0b3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: a4e25ab5a546f20309853346d0d4ded42fee6e8b
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846314"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568309"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>Hinzufügen von Benutzern und Gewähren von Administratorrechten für Intune
 
@@ -31,10 +32,10 @@ ms.locfileid: "55846314"
 Als Administrator können Sie Benutzer direkt oder durch Synchronisieren mit Ihrem lokalen Active Directory hinzufügen. Nachdem ein Benutzer hinzugefügt wurde, kann er Geräte registrieren und auf Unternehmensressourcen zugreifen. Sie können Benutzern auch zusätzliche Berechtigungen erteilen, beispielsweise *globale Administrator*- und *Dienstadministrator*-Berechtigungen.
 
 ## <a name="add-users-to-intune"></a>Hinzufügen von Benutzern zu Intune
-Sie können Benutzer manuell über das [Office 365-Portal](https://www.office.com/signin) oder das [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) Ihrem Intune-Abonnement hinzufügen. Ein Administrator kann Benutzerkonten bearbeiten, um Intune-Lizenzen zuzuweisen. Sie können Lizenzen entweder im Office 365-Portal oder im Intune Azure-Portal zuweisen. Weitere Informationen zum Gebrauch des Office 365-Portals finden Sie unter [Hinzufügen von einzelnen Benutzern oder Massenhinzufügen von Benutzern zu Office 365 – Administratorhilfe](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+Sie können Benutzer manuell über das [Microsoft 365 Admin Center](https://admin.microsoft.com) oder das [Azure-Portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) Ihrem Intune-Abonnement hinzufügen. Ein Administrator kann Benutzerkonten bearbeiten, um Intune-Lizenzen zuzuweisen. Sie können Lizenzen entweder im Microsoft 365 Admin Center oder im Intune Azure-Portal zuweisen. Weitere Informationen zur Verwendung des Microsoft 365 Admin Center finden Sie unter [Hinzufügen von einzelnen Benutzern oder Massenhinzufügen von Benutzern zu Office 365 – Administratorhilfe](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-### <a name="add-intune-users-in-the-office-365-admin-center"></a>Hinzufügen von Intune-Benutzern im Office 365 Admin Center
-1. Melden Sie sich mit einem globalen Administratorkonto oder einem Konto für Benutzerverwaltungsadministratoren im [Office 365-Portal](https://www.office.com/signin) an.
+### <a name="add-intune-users-in-the-microsoft-365-admin-center"></a>Hinzufügen von Intune-Benutzern im Microsoft 365 Admin Center
+1. Melden Sie sich mit einem globalen Administratorkonto oder einem Konto für Benutzerverwaltungsadministratoren beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an.
 2. Wählen Sie im Office 365-Menü **Administrator** aus.
 3. Wählen Sie im Admin Center **Benutzer hinzufügen** aus.
 
@@ -77,7 +78,7 @@ Sie können Benutzer manuell über das [Office 365-Portal](https://www.office.co
 Nachdem Sie Ihrem Intune-Abonnement Benutzer hinzugefügt haben, sollten Sie einigen Benutzern Administratorrechte gewähren.  Befolgen Sie diese Schritte, um Administratorberechtigungen zu gewähren:
 
 ### <a name="give-admin-permissions-in-office-365"></a>Gewähren von Administratorberechtigungen in Office 365
-1. Melden Sie sich mit einem globalen Administratorkonto im [Office 365-Portal](https://www.office.com/signin) an.
+1. Melden Sie sich mit einem globalen Administratorkonto beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an.
 2. Wählen Sie im Office 365-Menü **Administrator** aus.
 3. Wählen Sie im Admin Center **Aktive Benutzer** und anschließend den Benutzer aus, dem Sie Administratorberechtigungen zuweisen möchten.
 
@@ -90,7 +91,7 @@ Nachdem Sie Ihrem Intune-Abonnement Benutzer hinzugefügt haben, sollten Sie ein
 6. Wählen Sie **Speichern** aus.
 
 ### <a name="give-admin-permissions-in-the-azure-portal"></a>Vergeben von Administratorberechtigungen im Azure-Portal
-1. Melden Sie sich mit einem globalen Administratorkonto im [Azure-Portal](https://www.office.com/signin) an.
+1. Melden Sie sich mit einem globalen Administratorkonto im [Azure-Portal](https://portal.azure.com) an.
 2. Wählen Sie im Azure-Portal **Benutzer** aus, und wählen Sie anschließend den Benutzer aus, dem Sie Administratorberechtigungen zuweisen möchten.
 3. Klicken Sie auf **Verzeichnisrolle** und dann auf die Berechtigung.
   ![Screenshot der Verzeichnisrolle](./media/add-intune-directory-role.png)
@@ -98,7 +99,7 @@ Nachdem Sie Ihrem Intune-Abonnement Benutzer hinzugefügt haben, sollten Sie ein
 
 ### <a name="types-of-administrators"></a>Typen von Administratoren
 
-Weisen Sie Benutzern mindestens eine Administratorberechtigung zu. Diese Berechtigungen definieren den administrativen Bereich für Benutzer sowie die Aufgaben, die sie verwalten können. Administratorberechtigungen sind den verschiedenen Microsoft-Clouddiensten gemeinsam, und einige Berechtigungen werden möglicherweise nicht von allen Diensten unterstützt. Das Azure-Portal und das Office 365-Portal führen jeweils eingeschränkte Administratorrollen auf, die von Intune nicht verwendet werden. Intune-Administratorberechtigungen enthalten folgende Optionen:
+Weisen Sie Benutzern mindestens eine Administratorberechtigung zu. Diese Berechtigungen definieren den administrativen Bereich für Benutzer sowie die Aufgaben, die sie verwalten können. Administratorberechtigungen sind den verschiedenen Microsoft-Clouddiensten gemeinsam, und einige Berechtigungen werden möglicherweise nicht von allen Diensten unterstützt. Das Azure-Portal und das Microsoft 365 Admin Center führen jeweils eingeschränkte Administratorrollen auf, die von Intune nicht verwendet werden. Intune-Administratorberechtigungen enthalten folgende Optionen:
 
 - **Globaler Administrator**: (Office 365 und Intune) Besitzt Zugriff auf alle Verwaltungsfunktionen in Intune. Standardmäßig wird die Person, die sich für Intune angemeldet hat, zum globalen Administrator. Globale Administratoren sind die einzigen Administratoren, die andere Administratorrollen zuweisen können. Sie können in Ihrer Organisation über mehrere globale Administratoren verfügen. Als bewährte Methode wird empfohlen, nur wenigen Personen in Ihrem Unternehmen diese Funktion zuzuweisen, um Risiken für Ihr Unternehmen so gering wie möglich zu halten.
 - **Kennwortadministrator**: (Office 365 und Intune) Setzt Kennwörter zurück, verwaltet Serviceanfragen und überwacht den Dienststatus. Die Rechte von Kennwortadministratoren beschränken sich auf das Zurücksetzen von Kennwörtern für Benutzer.
@@ -109,7 +110,7 @@ Weisen Sie Benutzern mindestens eine Administratorberechtigung zu. Diese Berecht
 
 Das Konto, mit dem Sie Ihr Microsoft Intune-Abonnement erstellen, ist ein globaler Administrator. Als Best Practice empfiehlt es sich, für die täglichen Verwaltungsaufgaben keinen globalen Administrator zu verwenden. Ein Administrator benötigt zwar keine Intune-Lizenz für den Zugriff auf Intune im Azure-Portal, doch zum Ausführen bestimmter Verwaltungsaufgaben, z.B. zum Einrichten des Exchange-Diensts Connector, ist eine Intune-Lizenz erforderlich.
 
-Für den Zugriff auf das Office 365-Portal muss für Ihr Konto **Anmeldung zulässig** festgelegt sein. Setzen Sie im Azure-Portal unter **Profil** **Anmeldung blockieren** auf **Nein**, um den Zugriff zu gewähren. Dieser Status unterscheidet sich vom Besitz einer Abonnementlizenz. Standardmäßig haben alle Benutzerkonten den Status **Zugelassen**. Benutzer ohne Administratorrechte können Intune-Kennwörter über das Office 365-Portal zurücksetzen.
+Für den Zugriff auf das Microsoft 365 Admin Center muss für Ihr Konto **Sign-in allowed** (Anmeldung zulässig) festgelegt sein. Setzen Sie im Azure-Portal unter **Profil** **Anmeldung blockieren** auf **Nein**, um den Zugriff zu gewähren. Dieser Status unterscheidet sich vom Besitz einer Abonnementlizenz. Standardmäßig haben alle Benutzerkonten den Status **Zugelassen**. Benutzer ohne Administratorrechte können Intune-Kennwörter über das Microsoft 365 Admin Center zurücksetzen.
 
 ## <a name="sync-active-directory-and-add-users-to-intune"></a>Synchronisieren von Active Directory und Hinzufügen von Benutzern zu Intune
 Sie können die Verzeichnissynchronisierung so konfigurieren, dass Benutzerkonten aus Ihrer lokalen Active Directory-Instanz in Microsoft Azure Active Directory (Azure AD) importiert werden. Dies schließt Intune Benutzer ein. Wenn Ihr lokaler Active Directory-Dienst mit all Ihren Azure Active Directory-basierten Diensten verbunden ist, gestaltet sich die Verwaltung der Benutzeridentität viel einfacher. Sie können auch Features für die einmalige Anmeldung konfigurieren, damit die Benutzer mit der Art der Authentifizierung vertraut sind und diese problemlos verläuft. Durch das Verknüpfen eines [Azure AD-Mandanten](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) mit mehreren Diensten sind die zuvor synchronisierten Benutzerkonten für alle cloudbasierten Dienste verfügbar.

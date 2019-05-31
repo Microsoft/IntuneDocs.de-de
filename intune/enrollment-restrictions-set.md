@@ -1,15 +1,16 @@
 ---
 title: Festlegen von Registrierungseinschränkungen in Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Schränken Sie die Registrierung plattformbezogen ein, und legen Sie in Intune einen Grenzwert für die Geräteregistrierung fest.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 08/17/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfbfb26569a85d8cd19b840ab86ec58160a1dec4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 1080ae8a73223ad16445d0d2233434faa818b04b
+ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839670"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "59569115"
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
@@ -42,10 +43,11 @@ Sie können u.a. die folgenden spezifischen Registrierungsbeschränkungen festle
   - iOS
   - macOS
   - Windows
-- Plattformbetriebssystemversion für iOS, Android, Android-Arbeitsprofil und Windows. (Es können nur Windows 10-Versionen verwendet werden. Dieses Feld bleibt leer, wenn Windows 8.1 zulässig ist.)
+  - Windows Mobile
+- Plattformbetriebssystemversion für iOS, Android, Android-Arbeitsprofil, Windows und Windows Mobile. (Es können nur Windows 10-Versionen verwendet werden. Dieses Feld bleibt leer, wenn Windows 8.1 zulässig ist.)
   - Mindestens erforderliche Version
   - Maximal zulässige Version
-- Private Geräte einschränken (nur iOS, Android, Android-Arbeitsprofil, macOS und Windows)
+- Private Geräte einschränken (nur iOS, Android, Android-Arbeitsprofil, macOS, Windows und Windows Mobile)
 
 ## <a name="default-restrictions"></a>Standardbeschränkungen
 
@@ -99,11 +101,11 @@ Die folgenden Methoden sind als Windows-Unternehmensregistrierung autorisiert:
  - Der Benutzer, der sich registriert, verwendet ein [Konto für den Geräteregistrierungs-Manager]( device-enrollment-manager-enroll.md).
 - Das Gerät wird über [Windows AutoPilot](enrollment-autopilot.md) registriert.
 - Das Gerät ist bei Windows Autopilot registriert, jedoch ohne die Option „MDM enrollment only“ (Nur MDM-Registrierung) in den Windows-Einstellungen.
-- Die IME-Nummer des Geräts ist unter **Geräteregistrierung** > **[Bezeichner von Unternehmensgeräten](corporate-identifiers-add.md)** aufgeführt. (für Windows Phone 8.1 nicht unterstützt)
+- Die IME-Nummer des Geräts ist unter **Geräteregistrierung** >  **[Bezeichner von Unternehmensgeräten](corporate-identifiers-add.md)** aufgeführt. (für Windows Phone 8.1 nicht unterstützt)
 - Das Gerät wird über ein [Massenbereitstellungspaket](windows-bulk-enroll.md) registriert.
 - Das Gerät wird über GPO oder eine [automatische Registrierung von SCCM für die Co-Verwaltung](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management.md) registriert.
  
-Die folgenden Registrierungen werden von Intune als unternehmenseigen markiert. Da diese jedoch nicht die gerätespezifische Steuerung über den Intune-Administrator bieten, werden sie blockiert:
+Die folgenden Registrierungen werden von Intune als unternehmenseigen gekennzeichnet. Da sie die Steuerung pro Gerät durch den Intune-Administrator jedoch nicht unterstützen, werden sie blockiert:
  - [Automatische MDM-Registrierung](windows-enroll.md#enable-windows-10-automatic-enrollment) mit der [Azure Active Directory-Einbindung während der Windows-Einrichtung](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*.
 - [Automatische MDM-Registrierung](windows-enroll.md#enable-windows-10-automatic-enrollment) mit der [Azure Active Directory-Einbindung aus den Windows-Einstellungen](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)*.
  
@@ -126,9 +128,20 @@ Sie können die Einstellungen für eine Gerätelimitbeschränkung ändern, indem
 6. Wählen Sie **Speichern** aus.
 
 
-Während der BYOD-Registrierung erhalten Benutzer eine Benachrichtigung darüber, wenn das Limit registrierter Geräte erreicht ist. Bei iOS sieht dies wie folgt aus:
+Während der BYOD-Registrierung erhalten Benutzer eine Benachrichtigung darüber, wenn das Limit registrierter Geräte erreicht ist. Diese sieht bei iOS beispielsweise folgendermaßen aus:
 
 ![iOS-Gerätelimitbenachrichtigung](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
+> [!IMPORTANT]
+> Einschränkungen des Gerätelimits gelten nicht für die folgenden Windows-Registrierungstypen:
+> - Gemeinsam verwaltete Registrierungen
+> - GPO-Registrierungen
+> - Registrierungen mit Azure Active Directory-Verknüpfung
+> - Massenregistrierungen mit Azure Active Directory-Verknüpfung
+> - Autopilot-Registrierungen
+>
+> Einschränkungen des Gerätelimits werden für diese Registrierungstypen nicht erzwungen, da diese als Szenarios mit gemeinsam genutztem Gerät gelten.
+> Sie können für diese Registrierungstypen [in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/devices/device-management-azure-portal#configure-device-settings) harte Grenzwerte festlegen.
 
 ## <a name="change-enrollment-restriction-priority"></a>Ändern der Priorität der Registrierungsbeschränkung
 

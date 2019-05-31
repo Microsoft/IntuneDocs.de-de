@@ -1,15 +1,16 @@
 ---
 title: iOS-App-Bereitstellungsprofile in Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Intune stellt Ihnen die Tools zum proaktiven Zuweisen eines neuen Bereitstellungsprofils auf Geräten zur Verfügung, auf denen Apps installiert sind, die bald ablaufen.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f02e4416f68fef7531f6d6ffa617273904b752c
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 888c136934deca80877d75879e270807af194a1e
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233847"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569557"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Verwenden von Bereitstellungsprofilen für iOS-Apps, um zu verhindern, dass Apps ablaufen
 
@@ -44,14 +45,14 @@ Wenn Sie über Administratorberechtigungen verfügen, können Sie Sicherheitsgru
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Erstellen eines Bereitstellungsprofils für mobile iOS-Apps
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3. Wählen Sie im Bereich **Intune** die Option **Client-Apps** aus.
 1.  Wählen Sie in der Workload **Client-Apps** die Option **Verwalten** > **iOS-App-Bereitstellungsprofile** aus.
 2.  Klicken Sie in dem Bereich mit der Profilliste auf die Option **Profil erstellen**.
 3. Konfigurieren Sie im Bereich **Profil erstellen** folgende Werte:
     - **Name**: Geben Sie einen Namen für dieses mobile Bereitstellungsprofil an.
     - **Beschreibung**: Geben Sie optional eine Beschreibung der Richtlinie ein.
-    - **Profildatei hochladen**: Klicken Sie auf **Importieren**, und wählen Sie eine Datei mit einem Konfigurationsprofil für Apple-Mobilgeräte (mit der Erweiterung `.mobileprovision`) aus, die Sie von der Apple Developer-Website heruntergeladen haben.
+    - **Profildatei hochladen:** Klicken Sie auf das Symbol **Öffnen**, und wählen Sie eine Datei mit einem Konfigurationsprofil für Apple-Mobilgeräte (mit der Erweiterung `.mobileprovision`) aus, die Sie von der [Apple Developer-Website](https://developer.apple.com/) heruntergeladen haben.
 4. Wählen Sie abschließend **Erstellen** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte

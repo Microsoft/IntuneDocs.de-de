@@ -1,40 +1,52 @@
 ---
-title: Verwalten des Webzugriffs mit einem durch eine Richtlinie geschützten Browser
-titlesuffix: Microsoft Intune
-description: Verwenden Sie einen durch eine Richtlinie geschützten Browser, um das Browsen und die Webdatenübertragung einzuschränken.
+title: Verwalten des Webzugriffs in Unternehmen mit einem durch eine Richtlinie geschützten Browser
+titleSuffix: Microsoft Intune
+description: Verwenden Sie einen durch eine Intune-Richtlinie geschützten Browser, um das Browsen und die Webdatenübertragung in Unternehmen zu verwalten.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64cd4aa629e980bf69557d6cd2c40f8bee7bd3c6
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: 8f32cfbb5e05958ec9d8f303809d3ffa28c3a3ec
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086215"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569726"
 ---
-# <a name="manage-internet-access-using-a-microsoft-intune-policy-protected-browser"></a>Verwalten des Internetzugriffs durch einen mittels Richtlinien geschützten Microsoft Intune-Browser
+# <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Verwalten des Webzugriffs durch einen mittels Microsoft Intune-Richtlinien geschützte Browser
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Mit einem durch eine Intune-Richtlinie geschützten Browser (Microsoft Edge oder Intune Managed Browser) können Sie sicher sein, dass für den Zugriff auf Unternehmenswebsites immer Sicherheitsmaßnahmen in Kraft treten.  Nach der Konfiguration mit Intune können geschützte Browser von folgenden Punkten profitieren:
 
 - Anwendungsschutzrichtlinien
-- Bedingter Zugriff.
+- Bedingter Zugriff
 - Einmaliges Anmelden
 - Anwendungskonfigurationseinstellungen
 - Integration des Azure-Anwendungsproxys
+
+## <a name="microsoft-edge-support"></a>Microsoft Edge-Unterstützung
+
+Sie können die Microsoft Edge-Unterstützung für Unternehmensszenarios auf iOS- und Android-Geräten verwenden. Microsoft Edge unterstützt alle Verwaltungsszenarios, die Intune Managed Browser auch unterstützt, und enthält Verbesserungen der Benutzerfreundlichkeit. Die folgenden durch Intune-Richtlinien ermöglichten Microsoft Edge-Unternehmensfunktionen sind verfügbar. Zu diesen Unternehmensfunktionen zählen die folgenden:
+
+1. **Doppelte Identitäten:** Benutzer können sowohl Geschäftskonten als auch persönliche Konten zum Browsen hinzufügen. Die beiden Identitäten sind vollständig voneinander getrennt, ähnlich wie bei Office 365 und Outlook. Intune-Administratoren können die gewünschten Richtlinien für geschütztes Browsen im Geschäftskonto festlegen. 
+2. **Integration von Intune-App-Schutzrichtlinien:** Administratoren können jetzt App-Schutzrichtlinien für Microsoft Edge erstellen. U. a. können sie in diesem Rahmen festlegen, wie und ob Benutzer Inhalte ausschneiden, kopieren und einfügen können, ob Bildschirmaufnahmen zulässig sind, und sie können sicherstellen, dass von Benutzern ausgewählte Links nur in anderen verwalteten Apps geöffnet werden.
+3. **Azure-Anwendungspoxyintegration:** Administratoren können den Zugriff auf SaaS-Apps und Web-App festlegen, um sicherzustellen, dass browserbasierte Apps nur im sicheren Microsoft Edge-Browser ausgeführt werden, egal ob Endbenutzer eine Verbindung über ein Unternehmensnetzwerk oder über das Internet herstellen. 
+4. **Verknüpfungen zu Favoriten und der Startseite:** Für einen einfacheren Zugriff können Administratoren URLs festlegen, die unter Favoriten angezeigt werden, wenn sich Benutzer im Unternehmenskontext befinden. Administratoren können auch eine Verknüpfung zur Startseite hinzufügen, die als primäre Verknüpfung angezeigt wird, wenn der Unternehmensbenutzer eine neue Seite oder eine neue Registerkarte in Microsoft Edge öffnet.
+
+Microsoft Intune-Schutzrichtlinien für Microsoft Edge tragen dazu bei, die Daten und Ressourcen Ihres Unternehmens zu schützen. Der durch Intune geschützte Microsoft Edge-Browser stellt sicher, dass die Ressourcen Ihres Unternehmens nicht nur in nativ installierten Apps geschützt sind, sondern auch, wenn darauf über einen Webbrowser zugegriffen wird.
 
 ## <a name="getting-started"></a>Erste Schritte
 
@@ -72,11 +84,15 @@ Da Managed Browser oder Microsoft Edge nicht von Intune verwaltet werden, könne
 
 ## <a name="conditional-access-for-protected-browsers"></a>Bedingter Zugriff für geschützte Browser
 
-Managed Browser wurde jetzt als Client-App für bedingten Zugriff freigegeben. Das bedeutet, dass Sie den Zugriff auf mit Azure AD verbundene Web-Apps über mobile Browser einschränken können, sodass die Benutzer nur noch Managed Browser verwenden können und der Zugriff über sämtliche anderen nicht geschützten Browser wie Safari oder Chrome blockiert wird. Dieser Schutz kann auf Azure-Ressourcen wie Exchange Online, SharePoint Online, das Office-Portal und sogar auf lokale Websites angewendet werden, die Sie für externe Benutzer über den [Azure AD-Anwendungsproxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) freigegeben haben. 
+Managed Browser wurde jetzt als Client-App für bedingten Zugriff freigegeben. Das bedeutet, dass Sie den Zugriff auf mit Azure AD verbundene Web-Apps über mobile Browser einschränken können, sodass die Benutzer nur noch Managed Browser verwenden können und der Zugriff über sämtliche anderen nicht geschützten Browser wie Safari oder Chrome blockiert wird. Dieser Schutz kann auf Azure-Ressourcen wie Exchange Online, SharePoint Online, das Microsoft 365 Admin Center und sogar auf lokale Websites angewendet werden, die Sie für externe Benutzer über den [Azure AD-Anwendungsproxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) freigegeben haben. 
 
-Wenn Sie verhindern wollen, dass mit Azure AD verbundene Web-Apps Intune Managed Browser auf mobilen Plattformen verwenden können, können Sie eine Azure AD-Richtlinie für bedingten Zugriff erstellen, über die zugelassene Client-Anwendungen erfordert werden. 
+Wenn Sie verhindern wollen, dass mit Azure AD verbundene Web-Apps Intune Managed Browser auf mobilen Plattformen verwenden können, können Sie eine Richtlinie für bedingten Zugriff erstellen, die zugelassene Clientanwendungen erforderlich macht. 
 
-1. Klicken Sie im Azure-Portal auf **Azure Active Directory** > **Unternehmensanwendungen** > **Bedingter Zugriff** > **Neue Richtlinie**. 
+> [!TIP]  
+> Der bedingte Zugriff ist eine Technologie von Azure Active Directory (Azure AD). Bei dem Knoten für bedingten Zugriff, auf den aus *Intune* zugegriffen wird, handelt es sich um denselben Knoten, auf den aus *Azure AD* zugegriffen wird.  
+
+
+1. Klicken Sie im Intune-Portal auf **Conditional access** > **New policy** (Bedingter Zugriff > Neue Richtlinie). 
 2. Klicken Sie im Abschnitt **Zugriffssteuerungen** des Blatts auf die Option **Erteilen**. 
 3. Klicken Sie auf **Genehmigte Client-App erforderlich**. 
 4. Klicken Sie auf dem Blatt **Erteilen** auf **Auswählen**. Diese Richtlinie muss den Cloud-Apps zugewiesen sein, auf die nur über die Intune Managed Browser-App zugegriffen werden soll.
@@ -118,7 +134,7 @@ Für SSO muss Ihr Gerät unter iOS durch Microsoft Authenticator und unter Andro
 >Damit die App-Konfigurationen angewendet werden können, muss der geschützte Browser des Benutzers oder eine andere App auf dem Gerät bereits mit der [Intune-App-Schutzrichtlinie]( app-protection-policy.md) verwaltet werden.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 3.  Gehen Sie zur Liste „Verwalten“ auf dem Blatt **Client-Apps**, und wählen Sie die Option **App-Konfigurationsrichtlinien** aus.
 4.  Wählen Sie auf dem Blatt **App-Konfigurationsrichtlinien** die Option **Hinzufügen** aus.
 5.  Geben Sie auf dem Blatt **Konfigurationsrichtlinie hinzufügen** einen **Namen** und optional eine **Beschreibung** für die App-Konfigurationseinstellungen ein.
@@ -216,7 +232,7 @@ Geben Sie über die Prozedur zum Erstellen einer Microsoft Edge- oder Managed Br
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>URL-Format für zulässige und blockierte URLs
 Nachfolgend wird erläutert, welche Formate und Platzhalter Sie zum Festlegen von URLs in den Zulassungs- und Blockierungslisten verwenden können:
 
-- Sie können das Platzhaltersymbol (**&#42;**) gemäß den Regeln in der folgenden Liste mit zulässigen Mustern verwenden:
+- Sie können das Platzhaltersymbol ( **&#42;** ) gemäß den Regeln in der folgenden Liste mit zulässigen Mustern verwenden:
 
 - Stellen Sie sicher, dass Sie bei der Eingabe in die Liste allen URLs **http** oder **https** voranstellen.
 
@@ -267,12 +283,12 @@ Nachfolgend wird erläutert, welche Formate und Platzhalter Sie zum Festlegen vo
 Sowohl Intune Managed Browser als auch Microsoft Edge gelten jetzt als durch Richtlinien verwaltete bzw. geschützte Browser. Heute führen vorhandene App-Schutzrichtlinien dazu, dass Weblinks aus verwalteten Intune-Apps je nach Szenario und Plattform in einem bestimmten Browser geöffnet werden. 
 
 Unter Android: 
-* Managed Browser, wenn sich sowohl Managed Browser als auch Edge auf dem Gerät befinden – es sei denn, die App-Konfigurationseinstellung „com.microsoft.intune.useEdge“ wurde für alle verwalteten Intune-Apps, für die ein per Richtlinien verwalteter Browser erforderlich ist, auf „true“ festgelegt.  
-* Microsoft Edge, wenn nur Microsoft Edge auf dem Gerät installiert und eine entsprechende Richtlinie festgelegt ist.
-* Managed Browser, wenn nur Managed Browser auf dem Gerät installiert und eine entsprechende Richtlinie festgelegt ist. 
+* Managed Browser wird geöffnet, wenn ein Benutzer sowohl Managed Browser als auch Microsoft Edge auf seinem Gerät heruntergeladen hat. Wenn Sie möchten, dass Microsoft Edge statt Managed Browser geöffnet wird, legen Sie die App-Konfigurationseinstellung „com.microsoft.intune.useEdge“ für alle verwalteten Intune-Apps, für die ein per Richtlinien verwalteter Browser erforderlich ist, auf „true“ fest.  
+* Microsoft Edge wird geöffnet, wenn nur Microsoft Edge auf dem Gerät installiert und eine entsprechende Richtlinie festgelegt ist.
+* Managed Browser wird geöffnet, wenn nur Managed Browser auf dem Gerät installiert und eine entsprechende Richtlinie festgelegt ist. 
 
 Unter iOS für Apps, in denen das Intune SDK für iOS, Version 9.0.9+ integriert ist: 
-* Managed Browser, wenn sich sowohl Managed Browser als auch Edge auf dem Gerät befinden – es sei denn, die App-Konfigurationseinstellung „com.microsoft.intune.useEdge“ wurde für alle verwalteten Intune-Apps, für die ein per Richtlinien verwalteter Browser erforderlich ist, auf „true“ festgelegt – **oder** Microsoft Edge, wenn Microsoft Edge installiert und eine entsprechende Richtlinie festgelegt ist. 
+* Managed Browser, wenn sich sowohl Managed Browser als auch Microsoft Edge auf dem Gerät befinden – es sei denn, die App-Konfigurationseinstellung „com.microsoft.intune.useEdge“ wurde für alle verwalteten Intune-Apps, für die ein per Richtlinien verwalteter Browser erforderlich ist, auf „true“ festgelegt – **oder** Microsoft Edge, wenn Microsoft Edge installiert und eine entsprechende Richtlinie festgelegt ist. 
 * Microsoft Edge, wenn nur Microsoft Edge auf dem Gerät installiert und eine entsprechende Richtlinie festgelegt und aktiviert ist. 
 * Managed Browser, wenn nur Managed Browser auf dem Gerät installiert und eine entsprechende Richtlinie festgelegt und aktiviert ist.
 

@@ -7,21 +7,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 04/19/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: cf27fdb8-f408-425c-9a7c-146de1534425
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 12f9b6aa5fb9a7b1f31b43dc7faf3e36cdd49157
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4362983bbcdb78f82ce7b16f675c6f61fbefd1e1
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186544"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396324"
 ---
 # <a name="data-apple-sends-to-intune"></a>Von Apple an Intune gesendete Daten
 
@@ -38,7 +40,7 @@ Damit Microsoft Intune eine Verbindung einrichten kann, m체ssen Sie zun채chst f�
 
 Die folgende Tabelle enth채lt die Daten, die ein Apple-Ger채t an Intune sendet. [Von Intune an Apple gesendete Daten](data-intune-sends-to-apple.md). 
 
-| Dienst | Nachricht | An Intune versendete Daten | Verwendung |
+| Dienst | Nachricht | An Intune versendete Daten | Verwendet f체r |
 |:---:|:---:|:---:| ---|
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Authentifizieren | MessageType | Der Nachrichtentyp: Authentifizieren. |
 | [APNs](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Authentifizieren | Thema | Das Thema, worauf das Ger채t lauscht. |

@@ -5,22 +5,23 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b766f9f92fb5d0e8cedfbebbac7246f48b90a6a2
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6f13e00abad5b48dcd7996cf9df1cc5756f250d3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55846127"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57388111"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Synchronisieren von Geräten mit Intune, um die neuesten Richtlinien und Aktionen zu erhalten
 
@@ -46,6 +47,8 @@ Die Geräteaktion **Sync** (Synchronsieren) zwingt das ausgewählte Gerät dazu,
 5. Klicken Sie zum Bestätigen auf **Ja**.
 
 Um den Status der Synchronisierung anzuzeigen, wählen Sie **Geräte** > **Geräteaktionen**.
+
+Sie finden die standardmäßige Intune-Richtlinie zu Check-In-Frequenzen in der [Übersicht über die Gerätekonfiguration](device-profiles.md).
 
 ## <a name="retryable-error-codes"></a>Wiederholbare Fehlercodes
 

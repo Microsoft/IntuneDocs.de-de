@@ -6,23 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure; get-started
+ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbb6a8f159aebe837fabf671a84dd96223298227
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 45e9f50881ff7da0554a4731712441b5fedb01d8
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55836352"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569414"
 ---
 # <a name="what-are-app-protection-policies"></a>Was sind App-Schutzrichtlinien?
 
@@ -69,8 +70,8 @@ Es gibt weitere Vorteile bei der Verwendung einer MDM mit App-Schutzrichtlinien,
 ### <a name="supported-platforms-for-app-protection-policies"></a>Unterstützte Plattformen für App-Schutzrichtlinien
 Die Plattform für Schutzrichtlinien für Intune-Apps ist auf die Plattformunterstützung für mobile Office-Anwendungen für Android- und iOS-Geräte ausgerichtet. Weitere Informationen finden Sie im Abschnitt **Mobile Apps** unter [Systemanforderungen für Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
-Windows-Geräte werden momentan nicht unterstützt. Sie können jedoch Windows Information Protection verwenden, das ähnliche Funktionen bietet. Weitere Informationen finden Sie unter [Schutz von Unternehmensdaten mit Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
-
+> [!IMPORTANT]
+> Das Intune-Unternehmensportal ist auf dem Gerät erforderlich, um App-Schutzrichtlinien unter Android zu erhalten. Weitere Informationen finden Sie unter [Zugriffsanforderungen für Apps im Intune-Unternehmensportal ](end-user-mam-apps-android.md#access-apps).
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>So schützen App-Schutzrichtlinien Ihre App-Daten
 

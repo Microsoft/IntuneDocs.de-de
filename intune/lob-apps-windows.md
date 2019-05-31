@@ -1,15 +1,16 @@
 ---
 title: Hinzufügen branchenspezifischer Windows-Apps zu Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Erfahren Sie, wie Sie branchenspezifische Windows-Apps mithilfe von Microsoft Intune hinzufügen.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 04/10/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7776c1bddb459347679cb4aea3bc4e14e05e1418
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: ca41e12136911cc0aecb6968a949fb738e2e2d77
+ms.sourcegitcommit: d1116c70bd0f2382d590091e0e66095de3925324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238777"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59570766"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Hinzufügen branchenspezifischer Windows-Apps zu Microsoft Intune
 
@@ -74,7 +75,7 @@ Branchenspezifische Apps werden über eine App-Installationsdatei hinzugefügt. 
 1. Überprüfen Sie im Bereich **App hinzufügen**, ob die konfigurierten App-Informationen richtig sind.
 2. Wählen Sie **Hinzufügen**, um die App in Intune hochzuladen.
 
-## <a name="step-5-update-a-line-of-business-app"></a>Schritt 5: Aktualisieren einer branchenspezifischen App
+## <a name="step-5-update-a-line-of-business-app"></a>Schritt 5: Aktualisieren einer branchenspezifischen App
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
@@ -92,4 +93,4 @@ Diese Einstellung ist nützlich, um Racebedingungen zu vermeiden. Beispielsweise
 
 - Erfahren Sie mehr darüber, wie Sie die Eigenschaften und Zuweisungen Ihrer App überwachen können. Siehe [Überwachen von App-Informationen und -Zuweisungen](apps-monitor.md).
 
-- Erfahren Sie mehr über den Kontext Ihrer App in Intune. Siehe [Übersicht über die Lebenszyklen von Geräten und Apps](introduction-device-app-lifecycles.md).
+- Erfahren Sie mehr über den Kontext Ihrer App in Intune. Weitere Informationen erhalten Sie unter [Übersicht über den App-Lebenszyklus in Microsoft Intune](app-lifecycle.md).

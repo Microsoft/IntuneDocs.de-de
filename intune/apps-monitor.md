@@ -1,27 +1,29 @@
 ---
 title: Überwachen von App-Informationen und -Zuweisungen
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Nachdem Sie Benutzern oder Geräten eine App zugewiesen haben, können Sie mithilfe dieser Informationen den Status der App überwachen.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
-ms.topic: article
+ms.date: 03/26/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bff4e2b3afe684fe12243fa0f410728eb16eeaba
-ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2b3cba546be350f47c1a57f47b8eddf85323dc74
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "53325176"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567230"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Überwachen von App-Informationen und -Zuweisungen mit Microsoft Intune
 
@@ -49,7 +51,7 @@ Der Abschnitt **Zusammenfassung** enthält die folgenden Informationen zur App:
 |------------------------|------------------------------------------------------------------|
 | **Herausgeber**          | Der Herausgeber der App.                                            |
 | **Betriebssystem**   | Das Betriebssystem der App (Windows, iOS, Android usw.). |
-| **Erstellt**             | Das Datum und die Uhrzeit, als diese Version erstellt wurde                         |
+| **Erstellt**             | Das Datum und die Uhrzeit, als diese Version erstellt wurde <b>**Hinweis:** Dieser Date-Wert wird aktualisiert, wenn ein IT-Administrator App-Metadaten ändert (wie z. B. die App-Kategorie oder die App-Beschreibung).                        |
 | **Zugewiesen**           | Ob die App zugewiesen wurde (**Ja** oder **Nein**).                  |
 
 ### <a name="device-and-user-status-graphs"></a>Diagramme zum Geräte- und Benutzerstatus
@@ -80,7 +82,7 @@ Eine Liste des Gerätestatus wird angezeigt, wenn Sie im Abschnitt **Überwachen
 | **Gerätename**      | Der Name des Geräts auf Plattformen, die das Benennen von Geräten ermöglichen. Auf anderen Plattformen wird von Intune einen Namen aus anderen Eigenschaften erstellt. Dieses Attribut ist nicht für ein anderes Gerät verfügbar.                                                                       |
 | **Benutzername**        | Der Name des Benutzers.                                                                                                                                                                                                                                      |
 | **Plattform**         | Das Betriebssystem des Geräts (Windows, iOS, Android usw.).                                                                                                                                                                                           |
-| **Version**          | Die Versionsnummer der App. Für branchenspezifische Apps wird die vollständige Versionsnummer der App angezeigt. Die vollständige Versionsnummer identifiziert ein bestimmtes Release der App. Die Nummer wird als _Version_(_Build_) angezeigt. Beispielsweise 2.2(2.2.17560800). |
+| **Version**          | Die Versionsnummer der App. Für branchenspezifische Apps (LOB) wird die vollständige Versionsnummer der App angezeigt. Die vollständige Versionsnummer identifiziert ein bestimmtes Release der App. Die Nummer wird als _Version_(_Build_) angezeigt. Beispielsweise 2.2(2.2.17560800). Für Store-Apps werden keine Versionen angezeigt. |
 | **Status**           | Der Status der App.                                                                                                                                                                                                                                     |
 | **Statusdetails**   | Die Details des Status.                                                                                                                                                                                                                                     |
 | **Letztes Einchecken**    | Das Datum der letzten Synchronisierung des Geräts mit Intune.                                                                                                                                                                                                                  |

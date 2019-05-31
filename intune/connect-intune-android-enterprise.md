@@ -1,15 +1,16 @@
 ---
-title: Verknüpfen Ihres Intune-Mandantenkontos mit Ihrem Android Enterprise-Konto
-titlesuffix: Microsoft Intune
-description: Erfahren Sie, wie Sie Ihr Intune-Mandantenkonto mit Ihrem Android Enterprise-Konto verknüpfen.
+title: Herstellen einer Verbindung zwischen Ihrem Intune-Konto und Ihrem verwalteten Google Play-Konto
+titleSuffix: Microsoft Intune
+description: Erfahren Sie, wie Sie eine Verbindung zwischen Ihrem Intune-Konto und Ihrem verwalteten Google Play-Konto herstellen können.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 6/21/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 421d9c56f959fe30d35c0c55ce34017a7a0ba5a6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 19efd0821deeac0e76c60ee67e6230da554391a0
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838257"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567386"
 ---
-# <a name="connect-your-intune-account-to-your-android-enterprise-account"></a>Verknüpfen Ihres Intune-Mandantenkontos mit Ihrem Android Enterprise-Konto
+# <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Herstellen einer Verbindung zwischen Ihrem Intune-Konto und Ihrem verwalteten Google Play-Konto
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Sie müssen Ihr Intune-Mandantenkonto mit Ihrem Android Enterprise-Konto verknüpfen, um [Android-Arbeitsprofilgeräte](android-work-profile-enroll.md), [vollständig verwaltete Android-Geräte](android-fully-managed-enroll.md) und [dedizierte Android-Geräte](android-kiosk-enroll.md) zu unterstützen.  
+Sie müssen eine Verbindung zwischen Ihrem Intune-Mandantenkonto und Ihrem verwalteten Google Play-Konto herstellen, um [Android Enterprise-Arbeitsprofilgeräte](android-work-profile-enroll.md), [vollständig verwaltete Android Enterprise-Geräte](android-fully-managed-enroll.md) und [dedizierte Android Enterprise-Geräte](android-kiosk-enroll.md) zu unterstützen.  
 
 > [!NOTE]
 > Aufgrund der Interaktion zwischen Google- und Microsoft-Domänen müssen Sie möglicherweise Ihre Browsereinstellungen anpassen, um diesen Schritt durchzuführen.  Stellen Sie sicher, dass „portal.azure.com“ und „play.google.com“ sich in der gleichen Sicherheitszone Ihres Browsers befinden.
@@ -51,9 +52,9 @@ Sie müssen Ihr Intune-Mandantenkonto mit Ihrem Android Enterprise-Konto verknü
 
 7. Stimmen Sie der Android-Vereinbarung zu, und klicken Sie dann auf **Bestätigen**. Ihre Anforderung wird verarbeitet.
 
-## <a name="disconnect-your-android-enterprise-administrative-account"></a>Aufheben der Verknüpfung Ihres Android Enterprise-Verwaltungskontos
+## <a name="disconnect-your-android-enterprise-administrative-account"></a>Trennen der Verbindung Ihres Android Enterprise-Verwaltungskontos
 
-Sie können die Registrierung und die Verwaltung von Android deaktivieren. Dafür müssen Sie zunächst registrierte Android-Geräte mit Arbeitsprofilen außer Betrieb nehmen. Wenn Sie in der Intune-Administratorkonsole auf **Trennen** klicken, werden alle Android-Arbeitsprofilgeräte und -Kioskgeräte aus der Registrierung entfernt. Dadurch wird außerdem die Beziehung zwischen dem Android Enterprise-Konto und Intune entfernt.
+Sie können die Registrierung und die Verwaltung von Android Enterprise deaktivieren. Dafür müssen Sie zunächst registrierte Android Enterprise-Geräte mit Arbeitsprofilen außer Betrieb nehmen. Wenn Sie anschließend in der Intune-Administratorkonsole auf **Trennen** klicken, werden alle Android Enterprise-Arbeitsprofilgeräte und alle dedizierten Android Enterprise-Geräte aus der Registrierung entfernt. Dadurch wird außerdem die Beziehung zwischen dem verwalteten Google Play-Konto und Intune entfernt.
 
 1. Wählen Sie als Intune-Administrator im [Azure-Portal](https://portal.azure.com) die Optionen **Alle Dienste** > **Überwachung + Verwaltung** > **Intune** aus.
 2. Klicken Sie auf **Geräteregistrierung** > **Android-Registrierung** > **Managed Google Play** > **Trennen**.
@@ -61,4 +62,4 @@ Sie können die Registrierung und die Verwaltung von Android deaktivieren. Dafü
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie eine Verknüpfung mit dem Android Enterprise-Konto hergestellt haben, können Sie [Android-Arbeitsprofilgeräte](android-work-profile-enroll.md) und [Android-Kioskgeräte einrichten](android-kiosk-enroll.md).
+Nachdem Sie eine Verbindung mit dem verwalteten Google Play-Konto hergestellt haben, können Sie [Android Enterprise-Arbeitsprofilgeräte](android-work-profile-enroll.md) und [dedizierte Android Enterprise-Geräte einrichten](android-kiosk-enroll.md).

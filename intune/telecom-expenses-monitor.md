@@ -7,21 +7,23 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 02/28/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b3ca1b95a6dcf7bdc30b61469fa747894d20fe73
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 031db83302dfef8b99fc83ab7975e233c3eeb799
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188091"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57396861"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Einrichten eines TEM-Diensts (Telecom Expense Management) in Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -88,13 +90,13 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie bereits ein TEM-Dienst-Abonneme
 
    ![Die Datalert-Seite bei erfolgreicher Verbindung](./media/tem-datalert-mdm-profiles.png)
 
-### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Schritt 2: Überprüfen, ob die TEM-Funktion in Intune aktiv ist
+### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Schritt 2: Überprüfen, ob die TEM-Funktion in Intune aktiv ist
 
 Nach Abschluss von Schritt 1 sollte die Verbindung automatisch aktiviert werden und der Verbindungsstatus **Aktiv** im Azure-Portal angezeigt werden. Diese Schritte zeigen Ihnen, wie Sie auf den Status **Aktiv** prüfen.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
 
 3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
 
@@ -104,7 +106,7 @@ Nach Abschluss von Schritt 1 sollte die Verbindung automatisch aktiviert werden 
 
    ![Intune-Seite mit aktivem Datalert-Verbindungsstatus](./media/tem-azure-portal-enable-service.png)
 
-### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>Schritt 3: Bereitstellen der Datalert-App für in Unternehmen registrierte Geräte
+### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>Schritt 3: Bereitstellen der Datalert-App für in Unternehmen registrierte Geräte
 
 Wenn Sie sicherstellen wollen, dass nur Informationen zur Datennutzung durch unternehmenseigene Leitungen gesammelt werden, müssen Sie die folgenden beiden Schritte ausführen:
 - Erstellen Sie Gerätekategorien in Intune

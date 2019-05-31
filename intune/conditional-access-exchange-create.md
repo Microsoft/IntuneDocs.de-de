@@ -1,27 +1,28 @@
 ---
-title: Erstellen einer Richtlinie für bedingten Zugriff auf Exchange | Microsoft Intune
-titlesuffix: Microsoft Intune
+title: Erstellen einer Richtlinie für bedingten Zugriff auf Exchange
+titleSuffix: Microsoft Intune
 description: Konfigurieren Sie den bedingten Zugriff für eine lokale Installation von Exchange und für das ältere Exchange Online Dedicated in Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2018
-ms.topic: article
+ms.date: 04/15/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b4f35dba38dd1b69f770a3a10689ce87eaf3a27
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 003e6e5aa78440861e6aff5be138c4a302171c1b
+ms.sourcegitcommit: a2cd14c30949cef17bfc6576513e7660a8015669
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840398"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59571738"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Erstellen einer Richtlinie für bedingten Zugriff auf eine lokale Installation von Exchange und auf das ältere Exchange Online Dedicated
 
@@ -79,48 +80,50 @@ Die systemeigene **E-Mail**-Anwendung unter Windows 8.1 und höher (bei Registri
 
 1. Melden Sie sich im [Azure-Portal](https://portal.azure.com/) mit Ihren Intune-Anmeldeinformationen an.
 
-1. Sobald Sie erfolgreich angemeldet sind, wird das **Azure-Dashboard** angezeigt.
+2. Wechseln Sie zu **Intune** > **Exchange-Zugriff**, und klicken Sie auf **Zugriff auf Exchange lokal**. 
 
-1. Klicken Sie im Menü links auf **Alle Dienste**, und geben Sie in das Filtertextfeld **Intune** ein.
+3. Klicken Sie im Bereich **Zugriff auf Exchange lokal** auf die Option **Ja**, um *die Zugriffssteuerung von Exchange lokal zu aktivieren*.
 
-1. Wählen Sie **Intune** aus. Das **Intune-Dashboard** wird angezeigt.
+4. Klicken Sie im Menü links auf **Alle Dienste**, und geben Sie in das Filtertextfeld **Intune** ein.
 
-1. Klicken Sie auf **On-premises access** (Lokaler Zugriff). Der Bereich **On-premises access** (Lokaler Zugriff) enthält den Status der Richtlinie für bedingten Zugriff und die Geräte, die davon betroffen sind.
+5. Wählen Sie **Intune** aus. Das **Intune-Dashboard** wird angezeigt.
 
-1. Wählen Sie unter **Verwalten** die Option **Zugriff auf Exchange lokal** aus.
+6. Klicken Sie auf **On-premises access** (Lokaler Zugriff). Der Bereich **On-premises access** (Lokaler Zugriff) enthält den Status der Richtlinie für bedingten Zugriff und die Geräte, die davon betroffen sind.
 
-1. Klicken Sie im Bereich **Exchange on-premises access** (Zugriff auf eine lokale Installation von Exchange) auf die Option **Ja**, um die Zugriffssteuerung für eine lokale Installation von Exchange zu aktivieren.
+7. Wählen Sie unter **Verwalten** die Option **Zugriff auf Exchange lokal** aus.
+
+8. Klicken Sie im Bereich **Exchange on-premises access** (Zugriff auf eine lokale Installation von Exchange) auf die Option **Ja**, um die Zugriffssteuerung für eine lokale Installation von Exchange zu aktivieren.
 
     > [!NOTE]
     > Wenn Sie keinen lokalen Connector für Exchange Active Sync konfiguriert haben, ist diese Option deaktiviert.  Sie müssen zunächst mindestens einen Connector installieren und konfigurieren, bevor Sie den bedingten Zugriff auf Exchange lokal aktivieren. Weitere Informationen finden Sie unter [Installieren des lokalen Exchange Connectors für Intune](exchange-connector-install.md).
 
-1. Wählen Sie unter **Zuweisung** die Option **Eingeschlossene Gruppen** aus.  Verwenden Sie die Sicherheitsbenutzergruppe, auf die bedingter Zugriff angewendet werden soll. In diesem Fall müssen die Benutzer ihre Geräte selbst in Intune registrieren und die Konformität mit den Konformitätsprofilen sicherstellen.
+9. Wählen Sie unter **Zuweisung** die Option **Eingeschlossene Gruppen** aus.  Verwenden Sie die Sicherheitsbenutzergruppe, auf die bedingter Zugriff angewendet werden soll. In diesem Fall müssen die Benutzer ihre Geräte selbst in Intune registrieren und die Konformität mit den Konformitätsprofilen sicherstellen.
 
-1. Wenn Sie bestimmte Gruppen von Benutzern ausschließen möchten, können Sie dazu **Ausgeschlossene Gruppen** auswählen. Wählen Sie anschließend eine Benutzergruppe aus, die Sie von der erforderlichen Registrierung des Geräts und der Konformitätsprüfung ausschließen möchten.
+10. Wenn Sie bestimmte Gruppen von Benutzern ausschließen möchten, können Sie dazu **Ausgeschlossene Gruppen** auswählen. Wählen Sie anschließend eine Benutzergruppe aus, die Sie von der erforderlichen Registrierung des Geräts und der Konformitätsprüfung ausschließen möchten.
 
-1. Wählen Sie unter **Einstellungen** die Option **Benutzerbenachrichtigungen** aus, um die Standard-E-Mail-Nachricht zu ändern. Diese Meldung wird an Benutzer gesendet, wenn ihr Gerät nicht konform ist und sie auf Exchange lokal zugreifen möchten. Die Nachrichtenvorlage verwendet Markupsprache.  Sie sehen während der Eingabe auch eine Vorschau der Nachricht.
+11. Wählen Sie unter **Einstellungen** die Option **Benutzerbenachrichtigungen** aus, um die Standard-E-Mail-Nachricht zu ändern. Diese Meldung wird an Benutzer gesendet, wenn ihr Gerät nicht konform ist und sie auf Exchange lokal zugreifen möchten. Die Nachrichtenvorlage verwendet Markupsprache.  Sie sehen während der Eingabe auch eine Vorschau der Nachricht.
     > [!TIP]
     > Weitere Informationen zur Markupsprache finden Sie in diesem Wikipedia-[Artikel](https://en.wikipedia.org/wiki/Markup_language).
 
-1. Legen Sie im Bereich **Advanced Exchange Active Sync access settings** (Erweiterte Zugriffseinstellungen für Exchange Active Sync) die globale Standardregel für den Zugriff von Geräten, die nicht von Intune verwaltet werden, sowie Regeln auf Plattformebene fest, wie in den nächsten beiden Schritten beschrieben.
+12. Legen Sie im Bereich **Advanced Exchange Active Sync access settings** (Erweiterte Zugriffseinstellungen für Exchange Active Sync) die globale Standardregel für den Zugriff von Geräten, die nicht von Intune verwaltet werden, sowie Regeln auf Plattformebene fest, wie in den nächsten beiden Schritten beschrieben. Wählen Sie in der Ansicht *Exchange-Zugriff – Zugriff auf Exchange lokal* die Option *Lokaler Connector für Exchange ActiveSync* aus, um zu den erweiterten Einstellungen zu gelangen.
 
-1. Bei Geräten, die nicht durch den bedingten Zugriff oder andere Regeln abgedeckt werden, können Sie auswählen, ob der Zugriff auf Exchange zugelassen oder blockiert werden soll.
+13. Bei Geräten, die nicht durch den bedingten Zugriff oder andere Regeln abgedeckt werden, können Sie auswählen, ob der Zugriff auf Exchange zugelassen oder blockiert werden soll.
 
    - Wenn Sie den Zugriff zulassen, können alle Geräte sofort auf eine lokale Installation von Exchange zugreifen.  Geräte, die Benutzern in **Eingeschlossene Gruppen** gehören, werden blockiert, wenn sie später als nicht konform mit den Konformitätsrichtlinien ausgewertet werden oder nicht in Intune registriert sind.
    - Wenn Sie diese Option auf das Blockieren des Zugriffs festlegen, wird der Zugriff auf eine lokale Installation von Exchange sofort für alle Geräte blockiert.  Geräte, die Benutzern in **Eingeschlossenen Gruppen** gehören, erhalten Zugriff, sobald das Gerät in Intune registriert und als konform ausgewertet wurde. Android-Geräte ohne Samsung KNOX Standard werden immer blockiert, da sie diese Einstellung nicht unterstützen.
 
-1. Wählen Sie unter **Geräteplattformausnahmen** die Option **Hinzufügen** aus, um die Plattformen anzugeben. Wenn die Einstellung **Zugriff nicht verwalteter Geräte** auf **blockiert** festgelegt ist, erhalten Geräte, die registriert und konform sind, auch dann Zugriff, wenn eine Plattformausnahme diesen blockieren würde. Wählen Sie **OK** aus, um die Einstellungen zu speichern.
+14. Wählen Sie unter **Geräteplattformausnahmen** die Option **Hinzufügen** aus, um die Plattformen anzugeben. Wenn die Einstellung **Zugriff nicht verwalteter Geräte** auf **blockiert** festgelegt ist, erhalten Geräte, die registriert und konform sind, auch dann Zugriff, wenn eine Plattformausnahme diesen blockieren würde. Wählen Sie **OK** aus, um die Einstellungen zu speichern.
 
-1. Klicken Sie im Bereich **Lokal** auf **Speichern**, um die Richtlinie für bedingten Zugriff zu speichern.
+15. Klicken Sie im Bereich **Lokal** auf **Speichern**, um die Richtlinie für bedingten Zugriff zu speichern.
 
 ## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Erstellen von Azure AD-Richtlinien für den bedingten Zugriff in Intune
 
-Ab Intune Version 1704 können Administratoren im Intune Azure-Portal für Azure AD Richtlinien für den bedingten Zugriff erstellen, damit Sie nicht zwischen Azure- und Intune-Workloads wechseln müssen.
+Der bedingte Zugriff ist eine Technologie von Azure Active Directory (Azure AD). Bei dem Knoten für bedingten Zugriff, auf den aus *Intune* zugegriffen wird, handelt es sich um denselben Knoten, auf den aus *Azure AD* zugegriffen wird.  
 
 > [!IMPORTANT]
 > Sie benötigen eine Azure AD Premium-Lizenz, um im Azure-Portal für Intune Azure AD-Richtlinien für den bedingten Zugriff zu erstellen.
 
-### <a name="to-create-azure-ad-conditional-access-policy"></a>Erstellen einer Azure AD-Richtlinie für den bedingten Zugriff
+### <a name="to-create-a-conditional-access-policy"></a>So erstellen Sie eine Richtlinie für den bedingten Zugriff:
 
 1. Wählen Sie auf dem **Intune-Dashboard** die Option **Bedingter Zugriff** aus.
 
