@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ce2813702d9b2b3cb91f5531308cbb58b1f9f80
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e9e4c27f7aca8d510ed82eabeab87612b1c16e11
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050606"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373322"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Importieren von WLAN-Einstellungen für Windows-Geräte in Intune
 
-Für Geräte, die Windows ausführen, können Sie ein WLAN-Konfigurationsprofil aus einer zuvor exportierten Datei importieren. **Für Geräte, auf denen Windows 10 und höher ausgeführt wird, können Sie auch direkt in Intune [ein WLAN-Profil erstellen](wi-fi-settings-windows.md)**.
+Für Geräte, die Windows ausführen, können Sie ein WLAN-Konfigurationsprofil aus einer zuvor exportierten Datei importieren. **Für Geräte, auf denen Windows 10 und höher ausgeführt wird, können Sie auch direkt in Intune [ein WLAN-Profil erstellen](wi-fi-settings-windows.md)** .
 
 Gilt für:  
 - Windows 8.1 und höher
@@ -44,7 +44,7 @@ Führen Sie auf einem Windows-Computer, auf dem das erforderliche WLAN-Profil be
 
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Importieren der WLAN-Einstellungen in Intune
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 3. Geben Sie einen **Namen** und eine **Beschreibung** für das Geräteeinschränkungsprofil ein.
 
