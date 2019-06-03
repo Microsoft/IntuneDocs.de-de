@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 852d4b169e2e6a43934babf3e1c26d91341050ab
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b5f1b4c0fd0c9d8cfdc443b2af3c6f90a6f32756
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043189"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373640"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Verwenden benutzerdefinierter Einstellungen für Android Enterprise-Geräte in Microsoft Intune
 
@@ -35,7 +35,7 @@ In diesem Artikel erfahren Sie, wie Sie ein benutzerdefiniertes Profil für Andr
 
 ## <a name="create-the-profile"></a>Erstellen des Profils
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 3. Legen Sie folgende Einstellungen fest:
 
@@ -70,7 +70,7 @@ In diesem Artikel erfahren Sie, wie Sie ein benutzerdefiniertes Profil für Andr
 
 In diesem Beispiel erstellen Sie ein benutzerdefiniertes Profil, das Kopier- und Einfügevorgänge zwischen geschäftlichen und persönlichen Apps auf Android Enterprise-Geräten einschränkt.
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 3. Legen Sie folgende Einstellungen fest:
 

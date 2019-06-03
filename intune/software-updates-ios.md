@@ -7,18 +7,17 @@ ms.author: brenduns
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: de73aa069765ce75068781674ff24d097346cdba
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: cf07f942feeab0a73c01625f90c04ec3b989c1c2
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61505929"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044852"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Hinzufügen von iOS-Softwareupdaterichtlinien in Intune
 
@@ -63,7 +62,7 @@ Das Gerät wird etwa alle acht Stunden bei Intune eingecheckt. Wenn ein Update v
 
       Wenn ein Konflikt entstehen sollte, hat die Einstellung *nur* Auswirkungen, wenn die beiden Werte identisch sind. Vergewissern Sie sich, dass Sie die bereits vorhandene Richtlinie ändern oder von diesem Ort im Portal entfernen, um Konflikte zu vermeiden.
       > [! Wichtig]  
-      > Richtlinien mit der *Start-* und *Endzeit* 0 Uhr umfassen einen Zeitraum von 0 anstatt 24 Stunden – es liegt also keine Einschränkung vor.  
+      > Eine Richtlinie, bei der die *Startzeit* und die *Endzeit* auf 12 Uhr festgelegt wurde, wird als „0 Stunden“ und nicht als „24 Stunden“ ausgewertet. Diese Einstellung führt dazu, dass es keine Einschränkungen gibt.  
 
 5. Klicken Sie auf **OK** > **Erstellen**, um Ihre Änderungen zu speichern und die Richtlinie zu erstellen.
 
@@ -76,7 +75,7 @@ Unterstützung vom Supportteam für Intune erhalten Sie unter [Delay visibility 
 
 ## <a name="change-the-restricted-times-for-the-policy"></a>Ändern der eingeschränkten Zeiten für die Richtlinie
 
-1. Klicken Sie unter **Softwareupdates** auf **Update policies for iOS (Updaterichtlinien für iOS)**.
+1. Klicken Sie unter **Softwareupdates** auf **Update policies for iOS (Updaterichtlinien für iOS)** .
 2. Wählen Sie eine vorhandene Richtlinie aus, und klicken Sie dann auf **Eigenschaften**.
 3. Aktualisieren Sie die eingeschränkten Zeiträume:
 
@@ -91,7 +90,7 @@ Unterstützung vom Supportteam für Intune erhalten Sie unter [Delay visibility 
 
 Vorhandene Richtlinien werden Gruppen, Benutzern oder Geräten zugewiesen. Wenn eine Richtlinie zugewiesen ist, wird sie angewendet.
 
-1. Klicken Sie unter **Softwareupdates** auf **Update policies for iOS (Updaterichtlinien für iOS)**.
+1. Klicken Sie unter **Softwareupdates** auf **Update policies for iOS (Updaterichtlinien für iOS)** .
 2. Wählen Sie eine vorhandene Richtlinie aus, und klicken Sie dann auf **Zuweisungen**. 
 3. Wählen Sie die Azure Active Directory-Gruppen, -Benutzer oder -Geräte aus, die dieser Richtlinie hinzugefügt oder von ihr ausgeschlossen werden sollen.
 4. Klicken Sie auf **Speichern**, um die Richtlinie für Ihre Gruppen bereitzustellen.

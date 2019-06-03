@@ -8,7 +8,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/19/2018
 ms.topic: tutorial
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -19,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2d137945325d8ec11801aec225fd0e89196ed05
-ms.sourcegitcommit: f8bbd9bac2016a77f36461bec260f716e2155b4a
+ms.openlocfilehash: 2ee353e5e6c39c3b402c0b4f039bb02efcfa4532
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65732990"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044521"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Tutorial: Registrieren von Windows-Geräten in Intune mithilfe von Autopilot
 Windows Autopilot vereinfacht das Registrieren von Geräten. Mit Microsoft Intune und Autopilot können Sie Ihren Endbenutzern neue Geräte geben, ohne die benutzerdefinierten Betriebssystemimages erstellen, verwalten und auf diese anwenden zu müssen. 
@@ -53,9 +52,9 @@ Der erste Schritt beim Einrichten von Windows Autopilot besteht darin, die Windo
 
 1. Erstellen Sie in einem beliebigen Text-Editor eine CSV-Datei (Comma-Separated Values), die die Windows-Geräte identifiziert. Verwenden Sie das folgende Format:
     
-    *serial-number*, *windows-product-id*, *hardware-hash*, *optional-order-id*
+    *Seriennummer*, *Windows-Produkt-ID*, *Hardwarehash*, *Optionales Gruppentag*
     
-    Die ersten drei Elemente sind erforderlich, die Auftrags-ID hingegen ist optional.
+    Die ersten drei Elemente sind erforderlich, das Gruppentag (früher „Auftrags-ID“) hingegen ist optional.
 
 2. Speichern Sie die CSV-Datei.
 
