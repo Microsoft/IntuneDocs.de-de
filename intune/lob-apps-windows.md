@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca41e12136911cc0aecb6968a949fb738e2e2d77
-ms.sourcegitcommit: d1116c70bd0f2382d590091e0e66095de3925324
+ms.openlocfilehash: 0eadff455a25a22d53d58d87790a356072f9db66
+ms.sourcegitcommit: b0cf661145ccc6e3518db620af199786a623a0d9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59570766"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "64764726"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Hinzufügen branchenspezifischer Windows-Apps zu Microsoft Intune
 
@@ -63,7 +63,7 @@ Branchenspezifische Apps werden über eine App-Installationsdatei hinzugefügt. 
     - **Diese App als ausgewählte App im Unternehmensportal anzeigen**: Präsentieren Sie die App herausgehoben auf der Hauptseite des Unternehmensportals, wenn die Benutzer nach Apps suchen.
     - **Informations-URL**: Geben Sie optional die URL einer Website ein, die Informationen über die App enthält. Die URL wird im Unternehmensportal angezeigt.
     - **URL zu den Datenschutzbestimmungen**: Geben Sie optional die URL einer Website ein, die Datenschutzinformationen für diese App enthält. Die URL wird im Unternehmensportal angezeigt.
-    - **Befehlszeilenargumente**: Geben Sie optional Befehlszeilenargumente ein, die bei Ausführung auf die MSI-Datei angewendet werden sollen. Ein Beispiel ist **/q**.
+    - **Befehlszeilenargumente**: Geben Sie optional Befehlszeilenargumente ein, die bei Ausführung auf die MSI-Datei angewendet werden sollen.  Ein Beispiel ist **/q**. Schließen Sie den Befehl „msiexec“ und Argumente wie **/i** oder **/x** nicht ein, da diese automatisch verwendet werden. Weitere Informationen finden Sie unter [Befehlszeilenoptionen](https://docs.microsoft.com/windows/desktop/Msi/command-line-options). 
     - **Entwickler**: Geben Sie optional den Namen des App-Entwicklers ein.
     - **Besitzer**: Geben Sie optional einen Namen für den Besitzer dieser App ein. Ein Beispiel ist **Personalabteilung**.
     - **Anmerkungen**: Geben Sie Hinweise zu dieser App ein.
