@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/05/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d0c7ac239a67a51ba7165771206883f3c46f5f55
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
-ms.translationtype: HT
+ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59292423"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196857"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Einrichten des iOS-Gerätezugriffs auf Unternehmensressourcen  
 
@@ -31,7 +31,9 @@ Registrieren Sie Ihr iOS-Gerät bei der Intune-Unternehmensportal-App, um sicher
 
 Sobald Ihr Gerät registriert ist, gilt es als *verwaltet*. Ihre Organisation kann dem Gerät über einen MDM-Anbieter (Mobile Device Management, Verwaltung mobiler Geräte) wie Intune Richtlinien und Anwendungen zuweisen.  
 
-Um auf Ihrem Gerät auf Ihre Geschäfts-, Schul- oder Uniressourcen zugreifen zu können, müssen Sie Ihr Gerät entsprechend der von Ihrer Organisation bevorzugten Einstellungen konfigurieren. In diesem Artikel wird beschrieben, wie Sie mithilfe des Unternehmensportals Ihr Gerät registrieren und die Einstellungsanforderungen Ihrer Organisation erfüllen können. 
+Um auf Ihrem Gerät auf Ihre Geschäfts-, Schul- oder Uniressourcen zugreifen zu können, müssen Sie Ihr Gerät entsprechend der von Ihrer Organisation bevorzugten Einstellungen konfigurieren. In diesem Artikel wird beschrieben, wie Sie mithilfe des Unternehmensportals Ihr Gerät registrieren und die Einstellungsanforderungen Ihrer Organisation erfüllen können.  
+</br>
+> [!VIDEO https://www.youtube.com/embed/mJyv6YcHi7c?rel=0]
 
 > [!NOTE]
 > Wenn Sie versucht haben, in der E-Mail-App auf Unternehmens-E-Mails zuzugreifen und aufgefordert wurden, Ihr Gerät verwalten zu lassen, sind Sie hier richtig. Befolgen Sie die untenstehenden Anweisungen, um über Ihr iOS-Gerät den Zugriff auf Ihre E-Mails und andere Unternehmensressourcen zu ermöglichen.  
@@ -39,7 +41,7 @@ Um auf Ihrem Gerät auf Ihre Geschäfts-, Schul- oder Uniressourcen zugreifen zu
 ## <a name="what-to-expect-from-the-company-portal-app"></a>Vorteile der Unternehmensportal-App  
 
 ### <a name="security"></a>Sicherheit  
-Während der ersten Einrichtung werden Sie von der App aufgefordert, sich bei Ihrer Organisation zu authentifizieren. Anschließend werden Sie über alle notwendigen Geräteeinstellungen informiert, die Sie aktualisieren müssen. Beispielsweise legen Organisationen oft Anforderungen an die minimale oder maximale Zeichenanzahl des Kennworts fest, die Sie einhalten müssen.     
+Während der ersten Einrichtung werden Sie von der App aufgefordert, sich bei Ihrer Organisation zu authentifizieren. Anschließend werden Sie über alle notwendigen Geräteeinstellungen informiert, die Sie aktualisieren müssen. Beispielsweise legen Organisationen oft Anforderungen an die minimale oder maximale Zeichenanzahl des Kennworts fest, die Sie einhalten müssen.
 
 ### <a name="protection"></a>Schutz  
 Nachdem Ihr Gerät registriert ist, wird es mithilfe der Unternehmensportal-App weiter geschützt. Wenn Sie beispielsweise eine App aus einer nicht vertrauenswürdigen Quelle installieren, benachrichtigt Sie die Unternehmensportal-App und entzieht Ihnen in manchen Fällen den Zugriff auf Unternehmensdaten. Diese Art von Richtlinie ist in Organisationen üblich und erfordert oft die Deinstallation der nicht vertrauenswürdigen App, ehe Sie Ihre Zugriffsrechte zurück erhalten.  
@@ -69,7 +71,7 @@ Eine Unterbrechung von mehr als einigen Minuten während der Registrierung kann 
 
 4. Lesen Sie die Liste der Geräteinformationen durch, die Ihre Organisation sehen kann und nicht sehen kann. Tippen Sie dann auf **Weiter**.  
 
-5. Lesen Sie die Anweisungen auf dem Bildschirm **Wie geht es weiter?**. Wenn Sie bereit sind, das Verwaltungsprofil herunterzuladen und zu installieren, tippen Sie auf **Weiter**.  
+5. Lesen Sie die Anweisungen auf dem Bildschirm **Wie geht es weiter?** . Wenn Sie bereit sind, das Verwaltungsprofil herunterzuladen und zu installieren, tippen Sie auf **Weiter**.  
 
  > [!IMPORTANT]
 > Diese nächsten Schritte und Bildschirme sind je nach iOS-Version unterschiedlich. Führen Sie die Schritte für Ihre iOS-Version aus. 
@@ -114,10 +116,13 @@ Eine Unterbrechung von mehr als einigen Minuten während der Registrierung kann 
 
 14. Sie erkennen, dass das Setup abgeschlossen ist, wenn alle Elemente in der Liste einen grünen Kreis aufweisen. Tippen Sie auf **Fertig**.   
     
-    ![Beispielscreenshot des Unternehmensportal mit dem Bildschirm „Alles erledigt!“  mit durchgängig grünen Kreisen.](./media/ios-13-cp-enroll-1903.PNG)  
+    ![Beispielscreenshot des Unternehmensportals mit der Meldung „Alles erledigt!“ Es werden nur grüne Kreise angezeigt.](./media/ios-13-cp-enroll-1903.PNG)  
 
 > [!Note]
 > Wenn in Ihrer Organisation Obergrenzen für Gesprächsminuten oder Datenvolumen gelten oder sie Ihnen ein unternehmenseigenes Gerät zur Verfügung stellt, müssen Sie möglicherweise noch einige weitere Schritte durchführen. Wenn Sie aufgefordert werden, die App **Datalert** zu installieren, lesen Sie [Registrieren Ihres Geräts im Telecom Expense Management](enroll-your-device-with-telecom-expense-management-ios.md). Wenn Ihr Unternehmen am Apple-Programm zur Geräteregistrierung teilnimmt, finden Sie heraus, [wie Sie Ihr unternehmenseigenes Gerät registrieren können](enroll-your-device-dep-ios.md).  
+
+## <a name="it-administrator-support"></a>Unterstützung für IT-Administratoren  
+Wenn Sie IT-Administrator sind und Probleme bei der Registrierung von Geräten haben, lesen Sie [Behandeln von Problemen bei der Registrierung von iOS-Geräten in Microsoft Intune](https://support.microsoft.com/en-us/help/4039809). Dieser Artikel listet häufige Fehler, ihre Ursachen und Schritte zur Behebung auf.  
 
 ## <a name="next-steps"></a>Nächste Schritte  
 Finden Sie Apps, die Ihnen bei der Arbeit oder in der Schule oder Hochschule helfen. Erfahren Sie, wie über das Unternehmensportal [Apps zur Verfügung gestellt werden](use-managed-apps-on-your-device-ios.md).  

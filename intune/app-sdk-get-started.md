@@ -5,9 +5,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/24/2019
+ms.date: 04/29/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6389bc9790fce45604887bc2d73b3d5d8c35c45
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.openlocfilehash: 35f4007d03ca66ada5721de1ffe20dd87bfe4527
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59423593"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043795"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Erste Schritte mit dem Microsoft Intune App SDK
 
@@ -82,9 +81,9 @@ Es wird empfohlen, sich für ein GitHub-Konto zu registrieren, mit dem Sie Fork-
 
 Sie benötigen einen der folgenden Entwicklerleitfäden zum Integrieren des Intune App SDK in Ihre App:
 
-* **[Entwicklerleitfaden zum Intune App SDK für iOS](app-sdk-ios.md)**: In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native iOS-App für das Intune App SDK einrichten.
+* **[Entwicklerleitfaden zum Intune App SDK für iOS](app-sdk-ios.md)** : In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native iOS-App für das Intune App SDK einrichten.
 
-* **[Entwicklerleitfaden zum Intune App SDK für Android](app-sdk-android.md)**: In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native Android-App für das Intune App SDK einrichten.
+* **[Entwicklerleitfaden zum Intune App SDK für Android](app-sdk-android.md)** : In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native Android-App für das Intune App SDK einrichten.
 
 * **[Leitfaden für Intune App SDK-Xamarin-Komponenten:](app-sdk-xamarin.md)** Dieses Dokument hilft Ihnen beim Erstellen von iOS- und Android-Apps mithilfe von Xamarin für Intune-App-Schutzrichtlinien.
 
@@ -164,7 +163,7 @@ Nachdem Sie die notwendigen Schritte zur Integration des Intune App SDK in Ihre 
     
     * Wenn Sie Ihre App auf einem mobilen Gerät mit einem Benutzerkonto testen, sollten Sie sicherstellen, dass Sie diesem Konto auf der Website des Microsoft 365 Admin Centers über ein Administratorkonto eine Intune-Lizenz zugewiesen haben. Weitere Informationen dazu finden Sie unter [Zuweisen von Microsoft Intune-Lizenzen](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
-* **Intune-App-Schutzrichtlinien**: Um Ihre App für alle Intune-App-Schutzrichtlinien zu testen, müssen Sie das erwartete Verhalten bei jeder Richtlinieneinstellung kennen. Siehe die Beschreibungen der [iOS-App-Schutzrichtlinien](app-protection-policy-settings-ios.md) und [Android-App-Schutzrichtlinien](app-protection-policy-settings-android.md).
+* **Intune-App-Schutzrichtlinien**: Um Ihre App für alle Intune-App-Schutzrichtlinien zu testen, müssen Sie das erwartete Verhalten bei jeder Richtlinieneinstellung kennen. Siehe die Beschreibungen der [iOS-App-Schutzrichtlinien](app-protection-policy-settings-ios.md) und [Android-App-Schutzrichtlinien](app-protection-policy-settings-android.md). Wenn Ihre App das Intune SDK integriert hat, aber noch nicht im Azure-Portal als Ziel-App aufgelistet wird, können Sie sie über eine Richtlinie bereitstellen, indem Sie die Option „+ Weitere Apps“ auswählen und die Bundle-ID (iOS) oder den Paketnamen (Android) im Textfeld angeben.
 
 * **Problembehandlung**: Wenn Sie beim manuellen Testen der Benutzerumgebung Ihrer App-Installation auf Probleme stoßen, lesen Sie [Problembehandlung bei der App-Installation](troubleshoot-app-install.md). 
 
