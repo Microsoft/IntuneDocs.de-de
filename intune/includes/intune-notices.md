@@ -7,36 +7,14 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: ffcef5b4d78856709f8563ee1f667ec7e5d993b3
-ms.sourcegitcommit: d2e04a38e024b0f5afb0ca202823227de9da3ad1
+ms.openlocfilehash: 1073a38da8a5b2467b1ff8c97b32b93f92e34e4c
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65732604"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454127"
 ---
 Diese Hinweise enthalten wichtige Informationen, die Ihnen bei der Vorbereitung auf künftige Änderungen und Features im Zusammenhang mit Intune helfen können. 
-
-### <a name="change-in-enrollment-workflow-with-intune-company-portal-on-corporate-ios-devices-authenticating-with-setup-assistant----1927359---"></a>Änderung beim Registrierungsworkflow im Zusammenhang mit Intune-Unternehmensportal auf unternehmenseigenen iOS-Geräten, die sich mithilfe des Setup-Assistenten authentifizieren <!-- 1927359 -->
-Es wird eine Änderung beim Workflow für die Registrierung von iOS-Geräten mit einer der Apple-Methoden für die Registrierung unternehmenseigener Geräte – Apple Configurator, Apple Business Manager, Apple School Manager oder das Apple-Programm zur Geräteregistrierung – geben, wenn der Setup-Assistent zur Authentifizierung verwendet wird. Diese Änderung gilt nur für Geräte, die mit Benutzeraffinität registriert wurden.
-
-#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Wenn diese Änderung eingeführt wird, werden Registrierungsprofile in Intune im Azure-Portal aktualisiert, sodass Sie angeben können, wie sich Geräte authentifizieren und ob sie die Unternehmensportal-App erhalten sollen. Es wird einen verbesserten Workflow zum Registrieren von iOS-Geräten mit den oben aufgeführten Methoden geben. 
-
-- Wenn Sie neue Geräte registrieren und sich mithilfe des Setup-Assistenten authentifizieren, können Sie auswählen, ob die Unternehmensportal-App automatisch bereitgestellt werden soll oder nicht. Endbenutzern werden die Bildschirme „Gerät identifizieren“ und „Gerät bestätigen“ im Registrierungsflow nicht mehr angezeigt.  
-- Auf Geräten, die über den Setup-Assistenten bereits mit einer der Apple-Methoden für die Registrierung unternehmenseigener Geräte registriert wurden, müssen Sie entsprechende Maßnahmen ergreifen, wenn Sie den bedingten Zugriff aktivieren möchten. Sie müssen [eine App-Konfigurationsrichtlinie mit einem bestimmten XML konfigurieren](https://aka.ms/enrollment_setup_assistant), um das Unternehmensportal per Push auf diese Geräte zu übertragen.  Wenn Sie wählen, dass das Unternehmensportal auf diese Weise übertragen werden soll, werden Endbenutzern die Bildschirme „Gerät identifizieren“ und „Gerät bestätigen“ im Registrierungsflow nicht mehr angezeigt. 
-- Nach Einführung dieser Änderung gilt Folgendes: Wenn Sie das Unternehmensportal mit dem oben genannten App-Konfigurationsprofil nicht bereitgestellt haben und wenn Endbenutzer die Unternehmensportal-App aus dem App Store herunterladen, können sie sich zwar anmelden, erhalten aber eine Fehlermeldung. Die Endbenutzer können die App nicht mehr für bedingten Zugriff verwenden. 
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
-Wenn Sie die Verwendung des geänderten Workflows planen, sollten Sie Ihre Anleitungen für Endbenutzer aktualisieren und darin auf Folgendes hinweisen:
-
-- Für Endbenutzer werden die beiden oben genannten Bildschirme im Registrierungsflow nicht mehr angezeigt. 
-- Sie müssen sich beim Unternehmensportal anmelden, wenn es automatisch bereitgestellt wird, und können es nicht aus dem App Store herunterladen. 
-
-In Vorbereitung auf diese Änderung können Sie bei Bedarf jetzt wählen, dass eine Konfigurationsrichtlinie für die App erstellt werden soll. Wenn dieser neue Workflow eingeführt wird, werden Ihnen in der Konsole aktualisierte Registrierungsprofile angezeigt. Außerdem werden wir Sie über das Nachrichtencenter im Hinblick auf diese Einführung informieren. Dann müssen Sie die entsprechenden Maßnahmen ergreifen, damit sich Ihre Endbenutzer über das Programm zur Geräteregistrierung registrieren können, indem Sie sich mithilfe des Setup-Assistenten authentifizieren. Sie können auch das Unternehmensportal für bedingten Zugriff nutzen.
-
-#### <a name="additional-information"></a>Weitere Informationen 
-[https://aka.ms/enrollment_setup_assistant](https://aka.ms/enrollment_setup_assistant)
-
 
 ### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>Aktualisieren Ihrer Android-Unternehmensportal-App auf die neueste Version <!--4536963-->
 Intune veröffentlicht regelmäßig Versionsupdates für die Android-Unternehmensportal-App. Im November 2018 haben wir ein Unternehmensportal-Update veröffentlicht, das einen Back-End-Switch zur Vorbereitung auf den Google-Wechsel von der vorhandenen Benachrichtigungsplattform auf sein Firebase Cloud Messaging (FCM) enthielt. Wenn Google seine vorhandene Benachrichtigungsplattform außer Betrieb nimmt und zu FCM wechselt, müssen Endbenutzer ihre Unternehmensportal-App auf mindestens die Version von November 2018 aktualisiert haben, damit sie mit dem Google Play Store weiterhin kommunizieren können.
@@ -49,3 +27,16 @@ Bitten Sie Endbenutzer von Android-Geräten, die noch nicht aktualisiert haben, 
 
 #### <a name="additional-information"></a>Weitere Informationen
 https://firebase.google.com/docs/cloud-messaging/
+
+
+### <a name="new-fullscreen-experience-coming-to-intune---4593669--"></a>Neue Vollbild-Benutzeroberfläche für Intune <!--4593669-->
+Wir führen im Azure-Portal neue Benutzeroberflächen zum Erstellen und Bearbeiten für Intune ein. Diese neuen Benutzeroberflächen vereinfachen die vorhandenen Workflows, indem die Funktionen im Stil eines Assistenten auf einem einzigen Blatt zusammengefasst werden. Dank dieses Updates müssen Sie nicht mehr auf mehreren Blättern arbeiten oder verschiedene Detailinformationen anzeigen, um Erstellungs- oder Bearbeitungsvorgänge durchzuführen. Die Workflows zum Erstellen werden ebenfalls aktualisiert und werden Zuweisungen enthalten (mit Ausnahme von App-Zuweisungen).
+
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
+Die Vollbild-Benutzeroberfläche für Intune wird in den kommenden Monaten sowohl in „portal.azure.com“ als auch in „devicemanagement.microsoft.com“ eingeführt. Dieses Update der Benutzeroberfläche wirkt sich nicht auf die Funktionsweise Ihrer vorhandenen Richtlinien und Profile aus, Sie werden aber feststellen, dass der Workflow leicht verändert wurde. Beim Erstellen neuer Richtlinien können Sie beispielsweise einige Zuweisungen bereits im Rahmen dieses Flows statt erst nach dem Erstellen der Richtlinie festlegen. Screenshots der neuen Benutzeroberfläche in der Konsole finden Sie im Blogbeitrag unter „Weitere Informationen“.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wie kann ich mich auf die Änderung vorbereiten?
+Sie müssen keine Maßnahmen ergreifen, sollten aber eventuell Ihre Leitfäden für IT-Experten aktualisieren. Wir werden unsere Dokumentation aktualisieren, wenn diese Benutzeroberfläche auf den verschiedenen Blättern für Intune im Azure-Portal eingeführt wird.
+
+#### <a name="additional-information"></a>Weitere Informationen 
+https://aka.ms/intune_fullscreen
