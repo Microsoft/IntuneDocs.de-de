@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb55951390c3fe19651087e16c3185018cfd9dab
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c8353cf2f0c24c3a894fa219df9fc9a8272e17af
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049308"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454070"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Einschließen und Ausschließen von App-Zuweisungen in Microsoft Intune
 
@@ -44,9 +44,8 @@ Intune berücksichtigt beim Ausschließen von Gruppen keine Zuweisung eines Benu
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Ein- und Ausschließen von Gruppen beim Zuweisen von Apps 
 So weisen Sie eine App Gruppen mithilfe der Ein- und Ausschlusszuweisung zu:
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Wählen Sie im Menü **Intune** die Option **Client-Apps** aus.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+3. Wählen Sie im Bereich **Intune** **Client-Apps** aus.
 4. Wählen Sie im Bereich **Client-Apps** die Option **Apps** aus. Die Liste der hinzugefügten Apps wird angezeigt.
 5. Wählen Sie die App aus, die zugewiesen werden soll. In einem Dashboard werden Informationen zu der App angezeigt. 
 6. Wählen Sie im Abschnitt **Verwalten** des Menüs **Zuweisungen** aus. 
@@ -76,7 +75,7 @@ So weisen Sie eine App Gruppen mithilfe der Ein- und Ausschlusszuweisung zu:
 
 Wenn Sie Gruppenzuweisungen vornehmen, können Gruppen, die bereits zugewiesen wurden, nicht geändert werden. Wenn Sie eine derzeit deaktivierte Gruppe auswählen möchten, entfernen Sie zuerst die App aus der „Zugewiesen“-Liste der App. 
 
-Um Zuweisungen zu bearbeiten, wählen Sie in der App-**Zuweisungen**-Liste die Zeile mit der jeweiligen Zuweisung aus, die Sie ändern möchten. Sie können eine Zuweisung auch entfernen, indem Sie die Auslassungspunkte (**...**) am Ende einer Zeile und dann **Entfernen** auswählen. Um die Ansicht der Liste **Zuweisungen** zu ändern, gruppieren Sie nach **Zuweisungstyp** oder **Eingeschlossen/Ausgeschlossen**.
+Um Zuweisungen zu bearbeiten, wählen Sie in der App-**Zuweisungen**-Liste die Zeile mit der jeweiligen Zuweisung aus, die Sie ändern möchten. Sie können eine Zuweisung auch entfernen, indem Sie die Auslassungspunkte ( **...** ) am Ende einer Zeile und dann **Entfernen** auswählen. Um die Ansicht der Liste **Zuweisungen** zu ändern, gruppieren Sie nach **Zuweisungstyp** oder **Eingeschlossen/Ausgeschlossen**.
 
 ![Intune-App-Zuweisungen – Abschluss](./media/apps-inc-exl-05.png)
 

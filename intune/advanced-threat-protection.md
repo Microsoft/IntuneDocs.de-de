@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a53ae7f43f135f7316b665672dc410812ef14d08
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050136"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374085"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Erzwingen der Konformität für Windows Defender ATM mit bedingtem Zugriff in Intune
 
@@ -83,7 +83,7 @@ Sobald sie ein Gerät über das Konfigurationspaket integrieren, müssen Sie die
 
 ### <a name="create-the-configuration-profile"></a>Erstellen des Konfigurationsprofils
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 3. Geben Sie einen **Namen** und eine **Beschreibung** ein.
 4. Wählen Sie unter **Plattform** die Option **Windows 10 und höher** aus.
@@ -105,11 +105,11 @@ Sobald sie ein Gerät über das Konfigurationspaket integrieren, müssen Sie die
 ## <a name="create-the-compliance-policy"></a>Erstellen der Konformitätsrichtlinie
 Die Konformitätsrichtlinie legt eine akzeptable Risikostufe für ein Gerät fest.
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Wählen Sie **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** aus.
 3. Geben Sie einen **Namen** und eine **Beschreibung** ein.
 4. Wählen Sie unter **Plattform** die Option **Windows 10 und höher** aus.
-5. Legen Sie in den Einstellungen für **Windows Defender ATP** für **Require the device to be at or under the machine risk score (Anfordern, dass das Gerät höchstens das angegebene Computerrisiko aufweist)** die bevorzugte Stufe fest: Bedrohungsstufenklassifizierungen werden [von Windows Defender ATP bestimmt](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
+5. Legen Sie in den Einstellungen für **Windows Defender ATP** für **Require the device to be at or under the machine risk score (Anfordern, dass das Gerät höchstens das angegebene Computerrisiko aufweist)** die bevorzugte Stufe fest: Bedrohungsstufenklassifizierungen werden [von Windows Defender ATP bestimmt](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection).
 
    - **Löschen**: Diese Stufe ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet. (Windows Defender ATP verwendet den Wert *Sicher*.)
    - **Niedrig:** Das Gerät ist konform, wenn nur Bedrohungen auf niedriger Stufe vorliegen. Geräte mit mittleren oder hohen Bedrohungsstufen sind nicht konform.
@@ -120,7 +120,7 @@ Die Konformitätsrichtlinie legt eine akzeptable Risikostufe für ein Gerät fes
 
 ## <a name="assign-the-policy"></a>Zuweisen der Richtlinie
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Wählen Sie **Gerätekonformität** > **Richtlinien** und Ihre Windows Defender ATP-Konformitätsrichtlinie aus.
 3. Wählen Sie **Zuweisungen** aus.
 4. Schließen Sie Ihre Azure AD-Gruppen ein- oder aus, um ihnen die Richtlinie zuzuweisen.
@@ -153,7 +153,7 @@ Die Richtlinie für bedingten Zugriff blockiert den Zugriff auf Ressourcen, *wen
 ## <a name="monitor-device-compliance"></a>Überwachen der Gerätekonformität
 Überwachen Sie als Nächstes den Status von Geräten, auf die die Windows Defender ATP-Konformitätsrichtlinie angewandt wird.
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Wählen Sie **Gerätekompatibilität** > **Richtlinienkompatibilität** aus.
 3. Suchen Sie Ihre Windows Defender ATP-Richtlinie in der Liste, und sehen Sie, welche Geräte konform bzw. nicht konform sind.
 

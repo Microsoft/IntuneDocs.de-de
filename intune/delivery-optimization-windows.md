@@ -14,12 +14,12 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: d927c886bbb3f82c18d5873a86fc427d00d96337
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4190d84fda46e4be3cdc4c4f7bfe4ac8a1852ebc
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042636"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373948"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Übermittlungsoptimierungseinstellungen in Microsoft Intune
 
@@ -36,7 +36,7 @@ Weitere Informationen zur Übermittlungsoptimierung unter Windows 10 finden Sie
 > **Softwareupdates – Windows 10-Updateringe** wird durch die Einstellungen für **Übermittlungsoptimierung** ersetzt. Ihre vorhandenen Updateringe können zur Verwendung der Einstellungen für die **Übermittlungsoptimierung** geändert werden. [Wechseln vorhandener Updateringe zur Übermittlungsoptimierung](#move-existing-update-rings-to-delivery-optimization) (in diesem Artikel) 
 ## <a name="create-the-profile"></a>Erstellen des Profils
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie anschließend **Intune** aus.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 
 2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 

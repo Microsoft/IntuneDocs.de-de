@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 803d556150d60d0a3d60ec03c029d65f0f935f67
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045291"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412697"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Senden von Daten an den Speicher, an Event Hubs oder Log Analytics in Intune (Vorschauversion)
 
@@ -53,7 +53,7 @@ Je nachdem, wohin Sie die Überwachungsprotokolldaten weiterleiten möchten, ben
 
 ## <a name="send-logs-to-azure-monitor"></a>Senden von Protokollen an Azure Monitor
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com/) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie anschließend **Intune** aus.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Wählen Sie unter **Überwachung** die Option **Diagnoseeinstellungen**. Aktivieren Sie beim ersten Öffnen diese Option:
 
     ![Aktivieren der Diagnoseeinstellungen in Intune, um die Protokolle an Azure Monitor zu senden](media/diagnostics-settings-turn-on.png)
@@ -101,7 +101,7 @@ Sie können die Überwachungsprotokolle auch in andere Bereiche von Intune expor
 
 So exportieren Sie beispielsweise die Überwachungsprotokolle bei Verwendung von Gerätekonformität:
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com/) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie anschließend **Intune** aus.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Wählen Sie **Gerätekonformität** > **Überwachung** > **Überwachungsprotokolle** aus:
 
     ![Screenshot: Auswählen der Überwachungsprotokolle, um Intune-Daten an Azure Monitor-Speicher, -Event Hubs oder Analytics zu senden](media/audit-logs-under-monitor-in-compliance.png)
