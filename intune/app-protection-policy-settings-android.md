@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 05/30/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9f421a54319878c4f985ecc08252d4e03a00919
-ms.sourcegitcommit: 95572ed540e90471963833c0bbf71478477b1813
+ms.openlocfilehash: 79edbf77f4f6b188d9fa4bf75ce8cacbad9dcf9c
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66270007"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402777"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Einstellungen für App-Schutzrichtlinien in Microsoft Intune
 In diesem Artikel werden die Einstellungen für App-Schutzrichtlinien für Android-Geräte beschrieben. Die beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Einstellungen** für eine Schutzrichtlinie [konfiguriert](app-protection-policies.md) werden.
@@ -36,7 +36,7 @@ Es gibt drei Kategorien von Richtlinieneinstellungen: Datenschutzeinstellungen, 
 | Einstellung | Verwendung | Standardwert |
 |------|------|------|
 | **Organisationsdaten in Android-Sicherungsdiensten sichern** | Wählen Sie **Block** (Blockieren) aus, um zu verhindern, dass diese App Geschäfts-, Schul- oder Unidaten im [Android-Sicherungsdienst](https://developer.android.com/google/backup/index.html) sichert.<br><br> Wählen Sie **Allow** (Zulassen) aus, um dieser App zu erlauben, Geschäfts-, Schul- oder Unidaten zu sichern.| **Zulassen** |
-| **Organisationsdaten an andere Apps senden** | Geben Sie an, welche Apps Daten von dieser App empfangen können: <ul><li> **Richtlinienverwaltete Apps**: Hiermit werden Datenübertragungen nur an andere richtlinienverwaltete Apps zugelassen.</li> <li>**Alle Apps**: Hiermit werden Datenübertragungen an alle Apps zugelassen. </li> <li>**Keine**: Hiermit werden keine Datenübertragungen an Apps zugelassen, auch nicht an andere richtlinienverwaltete Apps.</li></ul> <p>Es gibt einige ausgenommene Apps und Dienste, für die Intune möglicherweise die Datenübertragung zulässt. Darüber hinaus können Sie Ihre eigenen Ausnahmen erstellen, wenn Sie zulassen müssen, dass Daten an eine App übertragen werden, welche die Intune-App nicht unterstützt. Weitere Informationen finden Sie im Artikel mit den [Datenübertragungsausnahmen](app-protection-policy-settings-android.md#data-transfer-exemptions).<p>Diese Richtlinie gilt möglichweise auch für Android-App-Links.  Allgemeine Weblinks werden von der Richtlinieneinstellung **App-Links in Intune Managed Browser öffnen** verwaltet.<p>**Hinweis:** *Intune unterstützt das Android Instant Apps-Feature derzeit nicht. Intune blockiert jegliche Datenbankverbindungen mit der App. Weitere Informationen finden Sie in der Dokumententation für Android-Entwickler unter [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html).*</p>| **All apps** | 
+| **Organisationsdaten an andere Apps senden** | Geben Sie an, welche Apps Daten von dieser App empfangen können: <ul><li> **Richtlinienverwaltete Apps**: Hiermit werden Datenübertragungen nur an andere richtlinienverwaltete Apps zugelassen.</li> <li>**Alle Apps**: Hiermit werden Datenübertragungen an alle Apps zugelassen. </li> <li>**Keine**: Hiermit werden keine Datenübertragungen an Apps zugelassen, auch nicht an andere richtlinienverwaltete Apps.</li></ul> <p>Es gibt einige ausgenommene Apps und Dienste, für die Intune möglicherweise die Datenübertragung zulässt. Darüber hinaus können Sie Ihre eigenen Ausnahmen erstellen, wenn Sie zulassen müssen, dass Daten an eine App übertragen werden, welche die Intune-App nicht unterstützt. Weitere Informationen finden Sie im Artikel mit den [Datenübertragungsausnahmen](app-protection-policy-settings-android.md#data-transfer-exemptions).<p>Diese Richtlinie gilt möglichweise auch für Android-App-Links.  Allgemeine Weblinks werden von der Richtlinieneinstellung **App-Links in Intune Managed Browser öffnen** verwaltet.<p><div class="NOTE"><p>Hinweis</p><p>Intune unterstützt das Android Instant Apps-Feature derzeit nicht. Intune blockiert jegliche Datenbankverbindungen mit der App. Weitere Informationen finden Sie in der Dokumententation für Android-Entwickler unter [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html).</p><p>Wenn **Organisationsdaten an andere Apps senden** auf **Alle Apps** konfiguriert ist, können Textdaten weiterhin per Betriebssystemfreigabe in die Zwischenablage übertragen werden.</p></div> | **All apps** | 
 |<ul><ui> **Wählen Sie die Apps aus, die ausgenommen werden sollen.** | Diese Option ist dann verfügbar, wenn Sie die vorherige Option auf *Richtlinienverwaltete Apps* festgelegt haben. | |
 | **Daten von anderen Apps empfangen** | Geben Sie an, welche Apps Daten an diese App übertragen können: <ul><li>**Richtlinienverwaltete Apps**: Hiermit werden Datenübertragungen nur aus anderen richtlinienverwalteten Apps zugelassen.</li><li>**Alle Apps:** Hiermit werden Datenübertragungen aus allen Apps zugelassen.</li><li>**Keine**: Hiermit werden keine Datenübertragungen aus Apps zugelassen, auch nicht aus anderen richtlinienverwalteten Apps. </li></ul> <p>Es gibt einige ausgenommene Apps und Dienste von denen Intune möglicherweise die Datenübertragung zulässt. Unter [Data transfer exemptions (Ausnahmen bei der Datenübertragung)](app-protection-policy-settings-android.md#data-transfer-exemptions) finden Sie eine vollständige Liste der Apps und Dienste. | **All apps** |
 | **Kopieren von Organisationsdaten speichern** | Klicken Sie auf **Block** (Blockieren), um die Verwendung der Option „Speichern unter“ in dieser App zu deaktivieren. Klicken Sie auf **Allow** (Zulassen), wenn die Verwendung von „Speichern unter“ zulässig sein soll. **Hinweis:** *Diese Einstellung wird für Microsoft Excel, OneNote, PowerPoint und Word unterstützt. Sie wird möglicherweise auch von Drittanbietern und LOB-Apps unterstützt.*| **Zulassen** |  

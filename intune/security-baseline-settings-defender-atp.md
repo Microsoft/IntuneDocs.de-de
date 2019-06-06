@@ -5,7 +5,7 @@ description: Von Intune unterstützte Einstellungen für Sicherheitsbaselines zu
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,16 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f96393e0d6071b1b56700e954714324b01ffcf25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040740"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373496"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-Baselineeinstellungen für Intune
 
 Zeigen Sie die Baselineeinstellungen für Microsoft Defender Advanced Threat Protection (früher Windows Defender Advanced Threat Protection) an, die von Microsoft Intune unterstützt werden. Die Standardwerte in diesem Artikel stellen die Baseline-Standardkonfiguration für Intune dar. Diese Standardwerte sind die empfohlene Konfiguration für Intune und entsprechen möglicherweise nicht den Windows-Standardwerten.
+
+  Die Microsoft Defender Advanced Threat Protection-Baseline ist verfügbar, wenn Ihre Umgebung den Anforderungen zur Verwendung von [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) entspricht.
+
+
+
 
 > [!NOTE]  
 > Die WDATP-Baselineeinstellungen sind derzeit in der **Vorschauversion**. Während der Vorschauphase entspricht die Liste der verfügbaren Einstellungen und die Reihenfolge, in der sie darin angezeigt werden,möglicherweise nicht den im Portal verfügbaren Inhalten. 

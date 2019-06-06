@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 05/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4edf6e1e2b0ed57ec221e445bc171895fb9e0072
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b9d3cd7dfb28d26451da95861fe9a3011c2556b1
+ms.sourcegitcommit: f90cba0b2c2672ea733052269bcc372a80772945
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042669"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66454033"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Nur-Anwendung-Authentifizierung von Intune Data Warehouse
 
@@ -92,10 +92,11 @@ Erstellen Sie mit Visual Studio ein Konsolen-App (.NET Framework)-Projekt, das .
 2.  Wählen Sie auf der linken Seite **Visual C#** aus, um alle .NET Framework-Projekte anzuzeigen.
 3.  Wählen Sie **Konsolen-App (.NET Framework)** aus, fügen Sie einen Anwendungsnamen hinzu, und klicken Sie dann auf **OK**, um die App zu erstellen.
 4.  Wählen Sie im **Projektmappen-Explorer** die Option **Program.cs** aus, um den Code anzuzeigen.
-5.  Wählen Sie im Popupmenü **Hinzufügen** > **Neues Element** aus. Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
-6.  Wählen Sie auf der linken Seite unter **Visual C#** die Option **Code** aus.
-7.  Wählen Sie **Klasse** aus, ändern Sie den Namen der Klasse in *IntuneDataWarehouseClass.cs*, und klicken Sie auf **Hinzufügen**.
-8.  Fügen Sie in der Methode <code>Main</code> den folgenden Code hinzu:
+5.  Fügen Sie im Projektmappen-Explorer einen Verweis auf die Assembly `System.Configuration` hinzu.
+6.  Wählen Sie im Popupmenü **Hinzufügen** > **Neues Element** aus. Das Dialogfeld **Neues Element hinzufügen** wird angezeigt.
+7.  Wählen Sie auf der linken Seite unter **Visual C#** die Option **Code** aus.
+8.  Wählen Sie **Klasse** aus, ändern Sie den Namen der Klasse in *IntuneDataWarehouseClass.cs*, und klicken Sie auf **Hinzufügen**.
+9.  Fügen Sie in der Methode <code>Main</code> den folgenden Code hinzu:
 
     ``` csharp
          var applicationId = ConfigurationManager.AppSettings["appId"].ToString();
@@ -110,7 +111,7 @@ Erstellen Sie mit Visual Studio ein Konsolen-App (.NET Framework)-Projekt, das .
                  new SecureClientSecret(applicationSecret))).Result;
     ``` 
 
-9. Fügen Sie zusätzliche Namespaces hinzu, indem Sie am Anfang der Codedatei den folgenden Code hinzufügen:
+10. Fügen Sie zusätzliche Namespaces hinzu, indem Sie am Anfang der Codedatei den folgenden Code hinzufügen:
 
     ``` csharp
      using System.Security;
@@ -118,7 +119,7 @@ Erstellen Sie mit Visual Studio ein Konsolen-App (.NET Framework)-Projekt, das .
      using System.Configuration;
     ``` 
 
-10. Fügen Sie hinter der Methode <code>Main</code> die folgende private Methode zum Verarbeiten und Konvertieren des App-Schlüssels hinzu:
+11. Fügen Sie hinter der Methode <code>Main</code> die folgende private Methode zum Verarbeiten und Konvertieren des App-Schlüssels hinzu:
 
     ``` csharp
     private static SecureString ConvertToSecureStr(string appkey)
@@ -136,10 +137,10 @@ Erstellen Sie mit Visual Studio ein Konsolen-App (.NET Framework)-Projekt, das .
     }
     ```
 
-11. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und wählen Sie dann **NuGet-Pakete verwalten** aus.
-12. Suchen Sie nach *Microsoft.IdentityModel.Clients.ActiveDirectory*, und installieren Sie das zugehörige Microsoft NuGet-Paket.
-13. Wählen Sie im **Projektmappen-Explorer** die Datei *App.config* aus, und öffnen Sie sie.
-14. Fügen Sie den Abschnitt <code>appSettings</code> hinzu, damit der XML-Code wie folgt aussieht:
+12. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **Verweise**, und wählen Sie dann **NuGet-Pakete verwalten** aus.
+13. Suchen Sie nach *Microsoft.IdentityModel.Clients.ActiveDirectory*, und installieren Sie das zugehörige Microsoft NuGet-Paket.
+14. Wählen Sie im **Projektmappen-Explorer** die Datei *App.config* aus, und öffnen Sie sie.
+15. Fügen Sie den Abschnitt <code>appSettings</code> hinzu, damit der XML-Code wie folgt aussieht:
 
     ``` xml
     <?xml version="1.0" encoding="utf-8" ?>
@@ -155,8 +156,8 @@ Erstellen Sie mit Visual Studio ein Konsolen-App (.NET Framework)-Projekt, das .
     </configuration>
     ``` 
 
-15. Aktualisieren Sie die Werte <code>appId</code>, <code>appKey</code> und <code>tenantDomain</code>, damit diese mit den eindeutigen anwendungsbezogenen Werten übereinstimmen.
-16. Erstellen Sie Ihre App.
+16. Aktualisieren Sie die Werte <code>appId</code>, <code>appKey</code> und <code>tenantDomain</code>, damit diese mit den eindeutigen anwendungsbezogenen Werten übereinstimmen.
+17. Erstellen Sie Ihre App.
 
     >[!NOTE] 
     > Zusätzlichen Implementierungscode finden Sie unter [Intune Data Warehouse-Codebeispiel](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp ).

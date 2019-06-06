@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25a3acda374266a0fbd16feabde7787204555ea2
-ms.sourcegitcommit: 876719180e0d73b69fc053cf67bb8cc40b364056
+ms.openlocfilehash: 72b96714e8740fe4077583cfa5d9f148c2ee0908
+ms.sourcegitcommit: f41b22f65286a64a8002e2cbe80debfdd6692278
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66264171"
+ms.lasthandoff: 06/03/2019
+ms.locfileid: "66469589"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 
@@ -45,6 +45,13 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Auße
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-may-27-2019"></a>Woche vom 27. Mai 2019 
+
+### <a name="app-management"></a>App-Verwaltung
+
+#### <a name="reporting-for-potentially-harmful-apps-on-android-devices----4223162---"></a>Berichterstellung über potenziell schädlichen Apps auf Android-Geräten <!-- 4223162 -->
+Intune stellt jetzt zusätzliche Berichterstellungsinformationen über potenziell schädliche Apps auf Android-Geräten bereit. 
 
 ## <a name="week-of-may-20-2019"></a>Woche vom 20. Mai 2019 
 
@@ -134,7 +141,7 @@ Zum Anzeigen der verfügbaren Einstellungen wechseln Sie zu [App Store, Dokument
 Gilt für: iOS
 
 ####  <a name="microsoft-defender-advanced-threat-protection--baseline--preview------3754134---"></a>Microsoft Defender Advanced Threat Protection-Baseline (Vorschauversion)  <!--  3754134 -->
-Wir haben eine Vorschauversion der Sicherheitsbaseline für [Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md)-Einstellungen hinzugefügt.  
+Wir haben eine Vorschauversion der Sicherheitsbaseline für [Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md)-Einstellungen hinzugefügt. Diese Baseline ist verfügbar, wenn Ihre Umgebung den Anforderungen zur Verwendung von [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) entspricht.
 
 ### <a name="device-enrollment"></a>Geräteregistrierung
 
@@ -153,6 +160,14 @@ Wenn Sie **Alle Geräte** durchsuchen, müssen Sie in IMEI-Nummern keine Leerzei
 
 #### <a name="deleting-a-device-in-the-apple-portal-will-be-reflected-in-the-intune-portal---2489996---"></a>Das Löschen eines Geräts im Apple-Portal wird im Intune-Portal widergespiegelt <!--2489996 -->
 Wenn ein Gerät aus dem Programm zur Geräteregistrierung von Apple oder den Apple Business Manager-Portalen gelöscht wird, wird das Gerät bei der nächsten Synchronisierung automatisch aus Intune gelöscht.
+
+### <a name="the-enrollment-status-page-now-tracks-win32-apps----2714451---"></a>Die Nachverfolgung auf der Seite zum Registrierungsstatus umfasst jetzt Win32-Apps <!-- 2714451 -->
+Dies gilt nur für Geräte mit Windows 10, Version 1903 und höher. Weitere Informationen finden Sie unter [Einrichten einer Statusseite für die Registrierung](windows-enrollment-status.md).
+
+### <a name="device-management"></a>Geräteverwaltung
+
+#### <a name="reset-and-wipe-devices-in-bulk-by-using-the-graph-api----3295288---"></a>Zurücksetzen von Geräten in einem Massenvorgang mithilfe der Graph-API <!-- 3295288 -->
+Mithilfe der Graph-API können Sie jetzt in einem Massenvorgang bis zu 100 Geräte zurücksetzen.
 
 
 ### <a name="monitor-and-troubleshoot"></a>Überwachung und Problembehandlung
@@ -227,7 +242,7 @@ Sie können Ihre Win32-Apps für die Installation auf in Intune registrierten, i
 Die Seite „Geräteübersicht“ zeigt den primären Benutzer (Affinität zwischen Benutzer und Gerät) an. Klicken Sie auf **Intune** > **Geräte** > **Alle Geräte**, und wählen Sie dann ein Gerät aus, um den primären Benutzer eines Geräts anzuzeigen. Der primäre Benutzer wird außerdem oben auf der Seite **Übersicht** angezeigt.
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Zusätzliche Berichterstellung für verwaltete Google Play-Apps für Android Enterprise-Arbeitsprofilgeräte <!-- 4105925  -->
-Sie können die Versionsnummer von auf Android Enterprise-Arbeitsprofilgeräten bereitgestellten, verwalteten Google Play-Apps anzeigen. Dies gilt nur für erforderliche Apps. Die gleiche Funktionalität wird in einem zukünftigen Release für verfügbare Apps bereitgestellt. 
+Sie können die Versionsnummer von auf Android Enterprise-Arbeitsprofilgeräten bereitgestellten, verwalteten Google Play-Apps anzeigen. Dies gilt nur für erforderliche Apps.  
 
 #### <a name="ios-third-party-keyboards----4111843-----"></a>Tastaturen von Drittanbietern für iOS <!-- 4111843   -->
 Die Intune APP-Unterstützung (App Protection Policy, App-Schutzrichtlinie) für die Einstellung **Tastaturen von Drittanbietern** für iOS wird aufgrund einer Änderung an der iOS-Plattform beendet. Sie können diese Einstellung in der Intune-Verwaltungskonsole nicht mehr konfigurieren, und sie wird auf dem Client im Intune App SDK nicht mehr erzwungen.
@@ -277,7 +292,7 @@ Gilt für: Vollständig verwaltete Android Enterprise-Geräte
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Prüfen nach einem TPM-Chipsatz in einer Windows 10-Gerätekonformitätsrichtlinie <!-- 3617671 -->
 
-Dieses Feature wurde verzögert und sollte in einem zukünftigen Release enthalten sein.
+Die Bereitstellung dieses Features verzögert sich und ist in einem zukünftigen Release geplant.
 
 #### <a name="updated-ui-changes-for-microsoft-edge-browser-on-windows-10-and-later-devices----3775833-----"></a>Änderungen der Benutzeroberfläche für den Microsoft Edge-Browser auf Geräten mit Windows 10 und höher <!-- 3775833   -->
 Wenn Sie ein Gerätekonfigurationsprofil erstellen, können Sie Microsoft Edge-Features auf Geräten mit Windows 10 und höher zulassen oder einschränken (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10 und höher** (Plattform) > **Geräteeinschränkungen** (Profiltyp) > **Microsoft Edge-Browser**). Die Microsoft Edge-Einstellungen werden in diesem Update besser beschrieben und sind einfacher zu verstehen. 
@@ -320,7 +335,7 @@ Die Standardtimeoutnachricht, die Benutzern angezeigt wird, wenn der im Profil f
 ### <a name="device-management"></a>Geräteverwaltung
 
 #### <a name="retire-noncompliant-devices-----1827291-----"></a>Ausmustern nicht konformer Geräte  <!-- 1827291   -->
-Die Bereitstellung dieses Features wurde verzögert und findet in einem zukünftigen Release statt.
+Die Bereitstellung dieses Features verzögert sich und ist in einem zukünftigen Release geplant.
 
 
 ### <a name="monitor-and-troubleshoot"></a>Überwachung und Problembehandlung
@@ -878,7 +893,7 @@ Innerhalb der nächsten Tage wird diese neue Hilfe- und Supportbenutzeroberfläc
 ### <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Bereichsmarkierungen für Apps <!-- 1081941 -->
-Sie können Bereichsmarkierungen erstellen, um den Zugriff für Rollen und Apps einzuschränken. Sie können einer App eine Bereichsmarkierung hinzufügen, sodass nur Benutzer mit der gleichen Bereichsmarkierung wie die App auf diese zugreifen können. Derzeit können Apps, die Intune über den verwalteten Google Play Store hinzugefügt wurden oder die mithilfe des Apple Volume Purchase Program (VPP) erworben wurden, keine Bereichsmarkierungen hinzugefügt werden (Unterstützung dafür wird jedoch bald verfügbar sein). Weitere Informationen finden Sie unter [Use scope tags to filter policies (Verwenden von Bereichsmarkierungen zum Filtern von Richtlinien)](scope-tags.md).
+Sie können Bereichsmarkierungen erstellen, um den Zugriff für Rollen und Apps einzuschränken. Sie können einer App eine Bereichsmarkierung hinzufügen, sodass nur Benutzer mit der gleichen Bereichsmarkierung wie die App auf diese zugreifen können. Derzeit können Apps, die Intune über den verwalteten Google Play Store hinzugefügt wurden oder die mithilfe des Apple Volume Purchase Program (VPP) erworben wurden, keine Bereichsmarkierungen hinzugefügt werden (zukünftige Unterstützung dafür ist geplant). Weitere Informationen finden Sie unter [Use scope tags to filter policies (Verwenden von Bereichsmarkierungen zum Filtern von Richtlinien)](scope-tags.md).
 
 <!-- ########################## -->
 ## <a name="week-of-december-10-2018"></a>Woche des 10. Dezember 2018
@@ -908,7 +923,7 @@ Für Intune ist jetzt macOS Version 10.12 oder höher erforderlich. Geräte mit 
 Sie können beliebige unternehmenseigene überwachte iOS-Geräte entfernen. Sie können eine beliebige App entfernen, indem Sie entweder Benutzer- oder Gerätegruppen mit dem Zuweisungstyp **Deinstallieren** als Ziel verwenden. Für persönliche oder nicht überwachte iOS-Geräte können weiterhin nur Apps entfernt werden, die mit Intune installiert wurden.
 
 #### <a name="downloading-intune-win32-app-content----2617320---"></a>Herunterladen von Intune Win32-App-Inhalten <!-- 2617320 -->
-Clients von Windows 10 RS3 und höher laden Intune Win32-App-Inhalte mit einer Komponente zur Übermittlungsoptimierung auf den Windows 10-Client herunter. Die Übermittlungsoptimierung bietet Peer-zu-Peer-Funktionen, die standardmäßig eingeschaltet sind. Die Übermittlungsoptimierung kann mit einer Gruppenrichtlinie und in der Zukunft über Intune MDM konfiguriert werden. Weitere Informationen finden Sie unter [Übermittlungsoptimierung für Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+Clients von Windows 10 RS3 und höher laden Intune Win32-App-Inhalte mit einer Komponente zur Übermittlungsoptimierung auf den Windows 10-Client herunter. Die Übermittlungsoptimierung bietet Peer-zu-Peer-Funktionen, die standardmäßig eingeschaltet sind. Die Übermittlungsoptimierung kann derzeit mit einer Gruppenrichtlinie konfiguriert werden. Weitere Informationen finden Sie unter [Übermittlungsoptimierung für Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 
 #### <a name="end-user-device-and-app-content-menu----2771453---"></a>Endbenutzergerät und App-Inhaltsmenü <!-- 2771453 -->
 Endbenutzer können jetzt über das Kontextmenü auf Geräten und in Apps häufig verwendete Aktionen auslösen, z.B. das Umbenennen eines Geräts oder die Prüfung der Konformität.

@@ -1,7 +1,7 @@
 ---
 title: 'Hinzufügen von benutzerdefinierten Einstellungen für iOS-Geräte in Microsoft Intune: Azure | Microsoft-Dokumentation'
 titleSuffix: ''
-description: Exportieren Sie iOS-Einstellungen aus Apple Configurator oder dem Apple-Profil-Manager, und importieren Sie diese Einstellungen in Microsoft Intune. Diese Einstellungen können benutzerdefinierte Einstellungen und Features auf iOS-Geräten erstellen, verwenden und steuern. Dieses benutzerdefinierte Profil kann dann iOS-Geräten in Ihrer Organisation zugewiesen oder an diese verteilt werden, um eine Baseline oder einen Standard zu erstellen.
+description: Exportieren Sie iOS-Einstellungen aus Apple Configurator oder dem Apple-Profil-Manager, und importieren Sie diese Einstellungen in Microsoft Intune. Über diese Einstellungen können benutzerdefinierte Einstellungen und Features auf iOS-Geräten erstellt, verwendet und gesteuert werden. Dieses benutzerdefinierte Profil kann dann iOS-Geräten in Ihrer Organisation zugewiesen oder an diese verteilt werden, um eine Baseline oder einen Standard zu erstellen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6bfd832d9225221bcc6aaefe091a3cebf57a54c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9637cc36d6ee901b5da0ffbe44180cd7dbdaffee
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048623"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373992"
 ---
 # <a name="use-custom-settings-for-ios-devices-in-microsoft-intune"></a>Verwenden benutzerdefinierter Einstellungen für iOS-Geräte in Microsoft Intune
 
@@ -51,7 +51,7 @@ In diesem Artikel erfahren Sie, wie Sie ein benutzerdefiniertes Profil für iOS-
 
 ## <a name="create-the-profile"></a>Erstellen des Profils
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie dann **Microsoft Intune** aus.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 3. Legen Sie folgende Einstellungen fest:
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 05/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: feb2bda30547779680a001b3c598b54d236f70ed
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0e4d5c23d598641256c196cd7217797f87f99d1c
+ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045100"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66374130"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Erstellen einer Windows 10-Sicherheitsbaseline in Intune
 
@@ -54,7 +54,8 @@ Die folgenden Sicherheitsbaselines können für Intune verwendet werden.
   [Anzeigen der Einstellungen](security-baseline-settings-windows.md)
 
 - **VORSCHAU: Windows Defender ATP-Baseline**  
-  [Anzeigen der Einstellungen](security-baseline-settings-defender-atp.md)
+  [Anzeigen der Einstellungen](security-baseline-settings-defender-atp.md)  
+  *(Diese Baseline ist verfügbar, wenn Ihre Umgebung den Anforderungen zur Verwendung von [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) entspricht)* .
 
 
 ## <a name="prerequisites"></a>Voraussetzungen
@@ -73,7 +74,8 @@ Wenn Sie gemeinsam verwaltete Geräte verwenden, müssen Sie die **Gerätekonfig
 
     ![Auswählen einer Sicherheitsbaseline zum Konfigurieren](./media/security-baselines/available-baselines.png)
 
-
+   >[!TIP]  
+   > Die Windows Defender ATP-Baseline ist verfügbar, wenn Ihre Umgebung den Anforderungen zur Verwendung von [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) entspricht.
 2. Wählen Sie die Baseline, die Sie verwenden möchten, und dann **Profil erstellen** aus.  
 
 3. Geben Sie auf der Registerkarte **Grundlagen** die folgenden Eigenschaften an:

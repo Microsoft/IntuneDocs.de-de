@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73d6aab271e6c065dbdaac2359974457d8fae607
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7dc28a614514bf9b1a4987976cb057529b75a5fc
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050560"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412004"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Hinzufügen und Verwenden von WLAN-Einstellungen auf Microsoft Intune-Geräten
 
@@ -48,7 +48,7 @@ WLAN-Profile unterstützen folgende Geräteplattformen:
 
 ## <a name="create-a-device-profile"></a>Erstellen eines Geräteprofils
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie anschließend **Microsoft Intune** aus. 
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 3. Geben Sie einen **Namen** und eine **Beschreibung** für das WLAN-Profil ein.
 4. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die die WLAN-Einstellungen angewendet werden sollen. Folgende Optionen sind verfügbar:

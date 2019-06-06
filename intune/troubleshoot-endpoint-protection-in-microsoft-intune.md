@@ -1,11 +1,11 @@
 ---
-title: Behandeln von Problemen mit Endpoint Protection in Intune – Azure | Microsoft-Dokumentation
-description: Lösen Sie Probleme, während Sie den Endpunktschutz von Microsoft Intune verwenden.
+title: Häufige Endpoint Protection-Meldungen in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Häufige Meldungen und mögliche Lösungen bei der Verwendung von und Problembehandlung für Endpoint Protection und Windows Defender in Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 05/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,36 +17,70 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec655a53018c2e45d1cb771c1ce9c0aad376b2b1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a4f749ab85d283ed9743d227476f8229dc1cf7c3
+ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040150"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402645"
 ---
-# <a name="troubleshoot-endpoint-protection-in-intune"></a>Beheben von Problemen mit Endpoint Protection in Intune
+# <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Endpoint Protection-Probleme und mögliche Lösungen in Microsoft Intune
 
-Diese Informationen helfen Ihnen, Probleme bei der Verwendung von Endpoint Protection zu beheben. Sie können auch [die Ereignisprotokolle und Fehlercodes überprüfen, um Probleme mit Windows Defender Antivirus zu behandeln](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
+Dieser Artikel beschreibt mögliche Ursachen und Lösungen für die einige Fehler und Warnungen. Diese Informationen helfen Ihnen, Probleme bei der Verwendung von Endpoint Protection zu beheben.
 
-Wenn Sie weitere Hilfe benötigen, können Sie auch [Support für Microsoft Intune](get-support.md) anfordern.
+## <a name="windows-defender-error-codes"></a>Windows Defender-Fehlercodes
 
-### <a name="error-messages"></a>Fehlermeldungen
-Dieser Abschnitt beschreibt mögliche Ursachen und Lösungen für die folgenden Fehler und Warnungen.
+Überprüfen Sie die Ereignisprotokolle und Fehlercodes, um [Probleme mit Windows Defender Antivirus zu behandeln](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
 
-|Angezeigter Status|Mögliche Ursachen|Mögliche Lösungen|
-|---------------|--------------------|-----------------------|
-|**Die Endpoint Protection-Engine ist nicht verfügbar**|Die Endpoint Protection-Engine von Intune wurde beschädigt oder gelöscht.|Wenn die Endpoint Protection-Engine von Intune beschädigt ist, können Sie versuchen, die Software zu aktualisieren oder neu zu installieren.<br /><br />Klicken Sie zum Erzwingen eines sofortigen Updates in der Endpoint Protection-Clientsoftware auf **Update** (auf verwalteten Computern auf der Taskleiste).<br /><br />Wenn die Engine nicht aktualisiert werden kann, müssen Sie die Endpoint Protection-Engine erneut installieren.<br /><br />Suchen Sie in der Liste der installierten Programme in der Systemsteuerung auf dem verwalteten Computer nach **Microsoft Intune Endpoint Protection-Agent**, und deinstallieren Sie die Anwendung.<br /><br />Während der nächsten Updatesynchronisierung wird das fehlende Programm von Microsoft Online Management Update Manager erkannt und zum geplanten Installationszeitpunkt neu installiert.|
-|**Endpoint Protection ist deaktiviert**|Intune Endpoint Protection wurde durch einen Administrator mithilfe eines Konfigurationsprofils oder durch einen Benutzer auf einem verwalteten Computer deaktiviert.|Aktivieren Sie Endpoint Protection. Lesen Sie hierzu [Festlegen von Endpoint Protection-Einstellungen](endpoint-protection-configure.md) in Intune, oder [aktivieren Sie Windows Defender für den Zugriff auf Unternehmensressourcen](/intune-user-help/turn-on-defender-windows).|
-|**Echtzeitschutz wurde deaktiviert**|Auf einem verwalteten Computer wurde der Echtzeitschutz durch einen Administrator mithilfe eines Profils oder durch einen Benutzer auf einem verwalteten Computer deaktiviert.|Aktivieren Sie Endpoint Protection. Lesen Sie hierzu die Informationen zu [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune, oder [aktivieren Sie den Echtzeitschutz für den Zugriff auf Unternehmensressourcen](/intune-user-help/turn-on-defender-windows). |
-|**Download-Überprüfung deaktiviert**|Die Downloadüberprüfung wurde von einem Administrator mithilfe eines Profils oder von einem Benutzer auf einem verwalteten Computer deaktiviert.|Aktivieren Sie die Überprüfung. Lesen Sie hierzu die Informationen zu [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune, oder [aktivieren Sie den Echtzeitschutz für den Zugriff auf Unternehmensressourcen](/intune-user-help/turn-on-defender-windows). |
-|**Datei- und Programmaktivitätsüberwachung deaktiviert**|Die Datei- und Programmaktivitätsüberwachung wurde von einem Administrator mithilfe eines Profils oder von einem Benutzer auf einem verwalteten Computer deaktiviert.|Aktivieren Sie die Datei- und Programmaktivität. Lesen Sie hierzu die Informationen zu [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune, oder [aktivieren Sie den Echtzeitschutz für den Zugriff auf Unternehmensressourcen](/intune-user-help/turn-on-defender-windows). |
-|**Verhaltensüberwachung deaktiviert**|Die Verhaltensüberwachung wurde von einem Administrator mithilfe eines Profils oder von einem Benutzer auf einem verwalteten Computer deaktiviert.|Aktivieren Sie die Verhaltensüberwachung. Lesen Sie hierzu die Informationen zu [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune, oder [aktivieren Sie den Echtzeitschutz für den Zugriff auf Unternehmensressourcen](/intune-user-help/turn-on-defender-windows). |
-|**Skriptüberprüfung deaktiviert**|Die Skriptüberprüfung wurde von einem Administrator mithilfe eines Profils oder von einem Benutzer auf einem verwalteten Computer deaktiviert.|Aktivieren Sie die Skriptüberprüfung. Lesen Sie hierzu die Informationen zu [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune, oder [aktivieren Sie den Echtzeitschutz für den Zugriff auf Unternehmensressourcen](/intune-user-help/turn-on-defender-windows). |
-|**Netzwerkinspektionssystem deaktiviert**|Das Netzwerkinspektionssystem wurde durch einen Administrator mithilfe eines Profils oder von einem Benutzer auf einem verwalteten Computer deaktiviert.|Aktivieren Sie das Netzwerkinspektionssystem (NIS). Lesen Sie hierzu die Informationen zu [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) in Intune, oder [aktivieren Sie den Echtzeitschutz für den Zugriff auf Unternehmensressourcen](/intune-user-help/turn-on-defender-windows). |
-|**Malwaredefinitionen sind veraltet**|Möglicherweise war der Computer über einen längeren Zeitraum vom Internet getrennt, sodass seine Malwaredefinitionen länger nicht aktualisiert worden sind. Dieser Status wird angezeigt, wenn die Malwaredefinitionen auf dem Computer mehr als 14 Tage veraltet sind.|Wenn Schadsoftwaredefinitionen veraltet sind, können Sie die Definitionen mit [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) aktualisieren.|
-|**Vollständige Überprüfung ist überfällig**|Seit 14 Tagen wurde keine vollständige Überprüfung ausgeführt. Ursache hierfür kann ein Neustart des Computers während einer vollständigen Überprüfung sein.|Wenn eine vollständige Überprüfung überfällig ist, können Sie eine einmalige vollständige Überprüfung ausführen oder wiederholte vollständige Überprüfungen planen. Weitere Informationen finden Sie unter [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus). |
-|**Schnellüberprüfung ist überfällig**|Seit 14 Tagen wurde keine Schnellüberprüfung ausgeführt. Ursache hierfür kann ein Neustart während einer Schnellüberprüfung sein.|Wenn eine Schnellüberprüfung überfällig ist, können Sie eine einmalige Schnellüberprüfung ausführen oder wiederholte Schnellüberprüfungen planen. Weitere Informationen finden Sie unter [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).|
-|**Eine andere Endpunktschutzanwendung wird ausgeführt**|Eine andere Endpunktschutzanwendung wird ausgeführt, und der Computer befindet sich in einem fehlerfreien Zustand.|Wenn bereits eine andere Endpunktschutzanwendung installiert ist und Intune diese Anwendung erkennt, wird das Geräte möglicherweise instabil.|
+## <a name="common-intune-errors-and-possible-resolutions"></a>Häufige Intune-Fehler und mögliche Lösungen
 
-### <a name="next-steps"></a>Nächste Schritte
-Wenn Sie weitere Hilfe benötigen, können Sie auch [Support für Microsoft Intune](get-support.md) anfordern.
+#### <a name="endpoint-protection-engine-unavailable"></a>Die Endpoint Protection-Engine ist nicht verfügbar
+
+**Mögliche Ursache**: Die Endpoint Protection-Engine von Intune wurde beschädigt oder gelöscht.
+
+**Mögliche Lösungen**:
+
+- Wenn die Endpoint Protection-Engine beschädigt ist oder nicht aktualisiert wird, dann aktualisieren Sie das Programm, oder installieren Sie es neu.
+- Erzwingen Sie eine sofortige Aktualisierung. Wählen Sie im Endpoint Protection-Programm (wahrscheinlich in der Taskleiste) **Aktualisieren** aus.
+- Wählen Sie unter „Systemsteuerung“ > „Programme“ **Microsoft Intune Endpoint Protection-Agent** aus. Deinstallieren Sie die Anwendung.
+- Während der nächsten Updatesynchronisierung wird das fehlende Programm von Microsoft Online Management Update Manager erkannt und zum geplanten Installationszeitpunkt neu installiert.
+
+#### <a name="features-are-disabled"></a>Features sind deaktiviert
+
+Sie erhalten möglicherweise eine Meldung, dass einige Features deaktiviert wurden. Diese Meldungen können auftreten, wenn Intune Endpoint Protection oder Windows Defender mithilfe eines Konfigurationsprofils von einem Administrator deaktiviert wurden. Es ist auch möglich, dass die Deaktivierung von einem Endbenutzer auf dem Gerät durchgeführt wurde. Mögliche Meldungen:
+
+`Endpoint Protection disabled`  
+`Real-time protection disabled`  
+`Download scanning disabled`  
+`File and program activity monitoring disabled`  
+`Behavior monitoring disabled`  
+`Script scanning disabled`  
+`Network Inspection System disabled`  
+
+**Mögliche Lösungen**: Aktivieren Sie diese Features. Anleitungen finden Sie hier:
+
+- [Hinzufügen von Endpoint Protection-Einstellungen](endpoint-protection-configure.md)
+- [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus)
+- [Endbenutzer: Aktivieren von Echtzeitschutz zum Zugriff auf Unternehmensressourcen](/intune-user-help/turn-on-defender-windows)
+
+#### <a name="malware-definitions-out-of-date"></a>Malwaredefinitionen sind veraltet
+
+Dieser Status wird angezeigt, wenn die Malwaredefinitionen auf dem Gerät seit mehr als 14 Tagen nicht mehr auf dem neuesten Stand sind. Beispielsweise kann die Meldung angezeigt werden, wenn das Gerät nicht mit dem Internet verbunden ist oder die Malwaredefinitionen veraltet sind.
+
+**Mögliche Lösungen**: Wenn Malwaredefinitionen veraltet sind, können Sie die Definitionen mit [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus) aktualisieren.
+
+#### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Vollständige Überprüfung oder Schnellüberprüfung überfällig
+
+Es wurde seit 14 Tagen keine vollständige Überprüfung oder Schnellüberprüfung mehr durchgeführt. Dieses Szenario kann auftreten, wenn das Gerät während einer vollständigen Überprüfung neu gestartet wird.
+
+**Mögliche Lösungen**: Wenn eine Überprüfung überfällig ist, können Sie eine einmalige Überprüfung ausführen oder eine wiederholte Überprüfung planen. Weitere Informationen finden Sie unter [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
+
+#### <a name="another-endpoint-protection-application-running"></a>Eine andere Endpunktschutzanwendung wird ausgeführt
+
+Eine andere Endpoint Protection-Anwendung wird ausgeführt, und das Gerät befindet sich in einem fehlerfreien Zustand.
+
+**Mögliche Lösungen**: Wenn bereits eine andere Endpoint Protection-Anwendung installiert ist und Intune diese Anwendung erkennt, wird das Geräte möglicherweise instabil.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Fordern Sie [Hilfe beim Microsoft-Support](get-support.md) an, oder nutzen Sie die [Communityforen](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

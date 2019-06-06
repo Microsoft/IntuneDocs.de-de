@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/21/2019
+ms.date: 06/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,19 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fb3b02cd9d9b978f1de5e98634d647c4c81cde0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9884f1c5d794b527aeaf8fb522d9118d59468b3b
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041650"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506883"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Häufig gestellte Fragen zu MAM und App-Schutz
 
 Dieser Artikel beantwortet einige häufig gestellte Fragen zur mobilen Anwendungsverwaltung (Mobile Application Management, MAM) und zum App-Schutz in Intune.
 
 ## <a name="mam-basics"></a>Grundlagen zu MAM
-
 
 **Was ist MAM?**<br></br>
 Die [mobile Anwendungsverwaltung (Mobile Application Management, MAM) von Intune](/intune/app-lifecycle) bezeichnet die Intune-Verwaltungsfunktionen, mit denen Sie mobile Apps für Ihre Benutzer veröffentlichen, per Push bereitstellen, konfigurieren, schützen, überwachen und aktualisieren.
@@ -72,6 +71,13 @@ Jede App, die in das [Intune App SDK](/intune/app-sdk) integriert oder vom [Intu
 - Der Endbenutzer muss zu einer Sicherheitsgruppe gehören, für die eine App-Schutzrichtlinie gilt. Die gleiche App-Schutzrichtlinie muss für die verwendete App gelten. App-Schutzrichtlinien können in der Intune-Konsole im [Azure-Portal](https://portal.azure.com) erstellt und bereitgestellt werden. Sicherheitsgruppen können zurzeit im [Microsoft 365 Admin Center](https://admin.microsoft.com) erstellt werden.
 
 - Der Endbenutzer muss sich mit seinem AAD-Konto bei der App anmelden.
+
+**Was geschieht, wenn ich eine App mit Intune-App-Schutz aktivieren möchte, diese aber keine unterstützte App-Entwicklungsplattform verwendet?** 
+
+Das Intune SDK-Entwicklungsteam testet und unterstützt aktiv Apps, die mit dem nativen Android-, iOS- (Obj-C, Swift), Xamarin-, Xamarin.Forms- und Cordova-Plattformen erstellt wurden. Während einige Kunden das Intune SDK erfolgreich in andere Plattformen wie React Native und NativeScript integrieren konnten, bieten wir keine expliziten Anleitungen oder Plug-Ins für App-Entwickler, die andere als unsere unterstützten Plattformen verwenden.
+
+**Unterstützt das Intune App SDK die Microsoft Authentication Library (MSAL) oder soziale Konten?**<br></br>
+Das Intune App SDK verwendet erweiterte ADAL-Funktionen für die Erstanbieter- und Drittanbieterversionen des SDK. Deshalb ist die MSAL für viele Hauptszenarios wie die Authentifizierung beim Intune-App-Schutz-Dienst und der bedingte Start nicht gut geeignet. Da der allgemeine Leitfaden des Identity-Teams von Microsoft darin besteht, für alle Microsoft Office-Apps auf MSAL umzusteigen, wird das Intune SDK es letztlich unterstützen müssen, aber derzeit ist keine Unterstützung geplant.
 
 **Welche zusätzlichen Anforderungen gelten für die Verwendung der [mobilen Outlook-App](https://products.office.com/outlook)?**
 
@@ -164,8 +170,7 @@ Der Intune-App-Schutz basiert darauf, dass die Identität des Benutzers in der A
 **Gibt es eine sichere Möglichkeit, Weblinks in verwalteten Apps zu öffnen?**<br></br>
 Ja! Ein IT-Administrator kann eine App-Schutzrichtlinie für die [Intune Managed Browser-App](app-configuration-managed-browser.md) einrichten und bereitstellen, ein von Microsoft Intune entwickelter Webbrowser, der problemlos mit Intune verwaltet werden kann. Der IT-Administrator kann festlegen, dass alle Weblinks in über Intune verwaltete Apps mit der Managed Browser-App geöffnet werden müssen.
 
-**Unterstützt das Intune App SDK die Microsoft Authentication Library (MSAL) oder soziale Konten?**
-Das Intune App SDK verwendet erweiterte ADAL-Funktionen für die Erstanbieter- und Drittanbieterversionen des SDK. Deshalb ist die MSAL für viele Hauptszenarios wie die Authentifizierung beim Intune-App-Schutz-Dienst und der bedingte Start nicht gut geeignet. Eine Unterstützung ist derzeit nicht geplant.
+
 
 ## <a name="app-experience-on-android"></a>Apps unter Android
 
@@ -199,13 +204,13 @@ Die Überprüfungen im Rahmen der SafetyNet-API von Google Play Protect erforder
 Für die beiden Einstellungen „SafetyNet device attestation“ (SafetyNet-Gerätenachweis) und „Threat scan on apps“ (Apps auf Bedrohungen überprüfen) muss die von Google bestimmte Version von Google Play Services ordnungsgemäß funktionieren. Da diese Einstellungen in den Sicherheitsbereich fallen, werden die Endbenutzer blockiert, für die diese Einstellungen gelten, wenn diese nicht die entsprechende Version von Google Play Services verwenden oder keinen Zugriff auf Google Play Services haben. 
 
 ## <a name="app-experience-on-ios"></a>Apps unter iOS
-**Was geschieht, wenn ich einen Fingerabdruck oder ein Gesicht auf meinem Gerät hinzufüge oder entferne?**
+**Was geschieht, wenn ich einen Fingerabdruck oder ein Gesicht auf meinem Gerät hinzufüge oder entferne?**<br></br>
 Die Richtlinien für den Intune-App-Schutz ermöglichen es Ihnen, den App-Zugriff nur auf Benutzer mit Intune-Lizenz zu beschränken. Eine der Möglichkeiten, den Zugriff auf die App zu steuern, besteht darin, Apple Touch ID oder Face ID auf unterstützten Geräten zu erfordern. Intune implementiert ein Verhalten, bei dem Intune den Benutzer bei Änderungen an der biometrischen Datenbank des Geräts zur PIN-Eingabe auffordert, wenn der nächste Wert des Inaktivitätstimeouts erfüllt ist. Zu Änderungen an biometrischen Daten zählen das Hinzufügen oder Entfernen von Fingerabdrücken oder Gesichtern. Wenn der Intune-Benutzer keine PIN festgelegt hat, wird er zu einem Fenster für die Einrichtung einer Intune-PIN weitergeleitet.
  
 Durch diese Maßnahmen sollen die Daten Ihrer Organisation innerhalb der App und auf App-Ebene geschützt werden. Dieses Feature ist nur für iOS verfügbar und erfordert, dass das Intune App SDK für iOS, Version 9.0.1 oder höher in betreffende Anwendungen integriert wird. Die Integration des SDK ist erforderlich, damit das Verhalten für die Zielanwendungen erzwungen werden kann. Diese Integration erfolgt kontinuierlich und ist abhängig von den jeweiligen Anwendungsteams. Zu den betreffenden Apps zählen z.B. WXP, Outlook, Managed Browser und Yammer. 
   
 **Ich kann die iOS-Freigabeerweiterung verwenden, um Geschäfts-, Uni- oder Schuldaten in nicht verwalteten Apps zu öffnen, auch wenn die Datenübertragungsrichtlinie auf „nur verwaltete Apps“ oder „keine Apps“ festgelegt ist. Führt das nicht zu Datenlecks?**<br></br>
-Die Intune-App-Schutzrichtlinie kann die iOS-Freigabeerweiterung nicht steuern, ohne das Gerät zu verwalten. Daher _**verschlüsselt Intune „unternehmenseigene“ Daten, bevor diese außerhalb der App freigegeben werden**_. Sie können dies überprüfen, indem Sie versuchen, die „unternehmenseigene“ Datei außerhalb der verwalteten App zu öffnen. Die Datei sollte verschlüsselt sein und außerhalb der verwalteten App nicht geöffnet werden können.
+Die Intune-App-Schutzrichtlinie kann die iOS-Freigabeerweiterung nicht steuern, ohne das Gerät zu verwalten. Daher _**verschlüsselt Intune „unternehmenseigene“ Daten, bevor diese außerhalb der App freigegeben werden**_ . Sie können dies überprüfen, indem Sie versuchen, die „unternehmenseigene“ Datei außerhalb der verwalteten App zu öffnen. Die Datei sollte verschlüsselt sein und außerhalb der verwalteten App nicht geöffnet werden können.
 
 **Wie funktionieren die verschiedenen Zugriffseinstellungen für den Intune-App-Schutz unter iOS, die für dieselben Apps und Benutzer konfiguriert sind?**<br></br>
 Zugriffsrichtlinien für den Intune-App-Schutz werden in einer bestimmten Reihenfolge auf den Geräten von Endbenutzern angewendet, wenn diese versuchen, über ihr Unternehmenskonto auf eine App zuzugreifen. In der Regel hat ein Zurücksetzungsvorgang Vorrang vor einem Block. Verwerfbare Warnungen werden erst als letztes berücksichtigt. Es wird z.B. eine Einstellung der mindestens erforderlichen iOS-Version, die den Benutzer auffordert, ein Update des Betriebssystems auszuführen, im Anschluss an die Einstellung angewendet, die dem Benutzer den Zugriff verweigert (wenn dies auf den Benutzer/die App zutrifft). In diesem Szenario konfiguriert der IT-Administrator die Einstellung für die mindestens erforderliche iOS-Version auf Version 11.0.0.0 und die mindestens erforderliche iOS-Version, die nur für Warnungen gilt, auf 11.1.0.0. Gleichzeitig versucht das Gerät, auf dem noch die iOS-Version 10 installiert ist, auf die App zuzugreifen. In Folge dessen wird der Endbenutzer basierend auf restriktiveren Einstellungen für die mindestens erforderliche iOS-Version blockiert und erhält keinen Zugriff.

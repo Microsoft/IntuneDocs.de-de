@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45df3e3b217e25c9e61fd51d7f458f33c7c0481d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 0d2e52ed64bfee2da8eafbc228abe61f109b3c27
+ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045524"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66412449"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Erstellen eines Berichts aus dem OData-Feed mit Power BI
 
@@ -53,14 +53,13 @@ Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI 
 > [!Note]  
 > Sie benötigen in Intune eine Berechtigung, um auf **Berichte** zugreifen zu können. Weitere Informationen finden Sie unter [Autorisierung](reports-api-url.md).
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Wählen Sie **Alle Dienste** > **Intune** aus. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Öffnen Sie den Bereich **Intune Data Warehouse**.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+3. Öffnen Sie den Bereich **Intune Data Warehouse**, indem Sie den Data Warehouse-Link unter **Weitere Aufgaben** auf der rechten Seite des Blatts **Microsoft Intune – Übersicht** auswählen.
 4. Kopieren Sie die benutzerdefinierte Feed-URL. Beispiel: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-5. Öffnen Sie Power BI Desktop.
-6. Klicken Sie auf **Daten abrufen** > **OData-Feed**.
-7. Fügen Sie die benutzerdefinierte Feed-URL in das URL-Feld im Fenster **OData-Feed** ein.
-8. Wählen Sie **Basic** aus.
+1. Öffnen Sie Power BI Desktop.
+2. Klicken Sie auf **Daten abrufen** > **OData-Feed**.
+3. Fügen Sie die benutzerdefinierte Feed-URL in das URL-Feld im Fenster **OData-Feed** ein.
+4. Wählen Sie **Basic** aus.
 
     ![OData-Feed für Intune Data Warehouse für Ihren Mandanten](media/reports-create-01-odatafeed.png)
 
