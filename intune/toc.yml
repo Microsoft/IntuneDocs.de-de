@@ -135,6 +135,10 @@
           items:
             - name: Netzwerkkonfiguration
               href: network-bandwidth-use.md
+            - name: Intune-Endpunkte
+              href: intune-endpoints.md
+            - name: Intune-Endpunkte der US-Regierung
+              href: intune-us-government-endpoints.md
         - name: Anmelden bei Intune
           href: account-sign-up.md
         - name: Konfigurieren von Domänen
