@@ -75,7 +75,7 @@ Es wurde seit 14 Tagen keine vollständige Überprüfung oder Schnellüberprüfu
 
 **Mögliche Lösungen**: Wenn eine Überprüfung überfällig ist, können Sie eine einmalige Überprüfung ausführen oder eine wiederholte Überprüfung planen. Weitere Informationen finden Sie unter [Windows Defender Antivirus](device-restrictions-windows-10.md#windows-defender-antivirus).
 
-#### <a name="another-endpoint-protection-application-running"></a>Eine andere Endpunktschutzanwendung wird ausgeführt
+#### <a name="another-endpoint-protection-application-running"></a>Eine andere Endpoint Protection-Anwendung wird ausgeführt
 
 Eine andere Endpoint Protection-Anwendung wird ausgeführt, und das Gerät befindet sich in einem fehlerfreien Zustand.
 

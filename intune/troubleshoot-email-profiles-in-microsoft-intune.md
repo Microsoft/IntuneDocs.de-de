@@ -52,7 +52,7 @@ Samsung KNOX identifiziert das Profil nicht anhand des Hostnamens. Es wird empfo
 
 Gilt für: Intune im klassischen Azure-Portal
 
-Benutzer, deren E-Mail-Konten automatisch konfiguriert wurden, können keine Bilder von ihren Geräten senden. Dies ist der Fall, wenn die Option **Allow e-mail to be sent from third-party applications** (E-Mail-Versand über Anwendungen von Drittanbietern zulassen) nicht aktiviert ist.
+Benutzer, deren E-Mail-Konten automatisch konfiguriert wurden, können keine Bilder von ihren Geräten senden. Dies ist der Fall, wenn die Option **E-Mail-Versand aus Anwendungen von Drittanbietern zulassen** nicht aktiviert ist.
 
 ### <a name="intune-solution"></a>Intune-Lösung
 
