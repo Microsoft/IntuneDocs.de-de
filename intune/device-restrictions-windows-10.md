@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/18/2019
+ms.date: 05/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18f8e072037d0ca9065201e0d0db2a9a2f6074ce
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
-ms.translationtype: HT
+ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
+ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174195"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66354220"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
@@ -58,6 +58,24 @@ Diese Einstellungen verwenden den [ApplicationManagement-Richtlinien-CSP](https:
 - **Apps auf Systemlaufwerk installieren**: **Blockieren** hindert Apps daran, eine Installation auf dem Systemlaufwerk des Geräts auszuführen. **Nicht konfiguriert** (Standard) erlaubt Apps Installationen auf dem Systemlaufwerk.
 - **Game DVR** (nur Desktop): **Blockieren** deaktiviert die Windows-Spieleaufzeichnung und -übertragung. **Nicht konfiguriert** (Standard) lässt die Aufzeichnung und Übertragung von Spielen zu.
 - **Nur Apps aus dem Store**: **Erforderlich** erzwingt, dass Endbenutzer nur Apps aus dem Windows App Store installieren können. **Nicht konfiguriert** ermöglicht Endbenutzern, Apps aus anderen Quellen als Windows App Store zu installieren.
+- **Für Apps mit Updatefehlern Neustart erzwingen**: Wenn eine App verwendet wird, wird sie möglicherweise nicht aktualisiert. Verwenden Sie diese Einstellung, um den Neustart einer App zu erzwingen. Bei **Nicht konfiguriert** (Standard) wird kein Neustart der App erzwungen. **Anfordern** ermöglicht es Administratoren, einen Neustart an einem bestimmten Datum zu einer bestimmtem Uhrzeit oder nach einem wiederkehrenden Schema zu erzwingen. Wenn Sie **Anfordern** festlegen, machen Sie außerdem diese Angaben:
+
+  - **Startdatum/-uhrzeit**: Wählen Sie ein bestimmtes Datum und eine bestimmte Uhrzeit für den Neustart der Apps aus.
+  - **Wiederholung**: Wählen Sie einen täglichen, wöchentlichen oder monatlichen Neustart aus.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
+
+- **Benutzerkontrolle über Installationen**: Bei Festlegung auf **Nicht konfiguriert** (Standard) verhindert der Windows Installer, dass Benutzer die Installationsoptionen ändern, die in der Regel für Systemadministratoren reserviert sind, etwa durch Eingeben des Installationsverzeichnisses. **Blockieren** ermöglicht es Benutzern, diese Installationsoptionen zu ändern, und einige der Sicherheitsfeatures des Windows Installers werden umgangen.
+
+  [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall)
+
+- **Apps mit erhöhten Rechten installieren**: Bei Festlegung auf **Nicht konfiguriert** (Standard) wendet das System bei der Installation von Programmen die Berechtigungen des aktuellen Benutzers an, die nicht von einem Systemadministrator bereitgestellt oder angeboten werden. **Blockieren** weist den Windows Installer an, bei der Installation von Programmen auf dem System erhöhte Rechte anzuwenden. Diese Berechtigungen werden auf alle Programme ausgeweitet.
+
+  [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges)
+
+- **Start-Apps**: Geben Sie eine Liste der Apps ein, die nach der Anmeldung eines Benutzers beim Gerät gestartet werden sollen. Achten Sie darauf, eine durch Semikolons getrennte Liste von Paketfamiliennamen (PFN) von Windows-Anwendungen zu verwenden. Damit diese Richtlinie funktioniert, muss das Manifest in den Windows-Apps eine Startaufgabe verwenden.
+
+  [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
 Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
@@ -408,6 +426,10 @@ Diese Einstellungen verwenden den [DeviceLock-Richtlinien-CSP](https://docs.micr
     - **Numerisch**: Kennwort darf nur aus Zahlen bestehen.
     - **Alphanumerisch**: Das Kennwort muss aus einer Kombination aus Ziffern und Buchstaben bestehen.
   - **Minimale Kennwortlänge**: Geben Sie die minimale Anzahl der erforderlichen Zeichen ein (zwischen 4 und 16). Geben Sie z.B. `6` ein, um ein mindestens sechs Zeichen langes Kennwort zu verlangen.
+  
+    > [!IMPORTANT]
+    > Wenn die Kennwortanforderung auf einem Windows-Desktop geändert wird, wirkt sich das auf die nächste Anmeldung der Benutzer aus, da das Gerät in diesem Moment aus dem Leerlauf in den aktiven Zustand wechselt. Benutzer mit Kennwörtern, die die Anforderungen erfüllen, werden trotzdem aufgefordert, ihre Kennwörter ändern.
+    
   - **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird**: Geben Sie die Anzahl zulässiger Authentifizierungsfehler ein, bevor das Gerät zurückgesetzt wird (zwischen 1 und 11). `0` (null) kann die Funktion zum Zurücksetzen des Geräts deaktivieren.
 
     Diese Einstellung besitzt je nach Edition unterschiedliche Auswirkungen. Spezifische Details dazu finden Sie im [DeviceLock/MaxDevicePasswordFailedAttempts-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
@@ -755,7 +777,7 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
   Weitere Informationen zu potenziell unerwünschten Apps finden Sie unter [Erkennen und Blockieren möglicherweise unerwünschter Anwendungen](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
-- **Aktionen für erkannte Schadsoftwarebedrohungen**: Wählen Sie die Maßnahmen aus, die Defender bei den einzelnen erkannten Bedrohungsstufen (Niedrig, Mittel, Hoch und Schwerwiegend) ergreifen soll. Folgende Optionen sind verfügbar:
+- **Aktionen für erkannte Schadsoftwarebedrohungen**: Wählen Sie die Maßnahmen aus, die Defender bei den einzelnen erkannten Bedrohungsstufen (Niedrig, Mittel, Hoch und Schwerwiegend) ergreifen soll. Wenn es nicht möglich ist, wählt Windows Defender die beste Option, um sicherzustellen, dass die Bedrohung entschärft wird. Folgende Optionen sind verfügbar:
   - **Bereinigen**
   - **Quarantäne**
   - **Entfernen**
