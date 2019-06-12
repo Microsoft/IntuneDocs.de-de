@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/29/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d1f790aeedff1e13ecc220ed7a6d8f311e12585
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: a0f8e9e7fec0bea759d408f3ca3d94aa46748bf8
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460511"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66044615"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Richtlinien und Profile zur Problembehandlung in Intune
 
@@ -56,19 +55,19 @@ In diesem Artikel werden häufig verwendete Methoden zur Problembehandlung aufge
 
       - Ein Gerät muss jedoch nicht registriert sein, um App-Schutzrichtlinien (Mobile Anwendungsverwaltung) zu empfangen. Weitere Informationen finden Sie unter [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md).
 
-    - **Azure AD-Verknüpfungstyp**: sollte festgelegt werden, um **Workplace** oder **AzureAD**.
+    - **Azure AD Join Type** (Azure AD-Verknüpfungstyp): Diese Spalte sollte auf **Arbeitsbereich** oder **Azure AD** festgelegt sein.
  
       - Wenn die Spalte den Wert **Nicht registriert** aufweist, liegt möglicherweise ein Problem mit der Registrierung vor. Dieses Problem kann üblicherweise durch das Aufheben der Registrierung und das erneute Registrieren des Geräts behoben werden.
 
-    - **Intune-kompatiblen**: muss **Ja**. Wenn **Nein** angezeigt wird, liegt möglicherweise ein Problem mit den Konformitätsrichtlinien vor oder das Gerät ist nicht mit dem Intune-Dienst verbunden. Das Gerät könnte beispielsweise ausgeschaltet oder nicht mit dem Netzwerk verbunden sein. In Folge dessen wird das Gerät als „Nicht konform“ eingestuft (z.B. nach 30 Tagen).
+    - **Intune compliant** (Intune-konform): Diese Option sollte auf **Ja** festgelegt sein. Wenn **Nein** angezeigt wird, liegt möglicherweise ein Problem mit den Konformitätsrichtlinien vor oder das Gerät ist nicht mit dem Intune-Dienst verbunden. Das Gerät könnte beispielsweise ausgeschaltet oder nicht mit dem Netzwerk verbunden sein. In Folge dessen wird das Gerät als „Nicht konform“ eingestuft (z.B. nach 30 Tagen).
 
       Weitere Informationen finden Sie unter [Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune](device-compliance-get-started.md).
 
-    - **Azure AD-konform**: muss **Ja**. Wenn **Nein** angezeigt wird, liegt möglicherweise ein Problem mit den Konformitätsrichtlinien vor oder das Gerät ist nicht mit dem Intune-Dienst verbunden. Das Gerät könnte beispielsweise ausgeschaltet oder nicht mit dem Netzwerk verbunden sein. In Folge dessen wird das Gerät als „Nicht konform“ eingestuft (z.B. nach 30 Tagen).
+    - **Azure AD compliant** (Azure AD-konform): Diese Option sollte auf **Ja** festgelegt sein. Wenn **Nein** angezeigt wird, liegt möglicherweise ein Problem mit den Konformitätsrichtlinien vor oder das Gerät ist nicht mit dem Intune-Dienst verbunden. Das Gerät könnte beispielsweise ausgeschaltet oder nicht mit dem Netzwerk verbunden sein. In Folge dessen wird das Gerät als „Nicht konform“ eingestuft (z.B. nach 30 Tagen).
 
       Weitere Informationen finden Sie unter [Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune](device-compliance-get-started.md).
 
-    - **Überprüfen Sie die im letzten**: muss eine aktuelle Uhrzeit und Datum. Intune-Geräte melden sich standardmäßig alle 8 Stunden an.
+    - **Letzte Anmeldung:** Diese Spalte sollte ein aktuelles Datum und eine aktuelle Uhrzeit enthalten. Intune-Geräte melden sich standardmäßig alle 8 Stunden an.
 
       - Wenn der Wert von **Letzte Anmeldung** über 24 Stunden zurück liegt, liegt vermutlich ein Problem mit dem Gerät vor. Ein Gerät, das sich nicht anmelden kann, kann auch keine Richtlinien von Intune empfangen.
 
@@ -87,7 +86,7 @@ In diesem Artikel werden häufig verwendete Methoden zur Problembehandlung aufge
 
       **Richtlinienzustände:**
 
-      - **Nicht zutreffend**: Diese Richtlinie wird auf dieser Plattform nicht unterstützt. Beispielsweise funktionieren iOS-Richtlinien nicht unter Android. Samsung KNOX-Richtlinien funktionieren nicht auf Windows-Geräten.
+      - **Nicht zutreffend:** Diese Richtlinie wird auf dieser Plattform nicht unterstützt. Beispielsweise funktionieren iOS-Richtlinien nicht unter Android. Samsung KNOX-Richtlinien funktionieren nicht auf Windows-Geräten.
       - **Konflikt**: Auf dem Gerät ist bereits eine Einstellung vorhanden, die von Intune nicht überschrieben werden kann. Möglicherweise haben Sie auch zwei Richtlinien mit der gleichen Einstellung, aber mit unterschiedlichen Werten bereitgestellt.
       - **Ausstehend**: Das Gerät hat sich noch nicht bei Intune angemeldet, um die Richtlinie abzurufen. Möglicherweise hat das Gerät die Richtlinie auch bereits empfangen, aber keinen Status an Intune gesendet.
       - **Fehler**: Weitere Informationen zu Fehlern und möglichen Fehlerbehebungen finden Sie unter [Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen](troubleshoot-company-resource-access-problems.md).
@@ -110,7 +109,7 @@ In diesem Artikel werden häufig verwendete Methoden zur Problembehandlung aufge
 
     - **Ausstehend**: Das Profil wurde an das Gerät gesendet, hat aber noch keinen Status an Intune gemeldet. Beispiel: Verschlüsselung unter Android erfordert, dass der Benutzer die Verschlüsselung aktiviert, und sie könnte als ausstehend angezeigt werden.
 
-**Hilfreiche Links**: [Überwachen von Geräteprofilen Konfiguration](device-profile-monitor.md)
+**Nützlicher Link:** [Monitor device profiles in Microsoft Intune (Überwachen von Geräteprofilen in Microsoft Intune)](device-profile-monitor.md)
 
 > [!NOTE]
 > Wenn zwei Richtlinien mit unterschiedlichen Einschränkungsstufen für das gleiche Gerät gelten, wird die restriktivere Richtlinie angewendet.

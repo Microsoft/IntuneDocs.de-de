@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7998eb82b27a7e70d5a77374950e544fd603f6d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1929b811a5a5320bc0ceefcef4f05ed2443ac070
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046298"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819646"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Aktivieren Sie den Mobile Threat Defense-Connector in Intune.
 
@@ -33,13 +33,9 @@ Während des Mobile Threat Defense-Setups (MTD) haben Sie eine Richtlinie zum Kl
 
 ## <a name="to-enable-the-mtd-connector"></a>So aktivieren Sie den MTD-Connector
 
-1. Melden Sie sich im [Azure-Portal](https://portal.azure.com) mit Ihren Intune-Anmeldeinformationen an. Nachdem Sie sich erfolgreich angemeldet haben, wird das **Azure-Dashboard** angezeigt.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 
-2. Klicken Sie auf dem **Azure-Dashboard** im linken Menü auf **Alle Dienste**, und geben Sie dann **Intune** in das Filtertextfeld ein.
-
-3. Wählen Sie **Intune** aus. Daraufhin wird das **Intune-Dashboard** geöffnet.
-
-4. Klicken Sie auf dem **Intune-Dashboard** auf **Gerätekonformität**, und wählen Sie dann **Mobile Threat Defense** im Abschnitt **Setup** aus.
+4. Wählen Sie im **Intune-Dashboard** zuerst **Gerätekompatibilität** und dann im Abschnitt **Setup** die Option **Mobile Threat Defense** aus.
 
 5. Klicken Sie im Bereich **Mobile Threat Defense** auf die Option **Hinzufügen**.
 

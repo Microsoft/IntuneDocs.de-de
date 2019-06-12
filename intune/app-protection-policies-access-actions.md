@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 490c7312f510651cafc6ade516e5f7dca8131b3a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cd323fce7f7bdbf17697c82935a9d2d5f47bb7ee
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043966"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804683"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Selektives Löschen von Daten mithilfe von Zugriffsaktionen für App-Schutzrichtlinien in Intune
 
@@ -32,9 +32,7 @@ Sie können diese Einstellungen verwenden, um die Unternehmensdaten bei Nichtkon
 
 ## <a name="create-an-app-protection-policy-using-access-actions"></a>Erstellen einer App-Schutzrichtlinie mithilfe von Zugriffsaktionen
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**.  
-    Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 3. Klicken Sie im Bereich **Intune** auf **Client-Apps** > **App-Schutzrichtlinien**.
 4. Klicken Sie auf **Richtlinie hinzufügen** (Alternativ können Sie eine vorhandene Richtlinie bearbeiten). 
 5. Klicken Sie auf **Erforderliche Einstellungen konfigurieren**, um die Liste der verfügbaren Einstellungen anzuzeigen, die für die Richtlinie konfiguriert werden können. 

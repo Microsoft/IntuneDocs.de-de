@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 44be460ee910818d52179da55151d1bceeb8b306
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 5f1935ff839b9e2aa97d002bd98d1f5dac87c390
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565909"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043052"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Verwenden von benutzerdefinierten Einstellungen für Windows 10-Geräte in Intune
 
@@ -83,7 +82,7 @@ Eine vollständige Liste aller Konfigurationsdienstanbieter (CSP), die von Windo
 
 Nicht alle Einstellungen sind mit allen Windows 10-Versionen kompatibel. Über die [Konfigurationsdienstanbieter-Referenz](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) erfahren Sie, welche Versionen für die einzelnen Konfigurationsdienstanbieter unterstützt werden.
 
-Außerdem unterstützt Intune nicht alle Einstellungen, die in der [Referenz zum Konfigurationsdienstanbieter](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) aufgeführt sind. Öffnen Sie den Artikel für die jeweilige Einstellung, um herauszufinden, ob die gewünschte Einstellung von Intune unterstützt wird. Auf jeder Einstellungsseite wird angezeigt, welcher Vorgang jeweils unterstützt wird. Damit die Einstellung mit Intune funktioniert, muss sie die Vorgänge **Hinzufügen**, **Ersetzen** und **Abrufen** unterstützen. Wenn der Rückgabewert von der **abrufen** Vorgang entspricht nicht den Wert der **hinzufügen** oder **ersetzen** Vorgänge, und klicken Sie dann auf Intune meldet einen Fehler: Kompatibilität.
+Außerdem unterstützt Intune nicht alle Einstellungen, die in der [Referenz zum Konfigurationsdienstanbieter](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) aufgeführt sind. Öffnen Sie den Artikel für die jeweilige Einstellung, um herauszufinden, ob die gewünschte Einstellung von Intune unterstützt wird. Auf jeder Einstellungsseite wird angezeigt, welcher Vorgang jeweils unterstützt wird. Damit die Einstellung mit Intune funktioniert, muss sie die Vorgänge **Hinzufügen**, **Ersetzen** und **Abrufen** unterstützen. Wenn der vom Vorgang **Abrufen** zurückgegebene Wert nicht mit dem vom Vorgang **Hinzufügen** oder **Ersetzen** zurückgegebenen Wert übereinstimmt, meldet Intune einen Konformitätsfehler.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

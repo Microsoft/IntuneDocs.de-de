@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 03/11/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 55a0cb45cd3e3a8e367b0bff7bd8e856b02af953
-ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.openlocfilehash: a80e4cf4e68235ef9e88943a8b62121e0cfb6623
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58429690"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66046971"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Geräteeinstellungen bei Windows 10 (und höher) zur Ausführung als Kiosk in Intune
 
@@ -36,40 +35,40 @@ Weitere Informationen zur Windows-Kioskfunktion in Intune finden Sie unter [Konf
 
 - [Erstellen Sie das Profil.](kiosk-settings.md#create-the-profile)
 
-- Dieses kioskprofil steht in direkter Beziehung zu dem Profil für geräteeinschränkungen erstellen Sie mit der [kioskeinstellungen für Microsoft Edge](device-restrictions-windows-10.md#microsoft-edge-browser). Zusammenfassung:
+- Dieses Kioskprofil steht in direktem Zusammenhang mit dem Geräteeinschränkungsprofil, das Sie mithilfe der [Microsoft Edge-Kioskeinstellungen](device-restrictions-windows-10.md#microsoft-edge-browser) erstellen. Zusammenfassung:
 
-  1. Erstellen Sie dieses Kiosk-Profil, um das Gerät im Kiosk-Modus ausgeführt.
-  2. Erstellen der [geräteeinschränkungsprofil](device-restrictions-windows-10.md#microsoft-edge-browser), und Konfigurieren bestimmter Features und Einstellungen in Microsoft Edge zulässig.
+  1. Erstellen Sie das Kioskprofil, um das Gerät im Kioskmodus auszuführen.
+  2. Erstellen Sie das [Geräteeinschränkungsprofil](device-restrictions-windows-10.md#microsoft-edge-browser), und konfigurieren Sie spezifische Features und Einstellungen, die in Microsoft Edge zulässig sind.
 
 > [!IMPORTANT] 
-> Achten Sie darauf, um den gleichen Geräten als diese kioskprofil zuzuweisen Ihre [Microsoft Edge-Profils](device-restrictions-windows-10.md#microsoft-edge-browser).
+> Achten Sie darauf, dass Sie dieses Kioskprofil den gleichen Geräten wie Ihr [Microsoft Edge-Profil](device-restrictions-windows-10.md#microsoft-edge-browser) zuweisen.
 
 ## <a name="single-full-screen-app-kiosks"></a>Kiosk mit einzelner Vollbild-App
 
-Wird nur eine app auf dem Gerät ausgeführt.
+Hiermit wird nur eine App auf dem Gerät ausgeführt.
 
-- **Wählen Sie einen Kioskmodus**: Wählen Sie **einzelanwendungsmodus, Vollbild-Kiosk**.
+- **Auswahl des Kioskmodus:** Wählen Sie die Option **Einzelne App, Vollbildkiosk**.
 
 - **Typ der Benutzeranmeldung**: Die Apps, die Sie hinzufügen, werden als das von Ihnen eingegebene Benutzerkonto ausgeführt. Folgende Optionen sind verfügbar:
 
-  - **Automatische Anmeldung (Windows 10, Version 1803 und höher)**: Für Kioske in öffentlichen Umgebungen, die keine Benutzeranmeldung erfordern, ähnlich einem Gastkonto. Diese Einstellung verwendet [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
-  - **Lokales Benutzerkonto**: Geben Sie das lokale Benutzerkonto (auf dem Gerät) an. Das Konto, dass Sie meldet sich an den Kiosk eingeben.
+  - **Automatische Anmeldung (Windows 10, Version 1803 und höher)** : Für Kioske in öffentlichen Umgebungen, die keine Benutzeranmeldung erfordern, ähnlich einem Gastkonto. Diese Einstellung verwendet [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Lokales Benutzerkonto**: Geben Sie das lokale Benutzerkonto (auf dem Gerät) an. Das von Ihnen eingegebene Konto wird zum Anmelden im Kiosk verwendet.
 
-- **Anwendungstyp**: Wählen Sie den Anwendungstyp. Folgende Optionen sind verfügbar:
+- **Anwendungstyp:** Wählen Sie den Anwendungstyp aus. Folgende Optionen sind verfügbar:
 
-  - **Hinzufügen von Microsoft Edge-Browser**: Wählen Sie **Microsoft Edge-Browser**, und wählen Sie die **Edge-Typ der Kiosk-Modus**:
+  - **Microsoft Edge-Browser hinzufügen:** Klicken Sie auf **Microsoft Edge-Browser**, und wählen Sie den **Microsoft Edge-Kioskmodustyp** aus:
 
-    - **Digital/Interactive Beschilderung**: eine URL-Vollbild geöffnet und zeigt nur den Inhalt auf dieser Website. [Einrichten von digitalen schildern](https://docs.microsoft.com/windows/configuration/setup-digital-signage) finden Sie weitere Informationen zu dieser Funktion.
-    - **Öffentliche Durchsuchen (InPrivate)**: führt eine begrenzte mehreren Registerkarte-Version des Microsoft Edge. Benutzer können öffentlich suchen oder die Browsersitzung beenden.
+    - **Digitale/interaktive Beschilderung:** Öffnet eine URL im Vollbildmodus und zeigt nur den Inhalt dieser Website an. Weitere Informationen zu diesem Feature finden Sie unter [Einrichten digitaler Beschilderungen](https://docs.microsoft.com/windows/configuration/setup-digital-signage).
+    - **Öffentliches Browsing (InPrivate):** Führt eine Version von Microsoft Edge mit mehreren Registerkarten aus. Benutzer können öffentlich browsen oder ihre Sitzung beenden.
 
-    Weitere Informationen zu diesen Optionen finden Sie unter [Bereitstellen von Microsoft Edge-Kioskmodus](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+    Weitere Informationen zu diesen Optionen finden Sie unter [Bereitstellen des Microsoft Edge-Kioskmodus](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
     > [!NOTE]
-    > Diese Einstellung aktiviert, die Microsoft Edge-Browser auf dem Gerät. Um Microsoft Edge-spezifische Einstellungen zu konfigurieren, erstellen Sie ein gerätekonfigurationsprofil (**Gerätekonfiguration** > **Profile** > **-Profilerstellen**  >  **Windows 10** für Plattform > **Geräteeinschränkungen** >  **Microsoft Edge-Browser**). [Microsoft Edge-Browser](device-restrictions-windows-10.md#microsoft-edge-browser) aufgelistet und beschrieben die verfügbaren Einstellungen.
+    > Mit dieser Einstellung wird der Microsoft Edge-Browser auf dem Gerät aktiviert. Erstellen Sie zum Konfigurieren spezifischer Microsoft Edge-Einstellungen ein Gerätekonfigurationsprofil (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10** (Plattform) > **Geräteeinschränkungen** >  **Microsoft Edge-Browser**). Der [Microsoft Edge-Browser](device-restrictions-windows-10.md#microsoft-edge-browser) führt alle Einstellungen und Beschreibungen dieser auf.
 
     Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
-  - **Hinzufügen des kioskbrowsers**: Wählen Sie **Kiosk-Browsereinstellungen**. Mit diesen Einstellungen können Sie die Webbrowser-App im Kiosk steuern. Laden Sie die [Kioskbrowser-App](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) aus dem Store herunter, fügen Sie sie Intune als [Client-App](apps-add.md) hinzu, und ordnen Sie sie dann den Kioskgeräten zu.
+  - **Kioskbrowser hinzufügen:** Klicken Sie auf **Einstellungen für Kioskbrowser**. Mit diesen Einstellungen können Sie die Webbrowser-App im Kiosk steuern. Laden Sie die [Kioskbrowser-App](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) aus dem Store herunter, fügen Sie sie Intune als [Client-App](apps-add.md) hinzu, und ordnen Sie sie dann den Kioskgeräten zu.
 
     Legen Sie folgende Einstellungen fest:
 
@@ -79,7 +78,7 @@ Wird nur eine app auf dem Gerät ausgeführt.
 
     - **Navigationsschaltflächen**: Sie können die Schaltflächen „Vorwärts“ und „Zurück“ **einblenden** oder **ausblenden**. Standardmäßig werden sie ausgeblendet.
 
-    - **Schaltfläche „Sitzung beenden“**: Sie können diese Schaltfläche **einblenden** oder **ausblenden**. Wenn die Schaltfläche angezeigt wird, tippt der Benutzer darauf, und die App fragt, ob die Sitzung beendet werden soll. Wenn dies bestätigt wird, löscht der Browser alle Browserdaten (z.B. Cookies und Cache) und öffnet dann die Standard-URL. Standardmäßig wird die Schaltfläche ausgeblendet.
+    - **Schaltfläche „Sitzung beenden“** : Sie können diese Schaltfläche **einblenden** oder **ausblenden**. Wenn die Schaltfläche angezeigt wird, tippt der Benutzer darauf, und die App fragt, ob die Sitzung beendet werden soll. Wenn dies bestätigt wird, löscht der Browser alle Browserdaten (z.B. Cookies und Cache) und öffnet dann die Standard-URL. Standardmäßig wird die Schaltfläche ausgeblendet.
 
     - **Browser nach Leerlaufzeit aktualisieren**: Geben Sie die Leerlaufzeit ein (1–1.440 Minuten), nach der der Kioskbrowser im aktualisierten Zustand neu gestartet wird. Die Leerlaufzeit ist die Anzahl von Minuten seit der letzten Benutzerinteraktion. Standardmäßig ist der Wert leer, d.h., es gibt kein Leerlauftimeout.
 
@@ -96,7 +95,7 @@ Wird nur eine app auf dem Gerät ausgeführt.
 
     Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
-  - **Hinzufügen von Store-app**: Wählen Sie **hinzufügen eine Store-app**, und wählen Sie eine app aus der Liste.
+  - **Store-App hinzufügen:** Klicken Sie auf **Store-App hinzufügen**, und wählen Sie eine App aus der Liste aus.
 
     Es sind keine Apps aufgelistet? Fügen Sie einige mithilfe der Schritte unter [Client-Apps](apps-add.md) hinzu.
 
@@ -104,34 +103,34 @@ Wird nur eine app auf dem Gerät ausgeführt.
 
 ## <a name="multi-app-kiosks"></a>Kiosks für mehrere Apps
 
-Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. Diese Apps sind die einzigen Apps, die der Benutzer öffnen kann. Wenn eine app eine Abhängigkeit auf einer anderen app hat, müssen sowohl in der Liste zulässiger apps enthalten sein. Internet Explorer-64-Bit-weist eine Abhängigkeit z. B. auf Internet Explorer-32-Bit, damit Sie sowohl "C:\Programme\Microsoft c:\Programme\Internet explorer\iexplore.exe" und "C:\Program Files (x86) \Internet" zulassen müssen. 
+Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. Diese Apps sind die einzigen Apps, die der Benutzer öffnen kann. Wenn bei einer App eine Abhängigkeit von einer anderen App vorliegt, müssen beide in der Liste zulässiger Apps enthalten sein. Internet Explorer (64-Bit) weist beispielsweise eine Abhängigkeit von Internet Explorer (32-Bit) auf, d. h., Sie müssen sowohl „C:\Programme\internet explorer\iexplore.exe“ als auch „C:\Programme (x86)\Internet Explorer\iexplore.exe“ zulassen. 
 
-- **Wählen Sie einen Kioskmodus**: Wählen Sie **Kiosk mit mehreren Apps**.
+- **Kioskmodus auswählen:** Wählen Sie die Option **Kiosk mit mehreren Apps** aus.
 
 - **Geräte unter Windows 10 im S Modus als Ziel verwenden:**
   - **Ja**: Store-Apps und AUMID-Apps werden im Kioskprofil erlaubt (ausgenommen Win32-Apps).
-  - **Nein**: Store-Apps, Win32-Apps und AUMID-Apps werden im Kioskprofil erlaubt. Dieses kioskprofil ist nicht für S-Modus-Geräte bereitgestellt werden.
+  - **Nein**: Store-Apps, Win32-Apps und AUMID-Apps werden im Kioskprofil erlaubt. Dieses Kioskprofil wird auf Geräten im S-Modus nicht bereitgestellt.
 
 - **Typ der Benutzeranmeldung**: Die Apps, die Sie hinzufügen, werden als das von Ihnen eingegebene Benutzerkonto ausgeführt. Folgende Optionen sind verfügbar:
 
-  - **Automatische Anmeldung (Windows 10, Version 1803 und höher)**: Für Kioske in öffentlichen Umgebungen, die keine Benutzeranmeldung erfordern, ähnlich einem Gastkonto. Diese Einstellung verwendet [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
-  - **Lokales Benutzerkonto**: **Fügen** Sie das lokale Benutzerkonto (auf dem Gerät) hinzu. Das Konto, dass Sie meldet sich an den Kiosk eingeben.
-  - **Azure AD-Benutzer oder -Gruppe (Windows 10, Version 1803 und höher)**: Wählen Sie **Hinzufügen** und anschließend Azure AD-Benutzer oder -Gruppen aus der Liste aus. Sie können mehrere Benutzer und Gruppen auswählen. Wählen Sie **OK** aus, um die Änderungen zu speichern.
+  - **Automatische Anmeldung (Windows 10, Version 1803 und höher)** : Für Kioske in öffentlichen Umgebungen, die keine Benutzeranmeldung erfordern, ähnlich einem Gastkonto. Diese Einstellung verwendet [AssignedAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/assignedaccess-csp).
+  - **Lokales Benutzerkonto**: **Fügen** Sie das lokale Benutzerkonto (auf dem Gerät) hinzu. Das von Ihnen eingegebene Konto wird zum Anmelden im Kiosk verwendet.
+  - **Azure AD-Benutzer oder -Gruppe (Windows 10, Version 1803 und höher)** : Wählen Sie **Hinzufügen** und anschließend Azure AD-Benutzer oder -Gruppen aus der Liste aus. Sie können mehrere Benutzer und Gruppen auswählen. Wählen Sie **OK** aus, um die Änderungen zu speichern.
   - **HoloLens-Besucher**: Beim Besucherkonto handelt es sich um ein Gastkonto, für das weder Anmeldeinformationen noch eine Authentifizierung erforderlich sind. Weitere Informationen dazu finden Sie unter [shared PC mode concepts (Konzepte für den Modus freigegebener Computer)](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
 - **Browser und Anwendungen**: Fügen Sie die Apps hinzu, die auf dem Kioskgerät ausgeführt werden sollen. Denken Sie daran, dass Sie mehrere Apps hinzufügen können.
 
   - **Browser**
 
-    - **Hinzufügen von Microsoft Edge**: Microsoft Edge ist die app-Raster hinzugefügt, und alle Anwendungen können auf dieses Kiosks ausführen. Wählen Sie die **Microsoft Edge Kiosk-Modus geben**:
+    - **Microsoft Edge hinzufügen:** Microsoft Edge wird dem App-Raster hinzugefügt, und alle Anwendungen können in diesem Kiosk ausgeführt werden. Wählen Sie den **Microsoft Edge-Kioskmodustyp** aus:
 
-      - **Normaler Modus (Vollversion von Microsoft Edge)**: führt eine Vollversion von Microsoft Edge-Funktionen zum Durchsuchen. Benutzerdaten und Zustand werden zwischen Sitzungen gespeichert.
-      - **Öffentliche Durchsuchen (InPrivate)**: führt eine mehreren Registerkarte-Version von Microsoft Edge-InPrivate mit kein individuelles Erlebnis für Kioskcomputer, die im Vollbildmodus ausführen.
+      - **Normalmodus (Vollversion von Microsoft Edge):** Führt eine Vollversion von Microsoft Edge mit allen Browsingfeatures aus. Benutzerdaten und -zustand werden zwischen Sitzungen beibehalten.
+      - **Öffentliches Browsing (InPrivate):** Führt eine Version von Microsoft Edge InPrivate mit mehreren Registerkarten mit einer für Kioske ausgelegten Benutzeroberfläche im Vollbildmodus aus.
 
-      Weitere Informationen zu diesen Optionen finden Sie unter [Bereitstellen von Microsoft Edge-Kioskmodus](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
+      Weitere Informationen zu diesen Optionen finden Sie unter [Bereitstellen des Microsoft Edge-Kioskmodus](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
       > [!NOTE]
-      > Diese Einstellung aktiviert, die Microsoft Edge-Browser auf dem Gerät. Um Microsoft Edge-spezifische Einstellungen zu konfigurieren, erstellen Sie ein gerätekonfigurationsprofil (**Gerätekonfiguration** > **Profile** > **-Profilerstellen**  >  **Windows 10** für Plattform > **Geräteeinschränkungen** >  **Microsoft Edge-Browser**). [Microsoft Edge-Browser](device-restrictions-windows-10.md#microsoft-edge-browser) aufgelistet und beschrieben die verfügbaren Einstellungen.
+      > Mit dieser Einstellung wird der Microsoft Edge-Browser auf dem Gerät aktiviert. Erstellen Sie zum Konfigurieren spezifischer Microsoft Edge-Einstellungen ein Gerätekonfigurationsprofil (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10** (Plattform) > **Geräteeinschränkungen** >  **Microsoft Edge-Browser**). Der [Microsoft Edge-Browser](device-restrictions-windows-10.md#microsoft-edge-browser) führt alle Einstellungen und Beschreibungen dieser auf.
 
       Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
@@ -145,7 +144,7 @@ Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. D
 
       - **Navigationsschaltflächen**: Sie können die Schaltflächen „Vorwärts“ und „Zurück“ **einblenden** oder **ausblenden**. Standardmäßig werden sie ausgeblendet.
 
-      - **Schaltfläche „Sitzung beenden“**: Sie können diese Schaltfläche **einblenden** oder **ausblenden**. Wenn die Schaltfläche angezeigt wird, tippt der Benutzer darauf, und die App fragt, ob die Sitzung beendet werden soll. Wenn dies bestätigt wird, löscht der Browser alle Browserdaten (z.B. Cookies und Cache) und öffnet dann die Standard-URL. Standardmäßig wird die Schaltfläche ausgeblendet.
+      - **Schaltfläche „Sitzung beenden“** : Sie können diese Schaltfläche **einblenden** oder **ausblenden**. Wenn die Schaltfläche angezeigt wird, tippt der Benutzer darauf, und die App fragt, ob die Sitzung beendet werden soll. Wenn dies bestätigt wird, löscht der Browser alle Browserdaten (z.B. Cookies und Cache) und öffnet dann die Standard-URL. Standardmäßig wird die Schaltfläche ausgeblendet.
 
       - **Browser nach Leerlaufzeit aktualisieren**: Geben Sie die Leerlaufzeit ein (1–1.440 Minuten), nach der der Kioskbrowser im aktualisierten Zustand neu gestartet wird. Die Leerlaufzeit ist die Anzahl von Minuten seit der letzten Benutzerinteraktion. Standardmäßig ist der Wert leer, d.h., es gibt kein Leerlauftimeout.
 
@@ -172,11 +171,11 @@ Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. D
     - **Nach AUMID hinzufügen**: Mit dieser Option können Sie Windows-Posteingangs-Apps wie Editor oder Rechner hinzufügen. Geben Sie die folgenden Eigenschaften ein:
 
       - **Anwendungsname**: Pflichtfeld. Geben Sie einen Namen für die Anwendung ein.
-      - **Anwendungsbenutzermodell-ID (AUMID)**: Pflichtfeld. Geben Sie die AUMID der Windows-App ein. Weitere Informationen zum Abrufen dieser ID finden Sie unter [Ermitteln der Anwendungsbenutzermodell-ID einer installierten App](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+      - **Anwendungsbenutzermodell-ID (AUMID)** : Pflichtfeld. Geben Sie die AUMID der Windows-App ein. Weitere Informationen zum Abrufen dieser ID finden Sie unter [Ermitteln der Anwendungsbenutzermodell-ID einer installierten App](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
       Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
-    - **Remotedebugmonitor**: Optional. Wählen Sie eine Anwendung auf Remotedebugmonitor, wenn der Benutzer anmeldet. Nur eine einzelne app kann AutoLaunched sein.
+    - **AutoLaunch:** Optional. Wählen Sie eine Anwendung aus, die automatisch gestartet werden soll, wenn der Benutzer sich anmeldet. Nur eine App kann mit AutoLaunch automatisch gestartet werden.
     - **Kachelgröße**: Pflichtfeld. Wählen Sie eine der folgenden App-Kachelgrößen aus: „Klein“, „Mittelgroß“, „Breit“ oder „Groß“.
 
   > [!TIP]
@@ -186,7 +185,7 @@ Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. D
 
 - **Windows-Taskleiste**: Sie können die Taskleiste **einblenden** oder **ausblenden**. Standardmäßig wird sie ausgeblendet. Symbole, z.B. das WLAN-Symbol werden dargestellt, die Einstellungen können jedoch nicht vom Endbenutzer geändert werden.
 
-- **Zulassen des Zugriffs auf den Ordner "Downloads"**: Wählen Sie **Ja** auf Benutzer auf den Ordner "Downloads" im Windows-Explorer zugreifen können. Standardmäßig ist der Zugriff auf den Ordner "Downloads" deaktiviert. Dieses Feature wird häufig für Endbenutzer verwendet, den Zugriff auf Elemente in einem Browser heruntergeladen.
+- **Zugriff auf Downloadordner zulassen:** Klicken Sie auf **Ja**, um Benutzern den Zugriff auf den Downloadordner in Windows Explorer zu gewähren. Der Zugriff auf den Downloadordner ist standardmäßig deaktiviert. Dieses Feature wird häufig verwenden, um Endbenutzern den Zugriff auf Elemente zu gewähren, die über einen Browser heruntergeladen wurden.
 
 Klicken Sie auf **OK**, um die Änderungen zu speichern.
 

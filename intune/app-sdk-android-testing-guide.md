@@ -1,13 +1,12 @@
 ---
 title: Testleitfaden für Entwickler zum Microsoft Intune App SDK für Android
-description: Das Microsoft Intune App SDK für Android-Tests Anleitung können Sie Ihre mit Intune verwaltete Android-app zu testen.
+description: Der Testleitfaden zum Microsoft Intune App SDK für Android unterstützt Sie beim Testen Ihrer mit Intune verwalteten Android-App.
 keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/14/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,114 +16,114 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4203f424c395399cb0ed1e7472b006602aa0b210
-ms.sourcegitcommit: db7a6b8fc9e82dae4f2111ca0b2d3c14e33658f9
+ms.openlocfilehash: 9f8fa8f361e886c8eac697bb585ccf15eb9152f1
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58072470"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66043840"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Testleitfaden für Entwickler zum Microsoft Intune App SDK für Android
 
-Das Microsoft Intune App SDK für Android-testen-Anleitung soll Ihre mit Intune verwaltete Android-app testen.  
+Der Testleitfaden zum Microsoft Intune App SDK für Android wurde dazu entworfen, Sie beim Testen Ihrer mit Intune verwalteten Android-App zu unterstützen.  
 
 ## <a name="prerequisite-test-accounts"></a>Erforderliche Testkonten
-Neue Konten können mit und ohne vorab generierten Daten erstellt werden. Gehen Sie folgendermaßen vor, um ein neues Konto zu erstellen:
-1. Navigieren Sie zu der [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant) Standort. 
-2. [Einrichten von Intune](https://docs.microsoft.com/intune/setup-steps) Verwaltung mobiler Geräte (MDM) aktivieren.
-3. [Erstellen von Benutzern](https://docs.microsoft.com/intune/users-add).
+Neue Konten können mit und ohne vorab generierte Daten erstellt werden. Gehen Sie folgendermaßen vor, um ein neues Konto zu erstellen:
+1. Öffnen Sie die [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant)-Website. 
+2. [Richten Sie Intune ein](https://docs.microsoft.com/intune/setup-steps), um die mobile Geräteverwaltung (MDM) zu aktivieren.
+3. [Erstellen Sie Benutzer](https://docs.microsoft.com/intune/users-add).
 4. [Erstellen Sie Gruppen](https://docs.microsoft.com/intune/groups-add).
-5. [Zuweisen von Lizenzen](https://docs.microsoft.com/intune/licenses-assign) je nach Bedarf für Ihre Tests.
+5. [Weisen Sie Lizenzen je nach Bedarf für Ihre Tests zu](https://docs.microsoft.com/intune/licenses-assign).
 
 
-## <a name="azure-portal-policy-configuration"></a>Azure-Portal-Richtlinienkonfiguration
-[Erstellen und Zuweisen von app-Schutzrichtlinien](https://docs.microsoft.com/intune/app-protection-policies) in die [Azure-Portal-Blatt "Intune"](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). Ihre [app-Konfigurationsrichtlinie](https://docs.microsoft.com/intune/app-configuration-policies-overview) auch erstellt und in das Blatt "Intune" zugewiesen werden können.
+## <a name="azure-portal-policy-configuration"></a>Richtlinienkonfiguration des Azure-Portals
+[Erstellen Sie App-Schutzrichtlinien](https://docs.microsoft.com/intune/app-protection-policies) über das [Intune-Blatt des Azure-Portals](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview), und weisen Sie sie zu. Ihre [App-Konfigurationsrichtlinie](https://docs.microsoft.com/intune/app-configuration-policies-overview) kann ebenfalls über das Intune-Blatt erstellt und zugewiesen werden.
 
 > [!NOTE]
-> Wenn Ihre app im Azure-Portal nicht aufgeführt ist, können Sie es mit einer Richtlinie abzielen, durch Auswählen der **Weitere apps** Option und den Paketnamen in das Textfeld bereitstellen.
+> Wenn Ihre App nicht im Azure-Portal aufgeführt wird, können Sie eine Richtlinie auf die App anwenden, indem Sie auf **Weitere Apps** klicken und den Paketnamen in das Textfeld eingeben.
 
 > [!IMPORTANT]
-> Für eine app-Konfigurationsrichtlinie angewendet werden soll, muss der Benutzer beim Registrieren von angewendet werden durch eine [Intune-app-Schutzrichtlinie](https://docs.microsoft.com/intune/app-protection-policy).
+> Damit eine App-Konfigurationsrichtlinie angewendet wird, muss eine [Intune-App-Schutzrichtlinie](https://docs.microsoft.com/intune/app-protection-policy) auf den zu registrierenden Benutzer angewendet werden.
 
 ## <a name="test-cases"></a>Testfälle
 
-Die folgenden Testfälle enthalten die Konfiguration und die Bestätigung Schritte. Verwenden Sie diese Anleitung zum Beheben von Problemen mit Intune verwaltete Android-app.
+In den folgenden Testfällen werden Konfigurations- und Bestätigungsschritte veranschaulicht. Mit dieser Anleitung können Sie Probleme mit von Intune verwalteten Android-Apps beheben.
 
-### <a name="required-pin-and-corporate-credentials"></a>Erforderliche PIN "und"-Unternehmensanmeldeinformationen anmelden
+### <a name="required-pin-and-corporate-credentials"></a>Erforderliche PIN und Unternehmensanmeldeinformationen
 
-Sie können eine Pin ein, den Zugriff auf Unternehmensressourcen benötigen. Darüber hinaus können Sie Unternehmens Authentifizierung erzwingen, damit Benutzer mit verwalteten apps verwenden können. Verwenden Sie die folgenden Schritte aus, um Folgendes festzulegen:
+Sie können eine PIN für den Zugriff auf Unternehmensressourcen erfordern. Außerdem können Sie Unternehmensauthentifizierung erzwingen, bevor Benutzer verwaltete Apps verwenden können. Verwenden Sie die folgenden Schritte, um diese Anforderungen festzulegen:
 
-1. Konfigurieren von **PIN für Zugriff anfordern** und **Unternehmensanmeldeinformationen für Zugriff erforderlich** zu **Ja**. Weitere Informationen finden Sie unter [Einstellungen für App-Schutzrichtlinien für Android in Microsoft Intune](app-protection-policy-settings-android.md#access-requirements).
+1. Legen Sie die Optionen **PIN für Zugriff anfordern** und **Unternehmensanmeldeinformationen für Zugriff erforderlich** auf **Ja** fest. Weitere Informationen finden Sie unter [Einstellungen für App-Schutzrichtlinien für Android in Microsoft Intune](app-protection-policy-settings-android.md#access-requirements).
 2. Überprüfen Sie die folgenden Bedingungen:
-    - App-Start sollte darstellen, eine Eingabeaufforderung für die PIN-Eingabe/Setup und/oder der Produktions-Benutzer, der während der Registrierung mit der Unternehmensportal-App verwendet wurde.
-    - Fehler um eine gültige anmeldeaufforderung präsentieren kann aufgrund einer falsch konfigurierten android-Manifest, insbesondere die Werte für die ADAL-Integration ("skipbroker", "ClientID" und Authority) sein.
-    - Fehler, um eine Aufforderung zu präsentieren wurde möglicherweise durch eine falsch integrierte `MAMActivity` Wert. Weitere Informationen zu `MAMActivity`, finden Sie unter [Microsoft Intune App SDK für Android – Entwicklerhandbuch](app-sdk-android.md).
+    - Beim App-Start sollte eine Eingabeaufforderung für die Eingabe/Einrichtung einer PIN und bzw. oder eines Produktionsbenutzers angezeigt werden, der bei der Registrierung im Unternehmensportal verwendet wurde.
+    - Wenn keine gültige Anmeldeaufforderung angezeigt wird, kann dies an einem fehlerhaft konfigurierten Android-Manifest und insbesondere an den Werten für die ADAL-Integration („SkipBroker“, „ClientID“ und „Authority“) liegen.
+    - Fehler beim Anzeigen beliebiger Eingabeaufforderungen können von einem fehlerhaft integrierten `MAMActivity`-Wert verursacht werden. Weitere Informationen zu `MAMActivity` finden Sie im [Entwicklerhandbuch zum Microsoft Intune App SDK für Android](app-sdk-android.md).
 
 > [!NOTE] 
-> Wenn die oben genannten Test nicht ausgeführt wird, schlägt die folgenden Tests wahrscheinlich ebenfalls fehl. Überprüfen Sie [SDK](app-sdk-android.md##sdk-integration) und [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) Integration.
+> Wenn der obige Test nicht funktioniert, werden auch die folgenden Tests fehlschlagen. Überprüfen Sie das [SDK](app-sdk-android.md##sdk-integration) und die [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal)-Integration.
 
-### <a name="restrict-transferring-and-receiving-data-with-other-apps"></a>Übertragen und Empfangen von Daten mit anderen apps einschränken
-Sie können die Datenübertragung zwischen verwalteten unternehmensanwendungen wie folgt steuern:
+### <a name="restrict-transferring-and-receiving-data-with-other-apps"></a>Einschränken der Übertragung von Daten von und zu anderen Apps
+Sie können die Datenübertragung zwischen Unternehmensanwendungen wie folgt steuern:
 
-1. Legen Sie **zulassen app Daten an andere apps überträgt** zu **per Richtlinie verwalteten apps**.
-2. Legen Sie die Option **Zulassen, dass die App Daten von anderen Apps empfängt** auf **Alle Apps** fest. Verwendung von Intents und Inhaltsanbietern wirkt sich von diesen Richtlinien.
+1. Legen Sie **Zulassen, dass die App Daten an andere Apps überträgt** auf **Richtlinienverwaltete Apps** fest.
+2. Legen Sie die Option **Zulassen, dass die App Daten von anderen Apps empfängt** auf **Alle Apps** fest. Die Verwendung von Absichten und Inhaltsanbietern wird von diesen Richtlinien beeinträchtigt.
 3. Überprüfen Sie die folgenden Bedingungen:
-    - Öffnen über eine nicht verwaltete app ordnungsgemäß in Ihre app-Funktionen an.
-    - Freigeben von Inhalten zwischen verwalteten apps ist zulässig.
-    - Freigabe von verwalteten apps für nicht verwaltete apps (z.B. Chrome) wird blockiert.
+    - Das Öffnen Ihrer App-Funktionen über eine nicht verwaltete App funktioniert.
+    - Das Freigeben von Inhalten zwischen verwalteten Apps ist zulässig.
+    - Die Freigabe über verwaltete Apps an nicht verwaltete Apps (z. B. Chrome) wird blockiert.
 
 ### <a name="restrict-cut-copy-and-paste"></a>Einschränken von Ausschneiden, Kopieren und Einfügen
-Sie können die Zwischenablage des Systems für verwaltete Anwendungen wie folgt einschränken:
+Sie können die Zwischenablage wie folgt auf verwaltete Apps einschränken:
 
-1. Legen Sie **beschränken von Ausschneiden, kopieren und Einfügen mit anderen apps** zu **richtlinienverwaltete mit einfügen**.
+1. Legen Sie für **Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken** die Option **Richtlinienverwaltete Apps mit Einfügen** fest.
 2. Überprüfen Sie die folgenden Bedingungen:
-    - Kopieren von Text aus Ihrer app in ein verwaltetes ist eine nicht verwaltete app (z. B. Nachrichten) blockiert.
+    - Das Kopieren von Text aus Ihrer App in eine nicht verwaltete App (z. B. Nachrichten) wird blockiert.
 
 ### <a name="prevent-save-as"></a>Verhindern von **Speichern unter**
-Sie können steuern, **speichern als** Funktionalität wie folgt:
+Sie können die Funktionalität **Speichern unter** wie folgt steuern:
 
-1. Wenn Ihre app erfordert [integrierte Steuerelemente 'Speichern unter'](app-sdk-android.md#example-determine-if-saving-to-device-or-cloud-storage-is-permitted)legen **verhindern "Speichern unter"** zu **Ja**.
+1. Wenn Ihre App [integrierte Steuerung für „Speichern unter“](app-sdk-android.md#example-determine-if-saving-to-device-or-cloud-storage-is-permitted) erfordert, legen Sie **„Speichern unter“ verhindern** auf **Ja** fest.
 2. Überprüfen Sie die folgenden Bedingungen:
-    - Speichern ist auf nur die entsprechenden verwalteten stellen beschränkt.
+    - Das Speichern ist auf entsprechende verwaltete Speicherorte eingeschränkt.
 
 ### <a name="file-encryption"></a>Dateiverschlüsselung
-Sie können die Daten auf dem Gerät wie folgt verschlüsseln:
+Sie können Daten auf dem Gerät wie folgt verschlüsseln:
 
-1. Legen Sie **appdaten verschlüsseln** zu **Ja**.
+1. Legen Sie **App-Daten verschlüsseln** auf **Ja** fest.
 2. Überprüfen Sie die folgenden Bedingungen:
-    - Verhalten der normale Anwendung ist nicht betroffen.
+    - Das normale Verhalten der Anwendung ist nicht betroffen.
 
 ### <a name="prevent-android-backups"></a>Verhindern von Android-Sicherungen
-Sie können die app-Sicherung wie folgt steuern:
+Sie können die App-Sicherung wie folgt steuern:
 
-1. Wenn Sie festgelegt haben [integriert sicherungseinschränkungen](app-sdk-android.md#protecting-backup-data), konfigurieren Sie **Android-Sicherungen verhindern** zu **Ja**.
+1. Wenn Sie [integrierte Sicherungseinschränkungen](app-sdk-android.md#protecting-backup-data) festgelegt haben, legen Sie **Android-Datensicherungen verhindern** auf **Ja** fest.
 2. Überprüfen Sie die folgenden Bedingungen:
-    - Sicherungen sind beschränkt.
+    - Sicherungen sind eingeschränkt.
 
-### <a name="unenrollment"></a>Die Aufhebung der Registrierung
-Sie können ein remotezurücksetzen für verwaltete apps mit geschäftlicher e-Mails und Dokumente und persönliche Daten entschlüsselt, wenn es nicht mehr wie folgt verwaltet wird:
+### <a name="unenrollment"></a>Aufheben der Registrierung
+Sie können für verwaltete Apps eine Remotezurücksetzung durchführen, um Unternehmens-E-Mails und -dokumente zu entfernen. Außerdem werden persönliche Daten entschlüsselt, wenn die Registrierung wie folgt aufgehoben wird:
 
-1. Die Azure-Portal [Geben Sie eine Zurücksetzung](https://docs.microsoft.com/intune/apps-selective-wipe).
-2. Wenn Ihre app nicht registriert wird, für die Zurücksetzung Handler bestätigen Sie die folgenden Bedingungen:
-    - Eine vollständige Zurücksetzung der app auftritt.
-3. Falls für Ihre Anwendung registriert hat `WIPE_USER_DATA` oder `WIPE_USER_AUXILARY_DATA`, bestätigen Sie die folgenden Bedingungen:
-    - Der verwaltete Inhalt aus der app entfernt. Weitere Informationen finden Sie unter [Intune App SDK für Android – Entwicklerhandbuch - Selective Wipe](app-sdk-android.md#selective-wipe).
+1. [Veranlassen Sie eine Zurücksetzung](https://docs.microsoft.com/intune/apps-selective-wipe) über das Azure-Portal.
+2. Wenn Ihre App für keine Zurücksetzungshandler registriert ist, überprüfen Sie die folgenden Bedingungen:
+    - Eine vollständige Zurücksetzung wird durchgeführt.
+3. Wenn Ihre App für `WIPE_USER_DATA` oder `WIPE_USER_AUXILARY_DATA` registriert ist, überprüfen Sie die folgenden Bedingungen:
+    - Der verwaltete Inhalt wird aus der App entfernt. Weitere Informationen finden Sie im [Entwicklerhandbuch zum Intune App SDK für Android im Abschnitt „Selektives Zurücksetzen“](app-sdk-android.md#selective-wipe).
 
 ### <a name="multi-identity"></a>Mehrere Identitäten
-Die Integration von [Unterstützung mehrerer Identitäten](app-sdk-android.md#multi-identity-optional) ist eine Änderung von hohem Risiko, das gründlich getestet werden muss. Am häufigsten auftretenden Probleme werden aufgrund der falsche Einstellung der Identität (Kontext und der angegebenen gerätebedrohungsstufe entspricht) und auch Nachverfolgen von Dateien (`MAMFileProtectionManager`).
+Die Integration von [Unterstützung mehrerer Identitäten](app-sdk-android.md#multi-identity-optional) ist eine Änderung mit hohem Risiko, die gründlich getestet werden muss. Die am häufigsten auftretenden Fehler werden durch falsche Einstellung der Identität (Kontext vs. Bedrohungsstufe) und durch die Nachverfolgung von Dateien (`MAMFileProtectionManager`) ausgelöst.
 
-Minimal sollten die folgenden Szenarien für mehrere Identitäten erneut überprüft werden:
+Zumindest die folgenden Szenarios für mehrere Identitäten sollten noch mal überprüft werden:
 
-- **Speichern unter** -Richtlinie funktioniert korrekt für die verwaltete Identitäten.
-- Kopieren Sie und einfügen, die Einschränkungen von korrekt erzwungen werden in persönlichen verwaltet.
-- Nur Daten der verwalteten Identität verschlüsselt, und persönliche Dateien werden nicht geändert.
-- Selektives zurücksetzen bei der Aufhebung der Registrierung entfernt nur die Daten für verwaltete Identität.
-- Für den bedingten Start wird der Endbenutzer aufgefordert, beim Ändern von nicht verwalteten zu verwalteten Kontos (nur beim ersten Mal).
+- Die Richtlinie für **Speichern unter** funktioniert für verwaltete Identitäten ordnungsgemäß.
+- Die Einschränkungen für das Kopieren und Einfügen aus verwalteten Identitäten zu persönlichen werden ordnungsgemäß erzwungen.
+- Nur Daten, die zur verwalteten Identität gehören, werden verschlüsselt. Persönliche Dateien werden nicht geändert.
+- Das selektive Zurücksetzen während der Aufhebung der Registrierung entfernt nur die Daten der verwalteten Identität.
+- Der Endbenutzer wird zum bedingten Start aufgefordert, wenn er zum ersten Mal von einem nicht verwalteten Konto zu einem verwalteten wechselt.
 
-### <a name="app-configuration-optional"></a>App-Konfiguration (optional)
-Verhalten von verwalteten apps können Sie wie folgt konfigurieren:
+### <a name="app-configuration-optional"></a>App-Konfiguration (Optional)
+Sie können das Verhalten von verwalteten Apps wie folgt konfigurieren:
 
-1. Wenn Ihre app app-Konfigurationseinstellungen verwendet wird, sollten Sie testen, dass Ihre app richtig alle Werte verarbeitet, die Sie (als Administrator) festlegen können. [App-Konfigurationsrichtlinien](https://docs.microsoft.com/intune/app-configuration-policies-overview) erstellt und in die Verwendung von Intune zugewiesen werden können.
+1. Wenn Ihre App App-Konfigurationseinstellungen nutzt, sollten Sie testen, ob Ihre App alle Werte ordnungsgemäß verarbeitet, die Sie (als Administrator) festlegen können. [App-Konfigurationsrichtlinien](https://docs.microsoft.com/intune/app-configuration-policies-overview) können mithilfe von Intune erstellt und zugewiesen werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

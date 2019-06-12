@@ -1,13 +1,12 @@
 ---
-title: Fehle- und Statuscodes in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Eine Liste der Fehler angezeigt, Statuscode, Beschreibungen und Lösungen bei Verwendung der Verwaltung mobiler Geräte verwaltete Geräte, die Zugriff auf Unternehmensressourcen zugreifen, Fehler auf iOS-Geräten und OMA-Antwort-Fehler in Microsoft Intune abrufen.
+title: Fehler und Statuscodes in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: See a list of the errors, status code, descriptions, and resolutions when using MDM managed devices, getting access to company resources, errors on iOS devices, and OMA response errors in Microsoft Intune (Anzeigen einer Liste mit Fehlern, Statuscode, Beschreibungen und Lösungen bei der Verwendung von mit der mobilen Geräteverwaltung verwalteten Geräten, Zugreifen auf Unternehmensressourcen, Fehler bei iOS-Geräten und OMA-Fehlermeldungen in Microsoft Intune).
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/20/2019
 ms.topic: troubleshooting
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,18 +16,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
-ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
+ms.openlocfilehash: 36d21c0b80a2737be39bbee2399f6005c43edc43
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58330477"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66040430"
 ---
-# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Allgemeine Fehlercodes und Beschreibungen in Microsoft Intune
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Häufige Fehlercodes und Beschreibungen in Microsoft Intune
 
-In diesem Artikel werden häufige Fehler, Statuscodes, Beschreibungen und mögliche Lösungen aufgeführt, beim Zugriff auf Organisationsressourcen. Verwenden Sie diese Informationen, um Probleme beheben können, wenn es sich bei Microsoft Intune verwendet.
+In diesem Artikel werden häufige Fehler, Statuscodes, Beschreibungen und mögliche Lösungen beim Zugriff auf Organisationsressourcen aufgeführt. Verwenden Sie diese Informationen, um Probleme beim Zugriff zu beheben, wenn Sie Microsoft Intune verwenden.
 
-Wenn Sie Hilfe benötigen, finden Sie unter [erhalten von Support für Microsoft Intune](get-support.md).
+Falls Sie Support benötigen, können Sie [Support für Microsoft Intune](get-support.md) anfordern.
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>Statuscodes für MDM-verwaltete Windows-Geräte
 
@@ -387,4 +386,4 @@ Wenn Sie Hilfe benötigen, finden Sie unter [erhalten von Support für Microsoft
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenden Sie sich an Microsoft Support, um [erhalten von Support für Microsoft Intune](get-support.md).
+Wenden Sie sich an den Microsoft-Support, um [Support für Microsoft Intune](get-support.md) zu erhalten.

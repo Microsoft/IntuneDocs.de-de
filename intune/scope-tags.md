@@ -7,7 +7,6 @@ ms.author: erikje
 manager: dougeby
 ms.date: 03/08/2019
 ms.topic: article
-ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
@@ -15,109 +14,115 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
-ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.openlocfilehash: 57a14e1e3c4caea570667096fec71cecf2d88ddf
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658548"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045193"
 ---
-# <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Verwenden Sie rollenbasierte Zugriffssteuerung (RBAC) und bereichsmarkierungen für verteilte IT
+# <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Verwenden der rollenbasierten Zugriffssteuerung und Bereichsmarkierungen für verteilte IT
 
-Sie können rollenbasierten Zugriff Kontrolle und Bereich-Tags verwenden, um sicherzustellen, dass die richtigen Administratoren die richtigen Zugriffsrechte und die Sichtbarkeit auf die richtige Intune-Objekte verfügen. Rollen bestimmen, welche Administratoren haben, auf welche Objekte. Bereichsmarkierungen bestimmen, welche Objekte Administratoren anzeigen können.
+Sie können die rollenbasierte Zugriffssteuerung und Bereichsmarkierungen verwenden, um sicherzustellen, dass die richtigen Administratoren über die korrekten Zugriffsrechte und Sichtbarkeit für die entsprechenden Intune-Objekte verfügen. Mit Rollen wird bestimmt, über welchen Zugriff Administratoren auf welche Objekte verfügen. Mit Bereichsmarkierungen wird bestimmt, welche Objekte Administratoren sehen können.
 
-Nehmen wir beispielsweise an, dass ein Niederlassung Seattle-Administrator die Richtlinien- und Profil-Manager-Rolle zugewiesen ist. Sie möchten diesen Administrator anzeigen und verwalten nur die Profile und Richtlinien, die nur für Seattle Geräte gelten. Zu diesem Zweck sollen wie folgt vor:
+Angenommen, einem Administrator der Bezirksdirektion von Seattle wird die Rolle „Richtlinien- und Profil-Manager“ zugewiesen. Sie möchten, dass dieser Administrator nur die Profile und Richtlinien sieht und verwalten kann, die für Geräte in Seattle gelten. Hierzu müssten Sie folgendermaßen vorgehen:
 
-1. Erstellen Sie eine bereichsmarkierung namens Seattle.
-2. Erstellen einer rollenzuweisung für die Richtlinien- und Profil-Manager-Rolle mit: 
-    - Mitglieder (Gruppen) = eine Sicherheitsgruppe namens Seattle IT-Administratoren. Alle Administratoren in dieser Gruppe werden über die Berechtigung zum Verwalten von Richtlinien und Profile für Benutzer/Geräte im Bereich (Gruppen).
-    - Bereich (Gruppen) = ein Gruppe mit dem Namen Seattle Benutzer. Alle Benutzer/Geräte in dieser Gruppe haben ihre Profile und Richtlinien, die von den Administratoren in der Mitglieder (Gruppen) verwaltet werden. 
-    - Bereich (Markierungen) = Seattle. Administratoren in der Member (Gruppen) können Geräte anzuzeigen, die außerdem den Seattle bereichsmarkierung verfügen.
-3. Hinzufügen der bereichsmarkierung Seattle, Richtlinien und Profile, die Administratoren in Mitglieder (Gruppen) in der Lage, den Zugriff auf sein soll.
-4. Fügen Sie der bereichsmarkierung Seattle für Geräte, die Gruppe "Administratoren" in der Mitglieder (Gruppen) angezeigt werden soll. 
+1. Erstellen Sie eine Bereichsmarkierung namens „Seattle“.
+2. Erstellen Sie eine Rollenzuweisung für die Rolle „Richtlinien- und Profil-Manager“ mit: 
+    - Mitglieder (Gruppen): Eine Sicherheitsgruppe namens „Seattle-IT-Administratoren“. Alle Administratoren in dieser Gruppe verfügen über die Berechtigung zum Verwalten von Richtlinien und Profilen für Benutzer/Geräte im Bereich (Gruppen).
+    - Mitglieder (Gruppen): Eine Sicherheitsgruppe namens „Seattle-Benutzer“. Alle Benutzer/Geräte in dieser Gruppe können über ihre eigenen Profile und Richtlinien verfügen, die von den Administratoren in Mitglieder (Gruppen) verwaltet werden. 
+    - Bereich (Markierungen): Seattle. Die Administratoren in Mitglieder (Gruppen) können Geräte sehen, die ebenfalls über die Bereichsmarkierung „Seattle“ verfügen.
+3. Fügen Sie die Seattle-Bereichsmarkierung zu Richtlinien und Profilen hinzu, auf die Administratoren in Mitglieder (Gruppen) zugreifen können sollen.
+4. Fügen Sie die Seattle-Bereichsmarkierung zu Geräten hinzu, die für Administratoren in Mitglieder (Gruppen) sichtbar sein sollen. 
 
 
 ## <a name="to-create-a-scope-tag"></a>So erstellen Sie eine Bereichsmarkierung
 
-1. Wählen Sie in Intune **Rollen** > **Bereich (Markierungen)** > **erstellen**.
+1. Klicken Sie in Intune auf **Rollen** > **Bereich (Markierungen)**  > **Erstellen**.
 
-    ![Screenshot: Erstellen Sie eine bereichsmarkierung.](./media/scope-tags/create-scope-tag.png)
+    ![Screenshot: Erstellen einer Bereichsmarkierung](./media/scope-tags/create-scope-tag.png)
 
 2. Geben Sie einen **Namen** und eine **Beschreibung** an.
 3. Wählen Sie **Erstellen** aus.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>So weisen Sie einer Rolle eine Bereichsmarkierung zu
 
-1. Wählen Sie in Intune **Rollen** > **alle Rollen** > Wählen Sie eine Rolle > **Zuweisungen** > **weisen**.
+1. Klicken Sie in Intune auf **Rollen** > **Alle Rollen**, wählen Sie eine Rolle aus, und klicken Sie dann auf **Zuweisungen** > **Zuweisen**.
 
-    ![Screenshot des Bereichs einer Rolle zuweisen.](./media/scope-tags/assign-scope-to-role.png)
+    ![Screenshot: Zuweisen des Bereichs zu einer Rolle](./media/scope-tags/assign-scope-to-role.png)
 
-2. Geben Sie eine **Zuweisungsname** und **Beschreibung**.
-3. Wählen Sie **Mitglieder (Gruppen)** > **hinzufügen** > Wählen Sie die Gruppen, die im Rahmen dieser Aufgabe sollen > **wählen**  >   **OK**. mUsers in dieser Gruppe haben die Berechtigung zum Verwalten von Richtlinien und Profile für Benutzer/Geräte im Bereich (Gruppen).
+2. Geben Sie einen **Zuweisungsnamen** und eine **Beschreibung** an.
+3. Klicken Sie auf **Mitglieder (Gruppen)**  > **Hinzufügen**, wählen Sie die Gruppen aus, die Sie als Teil dieser Zuweisung verwenden möchten, und klicken Sie dann auf **Auswählen** > **OK**. Die Benutzer in dieser Gruppe verfügen über die Berechtigungen zum Verwalten von Richtlinien und Profilen für Benutzer/Geräte im Bereich (Gruppen).
 
-    ![Screenshot der select-Elementgruppen.](./media/scope-tags/select-member-groups.png)
+    ![Screenshot: Benutzergruppen auswählen](./media/scope-tags/select-member-groups.png)
 
-4. Wenn Sie Benutzer/Geräte in einem bestimmten Satz von Gruppen verwalten möchten, wählen Sie **Bereich (Gruppen)** > **ausgewählte Gruppen** > **einzuschließendeGruppenauswählen**> Wählen Sie die Gruppen > **wählen** > **OK**. Alle Benutzer/Geräte in dieser Gruppe haben ihre Profile und Richtlinien, die von den Administratoren in die Elemente (Gruppe) verwaltet werden.
+4. Wenn Sie die Benutzer/Geräte bestimmter Gruppen verwalten möchten, klicken Sie auf **Bereich (Gruppen)**  > **Ausgewählte Gruppen** > **Select groups to include** (Einzuschließende Gruppen auswählen), wählen Sie die Gruppen aus, und klicken Sie dann auf **Auswählen** > **OK**. Alle Benutzer/Geräte in dieser Gruppe können über ihre eigenen Profile und Richtlinien verfügen, die von den Administratoren in Mitglieder (Gruppen) verwaltet werden.
 
-    ![Screenshot der Option Bereichsgruppen.](./media/scope-tags/select-scope-groups.png)
+    ![Screenshot: Bereichsgruppen auswählen](./media/scope-tags/select-scope-groups.png)
 
-    Alternativ können Sie **alle Geräte**, **alle Benutzer**, oder **alle Benutzer und alle Geräte**.
+    Alternativ können Sie **Alle Geräte**, **Alle Benutzer** oder **All Users & All Devices**. (Alle Benutzer & Alle Geräte) auswählen.
 
-    ![Screenshot der anderen Optionen für die Option Bereichsgruppen.](./media/scope-tags/scope-group-other-options.png)
+    ![Screenshot: Weitere Optionen zum Auswählen von Bereichsgruppen](./media/scope-tags/scope-group-other-options.png)
     
-5. Wählen Sie **Bereich (Markierungen)** > **hinzufügen** > Wählen Sie die Tags, die Sie dieser Rolle hinzufügen möchten > **wählen** > **OK**. Benutzer in Mitglieder (Gruppen) müssen den Zugriff auf die Richtlinien und Profile, die außerdem die gleichen bereichsmarkierung verfügen.
+5. Klicken Sie auf **Bereich (Markierungen)**  > **Hinzufügen**, wählen Sie die Markierungen aus, die Sie zur Rolle hinzufügen möchten, und klicken Sie dann auf **Auswählen** > **OK**. Dadurch erhalten Benutzer in Mitglieder (Gruppen) Zugriff auf die Richtlinien und Profile, die dieselbe Bereichsmarkierung aufweisen.
 
-    ![Screenshot der Option bereichsmarkierungen.](./media/scope-tags/select-scope-tags.png)
+    ![Screenshot: Bereichsmarkierungen auswählen](./media/scope-tags/select-scope-tags.png)
 
 6. Wählen Sie **OK** aus. 
 
 ## <a name="to-add-a-scope-tag-to-a-configuration-profile"></a>So fügen Sie eine Bereichsmarkierung einem Konfigurationsprofil hinzu
-1. Wählen Sie in Intune **Gerätekonfiguration** > **Profile** > Auswählen eines Profils.
+1. Klicken Sie in Intune auf **Gerätekonfiguration** > **Profile**, und wählen Sie ein Profil aus.
 
-    ![Screenshot der Option-Profil.](./media/scope-tags/choose-profile.png)
+    ![Screenshot: Profil auswählen](./media/scope-tags/choose-profile.png)
 
-2. Wählen Sie **Eigenschaften** > **Bereich (Markierungen)** > **hinzufügen**.
+2. Klicken Sie auf **Eigenschaften** > **Bereich (Markierungen)**  > **Hinzufügen**.
 
-    ![Screenshot des Bereichs Hinzufügen von Tags.](./media/scope-tags/add-scope-tags.png)
+    ![Screenshot: Bereichsmarkierungen hinzufügen](./media/scope-tags/add-scope-tags.png)
 
-3. Klicken Sie unter **Tags auswählen**, wählen Sie die Tags, die Sie zum Profil hinzufügen möchten.
-4. Wählen Sie **wählen** > **OK** > **speichern**.
+3. Wählen Sie unter **Markierungen auswählen** die Markierungen aus, die Sie zum Profil hinzufügen möchten.
+4. Klicken Sie auf **Auswählen** > **OK** > **Speichern**.
 
-## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>Eine app-Konfigurationsrichtlinie eine bereichsmarkierung zuweisen
-Für Geräte mit **geräteregistrierungstyp** festgelegt **verwaltete Geräte**:
-1. Wählen Sie **Clientanwendungen** > **App-Konfigurationsrichtlinien** > Wählen Sie eine app-Konfigurationsrichtlinie.
-2. Wählen Sie **Eigenschaften** > **Bereich (Markierungen)** > Wählen Sie die Tags, die Sie für die Richtlinie zuweisen möchten.
+## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>Zuweisen einer Bereichsmarkierung zu einer App-Konfigurationsrichtlinie
+Geräte mit **Verwaltete Geräte** als **Geräteregistrierungstyp**:
+1. Klicken Sie auf **Client-Apps** > **App-Konfigurationsrichtlinien**, und wählen Sie eine App-Konfigurationsrichtlinie aus.
+2. Klicken Sie auf **Eigenschaften** > **Bereich (Markierungen)** , und wählen Sie die Markierungen aus, die Sie der Richtlinie zuweisen möchten.
 
-Für Geräte mit **geräteregistrierungstyp** festgelegt **verwaltete apps**:
-1. Wählen Sie **Clientanwendungen** > **App-Konfigurationsrichtlinien** > Wählen Sie eine app-Konfigurationsrichtlinie.
-2. Wählen Sie **Bereich (Markierungen)** > Wählen Sie die Tags, die Sie für die Richtlinie zuweisen möchten.
+Geräte mit **Verwaltete Apps** als **Geräteregistrierungstyp**:
+1. Klicken Sie auf **Client-Apps** > **App-Konfigurationsrichtlinien**, und wählen Sie eine App-Konfigurationsrichtlinie aus.
+2. Klicken Sie auf **Bereich (Markierungen)** , und wählen Sie die Markierungen aus, die Sie der Richtlinie zuweisen möchten.
 
 
-## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>Eine iOS-app, das Bereitstellungsprofil eine bereichsmarkierung zuweisen
-1. Wählen Sie in Intune **Clientanwendungen** > **iOS-app-bereitstellungsprofile** > Auswählen eines Profils.
-2. Wählen Sie **Eigenschaften** > **Bereich (Markierungen)** > Wählen Sie die Tags, die Sie dem Profil zuweisen möchten.
-3. Wählen Sie **wählen** > **OK** > **speichern**.
+## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>Zuweisen einer Bereichsmarkierung zu einem iOS-App-Bereitstellungsprofil
+1. Klicken Sie in Intune auf **Client-Apps** > **iOS-App-Bereitstellungsprofile**, und wählen Sie ein Profil aus.
+2. Klicken Sie auf **Eigenschaften** > **Bereich (Markierungen)** , und wählen Sie die Markierungen aus, die Sie dem Profil zuweisen möchten.
+3. Klicken Sie auf **Auswählen** > **OK** > **Speichern**.
 
-## <a name="scope-tag-details"></a>Tag-Details des berechtigungsbereichs
-Bei der Arbeit mit bereichsmarkierungen Beachten Sie Folgendes aus:
+## <a name="to-assign-a-scope-tag-to-an-apple-volume-purchase-program-vpp-token"></a>Zuweisen einer Bereichsmarkierung zu einem Apple Volume Purchase Program-Token (VPP)
+1. Klicken Sie in Intune auf **Client-Apps** > **Apple-VPP-Token**, und wählen Sie ein VPP-Token aus.
+2. Klicken Sie auf **Bereich (Markierungen)** , und wählen Sie die Markierungen aus, die Sie dem Profil zuweisen möchten. Die VPP-Apps und E-Books, die dem VPP-Token zugeordnet sind, erben die zugewiesenen Markierungen.
+3. Klicken Sie auf **Auswählen** > **OK** > **Speichern**.
 
-- Sie können derzeit Bereich Tags zuweisen:
+## <a name="scope-tag-details"></a>Informationen zu Bereichsmarkierungen
+Bei der Arbeit mit Bereichsmarkierungen sollten Sie Folgendes beachten:
+
+- Derzeit können Sie Folgendem Bereichsmarkierungen zuweisen:
     - Rollenzuweisungen
     - Gerätekompatibilitätsrichtlinien
     - Gerätekonfigurierungsprofile
-    - Windows 10-Ringe updates
+    - Windows 10-Updateringe
     - Verwaltete Geräte
     - Apps
-    - App-Konfigurationsrichtlinien für verwaltete Geräte
+    - App-Konfigurationsrichtlinien – verwaltete Geräte
     - PowerShell-Skripts
     - DEP-Token
     - Bereitstellungsprofil für iOS-Apps
-- Wenn ein Administrator ein Objekt in Intune erstellt, werden alle bereichsmarkierungen, die den betreffenden Administrator zugewiesen automatisch das neue Objekt zugewiesen werden.
-- Intune RBAC gilt nicht für Azure Active Directory-Rollen. Daher haben, die Intune-Dienstadministratoren Gruppenverwaltungsaufgaben und globale Administratoren von Rollen vollständigen Administratorzugriff auf Intune unabhängig davon, welche bereichsmarkierungen, sie haben.
-- Administratoren in einer rollenzuweisung mit bereichsmarkierungen können auch keine bereichsmarkierungen Intune Objekten anzeigen.
-- Sie können nur eine bereichsmarkierung zuweisen, die Sie in Ihren rollenzuweisungen verfügen.
-- Sie können nur für den Zielgruppen, die im Bereich (Gruppen) der rollenzuweisung aufgeführt sind.
-- Wenn Sie eine bereichsmarkierung für Ihre Rolle zugewiesen haben, kann nicht alle bereichsmarkierungen für ein Intune-Objekt gelöscht werden. Mindestens eine bereichsmarkierung ist erforderlich.
+    - Volume Purchase Program-Token (VPP)
+- Wenn ein Administrator ein Objekt in Intune erstellt, werden alle Bereichsmarkierungen, die diesem Administrator zugewiesen sind, automatisch dem neuen Objekt zugewiesen.
+- Die rollenbasierte Zugriffssteuerung von Intune gilt nicht für Azure Active Directory-Rollen. Intune-Dienstadministratoren und globale Administratoren verfügen unabhängig von ihren Bereichsmarkierungen über vollständigen Administratorzugriff auf Intune.
+- Administratoren in einer Rollenzuweisung mit Bereichsmarkierungen können auch Intune-Objekte sehen, denen keine Bereichsmarkierungen zugewiesen sind.
+- Sie können nur Bereichsmarkierungen zuweisen, die in Ihren Rollenzuweisungen enthalten sind.
+- Sie können nur Zielgruppen verwenden, die in Bereich (Gruppen) Ihrer Rollenzuweisung enthalten sind.
+- Wenn Ihrer Rolle eine Bereichsmarkierung zugewiesen ist, können Sie nicht alle Bereichsmarkierungen eines Intune-Objekts löschen. Mindestens eine Bereichsmarkierung ist erforderlich.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

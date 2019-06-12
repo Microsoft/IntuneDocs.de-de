@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/09/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 151ceaa40f2993d3160b9de34eee92e53c35925d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 84a4db5639a03720b03da665c9df09fbc39d9df5
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565858"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66045016"
 ---
 # <a name="windows-holographic-for-business-settings-to-manage-shared-devices-using-intune"></a>Windows Holographic for Business-Einstellungen zum Verwalten gemeinsam genutzter Geräte in Intune
 
@@ -44,9 +43,9 @@ Weitere Informationen zu diesem Intune-Feature finden Sie unter [Control access,
 > Unter Windows Holographic for Business ausgeführte Geräte, z.B. Microsoft HoloLens, unterstützen ausschließlich die Einstellungen der **Kontoverwaltung**. Wenn Sie eine der anderen in Intune angezeigten Einstellungen konfigurieren (wie z.B. **Modus für die gemeinsame PC-Nutzung**), hat dies keine Auswirkungen auf diese Geräte.
 
 - **Kontoverwaltung**: Bei Festlegung auf **Aktivieren** werden lokale Gastkonten und Konten in AD und Azure AD automatisch gelöscht. Wenn ein Benutzer sich von einem Gerät abmeldet oder die Systemwartung ausgeführt wird, werden diese Konten gelöscht. Wenn diese Option aktiviert ist, sollten sie auch die folgenden festlegen:
-  - **Konto löschen**: auswählen, wenn Konten gelöscht werden: **auf Storage Space Schwellenwert**, **speicherplatzschwellenwert für Speicher und inaktive Schwellenwert**, oder **unmittelbar nach der Abmeldung** . Geben Sie außerdem Folgendes ein:
-    - **Start löschen threshold(%)**: Geben Sie einen Prozentwert (0 – 100) der Speicherplatz auf dem Datenträger. Wenn der gesamte Speicherplatz unter den eingegebenen Wert fällt, werden die zwischengespeicherten Konten gelöscht. Es werden fortlaufend Konten gelöscht, um Speicherplatz freizugeben. Die Konten, die am längsten inaktiv sind, werden zuerst gelöscht.
-    - **Beenden Sie die Delete-threshold(%)**: Geben Sie einen Prozentwert (0 – 100) der Speicherplatz auf dem Datenträger. Wenn der gesamte Speicherplatz dem eingegebenen Wert entspricht, werden keine Konten mehr gelöscht.
+  - **Kontolöschung:** Wählen Sie aus, wann Konten gelöscht werden sollen: **Bei Erreichen des Schwellenwerts für Speicherplatz**, **Bei Erreichen des Schwellenwerts für Speicherplatz und inaktive Konten** oder **Sofort nach der Abmeldung**. Geben Sie außerdem Folgendes ein:
+    - **Schwellenwert (%) für das Starten von Löschungen:** Geben Sie einen Prozentsatz (0–100) für den Speicherplatz ein. Wenn der gesamte Speicherplatz unter den eingegebenen Wert fällt, werden die zwischengespeicherten Konten gelöscht. Es werden fortlaufend Konten gelöscht, um Speicherplatz freizugeben. Die Konten, die am längsten inaktiv sind, werden zuerst gelöscht.
+    - **Schwellenwert (%) für das Beenden von Löschungen:** Geben Sie einen Prozentsatz (0–100) für den Speicherplatz ein. Wenn der gesamte Speicherplatz dem eingegebenen Wert entspricht, werden keine Konten mehr gelöscht.
 
   Legen Sie die Option auf **Deaktivieren** fest, um die lokalen, AD- und Azure AD-Gastkonten beizubehalten.
 

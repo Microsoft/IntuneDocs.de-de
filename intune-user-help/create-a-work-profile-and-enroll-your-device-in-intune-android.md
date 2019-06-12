@@ -1,11 +1,11 @@
 ---
-title: Registrieren Ihres Geräts mithilfe eines Arbeitsprofils | Microsoft-Dokumentation
-description: So verbessern Sie Android-Geräte durch Arbeitsprofile
+title: Registrieren von Geräten mit Android-Arbeitsprofil | Microsoft-Dokumentation
+description: How to create a work profile and enroll device (Erstellen eines Arbeitsprofils und Registrieren eines Geräts)
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/05/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,20 +18,20 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eab28cdd4515561ad34a433773e351150a87f626
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 6fb5911f8a706f38e3e880c32113d203369ed870
+ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57334951"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66196937"
 ---
-# <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Erstellen eines Arbeitsprofils und Registrieren Ihres Geräts bei Intune
+# <a name="enroll-device-with-android-work-profile"></a>Registrieren eines Geräts mit dem Android-Arbeitsprofil
 
-Durch die Registrierung Ihres Android-Geräts können Sie auf Geschäfts-E-Mails, -Apps und andere unternehmensspezifische Daten zugreifen. Im Rahmen der Anmeldung richten Sie ein Arbeitsprofil ein, das die privaten Daten auf Ihrem Gerät von Ihren Arbeitsdaten trennt.
+Registrieren Sie Ihr persönliches Android-Gerät, um Zugriff auf geschäftliche E-Mails, Apps und andere Arbeitsdaten zu erhalten. Bei der Registrierung richten Sie ein Android-Arbeitsprofil ein. Dieses Profil trennt die personenbezogenen Daten auf Ihrem Gerät von Ihren Arbeitsdaten. Der Support Ihres Unternehmens verwaltet nur das Arbeitsprofil, das aus Arbeitsdateien und Daten besteht. Der Support Ihres Unternehmens kann die privaten Daten auf Ihrem Gerät nicht verwalten. Weitere Informationen dazu finden Sie unter [Was geschieht beim Erstellen eines Arbeitsprofils?](what-happens-when-you-create-a-work-profile-android.md).  
+</br>
+> [!VIDEO https://www.youtube.com/embed/9Dl8HsGk4tI?rel=0]
 
-Der Support Ihres Unternehmens kann nur das Arbeitsprofil verwalten, das Ihre Geschäftsdaten enthält. Der Support Ihres Unternehmens kann nicht die privaten Daten auf Ihrem Gerät verwalten. Weitere Informationen dazu finden Sie unter [Was geschieht beim Erstellen eines Arbeitsprofils?](what-happens-when-you-create-a-work-profile-android.md).
-
-So erstellen Sie ein Arbeitsprofil:
+## <a name="create-work-profile-and-enroll-device"></a>Erstellen eines Arbeitsprofils und Registrieren eines Geräts
 
 1.  Tippen Sie im Android-Unternehmensportal auf dem **Willkommensbildschirm** auf **Anmelden**, und melden Sie sich dann mit Ihrem Geschäfts-, Schul- oder Unikonto an. Wenn Sie die kostenlose App noch nicht installiert haben, laden Sie diese herunter, und installieren Sie sie von [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
@@ -63,7 +63,7 @@ So erstellen Sie ein Arbeitsprofil:
 
     Ihnen wird eine Reihe von Nachrichten mit dem Text „Einrichten Ihres Arbeitsprofils“ und „Registrierung des Geräts“ angezeigt.
 
-8. Wenn Sie auf dem **You‘re Halfway There!**-Bildschirm (Sie haben es fast geschafft!) angelangt sind, warten Sie ein paar Sekunden, bis die Unternehmensportal-App geöffnet wird.
+8. Wenn Sie auf dem **You‘re Halfway There!** -Bildschirm (Sie haben es fast geschafft!) angelangt sind, warten Sie ein paar Sekunden, bis die Unternehmensportal-App geöffnet wird.
 
     ![Tippen Sie auf die Unternehmensportal-App mit dem Pin](./media/andr-afw-tap-work-badged-company-portal-icon2.png)
 
@@ -82,5 +82,7 @@ So erstellen Sie ein Arbeitsprofil:
     Sie erhalten nun Unternehmens-Apps aus dem Play Store for Work.
 
     ![App-Seite Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
+
+## <a name="next-steps"></a>Nächste Schritte  
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

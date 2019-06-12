@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/15/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94f907ee8805c5f0559e8751a7cd69bacf1612ee
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 647e1cd6925df27d42186599ad6786e866742b44
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565502"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66042277"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Android-Geräteeinstellungen zum Konfigurieren von E-Mail, Authentifizierung und Synchronisierung in Intune
 
@@ -52,9 +51,9 @@ Weitere Informationen zu E-Mail-Profilen in Intune finden Sie unter [Hinzufügen
       Wenn Sie sich dazu entscheiden, die Attribute **Benutzerdefiniert** zu verwenden, geben Sie Folgendes ein:
       - **Zu verwendender benutzerdefinierter Domänenname:** Geben Sie einen Wert ein, den Intune als Domänennamen verwenden kann, wie z.B. `contoso.com` oder `contoso`
 
-- **E-Mail-Adressattribut aus AAD**: dieser Name ist der-e-Mail-Attribut, das Intune von Azure AD abruft. Intune generiert dynamisch die E-Mail-Adresse, die von diesem Profil verwendet wird. Folgende Optionen sind verfügbar:
+- **E-Mail-Adressenattribut aus AAD:** Dieser Name ist das E-Mail-Adressenattribut, dass Intune aus Azure AD abruft. Intune generiert dynamisch die E-Mail-Adresse, die von diesem Profil verwendet wird. Folgende Optionen sind verfügbar:
   - **Benutzerprinzipalname**: Der vollständige Prinzipalname, z.B. `user1@contoso.com` oder `user1`, wird als E-Mail-Adresse verwendet.
-  - **Primäre SMTP-Adresse**: verwendet die primäre SMTP-Adresse, z. B. `user1@contoso.com`, um zum Anmelden bei Exchange.
+  - **Primäre SMTP-Adresse:** Verwendet die primäre SMTP-Adresse, z. B. `user1@contoso.com`, zum Anmelden bei Exchange.
 
 - **Authentifizierungsmethode:** Wählen Sie entweder **Benutzername und Kennwort** oder **Zertifikate** als Authentifizierungsmethode aus, die vom E-Mail-Profil verwendet werden soll.
   - Wenn Sie **Zertifikat** auswählen, wählen Sie ein SCEP- oder PKCS-Clientzertifikatprofil aus, das Sie zur Authentifizierung der Exchange-Verbindung zuvor erstellt haben.
