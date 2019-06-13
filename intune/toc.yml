@@ -270,7 +270,7 @@
         - name: Löschen eines macOS-Geräts
           href: device-erase.md
         - name: Remotesteuerung mobiler Geräte
-          href: device-profile-android-teamviewer.md
+          href: teamviewer-support.md
         - name: Zurücksetzen der PIN unter Windows 10
           href: device-windows-pin-reset.md
         - name: Synchronisieren eines Geräts
