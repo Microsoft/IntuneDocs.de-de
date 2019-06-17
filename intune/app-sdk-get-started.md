@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/29/2019
+ms.date: 06/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35f4007d03ca66ada5721de1ffe20dd87bfe4527
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
+ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043795"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66506871"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Erste Schritte mit dem Microsoft Intune App SDK
 
@@ -81,9 +81,9 @@ Es wird empfohlen, sich für ein GitHub-Konto zu registrieren, mit dem Sie Fork-
 
 Sie benötigen einen der folgenden Entwicklerleitfäden zum Integrieren des Intune App SDK in Ihre App:
 
-* **[Entwicklerleitfaden zum Intune App SDK für iOS](app-sdk-ios.md)** : In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native iOS-App für das Intune App SDK einrichten.
+* **[Entwicklerleitfaden zum Intune App SDK für iOS](app-sdk-ios.md)**: In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native iOS-App für das Intune App SDK einrichten.
 
-* **[Entwicklerleitfaden zum Intune App SDK für Android](app-sdk-android.md)** : In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native Android-App für das Intune App SDK einrichten.
+* **[Entwicklerleitfaden zum Intune App SDK für Android](app-sdk-android.md)**: In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native Android-App für das Intune App SDK einrichten.
 
 * **[Leitfaden für Intune App SDK-Xamarin-Komponenten:](app-sdk-xamarin.md)** Dieses Dokument hilft Ihnen beim Erstellen von iOS- und Android-Apps mithilfe von Xamarin für Intune-App-Schutzrichtlinien.
 
@@ -174,15 +174,12 @@ Wenn Ihre App die eigenen benutzerdefinierten Azure Active Directory-Einstellung
 Nachdem Sie Ihre App innerhalb eines Azure-Mandanten registriert haben und sie unter **Alle Anwendungen** angezeigt wird, müssen Sie Ihrer App Zugriff auf den Intune-App-Schutzdienst (vormals bekannt als MAM-Dienst) gewähren. Im Azure-Portal:
 
 1.  Navigieren Sie zum Blatt **Azure Active Directory**.
-2.  Wählen Sie die Einrichtung **App-Registrierung** für die Anwendung aus.
-3.  Klicken Sie in den **Einstellungen** unter der Überschrift **API-Zugriff** auf **Erforderliche Berechtigung**. 
-4.  Klicken Sie auf **+ Hinzufügen**.
-5.  Klicken Sie auf **Hiermit wählen Sie eine API aus**. 
-6.  Geben Sie in das Suchfeld **Microsoft Mobile Application Management** (Verwaltung mobiler Microsoft-Anwendungen) ein.
-7.  Wählen Sie in der API-Liste **Microsoft Mobile Application Management** (Verwaltung mobiler Microsoft-Anwendungen) aus, und klicken Sie auf „Auswählen“.
-8.  Klicken Sie auf **Read and Write the User’s App Management Data** (Lese- und Schreibberechtigungen für die App-Verwaltungsdaten des Benutzers).
-9.  Klicken Sie auf **Fertig**.
-10. Klicken Sie auf **Berechtigungen erteilen**, und klicken Sie anschließend auf **Ja**. 
+2.  Wählen Sie den unter **App-Registrierungen** eingerichteten Eintrag für die Anwendung aus.
+3.  Klicken Sie auf **+ Berechtigung hinzufügen**.
+4.  Wählen Sie die Registerkarte **Von meiner Organisation verwendete APIs** aus. 
+5.  Geben Sie in das Suchfeld **Microsoft Mobile Application Management** (Verwaltung mobiler Microsoft-Anwendungen) ein.
+6.  Aktivieren Sie unter **Delegierte Berechtigungen** das Kontrollkästchen **DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data** (DeviceManagementManagedApps.ReadWrite: Lesen und Schreiben der App-Verwaltungsdaten des Benutzers).
+7. Klicken Sie auf **Berechtigungen hinzufügen**.
 
 ### <a name="badge-your-app-optional"></a>Anzeigen eines Badges auf Ihrem App-Symbol (optional)
 
