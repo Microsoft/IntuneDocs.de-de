@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 05/28/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 19e1ec5cda5a69320820899b1cb1c5d665fd9f16
+ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56742532"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66828955"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Installieren und freigeben von Apps auf Ihrem Gerät
 Installieren Sie über die Unternehmensportal-App für Windows Apps auf Ihrem Gerät.
@@ -70,6 +70,10 @@ Nachdem Sie den Link mit einer Person geteilt haben, erhält der Empfänger eine
 Ihre Organisation wählt die entsprechenden Apps aus, die für die Arbeit, Schule oder Universität nützlich sind. Sie finden nur diese Apps im Unternehmensportal.  
 
 Sie haben auch abhängig von Ihrem Gerätetyp Zugriff auf bestimmte Apps. Wenn Sie beispielsweise die Unternehmensportal-App für Windows verwenden, haben Sie Zugriff auf Windows-Apps, nicht aber auf iOS-Apps.  
+
+## <a name="required-apps"></a>Required apps  
+
+Ihre Organisation möglicherweise einige apps direkt auf Ihrem Gerät bereitstellen, und kennzeichnen **erforderlich**. Diese apps werden automatisch ohne Eingreifen des für Sie installiert.
 
 ## <a name="request-an-app-for-work-or-school"></a>Anfordern einer App für die Arbeit, Schule oder Universität  
 Wenn Sie eine App benötigen, diese jedoch nicht im Unternehmensportal finden, können Sie sie anfordern. Die Kontaktdetails für Ihren **Helpdesk** finden Sie in der Unternehmensportal-App auf der Seite für Hilfe und Support. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).    
