@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 417d244cbe64af967e61112f67dbf7829ce7feda
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7068bb96b72861c0647c44261edef0c3e83a120c
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046950"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031673"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Verwalten von Lizenzverträgen für Windows-PC-Software in Microsoft Intune
 
@@ -53,7 +53,7 @@ Darüber hinaus können Sie Berichte zur Zahl der Installationen und Lizenzen f�
 ## <a name="add-microsoft-volume-licensing-agreements"></a>Hinzufügen von Microsoft-Volumenlizenzverträgen
 In Intune-Volumenlizenzverträgen werden Lizenzinformationen für Software bereitgestellt, die über Microsoft-Volumenlizenzverträge erworben wurde. Sie können Intune Microsoft-Volumenlizenzverträge hinzufügen, indem Sie passende Paare von Vertragsnummern angeben. Die Vertrags- oder Autorisierungsnummern müssen der richtigen Lizenz- oder Registrierungsnummer zugeordnet werden. Vertragsnummernpaare erhalten Sie vom [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842), wenn Sie Lizenzverträge erwerben.
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://account.manage.microsoft.com/admin/default.aspx) die Option **Lizenzen** aus.
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://admin.manage.microsoft.com/) die Option **Lizenzen** aus.
 
 2.  Wählen Sie auf der Seite **Verträge hinzufügen** im Bereich **Vertragstyp auswählen**die Option **Volumenlizenzvertrag**aus.
 
@@ -102,7 +102,7 @@ In Intune-Volumenlizenzverträgen werden Lizenzinformationen für Software berei
         > [!NOTE]
         > Wenn Sie mehrere Vertragsnummernpaare hinzufügen, wird von Intune ein Vertrag mit dem Namen, den Sie angeben, erstellt, und alle Paare, die Sie hinzugefügt haben, werden Teil dieses Vertrags.
 
-    Klicken Sie auf **+**, um ein weiteres Vertragsnummernpaar hinzuzufügen, bzw. auf **-** , um ein bereits eingegebenes Vertragsnummernpaar zu entfernen.
+    Klicken Sie auf **+** , um ein weiteres Vertragsnummernpaar hinzuzufügen, bzw. auf **-** , um ein bereits eingegebenes Vertragsnummernpaar zu entfernen.
 
 4.  Führen Sie im Bereich **Lizenzgruppe auswählen** einen der folgenden Schritte aus:
 
@@ -138,7 +138,7 @@ Außerdem können Sie zusätzlich zu Microsoft-Volumenlizenzverträgen weitere T
 
 ### <a name="to-add-other-software-agreements"></a>So fügen Sie andere Softwareverträge hinzu
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://account.manage.microsoft.com/admin/default.aspx) die Option **Lizenzen** aus.
+1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://admin.manage.microsoft.com/) die Option **Lizenzen** aus.
 
 2.  Wählen Sie im Bereich **Andere Softwarelizenzverträge** die Option **Verträge hinzufügen** aus.
 

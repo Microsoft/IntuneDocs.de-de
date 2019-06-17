@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e39766bc8a880c104bd5af9ff530144e2b5d2beb
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 96ace484d0c4e832470ae9a6e4ffc69290c7d657
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041688"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044954"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Verwalten von Windows-PCs als Computer mit dem Intune-Softwareclient
 
@@ -70,16 +70,16 @@ Als Intune-Administrator können Sie Benutzern den Intune-Softwareclient auf ver
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Computerverwaltungsfunktionen mit der Intune-Clientsoftware
 In den meisten Szenarios registrieren Sie Ihre Geräte bei Microsoft Intune, sodass Sie über eine größere Anzahl von Funktionen verfügen. Allerdings können Sie PCs auch mit dem Intune-Softwareclient verwalten, der die folgenden Funktionen bietet:
 
--   **[Softwareupdateverwaltung](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)**: Sie können PCs auf dem aktuellen Stand halten und entscheiden, wann Updates angewendet werden sollen.
+-   **[Softwareupdateverwaltung](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** : Sie können PCs auf dem aktuellen Stand halten und entscheiden, wann Updates angewendet werden sollen.
 
--   **[Windows-Firewall-Richtlinie](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)**: Hiermit können Sie sicherstellen, dass die Windows-Firewall auf keinem von Ihrem Unternehmen verwendeten PC inaktiv oder nicht ordnungsgemäß konfiguriert ist.
+-   **[Windows-Firewall-Richtlinie](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** : Hiermit können Sie sicherstellen, dass die Windows-Firewall auf keinem von Ihrem Unternehmen verwendeten PC inaktiv oder nicht ordnungsgemäß konfiguriert ist.
 
--   **[Schutz vor Schadsoftware](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)**: Intune umfasst Endpoint Protection, um Ihre PCs vor Schadsoftware zu schützen.
+-   **[Schutz vor Schadsoftware](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** : Intune umfasst Endpoint Protection, um Ihre PCs vor Schadsoftware zu schützen.
 
--   **[Remoteunterstützung](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)**: Über Intune können Benutzer Kontakt mit IT-Supportmitarbeitern aufnehmen, die ihnen über eine in Intune integrierte Remotedesktop-Funktion Unterstützung bieten können (erfordert TeamViewer-Software).
+-   **[Remoteunterstützung](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** : Über Intune können Benutzer Kontakt mit IT-Supportmitarbeitern aufnehmen, die ihnen über eine in Intune integrierte Remotedesktop-Funktion Unterstützung bieten können (erfordert TeamViewer-Software).
 
--   **[Verwaltung von Softwarelizenzen](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)**: Überwachen Sie, wie viele Lizenzen verfügbar sind und wie viele Lizenzen verwendet werden.
--   **[App-Bereitstellung](add-apps-for-windows-pcs-in-microsoft-intune.md)**: Stellen Sie Software auf PCs bereit, die Sie verwalten. Einige App-Verwaltungsfunktionen sind nicht verfügbar, wenn Sie PCs mit dem Softwareclient verwalten.
+-   **[Verwaltung von Softwarelizenzen](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** : Überwachen Sie, wie viele Lizenzen verfügbar sind und wie viele Lizenzen verwendet werden.
+-   **[App-Bereitstellung](add-apps-for-windows-pcs-in-microsoft-intune.md)** : Stellen Sie Software auf PCs bereit, die Sie verwalten. Einige App-Verwaltungsfunktionen sind nicht verfügbar, wenn Sie PCs mit dem Softwareclient verwalten.
 
 <!-- - **Compliance settings reporting** -->
 
