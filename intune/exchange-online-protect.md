@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30c0e5af6d7ff0467383294c071d0ffdb96c5dc1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9d3e74244315b7345a632a9ecd2bf631a134e5ab
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041836"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045022"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Schützen von Office 365 Exchange Online ohne erforderliche Geräteverwaltung
 
@@ -34,9 +34,9 @@ Wenn Sie sich dafür entscheiden, ein Geräteverwaltungssystem einzurichten, kö
 
 1. [Weitere Informationen zum bedingten Zugriff](conditional-access.md). 
 2. [Weitere Informationen zum App-basierten bedingten Zugriff](app-based-conditional-access-intune.md).
-3. [Einrichten App-basierter Richtlinien für bedingten Zugriff](app-based-conditional-access-intune-create.md).
+3. [Einrichten App-basierter Richtlinien für bedingten Zugriff für Exchange Online](app-based-conditional-access-intune-create.md).
 4. [Blockieren von Apps, die nicht verwaltet werden können](app-modern-authentication-block.md), insbesondere Apps, die nicht die Authentifizierungsbibliothek von Azure Active Directory (ADAL) verwenden.
-5. (Optional) [Einrichten App-basierter Richtlinien für bedingten Zugriff](app-based-conditional-access-intune-create.md). Diese Richtlinien blockieren den Zugriff auf Ihre Unternehmensdaten über Apps, die nicht verwaltet und geschützt werden können. Die Richtlinien beschränken auch den Zugriff über die mobile Version von SharePoint. 
+5. (Optional) [Einrichten App-basierter Richtlinien für bedingten Zugriff für SharePoint Online](app-based-conditional-access-intune-create.md). Diese Richtlinien blockieren den Zugriff auf Ihre Unternehmensdaten über Apps, die nicht verwaltet und geschützt werden können. Die Richtlinien beschränken auch den Zugriff über die mobile Version von SharePoint. 
 
 ## <a name="what-to-tell-employees-and-students"></a>Informationen für Mitarbeiter und Studenten
 
@@ -47,7 +47,7 @@ Wenn Sie sich dafür entscheiden, ein Geräteverwaltungssystem einzurichten, kö
 
 Sie haben den App-basierten bedingten Zugriff verwendet, um die Sicherheit der Unternehmensdaten zu erhöhen. Im Zuge der nächsten Schritte können Sie mehr über die anderen Möglichkeiten erfahren, den Schutz Ihrer Unternehmensdaten zu erhöhen. Dazu zählt Folgendes: 
 
-* Einrichten des [bedingten Zugriffs basierend auf der Gerätekompatibilität, dem Geräterisiko, dem Speicherort und Benutzerattributen in Active Directory und Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)  
+* Einrichten des [bedingten Zugriffs basierend auf der Gerätekonformität, dem Geräterisiko, dem Speicherort und Benutzerattributen in Active Directory und Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)  
 * Einrichten von App-Schutzrichtlinien zum Schutz Ihrer Unternehmensdaten vor versehentlichen und vorsätzlichen Datenverlusten 
 * Verwenden von Azure Information Protection zum Schutz von Unternehmensdaten außerhalb Ihres Netzwerks 
 

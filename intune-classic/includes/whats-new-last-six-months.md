@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 9a18bceb6b42f06464baf31a4cdd4dea21d19675
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 984b78b271d130618ec0994f76e966f1dc338706
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461293"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044715"
 ---
 ## <a name="april-2017"></a>April 2017
 
@@ -26,7 +26,7 @@ Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der A
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Verhindern, dass Apps auf SharePoint Online zugreifen <!-- 679339 -->
 
-Sie können jetzt eine Richtlinie für den App-basierten bedingten Zugriff erstellen, um Apps, auf die keine Schutzrichtlinien angewendet wurden, am Zugriff auf [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online) zu hindern. Im Szenario des App-basierten bedingten Zugriffs können Sie Apps festlegen, die über das Azure-Portal auf SharePoint Online zugreifen können sollen.
+Sie können jetzt eine Richtlinie für den App-basierten bedingten Zugriff erstellen, um Apps, auf die keine Schutzrichtlinien angewendet wurden, am Zugriff auf [SharePoint Online](/intune-classic/deploy-use/mam-ca-for-sharepoint-online) zu hindern. Im Szenario des App-basierten bedingten Zugriffs können Sie Apps festlegen, denen der Zugriff auf SharePoint Online über das Azure-Portal gestattet werden soll.
 
 #### <a name="single-sign-in-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Unterstützung für einmaliges Anmelden in Outlook für iOS über das Unternehmensportal für iOS <!--834012-->
 Benutzer müssen sich nicht mehr in der Outlook-App anmelden, wenn sie in der Unternehmensportal-App für iOS auf dem gleichen Gerät mit dem gleichen Konto angemeldet sind. Wenn Benutzer die Outlook-App starten, können sie ihr Konto auswählen und sich automatisch anmelden. Wir arbeiten auch daran, diese Funktion für andere Microsoft-Apps hinzuzufügen.
@@ -112,14 +112,14 @@ Wir haben im Apple TestFlight-Programm eine Version der Unternehmensportal-App f
 
 #### <a name="support-for-skycure"></a>Unterstützung für Skycure
 
-Sie können nun den Zugriff mobiler Geräte auf Unternehmensressourcen mit bedingtem Zugriff basierend auf Risikobewertungen steuern, die von Skycure vorgenommen werden, einer Mobile Threat Defense-Lösung, die mit Microsoft Intune zusammenarbeitet. Das Risiko wird basierend auf Telemetriedaten von Geräten bewertet, auf denen Skycure ausgeführt wird, wie z.B.:
+Sie können jetzt den Zugriff mobiler Geräte auf Unternehmensressourcen mit bedingtem Zugriff basierend auf Risikobewertungen steuern, die von Skycure vorgenommen werden, einer Mobile Threat Defense-Lösung, die mit Microsoft Intune zusammenarbeitet. Das Risiko wird basierend auf Telemetriedaten von Geräten bewertet, auf denen Skycure ausgeführt wird, wie z.B.:
 
 - Physische Verteidigung
 - Netzwerkverteidigung
 - Anwendungsverteidigung
 - Verteidigung gegen Sicherheitsrisiken
 
-Sie können Richtlinien für bedingten EMS-Zugriff basierend auf Risikobewertungen von Skycure konfigurieren, die mithilfe von Intune-Gerätekompatibilitätsrichtlinien aktiviert werden. Sie können diese Richtlinien verwenden, um den Zugriff nicht kompatibler Geräte auf Unternehmensressourcen anhand der erkannten Bedrohungen zuzulassen oder zu blockieren. Weitere Informationen finden Sie unter [Skycure Mobile Threat Defense-Connector](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
+Sie können Richtlinien für bedingten EMS-Zugriff basierend auf Risikobewertungen von Skycure konfigurieren, die mithilfe von Intune-Gerätekonformitätsrichtlinien aktiviert werden. Sie können diese Richtlinien verwenden, um den Zugriff nicht kompatibler Geräte auf Unternehmensressourcen anhand der erkannten Bedrohungen zuzulassen oder zu blockieren. Weitere Informationen finden Sie unter [Skycure Mobile Threat Defense-Connector](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Neue Benutzeroberfläche für die Unternehmensportal-App für Android <!--621622-->
 

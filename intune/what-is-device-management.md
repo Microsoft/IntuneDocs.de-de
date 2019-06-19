@@ -4,10 +4,10 @@ description: Microsoft 365 Enterprise umfasst Microsoft Intune. Erfahren Sie, wi
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 06/12/2019
 ms.topic: conceptual
 audience: ITPro
-ms.service: ''
+ms.service: microsoft-intune
 ms.technology: ''
 ms.custom: intune
 ms.assetid: 0649d310-43a7-4b01-85d2-da255d03e1da
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 452cb8e4163b82d699347a33fd8dfda9c792b6fc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d5614f0657175658c1a8442d650e16c8550c1ac1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050272"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043841"
 ---
 # <a name="what-is-device-management"></a>Was ist die Geräteverwaltung? 
 
@@ -61,7 +61,7 @@ Eine Hauptaufgabe einer jeden Lösung für die Geräteverwaltung ist es, Sicherh
     - Aktivieren Sie [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10), um nach verdächtigen Aktivitäten in Dateien und Apps auf mobilen Geräten zu suchen. 
     - Verwenden Sie [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection), um Sicherheitsverletzungen auf mobilen Geräten zu verhindern. Und helfen Sie, die Auswirkungen eines Sicherheitsverstoßes zu begrenzen, indem Sie einen Benutzer von Unternehmensressourcen ausschließen.
 
-- **Bedingter Zugriff** ist ein Feature von Azure Active Directory und lässt sich gut mit Intune integrieren. Mithilfe des [bedingten Zugriffs](https://docs.microsoft.com/intune/conditional-access) können Sie sicherstellen, dass nur konforme Geräte auf E-Mail, SharePoint und andere Apps zugreifen dürfen. 
+- **Bedingter Zugriff** ist ein Feature von Azure Active Directory, das gut in Intune integriert werden kann. Mithilfe des [bedingten Zugriffs](https://docs.microsoft.com/intune/conditional-access) können Sie sicherstellen, dass nur konforme Geräte auf E-Mail, SharePoint und andere Apps zugreifen dürfen. 
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>Wählen Sie die Geräteverwaltungslösung aus, die für Sie geeignet ist
 

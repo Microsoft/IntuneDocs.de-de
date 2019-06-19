@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51ad3b2db3a45c06c0019b6f57ac4147112807fa
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5d229972c238756598694d2e3463f22290924ccc
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049831"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045471"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
@@ -82,7 +82,7 @@ Ziel des Intune App SDK für iOS ist es, iOS-Anwendungen mit minimalen Codeände
 
 Führen Sie die folgenden Schritte aus, um das Intune App SDK zu aktivieren:
 
-1. **Option 1 (empfohlen)**: Verknüpfen Sie `IntuneMAM.framework` mit Ihrem Projekt. Ziehen Sie `IntuneMAM.framework` in die Liste für **eingebettete Binärdateien** des Projektziels.
+1. **Option 1 (empfohlen)** : Verknüpfen Sie `IntuneMAM.framework` mit Ihrem Projekt. Ziehen Sie `IntuneMAM.framework` in die Liste für **eingebettete Binärdateien** des Projektziels.
 
    > [!NOTE]
    > Bei Verwendung des Frameworks müssen Sie die Simulatorarchitekturen manuell aus dem universellen Framework entfernen, bevor Sie Ihre App an den App Store übermitteln. Weitere Informationen siehe [Übermitteln Ihrer App an den App Store](#submit-your-app-to-the-app-store).
@@ -166,7 +166,7 @@ Normalerweise setzt ADAL voraus, dass Apps sich bei Azure Active Directory (AAD)
 
 Wenn Ihre App bereits ADAL zum Authentifizieren von Benutzern verwendet, muss sie ihre vorhandenen Registrierungswerte verwenden und die Standardwerte des Intune App SDK überschreiben. Dadurch wird sichergestellt, dass Benutzer nicht zweimal zur Authentifizierung aufgefordert werden (einmal vom Intune App SDK und einmal von der App).
 
-Ihre App sollte mit der [aktuellen Version von ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) auf deren Hauptverzweigung verknüpft sein. Das Intune App SDK verwendet derzeit den Brokerbranch von ADAL, um Apps zu unterstützen, für die bedingter Zugriff erforderlich ist. (Deshalb hängen diese Apps von der Microsoft Authenticator-App ab.) Das SDK ist trotzdem mit dem Hauptbranch von ADAL kompatibel. Verwenden Sie den Branch, der am besten zu Ihrer App passt.
+Ihre App sollte mit der [aktuellen Version von ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) auf deren Hauptverzweigung verknüpft sein. Das Intune App SDK verwendet derzeit den Brokerbranch von ADAL, um Apps zu unterstützen, für die bedingter Zugriff erforderlich ist. (Diese Apps hängen daher von der Microsoft Authenticator-App ab.) Das SDK ist trotzdem mit dem Hauptbranch von ADAL kompatibel. Verwenden Sie den Branch, der am besten zu Ihrer App passt.
 
 ### <a name="link-to-adal-binaries"></a>Verknüpfung mit ADAL-Binärdateien
 

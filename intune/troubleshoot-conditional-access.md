@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a5aeae0d4256232d01c7e6171b10159a130b513
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044670"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043904"
 ---
 # <a name="troubleshoot-conditional-access"></a>Problembehandlung beim bedingten Zugriff
 
@@ -30,7 +30,7 @@ Sie können den Zugriff auf Office 365-Dienste wie Exchange Online, SharePoint O
 
 ## <a name="requirements-for-conditional-access"></a>Anforderungen für bedingten Zugriff
 
-Für den bedingten Zugriff auf die Arbeit müssen die folgenden Anforderungen erfüllt sein:
+Damit der bedingte Zugriff funktioniert, müssen die folgenden Anforderungen erfüllt sein:
 
 - Das Gerät muss von Intune registriert und verwaltet werden.
 - Sowohl der Benutzer als auch das Gerät müssen den zugewiesenen Intune-Konformitätsrichtlinien entsprechen.
@@ -64,10 +64,10 @@ Sie können diese Bedingungen für alle Geräte im Azure-Portal und im Gerätein
 
 ## <a name="devices-are-noncompliant-but-users-are-not-blocked"></a>Die Geräte sind nicht konform, aber Benutzer werden nicht blockiert
 
-- Bei Windows-PCs blockiert der bedingte Zugriff nur die native E-Mail-App, Office 2013 mit moderner Authentifizierung oder Office 2016. Das Blockieren früherer Versionen von Outlook oder aller E-Mail-Anwendungen auf Windows-PCs erfordert die Konfiguration von AAD-Geräteregistrierung und Active Directory-Verbunddienste (AD FS) gemäß [Einrichten von SharePoint Online und Exchange Online für bedingten Zugriff mit Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication). 
+- Bei Windows-PCs blockiert der bedingte Zugriff nur die native E-Mail-App, Office 2013 mit moderner Authentifizierung oder Office 2016. Zum Blockieren früherer Versionen von Outlook oder aller E-Mail-Apps auf Windows-PCs ist die Konfiguration der AAD-Geräteregistrierung und der Active Directory-Verbunddienste (AD FS) gemäß [Einrichten von SharePoint Online und Exchange Online für bedingten Zugriff mit Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-no-modern-authentication) erforderlich. 
 - Wenn das Gerät gezielt zurückgesetzt oder von Intune außer Betrieb gesetzt wird, hat es nach der Deaktivierung möglicherweise noch mehrere Stunden lang Zugriff. Dies liegt daran, dass Exchange die Zugriffsrechte 6 Stunden lang zwischenspeichert. Ziehen Sie in diesem Szenario andere Möglichkeiten zum Datenschutz auf abgekoppelten Geräten in Betracht.
 - Surface Hub-Geräte unterstützen den bedingten Zugriff, Sie müssen die Konformitätsrichtlinie jedoch für Gerätegruppen (nicht für Benutzergruppen) bereitstellen, um eine korrekte Auswertung zu ermöglichen.
-- Überprüfen Sie die Zuweisungen für Ihre Konformitätsrichtlinien und Ihre Richtlinien für bedingte Zugriffe. Wenn sich ein Benutzer nicht in der Gruppe befindet, der die Richtlinien zugewiesen sind, oder wenn er sich in einer Gruppe befindet, die ausgeschlossen wird, wird der Benutzer nicht blockiert. Nur Geräte für Benutzer einer zugeordneten Gruppe werden auf Konformität geprüft.
+- Überprüfen Sie die Zuweisungen für Ihre Konformitätsrichtlinien und Ihre Richtlinien für bedingten Zugriff. Wenn sich ein Benutzer nicht in der Gruppe befindet, der die Richtlinien zugewiesen sind, oder wenn er sich in einer Gruppe befindet, die ausgeschlossen wird, wird der Benutzer nicht blockiert. Nur Geräte für Benutzer einer zugeordneten Gruppe werden auf Konformität geprüft.
 
 ## <a name="noncompliant-device-is-not-blocked"></a>Nicht konformes Gerät wird nicht blockiert
 

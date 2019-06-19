@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 06/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2950ddf4b130222e23fd9ea23f7c9e5793f8638a
-ms.sourcegitcommit: 229816afef86a9767eaca816d644c77ec4babed5
-ms.translationtype: MTE75
+ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
+ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66354220"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67041131"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
@@ -430,9 +430,9 @@ Diese Einstellungen verwenden den [DeviceLock-Richtlinien-CSP](https://docs.micr
     > [!IMPORTANT]
     > Wenn die Kennwortanforderung auf einem Windows-Desktop geändert wird, wirkt sich das auf die nächste Anmeldung der Benutzer aus, da das Gerät in diesem Moment aus dem Leerlauf in den aktiven Zustand wechselt. Benutzer mit Kennwörtern, die die Anforderungen erfüllen, werden trotzdem aufgefordert, ihre Kennwörter ändern.
     
-  - **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird**: Geben Sie die Anzahl zulässiger Authentifizierungsfehler ein, bevor das Gerät zurückgesetzt wird (zwischen 1 und 11). `0` (null) kann die Funktion zum Zurücksetzen des Geräts deaktivieren.
+  - **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird**: Geben Sie die Anzahl von Authentifizierungsfehlern ein, die zulässig sind, bevor das Gerät zurückgesetzt werden kann (bis zu 11). Die gültige Zahl, die Sie eingeben, hängt von der Edition ab. [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) sind die unterstützten Werte aufgeführt. Durch `0` (null) kann die Funktion zum Zurücksetzen des Geräts deaktiviert werden.
 
-    Diese Einstellung besitzt je nach Edition unterschiedliche Auswirkungen. Spezifische Details dazu finden Sie im [DeviceLock/MaxDevicePasswordFailedAttempts-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
+    Diese Einstellung besitzt zudem je nach Edition unterschiedliche Auswirkungen. Spezifische Details zu dieser Einstellung finden Sie im [DeviceLock/MaxDevicePasswordFailedAttempts-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
   - **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung**: Gebe Sie den Zeitraum der Inaktivität für ein Gerät ein, bevor der Bildschirm gesperrt wird.
   - **Kennwortablauf (Tage)** : Geben Sie den Zeitraum an, nach dem das Kennwort für das Gerät geändert werden muss (zwischen 1 und 365). Geben Sie beispielsweise `90` an, damit das Kennwort nach 90 Tagen abläuft.

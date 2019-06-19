@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/20/2018
+ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7fcee9a5d721eb3c898c65e18c6fd56189739ffa
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 28121178e2a5a3aa7e6d16b0a5936f1cad627c09
+ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840531"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66840963"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Aktualisieren der Unternehmensportal-App
 
@@ -29,7 +29,7 @@ In diesem Artikel wird beschrieben, wie Sie Ihre Version der Unternehmensportal-
 * Es ist eine neuere Version des Unternehmensportals verfügbar.
 * Ihre Version des Unternehmensportals wird nicht mehr unterstützt.
 
-In den folgenden Schritten wird beschrieben, wie Sie die App auf Android-, iOS- und Windows-Geräten aktualisieren oder die neueste Version erhalten.    
+In den folgenden Schritten wird beschrieben, wie Sie die App auf Android-, iOS-, macOS- und Windows-Geräten aktualisieren oder die neueste Version erhalten.    
 
 ## <a name="update-the-company-portal-app-on-your-android-device"></a>Aktualisieren der Unternehmensportal-App auf Ihrem Android-Gerät  
 
@@ -41,6 +41,16 @@ Wenn eine neue Version verfügbar ist, wird eine Option zum **Update** in Ihrer 
 
 1. Öffnen Sie den App Store, und suchen Sie nach **Intune**.  
 2. Wenn Sie die App gefunden haben, tippen Sie auf **Aktualisieren**.  
+
+## <a name="update-the-company-portal-app-on-your-macos-device"></a>Aktualisieren der Unternehmensportal-App auf Ihrem macOS-Gerät
+
+Richten Sie Unternehmensportal-App aus, um die automatische Installation von Updates, sobald sie verfügbar sind. 
+
+1. Öffnen Sie die Unternehmensportal-App, und wechseln Sie zu **Hilfe**. 
+2. Wählen Sie **Nach Updates suchen** aus. 
+3. Wählen Sie auf dem Bildschirm Microsoft AutoUpdate **automatisch heruntergeladen und installiert**. 
+
+Wählen Sie zum Anzeigen der verfügbaren Updates **nach Updates suchen**.  
 
 ## <a name="update-the-company-portal-app-on-your-windows-device"></a>Aktualisieren der Unternehmensportal-App auf Ihrem Windows-Gerät
 Öffnen Sie Microsoft Store, und wechseln Sie zu **Einstellungen**, um automatisch Updates zu erhalten, sobald diese verfügbar sind. Aktivieren Sie **App-Updates**. Um die neuesten Updates sowie Apps anzuzeigen, die sich in der Downloadwarteschlange befinden, wechseln Sie zu **Downloads und Updates**.  

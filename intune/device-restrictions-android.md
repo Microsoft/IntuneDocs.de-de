@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eeb70727a187a769e56a9cfd517ecd7b583ba1c1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f13b78e05b9f0b94d98677004c7059f1acaa80f9
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042465"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045719"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Listen der Standardeinstellungen für Geräteeinschränkungen für Android und Samsung KNOX in Intune
 
@@ -49,7 +49,7 @@ In diesem Artikel lernen Sie alle Einstellungen für Geräteeinschränkungen in 
 - **Kennwort**: **Anfordern** der Eingabe eines Kennworts durch den Endbenutzer, um auf das Gerät zugreifen zu können. **Nicht konfiguriert** ermöglicht Benutzern, ohne Kennworteingabe auf das Gerät zuzugreifen.
 
     > [!NOTE]
-    > Samsung Knox-Geräte erfordern automatisch eine vierstellige PIN bei der MDM-Registrierung. Native Android-Geräte erfordern möglicherweise automatisch eine PIN, damit sie konform mit den bedingten Zugriffsvoraussetzungen sind.
+    > Samsung Knox-Geräte erfordern automatisch eine vierstellige PIN bei der MDM-Registrierung. Native Android-Geräte erfordern möglicherweise automatisch eine PIN, damit sie mit den bedingten Zugriffsvoraussetzungen konform sind.
 
 - **Minimale Kennwortlänge**: Geben Sie die Mindestanzahl von Zeichen an, die Benutzer für das Kennwort festlegen müssen (zwischen 4 und 16 Zeichen).
 - **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung**: Geben Sie an, wie viele Minuten ein Gerät höchstens inaktiv sein darf, bevor es automatisch gesperrt wird. Ein Endbenutzer kann auf dem Gerät keinen höheren Wert als die im Profil konfigurierte Zeit festlegen. Der Endbenutzer kann einen niedrigeren Zeitwert festlegen. Wenn das Profil auf 15 Minuten festgelegt ist, kann ein Endbenutzer den Wert auf 5 Minuten festlegen, aber nicht auf 30 Minuten. 

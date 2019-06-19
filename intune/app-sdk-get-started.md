@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5672963c6737d51e720a8b1597dd90318f33a05
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
-ms.translationtype: HT
+ms.openlocfilehash: e3b0aff29db5402de7e91282e74cd6d69a103545
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506871"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045827"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Erste Schritte mit dem Microsoft Intune App SDK
 
@@ -81,9 +81,9 @@ Es wird empfohlen, sich für ein GitHub-Konto zu registrieren, mit dem Sie Fork-
 
 Sie benötigen einen der folgenden Entwicklerleitfäden zum Integrieren des Intune App SDK in Ihre App:
 
-* **[Entwicklerleitfaden zum Intune App SDK für iOS](app-sdk-ios.md)**: In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native iOS-App für das Intune App SDK einrichten.
+* **[Entwicklerleitfaden zum Intune App SDK für iOS](app-sdk-ios.md)** : In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native iOS-App für das Intune App SDK einrichten.
 
-* **[Entwicklerleitfaden zum Intune App SDK für Android](app-sdk-android.md)**: In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native Android-App für das Intune App SDK einrichten.
+* **[Entwicklerleitfaden zum Intune App SDK für Android](app-sdk-android.md)** : In diesem Dokument wird Schritt für Schritt erläutert, wie Sie Ihre native Android-App für das Intune App SDK einrichten.
 
 * **[Leitfaden für Intune App SDK-Xamarin-Komponenten:](app-sdk-xamarin.md)** Dieses Dokument hilft Ihnen beim Erstellen von iOS- und Android-Apps mithilfe von Xamarin für Intune-App-Schutzrichtlinien.
 
@@ -91,7 +91,7 @@ Sie benötigen einen der folgenden Entwicklerleitfäden zum Integrieren des Intu
 
 ## <a name="enable-your-ios-or-android-app-for-app-based-conditional-access"></a>Aktivieren Ihrer iOS- oder Android-App für den App-basierten bedingten Zugriff
  
- Folgendes ist zusätzlich zum Aktivieren Ihrer App für die App-Schutzrichtlinie erforderlich, damit diese ordnungsgemäß mit dem auf der AAD-App (Azure ActiveDirectory) basierenden bedingten Zugriff funktioniert.
+ Folgendes ist zusätzlich zum Aktivieren Ihrer App für die App-Schutzrichtlinie erforderlich, damit diese ordnungsgemäß mit dem auf der AAD-App (Azure ActiveDirectory) basierenden bedingten Zugriff funktioniert:
  
  * Die App wird mithilfe der [Azure Active Directory-Authentifizierungsbibliothek](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) erstellt und für die AAD-Brokerauthentifizierung aktiviert.
  
@@ -193,6 +193,6 @@ Das Badge ist ein Aktentaschensymbol (siehe die folgenden Beispiele):
 
 **Voraussetzungen für das Versehen Ihrer App mit einem Badge**:
 
-* Eine Bildbearbeitungsanwendung, die **EPS**-Dateien lesen kann, oder eine Adobe-Anwendung, die **AI**-Dateien lesen kann.
+* Eine Bildbearbeitungsanwendung, die **EPS**-Dateien lesen kann, oder eine Adobe-Anwendung, die **KI**-Dateien lesen kann.
 
 * Auf der GitHub-Website von Microsoft Intune finden Sie die [Ressourcen und Anleitungen für Intune-App-Badges](https://github.com/msintuneappsdk/intune-app-partner-badge).

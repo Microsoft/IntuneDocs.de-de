@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 207a3f950d6fca2d6fcbe024f24fbf05487f2151
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040389"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046323"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Wo ist meine Intune-Funktion in Azure jetzt?
 Wir hatten die Chance, einige Aufgaben logischer zu organisieren, als wir Intune in das Azure-Portal umgezogen haben. Jedoch kommt jede Verbesserung mit der neuen Aufgabe, die neue Organisation kennenzulernen. Dieses Referenzhandbuch wurde für diejenigen von Ihnen erstellt, die mit Intune im klassischen Portal bestens vertraut sind und sich nun fragen, wie Aufgaben in Intune im Azure-Portal erledigt werden. Wenn dieser Artikel eine Funktion, die Sie suchen, nicht behandelt, hinterlassen Sie einen Kommentar am Ende des Artikels, damit wir ihn aktualisieren können.
@@ -70,14 +70,14 @@ Die Möglichkeit, private Geräte zuzulassen oder zu blockieren, wird nun unter 
 Neue Funktionen zur Einschränkung werden nur zum Azure-Portal hinzugefügt.
 
 ## <a name="where-did-my-conditional-access-policies-go"></a>Wo finde ich meine Richtlinien für den bedingten Zugriff?
-Nach der Migration Ihres Mandanten zum Azure-Portal werden die Richtlinien für den bedingten Zugriff weiterhin angewendet. Jedoch können Sie sie nicht über Intune im Azure-Portal anzeigen oder bearbeiten.
+Nach der Migration Ihres Mandanten zum Azure-Portal werden die Richtlinien für den bedingten Zugriff weiterhin durchgesetzt. Jedoch können Sie sie nicht über Intune im Azure-Portal anzeigen oder bearbeiten.
 
-Wenn Sie die Richtlinien für den bedingten Zugriff über das Azure-Portal anzeigen oder bearbeiten möchten, müssen Sie die alten Richtlinien aus dem klassischen Portal entfernen. Anschließend müssen Sie sie im Azure-Portal neu erstellen. Weitere Informationen zum Migrieren von Richtlinien für den bedingten Zugriff finden Sie unter [Migrieren von klassischen Richtlinien in das Azure-Portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration). 
+Wenn Sie die Richtlinien für den bedingten Zugriff über das Azure-Portal anzeigen oder bearbeiten möchten, müssen Sie die alten Richtlinien aus dem klassischen Portal entfernen. Anschließend müssen Sie sie im Azure-Portal neu erstellen. Weitere Informationen zum Migrieren von Richtlinien für den bedingten Zugriff finden Sie unter [Migrieren klassischer Richtlinien zum Azure-Portal](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-migration). 
 
 ## <a name="where-did-my-compliance-policies-go"></a>Wo finde ich meine Konformitätsrichtlinien?
 Nach der Migration Ihres Mandanten zum Azure-Portal werden die Konformitätsrichtlinien weiterhin angewendet. Jedoch können Sie sie nicht über Intune im Azure-Portal anzeigen oder bearbeiten.
 
-Wenn Sie die Konformitätsrichtlinien über das Azure-Portal anzeigen oder bearbeiten möchten, müssen Sie die alten Richtlinien aus dem klassischen Portal entfernen. Anschließend müssen Sie sie im Azure-Portal neu erstellen. Weitere Informationen über Gerätekonformitätsrichtlinien finden Sie unter [Erste Schritte bei der Gerätekonformität in Intune](https://docs.microsoft.com/intune/known-issues#compliance). 
+Wenn Sie die Konformitätsrichtlinien über das Azure-Portal anzeigen oder bearbeiten möchten, müssen Sie die alten Richtlinien aus dem klassischen Portal entfernen. Anschließend müssen Sie sie im Azure-Portal neu erstellen. Weitere Informationen über Gerätekonformitätsrichtlinien finden Sie unter [Erste Schritte bei der Gerätekonformität in Intune](https://docs.microsoft.com/intune/device-compliance-get-started). 
 
 ## <a name="where-did-apple-dep-go"></a>Wo ist Apple-DEP jetzt?
 Im klassischen Portal konnten Sie Intune so einrichten, dass es im Programm zur Geräteregistrierung von Apple integriert wurde, und Sie konnten die Synchronisierung mit dem Apple-Dienst manuell anfordern:

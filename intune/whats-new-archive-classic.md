@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f2a88e6e807ea78e4a26abe71eb1b5997ea7256
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c554f2ab9fabf83695489ab5e6acd65e8d28f34c
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044402"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046250"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Neuerungen im klassischen Intune-Portal – vorherige Monate
 
@@ -49,7 +49,7 @@ Ein Update auf die Android-Unternehmensportal-App zeigt eine Statusanzeige der A
 
 #### <a name="block-apps-from-accessing-sharepoint-online----679339---"></a>Verhindern, dass Apps auf SharePoint Online zugreifen <!-- 679339 -->
 
-Sie können jetzt eine Richtlinie für den App-basierten bedingten Zugriff erstellen, um Apps, auf die keine Schutzrichtlinien angewendet wurden, am Zugriff auf [SharePoint Online](app-based-conditional-access-intune-create.md) zu hindern. Im Szenario des App-basierten bedingten Zugriffs können Sie Apps festlegen, die über das Azure-Portal auf SharePoint Online zugreifen können sollen.
+Sie können jetzt eine Richtlinie für den App-basierten bedingten Zugriff erstellen, um Apps, auf die keine Schutzrichtlinien angewendet wurden, am Zugriff auf [SharePoint Online](app-based-conditional-access-intune-create.md) zu hindern. Im Szenario des App-basierten bedingten Zugriffs können Sie Apps festlegen, denen der Zugriff auf SharePoint Online über das Azure-Portal gestattet werden soll.
 
 #### <a name="single-sign-on-support-from-the-company-portal-for-ios-to-outlook-for-ios---834012--"></a>Unterstützung für einmaliges Anmelden in Outlook für iOS über das Unternehmensportal für iOS <!--834012-->
 Benutzer müssen sich nicht mehr in der Outlook-App anmelden, wenn sie in der Unternehmensportal-App für iOS auf dem gleichen Gerät mit dem gleichen Konto angemeldet sind. Wenn Benutzer die Outlook-App starten, können sie ihr Konto auswählen und sich automatisch anmelden. Wir arbeiten auch daran, diese Funktion für andere Microsoft-Apps hinzuzufügen.
@@ -135,14 +135,14 @@ Wir haben im Apple TestFlight-Programm eine Version der Unternehmensportal-App f
 
 #### <a name="support-for-skycure"></a>Unterstützung für Skycure
 
-Sie können nun den Zugriff mobiler Geräte auf Unternehmensressourcen mit bedingtem Zugriff basierend auf Risikobewertungen steuern, die von Skycure vorgenommen werden, einer Mobile Threat Defense-Lösung, die mit Microsoft Intune zusammenarbeitet. Das Risiko wird basierend auf Telemetriedaten von Geräten bewertet, auf denen Skycure ausgeführt wird, wie z.B.:
+Sie können jetzt den Zugriff mobiler Geräte auf Unternehmensressourcen mit bedingtem Zugriff basierend auf Risikobewertungen steuern, die von Skycure vorgenommen werden, einer Mobile Threat Defense-Lösung, die mit Microsoft Intune zusammenarbeitet. Das Risiko wird basierend auf Telemetriedaten von Geräten bewertet, auf denen Skycure ausgeführt wird, wie z.B.:
 
 - Physische Verteidigung
 - Netzwerkverteidigung
 - Anwendungsverteidigung
 - Verteidigung gegen Sicherheitsrisiken
 
-Sie können Richtlinien für bedingten EMS-Zugriff basierend auf Risikobewertungen von Symantec Endpoint Protection Mobile (Skycure) konfigurieren, die mithilfe von Intune-Gerätekompatibilitätsrichtlinien aktiviert werden. Sie können diese Richtlinien verwenden, um den Zugriff nicht kompatibler Geräte auf Unternehmensressourcen anhand der erkannten Bedrohungen zuzulassen oder zu blockieren. Weitere Informationen finden Sie unter [Symantec Endpoint Protection Mobile-Connector](skycure-mobile-threat-defense-connector.md).
+Sie können Richtlinien für bedingten EMS-Zugriff basierend auf Risikobewertungen von Symantec Endpoint Protection Mobile (Skycure) konfigurieren, die mithilfe von Intune-Gerätekonformitätsrichtlinien aktiviert werden. Sie können diese Richtlinien verwenden, um den Zugriff nicht kompatibler Geräte auf Unternehmensressourcen anhand der erkannten Bedrohungen zuzulassen oder zu blockieren. Weitere Informationen finden Sie unter [Symantec Endpoint Protection Mobile-Connector](skycure-mobile-threat-defense-connector.md).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Neue Benutzeroberfläche für die Unternehmensportal-App für Android <!--621622-->
 
