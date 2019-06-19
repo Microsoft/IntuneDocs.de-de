@@ -16,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92aa438e436c4612ede29564f61c3fc529f789c0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 82fa4fc7f9e60dff3c08adf3281351cbfa8eb743
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045054"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749931"
 ---
 # <a name="windows-security-baseline-settings-for-intune"></a>Windows-Einstellungen für Sicherheitsbaselines in Intune  
 
-Lesen Sie sich den Artikel zu den [Windows-Einstellungen für Sicherheitsbaselines](security-baselines.md) durch, die von Microsoft Intune unterstützt werden.  
+Lesen Sie sich den Artikel zu den [Windows-Einstellungen für Sicherheitsbaselines](security-baselines.md) durch, die von Microsoft Intune unterstützt werden. Die Standardeinstellungen der Windows-Baseline entsprechen der für Windows empfohlenen Konfiguration und stimmen möglicherweise nicht mit den Standardeinstellungen anderer Sicherheitsbaselines überein.  
 
 > [!NOTE]  
-> Die Windows-Einstellungen für Sicherheitsbaselines befinden sich in der Vorschau. Während der Vorschauphase variiert die Liste der verfügbaren Einstellungen und die Reihenfolge der angezeigten Inhalte abhängig davon, welche Elemente im Portal verfügbar sind.  
+> Die Einstellungen der Windows-Sicherheitsbaselines befinden sich in der **Vorschau**. Während der Vorschauphase variiert die Liste der verfügbaren Einstellungen und die Reihenfolge der angezeigten Inhalte abhängig davon, welche Elemente im Portal verfügbar sind.  
 >  
 > Nach Ablauf der Vorschauphase für die Baselineeinstellungen wird dieser Inhalt mit der regulären Liste der Einstellungen für Sicherheitsbaselines aktualisiert, die von Intune unterstützt werden.  
 

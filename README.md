@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: fc2e17c605af2c9cec021724852bcf1b48012ba8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "58068948"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804426"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open Source-Verhaltensregeln
 
@@ -20,24 +20,24 @@ Wir **benötigen und begrüßen Beiträge** von unserer Community (Benutzer, Kun
 
 * **Erstellen Sie ein GitHub-Konto:** Die Registrierung auf [GitHub.com](https://www.github.com) ist kostenlos.
 
-* **Verwenden Sie den Browser**: Es gibt zwei Optionen: 
+* **Verwenden Sie Ihren Browser:** Es gibt zwei Optionen: 
 
-    **Option 1: Bearbeiten Sie, direkt aus docs.microsoft.com**  
-    1. Wechseln Sie mit dem Thema, wie z. B. [ https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune ](https://docs.microsoft.com/ntune/troubleshoot-policies-in-microsoft-intune). 
-    2. Wählen Sie **bearbeiten** (oben rechts). Dies zeigt die markdowndatei im GitHub-Repository.
-    3. Wählen Sie das Stiftsymbol. Wenn Sie auf das Stiftsymbol zeigen, sehen Sie die **bearbeiten Sie diese Datei** QuickInfo. 
-    4. Nehmen Sie die Änderungen, und klicken Sie dann **Commit** Ihre Änderungen. 
-    5. Den Pull Request zu erstellen.
+    **Option 1: Führen Sie die Bearbeitung direkt über docs.microsoft.com durch**  
+    1. Öffnen Sie den Artikel, z. B. [https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune](https://docs.microsoft.com/intune/troubleshoot-policies-in-microsoft-intune). 
+    2. Klicken Sie (oben rechts) auf **Bearbeiten**. Daraufhin wird die Markdowndatei im GitHub-Repository angezeigt.
+    3. Klicken Sie auf das Stiftsymbol. Wenn Sie auf das Stiftsymbol zeigen, wird die QuickInfo **Edit this file** (Diese Datei bearbeiten) angezeigt. 
+    4. Nehmen Sie Ihre Änderungen vor, und **committen** Sie dann Ihre Änderungen. 
+    5. Erstellen Sie den Pull Request.
     
-    **Option 2: Suchen Sie den Artikel in diesem Repository, und aktualisieren**  
-    1.  Die meisten Themen sind in `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. In diesem Ordner, suchen Sie nach der Name des Themas, z. B. `troubleshoot-policies-in-microsoft-intune`. 
-    2. Wählen Sie den Link, und klicken Sie auf das Stiftsymbol. Wenn Sie auf das Stiftsymbol zeigen, sehen Sie die **bearbeiten Sie diese Datei** QuickInfo. 
-    3. Nehmen Sie die Änderungen, und klicken Sie dann **Commit** Ihre Änderungen. 
-    4. Den Pull Request zu erstellen. 
+    **Option 2: Suchen Sie den Artikel im Repository, und aktualisieren Sie ihn**  
+    1.  Die meisten Artikel finden Sie unter `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. In diesem Ordner können Sie nach dem Artikelnamen suchen, z. B. `troubleshoot-policies-in-microsoft-intune`. 
+    2. Klicken Sie auf den Link, und klicken Sie dann auf das Stiftsymbol. Wenn Sie auf das Stiftsymbol zeigen, wird die QuickInfo **Edit this file** (Diese Datei bearbeiten) angezeigt. 
+    3. Nehmen Sie Ihre Änderungen vor, und **committen** Sie dann Ihre Änderungen. 
+    4. Erstellen Sie den Pull Request. 
 
   Wenn Sie ein Update durchführen, werden Sie womöglich dazu aufgefordert, eine Lizenzvereinbarung zu unterzeichnen. Dies ist ein einmaliger Vorgang. Sie müssen mit Ihrem GitHub-Benutzernamen für zukünftige Updates nicht mehr unterzeichnen. 
   
-  Der Wert in der `author` Metadaten (am oberen Rand jedes Thema) enthält die GitHub-Autor. In der `troubleshoot-policies-in-microsoft-intune` Beispiel sehen Sie `MandiOhlinger`. In Ihrem Pull Request, können Sie auch erwähnen (@*AuthorValue*) der Autor, falls gewünscht.
+  Der Wert in den `author`-Metadaten (in jedem Artikel ganz oben) enthält den GitHub-Autor. Im Beispiel `troubleshoot-policies-in-microsoft-intune` wird `MandiOhlinger` angezeigt. Wenn Sie möchten, können Sie den Autor in Ihrem Pull Request erwähnen (@*authorValue*).
   
 * **MSFT-Mitarbeiter:** Nachdem Sie ein GitHub-Konto erstellt haben, verknüpfen Sie es mit Ihrer Microsoft-E-Mail-Adresse. Wenn Ihr Account verknüpft ist, müssen Sie keine Lizenzvereinbarung unterzeichnen, um ein Update durchzuführen. Schritte:
 

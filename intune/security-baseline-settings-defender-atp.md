@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6feae4d7caeeefbf9638e5018ba7b653a260f5c
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
-ms.translationtype: MTE75
+ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
+ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373496"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66749911"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-Baselineeinstellungen für Intune
 
-Zeigen Sie die Baselineeinstellungen für Microsoft Defender Advanced Threat Protection (früher Windows Defender Advanced Threat Protection) an, die von Microsoft Intune unterstützt werden. Die Standardwerte in diesem Artikel stellen die Baseline-Standardkonfiguration für Intune dar. Diese Standardwerte sind die empfohlene Konfiguration für Intune und entsprechen möglicherweise nicht den Windows-Standardwerten.
+Zeigen Sie die Baselineeinstellungen für Microsoft Defender Advanced Threat Protection (früher Windows Defender Advanced Threat Protection) an, die von Microsoft Intune unterstützt werden. Die Standardeinstellungen der ATP-Baseline (Advanced Threat Protection) entsprechen der für ATP empfohlenen Konfiguration und stimmen möglicherweise nicht mit den Standardeinstellungen anderer Sicherheitsbaselines überein.  
 
   Die Microsoft Defender Advanced Threat Protection-Baseline ist verfügbar, wenn Ihre Umgebung den Anforderungen zur Verwendung von [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) entspricht.
 
@@ -33,7 +33,7 @@ Zeigen Sie die Baselineeinstellungen für Microsoft Defender Advanced Threat Pro
 
 
 > [!NOTE]  
-> Die WDATP-Baselineeinstellungen sind derzeit in der **Vorschauversion**. Während der Vorschauphase entspricht die Liste der verfügbaren Einstellungen und die Reihenfolge, in der sie darin angezeigt werden,möglicherweise nicht den im Portal verfügbaren Inhalten. 
+> Die ATP-Einstellungen für Sicherheitsbaselines befinden sich in der **Vorschau**. Während der Vorschauphase entspricht die Liste der verfügbaren Einstellungen und die Reihenfolge, in der sie darin angezeigt werden,möglicherweise nicht den im Portal verfügbaren Inhalten.  
 >
 > Nach Ablauf der Vorschauphase für die Baselineeinstellungen wird dieser Inhalt mit der dann aktuellen Liste der Einstellungen für Sicherheitsbaselines aktualisiert, die von Intune unterstützt werden.
 
