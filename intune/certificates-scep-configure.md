@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/05/2019
+ms.date: 06/06/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0f7ce806b1ed2a17b59add467b1b0af2a40578
-ms.sourcegitcommit: 023b1293b47314b77eb80997bbd8aa679db90880
+ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
+ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66448116"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744340"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune
 
@@ -115,7 +115,8 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
    - Fügen Sie unter **Sicherheit** das NDES-Dienstkonto hinzu, und weisen Sie ihm Berechtigungen zum **Registrieren** der Vorlage zu. Intune-Administratoren, die SCEP-Profile erstellen, benötigen die Berechtigung **Lesen**, damit sie beim Erstellen von SCEP-Profilen zu der Vorlage navigieren können.
 
      > [!NOTE]
-     > Zum Widerrufen von Zertifikaten benötigt das NDES-Dienstkonto die Berechtigung *Zertifikate ausstellen und verwalten* für jede Zertifikatvorlage, die von einem Zertifikatprofil verwendet wird.
+     > Zum Widerrufen von Zertifikaten benötigt das NDES-Dienstkonto Rechte des Typs *Zertifikate ausstellen und verwalten* für die Zertifizierungsstelle. Um diese Berechtigung zu delegieren, öffnen Sie die Verwaltungskonsole der Zertifizierungsstelle, und klicken Sie mit der rechten Maustaste auf den Namen der Zertifizierungsstelle. Fügen Sie dann auf der Registerkarte „Sicherheit“ das Konto hinzu, oder wählen Sie es aus. Aktivieren Sie dann das Kontrollkästchen **Zertifikate ausstellen und verwalten**.
+
 
 3. Prüfen Sie auf der Registerkarte **Allgemein** die **Gültigkeitsdauer** der Vorlage. In der Standardeinstellung verwendet Intune den in der Vorlage konfigurierten Wert. Sie können jedoch die Zertifizierungsstelle konfigurieren, um dem Antragsteller zu ermöglichen, einen anderen Wert einzugeben, den Sie dann in der Intune-Verwaltungskonsole festlegen können. Wenn Sie immer den in der Vorlage festgelegten Wert verwenden möchten, überspringen Sie den Rest dieses Schritts.
 
@@ -299,15 +300,15 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Klicken Sie auf **Gerätekonfiguration** > **Certificate Connectors** > **Hinzufügen**.
-3. Laden Sie die Datei des Connectors für die SCEP-Datei herunter, und speichern Sie sie. Speichern Sie sie an einem Ort, auf den von dem Server aus zugegriffen werden kann, auf dem der Connector installiert wird.
+3. Laden Sie die Datei des Connectors für die SCEP-Datei herunter, und speichern Sie sie. Speichern Sie sie an einem Ort, auf den von dem NDES-Server aus zugegriffen werden kann, auf dem der Connector installiert wird.
 
    ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
 
-4. Nachdem der Download abgeschlossen ist, navigieren Sie zu dem Server, der den Registrierungsdienst für Netzwerkgeräte (Network Device Enrollment Service, NDES) hostet. Führen Sie anschließend Folgendes durch:
+4. Nachdem der Download abgeschlossen ist, navigieren Sie zu dem NDES-Server, der den Registrierungsdienst für Netzwerkgeräte (Network Device Enrollment Service, NDES) hostet. Führen Sie anschließend Folgendes durch:
 
     1. Stellen Sie sicher, dass .NET Framework 4.5 installiert ist (dies ist für den NDES-Certificate Connector erforderlich). .NET Framework 4.5 ist automatisch in Windows Server 2012 R2 und höheren Versionen enthalten.
-    2. Führen Sie den Installer aus (**NDESConnectorSetup.exe**). Das Installationsprogramm installiert auch das Richtlinienmodul für NDES und den CRP-Webdienst. Der CRP-Webdienst „CertificateRegistrationSvc“ wird als Anwendung in IIS ausgeführt.
+    2. Verwenden Sie ein Konto mit Administratorrechten für den Server zur Ausführung des Installationsprogramms (**NDESConnectorSetup.exe**). Das Installationsprogramm installiert auch das Richtlinienmodul für NDES und den CRP-Webdienst. Der CRP-Webdienst „CertificateRegistrationSvc“ wird als Anwendung in IIS ausgeführt.
 
     > [!NOTE]
     > Bei der Installation von NDES für eigenständiges Intune wird der CRP-Dienst automatisch mit dem Zertifikatconnector installiert. Bei Verwendung von Intune mit dem Konfigurations-Manager installieren Sie den Zertifikatregistrierungspunkt als eine separate Standortsystemrolle.
@@ -335,7 +336,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 
     Wenn Ihre Organisation einen Proxyserver verwendet und der Proxy erforderlich ist, damit der NDES-Server auf das Internet zugreifen kann, klicken Sie auf **Proxyserver verwenden**. Geben Sie dann den Proxyservernamen, den Port und die Kontoanmeldeinformationen für die Verbindung ein.
 
-    Wählen Sie die Registerkarte **Erweitert** aus, und geben Sie anschließend die Anmeldeinformationen für ein Konto ein, das über die Berechtigung **Zertifikate ausstellen und verwalten** für die ausstellende Zertifizierungsstelle verfügt. **Übernehmen** Sie Ihre Änderungen.
+    Wählen Sie die Registerkarte **Erweitert** aus, und geben Sie anschließend die Anmeldeinformationen für ein Konto ein, das über die Berechtigung **Zertifikate ausstellen und verwalten** für die ausstellende Zertifizierungsstelle verfügt. **Übernehmen** Sie Ihre Änderungen. Wenn Sie diese Berechtigung beim [Konfigurieren Ihrer Zertifizierungsstelle](#configure-the-certification-authority) an Ihr NDES-Dienstkonto delegiert haben, geben Sie dieses Konto hier an. 
 
     Sie können jetzt die Benutzeroberfläche des Zertifikatconnectors schließen.
 

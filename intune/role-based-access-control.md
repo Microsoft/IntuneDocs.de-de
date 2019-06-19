@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7419a316018ed5c883f89a51090a852680cd9e38
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4c4b9f1d1dd0072555d8438940969b7abd0a9fff
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040662"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804487"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Rollenbasierte Zugriffssteuerung für Microsoft Intune
 
@@ -30,6 +30,8 @@ Mithilfe der rollenbasierten Zugriffssteuerung (Role-Based Access Control, RBAC)
 Für das Erstellen, Bearbeiten oder Zuweisen von Rollen muss das Konto in Azure AD über eine der folgenden Berechtigungen verfügen:
 - **Globaler Administrator**
 - **Intune-Dienstadministrator** (auch als **Intune-Administrator** bezeichnet)
+
+Wenn Sie Tipps und Vorschläge zu Intune RBAC benötigen, können Sie sich diese Reihe von fünf Videos mit Beispielen und exemplarischen Vorgehensweisen ansehen: [1](https://www.youtube.com/watch?v=5deXLMLcnKY), [2](https://www.youtube.com/watch?v=38dnMBLuxbQ), [3](https://www.youtube.com/watch?v=6vqg9cAkMbY), [4](https://www.youtube.com/watch?v=5yOLajFFMHE), [5](https://www.youtube.com/watch?v=P5DDvsSF4Wk).
 
 ## <a name="roles"></a>Rollen
 Eine Rolle definiert die Berechtigungen, die den ihr zugewiesenen Benutzern gewährt werden.
@@ -84,8 +86,8 @@ Wenn Sie eine Rollenzuweisung abrufen möchten, klicken Sie auf **Intune** > **R
 
 -   **Eigenschaften**: der Name, die Beschreibung, die Rolle, die Mitglieder, die Bereiche und die Markierungen einer Zuweisung
 -   **Mitglieder**: Alle einer Gruppe angehörenden Benutzer haben die Berechtigung, die Benutzer/Geräte zu verwalten, die in diesem Bereich (der Gruppe) aufgelistet sind.
--   **Bereich (Gruppen)**: Alle Benutzer/Geräte in dieser Gruppe können von den Benutzern verwaltet werden, die unter „Mitglieder“ aufgeführt sind.
--   **[Bereich (Tags)](scope-tags.md)**: Benutzer, die unter „Mitglieder“ aufgeführt sind, können die Ressourcen sehen, die dieselben Bereichsmarkierungen aufweisen.
+-   **Bereich (Gruppen)** : Alle Benutzer/Geräte in dieser Gruppe können von den Benutzern verwaltet werden, die unter „Mitglieder“ aufgeführt sind.
+-   **[Bereich (Tags)](scope-tags.md)** : Benutzer, die unter „Mitglieder“ aufgeführt sind, können die Ressourcen sehen, die dieselben Bereichsmarkierungen aufweisen.
 
 ### <a name="multiple-role-assignments"></a>Mehrere Rollenzuweisungen
 Wenn einem Benutzer mehrere Rollen zugewiesen sind, gelten die Berechtigungen in diesen Rollenzuweisungen wie folgt für verschiedene Objekte:

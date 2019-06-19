@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/14/2019
+ms.date: 06/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b3a566fd5c040e1c0007c10b1b57a64788a2323
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d8c4813d94a269ed6b8f944585814b54f36fef8c
+ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043818"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66804704"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Eigenständiges Intune – Win32-App-Verwaltung
 
@@ -97,8 +97,7 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
 
 ### <a name="step-1-specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
 
-1.  Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) an.
-2.  Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 3.  Wählen Sie im **Intune**-Bereich die Option **Client-Apps** > **Apps** > **Hinzufügen** aus.
 4.  Wählen Sie **Windows-App (Win32)** aus der Dropdownliste im App-Bereich **Hinzufügen** aus.
 
@@ -163,10 +162,10 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
 2.  Konfigurieren Sie im Bereich **Add a Requirement rule** (Anforderungsregel hinzufügen) die folgenden Informationen: Einige der Werte in diesem Bereich wurden möglicherweise automatisch ausgefüllt.
     - **Betriebssystemarchitektur**: Wählen Sie die Architekturen aus, die für die Installation der App erforderlich sind.
     - **Mindestens erforderliches Betriebssystem**: Wählen Sie die für die Installation der App mindestens erforderliche Version des Betriebssystems aus.
-    - **Erforderlicher Speicherplatz (MB)**: Optional können Sie den freien Speicherplatz hinzufügen, der auf dem Systemlaufwerk erforderlich ist, um die App zu installieren.
-    - **Erforderlicher physischer Speicher (MB)**: Optional können Sie den für die Installation der App erforderlichen physischen Arbeitsspeicher (RAM) hinzufügen.
+    - **Erforderlicher Speicherplatz (MB)** : Optional können Sie den freien Speicherplatz hinzufügen, der auf dem Systemlaufwerk erforderlich ist, um die App zu installieren.
+    - **Erforderlicher physischer Speicher (MB)** : Optional können Sie den für die Installation der App erforderlichen physischen Arbeitsspeicher (RAM) hinzufügen.
     - **Mindestens erforderliche Anzahl logischer Prozessoren**: Optional können Sie die Anzahl von logischen Prozessoren hinzufügen, die für die Installation der App mindestens erforderlich sind.
-    - **Mindestens erforderliche CPU-Geschwindigkeit (MHz)**: Optional können Sie die CPU-Geschwindigkeit hinzufügen, die für die Installation der App mindestens erforderlich ist.
+    - **Mindestens erforderliche CPU-Geschwindigkeit (MHz)** : Optional können Sie die CPU-Geschwindigkeit hinzufügen, die für die Installation der App mindestens erforderlich ist.
 
 3. Klicken Sie auf **Hinzufügen**, um das Blatt **Add a Requirement rule** (Anforderungsregel hinzufügen) anzuzeigen und weitere Anforderungsregeln zu konfigurieren. Wählen Sie den **Anforderungstyp** aus, um die Art der Regel auszuwählen, mit der Sie bestimmen, auf welche Art eine Anforderung überprüft wird. Anforderungsregeln können auf Dateisysteminformationen, Registrierungswerten oder PowerShell-Skripts basieren. 
     - **Datei:** Wenn Sie **Datei** als **Anforderungstyp** auswählen, muss die Anforderungsregel eine Datei oder einen Ordner, ein Datum, eine Version oder eine Größe erkennen. 
@@ -342,12 +341,50 @@ Agentprotokolle auf dem Clientcomputer befinden sich häufig unter `C:\ProgramDa
 > *C:\Program Files\Microsoft Intune Management Extension\Content*<br>
 > *C:\windows\IMECache*
 
-Weitere Informationen zur Behandlung von Problemen mit Win32-Apps finden Sie unter [Win32 app installation troubleshooting (Problembehandlung bei der Win32-App-Installation)](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
+### <a name="detecting-the-win32-app-file-version-using-powershell"></a>Ermitteln der Dateiversion einer Win32-App mithilfe von PowerShell
 
-### <a name="troubleshooting-areas-to-consider"></a>Zu berücksichtigende Problembehandlungsbereiche
+Wenn es für Sie schwierig ist, die Dateiversion einer Win32-App zu ermitteln, erwägen Sie die Verwendung oder Änderung des folgenden PowerShell-Befehls:
+
+``` PowerShell
+
+$FileVersion = [System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+#The below line trims the spaces before and after the version name
+$FileVersion = $FileVersion.Trim();
+if ("<file version of successfully detected file>" -eq $FileVersion)
+{
+#Write the version to STDOUT by default
+$FileVersion
+exit 0
+}
+else
+{
+#Exit with non-zero failure code
+exit 1
+}
+
+```
+Ersetzen Sie im vorstehenden PowerShell-Befehl die Zeichenfolge `<path to binary file>` durch den Pfad zu Ihrer Win32-App-Datei. Ein Beispielpfad würde etwa so aussehen:<br>
+`C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\ssms.exe`
+
+Ersetzen Sie außerdem die Zeichenfolge `<file version of successfully detected file>` durch die Dateiversion, die Sie ermitteln müssen. Eine Beispielzeichenfolge für die Dateiversion würde etwa so aussehen:<br>
+`2019.0150.18118.00 ((SSMS_Rel).190420-0019)`
+
+Wenn Sie die Versionsinformationen zu Ihrer Win32-App abrufen müssen, können Sie den folgenden PowerShell-Befehl verwenden:
+
+``` PowerShell
+
+[System.Diagnostics.FileVersionInfo]::GetVersionInfo("<path to binary file>").FileVersion
+
+```
+
+Ersetzen Sie im vorstehenden PowerShell-Befehl `<path to binary file>` durch Ihren Dateipfad.
+
+### <a name="additional-troubleshooting-areas-to-consider"></a>Weitere zu berücksichtigende Problembehandlungsbereiche
 - Überprüfen Sie die Zielgruppenadressierung, um sicherzustellen, dass der Agent auf dem Gerät installiert ist – Win32-App, die auf eine Gruppe ausgerichtet ist, oder PowerShell-Skript, das auf eine Gruppe ausgerichtet ist, erstellt die Installationsrichtlinie für die Sicherheitsgruppe.
 - Überprüfen Sie die Betriebssystemversion – Windows 10 1607 und höher.  
 - Überprüfen Sie die Windows 10 SKU – Windows 10 S oder Windows-Versionen, die mit aktiviertem S-Modus ausgeführt werden, unterstützen keine MSI-Installation.
+
+Weitere Informationen zur Behandlung von Problemen mit Win32-Apps finden Sie unter [Win32 app installation troubleshooting (Problembehandlung bei der Win32-App-Installation)](troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

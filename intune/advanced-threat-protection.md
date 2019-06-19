@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abbd226f2b812e1062d56a1d66b3e10bc9d68036
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
+ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374085"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66819867"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Erzwingen der Konformität für Windows Defender ATM mit bedingtem Zugriff in Intune
 
@@ -52,8 +52,7 @@ Um ATP mit Intune zu verwenden, stellen Sie sicher, dass Sie Folgendes konfiguri
 
 ## <a name="enable-windows-defender-atp-in-intune"></a>Aktivieren von Windows Defender ATP in Intune
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 3. Wählen Sie **Gerätekonformität** > **Windows Defender ATP** > **Windows Defender Security Center öffnen**.
 
     ![Auswahl zum Öffnen von Windows Defender Security Center](./media/atp-device-compliance-open-windows-defender.png)
@@ -132,7 +131,7 @@ Die Richtlinie für bedingten Zugriff blockiert den Zugriff auf Ressourcen, *wen
 > [!TIP]  
 > Der bedingte Zugriff ist eine Technologie von Azure Active Directory (Azure AD). Bei dem Knoten für bedingten Zugriff, auf den aus *Intune* zugegriffen wird, handelt es sich um denselben Knoten, auf den aus *Azure AD* zugegriffen wird.  
 
-1. Öffnen Sie im [Azure-Portal](https://portal.azure.com) **Intune** > **Bedingter Zugriff** > **Neue Richtlinie**.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und wählen Sie **Bedingter Zugriff** > **Neue Richtlinie** aus.
 2. Geben Sie einen **Namen** für die Richtlinie ein, und wählen Sie **Benutzer und Gruppen** aus. Fügen Sie mit den Optionen „Einschließen“ oder „Ausschließen“ Ihre Gruppen für die Richtlinie hinzu, und wählen Sie **Fertig** aus.
 3. Wählen Sie **Cloud-Apps** und die zu schützenden Apps aus. Wählen Sie z.B. **Apps auswählen** und **Office 365 SharePoint Online** sowie **Office 365 Exchange Online** aus.
 
