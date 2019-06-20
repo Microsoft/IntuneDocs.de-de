@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc5ea7076e77e5071724168fab58fa78f59601c4
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
-ms.translationtype: HT
+ms.openlocfilehash: 1c8a7be6646c0035eaefed6d61d749c8469c8a4e
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744300"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031656"
 ---
 # <a name="in-development-for-microsoft-intune---june-2019"></a>In der Entwicklung befindliche Microsoft Intune-Features: Juni 2019
 
@@ -51,14 +51,11 @@ Um Ihnen bei Ihrer Vorbereitung und Planung zu helfen, sind auf dieser Seite Upd
 #### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>Gerätebenutzer können alle verwalteten Anwendungen anzeigen, die sie installiert bzw. zu installieren versucht haben <!-- 2352913 -->
 Im Unternehmensportal für Windows werden alle verwalteten (sowohl erforderlichen als auch verfügbaren) Apps aufgelistet, die auf dem Gerät eines Benutzers installiert sind. Benutzer können versuchte und ausstehende App-Installationen sowie deren aktuellen Status einsehen. Wenn Ihr Unternehmen keine erforderlichen oder verfügbaren Anwendungen zur Verfügung stellt, erhalten die Benutzer die Meldung, dass keine Unternehmensanwendungen installiert wurden. Benutzer können ihre Apps auch nach Installationsstatus sortieren oder filtern.
 
-#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956---"></a>Berichterstellung für verfügbare Google Play-Apps für Android-Arbeitsprofile <!-- 3041956 -->
-Mit diesem Feature können Sie den App-Installationsstatus und die installierte Version verwalteter Google Play-Apps auf Android Enterprise-Geräten anzeigen. Weitere Informationen finden Sie unter [Überwachen von App-Schutzrichtlinien](app-protection-policies-monitor.md), [Verwalten von Android-Arbeitsprofilgeräten mit Intune](android-enterprise-overview.md) und [App-Typ „Verwaltetes Google Play“](apps-add-android-for-work.md#managed-google-play-app-type).
-
 #### <a name="configure-which-browser-is-allowed-to-link-to-organization-data----3145939---"></a>Konfigurieren, welche Browser zu Unternehmensdaten verlinken dürfen <!-- 3145939 -->
 Intune-App-Schutzrichtlinien für Android- und iOS-Geräte ermöglichen Ihnen die Übertragung von Unternehmensweblinks an einen spezifischen anderen Browser als Intune Managed Browser oder Microsoft Edge.  Weitere Informationen zu Intune-App-Schutzrichtlinien finden Sie unter [Was sind App-Schutzrichtlinien?](app-protection-policy.md)
 
 #### <a name="installed-apps-page-on-the-company-portal-website-----4224326---"></a>Seite „Installierte Apps“ auf der Unternehmensportalwebsite  <!-- 4224326 -->
-Die [Unternehmensportalwebsite](https://portal.manage.microsoft.com/) wird eine neue Seite umfassen, auf denen Benutzern alle Apps angezeigt werden, die auf ihren Geräten installiert sind. Diese Liste enthält sowohl die verfügbaren Apps als auch die vom Unternehmen vorgegebenen Apps. Auf dieser Seite können Benutzer den Installations- und Anforderungsstatus der Apps auf ihren Geräten sehen. Weitere Informationen über die Unternehmensportalwebsite finden Sie unter [Using the Intune Company Portal website (Verwenden der Intune-Unternehmensportalwebsite)](/intune-user-help/using-the-intune-company-portal-website.md) und [Konfigurieren der Microsoft Intune-Unternehmensportal-App](company-portal-app.md).
+Die [Unternehmensportalwebsite](https://portal.manage.microsoft.com/) wird eine neue Seite umfassen, auf denen Benutzern alle Apps angezeigt werden, die auf ihren Geräten installiert sind. Diese Liste enthält sowohl die verfügbaren Apps als auch die vom Unternehmen vorgegebenen Apps. Auf dieser Seite können Benutzer den Installations- und Anforderungsstatus der Apps auf ihren Geräten sehen. Weitere Informationen über die Unternehmensportalwebsite finden Sie unter [Using the Intune Company Portal website (Verwenden der Intune-Unternehmensportalwebsite)](/intune-user-help/using-the-intune-company-portal-website) und [Konfigurieren der Microsoft Intune-Unternehmensportal-App](company-portal-app.md).
 
 #### <a name="call-graph-api-read-operations-from-an-application-without-user-credentials----4655885---"></a>Aufrufen von Lesevorgängen der Graph-API über eine Anwendung ohne Benutzeranmeldeinformationen <!-- 4655885 -->
 Anwendungen können Lesevorgänge der Intune-Graph-API mithilfe der App-Identität ohne Benutzeranmeldeinformationen aufrufen. Weitere Informationen finden Sie unter [Get access without a user (Zugriff ohne Benutzer)](https://docs.microsoft.com/graph/auth-v2-service).
