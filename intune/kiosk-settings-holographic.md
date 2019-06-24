@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aef2db158e0572c1eec056a1d6e33b4b97aea77a
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9d6366034af09acdbecdc0cb0e670f6d57766b35
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047018"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197527"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Geräteeinstellungen bei Windows Holographic for Business zur Ausführung als Kiosk in Intune
 
@@ -64,7 +64,7 @@ Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. D
 
 - **Anwendungen**: Wählen Sie die Apps aus, die auf dem Kioskgerät ausgeführt werden sollen. Denken Sie daran, dass Sie mehrere Apps hinzufügen können.
 
-  - **Store-App hinzufügen**: Wählen Sie eine vorhandene App aus, die Sie mit [Client-Apps](apps-add.md) hinzugefügt haben. Wenn keine Apps aufgelistet sind, können Sie Apps abrufen und [Intune hinzufügen](store-apps-windows.md).
+  - **Hinzufügen von Store-apps**: Wählen Sie eine vorhandene app, die Sie hinzugefügt oder in Intune als bereitgestellten [Clientanwendungen](apps-add.md), einschließlich Branchen-apps. Wenn Sie keine aufgelisteten apps haben, unterstützt Intune viele [app-Typen](apps-add.md) , die Sie [zu Intune hinzufügen,](store-apps-windows.md).
   - **Win32-App hinzufügen**: Diese Option wird unter Windows Holographic for Business nicht unterstützt.
   - **Nach AUMID hinzufügen**: Fügen Sie mit dieser Option Windows-Posteingangs-Apps hinzu. Geben Sie die folgenden Eigenschaften ein: 
 

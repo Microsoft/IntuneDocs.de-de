@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 06/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 357d1619fdf051d07ea47c84a79b2aebd1523460
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
-ms.translationtype: HT
+ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
+ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041131"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67234969"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
@@ -420,7 +420,8 @@ Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 Diese Einstellungen verwenden den [DeviceLock-Richtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), der auch die unterstützten Windows-Editionen auflistet.
 
-- **Kennwort**: **Anfordern** der Eingabe eines Kennworts durch den Endbenutzer, um auf das Gerät zugreifen zu können. **Nicht konfiguriert** (Standard) ermöglicht den Zugriff auf das Gerät ohne ein Kennwort.
+- **Kennwort**: **Anfordern** der Eingabe eines Kennworts durch den Endbenutzer, um auf das Gerät zugreifen zu können. **Nicht konfiguriert** (Standard) ermöglicht den Zugriff auf das Gerät ohne ein Kennwort. Gilt für nur lokale Konten. Kontokennwörter für die Domäne, die von Active Directory (AD) und Azure AD konfiguriert bleiben.
+
   - **Erforderlicher Kennworttyp**: Wählen Sie den Kennworttyp aus. Folgende Optionen sind verfügbar:
     - **Nicht konfiguriert**: Das Kennwort kann Zahlen und Buchstaben enthalten.
     - **Numerisch**: Kennwort darf nur aus Zahlen bestehen.

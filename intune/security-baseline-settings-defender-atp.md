@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58095612d6e76d4a1cb633e69260267dcfd9999
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
-ms.translationtype: HT
+ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
+ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66749911"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67197541"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-Baselineeinstellungen für Intune
 
@@ -83,7 +83,7 @@ Weitere Informationen finden Sie unter [Policy CSP - SmartScreen (Richtlinien-Ko
 
   **Standard**: Ja
 
-## <a name="attach-surface-reduction"></a>Verringerung der Angriffsfläche  
+## <a name="attack-surface-reduction"></a>Verringerung der Angriffsfläche  
 
 - **Office apps launch child process type** (Untergeordnete Prozesse in Office-Apps starten)  
   [Regel zur Verringerung der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – Wenn *Blockieren* festgelegt wurde, ist das Erstellen von untergeordneten Prozessen mit Office-Apps nicht gestattet. Office-Apps umfassen Word, Excel, PowerPoint, OneNote und Access. Die Erstellung eines untergeordneten Prozesses ist ein typisches Verhalten für eine Schadsoftware – besonders für makrobasierte Angriffe, mit denen versucht wird, Office-Apps zum Starten oder Herunterladen schädlicher ausführbarer Dateien zu verwenden.  

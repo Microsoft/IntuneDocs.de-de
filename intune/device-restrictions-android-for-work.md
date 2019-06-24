@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 06/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c44f18d19172498f17f2a3f78ea47bad1d0f3fa7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fc91fc685c28beff38dc395dd83b60e99343af57
+ms.sourcegitcommit: 2545ffb75b8d9290718d3a67acdcbea2f279090f
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048110"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67263687"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune
 
@@ -56,7 +56,7 @@ In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschri
 - **Daten mithilfe von NFC übertragen**: Wählen Sie **Blockieren** aus, um die Verwendung der Near Field Communication-Technologie (NFC) zum Übertragen von Dateien aus Apps zu verhindern. **Nicht konfiguriert** ermöglicht die Verwendung von NFC zum Freigeben von Daten zwischen Geräten.
 - **Debugfunktionen**: Wenn Sie **Zulassen** festlegen, können Benutzer Features zum Debuggen auf dem Gerät verwenden. **Nicht konfiguriert** verhindert, dass Benutzer Features zum Debuggen auf dem Gerät verwenden.
 - **Mikrofonanpassung:** Wenn Sie **Blockieren** festlegen, können Benutzer weder das Mikrofon stummschalten noch die Lautstärke am Mikrofon anpassen. **Nicht konfiguriert** ermöglicht dem Benutzer, die Lautstärke am Mikrofon des Geräts anzupassen.
-- **E-Mail-Adressen für Schutz vor Zurücksetzung auf Werkseinstellungen**: Wählen Sie **E-Mail-Adressen für Google-Konto** aus. Geben Sie die E-Mail-Adressen der Geräteadministratoren ein, die das Gerät entsperren können, nachdem es zurückgesetzt wurde. Achten Sie darauf, dass Sie die E-Mail-Adressen durch ein Semikolon trennen, z. B. `admin1@gmail.com;admin2@gmail.com`. Wenn keine E-Mail-Adresse eingegeben wird, kann jeder das Gerät entsperren, sobald die Werkseinstellungen wiederhergestellt sind.
+- **E-Mail-Adressen für Schutz vor Zurücksetzung auf Werkseinstellungen**: Wählen Sie **E-Mail-Adressen für Google-Konto** aus. Geben Sie die E-Mail-Adressen der Geräteadministratoren ein, die das Gerät entsperren können, nachdem es zurückgesetzt wurde. Achten Sie darauf, dass Sie die E-Mail-Adressen durch ein Semikolon trennen, z. B. `admin1@gmail.com;admin2@gmail.com`. Wenn keine E-Mail-Adresse eingegeben wird, kann jeder das Gerät entsperren, sobald die Werkseinstellungen wiederhergestellt sind. Diese e-Mail-Adressen gelten nur beim Nichtbenutzercode Zurücksetzung auf werkseinstellungen ausgeführt wird, wie das Zurücksetzen auf die werkseinstellungen über das Menü für die Wiederherstellung ausführen.
 - **Notausstieg für Netzwerk**: **Aktivieren** dieser Option erlaubt Benutzern, das Feature „Notausstieg für Netzwerk“ zu aktivieren. Wenn beim Starten des Geräts keine Netzwerkverbindung hergestellt wird, fordert die Notausstiegsfunktion zum Herstellen einer vorübergehenden Verbindung mit einem Netzwerk und Aktualisieren der Geräterichtlinie auf. Nach dem Anwenden der Richtlinie wird das temporäre Netzwerk ignoriert, und das Gerät setzt den Start fort. Dieses Feature verbindet Geräte mit einem Netzwerk, wenn:
   - Kein geeignetes Netzwerk in der letzten Richtlinie enthalten ist.
   - Das Gerät im Aufgabensperrmodus in eine App startet.
@@ -100,6 +100,8 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
   >   - [der Gerätegruppe zugewiesen sein](apps-deploy.md), die für Ihre dedizierten Geräte erstellt wurde.
   > 
   > Die **Managed Home Screen**-App muss sich nicht im Konfigurationsprofil befinden, aber als Client-App hinzugefügt werden. Wenn die **Managed Home Screen**-App als Client-App hinzugefügt wird, werden alle anderen Apps, die Sie im Konfigurationsprofil hinzufügen, in der **Managed Home Screen**-App als Symbole angezeigt. 
+  >
+  > Verwendung von Multi-app-Kiosk-Modus mit Startbildschirm verwaltet, wird die Einwählprogramm/Phone-apps möglicherweise nicht richtig funktionieren. 
 
   - Wählen Sie **Hinzufügen** und dann Ihre Apps in der Liste aus.
 
