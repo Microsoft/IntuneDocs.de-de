@@ -157,6 +157,7 @@
 ### [Gerät zurücksetzen](reset-device-cp-app.md)
 
 ## [Verwenden der Intune-Unternehmensportal-Website](using-the-intune-company-portal-website.md)
+### [Verwalten von Apps](manage-apps-cpweb.md)  
 ### [Remotesperre für Gerät aktivieren](remote-lock-your-device-cpwebsite.md)  
 ### [Gerät umbenennen](rename-your-device-cpwebsite.md)  
 ### [Gerät entfernen](remove-your-device-cpwebsite.md)  
