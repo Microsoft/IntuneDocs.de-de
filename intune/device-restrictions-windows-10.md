@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9af61c89b90a7f31654cd43a3cfc457b27e9700f
-ms.sourcegitcommit: 86aa5fefcba1e71841696b1a5e3ca5bffb1a9528
+ms.openlocfilehash: 30e869cbb0311e1855dd4dc09978505ad539970e
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67234969"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403091"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
@@ -57,7 +57,16 @@ Diese Einstellungen verwenden den [ApplicationManagement-Richtlinien-CSP](https:
 - **App-Daten in Systemvolume installieren**: **Blockieren** hindert Apps daran, Daten auf dem Systemvolume des Geräts zu speichern. **Nicht konfiguriert** (Standard) erlaubt Apps das Speichern von Daten auf dem Systemvolume.
 - **Apps auf Systemlaufwerk installieren**: **Blockieren** hindert Apps daran, eine Installation auf dem Systemlaufwerk des Geräts auszuführen. **Nicht konfiguriert** (Standard) erlaubt Apps Installationen auf dem Systemlaufwerk.
 - **Game DVR** (nur Desktop): **Blockieren** deaktiviert die Windows-Spieleaufzeichnung und -übertragung. **Nicht konfiguriert** (Standard) lässt die Aufzeichnung und Übertragung von Spielen zu.
-- **Nur Apps aus dem Store**: **Erforderlich** erzwingt, dass Endbenutzer nur Apps aus dem Windows App Store installieren können. **Nicht konfiguriert** ermöglicht Endbenutzern, Apps aus anderen Quellen als Windows App Store zu installieren.
+- **Apps nur aus dem Store**: Diese Einstellung bestimmt die benutzerfreundlichkeit, wenn Benutzer apps aus anderen Quellen als dem Microsoft Store installieren. Folgende Optionen sind verfügbar:
+
+  - **Nicht konfiguriert** (Standard): ermöglicht Benutzern das Installieren von apps aus anderen Quellen als dem Microsoft Store, einschließlich apps, die in anderen Richtlinieneinstellungen definiert.  
+  - **Überall**: deaktiviert die app-Empfehlungen, bei dem Benutzer apps aus einem beliebigen Speicherort installieren.  
+  - **Nur Store**: Erzwingt, dass Benutzer nur apps aus dem Microsoft Store installieren.
+  - **Empfehlungen**: Wenn eine app aus dem Web installieren zu können, die in den Microsoft Store verfügbar ist, Benutzern eine Meldung mit der Empfehlung sie es aus dem Store herunterladen angezeigt.  
+  - **Bevorzugen Sie Store**: warnt den Benutzer bei der sie apps aus anderen Quellen als dem Microsoft Store zu installieren.
+
+  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+
 - **Für Apps mit Updatefehlern Neustart erzwingen**: Wenn eine App verwendet wird, wird sie möglicherweise nicht aktualisiert. Verwenden Sie diese Einstellung, um den Neustart einer App zu erzwingen. Bei **Nicht konfiguriert** (Standard) wird kein Neustart der App erzwungen. **Anfordern** ermöglicht es Administratoren, einen Neustart an einem bestimmten Datum zu einer bestimmtem Uhrzeit oder nach einem wiederkehrenden Schema zu erzwingen. Wenn Sie **Anfordern** festlegen, machen Sie außerdem diese Angaben:
 
   - **Startdatum/-uhrzeit**: Wählen Sie ein bestimmtes Datum und eine bestimmte Uhrzeit für den Neustart der Apps aus.

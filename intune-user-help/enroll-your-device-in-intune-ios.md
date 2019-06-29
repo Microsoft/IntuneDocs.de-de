@@ -18,12 +18,12 @@ ms.reviewer: tisilv
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bef0eb545f5f0ca0f85365a08e6bc5d726d6979e
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: 4c8dfdea552d035c036828bfd2e6695cc5e4cb7b
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196857"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402734"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Einrichten des iOS-Gerätezugriffs auf Unternehmensressourcen  
 
@@ -59,15 +59,15 @@ Eine Unterbrechung von mehr als einigen Minuten während der Registrierung kann 
 
 1. Öffnen Sie das Unternehmensportal, und melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an. 
 
-    ![Beispielscreenshot der Anmeldung bei der Unternehmensportal-App.](./media/ios-01-cp-enroll-1903.PNG)  
+    ![Beispielscreenshot der Anmeldung bei der Unternehmensportal-App.](./media/ios-01-cp-enroll-1904.PNG)  
 
 2. Wenn Sie gefragt werden, ob Sie Benachrichtigungen vom Unternehmensportal empfangen möchten, tippen Sie auf **Zulassen.** Das Unternehmensportal informiert Sie anhand von Benachrichtigungen, wenn z.B. Ihre Geräteeinstellungen aktualisiert werden müssen. 
 
-    ![Beispielscreenshot der Startseite des Unternehmensportals, Frage zu Benachrichtigungen.](./media/ios-04-cp-enroll-1903.PNG)  
+    ![Beispielscreenshot der Startseite des Unternehmensportals, Frage zu Benachrichtigungen.](./media/ios-02-cp-enroll-1904.PNG)  
 
 3. Klicken Sie auf dem Bildschirm **Zugriff einrichten** auf **Anfang**.  
 
-     ![Beispielscreenshot des Bildschirms „Zugriff einrichten“ im Unternehmensportal.](./media/ios-05-cp-enroll-1903.PNG)  
+     ![Beispielscreenshot des Bildschirms „Zugriff einrichten“ im Unternehmensportal.](./media/ios-03-cp-enroll-1904.PNG)  
 
 4. Lesen Sie die Liste der Geräteinformationen durch, die Ihre Organisation sehen kann und nicht sehen kann. Tippen Sie dann auf **Weiter**.  
 
@@ -87,7 +87,7 @@ Eine Unterbrechung von mehr als einigen Minuten während der Registrierung kann 
 
 7. iOS 12.2 oder neuer: Wenn Sie aufgefordert werden, das Unternehmensportal zu öffnen, tippen Sie auf **Öffnen**. Auf dem Bildschirm **Verwaltungsprofil installieren** sind die Schritte zum Installieren des Profils aufgelistet.
 
-    ![Beispielscreenshot des Bildschirms „Verwaltungsprofil installieren“ im Unternehmensportal](./media/ios-1904-settings-icon.PNG)  
+    ![Beispielscreenshot des Bildschirms „Verwaltungsprofil installieren“ im Unternehmensportal](./media/ios-07-cp-enroll-1904.PNG)  
 
 8. Wechseln Sie zur App „Einstellungen“, und tippen Sie auf **Profil heruntergeladen**.  
 
@@ -99,24 +99,24 @@ Eine Unterbrechung von mehr als einigen Minuten während der Registrierung kann 
     
 10. Geben Sie das Gerätekennwort ein. Tippen Sie dann auf **Installieren**.    
 
-    ![Beispielscreenshot der App „Einstellungen“ mit dem Bildschirm „Profil installieren“ mit Cursor auf der Schaltfläche „Installieren“.](./media/ios-1904-password-install.PNG)  
+    ![Beispielscreenshot der App „Einstellungen“ mit dem Bildschirm „Profil installieren“ mit Cursor auf der Schaltfläche „Installieren“.](./media/ios-10-cp-enroll-1904.PNG)  
 
 
 11. Der nächste Bildschirm ist eine standardmäßige Systemwarnung für die Geräteverwaltung. Um mit der Installation fortzufahren, tippen Sie auf **Installieren**. Wenn Sie aufgefordert werden, der Remoteverwaltung zu vertrauen, tippen Sie auf **Vertrauen**.  
 
-    ![Beispielscreenshot der App „Einstellungen“ mit dem Bildschirm mit einer standardmäßigen Systemwarnung zu Stammzertifikat und Verwaltung mobiler Geräte.](./media/ios-15-cp-enroll-1903.PNG)  
+    ![Beispielscreenshot der App „Einstellungen“ mit dem Bildschirm mit einer standardmäßigen Systemwarnung zu Stammzertifikat und Verwaltung mobiler Geräte.](./media/ios-11-cp-enroll-1904.PNG)  
 
 12. Klicken Sie nach Abschluss der Installation auf **Fertig**. Um zu bestätigen, dass das Profil installiert wurde, wechseln Sie zu den Einstellungen unter **Profile und Geräteverwaltung**. Daraufhin sollte das Profile unter **Verwaltung mobiler Geräte** aufgeführt sein.   
 
-    ![Beispielscreenshot der App „Einstellungen“ mit den Einstellungen unter „Profile und Geräteverwaltung“ mit gezeigtem Verwaltungsprofil.](./media/ios-00-cp-enroll-1903.PNG)  
+    ![Beispielscreenshot der App „Einstellungen“ mit den Einstellungen unter „Profile und Geräteverwaltung“ mit gezeigtem Verwaltungsprofil.](./media/ios-12-cp-enroll-1904.PNG)  
 
 13. Kehren Sie zur Unternehmensportal-App zurück. Das Unternehmensportal beginnt mit der Synchronisierung und Einrichtung Ihres Geräts. Das Unternehmensportal fordert Sie möglicherweise auf, zusätzliche Geräteeinstellungen zu aktualisieren. Wenn das der Fall ist, tippen Sie auf **Weiter**.  
 
-    ![Beispielscreenshot der Unternehmensportal-App, Bildschirm „Zugriff einrichten“ mit gelbem Dreieck neben einer geforderten Einstellung.](./media/ios-12-cp-enroll-1903.PNG)  
+    ![Beispielscreenshot der Unternehmensportal-App, Bildschirm „Zugriff einrichten“ mit gelbem Dreieck neben einer geforderten Einstellung.](./media/ios-13-cp-enroll-1904.PNG)  
 
 14. Sie erkennen, dass das Setup abgeschlossen ist, wenn alle Elemente in der Liste einen grünen Kreis aufweisen. Tippen Sie auf **Fertig**.   
     
-    ![Beispielscreenshot des Unternehmensportals mit der Meldung „Alles erledigt!“ Es werden nur grüne Kreise angezeigt.](./media/ios-13-cp-enroll-1903.PNG)  
+    ![Beispielscreenshot des Unternehmensportals mit der Meldung „Alles erledigt!“ Es werden nur grüne Kreise angezeigt.](./media/ios-14-cp-enroll-1904.PNG)  
 
 > [!Note]
 > Wenn in Ihrer Organisation Obergrenzen für Gesprächsminuten oder Datenvolumen gelten oder sie Ihnen ein unternehmenseigenes Gerät zur Verfügung stellt, müssen Sie möglicherweise noch einige weitere Schritte durchführen. Wenn Sie aufgefordert werden, die App **Datalert** zu installieren, lesen Sie [Registrieren Ihres Geräts im Telecom Expense Management](enroll-your-device-with-telecom-expense-management-ios.md). Wenn Ihr Unternehmen am Apple-Programm zur Geräteregistrierung teilnimmt, finden Sie heraus, [wie Sie Ihr unternehmenseigenes Gerät registrieren können](enroll-your-device-dep-ios.md).  

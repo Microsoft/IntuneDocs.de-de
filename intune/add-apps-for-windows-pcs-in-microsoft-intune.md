@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86cbea29233d792006bce68fcd2a36fb1a7ec0a6
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3e24bd79fbceba1834d02af8512e5dd52676d471
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050198"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403300"
 ---
 # <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird
 
@@ -103,4 +103,4 @@ Die App wird im Arbeitsbereich **Apps** im Knoten **Apps** angezeigt.
 
 Nachdem Sie eine App erstellt haben, umfasst der nächste Schritt die Bereitstellung. Weitere Informationen finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](apps-deploy.md).
 
-Wenn Sie weitere Informationen zu Tipps und Tricks zum Bereitstellen von Software auf Windows-PCs lesen möchten, lesen Sie den Blogbeitrag [Support Tip: Best Practices for Intune Software Distribution to PC’s (Tipp des Supports: Bewährte Methoden zur Intune-Softwareverteilung auf PCs)](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/).
+Wenn Sie weitere Informationen zu Tipps und Tricks zum Bereitstellen von Software auf Windows-PCs lesen möchten, lesen Sie den Blogbeitrag [Support Tip: Best Practices for Intune Software Distribution to PC’s (Tipp des Supports: Bewährte Methoden zur Intune-Softwareverteilung auf PCs)](https://support.microsoft.com/en-US/help/2583929).

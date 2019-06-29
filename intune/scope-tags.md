@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57a14e1e3c4caea570667096fec71cecf2d88ddf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045193"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403791"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Verwenden der rollenbasierten Zugriffssteuerung und Bereichsmarkierungen für verteilte IT
 
@@ -42,8 +42,10 @@ Angenommen, einem Administrator der Bezirksdirektion von Seattle wird die Rolle 
 
     ![Screenshot: Erstellen einer Bereichsmarkierung](./media/scope-tags/create-scope-tag.png)
 
-2. Geben Sie einen **Namen** und eine **Beschreibung** an.
-3. Wählen Sie **Erstellen** aus.
+3. Wenn Sie alle Geräte in bestimmten Gruppen möchten, wählen Sie **bereichsmarkierung für alle Geräte in der ausgewählten Gruppen zuweisen**.
+    1. In der **einzuschließende Gruppen auswählen** Seite, wählen Sie die Gruppen, enthält die Geräte, die Sie dieser bereichsmarkierung, zuweisen möchten.
+    2. Klicken Sie auf **Auswählen**.
+4. Wählen Sie **Erstellen** aus.
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>So weisen Sie einer Rolle eine Bereichsmarkierung zu
 
