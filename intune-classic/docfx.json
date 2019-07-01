@@ -34,6 +34,7 @@
     "globalMetadata": {
       "layout": "Conceptual",
       "breadcrumb_path": "/enterprise-mobility/toc.json",
+      "disable_contribution_on_translation_quality": ["MT"],
       "product_feedback_displaytext": "Intune Feedback",
       "product_feedback_url": "https://microsoftintune.uservoice.com/",
       "contributors_to_exclude": [
