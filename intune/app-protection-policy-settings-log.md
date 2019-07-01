@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96cb9869db746942615221c5ab112ea5afd8de9c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 8dca73de4491ab4f4822d42d589ef4e3bbbc50f1
+ms.sourcegitcommit: 569cd2d655d33db4fc5c5fb1f8f74a6bfdd78738
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049672"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67157038"
 ---
 # <a name="review-client-app-protection-logs"></a>Überprüfen der Schutzprotokolle für Client-Apps
 

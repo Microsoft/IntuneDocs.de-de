@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/14/2019
+ms.date: 06/20/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 158840a73784516d13defa04785ca5990a9874cf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1cbf45fc337cbe7d7a45081a3b9e05002ca126d8
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041824"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67402941"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Einstellungen für Windows 10-Geräte zum Aktivieren von Windows Hello for Business in Intune
 
@@ -36,55 +36,106 @@ Weitere Informationen zu Windows Hello for Business-Profilen in Intune finden Si
 [Erstellen Sie ein Konfigurationsprofil](identity-protection-configure.md#create-the-device-profile).
 
 ## <a name="windows-hello-for-business"></a>Windows Hello for Business
+- **Konfigurieren Sie Windows Hello for Business**:
+  - **Nicht konfiguriert** – Wählen Sie diese Einstellung aus, wenn Sie Windows Hello for Business-Einstellungen nicht mit Intune steuern möchten. Vorhandene Windows Hello for Business-Einstellungen auf Geräten mit Windows 10 werden nicht geändert. Alle anderen Einstellungen in dem Bereich sind nicht verfügbar.
 
-- **Configure Windows Hello for Business** (Konfigurieren von Windows Hello for Business): Wählen Sie **Aktivieren** aus, um dieses Feature zu verwenden und dessen Einstellungen zu konfigurieren.
-- **Minimale PIN-Länge**: Geben Sie die minimale PIN-Länge ein, die Sie auf den Geräten zulassen möchten. Die Standard-PIN-Länge ist sechs Zeichen. Die minimale PIN-Länge ist vier (4) Zeichen.
-- **Maximale PIN-Länge**: Geben Sie die maximale PIN-Länge ein, die Sie auf den Geräten zulassen möchten. Die Standard-PIN-Länge ist sechs (6) Zeichen. Die maximale PIN-Länge ist 127 Zeichen.  
-- **Kleinbuchstaben in PIN**: Sie können eine stärkere PIN erzwingen, indem Sie von Endbenutzern fordern, Kleinbuchstaben einzubeziehen. Folgende Optionen sind verfügbar:
+  - **Deaktiviert** – Wenn Sie Windows Hello for Business nicht verwenden möchten, wählen Sie diese Einstellung aus. In diesem Fall ist keine der anderen Einstellungen auf dem Bildschirm verfügbar.
+  - **Aktiviert** – Wählen Sie diese Einstellung aus, wenn Sie Windows Hello for Business-Einstellungen konfigurieren möchten.  
+  
+  **Standardeinstellung:** Nicht konfiguriert
 
-  - **Nicht zulässig** (Standard): Hiermit wird die Verwendung von Kleinbuchstaben in der PIN von Benutzern blockiert. Dieses Verhalten tritt auch auf, wenn die Einstellung nicht konfiguriert ist.
-  - **Zulässig**: Benutzer können Kleinbuchstaben in der PIN verwenden, aber es ist nicht erforderlich.
-  - **Erforderlich**: Benutzer müssen in ihre PIN mindestens einen Kleinbuchstaben einbeziehen. Beispielsweise ist es üblich, die Verwendung mindestens eines Großbuchstabens und eines Sonderzeichens vorzuschreiben.
+  Bei Festlegung auf *aktiviert*, sind folgende Einstellungen verfügbar:
 
-- **Großbuchstaben in PIN**: Sie können eine stärkere PIN erzwingen, indem Sie von Endbenutzern fordern, Großbuchstaben einzubeziehen. Folgende Optionen sind verfügbar:
+    - **PIN-Mindestlänge**  
+     Geben Sie eine minimale PIN-Länge für Geräte, um sichere Anmeldung zu. Standardeinstellungen der Windows-Geräte sind sechs Zeichen, aber diese Einstellung kann erzwingen, dass mindestens 4 bis 127 Zeichen. 
+  
+      **Standardeinstellung:** *Nicht konfiguriert*
 
-  - **Nicht zulässig** (Standard): Hiermit wird die Verwendung von Großbuchstaben in der PIN von Benutzern blockiert. Dieses Verhalten tritt auch auf, wenn die Einstellung nicht konfiguriert ist.
-  - **Zulässig**: Benutzer können Großbuchstaben in der PIN verwenden, aber es ist nicht erforderlich.
-  - **Erforderlich**: Benutzer müssen in ihre PIN mindestens einen Großbuchstaben einbeziehen. Beispielsweise ist es üblich, die Verwendung mindestens eines Großbuchstabens und eines Sonderzeichens vorzuschreiben.
+    - **Höchstlänge für PIN**  
+    Geben Sie eine Höchstlänge für PIN für Geräte, um sichere Anmeldung zu. Standardeinstellungen der Windows-Geräte sind sechs Zeichen, aber diese Einstellung kann erzwingen, dass mindestens 4 bis 127 Zeichen.  
 
-- **Sonderzeichen in PIN**: Sie können eine stärkere PIN erzwingen, indem Sie von Endbenutzern fordern, Sonderzeichen einzubeziehen. Folgende Optionen sind verfügbar:
+      **Standardeinstellung:** *Nicht konfiguriert*  
 
-  - **Nicht zulässig** (Standard): Hiermit wird die Verwendung von Sonderzeichen in der PIN von Benutzern blockiert. Dieses Verhalten tritt auch auf, wenn die Einstellung nicht konfiguriert ist.
-    Gilt für diese Sonderzeichen: `! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`
-  - **Zulässig**: Benutzer können Großbuchstaben in der PIN verwenden, aber es ist nicht erforderlich.
-  - **Erforderlich**: Benutzer müssen in ihre PIN mindestens einen Großbuchstaben einbeziehen. Beispielsweise ist es üblich, die Verwendung mindestens eines Großbuchstabens und eines Sonderzeichens vorzuschreiben.
+    - **Kleinbuchstaben in PIN**  
+      Sie können eine stärkere PIN erzwingen, indem Sie von Endbenutzern fordern, Kleinbuchstaben einzubeziehen. Folgende Optionen sind verfügbar:
 
-- **PIN-Ablauf (Tage)** : Es wird empfohlen, ein Ablaufdatum für eine PIN anzugeben, nach dem sie vom Benutzer geändert werden muss. Die Standardeinstellung ist 41 Tage.
+      - **Nicht zulässig** : Hiermit wird die Verwendung von Kleinbuchstaben in der PIN von Benutzern blockiert. Dieses Verhalten tritt auch auf, wenn die Einstellung nicht konfiguriert ist.
+      - **Zulässig**: Benutzer können Kleinbuchstaben in der PIN verwenden, aber es ist nicht erforderlich.
+      - **Erforderlich**: Benutzer müssen in ihre PIN mindestens einen Kleinbuchstaben einbeziehen. Beispielsweise ist es üblich, die Verwendung mindestens eines Großbuchstabens und eines Sonderzeichens vorzuschreiben.
 
-- **Remember PIN history** (PIN-Verlauf speichern): Schränkt die Wiederverwendung zuvor verwendeter PINs ein. Standardmäßig können die letzten fünf PINs nicht erneut verwendet werden.  
-- **PIN-Wiederherstellung aktivieren**: Ermöglicht es dem Benutzer, seine PIN mithilfe des PIN-Wiederherstellungsdiensts von Windows Hello for Business zu ändern.
+    - **Großbuchstaben in PIN**  
+    Sie können eine stärkere PIN erzwingen, indem Sie von Endbenutzern fordern, Großbuchstaben einzubeziehen. Folgende Optionen sind verfügbar:
 
-       - **Enable**: The cloud service encrypts a PIN recovery secret to store on the device. The user can change their PIN if needed.  
-       - **Not configured** (default): A PIN recovery secret is not created or stored. If the user's PIN is forgotten, the only way to get a new PIN is by deleting the existing PIN and creating a new one. The user will need to re-register with any services the old PIN provided access to.  
+      - **Nicht zulässig**: Hiermit wird die Verwendung von Großbuchstaben in der PIN von Benutzern blockiert. Dieses Verhalten tritt auch auf, wenn die Einstellung nicht konfiguriert ist.
+      - **Zulässig**: Benutzer können Großbuchstaben in der PIN verwenden, aber es ist nicht erforderlich.
+      - **Erforderlich**: Benutzer müssen in ihre PIN mindestens einen Großbuchstaben einbeziehen. Beispielsweise ist es üblich, die Verwendung mindestens eines Großbuchstabens und eines Sonderzeichens vorzuschreiben.
 
-- **Trusted Platform Module (TPM) verwenden**: Ein TPM-Chip bietet eine zusätzliche Sicherheitsebene für Daten. Wählen Sie einen der folgenden Werte aus:  
-  - **Aktivieren**: Nur Geräte mit verfügbarem TPM können Windows Hello for Business bereitstellen.
-  - **Nicht konfiguriert**: Alle Geräte können Windows Hello for Business bereitstellen, selbst wenn kein verwendbares TPM vorhanden ist. Es wird zunächst versucht, ein TPM zu verwenden, sollte jedoch keins verfügbar sein, können Geräte auf die Softwareverschlüsselung zurückgreifen.  
+    - **Sonderzeichen in PIN**  
+    Sie können eine stärkere PIN erzwingen, indem Sie von Endbenutzern fordern, Sonderzeichen einzubeziehen. Gilt für diese Sonderzeichen: `! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`  
+ 
+      Folgende Optionen sind verfügbar:
+      - **Nicht zulässig** : Hiermit wird die Verwendung von Sonderzeichen in der PIN von Benutzern blockiert. Dieses Verhalten tritt auch auf, wenn die Einstellung nicht konfiguriert ist.
+      - **Zulässig**: Benutzer können Großbuchstaben in der PIN verwenden, aber es ist nicht erforderlich.
+      - **Erforderlich**: Benutzer müssen in ihre PIN mindestens einen Großbuchstaben einbeziehen. Beispielsweise ist es üblich, die Verwendung mindestens eines Großbuchstabens und eines Sonderzeichens vorzuschreiben.
 
-- **Biometrische Authentifizierung zulassen**: Aktiviert die biometrische Authentifizierung, z. B. die Gesichtserkennung oder Fingerabdrücke, als Alternative zu einer PIN für Windows Hello for Business. Benutzer müssen für den Fall dennoch eine PIN konfigurieren, dass die biometrische Authentifizierung fehlschlägt. Es stehen die folgenden Optionen zur Auswahl:
+      **Standard**: nicht zulässig
 
-  - **Aktivieren**: Windows Hello for Business ermöglicht biometrische Authentifizierung.
-  - **Nicht konfiguriert** (Standard): Windows Hello for Business verhindert die biometrische Authentifizierung (für alle Kontotypen).
+  - **PIN-Ablauf (Tage)**  
+      Es wird empfohlen, ein Ablaufdatum für eine PIN anzugeben, nach dem sie vom Benutzer geändert werden muss. Standardeinstellungen der Windows-Geräte sind 41 Tage.
 
-- **Use enhanced anti-spoofing, when available** (Erweitertes Antispoofing verwenden, falls verfügbar): Wählen Sie diese Option, wenn Antispoofing-Features von Windows Hello auf Geräten verwendet werden, die dies unterstützen. Beispiel: Erkennen eines Fotos eines Gesichts anstelle eines echten Gesichts.
+    **Standard**: Nicht konfiguriert
 
-  - **Aktivieren**: Windows verlangt, dass alle Benutzer Antispoofing für Gesichtsmerkmale einsetzen, sofern dies unterstützt wird.  
-  - **Nicht konfiguriert** (Standard): Antispoofingkonfigurationen auf dem Gerät werden von Windows berücksichtigt.
+  - **PIN-Verlauf speichern**  
+    Schränkt die Wiederverwendung zuvor verwendeter PINs ein. Windows-Geräte standardmäßig verhindert die Wiederverwendung der letzten fünf PINs.  
 
-- **Zertifikat für lokale Ressourcen**: 
+    **Standard**: Nicht konfiguriert  
 
-  - **Aktivieren**: Ermöglicht es Windows Hello for Business, Zertifikate zur Authentifizierung bei lokalen Ressourcen zu verwenden.
-  - **Nicht konfiguriert** (Standard): Verhindert, dass Windows Hello for Business Zertifikate zur Authentifizierung bei lokalen Ressourcen verwendet. Stattdessen verwenden Geräte das Standardverhalten der *lokalen schlüsselbasierten Authentifizierung*. Weitere Informationen finden Sie unter [User certificate for on-premises authentication (Benutzerzertifikat für lokale Authentifizierung)](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) in der Windows Hello-Dokumentation.  
+  - **PIN-Wiederherstellung aktivieren**   
+    Ermöglicht Benutzer verwenden die Windows Hello for Business-PIN-Recovery-Dienst. 
+    
+    - **Aktiviert** - Geheimnis für die PIN-Wiederherstellung wird auf dem Gerät gespeichert und kann der Benutzer seine PIN bei Bedarf ändern.  
+    - **Deaktivierte** : das Geheimnis für die Wiederherstellung nicht erstellt oder gespeichert.
+
+    **Standardeinstellung:** Nicht konfiguriert
+
+  - **Trusted Platform Module (TPM) verwenden**   
+    Ein TPM-Chip bietet eine zusätzliche Sicherheitsebene für Daten.  
+
+    - **Aktiviert**: Nur Geräte mit verfügbarem TPM können Windows Hello for Business bereitstellen.
+    - **Nicht konfiguriert**: Geräte versuchen zunächst, ein TPM zu verwenden. Wenn diese Option nicht verfügbar ist, können sie die Softwareverschlüsselung verwenden.
+    
+    **Standardeinstellung:** Nicht konfiguriert
+
+  - **Biometrische Authentifizierung zulassen**  
+     Aktiviert die biometrische Authentifizierung, z. B. die Gesichtserkennung oder Fingerabdrücke, als Alternative zu einer PIN für Windows Hello for Business. Benutzer müssen für den Fall dennoch eine PIN konfigurieren, dass die biometrische Authentifizierung fehlschlägt. Es stehen die folgenden Optionen zur Auswahl:
+
+    - **Aktivieren**: Windows Hello for Business ermöglicht biometrische Authentifizierung.
+    - **Nicht konfiguriert**: Windows Hello for Business verhindert die biometrische Authentifizierung (für alle Kontotypen).
+
+    **Standardeinstellung:** Nicht konfiguriert
+
+  - **Erweitertes Antispoofing verwenden, falls verfügbar**  
+    Konfiguriert, ob die Antispoofingfeatures von Windows Hello auf Geräten verwendet werden, die diese unterstützen (z. B. Erkennung eines Fotos von einem Gesicht anstelle eines echten Gesichts).  
+    - **Aktivieren**: Windows verlangt, dass alle Benutzer Antispoofing für Gesichtsmerkmale einsetzen, sofern dies unterstützt wird.
+    - **Nicht konfiguriert**: Antispoofingkonfigurationen auf dem Gerät werden von Windows berücksichtigt.
+
+    **Standardeinstellung:** Nicht konfiguriert
+
+  - **Zertifikat für lokale Ressourcen**  
+
+    - **Aktivieren**: Ermöglicht es Windows Hello for Business, Zertifikate zur Authentifizierung bei lokalen Ressourcen zu verwenden.
+    - **Nicht konfiguriert**: Verhindert, dass Windows Hello for Business Zertifikate zur Authentifizierung bei lokalen Ressourcen verwendet. Stattdessen verwenden Geräte das Standardverhalten der *lokalen schlüsselbasierten Authentifizierung*. Weitere Informationen finden Sie unter [User certificate for on-premises authentication (Benutzerzertifikat für lokale Authentifizierung)](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-cert-trust-policy-settings#use-certificate-for-on-premises-authentication) in der Windows Hello-Dokumentation.  
+
+  **Standardeinstellung:** Nicht konfiguriert
+
+- **Verwenden Sie die Sicherheitsschlüssel für die Anmeldung in**  
+  Diese Einstellung ist für Geräte unter Windows 10, Version 1903 oder höher verfügbar. Zum Verwalten von Unterstützung für die Verwendung von Windows Hello-Sicherheitsschlüssel für die Anmeldung verwenden.  
+
+  - **Aktiviert** -Benutzer können einen Windows Hello-Sicherheitsschlüssel verwenden, wie eine Anmeldeinformationen für PCs, die diese Richtlinie angewendet. 
+  - **Deaktiviert** - Sicherheitsschlüssel werden deaktiviert, und Benutzer nicht verwenden, um PCs anmelden.   
+
+  **Standardeinstellung:** Nicht konfiguriert
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 [Zuweisen von Profilen](device-profile-assign.md) und [Überwachen von Profilen](device-profile-monitor.md)

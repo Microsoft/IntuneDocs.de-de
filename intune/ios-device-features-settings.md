@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2019
+ms.date: 06/27/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b31c7778ea167b98468a0a9ad9e37047c30ce201
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 43b87a90f90130a014817819b87ed5946b1ba15b
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047178"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413805"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>iOS-Geräteeinstellungen zur Verwendung gängiger iOS-Features in Intune
 
@@ -195,7 +195,7 @@ Dieses Feature unterstützt überwachte Geräte, auf denen iOS 9.3 oder höher a
   Gerätetoken können auch verwendet werden, um gerätespezifische Informationen zu diesen Feldern hinzuzufügen. Geben Sie zum Beispiel zur Anzeige der Seriennummer `Serial Number: {{serialnumber}}` ein. Auf dem Sperrbildschirm sieht der Text dann in etwa so aus: `Serial Number 123456789ABC`. Achten Sie darauf, bei der Eingabe von Variablen geschweifte Klammern `{{ }}` zu verwenden. [App-Konfigurationstoken](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) umfassen eine Reihe von Variablen, die Sie nutzen können. Zudem können Sie `deviceName` oder einen anderen gerätespezifischen Wert verwenden.
 
   > [!NOTE]
-  > Variablen werden nicht auf der Benutzeroberfläche überprüft. Daher gibt es möglicherweise Profile, die mit fehlerhaften Eingaben gespeichert wurden. Wenn Sie beispielsweise `{{Devicename}}` anstelle von `{{devicename}}` eingeben, wird die Zeichenfolge anstelle des eindeutigen Gerätenamens angezeigt.
+  > Variablen werden nicht in der Benutzeroberfläche überprüft und Groß-/Kleinschreibung unterschieden. Daher gibt es möglicherweise Profile, die mit fehlerhaften Eingaben gespeichert wurden. Wenn Sie beispielsweise `{{DeviceID}}` anstelle von `{{deviceid}}` eingeben, wird die Zeichenfolge anstelle der eindeutigen Geräte-ID angezeigt. Achten Sie darauf, dass die richtigen Informationen eingeben.
 
 Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
