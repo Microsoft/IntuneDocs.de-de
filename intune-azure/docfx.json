@@ -29,7 +29,9 @@
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+    "disable_contribution_on_translation_quality": ["MT"]
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "intune-azure-redir",
