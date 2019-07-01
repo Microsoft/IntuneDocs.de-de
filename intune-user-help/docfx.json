@@ -33,6 +33,7 @@
     "template": "docs.html",
     "globalMetadata": {
       "layout": "Conceptual",
+      "disable_contribution_on_translation_quality": ["MT"],
       "breadcrumb_path": "/enterprise-mobility-security/toc.json",
       "product_feedback_displaytext": "Intune Feedback",
       "product_feedback_url": "https://microsoftintune.uservoice.com/",
