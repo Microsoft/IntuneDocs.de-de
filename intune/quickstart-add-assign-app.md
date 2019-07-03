@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17db2227303fe3937156ad6afa610dce48bd1992
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041350"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528308"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Schnellstart: Hinzufügen und Zuweisen einer Client-App
 
@@ -69,7 +69,7 @@ Nachdem Sie eine App zu Microsoft Intune hinzugefügt haben, können Sie die App
 
 Führen Sie die folgenden Schritte aus, um eine App zu einer Gruppe zuzuweisen:
 1. Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Client-Apps** > **Apps**. 
-2. Wählen Sie die App aus, die einer Gruppe zugewiesen werden soll.   
+2. Wählen Sie die App aus, die einer Gruppe zugewiesen werden soll.
 3. Klicken Sie auf **Zuweisungen** > **Gruppe hinzufügen**, damit das Blatt **Gruppe hinzufügen** angezeigt wird.
 4. Wählen Sie im Dropdownfeld **Zuweisungstyp** die Option **Für registrierte Geräte verfügbar** aus. 
 5. Klicken Sie auf **Included Groups** > **Select groups to include** > **Contoso Testers** (Eingeschlossene Gruppen > Einzuschließende Gruppen auswählen > Contoso Testers).

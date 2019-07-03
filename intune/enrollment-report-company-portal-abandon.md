@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546694409e6f87d85c5ef934b5d084b0955e0bf7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c15bd301b60481f4d8b15617512851e2cc29034a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041866"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529757"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Unvollständige Berichte zu Benutzerregistrierungen
 
@@ -35,9 +35,9 @@ Mithilfe dieser Informationen können Sie Ihre Onboardingdokumente aktualisieren
 
 Folgende Benutzeraktionen gelten als unvollständige Registrierungen:
 
--   Der Benutzer wählt explizit eine Aktion aus, um die Registrierung zu stoppen.
--   Der Benutzer schließt das Firmenportal während der Registrierung.
--   Der Benutzer lässt mehr als 30 Minuten zwischen den Registrierungsabschnitten verstreichen.
+- Der Benutzer wählt explizit eine Aktion aus, um die Registrierung zu stoppen.
+- Der Benutzer schließt das Firmenportal während der Registrierung.
+- Der Benutzer lässt mehr als 30 Minuten zwischen den Registrierungsabschnitten verstreichen.
 
 Wenn sich ein Benutzer dafür entscheidet, die Registrierung mehrmals zu stoppen und neu zu starten, liegen mehrere Versuche und mehrere unvollständige Registrierungen vor. Wenn ein Benutzer 30 Minuten lang zwischen verschiedenen Registrierungsbildschirmen wartet, liegen mehrere unvollständige Registrierungen vor.
 
@@ -53,18 +53,18 @@ Sie können nach Datumsbereich, Betriebssystem und Registrierungsbereich filtern
 
 Im oberen Teil des Berichts sehen Sie die Anzahl und den Anteil (in Prozent) der unvollständigen Registrierungen im Verhältnis zu allen Registrierungen.
 
--   Initiierte Registrierungen: die Anzahl der versuchten Registrierungen
--   Unvollständige Registrierungen: die Anzahl der versuchten Registrierungen, die nicht zu einem vollständig registrierten und konformen Gerät geführt haben
--   Unvollständigkeitsrate: der Anteil (in Prozent) der Registrierungsversuche, die abgebrochen wurden (abgebrochene Registrierungen bzw. initiierte Registrierungen)
+- Initiierte Registrierungen: die Anzahl der versuchten Registrierungen
+- Unvollständige Registrierungen: die Anzahl der versuchten Registrierungen, die nicht zu einem vollständig registrierten und konformen Gerät geführt haben
+- Unvollständigkeitsrate: der Anteil (in Prozent) der Registrierungsversuche, die abgebrochen wurden (abgebrochene Registrierungen bzw. initiierte Registrierungen)
 
 ### <a name="line-graph"></a>Liniendiagramm
 
 Das Liniendiagramm zeigt die täglichen unvollständigen Registrierungen für jeden der vier Hauptregistrierungsabschnitte:
 
--   Prüfliste für das Setup
--   Plattformbildschirme
--   Nutzungsbedingungen
--   Konformität/Aktivierung
+- Prüfliste für das Setup
+- Plattformbildschirme
+- Nutzungsbedingungen
+- Konformität/Aktivierung
 
 ### <a name="user-abandonment-actions"></a>Abbruchaktionen von Benutzern
 

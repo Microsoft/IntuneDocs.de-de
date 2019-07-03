@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d3e36dbeb1fb7c90dfc5cc4c18fb30140c761db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9a5f28f01d0c8be6692deaf27391e52619fcdcab
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046495"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512268"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Konfigurieren der Richtlinien für die Gerätekompatibilität und die App-Verwaltung während einer Migration zu Microsoft Intune
 
@@ -59,9 +59,9 @@ Profile für den Ressourcenzugriff stellen Zertifikate und Zugriffskonfiguration
 
 Sie müssen ein Gerätekonfigurationsprofil erstellen, um Einstellungen auf der Geräteebene zu erzwingen, wie z.B. Deaktivieren der Kamera, App Store, Konfigurieren des Einzelanwendungsmodus, Startbildschirm, etc. Erfahren Sie mehr über [Geräteprofile](device-profiles.md).
 
-####  <a name="directly-import-ios-configuration-profiles-optional"></a>Direkter Import von iOS-Konfigurationsprofilen (optional)
+#### <a name="directly-import-ios-configuration-profiles-optional"></a>Direkter Import von iOS-Konfigurationsprofilen (optional)
 
--   **iOS-Profile von Apple Configurator (iOS 7.1 und höher)**: Wenn Ihre vorhandene MDM-Lösung Apple Configurator-Profile verwendet (MOBILECONFIG-Dateien), kann Intune diese direkt als benutzerdefinierte Konfigurationsrichtlinien importieren.
+-   **iOS-Profile von Apple Configurator (iOS 7.1 und höher)** : Wenn Ihre vorhandene MDM-Lösung Apple Configurator-Profile verwendet (MOBILECONFIG-Dateien), kann Intune diese direkt als benutzerdefinierte Konfigurationsrichtlinien importieren.
 
 -   **Richtlinien für die Konfiguration von mobilen iOS-Anwendungen**: Wenn Ihre vorhandene MDM-Lösung Richtlinien für die Konfiguration von mobilen iOS-Anwendungen verwendet, kann Intune diese direkt importieren, sofern sie dem XML-Format entsprechen, das von Apple für Eigenschaftenlisten festgelegt wurde.
 

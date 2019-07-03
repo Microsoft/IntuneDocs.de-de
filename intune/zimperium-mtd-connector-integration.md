@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db7f008e67c0523a373da24dd0a04f3556d9dd4c
-ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
+ms.openlocfilehash: dd666fd2ff521d7d7bca704c17fe23e157a1f933
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031373"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528088"
 ---
 # <a name="integrate-zimperium-with-intune"></a>Integrieren von Zimperium in Intune
 

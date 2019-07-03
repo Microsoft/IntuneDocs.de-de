@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9be961908920420dbb4111c2c3ba108b7e11c09f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f97b3365036271a7f41e7c3274e8a3bd966407f3
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042785"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512143"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Verwalten der Datenübertragung zwischen iOS-Apps in Microsoft Intune
 
@@ -34,7 +34,7 @@ Schränken Sie die Datenübertragung auf die von Ihnen verwalteten Apps ein, um 
 
 Mit dem Feature **Open in Management** für iOS-Geräte kann die Übertragung von Dateien zwischen Apps, die über den **MDM-Kanal** bereitgestellt werden, eingeschränkt werden. Legen Sie Einschränkungen für *Open in Management* in den Konfigurationseinstellungen fest, und stellen Sie sie anschließend mithilfe der Lösung zur Verwaltung mobiler Geräte.  Wenn ein Benutzer die bereitgestellte App installiert, werden die von Ihnen festgelegten Einschränkungen angewendet.
 
-##  <a name="use-app-protection-with-ios-apps"></a>Verwenden von App-Schutz mit iOS-Apps
+## <a name="use-app-protection-with-ios-apps"></a>Verwenden von App-Schutz mit iOS-Apps
 Verwenden Sie App-Schutzrichtlinien mit dem iOS-Feature **Open in Management**, um Unternehmensdaten auf folgende Weite zu schützen:
 
 -   **Mitarbeitereigene Geräte, die von keiner MDM-Lösung verwaltet werden:** Sie können die Einstellungen der App-Schutzrichtlinie so festlegen, dass die **App nur Daten an per Richtlinien verwaltete Apps übertragen darf**. Das *Open-In*-Verhalten einer per Richtlinie verwalteten App stellt nur andere per Richtlinie verwaltete Apps als Option für die Freigabe dar. Wenn ein Benutzer versucht, eine richtliniengeschützte Datei als Anhang von OneDrive in der nativen E-Mail-App zu senden, ist diese Datei nicht lesbar.

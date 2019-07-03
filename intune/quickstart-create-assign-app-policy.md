@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bad416e738f1a0481c67480d9a83157a4781c71b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6ec42d122bf3da3fbacef513d6af2dbe124b196c
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050337"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530780"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Schnellstart: Erstellen und Zuweisen einer App-Schutzrichtlinie
 
@@ -66,12 +66,12 @@ Wenn Sie eine App-Schutzrichtlinie in Intune erstellt haben, können Sie diese G
 
 Führen Sie die folgenden Schritte aus, um eine App-Schutzrichtlinie zu zuzuweisen:
 
-1.  Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Intune** > **Client-Apps** > **App-Schutzrichtlinien**. 
-2.  Wählen Sie die App-Schutzrichtlinie aus, die Sie zuvor erstellt haben. In diesem Schnellstart heißt die Richtlinie **Inhaltsschutz für Windows 10**.
-3.  Wählen Sie **Zuweisungen** aus.
-4.  Klicken Sie auf der Registerkarte **Einschließen** auf **Select groups to include** (Einzuschließende Gruppen auswählen).
-5.  Wählen Sie **Contoso Testers** als einzuschließende Gruppe aus.
-6.  Klicken Sie auf **Auswählen** > **Speichern**. 
+1. Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Intune** > **Client-Apps** > **App-Schutzrichtlinien**. 
+2. Wählen Sie die App-Schutzrichtlinie aus, die Sie zuvor erstellt haben. In diesem Schnellstart heißt die Richtlinie **Inhaltsschutz für Windows 10**.
+3. Wählen Sie **Zuweisungen** aus.
+4. Klicken Sie auf der Registerkarte **Einschließen** auf **Select groups to include** (Einzuschließende Gruppen auswählen).
+5. Wählen Sie **Contoso Testers** als einzuschließende Gruppe aus.
+6. Klicken Sie auf **Auswählen** > **Speichern**. 
 
 Somit ist die App-Schutzrichtlinie zugewiesen.
 
