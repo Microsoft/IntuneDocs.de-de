@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 961dcb953584bc16ad3b3613596223af2a3596c7
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1a50eb6e58c7b866af32387a85026eb87f825b15
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049929"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045908"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Durch Microsoft Intune geschützte Apps  
 
 Mit Intune verwaltete Apps verfügen über umfangreiche Richtlinien zum Schutz von mobilen Anwendungen. Mit verwalteten Apps können Sie:
 - „Kopieren und Einfügen“- und „Speichern unter“-Funktionen einschränken
 - Weblinks zum Öffnen innerhalb des sicheren Microsoft-Browsers konfigurieren
-- Unterstützung von mehreren Identitäten und des bedingten Zugriffs auf App-Ebene aktivieren
+- Mehrere Identitäten und bedingten Zugriff auf App-Ebene aktivieren
 - Richtlinien zur Verhinderung von Datenverlust ohne Verwalten des Geräts des Benutzers anwenden
 - App-Schutz ohne erforderliche Registrierung aktivieren
 - App-Schutz auf Geräten aktivieren, die mit EMM-Tools von Drittanbietern verwaltet werden

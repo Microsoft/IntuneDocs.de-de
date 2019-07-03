@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Windows Defender ATP in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: In einem End-to-End-Szenario erfahren Sie, wie Sie Windows Defender Advanced Threat Protection (ATP) aktivieren, inklusive Einschalten von ATP in Intune und Windows Defender Security Center (ATP-Portal), Integrieren von Geräten mit einem ATP-Konfigurationsprofil, Erstellen einer Intune-Gerätekonformitätsrichtlinie, Erstellen einer Azure AD-Richtlinie für bedingten Zugriff und Überwachen der Gerätekonformität.
+description: Hier erfahren Sie, wie Sie Windows Defender Advanced Threat Protection (ATP) in einem End-to-End-Szenario aktivieren, inklusive Einschalten von ATP in Intune und Windows Defender Security Center (ATP-Portal), Integrieren von Geräten über ein ATP-Konfigurationsprofil, Erstellen einer Intune-Gerätekonformitätsrichtlinie, Erstellen einer Azure AD-Richtlinie für bedingten Zugriff und Überwachen der Gerätekonformität.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,14 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78c34345804f600aa62ff5e25ef27a23591e0f5c
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: 186ba1a8813e84b89a23c8aabb3a4ef0bd392da4
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819867"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045924"
 ---
-# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Erzwingen der Konformität für Windows Defender ATM mit bedingtem Zugriff in Intune
+# <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Erzwingen der Konformität für Windows Defender ATP mit bedingtem Zugriff in Intune
 
 Windows Defender Advanced Threat Protection (ATP) und Microsoft Intune tragen gemeinsam zum Verhindern von Sicherheitsverletzungen bei und begrenzen die Auswirkungen von Sicherheitsverletzungen innerhalb einer Organisation.
 
@@ -40,7 +40,7 @@ In diesem Artikel erfahren Sie, wie Sie Folgendes durchführen:
 
 - Aktivieren von Intune in ATP und Aktivieren von ATP in Intune. Diese Aufgaben erstellen eine Dienst-zu-Dienst-Verbindung zwischen Intune und Windows Defender ATP. Diese Verbindung ermöglicht Windows Defender ATP, das Computerrisiko für Ihre Intune-Geräte zu schreiben.
 - Erstellen der Konformitätsrichtlinie in Intune.
-- Aktivieren Sie in Azure Active Directory (AD) bedingten Zugriff auf Geräte basierend auf deren Bedrohungsstufe.
+- Aktivieren Sie in Azure Active Directory (AD) den bedingten Zugriff auf Geräten basierend auf deren Bedrohungsstufe.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -125,7 +125,7 @@ Die Konformitätsrichtlinie legt eine akzeptable Risikostufe für ein Gerät fes
 4. Schließen Sie Ihre Azure AD-Gruppen ein- oder aus, um ihnen die Richtlinie zuzuweisen.
 5. Wählen Sie zum Bereitstellen der Richtlinie für die Gruppen **Speichern** aus. Die Benutzergeräte, denen die Richtlinie zugewiesen wurde, werden auf Konformität überprüft.
 
-## <a name="create-a-conditional-access-policy"></a>Erstellen einer Richtlinie für den bedingten Zugriff
+## <a name="create-a-conditional-access-policy"></a>Erstellen einer Richtlinie für bedingten Zugriff
 Die Richtlinie für bedingten Zugriff blockiert den Zugriff auf Ressourcen, *wenn* das Gerät nicht konform ist. Wenn also ein Gerät die Bedrohungsstufe überschreitet, können Sie den Zugriff auf Unternehmensressourcen wie SharePoint oder Exchange Online blockieren.  
 
 > [!TIP]  
@@ -141,7 +141,7 @@ Die Richtlinie für bedingten Zugriff blockiert den Zugriff auf Ressourcen, *wen
 
     Wählen Sie **Fertig** aus, um die Änderungen zu speichern.
 
-5. Wählen Sie **Gewähren** aus, um bedingten Zugriff basierend auf Gerätekonformität anzuwenden. Wählen Sie z.B. **Zugriff gewähren** > **Markieren des Geräts als kompatibel erforderlich** aus.
+5. Wählen Sie **Gewähren** aus, um den bedingten Zugriff basierend auf der Gerätekonformität anzuwenden. Wählen Sie z.B. **Zugriff gewähren** > **Markieren des Geräts als kompatibel erforderlich** aus.
 
     Wählen Sie **OK** aus, um die Änderungen zu speichern.
 

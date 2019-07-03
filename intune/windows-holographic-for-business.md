@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a10fa6983b8e8c34a1844c647d952ca8cbf0730c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1c1400b3786965ab962de01207f24b53aa3a47b1
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050171"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045990"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Verwalten und Verwenden verschiedener Geräteverwaltungsfeatures für Windows Holographic- und HoloLens-Geräten mit Intune
 
@@ -33,11 +33,11 @@ Um Windows Holographic-Geräte mit Intune zu verwenden, müssen Sie ein Editions
 
 Azure Active Directory (AD) kann Ihnen bei der Verwaltung und Steuerung Ihrer Geräte, die Windows Holographic for Business ausführen, helfen. Mit Intune und Azure AD haben Sie folgende Möglichkeiten: 
 
-- **[Einbinden von Geräten in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: Sie können Ihre Windows 10-Unternehmensgeräte – Geräte mit Windows Holographic for Business eingeschlossen – in Azure Active Directory (AD) hinzufügen. Mit diesem Feature kann Azure AD das Gerät kontrollieren. Es hilft dabei, zu bestätigen, dass Ihre Benutzer auf die Unternehmensressourcen über Geräte aus zugreifen, die Ihren Sicherheits- und Konformitätsstandards entsprechen.
+- **[Einbinden von Geräten in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)** : Sie können Ihre Windows 10-Unternehmensgeräte – Geräte mit Windows Holographic for Business eingeschlossen – in Azure Active Directory (AD) hinzufügen. Mit diesem Feature kann Azure AD das Gerät kontrollieren. Es hilft dabei, zu bestätigen, dass Ihre Benutzer auf die Unternehmensressourcen über Geräte aus zugreifen, die Ihren Sicherheits- und Konformitätsstandards entsprechen.
 
   Ausführlichere Informationen erhalten Sie unter [Geräteverwaltung in Azure AD](https://docs.microsoft.com/azure/active-directory/devices/overview).
 
-- **[Massenregistrierung für Windows-Geräte](windows-bulk-enroll.md)**: Sie können eine große Anzahl von neuen Windows-Geräten in Azure Active Directory (AD) und Intune einbinden. Dieses Feature wird „Massenregistrierung“ genannt und verwendet Bereitstellungspakete. Diese Pakete verknüpfen die Geräte, die Windows Holographic for Business ausführen, mit Ihrem Azure AD-Mandanten und registriert beide in Intune.
+- **[Massenregistrierung für Windows-Geräte](windows-bulk-enroll.md)** : Sie können eine große Anzahl von neuen Windows-Geräten in Azure Active Directory (AD) und Intune einbinden. Dieses Feature wird „Massenregistrierung“ genannt und verwendet Bereitstellungspakete. Diese Pakete verknüpfen die Geräte, die Windows Holographic for Business ausführen, mit Ihrem Azure AD-Mandanten und registriert beide in Intune.
 
 ## <a name="company-portal"></a>Unternehmensportal
 **[Konfigurieren der Unternehmensportal-App](company-portal-app.md)**
@@ -56,7 +56,7 @@ Azure Active Directory (AD) kann Ihnen bei der Verwaltung und Steuerung Ihrer Ge
 
 Bei Konformitätsrichtlinien handelt es sich um Regeln und Einstellungen, die Geräte erfüllen müssen, um als „konform“ zu gelten. Verwenden Sie diese Richtlinien mit bedingtem Zugriff, um den Zugriff auf Unternehmensressourcen für Geräte zu blockieren, die nicht konform sind. In Intune erstellen Sie Konformitätsrichtlinien, um den Zugriff für Geräte, auf denen Windows Holographic for Business ausgeführt wird, zuzulassen oder zu blockieren. Sie können beispielsweise eine Richtlinie erstellen, die erfordert, dass „BitLocker“ aktiviert ist.
 
-Weitere Informationen erhalten Sie unter **[Erste Schritte mit Konformitätsrichtlinien](device-compliance-get-started.md)**.
+Weitere Informationen erhalten Sie unter **[Erste Schritte mit Konformitätsrichtlinien](device-compliance-get-started.md)** .
 
 ## <a name="deploy-and-manage-apps"></a>Bereitstellen und Verwalten von Apps
 **[Hinzufügen von Apps zu Intune](apps-add.md)**
@@ -85,11 +85,11 @@ Intune verfügt über einige integrierte Aktionen, mit denen IT-Administratoren 
 
 Die folgenden Aktionen sind nützlich für Geräte unter Windows Holographic for Business: 
 
-- **[Zurücksetzen](devices-wipe.md#wipe)**: Durch die Aktion **Zurücksetzen** wird das Gerät aus Intune entfernt und auf die Standardwerkseinstellungen zurückgesetzt. Verwenden Sie diese Aktion, bevor Sie das Gerät einem neuen Benutzer geben oder wenn das Gerät verloren gegangen ist oder gestohlen wurde.
+- **[Zurücksetzen](devices-wipe.md#wipe)** : Durch die Aktion **Zurücksetzen** wird das Gerät aus Intune entfernt und auf die Standardwerkseinstellungen zurückgesetzt. Verwenden Sie diese Aktion, bevor Sie das Gerät einem neuen Benutzer geben oder wenn das Gerät verloren gegangen ist oder gestohlen wurde.
 
-- **[Abkoppeln](devices-wipe.md#retire)**: Durch die Aktion **Abkoppeln** wird das Gerät aus Intune entfernt. Zudem werden auch Daten aus verwalteten Apps, Einstellungen und durch Intune zugewiesenen E-Mail-Profilen entfernt. Die persönlichen Daten des Benutzers verbleiben auf dem Gerät.
+- **[Abkoppeln](devices-wipe.md#retire)** : Durch die Aktion **Abkoppeln** wird das Gerät aus Intune entfernt. Zudem werden auch Daten aus verwalteten Apps, Einstellungen und durch Intune zugewiesenen E-Mail-Profilen entfernt. Die persönlichen Daten des Benutzers verbleiben auf dem Gerät.
 
-- **[Synchronisieren von Geräten zum Erhalt der neuesten Richtlinien und Aktionen](device-sync.md)**: Die Geräteaktion **Synchronisieren** erzwingt das sofortige Einchecken bei Intune für das ausgewählte Gerät. Checkt ein Gerät ein, empfängt es sofort alle ihm zugewiesenen ausstehenden Aktionen oder Richtlinien, die zugewiesen sind. Mit diesem Feature können Sie zugewiesene Richtlinien überprüfen und Probleme beheben, ohne den nächsten geplanten Check-In abwarten zu müssen.
+- **[Synchronisieren von Geräten zum Erhalt der neuesten Richtlinien und Aktionen](device-sync.md)** : Die Geräteaktion **Synchronisieren** erzwingt das sofortige Einchecken bei Intune für das ausgewählte Gerät. Checkt ein Gerät ein, empfängt es sofort alle ihm zugewiesenen ausstehenden Aktionen oder Richtlinien, die zugewiesen sind. Mit diesem Feature können Sie zugewiesene Richtlinien überprüfen und Probleme beheben, ohne den nächsten geplanten Check-In abwarten zu müssen.
 
 **[Was ist die Microsoft Intune Geräteverwaltung?](device-management.md)** Dies ist eine gute Ressource, um weiter Informationen zur Verwaltung von Geräten über das Azure-Portal zu erhalten. 
 

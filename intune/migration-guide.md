@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 51ca966347cde157a34d1d390306f6dd262d015c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c6a6410aa5eada1f1c4a0983d269d9e661b03831
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046332"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046380"
 ---
 # <a name="intune-migration-guide"></a>Intune-Migrationshandbuch
 
@@ -51,7 +51,7 @@ Dieses Handbuch teilt die Migration in zwei Phasen auf, die beide Aufgaben, Stra
 
     -   [Kommunikationsplan](migration-guide-communication-plan.md)
 
-    -   [Fördern der Einführung mit bedingtem Zugriff für Endbenutzer](migration-guide-drive-adoption.md)
+    -   [Fördern der Akzeptanz des bedingten Zugriffs bei Endbenutzern](migration-guide-drive-adoption.md)
 
     -   [typischer Migrationszyklus](migration-guide-cycle.md)
         -   [Migrationsüberwachung](migration-guide-cycle.md#monitoring-migration)

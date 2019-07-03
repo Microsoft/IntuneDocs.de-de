@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d90bc17d01a76c9c566210edc3bdc265511fa16d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
+ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047824"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67316931"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Überwachen von BitLocker und Geräteverschlüsselung  
 Intune stellt einen zentralen Ort zur Verfügung, an dem der Verschlüsselungsstatus Ihrer Windows 10-Geräte bestimmt werden kann, und unterstützt Sie dabei, über Ihre Geräte auf wichtige Informationen für BitLocker zuzugreifen, z. B. Informationen in Active Directory (Azure AD).  
@@ -51,7 +51,7 @@ Der Bericht zeigt den **Gerätenamen** sowie umfangreiche Details für Ihre Wind
   - **Nicht bereit:** Das Gerät kann nicht vollständig verschlüsselt werden, unterstützt jedoch die Verschlüsselung. Das Gerät könnte beispielsweise von einem Benutzer manuell verschlüsselt werden oder über eine Gruppenrichtlinie, die so festgelegt werden kann, dass die Verschlüsselung ohne ein TPM zulässig ist.
   - **Nicht zutreffend**: Es stehen nicht genügend Informationen zur Verfügung, um dieses Gerät zu klassifizieren.  
 
-- **Verschlüsselungsstatus:** Gibt an, ob das Betriebssystemlaufwerk verschlüsselt ist  
+- **Verschlüsselungsstatus:** Gibt an, ob das Betriebssystemlaufwerk verschlüsselt ist 
 
 
 ### <a name="device-encryption-status"></a>Geräteverschlüsselungsstatus
@@ -60,7 +60,7 @@ Wenn Sie ein Gerät auswählen, zeigt Intune den Bereich **Geräteverschlüsselu
 In diesem Bereich finden Sie die folgenden Details:  
 - **Gerätename:** Der Name des Geräts, das Sie sich ansehen  
 - **Verschlüsselungsbereitschaft:** Eine Auswertung der Bereitschaft der Geräte, die BitLocker-Verschlüsselung zu unterstützen Es wäre nicht möglich, dass ein Gerät den Verschlüsselungsstatus *Verschlüsselt* aufweist, obwohl seine Verschlüsselungsbereitschaft *Nicht bereit* ist, da ein TPM fehlt. (Weitere Informationen zur Verschlüsselungsbereitschaft finden Sie im vorherigen Abschnitt.)
-- **Verschlüsselungsstatus:** Gibt an, ob das Betriebssystemlaufwerk verschlüsselt ist  
+- **Verschlüsselungsstatus:** Gibt an, ob das Betriebssystemlaufwerk verschlüsselt ist Es kann bis zu 24 Stunden dauern, bis Intune mit dem Erstellen von Berichten zum Verschlüsselungsstatus von Geräten oder zu einer Änderung dieses Status beginnt.  
 - **Profile:** Eine Liste von *Gerätekonfigurationsprofilen*, die auf das Gerät zutreffen, und die folgenden Profiltypen und -einstellungen beinhalten:  
   - Profiltyp = *Endpoint Protection*  
   - Einstellungen > Windows-Verschlüsselung > Geräte verschlüsseln = *Erforderlich*  
@@ -95,7 +95,7 @@ In diesem Bereich finden Sie die folgenden Details:
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker-Wiederherstellungsschlüssel
 Intune gewährt Zugriff auf das Azure AD-Blatt für BitLocker, sodass Sie sich über das Intune-Portal die BitLocker-Schlüssel-IDs und -Wiederherstellungsschlüssel für Ihre Windows 10-Geräte ansehen können.  Damit auf ein Gerät zugegriffen werden kann, müssen die dazugehörigen Schlüssel in Azure AD hinterlegt sein. 
-1. Melden Sie sich bei [Intune](https://aka.ms/intuneportal) an, navigieren Sie zu **Geräte**, und wählen Sie dann unter *Verwalten* die Option **Alle Geräte** aus.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, navigieren Sie zu **Geräte**, und wählen Sie dann unter *Verwalten* die Option **Alle Geräte** aus.
 2. Wählen Sie ein Gerät aus der Liste aus, und wählen Sie dann unter *Überwachung* die Option **Recovery keys** (Wiederherstellungsschlüssel) aus.  
   
 Wenn Schlüssel in Azure AD verfügbar sind, sind die folgenden Informationen verfügbar:

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 030467009e0fed8716a1aa622474188352c0e0b0
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: cb9d1f52ccb147dc9a412f3cb7b601e3b18f214a
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050351"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389317"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot
 Sie können in Azure AD Hybrid eingebundene Geräte mithilfe von Intune und Windows Autopilot einrichten. Führen Sie dazu die Schritte in diesen Artikel durch.
@@ -32,7 +32,7 @@ Sie können in Azure AD Hybrid eingebundene Geräte mithilfe von Intune und Wind
 Konfigurieren Sie Ihre [Azure AD Hybrid-Geräte](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Stellen Sie sicher, dass Sie [die Geräteregistrierung mithilfe des Cmdlets „Get-MsolDevice“ überprüfen]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration).
 
 Für die Registrierung müssen die Geräte über Folgendes verfügen:
-- Windows 10 mit dem [Update von Oktober 2018](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/)
+- Windows 10, Version 1809 oder höher, muss ausgeführt werden.
 - Internetverbindung
 - Greifen Sie auf Ihre Active Directory-Instanz zu (VPN-Verbindung wird zu diesem Zeitpunkt nicht unterstützt).
 - Sie müssen eingerichtet worden sein.

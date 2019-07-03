@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 812a2e91b28908dcd3893ec77e9923362c8a9173
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c279e21abf47d6ec067f3c75b36ecc7b58681e7e
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046142"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044404"
 ---
 # <a name="create-a-design"></a>Erstellen eines Entwurfs
 
@@ -401,22 +401,22 @@ Es folgt ein Beispiel zum Entwerfen einer Konformitätsrichtlinie:
 
 
 Sie können eine [Vorlage der oben stehenden Tabelle herunterladen](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), um die Anforderungen an Ihre Konformitätsrichtlinien zu ermitteln.
-#### <a name="conditional-access-policies"></a>Bedingte Zugriffsrichtlinien
+#### <a name="conditional-access-policies"></a>Richtlinien für bedingten Zugriff
 
-Bedingter Zugriff wird verwendet, um nur konformen Geräten den Zugriff auf E-Mails und andere Unternehmensressourcen zu erlauben. Intune kann mit EMS (Enterprise Mobility + Security) zum Steuern des Zugriffs auf Unternehmensressourcen eingesetzt werden. Entscheiden Sie, ob der bedingte Zugriff erforderlich ist und was gesichert werden muss. Weitere Informationen zum [bedingten Zugriff](conditional-access.md).
+Der bedingte Zugriff wird verwendet, um nur konformen Geräten den Zugriff auf E-Mails und andere Unternehmensressourcen zu gestatten. Intune kann mit EMS (Enterprise Mobility + Security) zum Steuern des Zugriffs auf Unternehmensressourcen eingesetzt werden. Entscheiden Sie, ob der bedingte Zugriff erforderlich ist und was gesichert werden muss. Weitere Informationen zum [bedingten Zugriff](conditional-access.md).
 
-Entscheiden Sie hinsichtlich des Onlinezugriffs für welche Plattformen und Benutzergruppen die Richtlinien für bedingten Zugriff vorgesehen sind. Darüber hinaus entscheiden Sie, ob Sie den Intune-Connector für Exchange lokal installieren oder konfigurieren müssen. 
+Entscheiden Sie hinsichtlich des Onlinezugriffs, auf welche Plattformen und Benutzergruppen die Richtlinien für bedingten Zugriff angewendet werden sollen. Darüber hinaus entscheiden Sie, ob Sie den Intune-Connector für Exchange lokal installieren oder konfigurieren müssen. 
 
 -   [Exchange lokal](exchange-connector-install.md)
 
-Hier sehen Sie ein Beispiel für das Dokumentieren von Richtlinien für den bedingten Zugriff:
+Hier sehen Sie ein Beispiel für die Dokumentation der Richtlinien für bedingten Zugriff:
 
 | **Dienst** | **Plattformen für moderne Authentifizierung** | **Standardauthentifizierung** | **Anwendungsfälle** |   
 |:---:|:---:|:---:|:---:|
 | Exchange Online | iOS, Android | Nicht konforme Geräte auf von Intune unterstützten Plattformen blockieren | Unternehmen, BYOD |
 | SharePoint Online | iOS, Android |  | Unternehmen, BYOD |
 
-Sie können eine [Vorlage der oben stehenden Tabelle herunterladen](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), um die Anforderungen an Ihre Richtlinien für den bedingten Zugriff zu ermitteln.
+Sie können eine [Vorlage der oben stehenden Tabelle herunterladen](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0), um die Anforderungen an Ihre Richtlinien für bedingten Zugriff zu ermitteln.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e347d72a8eec93f9936f3c488cada5667ecf51f8
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6bf1aa096d5ebd89130eb5fabe936a02183599c5
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050568"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044643"
 ---
 # <a name="configure-app-protection-policies-optional"></a>Konfigurieren von App-Schutzrichtlinien (optional)
 
@@ -47,7 +47,7 @@ In diesem Zeitraum kann Ihre Organisation anfälliger sein für den Geräteklau 
 
 Intune bietet Schutz für Unternehmensdaten während der Migration, damit Ihre Unternehmensdaten weiterhin geschützt sind, auch wenn es gerade keine Verwaltung auf der Geräteebene gibt.
 
-Wenn Sie den bedingten Zugriff beim alten MDM-Anbieter deaktivieren, können die Benutzer immer noch produktiv sein, während Sie sie zu Intune überführen.
+Wenn Sie den bedingten Zugriff beim alten MDM-Anbieter deaktivieren, können Benutzer weiterhin produktiv arbeiten, während Sie das Onboarding der Benutzer in Intune durchführen.
 
 ## <a name="task-list-for-app-protection-policies"></a>Aufgabenliste für App-Schutzrichtlinien
 

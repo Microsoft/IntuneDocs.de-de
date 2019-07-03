@@ -14,16 +14,16 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4363bb4feba52c15b8918a7c6ea02fa2917a00de
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 550dfe58687806f7ead65dab2d7e15b310ae4b6e
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044941"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044041"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Sophos Mobile Threat Defense-Connector mit Intune
-Sie können den Zugriff mobiler Geräte auf Unternehmensressourcen mit bedingtem Zugriff basierend auf Risikobewertungen steuern, die von Sophos Mobile vorgenommen werden, einer MTD-Lösung (Multi Threat Defense), die in Microsoft Intune integriert werden kann. Das Risiko wird basierend auf Telemetriedaten von Geräten bewertet, auf denen die Sophos Mobile-App ausgeführt wird.
-Sie können Richtlinien für bedingten Zugriff basierend auf der Sophos Mobile-Risikobewertung konfigurieren, die über Intune-Gerätekompatibilitätsrichtlinien aktiviert werden, und so nicht kompatible Geräte anhand der erkannten Bedrohungen für den Zugriff auf Unternehmensressourcen zulassen oder blockieren.
+Sie können den Zugriff mobiler Geräte auf Unternehmensressourcen mithilfe des bedingten Zugriffs auf Risikobewertungen steuern, die von Sophos Mobile vorgenommen werden, einer Mobile Threat Defense-Lösung (MTD), die in Microsoft Intune integriert werden kann. Das Risiko wird basierend auf Telemetriedaten von Geräten bewertet, auf denen die Sophos Mobile-App ausgeführt wird.
+Sie können Richtlinien für bedingten Zugriff basierend auf der Sophos Mobile-Risikobewertung konfigurieren, die über Intune-Gerätekompatibilitätsrichtlinien aktiviert wird, und so anhand der erkannten Bedrohungen den Zugriff auf Unternehmensressourcen durch nicht konforme Geräte zulassen oder blockieren.
 
 ## <a name="how-do-intune-and-sophos-mobile-help-protect-your-company-resources"></a>Wie helfen Intune und Sophos Mobile beim Schutz von Unternehmensressourcen?
 Die Sophos Mobile-App für Android oder iOS erfasst Telemetriedaten des Dateisystems, Netzwerkstapels sowie von Geräten und Anwendungen (sofern verfügbar), und sendet diese dann an den Sophos Mobile-Clouddienst, mit dessen Hilfe die Anfälligkeit des Geräts für mobile Bedrohungen bewertet wird.

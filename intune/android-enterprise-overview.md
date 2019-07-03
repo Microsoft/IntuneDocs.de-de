@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d66a9ae4d72ef37f39c2017c4351847e8bace46
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6f59ff42f7707ace92442bf37ddac9679e36448f
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049895"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045891"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Verwalten von Android-Arbeitsprofilgeräten mit Intune
 
@@ -58,7 +58,7 @@ Android Enterprise stellt keine Standard-E-Mail-App bzw. kein natives E-Mail-Pro
 
 Intune bietet Konfigurationsvorlagen für Gmail- und Nine Work-Apps, wenn diese als Work-Apps verwaltet werden. Andere E-Mail-Apps, die App-Konfigurationsprofile unterstützen, können mit Konfigurationsrichtlinien für mobile Apps konfiguriert werden.
 
-Wenn Sie bedingten Exchange ActiveSync-Zugriff für Android Enterprise-Arbeitsprofilgeräte verwenden, sollten Sie entweder die Gmail- oder Nine Work-E-Mail-App in Erwägung ziehen. Die Microsoft Outlook for Android-App oder jede andere E-Mail-App, die moderne Authentifizierung über ADAL verwendet, wird ebenfalls unterstützt. Weitere Informationen finden Sie unter [Konfigurieren von E-Mail-Einstellungen in Microsoft Intune](email-settings-configure.md).
+Wenn Sie bedingten Exchange ActiveSync-Zugriff für Geräte mit Android Enterprise-Arbeitsprofil verwenden, sollten Sie entweder die Gmail- oder die Nine Work-E-Mail-App in Erwägung ziehen. Die Microsoft Outlook for Android-App oder jede andere E-Mail-App, die moderne Authentifizierung über ADAL verwendet, wird ebenfalls unterstützt. Weitere Informationen finden Sie unter [Konfigurieren von E-Mail-Einstellungen in Microsoft Intune](email-settings-configure.md).
 
 ## <a name="app-protection-policies"></a>App-Schutzrichtlinien
 

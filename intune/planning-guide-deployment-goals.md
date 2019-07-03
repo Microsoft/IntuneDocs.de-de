@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 298f8bc4fb9932eea228414745111fe569888849
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b29e59924ec4bf08336cbd1ea9aa588fd8612233
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041489"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044419"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Bestimmen der Bereitstellungsziele, sonstigen Ziele und Herausforderungen
 
@@ -66,7 +66,7 @@ Diese Ziele der Bereitstellung sind die Aktionen, mit denen Ihr Unternehmen sein
 
 -   **Bereitstellen eines sicheren Zugriffs auf Exchange Online und SharePoint Online**
 
-    -   **Implementierung:** Implementieren Sie den bedingten Zugriff für Exchange Online und SharePoint Online.
+    -   **Implementierung:** Wenden Sie den bedingten Zugriff auf Exchange und SharePoint Online an.
 
 -   **Verhindern, dass Unternehmensdaten gespeichert oder an unternehmensfremde Dienste auf dem mobilen Gerät weitergeleitet werden**
 

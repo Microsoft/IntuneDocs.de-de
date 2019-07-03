@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e717895e039e46ba7877476f67f29c1ce83b767
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041674"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044918"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Verwalten von Betriebssystemversionen mit Intune
 Für aktuelle mobile Plattformen und Desktopplattformen werden ständig größere Updates, Patches und neue Versionen herausgegeben. Es gibt Steuerelemente, mit denen Sie Updates und Patches unter Windows vollständig verwalten können. Andere Plattformen wie iOS und Android verlangen, dass sich die Benutzer an dem Vorgang beteiligen.  Microsoft Intune verfügt über Funktionen, mit denen Sie Ihre Betriebssystemversionsverwaltung plattformübergreifend strukturieren können.
@@ -46,14 +46,14 @@ Weitere Informationen finden Sie unter [Set device type restrictions (Festlegen 
 Die Gerätekompatibilitätsrichtlinien für Intune MDM beinhalten Folgendes: 
 - Näheres Bestimmen der Kompatibilitätsregeln
 - Abrufen des Kompatibilitätsstatus anhand von Berichten
-- Vorgehen gegen Kompatibilitätsverstöße, indem Geräte unter Quarantäne gestellt werden und der Zugriff beschränkt wird
+- Vorgehen bei Kompatibilitätsverstößen per Gerätequarantäne und bedingten Zugriff
 
 Genauso wie Registrierungsbeschränkungen umfassen Gerätekompatibilitätsrichtlinien sowohl Mindest- als auch Maximalversionen von Betriebssystemen. Die Richtlinien verfügen außerdem über eine Kompatibilitätszeitachse, damit Ihren Benutzern eine Toleranzperiode eingeräumt wird, die sie nutzen sollen, um ihre Geräte entsprechend anzupassen. Gerätekompatibilitätsrichtlinien sorgen dafür, dass registrierte Benutzergeräte mit den Organisationsrichtlinien kompatibel sind.
 
 ![Gerätekompatibilität: Vorgehensweise bei nicht kompatiblen Geräten](./media/os-version-actions-noncompliance.png) 
 
 ### <a name="in-practice"></a>In der Praxis
-Organisationen verwenden Gerätekompatibilitätsrichtlinien für dieselben Szenarios wie die Registrierungsbeschränkungen. Diese Richtlinien sorgen dafür, dass Benutzer in Ihrer Organisation aktuelle und geprüfte Betriebssystemversionen verwenden. Wenn Benutzergeräte nicht mit den Richtlinien kompatibel sind, kann der Zugriff auf Organisationsressourcen solange eingeschränkt werden, bis die Benutzer dem für Ihre Organisation unterstützten Betriebssystembereich entsprechen. Die Benutzer werden benachrichtigt, wenn sie gegen die Kompatibilitätsvorgaben verstoßen, und ihnen werden die nötigen Schritte genannt, um wieder Zugriff gewährt zu bekommen.   
+Organisationen verwenden Gerätekompatibilitätsrichtlinien für dieselben Szenarios wie die Registrierungsbeschränkungen. Diese Richtlinien sorgen dafür, dass Benutzer in Ihrer Organisation aktuelle und geprüfte Betriebssystemversionen verwenden. Wenn Benutzergeräte nicht mehr kompatibel sind, kann der Zugriff auf Organisationsressourcen solange per bedingtem Zugriff blockiert werden, bis die Geräte sich wieder innerhalb des für Ihre Organisation unterstützten Betriebssystembereichs befinden. Die Benutzer werden benachrichtigt, wenn sie gegen die Kompatibilitätsvorgaben verstoßen, und ihnen werden die nötigen Schritte genannt, um wieder Zugriff gewährt zu bekommen.   
 
 Weitere Informationen finden Sie unter [Erste Schritte bei der Gerätekonformität](https://docs.microsoft.com/intune/device-compliance-get-started).
  
@@ -81,7 +81,7 @@ Sie können die Funktionen von Intune, die in diesem Artikel beschrieben werden,
   - Sie können einen Kompatibilitätsbericht ausführen, um Benutzer zu ermitteln, deren Geräte nicht kompatibel sind. 
 - **Schritt 3a:** Verwenden Sie die Intune-App-Schutzrichtlinien, um Benutzer beim Öffnen oder Fortsetzen einer App zu blockieren, wenn das Gerät die neuen Betriebssystemversion V2 nicht ausführt.
 - **Schritt 3b:** Verwenden Sie Gerätekompatibilitätsrichtlinien, um eine neue Betriebssystemversion als Mindestversion für ein Gerät festzulegen, damit es kompatibel ist.
-  - In diesen Richtlinien wird festgelegt, dass Geräte aktualisiert werden müssen, damit sie weiterhin Zugriff auf Organisationsdaten haben. Geschützte Dienste werden blockiert, wenn Sie auf Geräten mit bedingtem Zugriff verwendet werden. Apps, für die eine App-Schutzrichtlinie aktiviert ist, werden beim Öffnen oder beim Zugreifen auf Organisationsdaten blockiert.
+  - In diesen Richtlinien wird festgelegt, dass Geräte aktualisiert werden müssen, damit sie weiterhin Zugriff auf Organisationsdaten haben. Geschützte Dienste werden blockiert, wenn sie auf Geräten mit bedingtem Zugriff verwendet werden. Apps, für die eine App-Schutzrichtlinie aktiviert ist, werden beim Öffnen oder beim Zugreifen auf Organisationsdaten blockiert.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Verwenden Sie die folgenden Ressourcen, um Betriebssystemversionen in Ihrer Organisation zu verwalten: 

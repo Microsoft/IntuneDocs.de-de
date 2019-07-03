@@ -1,7 +1,7 @@
 ---
 title: Integrieren von Jamf Pro in Microsoft Intune zu Konformitätszwecken
 titleSuffix: Microsoft Intune
-description: Verwenden Sie die Konformitätsrichtlinien für Microsoft Intune zusammen mit dem bedingten Zugriff auf Azure Active Directory, um mit Jamf verwaltete Geräte zu sichern.
+description: Verwenden Sie die Konformitätsrichtlinien von Microsoft Intune zusammen mit dem bedingten Zugriff von Azure Active Directory, um mit Jamf verwaltete Geräte zu sichern.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 940ef3e6df95629dad03d6c1d4e60343e4273473
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d25012790322491a9038f0bcf9349434d5a45b8d
+ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048837"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67251087"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrieren von Jamf Pro in Intune zu Konformitätszwecken
 
 Gilt für: Intune im Azure-Portal
 
-Wenn Ihre Organisation [Jamf Pro](https://www.jamf.com) zur Verwaltung der Macs Ihrer Endbenutzer verwendet, können Sie Microsoft Intune-Konformitätsrichtlinien zusammen mit dem bedingten Zugriff in Azure Active Directory verwenden, um die Konformität von Geräten in Ihrer Organisation zu gewährleisten.
+Wenn Ihre Organisation [Jamf Pro](https://www.jamf.com) zur Verwaltung der Mac-Geräte Ihrer Endbenutzer verwendet, können Sie Microsoft Intune-Konformitätsrichtlinien zusammen mit dem bedingten Zugriff von Azure Active Directory verwenden, um die Konformität von Geräten in Ihrer Organisation zu gewährleisten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -57,7 +57,7 @@ Eine Verbindung zwischen Intune und Jamf Pro können Sie folgendermaßen herstel
 
 3. Wählen Sie **Registrieren** aus, um die Anwendung zu erstellen und die Seite „Übersicht“ für die neue App zu öffnen.  
 
-4. Kopieren Sie auf der App-Seite **Übersicht** den Wert der **Anwendungs-ID (Client)**, und notieren Sie ihn zur späteren Verwendung. Sie benötigen diesen Wert bei späteren Prozeduren.  
+4. Kopieren Sie auf der App-Seite **Übersicht** den Wert der **Anwendungs-ID (Client)** , und notieren Sie ihn zur späteren Verwendung. Sie benötigen diesen Wert bei späteren Prozeduren.  
 
 5. Wählen Sie unter **Verwalten** **Zertifikate und Geheimnisse** aus. Wählen Sie die Schaltfläche **Neuer geheimer Clientschlüssel** aus. Geben Sie einen Wert in **Beschreibung** ein, wählen Sie eine Option für **Gültig bis** aus, und wählen Sie **Hinzufügen** aus.
 
@@ -76,11 +76,11 @@ Eine Verbindung zwischen Intune und Jamf Pro können Sie folgendermaßen herstel
 
 
     > [!NOTE]
-    > Wenn der geheime Clientschlüssel abläuft, müssen Sie einen neuen geheimen Clientschlüssel in Azure erstellen und dann die Daten für den bedingten Zugriff in Jamf Pro aktualisieren. In Azure kann sowohl das alte als auch das neue Geheimnis aktiv sein, um Dienstunterbrechungen zu verhindern.
+    > Wenn der geheime Clientschlüssel abläuft, müssen Sie in Azure einen neuen geheimen Clientschlüssel erstellen und dann die Daten für den bedingten Zugriff in Jamf Pro aktualisieren. In Azure kann sowohl das alte als auch das neue Geheimnis aktiv sein, um Dienstunterbrechungen zu verhindern.
 
 ## <a name="enable-intune-to-integrate-with-jamf-pro"></a>Ermöglichen einer Integration von Intune in Jamf Pro
 
-1. Melden Sie sich bei Intune an, und wechseln Sie im [Azure-Portal](https://go.microsoft.com/fwlink/?linkid=20909) zu **Microsoft Intune** > **Gerätekonformität** > **Partnergeräteverwaltung**.
+1. Melden Sie sich bei Intune an, und wechseln Sie im [Azure-Portal](https://go.microsoft.com/fwlink/?linkid=2090973) zu **Microsoft Intune** > **Gerätekonformität** > **Partnergeräteverwaltung**.
 
 2. Aktivieren Sie den Konformitätsconnector für Jamf durch Einfügen der zuvor gespeicherten Anwendungs-ID in das Feld **Azure Active Directory-App-ID für Jamf**.
 

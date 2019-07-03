@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 808b594e4ac47845272be2978da2463727f9807c
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f04879e88cb85eaacdb75f5645a486e3539cb13a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040775"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044076"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile-Connector
 
-Sie können den Zugriff mobiler Geräte auf Unternehmensressourcen mit bedingtem Zugriff basierend auf Risikobewertungen steuern, die von Symantec Endpoint Protection Mobile (SEP Mobile) vorgenommen werden, einer Mobile Threat Defense-Lösung, die in Microsoft Intune integriert ist. Das Risiko wird basierend auf Telemetriedaten von Geräten bewertet, auf denen SEP Mobile ausgeführt wird, wie z.B.:
+Sie können den Zugriff mobiler Geräte auf Unternehmensressourcen mithilfe des bedingten Zugriffs basierend auf Risikobewertungen steuern, die von Symantec Endpoint Protection Mobile (SEP Mobile) vorgenommen werden, einer Mobile Threat Defense-Lösung, die in Microsoft Intune integriert werden kann. Das Risiko wird basierend auf Telemetriedaten von Geräten bewertet, auf denen SEP Mobile ausgeführt wird, wie z.B.:
 
 -   Physische Verteidigung
 
@@ -36,7 +36,7 @@ Sie können den Zugriff mobiler Geräte auf Unternehmensressourcen mit bedingtem
 
 -   Verteidigung gegen Sicherheitsrisiken
 
-Sie können die SEP Mobile-Risikobewertung über Intune-Gerätekompatibilitätsrichtlinien aktivieren und dann mit Richtlinien für bedingten Zugriff anhand der erkannten Bedrohungen nicht kompatible Geräte für den Zugriff auf Unternehmensressourcen zulassen oder blockieren.
+Sie können die SEP Mobile-Risikobewertung über Intune-Gerätekonformitätsrichtlinien aktivieren und dann Richtlinien für bedingten Zugriff verwenden, um anhand der erkannten Bedrohungen den Zugriff auf Unternehmensressourcen durch nicht konforme Geräte zulassen oder blockieren.
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Wie helfen Intune und SEP Mobile beim Schutz von Unternehmensressourcen?
 

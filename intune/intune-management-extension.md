@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/28/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f17bdf21db61616f88cef4d257fbcd28d941dae8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 90b3e858a06a6f3a34de6ec8102e1a6c458369a2
+ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373471"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67298418"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Verwenden von PowerShell-Skripts auf Windows 10-Geräten in Intune
 
@@ -45,7 +45,7 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
 
 - Geräte mit Windows 10, Version 1607 oder höher: Wenn das Gerät mithilfe der [automatischen Massenregistrierung](windows-bulk-enroll.md) registriert wurde, muss es mindestens Windows 10, Version 1703 ausführen. Die Intune-Verwaltungserweiterung wird unter Windows 10 im S Modus nicht unterstützt, da im S Modus keine Apps ausgeführt werden können, die nicht aus dem Store stammen. 
   
-- Mit Azure Active Directory (Azure AD) verknüpfte Geräte, einschließlich:
+- Mit Azure Active Directory (Azure AD) verknüpfte Geräte, einschließlich:  
   
   - Mit Azure AD Hybrid verknüpfte Geräte: Geräte, die mit Azure Active Directory und einer lokalen Azure Active Directory-Instanz verknüpft sind. Weitere Informationen finden Sie unter [Anleitung: Planen der Implementierung einer Azure Active Directory-Hybrideinbindung](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan).
 
@@ -55,13 +55,20 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
   
   - Geräte, die folgendermaßen manuell in Intune registriert wurden:
   
-    - Über die Anmeldung eines Benutzers auf dem Gerät mithilfe eines lokalen Benutzerkontos und dem anschließenden Verknüpfen des Geräts mit Azure AD (sofern die automatische Registrierung bei Intune in Azure AD aktiviert ist).
+    - Die [automatische Registrierung bei Intune](quickstart-setup-auto-enrollment.md) ist in Azure AD aktiviert. Ein Benutzer meldet sich mit einem lokalen Benutzerkonto beim Gerät an, bindet das Gerät manuell in Azure AD ein und meldet sich dann mit seinem Azure AD-Konto beim Gerät an.
     
-    oder
+    ODER  
     
     - Über die Anmeldung des Benutzers auf dem Gerät mithilfe seines Azure AD-Kontos und der anschließenden Registrierung bei Intune.
 
-  - Gemeinsam verwaltete Geräte, die Configuration Manager und Intune verwenden – weitere Informationen finden Sie unter [Was ist Co-Verwaltung?](https://docs.microsoft.com/sccm/comanage/overview).
+  - Gemeinsam verwaltete Geräte, die Configuration Manager und Intune verwenden – Stellen Sie sicher, dass die Workload **Client-Apps** auf **Pilot Intune** oder **Intune** festgelegt ist. In folgenden Artikeln finden Sie Anleitungen dazu: 
+  
+    - [Was ist Co-Verwaltung?](https://docs.microsoft.com/sccm/comanage/overview) 
+    - [Client-Apps-Workload](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
+    - [Verschieben von Configuration Manager-Workloads zu Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+  
+> [!TIP]
+> Stellen Sie sicher, dass die Geräte in Azure AD [eingebunden](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) sind. Geräte, die bei Azure AD nur [registriert](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) sind, erhalten Ihre Skripts nicht.
 
 ## <a name="create-a-script-policy"></a>Erstellen einer Skriptrichtlinie 
 
@@ -87,7 +94,7 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
 5. Klicken Sie auf **OK** > **Erstellen**, um das Skript zu speichern.
 
 > [!NOTE]
-> Das PowerShell-Skript wird (standardmäßig) mit Administratorberechtigungen ausgeführt, wenn das Skript auf Benutzerkontext festgelegt ist und der Endbenutzer auf dem Gerät über Administratorrechte verfügt.
+> Wenn Skripts auf den Benutzerkontext festgelegt sind und der Endbenutzer über Administratorrechte verfügt, wird das PowerShell-Skript standardmäßig mit Administratorrechten ausgeführt.
 
 ## <a name="assign-the-policy"></a>Zuweisen der Richtlinie
 
@@ -156,6 +163,7 @@ Unter [Aktivieren der automatischen Registrierung von Windows 10](windows-enroll
     > [!TIP]
     > Bei der **Microsoft Intune-Verwaltungserweiterung** handelt es sich um einen Dienst, der wie die anderen Dienste in der Dienst-App (services.msc) auf dem Gerät ausgeführt wird. Nach dem Neustart eines Geräts startet ggf. auch dieser Dienst neu und überprüft, ob dem Intune-Dienst PowerShell-Skripts zugewiesen sind. Wenn die **Microsoft Intune-Verwaltungserweiterung** auf „Manuell“ festgelegt ist, startet der Dienst nach einem Neustart des Geräts möglicherweise nicht neu.
 
+- Stellen Sie sicher, dass die Geräte [in Azure AD eingebunden](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) sind. Geräte, die nur in Ihren Arbeitsplatz oder Ihre Organisation eingebunden (also in Azure AD [registriert](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network)) sind, erhalten die Skripts nicht.
 - Der Client der Intune-Verwaltungserweiterung überprüft einmal pro Stunde, ob Änderungen im Skript oder in der Richtlinie in Intune vorliegen.
 - Vergewissern Sie sich, dass die Intune-Verwaltungserweiterung nach `%ProgramFiles(x86)%\Microsoft Intune Management Extension` heruntergeladen wurde.
 - Skripts werden nicht auf Surface Hub-Geräten oder unter Windows 10 im S Modus ausgeführt.

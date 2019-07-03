@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d1153254f5e803bc0e1f933b8bdc022f241abcc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bb175d2133cf2a7bc5b064c13afb7e252147c729
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045849"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044257"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Schnellstart: Senden von Benachrichtigungen an nicht konforme Geräte
 
@@ -35,7 +35,7 @@ Eine der Aktionen, die Sie bei Nichtkonformität eines Geräts ergreifen können
 Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für eine kostenlose Testversion](free-trial-sign-up.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-- Für die Verwendung von Gerätekonformitätsrichtlinien zum Blockieren von Unternehmensressourcen muss der bedingte Zugriff von AAD eingerichtet sein. Wenn Sie den Schnellstart [Erstellen einer Gerätekonformitätsrichtlinie](quickstart-set-password-length-android.md) abgeschlossen haben, verwenden Sie Azure Active Directory. Weitere Informationen über AAD finden Sie in den Artikeln zum [bedingten Zugriff in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) und zu [gängigen Möglichkeiten zur Verwendung des bedingten Zugriffs mit Intune](conditional-access-intune-common-ways-use.md).
+- Für die Verwendung von Gerätekonformitätsrichtlinien zum Blockieren des Gerätezugriffs auf Unternehmensressourcen muss der bedingte Zugriff von AAD eingerichtet sein. Wenn Sie den Schnellstart [Erstellen einer Gerätekonformitätsrichtlinie](quickstart-set-password-length-android.md) abgeschlossen haben, verwenden Sie Azure Active Directory. Weitere Informationen zu AAD finden Sie unter [Bedingter Zugriff in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) oder unter [Gängige Möglichkeiten für die Verwendung des bedingten Zugriffs mit Intune](conditional-access-intune-common-ways-use.md).
 
 ## <a name="sign-in-to-intune"></a>Anmelden bei Intune
 

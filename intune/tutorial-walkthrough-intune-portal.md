@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c84cd0ec61ea08956bbebd040167991c6285d073
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3c305cc579fedb9090faaf6c7270fcc546e36eb
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66044984"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044329"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: Überblick über Microsoft Intune im Azure-Portal
 
@@ -104,7 +104,7 @@ Befolgen Sie diese Schritte, um Intune im Azure-Portal besser kennen zu lernen. 
 
     ![Screenshot des Bereichs „Bedingter Zugriff“](media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-07.png)
 
-    Der Begriff „bedingter Zugriff“ bezieht sich auf Möglichkeiten zum Steuern der Geräte und Apps, die eine Verbindung mit E-Mail- und Unternehmensressourcen herstellen dürfen. Weitere Informationen zu gerätebasiertem und App-basiertem bedingtem Zugriff und zu häufigen Szenarios zur Verwendung des bedingten Zugriffs mit Intune finden Sie unter [Was ist bedingter Zugriff?](conditional-access.md).
+    Der Begriff „bedingter Zugriff“ bezieht sich auf Möglichkeiten zum Steuern der Geräte und Apps, die eine Verbindung mit E-Mail- und Unternehmensressourcen herstellen dürfen. Weitere Informationen zu gerätebasiertem und App-basiertem bedingtem Zugriff und zu gängigen Szenarien zur Verwendung des bedingten Zugriffs mit Intune finden Sie unter [Was ist bedingter Zugriff?](conditional-access.md).
 
 8. Navigieren Sie in [Intune](https://aka.ms/intuneportal) zu **Benutzer**, um Details zu den Benutzern anzuzeigen, die über Intune verwaltet werden. Bei diesen Benutzern handelt es sich um die Mitarbeiter Ihres Unternehmens. 
  

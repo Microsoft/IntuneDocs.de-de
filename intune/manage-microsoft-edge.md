@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1a255391a2cf27a764da6122031fd0c9cbb64cf
-ms.sourcegitcommit: cb76efd3db60a422a65478ebce83d3aea7b5eeed
+ms.openlocfilehash: 1ad8a3298a801b07e021b84bd5eea9c91f01f1a2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66751358"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044882"
 ---
 # <a name="manage-web-access-using-microsoft-edge-with-microsoft-intune"></a>Verwalten des Webzugriffs mithilfe von Microsoft Edge mit Microsoft Intune
 
@@ -57,11 +57,11 @@ Wenn Microsoft Edge keine Intune-Richtlinie zugeordnet wird, können es Benutzer
 
 ## <a name="conditional-access-for-microsoft-edge"></a>Bedingter Zugriff für Microsoft Edge
 
-Sie können den bedingten Azure AD-Zugriff nutzen, um Ihre Benutzer weiterzuleiten, damit sie nur über Microsoft Edge auf Unternehmensdaten zugreifen können. Dadurch würde der mobile Browserzugriff auf mit Azure AD-verbundene Web-Apps über durch Richtlinien geschütztes Microsoft Edge eingeschränkt und folglich der Zugriff aus anderen nicht geschützten Browsern wie Safari oder Chrome blockiert. Bedingter Zugriff kann auf Azure-Ressourcen wie Exchange Online, SharePoint Online, das Microsoft 365 Admin Center und sogar auf lokale Websites angewendet werden, die Sie für externe Benutzer über den [Azure AD-Anwendungsproxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) freigegeben haben.
+Sie können den bedingten Azure AD-Zugriff nutzen, um Ihre Benutzer weiterzuleiten, damit sie nur über Microsoft Edge auf Unternehmensdaten zugreifen können. Dadurch würde der mobile Browserzugriff auf mit Azure AD-verbundene Web-Apps über durch Richtlinien geschütztes Microsoft Edge eingeschränkt und folglich der Zugriff aus anderen nicht geschützten Browsern wie Safari oder Chrome blockiert. Der bedingte Zugriff kann auf Azure-Ressourcen wie Exchange Online, SharePoint Online, das Microsoft 365 Admin Center und sogar auf lokale Websites angewendet werden, die Sie über den [Azure AD-Anwendungsproxy](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) für externe Benutzer verfügbar gemacht haben.
 
 Um bei mit Azure AD verbundenen Web-Apps die Verwendung von Microsoft Edge unter iOS und Android einzuschränken, führen Sie die folgenden Schritte aus:
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Wählen Sie unter dem Intune-Knoten **Conditional access** > **New policy** (Bedingter Zugriff > Neue Richtlinie) aus.
+2. Wählen Sie unter dem Knoten „Intune“ die Optionen **Bedingter Zugriff** > **Neue Richtlinie** aus.
 3. Klicken Sie im Abschnitt **Zugriffssteuerungen** des Blatts auf die Option **Erteilen**.
 4. Klicken Sie auf **Genehmigte Client-App erforderlich**.
 5. Klicken Sie auf dem Blatt **Erteilen** auf **Auswählen**. Diese Richtlinie muss den Cloud-Apps zugewiesen sein, auf die nur über die Intune Managed Browser-App zugegriffen werden soll.
@@ -134,7 +134,7 @@ Microsoft Edge und [Azure AD-Anwendungsproxy](https://docs.microsoft.com/azure/a
 
 Dies sind einige Beispiele für Szenarien mit aktiviertem AD-Anwendungsproxy: 
 
-- Ein Benutzer verwendet die mobile Outlook-App, die durch Intune geschützt ist. Dann klickt er in einer E-Mail auf einen Link zu einer Intranetsite, und Microsoft Edge erkennt, dass diese Site dem Benutzer über den Anwendungsproxy verfügbar gemacht wurde. Der Benutzer wird über den Anwendungsproxy automatisch weitergeleitet, um sich mit einer anwendbaren mehrstufigen Authentifizierung und bedingtem Zugriff zu authentifizieren, bevor er die Intranetsite erreicht. Benutzer können jetzt sogar auf ihren mobilen Geräten auf interne Websites zugreifen, und der Link in Outlook funktioniert wie erwartet.
+- Ein Benutzer verwendet die mobile Outlook-App, die durch Intune geschützt ist. Dann klickt er in einer E-Mail auf einen Link zu einer Intranetsite, und Microsoft Edge erkennt, dass diese Site dem Benutzer über den Anwendungsproxy verfügbar gemacht wurde. Der Benutzer wird automatisch über den Anwendungsproxy weitergeleitet, um sich mit einer anwendbaren Option für die mehrstufige Authentifizierung und bedingtem Zugriff zu authentifizieren, bevor er zur Intranetsite gelangt. Benutzer können jetzt sogar auf ihren mobilen Geräten auf interne Websites zugreifen, und der Link in Outlook funktioniert wie erwartet.
 - Ein Benutzer öffnet Microsoft Edge auf seinem iOS- oder Android-Gerät. Wenn Microsoft Edge mit Intune geschützt ist und der Anwendungsproxy aktiviert wurde, kann der Benutzer über die gewohnte interne URL zu einer Intranetsite navigieren. Microsoft Edge erkennt, dass diese Intranetsite dem Benutzer über den Anwendungsproxy verfügbar gemacht wurde. Der Benutzer wird über den Proxy automatisch weitergeleitet, damit er sich authentifiziert, bevor er die Site erreicht. 
 
 ### <a name="before-you-start"></a>Vorbereitung

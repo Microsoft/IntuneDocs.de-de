@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbf04d771a9c1fd43cfe695dd2d27b9cfe1a0528
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: bbd8d81dfab46a1e752084aab75fbcf0d8104187
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050305"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67044277"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Schnellstart: Erstellen eines E-Mail-Geräteprofils für iOS
 
-In dieser Schnellstartanleitung erfahren Sie, wie Sie ein E-Mail-Geräteprofil für iOS-Geräte erstellen. Dieses Profil gibt die Einstellungen an, die für die integrierte E-Mail-App auf dem iOS-Gerät erforderlich sind, um auf Unternehmens-E-Mails zugreifen zu können. E-Mail-Geräteprofile helfen beim geräteübergreifenden Standardisieren von Einstellungen und ermöglichen Endbenutzern den Zugriff auf Unternehmens-E-Mails auf ihren persönlichen Geräten, ohne dass ihrerseits eine Konfiguration erforderlich wäre. Um Ihre E-Mails noch besser zu schützen, können Sie mit einem E-Mail-Profil festlegen, ob Geräte konform sind, und dann bedingten Zugriff einrichten, sodass nur konforme Geräte auf E-Mails zugreifen können. Weitere Informationen zu E-Mail-Profilen finden Sie unter [Konfigurieren von E-Mail-Einstellungen in Microsoft Intune](email-settings-configure.md).
+In dieser Schnellstartanleitung erfahren Sie, wie Sie ein E-Mail-Geräteprofil für iOS-Geräte erstellen. Dieses Profil gibt die Einstellungen an, die für die integrierte E-Mail-App auf dem iOS-Gerät erforderlich sind, um auf Unternehmens-E-Mails zugreifen zu können. E-Mail-Geräteprofile helfen beim geräteübergreifenden Standardisieren von Einstellungen und ermöglichen Endbenutzern den Zugriff auf Unternehmens-E-Mails auf ihren persönlichen Geräten, ohne dass ihrerseits eine Konfiguration erforderlich wäre. Um Ihre E-Mails noch besser zu schützen, können Sie mit einem E-Mail-Profil bestimmen, ob Geräte konform sind, und dann den bedingten Zugriff so einrichten, dass nur konforme Geräte auf E-Mails zugreifen können. Weitere Informationen zu E-Mail-Profilen finden Sie unter [Konfigurieren von E-Mail-Einstellungen in Microsoft Intune](email-settings-configure.md).
 
 Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für eine kostenlose Testversion](free-trial-sign-up.md).
 
@@ -67,7 +67,7 @@ Registrieren Sie sich bei [Intune](https://aka.ms/intuneportal) als globaler Adm
 Wenn Sie das erstellte Profil nicht für weitere Tutorials oder Tests verwenden möchten, können sie es jetzt löschen.
 1. Wählen Sie in Intune die Option **Gerätekonfiguration** und anschließend **Profile** aus.
 2. Wählen Sie das erstellte Testprofil **iOS require work email** (Für iOS geschäftliche E-Mail erfordern) aus.
-3. Wählen Sie die Ellipse (**...**) neben dem Profil aus, und klicken Sie auf **Löschen**.
+3. Wählen Sie die Ellipse ( **...** ) neben dem Profil aus, und klicken Sie auf **Löschen**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

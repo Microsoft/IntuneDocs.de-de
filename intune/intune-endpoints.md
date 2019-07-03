@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30fee770e4af561cac62241e65b673d2f608c918
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: 026536b1f0c059808220273ccffefacc28b80ae0
+ms.sourcegitcommit: 119962948045079022aa48f968dde3e961d7cd0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819715"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031597"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Netzwerkendpunkte für Microsoft Intune
 
@@ -86,27 +86,27 @@ Wenn Sie Intune zum Bereitstellen von PowerShell-Skripts oder Win32-Apps verwend
 
 |ASU | Speichername | CDN |
 | --- | --- |--- |
-| AMSUA0601 | prodmsua06data | https://prodmsua06data.azureedge.net |
-| AMSUA0602 | prodamsua0602data | https://prodamsua0602data.azureedge.net |
-| AMSUA0101 | prodmsua01data | https://prodmsua01data.azureedge.net |
-| AMSUA0201 | prodmsua02data | https://prodmsua02data.azureedge.net |
-| AMSUA0202 | Prodmsua0202rcdata | https://prodamsua0202data.azureedge.net/ |
-| AMSUA0401 | prodmsua04data | https://prodmsua04data.azureedge.net |
-| AMSUA0402 | Prodmsua0402rcdata | https://prodamsua0402data.azureedge.net/ |
-| AMSUA0501 | prodmsua05data | https://prodmsua05data.azureedge.net |
-| AMSUA0502 | prodmsua0502data | https://prodmsua0502data.azureedge.net |
-| AMSUB0101 | prodmsub01data | https://prodmsub01data.azureedge.net |
-| AMSUB0102 | prodamsub0102data | https://prodamsub0102data.azureedge.net |
-| AMSUB0201 | prodmsub02data | https://prodmsub02data.azureedge.net |
-| AMSUB0202 | Prodmsub0202rcdata | https://prodamsub0202data.azureedge.net |
-| AMSUB0301 | Prodmsub03data2 | https://prodmsub03data2.azureedge.net |
-| AMSUB0302 | Prodmsub0302rcdata | https://prodamsub0302data.azureedge.net |
-| AMSUB0501 | prodmsub05data | https://prodmsub05data.azureedge.net |
-| AMSUC0101 | prodmsuc01data | https://prodmsuc01data.azureedge.net |
-| AMSUC0201 | prodmsuc02data | https://prodmsuc02data.azureedge.net |
-| AMSUC0301 | prodmsuc03data | https://prodmsuc03data.azureedge.net |
-| AMSUC0501 | prodmsuc05data | https://prodmsuc05data.azureedge.net |
-| AMSUA0701 | pemsua07rcdata | https://pemsua07data.azureedge.net |
+| AMSUA0601 | prodmsua06data | https:\//prodmsua06data.azureedge.net |
+| AMSUA0602 | prodamsua0602data | https:\//prodamsua0602data.azureedge.net |
+| AMSUA0101 | prodmsua01data | https:\//prodmsua01data.azureedge.net |
+| AMSUA0201 | prodmsua02data | https:\//prodmsua02data.azureedge.net |
+| AMSUA0202 | Prodmsua0202rcdata | https:\//prodamsua0202data.azureedge.net/ |
+| AMSUA0401 | prodmsua04data | https:\//prodmsua04data.azureedge.net |
+| AMSUA0402 | Prodmsua0402rcdata | https:\//prodamsua0402data.azureedge.net/ |
+| AMSUA0501 | prodmsua05data | https:\//prodmsua05data.azureedge.net |
+| AMSUA0502 | prodmsua0502data | https:\//prodmsua0502data.azureedge.net |
+| AMSUB0101 | prodmsub01data | https:\//prodmsub01data.azureedge.net |
+| AMSUB0102 | prodamsub0102data | https:\//prodamsub0102data.azureedge.net |
+| AMSUB0201 | prodmsub02data | https:\//prodmsub02data.azureedge.net |
+| AMSUB0202 | Prodmsub0202rcdata | https:\//prodamsub0202data.azureedge.net |
+| AMSUB0301 | Prodmsub03data2 | https:\//prodmsub03data2.azureedge.net |
+| AMSUB0302 | Prodmsub0302rcdata | https:\//prodamsub0302data.azureedge.net |
+| AMSUB0501 | prodmsub05data | https:\//prodmsub05data.azureedge.net |
+| AMSUC0101 | prodmsuc01data | https:\//prodmsuc01data.azureedge.net |
+| AMSUC0201 | prodmsuc02data | https:\//prodmsuc02data.azureedge.net |
+| AMSUC0301 | prodmsuc03data | https:\//prodmsuc03data.azureedge.net |
+| AMSUC0501 | prodmsuc05data | https:\//prodmsuc05data.azureedge.net |
+| AMSUA0701 | pemsua07rcdata | https:\//pemsua07data.azureedge.net |
 
 ### <a name="windows-push-notification-services-wns"></a>Windows-Pushbenachrichtigungsdienste (WNS)
 Bei von Intune verwalteten Windows-Geräten, die mithilfe von mobiler Geräteverwaltung (Mobile Device Management, MDM) verwaltet werden, müssen für Geräteaktionen und andere sofortige Aktivitäten die Windows-Pushbenachrichtigungsdienste (Windows Push Notification Services, WNS) verwendet werden. Weitere Informationen finden Sie unter [Zulassen von Windows Notification-Datenverkehr durch Unternehmensfirewalls](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config).    

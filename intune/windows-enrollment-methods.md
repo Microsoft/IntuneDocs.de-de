@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: 55e758c8a7eddc1a5500464754448d26680ec772
-ms.sourcegitcommit: cc5d757018d05fc03ac9ea3d30f563df9bfd61ed
+ms.openlocfilehash: eda0d77fc5cdb11fa4bc5b21f48ceb7616ecfb15
+ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66819577"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67389257"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Intune-Registrierungsmethoden für Windows-Geräte
 
@@ -51,6 +51,7 @@ Administratoren können die folgenden Registrierungsmethoden einrichten, die kei
 - [Configuration Manager Co-management](https://docs.microsoft.com/sccm/comanage/overview) (Configuration Manager-Co-Verwaltung): Diese Methode ermöglicht Administratoren, ihre vorhandenen verwalteten Configuration Manager-Geräte in Intune zu registrieren, um sowohl von den Vorteilen von Intune als auch von Configuration Manager zu profitieren. 
 - Der [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md) (Device Enrollment Manager, DEM) ist ein spezielles Dienstkonto. DEM-Konten haben Berechtigungen, mit denen autorisierte Benutzer mehrere unternehmenseigene Geräte registrieren und verwalten können. Diese Gerätetypen eignen sich z.B. für POS- oder Hilfsprogramm-Apps, nicht aber für Benutzer, die Zugriff auf E-Mails oder Unternehmensressourcen benötigen. Diese Methode ermöglicht nicht, Features wie den bedingten Zugriff zu verwenden. 
 - [Bulk enroll](windows-bulk-enroll.md) (Massenregistrierung): Diese Methode ermöglicht einem autorisierten Benutzer, sehr viele neue unternehmenseigene Geräte mit Azure Active Directory und Intune zu verknüpfen. Sie erstellen mit der Windows Configuration Designer-App (WCD) ein Bereitstellungspaket. Dann installieren Sie mithilfe von USB-Medien während der ersten Windows-Einrichtung oder mithilfe von Medien von vorhandenen Windows-Computern das Bereitstellungspaket, sodass Geräte automatisch in Intune registriert werden. Diese Methode ermöglicht nicht die Verwendung von bedingtem Zugriff. 
+- Beim [Registrieren von Windows IoT Core-Geräten in Microsoft Intune](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/intunedeviceenrollment) erfolgt die Vorbereitung des Geräts auf dem Windows IoT Core-Dashboard. Danach wird der Windows-Konfigurations-Designer verwendet, um ein Bereitstellungspaket zu erstellen. Anschließend wird das Bereitstellungspaket beim ersten Systemstart über eine SD-Karte installiert, um die Geräte automatisch bei Intune zu registrieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

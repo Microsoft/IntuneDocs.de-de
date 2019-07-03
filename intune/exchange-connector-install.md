@@ -17,17 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e236548002f2779377e7ac57443077d48869e1f9
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 57684a1f5ef94b12c8f0e52a36d8432583391b8a
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047698"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67045683"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Einrichten des lokalen Exchange Connectors in Microsoft Intune
 Die in diesem Artikel enthaltenen Informationen unterstützen Sie beim Installieren und anschließenden Überwachen des lokalen Exchange Active Sync-Connectors für Intune.  Sie verwenden den lokalen Intune Exchange-Connector mit Ihren [Richtlinien für den bedingten Zugriff, um den Zugriff auf Ihre lokalen Exchange-Postfächer zu gewähren oder zu verweigern](conditional-access-exchange-create.md). 
 
-Wenn ein Gerät versucht, auf den lokalen Exchange-Connector zuzugreifen, ordnet der Exchange-Connector EAS-Datensätze (Exchange Active Sync) in Exchange Server Intune-Datensätzen zu, um die Geräteregistrierung bei Intune und die Konformität mit Ihren Gerätekonformitätsrichtlinien zu prüfen. Dem Gerät kann abhängig von Ihren Richtlinien für den bedingten Zugriff dieser gewährt oder verweigert werden. Weitere Informationen finden Sie im Artikel [Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?](conditional-access-intune-common-ways-use.md).
+Wenn ein Gerät versucht, auf den lokalen Exchange-Connector zuzugreifen, ordnet der Exchange-Connector EAS-Datensätze (Exchange Active Sync) in Exchange Server Intune-Datensätzen zu, um die Geräteregistrierung bei Intune und die Konformität mit Ihren Gerätekonformitätsrichtlinien zu prüfen. Abhängig von Ihren Richtlinien für bedingten Zugriff kann dem Gerät Zugriff gewährt oder verweigert werden. Weitere Informationen finden Sie im Artikel [Welche gängigen Möglichkeiten gibt es für die Verwendung des bedingten Zugriffs in Intune?](conditional-access-intune-common-ways-use.md)
 
 Intune unterstützt die Installation mehrerer lokaler Exchange-Connectors pro Abonnement. Wenn Sie über mehrere lokale Exchange-Organisationen verfügen, können Sie für jede einen separaten einrichten. Allerdings kann nur ein Connector für die Verwendung jeder einzelnen Exchange-Organisation installiert werden. 
 
@@ -184,9 +184,9 @@ Ab Intune-Release 1710 können Sie das [Operations Manager Management Pack für 
 ## <a name="manually-force-a-quick-sync-or-full-sync"></a>Manuelle Erzwingung einer schnellen oder vollständigen Synchronisierung
 Ein lokaler Exchange Connector synchronisiert regelmäßig EAS und Datensätze für Intune-Geräte. Wenn sich der Konformitätsstatus eines Geräts verändert, aktualisiert der automatische Synchronisierungsprozess regelmäßig Datensätze, damit der Gerätezugriff entsprechend blockiert und erlaubt werden kann.
 
-   - Die **Schnellsynchronisierung** wird regelmäßig mehrmals täglich ausgeführt. Eine schnelle Synchronisierung ruft Geräteinformationen für die Benutzer ab, die über Intune-Lizenzen und bedingten Zugriff mit lokalem Exchange verfügen, die sich seit der letzten Synchronisierung geändert haben.
+   - Die **Schnellsynchronisierung** wird regelmäßig mehrmals täglich ausgeführt. Eine Schnellsynchronisierung ruft Geräteinformationen für Benutzer ab, die über Intune-Lizenzen und bedingten Zugriff auf lokales Exchange verfügen und bei denen seit der letzten Synchronisierung Änderungen aufgetreten sind.
 
-   - Die **vollständige Synchronisierung** wird standardmäßig einmal pro Tag durchgeführt. Eine vollständige Synchronisierung ruft Geräteinformationen für alle Benutzer ab, die über Intune-Lizenzen und bedingten Zugriff mit lokalem Exchange verfügen. Eine vollständige Synchronisierung ruft ebenso die Exchange-Serverinformationen ab und stellt sicher, dass die von Intune im Azure-Portal angegebene Konfiguration auf dem Exchange-Server aktualisiert wird. 
+   - Die **vollständige Synchronisierung** wird standardmäßig einmal pro Tag durchgeführt. Eine vollständige Synchronisierung ruft Geräteinformationen für alle Benutzer ab, die über Intune-Lizenzen und bedingten Zugriff auf lokales Exchange verfügen. Eine vollständige Synchronisierung ruft ebenso die Exchange-Serverinformationen ab und stellt sicher, dass die von Intune im Azure-Portal angegebene Konfiguration auf dem Exchange-Server aktualisiert wird. 
 
 
 Sie können erzwingen, dass ein Connector eine Synchronisierung ausführt, indem Sie die Optionen **Schnellsynchronisierung** oder **Vollständige Synchronisierung** auf dem Intune-Dashboard mit den folgenden Schritten verwenden:
@@ -196,4 +196,4 @@ Sie können erzwingen, dass ein Connector eine Synchronisierung ausführt, indem
    3. Wählen Sie den Connector aus, den Sie synchronisieren möchten, wählen Sie anschließend **Schnellsynchronisierung** oder **Vollständige Synchronisierung** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Erstellen einer Richtlinie für bedingten Zugriff für lokales Exchange](conditional-access-exchange-create.md)
+[Erstellen einer Richtlinie für bedingten Zugriff für Exchange lokal](conditional-access-exchange-create.md)

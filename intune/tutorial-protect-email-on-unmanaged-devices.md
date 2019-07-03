@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf nicht verwalteten Geräten'
 titleSuffix: Microsoft Intune
-description: Erfahren Sie, wie Sie Office 365 Exchange Online mit Intune-App-Schutzrichtlinien und dem bedingten Zugriff in Azure AD sichern.
+description: Erfahren Sie, wie Sie Office 365 Exchange Online mit Intune-App-Schutzrichtlinien und dem bedingten Zugriff von Azure AD sichern.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -16,20 +16,20 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fc1f877f9b457c6abafef7f1e66e8b04bba2c8e0
-ms.sourcegitcommit: 2f32f6d2129bc10cc4a02115732e995edceb37d6
+ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66829001"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046271"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf nicht verwalteten Geräten
 
-Erfahren Sie, wie Sie App-Schutzrichtlinien mit bedingtem Zugriff verwenden, um Exchange Online zu schützen, auch wenn Geräte nicht in einer Geräteverwaltungslösung wie Intune registriert sind. In diesem Tutorial lernen Sie Folgendes: 
+Erfahren Sie, wie Sie App-Schutzrichtlinien mit bedingtem Zugriff zum Schutz von Exchange Online verwenden, auch wenn Geräte nicht in einer Geräteverwaltungslösung wie Intune registriert sind. In diesem Tutorial lernen Sie Folgendes: 
 
 > [!div class="checklist"]
 > * Erstellen einer Intune-App-Schutzrichtlinie für die Outlook-App. Sie schränken die möglichen Aktivitäten von Benutzern für App-Daten ein, indem Sie „Speichern unter“-Aktionen ganz verhindern und Optionen zum Ausschneiden, Kopieren und Einfügen begrenzen. 
-> * Erstellen Sie Richtlinien für den bedingten Zugriff in Azure Active Directory (Azure AD), mit denen die Outlook-App in Exchange Online nur auf Unternehmens-E-Mails zugreifen darf. Sie fordern auch die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) für Clients mit moderner Authentifizierung wie Outlook für iOS und Android an.
+> * Erstellen Sie Richtlinien für bedingten Zugriff in Azure Active Directory (Azure AD), die dafür sorgen, dass die Outlook-App in Exchange Online nur auf Unternehmens-E-Mails zugreifen darf. Sie fordern auch die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) für Clients mit moderner Authentifizierung wie Outlook für iOS und Android an.
 
 ## <a name="prerequisites"></a>Voraussetzungen
   - Sie benötigen für dieses Tutorial einen Testmandanten mit den folgenden Abonnements:
@@ -78,16 +78,16 @@ In diesem Tutorial richten wir eine Intune-App-Schutzrichtlinie für die Outlook
 
 Die App-Schutzrichtlinie für Outlook wird erstellt. Als Nächstes richten Sie den bedingten Zugriff ein, um zu erzwingen, dass Geräte die Outlook-App verwenden.
 
-## <a name="create-conditional-access-policies"></a>Erstellen von Richtlinien für den bedingten Zugriff
-Nun erstellen wir zwei Richtlinien für den bedingten Zugriff, um alle Geräteplattformen abzudecken.  
+## <a name="create-conditional-access-policies"></a>Erstellen von Richtlinien für bedingten Zugriff
+Nun erstellen wir zwei Richtlinien für bedingten Zugriff, um alle Geräteplattformen abzudecken.  
 
 - Die erste Richtlinie erfordert, dass Clients mit moderner Authentifizierung die genehmigte Outlook-App und mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) verwenden. Clients mit moderner Authentifizierung enthalten Outlook für iOS und Outlook für Android.  
 
-- Die zweite Richtlinie erfordert, dass Exchange ActiveSync-Clients die genehmigte Outlook-App verwenden. (Zurzeit unterstützt Exchange Active Sync keine anderen Bedingungen als die Geräteplattform). Sie können Richtlinien für den bedingten Zugriff im Azure AD-Portal oder im Intune-Portal konfigurieren. Da wir uns bereits im Intune-Portal befinden, erstellen wir die Richtlinie über dieses Portal.  
+- Die zweite Richtlinie erfordert, dass Exchange ActiveSync-Clients die genehmigte Outlook-App verwenden. (Zurzeit unterstützt Exchange Active Sync keine anderen Bedingungen als die Geräteplattform). Sie können Richtlinien für bedingten Zugriff im Azure AD-Portal oder im Intune-Portal konfigurieren. Da wir uns bereits im Intune-Portal befinden, erstellen wir die Richtlinie über dieses Portal.  
 
 ### <a name="create-an-mfa-policy-for-modern-authentication-clients"></a>Erstellen einer MFA-Richtlinie für Clients mit moderner Authentifizierung  
 
-1. Klicken Sie in Intune auf **Bedingter Zugriff** > **Richtlinien** > **Neue Richtlinie**.  
+1. Wählen Sie in Intune **Bedingter Zugriff** > **Richtlinien** > **Neue Richtlinie** aus.  
 
 2. Geben Sie **Testrichtlinie für Clients mit moderner Authentifizierung** als **Name** ein.  
 
@@ -132,7 +132,7 @@ Nun erstellen wir zwei Richtlinien für den bedingten Zugriff, um alle Gerätepl
 Die Richtlinie für bedingten Zugriff für Clients mit moderner Authentifizierung wird erstellt. Jetzt können Sie eine Richtlinie für Exchange Active Sync-Clients erstellen.
 
 ### <a name="create-a-policy-for-exchange-active-sync-clients"></a>Erstellen einer Richtlinie für Exchange Active Sync-Clients  
-1. Klicken Sie in Intune auf **Bedingter Zugriff** > **Richtlinien** > **Neue Richtlinie**.  
+1. Wählen Sie in Intune **Bedingter Zugriff** > **Richtlinien** > **Neue Richtlinie** aus.  
 2. Geben Sie **Testrichtlinie für EAS-Clients** als **Name** ein.  
 3. Klicken Sie unter **Zuweisungen** auf **Benutzer und Gruppen**.  
 4. Klicken Sie auf der Registerkarte *Einschließen* auf **Alle Benutzer** und dann auf **Fertig**.  
@@ -189,4 +189,4 @@ Wenn die Testrichtlinien nicht mehr benötigt werden, können Sie diese entferne
 5. Öffnen Sie in der Liste **Richtlinienname** das Kontextmenü ( **...** ) für jede Ihrer Testrichtlinien, und klicken Sie dann auf **Löschen**. Klicken Sie zum Bestätigen auf **Ja**.  
 
  ## <a name="next-steps"></a>Nächste Schritte  
-In diesem Tutorial haben Sie App-Schutzrichtlinien erstellt, um die Aktionen zu begrenzen, die ein Benutzer in der Outlook-App ausführen kann. Sie haben zudem Richtlinien für den bedingten Zugriff erstellt, um die Outlook-App sowie die mehrstufige Authentifizierung für Clients mit moderner Authentifizierung zu erzwingen. Weitere Informationen zur Verwendung von Intune mit bedingtem Zugriff zum Schutz von anderen Apps und Diensten finden Sie unter [Einrichten des bedingten Zugriffs](conditional-access.md).
+In diesem Tutorial haben Sie App-Schutzrichtlinien erstellt, um die Aktionen einzuschränken, die ein Benutzer in der Outlook-App ausführen kann. Sie haben zudem Richtlinien für bedingten Zugriff erstellt, um die Outlook-App sowie die mehrstufige Authentifizierung für Clients mit moderner Authentifizierung zu erzwingen. Weitere Informationen zur Verwendung von Intune mit bedingtem Zugriff zum Schutz von anderen Apps und Diensten finden Sie unter [Was ist bedingter Zugriff?](conditional-access.md).

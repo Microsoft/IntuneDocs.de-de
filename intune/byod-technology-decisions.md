@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba3f6fc48a68122f0a192adc8e2140bb7a603b31
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c2e8c475cd52e199519db7a3d7ea83e6dbfef1a3
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043466"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530654"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Technologieentscheidungen zur Ermöglichung von BYOD mit Microsoft Enterprise Mobility + Security (EMS)
 
@@ -32,7 +32,7 @@ In diesem Thema untersuchen wir den einfachen Anwendungsfall, BYOD-Zugriff auf U
 * Ihre E-Mail-Konten werden in Exchange Online gehostet.
 
 ## <a name="common-reasons-to-manage-the-device-mdm"></a>Häufige Gründe für die Verwaltung von Geräten (MDM)
-Sie können Benutzer ganz einfach dazu bringen, ihre Geräte bei der Geräteverwaltung zu registrieren, indem Sie eine [Richtlinie für den bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) in Exchange Online bereitstellen. Im Folgenden werden die Gründe aufgeführt, warum sich die Verwaltung persönlicher Geräte empfiehlt:
+Sie können Benutzer ganz einfach dazu bringen, ihre Geräte bei der Geräteverwaltung zu registrieren, indem Sie eine [Richtlinie für bedingten Zugriff](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) in Exchange Online bereitstellen. Im Folgenden werden die Gründe aufgeführt, warum sich die Verwaltung persönlicher Geräte empfiehlt:
 
 **WLAN/VPN** – Wenn Ihre Benutzer zur Produktivitätssteigerung ein Unternehmenskonnektivitätsprofil benötigen, so kann dieses nahtlos konfiguriert werden.
 
@@ -41,7 +41,7 @@ Sie können Benutzer ganz einfach dazu bringen, ihre Geräte bei der Geräteverw
 **Compliance** – Einige Organisationen müssen gesetzliche Bestimmungen oder andere Richtlinien einhalten, die bestimmte MDM-Kontrollen vorschreiben. Beispielsweise müssen Sie mit MDM das gesamte Gerät verschlüsseln oder einen Bericht über alle Apps auf dem Gerät erstellen.
 
 ## <a name="common-reasons-to-only-manage-the-apps-mam"></a>Häufige Gründe für die ausschließliche Verwaltung von Apps (MAM)
-MAM ohne MDM ist besonders bei Organisationen beliebt, die BYOD unterstützen. Sie können Benutzer dazu anhalten, über Outlook Mobile (mit Unterstützung für MAM-Schutz) auf E-Mails zuzugreifen, indem Sie eine Richtlinie für den bedingten Zugriff in Exchange Online bereitstellen. Im Folgenden werden die Gründe aufgeführt, warum sich die Verwaltung von ausschließlich Apps auf persönlichen Geräten empfiehlt:
+MAM ohne MDM ist besonders bei Organisationen beliebt, die BYOD unterstützen. Sie können Benutzer dazu anhalten, über Outlook Mobile (mit Unterstützung für MAM-Schutz) auf E-Mails zuzugreifen, indem Sie eine Richtlinie für bedingten Zugriff in Exchange Online bereitstellen. Im Folgenden werden die Gründe aufgeführt, warum sich die Verwaltung von ausschließlich Apps auf persönlichen Geräten empfiehlt:
 
 **Benutzerfreundlichkeit** – Die MDM-Registrierung beinhaltet viele Warnhinweise (die von der Plattform erzwungen werden), die oft dazu führen, dass der Benutzer seine E-Mails letztlich doch nicht mehr auf seinem persönlichen Gerät abrufen möchte. MAM sendet weitaus weniger Warnhinweise an Benutzer, da ihnen lediglich einmal ein Popupfenster angezeigt wird, das sie darüber informiert, dass der MAM-Schutz aktiv ist.
 
@@ -52,11 +52,11 @@ MAM ohne MDM ist besonders bei Organisationen beliebt, die BYOD unterstützen. S
 Weiterer Informationen finden Sie in der [Übersicht über die Lebenszyklen von Geräten und Apps](introduction-device-app-lifecycles.md).
 
 ## <a name="mdm-vs-mam-capability-comparison"></a>Vergleich der MDM- und MAM-Funktionen
-Wie bereits erwähnt wurde, kann der bedingte Zugriff einen Benutzer dazu bringen, sein Gerät zu registrieren oder eine verwaltete App wie Outlook Mobile zu verwenden. In beiden Fällen können viele andere Bedingungen angewendet werden. Hierzu gehören u.a. Folgende:
+Wie bereits erwähnt, kann der bedingte Zugriff Benutzer dazu bringen, ein Gerät zu registrieren oder eine verwaltete App wie Outlook Mobile zu verwenden. In beiden Fällen können viele andere Bedingungen angewendet werden. Hierzu gehören u.a. Folgende:
 
 * Für das Zulassen des benutzerseitigen Zugriffs
 * Für das Festlegen von vertrauenswürdigen oder nicht vertrauenswürdigen Speicherorten
-*   Für das Festlegen des Risikograds bei der Anmeldung
+* Für das Festlegen des Risikograds bei der Anmeldung
 * Geräteplattform
 
 Nach wie vor sind zahlreiche Organisationen oftmals mit besonderen Risiken konfrontiert.  In der folgenden Tabelle werden häufige Probleme und die entsprechenden Antworten bezüglich MDM und MAM aufgelistet.

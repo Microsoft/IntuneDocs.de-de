@@ -1,7 +1,7 @@
 ---
-title: Migrieren von bedingtem Zugriff auf das Azure-Portal
+title: Migrieren des bedingten Zugriffs zum Azure-Portal
 titleSuffix: Microsoft Intune
-description: Weisen Sie die Richtlinien für bedingten Zugriff erneut zu, die Sie zuvor im klassischen Intune-Portal erstellt haben.
+description: Weisen Sie die Richtlinien für bedingten Zugriff, die Sie zuvor im klassischen Intune-Portal erstellt haben, im Azure-Portal erneut zu.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,37 +17,37 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a197b057278ff2f32539169feccc91edbd752386
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048973"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530676"
 ---
-# <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Erneutes Zuweisen von Richtlinien für bedingten Zugriff über das klassische Intune-Porta zum Azure-Portal
+# <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Erneutes Zuweisen von Richtlinien für bedingten Zugriff aus dem klassischen Intune-Portal im Azure-Portal
 
-Ab dem neuen Azure-Portal bietet der bedingt Zugriff Unterstützung für mehrere Richtlinien pro Anwendung zusammen mit erweiterter Anpassbarkeit. Wenn Sie zuvor Richtlinien für bedingten Zugriff im klassischen Intune-Portal erstellt haben, können Sie diese zum Azure-Portal migrieren. 
+Im neuen Azure-Portal unterstützt der bedingte Zugriff mehrere Richtlinien pro Anwendung und bietet bessere Anpassungsmöglichkeiten. Wenn Sie zuvor Richtlinien für bedingten Zugriff im klassischen Intune-Portal erstellt haben, können Sie diese zum Azure-Portal migrieren. 
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
-Wenn Sie bereit für das Azure-Portal sind, befolgen Sie die in diesem Thema angegebenen Schritte, um die Richtlinien des bedingten Zugriffs, die Sie zuvor im klassischen Intune-Portal erstellt haben, erneut zuzuweisen:
+Wenn Sie dazu bereit sind, zum Azure-Portal zu wechseln, führen Sie die in diesem Thema angegebenen Schritte aus, um die Richtlinien für bedingten Zugriff, die Sie zuvor im klassischen Intune-Portal erstellt haben, erneut zuzuweisen:
 
-- Sammeln Sie die Richtlinien für bedingten Zugriff, die zuvor erstellt wurden, damit Sie wissen, welche Einstellungen Sie für die spätere Neuzuweisung benötigen.
+- Erfassen Sie alle bereits erstellten Richtlinien für bedingten Zugriff, damit Sie wissen, welche Einstellungen Sie für die Neuzuweisung benötigen.
 
 - Führen Sie die Schritte in diesem Thema aus, um diese Richtlinien im Azure-Portal neu zu erstellen.
 
 - Deaktivieren Sie die bedingten Richtlinien im klassischen Intune-Portal, nachdem Sie überprüft haben, ob die neuen Richtlinien im Azure-Portal wie erwartet funktionieren.
 <br /><br />
-    - **Vor dem Deaktivieren** der Richtlinien für bedingten Zugriff im klassischen Intune-Portal, planen Sie, wie Sie Benutzer zur neuen Richtlinie verschieben. Es gibt zwei Ansätze:
+    - Planen Sie **vor dem Deaktivieren** der Richtlinien für bedingten Zugriff im klassischen Intune-Portal, auf welche Weise Sie die Benutzer zur neuen Richtlinie migrieren. Es gibt zwei Ansätze:
 <br /><br />
         - **Verwenden Sie dieselbe Einschlussgruppe, um die im Azure-Portal erstellten Richtlinien anzuwenden, und erstellen Sie eine neue Ausnahmegruppe, die mit den vom klassischen Intune-Portal angewendeten Richtlinien verwendet wird**.
             - Verschieben Sie einige Benutzer allmählich in die Ausnahmegruppe, die im klassischen Portal angegeben ist. Dies verhindert, dass die Richtlinien, die das Ziel des klassischen Intune-Portals sind, angewendet werden. Die Richtlinien, die für die gleiche Benutzergruppe im Azure-Portal erstellt wurden und konzipiert sind, werden zusätzlich zu den im klassischen Intune-Portal angewendeten Richtlinien angewendet. 
 <br /><br />
-        - **Erstellen Sie eine neue Gruppe für Richtlinien für bedingten Zugriff im Azure-Portal**. Wenn Sie sich für diese Vorgehensweise entscheiden, müssen Sie folgende Aktionen ausführen:
-            - Entfernen Sie Benutzer allmählich aus den Sicherheitsgruppen, die speziell für das klassische Intune-Portal Richtlinien für bedingten Zugriff besitzen.
+        - **Erstellen Sie eine neue Gruppe, auf die die Richtlinien für bedingten Zugriff im Azure-Portal angewendet werden sollen**. Wenn Sie sich für diese Vorgehensweise entscheiden, müssen Sie folgende Aktionen ausführen:
+            - Entfernen Sie Benutzer nach und nach aus den Sicherheitsgruppen, auf die Richtlinien für bedingten Zugriff des klassischen Intune-Portals angewendet werden.
             - Nachdem Sie bestätigt haben, dass die neue Richtlinie für diese Benutzer funktioniert, können Sie die Richtlinie im klassischen Intune-Portal deaktivieren. 
 <br /><br />
-- Wenn Sie die Einstellungen für die Richtlinien für den bedingten Zugriff konfiguriert haben, um Exchange Active Sync (EAS) im klassischen Intune-Portal zu verwenden, gehen Sie zu den [Anweisungen in diesem Thema](#reassign-intune-device-based-conditional-access-policies-for-eas-clients), um **die Einstellungen der Richtlinie für bedingten Zugriff für EAS im Azure-Portal erneut zuzuweisen**.
+- Wenn Sie die Einstellungen der Richtlinie für bedingten Zugriff so konfiguriert haben, dass Exchange ActiveSync (EAS) im klassischen Intune-Portal verwendet wird, lesen Sie die [Anweisungen in diesem Thema](#reassign-intune-device-based-conditional-access-policies-for-eas-clients), um **die Einstellungen der Richtlinie für bedingten Zugriff für EAS im Azure-Portal erneut zuzuweisen**.
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>So überprüfen Sie Ihre Richtlinien für den gerätebasierten bedingten Zugriff im klassischen Intune-Portal
 
@@ -55,33 +55,33 @@ Wenn Sie bereit für das Azure-Portal sind, befolgen Sie die in diesem Thema ang
 
 2.  Wählen Sie **Richtlinie** im linken Menü aus.
 
-3.  Wählen Sie **Bedingter Zugriff** aus und anschließend den Microsoft-Clouddienst (z.B. Exchange Online oder SharePoint Online), für den Sie eine Richtlinie für bedingten Zugriff erstellt haben.
+3.  Wählen Sie **Bedingter Zugriff** und anschließend den Microsoft-Clouddienst (z.B. Exchange Online oder SharePoint Online) aus, für den Sie eine Richtlinie für bedingten Zugriff erstellt haben.
 
 4.  Notieren Sie sich die Einstellungen für den bedingten Zugriff, und beziehen Sie sich auf diese Notizen, wenn Sie die gleichen Richtlinien für bedingten Zugriff im Azure-Portal erstellen.
 
-### <a name="app-and-device-based-conditional-access-policies-working-together"></a>Richtlinien für den App- und gerätebasierten bedingten Zugriffs, die zusammen arbeiten
+### <a name="app-and-device-based-conditional-access-policies-working-together"></a>Richtlinien für den App- und gerätebasierten bedingten Zugriff im gemeinsamen Einsatz
 
-Das Blatt **Intune-App-Schutz** im Azure-Portal erlaubt Administratoren, App-basierte bedingte Regeln festzulegen, sodass nur Apps, die die App-Schutzrichtlinien von Intune unterstützen, auf Unternehmensressourcen zugreifen dürfen. Sie können diese Richtlinien für den App-basierten bedingten Zugriff mithilfe von Richtlinien für den gerätebasierten bedingten Zugriff überlappen. Sie können die gerätebasierte und App-basierte bedingte Richtlinie kombinieren (logischer UND-Vorgang) oder eine Option bereitstellen (logischer ODER-Vorgang). Wenn die Anforderungen für Ihre Richtlinie für den bedingten Zugriffs Folgende sind:
+Das Blatt **Intune-App-Schutz** im Azure-Portal erlaubt Administratoren, App-basierte bedingte Regeln festzulegen, sodass nur Apps, die die App-Schutzrichtlinien von Intune unterstützen, auf Unternehmensressourcen zugreifen dürfen. Diese Richtlinien für den App-basierten bedingten Zugriff können sich mit Richtlinien für den gerätebasierten bedingten Zugriff überschneiden. Sie können die gerätebasierte und App-basierte bedingte Richtlinie kombinieren (logischer UND-Vorgang) oder eine Option bereitstellen (logischer ODER-Vorgang). Folgende Anforderungen können für Ihre Richtlinie für bedingten Zugriff gelten:
 
 - Ein kompatibles Gerät **UND** die Verwendung der genehmigten App sind erforderlich.
-    - Sie müssen Ihre Richtlinie für den bedingten Zugriff mithilfe des [Blatts des bedingten Zugriffs von Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) und des [Blatts des Intune-App-Schutzes](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0) festlegen.
+    - Sie müssen Ihre Richtlinie für bedingten Zugriff auf dem Blatt [Bedingter Zugriff für Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) und dem Blatt [Intune-App-Schutz](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0) festlegen.
 <br /><br />
 - Ein kompatibles Gerät **ODER** die Verwendung der genehmigten App sind erforderlich.
-    - Sie müssen Ihre Richtlinie für den bedingten Zugriff mithilfe des [klassischen Intune-Portals](https://manage.microsoft.com) und dem [Blatt des Intune-App-Schutzes](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0) festlegen.
+    - Sie müssen Ihre Richtlinie für den bedingten Zugriff im [klassischen Intune-Portal](https://manage.microsoft.com) und auf dem Blatt [Intune-App-Schutz](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0) festlegen.
 
 > [!TIP] 
 > Dieses Thema enthält Screenshots, die die Benutzererfahrung im klassischen Intune-Portal und dem Azure-Portal vergleichen.
 
 ## <a name="reassign-intune-device-based-conditional-access-policies"></a>Erneutes Zuweisen von Richtlinien für den gerätebasierten bedingten Zugriff für Intune
 
-1. Wechseln Sie zum [bedingten Zugriff im Azure-Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies), und melden Sie sich mit Ihren Anmeldeinformationen an.
+1. Wechseln Sie im Azure-Portal zum Blatt [Bedingter Zugriff](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies), und melden Sie sich mit Ihren Anmeldeinformationen an.
 
 2. Wählen Sie **Neue Richtlinie** aus.
 
 3. Geben Sie einen Namen für die Richtlinie an.
 
-4. Wählen Sie **Benutzer und Gruppen** unter dem **Abschnitt Zuweisungen** für die neue Richtlinie für den bedingten Zugriff aus.
-    
+4. Wählen Sie im Abschnitt **Zuweisungen** die Option **Benutzer und Gruppen** aus, um die neue Richtlinie für bedingten Zugriff festzulegen.
+
     ![Darstellung eines Vergleichs der Benutzergruppen-Benutzeroberfläche zwischen dem Intune- und dem Azure-Portal](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
@@ -93,7 +93,7 @@ Das Blatt **Intune-App-Schutz** im Azure-Portal erlaubt Administratoren, App-bas
 
 7. Wählen Sie auf dem **Cloud-Apps**-Blatt **Apps auswählen** aus.
 
-8. Wählen Sie die App, für die Sie die neue Richtlinie für bedingten Zugriff anwenden möchten, und klicken Sie auf **Auswählen**.
+8. Wählen Sie die App aus, auf die Sie die neue Richtlinie für bedingten Zugriff anwenden möchten, und klicken Sie auf **Auswählen**.
 
 9. Klicken Sie auf **Fertig**.
 
@@ -134,21 +134,21 @@ Das Blatt **Intune-App-Schutz** im Azure-Portal erlaubt Administratoren, App-bas
 
 20. Wenn Sie keine mit Intune registrierten und mit Windows kompatiblen Geräte erlauben, schließen Sie Windows-Richtlinien von der aktuellen Richtlinie aus. Erstellen Sie anschließend eine separate Richtlinie, für die **Geräteplattformen** auf **Windows** festgelegt sind, einschließlich der anderen Bedingungen, die wie oben festgelegt sind. Wählen Sie dann **In Domäne eingebundenes Gerät anfordern** unter **Grant Access Controls** (Zugriffssteuerungen genehmigen) aus.
 
-21. Aktivieren Sie die Umschaltfläche **Richtlinie aktivieren** auf dem Blatt **Neu** der Richtlinie für den bedingten Zugriff, klicken Sie dann auf **Erstellen**.
+21. Aktivieren Sie auf dem Blatt **Neu** der Richtlinie für bedingten Zugriff die Umschaltfläche **Richtlinie aktivieren**, und klicken Sie dann auf **Erstellen**.
 
-    ![Vergleich der Benutzeroberfläche zum Aktivieren der Richtlinie für bedingten Zugriff zwischen dem Intune- und dem Azure-Portal](./media/reassign-ca-11.png)
+    ![Vergleich der Benutzeroberfläche zum Aktivieren der Richtlinie für bedingten Zugriff zwischen Intune und Azure](./media/reassign-ca-11.png)
 
 ## <a name="reassign-intune-device-based-conditional-access-policies-for-eas-clients"></a>Erneutes Zuweisen von Richtlinien für den gerätebasierten bedingten Zugriff für EAS-Clients für Intune
 
-Wenn Sie Exchange Active Sync-Einstellungen als Teil einer Exchange Online-Richtlinie im klassischen Intune-Portal konfiguriert haben, müssen Sie eine zweite Richtlinie für den bedingten Zugriff im Azure-Portal erstellen.
+Wenn Sie im Rahmen einer Exchange Online-Richtlinie Exchange ActiveSync-Einstellungen im klassischen Intune-Portal konfiguriert haben, müssen Sie eine zweite Richtlinie für bedingten Zugriff im Azure-Portal erstellen.
 
-1. Wechseln Sie zum [bedingten Zugriff im Azure-Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies), und melden Sie sich mit Ihren Anmeldeinformationen an.
+1. Wechseln Sie im Azure-Portal zum Blatt [Bedingter Zugriff](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies), und melden Sie sich mit Ihren Anmeldeinformationen an.
 
 2. Wählen Sie **Neue Richtlinie** aus.
 
 3. Geben Sie einen Namen für die Richtlinie an.
 
-4. Wählen Sie **Benutzer und Gruppen** unter dem Abschnitt **Zuweisungen** für die neue Richtlinie für den bedingten Zugriff aus.
+4. Wählen Sie im Abschnitt **Zuweisungen** die Option **Benutzer und Gruppen** aus, um die neue Richtlinie für bedingten Zugriff festzulegen.
 
     ![Vergleich der Benutzeroberflächen der Benutzergruppen zwischen dem Intune- und dem Azure-Portal](./media/reassign-ca-12.png)
 
@@ -178,34 +178,34 @@ Wenn Sie Exchange Active Sync-Einstellungen als Teil einer Exchange Online-Richt
 
     ![Vergleich der Benutzeroberfläche zum Gewähren des Zugriffs zwischen dem Intune- und dem Azure-Portal](./media/reassign-ca-16.png)
 
-12. Aktivieren Sie die Umschaltfläche **Richtlinie aktivieren** auf dem Blatt **Neu** der Richtlinie für den bedingten Zugriff, klicken Sie dann auf **Erstellen**.
+12. Aktivieren Sie auf dem Blatt **Neu** der Richtlinie für bedingten Zugriff die Umschaltfläche **Richtlinie aktivieren**, und klicken Sie dann auf **Erstellen**.
 
-    ![Vergleich der Benutzeroberfläche zum Aktivieren der Richtlinie für bedingten Zugriff zwischen dem Intune- und dem Azure-Portal](./media/reassign-ca-17.png)
+    ![Vergleich der Benutzeroberfläche zum Aktivieren der Richtlinie für bedingten Zugriff zwischen Intune und Azure](./media/reassign-ca-17.png)
 
 > [!NOTE]
 > Wenn Sie **Geräteplattformen** konfigurieren, schlägt das Speichern der Richtlinie mit der Fehlermeldung „Policy configuration is not supported“ (Die Richtlinienkonfiguration wird nicht unterstützt) fehl. Exchange ActiveSync kann die vom verbindenden Gerät verwendete Plattform nicht identifizieren. Aus diesem Grund wird das Konfigurieren von spezifischen Geräteplattformen bei der Erstellung einer Richtlinie für Exchange ActiveSync-Geräte nicht unterstützt.
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Deaktivieren von Richtlinien für bedingten Zugriff im klassischen Intune-Portal
 
-Sobald Sie Ihre Richtlinien für den bedingten Zugriff erneut im Azure-Portal zugewiesen haben, ist es wichtig, dass Sie die Richtlinien für bedingten Zugriff, die Sie zuvor im klassischen Intune-Portal erstellt haben, allmählich deaktivieren. Darüber hinaus müssen Sie möglicherweise die gleiche Sicherheitsgruppe verwenden, um die im Azure-Portal erstellten Richtlinien für bedingten Zugriff anzuwenden.
+Sobald Sie Ihre Richtlinien für bedingten Zugriff im Azure-Portal neu zugewiesen haben, ist es wichtig, dass Sie die Richtlinien für bedingten Zugriff, die Sie zuvor im klassischen Intune-Portal erstellt haben, nach und nach deaktivieren. Darüber hinaus müssen Sie möglicherweise die gleiche Sicherheitsgruppe verwenden, um die im Azure-Portal erstellten Richtlinien für bedingten Zugriff anzuwenden.
 
 > [!NOTE]
-> Sehen Sie sich den Abschnitt mit den [Vorbereitungen](#before-you-begin) zu Beginn dieses Themas an, bevor Sie Ihre Richtlinien für den bedingten Zugriff im klassischen Intune-Portal deaktivieren.
+> Sehen Sie sich den Abschnitt mit den [Vorbereitungen](#before-you-begin) zu Beginn dieses Themas an, bevor Sie Ihre Richtlinien für bedingten Zugriff im klassischen Intune-Portal deaktivieren.
 
-### <a name="to-disable-the-conditional-access-policies"></a>So deaktivieren Sie die Richtlinien für den bedingten Zugriff
+### <a name="to-disable-the-conditional-access-policies"></a>So deaktivieren Sie die Richtlinien für bedingten Zugriff
 
 1.  Wechseln Sie zum [klassischen Intune-Portal](https://manage.microsoft.com), und melden Sie sich mit Ihren Anmeldeinformationen an.
 
 2.  Wählen Sie **Richtlinie** im linken Menü aus.
 
-3.  Wählen Sie **Bedingter Zugriff** aus und anschließend den Microsoft-Clouddienst (Exchange Online, SharePoint Online usw.), für den Sie eine Richtlinie für bedingten Zugriff erstellt haben.
+3.  Wählen Sie **Bedingter Zugriff** und anschließend den Microsoft-Clouddienst (z.B. Exchange Online oder SharePoint Online) aus, für den Sie eine Richtlinie für bedingten Zugriff erstellt haben.
 
-4.  Deaktivieren Sie die Option **Bedingte Zugriffsrichtlinie für Exchange Online aktivieren**, und klicken Sie dann auf **Speichern**.
+4.  Deaktivieren Sie die Option **Richtlinie für bedingten Zugriff aktivieren**, und klicken Sie dann auf **Speichern**.
 
-    ![Darstellung des Deaktivierens von Richtlinien für bedingten Zugriff im klassischen Intune-Portal](./media/reassign-ca-18.png)
+    ![Abbildung: Deaktivieren von Richtlinien für bedingten Zugriff im klassischen Intune-Portal](./media/reassign-ca-18.png)
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Gängige Möglichkeiten der Verwendung des bedingten Zugriffs in Intune](conditional-access-intune-common-ways-use.md)
+- [Gängige Möglichkeiten für die Verwendung des bedingten Zugriffs mit Intune](conditional-access-intune-common-ways-use.md)
 - [App-basierter bedingter Zugriff mit Intune](app-based-conditional-access-intune.md)
 - [Bedingter Zugriff in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal-get-started)
