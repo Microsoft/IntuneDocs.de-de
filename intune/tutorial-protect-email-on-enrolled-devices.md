@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f3d51cfbacfa8ef380531f91e058717cf51d089
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: a7ab0ecd2802e68dbac32b757e472a74e697da13
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044148"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530749"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf verwalteten Geräten
 In diesem Artikel erfahren Sie, wie Sie mithilfe von Gerätekonformitätsrichtlinien mit bedingtem Zugriff sicherstellen können, dass iOS-Geräte nur dann auf Exchange Online-E-Mails zugreifen können, wenn sie von Intune verwaltet werden und eine genehmigte E-Mail-App verwenden. 
@@ -47,19 +47,19 @@ Registrieren Sie sich bei [Intune](https://aka.ms/intuneportal) als globaler Adm
 ## <a name="create-the-ios-device-compliance-policy"></a>Erstellen der iOS-Gerätekonformitätsrichtlinie
 Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen festzulegen, die ein Gerät erfüllen muss, um als konform angesehen zu werden. Für dieses Tutorial erstellen wir eine Gerätekonformitätsrichtlinie für iOS-Geräte. Konformitätsrichtlinien sind plattformspezifisch, weshalb Sie eine separate Konformitätsrichtlinie für jede Geräteplattform benötigen, die Sie auswerten möchten.
 
-1.  Wählen Sie in Intune **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** aus.
-2.  Geben Sie unter **Name** Folgendes ein: **Test für iOS-Konformitätsrichtlinie**. 
-3.  Geben Sie unter **Beschreibung** Folgendes ein: **Test für iOS-Konformitätsrichtlinie**.
-4.  Wählen Sie unter **Plattform** die Option **iOS** aus. 
-5.  Klicken Sie auf **Einstellungen** > **E-Mail**. 
+1. Wählen Sie in Intune **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** aus.
+2. Geben Sie unter **Name** Folgendes ein: **Test für iOS-Konformitätsrichtlinie**. 
+3. Geben Sie unter **Beschreibung** Folgendes ein: **Test für iOS-Konformitätsrichtlinie**.
+4. Wählen Sie unter **Plattform** die Option **iOS** aus. 
+5. Klicken Sie auf **Einstellungen** > **E-Mail**. 
      
     1.  Klicken Sie neben **Verlangen, dass Mobilgeräte über ein verwaltetes E-Mail-Profil verfügen** auf **Erfordern**.
     2. Wählen Sie **OK** aus.
 
     ![Festlegen der E-Mail-Konformitätsrichtlinie, um ein verwaltetes E-Mail-Profil zu erfordern](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
     
-6.  Klicken Sie auf **Geräteintegrität**. Klicken Sie neben **Geräte mit Jailbreak** auf **Blockieren** und dann auf **OK**.
-7.  Klicken Sie auf **Systemsicherheit**, und geben Sie die **Kennwort**-Einstellungen an. Legen Sie für dieses Tutorial die folgenden empfohlenen Einstellungen fest:
+6. Klicken Sie auf **Geräteintegrität**. Klicken Sie neben **Geräte mit Jailbreak** auf **Blockieren** und dann auf **OK**.
+7. Klicken Sie auf **Systemsicherheit**, und geben Sie die **Kennwort**-Einstellungen an. Legen Sie für dieses Tutorial die folgenden empfohlenen Einstellungen fest:
      
     - Wählen Sie für **Ein Kennwort zum Entsperren von Mobilgeräten anfordern** **Erfordern** aus.
     - Wählen Sie für **Einfache Kennwörter** **Blockieren** aus.
@@ -71,16 +71,16 @@ Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen f
  
     ![Festlegen der Kennworteinstellungen für die E-Mail-Konformitätsrichtlinie](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-system-security.png)
 
-8.  Klicken Sie auf **OK** und erneut auf **OK**.
-9.  Wählen Sie **Erstellen** aus.
+8. Klicken Sie auf **OK** und erneut auf **OK**.
+9. Wählen Sie **Erstellen** aus.
 
 ## <a name="create-the-conditional-access-policy"></a>Erstellen der Richtlinie für bedingten Zugriff
 Jetzt erstellen wir eine Richtlinie für bedingten Zugriff, die erzwingt, dass alle Geräteplattformen bei Intune registriert werden und unsere Intune-Konformitätsrichtlinie erfüllen, bevor die Geräte auf Exchange Online zugreifen dürfen. Zudem wird auch die Outlook-App für den E-Mail-Zugriff verlangt. Richtlinien für bedingten Zugriff können im Azure AD-Portal oder im Intune-Portal konfiguriert werden. Da wir uns bereits im Intune-Portal befinden, erstellen wir die Richtlinie über dieses Portal.
-1.  Klicken Sie in Intune auf **Bedingter Zugriff** > **Richtlinien** > **Neue Richtlinie**.
+1. Klicken Sie in Intune auf **Bedingter Zugriff** > **Richtlinien** > **Neue Richtlinie**.
 1.  Geben Sie unter **Name** Folgendes ein: **Testrichtlinie für Office 365-E-Mail**. 
-3.  Klicken Sie unter **Zuweisungen** auf **Benutzer und Gruppen**. Klicken Sie auf der Registerkarte **Einschließen** auf **Alle Benutzer** und dann auf **Fertig**.
+3. Klicken Sie unter **Zuweisungen** auf **Benutzer und Gruppen**. Klicken Sie auf der Registerkarte **Einschließen** auf **Alle Benutzer** und dann auf **Fertig**.
 
-4.  Klicken Sie unter **Zuweisungen** auf **Cloud-Apps**. Da wir den Office 365 Exchange Online-E-Mail-Dienst schützen möchten, wählen wir diese in den folgenden Schritten aus:
+4. Klicken Sie unter **Zuweisungen** auf **Cloud-Apps**. Da wir den Office 365 Exchange Online-E-Mail-Dienst schützen möchten, wählen wir diese in den folgenden Schritten aus:
      
     1. Klicken Sie auf der Registerkarte **Einschließen** auf **Apps auswählen**.
     2. Klicken Sie auf **Auswählen**. 
@@ -89,7 +89,7 @@ Jetzt erstellen wir eine Richtlinie für bedingten Zugriff, die erzwingt, dass a
   
     ![Auswählen der Office 365 Exchange Online-App](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-apps.png)
 
-5.  Klicken Sie unter **Zuweisungen** auf **Bedingungen** > **Geräteplattformen**.
+5. Klicken Sie unter **Zuweisungen** auf **Bedingungen** > **Geräteplattformen**.
      
     1. Klicken Sie unter **Konfigurieren** auf **Ja**.
     2. Wählen Sie auf der Registerkarte **Einschließen** die Option **Alle Benutzer** und dann **Fertig** aus. 
@@ -97,7 +97,7 @@ Jetzt erstellen wir eine Richtlinie für bedingten Zugriff, die erzwingt, dass a
    
     ![Auswählen der Office 365 Exchange Online-App](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)
 
-6.  Klicken Sie unter **Zuweisungen** auf **Bedingungen** > **Client-Apps**.
+6. Klicken Sie unter **Zuweisungen** auf **Bedingungen** > **Client-Apps**.
      
     1. Klicken Sie unter **Konfigurieren** auf **Ja**.
     2. Klicken Sie für dieses Tutorial auf **Mobile Apps und Desktopclients** und auf **Clients mit moderner Authentifizierung** (bezieht sich auf Apps wie Outlook für iOS und Outlook für Android). Deaktivieren Sie alle anderen Kontrollkästchen.
@@ -105,7 +105,7 @@ Jetzt erstellen wir eine Richtlinie für bedingten Zugriff, die erzwingt, dass a
     
     ![Auswählen der Office 365 Exchange Online-App](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-client-apps.png)
 
-7.  Klicken Sie unter **Zugriffssteuerungen** auf **Gewähren**. 
+7. Klicken Sie unter **Zugriffssteuerungen** auf **Gewähren**. 
      
     1. Klicken Sie im Bereich **Gewähren** auf **Zugriff gewähren**.
     2. Klicken Sie auf **Markieren des Geräts als konform erforderlich**. 
@@ -115,11 +115,11 @@ Jetzt erstellen wir eine Richtlinie für bedingten Zugriff, die erzwingt, dass a
      
     ![Auswählen der Office 365 Exchange Online-App](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-grant-access.png)
 
-8.  Klicken Sie unter **Richtlinie aktivieren** auf **Ein**.
+8. Klicken Sie unter **Richtlinie aktivieren** auf **Ein**.
      
     ![Auswählen der Office 365 Exchange Online-App](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-enable-policy.png)
 
-9.  Wählen Sie **Erstellen** aus.
+9. Wählen Sie **Erstellen** aus.
 
 ## <a name="try-it-out"></a>Probieren Sie es aus
 Mit den von Ihnen erstellten Richtlinien müssen iOS-Geräte, die sich beim Office 365-E-Mail-Dienst anmelden, bei Intune registrieren und die mobile Outlook-App für iOS verwenden. Um dieses Szenario auf iOS-Geräten zu testen, melden Sie sich bei Exchange Online mit den Anmeldeinformationen für einen Benutzer auf Ihrem Testmandanten an. Sie werden aufgefordert, das Gerät zu registrieren und die mobile Outlook-App zu installieren.
@@ -137,5 +137,5 @@ Wenn die Testrichtlinien nicht mehr benötigt werden, können Sie diese entferne
 4. Klicken Sie auf **Bedingter Zugriff** > **Richtlinien**.
 5. Rufen Sie in der Liste **Richtlinienname** das Kontextmenü ( **...** ) für Ihre Testrichtlinie auf, und klicken Sie dann auf **Löschen**. Klicken Sie zum Bestätigen auf **Ja**.
 
- ## <a name="next-steps"></a>Nächste Schritte 
+## <a name="next-steps"></a>Nächste Schritte 
 In diesem Tutorial haben Sie Richtlinien erstellt, die für den Zugriff auf den Exchange Online-E-Mail-Dienst von iOS-Geräten verlangen, sich bei Intune zu registrieren und die Outlook-App zu verwenden. Weitere Informationen zur Verwendung von Intune mit bedingtem Zugriff zum Schutz anderer Apps und Dienste (z.B. Exchange ActiveSync-Clients für Office 365 Exchange Online) finden Sie unter [Was ist bedingter Zugriff?](conditional-access.md).

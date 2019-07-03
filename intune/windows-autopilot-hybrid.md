@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb9d1f52ccb147dc9a412f3cb7b601e3b18f214a
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: 0bf75aca7035eb2873f84f76d3c9ee0e00df7fb3
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389317"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494529"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>Bereitstellen von in Azure AD Hybrid eingebundenen Geräten mit Intune und Windows Autopilot
 Sie können in Azure AD Hybrid eingebundene Geräte mithilfe von Intune und Windows Autopilot einrichten. Führen Sie dazu die Schritte in diesen Artikel durch.
@@ -163,7 +163,7 @@ Wenn Ihre Geräte noch nicht registriert sind, können Sie sie selbst registrier
 
 ### <a name="register-devices-from-an-oem"></a>Registrieren von Geräten eines OEMs
 
-Beim Kauf neuer Geräte können einige OEMs die Geräte für Sie registrieren. Weitere Informationen finden Sie auf der Seite [Windows Autopilot](http://aka.ms/WindowsAutopilot).
+Beim Kauf neuer Geräte können einige OEMs die Geräte für Sie registrieren. Weitere Informationen finden Sie auf der Seite [Windows Autopilot](https://aka.ms/WindowsAutopilot).
 
 Wenn Autopilot-Geräte *registriert* werden (bevor sie in Intune registriert werden), werden sie an drei Stellen (mit Namen, die auf ihre Seriennummern festgelegt sind) angezeigt:
 - Im Bereich **Autopilot-Geräte** unter Intune im Azure-Portal. Klicken Sie auf **Geräteregistrierung** > **Windows-Registrierung** > **Geräte**.

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee0e6ad7e46abe8da4c1b03e836eb9ba2f5991d0
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044168"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528238"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Rollenbasierte Zugriffssteuerung für Microsoft Intune
 
@@ -38,9 +38,9 @@ Eine Rolle definiert die Berechtigungen, die den ihr zugewiesenen Benutzern gew�
 Sie können sowohl integrierte als auch benutzerdefinierte Rollen verwenden. Integrierte Rollen decken einige häufige Szenarios in Intune ab. Sie können aber auch Ihre [eigenen benutzerdefinierten Rollen](create-custom-role.md) mit den gewünschten Berechtigungen erstellen. Mehrere Azure Active Directory-Rollen beinhalten den Zugriff auf Intune.
 Wenn Sie eine Rolle abrufen möchten, klicken Sie auf **Intune** > **Rollen** > **Alle Rollen**, und wählen Sie eine Rolle aus. Dann werden die folgenden Seiten angezeigt:
 
--   **Eigenschaften**: der Name, die Beschreibung, der Typ, die Zuweisungen und die Bereichsmarkierungen für die Rolle 
--   **Berechtigungen**: Listet eine Reihe von Optionen auf, die die Berechtigungen der jeweiligen Rolle definieren
--   **Zuweisungen:** Eine Liste mit [Rollenzuweisungen]( assign-role.md), in der definiert wird, welche Benutzer Zugriff auf welche Benutzer/Geräte haben. Eine Rolle kann mehrere Zuweisungen aufweisen, und ein Benutzer kann Teil mehrerer Zuweisungen sein.
+- **Eigenschaften**: der Name, die Beschreibung, der Typ, die Zuweisungen und die Bereichsmarkierungen für die Rolle 
+- **Berechtigungen**: Listet eine Reihe von Optionen auf, die die Berechtigungen der jeweiligen Rolle definieren
+- **Zuweisungen:** Eine Liste mit [Rollenzuweisungen]( assign-role.md), in der definiert wird, welche Benutzer Zugriff auf welche Benutzer/Geräte haben. Eine Rolle kann mehrere Zuweisungen aufweisen, und ein Benutzer kann Teil mehrerer Zuweisungen sein.
 
 ### <a name="built-in-roles"></a>Integrierte Rollen
 Sie können Gruppen ohne weitere Konfiguration integrierte Rollen zuweisen. Sie können den Namen, die Beschreibung, den Typ oder die Berechtigungen einer integrierten Rolle löschen oder bearbeiten. Eine vollständige Liste der Berechtigungen für die einzelnen integrierten Rollen finden Sie in der [Intune RBAC Table (Tabelle zur rollenbasierten Zugriffssteuerung in Intune)](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
@@ -84,10 +84,10 @@ Eine Rollenzuweisung definiert Folgendes:
 Sie können Ihren Benutzern sowohl benutzerdefinierte als auch integrierte Rollen zuweisen. Um einer Intune-Rolle zugewiesen zu werden, muss der Benutzer über eine Intune-Lizenz verfügen.
 Wenn Sie eine Rollenzuweisung abrufen möchten, klicken Sie auf **Intune** > **Rollen** > **Alle Rollen**, und wählen Sie erst eine Rolle und dann eine Zuweisung aus. Dann werden die folgenden Seiten angezeigt:
 
--   **Eigenschaften**: der Name, die Beschreibung, die Rolle, die Mitglieder, die Bereiche und die Markierungen einer Zuweisung
--   **Mitglieder**: Alle einer Gruppe angehörenden Benutzer haben die Berechtigung, die Benutzer/Geräte zu verwalten, die in diesem Bereich (der Gruppe) aufgelistet sind.
--   **Bereich (Gruppen)** : Alle Benutzer/Geräte in dieser Gruppe können von den Benutzern verwaltet werden, die unter „Mitglieder“ aufgeführt sind.
--   **[Bereich (Tags)](scope-tags.md)** : Benutzer, die unter „Mitglieder“ aufgeführt sind, können die Ressourcen sehen, die dieselben Bereichsmarkierungen aufweisen.
+- **Eigenschaften**: der Name, die Beschreibung, die Rolle, die Mitglieder, die Bereiche und die Markierungen einer Zuweisung
+- **Mitglieder**: Alle einer Gruppe angehörenden Benutzer haben die Berechtigung, die Benutzer/Geräte zu verwalten, die in diesem Bereich (der Gruppe) aufgelistet sind.
+- **Bereich (Gruppen)** : Alle Benutzer/Geräte in dieser Gruppe können von den Benutzern verwaltet werden, die unter „Mitglieder“ aufgeführt sind.
+- **[Bereich (Tags)](scope-tags.md)** : Benutzer, die unter „Mitglieder“ aufgeführt sind, können die Ressourcen sehen, die dieselben Bereichsmarkierungen aufweisen.
 
 ### <a name="multiple-role-assignments"></a>Mehrere Rollenzuweisungen
 Wenn einem Benutzer mehrere Rollen zugewiesen sind, gelten die Berechtigungen in diesen Rollenzuweisungen wie folgt für verschiedene Objekte:

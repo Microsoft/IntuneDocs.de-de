@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0829a2b3f9aff5f30a971d176591bf838510a606
-ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
+ms.openlocfilehash: da6c9b544d86c9c4b09c061c0f1500ed8612a047
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67197613"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530706"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Konfigurieren von Slack zur Verwendung von Intune für EMM und die App-Konfiguration
 
@@ -54,44 +54,44 @@ Fügen Sie die iOS App „Slack for EMM“ zu Ihrem Intune-Mandanten hinzu, und 
 
 ### <a name="add-slack-for-emm-to-intune"></a>Hinzufügen von Slack for EMM zu Intune
 Fügen Sie Slack for EMM als verwaltete iOS-App zu Intune hinzu, und weisen Sie Slack-Benutzer zu. Apps sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit Android-Geräten eine separate Intune-App hinzufügen.
-1.  Klicken Sie in Intune auf **Client-Apps** > **Apps** > **Hinzufügen**.
-2.  Wählen Sie unter „App-Typ“ die Option **Store-App – iOS** aus.
-3.  Wählen Sie **App Store durchsuchen** aus. Geben Sie den Suchbegriff „Slack for EMM“ ein, und wählen Sie die App aus.
-4.  Klicken Sie auf **App-Informationen**, und konfigurieren Sie alle für Ihre Organisation erforderlichen Änderungen.
-5.  Wählen Sie **Hinzufügen** aus.
-6.  Geben Sie in der Suchleiste „Slack for EMM“ ein, und wählen Sie die App aus, die Sie gerade hinzugefügt haben.
-7.  Wählen Sie unter „Verwalten“ die Option **Zuweisungen** aus.
-8.  Wählen Sie **Gruppe hinzufügen** aus. Je nachdem, auf welche Benutzer und Geräte sich die Aktivierung von Slack for EMM auswirken soll, können Sie unter **Zuweisungstyp** Folgendes auswählen:
+1. Klicken Sie in Intune auf **Client-Apps** > **Apps** > **Hinzufügen**.
+2. Wählen Sie unter „App-Typ“ die Option **Store-App – iOS** aus.
+3. Wählen Sie **App Store durchsuchen** aus. Geben Sie den Suchbegriff „Slack for EMM“ ein, und wählen Sie die App aus.
+4. Klicken Sie auf **App-Informationen**, und konfigurieren Sie alle für Ihre Organisation erforderlichen Änderungen.
+5. Wählen Sie **Hinzufügen** aus.
+6. Geben Sie in der Suchleiste „Slack for EMM“ ein, und wählen Sie die App aus, die Sie gerade hinzugefügt haben.
+7. Wählen Sie unter „Verwalten“ die Option **Zuweisungen** aus.
+8. Wählen Sie **Gruppe hinzufügen** aus. Je nachdem, auf welche Benutzer und Geräte sich die Aktivierung von Slack for EMM auswirken soll, können Sie unter **Zuweisungstyp** Folgendes auswählen:
     -  **Verfügbar für registrierte Geräte**, wenn Sie „Alle Mitglieder (einschließlich Gäste)“ ausgewählt haben, ODER
     -  **Verfügbar mit oder ohne Registrierung**, wenn Sie „Alle Mitglieder (außer Gästen)“ oder „Optional“ ausgewählt haben.
-9.  Wählen Sie **Eingeschlossene Gruppen** aus, und klicken Sie unter „Diese App für alle Benutzer verfügbar machen“ auf **Ja**.
+9. Wählen Sie **Eingeschlossene Gruppen** aus, und klicken Sie unter „Diese App für alle Benutzer verfügbar machen“ auf **Ja**.
 10. Klicken Sie auf **OK** und dann erneut auf **OK**.
 11. Klicken Sie auf **Speichern**.
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Hinzufügen einer App-Konfigurationsrichtlinie für Slack for EMM
 Fügen Sie eine App-Konfigurationsrichtlinie für Slack for EMM unter iOS hinzu. App-Konfigurationsrichtlinien für verwaltete Geräte sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit Android-Geräten eine separate Richtlinie hinzufügen.
-1.  Klicken Sie in Intune auf **Client-Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen**.
-2.  Geben Sie als Namen „Test der Konfigurationsrichtlinie für Slack-App“ ein.
-3.  Wählen Sie unter „Geräteregistrierungstyp“ die Option **Verwaltete Geräte** aus.
-4.  Wählen Sie unter „Plattform“ die Option **iOS** aus.
-5.  Wählen Sie **Zugeordnete App** aus.
-6.  Geben Sie in der Suchleiste „Slack for EMM“ ein, und wählen Sie die App aus.
-7.  Klicken Sie auf **OK**, und wählen Sie dann **Konfigurationseinstellungen** aus. 
+1. Klicken Sie in Intune auf **Client-Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen**.
+2. Geben Sie als Namen „Test der Konfigurationsrichtlinie für Slack-App“ ein.
+3. Wählen Sie unter „Geräteregistrierungstyp“ die Option **Verwaltete Geräte** aus.
+4. Wählen Sie unter „Plattform“ die Option **iOS** aus.
+5. Wählen Sie **Zugeordnete App** aus.
+6. Geben Sie in der Suchleiste „Slack for EMM“ ein, und wählen Sie die App aus.
+7. Klicken Sie auf **OK**, und wählen Sie dann **Konfigurationseinstellungen** aus. 
     -   Informationen zu Konfigurationsschlüsseln und ihren Werten finden Sie auf der [Webseite der AppConfig-Community für Slack](https://www.appconfig.org/company/slack/) auf der Registerkarte „Technical“.
-8.  Klicken Sie auf **OK** und dann auf **Hinzufügen**.
-9.  Geben Sie in der Suchleiste den Begriff „Test der Konfigurationsrichtlinie für Slack-App“ ein, und wählen Sie die Richtlinie aus, die Sie gerade hinzugefügt haben.
+8. Klicken Sie auf **OK** und dann auf **Hinzufügen**.
+9. Geben Sie in der Suchleiste den Begriff „Test der Konfigurationsrichtlinie für Slack-App“ ein, und wählen Sie die Richtlinie aus, die Sie gerade hinzugefügt haben.
 10. Wählen Sie unter „Verwalten“ die Option **Zuweisungen** aus.
 11. Wählen Sie unter „Zuweisen zu“ die Option **Alle Benutzer und alle Geräte** aus.
 12. Klicken Sie auf **Speichern**.
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>(Optional) Erstellen einer iOS-Gerätekonformitätsrichtlinie
 Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen festzulegen, die ein Gerät erfüllen muss, um als konform angesehen zu werden. Für dieses Tutorial erstellen wir eine Gerätekonformitätsrichtlinie für iOS-Geräte. Konformitätsrichtlinien sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit Android-Geräten eine separate Richtlinie erstellen.
-1.  Wählen Sie in Intune **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** aus.
-2.  Geben Sie als Namen „Test für iOS-Konformitätsrichtlinie“ ein.
-3.  Geben Sie als Beschreibung „Test für iOS-Konformitätsrichtlinie“ ein.
-4.  Wählen Sie unter „Plattform“ die Option **iOS** aus.
-5.  Klicken Sie auf **Geräteintegrität**. Klicken Sie neben „Geräte mit Jailbreak“ auf **Blockieren** und dann auf **OK**.
-6.  Klicken Sie auf **Systemsicherheit**, und geben Sie Kennworteinstellungen an. Legen Sie für dieses Tutorial die folgenden empfohlenen Einstellungen fest:
+1. Wählen Sie in Intune **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** aus.
+2. Geben Sie als Namen „Test für iOS-Konformitätsrichtlinie“ ein.
+3. Geben Sie als Beschreibung „Test für iOS-Konformitätsrichtlinie“ ein.
+4. Wählen Sie unter „Plattform“ die Option **iOS** aus.
+5. Klicken Sie auf **Geräteintegrität**. Klicken Sie neben „Geräte mit Jailbreak“ auf **Blockieren** und dann auf **OK**.
+6. Klicken Sie auf **Systemsicherheit**, und geben Sie Kennworteinstellungen an. Legen Sie für dieses Tutorial die folgenden empfohlenen Einstellungen fest:
     -   Wählen Sie für „Kennwort zum Entsperren mobiler Geräte anfordern“ die Option **Anfordern** aus.
     -   Wählen Sie für „Einfache Kennwörter“ die Option **Blockieren** aus.
     -   Geben Sie für „Minimale Kennwortlänge“ die Zahl 4 ein.
@@ -99,60 +99,60 @@ Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen f
     -   Wählen Sie für „Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts“ die Option **Sofort** aus.
     -   Geben Sie für „Kennwortablauf (Tage)“ die Zahl 41 ein.
     -   Geben Sie für „Anzahl vorheriger Kennwörter, deren Wiederverwendung verhindert wird“ die Zahl 5 ein.
-7.  Klicken Sie auf **OK** und dann erneut auf **OK**.
-8.  Klicken Sie auf **Erstellen**.
+7. Klicken Sie auf **OK** und dann erneut auf **OK**.
+8. Klicken Sie auf **Erstellen**.
 
 ## <a name="set-up-slack-on-android-work-profile-devices"></a>Einrichten von Slack auf Geräten mit Android-Arbeitsprofil
 Fügen Sie die verwaltete Google Play-App „Slack“ zu Ihrem Intune-Mandanten hinzu, und erstellen Sie eine App-Konfigurationsrichtlinie, um den Android-Benutzern Ihrer Organisation den Zugriff auf Slack mit Intune als EMM-Anbieter zu ermöglichen.
 
 ### <a name="add-slack-to-intune"></a>Hinzufügen von Slack zu Intune
 Fügen Sie Slack als verwaltete Google Play-App zu Intune hinzu, und weisen Sie Slack-Benutzer zu. Apps sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit iOS-Geräten eine separate Intune-App hinzufügen.
-1.  Klicken Sie in Intune auf **Client-Apps** > **Apps** > **Hinzufügen**.
-2.  Wählen Sie unter „App-Typ“ die Option **Store-App – verwaltetes Google Play** aus.
-3.  Wählen Sie **Verwaltetes Google Play – genehmigen** aus. Geben Sie den Suchbegriff „Slack for EMM“ ein, und wählen Sie die App aus.
-4.  Wählen Sie **Genehmigen** aus.
-5.  Geben Sie in der Suchleiste „Slack“ ein, und wählen Sie die App aus, die Sie gerade hinzugefügt haben.
-6.  Wählen Sie unter „Verwalten“ die Option **Zuweisungen** aus.
-7.  Wählen Sie **Gruppe hinzufügen** aus. Je nachdem, auf welche Benutzer und Geräte sich die Aktivierung von Slack for EMM auswirken soll, können Sie unter **Zuweisungstyp** Folgendes auswählen:
+1. Klicken Sie in Intune auf **Client-Apps** > **Apps** > **Hinzufügen**.
+2. Wählen Sie unter „App-Typ“ die Option **Store-App – verwaltetes Google Play** aus.
+3. Wählen Sie **Verwaltetes Google Play – genehmigen** aus. Geben Sie den Suchbegriff „Slack for EMM“ ein, und wählen Sie die App aus.
+4. Wählen Sie **Genehmigen** aus.
+5. Geben Sie in der Suchleiste „Slack“ ein, und wählen Sie die App aus, die Sie gerade hinzugefügt haben.
+6. Wählen Sie unter „Verwalten“ die Option **Zuweisungen** aus.
+7. Wählen Sie **Gruppe hinzufügen** aus. Je nachdem, auf welche Benutzer und Geräte sich die Aktivierung von Slack for EMM auswirken soll, können Sie unter **Zuweisungstyp** Folgendes auswählen:
     -   **Verfügbar für registrierte Geräte**, wenn Sie „Alle Mitglieder (einschließlich Gäste)“ ausgewählt haben, ODER
     -   **Verfügbar mit oder ohne Registrierung**, wenn Sie „Alle Mitglieder (außer Gästen)“ oder „Optional“ ausgewählt haben.
-8.  Wählen Sie „Eingeschlossene Gruppen“ aus, und klicken Sie unter „Diese App für alle Benutzer verfügbar machen“ auf **Ja**.
-9.  Klicken Sie auf **OK** und dann erneut auf **OK**.
+8. Wählen Sie „Eingeschlossene Gruppen“ aus, und klicken Sie unter „Diese App für alle Benutzer verfügbar machen“ auf **Ja**.
+9. Klicken Sie auf **OK** und dann erneut auf **OK**.
 10. Klicken Sie auf **Speichern**.
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Hinzufügen einer App-Konfigurationsrichtlinie für Slack
 Fügen Sie eine App-Konfigurationsrichtlinie für Slack hinzu. App-Konfigurationsrichtlinien für verwaltete Geräte sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit iOS-Geräten eine separate Richtlinie hinzufügen.
-1.  Klicken Sie in Intune auf **Client-Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen**.
-2.  Geben Sie als Namen „Test der Konfigurationsrichtlinie für Slack-App“ ein.
-3.  Wählen Sie unter „Geräteregistrierungstyp“ die Option **Verwaltete Geräte** aus.
-4.  Wählen Sie unter „Plattform die Option **Android** aus.
-5.  Wählen Sie **Zugeordnete App** aus.
-6.  Geben Sie in der Suchleiste „Slack“ ein, und wählen Sie die App aus.
-7.  Klicken Sie auf **OK**, und wählen Sie dann **Konfigurationseinstellungen** aus.
+1. Klicken Sie in Intune auf **Client-Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen**.
+2. Geben Sie als Namen „Test der Konfigurationsrichtlinie für Slack-App“ ein.
+3. Wählen Sie unter „Geräteregistrierungstyp“ die Option **Verwaltete Geräte** aus.
+4. Wählen Sie unter „Plattform die Option **Android** aus.
+5. Wählen Sie **Zugeordnete App** aus.
+6. Geben Sie in der Suchleiste „Slack“ ein, und wählen Sie die App aus.
+7. Klicken Sie auf **OK**, und wählen Sie dann **Konfigurationseinstellungen** aus.
     -   Informationen zu Konfigurationsschlüsseln und ihren Werten finden Sie auf der [Webseite der AppConfig-Community für Slack](https://www.appconfig.org/company/slack/) auf der Registerkarte „Technical“.
-8.  Klicken Sie auf **OK** und dann auf **Hinzufügen**.
-9.  Geben Sie in der Suchleiste den Begriff „Test der Konfigurationsrichtlinie für Slack-App“ ein, und wählen Sie die Richtlinie aus, die Sie gerade hinzugefügt haben.
+8. Klicken Sie auf **OK** und dann auf **Hinzufügen**.
+9. Geben Sie in der Suchleiste den Begriff „Test der Konfigurationsrichtlinie für Slack-App“ ein, und wählen Sie die Richtlinie aus, die Sie gerade hinzugefügt haben.
 10. Wählen Sie unter „Verwalten“ die Option **Zuweisungen** aus.
 11. Wählen Sie unter „Zuweisen zu“ die Option **Alle Benutzer und alle Geräte** aus.
 12. Klicken Sie auf **Speichern**.
 
 ### <a name="optional-create-an-android-device-compliance-policy"></a>(Optional) Erstellen einer Android-Gerätekonformitätsrichtlinie
 Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen festzulegen, die ein Gerät erfüllen muss, um als konform angesehen zu werden. Für dieses Tutorial erstellen wir eine Gerätekonformitätsrichtlinie für Android-Geräte. Konformitätsrichtlinien sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit iOS-Geräten eine separate Richtlinie erstellen.
-1.  Wählen Sie in Intune **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** aus.
-2.  Geben Sie als Namen „Test für Android-Konformitätsrichtlinie“ ein.
-3.  Geben Sie als Beschreibung „Test für Android-Konformitätsrichtlinie“ ein.
-4.  Wählen Sie unter „Plattform“ die Option **Android Enterprise** aus.
-5.  Wählen Sie unter „Profiltyp“ die Option **Arbeitsprofil** aus.
-6.  Klicken Sie auf **Geräteintegrität**. Klicken Sie neben „Geräte mit entfernten Nutzungsbeschränkungen“ auf **Blockieren** und dann auf **OK**.
-7.  Klicken Sie auf **Systemsicherheit**, und geben Sie **Kennworteinstellungen** an. Legen Sie für dieses Tutorial die folgenden empfohlenen Einstellungen fest:
+1. Wählen Sie in Intune **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** aus.
+2. Geben Sie als Namen „Test für Android-Konformitätsrichtlinie“ ein.
+3. Geben Sie als Beschreibung „Test für Android-Konformitätsrichtlinie“ ein.
+4. Wählen Sie unter „Plattform“ die Option **Android Enterprise** aus.
+5. Wählen Sie unter „Profiltyp“ die Option **Arbeitsprofil** aus.
+6. Klicken Sie auf **Geräteintegrität**. Klicken Sie neben „Geräte mit entfernten Nutzungsbeschränkungen“ auf **Blockieren** und dann auf **OK**.
+7. Klicken Sie auf **Systemsicherheit**, und geben Sie **Kennworteinstellungen** an. Legen Sie für dieses Tutorial die folgenden empfohlenen Einstellungen fest:
     -   Wählen Sie für „Kennwort zum Entsperren mobiler Geräte anfordern“ die Option **Anfordern** aus.
     -   Wählen Sie für „Erforderlicher Kennworttyp“ die Option **Mindestens alphanumerisch** aus.
     -   Geben Sie für „Minimale Kennwortlänge“ die Zahl 4 ein.
     -   Wählen Sie für „Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts“ die Option **15 Minuten** aus.
     -   Geben Sie für „Kennwortablauf (Tage)“ die Zahl 41 ein.
     -   Geben Sie für „Anzahl vorheriger Kennwörter, deren Wiederverwendung verhindert wird“ die Zahl 5 ein.
-8.  Klicken Sie auf **OK** und dann erneut auf **OK**.
-9.  Klicken Sie auf **Erstellen**.
+8. Klicken Sie auf **OK** und dann erneut auf **OK**.
+9. Klicken Sie auf **Erstellen**.
 
 ## <a name="launch-slack"></a>Starten von Slack
 

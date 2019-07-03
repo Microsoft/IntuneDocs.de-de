@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624cc72ad9539659e1ce2c8b70f6a6698d5e7ba2
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046271"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528687"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf nicht verwalteten Geräten
 
@@ -74,7 +74,7 @@ In diesem Tutorial richten wir eine Intune-App-Schutzrichtlinie für die Outlook
 
     Wählen Sie **OK** aus, um zum Bereich „Einstellungen“ zurückzukehren.  
 
-7.  Wählen Sie im Bereich „Einstellungen“ **OK** und dann im Bereich „Richtlinie erstellen“ die Option **Erstellen** aus.
+7. Wählen Sie im Bereich „Einstellungen“ **OK** und dann im Bereich „Richtlinie erstellen“ die Option **Erstellen** aus.
 
 Die App-Schutzrichtlinie für Outlook wird erstellt. Als Nächstes richten Sie den bedingten Zugriff ein, um zu erzwingen, dass Geräte die Outlook-App verwenden.
 
@@ -188,5 +188,5 @@ Wenn die Testrichtlinien nicht mehr benötigt werden, können Sie diese entferne
 4. Klicken Sie auf **Bedingter Zugriff** > **Richtlinien**.  
 5. Öffnen Sie in der Liste **Richtlinienname** das Kontextmenü ( **...** ) für jede Ihrer Testrichtlinien, und klicken Sie dann auf **Löschen**. Klicken Sie zum Bestätigen auf **Ja**.  
 
- ## <a name="next-steps"></a>Nächste Schritte  
+## <a name="next-steps"></a>Nächste Schritte  
 In diesem Tutorial haben Sie App-Schutzrichtlinien erstellt, um die Aktionen einzuschränken, die ein Benutzer in der Outlook-App ausführen kann. Sie haben zudem Richtlinien für bedingten Zugriff erstellt, um die Outlook-App sowie die mehrstufige Authentifizierung für Clients mit moderner Authentifizierung zu erzwingen. Weitere Informationen zur Verwendung von Intune mit bedingtem Zugriff zum Schutz von anderen Apps und Diensten finden Sie unter [Was ist bedingter Zugriff?](conditional-access.md).
