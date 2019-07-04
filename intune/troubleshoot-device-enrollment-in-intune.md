@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6175fca13f1883338b7f5858538728132183b8db
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 063a288c99f3f773b63bd6fe0040e200a754c888
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040602"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67046298"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Behandlung von Problemen bei der Geräteregistrierung in Microsoft Intune
 
@@ -143,7 +143,7 @@ Entfernen Sie alte Geräteeinträge, um zu verhindern, dass das Limit erreicht w
 - verfügen über mehrere Domänen der obersten Ebene für UPN-Suffixe des Benutzers in ihrer Organisation (z. B. @contoso.com oder @fabrikam.com).
 
 
-Ein [Rollup für AD FS 2.0](http://support.microsoft.com/kb/2607496) funktioniert in Verbindung mit der Option <strong>SupportMultipleDomain</strong>, um den AD FS-Server zur Unterstützung dieses Szenarios zu aktivieren, ohne dass zusätzliche AD FS 2.0-Server erforderlich sind. Weitere Informationen finden Sie in diesem [Blog](https://blogs.technet.microsoft.uucom/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
+Ein [Rollup für AD FS 2.0](http://support.microsoft.com/kb/2607496) funktioniert in Verbindung mit der Option <strong>SupportMultipleDomain</strong>, um den AD FS-Server zur Unterstützung dieses Szenarios zu aktivieren, ohne dass zusätzliche AD FS 2.0-Server erforderlich sind. Weitere Informationen finden Sie in diesem [Blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/).
 
 
 ## <a name="android-issues"></a>Android-Probleme
@@ -163,7 +163,7 @@ In der folgenden Tabelle sind Fehler aufgeführt, die bei der Registrierung von 
 
 - Sie können keine Richtlinien, Apps und Remotebefehle vom Intune-Dienst empfangen.
 - Sie werden in der Administratorkonsole mit dem Status **Fehlerhaft** angezeigt.
-- Benutzer, die über Richtlinien für den bedingten Zugriff geschützt werden, verlieren möglicherweise ihren Zugriff auf Unternehmensressourcen.
+- Benutzer, die durch Richtlinien für bedingten Zugriff geschützt werden, verlieren möglicherweise ihren Zugriff auf Unternehmensressourcen.
 
 Samsung Smart Manager-Software, die auf bestimmten Samsung-Geräten vorinstalliert ist, kann das Intune-Unternehmensportal und die zugehörigen Komponenten deaktivieren. Wenn sich das Unternehmensportal in einem deaktivierten Zustand befindet, kann es nicht im Hintergrund ausgeführt werden und nicht mit dem Intune-Dienst kommunizieren.
 
@@ -280,7 +280,7 @@ In der folgenden Tabelle sind Fehler aufgeführt, die bei der Registrierung von 
 
 - Sie können keine Richtlinien, Apps und Remotebefehle vom Intune-Dienst empfangen.
 - Sie werden in der Administratorkonsole mit dem Status **Fehlerhaft** angezeigt.
-- Benutzer, die über Richtlinien für den bedingten Zugriff geschützt werden, verlieren möglicherweise ihren Zugriff auf Unternehmensressourcen.
+- Benutzer, die durch Richtlinien für bedingten Zugriff geschützt werden, verlieren möglicherweise ihren Zugriff auf Unternehmensressourcen.
 
 **Lösung:** Teilen Sie die folgenden Lösungen mit Ihren Endbenutzern, damit Sie wieder Zugriff auf Unternehmensressourcen erhalten.
 

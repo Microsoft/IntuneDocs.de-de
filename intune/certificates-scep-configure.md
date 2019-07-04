@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 06/24/2019
 ms.topic: article
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e170fe0c1b461bad140b89ac01a2ad817e2082e5
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: 2e8e7e6c244e14e880dddb7ae76ab0c08ef5088a
+ms.sourcegitcommit: edf0f4e791138dcf589dec8b633edc6eda55ef8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744340"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67344084"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune
 
@@ -68,7 +68,7 @@ Es wird dringend empfohlen, den NDES-Server über einen Reverseproxy zu veröffe
 |**Zertifikatvorlage**|Konfigurieren Sie diese Vorlage in der ausstellenden Zertifizierungsstelle.|
 |**Clientauthentifizierungszertifikat**|Dieses Zertifikat, das von der ausstellenden oder öffentlichen Zertifizierungsstelle angefordert wurde, installieren Sie auf dem NDES-Server.|
 |**Serverauthentifizierungszertifikat**|Dieses SSL-Zertifikat, das von der ausstellenden oder öffentlichen Zertifizierungsstelle angefordert wurde, installieren und binden Sie in IIS auf dem NDES-Server. Wenn für das Zertifikat die Schlüsselverwendung für die Client- und Serverauthentifizierung festgelegt ist (**Erweiterte Schlüsselverwendung**), können Sie dasselbe Zertifikat verwenden.|
-|**Zertifikat der vertrauenswürdigen Stammzertifizierungsstelle**|Exportieren Sie dieses Zertifikat als **CER**-Datei von der Stammzertifizierungsstelle oder von einem Gerät, das die Stammzertifizierungsstelle als vertrauenswürdig erachtet. Weisen Sie es dann mit dem Zertifikatprofil einer vertrauenswürdigen Zertifizierungsstelle den Benutzern und/oder Geräten zu.<br /><b>HINWEIS:<b /> Wenn Sie ein SCEP-Zertifikatprofil zuweisen, vergewissern Sie sich, dass Sie das Profil für das vertrauenswürdige Stammzertifikat, auf das in Ihrem SCEP-Zertifikatprofil verwiesen wird, demselben Benutzer oder derselben Gerätegruppe zuweisen.<br /><br />Sie verwenden für jede Betriebssystemplattform ein einzelnes Zertifikat der vertrauenswürdigen Stammzertifizierungsstelle und ordnen es dem jeweiligen vertrauenswürdigen Stammzertifikatprofil zu, das Sie erstellen.<br /><br />Sie können bei Bedarf zusätzliche vertrauenswürdige Stammzertifizierungsstellenzertifikate verwenden. Sie können dies zum Beispiel vornehmen, um einer Zertifizierungsstelle eine Vertrauensstellung zu gewähren, die die Serverauthentifizierungszertifikate für Ihre WLAN-Zugriffspunkte signiert.|
+|**Zertifikat der vertrauenswürdigen Stammzertifizierungsstelle**|Exportieren Sie dieses Zertifikat als **CER**-Datei von der Stammzertifizierungsstelle oder von einem Gerät, das die Stammzertifizierungsstelle als vertrauenswürdig erachtet. Weisen Sie es dann mit dem Zertifikatprofil einer vertrauenswürdigen Zertifizierungsstelle den Benutzern und/oder Geräten zu.<br /> **HINWEIS<br />: Vergewissern Sie sich beim Zuweisen eines SCEP-Zertifikatprofils, dass Sie das *Profil für das vertrauenswürdige Stammzertifikat*, auf das in Ihrem SCEP-Zertifikatprofil verwiesen wird, demselben Benutzer oder derselben Gerätegruppe zuweisen.  Informationen zum Erstellen dieses Profils finden Sie unter [Erstellen eines vertrauenswürdigen Zertifikatprofils](certficates-pfx-configure.md#create-a-trusted-certificate-profile), dokumentiert im Artikel zu PKCS-Zertifikatprofilen.** <br/><br />Sie verwenden für jede Betriebssystemplattform ein einzelnes Zertifikat der vertrauenswürdigen Stammzertifizierungsstelle und ordnen es dem jeweiligen vertrauenswürdigen Stammzertifikatprofil zu, das Sie erstellen. <br /><br />Sie können bei Bedarf zusätzliche vertrauenswürdige Stammzertifizierungsstellenzertifikate verwenden. Sie können dies zum Beispiel vornehmen, um einer Zertifizierungsstelle eine Vertrauensstellung zu gewähren, die die Serverauthentifizierungszertifikate für Ihre WLAN-Zugriffspunkte signiert.|
 
 ### <a name="accounts"></a>Konten
 
@@ -487,7 +487,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
      - **Digitale Signatur**: Der Schlüsselaustausch wird nur gestattet, wenn der Schutz des Schlüssels durch eine digitale Signatur unterstützt wird.
    - **Schlüsselgröße (Bits)** : Wählen Sie die Anzahl der Bits aus, die im Schlüssel enthalten sein sollen.
    - **Hashalgorithmus** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Wählen Sie einen der verfügbaren Hashalgorithmustypen, der für dieses Zertifikat verwendet werden soll. Wählen Sie die höchste Sicherheitsebene aus, die die verbundenen Geräten unterstützen.
-   - **Stammzertifikat**: Wählen Sie ein Profil für das Zertifikat der Stammzertifizierungsstelle aus, das Sie zuvor konfiguriert und dem Benutzer und/oder dem Gerät zugewiesen haben. Dieses Zertifizierungsstellenzertifikat muss das Stammzertifikat für die Zertifizierungsstelle sein, die das Zertifikat ausstellt, das Sie in diesem Zertifikatprofil konfigurieren. Vergewissern Sie sich, dass Sie dieses Profil für das vertrauenswürdige Stammzertifikat der Gruppe zuweisen, die auch dem SCEP-Zertifikatprofil zugewiesen ist.
+   - **Stammzertifikat**: Wählen Sie ein [Profil für das vertrauenswürdige Stammzertifikat](certficates-pfx-configure.md#create-a-trusted-certificate-profile) aus, das Sie zuvor konfiguriert und dem Benutzer und/oder dem Gerät zugewiesen haben. Dieses Zertifizierungsstellenzertifikat muss das Stammzertifikat für die Zertifizierungsstelle sein, die das Zertifikat ausstellt, das Sie in diesem Zertifikatprofil konfigurieren. Vergewissern Sie sich, dass Sie dieses Profil für das vertrauenswürdige Stammzertifikat der Gruppe zuweisen, die auch dem SCEP-Zertifikatprofil zugewiesen ist.
    - **Erweiterte Schlüsselverwendung**: Hier können Sie Werte für den beabsichtigten Zweck des Zertifikats **hinzufügen**. In den meisten Fällen erfordert das Zertifikat **Clientauthentifizierung**, damit der Benutzer bzw. das Gerät auf einem Server authentifiziert werden kann. Sie können jedoch nach Bedarf weitere Schlüsselverwendungen hinzufügen.
    - **Registrierungseinstellungen**
      - **Verlängerungsschwellenwert (%)** : Geben Sie den Prozentsatz der Zertifikatgültigkeitsdauer an, die verbleibt, bevor das Gerät eine Verlängerung des Zertifikats anfordert.
@@ -508,6 +508,7 @@ Beachten Sie Folgendes, bevor Sie Gruppen Zertifikatprofile zuweisen:
 
     > [!NOTE]
     > Unter iOS sollten Ihnen mehrere Kopien des Zertifikats im Verwaltungsprofil angezeigt werden, wenn Sie mehrere Ressourcenprofile bereitstellen, die das gleiche Zertifikatprofil verwenden.
+- Wenn Sie die Co-Verwaltung für Intune und Configuration Manager verwenden, bewegen Sie in Configuration Manager den [Schieberegler für Workloads](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) für die *Ressourcenzugriffsrichtlinie* auf **Intune** oder **Pilot Intune**. Diese Einstellung ermöglicht es Windows 10-Clients, den Prozess zur Anforderung des Zertifikats zu starten.  
 
 Informationen zum Zuweisen von Profilen finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md).
 
@@ -552,7 +553,7 @@ Ab Version 6.1806.x.x protokolliert der Intune-Connectordienst Ereignisse in der
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Erfolgreich  | Erfolgreich |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | Die Zertifizierungsstelle ist ungültig oder nicht erreichbar. Stellen Sie sicher, dass die Zertifizierungsstelle verfügbar ist und Ihr Server mit dieser kommunizieren kann. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | Das Symantec-Clientauthentifizierungszertifikat konnte im lokalen Zertifikatspeicher nicht gefunden werden. Weitere Informationen finden Sie im Artikel [Installieren des Symantec-Zertifikats zur Registrierungsautorisierung](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate).  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | Das Symantec-Clientauthentifizierungszertifikat konnte im lokalen Zertifikatspeicher nicht gefunden werden. Weitere Informationen finden Sie im Artikel [Einrichten des Intune-Zertifikatconnectors für die DigiCert-PKI-Plattform](https://docs.microsoft.com/intune/certificates-digicert-configure#troubleshooting).  |
 | 0x00000402 | RevokeCert_AccessDenied  | Für das angegebene Konto sind keine Berechtigungen vorhanden, mit denen ein Zertifikat der Zertifizierungsstelle widerrufen werden kann. Die ausstellende Zertifizierungsstelle können Sie durch das Feld für den Namen der Zertifizierungsstelle in den Ereignismeldungsdetails ermitteln.  |
 | 0x00000403 | CertThumbprint_NotFound  | Für Ihre Eingabe konnte kein zugehöriges Zertifikat gefunden werden. Registrieren Sie den Zertifikatconnector, und wiederholen Sie den Vorgang. |
 | 0x00000404 | Certificate_NotFound  | Für die Eingabe konnte kein zugehöriges Zertifikat gefunden werden. Registrieren Sie den Zertifikatconnector erneut, und wiederholen Sie den Vorgang. |
