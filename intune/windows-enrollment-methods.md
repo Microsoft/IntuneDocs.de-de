@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2019
+ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: eda0d77fc5cdb11fa4bc5b21f48ceb7616ecfb15
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: b8b1c47e4a2eb46bb8f7190ede351ed77a1bfef4
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389257"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494502"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Intune-Registrierungsmethoden für Windows-Geräte
 
@@ -41,7 +41,7 @@ Benutzer können ihre Windows-Geräte mit einer dieser Methoden selbst registrie
 Wenn ein Administrator die automatische Registrierung, die in Azure AD Premium-Abonnements verfügbar ist, konfiguriert hat, muss der Benutzer lediglich einmal seine Anmeldeinformationen eingeben. Andernfalls müssen sie sich extra über eine reine MDM-Registrierung registrieren und ihre Anmeldeinformationen erneut eingeben.  
 - **MDM only enrollment** (Reine MDM-Registrierung): Diese Methode ermöglicht Benutzern, eine bestehende Arbeitsgruppe, Active Directory oder einen mit Azure Active Directory verknüpften Computer in Intune zu registrieren. Benutzer führen die Registrierung über die Einstellungen des bestehenden Windows-Computers durch. Diese Methode wird nicht empfohlen, da so das Gerät nicht in Azure Active Directory registriert wird. Außerdem können Features wie der bedingte Zugriff nicht verwendet werden.
 - [Azure Active Directory-Verknüpfung:](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) Verknüpft das Gerät mit Azure Active Directory und ermöglicht Benutzern, sich bei Windows mit ihren Azure AD-Anmeldeinformationen anzumelden. Wenn die automatische Registrierung aktiviert ist, wird das Gerät automatisch in Intune registriert. Der Vorteil der automatischen Registrierung ist, dass der Prozess für den Benutzer aus nur einem Schritt besteht. Andernfalls müssen sie sich extra über eine reine MDM-Registrierung registrieren und ihre Anmeldeinformationen erneut eingeben. Benutzer verwenden diese Registrierungsmethode entweder während der ersten Windows-Einrichtung oder über die Einstellungen ihres PCs. Das Gerät wird als unternehmenseigenes Gerät in Intune gekennzeichnet.
-- [Autopilot:](enrollment-autopilot.md) Automatisiert die Azure Active Directory-Verknüpfung und registriert neue unternehmenseigene Geräte in Intune. Diese Methode vereinfacht die erste Einrichtung und macht es überflüssig, benutzerdefinierte Betriebssystemimages auf den Geräten anzuwenden. Wenn Administratoren Intune zum Verwalten von Autopilot-Geräten verwenden, können sie z. B. Richtlinien, Profile und Apps verwalten, nachdem diese registriert sind.  Es gibt zwei Arten der Autopilot-Bereitstellung: Einen Selbstbereitstellungsmodus ([Self Deploying Mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying)) für Kiosks, digitale Signaturen oder für ein freigegebenes Gerät und einen benutzergesteuerten Modus ([User Driven Mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)) für herkömmliche Benutzer. 
+- [Autopilot:](enrollment-autopilot.md) Automatisiert die Azure Active Directory-Verknüpfung und registriert neue unternehmenseigene Geräte in Intune. Diese Methode vereinfacht die erste Einrichtung und macht es überflüssig, benutzerdefinierte Betriebssystemimages auf den Geräten anzuwenden. Wenn Administratoren Intune zum Verwalten von Autopilot-Geräten verwenden, können sie z. B. Richtlinien, Profile und Apps verwalten, nachdem diese registriert sind.  Es gibt vier Arten der Autopilot-Bereitstellung: [Self-Deployment-Modus](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) (für Kioske, digitale Beschilderung oder ein freigegebenes Gerät), [User Driven Mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (benutzergesteuerter Modus für herkömmliche Benutzer), [White Glove] (https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) unterstützt Partner oder IT-Mitarbeiter dabei, einen Windows 10-Computer vorab bereitzustellen, damit dieser vollständig konfiguriert und betriebsbereit ist) und [Autopilot für vorhandene Geräte] (mit https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) können Sie die neueste Version von Windows 10 mühelos auf Ihren vorhandenen Geräten bereitstellen).
 
 ## <a name="administrator-based-enrollment-in-intune"></a>Administratorbasierte Registrierung in Intune
 
@@ -51,7 +51,7 @@ Administratoren können die folgenden Registrierungsmethoden einrichten, die kei
 - [Configuration Manager Co-management](https://docs.microsoft.com/sccm/comanage/overview) (Configuration Manager-Co-Verwaltung): Diese Methode ermöglicht Administratoren, ihre vorhandenen verwalteten Configuration Manager-Geräte in Intune zu registrieren, um sowohl von den Vorteilen von Intune als auch von Configuration Manager zu profitieren. 
 - Der [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md) (Device Enrollment Manager, DEM) ist ein spezielles Dienstkonto. DEM-Konten haben Berechtigungen, mit denen autorisierte Benutzer mehrere unternehmenseigene Geräte registrieren und verwalten können. Diese Gerätetypen eignen sich z.B. für POS- oder Hilfsprogramm-Apps, nicht aber für Benutzer, die Zugriff auf E-Mails oder Unternehmensressourcen benötigen. Diese Methode ermöglicht nicht, Features wie den bedingten Zugriff zu verwenden. 
 - [Bulk enroll](windows-bulk-enroll.md) (Massenregistrierung): Diese Methode ermöglicht einem autorisierten Benutzer, sehr viele neue unternehmenseigene Geräte mit Azure Active Directory und Intune zu verknüpfen. Sie erstellen mit der Windows Configuration Designer-App (WCD) ein Bereitstellungspaket. Dann installieren Sie mithilfe von USB-Medien während der ersten Windows-Einrichtung oder mithilfe von Medien von vorhandenen Windows-Computern das Bereitstellungspaket, sodass Geräte automatisch in Intune registriert werden. Diese Methode ermöglicht nicht die Verwendung von bedingtem Zugriff. 
-- Beim [Registrieren von Windows IoT Core-Geräten in Microsoft Intune](https://docs.microsoft.com/en-us/windows/iot-core/manage-your-device/intunedeviceenrollment) erfolgt die Vorbereitung des Geräts auf dem Windows IoT Core-Dashboard. Danach wird der Windows-Konfigurations-Designer verwendet, um ein Bereitstellungspaket zu erstellen. Anschließend wird das Bereitstellungspaket beim ersten Systemstart über eine SD-Karte installiert, um die Geräte automatisch bei Intune zu registrieren.
+- Beim [Registrieren von Windows IoT Core-Geräten in Microsoft Intune](https://docs.microsoft.com/windows/iot-core/manage-your-device/intunedeviceenrollment) erfolgt die Vorbereitung des Geräts auf dem Windows IoT Core-Dashboard. Danach wird der Windows-Konfigurations-Designer verwendet, um ein Bereitstellungspaket zu erstellen. Anschließend wird das Bereitstellungspaket beim ersten Systemstart über eine SD-Karte installiert, um die Geräte automatisch bei Intune zu registrieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

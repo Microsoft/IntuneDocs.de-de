@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28c3da6d2e3390d20aecc3673cac38e8424ef57a
-ms.sourcegitcommit: a63b9eaa59867ab2b0a6aa415c19d9fff4fda874
+ms.openlocfilehash: cbd73d22c2e42f0a379ec2a97179f9e3c4dec224
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67389304"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512105"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrieren von Windows-Geräten in Intune mithilfe von Windows Autopilot  
 Windows Autopilot vereinfacht das Registrieren von Geräten in Intune. Das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems ist ein langwieriger Prozess. Es kann ebenfalls Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und Autopilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von Autopilot-Geräten verwenden, können Sie Richtlinien, Profile und Apps usw. verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -35,7 +35,7 @@ Windows Autopilot vereinfacht das Registrieren von Geräten in Intune. Das Erste
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>Abrufen der CSV-Datei für den Import in Intune
 
-Sehen Sie sich das folgende PowerShell-Cmdlet an, um weitere Informationen zu dessen Verwendung zu erhalten.
+Weitere Informationen finden Sie in den Details zum PowerShell-Cmdlet.
 
 - [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo/1.3/Content/Get-WindowsAutoPilotInfo.ps1)
 
@@ -47,8 +47,9 @@ Sie können Windows Autopilot-Geräte durch Importieren einer CSV-Datei mit ihre
 
     ![Screenshot von Windows Autopilot-Geräten](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Navigieren Sie unter **Windows AutoPilot-Geräte hinzufügen** zu einer CSV-Datei, die allen Geräte aufführt, die Sie hinzufügen möchten. Die CSV-Datei sollte die Seriennummern, optionale Windows-Produkt-IDs, Hardware-Hashes und optionale Gruppentags der Geräte auflisten. Die Liste kann bis zu 500 Zeilen enthalten. Verwenden Sie das unten gezeigte Format für Header und Zeilen: `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`
-    `<serialNumber>,<optionalProductID>,<hardwareHash>,<optionalGroupTag>`
+2. Navigieren Sie unter **Windows AutoPilot-Geräte hinzufügen** zu einer CSV-Datei, die allen Geräte aufführt, die Sie hinzufügen möchten. Die CSV-Datei sollte die Seriennummern, Windows-Produkt-IDs, Hardware-Hashes und optionale Gruppentags, zugewiesene Benutzer und Bestell-IDs der Geräte auflisten. Die Liste kann bis zu 500 Zeilen enthalten. Verwenden Sie das unten gezeigte Format für Header und Zeilen:
+
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User, Order ID` `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>,<optionalOrderID>`
 
     ![Screenshot zum Hinzufügen von Windows Autopilot-Geräten](media/enrollment-autopilot/autopilot-import-device2.png)
 
@@ -69,7 +70,7 @@ Sie können Windows Autopilot-Geräte durch Importieren einer CSV-Datei mit ihre
     Autopilot-Geräte, die noch nicht registriert sind, sind Geräte, deren Name der Seriennummer des Geräts entspricht.
 4. Wenn Sie oben **Dynamisches Geräte** als **Mitgliedschaftstyp** ausgewählt haben,wählen Sie anschließend auf dem Blatt **Gruppe** die Option **Dynamische Gerätemitglieder**, und geben Sie einen der folgenden Codes in das Feld **Erweiterte Regel** ein.
     - Wenn Sie eine Gruppe mit all Ihren Autopilot-Geräten erstellen möchten, geben Sie ein: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - Das Intune-Feld „Gruppentag“ wird dem Attribut „OrderID“ auf Azure AD-Geräten zugeordnet. Wenn Sie eine Gruppe erstellen möchten, die all Ihre Autopilot-Geräte mit einem bestimmten Gruppentag („OrderID“) enthält, müssen Sie eingeben: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
+    - Das Intune-Feld „Gruppentag“ wird dem Attribut „OrderID“ auf Azure AD-Geräten zugeordnet. Wenn Sie eine Gruppe erstellen möchten, die all Ihre Autopilot-Geräte mit einem bestimmten Gruppentag („OrderID“) enthält, müssen Sie eingeben: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Wenn Sie eine Gruppe mit all Ihren Autopilot-Geräten mit einer bestimmten Bestellungs-ID erstellen möchten, geben Sie `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")` ein.
     
     Wählen Sie nach dem Hinzufügen des Codes im Feld **Erweiterte Regel** die Option **Speichern**.
@@ -95,7 +96,7 @@ Autopilot-Bereitstellungsprofile werden verwendet, um die Autopilot-Geräte zu k
     - **Microsoft-Software-Lizenzbedingungen**: (Windows 10, Version 1709 oder höher) Wählen Sie aus, ob die Lizenzbedingungen den Benutzern angezeigt werden sollen.
     - **Datenschutzeinstellungen**: Wählen Sie aus, ob die Datenschutzeinstellungen den Benutzern angezeigt werden.
     >[!IMPORTANT]
-    >Bei Autopilot-Bereitstellungen auf Geräten unter Windows 10, Version 1903 und höher, wird der Standardwert für „Diagnosedaten“ automatisch auf „Voll“ festgelegt. Weitere Informationen finden Sie unter [Windows-Diagnosedaten](https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data). <br>
+    >Bei Autopilot-Bereitstellungen auf Geräten unter Windows 10, Version 1903 und höher, wird der Standardwert für „Diagnosedaten“ automatisch auf „Voll“ festgelegt. Weitere Informationen finden Sie unter [Windows-Diagnosedaten](https://docs.microsoft.com/windows/privacy/windows-diagnostic-data). <br>
     
     - **Optionen zur Kontoänderung ausblenden (Windows 10, Version 1809 oder höher, erforderlich)** : Wählen Sie **Ausblenden** aus, um zu verhindern, dass Optionen zum Ändern des Kontos auf der Anmeldeseite des Unternehmens und den Domänenfehlerseiten angezeigt werden. Für diese Option muss das [Unternehmensbranding in Azure Active Directory konfiguriert](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) sein.
     - **Art des Benutzerkontos**: Wählen Sie den Kontotyp des Benutzers aus (**Administrator** oder **Standardbenutzer**).
@@ -118,7 +119,7 @@ Autopilot-Bereitstellungsprofile werden verwendet, um die Autopilot-Geräte zu k
     ![Screenshot der Seite „Überprüfen“](media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
-> Intune führt regelmäßig eine Überprüfung auf neuen Geräten in den zugewiesenen Gruppen durch und beginnt dann mit der Zuweisung von Profilen zu diesen Geräten. Dieser Vorgang kann einige Minuten dauern. Vor der Bereitstellung eines Geräts stellen Sie sicher, dass der Vorgang abgeschlossen ist.  Sehen Sie unter **Geräteregistrierung** > **Windows-Registrierung ** > **Gerät** nach, wo der Profilstatus von „Nicht zugewiesen“ auf „Wird zugewiesen“ und schließlich auf „Zugewiesen“ geändert werden sollte.
+> Intune führt regelmäßig eine Überprüfung auf neuen Geräten in den zugewiesenen Gruppen durch und beginnt dann mit der Zuweisung von Profilen zu diesen Geräten. Dieser Vorgang kann einige Minuten dauern. Vor der Bereitstellung eines Geräts stellen Sie sicher, dass der Vorgang abgeschlossen ist.  Unter **Geräteregistrierung** > **Windows-Registrierung** > **Geräte** können Sie überprüfen, ob der Profilstatus von „Nicht zugewiesen“ in „Wird zugewiesen“ und dann schließlich in „Zugewiesen“ geändert wird.
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Bearbeiten eines Autopilot-Bereitstellungsprofils
 Nachdem Sie ein Autopilot-Bereitstellungsprofil erstellt haben, können Sie bestimmte Teile des Bereitstellungsprofils bearbeiten.   

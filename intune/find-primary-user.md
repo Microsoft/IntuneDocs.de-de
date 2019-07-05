@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b6a20ccec2ef0cbaba87637b3c44c2cc2be094ab
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: 21f62ad44d992d1f4adbb1945bdba02e526d9138
+ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67325531"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67500652"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Suchen des primären Benutzers eines Intune-Geräts
 
@@ -60,8 +60,8 @@ Intune fügt den primären Benutzer während oder kurz nach der Registrierung au
 | Windows | Beitritt zu Azure AD (sofort einsetzbar) | Registrierender Benutzer | Während der Registrierung | 
 | Windows | Beitritt zu Azure AD (sofort einsetzbar per Autopilot) | Registrierender Benutzer | Während der Registrierung | 
 | Windows | Registrierung nur in MDM | Registrierender Benutzer | Während der Registrierung | 
-| Windows | Hybrid AADJ und GPO für automatische Registrierung | Erster angemeldeter Benutzer | Bei Anmeldung des ersten Benutzers | 
-| Windows | Co-Verwaltung | Erster angemeldeter Benutzer | Bei Anmeldung des ersten Benutzers | 
+| Windows | Hybrid AADJ und GPO für automatische Registrierung | Erster Benutzer, der sich bei Windows anmeldet | Wenn der erste Benutzer sich bei Windows anmeldet| 
+| Windows | Co-Verwaltung | Erster Benutzer, der sich bei Windows anmeldet | Wenn der erste Benutzer sich bei Windows anmeldet | 
 | Windows | Beitritt zu Azure AD (Token für Massenregistrierung) | Keine | Nicht verfügbar | 
 | Windows | Beitritt zu Azure AD (Selbstbereitstellungsmodus mit Autopilot) | Keine | Nicht verfügbar | 
 | Plattformübergreifend | Benutzergesteuerte Registrierung mit Unternehmensportal-App | Registrierender Benutzer | Während der Registrierung |
