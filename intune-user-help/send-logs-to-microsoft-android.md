@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52f6caf8e48cd9781648acf1de0152ec107d5246
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 20bdfcce6574d31c37442a7bad58582aa7ea2fb6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55850901"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546131"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Senden von Protokollen an Unternehmensportalentwickler für Android-Geräte
 
@@ -34,16 +34,16 @@ Die Unternehmensportal-App wird unter Umständen gelegentlich unerwartet geschlo
 
 So senden Sie Protokolle an Microsoft:
 
-1.  Öffnen Sie die Unternehmensportal-App.
+1. Öffnen Sie die Unternehmensportal-App.
 
-2.  Tippen Sie auf **Menü** > **Hilfe** > **E-Mail-Support**.
+2. Tippen Sie auf **Menü** > **Hilfe** > **E-Mail-Support**.
 
     > [!NOTE]
     > Je nachdem, welches Android-Gerät Sie besitzen, kann **Menü** eine Schaltfläche in der Software oder eine Taste auf dem Gerät sein.
 
-3.  Tippen Sie auf **Upload Logs Only** (Nur Protokolle hochladen).
+3. Tippen Sie auf **Upload Logs Only** (Nur Protokolle hochladen).
 
-4.  Wenn der Upload abgeschlossen wurde, erhalten Sie eine Incident-ID. Speichern Sie diese ID in Ihren Unterlagen.
+4. Wenn der Upload abgeschlossen wurde, erhalten Sie eine Incident-ID. Speichern Sie diese ID in Ihren Unterlagen.
 
 Sie können auch direkt an die Adresse <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a> eine E-Mail an das Team für das Unternehmensportal für Android senden. 
 

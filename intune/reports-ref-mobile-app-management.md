@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 059f39a52b1dbc6e5f7a014741c0657a2ba8bc10
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5a8d16e058afbedfd1a343560b3727d33776da45
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045361"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547875"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Verweis für MAM-Entitäten (Verwaltung mobiler Apps)
 
 Die Kategorie **Verwaltung mobiler Apps (MAM)** enthält Entitäten für mobile Apps, z.B.:
 
-  -  Apps
-  -  Instanzen
-  -  Eincheckstatus
-  -  Integritätsstatus
-  -  Richtlinienstatus
-  -  Anmeldungsstatus
-  -  Plattformtypen
+  - Apps
+  - Instanzen
+  - Eincheckstatus
+  - Integritätsstatus
+  - Richtlinienstatus
+  - Anmeldungsstatus
+  - Plattformtypen
 
 ## <a name="mamapplication"></a>MamApplication
 

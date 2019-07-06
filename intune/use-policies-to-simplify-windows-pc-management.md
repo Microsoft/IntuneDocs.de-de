@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97e9042b6c7c1890cd1829f803c05fbab7ae9b44
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b612a245e0a12384f8f9e7ec4a2c970afc2fd628
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040208"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548825"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Verwenden von Richtlinien zum Vereinfachen der Verwaltung von Windows-PCs
 
@@ -35,13 +35,13 @@ Um Windows-Desktops durch Ausführen des Intune-Softwareclients als PCs zu verwa
 ### <a name="manage-the-microsoft-intune-center"></a>Verwalten des Microsoft Intune Center
 Benutzern wird der Intune-Softwareclient als das **Microsoft Intune Center** angezeigt. Das Microsoft Intune Center bietet Benutzern folgende Möglichkeiten:
 
--   Abrufen von Anwendungen aus dem Unternehmensportal
+- Abrufen von Anwendungen aus dem Unternehmensportal
 
--   Suchen nach Updates
+- Suchen nach Updates
 
--   Verwalten von Microsoft Intune Endpoint Protection
+- Verwalten von Microsoft Intune Endpoint Protection
 
--  Anfordern von Remoteunterstützung
+- Anfordern von Remoteunterstützung
 
 Das Microsoft Intune Center ist auf allen verwalteten Computern installiert. Sie können die folgenden Einstellungen in einer Intune Center-Richtlinie konfigurieren, die anschließend Benutzern im Microsoft Intune Center angezeigt werden:
 

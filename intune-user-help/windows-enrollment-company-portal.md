@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9f29e2d737dfd7bef709f239d6c8506c3bb746c
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: df0afecb006ef8837f888b3b9209d5892d90a228
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196877"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546377"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Registrieren von Windows-Geräten im Intune-Unternehmensportal  
 
@@ -61,17 +61,17 @@ Die Schritte zur Registrierung unterscheiden sich je nach Version der Windows 1
 
 4. Bei Version  
 
-    *  __1607 oder höher:__ Registrieren Sie Ihr Gerät über die Route [**Einstellungen** > **Konto** > **Access work or school** (Zugriff auf Geschäft, Schule oder Uni)](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
+    * __1607 oder höher:__ Registrieren Sie Ihr Gerät über die Route [**Einstellungen** > **Konto** > **Access work or school** (Zugriff auf Geschäft, Schule oder Uni)](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
     * __1511 oder früher:__ Registrieren Sie Ihr Gerät über die Route [**Einstellungen** > **Konto** > **Your Accounts** (Ihre Konten)](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
 
-### <a name="windows-10-mobile-devices"></a>Windows 10 Mobile-Geräte       
+### <a name="windows-10-mobile-devices"></a>Windows 10 Mobile-Geräte
 
-1.  Wechseln Sie zu __Alle Apps__, und wählen Sie die App __Einstellungen__ aus.  
-2.  Klicken Sie auf __System__ > __Info__.      
-3.  Unter __Device information__ (Geräteinformationen) wird die __Version__ angezeigt.  
+1. Wechseln Sie zu __Alle Apps__, und wählen Sie die App __Einstellungen__ aus.
+2. Klicken Sie auf __System__ > __Info__.
+3. Unter __Device information__ (Geräteinformationen) wird die __Version__ angezeigt.  
 4. Bei Version  
 
-    *  __1607 oder höher:__ Registrieren Sie Ihr Gerät über die Navigation [**Einstellungen** > **Access work or school** (Zugriff auf Geschäft, Schule oder Uni)](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
+    * __1607 oder höher:__ Registrieren Sie Ihr Gerät über die Navigation [**Einstellungen** > **Access work or school** (Zugriff auf Geschäft, Schule oder Uni)](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device).   
     * __1511 oder früher:__ Registrieren Sie Ihr Gerät mithilfe der [Route **Einstellungen** > **Konten**](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device).  
 
 ## <a name="enroll-non-windows-10-devices"></a>Registrieren von nicht-Windows 10-basierten Geräten  

@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 582b4615941dae8c2fc696ce5dfc87e2bbe4b98b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 0c72fb6e7ace6c603410ff0ffc9a96e4a0ff528d
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846246"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527638"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Installieren von Mobile Threat Defense auf Ihrem iOS-Gerät
 
@@ -38,12 +38,12 @@ Damit Sie auf Ihre Arbeit zugreifen können, verlangt Ihr Unternehmen von Ihnen,
 
 Mobile Threat Defense stellt eine Möglichkeit für Unternehmen dar, um sicherzustellen, dass Ihre Geräte vor Apps geschützt werden, die versuchen könnten, Unternehmensdaten zu stehlen. Das Hinzufügen dieses Schutzes erfordert, dass Informationen zu den Apps auf Ihren Geräten an den Mobile Threat Defense-Dienst gemeldet werden, den Ihr Unternehmen verwendet. Die Daten in Ihren persönlichen Apps sind für Ihr Unternehmen nicht einsehbar. Alle Apps auf Ihrem Gerät werden zu [what your company can see](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) (Was für Ihr Unternehmen sichtbar ist) hinzugefügt, wenn dieses einen Mobile Threat Defense-Dienst verwendet. Diese Teile der App sind für Ihr Unternehmen einsehbar:
 
-*   App-Name
+* App-Name
 * App-ID: Der eindeutige Name, der die App im App Store identifiziert.
-*   App-Version und kurze Versionsnummer: die angegebene Releasenummer für eine App
+* App-Version und kurze Versionsnummer: die angegebene Releasenummer für eine App
 * App Bundle und dynamische Größe: Die Menge des Speicherplatzes, die eine App auf Ihrem Gerät verwendet.
 * App-Gültigkeit: Gibt an, ob eine App für die Verwendung genehmigt ist
-*   App-Verwaltungsstatus: Gibt an, ob eine App von Ihrem Unternehmen verwaltet wird oder ob es sich um eine persönliche App handelt
+* App-Verwaltungsstatus: Gibt an, ob eine App von Ihrem Unternehmen verwaltet wird oder ob es sich um eine persönliche App handelt
 
 ## <a name="if-the-installation-doesnt-work"></a>Wenn die Installation nicht funktioniert
 

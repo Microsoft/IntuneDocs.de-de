@@ -18,30 +18,30 @@ ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85f6ae657361bea0ab89b8afa73976273fa000f4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4ba5705fa04d9eb28e74128228ca8a862f1cb772
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55844240"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545674"
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>Was geschieht, wenn Sie die Registrierung Ihres iOS- oder macOS-Geräts bei Intune aufheben?
 
 Wenn Sie die Registrierung Ihres iOS-Geräts bei Intune aufheben, geschieht Folgendes:
 
--   Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
+- Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
 
--   Sie können keine Apps mehr über das Unternehmensportal installieren.
+- Sie können keine Apps mehr über das Unternehmensportal installieren.
 
--   Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z.B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.
+- Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z.B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.
 
--   Unter Umständen haben Sie auf dem Gerät keinen Zugriff mehr auf einige Unternehmensressourcen wie Dateifreigaben oder interne Websites.
+- Unter Umständen haben Sie auf dem Gerät keinen Zugriff mehr auf einige Unternehmensressourcen wie Dateifreigaben oder interne Websites.
 
--   Sie können keine Unternehmens-Apps und Unternehmensdaten mehr auf dem Gerät verwenden.
+- Sie können keine Unternehmens-Apps und Unternehmensdaten mehr auf dem Gerät verwenden.
 
--   Möglicherweise können Sie mit dem Unternehmensnetzwerk keine Verbindung mehr über WLAN oder ein virtuelles privates Netzwerk (VPN) herstellen.
+- Möglicherweise können Sie mit dem Unternehmensnetzwerk keine Verbindung mehr über WLAN oder ein virtuelles privates Netzwerk (VPN) herstellen.
 
--   Unternehmens-E-Mail-Profile werden vom Gerät entfernt.
+- Unternehmens-E-Mail-Profile werden vom Gerät entfernt.
 
 Anweisungen zum Aufheben der Registrierung finden Sie unter [Aufheben der Registrierung Ihres Geräts bei Intune](unenroll-your-device-from-intune-ios.md).
 

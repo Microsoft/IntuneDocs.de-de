@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9e4c27f7aca8d510ed82eabeab87612b1c16e11
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 841be002cf9ed99142ce95a1f9cafda761d1b856
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373322"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558479"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Importieren von WLAN-Einstellungen für Windows-Geräte in Intune
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 122a7eef56f2850fced164a37b518f650ed2ecdf
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 38e24bff110cea7d7a565ca00fc0e3e13e37744f
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045872"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530762"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Endpunkt der Intune Data Warehouse-API
 
@@ -69,8 +69,8 @@ Die aktuelle Version unterstützt die OData-Abfrageparameter `$filter`, `$select
 
 `DateKey`-Bereichsfilter können verwendet werden, um die Menge der Daten zu begrenzen, die für einige der Sammlungen mit `dateKey` als Schlüsseleigenschaft heruntergeladen werden sollen. Der `DateKey`-Filter kann verwendet werden, um die Leistung des Diensts zu optimieren, indem folgende `$filter`-Abfrageparameter bereitgestellt werden:
 
-1.  Nur `DateKey` in `$filter`. Dadurch werden die Operatoren `lt/le/eq/ge/gt` und das Verknüpfen mit dem Logikoperator `and` unterstützt. Dort können diese einem Anfangs- und/oder Enddatum zugeordnet werden.
-2.  `maxhistorydays` wird als benutzerdefinierte Abfrageoption bereitgestellt.<br>
+1. Nur `DateKey` in `$filter`. Dadurch werden die Operatoren `lt/le/eq/ge/gt` und das Verknüpfen mit dem Logikoperator `and` unterstützt. Dort können diese einem Anfangs- und/oder Enddatum zugeordnet werden.
+2. `maxhistorydays` wird als benutzerdefinierte Abfrageoption bereitgestellt.<br>
 
 ## <a name="filter-examples"></a>Filterbeispiele
 

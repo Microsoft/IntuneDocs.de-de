@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 633bf52084ad261f768cb4e59aaf4ce0ab5cd5bc
-ms.sourcegitcommit: 46f4d3d160e18aeab9de7477eedc8351fbb78c85
+ms.openlocfilehash: f7dd6f62cb53dd0cc373fb3f2ffa7d9434b135cd
+ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "67468726"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67494239"
 ---
 # <a name="in-development-for-microsoft-intune---july-2019"></a>In der Entwicklung befindliche Microsoft Intune-Features: Juli 2019
 
@@ -58,8 +58,6 @@ Um Ihnen bei Ihrer Vorbereitung und Planung zu helfen, sind auf dieser Seite Upd
 <!-- ***********************************************-->
 ## <a name="app-management"></a>App-Verwaltung
 
-### <a name="device-users-can-view-all-managed-apps-theyve-installed-or-tried-to-install----2352913---"></a>Gerätebenutzer können alle verwalteten Anwendungen anzeigen, die sie installiert bzw. zu installieren versucht haben <!-- 2352913 -->
-Im Unternehmensportal für Windows werden alle verwalteten (sowohl erforderlichen als auch verfügbaren) Apps aufgelistet, die auf dem Gerät eines Benutzers installiert sind. Benutzer können versuchte und ausstehende App-Installationen sowie deren aktuellen Status einsehen. Wenn Ihr Unternehmen keine erforderlichen oder verfügbaren Anwendungen zur Verfügung stellt, erhalten die Benutzer die Meldung, dass keine Unternehmensanwendungen installiert wurden. Benutzer können ihre Apps auch nach Installationsstatus sortieren oder filtern.
 
 ### <a name="customized-notifications-for-users-and-groups-------16766574-----"></a>Benutzerdefinierte Benachrichtigungen für Benutzer und Gruppen    <!-- 16766574   -->
 Sie werden bald zum Senden von benutzerdefinierten Ad-hoc-Push-Benachrichtigungen aus der Unternehmensportal-Anwendung für Benutzer von IOS- und Android-Geräte, die Sie mit Intune verwalten können. Diese benutzerdefinierte Benachrichtigungen sind auf bestimmte Intune-Features nicht gebunden und kann verwendet werden, für einen bestimmten Zweck, die Sie benötigen, einschließlich der allgemeinen Benachrichtigungen, die Sie für einige senden möchten oder alle Ihre Mitarbeiter.  

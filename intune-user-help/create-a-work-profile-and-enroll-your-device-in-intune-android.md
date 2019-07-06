@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb5911f8a706f38e3e880c32113d203369ed870
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: f0a8b0b633f64a2ed6e3e14d5d884df80342067a
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196937"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545468"
 ---
 # <a name="enroll-device-with-android-work-profile"></a>Registrieren eines Geräts mit dem Android-Arbeitsprofil
 
@@ -33,7 +33,7 @@ Registrieren Sie Ihr persönliches Android-Gerät, um Zugriff auf geschäftliche
 
 ## <a name="create-work-profile-and-enroll-device"></a>Erstellen eines Arbeitsprofils und Registrieren eines Geräts
 
-1.  Tippen Sie im Android-Unternehmensportal auf dem **Willkommensbildschirm** auf **Anmelden**, und melden Sie sich dann mit Ihrem Geschäfts-, Schul- oder Unikonto an. Wenn Sie die kostenlose App noch nicht installiert haben, laden Sie diese herunter, und installieren Sie sie von [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
+1. Tippen Sie im Android-Unternehmensportal auf dem **Willkommensbildschirm** auf **Anmelden**, und melden Sie sich dann mit Ihrem Geschäfts-, Schul- oder Unikonto an. Wenn Sie die kostenlose App noch nicht installiert haben, laden Sie diese herunter, und installieren Sie sie von [Google Play](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
     ![Willkommensbildschirm der Android-Unternehmensportal-App](./media/and-enroll-0-welcome-screen.png)
 
@@ -41,15 +41,15 @@ Registrieren Sie Ihr persönliches Android-Gerät, um Zugriff auf geschäftliche
 
     ![Bildschirm „Unternehmenszugriff einrichten“](/intune/media/android_cp_enroll_01_1709_new.png)
 
-3.  Lesen Sie auf dem Bildschirm **Why create a work profile?** (Warum sollte ich ein Arbeitsprofil erstellen?) über die Vorteile, und tippen Sie dann auf **WEITER**.
+3. Lesen Sie auf dem Bildschirm **Why create a work profile?** (Warum sollte ich ein Arbeitsprofil erstellen?) über die Vorteile, und tippen Sie dann auf **WEITER**.
 
     ![Warum sollte ich ein Arbeitsprofil erstellen](./media/andr-afw-why-create-a-work-profile.png)
 
-4.  Prüfen Sie in der angezeigten Liste, was der Support Ihres Unternehmens auf Ihrem Gerät sehen kann und was nicht, und tippen Sie auf **WEITER**.
+4. Prüfen Sie in der angezeigten Liste, was der Support Ihres Unternehmens auf Ihrem Gerät sehen kann und was nicht, und tippen Sie auf **WEITER**.
 
     ![Was der Support Ihres Unternehmens auf Ihrem Gerät sehen bzw. nicht sehen kann](/intune/media/android_cp_enroll_02_after_1710.png)
 
-5.  Lesen Sie auf dem Bildschirm **What's next?** (Wie geht es weiter?), was während der Registrierung passiert, und tippen Sie dann auf **REGISTRIEREN**.
+5. Lesen Sie auf dem Bildschirm **What's next?** (Wie geht es weiter?), was während der Registrierung passiert, und tippen Sie dann auf **REGISTRIEREN**.
 
     ![Bildschirm „Wie geht es weiter?“](/intune/media/android_work_cp_enroll_03_after_1710.png)
 

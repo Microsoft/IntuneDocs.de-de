@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c929965b79d9ee35fcc1094b4ad18cff6d73d80d
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 4530c1ec573560924b54aa8fd21d39a86cefe97e
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045527"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558426"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Entwicklerhandbuch zum Microsoft Intune App SDK für Android
 
@@ -111,10 +111,10 @@ apply plugin: 'com.microsoft.intune.mam'
 
 Standardmäßig wird das Plug-In **nur** auf `project`-Abhängigkeiten angewendet.
 Die Testkompilierung ist nicht betroffen. Die Konfiguration kann für die Liste bereitgestellt werden.
-*  Auszuschließende Projekte
-*  [Einzubeziehende externe Abhängigkeiten](#usage-of-includeexternallibraries) 
-*  Von der Verarbeitung auszuschließende bestimmte Klassen
-*  Von der Verarbeitung auszuschließende Varianten. Diese können sich entweder auf einen vollständigen Variantennamen oder auf einen einzelnen Typ beziehen. Beispiel:
+* Auszuschließende Projekte
+* [Einzubeziehende externe Abhängigkeiten](#usage-of-includeexternallibraries) 
+* Von der Verarbeitung auszuschließende bestimmte Klassen
+* Von der Verarbeitung auszuschließende Varianten. Diese können sich entweder auf einen vollständigen Variantennamen oder auf einen einzelnen Typ beziehen. Beispiel:
      * Wenn Ihre App die Buildtypen `debug` und `release` mit den Typen {`savory`, `sweet`} und {`vanilla`, `chocolate`} aufweist, können Sie Folgendes angeben
      * `savory`, um alle Varianten mit dem Typ „savory“ auszuschließen, oder `savoryVanillaRelease`, um nur genau diese Variante auszuschließen.
 
@@ -834,7 +834,7 @@ void updateToken(String upn, String aadId, String resourceId, String token);
     ```java
     class MAMAuthCallback implements MAMServiceAuthenticationCallback {
         public String acquireToken(String upn, String aadId, String resourceId) {
-        return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
+            return mAuthContext.acquireTokenSilentSync(resourceId, ClientID, aadId).getAccessToken();
         }
     }
     ```
@@ -1187,7 +1187,7 @@ Die Anleitung zur Datensicherung gibt einen allgemeinen Algorithmus für die Wie
 Standardmäßig wendet das Intune App SDK Richtlinien auf die gesamte App an. Mehrere Identitäten sind ein optionales Feature von Intune zum Schutz von Apps, das aktiviert werden kann, um die identitätsbezogene Anwendung von Richtlinien zu ermöglichen. Dies erfordert eine deutlich stärkere Beteiligung der App als andere Features zum Schutz von Apps.
 
 > [!NOTE]
->  Fehlende korrekte App-Teilnahme kann zu Datenverlusten und anderen Sicherheitsproblemen führen.
+> Fehlende korrekte App-Teilnahme kann zu Datenverlusten und anderen Sicherheitsproblemen führen.
 
 Sobald der Benutzer das Gerät oder die App registriert, registriert das SDK die dabei verwendete Identität und betrachtet sie als die primäre, von Intune verwaltete Identität. Andere Benutzer der App werden als nicht verwaltet mit uneingeschränkten Richtlinieneinstellungen behandelt.
 
@@ -1317,7 +1317,7 @@ Neben der Möglichkeit der App, die Identität festzulegen, kann die Identität 
 
   1. Wenn eine Activity durch einen `Intent` gestartet wird, der von einer anderen MAM-App gesendet wird, wird die Identität der Activity basierend auf der effektiven Identität in der anderen App zu dem Zeitpunkt, zu dem der `Intent` gesendet wurde, festgelegt.
 
-  2.  Für Dienste wird die Identität des Threads ähnlich für die Dauer eines `onStart`- oder `onBind`-Aufrufs festgelegt. Aufrufe von `Binder`, die von `onBind` zurückgegeben werden, legen ebenfalls vorübergehend die Threadidentität fest.
+  2. Für Dienste wird die Identität des Threads ähnlich für die Dauer eines `onStart`- oder `onBind`-Aufrufs festgelegt. Aufrufe von `Binder`, die von `onBind` zurückgegeben werden, legen ebenfalls vorübergehend die Threadidentität fest.
 
   3. An einen `ContentProvider` gerichtete Aufrufe legen auf ähnliche Weise die Threadidentität für ihre Dauer fest.
 
@@ -1429,12 +1429,12 @@ public final class MAMFileProtectionManager {
     * this method will silently do nothing.
     *
     * @param identity
-    *       Identity to set.
+    *        Identity to set.
     * @param file
-    *       File to protect.
+    *        File to protect.
     *
     * @throws IOException
-    *       If the file cannot be protected.
+    *         If the file cannot be protected.
     */
    public static void protect(final File file, final String identity) throws IOException;
 
@@ -1742,8 +1742,8 @@ Befolgen Sie die folgenden Schritte,um die Standardregistrierung zu aktivieren:
 
 Bei großen Codebasen, die ohne [ProGuard](http://proguard.sourceforge.net/) ausgeführt werden, werden die Einschränkungen des Dalvik-Formats für ausführbare Dateien zu einem Problem. Insbesondere können die folgenden Einschränkungen auftreten:
 
-1.  Einschränkung auf 65KB bei Feldern.
-2.  Einschränkung auf 65KB bei Methoden.
+1. Einschränkung auf 65KB bei Feldern.
+2. Einschränkung auf 65KB bei Methoden.
 
 ### <a name="policy-enforcement-limitations"></a>Einschränkungen der Richtlinienerzwingung
 

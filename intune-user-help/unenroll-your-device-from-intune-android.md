@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2019
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fafd9c92a51c8ef258d151a3c19c271fdc45f4c2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b68ea31a6c5d902e66c0eda8127e0f68383910f8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835859"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529133"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Aufheben der Registrierung Ihres Android-Geräts für die Verwaltung  
 
@@ -33,6 +33,9 @@ Entfernen Sie Android-Geräte, deren Registrierung aufgehoben wurde, damit diese
 * Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
 * Sie können keine Apps mehr über das Unternehmensportal installieren.
 * Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z.B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.  
+
+> [!NOTE]
+> Sie können nicht aufheben oder Ihre firmeneigenen Geräte aus der Microsoft Intune-app entfernen. Das Gerät wurde während der anfänglichen Gerätekonfiguration registriert und für den Zugriff auf die Ressourcen Ihres Unternehmens registriert werden muss.  
 
 1. Tippen Sie im Unternehmensportal auf die drei vertikal angeordneten Punkte in der oberen rechten Ecke. Dann öffnet sich das Menü „Aktion“.
 
@@ -48,8 +51,8 @@ Entfernen Sie Android-Geräte, deren Registrierung aufgehoben wurde, damit diese
 
 So entfernen Sie alle Daten, die die Unternehmensportal-App für Android auf Ihrem Gerät gespeichert hat:
 
--   Löschen Sie die App-Daten, indem Sie auf **Anwendungen** > **[*Name der App*]** > **Daten löschen** tippen.
--   Löschen Sie den folgenden Ordner: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal
+- Löschen Sie die App-Daten, indem Sie auf **Anwendungen** > **[*Name der App*]**  > **Daten löschen** tippen.
+- Löschen Sie den folgenden Ordner: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal
 
 ## <a name="uninstall-the-company-portal-app"></a>Deinstallieren der Unternehmensportal-App  
 Das Unternehmensportal ist eine App für die Geräteverwaltung. Daher kann diese erst deinstalliert werden, wenn Sie die Registrierung für die Verwaltung des Geräts aufheben. Wenn dies geschehen ist, tippen Sie auf das Symbol für die Unternehmensportal-App und halten Sie dieses so lange gedrückt, bis die Option **Deinstallieren** angezeigt wird. Tippen Sie auf **Deinstallieren**, um die App von Ihrem Gerät zu entfernen.  

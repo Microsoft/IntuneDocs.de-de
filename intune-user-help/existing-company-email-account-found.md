@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a02a7b69245b9b6e7b8f62fdb9be8acb83d42981
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8326693717ac96a0e9d32617e7d7080d50206ac6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834754"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545416"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Es wurde ein vorhandenes geschäftliches E-Mail-Konto gefunden
 
@@ -34,7 +34,7 @@ Möglicherweise hatten Sie mobilen Zugriff auf Ihr Geschäfts-, Schul- oder Unik
 
 So stellen Sie sicher, dass Ihr Gerät die Sicherheitsanforderungen Ihres Unternehmens erfüllt und Ihre E-Mails geschützt sind.
 
-1.  Wechseln Sie auf Ihrem Gerät zu den **Einstellungen**, und suchen Sie Ihre verbundenen Konten. Wählen Sie auf einem Gerät mit iOS 11 oder höher z.B. **Kennwort und Konten** aus.
+1. Wechseln Sie auf Ihrem Gerät zu den **Einstellungen**, und suchen Sie Ihre verbundenen Konten. Wählen Sie auf einem Gerät mit iOS 11 oder höher z.B. **Kennwort und Konten** aus.
  
 2. Wählen Sie Ihr geschäftliches E-Mail-Konto aus, und entfernen Sie es.
 

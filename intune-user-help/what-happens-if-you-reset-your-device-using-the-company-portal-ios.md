@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f328577ba2da97595c116efc51626176a14931a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1ad21f9197f32f8ff06cc0537719261f3daec7cb
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840755"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545746"
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>Was geschieht, wenn Sie Ihr iOS-Gerät mithilfe des Unternehmensportals zurücksetzen?
 
@@ -31,14 +31,14 @@ Wenn Sie das Unternehmensportal zum Zurücksetzen Ihres iPhones oder iPads verwe
 
 **Der Support Ihres Unternehmens verwaltet Ihr mobiles Gerät**
 
--   Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
+- Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
 
--   Ihr Gerät wird auf die werkseitigen Standardeinstellungen des Herstellers zurückgesetzt, und Ihre persönlichen Daten, Apps und Einstellungen werden entfernt.
+- Ihr Gerät wird auf die werkseitigen Standardeinstellungen des Herstellers zurückgesetzt, und Ihre persönlichen Daten, Apps und Einstellungen werden entfernt.
 
 **Das Gerät kann nur auf Firmen-E-Mail zuzugreifen**
 
--   Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
+- Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
 
--   Ihr Unternehmens-E-Mail-Konto wird gelöscht, und nicht gespeicherte E-Mails werden gelöscht.
+- Ihr Unternehmens-E-Mail-Konto wird gelöscht, und nicht gespeicherte E-Mails werden gelöscht.
 
 Wenn Sie Fragen haben, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

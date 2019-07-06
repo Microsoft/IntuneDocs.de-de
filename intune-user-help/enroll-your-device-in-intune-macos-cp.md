@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fea76693fe929338b29d110c299277e753134cc6
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: ee17e963964b6d2e4aa9d3e05c7a562f3c61bbf5
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196781"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545730"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrieren Ihres macOS-Geräts bei Intune über die Unternehmensportal-App
 
@@ -63,7 +63,7 @@ Führen Sie die folgenden Schritte aus, um macOS-Geräte mit OS X El Capitan 10.
     * Wenn Sie noch keine Geräte hinzugefügt haben, wird auf dem Banner Folgendes angezeigt: **You don't have any managed devices. Add this one by tapping here.** (Es sind noch keine verwalteten Geräte vorhanden. Tippen Sie hier, um dieses Gerät hinzuzufügen.) Klicken Sie auf das Banner, um Ihr Gerät hinzuzufügen.  
 
      ![Ein Screenshot der Seite für Geräte auf dem ein roter Rahmen um das Banner markiert, wo Sie klicken können.](./media/CP-enroll-MACOS-1808.png)  
-5.  Führen Sie den nachfolgenden Schritt entsprechend der im Unternehmensportal angezeigten Meldung aus.  
+5. Führen Sie den nachfolgenden Schritt entsprechend der im Unternehmensportal angezeigten Meldung aus.  
     * Wenn Sie ein Gerät zum ersten Mal hinzufügen, werden Sie aufgefordert, die Unternehmensportal-App auf Ihr Gerät herunterzuladen. Klicken Sie auf **Herunterladen**, um den Vorgang fortzusetzen.  
 
          ![Beispielscreenshot der Aufforderung zum Herunterladen der macOS-Unternehmensportal-App Der Benutzer kann entweder unten links im Dialogfeld die blaue Schaltfläche zum Herunterladen oder unten rechts die graue Schaltfläche zum Abbrechen auswählen.](./media/CP-enroll-download-macOS-1808.png)  

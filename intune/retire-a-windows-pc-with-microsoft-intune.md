@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71ff00c0a41fecada6e61f8a9bfa6c5a00dab921
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2b6326d30650aa62777ac9ce9c70394904b678f3
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040859"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549161"
 ---
 # <a name="retire-a-windows-pc"></a>Abkoppeln eines Windows-PCs
 
@@ -30,9 +30,9 @@ ms.locfileid: "66040859"
 
 Gehen Sie folgendermaßen vor, um Desktops abzukoppeln, die durch Ausführen des Intune-Softwareclients als PCs verwaltet werden. Wenn Sie einen PC abkoppeln, wird dieser aus der Intune-Verwaltung entfernt. Ein PC kann von Intune aus nicht auf die ursprünglichen Werkseinstellungen zurückgesetzt werden.
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Gruppen** &gt; **Alle Geräte** aus (oder eine andere Gruppe, in der der PC enthalten ist, den Sie abkoppeln möchten).
+1. Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Gruppen** &gt; **Alle Geräte** aus (oder eine andere Gruppe, in der der PC enthalten ist, den Sie abkoppeln möchten).
 
-2.  Wählen Sie die Geräte aus, die Sie abkoppeln möchten, und wählen Sie dann **Abkoppeln/Zurücksetzen** aus.
+2. Wählen Sie die Geräte aus, die Sie abkoppeln möchten, und wählen Sie dann **Abkoppeln/Zurücksetzen** aus.
 
 Installieren Sie zum erneuten Registrieren eines PC bei Intune den Softwareclient erneut auf dem PC. Gehen Sie hierzu vor wie unter [Installieren des Windows-PC-Clients mit Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) beschrieben.
 
@@ -40,19 +40,19 @@ Wenn von einem PC keine Verbindung mit Intune hergestellt werden kann, wird im A
 
 Wenn Sie einen PC abkoppeln, werden folgende Aktionen ausgeführt:
 
--   Der PC wird aus Intune-Verwaltung und -Inventar entfernt, und die dem PC zugeordnete Lizenz steht zur erneuten Verwendung zur Verfügung. Durch „Abkoppeln/Zurücksetzen“ wird der Intune-Softwareclient vom PC entfernt, es werden aber keine Apps oder Daten gelöscht. Durch diese Abkopplung wird keine vollständige Zurücksetzung auf dem PC ausgeführt.
+- Der PC wird aus Intune-Verwaltung und -Inventar entfernt, und die dem PC zugeordnete Lizenz steht zur erneuten Verwendung zur Verfügung. Durch „Abkoppeln/Zurücksetzen“ wird der Intune-Softwareclient vom PC entfernt, es werden aber keine Apps oder Daten gelöscht. Durch diese Abkopplung wird keine vollständige Zurücksetzung auf dem PC ausgeführt.
 
--   Der Status des Computers wird nicht mehr in der Intune-Konsole angezeigt.
+- Der Status des Computers wird nicht mehr in der Intune-Konsole angezeigt.
 
--   Intune entfernt den Softwareclient vom PC. Wenn der PC nicht mit Intune verbunden ist, wird der Softwareclient nach der nächsten Verbindungsherstellung entfernt.
+- Intune entfernt den Softwareclient vom PC. Wenn der PC nicht mit Intune verbunden ist, wird der Softwareclient nach der nächsten Verbindungsherstellung entfernt.
 
--   Microsoft Intune Endpoint Protection wird vom PC entfernt. Wenn auf dem PC eine andere Endpunktanwendung installiert, aber deaktiviert ist, kann sie unter Umständen nach dem Entfernen von Microsoft Intune Endpoint Protection wieder aktiviert werden, um sicherzustellen, dass Ihr PC geschützt ist.
+- Microsoft Intune Endpoint Protection wird vom PC entfernt. Wenn auf dem PC eine andere Endpunktanwendung installiert, aber deaktiviert ist, kann sie unter Umständen nach dem Entfernen von Microsoft Intune Endpoint Protection wieder aktiviert werden, um sicherzustellen, dass Ihr PC geschützt ist.
 
--   Alle vorhandenen Richtlinien werden vom PC entfernt, und die durch die Richtlinie festgelegten Werte werden geändert.
+- Alle vorhandenen Richtlinien werden vom PC entfernt, und die durch die Richtlinie festgelegten Werte werden geändert.
 
--   Der PC erhält vom Intune-Dienst keine weiteren Softwareupdates oder aktualisierten Schadsoftwaredefinitionen.
+- Der PC erhält vom Intune-Dienst keine weiteren Softwareupdates oder aktualisierten Schadsoftwaredefinitionen.
 
--   Abgekoppelte PCs können je nach Konfiguration weiterhin Updates über Windows Server Update Services, Windows Update oder Microsoft Update empfangen.
+- Abgekoppelte PCs können je nach Konfiguration weiterhin Updates über Windows Server Update Services, Windows Update oder Microsoft Update empfangen.
 
     > [!IMPORTANT]
     > Wurde die Clientsoftware mithilfe eines Gruppenrichtlinienobjekts installiert, dann müssen Sie zuerst das Gruppenrichtlinienobjekt entfernen, bevor Sie die Clientsoftware entfernen können. So wird verhindert, dass die Software erneut installiert wird.

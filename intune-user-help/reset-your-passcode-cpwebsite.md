@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
-ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58163427"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546801"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>So setzen Sie Ihre Kennung über die Unternehmensportalwebsite zurück
 
@@ -36,13 +36,13 @@ Wenn Sie ein firmeneigenes Gerät verwenden, wird Ihnen die Option zum Zurückse
 
 ## <a name="reset-your-passcode"></a>Zurücksetzen der Kennung
 
-1.  Öffnen Sie die [Unternehmensportal-Website](https://portal.manage.microsoft.com), und wählen Sie die Schaltfläche __Menü__ und anschließend die Option __Geräte__ aus.  
+1. Öffnen Sie die [Unternehmensportal-Website](https://portal.manage.microsoft.com), und wählen Sie die Schaltfläche __Menü__ und anschließend die Option __Geräte__ aus.  
 
 2. Wählen Sie das Gerät aus, für das die Kennung zurückgesetzt werden muss.  
 
     ![Ein Screenshot der Seite „Geräte“ mit zwei Kacheln, auf denen nicht identifizierte Geräte mit Standardnamen angezeigt werden. Unter den Geräten befindet sich ein graues Banner, durch das Benutzer dazu aufgefordert werden, das verwendete Gerät zu identifizieren oder ein neues hinzuzufügen.](./media/rename-reset-device-step2-1808.png) 
 
-3. Wählen Sie **Kennung zurücksetzen** aus. Wenn die Option zum Zurücksetzen der Kennung oben auf Ihrer Seite nicht sichtbar ist, wählen Sie **Mehr (....)** > **Kennung zurücksetzen** aus.   
+3. Wählen Sie **Kennung zurücksetzen** aus. Wenn die Option zum Zurücksetzen der Kennung oben auf Ihrer Seite nicht sichtbar ist, wählen Sie **Mehr (....)**  > **Kennung zurücksetzen** aus.   
 
    ![Seite mit Gerätedetails für ein ausgewähltes Gerät auf der Unternehmensportalwebsite mit einer Liste der Links oben auf der Seite zu „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/rename-reset-device-1808.png)   
 
@@ -79,7 +79,7 @@ In diesem Abschnitt werden das Zurücksetzen der Kennung und das Verhalten tempo
 **iOS**: Entfernt die aktuelle Kennung und erstellt keine neue temporäre Kennung. Wenn Sie den Touch ID-Fingerabdruckscanner verwenden, um Ihr Gerät zu öffnen oder Einkäufe zu tätigen, müssen Sie ihn erneut einrichten.  
 
 **Windows 10 Mobile**: Entfernt die vorhandene Kennung und erstellt eine temporäre Kennung aus Buchstaben und Zahlen. Wenn diese eingerichtet ist, funktioniert die Gesichtserkennung von Windows Hello auch weiterhin mit dem Gerät.
-    
+
 **Windows Phone 8.1**: Entfernt die vorhandene Kennung und erstellt eine temporäre Kennung aus Zahlen.  
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  

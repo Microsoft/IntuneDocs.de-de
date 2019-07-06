@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95862c006baef40bfb219e5cff50d5622c8c00b4
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: 767788d702db45686d686e21018cbf0c5b038412
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069107"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546672"
 ---
 # <a name="set-your-pin-or-password"></a>Festlegen von PIN oder Kennwort
 
@@ -31,9 +31,9 @@ Der Support Ihres Unternehmens fordert Sie möglicherweise dazu auf, bei Verwend
 
 Sie können die folgenden Schritte verwenden, um eine PIN oder ein Kennwort festzulegen.
 
-1.  Tippen Sie auf **Einstellungen** > **Sicherheit** > **Sperrbildschirm** > **Kennwort**.
+1. Tippen Sie auf **Einstellungen** > **Sicherheit** > **Sperrbildschirm** > **Kennwort**.
 
-2.  Wählen und bestätigen Sie das neue Kennwort.
+2. Wählen und bestätigen Sie das neue Kennwort.
 
 Bei bestimmten Geräten müssen Sie zusätzlich zu Ihrem Bildschirmkennwort möglicherweise eine Start-PIN festlegen. Sie können versuchen, dieses Problem in den Griff zu bekommen, indem Sie in Ihrem Menüpunkt „Einstellungen“ die Stelle zum Aktivieren dieser Option finden. Auf dem Samsung Galaxy S7 aktivieren Sie beispielsweise „Sicherer Start“ über **Einstellungen** > **Sperrbildschirm und Sicherheit** > **Sicherer Start**. Weitere Informationen finden Sie [hier](/intune-user-help/your-device-appears-encrypted-but-cp-says-otherwise-android). 
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39aba38d808a770ee04f5d165ca8037b43576812
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 6150359843e5e089226717dd07f3d932ab21f6d6
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66374017"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530284"
 ---
 # <a name="use-custom-settings-for-android-devices-in-microsoft-intune"></a>Verwenden benutzerdefinierter Einstellungen für Android-Geräte in Microsoft Intune
 

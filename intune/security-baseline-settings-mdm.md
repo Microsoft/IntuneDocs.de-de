@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3b9f69e745baffd21b55274e173bb75e8581525
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: 8fa5589f62900027b90659b8f570e7caa10b1cd8
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418945"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549057"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>MDM-Einstellungen für Sicherheitsbaselines in Intune  
 
@@ -32,7 +32,7 @@ Ist die neueste baselineversion **MDM-Sicherheitsbaseline für Spring 2019 Updat
 Um Informationen darüber, was aus der vorherigen Version in der neuesten Version von dieser Baseline geändert wird, finden Sie unter [Änderungen in der neuen Vorlage](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> Im Juni 2019 der Preview-MDM-Sicherheitsbaseline ersetzt wurde, von der Version der *MDM-Sicherheitsbaseline für Spring 2019 Update (19H-1)* Vorlage, die generaly ist (nicht in der Vorschau) verfügbar. Profile, die vor der Verfügbarkeit erstellt wurden die *MDM-Sicherheitsbaseline für Spring 2019 Update (19 H-1)* Baseline nicht entsprechend aktualisiert die die Einstellungen und Werte, die in der MDM-Sicherheitsbaseline für Spring 2019 Update (sind 19 H-1) Version.  Obwohl Sie neue Profile, die basierend auf der Preview-Vorlage erstellen können, Sie bearbeiten und fortfahren, verwenden Sie Profile, die Sie zuvor erstellt haben, die in der Vorschau-Vorlage basieren.   
+> Im Juni 2019 der Preview-MDM-Sicherheitsbaseline ersetzt wurde, von der Version der *MDM-Sicherheitsbaseline für Spring 2019 Update (19H-1)* Vorlage, die generaly ist (nicht in der Vorschau) verfügbar. Profile, die vor der Verfügbarkeit erstellt wurden die *MDM-Sicherheitsbaseline für Spring 2019 Update (19 H-1)* Baseline nicht entsprechend den Einstellungen und Werte, die in der MDM-Sicherheitsbaseline für Spring 2019 Update (19 H 1 aktualisiert. ) Version.  Obwohl Sie neue Profile, die basierend auf der Preview-Vorlage erstellen können, Sie bearbeiten und fortfahren, verwenden Sie Profile, die Sie zuvor erstellt haben, die in der Vorschau-Vorlage basieren.   
   
 Weitere Informationen zu Sicherheitsbaselines mit Intune verwenden, finden Sie unter [verwenden Sicherheitsbaselines](security-baselines.md).  
 
@@ -57,7 +57,7 @@ Weitere Informationen finden Sie unter [Policy CSP - AppRuntime (Richtlinien-Kon
 
 - **Microsoft-Konten optional für Windows Store-Apps**  
   Mit dieser Richtlinieneinstellung können Sie steuern, ob für Windows Store-Apps, die eine Anmeldung mit einem Konto erfordern, Microsoft-Konten optional sind. Diese Richtlinie betrifft nur Windows Store-Apps, die dies unterstützen. Wenn Sie diese Richtlinieneinstellung aktivieren, ermöglichen Windows Store-Apps, die normalerweise die Anmeldung mit einem Microsoft-Konto erfordern, Benutzern stattdessen die Anmeldung mit einem Unternehmenskonto. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, müssen Benutzer sich mit einem Microsoft-Konto anmelden.  
-    [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067104)  
+  [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067104)  
   
   **Standard**: Aktiviert  
 
@@ -68,7 +68,7 @@ Weitere Informationen finden Sie unter [Policy CSP - ApplicationManagement (Rich
   Diese richtlinieneinstellung ermöglicht Benutzern Installationsoptionen zu ändern, die in der Regel nur für Systemadministratoren verfügbar sind. Wenn Sie diese richtlinieneinstellung aktivieren, werden einige der Sicherheitsfeatures von Windows Installer umgangen. Er lässt installiert wurden, die andernfalls aufgrund einer sicherheitsverletzung angehalten werden sollen. Wenn Sie diese richtlinieneinstellung nicht konfigurieren oder deaktivieren, verhindern die Sicherheitsfeatures von Windows Installer Benutzer ändern von Installationsoptionen, die in der Regel reserviert für Systemadministratoren, z. B. Angeben des Verzeichnisses, in dem Dateien installiert werden. Wenn Windows Installer erkennt, dass ein Installationspaket den Benutzer, eine geschützte Option ändern zulässig ist, wird die Installation beendet und eine Meldung angezeigt. Diese Sicherheitsfeatures funktionieren nur, wenn das Installationsprogramm in einem privilegierten Sicherheitskontext ausgeführt wird in dem sie den Zugriff auf Verzeichnisse, die für dem Benutzer verweigert hat. Mit dieser richtlinieneinstellung ist für weniger restriktive Umgebungen konzipiert. Es kann verwendet werden, um ein Installationsprogramm umgangen, die verhindert, dass die Software installiert wird.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
-    **Standard**: Ja
+  **Standard**: Ja
 
 - **Block-MSI-app-Installationen mit erhöhten rechten**  
   Diese Richtlinieneinstellung weist den Windows Installer an, bei der Installation von Programmen auf dem System erhöhte Rechte anzuwenden.  
@@ -828,7 +828,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
 - **Internet Explorer trusted zone java permissions**  (Java-Berechtigungen für vertrauenswürdige Zonen in Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie Berechtigungen für Java-Applets verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie Optionen aus dem Dropdownfeld auswählen. Wählen Sie „Benutzerdefiniert“ aus, um Berechtigungseinstellungen einzeln zu bestimmen. Wählen Sie „Niedrige Sicherheit“ aus, um Applets die Ausführung aller Vorgänge zu ermöglichen. Wählen Sie „Mittlere Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox (ein Bereich im Speicher, außerhalb dessen das Programm keine Aufrufe ausführen kann) sowie Funktionen wie den sicheren Speicherbereich (ein geschützter und sicherer Speicherbereich auf dem Clientcomputer) und die benutzergesteuerte Datei-E/A zu ermöglichen. Wählen Sie „Hohe Sicherheit“ aus, um Applets die Ausführung in der zugehörigen Sandbox zu ermöglichen. Deaktivieren Sie Java, um zu verhindern, dass Applets ausgeführt werden. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Java-Applets nicht ausgeführt werden. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, wird die Berechtigung auf „Niedrige Sicherheit“ festgelegt.  
-    [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067200)  
+  [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067200)  
   
   **Standard**: Hohe Sicherheit  
   
@@ -893,7 +893,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   **Standard**: Deaktivieren  
   
 - **Internet Explorer internet zone logon options** (Anmeldeoptionen für die Internetzone von Internet Explorer)  
-  Mit dieser Richtlinieneinstellung können Sie Einstellungen für Anmeldeoptionen verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie eine der folgenden Anmeldeoptionen auswählen. Die Anmeldung kann anonym durchgeführt werden, um die HTTP-Authentifizierung zu deaktivieren, und das Gastkonto kann nur für das CIFS-Protokoll (Common Internet File System) verwendet werden. Sie können die Eingabe eines Benutzernamens und eines Kennworts anfordern, um die Benutzer-ID und Kennwörter von Benutzern abzufragen. Nachdem ein Benutzer abgefragt wurde, können diese Werte für den Rest der Sitzung im Hintergrund verwendet werden. Sie können die automatische Anmeldung nur in der Intranetzone zulassen, um Benutzer-IDs und Kennwörter von Benutzern in anderen Zonen abzufragen. Nachdem ein Benutzer abgefragt wurde, können diese Werte für den Rest der Sitzung im Hintergrund verwendet werden. Sie können die automatische Anmeldung mit dem aktuellen Benutzernamen und Kennwort durchführen, um die Anmeldung mithilfe der NTLM-Authentifizierung (auch bekannt als Windows NT Challenge Response) durchzuführen. Wenn der Server die NTLM-Authentifizierung unterstützt, werden der Netzwerkbenutzername und das Kennwort für die Anmeldung verwendet. Wenn die NTLM-Authentifizierung nicht vom Server unterstützt wird, wird der Benutzer dazu aufgefordert, seinen Benutzernamen und sein Kennwort einzugeben. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird die automatische Anmeldung nur in der Intranetzone zugelassen. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, wird für die Anmeldung „Automatisches Anmelden nur in der Intranetzone“ festgelegt.  
+  Mit dieser Richtlinieneinstellung können Sie Einstellungen für Anmeldeoptionen verwalten. Durch das Aktivieren dieser Richtlinieneinstellung können Sie eine der folgenden Anmeldeoptionen auswählen. Die Anmeldung kann anonym durchgeführt werden, um die HTTP-Authentifizierung zu deaktivieren, und das Gastkonto kann nur für das CIFS-Protokoll (Common Internet File System) verwendet werden. Sie können die Eingabe eines Benutzernamens und eines Kennworts anfordern, um die Benutzer-ID und Kennwörter von Benutzern abzufragen. Nachdem ein Benutzer abgefragt wurde, können diese Werte für den Rest der Sitzung im Hintergrund verwendet werden. Sie können die automatische Anmeldung nur in der Intranetzone zulassen, um Benutzer-IDs und Kennwörter von Benutzern in anderen Zonen abzufragen. Nachdem ein Benutzer abgefragt wurde, können diese Werte für den Rest der Sitzung im Hintergrund verwendet werden. Sie können die automatische Anmeldung mit dem aktuellen Benutzernamen und Kennwort durchführen, um die Anmeldung mithilfe der NTLM-Authentifizierung (auch bekannt als Windows NT Challenge Response) durchzuführen. Wenn der Server die NTLM-Authentifizierung unterstützt, werden der Netzwerkbenutzername und das Kennwort für die Anmeldung verwendet. Wenn die NTLM-Authentifizierung vom Server nicht unterstützt wird, wird der Benutzer dazu aufgefordert, seinen Benutzernamen und sein Kennwort einzugeben. Wenn Sie diese Richtlinieneinstellung deaktivieren, wird die automatische Anmeldung nur in der Intranetzone zugelassen. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, wird für die Anmeldung „Automatisches Anmelden nur in der Intranetzone“ festgelegt.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067194)  
   
   **Standard**: Eingabeaufforderung  
@@ -1829,7 +1829,7 @@ Die folgenden Einstellungen sind entweder:
 - *Überarbeitete* in irgendeiner Weise aus wie die Einstellungen in der vorherigen Version angezeigt. 
 
 *[Neu]*  [ **Sperrbildschirm**](#above-lock):
--  **Voice-apps über den Sperrbildschirm zu aktivieren**    
+- **Voice-apps über den Sperrbildschirm zu aktivieren**    
 
 *[Neu]* [**Anwendungsverwaltung**](#application-management): 
 - **Block Benutzerkontrolle über die Installationen**  
@@ -2602,7 +2602,7 @@ For more information, see [Policy CSP - InternetExplorer](https://docs.microsoft
   **Default**: Disable  
   
 - **Internet Explorer internet zone logon options**  
-  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
+  This policy setting allows you to manage settings for sign in options. If you enable this policy setting, you can choose from the following sign in options. Anonymous log on to disable HTTP authentication and use the guest account only for the Common Internet File System (CIFS) protocol. Prompt for user name and password to query users for user IDs and passwords. After a user is queried, these values can be used silently for the remainder of the session. Automatic log on only in Intranet zone to query users for user IDs and passwords in other zones. After a user is queried, these values can be used silently for the rest of the session. Automatic sign in with current user name and password to attempt log on using Windows NT Challenge Response (also known as NTLM authentication). If the server supports Windows NT Challenge Response, the sign in uses the user's network user name and password for log on. If the server doesn't support Windows NT Challenge Response, the user is queried to provide the user name and password. If you disable this policy setting, sign in is set to Automatic log on only in Intranet zone. If you don't configure this policy setting, sign in is set to Automatic sign in only in Intranet zone.
   
   **Default**: Prompt  
   

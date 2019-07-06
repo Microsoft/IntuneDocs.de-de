@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa043e667bf12db9e30bfc56522c92d530a88c75
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 04671df820fee96d4090b13f6fa8f6c4f983a1ac
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373617"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530231"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Verwenden benutzerdefinierter Einstellungen für macOS-Geräte in Microsoft Intune
 

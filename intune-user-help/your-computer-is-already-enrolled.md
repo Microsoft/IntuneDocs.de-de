@@ -18,12 +18,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7265eb7b4679d72fa6ab348c17f9f4f7508482e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f6e73b784f0e938058dcb9d6001082f86ac800ff
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836424"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545660"
 ---
 # <a name="your-computer-is-already-enrolled"></a>Ihr Computer ist bereits registriert
 
@@ -31,11 +31,11 @@ Wenn Sie die Fehlermeldung erhalten, dass Ihr Computer bereits registriert ist, 
 
 So verknüpfen Sie Ihren Computer
 
-1.  Wählen Sie auf dem Computer, den Sie mit Ihrem Konto verknüpfen möchten, **Start** und anschließend **Microsoft Intune Center** aus.
+1. Wählen Sie auf dem Computer, den Sie mit Ihrem Konto verknüpfen möchten, **Start** und anschließend **Microsoft Intune Center** aus.
 
-2.  Öffnen Sie das Unternehmensportal.
+2. Öffnen Sie das Unternehmensportal.
 
-3.  Folgen Sie den Anweisungen, um den Computer mit Ihrem Benutzerkonto zu verknüpfen.
+3. Folgen Sie den Anweisungen, um den Computer mit Ihrem Benutzerkonto zu verknüpfen.
 
 Wenn Sie lieber die Registrierung aufheben möchten, befolgen Sie die Anweisungen für Ihren Gerätetyp: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) oder [Windows](unenroll-your-device-from-intune-windows.md).
 

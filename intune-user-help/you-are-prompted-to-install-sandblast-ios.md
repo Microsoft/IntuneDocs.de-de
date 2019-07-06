@@ -16,12 +16,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd8934d3318459ecc7587a9c51bba9b6f744dbc7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8d4f957af4c05a66de4ce4ae7c233eda297153f8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55841690"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527617"
 ---
 # <a name="you-need-to-install-sandblast-mobile-protect-on-your-ios-device"></a>Installieren von SandBlast Mobile Protect auf Ihrem iOS-Gerät
 
@@ -29,7 +29,7 @@ Damit Sie auf Ihre Arbeit zugreifen können, verlangt die Supportabteilung Ihres
 
 **Gehen Sie wie folgt vor:**
 
-1.  Wenn die folgende Aufforderung angezeigt wird, tippen Sie auf **Installieren**, um die Installation von SandBlast Mobile Protect auf Ihrem Gerät zuzulassen.
+1. Wenn die folgende Aufforderung angezeigt wird, tippen Sie auf **Installieren**, um die Installation von SandBlast Mobile Protect auf Ihrem Gerät zuzulassen.
 
 2. Wenn die folgende Meldung angezeigt wird, tippen Sie auf **Einstellungen**, aktivieren Sie **Ortungsdienste**, und tippen Sie anschließend auf **Weiter**.
 

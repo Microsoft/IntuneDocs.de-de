@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96be75fb1399ab1d83eb91a85c97270987dbe660
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 21aac8bc4f241d2905bd2ba24ecdb8bbda3d1a67
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66042768"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512286"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>Verhindern von Datenverlusten auf nicht verwalteten Geräten mit Microsoft Intune
 

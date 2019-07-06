@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 76e6e3186ae0e8bf1d05698d28539994d33486e8
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 1c716f48a46e4fd2dc24d203426c364dd4cd88c0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804426"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545233"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open Source-Verhaltensregeln
 
@@ -30,7 +30,7 @@ Wir **benötigen und begrüßen Beiträge** von unserer Community (Benutzer, Kun
     5. Erstellen Sie den Pull Request.
     
     **Option 2: Suchen Sie den Artikel im Repository, und aktualisieren Sie ihn**  
-    1.  Die meisten Artikel finden Sie unter `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. In diesem Ordner können Sie nach dem Artikelnamen suchen, z. B. `troubleshoot-policies-in-microsoft-intune`. 
+    1. Die meisten Artikel finden Sie unter `https://github.com/MicrosoftDocs/IntuneDocs/tree/master/intune`. In diesem Ordner können Sie nach dem Artikelnamen suchen, z. B. `troubleshoot-policies-in-microsoft-intune`. 
     2. Klicken Sie auf den Link, und klicken Sie dann auf das Stiftsymbol. Wenn Sie auf das Stiftsymbol zeigen, wird die QuickInfo **Edit this file** (Diese Datei bearbeiten) angezeigt. 
     3. Nehmen Sie Ihre Änderungen vor, und **committen** Sie dann Ihre Änderungen. 
     4. Erstellen Sie den Pull Request. 

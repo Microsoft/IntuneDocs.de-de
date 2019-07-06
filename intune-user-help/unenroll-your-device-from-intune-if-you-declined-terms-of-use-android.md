@@ -18,12 +18,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbf35b77c843b4dc084916b2c283b6c66d5f066d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: fb4ac87bef7c822111e95c18f149fa8d0598c36e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849232"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546632"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>Entfernen Ihres Geräts aus der Verwaltung bei Ablehnung der Nutzungsbedingungen
 
@@ -37,11 +37,11 @@ Vor der Deinstallation der Unternehmensportal-App müssen Sie zur Einstellung **
 
 So können Sie Ihr Gerät aus Intune entfernen und die Unternehmensportal-App deinstallieren:
 
-1.  Wechseln Sie zu **Einstellungen**&gt;**Sicherheit&amp; Sperrbildschirm** &gt; **Geräteadministratoren**.
+1. Wechseln Sie zu **Einstellungen**&gt;**Sicherheit&amp; Sperrbildschirm** &gt; **Geräteadministratoren**.
 
     Durch das Ausführen dieses Schritts wird die Registrierung Ihres Geräts sofort aufgehoben.
 
-2.  Deaktivieren Sie das Kontrollkästchen neben **Unternehmensportal**, oder schalten Sie das Unternehmensportal aus.
+2. Deaktivieren Sie das Kontrollkästchen neben **Unternehmensportal**, oder schalten Sie das Unternehmensportal aus.
 
     Sie können die Unternehmensportal-App jetzt deinstallieren.
 

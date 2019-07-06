@@ -18,26 +18,26 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32dfb275e96ecf1d8c60f115881d7ceb0593a3b2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 73e9c42f69517d145c797b13ae9fa5aa779ebc5d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837429"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546509"
 ---
 # <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>Was geschieht, wenn Sie die Registrierung Ihres Android-Geräts bei Intune aufheben?
 
 Wenn Sie die Registrierung Ihres Android-Geräts bei Intune aufheben, geschieht Folgendes:
 
--   Der Support Ihres Unternehmens ist nicht mehr für die Verwaltung des Geräts zuständig.
+- Der Support Ihres Unternehmens ist nicht mehr für die Verwaltung des Geräts zuständig.
 
--   Sie verlieren den Zugriff auf Unternehmensdaten und -ressourcen.
+- Sie verlieren den Zugriff auf Unternehmensdaten und -ressourcen.
 
--   Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
+- Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
 
--   Sie können keine Apps mehr über das Unternehmensportal installieren.
+- Sie können keine Apps mehr über das Unternehmensportal installieren.
 
--   Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z.B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.
+- Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z.B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.
 
 Wenn Ihr Gerät nur für den Empfang von Unternehmens-E-Mail eingerichtet ist und Sie seine Registrierung aufheben, wird Ihr Gerät nicht mehr im Unternehmensportal angezeigt.
 

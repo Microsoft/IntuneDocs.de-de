@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46f2193a3a13183d41b10f03b6efe7100f0d9f9d
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 50833b33583dcc1b49eb9009995b8ccd6c79e1f0
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840364"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546648"
 ---
 # <a name="remove-your-windows-device-from-management"></a>Entfernen Ihres Windows-Geräts aus der Verwaltung
 
@@ -76,24 +76,24 @@ Führen Sie die folgenden Schritte zum Entfernen eines Windows 10-Geräts aus de
 ## <a name="remove-your-windows-81-computer"></a>Entfernen Ihres Windows 8.1-Computers
 Führen Sie die folgenden Schritte zum Entfernen eines Windows 8.1-Computers aus Intune aus.
 
-1.  Navigieren Sie zu **PC-Einstellungen** > **Netzwerk** > **Arbeitsplatz**.
-2.  Wählen Sie unter **Arbeitsplatzeinbindung** **Leave** (Verlassen) aus.
-3.  Wählen Sie unter **Turn on device management** (Geräteverwaltung aktivieren) **Turn off** (Deaktivieren) aus.
-4.  Wählen Sie im sich öffnenden Popupfenster **Turn off** (Deaktivieren) aus.
+1. Navigieren Sie zu **PC-Einstellungen** > **Netzwerk** > **Arbeitsplatz**.
+2. Wählen Sie unter **Arbeitsplatzeinbindung** **Leave** (Verlassen) aus.
+3. Wählen Sie unter **Turn on device management** (Geräteverwaltung aktivieren) **Turn off** (Deaktivieren) aus.
+4. Wählen Sie im sich öffnenden Popupfenster **Turn off** (Deaktivieren) aus.
 
 ## <a name="remove-your-windows-81-phone"></a>Entfernen Ihres Windows 8.1-Smartphones
 Führen Sie die folgenden Schritte zum Entfernen eines Windows 8.1-Smartphones aus Intune aus.
 
-1.  Wechseln Sie zu **Einstellungen** > **Arbeitsplatz**.
-2.  Tippen Sie auf das Arbeitsplatzkonto, für das Sie die Registrierung aufheben möchten.
-3.  Tippen Sie am unteren Bildschirmrand auf **Löschen**.
-4.  Tippen Sie im Dialogfeld **Konto löschen** auf **Löschen**.  
+1. Wechseln Sie zu **Einstellungen** > **Arbeitsplatz**.
+2. Tippen Sie auf das Arbeitsplatzkonto, für das Sie die Registrierung aufheben möchten.
+3. Tippen Sie am unteren Bildschirmrand auf **Löschen**.
+4. Tippen Sie im Dialogfeld **Konto löschen** auf **Löschen**.  
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Entfernen Ihrer persönlichen Informationen nach dem Entfernen des Unternehmensportals  
 
 Es gibt zwei Arten von Daten, die das Unternehmensportal auf Ihrem Windows-Gerät speichert:
 
--   **Diagnoseprotokolle:** von Microsoft erfasste Aktivitätsdaten der Standard-App. Die Daten werden automatisch gelöscht, wenn Sie die Unternehmensportal-App deinstallieren. App-Aktivitätsdaten enthalten z.B. Informationen dazu, wie lange die App geöffnet war oder sie abgestürzt ist.
--   **Anwendungscache:** Unterstützungsdateien, die erforderlich sind, damit die App funktioniert, z.B. Symbole und Einstellungen.
+- **Diagnoseprotokolle:** von Microsoft erfasste Aktivitätsdaten der Standard-App. Die Daten werden automatisch gelöscht, wenn Sie die Unternehmensportal-App deinstallieren. App-Aktivitätsdaten enthalten z.B. Informationen dazu, wie lange die App geöffnet war oder sie abgestürzt ist.
+- **Anwendungscache:** Unterstützungsdateien, die erforderlich sind, damit die App funktioniert, z.B. Symbole und Einstellungen.
 
 Führen Sie einen der folgenden Schritte aus, um die gespeicherten Protokolle und Caches zu löschen:
 

@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61cbe326bbbd0e52c045491fe59ba837779ddb6e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c5b903cfa9a6700b8931ccedea0f44a9de0d8011
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041150"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549219"
 ---
-#  <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune-Data Warehouse-API
+# <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune-Data Warehouse-API
 
 Die Data Warehouse-API von Intune ermöglicht es Ihnen, auf Ihre Intune-Daten in einem computerlesbaren Format zuzugreifen, um sie in Ihrem bevorzugten analytischen Tool zu verwenden. Mithilfe dieser API können Sie Berichte erstellen, die einen Einblick in Ihre mobile Unternehmensumgebung ermöglichen. Die API verwendet das OData-Protokoll, das folgenden Standardmustern folgt:
 
-  -   Anforderungs- und Antwortheader
-  -   Statuscodes
-  -   HTTP-Methoden
-  -   URL-Konventionen
-  -   Medientypen
-  -   Nutzlastformate
-  -   Abfrageoptionen
+  - Anforderungs- und Antwortheader
+  - Statuscodes
+  - HTTP-Methoden
+  - URL-Konventionen
+  - Medientypen
+  - Nutzlastformate
+  - Abfrageoptionen
 
 OData (Open Data Protocol) erfüllt den OASIS-Standard (Organization for the Advancement of Structured Information Standards), der die bewährten Methoden zum Erstellen und Nutzen von Rest-APIs definiert. Intune Data Warehouse verwendet OData Version 4.0.
 
@@ -56,8 +56,8 @@ Weitere Informationen finden Sie unter [Abrufen von Daten aus der Data Warehouse
 
 Die API erfordert eine Autorisierung mit Azure AD. Azure AD verwendet OAuth 2.0. Nach der Autorisierung können Sie Daten aus der API abrufen, indem Sie ein HTTP GET-Verb verwenden und sich die verfügbar gemachten Entitätsauflistungen wenden. Weitere Informationen finden Sie hier:
 
- -  [Authorization (Autorisierung)](reports-api-url.md)
- -  [API URL Structure (API-URL-Struktur)](reports-api-url.md)
+ - [Authorization (Autorisierung)](reports-api-url.md)
+ - [API URL Structure (API-URL-Struktur)](reports-api-url.md)
 
 ## <a name="intune-data-warehouse-data-model"></a>Intune Data Warehouse-Datenmodell
 

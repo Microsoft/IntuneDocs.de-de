@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbb6c3b771ae768fe45bea1eecb21f7083003010
-ms.sourcegitcommit: d258bcf6716c8a2589d3f8dada819905ee80f233
+ms.openlocfilehash: 77b7f3adf4fa8675e3734f7eab8fbaa9391d952a
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2019
-ms.locfileid: "66196846"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67527954"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Registrieren von Windows 10-Geräten mit dem Intune-Unternehmensportal
 

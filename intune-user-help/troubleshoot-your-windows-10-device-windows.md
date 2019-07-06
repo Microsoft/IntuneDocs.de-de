@@ -18,17 +18,17 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2fe8a765bdb11d0b94dbbb7519360c6e7a01e8ce
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: bbd4f8f0925aac5aada44277c4d21a71b412e0e7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61501237"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546677"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Behandlung von Problemen bei der Registrierung von Windows 10-Geräten
 Wenn Sie Ihr Gerät registriert haben, aber immer noch nicht auf Ihre geschäftlichen oder schulischen E-Mails und Dateien zugreifen können, führen Sie zur Problembehandlung folgende Schritte aus.  
 
-1.  Sehen Sie sich die beiden folgenden Bildschirme an, und suchen Sie denjenigen heraus, der der Anzeige auf Ihrem Gerät entspricht. Befolgen Sie die Schritte, die zu diesem Bildschirm gehören.
+1. Sehen Sie sich die beiden folgenden Bildschirme an, und suchen Sie denjenigen heraus, der der Anzeige auf Ihrem Gerät entspricht. Befolgen Sie die Schritte, die zu diesem Bildschirm gehören.
 
     Wenn dieser Bildschirm angezeigt wird, befolgen Sie die Schritte unter [Schritte zur Problembehandlung bei Anzeige von „Zugriff auf Geschäfts-, Schul- oder Unikonto“](#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 

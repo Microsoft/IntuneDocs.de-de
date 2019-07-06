@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f47d7e238bc810db9057a4a7c86dbfa523b0e7b
-ms.sourcegitcommit: 0f771585d3556c0af14500428d5c4c13c89b9b05
+ms.openlocfilehash: 1afdaa1bb21e3a13932202524eed9322d95479bb
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66174213"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545640"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Welche Informationen erhält meine Organisation, wenn ich mein Gerät registriere?
 
@@ -34,7 +34,7 @@ Ihre Organisation kann Ihre privaten Informationen nicht einsehen, wenn Sie ein 
 - E-Mail-Nachrichten und SMS
 - Kontakte
 - Kalender
--   Kennwörter
+- Kennwörter
 - Ihre Bilder, einschließlich dem, was sich in der Fotos- und Kamera-App befindet
 - Dateien
 
@@ -51,8 +51,8 @@ Ihre Organisation kann Ihre privaten Informationen nicht einsehen, wenn Sie ein 
 
 **Was Ihre Organisation möglicherweise außerdem sehen kann:**
 
--  Telefonnummer: Bei **unternehmenseigenen** Geräten wird möglicherweise Ihre vollständige Telefonnummer angezeigt. Bei Geräten, die **persönliches** Eigentum sind, werden der Organisation nur die letzten vier Ziffern Ihrer Telefonnummer angezeigt. Um den **Besitztyp** jedes einzelnen Geräts festzustellen, öffnen Sie die Seite **Gerätedetails** des Geräts.
+- Telefonnummer: Bei **unternehmenseigenen** Geräten wird möglicherweise Ihre vollständige Telefonnummer angezeigt. Bei Geräten, die **persönliches** Eigentum sind, werden der Organisation nur die letzten vier Ziffern Ihrer Telefonnummer angezeigt. Um den **Besitztyp** jedes einzelnen Geräts festzustellen, öffnen Sie die Seite **Gerätedetails** des Geräts.
 - Speicherplatz auf dem Gerät: Wenn Sie eine erforderliche App installieren, prüft Ihre Organisation möglicherweise den freien Speicherplatz auf Ihrem Gerät, um festzustellen, ob genügend Speicherplatz vorhanden ist.  
--  Standort: Ihre Organisation kann den Standort Ihres Geräts niemals anzeigen, sofern Sie nicht ein überwachtes iOS-Gerät auffinden müssen, das verloren gegangen ist. In der [Dokumentation zu Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) erhalten Sie weitere Informationen zu überwachten Geräten.  
+- Standort: Ihre Organisation kann den Standort Ihres Geräts niemals anzeigen, sofern Sie nicht ein überwachtes iOS-Gerät auffinden müssen, das verloren gegangen ist. In der [Dokumentation zu Apple iOS](https://go.microsoft.com/fwlink/?linkid=853816) erhalten Sie weitere Informationen zu überwachten Geräten.  
 - App-Bestandsinformationen: Wenn Ihr Unternehmen Mobile Threat Defense verwendet, können Informationen zu den Apps auf Ihrem iOS-Gerät eingesehen werden. Erfahren Sie mehr über [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
 - Netzwerkinformationen: Möglicherweise sind einige Informationen über Netzwerkverbindungen für Android-Geräte für den Support Ihrer Organisation verfügbar. Wenn Ihre Organisation beispielsweise verlangt, dass Geräte in einem bestimmten Gebäude bleiben, identifiziert Ihr Gerät das Netzwerk, mit dem es verbunden ist. 

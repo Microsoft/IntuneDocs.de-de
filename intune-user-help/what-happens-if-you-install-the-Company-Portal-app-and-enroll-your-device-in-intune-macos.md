@@ -18,51 +18,51 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c92489b00bd8d504b89fe0cc590b1d1b27bb5dde
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b52fdb40f23e1756edb3c656c67d3d9d8c39ae51
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55833756"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546477"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-macos-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr macOS-Gerät bei Intune registrieren?
 
 Wenn Sie die Unternehmensportal-App installieren und Ihr macOS-Gerät bei Intune registrieren, können Sie folgende Aufgaben mit der Unternehmensportal-App ausführen:
 
--   Zugreifen auf das Netzwerk des Unternehmens und auf E-Mails sowie andere arbeitsbezogene Dateien
+- Zugreifen auf das Netzwerk des Unternehmens und auf E-Mails sowie andere arbeitsbezogene Dateien
 
--   Abrufen von Unternehmens-Apps aus dem Unternehmensportal
+- Abrufen von Unternehmens-Apps aus dem Unternehmensportal
 
--   Remote-Zurücksetzen Ihres Telefons auf die Werkseinstellungen bei Verlust oder Diebstahl
+- Remote-Zurücksetzen Ihres Telefons auf die Werkseinstellungen bei Verlust oder Diebstahl
 
--   Automatisches Einrichten Ihres Unternehmens-E-Mail-Kontos
+- Automatisches Einrichten Ihres Unternehmens-E-Mail-Kontos
 
 Wenn Sie Ihr Gerät bei Intune registrieren, gestatten Sie damit dem Support Ihres Unternehmens, Ihr Gerät zu verwalten, damit die Unternehmensdaten auf dem Gerät geschützt werden.
 
 Wenn Ihr Gerät registriert ist, kann der Support Ihres Unternehmens die folgenden Aufgaben erledigen:
 
--   Zurücksetzen Ihres Geräts auf die standardmäßigen Werkseinstellungen, wenn das Gerät verloren oder gestohlen wurde.
+- Zurücksetzen Ihres Geräts auf die standardmäßigen Werkseinstellungen, wenn das Gerät verloren oder gestohlen wurde.
 
--   Entfernen aller installierten, unternehmensrelevanten Daten und Branchen-Apps. Ihre persönlichen Daten und Einstellungen werden nicht entfernt.
+- Entfernen aller installierten, unternehmensrelevanten Daten und Branchen-Apps. Ihre persönlichen Daten und Einstellungen werden nicht entfernt.
 
--   Anfordern eines Kennworts oder einer PIN auf dem Gerät.
+- Anfordern eines Kennworts oder einer PIN auf dem Gerät.
 
--   Sie müssen die Bedingungen akzeptieren.
+- Sie müssen die Bedingungen akzeptieren.
 
--   Deaktivieren Sie die Kamera auf Ihrem Gerät, damit keine Aufnahmen von sensiblen Unternehmensdaten gemacht werden können.
+- Deaktivieren Sie die Kamera auf Ihrem Gerät, damit keine Aufnahmen von sensiblen Unternehmensdaten gemacht werden können.
 
--   Aktivieren oder Deaktivieren von Webbrowsen auf dem Gerät.
+- Aktivieren oder Deaktivieren von Webbrowsen auf dem Gerät.
 
--   Aktivieren oder Deaktivieren der Sicherung in der iCloud.
+- Aktivieren oder Deaktivieren der Sicherung in der iCloud.
 
--   Aktivieren oder Deaktivieren der Dokumentsynchronisierung mit der iCloud.
+- Aktivieren oder Deaktivieren der Dokumentsynchronisierung mit der iCloud.
 
--   Aktivieren oder Deaktivieren eines Fotostreams in die iCloud.
+- Aktivieren oder Deaktivieren eines Fotostreams in die iCloud.
 
--   Aktivieren oder Deaktivieren von Datenroaming auf dem Gerät. Wenn Datenroaming zulässig ist, können Roaminggebühren anfallen.
+- Aktivieren oder Deaktivieren von Datenroaming auf dem Gerät. Wenn Datenroaming zulässig ist, können Roaminggebühren anfallen.
 
--   Aktivieren oder Deaktivieren von Sprachroaming auf dem Gerät. Wenn Sprachroaming zulässig ist, können Roaminggebühren anfallen.
+- Aktivieren oder Deaktivieren von Sprachroaming auf dem Gerät. Wenn Sprachroaming zulässig ist, können Roaminggebühren anfallen.
 
--   Aktivieren oder Deaktivieren einer automatischen Synchronisierung von Dateien im Roamingmodus auf dem Gerät. Wenn die automatische Synchronisierung von Dateien zulässig ist, können Roaminggebühren anfallen.
+- Aktivieren oder Deaktivieren einer automatischen Synchronisierung von Dateien im Roamingmodus auf dem Gerät. Wenn die automatische Synchronisierung von Dateien zulässig ist, können Roaminggebühren anfallen.
 
 Wenn Sie Fragen haben, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

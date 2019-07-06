@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ebca73344b88778a4d734e0690615d0aa3a20b5
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 4dd9fc00475c8a8eea28bef2150f25639ac38e15
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041777"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572600"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Installieren des Intune-Softwareclients auf Windows-PCs
 
@@ -68,34 +68,34 @@ Auf den Computern, auf denen die Clientsoftware installiert werden soll, wechsel
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>Bereitstellen der Clientsoftware mithilfe von Gruppenrichtlinien
 
-1.  Führen Sie im Ordner, der die Dateien **Microsoft_Intune_Setup.exe** und **MicrosoftIntune.accountcert** enthält, den folgenden Befehl aus, um die Windows Installer-basierten Installationsprogramme für 32-Bit- und 64-Bit-Computer zu extrahieren:
+1. Führen Sie im Ordner, der die Dateien **Microsoft_Intune_Setup.exe** und **MicrosoftIntune.accountcert** enthält, den folgenden Befehl aus, um die Windows Installer-basierten Installationsprogramme für 32-Bit- und 64-Bit-Computer zu extrahieren:
 
     ```
     Microsoft_Intune_Setup.exe/Extract <destination folder>
     ```
 
-2.  Kopieren Sie die Dateien **Microsoft_Intune_x86.msi**, **Microsoft_Intune_x64.msi** und **MicrosoftIntune.accountcert** in einen Netzwerkpfad, auf den alle Computer, auf denen die Clientsoftware installiert werden soll, zugreifen können.
+2. Kopieren Sie die Dateien **Microsoft_Intune_x86.msi**, **Microsoft_Intune_x64.msi** und **MicrosoftIntune.accountcert** in einen Netzwerkpfad, auf den alle Computer, auf denen die Clientsoftware installiert werden soll, zugreifen können.
 
     > [!IMPORTANT]
     > Benennen Sie die Dateien nicht um, und trennen sie sie nicht, da bei der Installation der Clientsoftware sonst ein Fehler auftritt.
 
-3.  Verwenden Sie Gruppenrichtlinien, um die Software auf Computern in Ihrem Netzwerk bereitzustellen.
+3. Verwenden Sie Gruppenrichtlinien, um die Software auf Computern in Ihrem Netzwerk bereitzustellen.
 
     Weitere Informationen zum automatischen Bereitstellen von Software mithilfe von Gruppenrichtlinien finden Sie unter [Gruppenrichtlinien für Anfänger](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## <a name="deploy-the-client-software-as-part-of-an-image"></a>Bereitstellen der Clientsoftware als Teil eines Images
 Sie können die Intune-Clientsoftware als Teil eines Betriebssystemabbilds auf Computern installieren. Verwenden Sie dazu die folgende Vorgehensweise als Leitfaden:
 
-1.  Kopieren Sie die Clientinstallationsdateien **Microsoft_Intune_Setup.exe** und **MicrosoftIntune.accountcert** in den Ordner **%Systemdrive%\Temp\Microsoft_Intune_Setup** auf dem Referenzcomputer.
+1. Kopieren Sie die Clientinstallationsdateien **Microsoft_Intune_Setup.exe** und **MicrosoftIntune.accountcert** in den Ordner **%Systemdrive%\Temp\Microsoft_Intune_Setup** auf dem Referenzcomputer.
 
-2.  Erstellen Sie den Registrierungseintrag **WindowsIntuneEnrollPending** , indem Sie dem Skript **SetupComplete.cmd** den folgenden Befehl hinzufügen:
+2. Erstellen Sie den Registrierungseintrag **WindowsIntuneEnrollPending** , indem Sie dem Skript **SetupComplete.cmd** den folgenden Befehl hinzufügen:
 
     ```
     %windir%\system32\reg.exe add HKEY_LOCAL_MACHINE\Software\Microsoft\Onlinemanagement\Deployment /v
     WindowsIntuneEnrollPending /t REG_DWORD /d 1
     ```
 
-3.  Fügen Sie **setupcomplete.cmd** den folgenden Befehl hinzu, um das Registrierungspaket mit dem Befehlszeilenargument „/PrepareEnroll“ auszuführen:
+3. Fügen Sie **setupcomplete.cmd** den folgenden Befehl hinzu, um das Registrierungspaket mit dem Befehlszeilenargument „/PrepareEnroll“ auszuführen:
 
     ```
     %systemdrive%\temp\Microsoft_Intune_Setup\Microsoft_Intune_Setup.exe /PrepareEnroll
@@ -103,9 +103,9 @@ Sie können die Intune-Clientsoftware als Teil eines Betriebssystemabbilds auf C
     > [!TIP]
     > Mithilfe des Skripts **SetupComplete.cmd** können von Windows Setup Veränderungen am System vorgenommen werden, bevor sich ein Benutzer anmeldet. Durch das Befehlszeilenargument **/PrepareEnroll** wird ein Zielcomputer auf die automatische Registrierung bei Intune nach Beenden von Windows Setup vorbereitet.
 
-4.  Legen Sie die Datei **SetupComplete.cmd** auf dem Referenzcomputer im Ordner **%Windir%\Setup\Scripts** ab.
+4. Legen Sie die Datei **SetupComplete.cmd** auf dem Referenzcomputer im Ordner **%Windir%\Setup\Scripts** ab.
 
-5.  Erstellen Sie ein Systemabbild des Referenzcomputers, und stellen sie es auf den Zielcomputern bereit.
+5. Erstellen Sie ein Systemabbild des Referenzcomputers, und stellen sie es auf den Zielcomputern bereit.
 
     Wenn der Zielcomputer nach Beenden von Windows Setup neu gestartet wird, wird der Registrierungsschlüssel **WindowsIntuneEnrollPending** erstellt. Mit dem Registrierungspaket wird überprüft, ob der Computer registriert ist. Wenn der Computer registriert ist, ist keine weitere Aktion erforderlich. Wenn der Computer nicht registriert ist, wird vom Registrierungspaket eine Aufgabe zur automatischen Microsoft Intune-Registrierung erstellt.
 
@@ -119,13 +119,13 @@ Benutzer können die Intune-Clientsoftware installieren, indem Sie auf die [Unte
 
 Wenn Benutzern keine Lizenz für Intune zugewiesen wurde oder die MDM-Autorität der Organisation nicht auf Intune festgelegt wurde, werden den Benutzern keine Optionen zum Registrieren angezeigt.
 
-Wenn Benutzern eine Lizenz für Intune zugewiesen wurde und die MDM-Autorität der Organisation auf Intune festgelegt wurde, gilt Folgendes:
+Wenn Benutzern eine Lizenz für Intune zugewiesen wurde und die MDM-Autorität der Organisation auf Intune festgelegt wurde:
 
-- Windows 7- oder Windows 8-PC-Benutzern wird die Option zum Anmelden bei Intune NUR angezeigt, wenn sie die PC-Clientsoftware, die für ihre Organisation eindeutig ist, herunterladen und installieren.
+- Windows 7- oder Windows 8-PC-Benutzern wird die Option zum Anmelden bei Intune NUR angezeigt, indem sie die PC-Clientsoftware, die in ihrer Organisation eindeutig ist, herunterladen und installieren.
 
 - Windows 10- oder Windows 8.1-PC-Benutzern werden zwei Registrierungsoptionen angezeigt:
 
-  -  **PC als mobiles Gerät registrieren**: Benutzer wählen die Schaltfläche **ANLEITUNG ZUM REGISTRIEREN** und werden zu Anweisungen weitergeleitet, wie sie ihren PC als mobiles Gerät registrieren. Diese Schaltfläche wird hervorgehoben angezeigt, da die MDM-Registrierung die Standardeinstellung und die bevorzugte Registrierungsoption ist. Die MDM-Option ist jedoch nicht auf dieses Thema anwendbar, das nur die Installation der Clientsoftware behandelt.
+  - **PC als mobiles Gerät registrieren**: Benutzer wählen die Schaltfläche **ANLEITUNG ZUM REGISTRIEREN** und werden zu Anweisungen weitergeleitet, wie sie ihren PC als mobiles Gerät registrieren. Diese Schaltfläche wird hervorgehoben angezeigt, da die MDM-Registrierung die Standardeinstellung und die bevorzugte Registrierungsoption ist. Die MDM-Option ist jedoch nicht auf dieses Thema anwendbar, das nur die Installation der Clientsoftware behandelt.
   - **Registrieren des PCs mit Intune-Clientsoftware**: Ihre Benutzer müssen den Link **Zum Herunterladen hier klicken** auswählen, der sie durch die Installation der Clientsoftware führt.
 
 In der folgende Tabelle werden die Optionen zusammengefasst.
@@ -171,19 +171,19 @@ Verwenden Sie eins der folgenden Verfahren, um die erfolgreiche Clientbereitstel
 
 ### <a name="to-verify-the-installation-of-the-client-software-from-the-microsoft-intune-administrator-console"></a>So überprüfen Sie die Installation der Clientsoftware mithilfe der Microsoft Intune-Administratorkonsole
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle Geräte** &gt; **Alle Computer**.
+1. Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Gruppen** &gt; **Alle Geräte** &gt; **Alle Computer**.
 
-2.  Suchen Sie in der Liste der Computer die verwalteten Computer, von denen mit Intune kommuniziert wird. Um nach einem bestimmten verwalteten Computer zu suchen, geben Sie den Computernamen oder einen Teil des Namens in das Textfeld **Geräte suchen** ein.
+2. Suchen Sie in der Liste der Computer die verwalteten Computer, von denen mit Intune kommuniziert wird. Um nach einem bestimmten verwalteten Computer zu suchen, geben Sie den Computernamen oder einen Teil des Namens in das Textfeld **Geräte suchen** ein.
 
-3.  Überprüfen Sie den Status des Computers im unteren Bereich der Konsole. Beheben Sie alle Fehler.
+3. Überprüfen Sie den Status des Computers im unteren Bereich der Konsole. Beheben Sie alle Fehler.
 
 ### <a name="to-create-a-computer-inventory-report-to-display-all-enrolled-computers"></a>So erstellen Sie einen Computerinventurbericht zum Anzeigen aller registrierten Computer
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Berichte** &gt; **Computerinventurberichte**.
+1. Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Berichte** &gt; **Computerinventurberichte**.
 
-2.  Belassen Sie auf der Seite **Neuen Bericht erstellen** die Standardwerte in den Feldern (sofern Sie keine Filter anwenden möchten), und klicken Sie anschließend auf **Bericht anzeigen**.
+2. Belassen Sie auf der Seite **Neuen Bericht erstellen** die Standardwerte in den Feldern (sofern Sie keine Filter anwenden möchten), und klicken Sie anschließend auf **Bericht anzeigen**.
 
-3.  In einem neuen Fenster wird die Seite **Computerinventurbericht** geöffnet, auf der alle erfolgreich bei Intune registrierten Computer angezeigt werden.
+3. In einem neuen Fenster wird die Seite **Computerinventurbericht** geöffnet, auf der alle erfolgreich bei Intune registrierten Computer angezeigt werden.
 
     > [!TIP]
     > Klicken Sie im Bericht auf beliebige Spaltenüberschriften, um die Liste nach dem Inhalt der betreffenden Spalte zu sortieren.
@@ -258,7 +258,7 @@ Führen Sie mithilfe einer Eingabeaufforderung mit erhöhten Rechten die folgend
 
 Der Prozess zur Aufhebung der Registrierung entfernt nicht den OnlineManagement-Ordner. Warten Sie nach der Deinstallation 30 Minuten, und führen Sie dann diesen Befehl aus. Wenn Sie ihn zu früh ausführen, kann die Deinstallation in einem unbekannten Status verbleiben. Um den Ordner zu entfernen, starten Sie einen Befehl mit erhöhten Rechten, und führen Sie folgendes aus:
 
-    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
 
 ### <a name="next-steps"></a>Nächste Schritte
 [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Intune-Softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

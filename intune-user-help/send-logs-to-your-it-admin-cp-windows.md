@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9ecf976ea973fdb1a9b8025fec0bf49d7f87d0c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5df4fce5c07f416d5fa53ef653d62d9166fb1a11
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836471"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67528774"
 ---
 # <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>E-Mails zu Problemen an den Support Ihres Unternehmens über das Unternehmensportal für Windows
 
@@ -32,7 +32,7 @@ Beheben Sie Ihre App-Probleme mithilfe der Unternehmensportal-App für Windows 1
 Wenn Sie Hilfe anfordern, wird eine vorgefasste E-Mail geöffnet, in der Sie das Problem genau beschreiben können. Die enthält auch eine Diagnoseprotokoll-ID. Sollte Ihr Supportteam das Problem nicht anhand Ihrer Beschreibung beheben können, wendet es sich für weitere Hilfe an Microsoft. Microsoft benötigt die Diagnose-ID, um auf die Protokolle der App zu verweisen.   
 
 
-> [!Note]       
+> [!Note]
 > Nachdem Sie auf **Hilfe anfordern** geklickt haben, sendet das Unternehmensportal Ihre Protokolle automatisch an das Microsoft-Supportteam. Dieser proaktive Schritt vereinfacht das Melden und Beheben von Problemen, die an den Microsoft-Support eskaliert wurden. Wie oben erwähnt, kann das Microsoft-Supportteam mithilfe der in Ihrer E-Mail enthaltenen Diagnose-ID Protokolle abrufen.  
 
 ## <a name="what-is-a-diagnostic-log"></a>Was ist ein Diagnoseprotokoll?

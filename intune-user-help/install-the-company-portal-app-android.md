@@ -18,30 +18,30 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2bcae8e48fd9c6558d77aced73d12b15e54b2f7
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: fe6cd46f6a85204d5859993a69ac5bf5b253e048
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67040941"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546338"
 ---
 # <a name="install-the-company-portal-app-for-android"></a>Installieren der Unternehmensportal-App für Android
 
 Das Unternehmensportal ist eine App, mit der Sie auf Ihre Unternehmens-, Schul- oder Uni-Apps, E-Mails und Internetverbindungen zugreifen können. Mit dieser App können Sie dafür sorgen, dass sowohl die Informationen Ihrer Organisation als auch Ihr Gerät sicher und geschützt sind: Halten Sie Ihre Unternehmens-Apps auf dem neuesten Stand, und stellen Sie sicher, dass Ihr Gerät sich nach einem bestimmten Zeitraum selbst sperrt. Weitere Informationen zu den Funktionen der Unternehmensportal-App und ihren Teil in der geräteverwaltung finden Sie unter [Gründe für das Registrieren Ihres Android-Geräts](why-enroll-android-device.md).  
 
-1.  Tippen Sie auf **Home** > **Play Store**.
+1. Tippen Sie auf **Home** > **Play Store**.
 
-2.  Geben Sie im Feld **Suchen** den Begriff **Intune-Unternehmensportal** ein.  
+2. Geben Sie im Feld **Suchen** den Begriff **Intune-Unternehmensportal** ein.  
 
-3.  Tippen Sie auf **Intune-Unternehmensportal**.
+3. Tippen Sie auf **Intune-Unternehmensportal**.
 
     ![android-search-company-portal](./media/and-cpinstall-1-search-cp.png)
 
-4.  Tippen Sie auf **INSTALLIEREN**.
+4. Tippen Sie auf **INSTALLIEREN**.
 
     ![android-install-company-portal](./media/and-cpinstall-2-install.png)
 
-5.  Tippen Sie auf **AKZEPTIEREN**.
+5. Tippen Sie auf **AKZEPTIEREN**.
 
     ![android-accept-company-portal-terms](./media/and-cpinstall-3-cp-accept.png)
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1a725ff5ba5a677a41fe2a89b999f1ae41b3b6f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a58339f8a956e4250064bc81e2f291a72c27c27f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040904"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549149"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs
 
@@ -79,13 +79,13 @@ Wählen Sie im **TeamViewer**-Fenster im Menü **Aktionen** den Befehl **Sitzung
 ## <a name="remotely-restart-a-windows-pc"></a>Remoteneustart eines Windows-PCs
 Wenn Sie Ihre Benutzer bei Problemen unterstützen, müssen Sie deren PC möglicherweise von Zeit zu Zeit remote neu starten. Gehen Sie folgendermaßen vor, um einen Remoteneustart für einen Windows-PC auszuführen.
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Gruppen** &gt; **Alle Geräte** aus (oder eine andere Gruppe, in der der PC enthalten ist, den Sie erneut starten möchten).
+1. Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) die Option **Gruppen** &gt; **Alle Geräte** aus (oder eine andere Gruppe, in der der PC enthalten ist, den Sie erneut starten möchten).
 
-2.  Wählen Sie mindestens einen PC aus, und wählen Sie dann **Remoteaufgaben** &gt; **Computer neu starten**.
+2. Wählen Sie mindestens einen PC aus, und wählen Sie dann **Remoteaufgaben** &gt; **Computer neu starten**.
 
-3.  Zur Anzeige des Aufgabenstatus wählen Sie **Remoteaufgaben** unten rechts auf der Seite aus.
+3. Zur Anzeige des Aufgabenstatus wählen Sie **Remoteaufgaben** unten rechts auf der Seite aus.
 
-4.  Überprüfen Sie im Dialogfeld **Taskstatus** die aktuellen Remoteaufgaben, den Aufgabenstatus, den Gerätenamen und etwaige gemeldete Fehler.
+4. Überprüfen Sie im Dialogfeld **Taskstatus** die aktuellen Remoteaufgaben, den Aufgabenstatus, den Gerätenamen und etwaige gemeldete Fehler.
 
 ### <a name="see-also"></a>Siehe auch
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d3e74244315b7345a632a9ecd2bf631a134e5ab
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 64a872a43a0f8353a6f0e5ad15f4a96d25cf6ef0
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045022"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512160"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Schützen von Office 365 Exchange Online ohne erforderliche Geräteverwaltung
 

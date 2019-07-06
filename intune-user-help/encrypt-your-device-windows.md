@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b39cc879c9e1232335c38e8d95c0861a12662c6a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 4784bcb706dd8eef395763729e04503682197f78
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57564464"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545264"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>So schützen Sie Ihr Windows-Gerät mit Verschlüsselung
 
@@ -37,8 +37,8 @@ Wenn Sie ein Windows Phone verwenden und dieses registriert haben, wird Ihr Ger�
 
 Wenn Sie ein Desktopgerät besitzen, folgen Sie zum Verschlüsseln den folgenden Anweisungen.
 
-1.  Suchen und starten Sie die App **BitLocker verwalten**.
+1. Suchen und starten Sie die App **BitLocker verwalten**.
 
-2.  Wählen Sie **BitLocker aktivieren** aus, und folgen Sie den Anweisungen, um alle Ihre Laufwerke zu verschlüsseln.
+2. Wählen Sie **BitLocker aktivieren** aus, und folgen Sie den Anweisungen, um alle Ihre Laufwerke zu verschlüsseln.
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Website des Unternehmensportals](https://go.microsoft.com/fwlink/?linkid=2010980).

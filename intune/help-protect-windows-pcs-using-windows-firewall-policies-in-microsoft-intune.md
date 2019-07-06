@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3b552c42a7a84ad8099a406bfff2db575785915
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403011"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572514"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Unterstützen des Schutzes von Windows-PCs mithilfe von Windows-Firewall-Richtlinien in Microsoft Intune
 
@@ -48,14 +48,14 @@ Mit der Windows-Firewall-Richtlinie können Sie Einstellungen erstellen und bere
 > [!IMPORTANT]
 > Zum Verwalten der Windows-Firewall mit Intune müssen Sie sicherstellen, dass die folgenden beiden Dienste auf den verwalteten Computern aktiviert sind:
 >
-> -   Windows-Firewall
-> -   IPsec-Richtlinien-Agent
+> - Windows-Firewall
+> - IPsec-Richtlinien-Agent
 
 ## <a name="configure-a-windows-firewall-policy"></a>Konfigurieren einer Windows-Firewall-Richtlinie
 
-1.  Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) **Richtlinie** &gt; **Richtlinie hinzufügen** aus.
+1. Wählen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) **Richtlinie** &gt; **Richtlinie hinzufügen** aus.
 
-2.  Konfigurieren Sie eine Richtlinie für **Windows-Firewall-Einstellungen**, und stellen Sie sie bereit. Sie können die empfohlenen Einstellungen verwenden oder die Einstellungen anpassen. Weitere Informationen zum Erstellen und Bereitstellen von Richtlinien finden Sie unter [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
+2. Konfigurieren Sie eine Richtlinie für **Windows-Firewall-Einstellungen**, und stellen Sie sie bereit. Sie können die empfohlenen Einstellungen verwenden oder die Einstellungen anpassen. Weitere Informationen zum Erstellen und Bereitstellen von Richtlinien finden Sie unter [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
     Im folgenden Abschnitt sind die Werte, die Sie in der Richtlinie konfigurieren können, sowie die Standardwerte aufgeführt, die verwendet werden, wenn Sie die Richtlinie nicht anpassen.
 
@@ -84,7 +84,7 @@ Mit diesen Richtlinieneinstellungen konfigurieren Sie die Windows-Firewall zum B
 Der Standardwert für jede dieser Einstellungen ist **Ja** (der sicherste Wert).
 
 > [!IMPORTANT]
-> Wenn in Ihrer Umgebung verwaltete Computer mit Windows Vista ohne installierte Service Packs vorhanden sind, müssen Sie entweder das Update installieren, das mit [Artikel 971800](http://go.microsoft.com/fwlink/?LinkId=188405) in der Microsoft Knowledge Base verknüpft ist, oder die Richtlinieneinstellung **Block all incoming connections** (Alle eingehenden Verbindungen blockieren) in den Richtlinien auf den entsprechenden Computern deaktivieren.
+> Wenn in Ihrer Umgebung verwaltete Computer mit Windows Vista ohne installierte Service Packs vorhanden sind, müssen Sie entweder das Update installieren, das mit [Artikel 971800](http://go.microsoft.com/fwlink/?LinkId=188405) in der Microsoft Knowledge Base verknüpft ist, oder die Richtlinieneinstellung **Alle eingehenden Verbindungen blockieren** in den Richtlinien auf den entsprechenden Computern deaktivieren.
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Benutzer benachrichtigen, wenn ein neues Programm von der Windows-Firewall blockiert wird
 

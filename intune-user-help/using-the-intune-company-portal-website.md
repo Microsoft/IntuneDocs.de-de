@@ -18,32 +18,32 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1119c9602d2577f8041ad528d012adf9652dc641
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5ebf8d43bd18629d38be24929b3df5c12a7e244b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837372"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546532"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Verwenden der Intune-Unternehmensportal-Website
 Verwenden Sie die [Unternehmensportalwebsite](https://portal.manage.microsoft.com) zum Anzeigen, Bearbeiten, Hinzufügen und Entfernen Ihrer verwalteten Geräte.
 
 Über die Unternehmensportalwebsite können Sie die folgenden Aktionen ausführen:
 
--   [Umbenennen Ihres Geräts](rename-your-device-cpwebsite.md)
+- [Umbenennen Ihres Geräts](rename-your-device-cpwebsite.md)
 
--   [Entfernen Ihres Geräts](remove-your-device-cpwebsite.md)
+- [Entfernen Ihres Geräts](remove-your-device-cpwebsite.md)
 
--   [Zurücksetzen Ihres Geräts](reset-erase-your-device-cpwebsite.md)
+- [Zurücksetzen Ihres Geräts](reset-erase-your-device-cpwebsite.md)
 
--   [Zurücksetzen der Kennung Ihres Geräts](reset-your-passcode-cpwebsite.md)
+- [Zurücksetzen der Kennung Ihres Geräts](reset-your-passcode-cpwebsite.md)
 
--   [Remotesperren eines Geräts](remote-lock-your-device-cpwebsite.md)
+- [Remotesperren eines Geräts](remote-lock-your-device-cpwebsite.md)
 
--   Suchen der Kontaktinformationen für den Support Ihres Unternehmens, wenn Sie diese Informationen konfiguriert haben
+- Suchen der Kontaktinformationen für den Support Ihres Unternehmens, wenn Sie diese Informationen konfiguriert haben
 
--   Überprüfen des Kompatibilitätsstatus
+- Überprüfen des Kompatibilitätsstatus
 
--   Remoteverwalten eines PCs
+- Remoteverwalten eines PCs
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

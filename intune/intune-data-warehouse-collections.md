@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8581d047e76ac1734b2d6c7816facf601e397957
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 816ac1d97e7be485717905fe9d5d62b812408446
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041719"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67512215"
 ---
-#  <a name="intune-data-warehouse-collections"></a>Intune Data Warehouse-Sammlungen
+# <a name="intune-data-warehouse-collections"></a>Intune Data Warehouse-Sammlungen
 
 Die folgenden Intune Data Warehouse-Sammlungen bieten die Eigenschaften, Beschreibungen und Beispiele für v1.0-Sammlungen der Data Warehouse-API-Entitäten. 
 
@@ -129,7 +129,7 @@ Die **date**-Entität stellt Datumsangaben dar, die auf mehrere Data Warehouse-E
 |     Eigenschaft    |                       Beschreibung                      |    Beispiel    |
 |:---------------:|:------------------------------------------------------:|:-------------:|
 | DateKey         | Eindeutiger Bezeichner für dieses Datum im Data Warehouse | 20160703      |
-| FullDate        | Dieses Datum wird im vollständigen Datums- und Uhrzeitformat dargestellt        | 3.7.2016 0:00 |
+| FullDate        | Dieses Datum wird im vollständigen Datums- und Uhrzeitformat dargestellt        | 3\.7.2016 0:00 |
 | DayOfWeek       | Wochentag                                            | 1             |
 | DayOfMonth      | Tag des Monats                                           | 3             |
 | DayOfYear       | Tag des Jahres                                            | 185           |
@@ -138,7 +138,7 @@ Die **date**-Entität stellt Datumsangaben dar, die auf mehrere Data Warehouse-E
 | CalendarQuarter | Kalenderquartal                                       | 3             |
 | CalendarYear    | Kalenderjahr                                          | 2016          |
 | DateKey         | Eindeutiger Bezeichner für dieses Datum im Data Warehouse | 20160703      |
-| FullDate        | Dieses Datum wird im vollständigen Datums- und Uhrzeitformat dargestellt        | 3.7.2016 0:00 |
+| FullDate        | Dieses Datum wird im vollständigen Datums- und Uhrzeitformat dargestellt        | 3\.7.2016 0:00 |
 | DayOfWeek       | Wochentag                                            | 1             |
 | DayOfMonth      | Tag des Monats                                           | 3             |
 | DayOfYear       | Tag des Jahres                                            | 185           |

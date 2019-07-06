@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ace484d0c4e832470ae9a6e4ffc69290c7d657
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 733cb20c43b34393003f2e9f4f4466922f3f581e
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044954"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572547"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Verwalten von Windows-PCs als Computer mit dem Intune-Softwareclient
 
@@ -49,7 +49,7 @@ Im Folgenden sind die Hardwaremindestanforderungen zum Installieren der Intune-C
 |---------------|--------------------|
 |Netzwerk|Für den Client ist ein PC mit Internetzugriff erforderlich.|
 |Prozessor und Arbeitsspeicher|Weitere Informationen entnehmen Sie den Prozessor- und Arbeitsspeicheranforderungen des PC-Betriebssystems.|
-|Speicherplatz|200 MB verfügbarer Speicherplatz vor der Installation der Clientsoftware|
+|Speicherplatz|200 MB verfügbarer Speicherplatz vor der Installation der Clientsoftware|
 
 **Software**:  
 Im Folgenden sind die Softwareanforderungen zum Installieren der Clientsoftware aufgeführt:
@@ -70,16 +70,16 @@ Als Intune-Administrator können Sie Benutzern den Intune-Softwareclient auf ver
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Computerverwaltungsfunktionen mit der Intune-Clientsoftware
 In den meisten Szenarios registrieren Sie Ihre Geräte bei Microsoft Intune, sodass Sie über eine größere Anzahl von Funktionen verfügen. Allerdings können Sie PCs auch mit dem Intune-Softwareclient verwalten, der die folgenden Funktionen bietet:
 
--   **[Softwareupdateverwaltung](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** : Sie können PCs auf dem aktuellen Stand halten und entscheiden, wann Updates angewendet werden sollen.
+- **[Softwareupdateverwaltung](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)** : Sie können PCs auf dem aktuellen Stand halten und entscheiden, wann Updates angewendet werden sollen.
 
--   **[Windows-Firewall-Richtlinie](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** : Hiermit können Sie sicherstellen, dass die Windows-Firewall auf keinem von Ihrem Unternehmen verwendeten PC inaktiv oder nicht ordnungsgemäß konfiguriert ist.
+- **[Windows-Firewall-Richtlinie](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md)** : Hiermit können Sie sicherstellen, dass die Windows-Firewall auf keinem von Ihrem Unternehmen verwendeten PC inaktiv oder nicht ordnungsgemäß konfiguriert ist.
 
--   **[Schutz vor Schadsoftware](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** : Intune umfasst Endpoint Protection, um Ihre PCs vor Schadsoftware zu schützen.
+- **[Schutz vor Schadsoftware](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)** : Intune umfasst Endpoint Protection, um Ihre PCs vor Schadsoftware zu schützen.
 
--   **[Remoteunterstützung](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** : Über Intune können Benutzer Kontakt mit IT-Supportmitarbeitern aufnehmen, die ihnen über eine in Intune integrierte Remotedesktop-Funktion Unterstützung bieten können (erfordert TeamViewer-Software).
+- **[Remoteunterstützung](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)** : Über Intune können Benutzer Kontakt mit IT-Supportmitarbeitern aufnehmen, die ihnen über eine in Intune integrierte Remotedesktop-Funktion Unterstützung bieten können (erfordert TeamViewer-Software).
 
--   **[Verwaltung von Softwarelizenzen](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** : Überwachen Sie, wie viele Lizenzen verfügbar sind und wie viele Lizenzen verwendet werden.
--   **[App-Bereitstellung](add-apps-for-windows-pcs-in-microsoft-intune.md)** : Stellen Sie Software auf PCs bereit, die Sie verwalten. Einige App-Verwaltungsfunktionen sind nicht verfügbar, wenn Sie PCs mit dem Softwareclient verwalten.
+- **[Verwaltung von Softwarelizenzen](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)** : Überwachen Sie, wie viele Lizenzen verfügbar sind und wie viele Lizenzen verwendet werden.
+- **[App-Bereitstellung](add-apps-for-windows-pcs-in-microsoft-intune.md)** : Stellen Sie Software auf PCs bereit, die Sie verwalten. Einige App-Verwaltungsfunktionen sind nicht verfügbar, wenn Sie PCs mit dem Softwareclient verwalten.
 
 <!-- - **Compliance settings reporting** -->
 
@@ -113,8 +113,8 @@ Weitere Informationen zu den oben genannten Aufgaben finden Sie unter [allgemein
 
 Einige Verwaltungsoptionen, die zum Verwalten von PCs als mobile Geräte verwendet werden können, sind nicht für PCs geeignet, die mit der Intune-Clientsoftware verwaltet werden:
 
--   Vollständiges Zurücksetzen (selektives Zurücksetzen ist verfügbar)
--   Bedingter Zugriff
+- Vollständiges Zurücksetzen (selektives Zurücksetzen ist verfügbar)
+- Bedingter Zugriff
 
 Beachten Sie auch, dass in der Intune-Administratorkonsole bestimmte Abschnitte, z.B. **Updates**, **Schutz** und **Lizenzen** nur angezeigt werden, wenn Sie Geräte mit der Intune-Clientsoftware registriert haben.
 

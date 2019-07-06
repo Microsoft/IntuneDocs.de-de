@@ -18,12 +18,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 477aa18ebb1e079573e7962429d33a8ca4afabed
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7e4fa124d1b3fdb765ac3da964d57ade5c1c4c65
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55834329"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545622"
 ---
 # <a name="how-to-encrypt-your-windows-device"></a>Vorgehensweise zum Verschlüsseln Ihres Windows-Geräts
 
@@ -31,8 +31,8 @@ Um die Daten Ihres Unternehmens oder Ihrer Bildungseinrichtung zu schützen, sch
 
 Folgen Sie bei einem Desktopgerät den Anweisungen zum Verschlüsseln.
 
-1.  Suchen und starten Sie die App **BitLocker verwalten**.
+1. Suchen und starten Sie die App **BitLocker verwalten**.
 
-2.  Klicken Sie auf **BitLocker aktivieren**, und folgen Sie den Anweisungen, um alle Ihre Laufwerke zu verschlüsseln.
+2. Klicken Sie auf **BitLocker aktivieren**, und folgen Sie den Anweisungen, um alle Ihre Laufwerke zu verschlüsseln.
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

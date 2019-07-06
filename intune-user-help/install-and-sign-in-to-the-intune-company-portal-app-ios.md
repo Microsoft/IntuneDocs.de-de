@@ -18,24 +18,24 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc2173e2972e422ac629331110d3b86b787765da
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 494269b82840331041ac2607ea853dbfb1d979de
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67040954"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546329"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Installieren und Anmelden bei der Unternehmensportal-App
 
 Installieren Sie die Unternehmensportal-App auf Ihrem iOS-Gerät, um Zugriff auf Ihre Arbeits-, Schul- und Uni-Apps, E-Mails und Netzwerke zu erhalten. Verwenden Sie die App, um Ihr Gerät bei Microsoft Intune zu registrieren und seinen Zugriff auf Ihre Arbeits-, Schul- oder Uni-Ressourcen zu sichern. Weitere Informationen finden Sie unter [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
-1.  Öffnen Sie den **App Store**, und suchen Sie nach **Intune-Unternehmensportal**.
+1. Öffnen Sie den **App Store**, und suchen Sie nach **Intune-Unternehmensportal**.
 
-2.  Laden Sie die **Intune-Unternehmensportal**-App herunter.
+2. Laden Sie die **Intune-Unternehmensportal**-App herunter.
 
     ![Screenshot der Intune-Unternehmensportal-App im App Store](./media/CP_iosRedesign_after_1803_04.PNG)
 
-3.  Öffnen Sie die Unternehmensportal-App, geben Sie die E-Mail-Adresse und das Kennwort Ihres Geschäfts-, Schul- oder Unikontos ein, und tippen Sie dann auf **Anmelden**.
+3. Öffnen Sie die Unternehmensportal-App, geben Sie die E-Mail-Adresse und das Kennwort Ihres Geschäfts-, Schul- oder Unikontos ein, und tippen Sie dann auf **Anmelden**.
 
     Wenn Sie sich zum ersten Mal bei der Unternehmensportal-App anmelden und Ihr Unternehmen oder Ihre Schule/Uni Intune verwendet, werden Sie aufgefordert, Ihr Gerät bei Intune zu registrieren. Führen Sie zum Registrieren die unter [Registrieren Ihres iOS-Geräts bei Intune](enroll-your-device-in-intune-ios.md) aufgeführten Schritte aus. Sie können sich auch [über ein anderes Gerät anmelden](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#sign-in-from-another-device).
 

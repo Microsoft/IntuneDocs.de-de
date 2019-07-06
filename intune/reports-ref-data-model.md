@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8756ad134853bdd19155c3d8f50d1f07960e80f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: f90568b3939d37bb4e7fbeff72d5e357bc57bd6e
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045372"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547886"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Microsoft Intune-Data Warehouse-Datenmodell
 
@@ -32,22 +32,22 @@ Intune Data Warehouse entnimmt täglich Datenstichproben, um eine Verlaufsansich
 
 Das Warehouse macht Daten in den folgenden allgemeinen Bereichen verfügbar:
 
-  -  Apps und Nutzung mit aktiviertem App-Schutz
-  -  Registrierte Geräte, Eigenschaften und Inventar
-  -  Apps- und Softwareinventar
-  -  Gerätekonfiguration und Konformitätsrichtlinien
+  - Apps und Nutzung mit aktiviertem App-Schutz
+  - Registrierte Geräte, Eigenschaften und Inventar
+  - Apps- und Softwareinventar
+  - Gerätekonfiguration und Konformitätsrichtlinien
 
 Diese Bereiche enthalten die Entitäten, die für Ihre Intune-Umgebung von Bedeutung sind. Informationen zu den Entitätenmengen finden Sie in den folgenden Themen:
 
-  -  [Anwendung](reports-ref-application.md)
-  -  [Datum](reports-ref-date.md)
-  -  [Geräte](reports-ref-devices.md)
-  -  [Intune-Verwaltungserweiterung](reports-ref-intunemanagementextension.md)
-  -  [Richtlinie](reports-ref-policy.md)
-  -  [Mobile App-Verwaltung (MAM)](reports-ref-mobile-app-management.md)
-  -  [Benutzer](reports-ref-user.md)
-  -  [Aktueller Benutzer](reports-ref-current-user.md)
-  -  [Zuordnung der Benutzergeräte](reports-ref-user-device.md)
+  - [Anwendung](reports-ref-application.md)
+  - [Datum](reports-ref-date.md)
+  - [Geräte](reports-ref-devices.md)
+  - [Intune-Verwaltungserweiterung](reports-ref-intunemanagementextension.md)
+  - [Richtlinie](reports-ref-policy.md)
+  - [Mobile App-Verwaltung (MAM)](reports-ref-mobile-app-management.md)
+  - [Benutzer](reports-ref-user.md)
+  - [Aktueller Benutzer](reports-ref-current-user.md)
+  - [Zuordnung der Benutzergeräte](reports-ref-user-device.md)
 
 ## <a name="relationships-star-schema-model"></a>Beziehungen: Sternschemamodell
 

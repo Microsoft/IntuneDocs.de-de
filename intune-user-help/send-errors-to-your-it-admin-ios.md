@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa48aae8f35ad55e3e836016262056268fd9cd89
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 7a6b2e04e40aa12e791e34f3899686d5f5661df2
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836284"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546691"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Senden von Fehlermeldungen an den Support Ihres Unternehmens bei Problemen mit Ihrem iOS-Gerät
 In einigen Fällen können Fehler auftreten, wenn Sie die Unternehmensportal-App auf Ihrem iOS-Gerät verwenden. In diesen Fällen können Sie Details zum Fehler per E-Mail an einen Supportmitarbeiter senden. Dadurch wird der erforderliche Kontext bereitgestellt, um das Problem zu beheben.
@@ -32,10 +32,10 @@ Wenn Sie die Protokolle in die Unternehmensportal-App hochladen, werden diese zu
 
 Wenn Sie auf Ihrem iOS-Gerät eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App verwenden, können Sie Informationen an den Support Ihres Unternehmens senden, um diesem bei der Behandlung des Problems zu helfen. Sie können Fehlerinformationen auf unterschiedliche Weise senden:
 
--   In Fehlermeldungen: Tippen Sie auf **Melden**.
+- In Fehlermeldungen: Tippen Sie auf **Melden**.
 
--   Tippen Sie auf der Registerkarte **Mehr** der Unternehmensportal-App auf **Hilfe erhalten**.
+- Tippen Sie auf der Registerkarte **Mehr** der Unternehmensportal-App auf **Hilfe erhalten**.
 
--   In der Unternehmensportal-App: Schütteln Sie Ihr Gerät, und tippen Sie auf **Diagnosebericht senden**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** > **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schüttelgeste** aktiviert ist.
+- In der Unternehmensportal-App: Schütteln Sie Ihr Gerät, und tippen Sie auf **Diagnosebericht senden**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** > **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schüttelgeste** aktiviert ist.
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

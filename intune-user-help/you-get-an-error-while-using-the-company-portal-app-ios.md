@@ -18,21 +18,21 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d9ea064da17e5447c08c3a8370017dec34e30af
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 416c109ae9d27ac48896c1601bd8448fa89d0af7
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55844401"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67545614"
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Sie erhalten bei Verwendung der Unternehmensportal-App eine Fehlermeldung
 
 Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem iOS-Gerät verwenden, können Sie Informationen über den Fehler an den Support Ihres Unternehmens senden, um diesem bei der Behandlung des Problems zu helfen. Sie können Fehlerinformationen auf unterschiedliche Weise senden:
 
--   Tippen Sie in Fehlermeldungen auf **Bericht**.
+- Tippen Sie in Fehlermeldungen auf **Bericht**.
 
--   Tippen Sie im Bildschirm **Info** der Unternehmensportal-App auf **Diagnosebericht senden**.
+- Tippen Sie im Bildschirm **Info** der Unternehmensportal-App auf **Diagnosebericht senden**.
 
--   Schütteln Sie Ihr Gerät, während Sie die Unternehmensportal-App geöffnet haben, und tippen Sie auf **E-Mail**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** > **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schüttelgeste** aktiviert ist.
+- Schütteln Sie Ihr Gerät, während Sie die Unternehmensportal-App geöffnet haben, und tippen Sie auf **E-Mail**, wenn die Diagnosewarnung angezeigt wird. Wenn die Warnung beim Schütteln des Geräts nicht angezeigt wird, öffnen Sie **Einstellungen** > **Unternehmensportal**, und stellen Sie sicher, dass die Option **Schüttelgeste** aktiviert ist.
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).
