@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 07/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,20 +16,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5f1b4c0fd0c9d8cfdc443b2af3c6f90a6f32756
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: aea4a3d6f8d28e4277435b1d9fc092e68adb9e55
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373640"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530324"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Verwenden benutzerdefinierter Einstellungen für Android Enterprise-Geräte in Microsoft Intune
 
-Mit Microsoft Intune können Sie benutzerdefinierte Einstellungen für Android Enterprise-Geräte mit einem benutzerdefinierten Profil hinzufügen oder erstellen. Benutzerdefinierte Profile sind ein Feature in Intune. Sie sind dafür da, Geräteeinstellungen und -features hinzuzufügen, die nicht in Intune integriert sind.
+Mit Microsoft Intune können Sie mit einem „benutzerdefinierten Profil“ benutzerdefinierte Einstellungen für Ihre Android Enterprise-Geräte mit Arbeitsprofilen hinzufügen oder erstellen. Benutzerdefinierte Profile sind ein Feature in Intune. Sie sind dafür da, Geräteeinstellungen und -features hinzuzufügen, die nicht in Intune integriert sind.
 
 Benutzerdefinierte Android Enterprise-Profile verwenden die OMA-URI-Einstellungen (Open Mobile Alliance Uniform Resource Identifier) zum Festlegen verschiedener Features auf Android Enterprise-Geräten. Diese Einstellungen werden in der Regel von den Herstellern der Geräte verwendet, um die Features festzulegen.
 
-Intune unterstützt zurzeit eine begrenzte Anzahl von benutzerdefinierten Android Enterprise-Profilen.
+Intune unterstützt eine begrenzte Anzahl von Android Enterprise benutzerdefinierten Profilen, einschließlich:
+
+- ./Vendor/MSFT/WiFi/Profile/SSID/Settings: [erstellen Sie ein WLAN-Profil mit einem vorinstallierten Schlüssel](wi-fi-profile-shared-key.md) enthält einige Beispiele.
+- ./Vendor/MSFT/VPN/Profile/Name/PackageList: [erstellen Sie ein app-bezogenes VPN-Profil](android-pulse-secure-per-app-vpn.md) enthält einige Beispiele.
+- ./Vendor/MSFT/WorkProfile / "disallowcrossprofilecopypaste": finden Sie unter den [Beispiel](#example) (in diesem Artikel).
+
+Wenn Sie zusätzliche Einstellungen benötigen, finden Sie unter [OEMConfig für Android Enterprise](android-oem-configuration-overview.md).
 
 In diesem Artikel erfahren Sie, wie Sie ein benutzerdefiniertes Profil für Android Enterprise-Geräte erstellen. Außerdem wird im Artikel ein Beispiel für ein benutzerdefiniertes Profil aufgezeigt, das Kopier- und Einfügevorgänge blockiert.
 

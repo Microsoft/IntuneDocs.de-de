@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/08/2019
+ms.date: 06/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,24 +16,31 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: 99f51662894cac04e6ebcd821806b433dbf3117e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: de2f201e6a7d0181847db5d212625c9eed9ea698
+ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041243"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67413774"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Entfernen von SCEP- und PKCS-Zertifikaten in Microsoft Intune
 
-In Microsoft Intune können Sie Simple Certificate Enrollment Protocol-Zertifikate (SCEP) und Public Key Cryptography Standards-Zertifikate (PKCS) zu Geräten hinzufügen. Diese Zertifikate können anschließend auch wieder entfernt werden, wenn Sie das Gerät [zurücksetzen](devices-wipe.md#wipe) oder [außer Betrieb nehmen](devices-wipe.md#retire). 
+In Microsoft Intune können Sie mithilfe von Zertifikatprofilen des Typs Simple Certificate Enrollment Protocol (SCEP) und Public Key Cryptography Standards (PKCS) Zertifikate zu Geräten hinzufügen. 
 
-In einigen anderen Szenarios werden Zertifikate automatisch entfernt bzw. sie verbleiben auf dem Gerät. In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und es wird beschrieben, welche Auswirkungen diese auf PKCS- und SCEP-Zertifikate haben.
+Diese Zertifikate können anschließend wieder entfernt werden, wenn Sie das Gerät [zurücksetzen](devices-wipe.md#wipe) oder [außer Betrieb nehmen](devices-wipe.md#retire). In anderen Szenarien werden Zertifikate automatisch entfernt bzw. verbleiben auf dem Gerät. In diesem Artikel werden einige häufig auftretende Szenarios aufgelistet, und es wird beschrieben, welche Auswirkungen diese auf PKCS- und SCEP-Zertifikate haben.
 
 > [!NOTE]
 > Führen Sie die nachfolgenden Schritte in der richtigen Reihenfolge aus, um sicherzustellen, dass Zertifikate für einen Benutzer entfernt bzw. widerrufen werden, der aus einer lokalen Active Directory-Instanz bzw. Azure Active Directory (Azure AD) entfernt wird:
 >
 > 1. Setzen Sie das Gerät des Benutzers zurück, oder nehmen Sie es außer Betrieb.
 > 2. Entfernen Sie den Benutzer aus der lokalen Active Directory-Instanz bzw. aus Azure AD.
+
+## <a name="manually-deleted-certificates"></a>Manuell gelöschte Zertifikate  
+
+Das manuelle Löschen eines Zertifikats ist ein plattformübergreifendes Szenario und gilt für Zertifikate, die von SCEP- oder PKCS-Zertifikatsprofilen bereitgestellt werden. So kann beispielsweise ein Benutzer ein Zertifikat von einem Gerät löschen, wenn das Gerät weiterhin einer Zertifikatsrichtlinie unterliegt.  
+
+Wenn sich das Gerät in diesem Szenario nach dem Löschen des Zertifikats das nächste Mal bei Intune eincheckt, wird festgestellt, dass es nicht mehr konform ist, da ihm das erwartete Zertifikat fehlt. Intune stellt dann ein neues Zertifikat aus, damit das Gerät wieder den Anforderungen entspricht. Es ist keine weitere Aktion erforderlich, um das Zertifikat wiederherzustellen.  
+
 
 ## <a name="windows-devices"></a>Windows-Geräte
 

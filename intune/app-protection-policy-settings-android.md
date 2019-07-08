@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79edbf77f4f6b188d9fa4bf75ce8cacbad9dcf9c
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 524c4aebe6cdde0b0bc45f76a4675bbed8172d67
+ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402777"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67511694"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Einstellungen für App-Schutzrichtlinien in Microsoft Intune
 In diesem Artikel werden die Einstellungen für App-Schutzrichtlinien für Android-Geräte beschrieben. Die beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Einstellungen** für eine Schutzrichtlinie [konfiguriert](app-protection-policies.md) werden.
@@ -31,18 +31,18 @@ Es gibt drei Kategorien von Richtlinieneinstellungen: Datenschutzeinstellungen, 
 > [!IMPORTANT]
 > Das Intune-Unternehmensportal ist auf dem Gerät erforderlich, um App-Schutzrichtlinien für Android-Geräte zu erhalten. Weitere Informationen finden Sie unter [Zugriffsanforderungen für Apps im Intune-Unternehmensportal](end-user-mam-apps-android.md).
 
-##  <a name="data-protection"></a>Datenschutz 
+## <a name="data-protection"></a>Datenschutz 
 ### <a name="data-transfer"></a>Datenübertragung
 | Einstellung | Verwendung | Standardwert |
 |------|------|------|
 | **Organisationsdaten in Android-Sicherungsdiensten sichern** | Wählen Sie **Block** (Blockieren) aus, um zu verhindern, dass diese App Geschäfts-, Schul- oder Unidaten im [Android-Sicherungsdienst](https://developer.android.com/google/backup/index.html) sichert.<br><br> Wählen Sie **Allow** (Zulassen) aus, um dieser App zu erlauben, Geschäfts-, Schul- oder Unidaten zu sichern.| **Zulassen** |
 | **Organisationsdaten an andere Apps senden** | Geben Sie an, welche Apps Daten von dieser App empfangen können: <ul><li> **Richtlinienverwaltete Apps**: Hiermit werden Datenübertragungen nur an andere richtlinienverwaltete Apps zugelassen.</li> <li>**Alle Apps**: Hiermit werden Datenübertragungen an alle Apps zugelassen. </li> <li>**Keine**: Hiermit werden keine Datenübertragungen an Apps zugelassen, auch nicht an andere richtlinienverwaltete Apps.</li></ul> <p>Es gibt einige ausgenommene Apps und Dienste, für die Intune möglicherweise die Datenübertragung zulässt. Darüber hinaus können Sie Ihre eigenen Ausnahmen erstellen, wenn Sie zulassen müssen, dass Daten an eine App übertragen werden, welche die Intune-App nicht unterstützt. Weitere Informationen finden Sie im Artikel mit den [Datenübertragungsausnahmen](app-protection-policy-settings-android.md#data-transfer-exemptions).<p>Diese Richtlinie gilt möglichweise auch für Android-App-Links.  Allgemeine Weblinks werden von der Richtlinieneinstellung **App-Links in Intune Managed Browser öffnen** verwaltet.<p><div class="NOTE"><p>Hinweis</p><p>Intune unterstützt das Android Instant Apps-Feature derzeit nicht. Intune blockiert jegliche Datenbankverbindungen mit der App. Weitere Informationen finden Sie in der Dokumententation für Android-Entwickler unter [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html).</p><p>Wenn **Organisationsdaten an andere Apps senden** auf **Alle Apps** konfiguriert ist, können Textdaten weiterhin per Betriebssystemfreigabe in die Zwischenablage übertragen werden.</p></div> | **All apps** | 
-|<ul><ui> **Wählen Sie die Apps aus, die ausgenommen werden sollen.** | Diese Option ist dann verfügbar, wenn Sie die vorherige Option auf *Richtlinienverwaltete Apps* festgelegt haben. | |
+|<ul><ui>**Wählen Sie die Apps aus, die ausgenommen werden sollen** | Diese Option ist dann verfügbar, wenn Sie die vorherige Option auf *Richtlinienverwaltete Apps* festgelegt haben. | |
 | **Daten von anderen Apps empfangen** | Geben Sie an, welche Apps Daten an diese App übertragen können: <ul><li>**Richtlinienverwaltete Apps**: Hiermit werden Datenübertragungen nur aus anderen richtlinienverwalteten Apps zugelassen.</li><li>**Alle Apps:** Hiermit werden Datenübertragungen aus allen Apps zugelassen.</li><li>**Keine**: Hiermit werden keine Datenübertragungen aus Apps zugelassen, auch nicht aus anderen richtlinienverwalteten Apps. </li></ul> <p>Es gibt einige ausgenommene Apps und Dienste von denen Intune möglicherweise die Datenübertragung zulässt. Unter [Data transfer exemptions (Ausnahmen bei der Datenübertragung)](app-protection-policy-settings-android.md#data-transfer-exemptions) finden Sie eine vollständige Liste der Apps und Dienste. | **All apps** |
 | **Kopieren von Organisationsdaten speichern** | Klicken Sie auf **Block** (Blockieren), um die Verwendung der Option „Speichern unter“ in dieser App zu deaktivieren. Klicken Sie auf **Allow** (Zulassen), wenn die Verwendung von „Speichern unter“ zulässig sein soll. **Hinweis:** *Diese Einstellung wird für Microsoft Excel, OneNote, PowerPoint und Word unterstützt. Sie wird möglicherweise auch von Drittanbietern und LOB-Apps unterstützt.*| **Zulassen** |  
-|<ul><ui> **Benutzer das Speichern von Kopien in den ausgewählten Diensten ermöglichen** |Benutzer können Speichervorgänge in den ausgewählten Diensten (OneDrive for Business, SharePoint und lokaler Speicher) durchführen. Alle anderen Dienste werden blockiert.  | **0 ausgewählt** |
+|<ul><ui>**Benutzer das Speichern von Kopien in den ausgewählten Diensten ermöglichen** |Benutzer können Speichervorgänge in den ausgewählten Diensten (OneDrive for Business, SharePoint und lokaler Speicher) durchführen. Alle anderen Dienste werden blockiert.  | **0 ausgewählt** |
 | **Ausschneiden, Kopieren und Einfügen zwischen Apps einschränken** | Geben Sie an, wann Ausschneide-, Kopier- und Einfügeaktionen in dieser App erlaubt sind. Es stehen die folgenden Optionen zur Auswahl: <ul><li>**Blockiert:**  Hiermit werden keine Ausschneide-, Kopier- und Einfügeaktionen zwischen dieser App und anderen Apps zugelassen.</li><li>**Richtlinienverwaltete Apps**: Hiermit werden Ausschneide-, Kopier- und Einfügeaktionen zwischen dieser App und anderen richtlinienverwalteten Apps zugelassen.</li><li>**Richtlinienverwaltete Apps mit Einfügen:** Hiermit werden Ausschneide- oder Kopieraktionen zwischen dieser App und anderen richtlinienverwalteten Apps zugelassen. Einfügen von Daten aus beliebigen Apps in diese App zulassen.</li><li>**Alle Apps:** Keine Einschränkungen für Ausschneide-, Kopier- und Einfügeaktionen in und aus dieser App. | **Any app** |
-| **Zeichenlimit für Ausschneiden und Kopieren für alle Apps** | Legen Sie die Anzahl von Zeichen fest, die aus Unternehmensdaten und -konten ausgeschnitten oder kopiert werden können.  Damit kann die festgelegte Zeichenanzahl unabhängig von der Einstellung „Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken“ mit einer beliebigen App geteilt werden.<p>Standardwert = 0<p>**Hinweis**: Erfordert mindestens die Intune-Unternehmensportalversion 5.0.4364.0.  | **0** |
+| <ul><ui>**Zeichenlimit für Ausschneiden und Kopieren für alle Apps** | Legen Sie die Anzahl von Zeichen fest, die aus Unternehmensdaten und -konten ausgeschnitten oder kopiert werden können.  Damit kann die festgelegte Zeichenanzahl unabhängig von der Einstellung „Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken“ mit einer beliebigen App geteilt werden.<p>Standardwert = 0<p>**Hinweis**: Erfordert mindestens die Intune-Unternehmensportalversion 5.0.4364.0.  | **0** |
 | **Screen capture and Google Assistant** (Bildschirmaufnahme und Google Assistant) | Wählen Sie **Deaktivieren** aus, um die Bildschirmaufnahme und den Assistenten **Google Assistant** des Geräts zu blockieren, wenn diese App verwendet wird. Wenn Sie **Disable** (Deaktivieren) auswählen, wird auch das Vorschaubild für den App-Schnellzugriff unscharf, wenn diese App mit einem Geschäfts-, Schul- oder Unikonto verwendet wird.| **Aktivieren** |
 
   
@@ -50,7 +50,7 @@ Es gibt drei Kategorien von Richtlinieneinstellungen: Datenschutzeinstellungen, 
 | Einstellung | Verwendung | Standardwert |
 |------|------|------|
 | **Organisationsdaten verschlüsseln** | Wählen Sie **Require** (Erforderlich) aus, um die Verschlüsselung von Geschäfts-, Schul- oder Unidaten in dieser App zu aktivieren. Intune verwendet ein OpenSSL-AES-Verschlüsselungsschema mit 256 Bit sowie das Android Keystore-System, um App-Daten sicher zu verschlüsseln. Daten werden während der Datei-E/A-Tasks synchron verschlüsselt. Inhalt im Gerätespeicher wird immer verschlüsselt. Das SDK bietet zur Kompatibilität mit Inhalten und Apps, die ältere SDK-Versionen verwenden, weiterhin Unterstützung der 128-Bit-Schlüssel. <br><br> Die Verschlüsselungsmethode ist FIPS 140-2-konform.     |  **Require**|  
-
+| <ul><ui>**Organisationsdaten auf registrierten Geräten verschlüsseln** | Wählen Sie **Anfordern** aus, um auf allen Geräten die Verschlüsselung von Organisationsdaten mit der Intune-Verschlüsselung auf App-Ebene zu erzwingen. Wählen Sie **Nicht erforderlich** aus, um auf registrierten Geräten die Verschlüsselung von Organisationsdaten mit der Intune-Verschlüsselung auf App-Ebene nicht zu erzwingen.| **Require** |
 
 
 ### <a name="functionality"></a>Funktionalität
@@ -58,13 +58,16 @@ Es gibt drei Kategorien von Richtlinieneinstellungen: Datenschutzeinstellungen, 
 |------|------|------|
 | **App mit App für native Kontakte synchronisieren** | Wählen Sie **Disable** (Deaktivieren), um zu verhindern, dass die App Daten in der nativen App „Kontakte“ auf dem Gerät speichert. Wenn Sie **Enable** (Aktivieren) wählen, darf die App Daten in der nativen App „Kontakte“ auf dem Gerät speichern. <br><br>Bei Ausführung eines selektiven Zurücksetzens zum Entfernen von Geschäfts-, Schul- oder Unidaten aus der App werden Kontakte entfernt, die direkt aus der App in die native App „Kontakte“ synchronisiert wurden. Kontakte, die aus dem nativen Adressbuch mit einer anderen externen Quelle synchronisiert werden, können nicht zurückgesetzt werden. Dies gilt derzeit nur für die Microsoft Outlook-App. | **Aktivieren** |
 | **Organisationsdaten drucken** | Klicken Sie auf **Disable** (Deaktivieren), um zu verhindern, dass die App Geschäfts-, Schul- oder Unidaten druckt. | **Aktivieren** |
-|**Webinhalt für per Richtlinie verwaltete Browser freigeben** | Legen Sie fest, wie Webinhalt (HTTP-/HTTPS-Links) über mit Richtlinien verwaltete Anwendungen geöffnet werden. Es stehen die folgenden Optionen zur Auswahl:<ul><li>**Require** (Erforderlich): Hiermit wird das Öffnen von Webinhalten nur in mit Richtlinien verwalteten Browsern zugelassen.</li><li>**Nicht konfiguriert:** Hiermit werden Weblinks in jeder App zugelassen. </li></ul><br><br> Wenn Sie Intune zum Verwalten Ihrer Geräte verwenden, lesen Sie [Verwalten des Internetzugriffs durch einen mittels Richtlinien geschützten Microsoft Intune-Browser](app-configuration-managed-browser.md).<br><br>**Mit Richtlinien verwaltete Browser**<br>Wenn Sie mehrere mit Richtlinien verwaltete Browser bereitstellen, wird nur einer gestartet.  Dann wird zuerst Intune Managed Browser und dann Microsoft Edge gestartet.  Unter Android können Endbenutzer andere mit Richtlinien verwaltete Apps auswählen, die HTTP/HTTPS-Links unterstützen, wenn weder Intune Managed Browser noch Microsoft Edge installiert sind.<p>Wenn zwar ein mit Richtlinien verwalteter Browser erforderlich ist, dieser aber nicht installiert ist, werden Ihre Endbenutzer aufgefordert, Intune Managed Browser zu installieren.<p>Wenn ein mit Richtlinien verwalteter Browser erforderlich ist, werden Android-App-Links über die Richtlinieneinstellung **Allow app to transfer data to other apps** (Datenübertragung von einer App an eine andere zulassen) verwaltet.<p>**Registrieren von Intune-Geräten**<br>Wenn Sie Intune zum Verwalten Ihrer Geräte verwenden, erhalten Sie weitere Informationen unter „Verwalten des Internetzugriffs durch einen mittels Richtlinien geschützten Microsoft Intune-Browser“. <p>**Microsoft Edge: mit Richtlinien verwaltet**<br>Microsoft Edge für mobile Geräte (iOS und Android) unterstützt Intune-App-Schutzrichtlinien. Benutzer, die sich mit ihren Azure AD-Unternehmenskonten bei der Microsoft Edge-App anmelden, werden von Intune geschützt. Microsoft Edge integriert das MAM SDK und unterstützt alle Datenschutzrichtlinien. Folgende Vorgänge werden jedoch verhindert:<br><ul><li>**Speichern unter:** Der Microsoft Edge-Browser erlaubt Benutzern nicht, in einer App direkte Verbindungen mit Cloudspeicheranbietern (z. B. OneDrive) herzustellen.</li><li>**Kontaktsynchronisierung:** Der Microsoft Edge-Browser speichert keine Daten in nativen Kontaktlisten.</li></ul><br>**Hinweis:** *Das App SDK kann nicht bestimmen, ob es sich bei der Ziel-App um einen Browser handelt. Auf Android-Geräten können andere verwaltete Browser-Apps verwendet werden, die HTTP-/HTTPS-Links unterstützen.* | **Nicht konfiguriert** |
+|**Webinhalt für per Richtlinie verwaltete Browser freigeben** | Legen Sie fest, wie Webinhalt (HTTP-/HTTPS-Links) über mit Richtlinien verwaltete Anwendungen geöffnet werden. Es stehen die folgenden Optionen zur Auswahl:<ul><li>**Require** (Erforderlich): Hiermit wird das Öffnen von Webinhalten nur in mit Richtlinien verwalteten Browsern zugelassen.</li><li>**Nicht verwalteter Browser**: Lassen Sie zu, dass Webinhalte nur in dem nicht verwalteten Browser geöffnet werden, der durch die Einstellung **ID von nicht verwaltetem Browser** definiert ist. Der Webinhalt wird im Zielbrowser nicht verwaltet.<br>**Hinweis**: Erfordert mindestens die Version 5.0.4415.0 des Intune-Unternehmensportals.</li><li>**Nicht konfiguriert:** Hiermit werden Weblinks in jeder App zugelassen. </li></ul><br><br> Wenn Sie Intune zum Verwalten Ihrer Geräte verwenden, lesen Sie [Verwalten des Internetzugriffs durch einen mittels Richtlinien geschützten Microsoft Intune-Browser](app-configuration-managed-browser.md).<br><br>**Mit Richtlinien verwaltete Browser**<br>Wenn Sie mehrere mit Richtlinien verwaltete Browser bereitstellen, wird nur einer gestartet.  Dann wird zuerst Intune Managed Browser und dann Microsoft Edge gestartet.  Unter Android können Endbenutzer andere mit Richtlinien verwaltete Apps auswählen, die HTTP/HTTPS-Links unterstützen, wenn weder Intune Managed Browser noch Microsoft Edge installiert sind.<p>Wenn zwar ein mit Richtlinien verwalteter Browser erforderlich ist, dieser aber nicht installiert ist, werden Ihre Endbenutzer aufgefordert, Intune Managed Browser zu installieren.<p>Wenn ein mit Richtlinien verwalteter Browser erforderlich ist, werden Android-App-Links über die Richtlinieneinstellung **Allow app to transfer data to other apps** (Datenübertragung von einer App an eine andere zulassen) verwaltet.<p>**Registrieren von Intune-Geräten**<br>Wenn Sie Intune zum Verwalten Ihrer Geräte verwenden, erhalten Sie weitere Informationen unter „Verwalten des Internetzugriffs durch einen mittels Richtlinien geschützten Microsoft Intune-Browser“. <p>**Microsoft Edge: mit Richtlinien verwaltet**<br>Microsoft Edge für mobile Geräte (iOS und Android) unterstützt Intune-App-Schutzrichtlinien. Benutzer, die sich mit ihren Azure AD-Unternehmenskonten bei der Microsoft Edge-App anmelden, werden von Intune geschützt. Microsoft Edge integriert das MAM SDK und unterstützt alle Datenschutzrichtlinien. Folgende Vorgänge werden jedoch verhindert:<br><ul><li>**Speichern unter:** Der Microsoft Edge-Browser erlaubt Benutzern nicht, in einer App direkte Verbindungen mit Cloudspeicheranbietern (z. B. OneDrive) herzustellen.</li><li>**Kontaktsynchronisierung:** Der Microsoft Edge-Browser speichert keine Daten in nativen Kontaktlisten.</li></ul><br>**Hinweis:** *Das App SDK kann nicht bestimmen, ob es sich bei der Ziel-App um einen Browser handelt. Auf Android-Geräten können andere verwaltete Browser-Apps verwendet werden, die HTTP-/HTTPS-Links unterstützen.* | **Nicht konfiguriert** |
+|<ul><ui>**ID von nicht verwaltetem Browser** | Geben Sie die Anwendungs-ID für einen einzelnen Browser ein. Webinhalte (HTTP/HTTPS-Links) aus Richtlinien unterliegenden Anwendungen werden im angegebenen Browser geöffnet.  Der Webinhalt wird im Zielbrowser nicht verwaltet. | **Leer** |
+|<ul><ui>**Name von nicht verwaltetem Browser** | Geben Sie den Anwendungsnamen des Browsers ein, der **ID von nicht verwaltetem Browser** zugeordnet ist. Dieser Name wird Benutzern angezeigt, wenn der angegebene Browser nicht installiert ist.  | **Leer** |
 
-  ## <a name="data-transfer-exemptions"></a>Datenübertragungsausnahmen
+
+## <a name="data-transfer-exemptions"></a>Datenübertragungsausnahmen
 
   Die App-Schutzrichtlinie von Intune erlaubt die Datenübertragung zu und von einigen ausgenommenen Apps und Plattformdiensten. Beispielsweise müssen alle über Intune verwaltete Apps unter Android in der Lage sein, Daten zu und vom Google-Programm für die Sprachwiedergabe von Text zu übertragen, sodass Text vom Bildschirm Ihres mobilen Geräts laut vorgelesen werden kann. Diese Liste unterliegt Änderungen und gibt die Dienste und Apps wieder, die als nützlich für die sichere Produktivität gelten.
 
-  ### <a name="full-exemptions"></a>Vollständige Ausnahmen
+### <a name="full-exemptions"></a>Vollständige Ausnahmen
 
   Diese Apps und Dienste sind für die Datenübertragung zu und von verwalteten Apps durch Intune vollständig zugelassen.
 
@@ -81,7 +84,7 @@ Es gibt drei Kategorien von Richtlinieneinstellungen: Datenschutzeinstellungen, 
   | com.azure.authenticator | Azure-Authentifikator-App, die in vielen Szenarios für die erfolgreiche Authentifizierung erforderlich ist |
   | com.microsoft.windowsintune.companyportal | Intune Unternehmensportal|
 
-  ### <a name="conditional-exemptions"></a>Bedingte Ausnahmen
+### <a name="conditional-exemptions"></a>Bedingte Ausnahmen
   Diese Apps und Dienste sind für die Datenübertragung zu und von verwalteten Apps durch Intune unter bestimmten Bedingungen zugelassen.
 
   |Name der App / des Diensts | Beschreibung | Ausnahmebedingung|
@@ -93,7 +96,7 @@ Es gibt drei Kategorien von Richtlinieneinstellungen: Datenschutzeinstellungen, 
 
 Weitere Informationen finden Sie unter [Ausnahmen von der Datenübertragungsrichtlinie für Apps](app-protection-policies-exception.md).
 
-##  <a name="access-requirements"></a>Erforderliche Zugriffsberechtigungen
+## <a name="access-requirements"></a>Erforderliche Zugriffsberechtigungen
 
 | Einstellung | Verwendung |  
 |------|------| 

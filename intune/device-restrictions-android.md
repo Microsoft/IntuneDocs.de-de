@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f13b78e05b9f0b94d98677004c7059f1acaa80f9
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 9ac25a0f3305cdfac9f3eeaa75b9e2106b3571b0
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045719"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572501"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-lists-in-intune"></a>Listen der Standardeinstellungen für Geräteeinschränkungen für Android und Samsung KNOX in Intune
 

@@ -17,25 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45f93416a8fd6190549a958f1b1a7e5f3bdf6df1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 2b1fe488ed7d295a40b42c1fb17a76693004be4d
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045297"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547915"
 ---
 # <a name="reference-for-devices-entities"></a>Referenz für Geräteentitäten
 
 Die Kategorie **Geräte** (Devices) enthält Entitäten für mobile Geräte, die folgende Informationen nachverfolgen:
 
-  -  Gerätetyp
-  -  Status der Geräteregistrierung
-  -  Gerätebesitz
-  -  Status der Geräteverwaltung
-  -  Status der Gerätemitgliedschaft bei Azure AD
-  -  Anmeldungsstatus
-  -  Informationen zur Geschichte des Geräts
-  -  App-Inventar auf dem Gerät
+  - Gerätetyp
+  - Status der Geräteregistrierung
+  - Gerätebesitz
+  - Status der Geräteverwaltung
+  - Status der Gerätemitgliedschaft bei Azure AD
+  - Anmeldungsstatus
+  - Informationen zur Geschichte des Geräts
+  - App-Inventar auf dem Gerät
 
 ## <a name="devicetypes"></a>DeviceTypes
 
@@ -269,7 +269,7 @@ Die Entität **DevicePropertyHistory** hat die gleichen Eigenschaften wie die Ge
 |          Eigenschaft          |                                                                                      Beschreibung                                                                                     |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 | DateKey                    | Verweis auf die Datumstabelle, die den Tag angibt                                                                                                                                          |
-| DeviceKey                  | Der eindeutige Bezeichner des Geräts im Data Warehouse – Ersatzschlüssel. Dies ist ein Verweis auf die Gerätetabelle, die die Intune-Geräte-ID enthält.                               |
+| DeviceKey                  | Der eindeutige Bezeichner des Geräts in Data Warehouse – Ersatzschlüssel. Dies ist ein Verweis auf die Gerätetabelle, die die Intune-Geräte-ID enthält.                               |
 | DeviceName                 | Der Name des Geräts auf Plattformen, die das Benennen von Geräten ermöglichen. Auf anderen Plattformen wird von Intune einen Namen aus anderen Eigenschaften erstellt. Dieses Attribut kann nicht für alle Geräte zur Verfügung stehen. |
 | DeviceRegistrationStateKey | Schlüssel des Attributs für den Geräteregistrierungsstatus dieses Geräts.                                                                                                                    |
 | OwnerTypeKey               | Schlüssel des Besitzertypattributs für dieses Gerät: Unternehmen, persönlich oder unbekannt.                                                                                                  |

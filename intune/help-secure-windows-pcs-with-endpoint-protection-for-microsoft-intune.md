@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19c02c8d4c9ece66d03b3510071bb90e7f35ad3
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047515"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548778"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune
 
@@ -46,15 +46,15 @@ Eine ihrer wichtigsten Aufgaben als IT-Administrator besteht darin, die von Ihne
 
 Führen Sie folgende Schritte aus, um von Ihrer aktuellen Endpunktschutzanwendung zu Microsoft Intune Endpoint Protection zu wechseln:
 
-1.  Beenden Sie Ihre aktuelle Endpunktschutzanwendung nicht, während Sie die Intune-Clientsoftware auf den betreffenden Computern bereitstellen.
+1. Beenden Sie Ihre aktuelle Endpunktschutzanwendung nicht, während Sie die Intune-Clientsoftware auf den betreffenden Computern bereitstellen.
 
-2.  Vergewissern Sie sich, dass Microsoft Intune Endpoint Protection installiert ist und die Clientcomputer auf diese Weise geschützt werden.
+2. Vergewissern Sie sich, dass Microsoft Intune Endpoint Protection installiert ist und die Clientcomputer auf diese Weise geschützt werden.
 
-3.  Entfernen Sie die Endpunktschutzsoftware des Drittanbieters auf folgende Weise:
+3. Entfernen Sie die Endpunktschutzsoftware des Drittanbieters auf folgende Weise:
 
-    -   Stellen Sie über die Intune-Softwareverteilung ein Tool des Herstellers der Endpunktschutzanwendung bereit, mit dessen Hilfe diese entfernt werden kann. Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](apps-deploy.md).
+    - Stellen Sie über die Intune-Softwareverteilung ein Tool des Herstellers der Endpunktschutzanwendung bereit, mit dessen Hilfe diese entfernt werden kann. Weitere Informationen finden Sie unter [Bereitstellen von Apps in Microsoft Intune](apps-deploy.md).
 
-    -   Entfernen Sie die von einem Drittanbieter stammende Endpunktschutzanwendung manuell.
+    - Entfernen Sie die von einem Drittanbieter stammende Endpunktschutzanwendung manuell.
 
 > [!NOTE]
 > Endpunktschutzanwendungen von Drittanbietern werden von Intune nicht automatisch deinstalliert.
@@ -62,9 +62,9 @@ Führen Sie folgende Schritte aus, um von Ihrer aktuellen Endpunktschutzanwendun
 ## <a name="configure-microsoft-intune-endpoint-protection"></a>Konfigurieren von Microsoft Intune Endpoint Protection
 Über die folgenden Schritte können Sie Microsoft Intune Endpoint Protection konfigurieren.
 
-1.  Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Richtlinie** > **Richtlinie hinzufügen**.
+1. Klicken Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) auf **Richtlinie** > **Richtlinie hinzufügen**.
 
-2.  Erweitern Sie **Computerverwaltung**, und wählen Sie dann **Microsoft Intune-Agent-Einstellungen** aus. Wählen Sie **Benutzerdefinierte Richtlinie erstellen und bereitstellen** aus, um eine Richtlinie für Endpoint Protection-Einstellungen anzugeben. Wählen Sie dann die Schaltfläche **Richtlinie erstellen** aus.
+2. Erweitern Sie **Computerverwaltung**, und wählen Sie dann **Microsoft Intune-Agent-Einstellungen** aus. Wählen Sie **Benutzerdefinierte Richtlinie erstellen und bereitstellen** aus, um eine Richtlinie für Endpoint Protection-Einstellungen anzugeben. Wählen Sie dann die Schaltfläche **Richtlinie erstellen** aus.
 
 Sie können die empfohlenen Einstellungen verwenden oder die Einstellungen anpassen. Weitere Informationen zum Erstellen und Bereitstellen von Richtlinien finden Sie im Thema [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Microsoft Intune-Computerclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 

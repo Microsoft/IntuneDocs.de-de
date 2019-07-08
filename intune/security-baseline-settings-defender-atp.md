@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 837442f93bbac2c5eb19b3c433c91f91aa38a17e
-ms.sourcegitcommit: 43ba5a05b2e1dc1997126d3574884f65cde449c7
+ms.openlocfilehash: 5bdd2171853a8db944c910ef4d912f7681d17077
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67197541"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549124"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-Baselineeinstellungen für Intune
 
@@ -192,7 +192,7 @@ Weitere Informationen finden Sie in der Windows-Dokumentation unter [Einstellung
 ## <a name="device-control"></a>Gerätesteuerung  
 
 - **Bei einer vollständigen Überprüfung Wechseldatenträger überprüfen**  
-  [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning) – Wenn *Ja* festgelegt wurde, überprüft Defender während einer vollständigen Prüfung bei Wechseldatenträgern, z.B. USB-Speichersticks, auf Schadsoftware und unerwünschte Software. Defender Antivirus überprüft alle Dateien auf USB-Geräten, bevor Dateien darauf ausgeführt werden können.
+  [Defender/AllowFullScanRemovableDriveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning): Wenn *Ja* festgelegt wurde, überprüft Defender während einer vollständigen Überprüfung bei Wechseldatenträgern z.B. USB-Speichersticks auf Schadsoftware und unerwünschte Software. Defender Antivirus überprüft alle Dateien auf USB-Geräten, bevor Dateien darauf ausgeführt werden können.
 
   Verwandte Einstellung in dieser Liste: *Defender/AllowFullScanOnMappedNetworkDrives*  
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8c4813d94a269ed6b8f944585814b54f36fef8c
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 3cfe2aef93fb8b7c420ee6513945f11bee5bd0be
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804704"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67529711"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Eigenständiges Intune – Win32-App-Verwaltung
 
@@ -65,7 +65,7 @@ Wenn Sie `IntuneWinAppUtil.exe` aus dem Befehlsfenster ohne Parameter ausführen
 |:------------------------------:|:----------------------------------------------------------:|
 |    `-h`     |    Hilfe    |
 |    `-c <setup_folder>`     |    Ordner für alle Setupdateien. Alle Dateien in diesem Ordner werden in die *.intunewin*-Datei komprimiert.    |
-|   ` -s <setup_file>`     |    Setupdatei (z. B. *setup.exe* oder *setup.msi*).    |
+|    `-s <setup_file>`     |    Setupdatei (z. B. *setup.exe* oder *setup.msi*).    |
 |    `-o <output_folder>`     |    Ausgabeordner für die generierte *.intunewin*-Datei.    |
 |    `-q`       |    Stiller Modus    |
 
@@ -98,28 +98,28 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
 ### <a name="step-1-specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3.  Wählen Sie im **Intune**-Bereich die Option **Client-Apps** > **Apps** > **Hinzufügen** aus.
-4.  Wählen Sie **Windows-App (Win32)** aus der Dropdownliste im App-Bereich **Hinzufügen** aus.
+3. Wählen Sie im **Intune**-Bereich die Option **Client-Apps** > **Apps** > **Hinzufügen** aus.
+4. Wählen Sie **Windows-App (Win32)** aus der Dropdownliste im App-Bereich **Hinzufügen** aus.
 
     ![Screenshot des Blatts „App hinzufügen“ – Dropdownfeld zum Hinzufügen des Typs](./media/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>Schritt 2: Hochladen der App-Paketdatei
 
-1.  Wählen Sie im Bereich **App hinzufügen** die Option **App-Paketdatei** aus, um eine Datei auszuwählen. Der Bereich „App-Paketdatei“ wird angezeigt.
+1. Wählen Sie im Bereich **App hinzufügen** die Option **App-Paketdatei** aus, um eine Datei auszuwählen. Der Bereich „App-Paketdatei“ wird angezeigt.
 
     ![Screenshot des Blatts „App-Paketdatei“](./media/apps-win32-app-02.png)
 
-2.  Wählen Sie im Bereich **App-Paketdatei** die Schaltfläche zum Durchsuchen. Wählen Sie dann eine Windows-Installationsdatei mit der Erweiterung *.intunewin* aus.
+2. Wählen Sie im Bereich **App-Paketdatei** die Schaltfläche zum Durchsuchen. Wählen Sie dann eine Windows-Installationsdatei mit der Erweiterung *.intunewin* aus.
 
     > [!IMPORTANT]
     > Stellen Sie sicher, dass Sie die neueste Version des Microsoft Win32-Inhaltsvorbereitungstools verwenden. Wenn Sie nicht die neueste Version verwenden, wird eine Warnung angezeigt, die angibt, dass die App mit einer älteren Version des Tools verpackt wurde. 
 
-3.  Wählen Sie danach **OK**.
+3. Wählen Sie danach **OK**.
 
 ### <a name="step-3-configure-app-information"></a>Schritt 3: Konfigurieren von App-Informationen
 
-1.  Wählen Sie im Bereich **App hinzufügen** die Option **App-Informationen** aus, um die App zu konfigurieren.
-2.  Konfigurieren Sie im Bereich **App-Informationen** die folgenden Informationen. Einige der Werte in diesem Bereich wurden möglicherweise automatisch ausgefüllt.
+1. Wählen Sie im Bereich **App hinzufügen** die Option **App-Informationen** aus, um die App zu konfigurieren.
+2. Konfigurieren Sie im Bereich **App-Informationen** die folgenden Informationen. Einige der Werte in diesem Bereich wurden möglicherweise automatisch ausgefüllt.
     - **Name**: Geben Sie den Namen der App so ein, wie er im Unternehmensportal angezeigt wird. Wenn derselbe App-Name doppelt vorhanden ist, wird jede App im Unternehmensportal angezeigt.
     - **Beschreibung**: Geben Sie eine Beschreibung der App ein. Die Beschreibung wird im Unternehmensportal angezeigt.
     - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein.
@@ -131,19 +131,20 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
     - **Besitzer**: Geben Sie optional einen Namen für den Besitzer dieser App ein. Ein Beispiel ist **Personalabteilung**.
     - **Anmerkungen**: Geben Sie Hinweise zu dieser App ein.
     - **Logo**: Laden Sie ein Symbol hoch, das der App zugeordnet wird. Das Symbol wird mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
-3.  Wählen Sie danach **OK**.
+3. Wählen Sie danach **OK**.
 
 ### <a name="step-4-configure-app-installation-details"></a>Schritt 4: Konfigurieren von Details zur Installation der App
-1.  Wählen Sie im Bereich **App hinzufügen** die Option **Programm** aus, um die Befehle zur Installation und Entfernung der App zu konfigurieren.
-2.  Füge die komplette Befehlszeile für die Installation hinzu, um die App zu installieren. 
+1. Wählen Sie im Bereich **App hinzufügen** die Option **Programm** aus, um die Befehle zur Installation und Entfernung der App zu konfigurieren.
+2. Füge die komplette Befehlszeile für die Installation hinzu, um die App zu installieren. 
 
     Wenn Ihr App-Dateiname z. B. **MyApp123** lautet, fügen Sie Folgendes hinzu:<br>
     `msiexec /p “MyApp123.msp”`<p>
     Wenn die Anwendung `ApplicationName.exe` ist, entspricht der Befehl dem Anwendungsnamen gefolgt von den Befehlsargumenten, die vom Paket unterstützt werden. <br>Beispiel:<br>
     `ApplicationName.exe /quiet`<br>
-    Im obigen Befehl unterstützt das `ApplicationName.exe`-Paket das `/quiet`-Befehlsargument.<p> Wenden Sie sich für die spezifischen Argumente, die das Anwendungspaket unterstützt, an den Anbieter der Anwendung.
+    Im obigen Befehl unterstützt das `ApplicationName.exe`-Paket das `/quiet`-Befehlsargument.<p> 
+    Wenden Sie sich für die spezifischen Argumente, die das Anwendungspaket unterstützt, an den Anbieter der Anwendung.
 
-3.  Fügen Sie die vollständige Befehlszeile zum Deinstallieren hinzu, um die App basierend auf der GUID der App zu deinstallieren. 
+3. Fügen Sie die vollständige Befehlszeile zum Deinstallieren hinzu, um die App basierend auf der GUID der App zu deinstallieren. 
 
     Beispiel: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
 
@@ -154,12 +155,12 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
     > 
     > Die Installation und Deinstallation der Win32-App wird mit Administratorberechtigungen (standardmäßig) ausgeführt, wenn die App auf Installation im Benutzerkontext festgelegt ist, und der Endbenutzer auf dem Gerät über Administratorrechte verfügt.
 
-4.  Wählen Sie danach **OK**.
+4. Wählen Sie danach **OK**.
 
 ### <a name="step-5-configure-app-requirements"></a>Schritt 5: Konfigurieren der App-Anforderungen
 
-1.  Wählen Sie im Bereich **App hinzufügen** die Option **Anforderungen** aus, um die Anforderungen zu konfigurieren, die Geräte erfüllen müssen, bevor die App installiert wird.
-2.  Konfigurieren Sie im Bereich **Add a Requirement rule** (Anforderungsregel hinzufügen) die folgenden Informationen: Einige der Werte in diesem Bereich wurden möglicherweise automatisch ausgefüllt.
+1. Wählen Sie im Bereich **App hinzufügen** die Option **Anforderungen** aus, um die Anforderungen zu konfigurieren, die Geräte erfüllen müssen, bevor die App installiert wird.
+2. Konfigurieren Sie im Bereich **Add a Requirement rule** (Anforderungsregel hinzufügen) die folgenden Informationen: Einige der Werte in diesem Bereich wurden möglicherweise automatisch ausgefüllt.
     - **Betriebssystemarchitektur**: Wählen Sie die Architekturen aus, die für die Installation der App erforderlich sind.
     - **Mindestens erforderliches Betriebssystem**: Wählen Sie die für die Installation der App mindestens erforderliche Version des Betriebssystems aus.
     - **Erforderlicher Speicherplatz (MB)** : Optional können Sie den freien Speicherplatz hinzufügen, der auf dem Systemlaufwerk erforderlich ist, um die App zu installieren.
@@ -184,32 +185,32 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
         - **Dieses Skript mit den Anmeldeinformationen des angemeldeten Benutzers ausführen:** Wählen Sie **Ja** aus, um das Skript mit den Anmeldeinformationen** des angemeldeten Geräts auszuführen.
         - **Skriptsignaturprüfung erzwingen** – Wählen Sie **Ja** aus, um sicherzustellen, dass das Skript von einem vertrauenswürdigen Herausgeber signiert ist, sodass das Skript ohne Warnungen oder Aufforderungen ausgeführt werden kann. Das Skript wird ohne Blockierung ausgeführt. Wählen Sie **Nein** (Standard) aus, um das Skript mit Endbenutzerbestätigung ohne Signaturüberprüfung auszuführen.
         - **Ausgabedatentyp auswählen:** Wählen Sie den Datentyp aus, der beim Bestimmen einer Übereinstimmung mit einer Anforderungsregel verwendet wird.
-4.  Wählen Sie danach **OK**.
+4. Wählen Sie danach **OK**.
 
 ### <a name="step-6-configure-app-detection-rules"></a>Schritt 6: Konfigurieren von App-Erkennungsregeln
 
-1.  Wählen Sie im Bereich **App hinzufügen** die Option **Erkennungsregeln** aus, um die Regeln so zu konfigurieren, dass sie das Vorhandensein der App erkennen.
-2.  Wählen Sie im Feld **Regelformat** aus, wie das Vorhandensein der App erkannt werden soll. Sie können auswählen, ob Sie die Erkennungsregeln manuell konfigurieren oder ein benutzerdefiniertes Skript verwenden möchten, um das Vorhandensein der App zu erkennen. Sie müssen mindestens eine Erkennungsregel auswählen. 
+1. Wählen Sie im Bereich **App hinzufügen** die Option **Erkennungsregeln** aus, um die Regeln so zu konfigurieren, dass sie das Vorhandensein der App erkennen.
+2. Wählen Sie im Feld **Regelformat** aus, wie das Vorhandensein der App erkannt werden soll. Sie können auswählen, ob Sie die Erkennungsregeln manuell konfigurieren oder ein benutzerdefiniertes Skript verwenden möchten, um das Vorhandensein der App zu erkennen. Sie müssen mindestens eine Erkennungsregel auswählen. 
 
     > [!NOTE]
     > Im Bereich **Erkennungsregeln** können Sie auswählen, ob Sie mehrere Regeln hinzufügen möchten. Die Bedingungen für **alle** Regeln müssen erfüllt sein, um die App zu erkennen.
 
     - **Manuelles Konfigurieren von Erkennungsregeln** – Sie können einen der folgenden Regeltypen auswählen:
-        1.  **MSI** – Überprüfung auf der Grundlage der MSI-Versionsprüfung. Diese Option kann nur einmal hinzugefügt werden. Wenn Sie diesen Regeltyp auswählen, gibt es zwei Einstellungen:
+        1. **MSI** – Überprüfung auf der Grundlage der MSI-Versionsprüfung. Diese Option kann nur einmal hinzugefügt werden. Wenn Sie diesen Regeltyp auswählen, gibt es zwei Einstellungen:
             - **MSI-Produktcode** – Fügen Sie einen gültigen MSI-Produktcode für die App hinzu.
             - **MSI-Produktversionsprüfung** – Wählen Sie **Ja** aus, um die MSI-Produktversion zusätzlich zum MSI-Produktcode zu überprüfen.
-        2.  **Datei** – Überprüfen Sie anhand von Datei- oder Ordnererkennung, Datum, Version oder Größe.
+        2. **Datei** – Überprüfen Sie anhand von Datei- oder Ordnererkennung, Datum, Version oder Größe.
             - **Pfad** – Der vollständige Pfad des Ordners, der die zu erkennende Datei oder den Ordner enthält.
             - **Datei oder Ordner** – Die zu erkennende Datei oder der zu erkennende Ordner.
             - **Erkennungsmethode** – Wählen Sie die Art der Erkennungsmethode aus, mit der das Vorhandensein der App überprüft wird.
             - **Einer 32-Bit-App auf 64-Bit-Clients zugeordnet** – Wählen Sie **Ja** aus, um alle Pfadumgebungsvariablen im 32-Bit-Kontext auf 64-Bit-Clients zu erweitern. Wählen Sie **Nein** (Standard) aus, um Pfadvariablen im 64-Bit-Kontext auf 64-Bit-Clients zu erweitern. 32-Bit-Clients verwenden immer den 32-Bit-Kontext.
             
             **Beispiele für dateibasierte Erkennung**
-            1.  Überprüfen Sie, ob die Datei vorhanden ist.
+            1. Überprüfen Sie, ob die Datei vorhanden ist.
          
                 ![Screenshot des Erkennungsregelbereichs – Dateivorkommen](./media/apps-win32-app-03.png)
         
-            2.  Überprüfen Sie, ob der Ordner vorhanden ist.
+            2. Überprüfen Sie, ob der Ordner vorhanden ist.
          
                 ![Screenshot des Erkennungsregelbereichs – Ordnervorkommen](./media/apps-win32-app-04.png)
         
@@ -220,62 +221,62 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
             - **Einer 32-Bit-App auf 64-Bit-Clients zugeordnet** – Wählen Sie **Ja** aus, um die 32-Bit-Registrierung auf 64-Bit-Clients zu durchsuchen. Wählen Sie **Nein** (Standard) aus, um die 64-Bit-Registrierung auf 64-Bit-Clients zu durchsuchen. 32-Bit-Clients durchsuchen immer die 32-Bit-Registrierung.
             
             **Beispiele für registrierungsbasierte Erkennung**
-            1.  Überprüfen Sie, ob der Registrierungsschlüssel vorhanden ist.
+            1. Überprüfen Sie, ob der Registrierungsschlüssel vorhanden ist.
             
                 ![Screenshot des Erkennungsregelbereichs – Registrierungsschlüsselvorkommen](./media/apps-win32-app-05.png)    
             
-            2.  Überprüfen Sie, ob der Registrierungswert vorhanden ist.
+            2. Überprüfen Sie, ob der Registrierungswert vorhanden ist.
         
                 ![Screenshot des Erkennungsregelbereichs – Registrierungswertvorkommen](./media/apps-win32-app-06.png)    
         
-            3.  Überprüfen Sie, ob die Zeichenfolge für den Registrierungswert identisch ist.
+            3. Überprüfen Sie, ob die Zeichenfolge für den Registrierungswert identisch ist.
         
                 ![Screenshot des Erkennungsregelbereichs – Gleichheit der Registrierungsschlüsselzeichenfolge](./media/apps-win32-app-07.png)    
      
     - **Benutzerdefiniertes Erkennungsskript verwenden** – Geben Sie das PowerShell-Skript an, das zum Erkennen dieser App verwendet werden soll. 
     
-        1.  **Skriptdatei** – Wählen Sie ein PowerShell-Skript aus, das das Vorhandensein der App auf dem Client erkennt. Die App wird erkannt, wenn das Skript sowohl einen 0-Wert als Exitcode zurückgibt als auch einen Zeichenfolgenwert an STDOUT ausgibt.
+        1. **Skriptdatei** – Wählen Sie ein PowerShell-Skript aus, das das Vorhandensein der App auf dem Client erkennt. Die App wird erkannt, wenn das Skript sowohl einen 0-Wert als Exitcode zurückgibt als auch einen Zeichenfolgenwert an STDOUT ausgibt.
 
-        2.  **Skript auf 64-Bit-Clients als 32-Bit-Prozess ausführen**: Wählen Sie **Ja** aus, um das Skript in einem 32-Bit-Prozess auf 64-Bit-Clients auszuführen. Wählen Sie **Nein** (Standardeinstellung) aus, um das Skript in einem 64-Bit-Prozess auf 64-Bit-Clients auszuführen. Auf 32-Bit-Clients wird das Skript in einem 32-Bit-Prozess ausgeführt.
+        2. **Skript auf 64-Bit-Clients als 32-Bit-Prozess ausführen**: Wählen Sie **Ja** aus, um das Skript in einem 32-Bit-Prozess auf 64-Bit-Clients auszuführen. Wählen Sie **Nein** (Standardeinstellung) aus, um das Skript in einem 64-Bit-Prozess auf 64-Bit-Clients auszuführen. Auf 32-Bit-Clients wird das Skript in einem 32-Bit-Prozess ausgeführt.
 
-        3.  **Skriptsignaturprüfung erzwingen** – Wählen Sie **Ja** aus, um sicherzustellen, dass das Skript von einem vertrauenswürdigen Herausgeber signiert ist, sodass das Skript ohne Warnungen oder Aufforderungen ausgeführt werden kann. Das Skript wird ohne Blockierung ausgeführt. Wählen Sie **Nein** (Standard) aus, um das Skript mit Endbenutzerbestätigung ohne Signaturüberprüfung auszuführen.
+        3. **Skriptsignaturprüfung erzwingen** – Wählen Sie **Ja** aus, um sicherzustellen, dass das Skript von einem vertrauenswürdigen Herausgeber signiert ist, sodass das Skript ohne Warnungen oder Aufforderungen ausgeführt werden kann. Das Skript wird ohne Blockierung ausgeführt. Wählen Sie **Nein** (Standard) aus, um das Skript mit Endbenutzerbestätigung ohne Signaturüberprüfung auszuführen.
     
             Der Intune-Agent überprüft die Ergebnisse des Skripts. Es liest die Werte, die vom Skript in den Standardausgabestream (STDOUT), den Standardfehlerstream (STDERR) und den Exitcode geschrieben wurden. Wenn das Skript mit einem Wert ungleich 0 (null) beendet wird, schlägt das Skript fehl und der Erkennungszustand der Anwendung ist „nicht installiert“. Wenn der Exitcode gleich null ist und in „STDOUT“-Daten enthalten sind, ist der Erkennungszustand der Anwendung „Installiert“. 
 
             > [!NOTE]
             > Microsoft empfiehlt, Ihr Skript in UTF-8 zu codieren. Wenn das Skript mit dem Wert 0 beendet wird, war die Skriptausführung erfolgreich. Der zweite Ausgabekanal zeigt an, dass die App erkannt wurde – STDOUT-Daten zeigen an, dass die App auf dem Client gefunden wurde. Wir suchen nicht nach einer bestimmten Zeichenfolge von STDOUT.
 
-        4.  Nachdem Sie Ihre Regel(n) hinzugefügt haben, wählen Sie **Hinzufügen** > **OK** aus.
+        4. Nachdem Sie Ihre Regel(n) hinzugefügt haben, wählen Sie **Hinzufügen** > **OK** aus.
 
 ### <a name="step-7-configure-app-return-codes"></a>Schritt 7: Konfigurieren der App-Rückgabecodes
 
-1.  Wählen Sie im Bereich **App hinzufügen** die Option **Rückgabecodes** aus, um die Rückgabecodes hinzuzufügen, die verwendet werden, um entweder das Verhalten bei der erneuten Installation der App oder das Verhalten nach der Installation anzugeben. Rückgabecodeeinträge werden standardmäßig bei der Erstellung der App hinzugefügt. Sie können jedoch zusätzliche Rückgabecodes hinzufügen oder bestehende Rückgabecodes ändern. 
-2.  Fügen Sie im Bereich **Rückgabecodes** zusätzliche Rückgabecodes hinzu oder ändern Sie bestehende Rückgabecodes.
+1. Wählen Sie im Bereich **App hinzufügen** die Option **Rückgabecodes** aus, um die Rückgabecodes hinzuzufügen, die verwendet werden, um entweder das Verhalten bei der erneuten Installation der App oder das Verhalten nach der Installation anzugeben. Rückgabecodeeinträge werden standardmäßig bei der Erstellung der App hinzugefügt. Sie können jedoch zusätzliche Rückgabecodes hinzufügen oder bestehende Rückgabecodes ändern. 
+2. Fügen Sie im Bereich **Rückgabecodes** zusätzliche Rückgabecodes hinzu oder ändern Sie bestehende Rückgabecodes.
     - **Fehlerhaft** – Der Rückgabewert, der auf einen Installationsfehler der App hinweist.
     - **Harter Neustart** – Der Rückgabecode für den harten Neustart gestattet es nicht, dass nachfolgende Win32-Apps ohne Neustart auf dem Client installiert werden. 
     - **Softneustart** – Der Rückgabecode „Softneustart“ ermöglicht es, die nächste Win32-App zu installieren, ohne dass ein Neustart des Clients erforderlich ist. Ein Neustart ist erforderlich, um die Installation der aktuellen Anwendung abzuschließen.
     - **Wiederholen** – Der Rückgabecode-Agent versucht dreimal, die App zu installieren. Zwischen den einzelnen Versuchen wird fünf Minuten gewartet. 
     - **Erfolg** – Der Rückgabewert, der angibt, dass die App erfolgreich installiert wurde.
-3.  Wählen Sie **OK** aus, nachdem Sie Ihre Liste der Rückgabecodes hinzugefügt oder geändert haben.
+3. Wählen Sie **OK** aus, nachdem Sie Ihre Liste der Rückgabecodes hinzugefügt oder geändert haben.
 
 ### <a name="step-8-add-the-app"></a>Schritt 8: Hinzufügen der App
 
-1.  Überprüfen Sie im Bereich **App hinzufügen**, ob die konfigurierten App-Informationen richtig sind.
-2.  Wählen Sie **Hinzufügen**, um die App in Intune hochzuladen.
+1. Überprüfen Sie im Bereich **App hinzufügen**, ob die konfigurierten App-Informationen richtig sind.
+2. Wählen Sie **Hinzufügen**, um die App in Intune hochzuladen.
 
 ### <a name="step-9-assign-the-app"></a>Schritt 9: Zuweisen der App
 
-1.  Wählen Sie im App-Bereich die Option **Zuweisungen** aus.
-2.  Wählen Sie **Gruppe hinzufügen** aus, um den Bereich **Gruppe hinzufügen** zu öffnen, der mit der App verknüpft ist.
-3.  Wählen Sie für die bestimmte App einen **Zuweisungstyp** aus:
+1. Wählen Sie im App-Bereich die Option **Zuweisungen** aus.
+2. Wählen Sie **Gruppe hinzufügen** aus, um den Bereich **Gruppe hinzufügen** zu öffnen, der mit der App verknüpft ist.
+3. Wählen Sie für die bestimmte App einen **Zuweisungstyp** aus:
     - **Für registrierte Geräte verfügbar**: Benutzer installieren die App über die Unternehmensportal-App oder -Website.
     - **Erforderlich**: Die App wird auf Geräten in den ausgewählten Gruppen installiert.
     - **Deinstallieren**: Die App wird auf Geräten in den ausgewählten Gruppen deinstalliert.
-4.  Wählen Sie **Eingeschlossene Gruppen** aus und weisen Sie die Gruppen zu, die diese App verwenden werden.
-5.  Wählen Sie im Bereich **Zuweisen** die Option **OK** aus, um die Auswahl der eingeschlossenen Gruppe abzuschließen.
-6.  Wenn Sie Benutzergruppen von dieser App-Zuweisung ausschließen möchten, wählen Sie **Gruppen ausschließen** aus.
-7.  Wählen Sie im Bereich **Gruppe hinzufügen** die Option **OK** aus.
-8.  Wählen Sie im Bereich **Zuweisungen** die Option **Speichern** aus.
+4. Wählen Sie **Eingeschlossene Gruppen** aus und weisen Sie die Gruppen zu, die diese App verwenden werden.
+5. Wählen Sie im Bereich **Zuweisen** die Option **OK** aus, um die Auswahl der eingeschlossenen Gruppe abzuschließen.
+6. Wenn Sie Benutzergruppen von dieser App-Zuweisung ausschließen möchten, wählen Sie **Gruppen ausschließen** aus.
+7. Wählen Sie im Bereich **Gruppe hinzufügen** die Option **OK** aus.
+8. Wählen Sie im Bereich **Zuweisungen** die Option **Speichern** aus.
 
 An dieser Stelle haben Sie alle Schritte zum Hinzufügen einer Win32-App zu Intune abgeschlossen. Informationen zur Zuweisung und Überwachung von Apps finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) und [Überwachen von App-Informationen und -Zuweisungen mit Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
 

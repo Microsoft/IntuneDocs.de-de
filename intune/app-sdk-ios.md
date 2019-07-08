@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4877920821b2471f752f9fdb8941e87576d937ba
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: 9ec0ab28f2b32cf3c60d6d674cfac5a5b21d094d
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413858"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558415"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
@@ -70,6 +70,7 @@ Die folgenden Headerdateien enthalten die APIs, die Datentypen und die Protokoll
     * IntuneMAMDataProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
     * IntuneMAMDefs.h
+    * IntuneMAMDiagnosticConsole.h
     * IntuneMAMEnrollmentDelegate.h
     * IntuneMAMEnrollmentManager.h
     * IntuneMAMEnrollmentStatus.h
@@ -735,6 +736,10 @@ Ja, der IT-Administrator kann einen Befehl zum selektiven Zurücksetzen an die A
 ### <a name="is-there-a-sample-app-that-demonstrates-how-to-integrate-the-sdk"></a>Gibt es eine Beispiel-App, in der die Integration des SDK gezeigt wird?
 
 Ja! Wir haben vor Kurzem die Open-Source-Beispiel-App [Wagr für iOS](https://github.com/Microsoft/Wagr-Sample-Intune-iOS-App) überarbeitet. Wagr ist jetzt auch für App-Schutzrichtlinien aktiviert, die mit dem Intune App SDK bereitgestellt werden.
+
+### <a name="how-can-i-troubleshoot-my-app"></a>Wie behebe ich meine app?
+
+Das Intune SDK für iOS 9.0.3+ unterstützt die Möglichkeit, eine Diagnostics-Konsole in der mobilen app für das Testen von Richtlinien und fehlerprotokollierung hinzuzufügen. `IntuneMAMDiagnosticConsole.h` definiert die `IntuneMAMDiagnosticConsole` Klassenschnittstelle, die Entwickler die Intune-Diagnosekonsole anzeigen können. Dadurch können Endbenutzer oder Entwickler während Tests zum Erfassen und Freigeben von Intune-Protokolle zum Diagnostizieren von Problemen, die sie möglicherweise ein. Diese API ist für Integratoren, die optional.
 
 ## <a name="submit-your-app-to-the-app-store"></a>Übermitteln Ihrer App an den App Store
 

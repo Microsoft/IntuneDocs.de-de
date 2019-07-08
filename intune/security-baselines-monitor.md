@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a87b54dde9afe9803d71f7cbef62f7c55375f51b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: e3bf59f75d41d50cfd9280251e20964a35a149a8
+ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040658"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67403572"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Überwachen der Sicherheitsbaseline und von Profilen in Microsoft Intune  
 
@@ -34,7 +34,7 @@ Im Artikel [Erstellen einer Windows 10-Sicherheitsbaseline in Intune](security-b
 
 Wenn Sie eine Baseline überwachen, erhalten Sie basierend auf den Empfehlungen von Microsoft Einblicke in den Sicherheitsstatus Ihrer Geräte. Diese können Sie im Bereich „Übersicht“ der Sicherheitsbaseline in der Intune-Konsole abrufen.  Im Anschluss an die Zuweisung einer Baseline dauert es 24 Stunden, bis die Daten angezeigt werden. Änderungen, die danach vorgenommen werden, werden innerhalb von sechs Stunden angezeigt.  
 
-Melden Sie sich beim [Intune-Portal](https://go.microsoft.com/fwlink/?linkid=2090973) an, um Überwachungsdaten für die Baseline und die Geräte anzuzeigen. Wählen Sie als Nächstes **Gerätesicherheit** > **Sicherheitsbaselines (Vorschau)** , dann eine Baseline aus, und zeigen Sie den Bereich **Übersicht** an.
+Melden Sie sich beim [Intune-Portal](https://go.microsoft.com/fwlink/?linkid=2090973) an, um Überwachungsdaten für die Baseline und die Geräte anzuzeigen. Wählen Sie als Nächstes **Gerätesicherheit** > **Sicherheitsbaselines** und dann eine Baseline aus, und sehen Sie sich den Bereich **Übersicht** an.
 
 Der Bereich **Übersicht** umfasst zwei Methoden zum Überwachen von Statusangaben:
 - **Geräteansicht:** eine Zusammenfassung der Anzahl der Geräte, die sich in den einzelnen Statuskategorien der Baseline befinden  
