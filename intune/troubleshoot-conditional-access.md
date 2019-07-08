@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f286ec4928ad4bb026c95d10562d9b339b2ca5f3
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e8ebc708f76ed1f55f512edda75206d3ed5890a0
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043904"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "67530721"
 ---
 # <a name="troubleshoot-conditional-access"></a>Problembehandlung beim bedingten Zugriff
 
@@ -35,8 +35,8 @@ Damit der bedingte Zugriff funktioniert, müssen die folgenden Anforderungen erf
 - Das Gerät muss von Intune registriert und verwaltet werden.
 - Sowohl der Benutzer als auch das Gerät müssen den zugewiesenen Intune-Konformitätsrichtlinien entsprechen.
 - Dem Benutzer muss standardmäßig eine Konformitätsrichtlinie für Geräte zugewiesen werden. Dies kann davon abhängen, wie die Einstellung **Kennzeichnen von Geräten, die keine Konformitätsrichtlinie zugewiesen haben, als:** unter **Gerätekonformität** > **Einstellungen für Konformitätsrichtlinie** im Intune-Verwaltungsportal konfiguriert wird.
--   Exchange ActiveSync muss auf dem Gerät aktiviert werden, wenn der Benutzer den nativen E-Mail-Client des Geräts anstelle von Outlook verwendet. Dies geschieht für Windows Phone-, iOS- und Android-Geräte automatisch.
--   Ihr Intune Exchange Connector muss ordnungsgemäß konfiguriert sein. Weitere Informationen finden Sie unter [Problembehandlung für den Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md).
+- Exchange ActiveSync muss auf dem Gerät aktiviert werden, wenn der Benutzer den nativen E-Mail-Client des Geräts anstelle von Outlook verwendet. Dies geschieht für Windows Phone-, iOS- und Android-Geräte automatisch.
+- Ihr Intune Exchange Connector muss ordnungsgemäß konfiguriert sein. Weitere Informationen finden Sie unter [Problembehandlung für den Exchange Connector in Microsoft Intune](troubleshoot-exchange-connector.md).
 
 Sie können diese Bedingungen für alle Geräte im Azure-Portal und im Geräteinventurbericht anzeigen.
 
