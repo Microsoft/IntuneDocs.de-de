@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a952a5aa3de20159247f022d91d3e4302262290
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 22ce9ace7848ea1535b04ab6f0c0249c970e8c34
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494305"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547367"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune
 
@@ -429,7 +429,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
         >  - In einem statischen Text des Antragstellers verursachen geschweifte Klammern **{}** , die keine Variable einschließen, einen Fehler. 
         >  - Wenn Sie eine Gerätezertifikatvariable verwenden, schließen Sie die Variable in geschweifte Klammern **{ }{ }** ein.
         >  - `{{FullyQualifiedDomainName}}` funktioniert nur für Windows und in die Domäne eingebundene Geräte. 
-        >  -  Bei der Verwendung von Geräteeigenschaften wie IMEI, Seriennummer und vollständig qualifiziertem Domänennamen im Betreff oder SAN für ein Gerätezertifikat achten Sie unbedingt darauf, dass diese Eigenschaften von einer Person mit Zugriff auf das Gerät gespooft sein könnten.
+        >  - Bei der Verwendung von Geräteeigenschaften wie IMEI, Seriennummer und vollständig qualifiziertem Domänennamen im Betreff oder SAN für ein Gerätezertifikat achten Sie unbedingt darauf, dass diese Eigenschaften von einer Person mit Zugriff auf das Gerät gespooft sein könnten.
         >  - Das Profil wird nicht auf dem Gerät installiert, wenn die angegebenen Gerätevariablen nicht unterstützt werden. Beispiel: Wenn „{{IMEI}}“ im Antragstellernamen des SCEP-Profils, das einem Gerät ohne IMEI-Nummer zugewiesen ist, verwendet wird, tritt bei der Profilinstallation ein Fehler auf. 
 
 
@@ -472,7 +472,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
         >  - Im statischen Text des SAN funktionieren geschweifte Klammern **{ }** , Pipesymbole **|** und Semikolons **;** nicht. 
         >  - Wenn Sie eine Gerätezertifikatvariable verwenden, schließen Sie die Variable in geschweifte Klammern **{ }{ }** ein.
         >  - `{{FullyQualifiedDomainName}}` funktioniert nur für Windows und in die Domäne eingebundene Geräte. 
-        >  -  Bei der Verwendung von Geräteeigenschaften wie IMEI, Seriennummer und vollständig qualifiziertem Domänennamen im Betreff oder SAN für ein Gerätezertifikat achten Sie unbedingt darauf, dass diese Eigenschaften von einer Person mit Zugriff auf das Gerät gespooft sein könnten.
+        >  - Bei der Verwendung von Geräteeigenschaften wie IMEI, Seriennummer und vollständig qualifiziertem Domänennamen im Betreff oder SAN für ein Gerätezertifikat achten Sie unbedingt darauf, dass diese Eigenschaften von einer Person mit Zugriff auf das Gerät gespooft sein könnten.
         >  - Das Profil wird nicht auf dem Gerät installiert, wenn die angegebenen Gerätevariablen nicht unterstützt werden. Beispiel: Wenn „{{IMEI}}“ im alternativer Antragstellernamen des SCEP-Profils, das einem Gerät ohne IMEI-Nummer zugewiesen ist, verwendet wird, tritt bei der Profilinstallation ein Fehler auf.  
 
    - **Gültigkeitsdauer des Zertifikats**: Wenn Sie den Befehl `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE`, der eine benutzerdefinierte Gültigkeitsdauer ermöglicht, für die ausstellende Zertifizierungsstelle ausgeführt haben, können Sie die verbleibende Dauer vor dem Ablaufen des Zertifikats angeben.<br>Sie können einen niedrigeren Wert als den für die Gültigkeitsdauer in der Zertifikatvorlage eingeben, aber keinen höheren. Wenn die Gültigkeitsdauer des Zertifikats in der Zertifikatvorlage beispielsweise zwei Jahre beträgt, können Sie als Wert „ein Jahr“ eingeben, aber nicht „fünf Jahre“. Zudem muss der Wert niedriger als die verbleibende Gültigkeitsdauer des Zertifikats der ausstellenden Zertifizierungsstelle sein. 
