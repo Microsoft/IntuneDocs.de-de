@@ -1,7 +1,7 @@
 ---
-title: Archiv - Baselines Intune-MDM-Sicherheitseinstellungen für Windows 10
+title: Archive-of InTune-MDM-Sicherheitsbaselines-Einstellungen für Windows 10
 titleSuffix: Microsoft Intune
-description: Archiv der früheren Versionen von Version MDM Security grundlegenden Einstellungen für die Verwaltung von Windows 10 mit Microsoft Intune
+description: Archivieren der früheren Releaseversionen der MDM-Sicherheitsbaseline-Einstellungen für die Verwaltung von Windows 10 mit Microsoft InTune
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,29 +16,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8e83aa6b13f192da87a78690b0040e545d8943e
-ms.sourcegitcommit: 690e680e854b7d707421c5e06f134e493f4f4194
+ms.openlocfilehash: bb6cd7b1d717cd289b65e1e05566bd07471ad84f
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67418958"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735794"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
-# <a name="archive-of-mdm-security-baseline-settings"></a>Archiv der MDM Security Baseline-Einstellungen  
+# <a name="archive-of-mdm-security-baseline-settings"></a>Archivieren der MDM-Sicherheitsbaseline-Einstellungen  
 
-Zeigen Sie Details für archivierte Versionen von der Sicherheitsbaseline für die Verwaltung mobiler Geräte für Intune an.  
+Anzeigen von Details zu archivierten Versionen der MDM-Sicherheitsbaseline für InTune.  
 
-Bei der Veröffentlichung einer neuen MDM-Sicherheitsbaseline die vorherige Liste der Einstellungen verschieben aus dem Security Baseline-Einstellungen für Artikel in diesem Archiv. Diese Versionen werden weiterhin unterstützt, für die Verwendung, und dieses Archiv wird bereitgestellt, um zu verstehen die Standardeinstellungen für ältere Versionen der Konfigurationsbasislinie zu unterstützen.
+Wenn eine neue MDM-Sicherheitsbaseline veröffentlicht wird, wird die vorherige Liste der Einstellungen aus dem Artikel Sicherheitsbaseline-Einstellungen in dieses Archiv verschoben. Diese Versionen werden weiterhin zur Verwendung unterstützt, und dieses Archiv wird bereitgestellt, um das Verständnis der Standardeinstellungen für ältere Baselineversion zu unterstützen.
 
-Wenn eine Baseline-Version für die Verwendung nicht mehr unterstützt wird, wird sie in diesem Artikel entfernt werden.
+Wenn eine Baselineversion nicht mehr zur Verwendung unterstützt wird, wird Sie aus diesem Artikel entfernt.
 
-- Zeigen Sie die Einstellungen, die in verfügbaren [der aktuellen MDM-Sicherheitsbaseline](security-baseline-settings-mdm.md) 
-- Erfahren Sie mehr über [Sicherheitsbaselines](security-baselines.md), und wie Sie die Baseline-Version in Ihrer Security Baseline Profile aktualisieren.
+- Anzeigen der in [der aktuellen MDM-Sicherheitsbaseline verfügbaren Einstellungen](security-baseline-settings-mdm.md) 
+- Erfahren Sie [mehr über Sicherheitsbaselines](security-baselines.md)und das Upgrade der Baselineversion in ihren Sicherheitsbaseline-Profilen.
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Vorschauversion: MDM-Sicherheitsbaseline für Oktober 2018  
 
-*Diese Basislinie wurde ersetzt durch [MDM-Sicherheitsbasis für Spring 2019 (19 H-1)](security-baseline-settings-mdm.md)*
+*Diese Baseline wird durch [die MDM-Sicherheitsbaseline für Spring 2019 (19h1) abgelöst.](security-baseline-settings-mdm.md)*
 
 ### <a name="above-lock"></a>Sperrbildschirm  
 
@@ -261,38 +261,38 @@ Weitere Informationen finden Sie unter [Policy CSP - DeviceLock (Richtlinien-CSP
   
   **Standard**: Ja  
   
-    Wenn *Kennwort anfordern* auf *Ja* festgelegt wurde, stehen die folgenden Einstellungen zur Verfügung.
+  Wenn *Kennwort anfordern* auf *Ja* festgelegt wurde, stehen die folgenden Einstellungen zur Verfügung.
 
-    - **Mindestanzahl von Zeichensätzen für Kennwörter**  
-      Anzahl der komplexen Elementtypen (Groß- und Kleinbuchstaben, Zahlen und Interpunktionszeichen), die für eine sichere PIN oder ein sicheres Kennwort erforderlich sind. Die PIN erzwingt das folgende Verhalten für Desktop- und mobile Geräte: 1 – nur Ziffern; 2 – Ziffern und Kleinbuchstaben sind erforderlich; 3 – Ziffern, Kleinbuchstaben und Großbuchstaben sind erforderlich. Nicht unterstützt in Microsoft- und Domänenkonten für Desktopgeräte. 4: Ziffern, Kleinbuchstaben, Großbuchstaben und Sonderzeichen sind erforderlich. Nicht unterstützt für Desktop-Geräte. Der Standardwert lautet 1. 
-      
-      **Standard**: 3  
+  - **Mindestanzahl von Zeichensätzen für Kennwörter**  
+    Anzahl der komplexen Elementtypen (Groß- und Kleinbuchstaben, Zahlen und Interpunktionszeichen), die für eine sichere PIN oder ein sicheres Kennwort erforderlich sind. Die PIN erzwingt das folgende Verhalten für Desktop- und mobile Geräte: 1 – nur Ziffern; 2 – Ziffern und Kleinbuchstaben sind erforderlich; 3 – Ziffern, Kleinbuchstaben und Großbuchstaben sind erforderlich. Nicht unterstützt in Microsoft- und Domänenkonten für Desktopgeräte. 4: Ziffern, Kleinbuchstaben, Großbuchstaben und Sonderzeichen sind erforderlich. Nicht unterstützt für Desktop-Geräte. Der Standardwert lautet 1. 
+    
+    **Standard**: 3  
   
-    - **Anzahl von fehlgeschlagenen Anmeldungen, bevor das Gerät zurückgesetzt wird**  
-      Die Anzahl von zulässigen Authentifizierungsfehlern bevor das Gerät zurückgesetzt wird. Der Wert 0 deaktiviert die Rücksetzfunktion eines Geräts.
-        
-      **Standard**: 10  
+  - **Anzahl von fehlgeschlagenen Anmeldungen, bevor das Gerät zurückgesetzt wird**  
+    Die Anzahl von zulässigen Authentifizierungsfehlern bevor das Gerät zurückgesetzt wird. Der Wert 0 deaktiviert die Rücksetzfunktion eines Geräts.
+    
+    **Standard**: 10  
   
-    - **Kennwortablauf (Tage)**  
-      Die Richtlinieneinstellung für das maximale Kennwortalter bestimmt die Zeitspanne (in Tagen), in der ein Kennwort verwendet werden kann, bevor das System den Benutzer zum Ändern des Kennworts auffordert. Sie können einstellen, dass Kennwörter nach einer bestimmten Anzahl von Tagen (zwischen 1 und 999) ablaufen, oder dass Kennwörter nie ablaufen, indem Sie die Anzahl der Tage auf 0 einstellen. Wenn das maximale Kennwortalter zwischen 1 und 999 Tagen liegt, muss das minimale Kennwortalter darunter liegen. Wenn das maximale Kennwortalter auf 0 eingestellt ist, kann das minimale Kennwortalter ein Wert zwischen 0 und 998 Tagen sein.
-      
-      **Standard**: 60  
+  - **Kennwortablauf (Tage)**  
+    Die Richtlinieneinstellung für das maximale Kennwortalter bestimmt die Zeitspanne (in Tagen), in der ein Kennwort verwendet werden kann, bevor das System den Benutzer zum Ändern des Kennworts auffordert. Sie können einstellen, dass Kennwörter nach einer bestimmten Anzahl von Tagen (zwischen 1 und 999) ablaufen, oder dass Kennwörter nie ablaufen, indem Sie die Anzahl der Tage auf 0 einstellen. Wenn das maximale Kennwortalter zwischen 1 und 999 Tagen liegt, muss das minimale Kennwortalter darunter liegen. Wenn das maximale Kennwortalter auf 0 eingestellt ist, kann das minimale Kennwortalter ein Wert zwischen 0 und 998 Tagen sein.
+    
+    **Standard**: 60  
   
-    - **Erforderlicher Kennworttyp**  
-      Bestimmt den Typ der erforderlichen PIN oder des erforderlichen Kennworts.
-      
-      **Standard**: Alphanumerisch  
+  - **Erforderlicher Kennworttyp**  
+    Bestimmt den Typ der erforderlichen PIN oder des erforderlichen Kennworts.
+    
+    **Standard**: Alphanumerisch  
   
-    - **Minimale Kennwortlänge**  
-      Die Richtlinieneinstellung für die minimale Kennwortlänge bestimmt die Mindestanzahl von Zeichen, die ein Kennwort für ein Benutzerkonto besitzen muss. Sie können einen Wert zwischen 1 und 14 Zeichen einstellen, oder Sie können einstellen, dass kein Kennwort erforderlich ist, indem Sie die Zeichenanzahl auf 0 einstellen.
-      
-      **Standard**: 8  
-  
-    - **Einfache Kennwörter blockieren**  
-      Gibt an, ob PINs oder Kennwörter wie „1111“ oder „1234“ zulässig sind. Für Desktop-Geräte wird auch die Verwendung von Bildcodes gesteuert.
-      
-      **Standard**: Ja  
-        *Eine Einstellung auf „Ja“ verhindert die Verwendung einfacher Kennwörter.* 
+  - **Minimale Kennwortlänge**  
+    Die Richtlinieneinstellung für die minimale Kennwortlänge bestimmt die Mindestanzahl von Zeichen, die ein Kennwort für ein Benutzerkonto besitzen muss. Sie können einen Wert zwischen 1 und 14 Zeichen einstellen, oder Sie können einstellen, dass kein Kennwort erforderlich ist, indem Sie die Zeichenanzahl auf 0 einstellen.
+    
+    **Standard**: 8  
+
+  - **Einfache Kennwörter blockieren**  
+    Gibt an, ob PINs oder Kennwörter wie „1111“ oder „1234“ zulässig sind. Für Desktop-Geräte wird auch die Verwendung von Bildcodes gesteuert.
+    
+    **Standard**: Ja  
+      *Eine Einstellung auf „Ja“ verhindert die Verwendung einfacher Kennwörter.* 
 
   - **Wiederverwendung vorheriger Kennwörter verhindern**  
     Gibt an, wie viele Kennwörter, die nicht mehr verwendet werden können, im Verlauf gespeichert werden können. Der Wert schließt das aktuelle Kennwert des Benutzers mit ein. So kann der Benutzer beispielsweise bei der Einstellung *1* sein aktuelles Kennwort nicht ändern, wenn er ein neues Kennwort auswählt. Die Einstellung *5* bedeutet, dass ein Benutzer sein neues Kennwort nicht auf sein aktuelles Kennwort oder eines seiner vorherigen vier Kennwörter festlegen kann.
@@ -344,10 +344,10 @@ Weitere Informationen finden Sie unter [Policy CSP - Experience (Richtlinien-Kon
     Gibt an, ob App- und Inhaltsvorschläge durch Herausgeber von Drittanbieter-Software in Features von Windows-Blickpunkt (z.B. Windows-Blickpunkt auf dem Sperrbildschirm, vorgeschlagene Apps im Startmenü oder Windows-Tipps) zulässig sind. Benutzer sehen möglicherweise trotzdem Vorschläge für Microsoft-Features, -Apps und -Dienste.
       
     **Standard**: Ja  
-   - **Bestimmte Funktionen für Endbenutzer blockieren**  
-      Ermöglicht IT-Administratoren das Aktivieren von Funktionen, die normalerweise nur für Endbenutzer bestimmt sind, beispielsweise Startvorschläge, Mitgliedschaftsbenachrichtigungen, App-Installation nach Anzeige der Windows-Willkommensseite und Kachelumleitungen.
-      
-     **Standard**: Ja  
+  - **Bestimmte Funktionen für Endbenutzer blockieren**  
+    Ermöglicht IT-Administratoren das Aktivieren von Funktionen, die normalerweise nur für Endbenutzer bestimmt sind, beispielsweise Startvorschläge, Mitgliedschaftsbenachrichtigungen, App-Installation nach Anzeige der Windows-Willkommensseite und Kachelumleitungen.
+    
+    **Standard**: Ja  
 
 
 ### <a name="exploit-guard"></a>Exploit Guard  
@@ -1440,5 +1440,5 @@ Weitere Informationen finden Sie unter [Policy CSP - WindowsPowerShell (Richtlin
  
 ## <a name="next-steps"></a>Nächste Schritte  
 
-[Zeigen Sie die aktuelle baselineversion](security-baseline-settings-mdm.md)  
-[Aktualisieren Sie die Profile, um eine neue baselineversion verwenden](security-baselines.md#change-the-baseline-instance-for-a-profile)
+[Aktuelle Baselineversion anzeigen](security-baseline-settings-mdm.md)  
+[Upgradeprofile für die Verwendung einer neuen Baselineversion](security-baselines.md#change-the-baseline-instance-for-a-profile)

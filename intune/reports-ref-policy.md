@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/05/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc7b7cdc4388051761eafac322171e4c30075923
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 4f66cc3a10711b137e081fab98445d73108748a9
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549179"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713159"
 ---
 # <a name="reference-for-policy-entities"></a>Referenz für Richtlinienentitäten
 
@@ -64,20 +64,20 @@ Die Entität **DeviceConfigurationProfileDeviceActivity** listet die Anzahl der 
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
 | DateKey |Date Key für den Zeitpunkt als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde |20160703 |
-| Pending |Anzahl eindeutiger Geräte im Zustand „ausstehend“ |123 |
-| Succeeded |Anzahl eindeutiger Geräte im Zustand „erfolgreich“ |12 |
+| Ausstehend |Anzahl eindeutiger Geräte im Zustand „ausstehend“ |123 |
+| Erfolgreich |Anzahl eindeutiger Geräte im Zustand „erfolgreich“ |12 |
 | Fehler |Anzahl eindeutiger Geräte im Zustand „Fehler“ |10 |
-| Failed |Anzahl eindeutiger Geräte im Zustand „fehlerhaft“ |2 |
+| Fehlgeschlagen |Anzahl eindeutiger Geräte im Zustand „fehlerhaft“ |2 |
 
 Die Entität **DeviceConfigurationProfileUserActivity** listet die Anzahl der **Benutzer** mit dem Zustand „erfolgreich“, „ausstehend“, „fehlerhaft“ oder „Fehler“ pro Tag auf. Die Anzahl gibt die Gerätekonfigurationsprofile an, die der Entität zugewiesen sind. Wenn ein **Benutzer** beispielsweise den Zustand „erfolgreich“ für alle zugewiesenen Richtlinien aufweist, wird der Zähler für „erfolgreich“ für diesen Tag um eins erhöht. Wenn einem Benutzer zwei Profile zugewiesen sind, von denen eines den Zustand „erfolgreich“ und eines den Zustand „Fehler“ aufweist, wird der Benutzer für den Zustand „Fehler“ gezählt.  Die Entität **DeviceConfigurationProfileUserActivity** listet für die letzten 30 Tage auf, wie viele Benutzer an einem bestimmten Tag in welchem Zustand waren.
 
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
 | DateKey |Date Key für den Zeitpunkt als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde |20160703 |
-| Pending |Anzahl eindeutiger Benutzer im Zustand „ausstehend“ |123 |
-| Succeeded |Anzahl eindeutiger Benutzer im Zustand „erfolgreich“ |12 |
+| Ausstehend |Anzahl eindeutiger Benutzer im Zustand „ausstehend“ |123 |
+| Erfolgreich |Anzahl eindeutiger Benutzer im Zustand „erfolgreich“ |12 |
 | Fehler |Anzahl eindeutiger Benutzer im Zustand „Fehler“ |10 |
-| Failed |Anzahl eindeutiger Benutzer im Zustand „fehlerhaft“ |2 |
+| Fehlgeschlagen |Anzahl eindeutiger Benutzer im Zustand „fehlerhaft“ |2 |
 
 ## <a name="policytypeactivity"></a>PolicyTypeActivity
 
@@ -88,10 +88,10 @@ Die Entität **PolicyTypeActivity** listet die Gesamtzahl der Geräte im Zustand
 | DateKey |Date Key für den Zeitpunkt, als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde |20160703 |
 | PolicyKey |Der Richtlinienschlüssel kann mit der Richtlinie verknüpft werden, um den Richtliniennamen zu erhalten. |Windows 10-Baseline |
 | PolicyTypeKey |Der Typ des Richtlinienschlüssels kann mit dem Richtlinientyp verknüpft werden, um den Namen des Richtlinientyps zu erhalten. |Windows 10-Kompatibilitätsrichtlinien |
-| Pending |Anzahl eindeutiger Geräte im Zustand „ausstehend“ |123 |
-| Succeeded |Anzahl eindeutiger Geräte im Zustand „erfolgreich“ |12 |
+| Ausstehend |Anzahl eindeutiger Geräte im Zustand „ausstehend“ |123 |
+| Erfolgreich |Anzahl eindeutiger Geräte im Zustand „erfolgreich“ |12 |
 | Fehler |Anzahl eindeutiger Geräte im Zustand „Fehler“ |10 |
-| Failed |Anzahl eindeutiger Geräte im Zustand „fehlerhaft“ |2 |
+| Fehlgeschlagen |Anzahl eindeutiger Geräte im Zustand „fehlerhaft“ |2 |
 
 ## <a name="compliance-policy"></a>Kompatibilitätsrichtlinie
 
@@ -148,11 +148,11 @@ In der folgenden Tabelle ist die Anzahl der Geräte mit dem Zustand „erfolgrei
 |Eigenschaft  |Beschreibung  |Beispiel  |
 |---------|---------|---------|
 |DateKey|Date Key für den Zeitpunkt als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde|20160703|
-|Pending|Anzahl eindeutiger Geräte im Zustand „ausstehend“|123|
-|Succeeded|Anzahl eindeutiger Geräte im Zustand „erfolgreich“|12|
+|Ausstehend|Anzahl eindeutiger Geräte im Zustand „ausstehend“|123|
+|Erfolgreich|Anzahl eindeutiger Geräte im Zustand „erfolgreich“|12|
 PolicyKey|Der Richtlinienschlüssel kann mit der Richtlinie verknüpft werden, um den Richtliniennamen zu erhalten.|Windows 10-Baseline|
 |Fehler|Anzahl eindeutiger Geräte im Zustand „Fehler“|10|
-|Failed|Anzahl eindeutiger Geräte im Zustand „fehlerhaft“|2|
+|Fehlgeschlagen|Anzahl eindeutiger Geräte im Zustand „fehlerhaft“|2|
 
 ### <a name="policyuseractivity"></a>PolicyUserActivity 
 
@@ -162,8 +162,8 @@ In der folgenden Tabelle ist die Anzahl der Benutzer mit dem Zustand „erfolgre
 | Eigenschaft  |                                         Beschreibung                                         |       Beispiel       |
 |-----------|---------------------------------------------------------------------------------------------|---------------------|
 |  DateKey  | Date Key für den Zeitpunkt als das Einchecken der Gerätekonfigurationsprofile im Data Warehouse aufgezeichnet wurde |      20160703       |
-|  Pending  |                         Anzahl eindeutiger Geräte im Zustand „ausstehend“                          |         123         |
-| Succeeded |                         Anzahl eindeutiger Geräte im Zustand „erfolgreich“                          |         12          |
+|  Ausstehend  |                         Anzahl eindeutiger Geräte im Zustand „ausstehend“                          |         123         |
+| Erfolgreich |                         Anzahl eindeutiger Geräte im Zustand „erfolgreich“                          |         12          |
 | PolicyKey |                Der Richtlinienschlüssel kann mit der Richtlinie verknüpft werden, um den Richtliniennamen zu erhalten.                 | Windows 10-Baseline |
 |   Fehler   |                          Anzahl eindeutiger Geräte im Zustand „Fehler“                           |         10          |
 

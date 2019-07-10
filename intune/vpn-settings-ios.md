@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d922ecde0159603acbfbc3dc0590592592d72645
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1eee827ace5dae92b485a250e6e4e0b9b426fbe6
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046212"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713187"
 ---
 # <a name="configure-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Konfigurieren von VPN-Einstellungen auf iOS-Geräten in Microsoft Intune
 
@@ -41,7 +41,7 @@ Wählen Sie den VPN-Verbindungstyp aus der folgenden Liste von Anbietern aus:
 - **Cisco (IPsec)**
 - **Citrix-VPN**
 - **Citrix SSO**
-- **Zscaler**: Um den bedingten Zugriff zu nutzen oder Benutzern zu ermöglichen, den Zscaler-Anmeldebildschirm zu umgehen, müssen Sie Zscaler Private Access (ZPA) in Ihr Azure AD-Konto integrieren. Ausführliche Schritte finden Sie in der [Zscaler-Dokumentation](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad#Azure_UserSSO). 
+- **Zscaler**: Um den bedingten Zugriff zu nutzen oder Benutzern zu ermöglichen, den Zscaler-Anmeldebildschirm zu umgehen, müssen Sie Zscaler Private Access (ZPA) in Ihr Azure AD-Konto integrieren. Ausführliche Schritte finden Sie in der [Zscaler-Dokumentation](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad). 
 - **Benutzerdefiniertes VPN**
 
 > [!NOTE]

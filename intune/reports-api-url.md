@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/25/2019
+ms.date: 07/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38e24bff110cea7d7a565ca00fc0e3e13e37744f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 6d2e6c99d9493d935f4a8f87c6525af19796b5f6
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530762"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648783"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Endpunkt der Intune Data Warehouse-API
 
@@ -30,7 +30,7 @@ Sie können die Intune-Data Warehouse-API mit einem Konto mit bestimmten rollenb
 
 [!INCLUDE [reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
-## <a name="authorization"></a>Autorisierung
+## <a name="authorization"></a>Authorization
 
 Azure Active Directory (Azure AD) bietet Ihnen über OAuth 2.0 die Möglichkeit, den Zugriff auf Webanwendungen und Web-APIs in Ihrem Azure AD-Mandanten zu autorisieren. Dieser Leitfaden ist sprachenunabhängig und beschreibt, wie HTTP-Nachrichten gesendet und empfangen werden können, ohne Open Source-Bibliotheken zu verwenden. Der Codefluss zur Autorisierung mit OAuth 2.0 wird in [section 4.1 (Abschnitt 4.1)](https://tools.ietf.org/html/rfc6749#section-4.1) der OAuth 2.0-Spezifikation beschrieben.
 

@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 1cbf45fc337cbe7d7a45081a3b9e05002ca126d8
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 5a8111d2542269441c7305aad0aad0b7c2162037
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402941"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735616"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>Einstellungen für Windows 10-Geräte zum Aktivieren von Windows Hello for Business in Intune
 
@@ -44,57 +44,57 @@ Weitere Informationen zu Windows Hello for Business-Profilen in Intune finden Si
   
   **Standardeinstellung:** Nicht konfiguriert
 
-  Bei Festlegung auf *aktiviert*, sind folgende Einstellungen verfügbar:
+  Wenn diese Option *auf*aktiviert festgelegt ist, sind die folgenden Einstellungen verfügbar:
 
-    - **PIN-Mindestlänge**  
-     Geben Sie eine minimale PIN-Länge für Geräte, um sichere Anmeldung zu. Standardeinstellungen der Windows-Geräte sind sechs Zeichen, aber diese Einstellung kann erzwingen, dass mindestens 4 bis 127 Zeichen. 
-  
-      **Standardeinstellung:** *Nicht konfiguriert*
+  - **PIN-Mindestlänge**  
+    Geben Sie eine minimale PIN-Länge für Geräte an, um die Anmeldung zu unterstützen. Windows-Geräte Standardwerte sind sechs Zeichen, diese Einstellung kann jedoch mindestens vier bis 127 Zeichen erzwingen. 
 
-    - **Höchstlänge für PIN**  
-    Geben Sie eine Höchstlänge für PIN für Geräte, um sichere Anmeldung zu. Standardeinstellungen der Windows-Geräte sind sechs Zeichen, aber diese Einstellung kann erzwingen, dass mindestens 4 bis 127 Zeichen.  
+    **Standardeinstellung:** *Nicht konfiguriert*
 
-      **Standardeinstellung:** *Nicht konfiguriert*  
+  - **Höchstlänge für PIN**  
+  Geben Sie eine maximale PIN-Länge für Geräte an, um die Anmeldung zu unterstützen. Windows-Geräte Standardwerte sind sechs Zeichen, diese Einstellung kann jedoch mindestens vier bis 127 Zeichen erzwingen.  
 
-    - **Kleinbuchstaben in PIN**  
-      Sie können eine stärkere PIN erzwingen, indem Sie von Endbenutzern fordern, Kleinbuchstaben einzubeziehen. Folgende Optionen sind verfügbar:
+    **Standardeinstellung:** *Nicht konfiguriert*  
 
-      - **Nicht zulässig** : Hiermit wird die Verwendung von Kleinbuchstaben in der PIN von Benutzern blockiert. Dieses Verhalten tritt auch auf, wenn die Einstellung nicht konfiguriert ist.
-      - **Zulässig**: Benutzer können Kleinbuchstaben in der PIN verwenden, aber es ist nicht erforderlich.
-      - **Erforderlich**: Benutzer müssen in ihre PIN mindestens einen Kleinbuchstaben einbeziehen. Beispielsweise ist es üblich, die Verwendung mindestens eines Großbuchstabens und eines Sonderzeichens vorzuschreiben.
+  - **Kleinbuchstaben in PIN**  
+    Sie können eine stärkere PIN erzwingen, indem Sie von Endbenutzern fordern, Kleinbuchstaben einzubeziehen. Folgende Optionen sind verfügbar:
 
-    - **Großbuchstaben in PIN**  
+    - **Nicht zulässig** : Hiermit wird die Verwendung von Kleinbuchstaben in der PIN von Benutzern blockiert. Dieses Verhalten tritt auch auf, wenn die Einstellung nicht konfiguriert ist.
+    - **Zulässig**: Benutzer können Kleinbuchstaben in der PIN verwenden, aber es ist nicht erforderlich.
+    - **Erforderlich**: Benutzer müssen in ihre PIN mindestens einen Kleinbuchstaben einbeziehen. Beispielsweise ist es üblich, die Verwendung mindestens eines Großbuchstabens und eines Sonderzeichens vorzuschreiben.
+
+  - **Großbuchstaben in PIN**  
     Sie können eine stärkere PIN erzwingen, indem Sie von Endbenutzern fordern, Großbuchstaben einzubeziehen. Folgende Optionen sind verfügbar:
 
-      - **Nicht zulässig**: Hiermit wird die Verwendung von Großbuchstaben in der PIN von Benutzern blockiert. Dieses Verhalten tritt auch auf, wenn die Einstellung nicht konfiguriert ist.
-      - **Zulässig**: Benutzer können Großbuchstaben in der PIN verwenden, aber es ist nicht erforderlich.
-      - **Erforderlich**: Benutzer müssen in ihre PIN mindestens einen Großbuchstaben einbeziehen. Beispielsweise ist es üblich, die Verwendung mindestens eines Großbuchstabens und eines Sonderzeichens vorzuschreiben.
+    - **Nicht zulässig**: Hiermit wird die Verwendung von Großbuchstaben in der PIN von Benutzern blockiert. Dieses Verhalten tritt auch auf, wenn die Einstellung nicht konfiguriert ist.
+    - **Zulässig**: Benutzer können Großbuchstaben in der PIN verwenden, aber es ist nicht erforderlich.
+    - **Erforderlich**: Benutzer müssen in ihre PIN mindestens einen Großbuchstaben einbeziehen. Beispielsweise ist es üblich, die Verwendung mindestens eines Großbuchstabens und eines Sonderzeichens vorzuschreiben.
 
-    - **Sonderzeichen in PIN**  
+  - **Sonderzeichen in PIN**  
     Sie können eine stärkere PIN erzwingen, indem Sie von Endbenutzern fordern, Sonderzeichen einzubeziehen. Gilt für diese Sonderzeichen: `! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~`  
- 
-      Folgende Optionen sind verfügbar:
-      - **Nicht zulässig** : Hiermit wird die Verwendung von Sonderzeichen in der PIN von Benutzern blockiert. Dieses Verhalten tritt auch auf, wenn die Einstellung nicht konfiguriert ist.
-      - **Zulässig**: Benutzer können Großbuchstaben in der PIN verwenden, aber es ist nicht erforderlich.
-      - **Erforderlich**: Benutzer müssen in ihre PIN mindestens einen Großbuchstaben einbeziehen. Beispielsweise ist es üblich, die Verwendung mindestens eines Großbuchstabens und eines Sonderzeichens vorzuschreiben.
 
-      **Standard**: nicht zulässig
+    Folgende Optionen sind verfügbar:
+    - **Nicht zulässig** : Hiermit wird die Verwendung von Sonderzeichen in der PIN von Benutzern blockiert. Dieses Verhalten tritt auch auf, wenn die Einstellung nicht konfiguriert ist.
+    - **Zulässig**: Benutzer können Großbuchstaben in der PIN verwenden, aber es ist nicht erforderlich.
+    - **Erforderlich**: Benutzer müssen in ihre PIN mindestens einen Großbuchstaben einbeziehen. Beispielsweise ist es üblich, die Verwendung mindestens eines Großbuchstabens und eines Sonderzeichens vorzuschreiben.
+
+    **Standard**: nicht zulässig
 
   - **PIN-Ablauf (Tage)**  
-      Es wird empfohlen, ein Ablaufdatum für eine PIN anzugeben, nach dem sie vom Benutzer geändert werden muss. Standardeinstellungen der Windows-Geräte sind 41 Tage.
+    Es wird empfohlen, ein Ablaufdatum für eine PIN anzugeben, nach dem sie vom Benutzer geändert werden muss. Windows-Geräte Standardwerte sind 41 Tage.
 
     **Standard**: Nicht konfiguriert
 
   - **PIN-Verlauf speichern**  
-    Schränkt die Wiederverwendung zuvor verwendeter PINs ein. Windows-Geräte standardmäßig verhindert die Wiederverwendung der letzten fünf PINs.  
+    Schränkt die Wiederverwendung zuvor verwendeter PINs ein. Windows-Geräte verhindern standardmäßig die Wiederverwendung der letzten fünf Pins.  
 
     **Standard**: Nicht konfiguriert  
 
   - **PIN-Wiederherstellung aktivieren**   
-    Ermöglicht Benutzer verwenden die Windows Hello for Business-PIN-Recovery-Dienst. 
+    Ermöglicht es Benutzern, den Windows Hello for Business-Pin-Wiederherstellungs Dienst zu verwenden. 
     
-    - **Aktiviert** - Geheimnis für die PIN-Wiederherstellung wird auf dem Gerät gespeichert und kann der Benutzer seine PIN bei Bedarf ändern.  
-    - **Deaktivierte** : das Geheimnis für die Wiederherstellung nicht erstellt oder gespeichert.
+    - **Aktiviert** : der geheime Schlüssel für die Pin-Wiederherstellung wird auf dem Gerät gespeichert, und der Benutzer kann bei Bedarf die PIN ändern.  
+    - **Deaktiviert** : das Wiederherstellungs Geheimnis wird nicht erstellt oder gespeichert.
 
     **Standardeinstellung:** Nicht konfiguriert
 
@@ -128,11 +128,11 @@ Weitere Informationen zu Windows Hello for Business-Profilen in Intune finden Si
 
   **Standardeinstellung:** Nicht konfiguriert
 
-- **Verwenden Sie die Sicherheitsschlüssel für die Anmeldung in**  
-  Diese Einstellung ist für Geräte unter Windows 10, Version 1903 oder höher verfügbar. Zum Verwalten von Unterstützung für die Verwendung von Windows Hello-Sicherheitsschlüssel für die Anmeldung verwenden.  
+- **Verwenden von Sicherheits Schlüsseln für die Anmeldung**  
+  Diese Einstellung ist für Geräte mit Windows 10, Version 1903 oder höher, verfügbar. Verwenden Sie es, um die Unterstützung für die Verwendung von Windows Hello-Sicherheits Schlüsseln für die Anmeldung zu verwalten.  
 
-  - **Aktiviert** -Benutzer können einen Windows Hello-Sicherheitsschlüssel verwenden, wie eine Anmeldeinformationen für PCs, die diese Richtlinie angewendet. 
-  - **Deaktiviert** - Sicherheitsschlüssel werden deaktiviert, und Benutzer nicht verwenden, um PCs anmelden.   
+  - **Aktiviert** : Benutzer können einen Windows Hello-Sicherheitsschlüssel als Anmelde Informationen für PCs verwenden, die diese Richtlinie als Ziel verwenden. 
+  - **Deaktiviert** : Sicherheitsschlüssel sind deaktiviert und können von Benutzern nicht zum Anmelden bei PCs verwendet werden.   
 
   **Standardeinstellung:** Nicht konfiguriert
 

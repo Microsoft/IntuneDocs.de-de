@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ec0ab28f2b32cf3c60d6d674cfac5a5b21d094d
-ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
+ms.openlocfilehash: 961470b9f5671dc39864dac45fdcb49862de4da9
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67558415"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735564"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
@@ -40,28 +40,28 @@ Mit dem Microsoft Intune App SDK für iOS können Sie die Intune-App-Schutzricht
 
 * Laden Sie die Dateien für das Intune App SDK für iOS von [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) herunter.
 
-## <a name="whats-in-the-sdk-repository"></a>Was ist im SDK-Repository
+## <a name="whats-in-the-sdk-repository"></a>Inhalt des SDK-Repository
 
-Die folgenden Dateien sind relevant für apps/Erweiterungen, die keinen Swift-Code enthalten oder mit einer Version von Xcode vor 10.2 kompiliert werden:
+Die folgenden Dateien sind für apps/Erweiterungen relevant, die keinen SWIFT-Code enthalten oder mit einer Version von Xcode vor 10,2 kompiliert werden:
 
-* **IntuneMAM.framework**: Das Intune App SDK-Framework. Es wird empfohlen, dass Sie dieses Framework an Ihre app/Extensions anwendungsverwaltung mit Intune-Client zu verknüpfen. Einige Entwickler bevorzugen jedoch möglicherweise die Leistungsvorteile von der statischen Bibliothek. Weitere Informationen finden Sie in den folgenden Themen.
+* **IntuneMAM.framework**: Das Intune App SDK-Framework. Es wird empfohlen, dass Sie dieses Framework mit ihren apps/Erweiterungen verknüpfen, um die Intune-Client Anwendungs Verwaltung zu aktivieren. Einige Entwickler bevorzugen jedoch möglicherweise die Leistungsvorteile der statischen Bibliothek. Weitere Informationen finden Sie in den folgenden Themen.
 
-* **libIntuneMAM.a**: Die statische Intune App SDK-Bibliothek. Entwickler können wählen, um die statische Bibliothek, anstelle von Framework zu verknüpfen. Da statische Bibliotheken, die direkt in die app /-Erweiterung zum Zeitpunkt der Erstellung binäre eingebettet sind, gibt es jedoch einige Leistungsvorteile der Startzeit mit der statischen Bibliothek. Die Integration in Ihre app ist jedoch schwieriger werden. Wenn Ihre app alle Erweiterungen enthält, verknüpfen die statische Bibliothek mit der app und Erweiterungen, eine größere Größe des app-Bundle dazu führt, werden als die statische Bibliothek in jede binäre app/Erweiterung eingebettet. Wenn Sie das Framework zu verwenden, können apps und Erweiterungen die gleiche Intune-SDK-Binärdateien, was einer geringeren Größe der app freigeben.
+* **libIntuneMAM.a**: Die statische Intune App SDK-Bibliothek. Entwickler können die statische Bibliothek anstelle des Frameworks verknüpfen. Da statische Bibliotheken zur Buildzeit direkt in die Binärdatei der APP/Erweiterung eingebettet werden, gibt es einige Vorteile bei der Verwendung der statischen Bibliothek. Die Integration in Ihre APP ist jedoch komplizierter. Wenn Ihre APP Erweiterungen enthält, führt das Verknüpfen der statischen Bibliothek mit der APP und Erweiterungen zu einer größeren App Bundle Größe, da die statische Bibliothek in jede APP/Erweiterungs Binärdatei eingebettet wird. Bei Verwendung des Frameworks können apps und Erweiterungen dieselbe InTune SDK-Binärdatei verwenden, was zu einer geringeren App-Größe führt.
 
-* **IntuneMAMResources.Bundle**: Ein Ressourcenpaket, das die Ressourcen für das SDK enthält. Das Ressourcen-Paket ist nur für apps, die Integration die statische Bibliothek ("libintunemam.a") erforderlich.
+* **IntuneMAMResources.Bundle**: Ein Ressourcenpaket, das die Ressourcen für das SDK enthält. Das Ressourcen Bündel ist nur für apps erforderlich, die die statische Bibliothek (libintunemam. a) integrieren.
 
-Die folgenden Dateien sind relevant für apps/Erweiterungen, die Swift-Code enthalten und werden mit Xcode 10.2 + kompiliert:
+Die folgenden Dateien sind für apps/Erweiterungen relevant, die SWIFT-Code enthalten und mit Xcode 10.2 und höher kompiliert werden:
 
-* **IntuneMAMSwift.framework**: das Intune App SDK Swift-Framework. Dieses Framework enthält alle Header für APIs, die Ihrer app aufgerufen wird. Verknüpfen Sie dieses Framework, Ihre app/Erweiterungen für die anwendungsverwaltung mit Intune-Client zu aktivieren.
+* **Intunemamswift. Framework**: das InTune App SDK SWIFT-Framework. Dieses Framework enthält alle Header für APIs, die von Ihrer APP aufgerufen werden. Verknüpfen Sie dieses Framework mit ihren apps/Erweiterungen, um die Intune-Client Anwendungs Verwaltung zu aktivieren.
 
-* **IntuneMAMSwiftStub.framework**: das Intune App SDK Swift-Stub-Framework. Dies ist eine erforderliche Abhängigkeit von IntuneMAMSwift.framework die apps/Extensions verknüpfen müssen.
+* **Intunemamswiftstub. Framework**: das InTune App SDK SWIFT-Stub-Framework. Dies ist eine erforderliche Abhängigkeit von intunemamswift. Framework, welche apps/Erweiterungen verknüpft werden müssen.
 
 
-Die folgenden Dateien sind für alle apps/Extentions relevant:
+Die folgenden Dateien sind für alle apps/Erweiterungen relevant:
 
-* **IntuneMAMConfigurator**: ein Tool zur Erweiterung der Datei "Info.plist" oder der app mit den mindestens erforderlichen Änderungen für die Intune-Verwaltung konfigurieren. Abhängig von den Funktionen Ihrer app oder einer Erweiterung müssen Sie möglicherweise zusätzliche manuelle Änderungen an der Datei "Info.plist" vornehmen.
+* **Intunemamconfigurator**: ein Tool, das zum Konfigurieren der "Info. plist" der APP oder Erweiterung mit den mindestens erforderlichen Änderungen für die Intune-Verwaltung verwendet wird. Abhängig von der Funktionalität Ihrer APP oder Erweiterung müssen Sie möglicherweise zusätzliche manuelle Änderungen an der Datei "Info. plist" vornehmen.
 
-* **Headers**: Stellt die öffentlichen Intune App SDK-APIs bereit. Diese Header sind in den Frameworks IntuneMAM/IntuneMAMSwift enthalten, damit Entwickler, die entweder von den Frameworks nutzen nicht manuell die Header zu seinem Projekt hinzufügen müssen. Entwickler, die mit der statischen Bibliothek ("libintunemam.a") verknüpfen müssen diese Header manuell in ihrem Projekt einfügen.
+* **Headers**: Stellt die öffentlichen Intune App SDK-APIs bereit. Diese Header sind in den intunemam/intunemamswift-Frameworks enthalten, sodass Entwickler, die eines der Frameworks nutzen, die Header nicht manuell zu Ihrem Projekt hinzufügen müssen. Entwickler, die eine Verknüpfung mit der statischen Bibliothek (libintunemam. a) herstellen möchten, müssen diese Header manuell in Ihr Projekt einschließen.
 
 Die folgenden Headerdateien enthalten die APIs, die Datentypen und die Protokolle, die vom Intune App SDK für Entwickler zur Verfügung gestellt wurden:
 
@@ -94,14 +94,14 @@ Ziel des Intune App SDK für iOS ist es, iOS-Anwendungen mit minimalen Codeände
 
 Gehen Sie folgendermaßen vor, um das Intune App SDK zu aktivieren:
 
-1. **Option 1 – Framework (empfohlen)** : Wenn Sie Xcode 10.2 + verwenden, und die app-Erweiterung, Swift-Code enthält, verknüpfen Sie `IntuneMAMSwift.framework` und `IntuneMAMSwiftStub.framework` an Ihr Ziel: Ziehen Sie `IntuneMAMSwift.framework` und `IntuneMAMSwiftStub.framework` auf die **eingebettet Binärdateien** Liste des Projektziels.
+1. **Option 1-Framework (empfohlen)** : Wenn Sie Xcode 10.2 und höher verwenden und Ihre APP/Erweiterung SWIFT-Code enthält, `IntuneMAMSwift.framework` `IntuneMAMSwiftStub.framework` verknüpfen Sie und mit Ihrem Ziel `IntuneMAMSwift.framework` : `IntuneMAMSwiftStub.framework` ziehen Sie **und in den eingebetteten Die Liste** der Binärdateien des Projektziels.
 
-    Verknüpfen Sie andernfalls `IntuneMAM.framework` an Ihr Ziel: Ziehen Sie `IntuneMAM.framework` auf die **eingebettete Binärdateien** Liste des Projektziels.
+    Verknüpfen `IntuneMAM.framework` Sie andernfalls mit dem Ziel: ziehen `IntuneMAM.framework` Sie in **die Liste eingebetteter Binärdateien** des Projektziels.
 
    > [!NOTE]
    > Bei Verwendung des Frameworks müssen Sie die Simulatorarchitekturen manuell aus dem universellen Framework entfernen, bevor Sie Ihre App an den App Store übermitteln. Weitere Informationen siehe [Übermitteln Ihrer App an den App Store](#submit-your-app-to-the-app-store).
 
-   **Option 2 – statische Bibliothek**: Diese Option steht nur für apps/Erweiterungen, die keine Swift-Code enthält oder mit Xcode erstellt wurden < 10.2. Stellen Sie eine Verknüpfung mit der `libIntuneMAM.a`-Bibliothek her. Ziehen Sie die `libIntuneMAM.a`-Bibliothek in die Liste **Verknüpfte Frameworks und Bibliotheken** des Projektziels.
+   **Option 2: statische Bibliothek**: diese Option ist nur für apps/Erweiterungen verfügbar, die keinen SWIFT-Code enthalten oder mit Xcode < 10,2 erstellt wurden. Stellen Sie eine Verknüpfung mit der `libIntuneMAM.a`-Bibliothek her. Ziehen Sie die `libIntuneMAM.a`-Bibliothek in die Liste **Verknüpfte Frameworks und Bibliotheken** des Projektziels.
 
     ![Intune App SDK iOS – verknüpfte Frameworks und Bibliotheken](./media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -116,18 +116,18 @@ Gehen Sie folgendermaßen vor, um das Intune App SDK zu aktivieren:
 
      ![Intune App SDK iOS: Paketressourcen kopieren](./media/intune-app-sdk-ios-copy-bundle-resources.png)
      
-2. Wenn Sie eine der Intune-APIs von Swift aufrufen müssen, müssen die app-Erweiterung, die erforderlichen Intune SDK-Header über ein Objective-C bridging Header importieren. Wenn die app-Erweiterung nicht bereits einen Objective-C bridging Header enthalten ist, können Sie angeben, über die `SWIFT_OBJC_BRIDGING_HEADER` Konfigurationseinstellung oder des Xcode UI erstellen **Objective-C Bridging Header** Feld. Bridging-Header sollte etwa wie folgt aussehen:
+2. Wenn Sie eine der InTune-APIs von SWIFT abrufen müssen, muss Ihre APP/Erweiterung die erforderlichen InTune SDK-Header über einen Ziel-C-Bridging-Header importieren. Wenn Ihre APP/Erweiterung nicht bereits einen Ziel-c-Bridging-Header enthält, können Sie einen über die `SWIFT_OBJC_BRIDGING_HEADER` buildkonfigurationseinstellung oder das Ziel- **c-Bridging-Header** Feld der Xcode-Benutzeroberfläche angeben. Ihr Überbrückungs Header sollte in etwa wie folgt aussehen:
 
    ```objc
       #import <IntuneMAMSwift/IntuneMAM.h>
    ```
    
-   Dadurch werden alle Intune SDK-APIs in allen Swift Quelldateien die app-Erweiterung verfügbar. 
+   Dadurch werden alle InTune SDK-APIs in allen SWIFT-Quelldateien Ihrer APP/Erweiterung zur Verfügung gestellt. 
    
     > [!NOTE]
-    > * Sie können nur Bridge bestimmte Intune SDK-Header, Swift, anstatt die allumfassendes IntuneMAM.h auswählen
-    > * Je nachdem welche Framework/statische-Bibliothek, die Sie integriert haben, der Pfad zu der die Headerdatei(en) für abweichen kann.
-    > * Stellt die Intune-SDK-APIs in Swift über eine Module-Import-Anweisung (Beispiel: Importieren IntuneMAMSwift) wird derzeit nicht unterstützt. Verwenden einen Objective-C bridging Header ist die empfohlene Vorgehensweise.
+    > * Sie können festlegen, dass nur bestimmte InTune SDK-Header auf SWIFT und nicht auf die allumfassende intunemam. h-Datei überbrückt werden.
+    > * Je nachdem, welche Framework/statische Bibliothek Sie integriert haben, kann sich der Pfad zu den Header Dateien unterscheiden.
+    > * Das Bereitstellen der InTune SDK-APIs in SWIFT über eine Modul Import Anweisung (z.: Importieren von intunemamswift) wird derzeit nicht unterstützt. Die Verwendung eines Ziel-C-Überbrückungs Headers ist die empfohlene Vorgehensweise.
     
 3. Fügen Sie diese iOS-Frameworks zum Projekt hinzu:  
     * MessageUI.framework  
@@ -146,6 +146,7 @@ Gehen Sie folgendermaßen vor, um das Intune App SDK zu aktivieren:
 
    > [!NOTE]
    > Ihr Bereitstellungsprofil muss neue Werte für die Freigabe des Schlüsselbunds unterstützen. Die Schlüsselbund-Zugriffsgruppen sollten ein Platzhalterzeichen unterstützen. Sie können dies überprüfen, indem Sie die Datei „.mobileprovision“ in einem Text-Editor öffnen, nach **keychain-access-groups** suchen und sich vergewissern, dass ein Platzhalter vorhanden ist. Beispiel:
+   >
    >  ```xml
    >  <key>keychain-access-groups</key>
    >  <array>
@@ -322,6 +323,7 @@ Bei einem Fehler bei der Registrierung sollte die App den erneuten Aufruf dieser
 Nachdem diese API aufgerufen wurde, kann die App anschließend normal funktionieren. Wenn die Registrierung erfolgreich ist, benachrichtigt das SDK den Benutzer, dass ein Neustart der App erforderlich ist.
 
 Beispiel:
+
 ```objc
 [[IntuneMAMEnrollmentManager instance] loginAndEnrollAccount:@”user@foo.com”];
 ```
@@ -369,6 +371,7 @@ Diese Methode muss aufgerufen werden, bevor die Azure AD-Token des Benutzerkonto
 Wenn die App die Unternehmensdaten des Benutzers aus eigenem Antrieb löscht, kann das `doWipe`-Flag auf FALSCH festgelegt werden. Andernfalls kann die App das SDK dazu veranlassen, einen Prozess zum selektiven Zurücksetzen zu initiieren. Dies führt zu einem Aufruf des Stellvertreters der App für das selektive Zurücksetzen.
 
 Beispiel:
+
 ```objc
 [[IntuneMAMEnrollmentManager instance] deRegisterAndUnenrollAccount:@”user@foo.com” withWipe:YES];
 ```
@@ -737,9 +740,9 @@ Ja, der IT-Administrator kann einen Befehl zum selektiven Zurücksetzen an die A
 
 Ja! Wir haben vor Kurzem die Open-Source-Beispiel-App [Wagr für iOS](https://github.com/Microsoft/Wagr-Sample-Intune-iOS-App) überarbeitet. Wagr ist jetzt auch für App-Schutzrichtlinien aktiviert, die mit dem Intune App SDK bereitgestellt werden.
 
-### <a name="how-can-i-troubleshoot-my-app"></a>Wie behebe ich meine app?
+### <a name="how-can-i-troubleshoot-my-app"></a>Wie kann ich Probleme bei meiner app beheben?
 
-Das Intune SDK für iOS 9.0.3+ unterstützt die Möglichkeit, eine Diagnostics-Konsole in der mobilen app für das Testen von Richtlinien und fehlerprotokollierung hinzuzufügen. `IntuneMAMDiagnosticConsole.h` definiert die `IntuneMAMDiagnosticConsole` Klassenschnittstelle, die Entwickler die Intune-Diagnosekonsole anzeigen können. Dadurch können Endbenutzer oder Entwickler während Tests zum Erfassen und Freigeben von Intune-Protokolle zum Diagnostizieren von Problemen, die sie möglicherweise ein. Diese API ist für Integratoren, die optional.
+Das InTune SDK für IOS 9.0.3 + unterstützt die Möglichkeit, eine Diagnose Konsole innerhalb des Mobile App zum Testen von Richtlinien und Protokollierungs Fehlern hinzuzufügen. `IntuneMAMDiagnosticConsole.h` definiert die `IntuneMAMDiagnosticConsole` Klassen Schnittstelle, mit der Entwickler die Intune-Diagnose Konsole anzeigen können. Dadurch können Endbenutzer oder Entwickler während des Tests InTune-Protokolle sammeln und freigeben, um Probleme zu diagnostizieren, die Sie möglicherweise haben. Diese API ist für Integratoren optional.
 
 ## <a name="submit-your-app-to-the-app-store"></a>Übermitteln Ihrer App an den App Store
 
@@ -756,4 +759,5 @@ Sowohl die statische Bibliothek als auf Frameworkbuilds des Intune App SDK sind 
     ```bash
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
+
     Der erste Befehl entfernt die Simulatorarchitekturen aus der DYLIB-Datei des Frameworks. Der zweite Befehl kopiert die nur für Geräte zuständige DYLIB-Datei wieder in das Frameworkverzeichnis.

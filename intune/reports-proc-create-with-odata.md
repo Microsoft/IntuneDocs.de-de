@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 07/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d2e52ed64bfee2da8eafbc228abe61f109b3c27
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: d8d8e1d1bb20f222b202e8c854fc4d1a8ba694fa
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412449"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648915"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Erstellen eines Berichts aus dem OData-Feed mit Power BI
 
@@ -63,7 +63,7 @@ Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI 
 
     ![OData-Feed für Intune Data Warehouse für Ihren Mandanten](media/reports-create-01-odatafeed.png)
 
-9. Wählen Sie **OK** aus.
+9. Klicken Sie auf **OK**.
 10. Wählen Sie **Organisationskonto** aus, und melden Sie sich anschließend mit Ihren Anmeldeinformationen für Intune an.
 
     ![Anmeldeinformationen für das Organisationskonto](media/reports-create-02-org-account.png)

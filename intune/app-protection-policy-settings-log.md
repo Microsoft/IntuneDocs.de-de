@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/19/2019
+ms.date: 07/09/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8dca73de4491ab4f4822d42d589ef4e3bbbc50f1
-ms.sourcegitcommit: 569cd2d655d33db4fc5c5fb1f8f74a6bfdd78738
+ms.openlocfilehash: acad6b0fa343bdbcc722929886a8e68a4fa4d8bc
+ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67157038"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67713290"
 ---
 # <a name="review-client-app-protection-logs"></a>Überprüfen der Schutzprotokolle für Client-Apps
 
@@ -36,7 +36,7 @@ Der Prozess zum Aktivieren und Sammeln von Protokollen unterscheidet sich je nac
 
 In der folgenden Tabelle wird der Name und eine Erklärung für die Einstellungen aufgeführt, die im Protokoll aufgezeichnet werden.
 
-## <a name="app-protection-policy-settings"></a>Einstellungen für die App-Schutzrichtlinie
+## <a name="app-protection-policy-settings"></a>Einstellungen für App-Schutzrichtlinien
 
 | Name                        | Mögliche Werte                                                                                                                                                                                                                                                                                           | Einstellung im Azure Intune-MAM-Portal (mobile Anwendungsverwaltung)                                                                                                                            |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
