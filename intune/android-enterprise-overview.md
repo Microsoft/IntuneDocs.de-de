@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f59ff42f7707ace92442bf37ddac9679e36448f
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1649c6256e4df61b538e2adee87512617b677bb4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045891"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547495"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Verwalten von Android-Arbeitsprofilgeräten mit Intune
 
@@ -68,9 +68,9 @@ Angewendete App-Schutzrichtlinien werden im Arbeitsprofil und im persönlichen P
 
 VPN-Unterstützung entspricht Android VPN-Profilen. Für die Android Enterprise-Verwaltung sind prinzipiell die gleichen VPN-Anbieter und grundlegenden Konfigurationsoptionen verfügbar. Es gibt die folgenden zwei Unterschiede:
 
--  **Arbeitsprofilbezogenes VPN**: VPN-Verbindungen sind auf die Apps beschränkt, die für das Arbeitsprofil bereitgestellt werden. Nur von Android Enterprise verwaltete Apps können die VPN-Verbindung verwenden. Persönliche Apps auf dem Gerät können eine verwaltete VPN-Verbindung nicht verwenden. Weitere Informationen finden Sie im Artikel zu den [Android Enterprise-VPN-Einstellungen](vpn-settings-android.md#android-enterprise-vpn-settings).
+- **Arbeitsprofilbezogenes VPN**: VPN-Verbindungen sind auf die Apps beschränkt, die für das Arbeitsprofil bereitgestellt werden. Nur von Android Enterprise verwaltete Apps können die VPN-Verbindung verwenden. Persönliche Apps auf dem Gerät können eine verwaltete VPN-Verbindung nicht verwenden. Weitere Informationen finden Sie im Artikel zu den [Android Enterprise-VPN-Einstellungen](vpn-settings-android.md#android-enterprise-vpn-settings).
 
--  **App-spezifisches VPN:** Sie können ein App-spezifisches VPN in Intune konfigurieren, wenn der VPN-Anbieter Folgendes unterstützt:
+- **App-spezifisches VPN:** Sie können ein App-spezifisches VPN in Intune konfigurieren, wenn der VPN-Anbieter Folgendes unterstützt:
     - die Konfiguration für App-spezifische VPN
     - die Möglichkeit, ein App-bezogenes VPN über das Android Enterprise-App-Konfigurationsprofil zu konfigurieren
     Weitere Informationen finden Sie unter [Verwenden eines benutzerdefinierten Microsoft Intune-Profils zum Erstellen eines VPN-Profils pro App für Android-Geräte](android-pulse-secure-per-app-vpn.md).
@@ -79,9 +79,9 @@ VPN-Unterstützung entspricht Android VPN-Profilen. Für die Android Enterprise-
 
 Die gleichen Zertifikatprofil-Konfigurationsoptionen, die für die Android-Verwaltung zur Verfügung stehen, sind auf Android Enterprise-Arbeitsprofilgeräten verfügbar. Android Enterprise bietet verbesserte Zertifikatverwaltungs-APIs. Verbesserte Zertifikatsverwaltung bietet die folgenden Funktionen:
 
--  Gewährleistung, dass die Zertifikatbereitstellung im Hintergrund und nahtlos für den Benutzer erfolgt.
--  Gewährleistung, dass die bereitgestellten Zertifikate entfernt werden, wenn ein Gerät von Intune zurückgezogen und das Arbeitsprofil entfernt wird.
--  Bietet verbesserte Nachrichten, die Benutzer darüber informieren, dass das Zertifikat bereitgestellt und von ihrer IT-Abteilung über ihren Verwaltungsdienst konfiguriert wurde.
+- Gewährleistung, dass die Zertifikatbereitstellung im Hintergrund und nahtlos für den Benutzer erfolgt.
+- Gewährleistung, dass die bereitgestellten Zertifikate entfernt werden, wenn ein Gerät von Intune zurückgezogen und das Arbeitsprofil entfernt wird.
+- Bietet verbesserte Nachrichten, die Benutzer darüber informieren, dass das Zertifikat bereitgestellt und von ihrer IT-Abteilung über ihren Verwaltungsdienst konfiguriert wurde.
 
 Weitere Informationen finden Sie unter [Konfigurieren eines Zertifikatprofils für Ihre Geräte in Microsoft Intune](certificates-configure.md).
 

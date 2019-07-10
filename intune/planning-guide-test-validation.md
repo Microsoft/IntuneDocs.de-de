@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2820007f167b2f79b8dd98ca31d7e50968ac1969
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7aaeb94aad7e31c3346b088239024c14f9e190da
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046050"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549349"
 ---
 # <a name="intune-testing-and-validation"></a>Testen und Überprüfen von Intune
 
@@ -33,17 +33,17 @@ Es wird empfohlen, Ihre IT-Support- und Helpdeskmitarbeiter in die Testphase ein
 
 Wir empfehlen, die folgenden Schritte zu dokumentieren:
 
--   **Testkriterien:** Identifizieren Sie die Benchmarks, anhand derer die Messung erfolgt.
+- **Testkriterien:** Identifizieren Sie die Benchmarks, anhand derer die Messung erfolgt.
 
--   **Entwurfskomponenten**: Müssen in mindestens einem Testkriterium vorhanden sein.
+- **Entwurfskomponenten**: Müssen in mindestens einem Testkriterium vorhanden sein.
 
 Wenn eine Entwurfskomponente nicht in mindestens einem auf eine Anforderung oder ein Szenario ausgerichteten Testkriterium vorhanden ist, überlegen Sie, ob die Entwurfskomponente erforderlich ist oder nicht. Stellen Sie darüber hinaus sicher, dass die folgenden Elemente vorhanden sind:
 
--   **Konten**: Testkonten, die für EMS und Office 365 lizenziert sind, um alle Anwendungsszenarios testen zu können.
+- **Konten**: Testkonten, die für EMS und Office 365 lizenziert sind, um alle Anwendungsszenarios testen zu können.
 
--   **Geräte:** Testgeräte, die zurückgesetzt oder auf Werkseinstellungen zurückgesetzt werden können.
+- **Geräte:** Testgeräte, die zurückgesetzt oder auf Werkseinstellungen zurückgesetzt werden können.
 
--   **Integrationskomponenten**: Alle Integrationskomponenten (Zertifikatsconnectors und die lokalen Intune Exchange-Connectors) sollten installiert und bei Bedarf konfiguriert sein.
+- **Integrationskomponenten**: Alle Integrationskomponenten (Zertifikatsconnectors und die lokalen Intune Exchange-Connectors) sollten installiert und bei Bedarf konfiguriert sein.
 
 Sie benötigen möglicherweise Entwurfsänderungen, um unvorhergesehene Probleme zu berücksichtigen. Darüber hinaus müssen alle Entwurfsänderungen vollständig zusammen mit der jeweiligen Begründung dokumentiert werden. Hier sehen Sie ein Beispiel für die Veranschaulichung einer Änderung:
 
@@ -51,9 +51,9 @@ Sie benötigen möglicherweise Entwurfsänderungen, um unvorhergesehene Probleme
 
 Möglicherweise gibt es Herausforderungen oder Probleme, die technische Hilfe oder eine spezielle Problembehandlung während des Test- und Überprüfungsprozesses erfordern. Es wird empfohlen, dass Sie sich an die Microsoft-Supportkanäle wenden.
 
--   [Informationen zum Erhalten von Intune-Support](get-support.md)
+- [Informationen zum Erhalten von Intune-Support](get-support.md)
 
--   [Kontaktieren des telefonischen Supports für Microsoft Intune](get-support.md)
+- [Kontaktieren des telefonischen Supports für Microsoft Intune](get-support.md)
 
 ## <a name="functional-validation-testing"></a>Test zur Funktionsüberprüfung
 

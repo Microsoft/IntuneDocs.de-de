@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbebcb495298f3e8b17007d1fb00f0362ead4ab8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530676"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546880"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Erneutes Zuweisen von Richtlinien für bedingten Zugriff aus dem klassischen Intune-Portal im Azure-Portal
 
@@ -51,13 +51,13 @@ Wenn Sie dazu bereit sind, zum Azure-Portal zu wechseln, führen Sie die in dies
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>So überprüfen Sie Ihre Richtlinien für den gerätebasierten bedingten Zugriff im klassischen Intune-Portal
 
-1.  Wechseln Sie zum [klassischen Intune-Portal](https://manage.microsoft.com), und melden Sie sich mit Ihren Anmeldeinformationen an.
+1. Wechseln Sie zum [klassischen Intune-Portal](https://manage.microsoft.com), und melden Sie sich mit Ihren Anmeldeinformationen an.
 
-2.  Wählen Sie **Richtlinie** im linken Menü aus.
+2. Wählen Sie **Richtlinie** im linken Menü aus.
 
-3.  Wählen Sie **Bedingter Zugriff** und anschließend den Microsoft-Clouddienst (z.B. Exchange Online oder SharePoint Online) aus, für den Sie eine Richtlinie für bedingten Zugriff erstellt haben.
+3. Wählen Sie **Bedingter Zugriff** und anschließend den Microsoft-Clouddienst (z.B. Exchange Online oder SharePoint Online) aus, für den Sie eine Richtlinie für bedingten Zugriff erstellt haben.
 
-4.  Notieren Sie sich die Einstellungen für den bedingten Zugriff, und beziehen Sie sich auf diese Notizen, wenn Sie die gleichen Richtlinien für bedingten Zugriff im Azure-Portal erstellen.
+4. Notieren Sie sich die Einstellungen für den bedingten Zugriff, und beziehen Sie sich auf diese Notizen, wenn Sie die gleichen Richtlinien für bedingten Zugriff im Azure-Portal erstellen.
 
 ### <a name="app-and-device-based-conditional-access-policies-working-together"></a>Richtlinien für den App- und gerätebasierten bedingten Zugriff im gemeinsamen Einsatz
 
@@ -194,13 +194,13 @@ Sobald Sie Ihre Richtlinien für bedingten Zugriff im Azure-Portal neu zugewiese
 
 ### <a name="to-disable-the-conditional-access-policies"></a>So deaktivieren Sie die Richtlinien für bedingten Zugriff
 
-1.  Wechseln Sie zum [klassischen Intune-Portal](https://manage.microsoft.com), und melden Sie sich mit Ihren Anmeldeinformationen an.
+1. Wechseln Sie zum [klassischen Intune-Portal](https://manage.microsoft.com), und melden Sie sich mit Ihren Anmeldeinformationen an.
 
-2.  Wählen Sie **Richtlinie** im linken Menü aus.
+2. Wählen Sie **Richtlinie** im linken Menü aus.
 
-3.  Wählen Sie **Bedingter Zugriff** und anschließend den Microsoft-Clouddienst (z.B. Exchange Online oder SharePoint Online) aus, für den Sie eine Richtlinie für bedingten Zugriff erstellt haben.
+3. Wählen Sie **Bedingter Zugriff** und anschließend den Microsoft-Clouddienst (z.B. Exchange Online oder SharePoint Online) aus, für den Sie eine Richtlinie für bedingten Zugriff erstellt haben.
 
-4.  Deaktivieren Sie die Option **Richtlinie für bedingten Zugriff aktivieren**, und klicken Sie dann auf **Speichern**.
+4. Deaktivieren Sie die Option **Richtlinie für bedingten Zugriff aktivieren**, und klicken Sie dann auf **Speichern**.
 
     ![Abbildung: Deaktivieren von Richtlinien für bedingten Zugriff im klassischen Intune-Portal](./media/reassign-ca-18.png)
 

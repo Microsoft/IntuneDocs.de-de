@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8e8e0f440377f40937145d78d3959318c21e6e5
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: e3ed61f556cadf3ba04f7c33fbede2102c94b18f
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046315"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549312"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Zusätzliche Ressourcen für die Planung Ihrer Intune-Bereitstellung
 
@@ -50,12 +50,12 @@ Hier ist eine Liste der Tabellenvorlagen für jeden Abschnitt.
 
 Die folgenden Ressourcen enthalten zusätzliche Informationen, die während der Planungs-, Entwurfs- und Implementierungsphase der Intune-Bereitstellung nützlich sein können.
 
--   [Microsoft Intune-Dokumentation](/intune/): Die gesamte Intune-Dokumentation.
+- [Microsoft Intune-Dokumentation](/intune/): Die gesamte Intune-Dokumentation.
 
--   [Intune-Blog](https://blogs.technet.microsoft.com/enterprisemobility/): Beiträge, die erläutern, wie Intune sich in das übergeordnete Enterprise Mobility-Szenario einfügt.
+- [Intune-Blog](https://blogs.technet.microsoft.com/enterprisemobility/): Beiträge, die erläutern, wie Intune sich in das übergeordnete Enterprise Mobility-Szenario einfügt.
 
--   [Microsoft Trust Center](http://www.microsoft.com/TrustCenter): Lernen Sie die Herangehensweise von Microsoft bei Sicherheit, Datenschutz, Konformität und Transparenz in allen seinen Cloudprodukten und -diensten kennen.
+- [Microsoft Trust Center](http://www.microsoft.com/TrustCenter): Lernen Sie die Herangehensweise von Microsoft bei Sicherheit, Datenschutz, Konformität und Transparenz in allen seinen Cloudprodukten und -diensten kennen.
 
--   [Intune User Voice](http://microsoftintune.uservoice.com/): Wünschen Sie sich ein Feature, oder möchten Sie mit anderen Kunden über Features abstimmen? Übermitteln Sie über User Voice Ihr Feedback zu Intune. Wir hören Ihnen zu.
+- [Intune User Voice](http://microsoftintune.uservoice.com/): Wünschen Sie sich ein Feature, oder möchten Sie mit anderen Kunden über Features abstimmen? Übermitteln Sie über User Voice Ihr Feedback zu Intune. Wir hören Ihnen zu.
 
--   [Registrierungsleitfaden](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT): Eine Zusammenstellung von Dokumenten, die Sie unverändert nutzen oder im Rahmen Ihres Kommunikationsplans für Ihre Endbenutzer anpassen können, damit diese besser verstehen, was die Registrierung ihrer privaten Geräte bei Intune bedeutet.
+- [Registrierungsleitfaden](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT): Eine Zusammenstellung von Dokumenten, die Sie unverändert nutzen oder im Rahmen Ihres Kommunikationsplans für Ihre Endbenutzer anpassen können, damit diese besser verstehen, was die Registrierung ihrer privaten Geräte bei Intune bedeutet.

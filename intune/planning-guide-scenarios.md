@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ce8d87a653e87a2b9ba91552f6857fdab6bee12
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 28e48d64ba220f75f412ef117a08b07dfd477d06
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045992"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549285"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Bestimmen von Szenarien für Anwendungsfälle für die Verwaltung von Mobilgeräten
 
@@ -33,9 +33,9 @@ Betrachten wir einige Beispiele, die Sie Ihre Organisation beim Festlegen der In
 ## <a name="device-ownership"></a>Gerätebesitz
 Als Erstes können Sie die Intune-Bereitstellungsziele und sonstigen Ziele Ihrer Organisation zurate ziehen, um die Hauptanwendungsszenarien für Ihre Bereitstellung zu bestimmen. Beantworten Sie im Rahmen Ihres Intune-Bereitstellungsplans die folgenden Fragen:
 
--   Möchten Sie unternehmenseigene Geräte unterstützen?
+- Möchten Sie unternehmenseigene Geräte unterstützen?
 
--   Möchten Sie persönliche Geräte (BYOD) unterstützen?
+- Möchten Sie persönliche Geräte (BYOD) unterstützen?
 
 Dies sind keine Entweder/Oder-Optionen. Sie finden ggf. heraus, dass Sie beide Formen des Gerätebesitzes unterstützen müssen, um die Ziele Ihrer Organisation zu erreichen. Die untergeordneten Anwendungsfälle helfen bei der Klärung, wo die verschiedenen Geräteverwaltungsrichtlinien gelten sollen.
 
@@ -43,11 +43,11 @@ Dies sind keine Entweder/Oder-Optionen. Sie finden ggf. heraus, dass Sie beide F
 
 Bestimmen Sie, ob es für jedes Anwendungsfallszenario untergeordnete Anwendungsfälle gibt. Zum Beispiel hat Ihre Organisation möglicherweise Anforderungen für die Unterstützung eines unternehmensweiten Anwendungsfallszenarios erkannt, das basierend auf Benutzertyp oder Geräterolle zusätzliche untergeordnete Anwendungsfälle aufweist:
 
--   Information-Worker
+- Information-Worker
 
--   Management
+- Management
 
--   Kiosk
+- Kiosk
 
 Hier sind einige Beispiele von Szenarien für Anwendungsfälle und untergeordnete Anwendungsfälle:
 

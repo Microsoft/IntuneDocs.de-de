@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef0c4f5fd3f8c92d1d78ed37946663a127df440f
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f9438c3c566dc62acfa7567428ebe3a6a6be4777
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530698"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572566"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense-Connector in Intune
 
@@ -45,11 +45,11 @@ Hier einige gängige Szenarios:
 
 Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie Geräte blockieren, bis die Bedrohung beseitigt ist:
 
--   Herstellen einer Verbindung mit Unternehmens-E-Mail
+- Herstellen einer Verbindung mit Unternehmens-E-Mail
 
--   Synchronisieren von Unternehmensdateien mithilfe der OneDrive for Work-App
+- Synchronisieren von Unternehmensdateien mithilfe der OneDrive for Work-App
 
--   Zugreifen auf Unternehmens-Apps
+- Zugreifen auf Unternehmens-Apps
 
 **Blockieren, wenn Apps mit Schadsoftware entdeckt werden:**
 
@@ -61,7 +61,7 @@ Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie
 
 ### <a name="control-access-based-on-threat-to-network"></a>Steuern des Zugriffs basierend auf der Bedrohung für das Netzwerk
 
-Erkennen Sie Bedrohungen wie  **Man-in-the-Middle**  im Netzwerk, und schützen Sie den Zugriff auf WLAN-Netzwerke auf der Grundlage des Geräterisikos.
+Erkennen Sie Bedrohungen wie **Man-in-the-Middle** im Netzwerk, und schützen Sie den Zugriff auf WLAN-Netzwerke auf der Grundlage des Geräterisikos.
 
 **Blockieren des Netzwerkzugriffs über WLAN:**
 
@@ -73,7 +73,7 @@ Erkennen Sie Bedrohungen wie  **Man-in-the-Middle**  im Netzwerk, und schütze
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Steuern des Zugriffs auf SharePoint Online basierend auf der Bedrohung für das Netzwerk
 
-Erkennen von Bedrohungen wie  **Man-in-the-Middle** im Netzwerk und Verhindern der Synchronisierung von Unternehmensdateien auf der Grundlage des Geräterisikos.
+Erkennen von Bedrohungen wie **Man-in-the-Middle** im Netzwerk und Verhindern der Synchronisierung von Unternehmensdateien auf der Grundlage des Geräterisikos.
 
 **Blockieren des Zugriffs auf SharePoint Online bei Erkennen von Bedrohungen für das Netzwerk**
 
@@ -85,18 +85,18 @@ Erkennen von Bedrohungen wie  **Man-in-the-Middle** im Netzwerk und Verhindern
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 
--   **Android 4.1 und höher**
+- **Android 4.1 und höher**
 
--   **iOS 8 und höher**
+- **iOS 8 und höher**
 
 ## <a name="pre-requisites"></a>Voraussetzungen
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune-Abonnement
+- Microsoft Intune-Abonnement
 
--   Check Point SandBlast Mobile Threat Defense-Abonnement
-    -   Weitere Informationen finden Sie auf der [CheckPoint SandBlast-Website](https://www.checkpoint.com/).
+- Check Point SandBlast Mobile Threat Defense-Abonnement
+    - Weitere Informationen finden Sie auf der [CheckPoint SandBlast-Website](https://www.checkpoint.com/).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

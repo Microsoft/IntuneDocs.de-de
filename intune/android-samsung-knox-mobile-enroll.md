@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d07d9466cda86270898d0e54e8d50b358bcb1b84
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 0c962085ce61f01613bfc04ef0c80699e6f5a3e8
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494115"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547430"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment
 
@@ -44,15 +44,15 @@ Beim Erwerb von Geräten von autorisierten Fachhändlern, die am Knox Deployment
 ## <a name="prerequisites"></a>Voraussetzungen
 
 Damit Sie sich bei Intune mit KME registrieren können, müssen Sie zuerst Ihr Unternehmen im Samsung Knox-Portal registrieren, indem Sie die folgenden Schritte ausführen:
-1.  [Stellen Sie sicher, dass KME in Ihrer Region verfügbar ist](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME steht in mehr als 55 Ländern zur Verfügung. Überprüfen Sie, ob Ihr Land/Region für die Bereitstellung unterstützt wird.
+1. [Stellen Sie sicher, dass KME in Ihrer Region verfügbar ist](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries): KME steht in mehr als 55 Ländern zur Verfügung. Überprüfen Sie, ob Ihr Land/Region für die Bereitstellung unterstützt wird.
 
-2.  [Unterstützte Geräte](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME ist auf allen Samsung-Geräten ab Knox 2.4 für die Android-Registrierung und ab Knox 2.8 für die Android Enterprise-Registrierung verfügbar.
+2. [Unterstützte Geräte](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+): KME ist auf allen Samsung-Geräten ab Knox 2.4 für die Android-Registrierung und ab Knox 2.8 für die Android Enterprise-Registrierung verfügbar.
 
-3.  [Netzwerkanforderungen](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm): Stellen Sie sicher, dass die erforderlichen Firewall- und Netzwerkzugriffsregeln in Ihrem Netzwerk zugelassen sind.
+3. [Netzwerkanforderungen](https://docs.samsungknox.com/KME-Getting-Started/Content/firewall_exceptions.htm): Stellen Sie sicher, dass die erforderlichen Firewall- und Netzwerkzugriffsregeln in Ihrem Netzwerk zugelassen sind.
 
-4.  [Registrieren Sie sich für ein Samsung-Konto](https://www2.samsungknox.com/en/user/register): Ein Samsung-Konto ist erforderlich, um KME zu registrieren und zu aktivieren und alle Knox Enterprise-Berechtigungen an einem zentralen Ort zu verwalten.
+4. [Registrieren Sie sich für ein Samsung-Konto](https://www2.samsungknox.com/en/user/register): Ein Samsung-Konto ist erforderlich, um KME zu registrieren und zu aktivieren und alle Knox Enterprise-Berechtigungen an einem zentralen Ort zu verwalten.
 
-5.  Registrierungsüberprüfung: Nachdem Ihr Profil vervollständigt und übermittelt wurde, überprüft Samsung Ihre Anfrage und genehmigt diese entweder sofort oder versetzt die Anfrage zur weiteren Nachverfolgung in den Überprüfungsstatus „Ausstehend“. Nachdem Ihr Konto genehmigt wurde, können Sie mit weiteren Schritten fortfahren.
+5. Registrierungsüberprüfung: Nachdem Ihr Profil vervollständigt und übermittelt wurde, überprüft Samsung Ihre Anfrage und genehmigt diese entweder sofort oder versetzt die Anfrage zur weiteren Nachverfolgung in den Überprüfungsstatus „Ausstehend“. Nachdem Ihr Konto genehmigt wurde, können Sie mit weiteren Schritten fortfahren.
 
 ## <a name="create-mdm-profile"></a>Erstellen eines MDM-Profils
 

@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64349d2e4c681bf0fac8cf231085cc63e42ffc62
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041460"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548329"
 ---
 # <a name="develop-a-support-plan"></a>Entwickeln eines Supportplans
 
 Ein Intune-Supportplan kann Ihnen dabei helfen, Probleme im Zusammenhang mit Intune schneller zu finden und effizienter zu lösen. Dies verbessert wiederum die Gesamterfahrung Ihrer Benutzer mit Intune. Hier sind einige Fragen aufgeführt, die Sie beim Entwickeln Ihres Intune-Supportplans berücksichtigen sollten:
 
--   Welche Teams sind für die Bereitstellung von Intune-Support zuständig?
+- Welche Teams sind für die Bereitstellung von Intune-Support zuständig?
 
--   Welcher Prozess wird zum Bereitstellen von Intune-Support verwendet?
+- Welcher Prozess wird zum Bereitstellen von Intune-Support verwendet?
 
--   Wie möchten Sie Training für den Intune-Support anbieten?
+- Wie möchten Sie Training für den Intune-Support anbieten?
 
--   Welche Gelegenheiten ergeben sich, um das Supportteam frühzeitig in den Intune-Bereitstellungsprozess einzubeziehen?
+- Welche Gelegenheiten ergeben sich, um das Supportteam frühzeitig in den Intune-Bereitstellungsprozess einzubeziehen?
 
 Betrachten wir die einzelnen Bereiche im Detail.
 
@@ -50,23 +50,23 @@ Weitere Informationen zum [Intune-Support](/intune/get-support).
 
 Für die anfänglichen Produktionsrolloutphasen können alle drei Ebenen an einem Konferenz- oder Skype-Anruf teilnehmen. Hier sehen Sie ein Beispiel dafür, wie eine Organisation ihre Workflows für den IT-Support oder das Helpdesk implementieren kann:
 
-1.  Der Endbenutzer kontaktiert den IT-Support bzw. das Helpdesk der Ebene 1 mit einem Registrierungsproblem.
+1. Der Endbenutzer kontaktiert den IT-Support bzw. das Helpdesk der Ebene 1 mit einem Registrierungsproblem.
 
-2.  Ebene 1 des IT-Supports bzw. Helpdesks kann die Grundursache nicht ermitteln und eskaliert an Ebene 2.
+2. Ebene 1 des IT-Supports bzw. Helpdesks kann die Grundursache nicht ermitteln und eskaliert an Ebene 2.
 
-3.  Ebene 2 des IT-Support bzw. Helpdesks untersucht das Problem, kann es jedoch nicht beheben und eskaliert an Ebene 3. Dabei werden zusätzliche Informationen bereitgestellt, um die Untersuchung zu unterstützen.
+3. Ebene 2 des IT-Support bzw. Helpdesks untersucht das Problem, kann es jedoch nicht beheben und eskaliert an Ebene 3. Dabei werden zusätzliche Informationen bereitgestellt, um die Untersuchung zu unterstützen.
 
-4.  Ebene 3 des IT-Supports bzw. Helpdesks führt weitere Untersuchungen durch, ermittelt die Grundursache und kommuniziert die Lösung an Ebene 2 und 1.
+4. Ebene 3 des IT-Supports bzw. Helpdesks führt weitere Untersuchungen durch, ermittelt die Grundursache und kommuniziert die Lösung an Ebene 2 und 1.
 
-5.  Ebene 1 des IT-Supports/Helpdesks wendet sich dann an den Kunden und löst das Problem.
+5. Ebene 1 des IT-Supports/Helpdesks wendet sich dann an den Kunden und löst das Problem.
 
 Diese Vorgehensweise bringt vor allem in den frühen Phasen des Intune-Rollouts viele Vorteile mit sich:
 
--   Unterstützung beim Erlernen und bei der Inbetriebnahme der Technologie
+- Unterstützung beim Erlernen und bei der Inbetriebnahme der Technologie
 
--   Schnelles Identifizieren von Problemen und ihrer Behebung
+- Schnelles Identifizieren von Problemen und ihrer Behebung
 
--   Verbessern des Benutzererlebnisses insgesamt
+- Verbessern des Benutzererlebnisses insgesamt
 
 ## <a name="how-you-plan-to-provide-intune-support-training"></a>Wie möchten Sie Training für den Intune-Support anbieten?
 
@@ -74,15 +74,15 @@ Es ist wichtig, für das Personal Ihres IT-Supports bzw. Helpdesks ein technisch
 
 Ein Beispiel für eine Trainingsagenda für den Intune-Support ist unten angegeben.
 
--   Überprüfung des Intune-Supportplans
+- Überprüfung des Intune-Supportplans
 
--   Übersicht über Intune
+- Übersicht über Intune
 
--   Behandlung häufig auftretender Probleme
+- Behandlung häufig auftretender Probleme
 
--   Tools und Ressourcen
+- Tools und Ressourcen
 
--   Q & A
+- Q & A
 
 Die [Intune-Dokumentation](https://docs.microsoft.com/intune/) bietet eine Übersicht über Intune, ausführliche Funktionsbeschreibungen und einige Informationen zur Problembehandlung. Das [Intune-Forum](https://social.technet.microsoft.com/Forums/home) ist eine Community-basierte Ressource für Fragen und Themen, die nicht in der Intune-Dokumentation behandelt werden.
 

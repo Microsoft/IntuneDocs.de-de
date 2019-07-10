@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: cde4d389-1770-4226-85a3-a2f3b3fb92a3
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 980138015cdbe063d6d4b05eb6dd8ab70be4b601
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 2f0a4b9a957948c9bda0b0ad2d9829ff9560f217
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67512255"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548483"
 ---
 # <a name="pradeo-mobile-threat-defense-connector-with-intune"></a>Mobile Threat Defense-Connector Pradeo in Intune
 
@@ -41,11 +41,11 @@ Es folgen einige gängige Szenarios.
 
 Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie Geräte an folgenden Aktionen hindern, bis die Bedrohung beseitigt ist:
 
--   Herstellen einer Verbindung mit Unternehmens-E-Mail
+- Herstellen einer Verbindung mit Unternehmens-E-Mail
 
--   Synchronisieren von Unternehmensdateien mithilfe der OneDrive for Work-App
+- Synchronisieren von Unternehmensdateien mithilfe der OneDrive for Work-App
 
--   Zugreifen auf Unternehmens-Apps
+- Zugreifen auf Unternehmens-Apps
 
 **Blockieren, wenn Apps mit Schadsoftware entdeckt werden:**
 
@@ -81,19 +81,19 @@ Erkennen von Bedrohungen wie **Man-in-the-Middle-Angriffe** für Ihr Netzwerk un
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 
--   **Android 4.0.3 und höher**
+- **Android 4.0.3 und höher**
 
--   **iOS 7 und höher**
+- **iOS 7 und höher**
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune-Abonnement
+- Microsoft Intune-Abonnement
 
--   Pradeo Security für Mobile Threat Defense-Abonnements
+- Pradeo Security für Mobile Threat Defense-Abonnements
 
-    -   Weitere Informationen finden Sie auf der [Pradeo-Website](https://www.pradeo.com/en-US/mobile-threat-protection).
+    - Weitere Informationen finden Sie auf der [Pradeo-Website](https://www.pradeo.com/en-US/mobile-threat-protection).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

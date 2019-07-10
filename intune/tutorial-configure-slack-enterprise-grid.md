@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: da6c9b544d86c9c4b09c061c0f1500ed8612a047
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: e7ff4e1fd9f055268a461d1a81b8a2e31fe3d32b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530706"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548990"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Konfigurieren von Slack zur Verwendung von Intune für EMM und die App-Konfiguration
 
@@ -62,8 +62,8 @@ Fügen Sie Slack for EMM als verwaltete iOS-App zu Intune hinzu, und weisen Sie 
 6. Geben Sie in der Suchleiste „Slack for EMM“ ein, und wählen Sie die App aus, die Sie gerade hinzugefügt haben.
 7. Wählen Sie unter „Verwalten“ die Option **Zuweisungen** aus.
 8. Wählen Sie **Gruppe hinzufügen** aus. Je nachdem, auf welche Benutzer und Geräte sich die Aktivierung von Slack for EMM auswirken soll, können Sie unter **Zuweisungstyp** Folgendes auswählen:
-    -  **Verfügbar für registrierte Geräte**, wenn Sie „Alle Mitglieder (einschließlich Gäste)“ ausgewählt haben, ODER
-    -  **Verfügbar mit oder ohne Registrierung**, wenn Sie „Alle Mitglieder (außer Gästen)“ oder „Optional“ ausgewählt haben.
+    - **Verfügbar für registrierte Geräte**, wenn Sie „Alle Mitglieder (einschließlich Gäste)“ ausgewählt haben, ODER
+    - **Verfügbar mit oder ohne Registrierung**, wenn Sie „Alle Mitglieder (außer Gästen)“ oder „Optional“ ausgewählt haben.
 9. Wählen Sie **Eingeschlossene Gruppen** aus, und klicken Sie unter „Diese App für alle Benutzer verfügbar machen“ auf **Ja**.
 10. Klicken Sie auf **OK** und dann erneut auf **OK**.
 11. Klicken Sie auf **Speichern**.
@@ -77,7 +77,7 @@ Fügen Sie eine App-Konfigurationsrichtlinie für Slack for EMM unter iOS hinzu.
 5. Wählen Sie **Zugeordnete App** aus.
 6. Geben Sie in der Suchleiste „Slack for EMM“ ein, und wählen Sie die App aus.
 7. Klicken Sie auf **OK**, und wählen Sie dann **Konfigurationseinstellungen** aus. 
-    -   Informationen zu Konfigurationsschlüsseln und ihren Werten finden Sie auf der [Webseite der AppConfig-Community für Slack](https://www.appconfig.org/company/slack/) auf der Registerkarte „Technical“.
+    - Informationen zu Konfigurationsschlüsseln und ihren Werten finden Sie auf der [Webseite der AppConfig-Community für Slack](https://www.appconfig.org/company/slack/) auf der Registerkarte „Technical“.
 8. Klicken Sie auf **OK** und dann auf **Hinzufügen**.
 9. Geben Sie in der Suchleiste den Begriff „Test der Konfigurationsrichtlinie für Slack-App“ ein, und wählen Sie die Richtlinie aus, die Sie gerade hinzugefügt haben.
 10. Wählen Sie unter „Verwalten“ die Option **Zuweisungen** aus.
@@ -92,13 +92,13 @@ Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen f
 4. Wählen Sie unter „Plattform“ die Option **iOS** aus.
 5. Klicken Sie auf **Geräteintegrität**. Klicken Sie neben „Geräte mit Jailbreak“ auf **Blockieren** und dann auf **OK**.
 6. Klicken Sie auf **Systemsicherheit**, und geben Sie Kennworteinstellungen an. Legen Sie für dieses Tutorial die folgenden empfohlenen Einstellungen fest:
-    -   Wählen Sie für „Kennwort zum Entsperren mobiler Geräte anfordern“ die Option **Anfordern** aus.
-    -   Wählen Sie für „Einfache Kennwörter“ die Option **Blockieren** aus.
-    -   Geben Sie für „Minimale Kennwortlänge“ die Zahl 4 ein.
-    -   Wählen Sie für „Erforderlicher Kennworttyp“ die Option **Alphanumerisch** aus.
-    -   Wählen Sie für „Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts“ die Option **Sofort** aus.
-    -   Geben Sie für „Kennwortablauf (Tage)“ die Zahl 41 ein.
-    -   Geben Sie für „Anzahl vorheriger Kennwörter, deren Wiederverwendung verhindert wird“ die Zahl 5 ein.
+    - Wählen Sie für „Kennwort zum Entsperren mobiler Geräte anfordern“ die Option **Anfordern** aus.
+    - Wählen Sie für „Einfache Kennwörter“ die Option **Blockieren** aus.
+    - Geben Sie für „Minimale Kennwortlänge“ die Zahl 4 ein.
+    - Wählen Sie für „Erforderlicher Kennworttyp“ die Option **Alphanumerisch** aus.
+    - Wählen Sie für „Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts“ die Option **Sofort** aus.
+    - Geben Sie für „Kennwortablauf (Tage)“ die Zahl 41 ein.
+    - Geben Sie für „Anzahl vorheriger Kennwörter, deren Wiederverwendung verhindert wird“ die Zahl 5 ein.
 7. Klicken Sie auf **OK** und dann erneut auf **OK**.
 8. Klicken Sie auf **Erstellen**.
 
@@ -114,8 +114,8 @@ Fügen Sie Slack als verwaltete Google Play-App zu Intune hinzu, und weisen Sie 
 5. Geben Sie in der Suchleiste „Slack“ ein, und wählen Sie die App aus, die Sie gerade hinzugefügt haben.
 6. Wählen Sie unter „Verwalten“ die Option **Zuweisungen** aus.
 7. Wählen Sie **Gruppe hinzufügen** aus. Je nachdem, auf welche Benutzer und Geräte sich die Aktivierung von Slack for EMM auswirken soll, können Sie unter **Zuweisungstyp** Folgendes auswählen:
-    -   **Verfügbar für registrierte Geräte**, wenn Sie „Alle Mitglieder (einschließlich Gäste)“ ausgewählt haben, ODER
-    -   **Verfügbar mit oder ohne Registrierung**, wenn Sie „Alle Mitglieder (außer Gästen)“ oder „Optional“ ausgewählt haben.
+    - **Verfügbar für registrierte Geräte**, wenn Sie „Alle Mitglieder (einschließlich Gäste)“ ausgewählt haben, ODER
+    - **Verfügbar mit oder ohne Registrierung**, wenn Sie „Alle Mitglieder (außer Gästen)“ oder „Optional“ ausgewählt haben.
 8. Wählen Sie „Eingeschlossene Gruppen“ aus, und klicken Sie unter „Diese App für alle Benutzer verfügbar machen“ auf **Ja**.
 9. Klicken Sie auf **OK** und dann erneut auf **OK**.
 10. Klicken Sie auf **Speichern**.
@@ -129,7 +129,7 @@ Fügen Sie eine App-Konfigurationsrichtlinie für Slack hinzu. App-Konfiguration
 5. Wählen Sie **Zugeordnete App** aus.
 6. Geben Sie in der Suchleiste „Slack“ ein, und wählen Sie die App aus.
 7. Klicken Sie auf **OK**, und wählen Sie dann **Konfigurationseinstellungen** aus.
-    -   Informationen zu Konfigurationsschlüsseln und ihren Werten finden Sie auf der [Webseite der AppConfig-Community für Slack](https://www.appconfig.org/company/slack/) auf der Registerkarte „Technical“.
+    - Informationen zu Konfigurationsschlüsseln und ihren Werten finden Sie auf der [Webseite der AppConfig-Community für Slack](https://www.appconfig.org/company/slack/) auf der Registerkarte „Technical“.
 8. Klicken Sie auf **OK** und dann auf **Hinzufügen**.
 9. Geben Sie in der Suchleiste den Begriff „Test der Konfigurationsrichtlinie für Slack-App“ ein, und wählen Sie die Richtlinie aus, die Sie gerade hinzugefügt haben.
 10. Wählen Sie unter „Verwalten“ die Option **Zuweisungen** aus.
@@ -145,12 +145,12 @@ Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen f
 5. Wählen Sie unter „Profiltyp“ die Option **Arbeitsprofil** aus.
 6. Klicken Sie auf **Geräteintegrität**. Klicken Sie neben „Geräte mit entfernten Nutzungsbeschränkungen“ auf **Blockieren** und dann auf **OK**.
 7. Klicken Sie auf **Systemsicherheit**, und geben Sie **Kennworteinstellungen** an. Legen Sie für dieses Tutorial die folgenden empfohlenen Einstellungen fest:
-    -   Wählen Sie für „Kennwort zum Entsperren mobiler Geräte anfordern“ die Option **Anfordern** aus.
-    -   Wählen Sie für „Erforderlicher Kennworttyp“ die Option **Mindestens alphanumerisch** aus.
-    -   Geben Sie für „Minimale Kennwortlänge“ die Zahl 4 ein.
-    -   Wählen Sie für „Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts“ die Option **15 Minuten** aus.
-    -   Geben Sie für „Kennwortablauf (Tage)“ die Zahl 41 ein.
-    -   Geben Sie für „Anzahl vorheriger Kennwörter, deren Wiederverwendung verhindert wird“ die Zahl 5 ein.
+    - Wählen Sie für „Kennwort zum Entsperren mobiler Geräte anfordern“ die Option **Anfordern** aus.
+    - Wählen Sie für „Erforderlicher Kennworttyp“ die Option **Mindestens alphanumerisch** aus.
+    - Geben Sie für „Minimale Kennwortlänge“ die Zahl 4 ein.
+    - Wählen Sie für „Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts“ die Option **15 Minuten** aus.
+    - Geben Sie für „Kennwortablauf (Tage)“ die Zahl 41 ein.
+    - Geben Sie für „Anzahl vorheriger Kennwörter, deren Wiederverwendung verhindert wird“ die Zahl 5 ein.
 8. Klicken Sie auf **OK** und dann erneut auf **OK**.
 9. Klicken Sie auf **Erstellen**.
 

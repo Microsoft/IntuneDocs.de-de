@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e803eb3d47d44c8c8f3cd1b699b5ca220aeb91f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7072d7d3d24578e0f82ea21eb653906dfa30b4c
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049109"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67546972"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Integrieren von Better Mobile in Intune
 
@@ -32,31 +32,31 @@ Führen Sie die folgenden Schritte aus, um die Better Mobile Threat Defense-Lös
 
 Stellen Sie vor der Integration von Better Mobile in Intune sicher, dass Sie über Folgendes verfügen:
 
--   Microsoft Intune-Abonnement
+- Microsoft Intune-Abonnement
 
--   Azure Active Directory-Administratoranmeldeinformationen zum Erteilen folgender Berechtigungen:
+- Azure Active Directory-Administratoranmeldeinformationen zum Erteilen folgender Berechtigungen:
 
-    -   Anmelden und Lesen des Benutzerprofils
+    - Anmelden und Lesen des Benutzerprofils
 
-    -   Zugriff auf das Verzeichnis als angemeldeter Benutzer
+    - Zugriff auf das Verzeichnis als angemeldeter Benutzer
 
-    -   Lesen der Verzeichnisdaten
+    - Lesen der Verzeichnisdaten
 
-    -   Senden von Geräteinformationen an Intune
+    - Senden von Geräteinformationen an Intune
 
--   Administratoranmeldeinformationen für den Zugriff auf die Better Mobile-Verwaltungskonsole
+- Administratoranmeldeinformationen für den Zugriff auf die Better Mobile-Verwaltungskonsole
 
 ### <a name="better-mobile-app-authorization"></a>Better Mobile-App-Autorisierung
 
 Der Prozess zur Autorisierung der Better Mobile-App umfasst Folgendes:
 
--   Erteilen Sie dem Better Mobile-Dienst die Berechtigung, Informationen zum Integritätszustand des Geräts an Intune zu übertragen.
+- Erteilen Sie dem Better Mobile-Dienst die Berechtigung, Informationen zum Integritätszustand des Geräts an Intune zu übertragen.
 
--   Better Mobile wird mit der Azure AD Enrollment Group-Mitgliedschaft synchronisiert, um die Datenbank des Geräts aufzufüllen.
+- Better Mobile wird mit der Azure AD Enrollment Group-Mitgliedschaft synchronisiert, um die Datenbank des Geräts aufzufüllen.
 
--   Erteilen Sie der Better Mobile-Verwaltungskonsole die Berechtigung, Azure AD-SSO (Single Sign On) zu verwenden.
+- Erteilen Sie der Better Mobile-Verwaltungskonsole die Berechtigung, Azure AD-SSO (Single Sign On) zu verwenden.
 
--   Erteilen Sie der Better Mobile-App die Berechtigung, die Azure AD-SSO-Anmeldung zu verwenden.
+- Erteilen Sie der Better Mobile-App die Berechtigung, die Azure AD-SSO-Anmeldung zu verwenden.
 
 ## <a name="to-set-up-better-mobile-integration"></a>So richten Sie die Better Mobile-Integration ein
 
@@ -75,4 +75,4 @@ Der Prozess zur Autorisierung der Better Mobile-App umfasst Folgendes:
 
 ## <a name="next-steps"></a>Nächste Schritte
 
--   [Set up Better Client apps (Einrichten besserer Client-Apps)](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Set up Better Client apps (Einrichten besserer Client-Apps)](mtd-apps-ios-app-configuration-policy-add-assign.md)

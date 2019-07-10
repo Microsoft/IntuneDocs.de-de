@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bedaf279d65ee1ed7f8dda4e8d866fb848bade7
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 40e78d85c215bbb5cc126705f26041ce4f7786f4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044586"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67549452"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Fördern der Akzeptanz durch Endbenutzer mit bedingtem Zugriff in Microsoft Intune
 
@@ -31,28 +31,28 @@ Die Aktivierung von Funktionen für den bedingten Zugriff mit Intune – wie z.B
 
 Im Folgenden sehen Sie einen typischen Ansatz, wie eine Migrationskampagne mit bedingtem Zugriff erweitert werden kann:
 
-1.  Legen Sie Regeln für den bedingten Zugriff fest, die für alle Benutzer erzwungen werden, schließen Sie aber explizit die Benutzer aus, die vom alten MDM-Anbieter migrieren müssen. Sie können eine Azure AD-Benutzergruppe mit allen Benutzern erstellen, die vom bedingten Zugriff ausgeschlossen sind.
+1. Legen Sie Regeln für den bedingten Zugriff fest, die für alle Benutzer erzwungen werden, schließen Sie aber explizit die Benutzer aus, die vom alten MDM-Anbieter migrieren müssen. Sie können eine Azure AD-Benutzergruppe mit allen Benutzern erstellen, die vom bedingten Zugriff ausgeschlossen sind.
 
-2.  Entfernen Sie Benutzer aus dieser Gruppe, nachdem diese die Migration durchgeführt haben.
+2. Entfernen Sie Benutzer aus dieser Gruppe, nachdem diese die Migration durchgeführt haben.
 
-3.  Konfigurieren Sie nach dem Abschluss der Migration alle Richtlinien für bedingten Zugriff so, dass der Zugriff standardmäßig blockiert wird, wenn Intune diesen nicht explizit erlaubt.
+3. Konfigurieren Sie nach dem Abschluss der Migration alle Richtlinien für bedingten Zugriff so, dass der Zugriff standardmäßig blockiert wird, wenn Intune diesen nicht explizit erlaubt.
 
 ### <a name="advantages"></a>Vorteile
 
--   Bietet Zugriffsteuerung für neue Benutzerkonten oder Benutzerkonten, die von der vorherigen Lösung nicht verwaltet wurden.
+- Bietet Zugriffsteuerung für neue Benutzerkonten oder Benutzerkonten, die von der vorherigen Lösung nicht verwaltet wurden.
 
--   Bietet Benutzern der vorherigen Lösung einen Toleranzzeitraum für die Migration.
+- Bietet Benutzern der vorherigen Lösung einen Toleranzzeitraum für die Migration.
 
--   Produktivitätsverluste werden minimiert
+- Produktivitätsverluste werden minimiert
 
 ### <a name="disadvantages"></a>Nachteile
 
--   Benutzer der vorherigen Lösung können möglicherweise über nicht verwaltete Geräte auf Ressourcen zugreifen, bis der bedingte Zugriff für diese Benutzer aktiviert ist.
+- Benutzer der vorherigen Lösung können möglicherweise über nicht verwaltete Geräte auf Ressourcen zugreifen, bis der bedingte Zugriff für diese Benutzer aktiviert ist.
 
 
 Dies ist ein Ansatz unter vielen. Sie können auch einen einfacheren Prozess auswählen, der jeglichen bedingten Zugriff aufschiebt, bis die Benutzer nach jeder Phase zur Registrierung aufgefordert wurden. Oder Sie entscheiden sich für einen strikteren Prozess, der den bedingten Zugriff von Anfang an erzwingt und für jeden Zugriff vollständige Konformität erfordert.
 
--   Weitere Informationen zum [bedingten Zugriff](conditional-access.md).
+- Weitere Informationen zum [bedingten Zugriff](conditional-access.md).
 
 ## <a name="task-list-for-conditional-access"></a>Aufgabenliste für den bedingten Zugriff
 
@@ -64,15 +64,15 @@ Dies ist ein Ansatz unter vielen. Sie können auch einen einfacheren Prozess aus
 
 Wählen Sie eine der folgenden Optionen aus:
 
--   [Konfigurieren des bedingten Zugriffs in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
+- [Konfigurieren des bedingten Zugriffs in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
--   [Installieren des lokalen Exchange Connectors für Intune](exchange-connector-install.md)
+- [Installieren des lokalen Exchange Connectors für Intune](exchange-connector-install.md)
 
--   [Einrichten App-basierter Richtlinien für bedingten Zugriff für Exchange Online](app-based-conditional-access-intune-create.md)
+- [Einrichten App-basierter Richtlinien für bedingten Zugriff für Exchange Online](app-based-conditional-access-intune-create.md)
 
--   [Einrichten App-basierter Richtlinien für bedingten Zugriff für SharePoint Online](app-based-conditional-access-intune-create.md)
+- [Einrichten App-basierter Richtlinien für bedingten Zugriff für SharePoint Online](app-based-conditional-access-intune-create.md)
 
--   [Blockieren von Apps, die keine moderne Authentifizierung verwenden (ADAL)](app-modern-authentication-block.md)
+- [Blockieren von Apps, die keine moderne Authentifizierung verwenden (ADAL)](app-modern-authentication-block.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

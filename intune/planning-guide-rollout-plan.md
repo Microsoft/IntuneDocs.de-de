@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09e2f88168acd1bc77051df924f756a326a02b21
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7a369b3bde7967db04a76ae1794d7b8fb86c21e4
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041502"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548415"
 ---
 # <a name="develop-a-rollout-plan"></a>Entwickeln eines Rolloutplans
 
@@ -53,11 +53,11 @@ Fügen Sie Ihre Pläne für [Kommunikation](planning-guide-communication-plan.md
 ### <a name="production-rollout"></a>Rollout in die Produktion
 Nach einem erfolgreichen Pilotprojekt sind Sie bereit für den vollständigen Rollout in die Produktionsumgebung, bei der die restlichen Gruppen in Ihrer Organisation einbezogen werden. Es folgen einige Beispiele für unterschiedliche Rolloutgruppen und -phasen:
 
--   **Abteilungen** <br/>Für Abteilung kann es eine eigene Rolloutphase geben. Sie können dann eine gesamte Abteilung gleichzeitig als Zielgruppe festlegen. Bei dieser Art von Rollout nutzen Benutzer in den einzelnen Abteilungen meist das Mobilgerät auf dieselbe Weise und greifen auf dieselben Anwendungen zu. Für Benutzer gelten womöglich auch dieselben Arten von Richtlinien.
+- **Abteilungen** <br/>Für Abteilung kann es eine eigene Rolloutphase geben. Sie können dann eine gesamte Abteilung gleichzeitig als Zielgruppe festlegen. Bei dieser Art von Rollout nutzen Benutzer in den einzelnen Abteilungen meist das Mobilgerät auf dieselbe Weise und greifen auf dieselben Anwendungen zu. Für Benutzer gelten womöglich auch dieselben Arten von Richtlinien.
 
--   **Geografie** <br/>Diese Art der Bereitstellung erfolgt für alle Benutzer an einem bestimmten geografischen Ort, ob auf demselben Kontinent, in demselben Land, derselben Region oder demselben Unternehmensgebäude. Diese Art gestaffelter Bereitstellung ermöglicht, sich auf einen bestimmten Benutzerstandort zu konzentrieren. Hierdurch wird ein Ansatz mit mehr [Benutzerunterstützung](#user-assisted-enrollment) ermöglicht, weil Intune an einer geringeren Anzahl von Standorten gleichzeitig bereitgestellt wird. Da verschiedene Abteilungen oder Anwendungsfälle sich möglicherweise am selben Ort befinden, könnten verschiedene Anwendungsfälle gleichzeitig bereitgestellt werden.
+- **Geografie** <br/>Diese Art der Bereitstellung erfolgt für alle Benutzer an einem bestimmten geografischen Ort, ob auf demselben Kontinent, in demselben Land, derselben Region oder demselben Unternehmensgebäude. Diese Art gestaffelter Bereitstellung ermöglicht, sich auf einen bestimmten Benutzerstandort zu konzentrieren. Hierdurch wird ein Ansatz mit mehr [Benutzerunterstützung](#user-assisted-enrollment) ermöglicht, weil Intune an einer geringeren Anzahl von Standorten gleichzeitig bereitgestellt wird. Da verschiedene Abteilungen oder Anwendungsfälle sich möglicherweise am selben Ort befinden, könnten verschiedene Anwendungsfälle gleichzeitig bereitgestellt werden.
 
--   **Plattform** <br/>Bei dieser Art der Bereitstellung werden ähnliche Plattformen gleichzeitig bereitgestellt. Beispielsweise werden im ersten Monat alle iOS-Geräte verwendet, gefolgt von Android und dann von Windows. Diese Art gestaffelter Bereitstellung vereinfacht die Unterstützung durch das Helpdesk, da das Helpdesk immer nur eine Plattform gleichzeitig unterstützen muss.
+- **Plattform** <br/>Bei dieser Art der Bereitstellung werden ähnliche Plattformen gleichzeitig bereitgestellt. Beispielsweise werden im ersten Monat alle iOS-Geräte verwendet, gefolgt von Android und dann von Windows. Diese Art gestaffelter Bereitstellung vereinfacht die Unterstützung durch das Helpdesk, da das Helpdesk immer nur eine Plattform gleichzeitig unterstützen muss.
 
 Dieses Beispiel zeigt einen Intune-Rolloutplan, der Zielgruppen und Zeitrahmen umfasst:
 

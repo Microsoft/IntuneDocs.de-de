@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4bd03075e6088b4cf06237429a723e93e87029fd
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494591"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548357"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Phase 1: Vorbereitung von Microsoft Intune für die mobile Geräteverwaltung (MDM)
 
@@ -31,30 +31,30 @@ Bevor wir uns mit den Details zum Einrichten von Intune befassen, werfen wir ein
 
 ### <a name="what-kinds-of-devices-do-you-need-to-manage"></a>Welche Arten von Geräten müssen Sie verwalten?
 
--   Welche [Plattformen](supported-devices-browsers.md) müssen Sie unterstützen?
+- Welche [Plattformen](supported-devices-browsers.md) müssen Sie unterstützen?
 
--   Handelt es sich bei den Geräten, die unterstützt werden müssen, um unternehmenseigene oder BYOD-Geräte?
+- Handelt es sich bei den Geräten, die unterstützt werden müssen, um unternehmenseigene oder BYOD-Geräte?
 
--   Welche Art von Verbindung verwenden Sie? WLAN, Mobiltelefone, VPN?
+- Welche Art von Verbindung verwenden Sie? WLAN, Mobiltelefone, VPN?
 
 ### <a name="what-do-your-users-need-to-do-on-managed-devices"></a>Was müssen die Benutzer auf den verwalteten Geräten tun?
 
--   Müssen Sie den Endbenutzern Apps bereitstellen?
+- Müssen Sie den Endbenutzern Apps bereitstellen?
 
--   Verwenden Sie benutzerdefinierte, branchenspezifische Apps? Oder benötigen Sie nur öffentliche Store-Apps?
+- Verwenden Sie benutzerdefinierte, branchenspezifische Apps? Oder benötigen Sie nur öffentliche Store-Apps?
 
--   Müssen Sie E-Mail-Konten bereitstellen?
+- Müssen Sie E-Mail-Konten bereitstellen?
 
 ### <a name="what-kinds-of-users"></a>Um welche Arten von Benutzern handelt es sich?
 
--   Wie viele Benutzer werden ein einzelnes Gerät verwenden?
+- Wie viele Benutzer werden ein einzelnes Gerät verwenden?
 
--   Welche Nutzungsbedingungen benötigen Sie?
+- Welche Nutzungsbedingungen benötigen Sie?
 
-    -   Stellen Sie sicher, dass Sie Ihre Rechtsabteilung frühzeitig heranziehen.
-    -   Welche Lokalisierung ist erforderlich?
+    - Stellen Sie sicher, dass Sie Ihre Rechtsabteilung frühzeitig heranziehen.
+    - Welche Lokalisierung ist erforderlich?
 
--   Sind die Benutzer mit Technologie und IT im Allgemeinen vertraut?
+- Sind die Benutzer mit Technologie und IT im Allgemeinen vertraut?
 
 ### <a name="what-is-your-device-security-policy"></a>Welche Sicherheitsrichtlinie für Geräte haben Sie?
 
@@ -68,11 +68,11 @@ Bevor wir uns mit den Details zum Einrichten von Intune befassen, werfen wir ein
 
 - Welche Arten von Authentifizierung müssen Sie unterstützen? Welche Zertifikate müssen bereitgestellt werden, wenn Sie zertifikatbasierte Authentifizierung benötigen?
   - Intune kann Zertifikate mit Ressourcenzugriffsprofilen für registrierte Geräte bereitstellen.
-  -   Welche Art von Public Key-Infrastruktur (PKI) müssen Sie unterstützen?
+  - Welche Art von Public Key-Infrastruktur (PKI) müssen Sie unterstützen?
   <br></br>
 - Müssen Sie virtuelles privates Netzwerk (VPN) auf Geräte- oder App-Ebene unterstützen?
 
-  -   Intune kann VPN-Konfigurationen für VPN-Drittanbieter bereitstellen.
+  - Intune kann VPN-Konfigurationen für VPN-Drittanbieter bereitstellen.
   <br/><br/>
 - Können vorübergehende Ausnahmen für bestimmte Anforderungen gemacht werden, um Ausfallzeiten zu vermeiden? Oder müssen Geräte mit Zugriff immer alle Sicherheitsanforderungen erfüllen?
 

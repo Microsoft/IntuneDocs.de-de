@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b8134b9db0e478efa69391edeb570b39c91a41c9
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 473de0ae24cb3ee2a9f7fbd84ef78e6c25ef6ce6
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511775"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67547287"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>Better Mobile Threat Defense-Connector mit Intune
 
@@ -41,11 +41,11 @@ Es folgen einige gängige Szenarios.
 
 Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie Geräte an folgenden Aktionen hindern, bis die Bedrohung beseitigt ist:
 
--   Herstellen einer Verbindung mit Unternehmens-E-Mail
+- Herstellen einer Verbindung mit Unternehmens-E-Mail
 
--   Synchronisieren von Unternehmensdateien mithilfe der OneDrive for Work-App
+- Synchronisieren von Unternehmensdateien mithilfe der OneDrive for Work-App
 
--   Zugreifen auf Unternehmens-Apps
+- Zugreifen auf Unternehmens-Apps
 
 **Blockieren, wenn Apps mit Schadsoftware entdeckt werden:**
 
@@ -81,19 +81,19 @@ Erkennen von Bedrohungen wie **Man-in-the-Middle-Angriffe** für Ihr Netzwerk un
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 
--   **Android 4.1 und höher**
+- **Android 4.1 und höher**
 
--   **iOS 8.0 und höher**
+- **iOS 8.0 und höher**
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune-Abonnement
+- Microsoft Intune-Abonnement
 
--   Better Mobile Threat Defense-Abonnement
+- Better Mobile Threat Defense-Abonnement
 
-    -   Weitere Informationen finden Sie auf der [Better Mobile-Website](https://www.better.mobi/).
+    - Weitere Informationen finden Sie auf der [Better Mobile-Website](https://www.better.mobi/).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -17,24 +17,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ec922d76ca08639139a7d130fb14c5e8bfa413
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046226"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548349"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Entwickeln eines Kommunikationsplans für den Rollout
 
 Gutes Change Management ist abhängig von einer klaren und nützlichen Kommunikation bezüglich kommender Änderungen. Um den Weg für Ihre Intune-Bereitstellung zu ebnen, sollte Ihr Kommunikationsplan für den Rollout folgende Bereiche beinhalten:
 
--   Die zu kommunizierenden Informationen
+- Die zu kommunizierenden Informationen
 
--   Die Übermittlungsmethode für die Kommunikation
+- Die Übermittlungsmethode für die Kommunikation
 
--   Die Empfänger der Kommunikation
+- Die Empfänger der Kommunikation
 
--   Den Zeitrahmen für die Kommunikation
+- Den Zeitrahmen für die Kommunikation
 
 Betrachten wir die einzelnen Bereiche im Detail.
 
@@ -56,13 +56,13 @@ Im [Registrierungshandbuch für Endbenutzer](https://gallery.technet.microsoft.c
 
 Es gibt verschiedene Übermittlungsmethoden, die Sie für die Verbreitung von Intune-Rolloutinformationen an die Zielgruppen und -benutzer in Ihrer Organisation verwenden können. In der folgenden Liste finden Sie einige Beispiele und die Phasen in denen Sie die Methode verwenden können:
 
--   Organisationsweite persönliche oder Microsoft Teams-Besprechungen für die Einführungsphase
+- Organisationsweite persönliche oder Microsoft Teams-Besprechungen für die Einführungsphase
 
--   E-Mail für die Phasen vor, während und nach der Registrierung
+- E-Mail für die Phasen vor, während und nach der Registrierung
 
--   Organisationswebsites für alle Phasen
+- Organisationswebsites für alle Phasen
 
--   Yammer, Poster und Handzettel für die Phasen des Projektstarts und vor der Registrierung
+- Yammer, Poster und Handzettel für die Phasen des Projektstarts und vor der Registrierung
 
 ## <a name="communications-timeline"></a>Kommunikationszeitplan
 

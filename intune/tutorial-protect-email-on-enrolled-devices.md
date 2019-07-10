@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7ab0ecd2802e68dbac32b757e472a74e697da13
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 91c2ab71cb393bdf885c947c8f3cd93a5bb196c3
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530749"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548041"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf verwalteten Geräten
 In diesem Artikel erfahren Sie, wie Sie mithilfe von Gerätekonformitätsrichtlinien mit bedingtem Zugriff sicherstellen können, dass iOS-Geräte nur dann auf Exchange Online-E-Mails zugreifen können, wenn sie von Intune verwaltet werden und eine genehmigte E-Mail-App verwenden. 
@@ -53,7 +53,7 @@ Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen f
 4. Wählen Sie unter **Plattform** die Option **iOS** aus. 
 5. Klicken Sie auf **Einstellungen** > **E-Mail**. 
      
-    1.  Klicken Sie neben **Verlangen, dass Mobilgeräte über ein verwaltetes E-Mail-Profil verfügen** auf **Erfordern**.
+    1. Klicken Sie neben **Verlangen, dass Mobilgeräte über ein verwaltetes E-Mail-Profil verfügen** auf **Erfordern**.
     2. Wählen Sie **OK** aus.
 
     ![Festlegen der E-Mail-Konformitätsrichtlinie, um ein verwaltetes E-Mail-Profil zu erfordern](media/tutorial-protect-email-on-enrolled-devices/ios-compliance-policy-email.png)
@@ -77,7 +77,7 @@ Richten Sie eine Intune-Gerätekonformitätsrichtlinie ein, um die Bedingungen f
 ## <a name="create-the-conditional-access-policy"></a>Erstellen der Richtlinie für bedingten Zugriff
 Jetzt erstellen wir eine Richtlinie für bedingten Zugriff, die erzwingt, dass alle Geräteplattformen bei Intune registriert werden und unsere Intune-Konformitätsrichtlinie erfüllen, bevor die Geräte auf Exchange Online zugreifen dürfen. Zudem wird auch die Outlook-App für den E-Mail-Zugriff verlangt. Richtlinien für bedingten Zugriff können im Azure AD-Portal oder im Intune-Portal konfiguriert werden. Da wir uns bereits im Intune-Portal befinden, erstellen wir die Richtlinie über dieses Portal.
 1. Klicken Sie in Intune auf **Bedingter Zugriff** > **Richtlinien** > **Neue Richtlinie**.
-1.  Geben Sie unter **Name** Folgendes ein: **Testrichtlinie für Office 365-E-Mail**. 
+1. Geben Sie unter **Name** Folgendes ein: **Testrichtlinie für Office 365-E-Mail**. 
 3. Klicken Sie unter **Zuweisungen** auf **Benutzer und Gruppen**. Klicken Sie auf der Registerkarte **Einschließen** auf **Alle Benutzer** und dann auf **Fertig**.
 
 4. Klicken Sie unter **Zuweisungen** auf **Cloud-Apps**. Da wir den Office 365 Exchange Online-E-Mail-Dienst schützen möchten, wählen wir diese in den folgenden Schritten aus:
