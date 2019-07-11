@@ -16,25 +16,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8fa5589f62900027b90659b8f570e7caa10b1cd8
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 30cdb6903caa7e1071a6781db13c761e64f8bd7a
+ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549057"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67735768"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>MDM-Einstellungen für Sicherheitsbaselines in Intune  
 
-Zeigen Sie die Verwaltung mobiler Geräte Baseline Sicherheitseinstellungen, die von Microsoft Intune für Geräte unter Windows 10 oder höher unterstützt. Die Standardwerte für die Einstellungen in diese Grundwerte werden die empfohlene Konfiguration für die entsprechenden Geräte darstellen, und entsprechen möglicherweise nicht den Baseline-Standardwerte aus anderen Sicherheitsfunktionen.  
+Zeigen Sie die MDM-Sicherheitsbaseline-Einstellungen an, die von Microsoft InTune für Geräte unterstützt werden, die Windows 10 oder höher ausführen. Die Standardwerte für Einstellungen in dieser Baseline stellen die empfohlene Konfiguration für anwendbare Geräte dar und stimmen möglicherweise nicht mit den Basis Linien Standards aus anderen Sicherheitsbaselines ab.  
 
-Ist die neueste baselineversion **MDM-Sicherheitsbaseline für Spring 2019 Update (19 H-1)**  
+Die neueste Baselineversion ist **MDM-Sicherheitsbaseline für Spring 2019 Update (19h1).**  
 
-Um Informationen darüber, was aus der vorherigen Version in der neuesten Version von dieser Baseline geändert wird, finden Sie unter [Änderungen in der neuen Vorlage](#whats-changed-in-the-new-template).  
+Weitere Informationen zu den Änderungen, die in der aktuellen Version dieser Baseline von der vorherigen Version geändert wurden, finden Sie unter Was hat sich [in der neuen Vorlage geändert](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> Im Juni 2019 der Preview-MDM-Sicherheitsbaseline ersetzt wurde, von der Version der *MDM-Sicherheitsbaseline für Spring 2019 Update (19H-1)* Vorlage, die generaly ist (nicht in der Vorschau) verfügbar. Profile, die vor der Verfügbarkeit erstellt wurden die *MDM-Sicherheitsbaseline für Spring 2019 Update (19 H-1)* Baseline nicht entsprechend den Einstellungen und Werte, die in der MDM-Sicherheitsbaseline für Spring 2019 Update (19 H 1 aktualisiert. ) Version.  Obwohl Sie neue Profile, die basierend auf der Preview-Vorlage erstellen können, Sie bearbeiten und fortfahren, verwenden Sie Profile, die Sie zuvor erstellt haben, die in der Vorschau-Vorlage basieren.   
+> Im Juni 2019 wurde die Vorschau der MDM-Sicherheitsbaseline durch das Release der *MDM-Sicherheitsbaseline für die Spring 2019 Update (19h1)* -Vorlage ersetzt, die generell verfügbar ist (nicht in der Vorschau). Profile, die vor der Verfügbarkeit der *MDM-Sicherheitsbaseline für die Spring 2019 Update (19h1)* -Baseline erstellt wurden, werden nicht aktualisiert, um die Einstellungen und Werte in der MDM-Sicherheitsbaseline für die Version von Spring 2019 Update (19h1) widerzuspiegeln.  Obwohl Sie keine neuen Profile basierend auf der Vorschau Vorlage erstellen können, können Sie die zuvor erstellten Profile, die auf der Vorschau Vorlage basieren, bearbeiten und weiter verwenden.   
   
-Weitere Informationen zu Sicherheitsbaselines mit Intune verwenden, finden Sie unter [verwenden Sicherheitsbaselines](security-baselines.md).  
+Weitere Informationen zur Verwendung von Sicherheitsbaselines mit InTune finden Sie unter [Verwenden von Sicherheitsbaselines](security-baselines.md).  
 
 
    
@@ -47,7 +47,7 @@ Weitere Informationen finden Sie unter [Policy CSP - AboveLock (Richtlinien-Konf
 
   **Standard**: Ja  
 
-- **Voice-apps über den Sperrbildschirm zu aktivieren**  
+- **Sprach Aktivierung von apps vom gesperrten Bildschirm**  
 
   **Standard**: Deaktiviert
 
@@ -64,16 +64,16 @@ Weitere Informationen finden Sie unter [Policy CSP - AppRuntime (Richtlinien-Kon
 ## <a name="application-management"></a>Anwendungsverwaltung   
 Weitere Informationen finden Sie unter [Policy CSP - ApplicationManagement (Richtlinien-Konfigurationsdienstanbieter: ApplicationManagement)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement) in Ihrer Windows-Dokumentation.  
 
-- **Block Benutzerkontrolle über die Installationen**  
-  Diese richtlinieneinstellung ermöglicht Benutzern Installationsoptionen zu ändern, die in der Regel nur für Systemadministratoren verfügbar sind. Wenn Sie diese richtlinieneinstellung aktivieren, werden einige der Sicherheitsfeatures von Windows Installer umgangen. Er lässt installiert wurden, die andernfalls aufgrund einer sicherheitsverletzung angehalten werden sollen. Wenn Sie diese richtlinieneinstellung nicht konfigurieren oder deaktivieren, verhindern die Sicherheitsfeatures von Windows Installer Benutzer ändern von Installationsoptionen, die in der Regel reserviert für Systemadministratoren, z. B. Angeben des Verzeichnisses, in dem Dateien installiert werden. Wenn Windows Installer erkennt, dass ein Installationspaket den Benutzer, eine geschützte Option ändern zulässig ist, wird die Installation beendet und eine Meldung angezeigt. Diese Sicherheitsfeatures funktionieren nur, wenn das Installationsprogramm in einem privilegierten Sicherheitskontext ausgeführt wird in dem sie den Zugriff auf Verzeichnisse, die für dem Benutzer verweigert hat. Mit dieser richtlinieneinstellung ist für weniger restriktive Umgebungen konzipiert. Es kann verwendet werden, um ein Installationsprogramm umgangen, die verhindert, dass die Software installiert wird.  
+- **Benutzersteuerung für Installationen blockieren**  
+  Diese Richtlinien Einstellung ermöglicht es Benutzern, Installationsoptionen zu ändern, die in der Regel nur für Systemadministratoren verfügbar sind. Wenn Sie diese Richtlinien Einstellung aktivieren, werden einige der Sicherheitsfunktionen von Windows Installer umgangen. Sie ermöglicht die Ausführung von Installationen, die andernfalls aufgrund einer Sicherheitsverletzung angehalten werden. Wenn Sie diese Richtlinien Einstellung deaktivieren oder nicht konfigurieren, können die Sicherheitsfunktionen von Windows Installer verhindern, dass Benutzer Installationsoptionen ändern, die in der Regel für Systemadministratoren reserviert sind, z. b. das Verzeichnis, in dem die Dateien installiert werden. Wenn Windows Installer feststellt, dass der Benutzer durch ein Installationspaket eine geschützte Option ändern kann, wird die Installation angehalten, und es wird eine Meldung angezeigt. Diese Sicherheitsfeatures funktionieren nur, wenn das Installationsprogramm in einem privilegierten Sicherheitskontext ausgeführt wird, in dem Sie Zugriff auf Verzeichnisse hat, die für den Benutzer verweigert wurden. Diese Richtlinien Einstellung ist für weniger restriktive Umgebungen konzipiert. Sie kann verwendet werden, um Fehler in einem Installationsprogramm zu umgehen, das verhindert, dass Software installiert wird.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067060)  
 
   **Standard**: Ja
 
-- **Block-MSI-app-Installationen mit erhöhten rechten**  
+- **Blockieren von MSI-App-Installationen mit erhöhten Rechten**  
   Diese Richtlinieneinstellung weist den Windows Installer an, bei der Installation von Programmen auf dem System erhöhte Rechte anzuwenden.  
-  - *Wenn Sie diese richtlinieneinstellung aktivieren*, Berechtigungen auf alle Programme erweitert werden. Diese Berechtigungen sind in der Regel für Programme reserviert, die für den Benutzer, die den Computer (installiert automatisch) f zugewiesen (angeboten auf dem Desktop), zugewiesen, oder in der Systemsteuerung in Software zur Verfügung gestellt wurden. Diese Einstellung kann Benutzer Programme installieren, die Zugriff auf Verzeichnisse erfordern, dass der Benutzer möglicherweise nicht über die Berechtigung zum Anzeigen oder ändern, einschließlich der Verzeichnisse auf Computern mit sehr eingeschränkten.
-  - *Wenn Sie diese richtlinieneinstellung nicht konfigurieren oder deaktivieren*, das System wendet die Berechtigungen des aktuellen Benutzers, wenn Programme installiert wird, die ein Systemadministrator nicht verteilen oder bieten. Hinweis: Diese Richtlinieneinstellung wird sowohl in den Ordnern für die Computerkonfiguration als auch für die Benutzerkonfiguration angezeigt. Wenn Sie diese richtlinieneinstellung wirksam wird, müssen Sie es in beiden Ordnern aktivieren. Vorsicht: Erfahrene Benutzer können die Berechtigungen nutzen diese Richtlinie gewährt, ändern Sie ihre Berechtigungen und dauerhaften Zugriff auf beschränkte Dateien und Ordner festlegen. Beachten Sie, dass die Benutzerkonfiguration-Version des mit dieser richtlinieneinstellung wird nicht garantiert sicher.  
+  - *Wenn Sie diese Richtlinien Einstellung aktivieren*, werden Berechtigungen auf alle Programme ausgeweitet. Diese Berechtigungen sind in der Regel für Programme reserviert, die dem Benutzer (auf dem Desktop angeboten) zugewiesen, dem Computer zugewiesen (automatisch installiert) werden oder in der Systemsteuerung unter Software verfügbar gemacht wurden. Diese Profileinstellung ermöglicht es Benutzern, Programme zu installieren, die Zugriff auf Verzeichnisse benötigen, für die der Benutzer möglicherweise nicht über die Berechtigung zum Anzeigen oder ändern verfügt, einschließlich der Verzeichnisse auf stark eingeschränkten Computern.
+  - *Wenn Sie diese Richtlinien Einstellung deaktivieren oder nicht konfigurieren*, wendet das System die Berechtigungen des aktuellen Benutzers an, wenn Programme installiert werden, die von einem Systemadministrator nicht verteilt oder angeboten werden. Hinweis: Diese Richtlinieneinstellung wird sowohl in den Ordnern für die Computerkonfiguration als auch für die Benutzerkonfiguration angezeigt. Damit diese Richtlinien Einstellung wirksam wird, müssen Sie Sie in beiden Ordnern aktivieren. Vorsicht: qualifizierte Benutzer können die Berechtigungen nutzen, die diese Richtlinien Einstellung erteilt, um Ihre Berechtigungen zu ändern und permanenten Zugriff auf eingeschränkte Dateien und Ordner zu erhalten. Beachten Sie, dass die Benutzer Konfigurations Version dieser Richtlinien Einstellung nicht garantiert sicher ist.  
   
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067134)    
 
@@ -270,44 +270,44 @@ Weitere Informationen finden Sie unter [Policy CSP - DeviceLock (Richtlinien-CSP
   
   **Standard**: Ja  
   
-    Wenn *Kennwort anfordern* auf *Ja* festgelegt wurde, stehen die folgenden Einstellungen zur Verfügung.
+  Wenn *Kennwort anfordern* auf *Ja* festgelegt wurde, stehen die folgenden Einstellungen zur Verfügung.
 
-    - **Mindestanzahl von Zeichensätzen für Kennwörter**  
-      Anzahl der komplexen Elementtypen (Groß- und Kleinbuchstaben, Zahlen und Interpunktionszeichen), die für eine sichere PIN oder ein sicheres Kennwort erforderlich sind. Die PIN erzwingt das folgende Verhalten für Desktop- und mobile Geräte: 1 – nur Ziffern; 2 – Ziffern und Kleinbuchstaben sind erforderlich; 3 – Ziffern, Kleinbuchstaben und Großbuchstaben sind erforderlich. Nicht unterstützt in Microsoft- und Domänenkonten für Desktopgeräte. 4: Ziffern, Kleinbuchstaben, Großbuchstaben und Sonderzeichen sind erforderlich. Nicht unterstützt für Desktop-Geräte. Der Standardwert lautet 1.  
-      [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067055)  
+  - **Mindestanzahl von Zeichensätzen für Kennwörter**  
+    Anzahl der komplexen Elementtypen (Groß- und Kleinbuchstaben, Zahlen und Interpunktionszeichen), die für eine sichere PIN oder ein sicheres Kennwort erforderlich sind. Die PIN erzwingt das folgende Verhalten für Desktop- und mobile Geräte: 1 – nur Ziffern; 2 – Ziffern und Kleinbuchstaben sind erforderlich; 3 – Ziffern, Kleinbuchstaben und Großbuchstaben sind erforderlich. Nicht unterstützt in Microsoft- und Domänenkonten für Desktopgeräte. 4: Ziffern, Kleinbuchstaben, Großbuchstaben und Sonderzeichen sind erforderlich. Nicht unterstützt für Desktop-Geräte. Der Standardwert lautet 1.  
+    [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067055)  
+    
+    **Standard**: 3  
+
+  - **Anzahl von fehlgeschlagenen Anmeldungen, bevor das Gerät zurückgesetzt wird**  
+    Die Anzahl von zulässigen Authentifizierungsfehlern bevor das Gerät zurückgesetzt wird. Der Wert 0 deaktiviert die Rücksetzfunktion eines Geräts.  
+    [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067030)  
       
-      **Standard**: 3  
-  
-    - **Anzahl von fehlgeschlagenen Anmeldungen, bevor das Gerät zurückgesetzt wird**  
-      Die Anzahl von zulässigen Authentifizierungsfehlern bevor das Gerät zurückgesetzt wird. Der Wert 0 deaktiviert die Rücksetzfunktion eines Geräts.  
-      [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067030)  
-        
-      **Standard**: 10  
-  
-    - **Kennwortablauf (Tage)**  
-      Die Richtlinieneinstellung für das maximale Kennwortalter bestimmt die Zeitspanne (in Tagen), in der ein Kennwort verwendet werden kann, bevor das System den Benutzer zum Ändern des Kennworts auffordert. Sie können einstellen, dass Kennwörter nach einer bestimmten Anzahl von Tagen (zwischen 1 und 999) ablaufen, oder dass Kennwörter nie ablaufen, indem Sie die Anzahl der Tage auf 0 einstellen. Wenn das maximale Kennwortalter zwischen 1 und 999 Tagen liegt, muss das minimale Kennwortalter darunter liegen. Wenn das maximale Kennwortalter auf 0 eingestellt ist, kann das minimale Kennwortalter ein Wert zwischen 0 und 998 Tagen sein.  
-      [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067028)  
-      
-      **Standard**: 60  
-  
-    - **Erforderlicher Kennworttyp**  
-      Bestimmt den Typ der erforderlichen PIN oder des erforderlichen Kennworts.  
-      [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067027)  
-      
-      **Standard**: Alphanumerisch  
-  
-    - **Minimale Kennwortlänge**  
-      Die Richtlinieneinstellung für die minimale Kennwortlänge bestimmt die Mindestanzahl von Zeichen, die ein Kennwort für ein Benutzerkonto besitzen muss. Sie können einen Wert zwischen 1 und 14 Zeichen einstellen, oder Sie können einstellen, dass kein Kennwort erforderlich ist, indem Sie die Zeichenanzahl auf 0 einstellen.  
-      [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067024)  
-      
-      **Standard**: 8  
-  
-    - **Einfache Kennwörter blockieren**  
-      Gibt an, ob PINs oder Kennwörter wie „1111“ oder „1234“ zulässig sind. Für Desktop-Geräte wird auch die Verwendung von Bildcodes gesteuert.  
-      [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067127) 
-      
-      **Standard**: Ja  
-        *Eine Einstellung auf „Ja“ verhindert die Verwendung einfacher Kennwörter.* 
+    **Standard**: 10  
+
+  - **Kennwortablauf (Tage)**  
+    Die Richtlinieneinstellung für das maximale Kennwortalter bestimmt die Zeitspanne (in Tagen), in der ein Kennwort verwendet werden kann, bevor das System den Benutzer zum Ändern des Kennworts auffordert. Sie können einstellen, dass Kennwörter nach einer bestimmten Anzahl von Tagen (zwischen 1 und 999) ablaufen, oder dass Kennwörter nie ablaufen, indem Sie die Anzahl der Tage auf 0 einstellen. Wenn das maximale Kennwortalter zwischen 1 und 999 Tagen liegt, muss das minimale Kennwortalter darunter liegen. Wenn das maximale Kennwortalter auf 0 eingestellt ist, kann das minimale Kennwortalter ein Wert zwischen 0 und 998 Tagen sein.  
+    [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067028)  
+    
+    **Standard**: 60  
+
+  - **Erforderlicher Kennworttyp**  
+    Bestimmt den Typ der erforderlichen PIN oder des erforderlichen Kennworts.  
+    [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067027)  
+    
+    **Standard**: Alphanumerisch  
+
+  - **Minimale Kennwortlänge**  
+    Die Richtlinieneinstellung für die minimale Kennwortlänge bestimmt die Mindestanzahl von Zeichen, die ein Kennwort für ein Benutzerkonto besitzen muss. Sie können einen Wert zwischen 1 und 14 Zeichen einstellen, oder Sie können einstellen, dass kein Kennwort erforderlich ist, indem Sie die Zeichenanzahl auf 0 einstellen.  
+    [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067024)  
+    
+    **Standard**: 8  
+
+  - **Einfache Kennwörter blockieren**  
+    Gibt an, ob PINs oder Kennwörter wie „1111“ oder „1234“ zulässig sind. Für Desktop-Geräte wird auch die Verwendung von Bildcodes gesteuert.  
+    [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067127) 
+    
+    **Standard**: Ja  
+      *Eine Einstellung auf „Ja“ verhindert die Verwendung einfacher Kennwörter.* 
 
   - **Wiederverwendung vorheriger Kennwörter verhindern**  
     Gibt an, wie viele Kennwörter, die nicht mehr verwendet werden können, im Verlauf gespeichert werden können. Der Wert schließt das aktuelle Kennwert des Benutzers mit ein. So kann der Benutzer beispielsweise bei der Einstellung *1* sein aktuelles Kennwort nicht ändern, wenn er ein neues Kennwort auswählt. Die Einstellung *5* bedeutet, dass ein Benutzer sein neues Kennwort nicht auf sein aktuelles Kennwort oder eines seiner vorherigen vier Kennwörter festlegen kann.  
@@ -328,10 +328,10 @@ Weitere Informationen finden Sie unter [Policy CSP - DeviceLock (Richtlinien-CSP
   
   **Standard**: 1  
 
-## <a name="dma-guard"></a>DMA-Guard  
+## <a name="dma-guard"></a>DMA-Wächter  
 Weitere Informationen finden Sie unter [Policy CSP – DmaGuard (Richtlinien-Konfigurationsdienstanbieter: DmaGuard)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard) in der Windows-Dokumentation.
 - **Aufzählung externer Geräte, die mit Kernel-DMA-Schutz nicht kompatibel sind**  
-  Diese Richtlinie ist vorgesehen, um zusätzliche Sicherheit für die externe kann DMA-Geräte. Sie ermöglicht eine bessere Kontrolle über die Aufzählung von externen DMA-fähigen Geräten, die mit DMA Remapping/Gerätespeicherisolation und Sandboxing nicht kompatibel sind. Diese Richtlinie gilt nur, wenn der Kernel-DMA-Schutz unterstützt wird und durch die Systemfirmware aktiviert wurde. DMA-Kernel-Schutz ist eine Plattform-Funktion, die per Richtlinie oder durch Benutzer gesteuert werden kann. Er muss zum Zeitpunkt der Herstellung vom System unterstützt werden. Um festzustellen, ob das System Kernel DMA-Schutz unterstützt, überprüfen Sie das DMA-Kernel-Schutz-Feld in der Seite Zusammenfassung des MSINFO32.exe.  
+  Diese Richtlinie soll zusätzliche Sicherheit gegen externe DMA-fähige Geräte bereitstellen. Sie ermöglicht eine bessere Kontrolle über die Aufzählung von externen DMA-fähigen Geräten, die mit DMA Remapping/Gerätespeicherisolation und Sandboxing nicht kompatibel sind. Diese Richtlinie gilt nur, wenn der Kernel-DMA-Schutz unterstützt wird und durch die Systemfirmware aktiviert wurde. Der Kernel DMA-Schutz ist ein Platt Form Feature, das nicht über Richtlinien oder Endbenutzer gesteuert werden kann. Er muss zum Zeitpunkt der Herstellung vom System unterstützt werden. Um zu überprüfen, ob das System Kernel DMA-Schutz unterstützt, überprüfen Sie das Feld Kernel DMA Protection auf der Seite Zusammenfassung von Msinfo32. exe.  
   [Erfahren Sie mehr](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy)
 
   **Standard**: Alles blockieren   
@@ -531,12 +531,12 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
   **Standard**: Keine Standorte  
 
-- **Unterstützung für Internet Explorer-Verschlüsselung**  
-  Mit dieser richtlinieneinstellung können Sie die Unterstützung für Transport Layer Security (TLS) 1.0, TLS 1.1, TLS 1.2, Secure Sockets Layer (SSL) 2.0 und SSL 3.0 im Browser zu deaktivieren. TLS und SSL sind Protokolle, die Kommunikation zwischen dem Browser und dem Zielserver zu schützen. Wenn der Browser versucht, eine geschützte Kommunikation mit dem Zielserver einrichten, aushandeln Browser und Server welche-Protokoll und Version verwendet werden soll. Browser und Server versuchen, entsprechend der jeweils anderen-Liste der unterstützten Protokolle und Versionen, und sie auswählen, die die bevorzugte Übereinstimmung. Wenn Sie diese richtlinieneinstellung aktivieren, wird der Browser verhandelt oder über keine Aushandlung einen Tunnel für die Verschlüsselung mithilfe der Encryption-Methoden, die Sie aus der Dropdown-Liste auswählen. Wenn Sie diese richtlinieneinstellung nicht konfigurieren oder deaktivieren, die Benutzer kann auswählen, dem der Verschlüsselungsvorgang-Methode der Browser unterstützt.  
+- **Unterstützung der Internet Explorer-Verschlüsselung**  
+  Mit dieser Richtlinien Einstellung können Sie die Unterstützung für Transport Layer Security (TLS) 1,0, TLS 1,1, TLS 1,2 Secure Sockets Layer (SSL) 2,0 oder SSL 3,0 im Browser deaktivieren. TLS und SSL sind Protokolle, die den Schutz der Kommunikation zwischen dem Browser und dem Zielserver erleichtern. Wenn der Browser versucht, eine geschützte Kommunikation mit dem Zielserver einzurichten, verhandeln der Browser und der Server, welches Protokoll und welche Version verwendet werden sollen. Der Browser und der Server versuchen, die Liste der unterstützten Protokolle und Versionen der jeweils anderen Liste zu vergleichen, und wählen die am meisten bevorzugte Übereinstimmung aus. Wenn Sie diese Richtlinien Einstellung aktivieren, aushandelt der Browser einen Verschlüsselungs Tunnel mit den von Ihnen ausgewählten Verschlüsselungsmethoden in der Dropdown Liste und aushandelt ihn nicht. Wenn Sie diese Richtlinien Einstellung deaktivieren oder nicht konfigurieren, kann der Benutzer auswählen, welche Verschlüsselungsmethode der Browser unterstützt.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067057)
 
-  **Standard**: 2 Elemente: TLS Version 1.1 und TLS v1. 2  
-  *Wählen Sie den Pfeil nach unten, um Optionen anzuzeigen, die Sie für diese Einstellung auswählen können.*
+  **Standard**: 2 Elemente: TLS v 1.1 und TLS v 1.2  
+  *Wählen Sie den Pfeil nach unten aus, um Optionen anzuzeigen, die Sie für diese Einstellung auswählen können.*
   
 - **Internet Explorer locked down internet zone java permissions** (SmartScreen-Filter für gesperrte Internetzonen in Internet Explorer)  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt überprüft. Wenn Sie diese Richtlinieneinstellung aktivieren, überprüft der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt. Wenn Sie diese Richtlinieneinstellung deaktivieren, werden Seiten in dieser Zone vom SmartScreen-Filter nicht auf schädlichen Inhalt überprüft. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, kann der Benutzer entscheiden, ob der SmartScreen-Filter Seiten in dieser Zone auf schädlichen Inhalt überprüft. Hinweis: In Internet Explorer 7 steuert diese Richtlinieneinstellung, ob der Phishingfilter Seiten in dieser Zone auf schädlichen Inhalt überprüft.  
@@ -940,7 +940,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   
   **Standard**: Aktiviert  
   
-- **Internet Explorer Internet Zone Skriptlets**  
+- **Internet-Explorer-Skriptlets für Internet-Zonen**  
   Mit dieser Richtlinieneinstellung können Sie bestimmen, ob Benutzer Skriptlets ausführen können. Wenn Sie diese Richtlinieneinstellung aktivieren, können Benutzer Skriptlets ausführen. Wenn Sie diese Richtlinieneinstellung deaktivieren, können Benutzer Skriptlets nicht ausführen. Wenn Sie diese Richtlinieneinstellung nicht konfigurieren, können Benutzer Skriptlets aktivieren oder deaktivieren.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067176)  
   
@@ -1386,29 +1386,29 @@ Weitere Informationen finden Sie unter [Policy CSP - Power (Richtlinien-CSP: Pow
   **Standard**: Aktiviert
 
 ## <a name="remote-assistance"></a>Remoteunterstützung
-- **Die angeforderte Remoteunterstützung**  
-  Mit dieser richtlinieneinstellung können Sie zum Aktivieren oder deaktivieren Sie die Remoteunterstützung angefordert (Ask für) auf diesem Computer. 
-  - *Wenn Sie diese richtlinieneinstellung aktivieren*, Benutzer auf diesem Computer können e-Mail oder Datei-Übertragung verwenden, um einen Benutzer bitten, um Hilfe zu erhalten. Darüber hinaus Benutzer können instant messaging-Programme verwenden, um Verbindungen mit diesem Computer zuzulassen, und Sie können zusätzliche Remoteunterstützungseinstellungen konfigurieren. 
-  - *Wenn Sie diese richtlinieneinstellung deaktivieren*, Benutzer auf diesem Computer können keine e-Mail-Adresse oder Dateiübertragung jemanden um Hilfe bitten. Darüber hinaus können nicht für Benutzer instant messaging-Programme verwenden, um Verbindungen mit diesem Computer zuzulassen. 
-  - *Wenn Sie diese richtlinieneinstellung nicht konfigurieren*, Benutzer können aktivieren oder deaktivieren Sie die Remoteunterstützung angefordert (nach Fragen) selbst in den Systemeigenschaften in der Systemsteuerung. Benutzer können auch Remoteunterstützungseinstellungen konfigurieren. 
+- **Remote Unterstützung angefordert**  
+  Mit dieser Richtlinien Einstellung können Sie die angeforderte (Fragen) Remote Unterstützung auf diesem Computer aktivieren bzw. deaktivieren. 
+  - *Wenn Sie diese Richtlinien Einstellung aktivieren*, können Benutzer auf diesem Computer per e-Mail oder über die Dateiübertragung Hilfe anfordern. Außerdem können Benutzer Instant Messaging-Programme verwenden, um Verbindungen mit diesem Computer zuzulassen, und Sie können zusätzliche Remote Unterstützungs Einstellungen konfigurieren. 
+  - *Wenn Sie diese Richtlinien Einstellung deaktivieren*, können Benutzer auf diesem Computer keine e-Mail oder Dateiübertragung verwenden, um Hilfe zu bitten. Außerdem können Benutzer keine Instant Messaging-Programme verwenden, um Verbindungen mit diesem Computer zuzulassen. 
+  - *Wenn Sie diese Richtlinien Einstellung nicht konfigurieren*, können Benutzer die angeforderte Remote Unterstützung selbst in den System Eigenschaften in der Systemsteuerung aktivieren bzw. deaktivieren. Benutzer können auch Remote Unterstützungs Einstellungen konfigurieren. 
 
-  Wenn Sie diese richtlinieneinstellung aktivieren, haben Sie zwei Möglichkeiten, Hilfsprogramme für die Remoteunterstützung bereitstellen können: "Hilfsprogramme für die arbeitsaufgabenexklusiver Ansicht der Computer" "zu erlauben oder Hilfsprogramme für den Computer Remote steuern." Die "Maximale Gültigkeitsdauer" richtlinieneinstellung einem Grenzwert für die Zeitspanne, die festlegt, kann eine Remoteunterstützung Einladung per e-Mail oder Datei-Übertragung erstellt geöffnet bleiben. Die "Auswählen der Methode für das Senden von e-Mail-Einladungen" Einstellung gibt an, die Standard-e-Mail zu verwenden, um die Remoteunterstützung Einladungen zu senden. Abhängig von Ihrer e-Mail-Programm verwenden können Sie entweder die Mailto-standard (der Empfänger einer Einladung, verbindet sich über einen Internetlink) oder die SMAPI (einfaches MAPI) standard (die Einladung wird an Ihre e-Mail-Nachricht angefügt). Mit dieser richtlinieneinstellung ist nicht verfügbar in Windows Vista, da SMAPI die einzige Methode, die unterstützt werden. Wenn Sie diese richtlinieneinstellung aktivieren, sollten Sie auch entsprechende Firewall-Ausnahmen, um Remote Assistance Kommunikation zu ermöglichen aktivieren.  
+  Wenn Sie diese Richtlinien Einstellung aktivieren, stehen Ihnen zwei Möglichkeiten zur Verfügung, die Bereitstellung von Remote Unterstützung durch Hilfsprogramme zuzulassen: "hilfsobjedansichten nur den Computer anzeigen" oder "Hilfsquellen die Remote Steuerung des Computers erlauben". Die Richtlinien Einstellung "maximale Ticket Zeit" legt fest, wie lange eine mit e-Mail oder Dateiübertragung erstellte Remote Unterstützungs Einladung geöffnet bleiben kann. Die Einstellung "Methode zum Senden von e-Mail-Einladungen auswählen" gibt an, welcher e-Mail-Standard zum Senden von Remote Unterstützungs Einladungen verwendet werden soll Abhängig von Ihrem e-Mail-Programm können Sie entweder den mailto-Standard verwenden (der Einladungs Empfänger stellt eine Verbindung über einen Internet Link her) oder den smapi-Standard (Simple MAPI) (die Einladung ist an Ihre e-Mail-Nachricht angefügt). Diese Richtlinien Einstellung ist in Windows Vista nicht verfügbar, da smapi die einzige unterstützte Methode ist. Wenn Sie diese Richtlinien Einstellung aktivieren, sollten Sie auch entsprechende Firewallausnahmen aktivieren, um die Kommunikation mit Remote Unterstützung zuzulassen.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067198)
 
-  **Standard**: Deaktivieren der Remoteunterstützung
+  **Standard**: Remote Unterstützung deaktivieren
 
-  Bei Festlegung auf *Remoteunterstützung aktivieren*, die folgenden zusätzlichen Einstellungen konfigurieren:  
-  - **Remoteunterstützung angeforderten Berechtigungen**  
+  Wenn Sie aktivieren, um *Remote Unterstützung zu aktivieren*, konfigurieren Sie die folgenden zusätzlichen Einstellungen:  
+  - **Berechtigung zur Remote Unterstützung angefordert**  
     **Standard**: Anzeigen  
 
-  - **Maximale Ticket-Time-Werten**  
+  - **Maximaler Ticket Zeitwert**  
     **Standard**: *Nicht konfiguriert*  
 
-  - **Maximale Ticket Zeitraum**  
+  - **Maximaler Ticket Zeitraum**  
     **Standard**: Minuten    
 
-  - **E-Mail-Einladung-Methode**  
-    **Standard**: einfaches MAPI
+  - **Einladungs Methode für E-Mail**  
+    **Standard**: Simple MAPI
 
   
 ## <a name="remote-desktop-services"></a>Remotedesktopdienste  
@@ -1660,7 +1660,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Ja
   
 - **Verhaltensüberwachung**  
-  Zugelassen oder verweigert die Verhaltensüberwachung von Windows Defender-Funktionalität. Eingebettet in Windows 10, sammeln und verarbeiten diese Sensoren von Signale zum Verhalten des Betriebssystems und senden diese Sensordaten an Ihre private, isolierte Cloudinstanz von Microsoft Defender ATP.  
+  Hiermit wird die Windows Defender-Verhaltens Überwachungsfunktion zugelassen oder verweigert. Eingebettet in Windows 10, sammeln und verarbeiten diese Sensoren von Signale zum Verhalten des Betriebssystems und senden diese Sensordaten an Ihre private, isolierte Cloudinstanz von Microsoft Defender ATP.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067111)  
   
   **Standard**: Ja
@@ -1709,7 +1709,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Blockieren
 
 ## <a name="windows-defender-firewall"></a>Windows Defender Firewall  
-Weitere Informationen finden Sie unter [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) in der Dokumentation zu Windows-Protokolle.  
+Weitere Informationen finden Sie unter [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) in der Dokumentation zu Windows-Protokollen.  
 
 - **Firewall-Profil Domäne**  
   Gibt die Profile an, zu denen die Regel gehört: „Domäne“, „Privat“, „Öffentlich“. Dieser Wert stellt das Profil für Netzwerke dar, die mit Domänen verbunden sind.  
@@ -1727,7 +1727,7 @@ Weitere Informationen finden Sie unter [2.2.2 FW_PROFILE_TYPOE]( https://docs.mi
   - **Firewall aktiviert**  
     **Standard**: Zulässig
 
-- **Öffentliche Firewallprofil**  
+- **Firewallprofil öffentlich**  
   Gibt die Profile an, zu denen die Regel gehört: „Domäne“, „Privat“, „Öffentlich“. Dieser Wert stellt das Profil für öffentliche Netzwerke dar. Diese Netzwerke werden von den Administratoren des Serverhosts als „öffentlich“ klassifiziert. Die Klassifizierung erfolgt, wenn sich der Host zum ersten Mal mit dem Netzwerk verbindet. In der Regel sind diese Netzwerke an Flughäfen, in Cafés und an anderen öffentlichen Orten zu finden, an denen die Peers im Netzwerk oder der Netzwerkadministrator nicht vertrauenswürdig sind.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067143)  
 
@@ -1749,11 +1749,11 @@ Weitere Informationen finden Sie unter [2.2.2 FW_PROFILE_TYPOE]( https://docs.mi
   - **Richtlinienregeln aus Gruppenrichtlinie nicht zusammengeführt**  
     **Standard**: Ja
 
-- **Private-Firewall-Profil**  
+- **Firewallprofil privat**  
   Gibt die Profile an, zu denen die Regel gehört: „Domäne“, „Privat“, „Öffentlich“. Dieser Wert stellt das Profil für private Netzwerke dar.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067041)  
 
-   - **Eingehende Verbindungen blockiert**  
+  - **Eingehende Verbindungen blockiert**  
     **Standard**: Ja
 
   - **Ausgehende Verbindungen erforderlich**  
@@ -1767,7 +1767,7 @@ Weitere Informationen finden Sie unter [2.2.2 FW_PROFILE_TYPOE]( https://docs.mi
 
 ## <a name="windows-hello-for-business"></a>Windows Hello for Business  
 - **Erweitertes Antispoofing erfordern, falls verfügbar**:  
-  Falls Ja, verwendet Geräten erweitertes Antispoofing, falls verfügbar. Wenn Nein, werden die Antispoofing blockiert. Nicht konfiguriert, werden auf dem Client festgelegten Konfigurationen berücksichtigt.  
+  Wenn dies der Fall ist, verwenden Geräte das erweiterte Antispoofing, sofern verfügbar. Wenn dies nicht der Fall ist, wird das Antispoofing blockiert. Nicht konfiguriert berücksichtigt Konfigurationen, die auf dem Client ausgeführt werden.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067192)
 
   **Standard**: Ja
@@ -1778,22 +1778,22 @@ Weitere Informationen finden Sie unter [2.2.2 FW_PROFILE_TYPOE]( https://docs.mi
   **Standard**: Ja
 
 - **Kleinbuchstaben in PIN vorschreiben**  
-  Falls erforderlich, muss Benutzer-PIN mindestens einen Kleinbuchstaben enthalten.
+  Falls erforderlich, muss die Benutzer-PIN mindestens einen Kleinbuchstaben enthalten.
 
   **Standard**: Zulässig
 
 - **Sonderzeichen in PIN vorschreiben**  
-  Falls erforderlich, muss Benutzer-PIN mindestens ein Sonderzeichen enthalten.
+  Falls erforderlich, muss die Benutzer-PIN mindestens ein Sonderzeichen enthalten.
 
   **Standard**: Zulässig
 
 - **PIN-Mindestlänge**  
-  Minimale PIN-Länge muss zwischen 4 und 127 liegen.
+  Die minimale PIN-Länge muss zwischen 4 und 127 liegen.
 
   **Standard**: 6
 
 - **Großbuchstaben in PIN vorschreiben**  
-  Falls erforderlich, muss Benutzer-PIN mindestens einen Großbuchstaben enthalten.
+  Falls erforderlich, muss die Benutzer-PIN mindestens einen Großbuchstaben enthalten.
 
   **Standard**: Zulässig
 
@@ -1819,35 +1819,35 @@ Weitere Informationen finden Sie unter [Policy CSP - WindowsPowerShell (Richtlin
 
   **Standard**: Aktiviert
 
-## <a name="whats-changed-in-the-new-template"></a>Was ist in der neuen Vorlage geändert.
-Die *MDM-Sicherheitsbaseline für Spring 2019 Update (19H-1)* Vorlage verfügt über die folgenden Änderungen aus der *Vorschau* Vorlage.
+## <a name="whats-changed-in-the-new-template"></a>Geänderte Änderungen in der neuen Vorlage
+Die *MDM-Sicherheitsbaseline für die Vorlage Spring 2019 Update (19h1)* weist die folgenden Änderungen in der *Vorschau* Vorlage auf.
 
-### <a name="changes-to-the-baseline-settings"></a>Änderungen an den baselineeinstellungen
+### <a name="changes-to-the-baseline-settings"></a>Änderungen an den Baseline-Einstellungen
 Die folgenden Einstellungen sind entweder:
-- *Neue* in die aktuelle Version von der Baseline.
-- *Entfernt* aus dieser neueste baselineversion, wurden Sie jedoch in der vorherigen Version vorhanden.
-- *Überarbeitete* in irgendeiner Weise aus wie die Einstellungen in der vorherigen Version angezeigt. 
+- *Neu* in der aktuellen Version der Baseline.
+- Aus dieser neuesten Baselineversion *entfernt* , aber in der vorherigen Version vorhanden.
+- Es wurde auf irgendeine Weise *überarbeitet* , wie die Einstellungen in der vorherigen Version auftraten. 
 
-*[Neu]*  [ **Sperrbildschirm**](#above-lock):
-- **Voice-apps über den Sperrbildschirm zu aktivieren**    
+*[Neu]* [**Oberhalb der Sperre**](#above-lock):
+- **Sprach Aktivierung von apps vom gesperrten Bildschirm**    
 
 *[Neu]* [**Anwendungsverwaltung**](#application-management): 
-- **Block Benutzerkontrolle über die Installationen**  
-- **Block-MSI-app-Installationen mit erhöhten rechten**  
+- **Benutzersteuerung für Installationen blockieren**  
+- **Blockieren von MSI-App-Installationen mit erhöhten Rechten**  
 
-*[Entfernt]*  [ **Bitlocker**](#bitlocker):  
-- Das Schließfach für Wechseldatenträger Richtlinie Bit > **Verschlüsselungsmethode**
-- **BitLocker festen Laufwerk Richtlinie** *(alle Einstellungen)*
-- **Bit-System die Richtlinie für das Schließfach für** *(alle Einstellungen)*
+*[Entfernt]* [**BitLocker**](#bitlocker):  
+- BitLocker-Wechsel Laufwerks Richtlinie > **Verschlüsselungsmethode**
+- **BitLocker-Richtlinie für Festplattenlaufwerke** *(alle Einstellungen)*
+- **BitLocker-Richtlinie für System Laufwerke** *(alle Einstellungen)*
 
 *[Neu]* [**Konnektivität**](#connectivity):
-- **Konfigurieren des sicheren Zugriffs auf UNC-Pfade**
+- **Sicheren Zugriff auf UNC-Pfade konfigurieren**
 
 *[Neu]* [**Device Guard**](#device-guard):
 - **Virtualisierungsbasierte Sicherheit**
 
 
-*[Neu]*  [ **DMA-Guard**](#dma-guard):
+*[Neu]* [**DMA Guard**](#dma-guard):
 - **Aufzählung externer Geräte, die mit Kernel-DMA-Schutz nicht kompatibel sind**  
 
 *[Neu]* [**Internet Explorer**](#internet-explorer):
@@ -1855,17 +1855,17 @@ Die folgenden Einstellungen sind entweder:
 - **Internet Explorer internet zone drag and drop or copy and paste files** (Drag & Drop oder Kopieren und Einfügen von Dateien in einer Internetzone in Internet Explorer)  
 - **Internet Explorer restricted zone .NET Framework reliant components** (.NET Framework-Komponenten in eingeschränkten Zonen von Internet Explorer)  
 - **Internet Explorer local machine zone do not run antimalware against Active X controls** (Keine Antischadsoftwareprogramme für ActiveX-Steuerelemente in lokaler Computerzone in Internet Explorer ausführen)
-- **Unterstützung für Internet Explorer-Verschlüsselung**  
+- **Unterstützung der Internet Explorer-Verschlüsselung**  
 
-*[Überarbeitet]*  [ **InternetExplorer**](#internet-explorer):
-- **Internet Explorer Internet Zone automatische Eingabeaufforderung für Dateidownloads** > der Standardwert ist jetzt **deaktiviert**. In der Vorschauversion wurde dies auf aktiviert festgelegt.
+*[Überarbeitet]* [**Internet Explorer**](#internet-explorer):
+- **Internet Explorer Internet-Zone automatische Aufforderung zum Herunterladen von Dateien** > der Standardwert ist jetzt **deaktiviert**. In der Vorschau war dies auf Aktiviert festgelegt.
 
 *[Neu]* [**Remoteunterstützung**](#remote-assistance):  
-- **Die angeforderte Remoteunterstützung** 
-  - **Remoteunterstützung angeforderten Berechtigungen**
-  - **Maximale Ticket-Time-Werten**  
-  - **Maximale Ticket Zeitraum**  
-  - **E-Mail-Einladung-Methode**
+- **Remote Unterstützung angefordert** 
+  - **Berechtigung zur Remote Unterstützung angefordert**
+  - **Maximaler Ticket Zeitwert**  
+  - **Maximaler Ticket Zeitraum**  
+  - **Einladungs Methode für E-Mail**
 
 
 *[Neu]* [**Windows Defender**](#windows-defender):
@@ -1878,14 +1878,14 @@ Die folgenden Einstellungen sind entweder:
   - **Ausgehende Verbindungen erforderlich**  
   - **Eingehende Benachrichtigungen blockiert**  
   - **Firewall aktiviert**  
-- **Öffentliche Firewallprofil**  
+- **Firewallprofil öffentlich**  
   - **Eingehende Verbindungen blockiert**  
   - **Ausgehende Verbindungen erforderlich**  
   - **Eingehende Benachrichtigungen blockiert**  
   - **Firewall aktiviert** 
   - **Verbindungssicherheitsregeln aus Gruppenrichtlinie nicht zusammengeführt**   
   - **Richtlinienregeln aus Gruppenrichtlinie nicht zusammengeführt**  
-- **Private-Firewall-Profil**  
+- **Firewallprofil privat**  
   - **Eingehende Verbindungen blockiert**  
   - **Ausgehende Verbindungen erforderlich**  
   - **Eingehende Benachrichtigungen blockiert**  
