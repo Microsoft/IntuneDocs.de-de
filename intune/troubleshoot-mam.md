@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/21/2019
+ms.date: 07/03/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,16 +16,16 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bde64e9bbe756b61b41dd8e7d55ba327491ae55b
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1cf8f7753a92ad45a68f976359560ef6da2d1cec
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046227"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648724"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Problembehandlung der Verwaltung von mobilen Geräten
 
-Dieses Thema bietet Lösungen für allgemeine Probleme, die bei der mobilen Anwendungsverwaltung mit Intune aufgetreten sind.
+In diesem Thema finden Sie Lösungen für häufige Probleme, die bei der Verwendung von InTune-App-Schutz aufgetreten sind (auch als MAM oder Mobile Anwendungs Verwaltung bezeichnet).
 
 Wenn sich das Problem mit diesen Informationen nicht beheben lässt, finden Sie unter [How to get support for Microsoft Intune](get-support.md) (Anfordern von Support für Microsoft Intune) weitere Möglichkeiten, Hilfe zu erhalten.
 
@@ -58,7 +58,15 @@ Häufige Probleme von Endbenutzern lassen sich in folgende Kategorien unterteile
 Plattform | Szenario | Erläuterung |
 ---| --- | --- |
 iOS | Der Endbenutzer kann die iOS-Freigabeerweiterung verwenden, um Geschäfts-, Schul- oder Unidaten in nicht verwalteten Apps zu öffnen, auch wenn die Datenübertragungsrichtlinie auf **Nur verwaltete Apps** oder **Keine Apps** festgelegt ist. Führt das nicht zu Datenlecks? | Die Intune-App-Schutzrichtlinie kann die iOS-Freigabeerweiterung nicht steuern, ohne das Gerät zu verwalten. Daher **verschlüsselt Intune „unternehmenseigene“ Daten, bevor diese außerhalb der App freigegeben werden**. Sie können dies überprüfen, indem Sie versuchen, die „unternehmenseigene“ Datei außerhalb der verwalteten App zu öffnen. Die Datei sollte verschlüsselt sein und außerhalb der verwalteten App nicht geöffnet werden können.
+iOS | Warum wird der Endbenutzer **aufgefordert, die Microsoft Authenticator-APP zu installieren** | Dies ist erforderlich, wenn der APP-basierte bedingte Zugriff angewendet wird. Informationen hierzu finden Sie unter [erforderliche Client-App](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access)anfordern
 Android | Warum müssen Endbenutzer die **Unternehmensportal-App installieren**, auch wenn ich den MAM-App-Schutz ohne Geräteregistrierung verwende?  | Unter Android ist ein Großteil der App-Schutzfunktionen in die Unternehmensportal-App integriert. **Eine Registrierung der Geräte ist nicht erforderlich, allerdings wird immer die Unternehmensportal-App benötigt**. Beim App-Schutz ohne Registrierung muss lediglich die Unternehmensportal-App auf dem Gerät des Endbenutzers installiert sein.
+iOS/Android | App-Schutzrichtlinie wird nicht auf Entwurfs-e-Mails in der Outlook-App angewendet | Da Outlook sowohl den Unternehmens-als auch den persönlichen Kontext unterstützt, wird MAM nicht für eine e-Mail mit Entwürfen erzwungen
+iOS/Android | App-Schutzrichtlinie wird nicht auf neue Dokumente in WXP angewendet (Word, Excel, PowerPoint) | Da WXP sowohl den Unternehmens-als auch den persönlichen Kontext unterstützt, wird MAM in neuen Dokumenten erst erzwungen, wenn Sie in einem identifizierten Unternehmens Standort gespeichert werden, z. b. onedrive.
+iOS/Android | Apps dürfen beim Aktivieren der Richtlinie keine Speicherung als in lokalem Speicher zulassen | Das App-Verhalten für diese Einstellung wird vom App-Entwickler gesteuert.
+Android | Android verfügt über mehr Einschränkungen als IOS, wenn "Native" Apps auf MAM-geschützte Inhalte zugreifen können. | Android ist eine offene Plattform, und die "Native" App-Zuordnung kann vom Endbenutzer in potenziell unsichere apps geändert werden. Anwenden von [Ausnahmen für Datenübertragungs Richtlinien](app-protection-policies-exception.md) , um bestimmte apps auszuschließen.
+Android | Azure Information Protection (AIP) kann als PDF-Datei speichern, wenn "Speichern unter" verhindert wird. | AIP berücksichtigt die MAM-Richtlinie für "Druck deaktivieren", wenn "Speichern als PDF" verwendet wird.
+iOS | Beim Öffnen von PDF-Anlagen in der Outlook-App tritt ein Fehler auf. | Dies kann der Fall sein, wenn sich der Benutzer nicht bei Acrobat Reader für InTune authentifiziert hat oder der Fingerabdruck zum Authentifizieren bei seiner Organisation verwendet wurde. Öffnen Sie den Acrobat Reader vorab, und Authentifizieren Sie sich mithilfe der UPN-Anmelde
+
 
 ### <a name="normal-usage-dialogs"></a>Dialogfelder bei normaler Verwendung
 
@@ -82,7 +90,7 @@ Fehlermeldung oder Dialogfeld | Ursache | Wartung |
 **Gerät nicht kompatibel**: Diese App kann nicht verwendet werden, weil Sie ein Gerät mit Jailbreak verwenden. Wenden Sie sich an Ihren IT-Administrator, um Unterstützung zu erhalten. | Intune hat festgestellt, dass der Benutzer ein Gerät mit Jailbreak verwendet. | Setzen Sie das Gerät auf die Werkseinstellungen zurück. Führen Sie [diese Anweisungen](https://support.apple.com/HT201274) über die Apple-Support-Website aus.
 **Internetverbindung erforderlich**: Sie benötigen eine Internetverbindung, um zu überprüfen, ob Sie diese App verwenden dürfen. | Das Gerät ist nicht mit dem Internet verbunden. | Verbinden Sie das Gerät mit einem WLAN oder Datennetzwerk.
 **Unbekannter Fehler**: Versuchen Sie, die App neu zu starten. Wenn das Problem weiterhin besteht, wenden Sie sich an Ihren IT-Administrator, um Hilfe zu erhalten. | Ein unbekannter Fehler ist aufgetreten. | Warten Sie eine gewisse Zeit, und versuchen Sie es erneut. Wenn der Fehler weiterhin auftritt, erstellen Sie ein [Supportticket](get-support.md#create-an-online-support-ticket) mit Intune.
-**Zugriff auf Daten Ihrer Organisation**: Das angegebene Geschäfts-, Schul oder Unikonto hat keinen Zugriff auf diese App. Sie müssen sich möglicherweise mit einem anderen Konto anmelden. Wenden Sie sich an Ihren IT-Administrator, um Unterstützung zu erhalten. | Intune erkennt, dass der Benutzer versucht hat, sich mit einem anderen als dem bei MAM registrierten Geschäfts-, Schul- oder Unikonto für das Gerät anzumelden. Pro Gerät kann von MAM jeweils nur ein Geschäfts-, Schul- oder Unikonto verwaltet werden. | Fordern Sie den Benutzer auf, sich mit dem Konto anzumelden, mit dessen Benutzername die Anmeldeseite zuvor aufgefüllt wurde. <br> <br> Alternativ kann der Benutzer sich mit dem neuen Geschäfts-, Schul- oder Unikonto anmelden und das vorhandene, bei MAM registrierte Konto entfernen.
+**Zugriff auf Daten Ihrer Organisation**: Das angegebene Geschäfts-, Schul oder Unikonto hat keinen Zugriff auf diese App. Sie müssen sich möglicherweise mit einem anderen Konto anmelden. Wenden Sie sich an Ihren IT-Administrator, um Unterstützung zu erhalten. | Intune erkennt, dass der Benutzer versucht hat, sich mit einem anderen als dem bei MAM registrierten Geschäfts-, Schul- oder Unikonto für das Gerät anzumelden. Pro Gerät kann von MAM jeweils nur ein Geschäfts-, Schul- oder Unikonto verwaltet werden. | Fordern Sie den Benutzer auf, sich mit dem Konto anzumelden, mit dessen Benutzername die Anmeldeseite zuvor aufgefüllt wurde. Möglicherweise müssen Sie [die Benutzer-UPN-Einstellung für InTune konfigurieren](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). <br> <br> Alternativ kann der Benutzer sich mit dem neuen Geschäfts-, Schul- oder Unikonto anmelden und das vorhandene, bei MAM registrierte Konto entfernen.
 **Verbindungsproblem**: Es ist ein unerwartetes Verbindungsproblem aufgetreten. Überprüfen Sie Ihre Verbindung, und versuchen Sie es erneut.  |  Unerwarteter Fehler. | Warten Sie eine gewisse Zeit, und versuchen Sie es erneut. Wenn der Fehler weiterhin auftritt, erstellen Sie ein [Supportticket](get-support.md#create-an-online-support-ticket) mit Intune.
 **Warnung**: Diese App kann nicht mehr verwendet werden. Wenden Sie sich an Ihren IT-Administrator, um weitere Informationen zu erhalten. | Fehler beim Überprüfen des App-Zertifikats. | Stellen Sie sicher, dass die App-Version auf dem neuesten Stand ist. <br><br> Installieren Sie die App neu.
 **Fehler**: Diese App hat ein Problem festgestellt und muss geschlossen werden. Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an Ihren IT-Administrator. | Fehler beim Lesen der PIN der MAM-App aus dem Apple iOS-Schlüsselbund. | Starten Sie das Gerät neu. Stellen Sie sicher, dass die App-Version auf dem neuesten Stand ist. <br><br> Installieren Sie die App neu.
@@ -103,6 +111,7 @@ Dialog/Fehlermeldung | Ursache | Wartung |
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Überprüfen des Setups für die Verwaltung Ihrer mobilen Anwendungen](app-protection-policies-validate.md)
+- Informationen zum Verwenden von Protokolldateien für die Problembehandlung InTune-App-Schutz Richtlinie finden Sie unter[https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372)
 - Weitere Informationen zur Intune-Problembehandlung finden Sie unter [Verwenden des Problembehandlungsportals zur Unterstützung von Benutzern Ihres Unternehmens](help-desk-operators.md). 
 - Erfahren Sie mehr über bekannte Probleme in Microsoft Intune. Weitere Informationen finden Sie unter [Bekannte Probleme in Microsoft Intune](known-issues.md).
 - Benötigen Sie zusätzliche Hilfe? Weitere Informationen finden Sie unter [Anfordern von Support für Microsoft Intune](get-support.md).
