@@ -173,8 +173,7 @@ In den nachstehenden Tabellen sind die häufigsten Fehlercodes aufgeführt, die 
 
 | Szenario | Rückgabecode | Benutzeroberfläche | Hinweis |
 |------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------------------|------------------------------------|
-| Deinstallationsaufwand, wenn keine aktive Klick-und-Los-Installation vorhanden ist | – 2147418113, 0x8000ffff oder 2147549183 | Fehlercode: 30088-1008
-Fehlercode: 30125-1011 (404) | Office-Bereitstellungstool |
+| Deinstallationsaufwand, wenn keine aktive Klick-und-Los-Installation vorhanden ist | – 2147418113, 0x8000ffff oder 2147549183 | Fehlercode: 30088-1008Fehlercode: 30125-1011 (404) | Office-Bereitstellungstool |
 | Installieren, wenn eine MSI-Version installiert wird | 1603 | - | Office-Bereitstellungstool |
 | Die Installation wurde vom Benutzer oder einer anderen Installation abgebrochen | 17002 | - | Klick-und-Los |
 | Versuch, eine 64-Bit-Version auf einem Gerät mit installierter 32-Bit-Version zu installieren | 1603 | - | Rückgabecode der Office-Bereitstellungstools |
