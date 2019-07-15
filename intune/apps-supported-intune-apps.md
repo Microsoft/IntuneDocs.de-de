@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a50eb6e58c7b866af32387a85026eb87f825b15
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 89babf2eb60b7959c5c25a02b29135668efc32eb
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045908"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649062"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Durch Microsoft Intune geschützte Apps  
 
@@ -46,6 +46,7 @@ Die folgenden Tabellen enthalten Details zu unterstützten Partnern und Microsof
 | **Microsoft Azure Information Protection Viewer**<p><img alt="Microsoft app - Microsoft Azure Information Protection Viewer icon" src="./media/apps-supported-intune-apps/icon-m-azure-information-protection-viewer.png" width="100"> | Mit der AIP-Viewer-App arbeiten Sie sicher mit anderen Benutzern zusammen. Zeigen Sie geschützte Dateien an (urheberrechtlich geschützte E-Mail-Nachrichten, PDF-Dateien, Bilder, Textdateien), die jemand für Sie freigegeben hat. | [Android Store-Link](https://play.google.com/store/apps/details?id=com.egress.switchdroid.intune), [iOS Store-Link](https://itunes.apple.com/us/app/rms-sharing/id689516635?mt=8) | 
 | **Microsoft Bookings**<p><img alt="Microsoft app - Microsoft Bookings icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-bookings.png" width="100"> | Microsoft Bookings ist eine Terminplanungs-App, die Ihnen das Nachverfolgen Ihrer Reservierungen, Ihrer Termine mit Mitarbeitern und Kunden erleichtert. Sie verpassen keinen Termin mehr und reduzieren Ihr Nichterscheinen.<p>Mit der Bookings-App können Sie:<br><ul><li>Ihren Kalender anzeigen und verwalten</li><li>Unterwegs Reservierungen erstellen oder Änderungen an vorhandenen vornehmen</li><li>Verfügbarkeit Ihrer Mitarbeiter in Echtzeit anzeigen</li><li>Schnell und mühelos auf Kunden reagieren</li><li>Schnell erfahren, wo Ihre nächste Reservierung ist</li><li>Ihre Kundenliste verwalten</li></ul> | [Android Store-Link](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings),<br>[iOS Store-Link](https://itunes.apple.com/us/app/microsoft-bookings/id1065657468?mt=8) |  
 | **Microsoft Connections**<p><img alt="Microsoft app - Microsoft Connections icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-connections.png" width="100"> | Mit Microsoft Connections können kleine Unternehmen mit einfach anzuwendenden E-Mail-Marketingtools Kunden gewinnen und behalten. Erstellen Sie problemlos E-Mail-Marketingkampagnen mit vorgefertigten Vorlagen für Ankündigungen, Newsletter und Empfehlungen in professionellem Stil. | [iOS Store-Link](https://itunes.apple.com/us/app/microsoft-connections/id1172261641?mt=8) |  
+| **Microsoft Cortana**<p><img alt="Microsoft app - Microsoft Cortana icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-cortana.png" width="100"> | Halten Sie mit Cortana, Ihrem persönlichen Assistenten, Ihre Arbeits- und Freizeitaktivitäten schnell und einfach auf dem neuesten Stand. Verbinden Sie Ihren intelligenten digitalen Assistenten mit Ihrem Smartphone, um wichtige Aktivitäten auf all Ihren Geräten immer im Blick zu behalten. | [Android Store-Link](https://play.google.com/store/apps/details?id=com.microsoft.cortana),<br>[iOS Store-Link](https://apps.apple.com/us/app/cortana/id1054501703) 
 | **Microsoft Dynamics CRM**<p><img alt="Microsoft app - Microsoft Dynamics CRM icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-dynamics-crm.png" width="100"> | Mit Microsoft Dynamics CRM halten Sie Ihre Kundenkontakte auf dem Laufenden und sind dabei im Büro und unterwegs produktiv. Gehen Sie vorbereitet in jeden Termin und aktualisieren Sie Anmerkungen, Aufgaben, Kontakte, Konten, Fälle und Leads, während die Details noch aktuell sind. Vertriebsmitarbeiter können ihre Vertriebsdaten unterwegs verwalten und werden dabei durch kontextbezogene Geschäftsprozesse geführt. Agenten und Abteilungsleiter genießen die Freiheit der Mobilität und können sich dabei uneingeschränkt einzelnen Fällen widmen. „Einmal konfigurieren, überall bereitstellen“ – dieses Modell bietet Ihnen eine nahtlose Benutzererfahrung. Für iOS- und Android-Geräte verfügbar. | [Android Store-Link](https://play.google.com/store/apps/details?id=com.microsoft.crm.crmphone),<br>[iOS Store-Link](https://itunes.apple.com/app/microsoft-dynamics-crm/id678800460?mt=8) |  
 | **Microsoft Edge**<p><img alt="Microsoft app - Microsoft Edge icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-edge.png" width="100"> | Microsoft Edge bietet Windows 10-Benutzern auf allen ihren Geräten ein nahtloses Surferlebnis. Inhalt und Daten werden nahtlos im Hintergrund synchronisiert, damit Benutzer ohne Unterbrechung geräteübergreifend browsen können. Mit vertrauten Microsoft Edge-Funktionen wie dem Hub können Benutzer das Internet so organisieren, dass sie eine klare Linie finden, die Ihnen erleichtert, unterwegs ihre Inhalte zu suchen, anzuzeigen und zu verwalten. Microsoft Edge ermöglicht Windows 10-Benutzern, ohne Unterbrechung ihres Arbeitsablaufs überall nach ihren Wünschen im Internet zu browsen. | [Android Store-Link](https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en_US),<br>[iOS Store-Link](https://itunes.apple.com/us/app/microsoft-edge/id1288723196?mt=8) |  
 | **Microsoft Excel**<p><img alt="Microsoft app - Microsoft Excel icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-excel.png" width="100"> | Lassen Sie Excel-Tabellen auf Ihrem Tablet und Smartphone besser als je zuvor aussehen. Vertrauen Sie darauf, dass Tabellen auf PCs, Macintosh-Computern, Tablets und Smartphones genau so aussehen, wie Sie es wünschen, wenn Sie sie bearbeiten oder erstellen. In kürzester Zeit sind Sie im vertrauten Office-Stil mit einer intuitiven Touchbenutzeroberfläche einsatzbereit.<p><p>Diese App kann als App mit mehreren Identitäten für Android und iOS verwendet werden. | [Android Store-Link](https://play.google.com/store/apps/details?id=com.microsoft.office.excel),<br>[iOS Store-Link](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8) |  

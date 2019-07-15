@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0dc8d7cca42898db92412e2cec41252a9a9a4d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 39c3b606033ca8575e079bef9a627b087a3d3318
+ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046105"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67572462"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Zimperium Mobile Threat Defense-Connector in Intune
 
@@ -44,11 +44,11 @@ Nachstehend finden Sie einige Szenarios für die Integration von Zimperium in In
 
 Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie Geräte blockieren, bis die Bedrohung beseitigt ist:
 
--   Herstellen einer Verbindung mit Unternehmens-E-Mail
+- Herstellen einer Verbindung mit Unternehmens-E-Mail
 
--   Synchronisieren von Unternehmensdateien mithilfe der OneDrive for Work-App
+- Synchronisieren von Unternehmensdateien mithilfe der OneDrive for Work-App
 
--   Zugreifen auf Unternehmens-Apps
+- Zugreifen auf Unternehmens-Apps
 
 **Blockieren, wenn Apps mit Schadsoftware entdeckt werden:**
 
@@ -60,7 +60,7 @@ Wenn Apps, die Schadsoftware enthalten, auf Geräten erkannt werden, können Sie
 
 ### <a name="control-access-based-on-threat-to-network"></a>Steuern des Zugriffs basierend auf der Bedrohung für das Netzwerk
 
-Erkennen Sie Bedrohungen wie  **Man-in-the-Middle**  im Netzwerk, und schützen Sie den Zugriff auf WLAN-Netzwerke auf der Grundlage des Geräterisikos.
+Erkennen Sie Bedrohungen wie **Man-in-the-Middle** im Netzwerk, und schützen Sie den Zugriff auf WLAN-Netzwerke auf der Grundlage des Geräterisikos.
 
 **Blockieren des Netzwerkzugriffs über WLAN:**
 
@@ -72,7 +72,7 @@ Erkennen Sie Bedrohungen wie  **Man-in-the-Middle**  im Netzwerk, und schütze
 
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Steuern des Zugriffs auf SharePoint Online basierend auf der Bedrohung für das Netzwerk
 
-Erkennen von Bedrohungen wie  **Man-in-the-Middle** im Netzwerk und Verhindern der Synchronisierung von Unternehmensdateien auf der Grundlage des Geräterisikos.
+Erkennen von Bedrohungen wie **Man-in-the-Middle** im Netzwerk und Verhindern der Synchronisierung von Unternehmensdateien auf der Grundlage des Geräterisikos.
 
 **Blockieren des Zugriffs auf SharePoint Online bei Erkennen von Bedrohungen für das Netzwerk**
 
@@ -84,19 +84,19 @@ Erkennen von Bedrohungen wie  **Man-in-the-Middle** im Netzwerk und Verhindern
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 
--   **Android 4.1 und höher**
+- **Android 4.1 und höher**
 
--   **iOS 8 und höher**
+- **iOS 8 und höher**
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
--   Azure Active Directory Premium
+- Azure Active Directory Premium
 
--   Microsoft Intune-Abonnement
+- Microsoft Intune-Abonnement
 
--   Zimperium Mobile Threat Defense-Abonnement
+- Zimperium Mobile Threat Defense-Abonnement
 
-    -   Weitere Informationen finden Sie auf der  [Zimperium-Website](https://www.zimperium.com/zips-mobile-ips).
+    - Weitere Informationen finden Sie auf der [Zimperium-Website](https://www.zimperium.com/zips-mobile-ips).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

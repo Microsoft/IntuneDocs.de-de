@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9a61b89f07bfacf1dc41be1412f79509e1e147d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 50ac3ff27c22bf63b73f2ae10e6909112564180f
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049952"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67648731"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Konfigurieren der Managed Home Screen-App von Microsoft für Android Enterprise
 
@@ -74,21 +74,24 @@ In der nachstehenden Tabelle sind die verfügbaren Konfigurationsschlüssel, Wer
 | Feed für Startbildschirm aktivieren | bool | FALSE | Aktiviert den Feed des Startbildschirms, der durch Wischen nach links angezeigt werden kann. Dieser Feed zeigt eine andere Art von Inhalten an, z.B. News, Kalender, häufig verwendete Apps, die Karte des Sprach-Assistenten Cortana usw. Wenn Sie dies aktivieren, kann der Endbenutzer zum Feed navigieren, indem er auf dem Startbildschirm nach links wischt. |
 | Übersichtsmodus aktivieren | bool | FALSE | Ermöglicht es Endbenutzern, auf dem Startbildschirm verschiedene Seiten hinzuzufügen oder davon zu entfernen, auf die durch Wischen nach rechts auf dem Standardbildschirm zugegriffen werden kann. Wenn Sie dies aktivieren, kann der Endbenutzer rechts neben der Standardseite des Startbildschirms Seiten hinzufügen, die Standardseite ändern und auf die Einstellungen von Managed Home Screen zugreifen. |
 | Gerätetelemetrie aktivieren | bool | FALSE | Ermöglicht es, dass die gesamte Telemetrie für Managed Home Screen erfasst wird. Wenn Sie dies aktivieren, kann Microsoft die Nutzungstelemetriedaten des Geräts erfassen, z.B., wie oft eine bestimmte App auf dem jeweiligen Gerät gestartet wurde. |
-| Anwendungen für die Whitelist festlegen | bundleArray | FALSE | Ermöglicht es Ihnen, aus den auf dem Gerät installierten Apps diejenige Gruppe von Apps zu definieren, die auf dem Startbildschirm sichtbar sein soll. Sie können die Apps definieren, indem Sie den App-Paketnamen der Apps eingeben, die Sie sichtbar machen möchten. So würden Sie Einstellungen beispielsweise mit „com.android.settings“ auf dem Startbildschirm sichtbar machen. Die Apps, die Sie der Zulassungsliste in diesem Abschnitt hinzufügen, sollten bereits auf dem Gerät installiert sein, damit sie auf dem Startbildschirm sichtbar sind. |
+| Festlegen von Anwendungen für die Zulassungsliste | bundleArray | FALSE | Ermöglicht es Ihnen, aus den auf dem Gerät installierten Apps diejenige Gruppe von Apps zu definieren, die auf dem Startbildschirm sichtbar sein soll. Sie können die Apps definieren, indem Sie den App-Paketnamen der Apps eingeben, die Sie sichtbar machen möchten. Mit „com.microsoft.emmx“ beispielsweise können Einstellungen auf dem Startbildschirm angezeigt werden. Die Apps, die Sie der Zulassungsliste in diesem Abschnitt hinzufügen, sollten bereits auf dem Gerät installiert sein, damit sie auf dem Startbildschirm sichtbar sind. |
 | Angeheftete Weblinks festlegen | bundleArray | FALSE | Ermöglicht es Ihnen, Websites als Schnellstartsymbole auf dem Startbildschirm anzuheften. Bei dieser Konfiguration können Sie die URL definieren und auf dem Startbildschirm hinzufügen, damit sie der Endbenutzer mit einem einfachen Tippen im Browser starten kann. |
 | Suchleiste aktivieren | bool | FALSE | Aktiviert die Suchleiste auf dem Startbildschirm. Wenn Sie dies aktivieren, wird Benutzern des Gerät die Suchleiste auf dem Startbildschirm angezeigt. Darin können sie alles das eingeben, was sie im Web suchen möchten. |
 | App „Einstellungen“ deaktivieren | bool | FALSE | Deaktiviert die Seite „Einstellungen“ für Managed Home Screen. Wenn Sie dies deaktivieren, kann der Endbenutzer des Geräts nicht auf die Einstellungen von Managed Home Screen zugreifen. |
-| Bildschirmschoner aktivieren | bool | FALSE | Dient zum Aktivieren (oder Nichtaktivieren) des Bildschirmschonermodus. Wenn „true“ festgelegt wird, können Sie **screen_saver_image**, **screen_saver_show_time**,**inactive_time_to_show_screen_saver** und **media_detect_screen_saver** konfigurieren. |
-| Bild für Bildschirmschoner | string |   | Legen Sie die URL für das Bildschirmschonerbild fest. Wurde keine URL festgelegt, zeigen Geräte den Standardbildschirm an, wenn der Bildschirmschoner aktiviert wird.  |
-| Anzeigezeit für den Bildschirmschoner | integer | 0 | Bietet die Möglichkeit, die Zeitspanne in Sekunden festzulegen, während der das Gerät den Bildschirmschoner im Bildschirmschonermodus anzeigt. Wenn „0“ festgelegt wurde, wird der Bildschirmschoner so lange im Bildschirmschonermodus angezeigt, bis das Gerät inaktiv wird.  |
+| Bildschirmschoner aktivieren | bool | FALSE | Dient dazu, den Bildschirmschonermodus zu aktivieren bzw. zu deaktivieren. Wenn „true“ festgelegt wird, können Sie **screen_saver_image**, **screen_saver_show_time**,**inactive_time_to_show_screen_saver** und **media_detect_screen_saver** konfigurieren. |
+| Bild für Bildschirmschoner | string |   | Hiermit legen Sie die URL für das Bildschirmschonerbild fest. Wurde keine URL festgelegt, zeigen Geräte das Standardbild an, wenn der Bildschirmschoner aktiviert wird. Das Standardbild zeigt das Symbol der Managed Home Screen-App.  |
+| Anzeigezeit für den Bildschirmschoner | integer | 0 | Bietet die Möglichkeit, die Zeitspanne in Sekunden festzulegen, während der das Gerät im Bildschirmschonermodus den Bildschirmschoner anzeigt. Wenn „0“ festgelegt wurde, wird der Bildschirmschoner so lange im Bildschirmschonermodus angezeigt, bis das Gerät inaktiv wird.  |
 | Inaktive Zeit zum Aktivieren des Bildschirmschoners | integer | 30 | Die Anzahl von Sekunden, während der das Gerät inaktiv ist, bevor der Bildschirmschoner ausgelöst wird. Wenn „0“ festgelegt wurde, wechselt das Gerät niemals in den Bildschirmschonermodus. |
-| Medienerkennung vor Anzeige des Bildschirmschoners | bool | TRUE | Wählen Sie aus, ob auf dem Gerätebildschirm der Bildschirmschoner angezeigt werden soll, wenn auf dem Gerät Audio/Video wiedergegeben wird. Wenn „true“ festgelegt wurde, gibt das Gerät – unabhängig vom Wert in **inactive_time_to_show_scree_saver** – kein Audio/Video wieder. Wenn „false“ festgelegt wurde, zeigt der Gerätebildschirm den Bildschirmschoner entsprechend dem Wert an, der in **inactive_time_to_show_screen_saver** festgelegt wurde.   |
+| Medienerkennung vor Anzeige des Bildschirmschoners | bool | TRUE | Wählen Sie aus, ob auf dem Gerätebildschirm der Bildschirmschoner angezeigt werden soll, wenn auf dem Gerät Audio- oder Videodaten wiedergegeben werden. Wenn „true“ festgelegt wurde, gibt das Gerät – unabhängig vom Wert in **inactive_time_to_show_scree_saver** – kein Audio/Video wieder. Bei „false“ zeigt der Gerätebildschirm den Bildschirmschoner entsprechend dem Wert an, der in **inactive_time_to_show_screen_saver** festgelegt wurde.   |
 | Virtuelle Startschaltfläche aktivieren | bool | FALSE | Legen Sie diese Einstellung auf `True` fest, damit der Endbenutzer auf eine Startschaltfläche für Managed Home Screen zugreifen kann, über die er aus seiner aktuellen Aufgabe zu Managed Home Screen zurückkehren wird.  |
 | Typ der virtuellen Startschaltfläche | string | swipe_up | Verwenden Sie **swipe_up** für den Zugriff auf die Startschaltfläche mit einem Wischen nach oben. Verwenden Sie **float** für den Zugriff auf eine angeheftete persistente Startschaltfläche, die der Endbenutzer auf dem Bildschirm verschieben kann. |
 | Anzeigeleiste für Akku- und Signalstärke | bool | True  | Wenn Sie diese Einstellung auf `True` festlegen, wird die Anzeigeleiste für Akku- und Signalstärke eingeblendet. |
 | Kennwort für Aufgabensperrmodus beenden | string |   | Geben Sie einen 4- bis 6-stelligen Code ein, der für die vorübergehende Aufhebung des Aufgabensperrmodus zur Problembehandlung verwendet werden soll. |
 | WLAN-Einstellung anzeigen | bool | FALSE | Wenn Sie diese Einstellung auf `True` festlegen, kann der Endbenutzer WLAN aktivieren oder deaktivieren oder aber eine Verbindung mit verschiedenen WLAN-Netzwerken herstellen.  |
 | Bluetooth-Einstellung anzeigen | bool | FALSE | Wenn Sie diese Einstellung auf `True` festlegen, kann der Endbenutzer Bluetooth aktivieren oder deaktivieren und eine Verbindung mit verschiedenen Bluetooth-fähigen Geräten herstellen.   |
+| Anwendungen im Ordner sind nach Namen sortiert | bool | TRUE | Wenn Sie diese Einstellung auf `False` festlegen, werden all Elemente in einem Ordner in der Reihenfolge angezeigt, in der sie angegeben wurden. Andernfalls werden sie alphabetisch angezeigt.   |
+| Anwendungsreihenfolge aktiviert | bool | FALSE | Wenn Sie diese Einstellung auf `True` festlegen, kann die Reihenfolge von Anwendungen, Weblinks und Ordner auf dem Managed Home Screen festgelegt werden. Nachdem Sie die Einstellung aktiviert haben, legen Sie die Reihenfolge mit **app_order** fest. So können Endbenutzer Bluetooth aktivieren oder deaktivieren und eine Verbindung mit verschiedenen Bluetooth-fähigen Geräten herstellen.   |
+| Anwendungsreihenfolge | bundleArray | FALSE | Hiermit können Sie die Reihenfolge von Anwendungen, Weblinks und Ordnern auf dem Managed Home Screen festlegen. Um diese Einstellung zu verwenden, muss **Startbildschirm sperren** aktiviert, **Rastergröße festlegen** definiert und **Anwendungsreihenfolge aktiviert** auf `True` festgelegt sein.   |
 
 ## <a name="enter-json-data"></a>Eingeben von JSON-Daten
 
@@ -111,10 +114,6 @@ Dies ist ein Beispiel für ein JSON-Skript, in dem alle verfügbaren Konfigurati
     "kind": "androidenterprise#managedConfiguration",
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
-        {
-            "key": "grid_size",
-            "valueString": "Auto"
-        },
         {
             "key": "keep_page_header",
             "valueBool": true
@@ -236,6 +235,87 @@ Dies ist ein Beispiel für ein JSON-Skript, in dem alle verfügbaren Konfigurati
         {
             "key": "show_bluetooth_setting",
             "valueBool": false
+        },
+        {
+            "key": "grid_size",
+            "valueString": "4;5"
+        },
+        {
+            "key": "app_order_enabled",
+            "valueBool": true
+        },
+        {
+            "key": "apps_in_folder_ordered_by_name",
+            "valueBool": true
+        },
+        {
+            "key": "app_orders",
+            "valueBundleArray": [
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.Microsoft.emmx"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 1
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "folder_name",
+                            "valueString": "Work"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "managed_folder"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 2
+                        }
+                    ]
+                },
+                {
+                    "managedProperty": [
+                        {
+                            "key": "package",
+                            "valueString": "com.microsoft.launcher.enterprise"
+                        },
+                        {
+                            "key": "type",
+                            "valueString": "application"
+                        },
+                        {
+                            "key": "class",
+                            "valueString": "com.microsoft.launcher.launcher"
+                        },
+                        {
+                            "key": "container",
+                            "valueInteger": 1
+                        },
+                        {
+                            "key": "position",
+                            "valueInteger": 3
+                        }
+                    ]
+                }
+            ]
         },
         {
             "key": "managed_folders",

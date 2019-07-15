@@ -1,7 +1,7 @@
 ---
-title: Löschen von Daten mithilfe von Zugriffsaktionen für App-Schutzrichtlinien
+title: Löschen von Daten über durch App-Schutzrichtlinien festgelegte bedingte Startaktionen
 titleSuffix: Microsoft Intune
-description: Erfahren Sie, wie Sie Daten mithilfe von Zugriffsaktionen für App-Schutzrichtlinien in Microsoft Intune selektiv löschen.
+description: Erfahren Sie, wie Sie Daten mithilfe von bedingten Startaktionen, die durch App-Schutzrichtlinien festgelegt wurden, in Microsoft Intune selektiv löschen.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,26 +17,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd323fce7f7bdbf17697c82935a9d2d5f47bb7ee
-ms.sourcegitcommit: 6e07c35145f70b008cf170bae57143248a275b67
+ms.openlocfilehash: 65115f6520122cd4b3429411db67052481984617
+ms.sourcegitcommit: cb4e71cd48311ea693001979ee59f621237a6e6f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66804683"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67558446"
 ---
-# <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Selektives Löschen von Daten mithilfe von Zugriffsaktionen für App-Schutzrichtlinien in Intune
+# <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Selektives Löschen von Daten in Intune über durch App-Schutzrichtlinien festgelegte bedingte Startaktionen
 
 Mithilfe von App-Schutzrichtlinien von Intune können Sie Einstellungen konfigurieren, um Endbenutzern den Zugriff auf eine Unternehmens-App oder ein Unternehmenskonto zu verwehren. Diese Einstellungen sind für die Anforderungen für die Datenverschiebung und den Zugriff, die von Ihrem Unternehmen festgelegt werden, z.B. für Geräte mit Jailbreak und Mindestversionen für das Betriebssystem.
  
 Sie können diese Einstellungen verwenden, um die Unternehmensdaten bei Nichtkonformität explizit vom Benutzergerät zu löschen. Für einige Einstellungen können Sie mehrere Aktionen konfigurieren, z.B. das Blockieren des Zugriffs und das Löschen von Daten basierend auf verschiedenen festgelegten Werten.
 
-## <a name="create-an-app-protection-policy-using-access-actions"></a>Erstellen einer App-Schutzrichtlinie mithilfe von Zugriffsaktionen
+## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Erstellen einer App-Schutzrichtlinie mithilfe von bedingten Startaktionen
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 3. Klicken Sie im Bereich **Intune** auf **Client-Apps** > **App-Schutzrichtlinien**.
 4. Klicken Sie auf **Richtlinie hinzufügen** (Alternativ können Sie eine vorhandene Richtlinie bearbeiten). 
 5. Klicken Sie auf **Erforderliche Einstellungen konfigurieren**, um die Liste der verfügbaren Einstellungen anzuzeigen, die für die Richtlinie konfiguriert werden können. 
-6. Wenn Sie im Bereich „Einstellungen“ nach unten scrollen, finden Sie einen Abschnitt namens **Zugriffsaktionen** mit einer bearbeitbaren Tabelle.
+6. Wenn Sie im Bereich „Einstellungen“ nach unten scrollen, finden Sie einen Abschnitt namens **Bedingter Start** mit einer Tabelle, die Sie bearbeiten können.
 
     ![Screenshot der Zugriffsaktionen für den Intune-App-Schutz](./media/apps-selective-wipe-access-actions01.png)
 
@@ -52,13 +52,13 @@ Die Tabelle für die Einstellungen der App-Schutzrichtlinien enthält Spalten f�
 
 ### <a name="ios-policy-settings"></a>iOS-Richtlinieneinstellungen
 Für iOS können Sie mithilfe der Dropdownliste **Einstellung** Aktionen für die folgenden Einstellungen konfigurieren:
--  Maximal zulässige PIN-Versuche
--  Offline-Toleranzperiode
--  Geräte mit Jailbreak/entfernten Nutzungsbeschränkungen
--  Mindestversion für Betriebssystem
--  Mindestversion für App
--  Mindestversion für SDK
--  Gerätemodelle
+- Maximal zulässige PIN-Versuche
+- Offline-Toleranzperiode
+- Geräte mit Jailbreak/entfernten Nutzungsbeschränkungen
+- Mindestversion für Betriebssystem
+- Mindestversion für App
+- Mindestversion für SDK
+- Gerätemodelle
 
 Geben Sie eine durch Semikolons getrennte Liste der iOS-Modellbezeichner ein, um die **Gerätemodelle**-Einstellung zu verwenden. Sie finden iOS-Modellbezeichner in der Spalte „Device Type“ (Gerätetyp) in der [Dokumentation für HockeyApp Support](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
 Beispieleingabe: *iPhone5,2;iPhone5,3*
@@ -74,15 +74,15 @@ Wenn ein Konflikt zwischen zwei App-Schutzrichtlinien für konfigurierte Werte e
 ### <a name="android-policy-settings"></a>Android-Richtlinieneinstellungen
 
 Für Android können Sie mithilfe der Dropdownliste **Einstellung** Aktionen für die folgenden Einstellungen konfigurieren:
--  Maximal zulässige PIN-Versuche
--  Offline-Toleranzperiode
--  Geräte mit Jailbreak/entfernten Nutzungsbeschränkungen
--  Mindestversion für Betriebssystem
--  Mindestversion für App
--  Mindestversion für den Patch
--  Gerätehersteller
--  SafetyNet-Gerätenachweis
--  Bedrohungsüberprüfung für Apps
+- Maximal zulässige PIN-Versuche
+- Offline-Toleranzperiode
+- Geräte mit Jailbreak/entfernten Nutzungsbeschränkungen
+- Mindestversion für Betriebssystem
+- Mindestversion für App
+- Mindestversion für den Patch
+- Gerätehersteller
+- SafetyNet-Gerätenachweis
+- Bedrohungsüberprüfung für Apps
 
 Geben Sie eine durch Semikolons getrennte Liste der Android-Hersteller ein, um die Einstellung **Gerätehersteller** zu verwenden. Den Android-Gerätehersteller finden Sie in den Geräteeinstellungen.<br>
 Beispieleingabe: *Hersteller A;Hersteller B* 
@@ -105,9 +105,9 @@ Die Tabelle enthält standardmäßig gefüllte Zeilen als Einstellungen, die fü
 Wählen Sie eine Einstellung aus der Dropdownliste unter der Spalte **Einstellung** aus, um diese zu konfigurieren. Sobald eine Einstellung ausgewählt ist, wird das bearbeitbare Textfeld unter der Spalte **Wert** in der gleichen Zeile aktiviert, wenn ein Wert festgelegt werden muss. Außerdem wird die Dropdownliste unter der Spalte **Aktion** aktiviert, die eine Reihe von bedingten Startaktionen enthält, die für die Einstellung anwendbar sind. 
 
 Die folgende Liste enthält häufig verwendete Aktionen:
--  **Zugriff blockieren:** Blockiert den Zugriff auf die Unternehmens-App für den Endbenutzer.
--  **Daten löschen:** Löschen der Daten vom Gerät des Endbenutzers.
--  **Warnung:** Angeben eines Dialogfelds mit einer Warnmeldung für den Endbenutzer.
+- **Zugriff blockieren:** Blockiert den Zugriff auf die Unternehmens-App für den Endbenutzer.
+- **Daten löschen:** Löschen der Daten vom Gerät des Endbenutzers.
+- **Warnung:** Angeben eines Dialogfelds mit einer Warnmeldung für den Endbenutzer.
 
 In einigen Fällen, z.B. bei der Einstellung **Mindestversion für Betriebssystem**, können Sie die Einstellung konfigurieren, um alle anwendbaren Aktionen basierend auf verschiedenen Versionsnummern auszuführen. 
 

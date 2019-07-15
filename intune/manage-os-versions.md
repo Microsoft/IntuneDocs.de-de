@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b490d5ff083d344a1b39d27a2298503bdfa1f130
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: bc785e7f714320d410d20e254125858f44131677
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044918"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67548751"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Verwalten von Betriebssystemversionen mit Intune
 Für aktuelle mobile Plattformen und Desktopplattformen werden ständig größere Updates, Patches und neue Versionen herausgegeben. Es gibt Steuerelemente, mit denen Sie Updates und Patches unter Windows vollständig verwalten können. Andere Plattformen wie iOS und Android verlangen, dass sich die Benutzer an dem Vorgang beteiligen.  Microsoft Intune verfügt über Funktionen, mit denen Sie Ihre Betriebssystemversionsverwaltung plattformübergreifend strukturieren können.
@@ -61,7 +61,7 @@ Weitere Informationen finden Sie unter [Erste Schritte bei der Gerätekonformit�
 Mithilfe von Intune-App-Schutzrichtlinien und Zugriffseinstellungen für die mobile Anwendungsverwaltung können Sie Mindestversionen von Betriebssystemen auf Anwendungsebene festlegen. Dadurch können Sie die Benutzer über Updates informieren und dazu ermutigen bzw. verpflichten, ihr Betriebssystem auf eine vorgegebene Mindestversion zu aktualisieren.
  
 Dafür gibt es zwei Optionen: 
-- **Warnungen** informieren Benutzer darüber, dass sie ein Upgrade vornehmen sollten, wenn sie eine Anwendung, für die Anwendungsschutzrichtlinien oder Zugriffseinstellungen für die mobile Anwendungsverwaltung gelten, auf einem Gerät öffnen, auf dem eine Betriebssystemversion installiert ist, die nicht der vorgegebenen Version entspricht. Der Zugriff auf die App und die Organisationsdaten wird nicht eingeschränkt.
+- **Warnungen** informieren Benutzer darüber, dass sie ein Upgrade durchführen sollten, wenn sie eine App, für die eine Anwendungsschutzrichtlinie oder Zugriffseinstellungen für die mobile Anwendungsverwaltung gelten, auf einem Gerät mit einer Betriebssystemversion öffnen, die niedriger ist als die vorgegebene Version. Der Zugriff auf die App und die Organisationsdaten wird nicht eingeschränkt.
   ![Darstellung der Warnung wegen erforderlichen Android-Updates](./media/os-version-update-warning.png) 
 
 - **Blockierungen** informieren Benutzer darüber, dass sie ein Upgrade vornehmen müssen, wenn sie eine Anwendung, für die Anwendungsschutzrichtlinien oder Zugriffseinstellungen für die mobile Anwendungsverwaltung gelten, auf einem Gerät öffnen, auf dem eine Betriebssystemversion installiert ist, die nicht der vorgegebenen Version entspricht. Der Zugriff auf die App und die Organisationsdaten wird verwehrt.
@@ -77,7 +77,7 @@ Sie können die Funktionen von Intune, die in diesem Artikel beschrieben werden,
 - **Schritt 1**: Verwenden Sie Registrierungseinschränkungen, um die neue Betriebssystemversion V2 als Mindestversion festzulegen, die zum Registrieren des Geräts erforderlich ist. Damit wird gewährleistet, dass neue Benutzergeräte zum Zeitpunkt der Registrierung kompatibel sind.
 - **Schritt 2a:** Verwenden Sie die Intune-App-Schutzrichtlinien, um Benutzer zu warnen, wenn eine App geöffnet oder fortgesetzt wird, für die eine neue Betriebssystemversion V2 erforderlich ist.
 - **Schritt 2b:** Verwenden Sie Gerätekompatibilitätsrichtlinien, um eine neue Betriebssystemversion als Mindestversion für ein Gerät festzulegen, damit es kompatibel ist. Verwenden Sie **Aktionen** bei Kompatibilitätsverstößen, um eine siebentägige Toleranzperiode einzuräumen und den Benutzer eine E-Mail-Benachrichtigung zukommen zu lassen, in der die Zeitachse und die Anforderungen angegeben werden.
-  -  In diesen Richtlinien, die den Benutzern per E-Mail, im Intune-Unternehmensportal, und beim Öffnen einer App, für die die App-Schutzrichtlinie aktiviert ist, übermittelt werden, wird darüber informiert, dass vorhandene Geräte aktualisiert werden müssen.
+  - In diesen Richtlinien, die den Benutzern per E-Mail, im Intune-Unternehmensportal, und beim Öffnen einer App, für die die App-Schutzrichtlinie aktiviert ist, übermittelt werden, wird darüber informiert, dass vorhandene Geräte aktualisiert werden müssen.
   - Sie können einen Kompatibilitätsbericht ausführen, um Benutzer zu ermitteln, deren Geräte nicht kompatibel sind. 
 - **Schritt 3a:** Verwenden Sie die Intune-App-Schutzrichtlinien, um Benutzer beim Öffnen oder Fortsetzen einer App zu blockieren, wenn das Gerät die neuen Betriebssystemversion V2 nicht ausführt.
 - **Schritt 3b:** Verwenden Sie Gerätekompatibilitätsrichtlinien, um eine neue Betriebssystemversion als Mindestversion für ein Gerät festzulegen, damit es kompatibel ist.

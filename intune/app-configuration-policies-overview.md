@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/16/2019
+ms.date: 07/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec65325592fbddc29e75b1d84c94e67558faab62
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 10dad24ee41f63dcc304d95e9b733f7de3f1b71a
+ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494052"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67649024"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>App-Konfigurationsrichtlinien für Microsoft Intune
 
-Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Konfigurationseinstellungen für eine iOS- oder Android-App anzugeben. Mit diesen Konfigurationseinstellungen kann eine App angepasst werden. Sie weisen diese Konfigurationsrichtlinien nicht direkt Benutzern und Geräten zu. Stattdessen verknüpfen Sie eine Konfigurationsrichtlinie mit einer App und weisen dann die App zu. Die Konfigurationsrichtlinieneinstellungen werden verwendet, wenn die App danach sucht (in der Regel beim ersten Ausführen).
+Verwenden Sie App-Konfigurationsrichtlinien in Microsoft Intune, um Konfigurationseinstellungen für eine iOS- oder Android-App anzugeben. Bei Verwendung dieser Konfigurationseinstellungen kann eine App mithilfe eines Branchenstandardverfahrens für die App-Konfiguration und -Verwaltung angepasst werden. Die Konfigurationsrichtlinieneinstellungen werden verwendet, wenn die App danach sucht (in der Regel beim ersten Ausführen).
 
 Sie können einer Gruppe von Benutzern und Geräten mithilfe einer Kombination aus Ein- und Ausschlusszuweisungen eine App-Konfigurationsrichtlinie zuweisen. Nachdem Sie eine App-Konfigurationsrichtlinie hinzugefügt haben, können Sie die Zuweisungen für die App-Konfigurationsrichtlinie festlegen. Wenn Sie die Zuweisungen für die Richtlinie festlegen, können Sie entscheiden, ob Gruppen von Benutzern ein- und ausgeschlossen werden, für welche die Richtlinie angewendet wird. Wenn Sie entscheiden, eine oder mehrere Gruppen einzuschließen, können Sie bestimmte einzuschließende Gruppen oder integrierte Gruppen auswählen. Zu den integrierten Gruppen zählen **Alle Benutzer**, **Alle Geräte** und **Alle Benutzer und alle Geräte**.
 
@@ -52,9 +52,11 @@ Ihnen stehen zwei Optionen für das Verwenden der App-Konfigurationen mit Intune
 
 ## <a name="apps-that-support-app-configuration"></a>Apps, die die App-Konfiguration unterstützen
 
-Sie können App-Konfigurationsrichtlinien für Apps verwenden, die diese unterstützen. Für die Unterstützung der App-Konfiguration in Intune müssen Apps dafür geschrieben sein, die Verwendung von App-Konfigurationen zu unterstützen. Wenden Sie sich für Details an Ihren App-Anbieter.
+### <a name="managed-devices"></a>Verwaltete Geräte
+Sie können App-Konfigurationsrichtlinien für Apps verwenden, die diese unterstützen. Zur Unterstützung der App-Konfiguration in Intune müssen Apps so programmiert sein, dass sie die Verwendung von App-Konfigurationen unterstützen, die von der [Appconfig-Community](https://www.appconfig.org/members) definiert wurden. Wenden Sie sich für Details an Ihren App-Anbieter.
 
-Sie können Ihre branchenspezifischen Apps dafür vorbereiten, indem Sie entweder das Intune App SDK in die App integrieren oder die App nach der Entwicklung damit umschließen. Das für iOS und Android verfügbare Intune App SDK aktiviert Ihre App für Intune-App-Konfigurationsrichtlinien. Es zielt darauf ab, die vom App-Entwickler vorzunehmenden Codeänderungen zu minimieren. Weitere Informationen finden Sie unter [Übersicht über das Intune App SDK](app-sdk.md).
+### <a name="managed-apps"></a>Verwaltete Apps
+Sie können Ihre branchenspezifischen Apps dafür vorbereiten, indem Sie entweder das Intune App SDK in die App integrieren oder die App nach der Entwicklung damit umschließen. Das für iOS und Android verfügbare Intune App SDK aktiviert Ihre App für Konfigurationsrichtlinien für den Intune-App-Schutz. Es zielt darauf ab, die vom App-Entwickler vorzunehmenden Codeänderungen zu minimieren. Weitere Informationen finden Sie unter [Übersicht über das Intune App SDK](app-sdk.md).
 
 ## <a name="graph-api-support-for-app-configuration"></a>Graph-API-Unterstützung für die App-Konfiguration
 
