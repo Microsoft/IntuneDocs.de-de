@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce08545931d3580ce5ae524b1023d2b734b88f7b
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 1dc78f8126e0fa9c65fdbe70cfd909da70391e3e
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373651"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884514"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Einrichten eines Pro-App-VPN für iOS-Geräte in Intune
 
@@ -150,16 +150,16 @@ Sobald Ihr Pro-App-VPN eingerichtet und Ihrer App zugeordnet ist, überprüfen S
 
 ### <a name="before-you-attempt-to-connect"></a>Bevor Sie eine Verbindung herstellen
 
- - Stellen Sie sicher, dass Sie alle der oben erwähnten Richtlinien derselben Gruppe bereitstellen. Ansonsten funktioniert das Pro-App-VPN nicht.
- - Wenn Sie die VPN-App Pulse Secure oder eine benutzerdefinierte VPN-Client-App verwenden, können Sie das Tunneln auf App- oder auf Paketebene verwenden. Legen Sie für Tunneln auf App-Ebene den Wert **ProviderType** auf **app-proxy** oder für Tunneln auf Paketebene auf **packet-tunnel** fest. Informieren Sie sich in der Dokumentation Ihres VPN-Anbieters, um sicherzustellen, dass Sie den richtigen Wert verwenden.
+- Stellen Sie sicher, dass Sie alle der oben erwähnten Richtlinien derselben Gruppe bereitstellen. Ansonsten funktioniert das Pro-App-VPN nicht.
+- Wenn Sie die VPN-App Pulse Secure oder eine benutzerdefinierte VPN-Client-App verwenden, können Sie das Tunneln auf App- oder auf Paketebene verwenden. Legen Sie für Tunneln auf App-Ebene den Wert **ProviderType** auf **app-proxy** oder für Tunneln auf Paketebene auf **packet-tunnel** fest. Informieren Sie sich in der Dokumentation Ihres VPN-Anbieters, um sicherzustellen, dass Sie den richtigen Wert verwenden.
 
 ### <a name="connect-using-the-per-app-vpn"></a>Herstellen einer Verbindung mithilfe des Pro-App-VPNs
 
 Überprüfen Sie die Zero Touch-Funktion, indem Sie eine Verbindung herstellen, ohne dabei das VPN auswählen oder Ihre Anmeldeinformationen eingeben zu müssen. Die Zero Touch-Funktion bedeutet Folgendes:
 
- - Das Gerät fordert den Benutzer nicht auf, dem VPN-Server zu vertrauen. Dem Benutzer wird also nicht das Dialogfeld **Dynamic Trust** (Dynamische Vertrauensstellung) angezeigt.
- - Der Benutzer muss keine Anmeldeinformationen eingeben.
- - Das Benutzergerät wird mit dem VPN verbunden, sobald der Benutzer eine der verknüpften Apps öffnet.
+- Das Gerät fordert den Benutzer nicht auf, dem VPN-Server zu vertrauen. Dem Benutzer wird also nicht das Dialogfeld **Dynamic Trust** (Dynamische Vertrauensstellung) angezeigt.
+- Der Benutzer muss keine Anmeldeinformationen eingeben.
+- Das Benutzergerät wird mit dem VPN verbunden, sobald der Benutzer eine der verknüpften Apps öffnet.
 
 <!-- ## Troubleshooting the per-app VPN
 

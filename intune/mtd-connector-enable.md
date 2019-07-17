@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45bcafad3dc6c2a407e1b7b88e07f4021e8b5a36
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a2084ad1ec0deefd24c0d61f69d99ee11149af96
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528296"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882730"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Aktivieren Sie den Mobile Threat Defense-Connector in Intune.
 
@@ -50,10 +50,10 @@ Während des Mobile Threat Defense-Setups (MTD) haben Sie eine Richtlinie zum Kl
 Sie können entscheiden, welche MTD-Optionen Sie aktivieren müssen, um die Anforderungen Ihrer Organisation zu erfüllen. Nachfolgend finden Sie weitere Details:
 
 - **Herstellen einer Verbindung zwischen Android-Geräten ab Version 4.1 mit [MTD-Partnername] for Work MTD:** Wenn Sie diese Option aktivieren, können Geräte unter Android 4.1 und höher Sicherheitsrisiken an Intune melden.
-    - **Als nicht konform markieren, wenn keine Daten empfangen werden:** Wenn Intune keine Daten über ein Gerät auf dieser Plattform vom MTD-Partner empfängt, wird das Gerät als nicht konform betrachtet.
+  - **Als nicht konform markieren, wenn keine Daten empfangen werden:** Wenn Intune keine Daten über ein Gerät auf dieser Plattform vom MTD-Partner empfängt, wird das Gerät als nicht konform betrachtet.
 <br></br>
 - **Herstellen einer Verbindung zwischen iOS-Geräten ab Version 8.0 mit [MTD-Partnername] for Work MTD:** Wenn Sie diese Option aktivieren, können Geräte unter iOS 8.0 und höher Sicherheitsrisiken an Intune melden.
-    - **Als nicht konform markieren, wenn keine Daten empfangen werden:** Wenn Intune keine Daten über ein Gerät auf dieser Plattform vom MTD-Partner empfängt, wird das Gerät als nicht konform betrachtet.
+  - **Als nicht konform markieren, wenn keine Daten empfangen werden:** Wenn Intune keine Daten über ein Gerät auf dieser Plattform vom MTD-Partner empfängt, wird das Gerät als nicht konform betrachtet.
 <br></br>
 - **Aktivieren der App-Synchronisierung für iOS-Geräte:** Ermöglicht diesem Mobile Threat Defense-Partner, Metadaten zur Bedrohungsanalyse von iOS-Anwendungen aus Intune anzufordern.
 

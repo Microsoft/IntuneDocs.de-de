@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02dcaa26e51f3b8c4632aed0fbc87131cc617532
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572280"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884874"
 ---
 # <a name="create-a-design"></a>Erstellen eines Entwurfs
 
@@ -49,47 +49,47 @@ Ihre aktuelle Umgebung kann Entwurfsentscheidungen beeinflussen. Sie sollte doku
 
 - **Identität in der Cloud**
 
-    - Verwenden Sie DirSync oder Azure Active Directory (Azure AD) Connect?
+  - Verwenden Sie DirSync oder Azure Active Directory (Azure AD) Connect?
 
-    - Ist Ihre Umgebung im Verbund zusammengefasst?
+  - Ist Ihre Umgebung im Verbund zusammengefasst?
 
-    - Ist Multi-Factor Authentication (MFA) aktiviert?
+  - Ist Multi-Factor Authentication (MFA) aktiviert?
 
 - **E-Mail-Umgebung**
 
-    - Verwenden Sie Exchange? Ist es eine lokale Installation oder eine Cloudversion?
+  - Verwenden Sie Exchange? Ist es eine lokale Installation oder eine Cloudversion?
 
-    - Befinden Sie sich mitten in einem Projekt zur Migration von Exchange zur Cloud?
+  - Befinden Sie sich mitten in einem Projekt zur Migration von Exchange zur Cloud?
 
 - **Aktuelle Lösung für die mobile Geräteverwaltung (MDM)**
 
-    - Verwenden Sie zurzeit andere MDM-Lösungen?
+  - Verwenden Sie zurzeit andere MDM-Lösungen?
 
-    - Welche MDM-Lösungen verwenden Sie für Unternehmens- und BYOD-Anwendungsszenarios?
+  - Welche MDM-Lösungen verwenden Sie für Unternehmens- und BYOD-Anwendungsszenarios?
 
-    - Welche Funktionen verwenden Sie (z.B. App-Geräteeinstellungen und WLAN-Konfigurationen)?
+  - Welche Funktionen verwenden Sie (z.B. App-Geräteeinstellungen und WLAN-Konfigurationen)?
 
-    - Welche Geräteplattformen werden unterstützt?
+  - Welche Geräteplattformen werden unterstützt?
 
-    - Welche Gruppen und wie viele Benutzer verwenden die MDM-Lösung?
+  - Welche Gruppen und wie viele Benutzer verwenden die MDM-Lösung?
 
 - **Zertifikatlösung**
 
-    - Haben Sie eine Zertifikatlösung implementiert?
+  - Haben Sie eine Zertifikatlösung implementiert?
 
-    - Welche Art von Zertifikaten verwenden Sie?
+  - Welche Art von Zertifikaten verwenden Sie?
 
 - **Systemverwaltung**
 
-    - Wie verwalten Sie Ihre PC- und Serverumgebung?
+  - Wie verwalten Sie Ihre PC- und Serverumgebung?
 
-    - Verwenden Sie System Center Configuration Manager? Verwenden Sie eine Drittanbieterplattform zur Systemverwaltung?
+  - Verwenden Sie System Center Configuration Manager? Verwenden Sie eine Drittanbieterplattform zur Systemverwaltung?
 
 - **VPN-Lösung**
 
-    - Was ist Ihre VPN-Lösung?
+  - Was ist Ihre VPN-Lösung?
 
-    - Verwenden Sie sie sowohl für Unternehmens- als auch für BYOD-Anwendungsszenarios?
+  - Verwenden Sie sie sowohl für Unternehmens- als auch für BYOD-Anwendungsszenarios?
 
 Stellen Sie beim Erfassen der aktuellen MDM-Umgebung sicher, dass Sie alle Projekte oder andere Pläne berücksichtigen, Auswirkungen auf Ihre Umgebung haben könnten. Im Folgenden sehen Sie ein Beispiel für eine Möglichkeit zum Erfassen der aktuellen Umgebung beim Erstellen Ihres Intune-Entwurfs:
 

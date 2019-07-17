@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cb08757732aa5cad08ed0a4b535fb20c0aa1df0
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 703509c316a22995d26223f6c386de0a2ec66c31
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528263"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882715"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Bestimmen von Anforderungen von Anwendungsfallszenarien
 
@@ -50,21 +50,21 @@ Sie können [eine Vorlage der obigen Tabelle herunterladen](https://gallery.tech
 Hier sind einige weitere Beispiele, die in der Spalte „Anforderungen“ verwendet werden können:
 
 - **Sichere E-Mail**
-    - Bedingter Zugriff für Exchange Online/Exchange lokal
-    - Outlook-App-Schutzrichtlinien
+  - Bedingter Zugriff für Exchange Online/Exchange lokal
+  - Outlook-App-Schutzrichtlinien
 
 - **Geräteeinstellungen**
-    - PIN-Einstellung mit vier oder sechs Zeichen
-    - Cloudsicherung einschränken
+  - PIN-Einstellung mit vier oder sechs Zeichen
+  - Cloudsicherung einschränken
 
 - **Profile**
-    - WLAN
-    - VPN
-    - E-Mail (Windows 10 Mobile)
+  - WLAN
+  - VPN
+  - E-Mail (Windows 10 Mobile)
 
 - **Apps**
-    - Office 365 mit App-Schutzrichtlinien
-    - Branchenspezifisch (LOB) mit App-Schutzrichtlinien
+  - Office 365 mit App-Schutzrichtlinien
+  - Branchenspezifisch (LOB) mit App-Schutzrichtlinien
 
 ## <a name="next-steps"></a>Nächste Schritte
 

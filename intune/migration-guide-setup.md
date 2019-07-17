@@ -15,12 +15,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76f5188a866e744c034fd592f9b1dfcbc9061ffa
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 78cf3c2ff5babbfb45dfa6a41add09ef91549e8d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549385"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885028"
 ---
 # <a name="basic-setup"></a>Grundlegende Einrichtung
 
@@ -61,9 +61,9 @@ Bevor Sie zu Intune migrieren können, brauchen Sie ein Intune-Abonnement.
 
 - Suchen Sie [diese Seite](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) auf, um Informationen zu den folgenden Vorgängen zu erhalten:
 
-    - Erstellen eines neuen Intune-Abonnements, das mit einem neuen AAD-Mandanten verknüpft ist
+  - Erstellen eines neuen Intune-Abonnements, das mit einem neuen AAD-Mandanten verknüpft ist
 
-    - Verknüpfen eines Intune-Abonnements, indem Sie sich als bereits vorhandener AAD-Mandant anmelden
+  - Verknüpfen eines Intune-Abonnements, indem Sie sich als bereits vorhandener AAD-Mandant anmelden
 
 ### <a name="task-2-assign-intune-user-licenses"></a>Aufgabe 2: Zuweisen von Intune-Benutzerlizenzen
 

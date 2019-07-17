@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: cbe533e6a219adf1984c656506ceb7a3b95556ec
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 4a0df4f32513eb37bd7396d8e6249f9c6e71a4e4
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548667"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884178"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>Intune-Registrierungsmethoden für Windows-Geräte
 
@@ -36,8 +36,8 @@ Es gibt zwei Möglichkeiten, um Geräte in Intune zu registrieren:
 Benutzer können ihre Windows-Geräte mit einer dieser Methoden selbst registrieren:
 
 - [Bring Your Own Device (BYOD):](https://docs.microsoft.com/intune-user-help/enroll-windows-10-device) Benutzer registrieren Ihre privaten Geräte, indem sie eine Verbindung mit einem **Work and School**-Konto (Arbeit und Schule) in den **Einstellungen** des Geräts herstellen. Durch diesen Prozess geschieht Folgendes:
-    - Das Gerät wird in Azure Active Directory registriert, um Zugriff auf Unternehmensressourcen wie E-Mails zu erhalten.
-    - Das Gerät wird in Intune als privates Gerät (Bring Your Own Device, BYOD) registriert.
+  - Das Gerät wird in Azure Active Directory registriert, um Zugriff auf Unternehmensressourcen wie E-Mails zu erhalten.
+  - Das Gerät wird in Intune als privates Gerät (Bring Your Own Device, BYOD) registriert.
 Wenn ein Administrator die automatische Registrierung, die in Azure AD Premium-Abonnements verfügbar ist, konfiguriert hat, muss der Benutzer lediglich einmal seine Anmeldeinformationen eingeben. Andernfalls müssen sie sich extra über eine reine MDM-Registrierung registrieren und ihre Anmeldeinformationen erneut eingeben.  
 - **MDM only enrollment** (Reine MDM-Registrierung): Diese Methode ermöglicht Benutzern, eine bestehende Arbeitsgruppe, Active Directory oder einen mit Azure Active Directory verknüpften Computer in Intune zu registrieren. Benutzer führen die Registrierung über die Einstellungen des bestehenden Windows-Computers durch. Diese Methode wird nicht empfohlen, da so das Gerät nicht in Azure Active Directory registriert wird. Außerdem können Features wie der bedingte Zugriff nicht verwendet werden.
 - [Azure Active Directory-Verknüpfung](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network): Verknüpft das Gerät mit Azure Active Directory und ermöglicht es Benutzern, sich mit ihren Azure AD-Anmeldeinformationen bei Windows anzumelden. Wenn die automatische Registrierung aktiviert ist, wird das Gerät automatisch in Intune registriert. Der Vorteil der automatischen Registrierung ist, dass der Prozess für den Benutzer aus nur einem Schritt besteht. Andernfalls müssen sie sich extra über eine reine MDM-Registrierung registrieren und ihre Anmeldeinformationen erneut eingeben. Benutzer verwenden diese Registrierungsmethode entweder während der ersten Windows-Einrichtung oder über die Einstellungen ihres PCs. Das Gerät wird als unternehmenseigenes Gerät in Intune gekennzeichnet.

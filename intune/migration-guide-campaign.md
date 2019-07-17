@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 546d62fdea3d1b5b7ae34f1c69423bcd0adb2025
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 35c0c6e6b65350d3b27c9dc1d9ab55d375dac070
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549422"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882864"
 ---
 # <a name="phase-2-migration-campaign"></a>Phase 2: Migration
 
@@ -43,19 +43,19 @@ Dies sind die Schlüssel für die erfolgreiche Migration eines MDM-Drittanbieter
 
 - Überwachen Sie das Laden des Helpdesks und den Registrierungserfolg der jeweiligen Zyklen. Planen Sie großzügig, um sicherzustellen, dass Erfolgskriterien für jede Gruppe ausgewertet werden können, bevor Sie mit der Migration der nächsten beginnen. Ihre Pilotbereitstellung sollte Folgendes überprüfen:
 
-    - ob sich die Registrierungerfolgs- und Fehlerraten im Rahmen bewegen
+  - ob sich die Registrierungerfolgs- und Fehlerraten im Rahmen bewegen
 
-    - Benutzerproduktivität:
+  - Benutzerproduktivität:
 
-        - Unternehmensressourcen wie z.B. VPN, Wi-Fi, E-Mail und Zertifikate funktionieren ordnungsgemäß.
+    - Unternehmensressourcen wie z.B. VPN, Wi-Fi, E-Mail und Zertifikate funktionieren ordnungsgemäß.
 
-        - Auf bereitgestellte Apps kann zugegriffen werden.
+    - Auf bereitgestellte Apps kann zugegriffen werden.
 
-    - Datensicherheit:
+  - Datensicherheit:
 
-        - Kompatibilitätsberichte treten auf.
+    - Kompatibilitätsberichte treten auf.
 
-        - Schutzmaßnahmen für mobile Apps werden erzwungen.
+    - Schutzmaßnahmen für mobile Apps werden erzwungen.
 
 Wenn Sie mit der ersten Phase der Migration zufrieden sind, wiederholen Sie den [Migrationszyklus](migration-guide-cycle.md) für die nächste Phase.
 

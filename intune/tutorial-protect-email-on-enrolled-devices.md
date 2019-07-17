@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 91c2ab71cb393bdf885c947c8f3cd93a5bb196c3
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a5a355c82455e135319b7683756eb0ef5c032876
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548041"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882368"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf verwalteten Geräten
 In diesem Artikel erfahren Sie, wie Sie mithilfe von Gerätekonformitätsrichtlinien mit bedingtem Zugriff sicherstellen können, dass iOS-Geräte nur dann auf Exchange Online-E-Mails zugreifen können, wenn sie von Intune verwaltet werden und eine genehmigte E-Mail-App verwenden. 
@@ -35,10 +35,10 @@ In diesem Tutorial lernen Sie Folgendes:
 Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für eine kostenlose Testversion](free-trial-sign-up.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
-  - Sie benötigen für dieses Tutorial einen Testmandanten mit den folgenden Abonnements:
-    - Azure Active Directory Premium ([kostenlose Testversion](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Office 365 Business-Abonnement, das Exchange Server ([kostenlose Testversion](https://go.microsoft.com/fwlink/p/?LinkID=510938)) umfasst
-  - Bevor Sie beginnen, erstellen Sie ein Testgeräteprofil für iOS-Geräte, indem Sie die Schritte unter [Schnellstart: Erstellen eines E-Mail-Geräteprofils für iOS](quickstart-email-profile.md) ausführen.
+- Sie benötigen für dieses Tutorial einen Testmandanten mit den folgenden Abonnements:
+  - Azure Active Directory Premium ([kostenlose Testversion](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Office 365 Business-Abonnement, das Exchange Server ([kostenlose Testversion](https://go.microsoft.com/fwlink/p/?LinkID=510938)) umfasst
+- Bevor Sie beginnen, erstellen Sie ein Testgeräteprofil für iOS-Geräte, indem Sie die Schritte unter [Schnellstart: Erstellen eines E-Mail-Geräteprofils für iOS](quickstart-email-profile.md) ausführen.
 
 ## <a name="sign-in-to-intune"></a>Anmelden bei Intune
 

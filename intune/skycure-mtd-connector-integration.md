@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd185a42d36de6aaf1e6d0ff0b8e34619b02c093
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: 513001993d890afba848138e01ff823796ea773d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572433"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884442"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Einrichten der Symantec Endpoint Protection Mobile-Integration in Intune
 
@@ -44,7 +44,7 @@ SEP Mobile unterstützt zwei Arten der Integration in Intune:
 
 - **Schreibgeschützte Integration (Grundlegende Installation):** Inventarisiert nur Geräte aus Azure Active Directory und füllt sie in der Symantec Endpoint Protection Mobile Management-Konsole auf.
 <br>
-    - Wenn in der Symantec Endpoint Protection Mobile Management-Konsole **Report the health and risk of devices to Intune** (Integrität und Risiken der Geräte an Intune melden) und **Also report security incidents to Intune** (Auch Sicherheitsvorfälle an Intune melden) nicht aktiviert sind, ist die Integration schreibgeschützt, und ein Gerätestatus („kompatibel“ oder „nicht kompatibel“) wird in Intune nie geändert.
+  - Wenn in der Symantec Endpoint Protection Mobile Management-Konsole **Report the health and risk of devices to Intune** (Integrität und Risiken der Geräte an Intune melden) und **Also report security incidents to Intune** (Auch Sicherheitsvorfälle an Intune melden) nicht aktiviert sind, ist die Integration schreibgeschützt, und ein Gerätestatus („kompatibel“ oder „nicht kompatibel“) wird in Intune nie geändert.
 <br></br>
 - **Vollständige Integration:** Ermöglicht SEP Mobile, Risiken und Details zu Sicherheitsvorfällen von Geräten an Intune zu melden, wodurch eine bidirektionale Kommunikation zwischen den beiden Clouddiensten entsteht.
 

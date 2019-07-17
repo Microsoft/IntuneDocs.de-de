@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1649c6256e4df61b538e2adee87512617b677bb4
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: e6a003e4ab912452f278c838c600f75ddec0c1f5
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547495"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885138"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Verwalten von Android-Arbeitsprofilgeräten mit Intune
 
@@ -71,9 +71,9 @@ VPN-Unterstützung entspricht Android VPN-Profilen. Für die Android Enterprise-
 - **Arbeitsprofilbezogenes VPN**: VPN-Verbindungen sind auf die Apps beschränkt, die für das Arbeitsprofil bereitgestellt werden. Nur von Android Enterprise verwaltete Apps können die VPN-Verbindung verwenden. Persönliche Apps auf dem Gerät können eine verwaltete VPN-Verbindung nicht verwenden. Weitere Informationen finden Sie im Artikel zu den [Android Enterprise-VPN-Einstellungen](vpn-settings-android.md#android-enterprise-vpn-settings).
 
 - **App-spezifisches VPN:** Sie können ein App-spezifisches VPN in Intune konfigurieren, wenn der VPN-Anbieter Folgendes unterstützt:
-    - die Konfiguration für App-spezifische VPN
-    - die Möglichkeit, ein App-bezogenes VPN über das Android Enterprise-App-Konfigurationsprofil zu konfigurieren
-    Weitere Informationen finden Sie unter [Verwenden eines benutzerdefinierten Microsoft Intune-Profils zum Erstellen eines VPN-Profils pro App für Android-Geräte](android-pulse-secure-per-app-vpn.md).
+  - die Konfiguration für App-spezifische VPN
+  - die Möglichkeit, ein App-bezogenes VPN über das Android Enterprise-App-Konfigurationsprofil zu konfigurieren
+  Weitere Informationen finden Sie unter [Verwenden eines benutzerdefinierten Microsoft Intune-Profils zum Erstellen eines VPN-Profils pro App für Android-Geräte](android-pulse-secure-per-app-vpn.md).
 
 ## <a name="certificate-profiles"></a>Zertifikatprofile
 

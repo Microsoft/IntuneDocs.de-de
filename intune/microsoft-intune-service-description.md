@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88ca608027e6509eb56fad74a8edae405fa915fa
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c813e413d0d3447955f785e0aff1e0edd3501b6a
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549432"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882880"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune-Dienstbeschreibung
 
@@ -60,24 +60,24 @@ Da sich das Ökosystem für die mobile Geräteverwaltung durch Updates von Betri
 
 - Wichtige Dienstupdates werden auch im [Microsoft 365 Admin Center](https://admin.microsoft.com/) im Nachrichtencenter angekündigt. Wenn Sie die begleitende [mobilen Office 365-Admin-App](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) installieren, können Sie Benachrichtigungen auf Ihrem mobilen Gerät erhalten. Erfahren Sie mehr über das [Office 365-Nachrichtencenter](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
 
-    Einige hilfreiche Tipps:
+  Einige hilfreiche Tipps:
 
-    - Die Nachrichten im Office 365-Nachrichtencenter sind zielgerichtet. Wenn Ihr Unternehmen z. B. nicht mit Intune for Education arbeitet, werden Sie zu Intune for Education nicht benachrichtigt.
+  - Die Nachrichten im Office 365-Nachrichtencenter sind zielgerichtet. Wenn Ihr Unternehmen z. B. nicht mit Intune for Education arbeitet, werden Sie zu Intune for Education nicht benachrichtigt.
 
-    - Nachrichten laufen ab. Beispielsweise läuft die Benachrichtigung mit einem Link zur Seite „Neuerungen“, dass Ihr Dienst aktualisiert wurde, beispielsweise wahrscheinlich vor der Benachrichtigung zum nächsten Dienstupdate ab. Andernfalls hätten Sie einen großen Rückstand von Beiträgen, die möglicherweise nicht mehr relevant sind.
+  - Nachrichten laufen ab. Beispielsweise läuft die Benachrichtigung mit einem Link zur Seite „Neuerungen“, dass Ihr Dienst aktualisiert wurde, beispielsweise wahrscheinlich vor der Benachrichtigung zum nächsten Dienstupdate ab. Andernfalls hätten Sie einen großen Rückstand von Beiträgen, die möglicherweise nicht mehr relevant sind.
 
-    - Die mobile App für die Office 365-Verwaltung ermöglicht Ihnen das Durchsuchen aller Nachrichten und Weiterleiten der Benachrichtigung, wenn Sie diese mit Kollegen in Ihrer Organisation teilen möchten.
+  - Die mobile App für die Office 365-Verwaltung ermöglicht Ihnen das Durchsuchen aller Nachrichten und Weiterleiten der Benachrichtigung, wenn Sie diese mit Kollegen in Ihrer Organisation teilen möchten.
 
-    - Unter „Einstellungen für das Nachrichtencenter bearbeiten“ finden Sie nun eine Umschaltfläche für **Intune**, sodass Sie sich diese an ein Intune-Abonnement übermittelten Nachrichten ansehen können. Wenn „Verwaltung mobiler Geräte für Office 365“ angezeigt wird, handelt es sich um einen anderen Dienst und nicht um Intune.
+  - Unter „Einstellungen für das Nachrichtencenter bearbeiten“ finden Sie nun eine Umschaltfläche für **Intune**, sodass Sie sich diese an ein Intune-Abonnement übermittelten Nachrichten ansehen können. Wenn „Verwaltung mobiler Geräte für Office 365“ angezeigt wird, handelt es sich um einen anderen Dienst und nicht um Intune.
 
 - Außerdem bieten wir zwei Blogs zum Veröffentlichen der bewährten Methoden für den Support für Enterprise Mobility + Security (EMS) und Intune:
 
-    - [Blog zu Enterprise Mobility + Security](https://blogs.technet.microsoft.com/enterprisemobility/)
+  - [Blog zu Enterprise Mobility + Security](https://blogs.technet.microsoft.com/enterprisemobility/)
 
-    - [Blog zum Intune-Support](https://blogs.technet.microsoft.com/intunesupport/)
+  - [Blog zum Intune-Support](https://blogs.technet.microsoft.com/intunesupport/)
 
->[!Note]
->Sie können die Dienstintegrität von Intune im [Microsoft 365 Admin Center](https://admin.microsoft.com) überwachen. Wählen Sie im linken Bereich **Dienststatus** aus. Sie können auch die [mobile App für die Office 365-Verwaltung](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) zum Anzeigen des Dienststatus nutzen.
+> [!Note]
+> Sie können die Dienstintegrität von Intune im [Microsoft 365 Admin Center](https://admin.microsoft.com) überwachen. Wählen Sie im linken Bereich **Dienststatus** aus. Sie können auch die [mobile App für die Office 365-Verwaltung](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a) zum Anzeigen des Dienststatus nutzen.
 
 ## <a name="types-of-notices-microsoft-provides-about-the-intune-service"></a>Typen von Benachrichtigungen von Microsoft zum Intune-Dienst
 

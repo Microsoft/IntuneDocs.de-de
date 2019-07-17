@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bcc9aa527ed27ef35db901117ceb8f4c8d10c97
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546880"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883791"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Erneutes Zuweisen von Richtlinien für bedingten Zugriff aus dem klassischen Intune-Portal im Azure-Portal
 
@@ -38,14 +38,14 @@ Wenn Sie dazu bereit sind, zum Azure-Portal zu wechseln, führen Sie die in dies
 
 - Deaktivieren Sie die bedingten Richtlinien im klassischen Intune-Portal, nachdem Sie überprüft haben, ob die neuen Richtlinien im Azure-Portal wie erwartet funktionieren.
 <br /><br />
-    - Planen Sie **vor dem Deaktivieren** der Richtlinien für bedingten Zugriff im klassischen Intune-Portal, auf welche Weise Sie die Benutzer zur neuen Richtlinie migrieren. Es gibt zwei Ansätze:
+  - Planen Sie **vor dem Deaktivieren** der Richtlinien für bedingten Zugriff im klassischen Intune-Portal, auf welche Weise Sie die Benutzer zur neuen Richtlinie migrieren. Es gibt zwei Ansätze:
 <br /><br />
-        - **Verwenden Sie dieselbe Einschlussgruppe, um die im Azure-Portal erstellten Richtlinien anzuwenden, und erstellen Sie eine neue Ausnahmegruppe, die mit den vom klassischen Intune-Portal angewendeten Richtlinien verwendet wird**.
-            - Verschieben Sie einige Benutzer allmählich in die Ausnahmegruppe, die im klassischen Portal angegeben ist. Dies verhindert, dass die Richtlinien, die das Ziel des klassischen Intune-Portals sind, angewendet werden. Die Richtlinien, die für die gleiche Benutzergruppe im Azure-Portal erstellt wurden und konzipiert sind, werden zusätzlich zu den im klassischen Intune-Portal angewendeten Richtlinien angewendet. 
+    - **Verwenden Sie dieselbe Einschlussgruppe, um die im Azure-Portal erstellten Richtlinien anzuwenden, und erstellen Sie eine neue Ausnahmegruppe, die mit den vom klassischen Intune-Portal angewendeten Richtlinien verwendet wird**.
+      - Verschieben Sie einige Benutzer allmählich in die Ausnahmegruppe, die im klassischen Portal angegeben ist. Dies verhindert, dass die Richtlinien, die das Ziel des klassischen Intune-Portals sind, angewendet werden. Die Richtlinien, die für die gleiche Benutzergruppe im Azure-Portal erstellt wurden und konzipiert sind, werden zusätzlich zu den im klassischen Intune-Portal angewendeten Richtlinien angewendet. 
 <br /><br />
-        - **Erstellen Sie eine neue Gruppe, auf die die Richtlinien für bedingten Zugriff im Azure-Portal angewendet werden sollen**. Wenn Sie sich für diese Vorgehensweise entscheiden, müssen Sie folgende Aktionen ausführen:
-            - Entfernen Sie Benutzer nach und nach aus den Sicherheitsgruppen, auf die Richtlinien für bedingten Zugriff des klassischen Intune-Portals angewendet werden.
-            - Nachdem Sie bestätigt haben, dass die neue Richtlinie für diese Benutzer funktioniert, können Sie die Richtlinie im klassischen Intune-Portal deaktivieren. 
+    - **Erstellen Sie eine neue Gruppe, auf die die Richtlinien für bedingten Zugriff im Azure-Portal angewendet werden sollen**. Wenn Sie sich für diese Vorgehensweise entscheiden, müssen Sie folgende Aktionen ausführen:
+      - Entfernen Sie Benutzer nach und nach aus den Sicherheitsgruppen, auf die Richtlinien für bedingten Zugriff des klassischen Intune-Portals angewendet werden.
+      - Nachdem Sie bestätigt haben, dass die neue Richtlinie für diese Benutzer funktioniert, können Sie die Richtlinie im klassischen Intune-Portal deaktivieren. 
 <br /><br />
 - Wenn Sie die Einstellungen der Richtlinie für bedingten Zugriff so konfiguriert haben, dass Exchange ActiveSync (EAS) im klassischen Intune-Portal verwendet wird, lesen Sie die [Anweisungen in diesem Thema](#reassign-intune-device-based-conditional-access-policies-for-eas-clients), um **die Einstellungen der Richtlinie für bedingten Zugriff für EAS im Azure-Portal erneut zuzuweisen**.
 
@@ -64,10 +64,10 @@ Wenn Sie dazu bereit sind, zum Azure-Portal zu wechseln, führen Sie die in dies
 Das Blatt **Intune-App-Schutz** im Azure-Portal erlaubt Administratoren, App-basierte bedingte Regeln festzulegen, sodass nur Apps, die die App-Schutzrichtlinien von Intune unterstützen, auf Unternehmensressourcen zugreifen dürfen. Diese Richtlinien für den App-basierten bedingten Zugriff können sich mit Richtlinien für den gerätebasierten bedingten Zugriff überschneiden. Sie können die gerätebasierte und App-basierte bedingte Richtlinie kombinieren (logischer UND-Vorgang) oder eine Option bereitstellen (logischer ODER-Vorgang). Folgende Anforderungen können für Ihre Richtlinie für bedingten Zugriff gelten:
 
 - Ein kompatibles Gerät **UND** die Verwendung der genehmigten App sind erforderlich.
-    - Sie müssen Ihre Richtlinie für bedingten Zugriff auf dem Blatt [Bedingter Zugriff für Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) und dem Blatt [Intune-App-Schutz](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0) festlegen.
+  - Sie müssen Ihre Richtlinie für bedingten Zugriff auf dem Blatt [Bedingter Zugriff für Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies) und dem Blatt [Intune-App-Schutz](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0) festlegen.
 <br /><br />
 - Ein kompatibles Gerät **ODER** die Verwendung der genehmigten App sind erforderlich.
-    - Sie müssen Ihre Richtlinie für den bedingten Zugriff im [klassischen Intune-Portal](https://manage.microsoft.com) und auf dem Blatt [Intune-App-Schutz](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0) festlegen.
+  - Sie müssen Ihre Richtlinie für den bedingten Zugriff im [klassischen Intune-Portal](https://manage.microsoft.com) und auf dem Blatt [Intune-App-Schutz](https://portal.azure.com/#blade/Microsoft_Intune/SummaryBlade/0) festlegen.
 
 > [!TIP] 
 > Dieses Thema enthält Screenshots, die die Benutzererfahrung im klassischen Intune-Portal und dem Azure-Portal vergleichen.

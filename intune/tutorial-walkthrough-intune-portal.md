@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3c305cc579fedb9090faaf6c7270fcc546e36eb
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: a0fbddf54939a494087a7da1220f51ec77b45e7b
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044329"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882467"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: Überblick über Microsoft Intune im Azure-Portal
 
@@ -38,8 +38,8 @@ Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für ein
 ## <a name="prerequisites"></a>Voraussetzungen
 Prüfen Sie vor der Einrichtung von Microsoft Intune die folgenden Anforderungen:
 
-   - [Unterstützte Betriebssysteme und Browser](supported-devices-browsers.md) 
-   - [Bandbreite und Anforderungen an die Netzkonfiguration](network-bandwidth-use.md)
+- [Unterstützte Betriebssysteme und Browser](supported-devices-browsers.md) 
+- [Bandbreite und Anforderungen an die Netzkonfiguration](network-bandwidth-use.md)
 
 ## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Registrieren für eine kostenlose Testversion von Microsoft Intune
 

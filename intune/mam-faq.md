@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54511e29bd44b862a5ad06bdfda2067ed7248677
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 2d4cf000d395bb278b3207fc7a4327d3307abbe4
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494282"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883009"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Häufig gestellte Fragen zu MAM und App-Schutz
 
@@ -123,9 +123,9 @@ Die PIN (Personal Identification Number) ist eine Kennung, mit der sichergestell
 
 - **Wie häufig wird ein Benutzer zur Eingabe der Intune-PIN aufgefordert?**<br></br> Der IT-Administrator kann in der Intune-Verwaltungskonsole die Einstellung „Zugriffsanforderungen nach (Minuten) erneut überprüfen“ für die Intune-App-Schutzrichtlinie definieren. Diese Einstellung gibt die Zeitspanne an, nach der die Zugriffsanforderungen auf dem Gerät überprüft werden und der Bildschirm zur Eingabe der PIN erneut angezeigt wird. Folgende Faktoren beeinflussen, wie häufig ein Benutzer zur PIN-Eingabe aufgefordert wird: 
 
-    - **Eine PIN wird für alle Apps des gleichen Herausgebers genutzt, um die Benutzerfreundlichkeit zu erhöhen**: In iOS wird eine gemeinsame App-PIN für alle Apps **des gleichen App-Herausgebers** genutzt. Unter Android wird eine App-PIN für alle Apps genutzt.
-    - **Das Verhalten für „Zugriffsanforderungen erneut überprüfen nach (Minuten)“ nach einem Geräteneustart**: Ein „PIN-Timer“ zählt die Anzahl von Minuten der Inaktivität, die angeben, wann die Intune-App-PIN das nächste Mal angezeigt werden soll. Unter iOS hat ein Neustart des Geräts keine Auswirkung auf den PIN-Timer. Das bedeutet, dass ein Neustart des Geräts keine Auswirkung auf die Anzahl der inaktiven Minuten des Benutzers einer iOS-App mit der Intune-PIN-Richtlinie hat. Unter Android wird der PIN-Timer beim Neustart des Geräts zurückgesetzt. Deshalb fordern Android-Apps mit der Intune-PIN-Richtlinie den Benutzer wahrscheinlich unabhängig vom Wert der Einstellung „Zugriffsanforderungen erneut überprüfen nach (Minuten)“ nach dem **Neustart des Geräts** zur Eingabe einer PIN für die App auf.  
-    - **Das Wiederholungsverhalten des Timers für die PIN**: Wenn für den Zugriff auf eine App (App A) eine PIN eingegeben wurde und diese App auf dem Gerät nicht mehr im Vordergrund (Haupteingabefokus) ausgeführt wird, wird der PIN-Zeitgeber für diese PIN zurückgesetzt. Eine andere App (App B), für die die gleiche PIN gilt, fordert den Benutzer nicht zur PIN-Eingabe auf, weil der Zeitgeber zurückgesetzt wurde. Die Aufforderung wird wieder angezeigt, wenn der Wert für „Zugriffsanforderungen nach (Minuten) erneut überprüfen“ erneut erreicht wurde.
+  - **Eine PIN wird für alle Apps des gleichen Herausgebers genutzt, um die Benutzerfreundlichkeit zu erhöhen**: In iOS wird eine gemeinsame App-PIN für alle Apps **des gleichen App-Herausgebers** genutzt. Unter Android wird eine App-PIN für alle Apps genutzt.
+  - **Das Verhalten für „Zugriffsanforderungen erneut überprüfen nach (Minuten)“ nach einem Geräteneustart**: Ein „PIN-Timer“ zählt die Anzahl von Minuten der Inaktivität, die angeben, wann die Intune-App-PIN das nächste Mal angezeigt werden soll. Unter iOS hat ein Neustart des Geräts keine Auswirkung auf den PIN-Timer. Das bedeutet, dass ein Neustart des Geräts keine Auswirkung auf die Anzahl der inaktiven Minuten des Benutzers einer iOS-App mit der Intune-PIN-Richtlinie hat. Unter Android wird der PIN-Timer beim Neustart des Geräts zurückgesetzt. Deshalb fordern Android-Apps mit der Intune-PIN-Richtlinie den Benutzer wahrscheinlich unabhängig vom Wert der Einstellung „Zugriffsanforderungen erneut überprüfen nach (Minuten)“ nach dem **Neustart des Geräts** zur Eingabe einer PIN für die App auf.  
+  - **Das Wiederholungsverhalten des Timers für die PIN**: Wenn für den Zugriff auf eine App (App A) eine PIN eingegeben wurde und diese App auf dem Gerät nicht mehr im Vordergrund (Haupteingabefokus) ausgeführt wird, wird der PIN-Zeitgeber für diese PIN zurückgesetzt. Eine andere App (App B), für die die gleiche PIN gilt, fordert den Benutzer nicht zur PIN-Eingabe auf, weil der Zeitgeber zurückgesetzt wurde. Die Aufforderung wird wieder angezeigt, wenn der Wert für „Zugriffsanforderungen nach (Minuten) erneut überprüfen“ erneut erreicht wurde.
 
 Selbst wenn die PIN auf iOS-Geräten unter Apps von verschiedenen Herausgebern freigegeben wird, wird die Eingabeaufforderung erneut angezeigt, wenn der Wert für **Zugriffsanforderungen nach (Minuten) erneut überprüfen** erneut für die App erreicht wird, die nicht über den Eingabefokus verfügt. Beispiel: Der Benutzer verfügt über die App _A_ von Herausgeber _X_ und über die App _B_ von Herausgeber _Y_, und für diese Apps wird die gleiche PIN verwendet. Der Benutzer verwendet App _A_ (im Vordergrund), und die App _B_ ist minimiert. Wenn der Wert für **Zugriffsanforderungen nach (Minuten) erneut überprüfen** erreicht wurde und der Benutzer zur App _B_ wechselt, ist eine PIN erforderlich.
 

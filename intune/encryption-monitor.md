@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: bccfc952202ed9db5bdc5f68bbbba57c61b37b13
-ms.sourcegitcommit: b3a1c5b0b24f0e52cf318defe10f3d27a2770009
+ms.openlocfilehash: b4c7e4b2d35eb2662ca74660e2133dcd2c89f0a1
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67316931"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883369"
 ---
 # <a name="monitor-bitlocker-and-device-encryption"></a>Überwachen von BitLocker und Geräteverschlüsselung  
 Intune stellt einen zentralen Ort zur Verfügung, an dem der Verschlüsselungsstatus Ihrer Windows 10-Geräte bestimmt werden kann, und unterstützt Sie dabei, über Ihre Geräte auf wichtige Informationen für BitLocker zuzugreifen, z. B. Informationen in Active Directory (Azure AD).  
@@ -76,22 +76,22 @@ In diesem Bereich finden Sie die folgenden Details:
 
   Im Folgenden sehen Sie Beispiele für Statusdetails, die Intune melden kann:  
 
-   - Die BitLocker-Richtlinie erfordert eine Benutzereinwilligung, damit der BitLocker-Laufwerkverschlüsselungsassistent gestartet werden kann, um mit der Verschlüsselung des Betriebssystemvolumes zu beginnen. Der Benutzer hat jedoch nicht eingewilligt.  
-   - Die Verschlüsselungsmethode des Betriebssystemvolume stimmt nicht mit der BitLocker-Richtlinie überein.  
-   - Die BitLocker-Richtlinie erfordert eine TPM-Schutzvorrichtung, damit das Betriebssystemvolume geschützt wird; es wird jedoch kein TPM verwendet.  
-   - Die BitLocker-Richtlinie erfordert eine reine TPM-Schutzvorrichtung für das Betriebssystemvolume, aber es wird kein TPM-Schutz verwendet.  
-   - Die BitLocker-Richtlinie erfordert einen TPM+PIN-Schutz für das Betriebssystemvolume, aber es wird keine TPM+PIN-Schutzvorrichtung verwendet.  
-   - Die BitLocker-Richtlinie erfordert einen TPM+Systemstartschlüssel-Schutz für das Betriebssystemvolume, aber es wird keine TPM+Systemstartschlüssel-Schutzvorrichtung verwendet.  
-   - Die BitLocker-Richtlinie erfordert einen TPM+PIN+Systemstartschlüssel-Schutz für das Betriebssystemvolume, aber es wird keine TPM+PIN+Systemstartschlüssel-Schutzvorrichtung verwendet.  
-   - Das Betriebssystemvolume ist nicht geschützt.  
-   - Die Sicherung des Wiederherstellungsschlüssel ist fehlgeschlagen.  
-   - Ein Festplattenlaufwerk ist nicht geschützt.  
-   - Die Verschlüsselungsmethode des Festplattenlaufwerks stimmt nicht mit der BitLocker-Richtlinie überein.  
-   - Wenn Laufwerke verschlüsselt werden sollen, erfordert die BitLocker-Richtlinie entweder eine Anmeldung des Benutzers als Administrator, oder die Richtlinie „AllowStandardUserEncryption“ muss auf 1 festgelegt werden, wenn das Gerät mit Azure AD verknüpft ist.  
-   - Die Windows-Wiederherstellungsumgebung (Windows Recovery Environment, WinRE) ist nicht konfiguriert.  
-   - Für BitLocker steht kein TPM zur Verfügung – entweder, weil keines vorhanden ist, es in der Registrierung nicht mehr zur Verfügung steht oder weil sich das Betriebssystem auf einem Laufwerk befindet, das entfernt werden kann.  
-   - Das TMP ist nicht bereit für BitLocker.  
-   - Das Netzwerk ist nicht verfügbar. Dies ist aber eine Voraussetzung zur Sicherung des Wiederherstellungsschlüssels.  
+  - Die BitLocker-Richtlinie erfordert eine Benutzereinwilligung, damit der BitLocker-Laufwerkverschlüsselungsassistent gestartet werden kann, um mit der Verschlüsselung des Betriebssystemvolumes zu beginnen. Der Benutzer hat jedoch nicht eingewilligt.  
+  - Die Verschlüsselungsmethode des Betriebssystemvolume stimmt nicht mit der BitLocker-Richtlinie überein.  
+  - Die BitLocker-Richtlinie erfordert eine TPM-Schutzvorrichtung, damit das Betriebssystemvolume geschützt wird; es wird jedoch kein TPM verwendet.  
+  - Die BitLocker-Richtlinie erfordert eine reine TPM-Schutzvorrichtung für das Betriebssystemvolume, aber es wird kein TPM-Schutz verwendet.  
+  - Die BitLocker-Richtlinie erfordert einen TPM+PIN-Schutz für das Betriebssystemvolume, aber es wird keine TPM+PIN-Schutzvorrichtung verwendet.  
+  - Die BitLocker-Richtlinie erfordert einen TPM+Systemstartschlüssel-Schutz für das Betriebssystemvolume, aber es wird keine TPM+Systemstartschlüssel-Schutzvorrichtung verwendet.  
+  - Die BitLocker-Richtlinie erfordert einen TPM+PIN+Systemstartschlüssel-Schutz für das Betriebssystemvolume, aber es wird keine TPM+PIN+Systemstartschlüssel-Schutzvorrichtung verwendet.  
+  - Das Betriebssystemvolume ist nicht geschützt.  
+  - Die Sicherung des Wiederherstellungsschlüssel ist fehlgeschlagen.  
+  - Ein Festplattenlaufwerk ist nicht geschützt.  
+  - Die Verschlüsselungsmethode des Festplattenlaufwerks stimmt nicht mit der BitLocker-Richtlinie überein.  
+  - Wenn Laufwerke verschlüsselt werden sollen, erfordert die BitLocker-Richtlinie entweder eine Anmeldung des Benutzers als Administrator, oder die Richtlinie „AllowStandardUserEncryption“ muss auf 1 festgelegt werden, wenn das Gerät mit Azure AD verknüpft ist.  
+  - Die Windows-Wiederherstellungsumgebung (Windows Recovery Environment, WinRE) ist nicht konfiguriert.  
+  - Für BitLocker steht kein TPM zur Verfügung – entweder, weil keines vorhanden ist, es in der Registrierung nicht mehr zur Verfügung steht oder weil sich das Betriebssystem auf einem Laufwerk befindet, das entfernt werden kann.  
+  - Das TMP ist nicht bereit für BitLocker.  
+  - Das Netzwerk ist nicht verfügbar. Dies ist aber eine Voraussetzung zur Sicherung des Wiederherstellungsschlüssels.  
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker-Wiederherstellungsschlüssel
 Intune gewährt Zugriff auf das Azure AD-Blatt für BitLocker, sodass Sie sich über das Intune-Portal die BitLocker-Schlüssel-IDs und -Wiederherstellungsschlüssel für Ihre Windows 10-Geräte ansehen können.  Damit auf ein Gerät zugegriffen werden kann, müssen die dazugehörigen Schlüssel in Azure AD hinterlegt sein. 

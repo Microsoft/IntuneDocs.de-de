@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39b5581ae7dd2a93554c0371da3858f59d6e62b4
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735444"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884049"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Eigenständiges Intune – Win32-App-Verwaltung
 
@@ -37,9 +37,9 @@ Stellen Sie sicher, dass die folgenden Kriterien erfüllt sind, wenn Sie die Win
 
 - Windows 10 Version 1607 oder höher (Education-, Pro- und Enterprise-Versionen)
 - Folgendes muss für den Windows 10-Client zutreffen: 
-    - Geräte müssen mit Azure AD verknüpft und automatisch registriert werden. Die Intune-Verwaltungserweiterung unterstützt Geräte, die mit Azure AD und hybriden Domänen verknüpft sind, sowie durch das Gruppenrichtlinien-Tool registrierte Geräte. 
-    > [!NOTE]
-    > Für durch das Gruppenrichtlinien-Tool registrierte Szenarios: Der Endbenutzer verwendet das lokale Benutzerkonto zum Einbinden seines Windows 10-Geräts in Azure AD. Der Benutzer muss sich mit seinem Azure AD-Benutzerkonto auf dem Gerät anmelden und sich bei Intune registrieren. Intune installiert die Intune-Verwaltungserweiterung auf dem Gerät, wenn ein PowerShell-Skript oder eine Win32-App auf einen Benutzer oder ein Gerät ausgerichtet sind.
+  - Geräte müssen mit Azure AD verknüpft und automatisch registriert werden. Die Intune-Verwaltungserweiterung unterstützt Geräte, die mit Azure AD und hybriden Domänen verknüpft sind, sowie durch das Gruppenrichtlinien-Tool registrierte Geräte. 
+  > [!NOTE]
+  > Für durch das Gruppenrichtlinien-Tool registrierte Szenarios: Der Endbenutzer verwendet das lokale Benutzerkonto zum Einbinden seines Windows 10-Geräts in Azure AD. Der Benutzer muss sich mit seinem Azure AD-Benutzerkonto auf dem Gerät anmelden und sich bei Intune registrieren. Intune installiert die Intune-Verwaltungserweiterung auf dem Gerät, wenn ein PowerShell-Skript oder eine Win32-App auf einen Benutzer oder ein Gerät ausgerichtet sind.
 - Die Größe der Windows-Anwendung ist auf 8 GB pro App begrenzt.
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Vorbereiten des Inhalts der Win32-App für den Upload

@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a0372180cf516f5a0111cd8fdb7cbd9535f075
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: e241dc534427b97086013a12391f06bd2f342779
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402735"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883272"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Öffentliche Vorschau: Konfigurieren von eSIM-Mobilfunkprofilen in Intune
 
@@ -160,12 +160,12 @@ Sie können eine detaillierte Liste der Geräte überwachen und anzeigen, die un
 1. Wählen Sie **Gerätekonfiguration** > **eSIM-Mobilfunkprofile** > Select an existing subscription (Vorhandenes Abonnement auswählen) aus.
 2. Wählen Sie **Gerätestatus** aus. Intune zeigt weitere Details zu dem Gerät an:
 
-  - **Gerätename:** Der Name des Zielgeräts
-  - **Benutzer:** Der Benutzer des registrierten Geräts
-  - **ICCID:** Ein eindeutiger Code, der vom Mobilfunkanbieter im Aktivierungscode des Geräts bereitgestellt wird
-  - **Aktivierungsstatus:** Der Bereitstellungs- und Installationsstatus des Aktivierungscodes auf dem Gerät von Intune
-  - **Mobilfunkstatus:** Der vom Mobilfunkanbieter bereitgestellte Status Befassen Sie sich zur Fehlerbehebung näher mit dem Mobilfunkanbieter.
-  - **Letztes Einchecken:** Das Datum, an dem das Gerät zuletzt mit Intune kommuniziert hat
+    - **Gerätename:** Der Name des Zielgeräts
+    - **Benutzer:** Der Benutzer des registrierten Geräts
+    - **ICCID:** Ein eindeutiger Code, der vom Mobilfunkanbieter im Aktivierungscode des Geräts bereitgestellt wird
+    - **Aktivierungsstatus:** Der Bereitstellungs- und Installationsstatus des Aktivierungscodes auf dem Gerät von Intune
+    - **Mobilfunkstatus:** Der vom Mobilfunkanbieter bereitgestellte Status Befassen Sie sich zur Fehlerbehebung näher mit dem Mobilfunkanbieter.
+    - **Letztes Einchecken:** Das Datum, an dem das Gerät zuletzt mit Intune kommuniziert hat
 
 #### <a name="monitor-esim-profile-details-on-the-actual-device"></a>Überwachen von eSIM-Profildetails auf dem aktuellen Gerät
 

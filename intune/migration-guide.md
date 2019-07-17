@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b34143e17245de61026a536cc0b8c5e8a7f80107
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 97a0d9074b8617dec2fb28ed59168e08ada57fba
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549399"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882764"
 ---
 # <a name="intune-migration-guide"></a>Intune-Migrationshandbuch
 
@@ -37,25 +37,25 @@ Dieses Handbuch teilt die Migration in zwei Phasen auf, die beide Aufgaben, Stra
 
 - [Phase 1: Vorbereitung von Microsoft Intune für die Verwaltung mobiler Geräte (MDM)](migration-guide-prepare.md)
 
-    - [Anforderungen Ihrer MDM-Migration analysieren](migration-guide-prepare.md#assess-mdm-requirements)
+  - [Anforderungen Ihrer MDM-Migration analysieren](migration-guide-prepare.md#assess-mdm-requirements)
 
-    - [Grundlegende Einrichtung](migration-guide-setup.md)
+  - [Grundlegende Einrichtung](migration-guide-setup.md)
 
-    - [Konfigurieren von Richtlinien für die Verwaltung von Apps und Geräten](migration-guide-configure-policies.md)
+  - [Konfigurieren von Richtlinien für die Verwaltung von Apps und Geräten](migration-guide-configure-policies.md)
 
-    - [Konfigurieren von App-Schutzrichtlinien](migration-guide-app-protection-policies.md)
+  - [Konfigurieren von App-Schutzrichtlinien](migration-guide-app-protection-policies.md)
 
-    - [Besondere Überlegungen bei der Migration](migration-guide-considerations.md)
+  - [Besondere Überlegungen bei der Migration](migration-guide-considerations.md)
 
 - [Phase 2: Migrationskampagne](migration-guide-campaign.md)
 
-    - [Kommunikationsplan](migration-guide-communication-plan.md)
+  - [Kommunikationsplan](migration-guide-communication-plan.md)
 
-    - [Fördern der Akzeptanz des bedingten Zugriffs bei Endbenutzern](migration-guide-drive-adoption.md)
+  - [Fördern der Akzeptanz des bedingten Zugriffs bei Endbenutzern](migration-guide-drive-adoption.md)
 
-    - [typischer Migrationszyklus](migration-guide-cycle.md)
-        - [Migrationsüberwachung](migration-guide-cycle.md#monitoring-migration)
-        - [Aufgaben nach der Migration](migration-guide-cycle.md#post-migration)
+  - [typischer Migrationszyklus](migration-guide-cycle.md)
+    - [Migrationsüberwachung](migration-guide-cycle.md#monitoring-migration)
+    - [Aufgaben nach der Migration](migration-guide-cycle.md#post-migration)
 
 ## <a name="assumptions"></a>Annahmen
 

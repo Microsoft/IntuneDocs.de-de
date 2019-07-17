@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0452229d6c1ea2d9e87a302675167d200bd348eb
-ms.sourcegitcommit: 6bba9f2ef4d1ec699f5713a4da4f960e7317f1cd
+ms.openlocfilehash: 73c8167c91129d79a98674a92e7ccc5487a6b283
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67407172"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67885082"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Was ist die Mobile Threat Defense-Integration in Intune?
 Intune kann Daten von einem Mobile Threat Defense-Anbieter als Informationsquelle für Konformitätsrichtlinien und Richtlinien für bedingten Zugriff integrieren. Sie können diese Informationen verwenden, um Unternehmensressourcen wie Exchange und SharePoint zu schützen, indem Sie den Zugriff von manipulierten mobilen Geräten blockieren.  
@@ -47,14 +47,14 @@ Dieser Dienst muss aktiviert werden. Informationen zum App-Bestand werden nicht 
 **App-Bestand**  
 Wenn Sie die App-Synchronisierung für iOS-Geräte aktivieren, werden die Bestände der unternehmenseigenen und privaten iOS-Geräte an Ihren MTD-Dienstanbieter gesendet. Die Daten in den App-Beständen umfassen:
 
- - App-ID
- - App-Version
- - Kurzversion der App
- - App-Name
- - Größe des App-Pakets
- - Dynamische Größe der App
- - Ob die App gültig ist oder nicht
- - Ob die App verwaltet wird oder nicht
+- App-ID
+- App-Version
+- Kurzversion der App
+- App-Name
+- Größe des App-Pakets
+- Dynamische Größe der App
+- Ob die App gültig ist oder nicht
+- Ob die App verwaltet wird oder nicht
 
 ## <a name="sample-scenarios"></a>Beispielszenarien
 

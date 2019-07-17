@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7868d5f9ef97f4b054457deff6f24cd91d6c31d8
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: a7907889a1419ad6ff37b3975fa65adb02389ab6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528687"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884509"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf nicht verwalteten Geräten
 
@@ -32,10 +32,10 @@ Erfahren Sie, wie Sie App-Schutzrichtlinien mit bedingtem Zugriff zum Schutz von
 > * Erstellen Sie Richtlinien für bedingten Zugriff in Azure Active Directory (Azure AD), die dafür sorgen, dass die Outlook-App in Exchange Online nur auf Unternehmens-E-Mails zugreifen darf. Sie fordern auch die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) für Clients mit moderner Authentifizierung wie Outlook für iOS und Android an.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-  - Sie benötigen für dieses Tutorial einen Testmandanten mit den folgenden Abonnements:
-    - Azure Active Directory Premium ([kostenlose Testversion](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
-    - Intune-Abonnement ([kostenlose Testversion](free-trial-sign-up.md))
-    - Office 365 Business-Abonnement, das Exchange Server ([kostenlose Testversion](https://go.microsoft.com/fwlink/p/?LinkID=510938)) umfasst
+- Sie benötigen für dieses Tutorial einen Testmandanten mit den folgenden Abonnements:
+  - Azure Active Directory Premium ([kostenlose Testversion](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
+  - Intune-Abonnement ([kostenlose Testversion](free-trial-sign-up.md))
+  - Office 365 Business-Abonnement, das Exchange Server ([kostenlose Testversion](https://go.microsoft.com/fwlink/p/?LinkID=510938)) umfasst
 
 ## <a name="sign-in-to-intune"></a>Anmelden bei Intune
 

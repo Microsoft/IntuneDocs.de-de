@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0656c199d2f6179429415161ec02ef8a9037bf6b
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 29ae889e99a843a8569782bad2b1303c7bb4304c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548357"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882843"
 ---
 # <a name="phase-1-prepare-microsoft-intune-for-mobile-device-management-mdm"></a>Phase 1: Vorbereitung von Microsoft Intune für die mobile Geräteverwaltung (MDM)
 
@@ -51,8 +51,8 @@ Bevor wir uns mit den Details zum Einrichten von Intune befassen, werfen wir ein
 
 - Welche Nutzungsbedingungen benötigen Sie?
 
-    - Stellen Sie sicher, dass Sie Ihre Rechtsabteilung frühzeitig heranziehen.
-    - Welche Lokalisierung ist erforderlich?
+  - Stellen Sie sicher, dass Sie Ihre Rechtsabteilung frühzeitig heranziehen.
+  - Welche Lokalisierung ist erforderlich?
 
 - Sind die Benutzer mit Technologie und IT im Allgemeinen vertraut?
 
@@ -63,8 +63,8 @@ Bevor wir uns mit den Details zum Einrichten von Intune befassen, werfen wir ein
 - Wie ist die Länge Ihres aktuellen Kennworts/PIN-Codes?
 
 - Müssen Sie Gerätefunktionen deaktivieren oder bestimmtes Geräteverhalten einschränken? Sie können eine Reihe von plattformspezifischen Einstellungen mit Konfigurationsprofilen für Geräte steuern, z.B.:
-    - Deaktivieren der Kamera
-    - Einzelanwendungsmodus zulassen<br/>
+  - Deaktivieren der Kamera
+  - Einzelanwendungsmodus zulassen<br/>
 
 - Welche Arten von Authentifizierung müssen Sie unterstützen? Welche Zertifikate müssen bereitgestellt werden, wenn Sie zertifikatbasierte Authentifizierung benötigen?
   - Intune kann Zertifikate mit Ressourcenzugriffsprofilen für registrierte Geräte bereitstellen.
