@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f182d356c151c569b9cf49adfe2f2c0cc34f1a54
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: b655dc64958350623ea62caf848043f6baf3787c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548904"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883295"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Verwenden von Azure AD für den Zugriff auf die Intune-APIs in Microsoft Graph
 
@@ -30,13 +30,13 @@ Für den Zugriff auf die Intune-APIs in Microsoft Graph ist Folgendes erforderli
 
 - Eine Anwendungs-ID mit:
 
-    - Der Berechtigung, Azure AD und die Microsoft Graph-APIs aufzurufen.
-    - Berechtigungsbereichen, die für bestimmte Anwendungsaufgaben relevant sind
+  - Der Berechtigung, Azure AD und die Microsoft Graph-APIs aufzurufen.
+  - Berechtigungsbereichen, die für bestimmte Anwendungsaufgaben relevant sind
 
 - Benutzeranmeldeinformationen mit:
 
-    - Zugriffsberechtigung für den Azure AD-Mandanten, der der Anwendung zugeordnet ist
-    - Rollenberechtigungen zur Unterstützung der Anwendungsberechtigungsbereiche
+  - Zugriffsberechtigung für den Azure AD-Mandanten, der der Anwendung zugeordnet ist
+  - Rollenberechtigungen zur Unterstützung der Anwendungsberechtigungsbereiche
 
 - Der App durch den Endbenutzer erteilte Berechtigung zum Ausführen von Anwendungsaufgaben im Azure-Mandanten
 
@@ -61,7 +61,7 @@ Weitere Informationen finden Sie unter:
 
 So registrieren Sie eine App, um die Microsoft Graph-API zu verwenden:
 
-1. Melden Sie sich beim [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) mit Administratoranmeldeinformationen an.
+1. Melden Sie sich mithilfe administrativer Anmelde Informationen bei [InTune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 
     Dazu können Sie Folgendes verwenden:
     - Die Administratorkonto des Mandanten
@@ -119,7 +119,7 @@ An diesem Punkt haben Sie auch folgende Möglichkeiten:
 
 - Sie können die App Benutzern außerhalb Ihres Mandanten zur Verfügung stellen.  (Dies ist normalerweise nur für Partner erforderlich, die mehrere Mandanten/Organisationen unterstützen.)  
 
-    Gehen Sie hierzu folgendermaßen vor:
+    Gehen Sie hierzu wie folgt vor:
 
   1. Wählen sie auf dem Blatt der Anwendung **Manifest**, um das Blatt **Manifest bearbeiten** zu öffnen.
 
@@ -164,10 +164,10 @@ Derzeit erfordern alle Intune-Berechtigungsbereiche Administratorzugriff.  Dies 
 - Einstellung **Zugriff aktivieren**: __Microsoft Intune-Apps lesen__
 
 - Ermöglicht Lesezugriff auf die folgenden Eigenschaften und den Status der Entität:
-    - Clientanwendungen
-    - Kategorien mobiler Apps
-    - App-Schutzrichtlinien
-    - App-Konfigurationen
+  - Clientanwendungen
+  - Kategorien mobiler Apps
+  - App-Schutzrichtlinien
+  - App-Konfigurationen
 
 ### <a name="app-rw"></a>DeviceManagementApps.ReadWrite.All
 
@@ -177,19 +177,19 @@ Derzeit erfordern alle Intune-Berechtigungsbereiche Administratorzugriff.  Dies 
 
 - Ermöglicht zudem Änderungen an den folgenden Entitäten:
 
-    - Clientanwendungen
-    - Kategorien mobiler Apps
-    - App-Schutzrichtlinien
-    - App-Konfigurationen
+  - Clientanwendungen
+  - Kategorien mobiler Apps
+  - App-Schutzrichtlinien
+  - App-Konfigurationen
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
 - Einstellung **Zugriff aktivieren**: __Microsoft Intune-Gerätekonfiguration und -Richtlinien lesen__
 
 - Ermöglicht Lesezugriff auf die folgenden Eigenschaften und den Status der Entität:
-    - Gerätekonfiguration
-    - Gerätekonformitätsrichtlinie
-    - Benachrichtigungen
+  - Gerätekonfiguration
+  - Gerätekonformitätsrichtlinie
+  - Benachrichtigungen
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
@@ -198,34 +198,34 @@ Derzeit erfordern alle Intune-Berechtigungsbereiche Administratorzugriff.  Dies 
 - Ermöglicht die gleichen Vorgänge wie __DeviceManagementConfiguration.Read.All__
 
 - Apps können auch die folgenden Entitäten erstellen, zuweisen, löschen und ändern:
-    - Gerätekonfiguration
-    - Gerätekonformitätsrichtlinie
-    - Benachrichtigungen
+  - Gerätekonfiguration
+  - Gerätekonformitätsrichtlinie
+  - Benachrichtigungen
 
 ### <a name="mgd-po"></a>DeviceManagementManagedDevices.PrivilegedOperations.All
 
 - Einstellung **Zugriff aktivieren**: __Remoteaktionen mit Auswirkungen auf Benutzer auf Microsoft Intune-Geräten ausführen__
 
 - Erlaubt die folgenden Remoteaktionen auf einem verwalteten Gerät:
-    - Außerkraftsetzen
-    - Zurücksetzen
-    - Kennung zurücksetzen/wiederherstellen
-    - Remotesperre
-    - Modus für verlorene Geräte aktivieren/deaktivieren
-    - PC bereinigen
-    - Neustart
-    - Benutzer von gemeinsam genutzten Gerät löschen
+  - Außerkraftsetzen
+  - Zurücksetzen
+  - Kennung zurücksetzen/wiederherstellen
+  - Remotesperre
+  - Modus für verlorene Geräte aktivieren/deaktivieren
+  - PC bereinigen
+  - Neustart
+  - Benutzer von gemeinsam genutzten Gerät löschen
 
 ### <a name="mgd-ro"></a>DeviceManagementManagedDevices.Read.All
 
 - Einstellung **Zugriff aktivieren**: __Microsoft Intune-Geräte lesen__
 
 - Ermöglicht Lesezugriff auf die folgenden Eigenschaften und den Status der Entität:
-    - Verwaltetes Gerät
-    - Gerätekategorie
-    - Erkannte App
-    - Remoteaktionen
-    - Informationen zu Schadsoftware
+  - Verwaltetes Gerät
+  - Gerätekategorie
+  - Erkannte App
+  - Remoteaktionen
+  - Informationen zu Schadsoftware
 
 ### <a name="mgd-rw"></a>DeviceManagementManagedDevices.ReadWrite.All
 
@@ -234,22 +234,22 @@ Derzeit erfordern alle Intune-Berechtigungsbereiche Administratorzugriff.  Dies 
 - Ermöglicht die gleichen Vorgänge wie __DeviceManagementManagedDevices.Read.All__
 
 - Apps können auch die folgenden Entitäten erstellen, löschen und ändern:
-    - Verwaltetes Gerät
-    - Gerätekategorie
+  - Verwaltetes Gerät
+  - Gerätekategorie
 
 - Die folgenden Remoteaktionen sind ebenfalls zulässig:
-    - Geräte suchen
-    - Aktivierungssperre umgehen
-    - Remoteunterstützung anfordern
+  - Geräte suchen
+  - Aktivierungssperre umgehen
+  - Remoteunterstützung anfordern
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All
 
 - Einstellung **Zugriff aktivieren**: __Einstellungen für die rollenbasierte Zugriffssteuerung von Microsoft Intune-Geräten lesen__
 
 - Ermöglicht Lesezugriff auf die folgenden Eigenschaften und den Status der Entität:
-    - Rollenzuweisungen
-    - Rollendefinitionen
-    - Ressourcenvorgänge
+  - Rollenzuweisungen
+  - Rollendefinitionen
+  - Ressourcenvorgänge
 
 ### <a name="rac-rw"></a>DeviceManagementRBAC.ReadWrite.All
 
@@ -258,24 +258,24 @@ Derzeit erfordern alle Intune-Berechtigungsbereiche Administratorzugriff.  Dies 
 - Ermöglicht die gleichen Vorgänge wie __DeviceManagementRBAC.Read.All__
 
 - Apps können auch die folgenden Entitäten erstellen, zuweisen, löschen und ändern:
-    - Rollenzuweisungen
-    - Rollendefinitionen
+  - Rollenzuweisungen
+  - Rollendefinitionen
 
 ### <a name="svc-ro"></a>DeviceManagementServiceConfig.Read.All
 
 - Einstellung **Zugriff aktivieren**: __Microsoft Intune-Konfiguration lesen__
 
 - Ermöglicht Lesezugriff auf die folgenden Eigenschaften und den Status der Entität:
-    - Geräteregistrierung
-    - Apple Push Notification-Zertifikat
-    - Apple-Programm zur Geräteregistrierung
-    - Apple Volume Purchase Program
-    - Exchange-Connector
-    - Geschäftsbedingungen
-    - Verwaltung von Ausgaben für Telekommunikation
-    - PKI in der Cloud
-    - Branding
-    - Mobile Threat Defense
+  - Geräteregistrierung
+  - Apple Push Notification-Zertifikat
+  - Apple-Programm zur Geräteregistrierung
+  - Apple Volume Purchase Program
+  - Exchange-Connector
+  - Geschäftsbedingungen
+  - Verwaltung von Ausgaben für Telekommunikation
+  - PKI in der Cloud
+  - Branding
+  - Mobile Threat Defense
 
 ### <a name="svc-rw"></a>DeviceManagementServiceConfig.ReadWrite.All
 
@@ -284,16 +284,16 @@ Derzeit erfordern alle Intune-Berechtigungsbereiche Administratorzugriff.  Dies 
 - Ermöglicht die gleichen Vorgänge wie „DeviceManagementServiceConfig.Read.All_“
 
 - Apps können auch die folgenden Intune-Features konfigurieren:
-    - Geräteregistrierung
-    - Apple Push Notification-Zertifikat
-    - Apple-Programm zur Geräteregistrierung
-    - Apple Volume Purchase Program
-    - Exchange-Connector
-    - Geschäftsbedingungen
-    - Verwaltung von Ausgaben für Telekommunikation
-    - PKI in der Cloud
-    - Branding
-    - Mobile Threat Defense
+  - Geräteregistrierung
+  - Apple Push Notification-Zertifikat
+  - Apple-Programm zur Geräteregistrierung
+  - Apple Volume Purchase Program
+  - Exchange-Connector
+  - Geschäftsbedingungen
+  - Verwaltung von Ausgaben für Telekommunikation
+  - PKI in der Cloud
+  - Branding
+  - Mobile Threat Defense
 
 ## <a name="azure-ad-authentication-examples"></a>Beispiele für die Azure AD-Authentifizierung
 

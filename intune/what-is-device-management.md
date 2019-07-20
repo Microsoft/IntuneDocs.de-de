@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5614f0657175658c1a8442d650e16c8550c1ac1
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043841"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884269"
 ---
 # <a name="what-is-device-management"></a>Was ist die Geräteverwaltung? 
 
@@ -58,8 +58,8 @@ Eine Hauptaufgabe einer jeden Lösung für die Geräteverwaltung ist es, Sicherh
 
 - **Windows Defender** enthält viele Sicherheitsfeatures zum Schutz von Windows 10-Geräten. Wenn Sie z. B. Intune und Windows Defender zusammen verwenden, haben Sie die folgenden Möglichkeiten: 
 
-    - Aktivieren Sie [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10), um nach verdächtigen Aktivitäten in Dateien und Apps auf mobilen Geräten zu suchen. 
-    - Verwenden Sie [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection), um Sicherheitsverletzungen auf mobilen Geräten zu verhindern. Und helfen Sie, die Auswirkungen eines Sicherheitsverstoßes zu begrenzen, indem Sie einen Benutzer von Unternehmensressourcen ausschließen.
+  - Aktivieren Sie [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10), um nach verdächtigen Aktivitäten in Dateien und Apps auf mobilen Geräten zu suchen. 
+  - Verwenden Sie [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection), um Sicherheitsverletzungen auf mobilen Geräten zu verhindern. Und helfen Sie, die Auswirkungen eines Sicherheitsverstoßes zu begrenzen, indem Sie einen Benutzer von Unternehmensressourcen ausschließen.
 
 - **Bedingter Zugriff** ist ein Feature von Azure Active Directory, das gut in Intune integriert werden kann. Mithilfe des [bedingten Zugriffs](https://docs.microsoft.com/intune/conditional-access) können Sie sicherstellen, dass nur konforme Geräte auf E-Mail, SharePoint und andere Apps zugreifen dürfen. 
 

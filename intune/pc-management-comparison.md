@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3665a785391d2bff707bf5b8fe0a7e4f6e8a43d
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: fec72636a5d76ce4eb1fa0c28978eeb70d1e61b5
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044523"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353559"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Vergleichen der Verwaltung von Windows-PCs als Computer oder mobile Geräte
 
@@ -42,14 +42,14 @@ Organisationen können mit Microsoft Intune Windows-PCs entweder mithilfe der Ve
 |**Softwarelizenzverwaltung**|Verfügbar <br>[Verwalten von Lizenzverträgen für Windows-PC-Software](manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)|Microsoft Store für Unternehmen (nur APPX-Apps)<br>[Verwalten von Apps, die im Microsoft Store für Unternehmen erworben wurden](windows-store-for-business.md)|
 |**Inventur**|Verfügbar <br>[Anzeigen des Hardware- und Softwarebestands für Windows-PCs](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|Verfügbar <br>[Überwachen von App-Informationen](apps-monitor.md)<br>[Was ist die Geräteverwaltung?](device-management.md)|
 |**Windows-Firewall-Richtlinie**|Verfügbar <br>[Unterstützen des Schutzes von Windows-PCs mithilfe von Windows-Firewall-Richtlinien](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Verfügbar <br>[Windows Defender Firewall](endpoint-protection-windows-10.md#windows-defender-firewall)|
-|**Schutz vor Schadsoftware**|Endpoint Protection<br>[Schützen von Windows-PCs mit Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[Aktivieren von Windows Defender](advanced-threat-protection.md)|
+|**Schutz vor Schadsoftware**|Endpoint Protection<br>[Schützen von Windows-PCs mit Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[Aktivieren von Windows Defender](advanced-threat-protection.md)|
 |**Remoteunterstützung** |TeamViewer<br>[Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [Verwenden von TeamViewer für die Remoteverwaltung von Intune-Geräten](teamviewer-support.md) |
 |**App-Bereitstellung** | Für Microsoft Store für Unternehmen nicht verfügbar.<br>Nur EXE- und APPX-Dateien sowie aus mehreren Dateien bestehende MSI-Pakete<br>[Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird](add-apps-for-windows-pcs-in-microsoft-intune.md)|Für Microsoft Store-Apps und branchenspezifische Apps verfügbar<br>[Hinzufügen von Windows Store-Apps](store-apps-windows.md)<br>[How to add Windows line-of-business (LOB) apps (Informationen zum Hinzufügen branchenspezifischer Apps)](lob-apps-windows.md)|
 |**App-Schutz**|Nicht verfügbar|Verfügbar <br>[Was sind App-Schutzrichtlinien?](app-protection-policy.md)|
 |**Integritätsnachweis**|Nicht verfügbar|Verfügbar|
 
 
-### <a name="advantages-of-mdm-windows-pc-management"></a>Vorteile der Verwaltung von Windows-PCs mit MDM
+## <a name="advantages-of-mdm-windows-pc-management"></a>Vorteile der Verwaltung von Windows-PCs mit MDM
 Die Verwaltung von Windows-PCs mithilfe der modernen Verwaltung mobiler Geräte (MDM) bietet folgende Vorteile:
 - **Skalierbarkeit**: Die MDM-Verwaltung wird mit der Intune-Cloudverwaltung skaliert. Die Intune-Softwareclient ist auf 7.000 PCs beschränkt.
 - **Einfachheit**: Die MDM-Lösung verwendet moderne Verwaltungsfunktionen, die im Betriebssystem enthalten ist, ohne Rückgriff auf einen heruntergeladenen Softwareclient.

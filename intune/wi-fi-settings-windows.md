@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 502babf80b4286adb19a09988d16bd56562d4925
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 3bbd90b5a317629bd5b4d87b619d89023053518d
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046665"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884258"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Hinzufügen von WLAN-Einstellungen für Geräte mit Windows 10 und höher in Intune
 
@@ -119,29 +119,29 @@ Wählen Sie **OK** > **Erstellen** aus, um die Änderungen zu speichern. Das Pro
     > [!NOTE]
     > Aktuell werden beim Verwenden des EAP-Typs nur SCEP-Zertifikatprofile unterstützt. PKCS-Zertifikatprofile werden nicht unterstützt. Wenn der Benutzer zur Angabe des Zertifikats aufgefordert wird, muss sichergestellt werden, dass das SCEP-Zertifikat ausgewählt wird.
 
-      - **Serververtrauensstellung**  
+    - **Serververtrauensstellung**  
 
-        **Zertifikatservernamen:** Verwenden Sie diese Option mit den EAP-Typen **EAP-TLS**, **EAP-TTLS** oder **PEAP**. Geben Sie mindestens einen allgemeinen Namen ein, der in den von der vertrauenswürdigen Zertifizierungsstelle ausgestellten Zertifikaten verwendet wird. Wenn Sie diese Informationen eingeben, können Sie das Dialogfeld für dynamische Vertrauensstellungen umgehen, das auf Benutzergeräten bei der Verbindungsherstellung mit diesem WLAN angezeigt wird.  
+      **Zertifikatservernamen:** Verwenden Sie diese Option mit den EAP-Typen **EAP-TLS**, **EAP-TTLS** oder **PEAP**. Geben Sie mindestens einen allgemeinen Namen ein, der in den von der vertrauenswürdigen Zertifizierungsstelle ausgestellten Zertifikaten verwendet wird. Wenn Sie diese Informationen eingeben, können Sie das Dialogfeld für dynamische Vertrauensstellungen umgehen, das auf Benutzergeräten bei der Verbindungsherstellung mit diesem WLAN angezeigt wird.  
 
-        **Stammzertifikat zur Servervalidierung:** Verwenden Sie diese Option mit den EAP-Typen **EAP-TLS**, **EAP-TTLS** oder **PEAP**. Wählen Sie das vertrauenswürdige Stammzertifikatprofil zur Authentifizierung der Verbindung aus.  
+      **Stammzertifikat zur Servervalidierung:** Verwenden Sie diese Option mit den EAP-Typen **EAP-TLS**, **EAP-TTLS** oder **PEAP**. Wählen Sie das vertrauenswürdige Stammzertifikatprofil zur Authentifizierung der Verbindung aus.  
 
-        **Identitätsschutz (äußere Identität):** Verwenden Sie diese Option mit dem EAP-Typ **PEAP**. Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.  
+      **Identitätsschutz (äußere Identität):** Verwenden Sie diese Option mit dem EAP-Typ **PEAP**. Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.  
 
-      - **Clientauthentifizierung**
+    - **Clientauthentifizierung**
 
-        **Clientzertifikat zur Clientauthentifizierung (Identitätszertifikat):** Verwenden Sie diese Option mit dem EAP-Typ **EAP-TLS**. Wählen Sie das Zertifikatprofil zur Authentifizierung der Verbindung aus.
+      **Clientzertifikat zur Clientauthentifizierung (Identitätszertifikat):** Verwenden Sie diese Option mit dem EAP-Typ **EAP-TLS**. Wählen Sie das Zertifikatprofil zur Authentifizierung der Verbindung aus.
 
-        **Authentifizierungsmethode:** Verwenden Sie diese Option mit dem EAP-Typ **EAP-TTLS**. Wählen Sie die Authentifizierungsmethode für die Verbindung aus:  
+      **Authentifizierungsmethode:** Verwenden Sie diese Option mit dem EAP-Typ **EAP-TTLS**. Wählen Sie die Authentifizierungsmethode für die Verbindung aus:  
 
-          - **Zertifikate:** Wählen Sie das Clientzertifikat aus, das dem Server als Identitätszertifikat übermittelt wird.
-          - **Benutzername und Kennwort:** Geben Sie als Authentifizierungsmethode eine **Nicht-EAP-Methode (innere Identität)** an. Folgende Optionen sind verfügbar:
+      - **Zertifikate:** Wählen Sie das Clientzertifikat aus, das dem Server als Identitätszertifikat übermittelt wird.
+      - **Benutzername und Kennwort:** Geben Sie als Authentifizierungsmethode eine **Nicht-EAP-Methode (innere Identität)** an. Folgende Optionen sind verfügbar:
 
-            - **Unverschlüsseltes Kennwort (PAP)**
-            - **Challenge Handshake (CHAP)**
-            - **Microsoft CHAP (MS-CHAP)**
-            - **Microsoft CHAP, Version 2 (MS-CHAP v2)**
+        - **Unverschlüsseltes Kennwort (PAP)**
+        - **Challenge Handshake (CHAP)**
+        - **Microsoft CHAP (MS-CHAP)**
+        - **Microsoft CHAP, Version 2 (MS-CHAP v2)**
 
-        **Identitätsschutz (äußere Identität):** Verwenden Sie diese Option mit dem EAP-Typ **EAP-TTLS**. Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.
+      **Identitätsschutz (äußere Identität):** Verwenden Sie diese Option mit dem EAP-Typ **EAP-TTLS**. Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet werden soll. Dies kann ein beliebiger Text sein. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.
 
 - **Proxyeinstellungen für Unternehmen**: Wählen Sie die Proxyeinstellungen aus, die innerhalb Ihrer Organisation verwendet werden sollen. Folgende Optionen sind verfügbar:
   - **Keine**: Es sind keine Proxyeinstellungen konfiguriert.

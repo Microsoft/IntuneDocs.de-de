@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eade2a1bc19e4b0c477faf2ad8e262196da8cc30
-ms.sourcegitcommit: ede86a3cb094c12e3e218b956abb9935bec76902
+ms.openlocfilehash: b79f488fcaa221523b5833aa1cebcf872d5f9b3d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67572514"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354004"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Unterstützen des Schutzes von Windows-PCs mithilfe von Windows-Firewall-Richtlinien in Microsoft Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Die Informationen in diesem Thema gelten nur für Windows-Desktops, die Sie als PCs mithilfe des Intune-Softwareclients verwalten. Wenn Sie verwalten möchten-Firewall-Einstellungen für Windows-PCs als mobile Geräte registriert, finden Sie unter [Hinzufügen von Endpoint Protection-Einstellungen in Intune](endpoint-protection-configure.md).
+> Die Informationen in diesem Thema gelten nur für Windows-Desktops, die Sie als PCs mithilfe des Intune-Softwareclients verwalten. Wenn Sie Firewalleinstellungen für als mobile Geräte registrierte Windows-PCs verwalten möchten, finden Sie weitere Informationen unter [Hinzufügen von Endpoint Protection-Einstellungen in InTune](endpoint-protection-configure.md).
 
 Microsoft Intune kann Ihnen auf verschiedene Weisen helfen, die mit dem Intune-Client verwalteten PCs zu schützen. Eine Möglichkeit sind Richtlinien, über die sich Windows-Firewall-Einstellungen auf PCs konfigurieren lassen.
 
@@ -100,7 +100,7 @@ Der Standardwert für jede dieser Einstellungen ist **Ja**.
 
 Sie können Ausnahmen konfigurieren, die bestimmten durch die Firewall geleiteten Netzwerkverkehr unabhängig von den zuvor konfigurierten Werten zulassen. Standardmäßig ist keine dieser Einstellungen konfiguriert.
 
-|Name der Einstellung|Details|
+|Einstellungsname|Details|
 |------------------|--------------------|
 |**BranchCache – Inhaltsabruf**<br>(Windows 7 oder höher)|Ermöglicht BranchCache-Clients, mithilfe von HTTP im verteilten Modus Inhalte von anderen BranchCache-Clients und im gehosteten Cachemodus Inhalte aus dem gehosteten Cache abzurufen. Bei dieser Einstellung wird HTTP verwendet.|
 |**BranchCache – Gehosteter Cacheclient**<br>(Windows 7 oder höher)|Ermöglicht BranchCache-Clients, einen gehosteten Cache zu verwenden. Bei dieser Einstellung wird HTTPS verwendet.|
@@ -136,9 +136,9 @@ Sie können Ausnahmen konfigurieren, die bestimmten durch die Firewall geleitete
 |**Windows-Teamarbeit**|Ermöglicht Benutzern, über ein Netzwerk zusammenzuarbeiten, um Dokumente, Programme und den Desktop freizugeben. Bei dieser Einstellung werden die DFS-Replikation (Distributed File System Replication, DFSR) und P2P verwendet.|
 |**Windows-Peer-zu-Peer-Zusammenarbeits-Foundation**|Konfiguriert verschiedene Peer-zu-Peer-Programme und -Technologien, um ihnen das Herstellen von Verbindungen zu ermöglichen. Bei dieser Einstellung werden SSDP und PNRP verwendet.|
 |**Windows-Remoteverwaltung (Kompatibilität)**|Ermöglicht die Remoteverwaltung verwalteter Computer unter Verwendung von WS-Management, einem auf Webdiensten basierenden Protokoll für die Remoteverwaltung von Betriebssystemen und Geräten.|
-|**Windows-Remoteverwaltung**<br>(Windows 8 oder höher)|Ermöglicht die Remoteverwaltung verwalteter Computer unter Verwendung von WS-Management, einem auf Webdiensten basierenden Protokoll für die Remoteverwaltung von Betriebssystemen und Geräten.|
+|**Windows-Remoteverwaltung**<br>(Windows 8 oder spätere Versionen)|Ermöglicht die Remoteverwaltung verwalteter Computer unter Verwendung von WS-Management, einem auf Webdiensten basierenden Protokoll für die Remoteverwaltung von Betriebssystemen und Geräten.|
 |**Windows Virtual PC**<br>(Windows 7 oder höher)|Ermöglicht virtuellen Computern die Kommunikation mit anderen Computern.|
 |**Tragbare Drahtlosgeräte**|Ermöglicht die Medienübertragung von einer netzwerkfähigen Kamera oder einem Mediengerät auf verwaltete Computer unter Verwendung des MTP-Protokolls (Media Transfer Protocol). Bei dieser Einstellung werden die Netzwerkprotokolle SSDP und UPnP verwendet.|
 
-### <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Siehe auch
 [Richtlinien zum Schutz von Windows-PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)

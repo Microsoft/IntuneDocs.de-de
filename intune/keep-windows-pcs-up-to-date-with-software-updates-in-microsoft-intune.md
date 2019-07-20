@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70818e038be915a1b756eb391129e6cdb74fb069
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a94c327c8595e83ec9808ed41e788c5756d5510a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548650"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353875"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Aktualisieren Ihrer Windows-PCs mit Softwareupdates in Microsoft Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Die Informationen in diesem Thema gelten nur für Windows-Desktops, die Sie als PCs mithilfe des Intune-Softwareclients verwalten. Wenn Sie verwalten möchten Updates für Windows-PCs als mobile Geräte registriert, finden Sie unter [Verwalten von Softwareupdates in Intune](windows-update-for-business-configure.md).
+> Die Informationen in diesem Thema gelten nur für Windows-Desktops, die Sie als PCs mithilfe des Intune-Softwareclients verwalten. Informationen zum Verwalten von Updates für Windows-PCs, die als mobile Geräte registriert sind, finden Sie unter [Verwalten von Software Updates in InTune](windows-update-for-business-configure.md).
 
 Microsoft Intune unterstützt Sie auf vielfältige Weise beim Schutz Ihrer verwalteten Computer, z.B. durch die Verwaltung von Softwareupdates. Dadurch ist sichergestellt, dass die neuesten Patches und Softwareupdates schnell installiert werden, sodass Ihre Computer immer auf dem neuesten Stand sind.
 
@@ -44,7 +44,7 @@ Wenn Updates genehmigt und installiert werden, können Sie den Erfolg oder Misse
 
 Verwenden Sie die Informationen in den folgenden Abschnitten, um die Software auf den von Ihnen verwalteten Computern auf dem aktuellen Stand zu halten.
 
-## <a name="before-you-start"></a>Vorbereitung
+## <a name="before-you-start"></a>Bevor Sie beginnen
 Bevor Sie mit dem Erstellen und Genehmigen von Softwareupdates beginnen, konfigurieren Sie Richtlinien, mit denen gesteuert wird, wann und wie die Updates installiert werden, und stellen Sie diese auf Ihren Computern bereit.
 
 ### <a name="to-configure-update-policy-settings"></a>So konfigurieren Sie Einstellungen für Updaterichtlinien
@@ -260,5 +260,5 @@ Wenn Sie ein Update aus der Liste auswählen, werden weitere Befehle verfügbar,
 6. Sie können unten auf der Seite **Alle Updates** im Detailbereich überprüfen, ob Erinnerungsmeldungen zu dem Update vorhanden sind.
 
 
-### <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Siehe auch
 [Richtlinien zum Schutz von Windows-PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)

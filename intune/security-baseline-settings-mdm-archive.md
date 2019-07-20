@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bb6cd7b1d717cd289b65e1e05566bd07471ad84f
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 220327c48712881e57efa1a91b9d00a64ba3e0be
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735794"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884686"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -33,12 +33,12 @@ Wenn eine neue MDM-Sicherheitsbaseline veröffentlicht wird, wird die vorherige 
 
 Wenn eine Baselineversion nicht mehr zur Verwendung unterstützt wird, wird Sie aus diesem Artikel entfernt.
 
-- Anzeigen der in [der aktuellen MDM-Sicherheitsbaseline verfügbaren Einstellungen](security-baseline-settings-mdm.md) 
-- Erfahren Sie [mehr über Sicherheitsbaselines](security-baselines.md)und das Upgrade der Baselineversion in ihren Sicherheitsbaseline-Profilen.
+- Anzeigen der in [der aktuellen MDM-Sicherheitsbaseline](security-baseline-settings-mdm.md) verfügbaren Einstellungen 
+- Erfahren Sie mehr über [Sicherheitsbaselines](security-baselines.md)und das Upgrade der Baselineversion in ihren Sicherheitsbaseline-Profilen.
 
 ## <a name="preview-mdm-security-baseline-for-october-2018"></a>Vorschauversion: MDM-Sicherheitsbaseline für Oktober 2018  
 
-*Diese Baseline wird durch [die MDM-Sicherheitsbaseline für Spring 2019 (19h1) abgelöst.](security-baseline-settings-mdm.md)*
+*Diese Baseline wird durch die [MDM-Sicherheitsbaseline für Spring 2019 (19h1) abgelöst.](security-baseline-settings-mdm.md)*
 
 ### <a name="above-lock"></a>Sperrbildschirm  
 
@@ -97,23 +97,23 @@ Weitere Informationen finden Sie unter [Policy CSP - BitLocker (Richtlinien-Konf
 
   Konfigurieren Sie bei der Richtlinie für BitLocker-Verschlüsselung von Wechseldatenträgern die folgenden Einstellungen:
 
-    - **Verschlüsselung für Schreibzugriff anfordern**  
-      **Standard**: Ja  
-  
-    - **Verschlüsselungsmethode**  
-      **Standard**: AES-256-Bit (CBC)  
+  - **Verschlüsselung für Schreibzugriff anfordern**  
+    **Standard**: Ja  
+
+  - **Verschlüsselungsmethode**  
+    **Standard**: AES-256-Bit (CBC)  
 
 - **Richtlinie für BitLocker-Verschlüsselung von Festplattenlaufwerken**  
   Diese Richtlinieneinstellung wird verwendet, um die Verschlüsselungsmethode und Verschlüsselungsstärke zu steuern. Die Werte dieser Richtlinie bestimmen die Stärke der Verschlüsselung, die BitLocker für die Verschlüsselung verwendet. Unternehmen sollten die Verschlüsselungsstufe für erhöhte Sicherheit steuern (AES-256 ist sicherer als AES-128). Wenn Sie diese Einstellung aktivieren, können Sie einen Verschlüsselungsalgorithmus konfigurieren und für Festplattenlaufwerke, Betriebssystemlaufwerke und Wechseldatenträger die Verschlüsselungsstärke für Schlüssel individuell konfigurieren. Für Festplatten- und Betriebssystemlaufwerke wird die Verwendung des XTS-AES-Algorithmus empfohlen. Für Wechseldatenträger sollten Sie AES-CBC 128-Bit oder AES-CBC 256-Bit verwenden, wenn es in anderen Geräten verwendet wird, auf denen nicht Windows 10, Version 1511 oder höher ausgeführt wird. Das Ändern der Verschlüsselungsmethode hat keine Auswirkungen, wenn das Laufwerk bereits verschlüsselt ist oder die Verschlüsselung gerade ausgeführt wird. In diesen Fällen wird diese Richtlinieneinstellung ignoriert.  
  
-   Konfigurieren Sie bei der Richtlinie für BitLocker-Verschlüsselung von Festplattenlaufwerken die folgenden Einstellungen: 
-   - **Verschlüsselungsmethode**
-     **Standard**: AES-256-Bit (XTS)  
+  Konfigurieren Sie bei der Richtlinie für BitLocker-Verschlüsselung von Festplattenlaufwerken die folgenden Einstellungen: 
+  - **Verschlüsselungsmethode**  
+    **Standard**: AES-256-Bit (XTS)  
 
 - **Richtlinie für BitLocker-Verschlüsselung von Systemlaufwerken**  
   Diese Richtlinieneinstellung wird verwendet, um die Verschlüsselungsmethode und Verschlüsselungsstärke zu steuern. Die Werte dieser Richtlinie bestimmen die Stärke der Verschlüsselung, die BitLocker für die Verschlüsselung verwendet. Unternehmen sollten die Verschlüsselungsstufe für erhöhte Sicherheit steuern (AES-256 ist sicherer als AES-128). Wenn Sie diese Einstellung aktivieren, können Sie einen Verschlüsselungsalgorithmus konfigurieren und für Festplattenlaufwerke, Betriebssystemlaufwerke und Wechseldatenträger die Verschlüsselungsstärke für Schlüssel individuell konfigurieren. Für Festplatten- und Betriebssystemlaufwerke wird die Verwendung des XTS-AES-Algorithmus empfohlen. Für Wechseldatenträger sollten Sie AES-CBC 128-Bit oder AES-CBC 256-Bit verwenden, wenn es in anderen Geräten verwendet wird, auf denen nicht Windows 10, Version 1511 oder höher ausgeführt wird. Das Ändern der Verschlüsselungsmethode hat keine Auswirkungen, wenn das Laufwerk bereits verschlüsselt ist oder die Verschlüsselung gerade ausgeführt wird. In diesen Fällen wird diese Richtlinieneinstellung ignoriert.  
 
-   Konfigurieren Sie bei der Richtlinie für BitLocker-Verschlüsselung von Systemlaufwerken die folgenden Einstellungen:
+  Konfigurieren Sie bei der Richtlinie für BitLocker-Verschlüsselung von Systemlaufwerken die folgenden Einstellungen:
   - **Verschlüsselungsmethode**  
     **Standard**: AES-256-Bit (XTS)  
 
@@ -181,7 +181,7 @@ Weitere Informationen finden Sie unter [Policy CSP – Connectivity (Richtlinien
   
   **Standard**: Deaktiviert  
 
-### <a name="data-protection"></a>Schutz von Daten  
+### <a name="data-protection"></a>Datenschutz  
 
 Weitere Informationen finden Sie unter [Policy CSP – Defender (Richtlinien-Konfigurationsdienstanbieter: DataProtection)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection
 ) in der Windows-Dokumentation.  
@@ -219,33 +219,33 @@ Weitere Informationen finden Sie unter [Policy CSP – DeviceInstallation (Richt
   
   **Standard**: Block hardware device installation (Hardwaregeräteinstallation blockieren)  
 
-    Wenn *Block hardware device installation* ausgewählt wurde, stehen die folgenden Einstellungen zur Verfügung.
-  
-    - **Remove matching hardware devices**  (Übereinstimmende Hardwaregeräte entfernen)  
-    Diese Einstellung ist nur verfügbar, wenn die Option *Hardware device installation by device identifiers* (Installation von Hardwaregeräten anhand der Geräte-ID) auf *Block hardware device installation* (Hardwaregeräteinstallation blockieren) festgelegt ist.
-      
-      **Standard**: Ja
-  
-    - **Hardware device identifiers that are blocked** (Blockierte Bezeichner von Hardwaregeräten)  
-       Diese Einstellung ist nur verfügbar, wenn die Option *Hardware device installation by device identifiers* (Installation von Hardwaregeräten anhand der Geräte-ID) auf *Block hardware device installation* (Hardwaregeräteinstallation blockieren) festgelegt ist.
-      
-      **Standard**: Ja  
+  Wenn *Block hardware device installation* ausgewählt wurde, stehen die folgenden Einstellungen zur Verfügung.
+
+  - **Remove matching hardware devices**  (Übereinstimmende Hardwaregeräte entfernen)  
+  Diese Einstellung ist nur verfügbar, wenn die Option *Hardware device installation by device identifiers* (Installation von Hardwaregeräten anhand der Geräte-ID) auf *Block hardware device installation* (Hardwaregeräteinstallation blockieren) festgelegt ist.
+    
+    **Standard**: Ja
+
+  - **Hardware device identifiers that are blocked** (Blockierte Bezeichner von Hardwaregeräten)  
+      Diese Einstellung ist nur verfügbar, wenn die Option *Hardware device installation by device identifiers* (Installation von Hardwaregeräten anhand der Geräte-ID) auf *Block hardware device installation* (Hardwaregeräteinstallation blockieren) festgelegt ist.
+    
+    **Standard**: Ja  
   
 - **Hardware device installation by device identifiers** (Installation von Hardwaregeräten anhand der Setupklassen)  
   Mit dieser Richtlinieneinstellung können Sie eine Liste von GUIDs für Gerätesetupklassen angeben, die Gerätetreiber beschreiben, die unter Windows nicht installierbar sind. Diese Richtlinieneinstellung hat Vorrang gegenüber jeder anderen Richtlinieneinstellung, die die Installation eines Geräts ermöglicht. Wenn Sie diese Richtlinieneinstellung aktivieren, können Gerätetreiber nicht installiert oder aktualisiert werden, deren GUIDs für Gerätesetupklassen in der von Ihnen erstellten Liste enthalten sind. Wenn Sie diese Richtlinieneinstellung auf einem Remotedesktopserver aktivieren, wirkt sich dies auf die Umleitung der angegebenen Geräte von einem Remotedesktopclient an den Remotedesktopserver aus. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, können Geräte unter Windows installiert und aktualisiert werden, sofern andere Richtlinieneinstellungen dies zulassen.
   
   **Standard**: Block hardware device installation (Hardwaregeräteinstallation blockieren)  
 
-    Wenn *Block hardware device installation* ausgewählt wurde, stehen die folgenden Einstellungen zur Verfügung.
-    - **Remove matching hardware devices**   (Übereinstimmende Hardwaregeräte entfernen)  
-    Diese Einstellung ist nur verfügbar, wenn *Hardware device installation by setup classes (Hardwaregeräteinstallation nach Setup-Klasse)* auf *Block hardware device installation (Hardwaregeräteinstallation blockieren)* eingestellt ist.  
+  Wenn *Block hardware device installation* ausgewählt wurde, stehen die folgenden Einstellungen zur Verfügung.
+  - **Remove matching hardware devices**   (Übereinstimmende Hardwaregeräte entfernen)  
+  Diese Einstellung ist nur verfügbar, wenn *Hardware device installation by setup classes (Hardwaregeräteinstallation nach Setup-Klasse)* auf *Block hardware device installation (Hardwaregeräteinstallation blockieren)* eingestellt ist.  
 
-      **Standard**: *Keine Standardkonfiguration*  
-  
-    - **Hardware device identifiers that are blocked** (Blockierte Bezeichner von Hardwaregeräten)  
-      Diese Einstellung ist nur verfügbar, wenn *Hardware device installation by setup classes (Hardwaregeräteinstallation nach Setup-Klasse)* auf *Block hardware device installation (Hardwaregeräteinstallation blockieren)* eingestellt ist.
-      
-      **Standard**: *Keine Standardkonfiguration*  
+    **Standard**: *Keine Standardkonfiguration*  
+
+  - **Hardware device identifiers that are blocked** (Blockierte Bezeichner von Hardwaregeräten)  
+    Diese Einstellung ist nur verfügbar, wenn *Hardware device installation by setup classes (Hardwaregeräteinstallation nach Setup-Klasse)* auf *Block hardware device installation (Hardwaregeräteinstallation blockieren)* eingestellt ist.
+    
+    **Standard**: *Keine Standardkonfiguration*  
 
 ### <a name="device-lock"></a>Gerätesperre  
 
@@ -329,7 +329,7 @@ Weitere Informationen finden Sie unter [Policy CSP - EventLogService (Richtlinie
   
   **Standard**: 32768  
 
-### <a name="experience"></a>Erfahrung  
+### <a name="experience"></a>Benutzerfreundlichkeit  
 
 Weitere Informationen finden Sie unter [Policy CSP - Experience (Richtlinien-Konfigurationsdienstanbieter: Experience)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) in Ihrer Windows-Dokumentation.  
 
@@ -576,7 +576,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   **Standard**: Deaktivieren  
   
 - **Internet Explorer internet zone allow vbscript to run** (Zulassen der Ausführung des VBScript in einer Internet Explorer-Zone)  
-  Diese Einstellung bestimmt, ob das VBScript auf Seiten in bestimmten Internet Explorer-Zonen ausgeführt werden kann. Zu den Optionen gehören: 
+  Diese Einstellung bestimmt, ob das VBScript auf Seiten in bestimmten Internet Explorer-Zonen ausgeführt werden kann. Sie haben folgende Optionen: 
   - *Aktivieren*: Das VBScript wird auf Seiten in bestimmten Zonen ohne Interaktionen ausgeführt. 
   - *Bestätigung*: Mitarbeiter werden aufgefordert festzulegen, ob das VBScript in der Zone ausgeführt werden soll. 
   - *Deaktivieren*: Das VBScript wird in der Zone nicht ausgeführt. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird das VBScript ohne Interaktionen in der angegebenen Zone ausgeführt. 
@@ -991,18 +991,18 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
   **Standard**: Ja
   
 - **Administrator elevation prompt behavior** (Verhalten für Administratoren bei der Eingabeaufforderung für erhöhte Rechte)  
-  Mit dieser Richtlinieneinstellung können Sie das Verhalten der Eingabeaufforderung für erhöhte Rechte für Administratoren bestimmen. Folgende Optionen sind verfügbar: 
-    - *Erhöhte Rechte ohne Eingabeaufforderung*: Ermöglicht mit Rechten versehenen Konten das Ausführen eines Vorgangs, für den erhöhte Rechte erforderlich sind, ohne dass dafür Zustimmung oder Anmeldeinformationen erforderlich sind. Hinweis: Verwenden Sie diese Option nur in Umgebungen, die besonders starken Beschränkungen unterliegen. 
-    - *Eingabeaufforderung zu Anmeldeinformationen auf dem sicheren Desktop*: Wenn für einen Vorgang erhöhte Rechte erforderlich sind, wird der Benutzer auf dem sicheren Desktop zur Eingabe eines entsprechenden Benutzernamens und Kennworts aufgefordert. Wenn der Benutzer gültige Anmeldeinformationen eingibt, wird der Vorgang mit dem höchsten verfügbaren Recht des Benutzers fortgesetzt. 
-    - *Eingabeaufforderung zur Zustimmung auf dem sicheren Desktop*: Wenn für einen Vorgang erhöhte Rechte erforderlich sind, wird der Benutzer auf dem sicheren Desktop zur Auswahl von „Zulassen“ oder „Verweigern“ aufgefordert. Wenn der Benutzer „Zulassen“ auswählt, wird der Vorgang mit dem höchsten verfügbaren Recht des Benutzers fortgesetzt. 
-    - *Eingabeaufforderung zu Anmeldeinformationen*: Wenn für einen Vorgang erhöhte Rechte erforderlich sind, wird der Benutzer zur Eingabe eines Administratorbenutzernamens und -kennworts aufgefordert. Wenn der Benutzer gültige Anmeldeinformationen eingibt, wird der Vorgang mit dem entsprechenden Recht fortgesetzt. 
-    - *Eingabeaufforderung zur Zustimmung*: Wenn für einen Vorgang erhöhte Rechte erforderlich sind, wählen Sie entweder „Zulassen“ oder „Verweigern“ aus. Wenn der Benutzer „Zulassen“ auswählt, wird der Vorgang mit dem höchsten verfügbaren Recht des Benutzers fortgesetzt.  
-    - *Eingabeaufforderung zur Zustimmung für Nicht-Windows-Binärdateien*: Wenn für einen Vorgang für eine nicht von Microsoft stammende Anwendung erhöhte Rechte erforderlich sind, wird der Benutzer auf dem sicheren Desktop aufgefordert, entweder „Zulassen“ oder „Verweigern“ auszuwählen. Wenn der Benutzer „Zulassen“ auswählt, wird der Vorgang mit dem höchsten verfügbaren Recht des Benutzers fortgesetzt.   
+  Mit dieser Richtlinieneinstellung können Sie das Verhalten der Eingabeaufforderung für erhöhte Rechte für Administratoren bestimmen. Folgende Optionen stehen zur Verfügung: 
+  - *Erhöhte Rechte ohne Eingabeaufforderung*: Ermöglicht mit Rechten versehenen Konten das Ausführen eines Vorgangs, für den erhöhte Rechte erforderlich sind, ohne dass dafür Zustimmung oder Anmeldeinformationen erforderlich sind. Hinweis: Verwenden Sie diese Option nur in Umgebungen, die besonders starken Beschränkungen unterliegen. 
+  - *Eingabeaufforderung zu Anmeldeinformationen auf dem sicheren Desktop*: Wenn für einen Vorgang erhöhte Rechte erforderlich sind, wird der Benutzer auf dem sicheren Desktop zur Eingabe eines entsprechenden Benutzernamens und Kennworts aufgefordert. Wenn der Benutzer gültige Anmeldeinformationen eingibt, wird der Vorgang mit dem höchsten verfügbaren Recht des Benutzers fortgesetzt. 
+  - *Eingabeaufforderung zur Zustimmung auf dem sicheren Desktop*: Wenn für einen Vorgang erhöhte Rechte erforderlich sind, wird der Benutzer auf dem sicheren Desktop zur Auswahl von „Zulassen“ oder „Verweigern“ aufgefordert. Wenn der Benutzer „Zulassen“ auswählt, wird der Vorgang mit dem höchsten verfügbaren Recht des Benutzers fortgesetzt. 
+  - *Eingabeaufforderung zu Anmeldeinformationen*: Wenn für einen Vorgang erhöhte Rechte erforderlich sind, wird der Benutzer zur Eingabe eines Administratorbenutzernamens und -kennworts aufgefordert. Wenn der Benutzer gültige Anmeldeinformationen eingibt, wird der Vorgang mit dem entsprechenden Recht fortgesetzt. 
+  - *Eingabeaufforderung zur Zustimmung*: Wenn für einen Vorgang erhöhte Rechte erforderlich sind, wählen Sie entweder „Zulassen“ oder „Verweigern“ aus. Wenn der Benutzer „Zulassen“ auswählt, wird der Vorgang mit dem höchsten verfügbaren Recht des Benutzers fortgesetzt.  
+  - *Eingabeaufforderung zur Zustimmung für Nicht-Windows-Binärdateien*: Wenn für einen Vorgang für eine nicht von Microsoft stammende Anwendung erhöhte Rechte erforderlich sind, wird der Benutzer auf dem sicheren Desktop aufgefordert, entweder „Zulassen“ oder „Verweigern“ auszuwählen. Wenn der Benutzer „Zulassen“ auswählt, wird der Vorgang mit dem höchsten verfügbaren Recht des Benutzers fortgesetzt.   
   
   **Standard**: Zustimmungsaufforderung für sicheren Desktop
   
 - **Minimum session security for NTLM SSP based clients** (Minimale Sitzungssicherheit für NTLM-basierte SSP-Clients)  
-  Mit dieser Sicherheitseinstellung kann die Aushandlung der 128-Bit-Verschlüsselung und bzw. oder der NTLMv2-Sitzungssicherheit für einen Client als erforderlich festgelegt werden. Diese Werte hängen vom Wert des Sicherheitseinstellungswerts für die LAN Manager-Authentifizierungsebene ab. Folgende Optionen sind verfügbar:
+  Mit dieser Sicherheitseinstellung kann die Aushandlung der 128-Bit-Verschlüsselung und bzw. oder der NTLMv2-Sitzungssicherheit für einen Client als erforderlich festgelegt werden. Diese Werte hängen vom Wert des Sicherheitseinstellungswerts für die LAN Manager-Authentifizierungsebene ab. Folgende Optionen stehen zur Verfügung:
   - „NTLMv2-Sitzungssicherheit erfordern“: Die Verbindung schlägt fehl, wenn das NTLMv2-Protokoll nicht ausgehandelt wird. 
   - *128-Bit-Verschlüsselung erfordern*: Die Verbindung schlägt fehl, wenn keine starke Verschlüsselung (128-Bit) ausgehandelt wird.
   - *NTLMv2- und 128-Bit-Verschlüsselung erfordern*. 
@@ -1010,12 +1010,12 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
   **Standard**: NTLMv2- und 128-Bit-Verschlüsselung erfordern
   
 - **Smart card removal behavior** (Verhalten beim Entfernen von Smartcards)  
-    Diese Sicherheitseinstellung legt fest, was geschieht, wenn die Smartcard für einen angemeldeten Benutzer aus dem Smartcardleser entfernt wird. Folgende Optionen sind verfügbar:
-     - *Keine Aktion*. 
-     - *Arbeitsstation sperren* – Die Arbeitsstation wird beim Entfernen der Smartcard gesperrt, sodass Benutzer den Arbeitsbereich verlassen, die Smartcard mitnehmen und dennoch eine geschützte Sitzung aufrechterhalten können.
-     - *Abmeldung erzwingen*: Der Benutzer wird automatisch abgemeldet, wenn die Smartcard entfernt wird.
-     - *Disconnect Remote Desktop session* (Remotedesktopsitzung beenden): Das Entfernen der Smartcard beendet die Sitzung, ohne den Benutzer abzumelden. Dies ermöglicht es Benutzern, die Smartcard einzulegen und die Sitzung später oder auf einem anderen Computer mit Smartcard-Leser fortzusetzen, ohne sich erneut anmelden zu müssen. Wenn die Sitzung lokal stattfindet, funktioniert diese Richtlinie genau wie „Arbeitsstation sperren“.  <br><br>
-    
+  Diese Sicherheitseinstellung legt fest, was geschieht, wenn die Smartcard für einen angemeldeten Benutzer aus dem Smartcardleser entfernt wird. Folgende Optionen stehen zur Verfügung:
+  - *Keine Aktion*. 
+  - *Arbeitsstation sperren* – Die Arbeitsstation wird beim Entfernen der Smartcard gesperrt, sodass Benutzer den Arbeitsbereich verlassen, die Smartcard mitnehmen und dennoch eine geschützte Sitzung aufrechterhalten können.
+  - *Abmeldung erzwingen*: Der Benutzer wird automatisch abgemeldet, wenn die Smartcard entfernt wird.
+  - *Disconnect Remote Desktop session* (Remotedesktopsitzung beenden): Das Entfernen der Smartcard beendet die Sitzung, ohne den Benutzer abzumelden. Dies ermöglicht es Benutzern, die Smartcard einzulegen und die Sitzung später oder auf einem anderen Computer mit Smartcard-Leser fortzusetzen, ohne sich erneut anmelden zu müssen. Wenn die Sitzung lokal stattfindet, funktioniert diese Richtlinie genau wie „Arbeitsstation sperren“.  <br><br>
+
   **Standard**: Arbeitsstation sperren
   
 - **Block anonymous enumeration of SAM accounts and shares** (Anonyme Aufzählung von SAM-Konten und Freigaben blockieren)  
@@ -1041,7 +1041,7 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
   **Standard**: Anforderungen für erhöhte Rechte automatisch ablehnen
   
 - **Require admin approval mode for administrators** (Administratorgenehmigungsmodus für Administratoren erfordern)  
-  Mit dieser Richtlinieneinstellung wird das Verhalten aller UAC-Richtlinieneinstellungen (User Account Control, Benutzerkontensteuerung) für den Computer bestimmt. Wenn Sie diese Richtlinieneinstellung ändern, muss der Computer neu gestartet werden. Folgende Optionen sind verfügbar:   
+  Mit dieser Richtlinieneinstellung wird das Verhalten aller UAC-Richtlinieneinstellungen (User Account Control, Benutzerkontensteuerung) für den Computer bestimmt. Wenn Sie diese Richtlinieneinstellung ändern, muss der Computer neu gestartet werden. Folgende Optionen stehen zur Verfügung:   
   - *Nicht konfiguriert*: Der Administratorgenehmigungsmodus und alle verwandten UAC-Richtlinieneinstellungen sind deaktiviert. Hinweis: Wenn diese Richtlinieneinstellung deaktiviert ist, werden Sie vom Sicherheitscenter benachrichtigt, dass die allgemeine Sicherheit des Betriebssystems eingeschränkt ist. 
   - *Ja*: Der Administratorgenehmigungsmodus ist aktiviert. Diese Richtlinieneinstellung muss aktiviert und verwandte UAC-Richtlinieneinstellungen müssen entsprechend festgelegt werden, damit das integrierte Administratorkonto und alle anderen Benutzerkonten, die Mitglieder der Administratorgruppe sind, im Administratorgenehmigungsmodus ausgeführt werden können.  
   
@@ -1060,7 +1060,7 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
   **Standard**: *O:BAG:BAD:(A;;RC;;;BA)*
 
 - **Use admin approval mode** (Administratorgenehmigungsmodus verwenden)  
-  Mit dieser Richtlinieneinstellung können Sie das Verhalten des Administratorgenehmigungsmodus für das integriertes Administratorkonto bestimmen. Folgende Optionen sind verfügbar: 
+  Mit dieser Richtlinieneinstellung können Sie das Verhalten des Administratorgenehmigungsmodus für das integriertes Administratorkonto bestimmen. Folgende Optionen stehen zur Verfügung: 
   - *Ja*: Für das integrierte Administratorkonto wird der Administratorgenehmigungsmodus verwendet. Standardmäßig wird der Benutzer bei jedem Vorgang, der die Höherstufung von Rechten erfordert, zur Genehmigung aufgefordert. 
   - *Nicht konfiguriert*: Mit dem integrierten Administratorkonto werden alle Anwendungen mit vollständigen Administratorrechten ausgeführt.  
 
@@ -1074,7 +1074,7 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
   **Standard**: Ja
 
 - **Detect application installations and prompt for elevation** (Anwendungsinstallationen erkennen und erhöhte Rechte anfordern)  
-  Mit dieser Richtlinieneinstellung können Sie das Verhalten bei der Erkennung einer Anwendungsinstallation auf dem Computer bestimmen. Folgende Optionen sind verfügbar: 
+  Mit dieser Richtlinieneinstellung können Sie das Verhalten bei der Erkennung einer Anwendungsinstallation auf dem Computer bestimmen. Folgende Optionen stehen zur Verfügung: 
   - *Aktiviert*: Wenn ein Anwendungsinstallationspaket erkannt wird, das erhöhte Rechte erfordert, wird der Benutzer zur Eingabe eines Administratorbenutzernamens und -kennworts aufgefordert. Wenn der Benutzer gültige Anmeldeinformationen eingibt, wird der Vorgang mit dem entsprechenden Recht fortgesetzt. 
   - *Deaktiviert*: Anwendungsinstallationspakete werden nicht erkannt, und es wird keine Eingabeaufforderung für erhöhte Rechte angezeigt. Unternehmen, die Standardbenutzerdesktops und delegierte Installationstechnologien wie Gruppenrichtlinien-Softwareinstallation oder Systems Management Server (SMS) verwenden, sollten diese Richtlinieneinstellung deaktivieren. In diesem Fall ist keine Installationserkennung erforderlich.  
   
@@ -1303,7 +1303,7 @@ Weitere Informationen finden Sie unter [Policy CSP - WindowsConnectionManager (R
 
   **Standard**: Aktiviert
   
-### <a name="windows-defender"></a>Windows Defender  
+### <a name="windows-defender"></a>Windows Defender  
 
 Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfigurationsdienstanbieter: Defender)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) in Ihrer Windows-Dokumentation.  
 
@@ -1429,7 +1429,7 @@ Weitere Informationen finden Sie unter [Policy CSP - WindowsInkWorkspace (Richtl
 
   **Standard**: Aktiviert
  
-### <a name="windows-powershell"></a>Windows PowerShell  
+### <a name="windows-powershell"></a>Windows PowerShell  
 
 Weitere Informationen finden Sie unter [Policy CSP - WindowsPowerShell (Richtlinien-Konfigurationsdienstanbieter - WindowsPowerShell)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowspowershell) in Ihrer Windows-Dokumentation.  
 

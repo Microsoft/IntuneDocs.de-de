@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fa483a49ad7fa44172a83f024540a75d1d881dc
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b61f4ded04d01f04727768557e6730c34fd4760c
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040918"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882452"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Darstellung der Benutzerlebensdauer im Microsoft Intune-Data Warehouse
 
@@ -79,5 +79,5 @@ Eine Person, die nur die derzeit vorhandenen Dimensionsentitäten anzeigen möch
 
 ## <a name="next-steps"></a>Nächste Schritte
 
- - Weitere Informationen zur Entität **Aktueller Benutzer** finden Sie unter [Verweis für die Entität „Aktueller Benutzer“](reports-ref-current-user.md).
- - Weitere Informationen zur Entität **Benutzer** finden Sie unter [Verweis für die Benutzerentität](reports-ref-user.md).
+- Weitere Informationen zur Entität **Aktueller Benutzer** finden Sie unter [Verweis für die Entität „Aktueller Benutzer“](reports-ref-current-user.md).
+- Weitere Informationen zur Entität **Benutzer** finden Sie unter [Verweis für die Benutzerentität](reports-ref-user.md).

@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85435acffbad3117f6adbbafe60e1993b2d18bdb
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: b55368f5c512ff3efd4059d420717321729450ee
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55835776"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884059"
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Sperren Ihres Geräts remote über die Unternehmensportalwebsite
 
@@ -34,7 +34,7 @@ Die Einstellung für die Remotesperre funktioniert für:
 * Android
 * iOS
 * macOS
-* Windows 10
+* Windows 10
 * Windows 10 Mobile (wenn für das Gerät bereits eine Kennung festgelegt wurde)
 * Windows Phone 8.1 (wenn für das Gerät bereits eine Kennung festgelegt wurde)  
 
@@ -44,7 +44,7 @@ Die Einstellung für die Remotesperre funktioniert für:
 
     ![Ein Screenshot der Seite „Geräte“ mit zwei Kacheln, auf denen nicht identifizierte Geräte mit Standardnamen angezeigt werden. Unter den Geräten befindet sich ein graues Banner, durch das Benutzer dazu aufgefordert werden, das verwendete Gerät zu identifizieren oder ein neues hinzuzufügen.](./media/rename-reset-device-step2-1808.png) 
 
-3. Wählen Sie **Remotesperre** aus. Wenn die Option zum Sperren oben auf Ihrer Seite nicht sichtbar ist, wählen Sie **Mehr (....)** > **Remotesperre** aus.  
+3. Wählen Sie **Remotesperre** aus. Wenn die Option zum Sperren oben auf Ihrer Seite nicht sichtbar ist, wählen Sie **Mehr (....)**  > **Remotesperre** aus.  
 
    ![Seite mit Gerätedetails für ein ausgewähltes Gerät auf der Unternehmensportalwebsite mit einer Liste der Links oben auf der Seite zu „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/rename-reset-device-1808.png) 
 
@@ -56,9 +56,9 @@ Nach der Bestätigung versucht die Unternehmensportal-App, Ihr Gerät zu sperren
 
 Der Status „Remotesperre“ wird an drei Stellen angezeigt:
 
-   * Im Benachrichtigungsbereich der Website.
-   * Die **Detailseite** für das Gerät.
-   * Im Bereich **Geräte** auf der Seite wird der Gerätename in der Kachel angezeigt.  
+* Im Benachrichtigungsbereich der Website.
+* Die **Detailseite** für das Gerät.
+* Im Bereich **Geräte** auf der Seite wird der Gerätename in der Kachel angezeigt.  
 
 > [!Note]
 > Wenn eine Benachrichtigung angezeigt wird, dass die Remotesperre nicht erfolgreich war, warten Sie einige Minuten. Dann wiederholen Sie den Vorgang zum Sperren Ihres Geräts. Der Status wird wieder in „Remotesperre steht aus“ geändert. Wenn der erneute Versuch nicht funktioniert, bitten Sie den Support Ihres Unternehmens um Unterstützung.

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58339f8a956e4250064bc81e2f291a72c27c27f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 41b6109d956272d6368ae294788a8bd54f2fb8f8
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549149"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353482"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs
 
@@ -33,7 +33,7 @@ Die Informationen in diesem Thema gelten nur für Windows-Desktops, die Sie als 
 In Intune können Sie die nicht im Lieferumfang inbegriffene [TeamViewer](https://www.teamviewer.com)-Software verwenden, um Ihre Benutzer, bei denen der Intune-Softwareclient ausgeführt wird, remote zu unterstützen. Sobald ein Benutzer Hilfe über das Microsoft Intune Center anfordert, werden Sie durch eine Warnung benachrichtigt, können die Anforderung annehmen und Unterstützung leisten. Diese Funktion ersetzt die vorhandene Funktion „Windows-Remoteunterstützung“ in Intune.
 
 
-## <a name="before-you-start"></a>Vorbereitung
+## <a name="before-you-start"></a>Bevor Sie beginnen
 
 Bevor Sie entsprechende Einrichtungsschritte ausführen und auf Anforderungen für Remoteunterstützung reagieren können, stellen Sie sicher, dass folgende Voraussetzungen erfüllt sind:
 
@@ -87,6 +87,6 @@ Wenn Sie Ihre Benutzer bei Problemen unterstützen, müssen Sie deren PC möglic
 
 4. Überprüfen Sie im Dialogfeld **Taskstatus** die aktuellen Remoteaufgaben, den Aufgabenstatus, den Gerätenamen und etwaige gemeldete Fehler.
 
-### <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Siehe auch
 
 [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Intune-Softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

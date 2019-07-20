@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5a0ee88a24804294346888facef523f89fee816
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 9e9baf3593883cf2fa2402a0b4daec638a336366
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046647"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67884191"
 ---
 # <a name="windows-update-settings-for-intune"></a>Windows-Updateeinstellungen für Intune  
 
@@ -179,8 +179,8 @@ Diese Einstellung hat unterschiedliche Auswirkungen abhängig von der Gerätever
 Zulassen oder Blockieren des Anhaltens der Installation eines Updates durch einen Gerätebenutzer. 
 
 ### <a name="block-user-from-scanning-for-windows-updates"></a>Überprüfung auf Windows-Updates durch Benutzer blockieren  
- - **Standardeinstellung:** Zulassen
- - **Windows-Referenzdokumentation:** [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
+- **Standardeinstellung:** Zulassen
+- **Windows-Referenzdokumentation:** [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
 
 Gibt an, ob zugelassen oder verhindert werden soll, dass ein Benutzer Zugriff auf das Windows Update-Feature zum Überprüfen hat. Wenn Sie z. B. *Blockieren* konfigurieren, haben Benutzer keinen Zugriff auf die Windows Update-Features zum Überprüfen, Herunterladen und Installieren.  
 

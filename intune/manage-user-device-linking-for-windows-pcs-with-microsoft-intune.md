@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4dad2d22b742b62ca35bd7fb98c7f7e8241cbb4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 0eca9dfddbf9ea2c68cf58b1da64d9b046df7e77
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67402901"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353646"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Verwalten von Verknüpfungen zwischen Benutzern und Geräten für Windows-PCs
 
@@ -32,7 +32,7 @@ Die Informationen in diesem Thema gelten nur für Windows-Desktops, die Sie als 
 
 Damit Sie Software für einen Benutzer bereitstellen können, müssen Sie diesen zunächst mit einem PC verknüpfen. Sie können einen Benutzer mit mehreren PCs verknüpfen, aber einzelne PCs nur mit jeweils einem Benutzer. Benutzer werden automatisch mit den PCs verknüpft, die sie über das Unternehmensportal in Intune registrieren.
 
-Weitere Informationen zu primären Benutzer des Geräts, finden Sie unter [suchen primärer Benutzer](find-primary-user.md).
+Weitere Informationen zum primären Benutzer eines Geräts finden Sie unter [Suchen des primären Benutzers](find-primary-user.md).
 
 So verknüpfen Sie einen Benutzer mit einem PC
 
@@ -53,6 +53,6 @@ So verknüpfen Sie einen Benutzer mit einem PC
 > [!TIP]
 > Wenn Sie die Fähigkeit der Endbenutzer, sich mit PCs zu verknüpfen, einschränken möchten, aktivieren Sie die Option **Fähigkeit der Benutzer einschränken, sich mit PCs zu verknüpfen** in der Richtlinie **-Microsoft Intune-Agent-Einstellungen**.
 
-### <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Siehe auch
 
 [Allgemeine Aufgaben zur Verwaltung von Windows-PCs mit dem Intune-Softwareclient](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

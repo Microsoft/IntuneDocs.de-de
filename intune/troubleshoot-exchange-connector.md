@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdb727b542cd66e0b8fcf4a0822eaf0107600ad
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 2718ee7936e82bffc50126eeb57f1b6f732df22d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735732"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354470"
 ---
 # <a name="troubleshoot-the-intune-on-premises-exchange-connector"></a>Behandeln von Problemen mit dem lokalen Intune Exchange Connector
 
@@ -51,5 +51,5 @@ In diesem Artikel wird beschrieben, wie Sie Problemen mit dem lokalen Intune Exc
 - Verwenden Sie den Befehl „Get-Mailbox -Identity user | select emailaddresses | fl“, um eine Liste von SMTP-Adressen für ein Postfach abzurufen
 - Verwenden Sie „Get-CASMailbox <upn> | fl“, um ausführliche Informationen zum Zugriffsstatus eines Geräts abzurufen
 
-### <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 Wenn Sie weitere Hilfe benötigen, können Sie ebenfalls [Support für Microsoft Intune](get-support.md) anfordern.

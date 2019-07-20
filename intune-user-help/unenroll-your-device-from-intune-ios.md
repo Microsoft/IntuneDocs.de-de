@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 210a11cbd6e2c3be85ed0b0f97c2bb4ab59d11e6
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 2eb47240516737f03c10d1280887fea275c5ed99
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546599"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67883941"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Entfernen Ihres iOS-Geräts aus Intune
 
@@ -44,25 +44,25 @@ Befolgen Sie zum Entfernen Ihres Geräts aus Intune die hier oder in diesem Vide
     |![Screenshot des Bildschirms „Geräte“ der Unternehmensportal-App, der die Optionen anzeigt, nachdem der Benutzer auf „Gerät entfernen“ getippt hat Zeigt die rot hervorgehobene Schaltfläche „Entfernen“ und die blau hervorgehobenen Schaltflächen „Weitere Informationen“ und „Abbrechen“](/intune-user-help/media/cp_ios_unenroll_after_1804_002.png)|
 
 
-  Wenn Sie die Registrierung Ihres Geräts bei Intune aufheben passiert Folgendes:
+    Wenn Sie die Registrierung Ihres Geräts bei Intune aufheben passiert Folgendes:
 
-  - Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
+    - Das Gerät wird nicht mehr im Unternehmensportal angezeigt.
 
-  - Sie können keine Apps mehr über das Unternehmensportal installieren.
+    - Sie können keine Apps mehr über das Unternehmensportal installieren.
 
-  - Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z. B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.
+    - Alle Einstellungen, die beim Hinzufügen des Geräts auf diesem geändert wurden, z. B. das Deaktivieren der Kamera oder die Anforderung einer bestimmten Kennwortlänge, werden unwirksam.
 
-  - Unter Umständen haben Sie auf dem Gerät keinen Zugriff mehr auf einige Unternehmensressourcen, z. B. Dateifreigaben oder interne Websites.
+    - Unter Umständen haben Sie auf dem Gerät keinen Zugriff mehr auf einige Unternehmensressourcen, z. B. Dateifreigaben oder interne Websites.
 
-  - Sie können keine Unternehmens-Apps und Unternehmensdaten mehr auf dem Gerät verwenden.
+    - Sie können keine Unternehmens-Apps und Unternehmensdaten mehr auf dem Gerät verwenden.
 
-  - Möglicherweise können Sie keine Verbindung mehr zum Unternehmensnetzwerk über WiFi oder ein virtuelles privates Netzwerk (VPN) herstellen.
+    - Möglicherweise können Sie keine Verbindung mehr zum Unternehmensnetzwerk über WiFi oder ein virtuelles privates Netzwerk (VPN) herstellen.
 
-  - Unternehmens-E-Mail-Profile werden vom Gerät entfernt.
+    - Unternehmens-E-Mail-Profile werden vom Gerät entfernt.
 
-  - Geräte, die nur für E-Mail konfiguriert sind, werden nicht mehr in der Unternehmensportal-App oder auf der Unternehmensportal-Website angezeigt.
-  
-  - Apps werden deinstalliert. Daten von Unternehmens-Apps werden entfernt.
+    - Geräte, die nur für E-Mail konfiguriert sind, werden nicht mehr in der Unternehmensportal-App oder auf der Unternehmensportal-Website angezeigt.
+
+    - Anwendungen werden deinstalliert. Unternehmensanwendungsdaten werden entfernt.
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>Entfernen von Daten, die von der Unternehmensportal-App gesammelt wurden
 

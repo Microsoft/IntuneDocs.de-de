@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc2b324c8c6e1687b8ce5563aa85c155e21fc197
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: a7baa95d6719dfa3161ae6644bbc9351d3f3d9f0
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040719"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882379"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Verwenden von APIs zum Hinzufügen von Drittanbieter-Zertifizierungsstellen für SCEP in Intune
 
@@ -72,7 +72,7 @@ Für die Integration der Bibliothek in Ihre Produkte müssen die folgenden Schri
 
 1. Registrieren Sie sich, um Benachrichtigungen vom Repository zu erhalten
 2. Klonen Sie das Repository oder laden Sie es herunter
-3. Wechseln Sie zur erforderlichen Bibliotheksimplementierung im Ordner `\src\CsrValidation` (https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation))
+3. Wechseln Sie zur erforderlichen Bibliotheksimplementierung im Ordner `\src\CsrValidation` (https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation) )
 4. Erstellen Sie die Bibliothek mithilfe der Anweisungen in der README-Datei
 5. Schließen Sie die Bibliothek in das Projekt ein, in dem Ihr SCEP-Server erstellt wird
 6. Führen Sie auf dem SCEP-Server die folgenden Schritte aus:
@@ -176,8 +176,8 @@ Löst aus:
 
 **Sicherheitshinweise**  
 
-  - Wenn diese Methode eine Ausnahme auslöst, darf der SCEP-Server **kein** Zertifikat für den Client ausstellen.
-  - Fehler bei der Überprüfung der SCEP-Zertifikatanforderung weisen möglicherweise auf ein Problem in der Intune-Infrastruktur hin. Alternativ könnten sie auch darauf hinweisen, dass ein Angreifer versucht, ein Zertifikat abzurufen.
+- Wenn diese Methode eine Ausnahme auslöst, darf der SCEP-Server **kein** Zertifikat für den Client ausstellen.
+- Fehler bei der Überprüfung der SCEP-Zertifikatanforderung weisen möglicherweise auf ein Problem in der Intune-Infrastruktur hin. Alternativ könnten sie auch darauf hinweisen, dass ein Angreifer versucht, ein Zertifikat abzurufen.
 
 ##### <a name="sendsuccessnotification-method"></a>SendSuccessNotification-Methode
 
@@ -217,8 +217,8 @@ Löst aus:
 
 **Sicherheitshinweise**
 
-  - Wenn diese Methode eine Ausnahme auslöst, darf der SCEP-Server **kein** Zertifikat für den Client ausstellen.
-  - Fehler bei der Überprüfung der SCEP-Zertifikatanforderung weisen möglicherweise auf ein Problem in der Intune-Infrastruktur hin. Alternativ könnten sie auch darauf hinweisen, dass ein Angreifer versucht, ein Zertifikat abzurufen.
+- Wenn diese Methode eine Ausnahme auslöst, darf der SCEP-Server **kein** Zertifikat für den Client ausstellen.
+- Fehler bei der Überprüfung der SCEP-Zertifikatanforderung weisen möglicherweise auf ein Problem in der Intune-Infrastruktur hin. Alternativ könnten sie auch darauf hinweisen, dass ein Angreifer versucht, ein Zertifikat abzurufen.
 
 ##### <a name="sendfailurenotification-method"></a>SendFailureNotification-Methode
 
@@ -254,8 +254,8 @@ Löst aus:
 
 **Sicherheitshinweise**
 
-  - Wenn diese Methode eine Ausnahme auslöst, darf der SCEP-Server **kein** Zertifikat für den Client ausstellen.
-  - Fehler bei der Überprüfung der SCEP-Zertifikatanforderung weisen möglicherweise auf ein Problem in der Intune-Infrastruktur hin. Alternativ könnten sie auch darauf hinweisen, dass ein Angreifer versucht, ein Zertifikat abzurufen.
+- Wenn diese Methode eine Ausnahme auslöst, darf der SCEP-Server **kein** Zertifikat für den Client ausstellen.
+- Fehler bei der Überprüfung der SCEP-Zertifikatanforderung weisen möglicherweise auf ein Problem in der Intune-Infrastruktur hin. Alternativ könnten sie auch darauf hinweisen, dass ein Angreifer versucht, ein Zertifikat abzurufen.
 
 ##### <a name="setsslsocketfactory-method"></a>SetSslSocketFactory-Methode
 

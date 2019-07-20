@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d2e6c99d9493d935f4a8f87c6525af19796b5f6
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 59e2a681c542da46a2e938c7bf07e7185925aab2
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648783"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313740"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Endpunkt der Intune Data Warehouse-API
 
@@ -51,7 +51,7 @@ Die URL enthält die folgenden Elemente:
 | Element | Beispiel | Beschreibung |
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | location | msua06 | Die Basis-URL kann im Blatt „Data Warehouse API“ im Azure Portal gefunden werden. |
-| Entitätssammlung | Daten | Der Name der OData-Entitätssammlung. Weitere Informationen zu Sammlungen und Entitäten im Datenmodell finden Sie unter [Data Model (Datenmodell)](reports-ref-data-model.md). |
+| Entitätssammlung | devicePropertyHistories | Der Name der OData-Entitätssammlung. Weitere Informationen zu Sammlungen und Entitäten im Datenmodell finden Sie unter [Data Model (Datenmodell)](reports-ref-data-model.md). |
 | api-version | Beta | Die Version ist die Version der API, auf die zugegriffen wird. Weitere Informationen finden Sie unter [Version](reports-api-url.md#api-version-information). |
 | maxhistorydays | 7 | (Optional) Die maximale Anzahl an Tagen des Verlaufs, die abgerufen werden soll Dieser Parameter kann für jede Sammlung bereitgestellt werden, hat jedoch nur bei Sammlungen einen Effekt, deren Schlüsseleigenschaft `dateKey` enthält. Weitere Informationen finden Sie unter [DateKey Range Filters (DateKey-Bereichsfilter)](reports-api-url.md#datekey-range-filters). |
 
@@ -77,10 +77,10 @@ Die aktuelle Version unterstützt die OData-Abfrageparameter `$filter`, `$select
 > [!NOTE]
 > In den Filterbeispielen wird davon ausgegangen, dass heute der 21.02.2019 ist.
 
-|                             Filter                             |           Leistungsoptimierung           |                                          Beschreibung                                          |
+|                             Filtern                             |           Leistungsoptimierung           |                                          Beschreibung                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
-|    `maxhistorydays=7`                                            |    Vollständig                                      |    Gibt Daten mit `DateKey` zwischen 20180214 und 20180221 zurück.                                     |
-|    `$filter=DateKey eq 20180214`                                 |    Vollständig                                      |    Gibt Daten mit `DateKey` gleich 20180214 zurück.                                                    |
-|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Vollständig                                      |    Gibt Daten mit `DateKey` zwischen 20180214 und 20180220 zurück.                                     |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Vollständig                                      |    Gibt Daten mit `DateKey` gleich 20180214 zurück. `maxhistorydays` wird ignoriert.                            |
-|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Vollständig                                       |    Rückgabedaten, bei denen `RowLastModifiedDateTimeUTC` größer oder gleich `2018-02-21T23:18:51.3277273Z` ist                             |
+|    `maxhistorydays=7`                                            |    Full                                      |    Gibt Daten mit `DateKey` zwischen 20180214 und 20180221 zurück.                                     |
+|    `$filter=DateKey eq 20180214`                                 |    Full                                      |    Gibt Daten mit `DateKey` gleich 20180214 zurück.                                                    |
+|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Full                                      |    Gibt Daten mit `DateKey` zwischen 20180214 und 20180220 zurück.                                     |
+|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Full                                      |    Gibt Daten mit `DateKey` gleich 20180214 zurück. `maxhistorydays` wird ignoriert.                            |
+|    `$filter=RowLastModifiedDateTimeUTC ge 2018-02-21T23:18:51.3277273Z`                                |    Full                                       |    Rückgabedaten, bei denen `RowLastModifiedDateTimeUTC` größer oder gleich `2018-02-21T23:18:51.3277273Z` ist                             |

@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f012b1cec67de762bbc245f249125f29d37c6930
-ms.sourcegitcommit: 095fd4c324850aae8ebe32be43fa074361816a4b
+ms.openlocfilehash: c3287238900725acebefc23eb00246cd04c7a5bb
+ms.sourcegitcommit: fd2499df5123758ecb093b4cdd486e35f713b040
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66506843"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68230089"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Überprüfen der Kompatibilität auf Ihrem Android-Gerät
 
@@ -31,6 +31,6 @@ Wenn Ihr Gerät sich eine Zeit lang nicht bei Intune angemeldet hat, können Sie
 
 1. Öffnen Sie die Unternehmensportal-App für Android auf Ihrem Gerät.  
 
-2. Tippen Sie auf **Geräteeinstellungen überprüfen**.  
+2. Tippen Sie auf **Geräteeinstellungen überprüfen**.   
 
 Wenn Sie Ihr verlorenes oder gestohlenes Gerät nicht zurücksetzen können, bitten Sie den Support Ihres Unternehmens, es zurückzusetzen. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  

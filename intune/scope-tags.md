@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1d7669e80fd91398f41c57ca2d27ce78a06041
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 627899eafb2175b2d3034045bd765a10f4a203d6
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403791"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882504"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Verwenden der rollenbasierten Zugriffssteuerung und Bereichsmarkierungen für verteilte IT
 
@@ -42,8 +42,8 @@ Angenommen, einem Administrator der Bezirksdirektion von Seattle wird die Rolle 
 
     ![Screenshot: Erstellen einer Bereichsmarkierung](./media/scope-tags/create-scope-tag.png)
 
-3. Wenn Sie alle Geräte in bestimmten Gruppen möchten, wählen Sie **bereichsmarkierung für alle Geräte in der ausgewählten Gruppen zuweisen**.
-    1. In der **einzuschließende Gruppen auswählen** Seite, wählen Sie die Gruppen, enthält die Geräte, die Sie dieser bereichsmarkierung, zuweisen möchten.
+3. Wenn Sie alle Geräte in bestimmten Gruppen möchten, wählen Sie **bereichstag allen Geräten in ausgewählten Gruppen zuweisen aus**.
+    1. Wählen Sie auf der Seite **Wählen Sie** die einzuschließenden Gruppen aus die Gruppen mit den Geräten aus, denen dieses bereichstag zugewiesen werden soll.
     2. Klicken Sie auf **Auswählen**.
 4. Wählen Sie **Erstellen** aus.
 
@@ -108,17 +108,17 @@ Geräte mit **Verwaltete Apps** als **Geräteregistrierungstyp**:
 Bei der Arbeit mit Bereichsmarkierungen sollten Sie Folgendes beachten:
 
 - Derzeit können Sie Folgendem Bereichsmarkierungen zuweisen:
-    - Rollenzuweisungen
-    - Gerätekompatibilitätsrichtlinien
-    - Gerätekonfigurierungsprofile
-    - Windows 10-Updateringe
-    - Verwaltete Geräte
-    - Apps
-    - App-Konfigurationsrichtlinien – verwaltete Geräte
-    - PowerShell-Skripts
-    - DEP-Token
-    - Bereitstellungsprofil für iOS-Apps
-    - Volume Purchase Program-Token (VPP)
+  - Rollenzuweisungen
+  - Gerätekompatibilitätsrichtlinien
+  - Gerätekonfigurierungsprofile
+  - Windows 10-Updateringe
+  - Verwaltete Geräte
+  - Apps-
+  - App-Konfigurationsrichtlinien – verwaltete Geräte
+  - PowerShell-Skripts
+  - DEP-Token
+  - Bereitstellungsprofil für iOS-Apps
+  - Volume Purchase Program-Token (VPP)
 - Wenn ein Administrator ein Objekt in Intune erstellt, werden alle Bereichsmarkierungen, die diesem Administrator zugewiesen sind, automatisch dem neuen Objekt zugewiesen.
 - Die rollenbasierte Zugriffssteuerung von Intune gilt nicht für Azure Active Directory-Rollen. Intune-Dienstadministratoren und globale Administratoren verfügen unabhängig von ihren Bereichsmarkierungen über vollständigen Administratorzugriff auf Intune.
 - Administratoren in einer Rollenzuweisung mit Bereichsmarkierungen können auch Intune-Objekte sehen, denen keine Bereichsmarkierungen zugewiesen sind.

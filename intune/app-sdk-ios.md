@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 961470b9f5671dc39864dac45fdcb49862de4da9
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: 673dd0cb751fcdd2a7036dc2bf52dd731a4b04ff
+ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735564"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68306755"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
 
@@ -94,9 +94,9 @@ Ziel des Intune App SDK für iOS ist es, iOS-Anwendungen mit minimalen Codeände
 
 Gehen Sie folgendermaßen vor, um das Intune App SDK zu aktivieren:
 
-1. **Option 1-Framework (empfohlen)** : Wenn Sie Xcode 10.2 und höher verwenden und Ihre APP/Erweiterung SWIFT-Code enthält, `IntuneMAMSwift.framework` `IntuneMAMSwiftStub.framework` verknüpfen Sie und mit Ihrem Ziel `IntuneMAMSwift.framework` : `IntuneMAMSwiftStub.framework` ziehen Sie **und in den eingebetteten Die Liste** der Binärdateien des Projektziels.
+1. **Option 1-Framework (empfohlen)** : Wenn Sie Xcode 10.2 und höher verwenden und Ihre APP/Erweiterung SWIFT-Code enthält, `IntuneMAMSwift.framework` verknüpfen `IntuneMAMSwiftStub.framework` Sie und mit Ihrem Ziel `IntuneMAMSwift.framework` : `IntuneMAMSwiftStub.framework` ziehen Sie und in die Liste der **eingebetteten Binärdateien** des Projektziel.
 
-    Verknüpfen `IntuneMAM.framework` Sie andernfalls mit dem Ziel: ziehen `IntuneMAM.framework` Sie in **die Liste eingebetteter Binärdateien** des Projektziels.
+    Verknüpfen `IntuneMAM.framework` Sie andernfalls mit dem Ziel: ziehen `IntuneMAM.framework` Sie in die Liste **eingebetteter Binärdateien** des Projektziels.
 
    > [!NOTE]
    > Bei Verwendung des Frameworks müssen Sie die Simulatorarchitekturen manuell aus dem universellen Framework entfernen, bevor Sie Ihre App an den App Store übermitteln. Weitere Informationen siehe [Übermitteln Ihrer App an den App Store](#submit-your-app-to-the-app-store).
@@ -116,7 +116,7 @@ Gehen Sie folgendermaßen vor, um das Intune App SDK zu aktivieren:
 
      ![Intune App SDK iOS: Paketressourcen kopieren](./media/intune-app-sdk-ios-copy-bundle-resources.png)
      
-2. Wenn Sie eine der InTune-APIs von SWIFT abrufen müssen, muss Ihre APP/Erweiterung die erforderlichen InTune SDK-Header über einen Ziel-C-Bridging-Header importieren. Wenn Ihre APP/Erweiterung nicht bereits einen Ziel-c-Bridging-Header enthält, können Sie einen über die `SWIFT_OBJC_BRIDGING_HEADER` buildkonfigurationseinstellung oder das Ziel- **c-Bridging-Header** Feld der Xcode-Benutzeroberfläche angeben. Ihr Überbrückungs Header sollte in etwa wie folgt aussehen:
+2. Wenn Sie eine der InTune-APIs von SWIFT abrufen müssen, muss Ihre APP/Erweiterung die erforderlichen InTune SDK-Header über einen Ziel-C-Bridging-Header importieren. Wenn Ihre APP/Erweiterung nicht bereits einen Ziel-c-Bridging-Header enthält, können Sie einen über die `SWIFT_OBJC_BRIDGING_HEADER` buildkonfigurationseinstellung oder das **Ziel-c-Bridging-Header** Feld der Xcode-Benutzeroberfläche angeben. Ihr Überbrückungs Header sollte in etwa wie folgt aussehen:
 
    ```objc
       #import <IntuneMAMSwift/IntuneMAM.h>
@@ -162,15 +162,15 @@ Gehen Sie folgendermaßen vor, um das Intune App SDK zu aktivieren:
     
     c. Fügen Sie `com.microsoft.adalcache` zu Ihren vorhandenen Zugriffsgruppen hinzu.
     
-        ![Intune App SDK iOS: keychain sharing](./media/intune-app-sdk-ios-keychain-sharing.png)
+      ![Intune App SDK für iOS: Schlüsselbund gemeinsam nutzen](./media/intune-app-sdk-ios-keychain-sharing.png)
     
     d. Wenn Sie die Berechtigungsdatei direkt bearbeiten, anstatt die oben gezeigte Xcode-Benutzeroberfläche zum Erstellen der Schlüsselbund-Zugriffsgruppen zu verwenden, setzen Sie `$(AppIdentifierPrefix)` vor die Schlüsselbund-Zugriffsgruppen (Xcode verarbeitet dies automatisch). Beispiel:
     
-        - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-        - `$(AppIdentifierPrefix)com.microsoft.adalcache`
+      - `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+      - `$(AppIdentifierPrefix)com.microsoft.adalcache`
     
-        > [!NOTE]
-        > An entitlements file is an XML file that is unique to your mobile application. It is used to specify special permissions and capabilities in your iOS app. If your app did not previously have an entitlements file, enabling keychain sharing (step 3) should have caused Xcode to generate one for your app. Ensure the app's bundle ID is the first entry in the list.
+      > [!NOTE]
+      > Eine Berechtigungsdatei ist eine für die mobile Anwendung eindeutige XML-Datei. Sie wird zum Festlegen spezieller Berechtigungen und Funktionen in Ihrer iOS-App verwendet. Wenn Ihre App vorher noch keine Berechtigungsdatei hatte, sollte die Aktivierung der Schlüsselbundfreigabe (Schritt 3) dazu geführt haben, dass Xcode eine für Ihre App generiert hat. Vergewissern Sie sich, dass die Paket-ID der App als erster Eintrag in der Liste aufgeführt ist.
 
 6. Nehmen Sie jedes Protokoll, das Ihre App an `UIApplication canOpenURL` übergibt, in das `LSApplicationQueriesSchemes`-Array der Datei „Info.plist“ Ihrer App auf. Speichern Sie Ihre Änderungen, bevor Sie mit dem nächsten Schritt fortfahren.
 
@@ -247,31 +247,31 @@ In „IntuneMAMSettings“ können Sie mit den folgenden unterstützten Einstell
 
 Einige dieser Einstellungen wurden möglicherweise schon in vorherigen Abschnitten erörtert, und einige gelten nicht für alle Apps.
 
-Einstellung  | Typ  | Definition | Erforderlich?
+Einstellung  | Type  | Definition | Erforderlich?
 --       |  --   |   --       |  --
 ADALClientId  | Zeichenfolge  | Die Azure AD-Client-ID der App. | Erforderlich, wenn die App ADAL verwendet |
 ADALAuthority | Zeichenfolge | Die aktive Azure AD-Autorität. Dort wo AAD-Konten konfiguriert wurden, sollten Sie Ihre eigene Umgebung verwenden. | Erforderlich, wenn die App ADAL verwendet. Wenn dieser Wert nicht vorhanden ist, wird der Intune-Standard verwendet.|
 ADALRedirectUri  | Zeichenfolge  | Der Azure AD-Umleitungs-URI der App. | ADALRedirectUri oder ADALRedirectScheme ist erforderlich, wenn die App ADAL verwendet.  |
 ADALRedirectScheme  | Zeichenfolge  | Das Azure AD-Umleitungsschema der App. Dieses kann anstelle von ADALRedirectUri verwendet werden, wenn der Umleitungs-URI der App im `scheme://bundle_id`-Format ist. | ADALRedirectUri oder ADALRedirectScheme ist erforderlich, wenn die App ADAL verwendet. |
-ADALLogOverrideDisabled | Boolesch  | Gibt an, ob das SDK alle ADAL-Protokolle (einschließlich ADAL-Aufrufe von der App, sofern zutreffend) in die eigene Protokolldatei einschließt. Standardwert ist "NO". Legen Sie den Wert auf „YES“ fest, wenn die App einen eigenen ADAL-Protokollrückruf festlegt. | (Optional) |
-ADALCacheKeychainGroupOverride | Zeichenfolge  | Gibt die Schlüsselbundgruppe an, die für den ADAL-Cache anstelle von „com.microsoft.adalcache“ verwendet werden soll. Beachten Sie, dass diese das App-ID-Präfix nicht enthält. Dieses wird der gegebenen Zeichenfolge zur Laufzeit vorangestellt. | (Optional) |
+ADALLogOverrideDisabled | Boolescher Wert  | Gibt an, ob das SDK alle ADAL-Protokolle (einschließlich ADAL-Aufrufe von der App, sofern zutreffend) in die eigene Protokolldatei einschließt. Die Standardeinstellung ist NO. Legen Sie den Wert auf „YES“ fest, wenn die App einen eigenen ADAL-Protokollrückruf festlegt. | Optional. |
+ADALCacheKeychainGroupOverride | Zeichenfolge  | Gibt die Schlüsselbundgruppe an, die für den ADAL-Cache anstelle von „com.microsoft.adalcache“ verwendet werden soll. Beachten Sie, dass diese das App-ID-Präfix nicht enthält. Dieses wird der gegebenen Zeichenfolge zur Laufzeit vorangestellt. | Optional. |
 AppGroupIdentifiers | Zeichenfolgenarray  | Ein Array mit App-Gruppen aus dem Berechtigungsabschnitt "com.apple.security.application-groups" der App. | Erforderlich, wenn die App Anwendungsgruppen verwendet. |
 ContainingAppBundleId | Zeichenfolge | Gibt die Paket-ID der Anwendung an, die die Erweiterung enthält. | Erforderlich für iOS-Extensions. |
-DebugSettingsEnabled| Boolesch | Bei der Einstellung JA können innerhalb des Einstellungspakets Testrichtlinien angewendet werden. Diese Einstellungen sollte bei ausgelieferten Anwendungen *nicht* aktiviert sein. | (Optional) Standardwert lautet „no“ (Nein)|
+DebugSettingsEnabled| Boolescher Wert | Bei der Einstellung JA können innerhalb des Einstellungspakets Testrichtlinien angewendet werden. Diese Einstellungen sollte bei ausgelieferten Anwendungen *nicht* aktiviert sein. | Optional. Standardwert lautet „no“ (Nein)|
 MainNibFile <br> MainNibFile~ipad  | Zeichenfolge  | Diese Einstellung sollte den Namen der Haupt-NIB-Datei der Anwendung enthalten.  | Erforderlich, wenn MainNibFile für die Anwendung in der Datei „Info.plist“ definiert ist. |
 MainStoryboardFile <br> MainStoryboardFile~ipad  | Zeichenfolge  | Diese Einstellung sollte den Namen der Haupt-Storyboard-Datei der Anwendung enthalten. | Erforderlich, wenn UIMainStoryboardFile für die Anwendung in der Datei „Info.plist“ definiert ist. |
-MAMPolicyRequired| Boolesch| Gibt an, ob das Starten der App blockiert wird, wenn die App über keine Intune APP-Richtlinie verfügt. Standardwert ist "NO". <br><br> Hinweis: Apps, bei denen die Einstellung „MAMPolicyRequired“ auf „YES“ festgelegt ist, können nicht im App Store eingereicht werden. | (Optional) Standardwert lautet „no“ (Nein)|
-MAMPolicyWarnAbsent | Boolesch| Gibt an, ob die App den Benutzer beim Starten warnt, wenn die App über keine Intune APP-Richtlinie verfügt. <br><br> Hinweis: Benutzer dürfen noch immer die App ohne Richtlinie verwenden, nachdem die Warnung verworfen wurde. | (Optional) Standardwert lautet „no“ (Nein) |
-MultiIdentity | Boolesch| Gibt an, ob die App den Umgang mit mehreren Identitäten beherrscht. | (Optional) Standardwert lautet „no“ (Nein) |
-SplashIconFile <br> SplashIconFile~ipad | Zeichenfolge  | Gibt die Datei für das Intune-Begrüßungssymbol (Startsymbol) an. | (Optional) |
-SplashDuration | Zahl | Mindestdauer in Sekunden, für die der Intune Startbildschirm beim Anwendungsstart angezeigt wird. Standardwert ist 1,5. | (Optional) |
-BackgroundColor| Zeichenfolge| Gibt die Hintergrundfarbe für den Start- und den PIN-Bildschirm an. Akzeptiert eine hexadezimale RGB-Zeichenfolge im Format „#XXXXXX“, wobei X Werte von 0-9 bzw. A-F annehmen kann. Das Gatterzeichen kann ausgelassen werden.   | (Optional) Der Standardwert ist „Hellgrau“. |
-ForegroundColor| Zeichenfolge| Gibt die Vordergrundfarbe für den Start- und den PIN-Bildschirm an, etwa die Textfarbe. Akzeptiert eine hexadezimale RGB-Zeichenfolge im Format „#XXXXXX“, wobei X Werte von 0-9 bzw. A-F annehmen kann. Das Gatterzeichen kann ausgelassen werden.  | (Optional) Der Standardwert ist „Schwarz“. |
-AccentColor | Zeichenfolge| Gibt die Akzentfarbe für den PIN-Bildschirm an, etwa die Textfarbe einer Schaltfläche oder die Hervorhebungsfarbe für ein Feld. Akzeptiert eine hexadezimale RGB-Zeichenfolge im Format „#XXXXXX“, wobei X Werte von 0-9 bzw. A-F annehmen kann. Das Gatterzeichen kann ausgelassen werden.| (Optional) Der Standardwert ist „Blau“ (Systemfarbe). |
-MAMTelemetryDisabled| Boolesch| Gibt an, ob das SDK keine Telemetriedaten an sein Back-End sendet.| (Optional) Standardwert lautet „no“ (Nein) |
-MAMTelemetryUsePPE | Boolesch | Gibt an, ob das MAM SDK Daten an das PPE-Telemetrie-Back-End sendet. Verwenden Sie diese Option beim Testen Ihrer Apps mit Intune-Richtlinien, damit Telemetriedaten aus dem Test getrennt von Kundendaten gehalten werden. | (Optional) Standardwert lautet „no“ (Nein) |
-MaxFileProtectionLevel | Zeichenfolge | (Optional) Ermöglicht der App, das Maximum für `NSFileProtectionType` anzugeben, das sie unterstützen kann. Dieser Wert setzt die Richtlinie außer Kraft, die vom Dienst gesendet wird, wenn die Ebene die von der Anwendung unterstützte übersteigt. Mögliche Werte: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
-OpenInActionExtension | Boolesch | Legen Sie die Einstellung für „Open-In“-Aktionserweiterungen auf „YES“ fest. Weitere Informationen finden Sie im Abschnitt „Sharing Data via UIActivityViewController“ (Freigeben von Daten über UIActivityViewController). |
+MAMPolicyRequired| Boolescher Wert| Gibt an, ob das Starten der App blockiert wird, wenn die App über keine Intune APP-Richtlinie verfügt. Die Standardeinstellung ist NO. <br><br> Hinweis: Apps, bei denen die Einstellung „MAMPolicyRequired“ auf „YES“ festgelegt ist, können nicht im App Store eingereicht werden. | Optional. Standardwert lautet „no“ (Nein)|
+MAMPolicyWarnAbsent | Boolescher Wert| Gibt an, ob die App den Benutzer beim Starten warnt, wenn die App über keine Intune APP-Richtlinie verfügt. <br><br> Hinweis: Benutzer dürfen noch immer die App ohne Richtlinie verwenden, nachdem die Warnung verworfen wurde. | Optional. Standardwert lautet „no“ (Nein) |
+MultiIdentity | Boolescher Wert| Gibt an, ob die App den Umgang mit mehreren Identitäten beherrscht. | Optional. Standardwert lautet „no“ (Nein) |
+SplashIconFile <br> SplashIconFile~ipad | Zeichenfolge  | Gibt die Datei für das Intune-Begrüßungssymbol (Startsymbol) an. | Optional. |
+SplashDuration | Zahl | Mindestdauer in Sekunden, für die der Intune Startbildschirm beim Anwendungsstart angezeigt wird. Standardwert ist 1,5. | Optional. |
+BackgroundColor| Zeichenfolge| Gibt die Hintergrundfarbe für den Start- und den PIN-Bildschirm an. Akzeptiert eine hexadezimale RGB-Zeichenfolge im Format „#XXXXXX“, wobei X Werte von 0-9 bzw. A-F annehmen kann. Das Gatterzeichen kann ausgelassen werden.   | Optional. Der Standardwert ist „Hellgrau“. |
+ForegroundColor| Zeichenfolge| Gibt die Vordergrundfarbe für den Start- und den PIN-Bildschirm an, etwa die Textfarbe. Akzeptiert eine hexadezimale RGB-Zeichenfolge im Format „#XXXXXX“, wobei X Werte von 0-9 bzw. A-F annehmen kann. Das Gatterzeichen kann ausgelassen werden.  | Optional. Der Standardwert ist „Schwarz“. |
+AccentColor | Zeichenfolge| Gibt die Akzentfarbe für den PIN-Bildschirm an, etwa die Textfarbe einer Schaltfläche oder die Hervorhebungsfarbe für ein Feld. Akzeptiert eine hexadezimale RGB-Zeichenfolge im Format „#XXXXXX“, wobei X Werte von 0-9 bzw. A-F annehmen kann. Das Gatterzeichen kann ausgelassen werden.| Optional. Der Standardwert ist „Blau“ (Systemfarbe). |
+MAMTelemetryDisabled| Boolesch| Gibt an, ob das SDK keine Telemetriedaten an sein Back-End sendet.| Optional. Standardwert lautet „no“ (Nein) |
+MAMTelemetryUsePPE | Boolescher Wert | Gibt an, ob das MAM SDK Daten an das PPE-Telemetrie-Back-End sendet. Verwenden Sie diese Option beim Testen Ihrer Apps mit Intune-Richtlinien, damit Telemetriedaten aus dem Test getrennt von Kundendaten gehalten werden. | Optional. Standardwert lautet „no“ (Nein) |
+MaxFileProtectionLevel | Zeichenfolge | Optional. Ermöglicht der App, das Maximum für `NSFileProtectionType` anzugeben, das sie unterstützen kann. Dieser Wert setzt die Richtlinie außer Kraft, die vom Dienst gesendet wird, wenn die Ebene die von der Anwendung unterstützte übersteigt. Mögliche Werte: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
+OpenInActionExtension | Boolescher Wert | Legen Sie die Einstellung für „Open-In“-Aktionserweiterungen auf „YES“ fest. Weitere Informationen finden Sie im Abschnitt „Sharing Data via UIActivityViewController“ (Freigeben von Daten über UIActivityViewController). |
 WebViewHandledURLSchemes | Array von Zeichenfolgen | Gibt die URL-Schemas an, die WebView für Ihre App verarbeitet. | Erforderlich, wenn Ihre App WebView verwendet, das URLs über Verknüpfungen und/oder JavaScript verarbeitet. |
 
 ## <a name="receive-app-protection-policy"></a>Erhalten einer App-Schutzrichtlinie
@@ -332,10 +332,10 @@ Beispiel:
 
 Wenn das Intune SDK die gesamte Authentifizierung (über ADAL) und die Registrierung verarbeiten soll, bevor der Startvorgang Ihrer App abgeschlossen ist, und Ihre App immer die APP-Richtlinie erfordert, müssen Sie nicht die `loginAndEnrollAccount`-API verwenden. Sie können einfach die folgenden beiden Einstellungen auf im Wörterbuch „IntuneMAMSettings“ in der Datei „Info.plist“ der Datei auf „YES“ festlegen.
 
-Einstellung  | Typ  | Definition |
+Einstellung  | Type  | Definition |
 --       |  --   |   --       |  
-AutoEnrollOnLaunch| Boolesch| Gibt an, ob die App versuchen soll, sich beim Start automatisch zu registrieren, wenn eine vorhandene verwaltete Identität erkannt wurde und dies noch nicht passiert ist. Standardwert ist "NO". <br><br> Hinweis: Wenn keine verwaltete Identität gefunden wird oder kein gültiges Token für die Identität im ADAL-Cache verfügbar ist, schlägt die Registrierung ohne die Anforderung nach Anmeldeinformationen im Hintergrund fehl, es sei denn, MAMPolicyRequired ist auf „YES“ festgelegt. |
-MAMPolicyRequired| Boolesch| Gibt an, ob das Starten der App blockiert ist, wenn die App über keine Intune App-Schutzrichtlinie verfügt. Standardwert ist "NO". <br><br> Hinweis: Apps, bei denen die Einstellung „MAMPolicyRequired“ auf „YES“ festgelegt ist, können nicht im App Store eingereicht werden. Wenn MAMPolicyRequired auf JA festgelegt wird, muss auch AutoEnrollOnLaunch auf JA festgelegt werden. |
+AutoEnrollOnLaunch| Boolescher Wert| Gibt an, ob die App versuchen soll, sich beim Start automatisch zu registrieren, wenn eine vorhandene verwaltete Identität erkannt wurde und dies noch nicht passiert ist. Die Standardeinstellung ist NO. <br><br> Hinweis: Wenn keine verwaltete Identität gefunden wird oder kein gültiges Token für die Identität im ADAL-Cache verfügbar ist, schlägt die Registrierung ohne die Anforderung nach Anmeldeinformationen im Hintergrund fehl, es sei denn, MAMPolicyRequired ist auf „YES“ festgelegt. |
+MAMPolicyRequired| Boolescher Wert| Gibt an, ob das Starten der App blockiert ist, wenn die App über keine Intune App-Schutzrichtlinie verfügt. Die Standardeinstellung ist NO. <br><br> Hinweis: Apps, bei denen die Einstellung „MAMPolicyRequired“ auf „YES“ festgelegt ist, können nicht im App Store eingereicht werden. Wenn MAMPolicyRequired auf JA festgelegt wird, muss auch AutoEnrollOnLaunch auf JA festgelegt werden. |
 
 Wenn Sie diese Option für Ihre App auswählen, müssen Sie sich nach der Registrierung nicht um den Neustart der Anwendung kümmern.
 
@@ -461,7 +461,7 @@ Der Rückgabewert dieser Methode teilt dem SDK mit, ob die Anwendung den erforde
 
 Das Intune App SDK hat mehrere APIs, die Sie aufrufen können, um Informationen über die APP-Richtlinie in Intune zu erhalten, die für die App bereitgestellt wurde. Diese Daten können Sie benutzen, um das Verhalten Ihrer App anzupassen. In der folgenden Tabelle finden Sie Informationen zu einigen wichtigen Intune-Klassen, die Sie verwenden werden.
 
-Class | Beschreibung
+Klasse | Beschreibung
 ----- | -----------
 IntuneMAMPolicyManager.h | Die Klasse „IntuneMAMPolicyManager“ stellt die APP-Richtlinie für Intune bereit, die für die App bereitgestellt wurde. Sie stellt besonders APIs bereit, die beim [Aktivieren mehrerer Identitäten](app-sdk-ios.md#enable-multi-identity-optional) nützlich sind. |
 IntuneMAMPolicy.h | Die „IntuneMAMPolicy“-Klasse macht MAM-Richtlinieneinstellungen verfügbar, die für die App gelten. Diese Richtlinieneinstellungen werden verfügbar gemacht, damit die App die Benutzeroberfläche anpassen kann. Die meisten Richtlinieneinstellungen werden durch das SDK und nicht durch die App erzwungen. Die einzige Einstellung, die die App implementieren sollte, ist das Steuerelement „Speichern unter“. Diese Klasse stellt einige APIs bereit, die zum Implementieren von „Speichern unter“ erforderlich sind. |
@@ -705,7 +705,7 @@ Die Intune App SDK-APIs arbeiten ausschließlich in der Objective-C-Programmiers
 
 ### <a name="do-all-users-of-my-application-need-to-be-registered-with-the-app-we-service"></a>Müssen alle Benutzer meiner Anwendung beim APP-WE-Dienst registriert werden?
 
-Nein. Nur Arbeits-, Schul- oder Unikonten sollten beim Intune App SDK registriert werden. Die Apps sind dafür zuständig, zu bestimmen, ob ein Konto in einem Arbeits-, Schul- oder Unikontext verwendet wird.
+Nein Nur Arbeits-, Schul- oder Unikonten sollten beim Intune App SDK registriert werden. Die Apps sind dafür zuständig, zu bestimmen, ob ein Konto in einem Arbeits-, Schul- oder Unikontext verwendet wird.
 
 ### <a name="what-about-users-that-have-already-signed-in-to-the-application-do-they-need-to-be-enrolled"></a>Was ist mit Benutzern, die bereits bei der Anwendung angemeldet sind? Müssen sie registriert werden?
 
@@ -742,7 +742,7 @@ Ja! Wir haben vor Kurzem die Open-Source-Beispiel-App [Wagr für iOS](https://gi
 
 ### <a name="how-can-i-troubleshoot-my-app"></a>Wie kann ich Probleme bei meiner app beheben?
 
-Das InTune SDK für IOS 9.0.3 + unterstützt die Möglichkeit, eine Diagnose Konsole innerhalb des Mobile App zum Testen von Richtlinien und Protokollierungs Fehlern hinzuzufügen. `IntuneMAMDiagnosticConsole.h` definiert die `IntuneMAMDiagnosticConsole` Klassen Schnittstelle, mit der Entwickler die Intune-Diagnose Konsole anzeigen können. Dadurch können Endbenutzer oder Entwickler während des Tests InTune-Protokolle sammeln und freigeben, um Probleme zu diagnostizieren, die Sie möglicherweise haben. Diese API ist für Integratoren optional.
+Das InTune SDK für IOS 9.0.3 + unterstützt die Möglichkeit, eine Diagnose Konsole innerhalb des Mobile App zum Testen von Richtlinien und Protokollierungs Fehlern hinzuzufügen. `IntuneMAMDiagnosticConsole.h`definiert die `IntuneMAMDiagnosticConsole` Klassen Schnittstelle, mit der Entwickler die Intune-Diagnose Konsole anzeigen können. Dadurch können Endbenutzer oder Entwickler während des Tests InTune-Protokolle sammeln und freigeben, um Probleme zu diagnostizieren, die Sie möglicherweise haben. Diese API ist für Integratoren optional.
 
 ## <a name="submit-your-app-to-the-app-store"></a>Übermitteln Ihrer App an den App Store
 

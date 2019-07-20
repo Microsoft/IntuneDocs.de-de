@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9b32b7b7bc3bfa7735a7e4437e8238630e56884
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 61e0a7fa4fa63e17a1fa4165042d9e82a2ffacc2
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548778"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354102"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune
 
@@ -145,8 +145,8 @@ Die Einstellung **Dateierweiterungen, die beim Ausführen einer Überprüfung od
 
 ### <a name="specify-microsoft-active-protection-service-settings"></a>Einstellungen für Microsoft Active Protection Service angeben
 Microsoft Active Protection Service ist eine Online-Community, die Ihnen hilft zu entscheiden, wie Sie auf potenzielle Bedrohungen reagieren. Diese Community trägt auch dazu bei, die Weiterverbreitung neuer Infektionen mit Malware zu unterbinden. Sie können **Microsoft Active Protection Service beitreten**, indem Sie **Ja** auswählen und dann Ihre **Mitgliedschaftsstufe** angeben:
-  - **Standard**: Hierbei werden grundlegende Informationen zu erkannter Schadsoftware an Microsoft gesendet. Hierzu gehören Angaben dazu, woher die Software stammt, welche Aktionen Sie anwenden oder von Endpoint Protection automatisch angewendet werden und ob diese Aktionen erfolgreich waren.
-  - **Premium**: Hierbei werden zusätzliche Informationen über Schadsoftware, Spyware oder möglicherweise unerwünschte Software an Microsoft gesendet. Hierzu gehören Informationen zum Speicherort der Software, den Dateinamen, der Funktionsweise der Software und der Auswirkung der Software auf Ihren Computer.
+- **Standard**: Hierbei werden grundlegende Informationen zu erkannter Schadsoftware an Microsoft gesendet. Hierzu gehören Angaben dazu, woher die Software stammt, welche Aktionen Sie anwenden oder von Endpoint Protection automatisch angewendet werden und ob diese Aktionen erfolgreich waren.
+- **Premium**: Hierbei werden zusätzliche Informationen über Schadsoftware, Spyware oder möglicherweise unerwünschte Software an Microsoft gesendet. Hierzu gehören Informationen zum Speicherort der Software, den Dateinamen, der Funktionsweise der Software und der Auswirkung der Software auf Ihren Computer.
 
 Sie können auch **Dynamische Definitionen auf Basis von Microsoft Active Protection Service-Berichten empfangen**.
 
@@ -197,5 +197,5 @@ Intune kann auf einem remoteverwalteten PC, auf dem der Intune-Client installier
 ## <a name="need-more-help"></a>Benötigen Sie weitere Hilfe?
 Weitere Hilfe und Unterstützung erhalten Sie unter [Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md) (Problembehandlung für Endpoint Protection in Microsoft Intune).
 
-### <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 [Richtlinien zum Schutz von Windows-PCs](policies-to-protect-windows-pcs-in-microsoft-intune.md)
