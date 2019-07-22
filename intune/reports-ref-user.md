@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,35 +17,35 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0551327bfe2b320bb91699e1176985bbdf94de92
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 80a5e931589aaf48d99080a35ee2df040d11d201
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66045228"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313715"
 ---
 # <a name="reference-for-user-entity"></a>Referenz für die Benutzerentität
 
-Die Kategorie **Benutzer** enthält die Entität **Benutzer**, die die Eigenschaften von Benutzern und Agents im Datenmodell definiert.
+Die Kategorie **Users** enthält die Entität **user**, die die Eigenschaften von Benutzern und Agents im Datenmodell definiert.
 
-## <a name="user"></a>Benutzer
+## <a name="users"></a>Benutzer
 
-Die Entität **User** (Benutzer) listet alle Benutzer von Azure Active Directory (Azure AD) mit zugewiesenen Lizenzen in Ihrem Unternehmen auf.
+Die Entität **user** listet alle Benutzer von Azure Active Directory (Azure AD) mit zugewiesenen Lizenzen in Ihrem Unternehmen auf.
 
-Die Entitätssammlung **Benutzer** enthält Benutzerdaten. Zu diesen Datensätzen gehören Benutzerzustände während der Datensammlung, selbst wenn der Benutzer entfernt wurde. Beispielsweise kann ein Benutzer in Intune hinzugefügt und dann im Verlauf des letzten Monats entfernt worden sein. Auch wenn dieser Benutzer zum Zeitpunkt der Berichterstellung nicht vorhanden ist, liegen Angaben zu Benutzer und Zustand in den Daten aus dem vorherigen Monat vor. Sie können einen Bericht erstellen, der die Dauer der Präsenz des Benutzers in Ihren Daten zeigt.
+Die Entitätssammlung **user** enthält Benutzerdaten. Zu diesen Datensätzen gehören Benutzerzustände während der Datensammlung, selbst wenn der Benutzer entfernt wurde. Beispielsweise kann ein Benutzer in Intune hinzugefügt und dann im Verlauf des letzten Monats entfernt worden sein. Auch wenn dieser Benutzer zum Zeitpunkt der Berichterstellung nicht vorhanden ist, liegen Angaben zu Benutzer und Zustand in den Daten aus dem vorherigen Monat vor. Sie können einen Bericht erstellen, der die Dauer der Präsenz des Benutzers in Ihren Daten zeigt.
 
 |          Eigenschaft          |                                                                                                           Beschreibung                                                                                                          |                Beispiel               |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------:|
-| UserKey                    | Eindeutiger Bezeichner des Benutzers im Data Warehouse – Ersatzschlüssel.                                                                                                                                                         | 123                                  |
-| UserId                     | Eindeutiger Bezeichner des Benutzers – ähnlich wie UserKey, ist jedoch ein natürlicher Schlüssel.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
+| userKey                    | Eindeutiger Bezeichner des Benutzers im Data Warehouse – Ersatzschlüssel.                                                                                                                                                         | 123                                  |
+| userId                     | Eindeutiger Bezeichner des Benutzers – ähnlich wie UserKey, ist jedoch ein natürlicher Schlüssel.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | E-Mail-Adresse des Benutzers                                                                                                                                                                                                     | John@constoso.com                    |
 | userPrincipalName                        | Benutzerprinzipalname des Benutzers                                                                                                                                                                                               | John@constoso.com                    |
-| DisplayName                | Anzeigename des Benutzers                                                                                                                                                                                                      | John                                 |
-| IntuneLicensed             | Gibt an, ob dieser Benutzer über Intune lizenziert ist oder nicht.                                                                                                                                                                              | Wahr/falsch                           |
-| isDeleted                  | Gibt an, ob alle Lizenzen des Benutzers abgelaufen sind und ob der Benutzer daher aus Intune entfernt wurde. Dieses Flag wird für einen einzelnen Datensatz nicht geändert. Stattdessen wird ein neuer Datensatz für einen neuen Benutzerzustand erstellt. | Wahr/falsch                           |
+| displayName                | Anzeigename des Benutzers                                                                                                                                                                                                      | John                                 |
+| intuneLicensed             | Gibt an, ob dieser Benutzer über Intune lizenziert ist oder nicht.                                                                                                                                                                              | True/False                           |
+| isDeleted                  | Gibt an, ob alle Lizenzen des Benutzers abgelaufen sind und ob der Benutzer daher aus Intune entfernt wurde. Dieses Flag wird für einen einzelnen Datensatz nicht geändert. Stattdessen wird ein neuer Datensatz für einen neuen Benutzerzustand erstellt. | True/False                           |
 | RowLastModifiedDateTimeUTC | UTC-Zeitpunkt, zu dem der Datensatz im Data Warehouse zuletzt geändert wurde.                                                                                                                                                 | 23.11.2016 0:00                      |
 
 
 ## <a name="next-steps"></a>Nächste Schritte
- - Sie können die Entitätssammlung **Aktueller Benutzer** verwenden, um die Benutzerdaten auf Benutzer zu beschränken, die derzeit aktiv sind. Weitere Informationen finden Sie unter [Referenz für die Entität „Aktueller Benutzer“](reports-ref-current-user.md).
- - Informationen zur Nachverfolgung der Benutzerlebensdauer über das Data Warehouse in Intune finden Sie unter [Darstellung der Benutzerlebensdauer im Intune Data Warehouse](reports-ref-user-timeline.md).
+- Sie können die Entitätssammlung **Aktueller Benutzer** verwenden, um die Benutzerdaten auf Benutzer zu beschränken, die derzeit aktiv sind. Weitere Informationen finden Sie unter [Referenz für die Entität „Aktueller Benutzer“](reports-ref-current-user.md).
+- Informationen zur Nachverfolgung der Benutzerlebensdauer über das Data Warehouse in Intune finden Sie unter [Darstellung der Benutzerlebensdauer im Intune Data Warehouse](reports-ref-user-timeline.md).

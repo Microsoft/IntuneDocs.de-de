@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/10/2019
+ms.date: 07/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,42 +17,42 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0baf74515af22fb04f773da0d26b94a7eec5f572
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 16cb03788f8a3dd261a1e6d9dbc3efe4b50f4f73
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041029"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313832"
 ---
-# <a name="reference-for-date-entity"></a>Verweis für die Datumsentität
+# <a name="reference-for-dates-entity"></a>Verweis für die Datums Entität
 
-Die Kategorie **Datum** enthält die **Datumsentität**, die zum Definieren von Datumsverweisen im Datenmodell verwendet wird.
+Die Kategorie **dates** enthält die Entität **date**, die zum Definieren von Datumsverweisen im Datenmodell verwendet wird.
 
-## <a name="date"></a>Datum
+## <a name="dates"></a>Daten
 
-Die **Datumsentität** stellt Datumsangaben dar, die auf mehrere Data Warehouse-Entitäten verweisen.
+Die **date**-Entität stellt Datumsangaben dar, die auf mehrere Data Warehouse-Entitäten verweisen.
 
 
 |    Eigenschaft     |                      Beschreibung                       |       Beispiel        |
 |-----------------|--------------------------------------------------------|----------------------|
-|     DateKey     | Eindeutiger Bezeichner für dieses Datum im Data Warehouse |       20160703       |
+|     dateKey     | Eindeutiger Bezeichner für dieses Datum im Data Warehouse |       20160703       |
 |    FullDate     |    Dieses Datum wird im vollständigen Datums- und Uhrzeitformat dargestellt     | 03.07.2016 12:00:00 Uhr |
-|    DayOfWeek    |                      Wochentag                       |          1           |
-|   DayOfMonth    |                      Tag des Monats                      |          3           |
-|    DayOfYear    |                      Tag des Jahres                       |         185          |
-|   WeekOfYear    |                      Woche des Jahres                      |          28          |
-|   MonthOfYear   |                   Monat des Jahres                    |          7           |
-| CalendarQuarter |                    Kalenderquartal                    |          3           |
-|  CalendarYear   |                     Kalenderjahr                      |         2016         |
-|     DateKey     | Eindeutiger Bezeichner für dieses Datum im Data Warehouse |       20160703       |
+|    dayOfWeek    |                      Wochentag                       |          1           |
+|   dayOfMonth    |                      Tag des Monats                      |          3           |
+|    dayOfYear    |                      Tag des Jahres                       |         185          |
+|   weekOfYear    |                      Woche des Jahres                      |          28          |
+|   monthOfYear   |                   Monat des Jahres                    |          7           |
+| calendarQuarter |                    Kalenderquartal                    |          3           |
+|  calendarYear   |                     Kalenderjahr                      |         2016         |
+|     dateKey     | Eindeutiger Bezeichner für dieses Datum im Data Warehouse |       20160703       |
 |    FullDate     |    Dieses Datum wird im vollständigen Datums- und Uhrzeitformat dargestellt     | 03.07.2016 12:00:00 Uhr |
-|    DayOfWeek    |                      Wochentag                       |          1           |
-|   DayOfMonth    |                      Tag des Monats                      |          3           |
-|    DayOfYear    |                      Tag des Jahres                       |         185          |
-|   WeekOfYear    |                      Woche des Jahres                      |          28          |
-|   MonthOfYear   |                   Monat des Jahres                    |          7           |
-| CalendarQuarter |                    Kalenderquartal                    |          3           |
-|  CalendarYear   |                     Kalenderjahr                      |         2016         |
+|    dayOfWeek    |                      Wochentag                       |          1           |
+|   dayOfMonth    |                      Tag des Monats                      |          3           |
+|    dayOfYear    |                      Tag des Jahres                       |         185          |
+|   weekOfYear    |                      Woche des Jahres                      |          28          |
+|   monthOfYear   |                   Monat des Jahres                    |          7           |
+| calendarQuarter |                    Kalenderquartal                    |          3           |
+|  calendarYear   |                     Kalenderjahr                      |         2016         |
 
 ## <a name="next-steps"></a>Nächste Schritte
 

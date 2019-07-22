@@ -17,49 +17,49 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 934742108effda0a88f4bcc42e06daa12c55288c
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: 70802626c79f11748e81c39afdd8bc8c5d0622b3
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648835"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313775"
 ---
-# <a name="reference-for-intune-management-extension"></a>Referenz für die Intune-Verwaltungserweiterung
+# <a name="reference-for-intune-management-extensions"></a>Verweis für die Intune-Verwaltungserweiterungen
 
-Die Kategorie **IntuneManagementExtension** enthält Entitäten für mobile Geräte zur Nachverfolgung von Informationen wie etwa der folgenden:
+Die Kategorie **intuneManagementExtensions** enthält Entitäten für mobile Geräte zur Nachverfolgung von Informationen wie etwa der folgenden:
 
-  - Versionen einer IntuneManagementExtension
-  - Installationsstatus einer IntuneManagementExtension
+- Versionen einer IntuneManagementExtension
+- Installationsstatus einer IntuneManagementExtension
 
-## <a name="intunemanagementextensionversion"></a>IntuneManagementExtensionVersion
+## <a name="intunemanagementextensionversions"></a>intuneManagementExtensionVersions
 
-Die Entität **IntuneManagementExtensionVersion** listet alle von IntuneManagementExtension verwendeten Versionen auf.
-
-| Eigenschaft  | Beschreibung | Beispiel |
-|---------|------------|--------|
-| ExtensionVersionKey |Eindeutiger Bezeichner für die IntuneManagementExtension-Version. | 1 |
-| ExtensionVersion |Die vierstellige Versionsnummer |1.0.2.0 |
-
-## <a name="intunemanagementextensionhealthstate"></a>IntuneManagementExtensionHealthState
-
-**IntuneManagementExtensionHealthState** listet alle möglichen Status der IntuneManagementExtension auf.
+Die Entität **intuneManagementExtensionVersion** listet alle von intuneManagementExtensions verwendeten Versionen auf.
 
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
-| ExtensionStateKey |Eindeutiger Bezeichner des Integritätszustands | 2 |
-| ExtensionState |Der Integritätsstatus einer IntuneManagementExtension | Healthy |
+| extensionVersionKey |Eindeutiger Bezeichner für die intuneManagementExtensions-Version. | 1 |
+| extensionVersion |Die vierstellige Versionsnummer |1.0.2.0 |
 
-## <a name="intunemanagementextension"></a>IntuneManagementExtension
+## <a name="intunemanagementextensionhealthstates"></a>intuneManagementExtensionHealthStates
 
-Die **IntuneManagementExtension** listet täglich den Integritätsstatus von IntuneManagementExtension auf jedem Windows 10-Gerät auf.
+**intuneManagementExtensionHealthState** listet alle möglichen Status der intuneManagementExtensions auf.
+
+| Eigenschaft  | Beschreibung | Beispiel |
+|---------|------------|--------|
+| extensionStateKey |Eindeutiger Bezeichner des Integritätszustands | 2 |
+| extensionState |Der Integritätsstatus einer IntuneManagementExtension | Healthy |
+
+## <a name="intunemanagementextensions"></a>intuneManagementExtensions
+
+Die **intuneManagementExtensions** listet täglich den Integritätsstatus von intuneManagementExtension auf jedem Windows 10-Gerät auf.
 Die Daten der letzten 60 Tage werden aufbewahrt. 
 
 
 |      Eigenschaft       |                         Beschreibung                         | Beispiel |
 |---------------------|-------------------------------------------------------------|---------|
-|       DateKey       |               Eindeutiger Datumsbezeichner                |   123   |
-|      TenantKey      |              Eindeutiger Mandantenbezeichner               |   456   |
-|      DeviceKey      |              Eindeutiger Bezeichner des Geräts               |   789   |
-| ExtensionVersionKey | Eindeutiger Bezeichner für die IntuneManagementExtension-Version. |    1    |
-|  ExtensionStateKey  |             Eindeutiger Bezeichner des Integritätszustands              |    2    |
+|       dateKey       |               Eindeutiger Datumsbezeichner                |   123   |
+|      tenantKey      |              Eindeutiger Mandantenbezeichner               |   456   |
+|      deviceKey      |              Eindeutiger Bezeichner des Geräts               |   789   |
+| extensionVersionKey | Eindeutiger Bezeichner für die intuneManagementExtension-Version. |    1    |
+|  extensionStateKey  |             Eindeutiger Bezeichner des Integritätszustands              |    2    |
 

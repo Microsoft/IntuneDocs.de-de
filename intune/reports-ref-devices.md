@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/09/2019
+ms.date: 07/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,41 +17,41 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b1fe488ed7d295a40b42c1fb17a76693004be4d
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: d5231daf1d28f94b6e2e1ef0c976c5b9f1877d22
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67547915"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313762"
 ---
 # <a name="reference-for-devices-entities"></a>Referenz für Geräteentitäten
 
-Die Kategorie **Geräte** (Devices) enthält Entitäten für mobile Geräte, die folgende Informationen nachverfolgen:
+Die Kategorie **devices** enthält Entitäten für mobile Geräte, die folgende Informationen nachverfolgen:
 
-  - Gerätetyp
-  - Status der Geräteregistrierung
-  - Gerätebesitz
-  - Status der Geräteverwaltung
-  - Status der Gerätemitgliedschaft bei Azure AD
-  - Anmeldungsstatus
-  - Informationen zur Geschichte des Geräts
-  - App-Inventar auf dem Gerät
+- Gerätetyp
+- Status der Geräteregistrierung
+- Gerätebesitz
+- Status der Geräteverwaltung
+- Status der Gerätemitgliedschaft bei Azure AD
+- Anmeldungsstatus
+- Informationen zur Geschichte des Geräts
+- App-Inventar auf dem Gerät
 
-## <a name="devicetypes"></a>DeviceTypes
+## <a name="devicetypes"></a>deviceTypes
 
-Die Entität **DeviceTypes** stellt den Gerätetyp dar, auf den von anderen Data Warehouse-Entitäten verwiesen wird. Der Gerätetyp beschreibt in der Regel entweder das Gerätemodell, den Hersteller oder eine Kombination aus beidem.
+Die Entität **deviceTypes** stellt den Gerätetyp dar, auf den von anderen Data Warehouse-Entitäten verwiesen wird. Der Gerätetyp beschreibt in der Regel entweder das Gerätemodell, den Hersteller oder eine Kombination aus beidem.
 
 | Eigenschaft  | Beschreibung |
 |---------|------------|
-| DeviceTypeID |Der eindeutige Bezeichner des Gerätetyps |
-| DeviceTypeKey |Der eindeutige Bezeichner des Gerätetyps im Data Warehouse – Ersatzschlüssel |
-| DeviceTypeName |Gerätetyp |
+| deviceTypeID |Der eindeutige Bezeichner des Gerätetyps |
+| deviceTypeKey |Der eindeutige Bezeichner des Gerätetyps im Data Warehouse – Ersatzschlüssel |
+| deviceTypeName |Gerätetyp |
 
 ### <a name="example"></a>Beispiel
 
 | deviceTypeID  | Name | Beschreibung |
 |---------|------------|--------|
-| 0 |desktop- |Windows Desktop-Gerät |
+| 0 |Desktop |Windows Desktop-Gerät |
 | 1 |WindowsRT |WindowsRT-Gerät |
 | 2 |WinMO6 |Windows Mobile 6.0-Gerät |
 | 3 |Nokia |Nokia-Gerät |
@@ -118,7 +118,7 @@ Die Entität **enrollmentFailureCategory** gibt an, warum eine Geräteregistrier
 | Nicht verfügbar                   | Die Fehlerkategorie für die Registrierung ist nicht verfügbar.                                                             |
 | Unbekannt                         | Unbekannter Fehler.                                                                                                |
 | Authentifizierung                  | Fehler bei der Authentifizierung.                                                                                        |
-| Autorisierung                   | Aufruf war authentifiziert, aber nicht für eine Registrierung autorisiert.                                                         |
+| Authorization                   | Aufruf war authentifiziert, aber nicht für eine Registrierung autorisiert.                                                         |
 | AccountValidation               | Fehler beim Überprüfen des Kontos für die Registrierung. (Konto gesperrt, Registrierung nicht aktiviert)                      |
 | UserValidation                  | Benutzer konnte nicht überprüft werden. (Benutzer ist nicht vorhanden, fehlende Lizenz)                                           |
 | DeviceNotSupported              | Das Gerät wird für die mobile Geräteverwaltung nicht unterstützt.                                                         |
@@ -158,9 +158,9 @@ Die Entität **enrollmentFailureReason** gibt eine ausführlichere Ursache für 
 | FeatureNotSupported              | Der Benutzer hat versucht, auf eine Funktion zuzugreifen, die noch nicht für alle Kunden freigegeben oder nicht mit Ihrer Intune-Konfiguration kompatibel ist.                                                            |
 | UserAbandonment                  | Die Registrierung wurde vom Endbenutzer vorzeitig beendet. (Der Endbenutzer hat mit dem Onboarding begonnen, aber dieses nicht rechtzeitig abgeschlossen.)                                                                                           |
 | APNSCertificateExpired           | Apple-Geräte können nicht mit einem abgelaufenen Apple-MDM-Pushzertifikat verwaltet werden.                                                                                                                            |
-## <a name="ownertypes"></a>OwnerTypes
+## <a name="ownertypes"></a>ownerTypes
 
-Die Entität **EnrollmentTypes** gibt an, ob ein Gerät einem Unternehmen oder einer Privatperson gehört oder ob der Besitzer unbekannt ist.
+Die Entität **enrollmentType** gibt an, ob ein Gerät einem Unternehmen oder einer Privatperson gehört oder ob der Besitzer unbekannt ist.
 
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
@@ -171,9 +171,9 @@ Die Entität **EnrollmentTypes** gibt an, ob ein Gerät einem Unternehmen oder e
 > [!Note]  
 > Für `ownerTypeName` in AzureAD müssen Sie beim Erstellen dynamischer Gruppen für Geräte den Filterwert `deviceOwnership` als `Company` festlegen. Weitere Informationen finden Sie unter [Regeln für Geräte](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
-## <a name="managementstates"></a>ManagementStates
+## <a name="managementstates"></a>managementStates
 
-Die Entität **ManagementStates** stellt Details zum Status des Geräts bereit. Details können nützlich sein, wenn Remoteaktionen angewendet werden, das Gerät per Jailbreak oder Rootzugriff manipuliert wurde.
+Die Entität **managementStates** stellt Details zum Status des Geräts bereit. Details können nützlich sein, wenn Remoteaktionen angewendet werden, das Gerät per Jailbreak oder Rootzugriff manipuliert wurde.
 
 | Eigenschaft  | Beschreibung |
 |---------|------------|
@@ -198,15 +198,15 @@ Die Entität **ManagementStates** stellt Details zum Status des Geräts bereit. 
 | 10 |RetireCanceled | Ein Befehl zum Außerkraftsetzen wurde abgebrochen. |
 | 11 |Discovered | Das Gerät wird von Intune neu ermittelt und erhält beim ersten Einchecken den Status „Managed“ (Verwaltet) |
 
-## <a name="managementagenttypes"></a>ManagementAgentTypes
+## <a name="managementagenttypes"></a>managementAgentTypes
 
-Die Entität **ManagementAgentTypes** stellt die Agents dar, die zum Verwalten von Geräten verwendet.
+Die Entität **ManagementAgentType** stellt die Agents dar, die zum Verwalten von Geräten verwendet werden.
 
 | Eigenschaft  | Beschreibung |
 |---------|------------|
-| ManagementAgentTypeID | Eindeutige Bezeichner des Verwaltungs-Agent-Typen |
-| ManagementAgentTypeKey | Eindeutiger Bezeichner des Verwaltungs-Agent-Typen im Data Warehouse – Ersatzschlüssel |
-| ManagementAgentTypeName |Gibt an, welche Art von Agent zum Verwalten des Geräts verwendet wird |
+| managementAgentTypeID | Eindeutige Bezeichner des Verwaltungs-Agent-Typen |
+| managementAgentTypeKey | Eindeutiger Bezeichner des Verwaltungs-Agent-Typen im Data Warehouse – Ersatzschlüssel |
+| managementAgentTypeName |Gibt an, welche Art von Agent zum Verwalten des Geräts verwendet wird |
 
 ### <a name="example"></a>Beispiel
 
@@ -222,74 +222,62 @@ Die Entität **ManagementAgentTypes** stellt die Agents dar, die zum Verwalten v
 
 ## <a name="devices"></a>Geräte
 
-In der Entität **Devices** werden alle für die Verwaltung registrierten Geräte und ihre entsprechenden Eigenschaften aufgelistet.
+In der Entität **devices** werden alle für die Verwaltung registrierten Geräte und ihre entsprechenden Eigenschaften aufgelistet.
 
 |          Eigenschaft          |                                                                                       Beschreibung                                                                                      |
 |:--------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| DeviceKey                  | Der eindeutige Bezeichner des Geräts im Data Warehouse – Ersatzschlüssel.                                                                                                               |
-| DeviceId                   | Eindeutiger Bezeichner des Geräts.                                                                                                                                                     |
-| DeviceName                 | Der Name des Geräts auf Plattformen, die das Benennen von Geräten ermöglichen. Auf anderen Plattformen wird von Intune ein Name anhand anderer Eigenschaften erstellt. Dieses Attribut kann nicht für alle Geräte zur Verfügung stehen. |
-| DeviceTypeKey              | Schlüssel des Gerätetypattributs für dieses Gerät.                                                                                                                                    |
-| DeviceRegistrationState    | Schlüssel des Clientregistrierungsstatus-Attributs für dieses Gerät.                                                                                                                      |
-| OwnerTypeKey               | Schlüssel des Besitzertypattributs für dieses Gerät: Unternehmen, persönlich oder unbekannt.                                                                                                    |
-| EnrolledDateTime           | Zeitpunkt der Registrierung dieses Geräts.                                                                                                                                         |
-| LastSyncDateTime           | Letztes bekanntes Einchecken des Geräts mit Intune.                                                                                                                                              |
-| ManagementAgentKey         | Der Schlüssel des Verwaltungs-Agents, der mit diesem Gerät verknüpft ist.                                                                                                                             |
-| ManagementStateKey         | Der Schlüssel des Verwaltungsstatus, der mit diesem Gerät verknüpft ist und den neuesten Zustand einer Remoteaktion angibt oder anzeigt, ob das Gerät per Jailbreak oder Rootzugriff manipuliert wurde.                                                |
-| AzureADDeviceId            | Die Azure-Geräte-ID für dieses Gerät.                                                                                                                                                  |
-| AzureADRegistered          | Gibt an, ob das Gerät in Azure Active Directory registriert ist.                                                                                                                             |
-| DeviceCategoryKey          | Der Schlüssel der Kategorie, die mit diesem Gerät verknüpft ist.                                                                                                                                     |
-| DeviceEnrollmentType       | Der Schlüssel des Registrierungstyps, der mit diesem Gerät verknüpft ist und die Registrierungsmethode angibt.                                                                                             |
-| ComplianceStateKey         | Der Schlüssel des Konformitätsstatus, der mit diesem Gerät verknüpft ist.                                                                                                                             |
-| OSVersion                  | Betriebssystemversion des Geräts                                                                                                                                                |
-| EasDeviceId                | Exchange ActiveSync-ID des Geräts                                                                                                                                                  |
-| SerialNumber               | SerialNumber                                                                                                                                                                           |
-| UserId                     | Eindeutiger Bezeichner für den Benutzer, der dem Gerät zugeordnet ist.                                                                                                                           |
-| RowLastModifiedDateTimeUTC | UTC-Zeitpunkt, zu dem dieses Gerät zuletzt in Data Warehouse geändert wurde.                                                                                                       |
+| deviceKey                  | Der eindeutige Bezeichner des Geräts im Data Warehouse – Ersatzschlüssel.                                                                                                               |
+| deviceId                   | Eindeutiger Bezeichner des Geräts.                                                                                                                                                     |
+| deviceName                 | Der Name des Geräts auf Plattformen, die das Benennen von Geräten ermöglichen. Auf anderen Plattformen wird von Intune ein Name anhand anderer Eigenschaften erstellt. Dieses Attribut kann nicht für alle Geräte zur Verfügung stehen. |
+| deviceTypeKey              | Schlüssel des Gerätetypattributs für dieses Gerät.                                                                                                                                    |
+| deviceRegistrationState    | Schlüssel des Clientregistrierungsstatus-Attributs für dieses Gerät.                                                                                                                      |
+| ownerTypeKey               | Schlüssel des Besitzertypattributs für dieses Gerät: Unternehmen, persönlich oder unbekannt.                                                                                                    |
+| enrolledDateTime           | Zeitpunkt der Registrierung dieses Geräts.                                                                                                                                         |
+| lastSyncDateTime           | Letztes bekanntes Einchecken des Geräts mit Intune.                                                                                                                                              |
+| managementAgentKey         | Der Schlüssel des Verwaltungs-Agents, der mit diesem Gerät verknüpft ist.                                                                                                                             |
+| managementStateKey         | Der Schlüssel des Verwaltungsstatus, der mit diesem Gerät verknüpft ist und den neuesten Zustand einer Remoteaktion angibt oder anzeigt, ob das Gerät per Jailbreak oder Rootzugriff manipuliert wurde.                                                |
+| azureADDeviceId            | Die Azure-Geräte-ID für dieses Gerät.                                                                                                                                                  |
+| azureADRegistered          | Gibt an, ob das Gerät in Azure Active Directory registriert ist.                                                                                                                             |
+| deviceCategoryKey          | Der Schlüssel der Kategorie, die mit diesem Gerät verknüpft ist.                                                                                                                                     |
+| deviceEnrollmentType       | Der Schlüssel des Registrierungstyps, der mit diesem Gerät verknüpft ist und die Registrierungsmethode angibt.                                                                                             |
+| complianceStateKey         | Der Schlüssel des Konformitätsstatus, der mit diesem Gerät verknüpft ist.                                                                                                                             |
+| osVersion                  | Betriebssystemversion des Geräts                                                                                                                                                |
+| easDeviceId                | Exchange ActiveSync-ID des Geräts                                                                                                                                                  |
+| serialNumber               | SerialNumber                                                                                                                                                                           |
+| userId                     | Eindeutiger Bezeichner für den Benutzer, der dem Gerät zugeordnet ist.                                                                                                                           |
+| rowLastModifiedDateTimeUTC | UTC-Zeitpunkt, zu dem dieses Gerät zuletzt in Data Warehouse geändert wurde.                                                                                                       |
 | Hersteller               | Der Hersteller der CPU                                                                                                                                                             |
-| Modell                      | Gerätemodell                                                                                                                                                                    |
-| OperatingSystem            | Betriebssystem des Geräts. Windows, iOS usw.                                                                                                                                   |
+| model                      | Gerätemodell                                                                                                                                                                    |
+| operatingSystem            | Betriebssystem des Geräts. Windows, iOS usw.                                                                                                                                   |
 | isDeleted                  | Binärwert, der anzeigt, ob das Gerät gelöscht wurde oder nicht.                                                                                                                                 |
-| AndroidSecurityPatchLevel  | Android-Sicherheitspatchebene                                                                                                                                                           |
+| androidSecurityPatchLevel  | Android-Sicherheitspatchebene                                                                                                                                                           |
 | MEID                       | MEID                                                                                                                                                                                   |
 | isSupervised               | Gibt an, ob das Gerät überwacht wird.                                                                                                                                                               |
-| FreeStorageSpaceInBytes    | Freier Speicherplatz in Bytes.                                                                                                                                                                 |
-| TotalStorageSpaceInBytes   | Speicherplatz insgesamt in Bytes.                                                                                                                                                                |
-| EncryptionState            | In diesem Feld wird der Verschlüsselungsstatus des Geräts angezeigt.                                                                                                                                                      |
-| SubscriberCarrier          | Netzbetreiber des Abonnenten des Geräts                                                                                                                                                       |
-| PhoneNumber                | Telefonnummer des Geräts                                                                                                                                                             |
+| freeStorageSpaceInBytes    | Freier Speicherplatz in Bytes.                                                                                                                                                                 |
+| totalStorageSpaceInBytes   | Speicherplatz insgesamt in Bytes.                                                                                                                                                                |
+| encryptionState            | In diesem Feld wird der Verschlüsselungsstatus des Geräts angezeigt.                                                                                                                                                      |
+| subscriberCarrier          | Netzbetreiber des Abonnenten des Geräts                                                                                                                                                       |
+| phoneNumber                | Telefonnummer des Geräts                                                                                                                                                             |
 | IMEI                       | IMEI                                                                                                                                                                                   |
-| CellularTechnology         | Mobilfunktechnologie des Geräts                                                                                                                                                    |
+| cellularTechnology         | Mobilfunktechnologie des Geräts                                                                                                                                                    |
 | WiFiMacAddress             | WiFi-MAC                                                                                                                                                                              |
+| ICCD                       | Bezeichner der integrierten Verbindungs Karte                                                                                                                                                     |
 
-## <a name="devicepropertyhistory"></a>DevicePropertyHistory
+## <a name="devicepropertyhistories"></a>devicePropertyHistories
 
-Die Entität **DevicePropertyHistory** hat die gleichen Eigenschaften wie die Gerätetabellen und die täglichen Momentaufnahmen der einzelnen Gerätedatensätze pro Tag für die letzten 90 Tage. Die DateKey-Spalte gibt den Tag für jede Zeile an.
+Die Entität **devicePropertyHistory** hat die gleichen Eigenschaften wie die Gerätetabellen und die täglichen Momentaufnahmen der einzelnen Gerätedatensätze pro Tag für die letzten 90 Tage. Die DateKey-Spalte gibt den Tag für jede Zeile an.
 
 |          Eigenschaft          |                                                                                      Beschreibung                                                                                     |
 |:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| DateKey                    | Verweis auf die Datumstabelle, die den Tag angibt                                                                                                                                          |
-| DeviceKey                  | Der eindeutige Bezeichner des Geräts in Data Warehouse – Ersatzschlüssel. Dies ist ein Verweis auf die Gerätetabelle, die die Intune-Geräte-ID enthält.                               |
-| DeviceName                 | Der Name des Geräts auf Plattformen, die das Benennen von Geräten ermöglichen. Auf anderen Plattformen wird von Intune einen Namen aus anderen Eigenschaften erstellt. Dieses Attribut kann nicht für alle Geräte zur Verfügung stehen. |
-| DeviceRegistrationStateKey | Schlüssel des Attributs für den Geräteregistrierungsstatus dieses Geräts.                                                                                                                    |
-| OwnerTypeKey               | Schlüssel des Besitzertypattributs für dieses Gerät: Unternehmen, persönlich oder unbekannt.                                                                                                  |
-| ManagementStateKey         | Der Schlüssel des Verwaltungsstatus, der mit diesem Gerät verknüpft ist und den neuesten Zustand einer Remoteaktion angibt oder anzeigt, ob das Gerät per Jailbreak oder Rootzugriff manipuliert wurde.                                                |
-| AzureADRegistered          | Gibt an, ob das Gerät in Azure Active Directory registriert ist.                                                                                                                             |
-| ComplianceStateKey         | Ein Schlüssel zum Konformitätsstatus.                                                                                                                                                            |
+| dateKey                    | Verweis auf die Datumstabelle, die den Tag angibt                                                                                                                                          |
+| deviceKey                  | Der eindeutige Bezeichner des Geräts in Data Warehouse – Ersatzschlüssel. Dies ist ein Verweis auf die Gerätetabelle, die die Intune-Geräte-ID enthält.                               |
+| deviceName                 | Der Name des Geräts auf Plattformen, die das Benennen von Geräten ermöglichen. Auf anderen Plattformen wird von Intune einen Namen aus anderen Eigenschaften erstellt. Dieses Attribut kann nicht für alle Geräte zur Verfügung stehen. |
+| deviceRegistrationStateKey | Schlüssel des Attributs für den Geräteregistrierungsstatus dieses Geräts.                                                                                                                    |
+| ownerTypeKey               | Schlüssel des Besitzertypattributs für dieses Gerät: Unternehmen, persönlich oder unbekannt.                                                                                                  |
+| managementStateKey         | Der Schlüssel des Verwaltungsstatus, der mit diesem Gerät verknüpft ist und den neuesten Zustand einer Remoteaktion angibt oder anzeigt, ob das Gerät per Jailbreak oder Rootzugriff manipuliert wurde.                                                |
+| azureADRegistered          | Gibt an, ob das Gerät in Azure Active Directory registriert ist.                                                                                                                             |
+| complianceStateKey         | Ein Schlüssel zum Konformitätsstatus.                                                                                                                                                            |
 | OSVersion                  | Betriebssystemversion                                                                                                                                                                          |
-| JailBroken                 | Gibt an, ob das Gerät mit Jailbreak oder Rooting manipuliert wurde.                                                                                                                                         |
-| DeviceCategoryKey          | Schlüssel des Gerätekategorieattributs für dieses Gerät. 
-
-## <a name="applicationinventory"></a>ApplicationInventory
-
-Die Entität **ApplicationInventory** listet die Apps auf, die zum Zeitpunkt der Inventursammlung auf dem Gerät gefunden wurden.
-
-
-|      Eigenschaft      |                       Beschreibung                        |
-|--------------------|----------------------------------------------------------|
-|     DeviceKey      |              Ein Verweis auf die Gerätetabelle               |
-|   ApplicationKey   | ? (kopiert aus ExchangeDeviceService\DeviceApplication) |
-|  ApplicationName   | ? (kopiert aus ExchangeDeviceService\DeviceApplication) |
-| ApplicationVersion | ? (kopiert aus ExchangeDeviceService\DeviceApplication) |
-|     BundleSize     | ? (kopiert aus ExchangeDeviceService\DeviceApplication) |
+| jailBroken                 | Gibt an, ob das Gerät mit Jailbreak oder Rooting manipuliert wurde.                                                                                                                                         |
+| deviceCategoryKey          | Schlüssel des Gerätekategorieattributs für dieses Gerät. 
 

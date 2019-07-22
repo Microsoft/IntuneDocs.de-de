@@ -16,20 +16,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5bdd2171853a8db944c910ef4d912f7681d17077
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549124"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354435"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-Baselineeinstellungen für Intune
 
 Zeigen Sie die Baselineeinstellungen für Microsoft Defender Advanced Threat Protection (früher Windows Defender Advanced Threat Protection) an, die von Microsoft Intune unterstützt werden. Die Standardeinstellungen der ATP-Baseline (Advanced Threat Protection) entsprechen der für ATP empfohlenen Konfiguration und stimmen möglicherweise nicht mit den Standardeinstellungen anderer Sicherheitsbaselines überein.  
 
-  Die Microsoft Defender Advanced Threat Protection-Baseline ist verfügbar, wenn Ihre Umgebung den Anforderungen zur Verwendung von [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) entspricht.
+Die Microsoft Defender Advanced Threat Protection-Baseline ist verfügbar, wenn Ihre Umgebung den Anforderungen zur Verwendung von [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) entspricht. 
 
-
+Diese Baseline ist für physische Geräte optimiert und wird zurzeit nicht für die Verwendung auf virtuellen Computern (VMS) oder VDI-Endpunkten empfohlen. Bestimmte Baseline-Einstellungen können sich auf interaktive Remote Sitzungen in virtualisierten Umgebungen auswirken. Weitere Informationen finden Sie in der Windows-Dokumentation unter [erhöhen der Konformität auf die Microsoft Defender ATP-Sicherheitsbaseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) .
 
 
 > [!NOTE]  
@@ -53,7 +53,7 @@ Während der Verwendung von Microsoft Edge schützt Microsoft Defender Applicati
     **Standard**: Ja
 
   - **Clipboard behavior** (Verhalten der Zwischenablage) - *Settings/ClipboardSettings*  
-    Legen Sie zulässige Aktionen für das Kopieren und Einfügen zwischen dem lokalen Computer und dem virtuellen Browser von Application Guard fest.  Zu den Optionen gehören:
+    Legen Sie zulässige Aktionen für das Kopieren und Einfügen zwischen dem lokalen Computer und dem virtuellen Browser von Application Guard fest.  Sie haben folgende Optionen:
     - *Nicht konfiguriert*  
     - *Beide blockieren* – Daten können zwischen dem Computer und dem virtuellen Browser nicht übertragen werden.  
     - *Host zu Container blockieren* – Daten können vom Computer nicht in den virtuellen Browser übertragen werden.
@@ -164,22 +164,22 @@ Weitere Informationen finden Sie in der Windows-Dokumentation unter [Einstellung
 
   Konfigurieren Sie bei der Richtlinie für BitLocker-Verschlüsselung von Wechseldatenträgern die folgenden Einstellungen:
 
-    - **Verschlüsselung für Schreibzugriff anfordern**  
-      **Standard**: Ja
+  - **Verschlüsselung für Schreibzugriff anfordern**  
+    **Standard**: Ja
 
-    - **Verschlüsselungsmethode**  
-      **Standard**: AES 128bit CBC
+  - **Verschlüsselungsmethode**  
+    **Standard**: AES 128bit CBC
 
 - **Richtlinie für BitLocker-Verschlüsselung von Festplattenlaufwerken**  
   Die Werte für diese Richtlinie bestimmen die Stärke der Verschlüsselung, die BitLocker für die Verschlüsselung von Festplattenlaufwerken verwendet. Unternehmen können die Verschlüsselungsstufe für erhöhte Sicherheit steuern (AES-256 ist sicherer als AES-128). Wenn Sie diese Einstellung aktivieren, können Sie einen Verschlüsselungsalgorithmus konfigurieren und für Festplattenlaufwerke, Betriebssystemlaufwerke und Wechseldatenträger die Verschlüsselungsstärke für Schlüssel individuell konfigurieren. Für Festplatten- und Betriebssystemlaufwerke wird die Verwendung des XTS-AES-Algorithmus empfohlen. Für Wechseldatenträger sollten Sie AES-CBC 128-Bit oder AES-CBC 256-Bit verwenden, wenn es in anderen Geräten verwendet wird, auf denen nicht Windows 10, Version 1511 oder höher ausgeführt wird. Das Ändern der Verschlüsselungsmethode hat keine Auswirkungen, wenn das Laufwerk bereits verschlüsselt ist oder die Verschlüsselung gerade ausgeführt wird. In diesen Fällen wird diese Richtlinieneinstellung ignoriert.
 
   Konfigurieren Sie bei der Richtlinie für BitLocker-Verschlüsselung von Festplattenlaufwerken die folgenden Einstellungen:
 
-    - **Verschlüsselung für Schreibzugriff anfordern**  
-      **Standard**: Ja
+  - **Verschlüsselung für Schreibzugriff anfordern**  
+    **Standard**: Ja
 
-    - **Verschlüsselungsmethode**  
-      **Standard**: AES 128bit XTS
+  - **Verschlüsselungsmethode**  
+    **Standard**: AES 128bit XTS
 
 - **Richtlinie für BitLocker-Verschlüsselung von Systemlaufwerken**  
   Die Werte für diese Richtlinie bestimmen die Stärke der Verschlüsselung, die BitLocker für die Verschlüsselung des Systemlaufwerks verwendet. Unternehmen sollten die Verschlüsselungsstufe für erhöhte Sicherheit steuern (AES-256 ist sicherer als AES-128). Wenn Sie diese Einstellung aktivieren, können Sie einen Verschlüsselungsalgorithmus konfigurieren und für Festplattenlaufwerke, Betriebssystemlaufwerke und Wechseldatenträger die Verschlüsselungsstärke für Schlüssel individuell konfigurieren. Für Festplatten- und Betriebssystemlaufwerke wird die Verwendung des XTS-AES-Algorithmus empfohlen. Für Wechseldatenträger sollten Sie AES-CBC 128-Bit oder AES-CBC 256-Bit verwenden, wenn es in anderen Geräten verwendet wird, auf denen nicht Windows 10, Version 1511 oder höher ausgeführt wird. Das Ändern der Verschlüsselungsmethode hat keine Auswirkungen, wenn das Laufwerk bereits verschlüsselt ist oder die Verschlüsselung gerade ausgeführt wird. In diesen Fällen wird diese Richtlinieneinstellung ignoriert.  
@@ -207,7 +207,7 @@ Weitere Informationen finden Sie in der Windows-Dokumentation unter [Einstellung
 
   Um zu überprüfen, ob das System Kernel-DMA-Schutz unterstützt, führen Sie MSINFO32.exe auf dem System aus, und überprüfen Sie das Feld *Kernel-DMA-Schutz* auf der Übersichtsseite.  
 
-  Zu den Optionen gehören: 
+  Sie haben folgende Optionen: 
   - *Gerätestandard* – Nach der Anmeldung oder Entsperrung des Bildschirms dürfen Geräte mit für DMA-Neuzuordnung kompatiblen Treibern jederzeit aufgezählt werden. Geräte mit für DMA-Neuzuordnung inkompatiblen Treibern werden erst aufgezählt, nachdem der Benutzer den Bildschirm entsperrt hat.
   - *Alle zulassen* – Alle externen DMA-fähigen PCIe-Geräte werden jederzeit aufgezählt.
   - *Alle blockieren* – Geräte mit für DMA-Neuzuordnung kompatiblen Treibern dürfen jederzeit aufgezählt werden. Geräte mit für DMA-Neuzuordnung inkompatiblen Treibern dürfen DMA niemals starten und ausführen.
@@ -428,7 +428,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Ja
 
 - **Defender-Cloud-Block-Level**  
-  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – Bestimmen Sie mit dieser Richtlinie, wie aggressiv Windows Defender Antivirus beim Blockieren und Überprüfen verdächtiger Dateien sein soll. Zu den Optionen gehören:
+  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – Bestimmen Sie mit dieser Richtlinie, wie aggressiv Windows Defender Antivirus beim Blockieren und Überprüfen verdächtiger Dateien sein soll. Sie haben folgende Optionen:
 
   - „Hoch“ – Unbekannte Dateien aggressiv blockieren und gleichzeitig die Clientleistung optimieren (größere Wahrscheinlichkeit falsch positiver Ergebnisse)
   - „Hoher Zuwachs“ – Unbekannte Dateien aggressiv blockieren und zusätzliche Schutzmaßnahmen anwenden (beeinträchtigt möglicherweise die Clientleistung)

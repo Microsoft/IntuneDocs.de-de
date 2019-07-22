@@ -17,54 +17,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46e90d422afb8ebbd356031d4815708b5b0768f0
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: a5436de6b972e5cbe8b2b17d42f0974cb38df47e
+ms.sourcegitcommit: c3ac858bbadb63d248ed54069e48160d703bbaf2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713138"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68313810"
 ---
 # <a name="reference-for-application-entities"></a>Verweis für Anwendungsentitäten
 
 Die Kategorie **Anwendung** (Application) enthält Entitäten für mobile Geräte, die folgende Informationen nachverfolgen:
 
-  - Version einer App
-  - Installationsquelle einer App
-  - Typ der Entwickler, die eine App entwickelt haben
-  - Typen verwalteter Software für eine App, z.B. **sidecar** oder **desktop**
-  - Volume Purchasing Program (VPP) – Status einer App
+- Version einer App
+- Installationsquelle einer App
+- Typ der Entwickler, die eine App entwickelt haben
+- Typen verwalteter Software für eine App, z.B. **sidecar** oder **desktop**
+- Volume Purchasing Program (VPP) – Status einer App
 
-## <a name="apprevision"></a>AppRevision
+## <a name="apprevisions"></a>appRevisions
 
-Die Entität **AppRevision** führt alle Versionen einer App auf.
+Die **appRevision**-Entität listet alle Versionen von Apps auf.
 
 | Eigenschaft  | Beschreibung | Beispiel |
 |---------|------------|--------|
-| AppKey |Eindeutiger Bezeichner der App |123 |
-| ApplicationId |Eindeutiger Bezeichner einer App. Ähnlich wie AppKey, dieser Schlüssel ist jedoch ein natürlicher Schlüssel. |b66bc706-ffff-7437-0340-032819502773 |
-| Revision |Die Version, die vom Administrator beim Upload der Binärdatei erwähnt wurde |2 |
-| Titel |Titel der App |Excel |
-| Herausgeber |Herausgeber der App |Microsoft |
-| UploadState |Hochladestatus der App |1 |
-| AppTypeKey |Der Verweis zu AppType wird im folgenden Abschnitt beschrieben. | |
-| VppProgramTypeKey |Der Verweis zu VppProgramType wird weiter unten beschrieben. | |
-| CreationTime |Die Uhrzeit, zu der diese Revision erstellt wurde |23.11.2016 12:00:00 Uhr |
-| ModifiedTime |Der letzte Zeitpunkt, zu dem eine Änderung an einem mit dieser Revision verknüpften Element vorgenommen wurde |23.11.2016 12:00:00 Uhr |
+| appKey |Eindeutiger Bezeichner der App |123 |
+| applicationId |Eindeutiger Bezeichner einer App. Ähnlich wie AppKey, dieser Schlüssel ist jedoch ein natürlicher Schlüssel. |b66bc706-ffff-7437-0340-032819502773 |
+| revision |Die Version, die vom Administrator beim Upload der Binärdatei erwähnt wurde |2 |
+| title |Titel der App |Excel |
+| publisher |Herausgeber der App |Microsoft |
+| uploadState |Hochladestatus der App |1 |
+| appTypeKey |Der Verweis zu AppType wird im folgenden Abschnitt beschrieben. | |
+| vppProgramTypeKey |Der Verweis zu VppProgramType wird weiter unten beschrieben. | |
+| creationTime |Die Uhrzeit, zu der diese Revision erstellt wurde |23.11.2016 12:00:00 Uhr |
+| modifiedTime |Der letzte Zeitpunkt, zu dem eine Änderung an einem mit dieser Revision verknüpften Element vorgenommen wurde |23.11.2016 12:00:00 Uhr |
 | Größe |Größe der Binärdatei | |
-| StartDateInclusiveUTC |Datum und Uhrzeit in UTC, als diese App-Revision im Data Warehouse erstellt wurde |23.11.2016 12:00:00 Uhr |
-| EndDateExclusiveUTC |Datum und Uhrzeit in UTC, als diese App-Revision als veraltet gekennzeichnet wurde |23.11.2016 12:00:00 Uhr |
-| IsCurrent |Gibt an, ob diese App-Version im Data Warehouse aktuell ist |Wahr/falsch |
-| RowLastModifiedDateTimeUTC |Datum und Uhrzeit in UTC, als diese App-Version zuletzt im Data Warehouse geändert wurde |23.11.2016 12:00:00 Uhr |
+| startDateInclusiveUTC |Datum und Uhrzeit in UTC, als diese App-Revision im Data Warehouse erstellt wurde |23.11.2016 12:00:00 Uhr |
+| endDateExclusiveUTC |Datum und Uhrzeit in UTC, als diese App-Revision als veraltet gekennzeichnet wurde |23.11.2016 12:00:00 Uhr |
+| isCurrent |Gibt an, ob diese App-Version im Data Warehouse aktuell ist |True/False |
+| rowLastModifiedDateTimeUTC |Datum und Uhrzeit in UTC, als diese App-Version zuletzt im Data Warehouse geändert wurde |23.11.2016 12:00:00 Uhr |
 
-## <a name="apptypes"></a>AppTypes
+## <a name="apptypes"></a>appTypes
 
-Die Entität **AppTypes** führt die Installationsquelle einer App auf.
+Die Entität **appType** führt die Installationsquelle einer App auf.
 
 | Eigenschaft  | Beschreibung |
 |---------|------------|
-| AppTypeID |ID für den Typ |
-| AppTypeKey |Untergeordneter Schlüssel für den Schlüssel |
-| AppTypeName |App-Typ |
+| appTypeID |ID für den Typ |
+| appTypeKey |Untergeordneter Schlüssel für den Schlüssel |
+| appTypeName |App-Typ |
 
 ### <a name="example"></a>Beispiel
 
@@ -85,15 +85,15 @@ Die Entität **AppTypes** führt die Installationsquelle einer App auf.
 | 12 |Branchenspezifische Windows Phone-App | Eine branchenspezifische Windows Phone-App |
 
 
-## <a name="vppprogramtypes"></a>VppProgramTypes
+## <a name="vppprogramtypes"></a>vppProgramTypes
 
-Die Entität **VppProgramTypes** führt mögliche VPP-Programmtypen für eine App auf.
+Die Entität **vppProgramType** führt mögliche VPP-Programmtypen für eine App auf.
 
 | Eigenschaft  | Beschreibung |
 |---------|------------|
-| VppProgramTypeID | ID für den Typen |
-| VppProgramTypeKey | Ersatzschlüssel für den Schlüssel |
-| VppProgramTypeName | VPP-Programmtyp |
+| vppProgramTypeID | ID für den Typen |
+| vppProgramTypeKey | Ersatzschlüssel für den Schlüssel |
+| vppProgramTypeName | VPP-Programmtyp |
 
 ### <a name="example"></a>Beispiel
 
@@ -105,27 +105,27 @@ Die Entität **VppProgramTypes** führt mögliche VPP-Programmtypen für eine Ap
 
 
 
-## <a name="applicationinventory"></a>ApplicationInventory
+## <a name="applicationinventories"></a>applicationinventuren
 
 Die Entität **ApplicationInventory** listet die Anwendungen auf, die zum Zeitpunkt der Inventursammlung auf dem Gerät gefunden wurden.
 
 | Eigenschaft  | Beschreibung |
 |---------|------------|
-| DeviceKey | Dies ist ein Verweis auf die Gerätetabelle, die die Intune-Geräte-ID enthält. |
-| DateKey | Verweis auf die Datumstabelle, die den Tag der Inventur angibt |
-| ApplicationName | Der Anwendungsname. |
-| ApplicationVersion | Anwendungsversion |
-| BundleSize | Größe der App in Byte |
+| deviceKey | Dies ist ein Verweis auf die Gerätetabelle, die die Intune-Geräte-ID enthält. |
+| dateKey | Verweis auf die Datumstabelle, die den Tag der Inventur angibt |
+| applicationName | Der Anwendungsname. |
+| applicationVersion | Anwendungsversion |
+| bundleSize | Größe der App in Byte |
 
-## <a name="mobileappinstallstate"></a>MobileAppInstallState
+## <a name="mobileappinstallstates"></a>mobileAppInstallStates
 
-Die Entität **MobileAppInstallState** stellt den Installationsstatus für eine mobile Anwendung dar, nachdem sie einer Gruppe, die Geräte und/oder Benutzer enthält, zugewiesen haben.
+Die Entität **mobileAppInstallState** stellt den Installationsstatus für eine mobile Anwendung dar, nachdem sie einer Gruppe, die Geräte und/oder Benutzer enthält, zugewiesen wurde.
 
 | Eigenschaft | Beschreibung |
 |---|---|
-| AppInstallStateKey | Die eindeutige ID des App-Installationsstatus für Ihr Konto |
-| AppInstallState | Enumerationswert des App-Installationsstatus |
-| AppInstallStateName | Name des App-Installationsstatus |
+| appInstallStateKey | Die eindeutige ID des App-Installationsstatus für Ihr Konto |
+| appInstallState | Enumerationswert des App-Installationsstatus |
+| appInstallStateName | Name des App-Installationsstatus |
 
 
 
