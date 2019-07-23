@@ -171,6 +171,7 @@
       items:
         - name: Was ist die Geräteregistrierung?
           href: device-enrollment.md
+          displayName: COD; BYOD; DEM; DEP; USB-SA; USB-Direct; co-management; GPO
         - name: Funktionen zur Geräteverwaltung
           href: device-management-capabilities.md
         - name: Optionen für die Registrierung
@@ -184,6 +185,7 @@
               href: apple-mdm-push-certificate-get.md
             - name: Unternehmensbezeichner
               href: corporate-identifiers-add.md
+              displayName: COD
             - name: Mehrstufige Authentifizierung
               href: multi-factor-authentication.md
             - name: Geräteregistrierungs-Manager
@@ -273,6 +275,8 @@
           href: device-remove-user.md
         - name: Suchen des primären Benutzers
           href: find-primary-user.md
+        - name: Senden von Benachrichtigungen
+          href: custom-notifications.md
         - name: Löschen eines macOS-Geräts
           href: device-erase.md
         - name: Remotesteuerung mobiler Geräte
@@ -559,20 +563,27 @@
               href: apps-add-built-in.md
             - name: PowerShell-Skripts
               href: intune-management-extension.md
-        - name: Bereitstellen von Apps
-          href: apps-deploy.md
+        - name: Zuweisen von Apps
           items:
+            - name: Zuweisen von Apps zu Gruppen
+              href: apps-deploy.md
+              displayName: app assignment; assignment
             - name: Einschließen und Ausschließen von Apps
               href: apps-inc-exl-assignments.md
+              displayName: app assignment
             - name: Bereitstellen von Windows 10-apps
               href: apps-windows-10-app-deploy.md
             - name: Bereitstellen von Apps in Government-Umgebungen
               href: apps-deploy-gcc-dod.md
         - name: Überwachen von Apps
           href: apps-monitor.md
+        - name: Ermittelte Apps
+          href: app-discovered-apps.md
         - name: Konfigurieren von Apps
-          href: app-configuration-policies-overview.md
           items:
+            - name: App-Konfigurationsrichtlinien
+              href: app-configuration-policies-overview.md
+              displayName: App configuration policy; configuration policy
             - name: iOS Verwaltete Geräte
               href: app-configuration-policies-use-ios.md
             - name: Android Verwaltete Geräte
