@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/27/2019
+ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,22 +15,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9309b110d37795f840e10f22b71b06507aea4c62
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 0bfad3feed6daef1930c235bec9c25e809da46c5
+ms.sourcegitcommit: ce9cae824a79223eab3c291fd5d5e377efac84cb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373718"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67842737"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Verwenden von Windows 10-Vorlagen zum Konfigurieren von Gruppenrichtlinieneinstellungen in Microsoft Intune
 
 Wenn Sie Geräte in Ihrer Organisation verwalten, sollten Sie auch Einstellungen erstellen, die dann auf unterschiedliche Gerätegruppen angewendet werden. Nehmen Sie beispielsweise an, dass Sie über mehrere Gerätegruppen verfügen. Sie sollten Gruppe A mehrere bestimmte Einstellungen zuweisen. Gruppe B soll andere Einstellungen erhalten. Ihre Einstellungen sollen in einer einfachen, konfigurierbaren Ansicht angezeigt werden.
 
-Sie können diese Aufgabe mithilfe der **administrativen Vorlagen** in Microsoft Intune erledigen. Die administrativen Vorlagen enthalten Hunderte Einstellungen, die Funktionen in Internet Explorer, Microsoft Office-Programmen und Remotedesktop anpassen sowie den Zugriff auf OneDrive und die Verwendung eines Bildkennworts oder einer PIN für die Anmeldung kontrollieren können. Diese Vorlagen ähneln den Gruppenrichtlinieneinstellungen (GPO) in Active Directory (AD) und sind [durch ADMX unterstützte Einstellungen](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (öffnet eine andere Dokumentationsseite), die XML verwenden. Die Vorlagen in Intune sind jedoch vollständig cloudbasiert. Sie bieten eine einfachere und unkompliziertere Möglichkeit, die Einstellungen zu konfigurieren und die Einstellungen zu suchen, die Sie nutzen möchten.
+Sie können diese Aufgabe mithilfe der **administrativen Vorlagen** in Microsoft Intune erledigen. Die administrativen Vorlagen enthalten Hunderte Einstellungen, die Funktionen in Internet Explorer, Microsoft Office-Programmen, Remotedesktop und OneDrive sowie die Verwendung von Kennwörtern und PINs u. v. m. kontrollieren können. Diese Einstellungen ermöglichen Gruppenadministratoren das Verwalten von Gruppenrichtlinien mithilfe der Cloud.
+
+Die Windows-Einstellungen ähneln den Einstellungen für Gruppenrichtlinienobjekte in Active Directory (AD). Diese Einstellungen sind in Windows integriert und sind [durch ADMX unterstützte Einstellungen](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (öffnet eine andere Microsoft-Website), die XML verwenden. Die Office-Einstellungen sind in ADMX erfasst und verwenden die ADMX-Einstellungen in [administrativen Office-Vorlagendateien](https://www.microsoft.com/download/details.aspx?id=49030). Die Intune-Vorlagen sind jedoch vollständig cloudbasiert. Sie bieten eine einfache und unkomplizierte Möglichkeit, die Einstellungen zu konfigurieren und die Einstellungen zu suchen, die Sie nutzen möchten.
 
 **Administrative Vorlagen** sind in Intune integriert, einschließlich der Verwendung des OMA-URI, und erfordern keine weiteren Anpassungen. Als Bestandteil Ihrer Lösung für die mobile Geräteverwaltung (Mobile Device Management, MDM) verwenden Sie diese Vorlageneinstellungen als Anlaufstelle, um Ihre Windows 10-Geräte zu verwalten.
 
-In diesem Artikel sind die Schritte zum Erstellen einer Vorlage für Windows 10-Geräte aufgeführt. Zudem wird erläutert, wie alle verfügbaren Einstellungen in Microsoft Intune gefiltert werden können. Wenn Sie die Vorlage erstellen, wird ein Gerätekonfigurationsprofil erstellt. Sie können dieses Profil dann Windows 10-Geräten in Ihrer Organisation zuweisen oder für diese bereitstellen.
+In diesem Artikel sind die Schritte zum Erstellen einer Vorlage für Windows 10-Geräte aufgeführt. Zudem wird erläutert, wie alle verfügbaren Einstellungen in Intune gefiltert werden können. Wenn Sie die Vorlage erstellen, wird ein Gerätekonfigurationsprofil erstellt. Sie können dieses Profil dann Windows 10-Geräten in Ihrer Organisation zuweisen oder für diese bereitstellen.
+
+## <a name="before-you-begin"></a>Vorbereitung
+
+- Einige dieser Einstellungen sind ab Windows 10, Version 1703 (RS2), verfügbar. Um optimale Ergebnisse zu erzielen, wird empfohlen, Windows 10 Enterprise, Version 1903 (19h1) oder höher, zu verwenden.
+
+- In den Windows-Einstellungen werden [Windows-Richtlinien-CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (öffnet eine andere Microsoft-Website) verwendet. Die CSPs funktionieren unter verschiedenen Windows-Editionen, z. B. Home, Professional, Enterprise. Wenn Sie herausfinden möchten, ob ein CSP unter einer bestimmten Edition funktioniert, klicken Sie auf [Windows-Richtlinien-CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (öffnet eine andere Microsoft-Website).
 
 ## <a name="create-a-template"></a>Erstellen einer Vorlage
 
@@ -41,20 +49,27 @@ In diesem Artikel sind die Schritte zum Erstellen einer Vorlage für Windows 10-
     - **Name**: Geben Sie einen Namen für das Profil ein.
     - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie **Windows 10 und höher** aus.
-    - **Profiltyp**: Wählen Sie **Administrative Vorlagen (Vorschau)** aus.
+    - **Profiltyp**: Wählen Sie **Administrative Vorlagen** aus.
 
 4. Wählen Sie **Erstellen** aus. Klicken Sie im neuen Fenster auf **Einstellungen**. Jede Einstellung ist aufgeführt, und Sie können auf den Zurück- und Weiter-Pfeil klicken, um weitere Einstellungen anzuzeigen:
 
-    ![Liste mit Beispieleinstellungen mit der Verwendung des Zurück- und Weiter-Pfeils](./media/administrative-templates-windows/sample-settings-list-next-page.png)
+    ![Liste mit Beispieleinstellungen mit der Verwendung des Zurück- und Weiter-Pfeils](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
 
-5. Wählen Sie eine beliebige Einstellung aus. Wählen Sie z. B. **Dateidownloads zulassen** aus. Es wird eine detaillierte Beschreibung der Einstellung angezeigt. Klicken Sie auf **Aktivieren** oder **Deaktivieren**, oder übernehmen Sie die Einstellung **Nicht konfiguriert** (Standard). In der detaillierten Beschreibung wird ebenso erläutert, was geschieht, wenn Sie **Aktivieren**, **Deaktivieren** oder **Nicht konfiguriert** auswählen.
-6. Klicken Sie auf **OK**, um die Änderungen zu speichern.
+    > [!TIP]
+    > Die Windows-Einstellungen in Intune korrelieren mit dem lokalen Gruppenrichtlinienpfad, der im Editor für lokale Gruppenrichtlinien (`gpedit`) angezeigt wird.
+
+5. In der Dropdownliste werden standardmäßig **Alle Produkte** angezeigt. Sie können die Einstellungen in der Liste auch so filtern, dass nur **Windows**-Einstellungen oder nur **Office**-Einstellungen angezeigt werden:
+
+    ![Filtern Sie die Liste, um in den administrativen Vorlagen in Intune alle Windows-Einstellungen oder alle Office-Einstellungen anzuzeigen.](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+
+6. Wählen Sie eine beliebige Einstellung aus. Filtern Sie beispielsweise nach **Office**, und wählen Sie **Eingeschränktes Browsing aktivieren** aus. Es wird eine detaillierte Beschreibung der Einstellung angezeigt. Wählen Sie **Aktiviert** oder **Deaktiviert** aus, oder übernehmen Sie die Standardeinstellung **Nicht konfiguriert**. In der detaillierten Beschreibung wird erläutert, was geschieht, wenn Sie **Aktiviert**, **Deaktiviert** oder **Nicht konfiguriert** auswählen.
+7. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 Gehen Sie die Liste der Einstellungen durch, und konfigurieren Sie die gewünschten Einstellungen für Ihre Umgebung. Hier sind einige Beispiele:
 
 - Verwenden Sie die Einstellung **Einstellungen für VBA-Makrobenachrichtigungen**, um VBA-Makros in verschiedenen Microsoft Office-Programmen zu verarbeiten, einschließlich in Word und Excel.
 - Verwenden Sie die Einstellung **Dateidownloads zulassen**, um Downloads von Internet Explorer zuzulassen oder zu verhindern.
-- Verwenden Sie die Einstellung **Kennwort anfordern, wenn ein Computer reaktiviert wird (Netzbetrieb)** , um Benutzer aufzufordern, ein Kennwort einzugeben, wenn das Gerät erneut aktiviert und der Energiesparmodus beendet wird.
+- Verwenden Sie die Einstellung **Kennwort anfordern, wenn ein Computer reaktiviert wird (Netzbetrieb)** , um Benutzer aufzufordern, ein Kennwort einzugeben, sobald das Gerät wieder aktiviert und der Energiesparmodus beendet wird.
 - Verwenden Sie die Einstellung **Download von unsignierten ActiveX-Steuerelementen**, um das Herunterladen unsignierter ActiveX-Steuerelemente aus Internet Explorer für Benutzer zu blockieren.
 - Verwenden Sie die Einstellung **Systemwiederherstellung deaktivieren**, um Benutzern zu erlauben oder sie daran zu hindern, eine Systemwiederherstellung auf dem Gerät auszuführen.
 - Und vieles mehr!
@@ -63,17 +78,15 @@ Gehen Sie die Liste der Einstellungen durch, und konfigurieren Sie die gewünsch
 
 In diesem Vorlagen sind Hunderte von Einstellungen verfügbar. Nutzen Sie die integrierten Funktionen, um bestimmte Einstellungen einfacher zu finden:
 
-- Wählen Sie in Ihrer Vorlage die Spalten **Settings** (Einstellungen), **State** (Status) oder **Path** (Pfad) aus, nach denen die Liste sortiert werden soll. Wenn Sie beispielsweise die Spalte **Path** auswählen, werden alle Einstellungen im `Microsoft Excel`-Pfad angezeigt:
+- Wählen Sie in der Vorlage die Spalte **Einstellungen**, **Status**, **Einstellungstyp** oder **Pfad** aus, um die Liste entsprechend zu sortieren. Wenn Sie beispielsweise die Spalte **Path** auswählen, werden alle Einstellungen im `Microsoft Excel`-Pfad angezeigt:
 
-  ![Klick auf „Path“ (Pfad), um die Liste alphabetisch zu sortieren](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
+  ![Klicken Sie auf „Pfad“, um alle Einstellungen anzuzeigen, die in den administrativen Vorlagen in Intune nach Gruppenrichtlinien- oder ADMX-Pfad gruppiert sind.](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- Verwenden Sie das **Suchfeld** in Ihrer Vorlage, um nach bestimmten Einstellungen zu suchen. Suchen Sie beispielsweise nach `copy`. Es werden alle Einstellungen mit `copy` angezeigt:
+- Verwenden Sie das **Suchfeld** in Ihrer Vorlage, um nach bestimmten Einstellungen zu suchen. Sie können die Suche durch Festlegen des Titels oder Pfads durchführen. Suchen Sie beispielsweise nach `copy`. Es werden alle Einstellungen mit `copy` angezeigt:
 
-  ![Klick auf „Path“ (Pfad), um die Liste alphabetisch zu sortieren](./media/administrative-templates-windows/search-copy-settings.png)
+  ![Suchen Sie nach „copy“, um in den administrativen Vorlagen in Intune alle Windows- und Office-Einstellungen anzuzeigen.](./media/administrative-templates-windows/search-copy-settings.png) 
 
   Suchen Sie in einem anderen Beispiel nach `microsoft word`. Es werden alle Einstellungen angezeigt, die Sie für das Microsoft Word-Programm festlegen können. Suchen Sie nach `explorer`, um alle Internet Explorer-Einstellungen anzuzeigen, die Sie Ihrer Vorlage hinzufügen können.
-
-Dieses Feature verwendet [Windows-Richtlinien-CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (öffnet eine andere Dokumentationsseite). Die CSPs funktionieren unter verschiedenen Windows-Editionen, z. B. Home, Professional, Enterprise. Wenn Sie herausfinden möchten, ob ein CSP unter einer bestimmten Edition funktioniert, klicken Sie auf [Windows-Richtlinien-CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (öffnet eine andere Dokumentationsseite).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

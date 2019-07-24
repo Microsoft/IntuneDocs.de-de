@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fab8f2be48a30f6ad058b3eeb6874a44ff04e6ac
-ms.sourcegitcommit: 7ceae61e036ccf8b33704751b0b39fee81944072
+ms.openlocfilehash: d907c5256469e86410c9916d117d3e322d43cfc3
+ms.sourcegitcommit: 2614d1b08b8a78cd792aebd2ca9848f391df8550
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744323"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67812567"
 ---
 Diese Hinweise enthalten wichtige Informationen, die Ihnen bei der Vorbereitung auf künftige Änderungen und Features im Zusammenhang mit Intune helfen können. 
 
@@ -72,3 +72,19 @@ Sie sollten auch ggf. Ihre Dokumentation oder Ihren Entwicklerleitfaden aktualis
 
 #### <a name="additional-information"></a>Zusätzliche Informationen
 https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+
+### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Stellen Sie sich auf eine Änderung ein: Neue Einstellungen für Windows Updates in Intune <!-- 4464404 -->
+Ab der im August veröffentlichten Version von Intune (Version 1908) sind neue Stichtagseinstellungen verfügbar, die Sie anstelle der Einstellungen für „Benutzer (erzwungenen) Neustart ermöglichen“ konfigurieren können. Es ist geplant, die Einstellungen für erzwungenen Neustart in der Benutzeroberfläche der Version 1909 bzw. des Septemberupdates zu deaktivieren und sie dann bis Ende des Oktober vollständig aus der Konsole zu entfernen. 
+
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
+Wenn Sie Windows 10-Geräte in Ihrer Umgebung verwalten: 
+- Im Augustupdate von Intune (Version 1908) werden in der Konsole zusätzlich zu den alten Einstellungen für erzwungenen Neustart neue Stichtagseinstellungen angezeigt.
+- Wenn sowohl die alten als auch die neuen Einstellungen konfiguriert werden, überschreiben die Stichtagseinstellungen die Werte für erzwungenen Neustart.
+- Im Update 1910 wird in der Konsole die Option „Benutzer (erzwungenen) Neustart ermöglichen“ durch die Stichtagseinstellungen ersetzt.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wie kann ich mich auf die Änderung vorbereiten?
+Beginnen Sie in Version 1908 mit der Verwendung der Stichtagseinstellungen, indem Sie sie mit den gewünschten Werten konfigurieren. Nachdem Sie dies eingerichtet haben, können Sie die Einstellung für erzwungenen Neustart auf „Nicht konfiguriert“ festlegen, da sie im Oktober aus der Konsole entfernt wird.
+
+Aktualisieren Sie ggf. Ihre Dokumentation und möglicherweise vorhandene Automatisierungsskripts. 
+
+Wir halten Sie auf dem Laufenden und veröffentlichen im Nachrichtencenter eine Erinnerung, bevor die Einstellungen für erzwungenen Neustart entfernt werden.

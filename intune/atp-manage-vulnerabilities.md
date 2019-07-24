@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2019
+ms.date: 07/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6dfef745157ae96736f8405fd5cafc33d4335f
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
+ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045288"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68270296"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Verwenden von Intune zum Korrigieren von mit Microsoft Defender ATP identifizierten Sicherheitsrisiken  
 
@@ -32,7 +32,7 @@ Wenn Sie Intune mit Microsoft Defender Advanced Threat Protection (ATP) integrie
 
 Nachdem Sie Intune mit Microsoft Defender Advanced Threat Protection verbunden haben, empfängt ATP Details zu Bedrohungen und Sicherheitsrisiken Informationen von verwalteten Geräten.  
 
-In der Windows Defender Security Center-Konsole überprüfen ATP-Sicherheitsadministratoren Daten zu Sicherheitsrisiken bei Endpunkten. Die Administratoren erstellen dann mit einem einzigen Klick Sicherheitsaufgaben, mit denen die anfälligen Geräte für die Korrektur gekennzeichnet werden. Die Sicherheitsaufgaben werden sofort an die Intune-Konsole übergeben, wo Intune-Administratoren diese anzeigen können. Die Sicherheitsaufgabe identifiziert den Typ des Sicherheitsrisikos, seine Priorität, den Status und die zu unternehmenden Schritte, um das Sicherheitsrisiko zu beheben. Der Intune-Administrator entscheidet, ob die Aufgabe akzeptiert oder abgelehnt wird.  
+In der Microsoft Defender Security Center-Konsole überprüfen ATP-Sicherheitsadministratoren Daten auf Sicherheitsrisiken bei Endpunkten. Die Administratoren erstellen dann mit einem einzigen Klick Sicherheitsaufgaben, mit denen die anfälligen Geräte für die Korrektur gekennzeichnet werden. Die Sicherheitsaufgaben werden sofort an die Intune-Konsole übergeben, wo Intune-Administratoren diese anzeigen können. Die Sicherheitsaufgabe identifiziert den Typ des Sicherheitsrisikos, seine Priorität, den Status und die zu unternehmenden Schritte, um das Sicherheitsrisiko zu beheben. Der Intune-Administrator entscheidet, ob die Aufgabe akzeptiert oder abgelehnt wird.  
 
 Wenn eine Aufgabe akzeptiert wird, ergreift der Intune-Administrator Maßnahmen, um das Sicherheitsrisiko mittels Intune zu beheben, wobei er die Anleitung nutzt, die als Teil der Sicherheitsaufgabe bereitgestellt wird.  
 
@@ -67,7 +67,7 @@ Ein Beispielworkflow:
 **Intune-Konfigurationen für ATP**:  
 - Konfigurieren Sie eine Dienst-zu-Dienst-Verbindung mit Microsoft Defender ATP.  
 - Stellen Sie eine Richtlinie für Gerätekonformität mit einem Profiltyp **Microsoft Defender ATP (Windows 10 Desktop)** auf Geräten bereit, deren Risiken von ATP bewertet werden.
-  Informationen zum Einrichten von Intune für die Zusammenarbeit mit ATP finden Sie unter [Erzwingen der Konformität für Windows Defender ATM mit bedingtem Zugriff in Intune](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).  
+  Informationen zum Einrichten von Intune für die Zusammenarbeit mit ATP finden Sie unter [Erzwingen der Konformität für Windows Defender ATM mit bedingtem Zugriff in Intune](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune).  
 
 ## <a name="work-with-security-tasks"></a>Arbeiten mit Sicherheitsaufgaben  
 
