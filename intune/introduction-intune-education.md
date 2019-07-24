@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7775a0aec8bdba648cf809e3f797ce5606b2ca4f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: fa084d2a52e23273effdfb035b218c8ee1f7f2ab
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047415"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354045"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>Inwiefern unterscheidet sich Intune for Education von der vollständigen Intune-Verwaltungsumgebung?
 
@@ -41,7 +41,7 @@ Intune und Intune for Education ermöglichen Ihnen Folgendes:
 * Schützen Ihrer Unternehmensinformationen, indem Sie steuern, wie Ihre Mitarbeiter darauf zugreifen und diese freigeben
 * Sicherstellen, dass Geräte und Apps mit den Sicherheitsanforderungen des Unternehmens konform sind
 
-### <a name="next-steps"></a>Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 * Machen Sie sich [mit einer kostenlosen 90-Tage-Testversion von Intune](https://signup.microsoft.com/Signup?OfferId=5eec053c-cc40-4cd5-a06a-ea8d75cf2686&ali=1) mit dem Produkt vertraut. Wenn Sie bereits über Zugriff verfügen, navigieren Sie zu https://intuneeducation.portal.azure.com), um zu beginnen.
 * Erfahren Sie mehr über die schnellste Möglichkeit zum [Starten der Verwendung von Intune](/intune-education/what-is-express-configuration).
 * Lernen Sie die [technischen Anforderungen und Funktionen](/intune/supported-devices-browsers) von Intune detailliert kennen.

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d13cb9fed28bb759007f1be1cb6df6139c19d3b
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412697"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68354520"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Senden von Daten an den Speicher, an Event Hubs oder Log Analytics in Intune (Vorschauversion)
 
@@ -149,7 +149,7 @@ Die folgende Tabelle enthält geschätzte monatliche Kosten für einen einfachen
 | | |
 |---|---|
 |Ereignisse pro Sekunde| 18|
-|Ereignisse pro Fünf-Minuten-Intervall| 5.400|
+|Ereignisse pro Fünf-Minuten-Intervall| 5\.400|
 |Volume pro Intervall| 10,8 MB|
 |Nachrichten pro Intervall| 43|
 |Nachrichten pro Monat| 371.520|
@@ -163,7 +163,7 @@ Die folgende Tabelle enthält geschätzte monatliche Kosten für einen einfachen
 |Ereignisse pro Fünf-Minuten-Intervall| 52|
 |Volume pro Intervall|104 KB |
 |Nachrichten pro Intervall|1 |
-|Nachrichten pro Monat|8.640 |
+|Nachrichten pro Monat|8\.640 |
 |Geschätzte Kosten pro Monat (USD)|10,80 US-Dollar |
 
 ### <a name="log-analytics-cost-considerations"></a>Kostenüberlegungen zu Log Analytics
@@ -174,43 +174,43 @@ Informationen zu den Kosten im Zusammenhang mit der Verwaltung des Log Analytics
 
 Erhalten Sie Antworten auf häufig gestellte Fragen und lesen Sie mehr über alle bekannten Probleme mit Intune-Protokollen in Azure Monitor.
 
-#### <a name="which-logs-are-included"></a>Welche Protokolle sind enthalten?
+### <a name="which-logs-are-included"></a>Welche Protokolle sind enthalten?
 
 Zum Weiterleiten mit dieser Funktion sind sowohl Überwachungsprotokolle als auch Betriebsprotokolle (Vorschauversion) verfügbar.
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>Wann werden die entsprechenden Protokolle nach einer Aktion im Event Hub angezeigt?
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-event-hub"></a>Wann werden die entsprechenden Protokolle nach einer Aktion im Event Hub angezeigt?
 
 Die Protokolle werden in der Regel innerhalb weniger Minuten nach Ausführung der Aktion in Ihrem Event Hub angezeigt. Weitere Informationen finden Sie in [Was sind Azure Event Hubs?](https://docs.microsoft.com/azure/event-hubs/).
 
-#### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>Wann werden die entsprechenden Protokolle nach einer Aktion im Speicherkonto angezeigt?
+### <a name="after-an-action-when-do-the-corresponding-logs-show-up-in-the-storage-account"></a>Wann werden die entsprechenden Protokolle nach einer Aktion im Speicherkonto angezeigt?
 
 Bei Azure-Speicherkonten liegt die Latenzzeit zwischen 5 und 15 Minuten nach Ausführung der Aktion.
 
-#### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>Was passiert, wenn ein Administrator den Aufbewahrungszeitraum einer Diagnoseeinstellung ändert?
+### <a name="what-happens-if-an-administrator-changes-the-retention-period-of-a-diagnostic-setting"></a>Was passiert, wenn ein Administrator den Aufbewahrungszeitraum einer Diagnoseeinstellung ändert?
 
 Die neue Aufbewahrungsrichtlinie wird auf Protokolle angewendet, die nach der Änderung gesammelt wurden. Protokolle, die vor der Änderung der Richtlinie gesammelt wurden, sind davon nicht betroffen.
 
-#### <a name="how-much-does-it-cost-to-store-my-data"></a>Wie viel kostet das Speichern meiner Daten?
+### <a name="how-much-does-it-cost-to-store-my-data"></a>Wie viel kostet das Speichern meiner Daten?
 
 Die Speicherkosten hängen von der Größe Ihrer Protokolle und dem gewählten Aufbewahrungszeitraum ab. Eine Liste der geschätzten Kosten für die Mandanten, die vom erzeugten Protokollvolumen abhängen, finden Sie in der [Speichergröße für Aktivitätsprotokolle](#storage-size-for-activity-logs) (in diesem Artikel).
 
-#### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>Wie viel kostet das Streamen meiner Daten zu einem Event Hub?
+### <a name="how-much-does-it-cost-to-stream-my-data-to-an-event-hub"></a>Wie viel kostet das Streamen meiner Daten zu einem Event Hub?
 
 Die Streamingkosten richten sich nach der Anzahl der eingegangenen Nachrichten pro Minute. Einzelheiten zur Kostenberechnung und Kalkulation auf Basis der Anzahl der Nachrichten finden Sie unter [Event Hub-Nachrichten für Aktivitätsprotokolle](#event-hub-messages-for-activity-logs) (in diesem Artikel).
 
-#### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>Wie integriere ich Intune-Überwachungsprotokolle in mein SIEM-System?
+### <a name="how-do-i-integrate-intune-audit-logs-with-my-siem-system"></a>Wie integriere ich Intune-Überwachungsprotokolle in mein SIEM-System?
 
 Verwenden Sie Azure Monitor mit Event Hubs zum Streamen von Protokollen an Ihr SIEM-System. Zuerst [streamen Sie die Protokolle an einen Event Hub](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub). Dann [richten Sie Ihr SIEM-Tool](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-azure-monitor-stream-logs-to-event-hub#access-data-from-your-event-hub) mit dem konfigurierten Event Hub ein. 
 
-#### <a name="what-siem-tools-are-currently-supported"></a>Welche SIEM-Tools werden derzeit unterstützt?
+### <a name="what-siem-tools-are-currently-supported"></a>Welche SIEM-Tools werden derzeit unterstützt?
 
 Derzeit wird Azure Monitor von [Splunk](https://docs.microsoft.com/azure/active-directory/reports-monitoring/tutorial-integrate-activity-logs-with-splunk), QRadar und [Sumo Logic](https://help.sumologic.com/Send-Data/Applications-and-Other-Data-Sources/Azure_Active_Directory) (öffnet eine neue Website) unterstützt. Weitere Informationen zur Funktionsweise von Connectors finden Sie unter [Streamen von Azure-Überwachungsdaten an einen Event Hub für die Nutzung durch ein externes Tool](https://docs.microsoft.com/azure/azure-monitor/platform/stream-monitoring-data-event-hubs).
 
-#### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>Kann ich auf die Daten von einem Event Hub auch ohne ein externes SIEM-Tool zugreifen?
+### <a name="can-i-access-the-data-from-an-event-hub-without-using-an-external-siem-tool"></a>Kann ich auf die Daten von einem Event Hub auch ohne ein externes SIEM-Tool zugreifen?
 
 Ja. Um von Ihrer benutzerdefinierten Anwendung aus auf die Protokolle zuzugreifen, können Sie die [Event Hubs-API](https://docs.microsoft.com/azure/event-hubs/event-hubs-dotnet-standard-getstarted-receive-eph) verwenden.
 
-#### <a name="what-data-is-stored"></a>Welche Daten werden gespeichert?
+### <a name="what-data-is-stored"></a>Welche Daten werden gespeichert?
 
 Intune speichert keine Daten, die über die Pipeline gesendet wurden. Intune leitet Daten im Auftrag des Mandanten an die Azure Monitor-Pipeline. Weitere Informationen finden Sie in der [Übersicht zu Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview).
 

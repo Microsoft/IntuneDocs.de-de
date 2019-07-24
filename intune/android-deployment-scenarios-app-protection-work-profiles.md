@@ -14,12 +14,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3ce7ad6b0254b1c3a8e2843cfcbe70a6b718ce88
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: d5814a4aac064394dbd0c7f5902dc3f62459ad1d
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049915"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68353807"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Anwendungsschutzrichtlinien und Arbeitsprofile für Android Enterprise-Geräte in Intune
 
@@ -58,7 +58,7 @@ Eine Liste der mit APP aktivierten Anwendungen finden Sie unter [Verwaltete Anwe
 
 Dieser Abschnitt beschreibt die wichtigsten Merkmale von APP-WE- und Android Enterprise-Arbeitsprofil-Bereitstellungsszenarien.
 
-#### <a name="app-we"></a>APP-WE
+### <a name="app-we"></a>APP-WE
 
 Eine APP-WE-Bereitstellung (App Schutzrichtlinien ohne Registrierung) definiert Richtlinien für Apps, nicht für Geräte. In diesem Szenario werden Geräte in der Regel nicht von einer MDM-Autorität (beispielsweise Intune) registriert oder verwaltet. Um Apps und den Zugriff auf Unternehmensdaten zu schützen, verwenden Administratoren APP-verwaltbare Apps und wenden Datenschutzrichtlinien auf diese Apps an.
 
@@ -71,7 +71,7 @@ Diese Funktion gilt für:
 
 APP-WE-Szenarien sind für Endbenutzer gedacht, die einen kleinen unternehmensspezifischen Fußabdruck auf ihren Geräten wünschen und sich nicht in MDM registrieren möchten. Als Administrator müssen Sie Ihre Daten immer noch schützen. Diese Geräte sind nicht verwaltet. Daher sind gängige MDM-Aufgaben und -Funktionen wie WLAN, Geräte-VPN und Zertifikatverwaltung nicht Teil dieses Bereitstellungsszenarios.
 
-#### <a name="android-enterprise-work-profiles"></a>Android Enterprise-Arbeitsprofile
+### <a name="android-enterprise-work-profiles"></a>Android Enterprise-Arbeitsprofile
 
 Arbeitsprofile sind das Android Enterprise-Kernbereitstellungsszenario und das einzige Szenario, das für BYOD-Anwendungsfälle geeignet ist. Das Arbeitsprofil ist eine separate Partition, die auf der Ebene des Android-Betriebssystems erstellt wird und von Intune verwaltet werden kann.
 
@@ -95,7 +95,7 @@ Arbeitsprofile und APP ergänzen sich gegenseitig, indem sie zusätzlichen Schut
 
 ### <a name="suppress-app-policy-for-work-profiles"></a>Unterdrücken der APP-Richtlinie für Arbeitsprofile
 
-Möglicherweise müssen Sie einzelne Benutzer mit mehreren Geräten unterstützen – nicht verwaltete Geräte in einem APP-WE-Szenario und verwaltete Geräte mit Arbeitsprofilen. 
+Möglicherweise müssen Sie einzelne Benutzer mit mehreren Geräten unterstützen – nicht verwaltete Geräte in einem APP-WE-Szenario und verwaltete Geräte mit Arbeitsprofilen.
 
 Beispielsweise müssen Endbenutzer beim Öffnen einer Arbeits-App eine PIN eingeben. Je nach Gerät werden die PIN-Funktionen durch APP oder durch das Arbeitsprofil behandelt. Bei den APP-WE-Geräten wird das PIN-Eingabeverhalten zum Starten durch APP erzwungen. Für Arbeitsprofilgeräte können Sie eine vom Betriebssystem erzwungene Geräte- oder Arbeitsprofil-PIN verwenden. Um dieses Szenario zu erreichen, konfigurieren Sie die APP-Einstellungen so, dass sie nicht angewendet werden, *wenn* eine App in einem Arbeitsprofil bereitgestellt wird. Wenn die Konfiguration nicht auf diese Weise erfolgt, wird der Endbenutzer vom Gerät und erneut auf der APP-Ebene zur Eingabe einer PIN aufgefordert.
 
@@ -111,13 +111,13 @@ Weitere Informationen finden Sie unter [Bereitstellen von Outlook für iOS und A
 
 Es gibt mehrere Szenarien für Enterprise Mobility, in denen die Verwendung von Intune APP die beste Empfehlung ist.
 
-#### <a name="older-devices-running-android-44-51-are-being-used"></a>Ältere Geräte mit Android 4.4 bis 5.1 werden verwendet
+### <a name="older-devices-running-android-44-51-are-being-used"></a>Ältere Geräte mit Android 4.4 bis 5.1 werden verwendet
 
 Offiziell unterstützt jedes Android-Gerät der Version 5.0 oder höher mit Google Mobile Services Arbeitsprofile und kann auf diese Weise verwaltet werden. Einige Android 5.0- und 5.1-Geräte von einigen OEMs unterstützen allerdings keine Arbeitsprofile.
 
 Wenn Sie Versionen verwenden, die keine Arbeitsprofile unterstützen, und DLP für Organisationsdaten auf Geräten sichergestellt werden soll, müssen Sie Intune APP-Funktionen verwenden.
 
-#### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>Kein MDM, keine Registrierung, Google-Dienste sind nicht verfügbar
+### <a name="no-mdm-no-enrollment-google-services-are-unavailable"></a>Kein MDM, keine Registrierung, Google-Dienste sind nicht verfügbar
 
 Einige Kunden wünschen aus verschiedenen Gründen keine Form der Geräteverwaltung, einschließlich der Verwaltung von Arbeitsprofilen:
 
