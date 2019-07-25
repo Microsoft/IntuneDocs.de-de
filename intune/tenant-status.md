@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3b6aeb7efc60d32891f4b1c69b387a61a2bc25
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 946d46baf17a5ffdd4b567adca32b651cacb72bb
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66040511"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67882220"
 ---
 # <a name="intune-tenant-status-page"></a>Seite des Intune-Mandantenstatus
 Bei der Seite „Mandantenstatus“ handelt es sich um einen zentralen Hub, auf dem Sie aktuelle und wichtige Details zu Ihrem Mandanten abrufen können. Diese Details umfassen u. a. die Lizenzverfügbarkeit und -verwendung, den Connectorstatus und wichtige Mitteilungen zum Intune-Dienst.  
@@ -48,14 +48,14 @@ Wenn es für einen dieser Typen mehr als einen Connector gibt, ist der Status ei
 
 **Connectorstatus:**
 - **Fehlerhaft:**
-    - Das Zertifikat oder die Anmeldeinformation ist abgelaufen.
-    - Die letzte Synchronisierung wurde vor mindestens drei Tagen durchgeführt.
+  - Das Zertifikat oder die Anmeldeinformation ist abgelaufen.
+  - Die letzte Synchronisierung wurde vor mindestens drei Tagen durchgeführt.
 - **Warnung:**
-    - Das Zertifikat oder die Anmeldeinformation läuft innerhalb von sieben Tagen ab.
-    - Die letzte Synchronisierung liegt mehr als einen Tag zurück.
+  - Das Zertifikat oder die Anmeldeinformation läuft innerhalb von sieben Tagen ab.
+  - Die letzte Synchronisierung liegt mehr als einen Tag zurück.
 - **Fehlerfrei:**
-    - Das Zertifikat oder die Anmeldeinformation läuft nicht innerhalb der nächsten sieben Tage ab.
-    - Die letzte Synchronisierung liegt nicht länger als einen Tag zurück.  
+  - Das Zertifikat oder die Anmeldeinformation läuft nicht innerhalb der nächsten sieben Tage ab.
+  - Die letzte Synchronisierung liegt nicht länger als einen Tag zurück.  
 
 Wenn Sie einen Connector aus der Liste auswählen, wird im Portal die Portalseite angezeigt, die für die Erstellung oder Konfiguration des Connectors relevant ist.  Wenn Sie beispielsweise den Connector **VPP Expiry Date** (VPP-Ablaufdatum) auswählen, wird die Seite **Per Volumenlizenz erworbene iOS-Programmtoken** geöffnet, auf der Sie nähere Informationen zu diesem Connector erhalten. Anschließend können Sie eine neue Konfiguration erstellen oder Probleme mit einer vorhandenen Konfiguration bearbeiten und beheben.  
 
