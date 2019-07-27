@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d110013c10f0330c0edbbf230c508009fb47b2a6
-ms.sourcegitcommit: 11a31cd39b727f2254e2705b07d18924e103bd2e
-ms.translationtype: HT
+ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68341313"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467417"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Endpoint Protection-Einstellungen in Intune unter MacOS  
 
@@ -92,36 +92,24 @@ Weitere Informationen zu den Einstellungen von Apple-flevault finden Sie unter [
   - **Wiederherstellungs Schlüsseltyp**  
     Für Geräte werden *Schlüssel Wiederherstellungs* Schlüssel erstellt. Konfigurieren Sie die folgenden Einstellungen für den persönlichen Schlüssel.  
 
-     - **Speicherort des persönlichen Wiederherstellungs Schlüssels** : Geben Sie eine kurze Nachricht an den Benutzer an, die erläutert, wie Sie Ihren persönlichen Wiederherstellungs Schlüssel abrufen können. Dieser Text wird in die Meldung eingefügt, die dem Benutzer beim Aktivieren von "flevault" angezeigt wird.  
+    - **Speicherort des persönlichen Wiederherstellungs Schlüssels** : Geben Sie eine kurze Nachricht an den Benutzer an, die erläutert, wie und wo Sie Ihren persönlichen Wiederherstellungs Schlüssel abrufen können. Dieser Text wird in die Meldung eingefügt, die dem Benutzer auf dem Anmeldebildschirm angezeigt wird, wenn er zur Eingabe des persönlichen Wiederherstellungs Schlüssels aufgefordert wird, wenn ein Kennwort vergessen wird.  
       
-     - **Rotation persönlicher Wiederherstellungs Schlüssel** : Geben Sie an, wie häufig der persönliche Wiederherstellungs Schlüssel für ein Gerät rotiert werden soll. Sie können den Standardwert **nicht konfiguriert**oder einen Wert von **1** bis **12** Monaten auswählen.  
+    - **Rotation persönlicher Wiederherstellungs Schlüssel** : Geben Sie an, wie häufig der persönliche Wiederherstellungs Schlüssel für ein Gerät rotiert werden soll. Sie können den Standardwert **nicht konfiguriert**oder einen Wert von **1** bis **12** Monaten auswählen.  
 
-  - **"Flevault" vor der Abmeldung verzögern** 
-    > [!NOTE]
-    > Die Unterstützung für die Ausführung von "flevault" ist so lange eingeschränkt, bis die Version des Juli in einigen Tagen Wenn Sie FileVault konfigurieren, müssen Sie bis zum Abschluss des Rollouts *FileVault bis zur Abmeldung verschieben* auf **Aktivieren** setzen.   
-
-    "Flevault" wird erst aktiviert, wenn sich der Benutzer abmeldet. Ein lokaler Benutzer oder ein mobiler Kontobenutzer wird aufgefordert, beim Abmelden oder bei der nächsten Anmeldung die Option "flevault" zu aktivieren.  
+  - **Eingabeaufforderung beim Abmelden deaktivieren**  
+    Verhindern Sie, dass die Aufforderung an den Benutzer die Aktivierung von "flevault" beim Abmelden anfordert.  Wenn diese Option auf deaktiviert festgelegt ist, wird die Eingabeaufforderung bei der Abmeldung deaktiviert. stattdessen wird der Benutzer bei der Anmeldung aufgefordert.  
     - **Nicht konfiguriert**  
-    - **Aktivieren**  
-    
+    - **Deaktivieren**  
+
     **Standardeinstellung:** Nicht konfiguriert  
 
+  - **Gibt an, wie oft umgangen werden darf.**  
+  Legen Sie fest, wie oft ein Benutzer Aufforderungen zum Aktivieren von "flevault" ignorieren kann, bevor "flevault" für die Anmeldung durch den Benutzer erforderlich ist.  
 
-
-    - **Eingabeaufforderung beim Abmelden deaktivieren**  
-      Verhindern Sie, dass die Aufforderung an den Benutzer die Aktivierung von "flevault" beim Abmelden anfordert.  
-      - **Nicht konfiguriert**  
-      - **Aktivieren**  
-
-      **Standardeinstellung:** Nicht konfiguriert  
-
-    - **Gibt an, wie oft umgangen werden darf.**  
-      Legen Sie fest, wie oft ein Benutzer Aufforderungen zum Aktivieren von "flevault" ignorieren kann, bevor "flevault" für die Anmeldung durch den Benutzer erforderlich ist.  
-
-      - **Nicht konfiguriert** : die Verschlüsselung auf dem Gerät ist erforderlich, bevor die nächste Anmeldung zulässig ist.  
-      -  **1** bis **10** : erlauben Sie einem Benutzer, die Eingabeaufforderung von 1 bis 10 Mal zu ignorieren, bevor die Verschlüsselung auf dem Gerät erforderlich ist.  
-      - **Keine Beschränkung, immer auffordern** : der Benutzer wird aufgefordert, die Aktivierung von "flevault" durchzusetzen, die Verschlüsselung ist jedoch nie erforderlich.  
+    - **Nicht konfiguriert** : die Verschlüsselung auf dem Gerät ist erforderlich, bevor die nächste Anmeldung zulässig ist.  
+    - **1** bis **10** : erlauben Sie einem Benutzer, die Eingabeaufforderung von 1 bis 10 Mal zu ignorieren, bevor die Verschlüsselung auf dem Gerät erforderlich ist.  
+    - **Keine Beschränkung, immer auffordern** : der Benutzer wird aufgefordert, die Aktivierung von "flevault" durchzusetzen, die Verschlüsselung ist jedoch nie erforderlich.  
  
-      **Standardeinstellung:** Nicht konfiguriert  
+    **Standardeinstellung:** Nicht konfiguriert  
 
 

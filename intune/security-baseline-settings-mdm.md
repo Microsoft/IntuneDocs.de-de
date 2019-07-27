@@ -5,7 +5,7 @@ description: Intune-Einstellungen für Sicherheitsbaselines zur Verwaltung von W
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f70d54404dc20d6d6aabd5974dff9c5102b759f
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882293"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491903"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>MDM-Einstellungen für Sicherheitsbaselines in Intune  
 
@@ -187,7 +187,7 @@ Weitere Informationen finden Sie unter [Policy CSP – Connectivity (Richtlinien
   
   **Standard**: Deaktiviert  
 
-## <a name="data-protection"></a>Datenschutz  
+## <a name="data-protection"></a>Schutz von Daten  
 Weitere Informationen finden Sie unter [Policy CSP – Defender (Richtlinien-Konfigurationsdienstanbieter: DataProtection)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection
 ) in der Windows-Dokumentation.  
 
@@ -357,7 +357,7 @@ Weitere Informationen finden Sie unter [Policy CSP - EventLogService (Richtlinie
   
   **Standard**: 32768  
 
-## <a name="experience"></a>Benutzerfreundlichkeit  
+## <a name="experience"></a>Erfahrung  
 Weitere Informationen finden Sie unter [Policy CSP - Experience (Richtlinien-Konfigurationsdienstanbieter: Experience)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience) in Ihrer Windows-Dokumentation.  
 
 - **Windows-Blickpunkt blockieren**  
@@ -678,7 +678,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Internet Explorer (Richtlin
   **Standard**: Deaktiviert  
   
 - **Internet Explorer internet zone allow vbscript to run** (Zulassen der Ausführung des VBScript in einer Internet Explorer-Zone)  
-  Diese Einstellung bestimmt, ob das VBScript auf Seiten in bestimmten Internet Explorer-Zonen ausgeführt werden kann. Sie haben folgende Optionen: 
+  Diese Einstellung bestimmt, ob das VBScript auf Seiten in bestimmten Internet Explorer-Zonen ausgeführt werden kann. Zu den Optionen gehören: 
   - *Aktivieren*: Das VBScript wird auf Seiten in bestimmten Zonen ohne Interaktionen ausgeführt. 
   - *Bestätigung*: Mitarbeiter werden aufgefordert festzulegen, ob das VBScript in der Zone ausgeführt werden soll. 
   - *Deaktivieren*: Das VBScript wird in der Zone nicht ausgeführt. Wenn Sie diese Richtlinieneinstellung deaktivieren oder nicht konfigurieren, wird das VBScript ohne Interaktionen in der angegebenen Zone ausgeführt.    
@@ -1185,7 +1185,7 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
   **Standard**: Ja
   
 - **Administrator elevation prompt behavior** (Verhalten für Administratoren bei der Eingabeaufforderung für erhöhte Rechte)  
-  Mit dieser Richtlinieneinstellung können Sie das Verhalten der Eingabeaufforderung für erhöhte Rechte für Administratoren bestimmen. Folgende Optionen stehen zur Verfügung: 
+  Mit dieser Richtlinieneinstellung können Sie das Verhalten der Eingabeaufforderung für erhöhte Rechte für Administratoren bestimmen. Folgende Optionen sind verfügbar: 
   - *Erhöhte Rechte ohne Eingabeaufforderung*: Ermöglicht mit Rechten versehenen Konten das Ausführen eines Vorgangs, für den erhöhte Rechte erforderlich sind, ohne dass dafür Zustimmung oder Anmeldeinformationen erforderlich sind. Hinweis: Verwenden Sie diese Option nur in Umgebungen, die besonders starken Beschränkungen unterliegen. 
   - *Eingabeaufforderung zu Anmeldeinformationen auf dem sicheren Desktop*: Wenn für einen Vorgang erhöhte Rechte erforderlich sind, wird der Benutzer auf dem sicheren Desktop zur Eingabe eines entsprechenden Benutzernamens und Kennworts aufgefordert. Wenn der Benutzer gültige Anmeldeinformationen eingibt, wird der Vorgang mit dem höchsten verfügbaren Recht des Benutzers fortgesetzt. 
   - *Eingabeaufforderung zur Zustimmung auf dem sicheren Desktop*: Wenn für einen Vorgang erhöhte Rechte erforderlich sind, wird der Benutzer auf dem sicheren Desktop zur Auswahl von „Zulassen“ oder „Verweigern“ aufgefordert. Wenn der Benutzer „Zulassen“ auswählt, wird der Vorgang mit dem höchsten verfügbaren Recht des Benutzers fortgesetzt. 
@@ -1198,7 +1198,7 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
   **Standard**: Zustimmungsaufforderung für sicheren Desktop
   
 - **Minimum session security for NTLM SSP based clients** (Minimale Sitzungssicherheit für NTLM-basierte SSP-Clients)  
-  Mit dieser Sicherheitseinstellung kann die Aushandlung der 128-Bit-Verschlüsselung und bzw. oder der NTLMv2-Sitzungssicherheit für einen Client als erforderlich festgelegt werden. Diese Werte hängen vom Wert des Sicherheitseinstellungswerts für die LAN Manager-Authentifizierungsebene ab. Folgende Optionen stehen zur Verfügung:
+  Mit dieser Sicherheitseinstellung kann die Aushandlung der 128-Bit-Verschlüsselung und bzw. oder der NTLMv2-Sitzungssicherheit für einen Client als erforderlich festgelegt werden. Diese Werte hängen vom Wert des Sicherheitseinstellungswerts für die LAN Manager-Authentifizierungsebene ab. Folgende Optionen sind verfügbar:
   - *NTLMv2-Sitzungssicherheit erfordern*: Die Verbindung schlägt fehl, wenn das NTLMv2-Protokoll nicht ausgehandelt wird. 
   - *128-Bit-Verschlüsselung erfordern*: Die Verbindung schlägt fehl, wenn keine starke Verschlüsselung (128-Bit) ausgehandelt wird.
   - *NTLMv2- und 128-Bit-Verschlüsselung erfordern*.  
@@ -1208,7 +1208,7 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
   **Standard**: NTLMv2- und 128-Bit-Verschlüsselung erfordern
   
 - **Smart card removal behavior** (Verhalten beim Entfernen von Smartcards)  
-  Diese Sicherheitseinstellung legt fest, was geschieht, wenn die Smartcard für einen angemeldeten Benutzer aus dem Smartcardleser entfernt wird. Folgende Optionen stehen zur Verfügung:
+  Diese Sicherheitseinstellung legt fest, was geschieht, wenn die Smartcard für einen angemeldeten Benutzer aus dem Smartcardleser entfernt wird. Folgende Optionen sind verfügbar:
   - *Keine Aktion*. 
   - *Arbeitsstation sperren* – Die Arbeitsstation wird beim Entfernen der Smartcard gesperrt, sodass Benutzer den Arbeitsbereich verlassen, die Smartcard mitnehmen und dennoch eine geschützte Sitzung aufrechterhalten können.
   - *Abmeldung erzwingen*: Der Benutzer wird automatisch abgemeldet, wenn die Smartcard entfernt wird.
@@ -1245,7 +1245,7 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
   **Standard**: Anforderungen für erhöhte Rechte automatisch ablehnen
   
 - **Require admin approval mode for administrators** (Administratorgenehmigungsmodus für Administratoren erfordern)  
-  Mit dieser Richtlinieneinstellung wird das Verhalten aller UAC-Richtlinieneinstellungen (User Account Control, Benutzerkontensteuerung) für den Computer bestimmt. Wenn Sie diese Richtlinieneinstellung ändern, muss der Computer neu gestartet werden. Folgende Optionen stehen zur Verfügung:   
+  Mit dieser Richtlinieneinstellung wird das Verhalten aller UAC-Richtlinieneinstellungen (User Account Control, Benutzerkontensteuerung) für den Computer bestimmt. Wenn Sie diese Richtlinieneinstellung ändern, muss der Computer neu gestartet werden. Folgende Optionen sind verfügbar:   
   - *Nicht konfiguriert*: Der Administratorgenehmigungsmodus und alle verwandten UAC-Richtlinieneinstellungen sind deaktiviert. Hinweis: Wenn diese Richtlinieneinstellung deaktiviert ist, werden Sie vom Sicherheitscenter benachrichtigt, dass die allgemeine Sicherheit des Betriebssystems eingeschränkt ist. 
   - *Ja*: Der Administratorgenehmigungsmodus ist aktiviert. Diese Richtlinieneinstellung muss aktiviert und verwandte UAC-Richtlinieneinstellungen müssen entsprechend festgelegt werden, damit das integrierte Administratorkonto und alle anderen Benutzerkonten, die Mitglieder der Administratorgruppe sind, im Administratorgenehmigungsmodus ausgeführt werden können.  
 
@@ -1269,7 +1269,7 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
   **Standard**: *O:BAG:BAD:(A;;RC;;;BA)*
 
 - **Use admin approval mode** (Administratorgenehmigungsmodus verwenden)  
-  Mit dieser Richtlinieneinstellung können Sie das Verhalten des Administratorgenehmigungsmodus für das integriertes Administratorkonto bestimmen. Folgende Optionen stehen zur Verfügung: 
+  Mit dieser Richtlinieneinstellung können Sie das Verhalten des Administratorgenehmigungsmodus für das integriertes Administratorkonto bestimmen. Folgende Optionen sind verfügbar: 
   - *Ja*: Für das integrierte Administratorkonto wird der Administratorgenehmigungsmodus verwendet. Standardmäßig wird der Benutzer bei jedem Vorgang, der die Höherstufung von Rechten erfordert, zur Genehmigung aufgefordert. 
   - *Nicht konfiguriert*: Mit dem integrierten Administratorkonto werden alle Anwendungen mit vollständigen Administratorrechten ausgeführt. 
 
@@ -1287,7 +1287,7 @@ Weitere Informationen finden Sie unter [Policy CSP – LocalPoliciesSecurityOpti
   **Standard**: Ja
 
 - **Detect application installations and prompt for elevation** (Anwendungsinstallationen erkennen und erhöhte Rechte anfordern)  
-  Mit dieser Richtlinieneinstellung können Sie das Verhalten bei der Erkennung einer Anwendungsinstallation auf dem Computer bestimmen. Folgende Optionen stehen zur Verfügung: 
+  Mit dieser Richtlinieneinstellung können Sie das Verhalten bei der Erkennung einer Anwendungsinstallation auf dem Computer bestimmen. Folgende Optionen sind verfügbar: 
   - *Aktiviert*: Wenn ein Anwendungsinstallationspaket erkannt wird, das erhöhte Rechte erfordert, wird der Benutzer zur Eingabe eines Administratorbenutzernamens und -kennworts aufgefordert. Wenn der Benutzer gültige Anmeldeinformationen eingibt, wird der Vorgang mit dem entsprechenden Recht fortgesetzt. 
   - *Deaktiviert*: Anwendungsinstallationspakete werden nicht erkannt, und es wird keine Eingabeaufforderung für erhöhte Rechte angezeigt. Unternehmen, die Standardbenutzerdesktops und delegierte Installationstechnologien wie Gruppenrichtlinien-Softwareinstallation oder Systems Management Server (SMS) verwenden, sollten diese Richtlinieneinstellung deaktivieren. In diesem Fall ist keine Installationserkennung erforderlich.  
   
@@ -1572,7 +1572,7 @@ Weitere Informationen finden Sie unter [Policy CSP - WindowsConnectionManager (R
 
   **Standard**: Aktiviert
   
-## <a name="windows-defender"></a>Windows Defender  
+## <a name="windows-defender"></a>Windows Defender  
 Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfigurationsdienstanbieter: Defender)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) in Ihrer Windows-Dokumentation.  
 
 - **Eingehende E-Mail überprüfen**  
@@ -1773,7 +1773,12 @@ Weitere Informationen finden Sie unter [2.2.2 FW_PROFILE_TYPOE]( https://docs.mi
   **Standard**: Ja
 
 - **Konfigurieren von Windows Hello for Business**   
-  Windows Hello for Business ist eine alternative Methode zum Anmelden bei Windows durch Ersetzen von Kennwörtern, Smartcards und virtuellen Smartcards. Wenn Sie diese Richtlinieneinstellung aktivieren oder nicht konfigurieren, stellt das Gerät Windows Hello for Business bereit. Wenn Sie diese Richtlinieneinstellung deaktivieren, stellt das Gerät Windows Hello for Business für keinen Benutzer bereit.
+    Windows Hello for Business ist eine alternative Methode zum Anmelden bei Windows durch Ersetzen von Kennwörtern, Smartcards und virtuellen Smartcards.  
+
+  - Wenn Sie auf *Ja*festgelegt ist, aktivieren Sie diese Richtlinie, und das Gerät stellt Windows Hello for Business bereit.  
+  - Wenn diese Einstellung auf *nicht konfiguriert*festgelegt ist, wirkt sich die Baseline nicht auf die Richtlinien Einstellung des Geräts aus. Dies bedeutet Folgendes: Wenn Windows Hello for Business auf einem Gerät deaktiviert ist, bleibt es deaktiviert. Wenn Sie aktiviert ist, bleibt sie aktiviert. 
+
+  Sie können Windows Hello for Business über diese Baseline nicht deaktivieren. Sie können Windows Hello for Business deaktivieren, wenn Sie die [Windows](windows-hello.md)-Registrierung konfigurieren, oder als Teil eines Geräte Konfigurations Profils für [Identity Protection](identity-protection-configure.md).  
 
   **Standard**: Ja
 
@@ -1810,7 +1815,7 @@ Weitere Informationen finden Sie unter [Policy CSP - WindowsInkWorkspace (Richtl
 
   **Standard**: Aktiviert
  
-## <a name="windows-powershell"></a>Windows PowerShell  
+## <a name="windows-powershell"></a>Windows PowerShell  
 Weitere Informationen finden Sie unter [Policy CSP - WindowsPowerShell (Richtlinien-Konfigurationsdienstanbieter - WindowsPowerShell)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowspowershell) in Ihrer Windows-Dokumentation.  
 
 - **PowerShell-Shellskriptblock-Protokollierung**  

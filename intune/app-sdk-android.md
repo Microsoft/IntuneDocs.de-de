@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 07/24/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b033052ebd5d3d26976482ea2435c8a0d7314c8e
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 4f2015bb6997861d8856c7fe89662c21be105f5b
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67885042"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482952"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Entwicklerhandbuch zum Microsoft Intune App SDK für Android
 
@@ -182,7 +182,7 @@ intunemam {
 }
 ```
 
-#### <a name="dependencies"></a>Abhängigkeiten
+#### <a name="dependencies"></a>-Abhängigkeiten
 
 Das Gradle-Plug-In weist eine Abhängigkeit von [Javassist](https://jboss-javassist.github.io/javassist/) auf, die für die Abhängigkeitsauflösung von Gradle verfügbar sein muss (wie oben beschrieben). Javassist wird ausschließlich zur Buildzeit beim Ausführen des Plug-Ins verwendet. Es wird kein Javassist-Code zu Ihrer App hinzugefügt.
 
@@ -699,7 +699,7 @@ ADAL-Metadaten **dürfen nicht** im Manifest vorhanden sein.
 
 #### <a name="2-app-integrates-adal"></a>2. App kann ADAL integrieren
 
-|Erforderlicher ADAL-Parameter| Value |
+|Erforderlicher ADAL-Parameter| Wert |
 |--|--|
 | ClientID | Client-ID der App (von Azure AD generiert, wenn die App registriert ist) |
 
@@ -714,7 +714,7 @@ Darüber hinaus finden Sie unten die Anforderungen für den [bedingten Zugriff](
 
 #### <a name="3-app-integrates-adal-but-does-not-support-brokered-authenticationdevice-wide-sso"></a>3. App kann ADAL integrieren, unterstützt aber keine Brokerauthentifizierung/geräteübergreifende einmalige Anmeldung
 
-|Erforderlicher ADAL-Parameter| Value |
+|Erforderlicher ADAL-Parameter| Wert |
 |--|--|
 | ClientID | Client-ID der App (von Azure AD generiert, wenn die App registriert ist) |
 | SkipBroker | **True** |
@@ -1523,7 +1523,7 @@ Die Markierung der Dateiidentität reagiert empfindlich auf den Offlinemodus. Di
 
 Verzeichnisse können mithilfe derselben `protect`-Methode geschützt werden, mit der auch Dateien geschützt werden. Der Verzeichnisschutz wird rekursiv auf alle Dateien und Unterverzeichnisse angewendet, die im Verzeichnis enthalten sind, sowie auf neue Dateien, die in diesem Verzeichnis erstellt werden. Da der Verzeichnisschutz rekursiv angewendet wird, kann der `protect`-Aufruf bei großen Verzeichnissen einige Zeit dauern. Aus diesem Grund möchten Apps, die Schutz auf ein Verzeichnis anwenden, das eine große Anzahl von Dateien enthält, `protect` möglicherweise asynchron in einem Hintergrundthread ausführen.
 
-### <a name="data-protection"></a>Datenschutz
+### <a name="data-protection"></a>Schutz von Daten
 
 Es ist nicht möglich, eine Datei als zu mehreren Identitäten gehörend zu kennzeichnen. Apps, die zu einem anderen Benutzer gehörende Daten in der gleichen Datei speichern müssen, können dies manuell mit den Features von `MAMDataProtectionManager` durchführen. So kann die App Daten verschlüsseln und sie an einen bestimmten Benutzer binden. Die verschlüsselten Daten eignen sich für die Speicherung in einer Datei auf dem Datenträger. Sie können die Daten abfragen, die der Identität zugeordnet sind, und die Daten können später entschlüsselt werden.
 
