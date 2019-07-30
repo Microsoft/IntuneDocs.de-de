@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 06/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90b3e858a06a6f3a34de6ec8102e1a6c458369a2
-ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
+ms.openlocfilehash: 230f226cba70a7fc61efd236cc0fde0ca6b7fa68
+ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298418"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68374928"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>Verwenden von PowerShell-Skripts auf Windows 10-Geräten in Intune
 
@@ -37,11 +37,11 @@ Die individuelle Datenverarbeitung durchläuft eine digitale Transformation. Die
 
 MDM-Dienste wie Microsoft Intune können mobile Geräte und Desktopgeräte verwalten, die Windows 10 ausführen. Der integrierte Windows 10-Verwaltungsclient kommuniziert mit Intune, um Aufgaben für die Unternehmensverwaltung auszuführen. Es gibt einige Aufgaben, die Sie ggf. ausführen müssen, z.B. erweiterte Gerätekonfiguration und Problembehandlung. Für die Verwaltung von Win32-Apps können Sie das Feature [Win32-App-Verwaltung](apps-win32-app-management.md) auf Ihren Windows 10-Geräten verwenden.
 
-Die Intune-Verwaltungserweiterung ergänzt die integrierten MDM-Features für Windows 10. Sie können PowerShell-Skripts für die Ausführung auf Windows 10-Geräten erstellen. Sie können beispielsweise ein PowerShell-Skript erstellen, das erweiterte Gerätekonfigurationen ausführt, das Skript in Intune hochlädt, es einer Azure Active Directory-Gruppe (AD) zuweist und ausführt. Sie können dann den Ausführungsstatus des Skripts von Anfang bis Ende überwachen.
+Die Intune-Verwaltungserweiterung ergänzt die integrierten MDM-Features für Windows 10. Sie können PowerShell-Skripts für die Ausführung auf Windows 10-Geräten erstellen. Erstellen Sie z. B. ein PowerShell-Skript für erweiterte Gerätekonfigurationen. Laden Sie dann das Skript in Intune hoch, weisen Sie es einer Azure Active Directory-Gruppe zu, und führen Sie es anschließend aus. Sie können dann den Ausführungsstatus des Skripts von Anfang bis Ende überwachen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlich. Wenn diese erfüllt sind, wird die Intune-Verwaltungserweiterung automatisch installiert, wenn ein PowerShell-Skript oder eine Win32-App dem Benutzer oder Gerät zugewiesen ist.
+Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlich. Wenn diese Voraussetzungen erfüllt sind, wird die Intune-Verwaltungserweiterung automatisch installiert, sobald dem Benutzer oder Gerät ein PowerShell-Skript oder eine Win32-App zugewiesen ist.
 
 - Geräte mit Windows 10, Version 1607 oder höher: Wenn das Gerät mithilfe der [automatischen Massenregistrierung](windows-bulk-enroll.md) registriert wurde, muss es mindestens Windows 10, Version 1703 ausführen. Die Intune-Verwaltungserweiterung wird unter Windows 10 im S Modus nicht unterstützt, da im S Modus keine Apps ausgeführt werden können, die nicht aus dem Store stammen. 
   
@@ -61,7 +61,7 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
     
     - Über die Anmeldung des Benutzers auf dem Gerät mithilfe seines Azure AD-Kontos und der anschließenden Registrierung bei Intune.
 
-  - Gemeinsam verwaltete Geräte, die Configuration Manager und Intune verwenden – Stellen Sie sicher, dass die Workload **Client-Apps** auf **Pilot Intune** oder **Intune** festgelegt ist. In folgenden Artikeln finden Sie Anleitungen dazu: 
+  - Gemeinsam verwaltete Geräte, die Configuration Manager und Intune verwenden – Stellen Sie sicher, dass die Workload **Client-Apps** auf **Pilot Intune** oder **Intune** festgelegt ist. Weitere Informationen finden Sie in den folgenden Artikeln: 
   
     - [Was ist Co-Verwaltung?](https://docs.microsoft.com/sccm/comanage/overview) 
     - [Client-Apps-Workload](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
@@ -70,15 +70,18 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
 > [!TIP]
 > Stellen Sie sicher, dass die Geräte in Azure AD [eingebunden](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) sind. Geräte, die bei Azure AD nur [registriert](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) sind, erhalten Ihre Skripts nicht.
 
-## <a name="create-a-script-policy"></a>Erstellen einer Skriptrichtlinie 
+## <a name="create-a-script-policy-and-assign-it"></a>Erstellen und Zuweisen einer Skriptrichtlinie
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Klicken Sie auf **Gerätekonfiguration** > **PowerShell-Skripts** > **Hinzufügen**.
-3. Geben Sie die folgenden Eigenschaften ein:
+
+    ![Hinzufügen und Verwenden von PowerShell-Skripts in Microsoft Intune](./media/mgmt-extension-add-script.png)
+
+3. Geben Sie unter **Basics** (Grundlegende Einstellungen) die folgenden Eigenschaften ein, und klicken Sie auf **Weiter**:
     - **Name**: Geben Sie einen Namen für das PowerShell-Skript ein. 
-    - **Beschreibung**: Geben Sie eine Beschreibung für das PowerShell-Skript ein. Diese Einstellung ist optional, wird jedoch empfohlen. 
+    - **Beschreibung**: Geben Sie eine Beschreibung für das PowerShell-Skript ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+4. Geben Sie unter **Skripteinstellungen** die folgenden Eigenschaften ein, und klicken Sie auf **Weiter**:
     - **Skriptspeicherort:** Wechseln Sie zum PowerShell-Skript. Das Skript muss kleiner als 200 KB (ASCII) sein.
-4. Klicken Sie auf **Konfigurieren**, und geben Sie die folgenden Eigenschaften ein:
     - **Dieses Skript mit den Anmeldeinformationen des angemeldeten Benutzers ausführen:** Klicken Sie auf **Ja**, um das Skript mit den Anmeldeinformationen des Benutzers auf dem Gerät auszuführen. Klicken Sie auf **Nein** (Standard), um das Skript im Systemkontext auszuführen. Viele Administratoren entscheiden sich für die Option **Ja**. Klicken Sie auf **Nein**, wenn das Skript nicht im Systemkontext ausgeführt werden muss.
     - **Skriptsignaturprüfung erzwingen:** Klicken Sie auf **Ja**, wenn das Skript von einem vertrauenswürdigen Herausgeber signiert werden muss. Klicken Sie auf **Nein** (Standard), wenn das Skript nicht signiert werden muss. 
     - **Skript in 64-Bit-Version des PowerShell-Hosts ausführen:** Klicken Sie auf **Ja**, um das Skript in einer 64-Bit-Version des PowerShell-Hosts auf einer 64-Bit-Clientarchitektur auszuführen. Wenn Sie auf **Nein** (Standard) klicken, wird das Skript in einer 32-Bit-Version des PowerShell-Hosts ausgeführt.
@@ -90,26 +93,34 @@ Für die Intune-Verwaltungserweiterung sind folgende Voraussetzungen erforderlic
       | Nein | 32 Bit  | 32-Bit-Version des PowerShell-Hosts unterstützt | Wird nur in einer 32-Bit-Version des PowerShell-Hosts ausgeführt, der sowohl auf 32-Bit- als auch auf 64-Bit-Architekturen funktioniert |
       | Ja | 64-Bit | Wird nur in einer 64-Bit-Version des PowerShell-Hosts für 64-Bit-Architekturen verwendet. Wenn das Skript auf einer 32-Bit-Version ausgeführt wird, passiert dies in einer 32-Bit-Version des PowerShell-Hosts. | Führt das Skript in einer 32-Bit-Version des PowerShell-Hosts aus. Wenn diese Einstellung in „64-Bit“ geändert wird, wird das Skript in einer 64-Bit-Version des PowerShell-Hosts geöffnet (aber nicht ausgeführt) und meldet die Ergebnisse. Wenn das Skript auf einer 32-Bit-Version ausgeführt wird, passiert dies in einer 32-Bit-Version des PowerShell-Hosts. |
 
-    ![Hinzufügen und Verwenden von PowerShell-Skripts in Microsoft Intune](./media/mgmt-extension-add-script.png)
-5. Klicken Sie auf **OK** > **Erstellen**, um das Skript zu speichern.
+5. Klicken Sie auf **Bereichstags**. Bereichstags sind optional. Weitere Informationen dazu finden Sie unter [Use role-based access control (RBAC) and scope tags for distributed IT (Verwenden der rollenbasierten Zugriffssteuerung und Bereichsmarkierungen für verteilte IT)](scope-tags.md).
 
-> [!NOTE]
-> Wenn Skripts auf den Benutzerkontext festgelegt sind und der Endbenutzer über Administratorrechte verfügt, wird das PowerShell-Skript standardmäßig mit Administratorrechten ausgeführt.
+    So fügen Sie Bereichstags hinzu:
 
-## <a name="assign-the-policy"></a>Zuweisen der Richtlinie
+    1. Klicken Sie auf **Bereichstags auswählen**, wählen Sie ein bereits vorhandenes Bereichstag aus der Liste aus, und klicken Sie auf **Auswählen**.
 
-1. Wählen Sie unter **PowerShell-Skripts** das zuzuweisende Skript aus, und klicken Sie dann auf **Verwalten** > **Zuweisungen**.
+    2. Klicken Sie anschließend auf **Weiter**.
 
-    ![Zuweisen oder Bereitstellen eines PowerShell-Skripts an/für Gerätegruppen in Microsoft Intune](./media/mgmt-extension-assignments.png)
+6. Klicken Sie auf **Zuweisungen** > **Select groups to include** (Gruppen auswählen, die hinzugefügt werden sollen). Dann wird eine vorhandene Liste mit Azure AD Gruppen angezeigt.
 
-2. Klicken Sie auf **Gruppen auswählen**, um verfügbare Azure AD-Gruppen aufzulisten. 
-3. Wählen Sie mindestens eine Gruppe aus, die die Benutzer enthält, deren Geräte das Skript erhalten sollen. Klicken Sie auf **Auswählen**, um die Richtlinie den ausgewählten Gruppen zuzuweisen.
+    1. Wählen Sie mindestens eine Gruppe aus, die die Benutzer enthält, deren Geräte das Skript erhalten sollen. Klicken Sie auf **Auswählen**. Die Gruppen, die Sie ausgewählt haben, werden in der Liste angezeigt und Ihrer Richtlinie zugeordnet.
 
-> [!NOTE]
-> - Endbenutzer müssen sich nicht beim Gerät anmelden, um PowerShell-Skripts auszuführen.
-> - PowerShell-Skripts in Intune können auf Azure AD-Gerätesicherheitsgruppen oder Azure AD-Benutzersicherheitsgruppen ausgerichtet werden.
+        > [!NOTE]
+        > PowerShell-Skripts in Intune können auf Azure AD-Gerätesicherheitsgruppen oder Azure AD-Benutzersicherheitsgruppen ausgerichtet werden.
 
-Der Intune-Verwaltungserweiterungsclient überprüft Intune einmal pro Stunde und nach jedem Neustart auf neue Skripts oder Änderungen. Nachdem Sie die Richtlinie den Azure AD-Gruppen zugewiesen haben, wird das PowerShell-Skript ausgeführt, und die Ausführungsergebnisse werden berichtet. Das Skript wird nur einmal ausgeführt. Eine erneute Ausführung erfolgt nur, wenn eine Änderung am Skript oder der Richtlinie vorgenommen wird.
+    2. Wählen Sie **Weiter** aus.
+
+        ![Zuweisen oder Bereitstellen eines PowerShell-Skripts an/für Gerätegruppen in Microsoft Intune](./media/mgmt-extension-assignments.png)
+
+7. Unter **Überprüfen + hinzufügen** wird eine Zusammenfassung der Einstellungen angezeigt, die Sie konfiguriert haben. Klicken Sie auf **Hinzufügen**, um das Skript zu speichern. Dann wird die Richtlinie für die ausgewählten Gruppen bereitgestellt.
+
+## <a name="important-considerations"></a>Wichtige Überlegungen
+
+- Wenn Skripts auf den Benutzerkontext festgelegt sind und der Endbenutzer über Administratorrechte verfügt, wird das PowerShell-Skript standardmäßig mit Administratorrechten ausgeführt.
+
+- Endbenutzer müssen sich nicht beim Gerät anmelden, um PowerShell-Skripts auszuführen.
+
+- Der Intune-Client für die Verwaltungserweiterung überprüft Intune einmal pro Stunde und nach jedem Neustart auf neue Skripts oder Änderungen. Nachdem Sie die Richtlinie den Azure AD-Gruppen zugewiesen haben, wird das PowerShell-Skript ausgeführt, und die Ausführungsergebnisse werden berichtet. Das Skript wird nur einmal ausgeführt. Eine erneute Ausführung erfolgt nur, wenn eine Änderung am Skript oder der Richtlinie vorgenommen wird.
 
 ## <a name="monitor-run-status"></a>Überwachen des Ausführungsstatus
 
@@ -120,7 +131,7 @@ Wählen Sie unter **PowerShell-Skripts** das zu überwachende Skript aus, klicke
 - **Gerätestatus**
 - **Benutzerstatus**
 
-## <a name="troubleshoot-scripts"></a>Behandeln von Problemen mit Skripts
+## <a name="intune-management-extension-logs"></a>Protokolle zur Intune-Verwaltungserweiterung
 
 Agentprotokolle auf dem Clientcomputer befinden sich in der Regel unter `\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Sie können mit [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) diese Protokolldateien anzeigen. 
 
@@ -132,7 +143,7 @@ Klicken Sie unter **PowerShell-Skripts** mit der rechten Maustaste auf das Skrip
 
 ## <a name="common-issues-and-resolutions"></a>Häufige Probleme und Lösungen
 
-#### <a name="issue-intune-management-extension-doesnt-download"></a>Problem: Die Intune-Verwaltungserweiterung kann nicht heruntergeladen werden
+### <a name="issue-intune-management-extension-doesnt-download"></a>Problem: Die Intune-Verwaltungserweiterung kann nicht heruntergeladen werden
 
 **Mögliche Lösungen:**
 
@@ -151,7 +162,7 @@ Folgendermaßen können Sie feststellen, ob das Gerät automatisch registriert w
 
 Unter [Aktivieren der automatischen Registrierung von Windows 10](windows-enroll.md#enable-windows-10-automatic-enrollment) sind die erforderlichen Schritte für die Einrichtung der automatischen Registrierung in Intune aufgeführt.
 
-#### <a name="issue-powershell-scripts-do-not-run"></a>Problem: PowerShell-Skripts werden nicht ausgeführt
+### <a name="issue-powershell-scripts-do-not-run"></a>Problem: PowerShell-Skripts werden nicht ausgeführt
 
 **Mögliche Lösungen:**
 
@@ -167,7 +178,7 @@ Unter [Aktivieren der automatischen Registrierung von Windows 10](windows-enroll
 - Der Client der Intune-Verwaltungserweiterung überprüft einmal pro Stunde, ob Änderungen im Skript oder in der Richtlinie in Intune vorliegen.
 - Vergewissern Sie sich, dass die Intune-Verwaltungserweiterung nach `%ProgramFiles(x86)%\Microsoft Intune Management Extension` heruntergeladen wurde.
 - Skripts werden nicht auf Surface Hub-Geräten oder unter Windows 10 im S Modus ausgeführt.
-- Überprüfen Sie die Protokolle auf Fehler. Weitere Informationen finden Sie in diesem Artikel unter [Behandeln von Problemen mit Skripts](#troubleshoot-scripts).
+- Überprüfen Sie die Protokolle auf Fehler. Weitere Informationen zu Protokollen zur Intune-Verwaltungserweiterung [finden Sie hier](#intune-management-extension-logs).
 - Stellen Sie gegen mögliche Probleme mit Berechtigungen sicher, dass die Eigenschaften des PowerShell-Skripts auf `Run this script using the logged on credentials` festgelegt werden. Überprüfen Sie auch, ob der angemeldete Benutzer über die erforderlichen Berechtigungen zum Ausführen des Skripts verfügt.
 
 - Sie können Skriptprobleme folgendermaßen isolieren:

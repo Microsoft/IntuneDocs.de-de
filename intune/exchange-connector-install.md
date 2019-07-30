@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7663009c7d45171ab6469f7f6e96b4c8f979b744
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: f55ecd98e047dbf77e6e8eb58284577078e21a61
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883283"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427330"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Einrichten des lokalen Exchange Connectors in Microsoft Intune
 Die in diesem Artikel enthaltenen Informationen unterstützen Sie beim Installieren und anschließenden Überwachen des lokalen Exchange Active Sync-Connectors für Intune.  Sie verwenden den lokalen Intune Exchange-Connector mit Ihren [Richtlinien für den bedingten Zugriff, um den Zugriff auf Ihre lokalen Exchange-Postfächer zu gewähren oder zu verweigern](conditional-access-exchange-create.md). 
@@ -152,8 +152,22 @@ Wenn der Exchange-Clientzugriffsserver, den der Connector verwendet, nicht verf�
 Nachdem der Connector mithilfe des angegebenen Clientzugriffsservers erfolgreich eine Verbindung mit Exchange hergestellt hat, ermittelt der Connector weitere Clientzugriffsserver für diese Exchange-Organisation, die für Failovers verwendet werden können. Mithilfe des Wissens über weitere Clientzugriffsserver kann der Connector ein Failover auf einen anderen verfügbaren Clientzugriffsserver durchführen, bis der primäre Clientzugriffsserver wieder verfügbar ist. Die Ermittlung weiterer Clientzugriffsserver ist standardmäßig aktiviert. Sie können das Failover mithilfe des folgenden Verfahrens deaktivieren:  
 1. Navigieren Sie auf dem Server, auf dem der Exchange-Connector installiert ist, zu „%*ProgramData*%\Microsoft\Microsoft Intune Exchange Connector“. 
 2. Öffnen Sie mit einem Text-Editor **OnPremisesExchangeConnectorServiceConfiguration.xml**.
-3. Um die Feature zu deaktivieren, ändern Sie &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; in &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt;.    
+3. Um die Feature zu deaktivieren, ändern Sie &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; in &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt;.  
  
+## <a name="optional-performance-tuning-for-the-exchange-connector"></a>Optionale Leistungsoptimierung für den Exchange Connector  
+
+Ab 5.000 Geräten, die über Exchange ActiveSync unterstützt werden, können Sie eine optionale Einstellung konfigurieren, um die Leistung des Connectors zu verbessern. Sie können die Leistung verbessern, indem Sie für Exchange die Verwendung mehrerer Instanzen eines PowerShell-Runspacebefehls ermöglichen. 
+
+Bevor Sie diese Änderung vornehmen, sollten Sie sich vergewissern, dass das Konto, das Sie zum Ausführen des Exchange Connectors verwenden, nicht für andere Verwaltungszwecke für Exchange verwendet wird. Dies ist wichtig, weil für Exchange ein Limit von 18 Runspaces pro Konto gilt, von denen die meisten vom Connector verwendet werden. 
+
+Diese Leistungsänderung eignet sich nicht für Connectors, die auf älterer oder langsamerer Hardware ausgeführt werden.  
+
+1. Öffnen Sie auf dem Server, auf dem der Connector installiert ist, das Installationsverzeichnis des Connectors.  Der Standardpfad lautet *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*. 
+2. Bearbeiten Sie die Datei *OnPremisesExchangeConnectorServiceConfiguration.xml*.
+3. Suchen Sie nach **EnableParallelCommandSupport**, und legen Sie den Wert auf **TRUE** fest:  
+     
+   \<EnableParallelCommandSupport>true\</EnableParallelCommandSupport>
+4. Speichern Sie die Datei, und starten Sie dann den Microsoft Intune Exchange Connector neu.
 
 ## <a name="reinstall-the-on-premises-exchange-connector"></a>Erneutes Installieren des lokalen Exchange-Connectors
 Möglicherweise müssen Sie Exchange-Connector neu installieren. Da für die Herstellung einer Verbindung mit jeder Exchange-Organisation ein einzelner Connector unterstützt wird, ersetzt ein neu installierter Connector den ursprünglichen, wenn Sie versuchen einen zweiten Connector für eine Organisation zu installieren.

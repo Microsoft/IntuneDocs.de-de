@@ -17,15 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 71e8760bde5f6c53f6e73d8c8dd0f795809726b2
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: aa4a0ff4c651e20a9f772551f1664bd8bf2d879f
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67649117"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387334"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrieren von Windows-Geräten in Intune mithilfe von Windows Autopilot  
 Windows Autopilot vereinfacht das Registrieren von Geräten in Intune. Das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems ist ein langwieriger Prozess. Es kann ebenfalls Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und Autopilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von Autopilot-Geräten verwenden, können Sie Richtlinien, Profile und Apps usw. verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
+
+Es gibt vier Arten der Autopilot-Bereitstellung: [Self-Deployment-Modus](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying) für Kiosks, digitale Beschilderung oder ein freigegebenes Gerät, [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) zur Unterstützung von Partnern oder IT-Mitarbeitern bei der Vorabbereitstellung eines Windows 10-Computers, damit dieser vollständig konfiguriert und betriebsbereit ist, [Autopilot für vorhandene Geräte](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) zur mühelosen Bereitstellung der neuesten Version von Windows 10 auf Ihren Geräten und [User Driven Mode](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven) (Benutzergesteuerter Modus) für normale Benutzer. 
 
 
 ## <a name="prerequisites"></a>Voraussetzungen
