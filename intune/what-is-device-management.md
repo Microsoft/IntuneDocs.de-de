@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise umfasst Microsoft Intune. Erfahren Sie, wi
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/12/2019
+ms.date: 07/22/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f476c3129f3f3da4cde98fd0cd9960c223ffd6ae
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 5be25e9ab88f4dd44399d6ddc37cfc25955475ba
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884269"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68427307"
 ---
 # <a name="what-is-device-management"></a>Was ist die Geräteverwaltung? 
 
@@ -59,7 +59,7 @@ Eine Hauptaufgabe einer jeden Lösung für die Geräteverwaltung ist es, Sicherh
 - **Windows Defender** enthält viele Sicherheitsfeatures zum Schutz von Windows 10-Geräten. Wenn Sie z. B. Intune und Windows Defender zusammen verwenden, haben Sie die folgenden Möglichkeiten: 
 
   - Aktivieren Sie [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10), um nach verdächtigen Aktivitäten in Dateien und Apps auf mobilen Geräten zu suchen. 
-  - Verwenden Sie [Windows Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection), um Sicherheitsverletzungen auf mobilen Geräten zu verhindern. Und helfen Sie, die Auswirkungen eines Sicherheitsverstoßes zu begrenzen, indem Sie einen Benutzer von Unternehmensressourcen ausschließen.
+  - Verwenden Sie [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection), um Sicherheitsverletzungen auf mobilen Geräten zu verhindern. Und helfen Sie, die Auswirkungen eines Sicherheitsverstoßes zu begrenzen, indem Sie einen Benutzer von Unternehmensressourcen ausschließen.
 
 - **Bedingter Zugriff** ist ein Feature von Azure Active Directory, das gut in Intune integriert werden kann. Mithilfe des [bedingten Zugriffs](https://docs.microsoft.com/intune/conditional-access) können Sie sicherstellen, dass nur konforme Geräte auf E-Mail, SharePoint und andere Apps zugreifen dürfen. 
 
@@ -73,11 +73,11 @@ Sie können auch eine Kombination aus [MDM und MAM](https://docs.microsoft.com/i
 
 Wenn Sie Intune einrichten, können Sie Geräte auch ausschließlich im Azure-Portal verwalten oder dazu Intune und Microsoft 365 gemeinsam verwenden. [Migrating mobile device management to Intune in the Azure portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) (Migrieren der Verwaltung mobiler Geräte zu Intune im Azure-Portal) ist eine Fallstudie der Microsoft-IT. In dieser Fallstudie erfahren Sie, wie Microsoft IT einen modernen Ansatz zur Geräteverwaltung gewählt hat und welche Erkenntnisse daraus gewonnen wurden.
 
-## <a name="simplify-it-tasks-using-the-device-management-dashboard"></a>Vereinfachen von IT-Aufgaben mit dem Device Management Dashboard
+## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>Vereinfachen von IT-Aufgaben mit dem Device Management Admin Center
 
-Das [Device Management Dashboard](https://devicemanagement.portal.azure.com/) ist eine zentrale Anlaufstelle für die Verwaltung und Durchführung von Aufgaben für Ihre mobilen Geräte. Dieses Dashboard enthält die Dienste für die Geräteverwaltung, einschließlich Intune und Azure Active Directory, sowie für die Verwaltung von Clientanwendungen. 
+Das [Device Management Admin Center](https://devicemanagement.portal.azure.com/) ist eine zentrale Anlaufstelle für die Verwaltung und Durchführung von Aufgaben für Ihre mobilen Geräte. Dieser Arbeitsbereich enthält die Dienste für die Geräteverwaltung, einschließlich Intune und Azure Active Directory, sowie für die Verwaltung von Clientanwendungen. 
 
-Auf dem Device Management Dashboard haben Sie folgende Optionen:
+Im Verwaltungs Center für die Geräteverwaltung können Sie folgende Aktionen ausführen:
 
 - [Registrieren von Geräten](https://docs.microsoft.com/intune/device-enrollment)
 - [Festlegen der Gerätekonformität](https://docs.microsoft.com/intune/device-compliance-get-started)

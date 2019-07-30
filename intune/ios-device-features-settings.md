@@ -1,6 +1,6 @@
 ---
 title: iOS-Gerätefunktionseinstellungen in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Schauen Sie sich alle Einstellungen an, um iOS-Geräte für AirPrint, das Layout des Startbildschirms, App-Benachrichtigungen, freigegebene Geräte, einmaliges Anmelden und Webinhaltsfiltereinstellungen in Microsoft Intune zu konfigurieren. Verwenden Sie diese Einstellungen in einem Gerätekonfigurationsprofil, um iOS-Geräte so zu konfigurieren, dass sie diese verschiedenen Apple-Funktionen in Ihrem Unternehmen nutzen.
+description: Schauen Sie sich alle Einstellungen an, um iOS-Geräte für AirPrint, das Layout des Startbildschirms, App-Benachrichtigungen, freigegebene Geräte, einmaliges Anmelden und Webinhaltsfiltereinstellungen in Microsoft Intune zu konfigurieren. Verwenden Sie diese Einstellungen in einem Gerätekonfigurationsprofil, um iOS-Geräte so zu konfigurieren, dass sie diese Apple-Funktionen in Ihrem Unternehmen nutzen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43b87a90f90130a014817819b87ed5946b1ba15b
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: bac591a625fd915056234a75b26bc2f90f50cae7
+ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413805"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68387106"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>iOS-Geräteeinstellungen zur Verwendung gängiger iOS-Features in Intune
 
@@ -41,7 +41,7 @@ In diesem Artikel werden diese Einstellungen mit ihren Funktionsbeschreibungen a
 - **Port**: Geben Sie den Lauschport des AirPrint-Ziels ein. Wenn Sie diese Eigenschaft leer lassen, verwendet AirPrint den Standardport. In iOS 11.0 und höher verfügbar.
 - **TLS**: Wählen Sie **Aktivieren** aus, um AirPrint-Verbindungen mit Transport Layer Security (TLS) zu sichern. In iOS 11.0 und höher verfügbar.
 
-Über **Hinzufügen** wird der AirPrint-Server der Liste hinzugefügt. Sie können viele AirPrint-Server hinzufügen. Sie können auch eine durch Kommas getrennte Datei (.csv) mit diesen Informationen **importieren**. Nach der Erstellung der Liste können Sie Ihre Liste an AirPrint-Server auch **exportieren**.
+Über **Hinzufügen** wird der AirPrint-Server der Liste hinzugefügt. Viele airprint-Server können hinzugefügt werden. Sie können auch eine durch Kommas getrennte Datei (.csv) mit diesen Informationen **importieren**. Beim **Export** wird eine Liste der von Ihnen hinzugefügten airprint-Server erstellt.
 
 Klicken Sie auf **OK**, um Ihre Liste zu speichern.
 
@@ -195,7 +195,7 @@ Dieses Feature unterstützt überwachte Geräte, auf denen iOS 9.3 oder höher a
   Gerätetoken können auch verwendet werden, um gerätespezifische Informationen zu diesen Feldern hinzuzufügen. Geben Sie zum Beispiel zur Anzeige der Seriennummer `Serial Number: {{serialnumber}}` ein. Auf dem Sperrbildschirm sieht der Text dann in etwa so aus: `Serial Number 123456789ABC`. Achten Sie darauf, bei der Eingabe von Variablen geschweifte Klammern `{{ }}` zu verwenden. [App-Konfigurationstoken](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) umfassen eine Reihe von Variablen, die Sie nutzen können. Zudem können Sie `deviceName` oder einen anderen gerätespezifischen Wert verwenden.
 
   > [!NOTE]
-  > Variablen werden nicht in der Benutzeroberfläche überprüft und Groß-/Kleinschreibung unterschieden. Daher gibt es möglicherweise Profile, die mit fehlerhaften Eingaben gespeichert wurden. Wenn Sie beispielsweise `{{DeviceID}}` anstelle von `{{deviceid}}` eingeben, wird die Zeichenfolge anstelle der eindeutigen Geräte-ID angezeigt. Achten Sie darauf, dass die richtigen Informationen eingeben.
+  > Variablen werden nicht in der Benutzeroberfläche überprüft und beachten die Groß-/Kleinschreibung. Daher gibt es möglicherweise Profile, die mit fehlerhaften Eingaben gespeichert wurden. Wenn Sie beispielsweise `{{DeviceID}}` anstelle von `{{deviceid}}` eingeben, wird die Zeichenfolge anstelle der eindeutigen Geräte-ID angezeigt. Stellen Sie sicher, dass Sie die richtigen Informationen eingeben.
 
 Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
@@ -253,7 +253,7 @@ Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="web-content-filter-settings"></a>Filtereinstellungen für Webinhalt
 
-Diese Einstellungen steuern den Browser-URL-Zugriff auf iOS-Geräte.
+Diese Einstellungen steuern den Browser-URL-Zugriff auf überwachten iOS-Geräten.
 
 - **Filtertyp**: Wählen, ob bestimmte Websites zugelassen werden sollen. Folgende Optionen sind verfügbar:
 

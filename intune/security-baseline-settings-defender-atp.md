@@ -5,7 +5,7 @@ description: Von Intune unterstützte Einstellungen für Sicherheitsbaselines zu
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 07/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40d2b1f58c2892eea6d3f454a3f993b30b9a5c4a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
+ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354435"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68491915"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-Baselineeinstellungen für Intune
 
@@ -29,7 +29,7 @@ Zeigen Sie die Baselineeinstellungen für Microsoft Defender Advanced Threat Pro
 
 Die Microsoft Defender Advanced Threat Protection-Baseline ist verfügbar, wenn Ihre Umgebung den Anforderungen zur Verwendung von [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) entspricht. 
 
-Diese Baseline ist für physische Geräte optimiert und wird zurzeit nicht für die Verwendung auf virtuellen Computern (VMS) oder VDI-Endpunkten empfohlen. Bestimmte Baseline-Einstellungen können sich auf interaktive Remote Sitzungen in virtualisierten Umgebungen auswirken. Weitere Informationen finden Sie in der Windows-Dokumentation unter [erhöhen der Konformität auf die Microsoft Defender ATP-Sicherheitsbaseline](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) .
+Diese Baseline ist für physische Geräte optimiert und wird zurzeit nicht für die Verwendung auf virtuellen Computern (VMS) oder VDI-Endpunkten empfohlen. Bestimmte Baselineeinstellungen können sich auf interaktive Remotesitzungen in virtualisierten Umgebungen auswirken. Weitere Informationen finden Sie unter [Increase compliance to the Microsoft Defender ATP security baseline (Erhöhung der Compliance für die Microsoft Defender ATP-Sicherheitsbaseline)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline).
 
 
 > [!NOTE]  
@@ -53,7 +53,7 @@ Während der Verwendung von Microsoft Edge schützt Microsoft Defender Applicati
     **Standard**: Ja
 
   - **Clipboard behavior** (Verhalten der Zwischenablage) - *Settings/ClipboardSettings*  
-    Legen Sie zulässige Aktionen für das Kopieren und Einfügen zwischen dem lokalen Computer und dem virtuellen Browser von Application Guard fest.  Sie haben folgende Optionen:
+    Legen Sie zulässige Aktionen für das Kopieren und Einfügen zwischen dem lokalen Computer und dem virtuellen Browser von Application Guard fest.  Zu den Optionen gehören:
     - *Nicht konfiguriert*  
     - *Beide blockieren* – Daten können zwischen dem Computer und dem virtuellen Browser nicht übertragen werden.  
     - *Host zu Container blockieren* – Daten können vom Computer nicht in den virtuellen Browser übertragen werden.
@@ -207,7 +207,7 @@ Weitere Informationen finden Sie in der Windows-Dokumentation unter [Einstellung
 
   Um zu überprüfen, ob das System Kernel-DMA-Schutz unterstützt, führen Sie MSINFO32.exe auf dem System aus, und überprüfen Sie das Feld *Kernel-DMA-Schutz* auf der Übersichtsseite.  
 
-  Sie haben folgende Optionen: 
+  Zu den Optionen gehören: 
   - *Gerätestandard* – Nach der Anmeldung oder Entsperrung des Bildschirms dürfen Geräte mit für DMA-Neuzuordnung kompatiblen Treibern jederzeit aufgezählt werden. Geräte mit für DMA-Neuzuordnung inkompatiblen Treibern werden erst aufgezählt, nachdem der Benutzer den Bildschirm entsperrt hat.
   - *Alle zulassen* – Alle externen DMA-fähigen PCIe-Geräte werden jederzeit aufgezählt.
   - *Alle blockieren* – Geräte mit für DMA-Neuzuordnung kompatiblen Treibern dürfen jederzeit aufgezählt werden. Geräte mit für DMA-Neuzuordnung inkompatiblen Treibern dürfen DMA niemals starten und ausführen.
@@ -292,7 +292,7 @@ Weitere Informationen finden Sie in der Windows-Dokumentation unter [WindowsAdva
 
   **Standard**: Überwachungsmodus
 
-## <a name="web-network-protection"></a>Web-Netzwerkzugriffsschutz  
+## <a name="web--network-protection"></a>Web- und Netzwerkzugriffsschutz  
 
 - **Netzwerkschutztyp**  
   [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) – Diese Richtlinie ermöglicht es Ihnen, den Netzwerkschutz in Windows Defender Exploit Guard zu aktivieren oder zu deaktivieren. Netzwerkschutz ist ein Feature von Windows Defender Exploit Guard, das Arbeitnehmer davor schützt, eine Anwendung im Zuge betrügerischer Phishing-Versuche mit Zugriffsabsicht, Hostseiten für Exploits und schädliche Inhalte im Internet zu verwenden. Dabei wird auch verhindert, dass Browser von Drittanbietern Verbindungen zu gefährlichen Websites herstellen.  
@@ -428,7 +428,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Ja
 
 - **Defender-Cloud-Block-Level**  
-  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – Bestimmen Sie mit dieser Richtlinie, wie aggressiv Windows Defender Antivirus beim Blockieren und Überprüfen verdächtiger Dateien sein soll. Sie haben folgende Optionen:
+  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – Bestimmen Sie mit dieser Richtlinie, wie aggressiv Windows Defender Antivirus beim Blockieren und Überprüfen verdächtiger Dateien sein soll. Zu den Optionen gehören:
 
   - „Hoch“ – Unbekannte Dateien aggressiv blockieren und gleichzeitig die Clientleistung optimieren (größere Wahrscheinlichkeit falsch positiver Ergebnisse)
   - „Hoher Zuwachs“ – Unbekannte Dateien aggressiv blockieren und zusätzliche Schutzmaßnahmen anwenden (beeinträchtigt möglicherweise die Clientleistung)
@@ -600,6 +600,13 @@ Weitere Informationen finden Sie in der Windows-Dokumentation unter [PassportFor
 
 - **Konfigurieren von Windows Hello for Business** - *TenantId/Policies/UsePassportForWork*    
   Windows Hello for Business ist eine alternative Methode zum Anmelden bei Windows durch Ersetzen von Kennwörtern, Smartcards und virtuellen Smartcards.  
+
+  - Wenn Sie auf *Ja*festgelegt ist, aktivieren Sie diese Richtlinie, und das Gerät stellt Windows Hello for Business bereit.  
+  - Wenn diese Einstellung auf *nicht konfiguriert*festgelegt ist, wirkt sich die Baseline nicht auf die Richtlinien Einstellung des Geräts aus. Dies bedeutet Folgendes: Wenn Windows Hello for Business auf einem Gerät deaktiviert ist, bleibt es deaktiviert. Wenn Sie aktiviert ist, bleibt sie aktiviert. 
+
+  Sie können Windows Hello for Business über diese Baseline nicht deaktivieren. Sie können Windows Hello for Business deaktivieren, wenn Sie die [Windows](windows-hello.md)-Registrierung konfigurieren, oder als Teil eines Geräte Konfigurations Profils für [Identity Protection](identity-protection-configure.md).  
+
+Windows Hello for Business ist eine alternative Methode zum Anmelden bei Windows durch Ersetzen von Kennwörtern, Smartcards und virtuellen Smartcards.  
 
   Wenn Sie diese Richtlinieneinstellung aktivieren oder nicht konfigurieren, stellt das Gerät Windows Hello for Business bereit. Wenn Sie diese Richtlinieneinstellung deaktivieren, stellt das Gerät Windows Hello for Business für keinen Benutzer bereit.
 
