@@ -1,5 +1,6 @@
 ---
 title: Datenschutz und personenbezogene Daten in Intune
+titleSuffix: Microsoft Intune
 description: Erfahren Sie mehr darüber, welche personenbezogene Daten in Intune erfasst und verarbeitet werden.
 keywords: ''
 author: brenduns
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebfc6d0c2c8aa4c75ae30bb6c406dbc48a562f9d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 5cc356e0329e794d4de8d59bea4950bc03ff545e
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050428"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660417"
 ---
 # <a name="privacy-and-personal-data-in-intune"></a>Datenschutz und personenbezogene Daten in Intune
 

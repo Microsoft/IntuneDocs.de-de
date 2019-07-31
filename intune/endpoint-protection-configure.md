@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: d0e3e67cd227c5ce8ac2cb42f79bdea1da8e2d75
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 13e8c7fd0c822a2bdfbf7c183ea6752f99cf7991
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375111"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482770"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Hinzufügen der Endpoint Protection-Einstellungen in Intune  
 
@@ -63,7 +63,7 @@ Wenn Sie Profile mit benutzerdefinierten Firewallregeln planen, sollten Sie die 
 - Wenn eine einzelne Regel nicht angewendet werden kann, schlagen für alle Regeln sämtliche Profile fehl, und keine der Regeln wird auf das Gerät angewendet.  
 - Wenn eine Regel nicht angewendet werden kann, werden für alle Regeln im Profil ein Fehler gemeldet. Intune kann nicht feststellen, welche Regel fehlgeschlagen ist.  
 
-Die Firewallregeln, die von Intune verwaltet werden können, werden im Artikel [Windows-Firewall-Konfigurationsdienstanbieter]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) ausführlich beschrieben. Die Liste der benutzerdefinierten Firewalleinstellungen für Windows 10-Geräte, die von Intune unterstützt werden, finden Sie unter [Custom Firewall rules (Benutzerdefinierte Firewallregeln)](endpoint-protection-windows-10.md#custom-firewall-rules).  
+Die Firewallregeln, die von Intune verwaltet werden können, werden im Artikel [Windows-Firewall-Konfigurationsdienstanbieter]( https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) ausführlich beschrieben. Die Liste der benutzerdefinierten Firewalleinstellungen für Windows 10-Geräte, die von Intune unterstützt werden, finden Sie unter [Custom Firewall rules (Benutzerdefinierte Firewallregeln)](endpoint-protection-windows-10.md#firewall-rules).  
 
 ### <a name="to-add-custom-firewall-rules-to-an-endpoint-protection-profile"></a>So fügen Sie einem Endpoint Protection-Profil benutzerdefinierte Firewallregeln hinzu  
 
@@ -73,7 +73,7 @@ Die Firewallregeln, die von Intune verwaltet werden können, werden im Artikel [
 
 3. Klicken Sie erst auf **Windows Defender Firewall**, um die Konfigurationsseite zu öffnen, und anschließend unter *Firewallregeln* auf **Hinzufügen**, um die Seite **Regel erstellen** zu öffnen.  
 
-4. Legen Sie Einstellungen für die Firewallregel fest, und klicken Sie dann auf **OK**, um diese zu speichern. Informationen zu den verfügbaren Optionen für benutzerdefinierte Firewallregeln in der Dokumentation finden Sie unter [Custom Firewall rules (Benutzerdefinierte Firewallregeln)](endpoint-protection-windows-10.md#custom-firewall-rules).  
+4. Legen Sie Einstellungen für die Firewallregel fest, und klicken Sie dann auf **OK**, um diese zu speichern. Informationen zu den verfügbaren Optionen für benutzerdefinierte Firewallregeln in der Dokumentation finden Sie unter [Custom Firewall rules (Benutzerdefinierte Firewallregeln)](endpoint-protection-windows-10.md#firewall-rules).  
 
 5. Sobald Sie die Regel gespeichert haben, wird sie auf der Seite *Windows Defender Firewall* in der Liste mit den Regeln aufgeführt.  
 

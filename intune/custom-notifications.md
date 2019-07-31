@@ -1,12 +1,12 @@
 ---
 title: Senden benutzerdefinierter Benachrichtigungen an Benutzer mit Microsoft Intune
-titleSuffix: ''
+titleSuffix: Microsoft Intune
 description: Verwenden von Intune zum Erstellen und Senden benutzerdefinierter Pushbenachrichtigungen an Benutzer von iOS- und Android-Geräten
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 7/18/2019
+ms.date: 07/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1caff820daf2e278c50d154873f569163b264315
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: f938afb738e75789194db0c74fee56deb1476dbc
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378129"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660378"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Senden benutzerdefinierter Benachrichtigungen in Intune  
 

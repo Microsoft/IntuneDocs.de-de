@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/25/2019
+ms.date: 07/24/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fa23deb26dbf54f8e3e98ec0b9604859a34a90d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: cd310cea29a3dac7a178d88c0f29d1a4e36ad37d
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528308"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482814"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>Schnellstart: Hinzufügen und Zuweisen einer Client-App
 
@@ -43,7 +43,6 @@ Registrieren Sie sich bei [Intune](https://aka.ms/intuneportal) als [globaler Ad
 Eine App kann eingefügt werden, damit Intune Aspekte der App verwalten kann. 
 
 Führen Sie die folgenden Schritte aus, um eine App zu Intune hinzuzufügen:
-
 1. Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Client-Apps** > **Apps** > **Hinzufügen**. 
 2. Wählen Sie **Windows 10** im Abschnitt **Office 365 Suite** des Dropdownfelds **App-Typ** aus.
 3. Klicken Sie auf **App-Suite konfigurieren**, um die Office-Apps auszuwählen, die dem Intune-Benutzer zugewiesen werden sollen.
@@ -56,9 +55,9 @@ Führen Sie die folgenden Schritte aus, um eine App zu Intune hinzuzufügen:
 
     ![Screenshot vom Hinzufügen der App-Informationen](media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
 
-8. Klicken Sie auf **Einstellungen der App-Suite**.
-9. Wählen Sie **Monatlich** im Dropdownfeld **Updatekanal** aus.
-10. Klicken Sie auf **OK** > **Hinzufügen**.
+10. Klicken Sie auf **Einstellungen der App-Suite**.
+11. Wählen Sie **Monatlich** im Dropdownfeld **Updatekanal** aus.
+12. Klicken Sie auf **OK** > **Hinzufügen**.
 
 ## <a name="assign-the-app-to-a-group"></a>Zuweisen der App zu einer Gruppe
 
