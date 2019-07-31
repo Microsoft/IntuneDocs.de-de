@@ -233,6 +233,8 @@
               displayName: gms
             - name: Registrierung dedizierter Android Enterprise-Geräte oder vollständig verwalteter Geräte
               href: android-dedicated-devices-fully-managed-enroll.md
+            - name: Android-Geräteadministratorregistrierung
+              href: android-enroll-device-administrator.md
             - name: Verwalten von Android Enterprise-Arbeitsprofilgeräten
               href: android-enterprise-overview.md
             - name: Registrierung mobiler Geräte für Samsung Knox
@@ -705,6 +707,8 @@
               items:
                 - name: Behandlung von Problemen bei der Registrierung von iOS-Geräten
                   href: troubleshoot-ios-enrollment-errors.md
+                - name: Behandlung von Problemen bei der Registrierung von Windows-Geräten
+                  href: troubleshoot-windows-enrollment-errors.md
             - name: Unterstützung von Benutzern beim Beheben von Problemen
               href: help-desk-operators.md
             - name: Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen
