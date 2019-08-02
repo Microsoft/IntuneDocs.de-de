@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b073047455cd21dc3ffe5efcb52f51584db5ff30
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: b6db255cc4c4bb8466d36e25deaf36e5c3480106
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353779"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467500"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune
 
@@ -373,7 +373,14 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
      - Windows 10 und höher
 
 
-   - **Format des Antragstellernamens**: Wählen Sie aus, auf welche Weise Intune den Antragstellernamen in der Zertifikatanforderung automatisch erstellen soll. Diese Optionen ändern sich, wenn Sie den Zertifikattyp **Benutzer** oder **Gerät** auswählen. 
+   - **Format des Antragstellernamens**: Wählen Sie aus, auf welche Weise Intune den Antragstellernamen in der Zertifikatanforderung automatisch erstellen soll. Diese Optionen ändern sich, wenn Sie den Zertifikattyp **Benutzer** oder **Gerät** auswählen.  
+
+     > [!NOTE]  
+     > Es gibt ein [bekanntes Problem](#avoid-certificate-signing-requests-with-escaped-special-characters) bei der Verwendung von SCEP zum Abrufen von Zertifikaten, wenn der Antragstellername in der resultierenden Zertifikatsignieranforderung (Certificate Signing Request, CSR) eines der folgenden Zeichen als Escapezeichen enthält (mit vorangestelltem Schrägstrich\\):
+     > - \+
+     > - ;
+     > - ,
+     > - =
 
         **Benutzerzertifikattyp**  
 
@@ -495,6 +502,42 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
      - Klicken Sie auf **OK**, und **erstellen** Sie Ihr Profil.
 
 Das Profil wird erstellt und im Bereich „Profilliste“ angezeigt.
+
+### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Vermeiden von Zertifikatsignieranforderungen mit Sonderzeichen als Escapezeichen
+Es gibt ein bekanntes Problem bei SCEP-Zertifikatanforderungen, die einen Antragstellernamen (CN) mit einem oder mehreren der folgenden Sonderzeichen als Escapezeichen enthalten. Antragstellernamen, die eines der Sonderzeichen als Escapezeichen enthalten, führen zu einer CSR mit falschem Antragstellernamen, was wiederum dazu führt, dass bei der Intune SCEP-Captchavalidierung ein Fehler auftritt und kein Zertifikat ausgestellt wird.  
+
+Die Sonderzeichen sind:
+- \+
+- ,
+- ;
+- =
+
+Wenn Ihr Antragstellername eines der Sonderzeichen enthält, verwenden Sie eine der folgenden Optionen, um diese Einschränkung zu umgehen:  
+- Kapseln Sie den CN-Wert, der das Sonderzeichen enthält, mit Anführungszeichen.  
+- Entfernen Sie das Sonderzeichen aus dem CN-Wert.  
+
+**Beispielsweise** haben Sie einen Antragstellernamen, der als *Test user (TestCompany, LLC)* angezeigt wird.  Eine CSR, die einen CN mit dem Komma zwischen *TestCompany* und *LLC* umfasst, stellt ein Problem dar.  Das Problem kann vermieden werden, indem Sie den gesamten CN in Anführungszeichen setzen oder das Komma zwischen *TestCompany* und *LLC* entfernen:
+- **Fügen Sie Anführungszeichen hinzu**: *CN=* ”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **Entfernen Sie das Komma**: *CN=Test User (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+ Allerdings tritt bei Versuchen, das Komma mithilfe eines umgekehrten Schrägstrichs mit einem Escapezeichen zu versehen, ein Fehler in den CRP-Protokollen auf:  
+- **Mit Escapezeichen versehenes Komma**: *CN=Test User (TestCompany\\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+
+Der Fehler ähnelt dem folgenden: 
+
+```
+Subject Name in CSR CN="Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com" and challenge CN=Test User (TESTCOMPANY\, LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com do not match  
+
+  Exception: System.ArgumentException: Subject Name in CSR and challenge do not match
+
+   at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation.ValidationPhase3(PKCSDecodedObject pkcsObj, CertEnrollChallenge challenge, String templateName, Int32 skipSANCheck)
+
+   at Microsoft.ConfigurationManager.CertRegPoint.Controllers.CertificateController.VerifyRequest(VerifyChallengeParams value
+```
+
+
 
 ## <a name="assign-the-certificate-profile"></a>Zuweisen des Zertifikatprofils
 

@@ -1,5 +1,6 @@
 ---
-title: Verwenden von Berichten zur Updatekonformität für Windows Updates in Microsoft Intune | Microsoft-Dokumentation
+title: Verwenden von Berichten zur Updatekonformität für Windows Updates in Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Verwenden von OMS-Updatekonformität zum Abrufen von Berichtsdaten für Windows Update, die mit Intune bereitgestellt werden
 keywords: ''
 author: brenduns
@@ -14,12 +15,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2b236d01cb5ffcf5a26e71ac0a9b65bb586dcb1
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 09f3cafc16d8a08885731aa244a089367c6c0933
+ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66039663"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68660395"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>Berichte zur Updatekonformität für Intune
 Wenn Sie Intune verwenden, um Windows-Updates auf Windows 10-Geräten bereitzustellen, können Sie mithilfe von Intune oder der kostenlosen Lösung *Updatekonformität* (Teil der Microsoft Operations Management Suite, OMS) Details zur Updatekonformität abrufen.

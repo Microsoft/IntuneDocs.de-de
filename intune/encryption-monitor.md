@@ -16,14 +16,14 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a04a8b9f1973479fd0695ad0e782488fdef43d10
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375154"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671055"
 ---
-# <a name="monitor-device-encryption"></a>Überwachen der Geräteverschlüsselung  
+# <a name="monitor-device-encryption-with-intune"></a>Überwachen der Geräteverschlüsselung mit Intune   
 
 Der Microsoft Intune-Verschlüsselungsbericht enthält Details zum Verschlüsselungsstatus Ihrer verwalteten Geräte sowie Optionen zum Verwalten von Wiederherstellungsschlüsseln für Geräte. Welche Wiederherstellungsschlüsseloptionen verfügbar sind, hängt vom Typ des Geräts ab, das aufgerufen wird.  
 
@@ -93,8 +93,6 @@ Wenn Sie im Verschlüsselungsbericht ein Gerät auswählen, zeigt Intune den Ber
 - **Profilstatuszusammenfassung:** Eine Zusammenfassung der Profile, die für das Gerät gelten Die Zusammenfassung stellt die am wenigsten vorteilhafte Bedingung aller anwendbaren Profile dar. Wenn beispielsweise ein Profil von mehreren anwendbaren Profilen einen Fehler auslöst, zeigt die *Profilstatuszusammenfassung* *Fehler* an.  
 
 - **Statusdetails:** Erweiterte Details zum Verschlüsselungsstatus eines Geräts.  
-  > [!NOTE]
-  > Die Unterstützung von FileVault ist bis zum Abschluss des Rollouts des Releases für Juli in einigen Tagen noch eingeschränkt. Bis zum Abschluss des Rollouts werden Details zum Gerätestatus und zur Geräteverschlüsselung für macOS möglicherweise nicht genau im Verschlüsselungsbericht angezeigt.
 
   > [!IMPORTANT]  
   > Für Windows 10-Geräte zeigt Intune *Statusdetails* für Geräte an, die mindestens das *Windows 10-Update vom 10. April 2019* ausführen.  

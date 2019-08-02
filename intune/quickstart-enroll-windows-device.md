@@ -5,7 +5,7 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 07/30/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3c14d55201f88f5090f404ca9a79dd902c8da5e
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: efd4e8d013f0205541f6fcc37bb0bb8b5ea75bac
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66041326"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670848"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Schnellstart: Registrierung Ihres Windows 10-Geräts
 
@@ -91,7 +91,7 @@ Bevor Sie Ihr Windows 10-Desktopgerät registrieren, müssen Sie die installiert
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Bestätigen der Geräteregistrierung bei Intune
 
 1. Registrieren Sie sich bei [Intune](https://aka.ms/intuneportal) als globaler Administrator oder als Intune-Dienstadministrator.
-2. Klicken Sie auf **Geräte**, um die registrierten Geräte in Intune anzuzeigen.
+2. Wählen Sie **Geräte** > **Alle Geräte** aus, um die registrierten Geräte in Intune anzuzeigen.
 3. Stellen Sie sicher, dass Sie zusätzliche Geräte bei Intune registriert haben.
 
    ![Screenshot der bei Intune registrierten Geräte](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-07.png)

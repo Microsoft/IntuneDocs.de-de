@@ -1,7 +1,7 @@
 ---
 title: Von Jamf Pro an Intune übermittelte Daten
 titleSuffix: Microsoft Intune
-description: Eine Liste der Daten, die Jamf Pro an Microsoft Intune übermittelt
+description: Überprüfen Sie die Liste der Daten, die Jamf Pro an Microsoft Intune sendet, wenn Sie Jamf Pro integrieren, um Macs mit Intune zu verwalten.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 287ed06ddab0b98117aa4a75942087f360e4656d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 86f2f47322e668815d1ff37ce6c2de1e4d6cdc16
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048547"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68670902"
 ---
 # <a name="data-jamf-pro-sends-to-intune"></a>Von Jamf Pro an Intune gesendete Daten
 

@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Sicherheitsrichtlinien in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Sie können die empfohlenen Windows-Sicherheitseinstellungen hinzufügen oder konfigurieren, um Benutzer und Daten auf Geräten mit Microsoft Intune zur Verwaltung mobiler Geräte zu schützen. Aktivieren von BitLocker, Konfigurieren von Microsoft Defender Advanced Threat Protection, Steuern von Internet Explorer, Verwenden von SmartScreen, Festlegen lokaler Sicherheitsrichtlinien, Anfordern eines Kennworts, Blockieren von Internetdownloads und vieles mehr.
+description: Schützen Sie Benutzer und Daten auf Geräten mit Microsoft Intune zur Verwaltung mobiler Geräte mit den empfohlenen Windows-Sicherheitseinstellungen. Aktivieren der Verschlüsselung, Konfigurieren von Microsoft Defender Advanced Threat Protection, Steuern von Internet Explorer, Festlegen lokaler Sicherheitsrichtlinien, Anfordern eines Kennworts, Blockieren von Internetdownloads und vieles mehr.
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbab505d668f0e348b3b4d34fb2c39ac683f340b
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 252a42b9c8ef6612301bc913e187295be47d27bb
+ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353594"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68671014"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Konfigurieren von Windows 10-Geräten in Intune mithilfe von Sicherheitsbaselines
 
@@ -71,7 +71,7 @@ Die folgenden Sicherheitsbaseline-Instanzen können für Intune verwendet werden
   - [Vorschau: MDM-Sicherheitsbaseline für Oktober 2018](security-baseline-settings-mdm-archive.md)
 
 - **Microsoft Defender ATP-Baseline**  
-  *(Um diese Baseline verwenden zu können, muss Ihre Umgebung den Anforderungen zur Verwendung von [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) entsprechen)* .
+  *(Um diese Baseline verwenden zu können, muss Ihre Umgebung den Anforderungen zur Verwendung von [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) entsprechen)*.
   - [Vorschau: Microsoft Defender ATP-Baseline](security-baseline-settings-defender-atp.md)  
 
   > [!NOTE]

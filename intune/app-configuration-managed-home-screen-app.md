@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/16/2019
+ms.date: 07/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b1f8308463e76b09a041bb952ad09515435c54c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 758230d3d2f1dd1cb42532cce9fe1ff530000a16
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68374845"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482857"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Konfigurieren der Managed Home Screen-App von Microsoft für Android Enterprise
 
@@ -386,6 +386,9 @@ Dies ist ein Beispiel für ein JSON-Skript, in dem alle verfügbaren Konfigurati
 
 ## <a name="googles-android-device-policy-app"></a>Android Device Policy von Google
 Mit der App „Managed Home Screen“ ist nun der Zugriff auf die Android Device Policy-App von Google möglich. Die App „Managed Home Screen“ ist ein benutzerdefiniertes Startprogramm, das für Geräte verwendet wird, die bei Intune als dedizierte Android Enterprise-Geräte (AE) registriert sind und den Kioskmodus mit mehreren Apps verwenden. Zu Unterstützungs- und Debugzwecken können Sie auf die Android Device Policy-App zugreifen oder Benutzer auf diese weiterleiten. Diese Startfunktion ist verfügbar, sobald das Gerät registriert wird und sich bei der App „Managed Home Screen“ einloggt. Für diese Funktion sind keine weiteren Installationen nötig.
+
+## <a name="managed-home-screen-debug-screen"></a>Managed Home Screen-Debugbildschirm
+Sie können auf den Managed Home Screen-Debugbildschirm zugreifen, indem Sie auf die Schaltfläche **Zurück** klicken, bis der Debugbildschirm angezeigt wird (klicken Sie mindestens 15 mal auf die Schaltfläche **Zurück**). Von diesem Debugbildschirm aus können Sie die Android Device Policy-Anwendung starten, Protokolle anzeigen und hochladen oder den Kioskmodus vorübergehend anhalten, um das Gerät zu aktualisieren. Weitere Informationen zum Anhalten des Kioskmodus finden Sie unter **Kioskmodus verlassen** in den [Einstellungen dedizierter Geräte](device-restrictions-android-for-work.md#dedicated-device-settings) in Android Enterprise.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

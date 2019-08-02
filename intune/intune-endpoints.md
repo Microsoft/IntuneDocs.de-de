@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b836e754b8c08397fccb0c74b40ba9fe0675076e
-ms.sourcegitcommit: 97a46f0f6a27eda0592ff6518fac46bc2447b622
+ms.openlocfilehash: 1dd836d8bbc4d6f32081c74fb6f9edc42aff2cac
+ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68411600"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68482959"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Netzwerkendpunkte für Microsoft Intune  
 
@@ -146,7 +146,7 @@ Weitere Informationen finden Sie in den Apple-Artikeln [Von Apple-Softwareproduk
 
 ## <a name="microsoft-intune-certificate-connector"></a>Microsoft Intune-Zertifikatconnector  
 
-Der Server, der den Microsoft Intune Certificate Connector hostet, muss mithilfe des **TCP-Ports** **443** Zugriff auf die Standorte der öffentlichen IP-Adressen haben, die in der folgenden Tabelle aufgeführt sind.  
+Der Server, der den Microsoft Intune Certificate Connector hostet, muss mithilfe des **TCP-Ports** **443** Zugriff auf die Standorte der öffentlichen IP-Adressen haben, die in der folgenden Tabelle aufgeführt sind. Weitere Informationen über Zertifikate finden Sie unter [Konfigurieren und Verwenden von PKCS-Zertifikaten mit Intune](certficates-pfx-configure.md) und [Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune](certificates-scep-configure.md).
 
 |Domains                             |IP-Adresse       |
 |---------------|--------------------------------------|

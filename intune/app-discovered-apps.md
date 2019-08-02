@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1827375dc1905b5c881f743777a73340f0215e0c
-ms.sourcegitcommit: 8023ba7d42e61bd37305c69f52a649cf83bf72e2
+ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
+ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68388512"
+ms.lasthandoff: 07/27/2019
+ms.locfileid: "68590907"
 ---
 # <a name="intune-discovered-apps"></a>Von Intune ermittelte Apps
 
@@ -30,13 +30,22 @@ Bei der von Intune **ermittelten Apps** handelt es sich um eine Liste ermittelte
 
 ## <a name="monitor-discovered-apps-with-intune"></a>Überwachen ermittelter Apps mit Intune
 
-Intune stellt eine Liste ermittelter Apps auf den bei Intune registrierten Geräten in Ihrem Mandanten bereit.
+Intune stellt eine aggregierte Liste ermittelter Apps auf den bei Intune registrierten Geräten in Ihrem Mandanten bereit.
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Wählen Sie im Bereich **Intune** **Client-Apps** > **Ermittelte Apps** aus.
 
 >[!NOTE]
 >Sie können die Liste exportierter Apps in eine CSV-Datei importieren, indem Sie auf dem Blatt **Ermittelte Apps** die Option **Exportieren** auswählen.
+>
+>Bei ermittelten Win32-Apps ist derzeit keine Aggregatanzahl vorhanden. Diese Art von Daten kann nur geräteweise angezeigt werden.
+
+Intune enthält auch die Liste der ermittelten Apps für das jeweilige Gerät in Ihrem Mandanten. 
+
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+2. Wählen Sie im Bereich Intune **Geräte** > **Alle Geräte** aus.
+3. Wählen Sie ein Gerät aus.
+4. Um ermittelte Apps für dieses Gerät anzuzeigen, wählen Sie **Ermittelte Apps** im Abschnitt **Überwachen** aus. 
 
 ## <a name="details-of-discovered-apps"></a>Details zu den ermittelten Apps
 

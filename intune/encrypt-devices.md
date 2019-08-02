@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 07/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57b459efa5b423f1c73a0d6b7b9172f71f4c86d3
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 3f37b9b0bc16572cc86cbf79be616c7f395aa784
+ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375160"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68467471"
 ---
 # <a name="use-device-encryption-with-intune"></a>Verwenden der Geräteverschlüsselung mit Intune  
 
@@ -66,10 +66,7 @@ Ausführliche Informationen zur FileVault-Einstellung, die Sie mit Intune verwal
 
    Beispiel: Melden Sie sich auf einem beliebigen Gerät bei der Intune-Unternehmensportal-Website an, um verlorene oder kürzlich rotierte Wiederherstellungsschlüssel abrufen. Navigieren Sie im Portal zu *Geräte*, wählen Sie das Gerät aus, für das FileVault aktiviert ist, und klicken Sie dann auf *Wiederherstellungsschlüssel abrufen*. Dann wird der aktuelle Wiederherstellungsschlüssel angezeigt.  
 
-6. Konfigurieren Sie die restlichen Einstellungen entsprechend Ihren Geschäftsanforderungen, und klicken Sie anschließend auf **OK**.  
-
-   > [!NOTE]
-   > Die Unterstützung von FileVault ist bis zum Abschluss des Rollouts des Releases für Juli in einigen Tagen noch eingeschränkt. Bei der Konfiguration von FileVault müssen Sie bis zum Abschluss des Rollouts die Einstellung *FileVault until sign out* (FileVault bis zur Abmeldung verschieben) auf **Aktivieren** festlegen.  
+6. Konfigurieren Sie die restlichen [FileVault-Einstellungen](endpoint-protection-macos.md#filevault) entsprechend Ihren Geschäftsanforderungen, und wählen Sie anschließend **OK** aus.  
 
 7. Schließen Sie die Konfiguration zusätzlicher Einstellungen ab, und speichern Sie anschließend das Profil.  
 
