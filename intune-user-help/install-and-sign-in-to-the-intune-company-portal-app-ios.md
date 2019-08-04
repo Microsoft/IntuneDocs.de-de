@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 07/26/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 494269b82840331041ac2607ea853dbfb1d979de
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 3c764d0bf5cccecef692b8efe1e45af383584cd2
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546329"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68625072"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Installieren und Anmelden bei der Unternehmensportal-App
 
@@ -33,7 +33,7 @@ Installieren Sie die Unternehmensportal-App auf Ihrem iOS-Gerät, um Zugriff auf
 
 2. Laden Sie die **Intune-Unternehmensportal**-App herunter.
 
-    ![Screenshot der Intune-Unternehmensportal-App im App Store](./media/CP_iosRedesign_after_1803_04.PNG)
+    ![Screenshot der Intune-Unternehmensportal-App im App Store](./media/cp-ios-redesign-after-1904.PNG)  
 
 3. Öffnen Sie die Unternehmensportal-App, geben Sie die E-Mail-Adresse und das Kennwort Ihres Geschäfts-, Schul- oder Unikontos ein, und tippen Sie dann auf **Anmelden**.
 

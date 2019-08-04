@@ -1,7 +1,7 @@
 ---
 title: Intune-Einstellungen für Sicherheitsbaselines in Windows 10
 titleSuffix: Microsoft Intune
-description: Intune-Einstellungen für Sicherheitsbaselines zur Verwaltung von Windows 10
+description: Überprüfen Sie die Standardeinstellungen und verfügbaren Einstellungen in der Windows MDM-Sicherheitsbaseline für Windows 10-Geräte, die Sie mit InTune verwalten.
 author: brenduns
 ms.author: brenduns
 manager: dougeby
@@ -16,23 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ff902530b6f7001e23300b01f6576f0a7fc2637
-ms.sourcegitcommit: 1d4aec7b79c70d35ec3fc29df6ff9c6a1403412e
+ms.openlocfilehash: 5565ce7a355136a749d79b52e4830af91684440a
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68491903"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680041"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>MDM-Einstellungen für Sicherheitsbaselines in Intune  
 
 Zeigen Sie die MDM-Sicherheitsbaseline-Einstellungen an, die von Microsoft InTune für Geräte unterstützt werden, die Windows 10 oder höher ausführen. Die Standardwerte für Einstellungen in dieser Baseline stellen die empfohlene Konfiguration für anwendbare Geräte dar und stimmen möglicherweise nicht mit den Basis Linien Standards aus anderen Sicherheitsbaselines ab.  
 
-Die neueste Baselineversion ist **MDM-Sicherheitsbaseline für Spring 2019 Update (19h1).**  
+Die neueste Baselineversion ist die **MDM-Sicherheitsbaseline für Mai 2019** .  
 
 Weitere Informationen zu den Änderungen, die in der aktuellen Version dieser Baseline von der vorherigen Version geändert wurden, finden Sie unter Was hat sich [in der neuen Vorlage geändert](#whats-changed-in-the-new-template).  
 
 > [!NOTE]  
-> Im Juni 2019 wurde die Vorschau der MDM-Sicherheitsbaseline durch das Release der *MDM-Sicherheitsbaseline für die Spring 2019 Update (19h1)* -Vorlage ersetzt, die generell verfügbar ist (nicht in der Vorschau). Profile, die vor der Verfügbarkeit der *MDM-Sicherheitsbaseline für die Spring 2019 Update (19h1)* -Baseline erstellt wurden, werden nicht aktualisiert, um die Einstellungen und Werte in der MDM-Sicherheitsbaseline für die Version von Spring 2019 Update (19h1) widerzuspiegeln.  Obwohl Sie keine neuen Profile basierend auf der Vorschau Vorlage erstellen können, können Sie die zuvor erstellten Profile, die auf der Vorschau Vorlage basieren, bearbeiten und weiter verwenden.   
+> Im Juni 2019 wurde die Vorschauversion der MDM-Sicherheitsbaseline durch die Version der *MDM-Sicherheitsbaseline für* die Vorlage "Mai 2019" ersetzt, die allgemein verfügbar ist (nicht in der Vorschau). Profile, die vor der Verfügbarkeit der *MDM-Sicherheitsbaseline für* die Baseline "Mai 2019" erstellt wurden, werden nicht aktualisiert, um die Einstellungen und Werte in der MDM-Sicherheitsbaseline für die Version von Mai 2019 widerzuspiegeln.  Obwohl Sie keine neuen Profile basierend auf der Vorschau Vorlage erstellen können, können Sie die zuvor erstellten Profile, die auf der Vorschau Vorlage basieren, bearbeiten und weiter verwenden.   
   
 Weitere Informationen zur Verwendung von Sicherheitsbaselines mit InTune finden Sie unter [Verwenden von Sicherheitsbaselines](security-baselines.md).  
 
@@ -1825,7 +1825,7 @@ Weitere Informationen finden Sie unter [Policy CSP - WindowsPowerShell (Richtlin
   **Standard**: Aktiviert
 
 ## <a name="whats-changed-in-the-new-template"></a>Geänderte Änderungen in der neuen Vorlage
-Die *MDM-Sicherheitsbaseline für die Vorlage Spring 2019 Update (19h1)* weist die folgenden Änderungen in der *Vorschau* Vorlage auf.
+Die *MDM-Sicherheitsbaseline für* die Vorlage "Mai 2019" weist die folgenden Änderungen in der *Vorschau* Vorlage auf.
 
 ### <a name="changes-to-the-baseline-settings"></a>Änderungen an den Baseline-Einstellungen
 Die folgenden Einstellungen sind entweder:

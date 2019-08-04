@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 921934eead9ff3a1074203dad55ee60f3fe77947
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66047273"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756526"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune in der Azure-Konsole und der Legacy-Intune-PC-Client
 
@@ -45,7 +45,7 @@ Aufgrund der Umstellung auf Azure AD-Gruppen hat sich die „gruppenbasierte“ 
 1. Wählen Sie eine Ansicht aus.
 2. Geben Sie im Feld **Filter** den Namen der Gruppe ein, nach der Sie filtern möchten, und drücken Sie die EINGABETASTE. Dadurch wird die Listenansicht auf die Geräte in dieser jeweiligen Gruppe gefiltert.
 
-   ![](media/intune-legacy-pc-client/image01.png)
+   ![Filter-Dropdown Eingabe ohne Auswahl](media/intune-legacy-pc-client/image01.png)
 
 
 ## <a name="continue-to-manage-windows-7-by-using-intune-pc-client"></a>Weiteres Verwalten von Windows 7 mit dem Intune-PC-Client
@@ -61,7 +61,7 @@ Einen ausführlichen Vergleich zwischen PC-Client und MDM-Funktionen finden Sie 
 Um die Verwaltung von Windows 10-Geräten mit dem Intune-PC-Client auf die Verwaltung mit MDM umzustellen, gehen Sie folgendermaßen vor:
 
 1. Führen Sie in der Silverlight-Konsole eine **selektive Zurücksetzung** durch, um die Registrierung des Geräts beim PC-Client aufzuheben.
-  ![](media/intune-legacy-pc-client/image02.png)
+  ![Warnungs Popup mit ausgewähltem Optionsfeld "selektiv Gerät löschen"](media/intune-legacy-pc-client/image02.png)
 2. Registrieren Sie das Gerät neu bei [MDM (und/oder Azure AD Join)](https://docs.microsoft.com/intune/windows-enroll). 
 
 ## <a name="next-steps"></a>Nächste Schritte
