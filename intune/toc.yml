@@ -703,18 +703,20 @@
           href: tenant-status.md
         - name: Problembehandlung
           items:
+            - name: Unterstützung von Benutzern beim Beheben von Problemen
+              href: help-desk-operators.md
             - name: Behandlung von Problemen bei der Registrierung
               items:
                 - name: Behandlung von Problemen bei der Registrierung von iOS-Geräten
                   href: troubleshoot-ios-enrollment-errors.md
                 - name: Behandlung von Problemen bei der Registrierung von Windows-Geräten
                   href: troubleshoot-windows-enrollment-errors.md
-            - name: Unterstützung von Benutzern beim Beheben von Problemen
-              href: help-desk-operators.md
             - name: Behandlung von Problemen mit dem Zugriff auf Unternehmensressourcen
               href: troubleshoot-company-resource-access-problems.md
             - name: Problembehandlung bei der App-Installation
               href: troubleshoot-app-install.md
+            - name: Problembehandlung bei Geräteaktionen
+              href: troubleshoot-device-actions.md
             - name: Problembehandlung der Verwaltung von mobilen Geräten
               href: troubleshoot-mam.md
             - name: Überwachungsprotokolle für Intune-Aktivitäten
