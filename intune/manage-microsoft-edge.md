@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc18ba2210719cbebe77cd5b37024be4bb7b0d3e
-ms.sourcegitcommit: a01f0f3070932e3be44a4f545d4de11d715381ea
+ms.openlocfilehash: 7636e1914e23e7009a25f45f330fe85af2a03536
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68287216"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68701010"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Verwalten des Webzugriffs mithilfe von Microsoft Edge mit Microsoft Intune
 
@@ -76,9 +76,6 @@ So schränken Sie bei mit Azure AD verbundenen Web-Apps die Verwendung von Micro
 
 9. Klicken Sie im Bereich **Zuweisungen** auf **Benutzer und Gruppen**, und wählen Sie dann die Benutzer und Gruppen aus, denen Sie diese Richtlinie zuweisen möchten.
 
-    > [!NOTE]
-    > Benutzer müssen ebenfalls durch die Intune-App-Schutzrichtlinie involviert werden, sodass App-Konfigurationsrichtlinien für sie gelten. Weitere Informationen zu Intune-App-Schutzrichtlinien finden Sie unter [Was sind App-Schutzrichtlinien?](app-protection-policy.md).
-
 10. Klicken Sie im Abschnitt **Zuweisungen** auf **Cloud-Apps**, um auszuwählen, welche Apps mit dieser Richtlinie geschützt werden sollen.
 
 Nach diese Richtlinie konfiguriert wurde, müssen Benutzer Microsoft Edge verwenden, um auf die mit Azure AD verbundenen Web-Apps zuzugreifen, die Sie mit der Richtlinie geschützt haben. Wenn Benutzer versuchen, in diesem Szenario einen nicht verwalteten Browser zu verwenden, werden sie in einer Meldung informiert, dass sie Microsoft Edge verwenden müssen.
@@ -96,8 +93,6 @@ Für SSO muss Ihr Gerät entweder durch die Microsoft Authenticator-App für iOS
 > Bei der Geräteregistrierung handelt es sich um einen einfachen Check-In beim Azure AD-Dienst. Hierbei ist keine vollständige Geräteregistrierung erforderlich, und die IT-Abteilung erhält keine zusätzlichen Berechtigungen auf dem Gerät.
 
 ## <a name="create-a-protected-browser-app-configuration"></a>Erstellen einer geschützten Browser-App-Konfiguration
-
-Damit App-Konfigurationen angewendet werden können, muss der geschützte Browser oder eine andere App auf dem Gerät bereits des Benutzers mit der [Intune-App-Schutzrichtlinie](app-protection-policy.md) verwaltet werden.
 
 So erstellen Sie eine App-Konfiguration für Microsoft Edge:
 
