@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/04/2017
+ms.date: 07/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,25 +18,36 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bdf97e6a36a49bc6df5a182af7676c357440f3e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
-ms.translationtype: MTE75
+ms.openlocfilehash: d44af8f40243596bda58d610b369db6f54be6d1e
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529322"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68625120"
 ---
-# <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>Auf Ihrem Android-Gerät fehlt ein Zertifikat, das von der Supportabteilung Ihres Unternehmens verlangt wird.
+# <a name="install-missing-certificate-required-by-your-organization"></a>Installieren des fehlenden Zertifikats, das für Ihre Organisation erforderlich ist  
 
 Wenn Ihr Gerät nicht bei Intune registriert ist und ein bestimmtes Zertifikat fehlt, das von der Supportabteilung Ihres Unternehmens verlangt wird, können Sie sich nicht bei der Unternehmensportal-App anmelden. Wenn Sie versuchen, sich anzumelden, sehen Sie die folgende Meldung:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
-Um dieses Problem zu lösen und das erforderliche Zertifikat zu erhalten, müssen Sie zwei Hauptschritte ausführen:
+Es gibt zwei Möglichkeiten, das erforderliche Zertifikat herunterzuladen und das Gerät zu registrieren. 
 
-- Identifizieren Sie das fehlende Zertifikat in einem Unternehmens oder Schul-PC.
-- Laden Sie das fehlende Zertifikat mit Ihrem Gerät aus dem Internet herunter.
+- Aktivieren Sie den Browser Zugriff in Unternehmensportal-app.
+- Identifizieren Sie das fehlende Zertifikat auf einem Unternehmens- oder Schul-PC. Durchsuchen Sie dann das Internet, um das fehlende Zertifikat herunterzuladen. 
 
-## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Identifizieren des fehlenden Zertifikats durch Suche auf einem Unternehmens oder Schul-PC
+Führen Sie zuerst die Schritte zum Aktivieren des Browser Zugriffs aus. Wenn Sie das Gerät noch immer nicht registrieren können, führen Sie die Schritte aus, um das Zertifikat im Internet zu suchen. 
+
+## <a name="enable-browser-access"></a>Browser Zugriff aktivieren
+Führen Sie diese Schritte zum Aktivieren des Browser Zugriffs aus. Nachdem Sie den Zugriff aktiviert haben, wird Unternehmensportal das entsprechende Zertifikat installieren und die Registrierung fortsetzen.    
+
+1. Wechseln Sie in der Unternehmensportal-App zur rechten Ecke, und wählen Sie das Menü aus.  
+2. Klicken Sie auf **Einstellungen**.  
+3. Wählen Sie neben **Browser Zugriff aktivieren** die Option **aktivieren**aus.  
+4. Wählen Sie auf dem Bildschirm Geräte Administrator die Option **aktivieren**aus. 
+
+## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>Identifizieren und Herunterladen des fehlenden Zertifikats über die Websuche
+Führen Sie diese Schritte aus, um das Zertifikat manuell auf Ihrem Gerät zu identifizieren und zu installieren.  
 
 1. Öffnen Sie auf einem PC den Internet Explorer. Wenn Ihnen dafür kein PC zur Verfügung steht, wenden Sie sich an die Supportabteilung Ihres Unternehmens. Die Kontaktinformationen für die Supportabteilung Ihres Unternehmens finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).
 
@@ -52,15 +63,13 @@ Um dieses Problem zu lösen und das erforderliche Zertifikat zu erhalten, müsse
 
     ![screenshot-internet-explorer-view-certificates-button-on-website-identification-dialog](./media/andr-missg-cert-ie-view-cert-button.png)
 
-5. Wählen Sie im Dialogfeld **Zertifikat** die Registerkarte **Zertifizierungspfad** aus, und identifizieren Sie das Zertifikat, das Sie aus dem Internet abrufen müssen. Der Name des Zertifikats, das Sie benötigen, befindet sich an der gleichen Position wie der, der im vorherigen Beispielscreenshot hervorgehoben ist.
+5. Wählen Sie die Registerkarte **Zertifizierungspfad** aus, und identifizieren Sie das Zertifikat, das Sie aus dem Internet abrufen müssen. Der Name des Zertifikats, das Sie benötigen, befindet sich an der gleichen Position wie der, der im vorherigen Beispielscreenshot hervorgehoben ist.
 
-## <a name="download-and-install-the-missing-certificate-on-your-android-mobile-device"></a>Herunterladen des fehlenden Zertifikats auf das Android-Gerät und Installation
+6. Suchen Sie mithilfe einer Suchmaschine wie Bing oder Google nach dem Namen des fehlenden Zertifikats, das Sie im vorherigen Abschnitt angegeben haben. Das Zertifikat kann mit verschiedenen Erweiterungen wie CRT oder PEM usw. enden.
 
-1. Suchen Sie mithilfe einer Suchmaschine wie Bing oder Google nach dem Namen des fehlenden Zertifikats, das Sie im vorherigen Abschnitt angegeben haben. Das Zertifikat kann mit verschiedenen Erweiterungen wie CRT oder PEM usw. enden.
+7. Laden Sie das Stammzertifikat von der Website herunter.
 
-2. Laden Sie das Stammzertifikat von der Website herunter.
-
-3. Ziehen Sie nach dem Herunterladen des Zertifikats vom oberen Rand Ihres Geräts nach unten, um Ihre Benachrichtigungen zu öffnen, und tippen Sie dann in der Liste der Benachrichtigungen auf den Namen des Zertifikats.
+8. Ziehen Sie nach dem Herunterladen des Zertifikats vom oberen Rand Ihres Geräts nach unten, um Ihre Benachrichtigungen zu öffnen, und tippen Sie dann in der Liste der Benachrichtigungen auf den Namen des Zertifikats.
 
 4. Übernehmen Sie im Dialogfeld **Name the Certificate** (Zertifikat benennen), das im folgenden Screenshot angezeigt wird, den Standardzertifikatnamen.
 

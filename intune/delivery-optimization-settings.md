@@ -1,11 +1,12 @@
 ---
-title: Einstellungen für die Übermittlungsoptimierung für Windows 10 in Intune | Microsoft-Dokumentation
+title: Einstellungen für die Windows 10-Übermittlungsoptimierung für Intune
+titleSuffix: Microsoft Intune
 description: Übermittlungsoptimierungseinstellungen für Windows 10-Geräte, die Sie mit Intune bereitstellen können.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/09/2019
+ms.date: 08/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +15,12 @@ ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab4871da52f5df0aec0a698f31daa5608a57c1c3
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 11361b65735a7ed7e724a77349e3624e0e35ecaf
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493906"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756568"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Einstellungen für die Übermittlungsoptimierung für Intune
 
@@ -66,6 +67,15 @@ Informationen zum Konfigurieren von Intune zur Verwendung dieser Einstellungen f
 | [Maximales Cachealter (in Tagen)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-age)    | 1511         | Mit dieser Einstellung legen Sie fest, wie lange eine Datei im Cache der Übermittlungsoptimierung eines Geräts beibehalten wird, die erfolgreich heruntergeladen wurde.   <br><br>Bei Intune geben Sie das Cachealter in Tagen an. Die definierte Anzahl von Tagen wird in die entsprechende Anzahl von Sekunden konvertiert, weil Windows die Einstellung auf diese Weise definiert. Eine Intune-Konfiguration von 3 Tagen würde auf dem Gerät beispielsweise in 259200 Sekunden (entspricht 3 Tagen) konvertiert.  <br><br>**Standardeinstellung:** *Kein Wert konfiguriert*     <br><br>**Empfohlen**: 7   <br><br>Richtlinien-CSP: [DOMaxCacheAge](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)  <br><br>          |
 | Typ der maximalen Cachegröße  | *Details anzeigen*    | Wählen Sie aus, wie der Speicherplatz auf einem Gerät verwaltet wird, der für die Übermittlungsoptimierung genutzt wird. Wenn diese Einstellung nicht konfiguriert ist, wird standardmäßig eine Cachegröße von 20 % des freien verfügbaren Speicherplatzes festgelegt.  <br><ul><li>**Nicht konfiguriert** (Standardeinstellung)</li><br><li>**Absolut:** Legen Sie die [Absolute maximale Cachegröße (in GB)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#absolute-max-cache-size) fest, um den maximalen Speicherplatz zu konfigurieren, den ein Gerät für die Übermittlungsoptimierung verwenden kann. Wenn für diese Einstellung der Wert 0 (Null) festgelegt wird, ist die Cachegröße unbegrenzt, obwohl die Übermittlungsoptimierung den Cache leert, wenn wenig Speicherplatz auf dem Gerät verfügbar ist. <br><br>Windows 1607 erforderlich<br><br> Richtlinien-CSP: [DOAbsoluteMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-doabsolutemaxcachesize) </li><br><li>**Prozentsatz:** Legen Sie einen Wert für [Maximum cache size (in %)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#max-cache-size) (Maximale Cachegröße (in %)) fest, um den maximalen Speicherplatz zu konfigurieren, den ein Gerät für die Übermittlungsoptimierung verwenden kann. Hierbei handelt es sich um den Prozentsatz des verfügbaren Speicherplatzes auf dem Datenträger. Die Übermittlungsoptimierung ermittelt den verfügbaren Speicherplatz ständig und leert den Cache, um die maximale Cachegröße unter dem festgelegten Prozentsatz zu halten. <br><br>Windows 1511 erforderlich<br><br>Richtlinien-CSP: [DOMaxCacheSize](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcachesize)  |
 | [VPN-Peercaching](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#enable-peer-caching-while-the-device-connects-via-vpn)  | 1709  | Legen Sie **Aktiviert** fest, um ein Gerät dazu zu konfigurieren, am Peercaching teilzunehmen, während es über ein VPN mit dem Domänennetzwerk verbunden ist. Geräte, für die diese Einstellung aktiviert ist, können Uploads und Downloads entweder über das VPN oder über das Domänennetzwerk des Unternehmens an und von anderen Geräten im Domänennetzwerk durchführen.  <br><br>**Standardeinstellung:** Nicht konfiguriert  <br><br>Richtlinien-CSP: [DOAllowVPNPeerCaching](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-domaxcacheage)    |
+
+## <a name="local-server-caching"></a>Zwischenspeichern von lokalen Servern  
+
+|Einstellung  |Windows-Version  |Details  |
+|---------|-----------------|---------|
+|Cache Server-Hostnamen | 1809  |Geben Sie die IP-Adresse oder den FQDN von Netzwerk Cache Servern an, die von ihren Geräten für die Übermittlungs Optimierung verwendet werden sollen, und klicken Sie dann auf **Hinzufügen** , um diesen Eintrag der Liste hinzuzufügen.  <br><br>**Standardeinstellung:** Nicht konfiguriert  <br><br>Richtlinie CSP: [docachehost](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-docachehost)  |
+|[Verzögertes herunterladen des Cache Servers für den Vordergrund (in Sekunden)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-foreground-download-cache-server-fallback-in-secs) | 1903    |Geben Sie eine Zeit in Sekunden (0-2592000) an, um den Fall Back von einem Cache Server auf die HTTP-Quelle für einen für den Download im Vordergrund Inhalt zu verzögern. Wenn die Richtlinie zum verzögerten herunterladen des Vordergrunds von HTTP verwendet wird, wird Sie zuerst angewendet (um zuerst Downloads von Peers zuzulassen). (0-2592000)    <br><br>**Standardeinstellung**: 0  <br><br>Richtlinie CSP [dodelaycacheserverfallbackvordergrund](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackforeground)  |
+|[Verzögerter Hintergrund Download Cache Server Fall Back (in Sekunden)](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization-reference#delay-background-download-cache-server-fallback-in-secs) | 1903    |Geben Sie eine Zeit in Sekunden (0-2592000) an, um den Fall Back von einem Cache Server auf die HTTP-Quelle für das Herunterladen von Hintergrund Inhalten zu verzögern. Wenn der *http-Download für Verzögerungs Hintergrund (in Sekunden)* konfiguriert ist, wird diese Einstellung zuerst angewendet, um Downloads von Peers zuzulassen. (0-2592000)   <br><br>**Standardeinstellung**: 0 <br><br>Richtlinien-CSP: [dodelta-cacheserverfallbackbackground](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deliveryoptimization#deliveryoptimization-dodelaycacheserverfallbackbackground)  |
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 
