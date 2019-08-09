@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 08/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fe22291c808c498f9c099498b97e131ea531334
-ms.sourcegitcommit: 2bce5e43956b6a5244a518caa618f97f93b4f727
+ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
+ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68467417"
+ms.lasthandoff: 08/03/2019
+ms.locfileid: "68756512"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Endpoint Protection-Einstellungen in Intune unter MacOS  
 
@@ -90,18 +90,25 @@ Weitere Informationen zu den Einstellungen von Apple-flevault finden Sie unter [
   **Standardeinstellung:** Nicht konfiguriert  
 
   - **Wiederherstellungs Schlüsseltyp**  
-    Für Geräte werden *Schlüssel Wiederherstellungs* Schlüssel erstellt. Konfigurieren Sie die folgenden Einstellungen für den persönlichen Schlüssel.  
+    *Für Geräte werden SchlüsselWiederherstellungsSchlüsselerstellt.* Konfigurieren Sie die folgenden Einstellungen für den persönlichen Schlüssel.  
 
     - **Speicherort des persönlichen Wiederherstellungs Schlüssels** : Geben Sie eine kurze Nachricht an den Benutzer an, die erläutert, wie und wo Sie Ihren persönlichen Wiederherstellungs Schlüssel abrufen können. Dieser Text wird in die Meldung eingefügt, die dem Benutzer auf dem Anmeldebildschirm angezeigt wird, wenn er zur Eingabe des persönlichen Wiederherstellungs Schlüssels aufgefordert wird, wenn ein Kennwort vergessen wird.  
       
     - **Rotation persönlicher Wiederherstellungs Schlüssel** : Geben Sie an, wie häufig der persönliche Wiederherstellungs Schlüssel für ein Gerät rotiert werden soll. Sie können den Standardwert **nicht konfiguriert**oder einen Wert von **1** bis **12** Monaten auswählen.  
 
   - **Eingabeaufforderung beim Abmelden deaktivieren**  
-    Verhindern Sie, dass die Aufforderung an den Benutzer die Aktivierung von "flevault" beim Abmelden anfordert.  Wenn diese Option auf deaktiviert festgelegt ist, wird die Eingabeaufforderung bei der Abmeldung deaktiviert. stattdessen wird der Benutzer bei der Anmeldung aufgefordert.  
+    Verhindern Sie, dass die Aufforderung an den Benutzer die Aktivierung von "flevault" beim Abmelden anfordert.  Wenn diese Option auf Aktivieren festgelegt ist, wird die Eingabeaufforderung bei der Abmeldung deaktiviert, und der Benutzer wird stattdessen aufgefordert, wenn er sich anmeldet.  
     - **Nicht konfiguriert**  
-    - **Deaktivieren**  
+    - **Aktivieren** : Deaktivieren Sie die Eingabeaufforderung bei der Abmeldung.
 
     **Standardeinstellung:** Nicht konfiguriert  
+
+     > [!IMPORTANT]  
+     > Es gibt ein bekanntes Problem, wenn die Einstellung **Eingabeaufforderung beim Abmelden deaktivieren** auf *aktivieren*festgelegt ist. Wenn die Einstellung auf *aktivieren*festgelegt ist, muss die Einstellung für die **Anzahl der zulässigen Zeiten** auf einen Wert festgelegt werden und darf nicht als *nicht konfiguriert*festgelegt werden. Wenn diese Einstellung *nicht konfiguriert*ist, schlägt das Profil auf dem Gerät fehl. In diesem Szenario meldet das Gerät, dass es **sich um eine** **Zusammenfassung** des Profil Zustands handelt, ohne weitere Details anzuzeigen.
+     > 
+     > Wenn die **Aufforderung zum Deaktivieren bei der Abmeldung deaktiviert** auf *nicht konfiguriert*festgelegt ist, kann die **Anzahl der zulässigen** Wiederholungen *nicht konfiguriert* werden oder einen Wert aufweisen.  
+     > 
+     > Dieses Problem wird in einem zukünftigen Update behoben. 
 
   - **Gibt an, wie oft umgangen werden darf.**  
   Legen Sie fest, wie oft ein Benutzer Aufforderungen zum Aktivieren von "flevault" ignorieren kann, bevor "flevault" für die Anmeldung durch den Benutzer erforderlich ist.  
