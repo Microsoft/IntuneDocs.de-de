@@ -39,8 +39,8 @@
 ### Fragen zum Betriebssystem
 #### [Aktualisieren des Geräts](you-need-to-update-your-android-device.md)
 #### [Nicht unterstützte Version](your-android-version-isnt-yet-supported.md)
-#### [Von Ihrem Gerät wurden die Nutzungsbeschränkungen entfernt, und Sie können keine Verbindung herstellen](your-device-is-rooted-and-you-cant-connect-android.md)
-#### [Fehlen eines erforderlichen Zertifikats](your-device-is-missing-a-required-certificate-landing-android.md)
+#### [Gerät mit Rootzugriff, Verbindung nicht möglich](your-device-is-rooted-and-you-cant-connect-android.md)
+#### [Fehlen eines erforderlichen Zertifikats](your-device-is-missing-an-IT-required-certificate-android.md)
 #### [Deaktivieren von unbekannten Quellen](you-need-to-turn-off-unknown-sources-android.md)
 #### [Deaktivieren des USB-Debuggens](you-need-to-turn-off-usb-debugging-android.md)
 #### [Aktivieren der Überprüfung auf Sicherheitsbedrohungen](you-need-to-turn-on-scanning-for-security-threats-android.md)
