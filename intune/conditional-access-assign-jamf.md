@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc4fdaea99a0e8fb247ac6a70b853497927cdc04
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: d23e725db965a249522f7f8fa89f8bb27bc24fd8
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67045200"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680010"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Erzwingen von Konformität auf mit Jamf Pro verwalteten Macs
 
@@ -33,7 +33,10 @@ Gilt für: Intune im Azure-Portal
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Einrichten von Gerätekonformitätsrichtlinien in Intune
 
 1. Öffnen Sie Microsoft Azure, und navigieren Sie zu **Intune** > **Gerätekonformität** > **Richtlinien**. Sie können Richtlinien für macOS erstellen und dabei eine Reihe von Aktionen für nicht konforme Benutzer und Gruppen auswählen (z. B. Warn-E-Mails senden).
-2. Suchen Sie nach den gewünschten Gruppen, und wenden Sie die Richtlinien an.
+2. Klicken Sie auf die Richtlinie und anschließend auf Zuweisungen. Sie können Azure Active Directory (AD)-Sicherheitsgruppen ein- oder ausschließen.
+3. Wählen Sie „Ausgewählte Gruppen“ aus, um Ihre Azure AD-Sicherheitsgruppen anzuzeigen. Wählen Sie die Benutzergruppen aus, auf die diese Richtlinie angewendet werden soll, und klicken Sie dann auf „Speichern“, um die Richtlinie für die Benutzer bereitzustellen.
+
+Sie haben die Richtlinie auf Benutzer angewendet. Die von den von der Richtlinie betroffenen Benutzern verwendeten Geräte werden auf Konformität geprüft und als konform für die Einstellung „Markieren des Geräts als kompatibel erforderlich“ in Azure Active Directory gekennzeichnet.
 
 > [!Note]
 > Intune erfordert, dass die vollständige Datenträgerverschlüsselung konform ist.

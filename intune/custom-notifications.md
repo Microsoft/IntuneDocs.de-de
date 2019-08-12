@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f938afb738e75789194db0c74fee56deb1476dbc
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660378"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680103"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Senden benutzerdefinierter Benachrichtigungen in Intune  
 
@@ -38,8 +38,9 @@ Benutzerdefinierte Benachrichtigungsnachrichten enthalten einen kurzen Titel und
 ## <a name="considerations-for-using-custom-notifications"></a>Überlegungen zur Verwendung benutzerdefinierter Benachrichtigungen  
 
 **Gerätekonfiguration:**  
-- Bevor Benutzer benutzerdefinierte Benachrichtigungen erhalten können, muss die Unternehmensportal-App auf Geräten installiert sein. Außerdem müssen sie über Berechtigungen verfügen, damit die Unternehmensportal-App Pushbenachrichtigungen senden kann. Das Unternehmensportal fordert Benutzer auf, Benachrichtigungen zuzulassen.  
+- Bevor Benutzer benutzerdefinierte Benachrichtigungen erhalten können, muss die Unternehmensportal-App auf Geräten installiert sein. Außerdem müssen sie über Berechtigungen verfügen, damit die Unternehmensportal-App Pushbenachrichtigungen senden kann. Das Unternehmensportal fordert Benutzer auf, bei jeder Installation oder Aktualisierung Benachrichtigungen zuzulassen.  
 - Unter Android ist Google Play Services eine erforderliche Abhängigkeit.  
+- Auf dem Gerät muss MDM registriert sein.
 
 **Erstellen von Benachrichtigungen:**  
 - Verwenden Sie zum Erstellen einer Nachricht ein Konto, das einer Intune-Rolle zugewiesen ist, die die **Update**-Berechtigung für **Organisation** enthält. Informationen zum Zuweisen von Berechtigungen für einen Benutzer finden Sie unter [Rollenzuweisungen](role-based-access-control.md#role-assignments).  

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f576edb5dd0bd4baa960adb3519fa379397fb94c
-ms.sourcegitcommit: cd03ea890f563b48339a8c8bb50386b8852ba894
+ms.openlocfilehash: 128856cf4e81f1ac9fbc93cef1160662e2b5cef0
+ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68329029"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68700963"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Einstellungen für App-Schutzrichtlinien in Microsoft Intune
 In diesem Artikel werden die Einstellungen für App-Schutzrichtlinien für Android-Geräte beschrieben. Die beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Einstellungen** für eine Schutzrichtlinie [konfiguriert](app-protection-policies.md) werden.
@@ -93,6 +93,7 @@ Es gibt drei Kategorien von Richtlinieneinstellungen: Datenschutzeinstellungen, 
   | com.skype.raider | Skype | Die Skype-App ist nur für bestimmte Aktionen zulässig, die zu einem Anruf führen. |
   | com.android.providers.media | Android-Medieninhaltsanbieter | Dieser Inhaltsanbieter für Medien ist nur für die Aktion zum Auswählen von Klingeltönen zulässig. |
   | com.google.android.gms; com.google.android.gsf | Google Play Services-Pakete | Diese Pakete sind für Google Cloud Messaging-Aktionen zulässig, z.B. Pushbenachrichtigungen. |
+  | com.google.android.apps.maps | Google Maps | Adressen sind für die Navigation zulässig. |
 
 Weitere Informationen finden Sie unter [Ausnahmen von der Datenübertragungsrichtlinie für Apps](app-protection-policies-exception.md).
 

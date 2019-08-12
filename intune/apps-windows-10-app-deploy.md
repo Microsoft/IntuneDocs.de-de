@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d76e170627d7e08cc3da6fe4a48eb14ee839de98
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 4e46eae92dfa145f1fc2b38379285dbb45b24590
+ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590927"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68680069"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Windows 10-App-Bereitstellung mit Microsoft Intune 
 
@@ -34,6 +34,8 @@ Branchenspezifische Apps und Apps aus dem Microsoft Store für Unternehmen werde
 > Die mindestens erforderlichen Windows 10-Updates für die Bereitstellung moderner Apps lauten wie folgt:
 > - Für Windows 10 1803: [23. Mai 2018 – KB4100403 (Betriebssystembuild 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403)
 > - Für Windows 10 1709: [21. Juni 2018 – KB4284822 (Betriebssystembuild 16299.522)](https://support.microsoft.com/help/4284822)
+>
+> Nur Windows 10 Version 1803 und höher unterstützen die Installation von Apps, wenn kein primärer Benutzer zugeordnet ist.
 
 ## <a name="windows-10-line-of-business-apps"></a>Branchenspezifische Apps für Windows 10
 

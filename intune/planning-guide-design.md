@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3870918378a2b3dd115d6449c3c83d37fe8e96c5
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884874"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783238"
 ---
 # <a name="create-a-design"></a>Erstellen eines Entwurfs
 
@@ -116,7 +116,7 @@ Intune bietet zwei Bereitstellungsoptionen: eigenständig und hybrid. Eigenstän
 
 ## <a name="intune-tenant-location"></a>Standort des Intune-Mandanten
 
-Wenn Ihre Organisation weltweit tätig ist, berücksichtigen Sie bei der Planung den Standort Ihres Mandanten, wenn den Dienst abonnieren. Das Land wird definiert, wenn Sie sich erstmals für ein Intune-Abonnement registrieren. Anschließend erfolgt die Zuordnung zu Regionen rund um die Welt, die unten aufgeführt sind:
+Wenn Ihre Organisation weltweit tätig ist, berücksichtigen Sie bei der Planung den Standort Ihres Mandanten, wenn den Dienst abonnieren. Das Land/die Region wird definiert, wenn Sie sich erstmals für ein Intune-Abonnement registrieren. Anschließend erfolgt die Zuordnung zu Ländern/Regionen rund um die Welt, die unten aufgeführt sind:
 
 - Nordamerika
 
@@ -125,7 +125,7 @@ Wenn Ihre Organisation weltweit tätig ist, berücksichtigen Sie bei der Planung
 - Asien und pazifischer Raum
 
 >[!IMPORTANT]
-> Land und Standort des Mandanten können später nicht mehr geändert werden.
+> Land/Region und Standort des Mandanten können später nicht mehr geändert werden.
 
 ## <a name="external-dependencies"></a>Externe Abhängigkeiten
 
