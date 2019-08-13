@@ -18,16 +18,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d44af8f40243596bda58d610b369db6f54be6d1e
-ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
-ms.translationtype: HT
+ms.openlocfilehash: 16c6708fb730c459f41fec573a939bfb4fb5ddda
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68625120"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862137"
 ---
 # <a name="install-missing-certificate-required-by-your-organization"></a>Installieren des fehlenden Zertifikats, das für Ihre Organisation erforderlich ist  
 
-Wenn Ihr Gerät nicht bei Intune registriert ist und ein bestimmtes Zertifikat fehlt, das von der Supportabteilung Ihres Unternehmens verlangt wird, können Sie sich nicht bei der Unternehmensportal-App anmelden. Wenn Sie versuchen, sich anzumelden, sehen Sie die folgende Meldung:
+Wenn Ihr Gerät nicht bei InTune registriert ist und ein erforderliches Zertifikat fehlt, können Sie sich nicht bei der Unternehmensportal-App anmelden. Wenn Sie versuchen, sich anzumelden, sehen Sie die folgende Meldung:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -43,8 +43,8 @@ Führen Sie diese Schritte zum Aktivieren des Browser Zugriffs aus. Nachdem Sie 
 
 1. Wechseln Sie in der Unternehmensportal-App zur rechten Ecke, und wählen Sie das Menü aus.  
 2. Klicken Sie auf **Einstellungen**.  
-3. Wählen Sie neben **Browser Zugriff aktivieren** die Option **aktivieren**aus.  
-4. Wählen Sie auf dem Bildschirm Geräte Administrator die Option **aktivieren**aus. 
+3. Wählen Sie neben **Browser Zugriff aktivieren** die Option **aktivieren aus**.  
+4. Wählen Sie **auf dem Bildschirm Geräte Administrator**die Option aktivieren aus. 
 
 ## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>Identifizieren und Herunterladen des fehlenden Zertifikats über die Websuche
 Führen Sie diese Schritte aus, um das Zertifikat manuell auf Ihrem Gerät zu identifizieren und zu installieren.  
@@ -82,3 +82,7 @@ Führen Sie diese Schritte aus, um das Zertifikat manuell auf Ihrem Gerät zu id
 7. Öffnen Sie die Unternehmensportal-App erneut. Sie sollten sich jetzt bei der Unternehmensportal-App anmelden können. Wenn Sie Hilfe benötigen, wenden Sie sich an die Supportabteilung Ihres Unternehmens.
 
 Wenn Ihnen die gleiche „Zertifikat fehlt“-Meldung wie in der Abbildung oben angezeigt wird, und Sie den oben beschriebenen Vorgang bereits ausgeführt haben, benötigt die Supportabteilung Ihres Unternehmens wahrscheinlich noch ein anderes Zertifikat, um Ihnen bei der Installation helfen zu können. Verwenden Sie die Kontaktinformationen auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980), wenn Sie sich an die Supportabteilung Ihres Unternehmens wenden möchten.
+
+## <a name="next-steps"></a>Nächste Schritte  
+
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  
