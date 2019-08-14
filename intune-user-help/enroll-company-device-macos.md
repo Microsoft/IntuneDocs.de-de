@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3941c41b24d458d14acb1361bc463af657a0ca67
-ms.sourcegitcommit: 84c79ceea27f7411528defc5ee8ba35ae2bf473c
+ms.openlocfilehash: 273342f7181bcc577a44126404d145ca9b5bff3e
+ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67511931"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68783016"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Registrieren eines von Ihrer Organisation bereitgestellten macOS-Geräts für die Verwaltung
 
@@ -40,10 +40,10 @@ Möglicherweise hat Ihre Organisation ihre Geräte über ein sogenanntes *Apple-
 Führen Sie die folgenden Schritte aus, um Ihr macOS-Gerät für die Verwaltung zu registrieren. Wenn Sie Ihr eigenes Gerät anstelle eines organisationseigenen Geräts verwenden, führen Sie die Schritte für [persönliche Geräte oder Bring Your Own Device](enroll-your-device-in-intune-macos-cp.md) aus.  
 
 1. Schalten Sie Ihr macOS-Gerät ein. 
-2. Wählen Sie Ihr Land aus, und klicken Sie auf **Weiter**.  
+2. Wählen Sie Ihr Land/Ihre Region aus, und klicken Sie auf **Weiter**.  
 
    ![Screenshot des Begrüßungsbildschirms des Setup-Assistenten für macOS-Geräte, auf dem eine Liste mit den auswählbaren Sprachen angezeigt wird.](./media/macos-dep-welcome-1808.png)   
-3. Wählen Sie ein Tastaturlayout aus. In der Liste wird mindestens eine Option basierend auf dem von Ihnen ausgewählten Land angezeigt. Um unabhängig von dem von Ihnen ausgewählten Land alle Layoutoptionen zu sehen, klicken Sie auf **Alle anzeigen**. Klicken Sie dann auf **Weiter**.  
+3. Wählen Sie ein Tastaturlayout aus. In der Liste wird mindestens eine Option basierend auf dem von Ihnen ausgewählten Land/der ausgewählten Region angezeigt. Um unabhängig von dem von Ihnen ausgewählten Land/der Region alle Layoutoptionen zu sehen, klicken Sie auf **Alle anzeigen**. Klicken Sie dann auf **Weiter**.  
 
    ![Screenshot des Bildschirms zum Auswählen des Tastaturlayouts im Setup-Assistenten für macOS-Geräte, auf dem eine Liste mit auswählbaren Tastatursprachen, die Option „Alle anzeigen“ (deaktiviert) und die Schaltflächen „Zurück“ und „Weiter“ angezeigt werden.](./media/macos-dep-keyboard-1808.png)  
 4. Wählen Sie Ihr WLAN-Netzwerk aus. Sie müssen mit dem Internet verbunden sein, um mit dem Setup fortzufahren. Wenn Ihr Netzwerk nicht angezeigt wird oder Sie über ein Kabelnetzwerk eine Verbindung herstellen müssen, klicken Sie auf **Other Network Options** (Weitere Netzwerkoptionen). Klicken Sie dann auf **Weiter**.  
