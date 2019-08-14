@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b23323766e91e31c48aec6a51dfae971c3a333e8
-ms.sourcegitcommit: 1dc9d4e1d906fab3fc46b291c67545cfa2231660
+ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67735744"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68862185"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Registrieren Ihres Unternehmensgeräts in der Microsoft Intune-App
 
@@ -50,9 +50,9 @@ Führen Sie die folgenden Schritte durch, um Ihr Gerät einzurichten und zu regi
 
      Wenn Sie angewiesen wurden, eine andere Methode zu verwenden, fahren Sie mit Schritt 3 fort.    
 
-1. Stellen Sie eine Verbindung mit dem WLAN-Netzwerk her, und tippen Sie dann auf **NEXT** (WEITER). Führen Sie den Schritt aus, der Ihrer Registrierungsmethode entspricht. 
+3. Stellen Sie eine Verbindung mit dem WLAN-Netzwerk her, und tippen Sie dann auf **NEXT** (WEITER). Führen Sie den Schritt aus, der Ihrer Registrierungsmethode entspricht. 
 
-    * Token: Wenn Sie zum Google-Anmeldebildschirm erreichen, führen Sie die Schritte unter [Registrierung per Token](#token-enrollment) aus.    
+    * Token: Wenn Sie zum Google-Anmeldebildschirm erreichen, führen Sie die Schritte unter [Registrierung per Token](#token-enrollment) aus.  
     * Google Zero Touch: Sobald Sie mit dem WLAN-Netzwerk verbunden sind, wird Ihr Gerät vom Unternehmen erkannt. Fahren Sie mit Schritt 4 fort, und führen Sie die auf dem Bildschirm angezeigten Anweisungen aus, bis das Setup abgeschlossen ist.    
  
        ![Beispielbild der Anzeige der Google-Nutzungsbedingungen, die bei der Verwendung von Google Zero Touch angezeigt werden, mit hervorgehobener Schaltfläche „Accept & Continue“ (Zustimmen & Weiter).](./media/google-zero-touch-intune-app-01.png)   
@@ -78,21 +78,19 @@ Führen Sie die folgenden Schritte durch, um Ihr Gerät einzurichten und zu regi
 
    ![Beispielbild der Einrichtung Ihres Arbeitssmartphones mit hervorgehobener Schaltfläche „Install“ (Installieren)](./media/fully-managed-intune-app-11.png)   
 
-10. Wenn die Nachricht angezeigt wird, die angibt, dass Ihr Gerät einsatzbereit ist, tippen Sie auf **DONE** (FERTIG). 
+10. Tippen **Sie** auf starten, um die APP Microsoft InTune zu öffnen und Ihr Gerät zu registrieren. 
 
-11. Wechseln Sie zu Ihren Apps, und öffnen Sie die Microsoft Intune-App. Klicken Sie auf **SIGN IN** (Anmelden). 
+    ![Beispielbild der Einrichtung Ihres Arbeitssmartphones mit hervorgehobener Schaltfläche „Start“](./media/fully-managed-intune-app-17.png)   
 
-12. In der Anzeige **Zugriff einrichten** wird eine Liste ausstehender Aufgaben angezeigt. Tippen Sie auf **CONTINUE** (WEITER).  
+11. Tippen **Sie auf** anmelden und dann **auf** weiter, um die Registrierung zu starten. Wenn die Meldung angezeigt wird, dass die Registrierung abgeschlossen ist **,** Tippen Sie auf Fertig.  
 
-       ![Beispielbild der Anzeige „Zugriff einrichten“ der Microsoft Intune-App mit ausstehenden Aufgaben](./media/fully-managed-intune-app-14.png)   
+    ![Beispiel Bild für das Einrichten des Zugriffs, das Registrieren Ihres Geräts, das Markieren der Schaltfläche "durch Klicken".](./media/fully-managed-intune-app-19.png)   
 
-13. Tippen Sie nach Abschluss der Geräteregistrierung auf **CONTINUE** (WEITER). Microsoft Intune fordert Sie möglicherweise auf, zusätzliche Geräteeinstellungen zu aktualisieren.   
+10. Wenn die Nachricht angezeigt wird, die angibt, dass Ihr Gerät einsatzbereit ist, tippen Sie auf **DONE** (FERTIG).  
 
-       ![Beispielbild der Anzeige „Geräteeinstellungen aktualisieren“ der Microsoft Intune-App.](./media/fully-managed-intune-app-15-2.png)   
+    ![Beispielbild der Einrichtung Ihres Arbeitssmartphones mit hervorgehobener Schaltfläche „Done“ (Fertig)](./media/fully-managed-intune-app-18.png)   
 
-14. Wenn bei allen Elementen in der Liste ein grüner Kreis angezeigt wird, ist das Setup abgeschlossen. Sie können nun auf Unternehmensressourcen zugreifen.  
-
-       ![Beispielbild der Anzeige „Zugriff einrichten“ der Microsoft Intune-App mit abgeschlossenen Aufgaben](./media/fully-managed-intune-app-16.png)   
+Wenn Sie Probleme beim Zugriff auf die Ressourcen Ihrer Organisation haben, müssen Sie möglicherweise zusätzliche Einstellungen auf Ihrem Gerät aktualisieren. Melden Sie sich bei der Microsoft InTune-APP an, um nach erforderlichen Updates zu suchen.   
 
 
 ## <a name="qr-code-enrollment"></a>Registrierung per QR-Code  
@@ -118,11 +116,7 @@ In diesem Abschnitt geben Sie das von Ihrem Unternehmen bereitgestellte Token ei
 
 3. Tippen Sie auf der Anzeige **Dieses Gerät registrieren** auf **Weiter**.  
 
-   ![Beispielbild der Anzeige „Dieses Gerät registrieren“ mit abgebildetem QR-Code und hervorgehobener Schaltfläche „Weiter“](./media/token-intune-app-02.png)  
-
-4. Tippen Sie auf **Enter code** (Code eingeben).
-
-   ![Beispielscreenshot eines aktiven QR-Codescanners mit hervorgehobener Schaltfläche „Enter code“ (Code eingeben)](./media/token-intune-app-03.png)  
+4. Tippen Sie auf **Enter code** (Code eingeben).  
 
 5. Geben Sie auf der Anzeige **Scan or enter code** (Code scannen oder eingeben) den Code ein, den Sie von Ihrem Unternehmen erhalten haben.  Klicken Sie anschließend auf **Weiter**.  
 
