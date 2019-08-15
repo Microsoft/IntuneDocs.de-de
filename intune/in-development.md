@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 969e7bc4804e1f66230c76d742bec2c67c2fa006
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
-ms.translationtype: HT
+ms.openlocfilehash: 95eede7c62e728aa0dbade4478eb87f31c252558
+ms.sourcegitcommit: a6775522df49d17a4125ccb31be395f2343bdae8
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68670915"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68833549"
 ---
 # <a name="in-development-for-microsoft-intune---august-2019"></a>In der Entwicklung befindliche Microsoft Intune-Features: August 2019
 
@@ -62,7 +62,7 @@ Um Ihnen bei Ihrer Vorbereitung und Planung zu helfen, sind auf dieser Seite Upd
 Administratoren können verwalten, ob eine APP auf einem Gerät entfernt oder aufbewahrt wird, wenn die Registrierung des Geräts auf Benutzer-oder Gerätegruppen Ebene aufgehoben wird. 
 
 ### <a name="categorize-microsoft-store-for-business-apps----3926922---"></a>Kategorisieren von Apps aus dem Microsoft Store für Unternehmen <!-- 3926922 -->
-Sie können Microsoft Store für Business-Apps kategorisieren. Wählen Sie zu diesem Zweck die Option **InTune** > -**Client-apps** > -**apps** aus, > eine Microsoft Store für Business-app > **App-Informations** > **Kategorie**auswählen Weisen Sie im Dropdown Menü eine Kategorie zu.
+Sie können Microsoft Store für Business-Apps kategorisieren. Wählen Sie **hierzu die Option** > InTune-**Client**-apps > -appsaus **, >** eine Microsoft Store **für Business-app >-app auszuwählen.**  >  **InformationsKategorie.** Weisen Sie im Dropdown Menü eine Kategorie zu.
 ### <a name="configure-app-notification-content-for-organization-accounts----2576686---"></a>Konfigurieren von App-Benachrichtigungs Inhalten für Organisations Konten <!-- 2576686 -->
 Mit InTune-App-Schutzrichtlinien (app) auf Android-und IOS-Geräten können Sie App-Benachrichtigungs Inhalte für Organisations Konten steuern. Diese Funktion erfordert Unterstützung von Anwendungen und ist möglicherweise nicht für alle App-fähigen Anwendungen verfügbar. Weitere Informationen zu Intune-App-Schutzrichtlinien finden Sie unter [Was sind App-Schutzrichtlinien?](app-protection-policy.md)
 
@@ -73,7 +73,7 @@ Mit diesem Feature können Sie den App-Installationsstatus und die installierte 
 ## <a name="device-configuration"></a>Gerätekonfiguration
 
 ### <a name="some-unsupervised-ios-device-restrictions-will-become-supervised-only-with-the-ios-130-release----4867809----"></a>Einige nicht überwachte IOS-Geräte Einschränkungen werden nur mit der IOS 13,0-Version überwacht. <!-- 4867809  -->
-Einige Einstellungen gelten für nur überwachte Geräte mit der IOS 13,0-Version. Zu diesen Einstellungen zählen:
+Einige Einstellungen gelten für überwachte Geräte ab der IOS 13,0-Version. Zu diesen Einstellungen zählen:
 
 - App Store, Dokumentanzeige, Spiele
   - App Store
@@ -98,16 +98,16 @@ Gilt für:
 - IOS 13,0 und höher
 
 ### <a name="new-settings-and-changes-to-existing-settings-to-restrict-features-on-ios-and-macos-devices----4867699-4867709----"></a>Neue Einstellungen und Änderungen an vorhandenen Einstellungen zum Einschränken von Features auf IOS-und macOS-Geräten <!-- 4867699 4867709  -->
-Sie können Profile erstellen, um Einstellungen auf IOS-und MacOS-Geräten einzuschränken (**Geräte Konfigurations** > **profile** > **erstellen ein Profil** > für**IOS** oder **macOS** für die Plattform). Geben Sie > **Geräte Einschränkungen**ein). Die folgenden Funktionen werden hinzugefügt:
+Sie können Profile erstellen, um Einstellungen auf IOS-und macOS-Geräten einzuschränken (**Geräte Konfigurations** > **profile** > **Profilerstellen**). > **IOS** **odermacOS**für Platt Form Typen >**GeräteEinschränkungen**). Die folgenden Funktionen werden hinzugefügt:
 
-- Verwenden Sie unter **macOS** > -**Geräte Einschränkungen** > in der**Cloud und im Speicher**die neue **Handoff** -Einstellung, um Benutzer daran zu hindern, die Arbeit auf einem MacOS-Gerät zu starten
+- VerwendenSie unter **macOS-Geräte** > **Einschränkungen** >  **in der Cloud und im Speicher**die neue**Handoff-Einstellung.** Blockieren Sie die Arbeit von Benutzern auf einem MacOS-Gerät, und arbeiten Sie weiterhin mit einem anderen MacOS-oder IOS-Gerät.
   Die aktuellen Einstellungen finden Sie unter [macOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune](device-restrictions-macos.md).
-- Bei **IOS** > -**Geräte Einschränkungen**gibt es einige Änderungen:
-  - **Integrierte apps** > : "**mein iPhone suchen" (nur überwacht)** : neue Einstellung, die dieses Feature in der Funktion "meine APP suchen" blockiert. 
-  - **Integrierte apps** > **Suchen meine Freunde (nur überwacht)** : neue Einstellung, die dieses Feature in der Funktion "meine APP suchen" blockiert. 
-  - **Drahtlose** > **Änderung des WLAN-Status (nur überwacht)** : neue Einstellung, die verhindert, dass Benutzer WLAN auf dem Gerät einschalten oder ausschalten.
-  - **QuickPath für Tastatur und Wörterbuch** >  **(nur überwacht)** : neue Einstellung, die die QuickPath-Funktion blockiert.
-  - **Cloud und Speicher**: die **Aktivitäts Fortsetzung** wird in " **Handoff**" umbenannt.
+- Bei **IOS**- > **Geräte**Einschränkungen gibt es einige Änderungen:
+  - **Integrierte apps** >  **: "mein iPhone suchen" (nur überwacht)** : neue Einstellung, die dieses Feature in der Funktion "meine APP suchen" blockiert. 
+  - **Integrierte apps** >  **suchen meine Freunde (nur überwacht)** : neue Einstellung, die dieses Feature in der Funktion "meine APP suchen" blockiert. 
+  - **Drahtlose** >  **Änderung des WLAN-Status (nur überwacht)** : neue Einstellung, die verhindert, dass Benutzer WLAN auf dem Gerät einschalten oder ausschalten.
+  - **QuickPath für**Tastatur und Wörterbuch >  **(nur**überwacht): neue Einstellung, die die QuickPath-Funktion blockiert.
+  - **Cloud und Speicher**: **die Aktivitäts** Fortsetzung wird **in "** Handoff" umbenannt.
 
   Die aktuellen Einstellungen finden Sie unter [iOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune](device-restrictions-ios.md).
 
@@ -116,23 +116,23 @@ Gilt für:
 - IOS 13 und höher
 
 ### <a name="control-the-apps-files-documents-and-folders-that-open-when-user-signs-in-to-macos-devices---3914202----"></a>Steuern der apps, Dateien, Dokumente und Ordner, die geöffnet werden, wenn sich der Benutzer bei macOS-Geräten anmeldet <!--3914202  -->
-Sie sind in der Lage, Features auf macOS-Geräten zu aktivieren und zu konfigurieren (**Geräte Konfigurations** > **profile** > **Erstellen** > das**macOS** -Profil für Platt Form > **Geräte Features** für Profiltyp). 
+Sie sind in der Lage, Features auf macOS-Geräten zu aktivieren**und zu**konfigurieren >  **(Geräte Konfigurationprofile** > **Profilerstellen)** . >  **macOS** für Platt Form **> Geräte** Features für Profiltyp). 
 
 Es gibt neue Einstellungen für Anmelde Elemente, mit denen gesteuert werden kann, welche apps, Dateien, Dokumente und Ordner geöffnet werden, wenn sich ein Benutzer am registrierten Gerät anmeldet. 
 
-Informationen zu den aktuellen Einstellungen finden Sie unter [macOS-Geräte Funktionseinstellungen in InTune](macos-device-features-settings.md).
+Informationen zu den aktuellen Einstellungen [finden Sie unter macOS-Geräte Funktionseinstellungen in InTune.](macos-device-features-settings.md)
 
 Gilt für:  
 - macOS
 
 ### <a name="new-features-for-android-enterprise-dedicated-devices-in-multi-app-mode----3755304-3041943-3041946----"></a>Neue Features für Android Enterprise Dedicated-Geräte im Multi-APP-Modus <!-- 3755304 3041943 3041946  -->
-Sie können Funktionen und Einstellungen in einem Kiosk-Stil auf Ihren dedizierten Geräten mit Android-Unternehmen steuern. Wählen Sie hierzu **Geräte Konfigurations** > **profile** > **Profil** > erstellen**Android Enterprise** für Plattform > **nur Gerätebesitzer, Geräte Einschränkungen** für Profiltyp aus.
+Sie können Funktionen und Einstellungen in einem Kiosk-Stil auf Ihren dedizierten Geräten mit Android-Unternehmen steuern. **Wählen Sie hierzu Gerätekonfiguration**  > **ProfileProfilerstellen**  >  **AndroidEnterPriseaus.**  > **nur für Platt** **Form > Gerätebesitzer, Geräte** Einschränkungen für den Profiltyp.
 
 Die folgenden Funktionen werden hinzugefügt:
-- **Dedizierte Geräte** > **Multi-App**: die **virtuelle Start** Schaltfläche kann angezeigt werden, indem Sie auf dem Gerät schwenken oder auf dem Bildschirm unverankert sind, damit Benutzer Sie verschieben können.
-- **Dedizierte Geräte** > **Multi-App**: der **Zugriff** auf die Taschenlampe ermöglicht Benutzern die Verwendung der Taschenlampe. 
-- **Dedizierte Geräte** > **Multi-App**: die **Medienvolumen Steuerung** ermöglicht es Benutzern, das Medien Volume des Geräts mithilfe eines Schiebereglers zu steuern. 
-- **Dedizierte Geräte** > **Multi-App**: Aktivieren Sie einen Bildschirmschoner, laden Sie ein benutzerdefiniertes Bild hoch, und Steuern Sie, wann der Bildschirmschoner angezeigt wird
+- **Dedizierte**Geräte > Multi **-APP**: die**virtuelle Start** Schaltfläche kann angezeigt werden, indem Sie auf dem Gerät schwenken oder auf dem Bildschirm unverankert sind, damit Benutzer Sie verschieben können.
+- **Dedizierte**Geräte > Multi **-App** :**derZugriff** auf die Taschenlampe ermöglicht Benutzern die Verwendung der Taschenlampe. 
+- **Dedizierte**Geräte > Multi **-APP**: die **Medienvolumen Steuerung ermöglicht** es Benutzern, das Medien Volume des Geräts mithilfe eines Schiebereglers zu steuern. 
+- **Dedizierte** > Geräte**Multi-App**: Aktivieren Sie einen Bildschirmschoner, laden Sie ein benutzerdefiniertes Bild hoch, und Steuern Sie, wann der Bildschirmschoner angezeigt wird
 
 Die aktuellen Einstellungen finden Sie unter [Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune](device-restrictions-android-for-work.md#dedicated-device-settings).
 
@@ -167,11 +167,11 @@ Sie können Programm zur Geräteregistrierung Profile festlegen, um die folgende
 - Bildschirmzeit
 - Touchscreen
 
-Wechseln Sie zu diesem Zweck zu **Geräte** > Registrierung**Apple** > -Registrierung Registrierungs**Programm Token** > Token > **profile** auswählen > Profil > **Eigenschaften** > **Bearbeiten.** neben **Anpassung des Setup-Assistenten**.
-Weitere Informationen zur Anpassung des Setup-Assistenten finden Sie unter [Erstellen eines Apple ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)-Registrierungs Profils.
+Wechseln **Sie hierzu zu**   > **GeräteRegistrierungApple**-RegistrierungRegistrierungsprogrammToken  >  **> Token** auswählen **> Profile** > Wählen Sie ein Profil **>**  > Eigenschaften**bearbeitennebenAnpassung**des **Setup-Assistentenaus**.
+Weitere Informationen zur Anpassung des Setup-Assistenten finden [Sie unter Erstellen eines Apple- ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)Registrierungs Profils.
 
 ### <a name="android-enrollment-device-administrator-support----4869749----"></a>Android-Registrierungs Geräte-Administrator Unterstützung <!-- 4869749  -->
-Die Registrierungsoption Android-Geräte Administrator wird der Seite Android-Registrierung hinzugefügt (**InTune** > -**Geräte** > Registrierung**Android**-Registrierung). Der Android-Geräte Administrator ist weiterhin standardmäßig für alle Mandanten aktiviert.  
+Die Registrierungsoption Android-Geräte Administrator wird der Seite Android-Registrierung**hinzugefügt (InTune** >  **-Geräte** > Registrierung Android **).** Registrierung). Der Android-Geräte Administrator ist weiterhin standardmäßig für alle Mandanten aktiviert.  
 
 ### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>Passen Sie für IOS-Geräte den Datenschutz Bildschirm des Anmeldungsprozesses des Unternehmensportal <!-- 4394993  -->
 Mithilfe von markdown können Sie den Datenschutz Bildschirm des Unternehmensportal anpassen, den Endbenutzern während der IOS-Registrierung angezeigt werden. Insbesondere können Sie die Liste der Dinge anpassen, die Ihre Organisation nicht auf dem Gerät sehen oder ausführen kann.
@@ -183,7 +183,7 @@ Mithilfe von markdown können Sie den Datenschutz Bildschirm des Unternehmenspor
 Ein neuer Eintrag auf der Hardware Seite für jedes Android-Gerät enthält die Buildnummer des Betriebssystems des Geräts.
 
 ### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>Konfigurieren der automatischen Geräte Bereinigung auf bis zu 30 Tage <!--4231059  -->
-Nach der letzten Anmeldung können Sie den Grenzwert für die automatische Bereinigung von Geräten auf 30 Tage festlegen (anstelle des aktuellen Limits von 90 Tagen). Wechseln Sie hierzu zu **InTune** > -**Geräte** > **Einrichten** > **Geräte Bereinigungs Regeln**.
+Nach der letzten Anmeldung können Sie den Grenzwert für die automatische Bereinigung von Geräten auf 30 Tage festlegen (anstelle des aktuellen Limits von 90 Tagen). Wechseln **Sie hierzu zu InTune-Geräte**  > **Einrichten**  > **Geräte Bereinigungs**  >  **Regeln**.
 
 <!-- ***********************************************-->
 ## <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
