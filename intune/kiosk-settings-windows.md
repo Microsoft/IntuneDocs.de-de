@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/11/2019
+ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a80e4cf4e68235ef9e88943a8b62121e0cfb6623
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
+ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046971"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69487753"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Geräteeinstellungen bei Windows 10 (und höher) zur Ausführung als Kiosk in Intune
 
@@ -66,9 +66,7 @@ Hiermit wird nur eine App auf dem Gerät ausgeführt.
     > [!NOTE]
     > Mit dieser Einstellung wird der Microsoft Edge-Browser auf dem Gerät aktiviert. Erstellen Sie zum Konfigurieren spezifischer Microsoft Edge-Einstellungen ein Gerätekonfigurationsprofil (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10** (Plattform) > **Geräteeinschränkungen** >  **Microsoft Edge-Browser**). Der [Microsoft Edge-Browser](device-restrictions-windows-10.md#microsoft-edge-browser) führt alle Einstellungen und Beschreibungen dieser auf.
 
-    Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
-  - **Kioskbrowser hinzufügen:** Klicken Sie auf **Einstellungen für Kioskbrowser**. Mit diesen Einstellungen können Sie die Webbrowser-App im Kiosk steuern. Laden Sie die [Kioskbrowser-App](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) aus dem Store herunter, fügen Sie sie Intune als [Client-App](apps-add.md) hinzu, und ordnen Sie sie dann den Kioskgeräten zu.
+  - **Kioskbrowser hinzufügen:** Klicken Sie auf **Einstellungen für Kioskbrowser**. Mit diesen Einstellungen können Sie die Webbrowser-App im Kiosk steuern. Stellen Sie sicher, dass Sie die [Kiosk Browser-App](https://businessstore.microsoft.com/store/details/kiosk-browser/9NGB5S5XG2KP) aus dem Store erhalten, und fügen Sie Sie als [Client-App](apps-add.md)zu InTune hinzu. Anschließend können Sie die APP den Kiosk Geräten zuweisen.
 
     Legen Sie folgende Einstellungen fest:
 
@@ -91,15 +89,14 @@ Hiermit wird nur eine App auf dem Gerät ausgeführt.
       `http://bing.com`  
       `https://bing.com`  
       `http://contoso.com/*`  
-      `https://contoso.com/*`  
+      `https://contoso.com/*`
 
-    Klicken Sie auf **OK**, um die Änderungen zu speichern.
+    > [!NOTE]
+    > Bei Windows 10-Kiosken, die mit dem Microsoft Kiosk-Browser aktiviert sind, muss eine Offline Lizenz aus der Microsoft Store für Unternehmen verwendet werden. Diese Anforderung liegt daran, dass bei der automatischen Anmeldung ein lokales Benutzerkonto ohne Azure Active Directory (AD)-Anmelde Informationen verwendet wird. Online Lizenzen können daher nicht ausgewertet werden. Weitere Informationen finden Sie unter [Verteilen von Offline-Apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).
 
   - **Store-App hinzufügen:** Klicken Sie auf **Store-App hinzufügen**, und wählen Sie eine App aus der Liste aus.
 
     Es sind keine Apps aufgelistet? Fügen Sie einige mithilfe der Schritte unter [Client-Apps](apps-add.md) hinzu.
-
-  Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="multi-app-kiosks"></a>Kiosks für mehrere Apps
 
@@ -132,8 +129,6 @@ Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. D
       > [!NOTE]
       > Mit dieser Einstellung wird der Microsoft Edge-Browser auf dem Gerät aktiviert. Erstellen Sie zum Konfigurieren spezifischer Microsoft Edge-Einstellungen ein Gerätekonfigurationsprofil (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10** (Plattform) > **Geräteeinschränkungen** >  **Microsoft Edge-Browser**). Der [Microsoft Edge-Browser](device-restrictions-windows-10.md#microsoft-edge-browser) führt alle Einstellungen und Beschreibungen dieser auf.
 
-      Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
     - **Kioskbrowser hinzufügen**: Mit diesen Einstellungen können Sie eine Webbrowser-App im Kiosk steuern. Achten Sie darauf, dass Sie eine Webbrowser-App auf dem Kioskgerät über [Client-Apps](apps-add.md) bereitstellen.
 
       Legen Sie folgende Einstellungen fest:
@@ -152,13 +147,12 @@ Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. D
 
         Um den Zugriff auf bestimmte Websites zu erlauben, laden Sie eine CSV-Datei mit einer Liste der zulässigen Websites hoch. Wenn Sie keine CSV-Datei hinzufügen, können alle Websites aufgerufen werden.
 
-      Klicken Sie auf **OK**, um die Änderungen zu speichern.
+      > [!NOTE]
+      > Bei Windows 10-Kiosken, die mit dem Microsoft Kiosk-Browser aktiviert sind, muss eine Offline Lizenz aus der Microsoft Store für Unternehmen verwendet werden. Diese Anforderung liegt daran, dass bei der automatischen Anmeldung ein lokales Benutzerkonto ohne Azure Active Directory (AD)-Anmelde Informationen verwendet wird. Online Lizenzen können daher nicht ausgewertet werden. Weitere Informationen finden Sie unter [Verteilen von Offline-Apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).
 
   - **Anwendungen**
 
     - **Store-App hinzufügen**: Fügen Sie eine App aus dem Microsoft Store für Unternehmen hinzu. Wenn keine Apps aufgelistet sind, können Sie Apps abrufen und [Intune hinzufügen](store-apps-windows.md). Beispielsweise lassen sich der Kioskbrowser, Excel und OneNote hinzufügen.
-
-      Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
     - **Win32-App hinzufügen**: Eine Win32-App ist eine klassische Desktop-App wie Visual Studio Code oder Google Chrome. Geben Sie die folgenden Eigenschaften ein:
 
@@ -166,14 +160,10 @@ Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. D
       - **Lokaler Pfad**: Pflichtfeld. Geben Sie den Pfad zur ausführbaren Datei ein, z.B. `C:\Program Files (x86)\Microsoft VS Code\Code.exe` oder `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
       - **Anwendungsbenutzermodell-ID (AUMID):** Geben Sie die AUMID der Win32-App ein. Diese Einstellung bestimmt das Startlayout der Kachel auf dem Desktop. Informationen zum Abrufen dieser ID finden Sie unter [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps).
 
-      Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
     - **Nach AUMID hinzufügen**: Mit dieser Option können Sie Windows-Posteingangs-Apps wie Editor oder Rechner hinzufügen. Geben Sie die folgenden Eigenschaften ein:
 
       - **Anwendungsname**: Pflichtfeld. Geben Sie einen Namen für die Anwendung ein.
       - **Anwendungsbenutzermodell-ID (AUMID)** : Pflichtfeld. Geben Sie die AUMID der Windows-App ein. Weitere Informationen zum Abrufen dieser ID finden Sie unter [Ermitteln der Anwendungsbenutzermodell-ID einer installierten App](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
-
-      Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
     - **AutoLaunch:** Optional. Wählen Sie eine Anwendung aus, die automatisch gestartet werden soll, wenn der Benutzer sich anmeldet. Nur eine App kann mit AutoLaunch automatisch gestartet werden.
     - **Kachelgröße**: Pflichtfeld. Wählen Sie eine der folgenden App-Kachelgrößen aus: „Klein“, „Mittelgroß“, „Breit“ oder „Groß“.
@@ -186,8 +176,6 @@ Apps, die sich in diesem Modus befinden, sind über das Startmenü verfügbar. D
 - **Windows-Taskleiste**: Sie können die Taskleiste **einblenden** oder **ausblenden**. Standardmäßig wird sie ausgeblendet. Symbole, z.B. das WLAN-Symbol werden dargestellt, die Einstellungen können jedoch nicht vom Endbenutzer geändert werden.
 
 - **Zugriff auf Downloadordner zulassen:** Klicken Sie auf **Ja**, um Benutzern den Zugriff auf den Downloadordner in Windows Explorer zu gewähren. Der Zugriff auf den Downloadordner ist standardmäßig deaktiviert. Dieses Feature wird häufig verwenden, um Endbenutzern den Zugriff auf Elemente zu gewähren, die über einen Browser heruntergeladen wurden.
-
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

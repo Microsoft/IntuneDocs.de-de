@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7871fa6f8655ff02242135d04385984368d52625
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 7e8aeb3428aeece2de9b94c0ebf7796ce73a0267
+ms.sourcegitcommit: 6f84e880411a202c5500eb460779b7ef63a7f430
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680084"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68978521"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->
 
@@ -1441,4 +1441,4 @@ Weitere Informationen finden Sie unter [Policy CSP - WindowsPowerShell (Richtlin
 ## <a name="next-steps"></a>Nächste Schritte  
 
 [Aktuelle Baselineversion anzeigen](security-baseline-settings-mdm.md)  
-[Upgradeprofile für die Verwendung einer neuen Baselineversion](security-baselines.md#change-the-baseline-instance-for-a-profile)
+[Upgradeprofile für die Verwendung einer neuen Baselineversion](security-baselines.md#change-the-baseline-version-for-a-profile)

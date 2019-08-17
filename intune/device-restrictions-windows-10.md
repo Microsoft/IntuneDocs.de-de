@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/18/2019
+ms.date: 08/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe155c5b2a18b1931894b05694b53bbc2c497e0b
-ms.sourcegitcommit: 116ef72b9da4d114782d4b8dd9f57556c9b01511
+ms.openlocfilehash: 7c75930f3eee35146afbc5714135ececbe7c9643
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67494481"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550180"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
@@ -57,15 +57,15 @@ Diese Einstellungen verwenden den [ApplicationManagement-Richtlinien-CSP](https:
 - **App-Daten in Systemvolume installieren**: **Blockieren** hindert Apps daran, Daten auf dem Systemvolume des Geräts zu speichern. **Nicht konfiguriert** (Standard) erlaubt Apps das Speichern von Daten auf dem Systemvolume.
 - **Apps auf Systemlaufwerk installieren**: **Blockieren** hindert Apps daran, eine Installation auf dem Systemlaufwerk des Geräts auszuführen. **Nicht konfiguriert** (Standard) erlaubt Apps Installationen auf dem Systemlaufwerk.
 - **Game DVR** (nur Desktop): **Blockieren** deaktiviert die Windows-Spieleaufzeichnung und -übertragung. **Nicht konfiguriert** (Standard) lässt die Aufzeichnung und Übertragung von Spielen zu.
-- **Apps nur aus dem Store**: Diese Einstellung bestimmt die benutzerfreundlichkeit, wenn Benutzer apps aus anderen Quellen als dem Microsoft Store installieren. Folgende Optionen sind verfügbar:
+- **Nur apps aus dem Store**: Diese Einstellung bestimmt die Benutzerumgebung, wenn Benutzer apps von anderen Orten als der Microsoft Store installieren. Folgende Optionen sind verfügbar:
 
-  - **Nicht konfiguriert** (Standard): ermöglicht Benutzern das Installieren von apps aus anderen Quellen als dem Microsoft Store, einschließlich apps, die in anderen Richtlinieneinstellungen definiert.  
-  - **Überall**: deaktiviert die app-Empfehlungen, bei dem Benutzer apps aus einem beliebigen Speicherort installieren.  
-  - **Nur Store**: Erzwingt, dass Benutzer nur apps aus dem Microsoft Store installieren.
-  - **Empfehlungen**: Wenn eine app aus dem Web installieren zu können, die in den Microsoft Store verfügbar ist, Benutzern eine Meldung mit der Empfehlung sie es aus dem Store herunterladen angezeigt.  
-  - **Bevorzugen Sie Store**: warnt den Benutzer bei der sie apps aus anderen Quellen als dem Microsoft Store zu installieren.
+  - **Nicht konfiguriert** (Standard): ermöglicht Endbenutzern die Installation von apps von anderen Orten als der Microsoft Store, einschließlich apps, die in anderen Richtlinien Einstellungen definiert sind.  
+  - **Anywhere**: deaktiviert App-Empfehlungen und ermöglicht Benutzern die Installation von apps von einem beliebigen Standort aus.  
+  - **Nur Store**: erzwingt Endbenutzer, nur apps aus dem Microsoft Store zu installieren.
+  - **Empfehlungen**: bei der Installation einer App aus dem Internet, die im Microsoft Store verfügbar ist, wird Benutzern eine Meldung angezeigt, die Sie aus dem Store herunterlädt.  
+  - **Store bevorzugen**: warnt Benutzer, wenn Sie apps von anderen Orten als der Microsoft Store installieren.
 
-  [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
+  [SmartScreen/enableappinstallcontrol-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
 - **Für Apps mit Updatefehlern Neustart erzwingen**: Wenn eine App verwendet wird, wird sie möglicherweise nicht aktualisiert. Verwenden Sie diese Einstellung, um den Neustart einer App zu erzwingen. Bei **Nicht konfiguriert** (Standard) wird kein Neustart der App erzwungen. **Anfordern** ermöglicht es Administratoren, einen Neustart an einem bestimmten Datum zu einer bestimmtem Uhrzeit oder nach einem wiederkehrenden Schema zu erzwingen. Wenn Sie **Anfordern** festlegen, machen Sie außerdem diese Angaben:
 
@@ -429,7 +429,7 @@ Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 Diese Einstellungen verwenden den [DeviceLock-Richtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock), der auch die unterstützten Windows-Editionen auflistet.
 
-- **Kennwort**: **Anfordern** der Eingabe eines Kennworts durch den Endbenutzer, um auf das Gerät zugreifen zu können. **Nicht konfiguriert** (Standard) ermöglicht den Zugriff auf das Gerät ohne ein Kennwort. Gilt für nur lokale Konten. Kontokennwörter für die Domäne, die von Active Directory (AD) und Azure AD konfiguriert bleiben.
+- **Kennwort**: **Anfordern** der Eingabe eines Kennworts durch den Endbenutzer, um auf das Gerät zugreifen zu können. **Nicht konfiguriert** (Standard) ermöglicht den Zugriff auf das Gerät ohne ein Kennwort. Gilt nur für lokale Konten. Domänen Konto Kennwörter bleiben durch Active Directory (AD) und Azure AD konfiguriert.
 
   - **Erforderlicher Kennworttyp**: Wählen Sie den Kennworttyp aus. Folgende Optionen sind verfügbar:
     - **Nicht konfiguriert**: Das Kennwort kann Zahlen und Buchstaben enthalten.
@@ -440,7 +440,7 @@ Diese Einstellungen verwenden den [DeviceLock-Richtlinien-CSP](https://docs.micr
     > [!IMPORTANT]
     > Wenn die Kennwortanforderung auf einem Windows-Desktop geändert wird, wirkt sich das auf die nächste Anmeldung der Benutzer aus, da das Gerät in diesem Moment aus dem Leerlauf in den aktiven Zustand wechselt. Benutzer mit Kennwörtern, die die Anforderungen erfüllen, werden trotzdem aufgefordert, ihre Kennwörter ändern.
     
-  - **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird**: Geben Sie die Anzahl von Authentifizierungsfehlern ein, die zulässig sind, bevor das Gerät zurückgesetzt werden kann (bis zu 11). Die gültige Zahl, die Sie eingeben, hängt von der Edition ab. [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) sind die unterstützten Werte aufgeführt. Durch `0` (null) kann die Funktion zum Zurücksetzen des Geräts deaktiviert werden.
+  - **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird**: Geben Sie die Anzahl von Authentifizierungsfehlern ein, die zulässig sind, bevor das Gerät zurückgesetzt werden kann (bis zu 11). Die gültige Zahl, die Sie eingeben, hängt von der-Edition ab. [DeviceLock/maxde vicepasswordfailedattempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) listet die unterstützten Werte auf. Durch `0` (null) kann die Funktion zum Zurücksetzen des Geräts deaktiviert werden.
 
     Diese Einstellung besitzt zudem je nach Edition unterschiedliche Auswirkungen. Spezifische Details zu dieser Einstellung finden Sie im [DeviceLock/MaxDevicePasswordFailedAttempts-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
@@ -753,9 +753,6 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
   [Defender/ScheduleQuickScanTime (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
 
-  > [!WARNING]
-  > Diese Einstellung in Intune im Azure-Portal weist unter Umständen den Status „Fehler“ auf. Dies ist ein Fehler in der Berichterstellungsfunktion. Nach Reproduzieren des Verhaltens und Problembehandlung hat die Intune-Produktgruppe bestätigt, dass der Status tatsächlich „Erfolg“ lautet. Der Berichterstellungsfehler wird in einem zukünftigen Release behoben. Es ist keine aktuelle ETA verfügbar, da sich Zeitachsen ändern. Alle Aktualisierungen dieser Funktion werden unter [In Entwicklung für Microsoft Intune](in-development.md) angekündigt.
-
 - **Art der durchzuführenden Systemüberprüfung**: Planen Sie eine Systemüberprüfung, einschließlich des Grads der Überprüfung, sowie Tag und Uhrzeit der Ausführung der Überprüfung. Folgende Optionen sind verfügbar:
   - **Nicht konfiguriert**: Es erfolgt keine Planung einer Systemüberprüfung auf dem Gerät. Endbenutzer können Überprüfungen nach Bedarf oder Wunsch manuell auf ihren Geräten durchführen.
   - **Deaktivieren**: Deaktiviert die Systemüberprüfung auf dem Gerät. Wählen Sie diese Option, wenn Sie eine Antivirenlösung eines Partners verwenden, die Geräte überprüft.
@@ -776,9 +773,6 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
   [CSP: Defender/ScanParameter](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [CSP: Defender/ScheduleScanDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
   [CSP: Defender/ScheduleScanTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
-
-  > [!WARNING]
-  > Diese Einstellung in Intune im Azure-Portal weist unter Umständen den Status „Fehler“ auf. Dies ist ein Fehler in der Berichterstellungsfunktion. Nach Reproduzieren des Verhaltens und Problembehandlung hat die Intune-Produktgruppe bestätigt, dass der Status tatsächlich „Erfolg“ lautet. Der Berichterstellungsfehler wird in einem zukünftigen Release behoben. Es ist keine aktuelle ETA verfügbar, da sich Zeitachsen ändern. Alle Aktualisierungen dieser Funktion werden unter [In Entwicklung für Microsoft Intune](in-development.md) angekündigt.
 
 - **Möglicherweise unerwünschte Software erkennen**: Ermöglicht die Auswahl einer der folgenden Schutzebenen, wenn Windows potenziell unerwünschte Software erkennt. Folgende Optionen sind verfügbar:
   - **Nicht konfiguriert** (Standard): Der Windows Defender-Schutz vor möglicherweise unerwünschten Anwendungen ist deaktiviert.
