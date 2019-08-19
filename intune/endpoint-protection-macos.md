@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4aa0c47f0aa099ff469eb31b212f387836ad69b
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756512"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960415"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Endpoint Protection-Einstellungen in Intune unter MacOS  
 
@@ -82,6 +82,9 @@ Verwenden Sie die Firewall, um Verbindungen pro Anwendung statt pro Port zu steu
 ## <a name="filevault"></a>FileVault  
 Weitere Informationen zu den Einstellungen von Apple-flevault finden Sie unter [fdefilevault](https://developer.apple.com/documentation/devicemanagement/fdefilevault) in den Inhalten von Apple Developer. 
 
+> [!IMPORTANT]  
+> Ab macOS 10,15 muss die MDM-Registrierung vom Benutzer genehmigt werden. 
+
 - **FileVault**  
   Sie können die vollständige Datenträger Verschlüsselung mithilfe von XTS-AES 128 mit "flevault" auf Geräten *aktivieren* , auf denen macOS 10,13 und höher ausgeführt wird.  
   - **Nicht konfiguriert**  
@@ -104,9 +107,9 @@ Weitere Informationen zu den Einstellungen von Apple-flevault finden Sie unter [
     **Standardeinstellung:** Nicht konfiguriert  
 
      > [!IMPORTANT]  
-     > Es gibt ein bekanntes Problem, wenn die Einstellung **Eingabeaufforderung beim Abmelden deaktivieren** auf *aktivieren*festgelegt ist. Wenn die Einstellung auf *aktivieren*festgelegt ist, muss die Einstellung für die **Anzahl der zulässigen Zeiten** auf einen Wert festgelegt werden und darf nicht als *nicht konfiguriert*festgelegt werden. Wenn diese Einstellung *nicht konfiguriert*ist, schlägt das Profil auf dem Gerät fehl. In diesem Szenario meldet das Gerät, dass es **sich um eine** **Zusammenfassung** des Profil Zustands handelt, ohne weitere Details anzuzeigen.
+     > Es ist ein bekanntes Problem aufgetreten, wenn die Einstellung **Aufforderung bei Abmeldung deaktivieren** auf *Aktivieren* gesetzt ist. Wenn Sie *Aktivieren* festlegen, muss die Einstellung für **Zulässige Anzahl von Umgehungen** auf einen Wert und nicht auf *Nicht konfiguriert* festgelegt werden. Wenn *Nicht konfiguriert* ausgewählt ist, tritt mit dem Profil auf dem Gerät ein Fehler auf. In diesem Szenario meldet das Gerät als **Profilstatuszusammenfassung** einen **Fehler** ohne weitere Details.
      > 
-     > Wenn die **Aufforderung zum Deaktivieren bei der Abmeldung deaktiviert** auf *nicht konfiguriert*festgelegt ist, kann die **Anzahl der zulässigen** Wiederholungen *nicht konfiguriert* werden oder einen Wert aufweisen.  
+     > Wenn die für **Aufforderung bei Abmeldung deaktivieren** *Nicht konfiguriert* ausgewählt ist, kann für **Zulässige Anzahl von Umgehungen** *Nicht konfiguriert* oder ein Wert festgelegt werden.  
      > 
      > Dieses Problem wird in einem zukünftigen Update behoben. 
 
