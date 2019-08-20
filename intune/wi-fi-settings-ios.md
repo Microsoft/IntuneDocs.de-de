@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 08/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9f51f2eafed0d54fb58eff643785451e2f49c853
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 04b864689bce1814eba78dc2435905d4df82e8c0
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66046676"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022679"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Hinzufügen von WLAN-Einstellungen für iOS-Geräte in Microsoft Intune
 
@@ -71,8 +71,8 @@ Dieser Artikel beschreibt diese Einstellungen.
 
   - **EAP-TLS**: Machen Sie außerdem die folgenden Angaben:
 
-    - **Serververtrauensstellung** - **Zertifikatservernamen**: **Fügen Sie mindestens einen allgemeinen Namen hinzu**, der in den von der vertrauenswürdigen Zertifizierungsstelle ausgestellten Zertifikaten verwendet wird. Wenn Sie diese Informationen eingeben, können Sie das Fenster für dynamische Vertrauensstellungen umgehen, das auf Benutzergeräten bei der Verbindungsherstellung mit diesem WLAN angezeigt wird.
-    - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes vertrauenswürdiges Stammzertifikatsprofil aus. Dieses Zertifikat wird dem Server bereitgestellt, wenn sich der Client mit dem Netzwerk verbindet, und zur Authentifizierung der Verbindung verwendet.
+    - **Serververtrauensstellung** - **Zertifikatservernamen**: Fügen Sie mindestens einen allgemeinen Namen, der in den von der vertrauenswürdigen Zertifizierungsstelle ausgestellten Zertifikaten verwendet wird, Ihren drahtlosen Netzwerkzugriffsservern **hinzu**. Fügen Sie z.B. `mywirelessserver.contoso.com` oder `mywirelessserver` hinzu. Wenn Sie diese Informationen eingeben, können Sie das Fenster für dynamische Vertrauensstellungen umgehen, das auf Benutzergeräten bei der Verbindungsherstellung mit diesem WLAN angezeigt wird.
+    - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes vertrauenswürdiges Stammzertifikatsprofil aus. Mit diesem Zertifikat kann der Client das Zertifikat des Drahtlos Netzwerk Zugriffs Servers als vertrauenswürdig einstufen.
 
       Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
@@ -82,8 +82,8 @@ Dieser Artikel beschreibt diese Einstellungen.
 
   - **EAP-TTLS**: Machen Sie außerdem die folgenden Angaben:
 
-    - **Serververtrauensstellung** - **Zertifikatservernamen**: **Fügen Sie mindestens einen allgemeinen Namen hinzu**, der in den von der vertrauenswürdigen Zertifizierungsstelle ausgestellten Zertifikaten verwendet wird. Wenn Sie diese Informationen eingeben, können Sie das Fenster für dynamische Vertrauensstellungen umgehen, das auf Benutzergeräten bei der Verbindungsherstellung mit diesem WLAN angezeigt wird.
-    - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes vertrauenswürdiges Stammzertifikatsprofil aus. Dieses Zertifikat wird dem Server bereitgestellt, wenn sich der Client mit dem Netzwerk verbindet, und zur Authentifizierung der Verbindung verwendet.
+    - **Serververtrauensstellung** - **Zertifikatservernamen**: Fügen Sie mindestens einen allgemeinen Namen, der in den von der vertrauenswürdigen Zertifizierungsstelle ausgestellten Zertifikaten verwendet wird, Ihren drahtlosen Netzwerkzugriffsservern **hinzu**. Fügen Sie z.B. `mywirelessserver.contoso.com` oder `mywirelessserver` hinzu. Wenn Sie diese Informationen eingeben, können Sie das Fenster für dynamische Vertrauensstellungen umgehen, das auf Benutzergeräten bei der Verbindungsherstellung mit diesem WLAN angezeigt wird.
+    - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes vertrauenswürdiges Stammzertifikatsprofil aus. Mit diesem Zertifikat kann der Client das Zertifikat des Drahtlos Netzwerk Zugriffs Servers als vertrauenswürdig einstufen.
 
       Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
@@ -104,8 +104,8 @@ Dieser Artikel beschreibt diese Einstellungen.
 
   - **PEAP**: Geben Sie außerdem Folgendes ein:
 
-    - **Serververtrauensstellung** - **Zertifikatservernamen**: **Fügen Sie mindestens einen allgemeinen Namen hinzu**, der in den von der vertrauenswürdigen Zertifizierungsstelle ausgestellten Zertifikaten verwendet wird. Wenn Sie diese Informationen eingeben, können Sie das Fenster für dynamische Vertrauensstellungen umgehen, das auf Benutzergeräten bei der Verbindungsherstellung mit diesem WLAN angezeigt wird.
-    - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes vertrauenswürdiges Stammzertifikatsprofil aus. Dieses Zertifikat wird dem Server bereitgestellt, wenn sich der Client mit dem Netzwerk verbindet, und zur Authentifizierung der Verbindung verwendet.
+    - **Serververtrauensstellung** - **Zertifikatservernamen**: Fügen Sie mindestens einen allgemeinen Namen, der in den von der vertrauenswürdigen Zertifizierungsstelle ausgestellten Zertifikaten verwendet wird, Ihren drahtlosen Netzwerkzugriffsservern **hinzu**. Fügen Sie z.B. `mywirelessserver.contoso.com` oder `mywirelessserver` hinzu. Wenn Sie diese Informationen eingeben, können Sie das Fenster für dynamische Vertrauensstellungen umgehen, das auf Benutzergeräten bei der Verbindungsherstellung mit diesem WLAN angezeigt wird.
+    - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes vertrauenswürdiges Stammzertifikatsprofil aus. Mit diesem Zertifikat kann der Client das Zertifikat des Drahtlos Netzwerk Zugriffs Servers als vertrauenswürdig einstufen.
 
       Klicken Sie auf **OK**, um die Änderungen zu speichern.
 

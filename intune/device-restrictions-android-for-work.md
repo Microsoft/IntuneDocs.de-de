@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 08/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ab90a36254de49eb27e326086ffb137c782005
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 8bd537315a09c0c7cf338ac0892fc4ae3d1dc8fc
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883436"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550186"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune
 
@@ -85,13 +85,13 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
 
 - **Einzelanwendungsmodus**: Benutzer können auf dem Gerät nur auf eine einzelne App zugreifen. Wenn das Gerät gestartet wird, wird nur die jeweilige App gestartet. Benutzer können keine neuen Apps öffnen oder die ausgeführte App ändern.
 
-  **Schritte**
-  1. Wählen Sie **Verwaltete App auswählen** aus und dann die verwaltete Google Play-App aus der Liste. 
+  - **Verwaltete App auswählen**: Wählen Sie dann die verwaltete Google Play-App aus der Liste aus.
 
-      Wenn keine Apps aufgelistet werden, können Sie dem Gerät [einige Android-Apps hinzufügen](apps-add-android-for-work.md). Achten Sie darauf, [die App der Gerätegruppe zuzuweisen, die für Ihre dedizierten Geräte erstellt wurde](apps-deploy.md).
+    Wenn keine Apps aufgelistet werden, können Sie dem Gerät [einige Android-Apps hinzufügen](apps-add-android-for-work.md). Achten Sie darauf, [die App der Gerätegruppe zuzuweisen, die für Ihre dedizierten Geräte erstellt wurde](apps-deploy.md).
 
-  2. Wählen Sie **OK** > **OK** aus, um die App hinzuzufügen.
-
+  > [!IMPORTANT]
+  > Wenn Sie den Kiosk Modus für Einzelanwendungen verwenden, funktionieren Dialer/Phone-Apps möglicherweise nicht ordnungsgemäß. 
+  
 - **Modus für mehrere Apps**: Benutzer können auf dem Gerät nur auf eine begrenzte Anzahl von Apps zugreifen. Wenn das Gerät gestartet wird, werden nur die von Ihnen hinzugefügten Apps gestartet. Sie können auch einige Weblinks hinzufügen, die Benutzer öffnen können. Wenn die Richtlinie angewendet wird, können Benutzer die Symbole für die zulässigen Apps auf dem Startbildschirm sehen.
 
   > [!IMPORTANT]
@@ -101,43 +101,65 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
   > 
   > Die **Managed Home Screen**-App muss sich nicht im Konfigurationsprofil befinden, aber als Client-App hinzugefügt werden. Wenn die **Managed Home Screen**-App als Client-App hinzugefügt wird, werden alle anderen Apps, die Sie im Konfigurationsprofil hinzufügen, in der **Managed Home Screen**-App als Symbole angezeigt. 
   >
-  > Wenn Sie den Kiosk Modus für mehrere apps mit verwaltetem Startbildschirm verwenden, funktionieren Dialer/Phone-Apps möglicherweise nicht ordnungsgemäß. 
+  > Wenn Sie den Kiosk Modus für mehrere Apps verwenden, funktionieren Dialer/Phone-Apps möglicherweise nicht ordnungsgemäß. 
 
-  - Wählen Sie **Hinzufügen** und dann Ihre Apps in der Liste aus.
+  - **Hinzufügen**: Wählen Sie Ihre apps aus der Liste aus.
 
     Wenn die **Managed Home Screen**-App nicht aufgeführt wird, [fügen Sie sie aus Google Play hinzu](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise). Achten Sie darauf, [die App der Gerätegruppe zuzuweisen](apps-deploy.md), die für Ihre dedizierten Geräte erstellt wurde.
 
     Sie können auch andere [Android-Apps](apps-add-android-for-work.md) und [Web-Apps](web-app.md) hinzufügen, die von Ihrer Organisation für das Gerät erstellt wurden. Achten Sie darauf, [die App der Gerätegruppe zuzuweisen, die für Ihre dedizierten Geräte erstellt wurde](apps-deploy.md).
 
-  - **Virtuelle Startschaltfläche**: Wählen Sie **Aktivieren** aus, um eine Startschaltfläche auf dem dedizierten Gerät anzuzeigen. Bei Auswahl dieser Option gelangt der Benutzer zurück zum Startbildschirm des Geräts, wo er problemlos zwischen Apps wechseln kann. Auf einigen Android-Geräten müssen Benutzer möglicherweise mit dem Finger über den Bildschirm wischen, damit die Startschaltfläche angezeigt wird. Mit **Deaktivieren** wird keine Startschaltfläche angezeigt, sodass Benutzer mit der Schaltfläche „Zurück“ zwischen Apps wechseln müssen.
-  - **Kioskmodus verlassen**: Wählen Sie **Aktivieren** aus, um Administratoren zu ermöglichen, den Kioskmodus vorübergehend zu beenden, um das Gerät zu aktualisieren. Um dieses Feature verwenden zu können, führt der Administrator Folgendes aus: 
-  
-    1. Weiteres Betätigen der Schaltfläche „Zurück“, bis die Schaltfläche „Kiosk beenden“ angezeigt wird. 
-    2. Auswählen der Schaltfläche und Eingabe der PIN für den **Code zum Verlassen des Kioskmodus**.
-    3. Wenn Sie alle gewünschten Änderungen vorgenommen haben, wählen Sie die **Managed Home Screen**-App aus. Mit diesem Schritt wird das Gerät erneut im Multi-App-Kioskmodus gesperrt. 
+  - **Virtuelle Start**Schaltfläche: eine weiche Taste, die Benutzer an den verwalteten Startbildschirm zurückgibt, damit Benutzer zwischen apps wechseln können. Folgende Optionen sind verfügbar:
 
-    **Deaktivieren** bietet keine Möglichkeit zum Anhalten des Kioskmodus. Wenn der Administrator weiterhin die Schaltfläche „Zurück“ betätigt und die Schaltfläche „Kiosk beenden“ auswählt, wird eine Meldung angezeigt, dass eine Kennung erforderlich ist.
+    - **Nicht konfiguriert** (Standard): eine Start Schaltfläche wird nicht angezeigt. Benutzer müssen die Schaltfläche "zurück" verwenden, um zwischen apps zu wechseln.
+    - **Schwenken**: eine Start Schaltfläche wird angezeigt, wenn ein Benutzer auf dem Gerät aufrichtet.
+    - **Floating**: zeigt eine permanente, unverankerte Start Schaltfläche auf dem Gerät an.
+
+  - **Kioskmodus verlassen**: Wählen Sie **Aktivieren** aus, um Administratoren zu ermöglichen, den Kioskmodus vorübergehend zu beenden, um das Gerät zu aktualisieren. Um dieses Feature verwenden zu können, führt der Administrator Folgendes aus:
+  
+    1. Weiteres Betätigen der Schaltfläche „Zurück“, bis die Schaltfläche **Kiosk beenden** angezeigt wird. 
+    2. Auswählen der Schaltfläche **Kiosk beenden** und Eingabe der PIN für den **Code zum Verlassen des Kioskmodus**.
+    3. Wenn Sie fertig sind, wählen Sie die **verwaltete Startbildschirm** -App aus. Mit diesem Schritt wird das Gerät erneut im Multi-App-Kioskmodus gesperrt.
+
+      Wenn die Einstellung **nicht konfiguriert**ist, können Administratoren den Kiosk Modus nicht anhalten. Wenn der Administrator weiterhin die Schaltfläche „Zurück“ betätigt und die Schaltfläche **Kiosk beenden** auswählt, wird eine Meldung angezeigt, dass eine Kennung erforderlich ist.
 
     - **Code zum Verlassen des Kioskmodus**: Geben Sie eine aus 4 bis 6 Ziffern bestehende numerische PIN ein. Der Administrator verwendet diese PIN zum vorübergehenden Anhalten des Kioskmodus.
 
   - **Benutzerdefinierten URL-Hintergrund festlegen**: Geben Sie eine URL zum Anpassen des Hintergrundbildschirms auf dem dedizierten Gerät ein.
-    
+
     > [!NOTE]
     > In den meisten Fällen empfehlen wir, mit Bildern mit mindestens den folgenden Größen zu beginnen:
     >
     > - Smartphone: 1080 x 1920 Pixel
     > - Tablet: 1920 × 1080 Pixel
-    >    
+    >
     > Für ein optimales Erlebnis und scharfe Details wird empfohlen, Bildobjekte gerätebezogen gemäß den Displayspezifikationen zu erstellen.
     >
     > Moderne Displays haben höhere Pixeldichten und können entsprechende Bilder mit 2K-/4K-Auflösung anzeigen.
-  - **WLAN-Konfiguration**: Wählen Sie **Aktivieren**, damit Endbenutzer das Gerät mit verschiedenen WLAN-Netzwerken verbinden können. Durch Aktivieren dieses Features wird auch der Gerätestandort aktiviert. Die Standardeinstellung **Nicht konfiguriert** verhindert, dass Benutzer sich auf dem Managed Home Screen (Aufgabensperrmodus) mit WLAN-Netzwerken verbinden.
 
-    Erfahren Sie mehr zum [Aufgabensperrmodus](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (öffnet die Android-Website).
+  - **Wi-Fi-Konfiguration**: **aktivieren** zeigt das WLAN-Steuerelement auf dem verwalteten Startbildschirm an und ermöglicht Endbenutzern das Herstellen einer Verbindung zwischen dem Gerät und verschiedenen WLAN-Netzwerken. Durch Aktivieren dieses Features wird auch der Gerätestandort aktiviert. **Nicht konfiguriert** (Standard) zeigt das WLAN-Steuerelement nicht auf dem verwalteten Startbildschirm an. Es verhindert, dass Benutzer Verbindungen mit WLAN-Netzwerken herstellen, während Sie den verwalteten Startbildschirm verwenden.
 
-  - **Bluetooth-Konfiguration**: Wählen Sie **Aktivieren**, um Bluetooth auf dem Gerät zuzulassen und Endbenutzern das Koppeln von Geräten per Bluetooth zu ermöglichen. Durch Aktivieren dieses Features wird auch der Gerätestandort aktiviert. Die Standardeinstellung **Nicht konfiguriert** verhindert, dass Benutzer auf dem Managed Home Screen (Aufgabensperrmodus) Bluetooth konfigurieren und Geräte damit koppeln. 
+  - **Bluetooth-Konfiguration**: **aktivieren** zeigt das Bluetooth-Steuerelement auf dem verwalteten Startbildschirm an und ermöglicht Endbenutzern das Koppeln von Geräten über Bluetooth. Durch Aktivieren dieses Features wird auch der Gerätestandort aktiviert. **Nicht konfiguriert** (Standard) zeigt das Bluetooth-Steuerelement nicht auf dem verwalteten Startbildschirm an. Sie hindert Benutzer daran, Bluetooth zu konfigurieren und Geräte zu koppeln, während Sie den verwalteten Startbildschirm verwenden.
 
-    Erfahren Sie mehr zum [Aufgabensperrmodus](https://developer.android.com/work/dpc/dedicated-devices/lock-task-mode) (öffnet die Android-Website).
+  - **Taschen Taschen Zugriff**: **aktivieren** zeigt das Taschen Taschen Steuerelement auf dem verwalteten Startbildschirm an und ermöglicht es Endbenutzern, die Taschenlampe ein-oder auszuschalten. **Nicht konfiguriert** (Standard) zeigt das Taschen Taschen Steuerelement nicht auf dem verwalteten Startbildschirm an. Er verhindert, dass Benutzer die Taschenlampe verwenden, während Sie den verwalteten Startbildschirm verwenden.
+
+  - **Medien Volume-Steuerung**: **aktivieren** zeigt die Medien Volume-Steuerung auf dem verwalteten Startbildschirm an und ermöglicht Endbenutzern das Anpassen des Medien Volumens des Geräts mithilfe eines Schiebereglers. **Nicht konfiguriert** (Standard) zeigt das Medien Volume-Steuerelement auf dem verwalteten Startbildschirm nicht an. Sie hindert Benutzer daran, das Medien Volume des Geräts zu verwenden, wenn Sie den verwalteten Startbildschirm verwenden, sofern die Hardware Schaltflächen Sie nicht unterstützen. 
+
+  - **Bildschirmschoner Modus**: **aktivieren** zeigt einen Bildschirmschoner auf dem verwalteten Startbildschirm an, wenn das Gerät gesperrt ist oder ein Timeout auftritt. **Nicht konfiguriert** (Standard) zeigt keinen Bildschirmschoner auf dem verwalteten Startbildschirm an.
+
+    Wenn diese Option aktiviert ist, konfigurieren Sie auch:
+
+    - **Benutzerdefiniertes Bildschirmschoner festlegen**: Geben Sie die URL zu einem benutzerdefinierten Image ein. Geben Sie beispielsweise Folgendes ein:
+
+      - `http://www.contoso.com/image.jpg`
+      - `www.contoso.com/image.bmp`
+      - `https://www.contoso.com/image.html`
+
+      Wenn Sie keine URL eingeben, wird das Standard Image des Geräts verwendet, wenn ein Standard Image vorhanden ist.
+
+    - **Anzahl von Sekunden, die das Gerät vor dem Ausschalten des Bildschirms anzeigt**: Wählen Sie aus, wie lange das Gerät den Bildschirmschoner anzeigt. Geben Sie einen Wert zwischen 0-9999999 Sekunden ein. Der Standardwert beträgt `0` Sekunden. Wenn das Feld leer gelassen oder auf 0 (`0`null) festgelegt ist, wird der Bildschirmschoner aktiv, bis ein Benutzer mit dem Gerät interagiert.
+    - **Anzahl der Sekunden, die das Gerät inaktiv ist, bevor der Bildschirmschoner angezeigt wird**: Wählen Sie aus, wie lange das Gerät im Leerlauf ist, bevor der Bildschirm Geben Sie einen Wert zwischen 1-9999999 Sekunden ein. Der Standardwert beträgt `30` Sekunden. Geben Sie eine Zahl ein, die größer als`0`0 (null) ist.
+    - **Medien vor dem Starten des Bildschirmschoners erkennen**: durch **aktivieren** (Standard) wird der Bildschirmschoner nicht angezeigt, wenn auf dem Gerät Audiodaten oder Videos abgespielt werden. **Nicht konfiguriert** zeigt den Bildschirmschoner an, selbst wenn Audiodaten oder Videos abgespielt werden.
 
 ### <a name="device-password-settings"></a>Gerätekennworteinstellungen
 
@@ -179,7 +201,7 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
 - **Entfernen von Benutzern:** Wenn Sie **Blockieren** festlegen, können Benutzer keine Benutzer entfernen. **Nicht konfiguriert** ermöglicht Benutzern, andere Benutzer vom Gerät zu entfernen.
 - **Kontoänderungen:** Wenn Sie **Blockieren** festlegen, können Benutzer Konten nicht bearbeiten. **Nicht konfiguriert** ermöglicht Benutzern, Benutzerkonten auf dem Gerät zu aktualisieren.
 
-### <a name="applications"></a>Anwendungen
+### <a name="applications"></a>Applications
 
 - **Installation über unbekannte Quellen zulassen**: Wenn Sie **Zulassen** festlegen, können Benutzer **Unbekannte Quellen** aktivieren. Diese Einstellung ermöglicht die Installation von Apps aus unbekannten Quellen, einschließlich anderer Quellen als Google Play Store. **Nicht konfiguriert** verhindert, dass Benutzer **Unbekannte Quellen** nutzen.
 - **Zugriff auf alle Apps im Google Play Store zulassen**: Bei Festlegung auf **Zulassen** erhalten Benutzer Zugriff auf alle Apps im Google Play Store. Sie erhalten keinen Zugriff auf die Apps, die der Administrator in [Client-Apps](apps-add-android-for-work.md) sperrt. **Nicht konfiguriert** zwingt Benutzer, nur auf die Apps zuzugreifen, die der Administrator im Google Play Store zur Verfügung stellt, oder auf die Apps, die in [Client-Apps](apps-add-android-for-work.md) erforderlich sind.
@@ -229,7 +251,7 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
   - **Grenzübergreifende Freigabe zulassen**: Ermöglicht die Freigabe von Daten in beide Richtungen über die Begrenzungen des Arbeitsprofils hinaus. Wenn Sie diese Einstellung auswählen, können Apps im Arbeitsprofil Daten für Apps ohne Badgeverwendung im persönlichen Profil freigeben. Diese Einstellung gestattet es verwalteten Apps im Arbeitsprofil, die Daten für Apps auf der nicht verwalteten Seite des Geräts freizugeben. Verwenden Sie diese Einstellung also mit Bedacht.
 
 - **Arbeitsprofilbenachrichtigungen bei Gerätesperre**: Steuert, ob Apps im Arbeitsprofil Daten in Benachrichtigungen anzeigen können, wenn das Gerät gesperrt ist. **Blockieren** verhindert die Datenanzeige. **Nicht konfiguriert** zeigt die Daten an.
-- **Standardmäßige App-Berechtigungen**: Legt die Standardberechtigungsrichtlinie für alle Apps im Arbeitsprofil fest. Ab Android 6 wird der Benutzer aufgefordert, bestimmte von den Apps benötigte Berechtigungen zu erteilen, wenn die App gestartet wird. Bei dieser Richtlinieneinstellung können Sie festlegen, ob Benutzer aufgefordert werden sollen, Berechtigungen für alle Apps im Arbeitsprofil zu gewähren. Beispielsweise können Sie dem Arbeitsprofil eine App zuweisen, die Standortzugriff benötigt. In der Regel fordert diese App den Benutzer dazu auf, den Standortzugriff durch die App zu genehmigen oder abzulehnen. Verwenden Sie diese Richtlinie, um Berechtigungen automatisch ohne Aufforderung zu erteilen, Berechtigungen ohne Aufforderung automatisch zu verweigern oder den Endbenutzer entscheiden zu lassen. Es stehen folgende Optionen zur Auswahl:
+- **Standardmäßige App-Berechtigungen**: Legt die Standardberechtigungsrichtlinie für alle Apps im Arbeitsprofil fest. Ab Android 6 wird der Benutzer aufgefordert, bestimmte von den Apps benötigte Berechtigungen zu erteilen, wenn die App gestartet wird. Bei dieser Richtlinieneinstellung können Sie festlegen, ob Benutzer aufgefordert werden sollen, Berechtigungen für alle Apps im Arbeitsprofil zu gewähren. Beispielsweise können Sie dem Arbeitsprofil eine App zuweisen, die Standortzugriff benötigt. In der Regel fordert diese App den Benutzer dazu auf, den Standortzugriff durch die App zu genehmigen oder abzulehnen. Verwenden Sie diese Richtlinie, um Berechtigungen automatisch ohne Aufforderung zu erteilen, Berechtigungen ohne Aufforderung automatisch zu verweigern oder den Endbenutzer entscheiden zu lassen. Es stehen die folgenden Optionen zur Auswahl:
   - **Gerätestandard**
   - **Eingabeaufforderung**
   - **Automatisch gewähren**
@@ -256,7 +278,7 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
 - **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Sperrung des Arbeitsprofils**: Wählen Sie die Zeitspanne aus, nach der das Arbeitsprofil gesperrt wird. Der Benutzer muss dann seine Anmeldeinformationen eingeben, um wieder Zugriff zu erhalten.
 - **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird**: Geben Sie an, wie häufig ein falsches Kennwort eingegeben werden kann, bevor das Arbeitsprofil auf dem Gerät zurückgesetzt wird.
 - **Kennwortablauf (Tage)** : Geben Sie die Anzahl der Tage an (von **1**-**255**), nach deren Verstreichen das Kennwort eines Endbenutzers geändert werden muss.
-- **Erforderlicher Kennworttyp**: Wählen Sie den Typ des Kennworts, das auf dem Gerät festgelegt werden muss. Es stehen folgende Optionen zur Auswahl:
+- **Erforderlicher Kennworttyp**: Wählen Sie den Typ des Kennworts, das auf dem Gerät festgelegt werden muss. Es stehen die folgenden Optionen zur Auswahl:
   - **Gerätestandard**
   - **Biometrie auf niedriger Sicherheitsstufe**
   - **Erforderlich**
@@ -277,7 +299,7 @@ Diese Kennworteinstellungen gelten für persönliche Profile auf Geräten, die e
 - **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung**: Wählen Sie den Zeitraum, nach dessen Verstreichen ein inaktives Gerät automatisch gesperrt wird.
 - **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird**: Geben Sie an, wie häufig ein falsches Kennwort eingegeben werden kann, bevor alle Daten auf dem Gerät gelöscht werden.
 - **Kennwortablauf (Tage)** : Geben Sie die Anzahl der Tage an (von **1**-**255**), nach deren Verstreichen das Kennwort eines Endbenutzers geändert werden muss.
-- **Erforderlicher Kennworttyp**: Wählen Sie den Typ des Kennworts, das auf dem Gerät festgelegt werden muss. Es stehen folgende Optionen zur Auswahl:
+- **Erforderlicher Kennworttyp**: Wählen Sie den Typ des Kennworts, das auf dem Gerät festgelegt werden muss. Es stehen die folgenden Optionen zur Auswahl:
   - **Gerätestandard**
   - **Biometrie auf niedriger Sicherheitsstufe**
   - **Erforderlich**
