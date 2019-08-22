@@ -6,7 +6,7 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/28/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47c2e509c9eb032dae67dbb5a44839f88fa5de4b
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: 97612a8d169295d9ec28d230fb6f37a0be8ce324
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783075"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582961"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune
 
@@ -225,7 +225,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 3. Der NDES-Server empfängt sehr lange URLs (Abfragen), weshalb Sie zwei Registrierungseinträge hinzufügen müssen:
 
 
-   |                        Standort                        |      Wert      | Typ  |      Daten       |
+   |                        Speicherort                        |      Value      | Type  |      Daten       |
    |--------------------------------------------------------|-----------------|-------|-----------------|
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxFieldLength  | DWORD | 65534 (Dezimal) |
    | HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters | MaxRequestBytes | DWORD | 65534 (Dezimal) |
@@ -384,7 +384,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 
         **Benutzerzertifikattyp**  
 
-        Sie können die E-Mail-Adresse des Benutzers im Antragstellernamen einschließen. Es stehen die folgenden Optionen zur Auswahl:
+        Sie können die E-Mail-Adresse des Benutzers im Antragstellernamen einschließen. Es stehen folgende Optionen zur Auswahl:
 
         - **Nicht konfiguriert**
         - **Allgemeiner Name**
@@ -455,7 +455,7 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
 
         Ein Textfeld im Tabellenformat, das Sie anpassen können. Die folgenden Attribute sind verfügbar:
 
-        - DNS
+        - Domain Name System
 
         Mit dem Zertifikattyp **Gerät** können Sie die folgenden Gerätzertifikatvariablen für den Wert verwenden:  
 
@@ -493,9 +493,9 @@ In diesem Schritt führen Sie die folgenden Aktionen aus:
      - **Schlüsselverschlüsselung**: Der Schlüsselaustausch wird nur gestattet, wenn der Schlüssel verschlüsselt ist.
      - **Digitale Signatur**: Der Schlüsselaustausch wird nur gestattet, wenn der Schutz des Schlüssels durch eine digitale Signatur unterstützt wird.
    - **Schlüsselgröße (Bits)** : Wählen Sie die Anzahl der Bits aus, die im Schlüssel enthalten sein sollen.
-   - **Hashalgorithmus** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Wählen Sie einen der verfügbaren Hashalgorithmustypen, der für dieses Zertifikat verwendet werden soll. Wählen Sie die höchste Sicherheitsebene aus, die die verbundenen Geräten unterstützen.
+   - **Hashalgorithmus** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Wählen Sie einen der verfügbaren Hashalgorithmustypen, der für dieses Zertifikat verwendet werden soll. Wählen Sie die höchste Sicherheitsebene aus, die von Geräten unterstützt wird, mit denen eine Verbindung hergestellt wird.
    - **Stammzertifikat**: Wählen Sie ein [Profil für das vertrauenswürdige Stammzertifikat](certficates-pfx-configure.md#create-a-trusted-certificate-profile) aus, das Sie zuvor konfiguriert und dem Benutzer und/oder dem Gerät zugewiesen haben. Dieses Zertifizierungsstellenzertifikat muss das Stammzertifikat für die Zertifizierungsstelle sein, die das Zertifikat ausstellt, das Sie in diesem Zertifikatprofil konfigurieren. Vergewissern Sie sich, dass Sie dieses Profil für das vertrauenswürdige Stammzertifikat der Gruppe zuweisen, die auch dem SCEP-Zertifikatprofil zugewiesen ist.
-   - **Erweiterte Schlüsselverwendung**: Hier können Sie Werte für den beabsichtigten Zweck des Zertifikats **hinzufügen**. In den meisten Fällen erfordert das Zertifikat **Clientauthentifizierung**, damit der Benutzer bzw. das Gerät auf einem Server authentifiziert werden kann. Sie können jedoch nach Bedarf weitere Schlüsselverwendungen hinzufügen.
+   - **Erweiterte Schlüsselverwendung**: Hier können Sie Werte für den beabsichtigten Zweck des Zertifikats **hinzufügen**. In den meisten Fällen erfordert das Zertifikat **Clientauthentifizierung**, damit der Benutzer bzw. das Gerät auf einem Server authentifiziert werden kann. Allerdings können Sie andere Schlüsselverwendungen nach Bedarf hinzufügen.
    - **Registrierungseinstellungen**
      - **Verlängerungsschwellenwert (%)** : Geben Sie den Prozentsatz der Zertifikatgültigkeitsdauer an, die verbleibt, bevor das Gerät eine Verlängerung des Zertifikats anfordert.
      - **SCEP-Server-URLs**: Geben Sie mindestens eine URL für die NDES-Server ein, die Zertifikate über SCEP ausstellen. Geben Sie zum Beispiel `https://ndes.contoso.com/certsrv/mscep/mscep.dll` ein.
