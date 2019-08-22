@@ -8,7 +8,7 @@
       displayName: ems; emm; azure ad; active directory; ad
     - name: Wie profitiert mein Unternehmen von Intune?
       href: get-started-evaluation.md
-    - name: Neuheiten
+    - name: Neues
       href: whats-new.md
       items:
         - name: Neuheiten bei der App-Benutzeroberfläche
@@ -115,7 +115,7 @@
             - name: Vorbereiten von Intune
               href: migration-guide-prepare.md
               items:
-                - name: Grundlegende Einrichtung
+                - name: Einfaches Setup
                   href: migration-guide-setup.md
                 - name: Konfigurieren von Richtlinien für die Verwaltung von Geräten und Apps
                   href: migration-guide-configure-policies.md
@@ -164,7 +164,7 @@
           href: mdm-authority-set.md
         - name: Verwalten von Rollen
           items:
-            - name: Rollenbasierte Zugriffssteuerung
+            - name: Rollenbasierte Zugriffsteuerung
               href: role-based-access-control.md
             - name: Zuweisen einer Rolle zu einem Benutzer
               href: assign-role.md
@@ -665,6 +665,8 @@
                   href: app-protection-policies-validate.md
                 - name: Zustellung von App-Schutzrichtlinien
                   href: app-protection-policy-delivery.md
+                - name: Schützen von App-Erweiterungen
+                  href: app-protection-policy-extensions.md
                 - name: Überwachen des Benutzerstatus bei App-Schutz
                   href: app-protection-policies-monitor.md
                 - name: Vorbereitungen für WIP-App-Schutzrichtlinien
@@ -735,7 +737,7 @@
               href: troubleshoot-exchange-connector.md
         - name: Anfordern von Support
           href: get-support.md
-- name: Referenz
+- name: Verweis
   items:
     - name: Einstellungslisten
       items:
@@ -810,7 +812,7 @@
                   href: vpn-settings-macos.md
                 - name: WLAN
                   href: wi-fi-settings-macos.md
-                - name: '-Erweiterungen'
+                - name: Extensions
                   href: kernel-extensions-settings-macos.md
                 - name: Benutzerdefiniert
                   href: custom-settings-macos.md
@@ -840,7 +842,7 @@
                   href: vpn-settings-windows-10.md
                 - name: WLAN
                   href: wi-fi-settings-windows.md
-                - name: Education
+                - name: Bildung
                   href: education-settings-windows.md
                 - name: Von mehreren Benutzern gemeinsam verwendetes Gerät
                   href: shared-user-device-settings-windows.md
