@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2019
+ms.date: 08/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f2e4870d1a2614ecccc1647db828e214a6aede8
-ms.sourcegitcommit: e9911a6bbfb8532a27e70d70402a214a8b2b6c75
+ms.openlocfilehash: 267eb630b962893d5ab32530a095fe2fd3f7102e
+ms.sourcegitcommit: cbd406e3c6ab8c9a29d58dfda4a18e34277a1594
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "68818795"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69620216"
 ---
-# <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
+# <a name="whats-new-in-microsoft-intune"></a>Neues in Microsoft Intune
 
 Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Hier finden Sie auch [wichtige Hinweise](#notices), [frühere Releases](whats-new-archive.md) und Informationen zur [Veröffentlichung von Intune-Dienstupdates](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728). 
 
@@ -51,6 +51,176 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Hier 
 ### Role-based access control
 
 -->  
+
+<!-- ########################## -->
+
+## <a name="week-of-august-12-2019"></a>Woche vom 12. August 2019
+
+### <a name="app-management"></a>App-Verwaltung
+
+#### <a name="control-ios-app-uninstall-behavior-at-device-unenrollment----3504144-----"></a>Steuern des Deinstallationsverhaltens einer iOS-App bei einer Aufhebung der Registrierung eines Geräts <!-- 3504144   -->
+Administratoren können verwalten, ob eine App von einem Gerät entfernt oder auf dem Gerät beibehalten wird, wenn die Registrierung des Geräts auf Benutzer- oder Gerätegruppenebene aufgehoben wird. 
+
+#### <a name="categorize-microsoft-store-for-business-apps----3926922---"></a>Kategorisieren von Apps aus dem Microsoft Store für Unternehmen <!-- 3926922 -->
+Sie können Microsoft Store für Unternehmen-Apps kategorisieren. Wählen Sie hierzu **Intune** > **Client-Apps** > **Apps** > eine Microsoft Store für Unternehmen-App auswählen > **App-Informationen** > **Kategorie** aus. Weisen Sie im Dropdownmenü eine Kategorie zu.
+
+#### <a name="customized-notifications-for-microsoft-intune-app-users----4843354----"></a>Angepasste Benachrichtigungen für Microsoft Intune-App-Benutzer <!-- 4843354  -->
+Die Microsoft Intune-App für Android unterstützt jetzt die Anzeige von benutzerdefinierten Pushbenachrichtigungen, wodurch sie an die Unterstützung angepasst ist, die kürzlich in den Unternehmensportal-Apps für iOS und Android hinzugefügt wurde. Weitere Informationen finden Sie unter [Senden benutzerdefinierter Benachrichtigungen in Intune](custom-notifications.md).
+
+### <a name="device-configuration"></a>Gerätekonfiguration
+
+#### <a name="new-features-for-android-enterprise-dedicated-devices-in-multi-app-mode----3755304-3041943-3041946-----"></a>Neue Features für dedizierte Android Enterprise-Geräte im Multi-App-Modus <!-- 3755304 3041943 3041946   -->
+In Intune können Sie Features und Einstellungen in einer kioskartigen Umgebung auf Ihren dedizierten Android Enterprise-Geräten verwalten (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Android Enterprise** für Plattform > **Nur Gerätebesitzer, Geräteeinschränkungen** für Profiltyp).
+
+In diesem Update werden die folgenden Features hinzugefügt:
+
+- **Dedizierte Geräte** > **Multi-App**: Die **Virtuelle Startschaltfläche** kann angezeigt werden, indem auf dem Gerät nach oben gewischt wird oder die Schaltfläche auf dem Bildschirm schwebt, sodass Benutzer sie verschieben können.
+- **Dedizierte Geräte** > **Multi-App**: **Flashlight-Zugriff** ermöglicht es Benutzern, die Taschenlampe zu verwenden. 
+- **Dedizierte Geräte** > **Multi-App**: **Medienlautstärkeregler** ermöglicht es Benutzern, über einen Schieberegler die Medienlautstärke des Geräts zu steuern. 
+- **Dedizierte Geräte** > **Multi-App**:  **Einen Bildschirmschoner aktivieren**, ein benutzerdefiniertes Bild hochladen und steuern, wann der Bildschirmschoner angezeigt wird.
+
+Die aktuellen Einstellungen finden Sie unter [Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune](device-restrictions-android-for-work.md#dedicated-device-settings).
+
+Gilt für:  
+- Dedizierte Android Enterprise-Geräte
+
+#### <a name="new-app-and-configuration-profiles-for-android-enterprise-fully-managed-devices----3574215-3574238-3574235-3574232-----"></a>Neue App- und Konfigurationsprofile für vollständig verwaltete Android Enterprise-Geräte <!-- 3574215 3574238 3574235 3574232   -->
+Mithilfe von Profilen können Sie Einstellungen konfigurieren, mit denen VPN-, E-Mail-und WLAN-Einstellungen auf Ihre (vollständig verwalteten) Android Enterprise-Gerätebesitzer-Geräte angewendet werden. In diesem Update haben Sie folgende Möglichkeiten:
+
+- Sie können [App-Konfigurationsrichtlinien](app-configuration-policies-use-android.md) verwenden, um Outlook-, Gmail- und Nine Work-E-Mail-Einstellungen bereitzustellen.
+- Sie können Gerätekonfigurationsprofile verwenden, um [Einstellungen für vertrauenswürdige Stammzertifikate](certificates-configure.md) bereitzustellen.
+- Sie können Gerätekonfigurationsprofile verwenden, um [VPN](vpn-settings-android-enterprise.md)- und [WLAN](wi-fi-settings-android-enterprise.md)-Einstellungen bereitzustellen.
+
+> [!IMPORTANT]
+> Mit diesem Feature authentifizieren sich Benutzer mit Ihrem Benutzernamen und Kennwort für VPN-, WLAN- und E-Mail-Profile. Derzeit ist zertifikatbasierte Authentifizierung nicht verfügbar. 
+
+Gilt für:  
+- Android Enterprise-Gerätebesitzer (vollständig verwaltet)
+
+#### <a name="control-the-apps-files-documents-and-folders-that-open-when-users-sign-in-to-macos-devices---3914202-----"></a>Steuern der Apps, Dateien, Dokumente und Ordner, die geöffnet werden, wenn Benutzer sich bei macOS-Geräten anmelden <!--3914202   -->
+Sie können Funktionen auf macOS-Geräten aktivieren und konfigurieren (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **macOS** für Plattform > **Gerätefunktionen** für Profiltyp). 
+
+In diesem Update gibt es eine neue „Anmeldeelemente“-Einstellung, mit der gesteuert wird, welche Apps, Dateien, Dokumente und Ordner geöffnet werden, wenn sich ein Benutzer am registrierten Gerät anmeldet. 
+
+Informationen zu den aktuellen Einstellungen finden Sie unter [macOS-Gerätefunktionseinstellungen in Intune](macos-device-features-settings.md).
+
+Gilt für:  
+- macOS
+
+#### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings------4464404----------"></a>Stichtage ersetzen Einstellungen für erzwungenen Neustart für Windows-Updateringe   <!-- 4464404        -->
+Um mit den neuesten [Windows-Wartungsänderungen](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing) übereinzustimmen, unterstützen die Windows 10-Updateringe von Intune jetzt [Einstellungen für Stichtage](windows-update-settings.md). *Stichtage* bestimmen, wann Funktions- und Sicherheitsupdates auf einem Gerät installiert werden.  Auf Geräten, auf denen Windows 10 1903 oder höher ausgeführt wird, ersetzen *Stichtage* die Konfigurationen für *erzwungenen Neustart*.  Zukünftig wird auch in früheren Versionen von Windows 10 *erzwungener Neustart* durch *Stichtage* ersetzt.  
+
+Wenn Sie keine *Stichtage* konfigurieren, werden für Geräte weiterhin deren Einstellungen für *erzwungenen Neustart* verwendet. In einem zukünftigen Update wird die [Intune-Unterstützung für die Einstellungen für erzwungenen Neustart aber beendet werden](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-).  
+
+Sie sollten die Verwendung von *Stichtagen* für sämtliche Ihrer Windows 10-Geräte planen. Sobald Einstellungen für *Stichtage* vorhanden sind, können Sie die Intune-Konfigurationen für *erzwungenen Neustart* auf „Nicht konfiguriert“ festlegen. Sind diese Konfigurationen auf „Nicht konfiguriert“ festgelegt, beendet Intune das Verwalten dieser Einstellungen auf Geräten, ohne die letzten Konfigurationen für die Einstellung vom Gerät zu entfernen. Daher bleiben die letzten Konfigurationen, die für *erzwungenen Neustart* festgelegt wurden, solange auf Geräten aktiv und wirksam, bis diese Einstellungen durch eine andere Methode als Intune geändert werden. Wenn sich später die Geräteversion von Windows ändert oder wenn später die Intune-Unterstützung für *Stichtage* auf die Windows-Version der Geräte erweitert wird, werden auf dem jeweiligen Gerät die neuen Einstellungen verwendet, die bereits vorhanden sind.
+
+#### <a name="support-for-multiple-microsoft-intune-certificate-connectors--------4704642--------"></a>Unterstützung für mehrere Microsoft Intune Certificate Connectors   <!--   4704642      -->
+Intune unterstützt nun die Installation und Verwendung von mehreren [Microsoft Intune Certificate Connectors für PKCS-Vorgänge](certficates-pfx-configure.md). Diese Änderung unterstützt Lastenausgleich und Hochverfügbarkeit der Connectors. Jede Connectorinstanz kann Zertifikatanforderungen von Intune verarbeiten.  Ist ein Connector nicht verfügbar, übernehmen andere Connectors die Verarbeitung von Anforderungen. 
+
+Wenn Sie mehrere Connectors verwenden möchten, müssen Sie kein Upgrade auf die neueste Version der Connector-Software durchführen.  
+
+#### <a name="new-settings-and-changes-to-existing-settings-to-restrict-features-on-ios-and-macos-devices----4867699-4867709-----"></a>Neue Einstellungen und Änderungen an vorhandenen Einstellungen, um Funktionen auf iOS- und macOS-Geräten einzuschränken <!-- 4867699 4867709   -->
+Sie können Profile erstellen, um Einstellungen auf iOS-und macOS-Geräten einzuschränken (**Gerätekonfigurationen** > **Profile** > **Profil erstellen** > **iOS** oder **macOS** für Plattformtyp > **Geräteeinschränkungen**). Dieses Update umfasst folgende Funktionen:
+
+- Unter **macOS** > **Geräteeinschränkungen** > **Cloud und Speicher** verwenden Sie die neue **Handoff**-Einstellung, um Benutzer daran zu hindern, eine Arbeit auf einem macOS-Gerät zu beginnen und diese Arbeit auf einem anderen macOS- oder iOS-Gerät fortzusetzen.
+
+  Die aktuellen Einstellungen finden Sie unter [macOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune](device-restrictions-macos.md).
+
+- Unter **iOS** > **Geräteeinschränkungen** gibt es einige Änderungen:
+
+  - **Integrierte Apps** > **Mein iPhone suchen (nur überwacht)** : Neue Einstellung, die diese Funktion im App-Feature für die Suche blockiert. 
+  - **Integrierte Apps** > **Meine Freunde suchen (nur überwacht)** : Neue Einstellung, die diese Funktion im App-Feature für die Suche blockiert. 
+  - **Drahtlosnetzwerke** > **Änderung des WLAN-Status (nur überwacht)** : Neue Einstellung, die verhindert, dass Benutzer WLAN auf dem Gerät ein- oder ausschalten können.
+  - **Tastatur und Wörterbuch** > **QuickPath (nur überwacht)** : Neue Einstellung, die die QuickPath-Funktion blockiert.
+  - **Cloud und Speicher**: **Aktivitätsfortsetzung** wurde in **Handoff** umbenannt.
+
+  Die aktuellen Einstellungen finden Sie unter [iOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune](device-restrictions-ios.md).
+
+Gilt für:  
+- macOS 10.15 und neuer
+- iOS 13 und neuer
+
+#### <a name="some-unsupervised-ios-device-restrictions-will-become-supervised-only-with-the-ios-130-release----4867809-----"></a>Einige nicht überwachte iOS-Geräteeinschränkungen werden mit der iOS 13.0-Version zu unbedingt überwachten Einschränkungen <!-- 4867809   -->
+In diesem Update gelten einige Einstellungen für unbedingt überwachte Geräte mit der iOS 13.0-Version. Sind diese Einstellungen für nicht überwachte Geräte vor der iOS 13.0-Version konfiguriert und diesen zugewiesen, werden die Einstellungen weiterhin auf diese nicht überwachten Geräte angewendet. Diese Einstellungen gelten auch weiterhin, nachdem die Geräte auf iOS 13.0 aktualisiert wurden. Diese Einschränkungen werden auf nicht überwachten Geräten entfernt, die gesichert und wiederhergestellt werden. 
+
+Zu diesen Einstellungen zählen:
+
+- App Store, Dokumentanzeige, Spiele
+  - App Store
+  - Anstößige iTunes-Musik, Podcasts oder Nachrichteninhalte
+  - Hinzufügen von Game Center-Freunden
+  - Multiplayerspiele
+- Integrierte Apps
+  - Kamera
+    - FaceTime
+  - Safari
+    - Automatisch ausfüllen
+- Cloud und Speicher
+  - In iCloud sichern
+  - iCloud-Dokumentsynchronisierung blockieren
+  - Synchronisierung zwischen iCloud und Keychain blockieren
+
+Die aktuellen Einstellungen finden Sie unter [iOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune](device-restrictions-ios.md).
+
+Gilt für:  
+- iOS 13.0 und neuer
+
+#### <a name="improved-device-status-for-macos-filevault-encryption-----4944983-----------"></a>Verbesserter Gerätestatus für die macOS FileVault-Verschlüsselung  <!-- 4944983         -->
+Wir haben einige der [Gerätestatusmeldungen](encryption-monitor.md#device-encryption-status) für die FileVault-Verschlüsselung auf macOS-Geräten aktualisiert.
+
+#### <a name="some-windows-defender-antivirus-scan-settings-in-the-reporting-show-a-failed-status----5119229---"></a>Für einige Windows Defender Antivirus-Überprüfungseinstellungen steht in Berichten der Status „Fehlgeschlagen“ <!-- 5119229 -->
+In Intune können Sie Richtlinien erstellen, um Windows Defender Antivirus zum Überprüfen Ihrer Windows 10-Geräte zu verwenden (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10 und höher** für Plattform > **Geräteeinschränkungen** für Profiltyp > **Windows Defender Antivirus**). In Berichten steht für **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung** und **Art der durchzuführenden Systemüberprüfung** der Status „Fehlgeschlagen“, obwohl tatsächlich der Status „Erfolgreich“ gemeint ist. 
+
+Dieses Verhalten wurde im vorliegenden Update korrigiert. Daher wird für die Einstellungen **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung** und **Art der durchzuführenden Systemüberprüfung** der Status „Erfolgreich“ mitgeteilt, wenn die Überprüfungen erfolgreich abgeschlossen wurden, und der Status „Fehlgeschlagen“, wenn die Einstellungen nicht angewendet werden konnten. 
+
+Weitere Informationen zu den Windows Defender Antivirus-Einstellungen finden Sie unter [Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune](device-restrictions-windows-10.md#windows-defender-antivirus). 
+
+### <a name="device-enrollment"></a>Geräteregistrierung
+
+#### <a name="default-scope-tags----3702875----"></a>Standardbereichsmarkierungen <!-- 3702875  -->
+Es ist nun eine neue integrierte Standardbereichsmarkierung verfügbar. Alle nicht markierten Intune-Objekte, die Bereichsmarkierungen unterstützen, werden automatisch der Standardbereichsmarkierung zugewiesen. Die **Standard**-Bereichsmarkierung wird allen vorhandenen Rollenzuweisungen hinzugefügt, um Einklang mit der heutigen Administratorerwartung aufrechtzuerhalten. Wenn Sie nicht möchten, dass ein Administrator Intune-Objekte mit der Standardbereichsmarkierung sehen kann, entfernen Sie die Standardbereichsmarkierung aus der Rollenzuweisung. Diese Features ähnelt dem Feature für Sicherheitsbereiche in System Center Configuration Manager. Weitere Informationen finden Sie unter [Verwenden der rollenbasierten Zugriffssteuerung und Bereichsmarkierungen für verteilte IT](scope-tags.md).
+
+#### <a name="android-enrollment-device-administrator-support----4869749-----"></a>Unterstützung für die Registrierung eines Android-Geräteadministrators <!-- 4869749   -->
+Die Registrierungsoption „Android-Geräteadministrator“ wurde der Seite „Android-Registrierung“ hinzugefügt (**Intune** > **Geräteregistrierung** > **Android-Registrierung**). „Android-Geräteadministrator“ ist weiterhin standardmäßig für alle Mandanten aktiviert.  Weitere Informationen finden Sie unter [Android-Geräteadministratorregistrierung](android-enroll-device-administrator.md).
+
+#### <a name="skip-more-screens-in-setup-assistant---4877451----"></a>Überspringen weiterer Bildschirme im Setup-Assistenten <!--4877451  -->
+Sie können „Programm zur Geräteregistrierung“-Profile so festlegen, dass die folgenden Bildschirme des Setup-Assistenten übersprungen werden:
+- Für iOS
+    - Darstellung
+    - Express-Sprache
+    - Bevorzugte Sprache
+    - Migration von Gerät zu Gerät
+- Für macOS
+    - Bildschirmzeit
+    - Touch ID-Setup
+
+Weitere Informationen zur Anpassung des Setup-Assistenten finden Sie unter [Erstellen eines Apple-Registrierungsprofils für iOS](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) und [Erstellen eines Apple-Registrierungsprofils für macOS](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile).
+
+#### <a name="add-a-user-column-to-the-autopilot-device-csv-upload-process----3823054---"></a>Hinzufügen einer Benutzerspalte zum CSV-Upload für AutoPilot-Geräte <!-- 3823054 -->
+Sie können jetzt eine Benutzerspalte zum CSV-Upload für AutoPilot-Geräte hinzufügen. Hiermit können Sie Benutzer massenweise beim Importieren der CSV-Datei zuweisen. Das neue Format für die Zeilen in der CSV-Datei sieht wie folgt aus: „serial-number“, „windows-product-id“, „hardware-hash“, „optional-group-tag“, „optional-assigned-user“. Weitere Informationen finden Sie unter [Registrieren von Windows-Geräten in Intune mithilfe von Windows Autopilot](enrollment-autopilot.md).
+
+
+### <a name="device-management"></a>Geräteverwaltung
+
+#### <a name="configure-automatic-device-clean-up-time-limit-down-to-30-days---4231059----"></a>Konfigurieren des Zeitlimits für automatische Gerätebereinigung auf 30 Tage <!--4231059  -->
+Sie können das Zeitlimit für automatische Gerätebereinigung auf 30 Tage als kürzesten Zeitraum (statt des vorherigen Limits von 90 Tagen) nach der letzten Anmeldung festlegen. Navigieren Sie dafür zu **Intune** > **Geräte** > **Setup** > **Gerätebereinigungsregeln**.
+
+#### <a name="build-number-included-on-android-device-hardware-page----4461910-----"></a>Buildnummer auf „Hardware“-Seite eines Android-Geräts enthalten <!-- 4461910   -->
+Ein neuer Eintrag auf der „Hardware“-Seite für jedes Android-Gerät enthält die Buildnummer des Betriebssystems des Geräts. Weitere Informationen finden Sie unter [Anzeigen von Gerätedetails in Intune](device-inventory.md).
+
+
+<!-- ########################## -->
+
+## <a name="week-of-august-5-2019"></a>Woche vom 5. August 2019
+
+### <a name="zebra-technologies-is-a-supported-oem-for-oemconfig-on-android-enterprise-devices-----4843713---"></a>Zebra Technologies ist ein unterstützter OEM für OEMConfig auf Android Enterprise-Geräten  <!-- 4843713 -->
+
+In Intune können Sie Gerätekonfigurationsprofile erstellen und Einstellungen auf Android Enterprise-Geräte mit OEMConfig anwenden (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Android Enterprise** für Plattform > **OEMConfig** für Profiltyp).
+
+In diesem Update ist Zebra Technologies ein unterstützter OEM (Original Equipment Manufacturer) für OEMConfig. Weitere Informationen zu OEMConfig finden Sie unter [Verwenden und Verwalten von Android Enterprise-Geräten mit OEMConfig](android-oem-configuration-overview.md).
+
+Gilt für:  
+- Android Enterprise
 
 <!-- ########################## -->
 
@@ -138,7 +308,7 @@ Mithilfe der Aktion **Gerät suchen** können Sie die exakten Koordinaten eines 
 
 ### <a name="device-security"></a>Gerätesicherheit
 
-#### <a name="advanced-settings-for-windows-defender-firewall--public-preview-------1311949-------"></a>Erweiterte Einstellungen für Windows Defender-Firewall (öffentliche Vorschauversion)  <!--  1311949     -->  
+#### <a name="advanced-settings-for-windows-defender-firewall--public-preview------1311949-------"></a>Erweiterte Einstellungen für Windows Defender-Firewall (öffentliche Vorschauversion)  <!--  1311949     -->  
 Verwenden Sie Intune, um [benutzerdefinierte Firewallregeln als Teil eines Gerätekonfigurationsprofils](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices) für Endpoint Protection unter Windows 10 zu verwalten. Regeln können das Eingangs- und Ausgangsverhalten von Anwendungen, Netzwerkadressen und Ports festlegen. 
 
 #### <a name="updated-ui-for-managing-security-baselines------4091125-------"></a>Aktualisierte Benutzeroberfläche für die Verwaltung von Sicherheitsbaselines   <!-- 4091125     -->
@@ -270,9 +440,6 @@ Gilt für: iOS
 
 ### <a name="device-enrollment"></a>Geräteregistrierung
 
-#### <a name="windows-autopilot-reset-removes-the-devices-primary-user----4156123---"></a>Die Windows Autopilot-Zurücksetzung entfernt den primären Benutzer des Geräts <!-- 4156123 -->
-Dieses Feature hat sich verzögert und wird in einem kommenden Sprint veröffentlicht.    
-
 #### <a name="windows-autopilot-support-for-hybrid-azure-ad-join----4809146--"></a>Windows Autopilot-Unterstützung für Azure AD Hybrid Join <!-- 4809146-->
 Windows Autopilot für vorhandene Geräte unterstützt jetzt Azure AD Hybrid Join (zusätzlich zur vorhandenen Azure AD Join-Unterstützung). Gilt für Geräte mit Windows 10, Version 1809 und höher. Weitere Informationen finden Sie unter [Windows Autopilot für vorhandene Geräte](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices).
 
@@ -310,7 +477,7 @@ Sicherheitsbaselines für die Intune-Unterstützung der Versionsverwaltung. Mit 
 #### <a name="the-use-security-keys-for-sign-in-setting-has-moved-----4501151---"></a>Die Einstellung „Sicherheitsschlüssel zur Anmeldung verwenden“ wurde verschoben  <!-- 4501151 -->
 Die Gerätekonfigurationseinstellung für Identity Protection mit dem Namen **Sicherheitsschlüssel zur Anmeldung verwenden** ist keine Untereinstellung mehr von *Windows Hello for Business konfigurieren*. Es handelt sich nun um eine Einstellung auf oberster Ebene, die immer verfügbar ist, auch wenn Sie die Verwendung von Windows Hello for Business nicht aktivieren. Weitere Informationen finden Sie unter [Identity Protection](identity-protection-windows-settings.md).
 
-### <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
+### <a name="role-based-access-control"></a>Rollenbasierte Zugriffsteuerung
 
 #### <a name="new-permissions-for-assigned-group-admins------4504437-----"></a>Neue Berechtigungen für zugewiesene Gruppenadministratoren   <!-- 4504437   -->
 Die in Intune integrierte Rolle des Schuladministrators verfügt nun über CRUD-Berechtigungen (Create, Read, Update und Delete [Erstellen, Lesen, Aktualisieren und Löschen]) für verwaltete Apps. Dieses Update bedeutet, dass Sie, wenn Sie in Intune for Education als Gruppenadministrator zugewiesen sind, nun das iOS-MDM-Push-Zertifikat, die iOS-MDM-Servertoken und die iOS-VPP-Token zusammen mit [allen vorhandenen Berechtigungen](https://docs.microsoft.com/intune-education/group-admin-delegate#group-admin-permissions) erstellen, anzeigen, aktualisieren und löschen können. Um eine dieser Aktionen durchzuführen, gehen Sie zu **Mandanteneinstellungen** > **iOS-Geräteverwaltung**.  
@@ -539,7 +706,7 @@ Sie können Anforderungsregeln mithilfe von PowerShell-Skripts, Registrierungswe
 #### <a name="configure-your-win32-apps-to-be-installed-on-intune-enrolled-azure-ad-joined-devices----3695227----"></a>Konfigurieren von Win32-Apps für die Installation auf in Intune registrierten, in Azure AD eingebundenen Geräten <!-- 3695227  -->
 Sie können Ihre Win32-Apps für die Installation auf in Intune registrierten, in Azure AD eingebundenen Geräten zuweisen. Weitere Informationen zu Win32-Apps in Intune finden Sie unter [Eigenständiges Intune – Win32-App-Verwaltung](apps-win32-app-management.md).
 
-#### <a name="device-overview-shows-primary-user---794259----"></a>Primärer Benutzer in der Geräteübersicht <!--794259  -->
+#### <a name="device-overview-shows-primary-user---3794259----"></a>Primärer Benutzer in der Geräteübersicht <!--3794259  -->
 Die Seite „Geräteübersicht“ zeigt den primären Benutzer (Affinität zwischen Benutzer und Gerät) an. Klicken Sie auf **Intune** > **Geräte** > **Alle Geräte**, und wählen Sie dann ein Gerät aus, um den primären Benutzer eines Geräts anzuzeigen. Der primäre Benutzer wird außerdem oben auf der Seite **Übersicht** angezeigt.
 
 #### <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices----4105925----"></a>Zusätzliche Berichterstellung für verwaltete Google Play-Apps für Android Enterprise-Arbeitsprofilgeräte <!-- 4105925  -->
@@ -581,8 +748,8 @@ Gilt für: Android Enterprise
 
 #### <a name="windows-update-notifications-----3316758-3316782----"></a>Windows Update-Benachrichtigungen  <!-- 3316758, 3316782  -->
 Wir haben den Windows Update-Ringkonfigurationen zwei *Einstellungen für die Benutzeroberfläche* hinzugefügt, die Sie über die Intune-Konsole verwalten können. Sie können nun:
-- Benutzern erlauben oder verweigern, [nach Windows-Updates zu suchen](windows-update-settings.md#block-user-from-scanning-for-windows-updates).
-- die [Windows Update-Benachrichtigungsebene](windows-update-settings.md#windows-update-notification-level) verwalten, die Benutzern angezeigt wird.
+- Benutzern erlauben oder verweigern, [nach Windows-Updates zu suchen](windows-update-settings.md).
+- die [Windows Update-Benachrichtigungsebene](windows-update-settings.md) verwalten, die Benutzern angezeigt wird.
 
 #### <a name="new-device-restriction-settings-for-android-enterprise-device-owner----3574254----"></a>Neue Einstellungen zur Geräteeinschränkung für Android Enterprise-Gerätebesitzer <!-- 3574254  -->
 Sie können ein Geräteeinschränkungsprofil auf Android Enterprise-Geräten erstellen, um Features zuzulassen oder einzuschränken, Kennwortregeln festzulegen und mehr (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Android Enterprise** (Plattform) > **Nur Gerätebesitzer > Geräteeinschränkungen** (Profiltyp)). 
@@ -647,7 +814,7 @@ Als V1.0 in Version 1808 erstmals eingeführt wurde, gab es wichtige Unterschie
 #### <a name="monitor-security-baseline-status-public-preview----3082047---"></a>Überwachen des Status der Sicherheitsbaseline (Public Preview) <!-- 3082047 --> 
 Der Überwachung von Sicherheitsbaselines wurde eine [Ansicht für einzelne Kategorien](security-baselines-monitor.md#per-category-view) hinzugefügt. (Sicherheitsbaselines befinden sich weiterhin in Preview). Die Ansicht für einzelne Kategorien zeigt jede Kategorie der Baseline mit dem Prozentsatz der Geräte an, die in jede Statusgruppe dieser Kategorie fallen. Sie können nun anzeigen, wie viele Geräte nicht mit den individuellen Kategorien übereinstimmen und falsch konfiguriert oder nicht anwendbar sind.
 
-### <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
+### <a name="role-based-access-control"></a>Rollenbasierte Zugriffsteuerung
 
 #### <a name="scope-tags-for-apple-vpp-tokens---2371886----"></a>Bereichsmarkierungen für Apple-VPP-Token <!--2371886  -->
 Sie können nun Bereichsmarkierungen zu Apple-VPP-Token hinzufügen. Nur Benutzer, denen die gleiche Bereichsmarkierung zugewiesen ist, können auf das Apple-VPP-Token mit dieser Markierung zugreifen. VPP-Apps und E-Books, die mit diesem Token erworben werden, erben seine Bereichsmarkierungen. Weitere Informationen zu Bereichsmarkierungen finden Sie unter [Use RBAC and scope tags (Verwenden der rollenbasierten Zugriffssteuerung und von Bereichsmarkierungen)](scope-tags.md).
@@ -763,7 +930,7 @@ Sie können nun nach exakten Gerätenamen suchen. Wechseln Sie zu **Intune** > *
 #### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202----"></a>Unterstützung für zusätzliche Connectors auf der Seite „Mandantenstatus“ <!-- 3617202  -->
 Auf der [Mandantenstatusseite](tenant-status.md) werden nun Statusinformationen zu zusätzlichen Connectors, einschließlich *Windows Defender Advanced Threat Protection* (ATP) und anderen Mobile Threat Defense-Connectors, angezeigt.
 
-### <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
+### <a name="role-based-access-control"></a>Rollenbasierte Zugriffsteuerung
 
 #### <a name="granting-intune-read-only-access-to-some-azure-active-directory-roles----3637917----"></a>Gewähren des schreibgeschützten Zugriffs auf Intune für einige Azure Active Directory-Rollen <!-- 3637917  -->
 Der schreibgeschützte Zugriff auf Intune wurde den folgenden Azure AD-Rollen gewährt. Berechtigungen, die mit Azure AD-Rollen gewährt werden, haben Vorrang vor der rollenbasierten Zugriffssteuerung von Intune.
@@ -856,7 +1023,7 @@ Gilt für:
 - macOS
 
 #### <a name="intune-conditional-access-ui-update------2432313-----"></a>Update der Intune-Benutzeroberfläche für den bedingten Zugriff   <!-- 2432313   -->
-Wir haben die Benutzeroberfläche für den bedingten Zugriff in der Intune-Konsole verbessert. Dazu gehören:
+Wir haben die Benutzeroberfläche für den bedingten Zugriff in der Intune-Konsole verbessert. Dazu zählen:
 - Das Intune-Blatt *Bedingter Zugriff* wurde durch das entsprechende Blatt aus Azure Active Directory ersetzt. Dadurch wird sichergestellt, dass Sie alle Einstellungen und Konfigurationen für den [bedingten Zugriff](conditional-access.md) (eine Technologie von Azure AD) innerhalb der Intune-Konsole nutzen können. 
 - Das Blatt *Lokaler Zugriff* wurde in *Exchange-Zugriff* umbenannt, und das Setup für den *Exchange-Dienstconnector* wurde auf dieses Blatt verschoben.  Dadurch ändert sich der Ort, an dem Sie [Details zu Exchange (online und lokal) konfigurieren und überwachen](exchange-connector-install.md).  
 
@@ -1188,7 +1355,7 @@ Auf der neuen Seite mit dem [Mandantenstatus](tenant-status.md) können Sie auf 
 Innerhalb der nächsten Tage wird diese neue Hilfe- und Supportbenutzeroberfläche für alle Mandanten verfügbar gemacht. Diese neue Benutzeroberfläche ist für Intune verfügbar und kann über das Blatt „Intune“ im [Azure-Portal](https://portal.azure.com/) verwendet werden.
 Über die neue Benutzeroberfläche können Sie Ihr Problem in eigenen Worten beschreiben und erhalten Einblicke in die Problembehandlung sowie webbasierte Anleitungen zur Selbsthilfe. Diese Lösungen werden über einen regelbasierten Algorithmus für maschinelles Lernen angeboten, der auf Benutzeranfragen basiert. Zusätzlich zur themenspezifischen Anleitung können Sie auch den neuen Workflow zur Anfragestellung nutzen, um eine Supportanfrage per E-Mail oder Telefon zu stellen. Diese neue Benutzeroberfläche ersetzen die alte Benutzeroberfläche für Hilfe und Support, die statische, vorab ausgewählte Optionen enthielt. Diese basieren auf dem Bereich der Konsole, in dem Sie sich befinden, wenn Sie „Hilfe und Support“ öffnen. Weitere Informationen finden Sie unter [Anfordern von Support für Microsoft Intune](get-support.md).
 
-### <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
+### <a name="role-based-access-control"></a>Rollenbasierte Zugriffsteuerung
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Bereichsmarkierungen für Apps <!-- 1081941 -->
 Sie können Bereichsmarkierungen erstellen, um den Zugriff für Rollen und Apps einzuschränken. Sie können einer App eine Bereichsmarkierung hinzufügen, sodass nur Benutzer mit der gleichen Bereichsmarkierung wie die App auf diese zugreifen können. Derzeit können Apps, die Intune über den verwalteten Google Play Store hinzugefügt wurden oder die mithilfe des Apple Volume Purchase Program (VPP) erworben wurden, keine Bereichsmarkierungen hinzugefügt werden (zukünftige Unterstützung dafür ist geplant). Weitere Informationen finden Sie unter [Use scope tags to filter policies (Verwenden von Bereichsmarkierungen zum Filtern von Richtlinien)](scope-tags.md).

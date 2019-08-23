@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19b8693a5d2c2df042bd9339cb74bbcde0da626d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 890d398de938680447b71a46d4e329a6bdf52616
+ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884049"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "68960581"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Eigenständiges Intune – Win32-App-Verwaltung
 
@@ -95,7 +95,7 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
 
 Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-App zu Intune.
 
-### <a name="step-1-specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
+### <a name="step-1-specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 3. Wählen Sie im **Intune**-Bereich die Option **Client-Apps** > **Apps** > **Hinzufügen** aus.
@@ -103,7 +103,7 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
 
     ![Screenshot des Blatts „App hinzufügen“ – Dropdownfeld zum Hinzufügen des Typs](./media/apps-win32-app-01.png)
 
-### <a name="step-2-upload-the-app-package-file"></a>Schritt 2: Hochladen der App-Paketdatei
+### <a name="step-2-upload-the-app-package-file"></a>Schritt 2: Hochladen der App-Paketdatei
 
 1. Wählen Sie im Bereich **App hinzufügen** die Option **App-Paketdatei** aus, um eine Datei auszuwählen. Der Bereich „App-Paketdatei“ wird angezeigt.
 
@@ -116,7 +116,7 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
 
 3. Wählen Sie danach **OK**.
 
-### <a name="step-3-configure-app-information"></a>Schritt 3: Konfigurieren von App-Informationen
+### <a name="step-3-configure-app-information"></a>Schritt 3: Konfigurieren von App-Informationen
 
 1. Wählen Sie im Bereich **App hinzufügen** die Option **App-Informationen** aus, um die App zu konfigurieren.
 2. Konfigurieren Sie im Bereich **App-Informationen** die folgenden Informationen. Einige der Werte in diesem Bereich wurden möglicherweise automatisch ausgefüllt.
@@ -283,6 +283,8 @@ An dieser Stelle haben Sie alle Schritte zum Hinzufügen einer Win32-App zu Intu
 ## <a name="app-dependencies"></a>App-Abhängigkeiten
 
 App-Abhängigkeiten sind Anwendungen, die installiert sein müssen, bevor Ihre Win32-App installiert werden kann. Sie können anfordern, dass andere Apps als Abhängigkeiten installiert werden. Das heißt, das Gerät muss die abhängige(n) App(s) installieren, bevor die Win32-App installiert wird. Es sind maximal 100 Abhängigkeiten möglich. Dazu zählen die Abhängigkeiten aller eingeschlossenen Abhängigkeiten sowie die App selbst. Sie können Win32-App-Abhängigkeiten erst hinzufügen, nachdem Ihre Win32-App zu Intune hinzugefügt und darin hochgeladen wurde. Sobald Ihre Win32-App hinzugefügt wurde, sehen Sie die Option **Abhängigkeiten** auf dem Blatt für Ihre Win32-App. 
+
+Jede Win32-App-Abhängigkeit muss auch eine Win32-App sein. Eine Abhängigkeit von anderen App-Typen, z. B. einzelne branchenspezifische Apps mit MSI oder Store-Apps, wird nicht unterstützt.
 
 Wenn Sie eine App-Abhängigkeit hinzufügen, können Sie basierend auf dem Namen und dem Herausgeber der App Suchvorgänge ausführen. Darüber hinaus können Sie Ihre hinzugefügten Abhängigkeiten nach Name und Herausgeber der App sortieren. Bereits zuvor hinzugefügte App-Abhängigkeiten können nicht aus der Liste der hinzugefügten App-Abhängigkeiten ausgewählt werden. 
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7636e1914e23e7009a25f45f330fe85af2a03536
-ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
+ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701010"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651174"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Verwalten des Webzugriffs mithilfe von Microsoft Edge mit Microsoft Intune
 
@@ -124,7 +124,7 @@ Sie weisen die Einstellungen Gruppen von Benutzern in Azure AD zu. Haben diese B
 
 Sowohl der Intune Managed Browser als auch Microsoft Edge können als richtliniengeschützte Browser verwendet werden. Wenn Sie sicherstellen möchten, dass Ihre Benutzer an die richtige Browser-App weitergeleitet werden, legen Sie für all Ihre von Intune verwalteten Apps (z.B. Outlook, OneDrive und SharePoint) die folgende Konfigurationseinstellung fest:
 
-|    Key    |    Wert    |
+|    Schlüssel    |    Value    |
 |------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.useEdge`    |    Wenn der Wert `true` festgelegt ist, werden Ihre Benutzer zum Download und zur Verwendung von Microsoft Edge angewiesen.<br>Wenn der Wert `false` festgelegt ist, können Ihre Benutzer Intune Managed Browser verwenden.    |
 
@@ -149,7 +149,7 @@ Im Folgenden finden Sie einige Beispiele für Szenarien, die durch den Azure AD-
 - Ein Benutzer verwendet die mobile Outlook-App, die durch Intune geschützt ist. Dann klickt er in einer E-Mail auf einen Link zu einer Intranetsite, und Microsoft Edge erkennt, dass diese Site dem Benutzer über den Anwendungsproxy verfügbar gemacht wurde. Der Benutzer wird automatisch über den Anwendungsproxy weitergeleitet, um sich mit einer anwendbaren Option für die mehrstufige Authentifizierung und bedingtem Zugriff zu authentifizieren, bevor er zur Intranetsite gelangt. Der Benutzer kann jetzt auch auf seinem mobilen Gerät auf Intranetsites zugreifen, und der Link in Outlook funktioniert wie erwartet.
 - Ein Benutzer öffnet Microsoft Edge auf seinem iOS- oder Android-Gerät. Wenn Microsoft Edge durch Intune geschützt ist und der Anwendungsproxy aktiviert wurde, kann der Benutzer über die gewohnte interne URL zu einer Intranetsite navigieren. Microsoft Edge erkennt, dass diese Intranetsite dem Benutzer über den Anwendungsproxy verfügbar gemacht wurde. Der Benutzer wird zur Authentifizierung automatisch über den Anwendungsproxy weitergeleitet, bevor er zur Intranetsite gelangt. 
 
-### <a name="before-you-start"></a>Vorbereitung
+### <a name="before-you-start"></a>Bevor Sie beginnen
 
 - Richten Sie Ihre internen Anwendungen über den Azure AD-Anwendungsproxy ein.
   - Informationen zum Konfigurieren des Anwendungsproxys und zum Veröffentlichen von Anwendungen finden Sie in der [Setup-Dokumentation](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
@@ -158,17 +158,17 @@ Im Folgenden finden Sie einige Beispiele für Szenarien, die durch den Azure AD-
 > [!NOTE]
 > Es kann bis zu 24 Stunden dauern, bis aktualisierte Umleitungsdaten des Anwendungsproxys in Managed Browser und Microsoft Edge in Kraft treten.
 
-#### <a name="step-1-enable-automatic-redirection-to-microsoft-edge-from-outlook"></a>Schritt 1: Aktivieren der automatischen Umleitung von Outlook zu Microsoft Edge
+#### <a name="step-1-enable-automatic-redirection-to-microsoft-edge-from-outlook"></a>Schritt 1: Aktivieren der automatischen Umleitung von Outlook zu Microsoft Edge
 Konfigurieren Sie Outlook mit einer App-Schutzrichtlinie, mit der die Einstellung **Webinhalt für per Richtlinie verwaltete Browser freigeben** aktiviert wird.
 
 ![Screenshot der App-Schutzrichtlinie „Webinhalt für per Richtlinie verwaltete Browser freigeben“](./media/manage-microsoft-edge/manage-microsoft-edge-03.png)
 
-#### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>Schritt 2: Festlegen der App-Konfigurationseinstellung zum Aktivieren des Anwendungsproxys
+#### <a name="step-2-set-the-app-configuration-setting-to-enable-app-proxy"></a>Schritt 2: Festlegen der App-Konfigurationseinstellung zum Aktivieren des Anwendungsproxys
 Geben Sie Microsoft Edge als Ziel für das folgende Schlüssel-Wert-Paar an, um den Anwendungsproxy für Microsoft Edge zu aktivieren:
 
-|    Key    |    Wert    |
+|    Schlüssel    |    Value    |
 |-------------------------------------------------------------------|-------------|
-|    com.microsoft.intune.mam.managedbrowser.AppProxyRedirection    |    true    |
+|    com.microsoft.intune.mam.managedbrowser.AppProxyRedirection    |    wahr    |
 
 Weitere Informationen zur gemeinsamen Verwendung von Microsoft Edge und dem Azure AD-Anwendungsproxy für nahtlosen (und geschützten) Zugriff auf lokale Web-Apps finden Sie im Blogbeitrag [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Intune und Azure Active Directory gemeinsam verwenden, um den Benutzerzugriff zu verbessern). Dieser Blogbeitrag verweist auf den Intune Managed Browser; der Inhalt gilt aber auch für Microsoft Edge.
 
@@ -178,10 +178,25 @@ Diese Einstellung ermöglicht Ihnen das Konfigurieren einer Verknüpfung zur Sta
 
 Verwenden Sie das folgende Schlüssel-Wert-Paar zum Konfigurieren einer Verknüpfung mit der Homepage:
 
-|    Key    |    Wert    |
+|    Schlüssel    |    Value    |
 |-------------------------------------------------------------------|-------------|
 |    com.microsoft.intune.mam.managedbrowser.homepage   |    Geben Sie eine gültige URL ein. Ungültige URLs werden zur Sicherheit gesperrt.<br>**Beispiel**: <`https://www.bing.com`>
-    |
+
+## <a name="configure-your-organizations-logo-and-brand-color-for-new-tab-pages-in-microsoft-edge"></a>Konfigurieren des Logos und der Markenfarbe Ihrer Organisation für neue Registerkartenseiten in Microsoft Edge
+
+Mit diesen Einstellungen können Sie die „Neuer Tab“-Seite für Microsoft Edge so anpassen, dass das Logo und die Markenfarbe Ihrer Organisation als Seitenhintergrund angezeigt werden.
+
+Um das Logo und die Farbe Ihrer Organisation hochzuladen, führen Sie zuerst die folgenden Schritte aus:
+- Navigieren Sie im Azure-Portal zu „Intune -> Client-Apps -> Branding und Anpassung -> Branding des Unternehmensportals“.
+- Um das Logo Ihrer Marke festzulegen, wählen Sie unter „Anzeigen“ die Option „Nur Firmenlogo“ aus. Es empfiehlt sich, transparente Hintergrundlogos zu verwenden. 
+- Um die Hintergrundfarbe Ihrer Marke festzulegen, wählen Sie unter „Anzeigen“ die Option „Designfarbe“ aus. Microsoft Edge wendet einen helleren Farbton der Farbe auf die Seite „Neuer Tab“ an. Dadurch ist sichergestellt, dass die Seite gut lesbar ist. 
+
+Verwenden Sie nun die folgenden Schlüssel/Wert-Paare, um das Branding Ihrer Organisation in Microsoft Edge zu übernehmen:
+
+|    Schlüssel    |    Value    |
+|--------------------------------------------------------------------|------------|
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandLogo    |    Wahr    |
+|    com.microsoft.intune.mam.managedbrowser.NewTabPage.BrandColor    |    Wahr    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>Konfigurieren von verwalteten Lesezeichen für Microsoft Edge
 
@@ -196,7 +211,7 @@ Hier sind einige Details:
 
 Verwenden Sie das folgende Schlüssel-Wert-Paar zum Konfigurieren von verwalteten Lesezeichen:
 
-|    Key    |    Wert    |
+|    Schlüssel    |    Value    |
 |---------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    com.microsoft.intune.mam.managedbrowser.bookmarks    |    Der Wert für diese Konfiguration ist eine Liste von Lesezeichen. Jedes Lesezeichen besteht aus dem Lesezeichentitel und der Lesezeichen-URL. Trennen Sie Titel und URL durch das `|`-Zeichen.      Beispiel:<br>`Microsoft Bing|https://www.bing.com`<br>Zum Konfigurieren von mehreren Lesezeichen trennen Sie jedes Paar durch ein doppeltes `||`-Zeichen.<p>Beispiel:<br>`Microsoft Bing|https://www.bing.com||Contoso|https://www.contoso.com`    |
 
@@ -204,7 +219,7 @@ Verwenden Sie das folgende Schlüssel-Wert-Paar zum Konfigurieren von verwaltete
 
 Ihren Benutzern werden standardmäßig die MyApps-Websites angezeigt, die für sie in einem Ordner innerhalb der Microsoft Edge-Lesezeichen konfiguriert wurden. Der Ordner wird mit dem Namen Ihrer Organisation bezeichnet.
 
-|    Key    |    Wert    |
+|    Schlüssel    |    Value    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 |    com.microsoft.intune.mam.managedbrowser.MyApps    |    **True** zeigt „MyApps“ in den Microsoft Edge-Lesezeichen.<p>**False** blendet „MyApps“ in den Microsoft Edge-Lesezeichen aus.    |
 
@@ -213,9 +228,9 @@ Sie können mit der App-Konfiguration definieren, auf welche Websites Ihre Benut
 
 Verwenden Sie die folgenden Schlüssel-Wert-Paare, um entweder eine Zulassungsliste oder eine Sperrliste für Websites in Microsoft Edge zu konfigurieren. 
 
-|    Key    |    Wert    |
+|    Schlüssel    |    Value    |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    Es stehen die folgenden Optionen zur Auswahl:<p>1. Geben Sie zulässige URLs an (nur diese URLs sind zulässig. Es kann nicht auf andere Websites zugegriffen werden):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Angeben von blockierten URLs (auf alle anderen Websites kann zugegriffen werden):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    Der entsprechende Wert für den Schlüssel ist eine Liste mit URLs. Sie geben alle URLs, die Sie zulassen oder blockieren möchten, als einen einzelnen Wert ein, der durch einen senkrechten Strich (`|`) getrennt ist.<br>**Beispiele:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
+|    Es stehen folgende Optionen zur Auswahl:<p>1. Geben Sie zulässige URLs an (nur diese URLs sind zulässig. Es kann nicht auf andere Websites zugegriffen werden):<br>`com.microsoft.intune.mam.managedbrowser.AllowListURLs`<p>2. Angeben von blockierten URLs (auf alle anderen Websites kann zugegriffen werden):<br>`com.microsoft.intune.mam.managedbrowser.BlockListURLs`    |    Der entsprechende Wert für den Schlüssel ist eine Liste mit URLs. Sie geben alle URLs, die Sie zulassen oder blockieren möchten, als einen einzelnen Wert ein, der durch einen senkrechten Strich (`|`) getrennt ist.<br>**Beispiele:**<br>`URL1|URL2|URL3`<br>`http://.contoso.com/|https://.bing.com/|https://expenses.contoso.com`  |
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>URL-Formate für die Liste zulässiger und blockierter Websites 
 Sie können verschiedene URL-Formate verwenden, um Ihre Listen für zulässige/blockierte Websites zu erstellen. Diese zulässigen Muster werden in der folgenden Tabelle beschrieben. Einige Hinweise, bevor Sie beginnen: 
@@ -232,7 +247,8 @@ Sie können verschiedene URL-Formate verwenden, um Ihre Listen für zulässige/b
     |    `http://www.contoso.com`    |    Entspricht einer einzelnen Seite    |    `www.contoso.com`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`contoso.com/`    |
     |    `http://contoso.com`    |    Entspricht einer einzelnen Seite    |    `contoso.com/`    |    `host.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com`    |
     |    `http://www.contoso.com/*;`   |    Entspricht allen URLs, die mit `www.contoso.com` beginnen    |    `www.contoso.com`<br>`www.contoso.com/images`<br>`www.contoso.com/videos/tvshows`    |    `host.contoso.com`<br>`host.contoso.com/images`    |
-    |    `http://*.contoso.com/*`    |    Entspricht allen Unterdomänen unter `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`    |    `http://*contoso.com/*`    |    Entspricht allen Unterdomänen, die mit `contoso.com/` enden    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
+    |    `http://*.contoso.com/*`    |    Entspricht allen Unterdomänen unter `contoso.com`    |    `developer.contoso.com/resources`<br>`news.contoso.com/images`<br>`news.contoso.com/videos`    |    `contoso.host.com`
+    |    `http://*contoso.com/*`    |    Entspricht allen Unterdomänen, die mit `contoso.com/` enden    |    `http://news-contoso.com`<br>`http://news-contoso.com.com/daily`    |    `http://news-contoso.host.com`    |
     `http://www.contoso.com/images`    |    Entspricht einem einzelnen Ordner    |    `www.contoso.com/images`    |    `www.contoso.com/images/dogs`    |
     |    `http://www.contoso.com:80`    |    Entspricht einer einzelnen Seite, unter Verwendung einer Portnummer    |    `http://www.contoso.com:80`    |         |
     |    `https://www.contoso.com`    |    Entspricht einer einzelnen, sicheren Seite    |    `https://www.contoso.com`    |    `http://www.contoso.com`    |
@@ -257,7 +273,7 @@ Mit dem in Microsoft Edge integrierten Modell für doppelte Identitäten können
 
 Verwenden Sie das folgende Schlüssel-Wert-Paar, um zu konfigurieren, ob diese weichen Übergänge zulässig sind:
 
-|    Key    |    Wert    |
+|    Schlüssel    |    Value    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** erlaubt es Microsoft Edge, Benutzer an ihren persönlichen Kontext weiterzuleiten, um blockierte Websites zu öffnen.<p>**Block** verhindert, dass Microsoft Edge Benutzer weiterleitet. Benutzern wird einfach eine Meldung angezeigt, die besagt, dass die Website, auf die sie versuchen zuzugreifen, gesperrt ist.    |
 

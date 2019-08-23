@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e69236f7babc974bca0db32245de2323627e494
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: cba8b59931bd60db0d9169af5016f01118c64cf0
+ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548349"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69022830"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Entwickeln eines Kommunikationsplans für den Rollout
 
@@ -50,7 +50,7 @@ Welche Informationen kommuniziert werden sollen, hängt davon ab, zu welchem Zei
 
 **Postregistrierungsphase**<br/> Die Kommunikation mit Organisationsgruppen und -benutzern, die in Intune registriert wurden. Hier sollten zusätzliche Ressourcen bereitgestellt werden, die nützlich für die Benutzer sein könnten. Darüber hinaus kann Feedback zur Erfahrung während und nach der Registrierung gesammelt werden.
 
-Im [Registrierungshandbuch für Endbenutzer](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT) finden Sie möglicherweise weitere nützliche Informationen. Sie können es so verwenden oder an Ihre Organisation anpassen.
+Dieses [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit) könnte nützlich sein. Sie können es so verwenden, wie es vorliegt, oder an Ihre Organisation anpassen.
 
 ## <a name="communication-delivery-methods"></a>Methoden zur Übermittlung der Kommunikation
 

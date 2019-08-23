@@ -16,12 +16,12 @@ ms.reviewer: damionw
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 996380a4938ca73bbf5f71c82e99814f772001a4
-ms.sourcegitcommit: 256952cac44bc6289156489b6622fdc1a3c9c889
+ms.openlocfilehash: 1775bdf0030968cdd16d87d91794480a43a22d12
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67403455"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651032"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Massenregistrierung für Windows-Geräte
 
@@ -73,7 +73,7 @@ Azure AD-Benutzer sind auf diesen Geräten Standardbenutzer und erhalten zugewie
 
 2. Wählen Sie aus, wie Sie das Bereitstellungspaket auf das Gerät anwenden möchten.  Ein Bereitstellungspaket kann mit einer der folgenden Methoden auf ein Gerät angewendet werden:
    - Speichern Sie das Paket auf einem USB-Laufwerk, verbinden Sie dieses Laufwerk mit dem Gerät, das Sie per Massenvorgang registrieren möchten, und wenden Sie das Paket während des anfänglichen Setups an.
-   - Speichern Sie das Paket in einem Netzwerkordner, und wenden Sie es nach dem anfänglichen Setup auf das Gerät an, das Sie per Massenvorgang registrieren möchten.
+   - Speichern Sie das Paket in einem Netzwerkordner, und wenden Sie es nach der ersten Einrichtung an.
 
    Eine Schrittanleitung zum Anwenden eines Bereitstellungspakets finden Sie unter [Anwenden eines Bereitstellungspakets](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package).
 

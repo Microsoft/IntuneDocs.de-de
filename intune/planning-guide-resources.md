@@ -16,12 +16,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3ed61f556cadf3ba04f7c33fbede2102c94b18f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 886241dcde88765c4879357ee42b2b281e7f3408
+ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67549312"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68861868"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>Zusätzliche Ressourcen für die Planung Ihrer Intune-Bereitstellung
 
@@ -41,21 +41,18 @@ Hier ist eine Liste der Tabellenvorlagen für jeden Abschnitt.
 | Rolloutplan |Wi-Fi-Profil| |
 | Kommunikationsplan für Rollout|VPN-Profil| |
 | |  E-Mail-Profil | |
-| | Applications | |
+| | Anwendungen | |
 | | Kompatibilitätsrichtlinie | |
 | | Richtlinie für bedingten Zugriff|-|
-
 
 ## <a name="further-reading"></a>Weitere Informationen
 
 Die folgenden Ressourcen enthalten zusätzliche Informationen, die während der Planungs-, Entwurfs- und Implementierungsphase der Intune-Bereitstellung nützlich sein können.
 
-- [Microsoft Intune-Dokumentation](/intune/): Die gesamte Intune-Dokumentation.
+- [Microsoft Intune-Dokumentation](http://docs.microsoft.com/intune/): Die gesamte Intune-Dokumentation.
 
-- [Intune-Blog](https://blogs.technet.microsoft.com/enterprisemobility/): Beiträge, die erläutern, wie Intune sich in das übergeordnete Enterprise Mobility-Szenario einfügt.
+- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter): Lernen Sie die Herangehensweise von Microsoft bei Sicherheit, Datenschutz, Konformität und Transparenz in allen seinen Cloudprodukten und -diensten kennen.
 
-- [Microsoft Trust Center](http://www.microsoft.com/TrustCenter): Lernen Sie die Herangehensweise von Microsoft bei Sicherheit, Datenschutz, Konformität und Transparenz in allen seinen Cloudprodukten und -diensten kennen.
+- [Intune User Voice](https://microsoftintune.uservoice.com/): Wünschen Sie sich ein Feature, oder möchten Sie mit anderen Kunden über Features abstimmen? Übermitteln Sie über User Voice Ihr Feedback zu Intune. Wir hören Ihnen zu.
 
-- [Intune User Voice](http://microsoftintune.uservoice.com/): Wünschen Sie sich ein Feature, oder möchten Sie mit anderen Kunden über Features abstimmen? Übermitteln Sie über User Voice Ihr Feedback zu Intune. Wir hören Ihnen zu.
-
-- [Registrierungsleitfaden](https://gallery.technet.microsoft.com/Intune-End-User-Enrollment-3a0c9b0c?WT.mc_id=Blog_Intune_General_PCIT): Eine Zusammenstellung von Dokumenten, die Sie unverändert nutzen oder im Rahmen Ihres Kommunikationsplans für Ihre Endbenutzer anpassen können, damit diese besser verstehen, was die Registrierung ihrer privaten Geräte bei Intune bedeutet.
+- [Planen der Kommunikation](migration-guide-communication-plan.md): Der Kommunikationsplan ist ein Schlüsselelement für eine Intune-Einführung. In diesem Artikel können Sie das Intune Adoption Kit herunterladen, das E-Mail-Vorlagen, ein Handbuch zur Intune-Registrierung und Links zu Schulungsvideos enthält, die Sie verwenden können, um Endbenutzer hinsichtlich der Registrierung zu schulen.

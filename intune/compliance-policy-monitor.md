@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/20/2019
+ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ce117f21c1ad78c2c977466398ce6d30989cc6a
-ms.sourcegitcommit: a2bad7465422b98eb3c10f03dc5a24fd99cee78d
+ms.openlocfilehash: 9f8560262d8c501af4127876eaafed293fbc4041
+ms.sourcegitcommit: b1ddc7f4a3d520b7d6755c7a423a46d1e2548592
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67041294"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "69651210"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
@@ -152,7 +152,9 @@ Im Bericht unter **Gerätekonformität** > **Einstellungskonformität** wird Ihn
 Wenn Sie eine spezifische Einstellung auswählen, können Sie den **Konformitätszustand**, den **E-Mail-Alias des Benutzers**, das **Gerätemodell** und den **Standort** von jedem Gerät anzeigen, das dieser Einstellung unterliegt.
 
 > [!NOTE]
-> In Azure AD eingebundene Windows 10-Geräte zeigen das Systemkonto ggf. als nicht kompatiblen Benutzer an. Das entspricht dem erwarteten Verhalten und hat keinen Einfluss auf die allgemeine Gerätekonformität. 
+> Eine Richtlinie kann einem Gerät und einem Benutzer auf demselben Gerät zugewiesen werden. In einigen Szenarien kann ein Gerät synchronisiert werden, bevor sich der Benutzer anmeldet, z. B. wenn das Gerät neu gestartet wird. „Kompatibilität“ kann diesen Benutzer auswerten und das Gerät als nicht kompatibel anzeigen. Dieses Verhalten zeigt möglicherweise auch das „Systemkonto“ als einen nicht kompatiblen Benutzer an.
+>
+> Dies ist ein bekanntes Problem bei Windows 10-Geräten mit mehreren Benutzern. Jegliche Änderungen oder Aktualisierungen zu diesem Verhalten werden in [In der Entwicklung befindliche Microsoft Intune-Features](in-development.md) und/oder in [Neuerungen](whats-new.md) angekündigt.
 
 ## <a name="view-status-of-device-policies"></a>Anzeigen des Status von Geräterichtlinien
 

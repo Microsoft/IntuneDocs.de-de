@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2019
+ms.date: 08/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dc28a614514bf9b1a4987976cb057529b75a5fc
-ms.sourcegitcommit: 063177c6c365fef3642edd7c455790958469aad9
+ms.openlocfilehash: 75cdd958d9663d5b2d330a947a19963c219feaea
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66412004"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69545918"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Hinzufügen und Verwenden von WLAN-Einstellungen auf Microsoft Intune-Geräten
 
@@ -40,7 +40,7 @@ WLAN-Profile unterstützen folgende Geräteplattformen:
 - Android 4 und höher
 - Android Enterprise und -Kiosk
 - iOS 8.0 und höher
-- macOS (Mac OS X 10.11 und höher)
+- macOS X 10.11 und neuer
 - Windows 10 und höher, Windows 10 Mobile und Windows Holographic for Business
 
 > [!NOTE]
@@ -48,35 +48,39 @@ WLAN-Profile unterstützen folgende Geräteplattformen:
 
 ## <a name="create-a-device-profile"></a>Erstellen eines Geräteprofils
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
-3. Geben Sie einen **Namen** und eine **Beschreibung** für das WLAN-Profil ein.
-4. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform aus, auf die die WLAN-Einstellungen angewendet werden sollen. Folgende Optionen sind verfügbar:
+1. Wählen Sie in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) **Gerätekonfiguration** > **Profile** > **Profil erstellen** aus.
+2. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Android**
-    - **Android Enterprise**
-    - **iOS**
-    - **macOS**
-    - **Windows 8.1 und höher**
-    - **Windows 10 und höher**
+    - **Name**: Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein angemessener Profilname ist beispielsweise **WLAN-Profil für das gesamte Unternehmen**.
+    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Plattform**: Wählen Sie die Plattform Ihrer Geräte aus. Folgende Optionen sind verfügbar:
 
-5. Wählen Sie unter **Profiltyp** **WLAN** aus.
+      - **Android**
+      - **Android Enterprise**
+      - **iOS**
+      - **macOS**
+      - **Windows 8.1 und höher**
+      - **Windows 10 und höher**
 
-    - Für **Android Enterprise**-Geräte, die als Kiosk ausgeführt werden, ist die Option **Nur Gerätebesitzer** > **WLAN** verfügbar.
-    - Für **Windows 8.1 und höher** können Sie **WLAN (Import)** auswählen. Mit dieser Option können Sie WLAN-Einstellungen als XML-Datei importieren, die Sie zuvor von einem anderen Gerät exportiert haben.
+    - **Profiltyp**: Wählen Sie **WLAN** aus.
 
-6. Einige WLAN-Einstellungen unterscheiden sich je nach Plattform. Klicken Sie auf die jeweilige Plattform, um die entsprechenden Einstellungen anzuzeigen:
+      > [!TIP]
+      >
+      > - Für **Android Enterprise**-Geräte, die als dedizierte Geräte (Kiosk) ausgeführt werden, wählen Sie **Nur Gerätebesitzer** > **WLAN** aus.
+      > - Für **Windows 8.1 und höher** können Sie **WLAN (Import)** auswählen. Mit dieser Option können Sie WLAN-Einstellungen als XML-Datei importieren, die Sie zuvor von einem anderen Gerät exportiert haben.
+
+3. Einige WLAN-Einstellungen unterscheiden sich je nach Plattform. Um die Einstellungen einer bestimmten Plattform anzuzeigen, wählen Sie Ihre Plattform aus:
 
     - [Android](wi-fi-settings-android.md)
-    - [Android Enterprise und -Kiosk](wi-fi-settings-android-enterprise.md)
+    - [Android Enterprise](wi-fi-settings-android-enterprise.md), einschließlich dedizierter Geräte
     - [iOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 und höher](wi-fi-settings-windows.md)
     - [Windows 8.1 und höher](wi-fi-settings-import-windows-8-1.md) (einschließlich Windows Holographic for Business)
 
-    Die meisten Plattformen verfügen über **grundlegende** Einstellungen und Einstellungen für **Unternehmen**. **Grundlegende Einstellungen** umfassen Funktionen wie den Netzwerknamen und die SSID. Mit **Einstellungen für Unternehmen** können Sie weitere Informationen angeben, z.B. das Extensible Authentication Protocol (EAP).
+4. Wenn Sie fertig sind, wählen Sie **Profil erstellen** > **Erstellen** aus.
 
-7. Wenn Sie Ihre WLAN-Einstellungen hinzugefügt haben, wählen Sie **Profil erstellen** > **Erstellen** aus, um das Konfigurationsprofil hinzuzufügen. Das Profil wird erstellt und in der Profilliste angezeigt (**Gerätekonfiguration** > **Profile**).
+Das Profil wird erstellt und in der Profilliste angezeigt (**Gerätekonfiguration** > **Profile**).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80be1d39d9a562dbc13b9384c6256eb02c9ef50e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: f13b5b92ca442f4b5ae05d3567f8385288d92909
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67530561"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582916"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Konfigurieren eines Zertifikatprofils für Ihre Geräte in Microsoft Intune
 
@@ -73,7 +73,7 @@ Jeder dieser Zertifikattypen hat eigene Voraussetzungen und Infrastrukturanforde
 - Unabhängig davon, ob Sie SCEP- oder PKCS-Profile verwenden möchten, müssen Sie den Microsoft Intune Certificate Connector herunterladen und konfigurieren.
 
 
-## <a name="step-1-configure-your-certificate-infrastructure"></a>Schritt 1: Konfigurieren der Zertifikatinfrastruktur
+## <a name="step-1-configure-your-certificate-infrastructure"></a>Schritt 1: Konfigurieren der Zertifikatinfrastruktur
 
 In den folgenden Artikeln finden Sie Hilfe zum Konfigurieren der Infrastruktur für jeden Zertifikatprofiltyp:
 
@@ -81,37 +81,42 @@ In den folgenden Artikeln finden Sie Hilfe zum Konfigurieren der Infrastruktur f
 - [Konfigurieren Ihrer Microsoft Intune-Zertifikatsinfrastruktur für PKCS](certficates-pfx-configure.md)
 
 
-## <a name="step-2-export-your-trusted-root-ca-certificate"></a>Schritt 2: Exportieren des vertrauenswürdigen Zertifikats der Stammzertifizierungsstelle
+## <a name="step-2-export-your-trusted-root-ca-certificate"></a>Schritt 2: Exportieren des vertrauenswürdigen Zertifikats der Stammzertifizierungsstelle
 
 Exportieren Sie das Zertifikat der vertrauenswürdigen Stammzertifizierungsstelle als öffentliches Zertifikat (.cer-Datei) von der ausstellenden Zertifizierungsstelle oder von einem beliebigen Gerät, das die ausstellende Zertifizierungsstelle als vertrauenswürdig erachtet. Exportieren Sie nicht den privaten Schlüssel (.pfx).
 
 Sie importieren dieses Zertifikat, wenn Sie ein vertrauenswürdiges Zertifikatprofil einrichten.
 
-## <a name="step-3-create-trusted-certificate-profiles"></a>Schritt 3: Erstellen von vertrauenswürdigen Zertifikatprofilen
+## <a name="step-3-create-trusted-certificate-profiles"></a>Schritt 3: Erstellen von vertrauenswürdigen Zertifikatprofilen
+
 Erstellen Sie ein vertrauenswürdiges Zertifikatprofil, bevor Sie ein SCEP- oder PKCS-Zertifikatprofil erstellen können. Sie benötigen für jede Geräteplattform ein vertrauenswürdiges Zertifikatprofil und ein SCEP- oder PKCS-Profil. Die Schritte zur Erstellung vertrauenswürdiger Zertifikate sind bei jeder Geräteplattform ähnlich.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Klicken Sie auf **Gerätekonfiguration** > **Verwalten** > **Profile** > **Profil erstellen**.
-4. Geben Sie für das vertrauenswürdige Zertifikatprofil einen **Namen** und eine **Beschreibung** ein.
-5. Wählen Sie in der Dropdownliste **Plattform** die Geräteplattform für das vertrauenswürdige Zertifikat aus. Folgende Optionen sind verfügbar:
+1. Wählen Sie in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) den Befehl **Gerätekonfiguration** > **Verwalten** > **Profile** > **Profil erstellen** aus.
+2. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Android**
-    - **Android Enterprise**
-    - **iOS**
-    - **macOS**
-    - **Windows Phone 8.1**
-    - **Windows 8.1 und höher**
-    - **Windows 10 und höher**
+    - **Name**: Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Beispiele für guter Profilnamen sind **Vertrauenswürdiges Zertifikatprofil für Geräte mit Android Enterprise-Workspace** oder **Vertrauenswürdiges Zertifikatprofil für iOS-Geräte**.
+    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Plattform**: Wählen Sie die Plattform Ihrer Geräte aus. Folgende Optionen sind verfügbar:
 
-6. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Vertrauenswürdiges Zertifikat** aus.
-7. Navigieren Sie zum Zertifikat, das Sie unter [Schritt 2: Exportieren des vertrauenswürdigen Zertifikats der Stammzertifizierungsstelle](#step-2-export-your-trusted-root-ca-certificate) gespeichert haben, und klicken Sie dann auf **OK**.
-8. Wählen Sie (nur bei Windows 8.1- und Windows 10-Geräten) den **Zielspeicher** für das vertrauenswürdige Zertifikat aus:
+      - **Android**
+      - **Android Enterprise** > **Nur Gerätebesitzer**
+      - **Android Enterprise** > **Nur Arbeitsprofil**
+      - **iOS**
+      - **macOS**
+      - **Windows Phone 8.1**
+      - **Windows 8.1 und höher**
+      - **Windows 10 und höher**
 
-    - **Computerzertifikatspeicher – Stamm**
-    - **Computerzertifikatspeicher – Zwischenspeicher**
-    - **Benutzerzertifikatspeicher – Zwischenspeicher**
+    - **Profiltyp**: Wählen Sie **Vertrauenswürdiges Zertifikat** aus.
 
-9. Klicken Sie anschließend auf **OK**, navigieren Sie wieder zum Bereich **Profil erstellen**, und klicken Sie auf **Erstellen**.
+3. Navigieren Sie zum Zertifikat, das Sie unter [Schritt 2: Exportieren des vertrauenswürdigen Zertifikats der Stammzertifizierungsstelle](#step-2-export-your-trusted-root-ca-certificate) gespeichert haben, und klicken Sie dann auf **OK**.
+4. Wählen Sie (nur bei Windows 8.1- und Windows 10-Geräten) den **Zielspeicher** für das vertrauenswürdige Zertifikat aus:
+
+    - **Zertifikatspeicher des Computers – Stamm** (SCEP)
+    - **Zertifikatspeicher des Computers – Zwischenzertifikate** (SCEP)
+    - **Zertifikatspeicher des Computers – Zwischenzertifikate** (PKCS,SCEP)
+
+5. Klicken Sie anschließend auf **OK**, navigieren Sie wieder zum Bereich **Profil erstellen**, und klicken Sie auf **Erstellen**.
 
 Das Profil wird erstellt und wird in der Liste angezeigt. Informationen zur Zuweisung dieses Profils zu Gruppen finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md).
 
@@ -128,6 +133,7 @@ In den folgenden Artikeln finden Sie Hilfe zum Konfigurieren und Zuweisen jedes 
 Nachdem Sie ein Profil des vertrauenswürdigen Zertifikats erstellt haben, erstellen Sie SCEP- oder PKCS-Zertifikatprofile für jede Plattform, die Sie verwenden möchten. Wenn Sie ein SCEP-Zertifikatprofil erstellen, geben Sie ein vertrauenswürdiges Zertifikatprofil für dieselbe Plattform ein. Durch diesen Schritt werden die beiden Zertifikatprofile verknüpft. Sie müssen trotzdem jedes Profil separat zuweisen.
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 [Zuweisen von Geräteprofilen](device-profile-assign.md)  
 [Use S/MIME to sign and encrypt emails (Verwenden von S/MIME zum Signieren und Verschlüsseln von E-Mails)](certificates-s-mime-encryption-sign.md)  
 [Use third-party certificate authority (Verwenden einer Drittanbieter-Zertifizierungsstelle)](certificate-authority-add-scep-overview.md)

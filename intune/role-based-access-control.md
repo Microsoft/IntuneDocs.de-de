@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eaefcc904d9969c7f356e3eceb924e8d153f912d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 83b1de6c246baaef54a31c0b3f4c5094d066c64d
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67528238"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69549968"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Rollenbasierte Zugriffssteuerung für Microsoft Intune
 
@@ -85,16 +85,16 @@ Sie können Ihren Benutzern sowohl benutzerdefinierte als auch integrierte Rolle
 Wenn Sie eine Rollenzuweisung abrufen möchten, klicken Sie auf **Intune** > **Rollen** > **Alle Rollen**, und wählen Sie erst eine Rolle und dann eine Zuweisung aus. Dann werden die folgenden Seiten angezeigt:
 
 - **Eigenschaften**: der Name, die Beschreibung, die Rolle, die Mitglieder, die Bereiche und die Markierungen einer Zuweisung
-- **Mitglieder**: Alle einer Gruppe angehörenden Benutzer haben die Berechtigung, die Benutzer/Geräte zu verwalten, die in diesem Bereich (der Gruppe) aufgelistet sind.
-- **Bereich (Gruppen)** : Alle Benutzer/Geräte in dieser Gruppe können von den Benutzern verwaltet werden, die unter „Mitglieder“ aufgeführt sind.
+- **Mitglieder**: Alle Benutzer in den aufgelisteten Azure-Sicherheitsgruppen haben die Berechtigung, die Benutzer/Geräte zu verwalten, die in „Bereich (Gruppen)“ aufgelistet sind.
+- **Bereich (Gruppen)** : Alle Benutzer/Geräte in diesen Azure-Sicherheitsgruppen können von den Benutzern verwaltet werden, die unter „Mitglieder“ aufgeführt sind.
 - **[Bereich (Tags)](scope-tags.md)** : Benutzer, die unter „Mitglieder“ aufgeführt sind, können die Ressourcen sehen, die dieselben Bereichsmarkierungen aufweisen.
 
 ### <a name="multiple-role-assignments"></a>Mehrere Rollenzuweisungen
-Wenn einem Benutzer mehrere Rollen zugewiesen sind, gelten die Berechtigungen in diesen Rollenzuweisungen wie folgt für verschiedene Objekte:
+Hat ein Benutzer mehrere Rollenzuweisungen, Berechtigungen und Bereichsmarkierungen, erstrecken sich diese Rollenzuweisungen wie folgt auf verschiedene Objekte:
 
-- Zuweisungsberechtigungen gelten nur für die Objekte (wie Richtlinien oder Apps) im Zuweisungsbereich (Gruppe) dieser Rolle. Zuweisungsberechtigungen gelten nur für Objekte in anderen Rollenzuweisungen, wenn die andere Zuweisung dies explizit zulässt.
-- Andere Berechtigungen (wie Lesen und Schreiben) gelten für alle Objekte desselben Typs (wie alle Richtlinien oder alle Apps) in den Zuweisungen des Benutzers.
-- Berechtigungen für Objekte verschiedener Typen (wie Richtlinien oder Apps) gelten nicht gleichzeitig für alle Objekte. Eine Leseberechtigung für eine Richtlinie umfasst beispielsweise keine Leseberechtigung für Apps in den Zuweisungen des Benutzers.
+- Zuweisungsberechtigungen und Bereichsmarkierungen gelten nur für die Objekte (etwa Richtlinien oder Apps), die in „Bereich (Gruppen)“ dieser Gruppe zugewiesen sind. Zuweisungsberechtigungen und Bereichsmarkierungen gelten nicht für Objekte in anderen Rollenzuweisungen, es sei denn, sie werden in einer anderen Zuweisung explizit erteilt.
+- Andere Berechtigungen (etwa Erstellen, Lesen, Aktualisieren, Schreiben) und Bereichsmarkierungen gelten für alle Objekte desselben Typs (etwa alle Richtlinien oder alle Apps) in den Zuweisungen des Benutzers.
+- Berechtigungen und Bereichsmarkierungen für Objekte anderer Typen (etwa Richtlinien oder Apps) gelten nicht gegenseitig. Eine Leseberechtigung für eine Richtlinie umfasst beispielsweise keine Leseberechtigung für Apps in den Zuweisungen des Benutzers.
 
 ## <a name="next-steps"></a>Nächste Schritte
 - [Assign a role to a user (Zuweisen einer Rolle an einen Benutzer)](assign-role.md)

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/19/2019
+ms.date: 08/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 64bdc59e08a2b17c82e1798d454f0a0403e61b13
-ms.sourcegitcommit: 99b74d7849fbfc8f5cf99cba33e858eeb9f537aa
+ms.openlocfilehash: 76a0df5933127641d299a2a2f5e01d848e4d5d18
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68671055"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550120"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Überwachen der Geräteverschlüsselung mit Intune   
 
@@ -102,15 +102,15 @@ Wenn Sie im Verschlüsselungsbericht ein Gerät auswählen, zeigt Intune den Ber
   Im Folgenden sehen Sie Beispiele für Statusdetails, die Intune melden kann:  
   
   **macOS**:
-  - Das Profil kann zurzeit nicht installiert werden, da eine Komponente noch erwartet wird.  
+  - Der Wiederherstellungsschlüssel wurde noch nicht abgerufen und gespeichert. Höchstwahrscheinlich wurde das Gerät nicht entsperrt, oder es wurde nicht angemeldet.  
  
-    *Zu berücksichtigen: Dieses Ergebnis stellt nicht notwendigerweise einen Fehlerzustand dar, sondern einen temporären Zustand, der durch die zeitliche Steuerung auf dem Gerät verursacht werden kann, wenn die Hinterlegung von Wiederherstellungsschlüsseln eingerichtet werden muss, bevor die Verschlüsselungsanforderung an das Gerät gesendet wird. Dies kann auch darauf hindeuten, dass das Gerät gesperrt ist oder nicht vor Kurzem bei Intune eingecheckt hat. Außerdem ist es möglich, dass ein Benutzer einen Wiederherstellungsschlüssel für ein Gerät erhält, das noch nicht verschlüsselt ist, da die FileVault-Verschlüsselung erst gestartet wird, nachdem das Gerät zum Laden an den Strom angeschlossen wurde.*  
+    *Zu berücksichtigen: Dieses Ergebnis stellt nicht notwendigerweise einen Fehlerzustand dar, sondern einen temporären Zustand, der durch die zeitliche Steuerung auf dem Gerät verursacht werden kann, wenn die Hinterlegung von Wiederherstellungsschlüsseln eingerichtet werden muss, bevor die Verschlüsselungsanforderung an das Gerät gesendet wird. Dieser Status kann auch darauf hindeuten, dass das Gerät weiterhin gesperrt ist oder in letzter Zeit nicht bei Intune angemeldet wurde. Außerdem ist es möglich, dass ein Benutzer einen Wiederherstellungsschlüssel für ein Gerät erhält, das noch nicht verschlüsselt ist, da die FileVault-Verschlüsselung erst gestartet wird, nachdem das Gerät zum Laden an den Strom angeschlossen wurde.*  
 
-  - Das FileVault-Profil ist zwar installiert, FileVault ist aber nicht auf dem Gerät aktiviert.  
+  - Der Benutzer verzögert die Verschlüsselung oder führt derzeit den Verschlüsselungsprozess aus.  
  
     *Zu berücksichtigen: Der Benutzer hat sich nach dem Empfang der Verschlüsselungsanforderung noch nicht abgemeldet. Dies ist erforderlich, damit das Gerät von FileVault verschlüsselt werden kann. Es kann aber auch sein, dass der Benutzer das Gerät manuell entschlüsselt hat. Intune kann nicht verhindern, dass ein Benutzer sein Gerät entschlüsselt.*  
 
-  - FileVault wurde bereits vom Benutzer aktiviert, sodass Intune die Wiederherstellung nicht verwalten kann.  
+  - Das Gerät ist bereits verschlüsselt. Der Gerätebenutzer muss das Gerät entschlüsseln, um weitere Schritte ausführen zu können.  
  
     *Zu berücksichtigen: Intune kann FileVault nicht auf einem Gerät einrichten, das bereits verschlüsselt ist. Stattdessen muss der Benutzer sein Gerät manuell entschlüsseln, bevor es über eine Gerätekonfigurationsrichtlinie und Intune verwaltet werden kann.* 
  
@@ -118,9 +118,9 @@ Wenn Sie im Verschlüsselungsbericht ein Gerät auswählen, zeigt Intune den Ber
  
     *Zu berücksichtigen: Ab macOS, Version 10.15 (Catalina) können durch den Benutzer genehmigte Registrierungseinstellungen dazu führen, dass der Benutzer die FileVault-Verschlüsselung manuell genehmigen muss. Weitere Informationen finden Sie unter [Durch den Benutzer genehmigte Registrierung](macos-enroll.md) in der Intune-Dokumentation.*  
 
-  - Das iOS-Gerät hat einen NotNow-Wert zurückgegeben, d. h., es ist gesperrt.  
+  - Unbekannt  
 
-    *Zu berücksichtigen: Das Gerät ist derzeit gesperrt, und Intune kann den Hinterlegungs- oder Verschlüsselungsprozess nicht starten. Sobald das Gerät entsperrt wird, kann der Vorgang fortgesetzt werden.*  
+    *Zu berücksichtigen: Eine mögliche Ursache für einen unbekannten Status ist, dass das Gerät gesperrt ist und Intune den Hinterlegungs-oder Verschlüsselungsvorgang nicht starten kann. Sobald das Gerät entsperrt wird, kann der Vorgang fortgesetzt werden.*  
 
   **Windows 10:**  
   - Die BitLocker-Richtlinie erfordert eine Benutzereinwilligung, damit der BitLocker-Laufwerkverschlüsselungsassistent gestartet werden kann, um mit der Verschlüsselung des Betriebssystemvolumes zu beginnen. Der Benutzer hat jedoch nicht eingewilligt.  
@@ -149,7 +149,7 @@ Wenn Sie im Verschlüsselungsbericht ein Gerät auswählen, zeigt Intune den Ber
   
   - Die Windows-Wiederherstellungsumgebung (Windows Recovery Environment, WinRE) ist nicht konfiguriert.  
   
-  - Für BitLocker steht kein TPM zur Verfügung – entweder, weil keines vorhanden ist, es in der Registrierung nicht mehr zur Verfügung steht oder weil sich das Betriebssystem auf einem Laufwerk befindet, das entfernt werden kann.  
+  - Für BitLocker steht kein TPM zur Verfügung – entweder, weil keines vorhanden ist, es in der Registrierung nicht mehr zur Verfügung steht, oder weil sich das Betriebssystem auf einem Laufwerk befindet, das entfernt werden kann.  
   
   - Das TMP ist nicht bereit für BitLocker.  
   
@@ -161,7 +161,7 @@ Wenn Sie den Bereich „Verschlüsselungsbericht“ anzeigen, können Sie auf **
   
 ![Exportieren von Details](./media/encryption-monitor/export.png) 
  
-Dieser Bericht kann bei der Identifizierung von Problemen von Gerätegruppen verwendet werden. Beispielsweise können Sie den Bericht verwenden, um eine Liste der macOS-Geräte zu erstellen, für die *der Benutzer bereits FileVault aktiviert hat*. So können die Geräte ermittelt werden, die manuell entschlüsselt werden müssen, bevor Intune mit der Verwaltung ihrer FileVault-Einstellungen beginnen kann.  
+Dieser Bericht kann bei der Identifizierung von Problemen von Gerätegruppen verwendet werden. Beispielsweise können Sie den Bericht verwenden, um eine Liste der macOS-Geräte zu erstellen, für die *der Benutzer bereits FileVault aktiviert hat*. So können die Geräte ermittelt werden, die manuell entschlüsselt werden müssen, damit Intune deren FileVault-Einstellungen verwalten kann.  
  
 ## <a name="filevault-recovery-keys"></a>FileVault-Wiederherstellungsschlüssel   
 Wenn Intune zum ersten Mal ein macOS-Gerät mithilfe von FileVault verschlüsselt, wird ein persönlicher Wiederherstellungsschlüssel erstellt. Bei der Verschlüsselung zeigt das Gerät dem Endbenutzer den persönlichen Schlüssel einmal an.  
@@ -210,7 +210,7 @@ Intune gewährt Zugriff auf das Azure AD-Blatt für BitLocker, sodass Sie sich �
 Wenn Schlüssel in Azure AD verfügbar sind, sind die folgenden Informationen verfügbar:
 - BitLocker-Schlüssel-ID  
 - BitLocker-Wiederherstellungsschlüssel  
-- Laufwerkstyp  
+- Festplattentyp  
 
 Wenn keine Schlüssel in Azure AD verfügbar sind, zeigt Intune die Meldung *Für dieses Gerät wurde kein BitLocker-Schlüssel gefunden* an.  
 

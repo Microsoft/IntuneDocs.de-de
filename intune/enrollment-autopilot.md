@@ -17,17 +17,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e0be106b47d933c4407a02369edff3645682b1c
-ms.sourcegitcommit: 293dfbea2b4756bb9b7df1705a2b5f752dfaa807
+ms.openlocfilehash: 6df8922f9f7252c493b4a2119814c0001245fa8b
+ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68701004"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550004"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrieren von Windows-Geräten in Intune mithilfe von Windows Autopilot  
 Windows Autopilot vereinfacht das Registrieren von Geräten in Intune. Das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems ist ein langwieriger Prozess. Es kann ebenfalls Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und Autopilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von Autopilot-Geräten verwenden, können Sie Richtlinien, Profile und Apps usw. verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
-Es gibt vier Arten der Autopilot-Bereitstellung: [Self-Deployment-Modus](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/self-deploying) für Kiosks, digitale Beschilderung oder ein freigegebenes Gerät, [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) zur Unterstützung von Partnern oder IT-Mitarbeitern bei der Vorabbereitstellung eines Windows 10-Computers, damit dieser vollständig konfiguriert und betriebsbereit ist, [Autopilot für vorhandene Geräte](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) zur mühelosen Bereitstellung der neuesten Version von Windows 10 auf Ihren Geräten und [User Driven Mode](https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/user-driven) (Benutzergesteuerter Modus) für normale Benutzer. 
+Es gibt vier Arten der Autopilot-Bereitstellung: [Self-Deployment-Modus](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) für Kiosks, digitale Beschilderung oder ein freigegebenes Gerät, [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) zur Unterstützung von Partnern oder IT-Mitarbeitern bei der Vorabbereitstellung eines Windows 10-Computers, damit dieser vollständig konfiguriert und betriebsbereit ist, [Autopilot für vorhandene Geräte](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) zur mühelosen Bereitstellung der neuesten Version von Windows 10 auf Ihren Geräten und [User Driven Mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (Benutzergesteuerter Modus) für normale Benutzer. 
 
 
 ## <a name="prerequisites"></a>Voraussetzungen
@@ -49,10 +49,10 @@ Sie können Windows Autopilot-Geräte durch Importieren einer CSV-Datei mit ihre
 
     ![Screenshot von Windows Autopilot-Geräten](media/enrollment-autopilot/autopilot-import-device.png)
 
-2. Navigieren Sie unter **Windows AutoPilot-Geräte hinzufügen** zu einer CSV-Datei, die allen Geräte aufführt, die Sie hinzufügen möchten. Die CSV-Datei muss die Seriennummern, Windows-Produkt-IDs, Hardwarehashes und optionale Gruppentags auflisten. Die Liste kann bis zu 500 Zeilen enthalten. Verwenden Sie das unten gezeigte Format für Header und Zeilen:
+2. Navigieren Sie unter **Windows AutoPilot-Geräte hinzufügen** zu einer CSV-Datei, die allen Geräte aufführt, die Sie hinzufügen möchten. Die CSV-Datei sollte die Seriennummern, die Windows-Produkt-IDs, die Hardware-Hashes, optionale Gruppentags und den optional zugewiesenen Benutzer auflisten. Die Liste kann bis zu 500 Zeilen enthalten. Verwenden Sie das unten gezeigte Format für Header und Zeilen:
 
-    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag`</br>
-    `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>`
+    `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User`</br>
+    `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>`
 
     ![Screenshot zum Hinzufügen von Windows Autopilot-Geräten](media/enrollment-autopilot/autopilot-import-device2.png)
 
@@ -95,7 +95,7 @@ Autopilot-Bereitstellungsprofile werden verwendet, um die Autopilot-Geräte zu k
     ![Screenshot der Seite „OOBE“](media/enrollment-autopilot/create-profile-outofbox.png)
 
 6. Wählen Sie im Feld **Verknüpfen mit Azure AD als** die Option **In Azure AD eingebunden**.
-7. Konfigurieren Sie die folgenden Optionen:
+7. Konfigurieren Sie folgende Optionen:
     - **Microsoft-Software-Lizenzbedingungen**: (Windows 10, Version 1709 oder höher) Wählen Sie aus, ob die Lizenzbedingungen den Benutzern angezeigt werden sollen.
     - **Datenschutzeinstellungen**: Wählen Sie aus, ob die Datenschutzeinstellungen den Benutzern angezeigt werden.
     >[!IMPORTANT]
