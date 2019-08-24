@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/08/2019
+ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52235b6b4cfbca6433c5a50b8c1293faac8d657b
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 1a8722f5cef29dfec8b0d3eabcc6eeac0a188456
+ms.sourcegitcommit: 6b5907046f920279bbda3ee6c93e98594624c05c
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66049642"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69582869"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Microsoft Intune App SDK – Übersicht
 Das für iOS und Android verfügbare Intune App SDK aktiviert die App für die Unterstützung der [Intune-App-Schutzrichtlinien](app-protection-policy.md). Wenn App-Schutzrichtlinien für Ihre App gelten, kann sie von Intune verwaltet werden und wird von Intune als verwaltete App erkannt. Mithilfe des SDK soll die Anzahl der vom App-Entwickler vorzunehmenden Codeänderungen minimiert werden. Sie werden feststellen, dass Sie die meisten SDK-Features aktivieren können, ohne das Verhalten Ihrer App ändern zu müssen. Um die Benutzerfreundlichkeit der App für Benutzer und IT-Administratoren zu verbessern, können Sie mithilfe der SDK-APIs das App-Verhalten an die Unterstützung von Funktionen anpassen, die Ihre Mitwirkung erfordern.

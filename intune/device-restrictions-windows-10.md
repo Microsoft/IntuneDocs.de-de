@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7c75930f3eee35146afbc5714135ececbe7c9643
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550180"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998945"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
@@ -66,13 +66,6 @@ Diese Einstellungen verwenden den [ApplicationManagement-Richtlinien-CSP](https:
   - **Store bevorzugen**: warnt Benutzer, wenn Sie apps von anderen Orten als der Microsoft Store installieren.
 
   [SmartScreen/enableappinstallcontrol-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
-
-- **Für Apps mit Updatefehlern Neustart erzwingen**: Wenn eine App verwendet wird, wird sie möglicherweise nicht aktualisiert. Verwenden Sie diese Einstellung, um den Neustart einer App zu erzwingen. Bei **Nicht konfiguriert** (Standard) wird kein Neustart der App erzwungen. **Anfordern** ermöglicht es Administratoren, einen Neustart an einem bestimmten Datum zu einer bestimmtem Uhrzeit oder nach einem wiederkehrenden Schema zu erzwingen. Wenn Sie **Anfordern** festlegen, machen Sie außerdem diese Angaben:
-
-  - **Startdatum/-uhrzeit**: Wählen Sie ein bestimmtes Datum und eine bestimmte Uhrzeit für den Neustart der Apps aus.
-  - **Wiederholung**: Wählen Sie einen täglichen, wöchentlichen oder monatlichen Neustart aus.
-
-  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 - **Benutzerkontrolle über Installationen**: Bei Festlegung auf **Nicht konfiguriert** (Standard) verhindert der Windows Installer, dass Benutzer die Installationsoptionen ändern, die in der Regel für Systemadministratoren reserviert sind, etwa durch Eingeben des Installationsverzeichnisses. **Blockieren** ermöglicht es Benutzern, diese Installationsoptionen zu ändern, und einige der Sicherheitsfeatures des Windows Installers werden umgangen.
 
