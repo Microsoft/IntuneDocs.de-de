@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fb1111a7f660e8c59f45fb1893364dcadd34dca
-ms.sourcegitcommit: 6a8de7bb4870ea19aa08db1f188ea7b5e8a387dd
+ms.openlocfilehash: e8300e9a4faf29ada79fad2a11e2470b965b53d1
+ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69487753"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "69998891"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Geräteeinstellungen bei Windows 10 (und höher) zur Ausführung als Kiosk in Intune
 
@@ -97,6 +97,17 @@ Hiermit wird nur eine App auf dem Gerät ausgeführt.
   - **Store-App hinzufügen:** Klicken Sie auf **Store-App hinzufügen**, und wählen Sie eine App aus der Liste aus.
 
     Es sind keine Apps aufgelistet? Fügen Sie einige mithilfe der Schritte unter [Client-Apps](apps-add.md) hinzu.
+    
+ - **Wartungsfenster für App-Neustarts angeben**: der Standardwert ist "nicht konfiguriert". Wählen Sie "erforderlich", um nach apps zu suchen, für die eine Installation erforderlich ist.
+ 
+     Wenn Sie Kiosk Browser oder andere Microsoft Store für Unternehmens-Apps verwenden, entscheiden Sie, wie häufig nach APP-Updates gesucht werden soll, die einen Neustart erfordern, um die Anwendungs Installation abzuschließen. Wenn diese Konfiguration nicht konfiguriert ist, werden Microsoft Store für Unternehmens-apps zu einem ungeplanten Zeitpunkt neu gestartet, nachdem ein App-Update installiert wurde.
+     
+     - **Startzeit des Wartungs Fensters**: Wählen Sie das Datum und die Uhrzeit aus, zu der die Überprüfung von Clients auf APP-Updates gestartet werden soll Die Standardzeit für den Start ist auf Mitternacht bzw. null Minuten festgelegt.
+     
+     - **Wartungsfenster Wiederholung**: der Standardwert ist "täglich".
+         Legen Sie fest, wie oft Wartungsfenster für APP-Updates durchgeführt werden. Die Empfehlung ist täglich, um nicht geplante App-Neustarts zu vermeiden.
+
+  [ApplicationManagement/ScheduleForceRestartForUpdateFailures CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-scheduleforcerestartforupdatefailures)
 
 ## <a name="multi-app-kiosks"></a>Kiosks für mehrere Apps
 

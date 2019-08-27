@@ -8,7 +8,7 @@
       displayName: ems; emm; azure ad; active directory; ad
     - name: Wie profitiert mein Unternehmen von Intune?
       href: get-started-evaluation.md
-    - name: Neues
+    - name: Neuheiten
       href: whats-new.md
       items:
         - name: Neuheiten bei der App-Benutzeroberfläche
@@ -115,7 +115,7 @@
             - name: Vorbereiten von Intune
               href: migration-guide-prepare.md
               items:
-                - name: Einfaches Setup
+                - name: Grundlegende Einrichtung
                   href: migration-guide-setup.md
                 - name: Konfigurieren von Richtlinien für die Verwaltung von Geräten und Apps
                   href: migration-guide-configure-policies.md
@@ -164,7 +164,7 @@
           href: mdm-authority-set.md
         - name: Verwalten von Rollen
           items:
-            - name: Rollenbasierte Zugriffsteuerung
+            - name: Rollenbasierte Zugriffssteuerung
               href: role-based-access-control.md
             - name: Zuweisen einer Rolle zu einem Benutzer
               href: assign-role.md
@@ -541,7 +541,7 @@
       items:
         - name: Was ist die Intune App-Verwaltung?
           href: app-management.md
-        - name: Hinzufügen von Apps
+        - name: Hinzufügen einer App-Übersicht
           href: apps-add.md
           displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
           items:
@@ -645,7 +645,7 @@
               href: apps-selective-wipe.md
             - name: Verwenden von App-Schutzrichtlinien
               items:
-                - name: Grundlegendes zu App-Schutzrichtlinien
+                - name: Übersicht über App-Schutzrichtlinien
                   href: app-protection-policy.md
                   displayName: app; protection; policy
                 - name: Erstellen von App-Schutzrichtlinien
@@ -737,7 +737,7 @@
               href: troubleshoot-exchange-connector.md
         - name: Anfordern von Support
           href: get-support.md
-- name: Verweis
+- name: Referenz
   items:
     - name: Einstellungslisten
       items:
@@ -812,7 +812,7 @@
                   href: vpn-settings-macos.md
                 - name: WLAN
                   href: wi-fi-settings-macos.md
-                - name: Extensions
+                - name: '-Erweiterungen'
                   href: kernel-extensions-settings-macos.md
                 - name: Benutzerdefiniert
                   href: custom-settings-macos.md
@@ -842,7 +842,7 @@
                   href: vpn-settings-windows-10.md
                 - name: WLAN
                   href: wi-fi-settings-windows.md
-                - name: Bildung
+                - name: Education
                   href: education-settings-windows.md
                 - name: Von mehreren Benutzern gemeinsam verwendetes Gerät
                   href: shared-user-device-settings-windows.md
