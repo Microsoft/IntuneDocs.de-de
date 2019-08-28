@@ -1,12 +1,12 @@
 ---
-title: Erstellen eines Berichts aus dem OData-Feed mit Power BI
+title: Erstellen eines Intune-Berichts aus dem OData-Feed mit Power BI
 titleSuffix: Microsoft Intune
 description: Erstellen Sie eine Treemap-Visualisierung mithilfe von Power BI Desktop mit einem interaktiven Filter der Intune Data Warehouse-API.
 keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 519ac8529737a870eb4f8ce9a3e06af5b1dcac79
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: e18279fd9cca88de5f04c57a8bcccce1c211c6de
+ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353649"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69894320"
 ---
-# <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Erstellen eines Berichts aus dem OData-Feed mit Power BI
+# <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Erstellen eines Intune-Berichts aus dem OData-Feed mit Power BI
 
-In diesem Artikel wird erläutert, wie Sie eine Treemap-Visualisierung mithilfe von Power BI Desktop mit einem interaktiven Filter erstellen können. Beispielsweise möchte Ihr Finanzdirektor möglicherweise wissen, in welchem Zusammenhang die Verteilung aller Geräte mit den Geräten, die nur im Besitz von Unternehmen sind, bzw. mit persönlichen Geräten steht. Die Treemap gibt einen Überblick über die Gesamtanzahl von Gerätetypen. Sie können die Anzahl von iOS-, Android- und Windows-Geräten prüfen, die weder einem Unternehmen noch einer Privatperson gehören.
+In diesem Artikel wird erläutert, wie Sie eine TreeMap-Visualisierung Ihrer InTune-Daten erstellen, indem Sie Power BI Desktop, dass Benutzer einen interaktiven Filter verwenden. Ihre Finanzdirektorin könnte beispielsweise wissen, wie die Gesamtverteilung von Geräten zwischen unternehmenseigenen Geräten und persönlichen Geräten vergleicht. Die Treemap gibt einen Überblick über die Gesamtanzahl von Gerätetypen. Sie können die Anzahl von iOS-, Android- und Windows-Geräten prüfen, die weder einem Unternehmen noch einer Privatperson gehören.
 
 ## <a name="overview-of-creating-the-chart"></a>Übersicht zum Erstellen des Diagramms
 
@@ -42,7 +42,7 @@ Gehen Sie wie folgt vor, um dieses Diagramm zu erstellen:
 
 In Power BI arbeiten Sie mit Tabellen. Eine Tabelle enthält Datenfelder. Jedes Datenfeld ist einem Datentypen zugeordnet. Das Feld kann nur Daten dieses Datentyps enthalten. Datentypen sind u.a. Nummern, Text oder Datumsangaben. Die Tabellen in Power BI füllen sich mit kürzlich erfassten Daten aus Ihrem Mandanten, wenn Sie das Modell laden. Obwohl sich die spezifischen Daten mit der Zeit ändern, bleibt die Tabellenstruktur solange unverändert, bis das zugrunde liegende Datenmodell aktualisiert worden ist.
 
-Die Verwendung der Begriffe _Entität_ und _Tabelle_ erscheint Ihnen möglicherweise nicht ganz eindeutig. Sie können über einen OData-Feed auf das Datenmodell zugreifen. Im Zusammenhang mit OData gelten die Container, die in Power BI als Tabellen bezeichnet werden, als Entitäten. Beide Begriffe beziehen sich auf dasselbe Konzept zum Speichern Ihrer Daten.
+Die Verwendung der Begriffe *Entität* und *Tabelle* erscheint Ihnen möglicherweise nicht ganz eindeutig. Auf das Datenmodell kann über einen odata-Feed (Open Data Protocol) zugegriffen werden. Im Zusammenhang mit OData gelten die Container, die in Power BI als Tabellen bezeichnet werden, als Entitäten. Beide Begriffe beziehen sich auf dasselbe Konzept zum Speichern Ihrer Daten. Weitere Informationen zu odata finden Sie in der [Übersicht über odata](/odata/overview).
 
 ## <a name="install-power-bi-desktop"></a>Installieren von Power BI Desktop
 
@@ -54,48 +54,48 @@ Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI 
 > Sie benötigen in Intune eine Berechtigung, um auf **Berichte** zugreifen zu können. Weitere Informationen finden Sie unter [Autorisierung](reports-api-url.md).
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Öffnen Sie den Bereich **Intune Data Warehouse**, indem Sie den Data Warehouse-Link unter **Weitere Aufgaben** auf der rechten Seite des Blatts **Microsoft Intune – Übersicht** auswählen.
-4. Kopieren Sie die benutzerdefinierte Feed-URL. Beispiel: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
-1. Öffnen Sie Power BI Desktop.
-2. Klicken Sie auf **Daten abrufen** > **OData-Feed**.
-3. Fügen Sie die benutzerdefinierte Feed-URL in das URL-Feld im Fenster **OData-Feed** ein.
-4. Wählen Sie **Basic** aus.
+2. Öffnen Sie den Bereich **Intune Data Warehouse**, indem Sie den Data Warehouse-Link unter **Weitere Aufgaben** auf der rechten Seite des Blatts **Microsoft Intune – Übersicht** auswählen.
+3. Kopieren Sie die benutzerdefinierte Feed-URL. Beispiel: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+4. Öffnen Sie Power BI Desktop.
+5. Wählen Sie in der Menüleiste **Datei** > **Daten** > aus**odata-Feed**anzeigen aus.
+6. Fügen Sie die benutzerdefinierte Feed-URL, die Sie aus dem vorherigen Schritt kopiert haben, in das URL-Feld im **odata-Feed** -Fenster ein.
+7. Wählen Sie **Basic** aus.
 
     ![OData-Feed für Intune Data Warehouse für Ihren Mandanten](media/reports-create-01-odatafeed.png)
 
-9. Wählen Sie **OK** aus.
-10. Wählen Sie **Organisationskonto** aus, und melden Sie sich anschließend mit Ihren Anmeldeinformationen für Intune an.
+8. Wählen Sie **OK** aus.
+9. Wählen Sie **Organisationskonto** aus, und melden Sie sich anschließend mit Ihren Anmeldeinformationen für Intune an.
 
     ![Anmeldeinformationen für das Organisationskonto](media/reports-create-02-org-account.png)
 
-11. Wählen Sie **Verbinden** aus. Der Navigator öffnet sich und zeigt Ihnen eine Liste mit Tabelle im Intune Data Warehouse an.
+10. Wählen Sie **Verbinden** aus. Der Navigator öffnet sich und zeigt Ihnen eine Liste mit Tabelle im Intune Data Warehouse an.
 
     ![Screenshot des Navigators mit der Liste der Data Warehouse-Tabellen](media/reports-create-02-loadentities.png)
 
-12. Wählen Sie die **Geräte** und die **OwnerTypes**-Tabellen aus.  Wählen Sie **Laden** aus. Power BI lädt die Daten in das Modell.
+11. Wählen Sie die **Geräte** und die **OwnerTypes**-Tabellen aus.  Wählen Sie **Laden** aus. Power BI lädt die Daten in das Modell.
 
 ## <a name="create-a-relationship"></a>Erstellen einer Beziehung
 
-Sie können mehrerer Tabellen importieren, um nicht nur die Daten in einer einzigen Tabelle zu analysieren, sondern auch tabellenübergreifende Daten.  In Power BI gibt es eine Funktion, die **Autodetect** genannt wird und Beziehungen findet sowie erstellt. Die Tabellen im Data Warehouse wurden so konzipiert, dass sie mit der Autodetect-Funktion von Power BI kompatibel sind. Auch wenn Power BI die Beziehungen nicht automatisch finden sollte, verwalten Sie sie trotzdem.
+Sie können mehrerer Tabellen importieren, um nicht nur die Daten in einer einzigen Tabelle zu analysieren, sondern auch tabellenübergreifende Daten. In Power BI gibt es eine Funktion namens **Automatische Erkennung**, mit der Sie Beziehungen finden und erstellen können. Die Tabellen im Data Warehouse wurden so konzipiert, dass sie mit der automatischen Erkennungsfunktion in Power BI kompatibel sind. Auch wenn Power BI die Beziehungen nicht automatisch finden sollte, können Sie sie dennoch verwalten.
 
 ![Tabellenübergreifendes Verwalten von Beziehungen verwandter Daten](media/reports-create-03-managerelationships.png)
 
 1. Wählen Sie **Beziehungen verwalten** aus.
-2. Wählen Sie **Autodetect...** aus, wenn Power BI die Beziehungen noch nicht erkannt hat.
+2. Wählen Sie **Automatische Erkennung** aus, wenn Power BI die Beziehungen noch nicht erkannt hat.
 
-Die Beziehung wird von einer „From“-Spalte zu einer „To“-Spalte angezeigt. In diesem Beispiel ist das Datenfeld **ownerTypeKey** in der **Gerätetabelle** mit dem Datenfeld **ownerTypeKey** in der Tabelle **ownerTypes** verknüpft. Sie können die Beziehung verwenden, um den einfachen Namen eines Gerätetypcodes in der **Gerätetabelle** nachzuschauen.
+Die Beziehung wird von einer „From“-Spalte zu einer „To“-Spalte angezeigt. In diesem Beispiel ist das Datenfeld **ownerTypeKey** in der **Gerätetabelle** mit dem Datenfeld **ownerTypeKey** in der Tabelle **ownerTypes** verknüpft. Sie können die Beziehung verwenden, um den einfachen Namen eines Gerätetypcodes in der Tabelle **Geräte** nachzuschlagen.
 
 ## <a name="create-a-treemap-visualization"></a>Erstellen einer Treemap-Visualisierung
 
-In einem Treemap-Diagramm werden hierarchische Daten als Felder in Feldern angezeigt. Jede Verzweigung der Hierarchie ist ein Feld, das kleinere Felder enthält, die untergeordnete Verzweigungen darstellen. Sie können Power BI Desktop verwenden, um eine Treemap Ihrer Intune-Daten zu erstellen.
+In einem Strukturdiagramm werden hierarchische Daten als Felder innerhalb von Feldern angezeigt. Jede Verzweigung der Hierarchie ist ein Feld, das kleinere Felder enthält, die untergeordnete Verzweigungen darstellen. Sie können Power BI Desktop verwenden, um eine TreeMap ihrer InTune-Mandanten Daten zu erstellen, die relative Mengen von Gerätehersteller Typen anzeigt.
 
 ![Power BI-Treemap-Visualisierungen](media/reports-create-03-treemap.png)
 
-1. Wählen Sie einen Diagrammtypen und **Treemap** aus.
-2. Suchen Sie im Datenmodell die **Gerätetabelle**.
-3. Erweitern Sie die **Gerätetabelle**, und wählen Sie das Datenfeld **Hersteller** im Bereich **Felder** aus.
-4. Ziehen Sie das Datenfeld **Hersteller** auf das Treemap-Diagramm im Berichtszeichenbereich.
-5. Ziehen Sie das Datenfeld **deviceKey** aus der **Gerätetabelle** in den Abschnitt **Werte** im Bereich **Visualisierung**, und legen Sie es auf dem Feld mit der Bezeichnung **Drag data field here** (Datenfeld hierherziehen) ab.  
+1. Suchen Sie im Bereich **Visualisierungen** die Option **TreeMap**, und wählen Sie Sie aus. Das **TreeMap** -Diagramm wird der Berichts Zeichenfläche hinzugefügt.
+2. Suchen Sie im **Bereich "Felder** " `devices` die Tabelle.
+3. Erweitern Sie `devices` die Tabelle, und `manufacturer` wählen Sie das Datenfeld aus.
+4. Ziehen Sie `manufacturer` das Datenfeld in den Berichts Zeichenbereich, und legen Sie es im **TreeMap** -Diagramm ab.
+5. Ziehen Sie `deviceKey` das Datenfeld aus `devices` der Tabelle in den Bereich **Visualisierungen** , und legen Sie es unter dem Abschnitt **Werte** im Feld mit der Bezeichnung **Datenfelder hier hinzufügen**ab.  
 
 Jetzt verfügen Sie über eine Visualisierung der Verteilung von Herstellern und Geräten innerhalb Ihrer Organisation.
 
@@ -105,18 +105,19 @@ Jetzt verfügen Sie über eine Visualisierung der Verteilung von Herstellern und
 
 Sie können Ihrer Treemap einen Filter hinzufügen, damit Sie mithilfe Ihrer App zusätzliche Fragen beantworten können.
 
+1. Um einen Filter hinzuzufügen, wählen Sie zunächst die Berichtscanvas aus, und klicken Sie anschließend unter **Visualisierungen** auf das **Slicer-Symbol** (![Treemap mit Datenmodell und unterstützten Beziehungen](media/reports-create-slicer.png)). Die leere **slicervisualisierung** wird in der Canvas angezeigt.
+2. Suchen Sie im **Bereich "Felder** " `ownerTypes` die Tabelle.
+3. Erweitern Sie `ownerTypes` die Tabelle, und `ownerTypeName` wählen Sie das Datenfeld aus.
+4. Ziehen Sie `onwerTypeName` das Datenfeld aus `ownerTypes` der Tabelle in den Bereich **Filter** , und legen Sie es unter dem Abschnitt **Filter auf dieser Seite** im Feld mit der Bezeichnung **Datenfelder hier hinzufügen**ab.  
 
-1. Um einen Filter hinzuzufügen, wählen Sie zunächst die Berichtscanvas aus, und klicken Sie anschließend unter **Visualisierungen** auf das **Slicer-Symbol** (![Treemap mit Datenmodell und unterstützten Beziehungen](media/reports-create-slicer.png)).
-2. Suchen Sie die Tabelle **ownerTypes** ziehen Sie das Datenfeld **ownerTypeName** im Abschnitt **Filter** auf den Bereich **Visualisierungen**.  
-
-   In der Gerätetabelle gibt es ein Datenfeld mit der Bezeichnung **OwnerTypeKey**, das einen Code enthält, der darauf hinweist, ob ein Gerät Eigentum eines Unternehmens oder einer Privatperson ist. Da Sie Anzeigenamen in diesem Filter anzeigen wollen, suchen Sie nach der Tabelle **ownerTypes**, und ziehen Sie den **ownerTypeName** dorthin. Das folgende Beispiel zeigt, wie das Datenmodell Beziehungen zwischen den Tabellen unterstützt.
+   In der `OwnerTypes` Tabelle gibt es ein Datenfeld mit dem `OwnerTypeKey`Namen, das die Daten enthält, ob ein Gerät Unternehmens eigen oder privat ist. Da Sie Anzeigenamen in diesem Filter anzeigen möchten, suchen Sie nach der Tabelle `ownerTypes`, und ziehen Sie den **ownerTypeName** auf den Slicer. Das folgende Beispiel zeigt, wie das Datenmodell Beziehungen zwischen den Tabellen unterstützt.
 
 ![Treemap mit Filter: Unterstützung von Beziehungen zwischen Tabellen](media/reports-create-08_ownertype.png)
 
 Nun verfügen Sie über einen interaktiven Filter, der zum Wechseln zwischen unternehmenseigenen und privaten Geräten verwendet werden kann. Mit diesem Filter können Sie Veränderungen in der Verteilung nachvollziehen.
 
-1. Wählen Sie **Unternehmen** aus, damit Ihnen die Verteilung der unternehmenseigenen Geräte angezeigt wird.
-2. Wählen Sie **Persönlich** aus, damit Ihnen die privaten Geräte angezeigt werden.
+1. Wählen Sie im Slicer **Company (Unternehmen** ) aus, um zu sehen, dass die unternehmenseigene Geräte Verteilung
+2. Wählen Sie im Slicer persönlich aus, um die **persönlichen** Geräte anzuzeigen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
