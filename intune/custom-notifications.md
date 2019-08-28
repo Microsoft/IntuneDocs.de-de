@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3a4314abec83bc31cd6fe178873ba5bce7bf1a0c
-ms.sourcegitcommit: 864fdf995c2b41f104a98a7e2665088c2864774f
+ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
+ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680103"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70021756"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Senden benutzerdefinierter Benachrichtigungen in Intune  
 
@@ -51,7 +51,6 @@ Benutzerdefinierte Benachrichtigungsnachrichten enthalten einen kurzen Titel und
 - Gruppen können Benutzer oder Geräte enthalten. Nachrichten werden allerdings nur an Benutzer gesendet und werden an jedes iOS- oder Android-Gerät gesendet, das vom Benutzer registriert wurde.  
 
 **Lieferung:**  
-- Nach dem Senden einer Benachrichtigung versucht Intune maximal eine Stunde lang, die Lieferung auszuführen.  
 - Intune sendet Nachrichten an die Unternehmensportal-App der Benutzer, die dann die Pushbenachrichtigung erstellt. Benutzer müssen nicht bei der App angemeldet sein, damit die Benachrichtigung auf dem Gerät übermittelt wird.  
 - Intune und die Unternehmensportal-App können die Lieferung einer benutzerdefinierten Benachrichtigung nicht garantieren. Nach mehreren Stunden Verzögerung werden möglicherweise benutzerdefinierte Benachrichtigungen angezeigt, die dann nicht für dringende Nachrichten verwendet werden sollten.  
 - Benutzerdefinierte Benachrichtigungsnachrichten von Intune werden auf Geräten als Standardpushbenachrichtigungen angezeigt. Wenn die Unternehmensportal-App auf einem iOS-Gerät beim Empfang der Benachrichtigung geöffnet ist, wird in der App anstelle einer Pushbenachrichtigung eine Benachrichtigung angezeigt.  
