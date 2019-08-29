@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 76a0df5933127641d299a2a2f5e01d848e4d5d18
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
+ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550120"
+ms.lasthandoff: 08/26/2019
+ms.locfileid: "70027389"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Überwachen der Geräteverschlüsselung mit Intune   
 
@@ -64,7 +64,7 @@ Im Bereich „Verschlüsselungsbericht“ werden alle von Ihnen verwalteten Ger�
 
 - **Verschlüsselungsstatus:** Gibt an, ob das Betriebssystemlaufwerk verschlüsselt ist  
 
-- **Benutzerprinzipalname:** der primäre Benutzer des Geräts.  
+- **Benutzerprinzipalname:** Der primäre Benutzer des Geräts.  
 
 ### <a name="device-encryption-status"></a>Geräteverschlüsselungsstatus  
 
@@ -74,9 +74,11 @@ Wenn Sie im Verschlüsselungsbericht ein Gerät auswählen, zeigt Intune den Ber
 
 - **Verschlüsselungsbereitschaft:** eine Auswertung der Bereitschaft der Geräte zur Unterstützung der Verschlüsselung über eine MDM-Richtlinie.  
   
-  Beispiel: Wenn ein Windows 10-Gerät als *Nicht bereit* eingestuft wird, kann es trotzdem sein, dass die Verschlüsselung unterstützt wird. Das Windows 10-Gerät kann nur als *Bereit* eingestuft werden, wenn es über einen TPM-Chip verfügt. Es nicht erforderlich, dass der TPM-Chip die Verschlüsselung unterstützt. (Weitere Informationen zur Verschlüsselungsbereitschaft finden Sie im vorherigen Abschnitt.)  
+  Beispiel: Wenn ein Windows 10-Gerät als *Nicht bereit* eingestuft wird, kann es trotzdem sein, dass die Verschlüsselung unterstützt wird. Das Windows 10-Gerät kann nur als *Bereit* eingestuft werden, wenn es über einen TPM-Chip verfügt. Es nicht erforderlich, dass der TPM-Chip die Verschlüsselung unterstützt. (Weitere Informationen finden Sie im vorherigen Abschnitt unter *Verschlüsselungsbereitschaft*.)  
 
-- **Verschlüsselungsstatus:** Gibt an, ob das Betriebssystemlaufwerk verschlüsselt ist Es kann bis zu 24 Stunden dauern, bis Intune den Verschlüsselungsstatus eines Geräts oder die Änderung dieses Status meldet.  
+- **Verschlüsselungsstatus:** Gibt an, ob das Betriebssystemlaufwerk verschlüsselt ist Es kann bis zu 24 Stunden dauern, bis Intune den Verschlüsselungsstatus eines Geräts oder die Änderung dieses Status meldet. Dieser Zeitraum schließt die Zeit zum Verschlüsseln des Betriebssystems und die Zeit für die Rückmeldung des Geräts an Intune ein.  
+
+  Um die Meldung des FileVault-Verschlüsselungsstatus vor dem normalen Einchecken des Geräts zu beschleunigen, müssen die Benutzer ihre Geräte nach Abschluss der Verschlüsselung synchronisieren.  
 
 - **Profile:** eine Liste von *Gerätekonfigurationsprofilen*, die für dieses Gerät gelten und mit den folgenden Werten konfiguriert werden:  
 
@@ -91,6 +93,8 @@ Wenn Sie im Verschlüsselungsbericht ein Gerät auswählen, zeigt Intune den Ber
   Sie können die Profilliste verwenden, um einzelne Richtlinien für eine Überprüfung auszuwählen, sollte die *Profilstatuszusammenfassung* auf Probleme hindeuten.  
 
 - **Profilstatuszusammenfassung:** Eine Zusammenfassung der Profile, die für das Gerät gelten Die Zusammenfassung stellt die am wenigsten vorteilhafte Bedingung aller anwendbaren Profile dar. Wenn beispielsweise ein Profil von mehreren anwendbaren Profilen einen Fehler auslöst, zeigt die *Profilstatuszusammenfassung* *Fehler* an.  
+  
+  Um weitere Details eines Status anzuzeigen, wechseln Sie zu **Intune** > **Gerätekonfiguration** > **Profile**, und wählen Sie das Profil aus. Wählen Sie optional **Gerätestatus** und anschließend ein Gerät aus.  
 
 - **Statusdetails:** Erweiterte Details zum Verschlüsselungsstatus eines Geräts.  
 
@@ -118,7 +122,7 @@ Wenn Sie im Verschlüsselungsbericht ein Gerät auswählen, zeigt Intune den Ber
  
     *Zu berücksichtigen: Ab macOS, Version 10.15 (Catalina) können durch den Benutzer genehmigte Registrierungseinstellungen dazu führen, dass der Benutzer die FileVault-Verschlüsselung manuell genehmigen muss. Weitere Informationen finden Sie unter [Durch den Benutzer genehmigte Registrierung](macos-enroll.md) in der Intune-Dokumentation.*  
 
-  - Unbekannt  
+  - Unbekannt.  
 
     *Zu berücksichtigen: Eine mögliche Ursache für einen unbekannten Status ist, dass das Gerät gesperrt ist und Intune den Hinterlegungs-oder Verschlüsselungsvorgang nicht starten kann. Sobald das Gerät entsperrt wird, kann der Vorgang fortgesetzt werden.*  
 
@@ -210,7 +214,7 @@ Intune gewährt Zugriff auf das Azure AD-Blatt für BitLocker, sodass Sie sich �
 Wenn Schlüssel in Azure AD verfügbar sind, sind die folgenden Informationen verfügbar:
 - BitLocker-Schlüssel-ID  
 - BitLocker-Wiederherstellungsschlüssel  
-- Festplattentyp  
+- Laufwerkstyp  
 
 Wenn keine Schlüssel in Azure AD verfügbar sind, zeigt Intune die Meldung *Für dieses Gerät wurde kein BitLocker-Schlüssel gefunden* an.  
 

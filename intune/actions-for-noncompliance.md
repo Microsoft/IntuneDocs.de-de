@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/01/2019
+ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bf808a9a7f5a801997f37bd2ecf4c13e3823c332
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: 1c13bffa797d8480ee0ba1db2b72c787ed94274f
+ms.sourcegitcommit: dbb2410de7e4849626f84ef07cf6a2891bcdd542
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67044799"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69974258"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatisieren von E-Mails und Hinzufügen von Aktionen für nicht konforme Geräte in Intune
 
@@ -103,7 +103,13 @@ Sie können beim Erstellen einer Konformitätsrichtlinie oder Aktualisieren eine
     
     - **Nicht konformes Gerät remote sperren:** Sperren Sie das Gerät, wenn es nicht konform ist. Durch diese Aktion wird der Benutzer zur Eingabe einer PIN oder eines Kennworts gezwungen, um das Gerät zu entsperren 
     
-5. Konfigurieren Sie einen **Zeitplan**: Geben Sie die Anzahl von Tagen (0 bis 365) nach der Nichtkonformität ein, nach der die Aktion auf Benutzergeräten ausgelöst werden soll. Nach diesem Toleranzzeitraum können Sie eine Richtlinie für bedingten Zugriff erzwingen. Wenn Sie als Anzahl von Tagen **0** (null) eingeben, wird der bedingte Zugriff **sofort** wirksam. Sie können den Zugriff auf Unternehmensressourcen beispielsweise sofort blockieren, wenn ein Gerät nicht konform ist.
+5. Konfigurieren Sie einen **Zeitplan**: Geben Sie die Anzahl von Tagen (0 bis 365) nach der Nichtkonformität ein, nach der die Aktion auf Benutzergeräten ausgelöst werden soll. Nach Ablauf dieser Nachfrist können Sie eine Richtlinie für [bedingten Zugriff](conditional-access-intune-common-ways-use.md) erzwingen. Wenn Sie als Anzahl von Tagen **0** (null) eingeben, wird der bedingte Zugriff **sofort** wirksam. Wenn beispielsweise ein Gerät nicht konform ist, können Sie mithilfe des bedingten Zugriffs sofort den Zugriff auf E-Mails, SharePoint und andere Organisationsressourcen blockieren.
+
+    Wenn Sie eine Konformitätsrichtlinie erstellen, wird automatisch die Aktion **Gerät als nicht konform markieren** erstellt und auf **0** Tage (sofort) festgelegt. Durch diese Aktion wird das Gerät beim Einchecken sofort als nicht konform ausgewertet. Wenn Sie auch den bedingten Zugriff verwenden, wird dieser umgehend wirksam. Wenn Sie eine Nachfrist zulassen möchten, ändern Sie den **Zeitplan** für die Aktion **Gerät als nicht konform markieren**.
+    
+    Sie möchten den Benutzer außerdem in Ihrer Konformitätsrichtlinie benachrichtigen. Fügen Sie die Aktion **E-Mail an Endbenutzer senden** hinzu. Legen Sie für diese Aktion **E-Mail senden**, den **Zeitplan** auf 2 Tage fest. Wird das Gerät oder der Endbenutzer an Tag 2 weiterhin als nicht konform ausgewertet, wird Ihre E-Mail an Tag 2 gesendet. Wenn Sie dem Benutzer an Tag 5 der Nichtkonformität erneut eine E-Mail senden möchten, fügen Sie eine weitere Aktion hinzu, und legen Sie den **Zeitplan** auf 5 Tage fest.
+
+    Weitere Informationen zur Konformität und den integrierten Aktionen finden Sie in der [Konformitätsübersicht](device-compliance-get-started.md).
 
 6. Klicken Sie zum Speichern Ihrer Änderungen auf **Hinzufügen** > **OK**.
 
