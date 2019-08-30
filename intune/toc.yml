@@ -510,8 +510,12 @@
           href: certificates-configure.md
           items:
             - name: SCEP
-              href: certificates-scep-configure.md
-              displayName: ksp
+              items:
+                - name: SCEP-Infrastruktur
+                  href: certificates-scep-configure.md
+                  displayName: ksp
+                - name: SCEP-Zertifikatprofile
+                  href: certificates-profile-scep.md
             - name: PKCS
               href: certficates-pfx-configure.md
               displayName: ksp
@@ -541,6 +545,7 @@
       items:
         - name: Was ist die Intune App-Verwaltung?
           href: app-management.md
+          displayName: mam-we
         - name: Hinzufügen einer App-Übersicht
           href: apps-add.md
           displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
@@ -733,6 +738,8 @@
               href: troubleshoot-email-profiles-in-microsoft-intune.md
             - name: Problembehandlung beim bedingten Zugriff
               href: troubleshoot-conditional-access.md
+            - name: Problembehandlung für Zertifikatconnector
+              href: troubleshoot-certificate-connector-events.md
             - name: Exchange Connector-Problembehandlung
               href: troubleshoot-exchange-connector.md
         - name: Anfordern von Support
