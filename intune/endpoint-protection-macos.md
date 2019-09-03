@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 919fef62cf1d979d6a4f67c3653d90af1442fa55
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
+ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960415"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70158026"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Endpoint Protection-Einstellungen in Intune unter MacOS  
 
@@ -93,21 +93,21 @@ Weitere Informationen zu den Einstellungen von Apple-flevault finden Sie unter [
   **Standardeinstellung:** Nicht konfiguriert  
 
   - **Wiederherstellungs Schlüsseltyp**  
-    *Für Geräte werden SchlüsselWiederherstellungsSchlüsselerstellt.* Konfigurieren Sie die folgenden Einstellungen für den persönlichen Schlüssel.  
+    *Persönlichen Schlüssel* für Geräte werden Wiederherstellungsschlüssel erstellt. Konfigurieren Sie die folgenden Einstellungen für den persönlichen Schlüssel.  
 
     - **Speicherort des persönlichen Wiederherstellungs Schlüssels** : Geben Sie eine kurze Nachricht an den Benutzer an, die erläutert, wie und wo Sie Ihren persönlichen Wiederherstellungs Schlüssel abrufen können. Dieser Text wird in die Meldung eingefügt, die dem Benutzer auf dem Anmeldebildschirm angezeigt wird, wenn er zur Eingabe des persönlichen Wiederherstellungs Schlüssels aufgefordert wird, wenn ein Kennwort vergessen wird.  
       
     - **Rotation persönlicher Wiederherstellungs Schlüssel** : Geben Sie an, wie häufig der persönliche Wiederherstellungs Schlüssel für ein Gerät rotiert werden soll. Sie können den Standardwert **nicht konfiguriert**oder einen Wert von **1** bis **12** Monaten auswählen.  
 
   - **Eingabeaufforderung beim Abmelden deaktivieren**  
-    Verhindern Sie, dass die Aufforderung an den Benutzer die Aktivierung von "flevault" beim Abmelden anfordert.  Wenn diese Option auf Aktivieren festgelegt ist, wird die Eingabeaufforderung bei der Abmeldung deaktiviert, und der Benutzer wird stattdessen aufgefordert, wenn er sich anmeldet.  
+    Verhindern Sie, dass die Aufforderung an den Benutzer die Aktivierung von "flevault" beim Abmelden anfordert.  Wenn diese Option deaktiviert ist, wird die Eingabeaufforderung bei der Abmeldung deaktiviert, und der Benutzer wird stattdessen aufgefordert, wenn er sich anmeldet.  
     - **Nicht konfiguriert**  
-    - **Aktivieren** : Deaktivieren Sie die Eingabeaufforderung bei der Abmeldung.
+    - **Deaktivieren** : Deaktivieren Sie die Eingabeaufforderung bei der Abmeldung.
 
     **Standardeinstellung:** Nicht konfiguriert  
 
      > [!IMPORTANT]  
-     > Es ist ein bekanntes Problem aufgetreten, wenn die Einstellung **Aufforderung bei Abmeldung deaktivieren** auf *Aktivieren* gesetzt ist. Wenn Sie *Aktivieren* festlegen, muss die Einstellung für **Zulässige Anzahl von Umgehungen** auf einen Wert und nicht auf *Nicht konfiguriert* festgelegt werden. Wenn *Nicht konfiguriert* ausgewählt ist, tritt mit dem Profil auf dem Gerät ein Fehler auf. In diesem Szenario meldet das Gerät als **Profilstatuszusammenfassung** einen **Fehler** ohne weitere Details.
+     > Es gibt ein bekanntes Problem, wenn die Einstellung **Aufforderung bei Abmeldung deaktivieren** auf *Deaktivieren* festgelegt ist. Bei Festlegung auf *Deaktivieren* muss die Einstellung für **Zulässige Anzahl von Umgehungen** auf einen Wert und nicht auf *Nicht konfiguriert* festgelegt werden. Wenn *Nicht konfiguriert* ausgewählt ist, tritt mit dem Profil auf dem Gerät ein Fehler auf. In diesem Szenario meldet das Gerät als **Profilstatuszusammenfassung** einen **Fehler** ohne weitere Details.
      > 
      > Wenn die für **Aufforderung bei Abmeldung deaktivieren** *Nicht konfiguriert* ausgewählt ist, kann für **Zulässige Anzahl von Umgehungen** *Nicht konfiguriert* oder ein Wert festgelegt werden.  
      > 
@@ -122,4 +122,5 @@ Weitere Informationen zu den Einstellungen von Apple-flevault finden Sie unter [
  
     **Standardeinstellung:** Nicht konfiguriert  
 
+Weitere Informationen zu "flevault" mit InTune finden Sie unter " [flevault Recovery Keys](encryption-monitor.md#filevault-recovery-keys)".
 

@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6313741af237478bc5eea0cc5b5524250b5d46ac
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
+ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993701"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70063005"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Behandeln von Problemen bei der Windows-Geräteregistrierung in Microsoft Intune
 
@@ -79,7 +79,7 @@ Es gibt mehrere mögliche Lösungen für dieses Problem:
 3. Wählen Sie **Plattformen**und dann **zulassen** für **Windows (MDM)** aus.
 
     > [!IMPORTANT]
-    > Wenn die aktuelle Einstellung bereits zulässig ist, ändern Sie Sie in **blockieren**, speichern Sie die Einstellung, und ändern Sie Sie zurück, um die Einstellung erneut **zuzulassen** und zu speichern. Dadurch wird die Registrierungs Einstellung zurückgesetzt.
+    > Wenn die aktuelle Einstellung bereits **zulässig** ist, ändern Sie Sie in **blockieren**, speichern Sie die Einstellung, und ändern Sie Sie zurück, um die Einstellung erneut **zuzulassen** und zu speichern. Dadurch wird die Registrierungs Einstellung zurückgesetzt.
 
 4. Warten Sie ca. 15 Minuten, und melden Sie das betroffene Gerät dann erneut an.    
 
@@ -166,7 +166,7 @@ Verwenden Sie eine der folgenden Methoden, um dieses Problem zu beheben:
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Deaktivieren Sie die automatische MDM-Registrierung in Azure.
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) an.    
-2. Wechseln Sie zu **Azure Active Directory** > **Mobility-Microsoft InTune (MDM und MAM)**  > .    
+2. Wechseln Sie zu **Azure Active Directory** > **Mobility (MDM und MAM)**  > **Microsoft InTune**.    
 3. Legen Sie den **MDM-Benutzerbereich** auf **None**fest, und klicken Sie dann auf **Speichern**.    
      
 ##### <a name="uninstall"></a>Deinstallieren
@@ -213,7 +213,7 @@ Um dieses Problem in der Hybriden Verwaltung mobiler Geräte mit InTune und Conf
 1. Öffnen Sie die Configuration Manager-Konsole.    
 2. Wählen Sie **Verwaltung**, und klicken Sie dann auf **Cloud Services**.    
 3. Klicken Sie mit der rechten Maustaste auf **Microsoft InTune Abonnement**, und wählen Sie dann **Plattformen Konfigurieren > Fenster**    
-4. **Aktivieren** >  Sie Windows- > Registrierung aktivieren**OK**.  
+4. **Aktivieren** >  Sie Windows-**Registrierung aktivieren** > **OK**.  
 
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Bei der Massen Registrierung ist ein Setup Fehler aufgetreten.
@@ -223,7 +223,7 @@ Um dieses Problem in der Hybriden Verwaltung mobiler Geräte mit InTune und Conf
 #### <a name="resolution"></a>Lösung
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) als Administrator an.    
 2. Wechseln Sie zu **Azure Active Directory > Geräte > Geräteeinstellungen**.    
-3. Legen Sie fest, dass **Benutzer Geräte hinzufügen können, um** **alle** oder **ausgewählte**Azure AD.
+3. Legen Sie **Benutzer dürfen Geräte in Azure AD einbinden** auf **Alle** oder **Ausgewählte** fest.
 
    Wenn Sie **ausgewählt**auswählen, klicken Sie auf **ausgewählt**und dann auf **Mitglieder hinzufügen** , um alle Benutzer hinzuzufügen, die Ihre Geräte mit Azure AD verbinden können. Stellen Sie sicher, dass alle Azure Ad Konten für das Bereitstellungs Paket hinzugefügt werden.
  
@@ -331,7 +331,7 @@ Fehler 0x80070774: ein Fehler ist aufgetreten. Vergewissern Sie sich, dass Sie d
 
 Dieses Problem tritt normalerweise auf, bevor das Gerät in einem Azure AD Hybrid Autopilot-Szenario neu gestartet wird, wenn das Gerät während des ersten Anmeldebildschirms ein Timeout auftritt. Dies bedeutet, dass der Domänen Controller aufgrund von Konnektivitätsproblemen nicht gefunden oder erfolgreich erreicht werden kann. Oder dass sich das Gerät in einem Zustand befindet, der nicht der Domäne beitreten kann.
 
-**Ursache:** Die häufigste Ursache ist, dass Azure AD Hybrid Join verwendet wird und die Funktion "Benutzer zuweisen" im Autopilot-Profil konfiguriert wird. Durch die Verwendung der Funktion "Benutzer zuweisen" wird während des ersten Anmeldebildschirms ein Azure AD Join auf dem Gerät durchführt, bei dem das Gerät in einen Zustand versetzt wird, in dem es nicht der lokalen Domäne beitreten kann. Aus diesem Grund sollte die Funktion "Benutzer zuweisen" nur in den Autopilot-Szenarios des Standard Azure AD verwendet werden.  Das-Feature sollte in Azure AD Hybrid Join Szenarios verwendet werden.
+**Ursache:** Die häufigste Ursache ist, dass Azure AD Hybrid Join verwendet wird und die Funktion "Benutzer zuweisen" im Autopilot-Profil konfiguriert wird. Durch die Verwendung der Funktion "Benutzer zuweisen" wird während des ersten Anmeldebildschirms ein Azure AD Join auf dem Gerät durchführt, bei dem das Gerät in einen Zustand versetzt wird, in dem es nicht der lokalen Domäne beitreten kann. Aus diesem Grund sollte die Funktion "Benutzer zuweisen" nur in den Autopilot-Szenarios des Standard Azure AD verwendet werden.  Die Funktion sollte nicht in Azure AD Hybrid Join Szenarios verwendet werden.
 
 #### <a name="resolution"></a>Lösung
 
@@ -372,7 +372,7 @@ Dieses Problem tritt normalerweise auf, wenn die Berechtigungen für die Organis
 
 1. Öffnen Sie **Active Directory-Benutzer und -Computer** („DSA.msc“).
 2. Klicken Sie mit der rechten Maustaste auf die Organisationseinheit, mit der Sie die in Azure AD Hybrid eingebundenen Computer erstellen möchten, und wählen Sie **Objektverwaltung zuweisen** aus.
-3. Wählen Sie im Assistenten zum Zuweisen der **Objektverwaltung** die Optionen **Weiter** > **Hinzufügen...** > **Objekttypen** aus.
+3. Wählen Sie im Assistenten zum Zuweisen der **Objektverwaltung** die Optionen **Weiter** > **Hinzufügen...**  > **Objekttypen** aus.
 4. Aktivieren Sie im Bereich **Objekttypen** das Kontrollkästchen **Computer**, und klicken Sie dann auf **OK**.
 5. Geben Sie im Bereich **Benutzer**, **Computer** oder **Gruppen auswählen** im Feld **Geben Sie die zu verwenden Objektnamen ein** den Namen des Computers ein, auf dem der Connector installiert ist.
 6. Wählen Sie **Namen überprüfen** , um den Eintrag zu überprüfen > **OK** > **weiter**.
