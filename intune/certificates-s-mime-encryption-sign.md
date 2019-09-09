@@ -1,5 +1,5 @@
 ---
-title: 'Signieren und Verschlüsseln der E-Mails mit S/MIME: Microsoft Intune – Azure | Microsoft-Dokumentation'
+title: 'Signieren und Verschlüsseln von E-Mails mit S/MIME: Microsoft Intune – Azure | Microsoft-Dokumentation'
 description: Erfahren Sie, wie Sie digitale E-Mail-Zertifikate in Microsoft Intune zum Signieren und Verschlüsseln von E-Mails auf Geräten verwenden können. Diese Zertifikate werden als „S/MIME“ bezeichnet und über Gerätekonfigurationsprofile konfiguriert. Signatur- und Verschlüsselungszertifikate verwenden PKCS oder private Zertifikate und verwenden einen Connector, um Zertifikate zu importieren.
 keywords: ''
 author: MandiOhlinger
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5dba3866df9ce5c779deb18cf13852b3d8af1b8d
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 755073af455c1ee63fa52f435a397734d2897b47
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66048894"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122225"
 ---
 # <a name="smime-overview-to-sign-and-encrypt-email-in-intune"></a>S/MIME-Übersicht zum Signieren und Verschlüsseln von E-Mails in Intune
 
@@ -80,7 +80,7 @@ Nachdem Sie S/MIME-Zertifikatprofile für die Signierung und Verschlüsselung er
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune](certificates-scep-configure.md)
+- [Konfigurieren der Infrastruktur zur Unterstützung von SCEP in Intune](certificates-scep-configure.md)
 - [Konfigurieren und Verwenden von PKCS-Zertifikaten mit Intune](certficates-pfx-configure.md)
 - [Verwenden einer Partnerzertifizierungsstelle](certificate-authority-add-scep-overview.md)
 - [Einrichten des Intune Certificate Connectors für den Symantec PKI-Manager-Webdienst](certificates-symantec-configure.md)

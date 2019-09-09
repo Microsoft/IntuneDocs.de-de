@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 269ba2e951ccee2b0fdf2c4cd5a93a9d78aa6923
-ms.sourcegitcommit: e6edfbfd63dd7c2500ce1123205aa2af9a7e8e2e
+ms.openlocfilehash: a3055d375c98f9a74d0e738b7e894ba038b31776
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68783238"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70121858"
 ---
 # <a name="create-a-design"></a>Erstellen eines Entwurfs
 
@@ -166,7 +166,7 @@ Die Public Key-Infrastruktur stellt Zertifikate für Geräte oder Benutzer berei
 
 Wenn Sie planen, Zertifikate mit VPN-, WLAN- oder E-Mail-Profilen mit Intune zu verwenden, müssen Sie sicherstellen, dass eine unterstützte [PKI-Infrastruktur vorhanden ist](certificates-configure.md), in der Zertifikatprofile erstellt und bereitgestellt werden können.
 
-Wenn SCEP-Zertifikate ausgegeben werden sollen, müssen Sie darüber hinaus festlegen, auf welchem Server der Registrierungsdienst für Netzwerkgeräte gehostet wird und wie die Kommunikation erfolgen soll.
+Wenn SCEP-Zertifikatprofile verwendet werden, müssen Sie darüber hinaus festlegen, auf welchem Server der Registrierungsdienst für Netzwerkgeräte (Network Device Enrollment Service, NDES) gehostet wird und wie die Kommunikation erfolgen soll.
 
 Weitere Informationen:
 
@@ -297,7 +297,7 @@ Mit Zertifikatprofilen kann Intune ein Zertifikat für einen Benutzer oder ein G
 Es wird empfohlen zu dokumentieren, welche Benutzergruppe ein Zertifikat benötigt, wie viele Zertifikatprofile benötigt werden und welchen Benutzergruppen sie bereitgestellt werden.
 
 >[!NOTE]
-> Denken Sie daran, dass das vertrauenswürdige Stammzertifikat für das SCEP-Zertifikat erforderlich ist. Stellen Sie daher sicher, dass alle Benutzer, die ein SCEP-Zertifikat erhalten sollen, außerdem ein vertrauenswürdiges Stammzertifikat erhalten. Wenn SCEP-Zertifikate erforderlich sind, entwerfen und dokumentieren Sie, welche SCEP-Zertifikatvorlagen benötigt werden.
+> Denken Sie daran, dass das vertrauenswürdige Stammzertifikat für das SCEP-Zertifikatprofil erforderlich ist. Stellen Sie daher sicher, dass alle Benutzer, die ein SCEP-Zertifikatprofil erhalten sollen, außerdem ein vertrauenswürdiges Stammzertifikat erhalten. Wenn SCEP-Zertifikate erforderlich sind, entwerfen und dokumentieren Sie, welche SCEP-Zertifikatvorlagen benötigt werden.
 
 Im folgenden Beispiel wird gezeigt, wie Zertifikate während des Entwurfs dokumentiert werden können:
 

@@ -1,11 +1,11 @@
 ---
-title: Weiterleiten von Überwachungsprotokollen in Azure Monitor mit Microsoft Intune – Azure | Microsoft-Dokumentation
+title: Weiterleiten von Protokollen an Azure Monitor mit Microsoft Intune – Azure | Microsoft-Dokumentation
 description: Verwenden Sie Diagnoseeinstellungen, um die Überwachungs- und Betriebsprotokolle in Microsoft Intune zum Azure-Speicherkonto, Event Hubs oder Log Analytics zu senden. Sie können wählen, wie lange Sie die Daten aufbewahren möchten, und können einige geschätzte Kosten für Mandanten unterschiedlicher Größe anzeigen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/18/2019
+ms.date: 08/28/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d95b37d18fa609f1c4e98d4fad5cfa600333b90a
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: ed32ad564f850c06b37b15e1994ac066a929ffaa
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354520"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122409"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Senden von Daten an den Speicher, an Event Hubs oder Log Analytics in Intune (Vorschauversion)
 
-Microsoft Intune umfasst integrierte Protokolle, die Informationen zu Ihrer Umgebung bereitstellen. **Überwachungsprotokolle** zeigen Details zu verschiedenen Ereignissen oder Task an, die in Intune auftreten. **Betriebsprotokolle (Vorschau)** zeigen Details für Benutzer und Geräte an, die sich erfolgreich (oder erfolglos) registriert haben, sowie Informationen zu nicht-konformen Geräten.
+Microsoft Intune umfasst integrierte Protokolle, die Informationen zu Ihrer Umgebung bereitstellen:
+
+- **Überwachungsprotokolle** zeigen Details zu verschiedenen Ereignissen oder Task an, die in Intune auftreten.
+- **Betriebsprotokolle (Vorschauversion)** zeigen Details für Benutzer und Geräte, die sich erfolgreich (oder erfolglos) registriert haben, sowie Informationen zu nicht konformen Geräten an.
+- **Betriebsprotokolle für die Gerätekonformität (Vorschauversion)** zeigen einen Organisationsbericht für die Gerätekonformität in Intune und Details zu nicht konformen Geräten an.
 
 Die Protokolle können an Azure Monitor-Dienste gesendet werden, einschließlich Speicherkonten, Event Hubs und Log Analytics. Insbesondere bestehen die folgenden Möglichkeiten:
 
@@ -35,7 +39,7 @@ Die Protokolle können an Azure Monitor-Dienste gesendet werden, einschließlich
 
 Diese Funktionen sind Teil der **Diagnoseeinstellungen** in Intune.
 
-Dieser Artikel zeigt Ihnen, wie Sie **Diagnoseeinstellungen** verwenden können, um Protokolldaten an verschiedene Dienste zu senden, und er enthält Beispiele und Kostenschätzungen und beantwortet einige häufige Fragen.
+Dieser Artikel zeigt Ihnen, wie Sie **Diagnoseeinstellungen** verwenden können, um Protokolldaten an verschiedene Dienste zu senden, und er enthält Beispiele und Kostenschätzungen und beantwortet einige häufige Fragen. Nachdem Sie diese Funktion aktiviert haben, werden Ihre Protokolle an den von Ihnen gewählten Azure Monitor-Dienst weitergeleitet.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -54,7 +58,7 @@ Je nachdem, wohin Sie die Überwachungsprotokolldaten weiterleiten möchten, ben
 ## <a name="send-logs-to-azure-monitor"></a>Senden von Protokollen an Azure Monitor
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Wählen Sie unter **Überwachung** die Option **Diagnoseeinstellungen**. Aktivieren Sie beim ersten Öffnen diese Option:
+2. Wählen Sie unter **Überwachung** die Option **Diagnoseeinstellungen**. Aktivieren Sie diese Option beim ersten Öffnen. Fügen Sie andernfalls eine Einstellung hinzu.
 
     ![Aktivieren der Diagnoseeinstellungen in Intune, um die Protokolle an Azure Monitor zu senden](media/diagnostics-settings-turn-on.png)
 
@@ -87,7 +91,14 @@ Je nachdem, wohin Sie die Überwachungsprotokolldaten weiterleiten möchten, ben
       Wenn Sie sich für ein Speicherkonto entscheiden, geben Sie auch an, wie viele Tage Sie die Daten aufbewahren möchten (Vermerkdauer). Um Daten für immer zu behalten, setzen Sie **Vermerkdauer (Tage)**  auf `0` (Null) fest.
 
       > [!NOTE]
-      > Betriebsprotokolle befinden sich noch in der Vorschauversion. Um Feedback zu geben, einschließlich Informationen, die in den Betriebsprotokollen enthalten sind, gehen Sie zu [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback) (öffnet eine neue Website).
+      > Betriebsprotokolle befinden sich noch in der Vorschauversion. Navigieren Sie zu [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback), um uns Feedback einschließlich der in den Betriebsprotokollen enthaltenen Informationen zu geben.
+
+    - **LOG** > **DeviceComplianceOrg**: Die Betriebsprotokolle für die Gerätekonformität (Vorschauversion) zeigen den Organisationsbericht für die Gerätekonformität in Intune und Details zu nicht konformen Geräten an. Wählen Sie diese Option, um die Konformitätsprotokolle an Ihr Speicherkonto, Ihren Event Hub oder Log Analytics zu senden.
+
+      Wenn Sie sich für ein Speicherkonto entscheiden, geben Sie auch an, wie viele Tage Sie die Daten aufbewahren möchten (Vermerkdauer). Um Daten für immer zu behalten, setzen Sie **Vermerkdauer (Tage)**  auf `0` (Null) fest.
+ 
+      > [!NOTE]
+      > Die Unternehmensprotokolle für die Gerätekonformität befinden sich in der Vorschauversion. Navigieren Sie zu [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas/suggestions/36613948-diagnostics-settings-feedback), um uns Feedback einschließlich der im Bericht enthaltenen Informationen zu geben.
 
     Wenn Sie fertig sind, sehen Ihre Einstellungen ähnlich aus wie die folgenden Einstellungen: 
 

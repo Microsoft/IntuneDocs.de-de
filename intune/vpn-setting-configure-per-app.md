@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3c2b5bc0091544136848bf92fc6cef7524ffa54
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 4893f3484c497ed72352b2bbb229003c2d639107
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68354510"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122285"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>Einrichten eines Pro-App-VPN für iOS-Geräte in Intune
 
@@ -83,7 +83,7 @@ Durch das Profil des vertrauenswürdigen Stammzertifikats stuft das Gerät den V
 
 In den folgenden Artikeln erfahren Sie mehr zum Konfigurieren und Zuweisen eines Clientauthentifizierungszertifikats:
 
-- [Konfigurieren der Zertifikatinfrastruktur für SCEP in Microsoft Intune](certificates-scep-configure.md)
+- [Konfigurieren der Infrastruktur für die Unterstützung von SCEP mit Intune](certificates-scep-configure.md)
 - [Konfigurieren Ihrer Microsoft Intune-Zertifikatsinfrastruktur für PKCS](certficates-pfx-configure.md)
 
 Achten Sie darauf, dass die Clientauthentifizierung für das Zertifikat konfiguriert wurde. Dies können Sie direkt in den SCEP-Zertifikatprofilen festlegen (**Erweiterte Schlüsselverwendung** > **Clientauthentifizierung**). Legen Sie für PKCS die Clientauthentifizierung in der Zertifikatvorlage in der Zertifizierungsstelle fest.

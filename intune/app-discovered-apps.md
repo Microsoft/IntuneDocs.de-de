@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53555a01899cfec15c319e790620b2bfeaa302bc
-ms.sourcegitcommit: 948ff8f56639e6dc7091134a0efd8d44efca63f2
+ms.openlocfilehash: 1d545e5848330e8c4f34eca21a992ad05ca8c85d
+ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2019
-ms.locfileid: "68590907"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "70206406"
 ---
 # <a name="intune-discovered-apps"></a>Von Intune ermittelte Apps
 
@@ -62,6 +62,9 @@ In der folgenden Liste erhalten Sie Informationen zum Plattformtyp der App, zu d
 | macOS | Alle auf dem Gerät installierten Apps | Alle auf dem Gerät installierten Apps | Alle 7 Tage ab der Geräteregistrierung |
 | Android | Nur verwaltete Apps | Alle auf dem Gerät installierten Apps | Alle 7 Tage ab der Geräteregistrierung |
 | Android Enterprise | Nur verwaltete Apps | Nur im Arbeitsprofil installierte Apps | Alle 7 Tage ab der Geräteregistrierung |
+
+> [!NOTE]
+>Für in Hybrid-Azure AD eingebundene Windows 10-Geräte mit der Intune-Verwaltungserweiterung wird der App-Bestand zurzeit nicht gemäß dem obigen Zeitplan erfasst. Dies ist ein bekanntes Problem. Jegliche Änderungen oder Aktualisierungen zu diesem Verhalten werden in [In der Entwicklung befindliche Microsoft Intune-Features](in-development.md) und/oder in [Neuerungen](whats-new.md) angekündigt.
 
 Die Anzahl der ermittelten Apps stimmt mit der Statusanzahl von App-Installationen möglicherweise nicht überein. Es gibt folgende Möglichkeiten für Inkonsistenzen:
 - Eine Zieländerung einer installierten verwalteten App kann dazu führen, dass die Installationsanzahl im Statusblade verringert, in den ermittelten Apps aber weiterhin berichtet wird.

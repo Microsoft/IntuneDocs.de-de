@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c5ddb32502aa15f6eaf8f5866772ecd32e970d4
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: faff917dfafaaedb988cbbfb8174547f0b0ccf3b
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648452"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122265"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Hinzufügen einer Partnerzertifizierungsstelle in Intune mithilfe von SCEP
 
@@ -42,7 +42,7 @@ Dieser Artikel stellt eine Übersicht über dieses Feature aus der Perspektive v
 
 ## <a name="overview"></a>Übersicht
 
-Die folgenden Schritte bieten einen Überblick über das Ausstellen von SCEP-Zertifikaten in Intune:
+Die folgenden Schritte bieten einen Überblick über die Verwendung von SCEP für Zertifikate in Intune:
 
 1. Ein Administrator erstellt in Intune ein SCEP-Zertifikatprofil für bestimmte Benutzer oder Geräte.
 2. Das Gerät verbindet sich mit Intune.
@@ -81,7 +81,7 @@ Achten Sie darauf, dass Sie über die erforderlichen Berechtigungen zum Registri
 
 3. Wählen Sie **Registrieren** aus, um die Anwendung zu erstellen und die Seite „Übersicht“ für die neue App zu öffnen.  
 
-4. Kopieren Sie auf der App-Seite **Übersicht** den Wert der **Anwendungs-ID (Client)** , und notieren Sie ihn zur späteren Verwendung. Sie benötigen diesen Wert später.  
+4. Kopieren Sie auf der App-Seite **Übersicht** den Wert der **Anwendungs-ID (Client)**, und notieren Sie ihn zur späteren Verwendung. Sie benötigen diesen Wert später.  
 
 5. Navigieren Sie im Navigationsbereich der App unter **Verwalten** zu **Zertifikate und Geheimnisse**. Wählen Sie die Schaltfläche **Neuer geheimer Clientschlüssel** aus. Geben Sie einen Wert in „Beschreibung“ ein, wählen Sie eine Option für **Gültig bis** aus, und wählen Sie **Hinzufügen** aus, um einen *Wert* für den geheimen Clientschlüssel zu generieren. 
    > [!IMPORTANT]  
@@ -106,9 +106,9 @@ Achten Sie darauf, dass Sie über die erforderlichen Berechtigungen zum Registri
 ### <a name="configure-and-deploy-a-scep-certificate-profile"></a>Konfigurieren und Bereitstellen eines SCEP-Zertifikatprofils
 Erstellen Sie als Administrator ein SCEP-Zertifikatprofil für bestimmte Benutzer oder Geräte. Weisen Sie anschließend das Profil zu. Weitere Informationen finden Sie in den folgenden Artikeln:
 
-- [Erstellen eines SCEP-Zertifikatprofils](certificates-scep-configure.md#create-a-scep-certificate-profile)
+- [Erstellen eines SCEP-Zertifikatprofils](certificates-profile-scep.md#create-a-scep-certificate-profile)
 
-- [Zuweisen des Zertifikatprofils](certificates-scep-configure.md#assign-the-certificate-profile)
+- [Zuweisen des Zertifikatprofils](certificates-profile-scep.md#assign-the-certificate-profile)
 
 ## <a name="removing-certificates"></a>Entfernen von Zertifikaten
 

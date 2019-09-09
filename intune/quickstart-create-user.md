@@ -13,12 +13,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 398b8c748fddfa032194cfa60547d76322e28c9a
+ms.sourcegitcommit: 2a7d621587471822b1428440b24f08c8722612dd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511359"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70234809"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Schnellstart: Erstellen eines Benutzers in Intune und Zuweisen einer Lizenz
 
@@ -28,7 +28,7 @@ Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für ein
 
 ## <a name="sign-in-to-intune"></a>Anmelden bei Intune
 
-Registrieren Sie sich bei [Intune](https://aka.ms/intuneportal) als [globaler Administrator oder Intune-Dienstadministrator](users-add.md#types-of-administrators). Wenn Sie ein Testabonnement für Intune erstellt haben, besitzt das Konto, mit dem Sie das Abonnement erstellt haben, die Rolle des globalen Administrators.
+Registrieren Sie sich bei [Intune](https://aka.ms/intuneportal) als [globaler Administrator oder Intune-Dienstadministrator](users-add.md#types-of-administrators). Wenn Sie ein Testabonnement für Intune erstellt haben, besitzt das Konto, mit dem Sie das Abonnement erstellt haben, die Rolle des Unternehmensadministrators.
 
 ## <a name="create-a-user"></a>Erstellen von Benutzern
 
@@ -61,11 +61,11 @@ So weisen Sie einem Benutzer eine Intune-Lizenz zu:
    > Diese Einstellung verwendet eine Ihrer Lizenzen für diesen Benutzer. Wenn Sie eine Testumgebung verwenden, sollten Sie diese Lizenz später einem echten Benutzer in einer Liveumgebung zuweisen.
 6. Klicken Sie auf **Speichern** > **Schließen**.
 
-Für den neuen aktiven Intune-Benutzer wird jetzt angezeigt, dass er eine **Intune**-Lizenz verwendet.
+Dem neuen aktiven Intune-Benutzer wird jetzt angezeigt, dass er eine **Intune**-Lizenz verwendet.
 
 ## <a name="clean-up-resources"></a>Bereinigen der Ressourcen
 
-Wenn Sie diesen Benutzer nicht mehr benötigen, können Sie diesen löschen, indem Sie zum [Microsoft 365 Admin Center](http://go.microsoft.com/fwlink/p/?LinkId=698854) navigieren und auf **Benutzer** > **Aktive Benutzer**klicken, den *Benutzer aus der Liste auswählen*, und dann auf **Benutzer löschen** > **Benutzer löschen** > **Änderungen bestätigen** > **Schließen** klicken.
+Wenn Sie diesen Benutzer nicht mehr benötigen, können Sie diesen löschen, indem Sie zum [Microsoft 365 Admin Center](http://go.microsoft.com/fwlink/p/?LinkId=698854) navigieren und auf Folgendes klicken: **Benutzer** > **Aktive Benutzer** > *den Benutzer in der Liste* > **Benutzer löschen** > **Benutzer löschen** > **Änderungen bestätigen** > **Schließen**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

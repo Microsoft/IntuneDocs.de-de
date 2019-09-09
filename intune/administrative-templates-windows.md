@@ -1,11 +1,11 @@
 ---
 title: 'Verwendung von Vorlagen für Windows 10-Geräte in Microsoft Intune: Azure | Microsoft-Dokumentation'
-description: Verwenden Sie administrative Vorlagen in Microsoft Intune, um eine Vielzahl von Einstellungen für Windows 10-Geräte zu erstellen. Verwenden Sie diese Einstellungen in einem Gerätekonfigurationsprofil, um Office-Programme zu konfigurieren, Funktionen in Internet Explorer zu sichern, den Zugriff auf OneDrive zu kontrollieren, Remotedesktopfunktionen zu verwenden, AutoPlay zu aktivieren, Energieverwaltungseinstellungen festzulegen, HTTP-Druck und unterschiedliche Anmeldeoptionen zu verwenden und die Größe des Ereignisprotokolls festzulegen.
+description: Verwenden Sie administrative Vorlagen in Microsoft Intune, um eine Vielzahl von Einstellungen für Windows 10-Geräte zu erstellen. Verwenden Sie diese Einstellungen in einem Gerätekonfigurationsprofil, um Office-Programme und Microsoft Edge zu konfigurieren, Funktionen in Internet Explorer zu sichern, den Zugriff auf OneDrive zu kontrollieren, Remotedesktopfunktionen zu verwenden, AutoPlay zu aktivieren, Energieverwaltungseinstellungen festzulegen, HTTP-Druck und unterschiedliche Anmeldeoptionen zu verwenden und die Größe des Ereignisprotokolls festzulegen.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 8/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,20 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bfad3feed6daef1930c235bec9c25e809da46c5
-ms.sourcegitcommit: ce9cae824a79223eab3c291fd5d5e377efac84cb
+ms.openlocfilehash: 608f9045d676a756c4ee7440072040075e497605
+ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67842737"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70214337"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Verwenden von Windows 10-Vorlagen zum Konfigurieren von Gruppenrichtlinieneinstellungen in Microsoft Intune
 
 Wenn Sie Geräte in Ihrer Organisation verwalten, sollten Sie auch Einstellungen erstellen, die dann auf unterschiedliche Gerätegruppen angewendet werden. Nehmen Sie beispielsweise an, dass Sie über mehrere Gerätegruppen verfügen. Sie sollten Gruppe A mehrere bestimmte Einstellungen zuweisen. Gruppe B soll andere Einstellungen erhalten. Ihre Einstellungen sollen in einer einfachen, konfigurierbaren Ansicht angezeigt werden.
 
-Sie können diese Aufgabe mithilfe der **administrativen Vorlagen** in Microsoft Intune erledigen. Die administrativen Vorlagen enthalten Hunderte Einstellungen, die Funktionen in Internet Explorer, Microsoft Office-Programmen, Remotedesktop und OneDrive sowie die Verwendung von Kennwörtern und PINs u. v. m. kontrollieren können. Diese Einstellungen ermöglichen Gruppenadministratoren das Verwalten von Gruppenrichtlinien mithilfe der Cloud.
+Sie können diese Aufgabe mithilfe der **administrativen Vorlagen** in Microsoft Intune erledigen. Die administrativen Vorlagen enthalten Hunderte Einstellungen, die Funktionen in Microsoft Edge, Internet Explorer, Microsoft Office-Programmen, Remotedesktop und OneDrive sowie die Verwendung von Kennwörtern und PINs u. v. m. kontrollieren können. Diese Einstellungen ermöglichen Gruppenadministratoren das Verwalten von Gruppenrichtlinien mithilfe der Cloud.
 
-Die Windows-Einstellungen ähneln den Einstellungen für Gruppenrichtlinienobjekte in Active Directory (AD). Diese Einstellungen sind in Windows integriert und sind [durch ADMX unterstützte Einstellungen](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (öffnet eine andere Microsoft-Website), die XML verwenden. Die Office-Einstellungen sind in ADMX erfasst und verwenden die ADMX-Einstellungen in [administrativen Office-Vorlagendateien](https://www.microsoft.com/download/details.aspx?id=49030). Die Intune-Vorlagen sind jedoch vollständig cloudbasiert. Sie bieten eine einfache und unkomplizierte Möglichkeit, die Einstellungen zu konfigurieren und die Einstellungen zu suchen, die Sie nutzen möchten.
+Die Windows-Einstellungen ähneln den Einstellungen für Gruppenrichtlinienobjekte in Active Directory (AD). Diese Einstellungen sind in Windows integriert und sind [durch ADMX unterstützte Einstellungen](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies), die XML verwenden. Die Office-Einstellungen sind in ADMX erfasst und verwenden die ADMX-Einstellungen in [administrativen Office-Vorlagendateien](https://www.microsoft.com/download/details.aspx?id=49030). Die Intune-Vorlagen sind jedoch vollständig cloudbasiert. Sie bieten eine einfache und unkomplizierte Möglichkeit, die Einstellungen zu konfigurieren und die Einstellungen zu suchen, die Sie nutzen möchten.
 
 **Administrative Vorlagen** sind in Intune integriert, einschließlich der Verwendung des OMA-URI, und erfordern keine weiteren Anpassungen. Als Bestandteil Ihrer Lösung für die mobile Geräteverwaltung (Mobile Device Management, MDM) verwenden Sie diese Vorlageneinstellungen als Anlaufstelle, um Ihre Windows 10-Geräte zu verwalten.
 
@@ -38,7 +38,7 @@ In diesem Artikel sind die Schritte zum Erstellen einer Vorlage für Windows 10-
 
 - Einige dieser Einstellungen sind ab Windows 10, Version 1703 (RS2), verfügbar. Um optimale Ergebnisse zu erzielen, wird empfohlen, Windows 10 Enterprise, Version 1903 (19h1) oder höher, zu verwenden.
 
-- In den Windows-Einstellungen werden [Windows-Richtlinien-CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (öffnet eine andere Microsoft-Website) verwendet. Die CSPs funktionieren unter verschiedenen Windows-Editionen, z. B. Home, Professional, Enterprise. Wenn Sie herausfinden möchten, ob ein CSP unter einer bestimmten Edition funktioniert, klicken Sie auf [Windows-Richtlinien-CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (öffnet eine andere Microsoft-Website).
+- In den Windows-Einstellungen werden [Windows-Richtlinien-CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) verwendet. Die CSPs funktionieren unter verschiedenen Windows-Editionen, z. B. Home, Professional, Enterprise. Wenn Sie herausfinden möchten, ob ein CSP unter einer bestimmten Edition funktioniert, klicken Sie auf [Windows-Richtlinien-CSPs](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies).
 
 ## <a name="create-a-template"></a>Erstellen einer Vorlage
 
@@ -58,9 +58,16 @@ In diesem Artikel sind die Schritte zum Erstellen einer Vorlage für Windows 10-
     > [!TIP]
     > Die Windows-Einstellungen in Intune korrelieren mit dem lokalen Gruppenrichtlinienpfad, der im Editor für lokale Gruppenrichtlinien (`gpedit`) angezeigt wird.
 
-5. In der Dropdownliste werden standardmäßig **Alle Produkte** angezeigt. Sie können die Einstellungen in der Liste auch so filtern, dass nur **Windows**-Einstellungen oder nur **Office**-Einstellungen angezeigt werden:
+5. In der Dropdownliste werden standardmäßig **Alle Produkte** angezeigt. Sie können die Einstellungen in der Liste auch so filtern, dass nur **Windows**-Einstellungen, nur **Office**-Einstellungen oder nur **Microsoft Edge**-Einstellungen angezeigt werden:
 
     ![Filtern Sie die Liste, um in den administrativen Vorlagen in Intune alle Windows-Einstellungen oder alle Office-Einstellungen anzuzeigen.](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+
+    > [!NOTE]
+    > Microsoft Edge-Einstellungen gelten für:
+    >
+    > - Windows 10 RS4 und höher mit installiertem [KB 4512509](https://support.microsoft.com/kb/4512509).
+    > - Windows 10 RS5 und höher mit installiertem [KB 4512534](https://support.microsoft.com/kb/4512534).
+    > - Windows 10 19H1 und höher mit installiertem [KB 4512941](https://support.microsoft.com/kb/4512941).
 
 6. Wählen Sie eine beliebige Einstellung aus. Filtern Sie beispielsweise nach **Office**, und wählen Sie **Eingeschränktes Browsing aktivieren** aus. Es wird eine detaillierte Beschreibung der Einstellung angezeigt. Wählen Sie **Aktiviert** oder **Deaktiviert** aus, oder übernehmen Sie die Standardeinstellung **Nicht konfiguriert**. In der detaillierten Beschreibung wird erläutert, was geschieht, wenn Sie **Aktiviert**, **Deaktiviert** oder **Nicht konfiguriert** auswählen.
 7. Klicken Sie auf **OK**, um die Änderungen zu speichern.
@@ -69,9 +76,10 @@ Gehen Sie die Liste der Einstellungen durch, und konfigurieren Sie die gewünsch
 
 - Verwenden Sie die Einstellung **Einstellungen für VBA-Makrobenachrichtigungen**, um VBA-Makros in verschiedenen Microsoft Office-Programmen zu verarbeiten, einschließlich in Word und Excel.
 - Verwenden Sie die Einstellung **Dateidownloads zulassen**, um Downloads von Internet Explorer zuzulassen oder zu verhindern.
-- Verwenden Sie die Einstellung **Kennwort anfordern, wenn ein Computer reaktiviert wird (Netzbetrieb)** , um Benutzer aufzufordern, ein Kennwort einzugeben, sobald das Gerät wieder aktiviert und der Energiesparmodus beendet wird.
+- Verwenden Sie **Kennwort anfordern, wenn ein Computer reaktiviert wird (Netzbetrieb)**, um Benutzer aufzufordern, ein Kennwort einzugeben, sobald das Gerät wieder aktiviert und der Energiesparmodus beendet wird.
 - Verwenden Sie die Einstellung **Download von unsignierten ActiveX-Steuerelementen**, um das Herunterladen unsignierter ActiveX-Steuerelemente aus Internet Explorer für Benutzer zu blockieren.
 - Verwenden Sie die Einstellung **Systemwiederherstellung deaktivieren**, um Benutzern zu erlauben oder sie daran zu hindern, eine Systemwiederherstellung auf dem Gerät auszuführen.
+- Verwenden Sie die Einstellung **Allow importing of favorites** (Importieren von Favoriten zulassen), um Benutzern das Importieren von Favoriten aus anderen Browsern in Microsoft Edge zu erlauben oder zu blockieren.
 - Und vieles mehr!
 
 ## <a name="find-some-settings"></a>Suchen von Einstellungen

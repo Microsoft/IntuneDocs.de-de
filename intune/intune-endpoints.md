@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d46290975cc03343de5197b41236988a6486bfd
-ms.sourcegitcommit: 6b7e214e753d0bbc1fdf129853a258d3a4d60081
+ms.openlocfilehash: 7202ea3230cef8f6d262bdd99fe035076e4466b1
+ms.sourcegitcommit: 9d26ac74eff7647031ae29b13da815703c436f03
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "68937145"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70176912"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Netzwerkendpunkte für Microsoft Intune  
 
@@ -47,7 +47,7 @@ Für verwaltete Geräte sind Konfigurationen erforderlich, über die **Alle Benu
 
 In den folgenden Tabellen sind die Ports und Dienste aufgeführt, auf die der Intune-Client zugreift:
 
-|Domänen    |IP-Adresse      |
+|Domains    |IP-Adresse      |
 |-----------|----------------|
 |login.microsoftonline.com <br> *.officeconfig.msocdn.com <br> config.office.com <br> graph.windows.net| Weitere Informationen finden Sie unter [URLs und IP-Adressbereiche von Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2). |
 |portal.manage.microsoft.com<br> m.manage.microsoft.com |52.175.12.209<br>20.188.107.228<br>52.138.193.149<br>51.144.161.187<br>52.160.70.20<br>52.168.54.64 <br>13.72.226.202<br>52.189.220.232|
@@ -85,6 +85,8 @@ In den folgenden Tabellen sind die Ports und Dienste aufgeführt, auf die der In
 |Admin.manage.microsoft.com|52.224.221.227<br>52.161.162.117<br>52.178.44.195<br>52.138.206.56<br>52.230.21.208<br>13.75.125.10|
 |wip.mam.manage.microsoft.com|52.187.76.84<br>13.76.5.121<br>52.165.160.237<br>40.86.82.163<br>52.233.168.142<br>168.63.101.57<br>52.187.196.98<br>52.237.196.51|
 |mam.manage.microsoft.com|104.40.69.125<br>13.90.192.78<br>40.85.174.177<br>40.85.77.31<br>137.116.229.43<br>52.163.215.232<br>52.174.102.180<br>52.187.196.173<br>52.156.162.48|
+|*.manage.microsoft.com|40.82.248.224/28<br>20.189.105.0/24<br>20.37.153.0/24<br>20.37.192.128/25<br>20.38.81.0/24<br>20.41.1.0/24<br>20.42.1.0/24<br>20.42.130.0/24<br>20.42.224.128/25<br>20.43.129.0/24<br>40.119.8.128/25<br>40.74.25.0/24<br>40.82.249.128/25<br>40.80.184.128/25<br>52.150.137.0/25|
+
 
 ## <a name="network-requirements-for-powershell-scripts-and-win32-apps"></a>Netzwerkanforderungen für PowerShell-Skripts und Win32-Apps  
 
@@ -140,7 +142,7 @@ Für Metadaten für die Übermittlungsoptimierung:
 
 ## <a name="apple-device-network-information"></a>Informationen zum Netzwerk von Apple-Geräten  
 
-|Verwendung|Hostname (IP-Adresse/-Subnetz)|Protokoll|Port|
+|Verwendet für|Hostname (IP-Adresse/-Subnetz)|Protokoll|Port|
 |-----|--------|------|-------|
 |Abrufen und Anzeigen von Inhalten von Apple-Servern|itunes.apple.com<br>\*.itunes.apple.com<br>\*.mzstatic.com<br>\*.phobos.apple.com<br> \*.phobos.itunes-apple.com.akadns.net |    HTTP    |      80      |
 |Kommunikation mit APNs-Servern|#-courier.push.apple.com<br># ist eine zufällige Zahl zwischen 0 und 50.|    TCP     |  5223 und 443  |
@@ -152,7 +154,7 @@ Weitere Informationen finden Sie in den Apple-Artikeln [Von Apple-Softwareproduk
 
 Der Server, der den Microsoft Intune Certificate Connector hostet, muss mithilfe des **TCP-Ports** **443** Zugriff auf die Standorte der öffentlichen IP-Adressen haben, die in der folgenden Tabelle aufgeführt sind. Weitere Informationen über Zertifikate finden Sie unter [Konfigurieren und Verwenden von PKCS-Zertifikaten mit Intune](certficates-pfx-configure.md) und [Konfigurieren und Verwenden von SCEP-Zertifikaten mit Intune](certificates-scep-configure.md).
 
-|Domänen                             |IP-Adresse       |
+|Domains                             |IP-Adresse       |
 |---------------|--------------------------------------|
 |Manage.microsoft.com <br> i.manage.microsoft.com <br> r.manage.microsoft.com <br> a.manage.microsoft.com <br> p.manage.microsoft.com <br> EnterpriseEnrollment.manage.microsoft.com <br> EnterpriseEnrollment-s.manage.microsoft.com|13.76.177.110  |
 |fef.msua06.manage.microsoft.com  |13.78.185.97  |

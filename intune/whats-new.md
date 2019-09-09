@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/16/2019
+ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 267eb630b962893d5ab32530a095fe2fd3f7102e
-ms.sourcegitcommit: cbd406e3c6ab8c9a29d58dfda4a18e34277a1594
+ms.openlocfilehash: 09d80964a417772b1f011478db59398ceede5c5e
+ms.sourcegitcommit: cf40f641af4746a1e34edd980dc6ec96fd040126
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69620216"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70122142"
 ---
-# <a name="whats-new-in-microsoft-intune"></a>Neues in Microsoft Intune
+# <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 
 Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Hier finden Sie auch [wichtige Hinweise](#notices), [frühere Releases](whats-new-archive.md) und Informationen zur [Veröffentlichung von Intune-Dienstupdates](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728). 
 
@@ -53,6 +53,18 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Hier 
 -->  
 
 <!-- ########################## -->
+
+## <a name="week-of-august-26-2019"></a>Woche vom 26. August 2019
+
+### <a name="configure-microsoft-edge-settings-using-administrative-templates-for-windows-10-and-newer----5228061---"></a>Konfigurieren von Microsoft Edge-Einstellungen mithilfe administrativer Vorlagen für Windows 10 und höher <!-- 5228061 -->
+
+Auf Geräten mit Windows 10 oder höher können Sie administrative Vorlagen erstellen, um Gruppenrichtlinieneinstellungen in Intune zu konfigurieren. In diesem Update können Sie Einstellungen konfigurieren, die auf Microsoft Edge Version 77 und höher angewendet werden.
+
+Weitere Informationen zu administrativen Vorlagen finden Sie unter [Verwenden von Windows 10-Vorlagen zum Konfigurieren von Gruppenrichtlinieneinstellungen in Intune](administrative-templates-windows.md).
+
+Gilt für:
+
+- Windows 10 und höher (Windows RS4 und höher)
 
 ## <a name="week-of-august-12-2019"></a>Woche vom 12. August 2019
 
@@ -477,7 +489,7 @@ Sicherheitsbaselines für die Intune-Unterstützung der Versionsverwaltung. Mit 
 #### <a name="the-use-security-keys-for-sign-in-setting-has-moved-----4501151---"></a>Die Einstellung „Sicherheitsschlüssel zur Anmeldung verwenden“ wurde verschoben  <!-- 4501151 -->
 Die Gerätekonfigurationseinstellung für Identity Protection mit dem Namen **Sicherheitsschlüssel zur Anmeldung verwenden** ist keine Untereinstellung mehr von *Windows Hello for Business konfigurieren*. Es handelt sich nun um eine Einstellung auf oberster Ebene, die immer verfügbar ist, auch wenn Sie die Verwendung von Windows Hello for Business nicht aktivieren. Weitere Informationen finden Sie unter [Identity Protection](identity-protection-windows-settings.md).
 
-### <a name="role-based-access-control"></a>Rollenbasierte Zugriffsteuerung
+### <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
 #### <a name="new-permissions-for-assigned-group-admins------4504437-----"></a>Neue Berechtigungen für zugewiesene Gruppenadministratoren   <!-- 4504437   -->
 Die in Intune integrierte Rolle des Schuladministrators verfügt nun über CRUD-Berechtigungen (Create, Read, Update und Delete [Erstellen, Lesen, Aktualisieren und Löschen]) für verwaltete Apps. Dieses Update bedeutet, dass Sie, wenn Sie in Intune for Education als Gruppenadministrator zugewiesen sind, nun das iOS-MDM-Push-Zertifikat, die iOS-MDM-Servertoken und die iOS-VPP-Token zusammen mit [allen vorhandenen Berechtigungen](https://docs.microsoft.com/intune-education/group-admin-delegate#group-admin-permissions) erstellen, anzeigen, aktualisieren und löschen können. Um eine dieser Aktionen durchzuführen, gehen Sie zu **Mandanteneinstellungen** > **iOS-Geräteverwaltung**.  
@@ -814,7 +826,7 @@ Als V1.0 in Version 1808 erstmals eingeführt wurde, gab es wichtige Unterschie
 #### <a name="monitor-security-baseline-status-public-preview----3082047---"></a>Überwachen des Status der Sicherheitsbaseline (Public Preview) <!-- 3082047 --> 
 Der Überwachung von Sicherheitsbaselines wurde eine [Ansicht für einzelne Kategorien](security-baselines-monitor.md#per-category-view) hinzugefügt. (Sicherheitsbaselines befinden sich weiterhin in Preview). Die Ansicht für einzelne Kategorien zeigt jede Kategorie der Baseline mit dem Prozentsatz der Geräte an, die in jede Statusgruppe dieser Kategorie fallen. Sie können nun anzeigen, wie viele Geräte nicht mit den individuellen Kategorien übereinstimmen und falsch konfiguriert oder nicht anwendbar sind.
 
-### <a name="role-based-access-control"></a>Rollenbasierte Zugriffsteuerung
+### <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
 #### <a name="scope-tags-for-apple-vpp-tokens---2371886----"></a>Bereichsmarkierungen für Apple-VPP-Token <!--2371886  -->
 Sie können nun Bereichsmarkierungen zu Apple-VPP-Token hinzufügen. Nur Benutzer, denen die gleiche Bereichsmarkierung zugewiesen ist, können auf das Apple-VPP-Token mit dieser Markierung zugreifen. VPP-Apps und E-Books, die mit diesem Token erworben werden, erben seine Bereichsmarkierungen. Weitere Informationen zu Bereichsmarkierungen finden Sie unter [Use RBAC and scope tags (Verwenden der rollenbasierten Zugriffssteuerung und von Bereichsmarkierungen)](scope-tags.md).
@@ -930,7 +942,7 @@ Sie können nun nach exakten Gerätenamen suchen. Wechseln Sie zu **Intune** > *
 #### <a name="support-for-additional-connectors-on-the-tenant-status-page----3617202----"></a>Unterstützung für zusätzliche Connectors auf der Seite „Mandantenstatus“ <!-- 3617202  -->
 Auf der [Mandantenstatusseite](tenant-status.md) werden nun Statusinformationen zu zusätzlichen Connectors, einschließlich *Windows Defender Advanced Threat Protection* (ATP) und anderen Mobile Threat Defense-Connectors, angezeigt.
 
-### <a name="role-based-access-control"></a>Rollenbasierte Zugriffsteuerung
+### <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
 #### <a name="granting-intune-read-only-access-to-some-azure-active-directory-roles----3637917----"></a>Gewähren des schreibgeschützten Zugriffs auf Intune für einige Azure Active Directory-Rollen <!-- 3637917  -->
 Der schreibgeschützte Zugriff auf Intune wurde den folgenden Azure AD-Rollen gewährt. Berechtigungen, die mit Azure AD-Rollen gewährt werden, haben Vorrang vor der rollenbasierten Zugriffssteuerung von Intune.
@@ -1016,14 +1028,14 @@ Auch bei Änderungen an neuen oder vorhandenen Kennwortrichtlinien durch den Adm
 Gilt für:  
 macOS
 
-#### <a name="assign-scep-certificates-to-a-userless-macos-device-----2340521----"></a>Zuweisen von SCEP-Zertifikaten zu einem macOS-Gerät ohne Benutzer  <!-- 2340521  -->
-Sie können SCEP-Zertifikate (Simple Certificate Enrollment-Protokoll) mit Geräteattributen zu macOS-Geräten hinzufügen (dies gilt auch für Geräte ohne Benutzeraffinität) und die Zertifikatprofile zu WLAN- oder VPN-Profilen zuordnen. Dadurch wird die bereits vorhandene Unterstützung erweitert, sodass [SCEP-Zertifikate zu Geräten mit und ohne Benutzeraffinität zugewiesen werden können](certificates-scep-configure.md#create-a-scep-certificate-profile), auf denen Windows, iOS oder Android ausgeführt wird.  Mit diesem Update wurde die Option hinzugefügt, den Zertifikattyp *Gerät* beim Konfigurieren eines SCEP-Zertifikatprofils für macOS auszuwählen.
+#### <a name="assign-scep-certificates-to-a-userless-macos-device-------2340521------"></a>Zuweisen von SCEP-Zertifikaten zu einem macOS-Gerät ohne Benutzer    <!-- 2340521    -->
+Sie können SCEP-Zertifikate (Simple Certificate Enrollment-Protokoll) mit Geräteattributen zu macOS-Geräten hinzufügen (dies gilt auch für Geräte ohne Benutzeraffinität) und die Zertifikatprofile zu WLAN- oder VPN-Profilen zuordnen. Dadurch wird die bereits vorhandene Unterstützung erweitert, sodass [SCEP-Zertifikate zu Geräten mit und ohne Benutzeraffinität zugewiesen werden können](certificates-profile-scep.md), auf denen Windows, iOS oder Android ausgeführt wird.  Mit diesem Update wurde die Option hinzugefügt, den Zertifikattyp *Gerät* beim Konfigurieren eines SCEP-Zertifikatprofils für macOS auszuwählen.
 
 Gilt für: 
 - macOS
 
 #### <a name="intune-conditional-access-ui-update------2432313-----"></a>Update der Intune-Benutzeroberfläche für den bedingten Zugriff   <!-- 2432313   -->
-Wir haben die Benutzeroberfläche für den bedingten Zugriff in der Intune-Konsole verbessert. Dazu zählen:
+Wir haben die Benutzeroberfläche für den bedingten Zugriff in der Intune-Konsole verbessert. Dazu gehören:
 - Das Intune-Blatt *Bedingter Zugriff* wurde durch das entsprechende Blatt aus Azure Active Directory ersetzt. Dadurch wird sichergestellt, dass Sie alle Einstellungen und Konfigurationen für den [bedingten Zugriff](conditional-access.md) (eine Technologie von Azure AD) innerhalb der Intune-Konsole nutzen können. 
 - Das Blatt *Lokaler Zugriff* wurde in *Exchange-Zugriff* umbenannt, und das Setup für den *Exchange-Dienstconnector* wurde auf dieses Blatt verschoben.  Dadurch ändert sich der Ort, an dem Sie [Details zu Exchange (online und lokal) konfigurieren und überwachen](exchange-connector-install.md).  
 
@@ -1355,7 +1367,7 @@ Auf der neuen Seite mit dem [Mandantenstatus](tenant-status.md) können Sie auf 
 Innerhalb der nächsten Tage wird diese neue Hilfe- und Supportbenutzeroberfläche für alle Mandanten verfügbar gemacht. Diese neue Benutzeroberfläche ist für Intune verfügbar und kann über das Blatt „Intune“ im [Azure-Portal](https://portal.azure.com/) verwendet werden.
 Über die neue Benutzeroberfläche können Sie Ihr Problem in eigenen Worten beschreiben und erhalten Einblicke in die Problembehandlung sowie webbasierte Anleitungen zur Selbsthilfe. Diese Lösungen werden über einen regelbasierten Algorithmus für maschinelles Lernen angeboten, der auf Benutzeranfragen basiert. Zusätzlich zur themenspezifischen Anleitung können Sie auch den neuen Workflow zur Anfragestellung nutzen, um eine Supportanfrage per E-Mail oder Telefon zu stellen. Diese neue Benutzeroberfläche ersetzen die alte Benutzeroberfläche für Hilfe und Support, die statische, vorab ausgewählte Optionen enthielt. Diese basieren auf dem Bereich der Konsole, in dem Sie sich befinden, wenn Sie „Hilfe und Support“ öffnen. Weitere Informationen finden Sie unter [Anfordern von Support für Microsoft Intune](get-support.md).
 
-### <a name="role-based-access-control"></a>Rollenbasierte Zugriffsteuerung
+### <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Bereichsmarkierungen für Apps <!-- 1081941 -->
 Sie können Bereichsmarkierungen erstellen, um den Zugriff für Rollen und Apps einzuschränken. Sie können einer App eine Bereichsmarkierung hinzufügen, sodass nur Benutzer mit der gleichen Bereichsmarkierung wie die App auf diese zugreifen können. Derzeit können Apps, die Intune über den verwalteten Google Play Store hinzugefügt wurden oder die mithilfe des Apple Volume Purchase Program (VPP) erworben wurden, keine Bereichsmarkierungen hinzugefügt werden (zukünftige Unterstützung dafür ist geplant). Weitere Informationen finden Sie unter [Use scope tags to filter policies (Verwenden von Bereichsmarkierungen zum Filtern von Richtlinien)](scope-tags.md).
