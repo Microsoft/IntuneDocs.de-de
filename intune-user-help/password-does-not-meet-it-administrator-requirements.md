@@ -1,11 +1,11 @@
 ---
-title: Ihr Kennwort entspricht nicht den Anforderungen des Supports Ihres Unternehmens | Microsoft-Dokumentation
-description: ''
+title: Kenn Wort Anforderungen für Geräte in InTune-Unternehmensportal | Microsoft-Dokumentation
+description: In diesem Artikel werden allgemeine Kenn Wort Anforderungen beschrieben, die Ihre Organisation möglicherweise erzwingt.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 09/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,42 +16,86 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac0a8b076fe6f21621826dec32f7aaa72eba88c7
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bce3ae1fd5386c749285313f29fc88cf7b464750
+ms.sourcegitcommit: d0d320fbac69b063b4264491d8a918cfe12bd485
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837015"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70751780"
 ---
-# <a name="your-password-does-not-meet-your-company-supports-requirements"></a>Ihr Kennwort entspricht nicht den Anforderungen des Supports Ihres Unternehmens
+# <a name="device-password-requirements-for-enrolled-devices"></a>Geräte Kennwort-Anforderungen für registrierte Geräte
 
-Der Support Ihres Unternehmens benötigt ein Kennwort, damit er ihr Gerät schützen kann. Das Kennwort, mit dem Sie auf Unternehmens-, Schul- oder Uniressourcen zugreifen, erfüllt derzeit mindestens eine der Anforderungen nicht, die der Support Ihres Unternehmens eingerichtet hat. Um das Problem zu beheben, befolgen Sie die Anweisungen, die auf Ihrem Gerät angezeigt werden. Beschreibungen der Probleme sind nachstehend aufgelistet.
+In Ihrer Organisation kann es erforderlich sein, ein sicheres Kennwort zu erstellen, bevor Sie Zugriff auf Geschäfts-, Schul-oder uniressourcen haben. In diesem Artikel werden allgemeine Kenn Wort Anforderungen für Windows 10-, Ios-, macOS-und Android-Geräte beschrieben. Ihre Organisation erzwingt möglicherweise nicht alle diese Anforderungen.  
 
-Erforderliche Schritte zum Festlegen Ihrer PIN bzw. Ihres Kennworts finden Sie unter dem Link, der Ihrem Gerätetyp entspricht:
 
-- [Festlegen der PIN oder des Kennworts für Ihr Android-Gerät](set-your-pin-or-password-android.md)
-- [Festlegen oder Ändern der Kennung Ihres iOS-Geräts](set-or-change-your-passcode-ios.md)
-- [Festlegen oder Ändern des Kennworts Ihres Windows-Geräts](set-or-change-your-password-windows.md)
+Wenn ein Kennwort oder eine Kennung nicht mehr die Anforderung erfüllt, erhalten Sie eine Meldung von Unternehmensportal. Dabei werden die Änderungen beschrieben, die Sie vornehmen müssen. Wenn in der Nachricht keine Details bereitgestellt werden, verwenden Sie diesen Artikel als Referenz für den Vergleich mit Ihrem aktuellen Kennwort.  
 
-> [!NOTE]
-> Wenn Sie Probleme dabei haben, festzulegen, wie Ihr Kennwort die Anforderungen des Supports Ihres Unternehmens erfüllen kann, wenden Sie sich an diesen Support. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).
+> [!IMPORTANT]
+> Wenn Sie Ihr Kennwort geändert haben, um die Anforderungen zu erfüllen, aber weiterhin Benachrichtigungen erhalten, starten Sie das Gerät neu.  
 
-## <a name="pin-or-password-issue-descriptions"></a>Beschreibungen der PIN- bzw. Kennwortprobleme
+Wenden Sie sich an Ihren IT-Support, um zusätzliche Hilfe zu erhalten oder um die spezifischen Anforderungen Ihrer Organisation zu ermitteln. Auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980) finden Sie Kontaktinformationen.  
 
-| **Problem** | **Beschreibung** |
+## <a name="windows-10-password-requirements"></a>Kenn Wort Anforderungen für Windows 10
+
+| Nachricht | Beheben |
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Das Kennwort enthält keine komplexen Zeichen**. | Der Support Ihres Unternehmens verlangt, dass Sie komplexe Zeichen in Ihrem Kennwort verwenden. Beispiele für komplexe Zeichen sind Zahlen, Großbuchstaben und Symbole wie $, % und #. |
-| **Das Kennwort ist zu einfach und zu unsicher**. | Beispiele für einfache Kennwörter sind 1234 oder 1111. Wenn Sie nicht sicher sind, welche Arten von Kennwörtern zulässig sind, versuchen Sie sich zu vergewissern, dass Ihr Kennwort keine sequenziellen oder wiederholenden Zahlen, wie im Beispiel gezeigt, enthält. |
-| **Das Kennwort ist abgelaufen**. | Ihr Kennwort ist abgelaufen. Sie müssen daher ein neues Kennwort festlegen, das die vom Support Ihres Unternehmens festgelegten Anforderungen erfüllt. |
-| **Das Kennwort ist nicht festgelegt**. | Bevor Sie über Ihr Gerät auf Unternehmens-E-Mails und -daten zugreifen können, müssen Sie ein Kennwort festlegen, das die vom Support Ihres Unternehmens festgelegten Anforderungen erfüllt. |
-| **Das Kennwort ist zu kurz**. | Der Support Ihres Unternehmens verlangt, dass Sie ein längeres Kennwort mit mehr Zeichen verwenden. |
-| **Das Kennwort wurde erst kürzlich verwendet**. | Der Support Ihres Unternehmens verhindert, dass Sie bereits in der Vergangenheit verwendete Kennwörter nutzen. Wählen Sie ein Kennwort aus, das Sie zuvor noch nicht verwendet haben. |
-| **Das Kennwort ist nicht komplex genug, um Anforderungen zu erfüllen**. | Der Support Ihres Unternehmens verlangt, dass Sie komplexere Zeichen in Ihrem Kennwort verwenden. Versuchen Sie es mit Zeichen wie Zahlen, Großbuchstaben und Symbolen wie $, % und #. Dies kann auch für andere Konten auf Ihrem Gerät gelten, überprüfen Sie also alle anderen Arbeitskonten, um sicherzustellen, dass Ihr Kennwort den Anforderungen entspricht, die von der IT für Ihr Gerät festgelegt wurden. |
+| Das Kennwort ist erforderlich. | Legen Sie ein Kennwort fest. Ihre Organisation erfordert, dass Sie ein Kennwort eingeben, um das Gerät zu entsperren. |
+| Das Kennwort ist zu einfach. |  Stellen Sie sicher, dass Ihr Kennwort keine sequenziellen oder sich wiederholenden Zahlen wie 1234 oder 1111 enthält. |
+| Das Kennwort ist zu kurz.| Aktualisieren oder legen Sie ein Kennwort mit mehr Zeichen fest. Ihre Organisation erfordert, dass Ihr Kennwort eine bestimmte Länge hat. Was Sie tatsächlich auswählen, ist unterschiedlich, aber die erforderliche Mindestlänge beträgt 4 Zeichen, und der Höchstwert beträgt 16. |
+| Das Kennwort darf nur Zahlen enthalten. | Legen Sie ein Kennwort fest, das nur Zahlen enthält.|
+| Das Kennwort darf nur alphanumerische Zeichen enthalten. | Legen Sie ein Kennwort fest, das eine Mischung aus Zahlen und Buchstaben enthält.|
+| Das Kennwort muss komplexe Zeichen enthalten. | Fügen Sie komplexe Zeichen wie z. b. Zahlen, Großbuchstaben `$`und `%`Symbole wie `#`, und hinzu. Ihre Organisation erfordert eine Mischung aus Buchstaben, Zahlen und nicht alphanumerischen Zeichen, damit andere Benutzer das Kennwort nicht erraten können.|  
+| Das Kennwort ist abgelaufen. | Legen Sie ein neues Kennwort fest. Ihre Organisation verlangt, dass Sie Ihr Kennwort nach einer bestimmten Anzahl von Tagen ändern. |
+| Das Kennwort wurde erst kürzlich verwendet. | Wählen Sie ein Kennwort aus, das Sie zuvor noch nicht verwendet haben. Ihre Organisation erfordert, dass eine bestimmte Zeitspanne verstrichen ist, bevor Sie ein Kennwort wieder verwenden. |
+
+## <a name="ios-passcode-requirements"></a>IOS-Kennungs Anforderungen
+
+| Nachricht | Beheben |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Die Kennung ist erforderlich.| Legen Sie einen Passcode fest. Ihre Organisation erfordert, dass Sie eine Kennung eingeben, um das Gerät zu entsperren. |
+| Die Kennung ist zu einfach. |  Stellen Sie sicher, dass Ihre Kennung keine sequenziellen oder sich wiederholenden Zahlen enthält, wie z. b. 1234 oder 1111. |
+| Die Kennung ist zu kurz. | Aktualisieren Sie eine Kennung, oder legen Sie eine Kennung mit mehr Zeichen fest. Ihre Organisation erfordert, dass Ihre Kennung eine bestimmte Länge hat. Was Sie tatsächlich auswählen, ist unterschiedlich, aber die erforderliche Mindestlänge beträgt 4 Zeichen, und der Höchstwert beträgt 14. Wenn Sie Ihre Kennung ändern, wird möglicherweise eine Eingabeaufforderung von Apple angezeigt, die Sie darüber informiert, dass Sie 6 oder mehr Zeichen eingeben müssen. Diese Meldung ist eine Apple-System Empfehlung. Wenn für Ihre Organisation nur eine Kennung von 4 oder 5 Zeichen erforderlich ist, müssen Sie keine 6-stellige Kennung eingeben.|  
+| Die Kennung darf nur Zahlen enthalten. | Legen Sie eine Kennung fest, die nur Zahlen enthält.|
+| Die Kennung darf nur alphanumerische Zeichen enthalten.| Legen Sie eine Kennung fest, die eine Mischung aus Zahlen und Buchstaben enthält.|
+| Die Kennung muss nicht alphanumerische Zeichen enthalten. | Fügen Sie Sonderzeichen hinzu `&`, z `$`. b. `#`, `!`,, `%`und. Ihre Organisation erfordert eine Mischung aus Buchstaben, Zahlen und nicht alphanumerischen Zeichen, damit andere Benutzer die Kennung nicht erraten können.|
+| Der Passcode ist abgelaufen. | Legen Sie ein neues Kennwort fest. Ihre Organisation verlangt, dass Sie Ihr Kennwort nach einer bestimmten Anzahl von Tagen ändern. |
+| Ihre Kennung wurde zu kurzem verwendet.| Wählen Sie eine Kennung aus, die Sie zuvor noch nicht verwendet haben. Ihre Organisation erfordert, dass eine bestimmte Zeitspanne verstrichen ist, bevor Sie eine Kennung wieder verwenden. |
+|Fingereingabe-ID oder Gesichts-ID-Authentifizierung erforderlich. | Einrichten der Fingereingabe-ID oder der Gesichts-ID. Ihre Organisation erfordert, dass Sie sich mit einer dieser Methoden authentifizieren, bevor Sie Auto Ausfüllen für Kenn Wörter oder Kreditkarteninformationen verwenden. | 
+
+## <a name="macos-password-requirements"></a>macOS-Kenn Wort Anforderungen
+| Nachricht | Beheben |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Das Kennwort ist erforderlich. | Legen Sie ein Kennwort fest. Ihre Organisation erfordert, dass Sie ein Kennwort eingeben, um das Gerät zu entsperren. |
+| Das Kennwort ist zu einfach.|  Stellen Sie sicher, dass Ihr Kennwort keine sequenziellen oder sich wiederholenden Zahlen wie 1234 oder 1111 enthält. |
+| Das Kennwort ist zu kurz. | Aktualisieren oder legen Sie ein Kennwort mit mehr Zeichen fest. Ihre Organisation erfordert, dass Ihr Kennwort eine bestimmte Länge hat.|
+| Das Kennwort darf nur Zahlen enthalten. | Legen Sie ein Kennwort fest, das nur Zahlen enthält.|
+| Das Kennwort darf nur alphanumerische Zeichen enthalten. | Legen Sie ein Kennwort fest, das eine Mischung aus Zahlen und Buchstaben enthält.|
+| Das Kennwort muss nicht alphanumerische Zeichen enthalten. | Fügen Sie Sonderzeichen hinzu `&`, z `$`. b. `#`, `!`,, `%`und. Ihre Organisation erfordert eine Mischung aus Buchstaben, Zahlen und nicht alphanumerischen Zeichen, damit andere Benutzer das Kennwort nicht erraten können.|
+| Das Kennwort ist abgelaufen. | Legen Sie ein neues Kennwort fest. Ihre Organisation verlangt, dass Sie Ihr Kennwort nach einer bestimmten Anzahl von Tagen ändern. |
+| Das Kennwort wurde erst kürzlich verwendet. | Wählen Sie ein Kennwort aus, das Sie zuvor noch nicht verwendet haben. Ihre Organisation erfordert, dass eine bestimmte Zeitspanne verstrichen ist, bevor Sie ein Kennwort wieder verwenden. |
+
+## <a name="android-password-requirements"></a>Android-Kenn Wort Anforderungen
+| Nachricht | Beheben |
+|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Das Kennwort ist erforderlich. | Legen Sie ein Kennwort oder eine PIN fest. Ihre Organisation erfordert, dass Sie ein Kennwort eingeben, um das Gerät zu entsperren. |
+| Das Kennwort ist zu einfach. |  Stellen Sie sicher, dass Ihr Kennwort oder Ihre PIN keine sequenziellen oder sich wiederholenden Zahlen enthält, wie etwa 1234 oder 1111. |
+| Das Kennwort ist zu kurz. | Aktualisieren oder legen Sie ein Kennwort mit mehr Zeichen fest. Ihre Organisation erfordert, dass Ihr Kennwort eine bestimmte Länge hat.|
+| Das Kennwort muss Ziffern enthalten. | Legen Sie ein Kennwort oder eine PIN fest, das Zahlen enthält.|
+| Das Kennwort muss Buchstaben enthalten. | Legen Sie ein Kennwort fest, das Buchstaben aus dem Alphabet enthält.|
+| Das Kennwort muss alphanumerische Zeichen enthalten. | Legen Sie ein Kennwort fest, das eine Mischung aus Zahlen und Buchstaben enthält.|
+| Das Kennwort muss alphanumerische Zeichen und Symbole enthalten. | Legen Sie ein Kennwort fest, das eine Mischung aus Buchstaben, Ziffern und Sonderzeichen `!`wie `$` `&`, `%`,, `#`und enthält. |
+| Für das Kennwort muss biometrische Technologie verwendet werden.| Richten Sie Ihr Gerät für die Verwendung der biometrischen Authentifizierung ein, z. b. Fingerabdruck oder Gesichtserkennung.
+| Das Kennwort ist abgelaufen. | Legen Sie ein neues Kennwort fest. Ihre Organisation verlangt, dass Sie Ihr Kennwort nach einer bestimmten Anzahl von Tagen ändern. |
+| Das Kennwort wurde erst kürzlich verwendet. | Wählen Sie ein Kennwort aus, das Sie zuvor noch nicht verwendet haben. Ihre Organisation erfordert, dass eine bestimmte Zeitspanne verstrichen ist, bevor Sie ein Kennwort wieder verwenden. |
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Erforderliche Schritte zum Festlegen Ihrer PIN bzw. Ihres Kennworts finden Sie unter dem Link, der Ihrem Gerätetyp entspricht:
+In den folgenden Artikeln finden Sie Informationen zum Erstellen oder Ändern des Kennworts, der Kennung oder der PIN für das Gerät.  
 
-- [Festlegen der PIN oder des Kennworts für Ihr Android-Gerät](set-your-pin-or-password-android.md)
-- [Festlegen oder Ändern der Kennung Ihres iOS-Geräts](set-or-change-your-passcode-ios.md)
-- [Festlegen oder Ändern des Kennworts Ihres Windows-Geräts](set-or-change-your-password-windows.md)
+- [Festlegen des Windows 10-Geräte Kennworts](set-or-change-your-password-windows.md)  
+- [Festlegen der Passcodes für IOS-Geräte](set-or-change-your-passcode-ios.md)  
+- [Festlegen der PIN oder des Kennworts für ein Android-Gerät](set-your-pin-or-password-android.md)  
+
+Benötigen Sie weitere Unterstützung? Wenden Sie sich an den Support. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+

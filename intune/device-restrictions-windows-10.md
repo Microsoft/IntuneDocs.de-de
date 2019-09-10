@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/13/2019
+ms.date: 08/29/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,16 +14,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b3fd474e938e2e85a0a08951a9e3f154d980411
-ms.sourcegitcommit: b64869b4be357c0741ec01b1a2f0bae13efce937
+ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
+ms.sourcegitcommit: 18be0ccc6e51073af32c44abeba421d69a5ae21a
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "69998945"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70302296"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
-In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschrieben, die Sie auf Geräten mit Windows 10 und höher festlegen können. Verwenden Sie diese Einstellungen als Bestandteil Ihrer Lösung für die mobile Geräteverwaltung (Mobile Device Management, MDM), um Features zuzulassen oder zu deaktivieren, Kennwortregeln festzulegen, den Sperrbildschirm anzupassen, Windows Defender zu verwenden usw.
+In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschrieben, die Sie auf Geräten mit Windows 10 und höher festlegen können. Verwenden Sie diese Einstellungen im Rahmen Ihrer Lösung für die mobile Geräteverwaltung (Mobile Device Management, MDM), um Features zuzulassen oder zu deaktivieren, Kennwortregeln festzulegen, den Sperrbildschirm anzupassen, Microsoft Defender zu verwenden und vieles mehr.
 
 Diese Einstellungen werden erst einem Gerätekonfigurationsprofil in Intune hinzugefügt und dann Ihren Windows 10-Geräten zugewiesen oder für diese bereitgestellt.
 
@@ -79,8 +79,6 @@ Diese Einstellungen verwenden den [ApplicationManagement-Richtlinien-CSP](https:
 
   [ApplicationManagement/LaunchAppAfterLogOn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-launchappafterlogon)
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
 ## <a name="cellular-and-connectivity"></a>Mobilfunk und Konnektivität
 
 Diese Einstellungen verwenden die [Konnektivitätsrichtlinien](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-connectivity)- und [WLAN-Richtlinien](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi)-CSPs, die auch die unterstützten Windows-Editionen auflisten.
@@ -114,8 +112,6 @@ Diese Einstellungen verwenden den [Bluetooth-Richtlinien-CSP](https://docs.micro
 
   [Im Leitfaden zu ServicesAllowedList](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) finden Sie weitere Informationen zur Liste der Dienste.
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
 
 Diese Einstellungen verwenden den [Kontenrichtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts), der auch die unterstützten Windows-Editionen auflistet.
@@ -124,8 +120,6 @@ Diese Einstellungen verwenden den [Kontenrichtlinien-CSP](https://docs.microsoft
 - **Nicht-Microsoft-Konto**: **Block** verhindert, dass Endbenutzer Nicht-Microsoft-Konten über die Benutzeroberfläche hinzufügen können. **Nicht konfiguriert** (Standard) erlaubt dem Benutzer, E-Mail-Konten hinzuzufügen, die nicht mit einem Microsoft-Konto verknüpft sind.
 - **Synchronisierung der Einstellungen für Microsoft-Konto**: **Nicht konfiguriert** (Standard) erlaubt das Synchronisieren der mit einem Microsoft-Konto verknüpften Geräte- und App-Einstellungen zwischen Geräten. **Blockieren** verhindert diese Synchronisierung.
 - **Anmelde-Assistent für Microsoft-Konten**: Bei Festlegung auf **Nicht konfiguriert** (Standard) können Benutzer den **Anmelde-Assistenten für Microsoft-Konten** (wlidsvc-Dienst) starten und beenden. Dieser Betriebssystemdienst ermöglicht Benutzern die Anmeldung bei ihrem Microsoft-Konto. **Deaktivieren** verhindert, dass Endbenutzer den Anmelde-Assistenten für Microsoft-Konten (wlidsvc-Dienst) steuern können.
-
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="cloud-printer"></a>Clouddrucker
 
@@ -140,8 +134,6 @@ Diese Einstellungen verwenden den [EnterpriseCloudPrint-Richtlinien-CSP](https:/
 
 > [!TIP]
 > Nachdem Sie [Windows Server Hybrid Cloud Print](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview) eingerichtet haben, können Sie diese Einstellungen konfigurieren und auf Ihren Windows-Geräten bereitstellen.
-
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="control-panel-and-settings"></a>Systemsteuerung und Einstellungen
 
@@ -165,8 +157,6 @@ Klicken Sie auf **OK**, um die Änderungen zu speichern.
   - **Datenschutz**: **Blockieren** verhindert den Zugriff auf den Datenschutzbereich der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
   - **Update und Sicherheit**: **Blockieren** verhindert den Zugriff auf den Bereich für Update und Sicherheit der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
 ## <a name="display"></a>Anzeige
 
 Diese Einstellungen verwenden den [Anzeigerichtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display), der auch die unterstützten Windows-Editionen auflistet.
@@ -182,8 +172,6 @@ Mit der GDI-DPI-Skalierung können Anwendungen, die nicht mit DPI-Werten kompati
   GDI-DPI-Skalierung ist für alle Legacyanwendungen in der Liste deaktiviert.
 
 Sie können auch eine CSV-Datei mit der Liste der Apps **importieren**.
-
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="general"></a>Allgemein
 
@@ -230,8 +218,6 @@ Diese Einstellungen verwenden den [Benutzeroberflächenrichtlinien-CSP](https://
 
 - **Prozesse über den Task-Manager beenden**: Diese Einstellung bestimmt, ob der Task-Manager von anderen Benutzern als Administratoren zum Beenden von Tasks verwendet werden darf. Die Option **Blockieren** verhindert, dass Standardbenutzer (also keine Administratoren) den Task-Manager zum Beenden von Prozessen oder Tasks auf dem Gerät verwenden. Über die Option **Nicht konfiguriert** (Standard) erhalten Standardbenutzer die Erlaubnis, Prozesse oder Tasks mithilfe des Task-Managers zu beenden.
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
 ## <a name="locked-screen-experience"></a>Gesperrter Bildschirm
 
 - **Info-Center-Benachrichtigungen (nur Mobilgeräte)** : **Blockieren** verhindert die Anzeige von Info-Center-Benachrichtigungen auf dem Gerätesperrbildschirm. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer die Auswahl, welche Apps Benachrichtigungen auf dem Sperrbildschirm anzeigen können.
@@ -255,8 +241,6 @@ Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
   [DeviceLock/ScreenTimeoutWhileLocked-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
 ## <a name="messaging"></a>Messaging
 
 Diese Einstellungen verwenden den [Messagingrichtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging), der auch die unterstützten Windows-Editionen auflistet.
@@ -264,8 +248,6 @@ Diese Einstellungen verwenden den [Messagingrichtlinien-CSP](https://docs.micros
 - **Nachrichtensynchronisierung (nur Mobilgeräte)** : **Blockieren** deaktiviert die Sicherung und Wiederherstellung von SMS-Nachrichten sowie die Synchronisierung zwischen Windows-Geräten. Die Deaktivierung verhindert, dass Informationen auf Servern gespeichert werden, deren Kontrolle außerhalb der Organisation liegt. **Nicht konfiguriert** (Standard) ermöglicht es Benutzern, diese Einstellungen zu ändern und ihre Nachrichten zu synchronisieren.
 - **MMS (nur mobil)** : **Blockieren** deaktiviert die Funktion zum Senden/Empfangen von MMS auf dem Gerät. Verwenden Sie diese Richtlinie für Unternehmen, um MMS im Rahmen der Überwachungs- oder Verwaltungsanforderungen auf Geräten zu deaktivieren. **Nicht konfiguriert** (Standard) lässt das Senden und Empfangen von MMS zu.
 - **RCS (nur mobil)** : **Blockieren** deaktiviert die Funktion für RCS-Sendevorgänge/Empfangsvorgänge (Rich Communication Services) auf dem Gerät. Verwenden Sie diese Richtlinie für Unternehmen, um RCS im Rahmen der Überwachungs- oder Verwaltungsanforderungen auf Geräten zu deaktivieren. **Nicht konfiguriert** (Standard) lässt das Senden und Empfangen von RCS zu.
-
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge-Browser
 
@@ -327,7 +309,7 @@ Dieses Geräteeinschränkungsprofil steht in direktem Zusammenhang mit dem Kiosk
 - **Meldung beim Öffnen von Websites in Internet Explorer**: Verwenden Sie diese Einstellung, um zu konfigurieren, dass Microsoft Edge eine Benachrichtigung anzeigt, bevor eine Website in Internet Explorer 11 geöffnet wird. Folgende Optionen sind verfügbar:
   - **Meldung nicht anzeigen**: Das Standardverhalten des Betriebssystems wird verwendet, d.h. möglicherweise wird keine Meldung angezeigt.
   - **Meldung anzeigen, dass Website in Internet Explorer 11 geöffnet wird** : Die Meldung beim Öffnen von Websites in Internet Explorer anzeigen. Websites werden im Internet Explorer geöffnet. 
-  - **Meldung mit Option zum Öffnen von Websites in Microsoft Edge anzeigen**: Die Meldung beim Öffnen von Websites in Internet Explorer anzeigen. Die Meldung enthält einen Link **Weiter in Microsoft Edge**, damit Benutzer Microsoft Edge anstelle von Internet Explorer auswählen können.
+  - **Meldung mit Option zum Öffnen von Websites in Microsoft Edge anzeigen**: Die Meldung beim Öffnen von Websites in Microsoft Edge anzeigen. Die Meldung enthält einen Link **Weiter in Microsoft Edge**, damit Benutzer Microsoft Edge anstelle von Internet Explorer auswählen können.
 
   > [!IMPORTANT]
   > Für diese Einstellung müssen Sie die Einstellung **Unternehmensmodus-Websiteliste** konfigurieren, die Einstellung **Intranetdatenverkehr an Internet Explorer senden** oder beide Einstellungen aktivieren.
@@ -335,8 +317,6 @@ Dieses Geräteeinschränkungsprofil steht in direktem Zusammenhang mit dem Kiosk
 - **Microsoft-Kompatibilitätsliste zulassen**: **Ja** (Standard) ermöglicht die Verwendung einer Microsoft-Kompatibilitätsliste. **Nein** verhindert die Microsoft-Kompatibilitätsliste in Microsoft Edge. Mithilfe dieser Liste von Microsoft kann Microsoft Edge Websites mit bekannten Kompatibilitätsproblemen ordnungsgemäß anzeigen.
 - **Startseiten und neue Registerkartenseite vorab laden**: **Ja** (Standard) verwendet das Standardverhalten des Betriebssystems, das diese Seiten möglicherweise vorab lädt. Das Vorabladen minimiert die Zeit zum Starten von Microsoft Edge und Laden neuer Registerkarten. **Nein** verhindert, dass Microsoft Edge Startseiten und die neue Registerkartenseite vorab lädt.
 - **Startseiten und neue Registerkartenseite vorab starten**: **Ja** (Standard) verwendet das Standardverhalten des Betriebssystems, das diese Seiten möglicherweise vorab startet. Vorabstarten steigert die Leistung von Microsoft Edge und minimiert die zum Starten von Microsoft Edge erforderliche Zeit. **Nein** verhindert, dass Microsoft Edge Startseiten und die neue Registerkartenseite vorab startet.
-
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ### <a name="favorites-and-search"></a>Favoriten und Suche
 
@@ -357,8 +337,6 @@ Klicken Sie auf **OK**, um die Änderungen zu speichern.
 - **Änderungen an der Suchmaschine zulassen**: **Ja** (Standard) ermöglicht es Benutzern, neue Suchmaschinen hinzuzufügen oder die Standardsuchmaschine in Microsoft Edge zu ändern. Wählen Sie **Nein**, um zu verhindern, dass Benutzer die Suchmaschine anpassen.
 
   Diese Einstellung ist nur bei Ausführung im [Normalmodus (Kiosk mit mehreren Apps)](#use-microsoft-edge-kiosk-mode) verfügbar.
-
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ### <a name="privacy-and-security"></a>Datenschutz und Sicherheit
 
@@ -383,8 +361,6 @@ Wenn „Außerkraftsetzung durch Benutzer blockieren und aktivieren“ ausgewäh
 - **Datensammlung für Livekacheln zulassen**: **Ja** (Standard) ermöglicht es Microsoft Edge, Informationen von Livekacheln zu erfassen, die an das Startmenü angeheftet sind. **Nein** verhindert, dass diese Informationen erfasst werden. Dies kann für Benutzer zu eingeschränkten Funktionen führen.
 - **Benutzer kann Zertifikatfehler außer Kraft setzen**: **Ja** (Standard) ermöglicht Benutzern den Zugriff auf Websites, die SSL-/TLS-Fehler (Secure Sockets Layer/Transport Layer Security) enthalten. **Nein** (für erhöhte Sicherheit empfohlen) verhindert, dass Benutzer auf Websites mit SSL- oder TLS-Fehlern zugreifen können.
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
 ### <a name="additional"></a>Zusätzliche Informationen
 
 - **Microsoft Edge-Browser zulassen** (nur Mobilgeräte): **Ja** lässt die Verwendung des Microsoft Edge-Webbrowsers auf dem Gerät zu. **Nein** verhindert die Verwendung von Microsoft Edge auf dem Gerät. Wenn Sie **Nein** auswählen, gelten die anderen individuellen Einstellungen nur für den Desktop.
@@ -401,8 +377,6 @@ Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
   Sie können auch eine CSV-Datei **Importieren**, die die Paketfamiliennamen enthält. Oder **exportieren** Sie die Paketfamiliennamen, die Sie eingeben.
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
 ## <a name="network-proxy"></a>Netzwerkproxy
 
 Diese Einstellungen verwenden den [NetworkProxy-Richtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/networkproxy-csp), der auch die unterstützten Windows-Editionen auflistet.
@@ -415,8 +389,6 @@ Diese Einstellungen verwenden den [NetworkProxy-Richtlinien-CSP](https://docs.mi
   - **Portnummer**: Geben Sie die Portnummer Ihres Proxyservers ein.
   - **Proxyausnahmen**: Geben Sie URLs an, die den Proxyserver nicht verwenden dürfen. Trennen Sie die einzelnen Elemente durch Semikola.
   - **Proxyserver für lokale Adresse umgehen**: **Nicht konfiguriert** (Standard) verhindert die Verwendung eines Proxyservers für lokale Adressen in Ihrem Intranet. **Zulassen** verwendet einen Proxyserver für lokale Adressen.
-
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="password"></a>Kennwort
 
@@ -466,8 +438,6 @@ Diese Einstellungen verwenden den [DeviceLock-Richtlinien-CSP](https://docs.micr
 
   [CSP: Authentication/PreferredAadTenantDomainName](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
 ## <a name="per-app-privacy-exceptions"></a>App-bezogene Datenschutzausnahmen
 
 Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als das unter „Standarddatenschutz“ definierte Verhalten.
@@ -496,23 +466,17 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 - **Feedback und Diagnose**: Legen Sie fest, ob diese App auf Diagnoseinformationen zugreifen darf.
 - **Mit Geräten synchronisieren**: Legen Sie fest, ob diese App automatisch Informationen mit Drahtlosgeräten teilen und synchronisieren darf, die nicht explizit mit dem Gerät gekoppelt sind.
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
 ## <a name="personalization"></a>Personalization
 
 Diese Einstellungen verwenden den [Personalisierungsrichtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp), der auch die unterstützten Windows-Editionen auflistet.
 
 - **URL zu Desktophintergrundbild (nur Desktop)** : Geben Sie die URL zu einem Bild im JPG-, JPEG oder PNG-Format an, das Sie als Windows-Desktophintergrund verwenden möchten. Benutzer können das Bild nicht ändern. Geben Sie beispielsweise `https://contoso.com/logo.png` ein.
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
 ## <a name="printer"></a>Drucker
 
 - **Drucker**: Liste der lokalen Drucker, die hinzugefügt wurden.
 - **Standarddrucker**: Festlegen als Standarddrucker.
 - **Benutzerzugriff für das Hinzufügen neuer Drucker**: Zulassen oder Blockieren der Verwendung von lokalen Druckern.
-
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="privacy"></a>Datenschutz
 
@@ -524,8 +488,6 @@ Diese Einstellungen verwenden den [Datenschutzrichtlinien-CSP](https://docs.micr
 - **Nur lokale Aktivitäten**: **Blockieren** Sie diese Einstellung, um geteilte Aktivitäten und Ermittlungen von kürzlich in der Programmumschaltung verwendeten Ressourcen anhand von ausschließlich lokalen Aktivitäten zu vermeiden. **Nicht konfiguriert** (Standard) aktiviert diese Einstellung.
 
 Sie können Informationen definieren, auf die alle Apps auf dem Gerät zugreifen können. Definieren Sie ebenfalls Ausnahmen für jede App mithilfe von **App-bezogenen Datenschutzausnahmen**.
-
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ### <a name="exceptions"></a>Ausnahmen
 
@@ -548,8 +510,6 @@ Klicken Sie auf **OK**, um die Änderungen zu speichern.
 - **Feedback und Diagnose**: Legen Sie diese Einstellung fest, wenn diese App auf Diagnoseinformationen zugreifen soll.
 - **Mit Geräten synchronisieren**: Legen Sie fest, ob diese App automatisch Informationen mit Drahtlosgeräten teilen und synchronisieren darf, die nicht explizit mit Ihrem PC, Tablet oder Telefon gekoppelt sind.
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
 ## <a name="projection"></a>Projektion
 
 Diese Einstellungen verwenden den [WirelessDisplay-Richtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wirelessdisplay), der auch die unterstützten Windows-Editionen auflistet.
@@ -557,8 +517,6 @@ Diese Einstellungen verwenden den [WirelessDisplay-Richtlinien-CSP](https://docs
 - **Benutzereingabe über Empfänger der drahtlosen Anzeige**: **Blockieren** verhindert Benutzereingaben über Empfänger der drahtlosen Anzeige. **Nicht konfiguriert** (Standard) ermöglicht es, dass eine drahtlose Anzeige Tastatur-, Maus-, Stift- und Toucheingaben zurück an das Quellgerät sendet.
 - **Projektion auf diesem PC**: **Blockieren** verhindert, dass andere Geräte das Gerät für die Projektion finden. **Nicht konfiguriert** (Standard) erlaubt, dass das Gerät erkannt wird, und kann eine Projektion auf das Gerät über den Sperrbildschirm durchführen.
 - **PIN für Kopplung erforderlich**: Wählen Sie **Erforderlich** aus, um immer zur Eingabe einer PIN beim Herstellen der Verbindung mit einem Projektionsgerät aufzufordern. **Nicht konfiguriert** (Standard) erfordert keine PIN, um das Gerät an ein Projektionsgerät zu koppeln.
-
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="reporting-and-telemetry"></a>Berichterstellung und Telemetrie
 
@@ -602,8 +560,6 @@ Diese Einstellungen verwenden den [Suchrichtlinien-CSP](https://docs.microsoft.c
   - **Streng**: Höchste Filterung nicht jugendfreier Inhalte.
   - **Mittel**: Mittlere Filterung nicht jugendfreier Inhalte. Gültige Suchergebnisse werden nicht gefiltert.
 - **Webergebnisse in der Suche anzeigen**: Bei Festlegung auf **Blockieren** können Benutzer nicht suchen, und Webergebnisse werden nicht in der Suche angezeigt. **Nicht konfiguriert** (Standard) ermöglicht Benutzern die Suche im Web, und die Ergebnisse werden auf dem Gerät angezeigt.
-
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="start"></a>Starten
 
@@ -675,8 +631,6 @@ Diese Einstellungen verwenden den [Startrichtlinien-CSP](https://docs.microsoft.
   - **Ausblenden**: Die Verknüpfung wird ausgeblendet, und die Einstellung wird in der Einstellungen-App deaktiviert.
   - **Anzeigen**: Die Verknüpfung wird angezeigt, und die Einstellung wird in der Einstellungen-App deaktiviert.
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
 ## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen
 
 - **SmartScreen für Microsoft Edge**: **Erforderlich** deaktiviert Windows Defender SmartScreen, und SmartScreen kann von Benutzern nicht mehr aktiviert werden. **Nicht konfiguriert** (Standard) aktiviert SmartScreen. Schützt Benutzer vor potenziellen Bedrohungen und verhindert, dass Benutzer diese Einstellung deaktivieren.
@@ -693,8 +647,6 @@ Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
   [Browser/PreventSmartScreenPromptOverrideForFiles-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
 ## <a name="windows-spotlight"></a>Windows-Blickpunkt
 
 Diese Einstellungen verwenden den [Benutzeroberflächenrichtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience), der auch die unterstützten Windows-Editionen auflistet.
@@ -709,38 +661,96 @@ Diese Einstellungen verwenden den [Benutzeroberflächenrichtlinien-CSP](https://
   - **Personalisierung von Windows-Blickpunkt**: **Blockieren** verhindert, dass Windows Diagnosedaten verwendet, um angepasste Funktionen für Benutzer bereitzustellen. **Nicht konfiguriert** (Standard) ermöglicht es Microsoft, Diagnosedaten zu verwenden, um personalisierte Empfehlungen, Tipps und Angebote bereitzustellen und Windows an die Anforderungen des Benutzers anzupassen.
   - **Windows-Begrüßungsseite**: **Blockieren** deaktiviert die Windows-Willkommensfunktion von Windows-Blickpunkt. Der Windows-Willkommensseite wird nicht angezeigt, wenn Updates und Änderungen an Windows und den zugehörigen Apps vorgenommen werden. **Nicht konfiguriert** (Standard) lässt die Windows-Begrüßungsseite zu, die dem Benutzer Informationen zu neuen oder aktualisierten Features anzeigt.
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
-
-## <a name="windows-defender-antivirus"></a>Windows Defender Antivirus
+## <a name="microsoft-defender-antivirus"></a>Microsoft Defender Antivirus
 
 Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), der auch die unterstützten Windows-Editionen auflistet.
 
-- **Echtzeitüberwachung**: **Aktivieren** verhindert die Echtzeitüberwachung auf Schadsoftware, Spyware und andere unerwünschte Software. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **Verhaltensüberwachung**: **Aktivieren** verhindert, dass Defender Geräte auf bestimmte bekannte Muster verdächtiger Aktivitäten überprüft. **Nicht konfiguriert** (Standard) ermöglicht die Verhaltensüberwachung durch Windows Defender.
-- **Netzwerkinspektionssystem (NIS)** : NIS trägt zum Schutz von Geräten vor netzwerkbasierten Exploits bei. Es verwendet die Signaturen bekannter Sicherheitsrisiken aus dem Microsoft Endpoint Protection Center, um schädlichen Datenverkehr zu erkennen und zu blockieren.
-- **Alle Downloads überprüfen**: Steuert, ob Defender alle aus dem Internet heruntergeladenen Dateien überprüft.
-- **In Microsoft-Webbrowsern geladene Skripts überprüfen**: **Nicht konfiguriert** (Standard) ermöglicht Defender die Überprüfung von Skripts, die in Internet Explorer verwendet werden. **Aktivieren** verhindert diese Überprüfung.
-- **Endbenutzerzugriff auf Defender**: **Blockieren** blendet die Benutzeroberfläche von Windows Defender für Endbenutzer aus. Alle Benachrichtigungen von Windows Defender werden ebenfalls unterdrückt. **Nicht konfiguriert** (Standard) ermöglicht den Zugriff auf die Benutzeroberfläche von Windows Defender durch Benutzer. Wenn diese Einstellung geändert wird, wird die Änderung wirksam, wenn der Endbenutzer-PC das nächste Mal neu gestartet wird.
-- **Intervall für Signaturaktualisierung (in Stunden):** Geben Sie das Intervall ein, in dem Defender auf neue Signaturdateien prüft (zulässige Werte: 0 bis 24). Folgende Optionen sind verfügbar:
+- **Echtzeitüberwachung**: **Aktivieren** schaltet die Echtzeitüberwachung auf Schadsoftware, Spyware und andere unerwünschte Software aus. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
 
-  - **Nicht konfiguriert** (Standardeinstellung)
-  - **Nicht überprüfen**: Defender prüft nicht auf neue Signaturdateien.
+  [Defender/allowrealtimemonitoring-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
+
+- **Verhaltensüberwachung**: **Aktivieren** schaltet Defender-Überprüfungen von Geräten auf bestimmte bekannte Muster verdächtiger Aktivitäten aus. **Nicht konfiguriert** (Standard) ermöglicht die Verhaltensüberwachung durch Windows Defender.
+
+  [Defender/allowverhalormonitoring-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
+
+- **Netzwerkinspektionssystem (NIS)** : NIS trägt zum Schutz von Geräten vor netzwerkbasierten Exploits bei. Es verwendet die Signaturen bekannter Sicherheitsrisiken aus dem Microsoft Endpoint Protection Center, um schädlichen Datenverkehr zu erkennen und zu blockieren.
+
+  Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird dieses Feature deaktiviert. Benutzer werden nicht daran gehindert, eine Verbindung mit bekannten Sicherheitsrisiken herzustellen. Wenn Sie auf **aktivieren**festgelegt ist, werden Netzwerk Schutz und Netzwerk Blockierung aktiviert, und Benutzer können Sie nicht deaktivieren. Benutzer werden daran gehindert, eine Verbindung mit bekannten Sicherheitsrisiken herzustellen.
+
+  [Defender/enablenetworkprotection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+
+- **Alle Downloads**überprüfen: **nicht konfiguriert** (Standard) hat Defender alle aus dem Internet heruntergeladenen Dateien überprüft. Wenn diese Funktion auf **aktivieren**festgelegt ist, ist sie deaktiviert. Deshalb scannt Defender nicht alle heruntergeladenen Internet Dateien.
+
+  [Defender/zugewiesene Software-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
+
+- **In Microsoft-Webbrowsern geladene Skripts überprüfen**: **Nicht konfiguriert** (Standard) ermöglicht Defender die Überprüfung von Skripts, die in Internet Explorer verwendet werden. **Aktivieren** verhindert diese Überprüfung.
+
+  [Defender/allowscriptscan-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
+
+- **Endbenutzerzugriff auf Defender**: **Blockieren** blendet die Benutzeroberfläche von Windows Defender für Endbenutzer aus. Alle Benachrichtigungen von Windows Defender werden ebenfalls unterdrückt. **Nicht konfiguriert** (Standard) ermöglicht den Zugriff auf die Benutzeroberfläche von Windows Defender durch Benutzer. Wenn diese Einstellung geändert wird, wird die Änderung wirksam, wenn der Endbenutzer-PC das nächste Mal neu gestartet wird.
+
+  [Defender/zugriffsuiaccess-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
+
+- **Sicherheits Intelligence-Aktualisierungs Intervall (in Stunden)** : Geben Sie das Intervall an, in dem Defender auf neue Sicherheits Intelligenz prüft, von 0-24. Folgende Optionen sind verfügbar:
+
+  - **Nicht konfiguriert** (Standard): Suchen Sie alle 8 Stunden nach Updates.
+  - **Nicht überprüfen**: Defender prüft nicht, ob neue Sicherheitsinformationen angezeigt werden.
   - **1 – 24**: `1` überprüft ein Mal pro Stunde, `2` überprüft alle zwei Stunden, `24` überprüft täglich und so weiter.
-- **Datei- und Programmaktivität überwachen**: Ermöglicht Defender die Überwachung der Datei- und Programmaktivität auf Geräten.
-- **Tage bis zum Löschen von in Quarantäne befindlicher Schadsoftware**: Ermöglicht die fortgesetzte Nachverfolgung behandelter Schadsoftware für die eingegebene Anzahl von Tagen, damit Sie zuvor betroffene Geräte manuell überprüfen können. Wenn Sie die Anzahl von Tagen auf **0** festlegen, bleibt Schadsoftware im Quarantäneordner und wird nicht automatisch entfernt. Bei Festlegung auf `90` werden Quarantäneelemente 90 Tage lang im System gespeichert und anschließend entfernt.
-- **CPU-Nutzungslimit während einer Überprüfung:** Begrenzen Sie die CPU-Nutzung, die bei Überprüfungen genutzt werden darf (von **1** bis **100**).
-- **Archivdateien überprüfen**: **Aktivieren** verhindert, dass Defender eine Überprüfung von Archivdateien wie ZIP- oder CAB-Dateien vornimmt. **Nicht konfiguriert** (Standard) lässt diese Überprüfung zu.
+  
+  [Defender/signatureupdateingeterval CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
+  
+- **Datei- und Programmaktivität überwachen**: Ermöglicht Defender die Überwachung der Datei- und Programmaktivität auf Geräten. Folgende Optionen sind verfügbar:
+
+  - **Nicht konfiguriert** (Standard): alle Dateien werden überwacht.
+  - **Überwachung deaktiviert**
+  - **Alle Dateien überwachen**
+  - **Nur eingehende Dateien überwachen**
+  - **Nur ausgehende Dateien überwachen**
+
+  [Defender/realtimescandirection-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-realtimescandirection)
+
+- **Tage bis zum Löschen von in Quarantäne befindlicher Schadsoftware**: Ermöglicht die fortgesetzte Nachverfolgung behandelter Schadsoftware für die eingegebene Anzahl von Tagen, damit Sie zuvor betroffene Geräte manuell überprüfen können. Wenn Sie die Anzahl von Tagen auf `0` festlegen, bleibt Schadsoftware im Quarantäneordner und wird nicht automatisch entfernt. Bei Festlegung auf `90` werden Quarantäneelemente 90 Tage lang im System gespeichert und anschließend entfernt.
+
+  [Defender/daystoretaincleanedmalware-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
+
+- **CPU-Nutzungslimit während einer Überprüfung**: Begrenzen Sie die CPU-Nutzung, die bei Überprüfungen genutzt werden darf (von `0` bis `100`).
+- **Archivdateien**überprüfen: die **Aktivierung** deaktiviert das Scannen von Archivdateien, z. b. zip-oder CAB-Dateien. **Nicht konfiguriert** (Standard) lässt diese Überprüfung zu.
+
+  [Defender/Zuweisung von Software-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
+
 - **Eingehende E-Mail überprüfen**: **Aktivieren** ermöglicht Defender das Überprüfen von E-Mail-Nachrichten beim Eingang auf dem Gerät. **Nicht konfiguriert** (Standard) verhindert eine E-Mail-Überprüfung.
+
+  [Defender/zugegtwemailscan-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
+
 - **Bei einer vollständigen Überprüfung Wechseldatenträger überprüfen**: **Aktivieren** verhindert vollständige Überprüfungen von Wechseldatenträgern. **Nicht konfiguriert** (Standard) ermöglicht Defender das Überprüfen von Wechseldatenträgern (z.B. USB-Sticks).
+
+  Während einer schnell Überprüfung können Wechsel Datenträger weiterhin gescannt werden.
+
+  [Defender/allowfullscanremovabledrivescanning-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
+
 - **Bei einer vollständigen Überprüfung zugeordnete Netzlaufwerke überprüfen**: **Aktivieren** ermöglicht Defender das Überprüfen von Dateien auf zugeordneten Netzwerklaufwerken. **Nicht konfiguriert** (Standard) verhindert die vollständige Überprüfung. Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefundene Schadsoftware nicht entfernen.
+
+  Während einer schnell Überprüfung werden zugeordnete Netzwerklaufwerke möglicherweise noch gescannt.
+
+  [Defender/allowfullscanonmappednetworkdrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
+
 - **Über Netzwerkordner geöffnete Dateien überprüfen**: **Nicht konfiguriert** (Standard) ermöglicht Defender das Überprüfen von Dateien auf freigegebenen Netzlaufwerken (z.B. Dateien, auf die über einen UNC-Pfad zugegriffen wird). **Aktivieren** verhindert diese Überprüfung. Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefundene Schadsoftware nicht entfernen.
+
+  [Defender/allowscanningnetworkfiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
+
 - **Cloudschutz**: **Nicht konfiguriert** (Standard) lässt den Empfang von Informationen über Schadsoftwareaktivitäten der von Ihnen verwalteten Geräte durch Microsoft Active Protection Service zu. **Aktivieren** blockiert diese Funktion.
+
+  [Defender/allowcloudprotection-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
+
 - **Vor dem Senden von Beispielen bei Benutzern nachfragen**: Steuert, ob potenziell schädliche Dateien, die möglicherweise genauer analysiert werden müssen, automatisch an Microsoft gesendet werden. Folgende Optionen sind verfügbar:
-  - **Nicht konfiguriert**
+
+  - **Nicht konfiguriert** (Standard): sichere Beispiele automatisch senden.
   - **Immer bestätigen**
   - **Vor dem Senden persönlicher Daten nachfragen**
   - **Nie Daten senden**
   - **Alle Daten ohne Nachfrage senden**: Daten werden automatisch gesendet.
+
+  [Defender/submitsamplesconsent-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)
 
 - **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung**: Wählen Sie die Uhrzeit der Ausführung einer täglichen Schnellüberprüfung. Bei Wahl von **Nicht konfiguriert** erfolgt keine tägliche Überprüfung. Wenn Sie eine weitere Anpassung wünschen, konfigurieren Sie die Einstellung **Art der durchzuführenden Systemüberprüfung**.
 
@@ -756,12 +766,16 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
     - **Geplanter Tag**: Wählen Sie den Tag der Ausführung der Überprüfung.
     - **Geplante Zeit**: Wählen Sie die Uhrzeit der Ausführung der Überprüfung.
 
-  Diese Einstellung steht ggf. in Konflikt mit der Einstellung **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung**. Empfehlungen:
-
-  - Konfigurieren Sie zum Ausführen einer täglichen Schnellüberprüfung die Einstellung **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung**.
-  - Konfigurieren Sie zum Ausführen einer täglichen Schnellüberprüfung und einer wöchentlichen vollständigen Überprüfung die Einstellung **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung**. Legen Sie **Art der durchzuführenden Systemüberprüfung** auf eine vollständige Überprüfung unter Angabe von Tag und Uhrzeit fest.
-  - Konfigurieren Sie **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung** nicht parallel mit auf **Schnellüberprüfung** festgelegter Einstellung **Art der durchzuführenden Systemüberprüfung**. Diese Einstellungen können in Konflikt stehen und eine Überprüfung möglicherweise verhindern.
-  - Um jeden Dienstag um 6 Uhr eine Schnellüberprüfung durchzuführen, konfigurieren Sie die Einstellung **Art der durchzuführenden Systemüberprüfung**.
+  > [!TIP]
+  > Diese Einstellung steht ggf. in Konflikt mit der Einstellung **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung**. Empfehlungen:  
+  >
+  > - Wenn Sie eine tägliche schnell Überprüfung und eine wöchentliche vollständige Überprüfung planen möchten, dann:
+  >   1. Konfigurieren **Sie die Zeit für die Durchführung einer täglichen schnell** Überprüfung.
+  >   2. Konfigurieren Sie den **Typ des System Scans,** der für eine vollständige Überprüfung durchgeführt werden soll.
+  > 
+  > - Wenn Sie nur eine schnell Überprüfung täglich (keine vollständige Überprüfung) wünschen, verwenden Sie entweder Einstellung: **Zeit, um eine tägliche schnell Überprüfung auszuführen** , oder führen Sie einen **Systemscan Vorgang aus**. Um beispielsweise jeden Dienstag um 6 Uhr eine Schnellüberprüfung durchzuführen, konfigurieren Sie die Einstellung **Art der durchzuführenden Systemüberprüfung**.
+  > 
+  > - Konfigurieren Sie **Uhrzeit für die Durchführung einer täglichen Schnellüberprüfung** nicht parallel mit auf **Schnellüberprüfung** festgelegter Einstellung **Art der durchzuführenden Systemüberprüfung**. Diese Einstellungen können in Konflikt stehen und eine Überprüfung möglicherweise verhindern.
 
   [CSP: Defender/ScanParameter](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
   [CSP: Defender/ScheduleScanDay](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
@@ -774,7 +788,10 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
 
   Weitere Informationen zu potenziell unerwünschten Apps finden Sie unter [Erkennen und Blockieren möglicherweise unerwünschter Anwendungen](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
 
-- **Aktionen für erkannte Schadsoftwarebedrohungen**: Wählen Sie die Maßnahmen aus, die Defender bei den einzelnen erkannten Bedrohungsstufen (Niedrig, Mittel, Hoch und Schwerwiegend) ergreifen soll. Wenn es nicht möglich ist, wählt Windows Defender die beste Option, um sicherzustellen, dass die Bedrohung entschärft wird. Folgende Optionen sind verfügbar:
+  [Defender/puaprotection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
+
+- **Aktionen bei erkannten schadsoftwarebedrohungen**: Wählen Sie aus, wie Malware-Threads behandelt werden sollen. **Nicht konfiguriert** (Standard) Hiermit können Sie Microsoft Defender die beste Option auswählen. Wenn diese Option auf **Aktivieren** festgelegt ist, können Sie die Aktionen auswählen, die Defender bei den einzelnen erkannten Bedrohungsstufen durchführen soll: niedrig, mittel, hoch und schwerwiegend. Folgende Optionen sind verfügbar:
+  
   - **Bereinigen**
   - **Quarantäne**
   - **Entfernen**
@@ -782,15 +799,15 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
   - **Benutzerdefiniert**
   - **Blockieren**
 
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
+  Wenn Ihre Aktion nicht möglich ist, wählt Windows Defender die beste Option aus, um sicherzustellen, dass die Bedrohung wieder hergestellt wird. 
+
+  [Defender/teriseveritydefaultaction-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
 ### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender Antivirus-Ausschlüsse
 
 - **Dateien und Ordner, die bei Überprüfungen und Echtzeitschutz ausgeschlossen werden sollen**: Fügt Dateien und Ordner wie **C:\Pfad** oder **%ProgramFiles%\Pfad\Dateiname.exe** der Ausschlussliste hinzu. Diese Dateien und Ordner werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.
 - **Dateierweiterungen, die bei Überprüfungen und Echtzeitschutz ausgeschlossen werden sollen**: Fügt der Ausschlussliste eine oder mehrere Erweiterungen wie **jpg** oder **txt** hinzu. Dateien mit diesen Erweiterungen werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.
 - **Prozesse, die von Überprüfungen und Echtzeitschutz ausgenommen werden sollen**: Fügt der Ausschlussliste einen oder mehrere Prozesse vom Typ **.exe**, **.com** oder **.scr** hinzu. Diese Prozesse werden nicht in Echtzeitüberprüfungen oder geplante Überprüfungen einbezogen.
-
-Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -857,8 +857,8 @@
                   href: custom-settings-windows-10.md
             - name: Sicherheitsbaselines
               items:
-                - name: "Einstellungen für Windows\_10-Baseline"
-                  href: security-baseline-settings-mdm.md
+                - name: Baselineeinstellungen für Windows 10 MDM
+                  href: security-baseline-settings-mdm-all.md
                 - name: Einstellungen für Microsoft Defender ATP-Baseline
                   href: security-baseline-settings-defender-atp.md
             - name: Windows Update-Einstellungen
@@ -1047,10 +1047,6 @@
               href: troubleshoot-software-updates-in-microsoft-intune.md
             - name: Häufige Probleme mit Endpoint Protection
               href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-        - name: Sicherheitsbaselines (Archiv)
-          items:
-            - name: Archivierte Sicherheitsbaseline für die Verwaltung mobiler Geräte
-              href: security-baseline-settings-mdm-archive.md
     - name: Implementierungshandbücher für Szenarios
       items:
         - name: Schützen von Exchange Online
