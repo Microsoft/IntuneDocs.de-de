@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/06/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 890d398de938680447b71a46d4e329a6bdf52616
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: d87b617f49a3df71b767fe91f1f03f88f36ee8a3
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960581"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842191"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Eigenständiges Intune – Win32-App-Verwaltung
 
@@ -95,7 +95,7 @@ Verweisen Sie auf die Datei *license.txt* mit dem relativen Pfad *licenses\licen
 
 Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-App zu Intune.
 
-### <a name="step-1-specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
+### <a name="step-1-specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 3. Wählen Sie im **Intune**-Bereich die Option **Client-Apps** > **Apps** > **Hinzufügen** aus.
@@ -103,7 +103,7 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
 
     ![Screenshot des Blatts „App hinzufügen“ – Dropdownfeld zum Hinzufügen des Typs](./media/apps-win32-app-01.png)
 
-### <a name="step-2-upload-the-app-package-file"></a>Schritt 2: Hochladen der App-Paketdatei
+### <a name="step-2-upload-the-app-package-file"></a>Schritt 2: Hochladen der App-Paketdatei
 
 1. Wählen Sie im Bereich **App hinzufügen** die Option **App-Paketdatei** aus, um eine Datei auszuwählen. Der Bereich „App-Paketdatei“ wird angezeigt.
 
@@ -116,7 +116,7 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
 
 3. Wählen Sie danach **OK**.
 
-### <a name="step-3-configure-app-information"></a>Schritt 3: Konfigurieren von App-Informationen
+### <a name="step-3-configure-app-information"></a>Schritt 3: Konfigurieren von App-Informationen
 
 1. Wählen Sie im Bereich **App hinzufügen** die Option **App-Informationen** aus, um die App zu konfigurieren.
 2. Konfigurieren Sie im Bereich **App-Informationen** die folgenden Informationen. Einige der Werte in diesem Bereich wurden möglicherweise automatisch ausgefüllt.

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7c4cf67c93277ef4b54cdd72a6e06f64dd442e4
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 6b1b489bbc62e4f47847ad599debcecfc27e1918
+ms.sourcegitcommit: 393953dd2a15aff68b246d3633b47566dd43f7cc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063040"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70815459"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Konfigurieren von Windows 10-Geräten in Intune mithilfe von Sicherheitsbaselines
 
@@ -74,8 +74,8 @@ Wenn Sie mehrere Sicherheitsbaselines verwenden, überprüfen Sie die Einstellun
 Die folgenden Sicherheitsbaseline-Instanzen können für Intune verwendet werden. Klicken Sie auf die Links, um die Einstellungen für die neueste Instanz jeder Baseline anzuzeigen. 
 
 - **MDM-Sicherheitsbaseline**
-  - [MDM-Sicherheitsbaseline für Mai 2019](security-baseline-settings-mdm.md)
-  - [Vorschau: MDM-Sicherheitsbaseline für Oktober 2018](security-baseline-settings-mdm-archive.md)
+  - [MDM-Sicherheitsbaseline für Mai 2019](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-may-2019)
+  - [Vorschau: MDM-Sicherheitsbaseline für Oktober 2018](https://docs.microsoft.com/intune/security-baseline-settings-mdm-all?pivots=mdm-preview)
 
 - **Microsoft Defender ATP-Baseline**  
   *(Um diese Baseline verwenden zu können, muss Ihre Umgebung den Anforderungen zur Verwendung von [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites) entsprechen)* .
@@ -215,7 +215,7 @@ Streng genommen, nicht. Das Microsoft-Sicherheitsteam berät Unternehmen wie CIS
 
 ## <a name="next-steps"></a>Nächste Schritte
 - Prüfen Sie die Einstellungen in den neuesten Versionen der verfügbaren Baselines:  
-  - [MDM-Sicherheitsbaseline](security-baseline-settings-mdm.md)  
+  - [MDM-Sicherheitsbaseline](security-baseline-settings-mdm-all.md)  
   - [Microsoft Defender ATP-Baseline](security-baseline-settings-defender-atp.md)  
 
 - Überprüfen Sie den Status, und überwachen Sie [Baseline und Profil](security-baselines-monitor.md).
