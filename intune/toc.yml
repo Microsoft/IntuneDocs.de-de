@@ -546,10 +546,11 @@
         - name: Was ist die Intune App-Verwaltung?
           href: app-management.md
           displayName: mam-we
-        - name: Hinzufügen einer App-Übersicht
-          href: apps-add.md
-          displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
+        - name: Hinzufügen von Apps
           items:
+            - name: Hinzufügen einer App-Übersicht
+              href: apps-add.md
+              displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
             - name: Durch Intune geschützte Apps
               href: apps-supported-intune-apps.md
             - name: Store-Apps
@@ -561,9 +562,10 @@
                 - name: Windows Phone 8.1 Store-Apps
                   href: store-apps-windows-phone-8-1.md
                 - name: Microsoft Store-Apps
-                  href: store-apps-windows.md
                   items:
-                    - name: Manuelles Hinzufügen der Unternehmensportal-App
+                    - name: Windows-Apps
+                      href: store-apps-windows.md
+                    - name: Unternehmensportal-App
                       href: store-apps-company-portal-app.md
                 - name: Verwaltete Google Play-Apps
                   href: apps-add-android-for-work.md
@@ -571,10 +573,13 @@
                   href: apps-add-office365.md
                 - name: Office 365-Apps für macOS
                   href: apps-add-office365-macos.md
+            - name: Web-Apps
+              href: web-app.md
+              displayName: web; web link; weblink; web-link
+            - name: Integrierte Apps
+              href: apps-add-built-in.md
             - name: Erstellen einer (branchenspezifischen) App
               items:
-                - name: Win32-App-Verwaltung
-                  href: apps-win32-app-management.md
                 - name: Branchenspezifische Android-Apps
                   href: lob-apps-android.md
                 - name: Branchenspezifische iOS-Apps
@@ -587,11 +592,8 @@
                   href: app-sideload-windows.md
                 - name: Branchenspezifische macOS-Apps
                   href: lob-apps-macos.md
-            - name: Web-Apps
-              href: web-app.md
-              displayName: web; web link; weblink; web-link
-            - name: Integrierte Apps
-              href: apps-add-built-in.md
+            - name: Win32-App-Verwaltung
+              href: apps-win32-app-management.md
             - name: PowerShell-Skripts
               href: intune-management-extension.md
         - name: Zuweisen von Apps
@@ -849,7 +851,7 @@
                   href: vpn-settings-windows-10.md
                 - name: WLAN
                   href: wi-fi-settings-windows.md
-                - name: Education
+                - name: Sichere Bewertung
                   href: education-settings-windows.md
                 - name: Von mehreren Benutzern gemeinsam verwendetes Gerät
                   href: shared-user-device-settings-windows.md
