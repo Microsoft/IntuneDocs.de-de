@@ -5,9 +5,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/28/2019
+ms.date: 06/21/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -16,19 +15,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f13e00abad5b48dcd7996cf9df1cc5756f250d3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 30910de4ae17aa3fde573155bde4643e2c3d67f7
+ms.sourcegitcommit: 1925eba3fb0b30592f07a924119e20b661588d12
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388111"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70808634"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Synchronisieren von Geräten mit Intune, um die neuesten Richtlinien und Aktionen zu erhalten
 
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-Die Geräteaktion **Sync** (Synchronsieren) zwingt das ausgewählte Gerät dazu, sofort bei Intune einzuchecken. Checkt ein Gerät ein, empfängt es sofort alle ihm zugewiesenen ausstehenden Aktionen oder Richtlinien. Mit diesem Feature können Sie zugewiesene Richtlinien sofort überprüfen und Probleme beheben, ohne den nächsten geplanten Check-In abwarten zu müssen.
+Die Geräteaktion **Sync** (Synchronsieren) zwingt das ausgewählte Gerät dazu, sofort bei Intune einzuchecken. Checkt ein Gerät ein, empfängt es sofort alle ihm zugewiesenen ausstehenden Aktionen oder Richtlinien. Mit diesem Feature können Sie zugewiesene Richtlinien sofort überprüfen und Probleme beheben, ohne den nächsten geplanten Check-In abwarten zu müssen.
 
 ## <a name="supported-platforms"></a>Unterstützte Plattformen
 
@@ -40,15 +37,14 @@ Die Geräteaktion **Sync** (Synchronsieren) zwingt das ausgewählte Gerät dazu,
 
 ## <a name="sync-a-device"></a>Gerät synchronisieren
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**. 
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an. 
 3. Klicken Sie in **Intune** auf **Geräte** > **Alle Geräte**.
-4. Wählen Sie in der Liste der von Ihnen verwalteten Geräte ein Gerät aus, klicken Sie auf **Mehr** und dann auf **Synchronisieren**.
+4. Wählen Sie in der Liste der von Ihnen verwalteten Geräte ein Gerät aus, öffnen Sie seinen *Übersichtsbereich*, und wählen Sie dann **Synchronisieren** aus.
 5. Klicken Sie zum Bestätigen auf **Ja**.
 
 Um den Status der Synchronisierung anzuzeigen, wählen Sie **Geräte** > **Geräteaktionen**.
 
-Sie finden die standardmäßige Intune-Richtlinie zu Check-In-Frequenzen in der [Übersicht über die Gerätekonfiguration](device-profiles.md).
+Sie finden die standardmäßige Intune-Richtlinie zu Check-In-Frequenzen in der [Übersicht über die Gerätekonfiguration](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned).
 
 ## <a name="retryable-error-codes"></a>Wiederholbare Fehlercodes
 

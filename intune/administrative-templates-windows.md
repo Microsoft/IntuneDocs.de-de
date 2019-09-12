@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 8/28/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,20 +15,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 608f9045d676a756c4ee7440072040075e497605
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: c474ac2eccf90e829abe753c82d40bdfae9146ec
+ms.sourcegitcommit: 5bb46d3c0bf8c5595132c4200849b1c4bcfe7cdb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214337"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70376923"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Verwenden von Windows 10-Vorlagen zum Konfigurieren von Gruppenrichtlinieneinstellungen in Microsoft Intune
 
 Wenn Sie Geräte in Ihrer Organisation verwalten, sollten Sie auch Einstellungen erstellen, die dann auf unterschiedliche Gerätegruppen angewendet werden. Nehmen Sie beispielsweise an, dass Sie über mehrere Gerätegruppen verfügen. Sie sollten Gruppe A mehrere bestimmte Einstellungen zuweisen. Gruppe B soll andere Einstellungen erhalten. Ihre Einstellungen sollen in einer einfachen, konfigurierbaren Ansicht angezeigt werden.
 
-Sie können diese Aufgabe mithilfe der **administrativen Vorlagen** in Microsoft Intune erledigen. Die administrativen Vorlagen enthalten Hunderte Einstellungen, die Funktionen in Microsoft Edge, Internet Explorer, Microsoft Office-Programmen, Remotedesktop und OneDrive sowie die Verwendung von Kennwörtern und PINs u. v. m. kontrollieren können. Diese Einstellungen ermöglichen Gruppenadministratoren das Verwalten von Gruppenrichtlinien mithilfe der Cloud.
+Sie können diese Aufgabe mithilfe der **administrativen Vorlagen** in Microsoft Intune erledigen. Die administrativen Vorlagen enthalten Hunderte Einstellungen, die Funktionen in Microsoft Edge Version 77 und höher, Internet Explorer, Microsoft Office-Programmen, Remotedesktop und OneDrive sowie die Verwendung von Kennwörtern und PINs u.v.m. kontrollieren können. Diese Einstellungen ermöglichen Gruppenadministratoren das Verwalten von Gruppenrichtlinien mithilfe der Cloud.
 
-Die Windows-Einstellungen ähneln den Einstellungen für Gruppenrichtlinienobjekte in Active Directory (AD). Diese Einstellungen sind in Windows integriert und sind [durch ADMX unterstützte Einstellungen](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies), die XML verwenden. Die Office-Einstellungen sind in ADMX erfasst und verwenden die ADMX-Einstellungen in [administrativen Office-Vorlagendateien](https://www.microsoft.com/download/details.aspx?id=49030). Die Intune-Vorlagen sind jedoch vollständig cloudbasiert. Sie bieten eine einfache und unkomplizierte Möglichkeit, die Einstellungen zu konfigurieren und die Einstellungen zu suchen, die Sie nutzen möchten.
+Die Windows-Einstellungen ähneln den Einstellungen für Gruppenrichtlinienobjekte in Active Directory (AD). Diese Einstellungen sind in Windows integriert und sind [durch ADMX unterstützte Einstellungen](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies), die XML verwenden. Die Office- und Microsoft Edge-Einstellungen sind in ADMX erfasst und verwenden die ADMX-Einstellungen in [administrativen Office-Vorlagendateien](https://www.microsoft.com/download/details.aspx?id=49030) und [administrativen Microsoft Edge-Vorlagendateien](https://www.microsoftedgeinsider.com/enterprise). Die Intune-Vorlagen sind jedoch vollständig cloudbasiert. Sie bieten eine einfache und unkomplizierte Möglichkeit, die Einstellungen zu konfigurieren und die Einstellungen zu suchen, die Sie nutzen möchten.
 
 **Administrative Vorlagen** sind in Intune integriert, einschließlich der Verwendung des OMA-URI, und erfordern keine weiteren Anpassungen. Als Bestandteil Ihrer Lösung für die mobile Geräteverwaltung (Mobile Device Management, MDM) verwenden Sie diese Vorlageneinstellungen als Anlaufstelle, um Ihre Windows 10-Geräte zu verwalten.
 
@@ -58,16 +58,17 @@ In diesem Artikel sind die Schritte zum Erstellen einer Vorlage für Windows 10-
     > [!TIP]
     > Die Windows-Einstellungen in Intune korrelieren mit dem lokalen Gruppenrichtlinienpfad, der im Editor für lokale Gruppenrichtlinien (`gpedit`) angezeigt wird.
 
-5. In der Dropdownliste werden standardmäßig **Alle Produkte** angezeigt. Sie können die Einstellungen in der Liste auch so filtern, dass nur **Windows**-Einstellungen, nur **Office**-Einstellungen oder nur **Microsoft Edge**-Einstellungen angezeigt werden:
+5. In der Dropdownliste werden standardmäßig **Alle Produkte** angezeigt. Sie können die Einstellungen in der Liste auch so filtern, dass nur **Windows**-Einstellungen, nur **Office**-Einstellungen oder nur Einstellungen von **Edge Version 77 oder höher** angezeigt werden:
 
     ![Filtern Sie die Liste, um in den administrativen Vorlagen in Intune alle Windows-Einstellungen oder alle Office-Einstellungen anzuzeigen.](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > Microsoft Edge-Einstellungen gelten für:
     >
-    > - Windows 10 RS4 und höher mit installiertem [KB 4512509](https://support.microsoft.com/kb/4512509).
-    > - Windows 10 RS5 und höher mit installiertem [KB 4512534](https://support.microsoft.com/kb/4512534).
-    > - Windows 10 19H1 und höher mit installiertem [KB 4512941](https://support.microsoft.com/kb/4512941).
+    > - Microsoft Edge Version 77 und höher. Informationen zum Konfigurieren von Microsoft Edge Version 45 und früher finden Sie unter [Microsoft Edge Browser](device-restrictions-windows-10.md#microsoft-edge-browser).
+    > - Windows 10 RS4 und höher mit installiertem [KB 4512509](https://support.microsoft.com/kb/4512509)
+    > - Windows 10 RS5 und höher mit installiertem [KB 4512534](https://support.microsoft.com/kb/4512534)
+    > - Windows 10 19H1 und höher mit installiertem [KB 4512941](https://support.microsoft.com/kb/4512941)
 
 6. Wählen Sie eine beliebige Einstellung aus. Filtern Sie beispielsweise nach **Office**, und wählen Sie **Eingeschränktes Browsing aktivieren** aus. Es wird eine detaillierte Beschreibung der Einstellung angezeigt. Wählen Sie **Aktiviert** oder **Deaktiviert** aus, oder übernehmen Sie die Standardeinstellung **Nicht konfiguriert**. In der detaillierten Beschreibung wird erläutert, was geschieht, wenn Sie **Aktiviert**, **Deaktiviert** oder **Nicht konfiguriert** auswählen.
 7. Klicken Sie auf **OK**, um die Änderungen zu speichern.
@@ -76,7 +77,7 @@ Gehen Sie die Liste der Einstellungen durch, und konfigurieren Sie die gewünsch
 
 - Verwenden Sie die Einstellung **Einstellungen für VBA-Makrobenachrichtigungen**, um VBA-Makros in verschiedenen Microsoft Office-Programmen zu verarbeiten, einschließlich in Word und Excel.
 - Verwenden Sie die Einstellung **Dateidownloads zulassen**, um Downloads von Internet Explorer zuzulassen oder zu verhindern.
-- Verwenden Sie **Kennwort anfordern, wenn ein Computer reaktiviert wird (Netzbetrieb)**, um Benutzer aufzufordern, ein Kennwort einzugeben, sobald das Gerät wieder aktiviert und der Energiesparmodus beendet wird.
+- Verwenden Sie **Kennwort anfordern, wenn ein Computer reaktiviert wird (Netzbetrieb)** , um Benutzer aufzufordern, ein Kennwort einzugeben, sobald das Gerät wieder aktiviert und der Energiesparmodus beendet wird.
 - Verwenden Sie die Einstellung **Download von unsignierten ActiveX-Steuerelementen**, um das Herunterladen unsignierter ActiveX-Steuerelemente aus Internet Explorer für Benutzer zu blockieren.
 - Verwenden Sie die Einstellung **Systemwiederherstellung deaktivieren**, um Benutzern zu erlauben oder sie daran zu hindern, eine Systemwiederherstellung auf dem Gerät auszuführen.
 - Verwenden Sie die Einstellung **Allow importing of favorites** (Importieren von Favoriten zulassen), um Benutzern das Importieren von Favoriten aus anderen Browsern in Microsoft Edge zu erlauben oder zu blockieren.

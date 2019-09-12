@@ -17,17 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0316138451c6105f22c196d17c1f2ec3b1f2e375
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: e0f1f7d937f08e32b30ee9facdcca03d263bc27e
+ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70062937"
+ms.lasthandoff: 09/09/2019
+ms.locfileid: "70842182"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrieren von Windows-Geräten in Intune mithilfe von Windows Autopilot  
 Windows Autopilot vereinfacht das Registrieren von Geräten in Intune. Das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems ist ein langwieriger Prozess. Es kann ebenfalls Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und Autopilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von Autopilot-Geräten verwenden, können Sie Richtlinien, Profile und Apps usw. verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 
-Es gibt vier Arten der Autopilot-Bereitstellung: [Self-Deployment-Modus](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) für Kiosks, digitale Beschilderung oder ein freigegebenes Gerät, [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) zur Unterstützung von Partnern oder IT-Mitarbeitern bei der Vorabbereitstellung eines Windows 10-Computers, damit dieser vollständig konfiguriert und betriebsbereit ist, [Autopilot für vorhandene Geräte](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) zur mühelosen Bereitstellung der neuesten Version von Windows 10 auf Ihren Geräten und [User Driven Mode](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) (Benutzergesteuerter Modus) für normale Benutzer. 
+Es gibt vier Arten der Autopilot-Bereitstellung:
+- [Self-Deployment-Modus](https://docs.microsoft.com/windows/deployment/windows-autopilot/self-deploying) für Kiosks, digitale Signaturen oder ein freigegebenes Gerät
+- [White Glove](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove) zur Unterstützung von Partnern oder IT-Mitarbeitern bei der Vorabbereitstellung eines Windows 10-Computers, damit dieser vollständig konfiguriert und betriebsbereit ist, [Autopilot für vorhandene Geräte](https://docs.microsoft.com/windows/deployment/windows-autopilot/existing-devices) zur mühelosen Bereitstellung der neuesten Version von Windows 10 auf Ihren Geräten
+- [Benutzergesteuerter Modus](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven) für herkömmliche Benutzer. 
 
 
 ## <a name="prerequisites"></a>Voraussetzungen
@@ -74,9 +77,9 @@ Sie können Windows Autopilot-Geräte durch Importieren einer CSV-Datei mit ihre
     3. Für **Mitgliedschaftstyp** wählen Sie entweder **Zugewiesen** oder **Dynamisches Gerät**.
 3. Wenn Sie **Zugewiesen** als **Mitgliedschaftstyp** im vorherigen Schritt ausgewählt haben, wählen Sie anschließend auf dem Blatt **Gruppe** die Option **Mitglieder**, und fügen Sie Autopilot-Geräte zur Gruppe hinzu.
     Autopilot-Geräte, die noch nicht registriert sind, sind Geräte, deren Name der Seriennummer des Geräts entspricht.
-4. Wenn Sie oben **Dynamisches Geräte** als **Mitgliedschaftstyp** ausgewählt haben,wählen Sie anschließend auf dem Blatt **Gruppe** die Option **Dynamische Gerätemitglieder**, und geben Sie einen der folgenden Codes in das Feld **Erweiterte Regel** ein.
+4. Wenn Sie oben **Dynamisches Geräte** als **Mitgliedschaftstyp** ausgewählt haben,wählen Sie anschließend auf dem Blatt **Gruppe** die Option **Dynamische Gerätemitglieder**, und geben Sie einen der folgenden Codes in das Feld **Erweiterte Regel** ein. Nur Autopilot-Geräte werden von diesen Regeln erfasst, da sie auf Attribute abzielen, die nur Autopilot-Geräte aufweisen.
     - Wenn Sie eine Gruppe mit all Ihren Autopilot-Geräten erstellen möchten, geben Sie ein: `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - Das Intune-Feld „Gruppentag“ wird dem Attribut „OrderID“ auf Azure AD-Geräten zugeordnet. Wenn Sie eine Gruppe erstellen möchten, die all Ihre Autopilot-Geräte mit einem bestimmten Gruppentag („OrderID“) enthält, müssen Sie eingeben: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
+    - Das Intune-Feld „Gruppentag“ wird dem Attribut „OrderID“ auf Azure AD-Geräten zugeordnet. Wenn Sie eine Gruppe erstellen möchten, die all Ihre Autopilot-Geräte mit einem bestimmten Gruppentag (der OrderID der Azure AD-Geräte) enthält, müssen Sie Folgendes eingeben: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Wenn Sie eine Gruppe mit all Ihren Autopilot-Geräten mit einer bestimmten Bestellungs-ID erstellen möchten, geben Sie `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")` ein.
     
     Wählen Sie nach dem Hinzufügen des Codes im Feld **Erweiterte Regel** die Option **Speichern**.
@@ -93,7 +96,7 @@ Autopilot-Bereitstellungsprofile werden verwendet, um die Autopilot-Geräte zu k
 4. Wählen Sie **Weiter** aus.
 5. Wählen Sie auf der Seite **Out-of-Box-Experience (OOBE)** als **Bereitstellungsmodus** eine der beiden folgenden Optionen aus:
     - **Benutzergesteuert**: Geräte mit diesem Profil werden dem Benutzer zugeordnet, der das Gerät registriert. Für die Registrierung des Geräts sind Benutzeranmeldeinformationen erforderlich.
-    - **Selbstbereitstellend (Vorschauversion)** : (Windows 10, Version 1809 oder höher, erforderlich) Geräte mit diesem Profil werden nicht dem Benutzer zugeordnet, der das Gerät registriert. Für die Registrierung des Geräts sind keine Anmeldeinformationen erforderlich.
+    - **Selbstbereitstellend (Vorschauversion)** : (Windows 10, Version 1809 oder höher, erforderlich) Geräte mit diesem Profil werden nicht dem Benutzer zugeordnet, der das Gerät registriert. Für die Registrierung des Geräts sind keine Anmeldeinformationen erforderlich. Wenn einem Gerät kein Benutzer zugeordnet ist, gelten keine benutzerbasierten Kompatibilitätsrichtlinien. Wenn Sie den Self-Deployment-Modus verwenden, werden nur Kompatibilitätsrichtlinien angewendet, die auf das Gerät abzielen.
 
     ![Screenshot der Seite „OOBE“](media/enrollment-autopilot/create-profile-outofbox.png)
 

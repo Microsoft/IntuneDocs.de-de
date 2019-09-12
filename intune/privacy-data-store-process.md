@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64a66fde0f501bf2e1e7f6b0cc98eddd871717b2
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: b2947969c1c07d595a0a5baa48be11ba7a941424
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66050369"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739224"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Datenspeicherung und -verarbeitung in Intune
 
@@ -41,13 +41,13 @@ Telemetriedaten (Dienstprotokolle, Leistungsprotokolle, Fehler usw.), die wichti
 
 Microsoft betreibt Intune-Dienste in vielen Regionen weltweit. Intune berücksichtigt die Auswahl des Speicherorts, die vom Administrator für Kundendaten festgelegt wurde.
 
-Weitere Informationen finden Sie unter [Microsoft Intune Where is my customer data? (Microsoft Intune: Wo befinden sich meine Kundendaten?)](For more information, see Microsoft Intune Where is my customer data?)
+Weitere Informationen finden Sie unter [Wo wir Ihre Daten speichern](https://www.microsoft.com/trust-center/privacy/data-location).
 
 ### <a name="personal-data-retention"></a>Aufbewahrung personenbezogener Daten
 
-Im Allgemeinen werden personenbezogene Daten von Intune noch bis zu 30 Tage aufbewahrt, nachdem der Benutzer aus der Intune-Verwaltung entfernt wurde.
+Im Allgemeinen werden personenbezogene Daten von Intune noch bis zu 30 Tage aufbewahrt, nachdem der Benutzer aus der Intune-Verwaltung entfernt wurde.
 
-Telemetriedaten, die durch die Verwendung von Intune gesammelt wurden, werden bis zu 30 Tage aufbewahrt.
+Telemetriedaten, die durch die Verwendung von Intune gesammelt wurden, werden bis zu 30 Tage aufbewahrt.
 
 Überwachungsprotokolle werden bis zu einem Jahr aufbewahrt.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cf6299f46ed8db4fdca02947ce15a920816d110
-ms.sourcegitcommit: c715c93bb242f4fe44bbdf2fd585909854ed72b6
+ms.openlocfilehash: 3bc5f8a3f0094c363a705b37b904435ef9e91781
+ms.sourcegitcommit: 47b06bf2d32e2f84c382dec3366d6f4a31d98012
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68660940"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864476"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune"></a>Einrichten des lokalen Exchange Connectors in Microsoft Intune
 Die in diesem Artikel enthaltenen Informationen unterstützen Sie beim Installieren und anschließenden Überwachen des lokalen Exchange Active Sync-Connectors für Intune.  Sie verwenden den lokalen Intune Exchange-Connector mit Ihren [Richtlinien für den bedingten Zugriff, um den Zugriff auf Ihre lokalen Exchange-Postfächer zu gewähren oder zu verweigern](conditional-access-exchange-create.md). 
@@ -124,6 +124,9 @@ Führen Sie die folgenden Schritte aus, um den lokalen Intune Exchange Connector
    Stellen Sie sicher, dass die AutoErmittlungs- und Exchange-Webdienste auf dem Exchange-Clientzugriffsserver konfiguriert sind. Weitere Informationen finden Sie unter [Clientzugriffsserver](https://technet.microsoft.com/library/dd298114.aspx).
 
 6. Geben Sie im Feld **Kennwort** das Kennwort für dieses Konto an, damit Intune auf Exchange Server zugreifen kann.
+
+   > [!NOTE]
+   > Damit die Verbindung erfolgreich hergestellt werden kann, muss das Konto, mit dem Sie sich beim Mandanten anmelden, mindestens ein Intune-Dienstadministratorkonto sein. Ohne dieses wird die Verbindung nicht hergestellt, und Sie erhalten folgende Fehlermeldung: „Der Remoteserver hat einen Fehler zurückgegeben: (400) Ungültige Anforderung“.
 
 7. Wählen Sie **Verbinden** aus.
 

@@ -12,12 +12,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a5c9dea847ace51c7d6f06cfa43c44beead18f8
-ms.sourcegitcommit: 78ae22b1a7cb221648fc7346db751269d9c898b1
+ms.openlocfilehash: 6df42d908169ab591150e88e03f2f419710c9e54
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66373415"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739208"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Hinzufügen von iOS-Softwareupdaterichtlinien in Intune
 
@@ -53,14 +53,8 @@ Das Gerät wird etwa alle acht Stunden bei Intune eingecheckt. Wenn ein Update v
 
     - **Delay visibility of software updates to end users with no change to scheduled updates (days)** (Sichtbarkeit von Softwareupdates für Endbenutzer ohne Änderungen der geplanten Updates (Tage) verzögern): 
 
-      **Diese Einstellung wurde zu [Geräteeinschränkungen](device-restrictions-ios.md#general) verschoben. Sie wird im Portal von diesem Ort gelöscht.** Für kurze Zeit können bereits bestehende Richtlinien hier geändert werden. In etwa einem Monat wird diese Einstellung aus den bereits bestehenden Richtlinien entfernt.
-
-      Es wird Folgendes empfohlen, um die Auswirkungen einzuschränken:
-        - Entfernen Sie die Richtlinie von diesem Ort im Portal.
-        - Erstellen Sie eine neue [Richtlinie für Geräteeinschränkungen](device-restrictions-ios.md#general).
-        - Richten Sie diese auf dieselben Benutzer aus wie die ursprüngliche Richtlinie.
-
-      Wenn ein Konflikt entstehen sollte, hat die Einstellung *nur* Auswirkungen, wenn die beiden Werte identisch sind. Vergewissern Sie sich, dass Sie die bereits vorhandene Richtlinie ändern oder von diesem Ort im Portal entfernen, um Konflikte zu vermeiden.
+      **Wenn Sie die Sichtbarkeit von Softwareupdates für einen bestimmten Zeitraum auf Ihren überwachten iOS-Geräten verzögern möchten, konfigurieren Sie diese Einstellungen in den [Geräteeinschränkungen](device-restrictions-ios.md#general).
+     
       > [! Wichtig]  
       > Eine Richtlinie, bei der die *Startzeit* und die *Endzeit* auf 12 Uhr festgelegt wurde, wird als „0 Stunden“ und nicht als „24 Stunden“ ausgewertet. Diese Einstellung führt dazu, dass es keine Einschränkungen gibt.  
 

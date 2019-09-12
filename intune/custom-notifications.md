@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,28 +17,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a75397222117b8e56cb34947363f8624b89b27b
-ms.sourcegitcommit: 58a22f1b4a3fffffb1f7da228f470b3b0774fc42
+ms.openlocfilehash: bffbc96e945d522453c299717a6eb413354a4af4
+ms.sourcegitcommit: 98f2597eec28c6096985d5a1acae72430c2afb1a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70021756"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70878040"
 ---
 # <a name="send-custom-notifications-in-intune"></a>Senden benutzerdefinierter Benachrichtigungen in Intune  
 
-Verwenden Sie Microsoft Intune zum Senden benutzerdefinierter Benachrichtigungen an die Benutzer von verwalteten iOS- und Android-Geräten. Diese Nachrichten werden wie auch Benachrichtigungen von anderen Anwendungen auf dem Gerät als Standardpushbenachrichtigung von der Unternehmensportal-App auf dem Gerät eines Benutzers angezeigt. Benutzerdefinierte Intune-Benachrichtigungen werden nicht von Windows-Geräten unterstützt.   
+Verwenden Sie Microsoft Intune zum Senden benutzerdefinierter Benachrichtigungen an die Benutzer von verwalteten iOS- und Android-Geräten. Diese Nachrichten werden wie auch Benachrichtigungen von anderen Anwendungen auf dem Gerät als Standardpushbenachrichtigungen von der Unternehmensportal-App und der Microsoft Intune-App auf dem Gerät eines Benutzers angezeigt. Benutzerdefinierte Intune-Benachrichtigungen werden nicht von Windows-Geräten unterstützt.   
 
 Benutzerdefinierte Benachrichtigungsnachrichten enthalten einen kurzen Titel und einen Nachrichtentext mit maximal 500 Zeichen. Diese Nachrichten können für jeden allgemeinen Kommunikationszweck angepasst werden.
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>Allgemeine Szenarios für das Senden von benutzerdefinierten Benachrichtigungen  
 
-- Sie verwenden benutzerdefinierte Benachrichtigungen, um bestimmte Benutzer über eine neue App zu informieren, die im Unternehmensportal verfügbar ist.  
+- Verwenden Sie benutzerdefinierte Benachrichtigungen, um bestimmte Benutzer über eine neue App zu informieren, die im Unternehmensportal verfügbar ist.  
 - Sie informieren alle Mitarbeiter über eine Änderung des Zeitplans (wie z. B. Schließungen der Gebäude aufgrund schwieriger Wetterbedingungen).  
 
 ## <a name="considerations-for-using-custom-notifications"></a>Überlegungen zur Verwendung benutzerdefinierter Benachrichtigungen  
 
 **Gerätekonfiguration:**  
-- Bevor Benutzer benutzerdefinierte Benachrichtigungen erhalten können, muss die Unternehmensportal-App auf Geräten installiert sein. Außerdem müssen sie über Berechtigungen verfügen, damit die Unternehmensportal-App Pushbenachrichtigungen senden kann. Das Unternehmensportal fordert Benutzer auf, bei jeder Installation oder Aktualisierung Benachrichtigungen zuzulassen.  
+- Bevor Benutzer benutzerdefinierte Benachrichtigungen erhalten können, muss die Unternehmensportal-App oder Microsoft Intune-App auf Geräten installiert sein. Außerdem müssen sie über Berechtigungen verfügen, damit die Unternehmensportal-App oder Microsoft Intune-App Pushbenachrichtigungen senden kann. Bei Bedarf können die Unternehmensportal-APP und die Microsoft Intune-App Benutzer auffordern, Benachrichtigungen zuzulassen.  
 - Unter Android ist Google Play Services eine erforderliche Abhängigkeit.  
 - Auf dem Gerät muss MDM registriert sein.
 
@@ -51,8 +51,8 @@ Benutzerdefinierte Benachrichtigungsnachrichten enthalten einen kurzen Titel und
 - Gruppen können Benutzer oder Geräte enthalten. Nachrichten werden allerdings nur an Benutzer gesendet und werden an jedes iOS- oder Android-Gerät gesendet, das vom Benutzer registriert wurde.  
 
 **Lieferung:**  
-- Intune sendet Nachrichten an die Unternehmensportal-App der Benutzer, die dann die Pushbenachrichtigung erstellt. Benutzer müssen nicht bei der App angemeldet sein, damit die Benachrichtigung auf dem Gerät übermittelt wird.  
-- Intune und die Unternehmensportal-App können die Lieferung einer benutzerdefinierten Benachrichtigung nicht garantieren. Nach mehreren Stunden Verzögerung werden möglicherweise benutzerdefinierte Benachrichtigungen angezeigt, die dann nicht für dringende Nachrichten verwendet werden sollten.  
+- Intune sendet Nachrichten an die Unternehmensportal-App oder Microsoft Intune-App der Benutzer, die dann die Pushbenachrichtigung erstellt. Benutzer müssen nicht bei der App angemeldet sein, damit die Benachrichtigung auf dem Gerät übermittelt wird.  
+- Intune kann ebenso wie die Unternehmensportal-App und die Microsoft Intune-App die Lieferung einer benutzerdefinierten Benachrichtigung nicht garantieren. Nach mehreren Stunden Verzögerung werden möglicherweise benutzerdefinierte Benachrichtigungen angezeigt, die dann nicht für dringende Nachrichten verwendet werden sollten.  
 - Benutzerdefinierte Benachrichtigungsnachrichten von Intune werden auf Geräten als Standardpushbenachrichtigungen angezeigt. Wenn die Unternehmensportal-App auf einem iOS-Gerät beim Empfang der Benachrichtigung geöffnet ist, wird in der App anstelle einer Pushbenachrichtigung eine Benachrichtigung angezeigt.  
 - Benutzerdefinierte Benachrichtigungen können je nach Geräteeinstellungen sowohl auf iOS- als auch auf Android-Geräten auf dem Sperrbildschirm sichtbar sein.  
 - Auf Android-Geräten haben andere Apps möglicherweise Zugriff auf die Daten in Ihren benutzerdefinierten Benachrichtigungen. Verwenden Sie diese nicht für vertrauliche Kommunikation.  
@@ -80,7 +80,7 @@ Intune verfolgt die von Ihnen gesendeten benutzerdefinierten Benachrichtigungen 
 
 ## <a name="receive-a-custom-notification"></a>Empfangen einer benutzerdefinierten Benachrichtigung  
 
-Benutzern werden auf einem Gerät benutzerdefinierte Benachrichtigungsnachrichten angezeigt, die von Intune als Standardpushbenachrichtigung aus der Unternehmensportal-App gesendet werden. Diese Benachrichtigungen ähneln den Pushbenachrichtigungen, die Benutzer von anderen Apps auf dem Gerät erhalten.  
+Benutzern werden auf einem Gerät benutzerdefinierte Benachrichtigungsnachrichten angezeigt, die von Intune als Standardpushbenachrichtigung von der Unternehmensportal-App oder Microsoft Intune-App gesendet werden. Diese Benachrichtigungen ähneln den Pushbenachrichtigungen, die Benutzer von anderen Apps auf dem Gerät erhalten.  
 
 Wenn die Unternehmensportal-App auf iOS-Geräten beim Empfang der Benachrichtigung geöffnet ist, wird in der App anstelle einer Pushbenachrichtigung eine Benachrichtigung angezeigt.  
 

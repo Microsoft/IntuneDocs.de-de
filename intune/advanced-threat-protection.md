@@ -5,22 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 09/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b148abfaeffaf02178e34c3e9abfe86f70fb529c
-ms.sourcegitcommit: ec22a186a9cfa489a8490698e387624e480892d8
+ms.openlocfilehash: 0d9fe180e81c9e661954dd0986f05ac3b5e749ed
+ms.sourcegitcommit: e477e399cba673a2a9e1fa342e8303ed993801eb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68960652"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70739188"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Erzwingen der Konformität für Microsoft Defender ATP mit bedingtem Zugriff in Intune  
 
@@ -101,6 +101,7 @@ Wenn Sie die Verbindung mit Microsoft Defender ATP hergestellt haben, empfängt 
 
 Nachdem Sie ein Gerät über das Konfigurationspaket integriert haben, müssen Sie dies nicht erneut tun. Sie können Geräte auch mit einer [Gruppenrichtlinie oder System Center Configuration Manager (SCCM)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints) integrieren.
 
+
 ### <a name="create-the-device-configuration-profile"></a>Erstellen des Gerätekonfigurationsprofils
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
@@ -122,6 +123,7 @@ Nachdem Sie ein Gerät über das Konfigurationspaket integriert haben, müssen S
 
 7. Wählen Sie **OK** und **Erstellen** aus, um Ihre Änderungen zu speichern, die das Profil erstellt.
 8. [Weisen Sie das Gerätekonfigurationsprofil Geräten zu, die Sie mit Microsoft Defender ATP bewerten möchten.](device-profile-assign.md)  
+
 
 ## <a name="create-and-assign-the-compliance-policy"></a>Erstellen und Zuweisen der Konformitätsrichtlinie  
 
@@ -179,6 +181,9 @@ Die Richtlinie für bedingten Zugriff blockiert den Zugriff auf Ressourcen für 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Wählen Sie **Gerätekompatibilität** > **Richtlinienkompatibilität** aus.
 3. Suchen Sie Ihre Microsoft Defender ATP-Richtlinie in der Liste, und sehen Sie, welche Geräte konform bzw. nicht konform sind.
+
+## <a name="view-onboarding-status"></a>Anzeigen des Onboardingstatus
+Um den Onboardingstatus aller von Intune verwalteten Windows 10-Geräte anzuzeigen, wechseln Sie zu **Gerätekompatibilität** > **Microsoft Defender ATP**. Auf dieser Seite können Sie auch die Erstellung eines Gerätekonfigurationsprofils für das Onboarding mehrerer Geräte in Microsoft Defender ATP initiieren.
 
 ## <a name="next-steps"></a>Nächste Schritte  
 
