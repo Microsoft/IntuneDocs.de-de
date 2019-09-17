@@ -1,6 +1,6 @@
 # Benutzerhilfe für Intune
 
-## [Verwenden verwalteter Geräte zum Erledigen von Aufgaben](use-managed-devices-to-get-work-done.md)
+## [Was ist die Geräteregistrierung?](use-managed-devices-to-get-work-done.md)
 
 ## [Welche Informationen sieht mein Unternehmen mit Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 

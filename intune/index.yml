@@ -9,12 +9,12 @@ metadata:
   ms.author: dougeby
   manager: mtillman
   ms.date: 08/30/2019
-  ms.openlocfilehash: 4d33b03ecf4a83b4fb962dc3672cb4ca45bfeedb
-  ms.sourcegitcommit: ffbd1542d33810ab97a0be8faf26f8061328c228
+  ms.openlocfilehash: c671531c878863dc56d00cc0c8cdeb5768517c43
+  ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 08/31/2019
-  ms.locfileid: "70206433"
+  ms.lasthandoff: 09/13/2019
+  ms.locfileid: "70986398"
 highlightedContent:
   items:
   - title: Was ist Intune?
@@ -140,9 +140,20 @@ conceptualContent:
     - url: app-configuration-policies-overview.md
       itemType: overview
       text: App-Konfigurationsrichtlinien
+  - title: App-Schutzrichtlinien
+    links:
     - url: app-protection-policy.md
       itemType: concept
-      text: App-Schutzrichtlinien
+      text: Übersicht über App-Schutzrichtlinien
+    - url: app-protection-policies.md
+      itemType: overview
+      text: Erstellen von App-Schutzrichtlinien
+    - url: app-protection-policies-validate.md
+      itemType: how-to-guide
+      text: Überprüfen von App-Schutzrichtlinien
+    - url: app-protection-policies-monitor.md
+      itemType: how-to-guide
+      text: Überwachen von App-Schutzrichtlinien
   - title: Hilfe und Support
     links:
     - url: get-support.md
