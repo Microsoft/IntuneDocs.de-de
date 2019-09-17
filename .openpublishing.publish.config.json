@@ -2,6 +2,23 @@
   "build_entry_point": "docs",
   "docsets_to_publish": [
     {
+      "docset_name": "device-mgmt",
+      "build_source_folder": "device-mgmt",
+      "build_output_subfolder": "device-mgmt",
+      "locale": "de-de",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "ZonePivotGroups": "Toc",
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "intune-azure",
       "build_source_folder": "intune",
       "build_output_subfolder": "intune",
@@ -69,8 +86,7 @@
     }
   ],
   "notification_subscribers": [
-    "CnE_Content_Brno@moravia.com",
-    "CnE_UE_Bugfixing_ENG@moravia.com"
+    ""
   ],
   "branches_to_filter": [
     "master-oldev",
@@ -100,7 +116,7 @@
     },
     {
       "path_to_root": "_repo.en-us",
-      "url": "https://github.com/Microsoft/IntuneDocs-pr",
+      "url": "https://github.com/MicrosoftDocs/IntuneDocs-pr",
       "branch": "live",
       "branch_mapping": {
         "live": "live",
@@ -113,7 +129,7 @@
       "Publish",
       "Pdf"
     ],
-    "live-sxs": [
+    "master": [
       "Publish",
       "Pdf"
     ]
