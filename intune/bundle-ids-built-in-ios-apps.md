@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ff5b411f14fef4ad294b0dd8b265680fd67df08
-ms.sourcegitcommit: a97b6139770719afbd713501f8e50f39636bc202
+ms.openlocfilehash: 04cafd2cf69bbd42a35ade3ae180e8af8789c938
+ms.sourcegitcommit: e8d788d033be4320cd72c98c892b383e1bb77e18
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402761"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70912813"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Bündel-IDs für integrierte iOS-Apps, die Sie in Intune verwenden können
 
@@ -30,11 +30,12 @@ Wenn Sie Features auf iOS-Geräten konfigurieren, können Sie auch die integrier
 
 | Paket-ID                   | App-Name     | Herausgeber |
 |-----------------------------|--------------|-----------|
-| com.apple.AppStore          | App Store    | Apple     |
+| com. Apple. Store             | App Store    | Apple     |
 | com.apple.calculator        | Calculator   | Apple     |
 | com.apple.mobilecal         | Kalender     | Apple     |
 | com.apple.camera            | Kamera       | Apple     |
 | com.apple.mobiletimer       | Clock        | Apple     |
+| com. Apple. Clips             | Clips        | Apple     |
 | com.apple.compass           | Compass      | Apple     |
 | com.apple.MobileAddressBook | Kontakte     | Apple     |
 | com.apple.facetime          | FaceTime     | Apple     |
@@ -74,7 +75,7 @@ Wenn Sie Features auf iOS-Geräten konfigurieren, können Sie auch die integrier
 | com.apple.VoiceMemos        | VoiceMemos   | Apple     |
 | com.apple.Passbook          | Wallet       | Apple     |
 | com.apple.Bridge            | Überwachen        | Apple     |
-| com.apple.weather           | Weather      | Apple     |
+| com.apple.weather           | Weather      | Apple     |      
 
 ## <a name="next-steps"></a>Nächste Schritte
 
