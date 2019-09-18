@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
-ms.reviewer: arnab
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a637ae12f3a2ee395503bedd595c490579fdb43c
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: f4236b3fd1b7dab25a3450b95b75f3623ec7ba95
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68993546"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071643"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment
 
@@ -67,7 +67,7 @@ Wenn Ihr Unternehmen erfolgreich registriert wurde, können Sie Ihr MDM-Profil f
 |Beschreibung        | Nein        |Geben Sie Text ein, der das Profil beschreibt. 
 |MDM Agent APK      | Ja       |https://aka.ms/intune_kme_deviceowner 
 |Diese App als Google-Geräteinhaber aktivieren | Ja | Aktivieren Sie diese Option, um die Registrierung für Android Enterprise durchzuführen. 
-|Unterstützte MDM      | Ja       |Microsoft Intune 
+|Unterstützte MDM      | Ja       |Microsoft Intune 
 |Alle System-Apps aktiviert lassen | Nein | Aktivieren Sie diese Option, um sicherzustellen, dass alle Apps für das Profil aktiviert und verfügbar sind. Wenn diese Option nicht aktiviert ist, wird nur eine eingeschränkte Anzahl von System-Apps in der App-Liste des Geräts angezeigt. Apps wie die E-Mail-App werden ausgeblendet. 
 |Custom JSON        | Nein        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN": "Geben Sie die Zeichenfolge des Intune-Registrierungstokens ein"}. Erfahren Sie, [wie Sie ein Registrierungsprofil erstellen](android-kiosk-enroll.md). 
 | Lizenzvereinbarungen hinzufügen | Nein | Lassen Sie dieses Feld leer. 
