@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c15bd301b60481f4d8b15617512851e2cc29034a
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 9b67adeac619e26de785addbab4c6312915a58f0
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67529757"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071742"
 ---
 # <a name="incomplete-user-enrollments-report"></a>Unvollständige Berichte zu Benutzerregistrierungen
 

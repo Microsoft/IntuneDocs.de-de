@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21f62ad44d992d1f4adbb1945bdba02e526d9138
-ms.sourcegitcommit: 2db7dc2baea0c159f70338e6a0529acc89580773
+ms.openlocfilehash: e7c0947438b42f4a2fa5ccae8e9cab07a60167ae
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67500652"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071697"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Suchen des primären Benutzers eines Intune-Geräts
 

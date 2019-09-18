@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
-ms.reviewer: dagerrit
+ms.reviewer: tisilver
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df090e0e942291d5430b101db378aca296466bf9
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: cd4a195af0b3be5038a34b44606abcddf02c5a1e
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69549980"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071556"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple
 
@@ -64,7 +64,7 @@ Verwenden Sie das Apple DEP-Portal, um ein DEP-Token zu erstellen. Sie verwenden
 > [!NOTE]
 > Wenn Sie das Token vor der Migration zu Azure aus dem klassischen Intune-Portal löschen, stellt Intune womöglich ein gelöschtes Apple DEP-Token wieder her. Sie können das DEP-Token erneut aus dem Azure-Portal löschen.
 
-### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Schritt 1 Laden Sie das Intune-Zertifikat mit öffentlichem Schlüssel herunter, das zum Erstellen des Tokens erforderlich ist.
+### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Schritt 1: Laden Sie das Intune-Zertifikat mit öffentlichem Schlüssel herunter, das zum Erstellen des Tokens erforderlich ist.
 
 1. Wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Registrierungsprogrammtoken** > **Hinzufügen** aus.
 
@@ -77,7 +77,7 @@ Verwenden Sie das Apple DEP-Portal, um ein DEP-Token zu erstellen. Sie verwenden
 3. Wählen Sie **Laden Sie Ihr Zertifikat mit öffentlichem Schlüssel herunter** aus, um die Verschlüsselungsschlüsseldatei (PEM) herunterzuladen und lokal zu speichern. Die PEM-Datei wird verwendet, um ein Vertrauensstellungszertifikat vom Apple Device Enrollment Program-Portal anzufordern.
 
 
-### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Schritt 2 Verwenden Sie Ihren Schlüssel, um ein Token von Apple herunterzuladen.
+### <a name="step-2-use-your-key-to-download-a-token-from-apple"></a>Schritt 2. Verwenden Sie Ihren Schlüssel, um ein Token von Apple herunterzuladen.
 
 1. Wählen Sie **Create a token for Apple's Device Enrollment Program** (Token für das Programm zur Geräteregistrierung von Apple erstellen) aus, um das Portal des Bereitstellungsprogramms von Apple zu öffnen. Melden Sie sich mit der Apple-ID Ihres Unternehmens an. Diese Apple-ID kann später zum Erneuern Ihres DEP-Token verwendet werden.
 2. Wählen Sie im [Portal des Bereitstellungsprogramms](https://deploy.apple.com) von Apple die Option **Erste Schritte** für das **Programm zur Geräteregistrierung** aus.
@@ -99,13 +99,13 @@ Verwenden Sie das Apple DEP-Portal, um ein DEP-Token zu erstellen. Sie verwenden
 
    Wechseln Sie im Apple-Portal zu **Bereitstellungsprogramme** &gt; **Programm zur Geräteregistrierung** &gt; **Zuweisungsverlauf anzeigen**, um eine Liste der Geräte und ihre MDM-Server-Zuordnung anzuzeigen.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Schritt 3 Speichern Sie die zum Erstellen dieses Tokens verwendete Apple-ID.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Schritt 3: Speichern Sie die zum Erstellen dieses Tokens verwendete Apple-ID.
 
 Geben Sie in Intune im Azure-Portal für die zukünftige Verwendung Ihre Apple-ID an.
 
 ![Screenshot der Angabe der Apple-ID zur Erstellung des Registrierungsprogrammtokens und Navigieren zu diesem Token](./media/device-enrollment-program-enroll-ios/image03.png)
 
-### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>Schritt 4 Laden Sie Ihr Token hoch, und wählen Sie Bereichsmarkierungen aus.
+### <a name="step-4-upload-your-token-and-choose-scope-tags"></a>Schritt 4: Laden Sie Ihr Token hoch, und wählen Sie Bereichsmarkierungen aus.
 
 1. Navigieren Sie im Feld **Apple token** (Apple-Token) zur Zertifikatsdatei (PEM), und wählen Sie **Öffnen** aus.
 2. Wenn Sie [Bereichsmarkierungen](scope-tags.md) auf dieses DEP-Token anwenden möchten, klicken Sie auf **Scope (tags)** (Bereich (Markierungen)), und wählen Sie die gewünschten Bereichsmarkierungen aus. Bereichsmarkierungen, die auf ein Token angewendet wurden, werden von Profilen und Geräten geerbt, die diesem Token hinzugefügt werden.

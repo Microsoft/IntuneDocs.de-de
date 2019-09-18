@@ -8,17 +8,17 @@ ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 03/26/2019
 ms.author: erikje
-ms.reviewer: angerobe
+ms.reviewer: pjain
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6cf4e365f4e68920ea5d24dc3ce2e1bd5eb9f817
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: f63bbc80c055cfcb3bd52f79e7b810094107ec2a
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61511570"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71080060"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Schnellstart: Erstellen und Zuweisen einer benutzerdefinierten Rolle
 
@@ -56,10 +56,10 @@ Bevor Ihr Sicherheitsoperator die neuen Berechtigungen verwenden kann, müssen S
 1. Wählen Sie in Intune die Optionen **Rollen** > **Alle Rollen** > **Sicherheitsvorgänge** aus.
 2. Klicken Sie unter **Intune-Rollen** auf **Zuweisungen** > **Zuweisen**.
 3. Geben Sie im Feld **Zuweisungsname** *Sec ops* ein.
-4. Klicken Sie auf **Mitglied (Gruppen)** > **Hinzufügen**.
+4. Klicken Sie auf **Mitglied (Gruppen)**  > **Hinzufügen**.
 5. Wählen Sie die Gruppe **Contoso Tester** aus.
 6. Klicken Sie auf **Auswählen** > **OK**.
-7. Klicken Sie auf **Bereich (Gruppen)** > **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen.** > **Contoso Tester**.
+7. Klicken Sie auf **Bereich (Gruppen)**  > **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen.**  > **Contoso Tester**.
 8. Klicken Sie auf **Auswählen** > **OK** > **OK**.
 
 Nun ist jeder in der Gruppe ein Mitglied der Rolle *Sicherheitsvorgänge* und kann die folgenden Informationen über ein Gerät überprüfen: Unternehmensgerätebezeichner, Gerätekompatibilitätsrichtlinien, Gerätekonfigurationen und Organisationsinformationen.

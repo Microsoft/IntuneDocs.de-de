@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c64ea07cb87bc980d01864468d788229bfc58a5f
-ms.sourcegitcommit: a6385b8370c20a44d0869f7920d6b2866edaa5e2
+ms.openlocfilehash: 469bdc54385f943fd0c42ccfd921293970b03b64
+ms.sourcegitcommit: 05139901411d14a85c2340c0ebae02d2c178a851
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/26/2019
-ms.locfileid: "70027389"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70905044"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Überwachen der Geräteverschlüsselung mit Intune   
 
@@ -201,8 +201,7 @@ Intune unterstützt mehrere Optionen für das Rotieren oder Wiederherstellen von
   1. Melden Sie sich auf einem beliebigen Gerät bei der *Intune-Unternehmensportal*-Website an.  
   2. Navigieren Sie im Portal zu **Geräte**, und wählen Sie das macOS-Gerät aus, das über FileVault verschlüsselt ist.  
   3. Klicken Sie auf **Wiederherstellungsschlüssel abrufen**. Dann wird der aktuelle Wiederherstellungsschlüssel angezeigt.  
-  
-     Wenn Sie ein iPhone verwenden, müssen Sie auf die *drei* Punkte klicken, bevor die Option *Wiederherstellungsschlüssel abrufen* angezeigt wird.  
+ 
 
 ## <a name="bitlocker-recovery-keys"></a>BitLocker-Wiederherstellungsschlüssel  
 

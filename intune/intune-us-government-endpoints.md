@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: angerobe
+ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9828b04ae30d8f35313564b93dfc9b997795bf76
-ms.sourcegitcommit: 8d12ab22e23552f9addaef4c28b732fb211945a2
+ms.openlocfilehash: 490c939e79659baac655cfd7d3d3a2ee10d98382
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68306718"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079930"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>US Government-Endpunkte für Microsoft Intune
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d9554893a8317b014007bd7089ed62f222975c8
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: 76e6ba8cb1ed6804bfb50f69a00817a50fe1912e
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214297"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012450"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Verwenden von Zertifikaten zur Authentifizierung in Microsoft Intune  
 
@@ -98,5 +98,5 @@ Das Profil wird in der Liste der Profile im Anzeigebereich *Gerätekonfiguration
 Nachdem Sie die Profile des vertrauenswürdigen Zertifikats erstellt und zugewiesen haben, erstellen Sie SCEP-, PKCS- oder importierte PKCS- Zertifikatprofile für jede Plattform, die Sie verwenden möchten. Weitere Informationen zum Fortfahren finden Sie in den folgenden Artikeln:  
 - [Konfigurieren Ihrer Infrastruktur für die Unterstützung von SCEP-Zertifikaten mit Intune](certificates-scep-configure.md)  
 - [Konfigurieren Ihrer Microsoft Intune-Zertifikatsinfrastruktur für PKCS](certficates-pfx-configure.md)  
-- [Erstellen eines importierten PKCS-Zertifikatprofils](certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
+- [Erstellen eines importierten PKCS-Zertifikatprofils](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  
 

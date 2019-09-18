@@ -12,17 +12,17 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: chrisbal
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c13ebdd6cf908a62c99d4c81443c94ce6a07d8e
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.openlocfilehash: 99ccc8c61aa781bdcb6ac79c76202253597b8ef6
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68353826"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71070993"
 ---
 # <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Registrieren Ihrer dedizierten Android Enterprise-Geräte oder vollständig verwalteten Geräte (Vorschauversion)
 
