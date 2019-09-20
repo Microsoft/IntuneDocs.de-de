@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d25012790322491a9038f0bcf9349434d5a45b8d
-ms.sourcegitcommit: 14f4e97de5699394684939e6f681062b5d4c1671
+ms.openlocfilehash: b439067d06cf49a4ff83288e109d1fccd3801106
+ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67251087"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012511"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integrieren von Jamf Pro in Intune zu Konformitätszwecken
 
@@ -38,13 +38,13 @@ Zur Konfiguration des bedingten Zugriffs mit Jamf Pro benötigen Sie Folgendes:
 - [Die Unternehmensportal-App für macOS](https://aka.ms/macoscompanyportal)
 - macOS-Geräte mit OS X 10.11 Yosemite oder höher
 
-## <a name="connecting-intune-to-jamf-pro"></a>Herstellen einer Verbindung zwischen Intune und Jamf Pro
+## <a name="connect-intune-to-jamf-pro"></a>Herstellen einer Verbindung zwischen Intune und Jamf Pro
 
-Eine Verbindung zwischen Intune und Jamf Pro können Sie folgendermaßen herstellen:
+So stellen Sie eine Verbindung zwischen Intune und Jamf Pro her:
 
-1. Erstellen einer neuen Anwendung in Azure
-2. Ermöglichen einer Integration von Intune in Jamf Pro
-3. Konfigurieren des bedingten Zugriffs in Jamf Pro
+1. Erstellen Sie eine neue Anwendung in Azure.
+2. Ermöglichen Sie eine Integration von Intune in Jamf Pro.
+3. Konfigurieren Sie den bedingten Zugriff in Jamf Pro.
 
 ## <a name="create-an-application-in-azure-active-directory"></a>Registrieren einer Anwendung in Azure Active Directory
 
@@ -55,22 +55,22 @@ Eine Verbindung zwischen Intune und Jamf Pro können Sie folgendermaßen herstel
    - Wählen Sie im Abschnitt **Unterstützte Kontotypen** die Option **Konten in einem Organisationsverzeichnis** aus. 
    - Für den **Umleitungs-URI** übernehmen Sie den Standardwert „Web“, und geben Sie dann die URL für Ihre Jamf Pro-Instanz an.  
 
-3. Wählen Sie **Registrieren** aus, um die Anwendung zu erstellen und die Seite „Übersicht“ für die neue App zu öffnen.  
+3. Wählen Sie **Registrieren** aus, um die Anwendung zu erstellen und die Seite **Übersicht** für die neue App zu öffnen.  
 
-4. Kopieren Sie auf der App-Seite **Übersicht** den Wert der **Anwendungs-ID (Client)** , und notieren Sie ihn zur späteren Verwendung. Sie benötigen diesen Wert bei späteren Prozeduren.  
+4. Kopieren Sie auf der App-Seite **Übersicht** den Wert der **Anwendungs-ID (Client)**, und notieren Sie ihn zur späteren Verwendung. Sie benötigen diesen Wert bei späteren Prozeduren.  
 
 5. Wählen Sie unter **Verwalten** **Zertifikate und Geheimnisse** aus. Wählen Sie die Schaltfläche **Neuer geheimer Clientschlüssel** aus. Geben Sie einen Wert in **Beschreibung** ein, wählen Sie eine Option für **Gültig bis** aus, und wählen Sie **Hinzufügen** aus.
 
    > [!IMPORTANT]  
    > Bevor Sie diese Seite verlassen, kopieren Sie den Wert für den geheimen Clientschlüssel, und notieren Sie ihn zur späteren Verwendung. Sie benötigen diesen Wert bei späteren Prozeduren. Dieser Wert ist nicht noch mal verfügbar, ohne die App-Registrierung neu zu erstellen.  
 
-6. Wählen Sie unter „Verwalten“ **API-Berechtigungen** aus.  Wählen Sie die vorhandenen Berechtigungen aus, und wählen Sie dann **Berechtigung entfernen** aus, um diese Berechtigungen zu löschen. Das Entfernen aller vorhandenen Berechtigungen ist notwendig, wenn Sie eine neue Berechtigung hinzufügen, und die Anwendung funktioniert nur, wenn sie ausschließlich über die erforderliche Berechtigung verfügt.  
+6. Wählen Sie unter **Verwalten** die Option **API-Berechtigungen** aus. Wählen Sie die vorhandenen Berechtigungen aus, und wählen Sie dann **Berechtigung entfernen** aus, um diese Berechtigungen zu löschen. Das Entfernen aller vorhandenen Berechtigungen ist notwendig, wenn Sie eine neue Berechtigung hinzufügen, und die Anwendung funktioniert nur, wenn sie ausschließlich über die erforderliche Berechtigung verfügt.  
 
 7. Um eine neue Berechtigung hinzuzufügen, wählen Sie **Berechtigung hinzufügen** aus. Wählen Sie auf der Seite **API-Berechtigungen anfordern** den Eintrag **Intune** aus, und wählen Sie dann **Anwendungsberechtigungen** aus. Aktivieren Sie nur das Kontrollkästchen für **update_device_attributes**.  
 
    Wählen Sie **Berechtigung hinzufügen** aus, um diese Konfiguration zu speichern.  
 
-8. Wählen Sie auf der Seite **API-Berechtigungen** den Eintrag **Administratoreinwilligung für Microsoft gewähren** aus, und wählen Sie dann „Ja“ aus.  
+8. Wählen Sie auf der Seite **API-Berechtigungen** die Option **Administratoreinwilligung für Microsoft gewähren** aus, und klicken Sie dann auf **Ja**.  
 
    Der Prozess der App-Registrierung in Azure AD ist abgeschlossen.
 
@@ -88,9 +88,9 @@ Eine Verbindung zwischen Intune und Jamf Pro können Sie folgendermaßen herstel
 
 ## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>Konfigurieren der Microsoft Intune-Integration in Jamf Pro
 
-1. Navigieren Sie in Jamf Pro zu **Global Management** > **Conditional Access** (Globale Verwaltung > Bedingter Zugriff). Klicken Sie auf der Registerkarte **Integration von Intune** auf die Schaltfläche **Bearbeiten**.
+1. Navigieren Sie in Jamf Pro zu **Global Management** > **Conditional Access** (Globale Verwaltung > Bedingter Zugriff). Klicken Sie auf der Registerkarte **macOS Intune Integration** (Intune-Integration in macOS) auf die Schaltfläche **Edit** (Bearbeiten).
 
-2. Aktivieren Sie das Kontrollkästchen **Integration von Microsoft Intune aktivieren**.
+2. Aktivieren Sie das Kontrollkästchen **Enable Intune Integration for macOS** (Integration von Intune für macOS aktivieren).
 
 3. Geben Sie die erforderlichen Informationen zu Ihrem Azure-Mandanten ein, einschließlich **Location** (Standort), **Domain name** (Domänenname), der **Application ID** (Anwendungs-ID) und dem Wert für den *Client Secret* (Geheimer Clientschlüssel), den gespeichert haben, als Sie die App in Azure AD erstellt haben.  
 
@@ -100,7 +100,17 @@ Eine Verbindung zwischen Intune und Jamf Pro können Sie folgendermaßen herstel
 
 Nach dem Konfigurieren der Integration zwischen Intune und Jamf verwenden Sie die Option [Anwenden von Konformitätsrichtlinien auf mit Jamf verwaltete Geräte](conditional-access-assign-jamf.md).
 
+## <a name="disconnect-jamf-pro-and-intune"></a>Trennen von Jamf Pro und Intune 
 
+Wenn Sie Jamf Pro nicht mehr zum Verwalten von Macs in Ihrer Organisation verwenden und Benutzer in Intune verwaltet werden sollen, müssen Sie die Verbindung zwischen Jamf Pro und Intune entfernen. Entfernen Sie die Verbindung über die Jamf Pro-Konsole. 
+
+1. Navigieren Sie in Jamf Pro zu **Global Management** > **Conditional Access** (Globale Verwaltung > Bedingter Zugriff). Klicken Sie auf der Registerkarte **macOS Intune Integration** (Intune-Integration in macOS) auf **Edit** (Bearbeiten).
+2. Deaktivieren Sie das Kontrollkästchen **Enable Intune Integration for macOS** (Integration von Intune für macOS aktivieren).
+3. Wählen Sie **Speichern** aus. Jamf Pro sendet Ihre Konfiguration an Intune, und die Integration wird beendet.
+4. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an. Wechseln Sie zu **Microsoft Intune** > **Gerätekonformität** > **Partnergeräteverwaltung**, um zu überprüfen, ob der Status jetzt **Beendet** lautet. 
+
+   > [!NOTE]
+   > Die Mac-Geräte Ihrer Organisation werden an dem Datum (3 Monate) entfernt, das in der Konsole angezeigt wird. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cf55084951c3a423b79e4588f8814b5e73ce8e8
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: a038f55f6dbdd894742a8712c878e77557a77210
+ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063021"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71061547"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Selektives Löschen von Daten in Intune über durch App-Schutzrichtlinien festgelegte bedingte Startaktionen
 
@@ -44,7 +44,7 @@ Sie können diese Einstellungen verwenden, um die Unternehmensdaten bei Nichtkon
 8. Wählen Sie die **Aktion** aus, die Benutzer ausführen sollen, wenn Sie Ihre Anforderungen nicht erfüllen. In einigen Fällen können mehrere Aktionen für eine einzelne Einstellung konfiguriert werden. Weitere Informationen finden Sie unter [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md).
 
 >[!NOTE]
-> Geben Sie eine durch Semikolons getrennte Liste der Modellbezeichner ein, um die Einstellung **Device model(s) or Device manufacturer(s)** (Gerätemodelle oder Gerätehersteller) zu verwenden. Vermeiden Sie Leerzeichen in Listen mit mehreren Werten. Bei den Werten wird nicht zwischen Groß- und Kleinschreibung unterschieden. 
+> Geben Sie eine durch Semikolons getrennte Liste der Gerätemodellbezeichner (iOS) oder Gerätehersteller (Android) ein, um die Einstellung **Gerätemodell(e) oder Gerätehersteller** zu verwenden. Vermeiden Sie Leerzeichen in Listen mit mehreren Werten. Bei den Werten wird nicht zwischen Groß- und Kleinschreibung unterschieden. 
 
 ## <a name="policy-settings"></a>Richtlinieneinstellungen 
 
