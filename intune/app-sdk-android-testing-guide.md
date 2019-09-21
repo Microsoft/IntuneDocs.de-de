@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6b07c77b0d92ceb7bdc960d8c2fd754c277499
-ms.sourcegitcommit: 63b55e81122e5c15893302b109ae137c30855b55
+ms.openlocfilehash: 91b7fc7414c3a6d6517cd4b704cb5e99ddcf96d0
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67713233"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167189"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developers-testing-guide"></a>Testleitfaden für Entwickler zum Microsoft Intune App SDK für Android
 
@@ -30,20 +30,20 @@ Der Testleitfaden zum Microsoft Intune App SDK für Android wurde dazu entworfen
 ## <a name="prerequisite-test-accounts"></a>Erforderliche Testkonten
 Neue Konten können mit und ohne vorab generierte Daten erstellt werden. Gehen Sie folgendermaßen vor, um ein neues Konto zu erstellen:
 1. Öffnen Sie die [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant)-Website. 
-2. [Richten Sie Intune ein](https://docs.microsoft.com/intune/setup-steps), um die mobile Geräteverwaltung (MDM) zu aktivieren.
-3. [Erstellen Sie Benutzer](https://docs.microsoft.com/intune/users-add).
-4. [Erstellen Sie Gruppen](https://docs.microsoft.com/intune/groups-add).
-5. [Weisen Sie Lizenzen je nach Bedarf für Ihre Tests zu](https://docs.microsoft.com/intune/licenses-assign).
+2. [Richten Sie Intune ein](setup-steps.md), um die mobile Geräteverwaltung (MDM) zu aktivieren.
+3. [Erstellen Sie Benutzer](users-add.md).
+4. [Erstellen Sie Gruppen](groups-add.md).
+5. [Weisen Sie Lizenzen je nach Bedarf für Ihre Tests zu](licenses-assign.md).
 
 
 ## <a name="azure-portal-policy-configuration"></a>Richtlinienkonfiguration des Azure-Portals
-[Erstellen Sie App-Schutzrichtlinien](https://docs.microsoft.com/intune/app-protection-policies) über das [Intune-Blatt des Azure-Portals](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview), und weisen Sie sie zu. Ihre [App-Konfigurationsrichtlinie](https://docs.microsoft.com/intune/app-configuration-policies-overview) kann ebenfalls über das Intune-Blatt erstellt und zugewiesen werden.
+[Erstellen Sie App-Schutzrichtlinien](app-protection-policies.md) über das [Intune-Blatt des Azure-Portals](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview), und weisen Sie sie zu. Ihre [App-Konfigurationsrichtlinie](app-configuration-policies-overview.md) kann ebenfalls über das Intune-Blatt erstellt und zugewiesen werden.
 
 > [!NOTE]
 > Wenn Ihre App nicht im Azure-Portal aufgeführt wird, können Sie eine Richtlinie auf die App anwenden, indem Sie auf **Weitere Apps** klicken und den Paketnamen in das Textfeld eingeben.
 
 > [!IMPORTANT]
-> Damit eine App-Konfigurationsrichtlinie angewendet wird, muss eine [Intune-App-Schutzrichtlinie](https://docs.microsoft.com/intune/app-protection-policy) auf den zu registrierenden Benutzer angewendet werden.
+> Damit eine App-Konfigurationsrichtlinie angewendet wird, muss eine [Intune-App-Schutzrichtlinie](app-protection-policy.md) auf den zu registrierenden Benutzer angewendet werden.
 
 ## <a name="test-cases"></a>Testfälle
 
@@ -103,7 +103,7 @@ Sie können die App-Sicherung wie folgt steuern:
 ### <a name="unenrollment"></a>Aufheben der Registrierung
 Sie können für verwaltete Apps eine Remotezurücksetzung durchführen, um Unternehmens-E-Mails und -dokumente zu entfernen. Außerdem werden persönliche Daten entschlüsselt, wenn die Registrierung wie folgt aufgehoben wird:
 
-1. [Veranlassen Sie eine Zurücksetzung](https://docs.microsoft.com/intune/apps-selective-wipe) über das Azure-Portal.
+1. [Veranlassen Sie eine Zurücksetzung](apps-selective-wipe.md) über das Azure-Portal.
 2. Wenn Ihre App für keine Zurücksetzungshandler registriert ist, überprüfen Sie die folgenden Bedingungen:
     - Eine vollständige Zurücksetzung wird durchgeführt.
 3. Wenn Ihre App für `WIPE_USER_DATA` oder `WIPE_USER_AUXILARY_DATA` registriert ist, überprüfen Sie die folgenden Bedingungen:
@@ -123,7 +123,7 @@ Zumindest die folgenden Szenarios für mehrere Identitäten sollten noch mal üb
 ### <a name="app-configuration-optional"></a>App-Konfiguration (Optional)
 Sie können das Verhalten von verwalteten Apps wie folgt konfigurieren:
 
-1. Wenn Ihre App App-Konfigurationseinstellungen nutzt, sollten Sie testen, ob Ihre App alle Werte ordnungsgemäß verarbeitet, die Sie (als Administrator) festlegen können. [App-Konfigurationsrichtlinien](https://docs.microsoft.com/intune/app-configuration-policies-overview) können mithilfe von Intune erstellt und zugewiesen werden.
+1. Wenn Ihre App App-Konfigurationseinstellungen nutzt, sollten Sie testen, ob Ihre App alle Werte ordnungsgemäß verarbeitet, die Sie (als Administrator) festlegen können. [App-Konfigurationsrichtlinien](app-configuration-policies-overview.md) können mithilfe von Intune erstellt und zugewiesen werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

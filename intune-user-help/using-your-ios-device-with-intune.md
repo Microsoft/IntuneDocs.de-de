@@ -18,25 +18,26 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9c25166ed9b004cc4e43e777008e33e88983912
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2ced8f1ec37f652b7e283328141bc591b5961587
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55843492"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099837"
 ---
 # <a name="using-your-ios-device-with-intune-company-portal"></a>Verwenden Ihres iOS-Geräts mit dem Intune-Unternehmensportal
 Dieser Artikel enthält Aufgaben und Informationen zum Unternehmensportal für iOS. Verwenden Sie diese, um Probleme zu behandeln und Ihr iOS-Gerät zu verwalten. Klicken Sie auf einen beliebigen Link, um weitere Details, Schritte und Screenshots zu sehen.
 
 ## <a name="supported-versions"></a>Unterstützte Versionen
 
-Das Unternehmensportal für iOS unterstützt derzeit iOS 10.0 und höher.
+Das Unternehmensportal für iOS unterstützt derzeit iOS 10.0 und höher.  
+
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>In Intune registrieren und das Unternehmenswebportal installieren
 
 - [Installieren und Anmelden bei der Intune-Unternehmensportal-App](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Registrieren Ihres iOS-Geräts bei Intune](enroll-your-device-in-intune-ios.md)
-- [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
+- [Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr Gerät bei Intune registrieren?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)  
 
 ## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>Aufgaben, die Sie erledigen können, wenn Ihr Gerät bei Intune registriert ist
 

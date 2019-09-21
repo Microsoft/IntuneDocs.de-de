@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c626bb50868e6b966eb7c8867f4c4ff7178eadcf
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: f3891ce150ea740baa3ba18591139c66d78d9d00
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/03/2019
-ms.locfileid: "68756526"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166373"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune in der Azure-Konsole und der Legacy-Intune-PC-Client
 
@@ -31,7 +31,7 @@ Ziehen Sie bei der Verwaltung der Windows-Geräte Ihrer Organisation mit Intune 
 
 ## <a name="manage-windows-10-devices-by-using-mdm"></a>Verwalten von Windows 10-Geräten mithilfe von MDM
 
-Wir empfehlen die Verwendung der [mobilen Geräteverwaltung (Mobile Device Management, MDM) zum Verwalten Ihrer Windows 10-Geräte](https://docs.microsoft.com/intune/device-restrictions-windows-10) anstelle des Legacy-Intune-PC-Clients. Die Möglichkeit zum Verwalten von Windows 10 über MDM steht in Intune über das Azure-Portal zur Verfügung. MDM für Windows 10 bietet viele neue Verwaltungs- und Sicherheitsfunktionen, die über den Legacy-Intune-PC-Client nicht verfügbar sind.
+Wir empfehlen die Verwendung der [mobilen Geräteverwaltung (Mobile Device Management, MDM) zum Verwalten Ihrer Windows 10-Geräte](device-restrictions-windows-10.md) anstelle des Legacy-Intune-PC-Clients. Die Möglichkeit zum Verwalten von Windows 10 über MDM steht in Intune über das Azure-Portal zur Verfügung. MDM für Windows 10 bietet viele neue Verwaltungs- und Sicherheitsfunktionen, die über den Legacy-Intune-PC-Client nicht verfügbar sind.
 
 ## <a name="legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Legacy-PC-Client-Funktionen sind nur in der Silverlight-Konsole verfügbar.
 
@@ -54,7 +54,7 @@ Da Windows 7 nicht über MDM verwaltet werden kann, stellen wir nur in der Silve
 
 ## <a name="mdm-capabilities"></a>MDM-Funktionen
 
-Einen ausführlichen Vergleich zwischen PC-Client und MDM-Funktionen finden Sie unter [Vergleichen der Verwaltung von Windows-PCs als Computer oder mobile Geräte](pc-management-comparison.md). Über MDM-Updates werden weiterhin neue Verwaltungsfunktionen für in MDM registrierte Windows 10-Geräte bereitgestellt, einschließlich Auswertungsoptionen für Win32-Apps. Unter [Neuerungen](https://docs.microsoft.com/intune/whats-new) finden Sie die neuesten Features, die dem Dienst hinzugefügt wurden.
+Einen ausführlichen Vergleich zwischen PC-Client und MDM-Funktionen finden Sie unter [Vergleichen der Verwaltung von Windows-PCs als Computer oder mobile Geräte](pc-management-comparison.md). Über MDM-Updates werden weiterhin neue Verwaltungsfunktionen für in MDM registrierte Windows 10-Geräte bereitgestellt, einschließlich Auswertungsoptionen für Win32-Apps. Unter [Neuerungen](whats-new.md) finden Sie die neuesten Features, die dem Dienst hinzugefügt wurden.
 
 ## <a name="switch-from-pc-client-to-mdm"></a>Umstellen vom PC-Client auf MDM
 
@@ -62,9 +62,7 @@ Um die Verwaltung von Windows 10-Geräten mit dem Intune-PC-Client auf die Verwa
 
 1. Führen Sie in der Silverlight-Konsole eine **selektive Zurücksetzung** durch, um die Registrierung des Geräts beim PC-Client aufzuheben.
   ![Warnungs Popup mit ausgewähltem Optionsfeld "selektiv Gerät löschen"](media/intune-legacy-pc-client/image02.png)
-2. Registrieren Sie das Gerät neu bei [MDM (und/oder Azure AD Join)](https://docs.microsoft.com/intune/windows-enroll). 
+2. Registrieren Sie das Gerät neu bei [MDM (und/oder Azure AD Join)](windows-enroll.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
-[Registrieren von Windows-Geräten](https://docs.microsoft.com/intune/windows-enroll)
-
- 
+[Registrieren von Windows-Geräten](windows-enroll.md)

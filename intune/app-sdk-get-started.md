@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbaeb5efa2b23a7fad4761878b25118786609447
-ms.sourcegitcommit: a25cd79a33feb536d9b2fc11aa7d3e3972f1ca5a
+ms.openlocfilehash: 4b24387636408d2e28891aae13962c2febf9f329
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70842135"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167194"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Erste Schritte mit dem Microsoft Intune App SDK
 
@@ -161,7 +161,7 @@ Nachdem Sie die notwendigen Schritte zur Integration des Intune App SDK in Ihre 
 
   * Wenn Sie eine branchenspezifische App entwickeln, die nicht in den Store übertragen wird, sollten Sie über Ihre Organisation auf Microsoft Intune zugreifen können. Sie können sich auch bei [Microsoft Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) für eine kostenlose einmonatige Testversion registrieren.
 
-  * Wenn Sie Ihre App auf einem mobilen Gerät mit einem Benutzerkonto testen, sollten Sie sicherstellen, dass Sie diesem Konto auf der Website des Microsoft 365 Admin Centers über ein Administratorkonto eine Intune-Lizenz zugewiesen haben. Weitere Informationen dazu finden Sie unter [Zuweisen von Microsoft Intune-Lizenzen](https://docs.microsoft.com/intune/licenses-assign).
+  * Wenn Sie Ihre App auf einem mobilen Gerät mit einem Benutzerkonto testen, sollten Sie sicherstellen, dass Sie diesem Konto auf der Website des Microsoft 365 Admin Centers über ein Administratorkonto eine Intune-Lizenz zugewiesen haben. Weitere Informationen dazu finden Sie unter [Zuweisen von Microsoft Intune-Lizenzen](licenses-assign.md).
 
 * **Intune-App-Schutzrichtlinien**: Um Ihre App für alle Intune-App-Schutzrichtlinien zu testen, müssen Sie das erwartete Verhalten bei jeder Richtlinieneinstellung kennen. Siehe die Beschreibungen der [iOS-App-Schutzrichtlinien](app-protection-policy-settings-ios.md) und [Android-App-Schutzrichtlinien](app-protection-policy-settings-android.md). Wenn Ihre App das Intune SDK integriert hat, aber noch nicht im Azure-Portal als Ziel-App aufgelistet wird, können Sie sie über eine Richtlinie bereitstellen, indem Sie die Option „+ Weitere Apps“ auswählen und die Bundle-ID (iOS) oder den Paketnamen (Android) im Textfeld angeben.
 

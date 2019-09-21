@@ -15,12 +15,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37a1c9fad9b77e39145f1b4183b8176fb1677613
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 99dcf53d7571dfa660ee669c1d7adcea65f0797e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022866"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167731"
 ---
 # <a name="what-is-device-management"></a>Was ist die Geräteverwaltung? 
 
@@ -28,7 +28,7 @@ Eine Hauptaufgabe eines jeden Administrators ist der Schutz und die Sicherung de
 
 Mithilfe eines Anbieters für die Geräteverwaltung können Unternehmen sicherstellen, dass nur autorisierte Personen und Geräte Zugriff auf geschützte Informationen erhalten. Ebenso können sich Gerätebenutzer beim Zugriff auf Unternehmensdaten auf ihrem Smartphone sicher fühlen, da sie wissen, dass ihr Gerät den Sicherheitsanforderungen ihrer Organisation entspricht. Als Unternehmen könnten Sie sich fragen: **Womit können wir unsere Ressourcen schützen?**
 
-Die Antwort ist [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune). Intune bietet die Verwaltung mobiler Geräte (MDM) und mobiler Anwendungen (MAM). Zu den Hauptaufgaben einer jeden MDM- oder MAM-Lösung gehören:
+Die Antwort ist [Microsoft Intune](introduction-intune.md). Intune bietet die Verwaltung mobiler Geräte (MDM) und mobiler Anwendungen (MAM). Zu den Hauptaufgaben einer jeden MDM- oder MAM-Lösung gehören:
 
 - Unterstützen einer vielseitigen mobilen Umgebung und sicheres Verwalten von iOS-, Android-, Windows- und macOS-Geräten
 - Sicherstellen, dass Geräte und Apps die Sicherheitsanforderungen der Organisation erfüllen
@@ -44,7 +44,7 @@ Es ist üblich, dass Benutzer über mehrere Geräte verfügen, die unterschiedli
 
 Mit Intune können Sie mehrere Geräte pro Person und die darauf ausgeführten verschiedenen Plattformen verwalten, einschließlich iOS, macOS, Android und Windows. Intune unterscheidet dabei zwischen Richtlinien und Einstellungen nach Geräteplattform. Dadurch ist es einfach, Geräte einer bestimmten Plattform zu verwalten und anzuzeigen.
 
-**[Allgemeine Szenarien](https://docs.microsoft.com/intune/common-scenarios)** ist eine hervorragende Ressource, um zu sehen, wie Intune häufige Fragen beim Arbeiten mit mobilen Geräten beantwortet. Sie finden Szenarien zu den folgenden Themen:  
+**[Allgemeine Szenarien](common-scenarios.md)** ist eine hervorragende Ressource, um zu sehen, wie Intune häufige Fragen beim Arbeiten mit mobilen Geräten beantwortet. Sie finden Szenarien zu den folgenden Themen:  
 - Schützen von E-Mails mit lokalem Exchange
 - Sicherer und geschützter Zugriff auf Office 365
 - Verwenden privater Geräte für den Zugriff auf Unternehmensressourcen
@@ -52,16 +52,16 @@ Mit Intune können Sie mehrere Geräte pro Person und die darauf ausgeführten v
 ## <a name="integration-with-secure-and-protect-services"></a>Integration mit Diensten für Sicherheit und Schutz
 Eine Hauptaufgabe einer jeden Lösung für die Geräteverwaltung ist es, Sicherheit und Schutz zu bieten. Intune leistet bei der Integration mit anderen Diensten hervorragende Arbeit, um diese Aufgabe zu erfüllen. Beispiel:
 
-- **Microsoft 365** ist eine Schlüsselkomponente zur Vereinfachung gängiger IT-Aufgaben. Im Microsoft 365 Admin Center können Sie Benutzer erstellen und Gruppen verwalten. Außerdem erhalten Sie Zugriff auf andere Dienste wie z.B. Intune und Azure AD. 
+- **Microsoft 365** ist eine Schlüsselkomponente zur Vereinfachung gängiger IT-Aufgaben. Im Microsoft 365 Admin Center können Sie Benutzer erstellen und Gruppen verwalten. Außerdem erhalten Sie Zugriff auf andere Dienste wie z.B. Intune und Azure AD.
 
   Erstellen Sie z.B. in Microsoft 365 eine iOS-Gerätegruppe. Verwenden Sie dann Intune, um Richtlinien an die iOS-Gerätegruppe weiterzugeben, die sich auf iOS-Features konzentrieren, z. B. Zugriff auf den App Store, Verwendung von AirDrop, Sicherung in iCloud, Verwendung des Webfilters von Apple und mehr.
 
 - **Windows Defender** enthält viele Sicherheitsfeatures zum Schutz von Windows 10-Geräten. Wenn Sie z. B. Intune und Windows Defender zusammen verwenden, haben Sie die folgenden Möglichkeiten: 
 
-  - Aktivieren Sie [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10), um nach verdächtigen Aktivitäten in Dateien und Apps auf mobilen Geräten zu suchen. 
-  - Verwenden Sie [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection), um Sicherheitsverletzungen auf mobilen Geräten zu verhindern. Und helfen Sie, die Auswirkungen eines Sicherheitsverstoßes zu begrenzen, indem Sie einen Benutzer von Unternehmensressourcen ausschließen.
+  - Aktivieren Sie [Windows Defender SmartScreen](endpoint-protection-windows-10.md), um nach verdächtigen Aktivitäten in Dateien und Apps auf mobilen Geräten zu suchen. 
+  - Verwenden Sie [Microsoft Defender Advanced Threat Protection (ATP)](advanced-threat-protection.md), um Sicherheitsverletzungen auf mobilen Geräten zu verhindern. Und helfen Sie, die Auswirkungen eines Sicherheitsverstoßes zu begrenzen, indem Sie einen Benutzer von Unternehmensressourcen ausschließen.
 
-- **Bedingter Zugriff** ist ein Feature von Azure Active Directory, das gut in Intune integriert werden kann. Mithilfe des [bedingten Zugriffs](https://docs.microsoft.com/intune/conditional-access) können Sie sicherstellen, dass nur konforme Geräte auf E-Mail, SharePoint und andere Apps zugreifen dürfen. 
+- **Bedingter Zugriff** ist ein Feature von Azure Active Directory, das gut in Intune integriert werden kann. Mithilfe des [bedingten Zugriffs](conditional-access.md) können Sie sicherstellen, dass nur konforme Geräte auf E-Mail, SharePoint und andere Apps zugreifen dürfen. 
 
 ## <a name="choose-the-device-management-solution-thats-right-for-you"></a>Wählen Sie die Geräteverwaltungslösung aus, die für Sie geeignet ist
 
@@ -69,7 +69,7 @@ Es gibt mehrere Möglichkeiten, die Geräteverwaltung anzugehen. Zunächst könn
 
 Im zweiten Ansatz verwalten Sie Apps auf Geräten. Dieser Ansatz wird als **Verwaltung mobiler Anwendungen (Mobile Device Management, MAM)** bezeichnet. Benutzer können mit ihren privaten Geräten auf Organisationsressourcen zugreifen. Beim Öffnen einer App, wie E-Mail oder SharePoint, werden die Benutzer zur zusätzlichen Authentifizierung aufgefordert. Wenn ein Gerät einmal verloren geht oder gestohlen wird, können Sie alle Unternehmensdaten von dem Gerät entfernen. 
 
-Sie können auch eine Kombination aus [MDM und MAM](https://docs.microsoft.com/intune/byod-technology-decisions) verwenden.
+Sie können auch eine Kombination aus [MDM und MAM](byod-technology-decisions.md) verwenden.
 
 Wenn Sie Intune einrichten, können Sie Geräte auch ausschließlich im Azure-Portal verwalten oder dazu Intune und Microsoft 365 gemeinsam verwenden. [Migrating mobile device management to Intune in the Azure portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) (Migrieren der Verwaltung mobiler Geräte zu Intune im Azure-Portal) ist eine Fallstudie der Microsoft-IT. In dieser Fallstudie erfahren Sie, wie Microsoft IT einen modernen Ansatz zur Geräteverwaltung gewählt hat und welche Erkenntnisse daraus gewonnen wurden.
 
@@ -79,20 +79,20 @@ Das [Device Management Admin Center](https://devicemanagement.microsoft.com/) is
 
 Im Verwaltungs Center für die Geräteverwaltung können Sie folgende Aktionen ausführen:
 
-- [Registrieren von Geräten](https://docs.microsoft.com/intune/device-enrollment)
-- [Festlegen der Gerätekonformität](https://docs.microsoft.com/intune/device-compliance-get-started)
-- [Verwalten von Geräten](https://docs.microsoft.com/intune/device-management)
-- [Verwalten von Apps](https://docs.microsoft.com/intune/app-management)  
-- [iOS-E-Books](https://docs.microsoft.com/intune/vpp-ebooks-ios)  
-- [Installieren des Connectors für Exchange lokal](https://docs.microsoft.com/intune/exchange-connector-install)  
-- [Verwalten von Rollen](https://docs.microsoft.com/intune/role-based-access-control)  
+- [Registrieren von Geräten](device-enrollment.md)
+- [Festlegen der Gerätekonformität](device-compliance-get-started.md)
+- [Verwalten von Geräten](device-management.md)
+- [Verwalten von Apps](app-management.md)  
+- [iOS-E-Books](vpp-ebooks-ios.md)  
+- [Installieren des Connectors für Exchange lokal](exchange-connector-install.md)  
+- [Verwalten von Rollen](role-based-access-control.md)  
 - Verwalten von Softwareupdates
-  - [Verwalten von Windows 10-Updates](https://docs.microsoft.com/intune/windows-update-for-business-configure)  
-  - [Verwalten von iOS-Updates](https://docs.microsoft.com/intune/software-updates-ios)  
+  - [Verwalten von Windows 10-Updates](windows-update-for-business-configure.md)  
+  - [Verwalten von iOS-Updates](software-updates-ios.md)  
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [Verwalten von Benutzern](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Verwalten von Gruppen und Mitglieder](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)
-- [Problembehandlung](https://docs.microsoft.com/intune/help-desk-operators)
+- [Problembehandlung](help-desk-operators.md)
 
 ## <a name="next-step"></a>Nächster Schritt
 Wenn Sie bereit sind, in eine MDM- oder MAM-Lösung einzusteigen, führen Sie die verschiedenen Schritte durch, um Intune einzurichten, Geräte zu registrieren und Richtlinien zu erstellen. [Verwaltung mobiler Geräte für Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure) ist ebenfalls eine gute Ressource.

@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d63ecdb23b107d844c37d7a805247092116618e1
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 0ec52069c4c53c464cfe5a1e17718ba6725fd0b5
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022730"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167433"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Gerät verschlüsselt, aber apps sagen andernfalls
 
@@ -48,16 +48,17 @@ Dieser Abschnitt gilt nur für die Unternehmensportal-app. Falls Ihr Gerät Ihne
 
 ## <a name="specific-manufacturer-issues"></a>Spezifische Herstellerprobleme
 
-Einige Android-Geräte mit Version 7.0 und höher verschlüsseln Daten so, dass sie mit gewissen Android-Plattformstandards nicht kompatibel sind. Mit diesen Verschlüsselungsmethoden werden Geräteinformationen gefährdet. Dies hat zur Folge, dass diese Geräte nicht unterstützt werden. 
+Einige Android-Geräte mit Version 7.0 und höher verschlüsseln Daten so, dass sie mit gewissen Android-Plattformstandards nicht kompatibel sind. Mit diesen Verschlüsselungsmethoden werden Geräteinformationen gefährdet. Dies hat zur Folge, dass diese Geräte nicht unterstützt werden.
 
-Eine nicht vollständige Liste der unterstützten Android-Geräte finden Sie im Artikel [Unterstützte Betriebssysteme und Browser in InTune](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices). Wenn Ihr Gerät nicht aufgeführt ist, wenden Sie sich an den Gerätehersteller, oder wenden Sie sich an den Support. 
+Eine nicht vollständige Liste der unterstützten Android-Geräte finden Sie im Artikel [Unterstützte Betriebssysteme und Browser in InTune](https://docs.microsoft.com/intune/supported-devices-browsers.md#supported-samsung-knox-standard-devices). Wenn Ihr Gerät nicht aufgeführt ist, wenden Sie sich an den Gerätehersteller, oder wenden Sie sich an den Support.
 
 > [!Note]
-> Microsoft arbeitet mit Herstellern zusammen, um Probleme zu beheben, die wir beim Testen finden oder die Benutzer uns melden. Dieser Artikel wird aktualisiert, sobald neue Informationen verfügbar sind. 
+> Microsoft arbeitet mit Herstellern zusammen, um Probleme zu beheben, die wir beim Testen finden oder die Benutzer uns melden. Dieser Artikel wird aktualisiert, sobald neue Informationen verfügbar sind.
 
-## <a name="update-devices"></a>Aktualisieren von Geräten   
+## <a name="update-devices"></a>Aktualisieren von Geräten
 
 Wenn Sie Ihr Gerät nicht auf die neueste Version von Android aktualisiert haben, besuchen Sie die APP- **Einstellungen** Ihres Geräts, und wählen Sie **Aktualisieren**aus.  
 
-## <a name="next-steps"></a>Nächste Schritte   
+## <a name="next-steps"></a>Nächste Schritte
+
 Benötigen Sie weitere Unterstützung? Wenden Sie sich an den Support Ihres Unternehmens (suchen Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-Team</a>.  

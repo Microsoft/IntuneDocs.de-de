@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e18279fd9cca88de5f04c57a8bcccce1c211c6de
-ms.sourcegitcommit: 4f3fcc6dcbfe2c4e0651d54a130907a25a4ff66e
+ms.openlocfilehash: 4494d5f75336f7152668cfa1bb6fa1cd1a94305c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69894320"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167866"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Erstellen eines Intune-Berichts aus dem OData-Feed mit Power BI
 
@@ -122,4 +122,4 @@ Nun verfügen Sie über einen interaktiven Filter, der zum Wechseln zwischen unt
 ## <a name="next-steps"></a>Nächste Schritte
 
 - Erfahren Sie mehr über das [Erstellen und Verwalten von Beziehungen](https://powerbi.microsoft.com/documentation/powerbi-desktop-create-and-manage-relationships/) in Power BI Desktop in der Power BI-Dokumentation.
-- Lesen Sie den Artikel [Datenmodell von Intune Data Warehouse](https://docs.microsoft.com/intune/reports-ref-data-model).
+- Lesen Sie den Artikel [Datenmodell von Intune Data Warehouse](reports-ref-data-model.md).

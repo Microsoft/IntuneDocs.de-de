@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1cf8f7753a92ad45a68f976359560ef6da2d1cec
-ms.sourcegitcommit: 1b7ee2164ac9490df4efa83c5479344622c181b5
+ms.openlocfilehash: a5e1ea8a0f8ea054b2eb75e1c98e60f184b0a45c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "67648724"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166761"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Problembehandlung der Verwaltung von mobilen Geräten
 
@@ -90,7 +90,7 @@ Fehlermeldung oder Dialogfeld | Ursache | Wartung |
 **Gerät nicht kompatibel**: Diese App kann nicht verwendet werden, weil Sie ein Gerät mit Jailbreak verwenden. Wenden Sie sich an Ihren IT-Administrator, um Unterstützung zu erhalten. | Intune hat festgestellt, dass der Benutzer ein Gerät mit Jailbreak verwendet. | Setzen Sie das Gerät auf die Werkseinstellungen zurück. Führen Sie [diese Anweisungen](https://support.apple.com/HT201274) über die Apple-Support-Website aus.
 **Internetverbindung erforderlich**: Sie benötigen eine Internetverbindung, um zu überprüfen, ob Sie diese App verwenden dürfen. | Das Gerät ist nicht mit dem Internet verbunden. | Verbinden Sie das Gerät mit einem WLAN oder Datennetzwerk.
 **Unbekannter Fehler**: Versuchen Sie, die App neu zu starten. Wenn das Problem weiterhin besteht, wenden Sie sich an Ihren IT-Administrator, um Hilfe zu erhalten. | Ein unbekannter Fehler ist aufgetreten. | Warten Sie eine gewisse Zeit, und versuchen Sie es erneut. Wenn der Fehler weiterhin auftritt, erstellen Sie ein [Supportticket](get-support.md#create-an-online-support-ticket) mit Intune.
-**Zugriff auf Daten Ihrer Organisation**: Das angegebene Geschäfts-, Schul oder Unikonto hat keinen Zugriff auf diese App. Sie müssen sich möglicherweise mit einem anderen Konto anmelden. Wenden Sie sich an Ihren IT-Administrator, um Unterstützung zu erhalten. | Intune erkennt, dass der Benutzer versucht hat, sich mit einem anderen als dem bei MAM registrierten Geschäfts-, Schul- oder Unikonto für das Gerät anzumelden. Pro Gerät kann von MAM jeweils nur ein Geschäfts-, Schul- oder Unikonto verwaltet werden. | Fordern Sie den Benutzer auf, sich mit dem Konto anzumelden, mit dessen Benutzername die Anmeldeseite zuvor aufgefüllt wurde. Möglicherweise müssen Sie [die Benutzer-UPN-Einstellung für InTune konfigurieren](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). <br> <br> Alternativ kann der Benutzer sich mit dem neuen Geschäfts-, Schul- oder Unikonto anmelden und das vorhandene, bei MAM registrierte Konto entfernen.
+**Zugriff auf Daten Ihrer Organisation**: Das angegebene Geschäfts-, Schul oder Unikonto hat keinen Zugriff auf diese App. Sie müssen sich möglicherweise mit einem anderen Konto anmelden. Wenden Sie sich an Ihren IT-Administrator, um Unterstützung zu erhalten. | Intune erkennt, dass der Benutzer versucht hat, sich mit einem anderen als dem bei MAM registrierten Geschäfts-, Schul- oder Unikonto für das Gerät anzumelden. Pro Gerät kann von MAM jeweils nur ein Geschäfts-, Schul- oder Unikonto verwaltet werden. | Fordern Sie den Benutzer auf, sich mit dem Konto anzumelden, mit dessen Benutzername die Anmeldeseite zuvor aufgefüllt wurde. Möglicherweise müssen Sie [die Benutzer-UPN-Einstellung für InTune konfigurieren](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm). <br> <br> Alternativ kann der Benutzer sich mit dem neuen Geschäfts-, Schul- oder Unikonto anmelden und das vorhandene, bei MAM registrierte Konto entfernen.
 **Verbindungsproblem**: Es ist ein unerwartetes Verbindungsproblem aufgetreten. Überprüfen Sie Ihre Verbindung, und versuchen Sie es erneut.  |  Unerwarteter Fehler. | Warten Sie eine gewisse Zeit, und versuchen Sie es erneut. Wenn der Fehler weiterhin auftritt, erstellen Sie ein [Supportticket](get-support.md#create-an-online-support-ticket) mit Intune.
 **Warnung**: Diese App kann nicht mehr verwendet werden. Wenden Sie sich an Ihren IT-Administrator, um weitere Informationen zu erhalten. | Fehler beim Überprüfen des App-Zertifikats. | Stellen Sie sicher, dass die App-Version auf dem neuesten Stand ist. <br><br> Installieren Sie die App neu.
 **Fehler**: Diese App hat ein Problem festgestellt und muss geschlossen werden. Wenn dieser Fehler weiterhin auftritt, wenden Sie sich an Ihren IT-Administrator. | Fehler beim Lesen der PIN der MAM-App aus dem Apple iOS-Schlüsselbund. | Starten Sie das Gerät neu. Stellen Sie sicher, dass die App-Version auf dem neuesten Stand ist. <br><br> Installieren Sie die App neu.

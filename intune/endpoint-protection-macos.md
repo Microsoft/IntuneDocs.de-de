@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/02/2019
+ms.date: 09/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97674627ac1894aa7fcf3f6a6550677b89e1a150
-ms.sourcegitcommit: 3f0cc80c5dbb4d04519c5aa98eae8426dad8cb30
+ms.openlocfilehash: 80b904893f118bac1f4d0d79da0cd10498b9f2ed
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70158026"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71162866"
 ---
 # <a name="macos-endpoint-protection-settings-in-intune"></a>Endpoint Protection-Einstellungen in Intune unter MacOS  
 
@@ -93,7 +93,7 @@ Weitere Informationen zu den Einstellungen von Apple-flevault finden Sie unter [
   **Standardeinstellung:** Nicht konfiguriert  
 
   - **Wiederherstellungs Schlüsseltyp**  
-    *Persönlichen Schlüssel* für Geräte werden Wiederherstellungsschlüssel erstellt. Konfigurieren Sie die folgenden Einstellungen für den persönlichen Schlüssel.  
+    Für Geräte werden *Schlüssel Wiederherstellungs* Schlüssel erstellt. Konfigurieren Sie die folgenden Einstellungen für den persönlichen Schlüssel.  
 
     - **Speicherort des persönlichen Wiederherstellungs Schlüssels** : Geben Sie eine kurze Nachricht an den Benutzer an, die erläutert, wie und wo Sie Ihren persönlichen Wiederherstellungs Schlüssel abrufen können. Dieser Text wird in die Meldung eingefügt, die dem Benutzer auf dem Anmeldebildschirm angezeigt wird, wenn er zur Eingabe des persönlichen Wiederherstellungs Schlüssels aufgefordert wird, wenn ein Kennwort vergessen wird.  
       
@@ -105,13 +105,6 @@ Weitere Informationen zu den Einstellungen von Apple-flevault finden Sie unter [
     - **Deaktivieren** : Deaktivieren Sie die Eingabeaufforderung bei der Abmeldung.
 
     **Standardeinstellung:** Nicht konfiguriert  
-
-     > [!IMPORTANT]  
-     > Es gibt ein bekanntes Problem, wenn die Einstellung **Aufforderung bei Abmeldung deaktivieren** auf *Deaktivieren* festgelegt ist. Bei Festlegung auf *Deaktivieren* muss die Einstellung für **Zulässige Anzahl von Umgehungen** auf einen Wert und nicht auf *Nicht konfiguriert* festgelegt werden. Wenn *Nicht konfiguriert* ausgewählt ist, tritt mit dem Profil auf dem Gerät ein Fehler auf. In diesem Szenario meldet das Gerät als **Profilstatuszusammenfassung** einen **Fehler** ohne weitere Details.
-     > 
-     > Wenn die für **Aufforderung bei Abmeldung deaktivieren** *Nicht konfiguriert* ausgewählt ist, kann für **Zulässige Anzahl von Umgehungen** *Nicht konfiguriert* oder ein Wert festgelegt werden.  
-     > 
-     > Dieses Problem wird in einem zukünftigen Update behoben. 
 
   - **Gibt an, wie oft umgangen werden darf.**  
   Legen Sie fest, wie oft ein Benutzer Aufforderungen zum Aktivieren von "flevault" ignorieren kann, bevor "flevault" für die Anmeldung durch den Benutzer erforderlich ist.  

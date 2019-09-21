@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 052190185159dfdee4adee94d4c43c72ce6f41d4
-ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
+ms.openlocfilehash: ac74cc547d13e92b87a8e148845ff1bc7be8efe4
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046323"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167000"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>Wo ist meine Intune-Funktion in Azure jetzt?
 Wir hatten die Chance, einige Aufgaben logischer zu organisieren, als wir Intune in das Azure-Portal umgezogen haben. Jedoch kommt jede Verbesserung mit der neuen Aufgabe, die neue Organisation kennenzulernen. Dieses Referenzhandbuch wurde für diejenigen von Ihnen erstellt, die mit Intune im klassischen Portal bestens vertraut sind und sich nun fragen, wie Aufgaben in Intune im Azure-Portal erledigt werden. Wenn dieser Artikel eine Funktion, die Sie suchen, nicht behandelt, hinterlassen Sie einen Kommentar am Ende des Artikels, damit wir ihn aktualisieren können.
@@ -77,7 +77,7 @@ Wenn Sie die Richtlinien für den bedingten Zugriff über das Azure-Portal anzei
 ## <a name="where-did-my-compliance-policies-go"></a>Wo finde ich meine Konformitätsrichtlinien?
 Nach der Migration Ihres Mandanten zum Azure-Portal werden die Konformitätsrichtlinien weiterhin angewendet. Jedoch können Sie sie nicht über Intune im Azure-Portal anzeigen oder bearbeiten.
 
-Wenn Sie die Konformitätsrichtlinien über das Azure-Portal anzeigen oder bearbeiten möchten, müssen Sie die alten Richtlinien aus dem klassischen Portal entfernen. Anschließend müssen Sie sie im Azure-Portal neu erstellen. Weitere Informationen über Gerätekonformitätsrichtlinien finden Sie unter [Erste Schritte bei der Gerätekonformität in Intune](https://docs.microsoft.com/intune/device-compliance-get-started). 
+Wenn Sie die Konformitätsrichtlinien über das Azure-Portal anzeigen oder bearbeiten möchten, müssen Sie die alten Richtlinien aus dem klassischen Portal entfernen. Anschließend müssen Sie sie im Azure-Portal neu erstellen. Weitere Informationen über Gerätekonformitätsrichtlinien finden Sie unter [Erste Schritte bei der Gerätekonformität in Intune](device-compliance-get-started.md). 
 
 ## <a name="where-did-apple-dep-go"></a>Wo ist Apple-DEP jetzt?
 Im klassischen Portal konnten Sie Intune so einrichten, dass es im Programm zur Geräteregistrierung von Apple integriert wurde, und Sie konnten die Synchronisierung mit dem Apple-Dienst manuell anfordern:

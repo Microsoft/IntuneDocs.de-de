@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 09/12/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9333cda33142b9a0a4e0995b4bafe5365f7cb69f
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c15f2434f67ec08baf04883da6f9525b5f803823
+ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545868"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71099815"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>Was geschieht, wenn Sie die Unternehmensportal-App installieren und Ihr iOS-Gerät bei Intune registrieren?
 
@@ -37,7 +37,10 @@ Wenn Sie die Unternehmensportal-App installieren und Ihr iOS-Gerät bei Intune r
 
 - Automatisches Einrichten Ihres Unternehmens-E-Mail-Kontos
 
-Wenn Sie Ihr Gerät bei Intune registrieren, gestatten Sie damit dem Support Ihres Unternehmens, Ihr Gerät zu verwalten, damit die Unternehmensdaten auf dem Gerät geschützt werden.
+> [!NOTE]
+> Die von unserem Dienst gesammelten Daten werden keinesfalls an Dritte verkauft.  
+
+Wenn Sie Ihr Gerät bei Intune registrieren, gestatten Sie damit dem Support Ihres Unternehmens, Ihr Gerät zu verwalten, damit die Unternehmensdaten auf dem Gerät geschützt werden.  
 
 Wenn Ihr Gerät registriert ist, kann der Support Ihres Unternehmens die folgenden Aufgaben erledigen:
 
@@ -64,5 +67,7 @@ Wenn Ihr Gerät registriert ist, kann der Support Ihres Unternehmens die folgend
 - Aktivieren oder Deaktivieren von Sprachroaming auf dem Gerät. Wenn Sprachroaming zulässig ist, können Roaminggebühren anfallen.
 
 - Aktivieren oder Deaktivieren einer automatischen Synchronisierung von Dateien im Roamingmodus auf dem Gerät. Wenn die automatische Synchronisierung von Dateien zulässig ist, können Roaminggebühren anfallen.
+
+
 
 Wenn Sie Fragen haben, wenden Sie sich an den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).
