@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9314617640d0bfd7f3a7b0cd0ba572e99ede53f9
-ms.sourcegitcommit: cd451ac487c7ace18ac9722a28b9facfba41f6d3
+ms.openlocfilehash: 68ffdcccdd3588ac5127e6c54426acfdcad17d34
+ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67298398"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71071702"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Richtlinien und Profile zur Problembehandlung in Intune
 
@@ -30,12 +30,12 @@ In Microsoft Intune sind Features zur Problembehandlung integriert. Verwenden Si
 
 In diesem Artikel werden häufig verwendete Methoden zur Problembehandlung aufgeführt, zudem werden einige der Probleme beschrieben, die auftreten können.
 
-## <a name="check-tenant-status"></a>Überprüfen des Status eines Mandanten
-Überprüfen Sie die [Mandantenstatus](tenant-status.md) und bestätigen Sie das Abonnement ist aktiv. Sie können auch anzeigen, Details zu aktiven Incidents und Empfehlungen, die die Bereitstellung von Richtlinien oder Profilen beeinträchtigen können.
+## <a name="check-tenant-status"></a>Mandanten Status überprüfen
+Überprüfen Sie den Mandanten [Status](tenant-status.md) , und bestätigen Sie das aktive Abonnement. Sie können auch Details zu aktiven Vorfällen und Empfehlungen anzeigen, die sich auf Ihre Richtlinie oder Profil Bereitstellung auswirken können.
 
 ## <a name="use-built-in-troubleshooting"></a>Verwenden der integrierten Problembehandlung
 
-1. In [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)Option **Problembehandlung**:
+1. **Wählen Sie**in [InTune](https://go.microsoft.com/fwlink/?linkid=2090973)die Option Problembehandlung:
 
     ![„Hilfe und Support“ in Intune, die Option „Problembehandlung“ ist ausgewählt](./media/help-and-support-troubleshoot.png)
 
@@ -118,10 +118,10 @@ In diesem Artikel werden häufig verwendete Methoden zur Problembehandlung aufge
 
 ## <a name="policy-troubleshooting-resources"></a>Richtlinie zur Problembehandlung
 
-- [Problembehandlung bei iOS oder Android-Richtlinien nicht auf Geräte angewendet](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (öffnet eine andere Microsoft-Website)
-- [Problembehandlung für Windows 10-Intune-Richtlinie bei](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (öffnet einen Blog)
-- [Problembehandlung bei benutzerdefinierten CSP-Einstellungen für Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (öffnet eine andere Microsoft-Website)
-- [Windows 10-Gruppenrichtlinie und Intune-MDM Richtlinie](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (öffnet eine andere Microsoft-Website)
+- [Problembehandlung bei IOS-oder Android-Richtlinien, die auf Geräte](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-tip-Troubleshooting-iOS-or-Android-policies-not-applying/ba-p/280154) (öffnet eine andere Microsoft-Website)
+- [Problembehandlung bei Windows 10 InTune-Richtlinien Fehlern](https://blogs.technet.microsoft.com/configmgrdogs/2018/08/09/troubleshooting-windows-10-intune-policy-failures/) (öffnet einen Blog)
+- Behandeln [von Problemen mit benutzerdefinierten CSP-Einstellungen für Windows 10](https://support.microsoft.com/en-us/help/4055338/troubleshoot-csp-setting-windows-10-computer-intune) (öffnet eine andere Microsoft-Website)
+- [Windows 10 Gruppenrichtlinie vs InTune-MDM-Richtlinie](https://blogs.technet.microsoft.com/cbernier/2018/04/02/windows-10-group-policy-vs-intune-mdm-policy-who-wins/) (öffnet eine andere Microsoft-Website)
 
 ## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Warnung: Fehler beim Speichern von Zugriffsregeln in Exchange
 
@@ -135,7 +135,7 @@ Unter [Behandeln von Problemen mit dem lokalen Intune Exchange Connector](troubl
 
 Windows Phone-Geräte gestatten keine Verringerung der Sicherheitsstufe in Sicherheitsrichtlinien, die mittels MDM oder EAS festgelegt wurden, nachdem diese festgelegt wurden. Angenommen, Sie legen ein **Kennwort mit Mindestanzahl von Zeichen** auf 8 fest und versuchen dann, diesen Wert auf 4 zu verringern. In diesem Fall wird die restriktivere Richtlinie auf das Gerät angewendet.
 
-Windows 10-Geräte dürfen nicht von Sicherheitsrichtlinien entfernen, wenn Sie die Richtlinie (Stop-Bereitstellung) die Zuweisung aufheben. Sie müssen möglicherweise behalten die Richtlinie zugewiesen, und ändern Sie dann die Sicherheitseinstellungen auf die Standardwerte zurück.
+Windows 10-Geräte entfernen Sicherheitsrichtlinien nicht, wenn Sie die Zuweisung der Richtlinie aufheben (Bereitstellung beenden). Möglicherweise müssen Sie die Richtlinie zugewiesen lassen und dann die Sicherheitseinstellungen auf die Standardwerte zurücksetzen.
 
 Abhängig von der Geräteplattform müssen Sie, wenn Sie die Richtlinie auf einen niedrigeren Sicherheitswert ändern möchten, die Sicherheitsrichtlinien möglicherweise zurücksetzen.
 
