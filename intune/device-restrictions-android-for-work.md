@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 09/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bd537315a09c0c7cf338ac0892fc4ae3d1dc8fc
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 53a9c3e8b80f611bc9e293ba7e07c1aece0cfc58
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550186"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163037"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune
 
@@ -109,7 +109,7 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
 
     Sie können auch andere [Android-Apps](apps-add-android-for-work.md) und [Web-Apps](web-app.md) hinzufügen, die von Ihrer Organisation für das Gerät erstellt wurden. Achten Sie darauf, [die App der Gerätegruppe zuzuweisen, die für Ihre dedizierten Geräte erstellt wurde](apps-deploy.md).
 
-  - **Virtuelle Start**Schaltfläche: eine weiche Taste, die Benutzer an den verwalteten Startbildschirm zurückgibt, damit Benutzer zwischen apps wechseln können. Folgende Optionen sind verfügbar:
+  - **Virtuelle Start Schaltfläche**: eine weiche Taste, die Benutzer an den verwalteten Startbildschirm zurückgibt, damit Benutzer zwischen apps wechseln können. Folgende Optionen sind verfügbar:
 
     - **Nicht konfiguriert** (Standard): eine Start Schaltfläche wird nicht angezeigt. Benutzer müssen die Schaltfläche "zurück" verwenden, um zwischen apps zu wechseln.
     - **Schwenken**: eine Start Schaltfläche wird angezeigt, wenn ein Benutzer auf dem Gerät aufrichtet.
@@ -158,7 +158,7 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
       Wenn Sie keine URL eingeben, wird das Standard Image des Geräts verwendet, wenn ein Standard Image vorhanden ist.
 
     - **Anzahl von Sekunden, die das Gerät vor dem Ausschalten des Bildschirms anzeigt**: Wählen Sie aus, wie lange das Gerät den Bildschirmschoner anzeigt. Geben Sie einen Wert zwischen 0-9999999 Sekunden ein. Der Standardwert beträgt `0` Sekunden. Wenn das Feld leer gelassen oder auf 0 (`0`null) festgelegt ist, wird der Bildschirmschoner aktiv, bis ein Benutzer mit dem Gerät interagiert.
-    - **Anzahl der Sekunden, die das Gerät inaktiv ist, bevor der Bildschirmschoner angezeigt wird**: Wählen Sie aus, wie lange das Gerät im Leerlauf ist, bevor der Bildschirm Geben Sie einen Wert zwischen 1-9999999 Sekunden ein. Der Standardwert beträgt `30` Sekunden. Geben Sie eine Zahl ein, die größer als`0`0 (null) ist.
+    - **Anzahl der Sekunden, die das Gerät inaktiv ist, bevor der Bildschirmschoner angezeigt wird**: Wählen Sie aus, wie lange das Gerät im Leerlauf ist, bevor der Bildschirm Geben Sie einen Wert zwischen 1-9999999 Sekunden ein. Der Standardwert beträgt `30` Sekunden. Geben Sie eine Zahl ein, die größer als null (`0`) ist.
     - **Medien vor dem Starten des Bildschirmschoners erkennen**: durch **aktivieren** (Standard) wird der Bildschirmschoner nicht angezeigt, wenn auf dem Gerät Audiodaten oder Videos abgespielt werden. **Nicht konfiguriert** zeigt den Bildschirmschoner an, selbst wenn Audiodaten oder Videos abgespielt werden.
 
 ### <a name="device-password-settings"></a>Gerätekennworteinstellungen
@@ -200,6 +200,9 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
 - **Neue Benutzer hinzufügen:** Wenn Sie **Blockieren** festlegen, können Benutzer keine neuen Benutzer hinzufügen. Jeder Benutzer hat einen persönlichen Bereich auf dem Gerät für benutzerdefinierte Startseiten, Konten, Apps und Einstellungen. **Nicht konfiguriert** ermöglicht Benutzern, dem Gerät andere Benutzer hinzuzufügen.
 - **Entfernen von Benutzern:** Wenn Sie **Blockieren** festlegen, können Benutzer keine Benutzer entfernen. **Nicht konfiguriert** ermöglicht Benutzern, andere Benutzer vom Gerät zu entfernen.
 - **Kontoänderungen:** Wenn Sie **Blockieren** festlegen, können Benutzer Konten nicht bearbeiten. **Nicht konfiguriert** ermöglicht Benutzern, Benutzerkonten auf dem Gerät zu aktualisieren.
+
+  > [!NOTE]
+  > Diese Einstellung wird auf Geräten mit Geräte Besitzern (vollständig verwaltet) nicht berücksichtigt. Wenn Sie diese Einstellung konfigurieren, wird die Einstellung ignoriert und hat keine Auswirkungen.
 
 ### <a name="applications"></a>Applications
 
@@ -270,6 +273,10 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
 - **Arbeitskontakte vom persönlichen Profil aus suchen**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer in Apps im persönlichen Profil Arbeitskontakte suchen. **Nicht erforderlich** ermöglicht das Suchen nach Arbeitskontakten im persönlichen Profil.
 
 - **Kamera**: Wählen Sie **Blockieren** aus, um den Zugriff auf die Kamera des Geräts im Arbeitsprofil zu verhindern. Die Kamera im persönlichen Profil ist von dieser Einstellung nicht betroffen. **Nicht erforderlich** ermöglicht den Zugriff auf die Kamera im Arbeitsprofil.
+
+- **Widgets von Arbeitsprofil-apps zulassen**: **aktivieren** ermöglicht Endbenutzern das Platzieren von Widgets, die von apps auf dem Startbildschirm verfügbar gemacht werden. Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird dieses Feature deaktiviert.
+
+  Beispielsweise wird Outlook in den Arbeits Profilen Ihrer Benutzer installiert. Wenn diese Option auf **aktivieren**festgelegt ist, können Benutzer das Agenda-Widget auf dem Startbildschirm des Geräts platzieren.
 
 #### <a name="work-profile-password"></a>Arbeitsprofilkennwort
 

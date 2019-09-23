@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90865b8a8881ab85089fb379a8398e276574b771
-ms.sourcegitcommit: b78793ccbef2a644a759ca3110ea73e7ed6ceb8f
+ms.openlocfilehash: 2fb82b02057e1e028755da16a05755b0b8ddb93a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550027"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163800"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Verwenden der rollenbasierten Zugriffssteuerung und Bereichsmarkierungen für verteilte IT
 
@@ -35,10 +35,10 @@ Angenommen, ein Administrator der Bezirksdirektion von Seattle hat die Rolle „
 3. Fügen Sie die Seattle-Bereichsmarkierung Richtlinien und Profilen hinzu, auf die Administratoren in Mitglieder (Gruppen) zugreifen können sollen.
 4. Fügen Sie die Seattle-Bereichsmarkierung zu Geräten hinzu, die für Administratoren in Mitglieder (Gruppen) sichtbar sein sollen. 
 
-## <a name="default-scope-tag"></a>Standard Bereichs Kennzeichen
+## <a name="default-scope-tag"></a>Standardbereichsmarkierung
 Das Standard Bereichs Kennzeichen wird automatisch allen nicht markierten Objekten hinzugefügt, die Bereichs Tags unterstützen.
 
-Die Standardfunktion für das Bereichs Kennzeichen ähnelt der Funktion Sicherheitsbereiche in System Center Configuration Manager. 
+Das Feature Standardbereichsmarkierung ähnelt dem Feature für Sicherheitsbereiche in System Center Configuration Manager. 
 
 ## <a name="to-create-a-scope-tag"></a>So erstellen Sie eine Bereichsmarkierung
 
@@ -101,7 +101,6 @@ Bei der Arbeit mit Bereichsmarkierungen sollten Sie Folgendes beachten:
     - Gerätekategorien
     - Registrierungseinschränkungen
     - Corp-Geräte Bezeichner
-    - Geschäftsbedingungen
     - Autopilot-Geräte
     - Geräte Konformitäts Orte
     - JAMF-Geräte

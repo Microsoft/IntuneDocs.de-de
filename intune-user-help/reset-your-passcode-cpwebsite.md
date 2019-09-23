@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,21 +18,20 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f2cd69725ad10c08f7c137f4444cce831160dd88
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 690fb81350c0c264677c6c75b8942e9cdcd4e8f0
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546801"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163359"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>So setzen Sie Ihre Kennung über die Unternehmensportalwebsite zurück
 
-Wenn Sie die PIN oder das Kennwort verloren haben, können Sie die PIN bzw. das Kennwort über die [Unternehmensportalwebsite](https://portal.manage.microsoft.com) zurücksetzen.  
+Wenn Sie die PIN oder das Kennwort verloren haben, können Sie die PIN bzw. das Kennwort über die [Unternehmensportalwebsite](https://portal.manage.microsoft.com) zurücksetzen. 
 
-Wenn Sie ein firmeneigenes Gerät verwenden, wird Ihnen die Option zum Zurücksetzen der Gerätekennung möglicherweise nicht angezeigt. Wenden Sie sich in diesem Fall an den Support Ihres Unternehmens, um die Kennung zurücksetzen zu lassen.
+Die Option "Kennung zurücksetzen" wird möglicherweise nicht für ein vom Unternehmen registriertes Gerät angezeigt. Wenden Sie sich in diesem Fall an den Support Ihres Unternehmens, um ihn für Sie zurückzusetzen.  
 
-   > [!NOTE]
-   > Für Geräte mit Android 7.0 und höher kann der Passcode nicht zurückgesetzt werden. Wenn Sie den Passcode vergessen, müssen Sie das Gerät auf die Werkseinstellungen zurücksetzen. 
+Die zurück setzung der Kennung ist für Geräte mit Android 7,0 und höher nicht verfügbar. Wenn Sie die Kennung auf einem dieser Geräte vergessen, müssen Sie Sie auf die Werkseinstellungen zurücksetzen.  
 
 ## <a name="reset-your-passcode"></a>Zurücksetzen der Kennung
 
@@ -40,15 +39,15 @@ Wenn Sie ein firmeneigenes Gerät verwenden, wird Ihnen die Option zum Zurückse
 
 2. Wählen Sie das Gerät aus, für das die Kennung zurückgesetzt werden muss.  
 
-    ![Ein Screenshot der Seite „Geräte“ mit zwei Kacheln, auf denen nicht identifizierte Geräte mit Standardnamen angezeigt werden. Unter den Geräten befindet sich ein graues Banner, durch das Benutzer dazu aufgefordert werden, das verwendete Gerät zu identifizieren oder ein neues hinzuzufügen.](./media/rename-reset-device-step2-1808.png) 
+    ![Ein Screenshot der Seite „Geräte“ mit zwei Kacheln, auf denen nicht identifizierte Geräte mit Standardnamen angezeigt werden. Unter den Geräten befindet sich ein graues Banner, das Benutzer dazu auffordert, das verwendete Gerät zu identifizieren oder ein neues hinzuzufügen.](./media/rename-reset-device-step2-1808.png) 
 
 3. Wählen Sie **Kennung zurücksetzen** aus. Wenn die Option zum Zurücksetzen der Kennung oben auf Ihrer Seite nicht sichtbar ist, wählen Sie **Mehr (....)**  > **Kennung zurücksetzen** aus.   
 
    ![Seite mit Gerätedetails für ein ausgewähltes Gerät auf der Unternehmensportalwebsite mit einer Liste der Links oben auf der Seite zu „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/rename-reset-device-1808.png)   
 
-    ![Vergrößerte Ansicht des Symbols für weitere Optionen, das durch einen roten Pfeil markiert ist.](./media/rename-reset-device-step3-more-1808.png)  
+    ![Screenshot des Symbols für weitere Optionen, das durch einen roten Pfeil markiert ist.](./media/rename-reset-device-step3-more-1808.png)  
 
-4. Klicken Sie bei entsprechender Aufforderung auf **Abmelden**. Wenn Sie erneut aufgefordert werden, melden Sie sich wieder an. Sie müssen sich innerhalb von fünf Minuten wieder auf der Unternehmensportalwebsite anmelden, da das Unternehmensportal sonst die Gerätekennung nicht zurücksetzen wird.  
+4. Klicken Sie bei entsprechender Aufforderung auf **Abmelden**. Wenn Sie erneut aufgefordert werden, melden Sie sich wieder an. Melden Sie sich innerhalb von fünf Minuten wieder auf der Unternehmensportalwebsite an, da das Unternehmensportal sonst die Gerätekennung nicht zurücksetzen wird.  
 
    > [!NOTE]
    > Melden Sie sich dann erneut an, um Ihre Identität zu bestätigen. Dies dient dazu, böswillige Versuche zu verhindern, die Gerätekennung zurückzusetzen.
@@ -76,7 +75,7 @@ In diesem Abschnitt werden das Zurücksetzen der Kennung und das Verhalten tempo
 
 **Android**: Entfernt die vorhandene Kennung und erstellt eine temporäre Kennung aus Buchstaben und Zahlen.
 
-**iOS**: Entfernt die aktuelle Kennung und erstellt keine neue temporäre Kennung. Wenn Sie den Touch ID-Fingerabdruckscanner verwenden, um Ihr Gerät zu öffnen oder Einkäufe zu tätigen, müssen Sie ihn erneut einrichten.  
+**iOS**: Entfernt die aktuelle Kennung und erstellt keine neue temporäre Kennung. Wenn Sie das Gerät mit der Fingereingabe-ID öffnen oder Einkäufe tätigen, müssen Sie es erneut einrichten.  
 
 **Windows 10 Mobile**: Entfernt die vorhandene Kennung und erstellt eine temporäre Kennung aus Buchstaben und Zahlen. Wenn diese eingerichtet ist, funktioniert die Gesichtserkennung von Windows Hello auch weiterhin mit dem Gerät.
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,38 +14,40 @@ ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: jieyang
+ms.reviewer: coferro
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6880cd679aa88896ff78a350e3b43f4568052918
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e2a0c408868297375ea39e2c09d70740dc316864
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55833955"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163305"
 ---
-# <a name="reset-your-device-from-the-company-portal-website"></a>Zurücksetzen Ihres Geräts über die Unternehmensportalwebsite
+# <a name="reset-device-from-company-portal-website"></a>Gerät von Unternehmensportal Website zurücksetzen
 
-In diesem Artikel erfahren Sie, wie Sie ein verwendetes, verlorenes oder gestohlenes Gerät über die Unternehmensportal-Website auf die Werkseinstellungen zurücksetzen.  
+Zurücksetzen eines verwendeten, verlorenen oder gestohlenen Geräts auf die Werkseinstellungen über die Unternehmensportal-Website.  
 
-Nach dem Zurücksetzen wird das Gerät nicht mehr im Unternehmensportal angezeigt. Vorhandene Apps und Dateien werden gelöscht, und das Gerät wird auf die Werkseinstellungen zurückgesetzt.
+Nach dem Zurücksetzen wird das Gerät nicht mehr im Unternehmensportal angezeigt. Vorhandene Apps und Dateien werden gelöscht, und das Gerät wird auf die Werkseinstellungen zurückgesetzt. 
+
+Das Zurücksetzen des Geräts im Unternehmensportal ist für alle IOS-Geräte nicht verfügbar. Wenn Sie ein IT-Supportmitarbeiter sind und mehr über das Zurücksetzen des Geräts und dessen Beschränkungen erfahren möchten, finden Sie weitere Informationen unter [Entfernen von Geräten mithilfe von zurücksetzen, außer Kraft setzen oder manuelles Aufheben der Registrierung des Geräts](https://docs.microsoft.com/intune/devices-wipe).  
 
 > [!Note]
-> Sie können die folgenden Schritte auch auf einem anderen registrieren Gerät ausführen. Dazu müssen Sie die Unternehmensportal-App auf diesem Gerät öffnen und ähnliche Schritte zum Abschließen der Zurücksetzung durchführen.  
+> Sie können diese Schritte auch auf einem anderen registrieren Gerät ausführen. Öffnen Sie die APP Unternehmensportal, und führen Sie die Schritte für eine ähnliche zurück Setzung aus. 
 
 1. Öffnen Sie die Unternehmensportalwebsite, und wählen Sie die Schaltfläche __Menü__ und anschließend die Option __Geräte__ aus.  
 
 2. Wählen Sie das Gerät aus, das zurückgesetzt werden soll.
 
-    ![Ein Screenshot der Seite „Geräte“ mit zwei Kacheln, auf denen nicht identifizierte Geräte mit Standardnamen angezeigt werden. Unter den Geräten befindet sich ein graues Banner, durch das Benutzer dazu aufgefordert werden, das verwendete Gerät zu identifizieren oder ein neues hinzuzufügen.](./media/rename-reset-device-step2-1808.png)  
+    ![Ein Screenshot der Seite „Geräte“ mit zwei Kacheln, auf denen nicht identifizierte Geräte mit Standardnamen angezeigt werden. Unter den Geräten befindet sich ein graues Banner, das Benutzer dazu auffordert, das verwendete Gerät zu identifizieren oder ein neues hinzuzufügen.](./media/rename-reset-device-step2-1808.png)  
 
-3. Tippen Sie auf **Zurücksetzen**. Wenn die Option zum Zurücksetzen oben auf Ihrer Seite nicht sichtbar ist, wählen Sie **Mehr (....)** > **Zurücksetzen** aus.  
+3. Tippen Sie auf **Zurücksetzen**. Wenn die Option zum Zurücksetzen oben auf Ihrer Seite nicht sichtbar ist, wählen Sie **Mehr (....)**  > **Zurücksetzen** aus.  
 
      ![Seite mit Gerätedetails für ein ausgewähltes Gerät auf der Unternehmensportalwebsite mit einer Liste der Links oben auf der Seite zu „Umbenennen“, „Entfernen“, „Gerät zurücksetzen“, „Kennung zurücksetzen“ und „Remotesperre“. ](./media/rename-reset-device-1808.png)  
 
-    ![Vergrößerte Ansicht des Symbols für weitere Optionen, das durch einen roten Pfeil markiert ist.](./media/rename-reset-device-step3-more-1808.png)  
+    ![Screenshot des Symbols für weitere Optionen, das durch einen roten Pfeil markiert ist.](./media/rename-reset-device-step3-more-1808.png)  
 
-4. Eine Meldung wird angezeigt, die darauf hinweist, dass Sie alle Inhalte von Ihrem Gerät löschen. Tippen Sie zur Bestätigung auf **Zurücksetzen**.  
+4. In einer Meldung werden Sie gewarnt, dass Sie im Begriff sind, den gesamten Inhalt auf Ihrem Gerät zu löschen. Tippen Sie zur Bestätigung auf **Zurücksetzen**.  
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b96fa9fac25f6de4180d3dcc9ee4022a2cc43fe
-ms.sourcegitcommit: 7484ef8006f6b81d8976c328dd704512a31872ec
+ms.openlocfilehash: 4bd5392abba3ea22127cb9bcbbb53ec4929f2d5e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70190246"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166336"
 ---
 # <a name="in-development-for-microsoft-intune---september-2019"></a>In der Entwicklung befindliche Microsoft Intune-Features: September 2019
 
@@ -70,15 +70,15 @@ Die Unternehmensportal-APP zeigt den Endbenutzern zusätzliche APP-Installations
 ### <a name="managed-google-play-iframe-support----2871756----"></a>Verwaltete Google Play IFRAME-Unterstützung <!-- 2871756  -->
 InTune bietet Unterstützung für das direkte Hinzufügen und Verwalten von Weblinks in der InTune-Konsole über den verwalteten Google Play iframe.  Dadurch können IT-Administratoren eine URL und eine Symbol Grafik einreichen und diese Links auf Geräten wie reguläre Android-Apps bereitstellen. Alle Android Enterprise-Verwaltungs Szenarien, die verwaltete Google Play verwenden, können diese Funktion nutzen (Arbeitsprofil, dedizierte, vollständig verwaltete und nicht registrierte Geräte).  Klicken Sie in Intune auf **Client-Apps** > **Apps** > **Hinzufügen**. Wählen Sie dann in der Liste **App-Typ** die Option **verwaltete Google Play** aus. Weitere Informationen zu verwalteten Google Play-apps finden [Sie unter Hinzufügen von verwalteten Google Play-apps zu Android-Unternehmens Geräten mit InTune](apps-add-android-for-work.md).
 
-### <a name="macos-support-for-vpp-apps----3173501----"></a>macOS-Unterstützung für VPP-apps <!-- 3173501  -->
-macOS-apps, die Sie mit Apple Business Manager erworben haben, werden in der-Konsole angezeigt, wenn Apple VPP-Token in InTune synchronisiert werden. Mithilfe der-Konsole können Sie Geräte-und benutzerbasierte Lizenzen für Gruppen zuweisen, widerrufen und neu zuweisen. Microsoft InTune unterstützt Sie bei der Verwaltung von VPP-apps, die zur Verwendung in Ihrem Unternehmen erworben wurden
+### <a name="macos-support-for-vpp-apps----3173501----"></a>macOS-Unterstützung für VPP-Apps <!-- 3173501  -->
+Über den Apple Business Manager erworbene macOS-Apps werden in der Konsole angezeigt, wenn Apple VPP-Token in Intune synchronisiert werden. Mithilfe der Konsole können Sie geräte- und benutzerbasierte Lizenzen für Gruppen zuweisen, widerrufen und neu zuweisen. Bei der Verwaltung von VPP-Apps, die zur Verwendung in Ihrem Unternehmen erworben wurden, werden Sie von Microsoft Intune durch folgende Funktionen unterstützt:
 - Melden von Lizenzinformationen aus dem App Store
 - Nachverfolgen der Anzahl bereits verwendeter Lizenzen
 - Verhindern der Installation überzähliger Kopien der App
 Weitere Informationen über Intune und VPP finden Sie unter [Verwalten von per Volumenlizenz erworbenen Apps und Büchern mit Microsoft Intune](vpp-apps.md).
 
 ### <a name="macos-support-for-web-apps----3174427----"></a>macOS-Unterstützung für Web-Apps <!-- 3174427  -->
-Sie können Web-Apps installieren, mit denen Sie eine Verknüpfung zu einer URL im Web zum Andocken mithilfe der macOS-Unternehmensportal hinzufügen können. Endbenutzer können auf der Seite "App-Details" für eine Web-App im macOS-Unternehmensportal auf die Aktion " **Installieren** " zugreifen. Weitere Informationen zum **Weblink** -App-Typ finden [Sie unter Hinzufügen von apps zu Microsoft InTune](apps-add.md).
+Web-Apps, mit denen Sie eine Verknüpfung mit einer URL im Web hinzufügen können, können Sie über das macOS-Unternehmensportal im Dock installieren. Endbenutzer können im macOS-Unternehmensportal auf der Seite mit den App-Details für eine Web-App auf die Aktion **Installieren** zugreifen. Weitere Informationen zum **Weblink** -App-Typ finden [Sie unter Hinzufügen von apps zu Microsoft InTune](apps-add.md).
 
 #### <a name="assign-microsoft-edge-beta-for-macos----4678761----"></a>Zuweisen von Microsoft Edge Beta für macOS <!-- 4678761  -->
 Sie können die neueste Version von Microsoft Edge Beta in InTune für macOS-Geräte hinzufügen und zuweisen. Wählen Sie in InTune die Option **Client apps** > **apps** >  > **app hinzufügen** **Microsoft Edge-macOS**aus. Weisen Sie dann Microsoft Edge Beta den vorgesehenen Gruppen zu. Microsoft Auto Update (Mau) hält Microsoft Edge auf dem neuesten Stand. Weitere Informationen zu Microsoft Edge finden Sie unter [Verwalten des Webzugriffs mithilfe von Microsoft Edge mit Microsoft InTune](manage-microsoft-edge.md).
@@ -90,7 +90,7 @@ Anwendungen können die Intune-Graph-API mit Lese-und Schreibvorgängen über di
 Mit InTune-App-Schutzrichtlinien (app) auf Android-und IOS-Geräten können Sie App-Benachrichtigungs Inhalte für Organisations Konten steuern. Diese Funktion erfordert Unterstützung von Anwendungen und ist möglicherweise nicht für alle App-fähigen Anwendungen verfügbar. Weitere Informationen zu Intune-App-Schutzrichtlinien finden Sie unter [Was sind App-Schutzrichtlinien?](app-protection-policy.md)
 
 ### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956----"></a>Berichterstellung für verfügbare Google Play-Apps für Android-Arbeitsprofile <!-- 3041956  -->
-Mit diesem Feature können Sie den App-Installationsstatus und die installierte Version verwalteter Google Play-Apps für verfügbare App-Installationen auf Android Arbeitsprofilgeräten anzeigen. Weitere Informationen finden Sie unter [Überwachen von App-Schutzrichtlinien](app-protection-policies-monitor.md), [Verwalten von Android-Arbeitsprofilgeräten mit Intune](android-enterprise-overview.md) und [App-Typ „Verwaltetes Google Play“](apps-add-android-for-work.md#managed-google-play-app-type).
+Mit diesem Feature können Sie den App-Installationsstatus und die installierte Version verwalteter Google Play-Apps für verfügbare App-Installationen auf Android Arbeitsprofilgeräten anzeigen. Weitere Informationen finden Sie unter [Überwachen von App-Schutzrichtlinien](app-protection-policies-monitor.md), [Verwalten von Android-Arbeitsprofilgeräten mit Intune](android-enterprise-overview.md) und [App-Typ „Verwaltetes Google Play“](apps-add-android-for-work.md#managed-google-play-app-types).
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>Gerätekonfiguration
@@ -132,7 +132,7 @@ In einem zukünftigen Update werden neue Einstellungen angezeigt, die Sie steuer
 - **Voice-Steuer**Element: aktiviert die Sprachsteuerung auf dem Gerät im Kiosk Modus.
 - **Änderung des sprach Steuer**Elements: erlauben Sie Benutzern, die sprach Steuerungs Einstellung im Kiosk Modus auf dem Gerät zu ändern.
 
-Um die aktuellen Einstellungen anzuzeigen, wechseln Sie zu den Einstellungen für den [IOS-Kiosk (nur überwacht)](device-restrictions-ios.md#kiosk-supervised-only).
+Um die aktuellen Einstellungen anzuzeigen, wechseln Sie zu den Einstellungen für den [IOS-Kiosk (nur überwacht)](device-restrictions-ios.md#kiosk).
 
 Gilt für:
 
@@ -162,12 +162,12 @@ Gilt für:
 ### <a name="use-itunes-and-apps-in-the-itunes-app-store-url-when-showing-or-hiding-apps-on-ios-supervised-devices----4928474----"></a>Verwenden Sie "iTunes" und "Apps" in der iTunes App Store-URL, wenn Sie Apps auf überwachten IOS-Geräten ein-oder ausblenden. <!-- 4928474  --> 
 In InTune können Sie Richtlinien erstellen, um apps auf Ihren überwachten IOS-Geräten anzuzeigen oder auszublenden (**Geräte Konfigurations** > **profile** > **erstellen das Profil** > **IOS** für die Plattform > **Gerät Einschränkungen** für den Profiltyp > **anzeigen oder Ausblenden von apps (nur überwacht)** ). 
 
-Sie können die iTunes-App Store-URL eingeben, `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`z. b.. In einem zukünftigen Update können Sie sowohl `apps` als auch `itunes` in der URL verwenden, z. b.:
+Sie können die iTunes-App Store-URL eingeben, `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`z. b. In einem zukünftigen Update können Sie sowohl `apps` als auch `itunes` in der URL verwenden, z. b.:
 
 - `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`
 - `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`
 
-Weitere Informationen zu diesen Einstellungen finden Sie unter [anzeigen oder Ausblenden von apps (nur überwacht)](device-restrictions-ios.md#show-or-hide-apps-supervised-only).
+Weitere Informationen zu diesen Einstellungen finden Sie unter [anzeigen oder Ausblenden von apps](device-restrictions-ios.md#show-or-hide-apps).
 
 Gilt für:
 
@@ -191,10 +191,10 @@ Die Geräte Administrator Funktionen von Android wurden durch Android Enterprise
 
 Vorhandene Mandanten werden in ihren Umgebungen nicht geändert. 
 
-Weitere Informationen zum Android-Geräte Administrator in InTune finden Sie unter Registrierung von [Android-Geräte Administratoren](https://docs.microsoft.com/intune/android-enroll-device-administrator).
+Weitere Informationen zum Android-Geräte Administrator in InTune finden Sie unter Registrierung von [Android-Geräte Administratoren](android-enroll-device-administrator.md).
 
-### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>Passen Sie für IOS-Geräte den Datenschutz Bildschirm des Anmeldungsprozesses des Unternehmensportal <!-- 4394993  -->
-Mithilfe von markdown können Sie den Datenschutz Bildschirm des Unternehmensportal anpassen, den Endbenutzern während der IOS-Registrierung angezeigt werden. Insbesondere können Sie die Liste der Dinge anpassen, die Ihre Organisation nicht auf dem Gerät sehen oder ausführen kann.
+### <a name="for-ios-devices-customize-the-enrollment-process-privacy-screen-of-the-company-portal----4394993----"></a>Für iOS-Geräte: Anpassen des Datenschutzbildschirms für den Registrierungsvorgang im Unternehmensportal <!-- 4394993  -->
+Mithilfe von Markdown können Sie den Datenschutzbildschirm im Unternehmensportal anpassen, der den Endbenutzern während der iOS-Registrierung angezeigt wird. Insbesondere können Sie die Liste der Elemente und Vorgänge anpassen, die Ihre Organisation auf dem Gerät nicht anzeigen bzw. ausführen kann.
 
 <!-- ***********************************************-->
 ## <a name="device-management"></a>Geräteverwaltung
@@ -213,7 +213,7 @@ Wir werden die folgende Unterstützung für vollständig verwaltete Android-Ger�
     - Erstellen eines SCEP-Profils im Abschnitt "Do" von Android Enterprise
     - Verknüpfen von SCEP-Zertifikaten mit WLAN-Profilen für die Authentifizierung
     - Verknüpfen von SCEP-Zertifikaten mit VPN-Profilen für die Authentifizierung
-    - Verknüpfen von SCEP-Zertifikaten mit e-Mail-Profilen für die Authentifizierung (über AppConfig)
+    - Verknüpfen von SCEP-Zertifikaten mit e-Mail-Profilen für die Authentifizierung (über die APP-Konfiguration)
 - System-apps werden auf Android-Unternehmens Geräten unterstützt. In InTune fügen Sie eine Android Enterprise System-App hinzu, indem Sie **Client apps** > **apps** > **Hinzufügen**auswählen. Wählen Sie in der Liste **App-Typ** die Option **Android Enterprise System App**aus. Weitere Informationen zum Hinzufügen von Apps zu Intune finden Sie unter [Hinzufügen von Apps zu Microsoft Intune](apps-add.md). <!-- 4062195 -->
 - Unter **Geräte Konformität** > **Android-Unternehmens** > **Gerätebesitzer**können Sie eine Kompatibilitäts Richtlinie erstellen, mit der die Ebene "Google SafetyNet Nachweis" festgelegt wird.   <!-- 4631425 -->
 - Auf vollständig verwalteten Android-Geräten werden die Mobile Threat Defense-Anbieter unterstützt. Unter **Geräte Konformität** > **Android-Unternehmens** > **Gerätebesitzer**können Sie eine akzeptable Bedrohungsstufe auswählen. <!-- 4631440 --> Unter [Android Enterprise-Einstellungen, um Geräte mit Intune als konform oder nicht konform zu kennzeichnen](compliance-policy-create-android-for-work.md#device-owner) werden die aktuellen Einstellungen aufgelistet.
