@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0721c62d44234a44881cdc562376c9bb62412187
-ms.sourcegitcommit: 73fbecf7cee4fdfc37d3c30ea2007d2a9a6d2d12
+ms.openlocfilehash: 041f37e56e85b0ac26a4dd7a9dbbdb49bc0ebd9e
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68775873"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166342"
 ---
 Diese Hinweise enthalten wichtige Informationen, die Ihnen bei der Vorbereitung auf künftige Änderungen und Features im Zusammenhang mit Intune helfen können. 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Verringern der Unterstützung für den Android-Geräteadministrator 
-Der Android-Geräteadministrator (manchmal auch als „Legacy“-Android-Verwaltung bezeichnet und mit Android 2.2 veröffentlicht) ist eine Möglichkeit zum Verwalten von Android-Geräten. [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) (veröffentlicht mit Android 5.0) bietet jetzt jedoch eine verbesserte Verwaltungsfunktionalität. In dem Bestreben, auf eine moderne, umfassendere und sicherere Geräteverwaltung umzusteigen, reduziert Google die Geräteadministratorunterstützung in neuen Android-Releases.
+Der Android-Geräteadministrator (manchmal auch als „Legacy“-Android-Verwaltung bezeichnet und mit Android 2.2 veröffentlicht) ist eine Möglichkeit zum Verwalten von Android-Geräten. [Android Enterprise](../connect-intune-android-enterprise.md) (veröffentlicht mit Android 5.0) bietet jetzt jedoch eine verbesserte Verwaltungsfunktionalität. In dem Bestreben, auf eine moderne, umfassendere und sicherere Geräteverwaltung umzusteigen, reduziert Google die Geräteadministratorunterstützung in neuen Android-Releases.
 
 #### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
 Diese Änderungen von Google haben für Intune-Benutzer diese Folgen: 
@@ -66,7 +66,7 @@ Sie müssen keine Maßnahmen ergreifen, sollten aber eventuell Ihre Leitfäden f
 #### <a name="additional-information"></a>Zusätzliche Informationen 
 https://aka.ms/intune_fullscreen
 
-### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665342--"></a>Stellen Sie sich auf eine Änderung ein: Intune wird iOS 11 und höher im September unterstützen <!-- 4665342-->
+### <a name="plan-for-change-intune-moving-to-support-ios-11-and-higher-in-september----4665324--"></a>Stellen Sie sich auf eine Änderung ein: Intune wird iOS 11 und höher im September unterstützen <!-- 4665324-->
 Im September erwarten wir, dass iOS 13 von Apple veröffentlicht wird. Kurz nach Veröffentlichung der Version iOS 13 wird die Unterstützung von iOS 11 und höher für die Registrierung bei Intune, das Unternehmensportal und den verwalteten Browser eingeführt.
 
 #### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
@@ -76,7 +76,7 @@ Vorausgesetzt, dass mobile Office 365-Apps unter iOS 11.0 und höher unterstütz
 - iPhone 5c
 - iPad (4. Generation)
 
-Ab Juli erhalten mit MDM registrierte Geräte mit iOS 10 und dem Unternehmensportal eine Aufforderung, ihr Betriebssystem oder Gerät upzugraden. Wenn Sie App-Schutzrichtlinien (Application Protection Policies, APP) verwenden, können Sie auch die Zugriffseinstellung „iOS-Mindestbetriebssystem anfordern (nur Warnung)“ festlegen.
+Wenn Sie App-Schutzrichtlinien (Application Protection Policies, APP) verwenden, können Sie auch die Zugriffseinstellung „iOS-Mindestbetriebssystem anfordern (nur Warnung)“ festlegen.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
 Überprüfen Sie Ihre Intune-Berichte, um zu sehen, welche Geräte oder Benutzer möglicherweise betroffen sind. Wechseln Sie zu **Geräte** > **Alle Geräte**, und filtern Sie nach „Betriebssystem“. Sie können weitere Spalten hinzufügen, um besser bestimmen zu können, welche Benutzer in Ihrer Organisation Geräte mit iOS 10 verwenden. Fordern Sie Ihre Endbenutzer dazu auf, Ihre Geräte vor September auf eine unterstützte Betriebssystemversion upzugraden.
@@ -96,7 +96,7 @@ Mit der Integration von Intune App SDK oder App Wrapping können Sie Unternehmen
 Sie sollten auch ggf. Ihre Dokumentation oder Ihren Entwicklerleitfaden aktualisieren, damit darin diese Änderung zur Unterstützung für das SDK enthalten ist.
 
 #### <a name="additional-information"></a>Zusätzliche Informationen
-https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+[Vorbereiten von branchenspezifischen Apps für App-Schutzrichtlinien](../apps-prepare-mobile-application-management.md)
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Stellen Sie sich auf eine Änderung ein: Neue Einstellungen für Windows Updates in Intune <!-- 4464404 -->
 Ab der im August veröffentlichten Version von Intune (Version 1908) sind neue Stichtagseinstellungen verfügbar, die Sie anstelle der Einstellungen für „Benutzer (erzwungenen) Neustart ermöglichen“ konfigurieren können. Es ist geplant, die Einstellungen für erzwungenen Neustart in der Benutzeroberfläche der Version 1909 bzw. des Septemberupdates zu deaktivieren und sie dann bis Ende des Oktober vollständig aus der Konsole zu entfernen. 
