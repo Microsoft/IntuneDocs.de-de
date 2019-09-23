@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8af18192a3a15fee15dd2204ada572e6a67be1c
-ms.sourcegitcommit: 6c74ff568267d85fd1d44fda75e3e24ead87cb2b
+ms.openlocfilehash: 0f78f069f46ce036752fde80519abc03dc7c424c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70063005"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167777"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Behandeln von Problemen bei der Windows-Geräteregistrierung in Microsoft Intune
 
@@ -79,7 +79,7 @@ Es gibt mehrere mögliche Lösungen für dieses Problem:
 3. Wählen Sie **Plattformen**und dann **zulassen** für **Windows (MDM)** aus.
 
     > [!IMPORTANT]
-    > Wenn die aktuelle Einstellung bereits **zulässig** ist, ändern Sie Sie in **blockieren**, speichern Sie die Einstellung, und ändern Sie Sie zurück, um die Einstellung erneut **zuzulassen** und zu speichern. Dadurch wird die Registrierungs Einstellung zurückgesetzt.
+    > Wenn die aktuelle **Einstellung bereits zulässig**ist, ändern Sie Sie in **blockieren**, speichern Sie die Einstellung, und ändern Sie Sie zurück, um die Einstellung erneut **zuzulassen** und zu speichern. Dadurch wird die Registrierungs Einstellung zurückgesetzt.
 
 4. Warten Sie ca. 15 Minuten, und melden Sie das betroffene Gerät dann erneut an.    
 
@@ -166,7 +166,7 @@ Verwenden Sie eine der folgenden Methoden, um dieses Problem zu beheben:
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Deaktivieren Sie die automatische MDM-Registrierung in Azure.
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) an.    
-2. Wechseln Sie zu **Azure Active Directory** > **Mobility (MDM und MAM)**  > **Microsoft InTune**.    
+2. Wechseln Sie zu **Azure Active Directory** > **Mobility**-**Microsoft InTune** (MDM und MAM) > .    
 3. Legen Sie den **MDM-Benutzerbereich** auf **None**fest, und klicken Sie dann auf **Speichern**.    
      
 ##### <a name="uninstall"></a>Deinstallieren
@@ -213,7 +213,7 @@ Um dieses Problem in der Hybriden Verwaltung mobiler Geräte mit InTune und Conf
 1. Öffnen Sie die Configuration Manager-Konsole.    
 2. Wählen Sie **Verwaltung**, und klicken Sie dann auf **Cloud Services**.    
 3. Klicken Sie mit der rechten Maustaste auf **Microsoft InTune Abonnement**, und wählen Sie dann **Plattformen Konfigurieren > Fenster**    
-4. **Aktivieren** >  Sie Windows-**Registrierung aktivieren** > **OK**.  
+4. **Aktivieren** >  **Sie** Windows- > Registrierung aktivieren**OK**.  
 
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Bei der Massen Registrierung ist ein Setup Fehler aufgetreten.
@@ -388,4 +388,4 @@ Dieses Problem tritt normalerweise auf, wenn die Berechtigungen für die Organis
 - [Stellen Sie eine Frage im Intune-Forum](https://social.technet.microsoft.com/Forums/%7Blang-locale%7D/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc)
 - [Überprüfen Sie den Microsoft InTune Support Team Blog.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Überprüfen Sie den Microsoft Enterprise Mobility and Security-Blog](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
-- [Support für Microsoft Intune](https://docs.microsoft.com/intune/get-support) 
+- [Support für Microsoft Intune](get-support.md)
