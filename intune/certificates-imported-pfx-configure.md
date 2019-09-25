@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18d01692f8c42b67605c223f59e13b1e5197a8db
-ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
+ms.openlocfilehash: f68ee794ce1fce2fbdbae8898c412309906b3f5c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71017136"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167077"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Konfigurieren und Verwenden importierter PKCS-Zertifikate mit Intune
 
@@ -43,7 +43,7 @@ Wenn Sie importierte PKCS-Zertifikate mit Intune verwenden möchten, müssen Sie
 
   Dieser Connector kann sich automatisch selbst installieren, sobald neue Versionen zur Verfügung stehen. Zum Verwenden der Updatefunktion müssen Sie sich vergewissern, dass die Firewalls geöffnet sind, über die der Connector **autoupdate.msappproxy.net** an Port **443** kontaktieren kann.  
 
-  Weitere Informationen zu allen Netzwerkendpunkten, auf die der Connector zugreift, finden Sie unter [Anforderungen und Bandbreite an die Intune-Netzwerkkonfiguration](https://docs.microsoft.com/intune/network-bandwidth-use).
+  Weitere Informationen zu allen Netzwerkendpunkten, auf die der Connector zugreift, finden Sie unter [Anforderungen und Bandbreite an die Intune-Netzwerkkonfiguration](network-bandwidth-use.md).
 
 
 - **Windows Server:**  
@@ -188,7 +188,7 @@ Nach dem Importieren der Zertifikate in Intune erstellen Sie ein Profil für ein
 
    - **Beabsichtigter Zweck**: Geben Sie den Zweck der Zertifikate an, die für dieses Profil importiert werden. Administratoren können Zertifikate zu unterschiedlichen Zwecken importieren, z. B. zur Authentifizierung oder zum Signieren/Verschlüsseln mit S/MIME. Der Zweck, der im Zertifikatprofil ausgewählt wird, entspricht demjenigen des Zertifikatprofils mit den korrekten importierten Zertifikaten. Der beabsichtigte Zweck ist ein Tag zum Gruppieren importierter Zertifikate. Diese Angabe garantiert nicht, dass die mit diesem Tag importierten Zertifikate den beabsichtigten Zweck erfüllen.  
    - **Gültigkeitsdauer des Zertifikats**: Wenn die Gültigkeitsdauer in der Zertifikatvorlage nicht geändert wurde, ist diese Option standardmäßig auf ein Jahr festgelegt.  
-   - **Schlüsselspeicheranbieter (KSP)**: Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus.  
+   - **Schlüsselspeicheranbieter (KSP)** : Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus.  
 
 4. Wählen Sie **OK** > **Erstellen** aus, um Ihr Profil zu speichern.
 5. Informationen zum Zuweisen des neuen Profils zu einem oder mehreren Geräten finden Sie unter [Zuweisen von Microsoft Intune-Geräteprofilen](device-profile-assign.md).

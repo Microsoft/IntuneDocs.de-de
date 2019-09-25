@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0539e4d12173ba2c7ba8d3af3364daf69ddbbf34
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 83e321e932fa2214612836ec994a9a0aa8174dd7
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071531"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71094679"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>Zuweisen einer Rolle an einen Intune-Benutzer
 
@@ -30,8 +30,6 @@ Sie können einem Intune-Benutzer eine [integrierte](role-based-access-control.m
 Für das Erstellen, Bearbeiten oder Zuweisen von Rollen muss das Konto in Azure AD über eine der folgenden Berechtigungen verfügen:
 - **Globaler Administrator**
 - **Intune-Dienstadministrator**
-
-Eine vollständige Liste der Berechtigungen für die einzelnen integrierten Rollen finden Sie in der [Intune RBAC Table (Tabelle zur rollenbasierten Zugriffssteuerung in Intune)](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 

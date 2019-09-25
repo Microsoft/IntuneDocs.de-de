@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
-ms.openlocfilehash: 13e8c7fd0c822a2bdfbf7c183ea6752f99cf7991
-ms.sourcegitcommit: d2ac912b834c4840de9cc92ba1815b6ecfbfb52b
+ms.openlocfilehash: 8248991e1facc78def580d75a5b7e7e6ba353c98
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68482770"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163683"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>Hinzufügen der Endpoint Protection-Einstellungen in Intune  
 
@@ -54,7 +54,6 @@ Bevor Sie ein Profil erstellen, lesen Sie die folgenden Artikel, in denen die Ei
    Das Profil wird erstellt und auf der Seite mit der Profilliste angezeigt. Informationen zur Zuweisung dieses Profils zu Gruppen finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md).  
 
 ## <a name="add-custom-firewall-rules-for-windows-10-devices"></a>Hinzufügen benutzerdefinierter Firewallregeln für Windows 10-Geräte  
-***Die benutzerdefinierten Firewallregeln befinden sich in der Public Preview.***  
 
 Wenn Sie die Windows Defender Firewall als Teil eines Profils konfigurieren, das Endpoint Protection-Regeln für Windows 10 umfasst, können Sie benutzerdefinierte Regeln für Firewalls konfigurieren. Benutzerdefinierte Regeln ermöglichen es Ihnen, die vordefinierten Firewallregeln zu erweitern, die für Windows 10 unterstützt werden.  
 

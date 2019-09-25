@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1710fd315803c4b47ad3be343893f93f7d155135
-ms.sourcegitcommit: 27e63a96d15bc4062af68c2764905631bd928e7b
+ms.openlocfilehash: c8378986b1cf405a92e34b4c5bd805b169feaf32
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71061730"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167880"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Updates der Benutzeroberfläche für Endbenutzer-Apps in Intune
 Lernen Sie die neuesten Updates für die Microsoft Intune-Apps kennen. Wir verbessern regelmäßig die App und Website des Intune-Unternehmensportals und fügen Neues hinzu. Wenn Sie ein Intune-Administrator sind oder im Support arbeiten, bietet Ihnen dieser Artikel Informationen für Folgendes:
@@ -120,7 +120,7 @@ Eine neue Anzeige namens **App-Kategorien** wurde hinzugefügt, um das Durchsuch
 ## <a name="week-of-november-12-2018"></a>Woche vom 12. November 2018
 
 ### <a name="windows-company-portal-keyboard-shortcuts----2771518---"></a>Tastenkombinationen für die Windows-Unternehmensportal-App <!-- 2771518 -->
-Endbenutzer können ab sofort [mithilfe von Tastenkombinationen](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts) App- und Geräteaktionen im Windows-Unternehmensportal auslösen.
+Endbenutzer können ab sofort [mithilfe von Tastenkombinationen](company-portal-app.md#windows-company-portal-keyboard-shortcuts) App- und Geräteaktionen im Windows-Unternehmensportal auslösen.
 
 ## <a name="week-of-october-22-2018"></a>Woche vom 22. Oktober 2018
 
@@ -572,4 +572,4 @@ Es folgen die Pläne für Möglichkeiten zum Verbessern der Benutzererfahrung du
 ## <a name="see-also"></a>Siehe auch
 * [Microsoft Intune-Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roadmap für die Cloudplattform](https://www.microsoft.com/cloud-platform/roadmap)
-* [Neuerungen in Intune](https://docs.microsoft.com/intune/whats-new)
+* [Neuerungen in Intune](whats-new.md)

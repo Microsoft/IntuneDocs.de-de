@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 361ef17b-1ee0-4879-b7b1-d678b0787f5a
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6425c1346255caf70e73feef2aec1097625f921
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 4465a8715b84e06e337fb7dee5af4308cdd153ae
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68427103"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167652"
 ---
 # <a name="manage-operating-system-versions-with-intune"></a>Verwalten von Betriebssystemversionen mit Intune
 Für aktuelle mobile Plattformen und Desktopplattformen werden ständig größere Updates, Patches und neue Versionen herausgegeben. Es gibt Steuerelemente, mit denen Sie Updates und Patches unter Windows vollständig verwalten können. Andere Plattformen wie iOS und Android verlangen, dass sich die Benutzer an dem Vorgang beteiligen.  Microsoft Intune verfügt über Funktionen, mit denen Sie Ihre Betriebssystemversionsverwaltung plattformübergreifend strukturieren können.
@@ -32,30 +32,34 @@ Intune kann Sie bei den folgenden häufig auftretenden Szenarios unterstützen:
   
 ## <a name="operating-system-version-control-using-intune-mobile-device-management-mdm-enrollment-restrictions"></a>Registrierungsbeschränkungen für die Versionskontrolle von Betriebssystemen mithilfe der mobilen Geräteverwaltung (MDM) von Intune
 Mithilfe der Registrierungsbeschränkungen für die MDM von Intune können Sie die Clientgeräteanforderungen definieren, bevor Sie der Registrierung des Geräts zustimmen. Ziel ist es, Ihre Benutzer zu verpflichten, nur kompatible Geräte zu registrieren, bevor sie auf die Ressourcen der Organisation zugreifen können. Die Geräteanforderungen umfassen sowohl die Mindest- als auch die Maximalversionen von Betriebssystemen, die für unterstützte Plattformen genehmigt wurden.
- 
-![Seite mit Plattformkonfigurationsbeschränkungen](./media/os-version-platform-configurations.png) 
- 
+
+![Seite mit Plattformkonfigurationsbeschränkungen](./media/os-version-platform-configurations.png)
+
 ### <a name="in-practice"></a>In der Praxis
-Organisationen verwenden Gerätetypbeschränkungen, um den Zugang zu Ressourcen der Organisation zu beschränken, indem sie folgende Einstellungen nutzen: 
-1. Verwenden Sie eine Mindestversion des Betriebssystems, um Benutzer an aktuelle und unterstütze Plattformen innerhalb Ihrer Organisation zu binden. 
+
+Organisationen verwenden Gerätetypbeschränkungen, um den Zugang zu Ressourcen der Organisation zu beschränken, indem sie folgende Einstellungen nutzen:
+
+1. Verwenden Sie eine Mindestversion des Betriebssystems, um Benutzer an aktuelle und unterstütze Plattformen innerhalb Ihrer Organisation zu binden.
 2. Bestimmen Sie entweder keine Maximalversion des Betriebssystems (keine Beschränkung), oder legen Sie die zuletzt in Ihrer Organisation geprüfte Version als Maximalversion fest, damit genügend Zeit für interne Tests neuer Betriebssystemversionen bleibt.
 
-Weitere Informationen finden Sie unter [Set device type restrictions (Festlegen von Gerätetypbeschränkungen)](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction).
- 
+Weitere Informationen finden Sie unter [Set device type restrictions (Festlegen von Gerätetypbeschränkungen)](enrollment-restrictions-set.md#create-a-device-type-restriction).
+
 ## <a name="operating-system-version-reporting-and-compliance-with-intune-mdm-device-compliance-policies"></a>Berichterstattung zu Betriebssystemversionen und Einhaltung der Gerätekompatibilitätsrichtlinien mit Intune MDM
-Die Gerätekompatibilitätsrichtlinien für Intune MDM beinhalten Folgendes: 
+
+Die Gerätekompatibilitätsrichtlinien für Intune MDM beinhalten Folgendes:
+
 - Näheres Bestimmen der Kompatibilitätsregeln
 - Abrufen des Kompatibilitätsstatus anhand von Berichten
 - Vorgehen bei Kompatibilitätsverstößen per Gerätequarantäne und bedingten Zugriff
 
 Genauso wie Registrierungsbeschränkungen umfassen Gerätekompatibilitätsrichtlinien sowohl Mindest- als auch Maximalversionen von Betriebssystemen. Die Richtlinien verfügen außerdem über eine Kompatibilitätszeitachse, damit Ihren Benutzern eine Toleranzperiode eingeräumt wird, die sie nutzen sollen, um ihre Geräte entsprechend anzupassen. Gerätekompatibilitätsrichtlinien sorgen dafür, dass registrierte Benutzergeräte mit den Organisationsrichtlinien kompatibel sind.
 
-![Gerätekompatibilität: Vorgehensweise bei nicht kompatiblen Geräten](./media/os-version-actions-noncompliance.png) 
+![Gerätekompatibilität: Vorgehensweise bei nicht kompatiblen Geräten](./media/os-version-actions-noncompliance.png)
 
 ### <a name="in-practice"></a>In der Praxis
 Organisationen verwenden Gerätekompatibilitätsrichtlinien für dieselben Szenarios wie die Registrierungsbeschränkungen. Diese Richtlinien sorgen dafür, dass Benutzer in Ihrer Organisation aktuelle und geprüfte Betriebssystemversionen verwenden. Wenn Benutzergeräte nicht mehr kompatibel sind, kann der Zugriff auf Organisationsressourcen solange per bedingtem Zugriff blockiert werden, bis die Geräte sich wieder innerhalb des für Ihre Organisation unterstützten Betriebssystembereichs befinden. Die Benutzer werden benachrichtigt, wenn sie gegen die Kompatibilitätsvorgaben verstoßen, und ihnen werden die nötigen Schritte genannt, um wieder Zugriff gewährt zu bekommen.   
 
-Weitere Informationen finden Sie unter [Erste Schritte bei der Gerätekonformität](https://docs.microsoft.com/intune/device-compliance-get-started).
+Weitere Informationen finden Sie unter [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md).
  
 ## <a name="operating-system-version-controls-using-intune-app-protection-policies"></a>Kontrollieren von Betriebssystemversionen mithilfe der Intune-App-Schutzrichtlinien    
 Mithilfe von Intune-App-Schutzrichtlinien und Zugriffseinstellungen für die mobile Anwendungsverwaltung können Sie Mindestversionen von Betriebssystemen auf Anwendungsebene festlegen. Dadurch können Sie die Benutzer über Updates informieren und dazu ermutigen bzw. verpflichten, ihr Betriebssystem auf eine vorgegebene Mindestversion zu aktualisieren.
@@ -70,7 +74,7 @@ Dafür gibt es zwei Optionen:
 ### <a name="in-practice"></a>In der Praxis
 Heutzutage verwenden Organisationen Einstellungen für App-Schutzrichtlinien, wenn Apps geöffnet oder fortgesetzt werden, um Benutzer über die Notwendigkeit zu informieren, Apps aktuell zu halten. Eine mögliche Konfiguration wäre z.B., dass Benutzer des Vorgängers der aktuellen Version gewarnt werden und Benutzer, die eine frühere Version als den Vorgänger der aktuellen Version verwenden, blockiert werden.
  
-Weitere Informationen finden Sie unter [Erstellen und Zuweisen von App-Schutzrichtlinien](https://docs.microsoft.com/intune/app-protection-policies).
+Weitere Informationen finden Sie unter [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md).
 
 ## <a name="managing-a-new-operating-system-version-rollout"></a>Verwalten eines Rollout einer neuen Betriebssystemversion
 Sie können die Funktionen von Intune, die in diesem Artikel beschrieben werden, nutzen, um die Geräte in Ihrer Organisation innerhalb der von Ihnen definierten Zeitachse auf eine neue Betriebssystemversion umzuziehen. Die folgenden Schritte stellen ein Beispiel für ein Bereitstellungsmodell dar, mit dem Sie die Benutzer innerhalb von sieben Tagen von einer Betriebssystemversion auf eine andere umziehen lassen können.
@@ -84,8 +88,9 @@ Sie können die Funktionen von Intune, die in diesem Artikel beschrieben werden,
   - In diesen Richtlinien wird festgelegt, dass Geräte aktualisiert werden müssen, damit sie weiterhin Zugriff auf Organisationsdaten haben. Geschützte Dienste werden blockiert, wenn sie auf Geräten mit bedingtem Zugriff verwendet werden. Apps, für die eine App-Schutzrichtlinie aktiviert ist, werden beim Öffnen oder beim Zugreifen auf Organisationsdaten blockiert.
 
 ## <a name="next-steps"></a>Nächste Schritte
-Verwenden Sie die folgenden Ressourcen, um Betriebssystemversionen in Ihrer Organisation zu verwalten: 
 
-- [Festlegen von Gerätetypbeschränkungen](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)
-- [Erste Schritte bei der Gerätekonformität](https://docs.microsoft.com/intune/device-compliance-get-started)
-- [Erstellen und Zuweisen von App-Schutzrichtlinien](https://docs.microsoft.com/intune/app-protection-policies)
+Verwenden Sie die folgenden Ressourcen, um Betriebssystemversionen in Ihrer Organisation zu verwalten:
+
+- [Festlegen von Gerätetypbeschränkungen](enrollment-restrictions-set.md#create-a-device-type-restriction)
+- [Erste Schritte bei der Gerätekonformität](device-compliance-get-started.md)
+- [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md)

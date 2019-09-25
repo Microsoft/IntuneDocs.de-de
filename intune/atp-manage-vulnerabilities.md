@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b58b27264e2f6955ae4f16843bb3493e5fdc993e
-ms.sourcegitcommit: fe67741c62749fc9114e9191092ed8b786dd4ffa
+ms.openlocfilehash: 69f214b4fd3f3b7767e719c0f68f19e178a8e29c
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68270296"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167235"
 ---
 # <a name="use-intune-to-remediate-vulnerabilities-identified-by-microsoft-defender-atp"></a>Verwenden von Intune zum Korrigieren von mit Microsoft Defender ATP identifizierten Sicherheitsrisiken  
 
@@ -37,13 +37,15 @@ In der Microsoft Defender Security Center-Konsole überprüfen ATP-Sicherheitsad
 Wenn eine Aufgabe akzeptiert wird, ergreift der Intune-Administrator Maßnahmen, um das Sicherheitsrisiko mittels Intune zu beheben, wobei er die Anleitung nutzt, die als Teil der Sicherheitsaufgabe bereitgestellt wird.  
 
 Gängige Korrekturmaßnahmen umfassen:  
+
 - **Blockieren** der Ausführung einer Anwendung.  
 - **Bereitstellen** eines Betriebssystemupdates, um das Sicherheitsrisiko zu mindern.  
 - **Ändern** eines Registrierungswerts.  
 - **Deaktivieren** oder **Aktivieren** einer Konfiguration, um das Sicherheitsrisiko zu beeinflussen.  
 - **Eingreifen erforderlich**-Benachrichtigungen an den Administrator wegen der Bedrohung, wenn keine geeignete Empfehlung bereitgestellt werden kann.  
 
-Ein Beispielworkflow:  
+Ein Beispielworkflow:
+
 - In Microsoft Defender ATP wird ein Sicherheitsrisiko für eine App namens „Contoso Media Player v4“ entdeckt, und ein Administrator erstellt eine Sicherheitsaufgabe, um diese App zu aktualisieren. Der Contoso Media Player ist eine nicht verwaltete App, die mit Intune bereitgestellt wurde.  
 
   Diese Sicherheitsaufgabe wird in der Intune-Konsole mit dem Status „Ausstehend“ angezeigt:  
@@ -61,13 +63,16 @@ Ein Beispielworkflow:
 ## <a name="prerequisites"></a>Voraussetzungen  
 
 **Abonnements**:  
+
 - Microsoft Intune  
 - Microsoft Defender Advanced Threat Protection ([Für eine kostenlose Testversion registrieren](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink).)  
 
 **Intune-Konfigurationen für ATP**:  
+
 - Konfigurieren Sie eine Dienst-zu-Dienst-Verbindung mit Microsoft Defender ATP.  
 - Stellen Sie eine Richtlinie für Gerätekonformität mit einem Profiltyp **Microsoft Defender ATP (Windows 10 Desktop)** auf Geräten bereit, deren Risiken von ATP bewertet werden.
-  Informationen zum Einrichten von Intune für die Zusammenarbeit mit ATP finden Sie unter [Erzwingen der Konformität für Windows Defender ATM mit bedingtem Zugriff in Intune](https://docs.microsoft.com/intune/advanced-threat-protection#enable-microsoft-defender-atp-in-intune).  
+
+  Informationen zum Einrichten von Intune für die Zusammenarbeit mit ATP finden Sie unter [Erzwingen der Konformität für Windows Defender ATM mit bedingtem Zugriff in Intune](advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune).  
 
 ## <a name="work-with-security-tasks"></a>Arbeiten mit Sicherheitsaufgaben  
 
@@ -89,6 +94,6 @@ Ein Beispielworkflow:
 Nach erfolgreicher Korrektur kann die Bewertung des Gefahrenpotenzials durch Risiken in ATP sinken, basierend auf neuen Informationen von den korrigierten Geräten. 
 
 ## <a name="next-steps"></a>Nächste Schritte
-Weitere Informationen zu Intune und [Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection).  
-Prüfen Sie Intune [Mobile Threat Defense](https://docs.microsoft.com/intune/mobile-threat-defense).  
+Weitere Informationen zu Intune und [Microsoft Defender ATP](advanced-threat-protection.md).  
+Prüfen Sie Intune [Mobile Threat Defense](mobile-threat-defense.md).  
 Prüfen Sie das [Dashboard für die Bedrohungs- und Sicherheitsrisikenverwaltung](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) in Microsoft Defender ATP.

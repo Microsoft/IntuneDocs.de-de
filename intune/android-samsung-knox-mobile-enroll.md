@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4236b3fd1b7dab25a3450b95b75f3623ec7ba95
-ms.sourcegitcommit: 74911a263944f2dbd9b754415ccda6c68dae0759
+ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71071643"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167417"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment
 
@@ -105,7 +105,7 @@ Für bei Intune mit KME für Android registrierte Geräte können Sie wie folgt 
 
 - **Ohne Benutzernamenzuordnung**: Lassen Sie im Knox-Portal unter **Gerätedetails** die Felder **Benutzer-ID** und **Kennwort** für die hinzugefügten Geräte leer. Diese Option erfordert, dass der Endbenutzer für die Registrierung bei Intune sowohl einen Benutzernamen als auch ein Kennwort eingeben muss.
 
-- **Mit Benutzernamenzuordnung**: Geben Sie im Knox-Portal unter **Gerätedetails** eine **Benutzer-ID** (z.B. einen Benutzernamen für den zugewiesenen Benutzer oder ein [Geräteregistrierungs-Manager](https://docs.microsoft.com/intune/device-enrollment-manager-enroll)-Konto) für die hinzugefügten Geräte an. Diese Option bewirkt, dass der Benutzername vorab ausgefüllt wird und der Endbenutzer für die Registrierung bei Intune ein Kennwort eingeben muss.
+- **Mit Benutzernamenzuordnung**: Geben Sie im Knox-Portal unter **Gerätedetails** eine **Benutzer-ID** (z.B. einen Benutzernamen für den zugewiesenen Benutzer oder ein [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md)-Konto) für die hinzugefügten Geräte an. Diese Option bewirkt, dass der Benutzername vorab ausgefüllt wird und der Endbenutzer für die Registrierung bei Intune ein Kennwort eingeben muss.
 
 > [!NOTE]
 >

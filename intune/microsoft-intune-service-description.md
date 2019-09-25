@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c813e413d0d3447955f785e0aff1e0edd3501b6a
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 972f58da34c73253c85f4ca6183ad6fd4ce4c2e7
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67882880"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167847"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune-Dienstbeschreibung
 
@@ -33,7 +33,7 @@ Intune ist ein cloudbasierter Enterprise Mobility-Verwaltungsdienst (Enterprise 
 
 Die Lösung lässt sich eng in Azure Active Directory (Azure AD) integrieren und bietet Identitäts- und Zugriffsteuerungsfunktionen sowie Azure Information Protection für den Datenschutz. Sie können es auch in System Center Configuration Manager integrieren, um die Verwaltungsfunktionen zu erweitern.
 
-Weitere Informationen zum Verwalten von Geräten und Apps und zum Schützen von Unternehmensdaten mit Intune finden Sie in der [Intune-Dokumentation](https://docs.microsoft.com/intune/).
+Weitere Informationen zum Verwalten von Geräten und Apps und zum Schützen von Unternehmensdaten mit Intune finden Sie in der [Intune-Dokumentation](index.yml).
 
 ## <a name="30-day-free-trial"></a>30-tägige kostenlose Testversion
 Sie können Intune zunächst mit einer 30-tägigen kostenlosen Testversion verwenden, die 100 Benutzerlizenzen enthält. Um Ihre kostenlose Testversion zu starten, [besuchen Sie die Anmeldeseite von Intune](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). Wenn Ihre Organisation über ein Enterprise Agreement oder einen vergleichbaren Volumenlizenzvertrag verfügt, wenden Sie sich an Ihren Microsoft-Vertreter, um Ihre kostenlose Testversion einzurichten.

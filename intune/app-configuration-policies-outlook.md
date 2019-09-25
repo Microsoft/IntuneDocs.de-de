@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14eded43200aed7e9ebf4454bcde61133351e4e2
-ms.sourcegitcommit: 76d59edfd5900ce33c64470ae604eb3db016c8ca
+ms.openlocfilehash: d6fe60cf53f88186448cd9586d5c75fca4d517ad
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/22/2019
-ms.locfileid: "69979199"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167395"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Microsoft Outlook-Konfigurationseinstellungen 
 
@@ -30,7 +30,7 @@ Für registrierte Geräte:
 - Informationen zum Erstellen einer App-Konfigurationsrichtlinie für verwaltete iOS-Geräte finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-Geräte](app-configuration-policies-use-ios.md). 
 - Informationen zum Erstellen einer App-Konfigurationsrichtlinie für verwaltete Android-Geräte finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Android-Geräte](app-configuration-policies-use-android.md). 
 
-Informationen zu nicht registrierten Geräten finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Apps ohne Geräteregistrierung](https://docs.microsoft.com/intune/app-configuration-policies-managed-app). Damit können Sie eine App-Konfigurationsrichtlinie für Outlook für iOS und Android erstellen.
+Informationen zu nicht registrierten Geräten finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Apps ohne Geräteregistrierung](app-configuration-policies-managed-app.md). Damit können Sie eine App-Konfigurationsrichtlinie für Outlook für iOS und Android erstellen.
 
 ## <a name="configuration-settings"></a>Konfigurationseinstellungen
 

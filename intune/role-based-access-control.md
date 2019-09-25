@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e636e2df8271210d8938727eb99491e1ffdd5bdc
-ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
+ms.openlocfilehash: a5372d079b08a3a324d8ef1d98d26c07073ccd45
+ms.sourcegitcommit: 49f25efb9bc0f16f587f27878cf45de5e4e6a27f
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 09/18/2019
-ms.locfileid: "71080028"
+ms.locfileid: "71094672"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Rollenbasierte Zugriffssteuerung für Microsoft Intune
 
@@ -43,7 +43,7 @@ Wenn Sie eine Rolle abrufen möchten, klicken Sie auf **Intune** > **Rollen** > 
 - **Zuweisungen:** Eine Liste mit [Rollenzuweisungen]( assign-role.md), in der definiert wird, welche Benutzer Zugriff auf welche Benutzer/Geräte haben. Eine Rolle kann mehrere Zuweisungen aufweisen, und ein Benutzer kann Teil mehrerer Zuweisungen sein.
 
 ### <a name="built-in-roles"></a>Integrierte Rollen
-Sie können Gruppen ohne weitere Konfiguration integrierte Rollen zuweisen. Sie können den Namen, die Beschreibung, den Typ oder die Berechtigungen einer integrierten Rolle löschen oder bearbeiten. Eine vollständige Liste der Berechtigungen für die einzelnen integrierten Rollen finden Sie in der [Intune RBAC Table (Tabelle zur rollenbasierten Zugriffssteuerung in Intune)](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
+Sie können Gruppen ohne weitere Konfiguration integrierte Rollen zuweisen. Sie können den Namen, die Beschreibung, den Typ oder die Berechtigungen einer integrierten Rolle löschen oder bearbeiten.
 
 - **Helpdesk-Operator**: Führt Remoteaufgaben für Benutzer und Geräte durch und kann Anwendungen oder Richtlinien Benutzern oder Geräten zuweisen.
 - **Richtlinien- und Profil-Manager**: Verwaltet Konformitätsrichtlinien, Konfigurationsprofile, die Apple-Registrierung, unternehmensbezogene Geräte-IDs und Sicherheitsbaselines.

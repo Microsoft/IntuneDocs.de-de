@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5688039101e7cecf5631a0ad8dee4f343e183d96
-ms.sourcegitcommit: b30a2ba2b67aa2fc3421f0b2f6c5f361a0de612a
+ms.openlocfilehash: 325a0efeff56a2bc930fa0082023202f9c2e7696
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2019
-ms.locfileid: "69022855"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166775"
 ---
 # <a name="plan-communications"></a>Planen der Kommunikation
 
@@ -59,6 +59,6 @@ Wir haben kurze schrittweise Videos erstellt, die Ihren Benutzern beim einfachen
 
 Intune verfügt über zusätzliche Ressourcen, die Sie zur Förderung der Geräteregistrierung für Ihre Benutzer verwenden können:
 
-- Weitere Anleitungen zu den Registrierungsschritten für die mobile Betriebssystemplattform finden Sie unter [So informieren sie Ihre Endbenutzer über Microsoft Intune](https://docs.microsoft.com/intune/end-user-educate).
-- In [Intune device enrollment for IT administrators](https://docs.microsoft.com/intune/device-enrollment) (Intune-Geräteregistrierung für IT-Administratoren) wird erläutert, wie Android-, iOS- und Mac-Geräte in Intune registriert werden.
+- Weitere Anleitungen zu den Registrierungsschritten für die mobile Betriebssystemplattform finden Sie unter [So informieren sie Ihre Endbenutzer über Microsoft Intune](end-user-educate.md).
+- In [Intune device enrollment for IT administrators](device-enrollment.md) (Intune-Geräteregistrierung für IT-Administratoren) wird erläutert, wie Android-, iOS- und Mac-Geräte in Intune registriert werden.
 - Geben Sie die [URL der Unternehmensportal-App](http://go.microsoft.com/fwlink/?LinkID=396941) für Ihre Android-, iOS- und Windows-Benutzer frei. Diese URL führt zum jeweiligen Eintrag der Unternehmensportal-App auf Android-, iOS- und Windows-Geräten.
