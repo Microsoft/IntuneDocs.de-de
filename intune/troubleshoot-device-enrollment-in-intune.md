@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b995841152ee7290e41eed7988ff2b52b6bc66c
-ms.sourcegitcommit: c3a4fefbac8ff7badc42b1711b7ed2da81d1ad67
+ms.openlocfilehash: 23b3e8df9b3d5bafb567b6795b08d4be32aa8c88
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68375238"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71167818"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Behandlung von Problemen bei der Geräteregistrierung in Microsoft Intune
 
@@ -447,7 +447,7 @@ In unserer Dokumentation unter [Troubleshooting iOS device enrollment problems i
 
 |Fehlermeldung|Problem|Lösung|
 |---|---|---|
-|**IT-Administrator muss eine Lizenz für den Zugriff zuweisen**<br>Ihr IT-Administrator hat Ihnen keinen Zugriff für die Verwendung dieser App erteilt. Wenden Sie sich an Ihren IT-Administrator, oder versuchen Sie es später erneut.|Das Gerät kann nicht registriert werden, da das Benutzerkonto nicht über die erforderliche Lizenz verfügt.|Bevor Benutzer ihre Geräte registrieren können, müssen Sie die nötigen Lizenzen zugewiesen bekommen. Diese Meldung bedeutet, dass der Benutzer den falschen Lizenztyp für die Autorität für die Verwaltung mobiler Geräte hat. Diese Fehlermeldung wird z. B. angezeigt, wenn die beiden folgenden Punkte zutreffen: <ol><li>Intune wurde als Autorität für die Verwaltung mobiler Geräte festgelegt.</li><li>Sie verwenden eine System Center 2012 R2 Configuration Manager-Lizenz.</li></ol>Weitere Informationen finden Sie unter [Zuweisen von Intune-Lizenzen zu Benutzerkonten](https://docs.microsoft.com/intune/licenses-assign).|
+|**IT-Administrator muss eine Lizenz für den Zugriff zuweisen**<br>Ihr IT-Administrator hat Ihnen keinen Zugriff für die Verwendung dieser App erteilt. Wenden Sie sich an Ihren IT-Administrator, oder versuchen Sie es später erneut.|Das Gerät kann nicht registriert werden, da das Benutzerkonto nicht über die erforderliche Lizenz verfügt.|Bevor Benutzer ihre Geräte registrieren können, müssen Sie die nötigen Lizenzen zugewiesen bekommen. Diese Meldung bedeutet, dass der Benutzer den falschen Lizenztyp für die Autorität für die Verwaltung mobiler Geräte hat. Diese Fehlermeldung wird z. B. angezeigt, wenn die beiden folgenden Punkte zutreffen: <ol><li>Intune wurde als Autorität für die Verwaltung mobiler Geräte festgelegt.</li><li>Sie verwenden eine System Center 2012 R2 Configuration Manager-Lizenz.</li></ol>Weitere Informationen finden Sie unter [Zuweisen von Intune-Lizenzen zu Benutzerkonten](licenses-assign.md).|
 
 
 
