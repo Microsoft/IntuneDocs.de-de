@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f7a14d605ae3d1a5a951f40ec789c50c847c455
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 132123b15073569c9a9601841579ca4592f27bd7
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565705"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "71301907"
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>E-Mail-Profileinstellungen in Microsoft Intune für Windows Phone 8.1-Geräte
 
@@ -33,7 +32,7 @@ In diesem Artikel werden die E-Mail-Profileinstellungen dargestellt, die Sie fü
 - **Alle Einstellungen nur auf Windows Phone 8.1 anwenden:** Diese Einstellung können Sie im klassischen Intune-Portal konfigurieren. Im Azure-Portal kann diese Einstellung nicht geändert werden. Wenn hierfür **Konfiguriert** festgelegt wird, werden sämtliche Einstellungen nur auf Windows Phone 8.1-Geräten angewendet. Wenn hierfür **Nicht konfiguriert** festgelegt wird, gelten diese Einstellungen auch für mobile Windows 10-Geräte.
 - **E-Mail-Server:** Der Hostname Ihres Exchange-Servers.
 - **Kontoname** – Der Anzeigename für das E-Mail-Konto so, wie er den Benutzern auf ihren Geräten angezeigt wird.
-- **Benutzernamensattribut aus AAD:** Das Attribut in Active Directory (AD) oder Azure AD, mit dem der Benutzername für dieses E-Mail-Profil generiert wird. Wählen Sie **Primäre SMTP-Adresse** aus, z.B. **user1@contoso.com**, oder **Benutzerprinzipalname**, z.B. **user1** oder **user1@contoso.com**.
+- **Benutzernamensattribut aus AAD:** Das Attribut in Active Directory (AD) oder Azure AD, mit dem der Benutzername für dieses E-Mail-Profil generiert wird. Wählen Sie **Primäre SMTP-Adresse** aus, z.B. **user1@contoso.com** , oder **Benutzerprinzipalname**, z.B. **user1** oder **user1@contoso.com** .
 - **E-Mail-Adressattribut aus AAD:** Die Art der Generierung der E-Mail-Adresse für den Benutzer auf den einzelnen Geräten. Wählen Sie **Primäre SMTP-Adresse** aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden. Verwenden Sie **Benutzerprinzipalname** aus, um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden.
 
 
@@ -51,6 +50,6 @@ In diesem Artikel werden die E-Mail-Profileinstellungen dargestellt, die Sie fü
 ## <a name="content-sync-settings"></a>Inhaltssynchronisierungseinstellungen
 
 - **Zu synchronisierender Inhaltstyp:** Wählen Sie die Inhaltstypen aus, die auf Geräten synchronisiert werden sollen:
-    - **Kontakte**
-    - **Kalender**
-    - **Aufgaben**
+  - **Kontakte**
+  - **Kalender**
+  - **Aufgaben**

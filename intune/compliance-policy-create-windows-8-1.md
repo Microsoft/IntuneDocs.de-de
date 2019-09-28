@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 04/04/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4ed863378616f8001beab89177c642404287e7d3
-ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
-ms.translationtype: HT
+ms.openlocfilehash: 57a860edd99bfbbd41ff7df8fd98d0343f4f5ba6
+ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59424941"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "71304118"
 ---
 # <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Windows 8.1-Einstellungen, um Geräte mit Intune als konform oder nicht konform zu kennzeichnen
 

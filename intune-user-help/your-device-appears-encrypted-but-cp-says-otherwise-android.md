@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ec52069c4c53c464cfe5a1e17718ba6725fd0b5
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: caae22e59e8adb6952e9a69ff03c575ae4467b2d
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167433"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238975"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Gerät verschlüsselt, aber apps sagen andernfalls
 
@@ -50,7 +50,7 @@ Dieser Abschnitt gilt nur für die Unternehmensportal-app. Falls Ihr Gerät Ihne
 
 Einige Android-Geräte mit Version 7.0 und höher verschlüsseln Daten so, dass sie mit gewissen Android-Plattformstandards nicht kompatibel sind. Mit diesen Verschlüsselungsmethoden werden Geräteinformationen gefährdet. Dies hat zur Folge, dass diese Geräte nicht unterstützt werden.
 
-Eine nicht vollständige Liste der unterstützten Android-Geräte finden Sie im Artikel [Unterstützte Betriebssysteme und Browser in InTune](https://docs.microsoft.com/intune/supported-devices-browsers.md#supported-samsung-knox-standard-devices). Wenn Ihr Gerät nicht aufgeführt ist, wenden Sie sich an den Gerätehersteller, oder wenden Sie sich an den Support.
+Eine nicht vollständige Liste der unterstützten Android-Geräte finden Sie im Artikel [Unterstützte Betriebssysteme und Browser in InTune](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices). Wenn Ihr Gerät nicht aufgeführt ist, wenden Sie sich an den Gerätehersteller, oder wenden Sie sich an den Support.
 
 > [!Note]
 > Microsoft arbeitet mit Herstellern zusammen, um Probleme zu beheben, die wir beim Testen finden oder die Benutzer uns melden. Dieser Artikel wird aktualisiert, sobald neue Informationen verfügbar sind.

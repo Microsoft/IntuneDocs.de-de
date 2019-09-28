@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40fe8f1f54779d3ab0a49951ad13c0cb2d0f0ff5
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 4484dbc9a8348101c0f7409b009998baca32f8a4
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166796"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239424"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Registrieren eines von Ihrer Organisation bereitgestellten iOS-Geräts für die Verwaltung
 
@@ -35,7 +35,7 @@ Um mit dem Setup zu beginnen, schalten Sie Ihr Gerät ein, und melden Sie sich m
 
 ## <a name="what-is-apple-dep"></a>Was ist das Apple-Programm zur Geräteregistrierung?
 
-Möglicherweise hat Ihre Organisation ihre Geräte über ein sogenanntes *Apple-Programm zur Geräteregistrierung* erworben. Über das Apple-Programm zur Geräteregistrierung haben Organisationen die Möglichkeit, große Mengen von iOS- oder macOS-Geräten zu erwerben. Dann können sie diese Geräte über einen beliebigen Dienst (z.B. Intune), der die Verwaltung mobiler Geräte anbietet, konfigurieren und verwalten. Wenn Sie über Administratorberechtigungen verfügen und sich für das Apple-Programm zur Geräteregistrierung interessieren, erhalten Sie weitere Informationen unter [Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios.md).  
+Möglicherweise hat Ihre Organisation ihre Geräte über ein sogenanntes *Apple-Programm zur Geräteregistrierung* erworben. Über das Apple-Programm zur Geräteregistrierung haben Organisationen die Möglichkeit, große Mengen von iOS- oder macOS-Geräten zu erwerben. Dann können sie diese Geräte über einen beliebigen Dienst (z.B. Intune), der die Verwaltung mobiler Geräte anbietet, konfigurieren und verwalten. Wenn Sie über Administratorberechtigungen verfügen und sich für das Apple-Programm zur Geräteregistrierung interessieren, erhalten Sie weitere Informationen unter [Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
 
 ## <a name="set-up-your-ios-device"></a>Einrichten Ihres iOS-Geräts
 

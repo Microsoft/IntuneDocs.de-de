@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37f76f0e4a382dc356f6d5994c31178ad6f496df
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 22bdb41d8af69ed7e52ee3bcbc7775ac1d6768a6
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166521"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239396"
 ---
 # <a name="get-a-recovery-key-for-a-macos-device"></a>Wiederherstellungs Schlüssel für ein macOS-Gerät erhalten
 
@@ -47,7 +47,7 @@ Wenn ein Schlüssel nicht gefunden wird, das Gerät jedoch ordnungsgemäß versc
 
 ## <a name="it-pro-support"></a>IT Pro-Support
 
-Wenn Sie ein IT-Supportmitarbeiter sind und die Konfiguration von "flevault" für macOS-Geräte konfigurieren und verwalten möchten, finden Sie weitere Informationen unter [Verwenden der Geräteverschlüsselung mit InTune](https://docs.microsoft.com/intune/encrypt-devices.md).
+Wenn Sie ein IT-Supportmitarbeiter sind und die Konfiguration von "flevault" für macOS-Geräte konfigurieren und verwalten möchten, finden Sie weitere Informationen unter [Verwenden der Geräteverschlüsselung mit InTune](https://docs.microsoft.com/intune/encrypt-devices).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

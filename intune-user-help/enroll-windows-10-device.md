@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77b7f3adf4fa8675e3734f7eab8fbaa9391d952a
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 2e4def9f0e4e91f7db9e0a81e2ad55852df524f7
+ms.sourcegitcommit: 0d1a02fb3d2a801a95c2244e9ef13ecf22be2eb1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527954"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71302458"
 ---
 # <a name="enroll-windows-10-devices-with-intune-company-portal"></a>Registrieren von Windows 10-Geräten mit dem Intune-Unternehmensportal
 
@@ -45,7 +45,7 @@ In diesen Schritten wird beschrieben, wie Sie ein Windows 10-Gerät (Version 160
 
     ![Wählen Sie „Auf Geschäfts-,Schul- oder Unikonto zugreifen“ aus](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-4. Geben Sie die E-Mail-Adresse Ihres Geschäfts-, Schul- oder Unikontos ein, und wählen Sie **Weiter** aus.  
+4. Um zur InTune-Anmeldeseite Ihres Unternehmens zu gelangen, geben Sie Ihre Geschäfts-oder Schul-e-Mail-Adresse ein. Klicken Sie dann auf **Weiter**.  
 
 
    ![Enter your work or school-account](./media/w10-enroll-rs1-set-up-work-or-school-account.png)  

@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 05/9/2018
 ms.topic: archived
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75628ab45d4c0d7f43f07d530a76988ca5f772b8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 578dcf8a714197d9414e8ffeeec9a6c6e8a30311
+ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461157"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "71302173"
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Gewusst wie: Konfigurieren von Intune-Einstellungen für die iOS-App „Classroom“
 
@@ -78,15 +77,14 @@ Sie können Informationen mithilfe einer der folgenden Methoden in SDS importier
 
 ### <a name="configure-general-settings"></a>Konfigurieren allgemeiner Einstellungen
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**. Intune befindet sich im Abschnitt **Überwachung + Verwaltung**.
-3. Klicken Sie im Bereich **Intune** auf die Option **Gerätekonfiguration**.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+3. Wählen Sie im Bereich **Intune** die Option **Gerätekonfiguration** aus.
 2. Klicken Sie im Bereich **Gerätekonfiguration** im Abschnitt **Verwalten** auf **Profile**.
-5.  Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
-6.  Geben Sie im Bereich **Profil erstellen** einen **Namen** und eine **Beschreibung** für das iOS-Bildungsprofil ein.
-7.  Wählen Sie in der Dropdownliste **Plattform** die Option **iOS** aus.
-8.  Wählen Sie in der Dropdownliste **Profiltyp** die Option **Bildungswesen** aus.
-9.  Wählen Sie **Einstellungen** > **Konfigurieren** aus.
+5. Klicken Sie im Bereich „Profile“ auf **Profil erstellen**.
+6. Geben Sie im Bereich **Profil erstellen** einen **Namen** und eine **Beschreibung** für das iOS-Bildungsprofil ein.
+7. Wählen Sie in der Dropdownliste **Plattform** die Option **iOS** aus.
+8. Wählen Sie in der Dropdownliste **Profiltyp** die Option **Bildungswesen** aus.
+9. Wählen Sie **Einstellungen** > **Konfigurieren** aus.
 
 
 Im nächsten Abschnitt erstellen Sie Zertifikate, um eine Vertrauensstellung zwischen iPads von Lehrkräften und Schülern/Studenten herzustellen. Zertifikate werden verwendet, um Verbindungen zwischen Geräten ohne Eingabe von Benutzernamen und Kennwörtern nahtlos und automatisch zu authentifizieren.
@@ -124,8 +122,8 @@ Wenn Sie das Konfigurieren von Zertifikaten abgeschlossen haben, wählen Sie **O
 
 ### <a name="configure-student-certificates"></a>Konfigurieren von Zertifikaten für Schüler/Studenten
 
-1.  Klicken Sie im Bereich **Bildung** auf **Zertifikate für Schüler und Studenten**.
-2.  Klicken Sie im Bereich **Zertifikate für Schüler und Studenten** in der Liste **Gerätezertifikattyp für Schüler und Studenten** auf die Option **1:1**.
+1. Klicken Sie im Bereich **Bildung** auf **Zertifikate für Schüler und Studenten**.
+2. Klicken Sie im Bereich **Zertifikate für Schüler und Studenten** in der Liste **Gerätezertifikattyp für Schüler und Studenten** auf die Option **1:1**.
 
 #### <a name="configure-student-root-certificate"></a>Konfigurieren des Stammzertifikats für Schüler und Studenten
 
@@ -149,9 +147,9 @@ Wenn Sie das Konfigurieren von Zertifikaten abgeschlossen haben, wählen Sie **O
 
 ## <a name="finish-up"></a>Fertig stellen
 
-1.  Klicken Sie im Bereich **Bildung** auf OK.
-2.  Klicken Sie im Bereich **Profil erstellen** auf die Option **Erstellen**.
-    
+1. Klicken Sie im Bereich **Bildung** auf OK.
+2. Klicken Sie im Bereich **Profil erstellen** auf die Option **Erstellen**.
+
 Das Profil wird erstellt und im Bereich „Profilliste“ angezeigt.
 
 Weisen Sie das Profil den Geräten der Schüler und Studenten in den Kursraumgruppen zu, die erstellt wurden, als Sie Ihre Schul-/Unidaten mit Azure AD synchronisiert haben (siehe [Zuweisen von Geräteprofilen](device-profile-assign.md)).

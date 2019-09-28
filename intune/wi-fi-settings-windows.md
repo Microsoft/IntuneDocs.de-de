@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bbd90b5a317629bd5b4d87b619d89023053518d
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 528819452accf4a7f17e54b3c05693dee5cab74f
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884258"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239452"
 ---
 # <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Hinzufügen von WLAN-Einstellungen für Geräte mit Windows 10 und höher in Intune
 
@@ -62,6 +62,9 @@ Dieser Artikel beschreibt diese Einstellungen.
     
       > [!NOTE]
       > Wenn Sie das WLAN-Profil speichern, wird der von Ihnen angegebene PSK-Wert aus Sicherheitsgründen nicht angezeigt. Als Grenzwert für den vorinstallierten Schlüssel wird weiterhin **Nicht konfiguriert** angezeigt, obwohl der PSK-Wert in dem Profil gespeichert ist. Wenn Sie den PSK-Wert ändern möchten, geben Sie einen neuen Schlüssel ein, und speichern Sie das Profil. Wenn Sie einen PSK-Wert speichern, bearbeiten Sie die Richtlinie, und lassen Sie das PSK-Feld leer. Dann wird der bereits vorhandene PSK-Wert weiter verwendet.
+      
+      > [!IMPORTANT]
+      > Das PSK ist für alle Geräte, für die Sie das profule als Ziel haben, identisch. Wenn der Schlüssel kompromittiert ist, kann er von jedem Gerät zum Herstellen einer Verbindung mit dem WLAN-Netzwerk verwendet werden. Sorgen Sie für eine sichere Sicherheit Ihrer PSS.
 
 - **Proxyeinstellungen für Unternehmen**: Wählen Sie die Proxyeinstellungen aus, die innerhalb Ihrer Organisation verwendet werden sollen. Folgende Optionen sind verfügbar:
   - **Keine**: Es sind keine Proxyeinstellungen konfiguriert.

@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a472e4d8c3ef7b922f02b4d2407362ba738486c
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 91aefbc8c3960100ce5e9164ce48a2b9d33c3f3e
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167545"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238960"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Aufheben der Registrierung Ihres Android-Geräts für die Verwaltung  
 
@@ -64,7 +64,7 @@ Stattdessen können Sie auch auf **Einstellungen** > **Apps** > **Unternehmenspo
 
 Als letzte Alternative können Sie die App über das Gerät als Geräteadministrator deinstallieren.  
 
-Wenn Sie ein unternehmenseigenes Gerät besitzen, setzt Ihre Organisation möglicherweise voraus, dass das Unternehmensportal immer auf dem Gerät installiert ist. Wenn Sie es deinstallieren, könnten Sie den Zugriff auf geschützte Unternehmensressourcen wie E-Mails, Apps, WLAN-Netzwerke oder VPNs verlieren, bis die App neu installiert wird. Weitere Informationen zum Installieren, Aktualisieren und Entfernen erforderlicher Apps finden Sie unter [Hinzufügen von Apps zu Microsoft Intune](https://docs.microsoft.com/intune/apps-add.md#apps-that-are-added-automatically-by-intune).  
+Wenn Sie ein unternehmenseigenes Gerät besitzen, setzt Ihre Organisation möglicherweise voraus, dass das Unternehmensportal immer auf dem Gerät installiert ist. Wenn Sie es deinstallieren, könnten Sie den Zugriff auf geschützte Unternehmensressourcen wie E-Mails, Apps, WLAN-Netzwerke oder VPNs verlieren, bis die App neu installiert wird. Weitere Informationen zum Installieren, Aktualisieren und Entfernen erforderlicher Apps finden Sie unter [Hinzufügen von Apps zu Microsoft Intune](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune).  
 
 Im Folgenden erfahren Sie, wie Sie das Unternehmensportal als Geräteadministrator deaktivieren. Die tatsächlichen Namen der einzelnen Einstellungen können je nach Android-Gerät variieren.  
 

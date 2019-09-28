@@ -18,12 +18,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c518e0eeb18f51fa17d15a72735e319aef1d647d
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 6a545bff8624f4447ca9805aecf6d4d288fe4314
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71167472"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239517"
 ---
 # <a name="enable-code-integrity"></a>Aktivieren der Codeintegrität
 
@@ -35,7 +35,7 @@ Wenn Sie sich als erweiterter Gerätebenutzer identifizieren und die Schritte se
 
 ## <a name="additional-resources-for-it-administrators"></a>Zusätzliche Ressourcen für IT-Administratoren
 
-Wenn Sie ein InTune-Administrator sind und mehr über die Konformitäts Einstellungen der Geräte Integrität von InTune erfahren möchten, finden Sie weitere Informationen unter [Hinzufügen einer Geräte Konformitäts Richtlinie für Windows 10-Geräte in InTune](https://docs.microsoft.com/intune/compliance-policy-create-windows.md). Eine ausführliche Betrachtung der Konformitäts Aktionen, die Sie in InTune ausführen können, finden Sie unter [healthattestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
+Wenn Sie ein InTune-Administrator sind und mehr über die Konformitäts Einstellungen der Geräte Integrität von InTune erfahren möchten, finden Sie weitere Informationen unter [Hinzufügen einer Geräte Konformitäts Richtlinie für Windows 10-Geräte in InTune](https://docs.microsoft.com/intune/compliance-policy-create-windows). Eine ausführliche Betrachtung der Konformitäts Aktionen, die Sie in InTune ausführen können, finden Sie unter [healthattestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
 ## <a name="next-steps"></a>Nächste Schritte
 

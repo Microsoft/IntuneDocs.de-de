@@ -8,7 +8,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -16,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f82950259746010c347e5dafa832a7335026721c
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 20621246f76810ba7efaac3cadbdde1a0229c923
+ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799310"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "71302342"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Einstellungen für Geräteeinschränkungen für Windows 10 Team in Microsoft Intune
 
@@ -34,8 +33,8 @@ In diesem Artikel erhalten Sie Informationen zu den Einstellungen für Microsoft
 
 - **Bildschirm aktivieren, wenn eine Person im Raum ist:** Erlaubt das automatische Aktivieren des Geräts, wenn der Sensor eine Person im Raum erkennt.
 - **Anzeige von Besprechungsinformationen auf dem Willkommensbildschirm:** Aktivieren Sie diese Option, um die Informationen auszuwählen, die auf der Kachel „Besprechungen“ auf dem Willkommensbildschirm angezeigt werden. Sie können:
-    - **Nur Organisator und Zeit anzeigen**
-    - **Organisator, Zeit und Thema anzeigen (Thema bei privaten Besprechungen ausblenden)**
+  - **Nur Organisator und Zeit anzeigen**
+  - **Organisator, Zeit und Thema anzeigen (Thema bei privaten Besprechungen ausblenden)**
 - **URL für Hintergrundbild des Willkommensbildschirms:** Aktivieren Sie diese Einstellung, um auf dem **Willkommensbildschirm** von Windows 10 Team-Geräten einen benutzerdefinierten Hintergrund aus der angegebenen URL anzuzeigen.<br>Das Bild muss im PNG-Format vorliegen und die URL muss mit **https://** beginnen.
 
 ## <a name="azure-operational-insights"></a>Azure Operational Insights

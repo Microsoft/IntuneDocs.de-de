@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9066fefccde39ccac281f3bda9008168ea28b77f
-ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
+ms.openlocfilehash: 0de0e676e72d46bde922fd97b651cc1a9268e45e
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71166618"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239772"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Registrieren eines von Ihrer Organisation bereitgestellten macOS-Geräts für die Verwaltung
 
@@ -35,7 +35,7 @@ Wenn Sie mit dem Setup der Verwaltung beginnen möchten, schalten Sie Ihr Gerät
 
 ## <a name="what-is-apple-dep"></a>Was ist das Apple-Programm zur Geräteregistrierung?
 
-Möglicherweise hat Ihre Organisation ihre Geräte über ein sogenanntes *Apple-Programm zur Geräteregistrierung* erworben. Über das Apple-Programm zur Geräteregistrierung haben Organisationen die Möglichkeit, große Mengen von iOS- oder macOS-Geräten zu erwerben. Dann können sie diese Geräte über einen beliebigen Dienst (z.B. Intune), der die Verwaltung mobiler Geräte anbietet, konfigurieren und verwalten. Wenn Sie über Administratorberechtigungen verfügen und sich für das Apple-Programm zur Geräteregistrierung interessieren, erhalten Sie weitere Informationen unter [Automatisches Registrieren von macOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos.md).  
+Möglicherweise hat Ihre Organisation ihre Geräte über ein sogenanntes *Apple-Programm zur Geräteregistrierung* erworben. Über das Apple-Programm zur Geräteregistrierung haben Organisationen die Möglichkeit, große Mengen von iOS- oder macOS-Geräten zu erwerben. Dann können sie diese Geräte über einen beliebigen Dienst (z.B. Intune), der die Verwaltung mobiler Geräte anbietet, konfigurieren und verwalten. Wenn Sie über Administratorberechtigungen verfügen und sich für das Apple-Programm zur Geräteregistrierung interessieren, erhalten Sie weitere Informationen unter [Automatisches Registrieren von macOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-macos).  
 
 ## <a name="get-your-device-managed"></a>Registrieren Ihres Geräts für die Verwaltung
 

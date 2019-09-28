@@ -7,7 +7,6 @@ ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
 ms.topic: reference
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fed8c33bbf4ff302d08576dc5e34ce1257425090
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bea8d6d8e3503b9ec6fba7b2eda4842b68786e54
+ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565246"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "71302311"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>Windows Holographic for Business-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune
 
@@ -91,9 +90,9 @@ Ein Kiosk-Gerät führt in der Regel eine spezifische App aus. Benutzer werden d
   - **Kiosk mit einzelner App**: Das Profil erlaubt dem Gerät, nur eine App auszuführen. Wenn sich der Benutzer anmeldet, wird eine bestimmte App gestartet. Dieser Modus hindert den Benutzer auch daran, neue Apps zu öffnen oder die App zu ändern, die ausgeführt wird.
   - **Kiosk mit mehreren Apps**: Das Profil ermöglicht dem Gerät, mehrere Apps auszuführen. Es sind nur die Apps, die Sie hinzufügen, für den Benutzer verfügbar. Der Vorteil eines Kiosks mit mehreren Apps oder eines Geräts mit festem Zweck ist eine leicht verständliche Benutzererfahrung für einzelne Personen, da sie nur auf die Apps zugreifen, die sie benötigen. Apps, die sie nicht benötigen, werden aus der Ansicht entfernt. 
   
-    Wenn Sie einem Kiosk mit mehreren Apps Apps hinzufügen, fügen Sie auch eine Datei für das Layout des Startmenüs hinzu. Die [Datei für das Layout des Startmenüs](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune) enthält XML-Beispiele, die in Intune verwendet werden können. 
+    Wenn Sie einem Kiosk mit mehreren Apps Apps hinzufügen, fügen Sie auch eine Datei für das Layout des Startmenüs hinzu. Die [Datei für das Layout des Startmenüs](/hololens/hololens-kiosk#start-layout-file-for-mdm-intune-and-others) enthält XML-Beispiele, die in Intune verwendet werden können. 
 
-#### <a name="single-app-kiosks"></a>Kiosks für einzelne Apps
+### <a name="single-app-kiosks"></a>Kiosks für einzelne Apps
 
 Legen Sie folgende Einstellungen fest:
 
