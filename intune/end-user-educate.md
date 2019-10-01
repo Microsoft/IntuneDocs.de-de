@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 06/01/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4f8405aceaa1fd9c00b966d03a1f7b80e5946d96
-ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.openlocfilehash: 52f8af06fffb3643714ed318e474b73be21963ed
+ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59569778"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71239800"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>So informieren sie Ihre Endbenutzer über Microsoft Intune
 
@@ -44,7 +43,7 @@ __Wie erfahren sind die Benutzer im Bereich Technologie?__ Der Erfahrungs- und W
 
 __Was bedeutet Mobilitätsverwaltung für Benutzer?__ Benutzer verstehen möglicherweise nicht, welches Ausmaß Ihr Zugriff auf ihre Geräte und Informationen hat. Es ist wahrscheinlich, dass Benutzer Bedenken haben, dass die IT-Abteilung und die Führungsebene ihre Handlungen überwachen. Weniger erfahrene Gerätebenutzer gehen möglicherweise davon aus, dass alle Aktivitäten auf Ihrem Gerät privat sind. 
 
-__Welche negativen Auswirkungen hat Intune für Benutzer?__  Bedenken und beachten Sie, dass Benutzer Zeit investieren müssen, um Apps zu installieren, Geräte zu registrieren und Konformität zu gewährleisten. Höchste Priorität von Intune-Bereitstellungen hat das Sichern von Unternehmensdaten. Die Einstellung von Benutzern gegenüber der Geräteverwaltung kann negativ beeinflusst werden, wenn Sie Richtlinien erzwingen, die Folgendes umfassen:  
+__Welche negativen Auswirkungen hat Intune für Benutzer?__  Bedenken und beachten Sie, dass Benutzer Zeit investieren müssen, um Apps zu installieren, Geräte zu registrieren und Konformität zu gewährleisten. Höchste Priorität von Intune-Bereitstellungen hat das Sichern von Unternehmensdaten. Die Einstellung von Benutzern gegenüber der Geräteverwaltung kann negativ beeinflusst werden, wenn Sie Richtlinien erzwingen, die z. B. Folgendes umfassen:  
 * Unverhältnismäßig viele erforderliche Kennungen auf persönlichen Geräten
 * Senden erforderlicher App-Updates während wichtiger geschäftlicher Telefongespräche  
 
@@ -58,9 +57,9 @@ Sehen Sie sich die folgende Liste mit Tipps an, um die Intune-Bereitstellung in 
 
 * __Erreichbar sein.__ Informieren Sie Benutzer, an wen sie sich bezüglich Geräteproblemen wenden können. Wenn Sie das [Unternehmensportal anpassen](company-portal-customize.md), achten Sie darauf, dass Sie die Kontaktinformationen Ihres IT-Administrators angeben.
 
-* __Persönlich sein.__ Stellen Sie Informationen bereit, die sich explizit auf die Bereitstellung in Ihrem Unternehmen beziehen. Wenn Sie dies tun, vermittelt dies Benutzern, dass Sie sich darum bemühen, den Prozess für sie so einfach wie möglich zu gestalten. Sie können diese [anpassbare Vorlage für die Intune-Benutzerregistrierung](https://gallery.technet.microsoft.com/office/Intune-End-User-Enrollment-3a0c9b0c) verwenden, um Ihre eigenen Registrierungsanweisungen für Ihre Benutzer zu verfassen.
+* __Persönlich sein.__ Stellen Sie Informationen bereit, die sich explizit auf die Bereitstellung in Ihrem Unternehmen beziehen. Wenn Sie dies tun, vermittelt dies Benutzern, dass Sie sich darum bemühen, den Prozess für sie so einfach wie möglich zu gestalten. Sie können dieses [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit) verwenden, um selbst Registrierungsanweisungen für Ihre Benutzer zu verfassen.
 
-* __Unterschiedliche Kommunikationsformen finden.__ Benutzer verwenden [unterschiedlichen Lernmethoden](https://www.umassd.edu/dss/resources/facultystaff/howtoteachandaccommodate/howtoaccommodatedifferentlearningstyles/) und ziehen bestimmte Arten der Informationsaufnahme vor. Für visuelle Lerner stellt Intune [Videos zur Registrierung verschiedener Gerätetypen](https://channel9.msdn.com/Series/IntuneEnrollment) auf Channel 9 bereit. Sie können Videos direkt auf Ihrer [SharePoint-Website](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) einbetten. Sie können zudem lokale Kopien des Videos oder des Audiotitels herunterladen.
+* __Unterschiedliche Kommunikationsformen finden.__ Benutzer verwenden [unterschiedlichen Lernmethoden](https://www.umassd.edu/dss/resources/faculty--staff/how-to-teach-and-accommodate/how-to-accommodate-different-learning-styles/) und ziehen bestimmte Arten der Informationsaufnahme vor. Für visuelle Lerner stellt Intune [Videos zur Registrierung verschiedener Gerätetypen](https://channel9.msdn.com/Series/IntuneEnrollment) auf Channel 9 bereit. Sie können Videos direkt auf Ihrer [SharePoint-Website](https://support.office.com/article/Embed-a-video-from-Office-365-Video-59e19984-c34e-4be8-889b-f6fa93910581) einbetten. Sie können zudem lokale Kopien des Videos oder des Audiotitels herunterladen.
 
 * __Aufmerksam sein.__ Die Intune-Servicequalität wirkt sich auch auf Ihre Produktivität aus. Wenn Sie verstehen, welchen Prozess die Benutzer durchlaufen, können Sie leichter Probleme von Benutzern und Geräten beheben. Sie können z.B. in Erfahrung bringen, wie Ihre Benutzer ihre Apps erhalten. Wenn Sie dies frühzeitig wissen, können Sie Probleme einfacher und schneller diagnostizieren und beheben.
 

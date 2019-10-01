@@ -7,22 +7,21 @@ ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
-ms.reviewer: amyro
+ms.reviewer: chmaguir
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14d5e01577100e0a66cfcf6ce935289a1dc26fab
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: dd8b35fbbff89ca7f4c259e1903f4c9f9a6e3b38
+ms.sourcegitcommit: d2989b9992d10d133573d9bc31479659fb7e242c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57459899"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71238399"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Zuweisen von Lizenzen zu Benutzern, damit sie ihre Geräte bei Intune registrieren können
 
@@ -45,7 +44,7 @@ Sie können das [Microsoft 365 Admin Center](http://go.microsoft.com/fwlink/p/?L
 4. Das Benutzerkonto verfügt jetzt über die erforderlichen Berechtigungen, um den Dienst zu nutzen und Geräte für die Verwaltung zu registrieren.
 
 > [!NOTE]
-> Benutzer werden erst in der Administratorkonsole angezeigt, nachdem sie ein Gerät registriert haben. Darüber hinaus können Sie eine Gruppe von Benutzern auswählen, die Sie gleichzeitig bearbeiten möchten; so können Sie für alle Benutzer entweder eine Lizenz hinzufügen oder diese ersetzen.
+> Benutzer werden im klassischen Intune-Portal erst angezeigt, wenn sie ein Gerät über den Intune-PC-Client registriert haben. Darüber hinaus können Sie eine Gruppe von Benutzern auswählen, die Sie gleichzeitig bearbeiten möchten; so können Sie für alle Benutzer entweder eine Lizenz hinzufügen oder diese ersetzen.
 
 ## <a name="assign-an-intune-license-by-using-azure-active-directory"></a>Zuweisen einer Intune-Lizenz mithilfe von Azure Active Directory
 
@@ -63,7 +62,7 @@ Wenn Sie eine Intune Education-Lizenz zuweisen, stellen Sie sicher, dass auch ei
 In dieser [Übersicht über die Synchronisierung von Schul-/Unidaten](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91) erfahren Sie mehr zu diesem Feature.
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Auswirkungen von Benutzer- und Gerätelizenzen auf den Zugriff auf Dienste
-* Jeder **Benutzer**, dem Sie eine Benutzersoftwarelizenz zuweisen, kann die Onlinedienste und zugehörige Software (einschließlich System Center) zum Verwalten von Anwendungen und von bis zu 15 Geräten nutzen.
+* Jeder **Benutzer**, dem Sie eine Benutzersoftwarelizenz zuweisen, kann die Onlinedienste und zugehörige Software (einschließlich System Center) zum Verwalten von Anwendungen und bis zu 15 MDM-Geräten nutzen. Der Intune-PC-Agent gestattet die Nutzung von fünf physischen und einem virtuellen Computer pro Benutzerlizenz.
 * Sie können Lizenzen für alle Geräte separat von Benutzerlizenzen erwerben. Gerätelizenzen müssen den Geräten nicht zugewiesen werden. Jedes Gerät, das auf die Onlinedienste und zugehörige Software (einschließlich System Center-Software) zugreift und sie nutzt, muss über eine Gerätelizenz verfügen.
 * Wenn ein Gerät von mehreren Benutzern verwendet wird, erfordert jedes Gerät eine Gerätesoftwarelizenz, oder alle Benutzer benötigen eine Benutzersoftwarelizenz.
 

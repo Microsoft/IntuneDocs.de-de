@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a24c4b45b962f77846b4f7f7add3872daf38635
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 36e7b8468e4ee9d1f6be71a82d18f066bd7568d4
+ms.sourcegitcommit: 9110124a481160039d476cf0374a4fa0464a8509
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883791"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71256195"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Erneutes Zuweisen von Richtlinien für bedingten Zugriff aus dem klassischen Intune-Portal im Azure-Portal
 
@@ -194,15 +194,9 @@ Sobald Sie Ihre Richtlinien für bedingten Zugriff im Azure-Portal neu zugewiese
 
 ### <a name="to-disable-the-conditional-access-policies"></a>So deaktivieren Sie die Richtlinien für bedingten Zugriff
 
-1. Wechseln Sie zum [klassischen Intune-Portal](https://manage.microsoft.com), und melden Sie sich mit Ihren Anmeldeinformationen an.
+Da MDM aus dem klassischen Intune-Portal entfernt wurde, stellen wir Ihnen den folgenden Link zur Verfügung, damit Sie diese klassischen Richtlinien anzeigen und deaktivieren können:
 
-2. Wählen Sie **Richtlinie** im linken Menü aus.
-
-3. Wählen Sie **Bedingter Zugriff** und anschließend den Microsoft-Clouddienst (z.B. Exchange Online oder SharePoint Online) aus, für den Sie eine Richtlinie für bedingten Zugriff erstellt haben.
-
-4. Deaktivieren Sie die Option **Richtlinie für bedingten Zugriff aktivieren**, und klicken Sie dann auf **Speichern**.
-
-    ![Abbildung: Deaktivieren von Richtlinien für bedingten Zugriff im klassischen Intune-Portal](./media/reassign-ca-18.png)
+https://portal.azure.com/?microsoft_aad_iam_classicPolicyDontHide=true#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/ClassicPolicies
 
 ## <a name="see-also"></a>Siehe auch
 

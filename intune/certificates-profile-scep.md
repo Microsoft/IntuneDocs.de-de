@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 09/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e553229530f826ead91be981ff446b7cb3ebbf2
-ms.sourcegitcommit: 7269abaefb2857bc8b343896bb2138bdb01bf8dc
+ms.openlocfilehash: a9091b4623e456f5b00134542282b2032ce70e6a
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70214284"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163740"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Erstellen und Zuweisen eines SCEP-Zertifikatprofils in Intune
 
@@ -38,9 +38,19 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
 3. Geben Sie für das SCEP-Zertifikatprofil einen **Namen** und eine **Beschreibung** ein.
 4. Wählen Sie in der Dropdownliste **Plattform** eine [unterstützte Geräteplattform](certificates-configure.md#supported-platforms-and-certificate-profiles) für dieses SCEP-Zertifikat aus. 
 5. Wählen Sie in der Dropdownliste **Profiltyp** die Option **SCEP-Zertifikat** aus.  
+   
+   Für die **Android Enterprise**-Plattform ist der *Profiltyp* in zwei Kategorien unterteilt: *Nur Gerätebesitzer* und *Nur Arbeitsprofil*. Stellen Sie sicher, dass Sie das richtige SCEP-Zertifikatprofil für die von Ihnen verwalteten Geräte auswählen.  
 
-   > [!NOTE]  
-   > Für die **Android Enterprise**-Plattform ist der *Profiltyp* in zwei Kategorien unterteilt: *Nur Gerätebesitzer* und *Nur Arbeitsprofil*.  SCEP-Zertifikatprofile werden nur für die Option *Nur Arbeitsprofil* unterstützt.
+   Bei SCEP-Zertifikatprofilen für das Profil *Nur Gerätebesitzer* gelten folgende Einschränkungen:  
+
+   1. Die folgenden Variablen werden nicht unterstützt:  
+
+      - CN={{OnPrem_Distinguished_Name}}  
+      - CN={{onPremisesSamAccountName}}  
+
+   2. Unter „Überwachung“ ist die Zertifikatberichterstellung für SCEP-Zertifikatprofile für Gerätebesitzer nicht verfügbar.
+   
+   3. Die Sperrung von Zertifikaten, die über SCEP-Zertifikatprofile für Gerätebesitzer bereitgestellt wurden, wird in Intune nicht unterstützt, kann aber mit einem externen Prozess oder direkt über die Zertifizierungsstelle durchgeführt werden.
 
 6. Klicken Sie auf **Einstellungen**, und nehmen Sie die folgenden Konfigurationen vor:
 
@@ -73,15 +83,15 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
        - **Seriennummer**
        - **Benutzerdefiniert**: Bei Auswahl dieser Option wird auch ein **benutzerdefiniertes** Textfeld angezeigt. In dieses Feld können Sie ein benutzerdefiniertes Format für den Antragstellernamen, einschließlich Variablen, eingeben. Das benutzerdefinierte Format unterstützt zwei Variablen: **Common Name (CN)** (Allgemeiner Name) und **Email (E)** (E-Mail-Adresse). **Allgemeiner Name (CN)** kann auf eine der folgenden Variablen festgelegt werden:
 
-         - **CN={{UserName}}**: Der Benutzerprinzipalname des Benutzers (z. B. janedoe@contoso.com)
-         - **CN={{AAD_Device_ID}}**: Eine ID, die zugewiesen wird, wenn Sie ein Gerät in Azure Active Directory (AD) registrieren. Diese ID wird in der Regel für die Authentifizierung bei Azure Active Directory verwendet.
-         - **CN={{SERIALNUMBER}}**: Die eindeutige Seriennummer (SN), die in der Regel vom Hersteller zum Identifizieren eines Geräts verwendet wird.
-         - **CN={{IMEINumber}}**: Die eindeutige IMEI-Nummer (International Mobile Equipment Identity), die verwendet wird, um ein Mobiltelefon zu identifizieren.
-         - **CN={{OnPrem_Distinguished_Name}}**: Eine Sequenz von durch Kommas getrennte relative definierte Namen wie *CN=Jane Doe, OU=UserAccounts, DC=corp, DC=contoso, DC=com*.
+         - **CN={{UserName}}** : Der Benutzerprinzipalname des Benutzers (z. B. janedoe@contoso.com)
+         - **CN={{AAD_Device_ID}}** : Eine ID, die zugewiesen wird, wenn Sie ein Gerät in Azure Active Directory (AD) registrieren. Diese ID wird in der Regel für die Authentifizierung bei Azure Active Directory verwendet.
+         - **CN={{SERIALNUMBER}}** : Die eindeutige Seriennummer (SN), die in der Regel vom Hersteller zum Identifizieren eines Geräts verwendet wird.
+         - **CN={{IMEINumber}}** : Die eindeutige IMEI-Nummer (International Mobile Equipment Identity), die verwendet wird, um ein Mobiltelefon zu identifizieren.
+         - **CN={{OnPrem_Distinguished_Name}}** : Eine Sequenz von durch Kommas getrennte relative definierte Namen wie *CN=Jane Doe, OU=UserAccounts, DC=corp, DC=contoso, DC=com*.
 
            Stellen Sie sicher, dass Sie das Benutzerattribut *onpremisesdistinguishedname* mithilfe von [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) mit Azure AD synchronisieren, um die Variable *{{OnPrem_Distinguished_Name}}* zu verwenden.
 
-         - **CN={{onPremisesSamAccountName}}**: Administratoren können das Attribut „samAccountName“ aus Active Directory mithilfe von Azure AD Connect in einem Attribut mit dem Namen *onPremisesSamAccountName* mit Azure AD synchronisieren. Intune kann diese Variable als Teil einer Zertifikatsausstellungsanforderung im Antragsteller eines Zertifikats ersetzen. Das Attribut „samAccountName“ ist der zur Unterstützung von Clients und Servern aus einer früheren Version von Windows (vor Windows 2000) verwendete Benutzeranmeldename. Das Format des Benutzeranmeldenamens lautet wie folgt: *DomainName\testUser*oder nur *testUser*.
+         - **CN={{onPremisesSamAccountName}}** : Administratoren können das Attribut „samAccountName“ aus Active Directory mithilfe von Azure AD Connect in einem Attribut mit dem Namen *onPremisesSamAccountName* mit Azure AD synchronisieren. Intune kann diese Variable als Teil einer Zertifikatsausstellungsanforderung im Antragsteller eines Zertifikats ersetzen. Das Attribut „samAccountName“ ist der zur Unterstützung von Clients und Servern aus einer früheren Version von Windows (vor Windows 2000) verwendete Benutzeranmeldename. Das Format des Benutzeranmeldenamens lautet wie folgt: *DomainName\testUser*oder nur *testUser*.
 
             Stellen Sie sicher, dass Sie das Benutzerattribut *onPremisesSamAccountName* mithilfe von [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) mit Azure AD synchronisieren, um die Variable *{{onPremisesSamAccountName}}* zu verwenden.
 
@@ -149,7 +159,7 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
 
         > [!IMPORTANT]  
         > - Wenn Sie eine Gerätezertifikatvariable verwenden, schließen Sie den Variablennamen in geschweifte Klammern ein („{ }“).  
-        > - Verwenden Sie für den Text nach der Variable keine geschweiften Klammern **{ }**, senkrechten Striche **|** und Semikolons **;**.  
+        > - Verwenden Sie für den Text nach der Variable keine geschweiften Klammern **{ }** , senkrechten Striche **|** und Semikolons **;** .  
         > - Geräteeigenschaften, die im *Betreff* oder *alternativen Antragstellernamen* eines Gerätezertifikats wie **IMEI**, **SerialNumber** oder **FullyQualifiedDomainName** verwendet werden, sind Eigenschaften, die von einer Person mit Zugriff auf das Gerät gespooft sein könnten.  
         > - Ein Gerät muss alle in einem Zertifikatprofil für dieses Profil angegebenen Variablen unterstützen, um auf diesem Gerät installiert werden zu können.  Wenn **{{IMEI}}** beispielsweise im alternativen Antragstellernamen eines SCEP-Profils verwendet wird und einem Gerät ohne IMEI-Nummer zugewiesen ist, tritt bei der Profilinstallation ein Fehler auf.
 
@@ -158,7 +168,7 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
 
      Wenn die Gültigkeitsdauer des Zertifikats in der Zertifikatvorlage beispielsweise zwei Jahre beträgt, können Sie als Wert „ein Jahr“ eingeben, aber nicht „fünf Jahre“. Zudem muss der Wert niedriger als die verbleibende Gültigkeitsdauer des Zertifikats der ausstellenden Zertifizierungsstelle sein.
 
-   - **Schlüsselspeicheranbieter (KSP)**:  
+   - **Schlüsselspeicheranbieter (KSP)** :  
      *(Gilt für:  Windows 8.1 und höher sowie Windows 10 und höher)*  
      
      Geben Sie an, wo der Schlüssel für das Zertifikat gespeichert wird. Wählen Sie aus den folgenden Werten aus:  
@@ -173,7 +183,7 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
      - **Digitale Signatur**: Der Schlüsselaustausch wird nur gestattet, wenn der Schutz des Schlüssels durch eine digitale Signatur unterstützt wird.
      - **Schlüsselverschlüsselung**: Der Schlüsselaustausch wird nur gestattet, wenn der Schlüssel verschlüsselt ist.  
 
-   - **Schlüsselgröße (Bits)**:  
+   - **Schlüsselgröße (Bits)** :  
      Wählen Sie die Anzahl der Bits aus, die im Schlüssel enthalten sein sollen.  
 
    - **Hashalgorithmus**:  
@@ -187,7 +197,7 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
    - **Erweiterte Schlüsselverwendung**:  
      Fügen Sie Werte für den beabsichtigten Zweck des Zertifikats hinzu. In den meisten Fällen erfordert das Zertifikat *Clientauthentifizierung*, damit der Benutzer bzw. das Gerät auf einem Server authentifiziert werden kann. Sie können ggf. weitere Schlüsselverwendungen hinzufügen.
 
-   - **Verlängerungsschwellenwert (%)**:  
+   - **Verlängerungsschwellenwert (%)** :  
      Geben Sie den Prozentsatz der Zertifikatgültigkeitsdauer an, die verbleibt, bevor das Gerät eine Verlängerung des Zertifikats anfordert. Wenn Sie beispielsweise „20“ eingeben und das Zertifikat bereits zu 80 % abgelaufen ist, der Vorgang aber weiter fortgesetzt wird, bis die Erneuerung erfolgreich ist, wird versucht, das Zertifikat zu erneuern. Bei der Erneuerung wird ein neues Zertifikat generiert, das zu einem neuen öffentlichen/privaten Schlüsselpaar führt.
 
    - **SCEP-Server-URLs**:  
@@ -209,7 +219,7 @@ Wenn Ihr Antragstellername eines der Sonderzeichen enthält, verwenden Sie eine 
 - Entfernen Sie das Sonderzeichen aus dem CN-Wert.  
 
 **Beispielsweise** haben Sie einen Antragstellernamen, der als *Test user (TestCompany, LLC)* angezeigt wird.  Eine CSR, die einen CN mit dem Komma zwischen *TestCompany* und *LLC* umfasst, stellt ein Problem dar.  Das Problem kann vermieden werden, indem Sie den gesamten CN in Anführungszeichen setzen oder das Komma zwischen *TestCompany* und *LLC* entfernen:
-- **Fügen Sie Anführungszeichen hinzu**: *CN=*”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
+- **Fügen Sie Anführungszeichen hinzu**: *CN=* ”Test User (TestCompany, LLC)”,OU=UserAccounts,DC=corp,DC=contoso,DC=com*
 - **Entfernen Sie das Komma**: *CN=Test User (TestCompany LLC),OU=UserAccounts,DC=corp,DC=contoso,DC=com*
 
  Allerdings tritt bei Versuchen, das Komma mithilfe eines umgekehrten Schrägstrichs mit einem Escapezeichen zu versehen, ein Fehler in den CRP-Protokollen auf:  

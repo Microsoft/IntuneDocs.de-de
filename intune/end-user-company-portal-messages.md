@@ -8,7 +8,6 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 03/09/2017
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,24 +16,27 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 700bded8930385c5576a198dc0364c64066121e5
-ms.sourcegitcommit: 71314481e644025c005019b478b4cbeaf2390ea9
+ms.openlocfilehash: 1ed123bcf8c5c1a5df1a356cf8d2522caad20ea2
+ms.sourcegitcommit: c9725ddae6c0f82a491de27c87f240254d32716b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "59569128"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "71239378"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Grundlegendes zum Verständnis von Meldungen in der Unternehmensportal-App
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 > [!NOTE]
-> Die folgenden Informationen gelten nur für Geräte mit Android 6.0 und höher.
+> Die folgenden Informationen gelten nur für Geräte mit Android 6.0 und höher und iOS 10 und höher.
 
 Verstehen Sie die unterschiedlichen App-Nachrichten, die Endbenutzern im Unternehmensportal angezeigt werden können. Diese App-Nachrichten werden häufig an verschiedenen Punkten im Registrierungsprozess angezeigt. Erfahren Sie, wann die Meldungen angezeigt werden, was sie bedeuten, und was geschieht, wenn Benutzer den Zugriff verweigern. Darüber hinaus erfahren Sie, wie Sie die Nachrichten den Benutzern am besten erklären.
 
 - __Zulassen, dass das Unternehmensportal Telefonanrufe tätigt und verwaltet?__
 - __Unternehmensportal den Zugriff auf Fotos, Medien und Dateien auf Ihrem Gerät erlauben?__
+
+> [!NOTE]
+> Die von unserem Dienst gesammelten Daten werden keinesfalls an Dritte verkauft.
 
 ## <a name="allow-company-portal-to-make-and-manage-phone-calls"></a>Zulassen, dass das Unternehmensportal Telefonanrufe tätigt und verwaltet?
 
@@ -57,7 +59,7 @@ Wenn Benutzer den Zugriff zunächst erlauben, später aber verweigern, wird die 
 Wenn Benutzer den Zugriff später erlauben möchten, müssen sie zu **Einstellungen** > **Apps** > **Unternehmensportal** > **Berechtigungen** > **Telefon** wechseln, um die Berechtigung zu aktivieren.
 
 ### <a name="how-to-explain-this-to-your-users"></a>So erklären Sie dies Ihren Benutzern
-Verweisen Sie Ihre Benutzer an [Registrieren Ihres Android-Geräts bei Intune](/intune-user-help/enroll-your-device-in-intune-android), um weitere Informationen zu erhalten.
+Verweisen Sie Ihre Benutzer an [Registrieren Ihres Android-Geräts bei Intune](/intune-user-help/enroll-device-android-company-portal), um weitere Informationen zu erhalten.
 
 ## <a name="allow-company-portal-to-access-your-contacts"></a>Zulassen, dass das Unternehmensportal auf Ihre Kontakte zugreift?
 
@@ -78,7 +80,7 @@ Wenn Benutzer den Zugriff zunächst erlauben, später aber verweigern, wird die 
 Wenn Benutzer den Zugriff später erlauben möchten, müssen sie zu **Einstellungen** > **Apps** > **Unternehmensportal** > **Berechtigungen** > **Telefon** wechseln, um die Berechtigung zu aktivieren.
 
 ### <a name="how-to-explain-this-to-your-users"></a>So erklären Sie dies Ihren Benutzern
-Verweisen Sie Ihre Benutzer an [Registrieren Ihres Android-Geräts bei Intune](/intune-user-help/enroll-your-device-in-intune-android), um weitere Informationen zu erhalten.
+Verweisen Sie Ihre Benutzer an [Registrieren Ihres Android-Geräts bei Intune](/intune-user-help/enroll-device-android-company-portal), um weitere Informationen zu erhalten.  
 
 ## <a name="allow-company-portal-to-access-photos-media-and-files-on-your-device"></a>Unternehmensportal den Zugriff auf Fotos, Medien und Dateien auf Ihrem Gerät erlauben?
 
@@ -140,5 +142,5 @@ Wenn Sie solche Apps über das Unternehmensportal installieren und die App dann 
     Sie sollten die Unternehmens-App nun öffnen und verwenden können.
 
 
-### <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Siehe auch
 [Informieren der Endbenutzer über den Einsatz von Intune](end-user-educate.md)

@@ -5,9 +5,8 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/21/2017
+ms.date: 09/16/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,48 +16,54 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4169f5625965ebc7d2bbbf9153cb4183fcd22b3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 960c440372613fed2c92ce00c604d97e1f122e8f
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57388085"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71239821"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Wie Ihre Android-Benutzer Apps erhalten
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Android-Endbenutzer die Apps erhalten, die Sie über Microsoft Intune verteilen. Die Informationen können je nach Gerätetyp variieren (native Android-Geräte oder Samsung Knox Standard-Geräte).
+Dieser Artikel bietet grundlegende Informationen dazu, wie und wo Ihre Android-Endbenutzer die Apps erhalten, die Sie über Microsoft Intune verteilen. Die Informationen können je nach Gerätetyp variieren (native Android-Geräte oder Samsung Knox Standard-Geräte).
 
 ## <a name="native-non-samsung-knox-standard-android-devices"></a>Native Android-Geräte (nicht Samsung Knox Standard)
 
 | App-Typ | Branchenspezifische Apps | Play Store-Apps  |
 | ------------- |-------------| -----|
-| Verfügbare Apps      | Benutzer tippen im Unternehmensportal auf **Installieren**. Es wird eine Benachrichtigung angezeigt, auf die die Benutzer tippen, um die Installation zu starten. Nachdem die Installation erfolgreich durchgeführt wurde, verschwindet die Benachrichtigung. | Benutzer tippen im Unternehmensportal auf die App und werden zu einer App-Seite im Play Store weitergeleitet, auf der sie die Installation starten können.|
-| Required apps      | Benutzern wird eine Benachrichtigung angezeigt, die sie nicht verwerfen können, in der sie darauf hingewiesen werden, dass sie eine App installieren müssen. Benutzer tippen auf die Benachrichtigung, um die Installation zu starten. Nachdem die Installation erfolgreich durchgeführt wurde, verschwindet die Benachrichtigung.    | Benutzern wird eine Benachrichtigung angezeigt, die sie nicht verwerfen können, in der sie darauf hingewiesen werden, dass sie eine App installieren müssen. Benutzer tippen auf die Benachrichtigung und werden zu einer App-Seite im Play Store weitergeleitet, auf der sie die Installation starten können. Nachdem die Installation erfolgreich durchgeführt wurde, verschwindet die Benachrichtigung. |
+| Verfügbare Apps      | Benutzer tippen im Unternehmensportal auf **Installieren**. Es wird eine Benachrichtigung angezeigt, auf die die Benutzer tippen, um die Installation zu starten. Nachdem die Installation erfolgreich durchgeführt wurde, verschwindet die Benachrichtigung. | Benutzer tippen im Unternehmensportal auf die App und werden zu einer App-Seite im Play Store weitergeleitet. Dort starten sie die Installation.|
+| Required apps      | Benutzern wird eine Benachrichtigung angezeigt, die sie nicht verwerfen können und in der sie darauf hingewiesen werden, dass sie eine App installieren müssen. Benutzer tippen auf die Benachrichtigung, um die Installation zu starten. Nachdem die Installation erfolgreich durchgeführt wurde, verschwindet die Benachrichtigung.    | Benutzern wird eine Benachrichtigung angezeigt, die sie nicht verwerfen können und in der sie darauf hingewiesen werden, dass sie eine App installieren müssen. Benutzer tippen auf die Benachrichtigung und werden zu einer App-Seite im Play Store weitergeleitet. Dort starten sie die Installation. Nachdem die Installation erfolgreich durchgeführt wurde, verschwindet die Benachrichtigung. |
 
-Ihre Benutzer müssen die Installation aus unbekannten Quellen zulassen, damit [branchenspezifische Apps](lob-apps-android.md) installiert werden können. Diese befinden sich normalerweise an zwei verschiedenen Orten:
+Ihre Benutzer müssen die Installation aus unbekannten Quellen zulassen, damit [branchenspezifische Apps](lob-apps-android.md) installiert werden können. Diese Einstellung befindet sich normalerweise an zwei verschiedenen Stellen:
 
 * **Android 7.1.2 und höher:** **Einstellungen** > **Sicherheit** > **Unknown sources** (Unbekannte Quellen)
 * **Android 8.0 und höher:** **Einstellungen** > **Apps & Benachrichtigungen** > **Special app access** > **Install unknown apps**  > **Unternehmensportal** > **Allow from this source** (Spezieller App-Zugriff > Unbekannte App installieren > Unternehmensportal > Aus dieser Quelle zulassen)
 
 In diesem Fall informiert die Unternehmensportal-App den Benutzer und führt ihn zur entsprechenden Einstellung. 
 
-
 ## <a name="samsung-knox-standard-android-devices"></a>Android-Geräte mit Samsung Knox Standard
 
 | App-Typ | Branchenspezifische Apps | Play Store-Apps  |
 | ------------- |-------------| -----|
-| Verfügbare Apps      | Benutzer tippen im Unternehmensportal auf **Installieren**. Die App wird ohne weiteres Eingreifen der Benutzer installiert. | Benutzer tippen im Unternehmensportal auf die App und werden zu einer App-Seite im Play Store weitergeleitet, auf der sie die Installation starten können.|
-| Required apps      | Die App wird ohne weiteres Eingreifen der Benutzer installiert.    | Benutzern wird eine Benachrichtigung angezeigt, die sie nicht verwerfen können, in der sie darauf hingewiesen werden, dass sie eine App installieren müssen. Benutzer tippen auf die Benachrichtigung und werden zu einer App-Seite im Play Store weitergeleitet, auf der sie die Installation starten können. Nachdem die Installation erfolgreich durchgeführt wurde, verschwindet die Benachrichtigung. |
+| Verfügbare Apps      | Benutzer tippen im Unternehmensportal auf **Installieren**. Die App wird ohne weiteres Eingreifen der Benutzer installiert. | Benutzer tippen im Unternehmensportal auf die App und werden zu einer App-Seite im Play Store weitergeleitet. Dort starten sie die Installation.|
+| Required apps      | Die App wird ohne weiteres Eingreifen der Benutzer installiert.    | Benutzern wird eine Benachrichtigung angezeigt, die sie nicht verwerfen können und in der sie darauf hingewiesen werden, dass sie eine App installieren müssen. Benutzer tippen auf die Benachrichtigung und werden zu einer App-Seite im Play Store weitergeleitet. Dort starten sie die Installation. Nachdem die Installation erfolgreich durchgeführt wurde, verschwindet die Benachrichtigung. |
 
 Apps können verwaltet oder nicht verwaltet sein, wie unten beschrieben. Das Verfahren, mit dem Apps in die Verwaltung eingebunden werden, ist das gleiche für alle Arten von Android-Geräten.
 
-**Verwaltete Apps:** Dabei handelt es sich um Apps, die mittels Richtlinien verwaltet werden können. Sie wurden von Intune „umschlossen“ oder mit dem Intune App SDK erstellt. Diese Apps können von Intune verwaltet werden, und ihnen lassen sich Anwendungsrichtlinien zuweisen.
+**Verwaltete Apps**: Dabei handelt es sich um Apps, die mittels Richtlinien verwaltet werden. Sie wurden von Intune „umschlossen“ oder mit dem Intune App SDK erstellt. Diese Apps können von Intune verwaltet werden, und ihnen lassen sich Anwendungsrichtlinien zuweisen.
 
-**Nicht verwaltete Apps:** Dabei handelt es sich um Apps, die nicht über Richtlinien verwaltet werden können. Diese Apps wurden nicht von Intune „umschlossen“ oder sind nicht in das Intune SDK integriert. Diesen Apps lassen sich keine Anwendungsrichtlinien zuweisen.
+**Nicht verwaltete Apps**: Dabei handelt es sich um Apps, die nicht mittels Richtlinien verwaltet werden. Diese wurden nicht von Intune „umschlossen“ oder enthalten das Intune App SDK nicht. Diesen Apps können keine Anwendungsrichtlinien zugewiesen werden.
 
-### <a name="see-also"></a>Siehe auch
+## <a name="zebra-devices-with-zebra-mobility-extensions"></a>Zebra-Geräte mit Zebra Mobility Extensions
+
+Intune verwendet das Zebra Mobility Extensions-Toolkit (MX), um Apps unbeaufsichtigt auf Zebra-Geräten zu installieren, die vom Geräteadministrator verwaltet werden. Mit diesem Feature können Sie Apps ohne Benutzereingriff auf Zebra-Geräten bereitstellen und aktualisieren. Wenn die MX-Version auf Ihrem Gerät 4.2 oder älter ist, werden Apps nicht unbeaufsichtigt installiert. Weitere Informationen finden Sie auf der Zebra-Website unter [Full MX Feature Matrix](http://techdocs.zebra.com/mx/compatibility/) (Vollständige Featurematrix für Mobility Extensions).
+
+Auf Zebra-Geräten bereitgestellte branchenspezifische Apps müssen über einen öffentlichen Ort auf dem Gerät installiert werden. Möglicherweise greifen andere Apps und Dienste, die auch Zugriff auf den öffentlichen Speicher auf dem Gerät haben, auf das APK-App-Paket zu. In der Regel erfolgt dieser Zugriff in einem kleinen Zeitfenster zwischen dem Abschluss des App-Downloads und dem Start der Installation. Dieses Fenster kann für einen zeitgesteuerten Angriff missbraucht werden. Beispielsweise kann während dieses Zeitfensters ein APK-Paket geändert werden. Intune minimiert den Zeitraum, für den sich die APK-Datei im öffentlichen Speicher befindet, und lässt keine Installation nicht signierter Apps zu. Um das Sicherheitsrisiko so weit wie möglich zu reduzieren, stellen Sie sicher, dass die APK-Dateien, die Sie hochladen, keine vertraulichen Informationen enthalten.
+
+## <a name="see-also"></a>Siehe auch
+
 [Hinzufügen von Apps mit Microsoft Intune](apps-add.md)
 
 [Wie Ihre iOS-Benutzer Apps erhalten](end-user-apps-ios.md)

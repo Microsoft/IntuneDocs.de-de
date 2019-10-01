@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c654b8e05cabf132324e8dafe70e5991a67bd516
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: c71edf84fb1ade261eefc1b3de4543e941bf0657
+ms.sourcegitcommit: 1494ff4b33c13a87f20e0f3315da79a3567db96e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67548329"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71166806"
 ---
 # <a name="develop-a-support-plan"></a>Entwickeln eines Supportplans
 
@@ -84,7 +84,7 @@ Ein Beispiel für eine Trainingsagenda für den Intune-Support ist unten angegeb
 
 - Q & A
 
-Die [Intune-Dokumentation](https://docs.microsoft.com/intune/) bietet eine Übersicht über Intune, ausführliche Funktionsbeschreibungen und einige Informationen zur Problembehandlung. Das [Intune-Forum](https://social.technet.microsoft.com/Forums/home) ist eine Community-basierte Ressource für Fragen und Themen, die nicht in der Intune-Dokumentation behandelt werden.
+Die [Intune-Dokumentation](index.yml) bietet eine Übersicht über Intune, ausführliche Featurebeschreibungen sowie Informationen zur Problembehandlung. Das [Intune-Forum](https://social.technet.microsoft.com/Forums/home) ist eine Community-basierte Ressource für Fragen und Themen, die nicht in der Intune-Dokumentation behandelt werden.
 
 ## <a name="what-opportunities-are-there-to-involve-the-support-team-earlier"></a>Welche Möglichkeiten gibt es, das Supportteam zu einem früheren Zeitpunkt einzubeziehen?
 

@@ -5,9 +5,8 @@ keywords: Was ist Intune
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 02/26/2019
+ms.date: 06/20/2019
 ms.topic: overview
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 511e672193ec609f817c10572c99ac73831c54ae
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2cde4e37889b981decfd18138feeb4edac46c4c8
+ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460579"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "71238279"
 ---
 # <a name="what-is-microsoft-intune"></a>Was ist Microsoft Intune?
 
@@ -85,8 +84,8 @@ Wenn wir über App-Konfiguration und Intune sprechen, meinen wir genau solche Te
 Wenn Sie Intune mit den anderen Diensten in EMS verwenden, können Sie für die mobilen Anwendungen Ihres Unternehmens Sicherheit jenseits dessen bereitstellen, was das mobile Betriebssystem und die mobilen Apps über die App-Konfiguration bereitstellen. Eine App, die mit EMS verwaltet wird, hat Zugriff auf eine größere Auswahl von Schutzfunktionen für mobile Apps und Daten, einschließlich:
 
 * [Einmaliges Anmelden](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
-*   [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
-* [bedingter App-Zugriff: Zugriff zulassen, wenn die mobile App Unternehmensdaten enthält](app-based-conditional-access-intune.md)
+* [Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
+* [Bedingter App-Zugriff: Zugriff zulassen, wenn die mobile App Unternehmensdaten enthält](app-based-conditional-access-intune.md)
 * [Trennen von Unternehmensdaten und persönlichen Daten in der gleichen App](app-protection-policy.md)
 * [App-Schutzrichtlinie (PIN, Verschlüsselung, Speichern unter, Zwischenablage usw.)](app-protection-policies.md)
 * [Zurücksetzen von Unternehmensdaten in einer mobilen App](apps-selective-wipe.md)

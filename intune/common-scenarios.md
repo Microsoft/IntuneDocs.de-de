@@ -7,7 +7,6 @@ ms.author: dougeby
 manager: dougeby
 ms.date: 11/29/2018
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -17,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32be10340e1e77d2f994c5f038e6328ea42a6303
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: d158cb01dbd13f032916f4dc2bf443ed0f6bfaae
+ms.sourcegitcommit: 4b83697de8add3b90675c576202ef2ecb49d80b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57394767"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "71238590"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Häufige Verwendungsarten von Microsoft Intune
 
@@ -44,7 +43,7 @@ Nachfolgend finden Sie eine kurze Einführung zu den sechs häufigsten, auf Intu
 Die meisten Enterprise Mobility-Strategien beginnen mit einem Plan, um Mitarbeitern mit mobilen Geräten den sicheren Zugriff auf E-Mails über das Internet zu ermöglichen. Viele Unternehmen verwenden weiterhin lokale Daten- und Anwendungsserver wie Microsoft Exchange, die im Unternehmensnetzwerk gehostet werden.
 
 
-Intune und Microsoft Enterprise Mobility + Security (EMS) bieten eine einzigartig integrierte [Lösung für den bedingten Zugriff](conditional-access.md) für Exchange Server, die sicherstellt, dass mobile Apps nur dann auf E-Mails zugreifen können, wenn das Gerät in Intune registriert ist. Sie können diese Art des E-Mail-Zugriffs implementieren, ohne einen weiteren Gatewaycomputer am Rand Ihres Unternehmensnetzwerks bereitstellen zu müssen.
+Intune und Microsoft Enterprise Mobility + Security (EMS) bieten eine einzigartig integrierte [Lösung für den bedingten Zugriff](conditional-access.md) für Exchange Server, die sicherstellt, dass mobile Apps nur dann auf E-Mails zugreifen können, wenn das Gerät bei Intune registriert ist. Sie können diese Art des E-Mail-Zugriffs implementieren, ohne einen weiteren Gatewaycomputer am Rand Ihres Unternehmensnetzwerks bereitstellen zu müssen.
 
 Neben E-Mails unterstützt Intune auch das Ermöglichen des Zugriffs auf mobile Apps, die den sicheren Zugriff auf lokale Daten erfordern, z.B. ein branchenspezifischer Anwendungsserver. Dieser Zugriffstyp erfolgt in der Regel mithilfe von [Zertifikaten die von Intune verwaltet werden](certificates-configure.md), in Kombination mit einem VPN-Standardgateway oder -proxy im Umkreis, z.B. dem Microsoft Azure Active Directory-Anwendungs-Proxy. 
 
@@ -56,7 +55,7 @@ In diesen Fällen besteht die einzige Möglichkeit für den Zugriff auf Unterneh
 ## <a name="protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices"></a>Schützen von Office 365-E-Mails und -Daten für den sicheren Zugriff über mobile Geräte
 Das Schützen von Unternehmensdaten in Office 365 (E-Mails, Dokumente, Sofortnachrichten, Kontakte) könnte für Sie nicht einfacher oder für Ihre Benutzer nicht problemloser verlaufen.
 
-Intune und Microsoft Enterprise Mobility + Security bieten eine auf einzigartige Weise integrierte Lösung für den bedingten Zugriff, die sicherstellt, dass keine Benutzer, Apps oder Geräte auf Office 365-Daten zugreifen können, die nicht den Kompatibilitätsanforderungen Ihres Unternehmens entsprechen ([Multi-Factor Authentification](multi-factor-authentication.md) wurde ausgeführt, Registrierung mit Intune ist erfolgt und Folgendes wird verwendet: verwaltete App, unterstützte Betriebssystemversion, Geräte-PIN, Profil mit geringem Benutzerrisiko usw.).
+Intune und Microsoft Enterprise Mobility + Security bieten eine auf einzigartige Weise integrierte Lösung für den bedingten Zugriff, die sicherstellt, dass keine Benutzer, Apps oder Geräte auf Office 365-Daten zugreifen können, die den Kompatibilitätsanforderungen Ihres Unternehmens nicht entsprechen (ausgeführte [mehrstufige Authentifizierung](multi-factor-authentication.md), Registrierung bei Intune, Verwenden der verwalteten App, der unterstützten Betriebssystemversion, der Geräte-PIN, des Benutzerprofils mit geringem Risiko usw.).
 
 
 Die mobilen Office-Apps in ihren jeweiligen App-Stores sind bereit, Datenbeschränkungsrichtlinien einzuhalten, die Sie über Intune konfigurieren können. Mit diesen Funktionen können Sie verhindern, dass Daten für nicht von der IT verwaltete Apps (beispielsweise eine native E-Mail-App) und Speicherorte (beispielsweise Dropbox) freigegeben werden. Diese Funktionalität ist in Office 365 und EMS vollständig integriert. Sie müssen keine zusätzliche Infrastruktur bereitstellen, um dies zu erreichen.

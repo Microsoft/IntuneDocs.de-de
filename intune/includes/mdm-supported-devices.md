@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d0a113a30ad7394491552fdbc3b3fb300e0ae6df
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 797d1c66c50bed91f58eab535696b34001fcb28d
+ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57333805"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "71239568"
 ---
 
 
@@ -24,6 +24,10 @@ ms.locfileid: "57333805"
 
 - Surface Hub
 - Windows 10 (Home, S, Pro, Education und Enterprise)
+- Windows 10 Enterprise 2019 LTSC
+
+  Weitere Informationen über das Verwalten von Geräten unter Windows 10 2019 LTSC finden Sie unter [Neuerungen in Windows 10 Enterprise 2019 LTSC](https://docs.microsoft.com/en-us/windows/whats-new/ltsc/whats-new-windows-10-2019).
+  
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86, x64)
 - Windows 10 IoT Mobile Enterprise
@@ -31,10 +35,13 @@ ms.locfileid: "57333805"
 
   Weitere Informationen zum Verwalten von Geräten unter Windows Holographic for Business finden Sie unter [Windows Holographic for Business support](../windows-holographic-for-business.md) (Unterstützung von Windows Holographic for Business).
 
+- Windows 10 Teams (Surface Hub)
+
+   Weitere Informationen zum Verwalten von Geräten unter Windows 10 Teams finden Sie unter [Verwalten von Einstellungen mit einem MDM-Anbieter (Surface Hub)](https://docs.microsoft.com/en-us/surface-hub/manage-settings-with-mdm-for-surface-hub).
 - Windows Phone 8.1, Windows 8.1 RT, PCs mit Windows 8.1 (Aufrechterhaltungsmodus)
 
 > [!NOTE]
-> Intune kann nicht verwendet werden, um Windows Server-Betriebssysteme zu verwalten. Die SKU „Home“ unterstützt nicht alle Intune-Features.
+> Nicht alle Windows-Editionen unterstützen alle verfügbaren Betriebssystemfeatures, die über MDM konfiguriert werden. Mehr dazu finden Sie in den [Referenzdokumenten zum Windows-Konfigurationsdienstanbieter](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers). Für jeden Konfigurationsdienstanbieter ist angegeben, welche Windows-Editionen unterstützt werden.
 
 Kunden mit Enterprise Management + Security (EMS) können auch [Azure Active Directory (Azure AD) verwenden, um Windows 10-Geräte zu registrieren](/intune/windows-enroll).
 

@@ -1,6 +1,6 @@
 ---
 title: 'Verwenden von benutzerdefinierten Geräteeinstellungen in Microsoft Intune: Azure | Microsoft-Dokumentation'
-description: Fügen Sie benutzerdefinierte Einstellungen für Windows Phone-, Windows 8.1- Windows 10- (und höher), Android-, Android Enterprise-, macOS und iOS-Geräte unter Verwendung von Microsoft Intune hinzu, oder erstellen Sie ein solches Profil.
+description: Erstellen Sie ein Profil, oder fügen Sie ein Profil hinzu, um mithilfe von Microsoft Intune benutzerdefinierte Einstellungen für Geräte unter Windows Phone, Windows 8.1 Windows 10 und höher, Android, Android Enterprise, macOS und iOS zu verwenden.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3bd7deaf96d399dbf07e215309bf146b072c10f
-ms.sourcegitcommit: 916fed64f3d173498a2905c7ed8d2d6416e34061
+ms.openlocfilehash: 854e8fc7a46f431ce36c4e30682c196e6484b93e
+ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66043025"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71163107"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Erstellen eines Profils mit benutzerdefinierten Einstellungen in Intune
 
@@ -39,7 +39,7 @@ Benutzerdefinierte Profile werden auf ähnliche Weise wie integrierte Profile er
 
 - [Android](custom-settings-android.md)
 - [Android Enterprise](custom-settings-android-for-work.md)
-- [iOS](custom-settings-ios.md)
+- [iOS/iPadOS](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
 - [Windows 10](custom-settings-windows-10.md)
 - [Windows Holographic for Business](custom-settings-windows-holographic.md)
@@ -51,7 +51,7 @@ Wählen Sie Ihre Plattform aus, und legen Sie los:
 
 - [Android](custom-settings-android.md)
 - [Android Enterprise](custom-settings-android-for-work.md)
-- [iOS](custom-settings-ios.md)
+- [iOS/iPadOS](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
 - [Windows 10](custom-settings-windows-10.md)
 - [Windows Holographic for Business](custom-settings-windows-holographic.md)

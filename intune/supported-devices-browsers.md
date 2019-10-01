@@ -6,9 +6,8 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 07/29/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc0cf701450e594fd4b72a8e0565246994bb8a9e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5946f8ffb8179bb5109de45df8f89012ec706023
+ms.sourcegitcommit: 3baa9965095bb874d9b8c7a3cbb4aa925ed52cae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460613"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "71239584"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>In Intune unterstützte Betriebssysteme und Browser
 
@@ -115,12 +114,12 @@ Für diese Portale werden die folgenden Browser unterstützt:
 
 ### <a name="intune-classic-portal"></a>Klassisches Intune-Portal
 
-Klassische Intune-Features wie der Intune PC-Softwareclient und die Integration von Mobile Threat Defense-Partnern sind nur im klassischen Intune-Portal (https://manage.microsoft.com)) verfügbar. Das klassische Intune-Portal erfordert Silverlight-Browserunterstützung.
+Das klassische Intune-Portal wird nur zum Verwalten von Geräten verwendet, die mit dem Intune-PC-Softwareclient registriert wurden (https://manage.microsoft.com). Das klassische Intune-Portal erfordert Silverlight-Browserunterstützung.
 
 Die folgenden Silverlight-Browser unterstützen die Intune-Konsole:
 - Internet Explorer 10 oder höher
 - Google Chrome (Versionen vor Version 42)
-- Mozilla Firefox mit aktiviertem Silverlight – [weitere Informationen](https://go.microsoft.com/fwlink/?linkid=836872)
+- Mozilla Firefox mit aktiviertem Silverlight (Versionen vor Version 56)
 
 > [!Note]
 > Microsoft Edge und mobile Browser werden im klassischen Intune-Portal nicht unterstützt, da sie [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx) nicht unterstützen.
