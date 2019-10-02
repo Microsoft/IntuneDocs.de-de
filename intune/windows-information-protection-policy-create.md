@@ -6,9 +6,8 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/15/2019
+ms.date: 08/23/2019
 ms.topic: conceptual
-ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
@@ -18,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8aaa94428a5a8606a7ba05f0661e96600f24e2d4
-ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
+ms.openlocfilehash: 869491098afc9e68ea1bbcb21bf6e7720e80564c
+ms.sourcegitcommit: c8cb314256c4896e838918f015ffaefb8f00ace5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59587415"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "71303225"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
 
@@ -37,15 +36,15 @@ Sie müssen mit einigen Konzepten vertraut sein, wenn Sie eine WIP-Richtlinie hi
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Liste der zulässigen und ausgenommenen Apps
 
--   **Geschützte Apps:** Diese Apps müssen die Richtlinie einhalten.
+- **Geschützte Apps:** Diese Apps müssen die Richtlinie einhalten.
 
--   **Ausgenommene Apps:** Diese Apps sind von dieser Richtlinie ausgenommen und können ohne Einschränkungen auf Unternehmensdaten zugreifen.
+- **Ausgenommene Apps:** Diese Apps sind von dieser Richtlinie ausgenommen und können ohne Einschränkungen auf Unternehmensdaten zugreifen.
 
 ### <a name="types-of-apps"></a>App-Typen
 
--   **Empfohlene Apps:** Eine vorab aufgefüllte Liste von Apps (hauptsächlich Microsoft Office), die Ihnen einen einfachen Import in die Richtlinie ermöglicht.
--   **Store-Apps:** Sie können der Richtlinie eine beliebige App aus dem Windows Store hinzufügen.
--   **Windows Desktop-Apps:** Sie können der Richtlinie traditionelle Windows Desktop-Apps hinzufügen (z. B. .exe, .dll usw.)
+- **Empfohlene Apps:** Eine vorab aufgefüllte Liste von Apps (hauptsächlich Microsoft Office), die Ihnen einen einfachen Import in die Richtlinie ermöglicht.
+- **Store-Apps:** Sie können der Richtlinie eine beliebige App aus dem Windows Store hinzufügen.
+- **Windows Desktop-Apps:** Sie können der Richtlinie traditionelle Windows Desktop-Apps hinzufügen (z. B. .exe, .dll usw.)
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -56,8 +55,8 @@ Sie müssen den MAM-Anbieter konfigurieren, bevor Sie eine WIP-App-Schutzrichtli
 
 Darüber hinaus benötigen Sie folgende Lizenz und folgendes Update:
 
--   [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)-Lizenz
--   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
+- [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)-Lizenz
+- [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 
 
@@ -81,7 +80,7 @@ Nachdem Sie Intune in Ihrer Organisation eingerichtet haben, können Sie eine WI
     - **Beschreibung:** Geben Sie eine Beschreibung ein (optional).
     - **Plattform:** Wählen Sie **Windows 10** als unterstützte Plattform für Ihre App-Schutzrichtlinie aus.
     - **Registrierungsstatus:** Wählen Sie **Ohne Registrierung** als Registrierungsstatus für Ihre Richtlinie aus.
-7.  Wählen Sie **Erstellen** aus. Die Richtlinie wird erstellt und in der Tabelle auf dem Blatt **App-Schutzrichtlinien** angezeigt.
+7. Wählen Sie **Erstellen** aus. Die Richtlinie wird erstellt und in der Tabelle auf dem Blatt **App-Schutzrichtlinien** angezeigt.
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Hinzufügen von empfohlenen Apps zur Liste der geschützten Apps
 
@@ -150,11 +149,11 @@ Nachdem Sie WIP deaktiviert haben, wird versucht, WIP-getaggte Dateien auf den l
 
 ### <a name="add-a-protection-mode"></a>Hinzufügen eines Schutzmodus
 
-1.  Wählen Sie auf dem Blatt **App-Richtlinie** den Namen Ihrer Richtlinie und anschließend die Option **Erforderliche Einstellungen** aus.
+1. Wählen Sie auf dem Blatt **App-Richtlinie** den Namen Ihrer Richtlinie und anschließend die Option **Erforderliche Einstellungen** aus.
 
     ![Screenshot des Bereichs „Trainingsmodus“](./media/learning-mode-sc1.png)
 
-1.  Wählen Sie eine Einstellung aus, und klicken Sie auf **Speichern**.
+1. Wählen Sie eine Einstellung aus, und klicken Sie auf **Speichern**.
 
 ### <a name="use-wip-learning"></a>Verwenden von WIP Learning
 
@@ -188,11 +187,11 @@ Sie können nicht nur die Option **Der Windows Search-Indexerstellung die Suche 
 
 Nachdem Sie Ihre WIP-App-Schutzrichtlinie erstellt haben, müssen Sie sie Ihrer Organisation über MAM bereitstellen.
 
-1.  Wählen Sie auf dem Blatt **App-Richtlinie** die neu erstellte App-Schutzrichtlinie aus. Wählen Sie anschließend **Benutzergruppen** > **Benutzergruppe hinzufügen** aus.
+1. Wählen Sie auf dem Blatt **App-Richtlinie** die neu erstellte App-Schutzrichtlinie aus. Wählen Sie anschließend **Benutzergruppen** > **Benutzergruppe hinzufügen** aus.
 
     Auf dem Blatt **Benutzergruppe hinzufügen** wird eine Liste von Benutzergruppen geöffnet, die aus allen Sicherheitsgruppen in Azure Active Directory besteht.
 
-2.  Wählen Sie die Gruppe aus, auf die Ihre Richtlinie angewendet werden soll, und klicken Sie dann auf **Auswählen**, um die Richtlinie bereitzustellen.
+2. Wählen Sie die Gruppe aus, auf die Ihre Richtlinie angewendet werden soll, und klicken Sie dann auf **Auswählen**, um die Richtlinie bereitzustellen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
