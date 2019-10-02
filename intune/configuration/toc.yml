@@ -1,0 +1,190 @@
+- name: Konfigurieren von Geräteeinstellungen
+  href: index.yml
+- name: Übersicht
+  expanded: true
+  items:
+    - name: 'Übersicht: Gerätekonfiguration'
+      href: device-profiles.md
+- name: Schnellstarts
+  items:
+    - name: Erstellen eines E-Mail-Geräteprofils
+      href: quickstart-email-profile.md
+- name: Schrittanleitungen
+  items:
+    - name: Erstellen eines Profils
+      href: device-profile-create.md
+    - name: Administrative Vorlagen auf Windows
+      href: administrative-templates-windows.md
+    - name: Gerätefeatures auf iOS und macOS
+      href: device-features-configure.md
+    - name: Einschränken von Geräteeinstellungen und -funktionen
+      href: device-restrictions-configure.md
+      displayName: Device restrictions
+    - name: Updates
+      href: delivery-optimization-windows.md
+      displayName: delivery optimization; updates
+    - name: Upgradeeditionen und S-Modus
+      href: edition-upgrade-configure-windows-10.md
+    - name: E-Mail
+      href: email-settings-configure.md
+    - name: Kiosks und dedizierte Geräte
+      href: kiosk-settings.md
+    - name: Von mehren Benutzern gemeinsam verwendete Geräte
+      href: shared-user-device-settings.md
+    - name: VPN
+      href: vpn-settings-configure.md
+      items:
+        - name: App-bezogenes VPN für Android
+          href: android-pulse-secure-per-app-vpn.md
+        - name: App-bezogenes VPN für iOS
+          href: vpn-setting-configure-per-app.md
+    - name: WLAN-Netzwerk
+      href: wi-fi-settings-configure.md
+      displayName: wifi
+      items:
+        - name: WLAN mit einem vorinstallierten Schlüssel
+          href: wi-fi-profile-shared-key.md
+    - name: Erweiterungen unter macOS
+      href: kernel-extensions-overview-macos.md
+    - name: 'Microsoft Education: Prüfungs-App'
+      href: education-settings-configure.md
+    - name: Erweiterung der Mobilität auf Zebra-Geräten
+      href: android-zebra-mx-overview.md
+      displayName: mx
+    - name: OEMConfig unter Android Enterprise
+      href: android-oem-configuration-overview.md
+    - name: eSIM-Mobilfunkprofile
+      href: esim-device-configuration.md
+    - name: Überwachen der Telekommunikationsausgaben
+      href: telecom-expenses-monitor.md
+    - name: Benutzerdefinierte Geräteeinstellungen
+      href: custom-settings-configure.md
+    - name: Zuweisen von Profilen
+      href: device-profile-assign.md
+    - name: Überwachen von Profilen
+      href: device-profile-monitor.md
+    - name: Problembehandlung
+      items:
+        - name: Problembehandlung für Richtlinien und Profile
+          href: troubleshoot-policies-in-microsoft-intune.md
+        - name: Häufige Probleme mit E-Mail-Profilen und Lösungen
+          href: troubleshoot-email-profiles-in-microsoft-intune.md
+        - name: StageNow-Protokolle und allgemeine Probleme
+          href: android-zebra-mx-logs-troubleshoot.md
+        - name: Häufig gestellte Fragen und deren Antworten
+          href: device-profile-troubleshoot.md
+- name: Referenz
+  items:
+    - name: Einstellungen für das Konfigurationsprofil
+      items:
+        - name: Android
+          items:
+            - name: Geräteeinschränkungen
+              href: device-restrictions-android.md
+            - name: E-Mail
+              href: email-settings-android.md
+            - name: VPN
+              href: vpn-settings-android.md
+            - name: WLAN
+              href: wi-fi-settings-android.md
+            - name: Benutzerdefiniert
+              href: custom-settings-android.md
+              items:
+                - name: Zulassen/Blockieren von Apps für Samsung Knox Standard
+                  href: samsung-knox-apps-allow-block.md
+        - name: Android Enterprise
+          items:
+            - name: Geräteeinschränkungen
+              href: device-restrictions-android-for-work.md
+            - name: E-Mail
+              href: email-settings-android-enterprise.md
+            - name: VPN
+              href: vpn-settings-android-enterprise.md
+            - name: WLAN
+              href: wi-fi-settings-android-enterprise.md
+            - name: Benutzerdefiniert
+              href: custom-settings-android-for-work.md
+        - name: iOS
+          items:
+            - name: Gerätefunktionen
+              href: ios-device-features-settings.md
+            - name: Geräteeinschränkungen
+              href: device-restrictions-ios.md
+            - name: E-Mail
+              href: email-settings-ios.md
+            - name: VPN
+              href: vpn-settings-ios.md
+            - name: WLAN
+              href: wi-fi-settings-ios.md
+            - name: Benutzerdefiniert
+              href: custom-settings-ios.md
+            - name: Bundle-IDs für integrierte Apps
+              href: bundle-ids-built-in-ios-apps.md
+        - name: macOS
+          items:
+            - name: Gerätefunktionen
+              href: macos-device-features-settings.md
+            - name: Geräteeinschränkungen
+              href: device-restrictions-macos.md
+            - name: VPN
+              href: vpn-settings-macos.md
+            - name: WLAN
+              href: wi-fi-settings-macos.md
+            - name: '-Erweiterungen'
+              href: kernel-extensions-settings-macos.md
+            - name: Benutzerdefiniert
+              href: custom-settings-macos.md
+        - name: Windows 10 und höher
+          items:
+            - name: Übermittlungsoptimierung
+              href: delivery-optimization-settings.md
+            - name: Geräteeinschränkungen
+              href: device-restrictions-windows-10.md
+            - name: Geräteeinschränkungen für Windows 10-Team
+              href: device-restrictions-windows-10-teams.md
+            - name: Editionsupgrade und Moduswechsel
+              href: edition-upgrade-windows-settings.md
+            - name: E-Mail
+              href: email-settings-windows-10.md
+            - name: Kiosk
+              href: kiosk-settings-windows.md
+            - name: VPN
+              href: vpn-settings-windows-10.md
+            - name: WLAN
+              href: wi-fi-settings-windows.md
+            - name: Sichere Bewertung
+              href: education-settings-windows.md
+            - name: Von mehreren Benutzern gemeinsam verwendetes Gerät
+              href: shared-user-device-settings-windows.md
+            - name: Benutzerdefiniert
+              href: custom-settings-windows-10.md
+        - name: Windows Holographic for Business
+          items:
+            - name: Geräteeinschränkungen
+              href: device-restrictions-windows-holographic.md
+            - name: Von mehreren Benutzern gemeinsam verwendetes Gerät
+              href: shared-user-device-settings-windows-holographic.md
+            - name: Editionsupgrade und Moduswechsel
+              href: holographic-upgrade.md
+            - name: Kiosk
+              href: kiosk-settings-holographic.md
+            - name: Benutzerdefiniert
+              href: custom-settings-windows-holographic.md
+        - name: "Windows\_8.1"
+          items:
+            - name: Geräteeinschränkungen
+              href: device-restrictions-windows-8-1.md
+            - name: VPN
+              href: vpn-settings-windows-8-1.md
+            - name: Importieren von WLAN-Konfigurationen
+              href: wi-fi-settings-import-windows-8-1.md
+        - name: "Windows\_Phone\_8.1"
+          items:
+            - name: Geräteeinschränkungen
+              href: device-restrictions-windows-phone-8-1.md
+            - name: E-Mail
+              href: email-settings-windows-phone-8-1.md
+            - name: VPN
+              href: vpn-settings-windows-phone-8-1.md
+            - name: Benutzerdefiniert
+              href: custom-settings-windows-phone-8-1.md

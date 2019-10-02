@@ -7,18 +7,18 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 90c770fec5bd9456151e601188254a3a022cd13f
-ms.sourcegitcommit: 62c41976c4da43b36015b715bc255397ebb8c6ad
+ms.openlocfilehash: fa251a0edd943d566849b138af5cbab0be248a53
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71279903"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71726400"
 ---
 Diese Hinweise enthalten wichtige Informationen, die Ihnen bei der Vorbereitung auf künftige Änderungen und Features im Zusammenhang mit Intune helfen können. 
 
 
 ### <a name="decreasing-support-for-android-device-administrator"></a>Verringern der Unterstützung für den Android-Geräteadministrator 
-Der Android-Geräteadministrator (manchmal auch als „Legacy“-Android-Verwaltung bezeichnet und mit Android 2.2 veröffentlicht) ist eine Möglichkeit zum Verwalten von Android-Geräten. [Android Enterprise](../connect-intune-android-enterprise.md) (veröffentlicht mit Android 5.0) bietet jetzt jedoch eine verbesserte Verwaltungsfunktionalität. In dem Bestreben, auf eine moderne, umfassendere und sicherere Geräteverwaltung umzusteigen, reduziert Google die Geräteadministratorunterstützung in neuen Android-Releases.
+Der Android-Geräteadministrator (manchmal auch als „Legacy“-Android-Verwaltung bezeichnet und mit Android 2.2 veröffentlicht) ist eine Möglichkeit zum Verwalten von Android-Geräten. [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (veröffentlicht mit Android 5.0) bietet jetzt jedoch eine verbesserte Verwaltungsfunktionalität. In dem Bestreben, auf eine moderne, umfassendere und sicherere Geräteverwaltung umzusteigen, reduziert Google die Geräteadministratorunterstützung in neuen Android-Releases.
 
 #### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
 Diese Änderungen von Google haben für Intune-Benutzer diese Folgen: 
@@ -67,10 +67,11 @@ Sie müssen keine Maßnahmen ergreifen, sollten aber eventuell Ihre Leitfäden f
 https://aka.ms/intune_fullscreen
 
 ### <a name="plan-for-change-new-windows-updates-settings-in-intune----4464404---"></a>Stellen Sie sich auf eine Änderung ein: Neue Einstellungen für Windows Updates in Intune <!-- 4464404 -->
-Ab der im August veröffentlichten Version von Intune (Version 1908) sind neue Stichtagseinstellungen verfügbar, die Sie anstelle der Einstellungen für „Benutzer (erzwungenen) Neustart ermöglichen“ konfigurieren können. Es ist geplant, die Einstellungen für erzwungenen Neustart in der Benutzeroberfläche der Version 1909 bzw. des Septemberupdates zu deaktivieren und sie dann bis Ende des Oktober vollständig aus der Konsole zu entfernen. 
+Ab der im August veröffentlichten Version von Intune (Version 1908) sind neue Stichtagseinstellungen verfügbar, die Sie anstelle der Einstellungen für „Benutzer (erzwungenen) Neustart ermöglichen“ konfigurieren können. Es ist geplant, die Einstellungen für erzwungenen Neustart in der Benutzeroberfläche der Version 1909 bzw. des Septemberupdates zu deaktivieren und sie dann bis Ende des Oktober vollständig aus der Konsole zu entfernen.
 
 #### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Wenn Sie Windows 10-Geräte in Ihrer Umgebung verwalten: 
+Wenn Sie Windows 10-Geräte in Ihrer Umgebung verwalten:
+
 - Im Augustupdate von Intune (Version 1908) werden in der Konsole zusätzlich zu den alten Einstellungen für erzwungenen Neustart neue Stichtagseinstellungen angezeigt.
 - Wenn sowohl die alten als auch die neuen Einstellungen konfiguriert werden, überschreiben die Stichtagseinstellungen die Werte für erzwungenen Neustart.
 - Im Update 1910 wird in der Konsole die Option „Benutzer (erzwungenen) Neustart ermöglichen“ durch die Stichtagseinstellungen ersetzt.
@@ -78,7 +79,7 @@ Wenn Sie Windows 10-Geräte in Ihrer Umgebung verwalten:
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wie kann ich mich auf die Änderung vorbereiten?
 Beginnen Sie in Version 1908 mit der Verwendung der Stichtagseinstellungen, indem Sie sie mit den gewünschten Werten konfigurieren. Nachdem Sie dies eingerichtet haben, können Sie die Einstellung für erzwungenen Neustart auf „Nicht konfiguriert“ festlegen, da diese Einstellungen im Oktober aus der Konsole entfernt werden.
 
-Aktualisieren Sie ggf. Ihre Dokumentation und möglicherweise vorhandene Automatisierungsskripts. 
+Aktualisieren Sie ggf. Ihre Dokumentation und möglicherweise vorhandene Automatisierungsskripts.
 
 Wir halten Sie auf dem Laufenden und veröffentlichen im Nachrichtencenter eine Erinnerung, bevor die Einstellungen für erzwungenen Neustart entfernt werden.
 
@@ -86,12 +87,13 @@ Wir halten Sie auf dem Laufenden und veröffentlichen im Nachrichtencenter eine 
 Intune wird Android 5.x (Lollipop) und höher im Oktober unterstützen. Aktualisieren Sie alle umschließenden Apps mit dem neuesten Intune App SDK, und aktualisieren Sie Ihre Geräte.
 
 #### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Wenn Sie weder das SDK noch die APP für Android verwenden noch deren Verwendung planen, wirkt sich diese Änderung nicht auf Sie aus. Wenn Sie das Intune App SDK verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren, und aktualisieren Sie Ihre Geräte auch auf Android 5.x und höher. Wenn Sie nicht aktualisieren, erhalten Apps keine Updates, und die Qualität ihrer Benutzung wird mit der Zeit abnehmen. 
+Wenn Sie weder das SDK noch die APP für Android verwenden noch deren Verwendung planen, wirkt sich diese Änderung nicht auf Sie aus. Wenn Sie das Intune App SDK verwenden, stellen Sie sicher, dass Sie auf die neueste Version aktualisieren, und aktualisieren Sie Ihre Geräte auch auf Android 5.x und höher. Wenn Sie nicht aktualisieren, erhalten Apps keine Updates, und die Qualität ihrer Benutzung wird mit der Zeit abnehmen.
 
 Unten finden Sie eine Liste der gängigen in Intune registrierten Geräte, auf denen Android Version 4.x ausgeführt wird. Wenn Sie über eines dieser Geräte verfügen, führen Sie die entsprechenden Schritte aus, um sicherzustellen, dass dieses Gerät Android-Version 5.0 oder höher unterstützt, oder dass es durch ein Gerät ersetzt wird, das Android-Version 5.0 oder höher unterstützt. Diese Liste enthält nicht alle Geräte, die möglicherweise ausgewertet werden müssen:
+
 - Samsung SM-T561  
-- Samsung SM-T365 
-- Samsung gt-I9195 
+- Samsung SM-T365
+- Samsung gt-I9195
 - Samsung SM-G800F
 - Samsung SM-G357FZ
 - Motorola XT1080
@@ -100,7 +102,6 @@ Unten finden Sie eine Liste der gängigen in Intune registrierten Geräte, auf d
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
 Umschließen Sie Ihre Apps mit dem neuesten Intune App SDK. Sie können auch die Startbedingungseinstellung „Minimale Betriebssystemversion erforderlich (nur Warnung)“ festlegen, um die Endbenutzer auf persönlichen Geräten aufzufordern, das Upgrade durchzuführen.
-
 
 ### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Intune – Planen für Änderungen: Support für Windows 7 endet bald <!-- 3042987 -->
 Wie wir im September 2018 in MC148476 sowie erneut im März 2019 in MC176794 angekündigt haben, endet der Support für Windows 7 am 14. Januar 2020. Zu diesem Zeitpunkt stellt Intune die Unterstützung für Geräte unter Windows 7 ein, damit wir unsere Investitionen auf die Unterstützung neuerer Technologien und die Bereitstellung herausragender neuer Endbenutzerfunktionen fokussieren können. Nach diesem Datum sind technische Unterstützung und automatische Updates für den Schutz von Windows 7-PCs über Intune nicht mehr verfügbar. Microsoft empfiehlt dringend, vor Januar 2020 zu Windows 10 zu wechseln, um eine Situation zu vermeiden, in der Sie Service- oder Supportleistungen benötigen, die nicht mehr zur Verfügung stehen. [Hier](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) erfahren Sie mehr über den Windows-Supportlebenszyklus.
