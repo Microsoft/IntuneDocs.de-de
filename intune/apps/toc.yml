@@ -32,6 +32,7 @@
       items:
         - name: Hinzufügen einer App-Übersicht
           href: apps-add.md
+          displayName: apk; ipa; msi; appx; appxbundle; msix; msixbundle; app
         - name: Durch Intune geschützte Apps
           href: apps-supported-intune-apps.md
         - name: Store-Apps
@@ -104,12 +105,24 @@
           href: app-configuration-policies-use-ios.md
         - name: Android Verwaltete Geräte
           href: app-configuration-policies-use-android.md
-        - name: Konfigurieren von Managed Home Screen
-          href: app-configuration-managed-home-screen-app.md
         - name: Verwaltete Apps
           href: app-configuration-policies-managed-app.md
         - name: Verwenden von iOS-App-Bereitstellungsprofilen
           href: app-provisioning-profile-ios.md
+        - name: Konfigurieren spezifischer Apps
+          items:
+            - name: Konfigurieren von Managed Home Screen
+              href: app-configuration-managed-home-screen-app.md
+            - name: Vergleich des Intune-Unternehmensportals
+              href: company-portal-app.md
+            - name: Konfigurieren von Managed Browser
+              href: app-configuration-managed-browser.md
+            - name: Konfigurieren von Microsoft Launcher
+              href: configure-microsoft-launcher.md
+            - name: Konfigurieren von Microsoft Edge
+              href: manage-microsoft-edge.md
+            - name: Konfigurieren von Outlook
+              href: app-configuration-policies-outlook.md
         - name: Per Volumenlizenz erworbene Apps und Bücher
           items:
             - name: Verwalten von VPP-Apps und -Büchern
@@ -121,16 +134,6 @@
               href: windows-store-for-business.md
             - name: iOS-E-Books
               href: vpp-ebooks-ios.md
-        - name: Vergleich des Intune-Unternehmensportals
-          href: company-portal-app.md
-        - name: Konfigurieren von Managed Browser
-          href: app-configuration-managed-browser.md
-        - name: Konfigurieren von Microsoft Edge
-          href: manage-microsoft-edge.md
-        - name: Konfigurieren von Microsoft Launcher
-          href: configure-microsoft-launcher.md
-        - name: Konfigurieren von Outlook
-          href: app-configuration-policies-outlook.md
     - name: Schützen von Apps
       items:
         - name: Selektives Zurücksetzen von Apps
