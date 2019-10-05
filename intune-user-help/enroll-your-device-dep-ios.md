@@ -18,12 +18,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4484dbc9a8348101c0f7409b009998baca32f8a4
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: bca7ff55653d12d352b4fb90163f4622a9e573ab
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71239424"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721001"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>Registrieren eines von Ihrer Organisation bereitgestellten iOS-Geräts für die Verwaltung
 
@@ -31,11 +31,11 @@ Erfahren Sie, wie Sie Ihr neues iOS-Gerät in Intune verwalten können.
 
 Die iOS-Geräte, die Ihnen von der Arbeit, der Schule oder der Universität zur Verfügung gestellt werden, sind häufig vorkonfiguriert, bevor Sie sie erhalten. Ihre Organisation sendet diese vorkonfigurierten Einstellungen an das Gerät, nachdem Sie es eingeschaltet und sich zum ersten Mal angemeldet haben. Wenn Ihr Gerät das Setup abgeschlossen hat, erhalten Sie Zugriff auf Ihre Unternehmens- bzw. Schul- oder Universitätsressourcen.  
 
-Um mit dem Setup zu beginnen, schalten Sie Ihr Gerät ein, und melden Sie sich mit den betreffenden Anmeldeinformationen an. Im folgenden Artikel werden die Schritte und Bildschirme erläutert, die für das Setup mit dem Setup-Assistenten von Bedeutung sind. 
+Um mit dem Setup zu beginnen, schalten Sie Ihr Gerät ein, und melden Sie sich mit den betreffenden Anmeldeinformationen an. Im folgenden Artikel werden die Schritte und Bildschirme erläutert, die für das Setup mit dem Setup-Assistenten von Bedeutung sind.
 
 ## <a name="what-is-apple-dep"></a>Was ist das Apple-Programm zur Geräteregistrierung?
 
-Möglicherweise hat Ihre Organisation ihre Geräte über ein sogenanntes *Apple-Programm zur Geräteregistrierung* erworben. Über das Apple-Programm zur Geräteregistrierung haben Organisationen die Möglichkeit, große Mengen von iOS- oder macOS-Geräten zu erwerben. Dann können sie diese Geräte über einen beliebigen Dienst (z.B. Intune), der die Verwaltung mobiler Geräte anbietet, konfigurieren und verwalten. Wenn Sie über Administratorberechtigungen verfügen und sich für das Apple-Programm zur Geräteregistrierung interessieren, erhalten Sie weitere Informationen unter [Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
+Möglicherweise hat Ihre Organisation ihre Geräte über ein sogenanntes *Apple-Programm zur Geräteregistrierung* erworben. Über das Apple-Programm zur Geräteregistrierung haben Organisationen die Möglichkeit, große Mengen von iOS- oder macOS-Geräten zu erwerben. Dann können sie diese Geräte über einen beliebigen Dienst (z.B. Intune), der die Verwaltung mobiler Geräte anbietet, konfigurieren und verwalten. Wenn Sie über Administratorberechtigungen verfügen und sich für das Apple-Programm zur Geräteregistrierung interessieren, erhalten Sie weitere Informationen unter [Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple](https://docs.microsoft.com/intune/enrollment/device-enrollment-program-enroll-ios.md).  
 
 ## <a name="set-up-your-ios-device"></a>Einrichten Ihres iOS-Geräts
 
@@ -51,7 +51,7 @@ Wenn Sie Ihr eigenes iOS-Gerät anstelle eines organisationseigenen Geräts verw
 4. Sobald Sie die WLAN-Verbindung hergestellt haben, wird der Bildschirm **Konfiguration** angezeigt. Darin wird Folgendes mitgeteilt: **Ihr Gerät wird automatisch von [Ihrem Unternehmen] konfiguriert.**
 
    **Die Konfiguration ermöglicht [Ihrem Unternehmen] die drahtlose Verwaltung dieses Geräts. Ein Administrator unterstützt Sie bei der Einrichtung von E-Mail- und -Netzwerkkonten, der Installation und Konfiguration von Apps und der Remoteverwaltung von Einstellungen. Ein Administrator kann Features deaktivieren, Apps installieren und entfernen, Ihren Internetdatenverkehr überwachen und einschränken sowie eine Remotelöschung dieses Geräts ausführen.**
- 
+
    **Die Konfiguration wird bereitgestellt durch: [Ihr Unternehmen] iOS-Team [Adresse]**
 
 5. Melden Sie sich mit Ihrer Apple-ID an. Wenn Sie sich anmelden, können Sie die Unternehmensportal-App und das Verwaltungsprofil installieren, über das Ihr Unternehmen Ihnen Zugriff auf Unternehmensressourcen wie E-Mails oder Apps erteilen kann.

@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: caae22e59e8adb6952e9a69ff03c575ae4467b2d
-ms.sourcegitcommit: 6a946a055a2014e00a4ca9d71986727a4ebbc777
+ms.openlocfilehash: 13f22b66b5a0700eadda28b20e0db6edce507021
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71238975"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71721170"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>Gerät verschlüsselt, aber apps sagen andernfalls
 
@@ -31,7 +31,7 @@ Wenn Unternehmensportal oder die Microsoft InTune-App sagen, dass Ihr Gerät nic
 
 ## <a name="add-a-startup-pin"></a>Hinzufügen einer Start-PIN
 
-Bei bestimmten Android-Geräten müssen Sie eine Start-PIN erstellen, um die Sicherheit Ihres Geräts zu gewährleisten. Der Speicherort dieser Einstellung wird in der App " **Einstellungen** " des Geräts angezeigt. Der Name und der Speicherort der Einstellung können variieren. Beispielsweise wird die Einstellung auf Samsung Galaxy S7 als **sicherer Start**bezeichnet. Um es zu aktivieren und eine Kennung zu erstellen, wechseln Sie zu **Einstellungen** > **Sperrbildschirm und Sicherheits** > **sicherer Start**.  
+Bei bestimmten Android-Geräten müssen Sie eine Start-PIN erstellen, um die Sicherheit Ihres Geräts zu gewährleisten. Der Speicherort dieser Einstellung wird in der App " **Einstellungen** " des Geräts angezeigt. Der Name und der Speicherort der Einstellung können variieren. Beispielsweise wird die Einstellung auf Samsung Galaxy S7 als **sicherer Start**bezeichnet. Um es zu aktivieren und eine Kennung zu erstellen, wechseln Sie zu **Einstellungen** > **Sperrbildschirm und Sicherheit** > **sicherer Start**.  
 
 ## <a name="encrypt-the-entire-device"></a>Verschlüsseln Sie das gesamte Gerät
 
@@ -50,7 +50,7 @@ Dieser Abschnitt gilt nur für die Unternehmensportal-app. Falls Ihr Gerät Ihne
 
 Einige Android-Geräte mit Version 7.0 und höher verschlüsseln Daten so, dass sie mit gewissen Android-Plattformstandards nicht kompatibel sind. Mit diesen Verschlüsselungsmethoden werden Geräteinformationen gefährdet. Dies hat zur Folge, dass diese Geräte nicht unterstützt werden.
 
-Eine nicht vollständige Liste der unterstützten Android-Geräte finden Sie im Artikel [Unterstützte Betriebssysteme und Browser in InTune](https://docs.microsoft.com/intune/supported-devices-browsers#supported-samsung-knox-standard-devices). Wenn Ihr Gerät nicht aufgeführt ist, wenden Sie sich an den Gerätehersteller, oder wenden Sie sich an den Support.
+Eine nicht vollständige Liste der unterstützten Android-Geräte finden Sie im Artikel [Unterstützte Betriebssysteme und Browser in InTune](https://docs.microsoft.com/intune/fundamentals/supported-devices-browsers#supported-samsung-knox-standard-devices). Wenn Ihr Gerät nicht aufgeführt ist, wenden Sie sich an den Gerätehersteller, oder wenden Sie sich an den Support.
 
 > [!Note]
 > Microsoft arbeitet mit Herstellern zusammen, um Probleme zu beheben, die wir beim Testen finden oder die Benutzer uns melden. Dieser Artikel wird aktualisiert, sobald neue Informationen verfügbar sind.
