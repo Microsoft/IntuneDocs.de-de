@@ -1,0 +1,150 @@
+### YamlMime:Landing
+title: Konfigurieren von Geräteeinstellungen
+summary: Microsoft Intune umfasst Einstellungen und Funktionen, die Sie auf unterschiedlichen Geräten in Ihrer Organisation aktivieren oder deaktivieren können. Diese Einstellungen und Features werden Konfigurationsprofilen hinzugefügt. Anschließend können Sie mit Intune das Profil den Geräten zuweisen.
+metadata:
+  title: Konfigurieren von Geräteeinstellungen
+  description: Microsoft Intune umfasst Einstellungen und Funktionen, die Sie auf unterschiedlichen Geräten in Ihrer Organisation aktivieren oder deaktivieren können. Diese Einstellungen und Features werden Konfigurationsprofilen hinzugefügt. Anschließend können Sie mit Intune das Profil den Geräten zuweisen.
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: dougeby
+  ms.author: dougeby
+  ms.date: 09/16/2019
+  ms.openlocfilehash: 38324e042e1d3b4bcfc3f16e05520118374bb5ff
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71728940"
+landingContent:
+- title: Zuweisen von Features und Einstellungen zu Geräten
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 'Übersicht: Gerätekonfiguration'
+      url: device-profiles.md
+  - linkListType: quickstart
+    links:
+    - text: Erstellen eines E-Mail-Geräteprofils für iOS
+      url: quickstart-email-profile.md
+  - linkListType: how-to-guide
+    links:
+    - text: Erstellen eines Profils
+      url: device-profile-create.md
+    - text: Zuweisen von Profilen
+      url: device-profile-assign.md
+    - text: Überwachen von Profilen
+      url: device-profile-monitor.md
+- title: Einstellungen für Windows 10 und höher
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Verwenden von Windows 10-Vorlagen zum Konfigurieren von Gruppenrichtlinieneinstellungen
+      url: administrative-templates-windows.md
+    - text: Konfigurieren von Einstellungen für Geräteeinschränkungen
+      url: device-restrictions-configure.md
+    - text: Einstellungen für die Übermittlungsoptimierung
+      url: delivery-optimization-windows.md
+    - text: Hinzufügen von E-Mail-Einstellungen zu Geräten
+      url: email-settings-configure.md
+    - text: Einstellungen für den Betrieb als dedizierter Kiosk
+      url: kiosk-settings.md
+    - text: Erstellen von VPN-Profilen zum Herstellen einer Verbindung mit VPN-Servern
+      url: vpn-settings-configure.md
+    - text: Hinzufügen und Verwenden von WLAN-Einstellungen auf Ihren Geräten
+      url: wi-fi-settings-configure.md
+- title: Einstellungen für Windows Holographic for Business
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Upgrade von Windows 10-Editionen oder Verlassen des S Modus
+      url: edition-upgrade-configure-windows-10.md
+    - text: Einstellungen für den Betrieb als dedizierter Kiosk
+      url: kiosk-settings.md
+    - text: Erstellen von VPN-Profilen zum Herstellen einer Verbindung mit VPN-Servern
+      url: vpn-settings-configure.md
+    - text: Hinzufügen und Verwenden von WLAN-Einstellungen auf Ihren Geräten
+      url: wi-fi-settings-configure.md
+    - text: Steuern von Zugriff, Konten und Energiefunktionen auf gemeinsam genutzten PCs oder von mehreren Benutzern verwendeten Geräten
+      url: shared-user-device-settings.md
+- title: Einstellungen für iOS
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Hinzufügen von iOS-Gerätefunktionseinstellungen
+      url: device-features-configure.md
+    - text: Konfigurieren von Einstellungen für Geräteeinschränkungen
+      url: device-restrictions-configure.md
+    - text: Hinzufügen von E-Mail-Einstellungen zu Geräten
+      url: email-settings-configure.md
+    - text: Erstellen von VPN-Profilen zum Herstellen einer Verbindung mit VPN-Servern
+      url: vpn-settings-configure.md
+    - text: Erstellen von App-bezogenen VPN-Profilen für iOS-Geräte
+      url: vpn-setting-configure-per-app.md
+    - text: Hinzufügen und Verwenden von WLAN-Einstellungen auf Ihren Geräten
+      url: wi-fi-settings-configure.md
+- title: Einstellungen für macOS
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Hinzufügen von iOS-Gerätefunktionseinstellungen
+      url: device-features-configure.md
+    - text: Konfigurieren von Einstellungen für Geräteeinschränkungen
+      url: device-restrictions-configure.md
+    - text: Erstellen von VPN-Profilen zum Herstellen einer Verbindung mit VPN-Servern
+      url: vpn-settings-configure.md
+    - text: Hinzufügen und Verwenden von WLAN-Einstellungen auf Ihren Geräten
+      url: wi-fi-settings-configure.md
+    - text: Hinzufügen von macOS-Kernelerweiterungen
+      url: kernel-extensions-overview-macos.md
+- title: Einstellungen für Android
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Konfigurieren von Einstellungen für Geräteeinschränkungen
+      url: device-restrictions-configure.md
+    - text: Hinzufügen von E-Mail-Einstellungen zu Geräten
+      url: email-settings-configure.md
+    - text: Erstellen von VPN-Profilen zum Herstellen einer Verbindung mit VPN-Servern
+      url: vpn-settings-configure.md
+    - text: Hinzufügen und Verwenden von WLAN-Einstellungen auf Ihren Geräten
+      url: wi-fi-settings-configure.md
+    - text: Erstellen eines WLAN-Profils über einen vorinstallierten Schlüssel
+      url: wi-fi-profile-shared-key.md
+    - text: Verwalten von Zebra-Geräten mit Zebra Mobility Extensions
+      url: android-zebra-mx-overview.md
+    - text: Verwalten von Android Enterprise-Geräten mit OEMConfig
+      url: android-oem-configuration-overview.md
+- title: Einstellungen für Android Enterprise
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Konfigurieren von Einstellungen für Geräteeinschränkungen
+      url: device-restrictions-configure.md
+    - text: Hinzufügen von E-Mail-Einstellungen zu Geräten
+      url: email-settings-configure.md
+    - text: Erstellen von VPN-Profilen zum Herstellen einer Verbindung mit VPN-Servern
+      url: vpn-settings-configure.md
+    - text: Hinzufügen und Verwenden von WLAN-Einstellungen auf Ihren Geräten
+      url: wi-fi-settings-configure.md
+- title: Einstellungslisten
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Android
+      url: device-restrictions-android.md
+    - text: Android Enterprise
+      url: device-restrictions-android-for-work.md
+    - text: iOS
+      url: ios-device-features-settings.md
+    - text: macOS
+      url: macos-device-features-settings.md
+    - text: Windows 10 und höher
+      url: delivery-optimization-settings.md
+    - text: Windows Holographic for Business
+      url: device-restrictions-windows-holographic.md
+    - text: Windows 8.1
+      url: device-restrictions-windows-8-1.md
+    - text: Windows Phone 8.1
+      url: device-restrictions-windows-phone-8-1.md

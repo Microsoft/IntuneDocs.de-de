@@ -1,0 +1,67 @@
+- name: Remoteaktionen
+  href: index.yml
+- name: Übersicht
+  expanded: true
+  items:
+    - name: Übersicht über die Geräteverwaltung
+      href: device-management.md
+- name: Schrittanleitungen
+  items:
+    - name: Sperren und Kennwörter
+      items:
+        - name: Sperren eines Geräts
+          href: device-remote-lock.md
+        - name: Kennung zurücksetzen
+          href: device-passcode-reset.md
+        - name: Zurücksetzen der PIN unter Windows 10
+          href: device-windows-pin-reset.md
+    - name: Entfernen und neu starten
+      items:
+        - name: Entfernen von Geräten
+          href: devices-wipe.md
+        - name: Verwalten von Windows Fresh Start
+          href: device-fresh-start.md
+        - name: Neustarten eines Geräts
+          href: device-restart.md
+    - name: Apple-Geräteaktionen
+      items:
+        - name: Finden eines verlorenen iOS-Geräts
+          href: device-locate.md
+        - name: Aktivieren des iOS-Modus für verlorene Geräte
+          href: device-lost-mode.md
+        - name: Aktivieren des überwachten iOS-Modus
+          href: device-supervised-mode.md
+        - name: Löschen eines macOS-Geräts
+          href: device-erase.md
+        - name: Aktivierungssperre umgehen
+          href: device-activation-lock-bypass.md
+    - name: Benutzeraktionen
+      items:
+        - name: Abmelden des aktuellen Benutzers
+          href: device-logout-user.md
+        - name: Benutzer entfernen
+          href: device-remove-user.md
+        - name: Suchen des primären Benutzers
+          href: find-primary-user.md
+    - name: Weitere Aktionen
+      items:
+        - name: Gerät umbenennen
+          href: device-rename.md
+        - name: Senden von Benachrichtigungen
+          href: custom-notifications.md
+        - name: Remotesteuerung mobiler Geräte
+          href: teamviewer-support.md
+        - name: Synchronisieren eines Geräts
+          href: device-sync.md
+        - name: Untersuchen des Gerätebestands
+          href: device-inventory.md
+    - name: Problembehandlung
+      items:
+        - name: Problembehandlung bei Geräteaktionen
+          href: troubleshoot-device-actions.md
+- name: Ressourcen
+  items:
+    - name: Implementierungshandbücher für Szenarios
+      items:
+        - name: Reduzieren von Helpdeskkosten
+          href: password-reset.md

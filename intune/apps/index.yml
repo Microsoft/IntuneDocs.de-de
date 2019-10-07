@@ -1,0 +1,111 @@
+### YamlMime:Landing
+title: Verwalten von Apps
+summary: Mit Microsoft Intune können Sie die von Ihrem Unternehmen genutzten Clientanwendungen verwalten. Sie können Anwendungen für eine Vielzahl von Plattformen und Benutzern konfigurieren, hinzufügen, zuweisen, schützen, überwachen, aktualisieren und ausmustern.
+metadata:
+  title: Verwalten von Apps
+  description: Verwalten und Schützen von Apps
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page
+  ms.collection: collection
+  author: erikre
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/25/2019
+  ms.openlocfilehash: ba12c3a3253fd35bf803342214b73fc094abc3aa
+  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.translationtype: HT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 10/02/2019
+  ms.locfileid: "71729008"
+landingContent:
+- title: Erste Schritte mit Apps
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Übersicht über die App-Verwaltung
+      url: app-management.md
+  - linkListType: quickstart
+    links:
+    - text: Hinzufügen und Zuweisen einer App
+      url: quickstart-add-assign-app.md
+  - linkListType: concept
+    links:
+    - text: App-Lebenszyklus
+      url: app-lifecycle.md
+- title: Hinzufügen von Apps
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Hinzufügen einer App-Übersicht
+      url: apps-add.md
+    - text: Durch Intune geschützte Apps
+      url: apps-supported-intune-apps.md
+  - linkListType: how-to-guide
+    links:
+    - text: Store-Apps
+      url: store-apps-android.md
+    - text: Branchenspezifische Apps
+      url: lob-apps-android.md
+    - text: Win32-App-Verwaltung für eigenständiges Intune
+      url: apps-win32-app-management.md
+    - text: Verwenden von PowerShell-Skripts auf Windows 10-Geräten
+      url: intune-management-extension.md
+    - text: Zuweisen von Apps zu Gruppen
+      url: apps-deploy.md
+- title: Zuweisen von Apps
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Zuweisen von Apps zu Gruppen
+      url: apps-deploy.md
+    - text: Intune und Ausschließen von Apps
+      url: apps-inc-exl-assignments.md
+    - text: Bereitstellen von Windows 10-apps
+      url: apps-windows-10-app-deploy.md
+    - text: Bereitstellen von Apps in Government-Umgebungen
+      url: apps-deploy-gcc-dod.md
+- title: Konfigurieren von Apps
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Selektives Zurücksetzen von Apps
+      url: apps-selective-wipe.md
+    - text: iOS Verwaltete Geräte
+      url: app-configuration-policies-use-ios.md
+    - text: Verwaltete Android Enterprise-Geräte
+      url: app-configuration-policies-use-android.md
+    - text: Verwaltete Apps ohne Geräteregistrierung
+      url: app-configuration-policies-managed-app.md
+    - text: Konfigurieren von Managed Browser
+      url: app-configuration-managed-browser.md
+    - text: Verwalten von VPP-Apps und -Büchern
+      url: vpp-apps.md
+- title: Schützen von Apps
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Übersicht über App-Schutzrichtlinien
+      url: app-protection-policy.md
+  - linkListType: how-to-guide
+    links:
+    - text: Erstellen und Zuweisen von App-Schutzrichtlinien
+      url: app-protection-policies.md
+    - text: Überprüfen von App-Schutzrichtlinien
+      url: app-protection-policies-validate.md
+    - text: Überwachen des Benutzerstatus bei App-Schutz
+      url: app-protection-policies-monitor.md
+    - text: Erstellen und Zuweisen von WIP-App-Schutzrichtlinien
+      url: windows-information-protection-policy-create.md
+    - text: Verwalten der Datenübertragung zwischen iOS-Apps
+      url: data-transfer-between-apps-manage-ios.md
+- title: Behandeln von App-Problemen
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Problembehandlung bei der App-Installation
+      url: troubleshoot-app-install.md
+    - text: Problembehandlung der Verwaltung von mobilen Geräten
+      url: troubleshoot-mam.md
+    - text: Überprüfen der App-Schutzprotokolle
+      url: app-protection-policy-settings-log.md
