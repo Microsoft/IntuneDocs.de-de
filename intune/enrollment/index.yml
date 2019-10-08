@@ -12,12 +12,12 @@ metadata:
   ms.author: dougeby
   manager: dougeby
   ms.date: 08/07/2019
-  ms.openlocfilehash: a32d8c309e1008f28816fffdd7b101537af7947a
-  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.openlocfilehash: 817d902cfb1628d813bb20de271c9a98b50a03ec
+  ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 10/02/2019
-  ms.locfileid: "71728804"
+  ms.lasthandoff: 10/04/2019
+  ms.locfileid: "71939912"
 landingContent:
 - title: Informationen zur Registrierung
   linkLists:
@@ -87,6 +87,10 @@ landingContent:
       url: ios-enroll.md
     - text: Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple
       url: device-enrollment-program-enroll-ios.md
+    - text: Einrichten der iOS- und iPadOS-Benutzerregistrierung
+      url: ios-user-enrollment.md
+    - text: Unterstützte Aktionen und Optionen der Benutzerregistrierung
+      url: ios-user-enrollment-supported-actions.md
     - text: Einrichten der iOS-Geräteregistrierung mit Apple School Manager
       url: apple-school-manager-set-up-ios.md
     - text: Einrichten der iOS-Geräteregistrierung mit Apple Configurator
