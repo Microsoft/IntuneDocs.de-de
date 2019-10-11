@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a0d495265580bc9801a1fadb636a62274a4f728a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8b630709646b2f4489cbfea6284689c9436798ca
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725750"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71916369"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Was ist die Microsoft Intune App-Verwaltung?
 
@@ -67,10 +67,10 @@ Intune bietet eine Reihe von Funktionen, die die Installation der erforderlichen
 | Apps aus einem Store | Ja | Ja | Nein | Ja | Ja |
 | Aktualisierung von Apps | Ja | Ja | Nein | Ja | Ja |
 
-<sup>1</sup> Erwägen Sie die Verwendung [Windows Information Protection](../windows-information-protection-configure.md) für den Schutz von Apps auf Geräten mit Windows 10.<br>
+<sup>1</sup> Erwägen Sie die Verwendung [Windows Information Protection](../protect/windows-information-protection-configure.md) für den Schutz von Apps auf Geräten mit Windows 10.<br>
 <sup>2</sup> Gilt nur für Geräte, die von Intune verwaltet werden.<br>
 <sup>3</sup> Intune unterstützt verfügbare Apps aus dem verwalteten Google Play Store auf Android Enterprise-Geräten.<br>
-<sup>4</sup> Intune bietet keine Möglichkeit, eine Verknüpfung zu einer App als Weblink auf Standard Android Enterprise-Geräten zu installieren. Die Unterstützung für Weblinks ist jedoch für [mehrere dedizierte Android Enterprise-Geräte](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings) vorgesehen. 
+<sup>4</sup> Intune bietet keine Möglichkeit, eine Verknüpfung zu einer App als Weblink auf Standard Android Enterprise-Geräten zu installieren. Jedoch wird die Unterstützung von Weblinks für [dedizierte Android Enterprise-Geräte mit mehreren Apps](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings) bereitgestellt. 
 
 
 ## <a name="get-started"></a>Erste Schritte

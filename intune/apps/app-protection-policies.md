@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/01/2019
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa698aa5c9ed6a523101008d6ce0e21cd4f7bf50
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4958a35f3a83fecffacf26421e4c1d797f45ddaa
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725503"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940388"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Erstellen und Zuweisen von App-Schutzrichtlinien
 
@@ -135,7 +135,7 @@ Für eine sofortige Anzeige der Änderungen muss der Endbenutzer sich von der Ap
 ## <a name="target-app-protection-policies-based-on-device-management-state"></a>Verwendung von App-Schutzrichtlinien als Ziel, basierend auf dem Status der Geräteverwaltung
 Viele Organisationen erlauben Benutzern sowohl die Verwendung von mit Intune-MDM verwalteten Geräten (z.B. unternehmenseigene Geräte) als auch die Verwendung von nicht verwalteten Geräten, die nur mit Intune App-Schutzrichtlinien geschützt werden. Nicht verwaltete Geräte werden häufig als BYOD-Geräte (Bring Your Own Device) bezeichnet.
 
-Da die App-Schutzrichtlinien von Intune an die Identität eines Benutzers gekoppelt sind, können die Schutzeinstellungen sowohl auf registrierte (MDM-verwaltete) als auch auf nicht registrierte Geräte (kein MDM) angewendet werden. Aus diesem Grund können Sie mit einer App-Schutzrichtlinie von Intune entweder Intune-registrierte oder nicht registrierte iOS- und Android-Geräte als Ziel verwenden. Sie können über eine Schutzrichtlinie für nicht verwaltete Geräte verfügen, bei denen Steuerelemente für die Verhinderung von Datenverlust (DLP) vorhanden sind, und über eine separate Schutzrichtlinie für mit MDM-verwaltete Geräte, bei denen die DLP-Steuerelemente nicht so streng sind. Weitere Informationen hierzu, wie dies auf persönlichen Android Enterprise-Geräten funktioniert, finden Sie unter [App-Schutzrichtlinien und Arbeitsprofile](android-deployment-scenarios-app-protection-work-profiles.md).
+Da die App-Schutzrichtlinien von Intune an die Identität eines Benutzers gekoppelt sind, können die Schutzeinstellungen sowohl auf registrierte (MDM-verwaltete) als auch auf nicht registrierte Geräte (kein MDM) angewendet werden. Aus diesem Grund können Sie mit einer App-Schutzrichtlinie von Intune entweder Intune-registrierte oder nicht registrierte iOS- und Android-Geräte als Ziel verwenden. Sie können über eine Schutzrichtlinie für nicht verwaltete Geräte verfügen, bei denen Steuerelemente für die Verhinderung von Datenverlust (DLP) vorhanden sind, und über eine separate Schutzrichtlinie für mit MDM-verwaltete Geräte, bei denen die DLP-Steuerelemente nicht so streng sind. Weitere Informationen dazu, wie dies bei persönlichen Android Enterprise-Geräten funktioniert, finden Sie unter [App-Schutzrichtlinien und Arbeitsprofile](android-deployment-scenarios-app-protection-work-profiles.md).
 
 Um diese Richtlinien zu erstellen, navigieren Sie in der Intune-Konsole zu **Client-Apps** > **App-Schutzrichtlinien**, und klicken Sie dann auf **Richtlinie hinzufügen**. Sie können auch eine vorhandene App-Schutzrichtlinie bearbeiten. Wenn die App-Schutzrichtlinie sowohl auf verwaltete als auch auf nicht verwaltete Geräte angewendet werden soll, bestätigen Sie, dass **Auf alle App-Typen ausrichten** auf den Standardwert **Ja** festgelegt ist. Wenn Sie eine feiner abgestufte Zuweisung basierend auf dem Verwaltungszustand durchführen möchten, legen Sie die Option **Auf alle App-Typen ausrichten** auf **Nein** fest. 
 
@@ -143,9 +143,9 @@ Um diese Richtlinien zu erstellen, navigieren Sie in der Intune-Konsole zu **Cli
 
 ### <a name="app-types"></a>App-Typen
 
-- **Apps auf nicht verwalteten Geräten**: Nicht verwaltete Geräte sind Geräte, auf denen die Verwaltung mobiler Geräte von Intune nicht erkannt wurde. Dazu gehören auch MDM-Anbieter von Drittanbietern.
-- **Apps auf von Intune verwalteten Geräten**: Verwaltete Geräte werden von der Verwaltung mobiler Geräte von Intune verwaltet.
-- **Apps im Android-Arbeitsprofil**: Verwaltete Geräte, die als Android Enterprise-Arbeitsprofilgeräte registriert wurden.
+- **Apps auf nicht verwalteten Geräten:** Nicht verwaltete Geräte sind Geräte, auf denen die Verwaltung mobiler Geräte von Intune nicht erkannt wurde. Dazu gehören auch MDM-Anbieter von Drittanbietern.
+- **Apps auf von Intune verwalteten Geräten:** Verwaltete Geräte werden von der Verwaltung mobiler Geräte von Intune verwaltet.
+- **Apps im Android-Arbeitsprofil:** Verwaltete Geräte, die als Android Enterprise-Arbeitsprofilgeräte registriert wurden.
 
 > Beachten Sie, dass Android-Geräte aufgefordert werden, die Intune-Unternehmensportal-App zu installieren, unabhängig davon, welcher App-Typ gewählt wurde. Wenn Sie beispielsweise „Apps auf durch Intune verwalteten Geräten“ auswählen, werden Benutzer mit nicht verwalteten Android-Geräten weiterhin dazu aufgefordert.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,18 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d9b579e944827e511700073f0b3348b5ef20adc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c2b20030bd6c7e1dc9108002cc43f105cb8c6784
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724697"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036465"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Hinzufügen branchenspezifischer Windows-Apps zu Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Branchenspezifische Apps werden über eine App-Installationsdatei hinzugefügt. Diese Art von App wird in der Regel intern geschrieben. Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer LOB-Windows-App mit Microsoft Intune.
+
+> [!IMPORTANT]
+> Wenn Sie Win32-Apps mithilfe einer Installationsdatei mit der Erweiterung *.msi* bereitstellen, sollten Sie die Verwendung der [Intune-Verwaltungserweiterung](../apps/intune-management-extension.md) in Erwägung ziehen. Wenn Sie die Installation von Win32-Apps und Branchen-Apps während der Autopilot-Registrierung mischen, kann bei der App-Installation ein Fehler auftreten.  
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
 

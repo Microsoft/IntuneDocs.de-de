@@ -1,33 +1,33 @@
 ---
-ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
-ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
+ms.openlocfilehash: 6f5b0c8df86cf5bf1206c1cccb879e37c7944a21
+ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "71302602"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71912761"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Aktivieren der automatischen Registrierung von Windows 10
 
 Durch die automatische Registrierung können Benutzer ihre Windows 10-Geräte in Intune registrieren. Benutzer müssen für die Registrierung ihr Geschäftskonto ihrem persönlichen Gerät hinzufügen oder firmeneigene Geräte mit Azure Active Directory verknüpfen. Im Hintergrund registriert sich das Gerät und tritt Azure Active Directory bei. Nach der Registrierung wird das Gerät mit Intune verwaltet.
 
 **Voraussetzungen**
+
 - Azure Active Directory Premium-Abonnement ([Testabonnement](http://go.microsoft.com/fwlink/?LinkID=816845))
 - Microsoft Intune-Abonnement
-
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Konfigurieren der automatischen MDM-Registrierung
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an, und klicken Sie auf **Azure Active Directory**.
 
-   ![Screenshot des Azure-Portals](../media/auto-enroll-azure-main.png)
+   ![Screenshot des Azure-Portals](../enrollment/media/windows-enroll/auto-enroll-azure-main.png)
 
 2. Wählen Sie **Mobilität (MDM und MAM)** aus.
 
-   ![Screenshot des Azure-Portals](../media/auto-enroll-mdm.png)
+   ![Screenshot des Azure-Portals](../enrollment/media/windows-enroll/auto-enroll-mdm.png)
 
 3. Wählen Sie **Microsoft Intune** aus.
 
-   ![Screenshot des Azure-Portals](../media/auto-enroll-intune.png)
+   ![Screenshot des Azure-Portals](../enrollment/media/windows-enroll/auto-enroll-intune.png)
 
 4. Konfigurieren Sie den **MDM-Benutzerbereich**. Geben Sie an, welche Geräte von Benutzern von Microsoft Intune verwaltet werden sollen. Diese Windows 10-Geräte können sich automatisch für die Verwaltung mit Microsoft Intune registrieren.
 
@@ -43,7 +43,7 @@ Durch die automatische Registrierung können Benutzer ihre Windows 10-Geräte in
    > [!NOTE]
    > Der MDM-Benutzerbereich muss auf eine Azure AD-Gruppe eingestellt sein, die Benutzerobjekte enthält.
 
-   ![Screenshot des Azure-Portals](../media/auto-enroll-scope.png)
+   ![Screenshot des Azure-Portals](../enrollment/media/windows-enroll/auto-enroll-scope.png)
 
 5. Verwenden Sie die Standardwerte für die folgenden URLs:
     - **URL für MDM-Nutzungsbedingungen**

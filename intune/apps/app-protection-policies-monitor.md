@@ -1,7 +1,7 @@
 ---
 title: Überwachen von App-Schutzrichtlinien
 titleSuffix: Microsoft Intune
-description: In diesem Artikel wird beschrieben, wie Sie den Konformitätsstatus der Verwaltungsrichtlinien für mobile Apps in Intune überwachen können.
+description: In diesem Thema wird beschrieben, wie Sie App-Schutzrichtlinien in Intune überwachen.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -12,24 +12,24 @@ ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
-ms.reviewer: joglocke
+ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fad554ace3b7c8c279161f149bc06854dfaca93d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0b4ab3369f241c9f33d4e0bddfd0dcf98c8ab915
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725516"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830598"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Überwachen von App-Schutzrichtlinien
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Sie können den Konformitätsstatus der Verwaltungsrichtlinien für mobile Apps (Mobile App Management, MAM) überwachen, die Sie im Bereich „Intune-Schutz für Apps“ für Benutzer im [Azure-Portal](https://portal.azure.com) angewendet haben. Sie können darüber hinaus Informationen über die Benutzer finden, die von der MAM-Richtlinie betroffen sind, deren Konformitätsstatus sowie Probleme, die bei den Benutzern möglicherweise auftreten.
 
-Es gibt drei verschiedenen Stellen, an denen der Konformitätsstatus von MAM-Richtlinien überwacht werden kann:
+Es gibt drei verschiedenen Stellen, an denen App-Schutzrichtlinien überwacht werden können:
 - Zusammenfassungsansicht
 - Detailansicht
 - Berichterstellung
@@ -72,10 +72,20 @@ Sie können nach einem einzelnen Benutzer suchen und den Kompatibilitätsstatus 
 - **Status:**
   - **Eingecheckt:** Die Richtlinie wurde für den Benutzer bereitgestellt, und die App wurde mindestens einmal im Arbeitskontext verwendet.
   - **Nicht eingecheckt:** Die Richtlinie wurde für den Benutzer bereitgestellt, die App seitdem aber nicht im Arbeitskontext verwendet.
-- **Letzte Synchronisierung:** Zeitpunkt der letzten Synchronisierung des Geräts.
+- **Letzte Synchronisierung:** Zeitpunkt der letzten Synchronisierung der App mit Intune. 
 
 >[!NOTE]
-> Wenn für den gesuchten Benutzer keine MAM-Richtlinie bereitgestellt wurde, wird Ihnen eine Meldung angezeigt, dass auf den Benutzer keine MAM-Richtlinien angewendet werden.
+> Die Spalte „Letzte Synchronisierung“ stellt sowohl im Benutzerstatusbericht in der Konsole als auch im [exportierbaren CSV-Bericht](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv) der App-Schutzrichtlinie den gleichen Wert dar. Der Unterschied besteht in einer kurzen Verzögerung bei der Synchronisierung der Werte in den beiden Berichten. 
+>
+> Die in „Letzte Synchronisierung“ angegebene Uhrzeit ist der Zeitpunkt, an dem Intune die „App-Instanz“ zuletzt gesehen hat. Eine App-Instanz ist eine eindeutige Kombination von App + Benutzer + Gerät. Wenn ein Endbenutzer eine App startet, kann diese zu diesem Startzeitpunkt, abhängig vom letzten Eincheckzeitpunkt, mit dem Intune-App-Schutz-Dienst kommunizieren oder auch nicht. In dieser Dokumentation werden [die Wiederholungsintervallzeiten für den Eincheckvorgang der App-Schutzrichtlinie](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery) erläutert. Wenn ein Endbenutzer diese spezielle App also im letzten Eincheckintervall (in der Regel 30 Minuten für die aktive Verwendung) nicht verwendet hat und die App gestartet wird, dann gilt Folgendes:
+>
+> - Der exportierbare CSV-Bericht der App-Schutzrichtlinie enthält die neueste Uhrzeit innerhalb von 1 Minute (üblich, minimal) bis 30 Minuten (die maximale SLA, die durch die von der Intune-Berichterstellung verwendeten SQL-Aggregation tatsächlich bereitgestellt wird).
+> - Der Benutzerstatusbericht erhält die neueste Uhrzeit sofort.
+>
+> Betrachten Sie z.B. einen lizenzierten Zielendbenutzer, der eine geschützte App um 12:00 Uhr startet:
+> - Wenn dies eine erste Anmeldung ist, bedeutet das, dass der Endbenutzer zuvor abgemeldet wurde (keine aktive Verwendung) und über keine App-Instanzregistrierung bei Intune verfügte. Nachdem der Benutzer sich angemeldet hat, erhält er eine neue App-Instanzregistrierung und wird sofort eingecheckt, sofern keine Konnektivitätsprobleme vorliegen, und zwar mit den oben aufgeführten Zeitverzögerungen für künftige Eincheckvorgänge. Daher würde die Uhrzeit der letzten Synchronisierung im Benutzerstatusbericht „12:00 Uhr“ und im Bericht der App-Schutzrichtlinie „12:01 Uhr“ (oder „12:30 Uhr“) lauten. 
+> - Wenn der Benutzer die App einfach gestartet hat, hängt die Uhrzeit der letzten Synchronisierung im Bericht vom letzten Eincheckzeitpunkt ab.
+
 
 Um die Berichterstattung für einen Benutzer anzuzeigen, gehen Sie folgendermaßen vor:
 
@@ -89,11 +99,14 @@ Um die Berichterstattung für einen Benutzer anzuzeigen, gehen Sie folgendermaß
 
 3. Wählen Sie den Benutzer in der Liste aus. Es werden Details zum Kompatibilitätsstatus für diesen Benutzer angezeigt.
 
+>[!NOTE]
+> Wenn für den gesuchten Benutzer keine MAM-Richtlinie bereitgestellt wurde, wird Ihnen eine Meldung angezeigt, dass auf den Benutzer keine MAM-Richtlinien angewendet werden.
+
 ### <a name="flagged-users"></a>Gekennzeichnete Benutzer
 In der Detailansicht werden die Fehlermeldung, die App, auf die bei Auftreten des Fehlers zugegriffen wurde, die betroffene Betriebssystemplattform des Geräts und ein Zeitstempel angezeigt. Hier werden Benutzer gemeldet, deren Geräte von „SafetyNet-Gerätenachweis“ bei der bedingten Startüberprüfung gekennzeichnet wurden. Außerdem werden die von Google angegebenen Gründe aufgeführt.
 
 ### <a name="users-with-potentially-harmful-apps"></a>Benutzer mit potenziell schädlichen Apps
-Die Detailansicht zeigt den Benutzer, die ID des App-Pakets, wenn die App MAM-fähig ist, die Bedrohungskategorie, die E-Mail, den Gerätenamen und einen Zeitstempel. Hier werden Benutzer gemeldet, deren Geräte von der „Bedrohungsüberprüfung für Apps erzwingen“ bei der bedingten Startüberprüfung gekennzeichnet wurden. Außerdem werden die von Google angegebenen Bedrohungskategorien aufgeführt. Wenn in diesem Bericht Apps aufgeführt sind, die über Intune bereitgestellt werden, wenden Sie sich an den App-Entwickler für die App, und/oder entfernen Sie die App aus der Zuweisung an Ihre Benutzer. 
+Die Detailansicht zeigt den Benutzer, die ID des App-Pakets, wenn die App MAM-fähig ist, die Bedrohungskategorie, die E-Mail, den Gerätenamen und einen Zeitstempel. Hier werden Benutzer gemeldet, deren Geräte bei der bedingten Startüberprüfung „Bedrohungsüberprüfung für Apps erzwingen“ gekennzeichnet wurden. Außerdem werden die von Google angegebenen Bedrohungskategorien aufgeführt. Wenn in diesem Bericht Apps aufgeführt sind, die über Intune bereitgestellt werden, wenden Sie sich an den App-Entwickler für die App, und/oder entfernen Sie die App aus der Zuweisung an Ihre Benutzer. 
 
 ## <a name="reporting-view"></a>Berichterstellung
 

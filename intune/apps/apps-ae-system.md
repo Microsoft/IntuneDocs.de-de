@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ffc99b34016eba6511f63d1df2184abc3cae858
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c07ce82bbc056e1d76abeb5d31bf57e0973fad6e
+ms.sourcegitcommit: bdf948be824cf5390d5166a277f389f3785c81f9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725165"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71960879"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Hinzufügen von Android Enterprise-System-Apps zu Microsoft Intune
 
@@ -35,16 +35,20 @@ Mit den folgenden Schritten können Sie eine Android Enterprise-System-App aus d
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Wählen Sie im **Intune**-Bereich die Option **Client-Apps** > **Apps** > **Hinzufügen** aus.
 3. Wählen Sie im Bereich **App hinzufügen** aus den verfügbaren **anderen** Typen den Typ **Android Enterprise-System-App** aus.
-4. Wählen Sie zum Konfigurieren der App-Informationen die Option **Konfigurieren** aus, und geben Sie die folgenden Informationen an:
+4. Klicken Sie auf **Konfigurieren**, und geben Sie dann die folgenden Informationen an, um die App-Informationen zu konfigurieren:
     - **App-Name:** Geben Sie den Namen der App ein.
     - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein.  
     - **Paketname:** Geben Sie einen Paketnamen ein. Intune überprüft, ob der Paketname gültig ist.
 5. Wählen Sie **OK** aus.
 6. Wählen Sie **Hinzufügen** aus.
 
+> [!NOTE]
+> Sie müssen mit dem OEM Ihres Geräts zusammenarbeiten, um den Paketnamen der App zu finden, die Sie aktivieren/deaktivieren möchten.
+
 Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie den ausgewählten Gruppen zuweisen können. 
 
 Android Enterprise-System-Apps aktivieren oder deaktivieren Apps, die bereits Teil der Plattform sind. Weisen Sie die System-App als **Erforderlich** zu, um eine App zu aktivieren. Weisen Sie die System-App als **Deinstallieren** zu, um eine App zu deaktivieren. System-Apps können einem Benutzer nicht als verfügbar zugeordnet werden.
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 
