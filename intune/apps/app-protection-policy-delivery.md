@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/08/2019
+ms.date: 10/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca6b6db6618fa87b4d5691425470e603954ce015
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b9f9b6734dc5a5af320519a5f65442f01d21d66f
+ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725477"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71940234"
 ---
 # <a name="understand-app-protection-policy-delivery-timing"></a>Verstehen, wann Schutzrichtlinien für Apps ausgelöst werden
 

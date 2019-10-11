@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 04afc9c44bc1c4898950e6f3aff5dac7cb93370f
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 3aadafbcf9c9208e7c87504c5459731de1e402b5
+ms.sourcegitcommit: 614c4c36cfe544569db998e17e29feeaefbb7a2e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "56323384"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "71302602"
 ---
 ## <a name="enable-windows-10-automatic-enrollment"></a>Aktivieren der automatischen Registrierung von Windows 10
 
@@ -41,7 +41,7 @@ Durch die automatische Registrierung können Benutzer ihre Windows 10-Geräte in
       > Für unternehmenseigene Geräte hat der MDM-Benutzerbereich Vorrang, wenn beide Bereiche aktiviert sind. Die Geräte werden für die mobile Geräteverwaltung registriert.
 
    > [!NOTE]
-   > Der MAM-Benutzerbereich muss auf eine Benutzergruppe oder eine Sammlung festgelegt werden.
+   > Der MDM-Benutzerbereich muss auf eine Azure AD-Gruppe eingestellt sein, die Benutzerobjekte enthält.
 
    ![Screenshot des Azure-Portals](../media/auto-enroll-scope.png)
 

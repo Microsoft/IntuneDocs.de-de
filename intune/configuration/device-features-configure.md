@@ -1,0 +1,226 @@
+---
+title: Erstellen von iOS- oder macOS-Geräteprofilen in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Erstellen Sie in Microsoft Intune ein iOS- oder macOS-Geräteprofil, oder fügen Sie ein solches Profil hinzu. Konfigurieren Sie dann Einstellungen für AirPrint, das Layout des Startbildschirms, App-Benachrichtigungen, freigegebene Geräte, einmaliges Anmelden und Webinhaltsfilter.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
+manager: dougeby
+ms.date: 09/16/2019
+ms.topic: conceptual
+ms.service: microsoft-intune
+ms.localizationpriority: high
+ms.technology: ''
+ms.reviewer: ''
+ms.suite: ems
+search.appverid: MET150
+ms.custom: intune-azure
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 83328652c366eea6e1a3cbb81ea4979d8844a96b
+ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71724190"
+---
+# <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Hinzufügen von Einstellungen für iOS- oder macOS-Gerätefunktionen in Intune
+
+[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
+Intune umfasst zahlreiche Funktionen und Einstellungen, mit denen Administratoren iOS- und macOS-Geräte steuern können. Administratoren können z.B.:
+
+- Benutzern den Zugriff auf AirPrint-Drucker in Ihrem Netzwerk ermöglichen
+- Apps und Ordner dem Startbildschirm hinzufügen, einschließlich Hinzufügen von neuen Seiten
+- Wählen, ob und wie App-Benachrichtigungen angezeigt werden
+- Den Sperrbildschirm so konfigurieren, dass eine Nachricht oder das Bestandskennzeichen angezeigt wird, insbesondere für gemeinsam genutzte Geräte
+- Benutzern sicheres einmaliges Anmelden ermöglichen, um Anmeldeinformationen zwischen Apps freizugeben
+- Websites herausfiltern, die nicht jugendfreie Sprache verwenden, und bestimmte Websites zulassen oder blockieren
+
+Intune verwendet „Konfigurationsprofile“ zum Erstellen und Anpassen dieser Einstellungen für die Anforderungen Ihrer Organisation. Nachdem Sie diese Features in einem Profil hinzugefügt haben, übertragen Sie das Profil per Push auf iOS- und macOS-Geräte in Ihrer Organisation oder stellen es für diese Geräte bereit.
+
+In diesem Artikel werden die verschiedenen Features beschrieben, die Sie konfigurieren können, und es wird erläutert, wie Sie ein Gerätekonfigurationsprofil erstellen. Sie können auch alle verfügbaren Einstellungen für [iOS](ios-device-features-settings.md)- und [macOS](macos-device-features-settings.md)-Geräte sehen.
+
+## <a name="airprint"></a>AirPrint
+
+AirPrint ist ein Apple-Feature, mit dem Geräte Dateien über ein Drahtlosnetzwerk drucken können. In Intune können Sie AirPrint-Informationen zu Geräten hinzufügen.
+
+Eine Liste der Einstellungen, die Sie in Intune konfigurieren können, finden Sie unter [AirPrint unter iOS](ios-device-features-settings.md#airprint) und [AirPrint unter macOS](macos-device-features-settings.md#airprint).
+
+Weitere Informationen zu AirPrint finden Sie auf der Website von Apple unter [Informationen zu AirPrint](https://support.apple.com/HT201311).
+
+Gilt für:
+
+- iOS 7.0 und höher
+- iOS 13.0 und höher
+- macOS 10.10 und höher
+
+## <a name="app-notifications"></a>App-Benachrichtigungen
+
+Legen Sie fest, wie Apps auf iOS- und iPad-Geräten Benachrichtigungen empfangen sollen. Sie können beispielsweise App-Benachrichtigungen aus Intune senden, sodass diese in der Mitteilungszentrale oder auf dem Sperrbildschirm angezeigt werden oder ein akustisches Signal ertönt.
+
+Eine Liste der Einstellungen, die Sie in Intune konfigurieren können, finden Sie unter [App-Benachrichtigungen unter iOS](ios-device-features-settings.md#app-notifications).
+
+Weitere Informationen zu diesem Feature finden Sie auf der Website von Apple unter [Notifications](https://developer.apple.com/notifications/) (Benachrichtigungen).
+
+Gilt für:
+
+- iOS 9.3 und höher
+- iOS 13.0 und höher
+
+## <a name="associated-domains"></a>Zugeordnete Domänen
+
+Zugeordnete Domänen ermöglichen es Ihnen, eine Beziehung zwischen Ihren Domänen – z. B. `contoso.com` – und Ihren Apps zu erstellen. Dieses Feature bietet folgende Möglichkeiten:
+
+- Sie können Daten und Anmeldeinformationen für Apps und Websites in Ihrer Organisation freigeben.
+- Sie können App-Features verwenden, die auf Ihrer Website basieren, z. B. die App-Erweiterung für einmaliges Anmelden, universelle Links und das automatische Ausfüllen von Kennwörtern.
+
+  Sie können beispielsweise eine zugeordnete Domäne erstellen, um das automatische Ausfüllen von Kennwörtern zuzulassen, sodass Anmeldeinformationen wie z. B. ein Kennwort für Websites empfohlen werden, die Ihrer App zugeordnet sind.
+
+Eine Liste der Einstellungen, die Sie in Intune konfigurieren können, finden Sie unter [Zugeordnete Domänen unter macOS](macos-device-features-settings.md#associated-domains).
+
+Weitere Informationen zu diesem Feature finden Sie auf der Website von Apple unter [Setting Up an App’s Associated Domains](https://developer.apple.com/documentation/security/password_autofill/setting_up_an_app_s_associated_domains) (Einrichten von zugeordneten Domänen einer App).
+
+Gilt für:
+
+- macOS 10.15 und neuer
+
+## <a name="home-screen-layout"></a>Layout des Startbildschirms
+
+Mit diesen Einstellungen konfigurieren Sie das Layout von Apps und Ordnern im Dock und auf dem Startbildschirm von iOS- und iPadOS-Geräten. Sie können:
+
+- Verwenden Sie die Einstellungen für das **Dock**, um Apps oder Ordner zum Bildschirm hinzuzufügen. Sie können beispielsweise Safari und die E-Mail-App im Gerätedock anzeigen.
+- Fügen Sie **Seiten** hinzu, die auf dem Startbildschirm angezeigt werden sollen, und fügen Sie Apps hinzu, die auf jeder Seite angezeigt werden sollen. Sie können beispielsweise eine Seite namens **Contoso** hinzufügen und auf dieser Seite die Einstellungs-App hinzufügen.
+
+Eine Liste der Einstellungen, die Sie in Intune konfigurieren können, finden Sie unter [Layout des Startbildschirms unter iOS](ios-device-features-settings.md#home-screen-layout).
+
+Gilt für:
+
+- iOS 9.3 und höher
+- iOS 13.0 und höher
+
+## <a name="lock-screen-message"></a>Nachricht auf Sperrbildschirm
+
+Verwenden Sie diese Einstellungen, um eine benutzerdefinierte Nachricht oder einen Text im Anmeldefenster und auf dem Sperrbildschirm anzuzeigen. Sie können z. B. eine „Wenn verloren, zurück an“-Nachricht eingeben und Informationen zum Bestandskennzeichen anzeigen.
+
+Eine Liste der Einstellungen, die Sie in Intune konfigurieren können, finden Sie unter [Einstellungen für Sperrbildschirmnachricht unter iOS](ios-device-features-settings.md#lock-screen-message).
+
+Weitere Informationen zu Sperrbildschirmnachrichten finden Sie auf der Website von Apple unter [LockScreenMessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage).
+
+Gilt für:
+
+- iOS 9.3 und höher
+- iOS 13.0 und höher
+
+## <a name="login-items"></a>Anmeldeelemente
+
+Verwenden Sie dieses Feature, um die Apps, benutzerdefinierten Apps, Dateien und Ordner auszuwählen, die geöffnet werden, wenn Benutzer sich bei ihren Geräten anmelden. 
+
+Eine Liste der Einstellungen, die Sie in Intune konfigurieren können, finden Sie unter [Anmeldeelemente unter macOS](macos-device-features-settings.md#login-items).
+
+Gilt für:
+
+- macOS 10.13 und höher
+
+## <a name="login-window"></a>Fenster „Anmeldung“
+
+Steuern Sie das Aussehen des Anmeldebildschirms sowie die Funktionen, die Benutzern vor der Anmeldung zur Verfügung stehen. Fügen Sie z. B. ein Banner mit einer benutzerdefinierten Meldung hinzu, wählen Sie aus, ob die Schaltfläche für den Energiesparmodus angezeigt wird, und vieles mehr.
+
+Eine Liste der Einstellungen, die Sie in Intune konfigurieren können, finden Sie unter [Anmeldefenster unter macOS](macos-device-features-settings.md#login-window).
+
+Gilt für:
+
+- macOS 10.7 und höher
+
+## <a name="single-sign-on"></a>Einmaliges Anmelden
+
+Die meisten branchenspezifischen Apps erfordern eine bestimmte Form von Benutzerauthentifizierung, um Sicherheitsfeatures unterstützen zu können. Häufig müssen Benutzer bei dieser Art von Authentifizierung die gleichen Anmeldeinformationen mehrfach eingeben. Um die Benutzerfreundlichkeit zu verbessern, können Entwickler Apps erstellen, die einmaliges Anmelden (SSO) verwenden. Dadurch wird die Anzahl der Male reduziert, die ein Benutzer Anmeldeinformationen eingeben muss.
+
+Um einmaliges Anmelden zu verwenden, achten Sie darauf, dass Sie folgende Anforderungen erfüllen:
+
+- Es muss eine App vorhanden sein, die dafür codiert ist, den Anmeldeinformationsspeicher des Benutzers zum einmaligen Anmelden auf dem Gerät zu durchsuchen.
+- Intune muss für einmaliges Anmelden von iOS-Geräten konfiguriert sein.
+
+![Bereich „Einmaliges Anmelden“](./media/device-features-configure/sso-blade.png)
+
+Eine Liste der Einstellungen, die Sie in Intune konfigurieren können, finden Sie unter [Einmaliges Anmelden unter iOS](ios-device-features-settings.md#single-sign-on).
+
+Gilt für:
+
+- iOS 7.0 und höher
+- iOS 13.0 und höher
+
+## <a name="single-sign-on-app-extension"></a>App-Erweiterung für einmaliges Anmelden
+
+Diese Einstellungen konfigurieren eine App-Erweiterung, die das einmalige Anmelden (Single Sign-On, SSO) für Ihre iOS-, iPadOS- und macOS-Geräte ermöglicht. Die meisten branchenspezifischen Apps und Organisationswebsites erfordern eine bestimmte Form der sicheren Benutzerauthentifizierung. Häufig müssen Benutzer bei dieser Art von Authentifizierung die gleichen Anmeldeinformationen mehrfach eingeben. SSO ermöglicht Benutzern den Zugriff auf ihre Apps und Websites, nachdem sie ihre Anmeldeinformationen nur einmal eingegeben haben. Nach dem Anmelden können Benutzer automatisch auf Apps und Websites zugreifen oder ihre Gesichtserkennungs-ID, ihre Fingereingabe-ID oder ihren Apple-Passcode verwenden, um Zugriff zu erhalten.
+
+In Intune verwenden Sie diese Einstellungen, um die integrierte Kerberos-Erweiterung von Apple oder eine von Ihrer Organisation erstellte App-Erweiterung für einmaliges Anmelden zu konfigurieren. Die App-Erweiterung für einmaliges Anmelden verarbeitet die Authentifizierung für Ihre Benutzer. Diese Einstellungen konfigurieren SSO-App-Erweiterungen für Anmeldeinformationen, die für Abfrage-und-Antwort-Authentifizierungsflows konzipiert sind. Sie können zwischen einer von Apple bereitgestellten Kerberos-spezifischen und einer generischen Erweiterung für Anmeldeinformationen auswählen.
+
+Eine Liste der Einstellungen, die Sie in Intune konfigurieren können, finden Sie unter [App-Erweiterung für einmaliges Anmelden unter iOS](ios-device-features-settings.md#single-sign-on-app-extension) und [App-Erweiterung für einmaliges Anmelden unter macOS](macos-device-features-settings.md#single-sign-on-app-extension).
+
+Weitere Informationen zum Entwickeln einer App-Erweiterung für einmaliges Anmelden finden Sie auf der Website von Apple im Video [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-talks/301) (Erweiterbares einmaliges Anmelden für Unternehmen).
+
+> [!NOTE]
+> Das Feature **App-Erweiterung für einmaliges Anmelden** unterscheidet sich vom Feature **Einmaliges Anmelden**:
+>
+> - Die Einstellungen für **App-Erweiterung für einmaliges Anmelden** gelten für iPadOS 13.0 (und höher) sowie für iOS 13.0 (und höher). Die Einstellungen für **Einmaliges Anmelden** gelten für iPadOS 13.0 (und höher) sowie für iOS 7.0 (und höher).
+> - Eine **App-Erweiterung für einmaliges Anmelden** verarbeitet die Authentifizierung beim Betriebssystem. Beim Feature **Einmaliges Anmelden** erfolgt die Verarbeitung der Authentifizierung durch eine spezifische App.
+> - Bei der Verwendung einer **App-Erweiterung für einmaliges Anmelden** melden Benutzer sich im Hintergrund, mit einer Gesichtserkennungs-ID, einer Fingereingabe-ID oder einem Pincode oder Passcode von Apple bei Apps und Websites an. Bei der Verwendung des Features **Einmaliges Anmelden** melden Benutzer sich mithilfe einer anderen App bei Apps und Websites an.
+>
+>    Die **App-Erweiterung für einmaliges Anmelden** verwendet das Apple-Betriebssystem zur Authentifizierung. Damit bietet dieses Feature mehr Benutzerfreundlichkeit.
+>
+> - Aus Entwicklerperspektive kann die **App-Erweiterung für einmaliges Anmelden** jede Art von SSO-Authentifizierung mit Anmeldeinformationen verwenden. Beim Feature **Einmaliges Anmelden** können Sie nur die Kerberos-SSO-Authentifizierung verwenden.  
+
+Gilt für:
+
+- iOS 13.0 und neuer
+- iOS 13.0 und höher
+- macOS 10.15 und neuer
+
+## <a name="wallpaper"></a>Hintergrundbild
+
+Fügen Sie ein benutzerdefiniertes PNG-, JPG- oder JPEG-Bild auf Ihren überwachten iOS-Geräten hinzu. Sie können Intune z. B. dafür verwenden, ein Firmenlogo auf den Sperrbildschirm Ihrer Geräte hinzuzufügen.
+
+Eine Liste der Einstellungen, die Sie in Intune konfigurieren können, finden Sie unter [Hintergrundbilder unter iOS](ios-device-features-settings.md#wallpaper).
+
+Gilt für:
+
+- iOS
+- iOS 13.0 und höher
+
+## <a name="web-content-filter"></a>Webinhaltsfilter
+
+Diese Einstellung kann den integrierten AutoFilter-Algorithmus von Apple verwenden, um Webseiten zu bewerten und nicht jugendfreie Inhalte zu blockieren. Sie können auch Listen mit zulässigen und eingeschränkten Weblinks erstellen. Sie können z. B. festlegen, dass nur `contoso`-Websites geöffnet werden dürfen.
+
+Eine Liste der Einstellungen, die Sie in Intune konfigurieren können, finden Sie unter [Webinhaltsfilter unter iOS](ios-device-features-settings.md#web-content-filter).
+
+Gilt für:
+
+- iOS 7.0 und höher
+- iOS 13.0 und höher
+
+## <a name="create-a-device-profile"></a>Erstellen eines Geräteprofils
+
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+3. Geben Sie die folgenden Eigenschaften ein:
+
+    - **Name**: Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein guter Richtlinienname ist beispielsweise **macOS: Anmeldebildschirm konfigurieren**.
+    - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
+    - **Plattform**: Wählen Sie die Plattform Ihrer Geräte aus. Folgende Optionen sind verfügbar:  
+        - **iOS/iPadOS**
+        - **macOS**
+    - **Profiltyp**: Wählen Sie **Gerätefunktionen** aus.
+
+4. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. Wählen Sie Ihre Plattform für detaillierte Einstellungen aus:
+
+    - [iOS/iPadOS](ios-device-features-settings.md)
+    - [macOS](macos-device-features-settings.md)
+
+5. Wenn Sie fertig sind, wählen Sie **OK** > **Erstellen** aus, um Ihre Änderungen zu speichern.
+
+Das Profil wird erstellt und in der Profilliste angezeigt. Denken Sie daran, das [Profil zuzuweisen](device-profile-assign.md) und [seinen Status zu überwachen](device-profile-monitor.md).
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Nachdem das Profil erstellt wurde, kann es zugewiesen werden. Die nächsten Schritte sind das [Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune](device-profile-assign.md) und das [Überwachen von Geräteprofilen in Microsoft Intune](device-profile-monitor.md).
+
+Zeigen Sie alle Einstellungen für Gerätefunktionen für [iOS](ios-device-features-settings.md)- und [macOS](macos-device-features-settings.md)-Geräte an.
