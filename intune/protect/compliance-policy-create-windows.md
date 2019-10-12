@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 10/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 484035603e4fb447b004aad6c6f85726034f3c23
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 493db6299aa8242d0ca6ab669b313e85d0dc14c6
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732827"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251585"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Einstellungen für Windows 10 und höher, um Geräte mit Intune als konform oder nicht konform zu kennzeichnen
 
@@ -138,6 +138,9 @@ Gilt nur für gemeinsam verwaltete Geräte mit Windows 10 und höher. Ausschlie�
 - **Firewall**: Legen Sie fest, dass für die Aktivierung der Microsoft Defender Firewall **erforderlich** ist, und verhindern Sie, dass Benutzer Sie deaktivieren. **Nicht konfiguriert** (Standard): die Microsoft Defender Firewall wird nicht gesteuert, und vorhandene Einstellungen können nicht geändert werden.
 
   [Firewall-CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp)
+
+  > [!NOTE]
+  > Wenn das Gerät nach einem Neustart sofort synchronisiert wird oder die Wake-in-the-down-Datei sofort synchronisiert, wird diese Einstellung möglicherweise als **Fehler**gemeldet. Dieses Szenario wirkt sich möglicherweise nicht auf den Gesamtstatus der Geräte Konformität aus. Zum erneuten Auswerten des Konformitäts Status müssen Sie [das Gerät manuell synchronisieren](https://docs.microsoft.com/intune-user-help/sync-your-device-manually-windows).
 
 - **Trusted Platform Module (TPM)** : Wenn diese Einstellung auf " **erforderlich**" festgelegt ist, überprüft InTune die Version auf Konformität. Das Gerät ist kompatibel, wenn die TPM-Chip Version größer als 0 (null) ist. Das Gerät ist nicht kompatibel, wenn auf dem Gerät keine TPM-Version vorhanden ist. Wenn diese Option **nicht konfiguriert**ist, prüft InTune das Gerät nicht auf eine TPM-Chip Version.
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7bba4617aa756c5f7168a2febf1a3f1ffdd2029
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1938f6862fa7b74dccc4ea23ac139fcd955d77d7
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735999"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237261"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>MDM-Einstellungen für Sicherheitsbaselines in Intune  
 
@@ -1622,7 +1622,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
 
 - **Ausführungstyp für E-Mail-Inhalt**  
   Diese Regel verhindert die Ausführung oder das Starten der folgenden Dateitypen aus einer E-Mail, die in Microsoft Outlook oder einem webbasierten E-Mail-Dienst (z.B. Gmail.com oder Outlook.com) angezeigt wird: ausführbare Dateien (z.B. EXE, DLL oder SCR), Skriptdateien (z.B. PS PowerShell, VBS VisualBasic oder JS JavaScript) und Skriptarchivdateien.  
-  [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067063)  
+  [Erfahren Sie mehr](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-executable-content-from-email-client-and-webmail) 
   
   **Standard**: Blockieren
 
@@ -1632,7 +1632,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
 
 - **Netzwerkschutztyp**  
   Mit dieser Richtlinieneinstellung können Sie Netzwerkschutz in Windows Defender Exploit Guard aktivieren (blockieren/überwachen) oder deaktivieren. Netzwerkschutz ist ein Feature von Windows Defender Exploit Guard, das Arbeitnehmer davor schützt, eine Anwendung im Zuge betrügerischer Phishing-Versuche mit Zugriffsabsicht, Hostseiten für Exploits und schädliche Inhalte im Internet zu verwenden. Dabei wird auch verhindert, dass Browser von Drittanbietern Verbindungen zu gefährlichen Websites herstellen. Der Werttyp ist Integer. Wenn Sie diese Einstellung aktivieren, wird der Netzwerkschutz aktiviert, und Arbeitnehmer können ihn nicht mehr deaktivieren. Sein Verhalten kann mit den folgenden Optionen gesteuert werden: „Blockieren“ und „Überwachen“. Wenn Sie diese Richtlinie mit der Option „Blockieren“ aktivieren, können Benutzer und Anwendungen keine Verbindungen zu gefährlichen Domänen herstellen. Diese Aktivität wird im Windows Defender Security Center angezeigt. Wenn Sie diese Richtlinie mit der Option „Überwachen“ aktivieren, können Benutzer/Anwendungen Verbindungen zu gefährlichen Domänen herstellen. Diese Aktivität wird jedoch trotzdem im Windows Defender Security Center angezeigt. Wenn Sie diese Richtlinie deaktivieren, können Benutzer/Anwendungen Verbindungen zu gefährlichen Domänen herstellen. Im Windows Defender Security Center werden keine Netzwerkaktivitäten angezeigt. Wenn Sie diese Richtlinie nicht konfigurieren, wird die Blockierung des Netzwerks standardmäßig deaktiviert.  
-  [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067102)  
+  [Erfahren Sie mehr](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **Standard**: Aktivieren
   

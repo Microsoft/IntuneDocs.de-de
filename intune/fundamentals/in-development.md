@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/27/2019
+ms.date: 10/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 009b9cf22bcdd73eb563c772cc9995047f05a9c1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0e7c4e5ed45455dda941fb0c61c989c12c57135d
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735765"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999321"
 ---
 # <a name="in-development-for-microsoft-intune---october-2019"></a>In der Entwicklung befindliche Microsoft Intune-Features: Oktober 2019
 
@@ -117,7 +117,7 @@ Die aktuellen Einstellungen finden Sie unter [iOS-Geräteeinstellungen zum Zulas
 
 Gilt für:
 - iOS 13.0 und neuer
-- ipados 13,0 und höher
+- iOS 13.0 und höher
 
 ### <a name="connect-automatically-setting-is-removed-in-wi-fi-profiles-on-android-and-android-enterprise----5021055----"></a>Die Einstellung "automatisch verbinden" wird in WLAN-Profilen unter Android und Android Enterprise entfernt. <!-- 5021055  -->
 Auf Android-und Android-Unternehmens Geräten können Sie ein WLAN-Profil erstellen, um andere Einstellungen zu konfigurieren (**Gerätekonfiguration** > **profile** > **Create profile** > **Android** oder **Android Enterprise** für Platform > **Wi-Fi** für Profiltyp). Die Einstellung **automatisch verbinden** wird entfernt, da Sie [von Android nicht unterstützt](https://developer.android.com/reference/android/net/wifi/WifiManager.html#enableNetwork%28int%2c%20boolean%29)wird. 
@@ -131,7 +131,7 @@ Gilt für:
 - Android Enterprise
 
 ### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices----4816339----"></a>Erstellen eines globalen HTTP-Proxys auf Android-Geräten für Unternehmens Gerätebesitzer <!-- 4816339  -->
-Auf Android-Unternehmens Geräten können Sie ein VPN-Profil mit unterschiedlichen VPN-Clients erstellen (**Device Configuration** > **profiles** > **Create profile** > **Android Enterprise** for Platform > **Gerätebesitzer > Geräte Einschränkungen** für den Profiltyp > **Konnektivität**). Sie können einen globalen http-Proxy so konfigurieren, dass er den webbrowserstandards Ihrer Organisation entspricht. Alle apps, die zu HTTP-Websites wechseln, verwenden diesen Proxy.
+Auf Android-Unternehmens Geräten können Sie einen globalen http-Proxy so konfigurieren, dass er den webbrowserstandards Ihrer Organisation entspricht (**Device Configuration** > **profiles** > **Create profile** > **Android Enterprise** für die Plattform > **Gerätebesitzer > Geräte Einschränkungen** für den Profiltyp > **Konnektivität**). Nach der Konfiguration wird der gesamte HTTP-Datenverkehr diesen Proxy verwenden.
 
 Gilt für:
 - Android Enterprise-Gerätebesitzer
@@ -139,10 +139,10 @@ Gilt für:
 ### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073----"></a>Neues Geräte-Firmware-Konfigurations Schnittstellen Profil für Geräte mit Windows 10 und höher <!-- 2266073  -->
 Unter Windows 10 und höher können Sie ein Geräte Konfigurations Profil erstellen, um Einstellungen und Features zu steuern (**Gerätekonfiguration** > **profile** > **Profil erstellen** > **Windows 10 und** höher für die Plattform). Es gibt einen neuen Gerätetyp für die Konfiguration der Gerätefirmware, mit dem InTune UEFI-Einstellungen (BIOS) verwalten kann.
 
-Eine Übersicht über alle Einstellungen, die Sie konfigurieren können, finden Sie unter [Anwenden von Features und Einstellungen auf Ihren Geräten mithilfe von Geräte Profilen in Microsoft InTune](../configuration/device-profiles.md).
+Eine Übersicht über alle aktuellen Einstellungen, die Sie konfigurieren können, finden Sie unter [Anwenden von Features und Einstellungen auf Ihren Geräten mithilfe von Geräte Profilen in Microsoft InTune](../configuration/device-profiles.md).
 
 Gilt für:
-- Windows 10 RS5 (1809) und neuer auf einigen OEMs
+- Windows 10 RS5 (1809) und neuer auf ausgewählten Geräten
 
 ### <a name="pkcs-certificates-for-macos-----1333650------------------"></a>PKCS-Zertifikate für macOS  <!-- 1333650                -->
 Wir werden auf Geräten mit macOS vollständige Unterstützung für PKCS-Zertifikate hinzufügen. Benutzer können Benutzer-und Gerätezertifikate mit den Feldern Anpassungs Betreff und alternativer Antragsteller Name bereitstellen. Außerdem wird die neue Einstellung allen apps Zugriff erlauben zugewiesen. durch Aktivieren von wird allen zugeordneten apps der Zugriff auf den privaten Schlüssel gewährt. Weitere Informationen zu dieser Einstellung finden Sie in der folgenden Apple-Dokumentation: https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf.
