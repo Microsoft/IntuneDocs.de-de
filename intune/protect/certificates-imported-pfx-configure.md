@@ -5,7 +5,7 @@ keywords: ''
 author: ralms
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b801da3bd4245361e8c55a40c67daf2c8890fd1e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fead8b9d69f5356876c0b3a2a4ce02e9b754128e
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721603"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999341"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Konfigurieren und Verwenden importierter PKCS-Zertifikate mit Intune
 
@@ -168,7 +168,7 @@ Wählen Sie den Schlüsselspeicheranbieter aus, der dem Anbieter entspricht, den
 
 7. Importieren Sie das **UserPFXCertificate**-Objekt in Intune, indem Sie `Import-IntuneUserPfxCertificate -AuthenticationResult $authResult -CertificateList $userPFXObject` ausführen.
 
-8. Um zu überprüfen, ob das Zertifikat importiert wurde, führen Sie `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UsertList "<UserUPN>"` aus.
+8. Um zu überprüfen, ob das Zertifikat importiert wurde, führen Sie `Get-IntuneUserPfxCertificate -AuthenticationResult $authResult -UserList "<UserUPN>"` aus.
 
 Weitere Informationen zu anderen verfügbaren Befehlen finden Sie in der Infodatei unter [PFXImport PowerShell Project in GitHub](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
 
@@ -186,7 +186,7 @@ Nach dem Importieren der Zertifikate in Intune erstellen Sie ein Profil für ein
 
 3. Gehen Sie zu **Einstellungen**, und geben Sie die folgenden Eigenschaften ein:
 
-   - **Beabsichtigter Zweck**: Geben Sie den Zweck der Zertifikate an, die für dieses Profil importiert werden. Administratoren können Zertifikate zu unterschiedlichen Zwecken importieren, z. B. zur Authentifizierung oder zum Signieren/Verschlüsseln mit S/MIME. Der Zweck, der im Zertifikatprofil ausgewählt wird, entspricht demjenigen des Zertifikatprofils mit den korrekten importierten Zertifikaten. Der beabsichtigte Zweck ist ein Tag zum Gruppieren importierter Zertifikate. Diese Angabe garantiert nicht, dass die mit diesem Tag importierten Zertifikate den beabsichtigten Zweck erfüllen.  
+   - **Beabsichtigter Zweck**: Geben Sie den Zweck der Zertifikate an, die für dieses Profil importiert werden. Administratoren können Zertifikate zu unterschiedlichen Zwecken importieren, z. B. zum Signieren oder Verschlüsseln mit S/MIME. Der Zweck, der im Zertifikatprofil ausgewählt wird, entspricht demjenigen des Zertifikatprofils mit den korrekten importierten Zertifikaten. Der beabsichtigte Zweck ist ein Tag zum Gruppieren importierter Zertifikate. Diese Angabe garantiert nicht, dass die mit diesem Tag importierten Zertifikate den beabsichtigten Zweck erfüllen.  
    - **Gültigkeitsdauer des Zertifikats**: Wenn die Gültigkeitsdauer in der Zertifikatvorlage nicht geändert wurde, ist diese Option standardmäßig auf ein Jahr festgelegt.  
    - **Schlüsselspeicheranbieter (KSP)** : Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus.  
 

@@ -16,22 +16,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74b920deeb5255f6f938f0c8b07eaab6d765e68e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 345d039fede2a77ba0485944cb601683bdcebfda
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722968"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999301"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Verwenden von Zertifikaten zur Authentifizierung in Microsoft Intune  
 
 Verwenden Sie Zertifikate mit Intune, um Ihre Benutzer mithilfe von VPN, WLAN oder E-Mail-Profilen bei Anwendungen und Unternehmensressourcen zu authentifizieren. Wenn Sie Zertifikate verwenden, um diese Verbindungen zu authentifizieren, müssen die Endbenutzer keine Benutzernamen und Kennwörter eingeben. Dadurch wird ein nahtloser Zugriff ermöglicht. Zertifikate werden auch zum Signieren und Verschlüsseln von E-Mails mithilfe von S/MIME verwendet.
 
-Intune unterstützt folgende Zertifikattypen:  
-
-- Simple Certificate Enrollment-Protokoll (SCEP)  
-- PKCS#12 (oder PFX)  
-- Importiertes PKCS-Zertifikate
+## <a name="intune-supported-certificates-and-usage"></a>Von Intune unterstützte Zertifikate und Nutzung
+| Typ              | Authentifizierung | S/MIME-Signatur | S/MIME-Verschlüsselung  |
+|--|--|--|--|
+| Importiertes PKCS-Zertifikat |  | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png)|
+| PKCS#12 (oder PFX)    | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) |  |
+| Simple Certificate Enrollment-Protokoll (SCEP)  | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) | |
 
 Erstellen Sie Zertifikatprofile, und weisen Sie sie Geräten zu, um diese Zertifikate bereitzustellen.  
 

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f9b78685e2bbe40a91c80fe71403123dbfaac90
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e8df5f46f411a6aee1c3040fa4a1a37fb49d5fb2
+ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722851"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72036433"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Hinzufügen einer Partnerzertifizierungsstelle in Intune mithilfe von SCEP
 
@@ -124,6 +124,7 @@ Intune wird von den folgenden Drittanbieter-Zertifizierungsstellen unterstützt:
 - [IDnomic](https://www.idnomic.com/)
 - [Sectigo](https://sectigo.com/products)
 - [DigiCert](https://knowledge.digicert.com/tutorials/microsoft-intune.html)
+- [Venafi](https://www.venafi.com/platform/enterprise-mobility)
 - [SCEPman](https://azuremarketplace.microsoft.com/marketplace/apps/gluckkanja.scepman)
 
 Wenn Sie als Drittanbieter-Zertifizierungsstelle daran interessiert sind, Ihr Produkt in Intune zu integrieren, müssen Sie sich mit dem API-Leitfaden vertraut machen:

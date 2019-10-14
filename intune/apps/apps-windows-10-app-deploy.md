@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c853608f46bb01263ddd08193f729cdfb018fed9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 04e943f573fb2485a2ef7f1e3245f08d4222d142
+ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724970"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71830559"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Windows 10-App-Bereitstellung mit Microsoft Intune 
 
@@ -36,6 +36,8 @@ Branchenspezifische Apps und Apps aus dem Microsoft Store für Unternehmen werde
 > - Für Windows 10 1709: [21. Juni 2018 – KB4284822 (Betriebssystembuild 16299.522)](https://support.microsoft.com/help/4284822)
 >
 > Nur Windows 10 Version 1803 und höher unterstützen die Installation von Apps, wenn kein primärer Benutzer zugeordnet ist.
+>
+> Die Bereitstellung branchenspezifischer Apps wird auf Geräten mit Windows 10 Home-Editionen nicht unterstützt.
 
 ## <a name="windows-10-line-of-business-apps"></a>Branchenspezifische Apps für Windows 10
 

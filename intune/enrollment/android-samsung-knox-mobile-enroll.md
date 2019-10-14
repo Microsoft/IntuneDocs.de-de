@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02006acc58789f2a6fb5944e677a1983f7ea9614
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b16dca0b6a73e7228e65c840bfbc91f3577bb59a
+ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723553"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999286"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Automatisches Registrieren von Android-Geräten mit Samsung Knox Mobile Enrollment
 
@@ -109,7 +109,8 @@ Für bei Intune mit KME für Android registrierte Geräte können Sie wie folgt 
 
 > [!NOTE]
 >
->Die Benutzerzuordnung gilt nur für die Android-Registrierung. Wenn eine Benutzerzuordnung definiert ist, kann nur der zugeordnete Benutzer das Gerät mit KME registrieren. Dies gilt auch nach einer Zurücksetzung des Geräts auf die Werkseinstellungen. Wenn im Knox-Portal keine Benutzerzuordnung definiert ist, kann jeder Benutzer mit einer gültigen Intune-Lizenz das Gerät mit KME registrieren.
+>Die Benutzerzuordnung gilt nur für die Registrierung mithilfe eines Android-Geräteadministrators. Wenn eine Benutzerzuordnung definiert ist, kann nur der zugeordnete Benutzer das Gerät mit KME registrieren. Dies gilt auch nach einer Zurücksetzung des Geräts auf die Werkseinstellungen. Wenn im Knox-Portal keine Benutzerzuordnung definiert ist, kann jeder Benutzer mit einer gültigen Intune-Lizenz das Gerät mit KME registrieren.
+>Selbst wenn bei vollständig verwalteten Android Enterprise-Geräten eine Benutzerzuordnung definiert ist, wird diese nicht an das Gerät weitergegeben und das Gerät nicht an den Benutzer gebunden.
 >
 
 ## <a name="distribute-devices"></a>Verteilen von Geräten
@@ -126,7 +127,7 @@ Benötigen Sie weitere Unterstützung? Lesen Sie das vollständige Handbuch [Kno
 
 - **Zurücksetzung auf Werkseinstellungen zum Registrieren bei Android Enterprise**: Wenn Geräte, die bereits eingerichtet wurden, für einen anderen Zweck genutzt werden sollen, müssen sie für die Registrierung bei Android Enterprise auf die Werkseinstellungen zurückgesetzt werden.
 
-- **Google Play-Konto**: Für die Registrierung des Geräts bei Microsoft Intune ist kein Google Play-Konto erforderlich. Für zukünftige Updates der Intune-Unternehmensportal-App ist jedoch möglicherweise ein Google Play-Konto auf dem Gerät erforderlich. Ein Google Play-Konto ist nicht erforderlich, wenn die Registrierung bei einem Google-Gerätebesitzer erfolgt.
+- **Google Play-Konto**: Für die Registrierung des Geräts bei Microsoft Intune ist kein Google Play-Konto erforderlich. Bei Registrierungen durch den Android-Geräteadministrator ist für künftige Updates der Intune-Unternehmensportal-App jedoch möglicherweise ein Google Play-Konto auf dem Gerät erforderlich. Ein Google Play-Konto ist nicht erforderlich, wenn die Registrierung bei einem Google-Gerätebesitzer erfolgt.
 
 - **Das Feld „Kennwort“ wird ignoriert**: Wird im Knox-Portal unter **Gerätedetails** das Feld **Kennwort** aufgefüllt, wird es während der Android-Registrierung von der Intune-Unternehmensportal-App ignoriert. Der Endbenutzer muss auf dem Gerät ein Kennwort eingeben, um die Geräteregistrierung abzuschließen.
 
