@@ -4017,12 +4017,12 @@
         },
         {
             "source_path": "intune/get-started/post-configuration-tasks.md",
-            "redirect_url": "/intune/get-started-evaluation",
+            "redirect_url": "/intune/what-is-intune",
             "redirect_document_id": false
         },
         {
             "source_path": "intune-classic/get-started/post-configuration-tasks.md",
-            "redirect_url": "/intune/get-started-evaluation",
+            "redirect_url": "/intune/what-is-intune",
             "redirect_document_id": true
         },
         {
@@ -4582,8 +4582,8 @@
         },
         {
             "source_path": "intune/introduction-intune.md",
-            "redirect_url": "/intune/what-is-intune",
-            "redirect_document_id": true
+            "redirect_url": "/intune/fundamentals/what-is-intune",
+            "redirect_document_id": false
         },
         {
             "source_path": "intune/understand-explore/intune-glossary.md",
@@ -5042,7 +5042,7 @@
         },
         {
             "source_path": "intune/understand-explore/common-microsoft-intune-evaluation-tasks.md",
-            "redirect_url": "/intune/get-started-evaluation",
+            "redirect_url": "/intune/what-is-intune",
             "redirect_document_id": false
         },
         {
@@ -6972,8 +6972,13 @@
         },
         {
             "source_path": "intune/get-started-evaluation.md",
-            "redirect_url": "/intune/fundamentals/get-started-evaluation",
-            "redirect_document_id": true
+            "redirect_url": "/intune/fundamentals/what-is-intune",
+            "redirect_document_id": false
+        },
+        {
+            "source_path": "intune/fundamentals/get-started-evaluation.md",
+            "redirect_url": "/intune/fundamentals/what-is-intune",
+            "redirect_document_id": false
         },
         {
             "source_path": "intune/get-support.md",
@@ -7349,6 +7354,11 @@
             "source_path": "intune/windows-holographic-for-business.md",
             "redirect_url": "/intune/fundamentals/windows-holographic-for-business",
             "redirect_document_id": true
-        }
+        },
+        {
+			"source_path": "get-started-evaluation.md", 
+			"redirect_url": "what-is-intune",
+			"redirect_document_id": true  
+		}
     ]
 }
