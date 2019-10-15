@@ -9,12 +9,12 @@ metadata:
   ms.author: dougeby
   manager: mtillman
   ms.date: 09/16/2019
-  ms.openlocfilehash: b7e4a5c9dee8d8a47a90ceafa60290d726637ba1
-  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.openlocfilehash: 153ada78a5be6ed86f5a6d6b0e92c238928807d7
+  ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 10/02/2019
-  ms.locfileid: "71721220"
+  ms.lasthandoff: 10/14/2019
+  ms.locfileid: "72310936"
 highlightedContent:
   items:
   - title: Was ist Intune?
@@ -61,7 +61,7 @@ conceptualContent:
       text: Unterstützte Betriebssysteme und Browser
     - url: ./fundamentals/role-based-access-control.md
       itemType: reference
-      text: Rollenbasierte Zugriffssteuerung
+      text: Rollenbasierte Zugriffsteuerung
     - url: ./fundamentals/licenses.md
       itemType: concept
       text: Intune-Lizenzierung
@@ -195,7 +195,7 @@ conceptualContent:
     - url: ./apps/troubleshoot-app-install.md
       itemType: concept
       text: Problembehandlung bei der App-Installation
-    - url: ./protect/troubleshoot-policies-in-microsoft-intune.md
+    - url: ./configuration/troubleshoot-policies-in-microsoft-intune.md
       itemType: concept
       text: Richtlinien und Profile zur Problembehandlung in Intune
   - title: Entwickler

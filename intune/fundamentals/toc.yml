@@ -6,9 +6,10 @@
     - name: 'Microsoft Intune: Übersicht'
       href: what-is-intune.md
       displayName: ems; emm; azure ad; active directory; ad
-    - name: Wie profitiert mein Unternehmen von Intune?
-      href: get-started-evaluation.md
-    - name: Neuheiten
+    - name: Übersicht über die Geräteverwaltung
+      href: what-is-device-management.md
+      displayName: teamviewer
+    - name: Neues
       href: whats-new.md
       items:
         - name: Neuheiten bei der App-Benutzeroberfläche
@@ -32,9 +33,6 @@
       href: tutorial-walkthrough-intune-portal.md
 - name: Konzepte
   items:
-    - name: Was ist die Geräteverwaltung?
-      href: what-is-device-management.md
-      displayName: teamviewer
     - name: Was ist Intune for Education?
       href: introduction-intune-education.md
     - name: Grundlegende Architektur
@@ -84,7 +82,7 @@
             - name: Vorbereiten von Intune
               href: migration-guide-prepare.md
               items:
-                - name: Grundlegende Einrichtung
+                - name: Einfaches Setup
                   href: migration-guide-setup.md
                 - name: Konfigurieren von Richtlinien für die Verwaltung von Geräten und Apps
                   href: migration-guide-configure-policies.md
@@ -157,7 +155,7 @@
           href: mdm-authority-set.md
         - name: Verwalten von Rollen
           items:
-            - name: Rollenbasierte Zugriffssteuerung
+            - name: Rollenbasierte Zugriffsteuerung
               href: role-based-access-control.md
             - name: Zuweisen einer Rolle zu einem Benutzer
               href: assign-role.md
@@ -193,7 +191,7 @@
           href: use-docs.md
         - name: Anfordern von Support
           href: get-support.md
-- name: Referenz
+- name: Verweis
   items:
     - name: Fehlercodes und Beschreibungen
       items:
