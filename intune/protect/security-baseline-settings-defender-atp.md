@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eee3d4187dd513cd3945e86aff478fe96b341660
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 52420375ae5ed88ab713a1da3e927e43e433db83
+ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71732957"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163500"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-Baselineeinstellungen für Intune
 
@@ -86,7 +86,7 @@ Weitere Informationen finden Sie unter [Policy CSP - SmartScreen (Richtlinien-Ko
 ## <a name="attack-surface-reduction"></a>Verringerung der Angriffsfläche  
 
 - **Office apps launch child process type** (Untergeordnete Prozesse in Office-Apps starten)  
-  [Regel zur Verringerung der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – Wenn *Blockieren* festgelegt wurde, ist das Erstellen von untergeordneten Prozessen mit Office-Apps nicht gestattet. Office-Apps umfassen Word, Excel, PowerPoint, OneNote und Access. Die Erstellung eines untergeordneten Prozesses ist ein typisches Verhalten für eine Schadsoftware – besonders für makrobasierte Angriffe, mit denen versucht wird, Office-Apps zum Starten oder Herunterladen schädlicher ausführbarer Dateien zu verwenden.  
+  [Regel zur Verringerung der Angriffsfläche](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – Wenn *Blockieren* festgelegt wurde, ist das Erstellen von untergeordneten Prozessen mit Office-Apps nicht gestattet. Office-Apps umfassen Word, Excel, PowerPoint, OneNote und Access. Die Erstellung eines untergeordneten Prozesses ist ein typisches Verhalten für eine Schadsoftware – besonders für makrobasierte Angriffe, mit denen versucht wird, Office-Apps zum Starten oder Herunterladen schädlicher ausführbarer Dateien zu verwenden.  
 
   **Standard**: Blockieren
 
@@ -101,7 +101,7 @@ Weitere Informationen finden Sie unter [Policy CSP - SmartScreen (Richtlinien-Ko
   **Standard**: Aktivieren
 
 - **Ausführungstyp für E-Mail-Inhalt**  
-  [Regel zur Verringerung der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – Wenn *Blockieren* festgelegt wurde, verhindert diese Regel die Ausführung oder das Starten der folgenden Dateitypen aus einer E-Mail, die in Microsoft Outlook oder einem webbasierten E-Mail-Dienst (z.B. Gmail.com oder Outlook.com) angezeigt wird:  
+  [Regel zur Verringerung der Angriffsfläche](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – Wenn *Blockieren* festgelegt wurde, verhindert diese Regel die Ausführung oder das Starten der folgenden Dateitypen aus einer E-Mail, die in Microsoft Outlook oder einem webbasierten E-Mail-Dienst (z.B. Gmail.com oder Outlook.com) angezeigt wird:  
 
   - Ausführbare Dateien (z. B. .EXE, DLL oder SCR)  
   - Skriptdateien (z.B. PS PowerShell, VBS VisualBasic oder JS JavaScript)  
@@ -110,17 +110,17 @@ Weitere Informationen finden Sie unter [Policy CSP - SmartScreen (Richtlinien-Ko
   **Standard**: Blockieren
 
 - **Adobe Reader launch in a child process** (Adobe Reader in einem untergeordneten Prozess starten)  
-  [Regel zur Verringerung der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – Wenn *Aktivieren* festgelegt wurde, verhindert diese Regel, dass Adobe Reader einen untergeordneten Prozess erstellt. Über Social Engineering oder Exploits kann Schadsoftware zusätzliche Payloads herunterladen und starten sowie Adobe Reader unterbrechen.  
+  [Regel zur Verringerung der Angriffsfläche](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – Wenn *Aktivieren* festgelegt wurde, verhindert diese Regel, dass Adobe Reader einen untergeordneten Prozess erstellt. Über Social Engineering oder Exploits kann Schadsoftware zusätzliche Payloads herunterladen und starten sowie Adobe Reader unterbrechen.  
 
   **Standard**: Aktivieren
 
 - **Verborgener Makrocodetyp von Skripten**  
-  [Regel zur Verringerung der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – Schadsoftware und andere Bedrohungen versuchen möglicherweise, ihren schädlichen Code in einigen Skriptdateien zu verbergen oder auszublenden. Mit dieser Regel wird verhindert, dass verborgen scheinende Skripts ausgeführt werden.  
+  [Regel zur Verringerung der Angriffsfläche](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – Schadsoftware und andere Bedrohungen versuchen möglicherweise, ihren schädlichen Code in einigen Skriptdateien zu verbergen oder auszublenden. Mit dieser Regel wird verhindert, dass verborgen scheinende Skripts ausgeführt werden.  
     
   **Standard**: Blockieren
 
 - **Nicht vertrauenswürdiger USB-Prozesstyp**  
-  [Regel zur Verringerung der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – Wenn *Blockieren* festgelegt wurde, können unsignierte oder nicht vertrauenswürdige ausführbare Dateien von USB-Wechseldatenträgern und SD-Karten nicht ausgeführt werden.
+  [Regel zur Verringerung der Angriffsfläche](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – Wenn *Blockieren* festgelegt wurde, können unsignierte oder nicht vertrauenswürdige ausführbare Dateien von USB-Wechseldatenträgern und SD-Karten nicht ausgeführt werden.
 
   Ausführbare Dateien umfassen:
   - Ausführbare Dateien (z. B. .EXE, DLL oder SCR)
@@ -129,22 +129,22 @@ Weitere Informationen finden Sie unter [Policy CSP - SmartScreen (Richtlinien-Ko
   **Standard**: Blockieren
 
 - **Injectionstyp für andere Prozesse in Office-Apps**  
-  [Regel zur Verringerung der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – Wenn *Blockieren* festgelegt wurde, können Office-Apps, darunter Word, Excel, PowerPoint und OneNote, keinen Code in andere Prozesse einfügen. Das Einfügen von Code wird normalerweise von Schadsoftware zur Ausführung von schädlichem Code verwendet, mit dem versucht wird, die Aktivität vor Antivirusprogrammen zu verbergen.  
+  [Regel zur Verringerung der Angriffsfläche](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – Wenn *Blockieren* festgelegt wurde, können Office-Apps, darunter Word, Excel, PowerPoint und OneNote, keinen Code in andere Prozesse einfügen. Das Einfügen von Code wird normalerweise von Schadsoftware zur Ausführung von schädlichem Code verwendet, mit dem versucht wird, die Aktivität vor Antivirusprogrammen zu verbergen.  
 
   **Standard**: Blockieren
 
 - **Win32-Importtyp aus Office-Makrocode gestatten**  
-  [Regel zur Verringerung der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – Wenn *Blockieren* festgelegt wurde, versucht diese Regel, Office-Dateien mit Makrocode zu blockieren, die Win32-DLLs importieren können. Office-Dateien umfassen Word, Excel, PowerPoint und OneNote. Schadsoftware kann Makrocode in Office-Dateien verwenden, um Win32-DLLs zu importieren und zu laden, mit denen dann API-Aufrufe ausgeführt werden, um eine weitere Infektion des gesamten Systems zu ermöglichen.  
+  [Regel zur Verringerung der Angriffsfläche](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – Wenn *Blockieren* festgelegt wurde, versucht diese Regel, Office-Dateien mit Makrocode zu blockieren, die Win32-DLLs importieren können. Office-Dateien umfassen Word, Excel, PowerPoint und OneNote. Schadsoftware kann Makrocode in Office-Dateien verwenden, um Win32-DLLs zu importieren und zu laden, mit denen dann API-Aufrufe ausgeführt werden, um eine weitere Infektion des gesamten Systems zu ermöglichen.  
 
   **Standard**: Blockieren
 
 - **Office communication apps launch in a child process** (Office-Kommunikations-Apps in einem untergeordneten Prozess starten)  
-  [Regel zur Verringerung der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – Wenn *Aktivieren* festgelegt wurde, verhindert diese Regel, dass Outlook untergeordnete Prozesse erstellt. Durch Blockieren der Erstellung eines untergeordneten Prozesses schützt diese Regel vor Social Engineering-Angriffen und verhindert, dass Exploit-Code ein Sicherheitsrisiko in Outlook ausnutzt.  
+  [Regel zur Verringerung der Angriffsfläche](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – Wenn *Aktivieren* festgelegt wurde, verhindert diese Regel, dass Outlook untergeordnete Prozesse erstellt. Durch Blockieren der Erstellung eines untergeordneten Prozesses schützt diese Regel vor Social Engineering-Angriffen und verhindert, dass Exploit-Code ein Sicherheitsrisiko in Outlook ausnutzt.  
 
   **Standard**: Aktivieren
 
 - **Mit Office-Apps ausführbare Inhaltserstellung oder Starttypen**  
-  [Regel zur Verringerung der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard#attack-surface-reduction-rules) – Wenn *Blockieren* festgelegt wurde, können Office-Apps keine ausführbaren Inhalte erstellen. Office-Apps umfassen Word, Excel, PowerPoint, OneNote und Access.  
+  [Regel zur Verringerung der Angriffsfläche](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – Wenn *Blockieren* festgelegt wurde, können Office-Apps keine ausführbaren Inhalte erstellen. Office-Apps umfassen Word, Excel, PowerPoint, OneNote und Access.  
 
   Diese Regel zielt auf typische Verhalten von verdächtigen und schädlichen Add-Ons und Skripts (Erweiterungen) ab, die ausführbare Dateien erstellen oder starten. Dies ist ein typisches Verfahren von Schadsoftware. Die Verwendung von Erweiterungen durch Office-Apps wird blockiert. Typischerweise verwenden diese Erweiterungen den Windows Scripting Host (WSH-Dateien), um Skripts auszuführen, die bestimmte Aufgaben automatisieren oder von Benutzern erstellte Add-On-Features bieten.
 
@@ -273,7 +273,7 @@ Weitere Informationen finden Sie in der Windows-Dokumentation unter [WindowsAdva
 ## <a name="exploit-protection"></a>Exploit-Schutz  
 
 - **Exploit-Schutz-XML**  
-  Weitere Informationen finden Sie in der Windows-Dokumentation unter [Importieren, Exportieren und Bereitstellen von Exploit-Schutz-Konfigurationen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/import-export-exploit-protection-emet-xml).  
+  Weitere Informationen finden Sie in der Windows-Dokumentation unter [Importieren, Exportieren und Bereitstellen von Exploit-Schutz-Konfigurationen](/windows/security/threat-protection/microsoft-defender-atp/import-export-exploit-protection-emet-xml).  
 
   Ermöglicht dem IT-Administrator, eine Konfiguration vorzunehmen, die für alle Geräte in der Organisation die gewünschten Optionen zur Risikominderung für System und Anwendungen abbildet. Die Konfiguration wird in einer XML-Datei vorgenommen. 
 

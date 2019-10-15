@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/29/2019
+ms.date: 10/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -14,12 +14,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c9bad56a8214cd736208526865b5f9c8b23db00
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 149da4c5aafc436156b7b29566bb5d792506de7c
+ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734790"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72251545"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
@@ -88,7 +88,7 @@ Diese Einstellungen verwenden die [Konnektivitätsrichtlinien](https://docs.micr
 - **Mobilfunkdatenkanal**: Ermöglicht, dass Endbenutzer Daten verbrauchen (wie z.B. beim Browsen im Web), wenn sie mit einem Mobilfunknetz verbunden sind. Folgende Optionen sind verfügbar:
   - **Nicht konfiguriert** (Standard): Verwendet die Betriebssystem-Standardeinstellung, die den Mobilfunkdatenkanal erlauben kann. Endbenutzer können diese Funktion deaktivieren.
   - **Blockieren**: Der Mobilfunkdatenkanal ist unzulässig. Endbenutzer können diese Funktion nicht aktivieren.
-  - **Zulassen (Bearbeitung nicht möglich)** : Ermöglicht den Mobilfunkdatenkanal. Endbenutzer können diese Funktion nicht deaktivieren.
+  - **Zulassen (Bearbeitung nicht möglich)**: Ermöglicht den Mobilfunkdatenkanal. Endbenutzer können diese Funktion nicht deaktivieren.
 
 - **Datenroaming**: **Blockieren** verhindert Mobilfunkdatenroaming auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt beim Zugriff auf Daten das Roaming zwischen Netzwerken.
 - **VPN über Mobilfunknetz**: **Blockieren** verhindert, dass das Gerät auf VPN-Verbindungen zugreifen kann, wenn es mit einem Mobilfunknetz verbunden ist. **Nicht konfiguriert** (Standard) ermöglicht dem VPN das Verwenden einer beliebigen Verbindung einschließlich Mobilfunk.
@@ -138,8 +138,8 @@ Diese Einstellungen verwenden den [EnterpriseCloudPrint-Richtlinien-CSP](https:/
 ## <a name="control-panel-and-settings"></a>Systemsteuerung und Einstellungen
 
 - **Einstellungen-App**: **Blockieren** verhindert, dass Endbenutzer Zugriff auf die Windows-Einstellungen-App besitzen. Die Standardeinstellung **Nicht konfiguriert** ermöglicht es Benutzern, die Einstellungen-App auf dem Gerät zu öffnen.
-  - **System**: **Blockieren**  verhindert den Zugriff auf den Systembereich der Einstellungen-App. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
-    - **Änderung der Energie- und Energiesparmoduseinstellungen (nur Desktop)** : **Blockieren** verhindert, dass der Endbenutzer Energie- und Energiesparmoduseinstellungen auf dem Gerät ändert. **Nicht konfiguriert** (Standard) ermöglicht Benutzern, die Energie- und Energiesparmoduseinstellungen zu ändern.
+  - **System**: **Blockieren ** verhindert den Zugriff auf den Systembereich der Einstellungen-App. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
+    - **Änderung der Energie- und Energiesparmoduseinstellungen (nur Desktop)**: **Blockieren** verhindert, dass der Endbenutzer Energie- und Energiesparmoduseinstellungen auf dem Gerät ändert. **Nicht konfiguriert** (Standard) ermöglicht Benutzern, die Energie- und Energiesparmoduseinstellungen zu ändern.
   - **Geräte**: **Blockieren** verhindert den Zugriff auf den Gerätebereich der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
   - **Netzwerk/Internet**: **Blockieren** verhindert den Zugriff auf den Netzwerk- und Internetbereich der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
   - **Personalisierung**: **Blockieren** verhindert den Zugriff auf den Personalisierungsbereich der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
@@ -147,8 +147,8 @@ Diese Einstellungen verwenden den [EnterpriseCloudPrint-Richtlinien-CSP](https:/
   - **Konten**: **Blockieren** verhindert den Zugriff auf den Kontenbereich der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
   - **Uhrzeit und Sprache**: **Blockieren** verhindert den Zugriff auf den Uhrzeit- und Sprachbereich der Einstellungen-App auf dem Gerät. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
     - **Änderung der Systemzeit**: **Blockieren** verhindert, dass der Endbenutzer auf dem Gerät die Datums- und Uhrzeiteinstellungen ändert. **Nicht konfiguriert** ermöglicht dem Benutzer, diese Einstellungen zu ändern.
-    - **Änderung von Regionseinstellungen (nur Desktop)** : **Blockieren** verhindert, dass der Endbenutzer Regionseinstellungen auf dem Gerät ändert. **Nicht konfiguriert** ermöglicht dem Benutzer, diese Einstellungen zu ändern.
-    - **Änderung von Spracheinstellungen (nur Desktop)** : **Blockieren** verhindert, dass der Endbenutzer Spracheinstellungen auf dem Gerät ändert. **Nicht konfiguriert** ermöglicht dem Benutzer, diese Einstellungen zu ändern.
+    - **Änderung von Regionseinstellungen (nur Desktop)**: **Blockieren** verhindert, dass der Endbenutzer Regionseinstellungen auf dem Gerät ändert. **Nicht konfiguriert** ermöglicht dem Benutzer, diese Einstellungen zu ändern.
+    - **Änderung von Spracheinstellungen (nur Desktop)**: **Blockieren** verhindert, dass der Endbenutzer Spracheinstellungen auf dem Gerät ändert. **Nicht konfiguriert** ermöglicht dem Benutzer, diese Einstellungen zu ändern.
 
       [Einstellungsrichtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings)
 
@@ -178,12 +178,12 @@ Sie können auch eine CSV-Datei mit der Liste der Apps **importieren**.
 Diese Einstellungen verwenden den [Benutzeroberflächenrichtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience), der auch die unterstützten Windows-Editionen auflistet. 
 
 - **Bildschirmaufnahme** (nur Mobilgeräte): **Blockieren** verhindert, dass Benutzer Screenshots auf dem Gerät abrufen können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **Kopieren und einfügen (nur Mobilgeräte)** : **Blockieren** verhindert, dass Endbenutzer Kopieren und Einfügen für Apps auf dem Gerät verwenden können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
+- **Kopieren und einfügen (nur Mobilgeräte)**: **Blockieren** verhindert, dass Endbenutzer Kopieren und Einfügen für Apps auf dem Gerät verwenden können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
 - **Manuelles Aufhebung der Registrierung**: **Blockieren** verhindert, dass Benutzer das Arbeitsplatzkonto über die Arbeitsplatz-Systemsteuerung auf dem Gerät löschen können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
 
   Diese Richtlinieneinstellung wird nicht angewendet, wenn der Computer mit Azure Active Directory (Azure AD) verknüpft ist und die automatische Registrierung aktiviert ist.
 
-- **Manuelle Installation von Stammzertifikaten (nur Mobilgeräte)** : **Blockieren** hindert den Benutzer daran, Stammzertifikate und CAP-Zwischenzertifikate manuell zu installieren. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
+- **Manuelle Installation von Stammzertifikaten (nur Mobilgeräte)**: **Blockieren** hindert den Benutzer daran, Stammzertifikate und CAP-Zwischenzertifikate manuell zu installieren. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
 - **Kamera**: **Blockieren** verhindert, dass Endbenutzer die Kamera auf dem Gerät verwenden können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
 - **OneDrive-Dateisynchronisierung**: **Blockieren** hindert den Endbenutzer daran, Dateien vom Gerät mit OneDrive zu synchronisieren. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
 - **Wechselmedien**: **Blockieren** verhindert, dass Benutzer externe Speichergeräte wie SD-Karten mit dem Gerät verwenden können. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
@@ -199,7 +199,7 @@ Diese Einstellungen verwenden den [Benutzeroberflächenrichtlinien-CSP](https://
 - **Bereitstellungspakete entfernen**: **Blockieren** verhindert, dass der Laufzeitkonfigurations-Agent Bereitstellungspakete vom Gerät entfernen kann. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
 - **Geräteerkennung**: **Blockieren** verhindert, dass ein Gerät von anderen Geräten erkannt wird. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
 - **Programmumschaltung** (nur mobile Geräte): **Blockieren** verhindert die Programmumschaltung auf dem Gerät. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
-- **Dialogfeld bei SIM-Kartenfehler (nur mobile Geräte)** : **Blockiert** die Anzeige einer Fehlermeldung auf dem Gerät, wenn keine SIM-Karte erkannt wird. **Nicht konfiguriert** (Standard) zeigt die Fehlermeldungen an.
+- **Dialogfeld bei SIM-Kartenfehler (nur mobile Geräte)**: **Blockiert** die Anzeige einer Fehlermeldung auf dem Gerät, wenn keine SIM-Karte erkannt wird. **Nicht konfiguriert** (Standard) zeigt die Fehlermeldungen an.
 - **Ink-Arbeitsbereich**: Wählen Sie aus, ob und wie Benutzer Zugriff auf den Ink-Arbeitsbereich besitzen. Folgende Optionen sind verfügbar:
   - **Nicht konfiguriert** (Sperre): Aktiviert den Ink-Arbeitsbereich, und der Benutzer kann ihn über den Sperrbildschirm verwenden.
   - **Für Sperrbildschirm deaktiviert**: Der Ink-Arbeitsbereich ist aktiviert, und die Funktion ist aktiviert. Aber der Benutzer kann nicht über den Sperrbildschirm darauf zugreifen.
@@ -220,16 +220,16 @@ Diese Einstellungen verwenden den [Benutzeroberflächenrichtlinien-CSP](https://
 
 ## <a name="locked-screen-experience"></a>Gesperrter Bildschirm
 
-- **Info-Center-Benachrichtigungen (nur Mobilgeräte)** : **Blockieren** verhindert die Anzeige von Info-Center-Benachrichtigungen auf dem Gerätesperrbildschirm. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer die Auswahl, welche Apps Benachrichtigungen auf dem Sperrbildschirm anzeigen können.
+- **Info-Center-Benachrichtigungen (nur Mobilgeräte)**: **Blockieren** verhindert die Anzeige von Info-Center-Benachrichtigungen auf dem Gerätesperrbildschirm. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer die Auswahl, welche Apps Benachrichtigungen auf dem Sperrbildschirm anzeigen können.
 
   [AboveLock/AllowActionCenterNotifications-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowactioncenternotifications)
 
-- **URL zu Bild für gesperrten Bildschirm (nur Desktop)** : Geben Sie die URL zu einem Bild im JPG-, JPEG oder PNG-Format ein, das als Hintergrund für den Windows-Sperrbildschirm verwendet wird. Geben Sie beispielsweise `https://contoso.com/image.png` ein. Diese Einstellung sperrt das Bild und kann nicht nachträglich geändert werden.
-- **Vom Benutzer konfigurierbares Bildschirmtimeout (nur Mobilgeräte)** : **Zulassen** ermöglicht Benutzern das Konfigurieren des Bildschirmtimeouts. **Nicht konfiguriert** (Standard) stellt Benutzern diese Option nicht zur Verfügung.
+- **URL zu Bild für gesperrten Bildschirm (nur Desktop)**: Geben Sie die URL zu einem Bild im JPG-, JPEG oder PNG-Format ein, das als Hintergrund für den Windows-Sperrbildschirm verwendet wird. Geben Sie beispielsweise `https://contoso.com/image.png` ein. Diese Einstellung sperrt das Bild und kann nicht nachträglich geändert werden.
+- **Vom Benutzer konfigurierbares Bildschirmtimeout (nur Mobilgeräte)**: **Zulassen** ermöglicht Benutzern das Konfigurieren des Bildschirmtimeouts. **Nicht konfiguriert** (Standard) stellt Benutzern diese Option nicht zur Verfügung.
 
   [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-allowscreentimeoutwhilelockeduserconfig)
 
-- **Cortana auf Sperrbildschirm (nur Desktop)** : **Blockieren** verhindert, dass der Benutzer mit Cortana interagiert, wenn auf dem Gerät der Sperrbildschirm zu sehen ist. **Nicht konfiguriert** (Standard) lässt die Interaktion mit Cortana zu.
+- **Cortana auf Sperrbildschirm (nur Desktop)**: **Blockieren** verhindert, dass der Benutzer mit Cortana interagiert, wenn auf dem Gerät der Sperrbildschirm zu sehen ist. **Nicht konfiguriert** (Standard) lässt die Interaktion mit Cortana zu.
 
   [AboveLock/AllowCortanaAboveLock-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowcortanaabovelock)
 
@@ -237,7 +237,7 @@ Diese Einstellungen verwenden den [Benutzeroberflächenrichtlinien-CSP](https://
 
   [AboveLock/AllowToasts-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowtoasts)
 
-- **Bildschirmtimeout (nur Mobilgeräte)** : Legt die Dauer (in Sekunden) zwischen der Bildschirmsperre und dem Abschalten des Bildschirms fest. Die Werte 11 bis 1.800 werden unterstützt. Geben Sie z.B. `300` ein, um diesen Timeoutwert auf 5 Minuten festzulegen.
+- **Bildschirmtimeout (nur Mobilgeräte)**: Legt die Dauer (in Sekunden) zwischen der Bildschirmsperre und dem Abschalten des Bildschirms fest. Die Werte 11 bis 1.800 werden unterstützt. Geben Sie z.B. `300` ein, um diesen Timeoutwert auf 5 Minuten festzulegen.
 
   [DeviceLock/ScreenTimeoutWhileLocked-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
 
@@ -245,9 +245,9 @@ Diese Einstellungen verwenden den [Benutzeroberflächenrichtlinien-CSP](https://
 
 Diese Einstellungen verwenden den [Messagingrichtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-messaging), der auch die unterstützten Windows-Editionen auflistet.
 
-- **Nachrichtensynchronisierung (nur Mobilgeräte)** : **Blockieren** deaktiviert die Sicherung und Wiederherstellung von SMS-Nachrichten sowie die Synchronisierung zwischen Windows-Geräten. Die Deaktivierung verhindert, dass Informationen auf Servern gespeichert werden, deren Kontrolle außerhalb der Organisation liegt. **Nicht konfiguriert** (Standard) ermöglicht es Benutzern, diese Einstellungen zu ändern und ihre Nachrichten zu synchronisieren.
-- **MMS (nur mobil)** : **Blockieren** deaktiviert die Funktion zum Senden/Empfangen von MMS auf dem Gerät. Verwenden Sie diese Richtlinie für Unternehmen, um MMS im Rahmen der Überwachungs- oder Verwaltungsanforderungen auf Geräten zu deaktivieren. **Nicht konfiguriert** (Standard) lässt das Senden und Empfangen von MMS zu.
-- **RCS (nur mobil)** : **Blockieren** deaktiviert die Funktion für RCS-Sendevorgänge/Empfangsvorgänge (Rich Communication Services) auf dem Gerät. Verwenden Sie diese Richtlinie für Unternehmen, um RCS im Rahmen der Überwachungs- oder Verwaltungsanforderungen auf Geräten zu deaktivieren. **Nicht konfiguriert** (Standard) lässt das Senden und Empfangen von RCS zu.
+- **Nachrichtensynchronisierung (nur Mobilgeräte)**: **Blockieren** deaktiviert die Sicherung und Wiederherstellung von SMS-Nachrichten sowie die Synchronisierung zwischen Windows-Geräten. Die Deaktivierung verhindert, dass Informationen auf Servern gespeichert werden, deren Kontrolle außerhalb der Organisation liegt. **Nicht konfiguriert** (Standard) ermöglicht es Benutzern, diese Einstellungen zu ändern und ihre Nachrichten zu synchronisieren.
+- **MMS (nur mobil)**: **Blockieren** deaktiviert die Funktion zum Senden/Empfangen von MMS auf dem Gerät. Verwenden Sie diese Richtlinie für Unternehmen, um MMS im Rahmen der Überwachungs- oder Verwaltungsanforderungen auf Geräten zu deaktivieren. **Nicht konfiguriert** (Standard) lässt das Senden und Empfangen von MMS zu.
+- **RCS (nur mobil)**: **Blockieren** deaktiviert die Funktion für RCS-Sendevorgänge/Empfangsvorgänge (Rich Communication Services) auf dem Gerät. Verwenden Sie diese Richtlinie für Unternehmen, um RCS im Rahmen der Überwachungs- oder Verwaltungsanforderungen auf Geräten zu deaktivieren. **Nicht konfiguriert** (Standard) lässt das Senden und Empfangen von RCS zu.
 
 ## <a name="microsoft-edge-browser"></a>Microsoft Edge-Browser
 
@@ -258,10 +258,10 @@ Diese Einstellungen verwenden den [Browserrichtlinien-CSP](https://docs.microsof
 Die verfügbaren Einstellungen hängen davon ab, was Sie wählen. Folgende Optionen sind verfügbar:
 
 - **Nein** (Standard): Microsoft Edge wird nicht im Kioskmodus ausgeführt. Sie können alle Microsoft Edge-Einstellungen ändern und konfigurieren.
-- **Digitale/interaktive Beschilderung (Kiosk mit einzelner App)** : Filtert Microsoft Edge-Einstellungen, die für „Digitale/interaktive Beschilderung“ in Frage kommen. Der Kioskmodus von Microsoft Edge ist nur für die Verwendung auf Windows 10-Kiosks mit einzelner App vorgesehen. Wählen Sie diese Einstellung, um eine URL im Vollbildmodus zu öffnen und nur den Inhalt dieser Website anzuzeigen. Unter [Einrichten digitaler Beschilderungen](https://docs.microsoft.com/windows/configuration/setup-digital-signage) finden weitere Informationen zu dieser Funktion.
-- **Öffentliches Browsen (InPrivate, Kiosk mit einzelner App)** : Filtert Microsoft Edge-Einstellungen, die für „Öffentliches Browsen (InPrivate)“ in Frage kommen. Der Kioskmodus von Microsoft Edge ist für die Verwendung auf Windows 10-Kiosks mit einzelner App vorgesehen. Führt eine Version von Microsoft Edge mit mehreren Registerkarten aus.
-- **Normalmodus (Kiosk mit mehreren Apps)** : Filtert Microsoft Edge-Einstellungen, die für den normalen Kioskmodus von Microsoft Edge gelten. Führt eine Vollversion von Microsoft Edge mit sämtlichen Funktionen für das Browsen aus.
-- **Öffentliches Browsen (Kiosk mit mehreren Apps)** : Filtert Microsoft Edge-Einstellungen, die für das öffentliche Browsen auf einem Windows 10-Kiosk mit mehreren Apps gelten.  Führt eine Version von Microsoft Edge-InPrivate mit mehreren Registerkarten aus.
+- **Digitale/interaktive Beschilderung (Kiosk mit einzelner App)**: Filtert Microsoft Edge-Einstellungen, die für „Digitale/interaktive Beschilderung“ in Frage kommen. Der Kioskmodus von Microsoft Edge ist nur für die Verwendung auf Windows 10-Kiosks mit einzelner App vorgesehen. Wählen Sie diese Einstellung, um eine URL im Vollbildmodus zu öffnen und nur den Inhalt dieser Website anzuzeigen. Unter [Einrichten digitaler Beschilderungen](https://docs.microsoft.com/windows/configuration/setup-digital-signage) finden weitere Informationen zu dieser Funktion.
+- **Öffentliches Browsen (InPrivate, Kiosk mit einzelner App) **: Filtert Microsoft Edge-Einstellungen, die für „Öffentliches Browsen (InPrivate)“ in Frage kommen. Der Kioskmodus von Microsoft Edge ist für die Verwendung auf Windows 10-Kiosks mit einzelner App vorgesehen. Führt eine Version von Microsoft Edge mit mehreren Registerkarten aus.
+- **Normalmodus (Kiosk mit mehreren Apps)**: Filtert Microsoft Edge-Einstellungen, die für den normalen Kioskmodus von Microsoft Edge gelten. Führt eine Vollversion von Microsoft Edge mit sämtlichen Funktionen für das Browsen aus.
+- **Öffentliches Browsen (Kiosk mit mehreren Apps)**: Filtert Microsoft Edge-Einstellungen, die für das öffentliche Browsen auf einem Windows 10-Kiosk mit mehreren Apps gelten.  Führt eine Version von Microsoft Edge-InPrivate mit mehreren Registerkarten aus.
 
 > [!TIP]
 > Weitere Informationen zur Aufgabe dieser Optionen finden Sie unter [Konfigurationstypen für den Microsoft Edge-Kioskmodus](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
@@ -296,10 +296,10 @@ Dieses Geräteeinschränkungsprofil steht in direktem Zusammenhang mit dem Kiosk
   - **URL der Startschaltfläche**: Geben Sie die zu öffnende URL ein. Geben Sie beispielsweise `https://www.bing.com` oder `https://www.contoso.com` ein.
   - **Startschaltfläche ausblenden**: Blendet die Startschaltfläche aus.
 - **Benutzer das Ändern der Startschaltfläche gestatten**: **Ja** ermöglicht Benutzern das Ändern der Startschaltfläche. Die Änderungen des Benutzers setzen Administratoreinstellungen für die Startschaltfläche außer Kraft. **Nein** (Standard) verhindert, dass Benutzer ändern können, wie der Administrator die Startschaltfläche konfiguriert hat.
-- **Willkommensseite anzeigen (nur Mobilgeräte)** : **Ja** (Standard) zeigt die Willkommensseite zur ersten Verwendung in Microsoft Edge an. **Nein** verhindert, dass die Einführungsseite bei der ersten Ausführung von Microsoft Edge angezeigt wird. Diese Funktion ermöglicht Unternehmen (z.B. Organisationen, die in Nullemissionskonfigurationen registriert sind), diese Seite zu blockieren.
+- **Willkommensseite anzeigen (nur Mobilgeräte)**: **Ja** (Standard) zeigt die Willkommensseite zur ersten Verwendung in Microsoft Edge an. **Nein** verhindert, dass die Einführungsseite bei der ersten Ausführung von Microsoft Edge angezeigt wird. Diese Funktion ermöglicht Unternehmen (z.B. Organisationen, die in Nullemissionskonfigurationen registriert sind), diese Seite zu blockieren.
 - **Speicherort für URL-Liste für Windows-Willkommensseite** (nur Windows 10 Mobile): Geben Sie die URL ein, die auf die XML-Datei verweist, die die URL(s) für die Seite enthält, die bei der ersten Ausführung angezeigt wird. Geben Sie beispielsweise `https://www.contoso.com/sites.xml` ein.
 
-- **Browser nach Leerlaufzeit aktualisieren:** : Geben Sie die Anzahl der Leerlaufminuten bis zur Aktualisierung des Browsers ein (von 0-1440 Minuten). Der Standardwert ist `5` Minuten. Bei Festlegung auf `0` wird der Browser nach einem Leerlauf nicht aktualisiert.
+- **Browser nach Leerlaufzeit aktualisieren:**: Geben Sie die Anzahl der Leerlaufminuten bis zur Aktualisierung des Browsers ein (von 0-1440 Minuten). Der Standardwert ist `5` Minuten. Bei Festlegung auf `0` wird der Browser nach einem Leerlauf nicht aktualisiert.
 
   Diese Einstellung ist nur bei Ausführung im Modus [Öffentliches Browsen (InPrivate, Kiosk mit einzelner App)](#use-microsoft-edge-kiosk-mode) verfügbar.
 
@@ -308,7 +308,7 @@ Dieses Geräteeinschränkungsprofil steht in direktem Zusammenhang mit dem Kiosk
 - **Speicherort der Websiteliste für den Unternehmensmodus** (nur Desktop):Geben Sie die URL ein, die auf die XML-Datei verweist, die eine Liste der Websites enthält, die im Unternehmensmodus geöffnet werden. Benutzer können diese Liste nicht ändern. Geben Sie beispielsweise `https://www.contoso.com/sites.xml` ein.
 - **Meldung beim Öffnen von Websites in Internet Explorer**: Verwenden Sie diese Einstellung, um zu konfigurieren, dass Microsoft Edge eine Benachrichtigung anzeigt, bevor eine Website in Internet Explorer 11 geöffnet wird. Folgende Optionen sind verfügbar:
   - **Meldung nicht anzeigen**: Das Standardverhalten des Betriebssystems wird verwendet, d.h. möglicherweise wird keine Meldung angezeigt.
-  - **Meldung anzeigen, dass Website in Internet Explorer 11 geöffnet wird** : Die Meldung beim Öffnen von Websites in Internet Explorer anzeigen. Websites werden im Internet Explorer geöffnet. 
+  - **Meldung anzeigen, dass Website in Internet Explorer 11 geöffnet wird **: Die Meldung beim Öffnen von Websites in Internet Explorer anzeigen. Websites werden im Internet Explorer geöffnet. 
   - **Meldung mit Option zum Öffnen von Websites in Microsoft Edge anzeigen**: Die Meldung beim Öffnen von Websites in Microsoft Edge anzeigen. Die Meldung enthält einen Link **Weiter in Microsoft Edge**, damit Benutzer Microsoft Edge anstelle von Internet Explorer auswählen können.
 
   > [!IMPORTANT]
@@ -326,7 +326,7 @@ Dieses Geräteeinschränkungsprofil steht in direktem Zusammenhang mit dem Kiosk
   - **Ausgeblendet**: Blendet die Favoritenleiste auf allen Seiten aus. Endbenutzer können diese Einstellung nicht ändern.
 - **Änderungen an Favoriten zulassen**: **Ja** (Standard) verwendet die Standardeinstellung des Betriebssystems, die Benutzern das Ändern der Liste ermöglicht. **Nein** verhindert, dass Benutzer die Favoritenliste hinzufügen, importieren, sortieren oder bearbeiten können.
   - **Favoritenliste**: Fügt eine Liste von URLs der Favoritendatei hinzu. Fügen Sie z.B. `http://contoso.com/favorites.html` hinzu.
-- **Favoriten zwischen Microsoft-Browsern synchronisieren (nur Desktop)** : **Ja** erzwingt, dass Windows die Favoriten zwischen Internet Explorer und Microsoft Edge synchronisiert. Favoriten betreffende Hinzufügungen, Löschungen, Änderungen und Anordnungsänderungen werden zwischen Browsern freigegeben.  **Nein** (Standard) verwendet den Betriebssystemstandard, sodass Benutzer möglicherweise die Synchronisierung von Favoriten zwischen den Browsern auswählen können.
+- **Favoriten zwischen Microsoft-Browsern synchronisieren (nur Desktop)**: **Ja** erzwingt, dass Windows die Favoriten zwischen Internet Explorer und Microsoft Edge synchronisiert. Favoriten betreffende Hinzufügungen, Löschungen, Änderungen und Anordnungsänderungen werden zwischen Browsern freigegeben.  **Nein** (Standard) verwendet den Betriebssystemstandard, sodass Benutzer möglicherweise die Synchronisierung von Favoriten zwischen den Browsern auswählen können.
 - **Standardsuch-Engine**: Wählen Sie die auf dem Gerät zu verwendende Standardsuch-Engine aus. Endbenutzer können diesen Wert jederzeit ändern. Folgende Optionen sind verfügbar:
   - Suchmodul in Microsoft Edge-Clienteinstellungen
   - Bing
@@ -342,7 +342,7 @@ Dieses Geräteeinschränkungsprofil steht in direktem Zusammenhang mit dem Kiosk
 
 - **InPrivate-Browsen zulassen**: **Ja** (Standard) ermöglicht das InPrivate-Browsen in Microsoft Edge. Nach dem Schließen alle InPrivate-Registerkarten löscht Microsoft Edge die Browserdaten vom Gerät. **Nein** hindert den Endbenutzer daran, InPrivate-Browsersitzungen zu öffnen.
 - **Browserverlauf speichern**: **Ja** (Standard) lässt zu, dass der Browserverlauf in Microsoft Edge gespeichert wird. **Nein** verhindert, dass der Browserverlauf gespeichert wird.
-- **Browserdaten beim Beenden löschen (nur Desktop)** : **Ja** löscht den Verlauf und die Browserdaten, wenn der Benutzer Microsoft Edge beendet. **Nein** (Standard) verwendet den Betriebssystemstandard, d.h. die Browserdaten werden möglicherweise zwischengespeichert.
+- **Browserdaten beim Beenden löschen (nur Desktop)**: **Ja** löscht den Verlauf und die Browserdaten, wenn der Benutzer Microsoft Edge beendet. **Nein** (Standard) verwendet den Betriebssystemstandard, d.h. die Browserdaten werden möglicherweise zwischengespeichert.
 - **Browsereinstellungen zwischen Benutzergeräten synchronisieren**: Wählen Sie aus, wie die Browsereinstellungen zwischen Geräten synchronisiert werden sollen. Folgende Optionen sind verfügbar:
   - **Zulassen**: Zulassen der Synchronisierung von Microsoft Edge-Browsereinstellungen zwischen Geräten des Benutzers.
   - **Außerkraftsetzung durch Benutzer blockieren und aktivieren**: Blockieren der Synchronisierung von Microsoft Edge-Browsereinstellungen zwischen Geräten des Benutzers. Benutzer können diese Einstellung überschreiben.
@@ -410,15 +410,15 @@ Diese Einstellungen verwenden den [DeviceLock-Richtlinien-CSP](https://docs.micr
     Diese Einstellung besitzt zudem je nach Edition unterschiedliche Auswirkungen. Spezifische Details zu dieser Einstellung finden Sie im [DeviceLock/MaxDevicePasswordFailedAttempts-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts).
 
   - **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung**: Gebe Sie den Zeitraum der Inaktivität für ein Gerät ein, bevor der Bildschirm gesperrt wird.
-  - **Kennwortablauf (Tage)** : Geben Sie den Zeitraum an, nach dem das Kennwort für das Gerät geändert werden muss (zwischen 1 und 365). Geben Sie beispielsweise `90` an, damit das Kennwort nach 90 Tagen abläuft.
+  - **Kennwortablauf (Tage)**: Geben Sie den Zeitraum an, nach dem das Kennwort für das Gerät geändert werden muss (zwischen 1 und 365). Geben Sie beispielsweise `90` an, damit das Kennwort nach 90 Tagen abläuft.
   - **Wiederverwendung vorheriger Kennwörter verhindern**: Geben Sie die Anzahl von vorherigen Kennwörtern an, die nicht erneut verwendet werden dürfen (zwischen 1 und 24). Geben Sie z.B. `5` an, damit ein Benutzer sein neues Kennwort nicht auf sein aktuelles Kennwort oder eines seiner vorherigen vier Kennwörter festlegen kann.
-  - **Kennwort anfordern, wenn Gerät aus Leerlaufzustand zurückkehrt (Mobile und Holographic)** : Wählen Sie **Erforderlich** aus, damit Benutzer ein Kennwort zum Entsperren des Geräts eingeben müssen, wenn sich dieses im Leerlauf befand. **Nicht konfiguriert** (Standard) erfordert keine PIN bzw. kein Kennwort, wenn das Gerät aus dem Leerlauf fortgesetzt wird.
+  - **Kennwort anfordern, wenn Gerät aus Leerlaufzustand zurückkehrt (Mobile und Holographic)**: Wählen Sie **Erforderlich** aus, damit Benutzer ein Kennwort zum Entsperren des Geräts eingeben müssen, wenn sich dieses im Leerlauf befand. **Nicht konfiguriert** (Standard) erfordert keine PIN bzw. kein Kennwort, wenn das Gerät aus dem Leerlauf fortgesetzt wird.
   - **Einfache Kennwörter:** Legen Sie **Blockieren** fest, damit Benutzer kein einfaches Kennwort wie `1234` oder `1111` erstellen können. Legen Sie diese Option auf **Nicht konfiguriert** (Standard) fest, damit Benutzer Kennwörter wie `1234` oder `1111` erstellen können. Diese Einstellung ermöglicht es auch, die Verwendung von Windows-Bildcodes zu blockieren.
 - **Automatische Verschlüsselung bei AADJ**: Die Wahl von **Blockieren** verhindert die automatische BitLocker-Geräteverschlüsselung bei der Vorbereitung des Geräts für die erste Verwendung, wenn das Gerät Azure AD beitritt. **Nicht konfiguriert** (Standard) verwendet die Standardeinstellung des Betriebssystems, die ggf. die Verschlüsselung aktiviert. Weitere Informationen zur [Geräteverschlüsselung mit BitLocker](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
 
   [CSP: Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **FIPS-Richtlinie (Federal Information Processing Standard)** : Bei Wahl von **Zulassen** wird die FIPS-Richtlinie (Federal Information Processing Standard) verwendet, die in den USA ein bundesgesetzlicher Standard für Verschlüsselung, Hashing und Signatur ist. Bei Wahl von **Nicht konfiguriert** (Standard) gilt die Standardeinstellung des Betriebssystems, die FIPS nicht verwendet.
+- **FIPS-Richtlinie (Federal Information Processing Standard)**: Bei Wahl von **Zulassen** wird die FIPS-Richtlinie (Federal Information Processing Standard) verwendet, die in den USA ein bundesgesetzlicher Standard für Verschlüsselung, Hashing und Signatur ist. Bei Wahl von **Nicht konfiguriert** (Standard) gilt die Standardeinstellung des Betriebssystems, die FIPS nicht verwendet.
 
   [CSP: Cryptography/AllowFipsAlgorithmPolicy](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
@@ -470,7 +470,7 @@ Sie können Apps hinzufügen, die ein anderes Datenschutzverhalten aufweisen als
 
 Diese Einstellungen verwenden den [Personalisierungsrichtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp), der auch die unterstützten Windows-Editionen auflistet.
 
-- **URL zu Desktophintergrundbild (nur Desktop)** : Geben Sie die URL zu einem Bild im JPG-, JPEG oder PNG-Format an, das Sie als Windows-Desktophintergrund verwenden möchten. Benutzer können das Bild nicht ändern. Geben Sie beispielsweise `https://contoso.com/logo.png` ein.
+- **URL zu Desktophintergrundbild (nur Desktop)**: Geben Sie die URL zu einem Bild im JPG-, JPEG oder PNG-Format an, das Sie als Windows-Desktophintergrund verwenden möchten. Benutzer können das Bild nicht ändern. Geben Sie beispielsweise `https://contoso.com/logo.png` ein.
 
 ## <a name="printer"></a>Drucker
 
@@ -555,7 +555,7 @@ Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 Diese Einstellungen verwenden den [Suchrichtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-search), der auch die unterstützten Windows-Editionen auflistet. 
 
-- **SafeSearch (nur Mobilgeräte)** : Steuert, wie Cortana nicht jugendfreie Inhalte in den Suchergebnissen filtert. Folgende Optionen sind verfügbar:
+- **SafeSearch (nur Mobilgeräte)**: Steuert, wie Cortana nicht jugendfreie Inhalte in den Suchergebnissen filtert. Folgende Optionen sind verfügbar:
   - **Benutzerdefiniert**: Zulassen, dass Endbenutzer ihre eigenen Einstellungen auswählen.
   - **Streng**: Höchste Filterung nicht jugendfreier Inhalte.
   - **Mittel**: Mittlere Filterung nicht jugendfreier Inhalte. Gültige Suchergebnisse werden nicht gefiltert.
@@ -665,29 +665,55 @@ Diese Einstellungen verwenden den [Benutzeroberflächenrichtlinien-CSP](https://
 
 Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender), der auch die unterstützten Windows-Editionen auflistet.
 
-- **Echtzeitüberwachung**: **Aktivieren** schaltet die Echtzeitüberwachung auf Schadsoftware, Spyware und andere unerwünschte Software aus. In der Standardeinstellung **Nicht konfiguriert** ist dieses Feature zulässig.
+- **Echtzeitüberwachung**: **Aktivieren** schaltet die Echtzeitüberwachung auf Schadsoftware, Spyware und andere unerwünschte Software ein. Benutzer können diese Funktion nicht deaktivieren. 
+
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Funktion und ermöglicht es Benutzern, Sie zu ändern.
+
+  InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
   [Defender/allowrealtimemonitoring-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
 
-- **Verhaltensüberwachung**: **Aktivieren** schaltet Defender-Überprüfungen von Geräten auf bestimmte bekannte Muster verdächtiger Aktivitäten aus. **Nicht konfiguriert** (Standard) ermöglicht die Verhaltensüberwachung durch Windows Defender.
+- **Verhaltensüberwachung**: **Aktivieren** schaltet auf Geräten die Verhaltensüberwachung ein und prüft auf bestimmte bekannte Muster verdächtiger Aktivitäten. Benutzer können die Verhaltens Überwachung nicht deaktivieren. 
+
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem die Verhaltens Überwachung und ermöglicht es Benutzern, Sie zu ändern.
+
+  InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
   [Defender/allowverhalormonitoring-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
-- **Netzwerkinspektionssystem (NIS)** : NIS trägt zum Schutz von Geräten vor netzwerkbasierten Exploits bei. Es verwendet die Signaturen bekannter Sicherheitsrisiken aus dem Microsoft Endpoint Protection Center, um schädlichen Datenverkehr zu erkennen und zu blockieren.
+- **Netzwerkinspektionssystem (NIS)**: NIS trägt zum Schutz von Geräten vor netzwerkbasierten Exploits bei. Es verwendet die Signaturen bekannter Sicherheitsrisiken aus dem Microsoft Endpoint Protection Center, um schädlichen Datenverkehr zu erkennen und zu blockieren.
 
-  Wenn die Standardeinstellung **Nicht konfiguriert** festgelegt ist, wird dieses Feature deaktiviert. Benutzer werden nicht daran gehindert, eine Verbindung mit bekannten Sicherheitsrisiken herzustellen. Wenn Sie auf **aktivieren**festgelegt ist, werden Netzwerk Schutz und Netzwerk Blockierung aktiviert, und Benutzer können Sie nicht deaktivieren. Benutzer werden daran gehindert, eine Verbindung mit bekannten Sicherheitsrisiken herzustellen.
+  **Aktivieren aktiviert** Netzwerk Schutz und Netzwerk Blockierung. Benutzer können diese Funktion nicht deaktivieren. Wenn diese Option aktiviert ist, wird verhindert, dass Benutzer eine Verbindung mit bekannten Sicherheitsrisiken herstellen
+
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig schaltet das Betriebssystem NIS ein und ermöglicht es Benutzern, es zu ändern.
+
+  InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
   [Defender/enablenetworkprotection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
-- **Alle Downloads**überprüfen: **nicht konfiguriert** (Standard) hat Defender alle aus dem Internet heruntergeladenen Dateien überprüft. Wenn diese Funktion auf **aktivieren**festgelegt ist, ist sie deaktiviert. Deshalb scannt Defender nicht alle heruntergeladenen Internet Dateien.
+- **Alle Downloads**überprüfen: **aktivieren** Sie diese Einstellung, und Defender scannt alle Dateien, die aus dem Internet heruntergeladen wurden. Die Benutzer können diese Einstellung nicht deaktivieren. 
+
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Einstellung und ermöglicht es Benutzern, diese Einstellung zu ändern.
+
+  InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
   [Defender/zugewiesene Software-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
 
-- **In Microsoft-Webbrowsern geladene Skripts überprüfen**: **Nicht konfiguriert** (Standard) ermöglicht Defender die Überprüfung von Skripts, die in Internet Explorer verwendet werden. **Aktivieren** verhindert diese Überprüfung.
+- **In Microsoft-Webbrowsern geladene Skripts überprüfen**: **Aktivieren** ermöglicht Defender die Überprüfung von Skripts, die in Internet Explorer verwendet werden. Die Benutzer können diese Einstellung nicht deaktivieren. 
+
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Einstellung und ermöglicht es Benutzern, diese Einstellung zu ändern.
+
+  InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
   [Defender/allowscriptscan-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
 
-- **Endbenutzerzugriff auf Defender**: **Blockieren** blendet die Benutzeroberfläche von Windows Defender für Endbenutzer aus. Alle Benachrichtigungen von Windows Defender werden ebenfalls unterdrückt. **Nicht konfiguriert** (Standard) ermöglicht den Zugriff auf die Benutzeroberfläche von Windows Defender durch Benutzer. Wenn diese Einstellung geändert wird, wird die Änderung wirksam, wenn der Endbenutzer-PC das nächste Mal neu gestartet wird.
+- **Endbenutzerzugriff auf Defender**: **Blockieren** blendet die Benutzeroberfläche von Microsoft Defender für Endbenutzer aus. Alle Benachrichtigungen von Microsoft Defender werden ebenfalls unterdrückt.
+
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung blockieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig ermöglicht das Betriebssystem den Benutzer Zugriff auf die Microsoft Defender-Benutzeroberfläche und ermöglicht es Benutzern, Sie zu ändern.
+
+  InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
+
+  Wenn diese Einstellung geändert wird, wird die Änderung wirksam, wenn der Endbenutzer-PC das nächste Mal neu gestartet wird.
 
   [Defender/zugriffsuiaccess-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
@@ -714,31 +740,55 @@ Diese Einstellungen verwenden den [Defender-Richtlinien-CSP](https://docs.micros
   [Defender/daystoretaincleanedmalware-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 
 - **CPU-Nutzungslimit während einer Überprüfung**: Begrenzen Sie die CPU-Nutzung, die bei Überprüfungen genutzt werden darf (von `0` bis `100`).
-- **Archivdateien**überprüfen: die **Aktivierung** deaktiviert das Scannen von Archivdateien, z. b. zip-oder CAB-Dateien. **Nicht konfiguriert** (Standard) lässt diese Überprüfung zu.
+- **Archivdateien**überprüfen: **aktiviert aktiviert** , damit Archivdateien wie ZIP-oder CAB-Dateien gescannt werden. Die Benutzer können diese Einstellung nicht deaktivieren.
+
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Überprüfung und ermöglicht es Benutzern, Sie zu ändern.
+
+  InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
   [Defender/Zuweisung von Software-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
 
-- **Eingehende E-Mail überprüfen**: **Aktivieren** ermöglicht Defender das Überprüfen von E-Mail-Nachrichten beim Eingang auf dem Gerät. **Nicht konfiguriert** (Standard) verhindert eine E-Mail-Überprüfung.
+- **Eingehende E-Mail überprüfen**: **Aktivieren** ermöglicht Defender das Überprüfen von E-Mail-Nachrichten beim Eingang auf dem Gerät. Wenn diese Option aktiviert ist, analysiert die Engine die Post Fach-und e-Mail-Dateien, um den e-Mail-Nachrichtentext Sie können die Formate ". PST (Outlook)", ". dbx", ". mbx", "MIME (Outlook Express)" und "BinHex (Mac)" Scannen.
+
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig deaktiviert das Betriebssystem diese Überprüfung und ermöglicht es Benutzern, Sie zu ändern.
+
+  InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
   [Defender/zugegtwemailscan-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
 
-- **Bei einer vollständigen Überprüfung Wechseldatenträger überprüfen**: **Aktivieren** verhindert vollständige Überprüfungen von Wechseldatenträgern. **Nicht konfiguriert** (Standard) ermöglicht Defender das Überprüfen von Wechseldatenträgern (z.B. USB-Sticks).
+- Wechsel Datenträger **während einer vollständigen**Überprüfung überprüfen: **aktivieren** Sie während einer vollständigen Überprüfung das Überprüfen von Defender- Die Benutzer können diese Einstellung nicht deaktivieren.
+
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig ermöglicht das Betriebssystem Defender das Überprüfen von Wechsel Datenträgern wie USB-Sticks und ermöglicht es Benutzern, diese Einstellung zu ändern.
 
   Während einer schnell Überprüfung können Wechsel Datenträger weiterhin gescannt werden.
 
+  InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
+
   [Defender/allowfullscanremovabledrivescanning-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 
-- **Bei einer vollständigen Überprüfung zugeordnete Netzlaufwerke überprüfen**: **Aktivieren** ermöglicht Defender das Überprüfen von Dateien auf zugeordneten Netzwerklaufwerken. **Nicht konfiguriert** (Standard) verhindert die vollständige Überprüfung. Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefundene Schadsoftware nicht entfernen.
+- **Bei einer vollständigen Überprüfung zugeordnete Netzlaufwerke überprüfen**: **Aktivieren** sorgt dafür, dass Defender Dateien auf zugeordneten Netzwerklaufwerken überprüft. Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefundene Schadsoftware nicht entfernen. Die Benutzer können diese Einstellung nicht deaktivieren.
+
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig aktiviert das Betriebssystem diese Funktion und ermöglicht es Benutzern, Sie zu ändern.
 
   Während einer schnell Überprüfung werden zugeordnete Netzwerklaufwerke möglicherweise noch gescannt.
 
+  InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
+
   [Defender/allowfullscanonmappednetworkdrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
 
-- **Über Netzwerkordner geöffnete Dateien überprüfen**: **Nicht konfiguriert** (Standard) ermöglicht Defender das Überprüfen von Dateien auf freigegebenen Netzlaufwerken (z.B. Dateien, auf die über einen UNC-Pfad zugegriffen wird). **Aktivieren** verhindert diese Überprüfung. Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefundene Schadsoftware nicht entfernen.
+- Dateien überprüfen, die in **Netzwerk Ordnern geöffnet**wurden: **aktivieren** Sie hat Defender das Überprüfen von Dateien, die in Netzwerk Ordnern oder freigegebenen Netzlaufwerken geöffnet wurden Die Benutzer können diese Einstellung nicht deaktivieren. Wenn die Dateien auf dem Laufwerk schreibgeschützt sind, kann Defender gefundene Schadsoftware nicht entfernen.
+
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig scannt das Betriebssystemdateien, die in Netzwerk Ordnern geöffnet wurden, und ermöglicht es Benutzern, Sie zu ändern.
+
+  InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
   [Defender/allowscanningnetworkfiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
 
-- **Cloudschutz**: **Nicht konfiguriert** (Standard) lässt den Empfang von Informationen über Schadsoftwareaktivitäten der von Ihnen verwalteten Geräte durch Microsoft Active Protection Service zu. **Aktivieren** blockiert diese Funktion.
+- **Cloudschutz**: **Aktivieren** lässt den Empfang von Informationen über Schadsoftwareaktivitäten der von Ihnen verwalteten Geräte durch Microsoft Active Protection Service zu. Benutzer können diese Einstellung nicht ändern. 
+
+  Wenn diese Einstellung auf **nicht konfiguriert** (Standardeinstellung) festgelegt ist, wird diese Einstellung von InTune nicht berührt. Wenn Sie die Einstellung aktivieren und dann wieder in **nicht konfiguriert**ändern, behält InTune die Einstellung im zuvor konfigurierten Zustand bei. Standardmäßig ermöglicht das Betriebssystem dem Microsoft Active Protection Service, Informationen zu erhalten, und ermöglicht es Benutzern, diese Einstellung zu ändern.
+
+  InTune deaktiviert dieses Feature nicht. Verwenden Sie einen benutzerdefinierten URI, um ihn zu deaktivieren.
 
   [Defender/allowcloudprotection-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
 
