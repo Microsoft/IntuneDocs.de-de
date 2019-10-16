@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 312aee3752525ab2898c6d4e4ea06da685d1cdec
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 308f152a585fe7b605d309943545f242031ea177
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728363"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379712"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Suchen des primären Benutzers eines Intune-Geräts
 
@@ -46,7 +46,7 @@ Die Unternehmensportal-App erwartet, dass das am Unternehmensportal angemeldete 
 
 Wenn einem Intune-Gerät kein primärer Benutzer zugewiesen ist, erkennt die Unternehmensportal-App dieses Gerät als gemeinsam genutztes Gerät. Gemeinsam genutzte Geräte lassen sich an der Bezeichnung „gemeinsam genutzt“ auf der Kachel des Geräts erkennen. In diesem Modus kann das Unternehmensportal weiterhin verwendet werden, um verfügbare Apps anzufordern und zu installieren. Self-Service-Aktionen (Zurücksetzen/Umbenennen/Außer Betrieb nehmen) sind jedoch nicht verfügbar.  
 
-Damit verfügbare Apps im Unternehmensportal auf gemeinsam genutzten Geräten angezeigt werden, müssen die Apps einer Benutzergruppe zugewiesen sein. Sie werden im System- oder Benutzerkontext installiert, je nachdem, wie sie vom IT-Administrator konfiguriert wurden. Weitere Informationen zum App-Kontext finden Sie unter [Installieren von Apps auf Windows 10-Geräten](../apps/apps-windows-10-app-deploy.md#installing-apps-on-windows-10-devices). Zur Verwendung dieses Features ist die Unternehmensportalversion 10.3.4651.0 oder höher erforderlich.
+Damit verfügbare Apps im Unternehmensportal auf gemeinsam genutzten Geräten angezeigt werden, müssen die Apps einer Benutzergruppe zugewiesen sein. Sie werden im System- oder Benutzerkontext installiert, je nachdem, wie sie vom IT-Administrator konfiguriert wurden. Weitere Informationen zum App-Kontext finden Sie unter [Installieren von Apps auf Windows 10-Geräten](../apps/apps-windows-10-app-deploy.md). Zur Verwendung dieses Features ist die Unternehmensportalversion 10.3.4651.0 oder höher erforderlich.
 
 
 ## <a name="who-is-assigned-as-the-primary-user"></a>Wer ist als primärer Benutzer zugewiesen?

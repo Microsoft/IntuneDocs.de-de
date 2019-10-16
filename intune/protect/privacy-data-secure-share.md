@@ -1,5 +1,6 @@
 ---
 title: Datensicherheit und -freigabe in Intune
+titleSuffix: Microsoft Intune
 description: Erfahren Sie mehr darüber, wie personenbezogene Daten in Intune gesichert und freigegeben werden.
 keywords: ''
 author: ErikjeMS
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 631d76aca2c393be3c81cb8b6f532605664f4ce4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 53480b7a2e008af46f4f8929cc6321e10b042b33
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721954"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306754"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Datensicherheit und -freigabe in Intune
 

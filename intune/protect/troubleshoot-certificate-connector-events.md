@@ -1,5 +1,6 @@
 ---
 title: Behandeln von Problemen mit dem Microsoft Intune Certificate Connector und den Ereignis-IDs | Microsoft-Dokumentation
+titleSuffix: Microsoft Intune
 description: Behandeln von Problemen mit dem Microsoft Intune Certificate Connector durch Überprüfen von Ereignis-IDs, Beschreibungen und Diagnosecodes für den Intune-Connectordienst
 keywords: ''
 author: brenduns
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 682d51269798dff181a3bd8384268da862118a70
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2d798f22ee4e0f11f46626eec01ad3b739d61467
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721759"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306711"
 ---
 # <a name="intune-certificate-connector-events-and-diagnostic-codes"></a>Intune Certificate Connector-Ereignisse und Diagnosecodes
 

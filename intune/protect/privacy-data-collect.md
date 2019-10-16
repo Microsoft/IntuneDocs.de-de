@@ -1,5 +1,6 @@
 ---
 title: Datensammlung in Intune
+titleSuffix: Microsoft Intune
 description: Erfahren Sie mehr darüber, wie personenbezogene Daten in Intune gesammelt werden.
 keywords: ''
 author: ErikjeMS
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e07ee5e3f69a3fb1d4d92e771c389df340e9c012
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: cd1d0de4b1ae930ebeff07539f9cfa8848f0b7ce
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722019"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306896"
 ---
 # <a name="data-collection-in-intune"></a>Datensammlung in Intune
 

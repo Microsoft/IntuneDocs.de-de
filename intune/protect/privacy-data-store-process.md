@@ -1,5 +1,6 @@
 ---
 title: Datenspeicherung und -verarbeitung in Intune
+titleSuffix: Microsoft Intune
 description: Erfahren Sie mehr darüber, wie personenbezogene Daten in Intune gespeichert und verarbeitet werden.
 keywords: ''
 author: ErikjeMS
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2947969c1c07d595a0a5baa48be11ba7a941424
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9c9a8bd5888ab0977d1ca553d059c1e96cccda75
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726881"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306884"
 ---
 # <a name="data-storage-and-processing-in-intune"></a>Datenspeicherung und -verarbeitung in Intune
 
