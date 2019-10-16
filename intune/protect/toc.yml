@@ -210,7 +210,7 @@
     - name: Problembehandlung
       items:
         - name: Problembehandlung für Richtlinien und Profile
-          href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?context=./context/pr-context.yml
+          href: ../configuration/troubleshoot-policies-in-microsoft-intune.md?toc=/intune/protect/toc.json&bc=/protect/breadcrumb/toc.json
         - name: Problembehandlung beim bedingten Zugriff
           href: troubleshoot-conditional-access.md
         - name: Problembehandlung für Zertifikatconnector
@@ -227,7 +227,7 @@
           href: troubleshoot-bitlocker-policies.md
         - name: Problembehandlung bei der Jamf Pro-Integration
           href: troubleshoot-jamf.md
-- name: Verweis
+- name: Referenz
   items:
     - name: API zum Hinzufügen einer Drittanbieter-Zertifizierungsstelle
       href: scep-libraries-apis.md

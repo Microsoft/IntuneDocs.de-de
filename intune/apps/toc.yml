@@ -158,7 +158,7 @@
                   href: app-protection-policy-settings-android.md
                 - name: Einstellungen für iOS
                   href: app-protection-policy-settings-ios.md
-                - name: Zugriffsaktionen
+                - name: Bedingter Start
                   href: app-protection-policies-access-actions.md
                 - name: Datenübertragungsausnahme
                   href: app-protection-policies-exception.md
