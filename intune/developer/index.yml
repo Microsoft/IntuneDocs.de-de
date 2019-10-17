@@ -6,18 +6,19 @@ metadata:
   description: Erfahren Sie, wie Sie Intune-Entwicklerressourcen, wie z. B. das Intune App SDK und App Wrapping Tool zum Schutz von branchenspezifischen Apps, die Intune Data Warehouse-Berichte und -API zur Überwachung des Intune-Erfolgs und Microsoft Graph für den Zugriff auf Intune-Funktionen unter Verwendung von Azure AD nutzen.
   services: service
   ms.service: microsoft-intune
+  ms.subservice: developer
   ms.topic: landing-page
   ms.collection: collection
   author: erikre
   ms.author: erikre
   ms.manager: dougeby
   ms.date: 09/23/2019
-  ms.openlocfilehash: f7d48e1b5473d84743adee4a7ef7b6c83b960d19
-  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.openlocfilehash: bbca62d21c03fe8abd51eff3cb512ec5ed2d791f
+  ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 10/02/2019
-  ms.locfileid: "71728872"
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72490738"
 landingContent:
 - title: Schützen von Apps mit dem Intune App SDK
   linkLists:

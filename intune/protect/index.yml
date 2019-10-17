@@ -6,18 +6,18 @@ metadata:
   description: Intune trägt mit Tools wie Sicherheitsbaselines, bedingtem Zugriff auf Azure AD und Partnern für Mobile Threat Defense zum Schutz von Geräten und Unternehmensdaten bei.
   services: service
   ms.service: microsoft-intune
-  ms.subservice: subservice
+  ms.subservice: protect
   ms.topic: landing-page
   ms.collection: collection
   author: brenduns
   ms.author: brenduns
   ms.date: 08/20/2019
-  ms.openlocfilehash: 073177f7cd7426a86a110fc1cee7812b37fa083f
-  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.openlocfilehash: 5092f2e619d65e55f6be558117824127f2916831
+  ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 10/02/2019
-  ms.locfileid: "71728702"
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72502245"
 landingContent:
 - title: Festlegen von Regeln für Geräte, um den Zugriff auf Ressourcen zuzulassen
   linkLists:

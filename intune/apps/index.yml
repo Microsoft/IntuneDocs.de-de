@@ -6,18 +6,19 @@ metadata:
   description: Verwalten und Schützen von Apps
   services: service
   ms.service: microsoft-intune
+  ms.subservice: apps
   ms.topic: landing-page
   ms.collection: collection
   author: erikre
   ms.author: erikre
   ms.manager: dougeby
   ms.date: 09/25/2019
-  ms.openlocfilehash: ba12c3a3253fd35bf803342214b73fc094abc3aa
-  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.openlocfilehash: 5b18568176ae4114676b20b8ca0300bc4189c3dd
+  ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 10/02/2019
-  ms.locfileid: "71729008"
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72507211"
 landingContent:
 - title: Erste Schritte mit Apps
   linkLists:

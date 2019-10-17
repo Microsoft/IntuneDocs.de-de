@@ -6,17 +6,18 @@ metadata:
   description: Microsoft Intune umfasst Einstellungen und Funktionen, die Sie auf unterschiedlichen Geräten in Ihrer Organisation aktivieren oder deaktivieren können. Diese Einstellungen und Features werden Konfigurationsprofilen hinzugefügt. Anschließend können Sie mit Intune das Profil den Geräten zuweisen.
   services: service
   ms.service: microsoft-intune
+  ms.subservice: configuration
   ms.topic: landing-page
   ms.collection: collection
   author: dougeby
   ms.author: dougeby
   ms.date: 09/16/2019
-  ms.openlocfilehash: 38324e042e1d3b4bcfc3f16e05520118374bb5ff
-  ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+  ms.openlocfilehash: afd555e5f245ee9bc28bd21268ae64ae69afbad3
+  ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 10/02/2019
-  ms.locfileid: "71728940"
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72492538"
 landingContent:
 - title: Zuweisen von Features und Einstellungen zu Geräten
   linkLists:
