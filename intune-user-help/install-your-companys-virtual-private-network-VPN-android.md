@@ -9,6 +9,7 @@ ms.date: 01/23/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdee032728db9c57a0a62d78c161ba43adcb4ad5
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 574e5beec2b3eff67b44ba56c0d0a4bd25df7615
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546174"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505735"
 ---
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>Installieren des virtuellen privaten Netzwerks (VPN) Ihres Unternehmens
 

@@ -1,34 +1,52 @@
 ---
-title: Verwenden der ausführlichen Protokollierung zur Unterstützung des Supports Ihres Unternehmens bei der Behebung von Geräteproblemen | Microsoft-Dokumentation
+title: Konfigurieren von Protokollierungs Einstellungen in InTune-apps | Microsoft-Dokumentation
 description: Verwenden der ausführlichen Protokollierung zur Unterstützung des Supports Ihres Unternehmens bei der Behebung von Geräteproblemen
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: arnab
+ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3b0eb38b92ff5c18d58cf6ebe6f31e4b8a320dd9
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: 2326aed90037fbcc6fc693bcdb67c86b57ed34a0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069191"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508004"
 ---
-# <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Verwenden der ausführlichen Protokollierung zur Unterstützung des Supports Ihres Unternehmens bei der Behebung von Geräteproblemen
+# <a name="configure-logging-settings"></a>Konfigurieren der Protokollierungs Einstellungen
 
-Wenn Ihr Android-Gerät bei Intune registriert ist, können Sie *Ausführliche Protokollierung* verwenden, damit die Unternehmensportal-App und die von Intune verwalteten Apps detaillierte Protokolle zu den Vorgängen auf Ihrem Gerät aufzeichnen. Diese Protokolle helfen dem Support Ihres Unternehmens dabei, Probleme zu beheben, die Sie möglicherweise bei der Verwendung der Unternehmensportal-App oder einer von Intune verwalteten App haben. Die ausführliche Protokollierung ist standardmäßig auf Ihrem Gerät aktiviert, und die Protokolle, die an den Support Ihres Unternehmens gesendet werden, enthalten Ihre E-Mail-Adresse.
+Konfigurieren Sie die Protokollierungs Einstellungen so, dass die Unternehmensportal APP, Microsoft InTune APP und von InTune verwalteten apps App-Aktionen aufzeichnen können. Wenn Sie ein Problem in der APP haben und es dann melden, werden die Protokolle von Ihrem Support Team auf weitere Details überprüft. 
 
-Um die ausführliche Protokollierung zu aktivieren oder zu deaktivieren, melden Sie sich mit Ihren Geschäfts-, Schul- oder Uni-Anmeldeinformationen bei der Unternehmensportal-App an, tippen Sie auf **Einstellungen**, und tippen Sie neben **Ausführliche Protokollierung** auf die Ein/Aus-Schaltfläche.
+> [!NOTE]
+> Die Protokolle, die Sie an Ihr Support Team senden, enthalten Ihre e-Mail-Adresse.  
 
-Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).
+## <a name="configure-company-portal-logging"></a>Konfigurieren der Unternehmensportal Protokollierung
+Die ausführliche Protokollierung zeichnet alle Aktionen auf, die Sie in der Unternehmensportal-app ausführen. Sie ist standardmäßig auf Ihrem Gerät aktiviert. So schalten Sie die ausführliche Protokollierung in Unternehmensportal ein:  
+
+1. Melden Sie sich bei der Unternehmensportal-App an.
+2. Tippen Sie auf **Einstellungen**.
+3. Kippen Sie den Schalter neben ausführliche **Protokollierung**auf **aus**.
+
+## <a name="configure-microsoft-intune-app-logging"></a>Konfigurieren der Microsoft InTune App-Protokollierung
+In der Microsoft InTune-App können Sie die Ebene der Protokoll Details konfigurieren. Der Standardwert ist " **wichtig**". So passen Sie Protokollierungs Details an:  
+
+1. Öffnen Sie die Microsoft InTune-app.  
+2. Tippen Sie auf **Einstellungen**.  
+3. Wählen Sie unter **Details auf Protokollebene**die Option ausführlich aus, um den Umfang der aufgezeichneten Details zu erhöhen, oder wählen Sie **aus** , um die Protokollierung **zu deaktivieren** .  
+
+## <a name="next-steps"></a>Nächste Schritte  
+
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  

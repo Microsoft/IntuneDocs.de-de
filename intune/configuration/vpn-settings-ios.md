@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 274b5a8d45f9fb525010e4d225172a6a1ce22275
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734153"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593785"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Hinzufügen von VPN-Einstellungen auf iOS-Geräten in Microsoft Intune
 
@@ -72,6 +73,8 @@ Die in der folgenden Liste gezeigten Einstellungen hängen vom ausgewählten VPN
     > [!NOTE]
     > Wenn Benutzername und Kennwort als Authentifizierungsmethode für Cisco IPsec VPN verwendet werden, müssen sie das SharedSecret über ein benutzerdefiniertes Apple Configurator-Profil bereitstellen.
 
+  - **Abgeleitete**Anmelde Informationen: Wenn kein abgeleiteter Anmelde Informations Aussteller konfiguriert wurde, werden Sie von InTune dazu aufgefordert.
+
 - **Ausgeschlossene URLs** (nur für Zscaler): Wenn Sie mit dem Zscaler-VPN verbunden sind, sind die aufgeführten URLs außerhalb der Zscaler-Cloud erreichbar. 
 
 - **Getrenntes Tunneln**: **Aktivieren** oder **deaktivieren** Sie diese Option, damit die Geräte anhand des Datenverkehrs selbst entscheiden können, welche Verbindung verwendet werden soll. Zum Beispiel verwendet ein Benutzer in einem Hotel die VPN-Verbindung zum Zugreifen auf Arbeitsdateien, das Standardnetzwerk des Hotels jedoch für normales Webbrowsen.
@@ -105,7 +108,7 @@ Die in der folgenden Liste gezeigten Einstellungen hängen vom ausgewählten VPN
 
 ## <a name="ikev2-settings"></a>IKEv2 Einstellungen
 
-Diese Einstellungen gelten, wenn Sie den **Verbindungstyp** > **IKEv2**auswählen.
+Diese Einstellungen gelten, wenn Sie **Verbindungstyp**  > **IKEv2**auswählen.
 
 - **Remote**-ID: Geben Sie die Netzwerk-IP-Adresse, den voll qualifizierten Namen, den Benutzernamen oder den ASN1DN des IKEv2-Servers ein. Geben Sie beispielsweise `10.0.0.3` oder `vpn.contoso.com` ein. In der Regel geben Sie den gleichen Wert wie für den [**Verbindungs Namen**](#base-vpn-settings) ein (in diesem Artikel). Es hängt jedoch von den IKEv2-Servereinstellungen ab.
 
@@ -154,8 +157,8 @@ Diese Einstellungen gelten, wenn Sie den **Verbindungstyp** > **IKEv2**auswähle
     - SHA2-256 (Standard)
     - SHA2-384
     - SHA2-512
-  - **Diffie-Hellman-Gruppe**: Wählen Sie die gewünschte Gruppe aus. Der Standardwert ist "Group `2`".
-  - **Lebensdauer** (Minuten): Wählen Sie aus, wie lange die Sicherheits Zuordnung aktiv bleibt, bis die Schlüssel gedreht wurden. Geben Sie einen ganzzahligen Wert zwischen `10` und `1440` ein (1440 Minuten beträgt 24 Stunden). Der Standardwert ist `1440`.
+  - **Diffie-Hellman-Gruppe**: Wählen Sie die gewünschte Gruppe aus. Der Standardwert ist Group `2`.
+  - **Lebensdauer** (Minuten): Wählen Sie aus, wie lange die Sicherheits Zuordnung aktiv bleibt, bis die Schlüssel gedreht wurden. Geben Sie einen ganzzahligen Wert zwischen `10` und `1440` ein (1440 Minuten sind 24 Stunden). Der Standardwert ist `1440`.
 
 - **Konfigurieren Sie einen separaten Satz von Parametern für untergeordnete Sicherheits Zuordnungen**: IOS ermöglicht Ihnen, separate Parameter für die IKE-Verbindung und alle untergeordneten Verbindungen zu konfigurieren. 
 
@@ -173,8 +176,8 @@ Diese Einstellungen gelten, wenn Sie den **Verbindungstyp** > **IKEv2**auswähle
     - SHA2-256 (Standard)
     - SHA2-384
     - SHA2-512
-  - **Diffie-Hellman-Gruppe**: Wählen Sie die gewünschte Gruppe aus. Der Standardwert ist "Group `2`".
-  - **Lebensdauer** (Minuten): Wählen Sie aus, wie lange die Sicherheits Zuordnung aktiv bleibt, bis die Schlüssel gedreht wurden. Geben Sie einen ganzzahligen Wert zwischen `10` und `1440` ein (1440 Minuten beträgt 24 Stunden). Der Standardwert ist `1440`.
+  - **Diffie-Hellman-Gruppe**: Wählen Sie die gewünschte Gruppe aus. Der Standardwert ist Group `2`.
+  - **Lebensdauer** (Minuten): Wählen Sie aus, wie lange die Sicherheits Zuordnung aktiv bleibt, bis die Schlüssel gedreht wurden. Geben Sie einen ganzzahligen Wert zwischen `10` und `1440` ein (1440 Minuten sind 24 Stunden). Der Standardwert ist `1440`.
 
 ## <a name="automatic-vpn-settings"></a>Automatische VPN-Einstellungen
 

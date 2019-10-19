@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 08/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f9945198f8ed575b26762c1f8f356885d5b9dc5
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8d9fefc2413e2dafbf5d0ad67ea15f5f8406cc1c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734179"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506549"
 ---
 # <a name="android-device-settings-to-configure-vpn-in-intune"></a>Android-Geräteeinstellungen zum Konfigurieren von VPN in InTune
 

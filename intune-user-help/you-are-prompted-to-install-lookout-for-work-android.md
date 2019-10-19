@@ -9,6 +9,7 @@ ms.date: 09/25/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ca937fc5d129dc98c288fa0dde59aa861709f93
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 4c0809f4ed50af4a7417e8237296f657669f3300
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527892"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508042"
 ---
 # <a name="install-lookout-for-work"></a>Installieren von Lookout for Work
 

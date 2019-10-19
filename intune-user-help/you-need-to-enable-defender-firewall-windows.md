@@ -9,6 +9,7 @@ ms.date: 11/06/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 1ed8456c-ef70-429f-9c65-081bb2dfa6ac
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2637b80136293361ba8936a64e3bf2fa95c6e803
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e812966118ed694e3f764b56ce1759f157e8db83
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840789"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507872"
 ---
 # <a name="turn-on-your-windows-defender-firewall"></a>Aktivieren der Windows Defender Firewall
 

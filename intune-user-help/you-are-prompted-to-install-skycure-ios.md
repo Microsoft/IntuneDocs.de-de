@@ -9,6 +9,7 @@ ms.date: 11/14/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13a12da72577edfee1d6ba23c2cd5e56d1fe397e
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 61497b0d34413e15497e4a11e5c3047d13b318dd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527578"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501243"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>Installieren von Symantec Endpoint Protection Mobile auf Ihrem iOS-Gerät
 

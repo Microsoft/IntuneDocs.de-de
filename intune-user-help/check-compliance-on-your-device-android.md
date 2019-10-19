@@ -7,8 +7,8 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 05/28/2019
 ms.topic: article
-ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: d98d9bbe-98fa-48a9-8808-110435eac9e4
 searchScope:
@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3287238900725acebefc23eb00246cd04c7a5bb
-ms.sourcegitcommit: fd2499df5123758ecb093b4cdd486e35f713b040
+ms.openlocfilehash: 79cc155a6a149640daf9457f7cc34e1e39898275
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68230089"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490247"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Überprüfen der Kompatibilität auf Ihrem Android-Gerät
 

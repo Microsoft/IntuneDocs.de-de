@@ -9,6 +9,7 @@ ms.date: 05/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: df0afecb006ef8837f888b3b9209d5892d90a228
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: 86aeb2b54d45f111864d71e65b8c90fce7205868
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546377"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508027"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>Registrieren von Windows-Geräten im Intune-Unternehmensportal  
 

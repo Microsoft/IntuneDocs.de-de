@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/01/2018
 ms.topic: archived
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4de635066b2f054b9061f6944bc4010a56d54526
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2c736c905045fd3afd40a12243986fbe69452ecd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735817"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502829"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Unterstützen des Schutzes von Windows-PCs mithilfe von Windows-Firewall-Richtlinien in Microsoft Intune
 
-[!INCLUDE [classic-portal](../../intune-classic/includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!NOTE]
 > Die Informationen in diesem Thema gelten nur für Windows-Desktops, die Sie als PCs mithilfe des Intune-Softwareclients verwalten. Wenn Sie Firewalleinstellungen für als mobile Geräte registrierte Windows-PCs verwalten möchten, finden Sie weitere Informationen unter [Hinzufügen von Endpoint Protection-Einstellungen in InTune](../protect/endpoint-protection-configure.md).
@@ -43,7 +44,7 @@ Mit der Windows-Firewall-Richtlinie können Sie Einstellungen erstellen und bere
 > [!NOTE]
 > Wenn sowohl die Microsoft Intune-Richtlinie als auch die Gruppenrichtlinie zur Verwaltung der gleichen Einstellung auf einem Computer konfiguriert sind, hat die Einstellung der Gruppenrichtlinie Vorrang vor der Microsoft Intune-Richtlinie. Weitere Informationen zur Vermeidung von Konflikten zwischen Intune-Richtlinien und Gruppenrichtlinien finden Sie unter [Lösen von Konflikten mit Gruppenrichtlinienobjekten und Microsoft Intune-Richtlinien](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 >
-> Wenn Sie die Windows-Firewall-Einstellungen auf Computern mit Windows Vista bereitstellen möchten, müssen Sie auf diesen Computern zuerst [Hotfix KB971800](http://support2.microsoft.com/kb/971800) installieren.
+> Wenn Sie die Windows-Firewall-Einstellungen auf Computern mit Windows Vista bereitstellen möchten, müssen Sie auf diesen Computern zuerst [Hotfix KB971800](https://support2.microsoft.com/kb/971800) installieren.
 
 > [!IMPORTANT]
 > Zum Verwalten der Windows-Firewall mit Intune müssen Sie sicherstellen, dass die folgenden beiden Dienste auf den verwalteten Computern aktiviert sind:
@@ -84,7 +85,7 @@ Mit diesen Richtlinieneinstellungen konfigurieren Sie die Windows-Firewall zum B
 Der Standardwert für jede dieser Einstellungen ist **Ja** (der sicherste Wert).
 
 > [!IMPORTANT]
-> Wenn in Ihrer Umgebung verwaltete Computer mit Windows Vista ohne installierte Service Packs vorhanden sind, müssen Sie entweder das Update installieren, das mit [Artikel 971800](http://go.microsoft.com/fwlink/?LinkId=188405) in der Microsoft Knowledge Base verknüpft ist, oder die Richtlinieneinstellung **Alle eingehenden Verbindungen blockieren** in den Richtlinien auf den entsprechenden Computern deaktivieren.
+> Wenn in Ihrer Umgebung verwaltete Computer mit Windows Vista ohne installierte Service Packs vorhanden sind, müssen Sie entweder das Update installieren, das mit [Artikel 971800](https://go.microsoft.com/fwlink/?LinkId=188405) in der Microsoft Knowledge Base verknüpft ist, oder die Richtlinieneinstellung **Alle eingehenden Verbindungen blockieren** in den Richtlinien auf den entsprechenden Computern deaktivieren.
 
 ### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Benutzer benachrichtigen, wenn ein neues Programm von der Windows-Firewall blockiert wird
 

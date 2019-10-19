@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfea74c70b81cadfa06c578dc33cdad401fa9e45
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 107624ac5d0c5eab423c0d5051ceca45e41de0b9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940071"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490755"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Vorbereiten von Android-Apps für App-Schutzrichtlinien mit dem Intune App Wrapping Tool
 
@@ -53,7 +54,7 @@ Lesen Sie vor dem Ausführen des Tools die [Sicherheitsüberlegungen für das Au
     > [!NOTE]
     > Das Intune App Wrapping Tool unterstützt nicht die v2- und anstehenden v3-Signaturschemen von Google für App-Signierung. Nachdem Sie die APK-Datei mit dem Intune App Wrapping Tool umschlossen haben, wird empfohlen, das [von Google bereitgestellte Apksigner Tool]( https://developer.android.com/studio/command-line/apksigner) zu verwenden. Dadurch wird Folgendes sichergestellt: Sobald Ihre App auf Endbenutzergeräte abgerufen wurde, kann sie durch Android-Standards ordnungsgemäß gestartet werden. 
 
-- (Optional) In einigen Fällen erreicht eine App das Größenlimit der ausführbaren Dalvik-Datei (DEX) aufgrund der Intune MAM SDK-Klassen, die während der Umschließung hinzugefügt werden. DEX-Dateien sind Teil der Kompilierung einer Android-App. Das InTune App Wrapping-Tool verarbeitet den DEX-Datei Überlauf beim umschließen von apps mit einer minimalen API-Ebene von 21 oder höher (ab [V) automatisch. 1.0.2501.1 Bei apps mit einer minimalen API-Ebene von < 21 besteht die empfohlene Vorgehensweise darin, die minimale API-Ebene mithilfe des `-UseMinAPILevelForNativeMultiDex`-Flags des Wrappers zu erhöhen. Damit Kunden die minimale API-Ebene der APP nicht erhöhen können, sind die folgenden DEX-Überlauf Umgehungen verfügbar. In bestimmten Organisationen erfordert dies möglicherweise eine Zusammenarbeit mit demjenigen, der die App kompiliert (z.B. dem App-Entwicklungsteam):
+- (Optional) In einigen Fällen erreicht eine App das Größenlimit der ausführbaren Dalvik-Datei (DEX) aufgrund der Intune MAM SDK-Klassen, die während der Umschließung hinzugefügt werden. DEX-Dateien sind Teil der Kompilierung einer Android-App. Das InTune App Wrapping-Tool verarbeitet den DEX-Datei Überlauf beim umschließen von apps mit einer minimalen API-Ebene von 21 oder höher (ab [v. 1.0.2501.1-](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)). Bei apps mit einer minimalen API-Ebene von < 21 besteht die empfohlene Vorgehensweise darin, die minimale API-Ebene mithilfe des `-UseMinAPILevelForNativeMultiDex` Flags des Wrappers zu erhöhen. Damit Kunden die minimale API-Ebene der APP nicht erhöhen können, sind die folgenden DEX-Überlauf Umgehungen verfügbar. In bestimmten Organisationen erfordert dies möglicherweise eine Zusammenarbeit mit demjenigen, der die App kompiliert (z.B. dem App-Entwicklungsteam):
 * Verwenden Sie proguard, um nicht verwendete Klassen Verweise aus der primären DEX-Datei der APP auszuschließen.
 * Deaktivieren Sie für Kunden, die v 3.1.0 oder höher des Android gradle-Plug-Ins verwenden, den [D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html).  
 

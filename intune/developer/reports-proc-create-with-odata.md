@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/15/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1a508a6c9bf834268a797f028a32c7651cf394c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733477"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490480"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Erstellen eines Intune-Berichts aus dem OData-Feed mit Power BI
 
@@ -57,7 +58,7 @@ Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI 
 2. Öffnen Sie den Bereich **Intune Data Warehouse**, indem Sie den Data Warehouse-Link unter **Weitere Aufgaben** auf der rechten Seite des Blatts **Microsoft Intune – Übersicht** auswählen.
 3. Kopieren Sie die benutzerdefinierte Feed-URL. Beispiel: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. Öffnen Sie Power BI Desktop.
-5. Wählen Sie in der Menüleiste **Datei** > **Daten** > **odata-Feed**aus.
+5. Wählen Sie in der Menüleiste **Datei**  > **Daten**  > **odata-Feed**erhalten.
 6. Fügen Sie die benutzerdefinierte Feed-URL, die Sie aus dem vorherigen Schritt kopiert haben, in das URL-Feld im **odata-Feed** -Fenster ein.
 7. Wählen Sie **Basic** aus.
 
@@ -92,10 +93,10 @@ In einem Strukturdiagramm werden hierarchische Daten als Felder innerhalb von Fe
 ![Power BI-Treemap-Visualisierungen](./media/reports-proc-create-with-odata/reports-create-03-treemap.png)
 
 1. Suchen Sie im Bereich **Visualisierungen** die Option **TreeMap**, und wählen Sie Sie aus. Das **TreeMap** -Diagramm wird der Berichts Zeichenfläche hinzugefügt.
-2. Suchen Sie im **Bereich "Felder** " die Tabelle "`devices`".
-3. Erweitern Sie die `devices`-Tabelle, und wählen Sie das `manufacturer`-Datenfeld aus.
-4. Ziehen Sie das Datenfeld `manufacturer` in den Berichts Zeichenbereich, und legen Sie es im **TreeMap** -Diagramm ab.
-5. Ziehen Sie das Datenfeld `deviceKey` aus der Tabelle `devices` in den Bereich **Visualisierungen** , und legen Sie es unter dem Abschnitt **Werte** im Feld mit der Bezeichnung **Datenfelder hier hinzufügen**ab.  
+2. Suchen Sie im **Bereich "Felder** " die `devices` Tabelle.
+3. Erweitern Sie die `devices` Tabelle, und wählen Sie das `manufacturer` Datenfeld aus.
+4. Ziehen Sie das `manufacturer` Datenfeld in den Berichts Zeichenbereich, und legen Sie es im **TreeMap** -Diagramm ab.
+5. Ziehen Sie das Feld `deviceKey` Data aus der Tabelle `devices` in den Bereich **Visualisierungen** , und legen Sie es unter dem Abschnitt **Werte** im Feld mit der Bezeichnung **Datenfelder hier hinzufügen**ab.  
 
 Jetzt verfügen Sie über eine Visualisierung der Verteilung von Herstellern und Geräten innerhalb Ihrer Organisation.
 
@@ -106,11 +107,11 @@ Jetzt verfügen Sie über eine Visualisierung der Verteilung von Herstellern und
 Sie können Ihrer Treemap einen Filter hinzufügen, damit Sie mithilfe Ihrer App zusätzliche Fragen beantworten können.
 
 1. Um einen Filter hinzuzufügen, wählen Sie zunächst die Berichtscanvas aus, und klicken Sie anschließend unter **Visualisierungen** auf das **Slicer-Symbol** (![Treemap mit Datenmodell und unterstützten Beziehungen](./media/reports-proc-create-with-odata/reports-create-slicer.png)). Die leere **slicervisualisierung** wird in der Canvas angezeigt.
-2. Suchen Sie im **Bereich "Felder** " die Tabelle "`ownerTypes`".
-3. Erweitern Sie die `ownerTypes`-Tabelle, und wählen Sie das `ownerTypeName`-Datenfeld aus.
-4. Ziehen Sie das Datenfeld `onwerTypeName` aus der Tabelle `ownerTypes` in den Bereich **Filter** , und legen Sie es unter dem Abschnitt **Filter auf dieser Seite** im Feld mit der Bezeichnung **Datenfelder hier hinzufügen**ab.  
+2. Suchen Sie im **Bereich "Felder** " die `ownerTypes` Tabelle.
+3. Erweitern Sie die `ownerTypes` Tabelle, und wählen Sie das `ownerTypeName` Datenfeld aus.
+4. Ziehen Sie das Feld `onwerTypeName` Data aus der Tabelle `ownerTypes` in den Bereich **Filter** , und legen Sie es im Bereich **Filter auf dieser Seite** im Feld mit der Bezeichnung **Datenfelder hier hinzufügen**ab.  
 
-   In der Tabelle "`OwnerTypes`" gibt es ein Datenfeld mit dem Namen "`OwnerTypeKey`", das Daten enthält, die davon unterliegen, ob ein Gerät im Besitz eines Unternehmens oder privat ist. Da Sie Anzeigenamen in diesem Filter anzeigen möchten, suchen Sie nach der Tabelle `ownerTypes`, und ziehen Sie den **ownerTypeName** auf den Slicer. Das folgende Beispiel zeigt, wie das Datenmodell Beziehungen zwischen den Tabellen unterstützt.
+   In der `OwnerTypes` Tabelle gibt es ein Datenfeld mit dem Namen `OwnerTypeKey`that das Daten enthält, die davon unterliegen, ob ein Gerät im Besitz eines Unternehmens oder privat ist. Da Sie Anzeigenamen in diesem Filter anzeigen möchten, suchen Sie nach der Tabelle `ownerTypes`, und ziehen Sie den **ownerTypeName** auf den Slicer. Das folgende Beispiel zeigt, wie das Datenmodell Beziehungen zwischen den Tabellen unterstützt.
 
 ![Treemap mit Filter: Unterstützung von Beziehungen zwischen Tabellen](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

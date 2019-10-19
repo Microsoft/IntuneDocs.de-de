@@ -9,6 +9,7 @@ ms.date: 12/06/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 18a459be-43ce-42f7-8614-fb3f2c33b304
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8643d1b76ede1bb0a2c0fced5abb6923e99f42e5
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8a84e1a102d7b1bd00a77f5cb28f14811989e8c5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55846739"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507652"
 ---
 # <a name="your-macos-devices-operating-system-version-isnt-yet-supported"></a>Die Betriebssystemversion Ihres macOS-Geräts wird noch nicht unterstützt.
 

@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: e0c5993b-3fa5-411e-bae0-93fb66c49bea
 searchScope:
@@ -19,12 +20,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6099b24dd84863c0af2d75307e1e635c45d3db81
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 1d0e2f3c87feb1b2a28cc41dbd6e7f179f61eafb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840330"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507854"
 ---
 # <a name="you-need-to-enable-encryption"></a>Sie müssen die Verschlüsselung aktivieren
 

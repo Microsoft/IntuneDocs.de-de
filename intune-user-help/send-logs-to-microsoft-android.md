@@ -9,6 +9,7 @@ ms.date: 04/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 06767d1c-a012-4288-9921-f9dd2eb4eb8d
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20bdfcce6574d31c37442a7bad58582aa7ea2fb6
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: a7d891b65568d4277b067e0c1556da2003fd5e23
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67546131"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508382"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Senden von Protokollen an Unternehmensportalentwickler für Android-Geräte
 

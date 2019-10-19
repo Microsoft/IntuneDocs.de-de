@@ -9,6 +9,7 @@ ms.date: 02/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 09e97df0-d032-48ff-ab8a-8c2c4ec29897
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc47ec6ba46d60b56a087eb68ad551e6f6732c81
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e856681256d56f32b15f77e5672f89bb06989aec
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55840619"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505801"
 ---
 # <a name="how-to-reconnect-a-compromised-ios-device"></a>Wiederherstellen der Verbindung eines gefährdeten iOS-Geräts
 

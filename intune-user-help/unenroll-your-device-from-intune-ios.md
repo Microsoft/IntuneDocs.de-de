@@ -9,6 +9,7 @@ ms.date: 04/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2eb47240516737f03c10d1280887fea275c5ed99
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: fb8aa6213585af89c20c45f38e885644f65eab51
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67883941"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508096"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>Entfernen Ihres iOS-Geräts aus Intune
 
@@ -62,7 +63,7 @@ Befolgen Sie zum Entfernen Ihres Geräts aus Intune die hier oder in diesem Vide
 
     - Geräte, die nur für E-Mail konfiguriert sind, werden nicht mehr in der Unternehmensportal-App oder auf der Unternehmensportal-Website angezeigt.
 
-    - Anwendungen werden deinstalliert. Unternehmensanwendungsdaten werden entfernt.
+    - Apps werden deinstalliert. Daten von Unternehmens-Apps werden entfernt.
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>Entfernen von Daten, die von der Unternehmensportal-App gesammelt wurden
 

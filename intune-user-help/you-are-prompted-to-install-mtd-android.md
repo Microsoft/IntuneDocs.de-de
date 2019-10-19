@@ -9,6 +9,7 @@ ms.date: 11/21/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 902bb538-d30a-44e4-80e1-7ae34e6a605d
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e72922659c943c5f7748d589bf75560a1565598
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: eb5429e53677b2724230562b6f5cd1d43f610a8f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55847011"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507951"
 ---
 # <a name="install-mobile-threat-defense-on-your-android-device"></a>Installieren von Mobile Threat Defense auf Ihrem Android-Gerät
 

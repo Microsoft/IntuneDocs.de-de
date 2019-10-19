@@ -1,6 +1,6 @@
 ---
 title: Schützen Ihres Windows-Geräts mit Verschlüsselung | Microsoft-Dokumentation
-description: Aktivieren von BitLocker zum Verschlüsseln von Windows 10-Gerät
+description: Aktivieren von BitLocker zum Verschlüsseln eines Windows 10-Geräts
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -9,6 +9,7 @@ ms.date: 01/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 8d022ea7-d9b6-43c4-adcd-4f6421606a7f
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4784bcb706dd8eef395763729e04503682197f78
-ms.sourcegitcommit: bccfbf1e3bdc31382189fc4489d337d1a554e6a1
+ms.openlocfilehash: f23fac9f7e01b08175e227c74cc54e6f86bf8430
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67545264"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506337"
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>So schützen Sie Ihr Windows-Gerät mit Verschlüsselung
 

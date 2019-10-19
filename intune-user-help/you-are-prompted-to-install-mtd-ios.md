@@ -9,6 +9,7 @@ ms.date: 10/17/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0c72fb6e7ace6c603410ff0ffc9a96e4a0ff528d
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 08da009d6c53b19ca18cae6b88e38eb475456b57
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527638"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501546"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Installieren von Mobile Threat Defense auf Ihrem iOS-Gerät
 

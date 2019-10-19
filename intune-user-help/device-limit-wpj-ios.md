@@ -8,8 +8,8 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
-ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 51c183b0-3f84-4db9-91f9-848b15c44eb8
 searchScope:
@@ -19,12 +19,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b0132090d638421fd6c463a852705b268925700
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: c7c49fb11155cbe65c6e1e01eec550c1a7da94cb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58069161"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490009"
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>Der Grenzwert für Geräteregistrierungen wurde erreicht
 

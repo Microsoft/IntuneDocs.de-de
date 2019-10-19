@@ -9,6 +9,7 @@ ms.date: 07/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16c6708fb730c459f41fec573a939bfb4fb5ddda
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 25ec84946aec9562aedce12b4199269f8de06f76
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862137"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72500014"
 ---
 # <a name="install-missing-certificate-required-by-your-organization"></a>Installieren des fehlenden Zertifikats, das für Ihre Organisation erforderlich ist  
 
@@ -44,7 +45,7 @@ Führen Sie diese Schritte zum Aktivieren des Browser Zugriffs aus. Nachdem Sie 
 1. Wechseln Sie in der Unternehmensportal-App zur rechten Ecke, und wählen Sie das Menü aus.  
 2. Klicken Sie auf **Einstellungen**.  
 3. Wählen Sie neben **Browser Zugriff aktivieren** die Option **aktivieren aus**.  
-4. Wählen Sie **auf dem Bildschirm Geräte Administrator**die Option aktivieren aus. 
+4. Wählen Sie auf dem Bildschirm Geräte Administrator die Option **aktivieren**aus. 
 
 ## <a name="identify-and-download-the-missing-certificate-through-web-search"></a>Identifizieren und Herunterladen des fehlenden Zertifikats über die Websuche
 Führen Sie diese Schritte aus, um das Zertifikat manuell auf Ihrem Gerät zu identifizieren und zu installieren.  

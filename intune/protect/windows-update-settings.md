@@ -5,21 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5aaa964151477896c236e504ec9b378cf580e838
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3f3359bc5544b3a353271ea17083c8c3acb49742
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736376"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584468"
 ---
 # <a name="windows-update-settings-for-intune"></a>Windows-Updateeinstellungen für Intune  
 
@@ -216,45 +217,9 @@ Einstellungen für die Benutzererfahrung steuern die Endbenutzererfahrung für d
   - **Alle Benachrichtigungen deaktivieren, ausgenommen Neustart Warnungen**
   - **Deaktivieren Sie alle Benachrichtigungen, einschließlich Neustart Warnungen.**  
 
-- **Benutzer Neustart erlauben (erzwungener Neustart)**  
-  **Standardeinstellung:** Nicht konfiguriert  
-  > [!IMPORTANT]  
-  > Es wird nicht mehr empfohlen, die Einstellungen für den *Neustart* von zu verwenden. Verwenden Sie stattdessen die neuen Einstellungen für den *Stichtag* , die die Einstellungen für den neuen *Neustart* ablösen. InTune unterstützt in einem zukünftigen Update die [Unterstützung für die Einstellungen für den *Neustart* ](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) .
-
-  Ein unterstützter Neustart wird für Windows 10, Version 1803 und höher, unterstützt. 
-
-  > [!NOTE]  
-  > Windows 10 (Version 1809) führt zusätzliche erzwungene Neustarteinstellungen ein, die es ermöglichen, separate Einstellungen für Feature- und Qualitätsupdates anzuwenden. Die von Intune verwalteten Einstellungen gelten jedoch nicht separat für die verschiedenen Updatetypen. Stattdessen wendet Intune die gleichen Werte auf Feature- und Qualitätsupdates an.  
-  
-  - **Nicht konfiguriert**  
-  - **Erforderlich**: Legen Sie *Erforderlich* fest, um die Verwendung der Optionen für erzwungenen Neustart für Windows 10-Updates zu aktivieren. Diese Optionen ermöglichen dem Benutzer eines Geräts die Verwaltung des Zeitpunkts für den Neustart eines Geräts nach der Installation eines Updates, das einen Neustart erfordert.  
-
-  Weitere Informationen zu dieser Option finden Sie unter [Erzwungener Neustart](https://docs.microsoft.com/windows/deployment/update/waas-restart#engaged-restart) in der Windows 10-Dokumentation zur Bereitstellung von Updates.  
-
-  Die folgenden Einstellungen werden zum Steuern verwendet, wann erzwungene Neustartaktionen auftreten.  
-
-  - **Benutzer nach automatischem Neustart auf erzwungenen Neustart umstellen (Tage)**  
-    **Standard**: nicht konfiguriert Windows Update CSP: [Update/engagedrestarttransitionschedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestarttransitionschedule)  
-    
-    Geben Sie mit einem Wert von **2** bis **30** Tagen an, wie lange es nach der Installation der Updates dauert, bis das Gerät in das erzwungene Neustartverhalten wechselt. Nach der konfigurierten Anzahl von Tagen erhalten Benutzer eine Aufforderung zum Neustarten des Geräts.  
-
-  - **Erneut erinnern bei erzwungener Neustarterinnerung (Tage)**  
-    **Standardeinstellung:** Nicht konfiguriert    
-    Windows Update CSP: [Update/engagedrestartnoozeschedule](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartsnoozeschedule)  
-    
-    Geben Sie einen Wert zwischen **1** und **3** an, um zu bestimmen, wie lange eine Neustart Aufforderung wieder zurückgesetzt werden kann.  Nach Ablauf des Zeitraums für erneutes Erinnern wird die Neustartaufforderung erneut angeboten. Der Benutzer kann die Erinnerung weiterhin auf „Erneut erinnern“ festlegen, bis der Stichtag für die Installation erreicht ist.  
-
-  - **Stichtag für ausstehende Neustarts festlegen (Tage)**  
-    **Standardeinstellung:** Nicht konfiguriert  
-    Windows Update CSP: [Update/engagedrestartstichtag](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-engagedrestartdeadline)  
-  
-    Geben Sie einen Wert von **2** bis **30** Tagen als maximale Anzahl der Tage an, die nach Beginn des erzwungenen Neustartverhaltens gewartet wird, bis ein Gerät einen erforderlichen Neustart erzwingt. Dieser Neustart fordert Benutzer zum Speichern ihrer Arbeit auf.
-
 - **Frist Einstellungen verwenden**  
   **Standardeinstellung:** Nicht konfiguriert  
-  > [!IMPORTANT]  
-  > Ab dem August-Update für InTune empfiehlt es sich, die folgenden Einstellungen zu verwenden, die die Einstellungen des festgesetzten Neustarts ablösen. InTune unterstützt in einem zukünftigen Update von InTune die [Unterstützung für die Einstellungen für den *Neustart* ](../fundamentals/whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) .  
-
+ 
   Ermöglicht Benutzern die Verwendung von Stichtag Einstellungen.  
 
   - **Nicht konfiguriert**
@@ -263,21 +228,21 @@ Einstellungen für die Benutzererfahrung steuern die Endbenutzererfahrung für d
   Wenn diese Option auf *zulassen*festgelegt ist, können Sie die folgenden Einstellungen für Stichtage konfigurieren:
 
   - **Stichtag für Featureupdates**  
-    **Standardeinstellung**: 7  
+    **Standard**: *Nicht konfiguriert*  
     Windows Update CSP: [Update/Konfiguration redeadlineforfeatureupdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)  
 
     Gibt die Anzahl von Tagen an, die ein Benutzer vor der Installation von Featureupdates auf den Geräten automatisch (2-30) hat.
 
   - **Stichtag für Qualitäts Updates**  
-    **Standardeinstellung**: 7  
+    **Standard**: *Nicht konfiguriert*  
     Windows Update CSP: [Update/Konfiguration redeadlineforqualityupdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 
     Gibt die Anzahl von Tagen an, die ein Benutzer vor der Installation von Qualitäts Updates auf den Geräten automatisch (2-30) hat.
 
   - **Karenzzeit**  
-    **Standard**Wert: 2 Windows Update CSP: [Update/Konfiguration redeadlinegraceperiod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+    **Standard**: *nicht konfiguriert* Windows Update CSP: [Update/konfigurierte redeadlinegraceperiod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
 
-    Gibt eine Mindestanzahl von Tagen nach dem Stichtag an, bis die Neustarts automatisch erfolgen (0-7).
+    Gibt eine Mindestanzahl von Tagen nach dem Stichtag an, bis die Neustarts automatisch erfolgen (2-7).
 
   - **Automatischer Neustart vor Stichtag**  
     **Standard**: Ja Windows Update CSP: [Update/Konfiguration redeadlinenoautoreboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
@@ -285,9 +250,6 @@ Einstellungen für die Benutzererfahrung steuern die Endbenutzererfahrung für d
     Gibt an, ob das Gerät vor Stichtag automatisch neu gestartet werden soll.
     - **Ja**
     - **No**
-
-
-
 
 ### <a name="delivery-optimization-download-mode"></a>Downloadmodus für die Übermittlungsoptimierung  
 

@@ -9,6 +9,7 @@ ms.date: 06/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 28121178e2a5a3aa7e6d16b0a5936f1cad627c09
-ms.sourcegitcommit: 1ba785f6e51517b63588a292ab5c45b9d9144b72
+ms.openlocfilehash: d2bdc4433e48fd77c12bfd5db706f8d226bf95a6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "66840963"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506060"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Aktualisieren der Unternehmensportal-App
 
@@ -44,13 +45,13 @@ Wenn eine neue Version verfügbar ist, wird eine Option zum **Update** in Ihrer 
 
 ## <a name="update-the-company-portal-app-on-your-macos-device"></a>Aktualisieren der Unternehmensportal-App auf Ihrem macOS-Gerät
 
-Richten Sie Unternehmensportal-App aus, um die automatische Installation von Updates, sobald sie verfügbar sind. 
+Richten Sie Unternehmensportal ein, um Updates automatisch zu installieren, sobald diese verfügbar sind. 
 
-1. Öffnen Sie die Unternehmensportal-App, und wechseln Sie zu **Hilfe**. 
+1. Öffnen Sie Unternehmensportal, und wechseln Sie zu **Hilfe**. 
 2. Wählen Sie **Nach Updates suchen** aus. 
-3. Wählen Sie auf dem Bildschirm Microsoft AutoUpdate **automatisch heruntergeladen und installiert**. 
+3. Wählen Sie auf dem Bildschirm Microsoft AutoUpdate die Option **Automatisches herunterladen und installieren**aus. 
 
-Wählen Sie zum Anzeigen der verfügbaren Updates **nach Updates suchen**.  
+Um verfügbare Updates anzuzeigen, klicken Sie auf **nach Updates suchen**.  
 
 ## <a name="update-the-company-portal-app-on-your-windows-device"></a>Aktualisieren der Unternehmensportal-App auf Ihrem Windows-Gerät
 Öffnen Sie Microsoft Store, und wechseln Sie zu **Einstellungen**, um automatisch Updates zu erhalten, sobald diese verfügbar sind. Aktivieren Sie **App-Updates**. Um die neuesten Updates sowie Apps anzuzeigen, die sich in der Downloadwarteschlange befinden, wechseln Sie zu **Downloads und Updates**.  

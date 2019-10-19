@@ -9,6 +9,7 @@ ms.date: 10/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 searchScope:
 - User help
@@ -17,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8a3ee1aaf2c115d99e0eedfeb187ba23f623264
-ms.sourcegitcommit: 7c251948811b8b817e9fe590b77f23aed95b2d4e
+ms.openlocfilehash: 0f08ddd24d5aa8f7238af42c81ee2999d875b584
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67884114"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508481"
 ---
 # <a name="lock-your-device-from-the-company-portal-app-for-windows-10"></a>Sperren eines Geräts über die Unternehmensportal-App für Windows 10
 

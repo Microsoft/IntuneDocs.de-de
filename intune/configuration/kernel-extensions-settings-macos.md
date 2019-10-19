@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 09/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1306bfea1880061980413d283943e6521c1ac213
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734491"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506699"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>macOS-Geräteeinstellungen zum Konfigurieren und Verwenden von Kernel Erweiterungen in InTune
 
@@ -57,14 +58,14 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 - **Zulässige Kernel Erweiterungen**: Verwenden Sie diese Einstellung, um bestimmte Kernel Erweiterungen zuzulassen. Nur die von Ihnen eingegebenen Kernel Erweiterungen sind zulässig oder vertrauenswürdig. 
 
-  **Fügen** Sie die Bündel-ID und den Team Bezeichner einer Kernel Erweiterung hinzu, die Sie laden möchten. Verwenden Sie für nicht signierte Legacy-Kernel Erweiterungen eine leere Team Kennung. Sie können mehrere Kernel Erweiterungen hinzufügen. Der Team Bezeichner muss alphanumerisch (Buchstaben und Ziffern) und 10 Zeichen lang sein. Geben Sie z. b. `com.contoso.appname.macos` für **Bündel-ID**und `ABCDE12345` für die **Team**-ID ein.
+  **Fügen** Sie die Bündel-ID und den Team Bezeichner einer Kernel Erweiterung hinzu, die Sie laden möchten. Verwenden Sie für nicht signierte Legacy-Kernel Erweiterungen eine leere Team Kennung. Sie können mehrere Kernel Erweiterungen hinzufügen. Der Team Bezeichner muss alphanumerisch (Buchstaben und Ziffern) und 10 Zeichen lang sein. Geben Sie z. b. `com.contoso.appname.macos` für die **Bündel-ID**und `ABCDE12345` für die **Team**-ID ein.
 
   > [!TIP]
   > Um die Bündel-ID einer Kernel Erweiterung (kext) auf einem macOS-Gerät zu erhalten, können Sie folgende Aktionen ausführen:
   >
   > 1. Führen Sie im Terminal `kextstat | grep -v com.apple` aus, und notieren Sie sich die Ausgabe. Installieren Sie die gewünschte Software bzw. die gewünschte kext-Datei. Führen Sie `kextstat | grep -v com.apple` erneut aus, und suchen Sie nach Änderungen.
   >
-  >    Im Terminal listet `kextstat` alle Kernel Erweiterungen auf dem Betriebssystem auf. 
+  >    Im Terminal werden `kextstat` alle Kernel Erweiterungen im Betriebssystem auflisten. 
   >
   > 2. Öffnen Sie auf dem Gerät die Informations Eigenschafts Listen Datei (Info. plist) für einen kext. Die Bündel-ID wird angezeigt. Jeder kext verfügt über eine in gespeicherte Info. plist-Datei. 
 

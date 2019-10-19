@@ -10,6 +10,7 @@ ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 2df53b9b-9195-45c9-b5dd-7eb7642ff219
 searchScope:
@@ -19,12 +20,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed8ea635dcc071ad94e7b323285674747e4c28c8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 122c4c9db86279b105749ae35834a4ee88c76fc6
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55837282"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507623"
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>Die Betriebssystemversion Ihres Windows-Geräts wird noch nicht unterstützt.
 

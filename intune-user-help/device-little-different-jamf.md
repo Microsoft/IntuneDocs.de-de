@@ -7,8 +7,8 @@ ms.author: lanewsad
 manager: dougeby
 ms.date: 12/06/2017
 ms.topic: article
-ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 56771f9f-0583-4df8-b3e9-3f0d8edee172
 searchScope:
@@ -18,12 +18,12 @@ ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1749d2b40a83ddbc8b869bc33329f6c891a97e4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: aaad8bd0a8c3f9e2f5dccd303d327ca7ad1b9656
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55851541"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506411"
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Ausführen von Aktionen auf einem macOS-Gerät, das von Jamf verwaltet wird
 

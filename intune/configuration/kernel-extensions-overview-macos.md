@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 06/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9832089cf73405a9e39795b076e9ead84bc7d7cd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: abcd7b96de8f5f3984c2d4407abaf11b7b6b7e4f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734452"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72492483"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>Hinzufügen von macOS-Kernel Erweiterungen in InTune
 

@@ -9,18 +9,19 @@ manager: dougeby
 ms.date: 08/01/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11361b65735a7ed7e724a77349e3624e0e35ecaf
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 81d0ff389acd2c7014b830bb7c24e336088c4f96
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734998"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506884"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Einstellungen für die Übermittlungsoptimierung für Intune
 

@@ -9,6 +9,7 @@ ms.date: 03/13/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ade7353e-7338-484d-a50f-b91146d5fc46
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 323786591845af87b0c6614e9b15eebd7605fbfa
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c4aca6fde21419d6ae1ca95d5a9aac5ab7f83d99
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55842846"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505826"
 ---
 # <a name="how-to-reconnect-a-compromised-android-device"></a>Wiederherstellen der Verbindung eines gefährdeten Android-Geräts
 

@@ -9,6 +9,7 @@ ms.date: 11/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d39c065dd991fab548cd6050337379746bc28c2
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 499eb015f38134a8b1ff1c41dd22d26cdd4f7324
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838800"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508151"
 ---
 # <a name="unable-to-get-macos-device-managed"></a>Verwalten von macOS-Geräten nicht möglich
 

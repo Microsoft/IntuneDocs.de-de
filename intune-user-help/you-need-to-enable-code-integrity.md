@@ -9,6 +9,7 @@ ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f37e5c8d700d33e368966c8c3c31abd4f42d3b9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 56982c6ce10f74617471307acd176a0506655398
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721183"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501226"
 ---
 # <a name="enable-code-integrity"></a>Aktivieren der Codeintegrität
 

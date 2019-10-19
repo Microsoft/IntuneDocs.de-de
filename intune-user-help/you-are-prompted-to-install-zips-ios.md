@@ -9,6 +9,7 @@ ms.date: 09/25/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 3fcbd09f-9b96-40fb-96fe-9e5173dc6179
 searchScope:
@@ -16,12 +17,12 @@ searchScope:
 ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 949a310b1588876cfe0c547dfa73f1510a710710
-ms.sourcegitcommit: 7315fe72b7e55c5dcffc6d87f185f3c2cded9028
+ms.openlocfilehash: 73f61511229b511438b23c94603c86addc06ac96
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67527605"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501213"
 ---
 # <a name="install-zimperium-zips-on-your-ios-device"></a>Installieren Sie Zimperium zIPS auf Ihrem iOS-Gerät
 

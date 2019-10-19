@@ -9,6 +9,7 @@ ms.date: 03/16/2017
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 81f8a990-d172-47f4-91b4-cb49652accf6
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9aec5cedb4874a9eb96ce5694a49fb475239ba86
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 675d0e3893bf385953d1f6846db3932a695c8748
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55849984"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72499956"
 ---
 # <a name="your-device-is-noncompliant"></a>Ihr Gerät ist nicht richtlinienkonform
 

@@ -9,6 +9,7 @@ ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98fd937ee379d71874f61152d88ddc94fa5b7a09
-ms.sourcegitcommit: 3db8af810b95c3a6ed3f8cc00f6ce79076ebb9db
+ms.openlocfilehash: ca1776915d50858c28b43a49faa7c737c825c67d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012431"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72501859"
 ---
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
 Um Zugriff auf Geschäfts-, Schul-oder uniressourcen von Ihrem Gerät zu erhalten, müssen Sie Ihr Gerät bei der InTune-Unternehmensportal-APP oder Microsoft InTune-App registrieren. 

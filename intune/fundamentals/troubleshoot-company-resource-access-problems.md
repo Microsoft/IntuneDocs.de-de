@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 03/20/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae75c463d1a4ff76231de06bfcb6916d375372f3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 17a8ebfcad2bcf485771f26184377aeb2c4bf4e1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736324"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509791"
 ---
 # <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Häufige Fehlercodes und Beschreibungen in Microsoft Intune
 

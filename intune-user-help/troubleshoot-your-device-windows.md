@@ -9,6 +9,7 @@ ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 48644443-ff50-4af1-9c23-443e6e5c3b47
 searchScope:
@@ -17,12 +18,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 00d927b396619e237986502e60efdc0f9d11bc0b
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 29a79e109f40a06930f988156e7621a4b55c05f4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55845498"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502026"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Behandeln häufig auftretender Probleme mit Ihrem Windows-Gerät
 

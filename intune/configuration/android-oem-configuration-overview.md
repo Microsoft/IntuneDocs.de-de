@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c46caf4d1c9f9a32a7f324fc5e1734dbe8043bd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2be1faa1296792d3d40de5ca0b304a287bae8e6f
+ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735258"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72550826"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Verwenden und Verwalten von Android-Unternehmens Geräten mit oemconfig in Microsoft InTune
 
@@ -98,7 +99,7 @@ Stellen Sie sicher, dass das Gerät oemconfig unterstützt, dass die richtige oe
 5. Wählen Sie unter **Einstellungen konfigurieren mit**den Konfigurations- **Designer** oder den **JSON-Editor**aus:
 
     > [!TIP]
-    > Lesen Sie die OEM-Dokumentation, um sicherzustellen, dass Sie die Eigenschaften ordnungsgemäß konfigurieren. Diese APP-Eigenschaften werden vom OEM, nicht von InTune, eingeschlossen. InTune führt nur eine minimale Überprüfung der Eigenschaften durch, oder was Sie eingeben. Wenn Sie z. b. für eine Portnummer `abcd` eingeben, speichert das Profil unverändert und wird auf Ihren Geräten mit den von Ihnen konfigurierten Werten bereitgestellt. Stellen Sie sicher, dass Sie die richtigen Informationen eingeben.
+    > Lesen Sie die OEM-Dokumentation, um sicherzustellen, dass Sie die Eigenschaften ordnungsgemäß konfigurieren. Diese APP-Eigenschaften werden vom OEM, nicht von InTune, eingeschlossen. InTune führt nur eine minimale Überprüfung der Eigenschaften durch, oder was Sie eingeben. Wenn Sie z. b. `abcd` für eine Portnummer eingeben, speichert das Profil unverändert und wird auf Ihren Geräten mit den von Ihnen konfigurierten Werten bereitgestellt. Stellen Sie sicher, dass Sie die richtigen Informationen eingeben.
 
     - **Konfigurations-Designer**: Wenn Sie diese Option auswählen, werden die Eigenschaften, die im App-Schema verfügbar sind, für die Konfiguration angezeigt.
 
@@ -120,7 +121,7 @@ Stellen Sie sicher, dass das Gerät oemconfig unterstützt, dass die richtige oe
 
     Alle Änderungen, die im Konfigurations-Designer vorgenommen werden, werden auch automatisch im JSON-Editor vorgenommen. Ebenso werden alle im JSON-Editor vorgenommenen Änderungen automatisch im Konfigurations-Designer vorgenommen. Wenn Ihre Eingabe ungültige Werte enthält, können Sie erst zwischen dem Konfigurations-Designer und dem JSON-Editor wechseln, wenn Sie die Probleme behoben haben.
 
-6. Wählen Sie **OK** > **Hinzufügen** aus, um die Änderungen zu speichern. Die Richtlinie wird erstellt und in der Liste angezeigt.
+6. Klicken Sie auf **OK** > **Hinzufügen**, um die Änderungen zu speichern. Die Richtlinie wird erstellt und in der Liste angezeigt.
 
 Denken Sie daran, das [Profil zuzuweisen](device-profile-assign.md) und [seinen Status zu überwachen](device-profile-monitor.md).
 
@@ -144,6 +145,7 @@ Im Vergleich zu Standard-apps erweitern oemconfig-Apps die von Google gewährten
 | Zebra Technologien | com. Zebra. oemconfig. Common | [Übersicht über "Zebra oemconfig"](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | com. Datalogic. oemconfig | [Benutzerdokumentation für Datalogic oemconfig](https://datalogic.github.io/oemconfig/) |
 | Honeywell | com. Honeywell. oemconfig |  |
+| Kyocera | JP. Kyocera. enterprisseabviceconfig |  |
 
 -----------------
 
