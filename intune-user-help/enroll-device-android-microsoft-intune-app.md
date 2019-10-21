@@ -9,6 +9,7 @@ ms.date: 08/07/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef7ec650c65206eeab69d8f666dc4fb39052bbdb
-ms.sourcegitcommit: 549352bdea93cc2809e3e0010bfcc10bd44dc728
+ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68862185"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506292"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Registrieren Ihres Unternehmensgeräts in der Microsoft Intune-App
 
@@ -78,11 +79,11 @@ Führen Sie die folgenden Schritte durch, um Ihr Gerät einzurichten und zu regi
 
    ![Beispielbild der Einrichtung Ihres Arbeitssmartphones mit hervorgehobener Schaltfläche „Install“ (Installieren)](./media/fully-managed-intune-app-11.png)   
 
-10. Tippen **Sie** auf starten, um die APP Microsoft InTune zu öffnen und Ihr Gerät zu registrieren. 
+10. Tippen Sie auf **starten** , um die APP Microsoft InTune zu öffnen und Ihr Gerät zu registrieren. 
 
     ![Beispielbild der Einrichtung Ihres Arbeitssmartphones mit hervorgehobener Schaltfläche „Start“](./media/fully-managed-intune-app-17.png)   
 
-11. Tippen **Sie auf** anmelden und dann **auf** weiter, um die Registrierung zu starten. Wenn die Meldung angezeigt wird, dass die Registrierung abgeschlossen ist **,** Tippen Sie auf Fertig.  
+11. Tippen Sie auf **Anmelden** und dann auf **weiter** , um die Registrierung zu starten. Wenn die Meldung angezeigt wird, dass die Registrierung abgeschlossen ist, tippen Sie auf **Fertig**.  
 
     ![Beispiel Bild für das Einrichten des Zugriffs, das Registrieren Ihres Geräts, das Markieren der Schaltfläche "durch Klicken".](./media/fully-managed-intune-app-19.png)   
 
