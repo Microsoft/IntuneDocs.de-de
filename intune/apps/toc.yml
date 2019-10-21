@@ -82,6 +82,10 @@
           items:
             - name: Unternehmensportal-App
               href: store-apps-company-portal-app.md
+            - name: Microsoft Edge für Windows 10
+              href: apps-windows-edge.md
+            - name: Microsoft Edge für macOS
+              href: apps-edge-macos.md
         - name: PowerShell-Skripts
           href: intune-management-extension.md
     - name: Zuweisen von Apps

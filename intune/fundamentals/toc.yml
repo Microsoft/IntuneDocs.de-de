@@ -9,7 +9,7 @@
     - name: Übersicht über die Geräteverwaltung
       href: what-is-device-management.md
       displayName: teamviewer
-    - name: Neues
+    - name: Neuheiten
       href: whats-new.md
       items:
         - name: Neuheiten bei der App-Benutzeroberfläche
@@ -41,6 +41,16 @@
       href: device-lifecycle.md
     - name: App-Lebenszyklus
       href: ../apps/app-lifecycle.md
+    - name: Geführte Szenarien
+      items:
+        - name: Geführte Szenarien – Übersicht
+          href: guided-scenarios-overview.md
+        - name: Bereitstellen von Microsoft Edge für Mobilgeräte
+          href: guided-scenarios-edge.md
+        - name: In der Cloud verwalteter moderner Desktop
+          href: guided-scenarios-cloud-managed-pc.md
+        - name: Sichere mobile Microsoft Office-Apps
+          href: guided-scenarios-office-mobile.md
     - name: Häufige Szenarien
       href: common-scenarios.md
     - name: Technologieentscheidungen für BYOD mit EMS
@@ -82,7 +92,7 @@
             - name: Vorbereiten von Intune
               href: migration-guide-prepare.md
               items:
-                - name: Einfaches Setup
+                - name: Grundlegende Einrichtung
                   href: migration-guide-setup.md
                 - name: Konfigurieren von Richtlinien für die Verwaltung von Geräten und Apps
                   href: migration-guide-configure-policies.md
@@ -155,7 +165,7 @@
           href: mdm-authority-set.md
         - name: Verwalten von Rollen
           items:
-            - name: Rollenbasierte Zugriffsteuerung
+            - name: Rollenbasierte Zugriffssteuerung
               href: role-based-access-control.md
             - name: Zuweisen einer Rolle zu einem Benutzer
               href: assign-role.md
@@ -175,6 +185,8 @@
       href: ../protect/index.yml
     - name: Verwalten und Schützen von Apps
       href: ../apps/index.yml
+    - name: Verwenden von Richtliniensätzen
+      href: ~/fundamentals/policy-sets.md
     - name: Anleitung für Entwickler
       href: ../developer/index.yml
     - name: Anfordern von Hilfe und Support
@@ -191,7 +203,7 @@
           href: use-docs.md
         - name: Anfordern von Support
           href: get-support.md
-- name: Verweis
+- name: Referenz
   items:
     - name: Fehlercodes und Beschreibungen
       items:
