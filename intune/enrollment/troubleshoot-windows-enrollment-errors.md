@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ab0ebd9a7977b5433c814e9496276ce7a7fc900
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1089c382a39afb5aad0456e669cb3a2434af73c1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735739"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503095"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Behandeln von Problemen bei der Windows-Geräteregistrierung in Microsoft Intune
 
@@ -56,11 +57,11 @@ Fehler 80180003: „Es ist ein Problem aufgetreten. Dieser Benutzer ist nicht au
 - Auf dem Computer wird Windows 10 Home ausgeführt. Allerdings wird die Anmeldung bei InTune oder beim beitreten Azure AD nur für die Editionen Windows 10 pro und höher unterstützt.
 
 #### <a name="resolution"></a>Lösung
-Es gibt mehrere mögliche Lösungen für dieses Problem:
+Für dieses Problem gibt es mehrere mögliche Lösungen:
 
 ##### <a name="remove-devices-that-were-enrolled"></a>Registrierte Geräte entfernen
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) an.    
-2. Wechseln Sie zu **Benutzer** > **alle Benutzer**.    
+2. Wechseln Sie zu **Benutzer**  > **alle Benutzer**.    
 3. Wählen Sie das betroffene Benutzerkonto aus, und klicken Sie dann auf **Geräte**.    
 4. Wählen Sie nicht verwendete oder unerwünschte Geräte aus, und klicken Sie dann auf **Löschen**. 
 
@@ -70,12 +71,12 @@ Es gibt mehrere mögliche Lösungen für dieses Problem:
 > Diese Methode erhöht den Grenzwert für die Geräteregistrierung für alle Benutzer, nicht nur für den betroffenen Benutzer.
 
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) an.
-2. Wechseln Sie zu **Geräte**Registrierung  >  Registrierungs**Beschränkungen**, und wählen Sie dann **Geräte Limit-Einschränkungen**aus.    
+2. Wechseln Sie zu **Geräte** Registrierung  >  Registrierungs**Beschränkungen**, und wählen Sie dann **Geräte Limit-Einschränkungen**aus.    
 3. Erhöhen Sie den Wert für **Geräte Limit**. 
 
 ##### <a name="check-device-type-restrictions"></a>Überprüfen der Gerätetypbeschränkungen
 1. Melden Sie sich mit einem globalen Administratorkonto beim [Intune-Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) an.
-2. Wechseln Sie zu **Geräte**Registrierung  >  Registrierungs**Beschränkungen**, und wählen Sie dann die **Standard** Einschränkung unter **Gerätetyp Einschränkungen**aus.    
+2. Wechseln Sie zu **Geräte** Registrierung  >  Registrierungs**Beschränkungen**, und wählen Sie dann die **Standard** Einschränkung unter **Gerätetyp Einschränkungen**aus.    
 3. Wählen Sie **Plattformen**und dann **zulassen** für **Windows (MDM)** aus.
 
     > [!IMPORTANT]
@@ -96,7 +97,7 @@ Fehler 0x801c0003: "dieser Benutzer darf nicht registriert werden. Versuchen Sie
 
 #### <a name="resolution"></a>Lösung
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) als Administrator an.    
-2. Wechseln Sie zu **Azure Active Directory** > **Geräte** >  Geräte**Einstellungen**.    
+2. Wechseln Sie zu **Azure Active Directory**  > **Geräte**  >  Geräte**Einstellungen**.    
 3. Legen Sie **Benutzer dürfen Geräte in Azure AD einbinden** auf **Alle** fest.    
 4. Registrieren Sie das Gerät erneut.   
 
@@ -104,17 +105,17 @@ Fehler 0x801c0003: "dieser Benutzer darf nicht registriert werden. Versuchen Sie
 
 Fehler 8018000a: "etwas ist schief gelaufen. Das Gerät ist bereits registriert.  Wenden Sie sich mit dem Fehlercode 8018000a an Ihren Systemadministrator.
 
-**Ursache:** Eine der folgenden Bedingungen ist erfüllt:
-- Ein anderer Benutzer hat das Gerät bereits in InTune registriert oder dem Gerät hinzugefügt, um Azure AD. Um zu ermitteln, ob dies der Fall ist, wechseln Sie zu **Einstellungen** > **Konten** > **Arbeits Zugriff**. Suchen Sie nach einer Meldung, die der folgenden Meldung ähnelt: "ein anderer Benutzer im System ist bereits mit einer Arbeit oder Schule verbunden. Entfernen Sie diese Arbeits-oder Schul Verbindung, und wiederholen Sie den Vorgang. "    
+**Ursache**: Eine der folgenden Bedingungen ist erfüllt:
+- Ein anderer Benutzer hat das Gerät bereits in InTune registriert oder dem Gerät hinzugefügt, um Azure AD. Um zu ermitteln, ob dies der Fall ist, wechseln Sie zu **Einstellungen**  > **Konten**  > **Arbeits Zugriff**. Suchen Sie nach einer Meldung, die der folgenden Meldung ähnelt: "ein anderer Benutzer im System ist bereits mit einer Arbeit oder Schule verbunden. Entfernen Sie diese Arbeits-oder Schul Verbindung, und wiederholen Sie den Vorgang. "    
 - Der Configuration Manager-Client-Agent ist auf dem Computer installiert.    
 
 #### <a name="resolution"></a>Lösung
 
-Verwenden Sie eine der folgenden Methoden, um dieses Problem zu beheben:
+Nutzen Sie eines der folgenden Verfahren, um dieses Problem zu beheben:
 
 ##### <a name="remove-the-other-work-or-school-account"></a>Anderes Geschäfts-, Schul-oder unikonto entfernen
 1. Melden Sie sich von Windows ab, und melden Sie sich dann mit dem anderen Konto an, das registriert oder dem Gerät beigetreten ist.    
-2. Wechseln Sie zu **Einstellungen** > **Konten** > **Arbeits Zugriff**, und entfernen Sie dann das Geschäfts-, Schul-oder unikonto.
+2. Wechseln Sie zu **Einstellungen**  > **Konten**  > **Arbeits Zugriff**, und entfernen Sie dann das Geschäfts-, Schul-oder unikonto.
 3. Melden Sie sich von Windows ab, und melden Sie sich dann mit Ihrem Konto an.    
 4. Registrieren Sie das Gerät bei InTune, oder fügen Sie das Gerät zu Azure AD hinzu. 
 
@@ -135,7 +136,7 @@ Weisen Sie dem Benutzer eine gültige InTune-Lizenz zu, und registrieren Sie das
 
 ### <a name="looks-like-the-mdm-terms-of-use-endpoint-is-not-correctly-configured"></a>Der Endpunkt für die MDM-Nutzungsbedingungen ist anscheinend nicht ordnungsgemäß konfiguriert.
 
-**Ursache:** Eine der folgenden Bedingungen ist erfüllt: 
+**Ursache**: Eine der folgenden Bedingungen ist erfüllt: 
  - Sie verwenden die Mobile Geräteverwaltung (Mobile Device Management, MDM) für Office 365 und InTune für den Mandanten, und der Benutzer, der versucht, das Gerät zu registrieren, verfügt nicht über eine gültige InTune-Lizenz oder eine Office 365-Lizenz.     
 - Die MDM-Nutzungsbedingungen in Azure AD sind leer oder enthalten nicht die richtige URL.    
 
@@ -149,7 +150,7 @@ Wechseln Sie zum [Microsoft 365 Admin Center](https://portal.office.com/adminpor
 ##### <a name="correct-the-mdm-terms-of-use-url"></a>Korrigieren Sie die URL für die MDM-Nutzungsbedingungen.
   1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) an, und klicken Sie dann auf **Azure Active Directory**.    
   2. Wählen Sie **Mobilität (MDM und MAM)** aus, und klicken Sie dann auf **Microsoft InTune**.    
-  3. Wählen Sie **MDM-Standard-URLs wiederherstellen**aus, vergewissern Sie sich, dass die **MDM-URL für Nutzungsbedingungen** auf **https://portal.manage.microsoft.com/TermsofUse.aspx** festgelegt ist    
+  3. Wählen Sie **MDM-Standard-URLs wiederherstellen**aus, vergewissern Sie sich, dass die **MDM-URL für Nutzungsbedingungen** auf **https://portal.manage.microsoft.com/TermsofUse.aspx** festgelegt    
   4. Wählen Sie **Speichern** aus.    
 
 
@@ -166,7 +167,7 @@ Verwenden Sie eine der folgenden Methoden, um dieses Problem zu beheben:
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Deaktivieren Sie die automatische MDM-Registrierung in Azure.
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) an.    
-2. Wechseln Sie zu **Azure Active Directory** > -**Mobilität (MDM und MAM)**  > **Microsoft InTune**.    
+2. Wechseln Sie zu **Azure Active Directory**  > **Mobility (MDM und MAM)**  > **Microsoft InTune**.    
 3. Legen Sie den **MDM-Benutzerbereich** auf **None**fest, und klicken Sie dann auf **Speichern**.    
      
 ##### <a name="uninstall"></a>Deinstallieren
@@ -180,7 +181,7 @@ Fehler: "die Software kann nicht installiert werden, 0x80cf4017."
 
 #### <a name="resolution"></a>Lösung
 1. Melden Sie sich bei [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com) an.    
-2. Wechseln Sie zu **Admin** > **Client Software Download**, und klicken Sie dann auf **Client Software herunterladen**.    
+2. Wechseln Sie zu **Admin**  > **Client Software Download**, und klicken Sie dann auf **Client Software herunterladen**.    
 3. Speichern Sie das Installationspaket, und installieren Sie dann die-Client Software. 
 
 
@@ -192,7 +193,7 @@ Fehler: „Das Kontozertifikat ist ungültig und ist möglicherweise abgelaufen,
 
 #### <a name="resolution"></a>Lösung
 1. Melden Sie sich bei [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com) an.    
-2. Wechseln Sie zu **Admin** > **Client Software Download**, und klicken Sie dann auf **Client Software herunterladen**.    
+2. Wechseln Sie zu **Admin**  > **Client Software Download**, und klicken Sie dann auf **Client Software herunterladen**.    
 3. Speichern Sie das Installationspaket, und installieren Sie dann die-Client Software.    
 
 ### <a name="your-organization-does-not-support-this-version-of-windows"></a>Diese Windows-Version wird von Ihrer Organisation nicht unterstützt. 
@@ -205,7 +206,7 @@ Fehler: "Es ist ein Problem aufgetreten. Diese Windows-Version wird von Ihrer Or
 Um dieses Problem in einer eigenständigen InTune-Umgebung zu beheben, führen Sie die folgenden Schritte aus: 
  
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) als Administrator an.    
-2. Wählen Sie auf der linken Seite **InTune** aus, und wechseln Sie dann zu **Geräte**Registrierung  >  Registrierungs**Einschränkungen**.    
+2. Wählen Sie auf der linken Seite **InTune** aus, und wechseln Sie dann zu **Geräte** Registrierung  >  Registrierungs**Einschränkungen**.    
 3. Klicken Sie unter **Gerätetyp Einschränkungen**auf **Plattformen**und dann auf **zulassen** für **Windows (MDM)** .    
 4. Klicken Sie auf **Speichern**.    
  
@@ -213,7 +214,7 @@ Um dieses Problem in der Hybriden Verwaltung mobiler Geräte mit InTune und Conf
 1. Öffnen Sie die Configuration Manager-Konsole.    
 2. Wählen Sie **Verwaltung**, und klicken Sie dann auf **Cloud Services**.    
 3. Klicken Sie mit der rechten Maustaste auf **Microsoft InTune Abonnement**, und wählen Sie dann **Plattformen Konfigurieren > Fenster**    
-4. **Aktivieren Sie Windows**-Registrierung aktivieren  > **Apply** > **OK**.  
+4. **Aktivieren Sie Windows** -Registrierung aktivieren,  >   > **OK** **anwenden** .  
 
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Bei der Massen Registrierung ist ein Setup Fehler aufgetreten.
@@ -235,7 +236,7 @@ Weitere Informationen zur App "Einrichtung von PCs" finden Sie unter [Verwenden 
 ### <a name="auto-mdm-enroll-failed"></a>Automatische MDM-Registrierung: Fehler 
 
 Wenn Sie versuchen, ein Windows 10-Gerät automatisch mithilfe von Gruppenrichtlinie zu registrieren, treten folgende Probleme auf: 
-- In Taskplaner ist unter **Microsoft** > **Windows** > **enterprisemgmt**das Ergebnis der letzten Ausführung des Zeitplans, der durch den Registrierungs **Client für die automatische Registrierung bei MDM von Aad erstellt wurde** , wie folgt: **Ereignis 76 Automatische MDM-Registrierung: Fehler (Unbekannter Win32-Fehlercode: 0x8018002b)**       
+- In Taskplaner wird unter **Microsoft**  > **Windows**  > **enterprisemgmt**das Ergebnis der letzten Ausführung des Zeitplans, der **vom Registrierungs Client für die automatische Registrierung bei MDM von Aad erstellt wurde** , wie folgt angezeigt: **Ereignis 76 Automatische MDM-Registrierung: Fehler (Unbekannter Win32-Fehlercode: 0x8018002b)**       
 - In Ereignisanzeige wird das folgende Ereignis unter **Anwendungs-und Dienst Protokolle/Microsoft/Windows/Devicemanagement-Enterprise-Diagnostics-Provider/admin**protokolliert:   
     ```asciidoc
     Log Name: Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin
@@ -244,7 +245,7 @@ Wenn Sie versuchen, ein Windows 10-Gerät automatisch mithilfe von Gruppenrichtl
     Level: Error
     Description: Auto MDM Enroll: Failed (Unknown Win32 Error code: 0x80180002b)
     ```
-**Ursache:** Eine der folgenden Bedingungen ist erfüllt: 
+**Ursache**: Eine der folgenden Bedingungen ist erfüllt: 
 - Der UPN enthält eine nicht überprüfte oder nicht routingfähige Domäne wie z. B. .local (z. B. joe@contoso.local).    
 - Der **MDM-Benutzerbereich** ist auf **Keine** festgelegt. 
 
@@ -271,7 +272,7 @@ Wenn der **MDM-Benutzerbereich** auf **None**festgelegt ist, führen Sie die fol
 
 ### <a name="an-error-occurred-while-creating-autopilot-profile"></a>Fehler beim Erstellen des Autopilot-Profils.
 
-**Ursache:** Das angegebene Benennungs Format der Gerätenamen Vorlage entspricht nicht den Anforderungen. Beispielsweise verwenden Sie Kleinbuchstaben für das serielle Makro, z. b.% Serial% anstelle von% Serial%.
+**Ursache:** Das angegebene Benennungs Format der Gerätenamen Vorlage entspricht nicht den Anforderungen. Beispielsweise verwenden Sie Kleinbuchstaben für das serielle Makro, z. b .% Serial% anstelle von% Serial%.
 
 #### <a name="resolution"></a>Lösung
 
@@ -335,7 +336,7 @@ Dieses Problem tritt normalerweise auf, bevor das Gerät in einem Azure AD Hybri
 
 #### <a name="resolution"></a>Lösung
 
-1. Wechseln Sie zu **InTune** >  **Geräte**Registrierung  > **Windows**-Registrierung  > -**Geräte**.
+1. Wechseln Sie zu **InTune**  >  **Geräte** Registrierung  > **Windows** -Registrierung  > **Geräte**.
 2. Wählen Sie das Gerät aus, auf dem das Problem auftritt, > Klicken Sie auf die Auslassungs Punkte (...) auf der rechten Seite.
 3. Wählen Sie **Benutzer Zuweisung** aufheben aus, und warten Sie, bis der Prozess abgeschlossen ist.
 4. Vergewissern Sie sich, dass das Azure AD Hybrid Autopilot-Profil zugewiesen wurde, bevor Sie den Versuch wiederholen.
@@ -375,12 +376,12 @@ Dieses Problem tritt normalerweise auf, wenn die Berechtigungen für die Organis
 3. Wählen Sie im Assistenten zum Zuweisen der **Objektverwaltung** die Optionen **Weiter** > **Hinzufügen...**  > **Objekttypen** aus.
 4. Aktivieren Sie im Bereich **Objekttypen** das Kontrollkästchen **Computer**, und klicken Sie dann auf **OK**.
 5. Geben Sie im Bereich **Benutzer**, **Computer** oder **Gruppen auswählen** im Feld **Geben Sie die zu verwenden Objektnamen ein** den Namen des Computers ein, auf dem der Connector installiert ist.
-6. Wählen Sie **Namen überprüfen** aus, um den Eintrag zu überprüfen > **OK** > **weiter**.
+6. Wählen Sie **Namen überprüfen** aus, um den Eintrag zu überprüfen > **OK**  > **weiter**.
 7. Wählen Sie **Create a custom task to delegate** > **Next** (Benutzerdefinierte Aufgaben zum Zuweisen erstellen > Weiter) aus.
 8. Aktivieren Sie das Kontrollkästchen **Only the following objects in the folder** (Nur die folgenden Objekte im Ordner) und anschließen die Kontrollkästchen **Computer objects** (Computerobjekte), **Delete selected objects in this folder** (Gewählte Objekte in diesem Ordner löschen) und **Create selected objects in this folder** (Gewählte Objekte in diesem Ordner erstellen).
 9. Wählen Sie **Weiter** aus.
 10. Aktivieren Sie unter **Permissions** (Berechtigungen) das Kontrollkästchen **Full Control** (Vollzugriff). Durch diese Auswahl werden auch alle anderen Optionen aktiviert.
-11. Wählen Sie **weiter** > **Fertig**stellen aus.
+11. Wählen Sie **weiter**  > **Fertig**stellen aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

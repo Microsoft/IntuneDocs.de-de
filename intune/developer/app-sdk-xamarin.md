@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: de367f28f3f1c7731e5ab67d904aec799925cc03
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 19202d4387635b7cd1f7e4604d755fb8a213d327
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733724"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503438"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK-Xamarin-Bindungen
 
@@ -110,7 +111,7 @@ Eine vollständige Übersicht über die Integration des Intune App SDK finden Si
 #### <a name="remapper"></a>Remapper
 Ab der 1.4428.1-Version kann das `Microsoft.Intune.MAM.Remapper` Paket einer xamarin. Android-Anwendung als [Buildtools](app-sdk-android.md#build-tooling) hinzugefügt werden, um die Ersetzungen der MAM-Klasse,-Methode und-Systemdienste auszuführen. Wenn die Neuzuordnung eingeschlossen ist, werden die entsprechenden MAM-Ersetzungs Teile der umbenannten Methoden und MAM-Anwendungs Abschnitte automatisch ausgeführt, wenn die Anwendung erstellt wird.
 
-Um eine Klasse von MAM-ification durch die Neuzuordnung auszuschließen, können Sie die folgende Eigenschaft in den Projekten `.csproj`-Datei hinzufügen.
+Um eine Klasse von MAM-ification durch die Neuzuordnung auszuschließen, kann die folgende Eigenschaft in den Projekten `.csproj` Datei hinzugefügt werden.
 
 ```xml
   <PropertyGroup>

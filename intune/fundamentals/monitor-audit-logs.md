@@ -8,17 +8,18 @@ manager: dougeby
 ms.date: 03/18/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d999603abc539fda4d152d15dd1ab965c465f39e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736298"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585243"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Verwenden von Überwachungsprotokollen, um Ereignisse in Microsoft Intune zu verfolgen und zu überwachen
 
@@ -49,7 +50,8 @@ Sie können für jede Intune-Workload Überwachungsprotokolle in der Überwachun
 
 ![Exportieren von Protokolldaten in Azure Monitor, indem die Einstellungen für das Exportieren von Daten in Intune ausgewählt werden](./media/monitor-audit-logs/audit-logs-export-data-settings.png)
 
-Weitere Informationen zu diesem Feature finden Sie unter [Senden von Daten an den Speicher, an Event Hubs oder Log Analytics in Intune](review-logs-using-azure-monitor.md).
+> [!NOTE]
+> Weitere Informationen zu dieser Funktion und zum Überprüfen der Voraussetzungen für deren Verwendung finden Sie unter [Senden von Protokolldaten an Storage, Event Hubs oder Log Analytics](review-logs-using-azure-monitor.md).
 
 ## <a name="review-audit-events"></a>Überprüfen von Überwachungsereignissen
 
@@ -67,11 +69,11 @@ Ein Überwachungsprotokoll verfügt über eine Standardlistenansicht, in der die
 
 Wenn Sie detailliertere Informationen zu einem Ereignis sehen möchten, wählen Sie ein Element in der Liste aus:
 
-![Abrufen detaillierterer Informationen aus Überwachungsprotokollen in Intune dazu, wer welche Aktionen durchgeführt hat](./media/monitor-audit-logs/monitor-audit-log-detail.png "Überwachungsprotokolldetails")
+![Abrufen detaillierterer Informationen aus Überwachungsprotokollen in Intune dazu, wer welche Aktionen durchgeführt hat](./media/monitor-audit-logs/monitor-audit-log-detail.png "|::ref2::|")
 
 > [!NOTE]
 > **Initiiert von (Akteur)** enthält Informationen dazu, wer die Aufgabe ausgeführt hat, und wo sie ausgeführt wurde. Wenn Sie beispielsweise im Azure-Portal in Intune die Aktivität ausführen, wird unter **Anwendung** immer **Microsoft Intune-Portalerweiterung** und unter **Anwendungs-ID** immer dieselbe GUID aufgeführt.
-> 
+>
 > Im Abschnitt **Ziel(e)** werden mehrere Ziele und die geänderten Eigenschaften aufgeführt.  
 
 ## <a name="filter-audit-events"></a>Filtern von Überwachungsereignissen

@@ -1,14 +1,15 @@
 ---
-title: Behandeln häufig auftretender Probleme mit Ihrem verwalteten Samsung KNOX-Gerät | Microsoft-Dokumentation
-description: Finden Sie heraus, wie Sie häufige Probleme mit Ihrem Samsung KNOX-Gerät lösen können.
+title: Beheben von häufigen Problemen mit verwalteten Samsung Knox-Geräten | Microsoft-Dokumentation
+description: Behandeln von Problemen mit Ihrem Samsung Knox-Gerät
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: 78c08b30-dc5f-46d9-9ee8-6cc8dee1e404
 searchScope:
@@ -17,18 +18,18 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f78c2460130068652b91b27ddcf5726a077e59e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 54a8eaafba0705968672275ba67449d9672f5c46
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55833462"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502070"
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Behandeln häufig auftretender Probleme mit dem Samsung KNOX-Gerät
 
-Gelegentlich können Probleme mit dem Samsung KNOX-Gerät auftreten, die Sie möglicherweise selbst behandeln können. Im Folgenden finden Sie einige der häufiger auftretenden Probleme, bei denen Sie zunächst versuchen können, sie selbst zu behandeln. Bei komplexeren Problemen empfiehlt es sich, [das Team des Android-Unternehmensportals zu kontaktieren](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/intune-user-help/send-logs-to-microsoft-android.md).
+Beheben Sie häufige Probleme im Zusammenhang mit verwalteten Samsung Knox-Geräten. Wenn Sie ein Problem melden möchten, das hier nicht aufgeführt ist, können Sie [Diagnoseprotokolle](send-logs-to-microsoft-android.md) über die Unternehmensportal oder Microsoft InTune-App senden. Microsoft-Entwickler sehen sich die APP-spezifischen Protokolle an, um das Problem zu diagnostizieren und eine Lösung zu finden.    
 
-## <a name="network-activation-error"></a>Netzwerkaktivierungsfehler
+## <a name="network-activation-error"></a>Netzwerkaktivierungsfehler  
 
 Die angezeigte Nachricht könnte wie folgt aussehen:
 
@@ -44,12 +45,12 @@ Die angezeigte Nachricht könnte wie folgt aussehen:
 |---|---|
 |**Samsung KNOX-Aktivierungsfehler**: Die Samsung KNOX-Lizenz konnte nicht aktiviert werden. Möglicherweise liegt es daran, dass der Energiesparmodus aktiviert ist. Deaktivieren Sie den Energiesparmodus in den Geräteeinstellungen, und versuchen Sie es erneut.|Ihr Gerät kann aus Gründen, denen Microsoft nachgehen muss, nicht aktiviert werden. Senden Sie uns Ihr Feedback zu. Wir werden nach Möglichkeiten suchen, um das Problem zu beheben.|
 
-## <a name="power-saving-mode-error"></a>Fehler mit dem Energiesparmodus
+## <a name="power-saving-mode-error"></a>Fehler beim Energiesparmodus
 
 Die angezeigte Nachricht könnte wie folgt aussehen:
 
 |Fehlermeldung|Maßnahme|
 |---|---|
-|**Samsung KNOX-Aktivierungsfehler**: Die Samsung KNOX-Lizenz konnte nicht aktiviert werden. Möglicherweise liegt es daran, dass der Energiesparmodus aktiviert ist. Deaktivieren Sie den Energiesparmodus in den Geräteeinstellungen, und versuchen Sie es erneut. |Ihr Gerät verfügt möglicherweise nicht über die für Ihre Unternehmensressourcen geeigneten Energieeinstellungen. Erfahren Sie mehr über die [Einrichtung des Energiesparmodus](power-saving-mode-android.md).|
+|**Samsung KNOX-Aktivierungsfehler**: Die Samsung KNOX-Lizenz konnte nicht aktiviert werden. Dies kann daran liegen, dass der Energiesparmodus aktiviert ist. Deaktivieren Sie den Energiesparmodus in den Geräteeinstellungen, und versuchen Sie es nochmal. |Ihr Gerät verfügt möglicherweise nicht über die für Ihre Unternehmensressourcen geeigneten Energieeinstellungen. Weitere Informationen zu dieser Einstellung finden Sie unter [Energiesparmodus](power-saving-mode-android.md).|  
 
 Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).

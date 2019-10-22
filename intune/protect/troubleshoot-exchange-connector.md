@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: a7e3c742-295b-40bb-9afa-17f243062500
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230ee8c1206a4d091661b51dd239a4cb0b1a1963
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814056"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508838"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>Problembehandlung für den Intune Exchange Connector
 
@@ -32,7 +33,7 @@ In diesem Artikel wird beschrieben, wie Sie Probleme im Intune Exchange Connecto
 
 Bevor Sie mit der Problembehandlung für ein Exchange Connector-Problem in InTune beginnen, erfassen Sie grundlegende Informationen, damit Sie an einer soliden Grundlage arbeiten. Diese Vorgehensweise kann Ihnen helfen, die Art des Problems besser zu verstehen und schneller zu beheben.
 
-- Vergewissern Sie sich, dass Ihr Prozess die Installationsanforderungen erfüllt. Weitere Informationen finden [Sie unter Einrichten des lokalen InTune Exchange Connector](exchange-connector-install.md).
+- Vergewissern Sie sich, dass Ihr Prozess die Installationsanforderungen erfüllt. Informationen finden Sie unter [Einrichten des lokalen Intune Exchange-Connectors](exchange-connector-install.md).
 - Stellen Sie sicher, dass Ihr Konto sowohl über Exchange-als auch InTune-Administrator Berechtigungen verfügt
 - Notieren Sie sich den vollständigen und genauen Fehler Meldungs Text, Details und den Ort, an dem die Meldung angezeigt wird.
 - Bestimmen, wann das Problem gestartet wurde: 
@@ -44,8 +45,8 @@ Bevor Sie mit der Problembehandlung für ein Exchange Connector-Problem in InTun
 
 ### <a name="use-powershell-to-get-more-data-on-exchange-connector-issues"></a>Verwenden Sie PowerShell, um weitere Daten zu Exchange Connector-Problemen zu erhalten.
 
-- Verwenden Sie `Get-ActiveSyncDeviceStatistics -mailbox mbx`, um eine Liste aller mobilen Geräte für ein Postfach abzurufen.
-- Verwenden Sie `Get-Mailbox -Identity user | select emailaddresses | fl`, um eine Liste mit den SMTP-Adressen für ein Postfach abzurufen.
+- Um eine Liste aller mobilen Geräte für ein Postfach abzurufen, verwenden Sie `Get-ActiveSyncDeviceStatistics -mailbox mbx`
+- Um eine Liste der SMTP-Adressen für ein Postfach abzurufen, verwenden Sie `Get-Mailbox -Identity user | select emailaddresses | fl`
 - Verwenden Sie `Get-CASMailbox <upn> | fl`, um ausführliche Informationen zum Zugriffsstatus eines Geräts abzurufen.
 
 ## <a name="review-the-connector-configuration"></a>Überprüfen der Connector-Konfiguration

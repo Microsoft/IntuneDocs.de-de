@@ -5,9 +5,10 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 10/14/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1d1d0c52db57ca6b41c399aeefc948735eea0af
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830527"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503489"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Entwicklerhandbuch zum Microsoft Intune App SDK für Android
 
@@ -197,8 +198,8 @@ intunemam {
 }
 ```
 
-#### <a name="incremental-builds"></a>Krementelle Builds
-Um die Unterstützung für das inkrementelle aufbauen zu aktivieren, geben Sie `incremental = true` im `intunemam`-Konfigurations Block an.  Dies ist ein experimentelles Feature zur Steigerung der Buildleistung, da nur die geänderten Eingabedateien verarbeitet werden.  Die Standardkonfiguration ist `false`.
+#### <a name="incremental-builds"></a>Inkrementelle Builds
+Um die Unterstützung für das inkrementelle aufbauen zu aktivieren, geben Sie `incremental = true` im `intunemam` Konfigurations Block an.  Dies ist ein experimentelles Feature zur Steigerung der Buildleistung, da nur die geänderten Eingabedateien verarbeitet werden.  Die Standardkonfiguration ist `false`.
 
 ```groovy
 intunemam {
@@ -380,7 +381,7 @@ Mit Android P kündigte Google einen neuen (umbenannten) Satz von Unterstützung
 Im Gegensatz zu den Android-Unterstützungsbibliotheken stellen wir keine MAM-Varianten der AndroidX-Bibliotheken bereit. Stattdessen sollte AndroidX wie jede andere externe Bibliothek behandelt und so konfiguriert werden, dass es vom Build-Plug-In/Tool neu geschrieben wird. Für Gradle-Builds kann dies durch das Einbeziehen von `androidx.*` in das Feld `includeExternalLibraries` der Plug-In-Konfiguration erreicht werden. Aufrufe des Befehlszeilentools müssen alle JAR-Dateien explizit auflisten.
 
 ### <a name="pre-androidx-architecture-components"></a>Pre-androidx-Architekturkomponenten
-Viele Android-Architekturkomponenten, einschließlich Raum, ViewModel und WorkManager, wurden für androidx neu verpackt. Wenn Ihre APP die Pre-androidx-Varianten dieser Bibliotheken verwendet, stellen Sie sicher, dass die neuschreib Vorgänge angewendet werden, indem Sie `android.arch.*` im Feld `includeExternalLibraries` der Plug-in-Konfiguration einschließen. Alternativ dazu können Sie die Bibliotheken auf Ihre androidx-Entsprechungen aktualisieren.
+Viele Android-Architekturkomponenten, einschließlich Raum, ViewModel und WorkManager, wurden für androidx neu verpackt. Wenn Ihre APP die Pre-androidx-Varianten dieser Bibliotheken verwendet, stellen Sie sicher, dass die neuschreib Vorgänge angewendet werden, indem Sie `android.arch.*` in das Feld `includeExternalLibraries` der Plug-in-Konfiguration einschließen Alternativ dazu können Sie die Bibliotheken auf Ihre androidx-Entsprechungen aktualisieren.
 
 ## <a name="sdk-permissions"></a>SDK-Berechtigungen
 
@@ -547,15 +548,6 @@ Verfügt die App über eine eigene PIN-Benutzererfahrung, können Sie diese deak
 MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
-### <a name="example-determine-if-pin-is-required-for-the-app"></a>Beispiel: Ermittlung, ob eine PIN für die App erforderlich ist
-
-Verfügt die App über eine eigene PIN-Benutzererfahrung, können Sie diese deaktivieren, wenn der IT-Administrator das SDK so konfiguriert hat, das eine App-PIN angefordert wird. Um festzustellen, ob der IT-Administrator die App-PIN-Richtlinie für diese App bereitgestellt hat, rufen Sie die folgende Methode für den aktuellen Endbenutzer auf:
-
-```java
-
-MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
-```
-
 ### <a name="example-determine-the-primary-intune-user"></a>Beispiel: Ermitteln des primären Intune-Benutzers
 
 Zusätzlich zu den in AppPolicy bereitgestellten APIs wird der Benutzerprinzipalname (User Principal Name, **UPN**) auch von der `getPrimaryUser()`-API in der `MAMUserInfo`-Schnittstelle verfügbar gemacht. Rufen Sie Folgendes auf, um den UPN abzurufen:
@@ -602,7 +594,7 @@ Der Parameter `service` muss einen der folgenden `SaveLocation`-Werte aufweisen:
 - `SaveLocation.LOCAL`
 - `SaveLocation.OTHER`
 
-Der Parameter `username` sollte der UPN/Benutzername/die E-Mail sein, der bzw. die dem Clouddienst zugeordnet ist, in dem gespeichert wird (*nicht* zwingendermaßen identisch mit dem Benutzer, der das Dokument besitzt, das gespeichert wird). Verwenden Sie NULL, wenn dem AAD-UPN kein Clouddienstbenutzername zugeordnet werden kann oder der Benutzername nicht bekannt ist. `SaveLocation.LOCAL` ist kein clouddienst und sollte daher immer mit dem Parameter "`null` username" verwendet werden.
+Der Parameter `username` sollte der UPN/Benutzername/die E-Mail sein, der bzw. die dem Clouddienst zugeordnet ist, in dem gespeichert wird (*nicht* zwingendermaßen identisch mit dem Benutzer, der das Dokument besitzt, das gespeichert wird). Verwenden Sie NULL, wenn dem AAD-UPN kein Clouddienstbenutzername zugeordnet werden kann oder der Benutzername nicht bekannt ist. `SaveLocation.LOCAL` ist kein clouddienst und sollte daher immer mit einem `null` username-Parameter verwendet werden.
 
 Die vorherige Methode zur Ermittlung, ob die Richtlinie eines Benutzers das Speichern von Daten an verschiedenen Speicherorten gestattet, war `getIsSaveToPersonalAllowed()` innerhalb derselben **AppPolicy**-Klasse. Diese Funktion ist jetzt **veraltet** und sollte nicht verwendet werden. Der folgende Aufruf entspricht `getIsSaveToPersonalAllowed()`:
 
@@ -681,7 +673,7 @@ public interface MAMNotificationReceiver {
 
 Folgende Benachrichtigungen werden an die App gesendet; für manche ist ggf. App-Beteiligung erforderlich:
 
-* **WIPE_USER_DATA**: Diese Benachrichtigung wird in einer `MAMUserNotification`-Klasse gesendet. Wenn diese Benachrichtigung empfangen wird, *muss* die APP alle Daten löschen, die mit der verwalteten Identität (von `MAMUserNotification.getUserIdentity()`) verknüpft sind. Die Benachrichtigung kann aus unterschiedlichen Gründen auftreten, z. b. Wenn Ihre APP `unregisterAccountForMAM` aufruft, wenn ein IT-Administrator eine Löschung initiiert oder wenn der Administrator erforderliche bedingte Zugriffsrichtlinien nicht erfüllt wird. Wenn Ihre APP für diese Benachrichtigung nicht registriert wird, wird das Standardverhalten bei der Löschung ausgeführt. Beim Standardverhalten werden alle Dateien für eine APP mit einer einzelnen Identität oder alle Dateien gelöscht, die mit der verwalteten Identität für eine APP mit mehreren Identitäten gekennzeichnet sind. Diese Benachrichtigung wird nie im UI-Thread gesendet.
+* **WIPE_USER_DATA**: Diese Benachrichtigung wird in einer `MAMUserNotification`-Klasse gesendet. Wenn diese Benachrichtigung empfangen wird, *muss* die APP alle Daten löschen, die mit der verwalteten Identität (aus `MAMUserNotification.getUserIdentity()`) verknüpft sind. Die Benachrichtigung kann aus unterschiedlichen Gründen auftreten, z. b. Wenn Ihre APP `unregisterAccountForMAM` aufruft, ein IT-Administrator eine Löschung initiiert oder wenn die vom Administrator benötigten Richtlinien für bedingten Zugriff nicht erfüllt werden. Wenn Ihre APP für diese Benachrichtigung nicht registriert wird, wird das Standardverhalten bei der Löschung ausgeführt. Beim Standardverhalten werden alle Dateien für eine APP mit einer einzelnen Identität oder alle Dateien gelöscht, die mit der verwalteten Identität für eine APP mit mehreren Identitäten gekennzeichnet sind. Diese Benachrichtigung wird nie im UI-Thread gesendet.
 
 * **WIPE_USER_AUXILIARY_DATA**: Apps können sich für diese Benachrichtigung registrieren, wenn das Intune App SDK die standardmäßige selektive Zurücksetzung ausführen soll, aber bei der Zurücksetzung weitere Daten entfernt werden sollen. Diese Benachrichtigung ist nicht für Einzelidentitäts-Apps verfügbar und wird nur an Apps mit mehreren Identitäten gesendet. Diese Benachrichtigung wird nie im UI-Thread gesendet.
 
@@ -978,7 +970,7 @@ Wenn ein Konto erstmalig registriert wird, verfügt es über den Status `PENDING
 | `NOT_LICENSED` | Der Benutzer ist für Intune nicht lizenziert oder bei dem Versuch, den Kontakt zum Intune MAM-Dienst herzustellen, ist ein Fehler aufgetreten.  Die App sollte in einem nicht verwalteten (normalen) Zustand fortfahren, und der Benutzer sollte nicht blockiert werden.  Registrierungen werden für den Fall in regelmäßigen Abständen wiederholt, dass der Benutzer zukünftig über eine Lizenz verfügt. |
 | `ENROLLMENT_SUCCEEDED` | Der Registrierungsversuch wurde erfolgreich durchgeführt, oder der Benutzer ist bereits registriert.  Im Falle einer erfolgreichen Registrierung wird vor dieser Benachrichtigung eine Benachrichtigung zur Richtlinienaktualisierung gesendet.  Der Zugriff auf Unternehmensdaten sollte zugelassen werden. |
 | `ENROLLMENT_FAILED` | Fehler beim Registrierungsversuch.  Weitere Details finden Sie in den Geräteprotokollen.  Die App sollte in diesem Zustand nicht den Zugriff auf Unternehmensdaten gestatten, da zuvor ermittelt wurde, dass der Benutzer für Intune lizenziert ist.|
-| `WRONG_USER` | Nur ein Benutzer pro Gerät kann eine App mit dem MAM-Dienst registrieren. Dieses Ergebnis zeigt an, dass der Benutzer, für den das Ergebnis zugestellt wurde (der zweite Benutzer), die MAM-Richtlinie hat, aber bereits ein anderer Benutzer registriert ist. Da die MAM-Richtlinie für den zweiten Benutzer nicht erzwungen werden kann, darf Ihre APP den Zugriff auf die Daten dieses Benutzers nicht zulassen (möglicherweise durch Entfernen des Benutzers aus der APP), es sei denn, die Registrierung für diesen Benutzer ist zu einem späteren Zeitpunkt erfolgreich. Gleichzeitige Übermittlung dieses `WRONG_USER`-Ergebnisses fordert MAM mit der Option an, das vorhandene Konto zu entfernen. Wenn der Benutzer im positiven Bereich antwortet, ist es auch möglich, den zweiten Benutzer später kurzzeitig zu registrieren. Solange der zweite Benutzer weiterhin registriert ist, wird die Registrierung von MAM in regelmäßigen Abständen wiederholt. |
+| `WRONG_USER` | Nur ein Benutzer pro Gerät kann eine App mit dem MAM-Dienst registrieren. Dieses Ergebnis zeigt an, dass der Benutzer, für den das Ergebnis zugestellt wurde (der zweite Benutzer), die MAM-Richtlinie hat, aber bereits ein anderer Benutzer registriert ist. Da die MAM-Richtlinie für den zweiten Benutzer nicht erzwungen werden kann, darf Ihre APP den Zugriff auf die Daten dieses Benutzers nicht zulassen (möglicherweise durch Entfernen des Benutzers aus der APP), es sei denn, die Registrierung für diesen Benutzer ist zu einem späteren Zeitpunkt erfolgreich. Wenn Sie dieses `WRONG_USER` Ergebnis gleichzeitig bereitstellen, fordert MAM mit der Option an, das vorhandene Konto zu entfernen. Wenn der Benutzer im positiven Bereich antwortet, ist es auch möglich, den zweiten Benutzer später kurzzeitig zu registrieren. Solange der zweite Benutzer weiterhin registriert ist, wird die Registrierung von MAM in regelmäßigen Abständen wiederholt. |
 | `UNENROLLMENT_SUCCEEDED` | Die Aufhebung der Registrierung war erfolgreich.|
 | `UNENROLLMENT_FAILED` | Fehler bei der Anforderung zur Aufhebung der Registrierung.  Weitere Details finden Sie in den Geräteprotokollen. Im Allgemeinen tritt dies nicht auf, solange die APP einen gültigen UPN (weder NULL noch leer) übergibt. Es gibt keine direkte, zuverlässige Behebung, die die app ausführen kann. Wenn dieser Wert beim Aufheben der Registrierung eines gültigen UPN empfangen wird, melden Sie sich als Fehler an das InTune-MAM-Team an.|
 | `PENDING` | Der anfängliche Registrierungsversuch für den Benutzer wird ausgeführt.  Die App kann den Zugriff auf Unternehmensdaten blockieren, bis das Registrierungsergebnis bekannt ist, aber sie ist dazu nicht verpflichtet. |
@@ -1119,7 +1111,7 @@ notificationRegistry.registerReceiver(receiver, MAMNotificationType.COMPLIANCE_S
 ### <a name="implementation-notes"></a>Hinweise zur Implementierung
 > [!NOTE]
 > **Wichtige Änderungen!**  <br>
-> Die `MAMServiceAuthenticationCallback.acquireToken()`-Methode der APP sollte für das neue `forceRefresh`-Flag auf "`acquireTokenSilentSync()`" den Wert " *false* " übergeben.
+> Die `MAMServiceAuthenticationCallback.acquireToken()`-Methode der APP sollte für das neue `forceRefresh`-Flag den Wert " *false* " übergeben, um `acquireTokenSilentSync()`.
 > Bisher wurde empfohlen, " *true* " zu übergeben, um ein Problem beim Aktualisieren von Token vom Broker zu beheben, aber es wurde ein Problem mit Adal gefunden, das das Abrufen von Token in einigen Szenarien verhindern könnte, wenn dieses Flag " *true*" ist.
 ```java
 AuthenticationResult result = acquireTokenSilentSync(resourceId, clientId, userId, /* forceRefresh */ false);
@@ -1675,7 +1667,7 @@ Anwendungsspezifische Schlüssel-Wert-Paare können in der Intune-Konsole für [
 Diese Schlüssel-Wert-Paare werden von Intune gar nicht übersetzt, sondern an die App übergeben. Anwendungen, die eine solche Konfiguration erhalten wollen, verwenden dazu die `MAMAppConfigManager`- und `MAMAppConfig`-Klasse. Wenn mehrere Richtlinie für dieselbe App vorgesehen sind, gibt es womöglich mehrere konfliktverursachende Werte für denselben Schlüssel.
 
 > [!NOTE] 
-> Konfigurationen, die über MAM für die Übermittlung bereitgestellt werden: Wir können nicht in `offline` (wenn das Unternehmensportal nicht installiert ist) bereitgestellt werden.  Nur AppRestrictions von Android Enterprise werden über eine `MAMUserNotification`-Benachrichtigung in diesem Fall für eine leere Identität zugestellt.
+> Konfigurationen, die über MAM eingerichtet werden: Wir können nicht in `offline` bereitgestellt werden (wenn das Unternehmensportal nicht installiert ist).  Nur AppRestrictions von Android Enterprise werden über eine `MAMUserNotification`-Benachrichtigung in diesem Fall für eine leere Identität zugestellt.
 
 ### <a name="get-the-app-config-for-a-user"></a>App-Konfiguration für einen Benutzer
 Die APP-Konfiguration kann wie folgt abgerufen werden:
@@ -1692,7 +1684,7 @@ Ein Wert, der in der MAM-App-Konfiguration festgelegt wird, setzt einen Wert mit
 
 Wenn ein Administrator in Konflikt stehende Werte für den gleichen Schlüssel konfiguriert (z. b. durch das Ausrichten verschiedener App-Konfigurations Sätze mit demselben Schlüssel für mehrere Gruppen, die denselben Benutzer enthalten), hat InTune keine Möglichkeit, diesen Konflikt automatisch aufzulösen und alle Werte zu erhalten. verfügbar für Ihre APP. 
 
-Ihre APP kann alle Werte für einen bestimmten Schlüssel von einem `MAMAppConfig`-Objekt anfordern:
+Ihre APP kann alle Werte für einen bestimmten Schlüssel von einem `MAMAppConfig` Objekt anfordern:
 ```java
 List<Boolean> getAllBooleansForKey(String key)
 List<Long> getAllIntegersForKey(final String key)
@@ -1756,7 +1748,7 @@ enum StringQueryType {
 
 Ihre APP kann auch die Rohdaten als Liste der Sätze von Schlüssel-Wert-Paaren anfordern.
 
-```
+```java
 List<Map<String, String>> getFullData()
 ```
 

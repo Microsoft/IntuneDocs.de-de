@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1b3139db8b217dceb495f67e809eae8319eae0c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 96f6dc3d1a8f8589395cf49b3bb934adadf437a4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735700"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508496"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Behandeln von Problemen mit Geräte Aktionen in InTune
 
@@ -31,7 +32,7 @@ Microsoft InTune umfasst viele Aktionen, die Sie bei der Verwaltung von Geräten
 ## <a name="bypass-activation-lock-action"></a>Aktion „Aktivierungssperre umgehen“
 
 ### <a name="i-clicked-the-bypass-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>Ich habe im Portal auf die Aktion "Umgehung Aktivierungssperre" geklickt, aber auf dem Gerät ist nichts passiert.
-Dies ist zu erwarten. Nach dem Starten der Aktion "Aktivierungssperre umgehen" wird InTune von Apple ein aktualisierter Code angefordert. Sie geben den Code im Feld Kennung manuell ein, nachdem sich Ihr Gerät auf dem Aktivierungssperre-Bildschirm befindet. Dieser Code ist nur 15 Tage lang gültig. Achten Sie also darauf, dass Sie auf die Aktion klicken und den Code kopieren, bevor Sie das Löschen ausgeben.
+Dieses Verhalten ist normal. Nach dem Starten der Aktion "Aktivierungssperre umgehen" wird InTune von Apple ein aktualisierter Code angefordert. Sie geben den Code im Feld Kennung manuell ein, nachdem sich Ihr Gerät auf dem Aktivierungssperre-Bildschirm befindet. Dieser Code ist nur 15 Tage lang gültig. Achten Sie also darauf, dass Sie auf die Aktion klicken und den Code kopieren, bevor Sie das Löschen ausgeben.
 
 ### <a name="why-dont-i-see-the-bypass-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>Warum sehe ich den Code "Bypass Aktivierungssperre" auf dem Blatt "Hardware Übersicht" meines IOS-Geräts nicht?
 Die wahrscheinlichsten Ursachen sind:
@@ -53,7 +54,7 @@ Nein. Und Sie müssen die Bindestriche nicht eingeben.
 ## <a name="remove-devices-action"></a>Aktion "Geräte entfernen"
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>Gewusst wie, von wem ein abkoppeln/zurücksetzen gestartet wurde?
-Wechseln Sie zu **InTune** > **Geräte** >  Geräte**Aktionen** > Überprüfen Sie die Spalte **initiiert von** .
+Wechseln Sie zu **InTune**  > **Geräte**  > **Geräte Aktionen** > Überprüfen Sie die Spalte **initiiert von** .
 Wenn kein Eintrag angezeigt wird, ist der Benutzer des Geräts die wahrscheinlichste Person, die die Aktion initiiert hat. Sie haben wahrscheinlich die Unternehmensportal APP oder Portal.Manage.Microsoft.com verwendet.
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>Warum wurde meine Anwendung nach dem abkoppeln nicht deinstalliert?
@@ -68,7 +69,7 @@ Dieses Verhalten ist normal. Google lässt das Zurücksetzen von Arbeitsprofil G
 Da das abkoppeln eines Geräts Zugriffs Token nicht widerrufen. Sie können Richtlinien für den bedingten Zugriff verwenden, um diese Bedingung zu mindern.
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>Wie kann ich nach der Ausgabe eine abkoppeln/zurücksetzen-Aktion überwachen?
-Wechseln Sie zu **InTune** > **Geräte** >  Geräte**Aktionen**.
+Wechseln Sie zu **InTune**  > **Geräte**  >  Geräte**Aktionen**.
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>Warum werden manchmal setzt als ausstehend angezeigt?
 Geräte melden ihren Status nicht immer zurück an den InTune-Dienst, bevor die zurück Setzung gestartet wurde. Daher wird die Aktion als ausstehend angezeigt. Wenn Sie bestätigt haben, dass die Aktion erfolgreich war, löschen Sie das Gerät aus dem Dienst.

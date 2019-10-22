@@ -1,14 +1,15 @@
 ---
-title: Senden von Protokollen an den Support Ihres Unternehmens mithilfe eines USB-Kabels | Microsoft-Dokumentation
-description: Senden von Datenprotokollen über ein USB-Kabel
+title: Hochladen und e-Mail-Protokolle mithilfe eines USB-Kabels | Microsoft-Dokumentation
+description: Hochladen von Datenprotokollen von Ihrem Gerät mit einem USB-Kabel
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/03/2017
+ms.date: 04/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
 searchScope:
@@ -18,23 +19,23 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd91a7c862b87d9842d08a2346e2e23af4f3665e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 8a0ffebe7472666ce9ccd53a47460ab5f0a9b34d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55836326"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508318"
 ---
-# <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Senden von Protokollen an den Support Ihres Unternehmens mithilfe eines USB-Kabels
+# <a name="upload-and-email-logs-using-a-usb-cable"></a>Hochladen und e-Mail-Protokolle per USB-Kabel
 
-Wenn Sie eine Fehlermeldung erhalten, während Sie die Unternehmensportal-App auf Ihrem Android-Gerät verwenden, können Sie Informationen zu diesem Fehler senden, um dem Support Ihres Unternehmens bei der Behandlung des Problems zu helfen. Die Informationen werden auf Ihrem Gerät in einem speziellen Dokument (einem so genannten _Diagnoseprotokoll_) gespeichert.
+E-Mail an den Unternehmens Support über ein Problem, das Sie in der Unternehmensportal-APP haben. Fehlerdetails werden aufgezeichnet und auf Ihrem Gerät in einem speziellen Dokument gespeichert, das als _Diagnoseprotokoll_ bezeichnet wird. In diesem Artikel wird beschrieben, wie die Protokolle von Ihrem Gerät auf Ihren Computer hochgeladen werden. Sie benötigen ein USB-Kabel, um diese Schritte ausführen zu können.   
 
 > [!Note]
-> Bevor Sie beginnen, stellen Sie sicher, dass Sie die E-Mail-Adresse des Supports Ihres Unternehmens zur Hand haben. Sie wird auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980) oder in Ihrer Unternehmensportal-App aufgeführt.
+> Bevor Sie beginnen, stellen Sie sicher, dass Sie die E-Mail-Adresse Ihres Supportteams zur Hand haben. Suchen Sie die Kontaktinformationen auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980) und in der Unternehmensportal-app. 
 
-1. Tippen Sie auf dem Fehlerbildschirm auf **Info senden**. Wenn Sie in einer Meldung gefragt werden, über welche Methode Sie die Protokolle senden möchten, wählen Sie die Option aus, bei der die Dateien auf Ihrem Gerät gespeichert werden.
+1. Tippen Sie auf dem Fehlerbildschirm auf **Info senden**. Wenn Sie in einer Meldung gefragt werden, über welche Methode Sie die Protokolle senden möchten, wählen Sie die Option aus, bei der die Dateien auf Ihrem Gerät gespeichert werden.  
 
-2. Verbinden Sie Ihr Gerät über ein USB-Kabel mit dem Computer. Hierbei handelt es sich normalerweise um das gleiche Kabel, das Sie auch zum Laden des Geräts über eine Steckdose verwenden.
+2. Verbinden Sie Ihr Gerät über ein USB-Kabel mit dem Computer. 
 
 3. Suchen Sie auf dem Computer nach einem Verzeichnis mit dem Namen Ihres Geräts. Suchen Sie in diesem Verzeichnis nach <strong><Android-Gerät>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\</strong>.
 

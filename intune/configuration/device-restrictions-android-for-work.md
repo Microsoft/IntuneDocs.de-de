@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a58eefffac670a12fc1d1a065534b4c1a4505426
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734946"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585382"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune
 
@@ -67,7 +68,7 @@ In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschri
 - **Systemupdate**: Hier können Sie eine Option auswählen, um zu definieren, wie das Geräte Over-the-Air-Updates verarbeitet:
   - **Gerätestandard:** Die Standardeinstellung des Geräts wird verwendet.
   - **Automatisch:** Updates werden ohne Interaktion des Benutzers automatisch installiert. Durch das Festlegen dieser Richtlinie werden sofort alle ausstehenden Updates installiert.
-  - **Zurückgestellt:** Updates werden für 30 Tage zurückgestellt. Nach Ablauf der 30 Tage fordert Android den Benutzer zur Installation des Updates auf. Gerätehersteller oder Mobilfunkanbieter können verhindern (ausschließen), dass wichtige Sicherheitsupdates zurückgestellt werden. Bei einem ausgeschlossenen Update wird dem Benutzer eine Systembenachrichtigung auf dem Gerät angezeigt. 
+  - **Zurückgestellt:** Updates werden für 30 Tage zurückgestellt. Nach Ablauf der 30 Tage fordert Android den Benutzer zur Installation des Updates auf. Gerätehersteller oder Mobilfunkanbieter können verhindern (ausschließen), dass wichtige Sicherheitsupdates zurückgestellt werden. Bei einem ausgeschlossenen Update wird dem Benutzer eine Systembenachrichtigung auf dem Gerät angezeigt.
   - **Wartungsfenster:** Updates werden automatisch in einem täglichen Wartungsfenster installiert, das Sie in Intune festlegen. Die Installation wird 30 Tage lang täglich versucht, und es kann aufgrund von zu geringem Speicherplatz oder Akkustand ein Fehler auftreten. Nach 30 Tagen wird der Benutzer von Android zum Installieren aufgefordert. Dieses Fenster wird auch verwendet, um Updates für Google Play-Apps zu installieren. Verwenden Sie diese Option für dedizierte Geräte wie etwa Kioskgeräte, da Apps, die im Vordergrund auf einem dedizierten Gerät im Einzelanwendungsmodus ausgeführt werden, aktualisiert werden können.
 
 - **Benachrichtigungsfenster**: Bei Festlegung auf **Deaktivieren** werden Fensterbenachrichtigungen, wie Popups, eingehende Anrufe, ausgehende Anrufe, Systemwarnungen und Systemfehler, nicht auf dem Gerät angezeigt. Bei **Nicht konfiguriert** wird die Standardeinstellung des Betriebssystems verwendet, wodurch Benachrichtigungen möglicherweise angezeigt werden.
@@ -98,8 +99,8 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
   > Für dedizierte Geräte mit mehreren Apps **muss** die [Managed Home Screen-App](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) aus Google Play:
   >   - in Intune [als Client-App hinzugefügt](../apps/apps-add-android-for-work.md) sein
   >   - [der Gerätegruppe zugewiesen sein](../apps/apps-deploy.md), die für Ihre dedizierten Geräte erstellt wurde.
-  > 
-  > Die **Managed Home Screen**-App muss sich nicht im Konfigurationsprofil befinden, aber als Client-App hinzugefügt werden. Wenn die **Managed Home Screen**-App als Client-App hinzugefügt wird, werden alle anderen Apps, die Sie im Konfigurationsprofil hinzufügen, in der **Managed Home Screen**-App als Symbole angezeigt. 
+  >
+  > Die **Managed Home Screen**-App muss sich nicht im Konfigurationsprofil befinden, aber als Client-App hinzugefügt werden. Wenn die **Managed Home Screen**-App als Client-App hinzugefügt wird, werden alle anderen Apps, die Sie im Konfigurationsprofil hinzufügen, in der **Managed Home Screen**-App als Symbole angezeigt.
   >
   > Wenn Sie den Kiosk Modus für mehrere Apps verwenden, funktionieren Dialer/Phone-Apps möglicherweise nicht ordnungsgemäß. 
 
@@ -157,8 +158,8 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
 
       Wenn Sie keine URL eingeben, wird das Standard Image des Geräts verwendet, wenn ein Standard Image vorhanden ist.
 
-    - **Anzahl von Sekunden, die das Gerät vor dem Ausschalten des Bildschirms anzeigt**: Wählen Sie aus, wie lange das Gerät den Bildschirmschoner anzeigt. Geben Sie einen Wert zwischen 0-9999999 Sekunden ein. Der Standardwert beträgt `0` Sekunden. Wenn das Feld leer gelassen oder auf 0 (null) (`0`) festgelegt ist, wird der Bildschirmschoner aktiviert, bis ein Benutzer mit dem Gerät interagiert.
-    - **Anzahl der Sekunden, die das Gerät inaktiv ist, bevor der Bildschirmschoner angezeigt wird**: Wählen Sie aus, wie lange das Gerät im Leerlauf ist, bevor der Bildschirm Geben Sie einen Wert zwischen 1-9999999 Sekunden ein. Der Standardwert beträgt `30` Sekunden. Geben Sie eine Zahl ein, die größer als null (`0`) ist.
+    - **Anzahl von Sekunden, die das Gerät vor dem Ausschalten des Bildschirms anzeigt**: Wählen Sie aus, wie lange das Gerät den Bildschirmschoner anzeigt. Geben Sie einen Wert zwischen 0 und 9999999 Sekunden ein. Der Standardwert beträgt `0` Sekunden. Wenn das Feld leer gelassen wird oder auf 0 (null) (`0`) festgelegt ist, wird der Bildschirmschoner aktiviert, bis ein Benutzer mit dem Gerät interagiert.
+    - **Anzahl der Sekunden, die das Gerät inaktiv ist, bevor der Bildschirmschoner angezeigt wird**: Wählen Sie aus, wie lange das Gerät im Leerlauf ist, bevor der Bildschirm Geben Sie einen Wert zwischen 1 und 9999999 Sekunden ein. Der Standardwert beträgt `30` Sekunden. Geben Sie eine Zahl ein, die größer als null (`0`) ist.
     - **Medien vor dem Starten des Bildschirmschoners erkennen**: durch **aktivieren** (Standard) wird der Bildschirmschoner nicht angezeigt, wenn auf dem Gerät Audiodaten oder Videos abgespielt werden. **Nicht konfiguriert** zeigt den Bildschirmschoner an, selbst wenn Audiodaten oder Videos abgespielt werden.
 
 ### <a name="device-password-settings"></a>Gerätekennworteinstellungen
@@ -241,7 +242,22 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
 
   Wählen Sie **Nicht konfiguriert** aus, damit der Datenverkehr durch den VPN-Tunnel oder durch das Mobilfunknetz fließen kann.
 
-## <a name="work-profile-only"></a>Nur Arbeitsprofil 
+- **Empfohlener globaler Proxy**: Wählen Sie **aktivieren** aus, um den Geräten einen globalen Proxy hinzuzufügen. Wenn diese Option aktiviert ist, verwenden Sie den von Ihnen eingegebenen Proxy für http-und HTTPS-Datenverkehr, einschließlich einiger apps auf dem Gerät. Dieser Proxy ist nur eine Empfehlung. Es ist möglich, dass einige apps den Proxy nicht verwenden. **Nicht konfiguriert** (Standard) fügt keinen empfohlenen globalen Proxy hinzu.
+
+  Weitere Informationen zu diesem Feature finden Sie unter [setrecommendedglobalproxy](https://developer.android.com/reference/android/app/admin/DevicePolicyManager.html#setRecommendedGlobalProxy(android.content.ComponentName,%20android.net.ProxyInfo)) (öffnet eine Android-Website).
+
+  Wenn diese Option aktiviert ist, geben Sie auch den **Proxytyp** ein. Folgende Optionen sind verfügbar:
+
+  - **Direkt**: Wählen Sie diese Option aus, um die Proxy Server Details manuell einzugeben, einschließlich:
+    - **Host**: Geben Sie den Hostnamen oder die IP-Adresse des Proxy Servers ein. Geben Sie beispielsweise `proxy.contoso.com` oder `127.0.0.1` ein.
+    - **Portnummer**: Geben Sie die vom Proxyserver verwendete TCP-Portnummer ein. Geben Sie beispielsweise `8080` ein.
+    - **Ausgeschlossene Hosts**: Geben Sie eine Liste von Hostnamen oder IP-Adressen ein, die den Proxy nicht verwenden. Diese Liste kann ein Platzhalter Zeichen (`*`) und mehrere durch Semikolons (`;`) getrennte Hosts enthalten, die keine Leerzeichen enthalten. Geben Sie beispielsweise `127.0.0.1;web.contoso.com;*.microsoft.com` ein.
+
+  - **Proxy Auto-config**: Geben Sie die **PAC-URL** für ein Skript für die automatische Proxykonfiguration ein. Geben Sie beispielsweise `https://proxy.contoso.com/proxy.pac` ein.
+
+    Weitere Informationen zu PAC-Dateien finden Sie unter [Proxy Auto-Configuration (PAC) File](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file) (öffnet eine nicht-Microsoft-Website).
+
+## <a name="work-profile-only"></a>Nur Arbeitsprofil
 
 ### <a name="work-profile-settings"></a>Arbeitsprofileinstellungen
 
@@ -249,9 +265,10 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
 
 - **Kopieren und Einfügen zwischen Arbeitsprofilen und persönlichen Profilen**: Wählen Sie **Blockieren** aus, um das Kopieren und Einfügen zwischen Arbeits-Apps und persönlichen Apps zu verhindern. **Nicht konfiguriert** ermöglicht Benutzern, Daten mithilfe von Kopieren und Einfügen mit Apps im persönlichen Profil freizugeben. 
 - **Datenfreigabe zwischen Arbeitsprofilen und persönlichen Profilen**: Wählen Sie aus, ob Apps im Arbeitsprofil Daten für Apps im persönlichen Profil freigeben können. Sie können z.B. Freigabeaktionen in Anwendungen steuern, wie etwa die Option **Freigeben**. in der Chrome-Browser-App. Diese Einstellung gilt nicht für das Verhalten beim Kopieren/Einfügen der Zwischenablage. Ihre Freigabeoptionen:
-  - **Standardeinschränkungen für Freigabe**: Dies ist das standardmäßige Freigabeverhalten des Geräts, das abhängig von der Android-Version variiert. Standardmäßig ist die Freigabe von Daten des persönlichen Profils für das Arbeitsprofil zulässig. Die Freigabe von Daten des Arbeitsprofils für das persönliche Profil ist dagegen standardmäßig blockiert. Durch diese Einstellung wird die Freigabe von Daten des Arbeitsprofils für das persönliche Profil verhindert. Auf Geräten mit den Versionen 6.0 und höher blockiert Google die Freigabe vom persönlichen Profil zum Arbeitsprofil nicht.
+  - **Gerätestandard**: Dies ist das standardmäßige Freigabeverhalten des Geräts, das je nach Android-Version variiert. Standardmäßig ist die Freigabe von Daten des persönlichen Profils für das Arbeitsprofil zulässig. Die Freigabe von Daten des Arbeitsprofils für das persönliche Profil ist dagegen standardmäßig blockiert. Durch diese Einstellung wird die Freigabe von Daten des Arbeitsprofils für das persönliche Profil verhindert. Auf Geräten mit den Versionen 6.0 und höher blockiert Google die Freigabe vom persönlichen Profil zum Arbeitsprofil nicht.
   - **Apps im Arbeitsprofil können Freigabeanforderungen vom persönlichen Profil verarbeiten**: Aktiviert das integrierte Android-Feature, dass die Freigabe vom persönlichen Profil zum Arbeitsprofil ermöglicht. Wenn diese Option aktiviert ist, können Daten durch eine Freigabeanfrage einer App im persönlichen Profil für Apps im Arbeitsprofil freigegeben werden. Diese Einstellung ist das Standardverhalten für Android-Geräte, die frühere Versionen als 6.0 ausführen.
-  - **Grenzübergreifende Freigabe zulassen**: Ermöglicht die Freigabe von Daten in beide Richtungen über die Begrenzungen des Arbeitsprofils hinaus. Wenn Sie diese Einstellung auswählen, können Apps im Arbeitsprofil Daten für Apps ohne Badgeverwendung im persönlichen Profil freigeben. Diese Einstellung gestattet es verwalteten Apps im Arbeitsprofil, die Daten für Apps auf der nicht verwalteten Seite des Geräts freizugeben. Verwenden Sie diese Einstellung also mit Bedacht.
+  - **Jegliche Freigabe über Grenzen hinweg verhindern**: verhindert die Freigabe zwischen Arbeits Profilen und persönlichen Profilen.
+  - **Keine Einschränkungen bei der Freigabe**: ermöglicht die gemeinsame Nutzung über die Arbeitsprofil Grenze in beide Richtungen. Wenn Sie diese Einstellung auswählen, können Apps im Arbeitsprofil Daten für Apps ohne Badgeverwendung im persönlichen Profil freigeben. Diese Einstellung gestattet es verwalteten Apps im Arbeitsprofil, die Daten für Apps auf der nicht verwalteten Seite des Geräts freizugeben. Verwenden Sie diese Einstellung also mit Bedacht.
 
 - **Arbeitsprofilbenachrichtigungen bei Gerätesperre**: Steuert, ob Apps im Arbeitsprofil Daten in Benachrichtigungen anzeigen können, wenn das Gerät gesperrt ist. **Blockieren** verhindert die Datenanzeige. **Nicht konfiguriert** zeigt die Daten an.
 - **Standardmäßige App-Berechtigungen**: Legt die Standardberechtigungsrichtlinie für alle Apps im Arbeitsprofil fest. Ab Android 6 wird der Benutzer aufgefordert, bestimmte von den Apps benötigte Berechtigungen zu erteilen, wenn die App gestartet wird. Bei dieser Richtlinieneinstellung können Sie festlegen, ob Benutzer aufgefordert werden sollen, Berechtigungen für alle Apps im Arbeitsprofil zu gewähren. Beispielsweise können Sie dem Arbeitsprofil eine App zuweisen, die Standortzugriff benötigt. In der Regel fordert diese App den Benutzer dazu auf, den Standortzugriff durch die App zu genehmigen oder abzulehnen. Verwenden Sie diese Richtlinie, um Berechtigungen automatisch ohne Aufforderung zu erteilen, Berechtigungen ohne Aufforderung automatisch zu verweigern oder den Endbenutzer entscheiden zu lassen. Es stehen die folgenden Optionen zur Auswahl:
@@ -325,6 +342,13 @@ Diese Kennworteinstellungen gelten für persönliche Profile auf Geräten, die e
 
    > [!Note]
    > Diese Einstellung funktioniert nur auf Geräten mit Android O und höher.
+
+- **Verhindern von App-Installationen aus unbekannten Quellen im persönlichen Profil: im**Entwurfs Modus können Android-Unternehmensprofil-Geräte keine apps aus anderen Quellen als dem Play Store installieren. Arbeitsprofil Geräte sind naturgemäß als Dual Profil gedacht:
+
+  - Ein Arbeitsprofil, das mit MDM verwaltet wird.
+  - Ein persönliches Profil, das von der MDM-Verwaltung isoliert ist.
+
+  Diese Einstellung ermöglicht Administratoren eine bessere Kontrolle über APP-Installationen aus unbekannten Quellen. **Nicht konfiguriert** (Standard) lässt App-Installationen aus unbekannten Quellen im persönlichen Profil zu. **Blockieren** verhindert, dass APP-Installationen aus anderen Quellen als der Play Store im persönlichen Profil.
 
 ### <a name="connectivity"></a>Verbindung
 

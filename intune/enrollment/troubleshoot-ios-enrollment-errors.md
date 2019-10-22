@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/25/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a02e403fdba34b576aa90b82062b7a602cbb517
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735687"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509234"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Behandlung von Problemen bei der iOS-Geräteregistrierung in Microsoft Intune
 
@@ -62,7 +63,7 @@ Sammeln Sie die folgenden Informationen zum Problem:
 1. Melden Sie sich im Azure-Portal an.
 2. Wählen Sie **Weitere Dienste** aus, suchen Sie nach Intune, und wählen Sie dann **Intune** aus.
 3. Klicken Sie auf **Geräteregistrierung** > **Registrierungsbeschränkungen**.
-4. Wählen Sie unter **Gerätetyp Einschränkungen**die Einschränkung aus, die Sie > **Eigenschaften**festlegen möchten  > **Plattformen auswählen** > Wählen Sie für **IOS** **zulassen** aus, und klicken Sie dann auf **OK**.
+4. Wählen Sie unter **Gerätetyp Einschränkungen**die Einschränkung aus, die Sie > **Eigenschaften** festlegen möchten  > **Plattformen auswählen** > Wählen Sie für **IOS** **zulassen** aus, und klicken Sie dann auf **OK**.
 5. Wählen Sie **Plattformen konfigurieren**aus, wählen Sie für private IOS-Geräte **zulassen** aus, und klicken Sie dann auf **OK**.
 6. Registrieren Sie das Gerät erneut.
 
@@ -89,10 +90,10 @@ Sammeln Sie die folgenden Informationen zum Problem:
 **Ursache:** Der Benutzer versucht, mehr Geräte als das Registrierungs Limit für Geräte zu registrieren.
 
 #### <a name="resolution"></a>Lösung
-1. Öffnen Sie das [InTune-Verwaltungs Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) > **Geräte** > **alle Geräte**, und überprüfen Sie die Anzahl der Geräte, die der Benutzer registriert hat.
+1. Öffnen Sie das [InTune-Verwaltungs Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) ,  > **Geräte**  > **alle Geräte**, und überprüfen Sie die Anzahl der Geräte, die der Benutzer registriert hat.
     > [!NOTE]
     > Außerdem sollten Sie den betroffenen Benutzer beim [InTune-Benutzer Portal](https://portal.manage.microsoft.com/) anmelden und Geräte überprüfen, die registriert wurden. Möglicherweise befinden sich Geräte, die im [InTune-Benutzer Portal](https://portal.manage.microsoft.com/) angezeigt werden, aber nicht im [InTune-Verwaltungs Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview). diese Geräte zählen auch zu dem Grenzwert für die Geräteregistrierung.
-2. Wechseln Sie zu **Admin** > **Verwaltung mobiler Geräte** >  Registrierungs**Regeln** > Überprüfen Sie den Grenzwert für die Geräteregistrierung. Standardmäßig ist der Grenzwert auf 15 festgelegt. 
+2. Wechseln Sie zu **Administrator**  > **Verwaltung mobiler Geräte**  >  Registrierungs**Regeln** > Überprüfen Sie den Grenzwert für die Geräteregistrierung. Der Grenzwert ist standardmäßig auf 15 festgelegt. 
 3. Wenn die Anzahl der registrierten Geräte den Grenzwert erreicht hat, entfernen Sie unnötige Geräte, oder erhöhen Sie den Grenzwert für die Geräteregistrierung. Da jedes registrierte Gerät eine InTune-Lizenz beansprucht, empfiehlt es sich, dass Sie immer unnötige Geräte zuerst entfernen.
 4. Registrieren Sie das Gerät erneut.
 
@@ -110,8 +111,8 @@ Sammeln Sie die folgenden Informationen zum Problem:
 **Ursache:** Der Benutzer, der versucht, das Gerät zu registrieren, verfügt über keine gültige InTune-Lizenz.
 
 #### <a name="resolution"></a>Lösung
-1. Wechseln Sie zum [Microsoft 365 Admin Center](https://portal.office.com/adminportal/home#/homepage), und wählen Sie dann **Benutzer** > **aktive Benutzer**aus.
-2. Wählen Sie das betroffene Benutzerkonto > **Product licenses** > **Edit**aus.
+1. Wechseln Sie zum [Microsoft 365 Admin Center](https://portal.office.com/adminportal/home#/homepage), und wählen Sie dann **Benutzer**  > **aktive Benutzer**aus.
+2. Wählen Sie das betroffene Benutzerkonto aus, > **Produktlizenzen**  > **Bearbeiten**.
 3. Überprüfen Sie, ob diesem Benutzer eine gültige InTune-Lizenz zugewiesen ist.
 4. Registrieren Sie das Gerät erneut.
 
@@ -119,8 +120,8 @@ Sammeln Sie die folgenden Informationen zum Problem:
 
 **Ursache:** Der Benutzer, der versucht, das Gerät zu registrieren, verfügt über keine gültige InTune-Lizenz.
 
-1. Wechseln Sie zum [Microsoft 365 Admin Center](https://portal.office.com/adminportal/home#/homepage), und wählen Sie dann **Benutzer** > **aktive Benutzer**aus.
-2. Wählen Sie das betroffene Benutzerkonto aus, und wählen Sie dann **Product licenses** > **Edit**aus.
+1. Wechseln Sie zum [Microsoft 365 Admin Center](https://portal.office.com/adminportal/home#/homepage), und wählen Sie dann **Benutzer**  > **aktive Benutzer**aus.
+2. Wählen Sie das betroffene Benutzerkonto aus, und wählen Sie dann **Product licenses**  > **Edit**aus.
 3. Überprüfen Sie, ob diesem Benutzer eine gültige InTune-Lizenz zugewiesen ist.
 4. Registrieren Sie das Gerät erneut.
 
@@ -130,7 +131,7 @@ Sammeln Sie die folgenden Informationen zum Problem:
 
 #### <a name="resolution"></a>Lösung
 
-1. Öffnen Sie die **Einstellungen** auf dem IOS-Gerät > **Allgemeine** > -**Geräteverwaltung**.
+1. Öffnen Sie die **Einstellungen** auf dem IOS-Gerät > **Allgemeine**  > **Geräteverwaltung**.
 2. Tippen Sie auf das vorhandene Verwaltungs Profil, und tippen Sie auf **Verwaltung entfernen**.
 3. Registrieren Sie das Gerät erneut.
 
@@ -183,7 +184,7 @@ Wenn Sie ein DEP-verwaltetes Gerät einschalten, dem ein Registrierungs Profil z
 #### <a name="resolution"></a>Lösung
 
 1. Bearbeiten Sie das Registrierungs Profil. Sie können Änderungen am Profil vornehmen. Der Zweck besteht darin, die Änderungszeit des Profils zu aktualisieren.
-2. Synchronisieren von DEP-verwalteten Geräten: Öffnen Sie das InTune-Portal > **Admin** > **Verwaltung mobiler Geräte** > **IOS** > **Programm zur Geräteregistrierung** > **Jetzt synchronisieren**. Eine Synchronisierungsanforderung wird an Apple gesendet.
+2. Synchronisieren von DEP-verwalteten Geräten: Öffnen Sie das InTune-Portal > **Admin**  >  die**Verwaltung mobiler Geräte**  > **IOS**  > **Programm zur Geräteregistrierung**  > **Jetzt synchronisieren**. Eine Synchronisierungsanforderung wird an Apple gesendet.
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>DEP-Registrierung bei Benutzeranmeldung hängen
 Wenn Sie ein DEP-verwaltetes Gerät einschalten, dem ein Registrierungs Profil zugewiesen ist, wird das erste Setup nach der Eingabe der Anmelde Informationen geklemmt.

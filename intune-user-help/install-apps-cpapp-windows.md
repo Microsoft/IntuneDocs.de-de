@@ -9,6 +9,7 @@ ms.date: 06/27/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,27 +19,28 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9cb8168075badda65b3cd02f8ae059119769c7c
-ms.sourcegitcommit: 9c06d8071b9affeda32e367bfe85d89bc524ed0b
+ms.openlocfilehash: d8cb6976121f4c5a9ce755e8feb189ea007e7ffd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/27/2019
-ms.locfileid: "67413898"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506130"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Installieren und freigeben von Apps auf Ihrem Gerät
+
 Installieren Sie über die Unternehmensportal-App für Windows Apps auf Ihrem Gerät.
 
 ## <a name="install-apps"></a>Installieren von Apps
 
 1. Öffnen Sie die Unternehmensportal-App, und melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.  
 
-    ![Die Startseite der Unternehmensportal-App für Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)    
+    ![Die Startseite der Unternehmensportal-App für Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)
 2. Suchen und installieren Sie Apps aus einem der folgenden Abschnitte der Unternehmensportal-App:  
 
     * **Start:** Wählen Sie Apps aus einer Liste empfohlener Apps Ihrer Organisation aus.  
     * **Alle anzeigen:** Klicken Sie auf der **Startseite** im Abschnitt **Apps** auf **Alle anzeigen**, um alle verfügbaren Apps anzuzeigen.  
-    * **Alle Apps:** Wählen Sie diese Seite im Navigationsbereich aus, um alle verfügbaren Apps anzuzeigen, einschließlich aller installierten und ausgewählten Apps. Zeigen Sie an, Sortieren Sie und Filtern Sie die apps. Die Suchergebnisse werden automatisch nach Relevanz sortiert.  
-    * **App-Kategorien**: Wählen Sie auf dieser Seite im Navigationsbereich, um apps, die basierend auf Typ oder die Funktion auszuwählen. Apps sind in Kategorien sortiert, z. B. **ausgewähltes**, **Education**, und **Produktivität**.  
+    * **Alle Apps:** Wählen Sie diese Seite im Navigationsbereich aus, um alle verfügbaren Apps anzuzeigen, einschließlich aller installierten und ausgewählten Apps. Anzeigen, Sortieren und Filtern der apps. Die Suchergebnisse werden automatisch nach Relevanz sortiert.  
+    * **App-Kategorien**: Wählen Sie diese Seite im Navigationsbereich aus, um apps basierend auf dem Typ oder der Funktion auszuwählen. Apps werden in Kategorien wie z. b. " **angeboten**", " **Education**" und " **Productivity**  
     * **Nach Apps suchen**: Eine statische Suchleiste befindet sich im Navigationsbereich der App.  Suchen Sie nach dem App-Namen oder dem Herausgeber, um Ihre verfügbaren Apps zu finden.  
 
 3. Wählen Sie eine App aus.   
@@ -49,7 +51,7 @@ Installieren Sie über die Unternehmensportal-App für Windows Apps auf Ihrem Ge
     ![Unternehmensportal-App für Windows 10, Seite „App-Details“ mit angezeigtem Status „Installiert“, nachdem die App installiert ist. Änderungen an der Schaltfläche „Installieren“ zum Lesen der Neuinstallation.](./media/RS1_AppDetailsPage_Installed_01.png)    
 
 > [!IMPORTANT]
-> Wenn eine erforderliche app nicht installiert und Ihrer Organisation verfügbar Sie manuell installieren macht, wählen Sie **wiederholen**. Es dauern, bis zu zehn Minuten, um den aktualisierten Status anzuzeigen. Bei Auswahl von **wiederholen** erneut während dieser Zeit und die erhalten eine Fehlermeldung, die einwandfrei ist. Fahren Sie mit der zehn Minuten für einen aktualisierten Status zu warten.   
+> Wenn eine erforderliche APP nicht installiert werden kann und Ihre Organisation Sie zur manuellen Installation zur Verfügung stellt, wählen Sie **wiederholen**aus. Es kann bis zu zehn Minuten dauern, bis der aktualisierte Status angezeigt wird. Wenn Sie während dieser **Zeit wiederholen auswählen und** eine Fehlermeldung angezeigt wird, ist das in Ordnung. Warten Sie, bis die zehn Minuten auf einen aktualisierten Status warten.   
 
 Je nach Größe Ihres Unternehmens kann es sein, dass mehrere Office-Versionen im Unternehmensportal zum Download verfügbar sind. Spezifische Informationen zur Office-Suite für Windows-Geräte finden Sie unter [Installieren von Office 365 auf Ihrem Windows 10-Gerät](./install-office-windows.md).
 
@@ -67,12 +69,12 @@ Empfehlen Sie Ihren Arbeits- oder Schul- bzw. Unikontakten Apps, und geben Sie s
 
 Nachdem Sie den Link mit einer Person geteilt haben, erhält der Empfänger einen Link sowie eine Benachrichtigung, um die Details der App anzuzeigen. Mit dem Link wird die Seite **App-Details** des Unternehmensportals geöffnet. 
 
-## <a name="available-and-required-apps"></a>Verfügbar und erforderliche apps
-Apps, die von Ihrer Organisation, die Ihnen zugewiesen sind, und mit der Bezeichnung in der Unternehmensportal-App als **verfügbar** oder **erforderlich**. 
+## <a name="available-and-required-apps"></a>Verfügbare und erforderliche apps
+Apps werden Ihnen von Ihrer Organisation zugewiesen und in Unternehmensportal als **verfügbar** oder **erforderlich**bezeichnet. 
 
-* Verfügbare apps: Diese apps sind von Ihrer Organisation ausgewählt, und angemessen und nützlich für Geschäfts-, Schul- oder unikonto. Sie sind optional zu installieren, und sind die einzigen apps, Sie in der Unternehmensportal-App finden zu installieren. 
+* Verfügbare apps: diese apps werden von Ihrer Organisation ausgewählt und sind für die Arbeit oder Schule geeignet. Sie sind optional für die Installation, und sind die einzigen apps, die Sie im Unternehmensportal finden, die Sie installieren möchten. 
 
-* Erforderliche apps: Diese apps sind erforderlich, für die Arbeit und Schule und direkt auf Ihrem Gerät bereitgestellt werden. Diese apps werden automatisch für Sie ohne Benutzereingriff installiert werden. 
+* Erforderliche apps: diese apps sind für die Arbeit und die Schule erforderlich und werden direkt auf Ihrem Gerät bereitgestellt. Diese apps werden ohne Eingriff automatisch für Sie installiert. 
 
 Sie haben auch abhängig von Ihrem Gerätetyp Zugriff auf bestimmte Apps. Wenn Sie beispielsweise die Unternehmensportal-App für Windows verwenden, haben Sie Zugriff auf Windows-Apps, nicht aber auf iOS-Apps.
 
@@ -81,20 +83,20 @@ Wenn Sie eine App benötigen, diese jedoch nicht im Unternehmensportal finden, k
 
   ![Die Unternehmensportal-App für Windows 10 mit der Seite „Hilfe und Support“, auf der die Helpdesk-Details hervorgehoben sind. ](./media/1812_UCP_Help_Support_helpdesk.png)  
 
-## <a name="view-installed-apps"></a>Anzeigen von installierter apps  
-Anzeigen einer Liste aller Apps auf Ihrem Gerät installiert. Die **installierte apps** Seite werden die folgenden Details zu einzelnen Apps aufgeführt:
+## <a name="view-installed-apps"></a>Anzeigen installierter apps  
+Zeigen Sie eine Liste aller auf dem Gerät installierten apps an. Auf der Seite **installierte apps** sind die folgenden Details zu den einzelnen apps aufgeführt:
 
-* Name: Der Name der App. Verfügbare apps einen Link zum Einschließen der **App-Details** Seite.
-* Zuweisungstyp: wie die app zugewiesen wird, und Ihnen zur Verfügung gestellt. 
-* Verleger: Der Name des Entwicklers oder Unternehmen, die die app verteilt. Ein Herausgeber ist in der Regel einem Softwarehersteller oder Ihre Organisation.  
-* Date-Published: Das Datum, das die app zum download zur Verfügung gestellt wurde. Veröffentlichen von Datum konnte die erste Version der app angezeigt, oder einer Anwendung die letzte aktualisieren.
-* Status: Der Installationsstatus der app auf Ihrem Gerät. Apps können anzeigen, wie das installieren, installiert werden soll, und installieren Sie Fehler. Erforderliche apps dauern bis zu 10 Minuten, um eine auf dem neuesten Stand Status anzuzeigen. Siehe den Hinweis unter [apps installieren](#install-apps) wichtige Details über eine erforderliche app zu installieren. 
+* Name: Der Name der App. Zu den verfügbaren apps gehört ein Link zur Seite " **App-Details** ".
+* Zuweisungstyp: gibt an, wie die APP zugewiesen und Ihnen zur Verfügung gestellt wird. 
+* Herausgeber: der Name des Entwicklers oder des Unternehmens, der die APP verteilt hat. Ein Verleger ist in der Regel ein Softwarehersteller oder Ihre Organisation.  
+* Veröffentlichtes Datum: das Datum, an dem die App heruntergeladen werden konnte. Das Veröffentlichungsdatum kann die anfängliche Version einer APP oder das aktuellste Update einer App anzeigen.
+* Status: der aktuelle Installationsstatus der APP auf Ihrem Gerät. Apps können als Installation, Installation und Installation angezeigt werden. Es kann bis zu 10 Minuten dauern, bis erforderliche apps einen aktuellen Status anzeigen. Wichtige Informationen zum Installieren einer erforderlichen App finden Sie im Hinweis unter [Installieren von apps](#install-apps) . 
 
-Um auf diese Seite zu gelangen, öffnen Sie im Navigationsmenü aus, und wählen **installierte apps**. 
+Um zu dieser Seite zu gelangen, klicken Sie auf das Navigationsmenü, und wählen Sie **installierte apps**aus. 
 
-  ![Beispielscreenshot der Unternehmensportal-app für Windows 10, Seite "apps" installiert. ](./media/installed-apps-cp-1906.png)  
+  ![Beispielscreenshot: Seite „Installierte Apps“ in der Unternehmensportal-App für Windows 10 ](./media/installed-apps-cp-1906.png)  
 
 
-Verwendung **sortieren, indem** ordnen den Zuweisungstyp apps, Verleger, alphabetisch nach Namen oder chronologisch nach Veröffentlichungsdatum. Verwendung **filtern, indem** apps beschränken Sie, indem Installationsstatus anzeigen.  Wenn keine apps verfügbar sind, sehen Sie eine Meldung, dass keine Unternehmens-apps installiert wurden.  
+Verwenden Sie **Sortieren nach** , um den App-Zuweisungstyp, den Verleger, den alphabetisch nach dem Namen oder das Schema nach Veröffentlichungsdatum neu anzuordnen. Verwenden Sie **Filter by** , um die apps, die Sie nach dem Installationsstatus sehen, einzuschränken.  Wenn keine apps verfügbar sind, wird eine Meldung angezeigt, dass keine Unternehmens-apps installiert wurden.  
 
 Benötigen Sie weitere Hilfe? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  

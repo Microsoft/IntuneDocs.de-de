@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 197ad888dc8a07cc35efbaec538fde93c76c81c3
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 440eb2d457783ac71b905d064a6d83abaa966cfe
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817624"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503909"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>Behandeln von Problemen mit BitLocker-Richtlinien in Microsoft InTune
 
@@ -32,9 +33,9 @@ Die BitLocker-Laufwerk Verschlüsselung ist ein Dienst, der von Microsoft Window
 
 Mit Microsoft InTune verfügen Sie über die folgenden Methoden zum Verwalten von BitLocker auf Windows 10-Geräten:
 
-- **Geräte Konfigurationsrichtlinien** : bestimmte integrierte Richtlinien Optionen sind in der InTune-Verwaltungskonsole unter **Gerätekonfiguration** > **Endpoint Protection** >  Windows-**Verschlüsselungs Richtlinie**verfügbar. Alle verfügbaren Switches und Features finden Sie hier: [Windows-Verschlüsselung](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
+- **Geräte Konfigurationsrichtlinien** : bestimmte integrierte Richtlinien Optionen sind in der InTune-Verwaltungskonsole unter **Gerätekonfiguration**  > **Endpoint Protection**  >  Windows-**Verschlüsselungs Richtlinie**verfügbar. Alle verfügbaren Switches und Features finden Sie hier: [Windows-Verschlüsselung](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
 
-- **Sicherheitsbaselines** - -[Sicherheitsbaselines](security-baselines.md) sind bekannte Einstellungs Gruppen und Standardwerte, die vom relevanten Sicherheitsteam für die Sicherung von Windows-Geräten empfohlen werden. Mit unterschiedlichen Baseline-Quellen, wie z. b. der *MDM-Sicherheitsbaseline* oder der *Microsoft Defender ATP-Baseline* , können dieselben Einstellungen wie andere Einstellungen verwaltet werden. Sie können auch die gleichen Einstellungen verwalten, die Sie mit den Geräte Konfigurationsrichtlinien verwalten. 
+- **Sicherheitsbaselines**  - [Sicherheitsbaselines](security-baselines.md) sind bekannte Einstellungs Gruppen und Standardwerte, die vom relevanten Sicherheitsteam für die Sicherung von Windows-Geräten empfohlen werden. Mit unterschiedlichen Baseline-Quellen, wie z. b. der *MDM-Sicherheitsbaseline* oder der *Microsoft Defender ATP-Baseline* , können dieselben Einstellungen wie andere Einstellungen verwaltet werden. Sie können auch die gleichen Einstellungen verwalten, die Sie mit den Geräte Konfigurationsrichtlinien verwalten. 
 
 Zusätzlich zu InTune ist es möglich, dass BitLocker-Einstellungen auf andere Weise verwaltet werden, wie z. b. Gruppenrichtlinie oder manuell von einem Gerätebenutzer festgelegt wird.
 
@@ -59,23 +60,23 @@ Wie bestätigen Sie, dass die Einstellungen auf das Zielgerät angewendet wurden
 
 ### <a name="device-configuration-policy-device-status"></a>Gerätestatus Geräte-Konfigurationsrichtlinie  
 
-Wenn Sie BitLocker mit der Geräte Konfigurationsrichtlinie konfigurieren, können Sie den Status der Richtlinie im InTune-Portal überprüfen. Wechseln Sie im Portal zu **Gerätekonfiguration** > **profile** , > Wählen Sie das Profil aus, das die BitLocker-Einstellungen enthält, und wählen Sie dann **Geräte Status**aus. Dem Profil zugewiesene Geräte werden aufgelistet, und die Spalte *Gerätestatus* zeigt an, ob ein Gerät das Profil erfolgreich bereitgestellt hat. 
+Wenn Sie BitLocker mit der Geräte Konfigurationsrichtlinie konfigurieren, können Sie den Status der Richtlinie im InTune-Portal überprüfen. Wechseln Sie im Portal zu **Gerätekonfiguration**  > **profile** , > Wählen Sie das Profil aus, das die BitLocker-Einstellungen enthält, und wählen Sie dann **Geräte Status**aus. Dem Profil zugewiesene Geräte werden aufgelistet, und die Spalte *Gerätestatus* zeigt an, ob ein Gerät das Profil erfolgreich bereitgestellt hat. 
 
 Beachten Sie, dass es eine Verzögerung zwischen einem Gerät, das eine BitLocker-Richtlinie empfängt, und dem vollständig verschlüsselten Laufwerk geben kann.  
 
  
 ### <a name="use-control-panel-on-the-client"></a>Verwenden der Systemsteuerung auf dem Client  
 
-Auf einem Gerät mit aktiviertem BitLocker und verschlüsseltem Laufwerk können Sie den BitLocker-Status in der Systemsteuerung für Geräte anzeigen. Öffnen Sie auf dem Gerät die System **Steuerung** > **System und Sicherheit** > **BitLocker-Laufwerkverschlüsselung**. Die Bestätigung wird angezeigt, wie in der folgenden Abbildung dargestellt.  
+Auf einem Gerät mit aktiviertem BitLocker und verschlüsseltem Laufwerk können Sie den BitLocker-Status in der Systemsteuerung für Geräte anzeigen. Öffnen Sie auf dem Gerät die System **Steuerung**  > **System-und Sicherheits**  > **BitLocker-Laufwerkverschlüsselung**. Die Bestätigung wird angezeigt, wie in der folgenden Abbildung dargestellt.  
 
 ![BitLocker ist in der Systemsteuerung aktiviert.](./media/troubleshooting-bitlocker-policies/control-panel.png)
 
 ### <a name="use-a-command-prompt"></a>Verwenden Sie eine Eingabeaufforderung.  
 
-Starten Sie auf einem Gerät mit aktiviertem BitLocker und verschlüsseltem Laufwerk die Eingabeaufforderung mit Administrator Anmelde Informationen, und führen Sie dann `manage-bde -status` aus. Die Ergebnisse sollten in etwa wie im folgenden Beispiel aussehen:  
-![A Ergebnis des Status Befehls @ no__t-1
+Starten Sie auf einem Gerät mit aktiviertem BitLocker und verschlüsseltem Laufwerk die Eingabeaufforderung mit Administrator Anmelde Informationen, und führen Sie dann `manage-bde -status` aus. Die Ergebnisse entsprechen in etwa dem folgenden Beispiel:  
+![A Ergebnis des Status Befehls ](./media/troubleshooting-bitlocker-policies/command.png)
 
-Im Beispiel: 
+Im Beispiel gilt: 
 - **BitLocker-Schutz** ist **on**,  
 - Der **verschlüsselte Prozentsatz** beträgt **100%** .  
 - Die **Verschlüsselungsmethode** ist **XTS-AES 256**.  
@@ -168,7 +169,7 @@ Die **Richtlinie ist vorhanden, aber nicht alle Einstellungen wurden erfolgreich
 
 - Da BitLocker auf TPM basiert, können Sie feststellen, dass BitLocker aufgrund eines Problems mit InTune oder der Richtlinie nicht fehlschlägt, sondern dass das Gerät selbst keinen TPM-Chip hat oder dass TPM im BIOS deaktiviert ist.
 
-  Als zusätzlichen Tipp können Sie das gleiche in den Windows-Ereignisanzeige unter Anwendungs- **und Dienst Protokoll** > **Windows** > **BitLocker-API**bestätigen. Im Ereignisprotokoll der **BitLocker-API** finden Sie die Ereignis-ID 853, die besagt, dass TPM nicht verfügbar ist:
+  Als zusätzlichen Tipp können Sie das gleiche in den Windows-Ereignisanzeige unter **Anwendungs-und Dienst Protokoll**  > **Windows**  > **BitLocker-API**bestätigen. Im Ereignisprotokoll der **BitLocker-API** finden Sie die Ereignis-ID 853, die besagt, dass TPM nicht verfügbar ist:
 
   ![Ereignis-ID 853](./media/troubleshooting-bitlocker-policies/event-error.png)
 

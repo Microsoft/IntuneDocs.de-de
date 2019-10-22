@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ae9637e827330fb33c407122450deb014b3725a
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816868"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506675"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>macOS-Gerätefunktionseinstellungen in Intune
 
@@ -67,11 +68,11 @@ Um AirPrinter-Server hinzuzufügen, benötigen Sie die IP-Adresse des Druckers, 
 
 4. Verwenden Sie die Werte von IP-Adresse und Ressourcenpfad. In diesem Beispiel ist die IP-Adresse `10.50.25.21` und der Ressourcenpfad `/ipp/port1`.
 
-## <a name="login-items"></a>Anmelde Elemente
+## <a name="login-items"></a>Anmeldeelemente
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Einstellungen gelten für: alle Registrierungs Typen
 
-- **Dateien, Ordner und benutzerdefinierte apps**: **fügen** Sie den Pfad einer Datei, eines Ordners, einer benutzerdefinierten APP oder einer System-App hinzu, die Sie öffnen möchten, wenn sich ein Benutzer am Gerät anmeldet. System-Apps oder apps, die für Ihre Organisation erstellt oder angepasst wurden, befinden sich in der Regel im Ordner "`Applications`", wobei ein Pfad ähnlich `/Applications/AppName.app` ist. 
+- **Dateien, Ordner und benutzerdefinierte apps**: **fügen** Sie den Pfad einer Datei, eines Ordners, einer benutzerdefinierten APP oder einer System-App hinzu, die Sie öffnen möchten, wenn sich ein Benutzer am Gerät anmeldet. System-Apps oder apps, die für Ihre Organisation erstellt oder angepasst wurden, befinden sich in der Regel im Ordner "`Applications`" mit einem ähnlichen Pfad wie `/Applications/AppName.app`. 
 
   Sie können viele Dateien, Ordner und apps hinzufügen. Geben Sie beispielsweise Folgendes ein:  
   
@@ -185,7 +186,7 @@ Diese Funktion gilt für:
 - **App-Bündel-IDs** (nur Kerberos): **fügen Sie** die APP Bundle Bezeichner hinzu, die Single Sign-on auf Ihren Geräten verwenden sollen. Diesen apps wird Zugriff auf das Kerberos-Ticket zum Erteilen von Tickets, das Authentifizierungs Ticket und das Authentifizieren von Benutzern für Dienste gewährt, auf die Sie Zugriff haben.
 - **Domänen Bereichs Zuordnung** (nur Kerberos): **fügen Sie** die Domänen-DNS-Suffixe hinzu, die dem Bereich zugeordnet werden sollen. Verwenden Sie diese Einstellung, wenn die DNS-Namen der Hosts nicht mit dem Bereichs Namen identisch sind. Wahrscheinlich ist es nicht erforderlich, diese benutzerdefinierte Domäne-zu-Bereich-Zuordnung zu erstellen.
 
-## <a name="associated-domains"></a>Zugehörige Domänen
+## <a name="associated-domains"></a>Zugeordnete Domänen
 
 In Intune können Sie folgende Aktionen ausführen:
 
@@ -200,9 +201,9 @@ Diese Funktion gilt für:
 
 - **App-ID**: Geben Sie den App-Bezeichner der APP ein, die mit einer Website verknüpft werden soll. Der APP-Bezeichner enthält die Team-ID und eine Bündel-ID: `TeamID.BundleID`.
 
-  Die Team-ID ist eine Zeichenfolge mit einer alphanumerischen Zeichenfolge (Buchstaben und Ziffern) mit 10 Zeichen, die von Apple für Ihre APP-Entwickler generiert wird, z. b. `ABCDE12345`. [Suchen Sie die Team-ID](https://help.apple.com/developer-account/#/dev55c3c710c)  (öffnet die Website von Apple) Weitere Informationen.
+  Die Team-ID ist eine Zeichenfolge mit einer alphanumerischen Zeichenfolge (Buchstaben und Zahlen) aus 10 Zeichen, die von Apple für Ihre APP-Entwickler generiert wird, wie `ABCDE12345`. [Suchen Sie die Team-ID](https://help.apple.com/developer-account/#/dev55c3c710c)   (öffnet die Website von Apple) Weitere Informationen.
 
-  Die Bündel-ID identifiziert die APP eindeutig und wird in der Regel in umgekehrter Domänen Namen Notation formatiert. Beispielsweise ist die Bündel-ID von Finder `com.apple.finder`. Um die Bündel-ID zu finden, verwenden Sie das AppleScript-Skript im Terminal:
+  Die Bündel-ID identifiziert die APP eindeutig und wird in der Regel in umgekehrter Domänen Namen Notation formatiert. Beispielsweise ist die Bündel-ID des Finders `com.apple.finder`. Um die Bündel-ID zu finden, verwenden Sie das AppleScript-Skript im Terminal:
 
   `osascript -e 'id of app "ExampleApp"'`
 
@@ -219,7 +220,7 @@ Diese Funktion gilt für:
 - **Add**: Wählen Sie diese Option aus, um Ihre apps und zugeordneten Domänen
 
 > [!TIP]
-> Öffnen Sie zum Beheben von Problemen auf Ihrem macOS-Gerät die **System Einstellungen** > **profile**. Vergewissern Sie sich, dass das erstellte Profil in der Liste Geräteprofile aufgeführt ist. Wenn die Liste aufgeführt ist, stellen Sie sicher, dass sich die **Konfiguration der zugeordneten Domänen** im Profil befindet und die richtige APP-ID und die richtigen Domänen enthält.
+> Öffnen Sie zum Beheben von Problemen auf Ihrem macOS-Gerät die **System Einstellungen**  > **profile**. Vergewissern Sie sich, dass das erstellte Profil in der Liste Geräteprofile aufgeführt ist. Wenn die Liste aufgeführt ist, stellen Sie sicher, dass sich die **Konfiguration der zugeordneten Domänen** im Profil befindet und die richtige APP-ID und die richtigen Domänen enthält.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
