@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59d93bed7bae2b757a4bd1e7b1dffc814629f6a1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d31126a259274a2c75f933428632e274d8710aa6
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725737"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350024"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Android Enterprise-Geräte
 
@@ -86,9 +86,8 @@ Verwenden Sie für Android-Geräte die folgenden Schlüssel/Wert-Paare:
 | **Werte** | <ul><li>Ein oder mehrere durch <code>;</code> getrennte UPNs.</li><li>Die einzigen zulässigen Konten sind die von diesem Schlüssel definierten, verwalteten Benutzerkonten.</li><li> Für bei Intune registrierte Geräte kann das Token <code>{{userprincipalname}}</code> verwendet werden, um das angemeldete Benutzerkonto darzustellen.</li></ul> |
 
    > [!NOTE]
-   > Sie müssen Outlook für Android 2.2.222 oder höher verwenden, wenn Sie nur konfigurierte Organisationskonten mit mehreren Identitäten zulassen.<p></p>
+   > Sie müssen Outlook für Android 2.2.222 und höher, Word, Excel, PowerPoint für Android 16.0.9327.1000 und höher oder OneDrive für Android 5.28 und höher verwenden, wenn nur konfigurierte Organisationskonten mit mehreren Identitäten zugelassen werden.<p></p>
    > Als Microsoft Intune-Administrator können Sie steuern, welche Benutzerkonten Microsoft Office-Anwendungen auf verwalteten Geräten hinzugefügt werden. Sie können den Zugriff auf zulässige Organisationsbenutzerkonten beschränken und persönliche Konten auf registrierten Geräten blockieren. Die unterstützenden Anwendungen verarbeiten die App-Konfiguration und entfernen und blockieren nicht genehmigte Konten.<p></p>
-   > Für Microsoft Word, Microsoft Excel und Microsoft PowerPoint müssen Sie die App-Version 16.0.9327.1000 und höher verwenden. 
 
 ## <a name="enter-the-json-editor"></a>Eingabe mit dem JSON-Editor
 

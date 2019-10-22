@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aafce5cefc26f4f86540a6858249e0bdd0af2328
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b1e72e16eba8bb29adc7360db9e923a15d144b6e
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723163"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350046"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Erzwingen der Konformität für Microsoft Defender ATP mit bedingtem Zugriff in Intune  
 
@@ -135,7 +135,8 @@ Die Konformitätsrichtlinie bestimmt die Risikostufe, die Sie für ein Gerät al
 2. Wählen Sie **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** aus.
 3. Geben Sie einen **Namen** und eine **Beschreibung** ein.
 4. Wählen Sie unter **Plattform** die Option **Windows 10 und höher** aus.
-5. Legen Sie in den Einstellungen für **Microsoft Defender ATP** für **Anfordern, dass das Gerät höchstens das angegebene Computerrisiko aufweist** die bevorzugte Stufe fest. 
+5. Wählen Sie unter **Einstellungen** die Option **Microsoft Defender ATP** aus.
+6. Legen Sie **Anfordern, dass das Gerät höchstens das angegebene Computerrisiko aufweist** als bevorzugte Stufe fest. 
    
    Bedrohungsstufenklassifizierungen werden [von Microsoft Defender ATP bestimmt](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/alerts-queue).
 
@@ -145,7 +146,7 @@ Die Konformitätsrichtlinie bestimmt die Risikostufe, die Sie für ein Gerät al
    - **Hoch:** Dies ist die unsicherste Stufe, die alle Bedrohungsstufen zulässt. Also werden Geräte mit hohen, mittleren oder niedrigen Bedrohungsstufen als konform angesehen.
 
 6. Wählen Sie **OK** und **Erstellen** aus, um Ihre Änderungen zu speichern (und die Richtlinie zu erstellen).  
-7. [Weisen Sie die Gerätekonformitätsrichtlinie](create-compliance-policy.md#assign-user-groups) entsprechenden Gruppen zu.
+7. [Weisen Sie die Gerätekonformitätsrichtlinie](create-compliance-policy.md#assign-the-policy) entsprechenden Gruppen zu.
 
 
 

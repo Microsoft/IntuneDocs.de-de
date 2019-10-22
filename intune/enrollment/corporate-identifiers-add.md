@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac86e9155f08683ab073ae0b46ea3f2780060c90
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: afc9d953e1d324adb3f00eb5209732a858bbbcda
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723345"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314678"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifizieren von Geräten als unternehmenseigen
 
@@ -35,7 +35,7 @@ Bei der Registrierung weist Intune automatisch den Geräten, die eine der folgen
 - Mit einem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md)-Konto registriert (alle Plattformen)
 - Mit dem [Apple-Programm zur Geräteregistrierung](device-enrollment-program-enroll-ios.md), dem [Apple School Manager](apple-school-manager-set-up-ios.md) oder dem [Apple Configurator](apple-configurator-enroll-ios.md) registriert (iOS-Geräte).
 - Mit einer IMEI-Nummer (alle Plattformen mit IMEI-Nummern) oder Seriennummer (iOS und Android) [vor der Registrierung als unternehmenseigen identifiziert](#identify-corporate-owned-devices-with-imei-or-serial-number)
-- Als Windows 10 Enterprise-Gerät mit Azure Active Directory verknüpft
+- Verknüpft mit Azure Active Directory mit Anmeldeinformationen für ein Geschäfts- oder Schulkonto. [Bei Azure Active Directory registrierte Geräte](https://docs.microsoft.com/azure/active-directory/devices/overview) werden als persönlich gekennzeichnet.
 - In den [Geräteeigenschaften](#change-device-ownership) als „Unternehmen“ festgelegt
 
 Nach der Registrierung können Sie in den [Besitzeinstellungen](#change-device-ownership) zwischen **Persönlich** und **Unternehmen** wechseln.

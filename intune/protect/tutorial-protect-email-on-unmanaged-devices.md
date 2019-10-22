@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7bb684e787a75900ca2157a04150a8fc6c4ba715
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7e0a01034bc35ddf8fd8eb1ede5fcf4c942dc735
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721265"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306809"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf nicht verwalteten Geräten
 
@@ -113,7 +113,7 @@ Nun erstellen wir zwei Richtlinien für bedingten Zugriff, um alle Geräteplattf
    3. Deaktivieren Sie alle anderen Kontrollkästchen.  
    4. Wählen Sie **Fertig** > **Fertig** aus, um zum Bereich „Neue Richtlinie“ zurückzukehren.  
 
-   ![Auswählen der Office 365 Exchange Online-App](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
+   ![Auswählen von Mobile-Apps und -Clients](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-client-apps.png)
 
 7. Klicken Sie unter **Zugriffssteuerungen** auf **Gewähren**. 
      
@@ -123,11 +123,11 @@ Nun erstellen wir zwei Richtlinien für bedingten Zugriff, um alle Geräteplattf
    4. Klicken Sie unter **Für mehrere Steuerelemente** auf **Alle ausgewählten Kontrollen anfordern**. Durch diese Einstellung wird sichergestellt, dass beide Anforderungen, die Sie ausgewählt haben, erzwungen werden, wenn ein Gerät versucht, auf E-Mails zuzugreifen.
    5. Klicken Sie auf **Auswählen**.
      
-   ![Auswählen der Office 365 Exchange Online-App](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
+   ![Auswählen von Steuerelementen](./media/tutorial-protect-email-on-unmanaged-devices/modern-auth-policy-mfa.png)
 
 7. Wählen Sie unter **Richtlinie aktivieren** die Option **Ein** und dann **Erstellen** aus.  
      
-    ![Auswählen der Office 365 Exchange Online-App](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
+    ![Erstellen von Richtlinien](./media/tutorial-protect-email-on-unmanaged-devices/enable-policy.png)  
 
 Die Richtlinie für bedingten Zugriff für Clients mit moderner Authentifizierung wird erstellt. Jetzt können Sie eine Richtlinie für Exchange Active Sync-Clients erstellen.
 
@@ -153,14 +153,14 @@ Die Richtlinie für bedingten Zugriff für Clients mit moderner Authentifizierun
    4. Deaktivieren Sie alle anderen Kontrollkästchen.  
    5. Klicken Sie auf **Fertig** und dann erneut auf **Fertig**.  
     
-   ![Auswählen der Office 365 Exchange Online-App](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
+   ![Anwenden auf unterstützte Plattformen](./media/tutorial-protect-email-on-unmanaged-devices/eas-client-apps.png)  
 
 7. Klicken Sie unter **Zugriffssteuerungen** auf **Gewähren**.  
    1. Klicken Sie im Bereich **Gewähren** auf **Zugriff gewähren**.  
    2. Klicken Sie auf **Genehmigte Client-App erforderlich**. Deaktivieren Sie alle anderen Kontrollkästchen.  
    3. Klicken Sie auf **Auswählen**.  
      
-   ![Auswählen der Office 365 Exchange Online-App](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
+   ![Voraussetzen genehmigter Client-Apps](./media/tutorial-protect-email-on-unmanaged-devices/eas-grant-access.png)  
 
 8. Klicken Sie unter **Richtlinie aktivieren** auf **Ein**.  
 

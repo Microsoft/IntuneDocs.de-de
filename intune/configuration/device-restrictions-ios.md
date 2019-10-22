@@ -6,21 +6,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/26/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcd86cedc7684f31483d7cd3c8294a76a9c306b2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734907"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584887"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS- und iPadOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
@@ -56,7 +57,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Einstellungen gelten für: automatisierte Geräteregistrierung (überwacht)
 
-- **Änderung der Einstellungen zur Diagnoseübermittlung** : **Blockieren** verhindert, dass der Benutzer in **Diagnose- und Nutzung** (Geräteeinstellungen) Änderungen an den Einstellungen für Diagnoseübermittlung und App-Analyse vornimmt. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Geräteeinstellungen zu ändern.
+- **Änderung der Einstellungen zur Diagnoseübermittlung **: **Blockieren** verhindert, dass der Benutzer in **Diagnose- und Nutzung** (Geräteeinstellungen) Änderungen an den Einstellungen für Diagnoseübermittlung und App-Analyse vornimmt. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Geräteeinstellungen zu ändern.
 
   Um diese Einstellung zu verwenden, legen Sie die Einstellung **Nutzungsdaten freigeben** auf **blockieren**fest.
 
@@ -140,13 +141,13 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Einstellungen gelten für: Geräteregistrierung, automatisierte Geräteregistrierung (überwacht)
 
 > [!IMPORTANT]
-> Wenn Sie auf vom Benutzer registrierten Geräten eine Kenn Wort Einstellung konfigurieren, werden die Einstellungen für **einfache Kenn Wörter** automatisch auf **blockieren**festgelegt, und eine 6-stellige PIN wird erzwungen.
+> Wenn Sie auf von Benutzern registrierten Geräten eine Kennworteinstellung konfigurieren, wird die Einstellung **Einfache Kennwörter** automatisch auf **Blockieren** festgelegt und eine sechsstellige PIN erzwungen.
 >
-> Beispielsweise konfigurieren Sie die Einstellung für das Kenn **Wort Ablaufdatum** und übermitteln diese Richtlinie auf vom Benutzer registrierte Geräte. Auf den Geräten geschieht Folgendes:
+> Sie konfigurieren beispielsweise die Einstellung **Kennwortablauf** und übertragen diese Richtlinie per Push auf vom Benutzer registrierte Geräte. Auf diesen Geräten geschieht Folgendes:
 >
-> - Die Einstellung für das Kenn **Wort Ablaufdatum** wird ignoriert.
-> - Einfache Kenn Wörter, wie z. b. `1111` oder `1234`, sind nicht zulässig.
-> - Eine 6-stellige PIN wird erzwungen.
+> - Die Einstellung **Kennwortablauf** wird ignoriert.
+> - Einfache Passwörter wie `1111` oder `1234` sind nicht zulässig.
+> - Eine sechsstellige PIN wird erzwungen.
 
 - **Einfache Kennwörter**: Wählen Sie **Blockieren** aus, um komplexere Kennwörter zu erzwingen. **Nicht konfiguriert** ermöglicht einfache Kennwörter wie z.B. `0000` und `1234`.
 
@@ -167,7 +168,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
   
 - **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts**<sup>1</sup>: Geben Sie an, wie lange das Gerät inaktiv bleibt, bevor der Benutzer sein Kennwort erneut eingeben muss. Wenn Sie einen längeren Zeitraum eingeben, als derzeit auf dem Gerät eingestellt ist, ignoriert das Gerät Ihre Eingabe. Wird auf Geräten ab iOS 8.0 unterstützt.
 - **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung**<sup>1</sup>: Geben Sie an, wie viele Minuten ein Gerät höchstens inaktiv sein darf, bevor es automatisch gesperrt wird. Wenn Sie einen längeren Zeitraum eingeben, als derzeit auf dem Gerät eingestellt ist, ignoriert das Gerät Ihre Eingabe. Bei **sofortiger**Festlegung wird der Bildschirm auf der Grundlage der minimalen Zeit des Geräts gesperrt. Auf dem iPhone ist es 30 Sekunden. Auf dem iPad ist es zwei Minuten.
-- **Kennwortablauf (Tage)** : Geben Sie die Anzahl der Tage an, nach denen das Gerätekennwort geändert werden muss.
+- **Kennwortablauf (Tage)**: Geben Sie die Anzahl der Tage an, nach denen das Gerätekennwort geändert werden muss.
 - **Wiederverwendung vorheriger Kennwörter verhindern**: Geben Sie die Anzahl neuer Kennwörter ein, die verwendet werden müssen, bevor ein altes Kennwort wiederverwendet werden kann.
 - Entsperrung der Fingereingabe **-ID und der Gesichts Kennung**: Wählen Sie **Block** aus, um zu verhindern, dass das Gerät mithilfe eines Fingerabdrucks **Nicht konfiguriert** ermöglicht dem Benutzer das Entsperren des Geräts mittels dieser Methoden.
 
@@ -267,6 +268,11 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
   Ab IOS 13,0 sind für diese Einstellung überwachte Geräte erforderlich.
 
+- **Zugriff auf das Netzwerklaufwerk in der Datei-App**: mit dem SMB-Protokoll (Server Message Block) können Geräte auf Dateien oder andere Ressourcen auf einem Netzwerk Server zugreifen. **Deaktivieren** verhindert den Zugriff auf Dateien auf einem SMB-Netzwerklaufwerk. **Nicht konfiguriert** (Standard) erlaubt den Zugriff.
+
+  Diese Funktion gilt für:  
+  - IOS und ipados 13,0 und höher
+
 ## <a name="built-in-apps"></a>Integrierte Apps
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Einstellungen gelten für: alle Registrierungs Typen
@@ -334,7 +340,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
   Diese Funktion gilt für:  
   - IOS 13,0 und ipados 13,0 und höher
 
-- **Änderungen an den Einstellungen der App „Meine Freunde suchen“** : **Blockieren** verhindert Änderungen der Einstellungen für die App „Meine Freunde suchen“. **Nicht konfiguriert** (Standard) ermöglicht Benutzern das Ändern von Einstellungen für die App „Meine Freunde suchen“.
+- **Änderungen an den Einstellungen der App „Meine Freunde suchen“**: **Blockieren** verhindert Änderungen der Einstellungen für die App „Meine Freunde suchen“. **Nicht konfiguriert** (Standard) ermöglicht Benutzern das Ändern von Einstellungen für die App „Meine Freunde suchen“.
 
 - **Spotlight-Suche gibt Ergebnisse aus dem Internet zurück**: **Blockieren** verhindert, dass Spotlight Ergebnisse einer Internetsuche zurückgibt. **Nicht konfiguriert** (Standard) ermöglicht der Spotlight-Suchfunktion das Herstellen einer Verbindung mit dem Internet zur Bereitstellung von Suchergebnissen.
 
@@ -377,7 +383,7 @@ Gilt für Geräte, auf denen IOS 9,3 oder höher ausgeführt wird.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Einstellungen gelten für: automatisierte Geräteregistrierung (überwacht)
 
-- **Liste der APP-Typen**: Erstellen Sie eine Liste von apps, die angezeigt oder ausgeblendet werden sollen. Folgende Optionen sind verfügbar:
+- **Liste der APP-Typen**: Erstellen Sie eine Liste von apps, die angezeigt oder ausgeblendet werden sollen. Sie können integrierte apps und branchenspezifische apps anzeigen oder ausblenden. Die Apple-Website enthält eine Liste [integrierter Apple-Apps](https://support.apple.com/HT208094). Folgende Optionen sind verfügbar:
 
   - **Ausgeblendete Apps:** Geben Sie eine Liste von Apps an, die vor Benutzern verborgen werden. Benutzer können diese Apps weder anzeigen noch öffnen.
   - **Sichtbare Apps**: Geben Sie eine Liste von Apps ein, die Benutzer anzeigen und starten können. Es können keine anderen Apps angezeigt oder gestartet werden.
@@ -412,7 +418,7 @@ Apps können Sie wie folgt hinzufügen:
 - **Sprachwahlverfahren**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer das Sprachwahlverfahren auf dem Gerät verwenden. **Nicht konfiguriert** (Standard) ermöglicht die Verwendung des Sprachwahlverfahrens auf dem Gerät.
 - **Sprachroaming**: Wählen Sie **Blockieren** aus, um Sprachroaming über das Mobilfunknetz zu verhindern. **Nicht konfiguriert** (Standard) ermöglicht das Sprachroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
 - **Privater Hotspot**: **Blockieren** schaltet den privaten Hotspot auf dem Gerät des Benutzers bei jeder Gerätesynchronisierung aus. Diese Einstellung kann mit einigen Anbietern nicht kompatibel sein. In der Standardeinstellung **Nicht konfiguriert** wird die Konfiguration des privaten Hotspots als vom Benutzer festgelegter Standard beibehalten.
-- **Mobilfunk-Verwendungsregeln (nur verwaltete Apps)** : Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn sie sich in Mobilfunknetzwerken befinden. Folgende Optionen sind verfügbar:
+- **Mobilfunk-Verwendungsregeln (nur verwaltete Apps)**: Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn sie sich in Mobilfunknetzwerken befinden. Folgende Optionen sind verfügbar:
   - **Verwendung von Datenverbindungen blockieren**: Blockieren Sie die Verwendung von Datenverbindungen für **Alle verwalteten Apps**, oder Sie können **Bestimmte Apps wählen**.
   - **Verwendung von Datenverbindungen beim Roaming blockieren:** Blockieren Sie die Verwendung von Datenverbindungen beim Roaming für **Alle verwalteten Apps**, oder Sie können **Bestimmte Apps wählen**.
 
@@ -432,7 +438,12 @@ Apps können Sie wie folgt hinzufügen:
   - iOS 12.2 und neuer
 
 - **Verknüpfen von WLAN-Netzwerken nur mithilfe von Konfigurationsprofilen:** **Anfordern** erzwingt, dass das Gerät nur WLAN-Netzwerke verwendet, die mit Intune-Konfigurationsprofilen eingerichtet wurden. **Nicht konfiguriert** (Standard) ermöglicht dem Gerät, andere WLAN-Netzwerke zu verwenden.
-- **Änderung des WLAN-Status**: **nicht konfiguriert** (Standardeinstellung): ermöglicht Benutzern das Aktivieren oder Deaktivieren von WLAN auf dem Gerät. **Block** verhindert das Aktivieren oder Deaktivieren von WLAN.
+- **Wi-Fi ist immer eingeschaltet**: Wenn dies auf **erforderlich**festgelegt ist, bleibt WLAN in der App "Einstellungen" aktiviert. Sie kann nicht in den Einstellungen oder in der Steuerungs Stelle ausgeschaltet werden, auch wenn sich das Gerät im Flugzeug Modus befindet. **Nicht konfiguriert** (Standardeinstellung): ermöglicht es dem Benutzer, die Aktivierung oder das Ausschalten des WLAN zu steuern.
+
+  Durch das Konfigurieren dieser Einstellung wird nicht verhindert, dass Benutzer ein Wi-Fi-Netzwerk auswählen.
+
+  Diese Funktion gilt für:  
+  - IOS und ipados 13,0 und höher
 
 ## <a name="connected-devices"></a>Verbundene Geräte
 
@@ -459,6 +470,11 @@ Apps können Sie wie folgt hinzufügen:
   Diese Funktion gilt für:  
   - iOS 11.0 und neuer
 
+- **Zugriff auf Dateien auf dem USB-Laufwerk**: Geräte können eine Verbindung herstellen und Dateien auf einem USB-Laufwerk öffnen. **Deaktivieren** verhindert den Gerätezugriff auf das USB-Laufwerk in der Datei-app, wenn ein USB-Gerät mit dem Gerät verbunden ist. Durch das Deaktivieren dieses Features wird verhindert, dass Endbenutzer Dateien auf ein USB-Laufwerk übertragen, das mit einem iPad verbunden ist. **Nicht konfiguriert** (Standardeinstellung): ermöglicht den Zugriff auf ein USB-Laufwerk in der App "Dateien".
+
+  Diese Funktion gilt für:  
+  - IOS und ipados 13,0 und höher
+
 ## <a name="keyboard-and-dictionary"></a>Tastatur und Wörterbuch
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Einstellungen gelten für: automatisierte Geräteregistrierung (überwacht)
@@ -481,7 +497,7 @@ Apps können Sie wie folgt hinzufügen:
 - **Verschlüsselte Sicherung**: **Anfordern** erzwingt die Verschlüsselung von Gerätesicherungen.
 - **Synchronisierung verwalteter Apps mit der Cloud**: **Nicht konfiguriert** (Standard) ermöglicht Ihren mit Intune verwalteten Apps, Daten mit dem iCloud-Konto des Benutzers zu synchronisieren. **Blockieren** verhindert diese Datensynchronisierung mit iCloud.
 - **Enterprise Book-Sicherung blockieren**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer Enterprise Books sichern. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Bücher zu sichern.
-- **Synchronisierung von Enterprise Book-Metadaten blockieren (Notizen und Highlights)** : **Blockieren** verhindert, dass Notizen und Highlights in Enterprise Books synchronisiert werden. **Nicht konfiguriert** (Standardeinstellung) ermöglicht die Synchronisierung.
+- **Synchronisierung von Enterprise Book-Metadaten blockieren (Notizen und Highlights)**: **Blockieren** verhindert, dass Notizen und Highlights in Enterprise Books synchronisiert werden. **Nicht konfiguriert** (Standardeinstellung) ermöglicht die Synchronisierung.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Einstellungen gelten für: Geräteregistrierung, automatisierte Geräteregistrierung (überwacht)
 
@@ -533,7 +549,7 @@ Verwenden Sie diese Einstellungen, um iOS-Geräte zur Ausführung bestimmter App
 
   Diese Einstellung gilt für:  
   - iOS 13.0 und neuer
-  - ipados 13,0 und höher
+  - iOS 13.0 und höher
   
   > [!TIP]
   > Wenn Sie Lob-Apps für Ihre Organisation zur Verfügung haben und die **sprach Kontrolle** an Tag 0 bei der Veröffentlichung von IOS 13,0 nicht bereit ist, empfiehlt es sich, diese Einstellung als **nicht konfiguriert**zu belassen.
@@ -545,7 +561,7 @@ Verwenden Sie diese Einstellungen, um iOS-Geräte zur Ausführung bestimmter App
 - **Bildschirmdrehung:** **Blockieren** verhindert, dass die Bildschirmausrichtung geändert werden kann, wenn der Benutzer das Gerät dreht. **Nicht konfiguriert** lässt diese Funktion zu.
 - **Standbytaste:** Wählen Sie **Blockieren** aus, um die Standbytaste am Gerät zu deaktivieren. **Nicht konfiguriert** lässt diese Funktion zu.
 - **Touch**: **Blockieren** deaktiviert den Touchscreen des Geräts. **Nicht konfiguriert** ermöglicht dem Benutzer, den Touchscreen zu verwenden.
-- **** Volumeschaltflächen: **blockieren** verhindert die Verwendung der volumeschaltflächen des Geräts. **Nicht konfiguriert** ermöglicht die volumeschaltflächen.
+- **Volumeschaltflächen**: **blockieren** verhindert die Verwendung der volumeschaltflächen des Geräts. **Nicht konfiguriert** ermöglicht die volumeschaltflächen.
 - **Steuerelement der Touch-Unterstützung**: Mit **Zulassen** können Benutzer die Touch-Unterstützungsfunktion verwenden. **Nicht konfiguriert** deaktiviert dieses Feature.
 - **Steuerelement zum Umkehren von Farben**: **Zulassen** von Farbumkehr-Änderungen, mit denen der Benutzer die Funktion zur Farbumkehr individuell verwenden kann. **Nicht konfiguriert** deaktiviert dieses Feature.
 - **Ausgewählten Text sprechen**: **Zulassen** der Sprachauswahl-Barrierefreiheitseinstellungen auf dem Gerät. Diese Funktion liest Text, den der Benutzer auswählt, laut vor. **Nicht konfiguriert** deaktiviert dieses Feature.
@@ -553,7 +569,7 @@ Verwenden Sie diese Einstellungen, um iOS-Geräte zur Ausführung bestimmter App
 
   Diese Einstellung gilt für:  
   - iOS 13.0 und neuer
-  - ipados 13,0 und höher
+  - iOS 13.0 und höher
 
 - **VoiceOver-Steuerelement**: **Zulassen** von VoiceOver-Änderungen, damit Benutzer die VoiceOver-Funktion aktualisieren können, z.B. wie schnell auf dem Bildschirm ausgegebener Text von der Sprachausgabe vorgelesen wird. **Nicht konfiguriert** verhindert VoiceOver-Änderungen.
 - **Zoomsteuerelement**: **Zulassen** von Zoomänderungen durch den Benutzer. **Nicht konfiguriert** verhindert Zoomänderungen.

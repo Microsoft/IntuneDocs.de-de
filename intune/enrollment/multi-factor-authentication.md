@@ -16,12 +16,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea6af0fd71acb7aad22930c6173540e3aece4f98
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4b761672ceace57ae7c0939959d25b8d6e45be32
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726374"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379834"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Erfordert mehrstufige Authentifizierung für Intune-Geräteregistrierungen
 
@@ -56,7 +56,7 @@ Befolgen Sie die folgenden Schritte, um MFA anzufordern, wenn ein Gerät registr
 6. Wählen Sie im Abschnitt **Zuweisungen** die Option **Benutzer und Gruppen** aus. 
 7. Klicken Sie unter **Benutzer und Gruppen** auf **Select users or groups** (Benutzer oder Gruppen auswählen), und aktivieren Sie das Kontrollkästchen für **Benutzer und Gruppen**. Wählen Sie dann die Benutzer und/oder Gruppen aus, für die diese Richtlinie gelten soll, und klicken Sie anschließend auf **Fertig**.
 8. Wählen Sie im Abschnitt **Zuweisungen** die Option **Cloud-Apps** aus.
-9. Wählen Sie auf der Registerkarte **Einbeziehen** von **Cloud-Apps** die Option **Apps auswählen** aus, klicken Sie dann auf **Auswählen** > **Microsoft Intune-Registrierung**, und klicken Sie dann auf **Fertig**.
+9. Wählen Sie auf der Registerkarte **Einbeziehen** von **Cloud-Apps** die Option **Apps auswählen** aus, klicken Sie dann auf **Auswählen** > **Microsoft Intune-Registrierung**, und klicken Sie dann auf **Fertig**. Wenn Sie **Microsoft Intune-Registrierung** auswählen, wird die MFA für bedingten Zugriff nur auf die Registrierung des Geräts angewendet (einmalige MFA-Eingabeaufforderung).
 10. Sie müssen im Abschnitt **Zuweisungen** unter **Bedingungen** keine Einstellungen für die mehrstufige Authentifizierung konfigurieren.
 11. Wählen Sie im Abschnitt **Zugriffssteuerung** die Option **Erteilen** aus.
 12. Wählen Sie unter **Erteilen** die Option **Zugriff gewähren** aus, und wählen Sie dann **Mehrstufige Authentifizierung anfordern** aus. Wählen Sie nicht **Markieren des Geräts als kompatibel erforderlich** aus, da ein Gerät vor der Registrierung nicht auf Kompatibilität geprüft werden kann. Klicken Sie anschließend auf **Auswählen**.

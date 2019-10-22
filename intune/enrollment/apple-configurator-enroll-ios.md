@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d50fdbb766068e643604cdf729e62cdd07d22b62
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a1c2acc2ebe5528e30c344a31c9551ac64bdf3ca
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723514"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306786"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Einrichten der iOS-Geräteregistrierung mit Apple Configurator
 
@@ -60,6 +60,9 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen, die während 
     - **Mit Benutzeraffinität registrieren**: Wählen Sie diese Option für Geräte aus, die Benutzern gehören und das Unternehmensportal verwenden sollen, um Dienste wie z. B. die Installation von Apps nutzen zu können. Das Gerät muss mit dem Setup-Assistenten einem Benutzer zugewiesen werden und kann dann auf Unternehmensdaten und E-Mails zugreifen. Wird nur für die Registrierung des Setup-Assistenten unterstützt. Benutzeraffinität erfordert [den Endpunkt WS-Trust 13 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints). [Erfahren Sie mehr](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
     - **Ohne Benutzeraffinität registrieren**: Wählen Sie diese Option für Geräte aus, die keinem einzelnen Benutzer zugeordnet sind. Verwenden Sie diese Option für Geräte, die Aufgaben ohne den Zugriff auf lokale Benutzerdaten ausführen. Apps, die eine Benutzerzugehörigkeit erfordern (einschließlich der Unternehmensportal-App, die für die Installation branchenspezifischer Apps verwendet wird), funktionieren nicht. Dies ist für die direkte Anmeldung erforderlich.
+
+     > [!NOTE]
+     > Wenn **Mit Benutzeraffinität registrieren** ausgewählt ist, stellen Sie sicher, dass das Gerät innerhalb der ersten 24 Stunden der Registrierung mit dem Setup-Assistenten einem Benutzer zugeordnet wird. Andernfalls schlägt die Registrierung möglicherweise fehl, und es wird eine Zurücksetzung auf Werkseinstellungen erforderlich, um das Gerät zu registrieren.
 
 4. Wenn Sie **Mit Benutzeraffinität registrieren** ausgewählt haben, können Sie die Benutzerauthentifizierung über das Unternehmensportal statt über den Apple-Setup-Assistenten erlauben.
 

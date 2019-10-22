@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b32d34c1878bc0355c510ca342091010af43bca7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724918"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72350007"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 
@@ -165,7 +165,7 @@ Benutzer können über die Unternehmensportal-App oder die Unternehmensportal-We
 - **Synchronisieren**: Diese Aktion initiiert das Check-In eines Geräts beim Intune-Dienst. Diese Aktion wird im Unternehmensportal als **Status überprüfen** angezeigt.
 - **Remotesperre**: Diese Aktion sperrt das Gerät und erfordert eine PIN zum Entsperren.
 - **Passcode zurücksetzen**: Diese Aktion wird zum Zurücksetzen des Passcodes eines Geräts verwendet. Auf iOS-Geräten wird der Passcode entfernt, und der Endbenutzer muss in den Einstellungen einen neuen Code eingeben. Auf unterstützten Android-Geräten wird ein neuer Passcode von Intune generiert und temporär im Unternehmensportal angezeigt.
-- **Schlüsselwiederherstellung**: Diese Aktion wird zum Wiederherstellen eines Verschlüsselungsschlüssel für verschlüsselte Geräte verwendet.
+- **Schlüsselwiederherstellung**: Diese Aktion wird verwendet, um einen persönlichen Wiederherstellungsschlüssel für verschlüsselte macOS-Geräte von der Unternehmensportalwebsite wiederherzustellen. 
 
 ### <a name="self-service-actions"></a>Self-Service-Aktionen
 
@@ -180,7 +180,7 @@ Einige Plattformen und Konfigurationen lassen keine Self-Service-Geräteaktionen
 
 
 <sup>(1)</sup> Die Außerbetriebnahme ist auf Windows-Geräten, die Azure AD beigetreten sind, immer blockiert.<br>
-<sup>(2)</sup> Die Schlüsselwiederherstellung für macOS ist nur über das Webportal verfügbar.<br>
+<sup>(2)</sup> Die Wiederherstellung des persönlichen Schlüssels für macOS ist nur über die Unternehmensportalwebsite verfügbar.<br> 
 <sup>(3)</sup> Bei Verwendung einer Registrierung über den Geräteregistrierungs-Manager sind alle Remoteaktionen deaktiviert.<br>
 <sup>(4)</sup> Durch Umbenennen wird nur der Gerätename in der Unternehmensportal-App oder -Website geändert, nicht auf dem Gerät selbst.<br>
 <sup>(5)</sup> Remoteaktionen zum Zurücksetzen sind auf macOS-Geräten nicht verfügbar.<br>

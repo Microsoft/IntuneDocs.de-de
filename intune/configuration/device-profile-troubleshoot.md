@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/29/2019
+ms.date: 10/15/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 618f88d6dbacb886f250b74f6a462b8449b59b18
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9944aa59f47b7263d46ac96f6aaca3f8ae5c9486
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724086"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349987"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Häufige Fragen, Probleme und entsprechende Behebungen mit Geräterichtlinien und -profilen in Microsoft Intune
 
@@ -67,11 +67,11 @@ Wenn das Gerät erst kürzlich registriert wurde, wird der Eincheckvorgang aus K
 | iOS | Für 1 Stunde alle 15 Minuten und dann etwa alle 8 Stunden |  
 | macOS | Für 1 Stunde alle 15 Minuten und dann etwa alle 8 Stunden | 
 | Android | Für 15 Minuten alle 3 Minuten, dann für 2 Stunden alle 15 Minuten und dann etwa alle 8 Stunden | 
-| Windows 10-PCs, die als Geräte registriert sind | Für 30 Minuten alle 3 Minuten und dann etwa alle 8 Stunden | 
+| Windows 10-PCs, die als Geräte registriert sind | Für 15 Minuten alle 3 Minuten, dann für 2 Stunden alle 15 Minuten und dann etwa alle 8 Stunden | 
 | Windows Phone | Für 15 Minuten alle 5 Minuten, dann für 2 Stunden alle 15 Minuten und dann etwa alle 8 Stunden | 
 | Windows 8.1 | Für 15 Minuten alle 5 Minuten, dann für 2 Stunden alle 15 Minuten und dann etwa alle 8 Stunden | 
 
-Benutzer können jederzeit die Unternehmensportal-App öffnen und das Gerät synchronisieren, um sofort zu überprüfen, ob neue Richtlinien- oder Profilupdates verfügbar sind.
+Benutzer können jederzeit die Unternehmensportal-App, **Einstellungen** > **Synchronisieren** öffnen, um sofort zu überprüfen, ob Richtlinien- oder Profilupdates verfügbar sind.
 
 Für Geräte ohne Benutzeraffinität wird die Synchronisierung nach der Registrierung im Abstand von einigen Stunden oder Tagen oder sogar noch seltener durchgeführt. Intune sendet in verschiedenen Intervallen Anforderungen an ein Gerät, damit es bei Intune eincheckt. Allerdings ist es vom Gerät abhängig, ob es eincheckt oder nicht. Nach der ersten Registrierung ist es ungewiss, wie lange ein Gerät braucht, bis es eingecheckt ist. Außerdem ist die Dauer abhängig vom Typ der Geräteregistrierung und den Richtlinien und Profilen, die einem Gerät zugewiesen sind. Nachdem das Gerät registriert und alle anfänglichen Richtlinien und Profile angewendet wurden, überprüft das Gerät etwa alle sechs bis acht Stunden (ab dem Zeitpunkt der Registrierung bei Intune), ob neue Richtlinien und Profile verfügbar sind.
 

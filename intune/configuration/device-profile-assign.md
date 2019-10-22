@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 344ffdfefd8b354c9d2ab31f2d08c2a25456f970
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: db1f0944a6725d1f361ea20c972d8ffa8f5d9035
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724112"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237209"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune
 
@@ -30,6 +30,9 @@ ms.locfileid: "71724112"
 Wenn Sie ein Profil erstellen, enthält es alle Einstellungen, die Sie vorgenommen haben. Als Nächstes stellen Sie das Profil für einen Azure AD-Benutzer (Azure Active Directory) oder eine -Gerätegruppe bereit. Dies wird auch als Zuweisen bezeichnet. Wenn Sie ein Profil zuweisen, erhalten Benutzer und Geräte das Profil, und die von Ihnen angegebenen Einstellungen werden angewendet.
 
 In diesem Artikel wird erklärt, wie Sie ein Profil zuweisen können, und Sie erhalten Informationen zur Verwendung von Bereichsmarkierungen für Ihre Profile.
+
+> [!NOTE]  
+> Wenn eine Richtlinie entfernt oder nicht mehr einem Gerät zugewiesen wird, behält die Einstellung möglicherweise den vorhandenen Wert bei. Die Einstellung wird nicht auf einen Standardwert zurückgesetzt. Wenn Sie die Einstellung auf einen anderen Wert ändern möchten, erstellen Sie eine neue Richtlinie, und weisen Sie sie zu.
 
 ## <a name="assign-a-device-profile"></a>Zuweisen eines Geräteprofils
 
@@ -57,13 +60,13 @@ Wenn Sie ein Profil erstellen oder aktualisieren, können Sie diesem auch Bereic
 
 **Bereichsmarkierungen** eignen sich zum Zuweisen und Filtern von Richtlinien für bestimmte Gruppen, z. B. Personalabteilung und Alle Mitarbeiter in North Carolina (USA). Unter [Use RBAC and scope tags for distributed IT (Verwenden der RBAC und von Bereichsmarkierungen für eine verteilte IT)](../fundamentals/scope-tags.md) finden Sie weitere Informationen.
 
-Auf Windows 10-Geräten können Sie **Anwendbarkeitsregeln** hinzufügen, sodass das Profil nur für eine bestimmte Betriebssystemversion oder eine bestimmte Windows-Version gilt. Unter [Anwendbarkeitsregeln](device-profile-create.md#applicability-rules) finden Sie weitere Informationen.
+Auf Windows 10-Geräten können Sie **Anwendbarkeitsregeln** hinzufügen, wodurch das Profil nur für eine bestimmte Betriebssystemversion oder eine bestimmte Windows-Version gilt. Unter [Anwendbarkeitsregeln](device-profile-create.md#applicability-rules) finden Sie weitere Informationen.
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Ausschließen von Gruppen aus einer Profilzuweisung
 
 Mit Intune-Gerätekonfigurationsprofilen können Sie Gruppen aus der Richtlinienzuweisung ausschließen.
 
-Intune betrachtet keine Beziehungen zwischen Benutzer- und Gerätegruppen. Das Einschließen von Benutzergruppen und das gleichzeitige Ausschließen von Gerätegruppen liefert möglicherweise nicht die von Ihnen gewünschten Ergebnisse. In Szenarios von Benutzergruppe zu Benutzergruppe und Gerätegruppe zu Gerätegruppe hat der Ausschluss Vorrang vor dem Einschluss.
+Intune betrachtet keine Beziehungen zwischen Benutzer- und Gerätegruppen. Das Einschließen von Benutzergruppen und das gleichzeitige Ausschließen von Gerätegruppen liefert möglicherweise nicht die von Ihnen gewünschten Ergebnisse. In Szenarios von Benutzergruppe zu Benutzergruppe und Gerätegruppe zu Gerätegruppe hat ein Ausschluss Vorrang vor einem Einschluss.
 
 Angenommen Sie weisen der Benutzergruppe **Alle Unternehmensbenutzer** ein Geräteprofil zu, schließen aber gleichzeitig Mitglieder der Benutzergruppe **Mitarbeiter der Führungsebene** aus. Da beide Gruppen Benutzergruppen sind, sind alle Mitglieder der Gruppe **Mitarbeiter der Geschäftsleitung** von der Richtlinie ausgeschlossen, obwohl sie Mitglieder der Gruppe **Alle Unternehmensbenutzer** sind.
 
@@ -71,7 +74,7 @@ In Szenarios mit gemischten Gruppen, wie etwa von Benutzergruppe zu Gerätegrupp
 
 Angenommen Sie möchten allen Benutzern in Ihrer Organisation, mit Ausnahme von Kioskgeräten, ein Geräteprofil zuweisen. Nun schließen Sie die Gruppe **Alle Benutzer** ein und gleichzeitig die Gruppe **Alle Geräte** aus. In diesem Fall erhalten alle Benutzer und ihre Geräte die Richtlinie, selbst wenn das Gerät des Benutzers der Gruppe **Alle Geräte** angehört.
 
-Beim Ausschließen werden nur die direkten Mitglieder einer Gruppe berücksichtigt. Es werden keine Geräte berücksichtigt, die einem Benutzer zugeordnet sind. Geräte, die über keinen Benutzer verfügen, erhalten die Richtlinie nicht. Grund hierfür ist, dass die Geräte ohne Benutzer keine Beziehung zur Gruppe **Alle Benutzer** haben.
+Beim Ausschließen werden nur die direkten Mitglieder einer Gruppe berücksichtigt. Es werden keine Geräte berücksichtigt, die einem Benutzer zugeordnet sind. Geräte ohne Benutzer erhalten die Richtlinie jedoch nicht. Dies liegt daran, dass Geräte ohne Benutzer keine Beziehung zur Gruppe **Alle Benutzer** besitzen.
 
 Wenn Sie **Alle Geräte** einschließen und gleichzeitig **Alle Benutzer** ausschließen, erhalten alle Geräte die Richtlinie. Damit sollten eigentlich alle Geräte mit einem zugeordneten Benutzer von der Richtlinie ausgeschlossen werden. Die Geräte werden jedoch nicht ausgeschlossen, da die Funktion „Ausschließen“ nur direkte Gruppenmitglieder miteinander vergleicht.
 

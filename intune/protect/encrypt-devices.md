@@ -1,5 +1,5 @@
 ---
-title: Verschlüsseln von Geräten in Microsoft Intune mithilfe der von der Plattform unterstützten Verschlüsselungsmethoden
+title: Verschlüsseln von Geräten mit der von Plattformen unterstützten Verschlüsselungsmethode
 titleSuffix: Microsoft Intune
 description: Verschlüsseln Sie Geräte mithilfe von integrierten Verschlüsselungsmethoden wie BitLocker oder FileVault, und verwalten Sie die Wiederherstellungsschlüssel für diese verschlüsselten Geräte über das Intune-Portal.
 keywords: ''
@@ -16,12 +16,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ad995a4b8b67a2ff7e3604f899fdbeebc2bad8cc
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: f885cbddf8ecb984dc6e98db38c9adbc6a07119a
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721395"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306856"
 ---
 # <a name="use-device-encryption-with-intune"></a>Verwenden der Geräteverschlüsselung mit Intune  
 

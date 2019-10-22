@@ -14,16 +14,14 @@ ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a9ecc1cabb00122d2812580b663fcd0c1dfabc3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: aa8cc396c05150006799c1e9b86ecb63351cdb36
+ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728090"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314715"
 ---
 # <a name="manage-software-updates-in-intune"></a>Verwalten von Softwareupdates in Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Verwenden Sie Intune, um Updateringe zu definieren, die festlegen, wann und wie Windows Ihre Windows 10-Geräte aktualisiert. Bei Updateringen handelt es sich um Richtlinien, die Sie Gerätegruppen zuweisen. Mithilfe von Updateringen können Sie eine auf Ihre Unternehmensanforderungen ausgerichtete Updatestrategie erstellen. Weitere Informationen finden Sie unter [Verwalten von Updates mit Windows Update for Business](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
@@ -52,11 +50,11 @@ Die folgenden Voraussetzungen müssen erfüllt sein, um Windows-Updates für Win
     > [!NOTE]  
     > **Nicht unterstützte Versionen und Editionen**:
     > - Windows 10 Mobile  
-    > - Windows 10 Enterprise LTSC. Windows Update for Business (WUfB) unterstützt derzeit keine *Long-Term Servicing Channel*-Versionen. Planen Sie, alternative Patchmethoden wie WSUS oder Configuration Manager zu verwenden.  
+    > - Windows 10 Enterprise LTSC: Windows Update for Business (WUfB) unterstützt derzeit keine Releases von *Long-Term Servicing Channel*. Planen Sie, alternative Patchmethoden wie WSUS oder Configuration Manager zu verwenden.  
 
 - Auf Windows-Geräten muss **Feedback und Diagnose** > **Diagnose- und Nutzungsdaten** auf **Standard**, **Erweitert** oder **Vollständig** festgelegt sein.  
 
-  Sie können die Einstellung *Diagnose- und Nutzungsdaten* für Windows 10-Geräte entweder manuell konfigurieren oder ein Intune-Geräteeinschränkungsprofil für Windows 10 und höher verwenden. Wenn Sie ein Geräteeinschränkungsprofil verwenden, stellen Sie die Funktion [Geräteeinschränkung](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) bei **Nutzungsdaten freigeben** auf mindestens **Standard** ein. Diese Einstellung befindet sich unter der Kategorie **Berichterstellung und Telemetrie**, wenn Sie eine Richtlinie für Geräteeinschränkungen für Windows 10 oder höher konfigurieren.
+  Sie können die Einstellung *Diagnose- und Nutzungsdaten* für Windows 10-Geräte entweder manuell konfigurieren oder ein Intune-Geräteeinschränkungsprofil für Windows 10 und höher verwenden. Wenn Sie ein Geräteeinschränkungsprofil verwenden, stellen Sie die Funktion [Geräteeinschränkung](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry) bei **Nutzungsdaten freigeben** auf mindestens **Standard** ein. Diese Einstellung befindet sich in der Kategorie **Berichterstellung und Telemetrie**, wenn Sie eine Richtlinie für Geräteeinschränkungen für Windows 10 oder höher konfigurieren.
 
   Weitere Informationen zu Geräteprofilen finden Sie unter [Konfigurieren von Einstellungen für Geräteeinschränkungen](../configuration/device-restrictions-configure.md).  
 
@@ -74,7 +72,7 @@ Die folgenden Voraussetzungen müssen erfüllt sein, um Windows-Updates für Win
 8. Verwenden Sie die Registerkarten **Einschließen** und **Ausschließen**, um festzulegen, welcher Gruppe der Ring zugewiesen wird. Klicken Sie dann auf **Speichern**, um die Zuweisung abzuschließen.
 
 ## <a name="manage-your-windows-10-update-rings"></a>Verwalten Ihrer Windows 10-Updateringe
-Sie können im Portal auf einen Windows 10-Updatering klicken, um dessen **Übersicht** zu öffnen. In diesem Bereich wird der Zuweisungsstatus der Ringe angezeigt, und Sie können den Ring verwalten. 
+Sie können im Portal auf einen Windows 10-Updatering klicken, um dessen **Übersicht** zu öffnen. In diesem Bereich wird der Zuweisungsstatus der Ringe angezeigt, und Sie können weitere Aktionen durchführen, um den Ring zu verwalten. 
 ### <a name="to-view-an-updates-rings-overview-pane"></a>So rufen Sie die Übersicht eines Updaterings auf: 
 1. Melden Sie sich im Azure-Portal an.
 2. Navigieren Sie zu **Intune** > **Softwareupdates** > **Windows 10-Updateringe**.
@@ -92,7 +90,7 @@ Dort wird nicht nur der Zuweisungsstatus angezeigt, sondern Sie können folgende
 ### <a name="delete"></a>Löschen  
 Klicken Sie auf **Löschen**, um die Einstellungen des ausgewählten Windows 10-Updaterings aufzuheben. Durch das Löschen eines Rings wird die Konfiguration aus Intune entfernt, sodass Intune diese Einstellungen nicht mehr anwendet und erzwingt.  
 
-Wenn Sie einen Ring aus Intune löschen, werden dadurch nicht die Einstellungen auf Geräten geändert, denen der Updatering zugewiesen wurde.  Stattdessen behalten diese Geräte ihre aktuellen Einstellungen bei. Das liegt daran, dass Geräte keinen Verlauf der vorherigen Einstellungen speichern. Außerdem empfangen die Geräte möglicherweise Einstellungen von zusätzlichen Updateringen, die aktiv bleiben.  
+Wenn Sie einen Ring aus Intune löschen, werden dadurch nicht die Einstellungen auf Geräten geändert, denen der Updatering zugewiesen wurde.  Diese Geräte behalten ihre aktuellen Einstellungen bei. Geräte behalten keine Verlaufsaufzeichnung der zuvor gespeicherten Einstellungen bei. Geräte können auch Einstellungen von zusätzlichen Updateringen empfangen, die aktiv bleiben.  
 
 #### <a name="to-delete-a-ring"></a>So löschen Sie einen Ring  
 1. Klicken Sie auf der Übersichtsseite eines Updaterings auf **Löschen**.  
@@ -129,6 +127,12 @@ Während ein Updatering angehalten ist, können Sie auf **Erweitern** klicken, u
 
 ### <a name="uninstall"></a>Deinstallieren  
 Ein Intune-Administrator kann das neuste *Feature-* oder *Qualitätsupdate* eines aktiven oder angehaltenen Updaterings über die Option **Deinstallieren** deinstallieren bzw. ein Rollback ausführen. Nachdem Sie einen Updatetyp deinstalliert haben, können Sie auch den anderen deinstallieren. Benutzer haben in Intune nicht die Möglichkeit, Updates zu deinstallieren.  
+
+> [!IMPORTANT] 
+> Wenn Sie die Option *Deinstallieren* verwenden, übergibt Intune die Deinstallationsanforderung sofort an Geräte. 
+> - Windows-Geräte starten das Entfernen von Updates, sobald sie die Änderung der Intune-Richtlinie erhalten. Das Entfernen von Updates ist nicht auf Wartungszeitpläne beschränkt, auch wenn diese als Teil des Updaterings konfiguriert sind. 
+> - Wenn beim Entfernen des Updates ein Geräteneustart erforderlich ist, wird das Gerät neu gestartet, ohne dass Gerätebenutzern eine Option zur Verzögerung angeboten wird.
+
 
 Diese Voraussetzungen sind für eine erfolgreiche Deinstallation erforderlich:  
 - Auf dem Gerät muss das Windows 10 April 2018-Update (Version 1803) oder höher ausgeführt werden.  
@@ -168,5 +172,5 @@ Im klassischen Azure-Portal steht auch eine begrenzte Anzahl anderer Windows 10-
 
 [Berichte zur Updatekonformität für Intune](../windows-update-compliance-reports.md)
 
-[Problembehandlung für Windows 10-Updateringe](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
+[Problembehandlung bei Windows 10-Updateringen](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046)
 

@@ -1,32 +1,32 @@
 ---
-title: Gerätekonformitätsrichtlinien in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Verwenden Sie Gerätekonformitätsrichtlinien, erhalten Sie eine Übersicht über Status- und die Sicherheitsebenen, verwenden Sie den InGracePeriod-Status, arbeiten Sie mit bedingtem Zugriff, verwalten Sie Geräte ohne zugewiesene Richtlinie, und erfahren Sie mehr zu den Unterschieden bei der Konformität im Azure-Portal und im klassischen Portal in Microsoft Intune.
+title: Erstellen von Gerätekonformitätsrichtlinien in Microsoft Intune – Azure | Microsoft-Dokumentation
+description: Erstellen von Gerätekonformitätsrichtlinien, Übersicht über den Status und die Sicherheitsebenen, Verwendung des InGracePeriod-Status, Arbeiten mit bedingtem Zugriff, Handhabung von Geräten ohne zugewiesene Richtlinie und die Unterschiede bei der Konformität im Azure-Portal und im klassischen Portal in Microsoft Intune
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/22/2019
+ms.date: 10/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: joglocke
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8b3a99744f830da3c88473e79bce78c97875d73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
+ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722630"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306584"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Erstellen einer Konformitätsrichtlinie in Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Konformitätsrichtlinien für Geräte sind ein wichtiges Feature bei der Verwendung von Intune, um die Ressourcen Ihrer Organisation zu schützen. Sie können in Intune Regeln und Einstellungen erstellen, die Geräte erfüllen müssen, um als konform angesehen zu werden, z. B. die mindestens erforderliche Betriebssystemversion. Wenn das Gerät nicht konform ist, können Sie dann den Zugriff auf Daten und Ressourcen mit [Bedingtem Zugriff](conditional-access.md) blockieren.
+Konformitätsrichtlinien für Geräte sind ein wichtiges Feature bei der Verwendung von Intune, um die Ressourcen Ihrer Organisation zu schützen. Sie können in Intune Regeln und Einstellungen erstellen, die Geräte erfüllen müssen, um als konform angesehen zu werden, z. B. die mindestens erforderliche Betriebssystemversion. Wenn das Gerät nicht konform ist, können Sie dann den Zugriff auf Daten und Ressourcen mit [bedingtem Zugriff](conditional-access.md) blockieren.
 
 Sie können auch Maßnahmen ergreifen, sollte das Gerät nicht konform sein, z. B. eine Benachrichtigungs-E-Mail an den Benutzer senden. Eine Übersicht der Funktionsweise von Konformitätsrichtlinie und wie Sie diese verwenden können, finden Sie unter [Erste Schritte mit den Gerätekonformitätsrichtlinien in Intune](device-compliance-get-started.md).
 
@@ -44,7 +44,7 @@ Stellen Sie zum Verwenden von Konformitätsrichtlinien folgendes sicher:
 - Verwenden Sie folgende Abonnements:
 
   - Intune
-  - Wenn Sie „Bedingten Zugriff“ verwenden, benötigen Sie die Azure Active Directory-Premium-Edition. In der Liste mit den [Preisen für Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/) finden Sie Angaben zu den unterschiedlichen Editionen. Für die Intune-Konformität ist Azure Active Directory nicht erforderlich.
+  - Wenn Sie den bedingten Zugriff verwenden, benötigen Sie die Azure Active Directory-Premium-Edition. In der Liste mit den [Preisen für Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/) finden Sie Angaben zu den unterschiedlichen Editionen. Für die Intune-Konformität ist Azure Active Directory nicht erforderlich.
 
 - Verwenden Sie eine unterstützte Plattform:
 
@@ -95,15 +95,15 @@ Stellen Sie zum Verwenden von Konformitätsrichtlinien folgendes sicher:
 
 4. Wählen Sie anschließend **OK** > **Erstellen** aus, um Ihre Änderungen zu speichern. Die Richtlinie wird erstellt und in der Liste angezeigt. Weisen Sie die Richtlinie anschließend Ihrer Gruppe zu.
 
-## <a name="assign-user-groups"></a>Zuweisen von Benutzergruppen
+## <a name="assign-the-policy"></a>Zuweisen der Richtlinie
 
 Wenn eine Richtlinie erstellt wurde, können Sie diese Gruppen zuweisen:
 
 1. Wählen Sie eine Richtlinie aus, die Sie erstellt haben. Vorhandene Richtlinien befinden sich unter **Gerätekompatibilität** > **Richtlinien**.
 2. Klicken Sie auf die Richtlinie und anschließend auf **Assignments** (Zuweisungen). Sie können Azure Active Directory (AD)-Sicherheitsgruppen ein- oder ausschließen.
-3. Wählen Sie **Ausgewählte Gruppen**, um Ihre Azure AD-Sicherheitsgruppen anzuzeigen. Wählen Sie die Benutzergruppen aus, auf die diese Richtlinie angewendet werden soll, und klicken Sie dann auf **Save** (Speichern), um die Richtlinie für die Benutzer bereitzustellen.
+3. Wählen Sie **Ausgewählte Gruppen**, um Ihre Azure AD-Sicherheitsgruppen anzuzeigen. Wählen Sie die Gruppen aus, auf die diese Richtlinie angewendet werden soll, und wählen Sie dann **Speichern** aus, um die Richtlinie bereitzustellen.
 
-Sie haben die Richtlinie auf Benutzer angewendet. Die von den Benutzern verwendeten Geräte, für die die Richtlinie gilt, werden auf Konformität überprüft.
+Die Benutzer oder Geräte, auf die Ihre Richtlinie abzielt, werden hinsichtlich der Konformität ausgewertet, wenn sie mit Intune eingecheckt werden.
 
 ### <a name="evaluate-how-many-users-are-targeted"></a>Auswerten der Anzahl der betroffenen Benutzer
 
@@ -128,7 +128,7 @@ Bereichsmarkierungen eignen sich zum Zuweisen und Filtern von Richtlinien für b
 
 ## <a name="refresh-cycle-times"></a>Aktualisierungszykluszeit
 
-Intune verwendet verschiedene Aktualisierungszyklen, um nach Updates der Konformitätsrichtlinien zu suchen. Wenn das Gerät kürzlich registriert wurde, wird der Check-In häufiger durchgeführt. [Richtlinien- und Profilaktualisierungszyklen](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) listet die geschätzten Aktualisierungszeiten auf.
+Intune verwendet verschiedene Aktualisierungszyklen, um nach Updates der Konformitätsrichtlinien zu suchen. Wenn das Gerät kürzlich registriert wurde, wird der Check-In häufiger durchgeführt. Unter [Richtlinien- und Profilaktualisierungszyklen](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) werden die geschätzten Aktualisierungszeiten aufgeführt.
 
 Benutzer können jederzeit die Unternehmensportal-App öffnen und das Gerät synchronisieren, um sofort nach Richtlinienupdates zu suchen.
 

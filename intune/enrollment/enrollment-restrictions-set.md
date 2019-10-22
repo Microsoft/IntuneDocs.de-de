@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bdeb88f3a69db160dca61bf3038c5a7d0235f2b2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
+ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722461"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72379813"
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
@@ -48,7 +48,7 @@ Sie können u.a. die folgenden spezifischen Registrierungsbeschränkungen festle
 - Plattformbetriebssystem-Version für iOS, Android-Geräteadministrator, Android Enterprise-Arbeitsprofil, Windows und Windows Mobile. (Es können nur Windows 10-Versionen verwendet werden. Dieses Feld bleibt leer, wenn Windows 8.1 zulässig ist.)
   - Mindestens erforderliche Version
   - Maximal zulässige Version
-- Beschränken von persönlichen Geräten (nur iOS, Android-Geräteadministrator, Android Enterprise-Arbeitsprofil, macOS, Windows und Windows Mobile).
+- Beschränken von [persönlichen Geräten](device-enrollment.md#bring-your-own-device) (nur iOS, Android-Geräteadministrator, Android Enterprise-Arbeitsprofil, macOS, Windows und Windows Mobile).
 
 ## <a name="default-restrictions"></a>Standardbeschränkungen
 
@@ -68,9 +68,9 @@ Auf den Gerätetyp und das Gerätelimit bezogene Registrierungsbeschränkungen w
      Folgende Versionsformate werden unterstützt:
     - Android-Geräteadministrator und Android Enterprise-Arbeitsprofil unterstützen „Hauptversion.Nebenversion.Revision.Build“.
     - iOS unterstützt major.minor.rev. Die Betriebssystemversionen gelten nicht für Apple-Geräte, die mit dem Programm zur Geräteregistrierung, dem Apple School Manager oder der App Apple Configurator registriert werden.
-    - Windows unterstützt major.minor.rev.build nur für Windows 10.
+    - Windows unterstützt major.minor.build.rev nur für Windows 10.
     > [!Note]
-    > Windows 10 gibt die Buildnummer während der Registrierung nicht an. Wenn Sie zum Beispiel in Build 10.0.17134.100 eine Eingabe vornehmen und das Gerät über Build 10.0.17134.174 verfügt, wird es während der Registrierung blockiert.
+    > Windows 10 gibt die Buildnummer während der Registrierung nicht an. Wenn Sie zum Beispiel in Build 10.0.17134.100 eine Eingabe vornehmen und das Gerät über Build 10.0.17134.174 verfügt, wird es während der Registrierung blockiert.
 
 8. Wählen Sie unter **Persönliches Eigentum** die Option **Zulassen** für die Plattformen, die Sie als Geräte im persönlichen Besitz zulassen möchten.
 9. Klicken Sie auf **Weiter**, um zur Seite **Zuweisungen** zu gelangen.
@@ -151,6 +151,12 @@ Die folgenden persönlichen Registrierungsmethoden werden ebenso blockiert:
 - Die Option [MDM enrollment only]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) (Nur MDM-Registrierung) in den Windows-Einstellungen.
 
 \* Diese werden nicht blockiert, wenn sie bei Autopilot registriert sind.
+
+
+## <a name="blocking-personal-ios-devices"></a>Blockieren privater iOS-Geräte
+Standardmäßig klassifiziert Intune iOS-Geräte als privat. Um als unternehmenseigen klassifiziert zu werden, muss ein iOS-Gerät eine der folgenden Bedingungen erfüllen:
+- Mit einer Seriennummer oder IMEI registriert.
+- Registriert mithilfe der automatisierten Geräteregistrierung (früher Programm zur Geräteregistrierung)
 
 
 ## <a name="change-enrollment-restriction-priority"></a>Ändern der Priorität der Registrierungsbeschränkung

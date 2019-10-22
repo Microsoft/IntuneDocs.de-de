@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8beb8291ede1bf2fde32014fadf9f8cd52da5b6
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.openlocfilehash: 204a19546e9466fdf7064e15b8cba7268ec1b757
+ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71830576"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349984"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Hinzufügen von Web-Apps zu Microsoft Intune
 
@@ -30,7 +30,9 @@ ms.locfileid: "71830576"
 
 Intune unterstützt eine Vielzahl von App-Typen, einschließlich Web-Apps. Bei einer Web-App handelt es sich um eine Client/Server-Anwendung. Der Server stellt die Web-App bereit, welche die Benutzeroberfläche, den Inhalt und die Funktionen umfasst. Außerdem bieten moderne Webhostingplattformen häufig Vorteile bei Sicherheit und Lastenausgleich. Eine Web-App wird separat im Web verwaltet. Verwenden Sie Microsoft Intune, um auf diesen App-Typ zu verweisen. Sie legen ebenfalls fest, welche Benutzergruppen auf diese App zugreifen können. 
 
-Bevor Sie eine App verwalten und Benutzern zuweisen können, müssen Sie diese in Intune hinzufügen. Intune erstellt eine Verknüpfung zu der Web-App auf dem Startbildschirm des Geräts des Benutzers.
+Bevor Sie eine App verwalten und Benutzern zuweisen können, müssen Sie diese in Intune hinzufügen. 
+
+Intune erstellt auf dem Gerät des Benutzers eine Verknüpfung zu der Web-App. Für iOS-Geräte wird dem Startbildschirm eine Verknüpfung mit der Web-App hinzugefügt. Für Android-Geräte wird dem Intune-Unternehmensportalwidget eine Verknüpfung mit der Web-App hinzugefügt, und das Widget muss manuell vom Benutzer angeheftet werden. Für Windows-Geräte wird eine Verknüpfung mit der Web-App im Startmenü platziert.
 
 > [!Note]
 > Web-Apps werden nicht für Android-Arbeitsprofilgeräte unterstützt. Zum Starten von Web-Apps muss ein Browser auf dem Gerät des Benutzers installiert sein.

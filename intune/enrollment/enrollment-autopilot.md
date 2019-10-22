@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92aa955558120f88afb31e787376fdd1281dd5f4
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b2ebca165c067afbc3d830e5f75ac9f8e29effb2
+ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723176"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72237226"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrieren von Windows-Geräten in Intune mithilfe von Windows Autopilot  
 Windows Autopilot vereinfacht das Registrieren von Geräten in Intune. Das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems ist ein langwieriger Prozess. Es kann ebenfalls Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und Autopilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von Autopilot-Geräten verwenden, können Sie Richtlinien, Profile und Apps usw. verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -110,7 +110,7 @@ Autopilot-Bereitstellungsprofile werden verwendet, um die Autopilot-Geräte zu k
     - **Optionen zur Kontoänderung ausblenden (Windows 10, Version 1809 oder höher, erforderlich)** : Wählen Sie **Ausblenden** aus, um zu verhindern, dass Optionen zum Ändern des Kontos auf der Anmeldeseite des Unternehmens und den Domänenfehlerseiten angezeigt werden. Für diese Option muss das [Unternehmensbranding in Azure Active Directory konfiguriert](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) sein.
     - **Art des Benutzerkontos**: Wählen Sie den Kontotyp des Benutzers aus (**Administrator** oder **Standardbenutzer**). Der Benutzer, der dem Gerät beitritt, kann ein lokaler Administrator werden, indem er zur lokalen Administratorgruppe hinzugefügt wird. Wir aktivieren den Benutzer nicht als Standardadministrator auf dem Gerät.
     - **Willkommensseite ohne Benutzerauthentifizierung zulassen** (erfordert Windows 10, Version 1903 oder höher; [zusätzliche physische Anforderungen](https://docs.microsoft.com/windows/deployment/windows-autopilot/white-glove#prerequisites)): Wählen Sie **Ja** aus, um die intensive Benutzerunterstützung zuzulassen.
-    - **Vorlage für Gerätenamen anwenden** (erfordert Windows 10, Version 1809 oder höher): Klicken Sie auf **Ja**, um eine Vorlage für die Benennung eines Geräts während der Registrierung zu erstellen. Namen dürfen höchstens 15 Zeichen lang sein und können Buchstaben, Zahlen und Bindestriche enthalten. Ein Name darf nicht nur aus Zahlen bestehen. Verwenden Sie das [%SERIAL%-Makro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp), um eine hardwarespezifische Seriennummer hinzuzufügen. Verwenden Sie alternativ das [%RAND:x%-Makro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp), um eine zufällige Zeichenfolge von Zahlen hinzuzufügen, bei der x der Anzahl der hinzuzufügenden Ziffern entspricht. 
+    - **Vorlage für Gerätenamen anwenden** (erfordert Windows 10, Version 1809 oder höher und Azure AD-Verknüpfungstyp): Klicken Sie auf **Ja**, um eine Vorlage für die Benennung eines Geräts während der Registrierung zu erstellen. Namen dürfen höchstens 15 Zeichen lang sein und können Buchstaben, Zahlen und Bindestriche enthalten. Ein Name darf nicht nur aus Zahlen bestehen. Verwenden Sie das [%SERIAL%-Makro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp), um eine hardwarespezifische Seriennummer hinzuzufügen. Verwenden Sie alternativ das [%RAND:x%-Makro](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp), um eine zufällige Zeichenfolge von Zahlen hinzuzufügen, bei der x der Anzahl der hinzuzufügenden Ziffern entspricht. Sie können nur in einem [Domänenbeitrittsprofil](windows-autopilot-hybrid.md#create-and-assign-a-domain-join-profile) ein Präfix für Hybridgeräte bereitstellen. 
     - **Sprache (Region)** \*: Wählen Sie die Sprache aus, die für das Gerät verwendet werden soll. Diese Option ist nur verfügbar, wenn Sie **Selbstbereitstellend** als **Bereitstellungsmodus** ausgewählt haben.
     - **Tastatur automatisch konfigurieren**\*: Wenn **Sprache (Region)** ausgewählt ist, können Sie mit **Ja** die Tastaturauswahlseite überspringen. Diese Option ist nur verfügbar, wenn Sie **Selbstbereitstellend** als **Bereitstellungsmodus** ausgewählt haben.
 8. Wählen Sie **Weiter** aus.
