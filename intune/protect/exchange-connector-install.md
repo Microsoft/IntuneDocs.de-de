@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4751b77362567ad18f5b775e5bda9c1081dd181
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: 30b5debc6e1ab113a08d8930f96f6cbc9bf12b48
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71911191"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509520"
 ---
 # <a name="set-up-the-on-premises-intune-exchange-connector"></a>Einrichten des lokalen Intune Exchange Connectors
 Um den Zugriff auf Exchange zu schützen, nutzt Intune eine lokale Komponente, die als Microsoft Intune Exchange Connector bezeichnet wird. Dieser Connector wird auch an einigen Stellen der Intune-Konsole als *lokaler Connector für Exchange ActiveSync* bezeichnet. 
@@ -58,7 +59,7 @@ In der folgenden Tabelle finden Sie die Anforderungen an den Computer, auf dem S
 | Hardware              | Der Computer, auf dem Sie den Connector installieren, erfordert eine CPU mit 1,6 GHz und 2 GB RAM sowie mindestens 10 GB freien Speicherplatz. |
 |  Active Directory-Synchronisierung             | Bevor Sie den Connector verwenden, um Intune mit Ihrer Exchange Server-Instanz zu verbinden, richten Sie [die Active Directory-Synchronisierung](../fundamentals/users-add.md) ein. Ihre lokalen Benutzer und Sicherheitsgruppen müssen mit Ihrer Instanz von Azure Active Directory synchronisiert werden. |
 | Zusätzliche Software         | Auf dem Computer, auf dem der Connector gehostet wird, muss eine vollständige Installation von Microsoft.NET Framework 4.5 und Windows PowerShell 2.0 vorhanden sein. |
-| Netzwerk               | Der Computer, auf dem Sie den Connector installieren, muss sich in einer Domäne befinden, die sich mit der Domäne, in der Ihre Exchange Server-Instanz gehostet wird, in einer Vertrauensstellung befindet.<br /><br />Konfigurieren Sie den Computer so, dass er über Firewalls und Proxyserver an den Ports 80 und 443 auf den Intune-Dienst zugreifen kann. Intune verwendet diese Domänen: <br> manage.microsoft.com <br> manage.microsoft.com<br> .manage.microsoft.com <br><br> Der Intune Exchange Connector kommuniziert mit den folgenden Diensten: <br> Intune-Dienst: HTTPS-Port 443 <br> Exchange-Clientzugriffsserver: WinRM-Dienstport 443<br> Exchange-AutoErmittlung 443<br> Exchange-Webdienste 443  |
+| Netzwerk               | Der Computer, auf dem Sie den Connector installieren, muss sich in einer Domäne befinden, die sich mit der Domäne, in der Ihre Exchange Server-Instanz gehostet wird, in einer Vertrauensstellung befindet.<br /><br />Konfigurieren Sie den Computer so, dass er über Firewalls und Proxyserver an den Ports 80 und 443 auf den Intune-Dienst zugreifen kann. Intune verwendet diese Domänen: <br> manage.microsoft.com <br> - \*manage.microsoft.com<br> - \*.manage.microsoft.com <br><br> Der Intune Exchange Connector kommuniziert mit den folgenden Diensten: <br> Intune-Dienst: HTTPS-Port 443 <br> Exchange-Clientzugriffsserver: WinRM-Dienstport 443<br> Exchange-AutoErmittlung 443<br> Exchange-Webdienste 443  |
 
 ### <a name="exchange-cmdlet-requirements"></a>Anforderungen an Exchange-Cmdlets
 
