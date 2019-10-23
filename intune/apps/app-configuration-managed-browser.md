@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63e3a02f9df52052f27714403e8f189d089c6690
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 57ae1b5a51533bf14d4299fcf0248564562289f7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725893"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507567"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Verwalten des Webzugriffs durch einen mittels Microsoft Intune-Richtlinien geschützte Browser
 

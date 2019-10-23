@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08017be16e4257ef0bd7bfb775197feaa20baf75
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 42d17c15a2a32f828c5715dfad51f34c5e531e76
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940355"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507546"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>App-Konfigurationsrichtlinien für Microsoft Intune
 

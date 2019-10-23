@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4f3424c0d9712affbbf8ba3929e825b62ce5864
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 2fb5208cd7df6dc68bcd20455ae9e06a9dbd7ff5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940316"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503148"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Registrieren von iOS-Geräten in Intune
 

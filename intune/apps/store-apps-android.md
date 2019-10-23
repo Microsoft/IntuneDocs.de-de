@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea7db3cb6839a466044f83b1849a7f91f7de1822
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3153a470649e86bbafc9e8295a1c68532fc27c63
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724606"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72497699"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Hinzufügen von Android Store-Apps zu Microsoft Intune
 

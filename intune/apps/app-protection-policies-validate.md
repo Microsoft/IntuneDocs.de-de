@@ -8,6 +8,7 @@ ms.author: erikre
 manager: dougeby
 ms.date: 08/15/2019
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.topic: conceptual
 ms.technology: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fefc784151b70d85fa0fd49d942c608b64467ef9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 455f717e0e8ca4337cfef8693d5b71a0902b103f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725542"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72499223"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup-in-microsoft-intune"></a>Überprüfen der Einrichtung von App-Schutzrichtlinien in Microsoft Intune
 

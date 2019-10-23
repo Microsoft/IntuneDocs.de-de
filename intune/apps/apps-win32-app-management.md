@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21192d259de0711ad38fa35b294ea82c7d913292
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 8d6fb5a703aad09592bfac3b5a16390389059d33
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036501"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498028"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Eigenständiges Intune – Win32-App-Verwaltung
 

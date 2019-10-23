@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 783079786d19c0a65d44af96f9a3be9e2e817fc0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a4c1f3d8b6b7edbf51ca2aaa681909e6c220de3c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724788"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507232"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen Android-Apps zu Microsoft Intune
 
@@ -30,7 +31,7 @@ ms.locfileid: "71724788"
 Eine branchenspezifische App (LOB) ist eine App, die Sie aus einer App-Installationsdatei zu Intune hinzufügen. Diese Art von App wird in der Regel intern geschrieben. Intune installiert die branchenspezifische App auf dem Gerät des Benutzers. 
 
 > [!Note]
-> Weitere Informationen zu branchenspezifischen Apps und der Google Play Developer Console finden Sie unter [Veröffentlichen privater branchenspezifischer verwalteter Google Play-Apps mithilfe der Google Developer Console](apps-add-android-for-work.md?#managed-google-play-private-lob-app-publishing-using-the-google-developer-console). 
+> Weitere Informationen zu branchenspezifischen Apps und Google Play Developer Console finden Sie unter [Veröffentlichen privater verwalteter Google Play-Apps (branchenspezifisch) mithilfe von Google Developer Console](apps-add-android-for-work.md?#managed-google-play-private-lob-app-publishing-using-the-google-developer-console). 
 
 > [!Note]
 > Weitere Informationen zu Android for Work-Geräten finden Sie unter [Hinzufügen von verwalteten Google Play-Apps für Android Enterprise-Geräte mit Intune](apps-add-android-for-work.md). 

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 01/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc1fca439f0edf4a5d4caaad4ff4f9e0bae5972b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b8dfab31d770c012acf88eb3775313634c3c14cc
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723826"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72492303"
 ---
 # <a name="control-access-accounts-and-power-features-on-shared-pc-or-multi-user-devices-using-intune"></a>Steuern von Zugriff, Konten und Energiefunktionen auf gemeinsam genutzten PCs oder von mehreren Benutzern verwendeten Geräten mit Intune
 

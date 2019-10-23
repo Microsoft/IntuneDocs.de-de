@@ -9,20 +9,20 @@ manager: dougeby
 ms.date: 08/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
-ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb5abe54529a9de575cf84b8a89b0f402f8d117b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 19d02694ab5e53dc43e0861c6a427a044bf50648
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727050"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502634"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Festlegen der Autorität für die Verwaltung mobiler Geräte
 
@@ -41,13 +41,13 @@ Die möglichen Konfigurationen sind Folgende:
 
 - **Verwaltung mobiler Geräte für Office 365:** Integration von Office 365 in die Intune-Cloudlösung. Sie konfigurieren Intune über das Microsoft 365 Admin Center. Ihnen steht eine Teilmenge der Funktionen von Intune Standalone zur Verfügung. Legen Sie die MDM-Autorität im Microsoft 365 Admin Center fest.
 
-- **Office 365 MDM Koexistenz** Sie können sowohl MDM für Office 365 als auch Intune gleichzeitig für Ihren Mandanten aktivieren und verwenden und die Verwaltungsberechtigung auf Intune oder MDM für Office 365 einstellen, damit jeder Benutzer bestimmen kann, welcher Dienst zur Verwaltung seiner mobilen Geräte verwendet wird. Die Verwaltungsautorität des Benutzers wird basierend auf der dem Benutzer zugeordneten Lizenz definiert. Weitere Informationen finden Sie unter [Microsoft Intune: Koexistenz mit MDM für Office 365](https://blogs.technet.microsoft.com/configmgrdogs/2016/01/04/microsoft-intune-co-existence-with-mdm-for-office-365)
+- **Office 365 MDM Coexistence** (MDM-Koexistenz für Office 365): Sie können MDM für Office 365 und Intune für Ihren Mandanten gleichzeitig aktivieren und verwenden, und Sie können die Verwaltungsautorität für alle Benutzer entweder auf Intune oder MDM für Office 365 festlegen, um zu bestimmen, welcher Dienst zum Verwalten ihrer mobilen Geräte verwendet wird. Die Verwaltungsautorität des Benutzers wird basierend auf der dem Benutzer zugeordneten Lizenz definiert. Weitere Informationen finden Sie unter [Microsoft Intune: Koexistenz mit MDM für Office 365](https://blogs.technet.microsoft.com/configmgrdogs/2016/01/04/microsoft-intune-co-existence-with-mdm-for-office-365)
 
 ## <a name="set-mdm-authority-to-intune"></a>Festlegen der MDM-Autorität in Intune
 
-Führen Sie folgende Schritte durch, wenn Sie die MDM-Autorität noch nicht festgelegt haben. Ausführlichere Angaben für den Wechsel von SCCM finden Sie unter [Migrieren von Benutzern und Geräten in einer MDM-Hybridlösung zu eigenständigem Intune](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
+Führen Sie folgende Schritte durch, wenn Sie die MDM-Autorität noch nicht festgelegt haben. Informationen für den Wechsel von SCCM finden Sie unter [Migrieren von Benutzern und Geräten mit hybrider Verwaltung mobiler Geräte zu eigenständigem Intune](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa).
 
-1. Wählen Sie unter [Intune im Azur-Portal](https://aka.ms/intuneportal) das orangefarbene Banner aus, um die Einstellung **MDM-Autorität** zu öffnen. Der orangefarbene Banner wird nur angezeigt, wenn Sie die MDM-Autorität noch nicht festgelegt haben.
+1. Klicken Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) auf den orangefarbenen Banner, um die Einstellung **Autorität für die Verwaltung mobiler Geräte** zu öffnen. Der orangefarbene Banner wird nur angezeigt, wenn Sie die MDM-Autorität noch nicht festgelegt haben.
 2. Wählen Sie unter **Autorität für die Verwaltung mobiler Geräte** Ihre MDM-Autorität aus den folgenden Optionen aus:
    - **Intune-MDM-Autorität**
    - **Keine**

@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 7/31/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8b3078769428e5ba2679b141476293cb6df6813
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 84103c6264431773ab5928f1da22c37a80cc9036
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723943"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72492711"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Öffentliche Vorschau: Konfigurieren von eSIM-Mobilfunkprofilen in Intune
 

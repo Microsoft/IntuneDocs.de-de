@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a369abd2f3873d970e9efc1ebf3ea814a9295fec
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 03b228795d7601647c57ea86b5adf7576b669c45
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722682"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504583"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Erneutes Zuweisen von Richtlinien für bedingten Zugriff aus dem klassischen Intune-Portal im Azure-Portal
 

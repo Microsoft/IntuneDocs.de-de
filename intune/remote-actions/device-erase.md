@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/31/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ab396092-907a-44b7-a157-aabee62176a9
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2f4ce1295d4a3f2250988d25246c532ff2cdd73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e0379ffc6a3c3ffd83a9d121e622e9ee8f7c0af5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728233"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509499"
 ---
 # <a name="erase-all-data-from-a-macos-device"></a>Löschen aller Daten von einem macOS-Gerät
 

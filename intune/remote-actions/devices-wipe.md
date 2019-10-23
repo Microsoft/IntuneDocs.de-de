@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 04/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f81dcf6a3553b4ff08ec6c2dbffda24bc7946b73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: dbcc50d275a3d3e6a613640e96b363ce7608da81
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728402"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508571"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Entfernen von Geräten durch Zurücksetzen, Abkoppeln oder manuelles Aufheben der Registrierung des Geräts
 
@@ -33,7 +34,7 @@ Mithilfe der Aktionen **Abkoppeln** und **Zurücksetzen** können Sie Geräte au
 
 ## <a name="wipe"></a>Zurücksetzen
 
-Die Aktion **Zurücksetzen** setzt das Gerät auf die Werkseinstellungen zurück. Die Benutzerdaten werden beibehalten, wenn Sie das Kontrollkästchen **Registrierungszustand und Benutzerkonto beibehalten** aktivieren. Andernfalls werden Ihre Daten, Apps und Einstellungen entfernt.
+Die Aktion **Zurücksetzen** setzt das Gerät auf die Werkseinstellungen zurück. Die Benutzerdaten werden beibehalten, wenn Sie das Kontrollkästchen **Registrierungszustand und Benutzerkonto beibehalten** aktivieren. Andernfalls werden alle Daten, Apps und Einstellungen entfernt.
 
 |Aktion „Zurücksetzen“|**Registrierungszustand und Benutzerkonto beibehalten**|Aus der Intune-Verwaltung entfernt|Beschreibung|
 |:-------------:|:------------:|:------------:|------------|
@@ -42,7 +43,7 @@ Die Aktion **Zurücksetzen** setzt das Gerät auf die Werkseinstellungen zurück
 
 
 > [!NOTE]
-> Die Aktion „Zurücksetzen“ ist nicht für iOS-Geräte, die mit der „Benutzerregistrierung“ registriert sind, verfügbar.
+> Die Aktion „Zurücksetzen“ ist für iOS-Geräte nicht verfügbar, die mit der „Benutzerregistrierung“ registriert wurden.
 
 Die Option **Registrierungszustand und Benutzerkonto beibehalten** steht Ihnen nur für Windows 10, Version 1709 oder höher, zur Verfügung.
 
@@ -141,7 +142,7 @@ Sie können nur Kioskgeräte zurücksetzen. Sie können Android-Kioskgeräte nic
 |Entfernen von Azure AD|Nein.|Nein.|Der Azure AD-Datensatz wird entfernt.|Der Azure AD-Datensatz wird entfernt.|
 
 > [!NOTE]
-> Für Windows 10-Geräte, die Azure AD während der Erstinstallation (OOBE) beitreten, entfernt der Befehl „außer Betrieb setzen“ alle Azure AD-Konten vom Gerät. Führen Sie die Schritte unter [Starten Sie Ihren PC im abgesicherten Modus](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) aus, um sich als lokaler Administrator anzumelden und wieder Zugriff auf die lokalen Daten des Benutzers zu erhalten. 
+> Für Windows 10-Geräte, die Azure AD während der Erstinstallation (OOBE) beitreten, entfernt der Befehl „Außer Betrieb setzen“ alle Azure AD-Konten vom Gerät. Führen Sie die Schritte unter [Starten Sie Ihren PC im abgesicherten Modus](https://support.microsoft.com/en-us/help/12376/windows-10-start-your-pc-in-safe-mode) aus, um sich als lokaler Administrator anzumelden und wieder Zugriff auf die lokalen Daten des Benutzers zu erhalten. 
 
 ### <a name="retire"></a>Außerkraftsetzen
 

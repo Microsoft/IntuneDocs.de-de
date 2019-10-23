@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 1/15/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e07952b6e7147ffa9b84cfbd1988ebb927b411dd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d1a1c03dc480ad66de22b4a5ee44a9b8c221980c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723566"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503386"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Einrichten der Intune-Registrierung für dedizierte Android Enterprise-Geräte
 
@@ -58,7 +59,7 @@ Führen Sie die folgenden Schritte aus, um die Verwaltung für dedizierte Androi
 
 Sie müssen ein Registrierungsprofil erstellen, damit Sie Ihre dedizierten Geräte registrieren können. Wenn das Profil erstellt wird, wird ein Registrierungstoken (zufällige Zeichenfolge) und ein QR-Code bereitgestellt. Je nach Android-Betriebssystem und Version des Geräts können Sie entweder das Token oder den QR-Code zum [Registrieren des dedizierten Geräts](#enroll-the-dedicated-devices) verwenden.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und klicken Sie auf **Device enrollment** (Geräteregistrierung) > **Android enrollment** (Android-Registrierung) > **Corporate-owned dedicated devices**(Unternehmenseigene, dedizierte Geräte).
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und klicken Sie auf **Geräteregistrierung** > **Android-Registrierung** > **Unternehmenseigene dedizierte Geräte**.
 2. Klicken Sie auf **Erstellen**, und füllen Sie die erforderlichen Felder aus.
     - **Name**: Geben Sie einen Namen ein, den Sie zum Zuweisen des Profils zu einer dynamischen Gerätegruppe verwenden.
     - **Datum für Tokenablauf**: Der Ablaufzeitpunkt des Tokens. Google erzwingt maximal 90 Tage.
@@ -91,7 +92,7 @@ Sie können Apps und Richtlinien auf zugewiesene oder dynamische Gerätegruppen 
 
 Das Ersetzen oder Widerrufen eines Tokens bzw. QR-Codes hat keine Auswirkungen auf Geräte, die bereits registriert sind.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und klicken Sie auf **Device enrollment** (Geräteregistrierung) > **Android enrollment** (Android-Registrierung) > **Corporate-owned dedicated devices**(Unternehmenseigene, dedizierte Geräte).
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und klicken Sie auf **Geräteregistrierung** > **Android-Registrierung** > **Unternehmenseigene dedizierte Geräte**.
 2. Wählen Sie das Profil aus, mit dem Sie arbeiten möchten.
 3. Klicken Sie auf **Token**.
 4. Klicken Sie auf **Token ersetzen**, um das Token zu ersetzen.

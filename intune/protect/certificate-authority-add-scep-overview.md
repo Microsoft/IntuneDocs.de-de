@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b82124fe8f6da7116c8333e293f219d7c667f9c
-ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
+ms.openlocfilehash: 61771ce2b6179b2e74a4d13f72794ece97907034
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72310912"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502575"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Hinzufügen einer Partnerzertifizierungsstelle in Intune mithilfe von SCEP
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/18/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1171740-936d-46a5-af37-f418bd6fa63e
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd1d0de4b1ae930ebeff07539f9cfa8848f0b7ce
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: e93e69b5cce2c54ae07410309b33870dd828f563
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306896"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509083"
 ---
 # <a name="data-collection-in-intune"></a>Datensammlung in Intune
 

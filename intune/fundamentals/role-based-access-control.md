@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 03/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e9df15efc7a16a0ce1ee6b0412f9160831efdec
-ms.sourcegitcommit: 884654da8e72a63bfaea6b5def6c7891b065f251
+ms.openlocfilehash: 4a03366037f9b0eced70f0375b3f4b39401e3141
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163506"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509814"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>Rollenbasierte Zugriffssteuerung für Microsoft Intune
 

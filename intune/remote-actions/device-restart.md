@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 03/21/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1e13801e3235831081be76ddfe5c8f5872e2077
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 42908f09dd47a22f1c545b60a97ca5e6b7fa068f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728519"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508638"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Remoteneustart von Geräten mit Intune
 

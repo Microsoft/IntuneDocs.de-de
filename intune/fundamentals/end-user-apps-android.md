@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5858d7df063ea1387330507bd6e8253e5acc3559
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fc5362df560d2e93bf5cd7a6cdc32a441d97d05c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726686"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505430"
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Wie Ihre Android-Benutzer Apps erhalten
 

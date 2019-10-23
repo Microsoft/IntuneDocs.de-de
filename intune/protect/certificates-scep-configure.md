@@ -6,8 +6,9 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 08/28/2019
-ms.topic: article
+ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39858a74cd9503ff40de51ab3680ccf509d25c49
-ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
+ms.openlocfilehash: 82177e475c6f5a637aba9f053e64986dcd9bdadf
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72310948"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502554"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>Konfigurieren der Infrastruktur für die Unterstützung von SCEP mit Intune  
   

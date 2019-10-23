@@ -9,20 +9,20 @@ manager: dougeby
 ms.date: 07/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
-ms.technology: ''
-ms.assetid: ''
+ms.assetid: b8d9aef2-8757-4e22-9b24-a0833d27304c
 ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18c5622d9ce2566d5edf6ac5ebdfc931c8638418
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2503013e6ca0d907a05c81f895b44878784dbbd4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726075"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502725"
 ---
 # <a name="network-endpoints-for-microsoft-intune"></a>Netzwerkendpunkte für Microsoft Intune  
 

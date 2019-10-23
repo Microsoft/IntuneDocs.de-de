@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/10/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e0a01034bc35ddf8fd8eb1ede5fcf4c942dc735
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: d3b903c8d21b678bb86d9e6474dbe52a9caaaf74
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306809"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503615"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Schützen des Exchange Online-E-Mail-Diensts auf nicht verwalteten Geräten
 

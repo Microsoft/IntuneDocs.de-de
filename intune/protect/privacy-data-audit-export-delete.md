@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/18/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 96990be0-eb1e-43a4-a0e4-09c7dbdc2bf4
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74428abf8141c648b5b81bba3177cc89a3cb01d2
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: 4cfb0f69d74cc6146b2497cd53be3e123f79cc70
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306819"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504360"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>Überwachen, Exportieren und Löschen von personenbezogenen Daten in Intune
 

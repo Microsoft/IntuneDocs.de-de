@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 114637478ffecd2cb88176d1d2304706665a3c22
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8ab720ffee3f468d3700558dfbde460ee8f712ea
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723202"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505499"
 ---
 # <a name="categorize-devices-into-groups"></a>Kategorisieren von Geräten in Gruppen
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7772a7476f197f455191debf8e252ba83e06f49
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: c8ce24081eae1808d3db0c5078026b306fd209d5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379754"
+ms.locfileid: "72507239"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>Windows 10-App-Bereitstellung mit Microsoft Intune 
 

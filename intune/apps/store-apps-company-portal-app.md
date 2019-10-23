@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31fcc3a47a131ca017e3691cc53a7295b81fe67c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 32411e513cec9683faf598c8d73d6d803bcddb3d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724593"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507113"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Manuelles Hinzufügen der Windows 10-Unternehmensportal-App mithilfe von Microsoft Intune
 
@@ -46,13 +47,13 @@ Benutzer können die Unternehmensportal-App selbst über den Microsoft Store ins
 3. Klicken Sie auf **App nutzen**, um die Offline-Unternehmensportal-App Ihrem Inventar hinzuzufügen.
 4. Klicken Sie auf der Seite der **Unternehmensportal**-App auf **Manage** (Verwalten).
 5. Wählen Sie **Windows 10 all devices** (Alle Windows 10-Geräte) als **Platform** (Plattform) aus. Legen Sie anschließend für **Minimum version** (Mindestversion), **Architecture** (Architektur) und **Download app metadata** (App-Metadaten herunterladen) die entsprechenden Werte fest. 
-6. Klicken Sie auf **Download** unter **Paketdetails**, um die Datei auf Ihrem lokalen Computer zu speichern.
+6. Klicken Sie unter **Paketdetails** auf **Download**, um die Datei auf Ihrem lokalen Computer zu speichern.
 
     ![Windows 10-Geräte mit x86-Architektur sind ausgewählt.](./media/app-sideload-windows/Win10CP-all-devices.png)
 
 7. Laden Sie alle Pakete unter „Required Frameworks“ (Erforderliche Frameworks) herunter, indem Sie auf **Download** (Herunterladen) klicken.  
 
-    Diese Aktion muss für die x86-, x64- und ARM-Architektur ausgeführt werden.<br> 
+    Diese Aktion muss für die x86-, x64- und ARM-Architektur ausgeführt werden:<br> 
     *Es gibt 9 erforderliche Frameworkpakete, wenn Sie Version 1507 als Mindestversion für das Betriebssystem auswählen, 12 Pakete für Version 1511 und 15 Pakete für Version 1607.* .
 
 8. Laden Sie im Azure-Portal die Unternehmensportal-App als neue App in Microsoft Intune hoch. Fügen Sie die Anwendung hinzu, indem Sie „branchenspezifische App“ als **App-Typ** in dem Bereich **App hinzufügen** auswählen. Wählen Sie dann die App-Paketdatei (mit der Erweiterung „.AppxBundle“) aus.
@@ -60,11 +61,11 @@ Benutzer können die Unternehmensportal-App selbst über den Microsoft Store ins
 9. Wählen Sie unter **App-Abhängigkeitsdateien auswählen** alle Abhängigkeiten aus, die Sie in Schritt 7 durch Klicken bei gedrückter UMSCHALTTASTE heruntergeladen haben, und stellen Sie sicher, dass die Spalte **Hinzugefügt** für die von Ihnen benötigten Architekturen **Ja** anzeigt.
 
      > [!NOTE]
-     > Wenn die Abhängigkeiten nicht hinzugefügt werden, wird die App möglicherweise nicht auf den angegebenen Gerätetypen installiert.
+     > Wenn die Abhängigkeiten nicht hinzugefügt werden, wird die App möglicherweise nicht auf den festgelegten Gerätetypen installiert.
 
 10. Klicken Sie auf **OK**, geben Sie eine beliebige **App-Information** ein, und klicken Sie auf **Hinzufügen**.
 
-11. Weisen Sie die Unternehmensportal-App als erforderliche App den Zielbenutzern oder Gerätegruppen zu.  
+11. Weisen Sie den Zielbenutzern oder Gerätegruppen die Unternehmensportal-App als erforderliche App zu.  
 
 Weitere Informationen zur Verarbeitung von Abhängigkeiten für universelle Apps durch Intune finden Sie unter [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Bereitstellen einer APPXBUNDLE-Datei mit Abhängigkeiten über Microsoft Intune MDM).  
 

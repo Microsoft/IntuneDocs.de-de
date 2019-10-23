@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c852d89a12e2f06b2286699bc262a8e2f5b3d203
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 96ebae46fd4935c3070319f16d35d5b53888e94c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727206"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505177"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Bestimmen von Szenarien für Anwendungsfälle für die Verwaltung von Mobilgeräten
 

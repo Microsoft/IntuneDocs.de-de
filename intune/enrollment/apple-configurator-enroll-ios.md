@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/04/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a1c2acc2ebe5528e30c344a31c9551ac64bdf3ca
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: 21ee59af8c6d24a42ce3f8c9fefedd0e5dba7ba7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306786"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503325"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Einrichten der iOS-Geräteregistrierung mit Apple Configurator
 

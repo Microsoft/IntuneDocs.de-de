@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40bb96000513bb1de09ec8f8865735d70bddcd43
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c8e61be086323a16a6220573874ed80ce4e9bd32
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725217"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498990"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Hinzufügen von Apps zu Microsoft Intune 
 
@@ -50,7 +51,7 @@ Die folgende Tabelle führt die verschiedenen App-Typen auf und erläutert, wie 
 | **App-spezifischer Typ** | **Allgemeiner Typ** | **App-spezifische Vorgehensweisen** |
 | --- | --- | --- |
 | Android Store-Apps  | Store-App  | Wählen Sie **Android** als **App-Typ** aus, und geben Sie die Google Play Store-URL für die App ein. |
-| Android Enterprise-Apps  | Store-App  | Wählen Sie **Android** als **App-Typ** aus, und geben Sie die verwaltete Google Play Store-URL für die App ein. <sup>1</sup> |
+| Android Enterprise-Apps  | Store-App  | Wählen Sie **Android** als **App-Typ** aus, und geben Sie die URL für die App im verwalteten Google Play Store ein. <sup>1</sup> |
 | iOS Store-Apps  | Store-App  | Wählen Sie **iOS** als **App-Typ** aus, suchen Sie nach der App, und wählen Sie die App in Intune aus. |
 | Windows Phone 8.1 Store-Apps  | Store-App  | Wählen Sie **Windows Phone 8.1** als **App-Typ** aus, und geben Sie die Microsoft Store-URL für die App ein. |
 | Microsoft Store-Apps  | Store-App  | Wählen Sie **Windows** als **App-Typ** aus, und geben Sie die Microsoft Store-URL für die App ein. |
@@ -64,7 +65,7 @@ Die folgende Tabelle führt die verschiedenen App-Typen auf und erläutert, wie 
 | Integrierte iOS-App  | Integrierte App | Wählen Sie **Integrierte App** als **App-Typ** aus, und wählen Sie dann aus der Liste der bereitgestellten Apps die gewünschte integrierte App aus.  |
 | Integrierte Android-App  | Integrierte App | Wählen Sie **Integrierte App** als **App-Typ** aus, und wählen Sie dann aus der Liste der bereitgestellten Apps die gewünschte integrierte App aus.  |
 | Web-Apps  | Web-App  | Wählen Sie **Weblink** als **App-Typ** aus, und geben Sie eine gültige URL ein, die auf die Web-App verweist.  |
-| Android Enterprise-System-Apps  | Store-App  | Wählen Sie **Android Enterprise-System-App** als **Anwendungstyp**, und geben Sie dann den Namen der App, den Herausgeber und die Paketdatei ein.  |
+| Android Enterprise-System-Apps  | Store-App  | Wählen Sie **Android Enterprise-System-App** als **App-Typ** aus, und geben Sie dann den Namen der App, den Herausgeber und die Paketdatei ein.  |
 | Windows-App (Win32)  | LOB-App  | Wählen Sie **Windows-App (Win32)** als **App-Typ** aus, wählen Sie **App-Paketdatei** aus, und geben Sie dann eine Installationsdatei mit der Erweiterung **.intunewin** an.  |
 | Branchenspezifische macOS-Apps | LOB-App  | Wählen Sie **Branchenspezifisch** als **App-Typ** aus, wählen Sie dann die **App-Paketdatei** und dann eine Installationsdatei mit der Erweiterung **.intunemac** aus.  |
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c123de600d91f2ba44f9ae728d7f21c8adebed25
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4d53179ed43697769ec7142ace6b62c08a67f31a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727830"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502351"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>Überwachen der Geräteverschlüsselung mit Intune   
 

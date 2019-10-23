@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 175be4d51b034745ce6fab050f68be277f1d4858
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 623c6652964ae5a4f16a9c689dda3aee99c50d31
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723761"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506499"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Verwenden eines benutzerdefinierten Geräteprofils zum Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel – Intune
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -37,7 +38,7 @@ Vorinstallierte Schlüssel (Pre-shared keys, PSK) werden üblicherweise verwende
 - Möglicherweise ist es einfacher, den Code von einem Computer zu kopieren, der eine Verbindung mit dem jeweiligen Netzwerk herstellt, wie weiter unten in diesem Artikel beschrieben.
 - Sie können mehrere Netzwerke und Schlüssel hinzufügen, indem Sie weitere OMA-URI-Einstellungen hinzufügen.
 - Verwenden Sie für iOS den Apple Configurator auf einer Mac-Station, um das Profil einzurichten.
-- PSK erfordert eine Zeichenfolge von 64 Hexadezimalziffern oder eine Passphrase von 8 bis 63 druckbaren ASCII-Zeichen. Einige Zeichen wie Sternchen (*) werden nicht unterstützt.
+- PSK erfordert eine Zeichenfolge von 64 Hexadezimalziffern oder eine Passphrase von 8 bis 63 druckbaren ASCII-Zeichen. Einige Zeichen wie etwa das Sternchen (*) werden nicht unterstützt.
 
 ## <a name="create-a-custom-profile"></a>Erstellen eines benutzerdefinierten Profils
 Sie können ein benutzerdefiniertes Profil mit einem vorinstallierten Schlüssel für ein Android- oder Windows-WLAN-Profil oder ein EAP-basiertes WLAN-Profil erstellen. Informationen zum Erstellen des Profils im Azure-Portal finden Sie unter [Erstellen von benutzerdefinierten Geräteeinstellungen](custom-settings-configure.md). Wenn Sie das Geräteprofil erstellen, wählen Sie **Benutzerdefiniert** als Geräteplattform aus. Wählen Sie nicht das WLAN-Profil aus. Führen Sie folgende Schritte aus, wenn Sie eine benutzerdefinierte Plattform verwenden: 
@@ -59,7 +60,7 @@ Sie können ein benutzerdefiniertes Profil mit einem vorinstallierten Schlüssel
      > [!NOTE]
      > Stellen Sie sicher, dass Sie den Punkt am Anfang eingeben.
 
-     SSID steht für die SSID, für die Sie die Richtlinie erstellen. Wenn der WLAN-Name beispielsweise `Hotspot-1` lautet, geben Sie `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings` ein.
+     SSID steht für die SSID, für die Sie die Richtlinie erstellen. Lautet der WLAN-Name beispielsweise `Hotspot-1`, geben Sie `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings` ein.
 
    e. **Wertfeld** Hier fügen Sie Ihren XML-Code ein. Sehen Sie sich die Beispiele in diesem Artikel an. Aktualisieren Sie jeden Wert mit dem entsprechenden Wert für Ihre Netzwerkeinstellungen. Der Kommentarabschnitt des Codes enthält einige Hinweise.
 3. Klicken Sie auf **OK**, speichern Sie, und weisen Sie die Richtlinie anschließend zu.
@@ -77,7 +78,7 @@ Das folgende Beispiel enthält den XML-Code für ein Android- oder Windows-WLAN-
 
 - `<protected>false</protected>` muss auf **false** festgelegt werden. Eine Festlegung auf **true** könnte dazu führen, dass das Gerät ein verschlüsseltes Kennwort erwartet, das es dann zu entschlüsseln versucht. Dies würde einen Verbindungsfehler bewirken.
 
-- `<hex>53534944</hex>` sollte auf den hexadezimalen Wert von `<name><SSID of wifi profile></name>` festgelegt werden. Windows 10-Geräte können fälschlicherweise den Fehler `x87D1FDE8 Remediation failed` zurückgeben, aber das Gerät enthält das Profil weiterhin.
+- `<hex>53534944</hex>` sollte auf den hexadezimalen Wert von `<name><SSID of wifi profile></name>` festgelegt werden. Windows 10-Geräte können fälschlicherweise den Fehler `x87D1FDE8 Remediation failed` zurückgeben, doch das Gerät enthält das Profil weiterhin.
 
 - XML enthält Sonderzeichen, wie z. B. `&` (kaufmännisches Und-Zeichen). Wenn Sie Sonderzeichen verwenden, funktioniert die XML eventuell nicht wie erwartet. 
 
@@ -215,17 +216,17 @@ Das folgende Beispiel enthält den XML-Code für ein EAP-basiertes WLAN-Profil: 
 Sie können die XML-Datei auch aus einer vorhandenen WLAN-Verbindung erstellen. Führen Sie auf einem Windows-Computer die folgenden Schritte aus:
 
 1. Erstellen Sie einen lokalen Ordner für die exportierten WLAN-Profile, z. B. C:\WiFi.
-2. Öffnen Sie eine Eingabeaufforderung als Administrator (klicken Sie mit der rechten Maustaste auf `cmd` > **Als Administrator ausführen**).
+2. Öffnen Sie eine Eingabeaufforderung als Administrator (klicken Sie dazu mit der rechten Maustaste auf `cmd` > **Als Administrator ausführen**).
 3. Führen Sie `netsh wlan show profiles`aus. Dort sind alle Profilnamen aufgelistet.
 4. Führen Sie `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`aus. Mit diesem Befehl wird eine Datei namens `Wi-Fi-YourProfileName.xml` in „C:\Wifi“ erstellt.
 
-    - Wenn Sie ein WLAN-Profil mit einem vorinstallierten Schlüssel exportieren, fügen Sie `key=clear` zu dem Befehl hinzu.
+    - Wenn Sie ein WLAN-Profil mit einem vorinstallierten Schlüssel exportieren, fügen Sie dem Befehl `key=clear` hinzu:
   
       `netsh wlan export profile name="YourProfileName" key=clear folder=c:\Wifi`
 
       `key=clear` exportiert den Schlüssel im Nur-Text-Format, was für die erfolgreiche Verwendung des Profils erforderlich ist.
 
-Nachdem Sie die XML-Datei erstellt haben, kopieren Sie die XML-Syntax, und fügen Sie sie unter „OMA-URI-Einstellungen“ > **Datentyp** ein. Unter [Erstellen eines benutzerdefinierten Profils](#create-a-custom-profile) (in diesem Artikel) sind die Schritte aufgelistet.
+Nachdem Sie die XML-Datei erstellt haben, kopieren Sie die XML-Syntax, und fügen Sie sie unter „OMA-URI-Einstellungen“ > **Datentyp** ein. Im Abschnitt [Erstellen eines benutzerdefinierten Profils](#create-a-custom-profile) (in diesem Artikel) werden die erforderlichen Schritte aufgelistet.
 
 > [!TIP]
 > `\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}` umfasst auch alle Profile im XML-Format.
@@ -234,6 +235,6 @@ Nachdem Sie die XML-Datei erstellt haben, kopieren Sie die XML-Syntax, und füge
 
 - Bevor Sie ein WLAN-Profil mit PSK bereitstellen, vergewissern Sie sich, dass das Gerät eine direkte Verbindung mit dem Endpunkt herstellen kann.
 
-- Rechnen Sie beim Rotieren von Schlüsseln (Kennwörtern oder Passphrasen) mit Ausfallzeiten, und planen Sie Ihre Bereitstellungen. Erwägen Sie die Push-Übertragung von neuen WLAN-Profilen in der arbeitsfreien Zeit. Außerdem sollten Sie die Benutzer warnen, dass die Konnektivität betroffen sein kann.
+- Rechnen Sie beim Rotieren von Schlüsseln (Kennwörtern oder Passphrasen) mit Ausfallzeiten, und planen Sie Ihre Bereitstellungen. Erwägen Sie die Push-Übertragung von neuen WLAN-Profilen in der arbeitsfreien Zeit. Außerdem sollten Sie die Benutzer warnen, dass die Konnektivität beeinträchtigt sein kann.
 
-- Stellen Sie sicher, dass das Gerät des Endbenutzers über eine alternative Verbindung mit dem Internet verfügt, damit ein reibungsloser Übergang gewährleistet ist. Der Endbenutzer kann z. B. dazu in der Lage sein auf das Gast-WLAN (oder ein anderes WLAN-Netzwerk) oder eine Mobilfunkverbindung zugreifen, um mit Intune zu kommunizieren. Durch die zusätzliche Verbindung kann der Benutzer weiterhin Richtlinienaktualisierungen erhalten, wenn das WLAN-Profil des Unternehmens auf dem Gerät aktualisiert wird.
+- Stellen Sie für einen reibungslosen Übergang sicher, dass die Geräte der Benutzer über eine alternative Verbindung mit dem Internet verfügen. Der Endbenutzer kann z. B. dazu in der Lage sein auf das Gast-WLAN (oder ein anderes WLAN-Netzwerk) oder eine Mobilfunkverbindung zugreifen, um mit Intune zu kommunizieren. Durch die zusätzliche Verbindung kann der Benutzer weiterhin Richtlinienaktualisierungen erhalten, wenn das WLAN-Profil des Unternehmens auf dem Gerät aktualisiert wird.

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
@@ -16,12 +17,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b761672ceace57ae7c0939959d25b8d6e45be32
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: 50dbbb19cca9b5c46f0ba8b9d4e16c499534b536
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379834"
+ms.locfileid: "72503110"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Erfordert mehrstufige Authentifizierung für Intune-Geräteregistrierungen
 

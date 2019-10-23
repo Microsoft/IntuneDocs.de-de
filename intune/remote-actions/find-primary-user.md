@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 308f152a585fe7b605d309943545f242031ea177
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: d6f594e20abf1a507d1d4e00641a4821fe1ba9b0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379712"
+ms.locfileid: "72509332"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Suchen des primären Benutzers eines Intune-Geräts
 

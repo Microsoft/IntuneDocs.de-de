@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
@@ -16,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 58401a4125d073eb3e4f82230fcd6e53a359ed3c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: ed3152a6717898aa1f758fb06a5f701048aebed4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728181"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508767"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integrieren von Windows Hello for Business in Microsoft Intune  
 
@@ -57,11 +58,11 @@ Nutzen Sie die Informationen in diesem Artikel, um eine Windows Hello for Busine
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 
-2. Gehen Sie zu **Geräteregistrierung** > **Windows-Registrierung** > **Windows Hello for Business**. Die Windows Hello for Business-Seite öffnet sich.
+2. Gehen Sie zu **Geräteregistrierung** > **Windows-Registrierung** > **Windows Hello for Business**. Daraufhin wird der Bereich „Windows Hello for Business“ geöffnet.
 
 3. Wählen Sie aus den folgenden Optionen für **Konfigurieren von Windows Hello for Business**:
 
-    - **Deaktiviert**. Wenn Sie Windows Hello for Business nicht verwenden möchten, wählen Sie diese Einstellung aus. Ist diese Einstellung deaktiviert, können Benutzer Windows Hello for Business nicht bereitstellen, außer auf Azure Active Directory verbundenen Mobiltelefonen, bei denen eine Bereitstellung erforderlich sein kann.
+    - **Deaktiviert**. Wenn Sie Windows Hello for Business nicht verwenden möchten, wählen Sie diese Einstellung aus. Wenn diese Einstellung deaktiviert ist, können Benutzer Windows Hello for Business nur auf mit Azure Active Directory verknüpften Mobiltelefonen bereitstellen, für die die Bereitstellung erforderlich sein kann.
     - **Aktiviert**. Wählen Sie diese Einstellung aus, wenn Sie Windows Hello for Business-Einstellungen konfigurieren möchten.  Wenn Sie *Aktivieren* auswählen, werden zusätzliche Einstellungen für Windows Hello sichtbar. 
     - **Nicht konfiguriert**. Wählen Sie diese Einstellung aus, wenn Sie Windows Hello for Business-Einstellungen nicht mit Intune steuern möchten. Vorhandene Windows Hello for Business-Einstellungen auf Geräten mit Windows 10 werden nicht geändert. Alle anderen Einstellungen in dem Bereich sind nicht verfügbar.
 
@@ -104,7 +105,7 @@ Nutzen Sie die Informationen in diesem Artikel, um eine Windows Hello for Busine
 
      Wenn diese Option auf **Ja** festgelegt ist, erfordert Windows von allen Benutzern die Verwendung von Antispoofing für Gesichtsmerkmale, sofern dies unterstützt wird.
 
-   - **Anmeldung per Telefon zulassen**:  
+   - **Anmeldung per Telefon zulassen:**  
      Wenn diese Option auf **Ja** festgelegt ist, können die Benutzer einen Remote-Passport als tragbares Begleitgerät für die Authentifizierung von Desktopcomputern verwenden. Der Desktopcomputer muss Azure Active Directory angehören, und das Begleitgerät muss mit einer Windows Hello for Business-PIN konfiguriert werden.
 
 ## <a name="windows-holographic-for-business-support"></a>Unterstützung durch Windows Holographic for Business

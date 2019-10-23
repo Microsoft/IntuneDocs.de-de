@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/18/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 68921fd6-5f50-456c-a3af-83d7bc4b134b
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53480b7a2e008af46f4f8929cc6321e10b042b33
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: b17b87462b2c73e265f062c33a06a810e7c58bf8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306754"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504330"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Datensicherheit und -freigabe in Intune
 

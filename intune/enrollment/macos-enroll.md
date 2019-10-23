@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/13/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec0e22c55e337d6ffe9b617c3858982859995b77
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: cbdef7cffa76beeb158c47ab3651d438de2d6ccc
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722435"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503158"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Registrieren von macOS-Geräten in Intune
 

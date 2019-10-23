@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 04/18/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a5c3bec4-18ed-11e8-accf-0ed5f89f718b
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f0825d44ba52bee1331fe1d715e4e58806e80f5
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9f6ab8a4e8e46373a536949c13ceaebb267f34cd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721486"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504452"
 ---
 # <a name="data-intune-sends-to-google"></a>Von Intune an Google gesendete Daten
 

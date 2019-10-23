@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ec111319-7e02-434f-946b-88647726bf1a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9f9b6734dc5a5af320519a5f65442f01d21d66f
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 7460d5ccf046b25510d798c3a7ed4aa9ecd87a8a
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940234"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72499162"
 ---
 # <a name="understand-app-protection-policy-delivery-timing"></a>Verstehen, wann Schutzrichtlinien für Apps ausgelöst werden
 

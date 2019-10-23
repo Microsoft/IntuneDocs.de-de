@@ -9,20 +9,21 @@ manager: dougeby
 ms.date: 05/30/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
-ms.assetid: ''
+ms.assetid: 5f6682cb-5fcd-4018-b7f7-71768ad3152e
 ms.reviewer: kerimh
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 490c939e79659baac655cfd7d3d3a2ee10d98382
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a5e52d1967ff6f5cf97334c099bc2b5b854ae87c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726049"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502683"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>US Government-Endpunkte für Microsoft Intune
 

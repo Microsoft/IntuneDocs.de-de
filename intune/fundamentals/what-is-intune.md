@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/14/2019
 ms.topic: overview
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56c76663330cae5cb771358542fd22ff09398118
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: c3c03c67a99b78804c999250f8d1148a4b3d1d97
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314731"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504771"
 ---
 # <a name="microsoft-intune-is-an-mdm-and-mam-provider-for-your-devices"></a>Microsoft Intune ist ein MDM- und MAM-Anbieter für Ihre Geräte
 

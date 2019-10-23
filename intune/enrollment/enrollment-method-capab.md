@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/21/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30b46fcbb7ec6963e855c79478dbdef5b5cd8b90
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c6b12bb0066c37eb470065a169a3ad7866c69a17
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723137"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503264"
 ---
 # <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>Funktionen der Intune-Registrierungsmethoden für Windows-Geräte
 [!INCLUDE[azure_portal](../includes/azure_portal.md)]

@@ -7,9 +7,9 @@ author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 05/01/2019
-ms.topic: article
-ms.prod: ''
+ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d798f22ee4e0f11f46626eec01ad3b739d61467
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: 2d9556cc0357e76ee617ac0770a3efc2e3a1957f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306711"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508881"
 ---
 # <a name="intune-certificate-connector-events-and-diagnostic-codes"></a>Intune Certificate Connector-Ereignisse und Diagnosecodes
 

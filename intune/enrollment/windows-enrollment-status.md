@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8bc472a8b15746a46b5e0cda3a8fe11db7aa4974
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722305"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503025"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Einrichten einer Seite zum Registrierungsstatus
  

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f29d2894-e98b-4f2c-b444-a8ccc1b7efdd
@@ -16,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45e2985bcf01d635e964ee8785938c0d5df4e4af
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 86cef30c31b53c6bfd1873390fb7546cbeab2a53
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727609"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510039"
 ---
 # <a name="special-migration-considerations"></a>Besondere Überlegungen bei der Migration
 

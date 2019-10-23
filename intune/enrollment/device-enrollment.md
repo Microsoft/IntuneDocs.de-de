@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 4/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 304e869460a5396a486b6de0cd5c2f549c192b70
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: bb9aa6349a88f226c063703d6cb035b3c89636fd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379867"
+ms.locfileid: "72503254"
 ---
 # <a name="what-is-device-enrollment"></a>Was ist die Geräteregistrierung?
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]

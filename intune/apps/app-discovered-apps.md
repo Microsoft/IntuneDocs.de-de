@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 07dd262f-13e7-4cb2-9cc2-b755d1c276cf
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b8fcf211c19146ae632a40aad032266d498c183
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b5cadba411ea4aab74c70583062fcb90eccf19aa
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725776"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507486"
 ---
 # <a name="intune-discovered-apps"></a>Von Intune ermittelte Apps
 

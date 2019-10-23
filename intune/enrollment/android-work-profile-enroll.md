@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 5/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c447b6b21021573d95a5ece3297e548f216b7a0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4339f98ed133c3426faee8bd4b18024fd2648606
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723527"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503352"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-work-profile-devices"></a>Einrichten der Registrierung von Android Enterprise-Arbeitsprofilgeräten
 
@@ -35,13 +36,13 @@ Führen Sie die folgenden Schritte aus, um die Android Enterprise-Arbeitsprofilv
 1. [Verknüpfen Sie Ihr Intune-Mandantenkonto mit Ihrem Android Enterprise-Konto](connect-intune-android-enterprise.md).
 2. Geben Sie die Registrierungseinstellungen für Android Enterprise-Arbeitsprofilen an. Android Enterprise-Arbeitsprofile werden [nur auf bestimmten Android-Geräten unterstützt](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Jedes Gerät, das Android Enterprise-Arbeitsprofile unterstützt, unterstützt auch die Android-Geräteadministratorverwaltung. Mit Intune können Sie angeben, wie Geräte, die Android Enterprise-Arbeitsprofile unterstützen, mithilfe von [Registrierungseinschränkungen](enrollment-restrictions-set.md) verwaltet werden sollen.
     - **Blockieren:**  Alle Android-Geräte, einschließlich Geräte, die Android Enterprise-Arbeitsprofile unterstützen, werden als Android-Geräteadministratorgeräte registriert, es sei denn, die Registrierung als Android-Geräteadministrator wird ebenfalls blockiert. 
-    - **Zulassen (Standardeinstellung)** : Alle Geräte, die Android Enterprise-Arbeitsprofile unterstützen, werden als Android Enterprise-Arbeitsprofilgeräte registriert. Alle Android-Geräte, die Android Enterprise-Arbeitsprofile nicht unterstützen, werden als Android-Administratorgeräte registriert, es sei denn, die Registrierung als Android-Geräteadministrator wird ebenfalls blockiert. 
+    - **Zulassen (Standardeinstellung)** : Alle Geräte, die Android Enterprise-Arbeitsprofile unterstützen, werden als Android Enterprise-Arbeitsprofilgeräte registriert. Alle Android-Geräte, die Android Enterprise-Arbeitsprofile nicht unterstützen, werden als Android-Geräteadministratorgeräte registriert, sofern die Registrierung als Android-Geräteadministrator nicht ebenfalls blockiert wird. 
 > [!NOTE]
-> Die Standardeinstellung auf **Zulassen** ist für neue Mandanten ab Juli 2019 gültig. Alle vorherigen Mandanten werden keine Änderungen an ihren Registrierungseinschränkungen erfahren und sehen, welche Richtlinien sie in den Registrierungsbeschränkungen festgelegt haben. Für frühere Mandanten, die nie Änderungen an den Registrierungseinschränkungen hatten, ist **Blockieren** weiterhin der Standard für Android Enterprise-Arbeitsprofile.
+> Die Standardeinstellung auf **Zulassen** ist für neue Mandanten ab Juli 2019 gültig. Alle vorherigen Mandanten werden keine Änderung an den Registrierungseinschränkungen feststellen, und die in den Registrierungseinschränkungen festgelegten Richtlinien bleiben erhalten. Für frühere Mandanten, die nie Änderungen an den Registrierungseinschränkungen hatten, ist **Blockieren** weiterhin der Standard für Android Enterprise-Arbeitsprofile.
 
 3. [Informieren Sie Ihre Benutzer darüber, wie sie ihre Geräte registrieren sollen.](/intune-user-help/create-a-work-profile-and-enroll-your-device-in-intune-android)  
 
-Wenn Sie Geräte mit Android Enterprise-Arbeitsprofilen registrieren möchten, die bereits als reguläre Android-Geräte registriert wurden, müssen Sie die Registrierung der Geräte aufheben und die Geräte anschließend erneut registrieren.
+Wenn Sie Geräte, die bereits als Android-Geräteadministrator registriert wurden, mithilfe von Android Enterprise-Arbeitsprofilen registrieren möchten, müssen Sie die Registrierung dieser Geräte zunächst aufheben und die Geräte anschließend erneut registrieren.
 > [!NOTE]
 > Als Administrator können Sie dies mit der Funktion **Retire** (Außer Kraft setzen) remote durchführen. Diese Funktion finden Sie im Aktionsmenü, nachdem Sie das Gerät auf dem Blatt **Alle Geräte** ausgewählt haben.
 

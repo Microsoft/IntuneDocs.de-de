@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 5ebab881a524bc361e271856b6762776974cea20
-ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
+ms.openlocfilehash: 9965c6e85173ea9958182be43b6c93d9578d534f
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2019
-ms.locfileid: "72601536"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749354"
 ---
 Diese Hinweise enthalten wichtige Informationen, die Ihnen bei der Vorbereitung auf künftige Änderungen und Features im Zusammenhang mit Intune helfen können.
 
@@ -70,7 +70,6 @@ Sie müssen keine Maßnahmen ergreifen, sollten aber bei Bedarf Ihre Leitfäden 
 
 #### <a name="additional-information"></a>Zusätzliche Informationen 
 https://aka.ms/intune_fullscreen
-
 
 ### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-october---4911065---"></a>Stellen Sie sich auf eine Änderung ein: Intune App SDK und App-Schutzrichtlinien für Android unterstützen Android 5.0 und höher im Oktober. <!--4911065 -->
 Intune wird Android 5.x (Lollipop) und höher im Oktober unterstützen. Aktualisieren Sie alle umschließenden Apps mit dem neuesten Intune App SDK, und aktualisieren Sie Ihre Geräte.

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 03/09/2017
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
@@ -16,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 686a347273648ce2abac55a0e1990b06c4782d32
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9a9fb3e006489603a04039e0810684a6fef152dd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721642"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510290"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Grundlegendes zum Verständnis von Meldungen in der Unternehmensportal-App
 

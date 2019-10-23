@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 29329f86-1aa5-434f-9925-8dc28bf35348
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d414899b6146afbe2c5ac119193fe0e59aa719b
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 8a6c430ab15c40166e8c3afbccd6fcc7c2c5976d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71939972"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507255"
 ---
 # <a name="deploying-apps-using-intune-on-the-gcc-high-and-dod-environments"></a>Bereitstellen von Apps mit Intune auf GCC High- und DoD-Umgebungen 
 

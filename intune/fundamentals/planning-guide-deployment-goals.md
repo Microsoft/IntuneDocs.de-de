@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cc4a109aac22617f2785a74de701e4d1d7bdf09
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9ea88396c9637b0eaf8fa6886f33164fafe25b09
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727401"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509967"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Bestimmen der Bereitstellungsziele, sonstigen Ziele und Herausforderungen
 

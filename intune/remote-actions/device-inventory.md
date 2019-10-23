@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e88371ac1ab51340f0f897d835f78562bed7d252
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a72477351425e9230200995658cc6f73a8565fb7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727973"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509488"
 ---
 # <a name="see-device-details-in-intune"></a>Anzeigen von Gerätedetails in Intune
 
@@ -35,7 +36,7 @@ Dieser Artikel erläutert, wie Sie all Ihre Geräte und deren Eigenschaften im A
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 3. Klicken Sie auf **Geräte** > **Alle Geräte**, und wählen Sie anschließend eins der aufgeführten Geräte aus, damit dessen Gerätedetails geöffnet werden:
 
-   - In der **Übersicht** werden der Gerätename und einige wichtige Eigenschaften des Geräts aufgeführt, z. B. ob es sich um ein BYOD-Gerät (Bring-Your-Own-Device), die Einckeckzeit und mehr. Auf diesem Gerät können Sie die folgenden Aufgaben ausführen:
+   - In der **Übersicht** werden der Gerätename und einige wichtige Eigenschaften des Geräts aufgeführt, z. B. ob es sich um ein BYOD-Gerät (Bring-Your-Own-Device), die Einckeckzeit und mehr. Auf diesem Gerät können Sie die folgenden Aktionen ausführen:
       - [Außerkraftsetzen](devices-wipe.md#retire)
       - [Zurücksetzen](devices-wipe.md#wipe)
       - [Remotesperre](device-remote-lock.md)
@@ -45,7 +46,7 @@ Dieser Artikel erläutert, wie Sie all Ihre Geräte und deren Eigenschaften im A
       - [Sauberer Start](device-fresh-start.md) (nur Windows)
       - Starten einer Remoteunterstützungssitzung
    - Verwenden Sie die **Eigenschaften**, um eine [von Ihnen erstellte Gerätekategorie](../enrollment/device-group-mapping.md) zuzuweisen, und ändern Sie den Besitz des Geräts in ein privates oder ein unternehmenseigenes Gerät.
-   - **Hardware** enthält viele Details über das Gerät, wie z. B. die Geräte-ID, das Betriebssystem und die Version, der Speicherplatz und weitere Details.
+   - Unter **Hardware** werden viele Details über das Gerät aufgeführt, z. B. die Geräte-ID, das Betriebssystem und die Version, der Speicherplatz und weitere Details.
    - Unter **Ermittelte Apps** werden alle auf dem Gerät installierten Apps aufgeführt, die von Intune gefunden wurden. Weitere Informationen finden Sie unter [Von Intune ermittelte Apps](../apps/app-discovered-apps.md).
    - Unter **Gerätekonformität** werden alle zugewiesenen Konformitätsrichtlinien aufgeführt, und es wird angezeigt, ob das Gerät mit diesen Richtlinien konform ist.
    - Unter **Gerätekonfiguration** werden alle Gerätekonfigurationsrichtlinien angezeigt, die dem Gerät zugewiesen sind, und Sie können erkennen, ob die Richtlinie erfolgreich war oder fehlgeschlagen ist.
@@ -54,7 +55,7 @@ Dieser Artikel erläutert, wie Sie all Ihre Geräte und deren Eigenschaften im A
 Je nach Netzbetreiber der Geräte werden möglicherweise nicht alle Details erfasst.
 
 > [!Note]  
-> Der Hardware- und Softwarebestand wird im Intune-Dienst alle 7 Tage aktualisiert.
+> Der Hardware- und Softwarebestand wird im Intune-Dienst alle 7 Tage aktualisiert.
 
 |Detail|Beschreibung|Plattform| 
 |--------------|----------------------|----|  
@@ -64,11 +65,11 @@ Je nach Netzbetreiber der Geräte werden möglicherweise nicht alle Details erfa
 |Intune-Geräte-ID|Eine Geräte-ID, die das Gerät eindeutig bezeichnet.|Windows, iOS|
 |Seriennummer|Die vom Hersteller für das Gerät vergebene Seriennummer.|Windows, iOS|
 |Freigegebenes Gerät|Wenn **Ja** ausgewählt ist, wird das Gerät für mehr als einen Benutzer freigegeben.|Windows, iOS|
-|Durch den Benutzer genehmigte Registrierung|Wenn **Ja** ausgewählt ist, dann besitzt das Gerät eine vom Benutzer genehmigte Registrierung, mit der Administratoren bestimmte Sicherheitseinstellungen auf dem Gerät verwalten können.|Windows, iOS|
+|Durch den Benutzer genehmigte Registrierung|Wenn **Ja** angegeben wird, besitzt das Gerät eine vom Benutzer genehmigte Registrierung, mit der Administratoren bestimmte Sicherheitseinstellungen auf dem Gerät verwalten können.|Windows, iOS|
 |Betriebssystem|Das auf dem Gerät verwendete Betriebssystem.|Windows, iOS|
 |Betriebssystemversion|Die Version des Betriebssystems auf dem Gerät.|Windows, iOS|
 |Betriebssystemsprache|Die für das Betriebssystem auf dem Gerät festgelegte Sprache.|Windows, iOS|
-|Buildnummer|Gibt die Betriebssystembuildnummer an.|Android|
+|Buildnummer|Gibt die Buildnummer des Betriebssystems an.|Android|
 |Sicherheitspatchebene|Die Sicherheitspatchebene für das Gerät|Android|
 |Gesamtmenge des Speicherplatzes|Der gesamte Speicherplatz auf dem Gerät (in GB).|Windows, iOS|
 |Freier Speicherplatz|Der gesamte freie Speicherplatz auf dem Gerät (in GB).|Windows, iOS|
@@ -85,7 +86,7 @@ Je nach Netzbetreiber der Geräte werden möglicherweise nicht alle Details erfa
 |Letzter Kontakt|Datum und Uhrzeit der letzten Verbindung des Gerät bei Intune.|Windows, iOS, Android|
 |Code zur Umgehung der Aktivierungssperre|Der Code, mit denen die Aktivierungssperre umgangen werden kann.|Windows, iOS, Android|
 |Registriert bei Azure AD|Wenn **Ja** ausgewählt ist, wurde das Gerät bei Azure Active Directory registriert.|Windows, iOS, Android|
-|Für Intune registriert|Wenn **Ja** ausgewählt ist, wurde das Gerät bei Intune registriert.|Windows, iOS, Android|
+|Für Intune registriert|Wenn **Ja** angegeben wird, wurde das Gerät bei Intune registriert.|Windows, iOS, Android|
 |Konformität|Der Konformitätszustand des Geräts.|Windows, iOS, Android|
 |EAS aktiviert|Wenn **Ja** ausgewählt ist, ist das Gerät mit einem Exchange-Postfach synchronisiert.|Windows, iOS, Android|
 |EAS-Aktivierungs-ID|Die Exchange ActiveSync-ID des Geräts.|Windows, iOS, Android|

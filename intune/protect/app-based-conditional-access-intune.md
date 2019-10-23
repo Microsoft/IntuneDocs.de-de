@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/11/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46ff51c872c2e8c87d044bde3c262203d5f55e8e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2d3cae06c3ce763fe8ca94bbed9bf35e8abef52c
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723059"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502601"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>App-basierter bedingter Zugriff mit Intune
 
@@ -38,27 +39,27 @@ Mit App-basiertem bedingten Zugriff und der Verwaltung von Client-Apps wird eine
 Wenn Sie nur für die Microsoft Outlook-App den Zugriff auf Exchange Online zulassen, können Sie die integrierten E-Mail-Apps von iOS und Android blockieren. Darüber hinaus können Sie für Apps, auf die keine Intune-App-Schutzrichtlinien angewendet wurden, den Zugriff auf SharePoint Online blockieren.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Bevor Sie eine App-basierte bedingte Zugriffsrichtlinie erstellen, benötigen Sie Folgendes:
+Damit Sie eine App-basierte Richtlinie für bedingten Zugriff erstellen können, benötigen Sie Folgendes:
 
 - **Enterprise Mobility + Security (EMS)** oder ein **Azure Active Directory Premium-Abonnement**
 - Benutzer müssen für EMS oder Azure AD lizenziert werden.
 
-Weitere Informationen finden Sie in der [Enterprise Mobility – Preise](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) oder der [Azure Active Directory – Preise](https://azure.microsoft.com/pricing/details/active-directory/).
+Weitere Informationen finden Sie unter [Enterprise Mobility: Preise](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) oder [Azure Active Directory: Preise](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## <a name="supported-apps"></a>Unterstützte Apps
 
 Eine Liste von Apps, die den App-basierten bedingten Zugriff unterstützen, finden Sie in der [Referenz zu den Einstellungen für den bedingten Azure Active Directory-Zugriff](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
 
-Der App-basierte bedingte Zugriff [unterstützt auch branchenspezifische Apps](app-modern-authentication-block.md), aber diese Apps müssen die [moderne Authentifizierung von Office 365](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) nutzen. 
+Der App-basierte bedingte Zugriff [unterstützt auch branchenspezifische Apps](app-modern-authentication-block.md), aber diese Apps müssen die [moderne Authentifizierung von Office 365](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) nutzen. 
 
 ## <a name="how-app-based-conditional-access-works"></a>Funktionsweise des App-basierten bedingten Zugriffs
 
-In diesem Beispiel hat der Administrator App-Schutzrichtlinien auf die Outlook-App angewendet. Zudem gilt eine Regel für bedingten Zugriff, mit der die Outlook-App einer genehmigten Liste von Apps hinzugefügt wird, die beim Zugriff auf Unternehmens-E-Mails verwendet werden kann.
+In diesem Beispiel hat der Administrator App-Schutzrichtlinien auf die Outlook-App angewendet. Zudem gilt eine Regel für bedingten Zugriff, mit der die Outlook-App einer genehmigten Liste von Apps hinzugefügt wird, die verwendet werden kann, um auf Unternehmens-E-Mails zuzugreifen.
 
 > [!NOTE]
 > Die Struktur aus dem nachfolgenden Flussdiagramm kann für andere verwaltete Apps verwendet werden.
 
-![Veranschaulichung des Prozesses des App-basierten bedingten Zugriffs in einem Flowchart](./media/app-based-conditional-access-intune/ca-intune-common-ways-3.png)
+![Veranschaulichung des Prozesses des App-basierten bedingten Zugriffs in einem Flussdiagramm](./media/app-based-conditional-access-intune/ca-intune-common-ways-3.png)
 
 1. Der Benutzer versucht, sich über die Outlook-App bei Azure AD zu authentifizieren.
 

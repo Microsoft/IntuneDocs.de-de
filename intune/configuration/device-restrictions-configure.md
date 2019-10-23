@@ -8,32 +8,33 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61a8815bdbb0121d727c80dda0421922e0531cf7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b7b4597106d1fffb65f112feae750aa7c8feefc0
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724047"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72493984"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Konfigurieren von Einstellungen für Geräteeinschränkungen in Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Intune enthält Richtlinien zur Geräteeinschränkung, die Administratoren bei der Steuerung von Android-, iOS-, macOS- und Windows-Geräten unterstützen. Mit diesen Einschränkungen können Sie eine Vielzahl von Einstellungen und Funktionen steuern, um die Ressourcen Ihres Unternehmens zu schützen. Administratoren können z.B.:
+Intune enthält Richtlinien zur Geräteeinschränkung, die Administratoren bei der Steuerung von Android-, iOS-, macOS- und Windows-Geräten unterstützen. Mit diesen Einschränkungen können Sie eine Vielzahl von Einstellungen und Features steuern, um die Ressourcen Ihres Unternehmens zu schützen. Administratoren können z.B.:
 
 - Die Kamera des Geräts zulassen, oder sie blockieren
 - Den Zugriff auf Google Play, App-Stores, das Anzeigen von Dokumenten und Spiele steuern.
-- Integrierte Apps blockieren oder eine Liste von Apps erstellen, die zugelassen oder verboten sind
-- Das Speichern von Dateien in Cloud- oder Speicherkonten erlauben oder verhindern
+- integrierte Apps blockieren oder eine Liste von Apps erstellen, die zugelassen oder nicht zugelassen werden.
+- das Speichern von Dateien in Cloud- oder Speicherkonten erlauben oder verhindern.
 - Eine minimale Kennwortlänge einstellen und einfache Kennwörter blockieren
 
-Diese Features sind in Intune verfügbar und werden vom Administrator konfiguriert. Intune verwendet „Konfigurationsprofile“ zum Erstellen und Anpassen dieser Einstellungen für die Anforderungen Ihrer Organisation. Nachdem Sie diese Funktionen in einem Profil hinzugefügt haben, können Sie das Profil anschließend auf Geräte in Ihrer Organisation verschieben oder bereitstellen.
+Diese Features sind in Intune verfügbar und werden vom Administrator konfiguriert. Intune verwendet „Konfigurationsprofile“ zum Erstellen und Anpassen dieser Einstellungen für die Anforderungen Ihrer Organisation. Nachdem Sie diese Features in einem Profil hinzugefügt haben, können Sie das Profil anschließend auf Geräte in Ihrer Organisation pushen oder bereitstellen.
 
 In diesem Artikel erfahren Sie, wie Sie ein Geräteeinschränkungsprofil erstellen. Sie können auch alle verfügbaren Einstellungen für die verschiedenen Plattformen anzeigen.
 
@@ -43,7 +44,7 @@ In diesem Artikel erfahren Sie, wie Sie ein Geräteeinschränkungsprofil erstell
 2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 3. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein guter Richtlinienname ist beispielsweise **iOS: Blockieren der Kamera auf Geräten**.
+    - **Name**: Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein guter Richtlinienname ist beispielsweise **iOS: Kamera auf Geräten blockieren**.
     - **Beschreibung**: Geben Sie eine Beschreibung für die Richtlinie ein. Diese Einstellung ist optional, wird jedoch empfohlen.
     - **Plattform**: Wählen Sie die Plattform Ihrer Geräte aus. Folgende Optionen sind verfügbar:  
 
@@ -55,7 +56,7 @@ In diesem Artikel erfahren Sie, wie Sie ein Geräteeinschränkungsprofil erstell
         - **Windows 8.1 und höher**
         - **Windows 10 und höher**
 
-    - **Profiltyp**: Wählen Sie **Geräteeinschränkungen** aus:
+    - **Profiltyp**: Wählen Sie **Geräteeinschränkungen** aus.
 
         Um ein Geräteeinschränkungsprofil für Windows 10 Team-Geräte wie etwa ein Surface Hub zu erstellen, wählen Sie **Geräteeinschränkungen (Windows 10 Team)** aus.
 

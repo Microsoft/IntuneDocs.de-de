@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe3f856a2faba2c140fa92fa9ab486213c38a1c1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2c3cf75c1b5d6984a7f922af8b969458b4e4336e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722253"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509174"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Registrieren oder Anmelden bei Microsoft Intune
 

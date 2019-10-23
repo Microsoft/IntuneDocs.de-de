@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35f52e80f83426c076ac7925d308daacf4595f88
-ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
+ms.openlocfilehash: 5b80b0dbd8128606db9220178baf0d05af1a3800
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72251509"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498800"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Konfigurieren von Google Chrome für Android-Geräte mit Intune 
 

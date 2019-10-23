@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa44fca7c36701f699e64d68e7f1fc61b57ec721
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 950f74795c8f1a1a17c70d75125d9613beb7f20e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727154"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509921"
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Bereitstellungsplanungs-, Entwurfs- und Implementierungshandbuch für Intune
 

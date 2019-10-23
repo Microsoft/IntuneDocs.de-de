@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 03/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63ad26077c00bf4ad4350ebd9ee124d61a69b324
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b4890410f5948cdc9bd1c6e3d85125d8e0713d9b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723865"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72492313"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Schnellstart: Erstellen eines E-Mail-Geräteprofils für iOS
 

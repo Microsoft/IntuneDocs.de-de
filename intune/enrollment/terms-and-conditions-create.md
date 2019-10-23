@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/20/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ef002b508e484d6967bbdd0908729332d866046
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0718fae09228b9359b073901f3a344a09a6176e7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726361"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509246"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>Geschäftsbedingungen für den Benutzerzugriff
 
@@ -69,7 +70,7 @@ Führen Sie die folgenden Schritte aus, um Geschäftsbedingungen zu erstellen. D
     - **Alle Benutzer**: Wählen Sie diese Option aus, um diese allgemeinen Geschäftsbedingungen allen Benutzern zuzuweisen.
     - **Gruppen auswählen**: Wählen Sie diese Option aus, um diese allgemeinen Geschäftsbedingungen allen Personen in den von Ihnen identifizierten Gruppen zuzuordnen, indem Sie **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen** auswählen.
 
-9. Wählen Sie **Weiter** > **Erstellen**aus.
+9. Klicken Sie auf **Weiter** > **Erstellen**.
 
 ## <a name="see-how-terms-are-displayed-to-your-users"></a>Darstellung der Nutzungsbedingungen für die Benutzer
 Das folgende Beispiel zeigt **Titel** und **Zusammenfassung der Nutzungsbedingungen** in der Verwaltungskonsole und im Unternehmensportal.

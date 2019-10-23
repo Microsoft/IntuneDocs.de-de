@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 469f969b6429cc39b5a8b8d3c041b96fc773c9ec
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0e404f6591eb042fa4d035f3377e211a219fabe4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724957"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72497962"
 ---
 # <a name="configure-microsoft-launcher"></a>Konfigurieren von Microsoft Launcher
 

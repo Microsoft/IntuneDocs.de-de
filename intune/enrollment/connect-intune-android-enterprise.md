@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 5/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ad9c098c0c9575f511c14c7b2b8120815abe3cb
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0fad076b33bed5375dd8e53dd401a2c9c4c39237
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723384"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505555"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>Herstellen einer Verbindung zwischen Ihrem Intune-Konto und Ihrem verwalteten Google Play-Konto
 
@@ -33,7 +34,7 @@ Sie müssen eine Verbindung zwischen Ihrem Intune-Mandantenkonto und Ihrem verwa
 Intune fügt bei der Verbindung mit Google Play automatisch vier gängige Android Enterprise-bezogene Apps zur Intune-Administratorkonsole hinzu, um Ihnen die Konfiguration und Nutzung der Android Enterprise-Verwaltung zu erleichtern. Die vier Android Enterprise-Apps sind wie folgt:
 
 - **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** : für vollständig verwaltete Android Enterprise-Szenarien.
-- **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** : Hilft bei der Anmeldung bei Ihren Konten, wenn Sie die zweistufige Überprüfung verwenden.
+- **[Microsoft Authenticator:](https://play.google.com/store/apps/details?id=com.azure.authenticator)** Hilft bei der Anmeldung bei Ihren Konten, wenn Sie die zweistufige Überprüfung verwenden.
 - **[Intune-Unternehmensportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** : wird für App Protection Policies (APP) und Szenarien mit Android Enterprise-Arbeitsprofilen genutzt.
 - [Managed Home Screen](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) : wird für dedizierte/Kioskszenarien mit Android Enterprise verwendet.
 
@@ -62,7 +63,7 @@ Intune fügt bei der Verbindung mit Google Play automatisch vier gängige Androi
 
 Sie können die Registrierung und die Verwaltung von Android Enterprise deaktivieren. Dazu müssen Sie zunächst alle registrierten Android Enterprise-Geräte außer Betrieb nehmen, einschließlich Arbeitsprofilgeräte, dedizierte Geräte und vollständig verwaltete Geräte. Wenn Sie anschließend in der Intune-Administratorkonsole auf **Trennen** klicken, werden alle Android Enterprise-Arbeitsprofilgeräte und alle dedizierten Android Enterprise-Geräte aus der Registrierung entfernt. Dadurch wird außerdem die Beziehung zwischen dem verwalteten Google Play-Konto und Intune entfernt.
 
-1. Als Intune-Administrator melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich als Intune-Administrator bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 2. Klicken Sie auf **Geräteregistrierung** > **Android-Registrierung** > **Managed Google Play** > **Trennen**.
 3. Wählen Sie **Ja**, um die Verknüpfung und die Registrierung aller Android Enterprise-Geräte in Intune aufzuheben.
 

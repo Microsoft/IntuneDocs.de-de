@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1679eb656e04296e53d8994dcd47144621c99d0c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: dc0194bfaf1ec5e3120b6bd30eb6b2eb82c6ec2d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721772"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504730"
 ---
 # <a name="set-up-intune-certificate-connector-for-digicert-pki-platform"></a>Einrichten des Intune Certificate Connectors für die DigiCert-PKI-Plattform  
 

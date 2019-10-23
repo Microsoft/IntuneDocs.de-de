@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 12/06/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 20ec38e5db8f65b90083b3aececd8b059b8ea45e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 645cb2c920d3da56bb0267073c1951d0b72d73de
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723371"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505644"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Einrichten der iOS-Geräteregistrierung mit Apple School Manager
 
@@ -35,7 +36,7 @@ Um die Registrierung mit Apple School Manager möglich zu machen, müssen Sie di
 Die Registrierung von Apple School Manager kann nicht mit dem [Programm zur Geräteregistrierung von Apple](device-enrollment-program-enroll-ios.md) oder dem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md) verwendet werden.
 
 **Voraussetzungen**
-- [Apple Mobile Device Management (MDM)-Pushzertifikat](apple-mdm-push-certificate-get.md)
+- [Pushzertifikat für Apple-MDM (Mobile Device Management, Verwaltung mobiler Geräte)](apple-mdm-push-certificate-get.md)
 - [MDM-Autorität](../fundamentals/mdm-authority-set.md)
 - [Apple-MDM-Push-Zertifikat](apple-mdm-push-certificate-get.md)
 - Bei ADFS ist für Benutzeraffinität [Endpunkt WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints) erforderlich. [Erfahren Sie mehr](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
@@ -104,7 +105,7 @@ Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil fü
     >
     > Diese Optionen werden nicht unterstützt, wenn die Authentifizierung über den Setup-Assistenten von Apple erfolgt.
 
-6. Wählen Sie **Geräteverwaltungseinstellungen** aus, und geben Sie an, ob Geräte mit diesem Profil überwacht werden sollen.
+6. Klicken Sie auf **Geräteverwaltungseinstellungen**, und geben Sie an, ob Geräte mit diesem Profil überwacht werden sollen.
     Bei **überwachten** Geräten stehen mehr Verwaltungsfunktionen zur Verfügung, und die Aktivierungssperre ist standardmäßig deaktiviert. Es wird von Microsoft empfohlen, DEP als Mechanismus zur Aktivierung des überwachten Modus zu verwenden. Dies gilt insbesondere für Organisationen, die eine große Anzahl von iOS-Geräten bereitstellen.
 
     Die Benutzer werden auf zweierlei Weise benachrichtigt, dass ihre Geräte überwacht werden:
@@ -117,7 +118,7 @@ Da Sie nun Ihr Token installiert haben, können Sie ein Registrierungsprofil fü
 
 7. Wählen Sie aus, ob für Geräte mit diesem Profil die gesperrte Registrierung verwendet werden soll. Wenn **Gesperrte Registrierung** aktiviert ist, sind die iOS-Einstellungen deaktiviert, mit denen das Verwaltungsprofil aus dem Menü **Einstellungen** entfernt werden kann. Nach der Geräteregistrierung können Sie diese Einstellung nicht ändern, ohne das Gerät zurückzusetzen. Bei solchen Geräten muss der Verwaltungsmodus **Überwacht** auf *Ja* eingestellt sein. 
 
-8. Diese Einstellung ermöglicht es, dass mehrere Benutzer sich mithilfe einer verwalteten Apple-ID bei registrierten iPads anmelden können. Wählen Sie dazu **Ja** unter **Gemeinsam genutztes iPad**. (Diese Option erfordert den Modus **Ohne Benutzeraffinität registrieren** und **Überwacht**, der auf **Ja** eingestellt ist.) Verwaltete Apple-IDs werden im Apple School Manager-Portal erstellt. Weitere Informationen zu [gemeinsam genutzten iPads](../fundamentals/education-settings-configure-ios-shared.md) finden Sie in den [entsprechenden Apple-Anforderungen](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+8. Mithilfe einer verwalteten Apple-ID können Sie mehreren Benutzern ermöglichen, sich bei registrierten iPads anzumelden. Wählen Sie dazu **Ja** unter **Gemeinsam genutztes iPad**. (Diese Option erfordert den Modus **Ohne Benutzeraffinität registrieren** und **Überwacht**, der auf **Ja** eingestellt ist.) Verwaltete Apple-IDs werden im Apple School Manager-Portal erstellt. Weitere Informationen zu [gemeinsam genutzten iPads](../fundamentals/education-settings-configure-ios-shared.md) finden Sie in den [entsprechenden Apple-Anforderungen](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
 9. Wählen Sie aus, ob für Geräte, für die dieses Profil verwendet wird, die Option **Mit Computern synchronisieren** verfügbar sein soll. Wenn Sie **Apple Configurator nach Zertifikat zulassen** auswählen, müssen Sie unter **Apple Configurator-Zertifikate** ein Zertifikat auswählen.
 
@@ -167,7 +168,7 @@ Nachdem Intune die Berechtigung zum Verwalten Ihrer Apple School Manager-Geräte
 Wählen Sie in [Intune](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Registrierungsprogrammtoken** aus, wählen Sie in der Liste ein Token aus, und wählen Sie dann **Geräte** > **Synchronisieren** aus. ![Screenshot des Knotens „Geräte des Registrierungprogramms“ und des Links „Synchronisierung“](./media/apple-school-manager-set-up-ios/image06.png)
 
 Zur Befolgung der Apple-Bedingungen für zulässigen Datenverkehr des Registrierungsprogramms erzwingt Intune die folgenden Einschränkungen:
-- Eine vollständige Synchronisation kann nicht öfter als einmal alle sieben Tage erfolgen. Während einer vollständigen Synchronisierung aktualisiert Intune jede Seriennummer von Apple, die Intune zugewiesen ist. Wenn eine vollständige Synchronisierung innerhalb von sieben Tagen nach der vorherigen vollständigen Synchronisierung versucht wird, aktualisiert Intune nur Seriennummern, die nicht bereits in Intune aufgeführt sind.
+- Eine vollständige Synchronisation kann nicht öfter als einmal alle sieben Tage erfolgen. Während einer vollständigen Synchronisierung aktualisiert Intune jede Seriennummer von Apple, die Intune zugewiesen ist. Wenn eine vollständige Synchronisierung innerhalb von sieben Tagen nach der vorherigen vollständigen Synchronisierung versucht wird, aktualisiert Intune nur Seriennummern, die nicht bereits in Intune aufgeführt werden.
 - Synchronisierungsanforderungen müssen innerhalb von 15 Minuten abgeschlossen sein. Während dieser Zeit oder bis zum erfolgreichen Erfüllen der Anforderung wird die Schaltfläche **Synchronisieren** deaktiviert.
 - Intune synchronisiert alle 24 Stunden neue und entfernte Geräte für Apple.
 

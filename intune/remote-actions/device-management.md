@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/19/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cd1d99e0c3853a7bf607dd2f64046c503068566d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a3ee6240d9efb0d09c41a6a9b1260cd4189927a8
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728623"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509415"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>Was ist die Microsoft Intune Geräteverwaltung?
 

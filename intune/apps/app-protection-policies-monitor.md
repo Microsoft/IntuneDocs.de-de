@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 805a1b1145c6b177c83de17de5a2df3efb7380da
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: 9d82813f1292c99cf248c56a102503413d2cb8fb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379774"
+ms.locfileid: "72507453"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Überwachen von App-Schutzrichtlinien
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]

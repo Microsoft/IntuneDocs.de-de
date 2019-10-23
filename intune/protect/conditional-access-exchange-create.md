@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45e6f473eaec082b3f566b6bf717aed7c3b49f80
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c18da57282a190dec363e3dfbde5293f5228cb0b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722734"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504620"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Erstellen einer Richtlinie für bedingten Zugriff auf Exchange lokal und das ältere Exchange Online Dedicated
 

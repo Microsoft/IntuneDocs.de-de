@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/30/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93edda33f8adf9a2ff119390ccb21898fac06b81
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0aeeb55804a2bdd3ef1143bbb88dee968892c5c7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726387"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509289"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Schnellstart: Registrierung Ihres Windows 10-Geräts
 

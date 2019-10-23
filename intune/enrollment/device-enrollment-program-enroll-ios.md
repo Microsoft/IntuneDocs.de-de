@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19389a21aa28f5fa957f62c988753f46bf1bc731
-ms.sourcegitcommit: 46322ca7a92971e18dc0b230f436b9ca892b90c5
+ms.openlocfilehash: 339f6b9476dae438d898b97abcaf3c1759fe9cfc
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72008342"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503328"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple
 

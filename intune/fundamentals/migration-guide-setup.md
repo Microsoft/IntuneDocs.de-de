@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 03/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
@@ -15,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 45f3c0c9a561b488f6a972c1ae5048408c2d19c7
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7ca0983b7b637b7e85bef97cd77e6c870c4e43eb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727505"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72510013"
 ---
 # <a name="basic-setup"></a>Grundlegende Einrichtung
 

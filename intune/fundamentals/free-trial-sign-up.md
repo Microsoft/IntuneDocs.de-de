@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f1e19822aaf90761e6429b2e91194eacccf467a
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: b1264f5113ded280ed9d5cb9b9d4ece8e0187fe7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940501"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502868"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Schnellstart: Testen Sie Microsoft Intune kostenlos
 

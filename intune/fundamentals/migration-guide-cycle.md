@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3688b724-9521-4210-bf4d-bcf47d8d4ca0
@@ -16,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30e104d82580a5a0b6b01edb0eaade0673b33d83
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e771c7f061d32748898846f9391758c02f7499c9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727531"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505285"
 ---
 # <a name="typical-migration-cycle"></a>Typischer Migrationszyklus
 

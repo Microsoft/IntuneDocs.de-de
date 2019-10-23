@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c07ce82bbc056e1d76abeb5d31bf57e0973fad6e
-ms.sourcegitcommit: bdf948be824cf5390d5166a277f389f3785c81f9
+ms.openlocfilehash: 11618d844fe7c4e190295ad06111ae0944deda95
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71960879"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507277"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Hinzufügen von Android Enterprise-System-Apps zu Microsoft Intune
 

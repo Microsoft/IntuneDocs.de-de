@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/18/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34aea5256ebb7d6577b4e77054dcca63d47bf317
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d7ca53786d372f53d63388fef1179ca271fdb9d9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728584"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508591"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Zurücksetzen oder Entfernen einer Gerätekennung in Intune
 
@@ -35,8 +36,8 @@ In diesem Dokument wird die Kennungsrückstellung auf Dienstebene sowie die Kenn
 | Geräte unter Android Version 6.x oder früher | Ja |
 | Android Enterprise-Geräte im Kioskmodus | Ja |
 | iOS-Geräte | Ja |
-| Bei der Benutzerregistrierung registrierte iOS-Geräte | Nein |
-| Android-Geräte, die mit einem Arbeitsprofil registriert sind | Nein |
+| Über die Benutzerregistrierung registrierte iOS-Geräte | Nein |
+| Über ein Arbeitsprofil registrierte Android-Geräte | Nein |
 | Geräte unter Android 7.0 und höher | Nein |
 | macOS | Nein |
 | Windows | Nein |

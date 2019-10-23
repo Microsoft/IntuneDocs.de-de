@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/09/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 55db37c5-0da7-4d9c-8027-525afb1c6349
@@ -17,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a210e45ddb181da4db1c1cff1e63a5d9b9ea2343
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 86e9d100847641064f472f0c3da0c9ec694f72dd
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724463"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72496722"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Konfigurieren von Slack zur Verwendung von Intune für EMM und die App-Konfiguration
 

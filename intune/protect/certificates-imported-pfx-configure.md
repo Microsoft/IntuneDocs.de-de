@@ -6,9 +6,9 @@ author: ralms
 ms.author: brenduns
 manager: dougeby
 ms.date: 10/02/2019
-ms.topic: article
-ms.prod: ''
+ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fead8b9d69f5356876c0b3a2a4ce02e9b754128e
-ms.sourcegitcommit: 29b1113dc04534c4c87c33c773c5a0e24266e042
+ms.openlocfilehash: fd54a5af6714d09072f9b69107436ef3fc4dc285
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "71999341"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509590"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>Konfigurieren und Verwenden importierter PKCS-Zertifikate mit Intune
 

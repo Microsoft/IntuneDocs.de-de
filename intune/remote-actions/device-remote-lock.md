@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 03/07/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8637e5333ae96fcaf69cb772bcce23193f85ae50
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 26d0f2cf08786a36f51982901094969d4d014755
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728558"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509389"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>Remotesperren von Geräten mit Intune
 

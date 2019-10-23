@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/19/2018
 ms.topic: tutorial
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -18,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40ac69b3cd5a3d3e1162f2ab5e982a27f89b271f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 39ea8b3859d3d2525433c4cafdf566e7a2c8d2ab
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726283"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509202"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Tutorial: Registrieren von Windows-Geräten in Intune mithilfe von Autopilot
 

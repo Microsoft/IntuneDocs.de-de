@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 01/02/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82cd13a2d60e589c5e9a7fcbccff8841a9a8aca2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fdc704d1971dfcc46ee2c3f5550e201d7a8e89fb
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727297"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505186"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementieren Ihres Microsoft Intune-Plans
 

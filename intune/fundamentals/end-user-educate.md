@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/01/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3fe8a973dfc8e82874f8fc22fb79ec2205e9c00f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 0c959102383f44eb35e1a923f39325007c6624b5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721616"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502894"
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>So informieren sie Ihre Endbenutzer über Microsoft Intune
 

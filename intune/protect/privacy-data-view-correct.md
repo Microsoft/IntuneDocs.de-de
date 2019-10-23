@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 05/18/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1ba77bc7-505e-4eca-a49e-dcdaa75d0043
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b6ca291f55511be9e88b0ff898d9383691542bf
-ms.sourcegitcommit: a2654f3642b43b29ab0e1cbb2dfa2b56aae18d0e
+ms.openlocfilehash: 913bf3103254abdd73913e0efc81da3a38ca991b
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72310890"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504250"
 ---
 # <a name="view-and-correct-personal-data"></a>Anzeigen und Korrigieren personenbezogener Daten
 

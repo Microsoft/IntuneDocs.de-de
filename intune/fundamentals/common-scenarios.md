@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38fa8d93e46a8c0e2e1e16704d56f40e84bd17df
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d008d1379e82483bf565fd1d6d01c8ff35fd6182
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722188"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502995"
 ---
 # <a name="common-ways-to-use-microsoft-intune"></a>Häufige Verwendungsarten von Microsoft Intune
 

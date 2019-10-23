@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d2777f2caabc24a457fc407b3e47facb1f6fc3c
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: b9fec08511303c15a7197014fd80834d95948191
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314615"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504887"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>In Intune unterstützte Betriebssysteme und Browser
 

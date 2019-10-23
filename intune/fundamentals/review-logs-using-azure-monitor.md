@@ -8,19 +8,21 @@ manager: dougeby
 ms.date: 08/28/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
+ms.assetid: 95191d64-9895-4f2e-8c5b-f0e85be086d8
 ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99799f695b9398c455f92220c436c7a6c6d76d56
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 66acf4d8b88097c3262f44493ab72b3900781eed
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721850"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504962"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Senden von Daten an den Speicher, an Event Hubs oder Log Analytics in Intune (Vorschauversion)
 
