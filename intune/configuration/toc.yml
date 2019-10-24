@@ -20,6 +20,9 @@
     - name: Einschränken von Geräteeinstellungen und -funktionen
       href: device-restrictions-configure.md
       displayName: Device restrictions
+    - name: BIOS-Einstellungen unter Windows
+      href: device-firmware-configuration-interface-windows.md
+      displayName: 'DFCI, firmware'
     - name: Updates
       href: delivery-optimization-windows.md
       displayName: delivery optimization; updates
