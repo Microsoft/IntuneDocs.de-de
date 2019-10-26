@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506675"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776888"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>macOS-Gerätefunktionseinstellungen in Intune
 
@@ -42,7 +42,7 @@ In diesem Artikel werden diese Einstellungen mit ihren Funktionsbeschreibungen a
 
 ## <a name="airprint"></a>AirPrint
 
-### <a name="settings-apply-to-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung 
 
 - **IP-Adresse**: Geben Sie die IPv4- oder IPv6-Adresse des Druckers ein. Wenn Sie den Hostnamen verwenden, um Drucker zu identifizieren, erhalten Sie die IP-Adresse, indem Sie den Drucker in der Terminal-App pingen. Der Abschnitt [Abrufen von IP-Adresse und Pfad](#get-the-ip-address-and-path) (in diesem Artikel) enthält weitere Details.
 - **Pfad**: Geben Sie den Pfad des Druckers ein. Der Pfad ist für Drucker in Ihrem Netzwerk in der Regel `ipp/print`. Der Abschnitt [Abrufen von IP-Adresse und Pfad](#get-the-ip-address-and-path) (in diesem Artikel) enthält weitere Details.
@@ -85,7 +85,7 @@ Um AirPrinter-Server hinzuzufügen, benötigen Sie die IP-Adresse des Druckers, 
 
 ## <a name="login-window"></a>Fenster „Anmeldung“
 
-### <a name="settings-apply-to-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung 
 
 #### <a name="window-layout"></a>Fensterlayout
 

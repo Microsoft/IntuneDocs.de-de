@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2be1faa1296792d3d40de5ca0b304a287bae8e6f
-ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
+ms.openlocfilehash: eb992747765ea087d5ef536c2da7c444bfa2d987
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72550826"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915724"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Verwenden und Verwalten von Android-Unternehmens Geräten mit oemconfig in Microsoft InTune
 
@@ -66,7 +66,7 @@ Um oemconfig auf Ihren Geräten zu verwenden, stellen Sie sicher, dass Sie die f
 
 - Ein in InTune registriertes Android-Unternehmens Gerät.
 - Eine oemconfig-APP, die vom OEM erstellt und in Google Play hochgeladen wurde. Wenn dies Google Play nicht der Fall ist, wenden Sie sich an den OEM, um weitere Informationen zu erhalten.
-- Der InTune-Administrator verfügt überrollen basierte Zugriffs Steuerungs Berechtigungen (Role-Based Access Control, RBAC) für **Mobile Apps** und " **toviceconfigurations**". Diese Berechtigungen sind erforderlich, da oemconfig-profile verwaltete App-Konfigurationen verwenden, um Geräte Konfigurationen zu verwalten.
+- Der InTune-Administrator verfügt überrollen basierte Zugriffs Steuerungs Berechtigungen (Role-Based Access Control, RBAC) für **Mobile Apps**, **Geräte Konfigurationen**und die Berechtigung "lesen" unter **Android for Work**. Diese Berechtigungen sind erforderlich, da oemconfig-profile verwaltete App-Konfigurationen verwenden, um Geräte Konfigurationen zu verwalten.
 
 ## <a name="prepare-the-oemconfig-app"></a>Vorbereiten der oemconfig-App
 

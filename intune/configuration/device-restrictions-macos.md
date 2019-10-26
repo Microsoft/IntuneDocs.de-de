@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/10/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb5fe19852ffff30566cb6758e156def3b7d64a5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8b2efdc04414d29fc1d8d200525cb3a4a880ec01
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494015"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776884"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>macOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
@@ -40,7 +40,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 ## <a name="general"></a>Allgemein
 
-### <a name="settings-apply-to-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
 
 - **Definitionssuche**: **Blockieren** hindert Benutzer daran, ein Wort zu markieren und dann auf dem Gerät nach seiner Definition zu suchen. **Nicht konfiguriert** (Standard) ermöglicht den Zugriff auf die Definitionssuchfunktion.
 - **Diktat**: **Blockieren** verhindert, dass der Benutzer die Spracheingabe zur Eingabe von Text verwenden kann. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, die Spracheingabe zu verwenden.
@@ -82,7 +82,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 ## <a name="password"></a>Kennwort
 
-### <a name="settings-apply-to-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
 
 - **Kennwort**: **Anfordern** der Eingabe eines Kennworts durch den Endbenutzer, um auf das Gerät zugreifen zu können. **Nicht konfiguriert** (Standard) erfordert kein Kennwort. Außerdem werden keine Einschränkungen erzwungen, wie z. b. das Blockieren einfacher Kenn Wörter oder das Festlegen einer Mindestlänge.
   - **Erforderlicher Kennworttyp**: Geben Sie an, ob das Kennwort rein numerisch sein darf oder ob es alphanumerisch sein muss (also Buchstaben und Zahlen enthalten muss).
@@ -114,7 +114,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 ## <a name="built-in-apps"></a>Integrierte Apps
 
-### <a name="settings-apply-to-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
 
 - **Block Safari AutoFill** (AutoAusfüllen in Safari blockieren): **Blockieren** deaktiviert AutoAusfüllen in Safari auf dem Gerät. **Nicht konfiguriert** (Standard) ermöglicht Benutzern, die AutoAusfüllen-Einstellungen im Browser zu ändern.
 - **Kamera blockieren**: Wählen Sie **Blockieren** aus, um den Zugriff auf die Kamera des Geräts zu verhindern. **Nicht konfiguriert** (Standard) ermöglicht den Zugriff auf die Kamera des Geräts.
@@ -127,7 +127,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 ## <a name="restricted-apps"></a>Eingeschränkte Apps
 
-### <a name="settings-apply-to-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
 
 - **Typ der Liste der eingeschränkten apps**: Erstellen Sie eine Liste von apps, die Benutzer nicht installieren oder verwenden dürfen. Folgende Optionen sind verfügbar:
 
@@ -145,14 +145,14 @@ Um diesen Listen Apps hinzuzufügen, können Sie:
 
 ## <a name="connected-devices"></a>Verbundene Geräte
 
-### <a name="settings-apply-to-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
 
 - **AirDrop blockieren**: **Blockieren** verhindert die Verwendung von AirDrop auf dem Gerät. **Nicht konfiguriert** (Standard) ermöglicht die Verwendung von AirDrop zum Austauschen von Inhalten mit Geräten in der Nähe.
 - **Automatisches Entsperren von Apple Watch blockieren**: **Blockieren** hindert Benutzer daran, ihr macOS-Gerät mit ihrer Apple Watch zu entsperren. Die Standardeinstellung **Nicht konfiguriert** erlaubt Benutzern, ihr macOS-Gerät mit ihrer Apple Watch zu entsperren.
 
 ## <a name="cloud-and-storage"></a>Cloud und Speicher
 
-### <a name="settings-apply-to-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
 
 - **Synchronisierung zwischen iCloud und Keychain blockieren**: Wählen Sie **Blockieren** aus, um die Synchronisierung in der Keychain gespeicherter Anmeldeinformationen mit iCloud zu deaktivieren. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Anmeldeinformationen zu synchronisieren.
 - **iCloud-Synchronisierung von Dokumenten blockieren**: **Blockieren** hindert iCloud daran, Dokumente und Daten zu synchronisieren. **Nicht konfiguriert** (Standard) erlaubt die Dokument- und Schlüssel-/Wertsynchronisierung in Ihrem iCloud-Speicher.
@@ -170,7 +170,7 @@ Um diesen Listen Apps hinzuzufügen, können Sie:
 
 ## <a name="domains"></a>Domains
 
-### <a name="settings-apply-to-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
 
 - **E-Mail-Domänen-URL:** **Fügen** Sie mindestens eine URL zur Liste hinzu. Wenn Benutzer eine E-Mail von einer Domäne erhalten, die Sie nicht konfiguriert haben, wird die E-Mail in der macOS-Mail-App als nicht vertrauenswürdig gekennzeichnet.
 

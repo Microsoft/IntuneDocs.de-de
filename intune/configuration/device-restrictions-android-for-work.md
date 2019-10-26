@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585382"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915719"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune
 
@@ -193,7 +193,8 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
 
 ### <a name="power-settings"></a>Energieeinstellungen
 
-- **Zeit bis Bildschirmsperre:** Hiermit wird die Leerlaufzeit festgelegt, nach der das Gerät gesperrt wird.
+- **Bildschirm zum Sperren**: Geben Sie die maximale Zeit ein, die ein Benutzer festlegen kann, bis das Gerät gesperrt wird. Wenn Sie diese Einstellung beispielsweise auf **10 Minuten**festlegen, können Benutzer die Zeit von 15 Sekunden auf 10 Minuten festlegen. Wenn diese Einstellung auf **nicht konfiguriert** (Standard) festgelegt ist, wird diese Einstellung von InTune nicht geändert oder gesteuert.
+
 - **Bildschirm aktiviert, wenn Gerät angeschlossen ist:** Hiermit kann ausgewählt werden, bei welchen Stromquellen der Bildschirm des Geräts aktiviert bleibt, wenn es angeschlossen ist.
 
 ### <a name="users-and-accounts-settings"></a>Einstellungen für Benutzer und Konten
