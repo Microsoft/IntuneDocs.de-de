@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1089c382a39afb5aad0456e669cb3a2434af73c1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503095"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892536"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Behandeln von Problemen bei der Windows-Geräteregistrierung in Microsoft Intune
 
@@ -163,7 +163,7 @@ Fehler 80180026: „Es ist ein Problem aufgetreten. Vergewissern Sie sich, dass 
 - Der InTune-PC-Client (InTune-PC-Agent) oder der Configuration Manager Client-Agent ist auf dem Windows 10-Computer installiert.
 
 #### <a name="resolution"></a>Lösung
-Verwenden Sie eine der folgenden Methoden, um dieses Problem zu beheben:
+Nutzen Sie eines der folgenden Verfahren, um dieses Problem zu beheben:
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>Deaktivieren Sie die automatische MDM-Registrierung in Azure.
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) an.    
@@ -390,3 +390,4 @@ Dieses Problem tritt normalerweise auf, wenn die Berechtigungen für die Organis
 - [Überprüfen Sie den Microsoft InTune Support Team Blog.](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [Überprüfen Sie den Microsoft Enterprise Mobility and Security-Blog](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [Support für Microsoft Intune](../fundamentals/get-support.md)
+- [Registrierungsfehler bei der Co-Verwaltung suchen](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
