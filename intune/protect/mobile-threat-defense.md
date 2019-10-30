@@ -6,9 +6,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/21/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
@@ -17,18 +18,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97efe5c2445263bba11ee083e89d36fde1986dc1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4abc35b625b9aa072e38c02d2fc4160faa916fb3
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727869"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785722"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Was ist die Mobile Threat Defense-Integration in Intune?
-Intune kann Daten von einem Mobile Threat Defense-Anbieter als Informationsquelle für Konformitätsrichtlinien und Richtlinien für bedingten Zugriff integrieren. Sie können diese Informationen verwenden, um Unternehmensressourcen wie Exchange und SharePoint zu schützen, indem Sie den Zugriff von manipulierten mobilen Geräten blockieren.  
+Intune kann Daten von einem MTD-Anbieter als Informationsquelle für Gerätekonformitätsrichtlinien und Geräterichtlinien für bedingten Zugriff integrieren. Sie können diese Informationen verwenden, um Unternehmensressourcen wie Exchange und SharePoint zu schützen, indem Sie den Zugriff von manipulierten mobilen Geräten blockieren.
+
+Intune kann dieselben Daten als Quelle für nicht registrierte Geräte mit Intune-App-Schutzrichtlinien verwenden. Daher können Administratoren diese Informationen verwenden, um Unternehmensdaten in einer [geschützten Microsoft Intune-App](~/apps/apps-supported-intune-apps.md) zu schützen und einen Block auszugeben oder selektives Zurücksetzen durchzuführen.
 
 ## <a name="what-problem-does-this-solve"></a>Welches Problem wird dadurch gelöst?
-Die Integration von Informationen von einem Mobile Threat Defense-Hersteller unterstützt Sie dabei, Ihre Unternehmensressourcen vor Bedrohungen zu schützen, die mobile Plattformen beeinträchtigen.  
+Die Integration von Informationen von einem MTD-Hersteller unterstützt Sie dabei, Ihre Unternehmensressourcen vor Bedrohungen zu schützen, die mobile Plattformen beeinträchtigen.  
 
 Normalerweise schützen Firmen PCs proaktiv vor Sicherheitsrisiken und Angriffen, während mobile Geräte oft nicht überwacht werden und ungeschützt bleiben. Während mobile Plattformen integrierten Schutz in Form von App-Isolierung und sicherheitsgeprüfter App Stores für Verbraucher bieten, bleiben diese Plattformen anfällig für komplexe Angriffe. Da mehr Angestellte Geräte für die Arbeit und für den Zugriff auf vertrauliche Informationen verwenden, unterstützen Sie die Informationen des Mobile Threat Defense-Herstellers dabei, Geräte und Ihre Ressourcen vor immer komplexeren Angriffen zu schützen.  
 
@@ -42,7 +45,7 @@ Beispiel: Eine verbundene Mobile Threat Defense-App meldet dem Mobile Threat Def
 
 Wenn die Einstellung aktiviert ist, erfasst Intune sowohl von privaten als auch von unternehmenseigenen Geräten Informationen zum App-Bestand und stellt diese für MTD-Anbieter (Mobile Threat Defense) wie Lookout for Work zur Verfügung. Sie können Informationen zum App-Bestand der Benutzer von iOS-Geräten erfassen.
 
-Dieser Dienst muss aktiviert werden. Informationen zum App-Bestand werden nicht standardmäßig freigegeben. Die App-Synchronisierung für iOS-Geräte muss in den Diensteinstellungen von einem Intune-Administrator aktiviert werden, bevor Informationen zum App-Bestand freigegeben werden.
+Dieser Dienst muss aktiviert werden. Informationen zum App-Bestand werden nicht standardmäßig freigegeben. Die **App-Synchronisierung für iOS-Geräte** muss in den MTD-Connectoreinstellungen von einem Intune-Administrator aktiviert werden, bevor Informationen zum App-Bestand freigegeben werden.
 
 **App-Bestand**  
 Wenn Sie die App-Synchronisierung für iOS-Geräte aktivieren, werden die Bestände der unternehmenseigenen und privaten iOS-Geräte an Ihren MTD-Dienstanbieter gesendet. Die Daten in den App-Beständen umfassen:
@@ -56,7 +59,7 @@ Wenn Sie die App-Synchronisierung für iOS-Geräte aktivieren, werden die Bestä
 - Ob die App gültig ist oder nicht
 - Ob die App verwaltet wird oder nicht
 
-## <a name="sample-scenarios"></a>Beispielszenarien
+## <a name="sample-scenarios-for-enrolled-devices-using-device-compliance-policies"></a>Beispielszenarios für registrierte Geräte mit Gerätekonformitätsrichtlinien
 
 Wenn ein Gerät von der Mobile Threat Defense-Lösung als gefährdet eingestuft wird:
 
@@ -66,14 +69,22 @@ Der Zugriff wird gewährt, wenn das Gerät wiederhergestellt ist:
 
 ![Abbildung: Mobile Threat Defense – Zugriff gewährt](./media/mobile-threat-defense/MTD-image-2.png)
 
+## <a name="sample-scenarios-for-unenrolled-devices-using-intune-app-protection-policies"></a>Beispielszenarios für nicht registrierte Geräte mit Intune-App-Schutzrichtlinien
+
+Wenn ein Gerät von der Mobile Threat Defense-Lösung als gefährdet eingestuft wird:<br>
+![Abbildung: mit Mobile Threat Defense geschütztes, gefährdetes Gerät](./media/mobile-threat-defense/MTD-image-3.png)
+
+Der Zugriff wird gewährt, wenn das Gerät wiederhergestellt ist:<br>
+![Abbildung: Mobile Threat Defense-Zugriff gewährt](./media/mobile-threat-defense/MTD-image-4.png)
+
 > [!NOTE] 
-> Das Verwenden von mehreren Anbietern für Mobile Threat Defense (MTD) mit Intune wird nicht unterstützt. Wenn mehrere MTD-Tools aktiviert sind, wird die Installation von allen MTD-Apps erzwungen, die anschließend geräteübergreifend nach Bedrohungen sucht.
+> Das Verwenden von mehreren Anbietern für Mobile Threat Defense (MTD) mit Intune wird nicht unterstützt. Wenn mehrere MTD-Connectors aktiviert sind, wird die Installation von allen MTD-Apps erzwungen, die anschließend geräteübergreifend nach Bedrohungen suchen.
 
 ## <a name="mobile-threat-defense-partners"></a>Mobile Threat Defense-Partner
 
 Lernen Sie, wie Sie den Zugriffs auf Unternehmensressourcen auf der Basis von Geräte-, Netzwerk- und Anwendungsrisiko schützen:
 
-- [Lookout](lookout-mobile-threat-defense-connector.md)
+- [Lookout for Work](lookout-mobile-threat-defense-connector.md)
 - [Symantec Endpoint Protection Mobile](skycure-mobile-threat-defense-connector.md)
 - [Check Point SandBlast Mobile](checkpoint-sandblast-mobile-mobile-threat-defense-connector.md)
 - [Zimperium](zimperium-mobile-threat-defense-connector.md)

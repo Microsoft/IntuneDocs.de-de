@@ -6,9 +6,10 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/23/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 571974e1736fb78ae633c02fcfd6e6233056379b
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: f32637173ec6cf5f7c284a87193eafffb6a16e6c
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71920158"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786131"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 
@@ -50,8 +51,170 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Hier 
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
-
 -->  
+
+
+<!-- ########################## -->
+
+## <a name="week-of-october-21-2019"></a>Woche vom 21. Oktober 2019
+
+### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073-idready-wnready---"></a>Neues Schnittstellenprofil zur Konfiguration der Gerätefirmware für Geräte mit Windows 10 oder höher <!-- 2266073 idready wnready -->
+
+Ab Windows 10 können Sie ein Gerätekonfigurationsprofil zum Steuern der Einstellungen und Features erstellen (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10 und höher** als Plattform). In diesem Update gibt es einen neuen Schnittstellenprofiltyp zur Konfiguration der Gerätefirmware, mit dem Intune UEFI-Einstellungen (BIOS) verwalten kann.
+
+Weitere Informationen zu diesem Feature finden Sie unter [Verwenden von DFCI-Profilen auf Windows-Geräten in Microsoft Intune](../configuration/device-firmware-configuration-interface-windows.md).
+
+Gilt für:
+
+- Windows 10 RS5 (1809) und höher auf unterstützter Firmware
+
+## <a name="week-of-october-14-2019"></a>Woche vom 14. Oktober 2019
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>App-Verwaltung 
+
+#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956-----"></a>Berichterstellung für verfügbare Google Play-Apps für Android-Arbeitsprofile <!-- 3041956   -->
+Sie können den App-Installationsstatus sowie die installierte Version verwalteter Google Play-Apps für verfügbare App-Installationen auf Android Enterprise-Arbeitsprofil-, dedizierten und vollständig verwalteten Geräten anzeigen. Weitere Informationen finden Sie unter [Überwachen von App-Schutzrichtlinien](~/apps/app-protection-policies-monitor.md), [Verwalten von Android-Arbeitsprofilgeräten mit Intune](~/enrollment/android-enterprise-overview.md) und [App-Typ „Verwaltetes Google Play“](~/apps/apps-add-android-for-work.md#managed-google-play-app-types).
+
+#### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>Microsoft Edge Version 77 und höher für Windows 10 und macOS (Public Preview) <!-- 3872025, 4678761  -->
+Version 77 von Microsoft Edge ist jetzt für die Bereitstellung auf Computern unter Windows 10 und macOS verfügbar. Die Public Preview bietet **Entwickler**- und **Beta**-Kanäle für Windows 10 und einen **Beta**-Kanal für macOS. Die Bereitstellung ist nur in englischer Sprache verfügbar, Endbenutzer können die Anzeigesprache im Browser jedoch unter **Einstellungen** > **Sprachen** ändern. Microsoft Edge ist eine Win32-App, die im Systemkontext und auf entsprechenden Architekturen (x86-App auf x86-Betriebssystemen und x64-App auf x64-Betriebssystemen) installiert ist. Außerdem sind automatische Updates des Browsers standardmäßig **Aktiviert**, und Microsoft Edge kann nicht deinstalliert werden. Weitere Informationen finden Sie unter [Hinzufügen von Microsoft Edge für Windows 10 zu Microsoft Intune](~/apps/apps-windows-edge.md) und in der [Microsoft Edge-Dokumentation](https://go.microsoft.com/fwlink/?linkid=2103823).
+
+#### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>Update der Benutzeroberflächen für den App-Schutz und der iOS-App-Bereitstellung <!-- 4102027, 4102029   -->
+Die Benutzeroberflächen zum Erstellen und Bearbeiten von App-Schutzrichtlinien und iOS-App-Bereitstellungsprofilen in Intune wurden upgedatet. Die Änderungen der Benutzeroberfläche umfassen:
+- Eine vereinfachte Funktion mithilfe eines Formats im Assistentenstil auf einem einzigen Blatt. 
+- Ein Update für den Erstellungsflow zum Einschließen von Zuweisungen.
+- Eine zusammengefasste Seite aller festgelegten Einstellungen beim Anzeigen der Eigenschaften, bevor eine neue Richtlinie erstellt wird oder bei der Bearbeitung einer Eigenschaft. Beim Bearbeiten von Eigenschaften zeigt die Zusammenfassung nur eine Liste der Elemente aus der Kategorie der Eigenschaften an, die bearbeitet werden.
+
+Weitere Informationen finden Sie unter [Erstellen und Zuweisen von App-Schutzrichtlinien](~/apps/app-protection-policies.md) und [Verwenden von iOS-App-Bereitstellungsprofilen](~/apps/app-provisioning-profile-ios.md).
+
+#### <a name="intune-guided-scenarios----4850318-4831296-3610611----"></a>Geführte Szenarios in Intune <!-- 4850318, 4831296, 3610611  -->
+In Intune werden nun geführte Szenarios bereitgestellt, die Ihnen beim Durchführen bestimmter Aufgaben in Intune helfen. Ein geführtes Szenario beschreibt eine angepasste Reihe von Schritten (Workflow) für einen End-to-End-Anwendungsfall. Gängige Szenarios werden basierend auf der Rolle eines Administrators, Benutzers oder Geräts in Ihrer Organisation definiert. Diese Workflows erfordern in der Regel eine Sammlung sorgfältig orchestrierter Profile, Einstellungen, Anwendungen und Sicherheitskontrollen, um die beste Benutzererfahrung und Sicherheit bereitzustellen. Die folgenden neuen geführten Szenarios sind verfügbar:
+- [Bereitstellen von Microsoft Edge für Mobilgeräte](~/fundamentals/guided-scenarios-edge.md)
+- [Sichere mobile Microsoft Office-Apps](~/fundamentals/guided-scenarios-office-mobile.md) 
+- [Über die Cloud verwalteter moderner Desktop](~/fundamentals/guided-scenarios-cloud-managed-pc.md)
+
+Weitere Informationen finden Sie unter [Übersicht über geführte Szenarios in Intune](guided-scenarios-overview.md).
+
+#### <a name="additional-app-configuration-variable-available----4969237-----"></a>Zusätzliche verfügbare App-Konfigurationsvariablen <!-- 4969237   -->
+Beim Erstellen einer App-Konfigurationsrichtlinie können Sie die Konfigurationsvariable `AAD Device ID` als Teil Ihrer Konfigurationseinstellungen einfügen. Klicken Sie in Intune auf **Client-Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen**. Geben Sie die Details Ihrer Konfigurationsrichtlinie ein, und klicken Sie auf **Konfigurationseinstellungen**, um das Blatt **Konfigurationseinstellungen** anzuzeigen. Weitere Informationen finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Android Enterprise-Geräte: Verwenden des Konfigurations-Designers](~/apps/app-configuration-policies-use-android.md#use-the-configuration-designer).
+
+
+#### <a name="create-groups-of-management-objects-called-policy-sets----3762880----"></a>Erstellen von Gruppen von Verwaltungsobjekten namens Richtliniensätze <!-- 3762880  -->
+Mit Richtliniensätzen können Sie ein Bündel von Verweisen auf bereits vorhandene Verwaltungsentitäten erstellen, die als einzelne konzeptionelle Einheit identifiziert, ausgerichtet und überwacht werden müssen. Richtliniensätze stellen keinen Ersatz für vorhandene Konzepte oder Objekte dar. Sie können weiterhin individuelle Objekte in Intune zuweisen und als Teil eines Richtliniensatzes referenzieren. Daher werden alle Änderungen an diesen individuellen Objekten im Richtliniensatz berücksichtigt.  Klicken Sie in Intune auf **Richtliniensätze** > **Erstellen**, um einen neuen Richtliniensatz zu erstellen. 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>Gerätekonfiguration
+
+#### <a name="ui-update-for-creating-and-editing-windows-10-update-rings-----4099089-----------"></a>Update der Benutzeroberfläche zum Erstellen und Bearbeiten von Windows 10-Updateringen  <!-- 4099089         -->
+Die Benutzeroberfläche zum [Erstellen und Bearbeiten von Windows 10-Updateringen](../protect/windows-update-for-business-configure.md#create-and-assign-update-rings) für Intune wurde upgedatet. Folgende Änderungen wurden an der Benutzeroberfläche vorgenommen:  
+- Ein Format im Assistentenstil, das auf einem einzigen Blatt der Konsole zusammengefasst ist, um die vorherige Ausbreitung der Blätter beim Konfigurieren von Updateringen zu vermeiden.   
+- Der überarbeitete Workflow umfasst Zuweisungen, bevor die Erstkonfiguration des Rings abgeschlossen wird.
+- Eine Zusammenfassungsseite, die Sie zum Überprüfen all Ihrer vorgenommenen Konfigurationen verwenden können, bevor Sie einen neuen Updatering speichern und bereitstellen. Beim Bearbeiten eines Updaterings zeigt die Zusammenfassung nur die Liste der Elemente an, die in der bearbeiteten Kategorie der Eigenschaften festgelegt wurden.
+
+#### <a name="ui-update-for-creating-and-editing-ios-software-update-policy-----4099090---------"></a>Update der Benutzeroberfläche zum Erstellen und Bearbeiten von iOS-Softwareupdaterichtlinien  <!-- 4099090       --> 
+Die Benutzeroberfläche zum [Erstellen](../protect/software-updates-ios.md#configure-the-policy) und [Bearbeiten](../protect/software-updates-ios.md#edit-a-policy) von iOS-Softwareupdaterichtlinien für Intune wurden upgedatet.  Folgende Änderungen wurden an der Benutzeroberfläche vorgenommen:  
+- Ein Format im Assistentenstil, das auf einem einzigen Blatt der Konsole zusammengefasst ist, um die vorherige Ausbreitung der Blätter beim Konfigurieren von Updaterichtlinien zu vermeiden.   
+- Der überarbeitete Workflow umfasst Zuweisungen, bevor die Erstkonfiguration der Richtlinie abgeschlossen wird.
+- Eine Zusammenfassungsseite, die Sie zum Überprüfen all Ihrer vorgenommenen Konfigurationen verwenden können, bevor Sie eine neue Richtlinie speichern und bereitstellen. Beim Bearbeiten einer Richtlinie zeigt die Zusammenfassung nur die Liste der Elemente an, die in der bearbeiteten Kategorie der Eigenschaften festgelegt wurden.
+
+#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings------4464404---wnready-----"></a>Die Einstellungen für erzwungene Neustarts wurden aus Windows-Updateringen entfernt  <!--  4464404   WNReady   -->
+Wie bereits angekündigt unterstützen Windows 10-Updateringe von Intune nun [Einstellungen für Zeitlimits](../protect/windows-update-settings.md) und unterstützen *erzwungene Neustarts* nicht mehr. Wenn Sie Updateringe in Intune konfigurieren oder verwalten, sind Einstellungen für *erzwungene Neustarts* nicht mehr verfügbar.  
+
+Diese Änderung erfolgt gemäß der jüngsten [Änderungen der Windows-Wartung](https://docs.microsoft.com//windows/whats-new/whats-new-windows-10-version-1903#servicing), und auf Geräten mit Windows 10 Version 1903 oder höher ersetzen *Zeitlimits* die Konfigurationen für *erzwungene Neustarts*.
+
+#### <a name="prevent-installation-of-apps-from-unknown-sources-on-android-enterprise-work-profile-devices----4760025-----"></a>Verhinderung der Installation von Apps aus unbekannten Quellen auf Android Enterprise-Arbeitsprofilgeräten <!-- 4760025   -->
+Benutzer können in keinem Fall Apps aus unbekannten Quellen auf Android Enterprise-Arbeitsprofilgeräten installieren. In diesem Update gibt es eine neue Einstellung: **App-Installationen aus unbekannten Quellen im persönlichen Profil verhindern**. Diese Einstellung hindert Benutzer standardmäßig daran, Apps aus unbekannten Quellen in das persönliche Profil auf dem Gerät querzuladen.
+
+Sie finden diese konfigurierbare Einstellung unter [Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune](../configuration/device-restrictions-android-for-work.md).
+
+Gilt für:
+- Android Enterprise-Arbeitsprofil
+
+#### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices----4816339-----"></a>Erstellen eines globalen HTTP-Proxys auf Geräten von Android Enterprise-Gerätebesitzern <!-- 4816339   -->
+Sie können einen globalen HTTP-Proxy auf Android Enterprise-Geräten konfigurieren, um die Webbrowserstandards Ihrer Organisation zu erfüllen (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Android Enterprise** als Plattform > **Gerätebesitzer > Geräteeinschränkungen** als Profiltyp > **Konnektivität**). Nach der Konfiguration wird dieser Proxy für jeglichen HTTP-Datenverkehr genutzt.
+
+Navigieren Sie zum Konfigurieren dieses Features und zum Anzeigen aller konfigurierbaren Einstellungen zu [Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune](../configuration/device-restrictions-android-for-work.md).
+
+Gilt für:
+- Android Enterprise-Gerätebesitzer
+
+#### <a name="connect-automatically-setting-is-removed-in-wi-fi-profiles-on-android-device-administrator-and-android-enterprise----5021055-----"></a>Entfernung der Einstellung zum automatischen Herstellen einer Verbindung wurde aus WLAN-Profilen für Android-Geräteadministratoren und Android Enterprise <!-- 5021055   -->
+Auf Android-Geräteadministrator- und Android Enterprise-Geräten können Sie ein WLAN-Profil erstellen, um verschiedene Einstellungen zu konfigurieren (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Android-Geräteadministrator** oder **Android Enterprise** als Plattform > **WLAN** als Profiltyp). In diesem Update wurde die Einstellung **Automatisch verbinden** entfernt, da sie [nicht von Android unterstützt wird](https://developer.android.com/reference/android/net/wifi/WifiManager.html#enableNetwork%28int%2c%20boolean%29). 
+
+Wenn Sie diese Einstellung in einem WLAN-Profil verwenden ist Ihnen möglicherweise aufgefallen, dass **Automatisch verbinden** nicht funktioniert. Sie müssen keine Maßnahmen ergreifen, beachten Sie jedoch, dass diese Einstellung aus der Benutzeroberfläche von Intune entfernt wurde.
+
+Die aktuellen Einstellungen finden Sie in den [Android-WLAN-Einstellungen](../configuration/wi-fi-settings-android.md) oder den [Android Enterprise-WLAN-Einstellungen](../configuration/wi-fi-settings-android-enterprise.md).
+
+Gilt für:
+- Android-Geräteadministrator 
+- Android Enterprise
+
+
+#### <a name="new-device-configuration-settings-for-supervised-ios-and-ipados-devices----5199328-----"></a>Neue Gerätekonfigurationseinstellungen für überwachte iOS- und iPadOS-Geräte <!-- 5199328   -->
+Auf iOS- und iPadOS-Geräten können Sie ein Profil erstellen, um Features und Einstellungen auf Geräten einzuschränken (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **iOS/iPadOS** als Plattform > **Geräteeinschränkungen** als Profiltyp). In diesem Update gibt es neue Einstellungen, die Sie steuern können: 
+- Zugriff auf Netzlaufwerk in Dateien-App  
+- Access to USB drive in Files app (Zugriff auf USB-Laufwerk in Dateien-App) 
+- WLAN immer aktiviert 
+
+Diese Einstellungen finden Sie unter [iOS-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune](../configuration/device-restrictions-ios.md).
+
+Gilt für:
+- iOS 13.0 und neuer
+- iOS 13.0 und höher
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-enrollment"></a>Geräteregistrierung
+
+#### <a name="specify-which-android-device-operating-system-versions-enroll-with-work-profile-or-device-administrator-enrollment----4350697-----"></a>Festlegen der Version des Android-Gerätebetriebssystems, das mit einem Arbeitsprofil oder einer Geräteadministratorregistrierung registriert wird <!-- 4350697   -->
+Mithilfe der Intune-Gerätetypeinschränkungen können Sie die Betriebssystemversion des Geräts verwenden, um festzulegen, welche Benutzergeräte die Android Enterprise-Arbeitsprofilregistrierung oder Android-Geräteadministratorregistrierung verwenden.  Weitere Informationen finden Sie unter [Festlegen von Registrierungseinschränkungen](../enrollment/enrollment-restrictions-set.md).
+
+#### <a name="windows-autopilot-deployment-reports----3856172---"></a>Bereitstellungsberichte für Windows Autopilot <!-- 3856172 -->
+In einem neuen Bericht werden Informationen zu allen Geräten angegeben, die mit Windows Autopilot bereitgestellt wurden. Weitere Informationen finden Sie im [Autopilot-Bereitstellungsbericht](../enrollment/enrollment-autopilot.md#autopilot-deployments-report). Dieses Feature wird zurzeit für alle Kunden bereitgestellt. Die Bereitstellung soll bis Ende nächster Woche abgeschlossen werden.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>Geräteverwaltung
+
+#### <a name="new-restrictions-for-renaming-windows-devices----3478938----"></a>Neue Einschränkungen zum Umbenennen von Windows-Geräten <!-- 3478938  -->
+Beim Umbenennen von Windows-Geräten müssen Sie neue Regeln befolgen:
+- Der Name sollte aus 15 Zeichen oder weniger (d. h. weniger als oder gleich 63 Byte ohne nachstehender NULL) bestehen.
+- Der Name sollte nicht NULL sein oder aus einer leeren Zeichenfolge bestehen.
+- Zulässiger ASCII-Code: Buchstaben (a-z, A-Z), Zahlen (0-9) und Bindestriche
+- Zulässige Unicode-Zeichen: Zeichen >= 0x80, muss eine gültige UTF-8-Codierung und die IDN-Zuordnung (RtlIdnToNameprepUnicode erfolgreich, weitere Informationen finden Sie im RFC 3492) aufweisen
+- Namen dürfen nicht nur aus Zahlen bestehen.
+- Es dürfen keine Leerzeichen im Namen enthalten sein.
+- Unzulässige Zeichen: { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
+
+ Weitere Informationen finden Sie unter [Umbenennen von Geräten in Intune](../remote-actions/device-rename.md).
+
+### <a name="new-android-report-on-devices-overview-page----4924364---"></a>Neuer Android-Bericht auf der Geräteübersichtseite <!-- 4924364 -->
+Auf der Geräteübersichtseite zeigt ein neuer Bericht, wie viele Android-Geräte in jeder Geräteverwaltungslösung registriert wurden. Dieses Diagramm zeigt die Anzahl der Arbeitsprofile, vollständig verwalteten, dedizierten und mit Geräteadministratorregistrierung registrierten Geräte angezeigt. Klicken Sie auf **Intune** > **Geräte** > **Übersicht**, um den Bericht anzuzeigen.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-security"></a>Gerätesicherheit 
+
+#### <a name="pkcs-certificates-for-macos-----1333650---------"></a>PKCS-Zertifikate für macOS  <!-- 1333650       -->
+Sie können nun [PKCS-Zertifikate mit macOS verwenden](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile). Sie können das PKCS-Zertifikat als Profiltyp für macOS auswählen und Benutzer- und Gerätezertifikate bereitstellen, die [Felder für einen benutzerdefinierten Betreff und alternativen Antragstellernamen](../protect/certficates-pfx-configure.md#subject-name-format-for-macos) besitzen.  
+
+PKCS-Zertifikate für macOS unterstützen ebenfalls eine neue Einstellung: _Allow All Apps Access_ (Allen Apps Zugriff gewähren). Mit dieser Einstellung können Sie alle zugeordneten Apps den Zugriff auf den privaten Schlüssel des Zertifikats gewähren.  Weitere Informationen zu dieser Einstellung finden Sie in der Dokumentation von Apple unter https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf.
+
+####   <a name="derived-credentials-to-provision-ios-mobile-devices-with-certificates----------1736036-1736037-1772050-2777333-----------"></a>Abgeleitete Anmeldeinformationen zum Bereitstellen von iOS-Mobilgeräten mit Zertifikaten      <!--  1736036, 1736037, 1772050, 2777333         -->  
+Intune unterstützt die Verwendung von [abgeleiteten Anmeldeinformationen](../protect/derived-credentials.md) als Authentifizierungsmethode, für die S/MIME-Signatur und Verschlüsselung von iOS-Geräten. Abgeleitete Anmeldeinformationen sind eine Implementierung der *NIST-Standards 800-157 (National Institute of Standards and Technology)* für die Bereitstellung von Zertifikaten auf Geräten.  
+
+Abgeleitete Anmeldeinformationen stützen sich auf die Verwendung einer PIV- (Personal Identity Verification) oder CAC-Karte (Common Access Card), z. B. eine Smartcard. Zum Abrufen von abgeleiteten Anmeldeinformationen für ihr mobiles Gerät beginnen Benutzer in der Unternehmensportal-App und befolgen einen Workflow für die Registrierung, die für den verwendeten Anbieter eindeutig ist.  Alle Anbieter haben die Voraussetzung zur Verwendung einer Smartcard auf Computern gemein, um den Anbieter der abgeleiteten Anmeldeinformationen zu authentifizieren. Dieser Anbieter gibt dann ein Zertifikat auf dem Gerät aus, das von der Smartcard des Benutzers abgeleitet wird.  
+
+Intune unterstützt die folgenden Anbieter abgeleiteter Anmeldeinformationen:   
+- DISA Purebred
+- Entrust Datacard
+- Intercede
+
+Sie verwenden abgeleitete Anmeldeinformationen als Authentifizierungsmethode für Gerätekonfigurationsprofile für VPN, WLAN und E-Mail. Sie können sie auch für die App-Authentifizierung, S/MIME-Signatur und Verschlüsselung verwenden.  
+
+Weitere Informationen zum Standard finden Sie unter [Derived PIV Credentials](https://www.nccoe.nist.gov/projects/building-blocks/piv-credentials) (Abgeleitete PIV-Anmeldeinformationen) unter www.nccoe.nist.gov.
+
+#### <a name="use-graph-api-to-specify-a-on-premises-user-principal-name-as-a-variable-for-scep-certificates--------5437939----------"></a>Verwendung der Graph-API zum Festlegen eines lokalen Benutzerprinzipalnamen als Variable für SCEP-Zertifikate    <!--  5437939        -->  
+Wenn Sie die [Intune-Graph-API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0) verwenden, können Sie „onPremisesUserPrincipalName“ als Variable für den alternativen Antragstellernamen (SAN) für SCEP-Zertifikate angeben.
+
+
 
 <!-- ########################## -->
 
@@ -367,7 +530,7 @@ Gilt für:
 #### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings------4464404----------"></a>Stichtage ersetzen Einstellungen für erzwungenen Neustart für Windows-Updateringe   <!-- 4464404        -->
 Um mit den neuesten [Windows-Wartungsänderungen](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing) übereinzustimmen, unterstützen die Windows 10-Updateringe von Intune jetzt [Einstellungen für Stichtage](../protect/windows-update-settings.md). *Stichtage* bestimmen, wann Funktions- und Sicherheitsupdates auf einem Gerät installiert werden.  Auf Geräten, auf denen Windows 10 1903 oder höher ausgeführt wird, ersetzen *Stichtage* die Konfigurationen für *erzwungenen Neustart*.  Zukünftig wird auch in früheren Versionen von Windows 10 *erzwungener Neustart* durch *Stichtage* ersetzt.  
 
-Wenn Sie keine *Stichtage* konfigurieren, werden für Geräte weiterhin deren Einstellungen für *erzwungenen Neustart* verwendet. In einem zukünftigen Update wird die [Intune-Unterstützung für die Einstellungen für erzwungenen Neustart aber beendet werden](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-).  
+Wenn Sie keine *Zeitlimits* konfigurieren, werden für Geräte weiterhin deren Einstellungen für *erzwungenen Neustart* verwendet. In einem zukünftigen Update wird die Intune-Unterstützung für die Einstellungen für erzwungenen Neustart jedoch eingestellt.  
 
 Sie sollten die Verwendung von *Stichtagen* für sämtliche Ihrer Windows 10-Geräte planen. Sobald Einstellungen für *Stichtage* vorhanden sind, können Sie die Intune-Konfigurationen für *erzwungenen Neustart* auf „Nicht konfiguriert“ festlegen. Sind diese Konfigurationen auf „Nicht konfiguriert“ festgelegt, beendet Intune das Verwalten dieser Einstellungen auf Geräten, ohne die letzten Konfigurationen für die Einstellung vom Gerät zu entfernen. Daher bleiben die letzten Konfigurationen, die für *erzwungenen Neustart* festgelegt wurden, solange auf Geräten aktiv und wirksam, bis diese Einstellungen durch eine andere Methode als Intune geändert werden. Wenn sich später die Geräteversion von Windows ändert oder wenn später die Intune-Unterstützung für *Stichtage* auf die Windows-Version der Geräte erweitert wird, werden auf dem jeweiligen Gerät die neuen Einstellungen verwendet, die bereits vorhanden sind.
 

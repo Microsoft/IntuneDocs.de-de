@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624c6cec2a887396cb6ef6508ab26a16d72f8f7c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c0b5f087494e8033cb9645d0a08edd4e1c481a2c
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725321"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584920"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Verwenden von Bereitstellungsprofilen für iOS-Apps, um zu verhindern, dass Apps ablaufen
 
@@ -44,14 +45,22 @@ Wenn Sie über Administratorberechtigungen verfügen, können Sie Sicherheitsgru
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Erstellen eines Bereitstellungsprofils für mobile iOS-Apps
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im Bereich **Intune** die Option **Client-Apps** aus.
-1. Wählen Sie in der Workload **Client-Apps** die Option **Verwalten** > **iOS-App-Bereitstellungsprofile** aus.
-2. Klicken Sie in dem Bereich mit der Profilliste auf die Option **Profil erstellen**.
-3. Konfigurieren Sie im Bereich **Profil erstellen** folgende Werte:
+2. Klicken Sie im Bereich **Intune** auf **Client-Apps** > **iOS-App-Bereitstellungsprofile** > **Profil erstellen**.
+3. Fügen Sie auf der Seite **Basics** (Grundeinstellungen) die folgenden Werte hinzu:
     - **Name**: Geben Sie einen Namen für dieses mobile Bereitstellungsprofil an.
     - **Beschreibung**: Geben Sie optional eine Beschreibung der Richtlinie ein.
     - **Profildatei hochladen:** Klicken Sie auf das Symbol **Öffnen**, und wählen Sie eine Datei mit einem Konfigurationsprofil für Apple-Mobilgeräte (mit der Erweiterung `.mobileprovision`) aus, die Sie von der [Apple Developer-Website](https://developer.apple.com/) heruntergeladen haben.
-4. Wählen Sie abschließend **Erstellen** aus.
+
+   Das **Ablaufdatum** wird mit einem Wert aus der Datei mit einem Konfigurationsprofil für Apple-Mobilgeräte aufgefüllt, die Sie oben hinzugefügt haben.<br>
+
+   <img alt="Create profile - Basics" src="~/apps/media/app-provisioning-profile-ios/app-provisioning-profile-ios-01.png">
+
+4. Klicken Sie auf **Weiter: Bereichstags**.<br>
+   Auf der Seite **Bereichstags** können Sie optional Bereichstags konfigurieren, um zu bestimmen, wer das iOS-App-Bereitstellungsprofil in Intune sehen kann. Weitere Informationen zu Bereichsmarkierungen finden Sie unter [Use role-based access control and scope tags for distributed IT (Verwenden der rollenbasierten Zugriffssteuerung und von Bereichsmarkierungen für verteilte IT)](../fundamentals/scope-tags.md).
+5. Klicken Sie auf **Weiter: Zuweisungen**.<br>
+   Auf der Seite **Zuweisungen** können Sie das Profil Benutzern und Geräten zuweisen. Beachten Sie unbedingt, dass Sie einem Gerät unabhängig davon ein Profil zuweisen können, ob das Gerät von Intune verwaltet wird oder nicht.
+6. Klicken Sie auf **Weiter: Überprüfen + erstellen**, um die für das Profil eingegebenen Werte zu überprüfen.
+7. Sobald Sie damit fertig sind, klicken Sie auf **Erstellen**, um das iOS-App-Bereitstellungsprofil in Intune zu erstellen. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 

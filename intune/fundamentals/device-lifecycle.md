@@ -8,18 +8,19 @@ manager: dougeby
 ms.date: 12/04/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 414476389a36cdfafd9169d449ea11adf6e68efd
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 816ad4bb5b17f3a480fbf834280c4e9792c394a9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726296"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502981"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Übersicht über den MDM-Lebenszyklus von Microsoft Intune (MDM = Mobile Device Management; mobile Geräteverwaltung)
 
@@ -27,7 +28,7 @@ ms.locfileid: "71726296"
 
 Alle von Ihnen verwalteten Geräte verfügen über einen *Lebenszyklus*. Intune kann Ihnen bei der Verwaltung dieses Lebenszyklus helfen: von der Registrierung über die Konfiguration und den Schutz bis hin zur Abkopplung des Geräts, wenn es nicht mehr benötigt wird.
 
-![Der Gerätelebenszyklus](./media/device-lifecycle/device-lifecycle.png "Der Intune-Lebenszyklus von Geräten")
+![Der Gerätelebenszyklus](./media/device-lifecycle/device-lifecycle.png "Der Intune-Gerätelebenszyklus")
 
 ## <a name="enroll"></a>Registrieren
 Die heutigen Strategien zur Verwaltung mobiler Geräte (Mobile Device Management, MDM) befassen sich mit einer Vielzahl von Mobiltelefonen, Tablets und PCs (iOS, Android, Windows und Mac OS X). Wenn Sie das Gerät verwalten müssen, was bei unternehmenseigenen Geräten im Allgemeinen der Fall ist, besteht der erste Schritt darin, die [Geräteregistrierung einzurichten](../enrollment/device-enrollment.md). Durch das Registrieren bei Intune (MDM) oder durch [Installieren der Intune-Clientsoftware](../manage-windows-pcs-with-microsoft-intune.md) können Sie auch Windows-PCs verwalten.

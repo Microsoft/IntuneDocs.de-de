@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 1/15/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2abf391ddbdb1f7087cd06ed1865b3da8b155178
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 755aefb955c2d30652434f2bd2e91981145fc56f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723579"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505593"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>Einrichten der Intune-Registrierung von vollständig verwalteten Android Enterprise-Geräten 
 
@@ -61,7 +62,7 @@ Führen Sie die folgenden Schritte aus, um die Verwaltung für vollständig verw
 > [!NOTE]
 > Wenn Sie eine Richtlinie für den bedingten Zugriff mit Azure AD definiert haben, die das Steuerelement *Markieren des Geräts als kompatibel erforderlich* verwendet sowie für **Alle Cloud-Apps**, **Android** und **Browser** gilt, müssen Sie die **Microsoft Intune**-Cloud-App aus dieser Richtlinie ausschließen. Der Grund: Beim Android-Setupvorgang wird eine Chrome-Registerkarte zum Authentifizieren Ihrer Benutzer während der Registrierung verwendet. Weitere Informationen finden Sie in der [Dokumentation zum bedingten Zugriff mit Azure AD](https://docs.microsoft.com/azure/active-directory/conditional-access/).
 
-Wenn für diese Einstellung **Ja** ausgewählt ist, erhalten Sie ein Registrierungstoken (eine zufällige Zeichenfolge) und einen QR-Code für Ihren Intune-Mandanten. Dieses einzelne Registrierungstoken ist für all Ihre Benutzer gültig und läuft nicht ab. Je nach Android-Betriebssystem und Version des Geräts können Sie entweder das Token oder den QR-Code zum Registrieren des Kioskgeräts verwenden.
+Wenn für diese Einstellung **Ja** ausgewählt ist, erhalten Sie ein Registrierungstoken (eine zufällige Zeichenfolge) und einen QR-Code für Ihren Intune-Mandanten. Dieses einzelne Registrierungstoken ist für all Ihre Benutzer gültig und läuft nicht ab. Abhängig vom Android-Betriebssystem und der Version des Geräts können Sie entweder das Token oder den QR-Code verwenden, um das Gerät zu registrieren.
 
 ## <a name="enroll-the-fully-managed-devices"></a>Registrieren vollständig verwalteter Android-Geräte
 Sie können jetzt [Ihre vollständig verwalteten Geräte registrieren](android-dedicated-devices-fully-managed-enroll.md).

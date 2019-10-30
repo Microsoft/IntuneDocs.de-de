@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
@@ -17,20 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: 5d70496a87f923b61cacb3da250e5f22ce5c7817
+ms.sourcegitcommit: aeb76032de216e5feb94559aeaf36c0357f1247d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379813"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587952"
 ---
 # <a name="set-enrollment-restrictions"></a>Festlegen von Registrierungseinschränkungen
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Als Intune-Administrator können Sie Registrierungsbeschränkungen erstellen und verwalten, mit denen definiert wird, welche Geräte für die Verwaltung mit Intune registriert werden können. Hierzu gehört Folgendes:
-- Anzahl von Geräten.
-- Betriebssysteme und Versionen. Sie können mehrere Beschränkungen definieren und diese auf verschiedene Benutzergruppen anwenden. Für Ihre verschiedenen Beschränkungen können Sie eine [Prioritätsreihenfolge](#change-enrollment-restriction-priority) festlegen.
+- Die Anzahl von Geräten.
+- Betriebssysteme und Versionen.
+
+Sie können mehrere Beschränkungen definieren und diese verschiedenen Benutzergruppen zuordnen. Für Ihre verschiedenen Beschränkungen können Sie eine [Prioritätsreihenfolge](#change-enrollment-restriction-priority) festlegen.
 
 >[!NOTE]
 >Registrierungseinschränkungen stellen keine Sicherheitsfunktionen dar. Gefährdete Geräte können falsche Angaben zu ihren Eigenschaften enthalten. Diese Einschränkungen sind eine bestmögliche Barriere für nicht böswillige Benutzer.
@@ -69,8 +72,17 @@ Auf den Gerätetyp und das Gerätelimit bezogene Registrierungsbeschränkungen w
     - Android-Geräteadministrator und Android Enterprise-Arbeitsprofil unterstützen „Hauptversion.Nebenversion.Revision.Build“.
     - iOS unterstützt major.minor.rev. Die Betriebssystemversionen gelten nicht für Apple-Geräte, die mit dem Programm zur Geräteregistrierung, dem Apple School Manager oder der App Apple Configurator registriert werden.
     - Windows unterstützt major.minor.build.rev nur für Windows 10.
-    > [!Note]
-    > Windows 10 gibt die Buildnummer während der Registrierung nicht an. Wenn Sie zum Beispiel in Build 10.0.17134.100 eine Eingabe vornehmen und das Gerät über Build 10.0.17134.174 verfügt, wird es während der Registrierung blockiert.
+    
+    > [!IMPORTANT]
+    > Android Enterprise (Arbeitsprofile) und Administratorplattformen für Android-Geräte verhalten sich wie folgt:
+    > - Wenn beide Plattformen für die gleiche Gruppe zugelassen sind, werden die Benutzer mit einem Arbeitsprofil registriert, wenn ihr Gerät es unterstützt, andernfalls werden sie als Geräteadministrator angemeldet. 
+    > - Wenn beide Plattformen für die Gruppe zugelassen und für bestimmte und nicht überschneidende Versionen verbessert sind, erhalten die Benutzer den für ihre Betriebssystemversion definierten Registrierungsflow. 
+    > - Wenn beide Plattformen zugelassen sind, aber für die gleichen Versionen blockiert sind, dann werden Benutzer auf Geräten mit den blockierten Versionen aus dem Registrierungsflow des Android-Geräteadministrators entfernt und dann von der Registrierung ausgeschlossen und zur Abmeldung aufgefordert. 
+    >
+    > Es ist zu beachten, dass weder das Arbeitsprofil noch die Registrierung als Geräteadministrator funktionieren, es sei denn, die entsprechenden Voraussetzungen wurden bei der Android-Registrierung erfüllt. 
+    
+   > [!Note]
+   > Windows 10 gibt die Buildnummer während der Registrierung nicht an. Wenn Sie zum Beispiel in Build 10.0.17134.100 eine Eingabe vornehmen und das Gerät über Build 10.0.17134.174 verfügt, wird es während der Registrierung blockiert.
 
 8. Wählen Sie unter **Persönliches Eigentum** die Option **Zulassen** für die Plattformen, die Sie als Geräte im persönlichen Besitz zulassen möchten.
 9. Klicken Sie auf **Weiter**, um zur Seite **Zuweisungen** zu gelangen.

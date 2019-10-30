@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afc9d953e1d324adb3f00eb5209732a858bbbcda
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: c3d98a0e3c5bd2a5c11c9aa72d791306dfbe6578
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314678"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503298"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identifizieren von Geräten als unternehmenseigen
 
@@ -121,7 +122,7 @@ Detaillierte Angaben über International Mobile Equipment Identifier finden Sie 
 
 ## <a name="change-device-ownership"></a>Ändern des Gerätebesitzes
 
-Die Geräteeigenschaften zeigen den **Besitz** für jeden Gerätedatensatz in Intune an. Als Administrator können Sie Geräte als **Persönlich** oder **Unternehmen** festlegen.
+Die Geräteeigenschaften zeigen den **Besitz** für jeden Gerätedatensatz in Intune an. Als Administrator können Sie Geräte als **Persönlich** oder **Unternehmen** festlegen. Wenn der Besitztyp eines Geräts von „Persönlich“ auf „Unternehmen“ geändert wird, löscht Intune alle zuvor von diesem Gerät erfassten App-Informationen innerhalb von 7 Tagen. Gegebenenfalls löscht Intune auch die Telefonnummer im Datensatz. 
 
 **So ändern Sie den Gerätebesitz:**
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, wechseln Sie zu **Geräte**, und wählen Sie das Gerät aus.

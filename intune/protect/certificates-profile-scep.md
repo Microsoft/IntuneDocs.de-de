@@ -5,10 +5,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
-ms.topic: article
-ms.prod: ''
+ms.date: 10/18/2019
+ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e6b9f7d6aeda219af0f0cf3d0f5c34a3f03d258
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4e28db0d24101ae65ff8c5e49febd0ff5dddc6e2
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722890"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585431"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Erstellen und Zuweisen eines SCEP-Zertifikatprofils in Intune
 
@@ -50,7 +50,7 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
 
    2. Unter „Überwachung“ ist die Zertifikatberichterstellung für SCEP-Zertifikatprofile für Gerätebesitzer nicht verfügbar.
    
-   3. Die Sperrung von Zertifikaten, die über SCEP-Zertifikatprofile für Gerätebesitzer bereitgestellt wurden, wird in Intune nicht unterstützt, kann aber mit einem externen Prozess oder direkt über die Zertifizierungsstelle durchgeführt werden.
+   3. Sie können Intune nicht verwenden, um Zertifikate zu widerrufen, die von SCEP-Zertifikatsprofilen für Gerätebesitzer bereitgestellt wurden. Sie können den Widerruf über einen externen Prozess oder direkt mit der Zertifizierungsstelle verwalten. 
 
 6. Klicken Sie auf **Einstellungen**, und nehmen Sie die folgenden Konfigurationen vor:
 
@@ -113,15 +113,13 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
         - **{{DeviceName}}**
         - **{{FullyQualifiedDomainName}}** *(Gilt nur für Windows-Geräte und in Domänen eingebundene Geräte)*
         - **{{MEID}}**
-        
+
         Sie können diese Variablen, gefolgt vom Text für die Variablen, im Textfeld angeben. Beispielsweise kann der allgemeine Name für ein Gerät namens *Device1* als **CN={{DeviceName}}Device1** hinzugefügt werden.
 
         > [!IMPORTANT]  
         > - Schließen Sie den Variablennamen beim Angeben einer Variable wie im Beispiel veranschaulicht in geschweifte Klammern („{ }“) ein, um einen Fehler zu vermeiden.  
         > - Geräteeigenschaften, die im *Betreff* oder *alternativen Antragstellernamen* eines Gerätezertifikats wie **IMEI**, **SerialNumber** oder **FullyQualifiedDomainName** verwendet werden, sind Eigenschaften, die von einer Person mit Zugriff auf das Gerät gespooft sein könnten.
         > - Ein Gerät muss alle in einem Zertifikatprofil für dieses Profil angegebenen Variablen unterstützen, um auf diesem Gerät installiert werden zu können.  Wenn **{{IMEI}}** beispielsweise im Antragstellernamen eines SCEP-Profils verwendet wird und einem Gerät ohne IMEI-Nummer zugewiesen ist, tritt bei der Profilinstallation ein Fehler auf.  
- 
-
 
    - **Alternativer Antragstellername**:  
      Wählen Sie aus, auf welche Weise Intune den alternativen Antragstellernamen (Subject Alternative Name, SAN) in der Zertifikatanforderung automatisch erstellen soll. Die Optionen für den alternativen Antragstellernamen sind abhängig vom ausgewählten Zertifikattyp (**Benutzer** oder **Gerät**).  
@@ -198,15 +196,15 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
      Fügen Sie Werte für den beabsichtigten Zweck des Zertifikats hinzu. In den meisten Fällen erfordert das Zertifikat *Clientauthentifizierung*, damit der Benutzer bzw. das Gerät auf einem Server authentifiziert werden kann. Sie können ggf. weitere Schlüsselverwendungen hinzufügen.
 
    - **Verlängerungsschwellenwert (%)** :  
-     Geben Sie den Prozentsatz der Zertifikatgültigkeitsdauer an, die verbleibt, bevor das Gerät eine Verlängerung des Zertifikats anfordert. Wenn Sie beispielsweise „20“ eingeben und das Zertifikat bereits zu 80 % abgelaufen ist, der Vorgang aber weiter fortgesetzt wird, bis die Erneuerung erfolgreich ist, wird versucht, das Zertifikat zu erneuern. Bei der Erneuerung wird ein neues Zertifikat generiert, das zu einem neuen öffentlichen/privaten Schlüsselpaar führt.
+     Geben Sie den Prozentsatz der Zertifikatgültigkeitsdauer an, die verbleibt, bevor das Gerät eine Verlängerung des Zertifikats anfordert. Wenn Sie beispielsweise „20“ eingeben, wird versucht, das Zertifikat zu erneuern, wenn das Zertifikat bereits zu 80 % abgelaufen ist. Die Erneuerungsversuche werden fortgesetzt, bis die Erneuerung erfolgreich ist. Bei der Erneuerung wird ein neues Zertifikat generiert, das zu einem neuen öffentlichen/privaten Schlüsselpaar führt.
 
    - **SCEP-Server-URLs**:  
-     Geben Sie mindestens eine URL für die NDES-Server ein, die Zertifikate über SCEP ausstellen. Geben Sie zum Beispiel *https://ndes.contoso.com/certsrv/mscep/mscep.dll* ein. Sie können ggf. zusätzliche SCEP-URLs für den Lastenausgleich hinzufügen, wenn URLs mit dem Profil nach dem Zufallsprinzip auf das Gerät übertragen werden. Wenn ein SCEP-Server nicht verfügbar ist, tritt bei der SCEP-Anforderung ein Fehler auf. Außerdem ist es möglich, dass die CERT-Anforderung beim nachfolgenden Einchecken von Geräten für denselben nicht verfügbaren Server durchgeführt wird.
+     Geben Sie mindestens eine URL für die NDES-Server ein, die Zertifikate über SCEP ausstellen. Geben Sie zum Beispiel *https://ndes.contoso.com/certsrv/mscep/mscep.dll* ein. Sie können ggf. zusätzliche SCEP-URLs für den Lastenausgleich hinzufügen, wenn URLs mit dem Profil nach dem Zufallsprinzip auf das Gerät übertragen werden. Wenn ein SCEP-Server nicht verfügbar ist, tritt bei der SCEP-Anforderung ein Fehler auf. Außerdem ist es möglich, dass die Cert-Anforderung bei nachfolgenden Eincheckvorgängen von Geräten für denselben nicht verfügbaren Server durchgeführt wird.
 
 7. Klicken Sie zuerst auf **OK** und dann auf **Erstellen**. Das Profil wird erstellt und in der Liste *Gerätekonfiguration > Profile* angezeigt.
 
 ### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>Vermeiden von Zertifikatsignieranforderungen mit Sonderzeichen als Escapezeichen
-Es gibt ein bekanntes Problem bei SCEP-Zertifikatanforderungen, die einen Antragstellernamen (CN) mit einem oder mehreren der folgenden Sonderzeichen als Escapezeichen enthalten. Antragstellernamen, die eines der Sonderzeichen als Escapezeichen enthalten, führen zu einer CSR mit falschem Antragstellernamen, was wiederum dazu führt, dass bei der Intune SCEP-Captchavalidierung ein Fehler auftritt und kein Zertifikat ausgestellt wird.  
+Es gibt ein bekanntes Problem bei SCEP- und PKCS-Zertifikatanforderungen, die einen Antragstellernamen (CN) mit einem oder mehreren der folgenden Sonderzeichen als Escapezeichen enthalten. Antragstellernamen, die eines der Sonderzeichen als Escapezeichen enthalten, führen zu einer CSR mit einem falschen Antragstellernamen. Ein falscher Antragstellername führt dazu, dass die SCEP-Challenge-Validierung fehlschlägt und kein Zertifikat ausgestellt wird.
 
 Die Sonderzeichen sind:
 - \+

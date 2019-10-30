@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c4d40d3f15fe23511f3f15f7c13181a0fa72f6b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 91627a47f9dccfb436e64aaadeeb392648dff821
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726517"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585302"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Anfordern von Support für Microsoft Intune  
 
@@ -82,7 +83,7 @@ Sie können über die folgenden Optionen auf „Hilfe und Support“ zugreifen:
   4. Wählen Sie den Link zur Intune-Seite „Hilfe und Support“ aus.
 
 > [!NOTE]  
-> Wenn Ihre Intune-Instanz in der Government Compute Cloud (GCC) – auch als Sovereign Cloud bezeichnet, Beispiel: Azure Government – gehostet wird, finden Sie weitere Informationen weiter unten in diesem Artikel unter „Intune-Support für die Government Compute Cloud“. Die Intune-Benutzeroberfläche *Hilfe und Support* wird erst zu einem späteren Zeitpunkt in diesem Jahr verfügbar sein. 
+> Wenn Ihre Intune-Instanz in der privaten Cloud für Regierungsbehörden – auch als Sovereign Cloud bezeichnet, Beispiel: Azure Government – gehostet wird, finden Sie weitere Informationen weiter unten in diesem Artikel unter [Intune-Support für die private Cloud für Regierungsbehörden](#intune-support-for-private-cloud-for-government). Die Intune-Benutzeroberfläche *Hilfe und Support* wird erst zu einem späteren Zeitpunkt in diesem Jahr verfügbar sein. 
 
 
 Wenn Sie *Hilfe und Support* öffnen, richtet sich die Ansicht im Portal danach, ob aktive Supportincidents vorhanden sind. Wenn Sie über Premier Support verfügen, werden einige zusätzliche Elemente und Optionen angezeigt:
@@ -162,20 +163,20 @@ Wählen Sie die Schaltfläche für den Verlauf, um die von Ihnen erstellten Supp
 
 Wenn Sie die Option **Hilfe und Support** im linken Navigationsbereich oder das **?** - Symbol in der oberen rechten Ecke des Azure-Portals verwenden, öffnen Sie damit die Azure-Benutzeroberfläche „Hilfe und Support“, die sich von der Intune-Benutzeroberfläche „Hilfe und Support“ unterscheidet.  
 
-Seit April 2019 können Sie nicht mehr auf die Azure-Benutzeroberfläche *Hilfe und Support* zugreifen, um Unterstützung für Intune zu erhalten, es sei denn, Ihr Abonnement befindet sich in der Government Compute Cloud (GCC).  
+Seit April 2019 können Sie nicht mehr auf die Azure-Benutzeroberfläche *Hilfe und Support* zugreifen, um Unterstützung für Intune zu erhalten, es sei denn, Ihr Abonnement befindet sich in einer privaten Cloud für Regierungsbehörden.  
 
-Wenn Ihre Intune-Instanz nicht in der GCC ausgeführt wird, werden Sie beim Navigieren zur Azure-Benutzeroberfläche *Hilfe und Support* zur Intune-Benutzeroberfläche *Hilfe und Support* umgeleitet, wo Sie Supportincidents erstellen und verwalten können.  
+Wenn Ihre Intune-Instanz nicht in einer privaten Cloud für Regierungsbehörden ausgeführt wird, werden Sie beim Navigieren zur Azure-Benutzeroberfläche *Hilfe und Support* zur Intune-Benutzeroberfläche *Hilfe und Support* umgeleitet, wo Sie Supportincidents erstellen und verwalten können.  
 
 
-## <a name="intune-support-for-government-compute-cloud"></a>Intune-Support für die Government Compute Cloud  
+## <a name="intune-support-for-private-cloud-for-government"></a>Intune-Support für die private Cloud für Regierungsbehörden  
 
-Wenn Ihr Intune-Abonnement in der Government Compute Cloud (GCC) – auch als Sovereign Cloud bezeichnet, Beispiel: Azure Government – gehostet wird, haben Sie noch keinen Zugriff auf die neuere Intune-Benutzeroberfläche für Hilfe und Support.  Verwenden Sie stattdessen die folgenden Informationen, um Support für Intune zu erhalten. 
+Wenn Ihr Intune-Abonnement in der privaten Cloud für Regierungsbehörden – auch als Sovereign Cloud bezeichnet, Beispiel: Azure Government – gehostet wird, haben Sie noch keinen Zugriff auf die neuere Intune-Benutzeroberfläche für Hilfe und Support.  Verwenden Sie stattdessen die folgenden Informationen, um Support für Intune zu erhalten. 
 
 
 ### <a name="create-an-online-support-ticket"></a>Erstellen eines Onlinesupporttickets 
 
 >[!IMPORTANT]    
-> Da der Bereich *Hilfe und Support* in ein neues System verlagert wird, das für die GCC noch nicht verfügbar ist, identifiziert das Portal beim Erstellen eines Supportincidents einen Supportfall, der eine 15-stellige Identifikationsnummer verwendet. Beim Erstellen des Falls mit 15-stelliger Nummer wird eine Spiegelversion dieses Falls erstellt, die vom Microsoft-Support verwendet wird. Dieser gespiegelte Fall wird in einem neuen Supportsystem erstellt, verwendet eine 8-stellige Fall-ID und wird von Supportdiensten zum Nachverfolgen der ausgeführten Arbeiten und der erfolgten Kommunikation für Ihren Supportincident verwendet. Kurz nach der Erstellung der 15-stelligen Fallnummer erhalten Sie eine E-Mail mit der 8-stelligen Nummer des gespiegelten Supportfalls, die von den Supportdiensten verwendet wird.  
+> Da der Bereich *Hilfe und Support* in ein neues System verlagert wird, das für die private Cloud für Regierungsbehörden noch nicht verfügbar ist, identifiziert das Portal beim Erstellen eines Supportincidents einen Supportfall, der eine 15-stellige Identifikationsnummer verwendet. Beim Erstellen des Falls mit 15-stelliger Nummer wird eine Spiegelversion dieses Falls erstellt, die vom Microsoft-Support verwendet wird. Dieser gespiegelte Fall wird in einem neuen Supportsystem erstellt, verwendet eine 8-stellige Fall-ID und wird von Supportdiensten zum Nachverfolgen der ausgeführten Arbeiten und der erfolgten Kommunikation für Ihren Supportincident verwendet. Kurz nach der Erstellung der 15-stelligen Fallnummer erhalten Sie eine E-Mail mit der 8-stelligen Nummer des gespiegelten Supportfalls, die von den Supportdiensten verwendet wird.  
 > 
 > Die Supportmitarbeiter arbeiten und kommunizieren mit der 8-stelligen Supportfallnummer und verwenden nur diese zum Protokollieren der Kommunikation und zum Nachverfolgen des Incidentstatus. Daher erhalten Sie E-Mail-Updates mit dieser 8-stelligen Supportfallnummer, die zum Aufzeichnen der Bearbeitung Ihres Falls dienen. Im Supportincident mit der 15-stelligen Nummer werden keine Details protokolliert. Wenn der Support beendet und der 8-stellige Supportfall abgeschlossen ist, wird dieser Status in dem 15-stelligen Supportfall gespiegelt, den Sie im Azure-Portal anzeigen können.  Für den 15-stelligen Supportfall sind keine weiteren Updates oder Statusänderungen zu erwarten.  
 > 
@@ -223,7 +224,7 @@ Sie können Ihre Supportanfragen im Azure-Portal anzeigen. Es sind jedoch nur ei
 2. Auf der Seite **Hilfe und Support** können Sie die Liste der **kürzlich gesendeten Supportanfragen** anzeigen.
 
    > [!IMPORTANT]  
-   > Government Compute Cloud-Kunden können nur die 15-stellige Supportnummer und den Incidentstatus anzeigen. Sämtliche Kommunikation zum Fall sowie die Aufzeichnungen der erledigten Arbeiten sowie mögliche Warnungen werden per E-Mail gesendet und geben die 8-stellige Supportfallnummer an, die als Spiegel des in der Intune-Konsole eröffneten Supportfalls erstellt wird.   
+   > Kunden der privaten Cloud für Regierungsbehörden können nur die 15-stellige Supportnummer und den Incidentstatus anzeigen. Sämtliche Kommunikation zum Fall sowie die Aufzeichnungen der erledigten Arbeiten sowie mögliche Warnungen werden per E-Mail gesendet und geben die 8-stellige Supportfallnummer an, die als Spiegel des in der Intune-Konsole eröffneten Supportfalls erstellt wird.   
 
 ## <a name="additional-resources"></a>Zusätzliche Ressourcen  
 

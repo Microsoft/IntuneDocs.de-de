@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff9306c7429adbe4a5159879ccbe7cb0f13e65ed
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 62a3f9ee2cec41f14e450158ab8ad02e1a3a2ea2
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725568"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785691"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Selektives Löschen von Daten in Intune über durch App-Schutzrichtlinien festgelegte bedingte Startaktionen
 
@@ -59,6 +60,7 @@ Für iOS können Sie mithilfe der Dropdownliste **Einstellung** Aktionen für di
 - Mindestversion für App
 - Mindestversion für SDK
 - Gerätemodelle
+- Maximal zulässige Gerätebedrohungsstufe
 
 Geben Sie eine durch Semikolons getrennte Liste der iOS-Modellbezeichner ein, um die **Gerätemodelle**-Einstellung zu verwenden. Sie finden iOS-Modellbezeichner in der Spalte „Device Type“ (Gerätetyp) in der [Dokumentation für HockeyApp Support](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
 Beispieleingabe: *iPhone5,2;iPhone5,3*
@@ -83,6 +85,7 @@ Für Android können Sie mithilfe der Dropdownliste **Einstellung** Aktionen fü
 - Gerätehersteller
 - SafetyNet-Gerätenachweis
 - Bedrohungsüberprüfung für Apps
+- Maximal zulässige Gerätebedrohungsstufe
 
 Geben Sie eine durch Semikolons getrennte Liste der Android-Hersteller ein, um die Einstellung **Gerätehersteller** zu verwenden. Den Android-Gerätehersteller finden Sie in den Geräteeinstellungen.<br>
 Beispieleingabe: *Hersteller A;Hersteller B* 

@@ -1,13 +1,14 @@
 ---
 title: Erstellen eines Zertifikatprofils in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Sie können für Ihre Geräte ein Zertifikatprofil hinzufügen oder erstellen, indem Sie eine SCEP- oder PKCS-Zertifikatumgebung konfigurieren, das öffentliche Zertifikat exportieren, das Profil im Azure-Portal erstellen und anschließend den Zertifikatprofilen in Microsoft Intune im Azure-Portal SCEP oder PKCS zuweisen
+description: Erfahren Sie mehr über die Verwendung von Zertifikaten und Zertifikatprofilen des Typs Simple Certificate Enrollment Protocol (SCEP) oder Public Key Cryptography Standards (PKCS) mit Microsoft Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e993df5c37cfed8d5dd0481543b406dd25ad1a49
-ms.sourcegitcommit: b1e97211db7cb949eb39be6776b3a11d434fdab0
+ms.openlocfilehash: 65ced1dfb0fe872129b7437e8dda3dde680b5d07
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72251563"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786827"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>Verwenden von Zertifikaten zur Authentifizierung in Microsoft Intune  
 
@@ -30,7 +31,7 @@ Verwenden Sie Zertifikate mit Intune, um Ihre Benutzer mithilfe von VPN, WLAN od
 ## <a name="intune-supported-certificates-and-usage"></a>Von Intune unterstützte Zertifikate und Nutzung
 | Typ              | Authentifizierung | S/MIME-Signatur | S/MIME-Verschlüsselung  |
 |--|--|--|--|
-| Importiertes PKCS-Zertifikat |  | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png)|
+| Über PKCS (Public Key Cryptography Standards) importiertes Zertifikat |  | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png)|
 | PKCS#12 (oder PFX)    | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) |  |
 | Simple Certificate Enrollment-Protokoll (SCEP)  | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) | |
 
@@ -43,9 +44,9 @@ Jedes einzelne Zertifikatprofil, das Sie erstellen, unterstützt eine einzelne P
 - Wenn Sie SCEP-Zertifikatprofile mit Microsoft Active Directory-Zertifikatdiensten verwenden, konfigurieren Sie einen Server für den Registrierungsdienst für Netzwerkgeräte (Network Device Enrollment Service, NDES).
 - Wenn Sie ein SCEP mit einem unserer Zertifizierungsstellenpartner verwenden, müssen Sie es [in Intune integrieren](certificate-authority-add-scep-overview.md#set-up-third-party-ca-integration).
 - Für SCEP- und PKCS-Zertifikatprofile müssen Sie den Microsoft Intune Certificate Connector herunterladen, installieren und konfigurieren. 
-- Für PCKS-importierte Zertifikate müssen Sie den PFX-Zertifikatconnector für Microsoft Intune herunterladen, installieren und konfigurieren.
+- Für PKCS-importierte Zertifikate müssen Sie den PFX-Zertifikatconnector für Microsoft Intune herunterladen, installieren und konfigurieren.
 - PKCS-importierte Zertifikate erfordern, dass Sie Zertifikate aus Ihrer Zertifizierungsstelle exportieren und in Microsoft Intune importieren. Weitere Informationen finden Sie unter [dem PowerShell-Projekt für PFXImport](https://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell).
-- Damit ein Gerät SCEP-, PCKS- oder PKCS-importierte Zertifikatprofile verwendet, muss dieses Gerät Ihrer Stammzertifizierungsstelle vertrauen. Sie verwenden ein *vertrauenswürdiges Zertifikatprofil*, um Ihr Zertifikat der vertrauenswürdigen Stammzertifizierungsstelle für Geräte bereitzustellen.  
+- Damit ein Gerät SCEP-, PKCS- oder über PKCS importierte Zertifikatprofile verwendet, muss dieses Gerät Ihrer Stammzertifizierungsstelle vertrauen. Sie verwenden ein *vertrauenswürdiges Zertifikatprofil*, um Ihr Zertifikat der vertrauenswürdigen Stammzertifizierungsstelle für Geräte bereitzustellen.  
 
 ## <a name="supported-platforms-and-certificate-profiles"></a>Unterstützte Plattformen und Zertifikatprofile  
 | Plattform              | Vertrauenswürdiges Zertifikatprofil | PKCS-Zertifikatprofil | SCEP-Zertifikatprofil | Importiertes PKCS-Zertifikatprofil  |
@@ -55,22 +56,22 @@ Jedes einzelne Zertifikatprofil, das Sie erstellen, unterstützt eine einzelne P
 | Android Enterprise <br> – Dediziert (Gerätebesitzer)   |  |   |  |   |
 | Android Enterprise <br> – Arbeitsprofil    | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) |
 | iOS                   | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) |
-| macOS                 | ![Unterstützt](./media/certificates-configure/green-check.png) |   |![Unterstützt](./media/certificates-configure/green-check.png)|![Unterstützt](./media/certificates-configure/green-check.png)|
+| macOS                 | ![Unterstützt](./media/certificates-configure/green-check.png) |  ![Unterstützt](./media/certificates-configure/green-check.png) |![Unterstützt](./media/certificates-configure/green-check.png)|![Unterstützt](./media/certificates-configure/green-check.png)|
 | Windows Phone 8.1     |![Unterstützt](./media/certificates-configure/green-check.png)  |  | ![Unterstützt](./media/certificates-configure/green-check.png)| ![Unterstützt](./media/certificates-configure/green-check.png) |
 | Windows 8.1 und höher |![Unterstützt](./media/certificates-configure/green-check.png)  |  |![Unterstützt](./media/certificates-configure/green-check.png) |   |
 | Windows 10 und höher  | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) | ![Unterstützt](./media/certificates-configure/green-check.png) |
 
 ## <a name="export-the-trusted-root-ca-certificate"></a>Exportieren des Zertifikats der vertrauenswürdigen Stammzertifizierungsstelle  
-Wenn Sie PKCS-, SCEP- und PKCS-importierte Zertifikate verwenden möchten, müssen Geräte ihrer Stammzertifizierungsstelle vertrauen. Um diese Vertrauensstellung einzurichten, exportieren Sie das Zertifikat der vertrauenswürdigen Stammzertifizierungsstelle sowie alle Zwischenzertifikate oder ausstellenden Zertifikate von Zertifizierungsstellen als öffentliches Zertifikat (.cer). Sie können diese Zertifikate von der ausstellenden Zertifizierungsstelle oder von einem beliebigen Gerät erhalten, das Ihrer ausstellenden Zertifizierungsstelle vertraut.  
+Wenn Sie PKCS-, SCEP- und PKCS-importierte Zertifikate verwenden möchten, müssen Geräte ihrer Stammzertifizierungsstelle vertrauen. Exportieren Sie das Zertifikat der vertrauenswürdigen Stammzertifizierungsstelle sowie alle Zwischenzertifikate oder ausstellenden Zertifikate von Zertifizierungsstellen als öffentliches Zertifikat (.cer), um eine Vertrauensstellung einzurichten. Sie können diese Zertifikate von der ausstellenden Zertifizierungsstelle oder von einem beliebigen Gerät erhalten, das Ihrer ausstellenden Zertifizierungsstelle vertraut.  
 
 Informationen zum Exportieren des Zertifikats finden Sie in der Dokumentation zu Ihrer Zertifizierungsstelle. Sie müssen das öffentliche Zertifikat als CER-Datei exportieren.  Exportieren Sie nicht den privaten Schlüssel, eine PFX-Datei.  
 
 Sie verwenden diese CER-Datei, wenn Sie [vertrauenswürdige Zertifikatprofile erstellen](#create-trusted-certificate-profiles), um das Zertifikat für Ihre Geräte bereitzustellen.  
 
 ## <a name="create-trusted-certificate-profiles"></a>Erstellen von vertrauenswürdigen Zertifikatprofilen  
-Erstellen Sie ein vertrauenswürdiges Zertifikatprofil, bevor Sie ein SCEP-, PKCS oder PKCS-importiertes Zertifikatprofil erstellen können. Durch Bereitstellen eines vertrauenswürdigen Zertifikatprofils wird sichergestellt, dass jedes Gerät die Rechtmäßigkeit Ihrer Zertifizierungsstelle erkennt. SCEP-Zertifikatprofile verweisen direkt auf ein vertrauenswürdiges Zertifikatprofil. PKCS-Zertifikatprofile verweisen nicht direkt auf das Profil des vertrauenswürdigen Zertifikats, sondern direkt auf den Server, der Ihre Zertifizierungsstelle hostet. Importierte PKCS-Zertifikatprofile verweisen nicht direkt auf das Profil des vertrauenswürdigen Zertifikats, sie können es jedoch auf dem Gerät verwenden. Durch die Bereitstellung eines vertrauenswürdigen Zertifikatprofils auf Geräten wird sichergestellt, dass dieses Vertrauen aufgebaut wird. Wenn die Stammzertifizierungsstelle von einem Gerät nicht als vertrauenswürdig eingestuft wird, schlägt die SCEP- oder PKCS-Zertifikatprofilrichtlinie fehl.  
+Erstellen Sie ein vertrauenswürdiges Zertifikatprofil, bevor Sie ein SCEP-, PKCS oder PKCS-importiertes Zertifikatprofil erstellen können. Durch Bereitstellen eines vertrauenswürdigen Zertifikatprofils wird sichergestellt, dass jedes Gerät die Rechtmäßigkeit Ihrer Zertifizierungsstelle erkennt. SCEP-Zertifikatprofile verweisen direkt auf ein vertrauenswürdiges Zertifikatprofil. PKCS-Zertifikatprofile verweisen nicht direkt auf das Profil des vertrauenswürdigen Zertifikats, sondern direkt auf den Server, der Ihre Zertifizierungsstelle hostet. Über PKCS importierte Zertifikatprofile verweisen nicht direkt auf das Profil des vertrauenswürdigen Zertifikats, sie können es jedoch auf dem Gerät verwenden. Durch die Bereitstellung eines vertrauenswürdigen Zertifikatprofils auf Geräten wird sichergestellt, dass dieses Vertrauen aufgebaut wird. Wenn die Stammzertifizierungsstelle von einem Gerät nicht als vertrauenswürdig eingestuft wird, schlägt die SCEP- oder PKCS-Zertifikatprofilrichtlinie fehl.  
 
-Erstellen Sie ein separates vertrauenswürdiges Zertifikatprofil für jede Geräteplattform, die Sie unterstützen möchten, genauso wie bei den SCEP-, PCKS- und PKCS-importierten Zertifikatprofilen.  
+Erstellen Sie ein separates vertrauenswürdiges Zertifikatprofil für jede Geräteplattform, die Sie unterstützen möchten, genauso wie bei den SCEP-, PKCS- und über PKCS importierten Zertifikatprofilen.  
 
 
 ### <a name="to-create-a-trusted-certificate-profile"></a>So erstellen Sie ein vertrauenswürdiges Zertifikatprofil  
@@ -86,7 +87,7 @@ Erstellen Sie ein separates vertrauenswürdiges Zertifikatprofil für jede Gerä
    - **Computerzertifikatspeicher – Zwischenspeicher**
    - **Benutzerzertifikatspeicher – Zwischenspeicher**
 8. Klicken Sie anschließend auf **OK**, navigieren Sie wieder zum Bereich **Profil erstellen**, und klicken Sie auf **Erstellen**.
-Das Profil wird in der Liste der Profile im Anzeigebereich *Gerätekonfiguration – Profile* mit dem Profiltyp **Vertrauenswürdiges Zertifikat** angezeigt.  Stellen Sie sicher, dass Sie dieses Profil Geräten zuweisen, die SCEP- oder PCKS-Zertifikate verwenden werden. Informationen zur Zuweisung des Profils zu Gruppen finden Sie unter [Zuweisen von Geräteprofilen](../configuration/device-profile-assign.md).
+Das Profil wird in der Liste der Profile im Anzeigebereich *Gerätekonfiguration – Profile* mit dem Profiltyp **Vertrauenswürdiges Zertifikat** angezeigt.  Stellen Sie sicher, dass Sie dieses Profil Geräten zuweisen, die SCEP- oder PKCS-Zertifikate verwenden werden. Informationen zur Zuweisung des Profils zu Gruppen finden Sie unter [Zuweisen von Geräteprofilen](../configuration/device-profile-assign.md).
 
 > [!NOTE]  
 > Auf Android-Geräten wird möglicherweise die Benachrichtigung angezeigt, dass ein Drittanbieter ein vertrauenswürdiges Zertifikat installiert hat.  
@@ -97,7 +98,7 @@ Das Profil wird in der Liste der Profile im Anzeigebereich *Gerätekonfiguration
 - [Verwenden der Drittanbieter-Zertifizierungsstelle](certificate-authority-add-scep-overview.md)  
 
 ## <a name="next-steps"></a>Nächste Schritte  
-Nachdem Sie die Profile des vertrauenswürdigen Zertifikats erstellt und zugewiesen haben, erstellen Sie SCEP-, PKCS- oder importierte PKCS- Zertifikatprofile für jede Plattform, die Sie verwenden möchten. Weitere Informationen zum Fortfahren finden Sie in den folgenden Artikeln:  
+Erstellen Sie SCEP-, PKCS- oder über PKCS importierte Zertifikatprofile für jede Plattform, die Sie verwenden möchten. Weitere Informationen zum Fortfahren finden Sie in den folgenden Artikeln:  
 - [Konfigurieren Ihrer Infrastruktur für die Unterstützung von SCEP-Zertifikaten mit Intune](certificates-scep-configure.md)  
 - [Konfigurieren Ihrer Microsoft Intune-Zertifikatsinfrastruktur für PKCS](certficates-pfx-configure.md)  
 - [Erstellen eines importierten PKCS-Zertifikatprofils](certificates-imported-pfx-configure.md#create-a-pkcs-imported-certificate-profile)  

@@ -5,23 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afdb365d0ed88a58028287cc7010bb334e9001e
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036445"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749340"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Anwenden von Einstellungen und Funktionen auf Ihren Geräten mit Geräteprofilen in Microsoft Intune
 
@@ -48,7 +49,7 @@ Diese Vorlagen bieten Administratoren eine vereinfachte Ansicht der Einstellunge
 
 Dieses Features unterstützt folgende Betriebssysteme:
 
-- Windows 10 und höher
+- Windows 10 1809 und höher auf unterstützter Firmware.
 
 ## <a name="certificates"></a>Zertifikate
 
@@ -66,7 +67,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 ## <a name="custom-profile"></a>Benutzerdefiniertes Profil
 
-Mithilfe von [benutzerdefinierten Einstellungen](../custom-settings-configure.md) können Administratoren Geräteeinstellungen zuweisen, die nicht in Intune integriert sind. So können beispielsweise auf Android-Geräten OMA-URI-Werte eingegeben werden. Auf iOS-Geräten können Sie eine Konfigurationsdatei importieren, die Sie in Apple Configurator erstellt haben.
+Mithilfe von [benutzerdefinierten Einstellungen](custom-settings-configure.md) können Administratoren Geräteeinstellungen zuweisen, die nicht in Intune integriert sind. So können beispielsweise auf Android-Geräten OMA-URI-Werte eingegeben werden. Auf iOS-Geräten können Sie eine Konfigurationsdatei importieren, die Sie in Apple Configurator erstellt haben.
 
 Dieses Features unterstützt folgende Betriebssysteme:
 
@@ -78,7 +79,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 ## <a name="delivery-optimization"></a>Übermittlungsoptimierung
 
-[Übermittlungsoptimierung](../delivery-optimization-windows.md) macht das Bereitstellen von Softwareupdates benutzerfreundlicher. Diese Einstellungen ersetzen die **Softwareupdates** > **Windows 10-Updatering**-Einstellungen.
+[Übermittlungsoptimierung](delivery-optimization-windows.md) macht das Bereitstellen von Softwareupdates benutzerfreundlicher. Diese Einstellungen ersetzen die **Softwareupdates** > **Windows 10-Updatering**-Einstellungen.
 
 Verwenden Sie diese Einstellungen, um zu steuern, wie Softwareupdates auf Geräte in Ihrer Organisation heruntergeladen werden. Beispielsweise können Sie Benutzer ihre eigenen Updates erhalten lassen, oder Updates, die die Übermittlungsoptimierungs-Clouddienste in einem Geräteprofil verwenden.
 
@@ -88,12 +89,20 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 ## <a name="device-features"></a>Gerätefunktionen
 
-Mit [Gerätefunktionen](../device-features-configure.md) können Sie Funktionen auf iOS- und macOS-Geräten steuern, z.B. AirPrint, Benachrichtigungen und Nachrichten auf dem Sperrbildschirm.
+Mit [Gerätefunktionen](device-features-configure.md) können Sie Funktionen auf iOS- und macOS-Geräten steuern, z.B. AirPrint, Benachrichtigungen und Nachrichten auf dem Sperrbildschirm.
 
 Dieses Features unterstützt folgende Betriebssysteme:
 
 - iOS/iPadOS
 - macOS
+
+## <a name="device-firmware-configuration-interface"></a>Schnittstelle zur Konfiguration der Gerätefirmware
+
+Die [Schnittstelle zur Konfiguration der Gerätefirmware](device-firmware-configuration-interface-windows.md) (DFCI) ermöglicht es Administratoren, UEFI-Einstellungen (BIOS) mithilfe von Intune zu aktivieren oder zu deaktivieren. Verwenden Sie diese Einstellungen, um die Sicherheit auf der Ebene der Firmware zu erhöhen, die in der Regel resilient gegen böswillige Angriffe ist.
+
+Dieses Features unterstützt folgende Betriebssysteme:
+
+- Windows 10 und höher
 
 ## <a name="device-restrictions"></a>Geräteeinschränkungen
 
@@ -210,9 +219,9 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 ## <a name="update-policies"></a>Updaterichtlinien
 
-Im Artikel [iOS-Updaterichtlinien](../software-updates-ios.md) erfahren Sie, wie Sie iOS-Richtlinien erstellen und zuweisen, um Softwareupdates auf Ihren iOS-Geräten zu installieren. Außerdem können Sie den Installationsstatus überprüfen.
+Im Artikel [iOS-Updaterichtlinien](../protect/software-updates-ios.md) erfahren Sie, wie Sie iOS-Richtlinien erstellen und zuweisen, um Softwareupdates auf Ihren iOS-Geräten zu installieren. Außerdem können Sie den Installationsstatus überprüfen.
 
-Informationen zu Updaterichtlinien für Windows-Geräte finden Sie unter [Übermittlungsoptimierung](../delivery-optimization-windows.md). 
+Informationen zu Updaterichtlinien für Windows-Geräte finden Sie unter [Übermittlungsoptimierung](delivery-optimization-windows.md). 
 
 Dieses Features unterstützt folgende Betriebssysteme:
 
@@ -265,7 +274,7 @@ Dieses Features unterstützt folgende Betriebssysteme:
 
 ## <a name="manage-and-troubleshoot"></a>Verwaltung und Problembehandlung
 
-[Verwalten Sie Ihre Profile](../device-profile-monitor.md), um den Status von Geräten und die zugewiesenen Profile zu überprüfen. Lösen Sie Konflikte leichter, indem Sie sich die Einstellungen ansehen, die Konflikte verursachen, und die Profile, die diese Einstellungen enthalten. Unter [Häufige Probleme und Auflösungen](device-profile-troubleshoot.md) werden wichtige Informationen für Administratoren zusammengefasst, die mit Profilen arbeiten. Dort wird u. a. beschrieben, wie Sie ein Profil löschen können und wann Benachrichtigungen an Geräte geschickt werden.
+[Verwalten Sie Ihre Profile](device-profile-monitor.md), um den Status von Geräten und die zugewiesenen Profile zu überprüfen. Lösen Sie Konflikte leichter, indem Sie sich die Einstellungen ansehen, die Konflikte verursachen, und die Profile, die diese Einstellungen enthalten. Unter [Häufige Probleme und Auflösungen](device-profile-troubleshoot.md) werden wichtige Informationen für Administratoren zusammengefasst, die mit Profilen arbeiten. Dort wird u. a. beschrieben, wie Sie ein Profil löschen können und wann Benachrichtigungen an Geräte geschickt werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e27997b45f0a68f6eb9247c69fafc363787fb457
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b775bb09c289733cdc2837984874b7c1c7e286bc
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722591"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681369"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Erstellen einer gerätebasierten Richtlinie für bedingten Zugriff
 
@@ -61,7 +62,7 @@ Eine Richtlinie für bedingten Zugriff gibt die Apps oder Dienste an, die Sie sc
 
     - **Apps auswählen**: Aktivieren Sie diese Option, klicken Sie auf **Auswählen**, und verwenden Sie dann die Anwendungsliste, um die Apps und Dienste zu suchen und auszuwählen, die Sie schützen möchten.
     
-      ![Erstellen einer neuen Richtlinie für bedingten Zugriff](./media/create-conditional-access-intune/create-ca-select-apps.png)
+      ![Konfigurieren der Arbeitsaufträge für die Richtlinie für bedingten Zugriff](./media/create-conditional-access-intune/create-ca-select-apps.png)
 
 7. Wählen Sie **Fertig** aus.
 8. Klicken Sie unter **Zuweisungen** auf **Bedingungen**.
@@ -71,7 +72,7 @@ Eine Richtlinie für bedingten Zugriff gibt die Apps oder Dienste an, die Sie sc
     - **Client-Apps**: Klicken Sie auf **Ja**, um festzulegen, dass die Richtlinie auf Browser-Apps, mobile Apps und Desktopclients angewendet werden soll. Sie können auch **Clients mit moderner Authentifizierung** (z.B. Outlook für iOS oder Outlook für Android) und **Exchange ActiveSync-Clients** auswählen.
     - **Gerätezustand**: Die Richtlinie für bedingten Zugriff gilt für alle Gerätezustände, es sei denn, Sie wählen hier „Ja“ aus und schließen die Zustände „Gerät in Hybrid-Azure AD eingebunden“ oder „Gerät als konform markiert“ (oder beide) explizit aus.
     
-      ![Erstellen einer neuen Richtlinie für bedingten Zugriff](./media/create-conditional-access-intune/create-ca-device-platforms.png)
+      ![Festlegen der Bedingungen für die Richtlinie für bedingten Zugriff](./media/create-conditional-access-intune/create-ca-device-platforms.png)
 
       > [!TIP]  
       > Wenn Sie sowohl Clients mit **moderner Authentifizierung** als auch **Exchange ActiveSync-Clients** schützen möchten, erstellen Sie zwei separate Richtlinien für bedingten Zugriff – eine für jeden Clienttyp. Exchange Active Sync unterstützt zwar die moderne Authentifizierung, ist die einzige von Exchange Active Sync unterstützte Bedingung die Plattform. Andere Bedingungen wie z.B. die mehrstufige Authentifizierung werden nicht unterstützt. Um den Zugriff von Exchange ActiveSync auf Exchange Online effektiv zu schützen, erstellen Sie eine Richtlinie für bedingten Zugriff, die die Cloud-App „Office 365 Exchange Online“ und die Client-App „Exchange ActiveSync“ mit aktivierter Einstellung „Richtlinie nur auf unterstützte Plattformen anwenden“ festlegt.

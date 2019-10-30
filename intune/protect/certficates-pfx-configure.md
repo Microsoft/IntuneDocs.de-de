@@ -1,13 +1,14 @@
 ---
 title: Verwenden von Zertifikaten mit privaten und öffentlichen Schlüsseln in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Hinzufügen oder Erstellen von Zertifikaten für Public Key Cryptography Standards (PKCS) mit Microsoft Intune, einschließlich der Schritte zum Exportieren eines Stammzertifikats, Konfigurieren einer Zertifikatvorlage, Herunterladen und Installieren eines Microsoft Intune Certificate Connectors (NDES), Erstellen eines Gerätekonfigurationsprofils, Erstellen eines PKCS-Zertifikatprofils in Azure und Ihrer Zertifizierungsstelle
+description: Verwenden von Public Key Cryptography Standards-Zertifikaten (PKCS) mit Microsoft Intune. Dazu gehört die Arbeit mit Stammzertifikaten und Zertifikatsvorlagen, die Installation des Microsoft Intune Certificate Connector (NDES) und Gerätekonfigurationsprofile für ein PKCS-Zertifikat.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 10/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5ee5ef1b5c59bbef3834d44354508b767ae99088
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b0f31add65063665da5a7961e2caf9eb30a847e2
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722929"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72787875"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Konfigurieren und Verwenden Ihrer PKCS-Zertifikate mit Intune
 
@@ -58,7 +59,7 @@ Wenn Sie PKCS-Zertifikate mit Intune verwenden möchten, müssen Sie über folge
 - **Microsoft Intune Certificate Connector** (auch als *NDES-Certificate Connector* bezeichnet):  
   Navigieren Sie im Intune-Portal zu **Gerätekonfiguration** > **Certificate Connectors** > **Hinzufügen**, und führen Sie die *notwendigen Schritte aus, um den Connector für PKCS #12 zu installieren*. Verwenden Sie den Downloadlink im Portal zum Herunterladen des Installationsprogramms für den Certificate Connector (**NDESConnectorSetup.exe**).  
 
-  Intune unterstützt bis zu 100 Instanzen dieses Connectors pro Mandant, wobei sich jede Instanz auf einem separaten Windows-Server befindet. Sie können eine Instanz dieses Connectors auf demselben Server wie eine Instanz des PFX-Zertifikatconnectors für Microsoft Intune installieren. Wenn Sie mehrere Connectors verwenden, unterstützt die Connectorinfrastruktur Hochverfügbarkeit und Lastenausgleich, da jede verfügbare Connectorinstanz ihre PKCS-Zertifikatanforderungen verarbeiten kann. 
+  Intune unterstützt bis zu 100 Instanzen dieses Connectors pro Mandant. Jede Instanz des Connectors muss sich auf einem separaten Windows-Server befinden. Sie können eine Instanz dieses Connectors auf demselben Server wie eine Instanz des PFX-Zertifikatconnectors für Microsoft Intune installieren. Wenn Sie mehrere Connectors verwenden, unterstützt die Connectorinfrastruktur Hochverfügbarkeit und Lastenausgleich, da jede verfügbare Connectorinstanz ihre PKCS-Zertifikatanforderungen verarbeiten kann. 
 
   Dieser Connector verarbeitet PKCS-Zertifikatanforderungen, die für die Authentifizierung oder Signierung von E-Mails mit S/MIME verwendet werden.
 
@@ -75,7 +76,7 @@ Wenn Sie PKCS-Zertifikate mit Intune verwenden möchten, müssen Sie über folge
   - Installieren Sie den PFX-Zertifikatconnector für Microsoft Intune auf Ihrem Server.  
   - Wenn Sie automatisch wichtige Updates erhalten möchten, vergewissern Sie sich, dass die Firewalls geöffnet sind, über die der Connector **autoupdate.msappproxy.net** auf Port **443** kontaktieren kann.   
 
-  Weitere Informationen zu den Netzwerkendpunkten, auf die Intune und der Connector Zugriff benötigen, finden Sie unter [Netzwerkendpunkte für Microsoft Intune](../fundamentals/intune-endpoints.md).
+  Weitere Informationen zu den Netzwerkendpunkten, auf die Intune und der Connector zugreifen, finden Sie unter [Netzwerkendpunkte für Microsoft Intune](../fundamentals/intune-endpoints.md).
 
 - **Windows Server:**  
   Verwenden Sie Windows Server, um Folgendes zu hosten:
@@ -102,7 +103,7 @@ Jedes Gerät benötigt ein Zertifikat einer Stamm- oder Zwischenzertifizierungss
 
 1. Melden Sie sich bei Ihrer Unternehmenszertifizierungsstelle mit einem Konto an, das über Administratorrechte verfügt.
 2. Öffnen Sie die Konsole **Zertifizierungsstelle**, klicken Sie mit der rechten Maustaste auf **Zertifikatvorlagen**, und klicken Sie dann auf **Verwalten**.
-3. Suchen Sie die Zertifikatvorlage **Benutzer**, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Vorlage duplizieren** aus. Dann werden die **Eigenschaften der neuen Vorlage** geöffnet.
+3. Suchen Sie die Zertifikatvorlage **Benutzer**, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Vorlage duplizieren** aus, um **Eigenschaften der neuen Vorlage** zu öffnen.
 
     > [!NOTE]
     > Zur Signierung und Verschlüsselung von E-Mails mit S/MIME nutzen viele Administratoren für die jeweiligen Schritte unterschiedliche Zertifikate. Wenn Sie Microsoft Active Directory-Zertifikatdienste verwenden, können Sie die Vorlage **Nur Exchange-Signatur** für Zertifikate zum Signieren von E-Mails mit S/MIME verwenden. Die Vorlage **Exchange-Benutzer** können Sie für Zertifikate zur Verschlüsselung mit S/MIME nutzen.  Wenn Sie auf eine Drittanbieter-Zertifizierungsstelle zurückgreifen, sollten Sie sich mit deren Leitfaden zum Einrichten von Signatur- und Verschlüsselungsvorlagen vertraut machen.
@@ -165,7 +166,7 @@ Jedes Gerät benötigt ein Zertifikat einer Stamm- oder Zwischenzertifizierungss
 
 ## <a name="create-a-trusted-certificate-profile"></a>Erstellen eines vertrauenswürdigen Zertifikatprofils
 
-1. Navigieren Sie im [Azure-Portal](https://portal.azure.com) zu **Intune** > **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und navigieren Sie zu **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
     ![Navigieren Sie zu Intune, und erstellen Sie ein neues Profil für ein vertrauenswürdiges Zertifikat](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
 
 2. Geben Sie die folgenden Eigenschaften ein:
@@ -187,7 +188,7 @@ Jedes Gerät benötigt ein Zertifikat einer Stamm- oder Zwischenzertifizierungss
 
 ## <a name="create-a-pkcs-certificate-profile"></a>Erstellen eines PKCS-Zertifikatprofils
 
-1. Navigieren Sie im [Azure-Portal](https://portal.azure.com) zu **Intune** > **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und navigieren Sie zu **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
 2. Geben Sie die folgenden Eigenschaften ein:
 
     - **Name** für das Profil
@@ -195,22 +196,81 @@ Jedes Gerät benötigt ein Zertifikat einer Stamm- oder Zwischenzertifizierungss
     - **Plattform**, auf der das Profil bereitgestellt werden soll
     - Für **Profiltyp** die Option **PKCS-Zertifikat**
 
-3. Gehen Sie zu **Einstellungen**, und geben Sie die folgenden Eigenschaften ein:
-
-    - **Verlängerungsschwellenwert (%)** : Empfohlen sind 20%.
-    - **Gültigkeitsdauer des Zertifikats**: Wenn Sie die Zertifikatvorlage nicht geändert haben, kann diese Option auf ein Jahr festgelegt werden.
-    - **Schlüsselspeicheranbieter (KSP)** : Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus.
-    - **Zertifizierungsstelle**: Zeigt den internen vollqualifizierten Domänennamen (FQDN) Ihrer Unternehmenszertifizierungsstelle an.
-    - **Name der Zertifizierungsstelle**: Zeigt den Namen der Unternehmenszertifizierungsstelle an (z.B. „Contoso-Zertifizierungsstelle“).
-    - **Name der Zertifikatvorlage**: Der Name der zuvor erstellten Vorlage. Beachten Sie, dass der **Vorlagenname** standardmäßig dem **Vorlagenanzeigenamen** *ohne Leerzeichen* entspricht.
-    - **Format des Antragstellernamens**: Legen Sie diese Option auf **Allgemeiner Name** fest, falls kein anderes Format erforderlich ist.
-    - **Alternativer Antragstellername**: Legen Sie diese Option auf **Benutzerprinzipalname (UPN)** fest, sofern nichts anderes erforderlich ist.
+3. Navigieren Sie zu **Einstellungen**, und konfigurieren Sie die Eigenschaften, die auf die Plattform zutreffen, die Sie ausgewählt haben:  
+   
+   |Einstellung     | Plattform     | Details   |
+   |------------|------------|------------|
+   |**Verlängerungsschwellenwert (%)**        |Alle         |Empfohlen sind 20 %.  | 
+   |**Gültigkeitsdauer des Zertifikats**  |Alle         |Wenn Sie die Zertifikatvorlage nicht geändert haben, kann diese Option auf ein Jahr festgelegt werden. |
+   |**Schlüsselspeicheranbieter (KSP)**   |Windows 10  | Wählen Sie für Windows den Schlüsselspeicherort auf dem Gerät aus. |
+   |**Zertifizierungsstelle**      |Alle         |Zeigt den internen vollqualifizierten Domänennamen (FQDN) Ihrer Unternehmenszertifizierungsstelle an.  |
+   |**Name der Zertifizierungsstelle** |Alle         |Zeigt den Namen der Unternehmenszertifizierungsstelle an (z.B. „Contoso-Zertifizierungsstelle“). |
+   |**Zertifikattyp**             |macOS       |Wählen Sie einen Typ aus: <br> **-** Bei **Benutzerzertifikaten** können sowohl Benutzer- als auch Geräteattribute im Antragstellernamen und im alternativen Antragstellernamen des Zertifikats enthalten sein. <br><br>**-** Beim Zertifikattyp **Gerät** können nur Geräteattribute im Antragstellernamen und im alternativen Antragstellernamen des Zertifikats enthalten sein. Versenden Sie „Gerät“ für Szenarios mit benutzerlosen Geräten (wie Kioske) oder geteilten Geräten.  <br><br> Diese Auswahl wirkt sich auf das Format des Antragstellernamens aus. |
+   |**Format des Antragstellernamens**          |Alle         |Legen Sie für die meisten Plattformen diese Option auf **Allgemeiner Name** fest, falls kein anderes Format erforderlich ist.<br><br>Für macOS wird das Format des Antragstellernamens durch den Zertifikattyp bestimmt. Weitere Informationen zum [Format des Antragstellers für macOS](#subject-name-format-for-macos) finden Sie im weiteren Verlauf dieses Artikels. |
+   |**Alternativer Antragstellername**     |Alle         |Legen Sie diese Option auf **Benutzerprinzipalname (UPN)** fest, sofern nichts anderes erforderlich ist. |
+   |**Erweiterte Schlüsselverwendung**           |**-** Android-Geräteadministrator <br>**-** Android Enterprise (*Gerätebesitzer*, *Arbeitsprofil*) <br> **-** Windows 10 |Zertifikate erfordern in der Regel *Clientauthentifizierung*, damit der Benutzer bzw. das Gerät auf einem Server authentifiziert werden kann. |
+   |**Allen Apps Zugriff auf den privaten Schlüssel gewähren** |macOS  |Stellen Sie **Aktiviert** ein, um Apps, die für das zugeordnete Mac-Gerät konfiguriert sind, Zugriff auf den privaten Schlüssel des PKCS-Zertifikats zu gewähren. <br><br> Weitere Informationen zu dieser Einstellung finden Sie unter *AllowAllAppsAccess* im Abschnitt zur Zertifikatnutzlast der [Referenz zum Konfigurationsprofil](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) in der Apple-Entwicklerdokumentation. |
+   |**Stammzertifikat**             |**-** Android-Geräteadministrator <br> **-** Android Enterprise (*Gerätebesitzer*, *Arbeitsprofil*) |Wählen Sie ein Stammprofil für das ZS-Zertifikat aus, das zuvor zugewiesen wurde. |
 
 4. Wählen Sie **OK** > **Erstellen** aus, um Ihr Profil zu speichern.
 5. Informationen zum Zuweisen des neuen Profils zu einem oder mehreren Geräten finden Sie unter [Zuweisen von Microsoft Intune-Geräteprofilen](../configuration/device-profile-assign.md).
 
    > [!NOTE]
    > Auf Geräten mit einem Android Enterprise-Profil sind Zertifikate, die über ein PKCS-Zertifikatprofil installiert wurden, nicht sichtbar. Um die erfolgreiche Zertifikatbereitstellung zu bestätigen, überprüfen Sie den Status des Profils in der Intune-Konsole.
+
+### <a name="subject-name-format-for-macos"></a>Format des Antragstellernamens für macOS
+
+Wenn Sie ein PKCS-Zertifikatsprofil für macOS erstellen, sind die Optionen für das Format des Antragstellernamens abhängig vom ausgewählten Zertifikattyp (entweder **Benutzer** oder **Gerät**).  
+
+> [!NOTE]  
+> Es gibt ein bekanntes Problem bei der Verwendung von PKCS zum Abrufen von Zertifikaten, [welches das gleiche Problem ist wie bei SCEP](certificates-profile-scep.md#avoid-certificate-signing-requests-with-escaped-special-characters), wenn der Antragstellername in der resultierenden Zertifikatsignieranforderung (Certificate Signing Request, CSR) eines der folgenden Zeichen als Escapezeichen enthält (mit vorangestelltem Schrägstrich\\):
+> - \+
+> - ;
+> - ,
+> - =
+
+- **Benutzerzertifikattyp**  
+  Formatoptionen für das *Format des Antragstellernamens* enthalten zwei Variablen: **Common Name (CN)** (Allgemeiner Name) und **Email (E)** (E-Mail-Adresse). **Allgemeiner Name (CN)** kann auf eine der folgenden Variablen festgelegt werden:
+
+  - **CN={{UserName}}** : Der Benutzerprinzipalname des Benutzers (z. B. janedoe@contoso.com)
+  - **CN={{AAD_Device_ID}}** : Eine ID, die zugewiesen wird, wenn Sie ein Gerät in Azure Active Directory (AD) registrieren. Diese ID wird in der Regel für die Authentifizierung bei Azure Active Directory verwendet.
+  - **CN={{SERIALNUMBER}}** : Die eindeutige Seriennummer (SN), die in der Regel vom Hersteller zum Identifizieren eines Geräts verwendet wird.
+  - **CN={{IMEINumber}}** : Die eindeutige IMEI-Nummer (International Mobile Equipment Identity), die verwendet wird, um ein Mobiltelefon zu identifizieren.
+  - **CN={{OnPrem_Distinguished_Name}}** : Eine Sequenz von durch Kommas getrennte relative definierte Namen wie *CN=Jane Doe, OU=UserAccounts, DC=corp, DC=contoso, DC=com*.
+
+    Stellen Sie sicher, dass Sie das Benutzerattribut *onpremisesdistinguishedname* mithilfe von [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) mit Azure AD synchronisieren, um die Variable *{{OnPrem_Distinguished_Name}}* zu verwenden.
+
+  - **CN={{onPremisesSamAccountName}}** : Administratoren können das Attribut „samAccountName“ aus Active Directory mithilfe von Azure AD Connect in einem Attribut mit dem Namen *onPremisesSamAccountName* mit Azure AD synchronisieren. Intune kann diese Variable als Teil einer Zertifikatsausstellungsanforderung im Antragsteller eines Zertifikats ersetzen. Das Attribut „samAccountName“ ist der zur Unterstützung von Clients und Servern aus einer früheren Version von Windows (vor Windows 2000) verwendete Benutzeranmeldename. Das Format des Benutzeranmeldenamens lautet wie folgt: *DomainName\testUser*oder nur *testUser*.
+
+    Stellen Sie sicher, dass Sie das Benutzerattribut *onPremisesSamAccountName* mithilfe von [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) mit Azure AD synchronisieren, um die Variable *{{onPremisesSamAccountName}}* zu verwenden.
+
+  Durch eine Kombination einer oder vieler dieser Variablen mit statischen Zeichenfolgen können Sie ein benutzerdefiniertes Format wie dieses für den Antragstellernamen erstellen:  
+  - **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+  
+  Dieses Beispiel enthält das Format des Antragstellernamens, das die Variablen „CN“ und „E“ und Zeichenfolgen für die Werte „Organisationseinheit“, „Organisation“, „Standort“, „Bundesland/Kanton“ und „Land/Region“ verwendet. Die Funktion [CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) beschreibt diese Funktion und die unterstützten Zeichenfolgen.
+
+- **Gerätzertifikattyp**  
+  Formatoptionen für das Format des Antragstellernamens umfassen die folgenden Variablen: 
+  - **{{AAD_Device_ID}}**
+  - **{{Device_Serial}}**
+  - **{{Device_IMEI}}**
+  - **{{SerialNumber}}**
+  - **{{IMEINumber}}**
+  - **{{AzureADDeviceId}}**
+  - **{{WiFiMacAddress}}**
+  - **{{IMEI}}**
+  - **{{DeviceName}}**
+  - **{{FullyQualifiedDomainName}}** *(Gilt nur für Windows-Geräte und in Domänen eingebundene Geräte)*
+  - **{{MEID}}**
+   
+  Sie können diese Variablen, gefolgt vom Text für die Variablen, im Textfeld angeben. Beispielsweise kann der allgemeine Name für ein Gerät namens *Device1* als **CN={{DeviceName}}Device1** hinzugefügt werden.
+
+  > [!IMPORTANT]  
+  > - Schließen Sie den Variablennamen beim Angeben einer Variable wie im Beispiel veranschaulicht in geschweifte Klammern („{ }“) ein, um einen Fehler zu vermeiden.  
+  > - Geräteeigenschaften, die im *Betreff* oder *alternativen Antragstellernamen* eines Gerätezertifikats wie **IMEI**, **SerialNumber** oder **FullyQualifiedDomainName** verwendet werden, sind Eigenschaften, die von einer Person mit Zugriff auf das Gerät gespooft sein könnten.
+  > - Ein Gerät muss alle in einem Zertifikatprofil für dieses Profil angegebenen Variablen unterstützen, um auf diesem Gerät installiert werden zu können.  Wenn **{{IMEI}}** beispielsweise im Antragstellernamen eines SCEP-Profils verwendet wird und einem Gerät ohne IMEI-Nummer zugewiesen ist, tritt bei der Profilinstallation ein Fehler auf.  
+ 
+
 
 ## <a name="whats-new-for-connectors"></a>Neuerungen für Connectors
 Es werden regelmäßig Updates für die beiden Certificate Connectors veröffentlicht. Sobald wir ein Update für einen Connector veröffentlichen, werden Sie hier darüber informiert. 

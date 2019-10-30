@@ -5,21 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 10/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: coryfe
+ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa8cc396c05150006799c1e9b86ecb63351cdb36
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: 1d34e44c6e046ddbc9b47bbe90900f5992df9e85
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314715"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584552"
 ---
 # <a name="manage-software-updates-in-intune"></a>Verwalten von Softwareupdates in Intune
 
@@ -63,17 +64,30 @@ Die folgenden Voraussetzungen müssen erfüllt sein, um Windows-Updates für Win
 
 ## <a name="create-and-assign-update-rings"></a>Erstellen und Zuweisen von Updateringen
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie **Softwareupdates** > **Windows 10-Updateringe** > **Erstellen** aus.
-4. Geben Sie einen Namen und (optional) eine Beschreibung ein, und klicken Sie dann auf **Konfigurieren**.
-5. Passen Sie die Einstellungen unter **Einstellungen** an Ihre Geschäftsanforderungen an. Weitere Informationen über die verfügbaren Einstellungen finden Sie unter [Windows-Updateeinstellungen für Intune](../windows-update-settings.md).  
-6. Klicken Sie auf **OK**, wenn Sie fertig sind. Klicken Sie unter **Updatering erstellen** auf **Erstellen**. Der neue Updatering wird in der Liste mit den Updateringen angezeigt.
-7. Wählen Sie in der Liste mit den Updateringen einen Ring aus, und klicken Sie auf der Registerkarte mit dem \<Namen des Rings> auf **Zuweisungen**, um den Ring zuzuweisen.
-8. Verwenden Sie die Registerkarten **Einschließen** und **Ausschließen**, um festzulegen, welcher Gruppe der Ring zugewiesen wird. Klicken Sie dann auf **Speichern**, um die Zuweisung abzuschließen.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und klicken Sie auf **Softwareupdates** > **Windows 10-Updateringe** > **Erstellen**.  
+
+2. Geben Sie auf der Registerkarte „Grundeinstellungen“ einen Namen und eine Beschreibung (optional) an, und klicken Sie dann auf **Weiter**.  
+
+   ![Workflow zum Erstellen eines Windows 10-Updaterings](./media/windows-update-for-business-configure/basics-tab.png)
+
+3. Konfigurieren Sie die Einstellungen auf der Registerkarte **Einstellungen für Updatering** gemäß Ihrer Geschäftsanforderungen. Weitere Informationen über die verfügbaren Einstellungen finden Sie unter [Windows-Updateeinstellungen für Intune](windows-update-settings.md). Klicken Sie auf **Weiter**, nachdem Sie die Einstellungen *Update* und *Benutzeroberfläche* konfiguriert haben.  
+
+4. Klicken Sie auf der Registerkarte **Bereichstags** auf **+ Bereichstags auswählen**, um den Bereich *Tags auswählen* zu öffnen, wenn Sie sie auf den Updatering anwenden möchten.  
+
+   - Wählen Sie im Bereich **Tags auswählen** mindestens einen Tag aus, und klicken Sie dann auf **Auswählen**, um sie zum Updatering hinzuzufügen und zum Bereich *Bereichstags* zurückzukehren.  
+
+   Klicken Sie auf **Weiter**, um mit *Zuweisungen* fortzufahren, wenn Sie bereit sind. 
+
+5. Klicken Sie auf der Registerkarte **Zuweisungen** auf **+ Einzuschließende Gruppen auswählen**, und weisen Sie dann den Updatering mindestens einer Gruppe zu. Klicken Sie auf **+ Auszuschließende Gruppen auswählen**, um die Zuweisung anzupassen. Wählen Sie **Weiter** aus, um den Vorgang fortzusetzen.  
+
+6. Überprüfen Sie die Einstellungen auf der Registerkarte **Überprüfen + erstellen**, und klicken Sie auf **Erstellen**, um Ihren Windows 10-Updatering zu speichern. Ihr neuer Updatering wird in der Liste mit den Updateringen angezeigt.
 
 ## <a name="manage-your-windows-10-update-rings"></a>Verwalten Ihrer Windows 10-Updateringe
-Sie können im Portal auf einen Windows 10-Updatering klicken, um dessen **Übersicht** zu öffnen. In diesem Bereich wird der Zuweisungsstatus der Ringe angezeigt, und Sie können weitere Aktionen durchführen, um den Ring zu verwalten. 
+
+Sie können im Portal auf einen Windows 10-Updatering klicken, um dessen **Übersicht** zu öffnen. In diesem Bereich wird der Zuweisungsstatus der Ringe angezeigt, und Sie können weitere Aktionen durchführen, um den Ring zu verwalten.
+
 ### <a name="to-view-an-updates-rings-overview-pane"></a>So rufen Sie die Übersicht eines Updaterings auf: 
+
 1. Melden Sie sich im Azure-Portal an.
 2. Navigieren Sie zu **Intune** > **Softwareupdates** > **Windows 10-Updateringe**.
 3. Klicken Sie auf den Updatering, den Sie anzeigen oder verwalten möchten.  
@@ -88,18 +102,22 @@ Dort wird nicht nur der Zuweisungsstatus angezeigt, sondern Sie können folgende
 ![Verfügbare Aktionen](./media/windows-update-for-business-configure/overview-actions.png)
 
 ### <a name="delete"></a>Löschen  
+
 Klicken Sie auf **Löschen**, um die Einstellungen des ausgewählten Windows 10-Updaterings aufzuheben. Durch das Löschen eines Rings wird die Konfiguration aus Intune entfernt, sodass Intune diese Einstellungen nicht mehr anwendet und erzwingt.  
 
 Wenn Sie einen Ring aus Intune löschen, werden dadurch nicht die Einstellungen auf Geräten geändert, denen der Updatering zugewiesen wurde.  Diese Geräte behalten ihre aktuellen Einstellungen bei. Geräte behalten keine Verlaufsaufzeichnung der zuvor gespeicherten Einstellungen bei. Geräte können auch Einstellungen von zusätzlichen Updateringen empfangen, die aktiv bleiben.  
 
 #### <a name="to-delete-a-ring"></a>So löschen Sie einen Ring  
+
 1. Klicken Sie auf der Übersichtsseite eines Updaterings auf **Löschen**.  
 2. Wählen Sie **OK** aus.  
 
 ### <a name="pause"></a>Anhalten  
+
 Wählen Sie **Anhalten** aus, damit zugewiesene Geräte für einen Zeitraum von bis zu 35 Tagen (ab dem Zeitpunkt, zu dem der Ring ausgesetzt wurde) keine Feature- oder Qualitätsupdates mehr empfangen. Nach Verstreichen der maximalen Anzahl von Tagen wird die Aussetzung automatisch aufgehoben, und das Gerät sucht bei Windows Update nach geeigneten Updates. Danach können Sie die Updates erneut aussetzen. Wenn Sie einen angehaltenen Updatering fortsetzen und anschließend erneut anhalten, wird die Anhaltedauer auf 35 Tage zurückgesetzt.  
 
 #### <a name="to-pause-a-ring"></a>So halten Sie einen Ring an  
+
 1. Klicken Sie auf der Übersichtsseite eines Updaterings auf **Anhalten**.  
 2. Wählen Sie **Feature** oder **Qualität** aus, um diesen Updatetyp anzuhalten, und klicken Sie dann auf **OK**.  
 3. Wenn Sie einen Updatetyp angehalten haben, können Sie den anderen Updatetyp anhalten, indem Sie erneut auf „Anhalten“ klicken.  
@@ -110,22 +128,27 @@ Wenn ein Updatetyp angehalten wird, zeigt die Übersicht für diesen Ring an, wi
 > Wenn Sie den Befehl zum Anhalten ausführen, geht dieser bei den Geräten ein, wenn sie das nächste Mal mit dem Dienst kommunizieren. Es kann vorkommen, dass die Geräte vor der Kommunikation ein geplantes Update installieren. Außerdem gilt: Wenn ein Zielgerät bei Erteilung des Aussetzungsbefehls ausgeschaltet ist, lädt es nach dem Einschalten unter Umständen geplante Updates herunter und installiert sie, bevor es mit Intune kommuniziert.
 
 ### <a name="resume"></a>Fortsetzen  
+
 Während ein Updatering angehalten ist, können Sie auf **Fortsetzen** klicken, um Feature- und Qualitätsupdates für diesen Ring wieder zu aktivieren. Sie können einen Updatering nach dem Aktivieren erneut anhalten.  
 
 #### <a name="to-resume-a-ring"></a>So setzen Sie einen Ring fort  
+
 1. Klicken Sie auf der Übersichtsseite eines angehaltenen Updaterings auf **Fortsetzen**.  
 2. Wählen Sie aus den fortsetzbaren Updatetypen entweder **Feature** oder **Qualität** aus, und klicken Sie auf **OK**.  
 3. Wenn Sie einen Updatetyp fortgesetzt haben, können Sie den anderen Updatetyp fortsetzen, indem Sie erneut auf „Fortsetzen“ klicken.  
 
 ### <a name="extend"></a>Extend  
+
 Während ein Updatering angehalten ist, können Sie auf **Erweitern** klicken, um die Anhaltedauer für Feature- und Qualitätsupdates für diesen Updatering auf 35 Tage zurückzusetzen.  
 
 #### <a name="to-extend-the-pause-period-for-a-ring"></a>So erweitern Sie die Anhaltedauer für einen Ring  
+
 1. Klicken Sie auf der Übersichtsseite eines angehaltenen Updaterings auf **Erweitern**. 
 2. Wählen Sie aus den fortsetzbaren Updatetypen entweder **Feature** oder **Qualität** aus, und klicken Sie auf **OK**.  
 3. Nachdem Sie die Anhaltedauer für einen Updatetyp erweitert haben, können Sie erneut auf „Erweitern“ klicken, um auch die Dauer für den anderen Updatetyp zu erweitern.  
 
 ### <a name="uninstall"></a>Deinstallieren  
+
 Ein Intune-Administrator kann das neuste *Feature-* oder *Qualitätsupdate* eines aktiven oder angehaltenen Updaterings über die Option **Deinstallieren** deinstallieren bzw. ein Rollback ausführen. Nachdem Sie einen Updatetyp deinstalliert haben, können Sie auch den anderen deinstallieren. Benutzer haben in Intune nicht die Möglichkeit, Updates zu deinstallieren.  
 
 > [!IMPORTANT] 
@@ -148,19 +171,21 @@ Beachten Sie bei der Deinstallation Folgendes:
 
 - Für Featureupdates ist der Zeitraum für die Deinstallation auf 2 bis 60 Tage beschränkt. Dieser wird über die Einstellungen für den Updatering unter **Set feature update uninstall period (2 – 60 days)** (Deinstallationszeitraum für Featureupdates festlegen (2–60 Tage)) festgelegt. Sie können kein Rollback für ein Featureupdate ausführen, das länger als der konfigurierte Deinstallationszeitraum auf dem Gerät installiert ist.  
 
-  Stellen Sie sich beispielsweise einen Updatering mit einer Deinstallationsfrist von 20 Tagen vor. Nach 25 Tagen beschließen Sie, ein Rollback des letzten Featureupdates durchzuführen und die Option „Deinstallieren“ zu verwenden.  Geräte, die das Featureupdate vor mehr als 20 Tagen installiert haben, können es nicht deinstallieren, da die erforderlichen Bits im Rahmen ihrer Wartung entfernt wurden. Geräte, die das Featureupdate erst vor 19 Tagen installiert haben, können das Update jedoch deinstallieren, wenn sie sich erfolgreich einchecken, um den Deinstallationsbefehl zu erhalten, bevor sie die 20-tägige Deinstallationsfrist überschreiten.  
+  Stellen Sie sich beispielsweise einen Updatering mit einer Deinstallationsfrist von 20 Tagen vor. Nach 25 Tagen beschließen Sie, ein Rollback des letzten Featureupdates durchzuführen und die Option „Deinstallieren“ zu verwenden.  Geräte, die das Featureupdate vor mehr als 20 Tagen installiert haben, können es nicht deinstallieren, da die erforderlichen Bits im Rahmen ihrer Wartung entfernt wurden. Auf Geräten, auf denen das Featureupdate erst vor 19 Tagen installiert wurde, kann das Update jedoch deinstalliert werden, wenn sie erfolgreich eingecheckt werden, um den Deinstallationsbefehl zu erhalten, bevor die 20-tägige Deinstallationsfrist abläuft.  
 
 Weitere Informationen zu den Windows Update-Richtlinien finden Sie unter [Update CSP (Update-Konfigurationsdienstanbieter)](https://docs.microsoft.com/windows/client-management/mdm/update-csp) in der Dokumentation zur Verwaltung von Windows-Clients.  
 
 #### <a name="to-uninstall-the-latest-windows-10-update"></a>So deinstallieren Sie das aktuelle Windows 10-Update  
+
 1. Klicken Sie auf der Übersichtsseite eines angehaltenen Updaterings auf **Deinstallieren**.  
 2. Wählen Sie aus den deinstallierbaren Updatetypen entweder **Feature** oder **Qualität** aus, und klicken Sie auf **OK**.  
 3. Nachdem Sie die Deinstallation für einen Updatetyp gestartet haben, können Sie erneut auf „Deinstallieren“ klicken, um auch den anderen Updatetyp zu deinstallieren.  
 
 ## <a name="migrate-update-settings-to-the-azure-portal"></a>Migrieren von Updateeinstellungen in das Azure-Portal  
+
 Im klassischen Azure-Portal steht auch eine begrenzte Anzahl anderer Windows 10-Updateeinstellungen im Gerätekonfigurationsprofil zur Verfügung. Falls Sie eine dieser Einstellungen konfiguriert haben und zum Azure-Portal migrieren möchten, sollten Sie unbedingt die folgenden Aktionen ausführen:  
 
-1. Erstellen Sie im Azure-Portal Windows 10-Updateringe mit den erforderlichen Einstellungen. Die Einstellung **Vorabfeatures zulassen** wird im Azure-Portal nicht unterstützt, da sie für die neuesten Windows 10-Builds nicht mehr relevant ist. Die drei anderen Einstellungen können zusammen mit anderen Windows 10-Updateeinstellungen beim Erstellen von Updateringen konfiguriert werden.  
+1. Erstellen Sie im Azure-Portal Windows 10-Updateringe mit den erforderlichen Einstellungen. Die Einstellung **Vorabfeatures zulassen** wird im Azure-Portal nicht unterstützt, da sie für die neuesten Windows 10-Builds nicht mehr relevant ist. Sie können die anderen drei Einstellungen und die anderen Windows 10-Updateeinstellungen konfigurieren, wenn Sie Updateringe erstellen.  
 
    > [!NOTE]  
    > Im klassischen Portal erstellte Windows 10-Updateeinstellungen werden nach der Migration nicht im Azure-Portal angezeigt. Allerdings werden diese Einstellungen angewendet. Wenn Sie diese Einstellungen migrieren und die migrierte Richtlinie über das Azure-Portal bearbeiten, werden die Einstellungen aus der Richtlinie entfernt.  
@@ -168,6 +193,7 @@ Im klassischen Azure-Portal steht auch eine begrenzte Anzahl anderer Windows 10-
 2. Löschen Sie die Updateeinstellungen im klassischen Portal. Wenn Sie zum Azure-Portal migriert sind und die gleichen Einstellungen einem Updatering hinzufügen, müssen Sie die Einstellungen im klassischen Portal löschen, um potenzielle Richtlinienkonflikte zu vermeiden. Zum Beispiel kommt es zu einem Konflikt, wenn die gleiche Einstellung mit verschiedenen Werten konfiguriert wird. Dies ist nicht einfach zu ermitteln, da die im klassischen Portal konfigurierte Einstellung nicht im Azure-Portal angezeigt wird.  
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 [Windows-Updateeinstellungen für Intune](../windows-update-settings.md)  
 
 [Berichte zur Updatekonformität für Intune](../windows-update-compliance-reports.md)

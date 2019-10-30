@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbcc777cc6d8b803c502d847114ef7cff04ceb26
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3137db9d1ab82ebb99686f8f98aa768dae222caf
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725334"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584961"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Hinzufügen verwalteter Google Play-Apps zu Android Enterprise-Geräten mit Intune
 
@@ -48,9 +49,9 @@ Intune fügt bei der Verbindung Ihres Intune-Mandanten mit verwaltetem Google Pl
 ## <a name="managed-google-play-app-types"></a>Typen verwalteter Google Play-Apps
 Es gibt drei Arten von Apps, die mit verwaltetem Google Play verfügbar sind:
 
-* **Verwaltete Google Play Store-App**: öffentliche Apps, die im Play Store allgemein verfügbar sind. Verwalten Sie diese Apps in Intune, indem Sie nach den Apps suchen, die Sie verwalten möchten, sie genehmigen und sie dann mit Intune synchronisieren.
-* **Verwaltete private Google Play-App**: Hierbei handelt es sich um branchenspezifische Apps, die von Intune-Administratoren in verwaltetem Google Play veröffentlicht werden.  Diese Apps sind privat und nur für Ihren Intune-Mandanten verfügbar. Auf diese Weise werden branchenspezifische Apps mit verwaltetem Google Play und Android Enterprise verwaltet und bereitgestellt.
-* **Weblinks zu verwaltetem Google Play**: Weblinks mit von IT-Administratoren definierten Symbolen, die auf Android Enterprise-Geräten bereitgestellt werden können. Diese werden auf einem Gerät wie normale Apps in dessen App-Liste angezeigt.
+- **Verwaltete Google Play Store-Apps**: öffentliche Apps, die im Play Store allgemein verfügbar sind. Verwalten Sie diese Apps in Intune, indem Sie nach den Apps suchen, die Sie verwalten möchten, sie genehmigen und sie dann mit Intune synchronisieren.
+- **Verwaltete private Google Play-Apps**: Hierbei handelt es sich um branchenspezifische Apps, die von Intune-Administratoren in verwaltetem Google Play veröffentlicht werden.  Diese Apps sind privat und nur für Ihren Intune-Mandanten verfügbar. Auf diese Weise werden branchenspezifische Apps mit verwaltetem Google Play und Android Enterprise verwaltet und bereitgestellt.
+- **Weblinks zu verwaltetem Google Play**: Weblinks mit von IT-Administratoren definierten Symbolen, die auf Android Enterprise-Geräten bereitgestellt werden können. Diese werden auf einem Gerät wie normale Apps in dessen App-Liste angezeigt.
 
 ## <a name="managed-google-play-store-apps"></a>Apps im verwalteten Google Play Store
 Es gibt zwei Möglichkeiten zum Suchen und Genehmigen verwalteter Google Play Store-Apps mit Intune:
@@ -103,7 +104,7 @@ Wenn Sie es vorziehen, eine verwaltete Google Play-App mit Intune zu synchronisi
 Es gibt zwei Möglichkeiten, verwaltetem Google Play branchenspezifische Apps hinzuzufügen:
 
 1. Direkt in der Intune-Konsole: Direkt in der Intune-Konsole: Dies ermöglicht Ihnen das Hinzufügen branchenspezifischer Apps direkt in Intune, indem Sie nur das APK der App und einen Titel übermitteln. Diese Methode erfordert weder ein Google-Entwicklerkonto noch die Zahlung der Gebühr zur Registrierung bei Google als Entwickler.  Diese Methode ist einfacher, weist deutlich weniger Schritte auf und macht branchenspezifische Apps in nur zehn Minuten für die Verwaltung verfügbar.
-1. In der Google Play Developer Console: Wenn Sie ein Google-Entwicklerkonto haben oder erweiterte Verteilungsfunktionen konfigurieren möchten, die nur in der Google Play Developer Console verfügbar sind (z.B. das Hinzufügen zusätzlicher App-Screenshots), können Sie die [Google Play Developer Console](https://play.google.com/apps/publish) verwenden. 
+1. In der Google Play Developer Console: Wenn Sie ein Google-Entwicklerkonto haben oder erweiterte Verteilungsfunktionen konfigurieren möchten, die nur in der Google Play Developer Console verfügbar sind (z. B. das Hinzufügen zusätzlicher App-Screenshots), können Sie die [Google Play Developer Console](https://play.google.com/apps/publish) verwenden. 
 
 ### <a name="managed-google-play-private-lob-app-publishing-directly-in-the-intune-console"></a>Veröffentlichen privater branchenspezifischer verwalteter Google Play-Apps direkt in der Intune-Konsole
 
@@ -209,8 +210,7 @@ Alternativ können Sie Google Play so konfigurieren, dass App-Berechtigungen auf
 
 ## <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices"></a>Zusätzliche Berichterstellung für verwaltete Google Play-Apps für Android Enterprise-Arbeitsprofilgeräte
 
-Sie können die Versionsnummer von auf Android Enterprise-Arbeitsprofilgeräten bereitgestellten, verwalteten Google Play-Apps anzeigen. Dies gilt nur für erforderliche Apps. 
-
+Für auf Android Enterprise-Arbeitsprofilgeräten bereitgestellte verwaltete Google Play-Apps können Sie den Status und die Versionsnummer der auf einem Gerät installierten App abrufen, das Intune verwendet. 
 
 ## <a name="delete-managed-google-play-apps"></a>Löschen von verwalteten Google Play-Apps
 Sie können verwaltete Google Play-Apps bei Bedarf aus Microsoft Intune löschen. Um eine verwaltete Google Play-App zu löschen, öffnen Sie Microsoft Intune im Azure-Portal und wählen **Client-Apps** > **Apps** aus. Klicken Sie in der App-Liste auf die Auslassungspunkte (...) rechts neben der verwalteten Google Play-App, und wählen Sie dann in der angezeigten Liste die Option **Löschen** aus. Wenn Sie eine verwaltete Google Play-App aus der App-Liste löschen, wird die Genehmigung für die Google Play-App automatisch aufgehoben.

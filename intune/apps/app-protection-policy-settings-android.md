@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc4c301ebc4e8dc4a26a49957d344ad52316f66a
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 4be8c383ded85dbfa9cf1c1b293bb979201ee4ab
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036415"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785660"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Einstellungen für App-Schutzrichtlinien in Microsoft Intune
 In diesem Artikel werden die Einstellungen für App-Schutzrichtlinien für Android-Geräte beschrieben. Die beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Einstellungen** für eine Schutzrichtlinie [konfiguriert](app-protection-policies.md) werden.
@@ -126,3 +127,4 @@ Standardmäßig werden mehrere Einstellungen mit vorkonfigurierten Werten und Ak
 | **Gerätehersteller** | Geben Se eine durch Semikolon getrennte Liste von Herstellern an. Vermeiden Sie Leerzeichen in Listen mit mehreren Werten. Bei den Werten wird nicht zwischen Groß- und Kleinschreibung unterschieden. Dazu gehören die folgenden *Aktionen*: <br><ul><li>**Angegebene zulassen (nicht Angegebene blockieren)** : Nur Geräte, die mit dem angegebenen Hersteller übereinstimmen, können die App verwenden. Alle anderen Geräte werden blockiert. </li></ul> <ul><li>**Angegebene zulassen (nicht Angegebene löschen)** : Das Benutzerkonto, das der Anwendung zugewiesen ist, wird vom Gerät gelöscht. </li></ul> Weitere Informationen zur Verwendung dieser Einstellung finden Sie in der Auflistung [bedingter Startaktionen](app-protection-policies-access-actions.md#android-policy-settings). |
 | **SafetyNet-Gerätenachweis** | App-Schutzrichtlinien unterstützen einige der APIs von Google Play Protect. Diese Einstellung konfiguriert insbesondere „SafetyNet Attestation“ von Google auf Endbenutzergeräten. Legen Sie entweder **Basisintegrität** oder **Basisintegrität und zertifizierte Geräte** fest. Die **Basisintegrität** informiert Sie über die allgemeine Integrität des Geräts. Für gerootete Geräte, Emulatoren, virtuelle Geräte und Geräte, die Anzeichen von Manipulationen aufweisen, schlägt die Überprüfung der grundlegenden Integrität fehl. Die Option **Basisintegrität und zertifizierte Geräte** informiert Sie über die Kompatibilität des Geräts mit Google-Diensten. Nur unveränderte Geräte, die von Google zertifiziert wurden, bestehen diese Überprüfung. Dazu gehören die folgenden *Aktionen*: <br><ul><li>**Warnung:** Dem Benutzer wird eine Benachrichtigung angezeigt, wenn das Gerät nicht der SafetyNet Attestation-Überprüfung von Google auf Grundlage des konfigurierten Werts entspricht. Diese Benachrichtigung kann verworfen werden. </li></ul><ul><li>**Zugriff blockieren:** Der Zugriff wird für den Benutzer blockiert, wenn das Gerät nicht der SafetyNet Attestation-Überprüfung von Google auf Grundlage des konfigurierten Werts entspricht. </li></ul> <ul><li>**Daten löschen**: Das Benutzerkonto, das der Anwendung zugewiesen ist, wird vom Gerät gelöscht. </li></ul> </li></ul> Häufig gestellte Fragen zu dieser Einstellung finden unter [Häufig gestellte Fragen zu MAM und App-Schutz](mam-faq.md#app-experience-on-android). |
 | **Bedrohungsüberprüfung für Apps** | App-Schutzrichtlinien unterstützen einige der APIs von Google Play Protect. Diese Einstellung sorgt insbesondere dafür, dass die Verify Apps-Überprüfung von Google für Endbenutzergeräte aktiviert ist. Wenn diese Einstellung konfiguriert ist, wird der Zugriff für den Endbenutzer so lange gesperrt, bis er auf seinem Android-Gerät die App-Überprüfung von Google aktiviert. Dazu gehören die folgenden *Aktionen*: <br><ul><li>**Warnung:** Dem Benutzer wird eine Benachrichtigung angezeigt, wenn auf dem Gerät nicht die Verify Apps-Überprüfung von Google aktiviert ist. Diese Benachrichtigung kann verworfen werden. </li></ul><ul><li>**Zugriff blockieren:** Der Zugriff wird für den Benutzer blockiert, wenn auf dem Gerät nicht die Verify Apps-Überprüfung von Google aktiviert ist. </li></ul></li></ul> Die Ergebnisse der Verify Apps-Überprüfung von Google können in der Konsole über den Bericht **Potentially Harmful Apps** (Potenziell schädliche Apps) eingesehen werden. |
+| **Maximal zulässige Gerätebedrohungsstufe** | App-Schutzrichtlinien können die Vorteile des Intune-MTD-Connectors nutzen. Geben Sie eine maximale Bedrohungsstufe an, die für die Verwendung dieser App zulässig ist. Die Bedrohungen werden von der von Ihnen gewählten Mobile Threat Defense-Anwendung des Anbieters auf dem Endbenutzergerät bestimmt. Geben Sie entweder *Geschützt*, *Niedrig*, *Mittel* oder *Stark* ein. *Geschützt* erfordert keine Bedrohungen auf dem Gerät und ist der restriktivste konfigurierbare Wert, während *Stark* im Wesentlichen eine aktive Intune-zu-MTD-Verbindung erfordert. Dazu gehören die folgenden *Aktionen*: <br><ul><li>**Zugriff blockieren:** Der Benutzer wird für den Zugriff gesperrt, wenn die von der von Ihnen gewählten Mobile Threat Defense-App des Anbieters auf dem Benutzerendgerät festgelegte Bedrohungsstufe diese Anforderung nicht erfüllt.</li></ul> <ul><li>**Daten löschen**: Das Benutzerkonto, das der Anwendung zugewiesen ist, wird vom Gerät gelöscht.</li></ul>Weitere Informationen zu dieser Einstellung finden Sie unter (##Einrichten von Intune für MTD auf nicht registrierten Geräten). |

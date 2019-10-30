@@ -2,12 +2,13 @@
 title: Erstellen von Gerätekonformitätsrichtlinien in Microsoft Intune – Azure | Microsoft-Dokumentation
 description: Erstellen von Gerätekonformitätsrichtlinien, Übersicht über den Status und die Sicherheitsebenen, Verwendung des InGracePeriod-Status, Arbeiten mit bedingtem Zugriff, Handhabung von Geräten ohne zugewiesene Richtlinie und die Unterschiede bei der Konformität im Azure-Portal und im klassischen Portal in Microsoft Intune
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: samyada
@@ -15,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306584"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786072"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Erstellen einer Konformitätsrichtlinie in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Konformitätsrichtlinien für Geräte sind ein wichtiges Feature bei der Verwendung von Intune, um die Ressourcen Ihrer Organisation zu schützen. Sie können in Intune Regeln und Einstellungen erstellen, die Geräte erfüllen müssen, um als konform angesehen zu werden, z. B. die mindestens erforderliche Betriebssystemversion. Wenn das Gerät nicht konform ist, können Sie dann den Zugriff auf Daten und Ressourcen mit [bedingtem Zugriff](conditional-access.md) blockieren.
 
@@ -48,10 +47,10 @@ Stellen Sie zum Verwenden von Konformitätsrichtlinien folgendes sicher:
 
 - Verwenden Sie eine unterstützte Plattform:
 
-  - Android
+  - Android-Geräteadministrator
   - Android Enterprise
   - iOS
-  - macOS (Vorschau)
+  - macOS
   - Windows 10
   - Windows 8.1
   - Windows Phone 8.1
@@ -72,26 +71,40 @@ Stellen Sie zum Verwenden von Konformitätsrichtlinien folgendes sicher:
 
 3. Klicken Sie auf **Richtlinien** > **Richtlinie erstellen**. Geben Sie die folgenden Eigenschaften ein:
 
-    - **Name**: Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein geeigneter Richtlinienname ist z. B. **iOS-Geräte mit Jailbreak als nicht konform markieren**.
-    - **Beschreibung**: Geben Sie eine Beschreibung für die Richtlinie ein. Diese Einstellung ist optional, wird jedoch empfohlen.
-    - **Plattform**: Wählen Sie die Plattform Ihrer Geräte aus. Folgende Optionen sind verfügbar:  
+   - **Name**: Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein geeigneter Richtlinienname ist z. B. **iOS-Geräte mit Jailbreak als nicht konform markieren**.  
 
-       - **Android**
-       - **Android Enterprise**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 und höher**
-       - **Windows 10 und höher**
+   - **Beschreibung**: Geben Sie eine Beschreibung für die Richtlinie ein. Diese Einstellung ist optional, wird jedoch empfohlen.  
 
-    - **Einstellungen:** In den folgenden Artikel werden die Einstellungen für die einzelnen Plattformen aufgelistet und beschrieben:
+   - **Plattform**: Wählen Sie die Plattform Ihrer Geräte aus. Folgende Optionen sind verfügbar:
+     - **Android-Geräteadministrator**
+     - **Android Enterprise**
+     - **iOS/iPadOS**
+     - **macOS**
+     - **Windows Phone 8.1**
+     - **Windows 8.1 und höher**
+     - **Windows 10 und höher**
 
-        - [Android](compliance-policy-create-android.md)
-        - [Android Enterprise](compliance-policy-create-android-for-work.md)
-        - [iOS](compliance-policy-create-ios.md)
-        - [macOS](compliance-policy-create-mac-os.md)
-        - [Windows Phone 8.1, Windows 8.1 und höher](compliance-policy-create-windows-8-1.md)
-        - [Windows 10 und höher](compliance-policy-create-windows.md)
+     Für *Android Enterprise* müssen Sie dann einen **Profiltyp** auswählen:
+     - **Gerätebesitzer**
+     - **Arbeitsprofil**
+
+   - **Einstellungen:** In den folgenden Artikel werden die Einstellungen für die einzelnen Plattformen aufgelistet und beschrieben:
+     - [Android-Geräteadministrator](compliance-policy-create-android.md)
+     - [Android Enterprise](compliance-policy-create-android-for-work.md)
+     - [iOS/iPadOS](compliance-policy-create-ios.md)
+     - [macOS](compliance-policy-create-mac-os.md)
+     - [Windows Phone 8.1, Windows 8.1 und höher](compliance-policy-create-windows-8-1.md)
+     - [Windows 10 und höher](compliance-policy-create-windows.md)  
+
+   - **Standorte** *(Android-Geräteadministrator)* : In Ihrer Richtlinie können Sie Konformität durch den Standort des Geräts erzwingen. Sie können vorhandene Standorte auswählen. Haben Sie noch keine Standorte? Unter [Verwenden von Standorten (Netzwerk-Fencing) in Intune](use-network-locations.md) erhalten Sie weitere Informationen.  
+
+   - **Aktionen bei Inkompatibilität**: Für Geräte, die nicht Ihren Konformitätsrichtlinien entsprechen, können Sie Aktionen hinzufügen, die automatisch ausgeführt werden sollen. Sie können den Zeitplan anpassen, anhand dessen das Gerät als nicht konform markiert wird, z.B. nach einem Tag. Sie können auch eine zweite Aktion konfigurieren, durch die E-Mails an Benutzer gesendet werden, wenn das Gerät nicht mehr konform ist.
+    
+     Weitere Informationen sowie Informationen zum Erstellen einer E-Mail-Benachrichtigung für Ihre Benutzer finden Sie unter [Hinzufügen von Aktionen für nicht konforme Geräte in Intune](actions-for-noncompliance.md).
+
+     Sie verwenden beispielsweise das Standortfeature und fügen einen Standort zu einer Konformitätsrichtlinie hinzu. Die Standardaktion für Nichtkonformität gilt, wenn Sie mindestens einen Standort auswählen. Wenn das Gerät nicht mit den ausgewählten Standorten verbunden ist, wird es sofort als nicht konform betrachtet. Sie können Ihren Benutzern eine Toleranzperiode gewähren, z.B. einen Tag.
+
+   - **Bereich (Markierungen)** : Bereichsmarkierungen eignen sich zum Zuweisen und Filtern von Richtlinien für bestimmte Gruppen, z. B. Vertrieb, Personalabteilung, Alle Mitarbeiter in North Carolina (USA) usw. Nachdem Sie die Einstellungen hinzugefügt haben, können Sie Ihrer Konformitätsrichtlinie ebenfalls eine Bereichsmarkierung hinzufügen. Im Artikel zum [Verwenden von Bereichsmarkierungen zum Filtern von Richtlinien](../fundamentals/scope-tags.md) finden Sie weitere Informationen.
 
 4. Wählen Sie anschließend **OK** > **Erstellen** aus, um Ihre Änderungen zu speichern. Die Richtlinie wird erstellt und in der Liste angezeigt. Weisen Sie die Richtlinie anschließend Ihrer Gruppe zu.
 
@@ -114,17 +127,18 @@ Wenn Sie die Richtlinie zuweisen, können Sie auch **auswerten**, wie viele Benu
 
 Wenn die Schaltfläche **Evaluate** (Auswerten) ausgegraut ist, stellen Sie sicher, dass die Richtlinie mindestens einer Gruppe zugewiesen wurde.
 
-## <a name="actions-for-noncompliance"></a>Aktionen bei Inkompatibilität
+<!-- ## Actions for noncompliance
 
-Für Geräte, die nicht Ihren Konformitätsrichtlinien entsprechen, können Sie Aktionen hinzufügen, die automatisch ausgeführt werden sollen. Sie können den Zeitplan anpassen, anhand dessen das Gerät als nicht konform markiert wird, z.B. nach einem Tag. Sie können auch eine zweite Aktion konfigurieren, durch die E-Mails an Benutzer gesendet werden, wenn das Gerät nicht mehr konform ist.
+For devices that don't meet your compliance policies, you can add a sequence of actions to apply automatically. You can change the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device isn't compliant.
 
-Weitere Informationen sowie Informationen zum Erstellen einer E-Mail-Benachrichtigung für Ihre Benutzer finden Sie unter [Hinzufügen von Aktionen für nicht konforme Geräte in Intune](actions-for-noncompliance.md).
+[Add actions for noncompliant devices](actions-for-noncompliance.md) provides more information, including creating a notification email to your users.
 
-Sie verwenden beispielsweise das Standortfeature und fügen einen Standort zu einer Konformitätsrichtlinie hinzu. Die Standardaktion für Nichtkonformität gilt, wenn Sie mindestens einen Standort auswählen. Wenn das Gerät nicht mit den ausgewählten Standorten verbunden ist, wird es sofort als nicht konform betrachtet. Sie können Ihren Benutzern eine Toleranzperiode gewähren, z.B. einen Tag.
+For example, you're using the Locations feature, and add a location in a compliance policy. The default action for noncompliance applies when you select at least one location. If the device isn't connected to the selected locations, it's immediately considered not compliant. You can give your users a grace period, such as one day.
 
-## <a name="scope-tags"></a>Festlegen von Tags
+## Scope tags
 
-Bereichsmarkierungen eignen sich zum Zuweisen und Filtern von Richtlinien für bestimmte Gruppen, z. B. Vertrieb, Personalabteilung, Alle Mitarbeiter in North Carolina (USA) usw. Nachdem Sie die Einstellungen hinzugefügt haben, können Sie Ihrer Konformitätsrichtlinie ebenfalls eine Bereichsmarkierung hinzufügen. Im Artikel zum [Verwenden von Bereichsmarkierungen zum Filtern von Richtlinien](../fundamentals/scope-tags.md) finden Sie weitere Informationen.
+Scope tags are a great way to assign and filter policies to specific groups, such as Sales, HR, All US-NC employees, and so on. After you add the settings, you can also add a scope tag to your compliance policies. [Use scope tags to filter policies](../fundamentals/scope-tags.md) is a good resource.
+-->
 
 ## <a name="refresh-cycle-times"></a>Aktualisierungszykluszeit
 

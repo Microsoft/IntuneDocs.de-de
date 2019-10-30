@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -15,17 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35fae5ea1b3294772db4f4db51179892e08ed5d1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c1c02248b3208073a3bb09cafe69cf0473eacb2b
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728506"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584532"
 ---
 # <a name="rename-a-device-in-intune"></a>Umbenennen eines Geräts in Intune
-
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Mithilfe der Aktion **Gerät umbenennen** können Sie ein Gerät umbenennen, das bei Intune registriert ist. Der Name des Geräts wird sowohl in Intune als auch auf dem Gerät geändert.
 
@@ -44,6 +42,15 @@ Dieses Feature unterstützt derzeit nicht das Umbenennen von Windows-Geräten mi
 5. Wenn Sie das Gerät nach dem Umbenennen neu starten möchten, wählen Sie neben **Restart after rename** (Nach Umbenennung neu starten) die Option **Ja** aus.
 6. Klicken Sie auf **Umbenennen**.
 
+## <a name="windows-device-rename-rules"></a>Umbenennungsregeln für Windows-Geräte
+Wird ein Windows-Gerät umbenannt, müssen beim neuen Namen folgende Regeln eingehalten werden:
+- Der Name sollte aus 15 oder weniger Zeichen (d. h. weniger als oder gleich 63 Byte ohne nachstehender NULL) bestehen.
+- Der Name sollte nicht NULL sein oder aus einer leeren Zeichenfolge bestehen.
+- Zulässiger ASCII-Code: Buchstaben (a-z, A-Z), Zahlen (0-9) und Bindestriche
+- Zulässige Unicode-Zeichen: Zeichen >= 0x80, muss eine gültige UTF-8-Codierung und die IDN-Zuordnung (RtlIdnToNameprepUnicode erfolgreich, weitere Informationen finden Sie im RFC 3492) aufweisen
+- Namen dürfen nicht nur aus Zahlen bestehen.
+- Es dürfen keine Leerzeichen im Namen enthalten sein.
+- Unzulässige Zeichen: { | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
 
 
 ## <a name="next-steps"></a>Nächste Schritte

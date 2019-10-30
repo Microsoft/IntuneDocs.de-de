@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -15,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b16b4ee95647b3bb182af075bbe7f7aad71351f0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9c4d47a11f07a2099d79f5ce4ce90795a087718b
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726803"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681475"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Überwachen der Sicherheitsbaseline und von Profilen in Microsoft Intune  
 
@@ -59,7 +60,7 @@ Wenn also für ein Gerät einmal die Einstellung *Falsch konfiguriert* und einma
 Sie können auf das Diagramm klicken, um einen Drillthrough auszuführen und eine Liste der Geräte mit den verschiedenen Statusangaben anzuzeigen. Anschließen können Sie einzelne Geräte aus der Liste auswählen, um Details zu diesen abzurufen. Beispiel:
 - Klicken Sie auf **Gerätekonfiguration**, und wählen Sie dann das Profil mit einem Fehlerstatus aus:
 
-  ![Überprüfen des Status der Geräte](./media/security-baselines-monitor/device-configuration-profile-list.png)
+  ![Anzeigen des Status eines Profils](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
 - Wählen Sie das „Fehler“-Profil aus. Eine Liste aller Einstellungen im Profil und deren Status werden angezeigt. Jetzt können Sie scrollen, um die Einstellung zu finden, die den Fehler verursacht:
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 003ce5af-7ee1-43fb-8d16-9d08c7957a85
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5e4d4b3326eda01a1345cd628af31dd66e14533
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 24b69b6da846d54d4f45ede47c932574e006f99f
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724996"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786001"
 ---
 # <a name="microsoft-intune-protected-apps"></a>Durch Microsoft Intune geschützte Apps  
 
@@ -71,6 +72,7 @@ Die folgenden Tabellen enthalten Details zu unterstützten Partnern und Microsof
 | **Microsoft Visio Viewer**<p><img alt="Microsoft app - Microsoft Visio Viewer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-visio-viewer.png" width="100"> | Sie können Visio-Diagramme unterwegs kostenlos auf einem iPhone anzeigen und mit ihnen interagieren. Melden Sie sich mit Ihrem Microsoft-Konto an, oder öffnen Sie einen Visio-Anhang in der E-Mail, und genießen Sie die erstaunliche Ansicht des Visio-Diagramms auf jedem iPhone mit iOS 9.0 oder höher. Sie können die Diagramme auch für beliebige Personen freigeben, sodass sie auch dann Visio-Diagramme auf ihrem iPhone oder in einen Webbrowser anzeigen können, wenn Visio nicht auf ihrem Windows-Desktop installiert ist.| [iOS Store-Link](https://itunes.apple.com/us/app/microsoft-visio-viewer-flowcharts-and-diagrams/id1139787983?mt=8) |  
 | **Microsoft Word**<p><img alt="Microsoft app - Microsoft Word icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-word.png" width="100"> | Lassen Sie Word-Dokumente auf Ihrem Tablet und Smartphone besser als je zuvor aussehen. Vertrauen Sie darauf, dass Dokumente auf PCs, Macintosh-Computern, Tablets und Smartphones genau so aussehen, wie Sie es wünschen, wenn Sie sie bearbeiten oder erstellen. In kürzester Zeit sind Sie im vertrauten Office-Stil mit einer intuitiven Touchbenutzeroberfläche einsatzbereit.<p><p>Diese App kann als App mit mehreren Identitäten für Android und iOS verwendet werden. | [Android Store-Link](https://play.google.com/store/apps/details?id=com.microsoft.office.word),<br>[iOS Store-Link](https://itunes.apple.com/us/app/microsoft-word/id586447913?mt=8) |  
 | **Microsoft Arbeitsordner**<p><img alt="Microsoft app - Microsoft Work Folders icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-work-folders.png" width="100"> | Lassen Sie zu, dass einzelne Mitarbeiter sowohl von innerhalb als auch außerhalb der Unternehmensumgebung mithilfe von Arbeitsordnern, einem Windows Server-Feature, sicher auf ihre Dateien zugreifen können. | [iOS Store-Link](https://itunes.apple.com/us/app/work-folders/id950878067?mt=8) | 
+| **Microsoft Whiteboard**<p><img alt="Microsoft app - Microsoft Whiteboard icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-whiteboard.png" width="100"> | Die Microsoft Whiteboard-App bietet eine intelligente Freiformcanvas, in der Teams über die Cloud visuell Ideen entwickeln, erstellen und zusammenarbeiten können.  Dadurch wird die Zusammenarbeit verbessert, da alle Teammitglieder unabhängig von ihrem Standort direkt auf der Canvas arbeiten und kommentieren können. Zudem bleibt Ihre Arbeit sicher in der Cloud, und Sie können von jedem Gerät aus wieder darauf zugreifen. | [iOS Store-Link](https://apps.apple.com/us/app/microsoft-whiteboard/id1352499399) |  
 | **Yammer**<p><img alt="Microsoft app - Yammer icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-yammer.png" width="100"> | Unterteilen Sie organisatorische Silos, und vereinfachen Sie die Zusammenarbeit im Team mit Yammer. Stellen Sie die Verbindung mit der richtigen zuständigen Person in Ihrer Organisation her, suchen Sie teamübergreifend nach Informationen und geben Sie sie frei, und organisieren Sie um Projekte und Ideen herum, sodass Sie ein größeres Pensum bewältigen können. | [Android Store-Link](https://play.google.com/store/apps/details?id=com.yammer.v1),<br>[iOS Store-Link](https://itunes.apple.com/us/app/yammer/id289559439?mt=8) |  
 
 ## <a name="partner-apps"></a>Partner- Apps 

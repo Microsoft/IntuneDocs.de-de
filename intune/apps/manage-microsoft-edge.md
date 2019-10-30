@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3fb2f050-ec94-42ab-be05-c3d4101148bb
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3ee68392feaa59ef5207edce75250e539407273b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724775"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593688"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Verwalten des Webzugriffs mithilfe von Microsoft Edge mit Microsoft Intune
 
@@ -204,7 +205,7 @@ Für erleichterte Bedienung können Sie Lesezeichen konfigurieren, die Ihren Ben
 
 Hier sind einige Details:
 
-- Diese Lesezeichen werden Benutzern nur angezeigt, wenn sie den Unternehmensmodus von Microsoft Edge verwenden. 
+- Diese Lesezeichen werden Benutzern nur angezeigt, wenn sie den [Unternehmensmodus](https://docs.microsoft.com/intune/apps/app-configuration-managed-browser#how-to-configure-bookmarks-for-a-protected-browser) von Microsoft Edge verwenden. 
 - Diese Lesezeichen können von Benutzern nicht gelöscht oder geändert werden.
 - Diese Lesezeichen werden oben in der Liste angezeigt. Alle von Benutzern erstellten Lesezeichen werden unterhalb dieser Lesezeichen angezeigt.
 - Wenn Sie die Anwendungsproxyumleitung aktiviert haben, können Sie Anwendungsproxy-Web-Apps mit deren interner oder externer URL hinzufügen.

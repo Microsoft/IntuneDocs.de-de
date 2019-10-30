@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 05/21/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5491e0d2dfb1aa1989fc202203d9a895823b0b73
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71727817"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749442"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Verwenden von Standorten (Netzwerk-Fencing) in Intune
 
@@ -29,7 +30,7 @@ Falls Sie den Zugriff auf ein Unternehmensnetzwerk blockieren möchten, wenn ein
 
 Sie können eine auf Netzwerkstandorten basierende Konformitätsrichtlinie erstellen. Dies wird auch als „Netzwerk-Fencing“ bezeichnet. Durch die Richtlinie wird sichergestellt, dass Geräte mit Firmennetzwerk verbunden sein müssen, um als konform zu gelten. Diese Richtlinie kann mit Richtlinien für bedingten Zugriff verwendet werden, sodass Geräte *nur* dann Zugriff auf geschäftliche Ressourcen haben, wenn das Gerät mit dem Firmennetzwerk verbunden ist. Wenn das Gerät nicht mit dem Firmennetzwerk verbunden ist, gilt es als nicht konform und verliert den Zugriff auf geschäftliche Ressourcen.
 
-Stellen Sie sich das folgende Szenario vor:
+Als Beispiel dient das folgende Szenario:
 
 In Ihrer Produktionsanlage verwenden einige Mitarbeiter Android-Geräte. Ein Mitarbeiter verlässt mit dem Android-Gerät das Werk oder die Anlage. Sie können Folgendes durchführen, um nicht autorisierten Zugriff zu verhindern:
 
@@ -68,9 +69,8 @@ So erstellen Sie eine standortbasierte Konformitätsrichtlinie:
 
 ## <a name="create-the-location-compliance-policy"></a>Erstellen der Konformitätsrichtlinie für den Standort
 
-Wenn Sie die Konformitätsrichtlinie erstellen, wählen Sie **Android** als **Plattform** aus. Unter **Standorte** können Sie einen oder mehr der hinzugefügten Netzwerkstandorte auswählen. Diese Standorte sind Teil des Netzwerk-Fencing-Bereichs, den Sie für Ihr Gerät erstellen.
+Wenn Sie [die Konformitätsrichtlinie erstellen](create-compliance-policy.md), wählen Sie **Android** für die **Plattform** aus. Unter **Standorte** können Sie einen oder mehr der hinzugefügten Netzwerkstandorte auswählen. Diese Standorte sind Teil des Netzwerk-Fencing-Bereichs, den Sie für Ihr Gerät erstellen. 
 
-Unter [Erstellen einer auf Netzwerkstandorten basierenden Konformitätsrichtlinie](compliance-policy-create-android.md#locations) finden Sie hilfreiche Informationen.
 
 ## <a name="configure-the-actions-for-noncompliance"></a>Konfigurieren der Aktionen bei Nichtkonformität
 
