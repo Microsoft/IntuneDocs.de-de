@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d82813f1292c99cf248c56a102503413d2cb8fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507453"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889592"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Überwachen von App-Schutzrichtlinien
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -76,7 +76,7 @@ Sie können nach einem einzelnen Benutzer suchen und den Kompatibilitätsstatus 
 - **Letzte Synchronisierung:** Zeitpunkt der letzten Synchronisierung der App mit Intune. 
 
 >[!NOTE]
-> Die Spalte **Letzte Synchronisierung** stellt sowohl im Benutzerstatusbericht in der Konsole als auch im [exportierbaren CSV-Bericht](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv) der App-Schutzrichtlinie den gleichen Wert dar. Der Unterschied besteht in einer kurzen Verzögerung bei der Synchronisierung der Werte in den beiden Berichten. 
+> Die Spalte **Letzte Synchronisierung** stellt sowohl im Benutzerstatusbericht in der Konsole als auch im [exportierbaren CSV-Bericht](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities) der App-Schutzrichtlinie den gleichen Wert dar. Der Unterschied besteht in einer kurzen Verzögerung bei der Synchronisierung der Werte in den beiden Berichten. 
 >
 > Die in „Letzte Synchronisierung“ angegebene Uhrzeit ist der Zeitpunkt, zu dem Intune die App-Instanz zuletzt gesehen hat. Wenn ein Benutzer eine App startet, könnte diese abhängig vom letzten Eincheckzeitpunkt zu diesem Startzeitpunkt mit dem Intune-App-Schutz-Dienst kommunizieren. Informieren Sie sich über [die Wiederholungsintervallzeiten für den Eincheckvorgang der App-Schutzrichtlinie](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). Wenn ein Benutzer diese spezielle App also im letzten Eincheckintervall (in der Regel 30 Minuten für die aktive Verwendung) nicht verwendet hat und die App gestartet wird, dann gilt Folgendes:
 >

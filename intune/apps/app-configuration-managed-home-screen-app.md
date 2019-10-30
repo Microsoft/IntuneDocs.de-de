@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 10/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d47cee2c26960775d268b317845c118e99b85fe9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
+ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507579"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72813482"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Konfigurieren der Managed Home Screen-App von Microsoft für Android Enterprise
 
@@ -60,25 +60,15 @@ In der nachstehenden Tabelle sind die verfügbaren Konfigurationsschlüssel, Wer
 | Konfigurationsschlüssel | Werttyp | Standardwert | Beschreibung |
 |---------------------------------------------------------------------------------------------------------------------------|-------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Rastergröße einstellen | string | Automatisch | Ermöglicht es Ihnen, die Rastergröße für Apps festzulegen, die auf Managed Home Screen positioniert werden sollen. Sie können die Anzahl der App-Zeilen und -Spalten festlegen, um die Rastergröße im Format `columns;rows` zu definieren. Wenn Sie die Rastergröße definieren, wäre die maximale Anzahl der Apps, die in einer Zeile auf dem Startbildschirm angezeigt werden, die Anzahl der von Ihnen festgelegten Zeilen, und die maximale Anzahl der Apps, die in einer Spalte auf dem Startbildschirm angezeigt werden, wäre die Anzahl der festgelegten Spalten. |
-| Bildschirmheader aktivieren | bool | TRUE | Aktiviert den Header für verschiedene Ansichten, die Managed Home Screen bietet, z.B. der Feed oder Feedkarten. Wenn Sie diese Einstellung aktivieren, wird den Gerätebenutzern der Header angezeigt. |
-| Gerätestatusleiste aktivieren | bool | TRUE | Aktiviert die Statusleiste auf dem Startbildschirm (obere Leiste, in der aktuelle Verbindungen wie WLAN usw. angezeigt werden). Wenn Sie diesen Konfigurationsschlüssel aktivieren, kann der Endbenutzer die auf den Statusleisten angezeigten Symbole zur Darstellung von Verbindungen und aktiven Apps sehen. |
 | Infobadge aktivieren | bool | FALSE | Aktiviert den Infobadge für App-Symbole, der die Anzahl der neuen Benachrichtigungen auf der App anzeigt. Wenn Sie diese Einstellung aktivieren, sehen Endbenutzer die Infobadges auf Apps, in denen es ungelesene Benachrichtigungen gibt. Wenn Sie diesen Konfigurationsschlüssel deaktiviert lassen, kann der Endbenutzer keine Infobadges auf Apps sehen, die möglicherweise ungelesene Benachrichtigungen enthalten. |
 | Startbildschirm sperren | bool | TRUE | Hindert den Endbenutzer daran, App-Symbole auf dem Startbildschirm zu verschieben. Wenn Sie diesen Konfigurationsschlüssel aktivieren, werden die App-Symbole auf dem Startbildschirm gesperrt, und der Endbenutzer kann sie nicht an verschiedene Rasterpositionen des Bildschirms ziehen und dort ablegen. Wenn `false` festgelegt wurde, können Endbenutzer Anwendungs- und Weblinksymbole auf Managed Home Screen verschieben.  |
 | Hintergrundbild für Gerät festlegen | string | Standard | Ermöglicht es Ihnen, ein Hintergrundbild Ihrer Wahl festzulegen, indem Sie die URL des Bilds eingeben, das Ihr Hintergrundbild werden soll. |
 | App-Symbolgröße festlegen | integer | 2 | Ermöglicht es Ihnen, die Symbolgröße für Apps festzulegen, die auf dem Startbildschirm angezeigt werden. Sie können folgende Werte in dieser Konfiguration für unterschiedliche Größen auswählen: „0“ (Kleinste), „1“ (Klein), „2“ (Normal), „3“ (Groß) und „4“ (Größte). |
 | Symbol für App-Ordner festlegen | integer | 0 | Ermöglicht es Ihnen, die Darstellung von App-Ordnern auf dem Startbildschirm zu definieren. Sie können die Darstellung aus folgenden Werten auswählen: „Dunkel Quadrat(0)“; „Dunkel Kreis (1)“; „Hell Quadrat(2)“; „Hell Kreis (3)“. |
-| Gesten aktivieren | bool | FALSE | Ermöglicht es dem Endbenutzer, Aktionen verschiedene Gesten wie „Nach oben wischen“ und „Nach unten wischen“ zuzuweisen. Wenn Sie diesen Konfigurationsschlüssel deaktivieren, können Endbenutzer nur nach rechts wischen, wenn es eine zweite Seite gibt, und dann zur Startseite zurückkehren. |
-| Vertikales Scrollen aktivieren | bool | FALSE | Ermöglicht vertikales Scrollen auf Managed Home Screen. Wenn Sie diesen Konfigurationsschlüssel aktivieren, kann der Endbenutzer nur durch vertikales (und nicht durch horizontales) Wischen zu verschiedenen Seiten navigieren. |
-| Design für Startbildschirm festlegen | string | Theme.Light.Blue | Ermöglicht es Ihnen, das Design für den Startbildschirm aus einer vordefinierten Gruppe von Designs mit verschiedenen Farben auszuwählen. Sie können diese Designs auswählen, indem Sie den Zeichenfolgenwert im folgenden Format eingeben:   Theme.Light.Green. Darin kann „Hell“ durch „Dunkel“ für ein dunkles Design und ersetzt werden und „Grün“ durch „Blau“, „Gelb“, „Rosa“, „Rot“, „Orange“ und „Lila“. |
-| Dock aktivieren | bool | FALSE | Aktiviert den Dock-Abschnitt für Apps unten auf dem Startbildschirm, in dem persistente Apps und der Einstiegspunkt für alle installierten Apps angezeigt werden. Wenn Sie diesen Konfigurationsschlüssel aktivieren, kann der Endbenutzer auf Apps im Dock und außerdem auf den Abschnitt „Alle Apps“ zugreifen, um zur Liste aller installierten Apps auf den Geräten zu wechseln – unabhängig davon, ob sie in der Zulassungsliste enthalten sind oder nicht. |
 | Bildschirmausrichtung festlegen | integer | 1 | Ermöglicht es Ihnen, die Ausrichtung des Startbildschirms auf „Hochformat“, „Querformat“ oder „Automatisch drehen“ festzulegen. Sie können die Ausrichtung festlegen, indem Sie die Werte „1“ (für „Hochformat“), „2“ (für „Querformat“) oder „3“ (für „Automatisch drehen“) eingeben. |
-| Feed für Startbildschirm aktivieren | bool | FALSE | Aktiviert den Feed des Startbildschirms, der durch Wischen nach links angezeigt werden kann. Dieser Feed zeigt eine andere Art von Inhalten an, z.B. News, Kalender, häufig verwendete Apps, die Karte des Sprach-Assistenten Cortana usw. Wenn Sie dies aktivieren, kann der Endbenutzer zum Feed navigieren, indem er auf dem Startbildschirm nach links wischt. |
-| Übersichtsmodus aktivieren | bool | FALSE | Ermöglicht es Endbenutzern, auf dem Startbildschirm verschiedene Seiten hinzuzufügen oder davon zu entfernen, auf die durch Wischen nach rechts auf dem Standardbildschirm zugegriffen werden kann. Wenn Sie dies aktivieren, kann der Endbenutzer rechts neben der Standardseite des Startbildschirms Seiten hinzufügen, die Standardseite ändern und auf die Einstellungen von Managed Home Screen zugreifen. |
 | Gerätetelemetrie aktivieren | bool | FALSE | Ermöglicht es, dass die gesamte Telemetrie für Managed Home Screen erfasst wird. Wenn Sie dies aktivieren, kann Microsoft die Nutzungstelemetriedaten des Geräts erfassen, z.B., wie oft eine bestimmte App auf dem jeweiligen Gerät gestartet wurde. |
 | Festlegen von Anwendungen für die Zulassungsliste | bundleArray | FALSE | Ermöglicht es Ihnen, aus den auf dem Gerät installierten Apps diejenige Gruppe von Apps zu definieren, die auf dem Startbildschirm sichtbar sein soll. Sie können die Apps definieren, indem Sie den App-Paketnamen der Apps eingeben, die Sie sichtbar machen möchten. Mit „com.microsoft.emmx“ beispielsweise können Einstellungen auf dem Startbildschirm angezeigt werden. Die Apps, die Sie der Zulassungsliste in diesem Abschnitt hinzufügen, sollten bereits auf dem Gerät installiert sein, damit sie auf dem Startbildschirm sichtbar sind. |
 | Angeheftete Weblinks festlegen | bundleArray | FALSE | Ermöglicht es Ihnen, Websites als Schnellstartsymbole auf dem Startbildschirm anzuheften. Bei dieser Konfiguration können Sie die URL definieren und auf dem Startbildschirm hinzufügen, damit sie der Endbenutzer mit einem einfachen Tippen im Browser starten kann. |
-| Suchleiste aktivieren | bool | FALSE | Aktiviert die Suchleiste auf dem Startbildschirm. Wenn Sie dies aktivieren, wird Benutzern des Gerät die Suchleiste auf dem Startbildschirm angezeigt. Darin können sie alles das eingeben, was sie im Web suchen möchten. |
-| App „Einstellungen“ deaktivieren | bool | FALSE | Deaktiviert die Seite „Einstellungen“ für Managed Home Screen. Wenn Sie dies deaktivieren, kann der Endbenutzer des Geräts nicht auf die Einstellungen von Managed Home Screen zugreifen. |
 | Bildschirmschoner aktivieren | bool | FALSE | Dient dazu, den Bildschirmschonermodus zu aktivieren bzw. zu deaktivieren. Wenn „true“ festgelegt wird, können Sie **screen_saver_image**, **screen_saver_show_time**,**inactive_time_to_show_screen_saver** und **media_detect_screen_saver** konfigurieren. |
 | Bild für Bildschirmschoner | string |   | Hiermit legen Sie die URL für das Bildschirmschonerbild fest. Wurde keine URL festgelegt, zeigen Geräte das Standardbild an, wenn der Bildschirmschoner aktiviert wird. Das Standardbild zeigt das Symbol der Managed Home Screen-App.  |
 | Anzeigezeit für den Bildschirmschoner | integer | 0 | Bietet die Möglichkeit, die Zeitspanne in Sekunden festzulegen, während der das Gerät im Bildschirmschonermodus den Bildschirmschoner anzeigt. Wenn „0“ festgelegt wurde, wird der Bildschirmschoner so lange im Bildschirmschonermodus angezeigt, bis das Gerät inaktiv wird.  |
@@ -116,18 +106,6 @@ Dies ist ein Beispiel für ein JSON-Skript, in dem alle verfügbaren Konfigurati
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
         {
-            "key": "keep_page_header",
-            "valueBool": true
-        },
-        {
-            "key": "keep_status_bar",
-            "valueBool": true
-        },
-        {
-            "key": "show_notification_badge",
-            "valueBool": false
-        },
-        {
             "key": "lock_home_screen",
             "valueBool": true
         },
@@ -144,32 +122,8 @@ Dies ist ein Beispiel für ein JSON-Skript, in dem alle verfügbaren Konfigurati
             "valueInteger": 0
         },
         {
-            "key": "gesture_on",
-            "valueBool": false
-        },
-        {
-            "key": "vertical_scrolling",
-            "valueBool": false
-        },
-        {
-            "key": "theme",
-            "valueString": "Theme.Light.Blue"
-        },
-        {
-            "key": "dock_enable",
-            "valueBool": false
-        },
-        {
             "key": "screen_orientation",
             "valueInteger": 1
-        },
-        {
-            "key": "feed_enable",
-            "valueBool": false
-        },
-        {
-            "key": "allow_overview_mode",
-            "valueBool": false
         },
         {
             "key": "enable_telemetry",
@@ -204,14 +158,6 @@ Dies ist ein Beispiel für ein JSON-Skript, in dem alle verfügbaren Konfigurati
                     ]
                 }
             ]
-        },
-        {
-            "key": "search_bar",
-            "valueBool": false
-        },
-        {
-            "key": "hide_settings",
-            "valueBool": false
         },
         {
             "key": "show_virtual_home",

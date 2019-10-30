@@ -12,17 +12,17 @@ ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
-ms.reviewer: davidra
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 142d24452c401f83322b71a104ed47759eb6179f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7b2083a493fd723c649bdfe2b709dbaa4c0ec663
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509091"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810278"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integrieren der Netzwerkzugriffssteuerung (NAC) mit Intune
 

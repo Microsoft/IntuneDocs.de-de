@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdb3623a61c16f69773703b8acdbb8f7c02b4ac4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e648d2eff8fd95cd3c995e9cce1bd0c9dfff32da
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504744"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889518"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Verwalten und Verwenden verschiedener Geräteverwaltungsfeatures für Windows Holographic- und HoloLens-Geräten mit Intune
 
@@ -80,7 +80,7 @@ Microsoft Intune kann universelle Windows-Apps für Microsoft HoloLens-Geräte b
 - Weitere Informationen zum Entwickeln von Apps für Microsoft HoloLens finden Sie unter [Mixed reality apps for Microsoft HoloLens](https://www.microsoft.com/hololens/apps) (Mixed Reality-Apps für Microsoft HoloLens). 
 
 > [!NOTE]
-> HoloLens-Geräte, die unter Windows 10 Holographic for Business 1607 ausgeführt werden, unterstützen keine online lizenzierten Apps aus dem Microsoft Store für Unternehmen. Weitere Informationen finden Sie unter [Installieren von Apps für HoloLens](https://docs.microsoft.com/hololens/hololens-install-apps).
+> HoloLens-Geräte, die unter Windows 10 Holographic for Business 1607 ausgeführt werden, unterstützen keine online lizenzierten Apps aus dem Microsoft Store für Unternehmen. Weitere Informationen finden Sie unter [Installieren von Apps für HoloLens](/hololens/holographic-store-apps).
 
 ## <a name="device-actions"></a>Geräteaktionen
 Intune verfügt über einige integrierte Aktionen, mit denen IT-Administratoren unterschiedliche Aufgaben lokal auf dem Gerät oder auch remote über Intune im Azure-Portal ausführen können. Für private Geräte, die in Intune registriert sind, können die Benutzer über das Intune-Unternehmensportal einen Remotebefehl erteilen.
