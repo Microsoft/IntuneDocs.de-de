@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aecbcd91eef668ba2a92acfc9b42e6c68df3672a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 34a4c8adeef7e8b28c90ad38579f0f9ac7c4784d
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509440"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057524"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Aktivieren des Modus für verlorene Geräte auf iOS-Geräten mit Intune
 
@@ -43,8 +43,10 @@ Dieses Feature wird für die folgenden Betriebssysteme nicht unterstützt:
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 3. Klicken Sie auf **Geräte** und dann auf **Alle Geräte**.
-4. Wählen Sie aus der Liste der von Ihnen verwalteten Geräten ein iOS-Gerät aus, und klicken Sie auf **...Weitere**. Wählen Sie dann die Remotegeräteaktion **Modus für verlorene Geräte** aus.
-5. Aktivieren Sie dieses Feature unter **Modus für verlorene Geräte**. Geben Sie dann eine Meldung und eine Kontakttelefonnummer ein, die angezeigt werden sollen.
+4. Wählen Sie aus der Liste der von Ihnen verwalteten Geräte ein iOS-Gerät aus, und wählen Sie dann **Modus für verlorene Geräte (nur überwacht)** aus.
+5. Wählen Sie unter **Modus für verlorene Geräte** die Option **Aktivieren** aus.
+6. Geben Sie unter **Auf dem Sperrbildschirm anzuzeigende Meldung** eine Meldung ein, die auf dem Sperrbildschirm des Geräts angezeigt werden soll.
+7. Optional können Sie auch im Feld **Anzuzeigende Telefonnummer** eine Telefonnummer eingeben.
 6. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 Wenn Sie den Modus für verlorene Geräte aktivieren, wird jegliche Nutzung des Geräts blockiert. Der Benutzer kann erst wieder auf das Gerät zugreifen, wenn Sie den Modus für verlorene Geräte wieder deaktivieren. Verwenden Sie bei aktiviertem Modus für verlorene Geräte die Aktion [Gerät suchen](device-locate.md), um zu ermitteln, wo sich das Gerät befindet.

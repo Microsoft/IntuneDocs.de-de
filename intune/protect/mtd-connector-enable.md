@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e53f50c42e768eeb652a8602bea49c04d29364c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504428"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810291"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Aktivieren Sie den Mobile Threat Defense-Connector in Intune.
 
@@ -44,7 +44,7 @@ Klassische bedingte Zugriffsrichtlinien für MTD-Apps:
 Wenn Sie klassische Richtlinien für den bedingten Zugriff in [Azure](https://portal.azure.com/#home) anzeigen möchten, wechseln Sie zu **Azure Active Directory** > **Bedingter Zugriff** > **Klassische Richtlinien**.
 
 
-## <a name="to-enable-the-mtd-connector"></a>So aktivieren Sie den MTD-Connector
+## <a name="to-enable-the-mobile-threat-defense-connector"></a>So aktivieren Sie den Mobile Threat Defense-Connector
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
 
@@ -58,20 +58,23 @@ Wenn Sie klassische Richtlinien für den bedingten Zugriff in [Azure](https://po
 
 7. Aktivieren Sie die Umschaltoptionen entsprechend den Anforderungen Ihrer Organisation. Die angezeigten Umschaltoptionen variieren je nach MTD-Partner.
 
-## <a name="mtd-toggle-options"></a>MTD-Umschaltoptionen
+## <a name="mobile-threat-defense-toggle-options"></a>Umschaltoptionen von Mobile Threat Defense
 
-Sie können entscheiden, welche MTD-Optionen Sie aktivieren müssen, um die Anforderungen Ihrer Organisation zu erfüllen. Nachfolgend finden Sie weitere Details:
+Sie können entsprechend den Anforderungen Ihrer Organisation entscheiden, welche Umschaltoptionen von Mobile Threat Defense Sie aktivieren müssen. Nachfolgend finden Sie weitere Details:
 
-- **Herstellen einer Verbindung zwischen Android-Geräten ab Version 4.1 mit [MTD-Partnername] for Work MTD:** Wenn Sie diese Option aktivieren, können Geräte unter Android 4.1 und höher Sicherheitsrisiken an Intune melden.
-  - **Als nicht konform markieren, wenn keine Daten empfangen werden:** Wenn Intune keine Daten über ein Gerät auf dieser Plattform vom MTD-Partner empfängt, wird das Gerät als nicht konform betrachtet.
-<br></br>
-- **Herstellen einer Verbindung zwischen iOS-Geräten ab Version 8.0 mit [MTD-Partnername] for Work MTD:** Wenn Sie diese Option aktivieren, können Geräte unter iOS 8.0 und höher Sicherheitsrisiken an Intune melden.
-  - **Als nicht konform markieren, wenn keine Daten empfangen werden:** Wenn Intune keine Daten über ein Gerät auf dieser Plattform vom MTD-Partner empfängt, wird das Gerät als nicht konform betrachtet.
-<br></br>
+**Einstellungen für die MDM-Konformitätsrichtlinie**
+- **Verbinden von Android-Geräten der Version  4.1 und höher mit *\<MTD-Partnername>***: Wenn Sie diese Option aktivieren, können Geräte unter Android 4.1 und höher Sicherheitsrisiken an Intune melden.
+- **Verbinden von iOS-Geräten der Version 8.0 und höher mit *\<MTD-Partnername>***: Wenn Sie diese Option aktivieren, können Geräte unter iOS 8.0 und höher Sicherheitsrisiken an Intune melden.
 - **Aktivieren der App-Synchronisierung für iOS-Geräte:** Ermöglicht diesem Mobile Threat Defense-Partner, Metadaten zur Bedrohungsanalyse von iOS-Anwendungen aus Intune anzufordern.
-
 - **Nicht unterstützte Betriebssystemversionen blockieren:** Blockieren, wenn auf dem Gerät eine frühere Betriebssystem ausgeführt wird, als die minimal unterstützte Version.
 
+**Einstellungen für die App-Schutzrichtlinie**
+- **Verbinden von Android-Geräten der Version 4.1 und höher mit *\<MTD-Partnername>* zur Auswertung von App-Schutzrichtlinien**: Wenn Sie diese Option aktivieren, werten App-Schutzrichtlinien mit der Regel „Gerätebedrohungsstufe“ Geräte aus, die Daten von diesem Connector enthalten.
+- **Verbinden von iOS-Geräten der Version 8.0 und höher mit *\<MTD-Partnername>* zur Auswertung von App-Schutzrichtlinien**: Wenn Sie diese Option aktivieren, werten App-Schutzrichtlinien mit der Regel „Gerätebedrohungsstufe“ Geräte aus, die Daten von diesem Connector enthalten.
+
+Weitere Informationen zur Verwendung von Mobile Threat Defense-Connectors für die Auswertung von Intune-App-Schutzrichtlinien finden Sie unter [Aktivieren des Mobile Threat Defense-Connector in Intune für nicht registrierte Geräte](~/protect/mtd-enable-unenrolled-devices.md).
+
+**Allgemeine Einstellungen**
 - **Anzahl von Tagen, bis Partner als nicht reaktionsfähig gilt:** Anzahl von Tagen mit Inaktivität, bevor Intune den Partner als nicht reaktionsfähig betrachtet, da die Verbindung unterbrochen wurde. Intune ignoriert den Kompatibilitätszustand für nicht reaktionsfähige MTD-Partner.
 
 > [!IMPORTANT] 

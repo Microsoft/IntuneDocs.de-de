@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1a1c03dc480ad66de22b4a5ee44a9b8c221980c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: edc884850b70ff7621224c5b01a68d016f27504e
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503386"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923389"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Einrichten der Intune-Registrierung für dedizierte Android Enterprise-Geräte
 
@@ -78,7 +78,7 @@ Sie können Apps und Richtlinien auf zugewiesene oder dynamische Gerätegruppen 
 4. Füllen Sie die Felder auf dem Blatt **Dynamische Mitgliedschaftsregeln** wie folgt aus:
     - **Regel für dynamische Mitgliedschaft hinzufügen**: Einfache Regel
     - **Geräte hinzufügen, wobei:** enrollmentProfileName
-    - Klicken Sie im mittleren Feld auf **Übereinstimmung**.
+    - Klicken Sie im mittleren Feld auf **Ist gleich**.
     - Geben Sie im letzten Feld den Namen des Registrierungsprofils ein, das Sie zuvor erstellt haben.
     Weitere Informationen über Regeln für die dynamische Mitgliedschaft finden Sie unter [Regeln für eine dynamische Mitgliedschaft für Gruppen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership). 
 5. Klicken Sie auf **Abfrage hinzufügen** > **Erstellen**.

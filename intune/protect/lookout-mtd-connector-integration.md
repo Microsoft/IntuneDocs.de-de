@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b61281b0e82bcb839efdc31726d398eea08c364f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502189"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810222"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>Einrichten der Lookout Mobile Endpoint Security-Integration in Intune
 In einer Umgebung, die die [Voraussetzungen](lookout-mobile-threat-defense-connector.md#prerequisites) erfüllt, können Sie Lookout Mobile Endpoint Security in Intune integrieren. Die Informationen in diesem Artikel helfen Ihnen dabei, die Integration einzurichten und wichtige Einstellungen in Lookout für die Verwendung mit Intune zu konfigurieren.  
@@ -69,6 +69,9 @@ Um die Integration des Lookout Mobile Endpoint Security-Abonnements in Intune zu
    Nachdem Sie diese Informationen zusammengestellt haben, wenden Sie sich an den Lookout-Support (E-Mail-Adresse: enterprisesupport@lookout.com). Der Lookout-Support arbeitet mit Ihrem primären Kontakt zusammen, um Ihr Abonnement mithilfe der von Ihnen bereitgestellten Informationen einzubinden und Ihr Lookout Enterprise-Konto zu erstellen.  
 
 ## <a name="configure-your-lookout-subscription"></a>Konfigurieren Ihres Lookout-Abonnements  
+
+Die folgenden Schritte müssen in der Lookout Enterprise-Administratorkonsole ausgeführt werden und ermöglichen das Herstellen einer Verbindung mit dem Lookout-Dienst für in Intune registrierte Geräte (per Gerätekonformität) **und** für nicht registrierte Geräte (per App-Schutzrichtlinien).
+
 Nachdem der Lookout-Support Ihr Lookout Enterprise-Konto erstellt hat, sendet Lookout eine E-Mail an den primären Kontakt Ihres Unternehmens, die einen Link zur Anmelde-URL enthält: https://aad.lookout.com/les?action=consent. 
 
 ### <a name="initial-sign-in"></a>Erste Anmeldung  
@@ -110,20 +113,7 @@ Beim folgenden Verfahren wird davon ausgegangen, dass Sie bereits eine Benutzerg
 6. Klicken Sie auf **Create Connector** (Connector erstellen), um die Konfiguration des Connectors abzuschließen. Wenn Sie mit den Ergebnissen zufrieden sind, können Sie die Registrierung später auf weitere Benutzergruppen ausdehnen.
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>Konfigurieren von Intune zur Verwendung von Lookout als Mobile Threat Defense-Anbieter
-Nach dem Konfigurieren von Lookout MES müssen Sie eine Verbindung zu Lookout in Intune einrichten.  
-
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-
-2. Wechseln Sie zu **Gerätekonformität** > **Mobile Threat Defense**, und klicken Sie auf **Hinzufügen**.
-
-3. Wählen Sie im Bereich *Connector hinzufügen* die Option **Lookout for Work** aus der Dropdownliste aus.  
-
-4. Wählen Sie **Erstellen** aus. Nachdem der Connector die Verbindung mit Lookout MES hergestellt hat, wird die Option *Connectoreinstellungen* verfügbar.
-
-5. Legen Sie **App-Synchronisierung für iOS-Geräte aktivieren** auf **Ein** fest. 
-
-6. Klicken Sie auf **Speichern**, um die Konfiguration abzuschließen.  Intune und Lookout MES sind jetzt integriert und einsatzbereit.
-
+Nach dem Konfigurieren von Lookout MES müssen Sie eine Verbindung zu [Lookout in Intune](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable) einrichten.  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>Zusätzliche Einstellungen in der Lookout MES-Konsole
 Im Folgenden finden Sie einige zusätzliche Einstellungen, die Sie in der Lookout MES-Konsole konfigurieren können.  
@@ -146,8 +136,6 @@ Um bei Bedrohungen Warnungen per E-Mail zu erhalten, melden Sie sich bei der [Lo
 
   ![Screenshot der Seite mit Voreinstellungen mit angezeigtem Benutzerkonto](./media/lookout-mtd-connector-integration/lookout-mtp-email-notifications.png)
 
-
-
 ## <a name="configure-threat-classifications"></a>Konfigurieren von Bedrohungsklassifizierungen  
 Lookout Mobile Endpoint Security klassifiziert verschiedene Arten von Bedrohungen für mobile Geräte. Den Lookout-Bedrohungsklassifizierungen sind Standardrisikostufen zugeordnet. Diese Risikostufen können jederzeit entsprechend den Anforderungen Ihres Unternehmens geändert werden.
 
@@ -167,4 +155,5 @@ Details zur Bereitstellung der *Lookout for Work*-App auf einem Gerät finden Si
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-[Einrichten von Lookout-Apps](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Einrichten von Lookout-Apps für registrierte Geräte](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [Einrichten von Lookout-Apps für nicht registrierte Geräte](~/protect/mtd-add-apps-unenrolled-devices.md)
