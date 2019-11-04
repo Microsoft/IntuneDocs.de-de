@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915719"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143040"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune
 
@@ -42,7 +42,7 @@ In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschri
   - **Automatisch zulassen:** Berechtigungen werden automatisch gewährt.
   - **Automatisch ablehnen:** Berechtigungen werden automatisch verweigert.
 - **Datums- und Uhrzeitänderungen**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer manuell Datum und Uhrzeit einstellen. **Nicht konfiguriert** ermöglicht Benutzern, Datum und Uhrzeit auf dem Gerät einzustellen.
-- **Änderung der Lautstärke:** Wenn Sie **Blockieren** festlegen, können Benutzer die Lautstärke des Geräts nicht ändern. **Nicht konfiguriert** ermöglicht die Verwendung der Lautstärkeeinstellungen am Gerät.
+- **Volumeänderungen**: durch **blockieren** wird verhindert, dass Benutzer das Volume des Geräts ändern, und das Master Volume wird ebenfalls als Mutes angezeigt. **Nicht konfiguriert** ermöglicht die Verwendung der Lautstärkeeinstellungen am Gerät.
 - **Auf Werkseinstellungen zurücksetzen**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer die Option zum Zurücksetzen auf Werkseinstellungen in den Einstellungen des Geräts verwenden. **Nicht konfiguriert** ermöglicht Benutzern, diese Einstellung auf dem Gerät zu verwenden.
 - **Abgesicherter Start:** Wenn Sie **Blockieren** festlegen, können Benutzer das Gerät nicht im abgesicherten Modus neustarten. **Nicht konfiguriert** ermöglicht Benutzern, das Gerät im abgesicherten Modus neu zu starten.
 - **Statusleiste**: Wählen Sie **Blockieren** aus, um den Zugriff auf die Statusleiste einschließlich Benachrichtigungen und Schnelleinstellungen zu verhindern. **Nicht konfiguriert** ermöglicht Benutzern den Zugriff auf die Statusleiste.

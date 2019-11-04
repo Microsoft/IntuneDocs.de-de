@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: a2675b1b601261e673923ab5e3ac41d0f3d83264
-ms.sourcegitcommit: 71b0cd7b81178e2f9e9f80830fa9a7985781628b
+ms.openlocfilehash: 0aa78ec17aba5deb0c914c3698676219f203b856
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73057317"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415070"
 ---
 Diese Hinweise enthalten wichtige Informationen, die Ihnen bei der Vorbereitung auf künftige Änderungen und Features im Zusammenhang mit Intune helfen können.
 
@@ -105,7 +105,7 @@ Unten finden Sie eine Liste der gängigen in Intune registrierten Geräte, auf d
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
 Umschließen Sie Ihre Apps mit dem neuesten Intune App SDK. Sie können auch die Startbedingungseinstellung „Minimale Betriebssystemversion erforderlich (nur Warnung)“ festlegen, um die Endbenutzer auf persönlichen Geräten aufzufordern, das Upgrade durchzuführen.
 
-### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Intune-Plan für die Änderung: Ende des Supports für Windows 7 <!-- 3042987 -->
+### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7---3042987---"></a>Intune-Plan für die Änderung: Ende des Supports für Windows 7<!-- 3042987 -->
 Wie wir im September 2018 in MC148476 sowie erneut im März 2019 in MC176794 angekündigt haben, endet der erweiterte Support für Windows 7 am 14. Januar 2020. Zu diesem Zeitpunkt stellt Intune die Unterstützung für Geräte unter Windows 7 ein, damit wir unsere Investitionen auf die Unterstützung neuerer Technologien und die Bereitstellung herausragender neuer Endbenutzerfunktionen fokussieren können. Nach diesem Datum sind technische Unterstützung und automatische Updates für den Schutz von Windows 7-PCs über Intune nicht mehr verfügbar. Microsoft empfiehlt dringend, vor Januar 2020 zu Windows 10 zu wechseln, um eine Situation zu vermeiden, in der Sie Service- oder Supportleistungen benötigen, die nicht mehr zur Verfügung stehen. [Hier](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet) erfahren Sie mehr über den Windows-Supportlebenszyklus.
 
 #### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?

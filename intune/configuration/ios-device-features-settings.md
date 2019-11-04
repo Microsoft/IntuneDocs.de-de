@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/28/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3baa1972593c5d836c49905b59e9a28932329fbe
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e3e0ea523d71ff036f1f23c9436c65e105328d8b
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506728"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057645"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>iOS- und iPadOS-Geräteeinstellungen zur Verwendung gängiger iOS-Features in Intune
 
@@ -266,7 +266,7 @@ Diese Funktion gilt für:
   - **Nur bestimmte Websites** (nur für den Safari-Webbrowser): Diese URLs werden zu den Lesezeichen des Safari-Browsers hinzugefügt. Benutzer dürfen **nur** diese Websites besuchen, der Zugriff auf andere Websites ist nicht möglich. Verwenden Sie diese Option nur, wenn Sie genau wissen, auf welche URLs Benutzer zugreifen können.
 
     - **URL**: Geben Sie die URL der Website ein, die Sie zulassen möchten. Geben Sie beispielsweise `https://www.contoso.com` ein.
-    - **Pfad als Lesezeichen**: Geben Sie den Pfad zum Speichern des Lesezeichens. Geben Sie beispielsweise `/Contoso/Business Apps` ein. Wenn Sie keinen Pfad angeben, wird das Lesezeichen zum Standardordner für Lesezeichen auf dem Gerät hinzugefügt.
+    - **Lesezeichen Pfad**: Apple hat diese Einstellung geändert. Alle Lesezeichen werden im Ordner **genehmigte Sites** angezeigt. Lesezeichen gelangen nicht in den von Ihnen eingegebenen Lesezeichen Pfad.
     - **Titel**: Geben Sie einen beschreibenden Titel für das Lesezeichen ein.
 
     Wenn Sie keine URLs eingeben, können Endbenutzer nur auf `microsoft.com`, `microsoft.net` und `apple.com` zugreifen. Diese URLs werden von Intune automatisch zugelassen.
@@ -280,7 +280,7 @@ Diese Funktion gilt für:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Einstellungen gelten für: alle Registrierungs Typen
 
-- **SSO-App-Erweiterungstyp**: Wählen Sie den Typ der Anmelde Informationen-SSO-App-Erweiterung. Wenn Sie das SSO-App-Erweiterungs Profil speichern, können Sie den SSO-App-Erweiterungstyp nicht ändern. Folgende Optionen sind verfügbar:
+- **SSO-App-Erweiterungstyp**: Wählen Sie den Typ der Anmelde Informationen-SSO-App-Erweiterung. Folgende Optionen sind verfügbar:
 
   - **Nicht konfiguriert**: App-Erweiterungen werden nicht verwendet. Um eine APP-Erweiterung zu deaktivieren, können Sie den SSO-App-Erweiterungstyp von **Kerberos** oder **Credential** auf **nicht konfiguriert**umstellen.
   - **Anmelde Informationen**: Verwenden Sie eine generische, anpassbare App-Erweiterung für Anmelde Informationen, um SSO auszuführen. Stellen Sie sicher, dass Sie die Erweiterungs-ID für die SSO-App-Erweiterung Ihrer Organisation kennen.

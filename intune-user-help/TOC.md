@@ -64,8 +64,14 @@
 ## [Verwenden Ihres iOS-Geräts](using-your-iOS-device-with-intune.md)
 ### [Auswirkungen der iOS-Gerätezurücksetzung](effects-of-device-reset-company-portal-ios.md)
 ### [Installieren und Anmelden beim Unternehmensportal](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
-### [Registrieren Ihres iOS-Geräts](enroll-your-device-in-intune-ios.md)
-### [Registrieren eines von Ihrer Organisation bereitgestellten iOS-Geräts](enroll-your-device-dep-ios.md)
+### Registrieren Sie Ihr Gerät
+#### [Registrieren Ihres iOS-Geräts](enroll-your-device-in-intune-ios.md)
+#### [Registrieren eines von der Organisation bereitgestellten iOS-Geräts](enroll-your-device-dep-ios.md)
+#### Registrieren mit abgeleiteten Anmeldeinformationen
+##### [Registrieren mit Entrust Datacard](enroll-ios-device-entrust-datacard.md)
+##### [Registrieren mit Intercede](enroll-ios-device-intercede.md)
+##### [Registrieren mit DISA Purebred](enroll-ios-device-disa-purebred.md)
+
 
 ### [Verwenden verwalteter Apps auf Ihrem Gerät](use-managed-apps-on-your-device-ios.md)
 ### [Festlegen oder Ändern der Kennung](set-or-change-your-passcode-ios.md)

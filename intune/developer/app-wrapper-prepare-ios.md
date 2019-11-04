@@ -17,24 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b42642ec593112b0b247cd85b9230f68d6a803b8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490970"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413872"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Vorbereiten von iOS-Apps für App-Schutzrichtlinien mit dem Intune App Wrapping Tool
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Verwenden Sie das Microsoft Intune App Wrapping Tool für iOS zum Aktivieren von Intune-App-Schutzrichtlinien für interne iOS-Apps, ohne den Code der App selbst zu ändern.
 
 Das Tool ist eine macOS-Befehlszeilenanwendung, die einen Wrapper um eine App erstellt. Sobald eine App verarbeitet wurde, können Sie die App-Funktionen ändern, indem Sie [App-Schutzrichtlinien](../apps/app-protection-policies.md) für diese bereitstellen.
 
 Das Tools können Sie unter [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) in GitHub herunterladen.
-
-
 
 ## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>Allgemeine Voraussetzungen für das App Wrapping Tool
 
@@ -74,6 +70,7 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 * Bereitstellungsprofil für die interne Verteilung.
 
 ### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>Schritte zum Erstellen eines Apple Developer Enterprise-Kontos
+
 1. Wechseln Sie zur Website [Apple Developer Enterprise Program](https://developer.apple.com/programs/enterprise/).
 
 2. Klicken Sie links oben auf **Enroll**.
@@ -86,11 +83,11 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 
 6. Füllen Sie das Formular mit den Informationen Ihrer Organisation aus. Klicken Sie auf **Continue**(Weiter). An dieser Stelle kontaktiert Apple Sie, um zu prüfen, ob Sie zum Registrieren Ihrer Organisation berechtigt sind.
 
-8. Klicken Sie nach der Bestätigung auf **Agree to License**.
+7. Klicken Sie nach der Bestätigung auf **Agree to License**.
 
-9. Beenden Sie nach Zustimmen zu den Lizenzbedingungen den Vorgang durch **Erwerben und Aktivieren des Programms**.
+8. Beenden Sie nach Zustimmen zu den Lizenzbedingungen den Vorgang durch **Erwerben und Aktivieren des Programms**.
 
-10. Wenn Sie sind der Team-Agent (die Person, die im Auftrag Ihres Unternehmens am Apple Developer Enterprise Program teilnimmt) sind, erstellen Sie zunächst Ihr Team, indem Sie Teammitglieder einladen und Rollen zuweisen. Informationen zum Verwalten Ihres Teams finden Sie in der Apple-Dokumentation unter [Managing Your Developer Account Team](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1).
+9. Wenn Sie sind der Team-Agent (die Person, die im Auftrag Ihres Unternehmens am Apple Developer Enterprise Program teilnimmt) sind, erstellen Sie zunächst Ihr Team, indem Sie Teammitglieder einladen und Rollen zuweisen. Informationen zum Verwalten Ihres Teams finden Sie in der Apple-Dokumentation unter [Managing Your Developer Account Team](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1).
 
 ### <a name="steps-to-create-an-apple-signing-certificate"></a>Schritte zum Erstellen eines Apple-Signaturzertifikats
 
@@ -145,8 +142,6 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 
     ![iPhone-Informationen: Fingerabdruck-SHA-1-Zeichenfolge](./media/app-wrapper-prepare-ios/iOS-signing-cert-9.png)
 
-
-
 ### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>Schritte zum Erstellen eines Bereitstellungsprofils für die interne Verteilung
 
 1. Wechseln Sie zurück zum [Apple Developer-Kontoportal](https://developer.apple.com/account/), und **melden Sie sich** mit der Apple ID Ihrer Organisation an.
@@ -164,8 +159,6 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 6. Befolgen Sie die Anweisungen zum Herunterladen Ihres Profils (mit der Erweiterung „.mobileprovision“) auf Ihren macOS-Computer.
 
 7. Speichern Sie die Datei an einem einprägsamen Speicherort. Diese Datei wird mit im App Wrapping Tool für den Parameter „-p“ verwendet.
-
-
 
 ## <a name="download-the-app-wrapping-tool"></a>Herunterladen des App Wrapping Tools
 
@@ -195,6 +188,7 @@ Sie benötigen Folgendes zum Verteilen von Apps, die von Intune mit einem Wrappe
 ```
 
 ### <a name="command-line-parameters"></a>Befehlszeilenparameter
+
 Sie können die folgenden Befehlszeilenparameter mit dem App Wrapping Tool verwenden:
 
 |Eigenschaft|Verwendung|
@@ -216,6 +210,7 @@ Sie können die folgenden Befehlszeilenparameter mit dem App Wrapping Tool verwe
 |**-f**|(Optional) `<Path to a plist file specifying arguments.>` Verwenden Sie dieses Flag vor der [PLIST](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html)-Datei, wenn Sie die PLIST-Vorlage verwenden, um die restlichen IntuneMAMPackager-Eigenschaften wie „-i“, „-o“ und „-p“ anzugeben. Informationen finden Sie unter „Verwenden einer PLIST-Datei für die Eingabe von Argumenten“. |
 
 ### <a name="use-a-plist-to-input-arguments"></a>Verwenden einer PLIST-Datei für die Eingabe von Argumenten
+
 Eine einfache Möglichkeit, das App Wrapping Tool auszuführen, besteht darin, alle Befehlsargumente in einer [PLIST](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html)-Datei zu platzieren. PLIST ist ein Dateiformat, das XML ähnelt und das für die Eingabe von Befehlszeilenargumenten mithilfe einer Formularschnittstelle verwenden werden kann.
 
 Öffnen Sie im Ordner „IntuneMAMPackager/Contents/MacOS“ `Parameters.plist` (eine leere PLIST-Vorlage) mit einem Text-Editor oder Xcode. Geben Sie Ihre Argumente für die folgenden Schlüssel:
@@ -236,7 +231,6 @@ Eine einfache Möglichkeit, das App Wrapping Tool auszuführen, besteht darin, a
 | Einbinden des Citrix xenmobile App SDK (nur Netzwerk Variant)|Boolesch|false| Identisch mit-Citrix|
 | Extension Provisioning Profile Paths |Array von Zeichenfolgen|empty| Profile für die Erweiterungsbereitstellung für Apps
 
-
 Führen Sie IntuneMAMPackager mit „plist“ als einziges Argument aus:
 
 ```bash
@@ -255,19 +249,24 @@ Die per Wrapping umschlossene Anwendung wird im Ausgabeordner gespeichert, den S
 Sie können die App jetzt für Ihre Benutzergruppen bereitstellen und der App Richtlinien zum App-Schutz zuweisen. Die App wird auf dem Gerät mit den von Ihnen angegebenen App-Schutzrichtlinien ausgeführt.
 
 ## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>Wie häufig sollten iOS-Anwendungen mithilfe des App Wrapping Tools von Intune erneut umschlossen werden?
+
 In den folgenden Hauptszenarios besteht die Notwendigkeit, Anwendungen erneut zu umschließen:
+
 * Die Anwendung hat eine neue Version veröffentlicht. Die Vorgängerversion der App wurde umschlossen und in die Intune-Konsole hochgeladen.
 * Das App Wrapping Tool von Intune für iOS hat eine neue Version veröffentlicht, mit der wichtige Fehler behoben oder neue Intune-spezifische Richtlinienfeatures zum Schutz von Anwendungen eingeführt werden. Dies geschieht nach sechs bis acht Wochen über das GitHub-Repository für das [App Wrapping Tool von Microsoft Intune für iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
 
 Für iOS ist es zwar möglich, Umschließungsvorgänge mit anderen Zertifizierungs- bzw. Bereitstellungsprofilen als dem ursprünglich zum Signieren der App verwendete Profil durchzuführen, allerdings schlagen die Vorgänge fehl, wenn die in der App angegebenen Berechtigungen nicht in dem neuen Bereitstellungsprofil enthalten sind. Wenn Sie die Befehlszeilenoption „-e“ verwenden, über die fehlende Berechtigungen aus der App entfernt werden, um zu erzwingen, dass der Umschließungsvorgang in diesem Szenario nicht fehlschlägt, können die Funktionen in der App eingeschränkt sein.
 
 Im Folgenden werden bewährte Methoden für das erneute Umschließen aufgeführt:
+
 * Gewährleisten, dass ein anderes Bereitstellungsprofil über dieselben erforderlichen Berechtigungen verfügt wie die Vorgängerversion des Bereitstellungsprofils. 
 
 ## <a name="error-messages-and-log-files"></a>Fehlermeldungen und Protokolldateien
+
 Verwenden Sie die folgende Informationen, um Problemen mit dem App Wrapping Tool zu behandeln.
 
 ### <a name="error-messages"></a>Fehlermeldungen
+
 Wenn das App Wrapping Tool nicht erfolgreich abgeschlossen wurde, wird eine der folgenden Fehlermeldungen in der Konsole angezeigt:
 
 |Fehlermeldung|Weitere Informationen|
@@ -291,6 +290,7 @@ Wenn das App Wrapping Tool nicht erfolgreich abgeschlossen wurde, wird eine der 
 |WARNUNG: Sie haben kein SHA1-Zertifikathash angegeben. Stellen Sie sicher, dass die umschlossene Anwendung vor der Bereitstellung signiert wird.|Stellen Sie sicher, dass Sie ein gültiges SHA1-Hash gefolgt vom Befehlszeilenflag „–c“ angeben. |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>Protokolldateien für das App Wrapping Tool
+
 Apps, die mit dem App Wrapping Tool umschlossen wurden, generieren Protokolle, die in die iOS-Clientgerätekonsole geschrieben werden. Diese Informationen sind hilfreich, wenn Sie Probleme mit der Anwendung haben und ermitteln möchten, ob das Problem mit dem App Wrapping Tool zusammenhängt. Führen Sie die folgenden Schritte aus, um die Informationen abzurufen:
 
 1. Reproduzieren Sie das Problem durch Ausführen der App.
@@ -310,7 +310,6 @@ Apps, die mit dem App Wrapping Tool umschlossen wurden, generieren Protokolle, d
 
     Umschlossene Apps geben auch Benutzern die Möglichkeit, die Protokolle direkt vom Gerät per E-Mail zu versenden, falls die App abstürzt. Benutzer können Ihnen das Protokoll zusenden, damit Sie es überprüfen und ggf. an Microsoft weiterleiten.
 
-
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>Anforderungen an Zertifikat, Bereitstellungsprofil und Authentifizierung
 
 Damit eine vollständige Funktionalität gewährleistet werden kann, müssen die Voraussetzungen für das App Wrapping Tool für iOS erfüllt sein.
@@ -321,8 +320,8 @@ Damit eine vollständige Funktionalität gewährleistet werden kann, müssen die
 |iOS-Signaturzertifikat|Stellen Sie sicher, dass das Signaturzertifikat gültig ist, bevor Sie es angeben. Das App Wrapping Tool überprüft bei der Verarbeitung einer iOS-App nicht, ob das Zertifikat abgelaufen ist. Wenn ein Hash für ein abgelaufenes Zertifikat bereitgestellt wird, kann das Tool die App verarbeiten und signieren, jedoch die Installation auf Geräten schlägt fehl.<br /><br />Stellen Sie sicher, dass das für die Signierung der umschlossenen App bereitgestellte Zertifikat im Bereitstellungsprofil enthalten ist. Das Tool überprüft nicht, ob das Bereitstellungsprofil über eine Übereinstimmung für das Zertifikat zum Signieren der umschlossenen Anwendung verfügt.|
 |Authentifizierung|Ein Gerät muss eine PIN haben, damit die Verschlüsselung funktioniert. Auf Geräten, auf denen Sie eine umschlossene App bereitgestellt haben, muss sich der Benutzer beim Berühren der Statusleiste auf dem Gerät erneut mit einem Geschäfts-, Schul- oder Unikonto anmelden. Die Standardrichtlinie in einer umschlossenen Anwendung lautet *authentication on re-launch* (Authentifizierung bei Neustart). iOS verarbeitet externe Benachrichtigungen (wie einen Anruf), indem die App beendet und erneut gestartet wird.
 
-
 ## <a name="setting-app-entitlements"></a>Festlegen von App-Berechtigungen
+
 Vor dem Umschließen Ihrer App können Sie *Berechtigungen* erteilen, um der App zusätzliche Berechtigungen und Funktionen zu gewähren, die über das hinaus gehen, was einer App typischerweise gestattet ist. Eine *Berechtigungsdatei* wird während der Codesignatur verwendet, um spezielle Berechtigungen innerhalb Ihrer App anzugeben (z. B. Zugriff auf einen freigegebenen Schlüsselbund). Bestimmte App-Dienste (*Funktionen*) werden während der App-Entwicklung innerhalb von Xcode aktiviert. Nach ihrer Aktivierung werden die Funktionen in Ihrer Berechtigungsdatei wiedergegeben. Weitere Informationen zu Berechtigungen und Funktionen finden Sie unter [Hinzufügen von Funktionen](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in der iOS-Entwicklerbibliothek. Eine vollständige Liste der unterstützten Funktionen finden Sie unter [Unterstützte Funktionen](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html).
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>Unterstützte Funktionen für das App Wrapping Tool für iOS
@@ -363,6 +362,7 @@ Vor dem Umschließen Ihrer App können Sie *Berechtigungen* erteilen, um der App
 3. Stellen Sie sicher, dass Sie alle Voraussetzungen erfüllt haben, und umschließen Sie dann die App.
 
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>Behandlung häufiger Fehler mit Berechtigungen
+
 Wenn das App Wrapping Tool für iOS einen Berechtigungsfehler anzeigt, probieren Sie die folgenden Problembehandlungsschritte.
 
 |Problem|Ursache|Lösung|
@@ -371,6 +371,7 @@ Wenn das App Wrapping Tool für iOS einen Berechtigungsfehler anzeigt, probieren
 |Berechtigungen fehlen im Bereitstellungsprofil (fehlende Berechtigungen sind aufgeführt). Packen Sie die App neu mit einem Bereitstellungsprofil, das diese Berechtigungen enthält.|Zwischen den im Bereitstellungsprofil aktivierten Berechtigungen und den in der App aktivierten Funktionen besteht ein Konflikt . Dieser Konflikt gilt auch für die IDs, die bestimmten Funktionen (wie App-Gruppen und Schlüsselbundzugriff) zugeordnet sind.|Im Allgemeinen können Sie ein neues Bereitstellungsprofil erstellen, das dieselben Funktionen wie die App aktiviert. Wenn die IDs zwischen dem Profil und der App nicht übereinstimmen, ersetzt das App Wrapping Tool die IDs, wenn es dazu in der Lage ist. Wenn der Fehler auch nach dem Erstellen eines neuen Bereitstellungsprofils auftritt, können Sie versuchen, das Problem zu beseitigen, indem Sie Berechtigungen mithilfe des Parameters „–e“ aus der App entfernen. (Informationen hierzu finden Sie im Abschnitt „Verwenden des Parameters „–e“ zum Entfernen von Berechtigungen aus einer App“).|
 
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>Ermitteln vorhandener Berechtigungen einer signierten App
+
 So überprüfen Sie die vorhandenen Berechtigungen einer signierten App und eines Bereitstellungsprofils:
 
 1. Suchen Sie die IPA-Datei, und ändern Sie ihre Erweiterung in ZIP.
@@ -390,6 +391,7 @@ So überprüfen Sie die vorhandenen Berechtigungen einer signierten App und eine
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>Entfernen von Berechtigungen aus einer App mit dem Parameter „–e“
+
 Dieser Befehl entfernt alle aktivierten Funktionen in der App, die nicht in der Berechtigungsdatei enthalten sind. Wenn Sie Funktionen entfernen, die von der App verwendet werden, kann dies zu einer Beschädigung der App führen. Fehlende Funktionen können beispielsweise dann entfernt werden, wenn eine Drittanbieter-App standardmäßig über alle Funktionen verfügt.
 
 ```bash
@@ -397,6 +399,7 @@ Dieser Befehl entfernt alle aktivierten Funktionen in der App, die nicht in der 
 ```
 
 ## <a name="security-and-privacy-for-the-app-wrapping-tool"></a>Sicherheit und Datenschutz für das App Wrapping Tool
+
 Verwenden Sie die folgenden bewährten Methoden zu Sicherheit und Datenschutz, wenn Sie das App Wrapping Tool verwenden.
 
 - Das von Ihnen angegebene Signaturzertifikat, das Bereitstellungsprofil und die Branchen-App müssen sich auf demselben macOS-Computer befinden, den Sie für die Ausführung des App Wrapping Tools verwenden. Wenn sich die Dateien in einem UNC-Pfad befinden, stellen Sie sicher, dass mit dem macOS-Computer darauf zugegriffen werden kann. Der Pfad muss über IPsec oder SMB-Signaturen geschützt werden.
@@ -414,6 +417,7 @@ Verwenden Sie die folgenden bewährten Methoden zu Sicherheit und Datenschutz, w
 - Wenn Sie den Dokumentordner auf Ihrem Gerät über eine umschlossenen App überwachen, sehen Sie möglicherweise einen Ordner namens „.msftintuneapplauncher“. Wenn Sie diese Datei ändern oder löschen, beeinträchtigt dies möglicherweise die ordnungsgemäße Funktionsweise der eingeschränkten Apps.
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>„Intune App Wrapping Tool für iOS“mit Citrix MDX mVPN
+
 Dieses Feature ist eine Integration in den Citrix MDX App Wrapper für iOS. Die Integration ist einfach ein zusätzliches, optionales Befehlszeilenflag, `-citrix`, zu den allgemeinen Intune App Wrapping Tools.
 
 ### <a name="requirements"></a>Anforderungen
@@ -424,6 +428,7 @@ Um das `-citrix`-Flag verwenden zu können, müssen Sie auch den [Citrix MDX App
 > Der Support für die Integration von Intune und Citrix ist auf nur iOS 10+-Geräte beschränkt.
 
 ### <a name="use-the--citrix-flag"></a>Verwenden des `-citrix`-Flags
+
 Führen Sie einfach Ihren allgemeinen App-Umschließungsbefehl mit angefügtem `-citrix`-Flag aus. Für das `-citrix`-Flag können derzeit keine Argumente eingegeben werden.
 
 **Nutzungsformat**:
@@ -439,6 +444,7 @@ Führen Sie einfach Ihren allgemeinen App-Umschließungsbefehl mit angefügtem `
 ```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>Abrufen von Protokollen für umschlossene Anwendungen
+
 Führen Sie die folgenden Schritte durch, um bei der Problembehandlung Protokolle für umschlossene Anwendungen zu erhalten.
 
 1. Navigieren Sie auf Ihrem Gerät zur App mit den iOS-Einstellungen, und wählen Sie Ihre branchenspezifische App aus.

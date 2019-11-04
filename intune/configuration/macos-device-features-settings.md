@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
-ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
+ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776888"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143161"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>macOS-Gerätefunktionseinstellungen in Intune
 
@@ -129,7 +129,7 @@ Diese Funktion gilt für:
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>Einstellungen gelten für: alle Registrierungs Typen 
 
-- **SSO-App-Erweiterungstyp**: Wählen Sie den Typ der Anmelde Informationen-SSO-App-Erweiterung. Wenn Sie das SSO-App-Erweiterungs Profil speichern, können Sie den SSO-App-Erweiterungstyp nicht ändern. Folgende Optionen sind verfügbar:
+- **SSO-App-Erweiterungstyp**: Wählen Sie den Typ der Anmelde Informationen-SSO-App-Erweiterung. Folgende Optionen sind verfügbar:
 
   - **Nicht konfiguriert**: App-Erweiterungen werden nicht verwendet. Um eine SSO-App-Erweiterung zu deaktivieren, ändern Sie den SSO-App-Erweiterungstyp von **Kerberos** oder **Credential** in **nicht konfiguriert**.
   - **Anmelde Informationen**: Verwenden Sie eine generische, anpassbare App-Erweiterung für Anmelde Informationen, um SSO zu verwenden. Stellen Sie sicher, dass Sie die Erweiterungs-ID und Team-ID für die SSO-App-Erweiterung Ihrer Organisation kennen.  
@@ -143,7 +143,7 @@ Diese Funktion gilt für:
 
   [Suchen Sie nach Ihrer Team-ID](https://help.apple.com/developer-account/#/dev55c3c710c) (öffnet die Website von Apple), die weitere Informationen enthält.
 
-- **Bereich**: Geben Sie den Namen des Kerberos-Bereichs ein. Der Bereichs Name sollte groß geschrieben werden, z. b. `CONTOSO.COM`. In der Regel ist Ihr Bereichs Name mit dem DNS-Domänen Namen identisch, aber in Großbuchstaben.
+- **Bereich**: Geben Sie den Namen Ihres Authentifizierungs Bereichs ein. Der Bereichs Name sollte groß geschrieben werden, z. b. `CONTOSO.COM`. In der Regel ist Ihr Bereichs Name mit dem DNS-Domänen Namen identisch, aber in Großbuchstaben.
 - **Domänen**: Geben Sie die Domänen-oder Hostnamen der Standorte ein, die über SSO authentifiziert werden können. Wenn Ihre Website beispielsweise `mysite.contoso.com` ist, ist `mysite` der Hostname, und `contoso.com` ist der Domänen Name. Wenn Benutzer eine Verbindung mit einer dieser Websites herstellen, wird die Authentifizierungs Aufforderung von der APP-Erweiterung behandelt. Diese Authentifizierung ermöglicht es Benutzern, die Gesichts-ID, die Fingereingabe-ID oder Apple Pincode/Passcode für die Anmeldung zu verwenden.
 
   - Alle Domänen in der Single Sign-on App-Erweiterung InTune-Profile müssen eindeutig sein. Sie können eine Domäne in Anmelde-App-Erweiterungs Profilen nicht wiederholen, auch wenn Sie unterschiedliche Typen von SSO-App-Erweiterungen verwenden.
