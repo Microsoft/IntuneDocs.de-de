@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785518"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414688"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS- und iPadOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
@@ -167,7 +167,33 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
   IOS verfügt über integrierte Sicherheit, die sich auf diese Einstellung auswirken kann. Beispielsweise kann IOS das Auslösen der Richtlinie abhängig von der Anzahl der Anmeldefehler verzögern. Es kann auch in Erwägung gezogen werden, die gleiche Kennung wie ein Versuch einzugeben. Das [IOS-Sicherheitshandbuch](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) von Apple (öffnet die Website von Apple) ist eine gute Ressource und bietet spezifischere Informationen zu Kennungen.
   
 - **Maximaler Zeitraum der Bildschirmsperre (in Minuten) bis zur Anforderung eines Kennworts**<sup>1</sup>: Geben Sie an, wie lange das Gerät inaktiv bleibt, bevor der Benutzer sein Kennwort erneut eingeben muss. Wenn Sie einen längeren Zeitraum eingeben, als derzeit auf dem Gerät eingestellt ist, ignoriert das Gerät Ihre Eingabe. Wird auf Geräten ab iOS 8.0 unterstützt.
-- **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung**<sup>1</sup>: Geben Sie an, wie viele Minuten ein Gerät höchstens inaktiv sein darf, bevor es automatisch gesperrt wird. Wenn Sie einen längeren Zeitraum eingeben, als derzeit auf dem Gerät eingestellt ist, ignoriert das Gerät Ihre Eingabe. Bei **sofortiger**Festlegung wird der Bildschirm auf der Grundlage der minimalen Zeit des Geräts gesperrt. Auf dem iPhone ist es 30 Sekunden. Auf dem iPad ist es zwei Minuten.
+
+- **Maximaler Zeitraum der Inaktivität (in Minuten) bis zur Bildschirmsperrung**<sup>1</sup>: Geben Sie an, wie viele Minuten ein Gerät höchstens inaktiv sein darf, bevor es automatisch gesperrt wird.
+
+  **IOS-Optionen**:  
+
+  - **Nicht konfiguriert** (Standardeinstellung): InTune berührt diese Einstellung nicht.
+  - **Sofort**: Bildschirm sperren nach 30 Sekunden Inaktivität.
+  - **1**: Bildschirm sperren nach 1 Minute Inaktivität.
+  - **2**: Bildschirm sperren nach 2 Minuten Inaktivität.
+  - **3**: Bildschirm sperren nach drei Minuten Inaktivität.
+  - **4**: Bildschirm sperren nach 4 Minuten Inaktivität.
+  - **5**: Bildschirm sperren nach 5 Minuten Inaktivität.
+    
+  **ipados-Optionen**:  
+
+  - **Nicht konfiguriert** (Standardeinstellung): InTune berührt diese Einstellung nicht.
+  - **Sofort**: Bildschirm sperren nach 2 Minuten Inaktivität.
+  - **2**: Bildschirm sperren nach 2 Minuten Inaktivität.
+  - **5**: Bildschirm sperren nach 5 Minuten Inaktivität.
+  - **10**: Bildschirm sperren nach 10 Minuten Inaktivität.
+  - **15**: Bildschirm sperren nach 15 Minuten Inaktivität.
+
+  Wenn ein Wert nicht für IOS oder ipados gilt, verwendet Apple den nächstgelegenen *niedrigsten* Wert. Wenn Sie z. b. `4` Minuten eingeben, werden für ipados-Geräte `2` Minuten verwendet. Wenn Sie `10` Minuten eingeben, werden für IOS-Geräte `5` Minuten verwendet. Dies ist eine Apple-Einschränkung.
+  
+  > [!NOTE]
+  > Die Intune-Benutzeroberfläche für diese Einstellung trennt die unterstützten Werte für IOS und ipados nicht. Die Benutzeroberfläche wird in einer zukünftigen Version möglicherweise aktualisiert.
+
 - **Kennwortablauf (Tage)** : Geben Sie die Anzahl der Tage an, nach denen das Gerätekennwort geändert werden muss.
 - **Wiederverwendung vorheriger Kennwörter verhindern**: Geben Sie die Anzahl neuer Kennwörter ein, die verwendet werden müssen, bevor ein altes Kennwort wiederverwendet werden kann.
 - Entsperrung der Fingereingabe **-ID und der Gesichts Kennung**: Wählen Sie **Block** aus, um zu verhindern, dass das Gerät mithilfe eines Fingerabdrucks **Nicht konfiguriert** ermöglicht dem Benutzer das Entsperren des Geräts mittels dieser Methoden.
