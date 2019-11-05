@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c42e5ef50f8a5a8514bc43670fc743f42b1b2d6
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 1716da820fd0d9a4b6d1bbc5024440cfb141c5a1
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585825"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889552"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>Verwenden abgeleiteter Anmeldeinformationen in Microsoft Intune
 
@@ -64,7 +64,7 @@ Intune unterstützt pro Mandant einen einzelnen Zertifikataussteller für abgele
 - **Entrust Datacard**: https://www.entrustdatacard.com/
 - **Intercede**: https://www.intercede.com/
 
-Wichtige Details zur Verwendung der verschiedenen Zertifikataussteller finden Sie in der jeweiligen Anleitung für diesen Zertifikataussteller (einschließlich des Endbenutzerworkflows des Zertifikatausstellers). Weitere Informationen finden Sie in diesem Artikel im Abschnitt [Plan für abgeleitete Anmeldeinformationen](#plan-for-derived-credentials).
+Wichtige Details zur Verwendung der verschiedenen Zertifikataussteller finden Sie in der jeweiligen Anleitung für diesen Zertifikataussteller<!-- , including the issuers end-user workflow-->. Weitere Informationen finden Sie in diesem Artikel im Abschnitt [Plan für abgeleitete Anmeldeinformationen](#plan-for-derived-credentials).
 
 > [!IMPORTANT]  
 > Wenn Sie einen Zertifikataussteller für abgeleitete Anmeldeinformationen aus Ihrem Mandanten löschen, funktionieren die über diesen Zertifikataussteller eingerichteten abgeleiteten Anmeldeinformationen nicht mehr.  
@@ -101,11 +101,14 @@ Allgemeine Informationen:
 
 ### <a name="2-review-the-end-user-workflow-for-your-chosen-issuer"></a>2) Überprüfen des Endbenutzerworkflows für den ausgewählten Zertifikataussteller
 
-Im Folgenden finden Sie wichtige Überlegungen zu den einzelnen unterstützten Partnern sowie Links zu den Endbenutzerworkflows dieser Zertifikataussteller.  Machen Sie sich mit diesen Informationen vertraut, um sicherzustellen, dass Ihre Intune-Richtlinien und Konfigurationen keine Benutzer und Gerät blockieren und dadurch die Registrierung abgeleiteter Anmeldeinformationen von diesem Zertifikataussteller nicht erfolgreich abgeschlossen werden kann.
+Im Folgenden finden Sie wichtige Überlegungen zu jedem unterstützten Partner<!--  , and links to that issuers end-user workflow -->.  Machen Sie sich mit diesen Informationen vertraut, um sicherzustellen, dass Ihre Intune-Richtlinien und Konfigurationen keine Benutzer und Gerät blockieren und dadurch die Registrierung abgeleiteter Anmeldeinformationen von diesem Zertifikataussteller nicht erfolgreich abgeschlossen werden kann.
 
 #### <a name="disa-purebred"></a>DISA Purebred
 
-Überprüfen Sie den [Benutzerworkflow für DISA Purebred](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred). Zu den wichtigsten Anforderungen für diesen Workflow gehören folgende:  
+Lernen Sie den Endbenutzerworkflow und die wichtigsten Anforderungen kennen:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for DISA Purebred](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred). Key requirements for this workflow include:  
+-->
 
 - Benutzer benötigen Zugriff auf einen Computer oder KIOSK, auf dem Sie Ihre Smartcard zum Authentifizieren beim Zertifikataussteller verwenden können. 
 
@@ -120,8 +123,11 @@ Im Folgenden finden Sie wichtige Überlegungen zu den einzelnen unterstützten P
 Informationen zum Abrufen und Konfigurieren der DISA Purebred-App finden Sie später in diesem Artikel im Abschnitt [Bereitstellen der DISA Purebred-App](#deploy-the-disa-purebred-app).  
 
 #### <a name="entrust-datacard"></a>Entrust Datacard  
-Überprüfen Sie den [Benutzerworkflow für Entrust Datacard](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust). Zu den wichtigsten Anforderungen für diesen Workflow gehören folgende: 
 
+Lernen Sie den Endbenutzerworkflow und die wichtigsten Anforderungen kennen:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Entrust Datacard](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust). Key requirements for this workflow include: 
+--> 
 - Benutzer benötigen Zugriff auf einen Computer oder KIOSK, auf dem Sie Ihre Smartcard zum Authentifizieren beim Zertifikataussteller verwenden können. 
 
 - Auf Geräten, die für abgeleitete Anmeldeinformationen registriert werden, muss die Intune-Unternehmensportal-App installiert werden.
@@ -129,8 +135,11 @@ Informationen zum Abrufen und Konfigurieren der DISA Purebred-App finden Sie sp�
 - Es wird eine Gerätekamera zum Scannen eines QR-Codes verwendet, der die Authentifizierungsanforderung mit der Anforderung für abgeleitete Anmeldeinformationen vom mobilen Gerät verbindet.
 
 #### <a name="intercede"></a>Intercede
-Überprüfen Sie den [Benutzerworkflow für Intercede](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede). Zu den wichtigsten Anforderungen für diesen Workflow gehören folgende: 
 
+Lernen Sie den Endbenutzerworkflow und die wichtigsten Anforderungen kennen:  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Intercede](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede). Key requirements for this workflow include: 
+-->
 - Benutzer benötigen Zugriff auf einen Computer oder KIOSK, auf dem Sie Ihre Smartcard zum Authentifizieren beim Zertifikataussteller verwenden können. 
 
 - Auf Geräten, die für abgeleitete Anmeldeinformationen registriert werden, muss die Intune-Unternehmensportal-App installiert werden.

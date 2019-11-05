@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585007"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999539"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 
@@ -137,6 +137,10 @@ Intune unterstützt von Personal Identity Verification (PIV) und Common Access C
 
 Weitere Informationen zu abgeleiteten Anmeldeinformationen für iOS-Geräte finden Sie unter [Verwenden abgeleiteter Anmeldeinformationen in Microsoft Intune](~/protect/derived-credentials.md).
 
+## <a name="dark-mode-for-ios-company-portal"></a>Dunkler Modus für iOS-Unternehmensportal
+
+Der dunkle Modus ist für das iOS-Unternehmensportal verfügbar. Benutzer können Unternehmens-Apps herunterladen, ihre Geräte verwalten und IT-Support im Farbschema Ihrer Wahl basierend auf den Geräteeinstellungen erhalten. Das iOS-Unternehmensportal passt sich automatisch den Einstellungen des Endbenutzergeräts für den hellen oder dunklen Modus an. 
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Tastenkombinationen für die Windows-Unternehmensportal-App
 
 Endbenutzer können mithilfe von Tastenkombinationen (Tastenkombinations-Editor) Navigations-, App- und Geräteaktionen in der Windows-Unternehmensportal-App auslösen.
@@ -180,25 +184,24 @@ Benutzer können über die Unternehmensportal-App oder die Unternehmensportal-We
 
 Einige Plattformen und Konfigurationen lassen keine Self-Service-Geräteaktionen zu. In der folgenden Tabelle finden Sie weitere Informationen zu Self-Service-Aktionen:
 
-|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | macOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
-| Außerkraftsetzen | Verfügbar<sup>(1)</sup> | Verfügbar<sup>(8)</sup> | Verfügbar | Verfügbar<sup>(7)</sup> |
-| Zurücksetzen | Verfügbar | Verfügbar | N/V | Verfügbar<sup>(7)</sup> |
-| Umbenennen<sup>(4)</sup> | Verfügbar | Verfügbar<sup>(8)</sup> | Verfügbar | Verfügbar |
+| Außerkraftsetzen | Verfügbar<sup>(1)</sup> | Verfügbar | Verfügbar | Verfügbar<sup>(7)</sup> |
+| Zurücksetzen | Verfügbar | Verfügbar<sup>(5)</sup> | N/V | Verfügbar<sup>(7)</sup> |
+| Umbenennen<sup>(4)</sup> | Verfügbar | Verfügbar | Verfügbar | Verfügbar |
 | Synchronisierung | Verfügbar | Verfügbar | Verfügbar | Verfügbar |
 | Remotesperre | Nur Windows Phone | Verfügbar | Verfügbar | Verfügbar |
-| Passcode zurücksetzen | Nur Windows Phone | Verfügbar | N/V | Verfügbar<sup>(6)</sup> |
+| Passcode zurücksetzen | Nur Windows Phone | Verfügbar<sup>(8)</sup> | N/V | Verfügbar<sup>(6)</sup> |
 | Schlüsselwiederherstellung | N/V | N/V | Verfügbar<sup>(2)</sup> | N/V |
-| Dunkler Modus | N/V | Verfügbar | N/V | N/V |
 
 <sup>(1)</sup> Die **Außerbetriebnahme** ist auf Windows-Geräten, die Azure AD beigetreten sind, immer blockiert.<br>
 <sup>(2)</sup> Die **Schlüsselwiederherstellung** für macOS ist nur über das Webportal verfügbar.<br>
 <sup>(3)</sup> Bei Verwendung einer Registrierung über den Geräteregistrierungs-Manager sind alle Remoteaktionen deaktiviert.<br>
-<sup>(4)</sup> **Durch Umbenennen** wird nur der Gerätename in der Unternehmensportal-App oder -Website geändert, nicht auf dem Gerät selbst.<br>
-<sup>(5)</sup> **Remoteaktionen zum Zurücksetzen** sind auf macOS-Geräten nicht verfügbar.<br>
+<sup>(4)</sup> Durch **Umbenennen** wird nur der Gerätename in der Unternehmensportal-App oder im Webportal geändert, nicht auf dem Gerät selbst.<br>
+<sup>(5)</sup> **Löschen** ist auf iOS-Geräten, die vom Benutzer registriert werden, nicht verfügbar.<br>
 <sup>(6)</sup> Das **Zurücksetzen von Passcodes** wird in einigen Android- und Android Enterprise-Konfigurationen nicht unterstützt. Weitere Informationen finden Sie unter [Zurücksetzen oder Entfernen eines Gerätepasscodes in Intune](../remote-actions/device-passcode-reset.md).<br>
 <sup>(7)</sup> Aktionen für **Außerbetriebnahme** und **Zurücksetzen** sind in Szenarios mit Android Enterprise-Gerätebesitzern (COPE, COBO, COSU) nicht verfügbar.<br> 
-<sup>(8)</sup> Aktionen für **Außerbetriebnahme** (Gerät entfernen) und **Umbenennen** sind für alle Arten der Registrierung verfügbar. Andere Aktionen werden für die Benutzerregistrierung nicht unterstützt.<br> 
+<sup>(8)</sup> **Kennung zurücksetzen** wird auf von Benutzern registrierten iOS-Geräten nicht unterstützt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

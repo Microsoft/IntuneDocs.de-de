@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62a3f9ee2cec41f14e450158ab8ad02e1a3a2ea2
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 882c542d6a1d981b9924bb33eee40f03b41689f7
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785691"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999477"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Selektives Löschen von Daten in Intune über durch App-Schutzrichtlinien festgelegte bedingte Startaktionen
 
@@ -84,8 +84,11 @@ Für Android können Sie mithilfe der Dropdownliste **Einstellung** Aktionen fü
 - Mindestversion für den Patch
 - Gerätehersteller
 - SafetyNet-Gerätenachweis
-- Bedrohungsüberprüfung für Apps
+- Bedrohungsüberprüfung für Apps erzwingen
+- Mindestversion für Unternehmensportal
 - Maximal zulässige Gerätebedrohungsstufe
+
+Wenn Sie **Mindestversion für Unternehmensportal** verwenden, können Sie eine bestimmte, minimal definierte Version des Unternehmensportals angeben, die auf einem Endbenutzergerät erzwungen wird. Diese Einstellung für den bedingten Start ermöglicht Ihnen, Werte für **Zugriff blockieren** , **Daten löschen** oder **Warnen** als mögliche Aktionen festzulegen, wenn der Wert nicht erreicht wird. Die möglichen Formate für diesen Wert folgen dem Muster *[Hauptversion].[Nebenversion]* , *[Hauptversion].[Nebenversion].[Build]* oder *[Hauptversion].[Nebenversion].[Build].[Revision]* . Da einige Endbenutzer ein erzwungenes sofortiges Update von Apps nicht bevorzugen, ist die Option „Warnen“ möglicherweise ideal, wenn Sie diese Einstellung konfigurieren. Der Google Play Store sendet in der Regel nur die Differenzbytes für App-Updates. Dies kann jedoch immer noch eine große Datenmenge sein, die möglicherweise für Benutzer ungelegen kommt, wenn sie zum Zeitpunkt des Updates Daten senden oder empfangen. Das Erzwingen eines Updates und damit das Herunterladen einer aktualisierten App könnte zum Zeitpunkt des Updates unerwartete Datengebühren mit sich bringen. Wenn die Einstellung **Mindestversion für Unternehmensportal** konfiguriert ist, wirkt sich die Einstellung auf alle Endbenutzer aus, die Version 5.0.4560.0 des Unternehmensportals und zukünftige Versionen des Unternehmensportals erhalten. Diese Einstellung wirkt sich nicht auf Benutzer aus, die eine Version des Unternehmensportals verwenden, die älter als die Version ist, mit der diese Funktion veröffentlicht wurde. Endbenutzer, die automatische App-Updates auf Ihrem Gerät verwenden, werden wahrscheinlich keine Dialoge dieses Features sehen, da sie wahrscheinlich die neueste Unternehmensportalversion verwenden. Diese Einstellung ist nur für Android mit App-Schutz für registrierte und nicht registrierte Geräte vorgesehen.
 
 Geben Sie eine durch Semikolons getrennte Liste der Android-Hersteller ein, um die Einstellung **Gerätehersteller** zu verwenden. Den Android-Gerätehersteller finden Sie in den Geräteeinstellungen.<br>
 Beispieleingabe: *Hersteller A;Hersteller B* 

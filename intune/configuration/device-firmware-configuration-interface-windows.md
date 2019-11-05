@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f34e321476ea634030a5e602bc362d409eee8f5
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 2bfc49f772331113314e45bc49360b8435b88037
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785553"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889572"
 ---
-# <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune"></a>Verwenden von DFCI-Profilen (Device Firmware Configuration Interface) auf Windows-Geräten in Microsoft Intune
+# <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Verwenden von DFCI-Profilen (Device Firmware Configuration Interface) auf Windows-Geräten in Microsoft Intune (Public Preview)
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
+> [!Note]
+> Das Rollout jedes [monatlichen Updates](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) kann einige Tage in Anspruch nehmen. Einige Features werden im Laufe mehrerer Wochen bereitgestellt und sind möglicherweise nicht sofort für alle Kunden verfügbar.
 
 Wenn Sie Intune zum Verwalten von Autopilot-Geräten verwenden, können Sie nach deren Registrierung mithilfe von DFCI (Firmware Configuration Interface) UEFI-Einstellungen (BIOS) verwalten. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie in der [Übersicht zu DFCI](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/).
 
@@ -167,15 +170,9 @@ Sie können das Gerät jetzt zurücksetzen. Löschen Sie den Autopilot-Datensatz
 
 ### <a name="recover"></a>Wiederherstellen
 
-Wenn Sie ein Gerät zurücksetzen und den Autopilot-Datensatz vor dem Entsperren des UEFI-Menüs (BIOS) löschen, bleiben die Menüs gesperrt. Intune kann keine Profilupdates zum Entsperren senden. Sie können Folgendes tun, um das Gerät zu entsperren:
+Wenn Sie ein Gerät zurücksetzen und den Autopilot-Datensatz vor dem Entsperren des UEFI-Menüs (BIOS) löschen, bleiben die Menüs gesperrt. Intune kann keine Profilupdates zum Entsperren senden.
 
-- **Option 1**: Bitten Sie Ihren CSP-Gerätehersteller oder den direkten OEM, das Gerät erneut bei Autopilot zu registrieren. Registrieren Sie es erneut in Intune, und wenden Sie die Autopilot- und DFCI-Profile erneut an.
-
-  Entsperren Sie dann die UEFI-Menüs mithilfe der in diesem Artikel beschriebenen Schritte zum [Deaktivieren des Geräts](#retire).
-
-- **Option 2**: Öffnen Sie das UEFI-Menü (BIOS), und wählen Sie eine Wiederherstellungsoption aus. Vergewissern Sie sich, dass das Gerät nicht für die DFCI-Verwaltung registriert ist, und entsperren Sie das Menü. Bei Wiederherstellungsoptionen werden alle UEFI-Einstellungen (BIOS) auf die Werte im letzten Intune-DFCI-Profil festgelegt.
-
-  Entsperren Sie dann die UEFI-Menüs mithilfe der in diesem Artikel beschriebenen Schritte zum [Deaktivieren des Geräts](#retire).
+Um das Gerät zu entsperren, öffnen Sie das UEFI-Menü (BIOS), und aktualisieren Sie die Verwaltung über das Netzwerk. Durch die Wiederherstellung werden die Menüs entsperrt, aber für alle UEFI-Einstellungen (BIOS) bleiben die im vorherigen Intune-DFCI-Profil festgelegten Werte erhalten.
 
 ## <a name="end-user-impact"></a>Auswirkungen auf den Endbenutzer
 

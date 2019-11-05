@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
-ms.reviewer: heenamac
+ms.reviewer: altsou
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
-ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
+ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72550806"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892637"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune
 
@@ -69,19 +69,28 @@ Auf Windows 10-Geräten können Sie **Anwendbarkeitsregeln** hinzufügen, wodurc
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Ausschließen von Gruppen aus einer Profilzuweisung
 
-Mit Intune-Gerätekonfigurationsprofilen können Sie Gruppen aus der Richtlinienzuweisung ausschließen.
+Mit Intune-Gerätekonfigurationsprofilen können Sie Gruppen in die Richtlinienzuweisung einschließen und davon ausschließen.
 
-Intune betrachtet keine Beziehungen zwischen Benutzer- und Gerätegruppen. Das Einschließen von Benutzergruppen und das gleichzeitige Ausschließen von Gerätegruppen liefert möglicherweise nicht die von Ihnen gewünschten Ergebnisse. In Szenarios von Benutzergruppe zu Benutzergruppe und Gerätegruppe zu Gerätegruppe hat ein Ausschluss Vorrang vor einem Einschluss.
+Es hat sich bewährt, Richtlinien speziell für Ihre Benutzergruppen zu erstellen und zuzuweisen. Erstellen Sie außerdem unterschiedliche Richtlinien speziell für Ihre Gerätegruppen. Weitere Informationen zu Gruppen finden Sie unter [Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten](../fundamentals/groups-add.md).
 
-Angenommen Sie weisen der Benutzergruppe **Alle Unternehmensbenutzer** ein Geräteprofil zu, schließen aber gleichzeitig Mitglieder der Benutzergruppe **Mitarbeiter der Führungsebene** aus. Da beide Gruppen Benutzergruppen sind, sind alle Mitglieder der Gruppe **Mitarbeiter der Geschäftsleitung** von der Richtlinie ausgeschlossen, obwohl sie Mitglieder der Gruppe **Alle Unternehmensbenutzer** sind.
+Wenn Sie Ihre Richtlinien zuweisen, verwenden Sie die folgende Tabelle, wenn Sie Gruppen ein- und ausschließen. Ein Häkchen bedeutet, dass die Zuweisung unterstützt wird:
 
-In Szenarios mit gemischten Gruppen, wie etwa von Benutzergruppe zu Gerätegruppe oder von Gerätegruppe zu Benutzergruppe, hat ein Einschluss Vorrang vor einem Ausschluss.
+![Unterstützte Optionen schließen Gruppen in eine Profilzuweisung ein oder daraus aus](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
-Angenommen Sie möchten allen Benutzern in Ihrer Organisation, mit Ausnahme von Kioskgeräten, ein Geräteprofil zuweisen. Nun schließen Sie die Gruppe **Alle Benutzer** ein und gleichzeitig die Gruppe **Alle Geräte** aus. In diesem Fall erhalten alle Benutzer und ihre Geräte die Richtlinie, selbst wenn das Gerät des Benutzers der Gruppe **Alle Geräte** angehört.
+### <a name="what-you-should-know"></a>Was Sie wissen sollten
 
-Beim Ausschließen werden nur die direkten Mitglieder einer Gruppe berücksichtigt. Es werden keine Geräte berücksichtigt, die einem Benutzer zugeordnet sind. Geräte ohne Benutzer erhalten die Richtlinie jedoch nicht. Dies liegt daran, dass Geräte ohne Benutzer keine Beziehung zur Gruppe **Alle Benutzer** besitzen.
+- Der Ausschluss hat in folgenden Szenarien für denselben Gruppentyp Vorrang vor der Einbeziehung:
 
-Wenn Sie **Alle Geräte** einschließen und gleichzeitig **Alle Benutzer** ausschließen, erhalten alle Geräte die Richtlinie. Damit sollten eigentlich alle Geräte mit einem zugeordneten Benutzer von der Richtlinie ausgeschlossen werden. Die Geräte werden jedoch nicht ausgeschlossen, da die Funktion „Ausschließen“ nur direkte Gruppenmitglieder miteinander vergleicht.
+  - Einschließen von Benutzergruppen und Ausschließen von Benutzergruppen
+  - Einschließen von Gerätegruppen und Ausschließen von Gerätegruppen
+
+  Angenommen Sie weisen der Benutzergruppe **Alle Unternehmensbenutzer** ein Geräteprofil zu, schließen aber gleichzeitig Mitglieder der Benutzergruppe **Mitarbeiter der Führungsebene** aus. Da es sich bei beiden Gruppen um Benutzergruppen handelt, erhalten **alle Unternehmensbenutzer** außer den **Führungskräften** die Richtlinie.
+
+- Intune bewertet keine Beziehungen zwischen Benutzer- und Gerätegruppen. Wenn Sie Richtlinien gemischten Gruppen zuweisen, entsprechen die Ergebnisse möglicherweise nicht Ihren Erwartungen.
+
+  Beispielsweise weisen Sie der Benutzergruppe **Alle Benutzer** ein Geräteprofil zu, schließen jedoch eine Gerätegruppe **Alle persönlichen Geräte** aus. In dieser gemischten Gruppenrichtlinienzuweisung erhalten **alle Benutzer** die Richtlinie. Der Ausschluss wird nicht angewendet.
+
+  Daher wird das Zuweisen von Richtlinien zu gemischten Gruppen nicht empfohlen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
