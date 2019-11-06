@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: apps; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53425b56985cbafb4033b11df54597959c0b0d59
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ef958468feb7e36f894537989675977e1d96bf8c
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72499708"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414732"
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Übersicht über den App-Lebenszyklus in Microsoft Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Der Microsoft Intune-Lebenszyklus von Apps beginnt, wenn eine App hinzugefügt wird, und durchläuft weitere Phasen, bis Sie die App entfernen. Wenn Sie verstanden haben, was in den einzelnen Phasen geschieht, verfügen Sie über sämtliche Informationen, die Sie für die ersten Schritte zur App-Verwaltung in Intune benötigen.
 
@@ -34,7 +32,7 @@ Der Microsoft Intune-Lebenszyklus von Apps beginnt, wenn eine App hinzugefügt w
 
 ## <a name="add"></a>Hinzufügen
 
-Der erste Schritt bei der App-Bereitstellung besteht darin, die Apps, die Sie verwalten und zuweisen möchten, zu Intune hinzuzufügen. Sie können zwar mit vielen verschiedenen App-Typen arbeiten, aber die grundlegenden Verfahren sind identisch. Mithilfe von Intune können Sie verschiedene App-Typen hinzufügen. Dazu gehören u.a. intern erstellte (branchenspezifische) Apps, Apps aus dem Store, integrierte Apps und Apps im Web. Weitere Informationen zu den einzelnen App-Typen finden Sie unter [So fügen Sie eine App zu Microsoft Intune hinzu](apps-add.md). 
+Der erste Schritt bei der App-Bereitstellung besteht darin, die Apps, die Sie verwalten und zuweisen möchten, zu Intune hinzuzufügen. Sie können zwar mit vielen verschiedenen App-Typen arbeiten, aber die grundlegenden Verfahren sind identisch. Mithilfe von Intune können Sie verschiedene App-Typen hinzufügen. Dazu gehören u.a. intern erstellte (branchenspezifische) Apps, Apps aus dem Store, integrierte Apps und Apps im Web. Weitere Informationen zu den einzelnen App-Typen finden Sie unter [So fügen Sie eine App zu Microsoft Intune hinzu](apps-add.md).
 
 ## <a name="deploy"></a>Bereitstellen
 
@@ -43,12 +41,14 @@ Nachdem Sie die App zu Intune hinzugefügt haben, können Sie diese [für die vo
 ## <a name="configure"></a>Konfigurieren
 
 Im Rahmen des App-Lebenszyklus werden regelmäßig neue Versionen von Apps veröffentlicht. Intune bietet Tools, mit denen Sie die bereitgestellten Apps leicht auf eine neuere Version [aktualisieren können](apps-add.md). Darüber hinaus können Sie für einige Apps zusätzliche Funktionalität konfigurieren, zum Beispiel:
+
 - Mit [iOS-App-Konfigurationsrichtlinien](app-configuration-policies-use-ios.md) können Sie Einstellungen für kompatible iOS-Apps angeben, die bei Ausführung der App verwendet werden. Eine App kann beispielsweise bestimmte Brandingeinstellungen oder den Namen eines Servers abfragen, mit dem diese eine Verbindung herstellen muss.
 - [Verwaltete Browserrichtlinien](app-configuration-managed-browser.md) helfen Ihnen beim Konfigurieren von Einstellungen für den Intune Managed Browser, der den Standardbrowser für das Gerät ersetzt und Ihnen das Einschränken der Websites ermöglicht, die die Benutzer besuchen können.
 
 ## <a name="protect"></a>Schützen
 
 Intune bietet Ihnen viele Möglichkeiten zum Schutz der Daten in Ihren Apps. Die wichtigsten Methoden sind:
+
 - Der [bedingte Zugriff](../protect/conditional-access.md) steuert den Zugriff auf E-Mails und andere Dienste basierend auf Bedingungen, die Sie festlegen. Bedingungen sind z. B. Gerätetypen oder die Einhaltung einer von Ihnen bereitgestellten [Gerätekompatibilitätsrichtlinie](../protect/device-compliance-get-started.md).
 - [App-Schutzrichtlinien](app-protection-policy.md) arbeiten mit einzelnen Apps, mit denen Sie die von diesen Apps verwendeten Unternehmensdaten schützen können. Beispielsweise können Sie das Kopieren von Daten zwischen nicht verwalteten Apps und von Ihnen verwalteten Apps einschränken, oder Sie können die Ausführung von Apps auf Geräten verhindern, die per Jailbreak oder Rooting manipuliert wurden.
 

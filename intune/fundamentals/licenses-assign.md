@@ -16,24 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f09f4ba58e3da5821eea06fcfec6e55c9c007d44
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502706"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414093"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Zuweisen von Lizenzen zu Benutzern, damit sie ihre Geräte bei Intune registrieren können
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Egal, ob Sie manuell Benutzer hinzufügen oder aus Ihrem lokalen Active Directory synchronisieren, Sie müssen zunächst jedem Benutzer eine Intune-Lizenz zuweisen, bevor Benutzer ihre Geräte in Intune registrieren können. Eine Liste mit Lizenzen finden Sie unter [Lizenzen, die Intune enthalten](../licenses.md).
 
 ## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>Zuweisen einer Intune-Lizenz im Microsoft 365 Admin Center
 
-Sie können das [Microsoft 365 Admin Center](http://go.microsoft.com/fwlink/p/?LinkId=698854) verwenden, um cloudbasierte Benutzer manuell hinzuzufügen. Außerdem können Sie es verwenden, um sowohl cloudbasierten Benutzerkonten als auch Konten, die aus Ihrer lokalen Active Directory-Bereitstellung mit Azure AD synchronisiert wurden, Lizenzen zuzuweisen.
+Sie können das [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?LinkId=698854) verwenden, um cloudbasierte Benutzer manuell hinzuzufügen. Außerdem können Sie es verwenden, um sowohl cloudbasierten Benutzerkonten als auch Konten, die aus Ihrer lokalen Active Directory-Bereitstellung mit Azure AD synchronisiert wurden, Lizenzen zuzuweisen.
 
-1. Melden Sie sich mit den Anmeldeinformationen Ihres Mandantenadministrators beim [Microsoft 365 Admin Center](http://go.microsoft.com/fwlink/p/?LinkId=698854) an, und wählen Sie dann **Benutzer** > **Aktive Benutzer** aus.
+1. Melden Sie sich mit den Anmeldeinformationen Ihres Mandantenadministrators beim [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?LinkId=698854) an, und wählen Sie dann **Benutzer** > **Aktive Benutzer** aus.
 
 2. Wählen Sie das Benutzerkonto, dem Sie eine Intune-Benutzerlizenz zuweisen möchten, und wählen Sie dann **Produktlizenzen** > **Bearbeiten**.
 
@@ -51,6 +49,7 @@ Sie können das [Microsoft 365 Admin Center](http://go.microsoft.com/fwlink/p/?L
 Sie können Benutzern mithilfe von Azure Active Directory eine Intune-Lizenz zuweisen. Weitere Informationen finden Sie im Artikel [Lizenzieren von Benutzern in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal). 
 
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>Verwenden der Synchronisierung von Schul-/Unidaten zum Zuweisen von Lizenzen zu Benutzern in Intune for Education
+
 Wenn Sie zu einer Bildungseinrichtung gehören, können Sie mithilfe der Synchronisierung von Schul-/Unidaten (School Data Sync, SDS) synchronisierten Benutzern Intune for Education-Lizenzen zuweisen. Aktivieren Sie dazu lediglich beim Einrichten Ihres SDS-Profils das Kontrollkästchen „Intune for Education“.  
 
 ![Screenshot der SDS-Profileinstellung](./media/licenses-assign/i4e-sds-profile-setup-setting.png)
@@ -62,6 +61,7 @@ Wenn Sie eine Intune Education-Lizenz zuweisen, stellen Sie sicher, dass auch ei
 In dieser [Übersicht über die Synchronisierung von Schul-/Unidaten](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91) erfahren Sie mehr zu diesem Feature.
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Auswirkungen von Benutzer- und Gerätelizenzen auf den Zugriff auf Dienste
+
 * Jeder **Benutzer**, dem Sie eine Benutzersoftwarelizenz zuweisen, kann die Onlinedienste und zugehörige Software (einschließlich System Center) zum Verwalten von Anwendungen und bis zu 15 MDM-Geräten nutzen. Der Intune-PC-Agent gestattet die Nutzung von fünf physischen und einem virtuellen Computer pro Benutzerlizenz.
 * Sie können Lizenzen für alle Geräte separat von Benutzerlizenzen erwerben. Gerätelizenzen müssen den Geräten nicht zugewiesen werden. Jedes Gerät, das auf die Onlinedienste und zugehörige Software (einschließlich System Center-Software) zugreift und sie nutzt, muss über eine Gerätelizenz verfügen.
 * Wenn ein Gerät von mehreren Benutzern verwendet wird, erfordert jedes Gerät eine Gerätesoftwarelizenz, oder alle Benutzer benötigen eine Benutzersoftwarelizenz.
@@ -73,9 +73,6 @@ Die Art und Weise, wie Sie Intune erworben haben, bestimmt Ihre Abonnementinform
 - Wenn Sie Intune über ein Enterprise Agreement erworben haben, finden Sie Ihre Abonnementinformationen im Volume Licensing-Portal unter **Abonnements**.
 - Wenn Sie Intune über einen Cloudlösungsanbieter erworben haben, wenden Sie sich an Ihren Handelspartner.
 - Wenn Sie Intune per Kreditkarte oder per Rechnung erworben haben, sind Ihre Lizenzen benutzerbezogen.
-
-
-
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>Selektive Verwaltung von EMS-Benutzerlizenzen über PowerShell
 Organisationen, die Microsoft Enterprise Mobility + Security (EMS, früher Enterprise Mobility Suite) verwenden, verfügen jedoch möglicherweise über Benutzer, die nur Azure Active Directory Premium- oder Intune-Dienste im EMS-Paket benötigen. Sie können einen oder mehrere Dienste mithilfe von [Azure Active Directory PowerShell-Cmdlets](https://msdn.microsoft.com/library/jj151815.aspx) zuweisen.
@@ -97,7 +94,6 @@ Erstellen Sie über die Befehlszeile einen neuen Benutzer, und weisen Sie eine E
 
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS
-
 
 Überprüfen Sie das Ergebnis:
 

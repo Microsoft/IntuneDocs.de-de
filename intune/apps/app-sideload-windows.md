@@ -16,16 +16,14 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a89392dabe695cf49e989351cef822852676916
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7500000f8a34120e69c27ce01a6cfdb85f447abe
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507384"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414703"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Signieren Sie branchenspezifische Apps, damit sie mit Intune auf Windows-Geräten bereitgestellt werden können
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Als Intune-Administrator können Sie universelle branchenspezifische Apps – einschließlich der Unternehmensportal-App – auf Windows 8.1 Desktop- oder Windows 10 Desktop- und Mobile-Geräten bereitstellen. Zum Bereitstellen von APPX-Apps auf Windows 8.1 Desktop- oder Windows 10 Desktop- und Mobile-Geräten können Sie ein codesignierendes Zertifikat einer öffentlichen Zertifizierungsstelle verwenden, der Ihre Windows-Geräte bereits vertrauen. Sie können auch Ihre eigene Zertifizierungsstelle verwenden.
 
@@ -53,6 +51,7 @@ Wenn Sie die App für Benutzer und Geräte als erforderlich bereitstellen, benö
 ### <a name="upload-the-code-signing-certificate"></a>Hochladen des codesignierenden Zertifikats
 
 Wenn Ihr Windows 10-Gerät der Zertifizierungsstelle nicht bereits vertraut, müssen Sie das codesignierende Zertifikat in das Intune-Portal hochladen, nachdem Sie Ihr APPX-Paket signiert und in den Intune-Dienst hochgeladen haben:
+
 1. Klicken Sie auf „Client-Apps“.
 2. Klicken Sie auf „Windows Enterprise-Zertifikate“.
 3. Klicken Sie unter „Codesignierendes Zertifikat“ auf „Datei auswählen“.
@@ -77,6 +76,7 @@ Windows 8.1 Desktop/Windows 10 Desktop und Mobile
 Wenn der Zertifizierungszeitraum abgelaufen ist, werden APPX-Dateien möglicherweise nicht mehr gestartet. Sie müssen eine neue CER-Datei abrufen und die entsprechenden Anweisungen befolgen, um die Codesignierung für jede bereitgestellte APPX-Datei durchzuführen und alle APPX-Dateien sowie die aktualisierte CER-Datei erneut im Intune-Portal in den Abschnitt „Windows Enterprise-Zertifikate“ hochzuladen.
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>Manuelles Bereitstellen der Windows 10-Unternehmensportal-App
+
 Wenn Sie keinen Zugriff auf den Microsoft Store ermöglichen möchten, können Sie die Windows 10-Unternehmensportal-App manuell direkt über Intune bereitstellen. Das funktioniert auch, wenn Intune nicht in den Microsoft Store für Unternehmen integriert wurde. Wenn eine solche Integration vorhanden ist, können Sie die Unternehmensportal-App alternativ auch gemäß den Informationen unter [Hinzufügen von Microsoft Store-Apps zu Microsoft Intune](store-apps-windows.md) bereitstellen.
 
  > [!NOTE]
@@ -100,9 +100,11 @@ Wenn Sie keinen Zugriff auf den Microsoft Store ermöglichen möchten, können S
 Weitere Informationen zur Behandlung von Abhängigkeiten für universelle Apps durch Intune finden Sie unter [Deploying an appxbundle with dependencies via Microsoft Intune MDM](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/) (Bereitstellen einer APPXBUNDLE-Datei mit Abhängigkeiten über Microsoft Intune MDM).  
 
 ### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>Wie aktualisiere ich das Unternehmensportal auf den Geräten meiner Benutzer, wenn diese bereits die älteren Apps aus dem Store installiert haben?
-Falls Ihre Benutzer bereits die Unternehmensportal-App für Windows 8.1 oder Windows Phone 8.1 aus dem Store installiert haben, sollte diese automatisch auf die neue Version aktualisiert werden, ohne dass Sie oder Ihre Benutzer dazu aktiv werden müssen. Sollte die Aktualisierung nicht erfolgen, fordern Sie die Benutzer auf, sich zu vergewissern, dass sie auf ihren Geräten automatische Updates für Store-Apps aktiviert haben.   
+
+Falls Ihre Benutzer bereits die Unternehmensportal-App für Windows 8.1 oder Windows Phone 8.1 aus dem Store installiert haben, sollte diese automatisch auf die neue Version aktualisiert werden, ohne dass Sie oder Ihre Benutzer dazu aktiv werden müssen. Sollte die Aktualisierung nicht erfolgen, fordern Sie die Benutzer auf, sich zu vergewissern, dass sie auf ihren Geräten automatische Updates für Store-Apps aktiviert haben.
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Wie führe ich ein Upgrade meiner quergeladenen Windows 8.1-Unternehmensportal-App auf die Windows 10-Unternehmensportal-App durch?
+
 Wir empfehlen für die Migration die folgende Vorgehensweise: Legen Sie die Bereitstellungsaktion auf „Deinstallieren“ fest, um die Bereitstellung der Windows 8.1-Unternehmensportal-App zu löschen. Anschließend kann die Windows 10-Unternehmensportal-App mit einer der oben genannten Optionen bereitgestellt werden.  
 
 Wenn Sie die App querladen möchten und das Windows 8.1-Unternehmensportal bereitgestellt haben, ohne es mit dem Symantec-Zertifikat zu signieren, führen Sie zur Durchführung des Upgrades die Schritte aus, die weiter oben im Abschnitt zur direkten Bereitstellung über Intune beschrieben sind.
@@ -110,6 +112,7 @@ Wenn Sie die App querladen möchten und das Windows 8.1-Unternehmensportal berei
 Wenn Sie die App querladen möchten und das Windows 8.1-Unternehmensportal mit dem Symantec-Codesignaturzertifikat bereitgestellt und signiert haben, führen Sie die Schritte des folgenden Abschnitts aus.  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>Wie führe ich ein Upgrade meiner signierten quergeladenen Windows Phone 8.1-Unternehmensportal-App oder Windows 8.1-Unternehmensportal-App auf die Windows 10-Unternehmensportal-App durch?
+
 Wir empfehlen für die Migration die folgende Vorgehensweise: Legen Sie die Bereitstellungsaktion auf „Deinstallieren“ fest, um die vorhandene Bereitstellung der Windows Phone 8.1-Unternehmensportal-App oder Windows 8.1-Unternehmensportal-App zu löschen. Anschließend kann die Windows 10-Unternehmensportal-App ganz normal bereitgestellt werden.  
 
 Andernfalls muss die Windows 10-Unternehmensportal-App entsprechend aktualisiert und signiert werden, um sicherzustellen, dass der Upgradepfad eingehalten wird.  

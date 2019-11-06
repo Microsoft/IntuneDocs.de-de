@@ -18,20 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a3ecf2872832af6199620863a05b4275731db5c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0507d607bfac6c084f1ce0b1f59d7474810ec8b7
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505231"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415108"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Anforderungen und Bandbreite an die Intune-Netzwerkkonfiguration
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Sie können diese Informationen nutzen, um die Bandbreitenanforderungen für Ihre Intune-Bereitstellungen zu ermitteln.
 
 ## <a name="average-network-traffic"></a>Durchschnittlicher Netzwerkdatenverkehr
+
 Die Tabelle führt den ungefähren Umfang und die Häufigkeit gemeinsamer Inhalte auf, die pro Client über das Netzwerk übertragen werden.
 
 > [!NOTE]
@@ -53,9 +52,11 @@ Die Tabelle führt den ungefähren Umfang und die Häufigkeit gemeinsamer Inhalt
 |Softwareverteilung|Variiert<br /><br />Die Größe hängt von der von Ihnen bereitgestellten Software ab.|**Variiert**<br /><br />Hängt vom Zeitpunkt der Softwarebereitstellung ab.|
 
 ## <a name="ways-to-reduce-network-bandwidth-use"></a>Möglichkeiten zum Verringern der Bandbreitennutzung
+
 Mithilfe der folgenden Methoden können Sie die Nutzung der Netzwerkbandbreite für Intune-Clients reduzieren.
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>Verwenden eines Proxyservers zum Zwischenspeichern von Inhaltsanforderungen
+
 Ein Proxyserver kann Inhalt zwischenspeichern, um doppelte Downloads zu vermeiden und die Bandbreitennutzung von Inhalten aus dem Internet zu verringern.
 
 Ein Proxyserver mit Zwischenspeicherung, der Inhaltsanfragen von Clients empfängt, kann diesen Inhalt abrufen und Webantworten und Downloads zwischenspeichern. Der Server verwendet zwischengespeicherte Daten, um nachfolgende Anforderungen von Clients zu beantworten.
@@ -74,6 +75,7 @@ Nachfolgend werden typische Einstellungen für die Verwendung eines Proxyservers
 Informationen zur Verwendung eines Proxyservers zum Zwischenspeichern von Inhalt entnehmen Sie der Dokumentation zu Ihrer Proxyserverlösung.
 
 ### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>Verwenden des Background Intelligent Transfer Service (BITS) auf Computern
+
 Sie können in einem in Ihnen festgelegten Zeitraum den BITS auf einem Windows-Computer verwenden, um die Netzwerkbandbreite zu reduzieren. Sie können die BITS-Richtlinie auf der Seite **Netzwerkbandbreite** der Intune-Agent-Richtlinie konfigurieren.
 
 > [!NOTE]
@@ -82,14 +84,15 @@ Sie können in einem in Ihnen festgelegten Zeitraum den BITS auf einem Windows-C
 Weitere Informationen zu BITS und Windows-Computern finden Sie unter [Background Intelligent Transfer Service](https://technet.microsoft.com/library/bb968799.aspx) in der TechNet-Bibliothek.
 
 ### <a name="delivery-optimization"></a>Übermittlungsoptimierung
+
 Dank der Übermittlungsoptimierung können Sie Intune verwenden, um die Bandbreitennutzung zu reduzieren, wenn Ihre Windows 10-Geräte Anwendungen und Updates herunterladen. Durch einen sich selbst organisierenden, verteilten Cache können Downloads per Pull von herkömmlichen Servern und alternativen Quellen (wie z. B. Netzwerkpeers) abgerufen werden.
 
 Die vollständige Liste aller Windows 10-Versionen und Inhaltstypen, die von der Übermittlungsoptimierung unterstützt werden, finden Sie im Artikel [Übermittlungsoptimierung für Windows 10-Updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#requirements).
 
 Sie können die [Übermittlungsoptimierung](../configuration/delivery-optimization-settings.md) im Rahmen Ihrer Gerätekonfigurationsprofile einrichten.
 
-
 ### <a name="use-branchcache-on-computers"></a>Verwenden von BranchCache auf Computern
+
 Intune-Clients können BranchCache verwenden, um den WAN-Datenverkehr zu verringern. Die folgenden Betriebssysteme unterstützen BranchCache:
 
 - Windows 7

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6678b7c3519328623d9c0035c725af3877a36ba8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6600c75ce3e6120143b17fb863670b2eb423a09f
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507055"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592056"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Hinzufügen von Web-Apps zu Microsoft Intune
 
@@ -36,7 +36,7 @@ Bevor Sie eine App verwalten und Benutzern zuweisen können, müssen Sie diese i
 Intune erstellt auf dem Gerät des Benutzers eine Verknüpfung zu der Web-App. Für iOS-Geräte wird dem Startbildschirm eine Verknüpfung mit der Web-App hinzugefügt. Für Android-Geräte wird dem Intune-Unternehmensportalwidget eine Verknüpfung mit der Web-App hinzugefügt, und das Widget muss manuell vom Benutzer angeheftet werden. Für Windows-Geräte wird eine Verknüpfung mit der Web-App im Startmenü platziert.
 
 > [!Note]
-> Web-Apps werden nicht für Android-Arbeitsprofilgeräte unterstützt. Zum Starten von Web-Apps muss ein Browser auf dem Gerät des Benutzers installiert sein.
+> Zum Starten von Web-Apps muss ein Browser auf dem Gerät des Benutzers installiert sein.
 
 ## <a name="add-a-web-app-to-intune"></a>Hinzufügen einer Web-App zu Intune
 Führen Sie die folgenden Schritte aus, um eine App als Verknüpfung zu einer App im Internet zu Intune hinzuzufügen:

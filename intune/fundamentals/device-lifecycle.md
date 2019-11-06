@@ -15,25 +15,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 816ad4bb5b17f3a480fbf834280c4e9792c394a9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 46a23ca18e385fa085afb59a654290702465a0ce
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502981"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414035"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Übersicht über den MDM-Lebenszyklus von Microsoft Intune (MDM = Mobile Device Management; mobile Geräteverwaltung)
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Alle von Ihnen verwalteten Geräte verfügen über einen *Lebenszyklus*. Intune kann Ihnen bei der Verwaltung dieses Lebenszyklus helfen: von der Registrierung über die Konfiguration und den Schutz bis hin zur Abkopplung des Geräts, wenn es nicht mehr benötigt wird.
 
 ![Der Gerätelebenszyklus](./media/device-lifecycle/device-lifecycle.png "Der Intune-Gerätelebenszyklus")
 
 ## <a name="enroll"></a>Registrieren
+
 Die heutigen Strategien zur Verwaltung mobiler Geräte (Mobile Device Management, MDM) befassen sich mit einer Vielzahl von Mobiltelefonen, Tablets und PCs (iOS, Android, Windows und Mac OS X). Wenn Sie das Gerät verwalten müssen, was bei unternehmenseigenen Geräten im Allgemeinen der Fall ist, besteht der erste Schritt darin, die [Geräteregistrierung einzurichten](../enrollment/device-enrollment.md). Durch das Registrieren bei Intune (MDM) oder durch [Installieren der Intune-Clientsoftware](../manage-windows-pcs-with-microsoft-intune.md) können Sie auch Windows-PCs verwalten.
 
 ## <a name="configure"></a>Konfigurieren
+
 Das Registrieren Ihrer Geräte ist nur der erste Schritt. Um alle Intune-Angebote zu nutzen und um sicherzustellen, dass die Geräte sicher und mit Unternehmensstandards kompatibel sind, können Sie aus einer Vielzahl von Richtlinien auswählen. Mit diesen können Sie nahezu jeden Aspekt des Betriebs von verwalteten Geräten konfigurieren. Sollen Benutzer beispielsweise ein Kennwort für Geräte verwenden, die Unternehmensdaten enthalten? Sie können festlegen, dass ein Kennwort erforderlich ist. Haben Sie ein Unternehmens-WLAN? Sie können es automatisch konfigurieren. Hier sind die verfügbaren Typen von Konfigurationsoptionen aufgeführt:
 
 - [**Gerätekonfiguration**](../configuration/device-profiles.md). Mit diesen Richtlinien können Sie die Features und Funktionen der von Ihnen verwalteten Geräten konfigurieren. Beispielsweise können Sie die Verwendung eines Kennworts auf Windows Phones verlangen oder die Verwendung der Kamera auf iPhones deaktivieren.
@@ -41,12 +41,15 @@ Das Registrieren Ihrer Geräte ist nur der erste Schritt. Um alle Intune-Angebot
 - [**Windows-PC-Verwaltungsrichtlinien (mit der Intune-Clientsoftware)** ](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md). Auch wenn Ihnen durch die Registrierung von Windows-PCs bei Intune die meisten Verwaltungsfunktionen für Geräte bereitgestellt werden, unterstützt Intune weiterhin das Verwalten von Windows-PCs über die Intune-Clientsoftware. Wenn Sie Informationen über einige Aufgaben benötigen, die Sie mit PCs ausführen können, beginnen Sie hier.
 
 ## <a name="protect"></a>Schützen
+
 In der modernen IT-Welt ist der Schutz von Geräten vor unbefugtem Zugriff eine der wichtigsten Aufgaben, die Sie erfüllen müssen. Zusätzlich zu den Elementen im Schritt **Konfigurieren** des Gerätelebenszyklus stellt Intune diese Funktionen bereit, mit denen Sie von Ihnen verwaltete Geräte vor unbefugtem Zugriff oder böswilligen Angriffen schützen können:
+
 - [**Mehrstufige Authentifizierung**](../enrollment/multi-factor-authentication.md). Durch das Hinzufügen einer zusätzlichen Authentifizierungsebene zu den Benutzeranmeldungen können Sie Geräte noch sicherer machen. Viele Geräte unterstützen die mehrstufige Authentifizierung, die eine zweite Authentifizierungsebene wie einen Telefonanruf oder eine SMS erfordert, bevor Benutzer Zugriff erhalten.
 - [**Windows Hello for Business-Einstellungen**](../protect/windows-hello.md). Windows Hello for Business ist eine alternative Anmeldemethode, die Benutzern das Verwenden einer *Geste*, z. B. Fingerabdruck oder Windows Hello, ermöglicht, um sich ohne Kennwort anzumelden.
 - [**Richtlinien zum Schutz von Windows-PCs (mit der Intune-Clientsoftware)** ](../policies-to-protect-windows-pcs-in-microsoft-intune.md). Wenn Sie Windows-PCs mit der Intune-Clientsoftware verwalten, stehen Richtlinien zur Verfügung, mit denen Sie die Einstellungen für Endpoint Protection, Softwareupdates und Windows-Firewall auf von Ihnen verwalteten PCs steuern können.
 
 ## <a name="retire"></a>Außerkraftsetzen
+
 Wenn ein Gerät verloren geht, gestohlen wird oder ersetzt werden muss, oder wenn Benutzer in eine andere Position wechseln, ist es in der Regel an der Zeit, das Gerät [abzukoppeln oder zurückzusetzen](../remote-actions/device-management.md). Hierzu gibt es verschiedene Möglichkeiten, angefangen beim Zurücksetzen des Geräts über das Entfernen des Geräts aus der Verwaltung bis hin zum Löschen der darauf befindlichen Unternehmensdaten.
 
 ## <a name="next-steps"></a>Nächste Schritte

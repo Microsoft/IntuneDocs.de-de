@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1cd4dd270d276969d759bc9a9dccef80b281251
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: da2f080458df360667df235ff10cc8f750b049eb
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502930"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414575"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Wie Ihre Windows-Benutzer Apps erhalten
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Benutzer die Apps erhalten, die Sie über Microsoft Intune verteilen.
 
@@ -39,5 +37,6 @@ Verwenden Sie diese Informationen, um zu verstehen, wie und wo Ihre Benutzer die
 **Nicht verwaltete Apps** können mittels Richtlinien verwaltet werden. Sie wurden nicht von Intune umschlossen bzw. sind nicht in das Intune App SDK integriert. Diesen Apps lassen sich keine App-Schutzrichtlinien zuweisen.
 
 ## <a name="see-also"></a>Siehe auch
+
 [Wie Ihre Android-Benutzer Apps erhalten](end-user-apps-android.md)
 [How your iOS users get their apps](end-user-apps-android.md)

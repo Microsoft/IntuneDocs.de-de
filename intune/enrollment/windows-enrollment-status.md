@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503025"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143173"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Einrichten einer Seite zum Registrierungsstatus
  
@@ -191,7 +191,6 @@ Nachstehend sind bekannte Probleme aufgeführt.
 - Durch das Deaktivieren des ESP-Profils wird die zugehörige Richtlinie nicht von den Geräten entfernt, und den Benutzern wird weiterhin die Seite zum Registrierungsstatus angezeigt, wenn sie sich zum ersten Mal am Gerät anmelden. Die Richtlinie wird nicht entfernt, wenn das ESP-Profil deaktiviert wird. Sie müssen den OMA-URI bereitstellen, um die Seite zum Registrierungsstatus zu deaktivieren. Weitere Informationen zum Deaktivieren der Seite zum Registrierungsstatus mithilfe des OMA-URI finden Sie weiter oben. 
 - Ein ausstehender Neustart führt immer zu einem Timeout. Das Timeout tritt auf, weil das Gerät neu gestartet werden muss. Der Neustart ist erforderlich, um dem Element, das auf der Seite zum Registrierungsstatus nachverfolgt wird, Zeit bis zum Vorgangsabschluss einzuräumen. Ein Neustart führt dazu, dass die Seite zum Registrierungsstatus beendet wird. Nach einem Neustart wird die Seite während der Kontoeinrichtung nach dem Neustart nicht mehr aufgerufen.  Erwägen Sie, bei der Anwendungsinstallation keinen Neustart anzufordern. 
 - Ein Neustart während der Geräteeinrichtung zwingt den Benutzer vor dem Übergang zur Phase „Kontoeinrichtung“ zur Eingabe seiner Anmeldeinformationen. Benutzeranmeldeinformationen werden während des Neustarts nicht beibehalten. Lassen Sie den Benutzer seine Anmeldeinformationen eingeben, damit die Seite zum Registrierungsstatus fortgesetzt werden kann. 
-- SCEP-Zertifikate mit Windows Hello for Business-Richtlinien führen zu einem Timeout, da der Benutzer die Konfiguration der Hello-PIN nicht abschließen kann, um die konkurrierende Installation des SCEP-Zertifikats zu ermöglichen.  Keine Problemumgehung. Eine Behebung ist für Sommer 2019 vorgesehen. 
 - Für die Seite zum Registrierungsstatus unter Windows 10-Versionen vor 1903 erfolgt während einer Registrierung des Typs „Geschäfts-, Schul- oder Unikonto hinzufügen“ immer ein Timeout. Die Seite zum Registrierungsstatus wartet auf den Abschluss der Azure AD Registrierung. Das Problem wurde für Windows 10 ab Version 1903 behoben.  
 - Azure AD Hybrid-Autopilot-Bereitstellung mit Seite zum Registrierungsstatus dauert länger als die Timeoutdauer, die im ESP-Profil angegeben ist. Bei Azure AD Hybrid-Autopilot-Bereitstellungen benötigt die Seite zum Registrierungsstatus 40 Minuten länger als der im ESP-Profil festgelegte Wert. Diese Verzögerung gibt dem lokalen AD-Connector Zeit zum Erstellen des neuen Gerätedatensatzes für Azure AD. 
 - Windows-Anmeldeseite wird im benutzergesteuerten Autopilot-Modus nicht mit dem Benutzernamen vorausgefüllt. Bei einem Neustart in der Phase „Geräteeinrichtung“ der Seite zum Registrierungsstatus gilt Folgendes:

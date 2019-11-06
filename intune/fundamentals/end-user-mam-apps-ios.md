@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 807b33867d827415165eb65d81b91683830735f5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a1a3dcd7068a004f94b97b5ec6c43c609662a76d
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502857"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414560"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Was Sie erwartet, wenn Ihre iOS-App von App-Schutzrichtlinien verwaltet wird
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
  Dieses Thema beschreibt das Benutzererlebnis beim Verwenden von Apps mit angewendeten App-Schutzrichtlinien. App-Schutzrichtlinien gelten nur, wenn Apps in einem geschäftlichen Kontext verwendet werden, z. B. wenn der Benutzer ein Geschäftskonto für den Zugriff auf Apps verwendet oder auf Dateien zugreift, die an einem OneDrive for Business-Speicherort im Unternehmen gespeichert sind.
 
@@ -35,7 +33,6 @@ ms.locfileid: "72502857"
 Wenn das Gerät **nicht bei Intune registriert** ist, wird der Benutzer beim ersten Verwenden der App aufgefordert, die App neu zu starten. Ein Neustart ist erforderlich, damit App-Schutzrichtlinien auf die App angewendet werden können.
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
-
 
 <!---  ![Screenshot of the iOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
 
@@ -56,8 +53,9 @@ App-Schutzrichtlinien werden nur im geschäftlichen Kontext angewendet. Eine App
 Mit Anwendungen, die mehrere Identitäten unterstützen, können Benutzer mehrere Konten hinzufügen.  Die Intune-App unterstützt nur ein verwaltetes Konto.  Sie schränkt die Anzahl nicht verwalteter Konten nicht ein.
 
 Wenn in einer Anwendung ein verwaltetes Konto vorhanden ist, trifft Folgendes zu:
-* Wenn ein Benutzer versucht, ein zweites verwaltetes Konto hinzuzufügen, wird er aufgefordert, das verwaltete Konto auszuwählen, das verwendet werden soll.  Das andere Konto wird entfernt.
-* Wenn der IT-Administrator einem zweiten vorhandenen Konto eine Richtlinie hinzufügt, wird der Benutzer aufgefordert, das verwaltete Konto auszuwählen, das verwendet werden soll.  Das andere Konto wird entfernt.
+
+- Wenn ein Benutzer versucht, ein zweites verwaltetes Konto hinzuzufügen, wird er aufgefordert, das verwaltete Konto auszuwählen, das verwendet werden soll.  Das andere Konto wird entfernt.
+- Wenn der IT-Administrator einem zweiten vorhandenen Konto eine Richtlinie hinzufügt, wird der Benutzer aufgefordert, das verwaltete Konto auszuwählen, das verwendet werden soll.  Das andere Konto wird entfernt.
 
 Lesen Sie das folgende Beispielszenario, um genauer zu verstehen, wie mehrere Benutzerkonten behandelt werden.
 
@@ -68,4 +66,5 @@ Benutzer A arbeitet für zwei Unternehmen – **Unternehmen X** und **Unternehme
 Wenn Sie ein iOS-Gerät verwenden und versuchen, auf diesem Gerät ein zweites Geschäftskonto einzurichten, wird möglicherweise eine Sperrnachricht angezeigt. Die Konten werden angezeigt, und Sie können das Konto auswählen, das Sie entfernen möchten.
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 [Was Sie erwartet, wenn Ihre Android-App von App-Schutzrichtlinien verwaltet wird](end-user-mam-apps-android.md)
