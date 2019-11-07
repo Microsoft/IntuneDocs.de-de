@@ -27,7 +27,7 @@ ms.locfileid: "72749175"
 
 Viele MDM-Lösungen (Mobile Device Management) tragen zum Schutz von Unternehmensdaten bei, da Benutzer und Geräte bestimmte Anforderungen erfüllen müssen. In Intune wird dieses Feature „Konformitätsrichtlinien“ genannt. Konformitätsrichtlinien definieren Regeln und Einstellungen, die Benutzer und Geräte erfüllen müssen, um als „konform“ zu gelten. In Kombination mit dem bedingten Zugriff können Administratoren Benutzer und Geräte blockieren, die die Regeln nicht erfüllen.
 
-Beispielsweise kann die Intune-Administrator anfordern, dass:
+Beispielsweise kann der Intune-Administrator anfordern, dass:
 
 - Endbenutzer zum Zugriff auf Organisationsdaten über mobile Geräte ein Kennwort verwenden.
 - Das Gerät nicht mit Jailbreak oder Rootzugriff manipuliert wurde.

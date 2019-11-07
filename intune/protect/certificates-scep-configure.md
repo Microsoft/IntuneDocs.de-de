@@ -62,7 +62,7 @@ Die folgende lokale Infrastruktur ist optional:
 
 - **Webanwendungsproxy-Server** (optional): Verwenden Sie einen Server unter Windows Server 2012 R2 oder höher als WAP-Server, um Ihre NDES-URL im Internet zu veröffentlichen.  Dies ermöglicht sowohl Geräten mit Zugriff auf das Intranet als auch Geräten mit Zugriff auf das Internet, Zertifikate abzurufen.
 
-  Auf dem Server, der den WAP hostet, [muss ein Update installiert werden](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) , das die Unterstützung für lange URLs aktiviert, die vom Registrierungsdienst für Netzwerkgeräte verwendet werden. Dieses Update ist im [Updaterollup vom Dezember 2014](https://support.microsoft.com/kb/3013769)enthalten oder kann auch einzeln von [KB3011135](https://support.microsoft.com/kb/3011135)heruntergeladen werden.  
+  Auf dem Server, der den WAP hostet, [muss ein Update installiert werden](https://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) , das die Unterstützung für lange URLs aktiviert, die vom Registrierungsdienst für Netzwerkgeräte verwendet werden. Dieses Update ist im [Updaterollup vom Dezember 2014](https://support.microsoft.com/kb/3013769) enthalten oder kann auch einzeln von [KB3011135](https://support.microsoft.com/kb/3011135) heruntergeladen werden.  
 
   Der WAP-Server muss über ein SSL-Zertifikat verfügen, das mit dem Namen übereinstimmt, der für externe Clients veröffentlicht wurde. Außerdem muss der WAP-Server dem SSL-Zertifikat vertrauen, das auf dem Computer verwendet wird, auf dem der NDES-Dienst gehostet wird. Diese Zertifikate ermöglichen dem WAP-Server, die SSL-Verbindung von Clients zu beenden und eine neue SSL-Verbindung mit dem NDES-Dienst herzustellen.  
 
@@ -266,7 +266,7 @@ Die folgenden Prozeduren können Ihnen dabei helfen, den NDES (Registrierungsdie
    |Verschlüsselung              |EncryptionTemplate       |Schlüsselverschlüsselung  |
    |Signatur und Verschlüsselung|GeneralPurposeTemplate   |Schlüsselverschlüsselung<br/>Digitale Signatur |  
 
-   Wenn der Zweck der Zertifizierungsvorlage zum Beispiel **Verschlüsselung**ist, bearbeiten Sie den Wert **EncryptionTemplate** so, dass er dem Namen der Zertifikatvorlage entspricht.  
+   Wenn der Zweck der Zertifizierungsvorlage zum Beispiel **Verschlüsselung** ist, bearbeiten Sie den Wert **EncryptionTemplate** so, dass er dem Namen der Zertifikatvorlage entspricht.  
 
 3. Konfigurieren Sie die IIS-Anforderungsfilterung, um Unterstützung für die langen URLs (Abfragen) zu IIS hinzuzufügen, die der NDES-Dienst empfängt.
    1. Klicken Sie im IIS-Manager auf **Default Web Site** > **Request Filtering** > **Edit Feature Setting** (Standardwebsite > Abfragefilterung > Featureeinstellungen bearbeiten), um die Seite **Einstellungen für die Anforderungsfilterung bearbeiten** zu öffnen.  
@@ -304,7 +304,7 @@ Die folgenden Prozeduren können Ihnen dabei helfen, den NDES (Registrierungsdie
 2. Binden Sie das Serverauthentifizierungszertifikat in IIS ein:  
   
    1. Nachdem Sie das Serverauthentifizierungszertifikat installiert haben, öffnen Sie den **IIS-Manager**, und wählen Sie **Standardwebsite** aus. Klicken Sie im Bereich **Aktionen** auf **Bindungen**.  
-   1. Klicken Sie auf **Hinzufügen**, legen Sie als **Typ** die Option **https**fest, und stellen Sie sicher, dass der Port **443**ist.  
+   1. Klicken Sie auf **Hinzufügen**, legen Sie als **Typ** die Option **https** fest, und stellen Sie sicher, dass der Port **443** ist.  
    1. Geben Sie unter **SSL-Zertifikat**das Serverauthentifizierungszertifikat an.  
  
 3. Fordern Sie auf dem NDES-Server ein **Clientauthentifizierungszertifikat** von der internen oder einer öffentlichen Zertifizierungsstelle an, und installieren Sie es.  

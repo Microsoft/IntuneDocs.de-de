@@ -36,7 +36,7 @@ Für die Registrierung müssen die Geräte über Folgendes verfügen:
 - Windows 10, Version 1809 oder höher, muss ausgeführt werden.
 - Internetzugriff gemäß den [dokumentierten Netzwerkanforderungen für Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements) muss vorhanden sein.
 - Die Geräte müssen auf einen Active Directory-Domänencontroller zugreifen können, daher ist eine Verbindung mit dem Netzwerk der Organisation erforderlich (dort werden die DNS-Einträge für die AD-Domäne und den AD-Domänencontroller aufgelöst, und über dieses Netzwerk erfolgt die Kommunikation mit dem Domänencontroller zur Authentifizierung des Benutzers. VPN-Verbindungen werden derzeit nicht unterstützt).
-- Die Fähigkeit, den Domänencontroller der Domäne zu pingen, der Sie beitreten möchten
+- Die Fähigkeit, den Domänencontroller der Domäne zu pingen, der Sie beitreten möchten.
 - Bei Verwendung eines Proxys müssen WPAD-Proxyeinstellungen aktiviert und konfiguriert sein.
 - Sie müssen eingerichtet worden sein.
 
@@ -132,13 +132,13 @@ Wenn ein Webproxy in der Netzwerkumgebung vorhanden ist, stellen Sie sicher, das
 
 1. Führen Sie im Bereich **Gruppe** folgende Aktionen aus:
 
-    ein. Wählen Sie unter **Gruppentyp** die Option **Sicherheit** aus.
+    a. Wählen Sie unter **Gruppentyp** die Option **Sicherheit** aus.
 
     b. Geben Sie einen **Gruppennamen** und eine **Gruppenbeschreibung** ein.
 
     c. Wählen Sie einen **Mitgliedschaftstyp** aus.
 
-1. Wenn Sie oben **Dynamische Geräte** als Mitgliedschaftstyp ausgewählt haben,wählen Sie anschließend im Bereich **Gruppe** die Option **Dynamische Gerätemitglieder** aus, und geben Sie einen der folgenden Codes in das Feld **Erweiterte Regel** ein:
+1. Wenn Sie oben **Dynamische Geräte** als Mitgliedschaftstyp ausgewählt haben, wählen Sie anschließend im Bereich **Gruppe** die Option **Dynamische Gerätemitglieder** aus, und geben Sie einen der folgenden Codes in das Feld **Erweiterte Regel** ein:
     - Wenn Sie eine Gruppe mit all Ihren Autopilot-Geräten erstellen möchten, geben Sie `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")` ein.
     - Das Intune-Feld „Gruppentag“ wird dem Attribut „OrderID“ auf Azure AD-Geräten zugeordnet. Wenn Sie eine Gruppe erstellen möchten, die all Ihre Autopilot-Geräte mit einem bestimmten Gruppentag („OrderID“) enthält, müssen Sie Folgendes eingeben: `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - Wenn Sie eine Gruppe mit all Ihren Autopilot-Geräten mit einer bestimmten Bestellungs-ID erstellen möchten, geben Sie `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")` ein.
@@ -222,7 +222,7 @@ Es dauert etwa 15 Minuten, bis sich der Status des Geräteprofils von *Nicht zug
 1. Um das Profil zuzuweisen, führen Sie die Schritte unter [Zuweisen eines Geräteprofils](../configuration/device-profile-assign.md#assign-a-device-profile) aus, und weisen Sie das Profil derselben Gruppe zu, die beim Schritt [Erstellen einer Gerätegruppe](windows-autopilot-hybrid.md#create-a-device-group) verwendet wurde.
    - Bereitstellen mehrerer Domänenbeitrittsprofile
    
-     ein. Erstellen Sie eine dynamische Gruppe, die alle Ihre Autopilot-Geräte mit einem bestimmten Autopilot-Bereitstellungsprofil enthält. Geben Sie dazu „(device.enrollmentProfileName -eq ‚Autopilot-Profilname‘)“ ein. 
+     a. Erstellen Sie eine dynamische Gruppe, die alle Ihre Autopilot-Geräte mit einem bestimmten Autopilot-Bereitstellungsprofil enthält. Geben Sie dazu „(device.enrollmentProfileName -eq ‚Autopilot-Profilname‘)“ ein. 
      
      b. Ersetzen Sie ‚Autopilot-Profilname‘ durch den Anzeigenamen des Profils, das Sie unter [Erstellen und Zuweisen eines Autopilot-Bereitstellungsprofils](windows-autopilot-hybrid.md#create-and-assign-an-autopilot-deployment-profile) erstellt haben. 
      
