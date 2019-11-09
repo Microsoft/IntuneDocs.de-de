@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/17/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 101f414955a3b60d22003f61678854fecc16910d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 15c78d7e7f602b60b6e9f2cee365c9a02eb904df
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506580"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755003"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Häufig auftretende Probleme und Lösungen für E-Mail-Profile in Microsoft Intune
 
@@ -32,7 +32,6 @@ Erfahren Sie mehr zu einigen häufig auftretenden Problemen mit E-Mail-Profilen 
 ## <a name="what-you-need-to-know"></a>Was Sie wissen müssen
 
 - E-Mail-Profile werden für den Benutzer bereitgestellt, der das Gerät registriert hat. Um das e-Mail-Profil zu konfigurieren, verwendet InTune die Azure Active Directory (AD)-Eigenschaften im e-Mail-Profil des Benutzers bei der Anmeldung. [E-Mail-Einstellungen zu Geräten hinzufügen](email-settings-configure.md) ist möglicherweise eine gute Ressource.
-- Nach der Migration von Configuration Manager Hybrid zu InTune Standalone bleibt das e-Mail-Profil von Configuration Manager Hybrid 7 Tage lang auf dem Gerät. Dieses Verhalten ist normal. Wenn Sie das e-Mail-Profil früher entfernen möchten, kontaktieren Sie den [InTune-Support](../fundamentals/get-support.md).
 - Für Android Enterprise können Sie Gmail oder neun für Arbeiten mithilfe der verwalteten Google Play Store bereitstellen. [Verwaltete Google Play-apps hinzufügen](../apps/apps-add-android-for-work.md) listet die Schritte auf.
 - Microsoft Outlook für IOS und Android unterstützt keine e-Mail-Profile. Stellen Sie stattdessen eine APP-Konfigurationsrichtlinie bereit. Weitere Informationen finden Sie unter [Outlook-Konfigurationseinstellung](../apps/app-configuration-policies-outlook.md).
 - E-Mail-Profile, die auf Gerätegruppen (Nichtbenutzer Gruppen) abzielen, werden möglicherweise nicht an das Gerät übermittelt. Wenn das Gerät über einen primären Benutzer verfügt, sollte die Geräte Ausrichtung funktionieren. Wenn das e-Mail-Profil Benutzerzertifikate enthält, achten Sie darauf, dass Sie auf Benutzergruppen abzielen.
@@ -62,22 +61,10 @@ Samsung KNOX identifiziert das Profil nicht anhand des Hostnamens. Es wird empfo
 
 Benutzer, deren E-Mail-Konten automatisch konfiguriert wurden, können keine Bilder von ihren Geräten senden. Dies ist der Fall, wenn die Option **E-Mail-Versand aus Anwendungen von Drittanbietern zulassen** nicht aktiviert ist.
 
-### <a name="intune-solution"></a>Intune-Lösung
-
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Klicken Sie auf **Gerätekonfiguration** > **Profile**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)an.
+2. Wählen Sie **Geräte** > **Konfigurations profile**aus.
 3. Wählen Sie Ihr e-Mail-Profil > **Eigenschaften**  > **Einstellungen**aus.
 4. Legen Sie die Einstellung **e-Mail-Versand von Anwendungen von Drittanbietern zulassen** auf **aktivieren**fest.
-
-### <a name="configuration-manager-hybrid"></a>Configuration Manager – Hybrid
-
-1. Öffnen Sie die Configuration Manager-Konsole, und klicken Sie auf **Assets and Compliance** (Bestand und Kompatibilität).
-
-2. Erweitern Sie **Übersicht** > **Konformitätseinstellungen** > **Zugriff auf Unternehmensressourcen**, und wählen Sie **E-Mail-Profile** aus.
-
-3. Klicken Sie mit der rechten Maustaste auf das E-Mail-Profil, und öffnen Sie **Eigenschaften**.
-
-4. Wählen Sie auf der Registerkarte **Synchronisierungseinstellungen** die Option **E-Mail-Versand aus Anwendungen von Drittanbietern zulassen** aus.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

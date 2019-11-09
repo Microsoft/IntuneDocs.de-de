@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/05/2019
+ms.date: 11/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abcd7b96de8f5f3984c2d4407abaf11b7b6b7e4f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e69f1b11833da0906aaf831f8bb82b04241e442f
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492483"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755172"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>Hinzufügen von macOS-Kernel Erweiterungen in InTune
 
@@ -67,8 +67,8 @@ In diesem Artikel erfahren Sie, wie Sie ein Geräte Konfigurations Profil mithil
 
 ## <a name="create-the-profile"></a>Erstellen des Profils
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)an.
+2. Wählen Sie **Geräte** > **Konfigurations profile** > **Profil erstellen**aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
     - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.

@@ -19,12 +19,12 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56982c6ce10f74617471307acd176a0506655398
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6bde7fc554496b2ecc6f13c7e1b899d7ff05bfa1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501226"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755000"
 ---
 # <a name="enable-code-integrity"></a>Aktivieren der Codeintegrität
 
@@ -36,7 +36,7 @@ Wenn Sie sich als erweiterter Gerätebenutzer identifizieren und die Schritte se
 
 ## <a name="additional-resources-for-it-administrators"></a>Zusätzliche Ressourcen für IT-Administratoren
 
-Wenn Sie ein InTune-Administrator sind und mehr über die Konformitäts Einstellungen der Geräte Integrität von InTune erfahren möchten, finden Sie weitere Informationen unter [Hinzufügen einer Geräte Konformitäts Richtlinie für Windows 10-Geräte in InTune](https://docs.microsoft.com/intune/protect/compliance-policy-create-windows.md). Eine ausführliche Betrachtung der Konformitäts Aktionen, die Sie in InTune ausführen können, finden Sie unter [healthattestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
+Wenn Sie ein InTune-Administrator sind und mehr über die Konformitäts Einstellungen der Geräte Integrität von InTune erfahren möchten, finden Sie weitere Informationen unter [Hinzufügen einer Geräte Konformitäts Richtlinie für Windows 10-Geräte in InTune](https://docs.microsoft.com/intune/protect/compliance-policy-create-windows). Eine ausführliche Betrachtung der Konformitäts Aktionen, die Sie in InTune ausführen können, finden Sie unter [healthattestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
 ## <a name="next-steps"></a>Nächste Schritte
 

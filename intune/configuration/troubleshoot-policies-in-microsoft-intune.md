@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2e7dc729879eb6d16a4ab3555d8fe319501a53e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 687505a3ca2bbdffd26e8870705971aafb4783d2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492134"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754953"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Richtlinien und Profile zur Problembehandlung in Intune
 
@@ -32,11 +32,12 @@ In Microsoft Intune sind Features zur Problembehandlung integriert. Verwenden Si
 In diesem Artikel werden häufig verwendete Methoden zur Problembehandlung aufgeführt, zudem werden einige der Probleme beschrieben, die auftreten können.
 
 ## <a name="check-tenant-status"></a>Mandanten Status überprüfen
+
 Überprüfen Sie den Mandanten [Status](../fundamentals/tenant-status.md) , und bestätigen Sie das aktive Abonnement. Sie können auch Details zu aktiven Vorfällen und Empfehlungen anzeigen, die sich auf Ihre Richtlinie oder Profil Bereitstellung auswirken können.
 
 ## <a name="use-built-in-troubleshooting"></a>Verwenden der integrierten Problembehandlung
 
-1. **Wählen Sie**in [InTune](https://go.microsoft.com/fwlink/?linkid=2090973)die Option Problembehandlung:
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)die Option Problembehandlung und **Support**:
 
     ![„Hilfe und Support“ in Intune, die Option „Problembehandlung“ ist ausgewählt](./media/troubleshoot-policies-in-microsoft-intune/help-and-support-troubleshoot.png)
 
@@ -102,7 +103,7 @@ In diesem Artikel werden häufig verwendete Methoden zur Problembehandlung aufge
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>Ermitteln, ob ein Profil korrekt angewendet wurde
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)an.
 2. Wählen Sie **Geräte** > **Alle Geräte** aus, wählen Sie anschließend das Gerät aus, und klicken Sie auf **Gerätekonfiguration**. 
 
     Für jedes Gerät werden die Profile aufgelistet. Jedes Profil verfügt über einen **Status**. Der Status setzt sich aus den zugewiesenen Profilen (einschließlich Einschränkungen und Anforderungen von Hardware und Betriebssystem) zusammen. Mögliche Status sind:

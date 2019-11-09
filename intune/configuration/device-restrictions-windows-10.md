@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 164c34f4a46ca11e2788b72dee70bdd40c25e7f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493894"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755262"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Einstellungen für Windows 10-Geräte (und höher) zum Zulassen oder Einschränken von Features mit Intune
 
@@ -223,12 +223,12 @@ Diese Einstellungen verwenden den [Benutzeroberflächenrichtlinien-CSP](https://
 
 - **Info-Center-Benachrichtigungen (nur Mobilgeräte)** : **Blockieren** verhindert die Anzeige von Info-Center-Benachrichtigungen auf dem Gerätesperrbildschirm. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer die Auswahl, welche Apps Benachrichtigungen auf dem Sperrbildschirm anzeigen können.
 
-  [AboveLock/AllowActionCenterNotifications-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowactioncenternotifications)
+  [AboveLock/AllowActionCenterNotifications-CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
 - **URL zu Bild für gesperrten Bildschirm (nur Desktop)** : Geben Sie die URL zu einem Bild im JPG-, JPEG oder PNG-Format ein, das als Hintergrund für den Windows-Sperrbildschirm verwendet wird. Geben Sie beispielsweise `https://contoso.com/image.png` ein. Diese Einstellung sperrt das Bild und kann nicht nachträglich geändert werden.
 - **Vom Benutzer konfigurierbares Bildschirmtimeout (nur Mobilgeräte)** : **Zulassen** ermöglicht Benutzern das Konfigurieren des Bildschirmtimeouts. **Nicht konfiguriert** (Standard) stellt Benutzern diese Option nicht zur Verfügung.
 
-  [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-allowscreentimeoutwhilelockeduserconfig)
+  [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig-CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)
 
 - **Cortana auf Sperrbildschirm (nur Desktop)** : **Blockieren** verhindert, dass der Benutzer mit Cortana interagiert, wenn auf dem Gerät der Sperrbildschirm zu sehen ist. **Nicht konfiguriert** (Standard) lässt die Interaktion mit Cortana zu.
 
@@ -240,7 +240,7 @@ Diese Einstellungen verwenden den [Benutzeroberflächenrichtlinien-CSP](https://
 
 - **Bildschirmtimeout (nur Mobilgeräte)** : Legt die Dauer (in Sekunden) zwischen der Bildschirmsperre und dem Abschalten des Bildschirms fest. Die Werte 11 bis 1.800 werden unterstützt. Geben Sie z.B. `300` ein, um diesen Timeoutwert auf 5 Minuten festzulegen.
 
-  [DeviceLock/ScreenTimeoutWhileLocked-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
+  [DeviceLock/ScreenTimeoutWhileLocked-CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_ScreenTimeoutWhileLocked)
 
 ## <a name="messaging"></a>Messaging
 
