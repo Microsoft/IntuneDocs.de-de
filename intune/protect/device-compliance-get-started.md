@@ -25,7 +25,7 @@ ms.locfileid: "72749175"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>Legen Sie mit Intune Regeln auf Geräten fest, um Zugriff auf Ressourcen in Ihrer Organisation zu gewähren
 
-Viele MDM-Lösungen (Mobile Device Management) tragen zum Schutz von Unternehmensdaten bei, da Benutzer und Geräte bestimmte Anforderungen erfüllen müssen. In Intune wird dieses Feature „Konformitätsrichtlinien“ genannt. Konformitätsrichtlinien definieren Regeln und Einstellungen, die Benutzer und Geräte erfüllen müssen, um als „konform“ zu gelten. In Kombination mit dem bedingten Zugriff können Administratoren Benutzer und Geräte blockieren, die die Regeln nicht erfüllen.
+Viele MDM-Lösungen (Mobile Device Management) tragen zum Schutz von Unternehmensdaten bei, da Benutzer und Geräte bestimmte Anforderungen erfüllen müssen. In Intune wird dieses Feature „Konformitätsrichtlinien“ genannt. Konformitätsrichtlinien definieren Regeln und Einstellungen, die Benutzer und Geräte erfüllen müssen, um als „konform“ zu gelten. Durch Kombination von Konformitätsrichtlinien mit dem bedingten Zugriff können Administratoren Benutzer und Geräte blockieren, die die Regeln nicht erfüllen.
 
 Beispielsweise kann der Intune-Administrator anfordern, dass:
 

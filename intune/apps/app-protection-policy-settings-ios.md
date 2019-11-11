@@ -50,7 +50,7 @@ Es gibt drei Kategorien von Richtlinieneinstellungen: *Datenverschiebung*, *Zugr
 ### <a name="encryption"></a>Verschlüsselung
 | Einstellung | Verwendung | Standardwert |
 |------|----------|-------|
-| **Organisationsdaten verschlüsseln** | Wählen Sie „Require“ (Erforderlich) aus, um die Verschlüsselung von Geschäfts-, Schul- oder Unidaten in dieser App zu aktivieren.  Intune erzwingt die iOS-Geräteverschlüsselung zum Schützen von App-Daten, während das Gerät gesperrt ist.  Anwendungen können App-Daten optional mithilfe der Intune APP SDK-Verschlüsselung verschlüsseln.  Das Intune App SDK verwendet iOS-Kryptografiemethoden, um eine 256-Bit-AES-Verschlüsselung auf App-Daten anzuwenden. <br><br> Wenn Sie diese Einstellung aktivieren, muss der Benutzer eine PIN einrichten und verwenden, um auf sein Gerät zuzugreifen. Wenn keine Geräte-PIN eingerichtet wurde, wird der Benutzer wird mit der Meldung „Ihre Organisation hat festgelegt, dass Sie zuerst eine Geräte-PIN aktivieren müssen, um auf diese App zugreifen zu können“ aufgefordert, eine PIN einzurichten. <br><br> Wechseln Sie zur [offiziellen Apple-Dokumentation](https://support.apple.com/en-us/HT202739), um zu prüfen, welche iOS-Verschlüsselungsmodule FIPS 140-2-zertifiziert sind bzw. bei welchen die FIPS 140-2-Zertifizierung aussteht. | **Require**  |
+| **Organisationsdaten verschlüsseln** | Wählen Sie „Require“ aus, um die Verschlüsselung von Geschäfts-, Schul- oder Unidaten in dieser App zu aktivieren.  Intune erzwingt die iOS-Geräteverschlüsselung zum Schützen von App-Daten, während das Gerät gesperrt ist.  Anwendungen können App-Daten optional mithilfe der Intune APP SDK-Verschlüsselung verschlüsseln.  Das Intune App SDK verwendet iOS-Kryptografiemethoden, um eine 256-Bit-AES-Verschlüsselung auf App-Daten anzuwenden. <br><br> Wenn Sie diese Einstellung aktivieren, muss der Benutzer eine PIN einrichten und verwenden, um auf sein Gerät zuzugreifen. Wenn keine Geräte-PIN eingerichtet wurde, wird der Benutzer wird mit der Meldung „Ihre Organisation hat festgelegt, dass Sie zuerst eine Geräte-PIN aktivieren müssen, um auf diese App zugreifen zu können“ aufgefordert, eine PIN einzurichten. <br><br> Wechseln Sie zur [offiziellen Apple-Dokumentation](https://support.apple.com/en-us/HT202739), um zu prüfen, welche iOS-Verschlüsselungsmodule FIPS 140-2-zertifiziert sind bzw. bei welchen die FIPS 140-2-Zertifizierung aussteht. | **Require**  |
 
 
 ### <a name="functionality"></a>Funktionalität
@@ -101,7 +101,7 @@ Die App-Schutzrichtlinie von Intune erlaubt unter bestimmten Umständen die Date
 ## <a name="conditional-launch"></a>Bedingter Start
 Konfigurieren Sie die Einstellungen für einen bedingten Start, um die Sicherheitsanforderungen bei der Anmeldung für Ihre Zugriffsschutzrichtlinie festzulegen. 
 
-Standardmäßig werden mehrere Einstellungen mit vorkonfigurierten Werten und Aktionen bereitgestellt. Sie können einige davon löschen, z.B. *Mindestversion für Betriebssystem*. Außerdem können Sie zusätzliche Einstellungen in der Dropdownliste **Eine auswählen** auswählen. 
+Standardmäßig werden mehrere Einstellungen mit vorkonfigurierten Werten und Aktionen bereitgestellt. Sie können einige davon löschen, z. B. *Mindestversion für Betriebssystem*. Außerdem können Sie zusätzliche Einstellungen in der Dropdownliste **Eine auswählen** auswählen. 
 
 | Einstellung | Verwendung |  
 |---------|------------| 
