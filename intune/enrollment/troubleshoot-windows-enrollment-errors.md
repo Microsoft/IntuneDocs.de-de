@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 348768be4a42667f579df0ccb500434425258db0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892536"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712864"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>Behandeln von Problemen bei der Windows-Geräteregistrierung in Microsoft Intune
 
@@ -60,7 +60,7 @@ Fehler 80180003: „Es ist ein Problem aufgetreten. Dieser Benutzer ist nicht au
 Für dieses Problem gibt es mehrere mögliche Lösungen:
 
 ##### <a name="remove-devices-that-were-enrolled"></a>Registrierte Geräte entfernen
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) an.    
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)an.    
 2. Wechseln Sie zu **Benutzer**  > **alle Benutzer**.    
 3. Wählen Sie das betroffene Benutzerkonto aus, und klicken Sie dann auf **Geräte**.    
 4. Wählen Sie nicht verwendete oder unerwünschte Geräte aus, und klicken Sie dann auf **Löschen**. 
@@ -70,12 +70,12 @@ Für dieses Problem gibt es mehrere mögliche Lösungen:
 > [!NOTE]
 > Diese Methode erhöht den Grenzwert für die Geräteregistrierung für alle Benutzer, nicht nur für den betroffenen Benutzer.
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)an.
 2. Wechseln Sie zu **Geräte** Registrierung  >  Registrierungs**Beschränkungen**, und wählen Sie dann **Geräte Limit-Einschränkungen**aus.    
 3. Erhöhen Sie den Wert für **Geräte Limit**. 
 
 ##### <a name="check-device-type-restrictions"></a>Überprüfen der Gerätetypbeschränkungen
-1. Melden Sie sich mit einem globalen Administratorkonto beim [Intune-Portal](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) an.
+1. Melden Sie sich mit einem globalen Administrator Konto beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Wechseln Sie zu **Geräte** Registrierung  >  Registrierungs**Beschränkungen**, und wählen Sie dann die **Standard** Einschränkung unter **Gerätetyp Einschränkungen**aus.    
 3. Wählen Sie **Plattformen**und dann **zulassen** für **Windows (MDM)** aus.
 
@@ -219,7 +219,7 @@ Um dieses Problem in der Hybriden Verwaltung mobiler Geräte mit InTune und Conf
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>Bei der Massen Registrierung ist ein Setup Fehler aufgetreten.
 
-**Ursache:** Die Azure AD Benutzerkonten im Kontopaket (Package_GUID) für das jeweilige Bereitstellungs Paket dürfen Geräte nicht mit Azure AD verknüpfen. Diese Azure Ad Konten werden automatisch erstellt, wenn Sie ein Bereitstellungs Paket mit Windows Configuration Designer (WCD) oder der APP zum Einrichten von Schul-PCs einrichten. diese Konten werden dann verwendet, um die Geräte mit Azure AD zu verbinden.
+**Ursache:** Die Azure AD Benutzerkonten im Kontopaket (Package_GUID) für das jeweilige Bereitstellungs Paket dürfen Geräte nicht Azure AD hinzufügen. Diese Azure Ad Konten werden automatisch erstellt, wenn Sie ein Bereitstellungs Paket mit Windows Configuration Designer (WCD) oder der APP zum Einrichten von Schul-PCs einrichten. diese Konten werden dann verwendet, um die Geräte mit Azure AD zu verbinden.
 
 #### <a name="resolution"></a>Lösung
 1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) als Administrator an.    
@@ -373,7 +373,7 @@ Dieses Problem tritt normalerweise auf, wenn die Berechtigungen für die Organis
 
 1. Öffnen Sie **Active Directory-Benutzer und -Computer** („DSA.msc“).
 2. Klicken Sie mit der rechten Maustaste auf die Organisationseinheit, mit der Sie die in Azure AD Hybrid eingebundenen Computer erstellen möchten, und wählen Sie **Objektverwaltung zuweisen** aus.
-3. Wählen Sie im Assistenten zum Zuweisen der **Objektverwaltung** die Optionen **Weiter** > **Hinzufügen...**  > **Objekttypen** aus.
+3. Wählen Sie im Assistenten zum Zuweisen der **Objektverwaltung** die Optionen **Weiter** > **Hinzufügen...** > **Objekttypen** aus.
 4. Aktivieren Sie im Bereich **Objekttypen** das Kontrollkästchen **Computer**, und klicken Sie dann auf **OK**.
 5. Geben Sie im Bereich **Benutzer**, **Computer** oder **Gruppen auswählen** im Feld **Geben Sie die zu verwenden Objektnamen ein** den Namen des Computers ein, auf dem der Connector installiert ist.
 6. Wählen Sie **Namen überprüfen** aus, um den Eintrag zu überprüfen > **OK**  > **weiter**.

@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/12/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413872"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713486"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Vorbereiten von iOS-Apps für App-Schutzrichtlinien mit dem Intune App Wrapping Tool
 
@@ -44,7 +44,7 @@ Bevor Sie das App Wrapping Tool ausführen, müssen Sie einige allgemeine Voraus
 
   * Die Ausgangs-App-Datei muss die Erweiterung **.ipa** oder **.app** haben.
 
-  * Die Ausgangs-App muss für iOS 10 oder höher kompiliert sein.
+  * Die Eingangs-App muss für iOS 11 oder höher kompiliert sein.
 
   * Die Ausgangs-App darf nicht verschlüsselt werden.
 
@@ -289,26 +289,27 @@ Wenn das App Wrapping Tool nicht erfolgreich abgeschlossen wurde, wird eine der 
 |Die angegebene Eingabe-App wurde bereits umschlossen und verwendet die neueste Version der Richtlinienvorlage.|Das App Wrapping Tool umschließt eine vorhandene umschlossene App mit der neuesten Version der Richtlinienvorlage nicht erneut.|
 |WARNUNG: Sie haben kein SHA1-Zertifikathash angegeben. Stellen Sie sicher, dass die umschlossene Anwendung vor der Bereitstellung signiert wird.|Stellen Sie sicher, dass Sie ein gültiges SHA1-Hash gefolgt vom Befehlszeilenflag „–c“ angeben. |
 
-### <a name="log-files-for-the-app-wrapping-tool"></a>Protokolldateien für das App Wrapping Tool
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>Sammeln von Protokollen für die umschließenen Anwendungen vom Gerät
+Führen Sie die folgenden Schritte durch, um bei der Problembehandlung Protokolle für umschlossene Anwendungen zu erhalten.
 
-Apps, die mit dem App Wrapping Tool umschlossen wurden, generieren Protokolle, die in die iOS-Clientgerätekonsole geschrieben werden. Diese Informationen sind hilfreich, wenn Sie Probleme mit der Anwendung haben und ermitteln möchten, ob das Problem mit dem App Wrapping Tool zusammenhängt. Führen Sie die folgenden Schritte aus, um die Informationen abzurufen:
+1. Navigieren Sie auf Ihrem Gerät zur App mit den iOS-Einstellungen, und wählen Sie Ihre branchenspezifische App aus.
+2. Schalten Sie **Diagnosekonsole** auf **Ein** um.
+3. Starten Sie die Branchenanwendung.
+4. Klicken Sie auf den Link „Erste Schritte“.
+5. Sie können jetzt Protokolle per E-Mail freigeben oder sie an einen OneDrive-Speicherort kopieren.
+
+> [!NOTE]
+> Die Protokollierungsfunktionalität ist für Apps aktiviert, die mit dem Intune App Wrapping Tool Version 7.1.13 oder höher umschlossen wurden.
+
+### <a name="collecting-crash-logs-from-the-system"></a>Erfassen von Absturz Protokollen vom System
+
+Ihre APP protokolliert möglicherweise nützliche Informationen für die IOS-Client Geräte Konsole. Diese Informationen sind hilfreich, wenn Sie Probleme mit der Anwendung haben und ermitteln möchten, ob das Problem mit dem App Wrapping Tool oder der App selbst zusammenhängt. Führen Sie die folgenden Schritte aus, um die Informationen abzurufen:
 
 1. Reproduzieren Sie das Problem durch Ausführen der App.
 
 2. Sammeln Sie die Konsolenausgabe mit den folgenden Apple-Anweisungen für das [Debuggen bereitgestellter iOS-Apps](https://developer.apple.com/library/ios/qa/qa1747/_index.html).
 
-3. Filtern Sie die gespeicherten Protokolle nach der Ausgabe von App-Einschränkungen, indem Sie das folgende Skript in die Konsole eingeben:
-
-    ```bash
-    grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
-    ```
-
-    Sie können die gefilterten Protokolle an Microsoft senden.
-
-    > [!NOTE]
-    > In der Protokolldatei stellt das Element "Buildversion" die Version von Xcode dar.
-
-    Umschlossene Apps geben auch Benutzern die Möglichkeit, die Protokolle direkt vom Gerät per E-Mail zu versenden, falls die App abstürzt. Benutzer können Ihnen das Protokoll zusenden, damit Sie es überprüfen und ggf. an Microsoft weiterleiten.
+Umschlossene Apps geben auch Benutzern die Möglichkeit, die Protokolle direkt vom Gerät per E-Mail zu versenden, falls die App abstürzt. Benutzer können Ihnen das Protokoll zusenden, damit Sie es überprüfen und ggf. an Microsoft weiterleiten.
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>Anforderungen an Zertifikat, Bereitstellungsprofil und Authentifizierung
 
@@ -341,7 +342,7 @@ Vor dem Umschließen Ihrer App können Sie *Berechtigungen* erteilen, um der App
 
 1. Aktivieren Sie Funktionen in Ihrer App:
 
-    ein.  Navigieren Sie in Xcode zum Ziel Ihrer App, und klicken Sie auf **Funktionen**.
+    a.  Navigieren Sie in Xcode zum Ziel Ihrer App, und klicken Sie auf **Funktionen**.
 
     b.  Aktivieren Sie die entsprechenden Funktionen. Ausführlichere Informationen zu jeder einzelnen Funktion und wie Sie die richtigen Werte bestimmen, finden Sie unter [Hinzufügen von Funktionen](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) in der iOS-Entwicklerbibliothek.
 
@@ -351,7 +352,7 @@ Vor dem Umschließen Ihrer App können Sie *Berechtigungen* erteilen, um der App
 
 2. Aktivieren Sie Berechtigungen in Ihrem Bereitstellungsprofil:
 
-    ein.  Melden Sie sich beim „Apple Developer Member Center“ an.
+    a.  Melden Sie sich beim „Apple Developer Member Center“ an.
 
     b.  Erstellen Sie ein Bereitstellungsprofil für Ihre App. Anleitungen hierzu finden Sie unter [Abrufen der erforderlichen Komponenten für das Intune App Wrapping Tool für iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/).
 
@@ -442,19 +443,6 @@ Führen Sie einfach Ihren allgemeinen App-Umschließungsbefehl mit angefügtem `
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
-
-## <a name="getting-logs-for-your-wrapped-applications"></a>Abrufen von Protokollen für umschlossene Anwendungen
-
-Führen Sie die folgenden Schritte durch, um bei der Problembehandlung Protokolle für umschlossene Anwendungen zu erhalten.
-
-1. Navigieren Sie auf Ihrem Gerät zur App mit den iOS-Einstellungen, und wählen Sie Ihre branchenspezifische App aus.
-2. Schalten Sie **Diagnosekonsole** auf **Ein** um.
-3. Starten Sie die Branchenanwendung.
-4. Klicken Sie auf den Link „Erste Schritte“.
-5. Sie können jetzt Protokolle per E-Mail freigeben oder sie an einen OneDrive-Speicherort kopieren.
-
-> [!NOTE]
-> Die Protokollierungsfunktionalität ist für Apps aktiviert, die mit dem Intune App Wrapping Tool Version 7.1.13 oder höher umschlossen wurden.
 
 ## <a name="see-also"></a>Siehe auch
 

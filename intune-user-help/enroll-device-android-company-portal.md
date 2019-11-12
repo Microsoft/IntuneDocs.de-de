@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1670ddf9299d12312f09d188e4410d14ac40fbe7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 5baf0e9079cc148101a68e5cd2d3a4ed500f567f
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506320"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414843"
 ---
 # <a name="enroll-your-device-with-company-portal"></a>Registrieren Ihres Geräts im Unternehmensportal  
 Registrieren Sie Ihr privates oder unternehmenseigenes Android-Gerät, um sicheren Zugriff auf Unternehmens-E-Mails, -Apps und -Daten zu erhalten. Das Unternehmensportal unterstützt Android-Geräte, einschließlich Samsung Knox, mit Android 4.4 und höher.  
@@ -39,97 +39,63 @@ Registrieren Sie Ihr privates oder unternehmenseigenes Android-Gerät, um sicher
 
 Während der Registrierung werden Sie möglicherweise aufgefordert, eine Kategorie auszuwählen, die am besten beschreibt, wie Sie Ihr Gerät nutzen. Der Support Ihres Unternehmens verwendet Ihre Antwort, um die Apps zu überprüfen, auf die Sie Zugriff haben.  
 
-1. Öffnen Sie die Unternehmensportal-App.  
+1. Öffnen Sie die Unternehmensportal-App, und melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.  
 
-3. Tippen Sie im Unternehmensportal auf dem **Begrüßungsbildschirm** auf **Anmelden**, und melden Sie sich dann mit Ihrem Geschäfts-, Schul- oder Unikonto an.
+2. Wenn Sie dazu aufgefordert werden, die Geschäftsbedingungen Ihrer Organisation zu akzeptieren, tippen Sie auf **ALLE AKZEPTIEREN**.  
 
-   ![Die Willkommensseite der Unternehmensportal-App für Android mit der Aufforderung, sich mit dem erforderlichen Geschäfts-, Schul- oder Unikonto anzumelden. Zusätzlich wird darauf hingewiesen, dass Microsoft-Konten und andere persönliche Konten nicht akzeptiert werden.](./media/and-enroll-0-welcome-screen.png)   
+   ![Beispiel Bild des Bildschirms für die Unternehmensportal, Begriffe und Hervorhebung der Schaltfläche "alle akzeptieren".](./media/accept-terms-1911.png)  
 
-4. Wenn Sie dazu aufgefordert werden, die Geschäftsbedingungen Ihrer Organisation zu akzeptieren, tippen Sie auf **AKZEPTIEREN**. Diese Anzeige kann sich leicht vom Beispielscreenshot unten unterscheiden. 
 
-   ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
+3. Überprüfen Sie, was Ihre Organisation sehen kann und was nicht. Tippen Sie dann auf **WEITER**.
 
-5. Melden Sie sich bei der Unternehmensportal-App mit Ihrem Geschäfts-, Schul- oder Unikonto und dem zugehörigen Kennwort an, und tippen Sie dann auf **Anmelden**.
 
-   ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
+    ![Beispiel Bild Unternehmensportal, wir kümmern uns um den Datenschutz Bildschirm, der die Schaltfläche "weiter" hervorhebt.](./media/android-privacy-screen-1911.png)  
+4. Überprüfen Sie, was in den anstehenden Schritten zu erwarten ist. Tippen Sie dann auf **weiter**.  
 
-6. Tippen Sie auf dem Bildschirm **Unternehmenszugriff einrichten** auf **WEITER**.
+    ![Beispiel Bild Unternehmensportal, der nächste Bildschirm, Hervorhebung der Schaltfläche Weiter.](./media/android-whats-next-1911.png)  
 
-   ![Bildschirm „Unternehmenszugriff einrichten“](/intune/media/android_cp_enroll_01_1709_new.png)
 
-   > [!NOTE]
-   > Die gelben Dreiecke bedeuten nicht, dass bereits ein Fehler vorliegt. Sie geben lediglich an, dass für den Registrierungsprozess noch Schritte ausgeführt werden müssen.
+5. Abhängig von Ihrer Android-Version werden Sie möglicherweise aufgefordert, den Zugriff auf bestimmte Teile des Geräts zuzulassen. Diese Eingabe Aufforderungen sind für Google erforderlich und werden nicht von Microsoft gesteuert.  
 
-7. Prüfen Sie in der angezeigten Liste, was der Support Ihres Unternehmens auf Ihrem Gerät sehen kann und was nicht, und tippen Sie auf **WEITER**.
+    Tippen Sie auf **zulassen** für die folgenden Berechtigungen:  
+    * **Zulassen und Verwalten von Telefon anrufen durch Unternehmensportal**: diese Berechtigung ermöglicht dem Gerät, seine IMEI-Nummer (International Mobile Station Equipment Identity) mit InTune, dem Geräte Verwaltungs Anbieter Ihres Unternehmens, gemeinsam zu nutzen. Es ist sicher, diese Berechtigung zuzulassen. Microsoft wird niemals Telefonanrufe tätigen oder verwalten.  
+    * **Zugriff auf Ihre Kontakte durch Unternehmensportal zulassen**: mit dieser Berechtigung kann die Unternehmensportal-App Ihr Geschäftskonto erstellen, verwenden und verwalten.  Es ist sicher, diese Berechtigung zuzulassen. Microsoft greift nie auf Ihre Kontakte zu. 
 
-   ![Datenschutzeinstellungen](/intune/media/android_cp_enroll_02_after_1710.png)
+    Wenn Sie die Berechtigung verweigern, werden Sie erneut aufgefordert, wenn Sie sich das nächste Mal bei Unternehmensportal anmelden. Wenn Sie dies nicht wünschen, wählen Sie **Never ask again** (Nicht noch mal fragen) aus. Um App-Berechtigungen zu verwalten, wechseln Sie zu Einstellungen app > **apps** > **Unternehmensportal** > **Berechtigungen** > **Phone**.  
 
-8. Lesen Sie auf dem Bildschirm **What's next?** (Wie geht es weiter?), was während der Registrierung passiert, und tippen Sie dann auf **REGISTRIEREN**.
+6. Aktivieren Sie die Geräte Administrator-app. 
 
-   ![Was ist der nächste Schritt?](/intune/media/android_cp_enroll_03_after_1710.png)
+    Unternehmensportal benötigt Geräte Administrator Berechtigungen zur sicheren Verwaltung Ihres Geräts. Wenn Sie die APP aktivieren, kann Ihre Organisation mögliche Sicherheitsprobleme erkennen, z. b. wiederholte fehlgeschlagene Versuche, das Gerät zu entsperren, und entsprechend reagieren.  
 
-9. Wenn Sie Android 6.0 oder höher verwenden, führen Sie diesen Schritt aus. Fahren Sie andernfalls mit dem nächsten Schritt fort.
+    ![Beispiel Bild des Bildschirms "Geräte Administrator aktivieren", Hervorhebung der Schaltfläche "aktivieren".](./media/activate-device-administrator-1911.png)  
 
-   Wenn der Support Ihres Unternehmens bestimmte Richtlinien eingerichtet hat, werden möglicherweise folgende Meldungen angezeigt:
-   - **Zulassen, dass das Unternehmensportal Telefonanrufe tätigt und verwaltet?**
+> [!NOTE]
+> Microsoft steuert das Messaging auf diesem Bildschirm nicht. Wir wissen, dass der Ausdruck etwas drastisch erscheinen kann. Unternehmensportal können nicht angeben, welche Einschränkungen und der Zugriff für Ihre Organisation relevant sind. Wenn Sie Fragen haben, wie Ihre Organisation die APP verwendet, wenden Sie sich an Ihren IT-Support. Besuchen Sie die [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980), um die Kontaktinformationen für Ihre Organisation zu erhalten.  
 
-     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-   Wenn diese Meldung angezeigt wird, tippen Sie auf **ZULASSEN**. Sie können ruhig auf „ZULASSEN“ tippen, weil **Microsoft niemals Ihre Telefonanrufe tätigt oder verwaltet**! Google steuert den Meldungstext, daher kann er von Microsoft nicht geändert werden. Wenn Sie den Zugriff gewähren, erlauben Sie Ihrem Gerät schlicht, die IMEI-Nummer (International Mobile Station Equipment Identity) Ihres Geräts an Intune zu senden. Die IMEI ähnelt einer Seriennummer, mit der ein mobiles Gerät eindeutig identifiziert werden kann.
+7. Ihr Gerät beginnt mit der Einschreibung. Wenn Sie ein Samsung Knox-Gerät verwenden, werden Sie aufgefordert, die Datenschutzrichtlinie für den Elm-Agent zuerst zu überprüfen und zu bestätigen.   
 
-   Wenn Sie den Zugriff verweigern, wird die Nachricht bei der nächsten Anmeldung im Unternehmensportal noch mal angezeigt. Wenn Sie dies nicht wünschen, wählen Sie **Never ask again** (Nicht noch mal fragen) aus. Wenn Sie die Zugriffsberechtigung umkehren möchten, navigieren Sie zu **Einstellungen** > **Apps** >  **Unternehmensportal** > **Berechtigungen** > **Telefon**, und aktivieren Sie dann die Berechtigung.  
+    ![Beispiel Bild des Bildschirms für die Samsung Knox-Datenschutzrichtlinie, der während der Registrierung angezeigt wird.](./media/and-enroll-7-knox-privacy-policy.png)  
 
-   - **Zulassen, dass das Unternehmensportal auf Ihre Kontakte zugreift?**
+8. Überprüfen Sie auf dem Bildschirm **Unternehmens Zugriff einrichten** , ob Ihr Gerät registriert ist. Tippen Sie dann auf **WEITER**.  
 
-     ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
+    ![Beispiel Abbildung von Unternehmensportal, Bildschirm zum Einrichten des Unternehmens Zugriffs, das anzeigt, dass das Gerät verwaltet wird.](./media/update-settings-1911.png)  
 
-     Wenn diese Meldung angezeigt wird, tippen Sie auf **ZULASSEN**. Sie können ruhig auf „ZULASSEN“ tippen, weil **Microsoft niemals auf Ihre Kontakte zugreift**! Google steuert den Meldungstext, daher kann er von Microsoft nicht geändert werden. Wenn Sie den Zugriff gewähren, wird der Unternehmensportal-App lediglich das Erstellen, Verwenden und Verwalten Ihres Geschäftskontos erlaubt.
+9. In Ihrer Organisation ist es möglicherweise erforderlich, dass Sie Ihre Geräteeinstellungen aktualisieren. Tippen Sie auf **Auflösen** , um eine Einstellung anzupassen. Wenn Sie mit dem Aktualisieren der Einstellungen fertig sind, tippen Sie auf **weiter**.  
 
-     Wenn Sie den Zugriff verweigern, wird die Meldung bei Ihrer nächsten Anmeldung beim Unternehmensportal angezeigt. Sie können künftige Meldungen jedoch deaktivieren, indem Sie das Kontrollkästchen **Nicht mehr nachfragen** aktivieren. Wenn Sie den Zugriff später erlauben möchten, wechseln Sie zu **Einstellungen** &gt; **Apps** &gt; **Unternehmensportal** &gt; **Berechtigungen** &gt; **Telefon**, um die Berechtigung zu aktivieren.
+   ![Beispiel Abbildung Unternehmensportal, Aktualisieren von Geräteeinstellungen und hervorheben der Schaltflächen auflösen und fortfahren.](./media/resolve-settings-1911.png)  
 
-10. Klicken Sie auf dem Bildschirm **Geräteadministrator aktivieren** auf **Aktivieren**.
+10. Wenn das Setup abgeschlossen ist, tippen Sie auf **Fertig**.    
 
-    ![Bildschirm „Geräteadministrator aktivieren?“](./media/and-enroll-5-activate.png)
-
-    Die Geräteadministratorrolle wird vom Unternehmensportal benötigt, um Ihr Gerät zu verwalten. Damit kann Ihr Administrator bestimmte Dinge sehen – zum Beispiel wie oft Sie versucht haben, Ihren Bildschirm zu entsperren – und einige Aktionen vornehmen.    
-
-    Microsoft wird diese Meldung nicht kontrollieren, und wir wissen, dass die Ausdrucksweise etwas drastisch erscheinen kann. Es gibt keine Möglichkeit, dass das Unternehmensportal nur die Einschränkungen und Zugriffe anzeigt, die für Ihre Organisation relevant sind. Alle werden auf diesem Bildschirm auf einmal erteilt. Wenden Sie sich mithilfe der Kontaktinformationen auf der [Unternehmensportalwebsite](https://go.microsoft.com/fwlink/?linkid=2010980) an den Support Ihres Unternehmens, wenn Sie spezifische Fragen zur Verwendung in Ihrer Organisation haben.  
-
-11. Befolgen Sie die Aufforderungen zur Eingabe einer PIN oder eines Kennworts. Wenn Sie bereits eine PIN oder ein Kennwort auf diesem Gerät eingerichtet haben, wird dieser Bildschirm nicht angezeigt, und Sie werden nicht zur Eingabe einer neuen PIN oder eines neuen Kennworts aufgefordert.  
-
-    ![Eingeben von PIN oder Kennwort](./media/and-enroll-6-PIN-native.png)
-
-12. Wenn Sie ein Samsung Knox-Gerät verwenden, tippen Sie auf **Bestätigen**. Es wird eine Meldung angezeigt, die besagt, dass das Gerät registriert wird. Wenn Sie ein natives Android-Gerät verwenden, beachten Sie den folgenden Bildschirm, der anzeigt, dass das Gerät registriert wird.
-
-    ![Samsung KNOX-Datenschutzrichtlinie](./media/and-enroll-7-knox-privacy-policy.png)
-
-    Dieser Bildschirm zeigt an, dass das Gerät registriert wird.
-
-    ![Bildschirm „Gerät wird registriert“](./media/and-enroll-8-device-enrolling.png)
-
-13. Wenn der Bildschirm **Einrichten des Unternehmenszugriffs** angezeigt wird, tippen Sie auf **WEITER**. Wenn eine Meldung anzeigt, dass Ihr Gerät nicht kompatibel ist, befolgen Sie die Anweisungen zum Beheben des Problems, und tippen Sie dann auf **WEITER**.
-
-    ![Das Gerät ist nicht kompatibel, aber registriert.](/intune/media/android_cp_enroll_05_post_1709.png)
-
-    ![Es liegen Probleme mit der Gerätekompatibilität vor, die behoben werden müssen.](/intune/media/android_cp_enroll_03_post_1709.png)
-
-    Tippen Sie ggf. auf die einzelnen Probleme, um weitere Informationen zu erhalten.
-
-    ![Erweiterte Ansicht von Gerätekompatibilitätsproblemen](/intune/media/android_cp_enroll_04_post_1709.png)
-
-    ![Bildschirm „Unternehmenszugriff einrichten“](./media/and-enroll-9d-comp-access-setup.png)  
-
-14. Tippen Sie auf dem Bildschirm **Einrichten des Unternehmenszugriffs abgeschlossen** auf **FERTIG**. Ihr Gerät ist jetzt bei registriert.
-
-    ![Bildschirm „Einrichten des Unternehmenszugriffs abgeschlossen“](./media/and-enroll-10-comp-access-setup-complete.png)
+    ![Beispiel Abbildung Unternehmensportal, Bildschirm "Unternehmens Zugriff einrichten", zeigt die abgeschlossene Schaltfläche "Setup" und "Fertig".](./media/android-enrollment-done-1911.png) 
 
 ## <a name="next-steps"></a>Nächste Schritte  
 
-Bevor Sie versuchen, Unternehmens-Apps zu installieren, navigieren Sie zu **Einstellungen** > **Sicherheit**, und aktivieren Sie **Unknown sources** (Unbekannte Quellen). Wenn Sie diese Option nicht aktivieren, bevor Sie versuchen, Apps zu installieren, wird die folgende Meldung angezeigt: „Installation blockiert. Aus Sicherheitsgründen ist Ihr Gerät so eingestellt, dass die Installation von Apps aus unbekannten Quellen blockiert wird.“ Sie können im Fehlerdialogfeld auf **Einstellungen** tippen, um zur Option **Unknown sources** zu wechseln.  
+Bevor Sie versuchen, eine Schul-oder Arbeits-APP zu installieren, wechseln Sie zu **Einstellungen** > **Sicherheit**, und aktivieren Sie **unbekannte Quellen**. Wenn Sie diese Option nicht aktivieren, wird die folgende Meldung angezeigt, wenn Sie versuchen, eine App zu installieren: „Installation blockiert. Aus Sicherheitsgründen ist Ihr Gerät so eingestellt, dass die Installation von Apps aus unbekannten Quellen blockiert wird.“ Sie können in der Nachricht auf **Einstellungen** tippen, um direkt zu **unbekannten Quellen**zu wechseln.  
 
 > [!Note]
 > Wenn Ihre Organisation Telecom Expense Management-Software verwendet, müssen Sie ein paar zusätzliche Schritte ausführen, bevor das Gerät vollständig registriert ist. [Hier](enroll-your-device-with-telecom-expense-management-android.md) erfahren Sie mehr.
 
 Sollte beim Versuch der Registrierung Ihres Geräts bei Intune ein Fehler auftreten, können Sie [Registrierungsfehler an den Support Ihres Unternehmens senden](send-logs-to-your-it-admin-by-email-android.md).  
 
-Benötigen Sie weitere Unterstützung? Wenden Sie sich an den Support Ihres Unternehmens (suchen Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980) nach Kontaktinformationen) oder an das <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">Microsoft Android-Team</a>.
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  
