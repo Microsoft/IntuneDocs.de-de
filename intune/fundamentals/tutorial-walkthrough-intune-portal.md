@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 11/06/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6c627f5c9074bf6ce0a391174f5fe74b95b7885
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9197d4f96eae1041b00b07110ef421a12a4fe338
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504918"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712985"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>Tutorial: Überblick über Microsoft Intune im Azure-Portal
 
@@ -73,7 +73,7 @@ Befolgen Sie diese Schritte, um Intune im Azure-Portal besser kennen zu lernen. 
 
     ![Screenshot des Bereichs „Gerätekonformität“](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-03.png)
     
-    Bei Konformitätsanforderungen handelt es sich um die wesentlichen Regeln (z.B. das Erfordern eines Geräte-PIN oder der Geräteverschlüsselung). Über Gerätekonformitätsrichtlinien werden diese Regeln und Einstellungen definiert, die ein Gerät erfüllen muss, damit es als konform eingestuft wird. Voraussetzungen für die Verwendung der Option „Gerätekonformität“:
+    Bei Konformitätsanforderungen handelt es sich um die wesentlichen Regeln (z. B. das Erfordern eines Geräte-PIN oder der Geräteverschlüsselung). Über Gerätekonformitätsrichtlinien werden diese Regeln und Einstellungen definiert, die ein Gerät erfüllen muss, damit es als konform eingestuft wird. Voraussetzungen für die Verwendung der Option „Gerätekonformität“:
     - Ein Intune- und ein Azure Active Directory Premium-Abonnement
     - Geräte mit einer unterstützten Plattform
     - Bei Intune registrierte Geräte
@@ -85,7 +85,7 @@ Befolgen Sie diese Schritte, um Intune im Azure-Portal besser kennen zu lernen. 
 
     ![Screenshot des Bereichs „Gerätekonfiguration“](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-04.png)
     
-    Intune umfasst Einstellungen und Features, die Sie auf unterschiedlichen Geräten in Ihrer Organisation aktivieren oder deaktivieren können. Diese Einstellungen und Funktionen werden zu „Konfigurationsprofilen“ hinzugefügt. Sie können Profile für unterschiedliche Geräte und Plattformen einrichten, z.B. für iOS, Android und Windows. Anschließend können Sie Intune verwenden, um das Profil auf die Geräte in Ihrer Organisation anzuwenden.   
+    Intune umfasst Einstellungen und Features, die Sie auf unterschiedlichen Geräten in Ihrer Organisation aktivieren oder deaktivieren können. Diese Einstellungen und Funktionen werden zu „Konfigurationsprofilen“ hinzugefügt. Sie können Profile für unterschiedliche Geräte und Plattformen einrichten, z. B. für iOS, Android und Windows. Anschließend können Sie Intune verwenden, um das Profil auf die Geräte in Ihrer Organisation anzuwenden.   
 
     Weitere Informationen zur Gerätekonfiguration finden Sie unter [Anwenden von Einstellungen für Funktionen auf Ihren Geräten mit Geräteprofilen in Microsoft Intune](../configuration/device-profiles.md).
 
