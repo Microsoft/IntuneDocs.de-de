@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85f9bb72c6c40c67874326b06ebd41286d2d7220
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: d75e75dbce2563aaf31edede8eeab7249aad8e19
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73415186"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801773"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Updates der Benutzeroberfläche für Endbenutzer-Apps in Intune
 
@@ -40,7 +40,7 @@ Wenn Sie ein Mitarbeiter oder Kursteilnehmer sind, sollten Sie sich die Screensh
 ## <a name="week-of-october-28-2019"></a>Woche vom 28. Oktober 2019  
 
 ### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Verbessertes Prüflistendesign in der Unternehmensportal-App für Android <!-- 5550857 -->  
-Die Prüfliste für das Setup in der Unternehmensportal-App für Android wurde mit einem vereinfachten Design und neuen Symbolen aktualisiert. Die Änderungen stimmen mit den neuesten Updates überein, die an der Unternehmensportal-App für iOS vorgenommen wurden. Diese App-Updates werden zurzeit für alle Kunden bereitgestellt, und wir planen, die Bereitstellung bis Ende nächster Woche abgeschlossen zu haben. Weitere Informationen zu den aktualisierten Registrierungsschritten finden Sie unter [Registrieren bei Android-Arbeitsprofilen](/intune-user-help/enroll-device-android-work-profile) und [Registrieren Ihres Android-Geräts](/intune-user-help/enroll-device-android-company-portal).  
+Die Prüfliste für das Setup in der Unternehmensportal-App für Android wurde mit einem vereinfachten Design und neuen Symbolen aktualisiert. Die Änderungen stimmen mit den neuesten Updates überein, die an der Unternehmensportal-App für iOS vorgenommen wurden. Weitere Informationen zu den aktualisierten Registrierungsschritten finden Sie unter [Registrieren bei Android-Arbeitsprofilen](/intune-user-help/enroll-device-android-work-profile) und [Registrieren Ihres Android-Geräts](/intune-user-help/enroll-device-android-company-portal).  
 
 Der folgende Bildschirm zeigt die aktualisierte Prüfliste für die Registrierung von Android-Arbeitsprofilen:
 
