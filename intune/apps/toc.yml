@@ -185,7 +185,7 @@
     - name: Problembehandlung
       items:
         - name: Unterstützung von Benutzern beim Beheben von Problemen
-          href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/apps/breadcrumb/toc.json
+          href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
         - name: Problembehandlung bei der App-Installation
           href: troubleshoot-app-install.md
         - name: Problembehandlung der Verwaltung von mobilen Geräten
