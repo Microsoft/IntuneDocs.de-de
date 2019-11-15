@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c3cf75c1b5d6984a7f922af8b969458b4e4336e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 78d38b72c9853a9eadaf71fcdff7567fc66d35ca
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509174"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414670"
 ---
 # <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Registrieren oder Anmelden bei Microsoft Intune
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 In diesem Thema werden Systemadministratoren darauf hingewiesen, wie Sie sich für ein Intune-Konto anmelden können.
 
@@ -46,14 +44,17 @@ Wenn Sie bereits über ein Arbeits- oder Schulkonto verfügen, **melden Sie sich
 2. Registrieren Sie sich auf der Registrierungsseite, oder melden Sie sich an, um ein neues Intune-Abonnement zu verwalten.
 
 ## <a name="post-sign-up-considerations"></a>Überlegungen nach der Registrierung
+
 Nachdem Sie sich für ein neues Abonnement registriert haben, wird eine E-Mail mit Ihren Kontoinformationen an die von Ihnen bei der Registrierung angegebene E-Mail-Adresse gesendet. Diese E-Mail bestätigt, dass Ihr Abonnement aktiv ist.
 
 Nach Abschluss des Registrierungsprozesses werden Sie an das Microsoft 365 Admin Center weitergeleitet, das zum Hinzuzufügen von Benutzern und Zuweisen von Lizenzen verwendet wird. Wenn Sie nur cloudbasierte Konten mit Ihrem standardmäßigen Domänennamen onmicrosoft.com verwenden werden, können Sie an diesem Punkt Benutzer hinzufügen und ihnen Lizenzen zuweisen. Wenn Sie jedoch planen, den [Domänennamen Ihres Unternehmens](custom-domain-name-configure.md) zu verwenden oder [Benutzerkontoinformationen aus dem lokalen Active Directory zu synchronisieren](users-add.md#sync-active-directory-and-add-users-to-intune), können Sie dieses Browserfenster schließen.
 
 ## <a name="sign-in-to-microsoft-intune"></a>Anmelden bei Microsoft Intune
+
 Nachdem Sie sich für Intune registriert haben, können Sie sich auf jedem Gerät mit [unterstütztem Browser](supported-devices-browsers.md#intune-supported-web-browsers) bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) anmelden, um den Dienst zu verwalten.
 
 Standardmäßig muss Ihr Konto über eine der folgenden Berechtigungen in Azure AD verfügen:
+
 - Globaler Administrator
 - Intune-Dienstadministrator (auch als Intune-Administrator bezeichnet)
 
@@ -76,4 +77,5 @@ Microsoft 365 Business: https://portal.microsoft.com/adminportal
 Mobile Geräteverwaltung von Office 365: https://portal.office.com/adminportal/home#/MifoDevices
 
 ## <a name="see-also"></a>Siehe auch
+
 [Sie können sich nicht bei Office 365, Azure oder Intune anmelden](https://support.microsoft.com/help/2412085)

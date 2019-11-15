@@ -1,24 +1,20 @@
 ---
-ms.openlocfilehash: 797d1c66c50bed91f58eab535696b34001fcb28d
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: a20d1df2bf1e5052bcb2d3d83e919e190f8d9175
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "71239568"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445858"
 ---
 
 
 ### <a name="apple"></a>Apple
-- Apple iOS 10.0 und höher
+- Apple iOS und iPadOS 11.0 und höher
 - Mac OS X 10.12 oder höher
 
 ### <a name="google"></a>Google
-- Android 4.4 und höher (einschließlich Samsung KNOX Standard 4.4 und höher)
-
-  Eine vollständige Liste der verifizierten Samsung KNOX-Standardgeräte finden Sie in den [Android- und Samsung KNOX Standard-Richtlinieneinstellungen](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices).
-
-
-- [Android-Anforderungen](https://support.google.com/work/android/answer/6174145?hl=en) für Unternehmen
+- Android 5.0 und höher (einschließlich Samsung KNOX Standard 2.4 und höher: [Anforderungen](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+))
+- Android Enterprise: [Anforderungen](https://support.google.com/work/android/topic/9428066)
 
 ### <a name="microsoft"></a>Microsoft
 
@@ -26,18 +22,18 @@ ms.locfileid: "71239568"
 - Windows 10 (Home, S, Pro, Education und Enterprise)
 - Windows 10 Enterprise 2019 LTSC
 
-  Weitere Informationen über das Verwalten von Geräten unter Windows 10 2019 LTSC finden Sie unter [Neuerungen in Windows 10 Enterprise 2019 LTSC](https://docs.microsoft.com/en-us/windows/whats-new/ltsc/whats-new-windows-10-2019).
+  Weitere Informationen über das Verwalten von Geräten unter Windows 10 2019 LTSC finden Sie unter [Neuerungen in Windows 10 Enterprise 2019 LTSC](https://docs.microsoft.com/windows/whats-new/ltsc/whats-new-windows-10-2019).
   
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86, x64)
 - Windows 10 IoT Mobile Enterprise
 - Windows Holographic for Business
 
-  Weitere Informationen zum Verwalten von Geräten unter Windows Holographic for Business finden Sie unter [Windows Holographic for Business support](../windows-holographic-for-business.md) (Unterstützung von Windows Holographic for Business).
+  Weitere Informationen zum Verwalten von Geräten unter Windows Holographic for Business finden Sie unter [Windows Holographic for Business support](../fundamentals/windows-holographic-for-business.md) (Unterstützung von Windows Holographic for Business).
 
 - Windows 10 Teams (Surface Hub)
 
-   Weitere Informationen zum Verwalten von Geräten unter Windows 10 Teams finden Sie unter [Verwalten von Einstellungen mit einem MDM-Anbieter (Surface Hub)](https://docs.microsoft.com/en-us/surface-hub/manage-settings-with-mdm-for-surface-hub).
+   Weitere Informationen zum Verwalten von Geräten unter Windows 10 Teams finden Sie unter [Verwalten von Einstellungen mit einem MDM-Anbieter (Surface Hub)](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub).
 - Windows Phone 8.1, Windows 8.1 RT, PCs mit Windows 8.1 (Aufrechterhaltungsmodus)
 
 > [!NOTE]

@@ -18,16 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96c802e76aab673aa6a9108dc0a14f553c26b96b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505406"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445313"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Bei der Apple-Benutzerregistrierung unterstützte Intune-Aktionen und -Optionen
 
 Die Benutzerregistrierung unterstützt eine Teilmenge der Optionen für die Geräteverwaltung. Wenn ein bereits bestehendes Konfigurationsprofil auf ein Benutzerregistrierungsgerät angewendet wird, werden nur die von der Benutzerregistrierung unterstützten Einstellungen auf dieses Gerät angewendet.
+
+> [!NOTE]
+> Die Unterstützung für die Apple-Benutzerregistrierung in Intune befindet sich derzeit in der Vorschauphase.
 
 ## <a name="password-settings"></a>Kennworteinstellungen
 
@@ -97,6 +100,19 @@ Die folgenden Optionen werden auf Geräten, die bei der Benutzerregistrierung re
 - MDM-Steuerung von Anwendungen außerhalb des verwalteten APFS-Volumes.
 - Für diese Apps gelten weiterhin Anwendungsschutzrichtlinien. Sie können jedoch nicht die Verwaltung oder Bereitstellung einer verwalteten Version dieser Anwendungen übernehmen, es sei denn, der Benutzer löscht sie von seinem Gerät.
 - Aktionen, Konfigurationen, Einstellungen und Befehle, die eine Überwachung erfordern. 
+
+## <a name="options-not-supported-in-preview"></a>In der Vorschauversion nicht unterstützte Optionen
+- Registrierungsbeschränkungen von Gerätetypen zum Zulassen/Blockieren von persönlichen Geräten 
+
+## <a name="known-issues-in-preview"></a>Bekannte Probleme in der Vorschauversion
+- VPP-Lizenzsperrung: Es wird keine Benachrichtigung angezeigt, dass die Lizenz widerrufen wurde. Das aktuelle Verhalten ist, dass die Sperrung erfolgreich war, der Endbenutzer aber nicht benachrichtigt wird. 
+- VPP-Anwendungsberichterstattung: Im Bericht unter Client-Apps > Apps > [App-Name] > Geräteinstallationsstatus wird für VPP-Anwendungen, die auf von Benutzern registrierten Geräten bereitgestellt werden, eine Fehlermeldung generiert, selbst wenn die Anwendung erfolgreich auf dem Gerät bereitgestellt wurde. 
+- Anwendungsberichterstattung: Bei App-Typen, die bei der Benutzerregistrierung nicht unterstützt werden, können in Berichten irrelevante Fehlermeldungen auftreten. 
+- Benutzeroberfläche der Unternehmensportal-App: Benutzern werden alle ihre Apps angezeigt, unabhängig davon, ob diese Anwendungstypen für von Benutzern registrierte Geräte unterstützt werden. 
+- Benutzeroberfläche der Unternehmensportal-App: Benutzern wird derselbe Text angezeigt, der angibt, was Organisationen bei der Benutzer- und Geräteregistrierung sehen können.
+- Wenn ein Benutzer während der Registrierung „My organization owns this device“ (Meine Organisation besitzt dieses Gerät) auswählt, wird das Gerät in Intune weiterhin als „Persönlich“ gekennzeichnet, es sei denn, es wurde in der Verwaltungskonsole oder über einen Graphen anderweitig geändert. 
+- Registrierungsziel: iPadOS ist nicht in der Plattformauswahl aufgeführt. iPadOS wird in der Vorschauversion unterstützt, aber nicht explizit in der Verwaltungskonsole angegeben. 
+
 
 ## <a name="next-steps"></a>Nächste Schritte
 

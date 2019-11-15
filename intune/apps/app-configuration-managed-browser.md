@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ae1b5a51533bf14d4299fcf0248564562289f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507567"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592092"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Verwalten des Webzugriffs durch einen mittels Microsoft Intune-Richtlinien geschützte Browser
 
@@ -179,7 +179,7 @@ Verwenden Sie das oben beschriebene Verfahren, um eine Microsoft Edge-App-Konfig
 > [!NOTE]
 > Vergewissern Sie sich in der App-Schutzrichtlinie, die Microsoft Edge und die in der App-Konfiguration angegebenen zugehörigen Apps verwaltet, dass die folgenden Einstellungen für die Datenschutzrichtlinie festgelegt sind:
 > - Organisationsdaten an andere Apps senden: **Richtlinienverwaltete Apps**
-> - Webinhalt für per Richtlinie verwaltete Browser freigeben: **Require**
+> - Übertragung von Webinhalten mit anderen Apps einschränken: **Mit Richtlinien verwaltete Browser**
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>Konfigurieren von Anwendungsproxyeinstellungen für geschützte Browser
 

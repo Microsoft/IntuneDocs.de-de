@@ -4,17 +4,32 @@ description: Includedatei
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: include
-ms.date: 03/28/2019
+ms.date: 11/4/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 0aa78ec17aba5deb0c914c3698676219f203b856
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: edef1f43caff97ab75aa3c58034ed4fc2dffd208
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73415070"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73612065"
 ---
 Diese Hinweise enthalten wichtige Informationen, die Ihnen bei der Vorbereitung auf künftige Änderungen und Features im Zusammenhang mit Intune helfen können.
+
+### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>Stellen Sie sich auf eine Änderung ein: Aktualisierte Registrierung von dedizierten Android Enterprise-Geräten in Intune<!--5198878-->
+Mit dem Novemberrelease (1911-Release) in Intune erhalten dedizierte Android Enterprise-Geräte mehr Unterstützung für die Bereitstellung von SCEP-Gerätezertifikaten, um den zertifikatbasierten Zugriff auf WLAN-Profile zu ermöglichen. Diese Änderung umfasst auch einige geringfügige Änderungen am Flow bei der Registrierung von dedizierten Android Enterprise-Geräten.
+
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
+Wenn Sie in Ihrer Umgebung dedizierte Android Enterprise-Geräte verwalten, werden Sie ab November einige Änderungen bemerken.
+
+- Für neue Registrierungen von dedizierten Android Enterprise-Geräten: Endbenutzern werden während der Registrierung andere Schritte auf den Geräten angezeigt. Die Registrierung wird weiterhin gleich beginnen (mit QR, NFC, Zero Touch oder einem Gerätebezeichner), mit der Veröffentlichung der Dienstversion vom November wird jedoch ein obligatorischer App-Installationsschritt eingeführt.
+- Für vorhandene Android-Geräte, die als dedizierte Geräte registriert sind: Intune startet die automatische Installation der Microsoft Intune-App auf Geräten ab Anfang November. Sie müssen also keine Maßnahmen ergreifen. Die App wird automatisch auf Geräte heruntergeladen und installiert. 
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wie kann ich mich auf die Änderung vorbereiten?
+Planen Sie die Aktualisierung Ihres Endbenutzer-Leitfadens, und informieren Sie Ihren Helpdesk über diese Änderung. Klicken Sie für weitere Details und Screenshots auf „Zusätzliche Informationen“. Wir werden die Seite zu den Neuerungen aktualisieren, wenn die Einführung dieser Änderung beginnt.
+
+#### <a name="additional-information"></a>Zusätzliche Informationen
+[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>Stellen Sie sich auf eine Änderung ein: Die Einstellung „Serverseitige Protokollierung für Siri-Befehle“ wird aus der Intune-Konsole entfernt. <!-- 5468501-->
 

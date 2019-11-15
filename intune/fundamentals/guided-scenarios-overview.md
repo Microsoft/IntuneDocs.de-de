@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43c88366ea64182ccf8d45bc3e890a2579df20f1
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585643"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635368"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Übersicht über geführte Szenarios zu Intune 
 
@@ -46,7 +46,7 @@ Geführte Szenarios bieten eine spezifische Funktionalität. In den folgenden De
 
 ### <a name="launching"></a>Starten  
 
-Alle geführten Szenarios sind über **[Device Management portal](https://devicemanagement.microsoft.com)**  > **Troubleshooting + Help** > **Guided scenarios** (Geräteverwaltungsportal > Problembehandlung + Hilfe > Geführte Szenarios) verfügbar. 
+Alle geführten Szenarios sind über **[Geräteverwaltungsportal](https://devicemanagement.microsoft.com)**  > **Problembehandlung + Support** > **Geführte Szenarios** verfügbar. 
 
 Das geführte Szenario beginnt mit einer Einführung, in der der Zweck des Szenarios und alle Voraussetzungen zum Abschließen des Setups erläutert werden. Zu diesem Zeitpunkt werden Ihre Administratorberechtigungen überprüft, um sicherzustellen, dass Sie über alle erforderlichen Berechtigungen verfügen, um das Szenario abzuschließen.  
 

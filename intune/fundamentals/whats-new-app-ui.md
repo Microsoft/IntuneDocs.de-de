@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7517a2b60c4b5a893b90b09be72ddb363f23552a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 85f9bb72c6c40c67874326b06ebd41286d2d7220
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509986"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415186"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Updates der Benutzeroberfläche für Endbenutzer-Apps in Intune
 
@@ -36,6 +36,23 @@ Wenn Sie ein Mitarbeiter oder Kursteilnehmer sind, sollten Sie sich die Screensh
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+
+## <a name="week-of-october-28-2019"></a>Woche vom 28. Oktober 2019  
+
+### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>Verbessertes Prüflistendesign in der Unternehmensportal-App für Android <!-- 5550857 -->  
+Die Prüfliste für das Setup in der Unternehmensportal-App für Android wurde mit einem vereinfachten Design und neuen Symbolen aktualisiert. Die Änderungen stimmen mit den neuesten Updates überein, die an der Unternehmensportal-App für iOS vorgenommen wurden. Diese App-Updates werden zurzeit für alle Kunden bereitgestellt, und wir planen, die Bereitstellung bis Ende nächster Woche abgeschlossen zu haben. Weitere Informationen zu den aktualisierten Registrierungsschritten finden Sie unter [Registrieren bei Android-Arbeitsprofilen](/intune-user-help/enroll-device-android-work-profile) und [Registrieren Ihres Android-Geräts](/intune-user-help/enroll-device-android-company-portal).  
+
+Der folgende Bildschirm zeigt die aktualisierte Prüfliste für die Registrierung von Android-Arbeitsprofilen:
+
+|Aktualisiert|Zurück|  
+|---|---|  
+|![Beispielbild der Arbeitsprofileinrichtung im Unternehmensportal mit einer vereinfachten Prüfliste und neuen Symbolen.](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![Beispielbild der vorherigen Arbeitsprofileinrichtung im Unternehmensportal mit einer unübersichtlicheren Prüfliste.](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
+
+Der folgende Bildschirm zeigt die aktualisierte Prüfliste für die Android-Geräteadministratorregistrierung:  
+
+|Aktualisiert|Zurück|  
+|---|---|  
+|![Beispielbild der Android -Geräteadministratoreinrichtung im Unternehmensportal mit einer vereinfachten Prüfliste und neuen Symbolen.](./media/whats-new-app-ui/android-checklist-1911.png)|![Beispielbild der vorherigen Android -Geräteadministratoreinrichtung im Unternehmensportal mit einer unübersichtlicheren Prüfliste.](./media/whats-new-app-ui/android-checklist-1904.png)|  
 
 ## <a name="week-of-september-9-2019"></a>Woche vom 9. September 2019
 
@@ -572,6 +589,6 @@ Es folgen die Pläne für Möglichkeiten zum Verbessern der Benutzererfahrung du
 
 
 ## <a name="see-also"></a>Siehe auch
-* [Microsoft Intune-Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
+* [Microsoft Intune-Blog](https://go.microsoft.com/fwlink/?LinkID=273882)
 * [Roadmap für die Cloudplattform](https://www.microsoft.com/cloud-platform/roadmap)
-* [Neuerungen in Intune](../whats-new.md)
+* [Neuerungen in Intune](whats-new.md)
