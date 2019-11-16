@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8747f3dfa9169a4f1f2de9dcf45db0f5cccadd1
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: bacb7e26df8a5b0d6c7500b24a5e749a85ca62f2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73756757"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059632"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Verwenden und Verwalten von Android-Unternehmens Geräten mit oemconfig in Microsoft InTune
 
@@ -141,7 +141,7 @@ Im Vergleich zu Standard-apps erweitern oemconfig-Apps die von Google gewährten
 
 | OEM | Paket-ID | OEM-Dokumentation (falls verfügbar) |
 | --- | --- | ---|
-| Samsung | com. Samsung. Android. Knox. KPU | [Administrator Handbuch für Knox Service Plugin](https://docs.samsungknox.com/knox-service-plugin/admin-guide/welcome.htm) |
+| Samsung | com. Samsung. Android. Knox. KPU | [Administrator Handbuch für Knox Service Plugin](https://docs.samsungknox.com/knox-service-plugin/admin-guide/index.htm) |
 | Zebra Technologien | com. Zebra. oemconfig. Common | [Übersicht über "Zebra oemconfig"](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | com. Datalogic. oemconfig | [Benutzerdokumentation für Datalogic oemconfig](https://datalogic.github.io/oemconfig/) |
 | Honeywell | com. Honeywell. oemconfig |  |

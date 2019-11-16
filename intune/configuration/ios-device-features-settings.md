@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3e0ea523d71ff036f1f23c9436c65e105328d8b
-ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
+ms.openlocfilehash: 381ceea979dedf9b33cb7ef9c47291e3ac6ce20c
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057645"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117897"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>iOS- und iPadOS-Geräteeinstellungen zur Verwendung gängiger iOS-Features in Intune
 
@@ -290,13 +290,13 @@ Diese Funktion gilt für:
   > Mit dem Anmelde Informationstyp fügen Sie eigene Konfigurationswerte zum durch **laufen der Erweiterung** hinzu. Verwenden Sie stattdessen die von Apple bereitgestellten integrierten Konfigurationseinstellungen im **Kerberos** -Typ.
 
 - **Erweiterungs-ID** (nur Anmelde Informationen): Geben Sie die Bündel-ID ein, die Ihre SSO-App-Erweiterung identifiziert, z. b. `com.apple.extensiblesso`.
-- **Team-ID** (nur Anmelde Informationen): Geben Sie die Team Kennung Ihrer SSO-App-Erweiterung ein. Eine Team-ID ist eine Zeichenfolge mit einer alphanumerischen Zeichenfolge (Ziffern und Buchstaben) mit 10 Zeichen, die von Apple generiert wird, z. b. `ABCDE12345`. Die Team-ID ist nicht erforderlich.
+- **Team-ID** (nur Anmelde Informationen): Geben Sie die Team Kennung Ihrer SSO-App-Erweiterung ein. Eine Team-ID ist eine Zeichenfolge mit einer alphanumerischen Zeichenfolge (Ziffern und Buchstaben) mit 10 Zeichen, wie z. b. `ABCDE12345`. Die Team-ID ist nicht erforderlich.
 
   [Suchen Sie nach Ihrer Team-ID](https://help.apple.com/developer-account/#/dev55c3c710c) (öffnet die Website von Apple), die weitere Informationen enthält.
 
 - **Bereich**: Geben Sie den Namen des Kerberos-Bereichs ein. Der Bereichs Name sollte groß geschrieben werden, z. b. `CONTOSO.COM`. In der Regel ist Ihr Bereichs Name mit dem DNS-Domänen Namen identisch, aber in Großbuchstaben.
 
-- **Domänen**: Geben Sie die Domänen-oder Hostnamen der Standorte ein, die über SSO authentifiziert werden können. Wenn Ihre Website beispielsweise `mysite.contoso.com` ist, ist `mysite` der Hostname, und `contoso.com` ist der Domänen Name. Wenn Benutzer eine Verbindung mit einer dieser Websites herstellen, wird die Authentifizierungs Aufforderung von der APP-Erweiterung behandelt. Diese Authentifizierung ermöglicht es Benutzern, die Gesichts-ID, die Fingereingabe-ID oder Apple Pincode/Passcode für die Anmeldung zu verwenden.
+- **Domänen**: Geben Sie die Domänen-oder Hostnamen der Standorte ein, die über SSO authentifiziert werden können. Wenn Ihre Website beispielsweise `mysite.contoso.com`ist, ist `mysite` der Hostname, und `contoso.com` ist der Domänen Name. Wenn Benutzer eine Verbindung mit einer dieser Websites herstellen, wird die Authentifizierungs Aufforderung von der APP-Erweiterung behandelt. Diese Authentifizierung ermöglicht es Benutzern, die Gesichts-ID, die Fingereingabe-ID oder Apple Pincode/Passcode für die Anmeldung zu verwenden.
 
   - Alle Domänen in der Single Sign-on App-Erweiterung InTune-Profile müssen eindeutig sein. Sie können eine Domäne in Anmelde-App-Erweiterungs Profilen nicht wiederholen, auch wenn Sie unterschiedliche Typen von SSO-App-Erweiterungen verwenden.
   - Diese Domänen beachten nicht die Groß-/Kleinschreibung.
@@ -306,7 +306,7 @@ Diese Funktion gilt für:
   - **Werttyp**: Geben Sie den Typ der Daten ein. Folgende Optionen sind verfügbar:
 
     - Zeichenfolge
-    - Boolescher Wert: Geben Sie unter **Konfigurations Wert den Wert**`True` oder `False` ein.
+    - Boolescher Wert: Geben Sie unter **Konfigurations Wert**`True` oder `False`ein.
     - Integer: Geben Sie unter **Konfigurations Wert**eine Zahl ein.
     
   - **Konfigurations Wert**: Geben Sie die Daten ein.
@@ -322,11 +322,12 @@ Diese Funktion gilt für:
   > - **Aktivieren** Sie diese Einstellung, wenn Sie mehrere Bereiche verwenden. Der von Ihnen eingegebene **Bereichs** Wert wird als Standardbereich festgelegt.
   > - Wenn Sie nur über einen Bereich verfügen, lassen Sie ihn **nicht konfiguriert** (Standard).
 
-- **Prinzipal Name** (nur Kerberos): Geben Sie den Benutzernamen des Kerberos-Prinzipals ein. Sie müssen den Bereichs Namen nicht einschließen. In `user@contoso.com` ist `user` z. b. der Prinzipal Name, und `contoso.com` ist der Bereichs Name.
+- **Prinzipal Name** (nur Kerberos): Geben Sie den Benutzernamen des Kerberos-Prinzipals ein. Sie müssen den Bereichs Namen nicht einschließen. In `user@contoso.com`ist `user` z. b. der Prinzipal Name, und `contoso.com` ist der Bereichs Name.
 - **Active Directory Standortcode** (nur Kerberos): Geben Sie den Namen des Active Directory Standorts ein, der von der Kerberos-Erweiterung verwendet werden soll. Möglicherweise müssen Sie diesen Wert nicht ändern, da die Kerberos-Erweiterung möglicherweise automatisch den Active Directory Standort Codes findet.
 - **Cache Name** (nur Kerberos): Geben Sie den Namen des generischen Sicherheits Diensts (GSS) des Kerberos-Caches ein. Dieser Wert muss höchstwahrscheinlich nicht festgelegt werden.
 - **App-Bündel-IDs** (nur Kerberos): **fügen Sie** die APP Bundle Bezeichner hinzu, die Single Sign-on auf Ihren Geräten verwenden sollen. Diesen apps wird Zugriff auf das Kerberos-Ticket zum Erteilen von Tickets, das Authentifizierungs Ticket und das Authentifizieren von Benutzern für Dienste gewährt, auf die Sie Zugriff haben.
 - **Domänen Bereichs Zuordnung** (nur Kerberos): **fügen Sie** die Domänen-DNS-Suffixe hinzu, die dem Bereich zugeordnet werden sollen. Verwenden Sie diese Einstellung, wenn die DNS-Namen der Hosts nicht mit dem Bereichs Namen identisch sind. Wahrscheinlich ist es nicht erforderlich, diese benutzerdefinierte Domäne-zu-Bereich-Zuordnung zu erstellen.
+- **PKINIT-Zertifikat** (nur Kerberos): **Wählen Sie** die Kryptografie mit öffentlichem Schlüssel für das erste Authentifizierungszertifikat (PKINIT) aus, das zum Erneuern der Kerberos-Anmelde Informationen ohne Benutzerinteraktion verwendet werden kann. Das Zertifikat muss ein PKCS-oder SCEP-Zertifikat sein, das Sie zuvor zu InTune hinzugefügt haben.
 
 ## <a name="wallpaper"></a>Hintergrundbild
 

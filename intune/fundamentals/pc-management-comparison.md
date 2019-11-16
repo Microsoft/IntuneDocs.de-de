@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 11/13/2018
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ab16d79549a7fe7b0249c0c4af79ed56817ecec
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d8fd53e9d12dd38639d204e214aea03d733e584b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510049"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059197"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>Vergleichen der Verwaltung von Windows-PCs als Computer oder mobile Geräte
 
@@ -42,8 +42,8 @@ Organisationen können mit Microsoft Intune Windows-PCs entweder mithilfe der Ve
 |**Softwareupdateverwaltung**| Windows-Updates und Microsoft-App-Updates<br>[Aktualisieren Ihrer Windows-PCs mit Softwareupdates](../keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)|Microsoft-Store für Unternehmen für Windows 10 und Microsoft-Apps-Updates<br> [Konfigurieren von Einstellungen für Windows Update for Business](../protect/windows-update-for-business-configure.md) |
 |**Softwarelizenzverwaltung**|Verfügbar <br>[Verwalten von Lizenzverträgen für Windows-PC-Software](../manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)|Microsoft Store für Unternehmen (nur APPX-Apps)<br>[Verwalten von Apps, die im Microsoft Store für Unternehmen erworben wurden](../apps/windows-store-for-business.md)|
 |**Inventur**|Verfügbar <br>[Anzeigen des Hardware- und Softwarebestands für Windows-PCs](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md)|Verfügbar <br>[Überwachen von App-Informationen](../apps/apps-monitor.md)<br>[Was ist die Geräteverwaltung?](../remote-actions/device-management.md)|
-|**Windows-Firewall-Richtlinie**|Verfügbar <br>[Unterstützen des Schutzes von Windows-PCs mithilfe von Windows-Firewall-Richtlinien](../help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Verfügbar <br>[Windows Defender Firewall](../protect/endpoint-protection-windows-10.md#windows-defender-firewall)|
-|**Schutz vor Schadsoftware**|Endpoint Protection<br>[Schützen von Windows-PCs mit Endpoint Protection](../help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Windows Defender<br>[Aktivieren von Windows Defender](../protect/advanced-threat-protection.md)|
+|**Windows-Firewall-Richtlinie**|Verfügbar <br>[Unterstützen des Schutzes von Windows-PCs mithilfe von Windows-Firewall-Richtlinien](../help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md) |Verfügbar <br>[Microsoft Defender Firewall](../protect/endpoint-protection-windows-10.md#microsoft-defender-firewall)|
+|**Schutz vor Schadsoftware**|Endpoint Protection<br>[Schützen von Windows-PCs mit Endpoint Protection](../help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)|Microsoft Defender<br>[Aktivieren von Microsoft Defender](../protect/advanced-threat-protection.md)|
 |**Remoteunterstützung** |TeamViewer<br>[Anfordern und Bereitstellen von Remoteunterstützung für Windows-PCs](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md)|TeamViewer<br> [Verwenden von TeamViewer für die Remoteverwaltung von Intune-Geräten](../remote-actions/teamviewer-support.md) |
 |**App-Bereitstellung** | Für Microsoft Store für Unternehmen nicht verfügbar.<br>Nur EXE- und APPX-Dateien sowie aus mehreren Dateien bestehende MSI-Pakete<br>[Hinzufügen von Apps für Windows-PCs, auf denen der Intune-Softwareclient ausgeführt wird](add-apps-for-windows-pcs-in-microsoft-intune.md)|Für Microsoft Store-Apps und branchenspezifische Apps verfügbar<br>[Hinzufügen von Windows Store-Apps](../apps/store-apps-windows.md)<br>[How to add Windows line-of-business (LOB) apps (Informationen zum Hinzufügen branchenspezifischer Apps)](../apps/lob-apps-windows.md)|
 |**App-Schutz**|Nicht verfügbar|Verfügbar <br>[Was sind App-Schutzrichtlinien?](../apps/app-protection-policy.md)|

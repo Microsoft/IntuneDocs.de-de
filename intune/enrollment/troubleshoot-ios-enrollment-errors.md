@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 03ceaf5493f544dbb815146eb67c3fae8856d29e
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509234"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126151"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>Behandlung von Problemen bei der iOS-Geräteregistrierung in Microsoft Intune
 
@@ -84,6 +84,8 @@ Sammeln Sie die folgenden Informationen zum Problem:
 1. Entfernen Sie die Unternehmensportal-App von dem Gerät.
 2. Laden Sie die **Microsoft Intune Unternehmensportal**-App aus dem **App Store** herunter, und installieren Sie diese.
 3. Registrieren Sie das Gerät erneut.
+ > [!NOTE]
+    > Dieser Fehler kann auch auftreten, wenn der Benutzer versucht, mehr Geräte zu registrieren, als die Geräteregistrierung für zulassen konfiguriert ist. Befolgen Sie die Lösungsschritte für die Geräte Abdeckung, die unten **erreicht** sind, wenn diese Schritte das Problem nicht beheben.
 
 ### <a name="device-cap-reached"></a>Gerätekapazität erreicht
 
@@ -156,7 +158,7 @@ Erneuern Sie das APNs-Zertifikat, und registrieren Sie das Gerät erneut.
 - Informationen dazu, wie Sie das APNs-Zertifikat in InTune-Hybrid mit Configuration Manager erneuern, finden [Sie unter Einrichten der IOS-Hybrid Geräteverwaltung mit System Center Configuration Manager und Microsoft InTune](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac).
 - Informationen zum Erneuern des APNs-Zertifikats in Office 365 finden Sie unter [Erstellen eines APNs-Zertifikats für IOS-Geräte](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
 
-### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR-Verbindung ungültig
+### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR Verbindung ist ungültig.
 
 Wenn Sie ein DEP-verwaltetes Gerät einschalten, dem ein Anmeldungs Profil zugewiesen ist, tritt bei der Registrierung ein Fehler auf, und Sie erhalten die folgende Fehlermeldung:
 

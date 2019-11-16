@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 54995b54d7810c02c5a8b24e5ddff3fa1f08cb05
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143161"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117869"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>macOS-Gerätefunktionseinstellungen in Intune
 
@@ -139,12 +139,12 @@ Diese Funktion gilt für:
   > Mit dem Anmelde Informationstyp fügen Sie eigene Konfigurationswerte zum durch **laufen der Erweiterung** hinzu. Verwenden Sie stattdessen die von Apple bereitgestellten integrierten Konfigurationseinstellungen im **Kerberos** -Typ.
 
 - **Erweiterungs-ID** (nur Anmelde Informationen): Geben Sie die Bündel-ID ein, die Ihre SSO-App-Erweiterung identifiziert, z. b. `com.apple.ssoexample`.
-- **Team-ID** (nur Anmelde Informationen): Geben Sie die Team Kennung Ihrer SSO-App-Erweiterung ein. Eine Team-ID ist eine Zeichenfolge mit einer alphanumerischen Zeichenfolge (Ziffern und Buchstaben) mit 10 Zeichen, die von Apple generiert wird, z. b. `ABCDE12345`. 
+- **Team-ID** (nur Anmelde Informationen): Geben Sie die Team Kennung Ihrer SSO-App-Erweiterung ein. Eine Team-ID ist eine Zeichenfolge mit einer alphanumerischen Zeichenfolge (Ziffern und Buchstaben) mit 10 Zeichen, wie z. b. `ABCDE12345`. 
 
   [Suchen Sie nach Ihrer Team-ID](https://help.apple.com/developer-account/#/dev55c3c710c) (öffnet die Website von Apple), die weitere Informationen enthält.
 
 - **Bereich**: Geben Sie den Namen Ihres Authentifizierungs Bereichs ein. Der Bereichs Name sollte groß geschrieben werden, z. b. `CONTOSO.COM`. In der Regel ist Ihr Bereichs Name mit dem DNS-Domänen Namen identisch, aber in Großbuchstaben.
-- **Domänen**: Geben Sie die Domänen-oder Hostnamen der Standorte ein, die über SSO authentifiziert werden können. Wenn Ihre Website beispielsweise `mysite.contoso.com` ist, ist `mysite` der Hostname, und `contoso.com` ist der Domänen Name. Wenn Benutzer eine Verbindung mit einer dieser Websites herstellen, wird die Authentifizierungs Aufforderung von der APP-Erweiterung behandelt. Diese Authentifizierung ermöglicht es Benutzern, die Gesichts-ID, die Fingereingabe-ID oder Apple Pincode/Passcode für die Anmeldung zu verwenden.
+- **Domänen**: Geben Sie die Domänen-oder Hostnamen der Standorte ein, die über SSO authentifiziert werden können. Wenn Ihre Website beispielsweise `mysite.contoso.com`ist, ist `mysite` der Hostname, und `contoso.com` ist der Domänen Name. Wenn Benutzer eine Verbindung mit einer dieser Websites herstellen, wird die Authentifizierungs Aufforderung von der APP-Erweiterung behandelt. Diese Authentifizierung ermöglicht es Benutzern, die Gesichts-ID, die Fingereingabe-ID oder Apple Pincode/Passcode für die Anmeldung zu verwenden.
 
   - Alle Domänen in der Single Sign-on App-Erweiterung InTune-Profile müssen eindeutig sein. Sie können eine Domäne in Anmelde-App-Erweiterungs Profilen nicht wiederholen, auch wenn Sie unterschiedliche Typen von SSO-App-Erweiterungen verwenden.
   - Diese Domänen beachten nicht die Groß-/Kleinschreibung.
@@ -154,7 +154,7 @@ Diese Funktion gilt für:
   - **Werttyp**: Geben Sie den Typ der Daten ein. Folgende Optionen sind verfügbar:
 
     - Zeichenfolge
-    - Boolescher Wert: Geben Sie unter **Konfigurations Wert den Wert**`True` oder `False` ein.
+    - Boolescher Wert: Geben Sie unter **Konfigurations Wert**`True` oder `False`ein.
     - Integer: Geben Sie unter **Konfigurations Wert**eine Zahl ein.
     
   - **Konfigurations Wert**: Geben Sie die Daten ein.
@@ -179,12 +179,13 @@ Diese Funktion gilt für:
 - **Minimal Kennwort** (nur Kerberos): Geben Sie die Anzahl von Tagen ein, die ein Kennwort für die Domäne verwendet werden muss, bevor ein Benutzer es ändern kann. **Nicht konfiguriert** (Standard) erzwingt kein minimal Alter von Kenn Wörtern, bevor Sie geändert werden können.
 - **Benachrichtigung über Kenn Wort Ablauf** (nur Kerberos): Geben Sie die Anzahl von Tagen ein, bevor ein Kennwort abläuft, damit Benutzer benachrichtigt werden, dass Ihr Kennwort abläuft. **Nicht konfiguriert** (Standard) verwendet `15` Tage.
 - **Kennwortablauf** (nur Kerberos): Geben Sie die Anzahl der Tage an, nach denen das Gerätekennwort geändert werden muss. **Nicht konfiguriert** (Standard) bedeutet, dass Benutzer Kennwörter nie ablaufen.
-- **Prinzipal Name** (nur Kerberos): Geben Sie den Benutzernamen des Kerberos-Prinzipals ein. Sie müssen den Bereichs Namen nicht einschließen. In `user@contoso.com` ist `user` z. b. der Prinzipal Name, und `contoso.com` ist der Bereichs Name.
+- **Prinzipal Name** (nur Kerberos): Geben Sie den Benutzernamen des Kerberos-Prinzipals ein. Sie müssen den Bereichs Namen nicht einschließen. In `user@contoso.com`ist `user` z. b. der Prinzipal Name, und `contoso.com` ist der Bereichs Name.
 - **Active Directory Standortcode** (nur Kerberos): Geben Sie den Namen des Active Directory Standorts ein, der von der Kerberos-Erweiterung verwendet werden soll. Möglicherweise müssen Sie diesen Wert nicht ändern, da die Kerberos-Erweiterung möglicherweise automatisch den Active Directory Standort Codes findet.
 - **Cache Name** (nur Kerberos): Geben Sie den Namen des generischen Sicherheits Diensts (GSS) des Kerberos-Caches ein. Dieser Wert muss höchstwahrscheinlich nicht festgelegt werden.  
 - **Meldung zu Kenn Wort Anforderungen** (nur Kerberos): Geben Sie eine Textversion der Kenn Wort Anforderungen Ihres Unternehmens ein, die den Benutzern angezeigt wird. Die Meldung wird angezeigt, wenn Sie keine Anforderungen an die Kenn Wort Komplexität Active Directory müssen, oder geben Sie eine minimale Kenn Wort Länge ein.  
 - **App-Bündel-IDs** (nur Kerberos): **fügen Sie** die APP Bundle Bezeichner hinzu, die Single Sign-on auf Ihren Geräten verwenden sollen. Diesen apps wird Zugriff auf das Kerberos-Ticket zum Erteilen von Tickets, das Authentifizierungs Ticket und das Authentifizieren von Benutzern für Dienste gewährt, auf die Sie Zugriff haben.
 - **Domänen Bereichs Zuordnung** (nur Kerberos): **fügen Sie** die Domänen-DNS-Suffixe hinzu, die dem Bereich zugeordnet werden sollen. Verwenden Sie diese Einstellung, wenn die DNS-Namen der Hosts nicht mit dem Bereichs Namen identisch sind. Wahrscheinlich ist es nicht erforderlich, diese benutzerdefinierte Domäne-zu-Bereich-Zuordnung zu erstellen.
+- **PKINIT-Zertifikat** (nur Kerberos): **Wählen Sie** die Kryptografie mit öffentlichem Schlüssel für das erste Authentifizierungszertifikat (PKINIT) aus, das zum Erneuern der Kerberos-Anmelde Informationen ohne Benutzerinteraktion verwendet werden kann. Das Zertifikat muss ein PKCS-oder SCEP-Zertifikat sein, das Sie zuvor zu InTune hinzugefügt haben.
 
 ## <a name="associated-domains"></a>Zugeordnete Domänen
 

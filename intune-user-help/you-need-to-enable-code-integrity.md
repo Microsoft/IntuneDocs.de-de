@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/19/2019
+ms.date: 11/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,18 +19,18 @@ ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6bde7fc554496b2ecc6f13c7e1b899d7ff05bfa1
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 2b26717e2e8beed2e92f47dca17cbea0ec47a82b
+ms.sourcegitcommit: 244a75622f9cebaaaf5b33aadd8931407a2e2e48
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755000"
+ms.lasthandoff: 11/14/2019
+ms.locfileid: "74096747"
 ---
 # <a name="enable-code-integrity"></a>Aktivieren der Codeintegrität
 
 Ihre Organisation erfordert möglicherweise, dass Ihr PC mit einem Bedrohungsschutz Feature namens " *Code Integrität*" aktiviert wird. Code Integrität prüft die Treiber und Systemdateien auf Ihrem Gerät auf Anzeichen von Beschädigungen oder Schadsoftware. Damit die Code Integrität auf Ihrem Gerät funktioniert, muss ebenfalls eine andere Sicherheitsfunktion mit dem Namen " [*sicherer Start*](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) " aktiviert werden.
 
-Wenn Ihr PC nicht kompatibel ist, weil die Code Integrität deaktiviert ist, wenden Sie sich an das IT-Support Team Ihres Unternehmens. Sie helfen Ihnen, den sicheren Start zu aktivieren, wodurch die Code Integrität beim nächsten Start des Geräts auslöst.
+Wenn Ihr PC nicht kompatibel ist, weil die Code Integrität deaktiviert ist, wenden Sie sich an den IT-Support Ihres Unternehmens. Ihr Supportmitarbeiter hilft Ihnen, den sicheren Start zu aktivieren. Dadurch wird die Code Integrität beim nächsten Start des Geräts auslöst. 
 
 Wenn Sie sich als erweiterter Gerätebenutzer identifizieren und die Schritte selbst ausprobieren möchten, finden Sie weitere Informationen unter Erneutes [Aktivieren des sicheren Starts](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 

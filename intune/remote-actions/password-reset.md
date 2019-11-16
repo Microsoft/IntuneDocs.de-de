@@ -3,8 +3,8 @@ title: Reduzieren von Helpdeskkosten
 titleSuffix: Microsoft Intune
 description: Reduzieren von Helpdeskkosten mit Self-Service-Kennwortzurücksetzung
 keywords: Azure Active Directory-SSPR-Kennwortzurücksetzung
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: archived
@@ -15,16 +15,17 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1da1758dcc1743087191f69bd4d57bc113774d81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 08dc14a3abed634721b39fedaae840e2b18c151b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509300"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058117"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Reduzieren von Helpdeskkosten mit Self-Service-Kennwortzurücksetzung
 
 Sie können Mitarbeitern erlauben, Kennwörter von Geschäfts-, Schul- oder Unikonten ohne Helpdesk-Unterstützung zurückzusetzen. Diese Art der Self-Service-Kennwortzurücksetzung wird in den folgenden Situationen empfohlen:
+
 * Ihr Unternehmen, Ihre Schule oder Ihre Universität verwendet Azure Active Directory für Geschäfts-, Schul- oder Unikonten.
 * Ihre Mitarbeiter, Schüler und Studenten verfügen über Internetzugriff.
 * Sie möchten die Helpdesk-Kosten reduzieren.
@@ -39,6 +40,7 @@ Sie können Mitarbeitern erlauben, Kennwörter von Geschäfts-, Schul- oder Unik
 ## <a name="next-steps"></a>Nächste Schritte
 
 Erfahren Sie mehr über die folgenden Artikel:
+
 * [Bewährte Methoden für Kennwörter](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [Lizenzanforderungen für Azure AD-Self-Service-Kennwortzurücksetzung](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 
