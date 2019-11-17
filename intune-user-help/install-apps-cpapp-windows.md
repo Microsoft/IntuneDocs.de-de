@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 11/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8cb6976121f4c5a9ce755e8feb189ea007e7ffd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 80fd2d54a99bc3f4ab47f48f94eb14aa1a7f630c
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506130"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126197"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Installieren und freigeben von Apps auf Ihrem Gerät
 
@@ -41,7 +41,7 @@ Installieren Sie über die Unternehmensportal-App für Windows Apps auf Ihrem Ge
     * **Alle anzeigen:** Klicken Sie auf der **Startseite** im Abschnitt **Apps** auf **Alle anzeigen**, um alle verfügbaren Apps anzuzeigen.  
     * **Alle Apps:** Wählen Sie diese Seite im Navigationsbereich aus, um alle verfügbaren Apps anzuzeigen, einschließlich aller installierten und ausgewählten Apps. Anzeigen, Sortieren und Filtern der apps. Die Suchergebnisse werden automatisch nach Relevanz sortiert.  
     * **App-Kategorien**: Wählen Sie diese Seite im Navigationsbereich aus, um apps basierend auf dem Typ oder der Funktion auszuwählen. Apps werden in Kategorien wie z. b. " **angeboten**", " **Education**" und " **Productivity**  
-    * **Nach Apps suchen**: Eine statische Suchleiste befindet sich im Navigationsbereich der App.  Suchen Sie nach dem App-Namen oder dem Herausgeber, um Ihre verfügbaren Apps zu finden.  
+    * **Nach Apps suchen**: Eine statische Suchleiste befindet sich im Navigationsbereich der App. Suchen Sie nach dem App-Namen oder dem Herausgeber, um Ihre verfügbaren Apps zu finden.  
 
 3. Wählen Sie eine App aus.   
 4. Klicken Sie auf der Seite mit den App-Details auf **Installieren**. Nach Abschluss der Installation wird auf der Seite der Status **Installiert** angezeigt.  
@@ -69,10 +69,10 @@ Empfehlen Sie Ihren Arbeits- oder Schul- bzw. Unikontakten Apps, und geben Sie s
 
 Nachdem Sie den Link mit einer Person geteilt haben, erhält der Empfänger einen Link sowie eine Benachrichtigung, um die Details der App anzuzeigen. Mit dem Link wird die Seite **App-Details** des Unternehmensportals geöffnet. 
 
-## <a name="available-and-required-apps"></a>Verfügbare und erforderliche apps
-Apps werden Ihnen von Ihrer Organisation zugewiesen und in Unternehmensportal als **verfügbar** oder **erforderlich**bezeichnet. 
+## <a name="optional-and-required-apps"></a>Optionale und erforderliche apps
+Apps werden Ihnen von Ihrer Organisation zugewiesen. Ihre Organisation erfordert einige apps und macht andere apps optional. Wenn Sie herausfinden möchten, welche apps bzw. optional sind, wechseln Sie zu **installierte apps** , und sehen Sie sich die für **Ihre Organisation erforderliche**Spalte an.  
 
-* Verfügbare apps: diese apps werden von Ihrer Organisation ausgewählt und sind für die Arbeit oder Schule geeignet. Sie sind optional für die Installation, und sind die einzigen apps, die Sie im Unternehmensportal finden, die Sie installieren möchten. 
+* Optionale apps: diese apps werden von Ihrer Organisation ausgewählt und sind für die Arbeit oder Schule geeignet und hilfreich. Sie werden Ihnen zur Verfügung gestellt, aber es liegt an Ihnen, ob Sie Sie installieren möchten. Dies sind die einzigen apps, die Sie in der zu installierenden Unternehmensportal finden. 
 
 * Erforderliche apps: diese apps sind für die Arbeit und die Schule erforderlich und werden direkt auf Ihrem Gerät bereitgestellt. Diese apps werden ohne Eingriff automatisch für Sie installiert. 
 
@@ -86,15 +86,13 @@ Wenn Sie eine App benötigen, diese jedoch nicht im Unternehmensportal finden, k
 ## <a name="view-installed-apps"></a>Anzeigen installierter apps  
 Zeigen Sie eine Liste aller auf dem Gerät installierten apps an. Auf der Seite **installierte apps** sind die folgenden Details zu den einzelnen apps aufgeführt:
 
-* Name: Der Name der App. Zu den verfügbaren apps gehört ein Link zur Seite " **App-Details** ".
+* Name: Der Name der App. Optionale Apps enthalten einen Link zur Seite " **App-Details** ".
 * Zuweisungstyp: gibt an, wie die APP zugewiesen und Ihnen zur Verfügung gestellt wird. 
 * Herausgeber: der Name des Entwicklers oder des Unternehmens, der die APP verteilt hat. Ein Verleger ist in der Regel ein Softwarehersteller oder Ihre Organisation.  
 * Veröffentlichtes Datum: das Datum, an dem die App heruntergeladen werden konnte. Das Veröffentlichungsdatum kann die anfängliche Version einer APP oder das aktuellste Update einer App anzeigen.
 * Status: der aktuelle Installationsstatus der APP auf Ihrem Gerät. Apps können als Installation, Installation und Installation angezeigt werden. Es kann bis zu 10 Minuten dauern, bis erforderliche apps einen aktuellen Status anzeigen. Wichtige Informationen zum Installieren einer erforderlichen App finden Sie im Hinweis unter [Installieren von apps](#install-apps) . 
 
-Um zu dieser Seite zu gelangen, klicken Sie auf das Navigationsmenü, und wählen Sie **installierte apps**aus. 
-
-  ![Beispielscreenshot: Seite „Installierte Apps“ in der Unternehmensportal-App für Windows 10 ](./media/installed-apps-cp-1906.png)  
+Um zu dieser Seite zu gelangen, klicken Sie auf das Navigationsmenü, und wählen Sie **installierte apps**aus.  
 
 
 Verwenden Sie **Sortieren nach** , um den App-Zuweisungstyp, den Verleger, den alphabetisch nach dem Namen oder das Schema nach Veröffentlichungsdatum neu anzuordnen. Verwenden Sie **Filter by** , um die apps, die Sie nach dem Installationsstatus sehen, einzuschränken.  Wenn keine apps verfügbar sind, wird eine Meldung angezeigt, dass keine Unternehmens-apps installiert wurden.  

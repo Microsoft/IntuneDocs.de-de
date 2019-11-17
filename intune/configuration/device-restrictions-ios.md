@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 488794fdce8f6ebb074648c8e399cb2aecc73b25
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 391c5ac194d5dc7ddf492fe23907279cc4380d3d
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709755"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984120"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS- und iPadOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
@@ -57,7 +57,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Einstellungen gelten für: automatisierte Geräteregistrierung (überwacht)
 
-- **Änderung der Einstellungen zur Diagnoseübermittlung** : **Blockieren** verhindert, dass der Benutzer in **Diagnose- und Nutzung** (Geräteeinstellungen) Änderungen an den Einstellungen für Diagnoseübermittlung und App-Analyse vornimmt. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Geräteeinstellungen zu ändern.
+- **Änderung der Einstellungen zur Diagnoseübermittlung **: **Blockieren** verhindert, dass der Benutzer in **Diagnose- und Nutzung** (Geräteeinstellungen) Änderungen an den Einstellungen für Diagnoseübermittlung und App-Analyse vornimmt. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Geräteeinstellungen zu ändern.
 
   Um diese Einstellung zu verwenden, legen Sie die Einstellung **Nutzungsdaten freigeben** auf **blockieren**fest.
 
@@ -82,7 +82,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 - **Bildschirmzeit**: Wählen Sie **Blockieren**, um zu verhindern, dass Benutzer ihre eigenen Einschränkungen in „Bildschirmzeit“ (Geräteeinstellungen) vornehmen. **Nicht konfiguriert** erlaubt dem Benutzer das Konfigurieren von Geräteeinschränkungen (z. B. Jugendschutz oder Inhalts- und Datenschutzeinschränkungen) auf dem Gerät.
 
-  Diese Einstellung hieß zuvor **Aktivieren von Einschränkungen in den Geräteeinstellungen**. Diese Änderung hat folgende Auswirkungen:  
+  Diese Einstellung hieß zuvor **Aktivieren von Einschränkungen in den Geräteeinstellungen**. Auswirkungen dieser Änderung:  
   
   - iOS 11.4.1 und früher: **Blockieren** verhindert, dass Endbenutzer die für sie geltenden Einschränkungen der Geräteeinstellungen bearbeiten. Dieses Verhalten bewirkt dasselbe, sodass es keine Änderungen für Endbenutzer gibt.
   - iOS 12.0 und neuer: **Blockieren** verhindert, dass Endbenutzer die für sie geltende **Bildschirmzeit** (einschließlich Einschränkungen von Inhalt und Datenschutz) in den Geräteeinstellungen (Einstellungen > Allgemein > Bildschirmzeit) bearbeiten. Bei auf iOS 12.0 aktualisierten Geräten wird die Registerkarte „Einschränkungen“ in den Geräteeinstellungen nicht mehr angezeigt (Einstellungen > Allgemein > Geräteverwaltung > Verwaltungsprofil > Einschränkungen). Diese Einstellungen befinden sich unter **Bildschirmzeit**.
@@ -194,7 +194,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
   > [!NOTE]
   > Die Intune-Benutzeroberfläche für diese Einstellung trennt die unterstützten Werte für IOS und ipados nicht. Die Benutzeroberfläche wird in einer zukünftigen Version möglicherweise aktualisiert.
 
-- **Kennwortablauf (Tage)** : Geben Sie die Anzahl der Tage an, nach denen das Gerätekennwort geändert werden muss.
+- **Kennwortablauf (Tage)**: Geben Sie die Anzahl der Tage an, nach denen das Gerätekennwort geändert werden muss.
 - **Wiederverwendung vorheriger Kennwörter verhindern**: Geben Sie die Anzahl neuer Kennwörter ein, die verwendet werden müssen, bevor ein altes Kennwort wiederverwendet werden kann.
 - Entsperrung der Fingereingabe **-ID und der Gesichts Kennung**: Wählen Sie **Block** aus, um zu verhindern, dass das Gerät mithilfe eines Fingerabdrucks **Nicht konfiguriert** ermöglicht dem Benutzer das Entsperren des Geräts mittels dieser Methoden.
 
@@ -371,7 +371,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
   Diese Funktion gilt für:  
   - IOS 13,0 und ipados 13,0 und höher
 
-- **Änderungen an den Einstellungen der App „Meine Freunde suchen“** : **Blockieren** verhindert Änderungen der Einstellungen für die App „Meine Freunde suchen“. **Nicht konfiguriert** (Standard) ermöglicht Benutzern das Ändern von Einstellungen für die App „Meine Freunde suchen“.
+- **Änderungen an den Einstellungen der App „Meine Freunde suchen“**: **Blockieren** verhindert Änderungen der Einstellungen für die App „Meine Freunde suchen“. **Nicht konfiguriert** (Standard) ermöglicht Benutzern das Ändern von Einstellungen für die App „Meine Freunde suchen“.
 
 - **Spotlight-Suche gibt Ergebnisse aus dem Internet zurück**: **Blockieren** verhindert, dass Spotlight Ergebnisse einer Internetsuche zurückgibt. **Nicht konfiguriert** (Standard) ermöglicht der Spotlight-Suchfunktion das Herstellen einer Verbindung mit dem Internet zur Bereitstellung von Suchergebnissen.
 
@@ -447,12 +447,21 @@ Apps können Sie wie folgt hinzufügen:
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Einstellungen gelten für: Geräteregistrierung, automatisierte Geräteregistrierung (überwacht)
 
+Hinweis für das Datenroaming (Tipp oder wichtiger Hinweis zur Unterstützung der Kunden Verwirrung): Diese Einstellung wird im Verwaltungs Profil des Zielgeräts nicht angezeigt. Dies liegt daran, dass diese Einstellung als Remote Geräte Aktion behandelt wird und jedes Mal, wenn der Status des Datenroaming auf dem Gerät geändert wird, vom InTune-Dienst erneut blockiert wird. Obwohl es sich nicht im Verwaltungs Profil befindet, funktioniert es, wenn es in der Verwaltungskonsole als Erfolgsmeldung angezeigt wird. 
 - **Datenroaming**: Wählen Sie **Blockieren** aus, um Datenroaming über das Mobilfunknetz zu verhindern. **Nicht konfiguriert** (Standard) erlaubt das Datenroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
+
+  > [!IMPORTANT]
+  > Diese Einstellung wird als Remote Geräte Aktion behandelt. Diese Einstellung wird also nicht im Verwaltungs Profil auf dem Gerät angezeigt. Jedes Mal, wenn sich der datenroamingstatus auf dem Gerät ändert, wird das **Datenroaming** durch den InTune-Dienst blockiert. Wenn in InTune der Bericht Erstellungs Status erfolgreich angezeigt wird, wissen Sie, dass es funktioniert, auch wenn die Einstellung im Verwaltungs Profil auf dem Gerät nicht angezeigt wird.
+
 - **Globales Abrufen im Hintergrund beim Roaming**: **Blockieren** verhindert, dass die Funktion des globalen Abrufens im Hintergrund beim Roaming über das Mobilfunknetz verwendet wird. **Nicht konfiguriert** (Standard) ermöglicht, dass das Gerät Daten wie E-Mails beim Roaming in einem Mobilfunknetz abruft.
 - **Sprachwahlverfahren**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer das Sprachwahlverfahren auf dem Gerät verwenden. **Nicht konfiguriert** (Standard) ermöglicht die Verwendung des Sprachwahlverfahrens auf dem Gerät.
 - **Sprachroaming**: Wählen Sie **Blockieren** aus, um Sprachroaming über das Mobilfunknetz zu verhindern. **Nicht konfiguriert** (Standard) ermöglicht das Sprachroaming, wenn das Gerät in einem Mobilfunknetz verwendet wird.
 - **Privater Hotspot**: **Blockieren** schaltet den privaten Hotspot auf dem Gerät des Benutzers bei jeder Gerätesynchronisierung aus. Diese Einstellung kann mit einigen Anbietern nicht kompatibel sein. In der Standardeinstellung **Nicht konfiguriert** wird die Konfiguration des privaten Hotspots als vom Benutzer festgelegter Standard beibehalten.
-- **Mobilfunk-Verwendungsregeln (nur verwaltete Apps)** : Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn sie sich in Mobilfunknetzwerken befinden. Folgende Optionen sind verfügbar:
+
+  > [!IMPORTANT]
+  > Diese Einstellung wird als Remote Geräte Aktion behandelt. Diese Einstellung wird also nicht im Verwaltungs Profil auf dem Gerät angezeigt. Jedes Mal, wenn sich der Status des persönlichen Hotspots auf dem Gerät ändert, wird der **persönliche Hotspot** durch den InTune-Dienst blockiert. Wenn in InTune der Bericht Erstellungs Status erfolgreich angezeigt wird, wissen Sie, dass es funktioniert, auch wenn die Einstellung im Verwaltungs Profil auf dem Gerät nicht angezeigt wird.
+
+- **Mobilfunk-Verwendungsregeln (nur verwaltete Apps)**: Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn sie sich in Mobilfunknetzwerken befinden. Folgende Optionen sind verfügbar:
   - **Verwendung von Datenverbindungen blockieren**: Blockieren Sie die Verwendung von Datenverbindungen für **Alle verwalteten Apps**, oder Sie können **Bestimmte Apps wählen**.
   - **Verwendung von Datenverbindungen beim Roaming blockieren:** Blockieren Sie die Verwendung von Datenverbindungen beim Roaming für **Alle verwalteten Apps**, oder Sie können **Bestimmte Apps wählen**.
 
@@ -531,7 +540,7 @@ Apps können Sie wie folgt hinzufügen:
 - **Verschlüsselte Sicherung**: **Anfordern** erzwingt die Verschlüsselung von Gerätesicherungen.
 - **Synchronisierung verwalteter Apps mit der Cloud**: **Nicht konfiguriert** (Standard) ermöglicht Ihren mit Intune verwalteten Apps, Daten mit dem iCloud-Konto des Benutzers zu synchronisieren. **Blockieren** verhindert diese Datensynchronisierung mit iCloud.
 - **Enterprise Book-Sicherung blockieren**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer Enterprise Books sichern. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Bücher zu sichern.
-- **Synchronisierung von Enterprise Book-Metadaten blockieren (Notizen und Highlights)** : **Blockieren** verhindert, dass Notizen und Highlights in Enterprise Books synchronisiert werden. **Nicht konfiguriert** (Standardeinstellung) ermöglicht die Synchronisierung.
+- **Synchronisierung von Enterprise Book-Metadaten blockieren (Notizen und Highlights)**: **Blockieren** verhindert, dass Notizen und Highlights in Enterprise Books synchronisiert werden. **Nicht konfiguriert** (Standardeinstellung) ermöglicht die Synchronisierung.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Einstellungen gelten für: Geräteregistrierung, automatisierte Geräteregistrierung (überwacht)
 
@@ -595,7 +604,7 @@ Verwenden Sie diese Einstellungen, um iOS-Geräte zur Ausführung bestimmter App
 - **Bildschirmdrehung:** **Blockieren** verhindert, dass die Bildschirmausrichtung geändert werden kann, wenn der Benutzer das Gerät dreht. **Nicht konfiguriert** lässt diese Funktion zu.
 - **Standbytaste:** Wählen Sie **Blockieren** aus, um die Standbytaste am Gerät zu deaktivieren. **Nicht konfiguriert** lässt diese Funktion zu.
 - **Touch**: **Blockieren** deaktiviert den Touchscreen des Geräts. **Nicht konfiguriert** ermöglicht dem Benutzer, den Touchscreen zu verwenden.
-- **Volumeschaltflächen**: **blockieren** verhindert die Verwendung der volumeschaltflächen des Geräts. **Nicht konfiguriert** ermöglicht die volumeschaltflächen.
+- **Volumeschaltflächen **: **Block ** verhindert die Verwendung der volumeschaltflächen auf dem Gerät. **Nicht konfiguriert** ermöglicht die volumeschaltflächen.
 - **Steuerelement der Touch-Unterstützung**: Mit **Zulassen** können Benutzer die Touch-Unterstützungsfunktion verwenden. **Nicht konfiguriert** deaktiviert dieses Feature.
 - **Steuerelement zum Umkehren von Farben**: **Zulassen** von Farbumkehr-Änderungen, mit denen der Benutzer die Funktion zur Farbumkehr individuell verwenden kann. **Nicht konfiguriert** deaktiviert dieses Feature.
 - **Ausgewählten Text sprechen**: **Zulassen** der Sprachauswahl-Barrierefreiheitseinstellungen auf dem Gerät. Diese Funktion liest Text, den der Benutzer auswählt, laut vor. **Nicht konfiguriert** deaktiviert dieses Feature.
