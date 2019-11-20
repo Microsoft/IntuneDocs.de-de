@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ee68392feaa59ef5207edce75250e539407273b
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: 890709ccf176f2b0cc6c4a3af986d1bce642572d
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593688"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754408"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>Verwalten des Webzugriffs mithilfe von Microsoft Edge mit Microsoft Intune
 
@@ -106,7 +106,7 @@ So erstellen Sie eine App-Konfiguration für Microsoft Edge:
 7. Wählen Sie **Konfigurationseinstellungen** aus. Auf dem Blatt **Konfiguration** definieren Sie Schlüssel-Wert-Paare, um Konfigurationen für Microsoft Edge bereitzustellen. In den folgenden Abschnitten erhalten Sie weitere Informationen zu den unterschiedlichen Schlüssel-Wert-Paaren, die Sie definieren können.
 
     > [!NOTE]
-    > Microsoft Edge verwendet die gleichen Schlüssel-Wert-Paare wie Managed Browser. 
+    > Microsoft Edge verwendet die gleichen Schlüssel-Wert-Paare wie Managed Browser. Unter Android muss Microsoft Edge App-Schutzrichtlinien enthalten, damit App-Konfigurationsrichtlinien wirksam werden.
 
 8. Klicken Sie abschließend auf **OK**.
 9. Wählen Sie auf dem Blatt **Konfigurationsrichtlinie hinzufügen** die Option **Hinzufügen** aus.<br>

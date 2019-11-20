@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1c02248b3208073a3bb09cafe69cf0473eacb2b
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 0f5ee9a0fe27c3cf9de758fd7155dbd127fb1e5e
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584532"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712212"
 ---
 # <a name="rename-a-device-in-intune"></a>Umbenennen eines Geräts in Intune
 
@@ -36,7 +36,7 @@ Dieses Feature unterstützt derzeit nicht das Umbenennen von Windows-Geräten mi
 
 ## <a name="rename-a-device"></a>Umbenennen eines Geräts
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 3. Klicken Sie auf **Geräte** > **Alle Geräte**, und wählen Sie ein Gerät aus. Klicken Sie dann auf **Mehr** > **Gerät umbenennen**.
 4. Geben Sie auf dem Blatt **Gerät umbenennen** den neuen Namen in das Textfeld ein. Sie können Buchstaben, Zahlen und Bindestriche verwenden. Der Name muss mindestens einen Buchstaben oder Bindestrich enthalten.
 5. Wenn Sie das Gerät nach dem Umbenennen neu starten möchten, wählen Sie neben **Restart after rename** (Nach Umbenennung neu starten) die Option **Ja** aus.

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 11/07/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4890410f5948cdc9bd1c6e3d85125d8e0713d9b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1929e58d3b22e4cb5bc5f6ad2121f2b6f903d023
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492313"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755131"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Schnellstart: Erstellen eines E-Mail-Geräteprofils für iOS
 
@@ -33,39 +33,40 @@ Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für ein
 
 ## <a name="sign-in-to-intune"></a>Anmelden bei Intune
 
-Registrieren Sie sich bei [Intune](https://aka.ms/intuneportal) als globaler Administrator oder als Intune-Dienstadministrator. Wenn Sie ein Testabonnement für Intune erstellt haben, besitzt das Konto, mit dem Sie das Abonnement erstellt haben, die Rolle des globalen Administrators.
+Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) als globaler Administrator oder Intune-Dienstadministrator an. Wenn Sie ein Testabonnement für Intune erstellt haben, besitzt das Konto, mit dem Sie das Abonnement erstellt haben, die Rolle des globalen Administrators.
 
 ## <a name="create-an-ios-email-profile"></a>Erstellen eines iOS-E-Mail-Profils
-1. Wählen Sie in Intune die Option **Gerätekonfiguration** und anschließend **Profile** aus.
-2. Klicken Sie auf **Profil erstellen**.
-   
+
+1. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
+
    ![Erstellen eines E-Mail-Profils für iOS](./media/quickstart-email-profile/ios-create-profile.png)
 
-3. Geben Sie unter **Name** einen aussagekräftigen Namen für das neue Profil ein. Geben Sie für dieses Beispiel **iOS require work email** (Für iOS geschäftliche E-Mail erfordern) ein.
-4. Geben Sie die folgenden Profilinformationen ein:
-   - Geben Sie unter **Beschreibung** **Require iOS devices to use work email** (Erfordern, dass iOS-Geräte geschäftliche E-Mail verwenden) ein.
-   - Wählen Sie als **Plattform** die Option **iOS** aus.
-   - Wählen Sie für **Profiltyp** **E-Mail** aus.
-    
-     ![Erstellen eines E-Mail-Profils für iOS](./media/quickstart-email-profile/ios-email-profile-name.png)
+2. Geben Sie unter **Name** einen aussagekräftigen Namen für das neue Profil ein. Geben Sie für dieses Beispiel **iOS require work email** (Für iOS geschäftliche E-Mail erfordern) ein.
+3. Geben Sie die folgenden Profilinformationen ein:
+    - Geben Sie unter **Beschreibung** **Require iOS devices to use work email** (Erfordern, dass iOS-Geräte geschäftliche E-Mail verwenden) ein.
+    - Wählen Sie als **Plattform** die Option **iOS** aus.
+    - Wählen Sie für **Profiltyp** **E-Mail** aus.
 
-5. Wählen Sie **Einstellungen** aus, und geben Sie die folgenden Einstellungen ein (behalten Sie bei den anderen Einstellungen die Standardwerte bei):
+        ![Erstellen eines E-Mail-Profils für iOS](./media/quickstart-email-profile/ios-email-profile-name.png)
+
+4. Wählen Sie **Einstellungen** aus, und geben Sie die folgenden Einstellungen ein (behalten Sie bei den anderen Einstellungen die Standardwerte bei):
    - **E-Mail-Server**: Geben Sie im Rahmen dieses Schnellstarts **outlook.office365.com** ein. Diese Einstellung gibt den Exchange-Speicherort (URL) des E-Mail-Servers an, den die iOS-Mail-App verwendet, um auf E-Mails zuzugreifen.
    - **Kontoname**: Geben Sie **Unternehmens-E-Mail-Adresse** ein.
    - **Benutzernamensattribut aus AAD**: Dieser Name ist das Attribut, das Intune aus Azure Active Directory (Azure AD) abruft. Intune generiert mit diesem Namen dynamisch den Benutzernamen für dieses Profil. Für diese Schnellstartanleitung nehmen wir an, dass der **Benutzerprinzipalname** als Benutzername für das Profil verwenden werden soll (zum Beispiel user1@contoso.com).
    - **Attribut für E-Mail-Adresse aus AAD**: Diese Einstellung ist die E-Mail-Adresse aus Azure AD, die für die Anmeldung bei Exchange verwendet wird. Wählen Sie für diese Schnellstartanleitung **Benutzerprinzipalname** aus.
    - **Authentifizierungsmethode**: Wählen Sie im Rahmen dieses Schnellstarts **Benutzername und Kennwort** aus. (Sie können auch **Zertifikat** auswählen, wenn Sie bereits ein Zertifikat für Intune eingerichtet haben.)
-    
-     ![Erstellen eines E-Mail-Profils für iOS](./media/quickstart-email-profile/ios-email-profile.png)
 
-6. Wählen Sie **OK** aus.
-7. Wählen Sie **Erstellen** aus. Das neue Profil wird in der Profilliste mit dem Dashboard angezeigt, damit Sie überwachen können, wie das Profil iOS-Geräten und iOS-Benutzern zugewiesen wurde.
-8. Wählen Sie **Zuweisungen** aus.
-9. Wählen Sie die Registerkarte **Einschließen** und dann **All Users & All Devices** (Alle Benutzer & Alle Geräte) aus. 
-10. Wählen Sie **Speichern** aus.
+        ![Erstellen eines E-Mail-Profils für iOS](./media/quickstart-email-profile/ios-email-profile.png)
+
+5. Klicken Sie auf **OK** > **Erstellen**. Das neue Profil wird in der Profilliste mit dem Dashboard angezeigt, damit Sie überwachen können, wie das Profil iOS-Geräten und iOS-Benutzern zugewiesen wurde.
+6. Wählen Sie **Zuweisungen** aus.
+7. Wählen Sie die Registerkarte **Einschließen** und dann **All Users & All Devices** (Alle Benutzer & Alle Geräte) aus. 
+8. Wählen Sie **Speichern** aus.
 
 ## <a name="clean-up-resources"></a>Bereinigen der Ressourcen
+
 Wenn Sie das erstellte Profil nicht für weitere Tutorials oder Tests verwenden möchten, können sie es jetzt löschen.
+
 1. Wählen Sie in Intune die Option **Gerätekonfiguration** und anschließend **Profile** aus.
 2. Wählen Sie das erstellte Testprofil **iOS require work email** (Für iOS geschäftliche E-Mail erfordern) aus.
 3. Wählen Sie die Ellipse ( **...** ) neben dem Profil aus, und klicken Sie auf **Löschen**.

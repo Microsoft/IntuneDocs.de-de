@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99f27992009332a2a5fae0768225d8c69d3ac5ad
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1e995dbc89321bf844151accd654a2d17d35afd9
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509410"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713430"
 ---
 # <a name="turn-on-ios-supervised-mode"></a>Aktivieren des überwachten iOS-Modus
 
@@ -37,7 +37,7 @@ Eine Liste mit Steuerelementen von Apple, die überwacht werden müssen, finden 
 
 ## <a name="turn-on-supervised-mode-during-enrollment"></a>Aktivieren des überwachten Modus bei der Registrierung
 
-In Intune können Sie den überwachten Modus für Geräte aktivieren, wenn Sie [ein Apple-Registrierungsprofil in DEP erstellen](../enrollment/device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile). Aktivieren Sie unter **Geräteverwaltungseinstellungen** das Feld **Überwacht**.
+Im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) können Sie den überwachten Modus für Geräte aktivieren, wenn Sie ein [Apple-Registrierungsprofil in DEP erstellen](../enrollment/device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile). Aktivieren Sie unter **Geräteverwaltungseinstellungen** das Feld **Überwacht**.
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>Aktivieren des überwachten Modus nach der Registrierung
 

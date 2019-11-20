@@ -6,28 +6,26 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/11/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
-ms.reviewer: chrisgre
+ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3cae06c3ce763fe8ca94bbed9bf35e8abef52c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f0b5e67c433f2d3633219650f48307dccae196e9
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502601"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713290"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>App-basierter bedingter Zugriff mit Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 [Intune-App-Schutzrichtlinien](../apps/app-protection-policy.md) unterstützen Sie beim Schutz Ihrer Unternehmensdaten auf Geräten, die bei Intune registriert sind. App-Schutzrichtlinien können Sie auch auf mitarbeitereigenen Geräten verwenden, die nicht für die Verwaltung in Intune registriert sind. Auch wenn Ihr Unternehmen das Gerät nicht verwaltet, müssen Sie in diesem Fall dennoch sicherstellen, dass Unternehmensdaten und -ressourcen geschützt sind.
 
@@ -39,6 +37,7 @@ Mit App-basiertem bedingten Zugriff und der Verwaltung von Client-Apps wird eine
 Wenn Sie nur für die Microsoft Outlook-App den Zugriff auf Exchange Online zulassen, können Sie die integrierten E-Mail-Apps von iOS und Android blockieren. Darüber hinaus können Sie für Apps, auf die keine Intune-App-Schutzrichtlinien angewendet wurden, den Zugriff auf SharePoint Online blockieren.
 
 ## <a name="prerequisites"></a>Voraussetzungen
+
 Damit Sie eine App-basierte Richtlinie für bedingten Zugriff erstellen können, benötigen Sie Folgendes:
 
 - **Enterprise Mobility + Security (EMS)** oder ein **Azure Active Directory Premium-Abonnement**
@@ -57,7 +56,7 @@ Der App-basierte bedingte Zugriff [unterstützt auch branchenspezifische Apps](a
 In diesem Beispiel hat der Administrator App-Schutzrichtlinien auf die Outlook-App angewendet. Zudem gilt eine Regel für bedingten Zugriff, mit der die Outlook-App einer genehmigten Liste von Apps hinzugefügt wird, die verwendet werden kann, um auf Unternehmens-E-Mails zuzugreifen.
 
 > [!NOTE]
-> Die Struktur aus dem nachfolgenden Flussdiagramm kann für andere verwaltete Apps verwendet werden.
+> Das nachfolgende Flussdiagramm kann für andere verwaltete Apps verwendet werden.
 
 ![Veranschaulichung des Prozesses des App-basierten bedingten Zugriffs in einem Flussdiagramm](./media/app-based-conditional-access-intune/ca-intune-common-ways-3.png)
 

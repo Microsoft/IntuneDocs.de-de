@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7f5a85896a2e6e7be845b2314c4f837dcaeb7b0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 50fc2d274531dce3d2466ba40a4738035b9b6811
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507017"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756773"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Verwenden von Windows 10-Vorlagen zum Konfigurieren von Gruppenrichtlinieneinstellungen in Microsoft Intune
 
@@ -43,8 +43,8 @@ In diesem Artikel sind die Schritte zum Erstellen einer Vorlage für Windows 10-
 
 ## <a name="create-a-template"></a>Erstellen einer Vorlage
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
     - **Name**: Geben Sie einen Namen für das Profil ein.
@@ -59,7 +59,7 @@ In diesem Artikel sind die Schritte zum Erstellen einer Vorlage für Windows 10-
     > [!TIP]
     > Die Windows-Einstellungen in Intune korrelieren mit dem lokalen Gruppenrichtlinienpfad, der im Editor für lokale Gruppenrichtlinien (`gpedit`) angezeigt wird.
 
-5. In der Dropdownliste werden standardmäßig **Alle Produkte** angezeigt. Sie können die Einstellungen in der Liste auch so filtern, dass nur **Windows**-Einstellungen, nur **Office**-Einstellungen oder nur Einstellungen von **Edge Version 77 oder höher** angezeigt werden:
+5. Klicken Sie in der Dropdownliste auf **Alle Produkte**. Sie können die Einstellungen in der Liste auch so filtern, dass nur **Windows**-Einstellungen, nur **Office**-Einstellungen oder nur Einstellungen von **Edge Version 77 oder höher** angezeigt werden:
 
     ![Filtern Sie die Liste, um in den administrativen Vorlagen in Intune alle Windows-Einstellungen oder alle Office-Einstellungen anzuzeigen.](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 

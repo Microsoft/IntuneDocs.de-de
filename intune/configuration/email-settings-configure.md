@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8961614a85992b927e31d590c7abadca75a85a6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 75644ac4d8ccfb8a63e077f2b6625ac96364f5d7
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492866"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755195"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>Hinzufügen von E-Mail-Einstellungen für Geräte mit Intune
 
@@ -39,8 +39,8 @@ Dieser Artikel zeigt, wie Sie ein E-Mail-Profil in Microsoft Intune erstellen. A
 
 ## <a name="create-a-device-profile"></a>Erstellen eines Geräteprofils
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
     - **Name**: Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein sinnvoller Richtlinienname ist beispielsweise **E-Mail-Einstellungen für alle Windows-Geräte**.
@@ -71,7 +71,7 @@ Nachdem Sie Ihre Einstellungen eingegeben und das Profil erstellt haben, wird da
 
 E-Mail-Profile werden Gerätegruppen und nicht Benutzergruppen zugewiesen. Es gibt verschiedene Möglichkeiten, ein E-Mail-Profil von einem Gerät zu entfernen, auch wenn nur ein E-Mail-Profil vorhanden ist:
 
-- **Option 1**: Öffnen Sie das E-Mail-Profil (**Gerätekonfiguration** > **Profile**), und klicken Sie auf **Zuweisungen**. Auf der Registerkarte **Einschließen** werden die Gruppen angezeigt, denen das Profil zugewiesen ist. Klicken Sie mit der rechten Maustaste auf die Gruppe, und wählen Sie dann **Entfernen**. Klicken Sie auf **Speichern**, um die Änderungen zu speichern.
+- **Option 1**: Öffnen Sie das E-Mail-Profil (**Geräte** > **Konfigurationsprofile** > wählen Sie Ihr Profil aus), und wählen Sie **Zuweisungen** aus. Auf der Registerkarte **Einschließen** werden die Gruppen angezeigt, denen das Profil zugewiesen ist. Klicken Sie mit der rechten Maustaste auf die Gruppe, und wählen Sie dann **Entfernen**. Klicken Sie auf **Speichern**, um die Änderungen zu speichern.
 
 - **Option 2**: [Setzen Sie das Gerät zurück, oder nehmen Sie es außer Betrieb.](../remote-actions/devices-wipe.md) Mit diesen Optionen können Sie einige oder alle Daten und Einstellungen entfernen.
 
@@ -103,4 +103,4 @@ Wenn Sie ein zuvor zugewiesenes E-Mail-Profil ändern, werden Endbenutzer mögli
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Das Profil ist nun erstellt, führt aber noch keine Aktionen durch. Im nächsten Schritt können Sie [das Profil einigen Geräten zuweisen](../device-profile-assign.md).
+Das Profil ist nun erstellt, führt aber noch keine Aktionen durch. [Weisen Sie anschließend das Profil zu](../device-profile-assign.md).

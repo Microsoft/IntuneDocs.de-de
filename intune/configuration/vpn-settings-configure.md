@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5628ba39cafe38cc66827d69584d009c15326bd4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9fab50e0aefd926b4dc7a2b3559576642d5d6b79
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72491753"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059308"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>Erstellen von VPN-Profilen zum Herstellen einer Verbindung mit VPN-Servern in Intune
 
@@ -50,7 +50,7 @@ Sie können VPN-Profile mit den folgenden Verbindungstypen erstellen:
 |Check Point Capsule VPN|– Android<br/>– Android Enterprise-Arbeitsprofile<br/>– iOS<br/>– macOS<br/>– Windows 10<br/>– Windows 8.1<br/>– Windows Phone 8.1|
 |Cisco AnyConnect|– Android<br/>– Android Enterprise-Arbeitsprofile<br/>– Android Enterprise-Gerätebesitzer (vollständig verwaltet)<br/>– iOS<br/>– macOS|
 |Cisco (IPsec)|iOS|
-|Citrix SSO|– Android<br/>– Android Enterprise-Arbeitsprofile: Verwenden von [App-Konfigurationsrichtlinien](../apps/app-configuration-policies-use-android.md)<br/>– iOS<br/>– Windows 10|
+|Citrix SSO|– Android<br/>– Android Enterprise-Arbeitsprofile: Verwenden von [App-Konfigurationsrichtlinien](../apps/app-configuration-policies-use-android.md)<br/>– Android Enterprise-Gerätebesitzer (vollständig verwaltet): Verwenden von [App-Konfigurationsrichtlinien](../apps/app-configuration-policies-use-android.md)<br/>– iOS<br/>– Windows 10|
 |Benutzerdefiniertes VPN|– iOS<br/>– macOS|
 |F5 Access|– Android<br/>– Android Enterprise-Arbeitsprofile<br/>– Android Enterprise-Gerätebesitzer (vollständig verwaltet)<br/>– iOS<br/>– macOS<br/>– Windows 10<br/>– Windows 8.1<br/>– Windows Phone 8.1|
 |IKEv2| – iOS<br/>– Windows 10|
@@ -68,8 +68,9 @@ Informationen zum Erstellen benutzerdefinierter VPN-Profile mithilfe von URI-Ein
 
 ## <a name="create-a-device-profile"></a>Erstellen eines Geräteprofils
 
-1. Wählen Sie in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) **Gerätekonfiguration** > **Profile** > **Profil erstellen** aus.
-2. Geben Sie die folgenden Eigenschaften ein:
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
+3. Geben Sie die folgenden Eigenschaften ein:
 
     - **Name**: Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Profile, damit Sie diese später leicht wiedererkennen. Ein geeigneter Profilname ist beispielsweise **VPN-Profil für das gesamte Unternehmen**.
     - **Beschreibung**: Geben Sie eine Beschreibung für das Profil ein. Diese Einstellung ist optional, wird jedoch empfohlen.
@@ -86,7 +87,7 @@ Informationen zum Erstellen benutzerdefinierter VPN-Profile mithilfe von URI-Ein
 
     - **Profiltyp**: Wählen Sie **VPN** aus.
 
-3. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. In den folgenden Artikeln finden Sie ausführliche Informationen zu den Einstellungen auf den jeweiligen Plattformen:
+4. Die konfigurierbaren Einstellungen variieren je nach der ausgewählten Plattform. In den folgenden Artikeln finden Sie ausführliche Informationen zu den Einstellungen auf den jeweiligen Plattformen:
 
     - [Einstellungen für Android](vpn-settings-android.md)
     - [Android Enterprise-Einstellungen](vpn-settings-android-enterprise.md)
@@ -96,7 +97,7 @@ Informationen zum Erstellen benutzerdefinierter VPN-Profile mithilfe von URI-Ein
     - [Einstellungen für Windows 8.1](vpn-settings-windows-8-1.md)
     - [Einstellungen für Windows 10](vpn-settings-windows-10.md) (einschließlich Windows Holographic for Business)
 
-4. Wenn Sie fertig sind, **erstellen** Sie Ihr Profil.
+5. Wenn Sie fertig sind, wählen Sie **OK** > **Erstellen** aus, um Ihre Änderungen zu speichern.
 
 Das Profil wird erstellt und in der Profilliste angezeigt. Informationen zur Zuweisung dieses Profils zu Gruppen finden Sie unter [Zuweisen von Geräteprofilen](device-profile-assign.md).
 

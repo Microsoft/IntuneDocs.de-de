@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7ca53786d372f53d63388fef1179ca271fdb9d9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: be6a254360d8e8e9ef1396515d261b6ff9077b87
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508591"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713129"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Zurücksetzen oder Entfernen einer Gerätekennung in Intune
 
@@ -57,10 +57,9 @@ Verwenden Sie die Aktion „Kennung zurücksetzen“, um eine neue Kennung für 
 ## <a name="reset-a-passcode"></a>Zurücksetzen einer Kennung
 
 
-1. Melden Sie sich mit einer der folgenden Rollen beim [Azure-Portal](https://portal.azure.com) an: Azure Active Directory Global Admin, Azure Active Directory Intune Service Admin, Helpdesk Operator oder Role Administrator (Globaler Administrator in Azure Active Directory, Intune-Dienstadministrator in Azure Active Directory, Support oder Administrator für Rollen).
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
-3. Klicken Sie auf **Geräte** und dann auf **Alle Geräte**.
-4. Wählen Sie aus der Liste der von Ihnen verwalteten Geräten ein Gerät aus, und klicken Sie auf **...Weitere**. Wählen Sie dann die Remotegeräteaktion **Kennung entfernen** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) mit einer der folgenden Rollen an: Azure Active Directory Global Admin, Azure Active Directory Intune Service Admin, Helpdesk Operator oder Role Administrator (Globaler Administrator in Azure Active Directory, Intune-Dienstadministrator in Azure Active Directory, Support oder Administrator für Rollen).
+2. Klicken Sie auf **Geräte** und dann auf **Alle Geräte**.
+3. Wählen Sie aus der Liste der von Ihnen verwalteten Geräten ein Gerät aus, und klicken Sie auf **...Weitere**. Wählen Sie dann die Remotegeräteaktion **Kennung entfernen** aus.
 
 ## <a name="reset-android-work-profile-passcodes"></a>Zurücksetzen von Kennungen für Android-Arbeitsprofile
 

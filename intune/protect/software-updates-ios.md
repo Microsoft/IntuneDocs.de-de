@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ada1f6e5292684803fbea40430cdd43d61796746
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681353"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984197"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>Hinzufügen von iOS-Softwareupdaterichtlinien in Intune
 
@@ -28,7 +28,7 @@ Diese Funktion gilt für:
 
 - iOS 10.3 und höher (überwacht)
 
-Das Gerät wird etwa alle acht Stunden bei Intune eingecheckt. Wenn ein Update verfügbar ist, lädt das Gerät es herunter und installiert es, außerhalb der eingeschränkten Zeiten. Es ist kein Benutzereingriff erforderlich, um das Gerät zu aktualisieren. Die Richtlinie verhindert nicht, dass ein Benutzer das Betriebssystem manuell aktualisiert.
+Das Gerät wird etwa alle acht Stunden bei Intune eingecheckt. Wenn ein Update verfügbar ist, lädt das Gerät es herunter und installiert es, außerhalb der eingeschränkten Zeiten. Obwohl während des Aktualisierungsprozesses in der Regel keine Benutzerinteraktion erforderlich ist, muss der Benutzer, wenn das Gerät über einen Passcode verfügt, diesen eingeben, um ein Softwareupdate zu starten. Dies gilt für iOS 10.3 und höhere Versionen. Die Richtlinie verhindert nicht, dass ein Benutzer das Betriebssystem manuell aktualisiert.
 
 ## <a name="configure-the-policy"></a>Konfigurieren der Richtlinie
 

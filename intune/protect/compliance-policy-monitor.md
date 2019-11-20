@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19f03ff1dbb91dcd4592f9f5dd9d8fcc7c6a111e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 84ef86a0b3c0ffbfffde572c9759c62645d57dc5
+ms.sourcegitcommit: 8c651a3ed1f358f19b65206a52f7808282de97c3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813299"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73844772"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
@@ -49,8 +49,8 @@ Wenn das Dashboard geöffnet wird, erhalten Sie eine Übersicht mit allen Konfor
 - Gerätekonformität im Überblick
 - Richtlinienspezifische Gerätekompatibilität
 - Einstellungsspezifische Gerätekompatibilität
-- Geräteschutzstatus
 - Status des Bedrohungs-Agents
+- Geräteschutzstatus
 
 ![Bild vom Dashboard, das das Gerätekonformitätsdashboard und verschiedene Berichte anzeigt](./media/compliance-policy-monitor/idc-1.png)
 
@@ -58,7 +58,7 @@ Wenn Sie sich diese Berichterstattung genauer ansehen, sehen Sie auch spezifisch
 
 ### <a name="device-compliance-status-report"></a>Statusbericht zur Gerätekonformität
 
-Das Diagramm veranschaulicht die Konformitätszustände für alle in Intune registrierten Geräte. Die Gerätekonformitätszustände werden in zwei verschiedenen Datenbanken gespeichert: Intune und Azure Active Directory. 
+Das Diagramm **Gerätekonformitätszustand** veranschaulicht die Konformitätszustände für alle in Intune registrierten Geräte. Die Gerätekonformitätszustände werden in zwei verschiedenen Datenbanken gespeichert: Intune und Azure Active Directory.
 
 > [!IMPORTANT]
 > Intune folgt bei allen Konformitätsauswertungen auf dem Gerät dem Zeitplan für das Einchecken von Geräten. [Weitere Informationen zum Zeitplan für das Einchecken von Geräten](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)
@@ -97,7 +97,7 @@ Wählen Sie einen Zustand im Diagramm **Gerätekonformitätszustand** aus. Wähl
 
 ![Auswahl des Zustands „Nicht konform“](./media/compliance-policy-monitor/select-not-compliant-status.png)
 
-Ihnen werden weitere Details zu den Geräten mit diesem Zustand angezeigt, einschließlich Betriebssystemplattform, letztes Check-In-Datum und mehr. 
+Durch diese Aktion wird das Fenster **Gerätekonformität** geöffnet, in dem Geräte in einem Diagramm zum **Gerätezustand** angezeigt werden. Dieses Diagramm zeigt weitere Details zu den Geräten mit diesem Zustand an, einschließlich Betriebssystemplattform, letztes Check-In-Datum und mehr. 
 
 ![Bild vom Dashboard mit weiteren Details zum Gerät mit diesem spezifischen Zustand](./media/compliance-policy-monitor/drill-down-details.png)
 
@@ -107,20 +107,20 @@ Wenn Sie alle Geräte im Besitz eines spezifischen Benutzers anzeigen möchten, 
 
 ![Schaltflächen „Filtern“ und „Spalten“ zum Ändern der Ergebnisse im Diagramm](./media/compliance-policy-monitor/filter-columns.png)
 
-Wenn Sie auf die Schaltfläche **Filtern** klicken, wird das Filterflyout mit weiteren Optionen geöffnet, einschließlich des Konformitätszustands, Geräten mit Jailbreak und mehr. **Wenden Sie den Filter an**, um die Ergebnisse zu aktualisieren.
+Wenn Sie auf die Schaltfläche **Filtern** klicken, wird das Filterflyout mit weiteren Optionen geöffnet, einschließlich des **Konformitätszustands**, Geräten mit **Jailbreak** und mehr. **Wenden Sie den Filter an**, um die Ergebnisse zu aktualisieren.
 
 Verwenden Sie die Eigenschaft **Spalten**, um Spalten in die Diagrammausgabe hinzuzufügen oder daraus zu entfernen. Beispielsweise kann ein **Benutzerprinzipalname** die auf dem Gerät registrierte E-Mail-Adresse anzeigen. **Wenden Sie die Spalten an**, um die Ergebnisse zu aktualisieren.
 
 #### <a name="device-details"></a>Gerätedetails
 
-Wählen Sie ein spezifisches Gerät im Diagramm aus, und klicken Sie dann auf **Gerätekonformität**:
+Wählen Sie ein spezifisches Gerät im Diagramm **Gerätedetails** aus, und klicken Sie dann auf **Gerätekonformität**:
 
 ![Auswählen eines spezifischen Geräts und anschließendes Klicken auf „Gerätekonformität“, um die angewendeten Gerätekonformitätsrichtlinien anzuzeigen](./media/compliance-policy-monitor/see-policies-applied-specific-device.png)
 
-Hier finden Sie weitere Details zu angewendeten Einstellungen der Gerätekonformitätsrichtlinien für das Gerät. Wenn Sie eine spezifische Richtlinie auswählen, werden alle Einstellungen in der Richtlinie angezeigt.
+Intune zeigt weitere Details zu angewendeten Einstellungen der Gerätekonformitätsrichtlinien für das Gerät an. Wenn Sie eine spezifische Richtlinie auswählen, werden alle Einstellungen in der Richtlinie angezeigt.
 
 ### <a name="devices-without-compliance-policy"></a>Geräte ohne Konformitätsrichtlinie
-Unter **Gerätekonformität** > **Übersicht** werden auch Geräte im Bericht identifiziert, denen keine Konformitätsrichtlinien zugewiesen wurden:
+Auf der Seite *Konformitätszustand* können Sie neben dem Diagramm *Richtlinienkonformität* die Kachel **Geräte ohne Konformitätsrichtlinie** auswählen, um Informationen zu Geräten anzuzeigen, denen keine Konformitätsrichtlinien zugewiesen sind:
 
 ![Anzeigen von Geräten ohne Konformitätsrichtlinien](./media/compliance-policy-monitor/devices-without-policies.png)
 
@@ -130,7 +130,7 @@ Wenn Sie die Kachel auswählen, werden alle Geräte ohne Konformitätsrichtlinie
 
 - Es ist wichtig, Geräte ohne Konformitätsrichtlinie mit der Sicherheitseinstellung **Markieren Sie Geräte ohne zugewiesene Konformitätsrichtlinie als** zu identifizieren. Sie können diesen dann mindestens eine Konformitätsrichtlinie zuweisen.
 
-  Die Sicherheitseinstellung kann im Intune-Portal konfiguriert werden. Wählen Sie **Gerätekonformität** > **Konformitätsrichtlinieneinstellungen** aus. Legen Sie dann **Markieren Sie Geräte ohne zugewiesene Konformitätsrichtlinie als** auf **Konform** oder **Nicht konform** fest. 
+  Die Sicherheitseinstellung kann im Intune-Portal konfiguriert werden. Gehen Sie zu **Geräte** > **Konformitätsrichtlinien** > **Einstellungen für Konformitätsrichtlinien**. Legen Sie dann **Markieren Sie Geräte ohne zugewiesene Konformitätsrichtlinie als** auf **Konform** oder **Nicht konform** fest. 
 
   Erfahren Sie mehr über diese [Sicherheitsverbesserung im Intune-Dienst](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
 
@@ -138,19 +138,15 @@ Wenn Sie die Kachel auswählen, werden alle Geräte ohne Konformitätsrichtlinie
 
 ### <a name="per-policy-device-compliance-report"></a>Richtlinienspezifischer Gerätekompatibilitätsbericht
 
-Im Bericht unter **Gerätekonformität** > **Richtlinienkonformität** werden Ihnen die Richtlinien und die Anzahl konformer und nicht konformer Geräte angezeigt. 
+Im Diagramm **Richtlinienkonformität** werden Ihnen die Richtlinien und die Anzahl konformer und nicht konformer Geräte angezeigt. 
 
 ![Anzeigen einer Liste von Richtlinien und der Anzahl konformer und nicht konformer Geräte für die jeweilige Richtlinie](./media/compliance-policy-monitor/idc-8.png)
 
-Wenn Sie eine spezifische Richtlinie auswählen, können Sie den **Konformitätszustand**, den **E-Mail-Alias des Benutzers**, das **Gerätemodell** und den **Standort** von jedem Gerät anzeigen, das dieser Konformitätsrichtlinie unterliegt.
-
 ## <a name="setting-compliance-report"></a>Bericht zur Einstellungskompatibilität
 
-Im Bericht unter **Gerätekonformität** > **Einstellungskonformität** wird Ihnen die Gesamtanzahl von Geräten in jedem Konformitätszustand pro Konformitätseinstellung angezeigt. Ihnen werden alle Einstellungen von allen Konformitätsrichtlinien, die Plattform, auf der die Richtlinieneinstellungen angewandt werden, und die Anzahl nicht konformer Geräte angezeigt.
+Im Diagramm **Einstellungskonformität** werden alle Einstellungen von allen Konformitätsrichtlinien, die Plattform, auf der die Richtlinieneinstellungen angewandt werden, und die Anzahl nicht konformer Geräte angezeigt.
 
 ![Eine Liste mit allen Einstellungen in den verschiedenen Richtlinien](./media/compliance-policy-monitor/idc-10.png)
-
-Wenn Sie eine spezifische Einstellung auswählen, können Sie den **Konformitätszustand**, den **E-Mail-Alias des Benutzers**, das **Gerätemodell** und den **Standort** von jedem Gerät anzeigen, das dieser Einstellung unterliegt.
 
 > [!NOTE]
 > Eine Richtlinie kann einem Gerät und einem Benutzer auf demselben Gerät zugewiesen werden. In einigen Szenarien kann ein Gerät synchronisiert werden, bevor sich der Benutzer anmeldet, z. B. wenn das Gerät neu gestartet wird. „Kompatibilität“ kann diesen Benutzer auswerten und das Gerät als nicht kompatibel anzeigen. Dieses Verhalten zeigt möglicherweise auch das „Systemkonto“ als einen nicht kompatiblen Benutzer an.
@@ -163,14 +159,14 @@ Sie können die unterschiedlichen Status Ihrer Richtlinien nach Plattform überp
 
 Dieses Feature ist im Gerätestatusbericht enthalten:
 
-1. Wählen Sie **Gerätekompatibilität** > **Richtlinien** aus. Ihnen wird eine Liste mit Richtlinien angezeigt, einschließlich der Plattform (falls die Richtlinie zugewiesen ist) usw.
+1. Wählen Sie **Geräte** > **Konformitätrichtlinien** > **Richtlinien** aus. Ihnen wird eine Liste mit Richtlinien angezeigt, einschließlich der Plattform (falls die Richtlinie zugewiesen ist) usw.
 2. Wählen Sie eine Richtlinie aus, und klicken Sie dann auf **Übersicht**. In dieser Ansicht enthält die Richtlinienzuweisung die folgenden Status:
 
-    - Erfolgreich: Die Richtlinie wurde angewendet.
-    - Fehler: Die Richtlinie kann nicht angewendet werden. Diese Meldung wird in der Regel mit einem Fehlercode angezeigt, der auf eine Erklärung verweist. 
-    - Konflikt: Zwei Einstellungen werden auf dasselbe Gerät angewendet, und Intune kann den Konflikt nicht lösen. Ein Administrator sollte das überprüfen.
-    - Ausstehend: Das Gerät hat sich noch nicht bei Intune eingecheckt, damit die Richtlinie angewendet werden kann. 
-    - Nicht anwendbar: Die Richtlinie kann nicht auf das Gerät angewendet werden. Beispielsweise aktualisiert die Richtlinie eine Einstellung für iOS 11.1, das Gerät verwendet jedoch iOS 10. 
+    - **Erfolgreich**: Die Richtlinie wurde angewendet.
+    - **Fehler**: Die Richtlinie kann nicht angewendet werden. Diese Meldung wird in der Regel mit einem Fehlercode angezeigt, der auf eine Erklärung verweist. 
+    - **Konflikt:** Zwei Einstellungen werden auf dasselbe Gerät angewendet, und Intune kann den Konflikt nicht lösen. Ein Administrator sollte das überprüfen.
+    - **Ausstehend:** Das Gerät hat sich noch nicht bei Intune eingecheckt, damit die Richtlinie angewendet werden kann. 
+    - **Nicht zutreffend**: Die Richtlinie kann nicht auf das Gerät angewendet werden. Beispielsweise aktualisiert die Richtlinie eine Einstellung für iOS 11.1, das Gerät verwendet jedoch iOS 10. 
 
 3. Um die Details auf dem Gerät mithilfe der Richtlinie anzuzeigen, wählen Sie einen Status aus, z.B. **Succeeded** (erfolgreich). Im nächsten Fenster werden die spezifischen Gerätedetails, einschließlich des Gerätenamens und des Bereitstellungsstatus, aufgeführt.
 

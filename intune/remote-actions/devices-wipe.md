@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbcc50d275a3d3e6a613640e96b363ce7608da81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508571"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712205"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Entfernen von Geräten durch Zurücksetzen, Abkoppeln oder manuelles Aufheben der Registrierung des Geräts
 
@@ -53,7 +53,7 @@ Die Zurücksetzung eines Geräts auf Werkseinstellungen ist nützlich, bevor es 
 
 ### <a name="wiping-a-device"></a>Zurücksetzen eines Geräts
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 3. Klicken Sie auf **Geräte** > **Alle Geräte**.
 4. Wählen Sie den Namen des Geräts aus, das Sie auf Werkseinstellungen zurücksetzen möchten.
 5. Klicken Sie im Bereich, der den Gerätenamen anzeigt, auf **Zurücksetzen**.
@@ -146,7 +146,7 @@ Sie können nur Kioskgeräte zurücksetzen. Sie können Android-Kioskgeräte nic
 
 ### <a name="retire"></a>Außerkraftsetzen
 
-1. Melden Sie sich bei [Intune im Azure-Portal](https://aka.ms/intuneportal) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Klicken Sie im Bereich **Intune** auf die Option **Alle Geräte**.
 3. Wählen Sie den Namen des Geräts aus, das Sie abkoppeln möchten.
 4. Klicken Sie im Bereich, der den Gerätenamen anzeigt, auf **Abkoppeln**. Klicken Sie zum Bestätigen auf **Ja**.
@@ -157,12 +157,12 @@ Wenn das Gerät eingeschaltet und verbunden ist, wird die Aktion **Abkoppeln** i
 
 Wenn Sie Geräte aus dem Intune-Portal entfernen möchten, können Sie sie aus dem bestimmten Gerätebereich löschen. Wenn sich das Gerät das nächste Mal eincheckt, werden alle Unternehmensdaten davon entfernt.
 
-1. Melden Sie sich bei [Intune im Azure-Portal](https://aka.ms/intuneportal) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Wählen Sie **Geräte** > **Alle Geräte** aus, wählen Sie die Geräte, aus die Sie löschen möchten, und wählen Sie **Löschen** aus.
 
 ### <a name="automatically-delete-devices-with-cleanup-rules"></a>Automatisches Löschen von Geräten mit Regeln zur Bereinigung
 Sie können Intune so konfigurieren, dass Geräte automatisch gelöscht werden, die inaktiv oder veraltet erscheinen oder vermeintlich nicht reagieren. Diese Bereinigungsregeln überwachen ständig Ihren Gerätebestand, damit Ihre Gerätedatensätze auf dem neuesten Stand bleiben. Geräte, die auf diese Weise gelöscht werden, werden aus der Intune-Verwaltung entfernt.
-1. Melden Sie sich bei [Intune im Azure-Portal](https://aka.ms/intuneportal) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Wählen Sie **Geräte** > **Device cleanup rules** > **Yes** (Gerätebereinigungsregeln > Ja) aus.
 3. Geben Sie im Feld **Geräte löschen, die sich nicht eingecheckt haben für (Tage)** eine Zahl zwischen 30 und 270 an.
 4. Wählen Sie **Speichern** aus.
@@ -185,7 +185,7 @@ Aufgrund von Kommunikationsproblemen oder fehlenden Geräten müssen Sie möglic
 
 Wenn Sie ein Apple-DEP-Gerät vollständig aus der Intune-Verwaltung entfernen möchten, befolgen Sie diese Schritte:
 
-1. Melden Sie sich bei [Intune im Azure-Portal](https://aka.ms/intuneportal) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Klicken Sie auf **Geräte** > **Alle Geräte**, wählen Sie das Gerät aus, und klicken Sie auf **Abkoppeln**.
 ![Screenshot vom Abkoppeln](./media/devices-wipe/retire.png)
 3. Besuchen Sie [deploy.apple.com](http://deploy.apple.com), und suchen Sie über die Seriennummer nach dem Gerät.

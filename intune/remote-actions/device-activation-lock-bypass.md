@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a813d3bb574ae940b0003ac451b6e76638a0dd0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 02d0fb91df07d8bba233a6f814ffcf36d408e95d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508649"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712370"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Umgehen der Aktivierungssperre auf überwachten iOS-Geräten mit Intune
 
@@ -74,7 +74,7 @@ Bevor Sie die Aktivierungssperre auf Geräten umgehen können, müssen Sie sie a
 
 Die Intune-Remotegeräteaktion **Aktivierungssperre umgehen** entfernt die Aktivierungssperre von einem iOS-Gerät, ohne dass die Apple-ID und das Kennwort des Benutzers angegeben werden müssen. Nachdem Sie die Aktivierungssperre umgangen haben, aktiviert das Gerät die Aktivierungssperre erneut, wenn die App „Mein iPhone suchen“ gestartet wird. Umgehen Sie die Aktivierungssperre nur, wenn Sie direkten Zugriff auf das Gerät haben.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 3. Wählen Sie auf dem Blatt **Intune** die Option **Geräte** aus.
 4. Wählen Sie auf dem Blatt **Geräte** die Option **Alle Geräte** aus.
 5. Wählen Sie sie aus der Liste mit von Ihnen verwalteten Geräten die Remotegeräteaktion **Aktivierungssperre umgehen** aus.

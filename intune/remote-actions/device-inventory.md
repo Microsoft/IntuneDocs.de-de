@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a72477351425e9230200995658cc6f73a8565fb7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509488"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713204"
 ---
 # <a name="see-device-details-in-intune"></a>Anzeigen von Gerätedetails in Intune
 
@@ -33,7 +33,7 @@ Dieser Artikel erläutert, wie Sie all Ihre Geräte und deren Eigenschaften im A
 
 ## <a name="view-the-device-details"></a>Anzeigen der Gerätedetails
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 3. Klicken Sie auf **Geräte** > **Alle Geräte**, und wählen Sie anschließend eins der aufgeführten Geräte aus, damit dessen Gerätedetails geöffnet werden:
 
    - In der **Übersicht** werden der Gerätename und einige wichtige Eigenschaften des Geräts aufgeführt, z. B. ob es sich um ein BYOD-Gerät (Bring-Your-Own-Device), die Einckeckzeit und mehr. Auf diesem Gerät können Sie die folgenden Aktionen ausführen:

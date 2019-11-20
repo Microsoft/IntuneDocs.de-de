@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6f594e20abf1a507d1d4e00641a4821fe1ba9b0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3d8aadbd876ea03da0f16acea82b71ebd85cf9be
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509332"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712251"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>Suchen des primären Benutzers eines Intune-Geräts
 
@@ -30,7 +30,7 @@ Der primäre Benutzer – auch als Affinität zwischen Benutzer und Gerät bezei
 
 ## <a name="how-to-find-a-devices-primary-user"></a>So suchen Sie den primären Benutzer eines Geräts
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Klicken Sie auf **Geräte**, und wählen Sie ein Gerät aus.
 3. Klicken Sie auf der Seite **Übersicht** auf **Mehr anzeigen**. Der primäre Benutzer wird aufgelistet.
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21ee59af8c6d24a42ce3f8c9fefedd0e5dba7ba7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c6a9c6b824f8d6369f7bf2d06b44fa8a20417d1c
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503325"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713138"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>Einrichten der iOS-Geräteregistrierung mit Apple Configurator
 
@@ -48,7 +48,7 @@ Die Registrierungsmethoden von Apple Configurator können nicht mit dem [Geräte
 
 Ein Registrierungsprofil für Geräte definiert die Einstellungen, die während der Registrierung angewandt werden. Diese Einstellungen werden nur einmal angewendet. Führen Sie folgende Schritte aus, um ein Registrierungsprofil zu erstellen, mit dem iOS-Geräte mit Apple Configurator registriert werden.
 
-1. Wählen Sie in [Intune](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Apple Configurator** > **Profile** > **Erstellen** aus.
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Apple-Registrierung** > **Apple Configurator** > **Profile** > **Erstellen** aus.
 
     ![Erstellen eines Profils für Apple Configurator](./media/apple-configurator-enroll-ios/apple-config-create-profile.png)
 
@@ -88,7 +88,7 @@ Ein Registrierungsprofil für Geräte definiert die Einstellungen, die während 
     DLXQPCWVGHMJ, Gerätedetails
 
    Erfahren Sie, [wie Sie die Seriennummer eines iOS-Geräts finden](https://support.apple.com/HT204073).
-2. Wählen Sie in [Intune](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Apple Configurator** > **Geräte** > **Hinzufügen** aus.
+2. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Apple-Registrierung** > **Apple Configurator** > **Geräte** > **Hinzufügen** aus.
 
 5. Wählen Sie ein **Registrierungsprofil** aus, das Sie auf die importierten Seriennummern anwenden möchten. Wenn die Details der neuen Seriennummer alle vorhandenen Details überschreiben sollen, aktivieren Sie **Hiermit überschreiben Sie Details für vorhandene Bezeichner**.
 6. Navigieren Sie unter **Geräte importieren** zu der CSV-Datei mit den Seriennummern, und wählen Sie **Hinzufügen** aus.
@@ -100,18 +100,18 @@ Sie können ein Registrierungsprofil beim Importieren von iOS-Seriennummern für
 - **AC-Profile**
 
 #### <a name="assign-from-apple-configurator-devices"></a>Zuweisen über Apple Configurator-Geräte
-1. Wählen Sie in [Intune](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Apple Configurator** > **Geräte** aus, wählen Sie die Seriennummern aus, und wählen Sie dann **Profil zuweisen** aus.
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Apple-Registrierung** > **Apple Configurator** > **Geräte**, wählen Sie die Seriennummer aus und dann**Profil zuweisen**.
 2. Wählen Sie unter **Profil zuweisen** für das Profil, das Sie zuweisen möchten, **Neues Profil** und dann **Zuweisen** aus.
 
 #### <a name="assign-from-profiles"></a>Zuweisen über Profile
-1. Wählen Sie in [Intune](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Apple Configurator** > **Profile** und dann ein Profil aus.
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Apple-Registrierung** > **Apple Configurator** > **Profile** aus und anschließend ein Profil.
 2. Wählen Sie im Profil die Option **Zugewiesene Geräte** und dann **Zuweisen** aus.
 3. Filtern Sie nach den Seriennummern der Geräte, die Sie dem Profil zuweisen möchten, klicken Sie auf die Geräte und dann auf **Zuweisen**.
 
 ### <a name="export-the-profile"></a>Exportieren des Profils
 Nachdem Sie das Profil erstellt und die Seriennummern zugewiesen haben, müssen Sie das Profil aus Intune als URL exportieren. Anschließend importieren Sie es in Apple Configurator auf einem Mac, um es für Geräte bereitzustellen.
 
-1. Wählen Sie in [Intune](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Apple Configurator** > **Profile** und dann das zu exportierende Profil aus.
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Apple-Registrierung** > **Apple Configurator** > **Profile** aus und anschließend das zu exportierende Profil.
 2. Wählen Sie auf dem Profil **Profil exportieren** aus.
 3. Kopieren Sie die **Profil-URL**. Sie können sie später in Apple Configurator hinzufügen, um das von iOS-Geräten verwendete Intune-Profil zu definieren.
 
@@ -147,7 +147,7 @@ Apps, die eine Benutzerzugehörigkeit erfordern (einschließlich der Unternehmen
 
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>Exportieren des Profil als MOBILECONFIG-Datei auf iOS-Geräte
 
-1. Wählen Sie in [Intune](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Apple-Registrierung** > **Apple Configurator** > **Profile** aus, wählen Sie das zu exportierende Profil aus, und wählen Sie dann **Profil exportieren** aus.
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Apple-Registrierung** > **Apple Configurator** > **Profile** aus, anschließend das zu exportierende Profil und dann **Profil exportieren**.
 2. Wählen Sie unter **Direkte Registrierung** die Option **Profil herunterladen** aus, und speichern Sie die Datei. Eine Registrierungsprofildatei ist nur zwei Wochen gültig. Danach muss sie neu erstellt werden.
 3. Übertragen Sie die Datei auf einen Mac-Computer, auf dem [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) ausgeführt wird, um sie direkt per Push als Verwaltungsprofil auf iOS-Geräte zu verschieben.
 4. Bereiten Sie das Gerät mit Apple Configurator mithilfe der folgenden Schritte vor:

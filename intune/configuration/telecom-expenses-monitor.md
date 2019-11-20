@@ -6,24 +6,24 @@ keywords: Saaswedo
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/09/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
-ms.reviewer: sumitp
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce9a6916cc77714a87aeac33555c0be1e59463f5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 20743d19ba101a9c400cb9f72dca59223254e6de
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506628"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755063"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Einrichten eines TEM-Diensts (Telecom Expense Management) in Intune
 
@@ -54,7 +54,7 @@ Um den Datalert-Dienst mit Intune zu verwenden, müssen Sie einige Konfiguration
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-- Ein Abonnement für Microsoft Intune und Zugriff auf das [Azure-Portal](https://portal.azure.com)
+- Ein Abonnement für Microsoft Intune und Zugriff auf das [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)
 - Ein Abonnement für [Datalert](http://www.datalert.biz/) (öffnet die Datalert-Website)
 
 ## <a name="telecom-expense-management-providers"></a>Anbieter von Telecom Expense Management-Lösungen
@@ -109,9 +109,9 @@ Intune lässt sich in folgende TEM-Anbieter integrieren:
 
 Nachdem Sie Schritt 1 ausgeführt haben, ist Ihre Verbindung automatisch aktiviert. In Intune wird **Aktiv** als Verbindungsstatus angezeigt. Um zu bestätigen, dass der Status tatsächlich „aktiv“ ist, führen Sie folgende Schritte aus:
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 
-2. Wählen Sie **Gerätekonfiguration** > **Telecom Expense Management** aus. Suchen Sie nach dem Verbindungsstatus **Aktiv**:
+2. Wählen Sie **Mandantenverwaltung** > **Connectors und Token** > **Telecom Expense Management** aus. Suchen Sie nach dem Verbindungsstatus **Aktiv**:
 
    ![Intune-Seite mit aktivem Datalert-Verbindungsstatus](./media/telecom-expenses-monitor/tem-azure-portal-enable-service.png)
 
@@ -138,7 +138,7 @@ Diese Kategorien werden Benutzern während der Registrierung ([Registrieren von 
 
 Mit den folgenden Schritten wird die Datalert-App hinzugefügt. Als Beispiel wird hier iOS verwendet. Unter [Hinzufügen von Apps](../apps/apps-add.md) und [Verwenden von Bereichsmarkierungen](../fundamentals/scope-tags.md) finden Sie detailliertere Informationen zu diesen Schritten.
 
-1. Klicken Sie in **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** auf **Client-Apps** > **Apps** > **Hinzufügen**.
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Apps** > **Alle Apps** > **Hinzufügen** aus.
 
 2. Wählen Sie Ihren **App-Typ** aus. Für iOS wählen Sie beispielsweise **Store-App – iOS** aus.
 
@@ -156,7 +156,7 @@ Mit den folgenden Schritten wird die Datalert-App hinzugefügt. Als Beispiel wir
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>Zuweisen der Datalert-App zur Unternehmensgerätegruppe
 
-1. Wählen Sie unter **Client-Apps – Apps** die Datalert-App aus, die Sie im vorherigen Schritt hinzugefügt haben.
+1. Wählen Sie unter **Apps** > **Alle Apps** die Datalert-App aus, die Sie im vorherigen Schritt hinzugefügt haben.
 
 2. Klicken Sie auf **Zuweisungen** > **Gruppe hinzufügen**. Wählen Sie aus, wie die App zugewiesen werden soll. Unter [Zuweisen von Apps zu Gruppen in Intune](../apps/apps-deploy.md) finden Sie weitere Informationen zu diesen Einstellungen.
 
@@ -183,7 +183,7 @@ Bei der Einrichtung der Endbenutzerfunktionen sind folgende Artikel hilfreich:
 
 ## <a name="turn-off-the-datalert-service"></a>Deaktivieren des Datalert-Diensts
 
-1. Wählen Sie in **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** die Option **Gerätekonfiguration** > **Telecom Expense Management** aus.
+1. Wechseln Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) zurück zu **Mandantenverwaltung** > **Connectors und Token** > **Telecom Expense Management**.
 2. Legen Sie **Aktivieren Sie Telecom Expense Management, und blockieren Sie mobile und/oder Roamingdaten auf Geräten, die die konfigurierten Nutzungskontingente überschritten haben** auf **Deaktivieren** fest.
 3. **Speichern** Sie die Änderungen.
 

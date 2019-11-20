@@ -5,22 +5,23 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/31/2018
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: ericor
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84103c6264431773ab5928f1da22c37a80cc9036
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 15af657ec63c664d91c370fa0f18ff8c4f140b47
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492711"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755228"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Öffentliche Vorschau: Konfigurieren von eSIM-Mobilfunkprofilen in Intune
 
@@ -69,11 +70,10 @@ Die folgenden Geräte wurden als eSIM-fähig angekündigt oder sind aktuell auf 
 
 Aktivierungscodes für Mobilfunkverbindungen werden von Ihrem Mobilfunkanbieter in einer durch Trennzeichen getrennten Datei (CSV) bereitgestellt. Wenn Sie über diese Datei verfügen, fügen Sie diese zu Intune hinzu, indem Sie die folgenden Schritte ausführen:
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
-3. Wählen Sie **Gerätekonfiguration** > **eSIM-Mobilfunkprofile** > **Hinzufügen** aus.
-4. Wählen Sie die CSV-Datei mit Ihren Aktivierungscodes aus.
-5. Klicken Sie auf **OK**, um die Änderungen zu speichern.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **eSIM-Mobilfunkprofile** > **Hinzufügen** aus.
+3. Wählen Sie die CSV-Datei mit Ihren Aktivierungscodes aus.
+4. Klicken Sie auf **OK**, um die Änderungen zu speichern.
 
 ### <a name="csv-file-requirements"></a>CSV-Dateianforderungen
 
@@ -111,8 +111,8 @@ Erstellen Sie eine Gerätegruppe, welche die eSIM-fähigen Geräte enthält. Unt
 
 Weisen Sie der Azure AD-Gruppe mit Ihren eSIM-Geräten das Profil zu.
 
-1. Wählen Sie im [Azure-Portal](https://portal.azure.com/) die Option **Alle Dienste** aus, filtern Sie nach **Intune**, und wählen Sie anschließend **Microsoft Intune** aus.
-2. Wählen Sie **Gerätekonfiguration** > **eSIM-Mobilfunk** > **Profile** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **eSIM-Mobilfunkprofile** aus.
 3. Wählen Sie in der Liste der Profile den Abonnementpool der eSIM-Mobilfunkverbindung aus, der zugewiesen werden soll. Wählen Sie anschließend **Zuweisungen** aus.
 4. Wählen Sie aus, ob Sie Gruppen **einschließen** oder **ausschließen** möchten, und wählen Sie die Gruppen anschließend aus.
 
@@ -129,15 +129,15 @@ eSIM-Aktivierungscodes werden nur einmal verwendet. Nachdem Intune einen Aktivie
 
 Nachdem Sie das Profil zugewiesen haben, können Sie den Bereitstellungsstatus eines Abonnementspools überwachen.
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com/) an.
-2. Klicken Sie auf **Alle Dienste**, filtern Sie nach **Intune**, und klicken Sie dann auf **Microsoft Intune**.
-3. Wählen Sie **Gerätekonfiguration** > **eSIM-Mobilfunkprofile** aus. Alle vorhandenen Abonnementpools für eSIM-Mobilfunkverbindungen werden aufgeführt.
-4. Wählen Sie ein Abonnement aus, und überprüfen Sie den **Bereitstellungsstatus**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **eSIM-Mobilfunkprofile** aus. Alle vorhandenen Abonnementpools für eSIM-Mobilfunkverbindungen werden aufgeführt.
+3. Wählen Sie ein Abonnement aus, und überprüfen Sie den **Bereitstellungsstatus**.
 
 ### <a name="check-the-profile-status"></a>Überprüfen des Profilstatus
+
 Nachdem Sie Ihr Geräteprofil erstellt haben, bietet Intune grafische Diagramme. Diese Diagramme zeigen den Status eines Profils an, etwa ob es erfolgreich Geräten zugewiesen wurde, oder ob das Profil einen Konflikt aufweist.
 
-1. Wählen Sie **Gerätekonfiguration** > **eSIM-Mobilfunkprofile** > Select an existing subscription (Vorhandenes Abonnement auswählen) aus.
+1. Wählen Sie **Geräte** > **eSIM-Mobilfunkprofile** und dann ein vorhandenes Abonnement aus.
 2. Auf der Registerkarte **Übersicht** wird im oberen grafischen Diagramm die Anzahl der Geräte angezeigt, die der Bereitstellung des Abonnementpools für das bestimmte eSIM-Mobilfunknetz zugewiesen wurden.
 
     Es zeigt auch die Anzahl der Geräte anderer Plattformen an, die dem gleichen Geräteprofil zugewiesen sind.
@@ -153,7 +153,7 @@ Nachdem Sie Ihr Geräteprofil erstellt haben, bietet Intune grafische Diagramme.
 
 Sie können eine detaillierte Liste der Geräte überwachen und anzeigen, die unter „Gerätestatus“ angezeigt werden.**
 
-1. Wählen Sie **Gerätekonfiguration** > **eSIM-Mobilfunkprofile** > Select an existing subscription (Vorhandenes Abonnement auswählen) aus.
+1. Wählen Sie **Geräte** > **eSIM-Mobilfunkprofile** und dann ein vorhandenes Abonnement aus.
 2. Wählen Sie **Gerätestatus** aus. Intune zeigt weitere Details zu dem Gerät an:
 
     - **Gerätename:** Der Name des Zielgeräts

@@ -1,7 +1,7 @@
 ---
 title: Ausnahmen von der Datenübertragungsrichtlinie für Apps
 titleSuffix: Microsoft Intune
-description: Erstellen Sie Ausnahmen für die Richtlinie zur Datenübertragung über die Verwaltung mobiler Anwendungen (MAM) mit Intune.
+description: Erstellen Sie Ausnahmen für die Datenübertragungsrichtlinie für die Intune-App-Schutzrichtlinie.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6453f5b5886c5691383bc81fb76598146e884e0e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 18b1b8feda00f5c669b39bc365c637dcd3968078
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813329"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984072"
 ---
-# <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Erstellen von Ausnahmen für die Richtlinie zur Datenübertragung über die Verwaltung mobiler Anwendungen (MAM) mit Intune
+# <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>So erstellen Sie Ausnahmen für die Datenübertragungsrichtlinie für die Intune-App-Schutzrichtlinie
 
-Als Administrator können Sie Ausnahmen für die Richtlinie zur Datenübertragung über die Verwaltung mobiler Anwendungen (MAM) mit Intune erstellen. Mithilfe einer Ausnahme können Sie gezielt auswählen, welche nicht verwalteten Apps Daten in und aus verwalteten Apps übertragen können. Die nicht verwalteten Apps, die Sie in die Ausnahmeliste einfügen, müssen von der IT als vertrauenswürdig eingestuft werden. 
+Als Administrator können Sie Ausnahmen für die Datenübertragungsrichtlinie für die Intune-App-Schutzrichtlinie erstellen. Mithilfe einer Ausnahme können Sie gezielt auswählen, welche nicht verwalteten Apps Daten in und aus verwalteten Apps übertragen können. Die nicht verwalteten Apps, die Sie in die Ausnahmeliste einfügen, müssen von der IT als vertrauenswürdig eingestuft werden. 
 
 >[!WARNING] 
 > Sie sind für Änderungen an der Richtlinie für Ausnahmen bei der Datenübertragung verantwortlich. Aufgrund von Zusätzen zu dieser Richtlinie können nicht verwaltete Apps (Apps, die nicht von Intune verwaltet werden) auf Daten zugreifen, die von verwalteten Apps geschützt werden. Dieser Zugriff auf geschützte Daten kann zu Datensicherheitslücken führen. Fügen Sie Datenübertragungsausnahmen nur für Apps hinzu, die von Ihrer Organisation verwendet werden müssen, von denen Intune APP (Application Protection Policies, Anwendungsschutzrichtlinien) jedoch nicht unterstützt wird. Fügen Sie außerdem nur Ausnahmen für Apps hinzu, die Ihrer Einschätzung nach kein Risiko für eine Datensicherheitslücke darstellen.
@@ -65,6 +65,8 @@ Wenn Sie der MAM-Datenübertragungsrichtlinie das **Webex**-Paket als Ausnahme h
     <code>com.android.mms</code>
     
     <code>com.samsung.android.messaging</code>
+
+- Beispiel für das **Installationsprogramm für Zertifikate** unter Android: Um das native App für das **Installationsprogramm für Zertifikate** auszuschließen, damit Outlook für Android ein S/MIME-Zertifikat (als E-Mail-Anhang bereitgestellt) in den Android KeyStore installieren kann, müssen Sie die Ausnahme für die Datenübertragung für die folgende Zeichenfolge hinzufügen: <code>com.android.certinstaller</code>. Weitere Informationen finden Sie unter [Vertraulichkeitsbezeichnung und Schutz in Outlook für iOS-und Android-](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
