@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cce3fafa1a8a074ea70692f855be1e032f0462f
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: 3595e75a73868378c9c366de6c751c21a9151ae3
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755249"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059518"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>Upgraden von Windows 10-Editionen oder Verlassen des S Modus auf Geräten mit Microsoft Intune
 

@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f770db6927ed87786f7806e011cdc6cb9bae6b3f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509272"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713488"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>Behandlung von Problemen bei der Geräteregistrierung in Microsoft Intune
 
@@ -64,9 +64,9 @@ Diese Probleme können auf allen Geräteplattformen auftreten.
 
 Überprüfen Sie, dass dem Benutzer nicht mehr als die zulässige Zahl an Geräten zugewiesen wurde. Gehen Sie dafür wie folgt vor:
 
-1. Navigieren Sie in Intune zu **Geräteregistrierung** > **Registrierungseinschränkungen** > **Einschränkungen zum Gerätelimit**. Achten Sie auf den Wert in der Spalte **Gerätelimit**.
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Registrierungseinschränkungen** > **Einschränkungen zum Gerätelimit** aus. Achten Sie auf den Wert in der Spalte **Gerätelimit**.
 
-2. Klicken Sie in Intune auf **Benutzer** > **Alle Benutzer**, wählen Sie den Benutzer aus, und klicken Sie anschließend auf **Geräte**. Überprüfen Sie die Anzahl der Geräte.
+2. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Benutzer** > **Alle Benutzer**, anschließend den gewünschten Benutzer und dann **Geräte** aus. Überprüfen Sie die Anzahl der Geräte.
 
 3. Wenn die Anzahl der registrierten Geräte des Benutzers bereits das Gerätelimit erreicht hat, kann er keine weiteren Geräte registrieren, bis eine der folgenden Aktionen durchgeführt wird:
     - [Vorhandene Geräte werden entfernt](../remote-actions/devices-wipe.md) oder
