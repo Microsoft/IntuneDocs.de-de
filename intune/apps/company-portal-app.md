@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999539"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199208"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 
@@ -32,7 +32,7 @@ ms.locfileid: "72999539"
 Im Microsoft Intune-Unternehmensportal können Benutzer auf Unternehmensdaten zugreifen, häufige Aufgaben wie das Registrieren von Geräten und das Installieren von Apps ausführen und sich über Unterstützungsmöglichkeiten durch Ihre IT-Abteilung informieren. Darüber hinaus ermöglicht die Unternehmensportal-App Benutzern den sicheren Zugriff auf Unternehmensressourcen. Die Unternehmensportal-App bietet verschiedene Seiten, z. B. „Startseite“, „Apps“, „App-Details“, „Geräte“ und „Gerätedetails“. Um Apps im Unternehmensportal schnell zu finden, können Sie die Apps auf der Seite „Apps“ filtern.
 
 > [!IMPORTANT]
-> Zur Unterstützung des Firebase Cloud Messaging (FCM) von Google müssen Sie Ihre Android-Unternehmensportal-App auf die neueste Version aktualisieren. Weitere Informationen finden Sie auf der Seite mit den Neuheiten: [Aktualisieren Ihrer Android-Unternehmensportal-App auf die neueste Version](../fundamentals/whats-new.md#update-your-android-company-portal-app-to-the-latest-version-).
+> Zur Unterstützung des Firebase Cloud Messaging (FCM) von Google müssen Sie Ihre Android-Unternehmensportal-App auf die neueste Version aktualisieren.  
 
 > [!Tip]
 > Wenn Sie das Unternehmensportal anpassen, gelten die Konfigurationen sowohl für die Unternehmensportal-Website als auch für die Unternehmensportal-Apps. Beachten Sie, dass Benutzern eine Intune-Lizenz zugewiesen werden muss, damit sie auf die Unternehmensportalwebsite zugreifen können.

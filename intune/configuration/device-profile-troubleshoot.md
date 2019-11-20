@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7779e265680ded1b5d5d5b670bcf694376ee8016
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4a1177a37ddbfa7f760339c4ad0cd7773d670540
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494413"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199190"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>Häufige Fragen, Probleme und entsprechende Behebungen mit Geräterichtlinien und -profilen in Microsoft Intune
 
@@ -73,10 +73,6 @@ Wenn das Gerät erst kürzlich registriert wurde, wird der Eincheckvorgang aus K
 | Windows 8.1 | Für 15 Minuten alle 5 Minuten, dann für 2 Stunden alle 15 Minuten und dann etwa alle 8 Stunden | 
 
 Benutzer können jederzeit die Unternehmensportal-App, **Einstellungen** > **Synchronisieren** öffnen, um sofort zu überprüfen, ob Richtlinien- oder Profilupdates verfügbar sind.
-
-Für Geräte ohne Benutzeraffinität wird die Synchronisierung nach der Registrierung im Abstand von einigen Stunden oder Tagen oder sogar noch seltener durchgeführt. Intune sendet in verschiedenen Intervallen Anforderungen an ein Gerät, damit es bei Intune eincheckt. Allerdings ist es vom Gerät abhängig, ob es eincheckt oder nicht. Nach der ersten Registrierung ist es ungewiss, wie lange ein Gerät braucht, bis es eingecheckt ist. Außerdem ist die Dauer abhängig vom Typ der Geräteregistrierung und den Richtlinien und Profilen, die einem Gerät zugewiesen sind. Nachdem das Gerät registriert und alle anfänglichen Richtlinien und Profile angewendet wurden, überprüft das Gerät etwa alle sechs bis acht Stunden (ab dem Zeitpunkt der Registrierung bei Intune), ob neue Richtlinien und Profile verfügbar sind.
-
-Es wird empfohlen, dass die Geräte für ein optimales Ergebnis mindestens acht Stunden am Stück online sind.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>Bei welchen Aktionen sendet Intune sofort eine Benachrichtigung an ein Gerät?
 
