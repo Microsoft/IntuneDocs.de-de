@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709325"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059704"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Einrichten einer Seite zum Registrierungsstatus
  
@@ -197,7 +197,7 @@ Nachstehend sind bekannte Probleme aufgeführt.
     - Benutzeranmeldeinformationen werden nicht beibehalten.
     - Der Benutzer muss die Anmeldeinformationen vor dem Wechsel von der Phase „Geräteeinrichtung“ zur Phase „Kontoeinrichtung“ erneut eingeben.
 - Die Seite zum Registrierungsstatus ist lange im Stillstand oder beendet nie die Phase „Identifizierung“. Intune berechnet die ESP-Richtlinien in der Phase „Identifizierung“. Ein Gerät schließt das Berechnungen der ESP-Richtlinien ggf. nie ab, wenn dem aktuellen Benutzer keine Intune-Lizenz zugewiesen ist.  
-- Die Konfiguration der Windows Defender-Anwendungssteuerung bewirkt eine Aufforderung zum Neustart im Autopilot-Modus. Das Konfigurieren der Windows Defender-Anwendung (mit AppLocker als Kryptografiedienstanbieter) erfordert einen Neustart. Wenn diese Richtlinie konfiguriert ist, kann dies dazu führen, dass ein Gerät im Autopilot-Modus neu gestartet wird. Derzeit gibt es keine Möglichkeit, den Neustart zu unterdrücken oder zu verschieben.
+- Die Konfiguration der Microsoft Defender-Anwendungssteuerung bewirkt eine Aufforderung zum Neustart im Autopilot-Modus. Das Konfigurieren der Microsoft Defender-Anwendung (mit AppLocker als Kryptografiedienstanbieter) erfordert einen Neustart. Wenn diese Richtlinie konfiguriert ist, kann dies dazu führen, dass ein Gerät im Autopilot-Modus neu gestartet wird. Derzeit gibt es keine Möglichkeit, den Neustart zu unterdrücken oder zu verschieben.
 - Wenn die DeviceLock-Richtlinie (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) als Teil eines ESP-Profils aktiviert ist, kann die Windows-Willkommensseite oder automatische Anmeldung am Benutzerdesktop aus zwei Gründen unerwartet fehlschlagen.
   - Wenn das Gerät nicht neu gestartet wurde, bevor die ESP-Phase „Geräteeinrichtung“ beendet wurde, wird der Benutzer möglicherweise aufgefordert, seine Azure AD-Anmeldeinformationen einzugeben. Diese Eingabeaufforderung erfolgt anstelle einer erfolgreichen automatischen Anmeldung, bei der der Benutzer die Animation zur ersten Anmeldung unter Windows sieht.
   - Die automatische Anmeldung schlägt fehl, wenn das Gerät neu gestartet wird, nachdem der Benutzer seine Azure AD-Anmeldeinformationen eingegeben hat, aber bevor er die ESP-Phase „Geräteeinrichtung“ beendet hat. Dieser Fehler tritt auf, weil die ESP-Phase „Geräteeinrichtung“ nie abgeschlossen wurde. Die Problemumgehung besteht im Zurücksetzen des Geräts.

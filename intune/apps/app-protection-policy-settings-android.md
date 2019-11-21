@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d223fb0cac7ad7435366db70bbb5bf4117216aa0
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: b346f41f5198a4aabcb05dcdd4b35a8c56977f53
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/13/2019
-ms.locfileid: "73983965"
+ms.locfileid: "74059774"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Einstellungen für App-Schutzrichtlinien in Microsoft Intune
 In diesem Artikel werden die Einstellungen für App-Schutzrichtlinien für Android-Geräte beschrieben. Die beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Einstellungen** für eine Schutzrichtlinie [konfiguriert](app-protection-policies.md) werden.
@@ -45,7 +45,7 @@ Es gibt drei Kategorien von Richtlinieneinstellungen: Datenschutzeinstellungen, 
 | **Ausschneiden, Kopieren und Einfügen zwischen Apps einschränken** | Geben Sie an, wann Ausschneide-, Kopier- und Einfügeaktionen in dieser App erlaubt sind. Es stehen die folgenden Optionen zur Auswahl: <ul><li>**Blockiert:**  Hiermit werden keine Ausschneide-, Kopier- und Einfügeaktionen zwischen dieser App und anderen Apps zugelassen.</li><li>**Richtlinienverwaltete Apps**: Hiermit werden Ausschneide-, Kopier- und Einfügeaktionen zwischen dieser App und anderen richtlinienverwalteten Apps zugelassen.</li><li>**Richtlinienverwaltete Apps mit Einfügen:** Hiermit werden Ausschneide- oder Kopieraktionen zwischen dieser App und anderen richtlinienverwalteten Apps zugelassen. Einfügen von Daten aus beliebigen Apps in diese App zulassen.</li><li>**Alle Apps:** Keine Einschränkungen für Ausschneide-, Kopier- und Einfügeaktionen in und aus dieser App. | **Any app** |
 | <ul><ui>**Zeichenlimit für Ausschneiden und Kopieren für alle Apps** | Legen Sie die Anzahl von Zeichen fest, die aus Unternehmensdaten und -konten ausgeschnitten oder kopiert werden können.  Damit kann die festgelegte Zeichenanzahl unabhängig von der Einstellung „Ausschneiden, Kopieren und Einfügen mit anderen Apps einschränken“ mit einer beliebigen App geteilt werden.<p>Standardwert = 0<p>**Hinweis**: Erfordert mindestens die Intune-Unternehmensportalversion 5.0.4364.0.  | **0** |
 | **Screen capture and Google Assistant** (Bildschirmaufnahme und Google Assistant) | Wählen Sie **Deaktivieren** aus, um die Bildschirmaufnahme und den Assistenten **Google Assistant** des Geräts zu blockieren, wenn diese App verwendet wird. Wenn Sie **Disable** (Deaktivieren) auswählen, wird auch das Vorschaubild für den App-Schnellzugriff unscharf, wenn diese App mit einem Geschäfts-, Schul- oder Unikonto verwendet wird.| **Aktivieren** |
-
+| **Benachrichtigungen zu Organisationsdaten** | Geben Sie an, wie viele Organisationsdaten über Benachrichtigungen des Betriebssystems für Organisationskonten freigegeben werden. Diese Richtlinieneinstellung wirkt sich auf das lokale Gerät und alle verbundenen Geräte, wie Wearables und intelligente Lautsprecher, aus. In Apps werden möglicherweise zusätzliche Steuerelemente zum Anpassen des Benachrichtigungsverhaltens bereitgestellt, oder es werden nicht alle Werte berücksichtigt. Wählen Sie aus unter: <ul><li>**Blockieren:**  Benachrichtigungen werden nicht freigegeben.</li><ul><li>Wenn dies von der App nicht unterstützt wird, sind Benachrichtigungen zulässig.</li></ul><li>**Organisationsdaten blockieren**: Organisationsdaten werden nicht in Benachrichtigungen freigegeben. Beispiele: „Sie haben eine neue E-Mail“, „Sie haben ein Meeting“</li><UL><li>Wenn dies von der App nicht unterstützt wird, werden Benachrichtigungen blockiert.</li></ul><li>**Zulassen:** Organisationsdaten werden in Benachrichtigungen freigegeben.</li><li>**Alle Apps:** Keine Einschränkungen für Ausschneide-, Kopier- und Einfügeaktionen in und aus dieser App.</ul> <p>**Hinweis**: *Diese Einstellung muss von der App unterstützt werden. Aktuell wird diese Einstellung von Outlook für Android 4.75.0 oder höher unterstützt. Diese Version wird voraussichtlich in der Woche vom 16. Dezember 2019 veröffentlicht.* | **Zulassen**   |
   
 ### <a name="encryption"></a>Verschlüsselung
 | Einstellung | Verwendung | Standardwert |

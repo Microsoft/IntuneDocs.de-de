@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3fb99a363bda762ccfb834388f3abb4ab80f81a
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: cc950f9e60f5549a7a74c2963f33c36369d3ebd3
+ms.sourcegitcommit: 5c52879f3653e22bfeba4eef65e2c86025534dab
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709712"
+ms.lasthandoff: 11/16/2019
+ms.locfileid: "74126170"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>Tutorial: Verwenden der Apple-Features für Unternehmensgeräteregistrierung in Apple Business Manager (ABM) zum Registrieren von iOS-Geräten in Intune
 Die Geräteregistrierungsfeatures in Apple Business Manager vereinfachen das Registrieren von Geräten. Intune unterstützt auch das ältere Portal für das Programm zur Geräteregistrierung (Device Enrollment Program, DEP), doch wir empfehlen Ihnen einen Neustart mit Apple Business Manager. Mit Microsoft Intune und der Apple-Unternehmensgeräteregistrierung werden Geräte automatisch sicher registriert, wenn der Benutzer das Gerät zum ersten Mal einschaltet. Sie können Geräte daher für mehrere Benutzer bereitstellen, ohne jedes Gerät einzeln einrichten zu müssen. 
@@ -90,7 +90,7 @@ Nachdem Sie Ihr Token installiert haben, können Sie nun ein Registrierungsprofi
 
 5. Bestimmen Sie, ob Sie Ihre Geräte mit oder ohne **Benutzeraffinität** registrieren möchten. „Benutzeraffinität“ ist für Geräte vorgesehen, die von bestimmten Benutzern verwendet werden. Wenn Ihre Benutzer das Unternehmensportal für Dienste wie das Installieren von Apps verwenden möchten, wählen Sie **Mit Benutzeraffinität registrieren** aus. Wenn Ihre Benutzer das Unternehmensportal nicht benötigen oder wenn Sie das Gerät für viele Benutzer bereitstellen möchten, wählen Sie **Ohne Benutzeraffinität registrieren** aus.
 
-6. Wenn Sie eine Registrierung mit Benutzeraffinität auswählen, bestimmen Sie, ob Sie „Über das Unternehmensportal authentifizieren“ oder dafür den Setup-Assistenten von Apple verwenden möchten. Wenn Sie die mehrstufige Authentifizierung verwenden möchten, ermöglichen Sie es Benutzern, bei der ersten Anmeldung ihr Kennwort zu ändern, oder fordern Sie die Benutzer auf, ihre abgelaufenen Kennwörter während der Registrierung zurückzusetzen, und wählen Sie unter **Über das Unternehmensportal statt über den Setup-Assistenten von Apple authentifizieren** die Option **Ja** aus. Wenn Sie mit der Verwendung der von Apple bereitgestellten HTTP-Standardauthentifizierung über den Setup-Assistenten vertraut sind, wählen Sie **Nein** aus.
+6. Wenn Sie eine Registrierung mit Benutzeraffinität auswählen, bestimmen Sie, ob Sie „Über das Unternehmensportal authentifizieren“ oder dafür den Setup-Assistenten von Apple verwenden möchten. Wenn Sie die mehrstufige Authentifizierung verwenden möchten, ermöglichen Sie es Benutzern, bei der ersten Anmeldung ihr Kennwort zu ändern, oder fordern Sie die Benutzer auf, ihre abgelaufenen Kennwörter während der Registrierung zurückzusetzen, und wählen Sie unter **Über das Unternehmensportal statt über den Setup-Assistenten von Apple authentifizieren** die Option **Ja** aus. Wenn Sie mit der Verwendung der von Apple bereitgestellten HTTP-Standardauthentifizierung über den Setup-Assistenten vertraut sind, wählen Sie **Nein** aus. Wenn Sie **Ja** auswählen und möchten, dass die Unternehmensportal-App automatisch auf den Geräten der Endbenutzer aktualisiert wird, stellen Sie das Unternehmensportal über das Apple Volume Purchase Program (VPP) separat als erforderliche App für diese Benutzer bereit.
 
 7. Wenn Sie ausgewählt haben, dass Sie mit „Benutzeraffinität“ und „Über das Unternehmensportal authentifizieren“ registrieren möchten, bestimmen Sie, ob Sie „Unternehmensportal mit Apple Volume Purchase Program (VPP)“ installieren möchten. Wenn Sie das Unternehmensportal mit einem VPP-Token installieren, muss Ihr Benutzer keine Apple-ID und kein Kennwort eingeben, um das Unternehmensportal während der Registrierung aus dem App Store herunterzuladen. Wählen Sie unter **Unternehmensportal mit VPP installieren** die Option **Token verwenden:** , um ein VPP-Token auszuwählen, dem kostenlose Lizenzen des Unternehmensportals zur Verfügung stehen. Wenn Sie VPP zum Bereitstellen des Unternehmensportals nicht verwenden möchten, wählen Sie unter **Unternehmensportal mit VPP installieren** die Option **VPP nicht verwenden** aus. 
 

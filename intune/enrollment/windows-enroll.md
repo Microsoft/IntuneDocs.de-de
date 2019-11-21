@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5eb5a8f462846afd97ae4ea84b7431ae147d918c
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 30a1c9b1fddaa59d633c8dc969063b26b25097de
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709198"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098184"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Registrierung von Windows-Geräten
 
@@ -117,6 +117,15 @@ Registrierungsanleitungen für Endbenutzer finden Sie unter [Registrieren Ihres 
 > Wenn Sie zwar die automatische Registrierung für die Verwaltung mobiler Geräte nicht aktiviert haben, Sie aber über Windows 10-Geräte verfügen, die mit Azure AD verknüpft wurden, werden nach der Registrierung zwei Datensätze in der Intune-Konsole angezeigt. Dies können Sie vermeiden, wenn Sie sicherstellen, dass Benutzer mit Geräten, die mit Azure AD verknüpft sind, zu **Konten** > **Access work or school** (Auf Arbeits- oder Schul- bzw. Unikonto zugreifen) navigieren und unter Verwendung dieses Kontos eine **Verbindung** herstellen. 
 
 Weitere Informationen zu Endbenutzeraufgaben finden Sie unter [Ressourcen zu Endbenutzerszenarios in Microsoft Intune](../fundamentals/end-user-educate.md).
+
+## <a name="registration-and-enrollment-cnames"></a>Registrieren von CNAME-Einträgen
+Azure Active Directory umfasst einen weiteren CNAME, der für die Registrierung von iOS-, Android- und Windows-Geräten verwendet wird. Für den bedingten Intune-Zugriff müssen Geräte registriert werden. Dieser Vorgang wird auch als „dem Arbeitsplatz beitreten“ bezeichnet. Wenn Sie den bedingten Zugriff verwenden möchten, müssen Sie auch den CNAME-Eintrag „EnterpriseRegistration“ für jeden Unternehmensnamen konfigurieren.
+
+| Typ | Hostname | Verweist auf | TTL |
+| --- | --- | --- | --- |
+| NAME | EnterpriseRegistration. company_domain.com | EnterpriseRegistration.windows.net | 1 Stunde|
+
+Weitere Informationen zur Geräteregistrierung finden Sie unter [Verwalten von Geräteidentitäten mit dem Azure-Portal](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal).
 
 ## <a name="next-steps"></a>Nächste Schritte
 

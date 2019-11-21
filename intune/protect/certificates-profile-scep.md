@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a3cfcc4ac0c5125324102c55dc7bc887006df6b
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: b9f9d6626d26e919efbd3a3d8b5dd735ecb7fb62
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801423"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199140"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>Erstellen und Zuweisen eines SCEP-Zertifikatprofils in Intune
 
@@ -49,14 +49,9 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
 
    Bei SCEP-Zertifikatprofilen für das Profil *Nur Gerätebesitzer* gelten folgende Einschränkungen:
 
-   1. Die folgenden Variablen werden nicht unterstützt:
+   1. Unter „Überwachung“ ist die Zertifikatberichterstellung für SCEP-Zertifikatprofile für Gerätebesitzer nicht verfügbar.
 
-      - CN={{OnPrem_Distinguished_Name}}
-      - CN={{onPremisesSamAccountName}}
-
-   2. Unter „Überwachung“ ist die Zertifikatberichterstellung für SCEP-Zertifikatprofile für Gerätebesitzer nicht verfügbar.
-
-   3. Sie können Intune nicht verwenden, um Zertifikate zu widerrufen, die von SCEP-Zertifikatsprofilen für Gerätebesitzer bereitgestellt wurden. Sie können den Widerruf über einen externen Prozess oder direkt mit der Zertifizierungsstelle verwalten. 
+   2. Sie können Intune nicht verwenden, um Zertifikate zu widerrufen, die von SCEP-Zertifikatsprofilen für Gerätebesitzer bereitgestellt wurden. Sie können den Widerruf über einen externen Prozess oder direkt mit der Zertifizierungsstelle verwalten. 
 
 7. Klicken Sie auf **Einstellungen**, und nehmen Sie die folgenden Konfigurationen vor:
 
@@ -115,12 +110,11 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
 
         Formatoptionen für das Format des Antragstellernamens umfassen die folgenden Variablen:
 
-        - **{{AAD_Device_ID}}**
+        - **{{AAD_Device_ID}}** oder **{{AzureADDeviceId}}** : Beide Variablen können zum Identifizieren eines Geräts über die zugehörige Azure AD-ID verwendet werden.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
         - **{{IMEINumber}}**
-        - **{{AzureADDeviceId}}**
         - **{{WiFiMacAddress}}**
         - **{{IMEI}}**
         - **{{DeviceName}}**
@@ -157,12 +151,11 @@ Nachdem Sie [Ihre Infrastruktur für die Unterstützung von SCEP-Zertifikaten (S
 
         Mit dem Zertifikattyp *Gerät* können Sie die folgenden Gerätzertifikatvariablen für den Wert verwenden:
 
-        - **{{AAD_Device_ID}}**
+        - **{{AAD_Device_ID}}** oder **{{AzureADDeviceId}}** : Beide Variablen können zum Identifizieren eines Geräts über die zugehörige Azure AD-ID verwendet werden.
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
         - **{{IMEINumber}}**
-        - **{{AzureADDeviceId}}**
         - **{{WiFiMacAddress}}**
         - **{{IMEI}}**
         - **{{DeviceName}}**
