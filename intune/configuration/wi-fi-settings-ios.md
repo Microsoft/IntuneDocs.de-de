@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,18 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d88705cbce0d5045ba7f45baf80de7b6e5d383d3
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: dd37813e5ea0b6a64d7fae22cada06cccb01a942
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593764"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059219"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Hinzufügen von WLAN-Einstellungen für iOS-Geräte in Microsoft Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-Sie können ein Profil mit bestimmten WLAN-Einstellungen erstellen und dieses dann auf Ihren iOS-Geräten bereitstellen. Microsoft Intune bietet viele Funktionen, darunter die Authentifizierung in Ihrem Netzwerk und das Hinzufügen eines PKCS- oder SCEP-Zertifikats.
+Sie können ein Profil mit bestimmten WLAN-Einstellungen erstellen und dieses dann auf Ihren iOS-Geräten bereitstellen. Microsoft Intune bietet viele Features, darunter die Authentifizierung bei Ihrem Netzwerk, das Hinzufügen eines PKCS- oder SCEP-Zertifikats u.v.m.
 
 Diese WLAN-Einstellungen lassen sich in zwei Kategorien unterteilen: grundlegende Einstellungen und Einstellungen für Unternehmen.
 
@@ -81,9 +79,9 @@ Dieser Artikel beschreibt diese Einstellungen.
     - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes vertrauenswürdiges Stammzertifikatsprofil aus. Mit diesem Zertifikat kann der Client das Zertifikat des Drahtlos Netzwerk Zugriffs Servers als vertrauenswürdig einstufen.
 
     - **Clientauthentifizierung**: Wählen Sie eine **Authentifizierungsmethode** aus. Folgende Optionen sind verfügbar:
-      
-      - **Abgeleitete**Anmelde Informationen: Wenn kein abgeleiteter Anmelde Informations Aussteller konfiguriert wurde, werden Sie von InTune dazu aufgefordert.
-      
+
+      - **Abgeleitete**Anmelde Informationen: Verwenden Sie ein Zertifikat, das von der Smartcard eines Benutzers abgeleitet ist. Wenn kein abgeleiteter Anmelde Informations Aussteller konfiguriert ist, werden Sie von InTune aufgefordert, eine hinzuzufügen. Weitere Informationen finden Sie unter [verwenden abgeleiteter Anmelde Informationen in Microsoft InTune](../protect/derived-credentials.md).
+
       - **Zertifikate**: Wählen Sie das SCEP- oder PKCS-Clientzertifikatsprofil aus, das auch auf dem Gerät bereitgestellt wird. Dieses Zertifikat ist die Identität, die das Gerät dem Server zur Authentifizierung der Verbindung bereitstellt.
 
     - **Identitätsschutz (äußere Identität)** : Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet wird. Dieser Text kann einen beliebigen Wert haben, z.B. `anonymous`. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.
@@ -95,8 +93,8 @@ Dieser Artikel beschreibt diese Einstellungen.
 
     - **Clientauthentifizierung**: Wählen Sie eine **Authentifizierungsmethode** aus. Folgende Optionen sind verfügbar:
 
-      - **Abgeleitete**Anmelde Informationen: Wenn kein abgeleiteter Anmelde Informations Aussteller konfiguriert wurde, werden Sie von InTune dazu aufgefordert.  
-      
+      - **Abgeleitete**Anmelde Informationen: Verwenden Sie ein Zertifikat, das von der Smartcard eines Benutzers abgeleitet ist. Wenn kein abgeleiteter Anmelde Informations Aussteller konfiguriert ist, werden Sie von InTune aufgefordert, eine hinzuzufügen. Weitere Informationen finden Sie unter [verwenden abgeleiteter Anmelde Informationen in Microsoft InTune](../protect/derived-credentials.md).
+
       - **Benutzername und Kennwort**: Fordern Sie den Benutzer zur Eingabe des Benutzernamens und Kennworts für die Authentifizierung der Verbindung auf. Geben Sie außerdem Folgendes ein:
         - **Nicht-EAP-Methode (innere Identität)** : Wählen Sie aus, wie Sie die Verbindung authentifizieren möchten. Achten Sie darauf, dass Sie das gleiche Protokoll auswählen, das auch in Ihrem WLAN konfiguriert ist.
 
@@ -115,8 +113,8 @@ Dieser Artikel beschreibt diese Einstellungen.
 
     - **Clientauthentifizierung**: Wählen Sie eine **Authentifizierungsmethode** aus. Folgende Optionen sind verfügbar:
 
-      - **Abgeleitete**Anmelde Informationen: Wenn kein abgeleiteter Anmelde Informations Aussteller konfiguriert wurde, werden Sie von InTune dazu aufgefordert.  
-      
+      - **Abgeleitete**Anmelde Informationen: Verwenden Sie ein Zertifikat, das von der Smartcard eines Benutzers abgeleitet ist. Wenn kein abgeleiteter Anmelde Informations Aussteller konfiguriert ist, werden Sie von InTune aufgefordert, eine hinzuzufügen. Weitere Informationen finden Sie unter [verwenden abgeleiteter Anmelde Informationen in Microsoft InTune](../protect/derived-credentials.md).
+
       - **Benutzername und Kennwort**: Fordern Sie den Benutzer zur Eingabe des Benutzernamens und Kennworts für die Authentifizierung der Verbindung auf. 
 
       - **Zertifikate**: Wählen Sie das SCEP- oder PKCS-Clientzertifikatsprofil aus, das auch auf dem Gerät bereitgestellt wird. Dieses Zertifikat ist die Identität, die das Gerät dem Server zur Authentifizierung der Verbindung bereitstellt.

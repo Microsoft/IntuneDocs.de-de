@@ -4,7 +4,7 @@ description: Microsoft 365 Enterprise umfasst Microsoft Intune. Erfahren Sie, wi
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 audience: ITPro
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cfa7e34d19465eb43b5eb9cd68b7513545938fa8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504773"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058527"
 ---
 # <a name="device-management-overview"></a>Übersicht über die Geräteverwaltung
 
@@ -84,7 +84,7 @@ Wenn Sie Intune einrichten, können Sie Geräte auch ausschließlich im Azure-Po
 
 ## <a name="simplify-it-tasks-using-the-device-management-admin-center"></a>Vereinfachen von IT-Aufgaben mit dem Device Management Admin Center
 
-Das [Device Management Admin Center](https://devicemanagement.microsoft.com/) ist eine zentrale Anlaufstelle für die Verwaltung und Durchführung von Aufgaben für Ihre mobilen Geräte. Dieser Arbeitsbereich enthält die Dienste für die Geräteverwaltung, einschließlich Intune und Azure Active Directory, sowie für die Verwaltung von Clientanwendungen.
+Das [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) ist eine zentrale Anlaufstelle für die Verwaltung und Durchführung von Aufgaben für Ihre mobilen Geräte. Dieser Arbeitsbereich enthält die Dienste für die Geräteverwaltung, einschließlich Intune und Azure Active Directory, sowie für die Verwaltung von Clientanwendungen.
 
 Im Verwaltungs Center für die Geräteverwaltung können Sie folgende Aktionen ausführen:
 

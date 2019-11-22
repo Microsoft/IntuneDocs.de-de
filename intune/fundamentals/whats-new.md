@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac6da1b15d482d20340163b0bb79e88d74e8e375
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
+ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635343"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73882492"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 
@@ -53,12 +53,20 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Hier 
 ### Role-based access control
 -->  
 
+## <a name="week-of-november-4-2019"></a>Woche vom 4. November 2019
+
+### <a name="device-security"></a>Gerätesicherheit
+
+#### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>Sicherheitsbaselines werden auf Microsoft Azure Government unterstützt.<!-- 4062552 -->
+
+Intune-Instanzen, die auf *Microsoft Azure Government* gehostet werden, können nun [Sicherheitsbaselines](../protect/security-baselines.md) verwenden, mit denen Sie Ihre Benutzer und Geräte sichern und schützen können.
+
 ## <a name="week-of-october-28-2019"></a>Woche vom 28. Oktober 2019
 
 ### <a name="app-management"></a>App-Verwaltung
 
 #### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857---"></a>Verbessertes Prüflistendesign in der Unternehmensportal-App für Android<!-- 5550857 -->  
-Die Prüfliste für das Setup in der Unternehmensportal-App für Android wurde mit einem vereinfachten Design und neuen Symbolen aktualisiert. Die Änderungen stimmen mit den neuesten Updates überein, die an der Unternehmensportal-App für iOS vorgenommen wurden. Diese App-Updates werden zurzeit für alle Kunden bereitgestellt, und wir planen, die Bereitstellung bis Ende nächster Woche abgeschlossen zu haben. Einen parallelen Vergleich der Änderungen finden Sie unter [Änderungen an der App-UI](whats-new-app-ui.md). Weitere Informationen zu den aktualisierten Registrierungsschritten finden Sie unter [Registrieren bei Android-Arbeitsprofilen](/intune-user-help/enroll-device-android-work-profile) und [Registrieren Ihres Android-Geräts](/intune-user-help/enroll-device-android-company-portal).  
+Die Prüfliste für das Setup in der Unternehmensportal-App für Android wurde mit einem vereinfachten Design und neuen Symbolen aktualisiert. Die Änderungen stimmen mit den neuesten Updates überein, die an der Unternehmensportal-App für iOS vorgenommen wurden. Einen parallelen Vergleich der Änderungen finden Sie unter [Änderungen an der App-UI](whats-new-app-ui.md). Weitere Informationen zu den aktualisierten Registrierungsschritten finden Sie unter [Registrieren bei Android-Arbeitsprofilen](/intune-user-help/enroll-device-android-work-profile) und [Registrieren Ihres Android-Geräts](/intune-user-help/enroll-device-android-company-portal).  
 
 #### <a name="win32-apps-on-windows-10-s-mode-devices---3747604---"></a>Win32-Apps auf Geräten im Windows 10 S Modus<!-- 3747604 --> 
 Sie können Win32-Apps auf im Windows 10 S Modus verwalteten Geräten installieren und ausführen. Hierfür können Sie mithilfe der WDAC-PowerShell-Tools (Windows Defender-Anwendungssteuerung) eine oder mehrere ergänzende Richtlinien für Windows im S Modus erstellen. Signieren Sie die ergänzenden Richtlinien mit dem Portal für den Device Guard-Signaturdienst, und laden Sie dann die Richtlinien über Intune hoch, und verteilen Sie diese. Sie finden diese Funktion in Intune, indem Sie auf **Client-Apps** > **Windows 10 S supplemental policies** (Ergänzende Windows 10 S-Richtlinien) klicken. Weitere Informationen finden Sie unter [Aktivieren von Win32-Apps auf Geräten im S Modus](~/apps/apps-win32-s-mode.md).

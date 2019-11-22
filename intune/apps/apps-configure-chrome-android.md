@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635490"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801664"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Konfigurieren von Google Chrome für Android-Geräte mit Intune 
 
@@ -63,7 +63,7 @@ Weitere Informationen zum Hinzufügen einer verwalteten Google Play-App zu Intun
 
     Im Folgenden finden Sie ein Beispiel für die allgemeinen Einstellungen:
     - **Zugriff auf eine Liste von URLs blockieren**: `["*"]`
-    - **Zugriff auf eine Liste von URLs zulassen**: `["baidu.com", "yahoo.com", "chrome://*"]`
+    - **Zugriff auf eine Liste von URLs zulassen**: `["baidu.com", "youtube.com", "chromium.org", "chrome://*"]`
     - **Verwaltete Lesezeichen**: `[{"toplevel_name": "My managed bookmarks folder"  },  {"url": "baidu.com",   "name": "Baidu"},  {"url": "youtube.com", "name": "Youtube"},  {"name": "Chrome links",  "children": [{"url": "chromium.org", "name": "Chromium"},    {"url": "dev.chromium.org", "name": "Chromium Developers"}]}]`
     - **Verfügbarkeit des Inkognito-Modus**: `Incognito mode disabled`
 
@@ -71,7 +71,7 @@ Weitere Informationen zum Hinzufügen einer verwalteten Google Play-App zu Intun
 
     ![Allgemeine Einstellungen](~/apps/media/apps-configure-chrome-android/common-settings.png)
 
-    Mit den obigen Einstellungen werden Lesezeichen erstellt und der Zugriff auf alle Websites mit Ausnahme von `baidu.com`, `yahoo.com` und `chrome://` ermöglicht.
+    Mit den obigen Einstellungen werden Lesezeichen erstellt und der Zugriff auf alle URLs mit Ausnahme von `baidu.com`, `yahoo.com`, `chromium.org` und `chrome://` blockiert.
 
 5. Klicken Sie auf **OK** und **Hinzufügen**, um Intune die Konfigurationsrichtlinie hinzuzufügen.
 6. Weisen Sie diese Konfigurationsrichtlinie einer Benutzergruppe zu. Weitere Informationen finden Sie unter [Zuweisen von Apps zu Gruppen mit Microsoft Intune](~/apps/apps-deploy.md). 

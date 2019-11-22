@@ -1,11 +1,11 @@
 ---
 title: Häufige Endpoint Protection-Meldungen in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Häufige Meldungen und mögliche Lösungen bei der Verwendung von und Problembehandlung für Endpoint Protection und Windows Defender in Microsoft Intune.
+description: Häufige Meldungen und mögliche Lösungen bei der Verwendung von und Problembehandlung für Endpoint Protection und Microsoft Defender in Microsoft Intune.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 11/13/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,20 +18,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e34e1cb30469593c8ec9e756659ad03589ae38bc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 819586a923f5c0f3a81a6d59c4a3895898182f6b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509777"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059160"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Endpoint Protection-Probleme und mögliche Lösungen in Microsoft Intune
 
 Dieser Artikel beschreibt mögliche Ursachen und Lösungen für die einige Fehler und Warnungen. Diese Informationen helfen Ihnen, Probleme bei der Verwendung von Endpoint Protection zu beheben.
 
-## <a name="windows-defender-error-codes"></a>Windows Defender-Fehlercodes
+## <a name="microsoft-defender-error-codes"></a>Microsoft Defender-Fehlercodes
 
-Überprüfen Sie die Ereignisprotokolle und Fehlercodes, um [Probleme mit Windows Defender Antivirus zu behandeln](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
+Überprüfen Sie die Ereignisprotokolle und Fehlercodes, um [Probleme mit Microsoft Defender Antivirus zu behandeln](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus).
 
 ## <a name="common-intune-errors-and-possible-resolutions"></a>Häufige Intune-Fehler und mögliche Lösungen
 
@@ -48,7 +48,7 @@ Dieser Artikel beschreibt mögliche Ursachen und Lösungen für die einige Fehle
 
 ### <a name="features-are-disabled"></a>Features sind deaktiviert
 
-Sie erhalten möglicherweise eine Meldung, dass einige Features deaktiviert wurden. Diese Meldungen können auftreten, wenn Intune Endpoint Protection oder Windows Defender mithilfe eines Konfigurationsprofils von einem Administrator deaktiviert wurden. Es ist auch möglich, dass die Deaktivierung von einem Endbenutzer auf dem Gerät durchgeführt wurde. Mögliche Meldungen:
+Sie erhalten möglicherweise eine Meldung, dass einige Features deaktiviert wurden. Diese Meldungen können auftreten, wenn Intune Endpoint Protection oder Microsoft Defender mithilfe eines Konfigurationsprofils von einem Administrator deaktiviert wurde. Es ist auch möglich, dass die Deaktivierung von einem Endbenutzer auf dem Gerät durchgeführt wurde. Mögliche Meldungen:
 
 `Endpoint Protection disabled`  
 `Real-time protection disabled`  
@@ -61,20 +61,20 @@ Sie erhalten möglicherweise eine Meldung, dass einige Features deaktiviert wurd
 **Mögliche Lösungen**: Aktivieren Sie diese Features. Anleitungen finden Sie hier:
 
 - [Hinzufügen von Endpoint Protection-Einstellungen](../protect/endpoint-protection-configure.md)
-- [Windows Defender Antivirus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
+- [Microsoft Defender Antivirus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [Endbenutzer: Aktivieren von Echtzeitschutz zum Zugriff auf Unternehmensressourcen](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>Malwaredefinitionen sind veraltet
 
 Dieser Status wird angezeigt, wenn die Malwaredefinitionen auf dem Gerät seit mehr als 14 Tagen nicht mehr auf dem neuesten Stand sind. Beispielsweise kann die Meldung angezeigt werden, wenn das Gerät nicht mit dem Internet verbunden ist oder die Malwaredefinitionen veraltet sind.
 
-**Mögliche Lösungen**: Wenn Malwaredefinitionen veraltet sind, können Sie die Definitionen mit [Windows Defender Antivirus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus) aktualisieren.
+**Mögliche Lösungen**: Wenn Malwaredefinitionen veraltet sind, können Sie die Definitionen mit [Microsoft Defender Antivirus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus) aktualisieren.
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>Vollständige Überprüfung oder Schnellüberprüfung überfällig
 
 Es wurde seit 14 Tagen keine vollständige Überprüfung oder Schnellüberprüfung mehr durchgeführt. Dieses Szenario kann auftreten, wenn das Gerät während einer vollständigen Überprüfung neu gestartet wird.
 
-**Mögliche Lösungen**: Wenn eine Überprüfung überfällig ist, können Sie eine einmalige Überprüfung ausführen oder eine wiederholte Überprüfung planen. Weitere Informationen finden Sie unter [Windows Defender Antivirus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
+**Mögliche Lösungen**: Wenn eine Überprüfung überfällig ist, können Sie eine einmalige Überprüfung ausführen oder eine wiederholte Überprüfung planen. Siehe [Microsoft Defender Antivirus](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus).
 
 ### <a name="another-endpoint-protection-application-running"></a>Eine andere Endpoint Protection-Anwendung wird ausgeführt
 

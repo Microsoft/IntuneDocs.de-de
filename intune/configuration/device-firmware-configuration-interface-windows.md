@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
-ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
+ms.openlocfilehash: 38f02d694f1935e4732805f3ae7c66fd9718057a
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432533"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059607"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>Verwenden von DFCI-Profilen (Device Firmware Configuration Interface) auf Windows-Geräten in Microsoft Intune (Public Preview)
 
@@ -77,8 +77,8 @@ Dieses Profil stellt sicher, dass Geräte während des Windows Setups überprüf
 
 Dieses Profil enthält die von Ihnen konfigurierten DFCI-Einstellungen.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Klicken Sie auf **Gerätekonfiguration** > **Profile** > **Profil erstellen**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
     - **Name**: Geben Sie einen aussagekräftigen Namen für das Profil ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein guter Profilname ist beispielsweise **Windows: Konfigurieren von DFCI-Einstellungen auf Windows-Geräten**.
@@ -127,9 +127,11 @@ Dieses Profil enthält die von Ihnen konfigurierten DFCI-Einstellungen.
 
 Nach dem Erstellen der Profile [können diese zugewiesen werden](../configuration/device-profile-assign.md). Stellen Sie sicher, dass Sie die Profile Ihren Azure AD-Sicherheitsgruppen zuweisen, die Ihre DFCI-Geräte enthalten.
 
-Wenn das Gerät das nächste Mal synchronisiert oder neu gestartet wird, werden die DFCI-Profileinstellungen angewendet. Starten Sie das Gerät nach Anwenden der Richtlinie neu.
+Wenn das Gerät das Windows Autopilot ausführt, kann DFCI während „Seite zum Registrierungsstatus“ einen Neustart erzwingen. Mit diesem ersten Neustart wird UEFI in Intune registriert. 
 
-Wenn das Gerät das Windows-Gerätesetup ausführt, kann DFCI während „Seite zum Registrierungsstatus“ einen Neustart erzwingen. Nach Abschluss des Setups können Sie sich vergewissern, dass die DFCI-Einstellungen aktiv sind, indem Sie das Gerät neu starten. Befolgen Sie dann die Anweisungen des Geräteherstellers, um das UEFI-Menü zu öffnen.
+Wenn Sie bestätigen möchten, dass das Gerät registriert ist, können Sie das Gerät nochmals neu starten, dies ist jedoch nicht erforderlich. Befolgen Sie die Anweisungen des Geräteherstellers, um das UEFI-Menü zu öffnen, und bestätigen Sie, dass UEFI nun verwaltet wird.
+
+Das nächste Mal, wenn das Gerät mit Intune synchronisiert wird, empfängt Windows die DFCI-Einstellungen. Starten Sie das Gerät neu. Dieser dritte Neustart ist erforderlich, damit UEFI die DFCI-Einstellungen von Windows empfängt.
 
 ## <a name="update-existing-dfci-settings"></a>Aktualisieren vorhandener DFCI-Einstellungen
 

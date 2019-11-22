@@ -5,7 +5,7 @@ description: Überprüfen Sie die Standardeinstellungen und verfügbaren Einstel
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 21d70bb0322ec05ceb091844827151ce746cda6f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0d673650a26f3917fa32babba42e5e2054c87e59
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508961"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060027"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>MDM-Einstellungen für Sicherheitsbaselines in Intune  
 
@@ -126,19 +126,19 @@ Weitere Informationen finden Sie unter [Policy CSP - BitLocker (Richtlinien-Konf
 Weitere Informationen finden Sie unter [Policy CSP - Browser (Richtlinien-Konfigurationsdienstanbieter - Browser)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) in Ihrer Windows-Dokumentation.  
 
 - **SmartScreen für Microsoft Edge anfordern**  
-  Microsoft Edge verwendet Windows Defender SmartScreen (aktiviert), um Benutzer standardmäßig vor potenziellen betrügerischen Phishing-Angriffen und Schadsoftware zu schützen. Standardmäßig ist auch eingestellt, dass Benutzer Windows Defender SmartScreen nicht deaktivieren können. Wenn Sie diese Richtlinie aktivieren, wird Windows Defender SmartScreen deaktiviert und kann von Benutzern nicht mehr aktiviert werden. Konfigurieren Sie diese Richtlinie nicht so, dass Benutzer wählen können, ob Windows Defender SmartScreen aktiviert oder deaktiviert wird.  
+  Microsoft Edge verwendet Microsoft Defender SmartScreen (aktiviert), um Benutzer standardmäßig vor potenziellen betrügerischen Phishingangriffen und Schadsoftware zu schützen. Standardmäßig ist auch eingestellt, dass Benutzer Microsoft Defender SmartScreen nicht deaktivieren können. Wenn Sie diese Richtlinie aktivieren, wird Microsoft Defender SmartScreen deaktiviert und kann von Benutzern nicht aktiviert werden. Konfigurieren Sie diese Richtlinie nicht so, dass Benutzer auswählen können, ob Microsoft Defender SmartScreen aktiviert oder deaktiviert wird.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067029)   
   
   **Standard**: Ja  
   
 - **Zugriff auf schädliche Websites blockieren**  
-  Standardmäßig ermöglicht Microsoft Edge Benutzern, die Warnungen von Windows Defender SmartScreen zu potenziell schädlichen Websites zu umgehen (ignorieren) und trotzdem auf die betreffende Website zuzugreifen. Mit dieser Richtlinie können Sie Microsoft Edge jedoch so konfigurieren, dass Benutzer die Warnungen nicht umgehen und nicht auf die Website zugreifen können.  
+  Standardmäßig ermöglicht Microsoft Edge es Benutzern, die Warnungen von Microsoft Defender SmartScreen zu potenziell schädlichen Websites zu umgehen (ignorieren) und trotzdem auf die betreffende Website zuzugreifen. Mit dieser Richtlinie können Sie Microsoft Edge jedoch so konfigurieren, dass Benutzer die Warnungen nicht umgehen und nicht auf die Website zugreifen können.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067040)   
   
   **Standard**: Ja  
   
 - **Block unverified file download** (Herunterladen nicht überprüfter Dateien blockieren)  
-  Standardmäßig ermöglicht Microsoft Edge Benutzern, die Warnungen von Windows Defender SmartScreen zu potenziell schädlichen Dateien zu umgehen (ignorieren) und die nicht geprüfte(n) Datei(en) trotzdem herunterzuladen. Durch die Aktivierung dieser Richtlinie wird verhindert, dass Benutzer die Warnungen umgehen und die nicht geprüfte(n) Datei(en) herunterladen.  
+  Standardmäßig ermöglicht Microsoft Edge es Benutzern, die Warnungen von Microsoft Defender SmartScreen zu potenziell schädlichen Dateien zu umgehen (ignorieren) und nicht geprüfte Dateien trotzdem herunterzuladen. Durch die Aktivierung dieser Richtlinie wird verhindert, dass Benutzer die Warnungen umgehen und die nicht geprüfte(n) Datei(en) herunterladen.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067023)  
   
   **Standard**: Ja  
@@ -1416,7 +1416,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Power (Richtlinien-CSP: Pow
   - **Maximaler Zeitwert des Tickets**  
     **Standard**: *Nicht konfiguriert*  
 
-  - **Maximaler Ticket Zeitraum**  
+  - **Maximaler Ticketzeitraum**  
     **Standard**: Minuten    
 
   - **Einladungs Methode für E-Mail**  
@@ -1584,7 +1584,7 @@ Weitere Informationen finden Sie unter [Policy CSP - WindowsConnectionManager (R
 
   **Standard**: Aktiviert
   
-## <a name="windows-defender"></a>Windows Defender  
+## <a name="microsoft-defender"></a>Microsoft Defender  
 Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfigurationsdienstanbieter: Defender)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) in Ihrer Windows-Dokumentation.  
 
 - **Eingehende E-Mail überprüfen**  
@@ -1600,7 +1600,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Blockieren
   
 - **Defender sample submission consent type** (Zustimmungstyp für die Übermittlung von Beispielen in Windows Defender)  
-  Diese Einstellung sucht nach der Benutzerzustimmungsebene in Windows Defender, um Daten zu senden. Wenn die erforderliche Zustimmung bereits erteilt wurde, sendet Windows Defender die Daten. Wenn nicht (und wenn der Benutzer angegeben hat, nie zu fragen), wird die Benutzeroberfläche gestartet, um nach der Benutzerzustimmung zu fragen (wenn Defender/AllowCloudProtection gestattet ist), bevor Daten gesendet werden.  
+  Diese Einstellung sucht nach der Benutzerzustimmungsebene in Microsoft Defender, um Daten zu senden. Wenn die erforderliche Zustimmung bereits erteilt wurde, sendet Microsoft Defender die Daten. Wenn nicht (und wenn der Benutzer angegeben hat, nie zu fragen), wird die Benutzeroberfläche gestartet, um nach der Benutzerzustimmung zu fragen (wenn Defender/AllowCloudProtection gestattet ist), bevor Daten gesendet werden.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067131)  
   
   **Standard**: Sichere Beispiele automatisch senden 
@@ -1616,7 +1616,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Blockieren
   
 - **Diebstahl von Anmeldeinformationen verhindern**  
-  Windows Defender Credential Guard nutzt auf Virtualisierung basierende Sicherheitsverfahren, um geheime Daten zu isolieren, damit nur durch privilegierte Systemsoftware auf diese Daten zugegriffen werden kann. Ein nicht autorisierter Zugriff auf diese geheimen Daten kann Angriffe zum Diebstahl von Anmeldeinformationen zur Folge haben (z. B. Pass-the-Hash- oder Pass-the-Ticket-Angriffe). Windows Defender Credential Guard verhindert diese Angriffe durch den Schutz von NTLM-Kennworthashes, Kerberos Ticket-Granting Tickets und Anmeldeinformationen, die von Anwendungen als Domänenanmeldeinformationen gespeichert werden.  
+  Microsoft Defender Credential Guard nutzt auf Virtualisierung basierende Sicherheitsverfahren, um Geheimnisse zu isolieren, sodass nur privilegierte Systemsoftware auf diese Daten zugreifen kann. Ein nicht autorisierter Zugriff auf diese geheimen Daten kann Angriffe zum Diebstahl von Anmeldeinformationen zur Folge haben (z. B. Pass-the-Hash- oder Pass-the-Ticket-Angriffe). Microsoft Defender Credential Guard verhindert diese Angriffe durch den Schutz von NTLM-Kennworthashes, Kerberos Ticket-Granting Tickets und Anmeldeinformationen, die von Anwendungen als Domänenanmeldeinformationen gespeichert werden.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067065)  
   
   **Standard**: Aktivieren
@@ -1632,7 +1632,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Aktivieren
 
 - **Netzwerkschutztyp**  
-  Mit dieser Richtlinieneinstellung können Sie Netzwerkschutz in Windows Defender Exploit Guard aktivieren (blockieren/überwachen) oder deaktivieren. Netzwerkschutz ist ein Feature von Windows Defender Exploit Guard, das Arbeitnehmer davor schützt, eine Anwendung im Zuge betrügerischer Phishing-Versuche mit Zugriffsabsicht, Hostseiten für Exploits und schädliche Inhalte im Internet zu verwenden. Dabei wird auch verhindert, dass Browser von Drittanbietern Verbindungen zu gefährlichen Websites herstellen. Der Werttyp ist Integer. Wenn Sie diese Einstellung aktivieren, wird der Netzwerkschutz aktiviert, und Arbeitnehmer können ihn nicht mehr deaktivieren. Sein Verhalten kann mit den folgenden Optionen gesteuert werden: „Blockieren“ und „Überwachen“. Wenn Sie diese Richtlinie mit der Option „Blockieren“ aktivieren, können Benutzer und Anwendungen keine Verbindungen zu gefährlichen Domänen herstellen. Diese Aktivität wird im Windows Defender Security Center angezeigt. Wenn Sie diese Richtlinie mit der Option „Überwachen“ aktivieren, können Benutzer/Anwendungen Verbindungen zu gefährlichen Domänen herstellen. Diese Aktivität wird jedoch trotzdem im Windows Defender Security Center angezeigt. Wenn Sie diese Richtlinie deaktivieren, können Benutzer/Anwendungen Verbindungen zu gefährlichen Domänen herstellen. Im Windows Defender Security Center werden keine Netzwerkaktivitäten angezeigt. Wenn Sie diese Richtlinie nicht konfigurieren, wird die Blockierung des Netzwerks standardmäßig deaktiviert.  
+  Mit dieser Richtlinieneinstellung können Sie den Netzwerkschutz in Microsoft Defender Exploit Guard aktivieren (blockieren/überwachen) oder deaktivieren. Der Netzwerkschutz ist ein Feature von Microsoft Defender Exploit Guard, das Arbeitnehmer beim Verwenden von Apps vor dem Zugriff auf Phishingwebsites, Websites mit Exploits und schädliche Inhalte im Internet schützt. Dabei wird auch verhindert, dass Browser von Drittanbietern Verbindungen zu gefährlichen Websites herstellen. Der Werttyp ist Integer. Wenn Sie diese Einstellung aktivieren, wird der Netzwerkschutz aktiviert, und Arbeitnehmer können ihn nicht mehr deaktivieren. Sein Verhalten kann mit den folgenden Optionen gesteuert werden: „Blockieren“ und „Überwachen“. Wenn Sie diese Richtlinie mit der Option „Blockieren“ aktivieren, können Benutzer und Anwendungen keine Verbindungen zu gefährlichen Domänen herstellen. Diese Aktivität wird im Microsoft Defender Security Center angezeigt. Wenn Sie diese Richtlinie mit der Option „Überwachen“ aktivieren, können Benutzer/Anwendungen Verbindungen zu gefährlichen Domänen herstellen. Diese Aktivität wird jedoch trotzdem im Microsoft Defender Security Center angezeigt. Wenn Sie diese Richtlinie deaktivieren, können Benutzer/Anwendungen Verbindungen zu gefährlichen Domänen herstellen. Im Microsoft Defender Security Center werden keine Netzwerkaktivitäten angezeigt. Wenn Sie diese Richtlinie nicht konfigurieren, wird die Blockierung des Netzwerks standardmäßig deaktiviert.  
   [Erfahren Sie mehr](/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **Standard**: Aktivieren
@@ -1643,13 +1643,13 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Täglich
   
 - **Schutz über die Cloud**  
-  Um Ihren PC bestmöglich zu schützen, sendet Windows Defender zu jedem entdeckten Problem Informationen an Microsoft. Microsoft analysiert diese Informationen, erfährt mehr über die Probleme, die Sie und andere Kunden betreffen, und bietet verbesserte Lösungen an.  
+  Um Ihren PC bestmöglich zu schützen, sendet Microsoft Defender Informationen zu jedem entdeckten Problem an Microsoft. Microsoft analysiert diese Informationen, erfährt mehr über die Probleme, die Sie und andere Kunden betreffen, und bietet verbesserte Lösungen an.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067039)
   
   **Standard**: Ja  
 
 - **Potenziell unerwünschte App-Aktion in Defender**  
-  Die PUA-Schutzfunktion (für potenziell unerwünschte Anwendungen) in Windows Defender Antivirus kann PUAs identifizieren und sie daran hindern, Endpunkte herunterzuladen und in ihrem Netzwerk zu installieren. Bei diesen Anwendungen handelt es sich nicht um Viren, Schadsoftware oder andere Arten von Bedrohungen. Diese Anwendungen können Aktionen auf Endpunkten ausführen, die deren Leistung oder Verwendung beeinträchtigen. Mit PUAs können auch Anwendungen gemeint sein, die einen schlechten Ruf haben. Typisches PUA-Verhalten umfasst: Verschiedene Arten von Softwarebündelungen; Einschleusung von Werbung in Webbrowser; Treiber- und Registrierungsoptimierungen, die Probleme erkennen, eine Zahlung zur Fehlerbehebung anfordern, aber auf dem Endpunkt verbleiben und weder Änderungen noch Optimierungen vornehmen (auch bekannt als „Rogue-Sicherheitssoftware“). Diese Anwendungen können das Risiko einer Infektion mit Schadsoftware für Ihr Netzwerk erhöhen, das Identifizieren von Infektionen erschweren und unnötig IT-Ressourcen zum Bereinigen der Anwendungen belegen.  
+  Das Feature zum Schutz vor potenziell unerwünschten Anwendungen (Potentially Unwanted Applications, PUAs) in Microsoft Defender Antivirus kann solche Anwendungen identifizieren und verhindern, dass diese auf Endpunkte in ihrem Netzwerk heruntergeladen und dort installiert werden. Bei diesen Anwendungen handelt es sich nicht um Viren, Schadsoftware oder andere Arten von Bedrohungen. Diese Anwendungen können Aktionen auf Endpunkten ausführen, die deren Leistung oder Verwendung beeinträchtigen. Mit PUAs können auch Anwendungen gemeint sein, die einen schlechten Ruf haben. Typisches PUA-Verhalten umfasst: Verschiedene Arten von Softwarebündelungen; Einschleusung von Werbung in Webbrowser; Treiber- und Registrierungsoptimierungen, die Probleme erkennen, eine Zahlung zur Fehlerbehebung anfordern, aber auf dem Endpunkt verbleiben und weder Änderungen noch Optimierungen vornehmen (auch bekannt als „Rogue-Sicherheitssoftware“). Diese Anwendungen können das Risiko einer Infektion mit Schadsoftware für Ihr Netzwerk erhöhen, das Identifizieren von Infektionen erschweren und unnötig IT-Ressourcen zum Bereinigen der Anwendungen belegen.  
   [Erfahren Sie mehr](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)    
   
   **Standard**: Blockieren  
@@ -1661,7 +1661,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Blockieren
   
 - **Bei einer vollständigen Überprüfung Wechseldatenträger überprüfen**  
-  Ermöglicht Windows Defender die Überprüfung von Wechseldatenträgern (z.B. USB-Speichersticks) auf schädliche und unerwünschte Software während einer vollständigen Überprüfung. Windows Defender Antivirus überprüft auf USB-Geräten alle Dateien, bevor diese ausgeführt werden.  
+  Ermöglicht es Microsoft Defender, Wechseldatenträger (z. B. Flashlaufwerke) während einer vollständigen Überprüfung auf schädliche und unerwünschte Software zu untersuchen. Microsoft Defender Antivirus überprüft alle Dateien auf USB-Geräten, bevor die Dateien ausgeführt werden.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067036)  
   
   **Standard**: Ja  
@@ -1672,7 +1672,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Ja
   
 - **Verhaltensüberwachung**  
-  Hiermit wird die Windows Defender-Verhaltens Überwachungsfunktion zugelassen oder verweigert. Eingebettet in Windows 10, sammeln und verarbeiten diese Sensoren von Signale zum Verhalten des Betriebssystems und senden diese Sensordaten an Ihre private, isolierte Cloudinstanz von Microsoft Defender ATP.  
+  Ermöglicht oder verweigert die Microsoft Defender-Verhaltens Überwachungsfunktionen. Eingebettet in Windows 10, sammeln und verarbeiten diese Sensoren von Signale zum Verhalten des Betriebssystems und senden diese Sensordaten an Ihre private, isolierte Cloudinstanz von Microsoft Defender ATP.  
   [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2067111)  
   
   **Standard**: Ja
@@ -1720,7 +1720,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   
   **Standard**: Blockieren
 
-## <a name="windows-defender-firewall"></a>Windows Defender Firewall  
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender Firewall  
 Weitere Informationen finden Sie unter [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) in der Dokumentation zu Windows-Protokollen.  
 
 - **Firewall-Profil Domäne**  
@@ -1881,15 +1881,15 @@ Die folgenden Einstellungen sind entweder:
 - **Remote Unterstützung angefordert** 
   - **Berechtigung zur Remote Unterstützung angefordert**
   - **Maximaler Zeitwert des Tickets**  
-  - **Maximaler Ticket Zeitraum**  
+  - **Maximaler Ticketzeitraum**  
   - **Einladungs Methode für E-Mail**
 
 
-*[Neu]* [**Windows Defender**](#windows-defender):
+*[Neu]* [**Microsoft Defender**](#microsoft-defender):
 - **Adobe Reader launch in a child process** (Adobe Reader in einem untergeordneten Prozess starten)  
 - **Office communication apps launch in a child process** (Office-Kommunikations-Apps in einem untergeordneten Prozess starten) 
 
-*[Neu]* [**Windows Defender Firewall**](#windows-defender-firewall)
+*[Neu]* [ **Microsoft Defender Firewall**](#microsoft-defender-firewall)
 - **Firewall-Profil Domäne**  
   - **Eingehende Verbindungen blockiert**  
   - **Ausgehende Verbindungen erforderlich**  
@@ -1997,17 +1997,17 @@ For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/wi
 For more information, see [Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) in the Windows documentation.  
 
 - **Require SmartScreen for Microsoft Edge**  
-  Microsoft Edge uses Windows Defender SmartScreen (turned on) to protect users from potential phishing scams and malicious software by default. Also, by default, users can't disable (turn off) Windows Defender SmartScreen. Enabling this policy turns off Windows Defender SmartScreen and prevent users from turning it on. Don’t configure this policy to let users choose to turn Windows defender SmartScreen on or off.  
+  Microsoft Edge uses Microsoft Defender SmartScreen (turned on) to protect users from potential phishing scams and malicious software by default. Also, by default, users can't disable (turn off) Microsoft Defender SmartScreen. Enabling this policy turns off Microsoft Defender SmartScreen and prevent users from turning it on. Don’t configure this policy to let users choose to turn Microsoft defender SmartScreen on or off.  
   
   **Default**: Yes  
   
 - **Block malicious site access**  
-  By default, Microsoft Edge allows users to bypass (ignore) the Windows Defender SmartScreen warnings about potentially malicious sites, allowing them to continue to the site. With this policy though, you can configure Microsoft Edge to prevent users from bypassing the warnings, blocking them from continuing to the site.
+  By default, Microsoft Edge allows users to bypass (ignore) the Microsoft Defender SmartScreen warnings about potentially malicious sites, allowing them to continue to the site. With this policy though, you can configure Microsoft Edge to prevent users from bypassing the warnings, blocking them from continuing to the site.
   
   **Default**: Yes  
   
 - **Block unverified file download**
-  By default, Microsoft Edge allows users to bypass (ignore) the Windows Defender SmartScreen warnings about potentially malicious files, allowing them to continue downloading the unverified file(s). Enabling this policy prevents users from bypassing the warnings, blocking them from downloading of the unverified file(s).
+  By default, Microsoft Edge allows users to bypass (ignore) the Microsoft Defender SmartScreen warnings about potentially malicious files, allowing them to continue downloading the unverified file(s). Enabling this policy prevents users from bypassing the warnings, blocking them from downloading of the unverified file(s).
   
   **Default**: Yes  
   
@@ -3159,7 +3159,7 @@ For more information, see [Policy CSP - WindowsConnectionManager](https://docs.m
 
   **Default**: Enabled
   
-## Windows Defender  
+## Microsoft Defender  
 For more information, see [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) in the Windows documentation.  
 
 - **Scan incoming mail messages**  
@@ -3173,7 +3173,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   **Default**: Block
   
 - **Defender sample submission consent type**  
-  Checks for the user consent level in Windows Defender to send data. If the required consent has already been granted, Windows Defender submits them. If not, (and if the user has specified never to ask), the UI is launched to ask for user consent (when Defender/AllowCloudProtection is allowed) before sending data.
+  Checks for the user consent level in WinMMicrosofticrosoftdows Defender to send data. If the required consent has already been granted, Microsoft Defender submits them. If not, (and if the user has specified never to ask), the UI is launched to ask for user consent (when Defender/AllowCloudProtection is allowed) before sending data.
   
   **Default**: Send safe samples automatically 
   
@@ -3188,7 +3188,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   **Default**: Block
   
 - **Prevent credential stealing type**  
-  Windows Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Windows Defender Credential Guard prevents these attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets, and credentials stored by applications as domain credentials.
+  Microsoft Defender Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Microsoft Defender Credential Guard prevents these attacks by protecting NTLM password hashes, Kerberos Ticket Granting Tickets, and credentials stored by applications as domain credentials.
   
   **Default**: Enable
 
@@ -3198,7 +3198,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   **Default**: Block
   
 - **Network protection type**  
-  This policy allows you to turn on network protection (block/audit) or off in Windows Defender Exploit Guard. Network protection is a feature of Windows Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites. Value type is integer. If you enable this setting, network protection is turned on and employees can't turn it off. Its behavior can be controlled by the following options: Block and Audit. If you enable this policy with the "Block" option, users and apps are blocked from connecting to dangerous domains. You can see this activity in Windows Defender Security Center. If you enable this policy with the "Audit" option, users/apps won't be blocked from connecting to dangerous domains. However, you'll still see this activity in Windows Defender Security Center. If you disable this policy, users/apps won't be blocked from connecting to dangerous domains. You'll not see any network activity in Windows Defender Security Center. If you don't configure this policy, network blocking is disabled by default.
+  This policy allows you to turn on network protection (block/audit) or off in Microsoft Defender Exploit Guard. Network protection is a feature of Microsoft Defender Exploit Guard that protects employees using any app from accessing phishing scams, exploit-hosting sites, and malicious content on the Internet. This includes preventing third-party browsers from connecting to dangerous sites. Value type is integer. If you enable this setting, network protection is turned on and employees can't turn it off. Its behavior can be controlled by the following options: Block and Audit. If you enable this policy with the "Block" option, users and apps are blocked from connecting to dangerous domains. You can see this activity in Microsoft Defender Security Center. If you enable this policy with the "Audit" option, users/apps won't be blocked from connecting to dangerous domains. However, you'll still see this activity in Microsoft Defender Security Center. If you disable this policy, users/apps won't be blocked from connecting to dangerous domains. You'll not see any network activity in Microsoft Defender Security Center. If you don't configure this policy, network blocking is disabled by default.
   
   **Default**: Enable
   
@@ -3208,12 +3208,12 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   **Default**: Everyday
   
 - **Cloud-delivered protection**  
-  To best protect your PC, Windows Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.
+  To best protect your PC, Microsoft Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions.
   
   **Default**:  Yes  
 
 - **Defender potentially unwanted app action**  
-  The potentially unwanted application (PUA) protection feature in Windows Defender Antivirus can identify and block PUAs from downloading and installing on endpoints in your network. These applications aren't considered viruses, malware, or other types of threats, but might perform actions on endpoints that adversely affect their performance or use. PUA can also refer to applications that are considered to have a poor reputation. Typical PUA behavior includes: Various types of software bundling Ad injection into web browsers Driver and registry optimizers that detect issues, request payment to fix the errors, but remain on the endpoint and make no changes or optimizations (also known as "rogue antivirus" programs). These applications can increase the risk of your network being infected with malware, cause malware infections to be harder to identify, and can waste IT resources in cleaning up the applications.  
+  The potentially unwanted application (PUA) protection feature in Microsoft Defender Antivirus can identify and block PUAs from downloading and installing on endpoints in your network. These applications aren't considered viruses, malware, or other types of threats, but might perform actions on endpoints that adversely affect their performance or use. PUA can also refer to applications that are considered to have a poor reputation. Typical PUA behavior includes: Various types of software bundling Ad injection into web browsers Driver and registry optimizers that detect issues, request payment to fix the errors, but remain on the endpoint and make no changes or optimizations (also known as "rogue antivirus" programs). These applications can increase the risk of your network being infected with malware, cause malware infections to be harder to identify, and can waste IT resources in cleaning up the applications.  
   
   **Default**: Block  
 
@@ -3223,7 +3223,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   **Default**: Block
   
 - **Scan removable drives during a full scan**  
-  Allows Windows Defender to scan for malicious and unwanted software in removable drives (for example, flash drives) during a full scan. Windows Defender Antivirus scans all files on USB devices before execution.
+  Allows Microsoft Defender to scan for malicious and unwanted software in removable drives (for example, flash drives) during a full scan. Microsoft Defender Antivirus scans all files on USB devices before execution.
   
   **Default**: Yes  
   
@@ -3233,7 +3233,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
   **Default**: Yes
   
 - **Behavior monitoring**  
-  Allows or disallows Windows Defender Behavior Monitoring functionality.Embedded in Windows 10, these sensors collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Microsoft Defender ATP.
+  Allows or disallows Microsoft Defender Behavior Monitoring functionality.Embedded in Windows 10, these sensors collect and process behavioral signals from the operating system and sends this sensor data to your private, isolated, cloud instance of Microsoft Defender ATP.
   
   **Default**: Yes
 

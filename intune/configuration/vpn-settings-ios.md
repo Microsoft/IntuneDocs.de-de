@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,16 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593785"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059816"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Hinzufügen von VPN-Einstellungen auf iOS-Geräten in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Microsoft Intune umfasst viele VPN-Einstellungen, die auf iOS-Geräten bereitgestellt werden können. Diese Einstellungen werden zum Erstellen und Konfigurieren von VPN-Verbindungen mit dem Netzwerk Ihrer Organisation verwendet. Dieser Artikel beschreibt diese Einstellungen. Einige Einstellungen sind nur für bestimmte VPN-Clients, z.B. Citrix oder Zscaler, verfügbar.
 
@@ -73,7 +71,7 @@ Die in der folgenden Liste gezeigten Einstellungen hängen vom ausgewählten VPN
     > [!NOTE]
     > Wenn Benutzername und Kennwort als Authentifizierungsmethode für Cisco IPsec VPN verwendet werden, müssen sie das SharedSecret über ein benutzerdefiniertes Apple Configurator-Profil bereitstellen.
 
-  - **Abgeleitete**Anmelde Informationen: Wenn kein abgeleiteter Anmelde Informations Aussteller konfiguriert wurde, werden Sie von InTune dazu aufgefordert.
+  - **Abgeleitete**Anmelde Informationen: Verwenden Sie ein Zertifikat, das von der Smartcard eines Benutzers abgeleitet ist. Wenn kein abgeleiteter Anmelde Informations Aussteller konfiguriert ist, werden Sie von InTune aufgefordert, eine hinzuzufügen. Weitere Informationen finden Sie unter [verwenden abgeleiteter Anmelde Informationen in Microsoft InTune](../protect/derived-credentials.md).
 
 - **Ausgeschlossene URLs** (nur für Zscaler): Wenn Sie mit dem Zscaler-VPN verbunden sind, sind die aufgeführten URLs außerhalb der Zscaler-Cloud erreichbar. 
 
@@ -102,7 +100,7 @@ Die in der folgenden Liste gezeigten Einstellungen hängen vom ausgewählten VPN
   - Wenn die NAC aktiviert ist, wird die VPN-Verbindung alle 24 Stunden getrennt. Die VPN-Verbindung kann sofort wiederhergestellt werden.
   - Die Geräte-ID ist Teil des Profils, wird aber in Intune nicht angezeigt. Diese ID wird nicht von Microsoft gespeichert oder weitergegeben.
 
-  Wenn die Geräte-ID von VPN-Partnern unterstützt wird, kann der VPN-Client, z.B. Citrix SSO, die ID abrufen. Anschließend kann Intune abgefragt werden, um zu bestätigen, dass das Gerät registriert ist und ob das VPN-Profil konform ist oder nicht.
+  Für die VPN-Partner, die die Geräte-ID unterstützen, kann der VPN-Client (z. b. Citrix SSO) die ID erhalten. Anschließend kann Intune abgefragt werden, um zu bestätigen, dass das Gerät registriert ist und ob das VPN-Profil konform ist oder nicht.
 
   - Zum Entfernen dieser Einstellung erstellen Sie das Profil neu und wählen **Ich stimme zu** nicht aus. Anschließend weisen Sie das Profil neu zu.
 
@@ -189,7 +187,10 @@ Diese Einstellungen gelten, wenn Sie **Verbindungstyp**  > **IKEv2**auswählen.
 - **Bedarfsgesteuertes VPN:** Konfigurieren Sie bedingte Regeln, die steuern, wann die VPN-Verbindung gestartet wird. Erstellen Sie beispielsweise eine Bedingung, in der die VPN-Verbindung nur verwendet wird, wenn ein Gerät nicht mit einem WLAN des Unternehmens verbunden ist. Oder erstellen Sie eine Bedingung. Wenn beispielsweise ein Gerät nicht auf eine von Ihnen angegebene DNS-Suchdomäne zugreifen kann, wird die VPN-Verbindung nicht gestartet.
 
   - **SSIDs oder DNS-Suchdomänen:** Wählen Sie aus, ob diese Bedingung **SSIDs** des Drahtlosnetzwerks oder **DNS-Suchdomänen** verwenden soll. Klicken Sie auf **Hinzufügen**, um SSIDs oder Suchdomänen zu konfigurieren.
-  - **URL-Zeichenfolgentest:** Optional. Geben Sie eine URL ein, die die Regel als Test verwenden soll. Wenn das Gerät mit diesem Profil auf diese URL ohne Umleitung zugreift, wird die VPN-Verbindung gestartet. Und das Gerät wird mit der Ziel-URL verbunden. Der Standort des URL-Zeichenfolgentests wird dem Benutzer nicht angezeigt. Ein Beispiel für einen URL-Zeichenfolgentest ist die Adresse eines Überwachungswebservers, der die Gerätekonformität prüft, bevor die VPN-Verbindung hergestellt wird. Eine andere Möglichkeit besteht darin, mit der URL zu testen, ob das VPN eine Verbindung mit einem Standort herstellen kann, bevor das Gerät über das VPN mit der Ziel-URL verbunden wird.
+  - **URL-Zeichenfolgentest:** Optional. Geben Sie eine URL ein, die die Regel als Test verwenden soll. Wenn das Gerät auf diese URL ohne Umleitung zugreift, wird die VPN-Verbindung gestartet. Und das Gerät wird mit der Ziel-URL verbunden. Der Standort des URL-Zeichenfolgentests wird dem Benutzer nicht angezeigt.
+
+    Bei einem URL-Zeichenfolgentest handelt es sich beispielsweise um eine URL eines Überwachungswebservers, der die Gerätekonformität prüft, bevor die VPN-Verbindung hergestellt wird. Oder die URL testet die Fähigkeit des VPN, eine Verbindung mit einem Standort herzustellen, bevor das Gerät über das VPN mit der Ziel-URL verbunden wird.
+.
   - **Domänenaktion:** Wählen Sie eine der folgenden Optionen aus:
     - Bei Bedarf verbinden
     - Nie verbinden

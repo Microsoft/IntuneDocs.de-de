@@ -1,11 +1,11 @@
 ---
-title: Registrieren Ihres macOS-Geräts bei Intune über das Unternehmensportal | Microsoft-Dokumentation
-description: Beschreibt, wie Sie ein macOS-Gerät über die Unternehmensportal-App bei Intune registrieren
+title: Registrieren Sie Ihren Mac mit InTune-Unternehmensportal | Microsoft-Dokumentation
+description: Erfahren Sie, wie Sie Ihren Mac mit der Unternehmensportal-app in InTune registrieren.
 keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 11/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,93 +15,94 @@ ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: elocholi
+ms.reviewer: kakyker
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee725d118353e18924858569ac861992d19f839a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ba285fc9de58b3fb739a16722e0e05e36e840e87
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506187"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098155"
 ---
-# <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Registrieren Ihres macOS-Geräts bei Intune über die Unternehmensportal-App
+# <a name="enroll-your-macos-device-using-the-company-portal-app"></a>Registrieren Ihres macOS-Geräts mit der Unternehmensportal-App  
 
-Registrieren Sie Ihr macOS-Gerät bei der Intune-Unternehmensportal-App, um sicheren Zugriff auf E-Mails, Dateien und Apps Ihrer Organisation zu erhalten.
+Registrieren Sie Ihr macOS-Gerät bei der Intune-Unternehmensportal-App, um sicheren Zugriff auf E-Mails, Dateien und Apps Ihres Geschäfts-, Schul- oder Unikontos zu erhalten.
 
-Organisationen verlangen oft, dass Sie Ihr Gerät verwalten lassen, bevor Sie auf proprietäre Daten zugreifen können. Sobald es sich dann um ein verwaltetes Gerät handelt, können Organisationen über ihren MDM-Anbieter Richtlinien und Apps auf das Gerät übertragen. Um von Ihrem Gerät aus kontinuierlich auf Ihre Geschäfts-, Schul- oder Uniressourcen zugreifen zu können, müssen Sie Ihr Gerät entsprechend der Richtlinieneinstellungen konfigurieren.  
+Organisationen verlangen in der Regel, dass Sie Ihr Gerät registrieren, bevor Sie auf proprietäre Daten zugreifen können. Sobald Ihr Gerät registriert ist, gilt es als *verwaltet*. Ihre Organisation kann dem Gerät über einen MDM-Anbieter (Mobile Device Management, Verwaltung mobiler Geräte) wie Intune Richtlinien und Anwendungen zuweisen. Sie müssen Ihr Gerät entsprechend der Richtlinieneinstellungen Ihrer Organisation konfigurieren, um über Ihr Gerät kontinuierlich auf Ihre Geschäfts-, Schul- oder Uniressourcen zugreifen zu können.  
 
-In diesem Artikel wird beschrieben, wie Sie Ihr Gerät mit der Intune-Unternehmensportal-App für macOS registrieren, konfigurieren und verwalten, um die Anforderungen Ihrer Organisation zu erfüllen.  
-</br>
-> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk?rel=0]
+In diesem Artikel wird beschrieben, wie Sie Ihr Gerät mit der Unternehmensportal-App für macOS registrieren, konfigurieren und verwalten, um die Anforderungen Ihrer Organisation zu erfüllen.  
+
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>Vorteile der Unternehmensportal-App
 
-Während der ersten Einrichtung werden Sie von der App aufgefordert, sich bei Ihrer Organisation zu authentifizieren. Anschließend werden Sie über alle notwendigen Geräteeinstellungen informiert. Beispielsweise legen Organisationen oft Anforderungen an die minimale oder maximale Zeichenanzahl des Kennworts fest, die Sie einhalten müssen.    
+Während des anfänglichen Setups müssen Sie für die Unternehmensportal-APP sich anmelden und sich bei Ihrer Organisation authentifizieren. Unternehmensportal informiert Sie dann über alle Geräteeinstellungen, die Sie konfigurieren müssen, um die Anforderungen Ihrer Organisation zu erfüllen. Beispielsweise legen Organisationen oft Anforderungen an die minimale oder maximale Zeichenanzahl des Kennworts fest, die Sie einhalten müssen.    
 
-Nachdem Ihr Gerät registriert ist, wird es mithilfe der Unternehmensportal-App weiter geschützt. Wenn Sie beispielsweise eine App aus einer nicht vertrauenswürdigen Quelle installieren, benachrichtigt Sie die Unternehmensportal-App und entzieht Ihnen in manchen Fällen den Zugriff auf Unternehmensdaten. App-Schutzrichtlinien wie diese sind in Organisationen üblich und erfordern oft die Deinstallation nicht vertrauenswürdiger Apps, damit Sie Ihre Zugriffsrechte zurück erhalten.
+Nachdem Sie Ihr Gerät registriert haben, stellen Unternehmensportal immer sicher, dass Ihr Gerät gemäß den Anforderungen Ihres Unternehmens geschützt ist. Wenn Sie z. b. eine APP von einer nicht vertrauenswürdigen Quelle installieren, werden Sie von Unternehmensportal benachrichtigt und möglicherweise der Zugriff auf die Ressourcen Ihrer Organisation eingeschränkt. App-Schutzrichtlinien wie diese werden häufig durchgängig gemacht. Um wieder Zugriff zu erhalten, müssen Sie wahrscheinlich die nicht vertrauenswürdige APP deinstallieren. 
 
-Wenn Ihre Organisation nach der Registrierung eine neue Sicherheitsanforderung, wie beispielsweise eine mehrstufige Authentifizierung, durchsetzt, erhalten Sie eine Benachrichtigung von der Unternehmensportal-App. Sie haben dann die Möglichkeit, Ihre Einstellungen so zu ändern, dass Sie von Ihrem Gerät aus weiterarbeiten können.  
+Wenn Ihre Organisation nach der Registrierung eine neue Sicherheitsanforderung durchsetzt, z. B. die mehrstufige Authentifizierung, erhalten Sie eine Benachrichtigung vom Unternehmensportal. Sie haben dann die Möglichkeit, Ihre Einstellungen so zu ändern, dass Sie von Ihrem Gerät aus weiterarbeiten können.  
 
 Weitere Informationen zur Registrierung finden Sie unter [Was geschieht, wenn ich die Unternehmensportal-App installiere und mein Gerät registriere?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md).  
 
-## <a name="get-your-device-managed"></a>Registrieren Ihres Geräts für die Verwaltung  
-Führen Sie die folgenden Schritte aus, um MacOS-Geräte mit MacOS 10,12 und höher zu registrieren.   
+## <a name="get-your-macos-device-managed"></a>Verwalten Ihres macOS-Geräts  
+Führen Sie die folgenden Schritte aus, um Ihr macOS-Gerät bei Ihrer Organisation zu registrieren. Auf Ihrem Gerät muss macOS 10,12 oder höher ausgeführt werden.   
+
+> [!NOTE]
+> Während dieses Vorgangs werden Sie möglicherweise aufgefordert, Unternehmensportal vertrauliche Informationen zu verwenden, die in ihrer Keychain gespeichert sind. Diese Eingabe Aufforderungen sind Teil der Apple-Sicherheit. Wenn Sie die Eingabeaufforderung erhalten, geben Sie Ihr Kennwort für die Schlüsselbund Anmeldung ein, und wählen Sie **immer zulassen**. Wenn Sie die **Eingabe** Taste drücken oder auf der Tastatur **zurückkehren** , wird die Eingabeaufforderung stattdessen " **zulassen**" ausgewählt. Dies kann zu zusätzlichen Eingabe Aufforderungen führen.  
+
+### <a name="install-company-portal-app"></a>Installieren der Unternehmensportal-App  
+1. Wechseln Sie zu " [mein Mac registrieren](https://go.microsoft.com/fwlink/?linkid=853070)".  
+2. Der Unternehmensportal Installer. pkg-Datei wird heruntergeladen. Öffnen Sie das Installationsprogramm, und führen Sie die Schritte aus. 
+3. Stimmen Sie den Softwarelizenzbedingungen zu. 
+4. Geben Sie Ihr Geräte Kennwort oder den registrierten Fingerabdruck zum Installieren der Software ein.  
+5. Öffnen Sie Unternehmensportal. 
+
+> [!IMPORTANT]
+> Microsoft AutoUpdate kann zum Aktualisieren Ihrer Microsoft-Software geöffnet werden. Nachdem alle Updates installiert wurden, öffnen Sie die Unternehmensportal-app. Zur optimalen Einrichtung installieren Sie die neuesten Versionen von Microsoft AutoUpdate und Unternehmensportal.  
 
 
-1. Für den Zugriff auf die Unternehmensportalwebsite öffnen Sie ein neues Fenster in __Safari__, und wechseln Sie zu https://portal.manage.microsoft.com.  
-
-2. Melden Sie sich bei mit Ihrem Geschäfts-, Schul- oder Unikonto bei der Unternehmensportalwebsite an.
-
-   [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
+### <a name="enroll-your-mac"></a>Registrieren Ihres Mac  
 
 
-3. Klicken Sie links oben in der Ecke auf **Menü** > **Geräte**.  
+1. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto beim Unternehmensportal an.  
+2. Wenn die APP geöffnet wird, wählen Sie **starten**aus.  
+3. Überprüfen Sie, was Ihre Organisation auf Ihrem registrierten Gerät [sehen kann und was nicht](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) . Wählen Sie dann **Weiter** aus.  
+4. Wählen Sie auf dem Bildschirm **Verwaltungs Profil installieren** die Option **Profil herunterladen**aus.   
 
-4. Auf der Seite __Geräte__ wird entweder eine Liste der verwalteten Geräte oder ein Banner angezeigt. Was Sie dort sehen, hängt davon ab, ob Sie bereits über ein verwaltetes Gerät verfügen. 
-    * Wählen Sie zum Hinzufügen eines nicht aufgelisteten Geräts das Banner mit dem folgenden Hinweis aus: **Tap here to tell us which device you're using or add a new device.** (Tippen Sie hier, um das von Ihnen verwendete Gerät anzugeben, oder fügen Sie ein neues Gerät hinzu.)
-    * Wenn Sie noch keine Geräte hinzugefügt haben, wird auf dem Banner Folgendes angezeigt: **You don't have any managed devices. Add this one by tapping here.** (Es sind noch keine verwalteten Geräte vorhanden. Tippen Sie hier, um dieses Gerät hinzuzufügen.) Klicken Sie auf das Banner, um Ihr Gerät hinzuzufügen.  
+    ![Beispiel eines Screenshots der Unternehmensportal, Seite "Verwaltungs Profil installieren", Hervorhebung der Schaltfläche "Profil herunterladen".](./media/install-mgmt-profile-mac-1911.PNG)   
+5. Die Systemeinstellungen Ihres Geräts werden geöffnet. Wählen Sie **Installieren** aus, und wählen Sie dann erneut **Installieren** . Wenn Sie dazu aufgefordert werden, geben Sie Ihr Geräte Kennwort ein.  
 
-     ![Ein Screenshot der Seite für Geräte auf dem ein roter Rahmen um das Banner markiert, wo Sie klicken können.](./media/CP-enroll-MACOS-1808.png)  
-5. Führen Sie den nachfolgenden Schritt entsprechend der im Unternehmensportal angezeigten Meldung aus.  
-    * Wenn Sie ein Gerät zum ersten Mal hinzufügen, werden Sie aufgefordert, die Unternehmensportal-App auf Ihr Gerät herunterzuladen. Klicken Sie auf **Herunterladen**, um den Vorgang fortzusetzen.  
+    ![Beispiel eines Screenshots der macOS-Systemeinstellungen, Installations Aufforderung, Hervorhebung der Schaltfläche "installieren".](./media/system-preference-install-1911.PNG)  
+6. Nachdem das Profil installiert wurde, wird es in der Liste Profile unter **Verwaltungs Profil angezeigt.**  
 
-         ![Beispielscreenshot der Aufforderung zum Herunterladen der macOS-Unternehmensportal-App Der Benutzer kann entweder unten links im Dialogfeld die blaue Schaltfläche zum Herunterladen oder unten rechts die graue Schaltfläche zum Abbrechen auswählen.](./media/CP-enroll-download-macOS-1808.png)  
+   ![Beispiel eines Screenshots von macOS-Systemeinstellungen, profilbildschirm, Hervorhebung des installierten Verwaltungs Profils.](./media/system-preference-verify-1911.PNG)   
+7. Kehren Sie zu Unternehmensportal zurück.   
+8. In Ihrer Organisation ist es möglicherweise erforderlich, dass Sie Ihre Geräteeinstellungen aktualisieren. Wenn Sie mit dem Aktualisieren der Einstellungen fertig sind, wählen Sie **Einstellungen überprüfen**.  
 
-    * Wenn Sie bereits über ein verwaltetes macOS-Gerät verfügen, wird eine Eingabeaufforderung mit einer Liste Ihrer aktuell verwalteten macOS-Geräte angezeigt. Wählen Sie **My device isn't listed here** (Mein Gerät ist hier nicht aufgelistet) > **Herunterladen** aus, um die Unternehmensportal-App auf das Gerät herunterzuladen, das Sie hinzufügen möchten.  
+    ![Beispiel eines Screenshots von Unternehmensportal, Bildschirm "Geräteeinstellungen aktualisieren", markieren der Schaltfläche "Einstellungen überprüfen".](./media/update-settings-mac-1911.PNG)  
+9. Wenn Setup abgeschlossen ist, wählen Sie **Fertig**aus.  
 
-         ![Beispielscreenshot der Aufforderung zum Herunterladen der macOS-Unternehmensportal-App Der Benutzer kann entweder „My device isn't listed here“ (Mein Gerät ist hier nicht aufgelistet) oder ein bestimmtes Gerät aus der Mitte der Seite auswählen. In der Eingabeaufforderung wird unten links eine blaue Schaltfläche „Herunterladen“ und unten rechts eine graue Schaltfläche „Abbrechen“ angezeigt.](./media/cp-mac-os-device-isnt-here-1808.png)  
 
-6. Ihr Gerät überprüft, ob die Installationsdatei **CompanyPortal.pkg** sicher geöffnet werden kann. Öffnen Sie nach der Überprüfung das Installationsprogramm, und schließen Sie die Installation ab.  
+ ## <a name="troubleshooting-and-feedback"></a>Problembehandlung und Feedback   
 
-7. Wenn das Installationsprogramm abgeschlossen ist, wechseln Sie zu **Launchpad**, und öffnen Sie **Unternehmensportal**.  
+Wenn bei der Registrierung Probleme auftreten, gehen Sie zu **Hilfe** > **Diagnosebericht senden** , um das Problem an Microsoft-App-Entwickler zu melden. Diese Informationen werden verwendet, um die APP zu verbessern. Diese Informationen werden auch verwendet, um das Problem zu beheben, wenn Ihre IT-Supportmitarbeiter Ihnen helfen, Hilfe zu erhalten.  
 
-8. Bestätigen Sie in der dann angezeigten Eingabeaufforderung, dass Sie die Unternehmensportal-App öffnen möchten. Klicken Sie auf **Öffnen**.  
+Nachdem Sie das Problem an Microsoft gemeldet haben, können Sie die Details Ihrer Benutzer Arbeit an Ihren IT-Supportmitarbeiter senden. Wählen Sie **Email Details**aus. Geben Sie ein, was Sie im Text der e-Mail haben. Um die e-Mail-Adresse Ihrer Support Person zu ermitteln, wechseln Sie zum Unternehmensportal APP **->.** Oder überprüfen Sie die [Unternehmensportal Website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+ 
 
-   > [!TIP]
-   > Intune benötigt Zugriff auf Ihren Computer, um sicherzustellen, dass die Gerätesicherheit für den Zugriff auf Organisationsinformationen ausreicht. Wenn Ihr Computer die Unternehmensportal-App nicht öffnet, [schalten Sie den Gatekeeper aus](https://support.apple.com/HT202491). Öffnen Sie anschließend die App.
+Außerdem würde das Microsoft InTune Unternehmensportal Team gern Ihr Feedback hören. Wechseln Sie zu " **Hilfe** > **Feedback senden** , um Ihre Gedanken und Ideen zu teilen.  
 
-9. Im Startbildschirm der Unternehmensportal-App werden Sie dann zur **Anmeldung** aufgefordert. Melden Sie sich mit demselben Geschäfts-, Schul- oder Unikonto wie bei der Unternehmensportalwebsite an.
+## <a name="unverified-profiles"></a>Nicht überprüfte Profile  
+Wenn Sie die installierten MDM-Profile (mobile Geräteverwaltung) unter **Systemeinstellungen** > **Profile** anzeigen, wird für einige Profile möglicherweise der Status „Nicht überprüft“ angezeigt. Solange das Verwaltungsprofil den Status „Geprüft“ aufweist, müssen Sie sich keine Sorgen machen.  
 
-10. Das Unternehmensportal bestätigt Ihre Kontoinformationen und zeigt Ihnen Ihre Status zu **Geräteregistrierung** und **Gerätekompatibilität** an. Gelbe Dreiecke heben die Aktionen hervor, die Sie ergreifen müssen, um Ihr macOS-Gerät für die Schule, die Uni oder die Arbeit zu sichern. Klicken Sie auf **Begin** (Starten), um die Registrierung zu starten. 
-
-11. Geben Sie die Anmeldeinformationen für Ihren Computer ein, wenn Sie dazu aufgefordert werden.  
-
-Das Registrieren Ihres Geräts für die Verwaltung kann einige Minuten beanspruchen. Während dieser Zeit können Sie auf dem Gerät andere Vorgänge ausführen. Sobald das Setup des Unternehmenszugriffs abgeschlossen ist, wird Ihnen eine Meldung angezeigt, die Sie darüber informiert.  
-
-## <a name="unverified-profiles"></a>Nicht überprüfte Profile
-Wenn Sie die installierten MDM-Profile (mobile Geräteverwaltung) für Ihr macOS-Gerät anzeigen, wird für einige Profile möglicherweise der Status **Nicht überprüft** angezeigt. Solange das **Verwaltungsprofil** den Status **Geprüft** aufweist, müssen Sie sich keine Gedanken machen.  
-
-Das Verwaltungsprofil definiert die MDM-Kanalverbindung. Solange das Verwaltungsprofil geprüft ist, erben alle anderen Profile, die dem Computer bereitgestellt werden, die Sicherheitseigenschaften des Verwaltungsprofils.
-
-Da diese anderen Profile keine individuelle Überprüfungen erfordern, können sie schneller für Geräte erstellt und bereitgestellt werden. 
+Das Verwaltungsprofil definiert die MDM-Kanalverbindung. Solange das Verwaltungsprofil geprüft ist, erben alle anderen Profile, die über diesen Kanal auf dem Computer bereitgestellt werden, die Sicherheitseigenschaften des Verwaltungsprofils.  
 
 ## <a name="updating-the-company-portal-app"></a>Aktualisieren der Unternehmensportal-App
 
-Das Aktualisieren des Unternehmensportals erfolgt auf die gleiche Weise wie bei jeder anderen Office-App, nämlich über Microsoft AutoUpdate für Mac. Sie finden weitere Informationen über das [Aktualisieren von Microsoft-Apps für macOS hier](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
+Das Aktualisieren des Unternehmensportals erfolgt auf die gleiche Weise wie bei jeder anderen Office-App, nämlich über Microsoft AutoUpdate für macOS. Weitere Informationen finden Sie im Artikel zum [Aktualisieren von Microsoft-Apps für macOS](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
 
 ## <a name="next-steps"></a>Nächste Schritte  
-Benötigen Sie weitere Hilfe? Kontaktieren Sie die Supportabteilung Ihres Unternehmens. Sie finden entsprechende Kontaktinformationen auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  
+Benötigen Sie weitere Unterstützung? Kontaktieren Sie den Support Ihres Unternehmens. Die entsprechenden Kontaktinformationen finden Sie auf der [Unternehmensportal-Website](https://go.microsoft.com/fwlink/?linkid=2010980).  
 
 

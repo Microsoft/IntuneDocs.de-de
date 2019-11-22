@@ -6,7 +6,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 11/12/2019
 ms.topic: archived
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 535ae4dd986940da17d247136b37185cfaa58b57
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f00a680d8d7799e0307021926677d1e0ed1e9a12
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510223"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059682"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Schützen von Windows-PCs mit Endpoint Protection für Microsoft Intune
 
@@ -189,7 +189,7 @@ Intune kann die Pfade von bis zu 10 der zuletzt erkannten Instanzen von Malware 
 4. Klicken Sie mit der rechten Maustaste auf die Spaltenüberschrift. Eine Liste der verfügbaren Spalten wird angezeigt. Aktivieren Sie das Kontrollkästchen **Letzte Erkennungspfade** in der Liste. Die Spalte **Letzte Erkennungspfade** wird angezeigt. Sie enthält bis zu 10 der zuletzt auf dem Gerät überwachten Malwareinstanzen.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Ausführen einer Malwareüberprüfung oder Aktualisieren von Malwaredefinitionen auf einem Computer
-Intune kann auf einem remoteverwalteten PC, auf dem der Intune-Client installiert wurde, entweder eine vollständige oder schnelle Malwareüberprüfung mithilfe von Endpoint Protection oder Windows Defender ausführen.
+Intune kann auf einem remoteverwalteten PC, auf dem der Intune-Client installiert wurde, entweder eine vollständige oder schnelle Malwareüberprüfung mithilfe von Endpoint Protection oder Microsoft Defender ausführen.
 
 1. Gehen Sie in der [Microsoft Intune-Verwaltungskonsole](https://manage.microsoft.com/) zu **Gruppen** > **Übersicht** > **Alle Geräte** > **Alle Computer**, und wählen Sie dann den Computer aus, der verwendet werden soll.
 

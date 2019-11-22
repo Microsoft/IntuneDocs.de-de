@@ -5,7 +5,7 @@ description: Von Intune unterstützte Einstellungen für Sicherheitsbaselines zu
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa3cb3481de6e1fdc3790b7330ac521772e252be
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923405"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060057"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-Baselineeinstellungen für Intune
 
@@ -91,7 +91,7 @@ Weitere Informationen finden Sie unter [Policy CSP - SmartScreen (Richtlinien-Ko
   **Standard**: Blockieren 
 
 - **Diebstahl von Anmeldeinformationen verhindern**  
-  Legen Sie die Einstellung *Aktivieren* auf [Schützen abgeleiteter Domänenanmeldeinformationen mit Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) fest. Windows Defender Credential Guard nutzt auf Virtualisierung basierende Sicherheitsverfahren, um geheime Daten zu isolieren, damit nur durch privilegierte Systemsoftware auf diese Daten zugegriffen werden kann. Ein nicht autorisierter Zugriff auf diese geheimen Daten kann Angriffe zum Diebstahl von Anmeldeinformationen zur Folge haben (z. B. Pass-the-Hash- oder Pass-the-Ticket-Angriffe). Windows Defender Credential Guard verhindert diese Angriffe durch den Schutz von NTLM-Kennworthashes, Kerberos Ticket-Granting Tickets und Anmeldeinformationen, die von Anwendungen als Domänenanmeldeinformationen gespeichert werden.  
+  Legen Sie die Einstellung *Aktivieren* auf [Schützen abgeleiteter Domänenanmeldeinformationen mit Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) fest. Microsoft Defender Credential Guard nutzt auf Virtualisierung basierende Sicherheitsverfahren, um Geheimnisse zu isolieren, sodass nur privilegierte Systemsoftware auf diese Daten zugreifen kann. Ein nicht autorisierter Zugriff auf diese geheimen Daten kann Angriffe zum Diebstahl von Anmeldeinformationen zur Folge haben (z. B. Pass-the-Hash- oder Pass-the-Ticket-Angriffe). Microsoft Defender Credential Guard verhindert diese Angriffe durch den Schutz von NTLM-Kennworthashes, Kerberos Ticket-Granting Tickets und Anmeldeinformationen, die von Anwendungen als Domänenanmeldeinformationen gespeichert werden.  
 
   **Standard**: Aktivieren
 
@@ -227,7 +227,7 @@ Weitere Informationen finden Sie in der Windows-Dokumentation unter [Einstellung
   - **Hardware device identifiers that are blocked** (Blockierte Bezeichner von Hardwaregeräten)  
     Diese Einstellung ist nur verfügbar, wenn die Option *Hardware device installation by device identifiers* (Installation von Hardwaregeräten anhand der Geräte-ID) auf *Block hardware device installation* (Hardwaregeräteinstallation blockieren) festgelegt ist. Um diese Einstellung zu konfigurieren, erweitern Sie die Option, wählen Sie **+ Hinzufügen** aus, und geben Sie die Hardware-Geräte-ID an, die Sie blockieren möchten.  
 
-    **Standard**: PCI\CC_0C0A
+    **Standard**: PCI \ CC_0C0A
 
 - **Block direct memory access** (Direkten Speicherzugriff blockieren)  
   [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) – Verwenden Sie diese Richtlinieneinstellung, um den direkten Speicherzugriff (Direct Memory Access, DMA) für alle Hot-Plug-PCI-Downstreamports auf einem Gerät so lange zu verhindern, bis sich ein Benutzer bei Windows anmeldet. Sobald sich ein Benutzer anmeldet, werden die mit den Hot-Plug-PCI-Anschlüssen verbundenen PCI-Geräte von Windows aufgezählt. Jedes Mal, wenn der Benutzer den Computer sperrt, wird DMA an Hot-Plug-PCI-Anschlüssen ohne untergeordnete Geräte blockiert, bis sich der Benutzer erneut anmeldet. Geräte, die vor dem Entsperren des Computers bereits aufgezählt wurden, sind weiterhin funktionsfähig, bis sie entfernt werden oder das System neu gestartet bzw. in den Ruhezustand versetzt wird. 
@@ -281,7 +281,7 @@ Weitere Informationen finden Sie in der Windows-Dokumentation unter [WindowsAdva
   Sie können außerdem eine vorhandene XML-Konfigurationsdatei aus EMET in eine XML-Konfigurationsdatei für den Exploit-Schutz konvertieren und importieren.
 
 - **Block exploit protection override** (Blockieren von Exploit-Schutz außer Kraft setzen)  
-  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – Legen Sie *Ja* fest, um zu verhindern, dass Benutzer im Windows Defender Security Center Änderungen am Bereich mit den Exploit-Schutzeinstellungen vornehmen. Wenn Sie diese Einstellung deaktivieren oder nicht konfigurieren, können lokale Benutzer Änderungen im Einstellungsbereich für Exploit-Schutz vornehmen.  
+  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – Legen Sie *Ja* fest, um zu verhindern, dass Benutzer im Microsoft Defender Security Center Änderungen am Bereich mit den Exploit-Schutzeinstellungen vornehmen. Wenn Sie diese Einstellung deaktivieren oder nicht konfigurieren, können lokale Benutzer Änderungen im Einstellungsbereich für Exploit-Schutz vornehmen.  
   **Standard**: Ja  
 
 ## <a name="microsoft-defender-antivirus"></a>Microsoft Defender Antivirus  
@@ -289,17 +289,17 @@ Weitere Informationen finden Sie in der Windows-Dokumentation unter [WindowsAdva
 Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfigurationsdienstanbieter: Defender)](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) in Ihrer Windows-Dokumentation.
 
 - **Scan scripts loaded in Microsoft web browsers** (In Microsoft-Webbrowsern geladene Skripts überprüfen)  
-  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) – Legen Sie *Ja* fest, um Windows Defender-Skriptüberprüfungsfunktionen zuzulassen.  
+  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) – Legen Sie die Einstellung auf *Ja* fest, um Microsoft Defender-Skriptüberprüfungsfunktionen zuzulassen.  
 
   **Standard**: Ja
 
 - **Eingehende E-Mail überprüfen**  
-  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) – Legen Sie die Einstellung auf *Ja* fest, um Windows Defender das Überprüfen von E-Mails zu ermöglichen.  
+  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) – Legen Sie die Einstellung auf *Ja* fest, um Microsoft Defender das Überprüfen von E-Mails zu ermöglichen.  
 
   **Standard**: Ja
 
 - **Zustimmung für die Übermittlung von Beispielen in Windows Defender**  
-  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)– Überprüft in Windows Defender die Benutzerzustimmungsebene zum Senden von Daten. Wenn die erforderliche Zustimmung bereits erteilt wurde, sendet Windows Defender die Daten. Wenn nicht (und wenn der Benutzer angegeben hat, nie zu fragen), wird die Benutzeroberfläche gestartet, um den Benutzer zur Einwilligung aufzufordern (sofern *Schutz über die Cloud* auf *Ja* festgelegt wurde), bevor Daten gesendet werden.  
+  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent)– Überprüft in Microsoft Defender die Benutzerzustimmungsebene zum Senden von Daten. Wenn die erforderliche Zustimmung bereits erteilt wurde, sendet Microsoft Defender die Daten. Wenn nicht (und wenn der Benutzer angegeben hat, nie zu fragen), wird die Benutzeroberfläche gestartet, um den Benutzer zur Einwilligung aufzufordern (sofern *Schutz über die Cloud* auf *Ja* festgelegt wurde), bevor Daten gesendet werden.  
 
   **Standard**: Sichere Beispiele automatisch senden
 
@@ -319,7 +319,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
     **Standard**: Ja
 
 - **Defender block on access protection** (Defender-Zugriffsschutz blockieren)  
-  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) – Wenn *Ja* festgelegt wurde, wird der Windows Defender-Zugriffsschutz aktiviert.  
+  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) – Wenn die Einstellung auf *Ja* festgelegt wurde, wird der Microsoft Defender-Zugriffsschutz aktiviert.  
 
   **Standard**: Ja
 
@@ -346,30 +346,30 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: 02:00 Uhr
 
 - **Schutz über die Cloud**  
-  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – Wenn *Ja* festgelegt wurde, sendet Windows Defender Informationen zu gefundenen Problemen an Microsoft. Microsoft analysiert diese Informationen, erfährt mehr über die Probleme, die Sie und andere Kunden betreffen, und bietet verbesserte Lösungen an.
+  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – Wenn die Einstellung auf *Ja* festgelegt wurde, sendet Microsoft Defender Informationen zu entdeckten Problemen an Microsoft. Microsoft analysiert diese Informationen, erfährt mehr über die Probleme, die Sie und andere Kunden betreffen, und bietet verbesserte Lösungen an.
 
   Wenn für diese Richtlinie *Ja* festgelegt wurde, können Sie es Benutzern mithilfe von *Defender sample submission consent type* (Zustimmungstyp für die Übermittlung von Beispielen in Windows Defender) ermöglichen, das Senden von Informationen von ihrem Gerät zu steuern.  
 
   **Standard**: Ja
 
 - **Potenziell unerwünschte App-Aktion in Defender**  
-  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – Windows Defender Antivirus kann *potenziell unerwünschte Anwendungen* (Potentially Unwanted Applications, PUAs) identifizieren und verhindern, dass sie heruntergeladen und auf Endpunkten in ihrem Netzwerk installiert werden. 
+  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – Microsoft Defender Antivirus kann *potenziell unerwünschte Anwendungen* (Potentially Unwanted Applications, PUAs) identifizieren und verhindern, dass sie heruntergeladen und auf Endpunkten in ihrem Netzwerk installiert werden. 
  
-  - Wenn *Blockieren* festgelegt wurde, blockiert Windows Defender PUAs und listet sie zusammen mit anderen Bedrohungen im Verlauf auf.
-  - Wenn *Überwachung* festgelegt wurde, erkennt Windows Defender PUAs, blockiert sie aber nicht. Informationen zu den Anwendungen, gegen die Windows Defender Maßnahmen ergriffen hat, können gefunden werden, indem nach Ereignissen gesucht wird, die von Windows Defender in der Ereignisanzeige erstellt wurden.  
+  - Wenn *Blockieren* festgelegt wurde, blockiert Microsoft Defender PUAs und listet sie zusammen mit anderen Bedrohungen im Verlauf auf.
+  - Wenn *Überwachen* festgelegt wurde, erkennt Microsoft Defender PUAs, blockiert sie aber nicht. Informationen zu den Anwendungen, gegen die Microsoft Defender Maßnahmen ergriffen hätte, können gefunden werden, indem nach Ereignissen gesucht wird, die von Microsoft Defender in der Ereignisanzeige erstellt wurden.  
   - Wenn *Gerätestandard* festgelegt wurde, ist PUA deaktiviert.  
  
   **Standard**: Blockieren
 
 - **Defender: Erweitertes Timeout für Cloud**  
-  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) – Geben Sie die maximale zusätzliche Zeit an, während der Windows Defender Antivirus eine Datei beim Warten auf ein Ergebnis aus der Cloud blockieren soll. Die Basiszeitspanne, während der Windows Defender wartet, ist 10 Sekunden. Zusätzliche Zeit, die Sie hier angeben (bis zu 50 Sekunden), wird zu diesen 10 Sekunden hinzugefügt. In den meisten Fällen dauert die Überprüfung kürzer als der Maximalwert. Das Erweitern des Zeitraums ermöglicht es der Cloud, verdächtige Dateien gründlich zu überprüfen.  
+  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) – Geben Sie die maximale zusätzliche Zeit an, während der Microsoft Defender Antivirus eine Datei beim Warten auf ein Ergebnis aus der Cloud blockieren soll. Die Basiszeitspanne, während der Microsoft Defender wartet, ist 10 Sekunden. Zusätzliche Zeit, die Sie hier angeben (bis zu 50 Sekunden), wird zu diesen 10 Sekunden hinzugefügt. In den meisten Fällen dauert die Überprüfung kürzer als der Maximalwert. Das Erweitern des Zeitraums ermöglicht es der Cloud, verdächtige Dateien gründlich zu überprüfen.  
 
   Der erweiterte Zeitwert lautet standardmäßig „0“ (deaktiviert). Intune empfiehlt, dass Sie diese Einstellung aktivieren und mindestens 20 zusätzliche Sekunden angeben.  
  
   **Standardeinstellung**: 0
 
 - **Archivdateien überprüfen**  
-  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) – Legen Sie *Ja* fest, damit Windows Defender Archivdateien überprüft.  
+  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) – Legen Sie die Einstellung auf *Ja* fest, damit Microsoft Defender Archivdateien überprüft.  
 
   **Standard**: Ja
 
@@ -381,17 +381,17 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Benutzerdefiniert
 
 - **Verhaltensüberwachung**  
-  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – Legen Sie *Ja* fest, um die Windows Defender-Verhaltensüberwachungsfunktionen zu aktivieren. Eingebettet in Windows 10, sammeln und verarbeiten die Sensoren von Windows Defender-Verhaltensüberwachung Signale zum Verhalten des Betriebssystems und senden diese Sensordaten an Ihre private, isolierte Cloudinstanz von Microsoft Defender ATP.  
+  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – Legen Sie die Einstellung auf *Ja* fest, um die Microsoft Defender-Verhaltensüberwachungsfunktionen zu aktivieren. Eingebettet in Windows 10 sammeln und verarbeiten die Sensoren der Microsoft Defender-Verhaltensüberwachung Signale zum Verhalten des Betriebssystems und senden diese Sensordaten an Ihre private, isolierte Cloudinstanz von Microsoft Defender ATP.  
 
   **Standard**: Ja
 
 - **Über Netzwerkordner geöffnete Dateien überprüfen**  
-  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) – Legen Sie *Ja* fest, damit Windows Defender Dateien im Netzwerk überprüft. Der Benutzer kann erkannte Schadsoftware nicht aus schreibgeschützten Dateien entfernen.  
+  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) – Legen Sie die Einstellung auf *Ja* fest, damit Microsoft Defender Dateien im Netzwerk überprüft. Der Benutzer kann erkannte Schadsoftware nicht aus schreibgeschützten Dateien entfernen.  
 
   **Standard**: Ja
 
 - **Defender-Cloud-Block-Level**  
-  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – Bestimmen Sie mit dieser Richtlinie, wie aggressiv Windows Defender Antivirus beim Blockieren und Überprüfen verdächtiger Dateien sein soll. Zu den Optionen gehören:
+  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – Bestimmen Sie mit dieser Richtlinie, wie aggressiv Microsoft Defender Antivirus beim Blockieren und Überprüfen verdächtiger Dateien sein soll. Zu den Optionen gehören:
 
   - „Hoch“ – Unbekannte Dateien aggressiv blockieren und gleichzeitig die Clientleistung optimieren (größere Wahrscheinlichkeit falsch positiver Ergebnisse)
   - „Hoher Zuwachs“ – Unbekannte Dateien aggressiv blockieren und zusätzliche Schutzmaßnahmen anwenden (beeinträchtigt möglicherweise die Clientleistung)
@@ -400,24 +400,24 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
   **Standard**: Nicht konfiguriert
 
 - **Echtzeitüberwachung**  
-  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) – Legen Sie *Ja* fest, um Windows Defender-Echtzeitüberwachung zuzulassen.  
+  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) – Legen Sie die Einstellung auf *Ja* fest, um Microsoft Defender-Echtzeitüberwachung zuzulassen.  
 
   **Standard**: Ja
 
 - **CPU-Nutzungslimit während einer Überprüfung**  
-  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) – Geben Sie die maximale durchschnittliche CPU-Auslastung (in %) an, die Windows Defender während einer Überprüfung nutzen kann.  
+  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) – Geben Sie die maximale durchschnittliche CPU-Auslastung (in %) an, die Microsoft Defender während einer Überprüfung nutzen kann.  
 
   **Standard**: 50
 
 - **Bei einer vollständigen Überprüfung zugeordnete Netzlaufwerke überprüfen**  
-  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) – Legen Sie *Ja* fest, damit Windows Defender Dateien im Netzwerk überprüft. Der Benutzer kann erkannte Schadsoftware nicht aus schreibgeschützten Dateien entfernen.
+  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) – Legen Sie die Einstellung auf *Ja* fest, damit Microsoft Defender Dateien im Netzwerk überprüft. Der Benutzer kann erkannte Schadsoftware nicht aus schreibgeschützten Dateien entfernen.
 
   Verwandte Einstellung in dieser Liste: *Defender/AllowScanningNetworkFiles*
 
   **Standard**: Ja
 
 - **Endbenutzerzugriff auf Defender blockieren**  
-  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) – Legen Sie *Ja* fest, damit der Zugriff von Endbenutzern auf die Benutzeroberfläche von Windows Defender auf ihrem Gerät blockiert wird.  
+  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) – Legen Sie die Einstellung auf *Ja* fest, damit der Zugriff von Endbenutzern auf die Benutzeroberfläche von Microsoft Defender auf ihrem Gerät blockiert wird.  
 
   **Standard**: Ja
 
@@ -426,7 +426,7 @@ Weitere Informationen finden Sie unter [Policy CSP - Defender (Richtlinien-Konfi
 
   **Standard**: 02:00 Uhr
 
-## <a name="windows-defender-firewall"></a>Windows Defender Firewall
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender Firewall
 Weitere Informationen finden Sie in der Windows-Dokumentation unter [Firewall CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp).
 
 - **Leerlaufzeit für Sicherheitszuordnung vor Löschvorgang** - *MdmStore/Global/SaIdleTime*   
@@ -560,29 +560,29 @@ Weitere Informationen finden Sie in der Windows-Dokumentation unter [Firewall CS
 ## <a name="web--network-protection"></a>Web- und Netzwerkzugriffsschutz  
 
 - **Netzwerkschutztyp**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) – Diese Richtlinie ermöglicht es Ihnen, den Netzwerkschutz in Windows Defender Exploit Guard zu aktivieren oder zu deaktivieren. Netzwerkschutz ist ein Feature von Windows Defender Exploit Guard, das Arbeitnehmer davor schützt, eine Anwendung im Zuge betrügerischer Phishing-Versuche mit Zugriffsabsicht, Hostseiten für Exploits und schädliche Inhalte im Internet zu verwenden. Dabei wird auch verhindert, dass Browser von Drittanbietern Verbindungen zu gefährlichen Websites herstellen.  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) – Diese Richtlinie ermöglicht es Ihnen, den Netzwerkschutz in Microsoft Defender Exploit Guard zu aktivieren oder zu deaktivieren. Der Netzwerkschutz ist ein Feature von Microsoft Defender Exploit Guard, das Arbeitnehmer beim Verwenden von Apps vor dem Zugriff auf Phishingwebsites, Websites mit Exploits und schädliche Inhalte im Internet schützt. Dabei wird auch verhindert, dass Browser von Drittanbietern Verbindungen zu gefährlichen Websites herstellen.  
 
-  Wenn *Aktivieren* oder *Überwachungsmodus* festgelegt wurde, können Benutzer den Netzwerkschutz nicht deaktivieren, und Sie können über das Windows Defender Security Center Informationen zu Verbindungsversuchen anzeigen.  
+  Wenn *Aktivieren* oder *Überwachungsmodus* festgelegt wurde, können Benutzer den Netzwerkschutz nicht deaktivieren, und Sie können über das Microsoft Defender Security Center Informationen zu Verbindungsversuchen anzeigen.  
  
   - *Aktivieren* verhindert, dass Benutzer und Apps eine Verbindung mit gefährlichen Domänen herstellen.  
   - *Überwachungsmodus* verhindert nicht, dass Benutzer und Apps eine Verbindung mit gefährlichen Domänen herstellen.  
 
-  Wenn *Benutzerdefiniert* festgelegt wurde, wird nicht verhindert, dass Benutzer und Apps eine Verbindung mit gefährlichen Domänen herstellen. Außerdem stehen im Windows Defender Security Center keine Informationen zu Verbindungen zur Verfügung.  
+  Wenn *Benutzerdefiniert* festgelegt wurde, wird nicht verhindert, dass Benutzer und Apps eine Verbindung mit gefährlichen Domänen herstellen. Außerdem stehen im Microsoft Defender Security Center keine Informationen zu Verbindungen zur Verfügung.  
 
   **Standard**: Überwachungsmodus
 
 - **SmartScreen für Microsoft Edge anfordern**  
-  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) – Microsoft Edge verwendet Windows Defender SmartScreen (aktiviert), um Benutzer standardmäßig vor potenziellen betrügerischen Phishing-Angriffen und Schadsoftware zu schützen. Diese Richtlinie ist standardmäßig aktiviert (auf *Ja* festgelegt). Wenn sie aktiviert wurde, wird verhindert, dass Benutzer Windows Defender SmartScreen deaktivieren.  Wenn die effektive Richtlinie für ein Gerät gleich „Nicht konfiguriert“ lautet, können Benutzer Windows Defender SmartScreen deaktivieren, wodurch das Gerät ungeschützt bleibt.  
+  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) – Microsoft Edge verwendet Microsoft Defender SmartScreen (aktiviert), um Benutzer standardmäßig vor potenziellen Phishing-Angriffen und Schadsoftware zu schützen. Diese Richtlinie ist standardmäßig aktiviert (auf *Ja* festgelegt). Wenn sie aktiviert wurde, wird verhindert, dass Benutzer Microsoft Defender SmartScreen deaktivieren.  Wenn die effektive Richtlinie für ein Gerät gleich „Nicht konfiguriert“ lautet, können Benutzer Microsoft Defender SmartScreen deaktivieren, wodurch das Gerät ungeschützt bleibt.  
 
   **Standard**: Ja
   
 - **Zugriff auf schädliche Websites blockieren**  
-  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) – Standardmäßig ermöglicht Microsoft Edge Benutzern, die Warnungen von Windows Defender SmartScreen zu potenziell schädlichen Websites zu umgehen (zu ignorieren) und trotzdem auf die betreffende Website zuzugreifen. Wenn diese Richtlinie aktiviert (auf *Ja* festgelegt) wurde, verhindert Microsoft Edge, dass Benutzer Warnungen umgehen und zur Website wechseln.  
+  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) – Standardmäßig ermöglicht Microsoft Edge Benutzern, die Warnungen von Microsoft Defender SmartScreen zu potenziell schädlichen Websites zu umgehen (zu ignorieren) und trotzdem auf die betreffende Website zuzugreifen. Wenn diese Richtlinie aktiviert (auf *Ja* festgelegt) wurde, verhindert Microsoft Edge, dass Benutzer Warnungen umgehen und zur Website wechseln.  
 
   **Standard**: Ja
 
 - **Block unverified file download** (Herunterladen nicht überprüfter Dateien blockieren)  
-  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) – Standardmäßig ermöglicht Microsoft Edge Benutzern, die Warnungen von Windows Defender SmartScreen zu potenziell schädlichen Dateien zu umgehen (zu ignorieren) und die nicht geprüfte(n) Datei(en) trotzdem herunterzuladen. Wenn diese Richtlinie aktiviert (auf *Ja* festgelegt) wurde, werden Benutzer daran gehindert, die Warnungen zu umgehen, und sie können keine nicht überprüften Dateien herunterladen.  
+  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) – Standardmäßig ermöglicht Microsoft Edge Benutzern, die Warnungen von Microsoft Defender SmartScreen zu potenziell schädlichen Dateien zu umgehen (zu ignorieren) und nicht geprüfte Dateien trotzdem herunterzuladen. Wenn diese Richtlinie aktiviert (auf *Ja* festgelegt) wurde, werden Benutzer daran gehindert, die Warnungen zu umgehen, und sie können keine nicht überprüften Dateien herunterladen.  
 
   **Standard**: Ja
 
