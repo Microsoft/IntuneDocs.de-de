@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 391c5ac194d5dc7ddf492fe23907279cc4380d3d
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984120"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390856"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS- und iPadOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
@@ -57,7 +57,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Einstellungen gelten für: automatisierte Geräteregistrierung (überwacht)
 
-- **Änderung der Einstellungen zur Diagnoseübermittlung **: **Blockieren** verhindert, dass der Benutzer in **Diagnose- und Nutzung** (Geräteeinstellungen) Änderungen an den Einstellungen für Diagnoseübermittlung und App-Analyse vornimmt. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Geräteeinstellungen zu ändern.
+- **Änderung der Einstellungen zur Diagnoseübermittlung** : **Blockieren** verhindert, dass der Benutzer in **Diagnose- und Nutzung** (Geräteeinstellungen) Änderungen an den Einstellungen für Diagnoseübermittlung und App-Analyse vornimmt. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Geräteeinstellungen zu ändern.
 
   Um diese Einstellung zu verwenden, legen Sie die Einstellung **Nutzungsdaten freigeben** auf **blockieren**fest.
 
@@ -131,9 +131,6 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 ## <a name="password"></a>Kennwort
 
-> [!NOTE]
-> In einer zukünftigen Version werden diese Kenn Wort Einstellungen in der InTune-Benutzeroberfläche aktualisiert, damit Sie mit dem Anmeldungstyp übereinstimmen.
-
 ### <a name="settings-apply-to-all-enrollment-types"></a>Einstellungen gelten für: alle Registrierungs Typen
 
 - **Kennwort**: **Anfordern** der Eingabe eines Kennworts durch den Endbenutzer, um auf das Gerät zugreifen zu können. **Nicht konfiguriert** (Standard) ermöglicht Benutzern, ohne Kennworteingabe auf das Gerät zuzugreifen.
@@ -160,7 +157,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 - **Minimale Kennwortlänge**: Geben Sie die Mindestlänge an, die ein Benutzer eingeben muss (zwischen 4 und 14 Zeichen). Geben Sie auf Benutzer registrierten Geräten eine Länge zwischen 4 und 6 Zeichen ein.
   
   > [!NOTE]
-  > Bei Geräten, die Benutzer registriert sind, können Benutzer eine PIN mit mehr als 6 Ziffern festlegen. Auf dem Gerät werden jedoch höchstens 6 Ziffern erzwungen. Ein Administrator legt z. b. die Mindestlänge auf `8` fest. Auf Geräten, die für den Benutzer registriert sind, müssen Benutzer nur eine 6-stellige PIN festlegen. InTune erzwingt keine PIN, die für Benutzer registrierte Geräte mehr als 6 Ziffern umfasst.
+  > Bei Geräten, die Benutzer registriert sind, können Benutzer eine PIN mit mehr als 6 Ziffern festlegen. Auf dem Gerät werden jedoch höchstens 6 Ziffern erzwungen. Ein Administrator legt z. b. die Mindestlänge auf `8`fest. Auf Geräten, die für den Benutzer registriert sind, müssen Benutzer nur eine 6-stellige PIN festlegen. InTune erzwingt keine PIN, die für Benutzer registrierte Geräte mehr als 6 Ziffern umfasst.
 
 - **Anzahl von Anmeldefehlern, bevor das Gerät zurückgesetzt wird**: Geben Sie die Anzahl zulässiger Anmeldefehler (von 4 bis 11) ein, bevor das Gerät zurückgesetzt wird.
   
@@ -194,7 +191,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
   > [!NOTE]
   > Die Intune-Benutzeroberfläche für diese Einstellung trennt die unterstützten Werte für IOS und ipados nicht. Die Benutzeroberfläche wird in einer zukünftigen Version möglicherweise aktualisiert.
 
-- **Kennwortablauf (Tage)**: Geben Sie die Anzahl der Tage an, nach denen das Gerätekennwort geändert werden muss.
+- **Kennwortablauf (Tage)** : Geben Sie die Anzahl der Tage an, nach denen das Gerätekennwort geändert werden muss.
 - **Wiederverwendung vorheriger Kennwörter verhindern**: Geben Sie die Anzahl neuer Kennwörter ein, die verwendet werden müssen, bevor ein altes Kennwort wiederverwendet werden kann.
 - Entsperrung der Fingereingabe **-ID und der Gesichts Kennung**: Wählen Sie **Block** aus, um zu verhindern, dass das Gerät mithilfe eines Fingerabdrucks **Nicht konfiguriert** ermöglicht dem Benutzer das Entsperren des Geräts mittels dieser Methoden.
 
@@ -266,7 +263,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 - **ITunes Store-Kennwort für alle Käufe erforderlich**: **fordern** Sie den Benutzer auf, das Apple-ID-Kennwort für jeden in-App-oder iTunes-Kauf einzugeben. **Nicht konfiguriert** (Standardeinstellung): ermöglicht Käufe nicht jedes Mal, wenn ein Kennwort angefordert wird.
 - **In-App-Einkäufe**: Wählen Sie **Blockieren** aus, um In-App-Einkäufe im Store zu verhindern. **Nicht konfiguriert** (Standard) ermöglicht Einkäufe im Store in einer ausgeführten App.
 - **Als „Erotik“ gekennzeichneten Inhalt aus dem iBook Store herunterladen**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer Medien aus dem iBook Store herunterladen, die als „Erotik“ gekennzeichnet sind. **Nicht konfiguriert** (Standard) gestattet dem Benutzer das Herunterladen von Büchern aus der Kategorie „Erotik“.
-- **Verwalteten apps das Schreiben von Kontakten in nicht verwaltete Kontakt Konten gestatten**: Wenn diese Option auf " **zulassen**" festgelegt ist, können verwaltete apps, wie z. b. das Outlook-Mobile App, Kontaktinformationen, einschließlich geschäftlichen und Unternehmens Kontakten, für die integrierten IOS-Kontakte speichern oder synchronisieren. App. Wenn diese Einstellung auf " **nicht konfiguriert** " (Standard) festgelegt ist, können verwaltete apps keine Kontaktinformationen für die integrierte IOS-app "Kontakte" auf dem Gerät speichern oder synchronisieren.
+- **Verwalteten apps das Schreiben von Kontakten in nicht verwaltete Kontakt Konten gestatten**: Wenn diese Option auf " **zulassen**" festgelegt ist, können verwaltete apps, wie z. b. das Outlook-Mobile App, Kontaktinformationen, einschließlich geschäftlichen und Unternehmens Kontakten, in der integrierten IOS Contacts-APP speichern oder synchronisieren. Wenn diese Einstellung auf " **nicht konfiguriert** " (Standard) festgelegt ist, können verwaltete apps keine Kontaktinformationen für die integrierte IOS-app "Kontakte" auf dem Gerät speichern oder synchronisieren.
   
   Wenn Sie diese Einstellung verwenden möchten, legen Sie die Einstellung **Anzeige von Unternehmensdokumenten in nicht verwalteten Apps** auf **Blockieren** fest.
 
@@ -322,16 +319,6 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 
 - **Safari-Popups**: **Blockieren** deaktiviert den Popupblocker im Webbrowser. **Nicht konfiguriert** (Standardeinstellung): lässt den Popup Blocker zu.
 
-- **Serverseitige Protokollierung für Siri-Befehle**: Wenn diese Einstellung deaktiviert ist, wird die serverseitige Siri-Protokollierung **deaktiviert**. Sie kann auch verhindern, dass Benutzer Anforderungen auf Siri-Servern protokolliert werden. **Nicht konfiguriert** (Standard) protokolliert Siri-Befehle auf der Serverseite. Diese Einstellung ist nicht davon abhängig, dass die Siri-Einstellung blockiert oder nicht konfiguriert ist.
-
-  Diese Funktion gilt für:  
-  - iOS 12.2 und neuer
-
-  > [!NOTE]
-  > Die Einstellung **Server seitige Protokollierung für Siri-Befehle** wird von Apple als veraltet markiert. In einer zukünftigen Version wird diese Einstellung aus der InTune-Konsole entfernt.
-  >
-  > Diese Einstellung hat derzeit keine Auswirkungen auf Geräte, auch wenn die Einstellung in den Profilen des managemenets angezeigt wird. Um diese Einstellung aus einer Richtlinie zu löschen, öffnen Sie die Richtlinie, nehmen eine geringfügige Änderung vor und speichern die Richtlinie. Die Richtlinie wird aktualisiert, und die Einstellung wird von den Geräten gelöscht.
-
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Einstellungen gelten für: automatisierte Geräteregistrierung (überwacht)
 
 - **Kamera**: Wählen Sie **Blockieren** aus, um den Zugriff auf die Kamera des Geräts zu verhindern. **Nicht konfiguriert** (Standard) ermöglicht den Zugriff auf die Kamera des Geräts.
@@ -371,7 +358,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
   Diese Funktion gilt für:  
   - IOS 13,0 und ipados 13,0 und höher
 
-- **Änderungen an den Einstellungen der App „Meine Freunde suchen“**: **Blockieren** verhindert Änderungen der Einstellungen für die App „Meine Freunde suchen“. **Nicht konfiguriert** (Standard) ermöglicht Benutzern das Ändern von Einstellungen für die App „Meine Freunde suchen“.
+- **Änderungen an den Einstellungen der App „Meine Freunde suchen“** : **Blockieren** verhindert Änderungen der Einstellungen für die App „Meine Freunde suchen“. **Nicht konfiguriert** (Standard) ermöglicht Benutzern das Ändern von Einstellungen für die App „Meine Freunde suchen“.
 
 - **Spotlight-Suche gibt Ergebnisse aus dem Internet zurück**: **Blockieren** verhindert, dass Spotlight Ergebnisse einer Internetsuche zurückgibt. **Nicht konfiguriert** (Standard) ermöglicht der Spotlight-Suchfunktion das Herstellen einer Verbindung mit dem Internet zur Bereitstellung von Suchergebnissen.
 
@@ -426,7 +413,7 @@ Gilt für Geräte, auf denen IOS 9,3 oder höher ausgeführt wird.
 
   - Geben Sie zum Hinzufügen der Microsoft Work Folders-App `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` oder `https://apps.apple.com/us/app/work-folders/id950878067?mt=8` ein. 
 
-  - Geben Sie `https://itunes.apple.com/de/app/microsoft-word/id586447913` oder `https://apps.apple.com/de/app/microsoft-word/id586447913` ein, um die Microsoft Word-App hinzuzufügen.
+  - Geben Sie `https://itunes.apple.com/de/app/microsoft-word/id586447913` oder `https://apps.apple.com/de/app/microsoft-word/id586447913`ein, um die Microsoft Word-App hinzuzufügen.
 
   Um die URL einer App zu suchen, öffnen Sie den iTunes App Store, und suchen Sie nach der App. Suchen Sie beispielsweise nach `Microsoft Remote Desktop` oder `Microsoft Word`. Wählen Sie die App aus, und kopieren Sie die URL.
 
@@ -461,7 +448,7 @@ Hinweis für das Datenroaming (Tipp oder wichtiger Hinweis zur Unterstützung de
   > [!IMPORTANT]
   > Diese Einstellung wird als Remote Geräte Aktion behandelt. Diese Einstellung wird also nicht im Verwaltungs Profil auf dem Gerät angezeigt. Jedes Mal, wenn sich der Status des persönlichen Hotspots auf dem Gerät ändert, wird der **persönliche Hotspot** durch den InTune-Dienst blockiert. Wenn in InTune der Bericht Erstellungs Status erfolgreich angezeigt wird, wissen Sie, dass es funktioniert, auch wenn die Einstellung im Verwaltungs Profil auf dem Gerät nicht angezeigt wird.
 
-- **Mobilfunk-Verwendungsregeln (nur verwaltete Apps)**: Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn sie sich in Mobilfunknetzwerken befinden. Folgende Optionen sind verfügbar:
+- **Mobilfunk-Verwendungsregeln (nur verwaltete Apps)** : Definieren Sie die Datentypen, die von verwalteten Apps genutzt werden können, wenn sie sich in Mobilfunknetzwerken befinden. Folgende Optionen sind verfügbar:
   - **Verwendung von Datenverbindungen blockieren**: Blockieren Sie die Verwendung von Datenverbindungen für **Alle verwalteten Apps**, oder Sie können **Bestimmte Apps wählen**.
   - **Verwendung von Datenverbindungen beim Roaming blockieren:** Blockieren Sie die Verwendung von Datenverbindungen beim Roaming für **Alle verwalteten Apps**, oder Sie können **Bestimmte Apps wählen**.
 
@@ -540,7 +527,7 @@ Hinweis für das Datenroaming (Tipp oder wichtiger Hinweis zur Unterstützung de
 - **Verschlüsselte Sicherung**: **Anfordern** erzwingt die Verschlüsselung von Gerätesicherungen.
 - **Synchronisierung verwalteter Apps mit der Cloud**: **Nicht konfiguriert** (Standard) ermöglicht Ihren mit Intune verwalteten Apps, Daten mit dem iCloud-Konto des Benutzers zu synchronisieren. **Blockieren** verhindert diese Datensynchronisierung mit iCloud.
 - **Enterprise Book-Sicherung blockieren**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Benutzer Enterprise Books sichern. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, diese Bücher zu sichern.
-- **Synchronisierung von Enterprise Book-Metadaten blockieren (Notizen und Highlights)**: **Blockieren** verhindert, dass Notizen und Highlights in Enterprise Books synchronisiert werden. **Nicht konfiguriert** (Standardeinstellung) ermöglicht die Synchronisierung.
+- **Synchronisierung von Enterprise Book-Metadaten blockieren (Notizen und Highlights)** : **Blockieren** verhindert, dass Notizen und Highlights in Enterprise Books synchronisiert werden. **Nicht konfiguriert** (Standardeinstellung) ermöglicht die Synchronisierung.
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Einstellungen gelten für: Geräteregistrierung, automatisierte Geräteregistrierung (überwacht)
 
@@ -604,7 +591,7 @@ Verwenden Sie diese Einstellungen, um iOS-Geräte zur Ausführung bestimmter App
 - **Bildschirmdrehung:** **Blockieren** verhindert, dass die Bildschirmausrichtung geändert werden kann, wenn der Benutzer das Gerät dreht. **Nicht konfiguriert** lässt diese Funktion zu.
 - **Standbytaste:** Wählen Sie **Blockieren** aus, um die Standbytaste am Gerät zu deaktivieren. **Nicht konfiguriert** lässt diese Funktion zu.
 - **Touch**: **Blockieren** deaktiviert den Touchscreen des Geräts. **Nicht konfiguriert** ermöglicht dem Benutzer, den Touchscreen zu verwenden.
-- **Volumeschaltflächen **: **Block ** verhindert die Verwendung der volumeschaltflächen auf dem Gerät. **Nicht konfiguriert** ermöglicht die volumeschaltflächen.
+- **Volumeschaltflächen**: **Block** verhindert die Verwendung der volumeschaltflächen auf dem Gerät. **Nicht konfiguriert** ermöglicht die volumeschaltflächen.
 - **Steuerelement der Touch-Unterstützung**: Mit **Zulassen** können Benutzer die Touch-Unterstützungsfunktion verwenden. **Nicht konfiguriert** deaktiviert dieses Feature.
 - **Steuerelement zum Umkehren von Farben**: **Zulassen** von Farbumkehr-Änderungen, mit denen der Benutzer die Funktion zur Farbumkehr individuell verwenden kann. **Nicht konfiguriert** deaktiviert dieses Feature.
 - **Ausgewählten Text sprechen**: **Zulassen** der Sprachauswahl-Barrierefreiheitseinstellungen auf dem Gerät. Diese Funktion liest Text, den der Benutzer auswählt, laut vor. **Nicht konfiguriert** deaktiviert dieses Feature.
