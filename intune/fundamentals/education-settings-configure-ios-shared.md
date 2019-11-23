@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 839a62e32c2fafcaaa591e38cd5b2e297ed3750f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 86b61f628dc559bf0520dbe16ef58644bd360269
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502949"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188448"
 ---
 # <a name="configure-intune-education-settings-for-shared-ipad-devices"></a>Konfigurieren von Intune-Einstellungen für Bildungseinrichtungen für freigegebene iPad-Geräte
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 > [!NOTE]
-> Intune-Einstellungen für die Classroom-App sind in Intune veraltet. Dieser Artikel gilt nur für Benutzer mit vorhandenen Education-Profilen in Intune.
+> InTune unterstützt derzeit nicht das Konfigurieren der Classroom-app. Dieser Artikel gilt nur für Benutzer mit vorhandenen iOS-Education-Profilen in Intune.
 
 Intune unterstützt die iOS-App „Classroom“, mit der Lehrkräfte Schüler/Studenten durch den Unterricht führen und deren Geräte im Kursraum steuern können. Neben der Classroom-App unterstützt Apple, dass ein iPad-Gerät so konfiguriert werden kann, dass mehrere Schüler/Studenten es benutzen können. In diesem Artikel erfahren Sie, wie Sie dies mit Intune erreichen können.
 

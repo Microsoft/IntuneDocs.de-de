@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bacb7e26df8a5b0d6c7500b24a5e749a85ca62f2
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 075e7a99f72de30e83447a2869154859e33356b9
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059632"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390838"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>Verwenden und Verwalten von Android-Unternehmens Geräten mit oemconfig in Microsoft InTune
 
@@ -80,8 +80,8 @@ Stellen Sie sicher, dass das Gerät oemconfig unterstützt, dass die richtige oe
 
 ## <a name="create-an-oemconfig-profile"></a>Erstellen eines oemconfig-Profils
 
-1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)an.
-2. Wählen Sie **Geräte** > **Konfigurations profile** > **Profil erstellen**aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
     - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.
@@ -146,6 +146,11 @@ Im Vergleich zu Standard-apps erweitern oemconfig-Apps die von Google gewährten
 | Datalogic | com. Datalogic. oemconfig | [Benutzerdokumentation für Datalogic oemconfig](https://datalogic.github.io/oemconfig/) |
 | Honeywell | com. Honeywell. oemconfig |  |
 | Kyocera | JP. Kyocera. enterprisseabviceconfig |  |
+| SpectraLink-Barcodes | com. SpectraLink. Barcode. Service |  |
+| SpectraLink-Schaltflächen | com. SpectraLink. Buttons |  |
+| SpectraLink-Gerät | com. SpectraLink. slnkde vicesettings  |  |
+| SpectraLink-Protokollierung | com. SpectraLink. slnklogger |  |
+| SpectraLink-vqo | com. SpectraLink. slnkvqo |  |
 
 -----------------
 
