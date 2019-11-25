@@ -205,6 +205,10 @@
           href: use-docs.md
         - name: Anfordern von Support
           href: get-support.md
+    - name: Berichte
+      items:
+        - name: Intune-Berichte
+          href: reports.md
 - name: Referenz
   items:
     - name: Fehlercodes und Beschreibungen
