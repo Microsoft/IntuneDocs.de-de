@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/01/2019
+ms.date: 11/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d85793dcf0ee6fa0186147606c9fd695a268e529
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: bd2ab7ad8eb155719695bede1f539d5c264d455b
+ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506978"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74319833"
 ---
 # <a name="use-custom-settings-for-android-enterprise-devices-in-microsoft-intune"></a>Verwenden benutzerdefinierter Einstellungen für Android Enterprise-Geräte in Microsoft Intune
 
@@ -30,11 +30,11 @@ Mit Microsoft Intune können Sie mit einem „benutzerdefinierten Profil“ benu
 
 Benutzerdefinierte Android Enterprise-Profile verwenden die OMA-URI-Einstellungen (Open Mobile Alliance Uniform Resource Identifier) zum Festlegen verschiedener Features auf Android Enterprise-Geräten. Diese Einstellungen werden in der Regel von den Herstellern der Geräte verwendet, um die Features festzulegen.
 
-InTune unterstützt eine begrenzte Anzahl von benutzerdefinierten Android Enterprise-Profilen, einschließlich:
+InTune unterstützt die folgende begrenzte Anzahl von benutzerdefinierten Android Enterprise-Profilen:
 
 - ./Vendor/msft/WiFi/profile/SSID/Settings: [Erstellen eines WLAN-Profils mit einem vorinstallierten Schlüssel](wi-fi-profile-shared-key.md) enthält einige Beispiele.
 - ./Vendor/MSFT/VPN/Profile/Name/PackageList: [Erstellen Sie ein pro-App-VPN-Profil](android-pulse-secure-per-app-vpn.md) , das einige Beispiele enthält.
-- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: siehe das [Beispiel](#example) (in diesem Artikel).
+- ./Vendor/MSFT/WorkProfile/DisallowCrossProfileCopyPaste: siehe das [Beispiel](#example) in diesem Artikel. Diese Einstellung ist auch in der Benutzeroberfläche verfügbar. Weitere Informationen finden Sie unter [Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune](device-restrictions-android-for-work.md).
 
 Wenn Sie zusätzliche Einstellungen benötigen, finden Sie weitere Informationen [unter oemconfig für Android Enterprise](android-oem-configuration-overview.md).
 

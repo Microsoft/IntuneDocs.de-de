@@ -2,10 +2,10 @@
 title: Binden von Android-Geräten nach Netzwerkstandort in Microsoft Intune (Azure) | Microsoft-Dokumentation
 description: Erstellen oder konfigurieren Sie Netzwerkstandorte für Android-Geräte in Microsoft Intune. Sie können Geräte aufgrund des Netzwerkstandorts als „Nicht konform“ markieren. Wenn das Gerät den Netzwerkstandort verlässt, können Sie den Zugriff auf die Unternehmensressourcen blockieren.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 847ab759b697d402acb07d9c8d83d3a3ef9aaef2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749442"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058155"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Verwenden von Standorten (Netzwerk-Fencing) in Intune
 
@@ -50,7 +50,7 @@ So erstellen Sie eine standortbasierte Konformitätsrichtlinie:
 
 ## <a name="create-a-location"></a>Erstellen eines Standorts
 
-1. Klicken Sie in Intune auf **Gerätekonformität** > **Standorte** > **Erstellen**.
+1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) **Geräte** > **Konformitätsrichtlinien** > **Speicherorte** > **Erstellen** aus.
 
 2. Geben Sie die folgenden Eigenschaften ein:  
 
@@ -69,8 +69,7 @@ So erstellen Sie eine standortbasierte Konformitätsrichtlinie:
 
 ## <a name="create-the-location-compliance-policy"></a>Erstellen der Konformitätsrichtlinie für den Standort
 
-Wenn Sie [die Konformitätsrichtlinie erstellen](create-compliance-policy.md), wählen Sie **Android** für die **Plattform** aus. Unter **Standorte** können Sie einen oder mehr der hinzugefügten Netzwerkstandorte auswählen. Diese Standorte sind Teil des Netzwerk-Fencing-Bereichs, den Sie für Ihr Gerät erstellen. 
-
+Wenn Sie [die Konformitätsrichtlinie erstellen](create-compliance-policy.md), wählen Sie **Android** für die **Plattform** aus. Unter **Standorte** können Sie einen oder mehr der hinzugefügten Netzwerkstandorte auswählen. Diese Standorte sind Teil des Netzwerk-Fencing-Bereichs, den Sie für Ihr Gerät erstellen.
 
 ## <a name="configure-the-actions-for-noncompliance"></a>Konfigurieren der Aktionen bei Nichtkonformität
 
@@ -83,5 +82,6 @@ Unter [Hinzufügen von Aktionen bei Nichtkonformität](actions-for-noncompliance
 Wenn das Gerät mit Ihren Standorten verbunden ist, wird es in der Unternehmensportal-App als „Konform“ angezeigt. Wenn das Gerät nicht mit einem Ihrer Standorte verbunden ist, wird es als „Nicht konform“ angezeigt.
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 [Überwachen von Intune-Richtlinien zur Gerätekonformität](compliance-policy-monitor.md)  
 [Erste Schritte mit Konformitätsrichtlinien](device-compliance-get-started.md)

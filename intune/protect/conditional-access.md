@@ -17,27 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb9dd31c87d27ec7885d25269988cfd968e81e08
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 179d135ee8e216495cd7435bf38d8087e5c990e8
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504563"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188276"
 ---
 # <a name="learn-about-conditional-access-and-intune"></a>Erfahren Sie mehr zum bedingten Zugriff und Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+Mit bedingtem Zugriff können Sie die Geräte und Anwendungen steuern, die sich mit Ihren E-Mail- und Unternehmensressourcen verbinden können. 
 
-Der Begriff „bedingter Zugriff“ bezieht sich auf Möglichkeiten zum Steuern der Geräte und Apps, die eine Verbindung mit E-Mail- und Unternehmensressourcen herstellen dürfen. In diesem Artikel erhalten Sie Informationen zu gerätebasiertem und App-basiertem bedingtem Zugriff. Außerdem werden häufige Szenarios zur Verwendung von bedingtem Zugriff mit Intune dargestellt.
-
-Der bedingte Zugriff von Enterprise Mobility + Security (EMS) ist kein eigenständiges Produkt, sondern eine Lösung, die für alle Dienste und Produkte im Rahmen von EMS gilt. Die Lösung bietet eine präzise Zugriffssteuerung, sodass Sie die Sicherheit Ihrer Unternehmensdaten gewährleisten und gleichzeitig dafür sorgen können, dass die Benutzer mit jedem Gerät und an jedem Standort optimal arbeiten können.
+Enterprise Mobility + Security (EMS) ist kein eigenständiges Produkt. Dabei handelt es sich um eine Lösung, die an allen Diensten und Produkten beteiligt ist, die Teil von EMS sind. Bedingter Zugriff bietet eine präzise Zugriffssteuerung, sodass Sie die Sicherheit Ihrer Unternehmensdaten gewährleisten und gleichzeitig dafür sorgen können, dass die Benutzer mit jedem Gerät und an jedem Standort optimal arbeiten können.
 
 Sie können Bedingungen definieren, die den Zugriff auf Ihre Unternehmensdaten basierend auf dem Ort, dem Gerät, dem Benutzerstatus und der Vertraulichkeit der Anwendung einschränken.
 
-> [!NOTE] 
+> [!NOTE]
 > Der bedingte Zugriff kann auch auf [Office 365-Dienste](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access) angewendet werden.
 
-![Architekturdiagramm für den bedingten Zugriff](./media/conditional-access/ca-diagram-1.png)
+![Diagramm des bedingten Zugriffs](./media/conditional-access/ca-diagram-1.png)
 
 ## <a name="use-conditional-access-with-intune"></a>Verwenden des bedingten Zugriffs mit Intune
 

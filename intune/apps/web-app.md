@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6600c75ce3e6120143b17fb863670b2eb423a09f
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 997cf043f8ea61133d6e61f4584ad9349aedbf73
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592056"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060039"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Hinzufügen von Web-Apps zu Microsoft Intune
 
@@ -36,7 +36,7 @@ Bevor Sie eine App verwalten und Benutzern zuweisen können, müssen Sie diese i
 Intune erstellt auf dem Gerät des Benutzers eine Verknüpfung zu der Web-App. Für iOS-Geräte wird dem Startbildschirm eine Verknüpfung mit der Web-App hinzugefügt. Für Android-Geräte wird dem Intune-Unternehmensportalwidget eine Verknüpfung mit der Web-App hinzugefügt, und das Widget muss manuell vom Benutzer angeheftet werden. Für Windows-Geräte wird eine Verknüpfung mit der Web-App im Startmenü platziert.
 
 > [!Note]
-> Zum Starten von Web-Apps muss ein Browser auf dem Gerät des Benutzers installiert sein.
+> Zum Starten von Web-Apps muss ein Browser auf dem Gerät des Benutzers installiert sein. 
 
 ## <a name="add-a-web-app-to-intune"></a>Hinzufügen einer Web-App zu Intune
 Führen Sie die folgenden Schritte aus, um eine App als Verknüpfung zu einer App im Internet zu Intune hinzuzufügen:
@@ -67,6 +67,8 @@ Führen Sie die folgenden Schritte aus, um eine App als Verknüpfung zu einer Ap
 > Benutzer müssen dem Startbildschirm das Intune-Widget hinzufügen, um Web-Apps anzuzeigen, die Android-Geräten zugewiesen wurden.
 >
 > Derzeit ist die Bereitstellung von Intune-Web-Apps für iOS-Geräte mit dem Verwaltungsprofil verbunden und kann nicht manuell entfernt werden. Sie können den Bereitstellungstyp im Intune-Portal in **Deinstallieren** ändern – an diesem Punkt kann die Web-App automatisch entfernt werden. Aber wenn Sie die Bereitstellung vor dem Ändern der App-Zuweisungsabsicht in **Deinstallieren** entfernen, ist die Web-App dauerhaft auf dem Gerät vorhanden, bis die Registrierung des Geräts bei Intune aufgehoben wird.
+
+Endbenutzer können Web-Apps direkt aus der Windows-Unternehmensportal-App starten, indem sie die Web-App auswählen und dann die Option **Im Browser öffnen** auswählen. Die veröffentlichte Web-URL wird direkt im Webbrowser geöffnet. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 

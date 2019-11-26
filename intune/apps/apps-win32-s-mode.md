@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3a9eb45898102e9d5fcde88f69026467255c513
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: d2ab21321b171c8fe8f5f9dab3032507c0e740cf
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445280"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059757"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>Aktivieren von Win32-Apps auf Geräten im S Modus
 
-[Windows 10 im S Modus](https://docs.microsoft.com/windows/deployment/s-mode) ist ein gesperrtes Betriebssystem, das nur Store-Apps ausführt. Standardmäßig lassen Windows-Geräte im S Modus die Installation und Ausführung von Win32-Apps nicht zu. Diese Geräte enthalten eine einzelne *Windows 10 S-Basisrichtlinie*, die verhindert, dass das Gerät im S Modus Win32-Apps ausführen kann. Durch die Erstellung und Verwendung einer **zusätzlichen S Modus-Richtlinie** in Intune können Sie jedoch Win32-Apps auf verwalteten Windows 10-Geräten im S Mode installieren und ausführen. Mithilfe der [WDAC](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)-PowerShell-Tools (Windows Defender-Anwendungssteuerung) können Sie eine oder mehrere zusätzliche Richtlinien für Windows im S Modus erstellen. Sie müssen die zusätzlichen Richtlinien mit dem [Device Guard-Signaturdienst](https://go.microsoft.com/fwlink/?linkid=2095629) oder mit [SignTool.exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/signing-policies-with-signtool) signieren und dann die Richtlinien über Intune hochladen und verteilen. Alternativ können Sie die zusätzlichen Richtlinien mit einem Codesignaturzertifikat Ihrer Organisation signieren. Die bevorzugte Methode ist jedoch die Verwendung eines Device Guard-Signaturdiensts. In der Instanz, in der Sie das Codesignaturzertifikat Ihrer Organisation verwenden, muss das Stammzertifikat, mit dem das Codesignaturzertifikat verkettet ist, auf dem Gerät vorhanden sein.
+[Windows 10 im S Modus](https://docs.microsoft.com/windows/deployment/s-mode) ist ein gesperrtes Betriebssystem, das nur Store-Apps ausführt. Standardmäßig lassen Windows-Geräte im S Modus die Installation und Ausführung von Win32-Apps nicht zu. Diese Geräte enthalten eine einzelne *Windows 10 S-Basisrichtlinie*, die verhindert, dass das Gerät im S Modus Win32-Apps ausführen kann. Durch die Erstellung und Verwendung einer **zusätzlichen S Modus-Richtlinie** in Intune können Sie jedoch Win32-Apps auf verwalteten Windows 10-Geräten im S Mode installieren und ausführen. Mithilfe der [Microsoft Defender-Anwendungssteuerung](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)-PowerShell-Tools können Sie eine oder mehrere zusätzliche Richtlinien für Windows im S Modus erstellen. Sie müssen die zusätzlichen Richtlinien mit dem [Device Guard-Signaturdienst](https://go.microsoft.com/fwlink/?linkid=2095629) oder mit [SignTool.exe](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/signing-policies-with-signtool) signieren und dann die Richtlinien über Intune hochladen und verteilen. Alternativ können Sie die zusätzlichen Richtlinien mit einem Codesignaturzertifikat Ihrer Organisation signieren. Die bevorzugte Methode ist jedoch die Verwendung eines Device Guard-Signaturdiensts. In der Instanz, in der Sie das Codesignaturzertifikat Ihrer Organisation verwenden, muss das Stammzertifikat, mit dem das Codesignaturzertifikat verkettet ist, auf dem Gerät vorhanden sein.
 
 Durch die Zuweisung der zusätzlichen S Modus-Richtlinie in Intune ermöglichen Sie es dem Gerät, eine Ausnahme in der vorhandenen Geräterichtlinie im S Modus festzulegen. Dies lässt den hochgeladenen zugehörigen signierten App-Katalog zu. Die Richtlinie legt eine Zulassungsliste von Apps (der App-Katalog) fest, die auf dem Gerät im S Modus verwendet werden können.
 
@@ -40,7 +40,7 @@ Die folgenden Schritte sind erforderlich, damit Win32-Apps auf einem Windows 10-
 
 1. Aktivieren Sie im Rahmen des Windows 10 S-Registrierungsprozesses Geräte im S Modus über Intune.
 2. Erstellen Sie eine zusätzliche Richtlinie für die Zulassung von Win32-Apps:
-   - Sie können die [WDAC](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)-Tools (Windows Defender-Anwendungssteuerung) verwenden, um eine zusätzliche Richtlinie zu erstellen. Die Basisrichtlinien-ID in der Richtlinie muss mit der Basisrichtlinien-ID im S Modus (die auf dem Client hart codiert ist) übereinstimmen. Stellen Sie außerdem sicher, dass die Richtlinienversion höher als die vorherige Version ist.
+   - Sie können die [Microsoft Defender-Anwendungssteuerung](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)-Tools verwenden, um eine zusätzliche Richtlinie zu erstellen. Die Basisrichtlinien-ID in der Richtlinie muss mit der Basisrichtlinien-ID im S Modus (die auf dem Client hart codiert ist) übereinstimmen. Stellen Sie außerdem sicher, dass die Richtlinienversion höher als die vorherige Version ist.
    - Verwenden Sie den Device Guard-Signaturdienst, um Ihre zusätzliche Richtlinie zu signieren. Weitere Informationen finden Sie unter [Signieren von Codeintegritätsrichtlinien mit der Device Guard-Signatur](https://docs.microsoft.com/microsoft-store/sign-code-integrity-policy-with-device-guard-signing).
    - Laden Sie die signierte zusätzliche Richtlinie in Intune hoch, indem Sie eine zusätzliche Windows 10 S Modus-Richtlinie erstellen (siehe unten).
 3. Lassen Sie Win32-App-Kataloge über Intune zu:

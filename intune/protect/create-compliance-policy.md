@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786072"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188264"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>Erstellen einer Konformitätsrichtlinie in Microsoft Intune
 
@@ -61,19 +61,15 @@ Stellen Sie zum Verwenden von Konformitätsrichtlinien folgendes sicher:
 
 ## <a name="create-the-policy"></a>Erstellen der Richtlinie
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Wählen Sie **Gerätekompatibilität** aus. Hierzu stehen Ihnen folgende Optionen zur Verfügung:
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 
-    - **Übersicht:** Zusammenfassung und Anzahl der Geräte, die nicht konform sind, nicht ausgewertet wurden usw. Außerdem werden die Richtlinien und einzelnen Einstellungen in Ihren Richtlinien angezeigt. Unter [Monitor Intune device compliance policies (Überwachen von Intune-Richtlinien zur Gerätekonformität)](compliance-policy-monitor.md) erhalten Sie weitere Informationen.
-    - **Verwalten:** Erstellen Sie Geräterichtlinien, senden Sie [Benachrichtigungen](quickstart-send-notification.md) an nicht konform Geräte, und aktivieren Sie das [Netzwerkfencing](use-network-locations.md).
-    - **Überwachen:** Überprüfen Sie den Konformitätsstatus Ihrer Geräte auf Ebene von Einstellungen und Richtlinien. Unter [Monitor Intune device compliance policies (Überwachen von Intune-Richtlinien zur Gerätekonformität)](compliance-policy-monitor.md) erhalten Sie weitere Informationen. Sehen Sie sich auch die Protokolle und den Status des Bedrohungs-Agents Ihrer Geräte an.
-    - **Setup:** Verwenden Sie die [integrierten Konformitätsrichtlinien](device-compliance-get-started.md#ways-to-deploy-device-compliance-policies), aktivieren Sie [Microsoft Defender Advanced Threat Protection (ATP)](advanced-threat-protection.md), fügen Sie einen [Mobile Threat Defense-Connector](mobile-threat-defense.md) hinzu, und verwenden Sie [Jamf](conditional-access-integrate-jamf.md).
+2. Wählen Sie **Geräte** > **Konformitätsrichtlinien** > **Richtlinie erstellen** aus.
 
-3. Klicken Sie auf **Richtlinien** > **Richtlinie erstellen**. Geben Sie die folgenden Eigenschaften ein:
+3. Legen Sie die folgenden Eigenschaften fest:
 
-   - **Name**: Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein geeigneter Richtlinienname ist z. B. **iOS-Geräte mit Jailbreak als nicht konform markieren**.  
+   - **Name**: Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein geeigneter Richtlinienname ist z. B. **iOS-Geräte mit Jailbreak als nicht konform markieren**.
 
-   - **Beschreibung**: Geben Sie eine Beschreibung für die Richtlinie ein. Diese Einstellung ist optional, wird jedoch empfohlen.  
+   - **Beschreibung**: Geben Sie eine Beschreibung für die Richtlinie ein. Diese Einstellung ist optional, wird jedoch empfohlen.
 
    - **Plattform**: Wählen Sie die Plattform Ihrer Geräte aus. Folgende Optionen sind verfügbar:
      - **Android-Geräteadministrator**
@@ -99,7 +95,7 @@ Stellen Sie zum Verwenden von Konformitätsrichtlinien folgendes sicher:
    - **Standorte** *(Android-Geräteadministrator)* : In Ihrer Richtlinie können Sie Konformität durch den Standort des Geräts erzwingen. Sie können vorhandene Standorte auswählen. Haben Sie noch keine Standorte? Unter [Verwenden von Standorten (Netzwerk-Fencing) in Intune](use-network-locations.md) erhalten Sie weitere Informationen.  
 
    - **Aktionen bei Inkompatibilität**: Für Geräte, die nicht Ihren Konformitätsrichtlinien entsprechen, können Sie Aktionen hinzufügen, die automatisch ausgeführt werden sollen. Sie können den Zeitplan anpassen, anhand dessen das Gerät als nicht konform markiert wird, z.B. nach einem Tag. Sie können auch eine zweite Aktion konfigurieren, durch die E-Mails an Benutzer gesendet werden, wenn das Gerät nicht mehr konform ist.
-    
+
      Weitere Informationen sowie Informationen zum Erstellen einer E-Mail-Benachrichtigung für Ihre Benutzer finden Sie unter [Hinzufügen von Aktionen für nicht konforme Geräte in Intune](actions-for-noncompliance.md).
 
      Sie verwenden beispielsweise das Standortfeature und fügen einen Standort zu einer Konformitätsrichtlinie hinzu. Die Standardaktion für Nichtkonformität gilt, wenn Sie mindestens einen Standort auswählen. Wenn das Gerät nicht mit den ausgewählten Standorten verbunden ist, wird es sofort als nicht konform betrachtet. Sie können Ihren Benutzern eine Toleranzperiode gewähren, z.B. einen Tag.
@@ -112,8 +108,10 @@ Stellen Sie zum Verwenden von Konformitätsrichtlinien folgendes sicher:
 
 Wenn eine Richtlinie erstellt wurde, können Sie diese Gruppen zuweisen:
 
-1. Wählen Sie eine Richtlinie aus, die Sie erstellt haben. Vorhandene Richtlinien befinden sich unter **Gerätekompatibilität** > **Richtlinien**.
-2. Klicken Sie auf die Richtlinie und anschließend auf **Assignments** (Zuweisungen). Sie können Azure Active Directory (AD)-Sicherheitsgruppen ein- oder ausschließen.
+1. Wählen Sie eine Richtlinie aus, die Sie erstellt haben. Vorhandene Richtlinien befinden sich unter **Geräte** > **Konformitätsrichtlinien** > **Richtlinien**.
+
+2. Wählen Sie *Richtlinie* > **Zuweisungen** aus. Sie können Azure Active Directory (AD)-Sicherheitsgruppen ein- oder ausschließen.
+
 3. Wählen Sie **Ausgewählte Gruppen**, um Ihre Azure AD-Sicherheitsgruppen anzuzeigen. Wählen Sie die Gruppen aus, auf die diese Richtlinie angewendet werden soll, und wählen Sie dann **Speichern** aus, um die Richtlinie bereitzustellen.
 
 Die Benutzer oder Geräte, auf die Ihre Richtlinie abzielt, werden hinsichtlich der Konformität ausgewertet, wenn sie mit Intune eingecheckt werden.
@@ -122,8 +120,9 @@ Die Benutzer oder Geräte, auf die Ihre Richtlinie abzielt, werden hinsichtlich 
 
 Wenn Sie die Richtlinie zuweisen, können Sie auch **auswerten**, wie viele Benutzer betroffen sind. Durch diese Funktion wird eine Benutzeranzahl (jedoch keine Geräteanzahl) berechnet.
 
-1. Klicken Sie in Intune auf **Device compliance** > **Policies** (Gerätekonformität > Richtlinien).
-2. Wählen Sie eine Richtlinie aus, und klicken Sie dann auf **Assignments** > **Evaluate** (Zuweisungen > Auswerten). Eine Meldung mit der Anzahl der von dieser Richtlinie betroffenen Benutzer wird angezeigt.
+1. Wählen Sie in Intune **Geräte** > **Konformitätsrichtlinien** > **Richtlinien** aus.
+
+2. Wählen Sie *Richtlinie* > **Zuweisungen** > **Bewerten** aus. Eine Meldung mit der Anzahl der von dieser Richtlinie betroffenen Benutzer wird angezeigt.
 
 Wenn die Schaltfläche **Evaluate** (Auswerten) ausgegraut ist, stellen Sie sicher, dass die Richtlinie mindestens einer Gruppe zugewiesen wurde.
 

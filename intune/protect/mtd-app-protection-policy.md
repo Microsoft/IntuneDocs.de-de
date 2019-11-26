@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,19 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15d986bc5017a44571c6194f9c6b53167b671349
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 48dc7de86965741d8ed42bd5a5f29f72ae66d4f3
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72794419"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188492"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>Erstellen einer Mobile Threat Defense-App-Schutzrichtlinie (MTD) mit Intune
 
-> [!NOTE] 
-> Dieser Artikel gilt für alle Mobile Threat Defense-Partner (MTD), die App-Schutzrichtlinien unterstützen: Better Mobile (Android), Zimperium (iOS), Lookout for Work (Android/iOS).
+Intune mit Mobile Threat Defense (MTD) hilft Ihnen dabei, Bedrohungen zu erkennen und Risiken auf mobilen Geräten zu bewerten. Sie können eine Intune-App-Schutzrichtlinie erstellen, die eine Risikobewertung durchführt und bestimmt, ob dem Gerät Zugriff auf Unternehmensdaten gewährt wird.
 
-Intune mit MTD hilft Ihnen dabei, Bedrohungen zu erkennen und Risiken auf mobilen Geräten zu bewerten. Sie können eine Intune-App-Schutzrichtlinie erstellen, die eine Risikobewertung durchführt und bestimmt, ob dem Gerät Zugriff auf Unternehmensdaten gewährt wird. 
+
+> [!NOTE]
+> Dieser Artikel gilt für alle Mobile Threat Defense-Partner, die App-Schutzrichtlinien unterstützen:
+>
+> - Better Mobile (Android)
+> - Zimperium (iOS)
+> - Lookout for Work (Android, iOS)
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
@@ -42,38 +47,25 @@ Voraussetzungen für die App-Schutzrichtlinie mit MTD:
 
 ## <a name="to-create-an-mtd-app-protection-policy"></a>Erstellen einer MTD-App-Schutzrichtlinie
 
-1. Melden Sie sich im [Azure-Portal](https://portal.azure.com/) mit Ihren Intune-Anmeldeinformationen an.
+Verwenden Sie die Prozedur, um [eine iOS-/iPadOS- oder Android-App-Schutzrichtlinie zu erstellen](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps), und verwenden Sie die folgenden Informationen von den Seiten *Apps*, *Bedingter Start* und *Zuweisungen*:
 
-2. Klicken Sie im **Azure-Dashboard** im linken Menü auf **Alle Dienste**, und geben Sie in das Filtertextfeld **Intune** ein.
+- **Apps**: Wählen Sie die App für den Mobile Threat Defense-Partner aus, den Sie verwenden.
+- **Bedingter Start:**  Wählen Sie in der Dropdownliste unter *Gerätebedingungen* **Maximal zulässige Bedrohungsstufe für Gerät** aus.
 
-3. Wählen Sie **Intune** aus. Das **Intune-Dashboard** wird geöffnet.
+  Optionen für den **Wert** der Bedrohungsstufe:
 
-4. Wählen Sie im **Intune-Dashboard** **Client-Apps** und dann im Abschnitt **Verwalten** die Option **App-Schutzrichtlinien** aus.
+  - **Secured** (Geschützt): Diese Stufe ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
+  - **Niedrig:** Das Gerät ist konform, wenn nur Bedrohungen auf niedriger Stufe vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
+  - **Mittel:** Das Gerät ist konform, wenn auf dem Gerät Bedrohungen niedriger oder mittlerer Stufe gefunden werden. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
+  - **Hoch:** Diese Stufe gewährleistet das geringste Maß an Sicherheit. Diese Stufe lässt alle Bedrohungsstufen zu und verwendet Mobile Threat Defense nur zu Berichtszwecken. Auf Geräten muss mit dieser Einstellung die MTD-App aktiviert sein.
 
-5. Wählen Sie **Richtlinie erstellen** aus, geben Sie den **Namen** und die **Beschreibung** ein, und wählen Sie die **Plattform** aus. 
+  Optionen für **Aktion**:
 
-6. Wählen Sie im Bereich **Bedingter Start** bei der Tabelle **Gerätebedingungen** aus der Dropdownliste **Maximal zulässige Gerätebedrohungsstufe** die gewünschte Stufe für mobile Bedrohungen aus.
+  - **Zugriff blockieren**
+  - **Daten löschen**
 
-    ein.  **Secured** (Geschützt): Diese Stufe ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
+- **Zuweisungen:** Weisen Sie die Richtlinie Benutzergruppen zu.  Die von den Gruppenmitgliedern verwendeten Geräte werden für den Zugriff auf Unternehmensdaten in Ziel-Apps über den Intune-App-Schutz ausgewertet.
 
-    b.  **Niedrig:** Das Gerät ist konform, wenn nur Bedrohungen auf niedriger Stufe vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
-
-    c.  **Mittel:** Das Gerät ist konform, wenn auf dem Gerät Bedrohungen niedriger oder mittlerer Stufe gefunden werden. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
-
-    d.  **Hoch:** Diese Stufe gewährleistet das geringste Maß an Sicherheit. Sie lässt alle Bedrohungsstufen zu und verwendet Mobile Threat Defense nur zu Berichtszwecken. Auf Geräten muss mit dieser Einstellung die MTD-App aktiviert sein.
-
-7. Klicken Sie zweimal auf **Speichern**, und wählen Sie dann **Erstellen** aus.
-
-## <a name="to-assign-an-mtd-app-protection-policy"></a>Zuweisen einer MTD-App-Schutzrichtlinie
-
-Wählen Sie zum Zuweisen einer Gerätekompatibilitätsrichtlinie zu Benutzern eine Richtlinie aus, die Sie zuvor konfiguriert haben. Vorhandene Richtlinien finden Sie im Bereich **Gerätekonformität > Richtlinien**.
-
-1. Wählen Sie die Richtlinie, die Sie Benutzern zuweisen möchten, und abschließend **Zuweisungen** aus. Mit dieser Aktion öffnen Sie den Bereich, in dem Sie **Azure Active Directory-Sicherheitsgruppen** auswählen und der Richtlinie zuweisen können.
-
-2. Klicken Sie auf **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen**, um den Bereich mit den Azure AD-Sicherheitsgruppen zu öffnen. Die Auswahl von **Auswählen** bewirkt die Bereitstellung der Richtlinie für Benutzer.
-
-> [!NOTE] 
-> Sie haben die Richtlinie auf Benutzer angewendet. Die von den Benutzern verwendeten Geräte, denen die Richtlinie zugewiesen wurde, werden für den Zugriff auf Unternehmensdaten in Ziel-Apps über den Intune-App-Schutz ausgewertet.
 
 ## <a name="next-steps"></a>Nächste Schritte  
 

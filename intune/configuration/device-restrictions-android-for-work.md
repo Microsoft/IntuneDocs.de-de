@@ -1,11 +1,11 @@
 ---
 title: Android Enterprise-Geräteeinstellungen in Microsoft Intune – Azure | Microsoft-Dokumentation
-description: Auf Geräten mit Android Enterprise oder Android for Work können Sie auf dem Gerät Einstellungen einschränken, darunter Kopieren und Einfügen, Benachrichtigungen anzeigen, App-Berechtigungen, Datenfreigabe, Kennwortlänge, Anmeldefehler, Entsperren per Fingerabdruck, Wiederverwenden von Kennwörtern und Aktivieren der Freigabe von Geschäftskontakten per Bluetooth. Konfigurieren Sie Geräte als dedizierten Gerätekiosk zur Ausführung einer oder mehrerer Apps.
+description: 'Auf Geräten mit Android Enterprise oder Android for Work können Sie auf dem Gerät Einstellungen einschränken, darunter folgende: Kopieren und Einfügen, Benachrichtigungen anzeigen, App-Berechtigungen, Datenfreigabe, Kennwortlänge, Anmeldefehler, Entsperren per Fingerabdruck, Wiederverwenden von Kennwörtern und Aktivieren der Freigabe von Geschäftskontakten per Bluetooth. Konfigurieren Sie Geräte als dedizierten Gerätekiosk zur Ausführung einer oder mehrerer Apps.'
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143040"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390919"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Android Enterprise-Geräteeinstellungen zum Zulassen oder Einschränken von Features mit Intune
 
@@ -71,8 +71,8 @@ In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschri
   - **Zurückgestellt:** Updates werden für 30 Tage zurückgestellt. Nach Ablauf der 30 Tage fordert Android den Benutzer zur Installation des Updates auf. Gerätehersteller oder Mobilfunkanbieter können verhindern (ausschließen), dass wichtige Sicherheitsupdates zurückgestellt werden. Bei einem ausgeschlossenen Update wird dem Benutzer eine Systembenachrichtigung auf dem Gerät angezeigt.
   - **Wartungsfenster:** Updates werden automatisch in einem täglichen Wartungsfenster installiert, das Sie in Intune festlegen. Die Installation wird 30 Tage lang täglich versucht, und es kann aufgrund von zu geringem Speicherplatz oder Akkustand ein Fehler auftreten. Nach 30 Tagen wird der Benutzer von Android zum Installieren aufgefordert. Dieses Fenster wird auch verwendet, um Updates für Google Play-Apps zu installieren. Verwenden Sie diese Option für dedizierte Geräte wie etwa Kioskgeräte, da Apps, die im Vordergrund auf einem dedizierten Gerät im Einzelanwendungsmodus ausgeführt werden, aktualisiert werden können.
 
-- **Benachrichtigungsfenster**: Bei Festlegung auf **Deaktivieren** werden Fensterbenachrichtigungen, wie Popups, eingehende Anrufe, ausgehende Anrufe, Systemwarnungen und Systemfehler, nicht auf dem Gerät angezeigt. Bei **Nicht konfiguriert** wird die Standardeinstellung des Betriebssystems verwendet, wodurch Benachrichtigungen möglicherweise angezeigt werden.
-- **Hinweise zur ersten Verwendung überspringen**: Wählen Sie **Aktivieren** aus, um Vorschläge aus Apps auszublenden oder zu überspringen, Tutorials schrittweise durchzuarbeiten oder beim Starten der App einführende Hinweise zu lesen. Bei **Nicht konfiguriert** wird die Standardeinstellung des Betriebssystems verwendet, wodurch diese Vorschläge beim Starten der App möglicherweise angezeigt werden.
+- **Benachrichtigungsfenster**: Bei Festlegung auf **Deaktivieren** werden Fensterbenachrichtigungen wie z. B. Popups, eingehende Anrufe, ausgehende Anrufe, Systemwarnungen und Systemfehler nicht auf dem Gerät angezeigt. Bei **Nicht konfiguriert** wird die Standardeinstellung des Betriebssystems verwendet, wodurch Benachrichtigungen möglicherweise angezeigt werden.
+- **Erste Verwendungs Hinweise überspringen**: **aktiviert** oder überspringt Vorschläge von apps, die Lernprogramme durchlaufen, oder Hinweise, wenn die APP gestartet wird. Bei Festlegung auf **Nicht konfiguriert** wird die Standardeinstellung des Betriebssystems verwendet, wodurch diese Vorschläge beim Starten der App möglicherweise angezeigt werden.
 
 ### <a name="system-security-settings"></a>Einstellungen für die Systemsicherheit
 
@@ -150,13 +150,16 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
 
     Wenn diese Option aktiviert ist, konfigurieren Sie auch:
 
-    - **Benutzerdefiniertes Bildschirmschoner festlegen**: Geben Sie die URL zu einem benutzerdefinierten Image ein. Geben Sie beispielsweise Folgendes ein:
+    - **Custom Screen Saver Image festlegen**: Geben Sie die URL zu einem benutzerdefinierten PNG, JPG, JPEG, GIF, BMP, Webp oder icoimage ein. Geben Sie z. B. Folgendes ein:
 
       - `http://www.contoso.com/image.jpg`
       - `www.contoso.com/image.bmp`
-      - `https://www.contoso.com/image.html`
+      - `https://www.contoso.com/image.webp`
 
       Wenn Sie keine URL eingeben, wird das Standard Image des Geräts verwendet, wenn ein Standard Image vorhanden ist.
+      
+      > [!TIP]
+      > Eine beliebige Datei Ressourcen-URL, die in eine Bitmap umgewandelt werden kann, wird unterstützt.
 
     - **Anzahl von Sekunden, die das Gerät vor dem Ausschalten des Bildschirms anzeigt**: Wählen Sie aus, wie lange das Gerät den Bildschirmschoner anzeigt. Geben Sie einen Wert zwischen 0 und 9999999 Sekunden ein. Der Standardwert beträgt `0` Sekunden. Wenn das Feld leer gelassen wird oder auf 0 (null) (`0`) festgelegt ist, wird der Bildschirmschoner aktiviert, bis ein Benutzer mit dem Gerät interagiert.
     - **Anzahl der Sekunden, die das Gerät inaktiv ist, bevor der Bildschirmschoner angezeigt wird**: Wählen Sie aus, wie lange das Gerät im Leerlauf ist, bevor der Bildschirm Geben Sie einen Wert zwischen 1 und 9999999 Sekunden ein. Der Standardwert beträgt `30` Sekunden. Geben Sie eine Zahl ein, die größer als null (`0`) ist.
@@ -199,12 +202,14 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
 
 ### <a name="users-and-accounts-settings"></a>Einstellungen für Benutzer und Konten
 
-- **Neue Benutzer hinzufügen:** Wenn Sie **Blockieren** festlegen, können Benutzer keine neuen Benutzer hinzufügen. Jeder Benutzer hat einen persönlichen Bereich auf dem Gerät für benutzerdefinierte Startseiten, Konten, Apps und Einstellungen. **Nicht konfiguriert** ermöglicht Benutzern, dem Gerät andere Benutzer hinzuzufügen.
-- **Entfernen von Benutzern:** Wenn Sie **Blockieren** festlegen, können Benutzer keine Benutzer entfernen. **Nicht konfiguriert** ermöglicht Benutzern, andere Benutzer vom Gerät zu entfernen.
-- **Kontoänderungen:** Wenn Sie **Blockieren** festlegen, können Benutzer Konten nicht bearbeiten. **Nicht konfiguriert** ermöglicht Benutzern, Benutzerkonten auf dem Gerät zu aktualisieren.
+- **Neue Benutzer hinzufügen:** Wenn Sie **Blockieren** festlegen, können Benutzer keine neuen Benutzer hinzufügen. Jeder Benutzer hat einen persönlichen Bereich auf dem Gerät für benutzerdefinierte Startseiten, Konten, Apps und Einstellungen. Eine Festlegung auf **Nicht konfiguriert** (Standardeinstellung) ermöglicht es Benutzern, dem Gerät andere Benutzer hinzufügen.
+- **Entfernen von Benutzern:** Wenn Sie **Blockieren** festlegen, können Benutzer keine Benutzer entfernen. Eine Festlegung auf **Nicht konfiguriert** (Standardeinstellung) ermöglicht es Benutzern, andere Benutzer vom Gerät zu entfernen.
+- **Kontoänderungen** (nur dedizierte Geräte): Klicken Sie auf **blockieren** , um zu verhindern, dass Benutzerkonten ändern. Eine Festlegung auf **Nicht konfiguriert** (Standardeinstellung) ermöglicht es Benutzern, Benutzerkonten auf dem Gerät zu aktualisieren.
 
   > [!NOTE]
   > Diese Einstellung wird auf Geräten mit Geräte Besitzern (vollständig verwaltet) nicht berücksichtigt. Wenn Sie diese Einstellung konfigurieren, wird die Einstellung ignoriert und hat keine Auswirkungen.
+
+- **Persönliche Google-Konten**: **blockieren** verhindert, dass Benutzer Ihr persönliches Google-Konto zum Gerät hinzufügen. **Nicht konfiguriert** (Standardeinstellung) ermöglicht Benutzern das Hinzufügen Ihres persönlichen Google-Kontos.
 
 ### <a name="applications"></a>Applications
 
@@ -314,7 +319,7 @@ Verwenden Sie diese Einstellungen, um eine Umgebung im Kioskstil auf Ihren dediz
   - **Mindestens alphanumerisch mit Symbolen**
 - **Wiederverwendung vorheriger Kennwörter verhindern**: Geben Sie die Anzahl neuer Kennwörter ein (von **1**-**24**), die verwendet werden müssen, bevor ein altes Kennwort wiederverwendet werden kann.
 - **Entsperrung durch Fingerabdruck**: Wählen Sie **Blockieren** aus, um zu verhindern, dass ein Endbenutzer das Gerät mithilfe des Fingerabdruckscanners entsperren kann. **Nicht konfiguriert** ermöglicht Benutzern das Entsperren von Geräten mit einem Fingerabdruck im Arbeitsprofil.
-- **Smart Lock und andere Vertrauens-Agents**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Smart Lock oder andere Vertrauens-Agents Sperrbildschirmeinstellungen auf kompatiblen Geräten anpassen. Dieses Feature wird manchmal auch als Vertrauens-Agent bezeichnet und ermöglicht Ihnen, das Kennwort für den Gerätesperrbildschirm zu deaktivieren oder zu umgehen, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet. Umgehen Sie z. B. das Kennwort für das Arbeitsprofil, wenn das Gerät mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet. Mit dieser Einstellung können Sie verhindern, dass Benutzer Smart Lock konfigurieren.
+- **Smart Lock und andere Vertrauens-Agents**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Smart Lock oder andere Vertrauens-Agents Sperrbildschirmeinstellungen auf kompatiblen Geräten anpassen. Dieses Feature wird auch als Vertrauens-Agent bezeichnet und ermöglicht es Ihnen, das Kennwort für den Gerätesperrbildschirm zu deaktivieren oder zu umgehen, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet. Umgehen Sie z. B. das Kennwort für das Arbeitsprofil, wenn das Gerät mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet. Mit dieser Einstellung können Sie verhindern, dass Benutzer Smart Lock konfigurieren.
 
 ### <a name="device-password"></a>Gerätekennwort
 
@@ -335,14 +340,14 @@ Diese Kennworteinstellungen gelten für persönliche Profile auf Geräten, die e
   - **Mindestens alphanumerisch mit Symbolen**
 - **Wiederverwendung vorheriger Kennwörter verhindern**: Geben Sie die Anzahl neuer Kennwörter ein (von **1**-**24**), die verwendet werden müssen, bevor ein altes Kennwort wiederverwendet werden kann.
 - **Entsperrung durch Fingerabdruck**: Wählen Sie **Blockieren** aus, um zu verhindern, dass ein Endbenutzer das Gerät mithilfe des Fingerabdruckscanners entsperren kann. **Nicht konfiguriert** ermöglicht dem Benutzer das Entsperren des Geräts mittels Fingerabdruck.
-- **Smart Lock und andere Vertrauens-Agents**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Smart Lock oder andere Vertrauens-Agents Sperrbildschirmeinstellungen auf kompatiblen Geräten anpassen. Dieses Feature wird manchmal auch als Vertrauens-Agent bezeichnet und ermöglicht Ihnen, das Kennwort für den Gerätesperrbildschirm zu deaktivieren oder zu umgehen, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet. Umgehen Sie z. B. das Kennwort für das Arbeitsprofil, wenn das Gerät mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet. Mit dieser Einstellung können Sie verhindern, dass Benutzer Smart Lock konfigurieren.
+- **Smart Lock und andere Vertrauens-Agents**: Wählen Sie **Blockieren** aus, um zu verhindern, dass Smart Lock oder andere Vertrauens-Agents Sperrbildschirmeinstellungen auf kompatiblen Geräten anpassen. Dieses Feature wird auch als Vertrauens-Agent bezeichnet und ermöglicht es Ihnen, das Kennwort für den Gerätesperrbildschirm zu deaktivieren oder zu umgehen, wenn sich das Gerät an einem vertrauenswürdigen Standort befindet. Umgehen Sie z. B. das Kennwort für das Arbeitsprofil, wenn das Gerät mit einem bestimmten Bluetooth-Gerät verbunden ist oder sich in der Nähe eines NFC-Tags befindet. Mit dieser Einstellung können Sie verhindern, dass Benutzer Smart Lock konfigurieren.
 
 ### <a name="system-security"></a>Systemsicherheit
 
 - **Bedrohungsüberprüfung für Apps**: **Anfordern** erzwingt, dass die Einstellung **Apps überprüfen** für Arbeits- und persönliche Profile aktiviert ist.
 
    > [!Note]
-   > Diese Einstellung funktioniert nur auf Geräten mit Android O und höher.
+   > Diese Einstellung funktioniert nur auf Geräten mit Android 8 (Oreo) und höher.
 
 - **Verhindern von App-Installationen aus unbekannten Quellen im persönlichen Profil: im**Entwurfs Modus können Android-Unternehmensprofil-Geräte keine apps aus anderen Quellen als dem Play Store installieren. Arbeitsprofil Geräte sind naturgemäß als Dual Profil gedacht:
 

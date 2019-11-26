@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,16 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cbf9c29a1e694726b1b42f7072eea859f812751
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: 73de0ac94ff02e43fe73ca6357f6008ba71e3b93
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593797"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390818"
 ---
 # <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>Hinzufügen von E-Mail-Einstellungen für iOS-Geräte in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 In Microsoft Intune können Sie E-Mails erstellen und konfigurieren, um eine Verbindung zu einem E-Mail-Server herzustellen, die Art der Benutzerauthentifizierung auszuwählen, S/MIME für die Verschlüsselung verwenden und vieles mehr.
 
@@ -37,27 +35,32 @@ In diesem Artikel werden alle E-Mail-Einstellungen aufgeführt und beschrieben, 
 > [!NOTE]
 > Diese Einstellungen sind für alle Registrierungs Typen verfügbar. Weitere Informationen zu den Registrierungs Typen finden Sie unter [IOS](../ios-enroll.md)-Registrierung.
 
-## <a name="email-settings"></a>E-Mail-Einstellungen
+## <a name="exchange-activesync-account-settings"></a>Einstellungen für Exchange ActiveSync-Konto
 
 - **E-Mail-Server:** Geben Sie den Hostnamen Ihres Exchange-Servers ein.
 - **Kontoname:** Geben Sie den Anzeigenamen des E-Mail-Kontos ein. Dieser Name wird Benutzern auf ihren Geräten angezeigt.
 - **Benutzernamensattribut aus AAD:** Dieser Name ist das Attribut, dass Intune aus Azure Active Directory (AAD) abruft. Intune generiert dynamisch den Benutzernamen, der von diesem Profil verwendet wird. Folgende Optionen sind verfügbar:
   - **Benutzerprinzipalname:** Ruft den Namen ab, z.B. `user1` oder `user1@contoso.com`
   - **Primäre SMTP-Adresse:** Ruft den Namen im Format einer E-Mail-Adresse ab, z.B. `user1@contoso.com`
-  - **SAM-Kontoname:** Erfordert die Domäne, z.B. `domain\user1`
-
-    Geben Sie außerdem Folgendes ein:  
+  - **SAM-Kontoname:** Erfordert die Domäne, z.B. `domain\user1` Geben Sie außerdem Folgendes ein:  
     - **Quelle des Benutzerdomänennamens:** Wählen Sie zwischen **AAD** oder **Benutzerdefiniert**.
+      - **Aad**: Sie erhalten die Attribute aus Azure AD. Geben Sie außerdem Folgendes ein:
+        - **Attribut des Benutzerdomänennamens aus AAD**: Rufen Sie entweder das Attribut **Vollständiger Domänenname** (`contoso.com`) oder das Attribut **NetBIOS-Name** (`contoso`) des Benutzers ab.
 
-      Wenn Sie die Attribute von **AAD** abrufen möchten, geben Sie Folgendes ein:
-      - **Attribut des Benutzerdomänennames von AAD:** Rufen Sie entweder das Attribut **Full domain name** (vollständiger Domänenname) oder **NetBIOS name** (NetBIOS-Name) des Benutzers ab.
+      - **Custom**: die Attribute werden von einem benutzerdefinierten Domänen Namen abgeleitet. Geben Sie außerdem Folgendes ein:
+        - **Zu verwendender benutzerdefinierter Domänenname**: Geben Sie einen Wert ein, den Intune als Domänennamen verwenden kann, wie z. B. `contoso.com` oder `contoso`.
 
-      Wenn Sie sich dazu entscheiden, die Attribute **Benutzerdefiniert** zu verwenden, geben Sie Folgendes ein:
-      - **Zu verwendender benutzerdefinierter Domänenname:** Geben Sie einen Wert ein, den Intune als Domänennamen verwenden kann, wie z.B. `contoso.com` oder `contoso`
+- **E-Mail-Adressattribut aus AAD:** Die Art der Generierung der E-Mail-Adresse für den Benutzer Folgende Optionen sind verfügbar:
+  - **Benutzerprinzipalname**: Der vollständige Prinzipalname, z. B. `user1@contoso.com` oder `user1`, dieser wird als E-Mail-Adresse verwendet.
+  - **Primäre SMTP-Adresse**: Wählen Sie die primäre SMTP-Adresse für die Anmeldung bei Exchange aus, z. B. `user1@contoso.com`.
+- **Authentifizierungsmethode**: Wählen Sie aus, wie sich Benutzer bei dem e-Mail-Server authentifizieren. Folgende Optionen sind verfügbar:
+  - **Zertifikat**: Wählen Sie ein zuvor erstelltes SCEP- oder PKCS-Clientzertifikatprofil für die Authentifizierung der Exchange-Verbindung aus. Diese Option bietet die sicherste und nahtlose benutzerfreundliche Benutzer Leistung.
+  - **Benutzername und Kennwort**: Benutzer werden aufgefordert, Ihren Benutzernamen und Ihr Kennwort einzugeben.
+  - **Abgeleitete**Anmelde Informationen: Verwenden Sie ein Zertifikat, das von der Smartcard eines Benutzers abgeleitet ist. Weitere Informationen finden Sie unter [verwenden abgeleiteter Anmelde Informationen in Microsoft InTune](../protect/derived-credentials.md).
 
-- **E-Mail-Adressattribut aus AAD:** Die Art der Generierung der E-Mail-Adresse für den Benutzer Wählen Sie **Benutzerprinzipalname** (`user1@contoso.com` oder `user1`) aus, um den vollständigen Benutzerprinzipalnamen als E-Mail-Adresse zu verwenden. Wählen Sie **Primäre SMTP-Adresse** (`user1@contoso.com`) aus, um die primäre SMTP-Adresse zum Anmelden bei Exchange zu verwenden.
-- **Authentifizierungsmethode**: Wählen Sie entweder **Benutzername und Kennwort**, **Zertifikate** oder **Abgeleitete Anmeldeinformationen** als Authentifizierungsmethode aus, die vom E-Mail-Profil verwendet werden soll. Die mehrstufige Authentifizierung mit Azure wird nicht unterstützt.
-  - Wenn Sie **Zertifikat** ausgewählt haben, wählen Sie ein zuvor erstelltes SCEP- oder PKCS-Clientzertifikatprofil aus, das zur Authentifizierung der Exchange-Verbindung verwendet werden soll.
+  >[!NOTE]
+  > Die mehrstufige Authentifizierung mit Azure wird nicht unterstützt.
+  
 - **SSL:** Mit der Option **Aktivieren** wird die SSL-Kommunikation (Secure Sockets Layer) beim Senden und Empfangen von E-Mails sowie bei der Kommunikation mit dem Exchange-Server verwendet.
 - **OAuth:** Mit der Option **Aktivieren** wird Open Authorization (OAuth) beim Senden und Empfangen von E-Mails sowie bei der Kommunikation mit Exchange verwendet. Wenn Ihr OAuth-Server die zertifikatbasierte Authentifizierung verwendet, wählen Sie **Zertifikat** als **Authentifizierungsmethode** aus, und fügen Sie das Zertifikat dem Profil hinzu. Wählen Sie andernfalls **Benutzername und Kennwort** als **Authentifizierungsmethode** aus. Stellen Sie bei der Verwendung von OAuth Folgendes sicher:
 
@@ -76,29 +79,84 @@ In diesem Artikel werden alle E-Mail-Einstellungen aufgeführt und beschrieben, 
   > 1. Geräte, die bereits als Zielgerät eingetragen sind, erhalten ein neues Profil.
   > 2. Endbenutzer werden erneut zur Eingabe ihrer Anmeldeinformationen aufgefordert.
 
-- **S/MIME**: Mit der Option **S/MIME aktivieren** wird zugelassen, dass Benutzer E-Mails in der nativen iOS-E-Mail-Anwendung signieren und/oder verschlüsseln. 
+## <a name="exchange-activesync-profile-configuration"></a>Konfiguration von Exchange ActiveSync-Profilen
 
-  Wenn Sie S/MIME für eine E-Mail-Nachricht verwenden, bestätigen Sie die Authentizität des Absenders sowie die Integrität und Vertraulichkeit der Nachricht.
+> [!IMPORTANT]
+> Wenn Sie diese Einstellungen konfigurieren, wird ein neues Profil auf dem Gerät bereitgestellt, auch wenn ein vorhandenes e-Mail-Profil aktualisiert wird, das diese Einstellungen enthält. Benutzer werden aufgefordert, Ihr Kennwort für das Exchange ActiveSync-Konto einzugeben. Diese Einstellungen wirken sich auf die Eingabe des Kennworts aus.
 
-  - **S/MIME-Signatur aktiviert**: Bei Festlegung auf **Aktivieren** können Benutzer ausgehende E-Mails für das von Ihnen angegebene Konto digital signieren. Durch die Signatur können Benutzer, die Nachrichten empfangen, sicher sein, dass die Nachricht vom jeweiligen Absender stammt und nicht von jemandem, der vorgibt, der Absender zu sein. Wenn Sie **Deaktivieren** auswählen, können Benutzer Nachrichten nicht digital signieren.
-    - **Allow user to change setting** (Benutzer das Ändern der Einstellung erlauben): Wählen Sie **Aktivieren** aus, damit Benutzer die Einstellung zum Erstellen einer S/MIME-Signatur ändern können. Mit der Option **Deaktivieren** wird verhindert, dass Benutzer die von Ihnen konfigurierte Einstellung zum Erstellen einer S/MIME-Signatur ändern. Verfügbar in iOS 12 und höheren Versionen.
+- **Austauschen von Daten für die Synchronisierung**: Wählen Sie bei Verwendung von Exchange ActiveSync die Exchange-Dienste aus, die auf dem Gerät synchronisiert werden: Kalender, Kontakte, Erinnerungen, Notizen und e-Mail. Folgende Optionen sind verfügbar:
+  - **Alle Daten** (Standard): die Synchronisierung ist für alle Dienste aktiviert.
+  - **Nur e-Mail**: die Synchronisierung ist nur für e-Mail aktiviert. Die Synchronisierung ist für die anderen Dienste deaktiviert.
+  - **Nur Kalender**: die Synchronisierung ist nur für Kalender aktiviert. Die Synchronisierung ist für die anderen Dienste deaktiviert.
+  - **Nur Calendar und Contacts**: die Synchronisierung ist nur für Kalender und Kontakte aktiviert. Die Synchronisierung ist für die anderen Dienste deaktiviert.
+  - **Nur Kontakte**: die Synchronisierung ist nur für Kontakte aktiviert. Die Synchronisierung ist für die anderen Dienste deaktiviert.
 
-  - **S/MIME-Signaturzertifikat**: Wählen Sie ein vorhandenes PKCS- oder SCEP-Zertifikatprofil aus, das zum Signieren von E-Mail-Nachrichten verwendet wird.
-    - **Allow user to change setting** (Benutzer das Ändern der Einstellung erlauben): Wählen Sie **Aktivieren** aus, damit Benutzer das Signaturzertifikat ändern können. Mit der Option **Deaktivieren** wird verhindert, dass Benutzer das Signaturzertifikat ändern. Benutzer sind somit gezwungen, das von Ihnen konfigurierte Zertifikat zu verwenden. Verfügbar in iOS 12 und höheren Versionen.
+  Diese Funktion gilt für:  
+  - iOS 13.0 und neuer
+  - iOS 13.0 und höher
 
-  - **Encrypt by default** (Standardmäßig verschlüsseln): Mit der Option **Aktivieren** werden alle Nachrichten standardmäßig verschlüsselt. Mit der Option **Deaktivieren** werden nicht alle Nachrichten standardmäßig verschlüsselt.
-    - **Allow user to change setting** (Benutzer das Ändern der Einstellung erlauben): Wählen Sie **Aktivieren** aus, damit Benutzer das Standardverhalten für die Verschlüsselung ändern können. Mit der Option **Deaktivieren** wird verhindert, dass Benutzer das Standardverhalten für die Verschlüsselung ändern, und Benutzer werden gezwungen, die von Ihnen konfigurierte Einstellung zu verwenden. Verfügbar in iOS 12 und höheren Versionen.
+- **Benutzern das Ändern von Synchronisierungs Einstellungen gestatten**: Wählen Sie diese Option aus, wenn Benutzer die Exchange ActiveSync-Einstellungen für die Exchange-Dienste auf dem Gerät ändern können: Kalender, Kontakte, Erinnerungen, Notizen und e-Mail. Folgende Optionen sind verfügbar:
 
-  - **Verschlüsselung pro Nachricht erzwingen**: Mit der Verschlüsselung pro Nachricht können Benutzer auswählen, welche E-Mails vor dem Senden verschlüsselt werden sollen. Wählen Sie **Aktivieren** aus, um beim Erstellen einer neuen E-Mail die Option zum Verschlüsseln pro Nachricht anzuzeigen. Die Benutzer können dann auswählen, ob sie die Verschlüsselung pro Nachricht ein- oder ausschalten möchten. Mit der Option **Deaktivieren** wird verhindert, dass die Option zum Verschlüsseln pro Nachricht angezeigt wird.
+  - **Ja** (Standardeinstellung): Benutzer können das Synchronisierungs Verhalten aller Dienste ändern. Wenn Sie **Ja** auswählen, können *alle* Dienste geändert werden.
+  - **Nein**: Benutzer können die Synchronisierungs Einstellungen aller Dienste nicht ändern. Wenn Sie **Nein** auswählen, werden Änderungen an *allen* Diensten blockiert.
 
-    Wenn die Einstellung **Standardmäßig verschlüsseln** aktiviert ist, ermöglicht die Aktivierung der Verschlüsselung pro Nachricht, dass Benutzer diese deaktivieren können. Wenn die Einstellung **Standardmäßig verschlüsseln** deaktiviert ist, ermöglicht die Aktivierung der Verschlüsselung pro Nachricht, dass Benutzer sich für die Verschlüsselung pro Nachricht entscheiden können.
+  > [!TIP]
+  > Wenn Sie die Einstellung für die **Exchange-Daten für die Synchronisierung** konfiguriert haben, um nur einige Dienste zu synchronisieren, wird empfohlen, für diese Einstellung **Nein** auszuwählen. Wenn Sie **Nein** auswählen, werden Benutzer daran gehindert, den Synchronisierungs Dienst zu ändern.
 
-  - **S/MIME-Verschlüsselungszertifikat**: Wählen Sie ein vorhandenes PKCS- oder SCEP-Zertifikatprofil aus, das zum Verschlüsseln von E-Mail-Nachrichten verwendet wird.
-    - **Allow user to change setting** (Benutzer das Ändern der Einstellung erlauben): Wählen Sie **Aktivieren** aus, damit Benutzer das Verschlüsselungszertifikat ändern können. Mit der Option **Deaktivieren** wird verhindert, dass Benutzer das Verschlüsselungszertifikat ändern. Benutzer sind somit gezwungen, das von Ihnen konfigurierte Zertifikat zu verwenden. Verfügbar in iOS 12 und höheren Versionen.
+  Diese Funktion gilt für:  
+  - iOS 13.0 und neuer
+  - iOS 13.0 und höher
+
+## <a name="exchange-activesync-email-settings"></a>Exchange ActiveSync-e-Mail-Einstellungen
+
+- **S/MIME**: s/MIME verwendet e-Mail-Zertifikate, die durch signieren, verschlüsseln und entschlüsseln zusätzliche Sicherheit für Ihre e-Mail-Kommunikation bieten. Wenn Sie S/MIME für eine E-Mail-Nachricht verwenden, bestätigen Sie die Authentizität des Absenders sowie die Integrität und Vertraulichkeit der Nachricht.
+
+  Folgende Optionen sind verfügbar:
+
+  - **S/MIME deaktivieren** (Standard): verwendet kein s/MIME-e-Mail-Zertifikat, um e-Mails zu signieren, zu verschlüsseln oder zu entschlüsseln.
+  - **S/MIME aktivieren**: Ermöglicht Benutzern das Signieren und/oder Verschlüsseln von E-Mails in der nativen iOS-E-Mail-Anwendung. Geben Sie außerdem Folgendes ein:
+
+    - **S/MIME-Signierung aktiviert**: **Deaktivieren** (Standard) erlaubt Benutzern nicht, die Nachricht digital zu signieren. Eine Festlegung auf **Aktivieren** ermöglicht Benutzern das digitale Signieren ausgehender E-Mails für das von Ihnen angegebene Konto. Durch die Signatur können Benutzer, die Nachrichten empfangen, sicher sein, dass die Nachricht vom jeweiligen Absender stammt und nicht von jemandem, der vorgibt, der Absender zu sein.
+      - **Ändern der Einstellung durch Benutzer zulassen**: **aktivieren** ermöglicht Benutzern das Ändern der Signierungs Optionen. **Deaktivieren** (Standard) verhindert, dass Benutzer die Signierung ändern, und erzwingt die Verwendung der von Ihnen konfigurierten Signierung durch Benutzer.
+      - **Signatur Zertifikattyp**: Ihre Optionen:
+        - **Nicht konfiguriert**: Diese Einstellung wird von InTune nicht aktualisiert oder geändert.
+        - **Keine**: als Administrator erzwingen Sie kein bestimmtes Zertifikat. Wählen Sie diese Option aus, damit Benutzer ihr eigenes Zertifikat auswählen können.
+        - **Abgeleitete**Anmelde Informationen: Verwenden Sie ein Zertifikat, das von der Smartcard eines Benutzers abgeleitet ist. Weitere Informationen finden Sie unter [verwenden abgeleiteter Anmelde Informationen in Microsoft InTune](../protect/derived-credentials.md).
+        - **Zertifikate**: Wählen Sie ein vorhandenes PKCS- oder SCEP-Zertifikatprofil aus, das zum Signieren von E-Mail-Nachrichten verwendet wird.
+      - **Einstellung Änderung durch Benutzer zulassen**: **aktivieren** ermöglicht es Benutzern, das Signaturzertifikat zu ändern. Eine Festlegung auf **Deaktivieren** (Standardeinstellung) verhindert, dass Benutzer das Signaturzertifikat ändern. Benutzer sind somit gezwungen, das von Ihnen konfigurierte Zertifikat zu verwenden.
+
+        Diese Funktion gilt für:  
+        - iOS 12 und höher
+        - iPadOS 12 und höher
+
+    - **Encrypt by default** (Standardmäßig verschlüsseln): Mit der Option **Aktivieren** werden alle Nachrichten standardmäßig verschlüsselt. Durch eine Festlegung auf **Deaktivieren** (Standardeinstellung) werden sämtliche Nachrichten standardmäßig nicht verschlüsselt.
+      - **Benutzern das Ändern der Einstellung erlauben**: Wählen Sie **Aktivieren** aus, damit Benutzer das Standardverhalten für die Verschlüsselung ändern können. Eine Festlegung auf **Deaktivieren** verhindert, dass Benutzer das Standardverhalten für die Verschlüsselung ändern können. Benutzer müssen so die von Ihnen konfigurierte Einstellung verwenden.
+
+        Diese Funktion gilt für:  
+        - iOS 12 und höher
+        - iPadOS 12 und höher
+
+    - **Verschlüsselung pro Nachricht erzwingen**: Mit der Verschlüsselung pro Nachricht können Benutzer auswählen, welche E-Mails vor dem Senden verschlüsselt werden sollen.
+
+      Durch eine Festlegung auf **Aktivieren** wird beim Erstellen einer neuen E-Mail die Option zum Verschlüsseln pro Nachricht angezeigt. Die Benutzer können daraufhin auswählen, ob sie die Verschlüsselung pro Nachricht ein- oder ausschalten möchten. Wenn außerdem die Einstellung **Standardmäßig verschlüsseln** aktiviert ist, ermöglicht die Aktivierung der Verschlüsselung pro Nachricht, dass Benutzer diese deaktivieren können.
+
+      Mit der Option **Deaktivieren** (Standardeinstellung) wird verhindert, dass die Option zum Verschlüsseln pro Nachricht angezeigt wird. Wenn außerdem die Einstellung **Standardmäßig verschlüsseln** deaktiviert ist, ermöglicht die Aktivierung der Verschlüsselung pro Nachricht, dass Benutzer sich für die Verschlüsselung pro Nachricht entscheiden können.
+
+      - **Verschlüsselungs Zertifikattyp**: Ihre Optionen:
+        - **Nicht konfiguriert**: Diese Einstellung wird von InTune nicht aktualisiert oder geändert.
+        - **Keine**: als Administrator erzwingen Sie kein bestimmtes Zertifikat. Wählen Sie diese Option aus, damit Benutzer ihr eigenes Zertifikat auswählen können.
+        - **Abgeleitete**Anmelde Informationen: Verwenden Sie ein Zertifikat, das von der Smartcard eines Benutzers abgeleitet ist. Weitere Informationen finden Sie unter [verwenden abgeleiteter Anmelde Informationen in Microsoft InTune](../protect/derived-credentials.md).
+        - **Zertifikate**: Wählen Sie ein vorhandenes PKCS- oder SCEP-Zertifikatprofil aus, das zum Signieren von E-Mail-Nachrichten verwendet wird.
+      - **Benutzern das Ändern der Einstellung erlauben**: Wählen Sie **Aktivieren** aus, damit Benutzer das Verschlüsselungszertifikat ändern können. Mit der Option **Deaktivieren** (Standardeinstellung) wird verhindert, dass Benutzer das Verschlüsselungszertifikat ändern. Benutzer sind somit gezwungen, das von Ihnen konfigurierte Zertifikat zu verwenden.
+
+        Diese Funktion gilt für:  
+        - iOS 12 und höher
+        - iPadOS 12 und höher
+
 - **Anzahl der zu synchronisierenden E-Mails:** Wählen Sie die Anzahl an Tagen von E-Mails, die Sie synchronisieren möchten. Oder wählen Sie **Unbegrenzt**, um alle verfügbaren E-Mails zu synchronisieren.
-- **Verschieben von Nachrichten in andere E-Mail-Konten zulassen:** Mit der Option **Aktivieren** können Benutzer E-Mail-Nachrichten zwischen verschiedenen Konten verschieben, die auf ihrem Gerät konfiguriert sind.
-- **E-Mail-Versand aus Anwendungen von Drittanbietern zulassen:** Mit der Option **Aktivieren** können Benutzer dieses Profil als Standardkonto für das Senden von E-Mails verwenden. Dadurch können Anwendungen von Drittanbietern E-Mails in der nativen E-Mail-App öffnen, um beispielsweise Dateien an E-Mails anzuhängen.
-- **Kürzlich verwendete E-Mail-Adressen synchronisieren:** Wenn diese Option **aktiviert** ist, können Benutzer die Liste der E-Mail-Adressen, die vor Kurzem auf dem Gerät verwendet wurden, mit dem Server synchronisieren.
+- **Verschieben von Nachrichten in andere E-Mail-Konten zulassen**: Durch Festlegung der Option auf **Aktivieren** (Standardeinstellung) können Benutzer E-Mail-Nachrichten zwischen verschiedenen Konten verschieben, die auf ihrem Gerät konfiguriert sind.
+- **E-Mail-Versand aus Anwendungen von Drittanbietern zulassen**: Durch Festlegung der Option auf **Aktivieren** (Standardeinstellung) können Benutzer dieses Profil als Standardkonto für das Senden von E-Mails verwenden. Dadurch können Anwendungen von Drittanbietern E-Mails in der nativen E-Mail-App öffnen, um beispielsweise Dateien an E-Mails anzuhängen.
+- **Kürzlich verwendete E-Mail-Adressen synchronisieren**: Durch Festlegung der Option auf **Aktivieren** können Benutzer die Liste der vor Kurzem auf dem Gerät verwendeten E-Mail-Adressen mit dem Server synchronisieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

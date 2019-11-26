@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3552eca925865eb3278b50490a6b70ee5807e2b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b09b30fd32caace9ed3259350c01548d5e5fae15
+ms.sourcegitcommit: 93265c2491058afde7168134075bed77031b9311
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502449"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161595"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Erzwingen von Konformität auf mit Jamf Pro verwalteten Macs
 
@@ -37,12 +37,11 @@ Die Verfahren in diesem Artikel erfordern Zugriff auf die Intune- und Jamf Pro-K
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>Einrichten von Gerätekonformitätsrichtlinien in Intune
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und wechseln Sie zu**Gerätekonformität** > **Richtlinien**. 
-2. Wenn Sie eine zuvor erstellte Richtlinie verwenden, wählen Sie diese Richtlinie in der Konsole aus, und fahren Sie dann mit dem nächsten Schritt dieses Verfahrens fort.  
-   
-   Wählen Sie **Richtlinie erstellen** aus, und geben Sie dann Details für eine Richtlinie mit **macOS** als *Plattform* an. Konfigurieren Sie *Einstellungen* und *Aktionen bei Inkompatibilität*, um Ihre unternehmensinternen Anforderungen zu erfüllen, und klicken Sie dann zum Speichern der Richtlinie auf **Erstellen**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 
-3. Wählen Sie im Richtlinienbereich *Übersicht* die Option **Zuweisungen** aus. Verwenden Sie die verfügbaren Optionen, um zu konfigurieren, für welche Azure Active Directory-Benutzer und -Sicherheitsgruppen diese Richtlinie gelten soll. Die Jamf-Integration mit Intune unterstützt keine Konformitätsrichtlinien für Gerätegruppen. 
+2. Wählen Sie **Geräte** > **Konformitätsrichtlinien** aus. Wenn Sie eine zuvor erstellte Richtlinie verwenden, wählen Sie diese Richtlinie in der Konsole aus, und fahren Sie dann mit dem nächsten Schritt dieses Verfahrens fort. Wählen Sie **Richtlinie erstellen** aus, um eine neue Richtlinie zu erstellen, und geben Sie dann Details für eine Richtlinie mit **macOS** als *Plattform* an. Konfigurieren Sie *Einstellungen* und *Aktionen bei Inkompatibilität*, um Ihre unternehmensinternen Anforderungen zu erfüllen, und klicken Sie dann zum Speichern der Richtlinie auf **Erstellen**.
+
+3. Wählen Sie im Richtlinienbereich *Übersicht* die Option **Zuweisungen** aus. Verwenden Sie die verfügbaren Optionen, um zu konfigurieren, für welche Azure Active Directory-Benutzer und -Sicherheitsgruppen diese Richtlinie gelten soll. Die Jamf-Integration mit Intune unterstützt keine Konformitätsrichtlinien für Gerätegruppen.
 
 4. Wenn Sie auf **Speichern** klicken, wird die Richtlinie für die Benutzer bereitgestellt.  
 
@@ -103,7 +102,7 @@ Bei der Geräteregistrierung muss ein Gerätebenutzer die Intune-App „Unterneh
 
 Bestätigen Sie mithilfe der Jamf Pro-Konsole, dass Jamf Pro und Microsoft Intune erfolgreich miteinander kommunizieren. 
 
-- Wechseln Sie in Jamf Pro zu **Settings** > **Global Management** > **Microsoft Intune Integration** (Einstellungen -> Globale Verwaltung -> Microsoft Intune-Integration), und klicken Sie dann auf **Test**. 
+- Wechseln Sie in Jamf Pro zu **Settings** > **Global Management** > **Microsoft Intune Integration** (Einstellungen -> Globale Verwaltung -> Microsoft Intune-Integration), und klicken Sie dann auf **Test**.
 
     In der Konsole wird eine Meldung zum Erfolg oder Misserfolg der Verbindung angezeigt.  
 
@@ -112,7 +111,7 @@ Sollte der Verbindungstest in der Jamf Pro-Konsole fehlschlagen, überprüfen Si
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>Entfernen eines mit Jamf verwalteten Gerätes aus Intune
 
-Sie können ein von Jamf verwaltetes Gerät aus der Intune-Konsole entfernen, indem Sie **Löschen** in der Ansicht **Alle Geräte** auswählen. Die Massenlöschung von Geräten kann aktiviert werden, indem Sie mehrere Geräte auswählen und auf **Löschen** klicken.
+Öffnen Sie das Microsoft Endpoint Manager Admin Center, um ein mit Jamf verwaltetes Gerät zu entfernen, und wählen Sie **Geräte** > **Alle Geräte** aus. Wählen Sie dann **Löschen** aus.  Die Massenlöschung von Geräten kann aktiviert werden, indem Sie mehrere Geräte auswählen und auf **Löschen** klicken.
 
 Erfahren Sie, wie Sie [ein mit Jamf verwaltetes Gerät in den Jamf Pro-Dokumenten entfernen](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). Sie können auch ein Supportticket beim [Jamf-Support](https://www.jamf.com/support/) einreichen, wenn Sie zusätzliche Hilfe benötigen. 
 

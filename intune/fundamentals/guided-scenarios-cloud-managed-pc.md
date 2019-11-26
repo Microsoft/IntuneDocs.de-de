@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,24 +16,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3372fc83e467b08b479490b3707f2be03409156
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749324"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164562"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>Geführtes Szenario: Über die Cloud verwalteter moderner Desktop
 
-Der moderne Desktop ist die hochmoderne Produktivitätsplattform für den Information-Worker. Office 365 ProPlus und Windows 10 sind zusammen mit den neuesten Sicherheitsbaselines für Windows 10 und Windows Defender Advanced Threat Protection die Kernkomponenten des modernen Desktops. 
+Der moderne Desktop ist die hochmoderne Produktivitätsplattform für den Information-Worker. Office 365 ProPlus und Windows 10 sind zusammen mit den neuesten Sicherheitsbaselines für Windows 10 und Microsoft Defender Advanced Threat Protection die Kernkomponenten des modernen Desktops. 
 
 Die Verwaltung des modernen Desktops aus der Cloud bringt zusätzlichen Nutzen internetweiter Remoteaktionen. Die Cloudverwaltung nutzt die integrierten Richtlinien der Verwaltung mobiler Geräte für Windows und entfernt Abhängigkeiten von lokalen Active Directory-Gruppenrichtlinien. 
 
 Wenn Sie einen über die Cloud verwalteten modernen Desktop in Ihrem eigenen Unternehmen evaluieren möchten, definiert dieses geführte Szenario alle notwendigen Konfigurationen für eine Standardbereitstellung vor. In diesem geführten Szenario erstellen Sie eine sichere Umgebung, in der Sie die Funktionen der Geräteverwaltung von Intune ausprobieren können. 
 
 ## <a name="prerequisites"></a>Voraussetzungen
-- [Legen Sie die MDM-Autorität auf Intune fest:](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune) Die Einstellung für die Autorität zur Verwaltung mobiler Geräte (Mobile Device Management, MDM) bestimmt, wie Sie Ihre Geräte verwalten. Als IT-Administrator müssen Sie eine MDM-Autorität festlegen, damit Benutzer Geräte zur Verwaltung registrieren können.
-- Mindestens Microsoft 365 E3 (oder Microsoft 365 E5 für beste Sicherheit)
+- [Legen Sie die MDM-Autorität auf Intune fest](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune) – Die Einstellung für die Autorität für die Verwaltung mobiler Geräte (Mobile Device Management, MDM) bestimmt, wie Sie Ihre Geräte verwalten. Als IT-Administrator müssen Sie eine MDM-Autorität festlegen, damit Benutzer Geräte zur Verwaltung registrieren können.
+- Mindestens Microsoft 365 E3 (oder Microsoft 365 E5 für beste Sicherheit)
 - Windows 10 1903-Gerät (registriert mit Windows Autopilot für eine optimale Endbenutzererfahrung)
 - Intune-Administratorrechte sind erforderlich, um dieses geführte Szenario abzuschließen:
   - Gerätekonfiguration: Lesen, Erstellen, Löschen, Zuweisen und Aktualisieren
@@ -118,5 +118,5 @@ Sobald der Benutzer das Gerät mit Azure Active Directory verknüpft, werden die
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Wenn Sie Windows Defender Advanced Threat Detection verwenden, erstellen Sie eine [Intune-Konformitätsrichtlinie](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy), um eine Defender-Bedrohungsanalyse zur Erfüllung der Konformität zu verlangen.
+- Wenn Sie Microsoft Defender Advanced Threat Detection verwenden, erstellen Sie eine [Intune-Konformitätsrichtlinie](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy), um eine Defender-Bedrohungsanalyse zur Erfüllung der Konformität zu verlangen.
 - Erstellen Sie eine [gerätebasierte Richtlinie für bedingten Zugriff](~/protect/advanced-threat-protection.md#create-a-conditional-access-policy), um den Zugriff zu blockieren, wenn das Gerät die Konformität von Intune nicht erfüllt.

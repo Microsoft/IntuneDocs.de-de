@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 266786de3122f8886bb3ed310764459568e1df6a
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 04d35f49f9e07cb72a1fea92210b05e0a95ec256
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585358"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390807"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Festlegen von WLAN-Einstellungen für Geräte mit Android Enterprise und Android-Kioskgeräte in Microsoft Intune
+# <a name="add-wi-fi-settings-for-android-enterprise-dedicated-and-fully-managed-devices-in-microsoft-intune"></a>Hinzufügen von WLAN-Einstellungen für dedizierte und vollständig verwaltete Geräte unter Android in Microsoft InTune
 
-Sie können ein Profil mit bestimmten WLAN-Einstellungen erstellen und dieses dann auf Ihren Android Enterprise- und dedizierten Android-Geräten bereitstellen. Microsoft Intune bietet viele Features, darunter die Authentifizierung bei Ihrem Netzwerk mit einem vorinstallierten Schlüssel.
+Sie können ein Profil mit bestimmten WLAN-Einstellungen erstellen und dieses dann auf Ihren vollständig verwalteten Android Enterprise- und dedizierten Geräten bereitstellen. Microsoft Intune bietet viele Features, darunter die Authentifizierung bei Ihrem Netzwerk mit einem vorinstallierten Schlüssel.
 
 Dieser Artikel beschreibt diese Einstellungen. [Hinzufügen und Verwenden von WLAN-Einstellungen auf Microsoft Intune-Geräten](wi-fi-settings-configure.md) enthält weitere Informationen über die WLAN-Funktion in Microsoft Intune.
 
@@ -35,7 +35,7 @@ Dieser Artikel beschreibt diese Einstellungen. [Hinzufügen und Verwenden von WL
 
 ## <a name="device-owner-only"></a>Nur Gerätebesitzer
 
-Wählen Sie diese Option aus, wenn Sie ein dediziertes Android Enterprise-Gerät als Kiosk verwenden.
+Wählen Sie diese Option aus, wenn Sie ein dediziertes oder vollständig verwaltetes Android Enterprise-Gerät bereitstellen.  Dedizierte und vollständig verwaltete Android Enterprise-Geräte unterstützen derzeit die SCEP-Zertifikat Bereitstellung, aber keine Pkcs.
 
 ### <a name="basic"></a>Einfach
 
@@ -60,7 +60,7 @@ Wählen Sie diese Option aus, wenn Sie ein dediziertes Android Enterprise-Gerät
 
     - **Serververtrauensstellung** - **Stammzertifikat zur Servervalidierung**: Wählen Sie ein vorhandenes vertrauenswürdiges Stammzertifikatsprofil aus. Wenn sich der Client mit dem Netzwerk verbindet, wird dieses Zertifikat dem Server bereitgestellt und zur Authentifizierung der Verbindung verwendet.
 
-    - **Clientauthentifizierung** - **Clientzertifikat zur Clientauthentifizierung (Identitätszertifikat)** : Wählen Sie das SCEP- oder PKCS-Clientzertifikatsprofil aus, das auch auf dem Gerät bereitgestellt wird. Dieses Zertifikat ist die Identität, die das Gerät dem Server zur Authentifizierung der Verbindung bereitstellt.
+    - **Clientauthentifizierung** - **Clientzertifikat zur Clientauthentifizierung (Identitätszertifikat)** : Wählen Sie das SCEP-Clientzertifikatprofil aus, das auch auf dem Gerät bereitgestellt wird. Dieses Zertifikat ist die Identität, die das Gerät dem Server zur Authentifizierung der Verbindung bereitstellt.
 
     - **Identitätsschutz (äußere Identität)** : Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet wird. Dieser Text kann einen beliebigen Wert haben, z.B. `anonymous`. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.
 
@@ -77,7 +77,7 @@ Wählen Sie diese Option aus, wenn Sie ein dediziertes Android Enterprise-Gerät
           - **Microsoft CHAP (MS-CHAP)**
           - **Microsoft CHAP, Version 2 (MS-CHAP v2)**
 
-      - **Zertifikate**: Wählen Sie das SCEP- oder PKCS-Clientzertifikatsprofil aus, das auch auf dem Gerät bereitgestellt wird. Dieses Zertifikat ist die Identität, die das Gerät dem Server zur Authentifizierung der Verbindung bereitstellt.
+      - **Zertifikate**: Wählen Sie das SCEP-Clientzertifikatprofil aus, das auch auf dem Gerät bereitgestellt wird. Dieses Zertifikat ist die Identität, die das Gerät dem Server zur Authentifizierung der Verbindung bereitstellt.
 
       - **Identitätsschutz (äußere Identität)** : Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet wird. Dieser Text kann einen beliebigen Wert haben, z.B. `anonymous`. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.
 
@@ -93,7 +93,7 @@ Wählen Sie diese Option aus, wenn Sie ein dediziertes Android Enterprise-Gerät
           - **Keine**
           - **Microsoft CHAP, Version 2 (MS-CHAP v2)**
 
-      - **Zertifikate**: Wählen Sie das SCEP- oder PKCS-Clientzertifikatsprofil aus, das auch auf dem Gerät bereitgestellt wird. Dieses Zertifikat ist die Identität, die das Gerät dem Server zur Authentifizierung der Verbindung bereitstellt.
+      - **Zertifikate**: Wählen Sie das SCEP-Clientzertifikatprofil aus, das auch auf dem Gerät bereitgestellt wird. Dieses Zertifikat ist die Identität, die das Gerät dem Server zur Authentifizierung der Verbindung bereitstellt.
 
       - **Identitätsschutz (äußere Identität)** : Geben Sie den Text ein, der als Antwort auf eine EAP-Identitätsanforderung gesendet wird. Dieser Text kann einen beliebigen Wert haben, z.B. `anonymous`. Während der Authentifizierung wird zuerst diese anonyme Identität gesendet und anschließend die echte Kennung über einen sicheren Tunnel.
 

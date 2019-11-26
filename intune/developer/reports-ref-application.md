@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac40be5cf3d0a0a217340b3c745daf740a24e8e7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a4a8fa34673340e4adca7b64707d8c79d4808460
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490365"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74290951"
 ---
 # <a name="reference-for-application-entities"></a>Verweis für Anwendungsentitäten
 
-Die Kategorie **Anwendung** (Application) enthält Entitäten für mobile Geräte, die folgende Informationen nachverfolgen:
+Die Kategorie **Anwendung** enthält Entitäten für Geräte, die folgende Informationen nachverfolgen:
 
 - Version einer App
 - Installationsquelle einer App

@@ -18,18 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9802b85a9674535cea62ae28f135153352ef76c
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: aeae231e07ceeee6a54f8f60ec5d53cc96d55be0
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813269"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117882"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen (Line-of-Business, LOB) macOS-Apps zu Microsoft Intune
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Fügen Sie mithilfe der Informationen in diesem Artikel Microsoft Intune branchenspezifische macOS-Apps hinzu. Sie müssen ein externes Tool zur Vorverarbeitung Ihrer *PKG*-Dateien herunterladen, bevor Sie Ihre branchenspezifische Datei in Microsoft Intune hochladen können. Die Vorverarbeitung Ihrer *PKG*-Dateien muss auf einem macOS-Gerät erfolgen.
+
+> [!NOTE]
+> Ab dem Release von macOS Catalina 10.15: Überprüfen Sie vor dem Hinzufügen Ihrer Apps zu Intune, ob Ihre branchenspezifische macOS-Apps notariell beglaubigt sind. Wenn die Entwickler Ihrer branchenspezifischen Apps ihre Apps nicht beglaubigt haben, können die Apps nicht auf den macOS-Geräten Ihrer Benutzer ausgeführt werden. Weitere Informationen darüber, wie Sie überprüfen, ob eine App notariell beglaubigt ist, finden Sie unter [Notarielles Beglaubigen Ihrer macOS-Apps zur Vorbereitung für macOS Catalina](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Notarizing-your-macOS-apps-to-prepare-for-macOS/ba-p/808579).
 
 > [!NOTE]
 > Während Benutzer von macOS-Geräten einige der integrierten macOS-Apps wie Stocks und Maps entfernen können, können Sie diese Apps über Intune nicht erneut bereitstellen. Wenn Endbenutzer diese Apps löschen, müssen sie zum App Store navigieren und die Apps manuell erneut installieren.

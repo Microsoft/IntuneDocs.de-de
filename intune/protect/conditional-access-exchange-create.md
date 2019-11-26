@@ -6,28 +6,26 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
-ms.reviewer: stama
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18da57282a190dec363e3dfbde5293f5228cb0b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504620"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188472"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Erstellen einer Richtlinie für bedingten Zugriff auf Exchange lokal und das ältere Exchange Online Dedicated
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 In diesem Artikel wird erläutert, wie Sie den bedingten Zugriff für Exchange lokal basierend auf der Gerätekonformität konfigurieren.
 
@@ -46,7 +44,7 @@ Bevor Sie den bedingten Zugriff konfigurieren, überprüfen Sie, ob folgende Kon
 
 - Der Connector für eine Organisation mir Exchange lokal kann auf jedem Computer installiert werden, solange dieser Computer mit dem Exchange-Server kommunizieren kann.
 
-- Der Connector unterstützt die **Exchange-Clientzugriffsserver-Umgebung**. Intune unterstützt die direkte Installation des Connectors auf dem Exchange-CAS-Server. Aufgrund der zusätzlichen Last auf dem Server wird aber empfohlen, den Connector auf einem separaten Computer zu installieren. Sie müssen den Connector so konfigurieren, dass er mit einem der Exchange-Clientzugriffsserver kommuniziert.
+- Der Connector unterstützt die **Exchange-Clientzugriffsserver-Umgebung**. Intune unterstützt die direkte Installation des Connector auf dem Exchange-Clientzugriffsserver. Es wird empfohlen, die Installation auf einem separaten Computer durchzuführen, da der Connector den Server zusätzlich belastet. Sie müssen den Connector so konfigurieren, dass er mit einem der Exchange-Clientzugriffsserver kommuniziert.
 
 - **Exchange ActiveSync** muss für die zertifikatbasierte Authentifizierung oder die Eingabe von Anmeldeinformationen durch Benutzer konfiguriert werden.
 
@@ -60,7 +58,7 @@ Bevor Sie den bedingten Zugriff konfigurieren, überprüfen Sie, ob folgende Kon
 
 - Wenn das Gerät die Einstellungen für den bedingten Zugriff nicht erfüllt, erhält der Benutzer bei der Anmeldung eine der folgenden Meldungen:
   - Wenn das Gerät nicht bei Intune oder in Azure Active Directory registriert ist, wird eine Meldung mit Anweisungen zum Installieren der Unternehmensportal-App, zum Registrieren des Geräts und zum Aktivieren des E-Mail-Zugriffs angezeigt. Dieser Prozess verknüpft auch die Exchange ActiveSync-ID mit dem Eintrag des Geräts in Azure Active Directory.
-  - Wenn das Gerät nicht konform ist, wird eine Meldung angezeigt, die Benutzer zur Intune-Unternehmensportal-Website oder zur Unternehmensportal-App weiterleitet. Dort finden sie Informationen zum Problem und zu dessen Lösung.
+  - Wenn das Gerät nicht konform ist, wird eine Meldung angezeigt, die den Benutzer zur Website des Intune-Unternehmensportals oder zur Unternehmensportal-App führt. Im Unternehmensportal finden die Benutzer Informationen über das Problem und dessen Behebung.
 
 ### <a name="support-for-mobile-devices"></a>Unterstützung für mobile Geräte
 
@@ -70,7 +68,7 @@ Bevor Sie den bedingten Zugriff konfigurieren, überprüfen Sie, ob folgende Kon
 - EAS-E-Mail-Clients für **Android-Arbeitsprofilgeräte:** Nur **Gmail** und **Nine Work for Android Enterprise** im **Arbeitsprofil** werden auf Android-Arbeitsprofilgeräten unterstützt. Damit der bedingte Zugriff mit Android-Arbeitsprofilen funktioniert, müssen Sie ein E-Mail-Profil für die Gmail- oder Nine Work for Android Enterprise-App erstellen und diese Apps als erforderliche Installation bereitstellen.
 
 > [!NOTE]
-> Microsoft Outlook für Android und iOS wird nicht über den lokalen Exchange-Connector unterstützt. Wenn Sie Richtlinien für den bedingten Azure Active Directory-Zugriff und Intune-App-Schutzrichtlinien mit Outlook für iOS und Android für Ihre lokale Postfächer nutzen möchten, lesen Sie [Verwendung der modernen Hybridauthentifizierung mit Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
+> Microsoft Outlook für Android und iOS wird nicht über den lokalen Exchange-Connector unterstützt. Wenn Sie Richtlinien für den bedingten Azure Active Directory-Zugriff und Intune-App-Schutzrichtlinien mit Outlook für iOS und Android für Ihre lokale Postfächer nutzen möchten, lesen Sie [Verwendung der modernen Hybridauthentifizierung mit Outlook für iOS und Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).
 
 ### <a name="support-for-pcs"></a>Unterstützung für PCs
 
@@ -80,19 +78,19 @@ Die native **E-Mail**-Anwendung unter Windows 8.1 und höher (bei Registrierung 
 
 Bevor Sie das folgende Verfahren zum Einrichten der Zugriffssteuerung für Exchange lokal ausführen können, müssen Sie mindestens einen [Intune-Connector für Exchange lokal](exchange-connector-install.md) einrichten.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 
-2. Wechseln Sie zu **Exchange-Zugriff**, und klicken Sie auf **Zugriff auf Exchange lokal**. 
+2. Wechseln Sie zu **Mandantenverwaltung** > **Exchange-Zugriff**, und wählen Sie dann **Zugriff auf Exchange lokal** aus.
 
 3. Klicken Sie im Bereich **Zugriff auf Exchange lokal** auf die Option **Ja**, um *die Zugriffssteuerung von Exchange lokal zu aktivieren*.
 
-4. Klicken Sie unter **Zuweisung** auf **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen**, und wählen Sie mindestens eine Gruppe aus, um den Zugriff zu konfigurieren. 
+4. Klicken Sie unter **Zuweisung** auf **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen**, und wählen Sie mindestens eine Gruppe aus, um den Zugriff zu konfigurieren.
 
    Die Richtlinie für bedingten Zugriff für Exchange lokal wird auf die Mitglieder der von Ihnen ausgewählten Gruppen angewendet. Benutzer, die diese Richtlinie erhalten, müssen ihre Geräte bei Intune registrieren und die Anforderungen der Konformitätsprofile erfüllen, bevor sie auf Exchange lokal zugreifen können.
 
 5. Um Gruppen auszuschließen, klicken Sie auf **Wählen Sie die Gruppen aus, die ausgeschlossen werden sollen**, und wählen Sie mindestens eine Gruppe aus, die für den Zugriff auf Exchange lokal von den Anforderungen zum Registrieren von Geräten und Einhalten der Konformitätsprofile ausgenommen werden sollen. 
 
-6. Als Nächstes konfigurieren Sie Einstellungen für den Intune-Connector für Exchange lokal.  Klicken Sie im **Exchange-Zugriffsbereich** unter **Setup** auf **Lokaler Connector für Exchange ActiveSync**, und wählen Sie den Connector für die Exchange-Organisation aus, den Sie konfigurieren möchten.
+6. Als Nächstes konfigurieren Sie Einstellungen für den Intune-Connector für Exchange lokal.  Klicken Sie im Fenster *Zugriff auf Exchange lokal* unter **Setup** auf **Lokaler Connector für Exchange ActiveSync**, und wählen Sie den Connector für die Exchange-Organisation aus, den Sie konfigurieren möchten.
 
 7. Klicken Sie unter **Einstellungen** auf **Benutzerbenachrichtigungen**, um die Standard-E-Mail-Nachricht zu ändern, die an Benutzer gesendet wird, wenn diese auf Exchange lokal zugreifen möchten, ihre Geräte aber nicht konform sind. Die Nachrichtenvorlage verwendet Markupsprache.  Sie sehen während der Eingabe auch eine Vorschau der Nachricht.
    > [!TIP]
@@ -120,6 +118,6 @@ Bevor Sie das folgende Verfahren zum Einrichten der Zugriffssteuerung für Excha
 
 Als Nächstes erstellen Sie eine Konformitätsrichtlinie und weisen diese den Benutzern in Intune zu, um ihre mobilen Geräte auszuwerten. Siehe [Erste Schritte mit der Gerätekonformität](device-compliance-get-started.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="next-steps"></a>Nächste Schritte
 
 [Problembehandlung für den Intune-Connector für Exchange lokal in Microsoft Intune](https://support.microsoft.com/help/4471887)

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a5bcdf9c3218df91bea85858ea21e88718e81633
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0fafe7c17c698a5eb4e5ad6825bee0ae3fe874c2
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498313"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199235"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Zurücksetzen nur von Unternehmensdaten in einer in Intune verwalteten App
 
@@ -44,23 +44,12 @@ WIP-Richtlinien (Windows Information Protection) können bereitgestellt werden, 
 
 ## <a name="create-a-wipe-request"></a>Erstellen einer Zurücksetzungsanforderung
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-
-2. Wählen Sie **Alle Dienste** aus, geben Sie in das Filtertextfeld **Intune** ein, und wählen Sie **Intune** aus. Der Intune-Bereich wird geöffnet. Wählen Sie darin den Bereich **Client-Apps** aus.
-
-    ![Screenshot des Bereichs „Microsoft Intune“](./media/apps-selective-wipe/apps-selective-wipe01.png)
-
-3. Wählen Sie im Bereich **Client-Apps** die Option **Selektive App-Zurücksetzung** aus.
-
-4. Wählen Sie **Neue Zurücksetzungsanforderung** aus. Dadurch wird der Bereich **Neue Zurücksetzungsanforderung** geöffnet.
-
-    ![Screenshot des Bereichs „Neue Zurücksetzungsanforderung“](./media/apps-selective-wipe/AzurePortal_MAM_NewWipeRequest.png)
-
-5. Markieren Sie einen Benutzer, und klicken Sie dann auf **Auswählen**, um den Benutzer auszuwählen, dessen App-Daten Sie zurücksetzen möchten.
-
-6. Wählen Sie anschließend im Bereich **Neue Zurücksetzungsanforderung** die Option **Gerät** aus. Damit wird der Bereich **Gerät auswählen** geöffnet, in dem alle Geräte aufgeführt werden, die dem ausgewählten Benutzer zugeordnet sind. Der Bereich enthält zwei Spalten: eine mit dem Gerätenamen – einem vom Benutzer festgelegten Anzeigenamen – und eine mit dem Gerätetyp und der Geräteplattform. Wählen Sie das Gerät aus, das zurückgesetzt werden soll.
-
-7. Sie befinden sich nun wieder im Bereich **Neue Zurücksetzungsanforderung**. Klicken Sie auf **OK**, um eine Zurücksetzungsanforderung zu erstellen.
+1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
+2. Wählen Sie im Intune-Bereich **Client-Apps** > **Selektive App-Zurücksetzung** > **Zurücksetzungsanforderung erstellen** aus.<br>
+   Der Bereich **Zurücksetzungsanforderung erstellen** wird angezeigt.
+3. Klicken Sie auf **Wählen Sie den Benutzer aus**, wählen Sie den Benutzer aus, dessen App-Daten Sie löschen möchten, und klicken Sie dann unten im Bereich **Benutzer** auf **Auswählen**.
+4. Klicken Sie auf **Wählen Sie das Gerät aus**, wählen Sie das Gerät aus, und klicken Sie dann unten im Bereich **Gerät auswählen** auf **Auswählen**.
+5. Klicken Sie auf **Erstellen**, um eine Zurücksetzungsanforderung zu erstellen.
 
 Der Dienst erstellt für jede geschützte App auf dem Gerät und den zugeordneten Benutzer eine separate Zurücksetzungsanforderung und überwacht diese.
 
