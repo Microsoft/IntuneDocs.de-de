@@ -16,6 +16,8 @@
           href: whats-new-app-ui.md
         - name: Features in der Entwicklung
           href: in-development.md
+        - name: Wichtige Hinweise
+          href: 'whats-new.md#notices'
 - name: Schnellstarts
   items:
     - name: Intune kostenlos testen
