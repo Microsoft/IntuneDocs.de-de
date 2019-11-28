@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99e89db1bbef3d08cd6709b2600c4a684ac618f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c1e8e37a784ea39fbf1154321933673ed02eee33
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498614"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540747"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Zuweisen von Apps zu Gruppen mit Microsoft Intune
 
@@ -94,35 +94,23 @@ Verwenden Sie die folgende Tabelle, um die resultierende Absicht bei einem entst
 | Absicht Gruppe 1 | Absicht Gruppe 2 | Resultierende Absicht |
 |-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Erforderlicher Benutzer|Verfügbarer Benutzer|Erforderlich und Verfügbar|
-|Erforderlicher Benutzer|Benutzer nicht verfügbar|Erforderlich|
 |Erforderlicher Benutzer|Benutzerdeinstallation|Erforderlich|
-|Verfügbarer Benutzer|Benutzer nicht verfügbar|Nicht verfügbar|
 |Verfügbarer Benutzer|Benutzerdeinstallation|Deinstallieren|
-|Benutzer nicht verfügbar|Benutzerdeinstallation|Deinstallieren
 |Erforderlicher Benutzer|Erforderliches Gerät|Beides vorhanden, Intune behandelt Erforderliches
 |Erforderlicher Benutzer|Gerätedeinstallation|Beides vorhanden, Intune löst Erforderliches auf
 |Verfügbarer Benutzer|Erforderliches Gerät|Beides vorhanden, Intune löst Erforderliches auf (Erforderlich und Verfügbar)
 |Verfügbarer Benutzer|Gerätedeinstallation|Beides vorhanden, Intune löst Verfügbares auf<br><br>App wird im Unternehmensportal angezeigt.<br><br>Wenn die App bereits installiert wurde (als erforderliche App mit vorheriger Absicht), wird die App deinstalliert.<br><br>Wenn der Benutzer **Über das Unternehmensportal installieren** auswählt, wird die App installiert und die Deinstallationsabsicht nicht berücksichtigt.|
-|Benutzer nicht verfügbar|Erforderliches Gerät|Erforderlich|
-|Benutzer nicht verfügbar|Gerätedeinstallation|Deinstallieren|
 |Benutzerdeinstallation|Erforderliches Gerät|Beides vorhanden, Intune löst Erforderliches auf|
 |Benutzerdeinstallation|Gerätedeinstallation|Beides vorhanden, Intune löst Deinstallation auf|
 |Erforderliches Gerät|Gerätedeinstallation|Erforderlich|
 |Erforderlicher und verfügbarer Benutzer|Verfügbarer Benutzer|Erforderlich und Verfügbar|
 |Erforderlicher und verfügbarer Benutzer|Benutzerdeinstallation|Erforderlich und Verfügbar|
-|Erforderlicher und verfügbarer Benutzer|Benutzer nicht verfügbar|Erforderlich und Verfügbar|
 |Erforderlicher und verfügbarer Benutzer|Erforderliches Gerät|Beides vorhanden, erforderlich und verfügbar
-|Erforderlicher und verfügbarer Benutzer|Gerät nicht verfügbar|Erforderlich und Verfügbar|
 |Erforderlicher und verfügbarer Benutzer|Gerätedeinstallation|Beides vorhanden, Intune löst Erforderliches auf (Erforderlich und Verfügbar)
-|Benutzer nicht verfügbar|Gerät nicht verfügbar|Nicht verfügbar|
-|Verfügbarer Benutzer|Gerät nicht verfügbar|Verfügbar|
-|Erforderlicher Benutzer|Gerät nicht verfügbar|Erforderlich|
 |Benutzer verfügbar ohne Registrierung|Erforderlicher und verfügbarer Benutzer|Erforderlich und Verfügbar
 |Benutzer verfügbar ohne Registrierung|Erforderlicher Benutzer|Erforderlich
-|Benutzer verfügbar ohne Registrierung|Benutzer nicht verfügbar|Nicht verfügbar
 |Benutzer verfügbar ohne Registrierung|Verfügbarer Benutzer|Verfügbar|
 |Benutzer verfügbar ohne Registrierung|Erforderliches Gerät|Erforderlich und verfügbar ohne Registrierung|
-|Benutzer verfügbar ohne Registrierung|Gerät nicht verfügbar|Verfügbar ohne Registrierung|
 |Benutzer verfügbar ohne Registrierung|Gerätedeinstallation|Deinstallation und verfügbar ohne Registrierung.<br><br>Wenn der Benutzer die App nicht über das Unternehmensportal installiert hat, wird die Deinstallation berücksichtigt.<br><br>Wenn der Benutzer die App über das Unternehmensportal installiert, wird die Installation gegenüber der Deinstallation bevorzugt.|
 
 > [!NOTE]
