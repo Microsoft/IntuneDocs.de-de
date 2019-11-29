@@ -4,17 +4,37 @@ description: Includedatei
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: include
-ms.date: 11/4/2019
+ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 3d49d31ed08683508d3d231521e578688dd21bac
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: b59419be9f381a1c646a7778b73ed172526f6ef6
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74125483"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188437"
 ---
 Diese Hinweise enthalten wichtige Informationen, die Ihnen bei der Vorbereitung auf künftige Änderungen und Features im Zusammenhang mit Intune helfen können.
+
+### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Aktualisieren Ihrer Intune Outlook-App-Schutzrichtlinien (APP)<!--2576686-->
+Sie sollten Maßnahmen ergreifen, wenn Sie MC195618 über Ihr Nachrichtencenter erhalten haben. Wie in den Feature IDs 56325 und 56326 der Microsoft 365-Roadmap geteilt, stellen Intune und Outlook für iOS und Android Unterstützung zur Einschränkung sensibler Daten in E-Mail-Benachrichtigungen und Kalendererinnerungen bereit. Als Folge dieser Verbesserungen entfernt Outlook für iOS und Android die Unterstützung für einige Konfigurationsschlüssel von Datenschutz-Apps, die Sie aktuell zum Verwalten von Benachrichtigungen nutzen.
+
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
+Die neuen Features wurden noch nicht übermittelt. Wenn dies jedoch der Fall ist, funktionieren die folgenden App-Konfigurationsschlüssel nicht länger in Outlook für iOS und Android:
+- com.microsoft.outlook.Mail.NotificationsEnabled
+- com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed
+- com.microsoft.outlook.Calendar.NotificationsEnabled
+- com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
+Es wird als Vorbereitung für dieses Feature empfohlen, die Datenschutzeinstellung „Benachrichtigungen zu Organisationsdaten“ für die Intune-App-Schutzrichtlinie mit dem Wert „Organisationsdaten blockieren“ zu konfigurieren. Ab 16. Dezember 2019 respektiert Outlook für iOS und Android die Datenschutzeinstellung „Benachrichtigungen zu Organisationsdaten“ und unterstützt nicht länger die oben genannten Schlüssel. Durch Konfiguration dieser neuen Einstellung wird sichergestellt, dass sensible Daten nicht kompromittiert werden, wenn die oben genannten Konfigurationsschlüssel nicht länger unterstützt werden. Zusätzlich stellt Outlook zusätzliche Granularität bereit, wenn die Datenschutzeinstellung „Benachrichtigungen zu Organisationsdaten“ auf „Organisationsdaten blockieren“ mit der zusätzlichen App-Konfigurationseinstellung „Kalenderbenachrichtigungen“ festgelegt wird. Die Konfiguration aus der Einstellung für die App-Schutzrichtlinie und der App-Konfigurationseinstellung reduziert sensible Informationen in E-Mail-Benachrichtigungen, während sensible Informationen in Kalenderbenachrichtigung verfügbar gemacht werden. So können Benutzer Ihre Termine auf einem Blick auf die Benachrichtigung oder in die Mitteilungszentrale sehen.
+
+#### <a name="additional-information"></a>Zusätzliche Informationen
+Weitere Informationen zu APP-Einstellungen und Outlook-Einstellungen finden Sie hier:
+- [Einstellungen für App-Schutzrichtlinien für Android](../apps/app-protection-policy-settings-android.md)
+- [Einstellungen für die App-Schutzrichtlinie für iOS](../apps/app-protection-policy-settings-ios.md)
+- [Bereitstellen von Outlook für iOS- und Android-App-Konfigurationseinstellungen](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune)
+
 
 ### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune-Plan für die Änderung: Windows 10, Version 1703: für das Unternehmensportal wird die Unterstützung entfernt<!--5026679-->
 Windows 10, Version 1703 (auch als Windows 10 RS2 bekannt) wurde am 8. Oktober 2019 für Enterprise- und EDU-Editionen aus dem Betrieb genommen. Intune beendet die Unterstützung für die entsprechende Unternehmensportal-App für RS2/RS1 ab dem 26. Dezember 2019.
@@ -40,7 +60,7 @@ Am 31. März 2020 wird Intune Managed Browser aus der Azure-Konsole entfernt. Da
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten? 
 Um einen reibungslosen Übergang vom Intune Managed Browser zu Microsoft Edge sicherzustellen, empfiehlt es sich, die folgenden Schritte proaktiv auszuführen: 
 
-1. Legen Sie für Microsoft Edge für iOS und Android App-Schutzrichtlinien (auch als MAM bezeichnet) sowie Konfigurationseinstellungen für Apps fest. Sie können Intune Managed Browser-Richtlinien für Microsoft Edge nochmals verwenden, indem Sie einfach die vorhandenen Richtlinien auch auf Microsoft Edge ausrichten.  
+1. Legen Sie für Microsoft Edge für iOS und Android App-Schutzrichtlinien (auch als MAM bezeichnet) sowie Konfigurationseinstellungen für Apps fest. Sie können Intune Managed Browser-Richtlinien für Microsoft Edge nochmals verwenden, indem Sie die vorhandenen Richtlinien auch auf Microsoft Edge ausrichten.  
 2. Stellen Sie sicher, dass alle mit MAM geschützten Apps in Ihrer Umgebung über die gleiche App-Schutzrichtlinieneinstellung verfügen „Übertragung von Webinhalten mit anderen Apps einschränken:“ muss auf „Mit Richtlinien verwaltete Browser“ festgelegt sein. 
 3. Legen Sie für alle mit MAM geschützten Apps die Konfigurationseinstellung „com.microsoft.intune.useEdge“ für verwaltete Apps auf „true“ (wahr) fest. Mit dem Release von Version 1911 nächsten Monat können Sie die Schritte 2 und 3 leicht durchführen, indem Sie für die Einstellung „Übertragung von Webinhalten mit anderen Apps einschränken“ die Option „Microsoft Edge“ über den Bereich „Datenschutz“ in Ihren App-Schutzrichtlinien festlegen. 
 
@@ -48,7 +68,6 @@ Die Unterstützung für Webclips unter iOS und Android ist bald verfügbar. Wenn
 
 #### <a name="additional-information"></a>Zusätzliche Informationen
 Weitere Informationen finden Sie in unserer Dokumentation zur [Verwendung von Microsoft Edge mit App-Schutzrichtlinien](../apps/manage-microsoft-edge.md) oder in unserem [Blogbeitrag zur Unterstützung](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269).
-
 
 ### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>Stellen Sie sich auf eine Änderung ein: Aktualisierte Registrierung von dedizierten Android Enterprise-Geräten in Intune<!--5198878-->
 Mit dem Novemberrelease (1911-Release) in Intune erhalten dedizierte Android Enterprise-Geräte mehr Unterstützung für die Bereitstellung von SCEP-Gerätezertifikaten, um den zertifikatbasierten Zugriff auf WLAN-Profile zu ermöglichen. Diese Änderung umfasst auch einige geringfügige Änderungen am Flow bei der Registrierung von dedizierten Android Enterprise-Geräten.
@@ -65,23 +84,9 @@ Planen Sie die Aktualisierung Ihres Endbenutzer-Leitfadens, und informieren Sie 
 #### <a name="additional-information"></a>Zusätzliche Informationen
 [https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
-### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>Stellen Sie sich auf eine Änderung ein: Die Einstellung „Serverseitige Protokollierung für Siri-Befehle“ wird aus der Intune-Konsole entfernt. <!-- 5468501-->
-
-Wir planen, mit dem November-Update für den Intune-Dienst die Einstellung „Serverseitige Protokollierung für Siri-Befehle“ aus der Intune-Konsole zu entfernen. Diese Änderung erfolgt in Übereinstimmung mit Apple, da diese Einstellung seitens Apple bereits entfernt wurde.
-
-#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Wenn Mitte November das November-Update (1911) bereitgestellt wird, werden Sie feststellen, dass diese Einstellung aus dem Intune-Konsolenmenü „Geräteeinschränkungen (integrierte Apps)“ für iOS-Konfigurationsprofile entfernt wurde. Die Einstellung wird möglicherweise noch in Ihren Richtlinien und im Verwaltungsprofil des Zielgeräts angezeigt, wird aber nicht auf das Gerät angewendet. Wir erwarten keine größeren Auswirkungen auf die Funktionalität, da die Einstellung auf Geräten derzeit nicht funktioniert, auch wenn sie im Verwaltungsprofil angezeigt wird.
-
-Sie können aus zwei Möglichkeiten auswählen:
-- Wenn Sie diese Einstellung aus Ihren Richtlinien löschen möchten, wechseln Sie zu dem Profil, in dem die Einstellung vorhanden ist, nehmen eine kleine Änderung vor und speichern das Profil. Die Richtlinie wird im Back-End neu berechnet, und die Einstellung wird aus der Richtlinie gelöscht.
-- Wenn Sie diese Maßnahme nicht durchführen, wird diese Einstellung den Endbenutzern im Verwaltungsprofil auf ihren Geräten angezeigt, hat jedoch keine Auswirkungen.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wie kann ich mich auf die Änderung vorbereiten?
-Sie können entsprechend dem obigen Abschnitt Maßnahmen ergreifen oder Ihre Richtlinie unverändert beibehalten. Wir werden die Seite mit Neuerungen und die Dokumentation aktualisieren, wenn das Rollout dieser Änderung erfolgt.
-
 ### <a name="end-of-support-for-legacy-pc-management"></a>Ende der Unterstützung für die Legacy-PC-Verwaltung
 
-Legacy-PC-Verwaltungsfunktionen werden ab 15. Oktober 2020 nicht mehr unterstützt. Führen Sie ein Upgrade der Geräte auf Windows 10 aus, und registrieren Sie die Geräte neu als MDM-Geräte, um diese weiterhin in Intune zu verwalten.
+Legacy-PC-Verwaltungsfunktionen werden ab 15. Oktober 2020 nicht mehr unterstützt. Führen Sie ein Upgrade der Geräte auf Windows 10 aus, und registrieren Sie die Geräte neu als Geräte der Verwaltung mobiler Geräte (MDM), um diese weiterhin in Intune zu verwalten.
 
 [Erfahren Sie mehr](https://go.microsoft.com/fwlink/?linkid=2107122)
 
@@ -93,7 +98,7 @@ Diese Änderungen von Google haben für Intune-Benutzer diese Folgen:
 - Intune kann nur noch bis einschließlich Sommer 2020 Unterstützung für vom Geräteadministrator verwaltete Android-Geräte bieten, die unter Android 10 und höher (auch als Android Q bekannt) ausgeführt werden. Der Stichtag ist das Datum, an dem die nächste Hauptversion von Android veröffentlicht werden soll.   
 - Vom Geräteadministrator verwaltete Geräte, auf denen nach dem Sommer 2020 Android 10 oder höher ausgeführt wird, können nicht mehr vollständig verwaltet werden.       
 - Vom Geräteadministrator verwaltete Android-Geräte, auf denen Android-Versionen unter 10 ausgeführt werden, sind nicht betroffen und können weiterhin vollständig mit dem Geräteadministrator verwaltet werden.    
-- Für alle Geräte unter Android 10 und höher hat Google für Geräteadministratorverwaltung-Agents – wie z. B. das Unternehmensportal – die Möglichkeit beschränkt, auf Gerätebezeichnerinformationen zuzugreifen. Dies wirkt sich nach Geräteupdates auf Android 10 oder höher auf die folgenden Intune-Features wie folgt aus:  
+- Für alle Geräte unter Android 10 und höher hat Google für Geräteadministratorverwaltung-Agents – wie z. B. das Unternehmensportal – die Möglichkeit beschränkt, auf Gerätebezeichnerinformationen zuzugreifen. Diese Einschränkung wirkt sich nach Geräteupdates auf Android 10 oder höher auf die folgenden Intune-Features wie folgt aus:  
     - Die Netzwerkzugriffssteuerung für VPN funktioniert nicht mehr.   
     - Die Identifizierung von Geräten mit IMEI oder Seriennummer als unternehmenseigen kennzeichnet Geräte nicht automatisch als unternehmenseigen.  
     - IMEI und Seriennummer sind für IT-Administratoren in Intune nicht mehr sichtbar. 
@@ -108,31 +113,6 @@ Um Einschränkungen der Funktionalität zu vermeiden, die ab Sommer 2020 eintre
 #### <a name="additional-information"></a>Zusätzliche Informationen
 - [Google-Leitfaden für die Migration vom Geräteadministrator zu Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf)
 - [Google-Dokumentation zum Plan, die Geräteadministrator-API als veraltet zu kennzeichnen](https://developers.google.com/android/work/device-admin-deprecation)
-
-### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>Aktualisieren Ihrer Android-Unternehmensportal-App auf die neueste Version <!--4536963-->
-Intune veröffentlicht regelmäßig Versionsupdates für die Android-Unternehmensportal-App. Im November 2018 haben wir ein Unternehmensportal-Update veröffentlicht, das einen Back-End-Switch zur Vorbereitung auf den Wechsel von Google von der vorhandenen Benachrichtigungsplattform zum Google Firebase Cloud Messaging (FCM) enthielt. Wenn Google seine vorhandene Benachrichtigungsplattform außer Betrieb nimmt und zu FCM wechselt, müssen Endbenutzer ihre Unternehmensportal-App mindestens auf die Version von November 2018 aktualisiert haben, damit sie weiterhin mit dem Google Play Store kommunizieren können.
-
-#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Unsere Telemetrie gibt an, dass Sie Geräte mit einer Unternehmensportal-Version vor 5.0.4269.0 haben. Wenn die Unternehmensportal-App nicht in dieser oder einer höheren Version installiert ist, funktionieren von IT-Experten initiierte Geräteaktionen wie Zurücksetzen des Geräts, Zurücksetzen von Kennwörtern, verfügbare und erforderliche App-Installationen sowie Zertifikatregistrierung möglicherweise nicht wie erwartet. Wenn Ihre Geräte in Intune für die mobile Geräteverwaltung registriert wurden, können Sie die Versionen und Benutzer des Unternehmensportals anzeigen, indem Sie zu „Client-Apps“ > „Ermittelte Apps“ wechseln. Durch Auswählen früherer Versionen der Unternehmensportal-App können Sie sehen, welche Endbenutzer über Geräte verfügen, bei denen die Unternehmensportal-App noch nicht aktualisiert wurde.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
-Bitten Sie Endbenutzer von Android-Geräten, die noch kein Update ausgeführt haben, die Unternehmensportal-App über Google Play zu aktualisieren. Benachrichtigen Sie Ihren Helpdesk, wenn ein Benutzer die automatische Aktualisierung der Unternehmensportal-App nicht durchgeführt hat. Über den Link in *Zusätzliche Informationen* finden Sie weitere Informationen zur FCM-Plattform und dem Wechsel von Google.
-
-#### <a name="additional-information"></a>Zusätzliche Informationen
-https://firebase.google.com/docs/cloud-messaging/
-
-
-### <a name="new-full-screen-experience-coming-to-intune---4593669--"></a>Neue Vollbild-Benutzeroberfläche für Intune <!--4593669-->
-Wir führen im Azure-Portal aktualisierte Benutzeroberflächen für Intune zum Erstellen und Bearbeiten ein. Diese neuen Oberflächen vereinfachen die vorhandenen Workflows, indem die Funktionen im Stil eines Assistenten auf einem einzigen Blatt zusammengefasst werden. Dank dieses Updates müssen Sie nicht mehr auf mehreren Blättern arbeiten und verschiedene Detailinformationen anzeigen, um Erstellungs- oder Bearbeitungsvorgänge durchzuführen. Die Workflows zum Erstellen werden ebenfalls aktualisiert und enthalten Zuweisungen (mit Ausnahme von App-Zuweisungen).
-
-#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Die Vollbild-Benutzeroberfläche für Intune wird in den kommenden Monaten sowohl in „portal.azure.com“ als auch in „devicemanagement.microsoft.com“ eingeführt. Dieses Update der Benutzeroberfläche wirkt sich nicht auf die Funktionsweise Ihrer vorhandenen Richtlinien und Profile aus, Sie werden aber feststellen, dass der Workflow leicht verändert wurde. Beim Erstellen neuer Richtlinien können Sie beispielsweise einige Zuweisungen bereits im Rahmen dieses Flows statt erst nach dem Erstellen der Richtlinie festlegen. Screenshots der neuen Benutzeroberfläche in der Konsole finden Sie im Blogbeitrag unter *Weitere Informationen*.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>Wie kann ich mich auf die Änderung vorbereiten?
-Sie müssen keine Maßnahmen ergreifen, sollten aber bei Bedarf Ihre Leitfäden für IT-Experten aktualisieren. Wir werden unsere Dokumentation aktualisieren, wenn diese Benutzeroberfläche auf den verschiedenen Blättern für Intune im Azure-Portal eingeführt wird.
-
-#### <a name="additional-information"></a>Zusätzliche Informationen 
-https://aka.ms/intune_fullscreen
 
 ### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>Stellen Sie sich auf eine Änderung ein: Intune App SDK und App-Schutzrichtlinien für Android werden Android 5.0 und höher in einem zukünftigen Release unterstützen. <!--4911065 -->
 Intune wird Android 5.x (Lollipop) und höher in einem zukünftigen Release unterstützen. Aktualisieren Sie alle umschließenden Apps mit dem neuesten Intune App SDK, und aktualisieren Sie Ihre Geräte.
@@ -171,3 +151,5 @@ Wir empfehlen Ihrer Organisation, so schnell wie möglich folgenden Aktionsplan 
 - Übertragen Sie vorhandene ältere Geräte, die über den Intune-Softwareclient verwaltet werden, in die von Microsoft empfohlene Lösung, um Windows 10 über MDM zu verwalten. Registrieren Sie alle neuen Windows 10-PCs über MDM für Intune im Azure-Portal.
 
 Weitere Informationen finden Sie in [diesem Blogbeitrag](https://aka.ms/Windows7_Intune).
+
+

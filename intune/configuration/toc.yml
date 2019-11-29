@@ -14,7 +14,11 @@
     - name: Erstellen eines Profils
       href: device-profile-create.md
     - name: Administrative Vorlagen auf Windows
-      href: administrative-templates-windows.md
+      items:
+        - name: Administrative Vorlagen auf Windows
+          href: administrative-templates-windows.md
+        - name: Aktualisieren von Office mithilfe administrativer Vorlagen
+          href: administrative-templates-update-office.md
     - name: Gerätefeatures auf iOS und macOS
       href: device-features-configure.md
     - name: Einschränken von Geräteeinstellungen und -funktionen
@@ -47,6 +51,8 @@
       items:
         - name: WLAN mit einem vorinstallierten Schlüssel
           href: wi-fi-profile-shared-key.md
+        - name: WLAN-Problembehandlung
+          href: troubleshoot-wi-fi-profiles.md
     - name: Erweiterungen unter macOS
       href: kernel-extensions-overview-macos.md
     - name: 'Microsoft Education: Prüfungs-App'

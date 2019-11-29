@@ -47,7 +47,7 @@ Die [Übersicht über App-Schutzrichtlinien](~/apps/app-protection-policy.md) un
 
 Sie können die App-Schutzrichtlinien verwenden, um zu verhindern, dass Benutzer Arbeitsdateien an ungeschützten Speicherorten speichern. Außerdem können Sie das Verschieben von Daten in andere Apps einschränken, die nicht durch App-Schutzrichtlinien geschützt sind. Einstellungen für App-Schutzrichtlinien:
 - Richtlinien zur Datenverschiebung wie „Speichern unter“ verhindern und „Ausschneiden“, „Kopieren und Einfügen“ einschränken.
-- Zugriffsrichtlinieneinstellungen, die eine einfache PIN für den Zugriff erfordern, und verhindern, dass verwaltete Apps auf Geräten mit Jailbreak oder Rootzugriff ausgeführt werden
+- Zugriffsrichtlinieneinstellungen, die eine einfache PIN für den Zugriff erfordern und verhindern, dass verwaltete Apps auf Geräten mit Jailbreak oder Rootzugriff ausgeführt werden
 
 Mit App-basiertem bedingten Zugriff und der Verwaltung von Client-Apps wird eine Sicherheitsschicht hinzugefügt, indem sichergestellt wird, dass nur Client-Apps, die Intune-App-Schutzrichtlinien unterstützen, auf Exchange Online und andere Office 365-Dienste zugreifen können.
 
@@ -69,11 +69,11 @@ Sie benötigen die folgenden Intune-Administrationsberechtigungen:
 
 Wenn Sie das geführte Szenario **Intune-App-Schutz** befolgen, verhindern Sie, dass Daten außerhalb Ihres Unternehmens geteilt oder weitergegeben werden. 
 
-Zugewiesene iOS- und Android-Benutzer müssen bei jedem Öffnen einer Office-App eine PIN eingeben. Nach 5 fehlgeschlagenen Versuchen die PIN einzugeben, müssen die Benutzer ihre PIN zurücksetzen. Wenn Sie bereits eine Geräte-PIN anfordern, werden die Benutzer nicht beeinträchtigt.
+Zugewiesene iOS- und Android-Benutzer müssen bei jedem Öffnen einer Office-App eine PIN eingeben. Nach fünf fehlgeschlagenen Versuchen der PIN-Eingabe müssen die Benutzer ihre PIN zurücksetzen. Wenn Sie bereits eine Geräte-PIN anfordern, werden die Benutzer nicht beeinträchtigt.
 
 ### <a name="what-you-will-need-to-continue"></a>Voraussetzungen zum Fortfahren
 
-Sie werden nach den Apps gefragt, die Ihre Benutzer benötigen, und was Sie für den Zugriff darauf benötigen. Stellen Sie sicher, dass Sie die folgenden Informationen zur Hand haben:
+Sie werden gefragt, welche Apps Ihre Benutzer brauchen und was sie für den Zugriff darauf benötigen. Stellen Sie sicher, dass Sie die folgenden Informationen zur Hand haben:
 - Liste der Office-Apps, die für die Verwendung in Unternehmen zugelassen sind.
 - Alle PIN-Anforderungen für den Start von genehmigten Apps auf nicht verwalteten Geräten.
 
@@ -103,7 +103,7 @@ Wenn Sie die Apps ausgewählt haben, klicken Sie auf **Weiter**.
 
 ## <a name="step-4---configuration"></a>Schritt 4: Konfiguration
 
-In diesem Schritt müssen Sie die Anforderungen für den Zugriff und die gemeinsame Nutzung der Unternehmensdateien und E-Mails in diesen Apps konfigurieren. Standardmäßig können Benutzer Daten in die OneDrive- und SharePoint-Konten Ihres Unternehmens speichern.
+In diesem Schritt müssen Sie die Anforderungen für den Zugriff und die gemeinsame Nutzung der Unternehmensdateien und E-Mails in diesen Apps konfigurieren. Standardmäßig können Benutzer Daten in den OneDrive- und SharePoint-Konten Ihres Unternehmens speichern.
 
 | Einstellung | Beschreibung | Standardwert |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|

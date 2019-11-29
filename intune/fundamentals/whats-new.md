@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/08/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
-ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
+ms.openlocfilehash: 71045489ac703860073a3023e6d6170778117d33
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73882492"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199293"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Neuerungen in Microsoft Intune
 
@@ -52,6 +52,46 @@ Erfahren Sie jede Woche, welche Neuerungen Microsoft Intune zu bieten hat. Hier 
 ### Monitor and troubleshoot
 ### Role-based access control
 -->  
+
+## <a name="week-of-november-18-2019"></a>Woche vom 18. November 2019
+
+### <a name="device-configuration"></a>Gerätekonfiguration
+
+#### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Windows 10-Featureupdates (öffentliche Vorschau)<!-- 2384877 -->
+
+Sie können [Windows 10-Featureupdates](../protect/windows-update-for-business-configure.md#windows-10-feature-updates) nun auf Windows 10-Geräten bereitstellen. Windows 10-Featureupdates stellen eine neue Softwareupdaterichtlinie dar, die die Version von Windows 10 festgelegt, die von Geräten installiert und beibehalten werden soll Sie können diesen neuen Richtlinientyp zusammen mit Ihren vorhandenen Windows 10-Updateringen verwenden.
+
+Geräte, die Windows 10-Featureupdaterichtlinien erhalten, installieren die angegebene Windows-Version und verbleiben anschließend bei dieser Version, bis die Richtlinie geändert oder entfernt wird. Geräte, auf denen eine spätere Version von Windows ausgeführt wird, verbleiben bei ihrer aktuellen Version. Geräte, auf denen eine bestimmte Version von Windows eingerichtet ist, können noch immer Qualitäts- und Sicherheitsupdates für diese Version über die Windows 10-Updateringe installieren.
+
+Dieser neue Richtlinientyp wird diese Woche für Mandanten eingeführt. Wenn diese Richtlinie noch nicht für Ihren Mandanten verfügbar ist, wird sie in Kürze verfügbar sein.
+
+### <a name="monitor-and-troubleshoot"></a>Überwachung und Problembehandlung
+
+#### <a name="updated-support-experience---5012398---"></a>Aktualisierte Benutzeroberfläche für Support<!-- 5012398 -->
+
+Ab heute wird eine aktualisierte und optimierte konsoleninterne Benutzeroberfläche für [Hilfe und Support für Intune](get-support.md) an die Mandanten verteilt. Wenn diese neue Benutzeroberfläche noch nicht für Sie verfügbar ist, wird sie in Kürze verfügbar sein.
+
+Wir haben die konsoleninterne Suche und das Feedback zu häufigen Problemen sowie den Workflow, den Sie zum Kontaktieren des Supports verwenden, verbessert. Wenn Sie ein Supportproblem öffnen, sehen Sie Echtzeitschätzwerte für den Zeitraum, in dem Sie mit einem Rückruf oder einer E-Mail-Antwort rechnen können, und Premier Support- und Unified Support-Kunden können problemlos einen Schweregrad für ihr Problem festlegen, um schneller Support zu erhalten.
+
+## <a name="week-of-november-11-2019"></a>Woche vom 11. November 2019  
+
+### <a name="app-management"></a>App-Verwaltung  
+
+#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>Verbesserte macOS-Registrierungsoberfläche im Unternehmensportal <!-- 5074349 WNready -->  
+Das Unternehmensportal für die macOS-Registrierung verfügt über einen einfacheren Registrierungsprozess, der sich enger an das Unternehmensportal für die iOS-Registrierung ausrichtet. Gerätebenutzer wird jetzt Folgendes angezeigt:  
+
+* Eine schlankere Benutzeroberfläche  
+* Eine verbesserte Prüfliste für die Registrierung  
+* Deutlichere Anweisungen zum Registrieren ihrer Geräte  
+* Verbesserte Optionen zur Problembehandlung  
+
+#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>Web-Apps, die aus der Windows-Unternehmensportal-App gestartet werden<!-- 5030972 -->
+Endbenutzer können Web-Apps jetzt direkt aus der Windows-Unternehmensportal-App starten. Endbenutzer können die Web-App auswählen und dann die Option **Im Browser öffnen** auswählen. Die veröffentlichte Web-URL wird direkt einem Webbrowser geöffnet. Diese Funktionalität wird in der nächsten Woche eingeführt. Weitere Informationen über Web-Apps finden Sie unter [Hinzufügen von Web-Apps zu Microsoft Intune](~/apps/web-app.md).  
+
+
+#### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950-wnready---"></a>Neue Spalte für den Zuweisungstyp im Unternehmensportal für Windows 10 <!-- 5459950 WNready -->
+Die Spalte im Unternehmensportal unter **Installierte Apps** > **Zuweisungstyp** wurde in **Von Ihrer Organisation als erforderlich festgelegt** umbenannt.  Unter dieser Spalte wird den Benutzern der Wert **Yes** (Ja) oder **No** (Nein) angezeigt, um anzugeben, dass eine App entweder erforderlich oder von ihrer Organisation als optional angesehen wird. Diese Änderungen wurden durchgeführt, da Gerätebenutzer über das Konzept der verfügbaren Apps irritiert waren. Ihre Benutzer können weitere Informationen zum Installieren von Apps im Unternehmensportal unter [Installieren und Freigeben von Apps auf Ihrem Gerät](/intune-user-help/install-apps-cpapp-windows) finden. Weitere Informationen zum Konfigurieren der Unternehmensportal-App für Ihre Benutzer finden Sie unter [Konfigurieren der Microsoft Intune-Unternehmensportal-App](~/apps/company-portal-app.md).  
+
 
 ## <a name="week-of-november-4-2019"></a>Woche vom 4. November 2019
 
@@ -139,7 +179,7 @@ Sie können eine Intune-App-Schutzrichtlinie erstellen, die die Unternehmensdate
 
 ### <a name="device-configuration"></a>Gerätekonfiguration
 
-#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices---2266073----"></a>Neues Schnittstellenprofil zur Konfiguration der Gerätefirmware für Geräte mit Windows 10 oder höher<!-- 2266073  -->
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices-public-preview---2266073----"></a>Neues Schnittstellenprofil zur Konfiguration der Gerätefirmware für Geräte mit Windows 10 oder höher (öffentliche Vorschau)<!-- 2266073  -->
 
 Ab Windows 10 können Sie ein Gerätekonfigurationsprofil zum Steuern der Einstellungen und Features erstellen (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10 und höher** als Plattform). In diesem Update gibt es einen neuen Schnittstellenprofiltyp zur Konfiguration der Gerätefirmware, mit dem Intune UEFI-Einstellungen (BIOS) verwalten kann.
 
@@ -516,7 +556,7 @@ Verwenden Sie Intune Endpoint Protection-Einstellungen, um die [clientgesteuerte
 Diese Einstellung initiiert die clientgesteuerte Aktualisierung eines Wiederherstellungskennworts nach der Wiederherstellung eines Betriebssystemlaufwerks (durch Verwendung von bootmgr oder WinRE) sowie die Entsperrung eines Wiederherstellungskennworts auf einem festen Datenlaufwerk. Diese Einstellung aktualisiert das verwendete Wiederherstellungskennwort; nicht verwendete Kennwörter auf dem Volume bleiben unverändert. Weitere Informationen finden Sie in der Dokumentation des BitLocker-Konfigurationsdienstanbieters zu [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp).
 
 #### <a name="tamper-protection-for-windows-defender-antivirus---4705448----------"></a>Manipulationsschutz für Windows Defender Antivirus<!-- 4705448        -->
-Verwenden Sie Intune, um den *Manipulationsschutz* für Windows Defender Antivirus zu verwalten. Sie finden die [Einstellung für den Manipulationsschutz](../protect/endpoint-protection-windows-10.md#windows-defender-security-center) in der Microsoft Defender Security Center-Gruppe, wenn Sie Gerätekonfigurationsprofile für den Windows 10-Endpunktschutz verwenden. Legen Sie den Manipulationsschutz auf *Aktiviert* fest, um die Einschränkungen des Manipulationsschutzes zu aktivieren. Durch Festlegen von *Deaktiviert* deaktivieren Sie die Einschränkungen, und durch Festlegen von *Nicht konfiguriert* behalten Sie die aktuelle Konfiguration eines Geräts bei.  
+Verwenden Sie Intune, um den *Manipulationsschutz* für Windows Defender Antivirus zu verwalten. Sie finden die [Einstellung für den Manipulationsschutz](../protect/endpoint-protection-windows-10.md#microsoft-defender-security-center) in der Microsoft Defender Security Center-Gruppe, wenn Sie Gerätekonfigurationsprofile für den Windows 10-Endpunktschutz verwenden. Legen Sie den Manipulationsschutz auf *Aktiviert* fest, um die Einschränkungen des Manipulationsschutzes zu aktivieren. Durch Festlegen von *Deaktiviert* deaktivieren Sie die Einschränkungen, und durch Festlegen von *Nicht konfiguriert* behalten Sie die aktuelle Konfiguration eines Geräts bei.  
 
 Weitere Informationen zum Manipulationsschutz finden Sie unter [Verhindern von Änderungen an Sicherheitseinstellungen mit dem Manipulationsschutz](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) in der Windows-Dokumentation.
 
