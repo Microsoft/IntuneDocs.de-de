@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/30/2019
+ms.date: 11/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 27a020f4b45ae878718bed4ee6e230c3d288f260
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: b7e2bd869f898bbe7f894cfd9e9c767c8b42e9c4
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755418"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465638"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Bündel-IDs für integrierte iOS-Apps, die Sie in Intune verwenden können
 
@@ -69,6 +69,7 @@ Wenn Sie Features auf iOS-Geräten konfigurieren, können Sie auch die integrier
 | com.apple.reminders         | Reminders    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
 | com.apple.Preferences       | Einstellung     | Apple     |
+| com. Apple. Verknüpfungen         | Verknüpfungen    | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | Stocks       | Apple     |
 | com.apple.tips              | Tipps         | Apple     |

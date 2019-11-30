@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796439581ca0ae91e788a91ab0bc2ef8f6019626
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199340"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540741"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>In der Entwicklung befindliche Microsoft Intune-Features: Dezember 2019
 
@@ -181,34 +181,12 @@ Gilt für:
 <!--## Device enrollment-->
 
 <!-- ***********************************************-->
-## <a name="device-management"></a>Geräteverwaltung
+<!--## Device management-->
 
-
-
-### <a name="edit-device-name-value-for-autopilot-devices---2640074----"></a>Bearbeiten des Geräte namens Werts für Autopilot-Geräte<!-- 2640074  -->
-Sie können den Wert für den Gerätenamen für Azure AD verbundenen Autopilot-Geräten bearbeiten. Wechseln Sie hierzu zu **InTune** > **Geräte** Registrierung > **Windows** -Registrierung > **Windows Autopilot** > **Geräte** > Wählen Sie das Gerät aus, um den Wert des **Geräte namens** im rechten Bereich zu ändern. > **Speichern**.
-
-### <a name="edit-the-group-tag-value-for-autopilot-devices---4816775---"></a>Bearbeiten des Gruppentag Werts für Autopilot-Geräte<!-- 4816775 -->
-Sie können den **gruppentagwert** für Autopilot-Geräte bearbeiten:
-
-1. Wählen Sie **InTune** > **Geräte** Registrierung > **Windows** -Registrierung > **Windows Autopilot** > **Geräte**aus.
-1. Wählen Sie das Gerät aus.
-1. Ändern Sie im rechten Bereich den **gruppentagwert** .
-1. Wählen Sie **Speichern** aus.
-
-### <a name="target-macos-user-groups-to-require-jamf-management---4061739---"></a>MacOS-Benutzergruppen als Ziel für die JAMF-Verwaltung<!-- 4061739 -->
-Sie sind in der Lage, bestimmte Benutzergruppen als Ziel festzulegen, damit Ihre macOS-Geräte von JAMF verwaltet werden. Mit dieser Zielgruppe können Sie die JAMF-Kompatibilitäts Integration auf eine Teilmenge von macOS-Geräten anwenden, während andere Geräte weiterhin von InTune verwaltet werden. Mit der Zielgruppe können Sie die Benutzer Geräte nach und nach von einem MDM-System (Mobile Device Management, Verwaltung mobiler Geräte) zum anderen migrieren.
 
 <!-- ***********************************************-->
-## <a name="intune-apps"></a>Intune-Apps
-
-### <a name="improved-macos-enrollment-experience-in-company-portal---5074349----"></a>Verbesserte macOS-Registrierungs Umgebung in Unternehmensportal<!-- 5074349  -->
-Der Unternehmensportal für die macOS-Registrierungs Umgebung wird einen einfacheren Registrierungsvorgang haben, der sich stärker mit dem Unternehmensportal für die IOS-Registrierung ausgleicht. Geräte Benutzern wird Folgendes angezeigt:  
-
-* Eine sleeker-Benutzeroberfläche.  
-* Eine verbesserte Registrierungs Checkliste.  
-* Deutlichere Anweisungen zum Registrieren Ihrer Geräte.  
-* Verbesserte Optionen zur Problembehandlung.  
+<!--## Intune apps-->
+ 
 
 <!-- ***********************************************-->
 ## <a name="monitoring-and-troubleshooting"></a>Überwachung und Problembehandlung
@@ -217,10 +195,8 @@ Der Unternehmensportal für die macOS-Registrierungs Umgebung wird einen einfach
 Bei einer neuen zentralisierten Überwachungs Protokoll-Überprüfung werden Überwachungs Protokolle für alle Kategorien in eine Seite erfasst. Sie können die Protokolle filtern, um die gesuchten Daten zu erhalten. Um die Überwachungs Protokolle anzuzeigen, wechseln Sie zu Mandanten **Verwaltung** > Überwachungs **Protokolle**. Weitere Informationen finden Sie unter [Bevorstehende Änderungen an Überwachungsprotokollen in InTune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Upcoming-change-to-Audit-logs-in-Intune/ba-p/1015858).
 
 <!-- ***********************************************-->
-## <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
+<!--## Role-based access control-->
 
-### <a name="duplicate-custom-or-built-in-roles---1081938---"></a>Doppelte benutzerdefinierte oder integrierte Rollen<!-- 1081938 -->
-Sie können integrierte und benutzerdefinierte Rollen kopieren. Wechseln Sie zu diesem Zweck zu **InTune** > **Rollen** > **alle Rollen** , > Wählen Sie eine Rolle in der Liste > **Duplizieren**aus. Stellen Sie sicher, dass Sie einen neuen eindeutigen Namen eingeben.
 
 <!-- ***********************************************-->
 
