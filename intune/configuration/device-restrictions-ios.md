@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2019
+ms.date: 11/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390856"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465651"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS- und iPadOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
 
@@ -244,6 +244,10 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 ### <a name="settings-apply-to-all-enrollment-types"></a>Einstellungen gelten für: alle Registrierungs Typen
 
 - **Anzeige von Unternehmensdokumenten in nicht verwalteten Apps**: **Blockieren** verhindert die Anzeige unternehmenseigener Dokumente in nicht verwalteten Apps. **Nicht konfiguriert** (Standard) gestattet die Anzeige von Unternehmensdokumenten in beliebigen Apps. Beispiel: Sie möchten verhindern, dass Benutzer Dateien aus der OneDrive-App in Dropbox speichern. Legen Sie für diese Einstellung **Blockieren** fest. Sobald das Gerät die Richtlinie empfängt (z. B. nach einem Neustart), ist kein Speichern mehr möglich.
+
+
+  > [!NOTE]
+  > Wenn diese Einstellung blockiert ist, werden Drittanbieter-Tastaturen, die aus dem App Store installiert werden, ebenfalls blockiert.
 
   - **Nicht verwaltete apps das Lesen von verwalteten Kontakt Konten gestatten**: Wenn diese Option auf **zulassen**festgelegt ist, können nicht verwaltete apps, wie z. b. die integrierte IOS Contacts-APP, Kontaktinformationen aus verwalteten apps lesen und darauf zugreifen, einschließlich des Outlook-Mobile App. **Nicht konfiguriert** (Standard) verhindert, dass die integrierte App „Kontakte“ auf dem Gerät gelesen oder Duplikate entfernt werden können.  
   
@@ -591,7 +595,7 @@ Verwenden Sie diese Einstellungen, um iOS-Geräte zur Ausführung bestimmter App
 - **Bildschirmdrehung:** **Blockieren** verhindert, dass die Bildschirmausrichtung geändert werden kann, wenn der Benutzer das Gerät dreht. **Nicht konfiguriert** lässt diese Funktion zu.
 - **Standbytaste:** Wählen Sie **Blockieren** aus, um die Standbytaste am Gerät zu deaktivieren. **Nicht konfiguriert** lässt diese Funktion zu.
 - **Touch**: **Blockieren** deaktiviert den Touchscreen des Geräts. **Nicht konfiguriert** ermöglicht dem Benutzer, den Touchscreen zu verwenden.
-- **Volumeschaltflächen**: **Block** verhindert die Verwendung der volumeschaltflächen auf dem Gerät. **Nicht konfiguriert** ermöglicht die volumeschaltflächen.
+- **Volumeschaltflächen**: **blockieren** verhindert die Verwendung der volumeschaltflächen des Geräts. **Nicht konfiguriert** ermöglicht die volumeschaltflächen.
 - **Steuerelement der Touch-Unterstützung**: Mit **Zulassen** können Benutzer die Touch-Unterstützungsfunktion verwenden. **Nicht konfiguriert** deaktiviert dieses Feature.
 - **Steuerelement zum Umkehren von Farben**: **Zulassen** von Farbumkehr-Änderungen, mit denen der Benutzer die Funktion zur Farbumkehr individuell verwenden kann. **Nicht konfiguriert** deaktiviert dieses Feature.
 - **Ausgewählten Text sprechen**: **Zulassen** der Sprachauswahl-Barrierefreiheitseinstellungen auf dem Gerät. Diese Funktion liest Text, den der Benutzer auswählt, laut vor. **Nicht konfiguriert** deaktiviert dieses Feature.

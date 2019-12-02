@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1067c8ef23add50c921217b9e4b115346be2951
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4783d24e3fc25583a61f88c2e7375d4eed673186
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497050"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563484"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Problembehandlung bei der App-Installation
 
@@ -32,8 +32,8 @@ Auf Geräten, die mit Microsoft Intune MDM verwaltet werden, können App-Install
 
 Intune stellt anhand von Apps, die auf dem jeweiligen Benutzergerät installiert sind, App-Informationen zur Problembehandlung bereit.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im Bereich **Intune** die Option **Problembehandlung** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+3. Wählen Sie Problembehandlung und **Support**aus.
 4. Klicken Sie auf **Benutzer auswählen**, um einen Benutzer auszuwählen, für den ein Problem behoben werden muss. Der Bereich **Benutzer auswählen** wird angezeigt.
 5. Wählen Sie einen Benutzer aus, indem Sie den Namen oder die E-Mail-Adresse eingeben. Klicken Sie unten im Bereich auf **Auswählen**. Die Informationen zur Problembehandlung für den Benutzer werden im Bereich **Problembehandlung** angezeigt. 
 6. Wählen Sie aus der Liste **Geräte** ein Gerät zur Problembehandlung aus.
@@ -57,12 +57,12 @@ Die folgenden Aktionen sollten bei der Installation von apps in Erwägung gezoge
 - Wenn die APP nicht im Unternehmensportal angezeigt wird, stellen Sie sicher, dass die APP mit der **verfügbaren Absicht bereit** gestellt wird und dass der Benutzer mit dem Gerätetyp, der von der App unterstützt wird, auf die Unternehmensportal zugreift
 - Bei Windows BYOD-Geräten muss der Benutzer dem Gerät ein Geschäftskonto hinzufügen.
 - Überprüfen Sie, ob der Benutzer über das Aad-Geräte Limit verfügt:
-  1. Navigieren Sie zu [Azure Active Directory Geräteeinstellungen](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId).
+  1. Navigieren Sie zu [Azure Active Directory Geräteeinstellungen](https://portal.azure.com/#pane/Microsoft_AAD_IAM/DevicesMenupane/DeviceSettings/menuId).
   2. Notieren Sie sich den Wert für maximale Anzahl von **Geräten pro Benutzer**.
-  3. Navigieren Sie zu [Azure Active Directory Benutzer](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers).
+  3. Navigieren Sie zu [Azure Active Directory Benutzer](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers).
   4. Wählen Sie den betroffenen Benutzer aus, und klicken Sie auf **Geräte**
   5. Wenn sich der Benutzer über dem festgelegten Grenzwert befindet, löschen Sie veraltete Datensätze, die nicht mehr benötigt werden.
-- Für IOS-DEP-Geräte müssen Sie sicherstellen, dass der Benutzer im Blatt mit der InTune-Geräte Übersicht als **von Benutzer angemeldet** aufgeführt wird. Wenn na angezeigt wird, stellen Sie eine Konfigurationsrichtlinie für die Intune-Unternehmensportal bereit. Weitere Informationen finden Sie unter [Konfigurieren der Unternehmensportal-App](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
+- Stellen Sie für IOS-DEP-Geräte sicher, dass der Benutzer im Bereich InTune-Geräte Übersicht als **von Benutzer angemeldet** aufgeführt wird. Wenn na angezeigt wird, stellen Sie eine Konfigurationsrichtlinie für die Intune-Unternehmensportal bereit. Weitere Informationen finden Sie unter [Konfigurieren der Unternehmensportal-App](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices).
 
 ## <a name="win32-app-installation-troubleshooting"></a>Problembehandlung bei der Installation von Win32-Apps
 
@@ -75,7 +75,7 @@ Wählen Sie die Win32-App aus, die über die Intune-Verwaltungserweiterung berei
 
 Wenn Sie Ihre Win32-App-Installationsprotokolle sammeln möchten, führen Sie zunächst die Schritte aus, die im Abschnitt [Details zur Problembehandlung von Apps](troubleshoot-app-install.md#app-troubleshooting-details) beschrieben sind. Fahren Sie anschließend mit den folgenden Schritten fort:
 
-1. Klicken Sie auf dem Blatt **Installationsdetails** auf **Protokolle sammeln**.
+1. Klicken Sie im Bereich **Installationsdetails** auf **Protokolle sammeln**.
 
     <image alt="Win32 app installation details - Collect log option" src="./media/troubleshoot-app-install/troubleshoot-app-install-04.png" width="500" />
 
@@ -173,7 +173,7 @@ In diesem Abschnitt werden sowohl Geräte Administrator (da) als auch Samsung Kn
 |  0x80073CF3  |  Fehler bei Updates, Abhängigkeiten oder Konfliktüberprüfung des Pakets. Mögliche Ursachen:<ul><li> Das eingehende Paket ist mit einem installierten Paket nicht vereinbar.</li><li> Eine angegebene Paketabhängigkeit wurde nicht gefunden.</li><li> Das Paket unterstützt nicht die richtige Prozessorarchitektur.</li></ul> Informationen dazu finden Sie im Ereignisprotokoll **AppXDeployment-Server**. Weitere Informationen finden Sie unter [Problembehandlung beim Packen, Bereitstellen und Abfragen von Windows Store-Apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).  |
 |  0x80073CFB  |  Das bereitgestellte Paket ist bereits installiert, und eine erneute Installation des Pakets wird blockiert. Dieser Fehler kann auftreten, wenn Sie ein Paket installieren, das nicht mit dem bereits installierten Paket identisch ist. Überprüfen Sie, ob die digitale Signatur auch Teil des Pakets ist. Wenn ein Paket erneut erstellt oder signiert wird, ist das Paket nicht mehr bitweise identisch mit dem zuvor installierten Paket. Es gibt zwei Möglichkeiten, diesen Fehler zu beheben:<ul><li> Erhöhen Sie die Versionsnummer der Anwendung, und erstellen und signieren Sie das Paket dann erneut.</li><li> Entfernen Sie das alte Paket für jeden Benutzer des Systems, bevor Sie das neue Paket installieren.</li></ul> Weitere Informationen finden Sie unter [Problembehandlung beim Packen, Bereitstellen und Abfragen von Windows Store-Apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting).  |
 |  0x87D1041C  |  Die Anwendung wurde erfolgreich installiert, wird jedoch nicht erkannt. Die App wurde erfolgreich von Intune bereitgestellt und später deinstalliert. Für das Deinstallieren der App können folgende Gründe vorliegen:<ul><li> Der Endbenutzer hat die App deinstalliert.</li><li> Die Identitätsinformationen im Paket stimmen nicht mit Informationen im Gerätebericht für fehlerhafte Apps überein.</li><li>Bei MSIs, die sich eigenständig aktualisieren, stimmt die Produktversion nicht mit den Informationen der App überein, nachdem diese außerhalb von Intune aktualisiert wurde.</li></ul> Weisen Sie den Benutzer an, die App aus dem Unternehmensportal neu zu installieren. Beachten Sie, dass erforderliche Apps beim nächsten Einchecken des Geräts automatisch neu installiert werden.  |
-|  0x8000ffff  |  Unerwarteter Fehler bei der Installation. Weitere Informationen finden Sie in den Installations Protokollen.  |
+|  0x8000FFFF  |  Unerwarteter Fehler bei der Installation. Weitere Informationen finden Sie in den Installations Protokollen.  |
 
 ## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Problembehandlung bei Apps aus dem Microsoft Store
 
