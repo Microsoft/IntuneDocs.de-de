@@ -7,14 +7,38 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: b59419be9f381a1c646a7778b73ed172526f6ef6
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: 8db05399c4a880d72d24cde885976309bf9a4fa7
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188437"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74549417"
 ---
 Diese Hinweise enthalten wichtige Informationen, die Ihnen bei der Vorbereitung auf künftige Änderungen und Features im Zusammenhang mit Intune helfen können.
+
+### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>Aktualisierte Unterstützungsanweisung für die mobile Adobe Acrobat Reader Intune-App<!--5746776-->
+Ende August haben wir in MC188653 mitgeteilt, dass die mobile Adobe Acrobat Reader Intune-App am 1. Dezember 2019 eingestellt wird, und dass Adobe plant, die App-Schutzrichtlinien von Intune innerhalb ihrer Acrobat Reader-Haupt-App zu unterstützen. Seitdem haben wir Feedback der Kunden erhalten, dass die IT-Administratoren mehr Zeit benötigen, sich auf die Änderungen einzustellen, und dass die Endbenutzer mehr Zeit benötigen, Adobe Acrobat Reader für Intune zu verwenden. Angesichts der hohen Nutzung der Adobe Acrobat Reader Intune-App auf Endgeräten und deren Bedeutung für Unternehmensszenarios möchten wir sicherstellen, dass jede Funktion den Anforderungen Ihres Unternehmens an den App-Schutz entspricht. 
+
+Während wir weiterhin empfehlen, die allgemeine mobile Acrobat Reader-App in Ihren Richtlinien zu verwenden, da diese App-Schutzrichtlinien unterstützt und das SDK für Intune integriert hat, wird die Adobe Acrobat Reader Intune-App bis zum 31. März 2020 weiterhin unterstützt. 
+
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
+Sie erhalten diese Nachricht, weil unsere Berichterstellung anzeigt, dass eine oder mehrere Richtlinien in Ihrer Organisation auf die Adobe Acrobat Reader Intune-App ausgerichtet sind und/oder Sie möglicherweise unsere vorherige EOL-Kommunikation erhalten haben. 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
+Informieren Sie Ihre Endbenutzer und Ihren Helpdesk über diese Änderung. Sie können die [Funktion der Unterstützungsfunktionalität des Unternehmensportals](../apps/company-portal-app.md#support-information) nutzen, um einen Kanal für Intune-bezogene Fragen einzurichten.
+
+#### <a name="additional-information"></a>Weitere Informationen
+https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
+
+
+### <a name="end-support-for-windows-phone-81--3544909--"></a>Einstellung der Unterstützung für Windows Phone 8.1<!--3544909-->
+Die grundlegende Unterstützung von Microsoft für Windows Phone 8.1 wurde im Juli 2017 eingestellt, die erweiterte Unterstützung im Juni 2019. Die Unternehmensportal-App für Windows Phone 8.1 befindet sich seit Oktober 2017 im Unterstützungsmodus. Microsoft Intune wird nun am 20. Februar 2020 die Unterstützung für Windows Phone 8.1 einstellen.
+
+#### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
+Nach dem 20. Februar 2020 erhalten diese Geräte keine Sicherheitsupdates mehr, und Sie können keine neuen Geräte mehr registrieren. Bestehende Windows Phone 8.1-Geräte bleiben weiterhin registriert (Richtlinien, Apps, Berichterstellung), aber beachten Sie, dass die Problembehandlung bei einer bestehenden Registrierung nach diesem Datum nicht mehr unterstützt wird, da viele Komponenten, wie z. B. Zertifikate von Drittanbietern, die Unterstützung für die Plattform nicht mehr verwenden. Intune stellt die Kompatibilitätsprüfung mit Intune und Windows Phone 8.1 ein.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
+Sie können Ihre Intune-Berichterstellung überprüfen, um zu sehen, welche Geräte oder Benutzer möglicherweise betroffen sind. Navigieren Sie zu „Geräte“ > „Alle Geräte“, und filtern Sie nach Betriebssystem. Sie können weitere Spalten hinzufügen, um besser bestimmen zu können, welche Benutzer in Ihrer Organisation Geräte mit Windows Phone 8.1 verwenden. Fordern Sie Ihre Endbenutzer dazu auf, Ihre Geräte auf eine unterstützte Betriebssystemversion upzugraden.
 
 ### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>Aktualisieren Ihrer Intune Outlook-App-Schutzrichtlinien (APP)<!--2576686-->
 Sie sollten Maßnahmen ergreifen, wenn Sie MC195618 über Ihr Nachrichtencenter erhalten haben. Wie in den Feature IDs 56325 und 56326 der Microsoft 365-Roadmap geteilt, stellen Intune und Outlook für iOS und Android Unterstützung zur Einschränkung sensibler Daten in E-Mail-Benachrichtigungen und Kalendererinnerungen bereit. Als Folge dieser Verbesserungen entfernt Outlook für iOS und Android die Unterstützung für einige Konfigurationsschlüssel von Datenschutz-Apps, die Sie aktuell zum Verwalten von Benachrichtigungen nutzen.
@@ -40,7 +64,7 @@ Weitere Informationen zu APP-Einstellungen und Outlook-Einstellungen finden Sie 
 Windows 10, Version 1703 (auch als Windows 10 RS2 bekannt) wurde am 8. Oktober 2019 für Enterprise- und EDU-Editionen aus dem Betrieb genommen. Intune beendet die Unterstützung für die entsprechende Unternehmensportal-App für RS2/RS1 ab dem 26. Dezember 2019.
 
 #### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Des Weiteren werden in dieser bestimmten Version der Unternehmensportal-App keine neuen Features angezeigt, obwohl diese Version weiterhin bis zum 26. Dezember 2019 unterstützt wird. Zudem werden Sicherheitsupdates nach Bedarf für die Unternehmensportal-App bereitgestellt. Da die Windows 10 Version 1703 jedoch keine Sicherheitsupdates empfängt, sobald sie außer Betrieb genommen wird, wird dringend empfohlen, dass Sie Ihre Windows-Geräte auf eine neuere Windows-Version aktualisieren und sicherstellen, dass Sie die neueste Unternehmensportal-App besitzen, damit Sie weiterhin neue Features und zusätzliche Funktionen erhalten können.
+Des Weiteren werden in dieser bestimmten Version der Unternehmensportal-App keine neuen Features angezeigt, obwohl diese Version weiterhin bis zum 26. Dezember 2019 unterstützt wird. Zudem werden Sicherheitsupdates nach Bedarf für die Unternehmensportal-App bereitgestellt. Da die Windows 10 Version 1703 jedoch keine Sicherheitsupdates empfängt, sobald sie außer Betrieb genommen wird, wird dringend empfohlen, dass Sie Ihre Windows-Geräte auf eine neuere Windows-Version aktualisieren und sicherstellen, dass Sie die neueste Unternehmensportal-App besitzen, damit Sie weiterhin neue Features und zusätzliche Funktionen erhalten können.
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Wie sollte ich mich für die Änderung vorbereiten?
 Die Schritte, die Sie ausführen, hängen von der Konfiguration Ihrer Umgebung ab. Im Allgemeinen sollten Sie das Gerät identifizieren und aktualisieren, das die ältere Betriebssystemversion und/oder das Unternehmensportal auf dem Gerät besitzen. Zum Festlegen Ihrer Windows 10-Updateringe, melden Sie sich bei Intune an, wechseln Sie zu den Softwareupdates und anschließend zu „Windows 10-Updateringe“. Die neueste Version der Unternehmensportal-App lautet 10.3.5601.0. Weisen Sie Ihre Benutzer an, diese Version über den Microsoft Store herunterzuladen und somit für zukünftige Releases auf dem neuesten Stand zu bleiben. Sie können Intune auch zum Installieren der neuesten Version über [Microsoft Store für Unternehmen](https://docs.microsoft.com/intune/windows-store-for-business) auf Ihren Windows-Geräten verwenden.
