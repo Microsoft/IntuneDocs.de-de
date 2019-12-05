@@ -118,7 +118,7 @@ Legacy-PC-Verwaltungsfunktionen werden ab 15. Oktober 2020 nicht mehr unterst�
 Der Android-Geräteadministrator (mit Android 2.2 veröffentlicht und manchmal auch als „Legacy“-Android-Verwaltung bezeichnet) ist eine Möglichkeit zum Verwalten von Android-Geräten. [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (veröffentlicht mit Android 5.0) bietet jetzt jedoch eine verbesserte Verwaltungsfunktionalität. In dem Bestreben, auf eine moderne, umfassendere und sicherere Geräteverwaltung umzusteigen, reduziert Google die Geräteadministratorunterstützung in neuen Android-Releases.
 
 #### <a name="how-does-this-affect-me"></a>Inwiefern betrifft das mich?
-Diese Änderungen von Google haben für Intune-Benutzer diese Folgen:  
+Die Änderungen von Google haben für Intune-Benutzer diese Folgen:  
 - Intune kann nur noch bis einschließlich Sommer 2020 Unterstützung für vom Geräteadministrator verwaltete Android-Geräte bieten, die unter Android 10 und höher (auch als Android Q bekannt) ausgeführt werden. Der Stichtag ist das Datum, an dem die nächste Hauptversion von Android veröffentlicht werden soll.   
 - Vom Geräteadministrator verwaltete Geräte, auf denen nach dem Sommer 2020 Android 10 oder höher ausgeführt wird, können nicht mehr vollständig verwaltet werden.       
 - Vom Geräteadministrator verwaltete Android-Geräte, auf denen Android-Versionen unter 10 ausgeführt werden, sind nicht betroffen und können weiterhin vollständig mit dem Geräteadministrator verwaltet werden.    
