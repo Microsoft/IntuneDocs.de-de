@@ -209,11 +209,11 @@ Dies entspricht dem erwarteten Verhalten, da bestimmte Funktionen in `sealed` ge
 > Der Remapper schreibt eine Abhängigkeit neu, die Visual Studio für die Autovervollständigung von IntelliSense verwendet. Daher müssen Sie das Projekt möglicherweise neu laden und neu erstellen, wenn der Remapper hinzugefügt wird, damit IntelliSense die Änderungen ordnungsgemäß erkennt.
 
 #### <a name="troubleshooting"></a>Problembehandlung
-* Wenn beim Start ein leerer, weißer Bildschirm in der Anwendung angezeigt wird, müssen Sie möglicherweise erzwingen, dass die Navigations Aufrufe im Haupt Thread ausgeführt werden.
-* Die Intune SDK-xamarin-Bindungen unterstützen keine apps, die ein plattformübergreifendes Framework, wie z. b. mvvmcross, aufgrund von Konflikten zwischen mvvmcross-und InTune-MAM-Klassen verwenden. Obwohl einige Kunden nach dem Verschieben Ihrer Apps in einfache xamarin. Forms erfolgreich mit der Integration arbeiten konnten, bieten wir keinen expliziten Leitfaden oder Plug-Ins für App-Entwickler, die mvvmcross verwenden.
+* Wenn beim Start ein leerer, weißer Bildschirm in der Anwendung angezeigt wird, müssen Sie möglicherweise erzwingen, dass die Navigationsaufrufe im Haupt Thread ausgeführt werden.
+* Die Intune SDK-Xamarin-Bindungen unterstützen keine Apps, die ein plattformübergreifendes Framework, wie z. B. MVVMcross, aufgrund von Konflikten zwischen MVVMcross-und InTune-MAM-Klassen verwenden. Obwohl einige Kunden nach dem Verschieben Ihrer Apps in einfache Xamarin.Forms erfolgreich mit der Integration arbeiten konnten, bieten wir keinen expliziten Leitfaden oder Plug-Ins für App-Entwickler, die MVVMcross verwenden.
 
 ### <a name="company-portal-app"></a>Unternehmensportal-App
-Die Intune SDK-xamarin-Bindungen basieren darauf, dass die [Unternehmensportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android-App auf dem Gerät vorhanden ist, um App-Schutzrichtlinien zu aktivieren. Das Unternehmensportal ruft App-Schutzrichtlinien vom Intune-Dienst ab. Wenn die App initialisiert wird, lädt sie die entsprechende Richtlinie sowie Code, um diese Richtlinie vom Unternehmensportal zu erzwingen. Der Benutzer muss nicht angemeldet sein.
+Die Intune SDK-Xamarin-Bindungen basieren darauf, dass die [Unternehmensportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android-App auf dem Gerät vorhanden ist, um App-Schutzrichtlinien zu aktivieren. Das Unternehmensportal ruft App-Schutzrichtlinien vom Intune-Dienst ab. Wenn die App initialisiert wird, lädt sie die entsprechende Richtlinie sowie Code, um diese Richtlinie vom Unternehmensportal zu erzwingen. Der Benutzer muss nicht angemeldet sein.
 
 > [!NOTE]
 > Wenn sich die Unternehmensportal-App nicht auf dem **Android**-Gerät befindet, verhält sich eine mit Intune verwaltete App genauso wie eine normale App, die keine Intune-App-Schutzrichtlinien unterstützt.
@@ -221,7 +221,7 @@ Die Intune SDK-xamarin-Bindungen basieren darauf, dass die [Unternehmensportal](
 Für einen App-Schutz ohne Registrierung des Geräts muss der Benutzer das Gerät _**nicht**_ mithilfe der Unternehmensportal-App registrieren.
 
 ### <a name="sample-applications"></a>Beispielanwendungen
-Beispielanwendungen, die MAM-Funktionen in xamarin. Android-und xamarin. Forms-apps hervorheben, sind auf [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)verfügbar.
+Beispielanwendungen, die MAM-Funktionen in xamarin. Android-und xamarin. Forms-apps hervorheben, sind auf [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps) verfügbar.
 
 ## <a name="support"></a>Unterstützung
-Wenn Ihre Organisation ein bestehender Intune-Kunde ist, arbeiten Sie mit Ihrem Microsoft-Supportmitarbeiter zusammen, um ein Supportticket zu erstellen und ein Issue auf der [GitHub-Seite für Issues](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) anzulegen. Wir helfen Ihnen, so bald wie möglich zu helfen. 
+Wenn Ihre Organisation ein bestehender Intune-Kunde ist, arbeiten Sie mit Ihrem Microsoft-Supportmitarbeiter zusammen, um ein Supportticket zu erstellen und ein Issue auf der [GitHub-Seite für Issues](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) anzulegen. Wir helfen Ihnen, so bald wie möglich zu helfen.
