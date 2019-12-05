@@ -351,11 +351,6 @@
             "redirect_document_id": false
         },
         {
-            "source_path": "intune/enduser/your-device-does-not-meet-the-minimum-security-patch-android.md",
-            "redirect_url": "https://docs.microsoft.com/intune/enduser/you-need-to-update-your-device-OS-security-patch-android",
-            "redirect_document_id": true
-        },
-        {
             "source_path": "intune/EndUser/company-portal-frequently-asked-questions.md",
             "redirect_url": "https://docs.microsoft.com/intune/enduser/use-managed-devices-to-get-work-done",
             "redirect_document_id": true
