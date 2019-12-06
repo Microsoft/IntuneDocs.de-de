@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee22ee435830137a423423aa692376aabbb6cecb
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 72e1f95e2bd81d974d900acbcb0f785bb7966eaa
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585411"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563698"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Überwachen von App-Informationen und -Zuweisungen mit Microsoft Intune
 
@@ -31,10 +31,9 @@ ms.locfileid: "72585411"
 
 Intune bietet verschiedene Möglichkeiten, mit denen Sie die Eigenschaften von Apps überwachen, die Sie verwalten, sowie den App-Zuweisungsstatus verwalten können.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im Bereich **Intune** **Client-Apps** aus.
-4. Wählen Sie im Abschnitt **Verwalten** des Menüs **Apps** aus.
-5. Wählen Sie in der Liste der Apps eine zu überwachende App aus. Daraufhin wird der App-Bereich mit einer Übersicht des Gerätestatus und des Benutzerstatus angezeigt.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** aus.
+3. Wählen Sie in der Liste der Apps eine zu überwachende App aus. Daraufhin wird der App-Bereich mit einer Übersicht des Gerätestatus und des Benutzerstatus angezeigt.
 
 > [!NOTE]
 > Android Store-Apps, die als **Verfügbar** bereitgestellt werden, melden keinen Installationsstatus.

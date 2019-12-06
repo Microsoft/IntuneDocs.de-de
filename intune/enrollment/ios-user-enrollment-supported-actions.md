@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445313"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562408"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Bei der Apple-Benutzerregistrierung unterstützte Intune-Aktionen und -Optionen
 
@@ -57,13 +57,18 @@ Auf Geräten zur Benutzerregistrierung können Endbenutzer über die Anwendung u
 - Remotesperre
 - Status überprüfen
 
+## <a name="app-deployment-options"></a>App-Bereitstellungsoptionen
+Folgende App-Typen können auf Geräten mit Benutzerregistrierung bereitgestellt werden:
+- Vom Benutzer lizenzierte VPP-Apps (Volume Purchase Plan) einschließlich benutzerdefinierter Apps
+- Branchenspezifische Apps
+- Web-Apps
+
 ## <a name="other-supported-options"></a>Weitere unterstützte Optionen
 
 Die folgenden Optionen werden in Intune für Geräte unterstützt, die mit der Apple-Benutzerregistrierung registriert wurden:
 - VPN für App. Diese Unterstützung schließt Safari-Domänen aus, da die Benutzerregistrierung die Konfiguration von Safari-Einstellungen nicht unterstützt.
 - WLAN 
 - Entfernen von Unternehmens-Apps bei Aufhebung der Registrierung
-- App-Bereitstellung über einen vom Benutzer lizenzierten Volume Purchase Plan (VPP)
 - Erkennung von Jailbreaks
 
 Die folgenden Einschränkungen werden unterstützt:
@@ -94,9 +99,10 @@ Die folgenden Optionen werden auf Geräten, die bei der Benutzerregistrierung re
 - Erfassen Sie die UDID und andere persistente Gerätebezeichner.
 - Die Benutzerregistrierung unterstützt für jedes registrierte Gerät eine eindeutige Registrierungs-ID, die jedoch nach Aufhebung der Registrierung nicht beibehalten wird.
 - Die folgenden Intune-Features werden aufgrund dieser Einschränkung nicht unterstützt:
-- SCEP-Benutzerprofile mit „Seriennummer“ als „Format des Antragstellernamen“.
+- SCEP-Benutzerprofile mit „Seriennummer“ als „Format des Antragstellernamens“.
 - VPN auf Geräteebene.
 - Für Geräte lizenzierte VPP-App-Bereitstellung.
+- Installieren Sie App Store-Apps als verwaltete Apps.
 - MDM-Steuerung von Anwendungen außerhalb des verwalteten APFS-Volumes.
 - Für diese Apps gelten weiterhin Anwendungsschutzrichtlinien. Sie können jedoch nicht die Verwaltung oder Bereitstellung einer verwalteten Version dieser Anwendungen übernehmen, es sei denn, der Benutzer löscht sie von seinem Gerät.
 - Aktionen, Konfigurationen, Einstellungen und Befehle, die eine Überwachung erfordern. 

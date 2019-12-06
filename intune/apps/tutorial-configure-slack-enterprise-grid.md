@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86e9d100847641064f472f0c3da0c9ec694f72dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496722"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563394"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>Tutorial: Konfigurieren von Slack zur Verwendung von Intune für EMM und die App-Konfiguration
 
@@ -55,7 +55,7 @@ Fügen Sie die iOS App „Slack for EMM“ zu Ihrem Intune-Mandanten hinzu, und 
 
 ### <a name="add-slack-for-emm-to-intune"></a>Hinzufügen von Slack for EMM zu Intune
 Fügen Sie Slack for EMM als verwaltete iOS-App zu Intune hinzu, und weisen Sie Slack-Benutzer zu. Apps sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit Android-Geräten eine separate Intune-App hinzufügen.
-1. Klicken Sie in Intune auf **Client-Apps** > **Apps** > **Hinzufügen**.
+1. Wählen Sie in Intune **Apps** > **Alle Apps** > **Hinzufügen** aus.
 2. Wählen Sie unter „App-Typ“ die Option **Store-App – iOS** aus.
 3. Wählen Sie **App Store durchsuchen** aus. Geben Sie den Suchbegriff „Slack for EMM“ ein, und wählen Sie die App aus.
 4. Klicken Sie auf **App-Informationen**, und konfigurieren Sie alle für Ihre Organisation erforderlichen Änderungen.
@@ -71,7 +71,7 @@ Fügen Sie Slack for EMM als verwaltete iOS-App zu Intune hinzu, und weisen Sie 
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>Hinzufügen einer App-Konfigurationsrichtlinie für Slack for EMM
 Fügen Sie eine App-Konfigurationsrichtlinie für Slack for EMM unter iOS hinzu. App-Konfigurationsrichtlinien für verwaltete Geräte sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit Android-Geräten eine separate Richtlinie hinzufügen.
-1. Klicken Sie in Intune auf **Client-Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen**.
+1. Wählen Sie in Intune**Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen** aus.
 2. Geben Sie als Namen „Test der Konfigurationsrichtlinie für Slack-App“ ein.
 3. Wählen Sie unter „Geräteregistrierungstyp“ die Option **Verwaltete Geräte** aus.
 4. Wählen Sie unter „Plattform“ die Option **iOS** aus.
@@ -107,7 +107,7 @@ Fügen Sie die verwaltete Google Play-App „Slack“ zu Ihrem Intune-Mandanten 
 
 ### <a name="add-slack-to-intune"></a>Hinzufügen von Slack zu Intune
 Fügen Sie Slack als verwaltete Google Play-App zu Intune hinzu, und weisen Sie Slack-Benutzer zu. Apps sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit iOS-Geräten eine separate Intune-App hinzufügen.
-1. Klicken Sie in Intune auf **Client-Apps** > **Apps** > **Hinzufügen**.
+1. Wählen Sie in Intune **Apps** > **Alle Apps** > **Hinzufügen** aus.
 2. Wählen Sie unter „App-Typ“ die Option **Store-App – verwaltetes Google Play** aus.
 3. Wählen Sie **Verwaltetes Google Play – genehmigen** aus. Geben Sie den Suchbegriff „Slack for EMM“ ein, und wählen Sie die App aus.
 4. Wählen Sie **Genehmigen** aus.
@@ -122,7 +122,7 @@ Fügen Sie Slack als verwaltete Google Play-App zu Intune hinzu, und weisen Sie 
 
 ### <a name="add-an-app-configuration-policy-for-slack"></a>Hinzufügen einer App-Konfigurationsrichtlinie für Slack
 Fügen Sie eine App-Konfigurationsrichtlinie für Slack hinzu. App-Konfigurationsrichtlinien für verwaltete Geräte sind plattformspezifisch, daher müssen Sie für Ihre Slack-Benutzer mit iOS-Geräten eine separate Richtlinie hinzufügen.
-1. Klicken Sie in Intune auf **Client-Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen**.
+1. Wählen Sie in Intune**Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen** aus.
 2. Geben Sie als Namen „Test der Konfigurationsrichtlinie für Slack-App“ ein.
 3. Wählen Sie unter „Geräteregistrierungstyp“ die Option **Verwaltete Geräte** aus.
 4. Wählen Sie unter „Plattform die Option **Android** aus.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcda312274e78d327a3a515eb6c95454e38c96f1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1800fa91ed5650fd57a31d24fdb3767a60dc5816
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507125"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563794"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Schnellstart: Erstellen und Zuweisen einer App-Schutzrichtlinie
 
@@ -43,7 +43,7 @@ Registrieren Sie sich bei [Intune](https://aka.ms/intuneportal) als [globaler Ad
 
 Führen Sie die folgenden Schritte aus, um eine App-Schutzrichtlinie zu erstellen:
 
-1. Klicken Sie unter [Intune](https://aka.ms/intuneportal) auf **Client-Apps** > **App-Schutzrichtlinien** > **Richtlinie erstellen**. 
+1. Wählen Sie in [Intune](https://aka.ms/intuneportal) die Option **Apps** > **App-Schutzrichtlinien** > **Richtlinie erstellen** aus. 
 2. Geben Sie die folgenden Informationen an: 
 
     - **Name**: *Inhaltsschutz für Windows 10*
@@ -67,7 +67,7 @@ Wenn Sie eine App-Schutzrichtlinie in Intune erstellt haben, können Sie diese G
 
 Führen Sie die folgenden Schritte aus, um eine App-Schutzrichtlinie zu zuzuweisen:
 
-1. Klicken Sie in [Intune](https://aka.ms/intuneportal) auf **Intune** > **Client-Apps** > **App-Schutzrichtlinien**. 
+1. Wählen Sie in [Intune](https://aka.ms/intuneportal) die Option **Intune** > **Apps** > **App-Schutzrichtlinien** aus. 
 2. Wählen Sie die App-Schutzrichtlinie aus, die Sie zuvor erstellt haben. In diesem Schnellstart heißt die Richtlinie **Inhaltsschutz für Windows 10**.
 3. Wählen Sie **Zuweisungen** aus.
 4. Klicken Sie auf der Registerkarte **Einschließen** auf **Select groups to include** (Einzuschließende Gruppen auswählen).

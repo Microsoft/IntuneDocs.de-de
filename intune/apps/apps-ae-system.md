@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11618d844fe7c4e190295ad06111ae0944deda95
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d45455a97f8016527dce49839b5493f16b173d43
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507277"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563657"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>Hinzufügen von Android Enterprise-System-Apps zu Microsoft Intune
 
@@ -33,8 +33,8 @@ Bevor Sie einem Gerät oder einer Gruppe von Benutzern eine App zuweisen, müsse
 
 Mit den folgenden Schritten können Sie eine Android Enterprise-System-App aus dem Azure-Portal zu Intune hinzufügen:
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Wählen Sie im **Intune**-Bereich die Option **Client-Apps** > **Apps** > **Hinzufügen** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
 3. Wählen Sie im Bereich **App hinzufügen** aus den verfügbaren **anderen** Typen den Typ **Android Enterprise-System-App** aus.
 4. Klicken Sie auf **Konfigurieren**, und geben Sie dann die folgenden Informationen an, um die App-Informationen zu konfigurieren:
     - **App-Name:** Geben Sie den Namen der App ein.

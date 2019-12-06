@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9561c50e21a9667ccec3f9de3627e7a933cf0736
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584991"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564267"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>Hinzufügen von App-Konfigurationsrichtlinien für verwaltete Android Enterprise-Geräte
 
@@ -34,7 +34,7 @@ Die App-Konfigurationsrichtlinien in Microsoft Intune bieten Einstellungen für 
 > [!NOTE]  
 > Nicht jede App unterstützt App-Konfigurationen. Fragen Sie beim App-Entwickler nach, ob die App Richtlinien für die App-Konfiguration unterstützt.
 
-1. Klicken Sie in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) auf **Client-Apps** > **App-Konfigurationsrichtlinien** >  **Hinzufügen**.
+1. Wählen Sie in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) die Option **Apps** > **App-Konfigurationsrichtlinien** >  **Hinzufügen** aus.
 2. Geben Sie die folgenden Eigenschaften ein:
 
     - **Name**: Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein guter Name für eine Richtlinie ist beispielsweise **Android Enterprise Nine Work-App-Richtlinie für das gesamte Unternehmen**.
@@ -110,7 +110,7 @@ Sie können auch App-Berechtigungen so vorkonfigurieren, dass Apps auf Android-G
 
 Beispiel: Eine App verwendet das Mikrofon des Geräts. Dann wird der Benutzer dazu aufgefordert, der App die Berechtigung zur Verwendung des Mikrofons zu erteilen.
 
-1. Klicken Sie in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) auf **Client-Apps** > **App-Konfigurationsrichtlinien** >  **Hinzufügen**.
+1. Wählen Sie in [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) die Option **Apps** > **App-Konfigurationsrichtlinien** >  **Hinzufügen** aus.
 2. Geben Sie die folgenden Eigenschaften ein:
 
     - **Name**: Geben Sie einen aussagekräftigen Namen für die Richtlinie ein. Benennen Sie Ihre Richtlinien so, dass Sie diese später leicht wiedererkennen. Ein guter Name für eine Richtlinie ist beispielsweise **Android Enterprise-App-Richtlinie für Berechtigungsaufforderungen für das gesamte Unternehmen**.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e404f6591eb042fa4d035f3377e211a219fabe4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1dc2e2ce7e19933accdb1063ccacf99fa3f54b09
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497962"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563967"
 ---
 # <a name="configure-microsoft-launcher"></a>Konfigurieren von Microsoft Launcher
 
@@ -33,7 +33,7 @@ Auf vollständig verwalteten Android Enterprise-Geräten ermöglicht Launcher es
 
 ## <a name="how-to-configure-the-microsoft-managed-home-screen-app"></a>Konfigurieren der Managed Home Screen-App von Microsoft 
 
-Navigieren Sie zur Intune-Konsole im Azure-Portal, und wechseln Sie zu **Client-Apps** > **App-Konfigurationsrichtlinien**. Fügen Sie eine Konfigurationsrichtlinie für **Verwaltete Geräte** unter **Android** hinzu, und wählen Sie **Microsoft Launcher** als zugeordnete App aus. Klicken Sie auf **Konfigurationseinstellungen**, um die verschiedenen verfügbaren Einstellungen für Managed Home Screen zu konfigurieren. 
+Navigieren Sie zum [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), und wählen Sie **Apps** > **App-Konfigurationsrichtlinien** aus. Fügen Sie eine Konfigurationsrichtlinie für **Verwaltete Geräte** unter **Android** hinzu, und wählen Sie **Microsoft Launcher** als zugeordnete App aus. Klicken Sie auf **Konfigurationseinstellungen**, um die verschiedenen verfügbaren Einstellungen für Managed Home Screen zu konfigurieren. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Auswählen eines Formats für die Konfigurationseinstellungen 
 

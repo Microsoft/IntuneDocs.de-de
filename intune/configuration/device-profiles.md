@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0dd9eddd986e6717e6bf706b02a7b06f712a032
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
+ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059901"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74694946"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Anwenden von Einstellungen und Funktionen auf Ihren Geräten mit Geräteprofilen in Microsoft Intune
 
@@ -49,7 +49,7 @@ Diese Vorlagen bieten Administratoren eine vereinfachte Ansicht der Einstellunge
 
 Dieses Features unterstützt folgende Betriebssysteme:
 
-- Windows 10 1809 und höher auf unterstützter Firmware.
+- Windows 10 und höher
 
 ## <a name="certificates"></a>Zertifikate
 
@@ -102,7 +102,7 @@ Die [Schnittstelle zur Konfiguration der Gerätefirmware](device-firmware-config
 
 Dieses Features unterstützt folgende Betriebssysteme:
 
-- Windows 10 und höher
+- Windows 10 1809 und höher auf unterstützter Firmware
 
 ## <a name="device-restrictions"></a>Geräteeinschränkungen
 

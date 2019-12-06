@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78620818bfd13f0292e159c6a3670b5e3af53dab
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: e9649a84650a555e964cd9200ed2295fee5efb9a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709502"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562311"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Schnellstart: Einrichten der automatischen Registrierung für Windows 10-Geräte
 
@@ -41,7 +41,7 @@ Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.micros
 
 In diesem Beispiel wird die MDM-Registrierung verwendet, damit sowohl unternehmenseigenen Geräte als auch BYO-Geräte automatisch registriert werden können. Sie können sich für ein kostenloses Azure Active Directory Premium-Abonnement registrieren.
 
-1. Klicken Sie in Azure auf **Azure Active Directory** > **Mobility (MDM and MAM)** (Mobilität (MDM und MAM)).
+1. Wählen Sie im [Azure-Portal](https://portal.azure.com) die Option **Azure Active Directory** > **Mobilität (MDM und MAM)** aus.
 2. Klicken Sie auf **Holen Sie sich die kostenlose Premium-Testversion, um dieses Feature zu verwenden**. Wenn Sie diese Option verwenden, können Sie eine automatische Registrierung über die kostenlose Premium-Testversion von Azure Active Directory durchführen. 
 
     ![Auswahl der Premium-Testversion für Azure Active Directory](./media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)

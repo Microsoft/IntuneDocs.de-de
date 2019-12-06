@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/14/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0b5f087494e8033cb9645d0a08edd4e1c481a2c
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 31bad59c33a34d0b92d93979b20b58f70fd042ef
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584920"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564093"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Verwenden von Bereitstellungsprofilen für iOS-Apps, um zu verhindern, dass Apps ablaufen
 
@@ -44,8 +44,8 @@ Wenn Sie über Administratorberechtigungen verfügen, können Sie Sicherheitsgru
 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Erstellen eines Bereitstellungsprofils für mobile iOS-Apps
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Klicken Sie im Bereich **Intune** auf **Client-Apps** > **iOS-App-Bereitstellungsprofile** > **Profil erstellen**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **iOS-App-Bereitstellungsprofile** > **Profil erstellen** aus.
 3. Fügen Sie auf der Seite **Basics** (Grundeinstellungen) die folgenden Werte hinzu:
     - **Name**: Geben Sie einen Namen für dieses mobile Bereitstellungsprofil an.
     - **Beschreibung**: Geben Sie optional eine Beschreibung der Richtlinie ein.

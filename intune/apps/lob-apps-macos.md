@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aeae231e07ceeee6a54f8f60ec5d53cc96d55be0
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: 81a084528fdc500bf9b6de0ca5fa847c2e0b3797
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117882"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563920"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen (Line-of-Business, LOB) macOS-Apps zu Microsoft Intune
 
@@ -71,11 +71,9 @@ Sie müssen ein externes Tool herunterladen, das heruntergeladene Tool als ausf�
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im Bereich **Intune** die Option **Client-Apps** aus.
-4. Wählen Sie in der Workload **Client-Apps** die Option **Verwalten** > **Apps** aus.
-5. Wählen Sie über der Liste der Apps **Hinzufügen** aus.
-6. Klicken Sie im Bereich **App hinzufügen** auf die Option **Branchenspezifische App**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
+3. Wählen Sie im Bereich **App hinzufügen** die Option **Branchenspezifische App** als **App-Typ** aus.
 
 ## <a name="step-2---configure-the-app-package-file"></a>Schritt 2: Konfigurieren der App-Paketdatei
 

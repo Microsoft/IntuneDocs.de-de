@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796b1709260c7f507e78aa8404129fa996b59088
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 01ca17c9f8e3fd86e12f225621e6dc0e07bb4acb
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498814"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564083"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Zuweisen von Office 365 zu macOS-Geräten mit Microsoft Intune
 
@@ -41,14 +41,12 @@ Bevor Sie damit beginnen, macOS-Geräten Office 365 hinzuzufügen, sollten Sie s
 ## <a name="create-and-configure-the-app-suite"></a>Erstellen und Konfigurieren der App-Suite
 
 Fügen Sie Office 365 aus dem Bereich **Apps** hinzu.
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im Bereich **Intune** **Client-Apps** aus.
-4. Wählen Sie im Workloadbereich **Client-Apps** unter **Verwalten** die Option **Apps** aus. 
-5. Wählen Sie **Hinzufügen** aus.
-6. Wählen Sie aus der Liste **App-Typ** in der Gruppe **Office 365 Suite** **macOS** aus.
-7. Klicken Sie auf **Informationen zur App Suite**, um Informationen zur App-Suite abzurufen.  
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
+3. Wählen Sie aus der Liste **App-Typ** in der Gruppe **Office 365 Suite** **macOS** aus.
+4. Klicken Sie auf **Informationen zur App Suite**, um Informationen zur App-Suite abzurufen.  
     Diese Informationen helfen Ihnen dabei, die App-Suite in Intune zu identifizieren. Außerdem können Benutzer sie im Unternehmensportal leichter finden.
-8. Geben Sie die folgenden Informationen ein:
+5. Geben Sie die folgenden Informationen ein:
     - **Name der Suite**: Geben Sie den Namen der App-Suite so ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle Suitenamen eindeutig sind. Wenn ein Sammlungsname zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
     - **Beschreibung der Suite**: Geben Sie eine Beschreibung der App-Suite ein.
     - **Herausgeber**: Als Herausgeber wird Microsoft angezeigt.
@@ -60,8 +58,8 @@ Fügen Sie Office 365 aus dem Bereich **Apps** hinzu.
     - **Besitzer**: Als Besitzer wird Microsoft angezeigt.
     - **Anmerkungen**: Geben Sie optional Hinweise zu dieser App ein.
     - **Logo**: Das Office 365-Logo wird gemeinsam mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
-9. Wählen Sie **OK** aus.
-10. Klicken Sie anschließend im Bereich **App hinzufügen** auf **Hinzufügen**.  
+6. Wählen Sie **OK** aus.
+7. Klicken Sie anschließend im Bereich **App hinzufügen** auf **Hinzufügen**.  
     Die Suite wird in der Liste der Apps als einzelnen Eintrag angezeigt.
 
 ## <a name="configure-app-assignments"></a>Konfigurieren von App-Zuweisungen

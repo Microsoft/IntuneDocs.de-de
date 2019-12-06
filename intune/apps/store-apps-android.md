@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3153a470649e86bbafc9e8295a1c68532fc27c63
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ec800064d109cca42878c79ade6777de9b782015
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497699"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563501"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Hinzufügen von Android Store-Apps zu Microsoft Intune
 
@@ -35,12 +35,10 @@ Bevor Sie einem Gerät oder einer Gruppe von Benutzern eine App zuweisen, müsse
 
 Mit den folgenden Schritten können Sie eine Android Store-App aus dem Azure-Portal zu Intune hinzufügen:
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im Bereich **Intune** **Client-Apps** aus.
-4. Wählen Sie im Workloadbereich **Client-Apps** unter **Verwalten** die Option **Apps** aus.
-5. Wählen Sie **Hinzufügen** aus.
-6. Wählen Sie im Bereich **App hinzufügen** aus den verfügbaren **Store-App**-Typen den Typ **Android** aus.
-7. Wählen Sie zum Konfigurieren der App-Informationen die Option **Konfigurieren** aus, und geben Sie die folgenden Informationen an. Öffnen Sie für Android-Apps den [Google Play Store](https://play.google.com/store), und suchen Sie nach der App, die Sie bereitstellen möchten. Wählen Sie die App aus, und notieren Sie sich die App-Informationen. Abhängig von der ausgewählten App wurden einige Werte möglicherweise automatisch ausgefüllt.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
+3. Wählen Sie im Bereich **App hinzufügen** aus den verfügbaren **Store-App**-Typen den Typ **Android** aus.
+4. Wählen Sie zum Konfigurieren der App-Informationen die Option **Konfigurieren** aus, und geben Sie die folgenden Informationen an. Öffnen Sie für Android-Apps den [Google Play Store](https://play.google.com/store), und suchen Sie nach der App, die Sie bereitstellen möchten. Wählen Sie die App aus, und notieren Sie sich die App-Informationen. Abhängig von der ausgewählten App wurden einige Werte möglicherweise automatisch ausgefüllt.
     - **Name**: Geben Sie den Namen der App so ein, wie er im Unternehmensportal angezeigt werden soll. Stellen Sie sicher, dass der App-Name eindeutig ist. Bei doppelten App-Namen wird den Benutzern im Unternehmensportal nur ein Name angezeigt.
     - **Beschreibung**: Geben Sie eine Beschreibung der App ein. Die Beschreibung wird Benutzern im Unternehmensportal angezeigt.
     - **Herausgeber**: Geben Sie den Namen des Herausgebers der App ein.
@@ -54,8 +52,8 @@ Mit den folgenden Schritten können Sie eine Android Store-App aus dem Azure-Por
     - **Besitzer**: Geben Sie optional einen Namen für den Besitzer dieser App ein, z.B. *Personalabteilung*.
     - **Anmerkungen**: Geben Sie optional Hinweise zu dieser App ein.
     - **Logo**: Laden Sie optional ein Symbol hoch, das der App zugeordnet wird. Dieses Symbol wird mit der App angezeigt, wenn Benutzer das Unternehmensportal durchsuchen.
-8. Wählen Sie **OK** aus.
-9. Wählen Sie **Hinzufügen** aus.
+5. Wählen Sie **OK** aus.
+6. Wählen Sie **Hinzufügen** aus.
 
 Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie den ausgewählten Gruppen zuweisen können. 
 

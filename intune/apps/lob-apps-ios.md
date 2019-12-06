@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34f73434483c3b6b74f4d816dbc6f06b5dab2464
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 7e1d3c6a427dcbd4a7946c5f3e180de56e8cb955
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813515"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563519"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen iOS-Apps zu Microsoft Intune
 
@@ -38,11 +38,9 @@ Fügen Sie mithilfe der Informationen in diesem Artikel branchenspezifische (LOB
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im Bereich **Intune** **Client-Apps** aus.
-4. Wählen Sie in der Workload **Client-Apps** die Option **Verwalten** > **Apps** aus.
-5. Wählen Sie oberhalb der App-Liste **Hinzufügen** aus.
-6. Wählen Sie im Bereich **App hinzufügen** die Option **Branchenspezifische App** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
+3. Wählen Sie im Bereich **App hinzufügen** die Option **Branchenspezifische App** als **App-Typ** aus.
 
 ## <a name="step-2-configure-the-app-package-file"></a>Schritt 2: Konfigurieren der App-Paketdatei
 

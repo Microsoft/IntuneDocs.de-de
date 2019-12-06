@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4c1f3d8b6b7edbf51ca2aaa681909e6c220de3c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7567f0ee8c2bac5c3cf3c4e0fae027bdec35e27e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507232"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563550"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Hinzufügen von branchenspezifischen Android-Apps zu Microsoft Intune
 
@@ -38,11 +38,9 @@ Eine branchenspezifische App (LOB) ist eine App, die Sie aus einer App-Installat
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Wählen Sie im Bereich **Intune** **Client-Apps** aus.
-3. Wählen Sie in der Workload **Client-Apps** die Option **Verwalten** > **Apps** aus.
-4. Wählen Sie oberhalb der App-Liste **Hinzufügen** aus.
-5. Wählen Sie im Bereich **App hinzufügen** die Option **Branchenspezifische App** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
+3. Wählen Sie im Bereich **App hinzufügen** die Option **Branchenspezifische App** als **App-Typ** aus.
 
 ## <a name="step-2-configure-the-app-package-file"></a>Schritt 2: Konfigurieren der App-Paketdatei
 

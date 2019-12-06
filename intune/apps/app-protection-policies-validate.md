@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.service: microsoft-intune
 ms.subservice: apps
 ms.localizationpriority: high
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9dda9a1aa1e81b46533c1c15d996807984193d
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: e9c3e775773ab08721cb3a65858f3d8c8402104f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712939"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563737"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup-in-microsoft-intune"></a>Überprüfen der Einrichtung von App-Schutzrichtlinien in Microsoft Intune
 
@@ -43,8 +43,8 @@ Wenn der Test zeigt, dass das Verhalten Ihrer App-Schutzrichtlinie nicht wie erw
 - Weisen die Apps zum Schützen von Apps der einzelnen Benutzer den erwarteten Status auf? Die möglichen Statuswerte für die apps sind **Eingecheckt** und **Nicht eingecheckt**.
 
 ### <a name="user-app-protection-status"></a>Schutzstatus der Benutzer-App
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Klicken Sie auf **Client apps** (Client-Apps) >  **Status des App-Schutzes** und dann auf die Kachel **Zugewiesene Benutzer**. 
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+3. Wählen Sie **Apps** >  **App-Schutzstatus** und dann die Kachel **Zugewiesene Benutzer** aus. 
 4. Klicken Sie auf der Seite **App-Berichterstellung** auf **Benutzer auswählen**, um eine Liste von Benutzern und Gruppen anzuzeigen. 
 5. Suchen Sie einen Benutzer, und wählen Sie ihn aus. Klicken Sie anschließend auf **Benutzer auswählen**. Im oberen Bereich von **App-Berichterstellung** können Sie sehen, ob der Benutzer für den App-Schutz lizenziert ist. Zudem können Sie sehen, ob der Benutzer eine Lizenz für Office 365 und den App-Status aller Geräte des Benutzers besitzt.
 
