@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5983742043dca9d07242315d4aaa97de2ead8d6
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: a0440e2d6f5890b20ccf020c40bb1037bcfcae38
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984020"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564123"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>Selektives Löschen von Daten in Intune über durch App-Schutzrichtlinien festgelegte bedingte Startaktionen
 
@@ -33,16 +33,16 @@ Sie können diese Einstellungen verwenden, um die Unternehmensdaten bei Nichtkon
 
 ## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>Erstellen einer App-Schutzrichtlinie mithilfe von bedingten Startaktionen
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Klicken Sie im Bereich **Intune** auf **Client-Apps** > **App-Schutzrichtlinien**.
-4. Klicken Sie auf **Richtlinie hinzufügen** (Alternativ können Sie eine vorhandene Richtlinie bearbeiten). 
-5. Klicken Sie auf **Erforderliche Einstellungen konfigurieren**, um die Liste der verfügbaren Einstellungen anzuzeigen, die für die Richtlinie konfiguriert werden können. 
-6. Wenn Sie im Bereich „Einstellungen“ nach unten scrollen, finden Sie einen Abschnitt namens **Bedingter Start** mit einer Tabelle, die Sie bearbeiten können.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **App-Schutzrichtlinien** aus.
+3. Klicken Sie auf **Richtlinie erstellen**, und wählen Sie die Plattform des Geräts für Ihre Richtlinie aus. 
+4. Klicken Sie auf **Erforderliche Einstellungen konfigurieren**, um die Liste der verfügbaren Einstellungen anzuzeigen, die für die Richtlinie konfiguriert werden können. 
+5. Wenn Sie im Bereich „Einstellungen“ nach unten scrollen, finden Sie einen Abschnitt namens **Bedingter Start** mit einer Tabelle, die Sie bearbeiten können.
 
     ![Screenshot der Zugriffsaktionen für den Intune-App-Schutz](./media/app-protection-policies-access-actions/apps-selective-wipe-access-actions01.png)
 
-7. Wählen Sie eine **Einstellung** aus, und geben Sie den **Wert** an, den Benutzer erfüllen müssen, um sich bei Ihrer Unternehmens-App anzumelden. 
-8. Wählen Sie die **Aktion** aus, die Benutzer ausführen sollen, wenn Sie Ihre Anforderungen nicht erfüllen. In einigen Fällen können mehrere Aktionen für eine einzelne Einstellung konfiguriert werden. Weitere Informationen finden Sie unter [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md).
+6. Wählen Sie eine **Einstellung** aus, und geben Sie den **Wert** an, den Benutzer erfüllen müssen, um sich bei Ihrer Unternehmens-App anzumelden. 
+7. Wählen Sie die **Aktion** aus, die Benutzer ausführen sollen, wenn Sie Ihre Anforderungen nicht erfüllen. In einigen Fällen können mehrere Aktionen für eine einzelne Einstellung konfiguriert werden. Weitere Informationen finden Sie unter [Erstellen und Zuweisen von App-Schutzrichtlinien](app-protection-policies.md).
 
 ## <a name="policy-settings"></a>Richtlinieneinstellungen 
 

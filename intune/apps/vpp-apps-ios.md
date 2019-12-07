@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff9a37a1dd815b6ec9d7522604796310e7f0b5ce
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: eed0b8a74e69bc1552ae3e2badf485364ba37e94
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984107"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563822"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>Verwalten von iOS- und macOS-Apps, die über das Apple Volume Purchase Program mit Microsoft Intune erworben wurden
 
@@ -82,8 +82,8 @@ Bevor Sie beginnen, müssen Sie ein VPP-Token von Apple abrufen und es in Ihr In
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>So können Sie einen Apple VPP-Token abrufen und hochladen
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im Bereich **Intune** unter **Setup** die Option **Client-Apps** > **Apple-VPP-Token** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+3. Wählen Sie **Mandantenverwaltung** > **Connectors und Token** > **Apple-VPP-Token** aus.
 4. Klicken Sie im Bereich mit der Liste der VPP-Token auf **Erstellen**.
 5. Geben Sie im Bereich **VPP-Token erstellen** die folgenden Informationen an:
     - **VPP-Tokendatei**: Wenn Sie dies noch nicht getan haben, registrieren Sie sich für das Volume Purchase Program für Unternehmen oder für Bildungseinrichtungen. Sobald Sie registriert sind, laden Sie das Apple-VPP-Token für Ihr Konto herunter und wählen es hier aus.
@@ -110,7 +110,7 @@ Sie können die von Apple gespeicherten Daten jederzeit mit Intune synchronisier
 
 ## <a name="to-assign-a-volume-purchased-app"></a>So weisen Sie per Volumenlizenz erworbene Apps zu
 
-1. Wählen Sie im Bereich **Intune** unter **Verwalten** die Optionen **Client-Apps** > **Apps** aus.
+1. Wählen Sie **Apps** > **Alle Apps** aus.
 2. Wählen Sie im Bereich mit der Liste der Apps die App aus, die Sie zuweisen möchten, und klicken Sie dann auf **Zuweisungen**.
 3. Klicken Sie im Bereich ***App-Name*** - **Zuweisungen** auf **Gruppe hinzufügen**. Wählen Sie dann im Bereich **Gruppe hinzufügen** einen **Zuweisungstyp** aus. Anschließend wählen Sie die Azure AD-Benutzer- oder Gerätegruppen aus, denen Sie die App zuweisen möchten.
 5. Wählen Sie für jede von Ihnen ausgewählte Gruppe die folgenden Einstellungen aus:
@@ -176,8 +176,8 @@ Momentan ist es nicht möglich, eine iOS-VPP-App aus Microsoft Intune zu lösche
 
 Der Zugriff auf Apple-VPP-Token und VPP-Apps kann unabhängig gesteuert werden: Verwenden Sie hierzu Benutzerberechtigungen, die benutzerdefinierten Administratorrollen in Intune zugewiesen sind.
 
-* Um einer benutzerdefinierten Intune-Rolle die Verwaltung von Apple-VPP-Token zu gestatten, weisen Sie unter **Client-Apps** > **Apple-VPP-Token** Berechtigungen für **Verwaltete Apps** zu.
-* Um einer benutzerdefinierten Intune-Rolle die Verwaltung von mit iOS-VPP-Token erworbenen Apps zu gestatten, weisen Sie unter **Client-Apps** > **Apple-VPP-Token** Berechtigungen für **Mobile Apps** zu. 
+* Um einer benutzerdefinierten Intune-Rolle die Verwaltung von Apple-VPP-Token zu gestatten, weisen Sie unter **Apps** > **Apple-VPP-Token** Berechtigungen für **Verwaltete Apps** zu.
+* Um einer benutzerdefinierten Intune-Rolle die Verwaltung von mit iOS-VPP-Token erworbenen Apps zu gestatten, weisen Sie unter **Apps** > **Alle Apps** Berechtigungen für **Mobile Apps** zu. 
 
 ## <a name="additional-information"></a>Zusätzliche Informationen
 
@@ -196,7 +196,7 @@ Die Lizenz sollte innerhalb weniger Stunden aktualisiert werden, nachdem eine Ap
 Ja. Der Intune-Administrator kann einer App zu viele Abonnements zuweisen. Dies ist z.B der Fall, wenn der Administrator 100 Lizenzen für die App XYZ erwirbt und dann die App einer Gruppe zuweist, die aus 500 Mitgliedern besteht. Den ersten 100 Mitgliedern (Benutzer oder Geräte) werden dann Lizenzen zugewiesen, den übrigen Mitgliedern hingegen nicht.
 
 ### <a name="how-frequently-does-intune-sync-vpp-tokens-with-apple"></a>Wie häufig synchronisiert Intune VPP-Token mit Apple?
-Intune synchronisiert VPP-Token und Lizenzen zweimal täglich mit Apple. Der Intune-Administrator kann unter **Client-Apps** > **Apple-VPP-Token** eine manuelle Synchronisierung initiieren.
+Intune synchronisiert VPP-Token und Lizenzen zweimal täglich mit Apple. Der Intune-Administrator kann unter **Apps** > **Apple-VPP-Token** eine manuelle Synchronisierung initiieren.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

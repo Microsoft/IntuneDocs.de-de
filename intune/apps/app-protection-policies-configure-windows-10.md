@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e1ff8fd39d301bd685e9806c319f49e9189d7f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 41c08d1912bf9c79507c2a6627205979504f340d
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507420"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564237"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Vorbereitungen zum Konfigurieren von App-Schutzrichtlinien für Windows 10 
 
@@ -33,13 +33,12 @@ Aktivieren Sie die Verwaltung für mobile Anwendungen (Mobile Application Manage
 
 ## <a name="to-configure-the-mam-provider"></a>Konfigurieren des MAM-Anbieters
 
-1. Melden Sie sich beim Azure-Portal an, und klicken Sie auf **Azure Active Directory**.
-
-2. Wählen Sie **Mobilität (MDM und MAM)** in der Gruppe **Verwalten** aus.
-
-3. Klicken Sie auf **Microsoft Intune**.
-
-4. Konfigurieren Sie die Einstellungen in der Gruppe **Standard-MAM-URLs wiederherstellen** auf dem Blatt **Konfigurieren**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Zum Wechseln von Dashboards wählen Sie **Alle Dienste** und dann **M365 Azure Active Directory** aus.
+3. Wählen Sie **Azure Active Directory** aus.
+4. Wählen Sie **Mobilität (MDM und MAM)** in der Gruppe **Verwalten** aus.
+5. Klicken Sie auf **Microsoft Intune**.
+6. Konfigurieren Sie die Einstellungen in der Gruppe **Standard-MAM-URLs wiederherstellen** im Bereich **Konfigurieren**.
 
    **MAM-Benutzerbereich**  
    Verwenden Sie die automatische Registrierung von MAM, um Unternehmensdaten auf den Windows-Geräten Ihrer Mitarbeiter zu verwalten. Die automatische MAM-Registrierung wird für BYOD-Szenarios konfiguriert.<ul><li>**Keine**<br>Wählen Sie diese Option, wenn kein Benutzer in MAM registriert werden kann.</li><li>**Einige**<br>Wählen Sie Azure AD-Gruppen aus, die Benutzer enthalten, die in MAM registriert werden.</li><li>**Alle**<br>Wählen Sie diese Option, wenn alle Benutzer in MAM registriert werden können.</li></ul>
@@ -53,7 +52,7 @@ Aktivieren Sie die Verwaltung für mobile Anwendungen (Mobile Application Manage
    **URL für MAM-Kompatibilität**  
    Die URL für MAM-Konformität wird für Microsoft Intune nicht unterstützt. Dieses Eingabefeld muss leer bleiben, damit die Schutzrichtlinien angewendet werden können. 
 
-5. Klicken Sie auf **Speichern**.
+7. Klicken Sie auf **Speichern**.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199208"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563638"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Konfigurieren der Microsoft Intune-Unternehmensportal-App
 
@@ -37,7 +37,7 @@ Im Microsoft Intune-Unternehmensportal können Benutzer auf Unternehmensdaten zu
 > [!Tip]
 > Wenn Sie das Unternehmensportal anpassen, gelten die Konfigurationen sowohl für die Unternehmensportal-Website als auch für die Unternehmensportal-Apps. Beachten Sie, dass Benutzern eine Intune-Lizenz zugewiesen werden muss, damit sie auf die Unternehmensportalwebsite zugreifen können.
 
-Durch Anpassen des Unternehmensportals können Sie Ihren Endbenutzern eine vertraute und hilfreiche Benutzeroberfläche bereitstellen. Klicken Sie hierzu im Intune-Portal auf **Client apps** > **Branding and customization** (Client-Apps > Branding und Anpassung), und konfigurieren Sie anschließend die erforderlichen Einstellungen.
+Durch Anpassen des Unternehmensportals können Sie Ihren Endbenutzern eine vertraute und hilfreiche Benutzeroberfläche bereitstellen. Wählen Sie hierzu im Intune-Portal **Apps** > **Branding und Anpassung** aus, und konfigurieren Sie anschließend die erforderlichen Einstellungen.
 
 Wenn ein Benutzer eine iOS-Anwendung über das Unternehmensportal installiert, wird eine Eingabeaufforderung angezeigt. Dies passiert, wenn die iOS-App mit dem App-Store, einem Volumenlizenzprogramm (Volume-Purchase Program, VPP) oder einer branchenspezifischen App (Line-Of-Business, LOB) verknüpft ist. In der Eingabeaufforderung kann der Benutzer die Aktion akzeptieren oder die Verwaltung der App erlauben. Die Eingabeaufforderung zeigt den Namen Ihres Unternehmens oder – wenn dieser nicht verfügbar ist – den Text **Unternehmensportal** an. 
 
@@ -92,7 +92,7 @@ Wählen Sie ein Logo aus, das auf weißen oder hellen Hintergründen am besten a
 
 ### <a name="brand-image-for-company-portal"></a>Markenbild für das Unternehmensportal
 
-Zeigen Sie ein Markenbild an, das Ihre Unternehmensmarke widerspiegelt. Nachdem Sie Ihre Änderungen gespeichert haben, können Sie im Intune-Webportal im oberen Bereich des Blatts auf **Preview your settings** (Vorschau Ihrer Einstellungen) klicken, um Ihre Konfiguration zu überprüfen. Beachten Sie, dass Sie das Markenbild nur auf einem iOS-Gerät in der Vorschau anzeigen können und nicht im Intune-Webportal. 
+Zeigen Sie ein Markenbild an, das Ihre Unternehmensmarke widerspiegelt. Nachdem Sie Ihre Änderungen gespeichert haben, können Sie im Intune-Webportal im oberen Fensterbereich **Vorschau Ihrer Einstellungen** auswählen, um Ihre Konfiguration zu überprüfen. Beachten Sie, dass Sie das Markenbild nur auf einem iOS-Gerät in der Vorschau anzeigen können und nicht im Intune-Webportal. 
 
 |Feldname|Weitere Informationen|
 |---|---|

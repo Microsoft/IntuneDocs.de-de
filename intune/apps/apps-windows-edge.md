@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af24b5fe33bc1e794529ef5a5ab6975eed4fb9cc
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: b4839340ba1f3bad6f28a1120d882d0f600b1d44
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709917"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563565"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>Hinzufügen von Microsoft Edge für Windows 10 zu Microsoft Intune
 
@@ -34,7 +34,7 @@ Bevor Sie Apps bereitstellen, konfigurieren, überwachen oder schützen können,
 > [!NOTE]
 > Microsoft Edge *Version 77 und höher* ist auch für macOS verfügbar.
 > 
-> Sie können die integrierte Anwendungsbereitstellung von Microsoft Edge für Workplace Join-Computer nicht verwenden. Die integrierte Anwendungsbereitstellung erfordert die Intune-Verwaltungserweiterung, die nur für mit AAD verknüpfte Geräte vorhanden ist. Sie können weiterhin Microsoft Edge *Version 77 und höher* mithilfe einer *MSI-Datei* bereitstellen, die in **Client-Apps** hochgeladen wurde. Weitere Informationen finden Sie unter [Hinzufügen branchenspezifischer Windows-Apps zu Microsoft Intune](~/apps/lob-apps-windows.md).
+> Sie können die integrierte Anwendungsbereitstellung von Microsoft Edge für Workplace Join-Computer nicht verwenden. Die integrierte Anwendungsbereitstellung erfordert die Intune-Verwaltungserweiterung, die nur für mit AAD verknüpfte Geräte vorhanden ist. Sie können weiterhin Microsoft Edge *Version 77 und höher* mithilfe einer *MSI-Datei* bereitstellen, die in **Apps** hochgeladen wurde. Weitere Informationen finden Sie unter [Hinzufügen branchenspezifischer Windows-Apps zu Microsoft Intune](~/apps/lob-apps-windows.md).
 
 ## <a name="prerequisites"></a>Voraussetzungen
 - Windows 10 RS2 und höher ist erforderlich.
@@ -43,15 +43,15 @@ Bevor Sie Apps bereitstellen, konfigurieren, überwachen oder schützen können,
 ## <a name="configure-the-app-in-intune"></a>Konfigurieren der App in Intune
 Mithilfe der folgenden Schritte können Sie Microsoft Edge, Version 77 und höher, zu Intune hinzufügen:
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Wählen Sie im **Intune**-Bereich die Option **Client-Apps** > **Apps** > **Hinzufügen** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
 3. Wählen Sie in der Liste **App-Typ** unter **Microsoft Edge, Version 77 und höher** die Option **Windows 10** aus.
 
 ## <a name="configure-app-information"></a>Konfigurieren von App-Informationen
 In diesem Schritt stellen Sie Informationen über diese App-Bereitstellung bereit. Diese Informationen helfen Ihnen, die App in Intune zu identifizieren, und Endbenutzer können sie leichter im Unternehmensportal finden.
 
-1. Klicken Sie auf **App-Informationen**, um das Blatt **App-Informationen** anzuzeigen.
-2. Auf dem Blatt **App-Informationen** stellen Sie Informationen über diese App-Bereitstellung bereit. Diese Informationen helfen Ihnen, die App in Intune zu identifizieren, und Endbenutzer können sie leichter im Unternehmensportal finden.
+1. Klicken Sie auf **App-Informationen**, um den Bereich **App-Informationen** anzuzeigen.
+2. Stellen Sie im Bereich **App-Informationen** Informationen über diese App-Bereitstellung bereit. Diese Informationen helfen Ihnen, die App in Intune zu identifizieren, und Endbenutzer können sie leichter im Unternehmensportal finden.
     - **Name**: Geben Sie den Namen der App ein, wie er im Unternehmensportal angezeigt wird. Stellen Sie sicher, dass alle Namen eindeutig sind. Wenn ein App-Name zweimal vergeben wird, wird den Benutzern im Unternehmensportal nur eine der Apps angezeigt.
     - **Beschreibung**: Geben Sie eine Beschreibung der App ein. Beispielsweise können Sie die Zielbenutzer in der Beschreibung auflisten.
     - **Herausgeber**: Als Herausgeber wird Microsoft angezeigt.
@@ -67,8 +67,8 @@ In diesem Schritt stellen Sie Informationen über diese App-Bereitstellung berei
 ## <a name="configure-app-settings"></a>App-Einstellungen konfigurieren
 In diesem Schritt konfigurieren Sie Installationsoptionen für die App.
 
-1. Wählen Sie **App-Einstellungen** auf dem Blatt **App hinzufügen** aus.
-2. Wählen Sie auf dem Blatt **App-Einstellungen** entweder **Beta** oder **Dev** aus der Liste **Channel** aus, um zu bestimmen, von welchem Edge-Channel Sie die App bereitstellen.
+1. Wählen Sie im Bereich **App hinzufügen** die Option **App-Einstellungen** aus.
+2. Wählen Sie im Bereich **App-Einstellungen** entweder **Beta** oder **Dev** aus der Liste **Channel** aus, um zu bestimmen, von welchem Edge-Channel Sie die App bereitstellen.
     - Der **Beta**-Channel ist die stabilste Microsoft Edge-Vorschauversion und die beste Wahl für ein vollständiges Pilotprojekt in Ihrer Organisation. Durch größere Updates alle sechs Wochen umfasst jedes Release die Erkenntnisse und Verbesserungen im Dev-Channel.
     - Der **Dev**-Channel ist bereit für Unternehmensfeedback von Windows, Windows Server und macOS. Er wird wöchentlich aktualisiert und enthält die neuesten Verbesserungen und Fehlerbehebungen.
 
@@ -85,7 +85,7 @@ Sie können Bereichsmarkierungen verwenden, um zu bestimmen, wer Client-App-Info
 4.  Klicken Sie auf **Auswählen** > **OK**.
 
 ## <a name="add-the-app"></a>Hinzufügen der App
-Wenn Sie die Konfiguration der App abgeschlossen haben, wählen Sie **Hinzufügen** vom Blatt **App hinzufügen** aus. 
+Wenn Sie die Konfiguration der App abgeschlossen haben, wählen Sie **Hinzufügen** im Bereich **App hinzufügen** aus. 
 
 Die von Ihnen erstellte App wird in der Liste der Apps angezeigt, in der Sie sie den ausgewählten Gruppen zuweisen können. 
 

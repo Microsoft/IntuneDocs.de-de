@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592092"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564317"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>Verwalten des Webzugriffs durch einen mittels Microsoft Intune-Richtlinien geschützte Browser
 
@@ -91,29 +91,28 @@ Wenn Sie verhindern wollen, dass mit Azure AD verbundene Web-Apps Intune Managed
 > [!TIP]  
 > Der bedingte Zugriff ist eine Technologie von Azure Active Directory (Azure AD). Bei dem Knoten für bedingten Zugriff, auf den aus *Intune* zugegriffen wird, handelt es sich um denselben Knoten, auf den aus *Azure AD* zugegriffen wird.  
 
-
-1. Klicken Sie im Intune-Portal auf **Bedingter Zugriff** > **Neue Richtlinie**. 
-2. Klicken Sie im Abschnitt **Zugriffssteuerungen** des Blatts auf die Option **Erteilen**. 
-3. Klicken Sie auf **Genehmigte Client-App erforderlich**. 
-4. Klicken Sie auf dem Blatt **Erteilen** auf **Auswählen**. Diese Richtlinie muss den Cloud-Apps zugewiesen sein, auf die nur über die Intune Managed Browser-App zugegriffen werden soll.
-
-    ![Azure AD: Managed Browser-Richtlinie für bedingten Zugriff](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
-
-5. Klicken Sie im Abschnitt **Zuweisungen** auf **Bedingungen** > **Client-Apps**. Dann wird das Blatt **Client-Apps** angezeigt.
-6. Klicken Sie unter **Konfigurieren** auf **Ja**, um die Richtlinie auf bestimmte Client-Apps anzuwenden.
-7. Überprüfen Sie, ob der **Browser** als Client-App ausgewählt ist.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **Bedingter Zugriff** > **Neue Richtlinie** aus.
+3. Fügen Sie den **Namen** für die Richtlinie hinzu. 
+4. Klicken Sie im Abschnitt **Zuweisungen** auf **Bedingungen** > **Client-Apps**. Der Bereich **Client-Apps** wird angezeigt.
+5. Klicken Sie unter **Konfigurieren** auf **Ja**, um die Richtlinie auf bestimmte Client-Apps anzuwenden.
+6. Überprüfen Sie, ob der **Browser** als Client-App ausgewählt ist.
 
     ![Azure AD: Managed Browser – Auswählen von Client-Apps](./media/app-configuration-managed-browser/managed-browser-conditional-access-02.png)
 
     > [!NOTE]
     > Wenn Sie festlegen möchten, welche nativen Apps (Apps, die nicht browserbasiert sind) auf die Cloudanwendungen zugreifen können, können Sie auch **Mobile apps and desktop clients** (Mobile Apps und Desktop-Clients) auswählen.
 
-8. Klicken Sie im Bereich **Zuweisungen** auf **Benutzer und Gruppen**, und wählen Sie dann die Benutzer und Gruppen aus, die Sie dieser Richtlinie zuweisen möchten. 
+7. Klicken Sie auf **Fertig** > **Fertig**.
+8. Wählen Sie im Bereich **Zuweisungen** die Option **Benutzer und Gruppen** und dann die Benutzer und Gruppen aus, die Sie dieser Richtlinie zuweisen möchten. Klicken Sie auf **Fertig**, um den Bereich zu schließen.
+9. Wählen Sie im Abschnitt **Zuweisungen** mithilfe der Option **Cloud-Apps oder -aktionen** aus, welche Apps mit dieser Richtlinie geschützt werden sollen. Klicken Sie auf **Fertig**, um den Bereich zu schließen.
+10. Wählen Sie im Abschnitt **Zugriffssteuerungen** des Bereichs auf **Gewähren**. 
+11. Klicken Sie auf **Zugriff gewähren** und dann auf **Genehmigte Client-App erforderlich**. 
+12. Klicken Sie im Bereich **Gewähren** auf **Auswählen**. Diese Richtlinie muss den Cloud-Apps zugewiesen sein, auf die nur über die Intune Managed Browser-App zugegriffen werden soll.
 
-    > [!NOTE]
-    > Benutzer müssen ebenfalls durch die Intune-App-Schutzrichtlinie involviert werden, sodass App-Konfigurationsrichtlinien für sie gelten. Weitere Informationen zu Intune-App-Schutzrichtlinien finden Sie unter [Was sind App-Schutzrichtlinien?](app-protection-policy.md)
+    ![Azure AD: Managed Browser-Richtlinie für bedingten Zugriff](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
 
-9. Klicken Sie im Abschnitt **Zuweisungen** auf **Cloud-Apps**, um auszuwählen, welche Apps mit dieser Richtlinie geschützt werden sollen.
+
 
 Sobald diese Richtlinie konfiguriert wurde, müssen Benutzer Intune Managed Browser verwenden, um auf die mit Azure AD verbundenen Web-Apps zuzugreifen, die Sie mit dieser Richtlinie geschützt haben. Wenn Benutzer versuchen, dafür einen nicht verwalteten Browser zu verwenden, erhalten sie die Meldung, dass Intune Managed Browser verwendet werden muss.
 
@@ -133,27 +132,28 @@ Für SSO muss Ihr Gerät unter iOS durch Microsoft Authenticator und unter Andro
 >[!IMPORTANT]
 >Damit die App-Konfigurationen angewendet werden können, muss der geschützte Browser des Benutzers oder eine andere App auf dem Gerät bereits mit der [Intune-App-Schutzrichtlinie]( ../app-protection-policy.md) verwaltet werden.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Gehen Sie zur Liste „Verwalten“ auf dem Blatt **Client-Apps**, und wählen Sie die Option **App-Konfigurationsrichtlinien** aus.
-4. Wählen Sie auf dem Blatt **App-Konfigurationsrichtlinien** die Option **Hinzufügen** aus.
-5. Geben Sie auf dem Blatt **Konfigurationsrichtlinie hinzufügen** einen **Namen** und optional eine **Beschreibung** für die App-Konfigurationseinstellungen ein.
-6. Wählen Sie als Typ der **Geräteregistrierung** die Option **Verwaltete Apps** aus.
-7. Wählen Sie **Erforderliche App auswählen** und dann auf dem Blatt **Ziel-Apps** die Option **Managed Browser** und/oder **Microsoft Edge** für iOS, für Android oder für beides aus.
-8. Wählen Sie **OK** aus, um zum Blatt **Konfigurationsrichtlinie hinzufügen** zurückzukehren.
-9. Wählen Sie **Konfigurationseinstellungen** aus. Auf dem Blatt **Konfiguration** definieren Sie Schlüssel-Wert-Paare, um Konfigurationen für Managed Browser bereitzustellen. In den folgenden Abschnitten erhalten Sie weitere Informationen zu den unterschiedlichen Schlüssel-Wert-Paaren, die Sie definieren können.
-10. Wählen Sie abschließend **OK** aus.
-11. Wählen Sie auf dem Blatt **Konfigurationsrichtlinie hinzufügen** die Option **Hinzufügen** aus.
-12. Die neue Konfiguration wird erstellt und auf dem Blatt **App-Konfiguration** angezeigt.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen** > **Verwaltete Apps** aus.
+3. Geben Sie auf der Seite **Grundeinstellungen** des Bereichs **App-Konfigurationsrichtlinie erstellen** einen **Namen** und optional eine **Beschreibung** für die App-Konfigurationseinstellungen ein.
+4. Wählen Sie **Öffentliche App auswählen** und dann **Managed Browser** und/oder **Edge** für iOS, für Android oder für beides aus.
+5. Klicken Sie auf **Auswählen**, um zum Bereich **App-Konfigurationsrichtlinie erstellen** zurückzukehren.
+6. Klicken Sie auf **Weiter**, um die Seite **Einstellungen** anzuzeigen.
+7. Definieren Sie auf der Seite **Einstellungen** Schlüssel-Wert-Paare, um Konfigurationen für die App bereitzustellen. In den folgenden Abschnitten erhalten Sie weitere Informationen zu den unterschiedlichen Schlüssel-Wert-Paaren, die Sie definieren können.
+8. Klicken Sie auf **Weiter**, um die Seite **Zuweisung** anzuzeigen, und klicken Sie dann auf **Einzuschließende Gruppen auswählen** und/oder **Auszuschließende Gruppen auszuwählen**.
+9. Klicken Sie auf **Weiter**, um die Seite **Überprüfen + erstellen** anzuzeigen.
+10. Nachdem Sie die App-Konfigurationsrichtlinie überprüft haben, klicken Sie auf **Erstellen**.
+
+Die neue Konfiguration wird erstellt und auf im Bereich **App-Konfigurationsrichtlinien** angezeigt.
 
 
 ## <a name="assign-the-configuration-settings-you-created"></a>Zuweisen der erstellten Konfigurationseinstellungen
 
 Sie weisen die Einstellungen Azure AD-Gruppen von Benutzern zu. Haben diese Benutzer die geschützte Browser-Ziel-App installiert, wird die App durch die angegebenen Einstellungen verwaltet.
 
-1. Wählen Sie auf dem Blatt **Client-Apps** im Intune-Dashboard für die Verwaltung von mobilen Anwendungen **App-Konfigurationsrichtlinie** aus.
+1. Wählen Sie im Bereich **Apps** im Intune-Dashboard für die Verwaltung von mobilen Anwendungen die Option **App-Konfigurationsrichtlinien** aus.
 2. Wählen Sie aus der Liste der App-Konfigurationen diejenige aus, die Sie zuweisen möchten.
-3. Wählen Sie auf dem nächsten Blatt **Zuweisungen** aus.
-4. Wählen Sie auf dem Blatt **Zuweisungen** die Azure AD-Gruppe aus, der Sie die App-Konfiguration zuweisen möchten, und wählen Sie dann **OK** aus.
+3. Wählen Sie im nächsten Bereich **Zuweisungen** aus.
+4. Wählen Sie im Bereich **Zuweisungen** die Azure AD-Gruppe, der Sie die App-Konfiguration zuweisen möchten, und dann **OK** aus.
 
 ## <a name="how-to-set-microsoft-edge-as-the-protected-browser-for-your-organization"></a>Einrichten von Microsoft Edge als geschützten Browser für Ihre Organisation
 
@@ -170,7 +170,7 @@ Wenn diese Einstellung auf „false“ festgelegt ist, gilt Folgendes:
 - Wenn Ihre Benutzer **entweder** den Managed Browser **oder** Microsoft Edge heruntergeladen haben, wird die entsprechende Browser-App gestartet. 
 - Wenn Ihre Benutzer keine der Browser-Apps heruntergeladen haben, werden sie aufgefordert, den Managed Browser herunterzuladen.
 
-Verwenden Sie das oben beschriebene Verfahren, um eine Microsoft Edge-App-Konfiguration zu erstellen. Geben Sie das folgende Schlüssel-Wert-Paar an, wenn Sie die **Konfigurationseinstellungen** auf dem Blatt **Konfiguration** auswählen (Schritt 9):
+Verwenden Sie das oben beschriebene Verfahren, um eine Microsoft Edge-App-Konfiguration zu erstellen. Geben Sie das folgende Schlüssel-Wert-Paar an, wenn Sie die **Konfigurationseinstellungen** im Bereich **Konfiguration** auswählen (Schritt 9):
 
 | Key                              |  Wert   |
 |----------------------------------|----------|

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81a2575c0d4e6cdcfdffe09e37880f56647bc835
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8d1a8ee3f6d5eb190fb2ee252dfb5f6c23a1cf16
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496435"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563774"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Erstellen und Bereitstellen von WIP-App-Schutzrichtlinien (Windows Information Protection) in Intune
 
@@ -71,53 +71,51 @@ Nachdem Sie Intune in Ihrer Organisation eingerichtet haben, können Sie eine WI
 > Weitere Informationen zum Erstellen von WIP-Richtlinien für Intune, einschließlich der verfügbaren Einstellungen und deren Konfiguration, finden Sie in der Bibliothek mit der Dokumentation zur Windows-Sicherheit unter [Erstellen einer Windows Information Protection-Richtlinie (WIP) mit MAM mithilfe des Azure-Portals für Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure). 
 
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
-2. Klicken Sie auf **Alle Dienste** > **Intune**.
-3. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Client-Apps** aus.
-4. Wählen Sie auf dem Blatt **Client-Apps** die Option **App-Schutzrichtlinien** aus.
-5. Klicken Sie auf **Richtlinie hinzufügen**, um das Blatt **Richtlinie hinzufügen** anzuzeigen.
-6. Fügen Sie die folgenden Werte hinzu:
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **App-Schutzrichtlinien** > **Richtlinie erstellen** aus.
+3. Fügen Sie die folgenden Werte hinzu:
     - **Name:** Geben Sie einen Namen für Ihre neue Richtlinie ein (erforderlich).
     - **Beschreibung:** Geben Sie eine Beschreibung ein (optional).
     - **Plattform:** Wählen Sie **Windows 10** als unterstützte Plattform für Ihre App-Schutzrichtlinie aus.
     - **Registrierungsstatus:** Wählen Sie **Ohne Registrierung** als Registrierungsstatus für Ihre Richtlinie aus.
-7. Wählen Sie **Erstellen** aus. Die Richtlinie wird erstellt und in der Tabelle auf dem Blatt **App-Schutzrichtlinien** angezeigt.
+4. Wählen Sie **Erstellen** aus. Die Richtlinie wird erstellt und in der Tabelle im Bereich **App-Schutzrichtlinien** angezeigt.
 
 ## <a name="to-add-recommended-apps-to-your-protected-apps-list"></a>Hinzufügen von empfohlenen Apps zur Liste der geschützten Apps
 
-1. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Client-Apps** aus.
-2. Wählen Sie auf dem Blatt **Client-Apps** die Option **App-Schutzrichtlinien** aus.
-3. Wählen Sie auf dem Blatt **App-Schutzrichtlinien** die Richtlinie aus, die Sie ändern möchten. Das Blatt **Intune-App-Schutz** wird angezeigt.
-4. Wählen Sie auf dem Blatt **Intune-App-Schutz** die Option **Geschützte Apps** aus. Das Blatt **Geschützte Apps** wird geöffnet und zeigt alle Apps an, die bereits in der Liste für diese App-Schutzrichtlinie enthalten sind.
-5. Klicken Sie auf **Apps hinzufügen**. Die Informationen bei **Apps hinzufügen** zeigen eine gefilterte Liste von Apps. Mit der Liste im oberen Bereich des Blatts können Sie den Listenfilter ändern.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **App-Schutzrichtlinien** aus.
+3. Wählen Sie im Bereich **App-Schutzrichtlinien** die Richtlinie aus, die Sie ändern möchten. Der Bereich **Intune-App-Schutz** wird angezeigt.
+4. Wählen Sie im Bereich **Intune-App-Schutz** die Option **Geschützte Apps** aus. Der Bereich **Geschützte Apps** wird geöffnet und zeigt alle Apps an, die bereits in der Liste für diese App-Schutzrichtlinie enthalten sind.
+5. Klicken Sie auf **Apps hinzufügen**. Die Informationen bei **Apps hinzufügen** zeigen eine gefilterte Liste von Apps. Mit der Liste oben im Bereich können Sie den Listenfilter ändern.
 6. Wählen Sie alle Apps aus, denen Sie Zugriff auf Ihre Unternehmensdaten gewähren möchten.
-7. Klicken Sie auf **OK**. Das Blatt **Geschützte Apps** wird aktualisiert und zeigt alle ausgewählten Apps an.
+7. Klicken Sie auf **OK**. Der Bereich **Geschützte Apps** wird aktualisiert und zeigt alle ausgewählten Apps an.
 8. Klicken Sie auf **Speichern**.
 
 ## <a name="add-a-store-app-to-your-protected-apps-list"></a>Hinzufügen einer Store-App zur Liste der geschützten Apps
 
 **Hinzufügen eine Store-App**
-1. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Client-Apps** aus.
-2. Wählen Sie auf dem Blatt **Client-Apps** die Option **App-Schutzrichtlinien** aus.
-3. Wählen Sie auf dem Blatt **App-Schutzrichtlinien** die Richtlinie aus, die Sie ändern möchten. Das Blatt **Intune-App-Schutz** wird angezeigt.
-4. Wählen Sie auf dem Blatt **Intune-App-Schutz** die Option **Geschützte Apps** aus. Das Blatt **Geschützte Apps** wird geöffnet und zeigt alle Apps an, die bereits in der Liste für diese App-Schutzrichtlinie enthalten sind.
-5. Klicken Sie auf **Apps hinzufügen**. Die Informationen bei **Apps hinzufügen** zeigen eine gefilterte Liste von Apps. Mit der Liste im oberen Bereich des Blatts können Sie den Listenfilter ändern.
+
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **App-Schutzrichtlinien** aus.
+3. Wählen Sie im Bereich **App-Schutzrichtlinien** die Richtlinie aus, die Sie ändern möchten. Der Bereich **Intune-App-Schutz** wird angezeigt.
+4. Wählen Sie im Bereich **Intune-App-Schutz** die Option **Geschützte Apps** aus. Der Bereich **Geschützte Apps** wird geöffnet und zeigt alle Apps an, die bereits in der Liste für diese App-Schutzrichtlinie enthalten sind.
+5. Klicken Sie auf **Apps hinzufügen**. Die Informationen bei **Apps hinzufügen** zeigen eine gefilterte Liste von Apps. Mit der Liste oben im Bereich können Sie den Listenfilter ändern.
 6. Wählen Sie **Store-Apps** aus der Liste aus.
 7. Geben Sie Werte für **Name**, **Herausgeber**, **Produktname** und **Aktion** ein. Stellen Sie sicher, dass der Wert für **Aktion** auf **Zulassen** festgelegt ist, damit die App auf Ihre Unternehmensdaten zugreifen kann.
-9. Klicken Sie auf **OK**. Das Blatt **Geschützte Apps** wird aktualisiert und zeigt alle ausgewählten Apps an.
+9. Klicken Sie auf **OK**. Der Bereich **Geschützte Apps** wird aktualisiert und zeigt alle ausgewählten Apps an.
 10. Klicken Sie auf **Speichern**.
 
 ## <a name="add-a-desktop-app-to-your-protected-apps-list"></a>Hinzufügen einer Desktop-App zur Liste der geschützten Apps
 
 **So fügen Sie eine Desktop-App hinzu**
-1. Wählen Sie auf dem Blatt **Microsoft Intune** die Option **Client-Apps** aus.
-2. Wählen Sie auf dem Blatt **Client-Apps** die Option **App-Schutzrichtlinien** aus.
-3. Wählen Sie auf dem Blatt **App-Schutzrichtlinien** die Richtlinie aus, die Sie ändern möchten. Das Blatt **Intune-App-Schutz** wird angezeigt.
-4. Wählen Sie auf dem Blatt **Intune-App-Schutz** die Option **Geschützte Apps** aus. Das Blatt **Geschützte Apps** wird geöffnet und zeigt alle Apps an, die bereits in der Liste für diese App-Schutzrichtlinie enthalten sind.
-5. Klicken Sie auf **Apps hinzufügen**. Die Informationen bei **Apps hinzufügen** zeigen eine gefilterte Liste von Apps. Mit der Liste im oberen Bereich des Blatts können Sie den Listenfilter ändern.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **App-Schutzrichtlinien** aus.
+3. Wählen Sie im Bereich **App-Schutzrichtlinien** die Richtlinie aus, die Sie ändern möchten. Der Bereich **Intune-App-Schutz** wird angezeigt.
+4. Wählen Sie im Bereich **Intune-App-Schutz** die Option **Geschützte Apps** aus. Der Bereich **Geschützte Apps** wird geöffnet und zeigt alle Apps an, die bereits in der Liste für diese App-Schutzrichtlinie enthalten sind.
+5. Klicken Sie auf **Apps hinzufügen**. Die Informationen bei **Apps hinzufügen** zeigen eine gefilterte Liste von Apps. Mit der Liste oben im Bereich können Sie den Listenfilter ändern.
 6. Wählen Sie **Desktop-Apps** aus der Liste aus.
 7. Geben Sie Werte für **Name**, **Herausgeber**, **Produktname**, **Datei**, **Mindestversion**, **Maximale Version** und **Aktion** ein. Stellen Sie sicher, dass der Wert für **Aktion** auf **Zulassen** festgelegt ist, damit die App auf Ihre Unternehmensdaten zugreifen kann.
-9. Klicken Sie auf **OK**. Das Blatt **Geschützte Apps** wird aktualisiert und zeigt alle ausgewählten Apps an.
+9. Klicken Sie auf **OK**. Der Bereich **Geschützte Apps** wird aktualisiert und zeigt alle ausgewählten Apps an.
 10. Klicken Sie auf **Speichern**.
 
 ## <a name="wip-learning"></a>WIP Learning
@@ -150,7 +148,7 @@ Nachdem Sie WIP deaktiviert haben, wird versucht, WIP-getaggte Dateien auf den l
 
 ### <a name="add-a-protection-mode"></a>Hinzufügen eines Schutzmodus
 
-1. Wählen Sie auf dem Blatt **App-Richtlinie** den Namen Ihrer Richtlinie und anschließend die Option **Erforderliche Einstellungen** aus.
+1. Wählen Sie im Bereich **App-Richtlinie** den Namen Ihrer Richtlinie und anschließend die Option **Erforderliche Einstellungen** aus.
 
     ![Screenshot des Bereichs „Trainingsmodus“](./media/windows-information-protection-policy-create/learning-mode-sc1.png)
 
@@ -160,7 +158,7 @@ Nachdem Sie WIP deaktiviert haben, wird versucht, WIP-getaggte Dateien auf den l
 
 1. Öffnen Sie das [Azure-Portal](https://portal.azure.com). Wählen Sie **Alle Dienste** aus. Geben Sie **Intune** in das Filtertextfeld ein.
 
-3. Wählen Sie **Intune** > **Client-Apps** aus.
+3. Wählen Sie **Intune** > **Apps** aus.
 
 4. Klicken Sie anschließend auf **Status des App-Schutzes** > **Berichte** > **Windows Information Protection-Tutorial**.  
 
@@ -188,9 +186,9 @@ Sie können nicht nur die Option **Der Windows Search-Indexerstellung die Suche 
 
 Nachdem Sie Ihre WIP-App-Schutzrichtlinie erstellt haben, müssen Sie sie Ihrer Organisation über MAM bereitstellen.
 
-1. Wählen Sie auf dem Blatt **App-Richtlinie** die neu erstellte App-Schutzrichtlinie aus. Wählen Sie anschließend **Benutzergruppen** > **Benutzergruppe hinzufügen** aus.
+1. Wählen Sie im Bereich **App-Richtlinie** die neu erstellte App-Schutzrichtlinie aus. Wählen Sie anschließend **Benutzergruppen** > **Benutzergruppe hinzufügen** aus.
 
-    Auf dem Blatt **Benutzergruppe hinzufügen** wird eine Liste von Benutzergruppen geöffnet, die aus allen Sicherheitsgruppen in Azure Active Directory besteht.
+    Im Bereich **Benutzergruppe hinzufügen** wird eine Liste von Benutzergruppen geöffnet, die aus allen Sicherheitsgruppen in Azure Active Directory besteht.
 
 2. Wählen Sie die Gruppe aus, auf die Ihre Richtlinie angewendet werden soll, und klicken Sie dann auf **Auswählen**, um die Richtlinie bereitzustellen.
 

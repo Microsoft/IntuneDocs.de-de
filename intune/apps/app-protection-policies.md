@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98976403d58c33f22f7ceeabec1d38f076f9bbe7
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592067"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563726"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Erstellen und Zuweisen von App-Schutzrichtlinien
 
@@ -44,9 +44,9 @@ Informationen zum Hinzufügen von Line-of-Business-Apps (LOB) Ihrer Organisation
 Befolgen Sie beim Erstellen neuer App-Schutzrichtlinien für iOS-/iPadOS- und Android-Apps einen modernen Intune-Prozessablauf für App-Schutzrichtlinien.
 
 ### <a name="create-an-iosipados-or-android-app-protection-policy"></a>Erstellen einer iOS-/iPadOS- oder Android-App-Schutzrichtlinie
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Klicken Sie im Intune-Portal auf **Client-Apps** > **App protection policies** (App-Schutzrichtlinien). Mit dieser Auswahl werden die Details zu **App-Schutzrichtlinien** geöffnet und Sie können neue Richtlinien erstellen und vorhandene bearbeiten.
-3. Klicken Sie auf **Richtlinie erstellen**, und wählen Sie entweder **iOS/iPadOS** oder **Android** aus. Das Blatt **Richtlinie erstellen** wird angezeigt.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie im Intune-Portal **Apps** > **App-Schutzrichtlinien** aus. Mit dieser Auswahl werden die Details zu **App-Schutzrichtlinien** geöffnet und Sie können neue Richtlinien erstellen und vorhandene bearbeiten.
+3. Klicken Sie auf **Richtlinie erstellen**, und wählen Sie entweder **iOS/iPadOS** oder **Android** aus. Der Bereich **Richtlinie erstellen** wird angezeigt.
 4. Fügen Sie auf der Seite **Basics** (Grundeinstellungen) die folgenden Werte hinzu:
 
     | Wert | Beschreibung |
@@ -57,7 +57,7 @@ Befolgen Sie beim Erstellen neuer App-Schutzrichtlinien für iOS-/iPadOS- und An
 
     Der Wert **Plattform** wird basierend auf der oben von Ihnen ausgewählten Option festgelegt.
 
-    ![Screenshot der Seite „Basiscs“ (Grundeinstellungen) auf dem Blatt „Richtlinie erstellen“](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
+    ![Screenshot der Seite „Grundeinstellungen“ im Bereich „Richtlinie erstellen“](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
 
 5. Klicken Sie auf **Weiter**, um die Seite **Apps** anzuzeigen.<br>
     Auf der Seite **Apps** können Sie auswählen, wie Sie diese Richtlinie auf Apps auf verschiedenen Geräten anwenden möchten. Sie müssen mindestens eine App hinzufügen.<p>
@@ -171,7 +171,7 @@ Viele Organisationen erlauben Benutzern sowohl die Verwendung von mit Intune-MDM
 
 Da die App-Schutzrichtlinien von Intune an die Identität eines Benutzers gekoppelt sind, können die Schutzeinstellungen sowohl auf registrierte (MDM-verwaltete) als auch auf nicht registrierte Geräte (kein MDM) angewendet werden. Aus diesem Grund können Sie mit einer App-Schutzrichtlinie von Intune entweder Intune-registrierte oder nicht registrierte iOS- und Android-Geräte als Ziel verwenden. Sie können über eine Schutzrichtlinie für nicht verwaltete Geräte verfügen, bei denen Steuerelemente für die Verhinderung von Datenverlust (DLP) vorhanden sind, und über eine separate Schutzrichtlinie für mit MDM-verwaltete Geräte, bei denen die DLP-Steuerelemente nicht so streng sind. Weitere Informationen dazu, wie dies bei persönlichen Android Enterprise-Geräten funktioniert, finden Sie unter [App-Schutzrichtlinien und Arbeitsprofile](android-deployment-scenarios-app-protection-work-profiles.md).
 
-Um diese Richtlinien zu erstellen, navigieren Sie in der Intune-Konsole zu **Client-Apps** > **App-Schutzrichtlinien**, und klicken Sie dann auf **Richtlinie hinzufügen**. Sie können auch eine vorhandene App-Schutzrichtlinie bearbeiten. Navigieren Sie zur Seite **Apps**, und bestätigen Sie, dass die Option **Auf Apps auf allen Gerätetypen anwenden** auf den Standardwert **Ja** festgelegt ist, wenn die App-Schutzrichtlinie sowohl auf verwaltete als auch auf nicht verwaltete Geräte angewendet werden soll. Wenn Sie eine feiner abgestufte Zuweisung basierend auf dem Verwaltungszustand durchführen möchten, legen Sie die Option **Auf Apps auf allen Gerätetypen anwenden** auf **Nein** fest. 
+Um diese Richtlinien zu erstellen, navigieren Sie in der Intune-Konsole zu **Apps** > **App-Schutzrichtlinien**, und wählen Sie dann **Richtlinie hinzufügen** aus. Sie können auch eine vorhandene App-Schutzrichtlinie bearbeiten. Navigieren Sie zur Seite **Apps**, und bestätigen Sie, dass die Option **Auf Apps auf allen Gerätetypen anwenden** auf den Standardwert **Ja** festgelegt ist, wenn die App-Schutzrichtlinie sowohl auf verwaltete als auch auf nicht verwaltete Geräte angewendet werden soll. Wenn Sie eine feiner abgestufte Zuweisung basierend auf dem Verwaltungszustand durchführen möchten, legen Sie die Option **Auf Apps auf allen Gerätetypen anwenden** auf **Nein** fest. 
 
 ### <a name="device-types"></a>Device types (Gerätetypen)
 

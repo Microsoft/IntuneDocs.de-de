@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: e86aeb3191c1cfdf2fc9dfab3a4474327b3fbb06
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813482"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564208"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>Konfigurieren der Managed Home Screen-App von Microsoft für Android Enterprise
 
@@ -31,12 +31,12 @@ Managed Home Screen ist die App, die für unternehmenseigene dedizierte Android 
 
 ## <a name="when-to-configure-the-microsoft-managed-home-screen-app"></a>Wann die Managed Home Screen-App von Microsoft konfiguriert werden sollte
 
-Wenn Ihnen Einstellungen über „Gerätekonfiguration“ zur Verfügung stehen, konfigurieren Sie die Einstellungen normalerweise dort. Auf diese Weise können Sie Zeit sparen, Fehler minimieren und erhalten eine bessere Benutzeroberfläche für Intune-Support. Allerdings stehen einige der Einstellungen für Managed Home Screen derzeit nur über das Blatt **App-Konfigurationsrichtlinien** in der Intune-Konsole zur Verfügung. Anhand dieses Dokuments lernen Sie, wie Sie die verschiedenen Einstellungen entweder mithilfe des Konfigurations-Designers oder eines JSON-Skripts konfigurieren. 
+Wenn Ihnen Einstellungen über „Gerätekonfiguration“ zur Verfügung stehen, konfigurieren Sie die Einstellungen normalerweise dort. Auf diese Weise können Sie Zeit sparen, Fehler minimieren und erhalten eine bessere Benutzeroberfläche für Intune-Support. Allerdings stehen einige der Einstellungen für Managed Home Screen derzeit nur im Bereich **App-Konfigurationsrichtlinien** in der Intune-Konsole zur Verfügung. Anhand dieses Dokuments lernen Sie, wie Sie die verschiedenen Einstellungen entweder mithilfe des Konfigurations-Designers oder eines JSON-Skripts konfigurieren. 
 
 > [!NOTE]
-> Es ist derzeit möglich und ratsam, Anwendungen für die Zulassungsliste und angeheftete Weblinks über **Client-Apps** und **Gerätekonfiguration** festzulegen. Die vollständige Liste von Einstellungen, die in **Gerätekonfiguration** zur Verfügung stehen und sich auf Managed Home Screen auswirken, finden Sie unter [Einstellungen dedizierter Geräte](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
+> Es ist derzeit möglich und ratsam, Anwendungen für die Zulassungsliste und angeheftete Weblinks über **Apps** und **Gerätekonfiguration** festzulegen. Die vollständige Liste von Einstellungen, die in **Gerätekonfiguration** zur Verfügung stehen und sich auf Managed Home Screen auswirken, finden Sie unter [Einstellungen dedizierter Geräte](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings).  
 
-Navigieren Sie zuerst zur Intune-Konsole im Azure-Portal, und wechseln Sie zu **Client-Apps** > **App-Konfigurationsrichtlinien**. Fügen Sie eine Konfigurationsrichtlinie für **Verwaltete Geräte** unter **Android** hinzu, und wählen Sie **Managed Home Screen** als zugeordnete App aus. Klicken Sie auf **Konfigurationseinstellungen**, um die verschiedenen verfügbaren Einstellungen für Managed Home Screen zu konfigurieren. 
+Navigieren Sie zuerst zum [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), und wählen Sie **Apps** > **App-Konfigurationsrichtlinien** aus. Fügen Sie eine Konfigurationsrichtlinie für **Verwaltete Geräte** unter **Android** hinzu, und wählen Sie **Managed Home Screen** als zugeordnete App aus. Klicken Sie auf **Konfigurationseinstellungen**, um die verschiedenen verfügbaren Einstellungen für Managed Home Screen zu konfigurieren. 
 
 ## <a name="choosing-a-configuration-settings-format"></a>Auswählen eines Formats für die Konfigurationseinstellungen
 

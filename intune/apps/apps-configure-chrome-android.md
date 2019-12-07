@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/07/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14e9aa6e82d7b3e24350de8770f02b0a08695e1a
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: c344a518890a2309a7805d61a5675e2646029bbb
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801664"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564044"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>Konfigurieren von Google Chrome für Android-Geräte mit Intune 
 
@@ -36,8 +36,8 @@ Sie können Intune-App-Konfigurationsrichtlinien zum Konfigurieren von Google Ch
 
 ## <a name="add-the-google-chrome-app-to-intune"></a>Hinzufügen der Google Chrome-App zu Intune
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Wählen Sie im Bereich **Intune** die Option **Client-Apps** > **Apps** > **Hinzufügen** aus, und fügen Sie dann die **Verwaltete Google Play**-App hinzu.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus, und fügen Sie dann die App **Verwaltetes Google Play** hinzu.
 3. Wechseln Sie zu verwaltetem Google Play, suchen Sie **Google Chrome**, und erteilen Sie die Genehmigung.
 
     ![Suchen und Genehmigen von Google Chrome](~/apps/media/apps-configure-chrome-android/search.png)

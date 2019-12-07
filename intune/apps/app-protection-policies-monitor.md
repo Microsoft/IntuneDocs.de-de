@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 26972bb034ea4cb65f1bf64c61c20395cf94dc36
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889592"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564184"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Überwachen von App-Schutzrichtlinien
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -42,9 +42,8 @@ Die Beibehaltungsdauer für den Schutz von App-Daten beträgt 90 Tage. Alle App-
 
 ## <a name="summary-view"></a>Zusammenfassungsansicht
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im Bereich **Intune** die Option **Client-Apps** aus.
-4. Um die Zusammenfassungsansicht anzuzeigen, wählen Sie in der Workload **Client-Apps** unter **Überwachen** die Option **Status des App-Schutzes** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+3. Wählen Sie **Apps** > **Überwachen** > **Status des App-Schutzes** aus.
 
    ![Screenshot der Zusammenfassungskachel des Bereichs der mobilen Anwendungsverwaltung mit Intune](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
 
@@ -78,7 +77,7 @@ Sie können nach einem einzelnen Benutzer suchen und den Kompatibilitätsstatus 
 >[!NOTE]
 > Die Spalte **Letzte Synchronisierung** stellt sowohl im Benutzerstatusbericht in der Konsole als auch im [exportierbaren CSV-Bericht](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities) der App-Schutzrichtlinie den gleichen Wert dar. Der Unterschied besteht in einer kurzen Verzögerung bei der Synchronisierung der Werte in den beiden Berichten. 
 >
-> Die in „Letzte Synchronisierung“ angegebene Uhrzeit ist der Zeitpunkt, zu dem Intune die App-Instanz zuletzt gesehen hat. Wenn ein Benutzer eine App startet, könnte diese abhängig vom letzten Eincheckzeitpunkt zu diesem Startzeitpunkt mit dem Intune-App-Schutz-Dienst kommunizieren. Informieren Sie sich über [die Wiederholungsintervallzeiten für den Eincheckvorgang der App-Schutzrichtlinie](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). Wenn ein Benutzer diese spezielle App also im letzten Eincheckintervall (in der Regel 30 Minuten für die aktive Verwendung) nicht verwendet hat und die App gestartet wird, dann gilt Folgendes:
+> Die in „Letzte Synchronisierung“ angegebene Uhrzeit ist der Zeitpunkt, zu dem Intune die App-Instanz zuletzt gesehen hat. Wenn ein Benutzer eine App startet, könnte diese abhängig vom letzten Eincheckzeitpunkt zu diesem Startzeitpunkt mit dem Intune-App-Schutz-Dienst kommunizieren. Informieren Sie sich über [die Wiederholungsintervallzeiten für den Eincheckvorgang der App-Schutzrichtlinie](~/apps/app-protection-policy-delivery.md). Wenn ein Benutzer diese spezielle App also im letzten Eincheckintervall (in der Regel 30 Minuten für die aktive Verwendung) nicht verwendet hat und die App gestartet wird, dann gilt Folgendes:
 >
 > - Der exportierbare CSV-Bericht der App-Schutzrichtlinie hat im Rahmen von 1 Minute (mindestens) bis 30 Minuten (Maximum) die neueste Zeit.
 > - Der Benutzerstatusbericht erhält sofort die neueste Zeit.
@@ -104,7 +103,7 @@ Um die Berichterstattung für einen Benutzer anzuzeigen, gehen Sie folgendermaß
 > Wenn für den gesuchten Benutzer keine MAM-Richtlinie bereitgestellt wurde, wird Ihnen eine Meldung angezeigt, dass auf den Benutzer keine MAM-Richtlinien angewendet werden.
 
 ### <a name="flagged-users"></a>Gekennzeichnete Benutzer
-In der Detailansicht werden die Fehlermeldung, die App, auf die bei Auftreten des Fehlers zugegriffen wurde, die betroffene Betriebssystemplattform des Geräts und ein Zeitstempel angezeigt. Der Fehler tritt in der Regel bei Geräten mit Jailbreak (iOS) oder Rootzugriff (Android) auf. Hier werden auch Benutzer gemeldet, deren Geräte bei der bedingten Startüberprüfung vom „SafetyNet-Gerätenachweis“ gekennzeichnet wurden. Außerdem werden die von Google angegebenen Gründe aufgeführt. Damit ein Benutzer aus dem Bericht entfernt werden kann, muss der Status des Geräts selbst geändert werden. Dies geschieht nach der nächsten Stammerkennungsüberprüfung (bzw. Jailbreak-/SafetyNet-Überprüfung), die ein positives Ergebnis melden muss. Wenn das Gerät tatsächlich wiederhergestellt wird, wird die Aktualisierung des Berichts über gekennzeichnete Benutzer durchgeführt, wenn das Blatt erneut geladen wird.
+In der Detailansicht werden die Fehlermeldung, die App, auf die bei Auftreten des Fehlers zugegriffen wurde, die betroffene Betriebssystemplattform des Geräts und ein Zeitstempel angezeigt. Der Fehler tritt in der Regel bei Geräten mit Jailbreak (iOS) oder Rootzugriff (Android) auf. Hier werden auch Benutzer gemeldet, deren Geräte bei der bedingten Startüberprüfung vom „SafetyNet-Gerätenachweis“ gekennzeichnet wurden. Außerdem werden die von Google angegebenen Gründe aufgeführt. Damit ein Benutzer aus dem Bericht entfernt werden kann, muss der Status des Geräts selbst geändert werden. Dies geschieht nach der nächsten Stammerkennungsüberprüfung (bzw. Jailbreak-/SafetyNet-Überprüfung), die ein positives Ergebnis melden muss. Wenn das Gerät tatsächlich wiederhergestellt wird, wird die Aktualisierung des Berichts über gekennzeichnete Benutzer durchgeführt, wenn der Bereich erneut geladen wird.
 
 ### <a name="users-with-potentially-harmful-apps"></a>Benutzer mit potenziell schädlichen Apps
 Die ausführliche Ansicht zeigt Folgendes:
@@ -121,14 +120,14 @@ Hier werden Benutzer gemeldet, deren Geräte bei der bedingten Startüberprüfun
 
 ## <a name="reporting-view"></a>Berichterstellung
 
-Dieselben Berichte finden Sie auch oben auf dem Blatt **Status des App-Schutzes**.
+Dieselben Berichte finden Sie auch oben im Bereich **Status des App-Schutzes**.
 
 > [!NOTE]
-> Intune bietet zusätzliche Felder zur Geräteberichtserstellung, einschließlich Feldern für App-Registrierungs-ID, Android-Hersteller, Modell und Sicherheitspatchversion sowie iOS-Modell. In Intune greifen Sie auf diese Felder durch Auswahl von **Client-Apps** > **Status des App-Schutzes** > **Bericht zum App-Schutz: iOS, Android** zu. Darüber hinaus werden diese Parameter Sie bei der Konfiguration der **Zulassen**-Liste für den Gerätehersteller (Android), der **Zulassen**-Liste für das Gerätemodell (Android und iOS) sowie der Einstellung der mindestens erforderlichen Android-Sicherheitspatchversion unterstützen. 
+> Intune bietet zusätzliche Felder zur Geräteberichtserstellung, einschließlich Feldern für App-Registrierungs-ID, Android-Hersteller, Modell und Sicherheitspatchversion sowie iOS-Modell. In Intune greifen Sie auf diese Felder zu, indem Sie **Apps** > **Status des App-Schutzes** > **Bericht zum App-Schutz: iOS, Android** auswählen. Darüber hinaus werden diese Parameter Sie bei der Konfiguration der **Zulassen**-Liste für den Gerätehersteller (Android), der **Zulassen**-Liste für das Gerätemodell (Android und iOS) sowie der Einstellung der mindestens erforderlichen Android-Sicherheitspatchversion unterstützen. 
 
-Als Unterstützung für den Konformitätsstatus der MAM-Richtlinie stehen weitere Berichte zur Verfügung. Wählen Sie zum Anzeigen dieser Berichte **Client-Apps** > **Status des App-Schutzes** > **Berichte** aus. 
+Als Unterstützung für den Konformitätsstatus der MAM-Richtlinie stehen weitere Berichte zur Verfügung. Wählen Sie zum Anzeigen dieser Berichte **Apps** > **Status des App-Schutzes** > **Berichte** aus. 
 
-Das Blatt **Berichte** bietet mehrere Berichte zu Benutzern und Apps, z.B.:
+Der Bereich **Berichte** bietet mehrere Berichte zu Benutzern und Apps, z.B.:
 
 - **Benutzerbericht:** Darin werden dieselben Informationen dargestellt, die auch im obigen Abschnitt [Detailansicht](app-protection-policies-monitor.md#detailed-view) im Bericht **Benutzerstatus** angezeigt werden.
 
@@ -139,7 +138,7 @@ Das Blatt **Berichte** bietet mehrere Berichte zu Benutzern und Apps, z.B.:
     - Diese Apps werden entweder von einem Benutzer oder von einer App verwendet, der bzw. die derzeit nicht unter eine MAM-Richtlinie fällt.
     - Alle Apps sind eingecheckt, erhalten jedoch keine MAM-Richtlinien.
 
-    ![Screenshot vom Blatt „App-Berichterstellung“ eines Benutzers mit Informationen zu drei Apps](./media/app-protection-policies-monitor/MAM-reporting-4.png)
+    ![Screenshot des Bereichs „App-Berichterstellung“ eines Benutzers mit Informationen zu drei Apps](./media/app-protection-policies-monitor/MAM-reporting-4.png)
 
 - **Benutzerkonfigurationsbericht:** Abhängig vom ausgewählten Benutzer enthält dieser Bericht Details zu App-Konfigurationen, die der Benutzer erhalten hat.
 - **Bericht zur App-Konfiguration:** Abhängig von der ausgewählten Plattform und App enthält dieser Bericht Details zu den Benutzern, die Konfigurationen für die ausgewählte App erhalten haben.

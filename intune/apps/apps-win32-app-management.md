@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf860056c3918f7ae90e6b9b850a98a37dcfd56e
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: e8b3ee799374f4b3777f771d4bd6e186ddaeb55c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143217"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564025"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Eigenständiges Intune – Win32-App-Verwaltung
 
@@ -101,17 +101,17 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
 
 ### <a name="step-1-specify-the-software-setup-file"></a>Schritt 1: Angeben der Softwaresetupdatei
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im **Intune**-Bereich die Option **Client-Apps** > **Apps** > **Hinzufügen** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+3. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
 4. Wählen Sie **Windows-App (Win32)** aus der Dropdownliste im App-Bereich **Hinzufügen** aus.
 
-    ![Screenshot des Blatts „App hinzufügen“ – Dropdownfeld zum Hinzufügen des Typs](./media/apps-win32-app-management/apps-win32-app-01.png)
+    ![Screenshot des Bereichs „App hinzufügen“ – Dropdownfeld zum Hinzufügen des Typs](./media/apps-win32-app-management/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>Schritt 2: Hochladen der App-Paketdatei
 
 1. Wählen Sie im Bereich **App hinzufügen** die Option **App-Paketdatei** aus, um eine Datei auszuwählen. Der Bereich „App-Paketdatei“ wird angezeigt.
 
-    ![Screenshot des Blatts „App-Paketdatei“](./media/apps-win32-app-management/apps-win32-app-02.png)
+    ![Screenshot des Bereichs „App-Paketdatei“](./media/apps-win32-app-management/apps-win32-app-02.png)
 
 2. Wählen Sie im Bereich **App-Paketdatei** die Schaltfläche zum Durchsuchen. Wählen Sie dann eine Windows-Installationsdatei mit der Erweiterung *.intunewin* aus.
 
@@ -180,7 +180,7 @@ Die folgenden Schritte enthaltenen Informationen zum Hinzufügen einer Windows-A
     - **Mindestens erforderliche Anzahl logischer Prozessoren**: Optional können Sie die Anzahl von logischen Prozessoren hinzufügen, die für die Installation der App mindestens erforderlich sind.
     - **Mindestens erforderliche CPU-Geschwindigkeit (MHz)** : Optional können Sie die CPU-Geschwindigkeit hinzufügen, die für die Installation der App mindestens erforderlich ist.
 
-3. Klicken Sie auf **Hinzufügen**, um das Blatt **Add a Requirement rule** (Anforderungsregel hinzufügen) anzuzeigen und weitere Anforderungsregeln zu konfigurieren. Wählen Sie den **Anforderungstyp** aus, um die Art der Regel auszuwählen, mit der Sie bestimmen, auf welche Art eine Anforderung überprüft wird. Anforderungsregeln können auf Dateisysteminformationen, Registrierungswerten oder PowerShell-Skripts basieren. 
+3. Wählen Sie **Hinzufügen** aus, um den Bereich **Anforderungsregel hinzufügen** anzuzeigen und weitere Anforderungsregeln zu konfigurieren. Wählen Sie den **Anforderungstyp** aus, um die Art der Regel auszuwählen, mit der Sie bestimmen, auf welche Art eine Anforderung überprüft wird. Anforderungsregeln können auf Dateisysteminformationen, Registrierungswerten oder PowerShell-Skripts basieren. 
     - **Datei:** Wenn Sie **Datei** als **Anforderungstyp** auswählen, muss die Anforderungsregel eine Datei oder einen Ordner, ein Datum, eine Version oder eine Größe erkennen. 
         - **Pfad** – Der vollständige Pfad des Ordners, der die zu erkennende Datei oder den Ordner enthält.
         - **Datei oder Ordner** – Die zu erkennende Datei oder der zu erkennende Ordner.
@@ -297,7 +297,7 @@ An dieser Stelle haben Sie alle Schritte zum Hinzufügen einer Win32-App zu Intu
 
 ## <a name="app-dependencies"></a>App-Abhängigkeiten
 
-App-Abhängigkeiten sind Anwendungen, die installiert sein müssen, bevor Ihre Win32-App installiert werden kann. Sie können anfordern, dass andere Apps als Abhängigkeiten installiert werden. Das heißt, das Gerät muss die abhängige(n) App(s) installieren, bevor die Win32-App installiert wird. Es sind maximal 100 Abhängigkeiten möglich. Dazu zählen die Abhängigkeiten aller eingeschlossenen Abhängigkeiten sowie die App selbst. Sie können Win32-App-Abhängigkeiten erst hinzufügen, nachdem Ihre Win32-App zu Intune hinzugefügt und darin hochgeladen wurde. Sobald Ihre Win32-App hinzugefügt wurde, sehen Sie die Option **Abhängigkeiten** auf dem Blatt für Ihre Win32-App. 
+App-Abhängigkeiten sind Anwendungen, die installiert sein müssen, bevor Ihre Win32-App installiert werden kann. Sie können anfordern, dass andere Apps als Abhängigkeiten installiert werden. Das heißt, das Gerät muss die abhängige(n) App(s) installieren, bevor die Win32-App installiert wird. Es sind maximal 100 Abhängigkeiten möglich. Dazu zählen die Abhängigkeiten aller eingeschlossenen Abhängigkeiten sowie die App selbst. Sie können Win32-App-Abhängigkeiten erst hinzufügen, nachdem Ihre Win32-App zu Intune hinzugefügt und darin hochgeladen wurde. Sobald Ihre Win32-App hinzugefügt wurde, sehen Sie die Option **Abhängigkeiten** im Bereich für Ihre Win32-App. 
 
 Jede Win32-App-Abhängigkeit muss auch eine Win32-App sein. Eine Abhängigkeit von anderen App-Typen, z. B. einzelne branchenspezifische Apps mit MSI oder Store-Apps, wird nicht unterstützt.
 
@@ -307,7 +307,7 @@ Sie können auswählen, ob jede abhängige App automatisch installiert wird. Sta
 
 Führen Sie die folgenden Schritte aus, um eine App-Abhängigkeit zu Ihrer Win32-App hinzuzufügen:
 
-1. Wählen Sie in Intune **Client-Apps** > **Apps** aus, um die Liste der hinzugefügten Client-Apps anzuzeigen. 
+1. Wählen Sie in Intune **Apps** > **Alle Apps** aus, um die Liste der hinzugefügten Client-Apps anzuzeigen. 
 2. Wählen Sie eine hinzugefügte **Windows-App (Win32)** aus. 
 3. Klicken Sie auf **Abhängigkeiten**, um die abhängigen Apps hinzuzufügen, die installiert werden müssen, bevor die Win32-App installiert werden kann. 
 4. Klicken Sie auf **Hinzufügen**, um eine App-Abhängigkeit hinzuzufügen.
@@ -343,12 +343,12 @@ Sie können den Beginn und das Ende der Verfügbarkeit einer Win32-App konfiguri
 
 Legen Sie die App-Verfügbarkeit basierend auf einem Datum und einer Uhrzeit für eine erforderliche App fest, indem Sie die folgenden Schritte ausführen:
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Wählen Sie auf dem Blatt **Intune** die Option **Client-Apps** > **Apps** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** aus.
 3. Wählen Sie eine vorhandene **Windows-App (Win32)** aus der Liste aus. 
-4. Klicken Sie auf dem Blatt „App“ auf **Zuweisungen** > **Gruppe hinzufügen**. 
+4. Wählen Sie im Bereich „App“ **Zuweisungen** > **Gruppe hinzufügen** aus. 
 5. Legen Sie den **Zuweisungstyp** auf **Erforderlich** fest. Beachten Sie, dass die App-Verfügbarkeit basierend auf dem Zuweisungstyp festgelegt werden kann. Der **Zuweisungstyp** kann **Erforderlich**, **Für registrierte Geräte verfügbar** oder **Deinstalliert** sein.
-6. Wählen Sie **Eingeschlossene Gruppen** aus, um zu bestimmen, welcher Benutzergruppe die App zugewiesen wird. Das Blatt **Zuweisen** wird angezeigt.
+6. Wählen Sie **Eingeschlossene Gruppen** aus, um zu bestimmen, welcher Benutzergruppe die App zugewiesen wird. Der Bereich **Zuweisen** wird angezeigt.
 7. Legen Sie **Diese App für alle Benutzer als erforderlich festlegen** auf **Ja** fest.
 
     > [!NOTE]
@@ -358,18 +358,18 @@ Legen Sie die App-Verfügbarkeit basierend auf einem Datum und einer Uhrzeit fü
     > - **Deinstallieren**: Sie können die Option ***Diese App für alle Benutzer deinstallieren** und/oder die Option **Diese App für alle Geräte deinstallieren** auswählen.
 
 8. Wählen Sie **Bearbeiten** aus, um die Optionen der **Funktionalität für Endbenutzer** zu ändern.
-9. Legen Sie auf dem Blatt **Zuweisung bearbeiten** die **Endbenutzerbenachrichtigungen** auf **Alle Popupbenachrichtigungen anzeigen** fest. Beachten Sie, dass Sie **Endbenutzerbenachrichtigungen** auf **Alle Popupbenachrichtigungen anzeigen**, **Popupbenachrichtigungen für Computerneustarts anzeigen** oder **Alle Popupbenachrichtigungen ausblenden** festlegen können.
+9. Legen Sie im Bereich **Zuweisung bearbeiten** die **Endbenutzerbenachrichtigungen** auf **Alle Popupbenachrichtigungen anzeigen** fest. Beachten Sie, dass Sie **Endbenutzerbenachrichtigungen** auf **Alle Popupbenachrichtigungen anzeigen**, **Popupbenachrichtigungen für Computerneustarts anzeigen** oder **Alle Popupbenachrichtigungen ausblenden** festlegen können.
 10. Legen Sie die **App-Verfügbarkeit** auf die Option **Bestimmtes Datum und bestimmte Uhrzeit** fest, und wählen Sie Datum und Uhrzeit aus. Dieses Datum und diese Uhrzeit geben an, wann die App auf das Gerät des Endbenutzers heruntergeladen wird. 
 11. Legen Sie **Stichtag für App-Installation** auf die Option **Bestimmtes Datum und bestimmte Uhrzeit** fest, und wählen Sie Datum und Uhrzeit aus. Dieses Datum und diese Uhrzeit geben an, wann die App auf dem Gerät des Endbenutzers installiert wird. Wenn für denselben Benutzer oder dasselbe Gerät mehr als eine Zuweisung durchgeführt wird, wird der Stichtag für die App-Installation basierend auf dem frühestmöglichen Zeitpunkt ausgewählt.
 12. Klicken Sie neben der Option **Kulanzzeitraum neu starten** auf **Aktiviert**. Die Neustarttoleranzperiode beginnt, sobald die App-Installation auf dem Gerät abgeschlossen wurde. Wenn diese Option deaktiviert ist, kann das Gerät ohne Warnung neu gestartet werden. <br>Sie können die folgenden Optionen anpassen:
-    - **Kulanzzeitraum für Geräteneustart (Minuten)** : Der Standardwert beträgt 1440 Minuten (24 Stunden). Dieser Wert kann maximal 2 Wochen betragen.
+    - **Kulanzzeitraum für Geräteneustart (Minuten)** : Der Standardwert beträgt 1440 Minuten (24 Stunden). Dieser Wert kann maximal 2 Wochen betragen.
     - **Wählen Sie aus, wann das Dialogfeld „Minuten bis zum Neustart“ vor der Durchführung des Neustarts angezeigt wird**: Der Standardwert beträgt 15 Minuten.
     - **Dem Benutzer das Aufschieben der Neustartbenachrichtigung gestatten**: Sie können **Ja** oder **Nein** auswählen.
         - **Zeitraum bis zur erneuten Erinnerung auswählen (Minuten)** : Der Standardwert beträgt 240 Minuten (4 Stunden). Der Wert „erneut erinnern“ darf nicht länger als die Neustarttoleranzperiode sein.
 13. Klicken Sie auf **OK** > **OK** > **OK** > **Speichern**, um die Zuweisung hinzuzufügen.
 
 ## <a name="toast-notifications-for-win32-apps"></a>Popupbenachrichtigungen für Win32-Apps 
-Bei Bedarf können Sie die Anzeige von Popupbenachrichtigungen für die Benutzer pro App-Zuweisung unterdrücken. Wählen Sie in Intune **Client-Apps** > **Apps** > App-Auswahl > **Zuweisungen** > **Gruppen einschließen**. 
+Bei Bedarf können Sie die Anzeige von Popupbenachrichtigungen für die Benutzer pro App-Zuweisung unterdrücken. Wählen Sie in Intune **Apps** > **Alle Apps**, dann die gewünschte App und anschließend **Zuweisungen** > **Gruppen einschließen** aus. 
 
 > [!NOTE]
 > Win32-Apps, die über die Intune-Verwaltungserweiterung installiert wurden, werden auf Geräten mit aufgehobener Registrierung nicht deinstalliert. Administratoren können Zuweisungsausnahmen nutzen, um Win32-Apps für BYOD-Geräte auszuschließen.

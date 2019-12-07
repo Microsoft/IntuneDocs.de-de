@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee3ecd64254c0e212ffc86155d677bf18ba647a
-ms.sourcegitcommit: f6b82c62af81a2643a1aaec774afa42d02eef352
+ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566182"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564164"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Hinzufügen App-Konfigurationsrichtlinien für verwaltete iOS-Geräte
 
@@ -51,8 +51,7 @@ Nachdem Sie die eingeschlossenen Gruppen für Ihre Anwendungskonfigurationsricht
 ## <a name="create-an-app-configuration-policy"></a>Erstellen einer Konfigurationsrichtlinie für Apps
 
 1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie die Workload **Client-Apps** aus.
-4. Wählen Sie in der Gruppe **Verwalten** **App-Konfigurationsrichtlinien** und dann **Hinzufügen** aus.
+3. Wählen Sie **Apps** > **App-Konfigurationsrichtlinien** > **Hinzufügen** aus.
 5. Legen Sie die folgenden Details fest:
     - **Name:** Der Name des Profils, das im Azure-Portal angezeigt wird.
     - **Beschreibung:** Die Beschreibung des Profils, das im Azure-Portal angezeigt wird.
@@ -74,7 +73,7 @@ Nachdem Sie die eingeschlossenen Gruppen für Ihre Anwendungskonfigurationsricht
 13. Wählen Sie die Registerkarte **Ausschließen**. 
 14. Klicken Sie auf **Select groups to exclude** (Auszuschließende Gruppen auswählen), um den zugehörigen Bereich anzuzeigen.
 
-    ![Screenshot des Blatts „Select groups to exclude“ (Auszuschließende Gruppen auswählen) im Bereich „Richtlinienzuweisungen“](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+    ![Screenshot des Bereichs „Auszuschließende Gruppen auswählen“ im Bereich „Richtlinienzuweisungen“](./media/app-configuration-policies-use-ios/app-config-policy03.png)
 15. Wählen Sie die Gruppen aus, die Sie ausschließen möchten, und klicken Sie dann auf **Auswählen**.
 
     >[!NOTE]
@@ -181,10 +180,9 @@ Darüber hinaus unterstützt Intune die folgenden Tokentypen in der Eigenschafte
 
 DEP-Registrierungen (Apple-Programm zur Geräteregistrierung) sind nicht kompatibel mit der App Store-Version der Unternehmensportal-App. Sie können die Unternehmensportal-App jedoch für die Unterstützung von iOS-DEP-Geräten konfigurieren.
 
-1. Führen Sie dazu im Azure-Portal in Intune die folgenden Schritte aus:
-    - Fügen Sie ggf. das Intune-Unternehmensportal hinzu (**Intune** > **Client-Apps** > **Apps** > **Hinzufügen**).
-    - Klicken Sie auf **Client-Apps** > **App-Konfigurationsrichtlinien**, um eine App-Konfigurationsrichtlinie für die Unternehmensportal-App zu erstellen.
-2. Erstellen Sie mithilfe der unten stehenden XML-Daten eine App-Konfigurationsrichtlinie. Weitere Informationen zum Erstellen einer App-Konfigurationsrichtlinie und zum Eingeben von XML-Daten finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-Geräte](app-configuration-policies-use-ios.md) oder für Hybrid-MDM unter [Anwenden von Einstellungen für iOS-Apps mit App-Konfigurationsrichtlinien in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
+1. Fügen Sie in Intune ggf. das Intune-Unternehmensportal hinzu (**Intune** > **Apps** > **Alle Apps** > **Hinzufügen**).
+2. Klicken Sie auf **Apps** > **App-Konfigurationsrichtlinien**, um eine App-Konfigurationsrichtlinie für die Unternehmensportal-App zu erstellen.
+3. Erstellen Sie mithilfe der unten stehenden XML-Daten eine App-Konfigurationsrichtlinie. Weitere Informationen zum Erstellen einer App-Konfigurationsrichtlinie und zum Eingeben von XML-Daten finden Sie unter [Hinzufügen von App-Konfigurationsrichtlinien für verwaltete iOS-Geräte](app-configuration-policies-use-ios.md) oder für Hybrid-MDM unter [Anwenden von Einstellungen für iOS-Apps mit App-Konfigurationsrichtlinien in System Center Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies).
 
     ``` xml
     <dict>
@@ -202,7 +200,7 @@ DEP-Registrierungen (Apple-Programm zur Geräteregistrierung) sind nicht kompati
 4. Fordern Sie die Benutzer bei der automatischen Installation auf, sich bei der Unternehmensportal-App anzumelden.
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Überwachen des Konfigurationsstatus von iOS-Apps pro Gerät 
-Sobald eine Konfigurationsrichtlinie zugewiesen wurde, können Sie den Konfigurationsstatus von iOS-Apps für jedes verwaltete Gerät überwachen. Klicken Sie im Azure-Portal unter **Microsoft Intune** auf **Geräte** > **Alle Geräte**. Wählen Sie aus der Liste der verwalteten Geräte ein Gerät aus, für das ein Blatt angezeigt werden soll. Klicken Sie auf dem Geräteblatt auf **App-Konfiguration**.  
+Sobald eine Konfigurationsrichtlinie zugewiesen wurde, können Sie den Konfigurationsstatus von iOS-Apps für jedes verwaltete Gerät überwachen. Klicken Sie im Azure-Portal unter **Microsoft Intune** auf **Geräte** > **Alle Geräte**. Wählen Sie aus der Liste der verwalteten Geräte ein Gerät aus, für das ein Bereich angezeigt werden soll. Wählen Sie im Gerätebereich **App-Konfiguration** aus.  
 
 ## <a name="additional-information"></a>Zusätzliche Informationen
 

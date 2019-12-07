@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8519ad00024be43371cd118e3f37ae2fbc57898b
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: eff4ccdc8b40da4d72394001b88446653ff71bd0
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813366"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564245"
 ---
 # <a name="intune-discovered-apps"></a>Von Intune ermittelte Apps
 
@@ -33,18 +33,18 @@ Bei der von Intune **ermittelten Apps** handelt es sich um eine Liste ermittelte
 
 Intune stellt eine aggregierte Liste ermittelter Apps auf den bei Intune registrierten Geräten in Ihrem Mandanten bereit.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Wählen Sie im Bereich **Intune** **Client-Apps** > **Ermittelte Apps** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Überwachen** > **Ermittelte Apps** aus.
 
 >[!NOTE]
->Sie können die Liste exportierter Apps in eine CSV-Datei importieren, indem Sie auf dem Blatt **Ermittelte Apps** die Option **Exportieren** auswählen.
+>Sie können die Liste exportierter Apps in eine CSV-Datei importieren, indem Sie im Bereich **Ermittelte Apps** die Option **Exportieren** auswählen.
 >
 >Bei ermittelten Win32-Apps ist derzeit keine Aggregatanzahl vorhanden. Diese Art von Daten kann nur geräteweise angezeigt werden.
 
 Intune enthält auch die Liste der ermittelten Apps für das jeweilige Gerät in Ihrem Mandanten.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Wählen Sie im Bereich Intune **Geräte** > **Alle Geräte** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Klicken Sie auf **Geräte** > **Alle Geräte**.
 3. Wählen Sie ein Gerät aus.
 4. Um ermittelte Apps für dieses Gerät anzuzeigen, wählen Sie **Ermittelte Apps** im Abschnitt **Überwachen** aus.
 
@@ -69,7 +69,7 @@ In der folgenden Liste erhalten Sie Informationen zum Plattformtyp der App, zu d
 
 Die Anzahl der ermittelten Apps stimmt mit der Statusanzahl von App-Installationen möglicherweise nicht überein. Es gibt folgende Möglichkeiten für Inkonsistenzen:
 
-- Eine Zieländerung einer installierten verwalteten App kann dazu führen, dass die Installationsanzahl im Statusblade verringert, in den ermittelten Apps aber weiterhin berichtet wird.
+- Eine Zieländerung einer installierten verwalteten App kann dazu führen, dass die Installationsanzahl im Statusbereich verringert, in den ermittelten Apps aber weiterhin berichtet wird.
 - Die Zielgruppenadressierung mehrerer Instanzen derselben App in einem Mandanten führt zu einer unterschiedlichen Anzahl Infolge von potenzieller Überschneidung von Benutzern oder Geräten. Jede Instanz der App zählt sich überschneidende Benutzer, doch bei den ermittelten Apps wird die Anzahl dupliziert.
 - Ermittelte Apps und App-Status werden zu unterschiedlichen Zeitintervallen gesammelt, und das könnte zu einer Abweichung bei der App-Anzahl führen.
 

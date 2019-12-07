@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56814550cae814bd89d55a6f72df98dd24df4caf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507465"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564363"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>Was ist die Microsoft Intune App-Verwaltung?
 
@@ -41,7 +41,7 @@ Darüber hinaus sollten Sie Apps auf Geräten, die nicht bei Intune registriert 
 
 Die [mobile Anwendungsverwaltung (Mobile Application Management, MAM) von Intune](app-lifecycle.md) bezeichnet die Intune-Verwaltungsfunktionen, mit denen Sie mobile Apps für Ihre Benutzer veröffentlichen, per Push bereitstellen, konfigurieren, schützen, überwachen und aktualisieren.
 
-MAM ermöglicht es Ihnen, die Daten Ihres Unternehmens innerhalb einer Anwendung zu verwalten und zu schützen. Mit **MAM ohne Geräteregistrierung** (MAM-WE) kann eine Geschäfts-, Schul- oder Uni-App, die vertrauliche Daten enthält, auf nahezu jedem [Gerät](app-management.md#app-management-capabilities-by-platform) verwaltet werden, auch auf persönlichen Geräten in **BYOD-Szenarios (Bring Your Own Device)** . Viele Produktivitäts-Apps, wie z.B. die Microsoft Office-Apps, können über Intune MAM verwaltet werden. Weitere Informationen finden Sie in der Liste von in [Microsoft Intune verwalteten Apps](apps-supported-intune-apps.md), die für die Öffentlichkeit verfügbar ist.
+MAM ermöglicht es Ihnen, die Daten Ihres Unternehmens innerhalb einer Anwendung zu verwalten und zu schützen. Mit **MAM ohne Geräteregistrierung** (MAM-WE) kann eine Geschäfts-, Schul- oder Uni-App, die vertrauliche Daten enthält, auf nahezu jedem [Gerät](app-management.md#app-management-capabilities-by-platform) verwaltet werden, auch auf persönlichen Geräten in **BYOD-Szenarios (Bring Your Own Device)** . Viele Produktivitäts-Apps, wie z. B. die Microsoft Office-Apps, können über Intune MAM verwaltet werden. Weitere Informationen finden Sie in der Liste von in [Microsoft Intune verwalteten Apps](apps-supported-intune-apps.md), die für die Öffentlichkeit verfügbar ist.
 
 Intune MAM unterstützt zwei Konfigurationen:
 - **Intune MDM und MAM**: IT-Administratoren können Apps mithilfe von MAM und App-Schutzrichtlinien nur auf Geräten verwalten, die bei der Intune-Verwaltung mobiler Geräte (Mobile Device Management, MDM) registriert sind. Um Apps mithilfe von MDM und MAM zu verwalten, sollten Kunden die Intune-Konsole im Azure-Portal unter https://portal.azure.com verwenden.
@@ -76,14 +76,14 @@ Intune bietet eine Reihe von Funktionen, die die Installation der erforderlichen
 
 ## <a name="get-started"></a>Erste Schritte
 
-Sie finden die meisten Informationen zu Apps in der Workload **Client-Apps**, auf die Sie wie folgt zugreifen können:
+Sie finden die meisten Informationen zu Apps im Workload **Apps**, auf die Sie wie folgt zugreifen können:
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Klicken Sie im Bereich **Microsoft Intune** auf die Option **Client-Apps**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+3. Klicken Sie auf **Apps**.
 
-    ![Der Workloadbereich „Client-Apps“](./media/app-management/apps-workload.png)
+    ![Apps-Workloadbereich](./media/app-management/apps-workload.png)
 
-Die nächsten vier Abschnitte beschreiben die Optionen im Bereich **Client-Apps**.
+Die nächsten vier Abschnitte beschreiben die Optionen im Bereich **Apps**.
 
 ### <a name="manage"></a>Verwalten von
 - **Apps**: Wählen Sie diese Option aus, um die von Ihren Mitarbeitern verwendeten Apps hinzuzufügen, anzuzeigen, zuzuweisen und zu überwachen. Weitere Informationen finden Sie in folgenden Quellen:

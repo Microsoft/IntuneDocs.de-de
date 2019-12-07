@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3137db9d1ab82ebb99686f8f98aa768dae222caf
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 0e57aa0546950a12cdb2d4a2e3c8ed721bfc24b8
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584961"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564150"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Hinzufügen verwalteter Google Play-Apps zu Android Enterprise-Geräten mit Intune
 
@@ -62,17 +62,16 @@ Es gibt zwei Möglichkeiten zum Suchen und Genehmigen verwalteter Google Play St
 
 ### <a name="add-a-managed-google-play-store-app-directly-in-the-intune-console"></a>Hinzufügen einer verwalteten Google Play Store-App direkt in der Intune-Konsole
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im **Intune**-Bereich die Option **Client-Apps** > **Apps** aus.
-5. Klicken Sie im Bereich **Apps** auf **Hinzufügen**.
-6. Wählen Sie in der Dropdownliste **App-Typ** **Verwaltetes Google Play** aus.
-7. Wählen Sie **Verwaltetes Google Play -> Öffnen** aus, um den Katalog für verwaltetes Google Play zu öffnen.
-7. Wählen Sie im Google Play-Katalog **Play Store durchsuchen** aus.
-8. Verwenden Sie das Suchfeld, um nach Apps zu suchen, die Sie verwalten möchten.
-9. Klicken Sie auf **Genehmigen**, um die App in verwaltetem Google Play zu genehmigen, und klicken Sie auf **Genehmigen**, um die App-Berechtigungen anzunehmen.
-10. Wählen Sie **Genehmigt lassen, wenn Apps neue Berechtigungen anfordern** im Fenster „Genehmigungseinstellungen“ aus, und klicken Sie dann auf **Speichern**. Wenn Sie diese Option nicht auswählen, müssen Sie alle neuen Berechtigungen manuell genehmigen, wenn der App-Entwickler ein Update veröffentlicht. Dadurch werden Installationen und Updates für die App unterbrochen, bis die Berechtigungen genehmigt wurden. Aus diesem Grund wird empfohlen, die Option zum automatischen Genehmigen neuer Berechtigungen auszuwählen. 
-11. Klicken Sie auf **OK**, um die App(s) einzuschließen, die Sie genehmigt haben.
-12. Klicken Sie im Bereich **App** auf **Synchronisieren**, um eine Synchronisierung mit dem verwalteten Google Play-Dienst durchzuführen.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
+3. Wählen Sie in der Dropdownliste **App-Typ** **Verwaltetes Google Play** aus.
+4. Wählen Sie **Verwaltetes Google Play -> Öffnen** aus, um den Katalog für verwaltetes Google Play zu öffnen.
+5. Wählen Sie im Google Play-Katalog **Play Store durchsuchen** aus.
+6. Verwenden Sie das Suchfeld, um nach Apps zu suchen, die Sie verwalten möchten.
+7. Klicken Sie auf **Genehmigen**, um die App in verwaltetem Google Play zu genehmigen, und klicken Sie auf **Genehmigen**, um die App-Berechtigungen anzunehmen.
+8. Wählen Sie **Genehmigt lassen, wenn Apps neue Berechtigungen anfordern** im Fenster „Genehmigungseinstellungen“ aus, und klicken Sie dann auf **Speichern**. Wenn Sie diese Option nicht auswählen, müssen Sie alle neuen Berechtigungen manuell genehmigen, wenn der App-Entwickler ein Update veröffentlicht. Dadurch werden Installationen und Updates für die App unterbrochen, bis die Berechtigungen genehmigt wurden. Aus diesem Grund wird empfohlen, die Option zum automatischen Genehmigen neuer Berechtigungen auszuwählen. 
+9. Klicken Sie auf **OK**, um die App(s) einzuschließen, die Sie genehmigt haben.
+10. Klicken Sie im Bereich **App** auf **Synchronisieren**, um eine Synchronisierung mit dem verwalteten Google Play-Dienst durchzuführen.
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>Hinzufügen einer verwalteten Google Play Store-App in der Konsole von verwaltetem Google Play (Alternative)
 Wenn Sie es vorziehen, eine verwaltete Google Play-App mit Intune zu synchronisieren, anstatt sie direkt mit Intune hinzuzufügen, gehen Sie wie folgt vor.
@@ -108,17 +107,16 @@ Es gibt zwei Möglichkeiten, verwaltetem Google Play branchenspezifische Apps hi
 
 ### <a name="managed-google-play-private-lob-app-publishing-directly-in-the-intune-console"></a>Veröffentlichen privater branchenspezifischer verwalteter Google Play-Apps direkt in der Intune-Konsole
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im **Intune**-Bereich die Option **Client-Apps** > **Apps** aus.
-5. Klicken Sie im Bereich **Apps** auf **Hinzufügen**.
-6. Wählen Sie in der Dropdownliste **App-Typ** **Verwaltetes Google Play** aus.
-7. Wählen Sie **Verwaltetes Google Play -> Öffnen** aus, um den Katalog für verwaltetes Google Play zu öffnen.
-7. Wählen Sie im Google Play-Katalog **Private Apps** aus.
-7. Klicken Sie auf die Schaltfläche **+** , um eine neue App hinzuzufügen.
-8. Übermitteln eines App-Titels und eines APK-Pakets für die App
-9. Klicken Sie auf **Erstellen**.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
+3. Wählen Sie in der Dropdownliste **App-Typ** **Verwaltetes Google Play** aus.
+4. Wählen Sie **Verwaltetes Google Play -> Öffnen** aus, um den Katalog für verwaltetes Google Play zu öffnen.
+5. Wählen Sie im Google Play-Katalog **Private Apps** aus.
+6. Klicken Sie auf die Schaltfläche **+** , um eine neue App hinzuzufügen.
+7. Übermitteln eines App-Titels und eines APK-Pakets für die App
+8. Klicken Sie auf **Erstellen**.
 9. Schließen Sie den Bereich „Verwaltetes Google Play“, wenn das Hinzufügen von Apps abgeschlossen ist.
-12. Klicken Sie im Bereich **App** auf **Synchronisieren**, um eine Synchronisierung mit dem verwalteten Google Play-Dienst durchzuführen. Beachten Sie, dass es mehrere Minuten dauern kann, bis private Apps zur Synchronisierung verfügbar sind. Wenn die App bei der ersten Synchronisierung nicht angezeigt wird, warten Sie ein paar Minuten und starten dann eine neue Synchronisierung.
+10. Klicken Sie im Bereich **App** auf **Synchronisieren**, um eine Synchronisierung mit dem verwalteten Google Play-Dienst durchzuführen. Beachten Sie, dass es mehrere Minuten dauern kann, bis private Apps zur Synchronisierung verfügbar sind. Wenn die App bei der ersten Synchronisierung nicht angezeigt wird, warten Sie ein paar Minuten und starten dann eine neue Synchronisierung.
 
 Weitere Informationen zu privaten verwalteten Google Play-Apps sowie häufig gestellte Fragen finden Sie im Google-Supportartikel: https://support.google.com/googleplay/work/answer/9146439
 
@@ -151,32 +149,30 @@ Weblinks werden in Microsoft Edge oder einer anderen Browser-App geöffnet, die 
 > [!IMPORTANT]
 > Zum Zeitpunkt der Veröffentlichung dieses Dokuments gibt es einen bekannten Google-Fehler, der das Öffnen von Weblinks auf Geräten mit anderen Browsern als Chrome verhindert. Google arbeitet an der Korrektur dieses Fehlers.  Dieser Hinweis wird entfernt, sobald Microsoft die Bestätigung erhält, dass Google die Korrektur veröffentlicht hat.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im **Intune**-Bereich die Option **Client-Apps** > **Apps** aus.
-5. Klicken Sie im Bereich **Apps** auf **Hinzufügen**.
-6. Wählen Sie in der Dropdownliste **App-Typ** **Verwaltetes Google Play** aus.
-7. Wählen Sie **Verwaltetes Google Play -> Öffnen** aus, um den Katalog für verwaltetes Google Play zu öffnen.
-7. Wählen Sie im Google Play-Katalog **Web-Apps** aus.
-7. Klicken Sie auf die Schaltfläche **+** , um eine neue App hinzuzufügen.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
+3. Wählen Sie in der Dropdownliste **App-Typ** **Verwaltetes Google Play** aus.
+4. Wählen Sie **Verwaltetes Google Play -> Öffnen** aus, um den Katalog für verwaltetes Google Play zu öffnen.
+5. Wählen Sie im Google Play-Katalog **Web-Apps** aus.
+6. Klicken Sie auf die Schaltfläche **+** , um eine neue App hinzuzufügen.
 7. Geben Sie die erforderlichen Informationen ein, und klicken Sie dann auf **Erstellen**.
-7. Schließen Sie den Bereich „Verwaltetes Google Play“, wenn das Hinzufügen von Apps abgeschlossen ist.
-12. Klicken Sie im Bereich **App** auf **Synchronisieren**, um eine Synchronisierung mit dem verwalteten Google Play-Dienst durchzuführen. Beachten Sie, dass es mehrere Minuten dauern kann, bis private Apps zur Synchronisierung verfügbar sind. Wenn die App bei der ersten Synchronisierung nicht angezeigt wird, warten Sie ein paar Minuten und starten dann eine neue Synchronisierung.
+8. Schließen Sie den Bereich „Verwaltetes Google Play“, wenn das Hinzufügen von Apps abgeschlossen ist.
+9. Klicken Sie im Bereich **App** auf **Synchronisieren**, um eine Synchronisierung mit dem verwalteten Google Play-Dienst durchzuführen. Beachten Sie, dass es mehrere Minuten dauern kann, bis private Apps zur Synchronisierung verfügbar sind. Wenn die App bei der ersten Synchronisierung nicht angezeigt wird, warten Sie ein paar Minuten und starten dann eine neue Synchronisierung.
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>Synchronisieren einer App aus dem Managed Google Play Store mit Intune
 
-Wenn Sie eine App aus dem Store genehmigt haben und diese nicht in der Workload **Client-Apps** angezeigt wird, erzwingen Sie wie folgt eine sofortige Synchronisierung:
+Wenn Sie eine App aus dem Store genehmigt haben und diese nicht in der Workload **Apps** angezeigt wird, erzwingen Sie wie folgt eine sofortige Synchronisierung:
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im Bereich **Intune** **Client-Apps** aus.
-4. Wählen Sie im Workloadbereich **Client-Apps** unter **Setup** die Option **Managed Google Play** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+3. Wählen Sie **Apps aus,**  > **Mandantenverwaltung** > **Connectors und Token** > **Verwaltetes Google Play** aus.
 5. Klicken Sie im Bereich **Managed Google Play** auf **Aktualisieren**.  
     Auf der Seite werden Uhrzeit und Status der letzten Synchronisierung aktualisiert.
-6. Wählen Sie im Workloadbereich **Client-Apps** die Option **Apps** aus.  
+6. Wählen Sie im Microsoft Endpoint Manager Admin Center die Option **Apps** > **Alle Apps** aus.  
     Die neu verfügbare Managed Google Play-App wird angezeigt.
 
 ## <a name="assigning-a-managed-google-play-app-to-android-enterprise-work-profile-devices"></a>Zuweisen einer verwalteten Google Play-App zu Android Enterprise-Arbeitsprofilgeräten
 
-Wenn die App im Knoten **App-Lizenzen** des Workloadbereichs **Client-Apps** angezeigt wird, können Sie sie [wie jede andere App zuweisen](/intune-azure/manage-apps/deploy-apps), indem Sie die App Benutzergruppen zuweisen.
+Wenn die App im Knoten **App-Lizenzen** des Workloadbereichs **Apps** angezeigt wird, können Sie sie [wie jede andere App zuweisen](/intune-azure/manage-apps/deploy-apps), indem Sie die App Benutzergruppen zuweisen.
 
 Nachdem Sie die App zugewiesen haben, wird sie auf den Geräten der von Ihnen ausgewählten Benutzern installiert (oder zur Installation verfügbar). Der Benutzer des Geräts wird nicht zur Genehmigung der Installation aufgefordert. Weitere Informationen zu dedizierten Android Enterprise-Arbeitsprofilgeräten finden Sie unter [Einrichten der Registrierung von Android Enterprise-Arbeitsprofilgeräten](../enrollment/android-work-profile-enroll.md). 
 
@@ -213,7 +209,7 @@ Alternativ können Sie Google Play so konfigurieren, dass App-Berechtigungen auf
 Für auf Android Enterprise-Arbeitsprofilgeräten bereitgestellte verwaltete Google Play-Apps können Sie den Status und die Versionsnummer der auf einem Gerät installierten App abrufen, das Intune verwendet. 
 
 ## <a name="delete-managed-google-play-apps"></a>Löschen von verwalteten Google Play-Apps
-Sie können verwaltete Google Play-Apps bei Bedarf aus Microsoft Intune löschen. Um eine verwaltete Google Play-App zu löschen, öffnen Sie Microsoft Intune im Azure-Portal und wählen **Client-Apps** > **Apps** aus. Klicken Sie in der App-Liste auf die Auslassungspunkte (...) rechts neben der verwalteten Google Play-App, und wählen Sie dann in der angezeigten Liste die Option **Löschen** aus. Wenn Sie eine verwaltete Google Play-App aus der App-Liste löschen, wird die Genehmigung für die Google Play-App automatisch aufgehoben.
+Sie können verwaltete Google Play-Apps bei Bedarf aus Microsoft Intune löschen. Um eine verwaltete Google Play-App zu löschen, öffnen Sie Microsoft Intune im Azure-Portal und wählen **Apps** > **Alle Apps** aus. Klicken Sie in der App-Liste auf die Auslassungspunkte (...) rechts neben der verwalteten Google Play-App, und wählen Sie dann in der angezeigten Liste die Option **Löschen** aus. Wenn Sie eine verwaltete Google Play-App aus der App-Liste löschen, wird die Genehmigung für die Google Play-App automatisch aufgehoben.
 
 ## <a name="android-enterprise-system-apps"></a>Android Enterprise-System-Apps
 

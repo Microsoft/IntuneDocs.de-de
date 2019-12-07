@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cb247ec25b134fa9810a426be88b7fc90999394
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635388"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563663"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Hinzufügen von Office 365-Apps zu Windows 10-Geräten mit Microsoft Intune
 
@@ -49,11 +49,9 @@ Bevor Sie Apps zuweisen, überwachen, konfigurieren oder schützen können, müs
 
 ## <a name="get-started"></a>Erste Schritte
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im Bereich **Intune** **Client-Apps** aus.
-4. Wählen Sie im Workloadbereich **Client-Apps** unter **Verwalten** die Option **Apps** aus.
-5. Wählen Sie **Hinzufügen** aus.
-6. Wählen Sie im Bereich **Apps hinzufügen** in der Liste **App-Typ** unter **Office 365 Suite** die Option **Windows 10** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** > **Hinzufügen** aus.
+3. Wählen Sie im Bereich **Apps hinzufügen** in der Liste **App-Typ** unter **Office 365 Suite** die Option **Windows 10** aus.
 
 ## <a name="select-settings-format"></a>Auswählen von Einstellungsformaten
 
@@ -61,13 +59,13 @@ Sie können eine Methode zum Konfigurieren von App-Einstellungen auswählen, ind
 - Konfigurations-Designer
 - Eingeben von XML-Daten
 
-Wenn Sie auf **Konfigurations-Designer** klicken, ändert sich das Blatt **App hinzufügen**, und es werden zwei weitere Einstellungsoptionen angezeigt:
+Wenn Sie **Konfigurations-Designer** auswählen, ändert sich der Bereich **App hinzufügen**, und es werden zwei weitere Einstellungsoptionen angezeigt:
 - App-Suite konfigurieren
 - Einstellungen der App-Suite
 
 <img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-Wenn Sie auf **XML-Daten eingeben** klicken, wird das Blatt **App hinzufügen** mit der Option **XML-Daten eingeben** angezeigt. Klicken Sie auf diese Option, um das Blatt **Konfigurationsdatei** anzuzeigen. 
+Wenn Sie **XML-Daten eingeben** auswählen, wird der Bereich **App hinzufügen** mit der Option **XML-Daten eingeben** angezeigt. Wählen Sie diese Option aus, um den Bereich **Konfigurationsdatei** anzuzeigen. 
 
 ![Konfigurations-Designer für Office 365 hinzufügen](./media/apps-add-office365/apps-add-office365-01.png)
     
@@ -94,7 +92,7 @@ In diesem Schritt stellen Sie Informationen über die App-Suite bereit. Diese In
 
 ## <a name="configure-app-suite"></a>Konfigurieren der App-Suite
 
-Wenn Sie im Dropdownfeld **Setting format** (Einstellungsformat) die Option **Konfigurations-Designer** ausgewählt haben, wird die Option **App-Suite konfigurieren** auf dem Blatt **App hinzufügen** angezeigt. Wählen Sie die Office-Apps aus, die Sie den Geräten zuweisen möchten.
+Wenn Sie im Dropdownfeld **Einstellungsformat** die Option **Konfigurations-Designer** ausgewählt haben, wird die Option **App-Suite konfigurieren** im Bereich **App hinzufügen** angezeigt. Wählen Sie die Office-Apps aus, die Sie den Geräten zuweisen möchten.
 
 1. Wählen Sie auf dem Blatt **App hinzufügen** die Option **App-Suite konfigurieren** aus.
 2. Wählen Sie auf dem Blatt **App-Suite konfigurieren** die Office-Standard-Apps aus, die Sie Geräten zuweisen möchten.  
@@ -103,7 +101,7 @@ Wenn Sie im Dropdownfeld **Setting format** (Einstellungsformat) die Option **Ko
 
 ## <a name="configure-app-suite-settings"></a>Konfigurieren der Einstellungen der App-Suite
 
-Wenn Sie im Dropdownfeld **Setting format** (Einstellungsformat) die Option **Konfigurations-Designer** ausgewählt haben, wird die Option **Einstellungen der App-Suite** auf dem Blatt **App hinzufügen** angezeigt. In diesem Schritt konfigurieren Sie Installationsoptionen für die App-Sammlung. Die Einstellungen gelten für alle Apps, die Sie der Suite hinzugefügt haben.
+Wenn Sie im Dropdownfeld **Einstellungsformat** die Option **Konfigurations-Designer** ausgewählt haben, wird die Option **Einstellungen der App-Suite** im Bereich **App hinzufügen** angezeigt. In diesem Schritt konfigurieren Sie Installationsoptionen für die App-Sammlung. Die Einstellungen gelten für alle Apps, die Sie der Suite hinzugefügt haben.
 
 1. Wählen Sie im Bereich **App hinzufügen** die Option **Einstellungen der App-Suite** aus.
 2. Gehen Sie im Bereich **Einstellungen der App-Suite** folgendermaßen vor:
@@ -126,7 +124,7 @@ Wenn Sie im Dropdownfeld **Setting format** (Einstellungsformat) die Option **Ko
     - **Microsoft-Software-Lizenzbedingungen automatisch akzeptieren**: Wählen Sie diese Option aus, wenn es nicht erforderlich ist, dass Endbenutzer die Lizenzvereinbarung akzeptieren. Intune akzeptiert daraufhin die automatisch die Vereinbarung.
     - **Aktivierung gemeinsam genutzter Computer verwenden**: Wählen Sie diese Option aus, wenn sich mehrere Benutzer einen Computer teilen. Weitere Informationen finden Sie in der [Übersicht über die Aktivierung gemeinsam genutzter Computer für Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Sprachen**: Office wird automatisch in allen unterstützen Sprachen installiert, die mit Windows auf Endbenutzergeräten installiert wurden. Wählen Sie diese Option, wen Sie zusätzliche Sprachen mit der App-Sammlung installieren möchten. <p></p>
-    Sie können zusätzliche Sprachen für Office 365 Pro Plus-Apps bereitstellen, die über Intune verwaltet werden. In der Liste der verfügbaren Sprachpakete ist auch der **Typ** der Sprachpakete angegeben (grundlegende Sprachunterstützung, Sprache teilweise unterstützt und Sprachkorrekturhilfen). Klicken Sie im Azure-Portal auf **Microsoft Intune** > **Client-Apps** > **Apps** > **Hinzufügen**. Wählen Sie auf dem Blatt **App hinzufügen** in der Liste **App-Typ** unter **Office 365 Suite** den Eintrag **Windows 10** aus. Klicken Sie auf dem Blatt **Einstellungen der App-Suite** auf **Sprachen**. Weitere Informationen finden Sie unter [Übersicht über die Bereitstellung von Sprachen in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+    Sie können zusätzliche Sprachen für Office 365 Pro Plus-Apps bereitstellen, die über Intune verwaltet werden. In der Liste der verfügbaren Sprachpakete ist auch der **Typ** der Sprachpakete angegeben (grundlegende Sprachunterstützung, Sprache teilweise unterstützt und Sprachkorrekturhilfen). Wählen Sie im Azure-Portal Bereich **Microsoft Intune** > **Apps** > **Alle Apps** > **Hinzufügen** aus. Wählen Sie im Bereich **App hinzufügen** in der Liste **App-Typ** unter **Office 365 Suite** den Eintrag **Windows 10** aus. Wählen Sie im Bereich **Einstellungen der App-Suite** die Option **Sprachen** aus. Weitere Informationen finden Sie unter [Übersicht über die Bereitstellung von Sprachen in Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
 
 ## <a name="select-scope-tags-optional"></a>Auswählen von Bereichsmarkierungen (optional)
 Sie können Bereichsmarkierungen verwenden, um zu bestimmen, wer Client-App-Informationen in Intune anzeigen kann. Ausführliche Informationen zu Bereichsmarkierungen finden Sie unter [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md) (Verwenden der rollenbasierten Zugriffssteuerung und von Bereichsmarkierungen für verteilte IT).
@@ -138,7 +136,7 @@ Sie können Bereichsmarkierungen verwenden, um zu bestimmen, wer Client-App-Info
 
 ## <a name="enter-xml-format"></a>Eingeben von XML-Daten
 
-Wenn Sie im Dropdownfeld **Setting format** (Einstellungsformat) die Option **XML-Daten eingeben** ausgewählt haben, wird die Option **Enter XML format** (XML-Format eingeben) auf dem Blatt **App hinzufügen** angezeigt. Weitere Informationen finden Sie unter [Konfigurationsoptionen für das Office-Bereitstellungstool](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
+Wenn Sie im Dropdownfeld **Einstellungsformat** die Option **XML-Daten eingeben** ausgewählt haben, wird die Option **XML-Format eingeben** im Bereich **App hinzufügen** angezeigt. Weitere Informationen finden Sie unter [Konfigurationsoptionen für das Office-Bereitstellungstool](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
 
 ## <a name="finish-up"></a>Fertig stellen
 
