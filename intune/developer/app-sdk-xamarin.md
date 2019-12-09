@@ -19,7 +19,7 @@ ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ec234a3d93127a26af4203a4776545602334858b
 ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/06/2019
 ms.locfileid: "73709564"
@@ -210,7 +210,7 @@ Dies entspricht dem erwarteten Verhalten, da bestimmte Funktionen in `sealed` ge
 
 #### <a name="troubleshooting"></a>Problembehandlung
 * Wenn beim Start ein leerer, weißer Bildschirm in der Anwendung angezeigt wird, müssen Sie möglicherweise erzwingen, dass die Navigationsaufrufe im Hauptthread ausgeführt werden.
-* Die Intune SDK-Xamarin-Bindungen unterstützen keine Apps, die ein plattformübergreifendes Framework, wie z. B. MvvmCross , aufgrund von Konflikten zwischen MvvmCross- und Intune MAM-Klassen verwenden. Obwohl einige Kunden nach dem Verschieben Ihrer Apps in einfache Xamarin.Forms erfolgreich mit der Integration arbeiten konnten, bieten wir keinen expliziten Leitfaden oder Plug-Ins für App-Entwickler, die MvvmCross verwenden.
+* Die Intune SDK-Xamarin-Bindungen unterstützen keine Apps, die ein plattformübergreifendes Framework, wie z. B. MvvmCross , aufgrund von Konflikten zwischen MvvmCross- und Intune MAM-Klassen verwenden. Obwohl einige Kunden nach dem Verschieben Ihrer Apps in einfache Xamarin. Forms erfolgreich mit der Integration arbeiten konnten, bieten wir keinen expliziten Leitfaden oder Plug-Ins für App-Entwickler, die MvvmCross verwenden.
 
 ### <a name="company-portal-app"></a>Unternehmensportal-App
 Die Intune SDK-Xamarin-Bindungen basieren darauf, dass die [Unternehmensportal](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android-App auf dem Gerät vorhanden ist, um App-Schutzrichtlinien zu aktivieren. Das Unternehmensportal ruft App-Schutzrichtlinien vom Intune-Dienst ab. Wenn die App initialisiert wird, lädt sie die entsprechende Richtlinie sowie Code, um diese Richtlinie vom Unternehmensportal zu erzwingen. Der Benutzer muss nicht angemeldet sein.
@@ -224,4 +224,4 @@ Für einen App-Schutz ohne Registrierung des Geräts muss der Benutzer das Gerä
 Beispielanwendungen, die MAM-Funktionen in xamarin. Android-und xamarin. Forms-apps hervorheben, sind auf [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps) verfügbar.
 
 ## <a name="support"></a>Unterstützung
-Wenn Ihre Organisation ein bestehender Intune-Kunde ist, arbeiten Sie mit Ihrem Microsoft-Supportmitarbeiter zusammen, um ein Supportticket zu erstellen und ein Issue auf der [GitHub-Seite für Issues](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) anzulegen. Wir helfen Ihnen, so bald wie möglich zu helfen.
+Wenn Ihre Organisation ein bestehender Intune-Kunde ist, arbeiten Sie mit Ihrem Microsoft-Supportmitarbeiter zusammen, um ein Supportticket zu erstellen und ein Issue auf der [GitHub-Seite für Issues](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues) anzulegen. Wir helfen Ihnen, so bald wie möglich zu helfen. 
