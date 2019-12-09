@@ -12,13 +12,13 @@ metadata:
   author: dougeby
   ms.author: erikre
   ms.manager: dougeby
-  ms.date: 09/29/2019
-  ms.openlocfilehash: 74ce2cab52e55396ac1014ed14dc206faa26460a
-  ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+  ms.date: 12/05/2019
+  ms.openlocfilehash: 3ee393f220673669e831a802d28d581eb4d0b42d
+  ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 10/16/2019
-  ms.locfileid: "72502738"
+  ms.lasthandoff: 12/07/2019
+  ms.locfileid: "74907133"
 landingContent:
 - title: Informationen zu Microsoft Intune
   linkLists:
@@ -32,6 +32,8 @@ landingContent:
       url: in-development.md
   - linkListType: tutorial
     links:
+    - text: Exemplarische Vorgehensweise für Intune in Microsoft Endpoint Manager
+      url: tutorial-walkthrough-endpoint-manager.md
     - text: Exemplarische Vorgehensweise für Intune im Azure-Portal
       url: tutorial-walkthrough-intune-portal.md
   - linkListType: concept
