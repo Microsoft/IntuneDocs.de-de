@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 40cbb62a620d6e174ab8acb76798ba53080b78cf
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547967"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563975"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Einschließen und Ausschließen von App-Zuweisungen in Microsoft Intune
 
@@ -55,34 +55,34 @@ Daher wird das Zuweisen von Apps zu gemischten Gruppen nicht empfohlen.
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Ein- und Ausschließen von Gruppen beim Zuweisen von Apps 
 So weisen Sie eine App Gruppen mithilfe der Ein- und Ausschlusszuweisung zu:
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im Bereich **Intune** **Client-Apps** aus.
-4. Wählen Sie im Bereich **Client-Apps** die Option **Apps** aus. Die Liste der hinzugefügten Apps wird angezeigt.
-5. Wählen Sie die App aus, die zugewiesen werden soll. In einem Dashboard werden Informationen zu der App angezeigt. 
-6. Wählen Sie im Abschnitt **Verwalten** des Menüs **Zuweisungen** aus. 
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Apps** > **Alle Apps** aus. Die Liste der hinzugefügten Apps wird angezeigt.
+3. Wählen Sie die App aus, die zugewiesen werden soll. In einem Dashboard werden Informationen zu der App angezeigt. 
+4. Wählen Sie im Abschnitt **Verwalten** des Menüs **Zuweisungen** aus. 
 
     ![Einschließen von App-Zuweisungen beim Zuweisen von Apps](./media/apps-inc-exl-assignments/apps-inc-exl-01.png)
-7. Wählen Sie **Gruppe hinzufügen** aus, um die Gruppen von Benutzern hinzuzufügen, denen die App zugewiesen wird. 
-8. Wählen Sie im Bereich **Gruppe hinzufügen** einen **Zuweisungstyp** aus den verfügbaren Zuweisungstypen aus.
-9. Wählen Sie als Zuweisungstyp **Verfügbar mit oder ohne Registrierung** aus.
+
+5. Wählen Sie **Gruppe hinzufügen** aus, um die Gruppen von Benutzern hinzuzufügen, denen die App zugewiesen wird. 
+6. Wählen Sie im Bereich **Gruppe hinzufügen** einen **Zuweisungstyp** aus den verfügbaren Zuweisungstypen aus.
+7. Wählen Sie als Zuweisungstyp **Verfügbar mit oder ohne Registrierung** aus.
 
     ![Intune-App-Zuweisungen – Gruppe hinzufügen](./media/apps-inc-exl-assignments/apps-inc-exl-02.png)
-10. Wählen Sie **Eingeschlossene Gruppen** aus, um die Gruppe von Benutzern auszuwählen, denen Sie diese App zur Verfügung stellen möchten.
+8. Wählen Sie **Eingeschlossene Gruppen** aus, um die Gruppe von Benutzern auszuwählen, denen Sie diese App zur Verfügung stellen möchten.
 
     > [!NOTE]
     > Beachten Sie beim Hinzufügen einer Gruppe Folgendes: Wenn eine andere Gruppe bereits für einen bestimmten Zuweisungstyp eingeschlossen wurde, ist die App vorausgewählt und kann für andere Einschlusszuweisungstypen nicht mehr geändert werden. Die Gruppe, die verwendet wurde, kann nicht als eingeschlossene Gruppe verwendet werden.
 
-11. Wählen Sie **Ja**, um diese App für alle Benutzer verfügbar zu machen.
+9. Wählen Sie **Ja**, um diese App für alle Benutzer verfügbar zu machen.
 
     ![Intune-App-Zuweisungen – Gruppen einschließen](./media/apps-inc-exl-assignments/apps-inc-exl-03.png)
-12. Wählen Sie **OK** aus, um die einzuschließende Gruppe festzulegen.
-13. Wählen Sie **Ausgeschlossene Gruppen** aus, um die Gruppen von Benutzern auszuwählen, denen diese App nicht zur Verfügung stehen soll. 
-14. Wählen Sie die auszuschließenden Gruppen aus. Damit ist diese App für diese Gruppen nicht verfügbar.
+10. Wählen Sie **OK** aus, um die einzuschließende Gruppe festzulegen.
+11. Wählen Sie **Ausgeschlossene Gruppen** aus, um die Gruppen von Benutzern auszuwählen, denen diese App nicht zur Verfügung stehen soll. 
+12. Wählen Sie die auszuschließenden Gruppen aus. Damit ist diese App für diese Gruppen nicht verfügbar.
 
     ![Intune-App-Zuweisungen – Gruppen ausschließen](./media/apps-inc-exl-assignments/apps-inc-exl-04.png)
-15. Wählen Sie **Auswählen** aus, um Ihre Gruppenauswahl abzuschließen.
-16. Wählen Sie im Bereich **Gruppe hinzufügen** die Option **OK** aus. Die Liste der App-**Zuweisungen** wird angezeigt.
-17. Klicken Sie auf **Speichern**, um Ihre Gruppenzuweisungen für die App zu aktivieren.
+13. Wählen Sie **Auswählen** aus, um Ihre Gruppenauswahl abzuschließen.
+14. Wählen Sie im Bereich **Gruppe hinzufügen** die Option **OK** aus. Die Liste der App-**Zuweisungen** wird angezeigt.
+15. Klicken Sie auf **Speichern**, um Ihre Gruppenzuweisungen für die App zu aktivieren.
 
 Wenn Sie Gruppenzuweisungen vornehmen, können Gruppen, die bereits zugewiesen wurden, nicht geändert werden. Wenn Sie eine derzeit deaktivierte Gruppe auswählen möchten, entfernen Sie zuerst die App aus der „Zugewiesen“-Liste der App. 
 
