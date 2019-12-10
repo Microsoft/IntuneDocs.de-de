@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,14 +17,14 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ce5db670f0084626f1c053b64679623ccf28eb21
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164641"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390343"
 ---
-# <a name="use-device-encryption-with-intune"></a>Verwenden der Geräteverschlüsselung mit Intune  
+# <a name="use-device-encryption-with-intune"></a>Verwenden der Geräteverschlüsselung mit Intune
 
 Verwenden Sie Intune, um Geräte mit integrierter Laufwerk- oder Datenträgerverschlüsselung zu verwalten, damit die Daten auf Ihren Geräten geschützt werden.
 
@@ -68,7 +68,7 @@ Ausführliche Informationen zur FileVault-Einstellung, die Sie mit Intune verwal
 
    Fügen Sie ggf. eine Meldung hinzu, um den Endbenutzern zu erläutern, wie sie den Wiederherstellungsschlüssel für ihr Gerät abrufen können. Diese Informationen können für Ihre Endbenutzer nützlich sein, wenn Sie die Einstellung für die Rotation persönlicher Wiederherstellungsschlüssel verwenden. Dadurch können regelmäßig automatisch neue Wiederherstellungsschlüssel für die Geräte generiert werden.
 
-   Beispiel: Melden Sie sich auf einem beliebigen Gerät bei der Intune-Unternehmensportal-Website an, um verlorene oder kürzlich rotierte Wiederherstellungsschlüssel abrufen. Navigieren Sie im Portal zu *Geräte*, wählen Sie das Gerät aus, für das FileVault aktiviert ist, und klicken Sie dann auf *Wiederherstellungsschlüssel abrufen*. Dann wird der aktuelle Wiederherstellungsschlüssel angezeigt.  
+   Beispiel: Melden Sie sich auf einem beliebigen Gerät bei der Intune-Unternehmensportal-Website an, um verlorene oder kürzlich rotierte Wiederherstellungsschlüssel abrufen. Navigieren Sie im Portal zu *Geräte*, wählen Sie das Gerät aus, für das FileVault aktiviert ist, und klicken Sie dann auf *Wiederherstellungsschlüssel abrufen*. Dann wird der aktuelle Wiederherstellungsschlüssel angezeigt.
 
 7. Konfigurieren Sie die restlichen [FileVault-Einstellungen](endpoint-protection-macos.md#filevault) entsprechend Ihren Geschäftsanforderungen, und wählen Sie anschließend **OK** aus.
 
@@ -114,13 +114,37 @@ Erstellen Sie zum Konfigurieren von BitLocker ein [Gerätekonfigurationsprofil](
 
 6. Schließen Sie die Konfiguration zusätzlicher Einstellungen ab, und speichern Sie anschließend das Profil.
 
-### <a name="manage-bitlocker"></a>Verwalten von BitLocker  
+### <a name="manage-bitlocker"></a>Verwalten von BitLocker
 
 Sobald Intune ein Windows 10-Gerät mit BitLocker verschlüsselt, können Sie die BitLocker-Wiederherstellungsschlüssel im Intune-[Verschlüsselungsbericht](encryption-monitor.md) einsehen und abrufen.
 
+### <a name="rotate-bitlocker-recovery-keys"></a>Drehen von BitLocker-Wiederherstellungsschlüsseln
+
+Sie können mithilfe einer Intune-Geräteaktion über eine Remoteverbindung den BitLocker-Wiederherstellungsschlüssel eines Geräts mit Windows 10, Version 1909 oder höher drehen.
+
+#### <a name="prerequisites"></a>Voraussetzungen
+
+Geräte müssen die folgenden Voraussetzungen erfüllen, damit der BitLocker-Wiederherstellungsschlüssel gedreht werden kann:
+
+- Sie müssen Windows 10, Version 1909 oder höher ausführen.
+
+- Auf in Azure AD und Hybrid eingebundenen Geräten muss die Schlüsselrotation unterstützt werden:
+
+  - **Rotation von clientgesteuerten Wiederherstellungskennwörtern**
+
+  Diese Einstellung finden Sie unter *Windows-Verschlüsselung* als Teil einer Gerätekonfigurationsrichtlinie für Windows 10 Endpoint Protection.
+  
+#### <a name="to-rotate-the-bitlocker-recovery-key"></a>So drehen Sie den BitLocker-Wiederherstellungsschlüssel
+
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+
+2. Klicken Sie auf **Geräte** > **Alle Geräte**.
+
+3. Wählen Sie in der Liste der von Ihnen verwalteten Geräte ein Gerät aus, und klicken Sie erst auf **Mehr** und anschließend auf die Remotegeräteaktion **BitLocker-Schlüsselrotation**.
+
 ## <a name="next-steps"></a>Nächste Schritte
 
-Erstellen einer [Gerätekonformitätsrichtlinie](compliance-policy-create-windows.md)
+Erstellen Sie eine [Gerätekonformitätsrichtlinie](compliance-policy-create-windows.md).
 
 Verwenden Sie den Verschlüsselungsbericht, um Folgendes zu verwalten:
 

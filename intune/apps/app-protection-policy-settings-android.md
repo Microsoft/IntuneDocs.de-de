@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b346f41f5198a4aabcb05dcdd4b35a8c56977f53
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: c420446d9293ae2a2d1905dcff218056e8e6c875
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059774"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540718"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Einstellungen für App-Schutzrichtlinien in Microsoft Intune
 In diesem Artikel werden die Einstellungen für App-Schutzrichtlinien für Android-Geräte beschrieben. Die beschriebenen Richtlinieneinstellungen können im Azure-Portal auf dem Blatt **Einstellungen** für eine Schutzrichtlinie [konfiguriert](app-protection-policies.md) werden.
@@ -66,7 +66,7 @@ Es gibt drei Kategorien von Richtlinieneinstellungen: Datenschutzeinstellungen, 
 
 ## <a name="data-transfer-exemptions"></a>Datenübertragungsausnahmen
 
-  Die App-Schutzrichtlinie von Intune erlaubt die Datenübertragung zu und von einigen ausgenommenen Apps und Plattformdiensten. Beispielsweise müssen alle über Intune verwaltete Apps unter Android in der Lage sein, Daten zu und vom Google-Programm für die Sprachwiedergabe von Text zu übertragen, sodass Text vom Bildschirm Ihres mobilen Geräts laut vorgelesen werden kann. Diese Liste unterliegt Änderungen und gibt die Dienste und Apps wieder, die als nützlich für die sichere Produktivität gelten.
+  Die App-Schutzrichtlinien von Intune erlauben die Datenübertragung zu und von einigen ausgenommenen Apps und Plattformdiensten. Beispielsweise müssen alle über Intune verwaltete Apps unter Android in der Lage sein, Daten zu und vom Google-Programm für die Sprachwiedergabe von Text zu übertragen, sodass Text vom Bildschirm Ihres mobilen Geräts laut vorgelesen werden kann. Diese Liste unterliegt Änderungen und gibt die Dienste und Apps wieder, die als nützlich für die sichere Produktivität gelten.
 
 ### <a name="full-exemptions"></a>Vollständige Ausnahmen
 

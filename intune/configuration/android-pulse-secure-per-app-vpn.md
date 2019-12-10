@@ -6,30 +6,31 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
-ms.reviewer: chrisbal
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3683d2aeada791c6ec827e915e02365a336e6045
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 62f418e396c5030a47ea0bcb31914cd4e1069c40
+ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059678"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74319837"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Verwenden eines benutzerdefinierten Microsoft Intune-Profils zum Erstellen eines VPN-Profils pro App für Android-Geräte
 
-[!INCLUDE[azure_portal](../includes/azure_portal.md)]
-
 Sie können ein App-bezogenes VPN-Profil für Android 5.0-Geräte oder höher erstellen, die von Intune verwaltet werden. Erstellen Sie zunächst ein VPN-Profil, das den Pulse Secure- oder Citrix-Verbindungstyp verwendet. Erstellen Sie anschließend eine benutzerdefinierte Konfigurationsrichtlinie, die das VPN-Profil angegebenen Apps zuordnet.
+
+> [!NOTE]
+> Sie können die folgenden Schritte auch ausführen, um App-bezogenes VPN auf Android Enterprise-Geräten zu verwenden. Es wird jedoch empfohlen, eine [App-Konfigurationsrichtlinie](../apps/app-configuration-policies-use-android.md) für Ihre VPN-Client-App zu verwenden.
 
 Nachdem Sie die Richtlinie Ihrem Android-Gerät oder Ihren Benutzergruppen zugewiesen haben, sollten Benutzer den Pulse Secure- oder Citrix-VPN-Client starten. Der VPN-Client erlaubt es dann lediglich den angegebenen Apps, die offene VPN-Verbindung für ihren Datenverkehr zu nutzen.
 
@@ -48,7 +49,7 @@ Nachdem Sie die Richtlinie Ihrem Android-Gerät oder Ihren Benutzergruppen zugew
     - **Plattform**: Wählen Sie **Android** aus.
     - **Profiltyp**: Wählen Sie **VPN** aus.
 
-4. Wählen Sie **Einstellungen** > **Konfigurieren** aus, und konfigurieren Sie das VPN-Profil gemäß den Einstellungen in [Konfigurieren von VPN-Einstellungen](vpn-settings-configure.md) und [Intune-VPN-Einstellungen für Android-Geräte](vpn-settings-android.md).
+4. Wählen Sie **Einstellungen** > **Konfigurieren** aus. Konfigurieren Sie dann das VPN-Profil. Weitere Informationen finden Sie unter [Konfigurieren von VPN-Einstellungen](vpn-settings-configure.md) und [Intune-VPN-Einstellungen für Android-Geräte](vpn-settings-android.md).
 
 Notieren Sie den Wert für **Verbindungsname**, den Sie beim Erstellen des VPN-Profils angegeben haben. Dieser Name wird im nächsten Schritt benötigt. Beispiel: **MeineApp-VPN-Profil**.
 
@@ -75,7 +76,7 @@ Notieren Sie den Wert für **Verbindungsname**, den Sie beim Erstellen des VPN-P
 
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>Festlegen, ob Ihre App-Liste eine Positivliste (Whitelist) oder eine Negativliste (Blacklist) sein soll (optional)
 
-Sie können eine Liste von Apps angeben, die die VPN-Verbindung *nicht* verwenden können, indem Sie den Wert **BLACKLIST** verwenden. Alle anderen Apps stellen über das VPN eine Verbindung her. Alternativ können Sie den Wert **WHITELIST** verwenden, um eine Liste von Apps anzugeben, die die VPN-Verbindung verwenden *können*. Apps, die sich nicht auf der Liste befinden, stellen keine Verbindung über das VPN her.
+Sie können mithilfe des Werts *BLACKLIST* eine Liste von Apps angeben, die die VPN-Verbindung **nicht** verwenden können. Alle anderen Apps stellen über das VPN eine Verbindung her. Alternativ können Sie mithilfe des Werts **WHITELIST** eine Liste von Apps angeben, die die VPN-Verbindung verwenden *können*. Apps, die sich nicht auf der Liste befinden, stellen keine Verbindung über das VPN her.
 
 1. Klicken Sie im Bereich **Custom OMA-URI Settings** (Benutzerdefinierte OMA-URI-Einstellungen) auf **Hinzufügen**.
 2. Geben Sie einen Einstellungsnamen ein.

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b47ecc2363244634cb355fdeaeb51074417322e4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507294"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547967"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Einschließen und Ausschließen von App-Zuweisungen in Microsoft Intune
 
@@ -31,9 +31,20 @@ In Intune können Sie bestimmen, wer Zugriff auf eine App hat, indem Sie sowohl 
 
 Um die Verfügbarkeit einer App festzulegen, schließen Sie mithilfe einer Kombination von Ein- und Ausschlussgruppenzuweisungen App-Zuweisungen für eine Gruppe von Benutzern oder Geräten ein bzw. aus. Diese Funktion kann nützlich sein, wenn Sie die App verfügbar machen, indem Sie eine große Gruppe einschließen und dann die ausgewählten Benutzer auch durch Ausschluss einer kleineren Gruppe einschränken. Die kleinere Gruppe könnte eine Testgruppe oder ausführende Gruppe sein. 
 
-Wenn Sie Gruppen aus einer App-Zuweisung ausschließen, dürfen Sie entweder nur Benutzer- oder nur Gerätegruppen ausschließen. Sie können keine Mischung von Benutzer- und Gerätegruppen ausschließen. 
+Es wird empfohlen, Apps speziell für Ihre Benutzergruppen und separat für Ihre Gerätegruppen zu erstellen und zuzuweisen. Weitere Informationen zu Gruppen finden Sie unter [Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten](~/fundamentals/groups-add.md).  
 
-Intune berücksichtigt beim Ausschließen von Gruppen keine Zuweisung eines Benutzers zu einem Gerät. Es ist unwahrscheinlich, dass das Einschließen von Benutzergruppen und gleichzeitige Ausschließen von Gerätegruppen die von Ihnen gewünschten Ergebnisse liefert. Aufnahme hat Vorrang vor Ausschluss. Wenn Sie z.B. **Alle Benutzer** eine iOS-App zuweisen und **Alle iPads** ausschließen, kommt dabei heraus, dass jeder Benutzer mit einem iPad weiterhin die App erhält. Wenn Sie jedoch die iOS-App **Alle Geräte** zuweisen und **Alle iPads** ausschließen, ist die Bereitstellung erfolgreich.  
+Das Einschließen und Ausschließen von App-Zuweisungen sind wichtige Szenarios:
+
+- Der Ausschluss hat in folgenden Szenarien für denselben Gruppentyp Vorrang vor der Einbeziehung:
+    - Einschließen von Benutzergruppen und Ausschließen von Benutzergruppen beim Zuweisen von Apps
+    - Einschließen von Gerätegruppen und Ausschließen von Gerätegruppen beim Zuweisen von Apps
+
+    Wenn Sie z. B. eine Gerätegruppe der Benutzergruppe **All corporate users** (Alle Unternehmensbenutzer) zuweisen, jedoch Mitglieder der Benutzergruppe **Senior Management Staff** (Mitarbeiter des oberen Managements) ausschließen, erhalten **Alle Unternehmensbenutzer** mit Ausnahme der **Mitarbeiter des oberen Managements** die Zuweisung, da beide Gruppen Benutzergruppen sind.
+- Intune bewertet keine Beziehungen zwischen Benutzer- und Gerätegruppen. Wenn Sie Apps gemischten Gruppen zuweisen, entsprechen die Ergebnisse möglicherweise nicht Ihren Erwartungen.
+
+    Wenn Sie beispielsweise der Benutzergruppe **Alle Benutzer** eine Gerätegruppe zuweisen, jedoch eine Gerätegruppe **Alle persönlichen Geräte** ausschließen. In dieser gemischten Gruppen-App-Zuweisung erhalten **Alle Benutzer** die App. Der Ausschluss wird nicht angewendet.
+
+Daher wird das Zuweisen von Apps zu gemischten Gruppen nicht empfohlen.
 
 > [!NOTE]
 > Wenn Sie eine Gruppenzuweisung für eine App festlegen, ist der Typ **Nicht zutreffend** veraltet und wird mit der Ausschlussgruppenfunktionalität ersetzt. 
@@ -41,7 +52,6 @@ Intune berücksichtigt beim Ausschließen von Gruppen keine Zuweisung eines Benu
 > Intune bietet die vorab erstellten Gruppen **Alle Benutzer** und **Alle Geräte** in der Konsole an. Die Gruppen verfügen der Einfachheit halber über integrierte Optimierungen. Sie sollten diese Gruppen unbedingt anstelle möglicherweise selbst erstellter „Alle Benutzer“- oder „Alle Geräte“-Gruppen verwenden, um alle Benutzer und alle Geräte zu erreichen.  
 >
 > Android Enterprise unterstützt das Einschließen und Ausschließen von Gruppen. Sie können die integrierten Gruppen **Alle Benutzer** und **Alle Geräte** für die Android Enterprise-App-Zuweisung nutzen. 
-
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Ein- und Ausschließen von Gruppen beim Zuweisen von Apps 
 So weisen Sie eine App Gruppen mithilfe der Ein- und Ausschlusszuweisung zu:

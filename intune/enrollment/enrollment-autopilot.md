@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 454d23038a593829ea8a14929dc435e9f9ddb457
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 8d24a858ec66433e72d63bea922eac0c4072a27c
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709486"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547749"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Registrieren von Windows-Geräten in Intune mithilfe von Windows Autopilot  
 Windows Autopilot vereinfacht das Registrieren von Geräten in Intune. Das Erstellen und Warten von benutzerdefinierten Images des Betriebssystems ist ein langwieriger Prozess. Es kann ebenfalls Zeit in Anspruch nehmen, diese benutzerdefinierten Images von Betriebssystemen auf neue Geräte anzuwenden, um diese für die Verwendung vorzubereiten, bevor Sie sie Ihren Benutzern zur Verfügung stellen. Mit Microsoft Intune und Autopilot können Sie Ihren Benutzern neue Geräte geben, ohne die benutzerdefinierten Images des Betriebssystems auf den Geräten erstellen, verwalten und auf diese anwenden zu müssen. Wenn Sie Intune zum Verwalten von Autopilot-Geräten verwenden, können Sie Richtlinien, Profile und Apps usw. verwalten, nachdem diese registriert sind. Eine Übersicht über die Vorteile, Szenarios und Voraussetzungen finden Sie unter [Übersicht über Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -49,7 +49,7 @@ Weitere Informationen finden Sie über das Cmdlet zu den Grundlagen von PowerShe
 
 Sie können Windows Autopilot-Geräte durch Importieren einer CSV-Datei mit ihren Informationen hinzufügen.
 
-1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Windows-Registrierung** > **Geräte** > **Import** aus.
+1. Klicken Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) unter **Windows Autopilot Deployment Program** > **Importieren** (Windows Autopilot Deployment-Programm) auf **Geräte** > **Windows** > **Geräte**.
 
     ![Screenshot von Windows Autopilot-Geräten](./media/enrollment-autopilot/autopilot-import-device.png)
 
@@ -65,7 +65,7 @@ Sie können Windows Autopilot-Geräte durch Importieren einer CSV-Datei mit ihre
 
 3. Wählen Sie **Importieren** aus, um mit dem Importieren von Informationen zu den Geräten zu beginnen. Der Import kann mehrere Minuten dauern.
 
-4. Nachdem der Importvorgang abgeschlossen ist, wählen Sie **Geräteregistrierung** > **Windows-Registrierung** > **Windows Autopilot** >  **Geräte** > **Synchronisieren** aus. Eine Meldung zeigt an, dass die Synchronisierung ausgeführt wird. Der Prozess kann ein paar Minuten in Anspruch nehmen, je nachdem, wie viele Geräte synchronisiert werden.
+4. Klicken Sie nach Abschluss des Imports unter **Windows Autopilot Deployment Program** > **Synchronisieren** (Windows Autopilot Deployment-Programm) auf **Geräte** > **Windows** > **Windows enrollment** > **Geräte** (Windows-Registrierung). Eine Meldung zeigt an, dass die Synchronisierung ausgeführt wird. Der Prozess kann ein paar Minuten in Anspruch nehmen, je nachdem, wie viele Geräte synchronisiert werden.
 
 5. Aktualisieren Sie die Ansicht, um neue Geräte anzuzeigen.
 
@@ -88,7 +88,7 @@ Sie können Windows Autopilot-Geräte durch Importieren einer CSV-Datei mit ihre
 
 ## <a name="create-an-autopilot-deployment-profile"></a>Erstellen eines Autopilot-Bereitstellungsprofils
 Autopilot-Bereitstellungsprofile werden verwendet, um die Autopilot-Geräte zu konfigurieren. Sie können bis zu 350 Profile pro Mandant erstellen.
-1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Windows-Registrierung** > **Bereitstellungsprofile** > **Profil erstellen** aus.
+1. Klicken Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) auf **Geräte** > **Windows** > **Windows enrollment** > **Deployment Profiles** > **Profil erstellen** (Windows-Registrierung > Bereitstellungsprofile).
 2. Geben Sie auf der Seite **Grundlagen** einen Wert in **Name** und eine optionale **Beschreibung** ein.
 
     ![Screenshot der Seite „Grundlagen“](./media/enrollment-autopilot/create-profile-basics.png)
@@ -129,25 +129,35 @@ Autopilot-Bereitstellungsprofile werden verwendet, um die Autopilot-Geräte zu k
     ![Screenshot der Seite „Überprüfen“](./media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
-> Intune führt regelmäßig eine Überprüfung auf neuen Geräten in den zugewiesenen Gruppen durch und beginnt dann mit der Zuweisung von Profilen zu diesen Geräten. Dieser Vorgang kann einige Minuten dauern. Vor der Bereitstellung eines Geräts stellen Sie sicher, dass der Vorgang abgeschlossen ist.  Unter **Geräteregistrierung** > **Windows-Registrierung** > **Geräte** können Sie überprüfen, ob der Profilstatus von „Nicht zugewiesen“ in „Wird zugewiesen“ und dann schließlich in „Zugewiesen“ geändert wird.
+> Intune führt regelmäßig eine Überprüfung auf neuen Geräten in den zugewiesenen Gruppen durch und beginnt dann mit der Zuweisung von Profilen zu diesen Geräten. Dieser Vorgang kann einige Minuten dauern. Vor der Bereitstellung eines Geräts stellen Sie sicher, dass der Vorgang abgeschlossen ist.  Unter **Windows Autopilot Deployment Program** (Windows Autopilot Deployment-Programm) können Sie über **Geräte** > **Windows** > **Windows enrollment** > **Geräte** (Windows-Registrierung) überprüfen, ob der Profilstatus von „Nicht zugewiesen“ in „Assigning“ (Wird zugewiesen) und dann schließlich in „Zugewiesen“ geändert wird.
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>Bearbeiten eines Autopilot-Bereitstellungsprofils
 Nachdem Sie ein Autopilot-Bereitstellungsprofil erstellt haben, können Sie bestimmte Teile des Bereitstellungsprofils bearbeiten.   
 
-1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** aus.
-2. Wählen Sie unter **Windows-Registrierung** im Abschnitt **Windows Autopilot** die Option **Bereitstellungsprofile**.
-3. Wählen Sie das Profil aus, das Sie bearbeiten möchten.
-4. Klicken Sie auf der linken Seite auf **Eigenschaften**, um den Namen oder die Beschreibung des Bereitstellungsprofils zu ändern. Klicken Sie auf **Speichern**, wenn Sie Änderungen vorgenommen haben.
+1. Klicken Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) auf **Geräte** > **Windows** > **Windows enrollment** > **Deployment Profiles** (Windows-Registrierung > Bereitstellungsprofile).
+2. Wählen Sie das Profil aus, das Sie bearbeiten möchten.
+3. Klicken Sie auf der linken Seite auf **Eigenschaften**, um den Namen oder die Beschreibung des Bereitstellungsprofils zu ändern. Klicken Sie auf **Speichern**, wenn Sie Änderungen vorgenommen haben.
 5. Klicken Sie auf **Einstellungen**, um Änderungen an den OOBE-Einstellungen vorzunehmen. Klicken Sie auf **Speichern**, wenn Sie Änderungen vorgenommen haben.
 
 > [!NOTE]
 > Änderungen am Profil werden für die diesem Profil zugewiesenen Geräte angewendet. Das aktualisierte Profil wird jedoch nicht auf ein Gerät angewendet, das bereits bei Intune registriert ist, bis das Gerät zurückgesetzt und erneut registriert wurde.
 
+## <a name="edit-autopilot-device-attributes"></a>Bearbeiten von Autopilot-Geräteattributen
+Nachdem Sie ein Autopilot-Gerät hochgeladen haben, können Sie bestimmte Geräteattribute bearbeiten.
+
+1. Klicken Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) unter **Windows Autopilot Deployment Program** (Windows Autopilot Deployment-Programm) auf **Geräte** > **Windows** > **Windows enrollment** > **Geräte** (Windows-Registrierung).
+2. Wählen Sie das Gerät aus, das Sie bearbeiten möchten.
+3. Im rechten Bereich des Bildschirms können Sie den Gerätenamen, das Gruppentag oder den benutzerfreundlichen Namen bearbeiten (sofern Sie einen Benutzer zugewiesen haben).
+4. Wählen Sie **Speichern** aus.
+
+> [!NOTE]
+> Gerätenamen können für alle Geräte konfiguriert werden, werden aber bei mit Azure AD Hybrid im Zusammenhang stehenden Bereitstellungen ignoriert. Der Gerätename stammt weiterhin aus dem Domänenbeitrittsprofil für Azure AD Hybrid-Geräte.
+
 ## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Warnungen für nicht zugewiesene Windows Autopilot-Geräte  <!-- 163236 -->  
 
 Warnungen zeigen an, wie viele Autopilot-Programmgeräte keine Autopilot-Bereitstellungsprofile aufweisen. Verwenden Sie die Informationen aus der Warnung, um Profile zu erstellen und sie den nicht zugeordneten Geräten zuzuweisen. Wenn Sie auf die Warnung klicken, sehen Sie die vollständige Liste der Windows Autopilot-Geräte zusammen mit detaillierten Informationen.
 
-Um Warnungen für nicht zugewiesene Geräte anzuzeigen, wählen Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) die Optionen **Geräteregistrierung** > **Übersicht** > **Nicht zugewiesene Geräte**.  
+Klicken Sie in [Intune im Azure-Portal](https://aka.ms/intuneportal) auf **Geräte** > **Übersicht** > **Enrollment alerts** > **Unassigned devices** (Registrierungswarnungen > Nicht zugewiesene Geräte), um Warnungen für nicht zugewiesene Geräte anzuzeigen.  
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>Hinzufügen eines Benutzers zu einem bestimmten Autopilot-Gerät
 
@@ -155,7 +165,7 @@ Sie können einen Benutzer zu einem bestimmten Autopilot-Gerät hinzufügen. Dur
 
 Voraussetzungen: Das Azure Active Directory-Unternehmensportal wurde konfiguriert und verfügt über Windows 10, Version 1809 oder höher.
 
-1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Windows-Registrierung** > **Geräte** aus, Wählen Sie das Gerät und dann **Benutzer zuweisen** aus.
+1. Klicken Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) auf **Geräte** > **Windows** > **Windows enrollment** > **Geräte** (Windows-Registrierung), wählen Sie unter **Windows Autopilot Deployment Program** (Windows Autopilot Deployment-Programm) das Gerät aus, und klicken Sie auf **Assign user** (Benutzer zuweisen).
 
     ![Screenshot von „Benutzer zuweisen“](./media/enrollment-autopilot/assign-user.png)
 
@@ -171,7 +181,7 @@ Voraussetzungen: Das Azure Active Directory-Unternehmensportal wurde konfigurier
 
 ## <a name="autopilot-deployments-report"></a>Bericht über Autopilot-Bereitstellungen
 Sie können Details zu jedem Gerät, das über Windows Autopilot bereitgestellt wird, anzeigen.
-Navigieren Sie zu **Intune**, und wählen sie unter **Monitor** die Option **Autopilot-Bereitstellungen** aus, um den Bericht anzuzeigen.
+Navigieren Sie zum [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431), und klicken Sie auf **Geräte** > **Überwachen** > **Autopilot deployments** (Autopilot-Bereitstellungen), um den Bericht anzuzeigen.
 Die Daten sind für 30 Tage nach der Bereitstellung verfügbar.
 
 
@@ -179,7 +189,7 @@ Die Daten sind für 30 Tage nach der Bereitstellung verfügbar.
 
 Sie können Windows Autopilot-Geräte, die in Intune nicht registriert sind, folgendermaßen löschen:
 
-- Löschen Sie die Geräte aus Windows Autopilot über **Geräteregistrierung** > **Windows-Registrierung** > **Geräte**. Wählen Sie die Geräte, die Sie löschen möchten, und dann **Löschen** aus. Die Gerätelöschung in Windows Autopilot kann ein paar Minuten lang dauern.
+- Löschen Sie unter **Windows Autopilot Deployment Program** (Windows Autopilot Deployment-Programm) die Geräte über **Geräte** > **Windows** > **Windows enrollment** > **Geräte** (Windows-Registrierung) aus Windows Autopilot. Wählen Sie die Geräte, die Sie löschen möchten, und dann **Löschen** aus. Die Gerätelöschung in Windows Autopilot kann ein paar Minuten lang dauern.
 
 Für die vollständige Entfernung eines Geräts von Ihrem Mandanten müssen Sie das Intune-Gerät, das Azure Active Directory-Gerät und die Windows Autopilot-Geräteeinträge löschen. Dies lässt sich alles über Intune erledigen:
 
@@ -187,7 +197,7 @@ Für die vollständige Entfernung eines Geräts von Ihrem Mandanten müssen Sie 
 
 2. Löschen Sie die Geräte in den Azure Active Directory-Geräten über **Geräte** > **Azure AD-Geräte**.
 
-3. Löschen Sie die Geräte aus Windows Autopilot über **Geräteregistrierung** > **Windows-Registrierung** > **Geräte**. Wählen Sie die Geräte, die Sie löschen möchten, und dann **Löschen** aus. Die Gerätelöschung in Windows Autopilot kann ein paar Minuten lang dauern.
+3. Löschen Sie unter **Windows Autopilot Deployment Program** (Windows Autopilot Deployment-Programm) die Geräte über **Geräte** > **Windows** > **Windows enrollment** > **Geräte** (Windows-Registrierung) aus Windows Autopilot. Wählen Sie die Geräte, die Sie löschen möchten, und dann **Löschen** aus. Die Gerätelöschung in Windows Autopilot kann ein paar Minuten lang dauern.
 
 ## <a name="using-autopilot-in-other-portals"></a>Verwenden von Autopilot in anderen Portalen
 Wenn die mobile Geräteverwaltung für Sie nicht von Interesse ist, können Sie Autopilot in anderen Portalen verwenden. Die Verwendung von anderen Portalen ist ebenfalls möglich, es wird jedoch empfohlen, ausschließlich Intune zum Verwalten Ihrer Autopilot-Bereitstellungen zu verwenden. Wenn Sie Intune und ein anderes Portal verwenden, kann Intune folgende Funktionen nicht verwenden:  

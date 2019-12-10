@@ -5,22 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: aiwang
+ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53ac86ce88481176ab6f2472b1c0fbae8d3453c1
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199331"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291097"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Verwalten von Windows 10-Softwareupdates in Intune
 
@@ -208,13 +208,18 @@ Wenn ein Gerät eine Richtlinie für Windows 10-Featureupdates erhält, geschieh
 
 - Anders als bei der Verwendung der Funktion *Anhalten* mit einem Updatering, der nach 35 Tagen abläuft, bleibt die Richtlinie des Windows 10-Featureupdates weiterhin aktiv. Geräte installieren erst dann eine neue Windows-Version, wenn Sie die Richtlinie für Windows 10-Featureupdates ändern oder entfernen. Wenn Sie die Richtlinie bearbeiten, um eine neuere Version anzugeben, können Geräte die Features von dieser Windows-Version installieren.
 
-> [!IMPORTANT]
-> Wenn Sie eine *Windows 10-Featureupdate*- und eine *Windows 10-Updatering*-Richtlinie auf dem gleichen Gerät bereitstellen, überprüfen Sie den Updatering für die folgenden Konfigurationen:
->
-> - Der **Rückstellungszeitraum für Funktionsupdates (Tage)** muss auf **0** festgelegt werden.
-> - Featureupdates für den Updatering müssen *ausgeführt werden*. Sie dürfen nicht angehalten werden.
+### <a name="limitations-for-windows-10-feature-updates"></a>Einschränkungen für Windows 10-Featureupdates
 
-Windows 10-Featureupdates werden nicht von Windows Autopilot unterstützt.
+- Wenn Sie eine *Windows 10-Featureupdate*-Richtlinie auf einem Gerät bereitstellen, das auch eine *Windows 10-Updatering*-Richtlinie empfängt, überprüfen Sie den Updatering für die folgenden Konfigurationen:
+  - Der **Rückstellungszeitraum für Funktionsupdates (Tage)** muss auf **0** festgelegt werden.
+  - Featureupdates für den Updatering müssen *ausgeführt werden*. Sie dürfen nicht angehalten werden.
+
+- Die *Windows 10-Featureupdates*-Richtlinie wird nicht von Autopilot unterstützt. Intune wird die Richtlinie für folgende Geräte nicht bereitstellen:
+  - Geräte, die von Autopilot bereitgestellt werden.
+  - Geräte, die zuvor mit Autopilot bereitgestellt wurden.
+
+  Diese Einschränkung wird untersucht, um festzustellen, ob sie in Zukunft unterstützt werden kann.
+
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>Erstellen und Zuweisen von Windows 10-Featureupdates
 

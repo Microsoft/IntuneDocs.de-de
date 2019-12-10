@@ -6,31 +6,31 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
-ms.reviewer: heenamac
+ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42500618c5ec753fcabf72b03f175b823c3337d4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 504c77fb56918cf97312e70f50b38356f9f7efef
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504386"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74409695"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Erstellen einer Mobile Threat Defense-Gerätekompatibilitätsrichtlinie (MTD) mit Intune
 
-> [!NOTE] 
-> Diese Informationen gelten für alle Mobile Threat Defense-Partner.
-
 Intune mit MTD hilft Ihnen dabei, Bedrohungen zu erkennen und Risiken auf mobilen Geräten zu bewerten. Sie können eine Regel für eine Intune-Gerätekompatibilitätsrichtlinie erstellen, mit der das Risiko bewertet wird, um zu ermitteln, ob das Gerät kompatibel ist oder nicht. Anschließend können Sie eine [Richtlinie für bedingten Zugriff](create-conditional-access-intune.md) verwenden, um den Zugriff auf Dienste basierend auf der Gerätekonformität zu blockieren.
+
+> [!NOTE]
+> Diese Informationen gelten für alle Mobile Threat Defense-Partner.
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
@@ -42,44 +42,41 @@ Voraussetzungen für die Gerätekompatibilitätsrichtlinie mit MTD:
 
 ## <a name="to-create-an-mtd-device-compliance-policy"></a>So erstellen Sie eine MTD-Gerätekonformitätsrichtlinie
 
-1. Melden Sie sich im [Azure-Portal](https://portal.azure.com/) mit Ihren Intune-Anmeldeinformationen an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 
-2. Klicken Sie im **Azure-Dashboard** im linken Menü auf **Alle Dienste**, und geben Sie in das Filtertextfeld **Intune** ein.
+2. Wählen Sie **Gerät** > **Konformitätsrichtlinien** > **Richtlinie erstellen** aus.
 
-3. Wählen Sie **Intune** aus. Das **Intune-Dashboard** wird geöffnet.
+3. Geben Sie eine Richtlinie zur Gerätekonformität an **Name**, **Beschreibung**, wählen Sie die **Plattform** aus, und wählen Sie dann **Konfigurieren** unter dem Abschnitt **Einstellungen** aus.
 
-4. Wählen Sie im **Intune-Dashboard** **Gerätekompatibilität** und dann im Abschnitt **Verwalten** die Option **Richtlinien** aus.
+4. Wählen Sie im Bereich **Konformitätsrichtlinie** die Option **Geräteintegrität** aus.
 
-5. Wählen Sie **Richtlinie erstellen** aus, geben Sie den **Namen** und die **Beschreibung** der Gerätekompatibilität ein, wählen Sie die **Plattform** aus, und wählen Sie dann **Konfigurieren** im Abschnitt **Einstellungen** aus.
+5. Wählen Sie im Bereich **Geräteintegrität** aus der Dropdownliste **Anfordern, dass das Gerät höchstens der angegebenen Gerätebedrohungsstufe entspricht** die gewünschte Bedrohungsstufe für mobile Geräte aus.
 
-6. Wählen Sie im Bereich **Konformitätsrichtlinie** die Option **Geräteintegrität** aus.
+   - **Secured** (Geschützt): Diese Stufe ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
 
-7. Wählen Sie im Bereich **Geräteintegrität** aus der Dropdownliste **Anfordern, dass das Gerät höchstens der angegebenen Gerätebedrohungsstufe entspricht** die gewünschte Stufe für mobile Bedrohungen aus.
+   - **Niedrig:** Das Gerät ist konform, wenn nur Bedrohungen auf niedriger Stufe vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
 
-    ein.  **Secured** (Geschützt): Diese Stufe ist die sicherste Einstellung. Solange auf einem Gerät Bedrohungen vorhanden sind, ist kein Zugriff auf Unternehmensressourcen möglich. Wenn Bedrohungen gefunden werden, wird das Gerät als nicht kompatibel bewertet.
+   - **Mittel:** Das Gerät ist konform, wenn auf dem Gerät Bedrohungen niedriger oder mittlerer Stufe gefunden werden. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
 
-    b.  **Niedrig:** Das Gerät ist konform, wenn nur Bedrohungen auf niedriger Stufe vorliegen. Durch Bedrohungen höherer Stufen wird das Gerät in einen nicht kompatiblen Status versetzt.
+   - **Hoch:** Diese Stufe gewährleistet das geringste Maß an Sicherheit. Sie lässt alle Bedrohungsstufen zu und verwendet Mobile Threat Defense nur zu Berichtszwecken. Auf Geräten muss mit dieser Einstellung die MTD-App aktiviert sein.
 
-    c.  **Mittel:** Das Gerät ist konform, wenn auf dem Gerät Bedrohungen niedriger oder mittlerer Stufe gefunden werden. Wenn auf dem Gerät Bedrohungen hoher Stufen erkannt werden, wird es als nicht kompatibel bewertet.
-
-    d.  **Hoch:** Diese Stufe gewährleistet das geringste Maß an Sicherheit. Sie lässt alle Bedrohungsstufen zu und verwendet Mobile Threat Defense nur zu Berichtszwecken. Auf Geräten muss mit dieser Einstellung die MTD-App aktiviert sein.
-
-8. Klicken Sie zweimal auf **OK**, und wählen Sie dann **Erstellen** aus.
+6. Klicken Sie zweimal auf **OK**, und wählen Sie zum Erstellen der Richtlinie **Erstellen** aus.
 
 > [!IMPORTANT]
 > Wenn Sie Richtlinien für bedingten Zugriff für Office 365 oder andere Dienste erstellen, wird die Konformitätsbewertung ausgewertet, und auf nicht konformen Geräten wird der Zugriff auf Unternehmensressourcen blockiert, bis die Bedrohung auf dem Gerät beseitigt ist.
 
 ## <a name="to-assign-an-mtd-device-compliance-policy"></a>So weisen Sie eine MTD-Gerätekonformitätsrichtlinie zu
 
-Wählen Sie zum Zuweisen einer Gerätekompatibilitätsrichtlinie zu Benutzern eine Richtlinie aus, die Sie zuvor konfiguriert haben. Vorhandene Richtlinien finden Sie im Bereich **Gerätekonformität > Richtlinien**.
+So weisen Sie eine Gerätekonformitätsrichtlinie Benutzern zu:
 
-1. Wählen Sie die Richtlinie, die Sie Benutzern zuweisen möchten, und abschließend **Zuweisungen** aus. Mit dieser Aktion öffnen Sie den Bereich, in dem Sie **Azure Active Directory-Sicherheitsgruppen** auswählen und der Richtlinie zuweisen können.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 
-2. Klicken Sie auf **Wählen Sie die Gruppen aus, die eingeschlossen werden sollen**, um den Bereich mit den Azure AD-Sicherheitsgruppen zu öffnen.  Die Auswahl von **Auswählen** bewirkt die Bereitstellung der Richtlinie für Benutzer.
+2. Wählen Sie **Gerät** > **Konformitätsrichtlinien** aus.
 
-    > [!NOTE] 
-    > Sie haben die Richtlinie auf Benutzer angewendet. Die von den Benutzern verwendeten Geräte, denen die Richtlinie zugewiesen wurde, werden auf Konformität überprüft.
+3. Wählen Sie die Richtlinie aus, die Sie Benutzern zuweisen möchten, und wählen Sie danach **Zuweisungen** aus. Verwenden Sie die verfügbaren Optionen, um Gruppen *einzuschließen* oder *auszuschließen*, die diese Richtlinie erhalten sollen.  
+
+4. Wählen Sie „Speichern“ aus, um die Zuweisung abzuschließen. Wenn Sie die Zuweisung speichern, wird die Richtlinie für die ausgewählten Benutzer bereitgestellt, und Ihre Geräte werden auf Konformität ausgewertet.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Aktivieren von Mobile Threat Defense in Intune](mtd-connector-enable.md)
+[Aktivieren von Mobile Threat Defense in Intune](mtd-connector-enable.md)

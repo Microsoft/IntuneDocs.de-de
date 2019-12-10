@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c06fe931bf17b812def3f22b3d9a5d92d9933e2b
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: d4ff9126fec182d1e0d2f3eb75297ede8a632e2e
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709468"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390718"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Einrichten der Intune-Registrierung für dedizierte Android Enterprise-Geräte
 
@@ -101,6 +101,9 @@ Das Ersetzen oder Widerrufen eines Tokens bzw. QR-Codes hat keine Auswirkungen a
 ## <a name="enroll-the-dedicated-devices"></a>Registrieren der dedizierten Geräte
 
 Sie können jetzt [Ihre dedizierten Geräte registrieren](android-dedicated-devices-fully-managed-enroll.md).
+
+> [!NOTE]
+> Während der Registrierung eines dedizierten Geräts wird die **Microsoft Intune**-App automatisch installiert.  Die App ist für die Registrierung erforderlich und kann nicht deinstalliert werden. 
 
 ## <a name="managing-apps-on-android-enterprise-dedicated-devices"></a>Verwalten von Apps auf dedizierten Android Enterprise-Geräten
 

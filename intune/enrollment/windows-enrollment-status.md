@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e81b8dc4938ea080018efae97093bb5e70dbcde8
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059704"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548015"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Einrichten einer Seite zum Registrierungsstatus
  
@@ -64,14 +64,14 @@ Außerdem können Sie die Reihenfolge anhand der Priorität der Profile festlege
 
 Führen Sie die folgenden Schritte aus, um die Seite zum Registrierungsstatus zu aktivieren.
  
-1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Windows-Registrierung** > **Seite zum Registrierungsstatus** aus.
+1. Klicken Sie in [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) auf **Geräte** > **Windows** > **Windows-Registrierung** > **Seite zum Registrierungsstatus**.
 2. Klicken Sie auf dem Blatt **Seite zum Registrierungsstatus** auf **Standard** > **Einstellungen**.
 3. Klicken Sie für **Show app and profile installation progress** (Installationsfortschritt für die App und das Profil anzeigen) auf **Ja**.
 4. Wählen Sie die anderen Einstellungen aus, die Sie aktivieren wollen, und klicken Sie anschließend auf **Speichern**.
 
 ## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Erstellen eines Profils des Typs „Seite zum Registrierungsstatus“ und Zuweisen zu einer Gruppe
 
-1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Windows-Registrierung** > **Seite zum Registrierungsstatus** > **Profil erstellen** aus.
+1. Klicken Sie in [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) auf **Geräte** > **Windows** > **Windows-Registrierung** > **Seite zum Registrierungsstatus** > **Profil erstellen**.
 2. Geben Sie einen **Namen** und eine **Beschreibung** an.
 3. Wählen Sie **Erstellen** aus.
 4. Wählen Sie das neue Profil in der Liste der **Seite zum Registrierungsstatus** aus.
@@ -82,7 +82,7 @@ Führen Sie die folgenden Schritte aus, um die Seite zum Registrierungsstatus zu
 
 Ein Benutzer kann vielen Gruppen angehören und viele Profile des Typs „Seite zum Registrierungsstatus“ haben. Um solche Konflikte zu handhaben, können Sie für jedes Profil die Priorität festlegen. Wenn jemand während der Registrierung mehr als ein Profil für „Seite zum Registrierungsstatus“ hat, wird nur das Profil mit der höchsten Priorität auf das zu registrierende Gerät angewendet.
 
-1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Windows-Registrierung** > **Seite zum Registrierungsstatus** aus.
+1. Klicken Sie in [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) auf **Geräte** > **Windows** > **Windows-Registrierung** > **Seite zum Registrierungsstatus**.
 2. Zeigen Sie auf das Profil in der Liste.
 3. Ziehen Sie mithilfe der drei vertikalen Punkte das Profil an die gewünschte Position in der Liste.
 
@@ -90,7 +90,7 @@ Ein Benutzer kann vielen Gruppen angehören und viele Profile des Typs „Seite 
 
 Sie können angeben, welche Apps installiert sein müssen, bevor der Benutzer auf den Desktop zugreifen kann.
 
-1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräteregistrierung** > **Windows-Registrierung** > **Seite zum Registrierungsstatus** aus.
+1. Klicken Sie in [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) auf **Geräte** > **Windows** > **Windows-Registrierung** > **Seite zum Registrierungsstatus**.
 2. Wählen Sie ein Profil und dann **Einstellungen** aus.
 3. Wählen Sie **Ja** für **Installationsfortschritt für Apps und Profile anzeigen** aus.
 4. Wählen Sie **Ja** für **Geräteverwendung blockieren, bis alle Apps und Profile installiert sind** aus.

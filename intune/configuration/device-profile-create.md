@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02603651587837211d9a67d7e4bbeb90cb358dc5
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059571"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390873"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Erstellen eines Geräteprofils in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Mit Geräteprofilen können Sie Einstellungen hinzufügen und konfigurieren und diese anschließend mithilfe von Push an Geräte in Ihrer Organisation übertragen. Im Artikel [Apply features and settings on your devices using device profiles (Anwenden von Funktionen und Einstellungen auf Ihren Geräten mithilfe von Geräteprofilen in Microsoft Intune)](device-profiles.md) ist dies ausführlicher beschrieben. Sie erfahren dort u. a. mehr über die Möglichkeiten, die Sie dabei haben.
 
@@ -78,6 +76,7 @@ Inhalt dieses Artikels
        - [Kiosk](kiosk-settings.md)
        - [PKCS-Zertifikat](../protect/certficates-pfx-configure.md)
        - [Importiertes PKCS-Zertifikat](../protect/certificates-imported-pfx-configure.md)
+       - [Einstellungsdatei](preference-file-settings-macos.md)
        - [SCEP-Zertifikat](../protect/certificates-scep-configure.md)
        - [ Vertrauenswürdiges Zertifikat](../protect/certificates-configure.md)
        - [Updaterichtlinien](../software-updates-ios.md)
@@ -160,6 +159,32 @@ Beim Zuweisen von Profilen zu Gruppen fungieren die Anwendbarkeitsregeln als Fil
 Intune verwendet verschiedene Aktualisierungszyklen zur Suche nach Updates für Konfigurationsprofile. Wenn ein Gerät vor Kurzem registriert wurde, wird der Check-In häufiger durchgeführt. Unter [Richtlinien- und Profilaktualisierungszyklen](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned) werden die geschätzten Aktualisierungszeiten aufgeführt.
 
 Benutzer können jederzeit die Unternehmensportal-App öffnen und das Gerät synchronisieren, um sofort zu prüfen, ob neue Profilupdates verfügbar sind.
+
+## <a name="recommendations"></a>Empfehlungen
+
+Erstellen Sie Profile unter Berücksichtigung folgender Empfehlungen:
+
+- Benennen Sie Ihre Richtlinien, damit Sie wissen, wofür diese vorgesehen sind. Alle [Konformitätsrichtlinien](../protect/create-compliance-policy.md) und [Konfigurationsprofile](../configuration/device-profile-create.md) verfügen über eine optionale Eigenschaft namens **Beschreibung**. Sie sollten in der **Beschreibung** spezifisch sein und Informationen angeben, damit andere Benutzer wissen, wofür die Richtlinie vorgesehen ist.
+
+  Einige Beispiele für Konfigurationsprofile sind:
+
+  **Profilname**: Administratorvorlage – OneDrive-Konfigurationsprofil für alle Windows 10-Benutzer  
+  **Profilbeschreibung**: OneDrive-Profil der Administratorvorlage, das die Mindest- und Basiseinstellungen für alle Windows 10-Benutzer enthält. Dieses wurde von user@contoso.com erstellt, um zu verhindern, dass Benutzer Organisationsdaten für persönliche Konten freigeben.
+
+  **Profilname**: VPN-Profil für alle iOS-Benutzer  
+  **Profilbeschreibung**: VPN-Profil, das die Mindest- und Basiseinstellungen für alle iOS-Benutzer enthält, um eine Verbindung mit Contoso-VPN zu erstellen. Dieses wurde von user@contoso.com erstellt, sodass Benutzer sich automatisch bei VPN authentifizieren, anstatt dass der Benutzernamen und das Kennwort der Benutzer angefordert wird.
+
+- Erstellen Sie Ihr Profil anhand der Aufgabe, z. B. dem Konfigurieren von Microsoft Edge-Einstellungen, dem Aktivieren von Microsoft Defender-Antivireneinstellungen, dem Blockieren von iOS-Geräten mit Jailbreak usw.
+
+- Erstellen Sie Profile, die für bestimmte Gruppen wie Marketing, Vertrieb, IT oder Administratoren gelten, oder nach Standort oder Schulsystem.
+
+- Trennen Sie Benutzerrichtlinien von Geräterichtlinien.
+
+  Beispielsweise haben [Administrative Vorlagen in Intune](administrative-templates-windows.md) Hunderte von ADMX-Einstellungen. Diese Vorlagen zeigen, ob eine Einstellung für Benutzer oder Geräte gilt. Weisen Sie bei der Erstellung von Administratorvorlagen Ihre Benutzereinstellungen einer Benutzergruppe und Ihre Geräteeinstellungen einer Gerätegruppe zu.
+
+  Die folgende Abbildung zeigt ein Beispiel einer Einstellung, die für Benutzer und/oder Geräte gelten kann:
+
+  ![Intune-Administratorvorlage, die für Benutzer und Geräte gilt](./media/device-profile-create/setting-applies-to-user-and-device.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

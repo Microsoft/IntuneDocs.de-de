@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/20/2019
+ms.date: 1/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84ef86a0b3c0ffbfffde572c9759c62645d57dc5
-ms.sourcegitcommit: 8c651a3ed1f358f19b65206a52f7808282de97c3
+ms.openlocfilehash: 844e93f3a063ae43342d2967cbd544f3ec425c21
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73844772"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410159"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Überwachen von Intune-Richtlinien zur Gerätekompatibilität
 
@@ -56,7 +57,7 @@ Wenn das Dashboard geöffnet wird, erhalten Sie eine Übersicht mit allen Konfor
 
 Wenn Sie sich diese Berichterstattung genauer ansehen, sehen Sie auch spezifische Konformitätsrichtlinien und -Einstellungen, die für ein spezifisches Gerät gelten, einschließlich des Konformitätszustands für jede Einstellung.
 
-### <a name="device-compliance-status-report"></a>Statusbericht zur Gerätekonformität
+### <a name="device-compliance-status"></a>Gerätekonformitätsstatus
 
 Das Diagramm **Gerätekonformitätszustand** veranschaulicht die Konformitätszustände für alle in Intune registrierten Geräte. Die Gerätekonformitätszustände werden in zwei verschiedenen Datenbanken gespeichert: Intune und Azure Active Directory.
 
@@ -119,7 +120,8 @@ Wählen Sie ein spezifisches Gerät im Diagramm **Gerätedetails** aus, und klic
 
 Intune zeigt weitere Details zu angewendeten Einstellungen der Gerätekonformitätsrichtlinien für das Gerät an. Wenn Sie eine spezifische Richtlinie auswählen, werden alle Einstellungen in der Richtlinie angezeigt.
 
-### <a name="devices-without-compliance-policy"></a>Geräte ohne Konformitätsrichtlinie
+### <a name="devices-without-compliance"></a>Nicht konforme Geräte
+
 Auf der Seite *Konformitätszustand* können Sie neben dem Diagramm *Richtlinienkonformität* die Kachel **Geräte ohne Konformitätsrichtlinie** auswählen, um Informationen zu Geräten anzuzeigen, denen keine Konformitätsrichtlinien zugewiesen sind:
 
 ![Anzeigen von Geräten ohne Konformitätsrichtlinien](./media/compliance-policy-monitor/devices-without-policies.png)
@@ -136,13 +138,13 @@ Wenn Sie die Kachel auswählen, werden alle Geräte ohne Konformitätsrichtlinie
 
 - Benutzer, denen eine beliebige Konformitätsrichtlinie zugewiesen ist, werden unabhängig von der Geräteplattform nicht im Bericht angezeigt. Wenn Sie beispielsweise eine Windows-Konformitätsrichtlinie einem Benutzer mit einem Android-Gerät zugewiesen haben, wird das Gerät nicht im Bericht angezeigt. Das Android-Gerät wird von Intune jedoch als nicht konform angesehen. Es wird empfohlen, Richtlinien für jede Geräteplattform zu erstellen und diese für alle Benutzer bereitzustellen, um Probleme zu vermeiden.
 
-### <a name="per-policy-device-compliance-report"></a>Richtlinienspezifischer Gerätekompatibilitätsbericht
+### <a name="per-policy-device-compliance"></a>Richtlinienspezifische Gerätekompatibilität
 
 Im Diagramm **Richtlinienkonformität** werden Ihnen die Richtlinien und die Anzahl konformer und nicht konformer Geräte angezeigt. 
 
 ![Anzeigen einer Liste von Richtlinien und der Anzahl konformer und nicht konformer Geräte für die jeweilige Richtlinie](./media/compliance-policy-monitor/idc-8.png)
 
-## <a name="setting-compliance-report"></a>Bericht zur Einstellungskompatibilität
+### <a name="setting-compliance"></a>Einstellungskonformität
 
 Im Diagramm **Einstellungskonformität** werden alle Einstellungen von allen Konformitätsrichtlinien, die Plattform, auf der die Richtlinieneinstellungen angewandt werden, und die Anzahl nicht konformer Geräte angezeigt.
 
@@ -152,6 +154,24 @@ Im Diagramm **Einstellungskonformität** werden alle Einstellungen von allen Kon
 > Eine Richtlinie kann einem Gerät und einem Benutzer auf demselben Gerät zugewiesen werden. In einigen Szenarien kann ein Gerät synchronisiert werden, bevor sich der Benutzer anmeldet, z. B. wenn das Gerät neu gestartet wird. „Kompatibilität“ kann diesen Benutzer auswerten und das Gerät als nicht kompatibel anzeigen. Dieses Verhalten zeigt möglicherweise auch das „Systemkonto“ als einen nicht kompatiblen Benutzer an.
 >
 > Dies ist ein bekanntes Problem bei Windows 10-Geräten mit mehreren Benutzern. Jegliche Änderungen oder Aktualisierungen zu diesem Verhalten werden in [In der Entwicklung befindliche Microsoft Intune-Features](../fundamentals/in-development.md) und/oder in [Neuerungen](../fundamentals/whats-new.md) angekündigt.
+
+## <a name="view-compliance-reports"></a>Anzeigen von Konformitätsberichten
+
+Zusätzlich zu den Diagrammen zum *Konformitätsstatus* können Sie auch im Admin Center über die Seite *Überwachen* Konformitätsberichte abrufen.
+
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+
+2. Klicken Sie erst auf **Geräte** > **Überwachen** und anschließend unter **Konformität** auf den Bericht, den Sie abrufen möchten. Unter anderem haben Sie Zugriff auf die folgenden Konformitätsberichte:
+
+   - Gerätekompatibilität
+   - Nicht konforme Geräte
+   - Geräte ohne Konformitätsrichtlinie
+   - Einstellungskonformität
+   - Richtlinienkonformität
+   - Windows-Integritätsnachweisbericht
+   - Status des Bedrohungs-Agents
+
+Weitere Informationen zu Berichten finden Sie unter [Intune-Berichte](../fundamentals/reports.md).
 
 ## <a name="view-status-of-device-policies"></a>Anzeigen des Status von Geräterichtlinien
 

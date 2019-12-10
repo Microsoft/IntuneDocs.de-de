@@ -5,23 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: joglocke
+ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53014376a7e220e975878031ffd759da40db7f6b
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413834"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410004"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>Konfigurieren von Windows 10-Geräten in Intune mithilfe von Sicherheitsbaselines
 
@@ -81,7 +81,7 @@ Die folgenden Sicherheitsbaseline-Instanzen können für Intune verwendet werden
   > [!NOTE]
   > Die Microsoft Defender ATP-Sicherheitsbaseline wurde für physische Geräte optimiert und ist zurzeit nicht für die Verwendung auf virtuellen Computern (VMs) oder VDI-Endpunkten empfehlenswert. Bestimmte Baselineeinstellungen können sich auf interaktive Remotesitzungen in virtualisierten Umgebungen auswirken.  Weitere Informationen finden Sie unter [Increase compliance to the Microsoft Defender ATP security baseline (Erhöhung der Compliance für die Microsoft Defender ATP-Sicherheitsbaseline)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline).
 
-- **Microsoft Edge-Sicherheitsbaseline** 
+- **Microsoft Edge-Sicherheitsbaseline**
   - [Vorschau: Microsoft Edge-Sicherheitsbaseline](security-baseline-settings-edge.md)
 
 Sie können die zuvor auf der Grundlage einer Vorschauvorlage erstellten Profile weiterhin nutzen und bearbeiten, auch wenn diese Vorschauvorlage für die Erstellung neuer Profile nicht mehr verfügbar ist.
@@ -103,13 +103,15 @@ Zu den üblichen Aufgaben beim Arbeiten mit Sicherheitsbaselines gehören:
 
 ### <a name="create-the-profile"></a>Erstellen des Profils
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an, und wählen Sie **Gerätesicherheit** > **Sicherheitsbaselines** aus, um die Liste der verfügbaren Baselines anzuzeigen.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+
+2. Klicken Sie auf **Endpunktsicherheit** > **Sicherheitsbaselines**, um die Liste der verfügbaren Baselines abzurufen.
 
    ![Auswählen einer Sicherheitsbaseline zum Konfigurieren](./media/security-baselines/available-baselines.png)
 
-2. Wählen Sie die Baseline, die Sie verwenden möchten, und dann **Profil erstellen** aus.
+3. Wählen Sie die Baseline, die Sie verwenden möchten, und dann **Profil erstellen** aus.
 
-3. Geben Sie auf der Registerkarte **Grundlagen** die folgenden Eigenschaften an:
+4. Geben Sie auf der Registerkarte **Grundlagen** die folgenden Eigenschaften an:
 
    - **Name**: Geben Sie einen Namen für Ihr Sicherheitsbaselinesprofil ein. Geben Sie beispielsweise *Standardprofil für Defender ATP* ein.
 
@@ -117,7 +119,7 @@ Zu den üblichen Aufgaben beim Arbeiten mit Sicherheitsbaselines gehören:
 
    Klicken Sie auf **Weiter**, um zur nächsten Registerkarte zu gelangen. Nachdem Sie zu einer neuen Registerkarte gewechselt sind, können Sie den Namen der Registerkarte auswählen, um zu einer zuvor angezeigten Registerkarte zurückzukehren.
 
-4. Zeigen Sie auf der Registerkarte „Konfigurationseinstellungen“ die Gruppen von **Einstellungen** an, die in der von Ihnen ausgewählten Baseline verfügbar sind. Sie können eine Gruppe aufklappen, um die Einstellungen in dieser Gruppe und die Standardwerte für diese Einstellungen in der Baseline anzuzeigen. So finden Sie bestimmte Einstellungen
+5. Zeigen Sie auf der Registerkarte „Konfigurationseinstellungen“ die Gruppen von **Einstellungen** an, die in der von Ihnen ausgewählten Baseline verfügbar sind. Sie können eine Gruppe aufklappen, um die Einstellungen in dieser Gruppe und die Standardwerte für diese Einstellungen in der Baseline anzuzeigen. So finden Sie bestimmte Einstellungen
    - Wählen Sie eine Gruppe aus, um die verfügbaren Einstellungen aufzuklappen und zu überprüfen.
    - Geben Sie Stichwörter in die *Suchleiste* an, um die Ansicht so zu filtern, dass nur die Gruppen angezeigt werden, die Ihren Suchkriterien entsprechen.
 
@@ -125,13 +127,13 @@ Zu den üblichen Aufgaben beim Arbeiten mit Sicherheitsbaselines gehören:
 
    ![Erweitern einer Gruppe, um die Einstellungen dafür anzuzeigen](./media/security-baselines/sample-list-of-settings.png)
 
-5. Wählen Sie auf der Registerkarte **Bereichstags** den Befehl **Bereichstags auswählen** aus, um den Bereich *Tags auswählen* zu öffnen, in dem Sie dem Profil Bereichstags zuweisen.
+6. Wählen Sie auf der Registerkarte **Bereichstags** den Befehl **Bereichstags auswählen** aus, um den Bereich *Tags auswählen* zu öffnen, in dem Sie dem Profil Bereichstags zuweisen.
 
-6. Wählen Sie auf der Registerkarte **Zuweisungen** den Befehl **Einzuschließende Gruppen auswählen**, und weisen Sie dann die Baseline einer oder mehreren Gruppen zu. Wählen Sie **Auszuschließende Gruppen auswählen**, um die Zuweisung anzupassen.
+7. Wählen Sie auf der Registerkarte **Zuweisungen** den Befehl **Einzuschließende Gruppen auswählen**, und weisen Sie dann die Baseline einer oder mehreren Gruppen zu. Wählen Sie **Auszuschließende Gruppen auswählen**, um die Zuweisung anzupassen.
 
    ![Zuweisen eines Profils](./media/security-baselines/assignments.png)
 
-7. Wenn Sie die Baseline bereitstellen möchten, wechseln Sie zur Registerkarte **Überprüfen + erstellen**, um die Details der Baseline zu überprüfen. Klicken Sie auf **Erstellen**, um das Profil zu speichern und bereitzustellen.
+8. Wenn Sie die Baseline bereitstellen möchten, wechseln Sie zur Registerkarte **Überprüfen + erstellen**, um die Details der Baseline zu überprüfen. Klicken Sie auf **Erstellen**, um das Profil zu speichern und bereitzustellen.
 
    Sobald Sie das Profil erstellt haben, gilt es in der zugewiesenen Gruppe möglicherweise sofort.
 
@@ -140,7 +142,7 @@ Zu den üblichen Aufgaben beim Arbeiten mit Sicherheitsbaselines gehören:
 
    ![Überprüfen der Baseline](./media/security-baselines/review.png)
 
-8. Nachdem Sie ein Profil erstellt haben, können Sie es bearbeiten, indem Sie zu **Gerätesicherheit** > **Sicherheitsbaselines** wechseln und dann den konfigurierten Baselinetyp und **Profile** auswählen. Wählen Sie das Profil in der Liste der verfügbaren Profile aus, und klicken Sie dann auf **Eigenschaften**. Sie können Einstellungen auf allen verfügbaren Konfigurationsregisterkarten bearbeiten und auf **Überprüfen + speichern** klicken, um Ihre Änderungen zu übernehmen.
+9. Nachdem Sie ein Profil erstellt haben, können Sie es bearbeiten, indem Sie zu **Gerätesicherheit** > **Sicherheitsbaselines** wechseln und dann den konfigurierten Baselinetyp und **Profile** auswählen. Wählen Sie das Profil in der Liste der verfügbaren Profile aus, und klicken Sie dann auf **Eigenschaften**. Sie können Einstellungen auf allen verfügbaren Konfigurationsregisterkarten bearbeiten und auf **Überprüfen + speichern** klicken, um Ihre Änderungen zu übernehmen.
 
 ### <a name="change-the-baseline-version-for-a-profile"></a>Ändern der Baselineversion für ein Profil
 
@@ -160,25 +162,27 @@ Nach dem Speichern im Anschluss an die Konvertierung wird die Baseline für zuge
 
 #### <a name="to-change-the-baseline-version-for-a-profile"></a>So ändern Sie die Baselineversion für ein Profil
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an. Wählen Sie **Gerätesicherheit** > **Sicherheitsbaselines** und dann die Kachel des Baselinetyps aus, der das zu ändernde Profil enthält.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an. 
 
-2. Wählen Sie anschließend **Profile** aus, und aktivieren Sie dann das Kontrollkästchen des Profils, das Sie bearbeiten möchten. Klicken Sie anschließend auf **Version ändern**.
+2. Klicken Sie auf **Endpunktsicherheit** > **Sicherheitsbaselines**, und wählen Sie dann die Kachel für den Baselinetyp mit dem Profil aus, das Sie ändern möchten.
+
+3. Wählen Sie anschließend **Profile** aus, und aktivieren Sie dann das Kontrollkästchen des Profils, das Sie bearbeiten möchten. Klicken Sie anschließend auf **Version ändern**.
 
    ![Auswählen einer Baseline](./media/security-baselines/select-baseline.png)
 
-3. Klicken Sie im Bereich **Version ändern** auf das Dropdownmenü **Hiermit wählen Sie eine Sicherheitsbaseline aus, auf die aktualisiert werden soll**, und wählen Sie die gewünschte Versionsinstanz aus.
+4. Klicken Sie im Bereich **Version ändern** auf das Dropdownmenü **Hiermit wählen Sie eine Sicherheitsbaseline aus, auf die aktualisiert werden soll**, und wählen Sie die gewünschte Versionsinstanz aus.
 
    ![Auswählen einer Version](./media/security-baselines/select-instance.png)
 
-4. Klicken Sie auf **Update überprüfen**, um eine CSV-Datei herunterzuladen, die die Unterschiede zwischen der aktuellen Instanzversion des Profils und der von Ihnen ausgewählten neuen Version zeigt. Überprüfen Sie diese Datei, um zu verstehen, welche Einstellungen neu sind oder entfernt wurden und welche Standardwerte für diese Einstellungen im aktualisierten Profil enthalten sind.
+5. Klicken Sie auf **Update überprüfen**, um eine CSV-Datei herunterzuladen, die die Unterschiede zwischen der aktuellen Instanzversion des Profils und der von Ihnen ausgewählten neuen Version zeigt. Überprüfen Sie diese Datei, um zu verstehen, welche Einstellungen neu sind oder entfernt wurden und welche Standardwerte für diese Einstellungen im aktualisierten Profil enthalten sind.
 
    Wenn Sie fertig sind, fahren Sie mit dem nächsten Schritt fort.
 
-5. Wählen Sie eine der beiden Optionen für **Methode zum Aktualisieren des Profils auswählen**:
+6. Wählen Sie eine der beiden Optionen für **Methode zum Aktualisieren des Profils auswählen**:
    - **Baselineänderungen akzeptieren, aber meine vorhandenen Einstellungsanpassungen beibehalten**: Bei Wahl dieser Option werden die Anpassungen, die Sie am Baselineprofil vorgenommen haben, beibehalten und auf die neue Version angewendet, die Sie verwenden möchten.
    - **Baselineänderungen akzeptieren und vorhandene Einstellungsanpassungen verwerfen**: Bei Wahl dieser Option wird Ihr ursprüngliches Profil vollständig überschrieben. Im aktualisierten Profil werden für alle Einstellungen die Standardwerte verwendet.
 
-6. Klicken Sie auf **Senden**. Das Profil wird auf die ausgewählte Baselineversion aktualisiert. Nach der Konvertierung wird die Baseline zugewiesenen Gruppen sofort wieder bereitgestellt.
+7. Klicken Sie auf **Senden**. Das Profil wird auf die ausgewählte Baselineversion aktualisiert. Nach der Konvertierung wird die Baseline zugewiesenen Gruppen sofort wieder bereitgestellt.
 
 ### <a name="remove-a-security-baseline-assignment"></a>Aufheben der Zuweisung einer Sicherheitsbaseline
 

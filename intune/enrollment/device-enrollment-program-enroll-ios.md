@@ -18,20 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99d946366724b03ecdf5c47d8ba7b1d820ed3055
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: 55fc7149d23336519af76c423862bd81f065b88f
+ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164735"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239229"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Automatisches Registrieren von iOS-Geräten mit dem Programm zur Geräteregistrierung von Apple
 
 Sie können Intune so einrichten, dass über das [Programm zur Geräteregistrierung](https://deploy.apple.com) von Apple erworbene iOS-Geräte registriert werden. Mit dem Programm zur Geräteregistrierung (Device Enrollment Program, DEP) können Sie eine große Anzahl von Geräten registrieren, ohne diese jemals zu berühren. Geräte wie iPhones und iPads können direkt an Benutzer geliefert werden. Wenn der Benutzer das Gerät anschaltet, wird der Setup-Assistent mit vordefinierten Einstellungen ausgeführt, und das Gerät wird für die Verwaltung registriert.
 
-Zur Aktivierung der DEP-Registrierung können Sie sowohl das Intune-Portal als auch das Apple DEP-Portal verwenden. Sie benötigen auch eine Liste von Seriennummern oder eine Bestellnummer, um Geräte in Intune zur Verwaltung zuweisen zu können. Sie erstellen DEP-Registrierungsprofile, die Einstellungen enthalten, die für Geräte während der Registrierung gelten.
-
-Die Registrierung mit DEP funktioniert übrigens nicht mit dem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md).
+Zur Aktivierung der DEP-Registrierung können Sie sowohl das Intune-Portal als auch das Apple DEP-Portal verwenden. Sie benötigen auch eine Liste von Seriennummern oder eine Bestellnummer, um Geräte in Intune zur Verwaltung zuweisen zu können. Sie erstellen DEP-Registrierungsprofile, die Einstellungen enthalten, die für Geräte während der Registrierung gelten. Beachten Sie, dass die DEP-Registrierung nicht mit einem [Geräteregistrierungs-Manager](device-enrollment-manager-enroll.md)-Konto verwendet werden kann.
 
 > [!NOTE]
 > DEP legt Gerätekonfigurationen fest, die vom Endbenutzer nicht entfernt werden können. Daher muss das Gerät vor der [Migration zu DEP](../fundamentals/migration-guide-considerations.md) zurückgesetzt werden, um es in den werkseitigen Zustand zurückzuversetzen.

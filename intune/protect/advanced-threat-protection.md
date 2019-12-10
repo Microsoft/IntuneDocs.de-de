@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 889b0a7562f1a663556e955271681e0747aeb3c4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: c8c756ad2df00a97df7289491daf830e584c0045
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199167"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410213"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>Erzwingen der Konformität für Microsoft Defender ATP mit bedingtem Zugriff in Intune
 
@@ -193,6 +193,12 @@ Die Richtlinie für bedingten Zugriff blockiert den Zugriff auf Ressourcen für 
 2. Wählen Sie **Geräte** > **Überwachen** > **Richtlinienkonformität** aus.
 
 3. Suchen Sie Ihre Microsoft Defender ATP-Richtlinie in der Liste, und sehen Sie, welche Geräte konform bzw. nicht konform sind.
+
+Sie können für nicht konforme Geräte am gleichen Speicherort auch die Option für einen *operational report* (Betriebsbericht) verwenden:
+
+1. Klicken Sie auf **Geräte** > **Überwachen** > **Noncompliant devices** (Nicht konforme Geräte).
+
+Weitere Informationen zu Berichten finden Sie unter [Intune-Berichte](../fundamentals/reports.md).
 
 ## <a name="view-onboarding-status"></a>Anzeigen des Onboardingstatus
 

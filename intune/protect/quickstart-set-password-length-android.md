@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/21/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f73bc84be46252cb99a47966b480e585545dde12
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 61fdf91d57ce5d187a0c43153f317b0b42c6b46c
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504167"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74409786"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Schnellstart: Erstellen einer Konformitätsrichtlinie für Kennwörter für Android-Geräte
 
-In diesem Schnellstart erfahren Sie, wie Sie mit Microsoft Intune für Ihre Mitarbeiter mit Android-Geräten festlegen, dass sie ein Kennwort mit einer bestimmten Länge angeben, bevor sie auf Informationen auf dem Gerät zugreifen können. 
+In diesem Schnellstart erfahren Sie, wie Sie mit Microsoft Intune für Ihre Mitarbeiter mit Android-Geräten festlegen, dass sie ein Kennwort mit einer bestimmten Länge angeben, bevor sie auf Informationen auf dem Gerät zugreifen können.
 
 Mit einer Konformitätsrichtlinie für Intune-Geräte werden die Regeln und Einstellungen festgelegt, die diese Geräte erfüllen müssen, um als konform angesehen zu werden. Sie können Konformitätsrichtlinien zusammen mit bedingtem Zugriff verwenden, um den Zugriff auf Unternehmensressourcen zuzulassen oder zu blockieren. Außerdem können Sie Geräteberichte abrufen und bei Nichtkonformität Aktionen durchführen.
 
@@ -38,25 +38,33 @@ Wenn Sie über kein Intune-Abonnement verfügen, [registrieren Sie sich für ein
 
 ## <a name="sign-in-to-intune"></a>Anmelden bei Intune
 
-Registrieren Sie sich bei [Intune](https://aka.ms/intuneportal) als globaler Administrator oder als Intune-Dienstadministrator. 
+Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) als [globaler Administrator](../fundamentals/users-add.md#types-of-administrators) oder [Intune-Dienstadministrator](../fundamentals/users-add.md#types-of-administrators) an.
 
 ## <a name="create-a-device-compliance-policy"></a>Erstellen einer Gerätekonformitätsrichtlinie
 
-In diesem Schnellstart erfahren Sie, wie Sie mit Intune für Ihre Mitarbeiter mit Android-Geräten festlegen, dass sie ein Kennwort mit einer bestimmten Länge eingeben, bevor sie auf Informationen auf dem Gerät zugreifen können.
+Erstellen Sie eine Gerätekonformitätsrichtlinie, um festzulegen, dass alle Mitarbeiter mit Android-Geräten ein Kennwort mit einer bestimmten Länge eingeben müssen, bevor sie auf Informationen auf dem Gerät zugreifen können.
 
-1. Wählen Sie in Intune **Gerätekonformität** > **Richtlinien** > **Richtlinie erstellen** aus.
+1. Klicken Sie in Intune auf **Geräte** > **Compliance Policies** > **Richtlinie erstellen** (Konformitätsrichtlinien).
+
 2. Fügen Sie als **Name** **Android-Kompatibilität** hinzu. Geben Sie auch eine **Beschreibung** ein.
-3. Wählen Sie als **Plattform** die Option **Android** aus. 
-4. Wählen Sie **Einstellungen** > **Systemsicherheit** aus, um das Blatt **Systemsicherheit** für Android-Geräte anzuzeigen.
-5. Klicken Sie neben **Require a password to unlock mobile devices** (Ein Kennwort zum Entsperren von Mobilgeräten anfordern) auf **Anfordern**.
-6. Wählen Sie für **Mindestens numerisch** die Option **Erforderlicher Kennworttyp** aus.
-7. Geben Sie neben **Minimale Kennwortlänge** **6** ein. 
+
+3. Wählen Sie **Android Enterprise** als **Plattform** aus.
+
+4. Wählen Sie für **Profiltyp** die Option **Work profile** (Arbeitsprofil) aus.
+
+5. Wählen Sie **Einstellungen** > **Systemsicherheit** aus, um das Blatt **Systemsicherheit** für Android-Geräte anzuzeigen.
+
+6. Wählen Sie für **Ein Kennwort zum Entsperren von Mobilgeräten anfordern** **Erfordern** aus.
+
+7. Wählen Sie für **Required password type** (Erforderlicher Kennworttyp) die Option **At least numeric** (Mindestens numerisch) aus.
+
+8. Geben Sie für **Minimale Kennwortlänge** die Zahl **6** ein.
 
     ![Screenshot: Erstellen einer Gruppe in Microsoft Intune](./media/quickstart-set-password-length-android/quickstart-set-password-length-android-01.png)
 
-7. Klicken Sie anschließend auf **OK** > **OK** > **Erstellen**, um die Richtlinie zu erstellen.
+9. Klicken Sie anschließend auf **OK** > **OK** > **Erstellen**, um die Richtlinie zu erstellen.
 
-Wenn Sie die Richtlinie erfolgreich erstellt haben, erscheint sie in der Liste der Gerätekonformitätsrichtlinien. 
+Wenn Sie die Richtlinie erfolgreich erstellt haben, wird sie in der Liste der Gerätekonformitätsrichtlinien angezeigt.
 
 ## <a name="clean-up-resources"></a>Bereinigen der Ressourcen
 

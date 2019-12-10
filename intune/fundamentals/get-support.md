@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 11/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14ff8ad2d41a6f2235c18f155e3a5b865e3a32e4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 5aca7dbae7a74af399bcbf21aec1dd9dd2d1e851
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199308"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390751"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Anfordern von Support für Microsoft Intune
 
@@ -39,7 +39,7 @@ Als Intune-Administrator können Sie die Option **Hilfe und Support** verwenden,
 
 ## <a name="help-and-support-experience"></a>Benutzeroberfläche für Hilfe und Support
 
-Die Benutzeroberfläche für Hilfe und Support für Intune ist über das [Microsoft 365-Portal für die Geräteverwaltung](https://devicemanagement.microsoft.com) und über alle Blätter (oder Seiten) unter Intune im Azure-Portal verfügbar.
+Die Benutzeroberfläche für Hilfe und Support für Intune ist über das [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) und über alle Blätter (oder Seiten) unter Intune im Azure-Portal verfügbar.
 
 Die Benutzeroberfläche *Hilfe und Support* ähnelt derjenigen im [Microsoft 365 Admin Center](https://admin.microsoft.com/) und ersetzt die bisherige Benutzeroberfläche *Hilfe und Support*, die aber für andere Dienste in Azure beibehalten wird.
 
@@ -48,16 +48,27 @@ Die Benutzeroberfläche *Hilfe und Support* ähnelt derjenigen im [Microsoft 365
 
 ### <a name="options-to-access-help-and-support"></a>Optionen für den Zugriff auf Hilfe und Support
 
-- **Im Azure-Portal**:
+Wenn Sie einen neu erstellten Mandanten für Intune verwenden, kann *Hilfe und Support* nicht geöffnet werden, und die folgende Meldung wird zurückgegeben:
+
+- *Es ist ein unbekanntes Problem aufgetreten. Aktualisieren Sie die Seite. Wenn das Problem weiterhin besteht, erstellen Sie einen Fall über das [M365 Admin Center](https://admin.microsoft.com), und verweisen Sie auf die angegebene Sitzungs-ID.*
+
+Die Fehlerdetails enthalten eine *Sitzungs-ID*, *Erweiterungsdetails* usw. 
+ 
+Dieses Problem tritt auf, wenn Sie Ihr neues Mandantenkonto noch nicht über das **M365 Admin Center** auf https://admin.microsoft.com oder das **Office 365-Portal** unter https://portal.office.com authentifiziert haben. Wählen Sie zur Lösung des Problems den Link für das *M365 Admin Center* in der Meldung aus, oder rufen Sie https://portal.office.com auf, und melden Sie sich an. Nach der Authentifizierung bei einer der beiden Websites ist *Hilfe und Support* für Intune verfügbar.
+
+
+**Zugriff auf Hilfe und Support:**
+
+- **Im Azure-Portal**
 
   - Wählen Sie **Hilfe und Support** auf Intune-Blätter oder -Seiten aus.
 
   > [!NOTE]  
   > Wenn Ihre Intune-Instanz in der privaten Cloud für Regierungsbehörden – auch als Sovereign Cloud bezeichnet, Beispiel: Azure Government – gehostet wird, finden Sie weitere Informationen weiter unten in diesem Artikel unter [Intune-Support für die private Cloud für Regierungsbehörden](#intune-support-for-private-cloud-for-government). Die Intune-Benutzeroberfläche *Hilfe und Support* wird für die private Cloud für Regierungsbehörden erst nächstes Jahr verfügbar sein.
 
-- **Aus dem Dashboard für die Geräteverwaltung:**
+- **Aus dem Microsoft Endpoint Manager Admin Center**
   - Wählen Sie zunächst einen Featurebereich für Intune und dann die Option **Hilfe und Support** aus.
-  - Klicken Sie in einem beliebigen Knoten im Geräteverwaltungsportal auf das **?** - Symbol in der oberen rechten Ecke des Portals, und verwenden Sie dann die Dropdownliste, um den Dienst auszuwählen, für den Sie Hilfe benötigen. Das **?** - Symbol im Geräteverwaltungsportal unterstützt eine Vielzahl von Diensten, und Sie müssen den Dienst auswählen, für den Sie Hilfe benötigen.  
+  - Wählen Sie von einem beliebigen Knoten im Microsoft Endpoint Manager Admin Center das **?** - Symbol in der oberen rechten Ecke des Portals, und verwenden Sie dann die Dropdownliste, um den Dienst auszuwählen, für den Sie Hilfe benötigen. Das **?** - Symbol im Microsoft Endpoint Manager Admin Center unterstützt eine Vielzahl von Diensten, und Sie müssen den bestimmten Dienst auswählen, für den Sie Hilfe benötigen.  
 
     ![Dienst auswählen](./media/get-support/select-a-service.png)
 

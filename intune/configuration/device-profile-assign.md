@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,27 +17,25 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae8bc7d5797a2ba6404331166e9d955bbb2fadf9
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 275b3961e87f0d0eda8299337fe3fb7ac89ef03b
+ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059580"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74261687"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Wenn Sie ein Profil erstellen, enthält es alle Einstellungen, die Sie vorgenommen haben. Als Nächstes stellen Sie das Profil für einen Azure AD-Benutzer (Azure Active Directory) oder eine -Gerätegruppe bereit. Dies wird auch als Zuweisen bezeichnet. Wenn Sie ein Profil zuweisen, erhalten Benutzer und Geräte das Profil, und die von Ihnen angegebenen Einstellungen werden angewendet.
 
 In diesem Artikel wird erklärt, wie Sie ein Profil zuweisen können, und Sie erhalten Informationen zur Verwendung von Bereichsmarkierungen für Ihre Profile.
 
 > [!NOTE]  
-> Wenn eine Richtlinie entfernt oder nicht mehr einem Gerät zugewiesen wird, behält die Einstellung möglicherweise den vorhandenen Wert bei. Die Einstellung wird nicht auf einen Standardwert zurückgesetzt. Wenn Sie die Einstellung auf einen anderen Wert ändern möchten, erstellen Sie eine neue Richtlinie, und weisen Sie sie zu.
+> Wenn ein Profil entfernt oder die Gerätezuweisung aufgehoben wird, behält die Einstellung möglicherweise den vorhandenen Wert bei. Die Einstellung wird nicht auf einen Standardwert zurückgesetzt. Wenn Sie die Einstellung auf einen anderen Wert ändern möchten, erstellen Sie ein neues Profil, und weisen Sie dieses zu.
 
 ## <a name="before-you-begin"></a>Vorbereitung
 
-Stellen Sie sicher, dass Sie die richtige Rolle für die Zuweisung von Richtlinien haben. Weitere Informationen finden Sie unter [Rollenbasierte Zugriffssteuerung (RBAC) mit Microsoft Intune](../fundamentals/role-based-access-control.md).
+Stellen Sie sicher, dass Sie die richtige Rolle für die Zuweisung von Profilen haben. Weitere Informationen finden Sie unter [Rollenbasierte Zugriffssteuerung (RBAC) mit Microsoft Intune](../fundamentals/role-based-access-control.md).
 
 ## <a name="assign-a-device-profile"></a>Zuweisen eines Geräteprofils
 
@@ -63,17 +61,49 @@ Wenn die Schaltfläche **Evaluate** (Auswerten) ausgegraut ist, stellen Sie sich
 
 Wenn Sie ein Profil erstellen oder aktualisieren, können Sie diesem auch Bereichstags und Anwendbarkeitsregeln hinzufügen.
 
-**Bereichsmarkierungen** eignen sich zum Zuweisen und Filtern von Richtlinien für bestimmte Gruppen, z. B. Personalabteilung und Alle Mitarbeiter in North Carolina (USA). Unter [Use RBAC and scope tags for distributed IT (Verwenden der RBAC und von Bereichsmarkierungen für eine verteilte IT)](../fundamentals/scope-tags.md) finden Sie weitere Informationen.
+**Bereichsmarkierungen** eignen sich zum Zuweisen und Filtern von Profilen für bestimmte Gruppen, z. B. die Personalabteilung oder alle Mitarbeiter in North Carolina (USA). Unter [Use RBAC and scope tags for distributed IT (Verwenden der RBAC und von Bereichsmarkierungen für eine verteilte IT)](../fundamentals/scope-tags.md) finden Sie weitere Informationen.
 
 Auf Windows 10-Geräten können Sie **Anwendbarkeitsregeln** hinzufügen, wodurch das Profil nur für eine bestimmte Betriebssystemversion oder eine bestimmte Windows-Version gilt. Unter [Anwendbarkeitsregeln](device-profile-create.md#applicability-rules) finden Sie weitere Informationen.
 
+## <a name="user-groups-vs-device-groups"></a>Benutzer- und Gerätegruppen im Vergleich
+
+Viele Benutzer fragen sich, ob sie besser Benutzergruppen oder Gerätegruppen verwenden sollen. Bei der Beantwortung dieser Frage spielt Ihr Ziel eine entscheidende Rolle. Nachfolgend finden Sie Informationen für den Einstieg.
+
+### <a name="device-groups"></a>Gerätegruppen
+
+Wenn Sie Einstellungen auf ein Gerät anwenden möchten und es für Sie keine Rolle spielt, wer auf dem Gerät angemeldet ist, weisen Sie Ihre Profile einer Benutzergruppe zu. Einstellungen, die auf Gerätegruppen angewendet werden, gelten immer für das jeweilige Gerät und nicht für den Benutzer.
+
+Beispiel:
+
+- Gerätegruppen sind nützlich für die Verwaltung von Geräten ohne dedizierten Benutzer. Geräte zum Drucken von Tickets oder zum Einscannen von Warenbeständen werden beispielsweise gemeinsam von Mitarbeitern in unterschiedlichen Schichten verwendet und sind einem bestimmten Lager zugewiesen. Ordnen Sie diese Geräte einer Gerätegruppe zu, und weisen Sie dieser Ihre Profile zu.
+
+- Sie erstellen ein [Intune-Profil für die Schnittstelle zur Konfiguration der Gerätefirmware](device-firmware-configuration-interface-windows.md), das die Einstellungen im BIOS aktualisiert. Beispielsweise können Sie dieses Profil so konfigurieren, dass die Kamera des Geräts deaktiviert wird, oder die Startoptionen sperren, um zu verhindern, dass Benutzer ein anderes Betriebssystem starten. Es bietet sich hierbei an, dieses Profil einer Gerätegruppe zuzuweisen.
+
+- Auf manchen Windows-Geräten sollten Sie immer einige Einstellungen für Microsoft Edge steuern – unabhängig davon, wer das Gerät verwendet. Möglicherweise möchten Sie alle Downloads blockieren, sämtliche Cookies auf die aktuelle Browsersitzung einschränken und den Browserverlauf löschen. Dafür bietet es sich an, diese Windows-Geräte einer Gerätegruppe zuzuordnen. Erstellen Sie anschließend [in Intune eine administrative Vorlage](administrative-templates-windows.md), fügen Sie diese Geräteeinstellungen hinzu, und weisen Sie dieses Profil anschließend der Gerätegruppe zu.
+
+Fazit: Verwenden Sie Gerätegruppen immer dann, wenn es keine Rolle spielt, wer oder ob überhaupt jemand bei dem jeweiligen Gerät angemeldet ist. Damit sind Ihre Einstellungen immer auf dem Gerät gespeichert.
+
+### <a name="user-groups"></a>Benutzergruppen
+
+Profileinstellungen, die auf Benutzergruppen angewendet werden, gelten immer für den jeweiligen Benutzer – auch wenn er mehrere Geräte verwendet. Es ist normal, dass Benutzer mehrere Geräte verwenden, z. B. ein Surface Pro für die Arbeit und ein iOS-Gerät für den Privatgebrauch. In der Regel greifen diese Benutzer dann auch über ihre verschiedenen Geräte auf ihre E-Mails und andere Unternehmensressourcen zu.
+
+Beispiel:
+
+- Sie möchten ein Helpdesksymbol für alle Benutzer auf all ihren Geräten einrichten. Fügen Sie dafür diese Benutzer einer Benutzergruppe hinzu, und weisen Sie dieser Benutzergruppe das Helpdesksymbol zu.
+- Ein Benutzer erhält ein neues Gerät, das der Organisation gehört. Er meldet sich mit seinem Domänenkonto bei dem Gerät an. Das Gerät wird automatisch in Azure AD registriert und von Intune verwaltet. Es bietet sich hierbei an, dieses Profil einer Benutzergruppe zuzuweisen.
+- Wenn ein Benutzer sich bei einem Gerät anmeldet, sollten Sie Features über Apps wie OneDrive oder Office steuern. Weisen Sie in diesem Fall die Profileinstellungen für OneDrive oder Office einer Benutzergruppe zu.
+
+  Angenommen, Sie möchten nicht vertrauenswürdige ActiveX-Steuerelemente in Ihren Office-Apps blockieren. Dann können Sie [in Intune eine administrative Vorlage](administrative-templates-windows.md) erstellen, Einstellungen konfigurieren und anschließend dieses Profil einer Benutzergruppe zuweisen.
+
+Fazit: Verwenden Sie Benutzergruppen immer dann, wenn Sie Ihre Einstellungen und Regeln mit dem Benutzer verknüpfen möchten – unabhängig davon, welches Gerät er verwendet.
+
 ## <a name="exclude-groups-from-a-profile-assignment"></a>Ausschließen von Gruppen aus einer Profilzuweisung
 
-Mit Intune-Gerätekonfigurationsprofilen können Sie Gruppen in die Richtlinienzuweisung einschließen und davon ausschließen.
+Mit Gerätekonfigurationsprofilen für Intune können Sie Gruppen in die Profilzuweisung einschließen und von dieser ausschließen.
 
-Es hat sich bewährt, Richtlinien speziell für Ihre Benutzergruppen zu erstellen und zuzuweisen. Erstellen Sie außerdem unterschiedliche Richtlinien speziell für Ihre Gerätegruppen. Weitere Informationen zu Gruppen finden Sie unter [Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten](../fundamentals/groups-add.md).
+Es hat sich bewährt, Profile speziell für Ihre Benutzergruppen zu erstellen und zuzuweisen. Erstellen Sie außerdem unterschiedliche Profile für einzelne Gerätegruppen. Weitere Informationen zu Gruppen finden Sie unter [Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten](../fundamentals/groups-add.md).
 
-Wenn Sie Ihre Richtlinien zuweisen, verwenden Sie die folgende Tabelle, wenn Sie Gruppen ein- und ausschließen. Ein Häkchen bedeutet, dass die Zuweisung unterstützt wird:
+Wenn Sie Ihre Profile zuweisen, können Sie für da Ein- und Ausschließen von Gruppen die folgende Tabelle zurate ziehen. Ein Häkchen bedeutet, dass die Zuweisung unterstützt wird:
 
 ![Unterstützte Optionen schließen Gruppen in eine Profilzuweisung ein oder daraus aus](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
@@ -84,13 +114,13 @@ Wenn Sie Ihre Richtlinien zuweisen, verwenden Sie die folgende Tabelle, wenn Sie
   - Einschließen von Benutzergruppen und Ausschließen von Benutzergruppen
   - Einschließen von Gerätegruppen und Ausschließen von Gerätegruppen
 
-  Angenommen Sie weisen der Benutzergruppe **Alle Unternehmensbenutzer** ein Geräteprofil zu, schließen aber gleichzeitig Mitglieder der Benutzergruppe **Mitarbeiter der Führungsebene** aus. Da es sich bei beiden Gruppen um Benutzergruppen handelt, erhalten **alle Unternehmensbenutzer** außer den **Führungskräften** die Richtlinie.
+  Angenommen Sie weisen der Benutzergruppe **Alle Unternehmensbenutzer** ein Geräteprofil zu, schließen aber gleichzeitig Mitglieder der Benutzergruppe **Mitarbeiter der Führungsebene** aus. Da es sich bei beiden Gruppen um Benutzergruppen handelt, wird dieses Profil **allen Unternehmensbenutzern** außer den **Führungskräften** zugewiesen.
 
-- Intune bewertet keine Beziehungen zwischen Benutzer- und Gerätegruppen. Wenn Sie Richtlinien gemischten Gruppen zuweisen, entsprechen die Ergebnisse möglicherweise nicht Ihren Erwartungen.
+- Intune bewertet keine Beziehungen zwischen Benutzer- und Gerätegruppen. Wenn Sie Profile gemischten Gruppen zuweisen, entsprechen die Ergebnisse möglicherweise nicht Ihren Anforderungen oder Erwartungen.
 
-  Beispielsweise weisen Sie der Benutzergruppe **Alle Benutzer** ein Geräteprofil zu, schließen jedoch eine Gerätegruppe **Alle persönlichen Geräte** aus. In dieser gemischten Gruppenrichtlinienzuweisung erhalten **alle Benutzer** die Richtlinie. Der Ausschluss wird nicht angewendet.
+  Beispielsweise weisen Sie der Benutzergruppe **Alle Benutzer** ein Geräteprofil zu, schließen jedoch eine Gerätegruppe **Alle persönlichen Geräte** aus. In dieser gemischten Gruppenprofilzuweisung wird **allen Benutzern** das Profil zugewiesen. Der Ausschluss wird nicht angewendet.
 
-  Daher wird das Zuweisen von Richtlinien zu gemischten Gruppen nicht empfohlen.
+  Daher wird das Zuweisen von Profilen für gemischte Gruppen nicht empfohlen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61771ce2b6179b2e74a4d13f72794ece97907034
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9454353ec4f8291d4d8c0001cc977838ecec787b
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502575"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540798"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Hinzufügen einer Partnerzertifizierungsstelle in Intune mithilfe von SCEP
 
@@ -57,7 +57,8 @@ Die folgenden Schritte bieten einen Überblick über die Verwendung von SCEP fü
 
 Im folgenden Diagramm wird der Ablauf der Drittanbieter-SCEP-Integration in Intune ausführlich dargestellt:
 
-![Integration von Drittanbieter-Zertifizierungsstellen mittels SCEP in Microsoft Intune](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
+> [!div class="mx-imgBorder"]
+> ![Integration von Drittanbieter-Zertifizierungsstellen mittels SCEP in Microsoft Intune](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
 
 ## <a name="set-up-third-party-ca-integration"></a>Vorbereitungsschritte zur Integration von Drittanbieter-Zertifizierungsstellen
 

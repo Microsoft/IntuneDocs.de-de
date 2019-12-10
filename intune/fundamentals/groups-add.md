@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/13/2018
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,52 +18,92 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0702eebdd3899c6da527af0078e5e7d47cf95194
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
+ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510238"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74261563"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Hinzufügen von Gruppen zum Organisieren von Benutzern und Geräten
-Intune verwendet Azure Active Directory-Gruppen (AD) zur Verwaltung von Geräten und Benutzern. Als Intune-Administrator können Sie Gruppen entsprechend der Anforderungen Ihrer Organisation einrichten. Sie können Gruppen erstellen, um Benutzer oder Geräte nach geografischem Standort, Abteilung oder Hardwareeigenschaften zu organisieren. Sie können Gruppen zur bedarfsgerechten Verwaltung von Aufgaben verwenden. So können Sie beispielsweise Richtlinien für viele Benutzer festlegen oder Apps für eine Reihe von Geräten bereitstellen.
+
+Intune verwendet Azure Active Directory-Gruppen (Azure AD) zur Verwaltung von Geräten und Benutzern. Als Intune-Administrator können Sie Gruppen entsprechend der Anforderungen Ihrer Organisation einrichten. Sie können Gruppen erstellen, um Benutzer oder Geräte nach geografischem Standort, Abteilung oder Hardwareeigenschaften zu organisieren. Sie können Gruppen zur bedarfsgerechten Verwaltung von Aufgaben verwenden. So können Sie beispielsweise Richtlinien für viele Benutzer festlegen oder Apps für mehrere Geräte bereitstellen.
 
 Sie können die folgenden Gruppentypen hinzufügen:
-- **Zugewiesene Gruppen**: Manuelles Hinzufügen von Benutzern oder Geräten in eine statische Gruppe
-- **Dynamische Gruppen**: (Mit Azure Active Directory Premium) Dynamisches Erstellen von Benutzer- oder Gerätegruppen, die durch einfache oder erweiterte Regeln definiert werden
+
+- **Zugewiesene Gruppen:** Fügen Sie manuell Benutzer oder Geräten zu einer statischen Gruppe hinzu. 
+- **Dynamische Gruppen** (erfordert Azure AD Premium): Lassen Sie automatisch auf Basis eines von Ihnen erstellen Ausdrucks Benutzer oder Geräte zu Benutzer- oder Gerätegruppen hinzufügen.
+
+  Wenn z. B. ein Benutzer mit dem Titel „Manager“ hinzugefügt wird, wird er automatisch der Benutzergruppe **Alle Manager** hinzugefügt. Wenn ein Gerät hingegen den Betriebssystemtyp „iOS-Gerät“ aufweist, wird es automatisch zur Benutzergruppe **Alle iOS-Geräte** hinzugefügt.
 
 ## <a name="add-a-new-group"></a>Hinzufügen einer neuen Gruppe
 
 Führen Sie die folgenden Schritte aus, um eine neue Gruppe zu erstellen:
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-3. Wählen Sie im Bereich **Intune** die Option **Gruppen** und dann im Bereich **Alle Gruppen** die Option **Neue Gruppe** aus.
-   ![Screenshot des Azure-Portals mit ausgewählter Option „Neue Gruppe“](./media/groups-add/groups-add-new.png)
-4. Wählen Sie unter **Gruppentyp** eine der folgenden Optionen aus:
-    - **Sicherheit**: Sicherheitsgruppen sind eine gute Ressource zum Auffüllen von Benutzergruppen. Da in Sicherheitsgruppen definiert wird, wer auf welche Ressourcen zugreifen kann, lassen sich Sicherheitsgruppen oft gut in Intune-Benutzergruppen übersetzen. Sicherheitsgruppen, die aus Active Directory mit Azure Active Directory synchronisiert oder direkt mithilfe des Microsoft 365 Admin Centers oder des Azure-Portals in Azure Active Directory erstellt werden, stehen Ihnen beim Erstellen von Benutzergruppen in Intune zur Verfügung.
-    - **Office 365**
 
-5. Geben Sie einen **Namen** und eine **Beschreibung** für die neue Gruppe ein. Diese Eigenschaften werden nur im Verwaltungsportal und nicht den Benutzern angezeigt.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Klicken Sie auf **Gruppen** > **Neue Gruppe**:
 
-6. Wählen Sie den **Mitgliedschaftstyp** aus:
-   - **Zugewiesen**: Zur Erstellung einer Gruppe mit manuell zugewiesenen Mitgliedern. Weitere Informationen zu [zugewiesenen Azure AD-Gruppen](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal).
-   - **Dynamischer Benutzer**: Zur Erstellung einer Benutzergruppe, die durch eine **Dynamische Abfrage** definiert wird.
-   - **Dynamisches Gerät**: Zur Erstellung einer Gerätegruppe, die durch eine **Dynamische Abfrage** definiert wird.
+   ![Screenshot: Azure-Portal, Option „Neue Gruppe“ ausgewählt](./media/groups-add/groups-add-new.png)
 
-   ![Screenshot der Intune-Gruppeneigenschaften](./media/groups-add/groups-add-properties.png)
+3. Wählen Sie unter **Gruppentyp** eine der folgenden Optionen aus:
 
-   Mit Azure AD können Sie dynamische Gruppen auf der Grundlage von Regeln erstellen, die die Mitgliedschaft definieren. Weitere Informationen zum [Erstellen von attributbasierten dynamischen Gruppen](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal).
+    - **Sicherheit**: Mithilfe von Sicherheitsgruppen wird definiert, wer auf Ressourcen zugreifen kann. Sie sollten sie für Ihre Gruppen in Intune verwenden. Sie können zum Einen Gruppen für Benutzer erstellen, z. B. **Alle Mitarbeiter in Charlotte** oder **Alle Frauen bei Contoso**. Zum Anderen können Sie auch Gruppen für Geräte erstellen, z. B. **Alle iOS-Geräte** oder **Alle Geräte von Schülern mit Windows 10**.
 
-7. Sie können die Option **Office-Features aktivieren** auswählen, um Mitgliedern von Benutzergruppen Zugriff auf freigegebene Office 365-Apps zu gewähren. Weitere Informationen zu [Office 365-Gruppen](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
-8. Klicken Sie auf die Option **Erstellen**, um die neue Gruppe hinzuzufügen.
+        > [!TIP]
+        > Die erstellten Benutzer und Gruppen können auch im [Microsoft 365 Admin Center](https://admin.microsoft.com), im Azure Active Directory Admin Center und im [Azure-Portal unter Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2090973) angezeigt werden. Im Organisationsmandanten können Sie Gruppen in all diesen Bereichen erstellen und verwalten.
+        >
+        > Wenn Sie in erster Linie für die Geräteverwaltung verantwortlich sind, sollten Sie das [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) verwenden.
+
+    - **Office 365:** Diese Gruppen sind für die Steuerung des Zugriffs und das Teilen von Office 365-Ressourcen konzipiert. Beispielsweise können Sie eine Office 365-Gruppe erstellen, um einen Posteingang in Outlook oder einen Kalender zu teilen. Weitere Informationen zu Office 365-Gruppen finden Sie unter [diesem Link](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+
+4. Geben Sie einen **Gruppennamen** und eine **Gruppenbeschreibung** für die neue Gruppe ein. Seien Sie konkret, und fügen Sie Informationen hinzu, anhand derer andere Benutzer erkennen können, wofür die Gruppe vorgesehen ist.
+
+    Geben Sie beispielsweise **Alle Geräte von Schülern mit Windows 10** als Gruppennamen und **Alle Windows 10-Geräte, die von Schülern der Klassen 9–12 der High School Contoso verwendet werden** als Gruppenbeschreibung ein.
+
+5. Geben Sie den **Mitgliedschaftstyp** ein. Folgende Optionen sind verfügbar:
+
+    - **Zugewiesen:** Administratoren weisen dieser Gruppe manuell Benutzer oder Geräte hinzu und entfernen sie auch manuell wieder.
+    - **Dynamischer Benutzer:** Administratoren erstellen Mitgliedschaftsregeln, um Mitglieder automatisch hinzufügen und entfernen zu lassen.
+    - **Dynamisches Gerät:** Administratoren erstellen Regeln für dynamische Gruppen, um Geräte automatisch hinzufügen und entfernen zu lassen.
+
+        ![Screenshot der Intune-Gruppeneigenschaften](./media/groups-add/groups-add-properties.png)
+
+    Weitere Informationen zu diesen Mitgliedschaftstypen und zum Erstellen dynamischer Ausdrücke finden Sie unter:
+
+    - [Erstellen einer Basisgruppe und Hinzufügen von Mitgliedern mithilfe von Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+    - [Regeln für eine dynamische Mitgliedschaft für Gruppen in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)
+
+    > [!NOTE]
+    > Wenn Sie in diesem Admin Center Benutzer oder Gruppen erstellen, wird das **Azure Active Directory**-Branding möglicherweise nicht angezeigt. Sie verwenden aber trotzdem Azure Active Directory.
+
+6. Klicken Sie auf die Option **Erstellen**, um die neue Gruppe hinzuzufügen. Dann sollte Ihre Gruppe in der Liste angezeigt werden.
+
+> [!TIP]
+> Im Folgenden finden Sie einige weitere Beispiele für Gruppen, die Sie für dynamische Benutzer und Geräte erstellen können:
+>
+> - Alle Schüler der High School Contoso
+> - Alle Android Enterprise-Geräte
+> - Alle Geräte unter iOS 11 und höher
+> - Marketing
+> - Personalabteilung
+> - Alle Mitarbeiter in Charlotte
+> - Alle Mitarbeiter in Washington
 
 ## <a name="groups-and-policies"></a>Gruppen und Richtlinien
 
-Überlegen Sie beim Erstellen von Gruppen, wie Sie [Richtlinien](../protect/device-compliance-get-started.md) anwenden möchten. Sie verfügen möglicherweise z.B. über Richtlinien, die für ein Gerätebetriebssystem oder für verschiedene Rollen oder Organisationseinheiten in Ihrer Organisation spezifisch sind, die Sie in Active Directory bereits definiert haben. Es kann sinnvoll sein, getrennte Gerätegruppen für iOS, Android und Windows sowie eine Benutzergruppe für jede Rolle in der Organisation zu verwenden.
+Der Zugriff auf die Ressourcen Ihrer Organisation wird von Benutzern und Gruppen gesteuert, die von Ihnen erstellt werden.
 
-Vermutlich ist es ebenfalls ratsam, eine Standardrichtlinie zu erstellen, die für alle Gruppen und Geräte gilt, um die grundlegenden Compliance-Anforderungen Ihrer Organisation zu erfüllen. Dadurch können Sie spezifischere Richtlinien für die weitesten Kategorien von Benutzern und Geräten erstellen. Beispielsweise können Sie E-Mail-Richtlinien für jedes der Betriebssysteme der mobilen Geräte erstellen.
+Bestimmen Sie bei der Erstellung von Gruppen, wie [Konformitätsrichtlinien](../protect/device-compliance-get-started.md) und [Konfigurationsprofile](../configuration/device-profiles.md) angewendet werden sollen Beispielsweise verfügen Sie möglicherweise über:
 
+- Richtlinien, die sich auf das Betriebssystem eines Geräts beziehen
+- Richtlinien, die sich auf verschiedene Rollen in Ihrer Organisation beziehen
+- Richtlinien, die sich auf bestimmte Organisationseinheiten beziehen, die Sie in Active Directory definiert haben
 
+Sie können eine Standardrichtlinie erstellen, die für alle Gruppen und Geräte gilt, um die grundlegenden Konformitätsanforderungen Ihrer Organisation festzulegen. Anschließend können Sie spezifischere Richtlinien für bestimmte Kategorien von Benutzern und Geräten erstellen. Beispielsweise können Sie E-Mail-Richtlinien für jedes der Betriebssysteme der mobilen Geräte erstellen.
+
+Empfehlungen und Anleitungen zu Konfigurationsprofilen finden Sie unter [Zuweisen von Richtlinien für Benutzer- und Gerätegruppen](../configuration/device-profile-assign.md#user-groups-vs-device-groups) und [Profilempfehlungen](../configuration/device-profile-create.md#recommendations).
 
 ## <a name="see-also"></a>Siehe auch
-- [Verwalten des Zugriffs auf Ressourcen mit Azure Active Directory-Gruppen](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
-- [Klassische Intune-Gruppen im Azure-Portal](groups-get-started.md)
+
+- [Rollenbasierte Zugriffssteuerung für Microsoft Intune](role-based-access-control.md)
+- [Verwalten des Zugriffs auf Ressourcen mit Azure AD-Gruppen](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)

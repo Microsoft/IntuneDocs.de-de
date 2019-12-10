@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b60e4d801d09a834e11119260d3054cf43251bbd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3ca83287c58f8d2fb7c8eec5f8cc793e2c67b77a
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502953"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390701"
 ---
 # <a name="create-a-custom-role-in-intune"></a>Erstellen einer benutzerdefinierten Rolle in Intune
 
@@ -49,6 +49,21 @@ Für das Erstellen, Bearbeiten oder Zuweisen von Rollen muss das Konto in Azure 
 7. Wenn Sie fertig sind, klicken Sie auf **OK**.
 
 8. Klicken Sie auf dem Blatt **Benutzerdefinierte Rolle hinzufügen** auf **Erstellen**. Die neue Rolle wird in der Liste auf dem Blatt **Intune-Rollen – Alle Rollen** angezeigt.
+
+
+## <a name="copy-a-role"></a>Kopieren einer Rolle
+
+Sie können auch eine vorhandene Rolle kopieren.
+
+1. Melden Sie sich mit Ihren Intune-Anmeldeinformationen beim [Azure-Portal](https://portal.azure.com) an, und klicken Sie auf **Intune**.
+
+2. Klicken Sie auf **Rollen** > **Alle Rollen**, wählen Sie eine Rolle in der Liste aus, und klicken Sie auf **Duplicate** (Duplizieren).
+
+3. Geben Sie unter **Duplicate role** (Rolle duplizieren) einen Namen ein. Stellen Sie sicher, dass Sie einen eindeutigen Namen verwenden.
+
+4. Alle Berechtigungen und Bereichstags der ursprünglichen Rolle werden bereits ausgewählt. Anschließend können Sie **Name**, **Beschreibung** **Berechtigungen** und **Scope (Tags)** (Bereich (Tags)) der duplizierten Rolle ändern.
+
+5. Wählen Sie **Erstellen** aus. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 - [Zuweisen einer Rolle an einen Benutzer](assign-role.md)
