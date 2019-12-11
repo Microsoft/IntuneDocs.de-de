@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3980720101489d32b27957a2e2d3e0e951e58da6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72509015"
 ---
 <!-- This article contains the exact baseline details for baseline versions that were previously published in security-baseline-settings-mdm.md.  -->

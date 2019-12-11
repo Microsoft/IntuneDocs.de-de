@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 829d8f6b2691f91c14029e4f29e2ef11b070e596
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059622"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>Nutzen und Verwalten von Zebra-Geräten mithilfe von Zebra Mobility Extensions in Microsoft Intune
@@ -133,8 +133,8 @@ Nachdem Sie die Datei getestet haben, ist der nächste Schritt die Bereitstellun
 
 Erstellen Sie in Intune ein Gerätekonfigurationsprofil:
 
-1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)an.
-2. Wählen Sie **Geräte** > **Konfigurations profile** > **Profil erstellen**aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
     - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.

@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c920403f63ae4031117f28c4ebeb534ee4c454b8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72507748"
 ---
 # <a name="you-need-to-update-your-android-device"></a>Sie müssen Ihr Android-Gerät aktualisieren

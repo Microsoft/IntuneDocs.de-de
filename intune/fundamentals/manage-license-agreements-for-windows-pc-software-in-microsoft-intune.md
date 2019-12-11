@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ab5e5d3e645410b876a5d3d0be0eafed9c790780
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502655"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Verwalten von Lizenzverträgen für Windows-PC-Software in Microsoft Intune

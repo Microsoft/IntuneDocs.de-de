@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508302"
 ---
 # <a name="sign-in-to-company-portal"></a>Melden Sie sich bei Unternehmensportal an.  
@@ -40,7 +40,7 @@ Die folgenden Schritte zeigen Screenshots aus der Unternehmensportal für IOS.
 
 1. Öffnen Sie die APP auf Ihrem Gerät, und tippen Sie auf **Anmelden**.  
 
-   [![Example Screenshot der Unternehmensportal Anmeldeseite. ](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
+   [![Beispiel-Screenshot der Unternehmensportal Anmeldeseite.](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. Geben Sie Ihr **Geschäfts-, Schul- oder Unikonto** ein, und klicken Sie auf **Weiter**.

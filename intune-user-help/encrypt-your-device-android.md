@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506364"
 ---
 # <a name="encrypting-your-android-device"></a>Verschlüsseln Ihres Android-Geräts
@@ -40,12 +40,12 @@ Wenn Unternehmensportal oder die Microsoft InTune-app Sie auffordert, Ihr Gerät
 > Bestimmte Android-Geräte von Huawei, vivo und OPPO können nicht verschlüsselt werden. [Hier](your-device-appears-encrypted-but-cp-says-otherwise-android.md) erfahren Sie mehr.  
 
 1. Legen Sie eine Geräte Bildschirmsperre fest.  
-    ein. Wechseln Sie zu **Einstellungen** > **Lock Screen and Security** > **Screen lock** (Sperrbildschirm und Sicherheit > Bildschirmsperre).  
+    a. Wechseln Sie zu **Einstellungen** > **Lock Screen and Security** > **Screen lock** (Sperrbildschirm und Sicherheit > Bildschirmsperre).  
     b. Wählen Sie entweder **Pin**, **Kennwort**oder **Muster**aus.  
     c. Befolgen Sie die Anweisungen auf dem Bildschirm, um die Bildschirmsperre zu konfigurieren.  
 
 2. Wechseln Sie zurück zu **Sperrbildschirm und Sicherheit** , und wählen Sie **sicherer Start**aus.
-3. Wählen Sie PIN anfordern, **Wenn das Gerät eingeschaltet wird**  > **OK**aus.
+3. Wählen Sie PIN anfordern, **Wenn das Gerät eingeschaltet wird** > **OK**aus.
 4. Geben Sie Ihre PIN ein, um Ihr Gerät zu bestätigen und zu verschlüsseln.
 5. Öffnen Sie die APP Unternehmensportal oder Microsoft InTune.
     * Unternehmensportal-Benutzer: Wählen Sie Ihr Gerät aus, und tippen Sie auf **Geräteeinstellungen überprüfen**. 
@@ -53,9 +53,9 @@ Wenn Unternehmensportal oder die Microsoft InTune-app Sie auffordert, Ihr Gerät
 
 Geräte unter Android 4,4 und früher verfügen möglicherweise nicht über die Option für den **sicheren Start** . Führen Sie in diesem Fall die folgenden Schritte aus, um Ihr Gerät zu verschlüsseln.
 
-1. Wechseln Sie zu **Einstellungen**  > **Sicherheits**  > **Gerät verschlüsseln**. Bildschirm Bezeichnungen variieren zwischen Android-Geräten. Wenn die Option **Gerät verschlüsseln** nicht angezeigt wird, checken Sie Folgendes ein:
-    * **Speicher**  > **Speicherverschlüsselung**
-    * **Speicher**  > **Sperrbildschirm und Sicherheits**  > **andere Sicherheitseinstellungen** 
+1. Wechseln Sie zu **Einstellungen** > **Sicherheits** > **Gerät verschlüsseln**. Bildschirm Bezeichnungen variieren zwischen Android-Geräten. Wenn die Option **Gerät verschlüsseln** nicht angezeigt wird, checken Sie Folgendes ein:
+    * **Speicher** > **Speicherverschlüsselung**
+    * **Speicher** > **Sperrbildschirm und Sicherheits** > **andere Sicherheitseinstellungen** 
 
 2. Folgen Sie den Anweisungen auf dem Bildschirm. Während der Verschlüsselung startet Ihr Gerät möglicherweise mehrmals neu.
 3. Öffnen Sie die APP Unternehmensportal oder Microsoft InTune.

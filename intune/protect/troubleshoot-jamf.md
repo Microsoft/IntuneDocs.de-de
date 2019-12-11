@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 44733eb369e520d2d5f0ff548d4f1921abcb8758
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503566"
 ---
 # <a name="troubleshoot-integration-of-jamf-pro-with-microsoft-intune"></a>Behandeln von Problemen bei der Integration von JAMF pro mit Microsoft InTune
@@ -208,8 +208,8 @@ Wenn die Registrierung eines Geräts bei JAMF aufgehoben, aber nicht ordnungsgem
    - /Library/Preferences/com.microsoft.CompanyPortal.plist
    - /Library/Preferences/com.jamfsoftware.selfservice.mac.plist
    - /Library/Preferences/com.jamfsoftware.management.jamfAAD.plist
-   - /Users/<username>/Library/Cookies/com.Microsoft.companyportal.binarycookies
-   - /Users/<username>/Library/Cookies/com.JAMF.Management.jamfaad.binarycookies
+   - /Users/<username>/Library/Cookies/com.Microsoft.CompanyPortal.binarycookies
+   - /Users/<username>/Library/Cookies/com.JAMF.Management.jamfAAD.binarycookies
    - com. Microsoft. companyportal
    - com. Microsoft. companyportal. hockeysdk
    - enterpriseregistration.windows.net
@@ -294,7 +294,7 @@ Die Ursache für diesen Fehler kann eine der folgenden Gründe haben:
 
 Beim Registrieren der JAMF pro-app in Azure ist eine der folgenden Bedingungen aufgetreten:  
 - Die APP hat mehr als eine Berechtigung erhalten.
-- Die Option **Administrator Zustimmung für *\<your Unternehmen >* erteilen** wurde nicht ausgewählt.  
+- Die Option **Administrator Zustimmung für *\<Ihres Unternehmens gewähren >***  wurde nicht ausgewählt.  
 
 **Lösung**  
 Weitere Informationen finden Sie weiter oben in diesem Artikel unter Lösung für Ursache 1 für [Geräte nicht registrieren](#devices-fail-to-register).

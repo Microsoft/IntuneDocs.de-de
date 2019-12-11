@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c4aca6fde21419d6ae1ca95d5a9aac5ab7f83d99
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72505826"
 ---
 # <a name="how-to-reconnect-a-compromised-android-device"></a>Wiederherstellen der Verbindung eines gefährdeten Android-Geräts

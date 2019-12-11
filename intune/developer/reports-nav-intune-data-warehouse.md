@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7f4890730ba39b1c8dc29f1e94438e662816906
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 90c678f9db139e7e19adf4cf175a3ead299808dc
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490440"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899293"
 ---
 # <a name="microsoft-intune-data-warehouse-api"></a>Microsoft Intune-Data Warehouse-API
 

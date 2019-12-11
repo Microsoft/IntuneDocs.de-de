@@ -19,10 +19,10 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fc50f48afbd527f3c6d82cc0c71a166b0356ab9e
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73801479"
 ---
 # <a name="what-information-can-my-organization-see-when-i-enroll-my-device"></a>Welche Informationen erhält meine Organisation, wenn ich mein Gerät registriere?

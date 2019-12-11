@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bbf9944411776e5d6f47aa59116806a0a703ce4c
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72813389"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Verschieben Ihrer Intune Data Warehouse-Kontodaten 

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1a5381d139247424d976b6b510d62681f623203a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72490506"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Verwenden von Azure AD für den Zugriff auf die Intune-APIs in Microsoft Graph
@@ -562,7 +562,7 @@ Gehen Sie hierzu folgendermaßen vor:
 
     Gehen Sie hierfür so vor:
 
-    ein. Definieren Sie im [Microsoft Partner Center](https://partnercenter.microsoft.com/) eine Beziehung mit Ihrem Client und seiner E-Mail-Adresse.
+    a. Definieren Sie im [Microsoft Partner Center](https://partnercenter.microsoft.com/) eine Beziehung mit Ihrem Client und seiner E-Mail-Adresse.
 
     b. Laden Sie den Benutzer ein, Gast Ihres Mandanten zu werden.
 

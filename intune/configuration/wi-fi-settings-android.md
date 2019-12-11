@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4a9bd1691b7943f02c9577e962fb1bcd5d9cf40a
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72585333"
 ---
 # <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Hinzufügen von WLAN-Einstellungen für Android-Geräte in Microsoft Intune

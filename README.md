@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: f87848b43e040681085f3e89b063d5006f904464
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/02/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71720914"
 ---
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open Source-Verhaltensregeln

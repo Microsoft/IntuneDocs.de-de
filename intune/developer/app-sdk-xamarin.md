@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/21/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec234a3d93127a26af4203a4776545602334858b
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
-ms.translationtype: HT
+ms.openlocfilehash: aa8d4fd8dabd862899cab116c61d4ae4584d398c
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709564"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899376"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK-Xamarin-Bindungen
 
@@ -126,7 +126,7 @@ Um eine Klasse von MAM-ification durch die Neuzuordnung auszuschließen, kann di
 In vielen Fällen wurde eine in der Android-Klasse verfügbare Methode in der äquivalenten MAM-Klasse als abgeschlossen gekennzeichnet. In diesem Fall stellt die äquivalente MAM-Klasse eine Methode mit ähnlichem Namen (mit dem Suffix `MAM`) bereit, die stattdessen überschrieben werden sollte. Wenn z. B. von `MAMActivity` abgeleitet wird, anstatt `OnCreate()` zu überschreiben und `base.OnCreate()` aufzurufen, muss `Activity` `OnMAMCreate()` überschreiben und `base.OnMAMCreate()` aufrufen.
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM-Anwendung](app-sdk-android.md#mamapplication)
-Ihre APP muss eine `Android.App.Application`-Klasse definieren. Wenn Sie MAM manuell integrieren, muss Sie von `MAMApplication` erben. Achten Sie darauf, dass die Unterklasse mit dem `[Application]`-Attribut versehen ist und den `(IntPtr, JniHandleOwnership)`-Konstruktor überschreibt.
+Ihre APP muss eine `Android.App.Application`-Klasse definieren. Wenn Sie MAM manuell integrieren, muss Sie von `MAMApplication`erben. Achten Sie darauf, dass die Unterklasse mit dem `[Application]`-Attribut versehen ist und den `(IntPtr, JniHandleOwnership)`-Konstruktor überschreibt.
 
 ```csharp
     [Application]

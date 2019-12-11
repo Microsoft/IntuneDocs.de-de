@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 5cd0183234a1b5f1e3c9a301e8ec1c8f4ca1e333
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "61509601"
 ---
 # <a name="required-metadata"></a>erforderliche Metadaten
@@ -17,13 +17,13 @@ Titel: [ARTICLE TITLE | SERVICE NAME] Beschreibung: Stichwörter: Autor: [GITHUB
 #<a name="msdevlang"></a>ms.devlang:
 #<a name="msreviewer-alias"></a>ms.reviewer: [ALIAS]
 #<a name="mssuite-ems"></a>ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
+#<a name="mstgt_pltfrm"></a>ms.tgt_pltfrm:
 #<a name="mscustom"></a>ms.custom:
 
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet volutpat aliquet. Suspendisse venenatis ex vitae fringilla suscipit. Maecenas eu nibh vitae lorem porta mollis. Nam in nisi eu nisi hendrerit pretium. Nullam vel gravida felis. Pellentesque luctus massa mi. Proin ultricies egestas erat. Morbi ut tincidunt nulla, eu ornare urna. Fusce sit amet aliquam est, at efficitur erat. Curabitur blandit mauris in dolor luctus feugiat. Proin sit amet dignissim arcu. Proin turpis lorem, congue ut bibendum non, posuere in eros. Nullam gravida leo ac nulla venenatis, sit amet imperdiet metus eleifend. Nullam id pharetra elit.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus laoreet volutpat aliquet. Suspendisse venenatis ex vitae fringilla suscipit. Maecenas eu nibh vitae lorem porta mollis. Nam in nisi eu nisi hendrerit pretium. <Nullam vel gravida felis. Pellentesque luctus massa mi. <<<<<<<<<<Proin ultricies egestas erat. Morbi ut tincidunt nulla, eu ornare urna. Fusce sit amet aliquam est, at efficitur erat. Curabitur blandit mauris in dolor luctus feugiat. Proin sit amet dignissim arcu. Proin turpis lorem, congue ut bibendum non, posuere in eros. Nullam gravida leo ac nulla venenatis, sit amet imperdiet metus eleifend. Nullam id pharetra elit.
 
-Aenean porta sit amet nisl quis posuere. In ut magna felis. Nulla quis euismod odio. Sed scelerisque nisi justo, sed egestas odio volutpat non. Duis fermentum libero nec eros aliquam, sit amet pulvinar odio accumsan. Sed scelerisque felis tristique arcu euismod lobortis. Nunc id volutpat lectus. In pharetra sapien a ullamcorper gravida. Sed ultricies tellus nec magna posuere tempus.
+Aenean porta sit amet nisl quis posuere. In ut magna felis. Nulla quis euismod odio. Sed scelerisque nisi justo, sed egestas odio volutpat non. Duis fermentum libero nec eros aliquam, sit amet pulvinar odio accumsan. Sed scelerisque felis tristique arcu euismod lobortis. <<<Nunc id volutpat lectus. <<<<<<<<<<<<<<<<<<<In pharetra sapien a ullamcorper gravida. Sed ultricies tellus nec magna posuere tempus.
 
 Etiam ac mauris in odio tincidunt tempor. Mauris vel orci dictum enim egestas sagittis sed eu mi. Nulla augue urna, tincidunt eu enim nec, scelerisque suscipit eros. Aliquam imperdiet diam sit amet dictum semper. Sed tincidunt diam id erat scelerisque, in sagittis nibh tempus. Ut pharetra leo vitae fringilla faucibus. Aliquam sem nisi, mattis eget sollicitudin non, suscipit quis magna. Vestibulum pulvinar auctor finibus. Praesent at sollicitudin elit, sed blandit diam. Cras non viverra velit, eu mattis ipsum. Fusce sed laoreet libero, vitae cursus nisl. Ut semper est eget felis lobortis tempus faucibus vitae libero. Sed lacus tellus, sagittis non vehicula vitae, ornare nec lacus.
 

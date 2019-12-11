@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 8483ed3d4198e228bdaaf4723b2c9c0dca9cecfc
-ms.sourcegitcommit: fc356fd69beaeb3d69982b47e2bdffb6f7127f8c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "71830508"
 ---
 <!-- This include is part of the Intune Data Warehouse documentation. -->

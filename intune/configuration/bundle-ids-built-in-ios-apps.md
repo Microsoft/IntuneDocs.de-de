@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b7e2bd869f898bbe7f894cfd9e9c767c8b42e9c4
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74465638"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>Bündel-IDs für integrierte iOS-Apps, die Sie in Intune verwenden können

@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 961c081b17d380bd00965708b6acd57b8059b2e0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506305"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>Registrieren eines von Ihrer Organisation bereitgestellten macOS-Geräts für die Verwaltung

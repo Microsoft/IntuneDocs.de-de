@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54995b54d7810c02c5a8b24e5ddff3fa1f08cb05
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: 5519bdc405e725556db18d36fa98289c4edb5090
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117869"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992900"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>macOS-Gerätefunktionseinstellungen in Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune bietet einige integrierte Einstellungen zum Anpassen von Features auf Ihren macOS-Geräten. Administratoren können z. b. airprint-Drucker hinzufügen, auswählen, wie sich Benutzer anmelden, die Energiesteuerung konfigurieren, Single Sign-on Authentifizierung verwenden und vieles mehr.
 
@@ -85,7 +83,7 @@ Um AirPrinter-Server hinzuzufügen, benötigen Sie die IP-Adresse des Druckers, 
 
 ## <a name="login-window"></a>Fenster „Anmeldung“
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung 
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>Einstellungen gelten für: Geräteregistrierung und automatisierte Geräteregistrierung
 
 #### <a name="window-layout"></a>Fensterlayout
 
@@ -131,33 +129,40 @@ Diese Funktion gilt für:
 
 - **SSO-App-Erweiterungstyp**: Wählen Sie den Typ der Anmelde Informationen-SSO-App-Erweiterung. Folgende Optionen sind verfügbar:
 
-  - **Nicht konfiguriert**: App-Erweiterungen werden nicht verwendet. Um eine SSO-App-Erweiterung zu deaktivieren, ändern Sie den SSO-App-Erweiterungstyp von **Kerberos** oder **Credential** in **nicht konfiguriert**.
-  - **Anmelde Informationen**: Verwenden Sie eine generische, anpassbare App-Erweiterung für Anmelde Informationen, um SSO zu verwenden. Stellen Sie sicher, dass Sie die Erweiterungs-ID und Team-ID für die SSO-App-Erweiterung Ihrer Organisation kennen.  
+  - **Nicht konfiguriert**: App-Erweiterungen werden nicht verwendet. Um eine APP-Erweiterung zu deaktivieren, ändern Sie den Typ der SSO-App-Erweiterung in **nicht konfiguriert**.
+  - **Umleitung**: Verwenden Sie eine generische, anpassbare Umleitungs-App-Erweiterung, um SSO mit modernen Authentifizierungs Abläufen auszuführen. Stellen Sie sicher, dass Sie die Erweiterung und die Team-ID für die APP-Erweiterung Ihres Unternehmens kennen.
+  - Anmelde **Informationen: verwenden**Sie eine generische, anpassbare App-Erweiterung für Anmelde Informationen, um SSO mit Authentifizierungs Läufen für die Anforderungs-und Antwort Ausführung auszuführen. Stellen Sie sicher, dass Sie die Erweiterungs-ID und Team-ID für die SSO-App-Erweiterung Ihrer Organisation kennen.  
   - **Kerberos**: Verwenden Sie die integrierte Kerberos-Erweiterung von Apple, die unter macOS Catalina 10,15 und höher enthalten ist. Bei dieser Option handelt es sich um eine Kerberos-spezifische **Version der Anmelde Informationen-App-** Erweiterung.
 
   > [!TIP]
-  > Mit dem Anmelde Informationstyp fügen Sie eigene Konfigurationswerte zum durch **laufen der Erweiterung** hinzu. Verwenden Sie stattdessen die von Apple bereitgestellten integrierten Konfigurationseinstellungen im **Kerberos** -Typ.
+  > Mit den Typen **Redirect** und **Credential** fügen Sie eigene Konfigurationswerte hinzu, um die Erweiterung zu durchlaufen. Wenn **Sie Anmelde Informationen verwenden, sollten**Sie in Erwägung gezogen werden, die von Apple bereitgestellten integrierten Konfigurationseinstellungen im **Kerberos** -Typ zu verwenden.
 
-- **Erweiterungs-ID** (nur Anmelde Informationen): Geben Sie die Bündel-ID ein, die Ihre SSO-App-Erweiterung identifiziert, z. b. `com.apple.ssoexample`.
-- **Team-ID** (nur Anmelde Informationen): Geben Sie die Team Kennung Ihrer SSO-App-Erweiterung ein. Eine Team-ID ist eine Zeichenfolge mit einer alphanumerischen Zeichenfolge (Ziffern und Buchstaben) mit 10 Zeichen, wie z. b. `ABCDE12345`. 
+- **Erweiterungs-ID** (Redirect und Credential): Geben Sie die Bündel-ID ein, die Ihre SSO-App-Erweiterung identifiziert, z. b. `com.apple.ssoexample`.
+- **Team-ID** (Redirect und Credential): Geben Sie die Team-ID Ihrer SSO-App-Erweiterung ein. Eine Team-ID ist eine Zeichenfolge mit einer alphanumerischen Zeichenfolge (Ziffern und Buchstaben) mit 10 Zeichen, wie z. b. `ABCDE12345`. 
 
   [Suchen Sie nach Ihrer Team-ID](https://help.apple.com/developer-account/#/dev55c3c710c) (öffnet die Website von Apple), die weitere Informationen enthält.
 
-- **Bereich**: Geben Sie den Namen Ihres Authentifizierungs Bereichs ein. Der Bereichs Name sollte groß geschrieben werden, z. b. `CONTOSO.COM`. In der Regel ist Ihr Bereichs Name mit dem DNS-Domänen Namen identisch, aber in Großbuchstaben.
-- **Domänen**: Geben Sie die Domänen-oder Hostnamen der Standorte ein, die über SSO authentifiziert werden können. Wenn Ihre Website beispielsweise `mysite.contoso.com`ist, ist `mysite` der Hostname, und `contoso.com` ist der Domänen Name. Wenn Benutzer eine Verbindung mit einer dieser Websites herstellen, wird die Authentifizierungs Aufforderung von der APP-Erweiterung behandelt. Diese Authentifizierung ermöglicht es Benutzern, die Gesichts-ID, die Fingereingabe-ID oder Apple Pincode/Passcode für die Anmeldung zu verwenden.
+- **Bereich** (Credential und Kerberos): Geben Sie den Namen Ihres Authentifizierungs Bereichs ein. Der Bereichs Name sollte groß geschrieben werden, z. b. `CONTOSO.COM`. In der Regel ist Ihr Bereichs Name mit dem DNS-Domänen Namen identisch, aber in Großbuchstaben.
+
+- **Domänen** (Anmelde Informationen und Kerberos): Geben Sie die Domänen-oder Hostnamen der Standorte ein, die über SSO authentifiziert werden können. Wenn Ihre Website beispielsweise `mysite.contoso.com`ist, ist `mysite` der Hostname, und `contoso.com` ist der Domänen Name. Wenn Benutzer eine Verbindung mit einer dieser Websites herstellen, wird die Authentifizierungs Aufforderung von der APP-Erweiterung behandelt. Diese Authentifizierung ermöglicht es Benutzern, die Gesichts-ID, die Fingereingabe-ID oder Apple Pincode/Passcode für die Anmeldung zu verwenden.
 
   - Alle Domänen in der Single Sign-on App-Erweiterung InTune-Profile müssen eindeutig sein. Sie können eine Domäne in Anmelde-App-Erweiterungs Profilen nicht wiederholen, auch wenn Sie unterschiedliche Typen von SSO-App-Erweiterungen verwenden.
   - Diese Domänen beachten nicht die Groß-/Kleinschreibung.
 
-- **Zusätzliche Konfiguration** (nur Anmelde Informationen): Geben Sie zusätzliche Erweiterungs spezifische Daten ein, die an die SSO-App-Erweiterung übergeben werden sollen:
-  - **Konfigurationsschlüssel**: Geben Sie den Namen des Elements ein, das Sie hinzufügen möchten, z. b. `user name`.
-  - **Werttyp**: Geben Sie den Typ der Daten ein. Folgende Optionen sind verfügbar:
+- **URLs** (nur Umleitung): Geben Sie die URL-Präfixe Ihrer Identitäts Anbieter ein, in deren Namen die Umleitungs-App-Erweiterung SSO ausführt. Wenn ein Benutzer zu diesen URLs umgeleitet wird, wird die SSO-App-Erweiterung eingreifen und SSO anfordern.
+
+  - Alle URLs in ihren InTune-Single Sign-on App-Erweiterungs Profilen müssen eindeutig sein. Sie können eine Domäne in einem SSO-App-Erweiterungs Profil nicht wiederholen, auch wenn Sie unterschiedliche Typen von SSO-App-Erweiterungen verwenden.
+  - Die URLs müssen mit http://oder https://beginnen.
+
+- **Zusätzliche Konfiguration** (Umleitung und Anmelde Informationen): Geben Sie zusätzliche Erweiterungs spezifische Daten ein, die an die SSO-App-Erweiterung übergeben werden sollen:
+  - **Schlüssel**: Geben Sie den Namen des Elements ein, das Sie hinzufügen möchten, z. b. `user name`.
+  - **Typ**: Geben Sie den Typ der Daten ein. Folgende Optionen sind verfügbar:
 
     - Zeichenfolge
     - Boolescher Wert: Geben Sie unter **Konfigurations Wert**`True` oder `False`ein.
     - Integer: Geben Sie unter **Konfigurations Wert**eine Zahl ein.
     
-  - **Konfigurations Wert**: Geben Sie die Daten ein.
+  - **Wert**: Geben Sie die Daten ein.
   
   - **Add**: Wählen Sie diese Option aus, um die Konfigurationsschlüssel hinzuzufügen
 
@@ -179,13 +184,19 @@ Diese Funktion gilt für:
 - **Minimal Kennwort** (nur Kerberos): Geben Sie die Anzahl von Tagen ein, die ein Kennwort für die Domäne verwendet werden muss, bevor ein Benutzer es ändern kann. **Nicht konfiguriert** (Standard) erzwingt kein minimal Alter von Kenn Wörtern, bevor Sie geändert werden können.
 - **Benachrichtigung über Kenn Wort Ablauf** (nur Kerberos): Geben Sie die Anzahl von Tagen ein, bevor ein Kennwort abläuft, damit Benutzer benachrichtigt werden, dass Ihr Kennwort abläuft. **Nicht konfiguriert** (Standard) verwendet `15` Tage.
 - **Kennwortablauf** (nur Kerberos): Geben Sie die Anzahl der Tage an, nach denen das Gerätekennwort geändert werden muss. **Nicht konfiguriert** (Standard) bedeutet, dass Benutzer Kennwörter nie ablaufen.
+- **URL für Kenn Wort Änderung** (nur Kerberos): Geben Sie die URL ein, die gestartet wird, wenn der Benutzer eine Kerberos-Kenn Wort Änderung initiiert.
 - **Prinzipal Name** (nur Kerberos): Geben Sie den Benutzernamen des Kerberos-Prinzipals ein. Sie müssen den Bereichs Namen nicht einschließen. In `user@contoso.com`ist `user` z. b. der Prinzipal Name, und `contoso.com` ist der Bereichs Name.
+
+  > [!TIP]
+  > - Sie können auch Variablen im Prinzipal Namen verwenden, indem Sie die geschweiften Klammern `{{ }}`eingeben. Geben Sie z. b. `Username: {{username}}`ein, um den Benutzernamen anzuzeigen. 
+  > - Seien Sie jedoch mit der Variablen Ersetzung vorsichtig, da Variablen nicht in der Benutzeroberfläche überprüft werden und die Groß-und Kleinschreibung beachtet wird. Stellen Sie sicher, dass Sie die richtigen Informationen eingeben.
+  
 - **Active Directory Standortcode** (nur Kerberos): Geben Sie den Namen des Active Directory Standorts ein, der von der Kerberos-Erweiterung verwendet werden soll. Möglicherweise müssen Sie diesen Wert nicht ändern, da die Kerberos-Erweiterung möglicherweise automatisch den Active Directory Standort Codes findet.
 - **Cache Name** (nur Kerberos): Geben Sie den Namen des generischen Sicherheits Diensts (GSS) des Kerberos-Caches ein. Dieser Wert muss höchstwahrscheinlich nicht festgelegt werden.  
 - **Meldung zu Kenn Wort Anforderungen** (nur Kerberos): Geben Sie eine Textversion der Kenn Wort Anforderungen Ihres Unternehmens ein, die den Benutzern angezeigt wird. Die Meldung wird angezeigt, wenn Sie keine Anforderungen an die Kenn Wort Komplexität Active Directory müssen, oder geben Sie eine minimale Kenn Wort Länge ein.  
 - **App-Bündel-IDs** (nur Kerberos): **fügen Sie** die APP Bundle Bezeichner hinzu, die Single Sign-on auf Ihren Geräten verwenden sollen. Diesen apps wird Zugriff auf das Kerberos-Ticket zum Erteilen von Tickets, das Authentifizierungs Ticket und das Authentifizieren von Benutzern für Dienste gewährt, auf die Sie Zugriff haben.
 - **Domänen Bereichs Zuordnung** (nur Kerberos): **fügen Sie** die Domänen-DNS-Suffixe hinzu, die dem Bereich zugeordnet werden sollen. Verwenden Sie diese Einstellung, wenn die DNS-Namen der Hosts nicht mit dem Bereichs Namen identisch sind. Wahrscheinlich ist es nicht erforderlich, diese benutzerdefinierte Domäne-zu-Bereich-Zuordnung zu erstellen.
-- **PKINIT-Zertifikat** (nur Kerberos): **Wählen Sie** die Kryptografie mit öffentlichem Schlüssel für das erste Authentifizierungszertifikat (PKINIT) aus, das zum Erneuern der Kerberos-Anmelde Informationen ohne Benutzerinteraktion verwendet werden kann. Das Zertifikat muss ein PKCS-oder SCEP-Zertifikat sein, das Sie zuvor zu InTune hinzugefügt haben.
+- **PKINIT-Zertifikat** (nur Kerberos): **Wählen Sie** die Kryptografie mit öffentlichem Schlüssel für die erste Authentifizierung (PKINIT) aus, die für die Kerberos-Authentifizierung verwendet werden kann. Sie können aus [PKCS](../protect/certficates-pfx-configure.md) -oder [SCEP](../protect/certificates-scep-configure.md) -Zertifikaten auswählen, die Sie in InTune hinzugefügt haben. Weitere Informationen zu Zertifikaten finden Sie [unter Verwenden von Zertifikaten für die Authentifizierung in Microsoft InTune](../protect/certificates-configure.md).
 
 ## <a name="associated-domains"></a>Zugeordnete Domänen
 
@@ -202,7 +213,7 @@ Diese Funktion gilt für:
 
 - **App-ID**: Geben Sie den App-Bezeichner der APP ein, die mit einer Website verknüpft werden soll. Der APP-Bezeichner enthält die Team-ID und eine Bündel-ID: `TeamID.BundleID`.
 
-  Die Team-ID ist eine Zeichenfolge mit einer alphanumerischen Zeichenfolge (Buchstaben und Zahlen) aus 10 Zeichen, die von Apple für Ihre APP-Entwickler generiert wird, wie `ABCDE12345`. [Suchen Sie die Team-ID](https://help.apple.com/developer-account/#/dev55c3c710c)   (öffnet die Website von Apple) Weitere Informationen.
+  Die Team-ID ist eine Zeichenfolge mit einer alphanumerischen Zeichenfolge (Buchstaben und Zahlen) aus 10 Zeichen, die von Apple für Ihre APP-Entwickler generiert wird, wie `ABCDE12345`. [Suchen Sie die Team-ID](https://help.apple.com/developer-account/#/dev55c3c710c) (öffnet die Website von Apple) Weitere Informationen.
 
   Die Bündel-ID identifiziert die APP eindeutig und wird in der Regel in umgekehrter Domänen Namen Notation formatiert. Beispielsweise ist die Bündel-ID des Finders `com.apple.finder`. Um die Bündel-ID zu finden, verwenden Sie das AppleScript-Skript im Terminal:
 
@@ -221,7 +232,7 @@ Diese Funktion gilt für:
 - **Add**: Wählen Sie diese Option aus, um Ihre apps und zugeordneten Domänen
 
 > [!TIP]
-> Öffnen Sie zum Beheben von Problemen auf Ihrem macOS-Gerät die **System Einstellungen**  > **profile**. Vergewissern Sie sich, dass das erstellte Profil in der Liste Geräteprofile aufgeführt ist. Wenn die Liste aufgeführt ist, stellen Sie sicher, dass sich die **Konfiguration der zugeordneten Domänen** im Profil befindet und die richtige APP-ID und die richtigen Domänen enthält.
+> Öffnen Sie zum Beheben von Problemen auf Ihrem macOS-Gerät die **System Einstellungen** > **profile**. Vergewissern Sie sich, dass das erstellte Profil in der Liste Geräteprofile aufgeführt ist. Wenn die Liste aufgeführt ist, stellen Sie sicher, dass sich die **Konfiguration der zugeordneten Domänen** im Profil befindet und die richtige APP-ID und die richtigen Domänen enthält.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

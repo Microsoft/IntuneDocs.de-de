@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5ab1be3d34d52e824d1ff06124e28206fb7b07a1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72510190"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Intune in der Azure-Konsole und der Legacy-Intune-PC-Client
@@ -63,7 +63,7 @@ Einen ausführlichen Vergleich zwischen PC-Client und MDM-Funktionen finden Sie 
 Um die Verwaltung von Windows 10-Geräten mit dem Intune-PC-Client auf die Verwaltung mit MDM umzustellen, gehen Sie folgendermaßen vor:
 
 1. Führen Sie in der Silverlight-Konsole eine **selektive Zurücksetzung** durch, um die Registrierung des Geräts beim PC-Client aufzuheben.
-  ![Warning Popup mit dem ausgewählten Optionsfeld "selektiv das Gerät löschen" aus ](./media/intune-legacy-pc-client/image02.png)
+  ![Warnungs Popup mit dem ausgewählten Optionsfeld "selektiv Gerät löschen" aus](./media/intune-legacy-pc-client/image02.png)
 2. Registrieren Sie das Gerät neu bei [MDM (und/oder Azure AD Join)](../enrollment/windows-enroll.md).
 
 ## <a name="next-steps"></a>Nächste Schritte

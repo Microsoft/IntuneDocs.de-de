@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 28ba1d2d50f366e5e34fae06ae188293dd0fb8b5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501882"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781208"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Verwenden verwalteter Apps auf Ihrem Android-Gerät
 Verwaltete Apps werden so konfiguriert, dass sie den Sicherheitsanforderungen Ihrer Organisation entsprechen. Sie schützen die Daten von Unternehmen, Schulen und Universitäten. Diese Apps werden auf Ihrem Gerät zur Verfügung gestellt und automatisch installiert bzw. verwendet. 
@@ -39,9 +39,7 @@ Ihre Organisation kann ggf. mehrere Apps so konfigurieren, dass diese zusammenar
 Organisationen können verlangen, dass Sie für bestimmte Vorgänge wie das Öffnen einer Arbeitsdatei oder das Zugreifen auf einen Weblink eine verwaltete App verwenden. Wenn Sie nicht über die jeweilige App verfügen, können Sie ggf. nicht mit dem Vorgang fortfahren. Einige verwaltete Apps werden Ihnen zwar zur Installation zur Verfügung gestellt, sind aber nicht erforderlich.
 
 ## <a name="how-do-i-know-im-using-a-managed-app"></a>Wie stelle ich fest, ob ich eine verwaltete App verwende?
-Wenn Sie zum ersten Mal in einer verwalteten App auf Unternehmens-, Schul- oder Unidaten zugreifen, erhalten Sie eine ähnliche Nachricht wie im nachfolgenden Screenshot gezeigt. Sie werden dazu aufgefordert, die App neu zu starten, damit Sie fortfahren können.
-
-![Screenshot der Nachricht, die angezeigt wird, wenn ein Benutzer eine verwaltete App auf seinem Gerät öffnet. Nachrichtentext: „Die Daten Ihrer Organisation werden in dieser App nicht geschützt. Sie müssen die App neu starten, um fortzufahren.“ Unterhalb dieser Nachricht wird die Schaltfläche „OK“ angezeigt.](./media/managed-apps-message.png)
+Wenn Sie versuchen, auf Geschäfts-, Schul-oder unidaten in einer verwalteten App zuzugreifen, erhalten Sie eine Bildschirm Meldung, dass die APP von Ihrer Organisation geschützt wird. 
 
 ## <a name="commonly-managed-apps"></a>Häufig verwendete verwaltete Apps  
 Die folgenden verwalteten Apps sind häufig für Unternehmen, Schulen und Universitäten erforderlich bzw. verfügbar:

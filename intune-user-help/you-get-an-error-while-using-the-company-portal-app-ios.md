@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d194e08a300aca55373ceba41431c56848a0fb60
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72507890"
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Sie erhalten bei Verwendung der Unternehmensportal-App eine Fehlermeldung

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9acad2e8539da7210c349ffb254af62f370af5f6
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 6ed04c1bf135793da9cece9debc2c7cdd481601a
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74391497"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74691692"
 ---
 # <a name="add-a-property-list-file-to-macos-devices-using-microsoft-intune"></a>Hinzufügen einer Eigenschaften Listen Datei zu macOS-Geräten mithilfe von Microsoft InTune
 
@@ -29,7 +29,7 @@ Mithilfe Microsoft InTune können Sie eine Eigenschaften Listen Datei (. plist) 
 
 Diese Funktion gilt für:
 
-- macOS-Geräte mit 10,7 und höher
+- macOS-Geräte mit Version 10.7 und höher
 
 Eigenschaften Listen Dateien enthalten in der Regel Informationen zu macOS-Anwendungen. Weitere Informationen finden Sie unter [Informationen zu Eigenschaften Listen Dateien](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html) (Apple-Website) und [benutzerdefinierte Nutz Last Einstellungen](https://support.apple.com/guide/mdm/custom-mdm9abbdbe7/1/web/1).
 
@@ -59,3 +59,5 @@ Wählen Sie **OK** > **Erstellen** aus, um die Änderungen zu speichern. Das Pro
 ## <a name="next-steps"></a>Nächste Schritte
 
 Das Profil ist nun erstellt, führt aber noch keine Aktionen durch. Die nächsten Schritte sind das [Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune](device-profile-assign.md) und das [Überwachen von Geräteprofilen in Microsoft Intune](device-profile-monitor.md).
+
+Weitere Informationen zu Einstellungsdateien für Microsoft Edge finden Sie unter [Konfigurieren von Microsoft Edge-Richtlinien Einstellungen unter macOS](https://docs.microsoft.com/deployedge/configure-microsoft-edge-on-mac).

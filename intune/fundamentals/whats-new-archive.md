@@ -20,10 +20,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6a6b5585501851bb52db70ca222f8cfff7ad0597
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73635463"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Neuerungen in Microsoft Intune (vorherige Monate)
@@ -272,7 +272,7 @@ Die Intune-Konsole unterstützt das Anzeigen und Verwalten von Geräten mit nur 
 - Verwenden von Exchange-Steuerelementen gemäß den Anweisungen unter [Clients and mobile in Exchange Online (Clients und Mobilgeräte in Exchange Online)](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/clients-and-mobile-in-exchange-online)
 
 #### <a name="search-the-all-devices-page-for-an-exact-device-by-using-name--4254930---"></a>Suchen eines bestimmten Geräts auf der Seite „Alle Geräte“ mithilfe von [Name]<!--4254930 -->
-Sie können nun nach exakten Gerätenamen suchen. Wechseln Sie zu **Intune** > **Geräte** > **Alle Geräte**, und umschließen Sie den gesuchten Gerätenamen im Suchfeld mit {}, um nach einer genauen Übereinstimmung zu suchen. Zum Beispiel: **{Gerät12345}**.
+Sie können nun nach exakten Gerätenamen suchen. Wechseln Sie zu **Intune** > **Geräte** > **Alle Geräte**, und umschließen Sie den gesuchten Gerätenamen im Suchfeld mit {}, um nach einer genauen Übereinstimmung zu suchen. Zum Beispiel: **{Gerät12345}** .
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="monitor-and-troubleshoot"></a>Überwachung und Problembehandlung
@@ -421,7 +421,7 @@ Android Enterprise
 Für iOS-Geräte können Sie Safari-Einstellungen festlegen und Softwareupdates konfigurieren. Mit diesem Update werden diese Einstellungen auf der Intune-Benutzeroberfläche verschoben:
 
 - Die Safari-Einstellungen wurden von **Safari** (**Gerätekonfiguration** > **Profile** > **Neues Profil** > **iOS** (Plattform) > **Geräteeinschränkungen** (Profiltyp)) zu **[Integrierte Apps](../configuration/device-restrictions-ios.md#built-in-apps)** verschoben.
-- Die Einstellung **Delaying user software update visibility for supervised iOS devices** (Sichtbarkeit von Updates für Benutzer von überwachten iOS-Geräten verzögern) (**Softwareupdates** > **Richtlinien für iOS aktualisieren**) wurde zu **Geräteeinschränkungen** > **[Allgemein](../configuration/device-restrictions-ios.md#general)** verschoben.  Weitere Informationen zu den Auswirkungen auf vorhandene Richtlinien finden Sie unter [Konfigurieren von iOS-Updaterichtlinien in Intune](../protect/software-updates-ios.md#configure-the-policy).
+- Die Einstellung **Delaying user software update visibility for supervised iOS devices** (Sichtbarkeit von Updates für Benutzer von überwachten iOS-Geräten verzögern) (**Softwareupdates** > **Richtlinien für iOS aktualisieren**) wurde zu **Geräteeinschränkungen** >  **[Allgemein](../configuration/device-restrictions-ios.md#general)** verschoben.  Weitere Informationen zu den Auswirkungen auf vorhandene Richtlinien finden Sie unter [Konfigurieren von iOS-Updaterichtlinien in Intune](../protect/software-updates-ios.md#configure-the-policy).
 
 Eine Liste der Einstellungen finden Sie unter:
 
@@ -958,7 +958,7 @@ Gilt für: Windows 10 und höher
 #### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device----2637704----"></a>PIN-Eingabeaufforderung beim Ändern von Fingerabdrücken oder der Gesichts-ID auf einem iOS-Gerät <!-- 2637704  -->
 Benutzer werden jetzt zur Eingabe einer PIN aufgefordert, nachdem sie Änderungen an biometrischen Daten auf ihrem iOS-Gerät vorgenommen haben. Hierzu zählen Änderungen an registrierten Fingerabdrücken oder Gesichts-IDs. Die Zeitplanung für die Aufforderung hängt von der Konfiguration des Timeouts *Zugriffsanforderungen erneut prüfen nach (Minuten)* ab.  Wenn keine PIN festgelegt ist, wird der Benutzer aufgefordert, eine festzulegen. 
  
-Dieses Feature ist nur für iOS verfügbar und erfordert, dass das Intune App SDK für iOS, Version 9.0.1 oder höher in betreffende Anwendungen integriert wird. Die Integration des SDK ist erforderlich, damit das Verhalten für die Zielanwendungen erzwungen werden kann. Diese Integration erfolgt kontinuierlich und ist abhängig von den jeweiligen Anwendungsteams. Zu den betreffenden Apps zählen z.B. WXP, Outlook, Managed Browser und Yammer.
+Dieses Feature ist nur für iOS verfügbar und erfordert, dass das Intune App SDK für iOS, Version 9.0.1 oder höher in betreffende Anwendungen integriert wird. Die Integration des SDK ist erforderlich, damit das Verhalten für die Zielanwendungen erzwungen werden kann. Diese Integration erfolgt kontinuierlich und ist abhängig von den jeweiligen Anwendungsteams. Zu den betreffenden Apps zählen z. B. WXP, Outlook, Managed Browser und Yammer.
 
 #### <a name="network-access-control-support-on-ios-vpn-clients---1333693---"></a>Unterstützung der Netzwerkzugriffssteuerung auf iOS-VPN-Clients<!-- 1333693 -->
 Mit diesem Update gibt es eine neue Einstellung zum Aktivieren der Netzwerkzugriffssteuerung (Network Access Control, NAC), wenn Sie ein VPN-Konfigurationsprofil für Cisco AnyConnect, F5 Access und Citrix SSO für iOS erstellen. Über diese Einstellung kann die NAC-ID des Geräts in das VPN-Profil aufgenommen werden. Derzeit gibt es keine VPN-Clients oder NAC-Partnerlösungen, die diese neue NAC-ID unterstützen, aber wir werden Sie über unseren [Supportblogbeitrag](ttps://aka.ms/iOS12_and_vpn) auf dem Laufenden halten.
@@ -1321,7 +1321,7 @@ Mit diesem Update wird eine Java-API eingeführt, mit der sich Drittanbieter-Zer
 Derzeit unterstützt Intune [SCEP-Anforderungen über Active Directory-Zertifikatdienste](../protect/certificates-scep-configure.md).
 
 #### <a name="toggle-to-show-or-not-show-the-end-session-button-on-a-kiosk-browser---2455253---"></a>Umschaltfläche zum Anzeigen oder Ausblenden der Schaltfläche „Sitzung beenden“ auf einem Kioskbrowser<!-- 2455253 -->
-Sie können nun konfigurieren, ob Kioskbrowser die Schaltfläche „Sitzung beenden“ anzeigen. Sie finden das Steuerelement unter **Gerätekonfiguration** > **Kiosk (Vorschauversion)** > **Kioskwebbrowser**. Wenn die Schaltfläche aktiviert ist und ein Benutzer darauf klickt, fordert die App eine Bestätigung zum Beenden der Sitzung an. Wenn dies bestätigt wird, löscht der Browser alle Browserdaten und navigiert zurück zur Standard-URL.
+Sie können nun konfigurieren, ob Kioskbrowser die Schaltfläche „Sitzung beenden“ anzeigen. Sie finden das Steuerelement unter **Gerätekonfiguration** > **Kiosk (Vorschauversion)**  > **Kioskwebbrowser**. Wenn die Schaltfläche aktiviert ist und ein Benutzer darauf klickt, fordert die App eine Bestätigung zum Beenden der Sitzung an. Wenn dies bestätigt wird, löscht der Browser alle Browserdaten und navigiert zurück zur Standard-URL.
 
 #### <a name="create-an-esim-cellular-configuration-profile---2564077---"></a>Erstellen eines eSIM-Mobilfunkkonfigurationsprofils<!-- 2564077 -->
 Unter **Gerätekonfiguration** können Sie ein eSIM-Mobilfunkprofil erstellen. Sie können eine Datei importieren, die Mobilfunk-Aktivierungscodes enthält, die von Ihrem Mobilfunkanbieter bereitgestellt werden. Diese Profile können daraufhin für Ihre mit eSIM-LTE aktivierten Windows 10-Geräte bereitgestellt werden, z.B. für das Surface Pro LTE und andere eSIM-fähigen Geräte.
@@ -1435,12 +1435,12 @@ Mit diesem Update können Sie Palo Alto Networks GlobalProtect als VPN-Verbindun
 Sie können jetzt für Windows 10-Geräte zusätzliche Einstellungen für Sicherheitsoptionen für lokale Geräte konfigurieren. Zusätzliche Einstellungen sind bei Microsoft-Netzwerkclients, Microsoft-Netzwerkservern, bei der Netzwerkzugriff und -sicherheit und bei der interaktiven Anmeldung verfügbar. Diese Einstellungen finden Sie in der Endpoint Protection-Kategorie, wenn Sie eine Gerätekonfigurationsrichtlinie für Windows 10 erstellen.
 
 #### <a name="enable-kiosk-mode-on-windows-10-devices---1560072----"></a>Aktivieren des Kioskmodus auf Windows 10-Geräten<!-- 1560072 ! -->
-Auf Windows 10-Geräten können Sie ein Konfigurationsprofil erstellen und den Kioskmodus aktivieren (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10** > **Geräteeinschränkungen** > **Kiosk**). Bei diesem Update wurde die Einstellung **Kiosk (Vorschau)** in **Kiosk (veraltet)** umbenannt. **Kiosk (veraltet)** wird nicht mehr empfohlen, ist jedoch bis zum Juli-Update weiterhin funktionsfähig. **Kiosk (veraltet)** wird durch den neuen **Kiosk**-Profiltyp ersetzt (**Profil erstellen** > **Windows 10**  >  **Kiosk (Vorschau)**), der die Einstellungen zum Konfigurieren von Kiosks unter Windows 10 RS4 und höher enthält.
+Auf Windows 10-Geräten können Sie ein Konfigurationsprofil erstellen und den Kioskmodus aktivieren (**Gerätekonfiguration** > **Profile** > **Profil erstellen** > **Windows 10** > **Geräteeinschränkungen** > **Kiosk**). Bei diesem Update wurde die Einstellung **Kiosk (Vorschau)** in **Kiosk (veraltet)** umbenannt. **Kiosk (veraltet)** wird nicht mehr empfohlen, ist jedoch bis zum Juli-Update weiterhin funktionsfähig. **Kiosk (veraltet)** wird durch den neuen **Kiosk**-Profiltyp ersetzt (**Profil erstellen** > **Windows 10**  >  **Kiosk (Vorschau)** ), der die Einstellungen zum Konfigurieren von Kiosks unter Windows 10 RS4 und höher enthält.
 
 Gilt für Windows 10 und höher.
 
 #### <a name="device-profile-graphical-user-chart-is-back---2160133---"></a>Benutzerdiagramm des Geräteprofils wieder vorhanden<!-- 2160133 -->
-Während der Verbesserung der numerischen Werte, die im Diagramm des Geräteprofils dargestellt werden (**Gerätekonfiguration** > **Profile** > vorhandenes Profil auswählen > **(Übersicht)**), wurde das Benutzerdiagramm vorübergehend entfernt.
+Während der Verbesserung der numerischen Werte, die im Diagramm des Geräteprofils dargestellt werden (**Gerätekonfiguration** > **Profile** > vorhandenes Profil auswählen > **(Übersicht)** ), wurde das Benutzerdiagramm vorübergehend entfernt.
 
 Bei diesem Update ist das Benutzerdiagramm wieder enthalten und wird im Azure-Portal angezeigt.
 
@@ -1492,7 +1492,7 @@ Mit einem lokalen Exchange-Connector von Intune können Sie den Zugriff von Ger�
 Für jedes Gerät sind jetzt auch die CCID-Informationen (Chip Card Interface Device) verfügbar. Klicken Sie auf **Geräte** > **Alle Geräte**, wählen Sie ein Gerät aus, und klicken Sie dann auf **Hardware**, und sehen Sie sich die **Netzwerkdetails**> an, um diese anzuzeigen.
 
 #### <a name="assign-all-users-and-all-devices-as-scope-groups---2196803---"></a>Zuweisen aller Benutzer und aller Geräte als Bereichsgruppen<!-- 2196803 -->
-Sie können alle Benutzer, alle Geräte sowie alle Benutzer und alle Geräte in Bereichsgruppen zuweisen. Klicken Sie hierzu auf **Intune-Rollen** > **Alle Rollen** > **Policy and profile manage** (Richtlinien- und Profil-Manager) > **Zuweisungen**, wählen Sie eine Zuweisung aus, und klicken Sie dann auf **Bereich (Gruppen)**.
+Sie können alle Benutzer, alle Geräte sowie alle Benutzer und alle Geräte in Bereichsgruppen zuweisen. Klicken Sie hierzu auf **Intune-Rollen** > **Alle Rollen** > **Policy and profile manage** (Richtlinien- und Profil-Manager) > **Zuweisungen**, wählen Sie eine Zuweisung aus, und klicken Sie dann auf **Bereich (Gruppen)** .
 
 #### <a name="udid-information-now-included-for-ios-and-macos-devices---2219806---"></a>UDID-Informationen jetzt für iOS- und macOS-Geräte enthalten<!-- 2219806 -->
 Navigieren Sie zu **Geräte** > **Alle Geräte**, wählen Sie ein Gerät aus, und klicken Sie auf **Hardware**, um die UDID (eindeutiger Gerätebezeichner) für iOS- und macOS-Geräte anzuzeigen. Die UDID ist nur für Unternehmensgeräte verfügbar (wie unter **Geräte** > **Ale Geräte**, Gerät auswählen, **Eigenschaften** > **Gerätebesitz** festgelegt).
@@ -1604,7 +1604,7 @@ Mit diesem Update enthält [Windows Defender Central Guard](https://docs.microso
 Die folgenden, abhängigen Technologien werden automatisch aktiviert, wenn Sie Credential Guard konfigurieren: 
 
 - **Aktivieren der virtualisierungsbasierten Sicherheit (VBS:)** VBS wird beim nächsten Neustart aktiviert. Die virtualisierungsbasierte Sicherheit verwendet Windows Hypervisor, um die Sicherheitsdienste zu unterstützen, und erfordert einen sicheren Start.
-- **Sicherer Start mit direktem Speicherzugriff (Direct Memory Access, DMA)**: Aktiviert VBS mit Schutzmaßnahmen wie sicherem Start und direktem Speicherzugriff. Für die DMA-Schutzfunktion ist Hardwaresupport erforderlich. Außerdem ist sie nur auf ordnungsgemäß konfigurierten Geräten aktiviert. 
+- **Sicherer Start mit direktem Speicherzugriff (Direct Memory Access, DMA)** : Aktiviert VBS mit Schutzmaßnahmen wie sicherem Start und direktem Speicherzugriff. Für die DMA-Schutzfunktion ist Hardwaresupport erforderlich. Außerdem ist sie nur auf ordnungsgemäß konfigurierten Geräten aktiviert. 
 
 #### <a name="use-a-custom-subject-name-on-scep-certificate---2064190---"></a>Verwenden eines benutzerdefinierten Antragstellernamens auf dem SCEP-Zertifikat<!-- 2064190 -->
 Sie können den allgemeinen Namen **OnPremisesSamAccountName** für einen benutzerdefinierten Antragsteller auf einem SCEP-Zertifikatprofil verwenden. Sie können z. B. `CN={OnPremisesSamAccountName})` verwenden.
@@ -2176,7 +2176,7 @@ Sie können nun überwachte iOS 10.3-Geräte herunterfahren. Diese Aktion fährt
 
 #### <a name="disallow-datetime-changes-to-samsung-knox-devices---1468103---"></a>Verhindern von Änderungen an Datum/Uhrzeit bei Samsung KNOX-Geräten<!-- 1468103 -->
 
-Wir haben ein neues Feature hinzugefügt, mit dem Sie Datums- und Zeitänderungen auf Samsung KNOX-Geräten blockieren können. Sie finden dieses unter **Gerätekonfigurationsprofile** > **Geräteeinschränkungen (Android)** > **Allgemein**.
+Wir haben ein neues Feature hinzugefügt, mit dem Sie Datums- und Zeitänderungen auf Samsung KNOX-Geräten blockieren können. Sie finden dieses unter **Gerätekonfigurationsprofile** > **Geräteeinschränkungen (Android)**  > **Allgemein**.
 
 #### <a name="surface-hub-resource-account-supported---1566442----"></a>Unterstützung für Surface Hub-Ressourcenkonto<!-- 1566442  -->
 

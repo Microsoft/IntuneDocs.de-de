@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bce6b99723c5eada8f8f29e875a1df1daa02751a
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059352"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>Hinzufügen von macOS-Kernel Erweiterungen in InTune
@@ -67,8 +67,8 @@ In diesem Artikel erfahren Sie, wie Sie ein Geräte Konfigurations Profil mithil
 
 ## <a name="create-the-profile"></a>Erstellen des Profils
 
-1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)an.
-2. Wählen Sie **Geräte** > **Konfigurations profile** > **Profil erstellen**aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **Konfigurationsprofile** > **Profil erstellen** aus.
 3. Geben Sie die folgenden Eigenschaften ein:
 
     - **Name**: Geben Sie einen aussagekräftigen Namen für das neue Profil ein.

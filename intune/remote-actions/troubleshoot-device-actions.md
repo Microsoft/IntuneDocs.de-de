@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96f6dc3d1a8f8589395cf49b3bb934adadf437a4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 239dd8630eb361da8609e3a34eb2c9346a64dab0
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508496"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907184"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>Behandeln von Problemen mit Geräte Aktionen in InTune
 
@@ -54,7 +54,7 @@ Nein. Und Sie müssen die Bindestriche nicht eingeben.
 ## <a name="remove-devices-action"></a>Aktion "Geräte entfernen"
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>Gewusst wie, von wem ein abkoppeln/zurücksetzen gestartet wurde?
-Wechseln Sie zu **InTune**  > **Geräte**  > **Geräte Aktionen** > Überprüfen Sie die Spalte **initiiert von** .
+Wechseln Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)zu Mandanten **Verwaltung** > Überwachungs **Protokolle** > Überprüfen Sie die Spalte **initiiert von** .
 Wenn kein Eintrag angezeigt wird, ist der Benutzer des Geräts die wahrscheinlichste Person, die die Aktion initiiert hat. Sie haben wahrscheinlich die Unternehmensportal APP oder Portal.Manage.Microsoft.com verwendet.
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>Warum wurde meine Anwendung nach dem abkoppeln nicht deinstalliert?
@@ -69,7 +69,7 @@ Dieses Verhalten ist normal. Google lässt das Zurücksetzen von Arbeitsprofil G
 Da das abkoppeln eines Geräts Zugriffs Token nicht widerrufen. Sie können Richtlinien für den bedingten Zugriff verwenden, um diese Bedingung zu mindern.
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>Wie kann ich nach der Ausgabe eine abkoppeln/zurücksetzen-Aktion überwachen?
-Wechseln Sie zu **InTune**  > **Geräte**  >  Geräte**Aktionen**.
+Wechseln Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)zu Mandanten **Verwaltung** > Überwachungs **Protokolle**.
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>Warum werden manchmal setzt als ausstehend angezeigt?
 Geräte melden ihren Status nicht immer zurück an den InTune-Dienst, bevor die zurück Setzung gestartet wurde. Daher wird die Aktion als ausstehend angezeigt. Wenn Sie bestätigt haben, dass die Aktion erfolgreich war, löschen Sie das Gerät aus dem Dienst.

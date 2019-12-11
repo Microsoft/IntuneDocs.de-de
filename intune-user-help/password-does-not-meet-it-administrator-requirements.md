@@ -18,10 +18,10 @@ ROBOTS: ''
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9181510dad2640fcc8ea84ce2db2856bd02cbaf5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502179"
 ---
 # <a name="device-password-requirements-for-enrolled-devices"></a>Geräte Kennwort-Anforderungen für registrierte Geräte
@@ -45,7 +45,7 @@ Wenden Sie sich an Ihren IT-Support, um zusätzliche Hilfe zu erhalten oder um d
 | Das Kennwort ist zu kurz.| Aktualisieren oder legen Sie ein Kennwort mit mehr Zeichen fest. Ihre Organisation erfordert, dass Ihr Kennwort eine bestimmte Länge hat. Was Sie tatsächlich auswählen, ist unterschiedlich, aber die erforderliche Mindestlänge beträgt 4 Zeichen, und der Höchstwert beträgt 16. |
 | Das Kennwort darf nur Zahlen enthalten. | Legen Sie ein Kennwort fest, das nur Zahlen enthält.|
 | Das Kennwort darf nur alphanumerische Zeichen enthalten. | Legen Sie ein Kennwort fest, das eine Mischung aus Zahlen und Buchstaben enthält.|
-| Das Kennwort muss komplexe Zeichen enthalten. | Fügen Sie komplexe Zeichen hinzu, wie z. b. Zahlen, Großbuchstaben und Symbole wie `$`, `%` und `#`. Ihre Organisation erfordert eine Mischung aus Buchstaben, Zahlen und nicht alphanumerischen Zeichen, damit andere Benutzer das Kennwort nicht erraten können.|  
+| Das Kennwort muss komplexe Zeichen enthalten. | Fügen Sie komplexe Zeichen hinzu, wie z. b. Zahlen, Großbuchstaben und Symbole wie `$`, `%`und `#`. Ihre Organisation erfordert eine Mischung aus Buchstaben, Zahlen und nicht alphanumerischen Zeichen, damit andere Benutzer das Kennwort nicht erraten können.|  
 | Das Kennwort ist abgelaufen. | Legen Sie ein neues Kennwort fest. Ihre Organisation verlangt, dass Sie Ihr Kennwort nach einer bestimmten Anzahl von Tagen ändern. |
 | Das Kennwort wurde erst kürzlich verwendet. | Wählen Sie ein Kennwort aus, das Sie zuvor noch nicht verwendet haben. Ihre Organisation erfordert, dass eine bestimmte Zeitspanne verstrichen ist, bevor Sie ein Kennwort wieder verwenden. |
 
@@ -58,7 +58,7 @@ Wenden Sie sich an Ihren IT-Support, um zusätzliche Hilfe zu erhalten oder um d
 | Die Kennung ist zu kurz. | Aktualisieren Sie eine Kennung, oder legen Sie eine Kennung mit mehr Zeichen fest. Ihre Organisation erfordert, dass Ihre Kennung eine bestimmte Länge hat. Was Sie tatsächlich auswählen, ist unterschiedlich, aber die erforderliche Mindestlänge beträgt 4 Zeichen, und der Höchstwert beträgt 14. Wenn Sie Ihre Kennung ändern, wird möglicherweise eine Eingabeaufforderung von Apple angezeigt, die Sie darüber informiert, dass Sie 6 oder mehr Zeichen eingeben müssen. Diese Meldung ist eine Apple-System Empfehlung. Wenn für Ihre Organisation nur eine Kennung von 4 oder 5 Zeichen erforderlich ist, müssen Sie keine 6-stellige Kennung eingeben.|  
 | Die Kennung darf nur Zahlen enthalten. | Legen Sie eine Kennung fest, die nur Zahlen enthält.|
 | Die Kennung darf nur alphanumerische Zeichen enthalten.| Legen Sie eine Kennung fest, die eine Mischung aus Zahlen und Buchstaben enthält.|
-| Die Kennung muss nicht alphanumerische Zeichen enthalten. | Fügen Sie Sonderzeichen hinzu, z. b. `&`, `!`, `$`, `%` und `#`. Ihre Organisation erfordert eine Mischung aus Buchstaben, Zahlen und nicht alphanumerischen Zeichen, damit andere Benutzer die Kennung nicht erraten können.|
+| Die Kennung muss nicht alphanumerische Zeichen enthalten. | Fügen Sie Sonderzeichen hinzu, z. b. `&`, `!`, `$`, `%`und `#`. Ihre Organisation erfordert eine Mischung aus Buchstaben, Zahlen und nicht alphanumerischen Zeichen, damit andere Benutzer die Kennung nicht erraten können.|
 | Der Passcode ist abgelaufen. | Legen Sie ein neues Kennwort fest. Ihre Organisation verlangt, dass Sie Ihr Kennwort nach einer bestimmten Anzahl von Tagen ändern. |
 | Ihre Kennung wurde zu kurzem verwendet.| Wählen Sie einen Passcode aus, den Sie zuvor noch nicht verwendet haben. Ihre Organisation erfordert, dass eine bestimmte Zeitspanne verstrichen ist, bevor Sie eine Kennung wieder verwenden. |
 |Fingereingabe-ID oder Gesichts-ID-Authentifizierung erforderlich. | Einrichten der Fingereingabe-ID oder der Gesichts-ID. Ihre Organisation erfordert, dass Sie sich mit einer dieser Methoden authentifizieren, bevor Sie Auto Ausfüllen für Kenn Wörter oder Kreditkarteninformationen verwenden. | 
@@ -71,7 +71,7 @@ Wenden Sie sich an Ihren IT-Support, um zusätzliche Hilfe zu erhalten oder um d
 | Das Kennwort ist zu kurz. | Aktualisieren oder legen Sie ein Kennwort mit mehr Zeichen fest. Ihre Organisation erfordert, dass Ihr Kennwort eine bestimmte Länge hat.|
 | Das Kennwort darf nur Zahlen enthalten. | Legen Sie ein Kennwort fest, das nur Zahlen enthält.|
 | Das Kennwort darf nur alphanumerische Zeichen enthalten. | Legen Sie ein Kennwort fest, das eine Mischung aus Zahlen und Buchstaben enthält.|
-| Das Kennwort muss nicht alphanumerische Zeichen enthalten. | Fügen Sie Sonderzeichen hinzu, z. b. `&`, `!`, `$`, `%` und `#`. Ihre Organisation erfordert eine Mischung aus Buchstaben, Zahlen und nicht alphanumerischen Zeichen, damit andere Benutzer das Kennwort nicht erraten können.|
+| Das Kennwort muss nicht alphanumerische Zeichen enthalten. | Fügen Sie Sonderzeichen hinzu, z. b. `&`, `!`, `$`, `%`und `#`. Ihre Organisation erfordert eine Mischung aus Buchstaben, Zahlen und nicht alphanumerischen Zeichen, damit andere Benutzer das Kennwort nicht erraten können.|
 | Das Kennwort ist abgelaufen. | Legen Sie ein neues Kennwort fest. Ihre Organisation verlangt, dass Sie Ihr Kennwort nach einer bestimmten Anzahl von Tagen ändern. |
 | Das Kennwort wurde erst kürzlich verwendet. | Wählen Sie ein Kennwort aus, das Sie zuvor noch nicht verwendet haben. Ihre Organisation erfordert, dass eine bestimmte Zeitspanne verstrichen ist, bevor Sie ein Kennwort wieder verwenden. |
 
@@ -84,7 +84,7 @@ Wenden Sie sich an Ihren IT-Support, um zusätzliche Hilfe zu erhalten oder um d
 | Das Kennwort muss Ziffern enthalten. | Legen Sie ein Kennwort oder eine PIN fest, das Zahlen enthält.|
 | Das Kennwort muss Buchstaben enthalten. | Legen Sie ein Kennwort fest, das Buchstaben aus dem Alphabet enthält.|
 | Das Kennwort muss alphanumerische Zeichen enthalten. | Legen Sie ein Kennwort fest, das eine Mischung aus Zahlen und Buchstaben enthält.|
-| Das Kennwort muss alphanumerische Zeichen und Symbole enthalten. | Legen Sie ein Kennwort fest, das eine Kombination aus Buchstaben, Ziffern und Sonderzeichen enthält, wie z. b. `&`, `!`, `$`, `%` und `#`. |
+| Das Kennwort muss alphanumerische Zeichen und Symbole enthalten. | Legen Sie ein Kennwort fest, das eine Kombination aus Buchstaben, Ziffern und Sonderzeichen enthält, wie z. b. `&`, `!`, `$`, `%`und `#`. |
 | Für das Kennwort muss biometrische Technologie verwendet werden.| Richten Sie Ihr Gerät für die Verwendung der biometrischen Authentifizierung ein, z. b. Fingerabdruck oder Gesichtserkennung.
 | Das Kennwort ist abgelaufen. | Legen Sie ein neues Kennwort fest. Ihre Organisation verlangt, dass Sie Ihr Kennwort nach einer bestimmten Anzahl von Tagen ändern. |
 | Das Kennwort wurde erst kürzlich verwendet. | Wählen Sie ein Kennwort aus, das Sie zuvor noch nicht verwendet haben. Ihre Organisation erfordert, dass eine bestimmte Zeitspanne verstrichen ist, bevor Sie ein Kennwort wieder verwenden. |

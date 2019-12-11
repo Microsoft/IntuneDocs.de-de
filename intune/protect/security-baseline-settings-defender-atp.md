@@ -5,7 +5,7 @@ description: Von Intune unterstützte Einstellungen für Sicherheitsbaselines zu
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 85d0b28de6c133ece5116dd78b1646f497ff2f6b
+ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060057"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882327"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Microsoft Defender Advanced Threat Protection-Baselineeinstellungen für Intune
 
@@ -593,8 +593,18 @@ Weitere Informationen finden Sie in der Windows-Dokumentation unter [PassportFor
 - **Konfigurieren von Windows Hello for Business** - *TenantId/Policies/UsePassportForWork*    
   Windows Hello for Business ist eine alternative Methode zum Anmelden bei Windows durch Ersetzen von Kennwörtern, Smartcards und virtuellen Smartcards.  
 
-  - Wenn Sie auf *Ja*festgelegt ist, aktivieren Sie diese Richtlinie, und das Gerät stellt Windows Hello for Business bereit.  
-  - Wenn diese Einstellung auf *nicht konfiguriert*festgelegt ist, wirkt sich die Baseline nicht auf die Richtlinien Einstellung des Geräts aus. Dies bedeutet Folgendes: Wenn Windows Hello for Business auf einem Gerät deaktiviert ist, bleibt es deaktiviert. Wenn Sie aktiviert ist, bleibt sie aktiviert. 
+
+  > [!IMPORTANT]
+  > Die Optionen für diese Einstellung werden von ihrer impliziten Bedeutung rückgängig gemacht. Bei umgekehrter Einstellung aktiviert der Wert *Ja* nicht Windows Hello und wird stattdessen als *nicht konfiguriert*behandelt. Wenn diese Einstellung auf *nicht konfiguriert*festgelegt ist, wird Windows Hello auf Geräten aktiviert, die diese Baseline erhalten.
+  >
+  > Die folgenden Beschreibungen wurden überarbeitet, um dieses Verhalten widerzuspiegeln. Die Umkehrung von Einstellungen wird in einem zukünftigen Update dieser Sicherheitsbaseline korrigiert.
+
+  - Wenn diese Option auf *nicht konfiguriert*festgelegt ist, wird Windows Hello aktiviert, und das Gerät stellt Windows Hello for Business bereit.
+  - Wenn diese Einstellung auf *Ja*festgelegt ist, wirkt sich die Baseline nicht auf die Richtlinien Einstellung des Geräts aus. Dies bedeutet Folgendes: Wenn Windows Hello for Business auf einem Gerät deaktiviert ist, bleibt es deaktiviert. Wenn Sie aktiviert ist, bleibt sie aktiviert.
+  <!-- expected behavior 
+  - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
+  - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 
+  -->
 
   Sie können Windows Hello for Business über diese Baseline nicht deaktivieren. Sie können Windows Hello for Business deaktivieren, wenn Sie die [Windows](windows-hello.md)-Registrierung konfigurieren, oder als Teil eines Geräte Konfigurations Profils für [Identity Protection](identity-protection-configure.md).  
 

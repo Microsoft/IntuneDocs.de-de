@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 73de0ac94ff02e43fe73ca6357f6008ba71e3b93
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/22/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74390818"
 ---
 # <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>Hinzufügen von E-Mail-Einstellungen für iOS-Geräte in Microsoft Intune

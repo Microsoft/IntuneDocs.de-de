@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506292"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>Registrieren Ihres Unternehmensgeräts in der Microsoft Intune-App
@@ -68,7 +68,7 @@ Führen Sie die folgenden Schritte durch, um Ihr Gerät einzurichten und zu regi
 
 7. Melden Sie sich auf dem Anmeldebildschirm mit Ihrem Geschäfts-, Schul- oder Unikonto an.   
 
-    ein. Geben Sie Ihre E-Mail-Adresse ein, und tippen Sie dann auf **Weiter**.      
+    a. Geben Sie Ihre E-Mail-Adresse ein, und tippen Sie dann auf **Weiter**.      
     b. Geben Sie Ihr Kennwort ein, und tippen Sie dann auf **Anmelden**.  
 
 8. Je nach Anforderungen Ihres Unternehmens werden Sie möglicherweise dazu aufgefordert, Ihre Einstellungen zu aktualisieren (z. B. die Bildschirmsperre oder Verschlüsselung). Wenn Ihnen diese Aufforderungen angezeigt werden, tippen Sie auf **SET** (ANPASSEN), und befolgen Sie die angezeigten Anweisungen.  

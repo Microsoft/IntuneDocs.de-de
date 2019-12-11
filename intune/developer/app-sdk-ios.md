@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 93b48fd5f6482669da923e4c15dcb09c7d328197
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503453"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK für iOS –Entwicklerhandbuch
@@ -144,7 +144,7 @@ Gehen Sie folgendermaßen vor, um das Intune App SDK zu aktivieren:
 
 4. Nachdem Sie die Freigabe des Schlüsselbunds aktiviert haben, folgen Sie den nachstehenden Schritten, um eine separate Zugriffsgruppe zu erstellen, in der das Intune App SDK seine Daten speichert. Sie können eine Zugriffsgruppe für den Schlüsselbund über die Benutzeroberfläche oder mithilfe der Berechtigungsdatei erstellen. Wenn Sie die Benutzeroberfläche zum Erstellen der Zugriffsgruppe für den Schlüsselbund verwenden, führen Sie unbedingt diese Schritte aus:
 
-     ein. Wenn in Ihrer mobilen App keine Keychain-Zugriffsgruppen definiert sind, fügen Sie die Paket-ID der App als **erste** Gruppe hinzu.
+     a. Wenn in Ihrer mobilen App keine Keychain-Zugriffsgruppen definiert sind, fügen Sie die Paket-ID der App als **erste** Gruppe hinzu.
     
     b. Fügen Sie die freigegebene Zugriffsgruppe für den Schlüsselbund `com.microsoft.intune.mam` Ihren vorhandenen Zugriffsgruppen hinzu. Diese Zugriffsgruppe wird vom Intune App SDK zum Speichern von Daten verwendet.
     
@@ -232,7 +232,7 @@ Msal: Entwickler müssen eine APP-Registrierung in Aad mit einem benutzerdefinie
 ### <a name="special-considerations-when-using-msal"></a>Besondere Überlegungen bei der Verwendung von msal 
 
 1. **Überprüfen Sie Ihre WebView** . es wird empfohlen, dass Anwendungen sfsafariviewcontroller, sfauthsession oder aswebauthsession nicht als WebView für alle von der APP initiierten, interaktiven msal-Authentifizierungs Vorgänge verwenden. Wenn Ihre APP aus irgendeinem Grund eine dieser Webansichten für alle interaktiven msal-Authentifizierungs Vorgänge verwenden muss, muss Sie auch `SafariViewControllerBlockedOverride` auf `true` unter dem `IntuneMAMSettings`-Wörterbuch in der Datei "Info. plist" der Anwendung festlegen. Warnung: Dadurch werden die safariviewcontroller-Hooks von InTune deaktiviert, um die Authentifizierungs Sitzung zu aktivieren. Dadurch werden Datenverluste an anderer Stelle in der APP gefährdet, wenn die Anwendung safariviewcontroller zum Anzeigen von Unternehmensdaten verwendet, sodass die Anwendung Unternehmensdaten in keinem dieser WebView-Typen anzeigen sollte.
-2. **Verknüpfen von Adal und msal** : Entwickler müssen sich entscheiden, ob InTune in diesem Szenario msal gegenüber Adal bevorzugen soll. Standardmäßig werden von InTune unterstützte Adal-Versionen zu unterstützten msal-Versionen bevorzugt, wenn beide zur Laufzeit verknüpft sind. InTune bevorzugt nur dann eine unterstützte msal-Version, wenn zum Zeitpunkt der ersten Authentifizierung von InTune `IntuneMAMUseMSALOnNextLaunch` in `NSUserDefaults` `true` werden. Wenn `IntuneMAMUseMSALOnNextLaunch` `false` oder nicht festgelegt ist, wird InTune auf das Standardverhalten zurückgreifen. Wie der Name bereits vermuten lässt, wird eine Änderung an `IntuneMAMUseMSALOnNextLaunch` beim nächsten Start wirksam.
+2. **Verknüpfen von Adal und msal** : Entwickler müssen sich entscheiden, ob InTune in diesem Szenario msal gegenüber Adal bevorzugen soll. Standardmäßig werden von InTune unterstützte Adal-Versionen zu unterstützten msal-Versionen bevorzugt, wenn beide zur Laufzeit verknüpft sind. InTune bevorzugt nur dann eine unterstützte msal-Version, wenn zum Zeitpunkt der ersten Authentifizierung von InTune `IntuneMAMUseMSALOnNextLaunch` in `NSUserDefaults``true` werden. Wenn `IntuneMAMUseMSALOnNextLaunch` `false` oder nicht festgelegt ist, wird InTune auf das Standardverhalten zurückgreifen. Wie der Name bereits vermuten lässt, wird eine Änderung an `IntuneMAMUseMSALOnNextLaunch` beim nächsten Start wirksam.
 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>Konfigurieren der Einstellungen für Intune App SDK

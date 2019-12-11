@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e45d51feb91e0e188971133185ac0f0f13e5b1f4
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059816"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781140"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>Hinzufügen von VPN-Einstellungen auf iOS-Geräten in Microsoft Intune
 
@@ -106,7 +106,7 @@ Die in der folgenden Liste gezeigten Einstellungen hängen vom ausgewählten VPN
 
 ## <a name="ikev2-settings"></a>IKEv2 Einstellungen
 
-Diese Einstellungen gelten, wenn Sie **Verbindungstyp**  > **IKEv2**auswählen.
+Diese Einstellungen gelten, wenn Sie **Verbindungstyp** > **IKEv2**auswählen.
 
 - **Remote**-ID: Geben Sie die Netzwerk-IP-Adresse, den voll qualifizierten Namen, den Benutzernamen oder den ASN1DN des IKEv2-Servers ein. Geben Sie beispielsweise `10.0.0.3` oder `vpn.contoso.com` ein. In der Regel geben Sie den gleichen Wert wie für den [**Verbindungs Namen**](#base-vpn-settings) ein (in diesem Artikel). Es hängt jedoch von den IKEv2-Servereinstellungen ab.
 
@@ -136,8 +136,8 @@ Diese Einstellungen gelten, wenn Sie **Verbindungstyp**  > **IKEv2**auswählen.
   - **Mittel** (Standard): sendet eine KeepAlive-Nachricht alle 10 Minuten.
   - **Hoch**: sendet eine KeepAlive-Nachricht alle 60 Sekunden.
 
-- **Mindestens TLS-Versions Bereich**: Geben Sie die minimale zu verwendende TLS-Version ein. Geben Sie `1.0`, `1.1` oder `1.2` ein. Wenn das Feld leer gelassen wird, wird der Standardwert `1.0` verwendet.
-- **Maximal TLS-Versions Bereich**: Geben Sie die maximale zu verwendende TLS-Version ein. Geben Sie `1.0`, `1.1` oder `1.2` ein. Wenn das Feld leer gelassen wird, wird der Standardwert `1.2` verwendet.
+- **Mindestens TLS-Versions Bereich**: Geben Sie die minimale zu verwendende TLS-Version ein. Geben Sie `1.0`, `1.1`oder `1.2`ein. Wenn das Feld leer gelassen wird, wird der Standardwert `1.0` verwendet.
+- **Maximal TLS-Versions Bereich**: Geben Sie die maximale zu verwendende TLS-Version ein. Geben Sie `1.0`, `1.1`oder `1.2`ein. Wenn das Feld leer gelassen wird, wird der Standardwert `1.2` verwendet.
 - **Perfektes vorwärts Geheimnis**: Wählen Sie aktivieren aus, um das perfekte vorwärts Geheimnis (PFS) zu **aktivieren** . PFS ist ein IP-Sicherheits Feature, das die Auswirkung verringert, wenn ein Sitzungsschlüssel kompromittiert wird. **Deaktivieren** (Standard) verwendet keine PFS.
 - **Zertifikat Sperr Überprüfung**: Wählen Sie **aktivieren** aus, um sicherzustellen, dass die Zertifikate nicht widerrufen werden, bevor die VPN-Verbindung erfolgreich ist Diese Überprüfung ist der beste Aufwand. Wenn für den VPN-Server ein Timeout auftritt, bevor Sie ermitteln, ob das Zertifikat gesperrt wird, wird der Zugriff gewährt. **Deaktivieren** (Standard) überprüft nicht auf gesperrte Zertifikate.
 
@@ -179,7 +179,7 @@ Diese Einstellungen gelten, wenn Sie **Verbindungstyp**  > **IKEv2**auswählen.
 
 ## <a name="automatic-vpn-settings"></a>Automatische VPN-Einstellungen
 
-- **Pro-App-VPN**: Ermöglicht ein VPN pro App. VPN-Verbindungen können automatisch ausgelöst werden, wenn bestimmte Apps geöffnet sind. Apps lassen sich auch diesem VPN-Profil zuweisen. Weitere Informationen finden Sie in den [Anweisungen zum Einrichten des Pro-App-VPN für iOS-Geräte](vpn-setting-configure-per-app.md).
+- **Pro-App-VPN**: Ermöglicht ein VPN pro App. VPN-Verbindungen können automatisch ausgelöst werden, wenn bestimmte Apps geöffnet sind. Apps lassen sich auch diesem VPN-Profil zuweisen. Pro-App-VPN wird auf IKEv2 nicht unterstützt. Weitere Informationen finden Sie in den [Anweisungen zum Einrichten des Pro-App-VPN für iOS-Geräte](vpn-setting-configure-per-app.md). 
   - **Anbietertyp**: Nur für „Pulse Secure“ und „Benutzerdefiniertes VPN“ verfügbar.
   - Wenn Sie **Pro-App-VPN**-Profile für iOS mit Pulse Secure oder einem benutzerdefinierten VPN verwenden, können Sie das Tunneln entweder auf App-Ebene (app-proxy) oder auf Paketebene (packet-tunnel) nutzen. Legen Sie für Tunneln auf App-Ebene den Wert **ProviderType** auf **app-proxy** oder für Tunneln auf Paketebene auf **packet-tunnel** fest. Wenn Sie sich nicht sicher sind, welcher Wert benutzt werden soll, lesen Sie dies in der Dokumentation Ihres VPN-Anbieters nach.
   - **Safari URLs, die dieses VPN auslösen**: Fügen Sie mindestens eine Website-URL hinzu. Wenn diese URLs mit dem Safari-Browser auf dem Gerät aufgerufen werden, wird die VPN-Verbindung automatisch aufgebaut.

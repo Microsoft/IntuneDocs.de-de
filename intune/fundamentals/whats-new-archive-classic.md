@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e88741609dc1a351d1971c907cd2e442cfd4b905
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72999521"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Neuerungen im klassischen Intune-Portal – vorherige Monate

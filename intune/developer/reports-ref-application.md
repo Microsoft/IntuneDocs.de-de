@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a4a8fa34673340e4adca7b64707d8c79d4808460
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74290951"
 ---
 # <a name="reference-for-application-entities"></a>Verweis für Anwendungsentitäten

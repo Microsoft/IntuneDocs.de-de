@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: d6af0718f2b926383bb943b6321b4d5839346ce7
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585243"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991981"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>Verwenden von Überwachungsprotokollen, um Ereignisse in Microsoft Intune zu verfolgen und zu überwachen
 
@@ -40,9 +40,14 @@ Benutzer mit den folgenden Berechtigungen können Überwachungsprotokolle überp
 
 Sie können für jede Intune-Workload Überwachungsprotokolle in der Überwachungsgruppe einsehen.
 
-1. Melden Sie sich bei [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) an.
-2. Wählen Sie die Workload aus, deren Überwachungsprotokolle Sie überprüfen möchten. Wählen Sie beispielsweise **Geräte** aus.
-3. Wählen Sie unter **Überwachung** die Option **Überwachungsprotokolle** aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie Mandanten **Verwaltung** > Überwachungs **Protokolle**aus.
+3. Um die Ergebnisse zu filtern, wählen Sie **Filtern** aus, und verfeinern Sie die Ergebnisse mithilfe der folgenden Optionen.
+    - **Kategorie**: z. b. **Konformität**, **Gerät**und **Rolle**.
+    - **Aktivität**: die hier aufgeführten Optionen werden durch die Option unter **Kategorie**eingeschränkt.
+    - **Datumsbereich**: Sie können Protokolle für den vorherigen Monat, die Woche oder den Tag auswählen.
+4. Wählen Sie **Anwenden** aus.
+4. Wählen Sie ein Element in der Liste aus, um die Aktivitäts Details anzuzeigen.
 
 ## <a name="route-logs-to-azure-monitor"></a>Routen von Protokollen an Azure Monitor
 
@@ -53,32 +58,10 @@ Sie können für jede Intune-Workload Überwachungsprotokolle in der Überwachun
 > [!NOTE]
 > Weitere Informationen zu dieser Funktion und zum Überprüfen der Voraussetzungen für deren Verwendung finden Sie unter [Senden von Protokolldaten an Storage, Event Hubs oder Log Analytics](review-logs-using-azure-monitor.md).
 
-## <a name="review-audit-events"></a>Überprüfen von Überwachungsereignissen
-
-![Auswählen von Überwachungsprotokollen in Intune, um Aktionen und das jeweilige Datum anzusehen, an dem ein Ereignis stattfand](./media/monitor-audit-logs/monitor-audit-logs.png "Überwachungsprotokolle")
-
-Ein Überwachungsprotokoll verfügt über eine Standardlistenansicht, in der die folgenden Elemente angezeigt werden:
-
-- Datum und Uhrzeit des Auftretens
-- Initiiert von (Akteur)
-- Anwendungsname
-- Aktivität
-- Ziel(e)
-- Category
-- Status
-
-Wenn Sie detailliertere Informationen zu einem Ereignis sehen möchten, wählen Sie ein Element in der Liste aus:
-
-![Abrufen detaillierterer Informationen aus Überwachungsprotokollen in Intune dazu, wer welche Aktionen durchgeführt hat](./media/monitor-audit-logs/monitor-audit-log-detail.png "|::ref2::|")
-
 > [!NOTE]
 > **Initiiert von (Akteur)** enthält Informationen dazu, wer die Aufgabe ausgeführt hat, und wo sie ausgeführt wurde. Wenn Sie beispielsweise im Azure-Portal in Intune die Aktivität ausführen, wird unter **Anwendung** immer **Microsoft Intune-Portalerweiterung** und unter **Anwendungs-ID** immer dieselbe GUID aufgeführt.
 >
 > Im Abschnitt **Ziel(e)** werden mehrere Ziele und die geänderten Eigenschaften aufgeführt.  
-
-## <a name="filter-audit-events"></a>Filtern von Überwachungsereignissen
-
-Jede Workload verfügt über ein Menüelement, das die Kategorie der mit diesem Bereich verknüpften Überwachungsereignisse vorfiltert. Mit einer separaten Filteroption können Sie zu verschiedenen Kategorien wechseln und Details zu Ereignisaktionen innerhalb dieser Kategorie anzeigen. Sie können nach dem UPN suchen (z. B. nach dem Benutzer, der die Aktion ausgeführt hat). Ein Datumsbereichsfilter bietet die Optionen „24 Stunden“, „7 Tage“ oder „30 Tage“ an. Standardmäßig werden die letzten 30 Tage der Überwachungsereignisse angezeigt.
 
 ## <a name="use-graph-api-to-retrieve-audit-events"></a>Abrufen von Überwachungsereignissen mithilfe der Graph-API
 

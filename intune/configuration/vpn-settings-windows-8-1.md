@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 12267ce4e29fe2d53d01aa8115cafbf2196d50ed
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72490855"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Konfigurieren von VPN-Einstellungen für Windows 8.1-Geräte in Microsoft Intune

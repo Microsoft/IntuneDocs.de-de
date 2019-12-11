@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503489"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Entwicklerhandbuch zum Microsoft Intune App SDK für Android
@@ -614,7 +614,7 @@ NotificationRestriction notificationRestriction =
     MAMPolicyManager.getPolicyForIdentity(notificationIdentity).getNotificationRestriction();
 ```
 
-Wenn die Einschränkung `BLOCKED` ist, darf die APP keine Benachrichtigungen für den Benutzer anzeigen, der dieser Richtlinie zugeordnet ist. Wenn `BLOCK_ORG_DATA`, muss die APP eine geänderte Benachrichtigung anzeigen, die keine Organisationsdaten enthält. Wenn `UNRESTRICTED`, sind alle Benachrichtigungen zulässig.
+Wenn die Einschränkung `BLOCKED`ist, darf die APP keine Benachrichtigungen für den Benutzer anzeigen, der dieser Richtlinie zugeordnet ist. Wenn `BLOCK_ORG_DATA`, muss die APP eine geänderte Benachrichtigung anzeigen, die keine Organisationsdaten enthält. Wenn `UNRESTRICTED`, sind alle Benachrichtigungen zulässig.
 
 Wenn `getNotificationRestriction` nicht aufgerufen wird, unternimmt das MAM-SDK den besten Aufwand, Benachrichtigungen für apps mit nur einer Identität automatisch einzuschränken. Wenn die automatische Blockierung aktiviert ist und `BLOCK_ORG_DATA` festgelegt ist, wird die Benachrichtigung überhaupt nicht angezeigt. Überprüfen Sie für eine präzisere Steuerung den Wert `getNotificationRestriction`, und ändern Sie die APP-Benachrichtigungen entsprechend.
 
@@ -673,7 +673,7 @@ public interface MAMNotificationReceiver {
 
 Folgende Benachrichtigungen werden an die App gesendet; für manche ist ggf. App-Beteiligung erforderlich:
 
-* **WIPE_USER_DATA**: Diese Benachrichtigung wird in einer `MAMUserNotification`-Klasse gesendet. Wenn diese Benachrichtigung empfangen wird, *muss* die APP alle Daten löschen, die mit der verwalteten Identität (aus `MAMUserNotification.getUserIdentity()`) verknüpft sind. Die Benachrichtigung kann aus unterschiedlichen Gründen auftreten, z. b. Wenn Ihre APP `unregisterAccountForMAM` aufruft, ein IT-Administrator eine Löschung initiiert oder wenn die vom Administrator benötigten Richtlinien für bedingten Zugriff nicht erfüllt werden. Wenn Ihre APP für diese Benachrichtigung nicht registriert wird, wird das Standardverhalten bei der Löschung ausgeführt. Beim Standardverhalten werden alle Dateien für eine APP mit einer einzelnen Identität oder alle Dateien gelöscht, die mit der verwalteten Identität für eine APP mit mehreren Identitäten gekennzeichnet sind. Diese Benachrichtigung wird nie im UI-Thread gesendet.
+* **WIPE_USER_DATA**: Diese Benachrichtigung wird in einer `MAMUserNotification`-Klasse gesendet. Wenn diese Benachrichtigung empfangen wird, *muss* die APP alle Daten löschen, die mit der verwalteten Identität (aus `MAMUserNotification.getUserIdentity()`) verknüpft sind. Die Benachrichtigung kann aus unterschiedlichen Gründen auftreten, z. b. Wenn Ihre APP `unregisterAccountForMAM`aufruft, ein IT-Administrator eine Löschung initiiert oder wenn die vom Administrator benötigten Richtlinien für bedingten Zugriff nicht erfüllt werden. Wenn Ihre APP für diese Benachrichtigung nicht registriert wird, wird das Standardverhalten bei der Löschung ausgeführt. Beim Standardverhalten werden alle Dateien für eine APP mit einer einzelnen Identität oder alle Dateien gelöscht, die mit der verwalteten Identität für eine APP mit mehreren Identitäten gekennzeichnet sind. Diese Benachrichtigung wird nie im UI-Thread gesendet.
 
 * **WIPE_USER_AUXILIARY_DATA**: Apps können sich für diese Benachrichtigung registrieren, wenn das Intune App SDK die standardmäßige selektive Zurücksetzung ausführen soll, aber bei der Zurücksetzung weitere Daten entfernt werden sollen. Diese Benachrichtigung ist nicht für Einzelidentitäts-Apps verfügbar und wird nur an Apps mit mehreren Identitäten gesendet. Diese Benachrichtigung wird nie im UI-Thread gesendet.
 
@@ -1859,8 +1859,8 @@ Befolgen Sie die folgenden Schritte,um die Standardregistrierung zu aktivieren:
 ### <a name="exported-services"></a>Exportierte Dienste
 Die im Intune App SDK enthaltene Datei „AndroidManifest.xml“ enthält **MAMNotificationReceiverService**. Dies muss ein exportierter Dienst sein, damit das Unternehmensportal Benachrichtigungen an eine verwaltete App senden kann. Der Dienst prüft den Aufrufer, um sicherzustellen, dass nur das Unternehmensportal Benachrichtigungen senden kann.
 
-### <a name="reflection-limitations"></a>Einschränkungen bei der Reflektion
-Einige der MAM-Basisklassen (z. B. `MAMActivity`, `MAMDocumentsProvider`) enthalten Methoden (basierend auf den ursprünglichen Android-Basisklassen), die Parameter- oder Rückgabetypen verwenden, die nur oberhalb bestimmter API-Ebenen vorhanden sind. Aus diesem Grund ist es möglicherweise nicht immer möglich, alle Methoden von App-Komponenten mit Hilfe von Reflektion aufzuzählen. Diese Einschränkung ist nicht auf MAM beschränkt. Sie gilt auch, wenn die App selbst diese Methoden aus den Android-Basisklassen implementiert.
+### <a name="reflection-limitations"></a>Einschränkungen bei der Reflexion
+Einige der MAM-Basisklassen (z. B. `MAMActivity`, `MAMDocumentsProvider`) enthalten Methoden (basierend auf den ursprünglichen Android-Basisklassen), die Parameter- oder Rückgabetypen verwenden, die nur oberhalb bestimmter API-Ebenen vorhanden sind. Aus diesem Grund ist es möglicherweise nicht immer möglich, alle Methoden von App-Komponenten mit Hilfe von Reflexion aufzuzählen. Diese Einschränkung ist nicht auf MAM beschränkt. Sie gilt auch, wenn die App selbst diese Methoden aus den Android-Basisklassen implementiert.
 
 ### <a name="robolectric"></a>Robolectric
 Das Testen des Verhaltens von MAM SDK unter Robolectric wird nicht unterstützt. Es sind Probleme bei der Ausführung des MAM SDK unter Robolectric bekannt, die aufgrund von Verhaltensweisen auftreten, die echte Geräte oder Emulatoren nicht genau imitieren.

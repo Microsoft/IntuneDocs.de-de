@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5c484b98466c1418016f4ebc6cc805e412d7891e
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73415788"
 ---
 # <a name="set-up-ios-or-ipados-device-with-company-portal-and-disa-purebred"></a>Einrichten eines IOS-oder ipados-Geräts mit Unternehmensportal und DISA purebred  
@@ -78,7 +78,7 @@ Beim Setup müssen Sie sich auch an einen purebred Agent oder einen repräsentat
 
     ![Beispiel eines Screenshots der Unternehmensportal Pushbenachrichtigung auf dem Startbildschirm des Geräts.](./media/action-required-in-app-intercede.png)  
 8. Auf dem Bildschirm **Mobile Smartcard-Zugriff einrichten** :  
-    ein. Tippen Sie auf den Link zu den Setup Anweisungen Ihrer Organisation. Wenn Ihre Organisation keine weiteren Anweisungen bereitstellt, werden Sie zu diesem Artikel weitergeleitet.  
+    a. Tippen Sie auf den Link zu den Setup Anweisungen Ihrer Organisation. Wenn Ihre Organisation keine weiteren Anweisungen bereitstellt, werden Sie zu diesem Artikel weitergeleitet.  
     b. Klicken Sie auf **Öffnen** , um die purebred-APP zu öffnen.  
 
     ![Screenshot der Unternehmensportal Einrichten des mobilen smartcardzugriffs (Bildschirm).](./media/smart-card-open-disa-purebred.png)  
@@ -99,7 +99,7 @@ Beim Setup müssen Sie sich auch an einen purebred Agent oder einen repräsentat
 
 20. Auf dem Bildschirm **Zertifikate importieren** rufen Sie die abgeleiteten Anmelde Informationen ab, die Sie von DISA purebred erhalten haben, und importieren Sie.  
 
-    ein. Tippen Sie auf **Weiter**.   
+    a. Tippen Sie auf **Weiter**.   
 
     ![Beispiel Bildschirm Abbildung des Bildschirms Unternehmensportal Festlegen der Zertifikate importieren.](./media/import-certificate-disa-purebred.png)  
     b. Wechseln Sie zu icloud Drive **Durchsuchen** > **Standorte** , und tippen Sie auf **weitere Speicherorte**.  

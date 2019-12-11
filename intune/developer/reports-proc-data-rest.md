@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bbe8cd6179875cc2bd985eb467ea173e9c914e2c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2a33841c5414fb1ba96fe34d6cbc766be4d9170b
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490393"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899329"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Abrufen von Daten aus der Intune-Data Warehouse-API mit einem REST-Client
 

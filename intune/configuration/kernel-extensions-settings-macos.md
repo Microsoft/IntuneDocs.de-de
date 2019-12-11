@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506699"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>macOS-Geräteeinstellungen zum Konfigurieren und Verwenden von Kernel Erweiterungen in InTune
@@ -63,7 +63,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
   > [!TIP]
   > Um die Bündel-ID einer Kernel Erweiterung (kext) auf einem macOS-Gerät zu erhalten, können Sie folgende Aktionen ausführen:
   >
-  > 1. Führen Sie im Terminal `kextstat | grep -v com.apple` aus, und notieren Sie sich die Ausgabe. Installieren Sie die gewünschte Software bzw. die gewünschte kext-Datei. Führen Sie `kextstat | grep -v com.apple` erneut aus, und suchen Sie nach Änderungen.
+  > 1. Führen Sie im Terminal `kextstat | grep -v com.apple`aus, und notieren Sie sich die Ausgabe. Installieren Sie die gewünschte Software bzw. die gewünschte kext-Datei. Führen Sie `kextstat | grep -v com.apple` erneut aus, und suchen Sie nach Änderungen.
   >
   >    Im Terminal werden `kextstat` alle Kernel Erweiterungen im Betriebssystem auflisten. 
   >

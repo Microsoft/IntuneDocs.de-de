@@ -15,10 +15,10 @@ ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
 ms.openlocfilehash: 0a5e90c6bc6b352f4d7a0fc0ae22c65110563461
-ms.sourcegitcommit: bd09decb754a832574d7f7375bad0186a22a15ab
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "68354409"
 ---
 # <a name="metadata-and-markdown-template"></a>Metadaten- und Markdown-Vorlage

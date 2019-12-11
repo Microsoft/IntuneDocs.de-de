@@ -6,7 +6,7 @@ keywords: Intune Data Warehouse
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 12/03/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 18815fb671e853bc0463fed750d40b80ccb285fb
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490480"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74784271"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>Erstellen eines Intune-Berichts aus dem OData-Feed mit Power BI
 
@@ -58,7 +58,7 @@ Installieren Sie die neueste Version von Power BI Desktop. Sie können Power BI 
 2. Öffnen Sie den Bereich **Intune Data Warehouse**, indem Sie den Data Warehouse-Link unter **Weitere Aufgaben** auf der rechten Seite des Blatts **Microsoft Intune – Übersicht** auswählen.
 3. Kopieren Sie die benutzerdefinierte Feed-URL. Beispiel: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. Öffnen Sie Power BI Desktop.
-5. Wählen Sie in der Menüleiste **Datei**  > **Daten**  > **odata-Feed**erhalten.
+5. Wählen Sie in der Menüleiste **Datei** > **Daten** > **odata-Feed**erhalten.
 6. Fügen Sie die benutzerdefinierte Feed-URL, die Sie aus dem vorherigen Schritt kopiert haben, in das URL-Feld im **odata-Feed** -Fenster ein.
 7. Wählen Sie **Basic** aus.
 
@@ -111,7 +111,7 @@ Sie können Ihrer Treemap einen Filter hinzufügen, damit Sie mithilfe Ihrer App
 3. Erweitern Sie die `ownerTypes` Tabelle, und wählen Sie das `ownerTypeName` Datenfeld aus.
 4. Ziehen Sie das Feld `onwerTypeName` Data aus der Tabelle `ownerTypes` in den Bereich **Filter** , und legen Sie es im Bereich **Filter auf dieser Seite** im Feld mit der Bezeichnung **Datenfelder hier hinzufügen**ab.  
 
-   In der `OwnerTypes` Tabelle gibt es ein Datenfeld mit dem Namen `OwnerTypeKey`that das Daten enthält, die davon unterliegen, ob ein Gerät im Besitz eines Unternehmens oder privat ist. Da Sie Anzeigenamen in diesem Filter anzeigen möchten, suchen Sie nach der Tabelle `ownerTypes`, und ziehen Sie den **ownerTypeName** auf den Slicer. Das folgende Beispiel zeigt, wie das Datenmodell Beziehungen zwischen den Tabellen unterstützt.
+   In der `OwnerTypes` Tabelle gibt es ein Datenfeld mit dem Namen `OwnerTypeKey`, das Daten enthält, die davon unterliegen, ob ein Gerät im Besitz des Unternehmens oder privat ist. Da Sie Anzeigenamen in diesem Filter anzeigen möchten, suchen Sie nach der Tabelle `ownerTypes`, und ziehen Sie den **ownerTypeName** auf den Slicer. Das folgende Beispiel zeigt, wie das Datenmodell Beziehungen zwischen den Tabellen unterstützt.
 
 ![Treemap mit Filter: Unterstützung von Beziehungen zwischen Tabellen](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

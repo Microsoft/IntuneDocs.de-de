@@ -17,10 +17,10 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 81d0ff389acd2c7014b830bb7c24e336088c4f96
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506884"
 ---
 # <a name="delivery-optimization-settings-for-intune"></a>Einstellungen für die Übermittlungsoptimierung für Intune

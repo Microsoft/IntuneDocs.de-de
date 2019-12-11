@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5eb532f830d20d9e4ff6c323fd3b7788bd3a11b2
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72505889"
 ---
 # <a name="get-help-and-support-in-company-portal-for-windows-10"></a>Hilfe und Support erhalten im Unternehmensportal für Windows 10

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 38e8998d1720434b0fe866fc5cd41a0b733fc49b
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059840"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Häufig auftretende Probleme und Lösungen für E-Mail-Profile in Microsoft Intune
@@ -61,9 +61,9 @@ Samsung KNOX identifiziert das Profil nicht anhand des Hostnamens. Es wird empfo
 
 Benutzer, deren E-Mail-Konten automatisch konfiguriert wurden, können keine Bilder von ihren Geräten senden. Dies ist der Fall, wenn die Option **E-Mail-Versand aus Anwendungen von Drittanbietern zulassen** nicht aktiviert ist.
 
-1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)an.
-2. Wählen Sie **Geräte** > **Konfigurations profile**aus.
-3. Wählen Sie Ihr e-Mail-Profil > **Eigenschaften**  > **Einstellungen**aus.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
+2. Wählen Sie **Geräte** > **Konfigurationsprofile** aus.
+3. Wählen Sie Ihr e-Mail-Profil > **Eigenschaften** > **Einstellungen**aus.
 4. Legen Sie die Einstellung **e-Mail-Versand von Anwendungen von Drittanbietern zulassen** auf **aktivieren**fest.
 
 ## <a name="next-steps"></a>Nächste Schritte

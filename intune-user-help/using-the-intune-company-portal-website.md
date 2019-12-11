@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 50eb3495362d4b88071707e25a5faa39b76b6c3b
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810365"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Verwenden der Intune-Unternehmensportal-Website

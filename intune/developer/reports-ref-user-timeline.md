@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b94be3e1454c60f16ff40e73ce37f8c4e349126d
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72813353"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Darstellung der Benutzerlebensdauer im Microsoft Intune-Data Warehouse

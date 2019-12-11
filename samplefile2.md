@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 5cd0183234a1b5f1e3c9a301e8ec1c8f4ca1e333
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "61509550"
 ---
 # <a name="required-metadata"></a>erforderliche Metadaten
@@ -17,7 +17,7 @@ Titel: [ARTICLE TITLE | SERVICE NAME] Beschreibung: Stichwörter: Autor: [GITHUB
 #<a name="msdevlang"></a>ms.devlang:
 #<a name="msreviewer-alias"></a>ms.reviewer: [ALIAS]
 #<a name="mssuite-ems"></a>ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
+#<a name="mstgt_pltfrm"></a>ms.tgt_pltfrm:
 #<a name="mscustom"></a>ms.custom:
 
 ---

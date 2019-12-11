@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 80da0e6952c5aaab6fa8146b2d91d32259966d5d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059344"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74691719"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Geräteeinstellungen bei Windows 10 (und höher) zur Ausführung als Kiosk in Intune
 
@@ -83,16 +83,17 @@ Hiermit wird nur eine App auf dem Gerät ausgeführt.
 
     - **Browser nach Leerlaufzeit aktualisieren**: Geben Sie die Leerlaufzeit ein (1–1.440 Minuten), nach der der Kioskbrowser im aktualisierten Zustand neu gestartet wird. Die Leerlaufzeit ist die Anzahl von Minuten seit der letzten Benutzerinteraktion. Standardmäßig ist der Wert leer, d.h., es gibt kein Leerlauftimeout.
 
-    - **Zugelassene Websites**: Verwenden Sie diese Einstellung, um das Öffnen bestimmter Websites zu ermöglichen. Mithilfe dieser Funktion können Sie also auf dem Gerät den Zugriff auf bestimmte Websites einschränken oder verhindern. Sie können z.B. gewähren, dass alle Websites unter `http://contoso.com*` geöffnet werden. Standardmäßig sind alle Websites zulässig.
+    - **Zugelassene Websites**: Verwenden Sie diese Einstellung, um das Öffnen bestimmter Websites zu ermöglichen. Mithilfe dieser Funktion können Sie also auf dem Gerät den Zugriff auf bestimmte Websites einschränken oder verhindern. Sie können z.B. gewähren, dass alle Websites unter `http://contoso.com` geöffnet werden. Standardmäßig sind alle Websites zulässig.
 
-      Um den Zugriff auf bestimmte Websites zu erlauben, laden Sie eine Datei mit einer in Zeilen unterteilten Liste der zulässigen Websites hoch. Wenn Sie keine Datei hinzufügen, können alle Websites aufgerufen werden. Intune unterstützt „`*`“ (Sternchen) als Platzhalter.
+      Um den Zugriff auf bestimmte Websites zu erlauben, laden Sie eine Datei mit einer in Zeilen unterteilten Liste der zulässigen Websites hoch. Wenn Sie keine Datei hinzufügen, können alle Websites aufgerufen werden. Standardmäßig unterstützt InTune Platzhalter. Wenn Sie also die Domäne eingeben, z. b. `sharepoint.com`, dürfen Unterdomänen zulassen automatisch zugelassen werden, z. b. `contoso.sharepoint.com`, `my.sharepoint.com`usw.
 
       Die Beispieldatei sollte der folgenden Beispielliste ähnlich sein:
 
       `http://bing.com`  
       `https://bing.com`  
-      `http://contoso.com/*`  
-      `https://contoso.com/*`
+      `http://contoso.com`  
+      `https://contoso.com`  
+      `office.com`
 
     > [!NOTE]
     > Bei Windows 10-Kiosken, die mit dem Microsoft Kiosk-Browser aktiviert sind, muss eine Offline Lizenz aus der Microsoft Store für Unternehmen verwendet werden. Diese Anforderung liegt daran, dass bei der automatischen Anmeldung ein lokales Benutzerkonto ohne Azure Active Directory (AD)-Anmelde Informationen verwendet wird. Online Lizenzen können daher nicht ausgewertet werden. Weitere Informationen finden Sie unter [Verteilen von Offline-Apps](https://docs.microsoft.com/microsoft-store/distribute-offline-apps).

@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0d673650a26f3917fa32babba42e5e2054c87e59
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74060027"
 ---
 # <a name="mdm-security-baseline-settings-for-intune"></a>MDM-Einstellungen für Sicherheitsbaselines in Intune  

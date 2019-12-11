@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 12/04/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa6dacf8b6498175e9e7658689bee3a527e684cc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: bce5d4377a1f5a591c71ff704937afeaccabf429
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490719"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899359"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Nur-Anwendung-Authentifizierung von Intune Data Warehouse
 

@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bfafa4f35d0b8f1255d66a70c3f7cd0acf01a889
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/01/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73415762"
 ---
 # <a name="set-up-ios-or-ipados-device-with-company-portal-and-entrust-datacard"></a>Einrichten eines IOS-oder ipados-Geräts mit Unternehmensportal und Entrust Datacard
@@ -79,7 +79,7 @@ Abgeleitete Anmeldeinformationen sind eine Implementierung der NIST-Richtlinien 
     ![Beispiel eines Screenshots der Unternehmensportal Pushbenachrichtigung auf dem Startbildschirm des Geräts.](./media/action-required-in-app-intercede.png)  
 
 8. Auf dem Bildschirm **Mobile Smartcard-Zugriff einrichten** :   
-    ein. Tippen Sie auf den Link zu den Setup Anweisungen Ihrer Organisation. Wenn Ihre Organisation keine weiteren Anweisungen bereitstellt, werden Sie zu diesem Artikel weitergeleitet.  
+    a. Tippen Sie auf den Link zu den Setup Anweisungen Ihrer Organisation. Wenn Ihre Organisation keine weiteren Anweisungen bereitstellt, werden Sie zu diesem Artikel weitergeleitet.  
     b. Tippen Sie auf **starten**.  
 
     ![Screenshot der Unternehmensportal Einrichten des mobilen smartcardzugriffs (Bildschirm).](./media/smart-card-info-intercede.png)
@@ -91,7 +91,7 @@ Abgeleitete Anmeldeinformationen sind eine Implementierung der NIST-Richtlinien 
 13. Sie werden aufgefordert, aus einer Liste von Aktionen auszuwählen. Wählen Sie das Zertifikat aus, das Sie für abgeleitete Mobile smartcredential registrieren können. Mit dem Link oder der Schaltfläche können **Sie sich für abgeleitete Mobile Smartcard** -Anmelde Informationen registrieren.  
 14. Wählen Sie aus, ob Sie die Anwendung mit intelligenten Anmelde Informationen erfolgreich heruntergeladen und installiert haben. Fahren Sie dann mit dem nächsten Bildschirm fort.   
 15. Geben Sie Informationen zu Ihren abgeleiteten Smartcard-Anmelde Informationen ein.  
-    ein. Geben Sie für den Identitäts Namen einen beliebigen Namen ein, z. b. von *Entrust abgeleitetes*Zeichen.  
+    a. Geben Sie für den Identitäts Namen einen beliebigen Namen ein, z. b. von *Entrust abgeleitetes*Zeichen.  
     b. Wählen Sie im Dropdown Menü die Option **Entrust identitygudard Mobile Smart Credential**aus.  
     c. Fahren Sie mit dem nächsten Bildschirm fort. Es wird ein QR-Code mit einem numerischen Kennwort angezeigt.  
 

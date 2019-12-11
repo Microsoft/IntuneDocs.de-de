@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3b83b764af415349b287df2a09f9b4c355734c28
-ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72810234"
 ---
 # <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>iOS-Einstellungen, um Geräte mit Intune als konform oder nicht konform zu kennzeichnen

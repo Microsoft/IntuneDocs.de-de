@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 54c38bac5ddf9eee1dd5f1dc6d544de3fa2395ab
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506903"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Verwenden von benutzerdefinierten Einstellungen für Windows Holographic for Business-Geräte in Intune

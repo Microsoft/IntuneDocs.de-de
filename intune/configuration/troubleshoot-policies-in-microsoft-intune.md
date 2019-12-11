@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a8768022872d32116add0ed4ea4caf1f8fcb800f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059268"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Richtlinien und Profile zur Problembehandlung in Intune
@@ -103,7 +103,7 @@ In diesem Artikel werden häufig verwendete Methoden zur Problembehandlung aufge
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>Ermitteln, ob ein Profil korrekt angewendet wurde
 
-1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) an.
 2. Wählen Sie **Geräte** > **Alle Geräte** aus, wählen Sie anschließend das Gerät aus, und klicken Sie auf **Gerätekonfiguration**. 
 
     Für jedes Gerät werden die Profile aufgelistet. Jedes Profil verfügt über einen **Status**. Der Status setzt sich aus den zugewiesenen Profilen (einschließlich Einschränkungen und Anforderungen von Hardware und Betriebssystem) zusammen. Mögliche Status sind:

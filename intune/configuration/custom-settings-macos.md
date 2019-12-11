@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5c24c120b033a4db0162e985ef185932dd931eda
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506922"
 ---
 # <a name="use-custom-settings-for-macos-devices-in-microsoft-intune"></a>Verwenden benutzerdefinierter Einstellungen für macOS-Geräte in Microsoft Intune
@@ -59,7 +59,7 @@ Dieser Artikel enthält eine Anleitung zur Verwendung von Apple Configurator und
 - **Name des benutzerdefinierten Konfigurationsprofils:** Geben Sie einen Namen für die Richtlinie ein. Dieser Name wird auf dem Gerät und im Intune-Status angezeigt.
 - **Konfigurationsprofildatei:** Navigieren Sie zum mit Apple Configurator oder dem Apple-Profil-Manager erstellten Konfigurationsprofil. Die importierte Datei wird im Bereich **Dateiinhalt** angezeigt.
 
-  Sie können den `.mobileconfig` Dateien auch Geräte Token hinzufügen. Geräte Token werden verwendet, um gerätespezifische Informationen hinzuzufügen. Geben Sie zum Beispiel zur Anzeige der Seriennummer `{{serialnumber}}` ein. Auf dem Gerät wird der Text ähnlich wie `123456789ABC` angezeigt, der für jedes Gerät eindeutig ist. Achten Sie darauf, bei der Eingabe von Variablen geschweifte Klammern `{{ }}` zu verwenden. [App-Konfigurationstoken](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) umfassen eine Reihe von Variablen, die Sie nutzen können. Zudem können Sie `deviceid` oder einen anderen gerätespezifischen Wert verwenden.
+  Sie können den `.mobileconfig` Dateien auch Geräte Token hinzufügen. Geräte Token werden verwendet, um gerätespezifische Informationen hinzuzufügen. Geben Sie zum Beispiel zur Anzeige der Seriennummer `{{serialnumber}}` ein. Auf dem Gerät wird der Text ähnlich wie `123456789ABC`angezeigt, der für jedes Gerät eindeutig ist. Achten Sie darauf, bei der Eingabe von Variablen geschweifte Klammern `{{ }}` zu verwenden. [App-Konfigurationstoken](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) umfassen eine Reihe von Variablen, die Sie nutzen können. Zudem können Sie `deviceid` oder einen anderen gerätespezifischen Wert verwenden.
 
   > [!NOTE]
   > Variablen werden nicht in der Benutzeroberfläche überprüft und beachten die Groß-/Kleinschreibung. Daher gibt es möglicherweise Profile, die mit fehlerhaften Eingaben gespeichert wurden. Wenn Sie beispielsweise `{{DeviceID}}` anstelle von `{{deviceid}}` eingeben, wird die Zeichenfolge anstelle der eindeutigen Geräte-ID angezeigt. Stellen Sie sicher, dass Sie die richtigen Informationen eingeben.

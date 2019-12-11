@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c73ed7973fa15d796aee1e33efc37191777c222a
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058055"
 ---
 # <a name="software-update-agent-error-codes-and-descriptions-in-microsoft-intune"></a>Fehlercodes und -beschreibungen für den Softwareupdate-Agent in Microsoft Intune

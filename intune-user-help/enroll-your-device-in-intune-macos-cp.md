@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: ba285fc9de58b3fb739a16722e0e05e36e840e87
-ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74098155"
 ---
 # <a name="enroll-your-macos-device-using-the-company-portal-app"></a>Registrieren Ihres macOS-Geräts mit der Unternehmensportal-App  

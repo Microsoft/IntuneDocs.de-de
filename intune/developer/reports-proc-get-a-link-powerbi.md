@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8d7a5f67dfd8f7256559cb54d873ed48205ad751
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72490424"
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Verbinden mit dem Data Warehouse mit Power BI
@@ -80,7 +80,7 @@ Wenn der Client bei Azure AD authentifiziert ist, verbindet sich die OData-URL m
 3. Rufen Sie die benutzerdefinierte Feed-URL auf dem Blatt „Berichterstellung“ ab, z. B:<br>
     `https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4. Öffnen Sie **Power BI Desktop**.
-5. Wählen Sie **Datei**aus,  > **Daten erhalten**. Wählen Sie **OData-Feed** aus.
+5. Wählen Sie **Datei** aus, > **Daten erhalten**. Wählen Sie **OData-Feed** aus.
 6. Wählen Sie **Standard**.
 7. Geben Sie die **OData-URL** in das URL-Feld ein, oder fügen Sie sie ein.
 8. Wählen Sie **OK** aus.

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508861"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>Beheben von häufigen Fehlern für den InTune Exchange Connector
@@ -77,7 +77,7 @@ Wenn Sie versuchen, die Microsoft InTune Exchange Connector zu konfigurieren, er
    Verify that you are connected to the Internet, check the Microsoft Intune Service Status, and try to connect again.  
    Error code: 0x00000006  
 ```  
-Dieser Fehler kann auftreten, wenn ein Proxy Server verwendet wird, um eine Verbindung mit dem Internet herzustellen, und den Datenverkehr an den InTune-Dienst blockiert. Um zu ermitteln, ob ein Proxy verwendet wird, wechseln Sie zu **Systemsteuerung**  > **Internet Optionen**, wählen Sie die Registerkarte **Verbindung** aus, und klicken Sie dann auf **LAN-Einstellungen**.
+Dieser Fehler kann auftreten, wenn ein Proxy Server verwendet wird, um eine Verbindung mit dem Internet herzustellen, und den Datenverkehr an den InTune-Dienst blockiert. Um zu ermitteln, ob ein Proxy verwendet wird, wechseln Sie zu **Systemsteuerung** > **Internet Optionen**, wählen Sie die Registerkarte **Verbindung** aus, und klicken Sie dann auf **LAN-Einstellungen**.
 
 **Lösung**:  
 
@@ -123,20 +123,20 @@ Ein IOS-Gerät kann nicht bei InTune registriert werden und generiert eine der f
    Domain and account: .\WIEC_USER
    This service account does not have the required user right "Log on as a service."  
 ```
-Dieses Problem kann auftreten, wenn das **WIEC_User** -Konto nicht über das Benutzerrecht " **Anmelden als Dienst** " in der lokalen Richtlinie verfügt.
+Dieses Problem kann auftreten, wenn das **WIEC_User** Konto nicht über das Benutzerrecht " **Anmelden als Dienst** " in der lokalen Richtlinie verfügt.
 
 **Lösung**:  
 Weisen Sie auf dem Computer, auf dem InTune Exchange Connector ausgeführt wird, das Benutzerrecht **Anmelden als Dienst** dem **WIEC_User** -Dienst Konto zu. Wenn es sich bei dem Computer um einen Knoten in einem Cluster handelt, stellen Sie sicher, dass Sie dem Cluster Dienst Konto auf allen Knoten im Cluster das Benutzerrecht *Anmelden als Dienst* zuweisen.  
 
-Führen Sie die folgenden Schritte aus, um das Benutzerrecht " **Anmelden als Dienst** " dem **WIEC_User** -Dienst Konto auf dem Computer zuzuweisen:
+Gehen Sie folgendermaßen vor, um das Benutzerrecht " **Anmelden als Dienst** " dem **WIEC_User** -Dienst Konto auf dem Computer zuzuweisen:
 
 1. Melden Sie sich beim Computer als Administrator oder als Mitglied der Gruppe "Administratoren" an.
 2. Führen Sie **secpol. msc** aus, um die lokale Sicherheitsrichtlinie zu öffnen.
-3. Wechseln Sie zu **Sicherheitseinstellungen**  > **lokale Richtlinien**, und wählen Sie dann zuweisen von **Benutzerrechten**aus.
+3. Wechseln Sie zu **Sicherheitseinstellungen** > **lokale Richtlinien**, und wählen Sie dann zuweisen von **Benutzerrechten**aus.
 4. Doppelklicken Sie auf den rechten Bereich **Anmelden als Dienst**.
-5. Wählen Sie **Benutzer oder Gruppe hinzufügen**, **WIEC_USER** der Richtlinie hinzufügen aus, und klicken Sie dann zweimal auf **OK** .
+5. Wählen Sie **Benutzer oder Gruppe hinzufügen**aus, fügen Sie der Richtlinie **WIEC_USER** hinzu, und wählen Sie dann zweimal **OK** aus.
 
-Wenn das Benutzerrecht " **Anmelden als Dienst** " **WIEC_User** zugewiesen wurde, aber später entfernt wurde, wenden Sie sich an den Domänen Administrator, um zu bestimmen, ob er durch eine Gruppenrichtlinie Einstellung überschrieben wird.  
+Wenn das Benutzerrecht " **Anmelden als Dienst** " **WIEC_User** zugewiesen wurde, aber später entfernt wurde, wenden Sie sich an den Domänen Administrator, um zu bestimmen, ob er von einer Gruppenrichtlinie Einstellung überschrieben wird.  
 
 ## <a name="next-steps"></a>Nächste Schritte  
 
