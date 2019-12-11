@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b1264f5113ded280ed9d5cb9b9d4ece8e0187fe7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502868"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Schnellstart: Testen Sie Microsoft Intune kostenlos
@@ -48,7 +48,7 @@ Sie können Intune 30 Tage lang kostenlos testen. Wenn Sie bereits über ein Arb
 
     ![Screenshot der Website für die Registrierung für das Microsoft Intune-Testkonto](./media/free-trial-sign-up/account-sign-up-site-full-browser.png)
 
-    Wenn sich der Großteil Ihres IT-Betriebs und Ihrer Benutzer in einem anderen Gebietsschema als Sie befindet, sollten Sie dieses Gebietsschema unter **Land oder Region** auswählen. Azure bietet Ihnen aufgrund Ihrer regionalen Informationen zur die richtigen Dienste an. Diese Einstellung kann später nicht mehr geändert werden.
+    Wenn sich der Großteil Ihres IT-Betriebs und Ihrer Benutzer in einem anderen Gebietsschema als Sie befindet, sollten Sie dieses Gebietsschema unter **Land oder Region** auswählen. Azure bietet Ihnen aufgrund Ihrer regionalen Informationen die richtigen Dienste an. Diese Einstellung kann später nicht mehr geändert werden.
 
 2. Erstellen Sie ein Konto mit dem Namen Ihres Unternehmens gefolgt von **.onmicrosoft.com**. 
 

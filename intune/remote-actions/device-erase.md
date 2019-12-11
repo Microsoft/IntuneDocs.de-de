@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 428b4040eb0d91b7fe32fcf71842ce5bd1910013
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 6bc2ba86ddb36355bca8328b9c205047abf1b4ff
+ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713217"
+ms.lasthandoff: 12/07/2019
+ms.locfileid: "74907269"
 ---
 # <a name="erase-all-data-from-a-macos-device"></a>Löschen aller Daten von einem macOS-Gerät
 
@@ -32,7 +32,6 @@ ms.locfileid: "73713217"
 Sie können alle Daten einschließlich des Betriebssystems von einem macOS-Gerät löschen. Das Gerät wird auch aus der Intune-Verwaltung entfernt. Der Endbenutzer erhält keine Warnung.
 
 1. Wählen Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431) die Option **Geräte** > **Alle Geräte**, und wählen Sie das Gerät aus, das Sie löschen möchten.
-![Screenshot](./media/device-erase/choosedevice.png)
 2. Klicken Sie auf **Weitere** > **Löschen**, und geben Sie eine sechsstellige Nummer für die **PIN für Wiederherstellung** ein. Dies ist die Pin, die Sie dem Benutzer zur Verfügung stellen müssen, damit er das Betriebssystem auf seinem Gerät installieren kann. Achten Sie darauf, dass Sie sich diese Pin notieren, da sie nach der Löschaktion nicht sichtbar ist.
 ![Screenshot](./media/device-erase/providepin.png)
 3. Klicken Sie auf **OK**, um das Gerät zu löschen.

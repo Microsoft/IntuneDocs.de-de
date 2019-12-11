@@ -16,10 +16,10 @@ ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 32e67ac961f2831a881bc160e19cefdb75723ff0
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72681257"
 ---
 # <a name="integrate-pradeo-mobile-threat-defense-with-intune"></a>Integrieren von Pradeo Mobile Threat Defense in Intune

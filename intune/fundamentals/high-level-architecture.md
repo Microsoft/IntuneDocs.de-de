@@ -15,10 +15,10 @@ ms.assetid: 3b992f64-fe34-4270-9730-bc6c65c308ed
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8ee57bebad72d61b9bbf7ea66bbb9a597cd548c9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502811"
 ---
 # <a name="high-level-architecture-for-microsoft-intune"></a>Allgemeine Architektur von Microsoft Intune
