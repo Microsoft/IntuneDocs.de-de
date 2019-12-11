@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291097"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691770"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>Verwalten von Windows 10-Softwareupdates in Intune
 
@@ -214,9 +214,7 @@ Wenn ein Gerät eine Richtlinie für Windows 10-Featureupdates erhält, geschieh
   - Der **Rückstellungszeitraum für Funktionsupdates (Tage)** muss auf **0** festgelegt werden.
   - Featureupdates für den Updatering müssen *ausgeführt werden*. Sie dürfen nicht angehalten werden.
 
-- Die *Windows 10-Featureupdates*-Richtlinie wird nicht von Autopilot unterstützt. Intune wird die Richtlinie für folgende Geräte nicht bereitstellen:
-  - Geräte, die von Autopilot bereitgestellt werden.
-  - Geräte, die zuvor mit Autopilot bereitgestellt wurden.
+- Richtlinien für Windows 10-Featureupdates können bei Ausführung über die Windows-Willkommensseite nicht angewendet werden und gelten erst bei der ersten Windows Update-Überprüfung nach der Bereitstellung eines Geräts (in der Regel ein Tag). Darüber hinaus erhalten Geräte, die mit Autopilot bereitgestellt wurden, diese Richtlinie nicht.
 
   Diese Einschränkung wird untersucht, um festzustellen, ob sie in Zukunft unterstützt werden kann.
 

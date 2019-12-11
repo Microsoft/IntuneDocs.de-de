@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e81b8dc4938ea080018efae97093bb5e70dbcde8
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: a3a470c9a92f7792af2b371acf873807ad344afb
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548015"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781106"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Einrichten einer Seite zum Registrierungsstatus
  
@@ -200,7 +200,7 @@ Nachstehend sind bekannte Probleme aufgeführt.
 - Die Konfiguration der Microsoft Defender-Anwendungssteuerung bewirkt eine Aufforderung zum Neustart im Autopilot-Modus. Das Konfigurieren der Microsoft Defender-Anwendung (mit AppLocker als Kryptografiedienstanbieter) erfordert einen Neustart. Wenn diese Richtlinie konfiguriert ist, kann dies dazu führen, dass ein Gerät im Autopilot-Modus neu gestartet wird. Derzeit gibt es keine Möglichkeit, den Neustart zu unterdrücken oder zu verschieben.
 - Wenn die DeviceLock-Richtlinie (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) als Teil eines ESP-Profils aktiviert ist, kann die Windows-Willkommensseite oder automatische Anmeldung am Benutzerdesktop aus zwei Gründen unerwartet fehlschlagen.
   - Wenn das Gerät nicht neu gestartet wurde, bevor die ESP-Phase „Geräteeinrichtung“ beendet wurde, wird der Benutzer möglicherweise aufgefordert, seine Azure AD-Anmeldeinformationen einzugeben. Diese Eingabeaufforderung erfolgt anstelle einer erfolgreichen automatischen Anmeldung, bei der der Benutzer die Animation zur ersten Anmeldung unter Windows sieht.
-  - Die automatische Anmeldung schlägt fehl, wenn das Gerät neu gestartet wird, nachdem der Benutzer seine Azure AD-Anmeldeinformationen eingegeben hat, aber bevor er die ESP-Phase „Geräteeinrichtung“ beendet hat. Dieser Fehler tritt auf, weil die ESP-Phase „Geräteeinrichtung“ nie abgeschlossen wurde. Die Problemumgehung besteht im Zurücksetzen des Geräts.
+  - Bei der automatischen Anmeldung tritt ein Fehler auf, wenn das Gerät neu gestartet wird, nachdem der Benutzer seine Azure AD-Anmeldeinformationen eingegeben, aber die ESP-Phase „Geräteeinrichtung“ noch nicht beendet hat. Dieser Fehler tritt auf, weil die ESP-Phase „Geräteeinrichtung“ nie abgeschlossen wurde. Die Problemumgehung besteht im Zurücksetzen des Geräts.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Nachdem Sie die Windows-Registrierungsseiten eingerichtet haben, sollten Sie sich informieren, wie Sie Windows-Geräte verwalten. Weitere Informationen finden Sie unter [Was ist die Microsoft Intune-Geräteverwaltung?](../remote-actions/device-management.md).
