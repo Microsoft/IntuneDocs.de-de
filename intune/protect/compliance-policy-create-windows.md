@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3c6c029a5c5864eda46a68832b2f9f655553846
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889535"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946657"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Einstellungen für Windows 10 und höher, um Geräte mit Intune als konform oder nicht konform zu kennzeichnen
 
@@ -161,6 +161,7 @@ Gilt nur für gemeinsam verwaltete Geräte mit Windows 10 und höher. Ausschlie�
 ### <a name="encryption"></a>Verschlüsselung
 
 - **Verschlüsselung des Datenspeichers auf einem Gerät**:  
+  Diese Einstellung gilt für alle Laufwerke auf einem Gerät.
   - **Nicht konfiguriert** (*Standardeinstellung*)
   - **Erforderlich**: Verwenden Sie diese Einstellung, um die Datenspeicher auf Ihren Geräten zu verschlüsseln.
 
@@ -198,7 +199,7 @@ Gilt nur für gemeinsam verwaltete Geräte mit Windows 10 und höher. Ausschlie�
 
 - **Microsoft Defender-Antischadsoftware**:  
   - **Nicht konfiguriert** (*Standard*): InTune steuert weder den Dienst noch die vorhandenen Einstellungen.
-  - **Erforderlich** : Aktivieren Sie den Microsoft Defender-antischadsoftwaredienst, und verhindern Sie, dass Benutzer ihn ausschalten. 
+  - **Erforderlich** : Aktivieren Sie den Microsoft Defender-antischadsoftwaredienst, und verhindern Sie, dass Benutzer ihn ausschalten.
 
 - **Microsoft Defender Antimalware-Mindestversion**:  
   Geben Sie die zulässige Mindestversion des Microsoft Defender Anti-Malware-Diensts ein. Geben Sie beispielsweise `4.11.0.0` ein. Wenn das Feld leer gelassen wird, kann eine beliebige Version des Microsoft Defender Anti-Malware-Diensts verwendet werden.  
@@ -206,10 +207,12 @@ Gilt nur für gemeinsam verwaltete Geräte mit Windows 10 und höher. Ausschlie�
   *Standardmäßig ist keine Version konfiguriert*.
 
 - **Microsoft Defender Antimalware-Sicherheits Intelligenz auf dem neuesten Stand**:  
-  Steuert die Windows-Sicherheits Viren und-Schutz Updates auf den Geräten.  
+  Steuert die Windows-Sicherheits Viren und-Schutz Updates auf den Geräten.
   - **Nicht konfiguriert** (*Standardeinstellung*): InTune erzwingt keine Anforderungen.
-  - **Erforderlich** : erzwingen Sie, dass Microsoft Defender Security Intelligence auf dem neuesten Stand ist. 
+  - **Erforderlich** : erzwingen Sie, dass Microsoft Defender Security Intelligence auf dem neuesten Stand ist.
 
+  [Defender/Health/signatureouthf-CSP](https://docs.microsoft.com/windows/client-management/mdm/defender-csp)
+  
   Weitere Informationen finden Sie unter [Security Intelligence Updates für Microsoft Defender Antivirus und andere Antischadsoftware von Microsoft](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
 - **Echtzeitschutz**:  
