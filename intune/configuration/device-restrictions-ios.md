@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 5f9a01adaa6f5ab59819c2924172c30a437ebd8c
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465651"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992921"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>iOS- und iPadOS-Geräteeinstellungen zum Zulassen oder Einschränken von Funktionen mit Intune
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 In diesem Artikel werden die verschiedenen Einstellungen aufgeführt und beschrieben, die Sie auf iOS- und iPadOS-Geräten steuern können. Verwenden Sie als Bestandteil Ihrer Lösung für die mobile Geräteverwaltung (Mobile Device Management, MDM) diese Einstellungen, um Features zuzulassen oder zu deaktivieren, Kennwortregeln festzulegen, bestimmte Apps zu erlauben oder einzuschränken usw.
 
@@ -52,7 +50,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>Einstellungen gelten für: Geräteregistrierung, automatisierte Geräteregistrierung (überwacht)
 
 - **Nicht vertrauenswürdige TLS-Zertifikate:** Wählen Sie **Blockieren** aus, um zu verhindern, dass nicht vertrauenswürdige TLS-Zertifikate (Transport Layer Security) auf das Gerät gelangen. Die Standardeinstellung **Nicht konfiguriert** lässt TLS-Zertifikate zu.
-- **Drahtlose PKI-Updates zulassen**: Mit **Zulassen** können Ihre Benutzer Softwareupdates empfangen, ohne eine Verbindung ihrer Geräte mit einem Computer herzustellen.
+- VPN **-PKI-Aktualisierungen blockieren**: **blockieren** verhindert, dass Ihre Benutzer Software Updates erhalten, ohne Ihre Geräte mit einem Computer zu verbinden. **Nicht konfiguriert** (Standardeinstellung) aktualisiert diese Einstellung nicht auf dem Gerät.
 - **Anzeigennachverfolgung begrenzen**: Wählen Sie **Begrenzen** aus, um die Geräteanzeigen-ID zu deaktivieren. Die Standardeinstellung **Nicht konfiguriert** behält die Aktivierung bei.
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>Einstellungen gelten für: automatisierte Geräteregistrierung (überwacht)
@@ -95,7 +93,7 @@ Diese Einstellungen werden einem Gerätekonfigurationsprofil in Intune hinzugef�
 - **Konfigurationsprofiländerungen**: **Blockieren** verhindert Änderungen des Konfigurationsprofils auf dem Gerät. **Nicht konfiguriert** (Standard) ermöglicht dem Benutzer, Konfigurationsprofile zu installieren.
 - **Anwendungssperre**: Wählen Sie **Zulassen** aus, um die Aktivierungssperre auf überwachten iOS-Geräten zu aktivieren. Die Aktivierungssperre erschwert die erneute Aktivierung verlorener oder gestohlener Geräte.
 - **Entfernen von Apps blockieren:** Wenn Sie **Blockieren** festlegen, können Benutzer keine Apps entfernen. **Nicht konfiguriert** (Standard) ermöglicht Benutzern, Apps vom Gerät zu entfernen.
-- **Modus mit USB-Einschränkung blockieren**: Wählen Sie **Blockieren** aus, um den Modus mit USB-Einschränkung auf überwachten Geräten zu deaktivieren. Der Modus mit USB-Einschränkung verhindert, dass USB-Zubehör Daten mit einem Gerät austauscht, das für mehr als einer Stunde gesperrt ist. Die Standardeinstellung **Nicht konfiguriert** lässt den Modus mit USB-Einschränkung zu.
+- **USB-Zubehör bei gesperrtem Gerät zulassen** **: Hiermit können USB** -Zubehör Daten mit einem Gerät austauschen, das über eine Stunde gesperrt ist. **Nicht konfiguriert** (Standard) aktualisiert den eingeschränkten USB-Modus nicht auf dem Gerät.
 - **Automatische Datums- und Uhrzeiteinstellung erzwingen**: **Anfordern** erzwingt die automatische Einstellung von Datum und Uhrzeit auf überwachten Geräten. Die Zeitzone für das Gerät wird aktualisiert, wenn das Gerät über Mobilfunkverbindungen verfügt oder WLAN mit Standortdiensten aktiviert ist.
 - **Von Kursteilnehmern eine Berechtigung zum Verlassen des Classroom-Kurses verlangen**: **Anfordern** erzwingt, dass in einem nicht verwalteten Kurs registrierte Kursteilnehmer, die die Classroom-App verwenden, vom Kursleiter eine Berechtigung zum Verlassen des Kurses anfordern müssen. **Nicht konfiguriert** (Standard) erzwingt nicht, dass Kursteilnehmer um eine Berechtigung bitten müssen.
 
@@ -595,7 +593,7 @@ Verwenden Sie diese Einstellungen, um iOS-Geräte zur Ausführung bestimmter App
 - **Bildschirmdrehung:** **Blockieren** verhindert, dass die Bildschirmausrichtung geändert werden kann, wenn der Benutzer das Gerät dreht. **Nicht konfiguriert** lässt diese Funktion zu.
 - **Standbytaste:** Wählen Sie **Blockieren** aus, um die Standbytaste am Gerät zu deaktivieren. **Nicht konfiguriert** lässt diese Funktion zu.
 - **Touch**: **Blockieren** deaktiviert den Touchscreen des Geräts. **Nicht konfiguriert** ermöglicht dem Benutzer, den Touchscreen zu verwenden.
-- **Volumeschaltflächen**: **blockieren** verhindert die Verwendung der volumeschaltflächen des Geräts. **Nicht konfiguriert** ermöglicht die volumeschaltflächen.
+- **** Volumeschaltflächen: **blockieren** verhindert die Verwendung der volumeschaltflächen des Geräts. **Nicht konfiguriert** ermöglicht die volumeschaltflächen.
 - **Steuerelement der Touch-Unterstützung**: Mit **Zulassen** können Benutzer die Touch-Unterstützungsfunktion verwenden. **Nicht konfiguriert** deaktiviert dieses Feature.
 - **Steuerelement zum Umkehren von Farben**: **Zulassen** von Farbumkehr-Änderungen, mit denen der Benutzer die Funktion zur Farbumkehr individuell verwenden kann. **Nicht konfiguriert** deaktiviert dieses Feature.
 - **Ausgewählten Text sprechen**: **Zulassen** der Sprachauswahl-Barrierefreiheitseinstellungen auf dem Gerät. Diese Funktion liest Text, den der Benutzer auswählt, laut vor. **Nicht konfiguriert** deaktiviert dieses Feature.
